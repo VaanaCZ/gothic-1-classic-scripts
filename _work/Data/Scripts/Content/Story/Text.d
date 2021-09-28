@@ -479,10 +479,10 @@ const string _STR_MESSAGE_WHEEL_STUCKS		= "L'argano è inceppato."					;
 
 // Bidschrimausgabe beim storybedingten Transfer von Items
 const string _STR_MESSAGE_ITEM_GIVEN		= " Oggetto dato!"								;	//SPACE davor wichtig, weil Trennzeichen
-const string _STR_MESSAGE_ITEMS_GIVEN		= " Oggetti dati!"							;
-const string _STR_MESSAGE_ORE_GIVEN			= " Pezzi di metallo dati!"									;
 const string _STR_MESSAGE_ITEM_TAKEN		= " Oggetto ricevuto!"							;
+const string _STR_MESSAGE_ITEMS_GIVEN		= " Oggetti dati!"							;
 const string _STR_MESSAGE_ITEMS_TAKEN		= " Oggetti ricevuti!"							;
+const string _STR_MESSAGE_ORE_GIVEN			= " Pezzi di metallo dati!"									;
 const string _STR_MESSAGE_ORE_TAKEN			= " Pezzi di metallo ricevuti!"									;
 
 // Bidschrimausgabe fürs Tausch-Fenster
