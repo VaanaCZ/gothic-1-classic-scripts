@@ -1,4 +1,4 @@
-// Fonttestbuch fur Franzosische und was wei? ich fur Zeichen!
+// Fonttestbuch fьr Franzцsische und was weiЯ ich fьr Zeichen!
 
 INSTANCE Fonttestbook(C_Item)
 {	
@@ -31,27 +31,27 @@ INSTANCE Fonttestbook(C_Item)
 		//1.Seite
 		Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1);  //  0 -> margins are in pixels
 		Doc_SetFont 	( nDocID,  0, "font_10_book.tga"); 	// -1 -> all pages
-		Doc_PrintLine	( nDocID,  0, "aaraAARA");
+		Doc_PrintLine	( nDocID,  0, "aбавAБАВ");
 		Doc_SetFont 	( nDocID,  0, "font_15_book.tga"); 	// -1 -> all pages 
-		Doc_PrintLine	( nDocID,  0, "aaraAARA");
+		Doc_PrintLine	( nDocID,  0, "aбавAБАВ");
 		Doc_SetFont 	( nDocID,  0, "font_15_white.tga"); 	// -1 -> all pages 
-		Doc_PrintLine	( nDocID,  0, "aaraAARA");
+		Doc_PrintLine	( nDocID,  0, "aбавAБАВ");
 		Doc_SetFont 	( nDocID,  0, "font_default.tga"); 	// -1 -> all pages 
-		Doc_PrintLine	( nDocID,  0, "aaraAARA");
+		Doc_PrintLine	( nDocID,  0, "aбавAБАВ");
 		Doc_SetFont 	( nDocID,  0, "font_old_10_white.tga"); 	// -1 -> all pages 
-		Doc_PrintLine	( nDocID,  0, "aaraAARA");
+		Doc_PrintLine	( nDocID,  0, "aбавAБАВ");
 		Doc_SetFont 	( nDocID,  0, "font_old_20_white.tga"); 	// -1 -> all pages 
-		Doc_PrintLine	( nDocID,  0, "aaraAARA");
+		Doc_PrintLine	( nDocID,  0, "aбавAБАВ");
 
 		//2.Seite
-		Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1);  //  0 -> margins are in pixels (Position des Textes von den Rander des TGAs aus, links,oben,rechts,unten)
+		Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1);  //  0 -> margins are in pixels (Position des Textes von den Rдnder des TGAs aus, links,oben,rechts,unten)
 		Doc_SetFont 	( nDocID,  1, "font_10_book.tga"); 	// -1 -> all pages 
-		Doc_PrintLine	( nDocID,  1, "YT?raa");
-		Doc_PrintLine	( nDocID,  1, "aalccc");
-		Doc_PrintLine	( nDocID,  1, "eeeeii");
-		Doc_PrintLine	( nDocID,  1, "ddnnoo");
-		Doc_PrintLine	( nDocID,  1, "oo?ruu");
-		Doc_PrintLine	( nDocID,  1, "uuyt?");
+		Doc_PrintLine	( nDocID,  1, "ЭЮЯабв");
+		Doc_PrintLine	( nDocID,  1, "гдежзи");
+		Doc_PrintLine	( nDocID,  1, "йклмно");
+		Doc_PrintLine	( nDocID,  1, "прстуф");
+		Doc_PrintLine	( nDocID,  1, "хцчшщъ");
+		Doc_PrintLine	( nDocID,  1, "ыьэюя");
 
 		Doc_Show		( nDocID );
 		
