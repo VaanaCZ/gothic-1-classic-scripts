@@ -624,7 +624,7 @@ const string STR_BADENIXE = "Badenixe";
 // B_Kapitelwechsel
 // ****************
 
-const string KapWechsel_1			= "Kapitola 2"					;
+const string KapWechsel_1			= "Kapitola 1"					;
 const string KapWechsel_1_Text		= "Vítej do kolonie"			;
 const string KapWechsel_2			= "Kapitola 2"					;
 const string KapWechsel_2_Text		= "Hnízdo dùlních èervù"		;
