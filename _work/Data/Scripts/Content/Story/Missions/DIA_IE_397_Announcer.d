@@ -38,7 +38,7 @@ FUNC int  IE_397_Announcer_ANNOUNCE_Condition()
 {
 	if	(Kapitel == 2)
 	{
-		return TRUE;
+		//return TRUE;
 	};
 };
 
@@ -51,7 +51,7 @@ FUNC void  IE_397_Announcer_ANNOUNCE_Info()
 	Npc_ExchangeRoutine	(self,		"concert");
 	B_ExchangeRoutine	(Charlotte, "concert");
 
-	B_InExtremoStartMusic();
+	//B_InExtremoStartMusic();
 
 	AI_StopProcessInfos	(self);
 };
