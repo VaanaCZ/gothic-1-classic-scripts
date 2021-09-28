@@ -23,7 +23,7 @@ func void B_InsertInExtremo()
 	Wld_InsertNpc				(IEFan3,					"OCR_CROWD_03");
 	Wld_InsertNpc				(IEFan4,					"OCR_CROWD_04");
 
-
+	InExtremoOnStage = TRUE;
 };
 
 func void B_KillInExtremo()
@@ -55,7 +55,7 @@ func void B_InExtremoStartMusic()
 // SoundVob zu aktivieren, der das Musikstück spielt
 	Wld_SendTrigger ("INEXTREMO_MUSIK");
 
-	InExtremoPlaying = TRUE;
+	//InExtremoPlaying = TRUE;
 };
 
 func void B_InExtremoStopMusic()
@@ -66,7 +66,7 @@ func void B_InExtremoStopMusic()
 // Um die Musikzone zu deaktivieren (OC-Musik-Zone wieder aktiv)
 	Wld_SendUnTrigger ("INEXTREMO_IE");
 
-	InExtremoPlaying = FALSE;
+	//InExtremoPlaying = FALSE;
 };
 
 
