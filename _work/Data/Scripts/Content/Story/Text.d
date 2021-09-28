@@ -479,10 +479,10 @@ const string _STR_MESSAGE_WHEEL_STUCKS		= "Naviják se zamotal."					;
 
 // Bidschrimausgabe beim storybedingten Transfer von Items
 const string _STR_MESSAGE_ITEM_GIVEN		= " položka pøedána!"							;	//SPACE davor wichtig, weil Trennzeichen
-const string _STR_MESSAGE_ITEMS_GIVEN		= " položek pøedáno!"							;
-const string _STR_MESSAGE_ORE_GIVEN			= " ruda pøedána!"								;
 const string _STR_MESSAGE_ITEM_TAKEN		= " položka pøijata!"							;
+const string _STR_MESSAGE_ITEMS_GIVEN		= " položek pøedáno!"							;
 const string _STR_MESSAGE_ITEMS_TAKEN		= " položek pøijato!"						;
+const string _STR_MESSAGE_ORE_GIVEN			= " ruda pøedána!"								;
 const string _STR_MESSAGE_ORE_TAKEN			= " ruda pøijata!"							;
 
 // Bidschrimausgabe fürs Tausch-Fenster
