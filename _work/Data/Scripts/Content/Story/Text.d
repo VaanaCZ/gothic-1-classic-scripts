@@ -625,7 +625,7 @@ const string STR_BADENIXE = "Nena bañista";
 // ****************
 
 const string KapWechsel_1			= "Capítulo 1"					;
-const string KapWechsel_1_Text		= "Bienvenido a la colonia"	;
+const string KapWechsel_1_Text		= "Bienvenido a la colonia"		;
 const string KapWechsel_2			= "Capítulo 2"					;
 const string KapWechsel_2_Text		= "El nido de los reptadores de la mina"	;
 const string KapWechsel_3			= "Capítulo 3"					;
@@ -633,6 +633,6 @@ const string KapWechsel_3_Text		= "Artefactos de antiguo poder"	;
 const string KapWechsel_4			= "Capítulo 4"					;
 const string KapWechsel_4_Text		= "Xardas"						;
 const string KapWechsel_5			= "Capítulo 5"					;
-const string KapWechsel_5_Text		= "Los Guardianes del Portal"		;
+const string KapWechsel_5_Text		= "Los Guardianes del Portal"	;
 const string KapWechsel_6			= "Capítulo 6"					;
 const string KapWechsel_6_Text		= "La guarida del Durmiente"	;
