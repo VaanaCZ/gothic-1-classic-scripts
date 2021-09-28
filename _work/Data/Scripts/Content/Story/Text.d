@@ -611,9 +611,28 @@ const string MENU_TEXT_NEEDS_APPLY		= "";
 // Maximal ca. 60 Zeichen, da nur eine Zeile Platz!
 const string MENU_TEXT_NEEDS_RESTART	= "Czêœæ zmian wejdzie w ¿ycie po zrestartowaniu komputera.";
 
-
+//
 //	TRADE MANAGER
 //
 const string STR_INFO_TRADE_ACCEPT						= "Przyjmij"			;
 const string STR_INFO_TRADE_RESET						= "Odrzuæ"			;
 const string STR_INFO_TRADE_EXIT						= "WSTECZ"			;
+
+const string STR_BADENIXE = "Badenixe";
+
+// ****************
+// B_Kapitelwechsel
+// ****************
+
+const string KapWechsel_1			= "Rozdzia³ 1"					;
+const string KapWechsel_1_Text		= "Witamy w Kolonii!"			;
+const string KapWechsel_2			= "Rozdzia³ 2"					;
+const string KapWechsel_2_Text		= "Gniazdo pe³zaczy"			;
+const string KapWechsel_3			= "Rozdzia³ 3"					;
+const string KapWechsel_3_Text		= "Staro¿ytna magia"			;
+const string KapWechsel_4			= "Rozdzia³ 4"					;
+const string KapWechsel_4_Text		= "Xardas"						;
+const string KapWechsel_5			= "Rozdzia³ 5"					;
+const string KapWechsel_5_Text		= "Stra¿nicy portalu" 			;
+const string KapWechsel_6			= "Rozdzia³ 6"					;
+const string KapWechsel_6_Text		= "Le¿e Œni¹cego"				;
