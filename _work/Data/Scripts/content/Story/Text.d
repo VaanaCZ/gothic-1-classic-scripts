@@ -471,10 +471,10 @@ const string _STR_MESSAGE_WHEEL_STUCKS		= "Лебедка застопорилась."					;
 
 // Bidschrimausgabe beim storybedingten Transfer von Items
 const string _STR_MESSAGE_ITEM_GIVEN		= " предмет отдан."								;	//SPACE davor wichtig, weil Trennzeichen
-const string _STR_MESSAGE_ITEMS_GIVEN		= " предметов отдано."							;
-const string _STR_MESSAGE_ORE_GIVEN			= " кусков руды отдано."									;
 const string _STR_MESSAGE_ITEM_TAKEN		= " предмет получен."							;
+const string _STR_MESSAGE_ITEMS_GIVEN		= " предметов отдано."							;
 const string _STR_MESSAGE_ITEMS_TAKEN		= " предметов получено."							;
+const string _STR_MESSAGE_ORE_GIVEN			= " кусков руды отдано."									;
 const string _STR_MESSAGE_ORE_TAKEN			= " кусков руды получено."									;
 
 // Bidschrimausgabe fьrs Tausch-Fenster
