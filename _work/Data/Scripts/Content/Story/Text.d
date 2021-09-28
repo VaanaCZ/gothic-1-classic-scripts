@@ -479,10 +479,10 @@ const string _STR_MESSAGE_WHEEL_STUCKS		= "El torno está atascado."					;
 
 // Bidschrimausgabe beim storybedingten Transfer von Items
 const string _STR_MESSAGE_ITEM_GIVEN		= " objeto entregado"								;	//SPACE davor wichtig, weil Trennzeichen
-const string _STR_MESSAGE_ITEMS_GIVEN		= " objetos entregados"							;
-const string _STR_MESSAGE_ORE_GIVEN			= " pepitas entregadas"									;
 const string _STR_MESSAGE_ITEM_TAKEN		= " objeto recibido"							;
+const string _STR_MESSAGE_ITEMS_GIVEN		= " objetos entregados"							;
 const string _STR_MESSAGE_ITEMS_TAKEN		= " objetos recibidos"							;
+const string _STR_MESSAGE_ORE_GIVEN			= " pepitas entregadas"									;
 const string _STR_MESSAGE_ORE_TAKEN			= " pepitas recibidas"									;
 
 // Bidschrimausgabe fürs Tausch-Fenster
