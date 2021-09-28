@@ -479,10 +479,10 @@ const string _STR_MESSAGE_WHEEL_STUCKS		= "die Winde klemmt"					;
 
 // Bidschrimausgabe beim storybedingten Transfer von Items
 const string _STR_MESSAGE_ITEM_GIVEN		= " Gegenstand gegeben"								;	//SPACE davor wichtig, weil Trennzeichen
-const string _STR_MESSAGE_ITEMS_GIVEN		= " Gegenstände gegeben"							;
-const string _STR_MESSAGE_ORE_GIVEN			= " Erz gegeben"									;
 const string _STR_MESSAGE_ITEM_TAKEN		= " Gegenstand erhalten"							;
+const string _STR_MESSAGE_ITEMS_GIVEN		= " Gegenstände gegeben"							;
 const string _STR_MESSAGE_ITEMS_TAKEN		= " Gegenstände erhalten"							;
+const string _STR_MESSAGE_ORE_GIVEN			= " Erz gegeben"									;
 const string _STR_MESSAGE_ORE_TAKEN			= " Erz erhalten"									;
 
 // Bidschrimausgabe fürs Tausch-Fenster
