@@ -38,7 +38,7 @@ FUNC int  IE_397_Announcer_ANNOUNCE_Condition()
 {
 	if	(Kapitel == 2)
 	{
-		return TRUE;
+		//return TRUE;
 	};
 };
 
