@@ -53,10 +53,10 @@ FUNC VOID B_Kapitelwechsel (VAR INT neues_Kapitel)
 		PrintDebugNpc	(PD_MISSION, "---=== DAS DRITTE KAPITEL ===---");
 
 		//-------- InExtremo wegräumen --------
-		if	( InExtremoPlaying )
+		if(InExtremoOnStage == TRUE)
 		{	
-			B_InExtremoStopMusic();	
-			B_KillInExtremo();
+			//B_InExtremoStopMusic();	
+			//B_KillInExtremo();
 		};
 
 		//-------- Kapitel 2 Missionen nochmal auf Success setzen --------	
