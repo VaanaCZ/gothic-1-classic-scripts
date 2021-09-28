@@ -55,10 +55,3 @@
 	const int MENU_INFO_X				= 300;
 	const int MENU_INFO_Y				= 7780;
 	
-
-//
-// Texts (muss in die Text.d)
-//
-
-	const string MENU_TEXT_NEEDS_APPLY		= "";
-	const string MENU_TEXT_NEEDS_RESTART	= "Ќекоторые настройки будут задействованы только после повторного запуска.";
