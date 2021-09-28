@@ -14,7 +14,7 @@ FUNC VOID B_Kapitelwechsel (VAR INT neues_Kapitel)
 		PrintDebugNpc	(PD_MISSION, "---=== √À¿¬¿ œ≈–¬¿ﬂ ===---");
 		B_Give_SkipChapter2Weapons ();
 		
-		introducechapter (KAPWECHSEL_1,KAPWECHSEL_1_TEXT,"chapter1.tga","levelup.wav", 6000);
+		IntroduceChapter (KAPWECHSEL_1,KAPWECHSEL_1_TEXT,"chapter1.tga","levelup.wav", 6000);
 	}
 	
 	//***************************************************************************
@@ -40,9 +40,9 @@ FUNC VOID B_Kapitelwechsel (VAR INT neues_Kapitel)
 		B_Story_RespawnOW();
 		
 		//-------- InExtremo vorbereiten --------
-		B_InsertInExtremo();
+		//B_InsertInExtremo();
 		
-		introducechapter (KAPWECHSEL_2,KAPWECHSEL_2_TEXT,"chapter2.tga","levelup.wav", 6000);
+		IntroduceChapter (KAPWECHSEL_2,KAPWECHSEL_2_TEXT,"chapter2.tga","levelup.wav", 6000);
 	}
 	
 	//***************************************************************************
@@ -53,8 +53,11 @@ FUNC VOID B_Kapitelwechsel (VAR INT neues_Kapitel)
 		PrintDebugNpc	(PD_MISSION, "---=== √À¿¬¿ “–≈“‹ﬂ ===---");
 
 		//-------- InExtremo wegr‰umen --------
-		B_InExtremoStopMusic();	
-		B_KillInExtremo();
+		if(InExtremoOnStage == TRUE)
+		{	
+			//B_InExtremoStopMusic();	
+			//B_KillInExtremo();
+		};
 
 		//-------- Kapitel 2 Missionen nochmal auf Success setzen --------	
 		YBerion_BringFocus 		= LOG_SUCCESS;
@@ -102,7 +105,7 @@ FUNC VOID B_Kapitelwechsel (VAR INT neues_Kapitel)
 		var C_NPC Novize_1;		Novize_1	 	 = Hlp_GetNpc	(NOV_1319_Novize);
 		Novize_1.senses =		hero.senses;
 		
-		introducechapter (KAPWECHSEL_3,KAPWECHSEL_3_TEXT,"chapter3.tga","levelup.wav", 6000);
+		IntroduceChapter (KAPWECHSEL_3,KAPWECHSEL_3_TEXT,"chapter3.tga","levelup.wav", 6000);
 	}
 	
 	//***************************************************************************
@@ -209,7 +212,7 @@ FUNC VOID B_Kapitelwechsel (VAR INT neues_Kapitel)
 		
 		//--------------- Kapitel 4 wird angezeigt -------------------------------
 		
-		introducechapter (KAPWECHSEL_4,KAPWECHSEL_4_TEXT,"chapter4.tga","levelup.wav", 6000); 
+		IntroduceChapter (KAPWECHSEL_4,KAPWECHSEL_4_TEXT,"chapter4.tga","levelup.wav", 6000); 
 	}
 	
 	//***************************************************************************
@@ -243,7 +246,7 @@ FUNC VOID B_Kapitelwechsel (VAR INT neues_Kapitel)
 		//-------- Oberwelt-Monster nochmal "nachf¸llen" --------	
 		B_Story_RespawnOW();
 		
-		introducechapter (KAPWECHSEL_5,KAPWECHSEL_5_TEXT,"chapter5.tga","levelup.wav", 6000);
+		IntroduceChapter (KAPWECHSEL_5,KAPWECHSEL_5_TEXT,"chapter5.tga","levelup.wav", 6000);
 	}
 	
 	//***************************************************************************
@@ -260,7 +263,7 @@ FUNC VOID B_Kapitelwechsel (VAR INT neues_Kapitel)
 		PlayVideo		("OREHEAP.BIK");	// Schwert aufladen
 		CreateInvItem 	(hero, Mythrilklinge02);	
 		
-		introducechapter (KAPWECHSEL_6,KAPWECHSEL_6_TEXT,"chapter6.tga","levelup.wav", 6000);
+		IntroduceChapter (KAPWECHSEL_6,KAPWECHSEL_6_TEXT,"chapter6.tga","levelup.wav", 6000);
 	};
 };
 
