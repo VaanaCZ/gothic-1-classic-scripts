@@ -326,7 +326,7 @@ FUNC VOID  STT_301_IAN_GEAR_SUC_Info()
 	
 	var C_Npc Sklave; 				
 	Sklave = Hlp_GetNpc	(ORC_2001_SKLAVE);
-	Npc_ExchangeRoutine (Sklave,"Пресс");
+	Npc_ExchangeRoutine (Sklave,"Stomper");
 
 	AI_Output			(other, self,"STT_301_IAN_GEAR_SUC_Info_15_01"); //Я нашел шестеренку.
 	AI_Output			(self, other,"STT_301_IAN_GEAR_SUC_Info_13_02"); //О! Отличная работа! Думаю, она как раз подойдет. Что ж, вернемся к твоей проблеме. Ты искал логово ползунов, да? Хм...

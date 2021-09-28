@@ -8,7 +8,7 @@ func void ZS_WashSelf ()
     
 	B_SetPerception (self);
 	AI_SetWalkmode (self,NPC_WALK);		// Walkmode fьr den Zustand
-	if !(Npc_IsOnFP(self,"Что?"))
+	if !(Npc_IsOnFP(self,"WASH"))
 	{
 		AI_GotoWP (self,self.wp);			// Gehe zum Tagesablaufstart
 	}	
