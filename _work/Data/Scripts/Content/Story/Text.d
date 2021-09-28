@@ -611,9 +611,28 @@ const string MENU_TEXT_NEEDS_APPLY		= "";
 // Maximal ca. 60 Zeichen, da nur eine Zeile Platz!
 const string MENU_TEXT_NEEDS_RESTART	= "Некоторые настройки вступят в силу только после перезагрузки.";
 
-
+//
 //	TRADE MANAGER
 //
-const string STR_INFO_TRADE_ACCEPT						= "Принять"			;
+const string STR_INFO_TRADE_ACCEPT						= "Принять"				;
 const string STR_INFO_TRADE_RESET						= "Отказаться"			;
-const string STR_INFO_TRADE_EXIT						= "Назад"			;
+const string STR_INFO_TRADE_EXIT						= "Назад"				;
+
+const string STR_BADENIXE = "Badenixe";
+
+// ****************
+// B_Kapitelwechsel
+// ****************
+
+const string KapWechsel_1			= "Глава 1"						;
+const string KapWechsel_1_Text		= "Добро пожаловать!"			;
+const string KapWechsel_2			= "Глава 2"						;
+const string KapWechsel_2_Text		= "Пещеры ползунов"				;
+const string KapWechsel_3			= "Глава 3"						;
+const string KapWechsel_3_Text		= "Артефакты древних сил"		;
+const string KapWechsel_4			= "Глава 4"						;
+const string KapWechsel_4_Text		= "Ксардас"						;
+const string KapWechsel_5			= "Глава 5"						;
+const string KapWechsel_5_Text		= "Хранители портала"			;
+const string KapWechsel_6			= "Глава 6"						;
+const string KapWechsel_6_Text		= "Логово Спящего"				;
