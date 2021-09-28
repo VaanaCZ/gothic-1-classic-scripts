@@ -611,9 +611,28 @@ const string MENU_TEXT_NEEDS_APPLY		= "";
 // Maximal ca. 60 Zeichen, da nur eine Zeile Platz!
 const string MENU_TEXT_NEEDS_RESTART	= "Nìkteré zmìny v nastavení se projeví až po dalším spuštìní.";
 
-
+//
 //	TRADE MANAGER
 //
 const string STR_INFO_TRADE_ACCEPT						= "Souhlasit"			;
 const string STR_INFO_TRADE_RESET						= "Odmítnout"			;
 const string STR_INFO_TRADE_EXIT						= "ZPÌT"			;
+
+const string STR_BADENIXE = "Badenixe";
+
+// ****************
+// B_Kapitelwechsel
+// ****************
+
+const string KapWechsel_1			= "Kapitola 2"					;
+const string KapWechsel_1_Text		= "Vítej do kolonie"			;
+const string KapWechsel_2			= "Kapitola 2"					;
+const string KapWechsel_2_Text		= "Hnízdo dùlních èervù"		;
+const string KapWechsel_3			= "Kapitola 3"					;
+const string KapWechsel_3_Text		= "Artefakty pradávných sil"	;
+const string KapWechsel_4			= "Kapitola 4"					;
+const string KapWechsel_4_Text		= "Xardas"						;
+const string KapWechsel_5			= "Kapitola 5"					;
+const string KapWechsel_5_Text		= "Strážci portálu"				;
+const string KapWechsel_6			= "Kapitola 6"					;
+const string KapWechsel_6_Text		= "Spáèovo doupì"				;
