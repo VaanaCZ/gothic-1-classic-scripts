@@ -1,3 +1,62 @@
+// Fonttestbuch fur Franzosische und was wei? ich fur Zeichen!
+
+INSTANCE Fonttestbook(C_Item)
+{	
+	name 					=	"zeichenglumpsche_ascii";
+	
+	mainflag 				=	ITEM_KAT_DOCS;
+	flags 					=	ITEM_MISSION;
+
+	value 					=	100;
+
+	visual 					=	"ItWr_Book_02_05.3ds";
+	material 				=	MAT_LEATHER;
+
+	scemeName				=	"MAP";	
+	on_state[0]				=	UseFonttestbook;
+};
+
+
+
+	FUNC VOID UseFonttestbook()
+	{   
+		var int nDocID;
+		
+		nDocID =
+		Doc_Create		()			  ;							// DocManager 
+		Doc_SetPages	( nDocID,  2 );                         //wieviel Pages
+		Doc_SetPage 	( nDocID,  0, "Book_Mage_L.tga"  , 0 		); 
+		Doc_SetPage 	( nDocID,  1, "Book_Mage_R.tga" , 0		);
+				
+		//1.Seite
+		Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1);  //  0 -> margins are in pixels
+		Doc_SetFont 	( nDocID,  0, "font_10_book.tga"); 	// -1 -> all pages
+		Doc_PrintLine	( nDocID,  0, "aaraAARA");
+		Doc_SetFont 	( nDocID,  0, "font_15_book.tga"); 	// -1 -> all pages 
+		Doc_PrintLine	( nDocID,  0, "aaraAARA");
+		Doc_SetFont 	( nDocID,  0, "font_15_white.tga"); 	// -1 -> all pages 
+		Doc_PrintLine	( nDocID,  0, "aaraAARA");
+		Doc_SetFont 	( nDocID,  0, "font_default.tga"); 	// -1 -> all pages 
+		Doc_PrintLine	( nDocID,  0, "aaraAARA");
+		Doc_SetFont 	( nDocID,  0, "font_old_10_white.tga"); 	// -1 -> all pages 
+		Doc_PrintLine	( nDocID,  0, "aaraAARA");
+		Doc_SetFont 	( nDocID,  0, "font_old_20_white.tga"); 	// -1 -> all pages 
+		Doc_PrintLine	( nDocID,  0, "aaraAARA");
+
+		//2.Seite
+		Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1);  //  0 -> margins are in pixels (Position des Textes von den Rander des TGAs aus, links,oben,rechts,unten)
+		Doc_SetFont 	( nDocID,  1, "font_10_book.tga"); 	// -1 -> all pages 
+		Doc_PrintLine	( nDocID,  1, "YT?raa");
+		Doc_PrintLine	( nDocID,  1, "aalccc");
+		Doc_PrintLine	( nDocID,  1, "eeeeii");
+		Doc_PrintLine	( nDocID,  1, "ddnnoo");
+		Doc_PrintLine	( nDocID,  1, "oo?ruu");
+		Doc_PrintLine	( nDocID,  1, "uuyt?");
+
+		Doc_Show		( nDocID );
+		
+		};
+
 //Savegame Bugfixbooks   ****Björn****
 
 
