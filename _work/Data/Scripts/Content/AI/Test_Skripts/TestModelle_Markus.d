@@ -108,7 +108,7 @@ instance OverlayTestmodell (C_NPC)
 instance Bathbabe (C_NPC)
 {
 	//-------- primary data -----n
-	name =					"Badenixe";
+	name =					STR_BADENIXE;
 	guild =					GIL_EBR;      
 	level =					3;
 	voice =					11;//18;// Babe 1;

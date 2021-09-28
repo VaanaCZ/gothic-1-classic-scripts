@@ -625,7 +625,7 @@ const string STR_BADENIXE = "Pupa a mollo";
 // ****************
 
 const string KapWechsel_1			= "Capitolo 1"					;
-const string KapWechsel_1_Text		= "Benvenuto alla colonia"	;
+const string KapWechsel_1_Text		= "Benvenuto alla colonia"		;
 const string KapWechsel_2			= "Capitolo 2"					;
 const string KapWechsel_2_Text		= "Il nido dei pidocchi di miniera"	;
 const string KapWechsel_3			= "Capitolo 3"					;
@@ -635,4 +635,4 @@ const string KapWechsel_4_Text		= "Xardas"						;
 const string KapWechsel_5			= "Capitolo 5"					;
 const string KapWechsel_5_Text		= "I guardiani del portale"		;
 const string KapWechsel_6			= "Capitolo 6"					;
-const string KapWechsel_6_Text		= "L'antro del Dormiente"	;
+const string KapWechsel_6_Text		= "L'antro del Dormiente"		;
