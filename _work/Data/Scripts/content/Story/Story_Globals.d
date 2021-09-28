@@ -84,7 +84,7 @@ var int idiots_deal;
 //	KAPITEL 2
 //---------------------------------------------------------------------
 var int InExtremoPlaying;
-var int inextremoonstage;
+var int InExtremoOnStage;
 var int Aaron_lock;
 var int Snipes_deal;
 var int Ian_gearwheel;

@@ -23,7 +23,7 @@ func void B_InsertInExtremo()
 	Wld_InsertNpc				(IEFan3,					"OCR_CROWD_03");
 	Wld_InsertNpc				(IEFan4,					"OCR_CROWD_04");
 
-	INEXTREMOONSTAGE = TRUE;
+	InExtremoOnStage = TRUE;
 };
 
 func void B_KillInExtremo()
