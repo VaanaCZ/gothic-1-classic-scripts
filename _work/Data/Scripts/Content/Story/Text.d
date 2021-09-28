@@ -611,9 +611,28 @@ const string MENU_TEXT_NEEDS_APPLY		= "";
 // Maximal ca. 60 Zeichen, da nur eine Zeile Platz!
 const string MENU_TEXT_NEEDS_RESTART	= "Some readjustments will only be activated after a reboot.";
 
-
+//
 //	TRADE MANAGER
 //
 const string STR_INFO_TRADE_ACCEPT						= "Accept"			;
 const string STR_INFO_TRADE_RESET						= "Refuse"			;
 const string STR_INFO_TRADE_EXIT						= "BACK"			;
+
+const string STR_BADENIXE = "bathing babe";
+
+// ****************
+// B_Kapitelwechsel
+// ****************
+
+const string KapWechsel_1			= "Chapter 1"					;
+const string KapWechsel_1_Text		= "Welcome to the colony"		;
+const string KapWechsel_2			= "Chapter 2"					;
+const string KapWechsel_2_Text		= "The Minecrawler's nest"		;
+const string KapWechsel_3			= "Chapter 3"					;
+const string KapWechsel_3_Text		= "Artifacts of ancient power"	;
+const string KapWechsel_4			= "Chapter 4"					;
+const string KapWechsel_4_Text		= "Xardas"						;
+const string KapWechsel_5			= "Chapter 5"					;
+const string KapWechsel_5_Text		= "Guardians of the portal"		;
+const string KapWechsel_6			= "Chapter 6"					;
+const string KapWechsel_6_Text		= "The temple of the Sleeper"	;
