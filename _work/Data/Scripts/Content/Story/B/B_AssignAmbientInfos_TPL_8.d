@@ -79,7 +79,7 @@ FUNC VOID Info_Tpl_8_WichtigePersonen_Info()
 {
 	AI_Output(other,self,"Info_Tpl_8_WichtigePersonen_15_00"); //Kdo tady má velení?
 	AI_Output(self,other,"Info_Tpl_8_WichtigePersonen_08_01"); //Dìláme to, co øeknou Guru. Sloužit jim je naše povinnost.
-	AI_Output(self,other,"Info_Tpl_8_WichtigePersonen_15_02"); //Kdo jsou ti Guru?
+	AI_Output(other,self,"Info_Tpl_8_WichtigePersonen_15_02"); //Kdo jsou ti Guru?
 	AI_Output(self,other,"Info_Tpl_8_WichtigePersonen_08_03"); //Y´Berion Osvícený je hlavou Guru. Pod ním jsou Cor Kalom a další.
 	var C_NPC YBerion;		YBerion	= Hlp_GetNpc(Gur_1200_Yberion);
 	var C_NPC CorKalom;		CorKalom= Hlp_GetNpc(Gur_1201_CorKalom);
@@ -114,7 +114,7 @@ FUNC VOID Info_Tpl_8_DasLager_Info()
 {
 	AI_Output(other,self,"Info_Tpl_8_DasLager_15_00"); //Co mi mùžeš øíci o táboru?
 	AI_Output(self,other,"Info_Tpl_8_DasLager_08_01"); //Jako nový pøíchozí mùžeš jít v podstatì kam chceš. Nevìrcùm však není povolen vstup do Spáèova chrámu.
-	AI_Output(other,self,"Info_Tpl_8_DasLager_08_02"); //Takže choï jen tam, kam smíš. A také nevyrušuj naše pány pøi meditacích.
+	AI_Output(self,other,"Info_Tpl_8_DasLager_08_02"); //Takže choï jen tam, kam smíš. A také nevyrušuj naše pány pøi meditacích.
 };
 
 // *************************************************************************
