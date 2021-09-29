@@ -156,8 +156,6 @@ INSTANCE MENUITEM_GRA_SIGHT_CHOICE(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_GRA_SKY_EFFECTS(C_MENU_ITEM_DEF)
 {
 	backpic		=	MENU_ITEM_BACK_PIC;
-	//text[0]		=	"Himmelseffekte";
-	//text[1]		= 	"Himmelseffekte an- bzw. abschalten."; // Kommentar
 	text[0]		=	"Sky Effects";
 	text[1]		= 	"Toggles sky effects on/off"; // Kommentar
 	// Position und Dimension	

@@ -174,8 +174,7 @@ instance MENUITEM_AUDIO_PROVIDER(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
 	text[0]		= "Soundprovider";
-	//text[1]		= "Eine Änderung wirkt sich erst beim Neustart aus!"; // Kommentar
-text[1]		= "Restart Gothic to avtivate the new settings."; // Kommentar
+	text[1]		= "Restart Gothic to avtivate the new settings."; // Kommentar
 	
 	// Position und Dimension	
 	posx		=	1000;	posy		=	MENU_START_Y + MENU_SOUND_DY*3;
@@ -207,8 +206,7 @@ instance MENUITEM_AUDIO_PROVIDER_CHOICE(C_MENU_ITEM_DEF)
 instance MENUITEM_AUDIO_SPEEKER(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	//text[0]		= "Lautsprecher";
-text[0]		= "Speakers";
+	text[0]		= "Speakers";
 	text[1]		= ""; // Kommentar
 	
 	// Position und Dimension	
@@ -224,8 +222,7 @@ instance MENUITEM_AUDIO_SPEEKER_CHOICE(C_MENU_ITEM_DEF)
 {
 	backPic		=	MENU_CHOICE_BACK_PIC;
 	type		=	MENU_ITEM_CHOICEBOX;	
-	//text[0]		=   "2 Lautsprecher|Kopfhörer|Surround|4 Lautsprecher";
-text[0]		=   "2 Speakers|Headphones|Surround|4 Speakers";
+	text[0]		=   "2 Speakers|Headphones|Surround|4 Speakers";
 	fontName	= 	MENU_FONT_SMALL;
 	// Position und Dimension	
 	posx		= 4300;		posy		=	MENU_START_Y + MENU_SOUND_DY*4 + MENU_CHOICE_YPLUS;
@@ -241,10 +238,8 @@ text[0]		=   "2 Speakers|Headphones|Surround|4 Speakers";
 instance MENUITEM_AUDIO_REVERB(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	//text[0]		= "Hall-Effekt";
-	//text[1]		= "Sollen Halleffekte in Höhlen aktiviert werden (Neustart erforderlich) ?"; // Kommentar
-text[0]		= "Reverb Effects";
-text[1]		= "Enables reverb effects in caves. (restart required)"; // Kommentar
+	text[0]		= "Reverb Effects";
+	text[1]		= "Enables reverb effects in caves. (restart required)"; // Kommentar
 	
 	// Position und Dimension	
 	posx		=	1000;	posy		=	MENU_START_Y + MENU_SOUND_DY*5;
@@ -259,8 +254,7 @@ instance MENUITEM_AUDIO_REVERB_CHOICE(C_MENU_ITEM_DEF)
 {
 	backPic		=	MENU_CHOICE_BACK_PIC;
 	type		=	MENU_ITEM_CHOICEBOX;	
-	//text[0]		=   "aus|an";
-text[0]		=   "off|on";
+	text[0]		=   "off|on";
 	fontName	= 	MENU_FONT_SMALL;
 	// Position und Dimension	
 	posx		= 4300;		posy		=	MENU_START_Y + MENU_SOUND_DY*5 + MENU_CHOICE_YPLUS;
@@ -276,10 +270,8 @@ text[0]		=   "off|on";
 instance MENUITEM_AUDIO_SAMPLERATE(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	//text[0]		= "Sample-Rate";
-	//text[1]		= "Eine Änderung wirkt sich erst beim Neustart aus!"; // Kommentar
-text[0]		= "Sample-Rate";
-text[1]		= "Restart Gothic to avtivate the new settings."; // Kommentar
+	text[0]		= "Sample-Rate";
+	text[1]		= "Restart Gothic to avtivate the new settings."; // Kommentar
 	
 	// Position und Dimension	
 	posx		=	1000;	posy		=	MENU_START_Y + MENU_SOUND_DY*6;
