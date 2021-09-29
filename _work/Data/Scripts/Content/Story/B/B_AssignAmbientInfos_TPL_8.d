@@ -79,7 +79,7 @@ FUNC VOID Info_Tpl_8_WichtigePersonen_Info()
 {
 	AI_Output(other,self,"Info_Tpl_8_WichtigePersonen_15_00"); //Kto tu dowodzi?
 	AI_Output(self,other,"Info_Tpl_8_WichtigePersonen_08_01"); //Naszym œwiêtym obowi¹zkiem jest wype³nianie poleceñ Guru.
-	AI_Output(self,other,"Info_Tpl_8_WichtigePersonen_15_02"); //Kim s¹ ci Guru?
+	AI_Output(other,self,"Info_Tpl_8_WichtigePersonen_15_02"); //Kim s¹ ci Guru?
 	AI_Output(self,other,"Info_Tpl_8_WichtigePersonen_08_03"); //Najwy¿szym z Guru jest jaœnie oœwiecony Y'Berion. Oprócz niego s¹ jeszcze Cor Kalom, Cor Angar oraz kilku innych.
 	var C_NPC YBerion;		YBerion	= Hlp_GetNpc(Gur_1200_Yberion);
 	var C_NPC CorKalom;		CorKalom= Hlp_GetNpc(Gur_1201_CorKalom);
@@ -114,7 +114,7 @@ FUNC VOID Info_Tpl_8_DasLager_Info()
 {
 	AI_Output(other,self,"Info_Tpl_8_DasLager_15_00"); //Co mo¿esz mi powiedzieæ o tym obozie?
 	AI_Output(self,other,"Info_Tpl_8_DasLager_08_01"); //Chocia¿ jesteœ tu nowy, mo¿esz bezpiecznie poruszaæ siê niemal po ca³ym obozie. Wyj¹tkiem jest jedynie œwi¹tynia Œni¹cego.
-	AI_Output(other,self,"Info_Tpl_8_DasLager_08_02"); //Dlatego staraj siê nie chadzaæ tam, gdzie ci nie wolno, oraz nie przeszkadzaj naszym mistrzom w medytacji.
+	AI_Output(self,other,"Info_Tpl_8_DasLager_08_02"); //Dlatego staraj siê nie chadzaæ tam, gdzie ci nie wolno, oraz nie przeszkadzaj naszym mistrzom w medytacji.
 };
 
 // *************************************************************************
