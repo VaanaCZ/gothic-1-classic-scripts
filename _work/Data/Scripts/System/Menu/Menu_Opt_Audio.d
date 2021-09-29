@@ -174,8 +174,7 @@ instance MENUITEM_AUDIO_PROVIDER(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
 	text[0]		= "Generátor zvuku";
-	//text[1]		= "Eine Änderung wirkt sich erst beim Neustart aus!"; // Kommentar
-text[1]		= "Nové nastavení se uplatní po dalším spuštìní hry Gothic."; // Kommentar
+	text[1]		= "Nové nastavení se uplatní po dalším spuštìní hry Gothic."; // Kommentar
 	
 	// Position und Dimension	
 	posx		=	1000;	posy		=	MENU_START_Y + MENU_SOUND_DY*3;
@@ -207,8 +206,7 @@ instance MENUITEM_AUDIO_PROVIDER_CHOICE(C_MENU_ITEM_DEF)
 instance MENUITEM_AUDIO_SPEEKER(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	//text[0]		= "Lautsprecher";
-text[0]		= "Reproduktory";
+	text[0]		= "Reproduktory";
 	text[1]		= ""; // Kommentar
 	
 	// Position und Dimension	
@@ -224,8 +222,7 @@ instance MENUITEM_AUDIO_SPEEKER_CHOICE(C_MENU_ITEM_DEF)
 {
 	backPic		=	MENU_CHOICE_BACK_PIC;
 	type		=	MENU_ITEM_CHOICEBOX;	
-	//text[0]		=   "2 Lautsprecher|Kopfhörer|Surround|4 Lautsprecher";
-text[0]		=   "2 reproduktory|sluchátka|surround|4 reproduktory";
+	text[0]		=   "2 reproduktory|sluchátka|surround|4 reproduktory";
 	fontName	= 	MENU_FONT_SMALL;
 	// Position und Dimension	
 	posx		= 4300;		posy		=	MENU_START_Y + MENU_SOUND_DY*4 + MENU_CHOICE_YPLUS;
@@ -241,10 +238,8 @@ text[0]		=   "2 reproduktory|sluchátka|surround|4 reproduktory";
 instance MENUITEM_AUDIO_REVERB(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	//text[0]		= "Hall-Effekt";
-	//text[1]		= "Sollen Halleffekte in Höhlen aktiviert werden (Neustart erforderlich) ?"; // Kommentar
-text[0]		= "Prostorový zvuk";
-text[1]		= "Umožní prostorové zvukové efekty v jeskyních. (nutno znovu spustit)"; // Kommentar
+	text[0]		= "Prostorový zvuk";
+	text[1]		= "Umožní prostorové zvukové efekty v jeskyních. (nutno znovu spustit)"; // Kommentar
 	
 	// Position und Dimension	
 	posx		=	1000;	posy		=	MENU_START_Y + MENU_SOUND_DY*5;
@@ -259,8 +254,7 @@ instance MENUITEM_AUDIO_REVERB_CHOICE(C_MENU_ITEM_DEF)
 {
 	backPic		=	MENU_CHOICE_BACK_PIC;
 	type		=	MENU_ITEM_CHOICEBOX;	
-	//text[0]		=   "aus|an";
-text[0]		=   "vypnuto|zapnuto";
+	text[0]		=   "vypnuto|zapnuto";
 	fontName	= 	MENU_FONT_SMALL;
 	// Position und Dimension	
 	posx		= 4300;		posy		=	MENU_START_Y + MENU_SOUND_DY*5 + MENU_CHOICE_YPLUS;
@@ -276,10 +270,8 @@ text[0]		=   "vypnuto|zapnuto";
 instance MENUITEM_AUDIO_SAMPLERATE(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	//text[0]		= "Sample-Rate";
-	//text[1]		= "Eine Änderung wirkt sich erst beim Neustart aus!"; // Kommentar
-text[0]		= "Vzorkovací kmit.";
-text[1]		= "Nové nastavení se uplatní po dalším spuštìní hry Gothic."; // Kommentar
+	text[0]		= "Vzorkovací kmit.";
+	text[1]		= "Nové nastavení se uplatní po dalším spuštìní hry Gothic."; // Kommentar
 	
 	// Position und Dimension	
 	posx		=	1000;	posy		=	MENU_START_Y + MENU_SOUND_DY*6;
