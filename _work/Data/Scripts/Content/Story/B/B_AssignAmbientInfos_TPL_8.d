@@ -79,7 +79,7 @@ FUNC VOID Info_Tpl_8_WichtigePersonen_Info()
 {
 	AI_Output(other,self,"Info_Tpl_8_WichtigePersonen_15_00"); //Кто здесь командует?
 	AI_Output(self,other,"Info_Tpl_8_WichtigePersonen_08_01"); //Мы подчиняемся Гуру. Служить им - наш почетный долг.
-	AI_Output(self,other,"Info_Tpl_8_WichtigePersonen_15_02"); //Кто они, эти Гуру?
+	AI_Output(other,self,"Info_Tpl_8_WichtigePersonen_15_02"); //Кто они, эти Гуру?
 	AI_Output(self,other,"Info_Tpl_8_WichtigePersonen_08_03"); //Главный Гуру - Ю`Берион Просвещенный. Ему помогают Кор Галом, Кор Ангар и остальные.
 	var C_NPC YBerion;		YBerion	= Hlp_GetNpc(Gur_1200_Yberion);
 	var C_NPC CorKalom;		CorKalom= Hlp_GetNpc(Gur_1201_CorKalom);
@@ -114,7 +114,7 @@ FUNC VOID Info_Tpl_8_DasLager_Info()
 {
 	AI_Output(other,self,"Info_Tpl_8_DasLager_15_00"); //Расскажи мне об этом Лагере.
 	AI_Output(self,other,"Info_Tpl_8_DasLager_08_01"); //Ты новичок и можешь ходить где тебе вздумается. Для неверующих закрыт лишь храм Спящего.
-	AI_Output(other,self,"Info_Tpl_8_DasLager_08_02"); //Постарайся не нарушать эти правила. И не беспокой наших наставников во время медитации.
+	AI_Output(self,other,"Info_Tpl_8_DasLager_08_02"); //Постарайся не нарушать эти правила. И не беспокой наших наставников во время медитации.
 };
 
 // *************************************************************************
