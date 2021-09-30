@@ -301,8 +301,11 @@ FUNC VOID Info_BaalLukor_SECONDWAIT_Info()
 
 	AI_Output 		(self, other,"Info_BaalLukor_SECONDWAIT_13_01"); //Хм... там дальше тупик! Может быть, мы сможем найти что-то, что поможет нам в дальнейших поисках.
 
-	AI_StopProcessInfos	(self);
-	Npc_ExchangeRoutine	(self, "WaitInSideTunnelTwo");
+	if (!Npc_HasItems	(hero, OrkParchmentTwo)	) 
+	{	
+		AI_StopProcessInfos	(self);
+		Npc_ExchangeRoutine	(self, "WaitInSideTunnelTwo");
+	};
 };
 
 //**************************************************************************
@@ -314,7 +317,7 @@ INSTANCE Info_BaalLukor_SECONDSCROLL (C_INFO)
 	condition	= Info_BaalLukor_SECONDSCROLL_Condition;
 	information	= Info_BaalLukor_SECONDSCROLL_Info;
 	permanent	= 0;
-	important 	= 1;
+	description = "Вот обрывок свитка!";
 };
 
 FUNC INT Info_BaalLukor_SECONDSCROLL_Condition()
@@ -418,9 +421,7 @@ FUNC VOID Info_BaalLukor_RUNES_Info()
 
 	Npc_RemoveInvItems	(self,			OrkParchmentOne, 1); //Pergament 1 entfernen
 	Npc_RemoveInvItems	(self,			OrkParchmentTwo, 1); //Pergament 2 entfernen
-
-	CreateInvItem		(self,			ItArScrollTeleport4); //Teleport erschaffen
-	B_GiveInvItems  	(self, hero,	ItArScrollTeleport4, 1); //Teleport ьbergeben
+	//Hier Teleport-Ьbergabe entfernt --> erst wenn vor wand!
 
 	B_LogEntry			(CH3_OrcGraveyard,	"С помощью настенных надписей в большой зале Идол Люкор смог прочитать свиток. Это оказался свиток телепортации, переносящий кого-либо на очень короткие дистанции."); 
 
@@ -564,6 +565,9 @@ FUNC VOID Info_BaalLukor_DOOR_Info()
 	AI_Output			(self, other,"Info_BaalLukor_DOOR_13_01"); //За этой стеной... должно быть, это здесь!
 	AI_Output			(self, other,"Info_BaalLukor_DOOR_13_02"); //Мне не хватит силы прочитать заклинание.
 	AI_Output			(self, other,"Info_BaalLukor_DOOR_13_03"); //Прочти его сам. Встань перед этой стеной.
+	
+	CreateInvItem		(self,			ItArScrollTeleport4); //Teleport erschaffen
+	B_GiveInvItems  	(self, hero,	ItArScrollTeleport4, 1); //Teleport ьbergeben
 	
 	AI_StopProcessInfos	(self);
 };

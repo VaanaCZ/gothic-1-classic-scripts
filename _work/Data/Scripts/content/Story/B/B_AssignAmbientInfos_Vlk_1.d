@@ -101,7 +101,7 @@ FUNC VOID Info_Vlk_1_DasLager_Info()
 {
 	AI_Output(other,self,"Info_Vlk_1_DasLager_15_00"); //Здесь есть что-нибудь интересное, кроме этих лачуг?
 	AI_Output(self,other,"Info_Vlk_1_DasLager_01_01"); //Ну, по вечерам можно полюбоваться тем, как стражники избивают друг друга на арене.
-	AI_Output(other,self,"Info_Vlk_1_DasLager_01_02"); //Понятно.
+	AI_Output(self,other,"Info_Vlk_1_DasLager_01_02"); //Понятно.
 };
 
 // *************************************************************************

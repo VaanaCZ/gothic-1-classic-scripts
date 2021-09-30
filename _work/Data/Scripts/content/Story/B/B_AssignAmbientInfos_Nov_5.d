@@ -103,7 +103,7 @@ FUNC VOID Info_Nov_5_DasLager_Info()
 	AI_Output(self,other,"Info_Nov_5_DasLager_05_01"); //Таких мест, как это, ты во всей колонии не найдешь.
 	AI_Output(self,other,"Info_Nov_5_DasLager_05_02"); //В нашем лагере ты сможешь ежедневно получать еду и болотник, даже если ты равнодушен к учению Спящего. Просто поговори с Фортуно.
 	AI_Output(other,self,"Info_Nov_5_DasLager_15_03"); //Где я могу найти его?
-	AI_Output(other,self,"Info_Nov_5_DasLager_05_04"); //В доме под лабораторией Кор Галома, рядом с нашим храмом.
+	AI_Output(self,other,"Info_Nov_5_DasLager_05_04"); //В доме под лабораторией Кор Галома, рядом с нашим храмом.
 	
 	var C_NPC CorKalom;		CorKalom = Hlp_GetNpc(Gur_1201_CorKalom);
 	CorKalom.aivar[AIV_FINDABLE] = TRUE;
