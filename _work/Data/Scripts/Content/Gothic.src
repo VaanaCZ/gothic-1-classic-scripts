@@ -89,6 +89,7 @@ Story\B\B_AssignAmbientInfos_Mine_VLK_4.d
 Story\B\B_AssignAmbientInfos_NOV_2.d
 Story\B\B_AssignAmbientInfos_NOV_3.d
 Story\B\B_AssignAmbientInfos_NOV_5.d
+Story\B\B_AssignAmbientInfos_ORC_17.d
 Story\B\B_AssignAmbientInfos_ORG_13.d
 Story\B\B_AssignAmbientInfos_ORG_6.d
 Story\B\B_AssignAmbientInfos_ORG_7.d
@@ -242,6 +243,8 @@ AI\ZS_Babe\BabeTestModell.d
 Magic\Spell_ArmyOfDarkness.d
 Magic\Spell_Berzerk.d
 Magic\Spell_BreathOfDeath.d
+Magic\Spell_ChainLightning.d
+Magic\Spell_Charm.d
 Magic\Spell_Control.d
 Magic\Spell_DestroyUndead.d
 Magic\Spell_Fear.d
@@ -250,8 +253,6 @@ Magic\Spell_Firebolt.d
 Magic\Spell_Firerain.d
 Magic\Spell_Firestorm.d
 Magic\Spell_Heal.d
-Magic\Spell_ChainLightning.d
-Magic\Spell_Charm.d
 Magic\Spell_IceCube.d
 Magic\Spell_IceWave.d
 Magic\Spell_Light.d
@@ -328,8 +329,8 @@ Story\ZS\ZS_IeThomas.d
 Story\ZS\ZS_IeUnicorn.d
 Story\ZS\ZS_Intercept.d
 Story\ZS\ZS_Listen.d
-Story\ZS\ZS_Meditate.d
 Story\ZS\ZS_McHunting.d
+Story\ZS\ZS_Meditate.d
 Story\ZS\ZS_MineBellows.d
 Story\ZS\ZS_OtMeditate.d
 Story\ZS\ZS_PickOre.d
@@ -1029,6 +1030,7 @@ Story\Missions\DIA_GUR_1210_BaaTyon.d
 Story\Missions\DIA_GUR_1211_BaalLukor.d
 Story\Missions\DIA_GUR_1212_MadCorKalom.d
 Story\Missions\DIA_IE_397_Announcer.d
+Story\Missions\DIA_IE_Publikum.d
 Story\Missions\DIA_KDF_400_Rodriguez.d
 Story\Missions\DIA_KDF_401_Damarok.d
 Story\Missions\DIA_KDF_402_Corristo.d
@@ -1172,8 +1174,8 @@ AI\Test_Skripts\TestZustaende\ZS_TestHangAround.d
 AI\Test_Skripts\TestModelle.d
 AI\Test_Skripts\B_TestReaction.d
 AI\Test_Skripts\Babes.d
-AI\Test_Skripts\ExternalsTest.d
 AI\Test_Skripts\CharacterHelper.d
+AI\Test_Skripts\ExternalsTest.d
 AI\Test_Skripts\Orc_Rockefeller.d
 AI\Test_Skripts\PerceptionTestmodell.d
 AI\Test_Skripts\Startup_AI_Testlevel.d
