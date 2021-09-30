@@ -413,7 +413,7 @@ instance  DIA_Grim_INEXTREMO(C_INFO)
 
 FUNC int  DIA_Grim_INEXTREMO_Condition()
 {
-	if	(Kapitel == 2) 
+	if	((Kapitel == 2) && (InExtremoPlaying == true))
 	{
 		return TRUE;
 	};
