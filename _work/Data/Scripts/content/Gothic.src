@@ -89,6 +89,7 @@ Story\B\B_AssignAmbientInfos_Mine_VLK_4.d
 Story\B\B_AssignAmbientInfos_NOV_2.d
 Story\B\B_AssignAmbientInfos_NOV_3.d
 Story\B\B_AssignAmbientInfos_NOV_5.d
+Story\B\B_AssignAmbientInfos_ORC_17.d
 Story\B\B_AssignAmbientInfos_ORG_13.d
 Story\B\B_AssignAmbientInfos_ORG_6.d
 Story\B\B_AssignAmbientInfos_ORG_7.d
@@ -1029,6 +1030,7 @@ Story\Missions\DIA_GUR_1210_BaaTyon.d
 Story\Missions\DIA_GUR_1211_BaalLukor.d
 Story\Missions\DIA_GUR_1212_MadCorKalom.d
 Story\Missions\DIA_IE_397_Announcer.d
+Story\Missions\DIA_IE_Publikum.d
 Story\Missions\DIA_KDF_400_Rodriguez.d
 Story\Missions\DIA_KDF_401_Damarok.d
 Story\Missions\DIA_KDF_402_Corristo.d
