@@ -51,7 +51,7 @@ FUNC INT Info_Mine_Vlk_3_Mine_Condition()
 FUNC VOID Info_Mine_Vlk_3_Mine_Info()
 {
 	AI_Output(other,self,"Info_Mine_Vlk_3_Mine_15_00"); //Erzähl mir was von der Mine
-	AI_Output(self,other,"Info_Mine_Vlk_3_Mine_03_01"); //Wir müssen alle arbeiten. Wochenlang ohne Tageslicht. Es gibt kein Entkommen. Die einzige Freiheit ist der Tod.
+	AI_Output(self,other,"Info_Mine_Vlk_3_Mine_01_01"); //Wir müssen alle arbeiten. Wochenlang ohne Tageslicht. Es gibt kein Entkommen. Die einzige Freiheit ist der Tod.
 	
 };
 
@@ -79,7 +79,7 @@ FUNC INT Info_Mine_Vlk_3_WichtigePersonen_Condition()
 FUNC VOID Info_Mine_Vlk_3_WichtigePersonen_Info()
 {
 	AI_Output(other,self,"Info_Mine_Vlk_3_WichtigePersonen_15_00"); //Wer hat hier was zu sagen?
-	AI_Output(self,other,"Info_Mine_Vlk_3_WichtigePersonen_03_01"); //Ian ist der Chef der Mine. Asghan befehligt die Gardisten.
+	AI_Output(self,other,"Info_Mine_Vlk_3_WichtigePersonen_01_01"); //Ian ist der Chef der Mine. Asghan befehligt die Gardisten.
 };
 
 // *************************************************************************
@@ -106,8 +106,8 @@ FUNC INT Info_Mine_Vlk_3_Minecrawler_Condition()
 FUNC VOID Info_Mine_Vlk_3_Minecrawler_Info()
 {
 	AI_Output(other,self,"Info_Mine_Vlk_3_Minecrawler_15_00"); //Was weißt du über Minecrawler?
-	AI_Output(self,other,"Info_Mine_Vlk_3_Minecrawler_03_01"); //Die beste Art mit den Crawlern fertig zu werden? Lauf. Lauf, so schnell deine Beine dich tragen.
-	AI_Output(self,other,"Info_Mine_Vlk_3_Minecrawler_03_02"); //Wenn du vermisst wirst, ist es eh zu spät. Aber dich wird sowieso keiner vermissen.
+	AI_Output(self,other,"Info_Mine_Vlk_3_Minecrawler_01_01"); //Die beste Art mit den Crawlern fertig zu werden? Lauf. Lauf, so schnell deine Beine dich tragen.
+	AI_Output(self,other,"Info_Mine_Vlk_3_Minecrawler_01_02"); //Wenn du vermisst wirst, ist es eh zu spät. Aber dich wird sowieso keiner vermissen.
 };
 
 // *************************************************************************
@@ -134,8 +134,8 @@ FUNC INT Info_Mine_Vlk_3_DieLage_Condition()
 FUNC VOID Info_Mine_Vlk_3_DieLage_Info()
 {
 	AI_Output(other,self,"Info_Mine_Vlk_3_DieLage_15_00"); //Wie sieht's aus?
-	AI_Output(self,other,"Info_Mine_Vlk_3_DieLage_03_01"); //Tja, also mein Rücken schmerzt, meine Arme fallen mir ab, meine Kehle ist trocken und ich bin müde.
-	AI_Output(self,other,"Info_Mine_Vlk_3_DieLage_03_02"); //Und das ständige Geräusch der Spitzhacken. Ich werde noch wahnsinnig.
+	AI_Output(self,other,"Info_Mine_Vlk_3_DieLage_01_01"); //Tja, also mein Rücken schmerzt, meine Arme fallen mir ab, meine Kehle ist trocken und ich bin müde.
+	AI_Output(self,other,"Info_Mine_Vlk_3_DieLage_01_02"); //Und das ständige Geräusch der Spitzhacken. Ich werde noch wahnsinnig.
 };
 	
 // *************************************************************************

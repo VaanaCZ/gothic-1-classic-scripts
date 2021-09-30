@@ -51,8 +51,8 @@ FUNC INT Info_Mine_Vlk_4_Mine_Condition()
 FUNC VOID Info_Mine_Vlk_4_Mine_Info()
 {
 	AI_Output(other,self,"Info_Mine_Vlk_4_Mine_15_00"); //Erzähl mir was von der Mine
-	AI_Output(self,other,"Info_Mine_Vlk_4_Mine_04_01"); //Eine Spitzhacke und Schweiß. Das brauchst du hier drin. Du kommst hier rein und du gehst auch wieder.
-	AI_Output(self,other,"Info_Mine_Vlk_4_Mine_04_02"); //Aber, wenn du längst weg bist, werde ich hier immer noch das Erz aus dem Berg schlagen. Das ist meine Aufgabe. Das ist mein Leben.
+	AI_Output(self,other,"Info_Mine_Vlk_4_Mine_01_01"); //Eine Spitzhacke und Schweiß. Das brauchst du hier drin. Du kommst hier rein und du gehst auch wieder.
+	AI_Output(self,other,"Info_Mine_Vlk_4_Mine_01_02"); //Aber, wenn du längst weg bist, werde ich hier immer noch das Erz aus dem Berg schlagen. Das ist meine Aufgabe. Das ist mein Leben.
 };
 
 // *************************************************************************
@@ -79,7 +79,7 @@ FUNC INT Info_Mine_Vlk_4_WichtigePersonen_Condition()
 FUNC VOID Info_Mine_Vlk_4_WichtigePersonen_Info()
 {
 	AI_Output(other,self,"Info_Mine_Vlk_4_WichtigePersonen_15_00"); //Wer hat hier was zu sagen?
-	AI_Output(self,other,"Info_Mine_Vlk_4_WichtigePersonen_04_01"); //Santino und Alberto tauschen Waren gegen das Erz, das wir schürfen. Von ihnen bekommen wir unsere täglichen Rationen.
+	AI_Output(self,other,"Info_Mine_Vlk_4_WichtigePersonen_01_01"); //Santino und Alberto tauschen Waren gegen das Erz, das wir schürfen. Von ihnen bekommen wir unsere täglichen Rationen.
 };
 
 // *************************************************************************
@@ -106,7 +106,7 @@ FUNC INT Info_Mine_Vlk_4_Minecrawler_Condition()
 FUNC VOID Info_Mine_Vlk_4_Minecrawler_Info()
 {
 	AI_Output(other,self,"Info_Mine_Vlk_4_Minecrawler_15_00"); //Was weißt du über Minecrawler?
-	AI_Output(self,other,"Info_Mine_Vlk_4_Minecrawler_04_01"); //Wenn eins von den Crawlerviechern ankommt, dann schlag es mit der Spitze zwischen die Augen. Aber du musst beim ersten Mal treffen, eine zweite Chance gibt es nicht.
+	AI_Output(self,other,"Info_Mine_Vlk_4_Minecrawler_01_01"); //Wenn eins von den Crawlerviechern ankommt, dann schlag es mit der Spitze zwischen die Augen. Aber du musst beim ersten Mal treffen, eine zweite Chance gibt es nicht.
 	
 };
 
@@ -134,7 +134,7 @@ FUNC INT Info_Mine_Vlk_4_DieLage_Condition()
 FUNC VOID Info_Mine_Vlk_4_DieLage_Info()
 {
 	AI_Output(other,self,"Info_Mine_Vlk_4_DieLage_15_00"); //Wie sieht's aus?
-	AI_Output(self,other,"Info_Mine_Vlk_4_DieLage_04_01"); //Früher war alles besser.
+	AI_Output(self,other,"Info_Mine_Vlk_4_DieLage_01_01"); //Früher war alles besser.
 };
 	
 // *************************************************************************
