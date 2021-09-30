@@ -51,7 +51,7 @@ FUNC INT Info_Mine_Vlk_3_Mine_Condition()
 FUNC VOID Info_Mine_Vlk_3_Mine_Info()
 {
 	AI_Output(other,self,"Info_Mine_Vlk_3_Mine_15_00"); //Háblame de la mina.
-	AI_Output(self,other,"Info_Mine_Vlk_3_Mine_03_01"); //Todos tenemos que trabajar duro durante semanas, en las que no vemos la luz del día. No hay escapatoria. La única salida es la muerte.
+	AI_Output(self,other,"Info_Mine_Vlk_3_Mine_01_01"); //Todos tenemos que trabajar duro durante semanas, en las que no vemos la luz del día. No hay escapatoria. La única salida es la muerte.
 	
 };
 
@@ -79,7 +79,7 @@ FUNC INT Info_Mine_Vlk_3_WichtigePersonen_Condition()
 FUNC VOID Info_Mine_Vlk_3_WichtigePersonen_Info()
 {
 	AI_Output(other,self,"Info_Mine_Vlk_3_WichtigePersonen_15_00"); //¿Quién manda por aquí?
-	AI_Output(self,other,"Info_Mine_Vlk_3_WichtigePersonen_03_01"); //Ian es el jefe de la mina. Asghan está a cargo de los guardias.
+	AI_Output(self,other,"Info_Mine_Vlk_3_WichtigePersonen_01_01"); //Ian es el jefe de la mina. Asghan está a cargo de los guardias.
 };
 
 // *************************************************************************
@@ -106,8 +106,8 @@ FUNC INT Info_Mine_Vlk_3_Minecrawler_Condition()
 FUNC VOID Info_Mine_Vlk_3_Minecrawler_Info()
 {
 	AI_Output(other,self,"Info_Mine_Vlk_3_Minecrawler_15_00"); //¿Qué sabes de los reptadores?
-	AI_Output(self,other,"Info_Mine_Vlk_3_Minecrawler_03_01"); //¿Te refieres al mejor modo de enfrentarte a ellos? Corriendo. Corriendo todo lo deprisa que te lleven tus piernas.
-	AI_Output(self,other,"Info_Mine_Vlk_3_Minecrawler_03_02"); //Si desapareces, es demasiado tarde. No es probable que nadie te eche de menos.
+	AI_Output(self,other,"Info_Mine_Vlk_3_Minecrawler_01_01"); //¿Te refieres al mejor modo de enfrentarte a ellos? Corriendo. Corriendo todo lo deprisa que te lleven tus piernas.
+	AI_Output(self,other,"Info_Mine_Vlk_3_Minecrawler_01_02"); //Si desapareces, es demasiado tarde. No es probable que nadie te eche de menos.
 };
 
 // *************************************************************************
@@ -134,8 +134,8 @@ FUNC INT Info_Mine_Vlk_3_DieLage_Condition()
 FUNC VOID Info_Mine_Vlk_3_DieLage_Info()
 {
 	AI_Output(other,self,"Info_Mine_Vlk_3_DieLage_15_00"); //¿Qué tal estás?
-	AI_Output(self,other,"Info_Mine_Vlk_3_DieLage_03_01"); //Bueno, me duele la espalda, parece que se me van a caer los brazos, tengo la lengua seca y me muero de cansancio.
-	AI_Output(self,other,"Info_Mine_Vlk_3_DieLage_03_02"); //Y el martilleo constante de los picos me está volviendo loco.
+	AI_Output(self,other,"Info_Mine_Vlk_3_DieLage_01_01"); //Bueno, me duele la espalda, parece que se me van a caer los brazos, tengo la lengua seca y me muero de cansancio.
+	AI_Output(self,other,"Info_Mine_Vlk_3_DieLage_01_02"); //Y el martilleo constante de los picos me está volviendo loco.
 };
 	
 // *************************************************************************

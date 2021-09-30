@@ -23,7 +23,7 @@ FUNC INT Info_SFB_5_Pre_Condition()
 
 FUNC VOID Info_SFB_5_Pre_Info()
 {	
-	AI_Output(self,other,"Info_SFB_5_EinerVonEuchWerden_05_00"); //¡Hola!
+	AI_Output(self,other,"Info_SFB_5_EinerVonEuchWerden_02_00"); //¡Hola!
 };
 
 // *************************************************************************
@@ -74,10 +74,10 @@ FUNC INT Info_SFB_5_EinerVonEuchWerden_Condition()
 FUNC VOID Info_SFB_5_EinerVonEuchWerden_Info()
 {
 	AI_Output(other,self,"Info_SFB_5_EinerVonEuchWerden_15_00"); //¿Y si quiero unirme a vosotros?
-	AI_Output(self,other,"Info_SFB_5_EinerVonEuchWerden_05_01"); //¿A nosotros? ¿Como qué, como aguador?
+	AI_Output(self,other,"Info_SFB_5_EinerVonEuchWerden_02_01"); //¿A nosotros? ¿Como qué, como aguador?
 	AI_Output(other,self,"Info_SFB_5_EinerVonEuchWerden_15_02"); //No, como raspador.
-	AI_Output(self,other,"Info_SFB_5_EinerVonEuchWerden_05_03"); //Mira, voy a decirte algo: nadie se presenta VOLUNTARIO para ser raspador.
-	AI_Output(self,other,"Info_SFB_5_EinerVonEuchWerden_05_04"); //Claro que, si insistes... Ve a hablar con Swiney. Seguro que le sobrará un pico para ti.
+	AI_Output(self,other,"Info_SFB_5_EinerVonEuchWerden_02_03"); //Mira, voy a decirte algo: nadie se presenta VOLUNTARIO para ser raspador.
+	AI_Output(self,other,"Info_SFB_5_EinerVonEuchWerden_02_04"); //Claro que, si insistes... Ve a hablar con Swiney. Seguro que le sobrará un pico para ti.
 };
 
 // *************************************************************************
@@ -101,10 +101,10 @@ FUNC INT Info_SFB_5_WichtigePersonen_Condition()
 FUNC VOID Info_SFB_5_WichtigePersonen_Info()
 {
 	AI_Output(other,self,"Info_SFB_5_WichtigePersonen_15_00"); //¿Quién es importante aquí?
-	AI_Output(self,other,"Info_SFB_5_WichtigePersonen_05_01"); //¿Quién es importante? Yo, por supuesto.
-	AI_Output(self,other,"Info_SFB_5_WichtigePersonen_05_02"); //Pero supongo que te refieres a quién manda.
-	AI_Output(self,other,"Info_SFB_5_WichtigePersonen_05_03"); //Bueno, supongo que debes hablar con los mercenarios o los bandidos. Ni te acerques a los magos del agua.
-	AI_Output(self,other,"Info_SFB_5_WichtigePersonen_05_04"); //Ese culo gordo de Swiney cree que es más importante de lo que es. Y sólo reparte los picos y hace lo que Okyl le dice.
+	AI_Output(self,other,"Info_SFB_5_WichtigePersonen_02_01"); //¿Quién es importante? Yo, por supuesto.
+	AI_Output(self,other,"Info_SFB_5_WichtigePersonen_02_02"); //Pero supongo que te refieres a quién manda.
+	AI_Output(self,other,"Info_SFB_5_WichtigePersonen_02_03"); //Bueno, supongo que debes hablar con los mercenarios o los bandidos. Ni te acerques a los magos del agua.
+	AI_Output(self,other,"Info_SFB_5_WichtigePersonen_02_04"); //Ese culo gordo de Swiney cree que es más importante de lo que es. Y sólo reparte los picos y hace lo que Okyl le dice.
 };
 
 // *************************************************************************
@@ -128,7 +128,7 @@ FUNC INT Info_SFB_5_DasLager_Condition()
 FUNC VOID Info_SFB_5_DasLager_Info()
 {
 	AI_Output(other,self,"Info_SFB_5_DasLager_15_00"); //¿Qué puede ofrecer el campamento?
-	AI_Output(self,other,"Info_SFB_5_DasLager_05_01"); //Lo que tú te ganes. Para algunos, nada más que trabajo; para otros, un montón de diversión.
+	AI_Output(self,other,"Info_SFB_5_DasLager_02_01"); //Lo que tú te ganes. Para algunos, nada más que trabajo; para otros, un montón de diversión.
 };
 
 // *************************************************************************
@@ -152,9 +152,9 @@ FUNC INT Info_SFB_5_DieLage_Condition()
 FUNC VOID Info_SFB_5_DieLage_Info()
 {
 	AI_Output(other,self,"Info_SFB_5_DieLage_15_00"); //¿Cómo es la vida aquí?
-	AI_Output(self,other,"Info_SFB_5_DieLage_05_01"); //¡Estupenda!
-	AI_Output(self,other,"Info_SFB_5_DieLage_05_02"); //Y como estamos tan contentos, hacemos todo lo que podemos para largarnos.
-	AI_Output(self,other,"Info_SFB_5_DieLage_05_03"); //¿Qué te crees que es este lugar? Es una cárcel, y a nadie le gusta vivir en una cárcel.
+	AI_Output(self,other,"Info_SFB_5_DieLage_02_01"); //¡Estupenda!
+	AI_Output(self,other,"Info_SFB_5_DieLage_02_02"); //Y como estamos tan contentos, hacemos todo lo que podemos para largarnos.
+	AI_Output(self,other,"Info_SFB_5_DieLage_02_03"); //¿Qué te crees que es este lugar? Es una cárcel, y a nadie le gusta vivir en una cárcel.
 	
 };	
 // *************************************************************************
