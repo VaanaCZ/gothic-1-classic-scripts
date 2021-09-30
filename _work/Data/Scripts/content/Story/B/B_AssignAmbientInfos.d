@@ -129,7 +129,7 @@ FUNC VOID B_AssignAmbientInfos(var c_NPC amb_self)
 				B_AssignAmbientInfos_Sld_11(amb_self);
 			};
 		}
-		else if((amb_self.guild == GIL_ORCWARRIOR) || (amb_self.guild == GIL_ORCSCOUT) || (amb_self.guild == GIL_ORCSHAMAN))
+		else if ( (amb_self.guild == GIL_ORCWARRIOR) || (amb_self.guild == GIL_ORCSCOUT) || (amb_self.guild == GIL_ORCSHAMAN) )
 		{
 			B_AssignAmbientInfos_Orc_17(amb_self);
 		};
