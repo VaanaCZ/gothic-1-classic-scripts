@@ -174,7 +174,7 @@ FUNC void  Tpl_1415_Templer_ROCK_Info()
 
 	Info_ClearChoices (Tpl_1415_Templer_ROCK);
 	Info_Addchoice (Tpl_1415_Templer_ROCK,DIALOG_BACK,Tpl_1415_Templer_ROCK_BACK);
-	Info_Addchoice (Tpl_1415_Templer_ROCK,B_BuildBuyArmorString("Одежда послушника, защита от оружия 15, от огня 10",VALUE_NOV_ARMOR_L),Tpl_1415_Templer_ROCK_BUY);
+	Info_Addchoice (Tpl_1415_Templer_ROCK,B_BuildBuyArmorString(NAME_TorwachenPsiRock,VALUE_NOV_ARMOR_L),Tpl_1415_Templer_ROCK_BUY);
 };
 
 func void Tpl_1415_Templer_ROCK_BACK()

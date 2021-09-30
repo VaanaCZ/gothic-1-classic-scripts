@@ -419,13 +419,7 @@ CONST INT MAT_GLAS										= 5						;		// ??
 //		
 CONST INT LOG_MISSION									= 0						;
 CONST INT LOG_NOTE										= 1						;
-
-//
-//	TRADE MANAGER
-//
-const string STR_INFO_TRADE_ACCEPT						= "Купить"			;
-const string STR_INFO_TRADE_RESET						= "Отказаться"			;
-const string STR_INFO_TRADE_EXIT						= "НАЗАД"				;
+				
 
 //																				 
 //	OTHER CONSTANTS												       			 

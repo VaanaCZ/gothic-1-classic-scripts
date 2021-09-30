@@ -1092,7 +1092,7 @@ instance  PC_Thief_ARMOR (C_INFO)
 	information		= PC_Thief_ARMOR_Info;
 	important		= 0;
 	permanent		= 1;
-	description		= B_BuildBuyArmorString("Тяжелый доспех Призрака: оружие 40, стрелы 5, огонь 20",VALUE_STT_ARMOR_H); 
+	description		= B_BuildBuyArmorString(NAME_DiegoHeavyShadows,VALUE_STT_ARMOR_H); 
 };
 
 FUNC int  PC_Thief_ARMOR_Condition()

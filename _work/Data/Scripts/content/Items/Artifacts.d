@@ -468,7 +468,7 @@ INSTANCE ItArRuneHeal (C_Item)
 
 	description			=	"Лечение";
 	TEXT	[0]			=	NAME_Mag_Circle;			COUNT	[0]		=	mag_circle;
-	TEXT	[1]			=	"Лечение за маг. силу";		COUNT	[1]		=	SPL_HEALING_HP_PER_MP;
+	TEXT	[1]			=	NAME_HealingPerMana;		COUNT	[1]		=	SPL_HEALING_HP_PER_MP;
 	//TEXT	[2]			=	"";							COUNT	[2]		=	;
 	//TEXT	[3] 		=	"";							COUNT	[3]		=	;
 	TEXT	[4]			=	NAME_Spell_Invest;
@@ -494,7 +494,7 @@ INSTANCE ItArScrollHeal (C_Item)
 
 	description			=	"Лечение";
 	//TEXT	[0]			=	NAME_Mag_Circle;			COUNT	[0]		=	mag_circle;
-	TEXT	[1]			=	"Лечение за маг. силу";		COUNT	[1]		=	SPL_HEALING_HP_PER_MP;
+	TEXT	[1]			=	NAME_HealingPerMana;		COUNT	[1]		=	SPL_HEALING_HP_PER_MP;
 	TEXT	[2]			=	NAME_Mana_needed;			COUNT	[2]		=	SPL_HEALING_HP_PER_MP;
 	//TEXT	[3] 		=	"";							COUNT	[3]		=	;
 	TEXT	[4]			=	NAME_Spell_Invest;
@@ -962,7 +962,7 @@ INSTANCE ItArRuneIceCube (C_Item)
 	description			=	"Ледяная глыба";
 	TEXT	[0]			=	NAME_Mag_Circle;			COUNT	[0]		=	mag_circle;
 	TEXT	[1]			=	NAME_Manakosten;			COUNT	[1]		=	SPL_SENDCAST_ICECUBE;
-	TEXT	[2]			=	"Урон";				COUNT	[2]		=	SPL_FREEZE_DAMAGE;
+	TEXT	[2]			=	NAME_Damage;				COUNT	[2]		=	SPL_FREEZE_DAMAGE;
 	//TEXT	[3] 		=	"";							COUNT	[3]		=	;
 	//TEXT	[4]			=	"";
 	TEXT	[5]			=	NAME_Value;					COUNT	[5]		=	value;
@@ -987,7 +987,7 @@ INSTANCE ItArScrollIceCube (C_Item)
 	description			=	"Ледяная глыба";
 	//TEXT	[0]			=	NAME_Mag_Circle;			COUNT	[0]		=	mag_circle;
 	TEXT	[1]			=	NAME_Manakosten;			COUNT	[1]		=	SPL_SENDCAST_ICECUBE;
-	TEXT	[2]			=	"Урон";				COUNT	[2]		=	SPL_FREEZE_DAMAGE;
+	TEXT	[2]			=	NAME_Damage;				COUNT	[2]		=	SPL_FREEZE_DAMAGE;
 	//TEXT	[3] 		=	"";							COUNT	[3]		=	;
 	//TEXT	[4]			=	"";
 	TEXT	[5]			=	NAME_Value;					COUNT	[5]		=	value;
@@ -1015,7 +1015,7 @@ INSTANCE ItArRuneIceWave (C_Item)
 	description			=	"Ледяная волна";
 	TEXT	[0]			=	NAME_Mag_Circle;			COUNT	[0]		=	mag_circle;
 	TEXT	[1]			=	NAME_Manakosten;			COUNT	[1]		=	SPL_SENDCAST_ICEWAVE;
-	TEXT	[2]			=	"Урон";				COUNT	[2]		=	SPL_FREEZE_DAMAGE;
+	TEXT	[2]			=	NAME_Damage;				COUNT	[2]		=	SPL_FREEZE_DAMAGE;
 	//TEXT	[3] 		=	"";							COUNT	[3]		=	;
 	//TEXT	[4]			=	"";
 	TEXT	[5]			=	NAME_Value;					COUNT	[5]		=	value;
@@ -1040,7 +1040,7 @@ INSTANCE ItArScrollIceWave (C_Item)
 	description			=	"Ледяная волна";
 	//TEXT	[0]			=	NAME_Mag_Circle;			COUNT	[0]		=	mag_circle;
 	TEXT	[1]			=	NAME_Manakosten;			COUNT	[1]		=	SPL_SENDCAST_ICEWAVE;
-	TEXT	[2]			=	"Урон";				COUNT	[2]		=	SPL_FREEZE_DAMAGE;
+	TEXT	[2]			=	NAME_Damage;				COUNT	[2]		=	SPL_FREEZE_DAMAGE;
 	//TEXT	[3] 		=	"";							COUNT	[3]		=	;
 	//TEXT	[4]			=	"";
 	TEXT	[5]			=	NAME_Value;					COUNT	[5]		=	value;

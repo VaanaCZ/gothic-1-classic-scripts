@@ -1092,7 +1092,7 @@ instance  KDW_600_Saturas_HEAVYARMOR (C_INFO)
 	information		= KDW_600_Saturas_HEAVYARMOR_Info;
 	important		= 0;
 	permanent		= 1;
-	description		= B_BuildBuyArmorString("Одеяние верховного мага",VALUE_KDW_ARMOR_H); 
+	description		= B_BuildBuyArmorString(NAME_SaturasHighRobe,VALUE_KDW_ARMOR_H); 
 };
 
 FUNC int  KDW_600_Saturas_HEAVYARMOR_Condition()

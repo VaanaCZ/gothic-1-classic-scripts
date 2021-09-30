@@ -19,19 +19,19 @@ func void B_BuyAttributePoints (var C_NPC typ, var int ATR, var int AtrPlus)
 			if (ATR == ATR_STRENGTH)
 			{
 				typ.attribute[ATR_STRENGTH] = typ.attribute[ATR_STRENGTH] + AtrPlus;
-				PrintString = ConcatStrings("Сила +", AtrPlusSTRING);
+				PrintString = ConcatStrings(NAME_BuyAttributeSTR, AtrPlusSTRING);
 				PrintScreen	(PrintSTRING, -1,-1,"FONT_OLD_20_WHITE.TGA",1);
 			}
 			else if (ATR == ATR_DEXTERITY)
 			{
 				typ.attribute[ATR_DEXTERITY] = typ.attribute[ATR_DEXTERITY] + AtrPlus;
-				PrintString = ConcatStrings("Ловкость +", AtrPlusSTRING);
+				PrintString = ConcatStrings(NAME_BuyAttributeDEX, AtrPlusSTRING);
 				PrintScreen	(PrintSTRING, -1,-1,"FONT_OLD_20_WHITE.TGA",1);
 			}
 			else if (ATR == ATR_MANA_MAX)
 			{
 				typ.attribute[ATR_MANA_MAX] = typ.attribute[ATR_MANA_MAX] + AtrPlus;
-				PrintString = ConcatStrings("Маг. сила +", AtrPlusSTRING);
+				PrintString = ConcatStrings(NAME_BuyAttributeMAN, AtrPlusSTRING);
 				PrintScreen	(PrintString, -1,-1,"FONT_OLD_20_WHITE.TGA",1);
 			};
 		}

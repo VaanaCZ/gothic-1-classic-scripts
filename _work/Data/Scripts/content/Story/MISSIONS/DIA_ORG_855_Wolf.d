@@ -164,8 +164,8 @@ FUNC VOID DIA_Wolf_SellArmor_Info()
 
 		Info_ClearChoices 	(DIA_Wolf_SellArmor);
 		Info_Addchoice 		(DIA_Wolf_SellArmor,DIALOG_BACK														,DIA_Wolf_SellArmor_BACK);
-		Info_Addchoice 		(DIA_Wolf_SellArmor,B_BuildBuyArmorString("—редний доспех: оружие 35, стрелы 5, огонь 15",VALUE_ORG_ARMOR_M),DIA_Wolf_SellArmor_M);
-		Info_Addchoice 		(DIA_Wolf_SellArmor,B_BuildBuyArmorString("“€желый доспех: оружи€ 40, стрелы 5, огонь 20",VALUE_ORG_ARMOR_H)		,DIA_Wolf_SellArmor_H);
+		Info_Addchoice 		(DIA_Wolf_SellArmor,B_BuildBuyArmorString(NAME_WolfBandits,VALUE_ORG_ARMOR_M),DIA_Wolf_SellArmor_M);
+		Info_Addchoice 		(DIA_Wolf_SellArmor,B_BuildBuyArmorString(NAME_WolfHeavyBandits,VALUE_ORG_ARMOR_H)		,DIA_Wolf_SellArmor_H);
 	}
 	else
 	{

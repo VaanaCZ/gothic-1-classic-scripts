@@ -423,6 +423,14 @@ const string NAME_Bonus_Str		= "Бонус к силе:";
 const string NAME_OneHanded		= "Одноручное оружие";
 const string NAME_TwoHanded		= "Двуручное оружие";
 
+//----------------- MH: zusдtzlich wegen FlexTranslate ---------------------
+
+const string NAME_HealingPerMana = "Лечение за маг. силу"; 
+
+const string NAME_BuyAttributeSTR = "Сила +";
+const string NAME_BuyAttributeDEX = "Ловкость +";
+const string NAME_BuyAttributeMAN = "Маг. сила +";
+
 // ***************************************************************************************
 // sonstige Bildschirmausgaben
 // ***************************************************************************************
@@ -571,6 +579,26 @@ const string NAME_RaiseDexterity	=	"Ловкость +";
 const string NAME_RaiseStrDex		=	"Сила и ловкость +";
 const string NAME_RaiseManaMax		=	"Макс. маг. сила +";
 const string NAME_RaiseHealthMax	=	"Макс. жизненная сила +";
+
+//---------------- MH: fьr B_BuildBuyArmorString ----------------------------
+
+const string NAME_CorristoHighRobe	= 	"Учитель, я хочу носить одеяние верховных магов Круга Огня.";
+const string NAME_SaturasHighRobe	= 	"Одеяние верховного мага";
+const string NAME_DiegoHeavyShadows	=	"Тяжелый доспех Призрака: оружие 40, стрелы 5, огонь 20";
+const string NAME_StoneHeavyGuards	= 	"Тяж. доспех стражника: оружие 70, стрелы 10, огонь 25";
+const string NAME_StoneGuards		= 	"Доспех стражника: оружие 55, стрелы 10, огонь 35";
+const string NAME_WolfBandits		= 	"Средний доспех: оружие 35, стрелы 5, огонь 15"; 
+const string NAME_WolfHeavyBandits	= 	"Тяжелый доспех: оружия 40, стрелы 5, огонь 20";
+const string NAME_LeeMercs			= 	"Средний доспех: оружие 55, стрелы 10, огонь 25";
+const string NAME_LeeHeavyMercs		= 	"Тяжелый доспех: оружие 70, стрелы 10, огонь 35";
+const string NAME_FiskLightDiggers	= 	"Простые штаны рудокопа, защита от оружия 10, от огня 5";
+const string NAME_FiskDiggers		= 	"Штаны рудокопа, защита от оружия 15, от огня 5";
+const string NAME_GorNaTothHeavyTpl = 	"Тяжелый доспех: оружие 70, стрелы 10, огонь 35";
+const string NAME_GorNaTothTpl 		=	"Средний доспех: оружие 55, стрелы 10, огонь 25";
+const string NAME_TorwachenPsiRock	=	"Одежда послушника, защита от оружия 15, от огня 10";
+
+
+
 
 // ***************************************************************************************
 // Menuetext-Konstanten

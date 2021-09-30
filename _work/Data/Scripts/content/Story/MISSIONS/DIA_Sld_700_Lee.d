@@ -420,8 +420,8 @@ FUNC void  Sld_700_Lee_ARMOR_Info()
 	
 	Info_ClearChoices	(Sld_700_Lee_ARMOR);
 	Info_AddChoice		(Sld_700_Lee_ARMOR,DIALOG_BACK,Sld_700_Lee_ARMOR_BACK);
-	Info_AddChoice		(Sld_700_Lee_ARMOR,B_BuildBuyArmorString("—редний доспех: оружие 55, стрелы 10, огонь 25", VALUE_SLD_ARMOR_M) ,Sld_700_Lee_ARMOR_M);
-	Info_AddChoice		(Sld_700_Lee_ARMOR,B_BuildBuyArmorString("“€желый доспех: оружие 70, стрелы 10, огонь 35", VALUE_SLD_ARMOR_H),Sld_700_Lee_ARMOR_H);
+	Info_AddChoice		(Sld_700_Lee_ARMOR,B_BuildBuyArmorString(NAME_LeeMercs, VALUE_SLD_ARMOR_M) ,Sld_700_Lee_ARMOR_M);
+	Info_AddChoice		(Sld_700_Lee_ARMOR,B_BuildBuyArmorString(NAME_LeeHeavyMercs, VALUE_SLD_ARMOR_H),Sld_700_Lee_ARMOR_H);
 };  
 func void Sld_700_Lee_ARMOR_BACK()
 {

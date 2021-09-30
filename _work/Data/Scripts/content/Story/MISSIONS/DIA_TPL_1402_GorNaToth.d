@@ -178,8 +178,8 @@ FUNC void  TPL_1402_GorNaToth_ARMOR_Info()
 
 	Info_ClearChoices		(TPL_1402_GorNaToth_ARMOR);
 	Info_AddChoice			(TPL_1402_GorNaToth_ARMOR,	DIALOG_BACK	,	TPL_1402_GorNaToth_ARMOR_BACK);	
-	Info_AddChoice			(TPL_1402_GorNaToth_ARMOR,	B_BuildBuyArmorString("“€желый доспех: оружие 70, стрелы 10, огонь 35",VALUE_TPL_ARMOR_H) ,TPL_1402_GorNaToth_ARMOR_H);	
-	Info_AddChoice			(TPL_1402_GorNaToth_ARMOR,	B_BuildBuyArmorString("—редний доспех: оружие 55, стрелы 10, огонь 25",VALUE_TPL_ARMOR_M),	TPL_1402_GorNaToth_ARMOR_M);	
+	Info_AddChoice			(TPL_1402_GorNaToth_ARMOR,	B_BuildBuyArmorString(NAME_GorNaTothHeavyTpl,VALUE_TPL_ARMOR_H) ,TPL_1402_GorNaToth_ARMOR_H);	
+	Info_AddChoice			(TPL_1402_GorNaToth_ARMOR,	B_BuildBuyArmorString(NAME_GorNaTothTpl,VALUE_TPL_ARMOR_M),	TPL_1402_GorNaToth_ARMOR_M);	
 
 
 };

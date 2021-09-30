@@ -139,8 +139,8 @@ FUNC void  GRD_219_Stone_BETTERARMOR_Info()
 		
 	Info_ClearChoices		(GRD_219_Stone_BETTERARMOR);
 	Info_AddChoice			(GRD_219_Stone_BETTERARMOR,	DIALOG_BACK							,	GRD_219_Stone_BETTERARMOR_BACK);	
-	Info_AddChoice			(GRD_219_Stone_BETTERARMOR, B_BuildBuyArmorString("“€ж. доспех стражника: оружие 70, стрелы 10, огонь 25",VALUE_GRD_ARMOR_H)	,GRD_219_Stone_BETTERARMOR_H);	
-	Info_AddChoice			(GRD_219_Stone_BETTERARMOR,	B_BuildBuyArmorString("ƒоспех стражника: оружие 55, стрелы 10, огонь 35",VALUE_GRD_ARMOR_M)	,	GRD_219_Stone_BETTERARMOR_M);	
+	Info_AddChoice			(GRD_219_Stone_BETTERARMOR, B_BuildBuyArmorString(NAME_StoneHeavyGuards,VALUE_GRD_ARMOR_H)	,GRD_219_Stone_BETTERARMOR_H);	
+	Info_AddChoice			(GRD_219_Stone_BETTERARMOR,	B_BuildBuyArmorString(NAME_StoneGuards,VALUE_GRD_ARMOR_M)	,	GRD_219_Stone_BETTERARMOR_M);	
 };  
 
 func void GRD_219_Stone_BETTERARMOR_M ()

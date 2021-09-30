@@ -303,8 +303,8 @@ FUNC void  Stt_311_Fisk_ARMOR_Info()
 	AI_Output (self, other,"Stt_311_Fisk_ARMOR_Info_12_02"); //Ну, думаю, я смогу подобрать что-нибудь для тебя.
 	Info_ClearChoices (Stt_311_Fisk_ARMOR);
 	Info_Addchoice (Stt_311_Fisk_ARMOR,DIALOG_BACK,Stt_311_Fisk_ARMOR_BACK);
-	Info_Addchoice (Stt_311_Fisk_ARMOR,B_BuildBuyArmorString("Простые штаны рудокопа, защита от оружия 10, от огня 5",VALUE_VLK_ARMOR_L),Stt_311_Fisk_ARMOR_L);
-	Info_Addchoice (Stt_311_Fisk_ARMOR,B_BuildBuyArmorString("Штаны рудокопа, защита от оружия 15, от огня 5",VALUE_VLK_ARMOR_M),Stt_311_Fisk_ARMOR_M);
+	Info_Addchoice (Stt_311_Fisk_ARMOR,B_BuildBuyArmorString(NAME_FiskLightDiggers,VALUE_VLK_ARMOR_L),Stt_311_Fisk_ARMOR_L);
+	Info_Addchoice (Stt_311_Fisk_ARMOR,B_BuildBuyArmorString(NAME_FiskDiggers,VALUE_VLK_ARMOR_M),Stt_311_Fisk_ARMOR_M);
 
 };  
 

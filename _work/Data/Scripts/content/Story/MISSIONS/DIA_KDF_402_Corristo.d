@@ -595,7 +595,7 @@ instance  KDF_402_Corristo_HEAVYARMOR (C_INFO)
 	information		= KDF_402_Corristo_HEAVYARMOR_Info;
 	important		= 0;
 	permanent		= 1;
-	description		= B_BuildBuyArmorString("Учитель, я хочу носить одеяние верховных магов Круга Огня.",VALUE_KDF_ARMOR_H); 
+	description		= B_BuildBuyArmorString(NAME_CorristoHighRobe,VALUE_KDF_ARMOR_H); 
 };
 
 FUNC int  KDF_402_Corristo_HEAVYARMOR_Condition()
