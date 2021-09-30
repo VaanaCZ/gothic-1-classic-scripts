@@ -23,7 +23,7 @@ FUNC INT Info_SFB_5_Pre_Condition()
 
 FUNC VOID Info_SFB_5_Pre_Info()
 {	
-	AI_Output(self,other,"Info_SFB_5_EinerVonEuchWerden_05_00"); //Salve!
+	AI_Output(self,other,"Info_SFB_5_EinerVonEuchWerden_02_00"); //Salve!
 };
 
 // *************************************************************************
@@ -74,10 +74,10 @@ FUNC INT Info_SFB_5_EinerVonEuchWerden_Condition()
 FUNC VOID Info_SFB_5_EinerVonEuchWerden_Info()
 {
 	AI_Output(other,self,"Info_SFB_5_EinerVonEuchWerden_15_00"); //E se volessi unirmi a voi?
-	AI_Output(self,other,"Info_SFB_5_EinerVonEuchWerden_05_01"); //Unirti a noi? E come? Trasportando l'acqua?
+	AI_Output(self,other,"Info_SFB_5_EinerVonEuchWerden_02_01"); //Unirti a noi? E come? Trasportando l'acqua?
 	AI_Output(other,self,"Info_SFB_5_EinerVonEuchWerden_15_02"); //No, come minatore.
-	AI_Output(self,other,"Info_SFB_5_EinerVonEuchWerden_05_03"); //Ascoltami bene: nessuno VUOLE diventare un minatore.
-	AI_Output(self,other,"Info_SFB_5_EinerVonEuchWerden_05_04"); //Ovviamente, se proprio insisti... Vai a parlarne con Swiney: sicuramente ha da parte un piccone per te.
+	AI_Output(self,other,"Info_SFB_5_EinerVonEuchWerden_02_03"); //Ascoltami bene: nessuno VUOLE diventare un minatore.
+	AI_Output(self,other,"Info_SFB_5_EinerVonEuchWerden_02_04"); //Ovviamente, se proprio insisti... Vai a parlarne con Swiney: sicuramente ha da parte un piccone per te.
 };
 
 // *************************************************************************
@@ -101,10 +101,10 @@ FUNC INT Info_SFB_5_WichtigePersonen_Condition()
 FUNC VOID Info_SFB_5_WichtigePersonen_Info()
 {
 	AI_Output(other,self,"Info_SFB_5_WichtigePersonen_15_00"); //Chi è il pezzo grosso, qui?
-	AI_Output(self,other,"Info_SFB_5_WichtigePersonen_05_01"); //Il pezzo grosso? Io, ovviamente!
-	AI_Output(self,other,"Info_SFB_5_WichtigePersonen_05_02"); //Ma immagino che tu voglia sapere chi comanda.
-	AI_Output(self,other,"Info_SFB_5_WichtigePersonen_05_03"); //Beh, penso farai meglio a parlare coi mercenari o i ladri. Non avvicinarti neppure ai Maghi dell'Acqua.
-	AI_Output(self,other,"Info_SFB_5_WichtigePersonen_05_04"); //Quel culone di Swiney si crede più importante di quanto non sia in realtà: il suo lavoro consiste nel consegnare i picconi ed eseguire gli ordini di Okyl.
+	AI_Output(self,other,"Info_SFB_5_WichtigePersonen_02_01"); //Il pezzo grosso? Io, ovviamente!
+	AI_Output(self,other,"Info_SFB_5_WichtigePersonen_02_02"); //Ma immagino che tu voglia sapere chi comanda.
+	AI_Output(self,other,"Info_SFB_5_WichtigePersonen_02_03"); //Beh, penso farai meglio a parlare coi mercenari o i ladri. Non avvicinarti neppure ai Maghi dell'Acqua.
+	AI_Output(self,other,"Info_SFB_5_WichtigePersonen_02_04"); //Quel culone di Swiney si crede più importante di quanto non sia in realtà: il suo lavoro consiste nel consegnare i picconi ed eseguire gli ordini di Okyl.
 };
 
 // *************************************************************************
@@ -128,7 +128,7 @@ FUNC INT Info_SFB_5_DasLager_Condition()
 FUNC VOID Info_SFB_5_DasLager_Info()
 {
 	AI_Output(other,self,"Info_SFB_5_DasLager_15_00"); //Cosa offre il campo?
-	AI_Output(self,other,"Info_SFB_5_DasLager_05_01"); //Quello che riesci a trarne: per alcuni, nient'altro che lavoro, per altri, un sacco di divertimento.
+	AI_Output(self,other,"Info_SFB_5_DasLager_02_01"); //Quello che riesci a trarne: per alcuni, nient'altro che lavoro, per altri, un sacco di divertimento.
 };
 
 // *************************************************************************
@@ -152,9 +152,9 @@ FUNC INT Info_SFB_5_DieLage_Condition()
 FUNC VOID Info_SFB_5_DieLage_Info()
 {
 	AI_Output(other,self,"Info_SFB_5_DieLage_15_00"); //Com'è la vita, qui?
-	AI_Output(self,other,"Info_SFB_5_DieLage_05_01"); //Ottima!
-	AI_Output(self,other,"Info_SFB_5_DieLage_05_02"); //E siccome siamo tanto felici di stare qui, cerchiamo in ogni modo di andarcene!
-	AI_Output(self,other,"Info_SFB_5_DieLage_05_03"); //Come pensi che possa essere? È una prigione! E a nessuno piace vivere in prigione.
+	AI_Output(self,other,"Info_SFB_5_DieLage_02_01"); //Ottima!
+	AI_Output(self,other,"Info_SFB_5_DieLage_02_02"); //E siccome siamo tanto felici di stare qui, cerchiamo in ogni modo di andarcene!
+	AI_Output(self,other,"Info_SFB_5_DieLage_02_03"); //Come pensi che possa essere? È una prigione! E a nessuno piace vivere in prigione.
 	
 };	
 // *************************************************************************
