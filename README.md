@@ -68,6 +68,9 @@ The reason the original translations did not have this issue is because they use
 ### Technical differences
 To some of you it may be useful to know how all of the translations differ and what needed to be changed when recreating them. Here is a brief summary of everything noteworthy for each version.
 
+<details>
+  <summary>Click to expand!</summary>
+
 #### German
 The newest German scripts have a few differences from the ones in the MDK. Mainly, the In Extremo concert has been disabled and some incorrectly set `self` and `other` keywords have been fixed. 
 
@@ -127,6 +130,8 @@ The Russobit release seems to have been made without the access to the original 
 #### Spanish and Italian
 
 The Spanish and Italian translations seems to share some things in common with both the newest German and English versions. For one they already contains the `KapWechsel` constants and the broken dialogues from the German release. However, they are not completely identical as they don't have the In Extremo changes and also miss some other text constants.
+
+</details>
 
 ---
 **Special thanks to:**
