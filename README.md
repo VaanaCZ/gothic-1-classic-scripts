@@ -53,7 +53,6 @@ AI_Output(self,other,"DIA_Homer_Hello_02_03");    //Jestli to bude pokračovat, 
 ```d
 "SVM_11_NowWait";    //Byłoby dla ciebie lepiej, gdybyś tego nie zrobi
 ```
-
 **Russian Snowball** (here the whole sentences disappears)
 ```d
 AI_Output(self,other,"Info_Mine_Vlk_4_Mine_01_01");	//Кирка и пот - вот и все, что здесь есть. Ты пришел и скоро уйдешь…
@@ -66,10 +65,70 @@ The simplest way to solve this is to make sure that your dialogue always ends wi
 
 The reason the original translations did not have this issue is because they used other methods which did not perform any whitespace trimming *(some used hex editors :-) )*.
 
-### Changes
+### Technical differences
+To some of you it may be useful to know how all of the translations differ and what needed to be changed when recreating them. Here is a brief summary of everything noteworthy for each version.
 
-- changes
+#### German
+The newest German scripts have a few differences from the ones in the MDK. Mainly, the In Extremo concert has been disabled and some incorrectly set `self` and `other` keywords have been fixed. 
 
+Sadly, this newest release also introduces an issue with some dialogues missing audio, due to an attempted fix of mistyped dialogue names. In the original release, the ambient info dialogues for SFB 5 and Mine_Vlk 2, 3 and 4 have an incorrect SVM number specifeid in their dialogue names.
+
+The newest German release "fixed" this by renaming the dialogues to what they should be (e.g. `Info_Mine_Vlk_4_Mine_01_01` -> `Info_Mine_Vlk_4_Mine_04_01`). However, they did so without renaming the audio files or even reparsing the Output Units, meaning that these dialogues are now broken in-game. 
+
+In the Unified scripts I changed these back to the incorrect name, so that way you get to keep the audio.
+
+**Full changelog of what PB changed in said release:**
+- Removed unused constant defines [system\MENU\menu_defines.d]
+- Changed Bathbabe's name definition to use the newly added constant in text.d [content\AI\Test_Skripts\Testmodelle_Markus.d]
+- Added a condition for Orc scouts, warriors and shamans [content\Story\B\B_AssignAmbientInfos.d]
+- Changed incorrect SVM numbers in the names of dialogues [content\Story\B\B_AssignAmbientInfos_Mine_Vlk_2.d] [content\Story\B\B_AssignAmbientInfos_Mine_Vlk_3.d] [content\Story\B\B_AssignAmbientInfos_Mine_Vlk_4.d] [content\Story\B\B_AssignAmbientInfos_Sfb_5.d]
+- Changed incorrectly used `self` and `other` keywords due to which the hero was opening his mouth while the NPC was talking, and vice versa. [content\Story\B\B_AssignAmbientInfos_Nov_5.d] [content\Story\B\B_AssignAmbientInfos_Tpl_8.d]
+- Added ambient infos for Orcs (SVM 17) [content\Story\B\B_AssignAmbientInfos_Orc_17.d]
+- Changed functions in B_InExtremo.d to use the newly added `INEXTREMOONSTAGE` variable [content\Story\B\B_InExtremo.d]
+- Changed introducechapter in B_Kapitelwechsel to use the newly added constants in text.d [content\Story\CHAPTERS\B_Kapitelwechsel.d]
+- Removed In Extremo by preventing them to spawn in the Chapter 2 [content\Story\CHAPTERS\B_Kapitelwechsel.d]
+- Changed a log entry back to German which was translated to English in the MDK scripts [content\Story\CHAPTERS\B_Kapitelwechsel.d]
+- Added missing dialogue text [content\Story\MISSIONS\DIA_ORC_Shaman.d] [content\Story\MISSIONS\DIA_Vlk_564_Jesse.d]
+- Changed at which specific dialogue is the hero given the teleportation spell in the Orc Graveyard (`Info_BaalLukor_RUNES` - > `Info_BaalLukor_DOOR`) and added a condition in case hero already has it [MISSIONS\DIA_GUR_1211_BaalLukor.d]
+- Removed the function call to start the In Extermo concert and disabled the dialogue itself [content\Story\MISSIONS\DIA_IE_397_Announcer.d]
+- Added dialogues for the In Extremo publikum [content\Story\MISSIONS\DIA_IE_Publikum.d]
+- Changed the waypoint at which Kharim begins to sharpen his sword (`OCR_OUTSIDE_HUT_31` -> `OCR_ARENABATTLE_OUTSIDE`) [content\Story\NPC\SLD_729_Kharim.d]
+- Added the `inextremoonstage` variable [content\Story\Story_Globals.d]
+- Added the `STR_BADENIXE` and `KapWeschsel` constants [content\Story\Text.d]
+
+#### Czech and Polish
+
+The Czech and Polish translation seem to be the same branch, which is not suprising considering they were made by the same company at around the same time. However, the Polish translation has a few additional changes over the Czech translation. 
+
+Here is everything that I had to change during reconstruction using the English scripts as base:
+- Removed the condition for Orc scouts, warriors and shamans [content\Story\B\B_AssignAmbientInfos.d]
+- Removed ambient infos for Orcs (SVM 17) [content\Story\B\B_AssignAmbientInfos_Orc_17.d]
+- Changed back the `self` and `other` keywords to be incorrect [content\Story\B\B_AssignAmbientInfos_Tpl_8.d]
+- Commented out the condition to start the In Extremo concert completely [content\Story\Chapters\B_Kapitelwechsel.d]
+- Removed dialogues for the In Extremo publikum [content\Story\MISSIONS\DIA_IE_Publikum.d]
+- Changed the dialogue that starts In Extremo to be inaccessible [content\Story\MISSIONS\DIA_VLK_580_Grim.d]
+- Changed the text in Use_XP_Map. Probably intended for font testing [content\Story\NPC\PC_Hero.d]
+
+The Polish version version has some additional changes which are not present in the Czech version:
+- Changed the order at strings in G_CanNotUse are concatenated to better fit the Polish language [content\_intern\G_Functions\G_CanNotUse.d] [content\AI\AI_Intern\B_Functions.d]
+- Added a new horizontal line in the 6th circle book, meaning that there is now a line right bellow the title (like in all the other magic circle books). This was probably a mistake made by PB that CD Projekt corrected [content\Items\Written.d]
+- Changed the order of the "Ore/Items given" constants to be more consistent [content\Story\NPC\Text.d]
+
+#### Russian Snowball/1-C
+
+Snowball appears to have been made using the same branch as the Czech and Polish releases. This is not surprising considering that CD Projekt (the publishers of CZ and PL versions) is mentioned in the credits, meaning there probably was some cooperation behind the scenes.
+
+Other than that, the only real change is that `G_CanNotCast` and `G_CanNotUse` have been adjusted to better fit the Russian language.
+
+#### Russian Russobit-M
+
+The Russobit release seems to have been made without the access to the original scripts by manually editing the compiled OU.bin and OU.dat files. This can be deduced by the symbol order (which is identical to the German 1.08h Steam release) and the fact that the ou.bin file still says `date 25.4.2001 13:6:38 user pankratz`. As a result, waypoint and routine names were sometimes translated causing further issues. The Russobit translation also seems to be based on an older version of the German scripts than the Snowball version, which is the reason why it contains In Extremo.
+
+#### Spanish and Italian
+
+The Spanish and Italian translations seems to share some things in common with both the newest German and English versions. For one they already contains the `KapWechsel` constants and the broken dialogues from the German release. However, they are not completely identical as they don't have the In Extremo changes and also miss some other text constants.
+
+---
 **Special thanks to:**
 - NicoDE, for the English scripts
 - MaGoth, for the LangPack
