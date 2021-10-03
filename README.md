@@ -1,14 +1,14 @@
 **The scripts are located in separate branches!**
 
 # Gothic 1 Classic Scripts
-For a project I have wanted to do for several years now, I've been in need of the original Gothic scripts in several languages. By default the original scripts are only available in German (from the MDK) and in English (from NicoDE's revised scripts), meaning the only other option was decompilation. 
+For a project I have wanted to do for several years now, I've been in need of the original Gothic scripts in several languages. By default the original scripts are only available in German *(from the MDK)* and in English *(from NicoDE's revised scripts)*, meaning the only other option was decompilation. 
 
-However, because decompilation produces messy results (in more ways than one), I have instead opted to meticulously recreate the scripts for other languages using Nico's revised scripts as a base.
+However, because decompilation produces messy results *(in more ways than one)*, I have instead opted to meticulously recreate the scripts for other languages using Nico's revised scripts as a base.
 
 ### Original scripts
 I started out with the English scripts, gradually comparing and matching all the changes between different translations.  After some work, I ended up with scripts that when compiled, produce files that are identical to the original .DAT files in terms of their size, information and symbol order.
 
-This means you can now use the original, not-decompiled scripts with all of the comments and formatting. 
+This means you can now use the original, not-decompiled scripts with all of the comments and formatting. So far the English, German, Polish, Russian *(both Snowball/1-C and Russobit-M)*, Czech, Spanish and Italian scripts are available, although other versions might come later. The English scripts were originally published by NicoDE, with some minor adjustments.
 
 There are minor differences in the OU caused by the fact that the translators often used different tools, which's effects I cannot reproduce by regular Spacer's reparsing process.
 
@@ -18,7 +18,7 @@ Here lies a problem, however. The translations were created by different compani
 Moreover, there are at least 3 separate versions of the default German scripts commonly shared.
 Firstly, you have the 1.08h scripts, available from the German Steam version of Gothic. Then, you have the ones included in the MDK, which are newer, however even those are outdated. The newest scripts are the one in the German GOG release, which are even newer than the English scripts.
 
-Therefore, I looked to solve this issue once and for all. I carefully compared all of the different scripts branches, to create a single most bug-free and up-to-date version of the scripts for 7 different languages *(EN, DE, PL, RU with both Snowball/1-C and Russobit-M, CS, ES and IT)*.
+Therefore, I looked to solve this issue once and for all. I carefully compared all of the different scripts branches, to create a single most bug-free and up-to-date version of the scripts for 7 different languages.
 
 It's important to state that **this is not a bugfix!** These scripts are only as up-to-date as Piranha Bytes made them, meaning there are still lots of issues, that are outside the scope of this project.
 
@@ -69,14 +69,14 @@ The reason the original translations did not have this issue is because they use
 To some of you it may be useful to know how all of the translations differ and what needed to be changed when recreating them. Here is a brief summary of everything noteworthy for each version.
 
 <details>
-  <summary>Click to expand!</summary>
+  <summary>Click to expand</summary>
 
 #### German
 The newest German scripts have a few differences from the ones in the MDK. Mainly, the In Extremo concert has been disabled and some incorrectly set `self` and `other` keywords have been fixed. 
 
 Sadly, this newest release also introduces an issue with some dialogues missing audio, due to an attempted fix of mistyped dialogue names. In the original release, the ambient info dialogues for SFB 5 and Mine_Vlk 2, 3 and 4 have an incorrect SVM number specified in their dialogue names.
 
-The newest German release "fixed" this by renaming the dialogues to what they should be (e.g. `Info_Mine_Vlk_4_Mine_01_01` -> `Info_Mine_Vlk_4_Mine_04_01`). However, they did so without renaming the audio files or even reparsing the Output Units, meaning that these dialogues are now broken in-game. 
+The newest German release "fixed" this by renaming the dialogues to what they should be *(e.g. `Info_Mine_Vlk_4_Mine_01_01` -> `Info_Mine_Vlk_4_Mine_04_01`)*. However, they did so without renaming the audio files or even reparsing the Output Units, meaning that these dialogues are now broken in-game. 
 
 In the Unified scripts I changed these back to the incorrect name, so that way you get to keep the audio.
 
@@ -114,33 +114,35 @@ Here is everything that I had to change during reconstruction using the English 
 
 The Polish version version has some additional changes which are not present in the Czech version:
 - Changed the order at strings in G_CanNotUse are concatenated to better fit the Polish language [content\_intern\G_Functions\G_CanNotUse.d] [content\AI\AI_Intern\B_Functions.d]
-- Added a new horizontal line in the 6th circle book, meaning that there is now a line right bellow the title (like in all the other magic circle books). This was probably a mistake made by PB that CD Projekt corrected [content\Items\Written.d]
+- Added a new horizontal line in the 6th circle book, meaning that there is now a line right bellow the title (like in all the other magic circle books). This was an inconsistency that CD Projekt corrected [content\Items\Written.d]
 - Changed the order of the "Ore/Items given" constants to be more consistent [content\Story\NPC\Text.d]
 
 #### Russian Snowball/1-C
 
-The Snowball/1-C release appears to have been made using the same branch as the Czech and Polish releases. This is not surprising considering that CD Projekt is mentioned in the credits, meaning there probably was some cooperation behind the scenes.
+The Snowball/1-C release appears to have been made using the same branch as the Czech and Polish releases. This makes sense as CD Projekt is mentioned in the credits, meaning there probably was some cooperation behind the scenes.
 
 Other than that, the only real change is that `G_CanNotCast` and `G_CanNotUse` have been adjusted to better fit the Russian language.
 
 #### Russian Russobit-M
 
-The Russobit release seems to have been made without the access to the original scripts by manually editing the compiled OU.bin and OU.dat files. This can be deduced by the symbol order (which is identical to the German 1.08h Steam release) and the fact that the ou.bin file still says `date 25.4.2001 13:6:38 user pankratz`. As a result, waypoint and routine names were sometimes translated causing further issues. The Russobit translation also seems to be based on an older version of the German scripts than the Snowball/1-C version, which is the reason why it contains In Extremo.
+The Russobit release was made without access to the original scripts by manually editing the compiled OU.bin and OU.dat files. This can be deduced by the symbol order *(which is identical to the German 1.08h Steam release)* and the fact that the ou.bin file still says `date 25.4.2001 13:6:38 user pankratz`. As a result, waypoint and routine names were sometimes translated causing further issues. 
+
+The Russobit translation also seems to be based on an older version of the German scripts than the Snowball/1-C version, which is the reason why it contains In Extremo.
 
 #### Spanish and Italian
 
-The Spanish and Italian translations seem to share some things in common with both the newest German and English versions. For one they already contain the `KapWechsel` constants and the broken dialogues from the German release. However, they are not completely identical as they don't have the In Extremo changes and also miss some other text constants.
+The Spanish and Italian translations share some things in common with both the newest German and English versions. For one they already contain the `KapWechsel` constants and the broken dialogues from the German release. However, they are not completely identical as they don't have the In Extremo changes and also miss some other text constants.
 
 </details>
 
 ---
-**Special thanks to:**
-- NicoDE, for the English scripts
-- MaGoth, for the LangPack
-
 **Tools used:**
 - Spacer 1.5
 - GothicSourcer 3.15
 - DecDat
 - WinMerge
 - ...and a hanful custom-made scripts from dialogue/string comparison, stripping and replacement.
+
+**Special thanks to:**
+- NicoDE, for the English scripts
+- MaGoth, for the LangPack
