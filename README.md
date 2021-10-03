@@ -18,7 +18,7 @@ Here lies a problem, however. The translations were created by different compani
 Moreover, there are at least 3 separate versions of the default German scripts commonly shared.
 Firstly, you have the 1.08h scripts, available from the German Steam version of Gothic. Then, you have the ones included in the MDK, which are newer, however even those are outdated. The newest scripts are the one in the German GOG release, which are even newer than the English scripts.
 
-Therefore, I looked to solve this issue once and for all. I carefully compared all of the different scripts branches, to create a single most bug-free and up-to-date version of the scripts for 7 different languages *(EN, DE, PL, RU with both Snowball and Russobit-M, CS, ES and IT)*.
+Therefore, I looked to solve this issue once and for all. I carefully compared all of the different scripts branches, to create a single most bug-free and up-to-date version of the scripts for 7 different languages *(EN, DE, PL, RU with both Snowball/1-C and Russobit-M, CS, ES and IT)*.
 
 It's important to state that **this is not a bugfix!** These scripts are only as up-to-date as Piranha Bytes made them, meaning there are still lots of issues, that are outside the scope of this project.
 
@@ -28,14 +28,14 @@ basically, if you are looking to download the scripts to do some modding, downlo
 ## A few things to mention
 
 ### Encoding
-The scripts are encoded in Windows-1250 for Latin languages *(English, German, Polish, Czech, Spanish and Italian)* and in Windows-1251 for Cyrillic languages *(Russian, both Snowball and Russobit-M)*. This is because Gothic does not support multibyte encodings and Unicode. Please also note, that in order to display the charatacters properly in-game, your game must also have the correct fontmap texture included.
+The scripts are encoded in Windows-1250 for Latin languages *(English, German, Polish, Czech, Spanish and Italian)* and in Windows-1251 for Cyrillic languages *(Russian, both Snowball/1-C and Russobit-M)*. This is because Gothic does not support multibyte encodings and Unicode. Please also note, that in order to display the charatacters properly in-game, your game must have the correct fontmap texture included.
 
 ### Extended ASCII trimming issue
 When Spacer produces an OU file, it makes sure to trim any whitespace around the text of dialogues. Sadly, there is a small oversight in the piece of code that performs this trimming, in that it also removes any Non-Standard ASCII characters. This means that if your dialogue ends with any of these `áąćčďéěęíłńňóřśšťůýžźż` the ending of the dialoge will be trimmed.
 
 For example `aáącčć` becomes just `aáąc`.
 
-This issue mainly affects the Polish, Czech and both Snowball and Russobit-M Russian releases.
+This issue mainly affects the Polish, Czech and both Snowball/1-C and Russobit-M Russian releases.
 
 Here are a few examples, before and after:
 
@@ -53,7 +53,7 @@ AI_Output(self,other,"DIA_Homer_Hello_02_03");    //Jestli to bude pokračovat, 
 ```d
 "SVM_11_NowWait";    //Byłoby dla ciebie lepiej, gdybyś tego nie zrobi
 ```
-**Russian Snowball** (here the whole sentences disappears)
+**Russian - Snowball/1-C** (here the whole sentences disappears)
 ```d
 AI_Output(self,other,"Info_Mine_Vlk_4_Mine_01_01");	//Кирка и пот - вот и все, что здесь есть. Ты пришел и скоро уйдешь…
 ```
@@ -74,7 +74,7 @@ To some of you it may be useful to know how all of the translations differ and w
 #### German
 The newest German scripts have a few differences from the ones in the MDK. Mainly, the In Extremo concert has been disabled and some incorrectly set `self` and `other` keywords have been fixed. 
 
-Sadly, this newest release also introduces an issue with some dialogues missing audio, due to an attempted fix of mistyped dialogue names. In the original release, the ambient info dialogues for SFB 5 and Mine_Vlk 2, 3 and 4 have an incorrect SVM number specifeid in their dialogue names.
+Sadly, this newest release also introduces an issue with some dialogues missing audio, due to an attempted fix of mistyped dialogue names. In the original release, the ambient info dialogues for SFB 5 and Mine_Vlk 2, 3 and 4 have an incorrect SVM number specified in their dialogue names.
 
 The newest German release "fixed" this by renaming the dialogues to what they should be (e.g. `Info_Mine_Vlk_4_Mine_01_01` -> `Info_Mine_Vlk_4_Mine_04_01`). However, they did so without renaming the audio files or even reparsing the Output Units, meaning that these dialogues are now broken in-game. 
 
@@ -101,7 +101,7 @@ In the Unified scripts I changed these back to the incorrect name, so that way y
 
 #### Czech and Polish
 
-The Czech and Polish translation seem to be the same branch, which is not suprising considering they were made by the same company at around the same time. However, the Polish translation has a few additional changes over the Czech translation. 
+The Czech and Polish translation seem to be the same branch, which is not suprising considering they were both made by CD Projekt.
 
 Here is everything that I had to change during reconstruction using the English scripts as base:
 - Removed the condition for Orc scouts, warriors and shamans [content\Story\B\B_AssignAmbientInfos.d]
@@ -119,13 +119,13 @@ The Polish version version has some additional changes which are not present in 
 
 #### Russian Snowball/1-C
 
-Snowball appears to have been made using the same branch as the Czech and Polish releases. This is not surprising considering that CD Projekt (the publishers of CZ and PL versions) is mentioned in the credits, meaning there probably was some cooperation behind the scenes.
+The Snowball/1-C release appears to have been made using the same branch as the Czech and Polish releases. This is not surprising considering that CD Projekt is mentioned in the credits, meaning there probably was some cooperation behind the scenes.
 
 Other than that, the only real change is that `G_CanNotCast` and `G_CanNotUse` have been adjusted to better fit the Russian language.
 
 #### Russian Russobit-M
 
-The Russobit release seems to have been made without the access to the original scripts by manually editing the compiled OU.bin and OU.dat files. This can be deduced by the symbol order (which is identical to the German 1.08h Steam release) and the fact that the ou.bin file still says `date 25.4.2001 13:6:38 user pankratz`. As a result, waypoint and routine names were sometimes translated causing further issues. The Russobit translation also seems to be based on an older version of the German scripts than the Snowball version, which is the reason why it contains In Extremo.
+The Russobit release seems to have been made without the access to the original scripts by manually editing the compiled OU.bin and OU.dat files. This can be deduced by the symbol order (which is identical to the German 1.08h Steam release) and the fact that the ou.bin file still says `date 25.4.2001 13:6:38 user pankratz`. As a result, waypoint and routine names were sometimes translated causing further issues. The Russobit translation also seems to be based on an older version of the German scripts than the Snowball/1-C version, which is the reason why it contains In Extremo.
 
 #### Spanish and Italian
 
