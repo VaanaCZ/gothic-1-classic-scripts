@@ -6,7 +6,9 @@ For a project I have wanted to do for several years now, I've been in need of th
 However, because decompilation produces messy results (in more ways than one), I have instead opted to meticulously recreate the scripts for other languages using Nico's revised scripts as a base.
 
 ### Original scripts
-I started out with the English scripts, gradually comparing and matching all the changes between different translations.  After some work, I ended up with scripts that when compiled, produce files that are identical to the original .DAT files in terms of their size, information and symbol order. 
+I started out with the English scripts, gradually comparing and matching all the changes between different translations.  After some work, I ended up with scripts that when compiled, produce files that are identical to the original .DAT files in terms of their size, information and symbol order.
+
+This means you can now use the original, not-decompiled scripts with all of the comments and formatting. 
 
 There are minor differences in the OU caused by the fact that the translators often used different tools, which's effects I cannot reproduce by regular Spacer's reparsing process.
 
@@ -67,6 +69,10 @@ The reason the original translations did not have this issue is because they use
 ### Changes
 
 - changes
+
+**Special thanks to:**
+- NicoDE, for the English scripts
+- MaGoth, for the LangPack
 
 **Tools used:**
 - Spacer 1.5
