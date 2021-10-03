@@ -28,10 +28,10 @@ basically, if you are looking to download the scripts to do some modding, downlo
 ## A few things to mention
 
 ### Encoding
-The scripts are encoded in Windows-1250 for Latin languages *(English, German, Polish, Czech, Spanish and Italian)* and in Windows-1251 for Cyrillic languages *(Russian, both Snowball/1-C and Russobit-M)*. This is because Gothic does not support multibyte encodings and Unicode. Please also note, that in order to display the charatacters properly in-game, your game must have the correct fontmap texture included.
+The scripts are encoded in Windows-1250 for Latin languages *(English, German, Polish, Czech, Spanish and Italian)* and in Windows-1251 for Cyrillic languages *(Russian, both Snowball/1-C and Russobit-M)*. This is because Gothic does not support multibyte encodings and Unicode. Please also note, that in order to display the characters properly in-game, your game must have the correct fontmap texture included.
 
 ### Extended ASCII trimming issue
-When Spacer produces an OU file, it makes sure to trim any whitespace around the text of dialogues. Sadly, there is a small oversight in the piece of code that performs this trimming, in that it also removes any Non-Standard ASCII characters. This means that if your dialogue ends with any of these `áąćčďéěęíłńňóřśšťůýžźż` the ending of the dialoge will be trimmed.
+When Spacer produces an OU file, it makes sure to trim any whitespace around the texts of dialogues. Sadly, there is a small oversight in the piece of code that performs this trimming, in that it also removes any Non-Standard ASCII characters. This means that if your dialogue ends with any of these `áąćčďéěęíłńňóřśšťůýžźż` the ending of the dialogue will be trimmed.
 
 For example `aáącčć` becomes just `aáąc`.
 
@@ -101,7 +101,7 @@ In the Unified scripts I changed these back to the incorrect name, so that way y
 
 #### Czech and Polish
 
-The Czech and Polish translation seem to be the same branch, which is not suprising considering they were both made by CD Projekt.
+The Czech and Polish translation seems to be the same branch, which is not surprising considering they were both made by CD Projekt.
 
 Here is everything that I had to change during reconstruction using the English scripts as base:
 - Removed the condition for Orc scouts, warriors and shamans [content\Story\B\B_AssignAmbientInfos.d]
@@ -129,7 +129,7 @@ The Russobit release seems to have been made without the access to the original 
 
 #### Spanish and Italian
 
-The Spanish and Italian translations seems to share some things in common with both the newest German and English versions. For one they already contains the `KapWechsel` constants and the broken dialogues from the German release. However, they are not completely identical as they don't have the In Extremo changes and also miss some other text constants.
+The Spanish and Italian translations seem to share some things in common with both the newest German and English versions. For one they already contain the `KapWechsel` constants and the broken dialogues from the German release. However, they are not completely identical as they don't have the In Extremo changes and also miss some other text constants.
 
 </details>
 
