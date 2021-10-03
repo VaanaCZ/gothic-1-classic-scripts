@@ -23,9 +23,49 @@ It's important to state that **this is not a bugfix!** These scripts are only as
 **tl;dr**
 basically, if you are looking to download the scripts to do some modding, download the unified scripts, they are newer.
 
-### A few things to note
-- encoding
-- extended ASCII issue
+## A few things to mention
+
+### Encoding
+The scripts are encoded in Windows-1250 for Latin languages *(English, German, Polish, Czech, Spanish and Italian)* and in Windows-1251 for Cyrillic languages *(Russian, both Snowball and Russobit-M)*. This is because Gothic does not support multibyte encodings and Unicode. Please also note, that in order to display the charatacters properly in-game, your game must also have the correct fontmap texture included.
+
+### Extended ASCII trimming issue
+When Spacer produces an OU file, it makes sure to trim any whitespace around the text of dialogues. Sadly, there is a small oversight in the piece of code that performs this trimming, in that it also removes any Non-Standard ASCII characters. This means that if your dialogue ends with any of these `áąćčďéěęíłńňóřśšťůýžźż` the ending of the dialoge will be trimmed.
+
+For example `aáącčć` becomes just `aáąc`.
+
+This issue mainly affects the Polish, Czech and both Snowball and Russobit-M Russian releases.
+
+Here are a few examples, before and after:
+
+**Czech**
+```d
+AI_Output(self,other,"DIA_Homer_Hello_02_03");    //Jestli to bude pokračovat, celá hráz bude co nevidět podhrabaná
+```
+```d
+AI_Output(self,other,"DIA_Homer_Hello_02_03");    //Jestli to bude pokračovat, celá hráz bude co nevidět podhraban
+```
+**Polish**
+```d
+"SVM_11_NowWait";    //Byłoby dla ciebie lepiej, gdybyś tego nie zrobił
+```
+```d
+"SVM_11_NowWait";    //Byłoby dla ciebie lepiej, gdybyś tego nie zrobi
+```
+
+**Russian Snowball** (here the whole sentences disappears)
+```d
+AI_Output(self,other,"Info_Mine_Vlk_4_Mine_01_01");	//Кирка и пот - вот и все, что здесь есть. Ты пришел и скоро уйдешь…
+```
+```d
+AI_Output(self,other,"Info_Mine_Vlk_4_Mine_01_01");	//Кирка и пот - вот и все, что здесь есть.
+```
+
+The simplest way to solve this is to make sure that your dialogue always ends with a Standard ASCII character such as a dot, comma or an exclamation mark. This is also the reason why the OU in the scripts differs, since I purposefully added dots to the ends of sentences which were affected by this problem.
+
+The reason the original translations did not have this issue is because they used other methods which did not perform any whitespace trimming *(some used hex editors :-) )*.
+
+### Changes
+
 - changes
 
 **Tools used:**
