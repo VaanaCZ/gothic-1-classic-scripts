@@ -1,4 +1,4 @@
-_intern\ParticleFxDef.d
-PFX\ParticleFxEngine.d
-PFX\PFX.d
-PFX\PfxMagic.d
+_intern\ParticleFXDef.d
+pfx\ParticleFXEngine.d
+pfx\PFX.d
+pfx\PFXMagic.d
