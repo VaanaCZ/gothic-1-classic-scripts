@@ -46,9 +46,9 @@ FUNC int DIA_Sld_702_First_Condition()
 
 FUNC VOID  DIA_Sld_702_First_Info()
 {
-	AI_Output (self, other,"DIA_Sld_702_First_04_00"); //¿Sabes adónde vas?
-	AI_Output (other, self,"DIA_Sld_702_First_15_01"); //¿Adónde?
-	AI_Output (self, other,"DIA_Sld_702_First_04_02"); //Vas derechito a nuestro líder, Lee.
+	AI_Output (self, other,"DIA_Sld_702_First_04_00"); //Â¿Sabes adÃ³nde vas?
+	AI_Output (other, self,"DIA_Sld_702_First_15_01"); //Â¿AdÃ³nde?
+	AI_Output (self, other,"DIA_Sld_702_First_04_02"); //Vas derechito a nuestro lÃ­der, Lee.
 };
 
 // ********************************
@@ -62,7 +62,7 @@ instance DIA_Sld_702_PERM (C_INFO)
 	condition	= DIA_Sld_702_PERM_Condition;
 	information	= DIA_Sld_702_PERM_Info;
 	permanent	= 1;
-	description = "¿Qué tengo que hacer para que me dejes ver a Lee?";
+	description = "Â¿QuÃ© tengo que hacer para que me dejes ver a Lee?";
 };                       
 
 FUNC int DIA_Sld_702_PERM_Condition()
@@ -72,11 +72,11 @@ FUNC int DIA_Sld_702_PERM_Condition()
 
 FUNC VOID  DIA_Sld_702_PERM_Info()
 {
-	AI_Output (other, self,"DIA_Sld_702_PERM_15_00"); //¿Qué tengo que hacer para que me permitas ver a Lee?
-	AI_Output (self, other,"DIA_Sld_702_PERM_04_01"); //¡Nada!
-	AI_Output (self, other,"DIA_Sld_702_PERM_04_02"); //¡Esto no es el Campamento Viejo y Lee no es Gómez!
-	AI_Output (self, other,"DIA_Sld_702_PERM_04_03"); //No necesita un ejército de guardaespaldas tras el que esconderse. Puede defenderse él solo.
-	AI_Output (self, other,"DIA_Sld_702_PERM_04_04"); //Nosotros sólo estamos aquí por si nos necesita.
+	AI_Output (other, self,"DIA_Sld_702_PERM_15_00"); //Â¿QuÃ© tengo que hacer para que me permitas ver a Lee?
+	AI_Output (self, other,"DIA_Sld_702_PERM_04_01"); //Â¡Nada!
+	AI_Output (self, other,"DIA_Sld_702_PERM_04_02"); //Â¡Esto no es el Campamento Viejo y Lee no es GÃ³mez!
+	AI_Output (self, other,"DIA_Sld_702_PERM_04_03"); //No necesita un ejÃ©rcito de guardaespaldas tras el que esconderse. Puede defenderse Ã©l solo.
+	AI_Output (self, other,"DIA_Sld_702_PERM_04_04"); //Nosotros sÃ³lo estamos aquÃ­ por si nos necesita.
 };
 
 

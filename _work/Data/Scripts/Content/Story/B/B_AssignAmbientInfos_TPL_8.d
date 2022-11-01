@@ -37,7 +37,7 @@ INSTANCE Info_Tpl_8_EinerVonEuchWerden (C_INFO) // E1
 	condition	= Info_Tpl_8_EinerVonEuchWerden_Condition;
 	information	= Info_Tpl_8_EinerVonEuchWerden_Info;
 	permanent	= 1;
-	description = "¿Necesitas a otro hombre competente?";
+	description = "Â¿Necesitas a otro hombre competente?";
 };                       
 
 FUNC INT Info_Tpl_8_EinerVonEuchWerden_Condition()
@@ -52,8 +52,8 @@ FUNC INT Info_Tpl_8_EinerVonEuchWerden_Condition()
 
 FUNC VOID Info_Tpl_8_EinerVonEuchWerden_Info()
 {
-	AI_Output(other,self,"Info_Tpl_8_EinerVonEuchWerden_15_00"); //¿Necesitas a otro hombre competente?
-	AI_Output(self,other,"Info_Tpl_8_EinerVonEuchWerden_08_01"); //Siempre buscamos hombres competentes. Pero tendrás que esforzarte para mejorar. Sólo los novicios avanzados pueden convertirse en templarios.
+	AI_Output(other,self,"Info_Tpl_8_EinerVonEuchWerden_15_00"); //Â¿Necesitas a otro hombre competente?
+	AI_Output(self,other,"Info_Tpl_8_EinerVonEuchWerden_08_01"); //Siempre buscamos hombres competentes. Pero tendrÃ¡s que esforzarte para mejorar. SÃ³lo los novicios avanzados pueden convertirse en templarios.
 	AI_Output(self,other,"Info_Tpl_8_EinerVonEuchWerden_08_02"); //Es el mayor honor para cualquier seguidor de la Hermandad del Durmiente.
 };
 
@@ -67,7 +67,7 @@ INSTANCE Info_Tpl_8_WichtigePersonen(C_INFO)
 	condition	= Info_Tpl_8_WichtigePersonen_Condition;
 	information	= Info_Tpl_8_WichtigePersonen_Info;
 	permanent	= 1;
-	description = "¿Quién manda por aquí?";
+	description = "Â¿QuiÃ©n manda por aquÃ­?";
 };                       
 
 FUNC INT Info_Tpl_8_WichtigePersonen_Condition()
@@ -77,10 +77,10 @@ FUNC INT Info_Tpl_8_WichtigePersonen_Condition()
 
 FUNC VOID Info_Tpl_8_WichtigePersonen_Info()
 {
-	AI_Output(other,self,"Info_Tpl_8_WichtigePersonen_15_00"); //¿Quién manda por aquí?
-	AI_Output(self,other,"Info_Tpl_8_WichtigePersonen_08_01"); //Hacemos lo que ordenan los gurús. Servirles es nuestra obligación.
-	AI_Output(other,self,"Info_Tpl_8_WichtigePersonen_15_02"); //¿Quiénes son estos gurús?
-	AI_Output(self,other,"Info_Tpl_8_WichtigePersonen_08_03"); //El gurú principal es Y'Berion el Iluminado. Por debajo están Cor Kalom, Cor Angar y algunos otros.
+	AI_Output(other,self,"Info_Tpl_8_WichtigePersonen_15_00"); //Â¿QuiÃ©n manda por aquÃ­?
+	AI_Output(self,other,"Info_Tpl_8_WichtigePersonen_08_01"); //Hacemos lo que ordenan los gurÃºs. Servirles es nuestra obligaciÃ³n.
+	AI_Output(other,self,"Info_Tpl_8_WichtigePersonen_15_02"); //Â¿QuiÃ©nes son estos gurÃºs?
+	AI_Output(self,other,"Info_Tpl_8_WichtigePersonen_08_03"); //El gurÃº principal es Y'Berion el Iluminado. Por debajo estÃ¡n Cor Kalom, Cor Angar y algunos otros.
 	var C_NPC YBerion;		YBerion	= Hlp_GetNpc(Gur_1200_Yberion);
 	var C_NPC CorKalom;		CorKalom= Hlp_GetNpc(Gur_1201_CorKalom);
 	var C_NPC CorAngar;		CorAngar= Hlp_GetNpc(Gur_1202_CorAngar);
@@ -99,7 +99,7 @@ INSTANCE Info_Tpl_8_DasLager(C_INFO)
 	condition	= Info_Tpl_8_DasLager_Condition;
 	information	= Info_Tpl_8_DasLager_Info;
 	permanent	= 1;
-	description = "¿Qué puedes decirme de este campamento?";
+	description = "Â¿QuÃ© puedes decirme de este campamento?";
 };                       
 
 FUNC INT Info_Tpl_8_DasLager_Condition()
@@ -112,9 +112,9 @@ FUNC INT Info_Tpl_8_DasLager_Condition()
 
 FUNC VOID Info_Tpl_8_DasLager_Info()
 {
-	AI_Output(other,self,"Info_Tpl_8_DasLager_15_00"); //¿Qué puedes decirme de este campamento?
-	AI_Output(self,other,"Info_Tpl_8_DasLager_08_01"); //Como recién llegado, puedes ir prácticamente donde te plazca. Pero a los infieles no se les permite entrar al templo del Durmiente.
-	AI_Output(self,other,"Info_Tpl_8_DasLager_08_02"); //Ve únicamente a donde se te permita. Y no molestes a nuestros maestros durante su meditación.
+	AI_Output(other,self,"Info_Tpl_8_DasLager_15_00"); //Â¿QuÃ© puedes decirme de este campamento?
+	AI_Output(self,other,"Info_Tpl_8_DasLager_08_01"); //Como reciÃ©n llegado, puedes ir prÃ¡cticamente donde te plazca. Pero a los infieles no se les permite entrar al templo del Durmiente.
+	AI_Output(self,other,"Info_Tpl_8_DasLager_08_02"); //Ve Ãºnicamente a donde se te permita. Y no molestes a nuestros maestros durante su meditaciÃ³n.
 };
 
 // *************************************************************************
@@ -127,7 +127,7 @@ INSTANCE Info_Tpl_8_DieLage(C_INFO) // E1
 	condition	= Info_Tpl_8_DieLage_Condition;
 	information	= Info_Tpl_8_DieLage_Info;
 	permanent	= 1;
-	description = "¿Qué tal estás?";
+	description = "Â¿QuÃ© tal estÃ¡s?";
 };                       
 
 FUNC INT Info_Tpl_8_DieLage_Condition()
@@ -140,8 +140,8 @@ FUNC INT Info_Tpl_8_DieLage_Condition()
 
 FUNC VOID Info_Tpl_8_DieLage_Info()
 {
-	AI_Output(other,self,"Info_Tpl_8_DieLage_15_00"); //¿Qué tal estás?
-	AI_Output(self,other,"Info_Tpl_8_DieLage_08_01"); //Te lo advierto. No seas irrespetuoso. Estás hablando con uno de los guardias elegidos de los profetas.
+	AI_Output(other,self,"Info_Tpl_8_DieLage_15_00"); //Â¿QuÃ© tal estÃ¡s?
+	AI_Output(self,other,"Info_Tpl_8_DieLage_08_01"); //Te lo advierto. No seas irrespetuoso. EstÃ¡s hablando con uno de los guardias elegidos de los profetas.
 };
 	
 // *************************************************************************

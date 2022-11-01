@@ -37,7 +37,7 @@ INSTANCE Info_Bau_9_WichtigePersonen(C_INFO)
 	condition	= Info_Bau_9_WichtigePersonen_Condition;
 	information	= Info_Bau_9_WichtigePersonen_Info;
 	permanent	= 1;
-	description = "øQuiÈn se encarga de que todo salga seg˙n lo previsto en los campos?";
+	description = "¬øQui√©n se encarga de que todo salga seg√∫n lo previsto en los campos?";
 };                       
 
 FUNC INT Info_Bau_9_WichtigePersonen_Condition()
@@ -47,9 +47,9 @@ FUNC INT Info_Bau_9_WichtigePersonen_Condition()
 
 FUNC VOID Info_Bau_9_WichtigePersonen_Info()
 {
-	AI_Output(other,self,"Info_Bau_9_WichtigePersonen_15_00"); //øQuiÈn se encarga de que todo salga seg˙n lo previsto en los campos?
-	AI_Output(self,other,"Info_Bau_9_WichtigePersonen_09_01"); //°Todo el mundo! Se supone que el SeÒor del Arroz supervisa el trabajo, pero yo creo que se tira todo el dÌa sentado en su refugio contando sus sacas.
-	AI_Output(self,other,"Info_Bau_9_WichtigePersonen_09_02"); //Bueno, Èl y Homer fundaron todo esto...
+	AI_Output(other,self,"Info_Bau_9_WichtigePersonen_15_00"); //¬øQui√©n se encarga de que todo salga seg√∫n lo previsto en los campos?
+	AI_Output(self,other,"Info_Bau_9_WichtigePersonen_09_01"); //¬°Todo el mundo! Se supone que el Se√±or del Arroz supervisa el trabajo, pero yo creo que se tira todo el d√≠a sentado en su refugio contando sus sacas.
+	AI_Output(self,other,"Info_Bau_9_WichtigePersonen_09_02"); //Bueno, √©l y Homer fundaron todo esto...
 	var C_NPC Ricelord;			Ricelord	= Hlp_GetNpc(Bau_900_Ricelord);
 	Ricelord.aivar[AIV_FINDABLE] = TRUE;	
 };
@@ -64,7 +64,7 @@ INSTANCE Info_Bau_9_DasLager(C_INFO)
 	condition	= Info_Bau_9_DasLager_Condition;
 	information	= Info_Bau_9_DasLager_Info;
 	permanent	= 1;
-	description = "H·blame de este campamento.";
+	description = "H√°blame de este campamento.";
 };                       
 
 FUNC INT Info_Bau_9_DasLager_Condition()
@@ -74,9 +74,9 @@ FUNC INT Info_Bau_9_DasLager_Condition()
 
 FUNC VOID Info_Bau_9_DasLager_Info()
 {
-	AI_Output(other,self,"Info_Bau_9_DasLager_15_00"); //H·blame de este campamento.
-	AI_Output(self,other,"Info_Bau_9_DasLager_09_01"); //Est· a rebosar de bastardos. Si por mÌ fuera, harÌa que los mercenarios echaran a todos los bandidos del campamento.
-	AI_Output(self,other,"Info_Bau_9_DasLager_09_02"); //No cumplen con sus obligaciones y sÛlo montan follones.
+	AI_Output(other,self,"Info_Bau_9_DasLager_15_00"); //H√°blame de este campamento.
+	AI_Output(self,other,"Info_Bau_9_DasLager_09_01"); //Est√° a rebosar de bastardos. Si por m√≠ fuera, har√≠a que los mercenarios echaran a todos los bandidos del campamento.
+	AI_Output(self,other,"Info_Bau_9_DasLager_09_02"); //No cumplen con sus obligaciones y s√≥lo montan follones.
 };
 
 // *************************************************************************
@@ -89,7 +89,7 @@ INSTANCE Info_Bau_9_DieLage(C_INFO) // E1
 	condition	= Info_Bau_9_DieLage_Condition;
 	information	= Info_Bau_9_DieLage_Info;
 	permanent	= 1;
-	description = "øY vosotros?";
+	description = "¬øY vosotros?";
 };                       
 
 FUNC INT Info_Bau_9_DieLage_Condition()
@@ -99,8 +99,8 @@ FUNC INT Info_Bau_9_DieLage_Condition()
 
 FUNC VOID Info_Bau_9_DieLage_Info()
 {
-	AI_Output(other,self,"Info_Bau_9_DieLage_15_00"); //øY vosotros?
-	AI_Output(self,other,"Info_Bau_9_DieLage_09_01"); //°Nos partimos la espalda trabajando para tener algo que comer!
+	AI_Output(other,self,"Info_Bau_9_DieLage_15_00"); //¬øY vosotros?
+	AI_Output(self,other,"Info_Bau_9_DieLage_09_01"); //¬°Nos partimos la espalda trabajando para tener algo que comer!
 };
 
 // *************************************************************************
@@ -113,7 +113,7 @@ INSTANCE Info_Bau_9_Wasser(C_INFO) // E1
 	condition	= Info_Bau_9_Wasser_Condition;
 	information	= Info_Bau_9_Wasser_Info;
 	permanent	= 1;
-	description = "Me manda Lefty. Os he traÌdo un poco de agua.";
+	description = "Me manda Lefty. Os he tra√≠do un poco de agua.";
 };                       
 
 FUNC INT Info_Bau_9_Wasser_Condition()
@@ -127,7 +127,7 @@ FUNC INT Info_Bau_9_Wasser_Condition()
 
 FUNC VOID Info_Bau_9_Wasser_Info()
 {
-	AI_Output(other,self,"Info_Bau_9_Wasser_15_00"); //Me manda Lefty. Os he traÌdo un poco de agua.
+	AI_Output(other,self,"Info_Bau_9_Wasser_15_00"); //Me manda Lefty. Os he tra√≠do un poco de agua.
 	if (Npc_HasItems(other, ItFo_Potion_Water_01)>=1)
 	{
 		B_GiveInvItems		(other, self,	ItFo_Potion_Water_01, 1);
@@ -138,7 +138,7 @@ FUNC VOID Info_Bau_9_Wasser_Info()
 		};
 		AI_UseItem			(self,	ItFo_Potion_Water_01);
 
-		AI_Output			(self,other,"Info_Bau_9_Wasser_09_01"); //°Gracias, tÌo! Si llega a pasar un poco m·s de tiempo, habrÌa empezado a beber barro.
+		AI_Output			(self,other,"Info_Bau_9_Wasser_09_01"); //¬°Gracias, t√≠o! Si llega a pasar un poco m√°s de tiempo, habr√≠a empezado a beber barro.
 		
 		An_Bauern_verteilt = An_Bauern_verteilt+1;
 		if (An_Bauern_verteilt>=DurstigeBauern)
@@ -149,7 +149,7 @@ FUNC VOID Info_Bau_9_Wasser_Info()
 	}
 	else
 	{
-		AI_Output(self,other,"Info_Bau_9_Wasser_NOWATER_09_00"); //Se te ha acabado. PedirÈ un poco a los dem·s.
+		AI_Output(self,other,"Info_Bau_9_Wasser_NOWATER_09_00"); //Se te ha acabado. Pedir√© un poco a los dem√°s.
 	};
 };
 	

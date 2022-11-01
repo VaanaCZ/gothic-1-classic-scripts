@@ -9,7 +9,7 @@
 
 func void B_Story_SentToNC()
 {
-	//-------- Cor-Angar zurück zum Übungsplatz schicken --------
+	//-------- Cor-Angar zurÃ¼ck zum Ãœbungsplatz schicken --------
 	var C_NPC	angar;
 	angar = Hlp_GetNpc	(Gur_1202_CorAngar);
 	Npc_ExchangeRoutine	(angar, "start");
@@ -26,11 +26,11 @@ func void B_Story_SentToNC()
 	Npc_ExchangeRoutine	(gorn, "NCWAIT");
 	AI_ContinueRoutine	(gorn);
 
-	//-------- Tagebucheinträge --------
+	//-------- TagebucheintrÃ¤ge --------
 	Log_CreateTopic		(CH3_EscapePlanNC,	LOG_MISSION);
 	Log_SetTopicStatus	(CH3_EscapePlanNC,	LOG_RUNNING);
-	B_LogEntry			(CH3_EscapePlanNC,"Y'Berion, el líder espiritual de la Hermandad, ¡está muerto! Que su alma descanse en paz. En sus última palabras, puso todas sus esperanzas de huida en manos de los Magos del Círculo del Agua.");
-	B_LogEntry			(CH3_EscapePlanNC,"Me he decidido. Iré al Campamento Nuevo a apoyar el plan de fuga de los Magos de los Magos del Agua. Cor Angar me ha entregado las llaves del cofre que hay en el laboratorio de alquimia de Cor Kalom. Se supone que el foco de piedra y el almanaque de mis búsquedas previas están en el interior de ese cofre. Cor Angar cree que los magos del Campamento Nuevo necesitarán estos dos artefactos para llevar a cabo su plan.");
+	B_LogEntry			(CH3_EscapePlanNC,"Y'Berion, el lÃ­der espiritual de la Hermandad, Â¡estÃ¡ muerto! Que su alma descanse en paz. En sus Ãºltima palabras, puso todas sus esperanzas de huida en manos de los Magos del CÃ­rculo del Agua.");
+	B_LogEntry			(CH3_EscapePlanNC,"Me he decidido. IrÃ© al Campamento Nuevo a apoyar el plan de fuga de los Magos de los Magos del Agua. Cor Angar me ha entregado las llaves del cofre que hay en el laboratorio de alquimia de Cor Kalom. Se supone que el foco de piedra y el almanaque de mis bÃºsquedas previas estÃ¡n en el interior de ese cofre. Cor Angar cree que los magos del Campamento Nuevo necesitarÃ¡n estos dos artefactos para llevar a cabo su plan.");
 
 	//-------- Missionitem --------
 	CreateInvItem		(self,			ItArRuneTeleport5);

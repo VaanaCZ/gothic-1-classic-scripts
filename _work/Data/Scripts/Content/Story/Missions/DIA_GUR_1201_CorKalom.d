@@ -23,7 +23,7 @@ FUNC int  GUR_1201_CorKalom_FIRST_Condition()
 
 FUNC void  GUR_1201_CorKalom_FIRST_Info()
 {
-	AI_Output (self, other,"GUR_1201_CorKalom_FIRST_10_00"); //¿Qué quieres?
+	AI_Output (self, other,"GUR_1201_CorKalom_FIRST_10_00"); //Â¿QuÃ© quieres?
 	Kalom_TalkedTo = TRUE;
 };  
 
@@ -38,7 +38,7 @@ instance  GUR_1201_CorKalom_WannaJoin (C_INFO)
 	condition		= GUR_1201_CorKalom_WannaJoin_Condition;
 	information		= GUR_1201_CorKalom_WannaJoin_Info;
 	permanent		= 0;
-	description		= "Me gustaría ingresar en la Hermandad."; 
+	description		= "Me gustarÃ­a ingresar en la Hermandad."; 
 };
 
 FUNC int  GUR_1201_CorKalom_WannaJoin_Condition()
@@ -52,15 +52,15 @@ FUNC int  GUR_1201_CorKalom_WannaJoin_Condition()
 
 FUNC void  GUR_1201_CorKalom_WannaJoin_Info()
 {
-	AI_Output (other, self,"GUR_1201_CorKalom_WannaJoin_15_00"); //Me gustaría ingresar en la Hermandad.
-	AI_Output (other, self,"GUR_1201_CorKalom_WannaJoin_15_01"); //Tengo entendido que eres el maestro de los novicios y que tú decides quién puede ingresar.
-	AI_Output (self, other,"GUR_1201_CorKalom_WannaJoin_10_02"); //¡No tengo tiempo! Mis experimentos son demasiado importantes para que pierda el tiempo con nuevos novicios.
-	AI_Output (self, other,"GUR_1201_CorKalom_WannaJoin_10_03"); //Confiaré en el juicio de los Baal. Cuando digan que estás listo para vestir la túnica de novicio, vuelve a verme.
+	AI_Output (other, self,"GUR_1201_CorKalom_WannaJoin_15_00"); //Me gustarÃ­a ingresar en la Hermandad.
+	AI_Output (other, self,"GUR_1201_CorKalom_WannaJoin_15_01"); //Tengo entendido que eres el maestro de los novicios y que tÃº decides quiÃ©n puede ingresar.
+	AI_Output (self, other,"GUR_1201_CorKalom_WannaJoin_10_02"); //Â¡No tengo tiempo! Mis experimentos son demasiado importantes para que pierda el tiempo con nuevos novicios.
+	AI_Output (self, other,"GUR_1201_CorKalom_WannaJoin_10_03"); //ConfiarÃ© en el juicio de los Baal. Cuando digan que estÃ¡s listo para vestir la tÃºnica de novicio, vuelve a verme.
 	AI_StopProcessInfos	(self);
 
 	Log_CreateTopic		(CH1_JoinPsi,	LOG_MISSION);
 	Log_SetTopicStatus	(CH1_JoinPsi,	LOG_RUNNING);
-	B_LogEntry			(CH1_JoinPsi,"Cor Kalom dejará que me una a la Hermandad como novicio si consigo convencer a cuatro de los Baal para que hablen en mi favor.");
+	B_LogEntry			(CH1_JoinPsi,"Cor Kalom dejarÃ¡ que me una a la Hermandad como novicio si consigo convencer a cuatro de los Baal para que hablen en mi favor.");
 };  
 
 // ****************************************
@@ -74,7 +74,7 @@ instance  GUR_1201_CorKalom_Recipe (C_INFO)
 	condition		= GUR_1201_CorKalom_Recipe_Condition;
 	information		= GUR_1201_CorKalom_Recipe_Info;
 	permanent		= 0;
-	description		= "A uno de los mercaderes del Campamento Viejo le gustaría tener una fórmula."; 
+	description		= "A uno de los mercaderes del Campamento Viejo le gustarÃ­a tener una fÃ³rmula."; 
 };
 
 FUNC int  GUR_1201_CorKalom_Recipe_Condition()
@@ -88,10 +88,10 @@ FUNC int  GUR_1201_CorKalom_Recipe_Condition()
 
 FUNC void  GUR_1201_CorKalom_Recipe_Info()
 {
-	AI_Output (other, self,"GUR_1201_CorKalom_Recipe_15_00"); //A uno de los mercaderes del Campamento Viejo le gustaría tener la fórmula de una poción curativa.
-	AI_Output (self, other,"GUR_1201_CorKalom_Recipe_10_01"); //¡Mis fórmulas no están a la venta!
+	AI_Output (other, self,"GUR_1201_CorKalom_Recipe_15_00"); //A uno de los mercaderes del Campamento Viejo le gustarÃ­a tener la fÃ³rmula de una pociÃ³n curativa.
+	AI_Output (self, other,"GUR_1201_CorKalom_Recipe_10_01"); //Â¡Mis fÃ³rmulas no estÃ¡n a la venta!
 
-	B_LogEntry	(CH1_KalomsRecipe,"Cor Kalom no me dará la fórmula. Pero en su laboratorio hay unos cofres... y él parece tan ocupado...");
+	B_LogEntry	(CH1_KalomsRecipe,"Cor Kalom no me darÃ¡ la fÃ³rmula. Pero en su laboratorio hay unos cofres... y Ã©l parece tan ocupado...");
 };  
 
 // ****************************************
@@ -105,7 +105,7 @@ instance  GUR_1201_CorKalom_Experimente (C_INFO)
 	condition		= GUR_1201_CorKalom_Experimente_Condition;
 	information		= GUR_1201_CorKalom_Experimente_Info;
 	permanent		= 1;
-	description		= "¿Qué clase de experimentos realizas?"; 
+	description		= "Â¿QuÃ© clase de experimentos realizas?"; 
 };
 
 FUNC int  GUR_1201_CorKalom_Experimente_Condition()
@@ -119,8 +119,8 @@ FUNC int  GUR_1201_CorKalom_Experimente_Condition()
 
 FUNC void  GUR_1201_CorKalom_Experimente_Info()
 {
-	AI_Output (other, self,"GUR_1201_CorKalom_Experimente_15_00"); //¿Qué clase de experimentos realizas?
-	AI_Output (self, other,"GUR_1201_CorKalom_Experimente_10_01"); //Mi investigación tiene lugar a un nivel que no comprendes, muchacho. ¡No me hagas perder el tiempo!
+	AI_Output (other, self,"GUR_1201_CorKalom_Experimente_15_00"); //Â¿QuÃ© clase de experimentos realizas?
+	AI_Output (self, other,"GUR_1201_CorKalom_Experimente_10_01"); //Mi investigaciÃ³n tiene lugar a un nivel que no comprendes, muchacho. Â¡No me hagas perder el tiempo!
 };  
 
 // ****************************************
@@ -134,7 +134,7 @@ instance  GUR_1201_CorKalom_BRINGWEED (C_INFO)
 	condition		= GUR_1201_CorKalom_BRINGWEED_Condition;
 	information		= GUR_1201_CorKalom_BRINGWEED_Info;
 	permanent		= 1;
-	description		= "¡Estoy repartiendo la cosecha diaria de hierba del pantano!"; 
+	description		= "Â¡Estoy repartiendo la cosecha diaria de hierba del pantano!"; 
 };
 
 FUNC int  GUR_1201_CorKalom_BRINGWEED_Condition()
@@ -147,16 +147,16 @@ FUNC int  GUR_1201_CorKalom_BRINGWEED_Condition()
 
 FUNC void  GUR_1201_CorKalom_BRINGWEED_Info()
 {
-	AI_Output				(other, self,"GUR_1201_CorKalom_BRINGWEED_15_00"); //¡Estoy repartiendo la cosecha diaria de hierba del pantano!
+	AI_Output				(other, self,"GUR_1201_CorKalom_BRINGWEED_15_00"); //Â¡Estoy repartiendo la cosecha diaria de hierba del pantano!
 
 	if	(Npc_HasItems(hero, ItMi_Plants_Swampherb_01) < 100)
 	{
-		AI_Output			(self, other,"GUR_1201_CorKalom_BRINGWEED_10_01"); //¿Y se supone que ESO es todo? ¡¡¡Espero TODA la cosecha, es decir, al menos 100 tallos!!!
+		AI_Output			(self, other,"GUR_1201_CorKalom_BRINGWEED_10_01"); //Â¿Y se supone que ESO es todo? Â¡Â¡Â¡Espero TODA la cosecha, es decir, al menos 100 tallos!!!
 		AI_StopProcessInfos	(self);
 	}
 	else
 	{
-		AI_Output			(self, other,"GUR_1201_CorKalom_BRINGWEED_10_02"); //Ah, dámela. ¡Y quítate de mi vista!
+		AI_Output			(self, other,"GUR_1201_CorKalom_BRINGWEED_10_02"); //Ah, dÃ¡mela. Â¡Y quÃ­tate de mi vista!
 
 		B_GiveInvItems	(hero, self, ItMi_Plants_Swampherb_01, 100);
         Npc_RemoveInvItems (self, ItMi_Plants_Swampherb_01, 100);
@@ -181,7 +181,7 @@ instance  GUR_1201_CorKalom_Crawlerzangen (C_INFO)
 	condition		= GUR_1201_CorKalom_Crawlerzangen_Condition;
 	information		= GUR_1201_CorKalom_Crawlerzangen_Info;
 	permanent		= 1;
-	description		= "Tengo mandíbulas de reptadores para ti..."; 
+	description		= "Tengo mandÃ­bulas de reptadores para ti..."; 
 };
 
 FUNC int  GUR_1201_CorKalom_Crawlerzangen_Condition()
@@ -194,7 +194,7 @@ FUNC int  GUR_1201_CorKalom_Crawlerzangen_Condition()
 
 FUNC void  GUR_1201_CorKalom_Crawlerzangen_Info()
 {
-	AI_Output (other, self,"GUR_1201_CorKalom_Crawlerzangen_15_00"); //Tengo mandíbulas de reptadores para ti...
+	AI_Output (other, self,"GUR_1201_CorKalom_Crawlerzangen_15_00"); //Tengo mandÃ­bulas de reptadores para ti...
 	
 	if (Npc_HasItems(other,ItAt_Crawler_01) > 9)
 	{
@@ -210,7 +210,7 @@ FUNC void  GUR_1201_CorKalom_Crawlerzangen_Info()
 	}
 	else
 	{
-		AI_Output (self, other,"GUR_1201_CorKalom_Crawlerzangen_10_03"); //Hm. ¿Eso es todo? Ten, toma una poción de mana y desaparece.
+		AI_Output (self, other,"GUR_1201_CorKalom_Crawlerzangen_10_03"); //Hm. Â¿Eso es todo? Ten, toma una pociÃ³n de mana y desaparece.
 		CreateInvItems(self, ItFo_Potion_Mana_01, 1);
 		B_GiveInvItems(self, hero,ItFo_Potion_Mana_01, 1);
 		AI_StopProcessInfos(self);
@@ -233,7 +233,7 @@ instance  GUR_1201_CorKalom_JoinPSI (C_INFO)
 	condition		= GUR_1201_CorKalom_JoinPSI_Condition;
 	information		= GUR_1201_CorKalom_JoinPSI_Info;
 	permanent		= 1;
-	description		= "¡Creo que he convencido a los Baal!"; 
+	description		= "Â¡Creo que he convencido a los Baal!"; 
 };
 
 FUNC int  GUR_1201_CorKalom_JoinPSI_Condition()
@@ -248,9 +248,9 @@ FUNC int  GUR_1201_CorKalom_JoinPSI_Condition()
 func void  GUR_1201_CorKalom_JoinPSI_Info()
 {
 	var int counter;
-	counter = 0;	//Counter löschen, da er noch den Stand der letzten Analyse hat!
+	counter = 0;	//Counter lÃ¶schen, da er noch den Stand der letzten Analyse hat!
 	
-	AI_Output (other, self,"GUR_1201_CorKalom_JoinPSI_15_00"); //¡Creo que he convencido a los Baal!
+	AI_Output (other, self,"GUR_1201_CorKalom_JoinPSI_15_00"); //Â¡Creo que he convencido a los Baal!
 	
 	if (Npc_KnowsInfo(hero,DIA_BaalOrun_GotWeed))
 	{
@@ -259,24 +259,24 @@ func void  GUR_1201_CorKalom_JoinPSI_Info()
 	};
 	if (Npc_KnowsInfo(hero,	DIA_BaalCadar_SleepSpell))
 	{
-		AI_Output (self, other,"GUR_1201_CorKalom_JoinPSI_10_02"); //Continúa...
+		AI_Output (self, other,"GUR_1201_CorKalom_JoinPSI_10_02"); //ContinÃºa...
 		AI_Output (other, self,"GUR_1201_CorKalom_JoinPSI_15_03"); //Baal Cadar me considera un alumno receptivo.
 		counter = counter + 1;
 	};
 	if (Npc_KnowsInfo(hero,	DIA_BaalNamib_FirstTalk))
 	{
-		AI_Output (other, self,"GUR_1201_CorKalom_JoinPSI_15_04"); //Baal Namib está convencido de que soy un verdadero creyente.
+		AI_Output (other, self,"GUR_1201_CorKalom_JoinPSI_15_04"); //Baal Namib estÃ¡ convencido de que soy un verdadero creyente.
 		counter = counter + 1;
 	};
 	if (Npc_KnowsInfo(hero,	DIA_BaalTyon_Vision))
 	{
-		AI_Output (other, self,"GUR_1201_CorKalom_JoinPSI_15_05"); //Gracias a mí, Baal Tyon tuvo una visión.
+		AI_Output (other, self,"GUR_1201_CorKalom_JoinPSI_15_05"); //Gracias a mÃ­, Baal Tyon tuvo una visiÃ³n.
 		counter = counter + 1;
 	};
 	if (Npc_KnowsInfo(hero,	DIA_BaalTondral_SendToKalom))
 	{
-		AI_Output (self, other,"GUR_1201_CorKalom_JoinPSI_10_06"); //¿Y?
-		AI_Output (other, self,"GUR_1201_CorKalom_JoinPSI_15_07"); //Baal Tondral dice que debo recibir la túnica. Le he llevado un nuevo estudiante.
+		AI_Output (self, other,"GUR_1201_CorKalom_JoinPSI_10_06"); //Â¿Y?
+		AI_Output (other, self,"GUR_1201_CorKalom_JoinPSI_15_07"); //Baal Tondral dice que debo recibir la tÃºnica. Le he llevado un nuevo estudiante.
 		counter = counter + 1;
 	};
 	//-------------------------------------	
@@ -285,7 +285,7 @@ func void  GUR_1201_CorKalom_JoinPSI_Info()
 		if (counter >= 4)
 		{
 			AI_Output			(self, other,"GUR_1201_CorKalom_JoinPSI_10_08"); //Bien. Si los Baal te apoyan, eso me es suficiente.
-			AI_Output			(self, other,"GUR_1201_CorKalom_JoinPSI_10_09"); //Ten, ponte esto. Y ahora ve y sé útil.
+			AI_Output			(self, other,"GUR_1201_CorKalom_JoinPSI_10_09"); //Ten, ponte esto. Y ahora ve y sÃ© Ãºtil.
 	
 			// Ernennung zum Novizen
 			CreateInvItem		(self, NOV_ARMOR_M);
@@ -294,18 +294,18 @@ func void  GUR_1201_CorKalom_JoinPSI_Info()
 			Npc_SetTrueGuild	(hero,GIL_NOV);
 			hero.guild = GIL_NOV;
 			B_LogEntry			(CH1_JoinPsi,"Hoy, Cor Kalom me ha nombrado novicio. Ha estado tan insoportable como siempre, pero ya pertenezco de verdad a la Hermandad del Durmiente del campamento del pantano.");
-			B_LogEntry			(GE_TraderPSI,"Obtendré una mejor ARMADURA DE NOVICIO de manos de Baal Namib.");
+			B_LogEntry			(GE_TraderPSI,"ObtendrÃ© una mejor ARMADURA DE NOVICIO de manos de Baal Namib.");
 			Log_SetTopicStatus	(CH1_JoinPsi,	LOG_SUCCESS);
 			B_GiveXP			(XP_BecomeNovice);
 	
 			// Canceln der anderen Aufnahmen
 			Log_CreateTopic		(CH1_JoinOC,	LOG_MISSION);
 			Log_SetTopicStatus	(CH1_JoinOC,	LOG_FAILED);
-			B_LogEntry			(CH1_JoinOC,"Al haber decidido unirme a la Hermandad del Durmiente del campamento del pantano, ya no puedo pertenecer a las Sombras de Gómez.");
+			B_LogEntry			(CH1_JoinOC,"Al haber decidido unirme a la Hermandad del Durmiente del campamento del pantano, ya no puedo pertenecer a las Sombras de GÃ³mez.");
 			
 			Log_CreateTopic		(CH1_JoinNC,	LOG_MISSION);
 			Log_SetTopicStatus	(CH1_JoinNC,	LOG_FAILED);
-			B_LogEntry			(CH1_JoinNC,"Ya no puedo unirme a los bandidos del Campamento Nuevo, pues mi lugar está con la Hermandad del Durmiente.");
+			B_LogEntry			(CH1_JoinNC,"Ya no puedo unirme a los bandidos del Campamento Nuevo, pues mi lugar estÃ¡ con la Hermandad del Durmiente.");
 			
 			//Log_SetTopicStatus	(CH1_LostNek,	LOG_FAILED);
 			//Log_SetTopicStatus	(CH1_FiskNewDealer,	LOG_FAILED);
@@ -315,9 +315,9 @@ func void  GUR_1201_CorKalom_JoinPSI_Info()
 		}
 		else
 		{
-			AI_Output (self, other,"GUR_1201_CorKalom_JoinPSI_NOT_10_00"); //¿Y?
+			AI_Output (self, other,"GUR_1201_CorKalom_JoinPSI_NOT_10_00"); //Â¿Y?
 			AI_Output (other, self,"GUR_1201_CorKalom_JoinPSI_NOT_15_01"); //Eso es todo.
-			AI_Output (self, other,"GUR_1201_CorKalom_JoinPSI_NOT_10_02"); //¡Estás haciendo que pierda mi valioso tiempo! ¡Vuelve en cuanto cuatro de los Baal te consideren digno!
+			AI_Output (self, other,"GUR_1201_CorKalom_JoinPSI_NOT_10_02"); //Â¡EstÃ¡s haciendo que pierda mi valioso tiempo! Â¡Vuelve en cuanto cuatro de los Baal te consideren digno!
 		};
 	}
 	else
@@ -337,7 +337,7 @@ instance  GUR_1201_CorKalom_JoinPSI2 (C_INFO)
 	condition		= GUR_1201_CorKalom_JoinPSI2_Condition;
 	information		= GUR_1201_CorKalom_JoinPSI2_Info;
 	permanent		= 0;
-	description		= "¿Eso es todo? ¿No me das la bienvenida ni nada?"; 
+	description		= "Â¿Eso es todo? Â¿No me das la bienvenida ni nada?"; 
 };
 
 FUNC int  GUR_1201_CorKalom_JoinPSI2_Condition()
@@ -350,10 +350,10 @@ FUNC int  GUR_1201_CorKalom_JoinPSI2_Condition()
 
 func void  GUR_1201_CorKalom_JoinPSI2_Info()
 {
-	AI_Output			(other, self,"GUR_1201_CorKalom_JoinPSI_15_10"); //¿Eso es todo? ¿No me das la bienvenida ni nada?
+	AI_Output			(other, self,"GUR_1201_CorKalom_JoinPSI_15_10"); //Â¿Eso es todo? Â¿No me das la bienvenida ni nada?
 	AI_Output			(self, other,"GUR_1201_CorKalom_JoinPSI_10_11"); //Bienvenido.
 	AI_Output			(other, self,"GUR_1201_CorKalom_JoinPSI_15_12"); //Eso suena mucho mejor.
-	AI_Output			(self, other,"GUR_1201_CorKalom_JoinPSI_10_13"); //¡No te quedes por aquí! Haz algo. Coge estas hierbas y llévaselas a Gómez al Campamento Viejo.
+	AI_Output			(self, other,"GUR_1201_CorKalom_JoinPSI_10_13"); //Â¡No te quedes por aquÃ­! Haz algo. Coge estas hierbas y llÃ©vaselas a GÃ³mez al Campamento Viejo.
 	AI_Output			(self, other,"GUR_1201_CorKalom_JoinPSI_10_14"); //Si sus secuaces no te dejan pasar, diles que te manda Cor Kalom.
 	
 	CreateInvItems		(self, itmijoint_3, 30);
@@ -362,9 +362,9 @@ func void  GUR_1201_CorKalom_JoinPSI2_Info()
 	KALOM_KRAUTBOTE = LOG_RUNNING;
 	Log_CreateTopic		(CH1_KrautBote,	LOG_MISSION);
 	Log_SetTopicStatus	(CH1_KrautBote,	LOG_RUNNING);
-	B_LogEntry			(CH1_KrautBote,"Cor Kalom me ha enviado a entregar hierba a Gómez en el Campamento Viejo."); 
+	B_LogEntry			(CH1_KrautBote,"Cor Kalom me ha enviado a entregar hierba a GÃ³mez en el Campamento Viejo."); 
 	
-	AI_Output			(self, other,"GUR_1201_CorKalom_JoinPSI_10_15"); //¿Qué? ¿Sigues aquí?
+	AI_Output			(self, other,"GUR_1201_CorKalom_JoinPSI_10_15"); //Â¿QuÃ©? Â¿Sigues aquÃ­?
 	AI_StopProcessInfos	(self);
 };  
 
@@ -382,7 +382,7 @@ INSTANCE Info_Kalom_DrugMonopol (C_INFO)
 	condition	= Info_Kalom_DrugMonopol_Condition;
 	information	= Info_Kalom_DrugMonopol_Info;
 	permanent 	= 0; 
-	description = "¿Tienes otro encargo para mí?";
+	description = "Â¿Tienes otro encargo para mÃ­?";
 };
 
 
@@ -396,18 +396,18 @@ FUNC INT Info_Kalom_DrugMonopol_Condition()
 
 FUNC VOID Info_Kalom_DrugMonopol_Info()
 {
-	AI_Output (other, self,"Mis_1_Psi_Kalom_DrugMonopol_15_00"); //¿Tienes otro encargo para mí?
-	AI_Output (self, other,"Mis_1_Psi_Kalom_DrugMonopol_10_01"); //En el Campamento Nuevo hay un pequeño grupo de hombres que han empezado a producir su propia hierba.
+	AI_Output (other, self,"Mis_1_Psi_Kalom_DrugMonopol_15_00"); //Â¿Tienes otro encargo para mÃ­?
+	AI_Output (self, other,"Mis_1_Psi_Kalom_DrugMonopol_10_01"); //En el Campamento Nuevo hay un pequeÃ±o grupo de hombres que han empezado a producir su propia hierba.
 	//AI_Output (self, other,"Mis_1_Psi_Kalom_DrugMonopol_10_02"); //Sie wollen unsere Kunden im Neuen Lager abwerben, Das werden wir nicht zulassen.
-	AI_Output (self, other,"Mis_1_Psi_Kalom_DrugMonopol_10_03"); //Haz que detengan su producción...
-	AI_Output (other, self,"Mis_1_Psi_Kalom_DrugMonopol_15_04"); //¿Cómo...?
-	AI_Output (self, other,"Mis_1_Psi_Kalom_DrugMonopol_10_05"); //¡No me molestes con los detalles!
-	AI_Output (self, other,"Mis_1_Psi_Kalom_DrugMonopol_10_06"); //El campamento de los mezcladores debe de estar en algún lugar fuera del Campamento Nuevo. Ya sabes lo que tienes que hacer.
+	AI_Output (self, other,"Mis_1_Psi_Kalom_DrugMonopol_10_03"); //Haz que detengan su producciÃ³n...
+	AI_Output (other, self,"Mis_1_Psi_Kalom_DrugMonopol_15_04"); //Â¿CÃ³mo...?
+	AI_Output (self, other,"Mis_1_Psi_Kalom_DrugMonopol_10_05"); //Â¡No me molestes con los detalles!
+	AI_Output (self, other,"Mis_1_Psi_Kalom_DrugMonopol_10_06"); //El campamento de los mezcladores debe de estar en algÃºn lugar fuera del Campamento Nuevo. Ya sabes lo que tienes que hacer.
 
 	Kalom_DrugMonopol = LOG_RUNNING;
 	Log_CreateTopic		(CH1_DrugMonopol,	LOG_MISSION);
 	Log_SetTopicStatus	(CH1_DrugMonopol,	LOG_RUNNING);
-	B_LogEntry			(CH1_DrugMonopol,"Cor Kalom quiere que acabe con la competencia de producción de hierba del Campamento Nuevo. No sé por dónde empezar exactamente, pero debería hacerlo FRENTE al Campamento Nuevo.");
+	B_LogEntry			(CH1_DrugMonopol,"Cor Kalom quiere que acabe con la competencia de producciÃ³n de hierba del Campamento Nuevo. No sÃ© por dÃ³nde empezar exactamente, pero deberÃ­a hacerlo FRENTE al Campamento Nuevo.");
 
 	var C_NPC Renyu; 	
 	Renyu = Hlp_GetNpc(ORG_860_Renyu);
@@ -428,7 +428,7 @@ INSTANCE Info_Kalom_Success (C_INFO)
 	condition	= Info_Kalom_Success_Condition;
 	information	= Info_Kalom_Success_Info;
 	permanent	= 1;
-	description = "Acerca de la producción de hierba en el Campamento Nuevo...";
+	description = "Acerca de la producciÃ³n de hierba en el Campamento Nuevo...";
 };
 
 
@@ -446,30 +446,30 @@ FUNC VOID Info_Kalom_Success_Info()
 	var C_NPC Renyu; 	Renyu = Hlp_GetNpc(ORG_860_Renyu);
 	var C_NPC Jacko; 	Jacko = Hlp_GetNpc(ORG_862_Jacko);
 		
-	AI_Output (other, self,"Mis_1_Psi_Kalom_Success_15_00"); //Acerca de la producción de hierba en el Campamento Nuevo...
-	AI_Output (self, other,"Mis_1_Psi_Kalom_Success_10_01"); //¿Sí?
+	AI_Output (other, self,"Mis_1_Psi_Kalom_Success_15_00"); //Acerca de la producciÃ³n de hierba en el Campamento Nuevo...
+	AI_Output (self, other,"Mis_1_Psi_Kalom_Success_10_01"); //Â¿SÃ­?
 	
 	if (Stooges_Fled != TRUE)
 	{
 		AI_Output (other, self,"Mis_1_Psi_Kalom_Success_15_02"); //No puedo encontrar a estos hombres.
-		AI_Output (self, other,"Mis_1_Psi_Kalom_Success_10_03"); //No habría esperado otra cosa de ti.
+		AI_Output (self, other,"Mis_1_Psi_Kalom_Success_10_03"); //No habrÃ­a esperado otra cosa de ti.
 	}
 	else if (Stooges_Fled == TRUE)
 	||		(Npc_IsDead(Jacko)&&Npc_IsDead(Renyu)&&Npc_IsDead(Killian))
  	{
 		AI_Output (other, self,"Mis_1_Psi_Kalom_Success_15_04"); //Han desaparecido.
-		AI_Output (self, other,"Mis_1_Psi_Kalom_Success_10_05"); //Me sorprendes. Subestimé tus capacidades. Tal vez puedas ser útil, a fin de cuentas.
+		AI_Output (self, other,"Mis_1_Psi_Kalom_Success_10_05"); //Me sorprendes. SubestimÃ© tus capacidades. Tal vez puedas ser Ãºtil, a fin de cuentas.
 		//AI_Output (self, other,"Mis_1_Psi_Kalom_Success_10_06"); //Rede mit den Baals.
 		
 		Kalom_DrugMonopol = LOG_SUCCESS;
-		B_LogEntry			(CH1_DrugMonopol,"He comunicado a Cor Kalom que la competencia de producción de hierba del Campamento Nuevo ha sido detenida. Su reacción ha sido tan 'amistosa' como de costumbre.");
+		B_LogEntry			(CH1_DrugMonopol,"He comunicado a Cor Kalom que la competencia de producciÃ³n de hierba del Campamento Nuevo ha sido detenida. Su reacciÃ³n ha sido tan 'amistosa' como de costumbre.");
 		Log_SetTopicStatus	(CH1_DrugMonopol,	LOG_SUCCESS);
 		B_GiveXP			(XP_DrugMonopol);
 	};
 };
 
 // ****************************************************************
-// 							KRAUTBOTE ZURÜCK
+// 							KRAUTBOTE ZURÃœCK
 // ****************************************************************
 
 INSTANCE Info_Kalom_KrautboteBACK(C_INFO)
@@ -508,7 +508,7 @@ FUNC VOID Info_Kalom_KrautboteBACK_Info()
 	}
 	else
 	{
-		AI_Output (self, other,"Mis_1_Psi_Kalom_KrautboteBACK_10_02"); //¿Dónde están las 500 pepitas, muchacho? ¡Asegúrate de traérmelas deprisa!
+		AI_Output (self, other,"Mis_1_Psi_Kalom_KrautboteBACK_10_02"); //Â¿DÃ³nde estÃ¡n las 500 pepitas, muchacho? Â¡AsegÃºrate de traÃ©rmelas deprisa!
 	}; 
 };
 
@@ -552,7 +552,7 @@ FUNC VOID Info_CorKalom_BringFocus_Info()
 {
 	AI_Output			(other, self,"Sit_2_PSI_Yberion_BringFocus_Info3_15_01"); //Me manda Y'Berion. Tengo el foco.
 	AI_Output			(self, other,"Sit_2_PSI_Yberion_BringFocus_Info3_10_02"); //Ahhhh... El foco... Por fin. Ya puedo estudiar la magia de estos artefactos.
-	AI_Output			(self, other,"Sit_2_PSI_Yberion_BringFocus_Info3_10_03"); //Si tuviera suficiente secreción... ¡maldita sea!
+	AI_Output			(self, other,"Sit_2_PSI_Yberion_BringFocus_Info3_10_03"); //Si tuviera suficiente secreciÃ³n... Â¡maldita sea!
 	
 	B_LogEntry		(CH2_Focus,"He dejado el ominoso foco donde Cor Kalom!");		
 	Log_SetTopicStatus	(CH2_Focus,	LOG_SUCCESS);
@@ -562,7 +562,7 @@ FUNC VOID Info_CorKalom_BringFocus_Info()
 	B_GiveXP			(XP_BringFocusToCorKalom);
 };
 
-// ------------------------------ 2. Belohnung für Fokus ergaunern ----------------------------------
+// ------------------------------ 2. Belohnung fÃ¼r Fokus ergaunern ----------------------------------
 instance Info_CorKalom_BLUFF (C_INFO)
 {
 	npc			= GUR_1201_CorKalom;
@@ -570,7 +570,7 @@ instance Info_CorKalom_BLUFF (C_INFO)
 	condition	= Info_CorKalom_BLUFF_Condition;
 	information	= Info_CorKalom_BLUFF_Info;
 	permanent	= 0;
-	description = "¡Y'Berion dijo que me pagarías si te traía el foco!";
+	description = "Â¡Y'Berion dijo que me pagarÃ­as si te traÃ­a el foco!";
 };
 
 FUNC INT Info_CorKalom_BLUFF_Condition()
@@ -584,8 +584,8 @@ FUNC INT Info_CorKalom_BLUFF_Condition()
 
 FUNC VOID Info_CorKalom_BLUFF_Info()
 {
-	AI_Output			(other, self,"Sit_2_PSI_Yberion_BLUFF_Info3_15_01"); //¡Y'Berion dijo que me pagarías si te traía el foco!
-	AI_Output			(self, other,"Sit_2_PSI_Yberion_BLUFF_Info3_10_02"); //¿De verdad? ¿Dijo eso? Bueno. ¡Supongo que basta con 50 pepitas!
+	AI_Output			(other, self,"Sit_2_PSI_Yberion_BLUFF_Info3_15_01"); //Â¡Y'Berion dijo que me pagarÃ­as si te traÃ­a el foco!
+	AI_Output			(self, other,"Sit_2_PSI_Yberion_BLUFF_Info3_10_02"); //Â¿De verdad? Â¿Dijo eso? Bueno. Â¡Supongo que basta con 50 pepitas!
 	
 	CreateInvItems (self,Itminugget,50);
 	B_GiveInvItems (self, other, Itminugget,50);
@@ -599,7 +599,7 @@ instance  GUR_1201_CorKalom_SACHE (C_INFO)
 	information		= GUR_1201_CorKalom_SACHE_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "¿Secreción?"; 
+	description		= "Â¿SecreciÃ³n?"; 
 };
 
 FUNC int  GUR_1201_CorKalom_SACHE_Condition()
@@ -612,28 +612,28 @@ FUNC int  GUR_1201_CorKalom_SACHE_Condition()
 };
 FUNC VOID  GUR_1201_CorKalom_SACHE_Info()
 {
-	AI_Output			(other, self,"GUR_1201_CorKalom_SACHE_Info_15_01"); //¿Secreción?
-	AI_Output			(self, other,"GUR_1201_CorKalom_SACHE_Info_10_02"); //Sí. Como debes saber, yo elaboro las pociones mágicas para la invocación del Durmiente. Para ello necesito la secreción de las mandíbulas de los reptadores.
-	AI_Output			(self, other,"GUR_1201_CorKalom_SACHE_Info_10_03"); //Sabes lo que son los reptadores, ¿no?
+	AI_Output			(other, self,"GUR_1201_CorKalom_SACHE_Info_15_01"); //Â¿SecreciÃ³n?
+	AI_Output			(self, other,"GUR_1201_CorKalom_SACHE_Info_10_02"); //SÃ­. Como debes saber, yo elaboro las pociones mÃ¡gicas para la invocaciÃ³n del Durmiente. Para ello necesito la secreciÃ³n de las mandÃ­bulas de los reptadores.
+	AI_Output			(self, other,"GUR_1201_CorKalom_SACHE_Info_10_03"); //Sabes lo que son los reptadores, Â¿no?
 
 	Info_Clearchoices	(GUR_1201_CorKalom_SACHE);
 	Info_Addchoice		(GUR_1201_CorKalom_SACHE,"No.",GUR_1201_CorKalom_SACHE_NEIN);
-	Info_Addchoice		(GUR_1201_CorKalom_SACHE,"Sí.",GUR_1201_CorKalom_SACHE_JA);
+	Info_Addchoice		(GUR_1201_CorKalom_SACHE,"SÃ­.",GUR_1201_CorKalom_SACHE_JA);
 };  
 //------------------------------------------------------
 FUNC VOID GUR_1201_CorKalom_SACHE_NEIN ()
 {
 	AI_Output			(other, self,"GUR_1201_CorKalom_SACHE_NEIN_15_01"); //No.
 	AI_Output			(self, other,"GUR_1201_CorKalom_SACHE_NEIN_10_02"); //Son bestias peligrosas que recorren las minas oscuras y devoran la carne humana que pueden conseguir.
-	AI_Output			(self, other,"GUR_1201_CorKalom_SACHE_NEIN_10_03"); //Sus mandíbulas contienen una secreción especial.
-	AI_Output			(self, other,"GUR_1201_CorKalom_SACHE_NEIN_10_04"); //La uso para elaborar una poción que marca el sendero espiritual para el Durmiente.
+	AI_Output			(self, other,"GUR_1201_CorKalom_SACHE_NEIN_10_03"); //Sus mandÃ­bulas contienen una secreciÃ³n especial.
+	AI_Output			(self, other,"GUR_1201_CorKalom_SACHE_NEIN_10_04"); //La uso para elaborar una pociÃ³n que marca el sendero espiritual para el Durmiente.
 	Info_ClearChoices (GUR_1201_CorKalom_SACHE);
 };
 //------------------------------------------------------
 func void GUR_1201_CorKalom_SACHE_JA()
 {
-	AI_Output			(other, self,"GUR_1201_CorKalom_SACHE_JA_15_01"); //Sí.
-	AI_Output			(self, other,"GUR_1201_CorKalom_SACHE_JA_10_02"); //¡Muy bien!
+	AI_Output			(other, self,"GUR_1201_CorKalom_SACHE_JA_15_01"); //SÃ­.
+	AI_Output			(self, other,"GUR_1201_CorKalom_SACHE_JA_10_02"); //Â¡Muy bien!
 	Info_ClearChoices (GUR_1201_CorKalom_SACHE);
 };
 // ***************************** INFOS ****************************************//
@@ -644,7 +644,7 @@ instance  GUR_1201_CorKalom_VISION (C_INFO)
 	information		= GUR_1201_CorKalom_VISION_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "¡Habla!"; 
+	description		= "Â¡Habla!"; 
 };
 
 FUNC int  GUR_1201_CorKalom_VISION_Condition()
@@ -657,15 +657,15 @@ FUNC int  GUR_1201_CorKalom_VISION_Condition()
 };
 FUNC void  GUR_1201_CorKalom_VISION_Info()
 {
-	AI_Output			(other, self,"GUR_1201_CorKalom_VISION_Info_15_01"); //¡Habla!
-	AI_Output			(self, other,"GUR_1201_CorKalom_VISION_Info_10_02"); //Bueno, hace poco tuve una visión del mismísimo Durmiente. Me dio una señal.
-	AI_Output			(self, other,"GUR_1201_CorKalom_VISION_Info_10_03"); //Me hizo entender que hay un medio distinto a la secreción de las mandíbulas.
-	AI_Output			(self, other,"GUR_1201_CorKalom_VISION_Info_10_04"); //Y me escogió para que transmitiera esta misión. No soy yo quien te encarga esta misión. ¡Es el Durmiente!
-	AI_Output			(other, self,"GUR_1201_CorKalom_VISION_Info_15_05"); //¡Imposible!
-	AI_Output			(self, other,"GUR_1201_CorKalom_VISION_Info_10_06"); //¡Cállate, necio!
+	AI_Output			(other, self,"GUR_1201_CorKalom_VISION_Info_15_01"); //Â¡Habla!
+	AI_Output			(self, other,"GUR_1201_CorKalom_VISION_Info_10_02"); //Bueno, hace poco tuve una visiÃ³n del mismÃ­simo Durmiente. Me dio una seÃ±al.
+	AI_Output			(self, other,"GUR_1201_CorKalom_VISION_Info_10_03"); //Me hizo entender que hay un medio distinto a la secreciÃ³n de las mandÃ­bulas.
+	AI_Output			(self, other,"GUR_1201_CorKalom_VISION_Info_10_04"); //Y me escogiÃ³ para que transmitiera esta misiÃ³n. No soy yo quien te encarga esta misiÃ³n. Â¡Es el Durmiente!
+	AI_Output			(other, self,"GUR_1201_CorKalom_VISION_Info_15_05"); //Â¡Imposible!
+	AI_Output			(self, other,"GUR_1201_CorKalom_VISION_Info_10_06"); //Â¡CÃ¡llate, necio!
 	AI_Output			(self, other,"GUR_1201_CorKalom_VISION_Info_10_07"); //Me hizo entender que la senda que he emprendido es la correcta, pero los medios no son lo bastante fuertes.
-	AI_Output			(self, other,"GUR_1201_CorKalom_VISION_Info_10_08"); //Los medios adecuados se pueden encontrar en los reptadores, pero no basta con las mandíbulas.
-	AI_Output			(self, other,"GUR_1201_CorKalom_VISION_Info_10_09"); //Debe haber algo más.
+	AI_Output			(self, other,"GUR_1201_CorKalom_VISION_Info_10_08"); //Los medios adecuados se pueden encontrar en los reptadores, pero no basta con las mandÃ­bulas.
+	AI_Output			(self, other,"GUR_1201_CorKalom_VISION_Info_10_09"); //Debe haber algo mÃ¡s.
 };  
 
 // ***************************** INFOS ****************************************//
@@ -676,7 +676,7 @@ instance  GUR_1201_CorKalom_NEST (C_INFO)
 	information		= GUR_1201_CorKalom_NEST_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "¿Has estudiado alguna vez a los reptadores de las minas?"; 
+	description		= "Â¿Has estudiado alguna vez a los reptadores de las minas?"; 
 };
 
 FUNC int  GUR_1201_CorKalom_NEST_Condition()
@@ -689,9 +689,9 @@ FUNC int  GUR_1201_CorKalom_NEST_Condition()
 };
 func void  GUR_1201_CorKalom_NEST_Info()
 {
-	AI_Output			(other, self,"GUR_1201_CorKalom_NEST_Info_15_01"); //¿Has estudiado alguna vez a los reptadores de las minas? Tal vez haya otra parte del cuerpo que contenga más secreción.
-	AI_Output			(self, other,"GUR_1201_CorKalom_NEST_Info_10_02"); //Hemos diseccionado algunos reptadores, pero la secreción sólo parece estar en las mandíbulas.
-	AI_Output			(self, other,"GUR_1201_CorKalom_NEST_Info_10_03"); //Debe haber algo más. ¡Encuentra su nido y averiguarás la respuesta!
+	AI_Output			(other, self,"GUR_1201_CorKalom_NEST_Info_15_01"); //Â¿Has estudiado alguna vez a los reptadores de las minas? Tal vez haya otra parte del cuerpo que contenga mÃ¡s secreciÃ³n.
+	AI_Output			(self, other,"GUR_1201_CorKalom_NEST_Info_10_02"); //Hemos diseccionado algunos reptadores, pero la secreciÃ³n sÃ³lo parece estar en las mandÃ­bulas.
+	AI_Output			(self, other,"GUR_1201_CorKalom_NEST_Info_10_03"); //Debe haber algo mÃ¡s. Â¡Encuentra su nido y averiguarÃ¡s la respuesta!
 
 	CorKalom_BringMCQBalls = LOG_RUNNING;
 
@@ -703,7 +703,7 @@ func void GUR_1201_CorKalom_WEG_ACCEPT()
 {
 	Log_CreateTopic		(CH2_MCEggs,	LOG_MISSION);
 	Log_SetTopicStatus	(CH2_MCEggs,	LOG_RUNNING);
-	B_LogEntry		(CH2_MCEggs,"El Gurú Cor Kalom me ha pedido que busque una fuente de secreción de reptador en la Vieja Mina. Hasta la fecha se han utilizado las mandíbulas de los monstruos, pero tengo que encontrar algo diferente que produzca una secreción más potente.");
+	B_LogEntry		(CH2_MCEggs,"El GurÃº Cor Kalom me ha pedido que busque una fuente de secreciÃ³n de reptador en la Vieja Mina. Hasta la fecha se han utilizado las mandÃ­bulas de los monstruos, pero tengo que encontrar algo diferente que produzca una secreciÃ³n mÃ¡s potente.");
 
 	if (PresseTourJanuar2001)
 	{
@@ -721,7 +721,7 @@ instance  GUR_1201_CorKalom_WEG (C_INFO)
 	nr				= 21;
 	important		= 0;
 	permanent		= 0;
-	description		= "¡Parece una búsqueda oscura y siniestra!"; 
+	description		= "Â¡Parece una bÃºsqueda oscura y siniestra!"; 
 };
 
 FUNC int  GUR_1201_CorKalom_WEG_Condition()
@@ -734,10 +734,10 @@ FUNC int  GUR_1201_CorKalom_WEG_Condition()
 
 FUNC void  GUR_1201_CorKalom_WEG_Info()
 {
-	AI_Output			(other, self,"GUR_1201_CorKalom_WEG_Info_15_01"); //¡Parece una búsqueda oscura y siniestra!
-	AI_Output			(self, other,"GUR_1201_CorKalom_WEG_Info_10_02"); //Toma estos pergaminos con conjuros de luz, que te vendrán bien en los pozos oscuros.
-	AI_Output			(self, other,"GUR_1201_CorKalom_WEG_Info_10_03"); //Los templarios de las minas te ayudarán.
-	AI_Output			(self, other,"GUR_1201_CorKalom_WEG_Info_10_04"); //Que el Durmiente te dé fuerzas, que su luz brille en tu sendero e ilumine tu espíritu, y que refuerce tu voluntad.
+	AI_Output			(other, self,"GUR_1201_CorKalom_WEG_Info_15_01"); //Â¡Parece una bÃºsqueda oscura y siniestra!
+	AI_Output			(self, other,"GUR_1201_CorKalom_WEG_Info_10_02"); //Toma estos pergaminos con conjuros de luz, que te vendrÃ¡n bien en los pozos oscuros.
+	AI_Output			(self, other,"GUR_1201_CorKalom_WEG_Info_10_03"); //Los templarios de las minas te ayudarÃ¡n.
+	AI_Output			(self, other,"GUR_1201_CorKalom_WEG_Info_10_04"); //Que el Durmiente te dÃ© fuerzas, que su luz brille en tu sendero e ilumine tu espÃ­ritu, y que refuerce tu voluntad.
 
 	CreateInvItems		(self, ItArScrollLight, 5);
 	B_GiveInvItems      (self, other, ItArScrollLight, 5);
@@ -755,7 +755,7 @@ instance  GUR_1201_CorKalom_RAT (C_INFO)
 	nr				= 20;
 	important		= 0;
 	permanent		= 0;
-	description		= "¡Parece que esto podría convertirse en una aventura bastante sangrienta!"; 
+	description		= "Â¡Parece que esto podrÃ­a convertirse en una aventura bastante sangrienta!"; 
 };
 
 FUNC int  GUR_1201_CorKalom_RAT_Condition()
@@ -768,9 +768,9 @@ FUNC int  GUR_1201_CorKalom_RAT_Condition()
 };
 func void  GUR_1201_CorKalom_RAT_Info()
 {
-	AI_Output			(other, self,"GUR_1201_CorKalom_RAT_Info_15_01"); //¡Parece que esto podría convertirse en una aventura bastante sangrienta!
-	AI_Output			(self, other,"GUR_1201_CorKalom_RAT_Info_10_02"); //Llévate estas pociones.
-	AI_Output			(self, other,"GUR_1201_CorKalom_RAT_Info_10_03"); //No te las doy porque quiera que sigas vivo, sino porque hay que realizar esta misión.
+	AI_Output			(other, self,"GUR_1201_CorKalom_RAT_Info_15_01"); //Â¡Parece que esto podrÃ­a convertirse en una aventura bastante sangrienta!
+	AI_Output			(self, other,"GUR_1201_CorKalom_RAT_Info_10_02"); //LlÃ©vate estas pociones.
+	AI_Output			(self, other,"GUR_1201_CorKalom_RAT_Info_10_03"); //No te las doy porque quiera que sigas vivo, sino porque hay que realizar esta misiÃ³n.
 
 	CreateInvItems		(self, ItFo_Potion_Health_02, 5);
 	B_GiveInvItems      (self, other, ItFo_Potion_Health_02, 5);
@@ -786,7 +786,7 @@ instance  GUR_1201_CorKalom_RUN (C_INFO)
 	information		= GUR_1201_CorKalom_RUN_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "¿Dónde encontraré a los reptadores de la mina?"; 
+	description		= "Â¿DÃ³nde encontrarÃ© a los reptadores de la mina?"; 
 };
 
 FUNC int  GUR_1201_CorKalom_RUN_Condition()
@@ -800,13 +800,13 @@ FUNC int  GUR_1201_CorKalom_RUN_Condition()
 
 FUNC void  GUR_1201_CorKalom_RUN_Info()
 {
-	AI_Output			(other, self,"GUR_1201_CorKalom_RUN_Info_15_01"); //¿Dónde encontraré a los reptadores de minas?
+	AI_Output			(other, self,"GUR_1201_CorKalom_RUN_Info_15_01"); //Â¿DÃ³nde encontrarÃ© a los reptadores de minas?
 	AI_Output			(self, other,"GUR_1201_CorKalom_RUN_Info_10_02"); //En la Vieja Mina.
 
 	if	!EnteredOldMine
 	{
-		AI_Output		(other, self,"GUR_1201_CorKalom_RUN_Info_15_03"); //¿Dónde está la Vieja Mina?
-		AI_Output		(self, other,"GUR_1201_CorKalom_RUN_Info_10_04"); //Toma este mapa. En él están marcados los lugares importantes que hay dentro de la Barrera.
+		AI_Output		(other, self,"GUR_1201_CorKalom_RUN_Info_15_03"); //Â¿DÃ³nde estÃ¡ la Vieja Mina?
+		AI_Output		(self, other,"GUR_1201_CorKalom_RUN_Info_10_04"); //Toma este mapa. En Ã©l estÃ¡n marcados los lugares importantes que hay dentro de la Barrera.
 		CreateInvItem	(self,ItWrWorldmap);   
 		B_GiveInvItems  (self, other, ItWrWorldmap, 1);
 	};
@@ -820,7 +820,7 @@ instance  GUR_1201_CorKalom_CRAWLER (C_INFO)
 	information		= GUR_1201_CorKalom_CRAWLER_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "¿Cuál es el mejor modo de combatir a los reptadores de la mina?"; 
+	description		= "Â¿CuÃ¡l es el mejor modo de combatir a los reptadores de la mina?"; 
 };
 
 FUNC int  GUR_1201_CorKalom_CRAWLER_Condition()
@@ -835,8 +835,8 @@ FUNC int  GUR_1201_CorKalom_CRAWLER_Condition()
 
 FUNC void  GUR_1201_CorKalom_CRAWLER_Info()
 {
-	AI_Output			(other, self,"GUR_1201_CorKalom_CRAWLER_Info_15_01"); //¿Cuál es el mejor modo de combatir a los reptadores de la mina?
-	AI_Output			(self,other, "GUR_1201_CorKalom_CRAWLER_Info_10_02"); //En la mina hay templarios. Cazan a los reptadores por sus mandíbulas. Habla con Gor Na Vid. Él te ayudará.
+	AI_Output			(other, self,"GUR_1201_CorKalom_CRAWLER_Info_15_01"); //Â¿CuÃ¡l es el mejor modo de combatir a los reptadores de la mina?
+	AI_Output			(self,other, "GUR_1201_CorKalom_CRAWLER_Info_10_02"); //En la mina hay templarios. Cazan a los reptadores por sus mandÃ­bulas. Habla con Gor Na Vid. Ã‰l te ayudarÃ¡.
 };
 
 // ***************************** INFOS ****************************************//
@@ -847,7 +847,7 @@ instance  GUR_1201_CorKalom_FIND (C_INFO)
 	information		= GUR_1201_CorKalom_FIND_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "¿Cómo puedo encontrar el nido en la mina?"; 
+	description		= "Â¿CÃ³mo puedo encontrar el nido en la mina?"; 
 };
 
 FUNC int  GUR_1201_CorKalom_FIND_Condition()
@@ -861,8 +861,8 @@ FUNC int  GUR_1201_CorKalom_FIND_Condition()
 
 FUNC void  GUR_1201_CorKalom_FIND_Info()
 {
-	AI_Output			(other, self,"GUR_1201_CorKalom_FIND_Info_15_01"); //¿Cómo puedo encontrar el nido en la mina?
-	AI_Output			(self,other, "GUR_1201_CorKalom_FIND_Info_10_02"); //Ésa es la parte más difícil de la misión. No puedo decirte dónde buscar, ni lo que debes buscar. Pero el Durmiente te acompañará.
+	AI_Output			(other, self,"GUR_1201_CorKalom_FIND_Info_15_01"); //Â¿CÃ³mo puedo encontrar el nido en la mina?
+	AI_Output			(self,other, "GUR_1201_CorKalom_FIND_Info_10_02"); //Ã‰sa es la parte mÃ¡s difÃ­cil de la misiÃ³n. No puedo decirte dÃ³nde buscar, ni lo que debes buscar. Pero el Durmiente te acompaÃ±arÃ¡.
 	AI_Output			(other, self,"GUR_1201_CorKalom_FIND_Info_15_03"); //Vaya, menudo consuelo.
 };
 // ------------------------------ SUCCESS ----------------------------------
@@ -886,33 +886,33 @@ FUNC INT Info_CorKalom_BringMCQBalls_Success_Condition()
 FUNC VOID Info_CorKalom_BringMCQBalls_Success_Info()
 {	
 	AI_Output			(other, self,"Mis_2_PSI_Kalom_BringMCQEggs_Success_15_01"); //He encontrado huevos de una reina reptadora.
-	AI_Output			(self, other,"Mis_2_PSI_Kalom_BringMCQEggs_Success_10_02"); //Lo sabía. Mi visión era una señal. ¡Los huevos de la reina deben contener la potente secreción!
-	AI_Output			(self, other,"Mis_2_PSI_Kalom_BringMCQEggs_Success_10_03"); //¡Excelente, con ella puedo crear una poción para contactar con el Durmiente!
-	AI_Output			(other, self,"Mis_2_PSI_Kalom_BringMCQEggs_Success_15_04"); //¿Qué hay de mi recompensa?
-	AI_Output			(self, other,"Mis_2_PSI_Kalom_BringMCQEggs_Success_10_05"); //Oh, sí... Gracias.
+	AI_Output			(self, other,"Mis_2_PSI_Kalom_BringMCQEggs_Success_10_02"); //Lo sabÃ­a. Mi visiÃ³n era una seÃ±al. Â¡Los huevos de la reina deben contener la potente secreciÃ³n!
+	AI_Output			(self, other,"Mis_2_PSI_Kalom_BringMCQEggs_Success_10_03"); //Â¡Excelente, con ella puedo crear una pociÃ³n para contactar con el Durmiente!
+	AI_Output			(other, self,"Mis_2_PSI_Kalom_BringMCQEggs_Success_15_04"); //Â¿QuÃ© hay de mi recompensa?
+	AI_Output			(self, other,"Mis_2_PSI_Kalom_BringMCQEggs_Success_10_05"); //Oh, sÃ­... Gracias.
 	AI_Output			(other, self,"Mis_2_PSI_Kalom_BringMCQEggs_Success_15_06"); //Me refiero a una recompensa TANGIBLE.
-	AI_Output			(self, other,"Mis_2_PSI_Kalom_BringMCQEggs_Success_10_07"); //Vale, vale. ¿Qué quieres?
+	AI_Output			(self, other,"Mis_2_PSI_Kalom_BringMCQEggs_Success_10_07"); //Vale, vale. Â¿QuÃ© quieres?
 	CorKalom_BringMCQBalls = LOG_SUCCESS;
 	B_GiveInvItems	(hero, self, ItAt_Crawlerqueen,3);
 	Npc_RemoveInvItems(self, ItAt_Crawlerqueen,3);
 	B_GiveXP			(XP_BringMCEggs);
-	B_LogEntry		(CH2_MCEggs,"Le he entregado a Cor Kalom tres huevos de reptador de la mina. Se mostró muy antipático, ¡y tuve que pedirle mi exigua recompensa!");
+	B_LogEntry		(CH2_MCEggs,"Le he entregado a Cor Kalom tres huevos de reptador de la mina. Se mostrÃ³ muy antipÃ¡tico, Â¡y tuve que pedirle mi exigua recompensa!");
 	Log_SetTopicStatus	(CH2_MCEggs,	LOG_SUCCESS);
 	
-	B_LogEntry	(CH1_GotoPsiCamp,"Creo que ya sé lo bastante acerca de los asuntos de la secta como para informar a Mordrag al respecto.");
-	B_LogEntry	(CH1_GotoPsi,"Creo que ya sé lo bastante acerca de los asuntos de la secta. Debo contárselo a Raven tan pronto como esté de vuelta en el Campamento Viejo.");
+	B_LogEntry	(CH1_GotoPsiCamp,"Creo que ya sÃ© lo bastante acerca de los asuntos de la secta como para informar a Mordrag al respecto.");
+	B_LogEntry	(CH1_GotoPsi,"Creo que ya sÃ© lo bastante acerca de los asuntos de la secta. Debo contÃ¡rselo a Raven tan pronto como estÃ© de vuelta en el Campamento Viejo.");
 	
 	Info_ClearChoices (Info_CorKalom_BringMCQBalls_Success);
 	Info_Addchoice(Info_CorKalom_BringMCQBalls_Success,"Una runa.",Info_CorKalom_BringMCQBalls_Success_RUNE);
 	Info_Addchoice(Info_CorKalom_BringMCQBalls_Success,"Un arma.",Info_CorKalom_BringMCQBalls_Success_WAFFE);
-	Info_Addchoice(Info_CorKalom_BringMCQBalls_Success,"Una poción curativa.",Info_CorKalom_BringMCQBalls_Success_HEAL);
+	Info_Addchoice(Info_CorKalom_BringMCQBalls_Success,"Una pociÃ³n curativa.",Info_CorKalom_BringMCQBalls_Success_HEAL);
 	Info_Addchoice(Info_CorKalom_BringMCQBalls_Success,"Mineral.",Info_CorKalom_BringMCQBalls_Success_ORE);
 	Info_Addchoice(Info_CorKalom_BringMCQBalls_Success,"Mana.",Info_CorKalom_BringMCQBalls_Success_MANA);
 };
 func void Info_CorKalom_BringMCQBalls_Success_RUNE ()
 {
 	AI_Output			(other, self,"Mis_2_PSI_Kalom_BringMCQEggs_Success_RUNE_15_01"); //Una runa.
-	AI_Output			(self, other,"Mis_2_PSI_Kalom_BringMCQEggs_Success_RUNE_10_02"); //¡Que esta runa ilumine tu camino!
+	AI_Output			(self, other,"Mis_2_PSI_Kalom_BringMCQEggs_Success_RUNE_10_02"); //Â¡Que esta runa ilumine tu camino!
 	CreateInvItem		(self,ItArRuneLight);
 	B_GiveInvItems      (self, hero, ItArRuneLight, 1);
 	Info_ClearChoices	(Info_CorKalom_BringMCQBalls_Success);
@@ -921,15 +921,15 @@ func void Info_CorKalom_BringMCQBalls_Success_RUNE ()
 func void Info_CorKalom_BringMCQBalls_Success_WAFFE ()
 {
 	AI_Output			(other, self,"Mis_2_PSI_Kalom_BringMCQEggs_Success_WAFFE_15_01"); //Un arma.
-	AI_Output			(self, other,"Mis_2_PSI_Kalom_BringMCQEggs_Success_WAFFE_10_02"); //¡Que esta arma destruya a tus enemigos!
+	AI_Output			(self, other,"Mis_2_PSI_Kalom_BringMCQEggs_Success_WAFFE_10_02"); //Â¡Que esta arma destruya a tus enemigos!
 	CreateInvItem		(self, ItMw_1H_Mace_War_03);
 	B_GiveInvItems      (self, hero, ItMw_1H_Mace_War_03, 1);
 	Info_ClearChoices	(Info_CorKalom_BringMCQBalls_Success);
 };	
 func void Info_CorKalom_BringMCQBalls_Success_HEAL()
 {
-	AI_Output			(other, self,"Mis_2_PSI_Kalom_BringMCQEggs_Success_HEAL_15_01"); //Una poción curativa.
-	AI_Output			(self, other,"Mis_2_PSI_Kalom_BringMCQEggs_Success_HEAL_10_02"); //¡Que esta poción prolongue tu vida!
+	AI_Output			(other, self,"Mis_2_PSI_Kalom_BringMCQEggs_Success_HEAL_15_01"); //Una pociÃ³n curativa.
+	AI_Output			(self, other,"Mis_2_PSI_Kalom_BringMCQEggs_Success_HEAL_10_02"); //Â¡Que esta pociÃ³n prolongue tu vida!
 	CreateInvItem		(self,ItFo_Potion_Health_Perma_01);
 	B_GiveInvItems      (self, hero, ItFo_Potion_Health_Perma_01, 1);
 	Info_ClearChoices	(Info_CorKalom_BringMCQBalls_Success);
@@ -937,7 +937,7 @@ func void Info_CorKalom_BringMCQBalls_Success_HEAL()
 func void Info_CorKalom_BringMCQBalls_Success_ORE ()
 {
 	AI_Output			(other, self,"Mis_2_PSI_Kalom_BringMCQEggs_Success_ORE_15_01"); //Mineral.
-	AI_Output			(self, other,"Mis_2_PSI_Kalom_BringMCQEggs_Success_ORE_10_02"); //¡Acepta este mineral como muestra de gratitud de toda la Hermandad!
+	AI_Output			(self, other,"Mis_2_PSI_Kalom_BringMCQEggs_Success_ORE_10_02"); //Â¡Acepta este mineral como muestra de gratitud de toda la Hermandad!
 	CreateInvItems		(self,ItMinugget,100);
 	B_GiveInvItems      (self, hero, ItMinugget, 100);
 	Info_ClearChoices	(Info_CorKalom_BringMCQBalls_Success);
@@ -945,7 +945,7 @@ func void Info_CorKalom_BringMCQBalls_Success_ORE ()
 func void Info_CorKalom_BringMCQBalls_Success_MANA()
 {
 	AI_Output			(other, self,"Mis_2_PSI_Kalom_BringMCQEggs_Success_MANA_15_01"); //Mana.
-	AI_Output			(self, other,"Mis_2_PSI_Kalom_BringMCQEggs_Success_MANA_10_02"); //¡Que esta poción refuerce la magia que llevas en tu interior!
+	AI_Output			(self, other,"Mis_2_PSI_Kalom_BringMCQEggs_Success_MANA_10_02"); //Â¡Que esta pociÃ³n refuerce la magia que llevas en tu interior!
 	CreateInvItem		(self,ItFo_Potion_Mana_Perma_01);
 	B_GiveInvItems      (self, hero, ItFo_Potion_Mana_Perma_01, 1);
 	Info_ClearChoices	(Info_CorKalom_BringMCQBalls_Success);
@@ -960,7 +960,7 @@ INSTANCE Info_CorKalom_BringBook (C_INFO)
 	condition	= Info_CorKalom_BringBook_Condition;
 	information	= Info_CorKalom_BringBook_Info;
 	permanent	= 0;
-	description = "¿Podemos empezar a convocar al Durmiente?";
+	description = "Â¿Podemos empezar a convocar al Durmiente?";
 };
 
 func INT Info_CorKalom_BringBook_Condition()
@@ -972,28 +972,28 @@ func INT Info_CorKalom_BringBook_Condition()
 };
 func VOID Info_CorKalom_BringBook_Info()
 {
-	AI_Output			(other, self,"Info_CorKalom_BringBook_Info_15_01"); //¿Podemos empezar a convocar al Durmiente?
-	AI_Output			(self, other,"Info_CorKalom_BringBook_Info_10_02"); //¡No! Aún no he encontrado el modo de cargar el foco.
+	AI_Output			(other, self,"Info_CorKalom_BringBook_Info_15_01"); //Â¿Podemos empezar a convocar al Durmiente?
+	AI_Output			(self, other,"Info_CorKalom_BringBook_Info_10_02"); //Â¡No! AÃºn no he encontrado el modo de cargar el foco.
 	AI_Output			(self, other,"Info_CorKalom_BringBook_Info_10_03"); //Nos falta el conocimiento antiguo acerca de estos artefactos.
-	AI_Output			(other, self,"Info_CorKalom_BringBook_Info_15_04"); //¿Quieres decir que recogí los huevos para nada?
-	AI_Output			(self, other,"Info_CorKalom_BringBook_Info_10_05"); //No, escúchame. Hay un almanaque que contiene lo que necesitamos saber.
+	AI_Output			(other, self,"Info_CorKalom_BringBook_Info_15_04"); //Â¿Quieres decir que recogÃ­ los huevos para nada?
+	AI_Output			(self, other,"Info_CorKalom_BringBook_Info_10_05"); //No, escÃºchame. Hay un almanaque que contiene lo que necesitamos saber.
 	AI_Output			(self, other,"Info_CorKalom_BringBook_Info_10_06"); //Compramos el libro al mago del fuego Corristo del Campamento Viejo.
 	AI_Output			(self, other,"Info_CorKalom_BringBook_Info_10_07"); //Sin embargo, fue robado cuando trataban de traerlo desde el Campamento Viejo.
-	AI_Output			(self, other,"Info_CorKalom_BringBook_Info_10_08"); //Había encargado a Talas, un novicio, que recogiera el libro, pero le robaron.
-	AI_Output			(self, other,"Info_CorKalom_BringBook_Info_10_09"); //Me defraudó, pero le he dado otra oportunidad. Debe recuperar el almanaque perdido.
-	AI_Output			(self, other,"Info_CorKalom_BringBook_Info_10_10"); //Habla con él. Necesitará toda la ayuda que pueda recibir.
+	AI_Output			(self, other,"Info_CorKalom_BringBook_Info_10_08"); //HabÃ­a encargado a Talas, un novicio, que recogiera el libro, pero le robaron.
+	AI_Output			(self, other,"Info_CorKalom_BringBook_Info_10_09"); //Me defraudÃ³, pero le he dado otra oportunidad. Debe recuperar el almanaque perdido.
+	AI_Output			(self, other,"Info_CorKalom_BringBook_Info_10_10"); //Habla con Ã©l. NecesitarÃ¡ toda la ayuda que pueda recibir.
 	
 	CorKalom_BringBook = LOG_RUNNING;
 	Log_CreateTopic		(CH2_Book,	LOG_MISSION);
 	Log_SetTopicStatus	(CH2_Book,	LOG_RUNNING);
-	B_LogEntry		(CH2_Book,"Cor Kalom necesita un último objeto para la gran invocación del Durmiente. Se trata de un libro acerca del uso de los focos de piedra. El novicio Talas fue tan patoso que los trasgos robaron el almanaque. Justo ahora está buscando a alguien en el patio delantero que le ayude a recuperar el libro.");
+	B_LogEntry		(CH2_Book,"Cor Kalom necesita un Ãºltimo objeto para la gran invocaciÃ³n del Durmiente. Se trata de un libro acerca del uso de los focos de piedra. El novicio Talas fue tan patoso que los trasgos robaron el almanaque. Justo ahora estÃ¡ buscando a alguien en el patio delantero que le ayude a recuperar el libro.");
 
 	Info_ClearChoices (Info_CorKalom_BringBook);
 	
 	Info_Addchoice(Info_CorKalom_BringBook,DIALOG_BACK						,Info_CorKalom_BringBook_BACK);
-	Info_Addchoice(Info_CorKalom_BringBook,"¿Qué conseguiré a cambio?",Info_CorKalom_BringBook_EARN);
-	Info_Addchoice(Info_CorKalom_BringBook,"¿Quién robó el almanaque?",Info_CorKalom_BringBook_WHO);
-	Info_Addchoice(Info_CorKalom_BringBook,"¿Dónde puedo encontrar a Talas?",Info_CorKalom_BringBook_WHERE);
+	Info_Addchoice(Info_CorKalom_BringBook,"Â¿QuÃ© conseguirÃ© a cambio?",Info_CorKalom_BringBook_EARN);
+	Info_Addchoice(Info_CorKalom_BringBook,"Â¿QuiÃ©n robÃ³ el almanaque?",Info_CorKalom_BringBook_WHO);
+	Info_Addchoice(Info_CorKalom_BringBook,"Â¿DÃ³nde puedo encontrar a Talas?",Info_CorKalom_BringBook_WHERE);
 };
 func void Info_CorKalom_BringBook_BACK ()
 {
@@ -1002,18 +1002,18 @@ func void Info_CorKalom_BringBook_BACK ()
 
 func void Info_CorKalom_BringBook_WHERE ()
 {
-	AI_Output			(other, self,"Info_CorKalom_BringBook_Where_15_01"); //¿Dónde puedo encontrar a Talas?
-	AI_Output			(self, other,"Info_CorKalom_BringBook_Where_10_02"); //Está en el atrio de la colina del templo, intentando conseguir que le ayude alguien.
+	AI_Output			(other, self,"Info_CorKalom_BringBook_Where_15_01"); //Â¿DÃ³nde puedo encontrar a Talas?
+	AI_Output			(self, other,"Info_CorKalom_BringBook_Where_10_02"); //EstÃ¡ en el atrio de la colina del templo, intentando conseguir que le ayude alguien.
 };
 func void Info_CorKalom_BringBook_WHO ()
 {
-	AI_Output			(other, self,"Info_CorKalom_BringBook_Who_15_01"); //¿Quién robó el almanaque?
+	AI_Output			(other, self,"Info_CorKalom_BringBook_Who_15_01"); //Â¿QuiÃ©n robÃ³ el almanaque?
 	AI_Output			(self, other,"Info_CorKalom_BringBook_Who_10_02"); //Talas me dijo que fue asaltado por trasgos negros.
 };
 func void Info_CorKalom_BringBook_EARN ()
 {
-	AI_Output			(other, self,"Info_CorKalom_BringBook_Earn_15_01"); //¿Qué conseguiré a cambio?
-	AI_Output			(self, other,"Info_CorKalom_BringBook_Earn_10_02"); //¿Acaso no he demostrado ya mi generosidad? Recibirás una recompensa justa.
+	AI_Output			(other, self,"Info_CorKalom_BringBook_Earn_15_01"); //Â¿QuÃ© conseguirÃ© a cambio?
+	AI_Output			(self, other,"Info_CorKalom_BringBook_Earn_10_02"); //Â¿Acaso no he demostrado ya mi generosidad? RecibirÃ¡s una recompensa justa.
 };
 
 // ------------------------------ SUCCESS ----------------------------------
@@ -1039,16 +1039,16 @@ FUNC VOID Info_CorKalom_BringBook_Success_Info()
 {	
 	AI_Output			(other, self,"Info_CorKalom_BringBook_Success_15_01"); //He encontrado el libro.
 	AI_Output			(self, other,"Info_CorKalom_BringBook_Success_10_02"); //Buen trabajo. Tenemos todo lo que necesitamos.
-	AI_Output			(self, other,"Info_CorKalom_BringBook_Success_10_03"); //Ahora acabaré los preparativos.
-	AI_Output			(other, self,"Info_CorKalom_BringBook_Success_15_04"); //¿Dónde tendrá lugar la invocación?
-	AI_Output			(self, other,"Info_CorKalom_BringBook_Success_10_05"); //Espera hasta la noche, y ven al patio del templo. Nos reuniremos aquí para invocar al poderoso Durmiente.
+	AI_Output			(self, other,"Info_CorKalom_BringBook_Success_10_03"); //Ahora acabarÃ© los preparativos.
+	AI_Output			(other, self,"Info_CorKalom_BringBook_Success_15_04"); //Â¿DÃ³nde tendrÃ¡ lugar la invocaciÃ³n?
+	AI_Output			(self, other,"Info_CorKalom_BringBook_Success_10_05"); //Espera hasta la noche, y ven al patio del templo. Nos reuniremos aquÃ­ para invocar al poderoso Durmiente.
 
 	B_GiveInvItems	    (hero, self, ItWrFokusbuch, 1);
 	Npc_RemoveInvItem   (self,ItWrFokusbuch);
 	B_GiveXP			(XP_BringBook);
 	CorKalom_BringBook = LOG_SUCCESS;
 
-	B_LogEntry		(CH2_Book,"Tras entregarle el almanaque a Cor Kalom, éste prepara a la Hermandad para la gran invocación del Durmiente. Ésta tendrá lugar en el patio delantero del templo durante la noche.");
+	B_LogEntry		(CH2_Book,"Tras entregarle el almanaque a Cor Kalom, Ã©ste prepara a la Hermandad para la gran invocaciÃ³n del Durmiente. Ã‰sta tendrÃ¡ lugar en el patio delantero del templo durante la noche.");
 	Log_SetTopicStatus	(CH2_Book,	LOG_SUCCESS);
 
 	//-------- Gurus und Novizen auf dem Tempelvorplatz versammeln --------
@@ -1066,7 +1066,7 @@ instance Info_CorKalom_Belohnung (C_INFO)
 	condition	= Info_CorKalom_Belohnung_Condition;
 	information	= Info_CorKalom_Belohnung_Info;
 	permanent	= 0;
-	description = "¿Qué hay de mi pago?";
+	description = "Â¿QuÃ© hay de mi pago?";
 };                       
 
 FUNC INT Info_CorKalom_Belohnung_Condition()
@@ -1079,13 +1079,13 @@ FUNC INT Info_CorKalom_Belohnung_Condition()
 
 FUNC VOID Info_CorKalom_Belohnung_Info()
 {
-	AI_Output			(other, self,"Info_CorKalom_Belohnung_15_00");//¿Qué hay de mi pago?
-	AI_Output			(self, other,"Info_CorKalom_Belohnung_10_01");//¿Qué quieres?
+	AI_Output			(other, self,"Info_CorKalom_Belohnung_15_00");//Â¿QuÃ© hay de mi pago?
+	AI_Output			(self, other,"Info_CorKalom_Belohnung_10_01");//Â¿QuÃ© quieres?
 	
 	Info_ClearChoices (Info_CorKalom_Belohnung);
 	Info_Addchoice(Info_CorKalom_Belohnung,"Un pergamino de conjuro.",Info_CorKalom_Belohnung_SCROLL);
 	Info_Addchoice(Info_CorKalom_Belohnung,"Mineral.",Info_CorKalom_Belohnung_ORE);
-	Info_Addchoice(Info_CorKalom_Belohnung,"Poción de mana.",Info_CorKalom_Belohnung_MANA);
+	Info_Addchoice(Info_CorKalom_Belohnung,"PociÃ³n de mana.",Info_CorKalom_Belohnung_MANA);
 
 };
 func void Info_CorKalom_Belohnung_SCROLL()
@@ -1099,7 +1099,7 @@ func void Info_CorKalom_Belohnung_SCROLL()
 func void Info_CorKalom_Belohnung_ORE ()
 {
 	AI_Output			(other, self,"Info_CorKalom_Belohnung_ORE_15_00");//Dame mineral.
-	AI_Output			(self, other,"Info_CorKalom_Belohnung_ORE_10_01");//Esto debería satisfacer tu codicia de mineral.
+	AI_Output			(self, other,"Info_CorKalom_Belohnung_ORE_10_01");//Esto deberÃ­a satisfacer tu codicia de mineral.
 	CreateInvItems  (self,ItMinugget,300);
 	B_GiveInvItems  (self,hero,ItMinugget,300);
 	Info_ClearChoices (Info_CorKalom_Belohnung);
@@ -1107,7 +1107,7 @@ func void Info_CorKalom_Belohnung_ORE ()
 func void Info_CorKalom_Belohnung_MANA()
 {
 	AI_Output						(other, self,"Info_CorKalom_Belohnung_MANA_15_00");//Pociones de mana.
-	AI_Output						(self, other,"Info_CorKalom_Belohnung_MANA_10_01");//¡Que estas pociones te den fuerza!
+	AI_Output						(self, other,"Info_CorKalom_Belohnung_MANA_10_01");//Â¡Que estas pociones te den fuerza!
 	CreateInvItems 		(self,ItFo_Potion_Mana_02,5);
 	B_GiveInvItems      (self,hero,ItFo_Potion_Mana_02,5);
 	Info_ClearChoices	(Info_CorKalom_Belohnung);

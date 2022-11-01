@@ -24,7 +24,7 @@ FUNC VOID B_Kapitelwechsel (VAR INT neues_Kapitel)
 	{
 		PrintDebugNpc	(PD_MISSION, "---=== DAS ZWEITE KAPITEL ===---");
 
-		//-------- H‰ndler auff¸llen --------
+		//-------- H√§ndler auff√ºllen --------
 		B_Give_FiskChapter2Weapons ();
 		B_Give_DarrionChapter2Weapons ();
 		B_Give_SharkyChapter2Weapons ();
@@ -36,7 +36,7 @@ FUNC VOID B_Kapitelwechsel (VAR INT neues_Kapitel)
 		B_Give_WolfChapter2Weapons();
 		B_Give_SkipChapter2Weapons ();
 	
-		//-------- Oberwelt-Monster nochmal "nachf¸llen" --------	
+		//-------- Oberwelt-Monster nochmal "nachf√ºllen" --------	
 		B_Story_RespawnOW();
 		
 		//-------- InExtremo vorbereiten --------
@@ -52,7 +52,7 @@ FUNC VOID B_Kapitelwechsel (VAR INT neues_Kapitel)
 	{
 		PrintDebugNpc	(PD_MISSION, "---=== DAS DRITTE KAPITEL ===---");
 
-		//-------- InExtremo wegr‰umen --------
+		//-------- InExtremo wegr√§umen --------
 		if(InExtremoOnStage == TRUE)
 		{	
 			//B_InExtremoStopMusic();	
@@ -64,10 +64,10 @@ FUNC VOID B_Kapitelwechsel (VAR INT neues_Kapitel)
 		CorKalom_BringMCQBalls 	= LOG_SUCCESS;
 		CorKalom_BringBook 		= LOG_SUCCESS;
 
-		//-------- Oberwelt-Monster nochmal "nachf¸llen" --------	
+		//-------- Oberwelt-Monster nochmal "nachf√ºllen" --------	
 		//B_Story_RespawnOW();
 		
-		//-------- Waffenh‰ndler auffrischen --------
+		//-------- Waffenh√§ndler auffrischen --------
 		B_Give_FiskChapter3Weapons ();
 		B_Give_DarrionChapter3Weapons ();
 		B_Give_SharkyChapter3Weapons ();
@@ -85,13 +85,13 @@ FUNC VOID B_Kapitelwechsel (VAR INT neues_Kapitel)
 		//-------- Y'Berion ins Koma fallen lassen --------
 		var C_NPC YBerion;
 		YBerion = Hlp_GetNpc(Gur_1200_YBerion);
-		YBerion.flags = 0;					// IMMORTAL-Flag lˆschen
+		YBerion.flags = 0;					// IMMORTAL-Flag l√∂schen
 		Npc_ChangeAttribute	(YBerion, ATR_HITPOINTS, -YBerion.attribute[ATR_HITPOINTS_MAX]+1);
 		YBerion.flags = NPC_FLAG_IMMORTAL;	// IMMORTAL-Flag wieder setzen
 		Npc_ExchangeRoutine (YBerion,	"DRAINED");
 		AI_ContinueRoutine	(YBerion);
 		
-		//---GROSSE BESCHW÷RUNG TRIGGER NPCS ----------------------- M.F.
+		//---GROSSE BESCHW√ñRUNG TRIGGER NPCS ----------------------- M.F.
 		//---HIER WERDEN DIE IN DEN TRIGGERINFOS GESETZTEN WAHRNEHMUNGEN WIEDER DEFAULT GESETZT--- M.F.
 		var C_NPC Templer;		Templer	 	 = Hlp_GetNpc	(TPL_1431_Templer);
 		Templer.senses =		hero.senses; 
@@ -123,7 +123,7 @@ FUNC VOID B_Kapitelwechsel (VAR INT neues_Kapitel)
 		
 		B_ChangeGuild    (STT_336_Cavalorn,GIL_NONE);
 
-		//-------- Waffenh‰ndler auffrischen --------
+		//-------- Waffenh√§ndler auffrischen --------
 		B_Give_ScorpioChapter4Weapons ();
 		B_Give_DarrionChapter4Weapons ();
 		B_Give_SharkyChapter4Weapons ();
@@ -136,27 +136,27 @@ FUNC VOID B_Kapitelwechsel (VAR INT neues_Kapitel)
 		//-------- globale Variablen --------
 		Saturas_BringFoci = 5;
 
-		//-------- Missionsgegenst‰nde --------
+		//-------- Missionsgegenst√§nde --------
 		CreateInvItem		(hero,	ItArRuneTeleport2);
 
-		//-------- Tagebucheintr‰ge --------
+		//-------- Tagebucheintr√§ge --------
 		Log_CreateTopic		(CH4_Firemages,	LOG_MISSION);
 		Log_SetTopicStatus	(CH4_Firemages,	LOG_RUNNING);
-		B_LogEntry			(CH4_Firemages,"Saturas, el lÌder de los Magos del Agua, me ha pedido un ˙ltimo favor. Para volar el montÌculo de mineral necesita la ayuda de los Magos del Fuego del Campamento Viejo. No sÈ cÛmo convencer a los magos de GÛmez de que tomen parte en un plan que destruir· los cimientos de sus poderes, pero ya pensarÈ en algo.");
+		B_LogEntry			(CH4_Firemages,"Saturas, el l√≠der de los Magos del Agua, me ha pedido un √∫ltimo favor. Para volar el mont√≠culo de mineral necesita la ayuda de los Magos del Fuego del Campamento Viejo. No s√© c√≥mo convencer a los magos de G√≥mez de que tomen parte en un plan que destruir√° los cimientos de sus poderes, pero ya pensar√© en algo.");
 
 		//-------- Szene am Damm --------
 		B_ExchangeRoutine	(SLD_700_LEE,"DAMNPAST"); 
 		B_ExchangeRoutine	(BAU_935_HOMER,"DAMNPAST"); 
 		
-		//-------- Spielergilde ‰ndern --------
+		//-------- Spielergilde √§ndern --------
 		oldHeroGuild = Npc_GetTrueGuild(hero);
 		if	C_NpcBelongsToOldCamp(hero)
 		{
-			Npc_SetTrueGuild(hero,	GIL_NONE);		// "Ausgestoﬂener" aus dem Alten Lager
+			Npc_SetTrueGuild(hero,	GIL_NONE);		// "Ausgesto√üener" aus dem Alten Lager
 			hero.guild = GIL_NONE;
 		};
 		
-		//-------- AL-Tore schlieﬂen --------
+		//-------- AL-Tore schlie√üen --------
 		B_ExchangeRoutine	(GRD_228_Gardist, "FMTaken");	//Hinteres Tor
 		B_ExchangeRoutine	(GRD_230_Gardist, "FMTaken");	//Haupttor
 		B_ExchangeRoutine	(GRD_280_Gardist, "FMTaken");	//Inneres Tor
@@ -166,44 +166,44 @@ FUNC VOID B_Kapitelwechsel (VAR INT neues_Kapitel)
 		B_ClearImmortal		(Grd_230_Gardist);              //Haupttor    
 		B_ClearImmortal		(Grd_280_Gardist);              //Inneres Tor 
 
-		//-------- Feuermagier tˆten --------
+		//-------- Feuermagier t√∂ten --------
 		B_KillNpc			(Kdf_400_Rodriguez);	
 		B_KillNpc			(Kdf_401_Damarok);	
 		B_KillNpc			(Kdf_402_Corristo);	
 		B_KillNpc			(Kdf_403_Drago);	
 		B_KillNpc			(Kdf_405_Torrez);
 
-		//-------- G‰ste im Alten Lager tˆten --------
+		//-------- G√§ste im Alten Lager t√∂ten --------
 		B_KillNpc			(Nov_1330_BaalParvez);
 		B_KillNpc			(Nov_1331_BaalTaran);
 		B_KillNpc			(Tpl_1422_GorHanis);
 		B_KillNpc			(Sld_729_Kharim);
 
-		//-------- TAs von Diego und Milten ‰ndern --------
+		//-------- TAs von Diego und Milten √§ndern --------
 		B_ExchangeRoutine	(PC_Thief,	"OCWait");
 		B_ExchangeRoutine	(PC_Mage,	"OCWait");
-		B_ChangeGuild		(PC_Thief,	GIL_KDF);		// "Ausgestoﬂener" aus dem Alten Lager
+		B_ChangeGuild		(PC_Thief,	GIL_KDF);		// "Ausgesto√üener" aus dem Alten Lager
 		B_SetPermAttitude	(PC_Thief,	ATT_FRIENDLY);
 		B_SetPermAttitude	(PC_Mage,	ATT_FRIENDLY);
 		
-		//-------- permanente Attit¸den ‰ndern --------
+		//-------- permanente Attit√ºden √§ndern --------
 		Wld_ExchangeGuildAttitudes	("GIL_ATTITUDES_FMTAKEN");
 		B_InitMonsterAttitudes		();
 
 		//-------- Kampfgruppe vor Haupttor --------
-		B_ExchangeRoutine	(GRD_255_Fletcher,	"FMTaken");	// Verst‰rkung vor das Haupttor (Anf¸hrer)
-		B_ExchangeRoutine	(GRD_252_Gardist,	"FMTaken");	// Verst‰rkung vor das Haupttor
-		B_ExchangeRoutine	(GRD_253_Gardist,	"FMTaken");	// Verst‰rkung vor das Haupttor
-		B_ExchangeRoutine	(GRD_244_Gardist,	"FMTaken");	// Verst‰rkung vor das Haupttor (Fernk‰mpfer)
-		B_ExchangeRoutine	(GRD_214_Torwache,	"FMTaken");	// regul‰re Wache am Haupttor
-		B_ExchangeRoutine	(GRD_215_Torwache,	"FMTaken");	// regul‰re Wache am Haupttor
+		B_ExchangeRoutine	(GRD_255_Fletcher,	"FMTaken");	// Verst√§rkung vor das Haupttor (Anf√ºhrer)
+		B_ExchangeRoutine	(GRD_252_Gardist,	"FMTaken");	// Verst√§rkung vor das Haupttor
+		B_ExchangeRoutine	(GRD_253_Gardist,	"FMTaken");	// Verst√§rkung vor das Haupttor
+		B_ExchangeRoutine	(GRD_244_Gardist,	"FMTaken");	// Verst√§rkung vor das Haupttor (Fernk√§mpfer)
+		B_ExchangeRoutine	(GRD_214_Torwache,	"FMTaken");	// regul√§re Wache am Haupttor
+		B_ExchangeRoutine	(GRD_215_Torwache,	"FMTaken");	// regul√§re Wache am Haupttor
 
 		//-------- Kampfgruppe vor Hinterem Tor --------
-		B_ExchangeRoutine	(GRD_233_Bloodwyn,	"FMTaken");	// Verst‰rkung vor das Hinterem Tor (Anf¸hrer)
-		B_ExchangeRoutine	(GRD_232_Gardist,	"FMTaken");	// Verst‰rkung vor das Hinterem Tor
-		B_ExchangeRoutine	(GRD_229_Gardist,	"FMTaken");	// Verst‰rkung vor das Hinterem Tor (Fernk‰mpfer)
-		B_ExchangeRoutine	(GRD_216_Torwache,	"FMTaken");	// regul‰re Wache am Hinteren Tor
-		B_ExchangeRoutine	(GRD_217_Torwache,	"FMTaken");	// regul‰re Wache am Hinteren Tor
+		B_ExchangeRoutine	(GRD_233_Bloodwyn,	"FMTaken");	// Verst√§rkung vor das Hinterem Tor (Anf√ºhrer)
+		B_ExchangeRoutine	(GRD_232_Gardist,	"FMTaken");	// Verst√§rkung vor das Hinterem Tor
+		B_ExchangeRoutine	(GRD_229_Gardist,	"FMTaken");	// Verst√§rkung vor das Hinterem Tor (Fernk√§mpfer)
+		B_ExchangeRoutine	(GRD_216_Torwache,	"FMTaken");	// regul√§re Wache am Hinteren Tor
+		B_ExchangeRoutine	(GRD_217_Torwache,	"FMTaken");	// regul√§re Wache am Hinteren Tor
 		
 		//------------ Die Templer gehen nicht mehr zur Alten Mine ---------------------
 		
@@ -220,9 +220,9 @@ FUNC VOID B_Kapitelwechsel (VAR INT neues_Kapitel)
 	//***************************************************************************
 	else if (neues_Kapitel == 5)
 	{
-		PrintDebugNpc	(PD_MISSION, "---=== DAS F‹NFTE KAPITEL ===---");
+		PrintDebugNpc	(PD_MISSION, "---=== DAS F√úNFTE KAPITEL ===---");
 
-		//-------- H‰ndler auff¸llen --------
+		//-------- H√§ndler auff√ºllen --------
 		B_Give_ScorpioChapter5Weapons ();
 		B_Give_DarrionChapter5Weapons ();
 		B_Give_SharkyChapter5Weapons ();
@@ -240,10 +240,10 @@ FUNC VOID B_Kapitelwechsel (VAR INT neues_Kapitel)
 		B_Give_CavalornChapter6Weapons ();
 		B_Give_WolfChapter6Weapons();		
 
-		//-------- Tagebucheintr‰ge --------
-		B_LogEntry		(CH4_EnterTemple,	"Gorn no confiaba demasiado en que el ULU-MULU me fuera ˙til en la ciudad orca. No importa; de todos modos, pronto descubrirÈ si estaba en lo cierto.");
+		//-------- Tagebucheintr√§ge --------
+		B_LogEntry		(CH4_EnterTemple,	"Gorn no confiaba demasiado en que el ULU-MULU me fuera √∫til en la ciudad orca. No importa; de todos modos, pronto descubrir√© si estaba en lo cierto.");
 
-		//-------- Oberwelt-Monster nochmal "nachf¸llen" --------	
+		//-------- Oberwelt-Monster nochmal "nachf√ºllen" --------	
 		B_Story_RespawnOW();
 		
 		IntroduceChapter (KAPWECHSEL_5,KAPWECHSEL_5_TEXT,"chapter5.tga","levelup.wav", 6000);
@@ -256,7 +256,7 @@ FUNC VOID B_Kapitelwechsel (VAR INT neues_Kapitel)
 	{
 		PrintDebugNpc	(PD_MISSION, "---=== DAS SECHSTE KAPITEL ===---");
 
-		//-------- H‰ndler auff¸llen --------
+		//-------- H√§ndler auff√ºllen --------
 		B_Give_XardasChapter6Runes ();
 
 		//-------- URIZIEL aufladen --------

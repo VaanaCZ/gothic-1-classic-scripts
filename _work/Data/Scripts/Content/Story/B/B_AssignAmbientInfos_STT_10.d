@@ -51,27 +51,27 @@ FUNC INT Info_Stt_10_EinerVonEuchWerden_Condition()
 FUNC VOID Info_Stt_10_EinerVonEuchWerden_Info()
 {
 	AI_Output(other,self,"Info_Stt_10_EinerVonEuchWerden_15_00"); //Quiero ser una Sombra.
-	AI_Output(self,other,"Info_Stt_10_EinerVonEuchWerden_10_01"); //¿Eh? ¿Has hablado ya con Diego?
+	AI_Output(self,other,"Info_Stt_10_EinerVonEuchWerden_10_01"); //Â¿Eh? Â¿Has hablado ya con Diego?
 	
 	var C_NPC Diego;		Diego 	= Hlp_GetNpc(PC_Thief);
 	Diego.aivar[AIV_FINDABLE] = TRUE;
 	
 	Info_ClearChoices(Info_Stt_10_EinerVonEuchWerden);
 	Info_AddChoice(Info_Stt_10_EinerVonEuchWerden,"No.", Info_Stt_10_EinerVonEuchWerden_Nein);
-	Info_AddChoice(Info_Stt_10_EinerVonEuchWerden,"Sí.", Info_Stt_10_EinerVonEuchWerden_Ja);
+	Info_AddChoice(Info_Stt_10_EinerVonEuchWerden,"SÃ­.", Info_Stt_10_EinerVonEuchWerden_Ja);
 };
 
 FUNC VOID Info_Stt_10_EinerVonEuchWerden_Nein()
 {
-	AI_Output(other,self,"Info_Stt_10_EinerVonEuchWerden_Nein_15_00"); //Todavía no.
-	AI_Output(self,other,"Info_Stt_10_EinerVonEuchWerden_Nein_10_01"); //Entonces hazlo. Lo encontrarás en la entrada del castillo.
+	AI_Output(other,self,"Info_Stt_10_EinerVonEuchWerden_Nein_15_00"); //TodavÃ­a no.
+	AI_Output(self,other,"Info_Stt_10_EinerVonEuchWerden_Nein_10_01"); //Entonces hazlo. Lo encontrarÃ¡s en la entrada del castillo.
 	Info_ClearChoices(Info_Stt_10_EinerVonEuchWerden);
 };
 
 FUNC VOID Info_Stt_10_EinerVonEuchWerden_Ja()
 {
-	AI_Output(other,self,"Info_Stt_10_EinerVonEuchWerden_Ja_15_00"); //Sí.
-	AI_Output(self,other,"Info_Stt_10_EinerVonEuchWerden_Ja_10_01"); //Bien. Entonces hazle caso. Yo se lo hice y me fue bien. Bueno, más o menos, en realidad.
+	AI_Output(other,self,"Info_Stt_10_EinerVonEuchWerden_Ja_15_00"); //SÃ­.
+	AI_Output(self,other,"Info_Stt_10_EinerVonEuchWerden_Ja_10_01"); //Bien. Entonces hazle caso. Yo se lo hice y me fue bien. Bueno, mÃ¡s o menos, en realidad.
 	Info_ClearChoices(Info_Stt_10_EinerVonEuchWerden);
 };
 
@@ -85,7 +85,7 @@ INSTANCE Info_Stt_10_WichtigePersonen(C_INFO)
 	condition	= Info_Stt_10_WichtigePersonen_Condition;
 	information	= Info_Stt_10_WichtigePersonen_Info;
 	permanent	= 1;
-	description = "¿A qué gente debo conocer por aquí?";
+	description = "Â¿A quÃ© gente debo conocer por aquÃ­?";
 };                       
 
 FUNC INT Info_Stt_10_WichtigePersonen_Condition()
@@ -95,8 +95,8 @@ FUNC INT Info_Stt_10_WichtigePersonen_Condition()
 
 FUNC VOID Info_Stt_10_WichtigePersonen_Info()
 {
-	AI_Output(other,self,"Info_Stt_10_WichtigePersonen_15_00"); //¿A qué gente debo conocer por aquí?
-	AI_Output(self,other,"Info_Stt_10_WichtigePersonen_10_01"); //Si tienes problemas con los guardias, ve a ver a Gravo. Lo encontrarás en el estanque junto a la puerta del castillo. Se encarga de los tipos que se meten en líos. Sucede más rápido que lo que te esperas, sobre todo con los nuevos.
+	AI_Output(other,self,"Info_Stt_10_WichtigePersonen_15_00"); //Â¿A quÃ© gente debo conocer por aquÃ­?
+	AI_Output(self,other,"Info_Stt_10_WichtigePersonen_10_01"); //Si tienes problemas con los guardias, ve a ver a Gravo. Lo encontrarÃ¡s en el estanque junto a la puerta del castillo. Se encarga de los tipos que se meten en lÃ­os. Sucede mÃ¡s rÃ¡pido que lo que te esperas, sobre todo con los nuevos.
 };
 
 // *************************************************************************
@@ -109,7 +109,7 @@ INSTANCE Info_Stt_10_DasLager(C_INFO)
 	condition	= Info_Stt_10_DasLager_Condition;
 	information	= Info_Stt_10_DasLager_Info;
 	permanent	= 1;
-	description = "¿Qué puedes decirme del campamento?";
+	description = "Â¿QuÃ© puedes decirme del campamento?";
 };                       
 
 FUNC INT Info_Stt_10_DasLager_Condition()
@@ -119,9 +119,9 @@ FUNC INT Info_Stt_10_DasLager_Condition()
 
 FUNC VOID Info_Stt_10_DasLager_Info()
 {
-	AI_Output(other,self,"Info_Stt_10_DasLager_15_00"); //¿Qué puedes decirme del campamento?
-	AI_Output(self,other,"Info_Stt_10_DasLager_10_01"); //Supongo que el lugar más interesante es el mercado. Si buscas algo concreto, es el lugar al que debes ir.
-	AI_Output(self,other,"Info_Stt_10_DasLager_10_02"); //Está bajo el gran tejado al sur del Anillo Exterior.
+	AI_Output(other,self,"Info_Stt_10_DasLager_15_00"); //Â¿QuÃ© puedes decirme del campamento?
+	AI_Output(self,other,"Info_Stt_10_DasLager_10_01"); //Supongo que el lugar mÃ¡s interesante es el mercado. Si buscas algo concreto, es el lugar al que debes ir.
+	AI_Output(self,other,"Info_Stt_10_DasLager_10_02"); //EstÃ¡ bajo el gran tejado al sur del Anillo Exterior.
 };
 
 // *************************************************************************
@@ -134,7 +134,7 @@ INSTANCE Info_Stt_10_DieLage(C_INFO) // E1
 	condition	= Info_Stt_10_DieLage_Condition;
 	information	= Info_Stt_10_DieLage_Info;
 	permanent	= 1;
-	description = "¡Hola!";
+	description = "Â¡Hola!";
 };                       
 
 FUNC INT Info_Stt_10_DieLage_Condition()
@@ -144,8 +144,8 @@ FUNC INT Info_Stt_10_DieLage_Condition()
 
 FUNC VOID Info_Stt_10_DieLage_Info()
 {
-	AI_Output(other,self,"Info_Stt_10_DieLage_15_00"); //¡Hola!
-	AI_Output(self,other,"Info_Stt_10_DieLage_10_01"); //¿Qué quieres?
+	AI_Output(other,self,"Info_Stt_10_DieLage_15_00"); //Â¡Hola!
+	AI_Output(self,other,"Info_Stt_10_DieLage_10_01"); //Â¿QuÃ© quieres?
 };
 	
 // *************************************************************************

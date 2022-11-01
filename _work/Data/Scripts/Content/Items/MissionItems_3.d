@@ -7,7 +7,7 @@
 //#####################################################################
 
 //---------------------------------------------------------------------
-//	1. Pergamenth‰lfte der Ork-Schriftrolle
+//	1. Pergamenth√§lfte der Ork-Schriftrolle
 //---------------------------------------------------------------------
 INSTANCE OrkParchmentOne(C_Item)
 {	
@@ -33,7 +33,7 @@ INSTANCE OrkParchmentOne(C_Item)
 };
 
 //---------------------------------------------------------------------
-//	2. Pergamenth‰lfte der Ork-Schriftrolle
+//	2. Pergamenth√§lfte der Ork-Schriftrolle
 //---------------------------------------------------------------------
 INSTANCE OrkParchmentTwo(C_Item)
 {	
@@ -59,7 +59,7 @@ INSTANCE OrkParchmentTwo(C_Item)
 };
 
 //---------------------------------------------------------------------
-//	Schl¸ssel zu Kaloms Truhe
+//	Schl√ºssel zu Kaloms Truhe
 //---------------------------------------------------------------------
 INSTANCE ITKE_PSI_KALOM_01(C_Item)
 {	
@@ -100,9 +100,9 @@ INSTANCE ItWrFocimap(C_Item)
 
 	description				= name;
 	TEXT[0]					= "Las cinco puntas de la estrella";
-	TEXT[1]					= "muestran la posiciÛn de los cinco";
+	TEXT[1]					= "muestran la posici√≥n de los cinco";
 	TEXT[2]					= "focos de piedra que se utilizaron para crear";
-	TEXT[3]					= "la Barrera M·gica. Este mapa es viejo";
+	TEXT[3]					= "la Barrera M√°gica. Este mapa es viejo";
 	TEXT[4]					= "y las piedras pueden haber sido trasladadas";
 	TEXT[5]					= "a otros lugares desde entonces.";
 };
@@ -124,7 +124,7 @@ FUNC VOID UseFocimap()
 //---------------------------------------------------------------------
 INSTANCE ItWr_Troll_01(C_Item)
 {	
-	name 				=	"P·gina de diario";
+	name 				=	"P√°gina de diario";
 	
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION;
@@ -138,9 +138,9 @@ INSTANCE ItWr_Troll_01(C_Item)
 	on_state[0]			=	UseTroll;
 
 	description			=	name;
-	TEXT[1]				=	"Una p·gina muy estropeada cuya";
+	TEXT[1]				=	"Una p√°gina muy estropeada cuya";
 	TEXT[2]				=	"escritura apenas puede ser reconocida.";
-	TEXT[3]				=	"El antiguo dueÒo parece haber sido";
+	TEXT[3]				=	"El antiguo due√±o parece haber sido";
 	TEXT[4]				=	"un cazador de trolls.";
 };
 
@@ -153,13 +153,13 @@ FUNC VOID UseTroll()
 				Doc_SetPage 	(nDocID,  0, "letters.TGA"  , 0); 
 				Doc_SetMargins	(nDocID, -1, 50, 50, 50, 50, 1);  
 				Doc_SetFont 	(nDocID, -1, "font_15_book.tga");
-				Doc_PrintLine	(nDocID,  0,"DÌa 169");
+				Doc_PrintLine	(nDocID,  0,"D√≠a 169");
 				Doc_SetFont 	(nDocID, -1, "font_10_book.tga");
 				Doc_PrintLine	(nDocID,  0, "");
 				Doc_PrintLine	(nDocID,  0, "");
-				Doc_PrintLines	(nDocID,  0,"Hoy voy a conseguirlo. Lo sÈ. Los dioses estar·n conmigo. Lo he intentado todo para matar a un troll. El acero m·s fuerte no sirviÛ; las flechas rebotaron como si su piel fuera de piedra.");
+				Doc_PrintLines	(nDocID,  0,"Hoy voy a conseguirlo. Lo s√©. Los dioses estar√°n conmigo. Lo he intentado todo para matar a un troll. El acero m√°s fuerte no sirvi√≥; las flechas rebotaron como si su piel fuera de piedra.");
 				Doc_PrintLine	(nDocID,  0, "");
-				Doc_PrintLines	(nDocID,  0,"Ahora voy a usar este pergamino m·gico que me vendiÛ el mercader de Khorinis. Me costÛ 50 piezas de oro, pero me harÈ rico con los beneficios de estos trofeos.");
+				Doc_PrintLines	(nDocID,  0,"Ahora voy a usar este pergamino m√°gico que me vendi√≥ el mercader de Khorinis. Me cost√≥ 50 piezas de oro, pero me har√© rico con los beneficios de estos trofeos.");
 				Doc_PrintLine	(nDocID,  0, "");
 				Doc_PrintLines	(nDocID,  0,"Voy a matar a un troll.");
 				Doc_Show		(nDocID);
@@ -170,7 +170,7 @@ FUNC VOID UseTroll()
 //---------------------------------------------------------------------
 INSTANCE Focus_2(C_Item)
 {	
-	name 				=	"Foco del CaÒÛn del Troll";
+	name 				=	"Foco del Ca√±√≥n del Troll";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MISSION;	
@@ -185,11 +185,11 @@ INSTANCE Focus_2(C_Item)
 
 	description			=	name;
 	TEXT[1]				=	"Uno de los cinco focos de piedra";
-	TEXT[2]				=	"utilizados para crear la Barrera M·gica.";
+	TEXT[2]				=	"utilizados para crear la Barrera M√°gica.";
 };
 
 //---------------------------------------------------------------------
-//	Truhenschl¸ssel in der Bergfestung
+//	Truhenschl√ºssel in der Bergfestung
 //---------------------------------------------------------------------
 INSTANCE ItKe_BERG_01(C_Item)
 {	
@@ -203,7 +203,7 @@ INSTANCE ItKe_BERG_01(C_Item)
 	visual 				=	"ItKe_Key_01.3ds";
 	material 			=	MAT_METAL;
 	description			= name;
-	TEXT[0]				= "Viejo fuerte de montaÒa.";
+	TEXT[0]				= "Viejo fuerte de monta√±a.";
 	TEXT[1]				= "Una vieja llave herrumbrosa de un cofre.";
 	TEXT[2]				= "";
 	TEXT[5]				= NAME_Value;
@@ -229,7 +229,7 @@ INSTANCE ItWr_Urkunde_01(C_Item)
 	on_state[0]		=	UseUrkunde;
 	description		=	"Escrituras";
 	TEXT[0]			=	"Permiten al portador reclamar el ";
-	TEXT[1]			=	"territorio del fuerte de montaÒa.";
+	TEXT[1]			=	"territorio del fuerte de monta√±a.";
 	TEXT[2]			=	"";
 	TEXT[5]			=	"Valor                       400 libras de oro";
 };
@@ -247,7 +247,7 @@ FUNC VOID UseUrkunde()
 				Doc_SetFont 	(nDocID, -1, "font_10_book.tga");
 				Doc_PrintLine	(nDocID,  0, "");
 				Doc_PrintLine	(nDocID,  0, "");
-				Doc_PrintLines	(nDocID,  0,"Yo, Bergmar, Burgrave del Campo Occidental y juez responsable de las tierras de mi SeÒor de Tymorisin, la regiÛn que rodea a Khorinis, declaro por la presente... que entrego y vendo... al portador de este documento... y a la casa de Innos, el feudo del fuerte de la montaÒa (junto a futuros diezmos de mi renta y las minas contenidas en Èl) a cambio de 400 unidades de oro.");
+				Doc_PrintLines	(nDocID,  0,"Yo, Bergmar, Burgrave del Campo Occidental y juez responsable de las tierras de mi Se√±or de Tymorisin, la regi√≥n que rodea a Khorinis, declaro por la presente... que entrego y vendo... al portador de este documento... y a la casa de Innos, el feudo del fuerte de la monta√±a (junto a futuros diezmos de mi renta y las minas contenidas en √©l) a cambio de 400 unidades de oro.");
 				Doc_Show		(nDocID );
 };
 	
@@ -281,7 +281,7 @@ INSTANCE Fakescroll(C_Item)
 //---------------------------------------------------------------------
 INSTANCE Focus_3(C_Item)
 {	
-	name 				=	"Foco del Fuerte de la MontaÒa";
+	name 				=	"Foco del Fuerte de la Monta√±a";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MISSION;	
@@ -296,11 +296,11 @@ INSTANCE Focus_3(C_Item)
 
 	description			=	name;
 	TEXT[1]				=	"Uno de los cinco focos de piedra";
-	TEXT[2]				=	"utilizados para crear la Barrera M·gica.";
+	TEXT[2]				=	"utilizados para crear la Barrera M√°gica.";
 };
 
 //---------------------------------------------------------------------
-//	Schl¸ssel zum Bonusraum in der Klosterruine
+//	Schl√ºssel zum Bonusraum in der Klosterruine
 //---------------------------------------------------------------------
 INSTANCE ItKe_Focus4(C_Item)
 {
@@ -338,7 +338,7 @@ INSTANCE Focus_4(C_Item)
 	material 			=	MAT_STONE;
 	description			=	name;
 	TEXT[1]				=	"Uno de los cinco focos de piedra";
-	TEXT[2]				=	"utilizados para crear la Barrera M·gica.";
+	TEXT[2]				=	"utilizados para crear la Barrera M√°gica.";
 };
 
 //---------------------------------------------------------------------
@@ -346,7 +346,7 @@ INSTANCE Focus_4(C_Item)
 //---------------------------------------------------------------------
 INSTANCE  ItMi_OrcTalisman(C_Item)
 {
-	name 			= "Talism·n orco";
+	name 			= "Talism√°n orco";
 
 	mainflag 		= ITEM_KAT_MAGIC;
 	flags 			= ITEM_AMULET|ITEM_MISSION;
@@ -381,7 +381,7 @@ FUNC VOID UnEquip_OrcTalisman()
 
 
 //---------------------------------------------------------------------
-//	Schl¸ssel unter dem Steinkreis
+//	Schl√ºssel unter dem Steinkreis
 //---------------------------------------------------------------------
 INSTANCE ItKe_Focus5(C_Item)
 {
@@ -397,7 +397,7 @@ INSTANCE ItKe_Focus5(C_Item)
 
 	description			= name;
 	TEXT[1]				= "Esta llave es de la cripta";
-	TEXT[2]				= "situada bajo el cÌrculo de piedras.";
+	TEXT[2]				= "situada bajo el c√≠rculo de piedras.";
 };
 
 //---------------------------------------------------------------------
@@ -405,7 +405,7 @@ INSTANCE ItKe_Focus5(C_Item)
 //---------------------------------------------------------------------
 INSTANCE Focus_5(C_Item)
 {	
-	name 				=	"Foco bajo CÌrculo de Piedras";
+	name 				=	"Foco bajo C√≠rculo de Piedras";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MISSION;	
@@ -419,6 +419,6 @@ INSTANCE Focus_5(C_Item)
 	material 			=	MAT_STONE;
 	description			=	name;
 	TEXT[1]				=	"Uno de los cinco focos de piedra";
-	TEXT[2]				=	"utilizados para crear la Barrera M·gica.";
+	TEXT[2]				=	"utilizados para crear la Barrera M√°gica.";
 };
 

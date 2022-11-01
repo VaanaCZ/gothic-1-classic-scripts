@@ -47,13 +47,13 @@ FUNC int  DIA_Roscoe_BringList_Condition()
 func void  DIA_Roscoe_BringList_Info()
 {
 	AI_Output (other, self,"DIA_Roscoe_BringList_15_00"); //Tengo la lista de cosas que necesita la Vieja Mina.
-	AI_Output (self, other,"DIA_Roscoe_BringList_10_01"); //No está mal. ¿Cómo la has conseguido?
+	AI_Output (self, other,"DIA_Roscoe_BringList_10_01"); //No estÃ¡ mal. Â¿CÃ³mo la has conseguido?
 	AI_Output (other, self,"DIA_Roscoe_BringList_15_02"); //Me la dio Ian.
-	AI_Output (self, other,"DIA_Roscoe_BringList_10_03"); //¡Qué valor tienes! Así que te enviaron para ponerme a prueba, ¿eh? Seguro que Thorus ya debe estar cabreadísimo.
+	AI_Output (self, other,"DIA_Roscoe_BringList_10_03"); //Â¡QuÃ© valor tienes! AsÃ­ que te enviaron para ponerme a prueba, Â¿eh? Seguro que Thorus ya debe estar cabreadÃ­simo.
 	AI_Output (other, self,"DIA_Roscoe_BringList_15_04"); //Diego fue el que me dio la orden.
-	AI_Output (self, other,"DIA_Roscoe_BringList_10_05"); //Diego hace lo que le manda Thorus. Conociéndole, se moriría de risa si supiera que estás aquí.
-	AI_Output (other, self,"DIA_Roscoe_BringList_15_06"); //¿Puedo entrar ya o no?
-	AI_Output (self, other,"DIA_Roscoe_BringList_10_07"); //Entra. Lares no dará crédito a sus ojos.
+	AI_Output (self, other,"DIA_Roscoe_BringList_10_05"); //Diego hace lo que le manda Thorus. ConociÃ©ndole, se morirÃ­a de risa si supiera que estÃ¡s aquÃ­.
+	AI_Output (other, self,"DIA_Roscoe_BringList_15_06"); //Â¿Puedo entrar ya o no?
+	AI_Output (self, other,"DIA_Roscoe_BringList_10_07"); //Entra. Lares no darÃ¡ crÃ©dito a sus ojos.
 	self.aivar[AIV_PASSGATE] = TRUE;
 };
 
@@ -83,11 +83,11 @@ FUNC int  DIA_Roscoe_Mordrag_Condition()
 func void  DIA_Roscoe_Mordrag_Info()
 {
 	AI_Output (other, self,"DIA_Roscoe_Mordrag_15_00"); //Vengo de parte de Mordrag.
-	AI_Output (self, other,"DIA_Roscoe_Mordrag_10_01"); //Hace mucho tiempo que no se ve a Mordrag por aquí. Es probable que se haya pasado al Campamento Viejo.
-	AI_Output (other, self,"DIA_Roscoe_Mordrag_15_02"); //Llegué aquí con él.
-	AI_Output (self, other,"DIA_Roscoe_Mordrag_10_03"); //¿Mordrag ha vuelto? SI le ves, dile que Lares quiere verle.
+	AI_Output (self, other,"DIA_Roscoe_Mordrag_10_01"); //Hace mucho tiempo que no se ve a Mordrag por aquÃ­. Es probable que se haya pasado al Campamento Viejo.
+	AI_Output (other, self,"DIA_Roscoe_Mordrag_15_02"); //LleguÃ© aquÃ­ con Ã©l.
+	AI_Output (self, other,"DIA_Roscoe_Mordrag_10_03"); //Â¿Mordrag ha vuelto? SI le ves, dile que Lares quiere verle.
 	AI_Output (other, self,"DIA_Roscoe_Mordrag_15_04"); //Mordrag me ha dado algo para Lares.
-	AI_Output (self, other,"DIA_Roscoe_Mordrag_10_05"); //¿Qué es?
+	AI_Output (self, other,"DIA_Roscoe_Mordrag_10_05"); //Â¿QuÃ© es?
 	AI_Output (other, self,"DIA_Roscoe_Mordrag_15_06"); //Un anillo.
 	AI_Output (self, other,"DIA_Roscoe_Mordrag_10_07"); //Una pieza de gran valor... De acuerdo, puedes verle.
 	self.aivar[AIV_PASSGATE] = TRUE;
@@ -121,7 +121,7 @@ FUNC int  DIA_Roscoe_WannaJoin_Condition()
 func void  DIA_Roscoe_WannaJoin_Info()
 {
 	AI_Output (other, self,"DIA_Roscoe_WannaJoin_15_00"); //Quiero unirme a vuestra banda.
-	AI_Output (self, other,"DIA_Roscoe_WannaJoin_10_01"); //Mucha gente quiere unirse a nosotros. Tendrás que hacer una oferta mejor si quieres pasar por esta puerta.
+	AI_Output (self, other,"DIA_Roscoe_WannaJoin_10_01"); //Mucha gente quiere unirse a nosotros. TendrÃ¡s que hacer una oferta mejor si quieres pasar por esta puerta.
 	
 };
 
@@ -153,7 +153,7 @@ FUNC int  DIA_Roscoe_ComeAgain_Condition()
 
 func void  DIA_Roscoe_ComeAgain_Info()
 {
-	AI_Output (self, other,"DIA_Roscoe_ComeAgain_10_00"); //Otra vez tú.
+	AI_Output (self, other,"DIA_Roscoe_ComeAgain_10_00"); //Otra vez tÃº.
 };
 
 //////////////////////////////////////////////////////////////////////////
@@ -191,9 +191,9 @@ func void Info_Roscoe_FirstWarn_Info()
 {
 	PrintGlobals	(PD_MISSION);
 
-	AI_Output (self, hero,"Info_Roscoe_FirstWarn_Info_10_00"); //¿Dónde quieres ir?
+	AI_Output (self, hero,"Info_Roscoe_FirstWarn_Info_10_00"); //Â¿DÃ³nde quieres ir?
 	AI_Output (hero, self,"Info_Roscoe_FirstWarn_Info_15_01"); //Quiero ver a Lares.
-	AI_Output (self, hero,"Info_Roscoe_FirstWarn_Info_10_02"); //Lares está aquí, pero necesitas tener una buena razón para molestarle.
+	AI_Output (self, hero,"Info_Roscoe_FirstWarn_Info_10_02"); //Lares estÃ¡ aquÃ­, pero necesitas tener una buena razÃ³n para molestarle.
 
 	hero.aivar[AIV_LASTDISTTOWP] 		= Npc_GetDistToWP(hero,Roscoe_CHECKPOINT);
 	hero.aivar[AIV_GUARDPASSAGE_STATUS]	= AIV_GPS_FIRSTWARN;	
@@ -226,7 +226,7 @@ func int Info_Roscoe_LastWarn_Condition()
 
 func int Info_Roscoe_LastWarn_Info()
 {
-	AI_Output (self, hero,"Info_Roscoe_LastWarn_10_00"); //¿Es que estás sordo?
+	AI_Output (self, hero,"Info_Roscoe_LastWarn_10_00"); //Â¿Es que estÃ¡s sordo?
 
 	hero.aivar[AIV_LASTDISTTOWP] 		= Npc_GetDistToWP (hero,Roscoe_CHECKPOINT);
 	hero.aivar[AIV_GUARDPASSAGE_STATUS]	= AIV_GPS_LASTWARN;	
@@ -266,7 +266,7 @@ func int Info_Roscoe_Attack_Info()
 	hero.aivar[AIV_GUARDPASSAGE_STATUS]	= AIV_GPS_PUNISH;	
 	
 	B_FullStop			(self);	
-	AI_StopProcessInfos	(self);					// dem Spieler sofort wieder die Kontrolle zurückgeben
+	AI_StopProcessInfos	(self);					// dem Spieler sofort wieder die Kontrolle zurÃ¼ckgeben
 	B_IntruderAlert		(self,	other);
 	B_SetAttackReason	(self,	AIV_AR_INTRUDER);
 	Npc_SetTarget		(self,	hero);

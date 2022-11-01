@@ -30,7 +30,7 @@ instance  Tpl_1436_Templer_CRAWLER (C_INFO)
 	information		= Tpl_1436_Templer_CRAWLER_Info;
 	important		= 0;
 	permanent		= 1;
-	description		= "¿Qué pasa?"; 
+	description		= "Â¿QuÃ© pasa?"; 
 };
 
 FUNC int  Tpl_1436_Templer_CRAWLER_Condition()
@@ -40,9 +40,9 @@ FUNC int  Tpl_1436_Templer_CRAWLER_Condition()
 
 FUNC void  Tpl_1436_Templer_CRAWLER_Info()
 {
-	AI_Output (other, self,"Tpl_1436_Templer_CRAWLER_Info_15_01"); //¿Qué pasa?
-	AI_Output (self, other,"Tpl_1436_Templer_CRAWLER_Info_13_02"); //Hemos venido a cazar reptadores. El efecto secundario de proteger a los cavadores también es bastante popular.
-	AI_Output (self, other,"Tpl_1436_Templer_CRAWLER_Info_13_03"); //Pero, en realidad, lo que queremos es la secreción de los reptadores. Cor Kalorn, nuestro Gurú, elabora pociones mágicas con la secreción de las mandíbulas de los reptadores.
+	AI_Output (other, self,"Tpl_1436_Templer_CRAWLER_Info_15_01"); //Â¿QuÃ© pasa?
+	AI_Output (self, other,"Tpl_1436_Templer_CRAWLER_Info_13_02"); //Hemos venido a cazar reptadores. El efecto secundario de proteger a los cavadores tambiÃ©n es bastante popular.
+	AI_Output (self, other,"Tpl_1436_Templer_CRAWLER_Info_13_03"); //Pero, en realidad, lo que queremos es la secreciÃ³n de los reptadores. Cor Kalorn, nuestro GurÃº, elabora pociones mÃ¡gicas con la secreciÃ³n de las mandÃ­bulas de los reptadores.
 };  
 
   

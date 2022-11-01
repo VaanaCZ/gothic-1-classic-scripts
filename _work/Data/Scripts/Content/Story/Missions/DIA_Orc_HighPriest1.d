@@ -21,12 +21,12 @@ FUNC VOID Info_HighPriest1_Info()
 	AI_SetWalkmode		(self, NPC_WALK);
 	AI_GotoNpc			(self, other);
 	
-	AI_Output 			(self, other,"Info_HighPriest1_17_01"); //°MOOOORTAAAAAAAAAAAAL!
-	AI_Output 			(self, other,"Info_HighPriest1_17_02"); //°TE ATREEEEEVES A PERTURBAR MI TRANQUILIIIIIDAD!
-	AI_Output 			(self, other,"Info_HighPriest1_17_03"); //°PREEEEEP¡RATE PARA EL FIIIIIN!
-	AI_Output 			(other, self,"Info_HighPriest1_15_04"); //°Queda por ver de quiÈn ser· ese final, gordinflÛn putrefacto!
+	AI_Output 			(self, other,"Info_HighPriest1_17_01"); //¬°MOOOORTAAAAAAAAAAAAL!
+	AI_Output 			(self, other,"Info_HighPriest1_17_02"); //¬°TE ATREEEEEVES A PERTURBAR MI TRANQUILIIIIIDAD!
+	AI_Output 			(self, other,"Info_HighPriest1_17_03"); //¬°PREEEEEP√ÅRATE PARA EL FIIIIIN!
+	AI_Output 			(other, self,"Info_HighPriest1_15_04"); //¬°Queda por ver de qui√©n ser√° ese final, gordinfl√≥n putrefacto!
 	
-	B_LogEntry			(CH4_EnterTemple,"Voy a enfrentarme a Varrag-Hashor, uno de los cinco chamanes orcos que trajeron al Durmiente a este mundo. PondrÈ fin a su existencia de muerto viviente.");
+	B_LogEntry			(CH4_EnterTemple,"Voy a enfrentarme a Varrag-Hashor, uno de los cinco chamanes orcos que trajeron al Durmiente a este mundo. Pondr√© fin a su existencia de muerto viviente.");
 
 	AI_StopProcessInfos	(self);
 

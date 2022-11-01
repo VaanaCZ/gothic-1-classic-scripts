@@ -2,7 +2,7 @@ instance BAU_900_Ricelord (Npc_Default)
 {
 	//-------- primary data --------
 	
-	name 		=	"El Señor del Arroz";
+	name 		=	"El SeÃ±or del Arroz";
 	npctype 	=	NPCTYPE_GUARD;	
 	guild 		=	GIL_BAU;      
 	level 		=	10;

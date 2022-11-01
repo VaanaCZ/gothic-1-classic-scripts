@@ -34,24 +34,24 @@ FUNC INT Info_Grd_237_FirstWarn_Condition()
 
 FUNC VOID Info_Grd_237_FirstWarn_Info()
 {
-	AI_Output			(self, hero,"Info_Grd_237_FirstWarn_07_01"); //Será mejor que no te quedes aquí. ¡El territorio orco empieza tras esa barricada!
-	AI_Output			(hero, self,"Info_Grd_237_FirstWarn_15_02"); //¿Es peligroso?
-	AI_Output			(self, hero,"Info_Grd_237_FirstWarn_07_03"); //Déjame que te lo explique de esta manera: ¡Podrías darme todo tu mineral antes de salir ahí fuera y dejar que los orcos te hagan trizas!
+	AI_Output			(self, hero,"Info_Grd_237_FirstWarn_07_01"); //SerÃ¡ mejor que no te quedes aquÃ­. Â¡El territorio orco empieza tras esa barricada!
+	AI_Output			(hero, self,"Info_Grd_237_FirstWarn_15_02"); //Â¿Es peligroso?
+	AI_Output			(self, hero,"Info_Grd_237_FirstWarn_07_03"); //DÃ©jame que te lo explique de esta manera: Â¡PodrÃ­as darme todo tu mineral antes de salir ahÃ­ fuera y dejar que los orcos te hagan trizas!
 
 	hero.aivar[AIV_LASTDISTTOWP] 		= Npc_GetDistToWP (hero,Grd_237_CHECKPOINT);
 
 	Info_ClearChoices	(Info_Grd_237_FirstWarn);
-	Info_AddChoice		(Info_Grd_237_FirstWarn,"¡Creo que no quiero hacerlo!",		Info_Grd_237_FirstWarn_Info_NO);	
-	Info_AddChoice		(Info_Grd_237_FirstWarn,"¡Claro, aquí tienes mi mineral!",				Info_Grd_237_FirstWarn_Info_YES);	
-	Info_AddChoice		(Info_Grd_237_FirstWarn,"Creo que lo mejor será que me dé la vuelta.",	Info_Grd_237_FirstWarn_Info_RETREAT);	
+	Info_AddChoice		(Info_Grd_237_FirstWarn,"Â¡Creo que no quiero hacerlo!",		Info_Grd_237_FirstWarn_Info_NO);	
+	Info_AddChoice		(Info_Grd_237_FirstWarn,"Â¡Claro, aquÃ­ tienes mi mineral!",				Info_Grd_237_FirstWarn_Info_YES);	
+	Info_AddChoice		(Info_Grd_237_FirstWarn,"Creo que lo mejor serÃ¡ que me dÃ© la vuelta.",	Info_Grd_237_FirstWarn_Info_RETREAT);	
 };
 
 func void Info_Grd_237_FirstWarn_Info_RETREAT ()
 {
 	Info_ClearChoices	(Info_Grd_237_FirstWarn);
 
-	AI_Output			(hero, self,"Info_Grd_237_FirstWarn_15_04"); //Creo que lo mejor será que me dé la vuelta.
-	AI_Output			(self, hero,"Info_Grd_237_FirstWarn_07_05"); //Lástima, me habría encantado hacerme cargo de tu mineral.
+	AI_Output			(hero, self,"Info_Grd_237_FirstWarn_15_04"); //Creo que lo mejor serÃ¡ que me dÃ© la vuelta.
+	AI_Output			(self, hero,"Info_Grd_237_FirstWarn_07_05"); //LÃ¡stima, me habrÃ­a encantado hacerme cargo de tu mineral.
 
 	hero.aivar[AIV_GUARDPASSAGE_STATUS] = AIV_GPS_FIRSTWARN;
 
@@ -62,8 +62,8 @@ func void Info_Grd_237_FirstWarn_Info_YES ()
 {
 	Info_ClearChoices	(Info_Grd_237_FirstWarn);
 
-	AI_Output			(hero, self,"Info_Grd_237_FirstWarn_15_06"); //¡Claro, aquí tienes mi mineral!
-	AI_Output			(self, hero,"Info_Grd_237_FirstWarn_07_07"); //Oh, qué amable has sido.
+	AI_Output			(hero, self,"Info_Grd_237_FirstWarn_15_06"); //Â¡Claro, aquÃ­ tienes mi mineral!
+	AI_Output			(self, hero,"Info_Grd_237_FirstWarn_07_07"); //Oh, quÃ© amable has sido.
 	
 	var int ore;
 	ore = Npc_HasItems	(hero,	ItMiNugget);
@@ -79,8 +79,8 @@ func void Info_Grd_237_FirstWarn_Info_NO ()
 {
 	Info_ClearChoices	(Info_Grd_237_FirstWarn);
 
-	AI_Output			(hero, self,"Info_Grd_237_FirstWarn_15_08"); //¡Creo que no quiero hacerlo!
-	AI_Output			(self, hero,"Info_Grd_237_FirstWarn_07_09"); //En ese caso, ¡será mejor que no des un paso más!
+	AI_Output			(hero, self,"Info_Grd_237_FirstWarn_15_08"); //Â¡Creo que no quiero hacerlo!
+	AI_Output			(self, hero,"Info_Grd_237_FirstWarn_07_09"); //En ese caso, Â¡serÃ¡ mejor que no des un paso mÃ¡s!
 
 	hero.aivar[AIV_GUARDPASSAGE_STATUS] = AIV_GPS_FIRSTWARN;
 
@@ -113,7 +113,7 @@ FUNC INT Info_Grd_237_LastWarn_Condition()
 
 func int Info_Grd_237_LastWarn_Info()
 {
-	AI_Output (self, hero,"Info_Grd_237_LastWarn_07_01"); 		//¿Estás sordo? ¡Un paso más y serás pasto de los gusanos!
+	AI_Output (self, hero,"Info_Grd_237_LastWarn_07_01"); 		//Â¿EstÃ¡s sordo? Â¡Un paso mÃ¡s y serÃ¡s pasto de los gusanos!
 
 	hero.aivar[AIV_LASTDISTTOWP] 		= Npc_GetDistToWP (hero,Grd_237_CHECKPOINT);
 	hero.aivar[AIV_GUARDPASSAGE_STATUS]	= AIV_GPS_LASTWARN;	
@@ -152,7 +152,7 @@ func int Info_Grd_237_Attack_Info()
 	hero.aivar[AIV_GUARDPASSAGE_STATUS]	= AIV_GPS_PUNISH;	
 	
 	B_FullStop			(self);	
-	AI_StopProcessInfos	(self);					//dem Spieler sofort wieder die Kontrolle zurückgeben
+	AI_StopProcessInfos	(self);					//dem Spieler sofort wieder die Kontrolle zurÃ¼ckgeben
 	B_SetAttackReason	(self,	AIV_AR_INTRUDER);
 	Npc_SetTarget		(self,	hero);
 	AI_StartState		(self,	ZS_Attack,	1,	"");

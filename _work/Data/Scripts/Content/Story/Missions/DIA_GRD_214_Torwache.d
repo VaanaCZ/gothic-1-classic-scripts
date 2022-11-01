@@ -33,7 +33,7 @@ INSTANCE DIA_Grd_214_Torwache_job (C_INFO)
 	condition		= DIA_Grd_214_Torwache_job_Condition;
 	information		= DIA_Grd_214_Torwache_job_Info;
 	permanent		= 1;
-	description		= "¿Qué hacéis durante todo el día?"; 
+	description		= "Â¿QuÃ© hacÃ©is durante todo el dÃ­a?"; 
 };
 
 FUNC INT DIA_Grd_214_Torwache_job_Condition()
@@ -43,9 +43,9 @@ FUNC INT DIA_Grd_214_Torwache_job_Condition()
 
 FUNC VOID DIA_Grd_214_Torwache_job_Info()
 {
-	AI_Output (other, self,"DIA_Grd_214_Torwache_job_15_00"); //¿Qué hacéis durante todo el día?
-	AI_Output (self, other,"DIA_Grd_214_Torwache_job_07_01"); //Hago que nadie entre si Gómez no quiere que así sea.
-	AI_Output (self, other,"DIA_Grd_214_Torwache_job_07_02"); //No des guerra cuando estés dentro, o no llegarás a ninguna parte.
+	AI_Output (other, self,"DIA_Grd_214_Torwache_job_15_00"); //Â¿QuÃ© hacÃ©is durante todo el dÃ­a?
+	AI_Output (self, other,"DIA_Grd_214_Torwache_job_07_01"); //Hago que nadie entre si GÃ³mez no quiere que asÃ­ sea.
+	AI_Output (self, other,"DIA_Grd_214_Torwache_job_07_02"); //No des guerra cuando estÃ©s dentro, o no llegarÃ¡s a ninguna parte.
 };
 
 //-----------------------------------------------------------------
@@ -72,9 +72,9 @@ FUNC int  Grd_214_Torwache_SEETHORUS_Condition()
 };
 func void  Grd_214_Torwache_SEETHORUS_Info()
 {
-	AI_Output (self, other,"Grd_214_Torwache_SEETHORUS_Info_07_01"); //Eh, me alegro de que estés aquí. ¡Thorus quiere verte!
-	AI_Output (other, self,"Grd_214_Torwache_SEETHORUS_Info_15_02"); //¿Qué quiere?
-	AI_Output (self, other,"Grd_214_Torwache_SEETHORUS_Info_07_03"); //Seguro que te lo dirá enseguida.
+	AI_Output (self, other,"Grd_214_Torwache_SEETHORUS_Info_07_01"); //Eh, me alegro de que estÃ©s aquÃ­. Â¡Thorus quiere verte!
+	AI_Output (other, self,"Grd_214_Torwache_SEETHORUS_Info_15_02"); //Â¿QuÃ© quiere?
+	AI_Output (self, other,"Grd_214_Torwache_SEETHORUS_Info_07_03"); //Seguro que te lo dirÃ¡ enseguida.
 };
 
 //-----------------------------------------------------------------
@@ -100,9 +100,9 @@ FUNC int  Grd_214_Torwache_NODUSTY_Condition()
 };
 func void  Grd_214_Torwache_NODUSTY_Info()
 {
-	AI_Output			(self, other,"Grd_214_Torwache_NODUSTY_Info_07_01"); //¡¡¡EH, TÚ!!! No estarás intentando sacar a hurtadillas a Dusty, ¿verdad?
-	AI_Output			(other, self,"Grd_214_Torwache_NODUSTY_Info_15_02"); //Sólo queríamos...
-	AI_Output			(self, other,"Grd_214_Torwache_NODUSTY_Info_07_03"); //¡Dentro de poco no vas a poder querer nada!
+	AI_Output			(self, other,"Grd_214_Torwache_NODUSTY_Info_07_01"); //Â¡Â¡Â¡EH, TÃš!!! No estarÃ¡s intentando sacar a hurtadillas a Dusty, Â¿verdad?
+	AI_Output			(other, self,"Grd_214_Torwache_NODUSTY_Info_15_02"); //SÃ³lo querÃ­amos...
+	AI_Output			(self, other,"Grd_214_Torwache_NODUSTY_Info_07_03"); //Â¡Dentro de poco no vas a poder querer nada!
 
 	AI_StopProcessInfos	(self);
 	Npc_SetTarget		(self,other);
@@ -111,6 +111,6 @@ func void  Grd_214_Torwache_NODUSTY_Info()
 	B_ExchangeRoutine	(Vlk_524_Dusty,"start");
 	var C_NPC dusty;	dusty = Hlp_GetNpc(Vlk_524_Dusty);
 	dusty.aivar[AIV_PARTYMEMBER] = FALSE;
-	dusty.flags = 0;	// Immortal löschen
+	dusty.flags = 0;	// Immortal lÃ¶schen
 };
 

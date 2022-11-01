@@ -21,8 +21,8 @@ FUNC VOID Info_HighPriest5_Info()
 	
 	if ( Npc_HasItems ( hero, Mythrilklinge02 )) || ( Npc_HasItems ( hero, UrizielRune ))
 	{
-		AI_Output 			(self, other,"Info_HighPriest5_17_04"); //°LLEEEEEEVAS UUUN AAAARMA PODEROOOOOOSA!
-		AI_Output 			(self, other,"Info_HighPriest5_17_05"); //°YOOOO TE DETENDR…!
+		AI_Output 			(self, other,"Info_HighPriest5_17_04"); //¬°LLEEEEEEVAS UUUN AAAARMA PODEROOOOOOSA!
+		AI_Output 			(self, other,"Info_HighPriest5_17_05"); //¬°YOOOO TE DETENDR√â!
 
 		AI_StopProcessInfos	(self);
 		self.npctype 		= NPCTYPE_MAIN;
@@ -32,9 +32,9 @@ FUNC VOID Info_HighPriest5_Info()
 	}
 	else
 	{
-		AI_Output 			(self, other,"Info_HighPriest5_17_01"); //°DEEEBES DAAAAR LA VUEEEELTA AAAAAQUÕ!
-		AI_Output 			(self, other,"Info_HighPriest5_17_02"); //°NAAAAADI… INTERRUUUUUMPIR¡ EL SUEEEEE—O DEL MAAAAESTRO!
-		AI_Output 			(other, self,"Info_HighPriest5_15_03"); //°Te equivocas; tu DURMIENTE pronto estar· bien despierto!
+		AI_Output 			(self, other,"Info_HighPriest5_17_01"); //¬°DEEEBES DAAAAR LA VUEEEELTA AAAAAQU√ç!
+		AI_Output 			(self, other,"Info_HighPriest5_17_02"); //¬°NAAAAADI√â INTERRUUUUUMPIR√Å EL SUEEEEE√ëO DEL MAAAAESTRO!
+		AI_Output 			(other, self,"Info_HighPriest5_15_03"); //¬°Te equivocas; tu DURMIENTE pronto estar√° bien despierto!
 	
 		AI_StopProcessInfos	(self);
 	
@@ -65,9 +65,9 @@ FUNC INT Info_HighPriest5FAILED_Condition()
 
 FUNC VOID Info_HighPriest5FAILED_Info()
 {
-	AI_Output			(other, self,"Info_HighPriest5FAILED_15_01"); //°MaldiciÛn! °No le estoy haciendo el menor daÒo! Necesito otra...
-	AI_Output			(self, other,"Info_HighPriest5FAILED_17_02"); //°MOOOORIR¡S AHOOOOORA!
-	AI_Output			(other, self,"Info_HighPriest5FAILED_15_03"); //°Ser· mejor que me largue deprisa!
+	AI_Output			(other, self,"Info_HighPriest5FAILED_15_01"); //¬°Maldici√≥n! ¬°No le estoy haciendo el menor da√±o! Necesito otra...
+	AI_Output			(self, other,"Info_HighPriest5FAILED_17_02"); //¬°MOOOORIR√ÅS AHOOOOORA!
+	AI_Output			(other, self,"Info_HighPriest5FAILED_15_03"); //¬°Ser√° mejor que me largue deprisa!
 	AI_RemoveWeapon		(other);
 	AI_TurnAway			(other,	self);	
 	
@@ -75,7 +75,7 @@ FUNC VOID Info_HighPriest5FAILED_Info()
 	Npc_SetAttitude 	(self, ATT_HOSTILE);
 	Npc_SetTempAttitude (self, ATT_HOSTILE);	
 
-	B_LogEntry			(CH4_EnterTemple,"Al parecer, Grash-Varrag-Arushat no pertenece a los chamanes orcos no-muertos. Es mucho m·s poderoso con diferencia, y mis armas no le infligen ning˙n daÒo. °Necesito una m·s poderosa!");
+	B_LogEntry			(CH4_EnterTemple,"Al parecer, Grash-Varrag-Arushat no pertenece a los chamanes orcos no-muertos. Es mucho m√°s poderoso con diferencia, y mis armas no le infligen ning√∫n da√±o. ¬°Necesito una m√°s poderosa!");
 	B_GiveXP			(XP_RetreatFromLastPriest);
 
 	AI_StopProcessInfos	(self);

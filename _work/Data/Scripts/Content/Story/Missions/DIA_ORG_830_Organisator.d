@@ -33,7 +33,7 @@ INSTANCE Info_ORG_830_Hello (C_INFO)
 	condition	= Info_ORG_830_Hello_Condition;
 	information	= Info_ORG_830_Hello_Info;
 	permanent	= 0;
-	description	= "¡Hola! ¡Soy nuevo!";
+	description	= "Â¡Hola! Â¡Soy nuevo!";
 };                       
 
 FUNC INT Info_ORG_830_Hello_Condition()
@@ -43,8 +43,8 @@ FUNC INT Info_ORG_830_Hello_Condition()
 
 FUNC VOID Info_ORG_830_Hello_Info()
 {	
-	AI_Output (other, self,"Info_ORG_830_Hello_15_00"); //¡Hola! Soy nuevo aquí.
-	AI_Output (self, other,"Info_ORG_830_Hello_13_01"); //¿Y qué?
+	AI_Output (other, self,"Info_ORG_830_Hello_15_00"); //Â¡Hola! Soy nuevo aquÃ­.
+	AI_Output (self, other,"Info_ORG_830_Hello_13_01"); //Â¿Y quÃ©?
 };
 
 // ************************************************************
@@ -58,7 +58,7 @@ INSTANCE Info_ORG_830_What (C_INFO)
 	condition	= Info_ORG_830_What_Condition;
 	information	= Info_ORG_830_What_Info;
 	permanent	= 0;
-	description	= "¿Qué haces?";
+	description	= "Â¿QuÃ© haces?";
 };                       
 
 FUNC INT Info_ORG_830_What_Condition()
@@ -71,9 +71,9 @@ FUNC INT Info_ORG_830_What_Condition()
 
 FUNC VOID Info_ORG_830_What_Info()
 {	
-	AI_Output (other, self,"Info_ORG_830_What_15_00"); //¿Qué es lo que estás haciendo?
-	AI_Output (self, other,"Info_ORG_830_What_13_01"); //¿A ti qué te parece? Estoy fumando.
-	AI_Output (self, other,"Info_ORG_830_What_13_02"); //¡Si crees que te voy a dar una calada, vas listo!
+	AI_Output (other, self,"Info_ORG_830_What_15_00"); //Â¿QuÃ© es lo que estÃ¡s haciendo?
+	AI_Output (self, other,"Info_ORG_830_What_13_01"); //Â¿A ti quÃ© te parece? Estoy fumando.
+	AI_Output (self, other,"Info_ORG_830_What_13_02"); //Â¡Si crees que te voy a dar una calada, vas listo!
 };
 
 // ************************************************************
@@ -87,7 +87,7 @@ INSTANCE Info_ORG_830_Aufhalten (C_INFO)
 	condition	= Info_ORG_830_Aufhalten_Condition;
 	information	= Info_ORG_830_Aufhalten_Info;
 	permanent	= 0;
-	description	= "¿No vas a tratar de detenerme ni preguntarme qué hago?";
+	description	= "Â¿No vas a tratar de detenerme ni preguntarme quÃ© hago?";
 };                       
 
 FUNC INT Info_ORG_830_Aufhalten_Condition()
@@ -100,8 +100,8 @@ FUNC INT Info_ORG_830_Aufhalten_Condition()
 
 FUNC VOID Info_ORG_830_Aufhalten_Info()
 {	
-	AI_Output (other, self,"Info_ORG_830_Aufhalten_15_00"); //¿Es que no vas a intentar detenerme? ¿Ni a preguntarme qué quiero o algo así?
-	AI_Output (self, other,"Info_ORG_830_Aufhalten_13_01"); //No. Demasiado esfuerzo para mí. Además, alguien como tú no hará demasiado daño ahí dentro.
+	AI_Output (other, self,"Info_ORG_830_Aufhalten_15_00"); //Â¿Es que no vas a intentar detenerme? Â¿Ni a preguntarme quÃ© quiero o algo asÃ­?
+	AI_Output (self, other,"Info_ORG_830_Aufhalten_13_01"); //No. Demasiado esfuerzo para mÃ­. AdemÃ¡s, alguien como tÃº no harÃ¡ demasiado daÃ±o ahÃ­ dentro.
 };
 
 // ************************************************************
@@ -115,7 +115,7 @@ INSTANCE Info_ORG_830_Perm (C_INFO)
 	condition	= Info_ORG_830_Perm_Condition;
 	information	= Info_ORG_830_Perm_Info;
 	permanent	= 1;
-	description	= "¿Cómo es por dentro?";
+	description	= "Â¿CÃ³mo es por dentro?";
 };                       
 
 FUNC INT Info_ORG_830_Perm_Condition()
@@ -128,6 +128,6 @@ FUNC INT Info_ORG_830_Perm_Condition()
 
 FUNC VOID Info_ORG_830_Perm_Info()
 {	
-	AI_Output (other, self,"Info_ORG_830_Perm_15_00"); //¿Cómo son las cosas ahí dentro?
-	AI_Output (self, other,"Info_ORG_830_Perm_13_01"); //Como siempre; tranquilas, con nada más que un par de peleas.
+	AI_Output (other, self,"Info_ORG_830_Perm_15_00"); //Â¿CÃ³mo son las cosas ahÃ­ dentro?
+	AI_Output (self, other,"Info_ORG_830_Perm_13_01"); //Como siempre; tranquilas, con nada mÃ¡s que un par de peleas.
 };

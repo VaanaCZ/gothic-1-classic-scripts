@@ -94,8 +94,8 @@ INSTANCE MENUITEM_AUDIO_SFXVOL_SLIDER(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_AUDIO_MUSICVOL(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	text[0]		= "Volumen música";
-	text[1]		= "Volumen de la música de fondo."; // Kommentar
+	text[0]		= "Volumen mÃºsica";
+	text[1]		= "Volumen de la mÃºsica de fondo."; // Kommentar
 	
 	// Position und Dimension	
 	posx		= 1000;		posy		=	MENU_START_Y + MENU_SOUND_DY*1;
@@ -130,8 +130,8 @@ INSTANCE MENUITEM_AUDIO_MUSICVOL_SLIDER(C_MENU_ITEM_DEF)
 instance MENUITEM_AUDIO_MUSIC(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	text[0]		= "Música";
-	text[1]		= "Activar/desactivar música de fondo."; // Kommentar
+	text[0]		= "MÃºsica";
+	text[1]		= "Activar/desactivar mÃºsica de fondo."; // Kommentar
 	
 	// Position und Dimension	
 	posx		=	1000;	posy		=	MENU_START_Y + MENU_SOUND_DY*2;
@@ -302,7 +302,7 @@ instance MENUITEM_AUDIO_SAMPLERATE_CHOICE(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_AUDIO_BACK(C_MENU_ITEM_DEF)
 {
 	backpic		=	MENU_ITEM_BACK_PIC;
-	text[0]		=	"Atrás";
+	text[0]		=	"AtrÃ¡s";
 	// Position und Dimension	
 	posx		=	1000;		posy		=	MENU_BACK_Y;
 	dimx		=	6192;		dimy		=	MENU_SOUND_DY;

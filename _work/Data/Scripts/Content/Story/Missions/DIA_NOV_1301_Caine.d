@@ -34,7 +34,7 @@ instance  DIA_Caine_Hallo (C_INFO)
 	condition	= DIA_Caine_Hallo_Condition;
 	information	= DIA_Caine_Hallo_Info;
 	permanent	= 0;
-	description	= "¡Hola! ¡Soy nuevo!";
+	description	= "Â¡Hola! Â¡Soy nuevo!";
 };                       
 
 FUNC int  DIA_Caine_Hallo_Condition()
@@ -44,26 +44,26 @@ FUNC int  DIA_Caine_Hallo_Condition()
 
 FUNC VOID  DIA_Caine_Hallo_Info()
 {
-	AI_Output (other, self,"DIA_Caine_Hallo_15_00"); //¡Hola! ¡Soy nuevo aquí!
-	AI_Output (self, other,"DIA_Caine_Hallo_13_01"); //Yo... Yo... Soy Caine, un estudiante de Cor Kalorn. Seguro que has oído hablar de él, ¿verdad?
+	AI_Output (other, self,"DIA_Caine_Hallo_15_00"); //Â¡Hola! Â¡Soy nuevo aquÃ­!
+	AI_Output (self, other,"DIA_Caine_Hallo_13_01"); //Yo... Yo... Soy Caine, un estudiante de Cor Kalorn. Seguro que has oÃ­do hablar de Ã©l, Â¿verdad?
 			
 	Info_ClearChoices	(DIA_Caine_Hallo );
 	Info_AddChoice		(DIA_Caine_Hallo,"No.",DIA_Caine_Hallo_Nein);
-	Info_AddChoice		(DIA_Caine_Hallo,"Sí.",DIA_Caine_Hallo_Ja);
+	Info_AddChoice		(DIA_Caine_Hallo,"SÃ­.",DIA_Caine_Hallo_Ja);
 };
 
 func void DIA_Caine_Hallo_Ja()
 {
-	AI_Output (other, self,"DIA_Caine_Hallo_Ja_15_00"); //Sí.
-	AI_Output (self, other,"DIA_Caine_Hallo_Ja_13_01"); //Entonces sabrás que es el segundo hombre más importante del campamento... d-después de Y'Berion.
+	AI_Output (other, self,"DIA_Caine_Hallo_Ja_15_00"); //SÃ­.
+	AI_Output (self, other,"DIA_Caine_Hallo_Ja_13_01"); //Entonces sabrÃ¡s que es el segundo hombre mÃ¡s importante del campamento... d-despuÃ©s de Y'Berion.
 	Info_ClearChoices	(DIA_Caine_Hallo );
 };
 
 func void DIA_Caine_Hallo_Nein()
 {
 	AI_Output (other, self,"DIA_Caine_Hallo_Nein_15_00"); //No.
-	AI_Output (self, other,"DIA_Caine_Hallo_Nein_13_01"); //¿No? No llevas mucho tiempo aquí, ¿verdad?
-	AI_Output (self, other,"DIA_Caine_Hallo_Nein_13_02"); //Cor Kalorn es el segundo hombre más importante después de Y'Berion. Él decide quién puede unirse a nosotros como novicio.
+	AI_Output (self, other,"DIA_Caine_Hallo_Nein_13_01"); //Â¿No? No llevas mucho tiempo aquÃ­, Â¿verdad?
+	AI_Output (self, other,"DIA_Caine_Hallo_Nein_13_02"); //Cor Kalorn es el segundo hombre mÃ¡s importante despuÃ©s de Y'Berion. Ã‰l decide quiÃ©n puede unirse a nosotros como novicio.
 	Info_ClearChoices	(DIA_Caine_Hallo );
 };
 
@@ -79,7 +79,7 @@ instance  DIA_Caine_WaysToKalom (C_INFO)
 	condition	= DIA_Caine_WaysToKalom_Condition;
 	information	= DIA_Caine_WaysToKalom_Info;
 	permanent	= 0;
-	description	= "Ich würde gerne mit Cor Kalom reden - kannst du mir dabei helfen?";
+	description	= "Ich wÃ¼rde gerne mit Cor Kalom reden - kannst du mir dabei helfen?";
 };                       
 
 FUNC int  DIA_Caine_WaysToKalom_Condition()
@@ -92,8 +92,8 @@ FUNC int  DIA_Caine_WaysToKalom_Condition()
 
 FUNC VOID  DIA_Caine_WaysToKalom_Info()
 {
-	AI_Output (other, self,"DIA_Caine_WaysToKalom_15_00"); //Ich würde gerne mit Cor Kalom reden - kannst du mir dabei helfen?
-	AI_Output (self, other,"DIA_Caine_WaysToKalom_13_01"); //Wenn du zu Cor Kalom willst, mußt du einen guten Grund haben.
+	AI_Output (other, self,"DIA_Caine_WaysToKalom_15_00"); //Ich wÃ¼rde gerne mit Cor Kalom reden - kannst du mir dabei helfen?
+	AI_Output (self, other,"DIA_Caine_WaysToKalom_13_01"); //Wenn du zu Cor Kalom willst, muÃŸt du einen guten Grund haben.
 	AI_Output (self, other,"DIA_Caine_WaysToKalom_13_02"); //Die Wache hat Anweisung, nur die vorzulassen, die Alchimistische Substanzen bringen oder von einen der Gurus geschickt wurden.
 };
 
@@ -108,7 +108,7 @@ instance  DIA_Caine_Alchemies (C_INFO)
 	condition	= DIA_Caine_Alchemies_Condition;
 	information	= DIA_Caine_Alchemies_Info;
 	permanent	= 0;
-	description	= "Was für alchimistische Substanzen kann ich Kalom bringen?";
+	description	= "Was fÃ¼r alchimistische Substanzen kann ich Kalom bringen?";
 };                       
 
 FUNC int  DIA_Caine_Alchemies_Condition()
@@ -121,8 +121,8 @@ FUNC int  DIA_Caine_Alchemies_Condition()
 
 FUNC VOID  DIA_Caine_Alchemies_Info()
 {
-	AI_Output (other, self,"DIA_Caine_Alchemies_15_00"); //Was für alchimistische Substanzen kann ich Kalom bringen?
-	AI_Output (self, other,"DIA_Caine_Alchemies_13_01"); //Kalom benötigt vor allem das Sekret der Minecrawler. Wenn du ihm genug davon beschaffst, wird dich die Wache sicher vorlassen.
+	AI_Output (other, self,"DIA_Caine_Alchemies_15_00"); //Was fÃ¼r alchimistische Substanzen kann ich Kalom bringen?
+	AI_Output (self, other,"DIA_Caine_Alchemies_13_01"); //Kalom benÃ¶tigt vor allem das Sekret der Minecrawler. Wenn du ihm genug davon beschaffst, wird dich die Wache sicher vorlassen.
 	AI_Output (self, other,"DIA_Caine_Alchemies_13_02"); //Er braucht zwar auch Pflanzen und Beeren, die man zwischen den Lagern findet, aber die nimmt Fortuno unten an.
 };
 
@@ -139,7 +139,7 @@ instance  DIA_Caine_Job (C_INFO)
 	condition	= DIA_Caine_Job_Condition;
 	information	= DIA_Caine_Job_Info;
 	permanent	= 0;
-	description	= "¿Y a qué te dedicas?";
+	description	= "Â¿Y a quÃ© te dedicas?";
 };                       
 
 FUNC int  DIA_Caine_Job_Condition()
@@ -152,9 +152,9 @@ FUNC int  DIA_Caine_Job_Condition()
 
 FUNC VOID  DIA_Caine_Job_Info()
 {
-	AI_Output (other, self,"DIA_Caine_Job_15_00"); //¿Y cuál es tu trabajo?
-	AI_Output (self, other,"DIA_Caine_Job_13_01"); //Yo... Yo... Yo ayudo a mi  maestro a preparar sus pociones mágicas.
-	AI_Output (self, other,"DIA_Caine_Job_13_02"); //So-sobre todo hierba del pantano y secreción de reptador. Hace... hace falta secreción con mucha urgencia.
+	AI_Output (other, self,"DIA_Caine_Job_15_00"); //Â¿Y cuÃ¡l es tu trabajo?
+	AI_Output (self, other,"DIA_Caine_Job_13_01"); //Yo... Yo... Yo ayudo a mi  maestro a preparar sus pociones mÃ¡gicas.
+	AI_Output (self, other,"DIA_Caine_Job_13_02"); //So-sobre todo hierba del pantano y secreciÃ³n de reptador. Hace... hace falta secreciÃ³n con mucha urgencia.
 };
 
 // **************************************************
@@ -168,7 +168,7 @@ instance  DIA_Caine_WoSekret (C_INFO)
 	condition	= DIA_Caine_WoSekret_Condition;
 	information	= DIA_Caine_WoSekret_Info;
 	permanent	= 0;
-	description	= "¿Dónde consigo la secreción de los reptadores de la mina?";
+	description	= "Â¿DÃ³nde consigo la secreciÃ³n de los reptadores de la mina?";
 };                       
 
 FUNC int  DIA_Caine_WoSekret_Condition()
@@ -181,10 +181,10 @@ FUNC int  DIA_Caine_WoSekret_Condition()
 
 FUNC VOID  DIA_Caine_WoSekret_Info()
 {
-	AI_Output (other, self,"DIA_Caine_WoSekret_15_00"); //¿Dónde puedo obtener la secreción de reptador?
-	AI_Output (self, other,"DIA_Caine_WoSekret_13_01"); //Puedes encontrar reptadores en la Vieja Mina. Pero tienes que saber cómo obtener la secreción.
-	AI_Output (self, other,"DIA_Caine_WoSekret_13_02"); //Si de verdad quieres enfrentarte a estas bestias, será mejor que hables con uno de los templarios que ha tenido experiencia en eso. Como Gor Na Drak.
-	AI_Output (self, other,"DIA_Caine_WoSekret_13_03"); //Él viaja entre nuestro Campamento y... y la Vieja Mina todos los días. P-por la mañana puedes encontrarle en el laboratorio.
+	AI_Output (other, self,"DIA_Caine_WoSekret_15_00"); //Â¿DÃ³nde puedo obtener la secreciÃ³n de reptador?
+	AI_Output (self, other,"DIA_Caine_WoSekret_13_01"); //Puedes encontrar reptadores en la Vieja Mina. Pero tienes que saber cÃ³mo obtener la secreciÃ³n.
+	AI_Output (self, other,"DIA_Caine_WoSekret_13_02"); //Si de verdad quieres enfrentarte a estas bestias, serÃ¡ mejor que hables con uno de los templarios que ha tenido experiencia en eso. Como Gor Na Drak.
+	AI_Output (self, other,"DIA_Caine_WoSekret_13_03"); //Ã‰l viaja entre nuestro Campamento y... y la Vieja Mina todos los dÃ­as. P-por la maÃ±ana puedes encontrarle en el laboratorio.
 };
 
 // **************************************************
@@ -198,7 +198,7 @@ instance  DIA_Caine_AddInfoKalom (C_INFO)
 	condition	= DIA_Caine_AddInfoKalom_Condition;
 	information	= DIA_Caine_AddInfoKalom_Info;
 	permanent	= 0;
-	description	= "¿Qué más puedes decirme de tu señor?";
+	description	= "Â¿QuÃ© mÃ¡s puedes decirme de tu seÃ±or?";
 };                       
 
 FUNC int  DIA_Caine_AddInfoKalom_Condition()
@@ -211,8 +211,8 @@ FUNC int  DIA_Caine_AddInfoKalom_Condition()
 
 FUNC VOID  DIA_Caine_AddInfoKalom_Info()
 {
-	AI_Output (other, self,"DIA_Caine_AddInfoKalom_15_00"); //¿Qué más puedes contarme acerca de tu amo?
-	AI_Output (self, other,"DIA_Caine_AddInfoKalom_13_01"); //Él... Él no es como los... los otros Gurús. Cualquiera puede dirigirle la palabra, pero... pero NADIE puede hacerle perder su valioso tiempo.
+	AI_Output (other, self,"DIA_Caine_AddInfoKalom_15_00"); //Â¿QuÃ© mÃ¡s puedes contarme acerca de tu amo?
+	AI_Output (self, other,"DIA_Caine_AddInfoKalom_13_01"); //Ã‰l... Ã‰l no es como los... los otros GurÃºs. Cualquiera puede dirigirle la palabra, pero... pero NADIE puede hacerle perder su valioso tiempo.
 };
 
 
@@ -242,8 +242,8 @@ FUNC int  DIA_Caine_WieGuruSend_Condition()
 FUNC VOID  DIA_Caine_WieGuruSend_Info()
 {
 	AI_Output (other, self,"DIA_Caine_WieGuruSend_15_00"); //Wie bringe ich einen Guru dazu, dass er mich zu Kalom schickt.
-	AI_Output (self, other,"DIA_Caine_WieGuruSend_13_01"); //Darüber kann die Lester mehr erzählen.
-	AI_Output (self, other,"DIA_Caine_WieGuruSend_13_02"); //Bis vor kurzen hat er noch für Cor Kalom gearbeitet, jetzt kümmert er sich zusammen mit den Gurus um die Neuen.
+	AI_Output (self, other,"DIA_Caine_WieGuruSend_13_01"); //DarÃ¼ber kann die Lester mehr erzÃ¤hlen.
+	AI_Output (self, other,"DIA_Caine_WieGuruSend_13_02"); //Bis vor kurzen hat er noch fÃ¼r Cor Kalom gearbeitet, jetzt kÃ¼mmert er sich zusammen mit den Gurus um die Neuen.
 };
 */
 
@@ -258,7 +258,7 @@ instance  Nov_1301_Caine_CHEST (C_INFO)
 	information		= Nov_1301_Caine_CHEST_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "¿Cómo consigo la fórmula de Kalom?"; 
+	description		= "Â¿CÃ³mo consigo la fÃ³rmula de Kalom?"; 
 };
 
 FUNC int  Nov_1301_Caine_CHEST_Condition()
@@ -271,6 +271,6 @@ FUNC int  Nov_1301_Caine_CHEST_Condition()
 };
 FUNC void  Nov_1301_Caine_CHEST_Info()
 {
-	AI_Output (other, self,"Nov_1301_Caine_CHEST_Info_15_01"); //¿Cómo puedo obtener la fórmula de Kalorn?
-	AI_Output (self, other,"Nov_1301_Caine_CHEST_Info_13_02"); //No puedes. La guarda en un arcón cerrado con llave y no se la da a nadie.
+	AI_Output (other, self,"Nov_1301_Caine_CHEST_Info_15_01"); //Â¿CÃ³mo puedo obtener la fÃ³rmula de Kalorn?
+	AI_Output (self, other,"Nov_1301_Caine_CHEST_Info_13_02"); //No puedes. La guarda en un arcÃ³n cerrado con llave y no se la da a nadie.
 };  

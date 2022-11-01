@@ -33,7 +33,7 @@ INSTANCE DIA_Sfb_1001_Hello(C_INFO)
 	condition	= DIA_Sfb_1001_Hello_Condition;
 	information	= DIA_Sfb_1001_Hello_Info;
 	permanent	= 1;
-	description = "¿Cómo va la mina?";
+	description = "Â¿CÃ³mo va la mina?";
 };                       
 
 FUNC INT DIA_Sfb_1001_Hello_Condition()
@@ -43,7 +43,7 @@ FUNC INT DIA_Sfb_1001_Hello_Condition()
 
 FUNC VOID DIA_Sfb_1001_Hello_Info()
 {	
-	AI_Output (other, self,"DIA_Sfb_1001_Hello_15_00"); //Bueno, ¿cómo va la mina?
-	AI_Output (self, other,"DIA_Sfb_1001_Hello_02_01"); //Ya casi la hemos agotado. En unas pocas semanas más tendremos suficiente.
+	AI_Output (other, self,"DIA_Sfb_1001_Hello_15_00"); //Bueno, Â¿cÃ³mo va la mina?
+	AI_Output (self, other,"DIA_Sfb_1001_Hello_02_01"); //Ya casi la hemos agotado. En unas pocas semanas mÃ¡s tendremos suficiente.
 	AI_StopProcessInfos	(self);
 };

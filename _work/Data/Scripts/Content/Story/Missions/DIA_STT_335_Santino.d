@@ -45,7 +45,7 @@ FUNC int  STT_335_Santino_BUY_Condition()
 
 FUNC void  STT_335_Santino_BUY_Info()
 {
-	AI_Output (other, self,"STT_335_Santino_BUY_Info_15_01"); //¿Puedo hacer un intercambio contigo?
-	AI_Output (self, other,"STT_335_Santino_BUY_Info_07_02"); //Tengo todo lo que necesitas. Lo que no tengo tampoco te sería de gran utilidad.
+	AI_Output (other, self,"STT_335_Santino_BUY_Info_15_01"); //Â¿Puedo hacer un intercambio contigo?
+	AI_Output (self, other,"STT_335_Santino_BUY_Info_07_02"); //Tengo todo lo que necesitas. Lo que no tengo tampoco te serÃ­a de gran utilidad.
 	
 };  

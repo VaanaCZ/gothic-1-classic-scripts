@@ -21,11 +21,11 @@ FUNC VOID Info_HighPriest3_Info()
 	AI_SetWalkmode		(self, NPC_WALK);
 	AI_GotoNpc			(self, other);
 	
-	AI_Output			(self, other,"Info_HighPriest3_17_01"); //°MOOOOOOORTAAAL!
-	AI_Output			(self, other,"Info_HighPriest3_17_02"); //°TUUUUUUS VIAAAAJES SE ACABAN AQUÕ CONMIIIIIIGO!
-	AI_Output 			(other, self,"Info_HighPriest3_15_03"); //°Primero te darÈ el pasaporte, mohoso paraÌso de gusanos!
+	AI_Output			(self, other,"Info_HighPriest3_17_01"); //¬°MOOOOOOORTAAAL!
+	AI_Output			(self, other,"Info_HighPriest3_17_02"); //¬°TUUUUUUS VIAAAAJES SE ACABAN AQU√ç CONMIIIIIIGO!
+	AI_Output 			(other, self,"Info_HighPriest3_15_03"); //¬°Primero te dar√© el pasaporte, mohoso para√≠so de gusanos!
 
-	B_LogEntry			(CH4_EnterTemple,"Varrag- Unhilqt, uno de los cinco chamanes orcos del Durmiente, est· frente a mÌ. °SÛlo uno de nosotros saldr· con vida de esta c·mara!");
+	B_LogEntry			(CH4_EnterTemple,"Varrag- Unhilqt, uno de los cinco chamanes orcos del Durmiente, est√° frente a m√≠. ¬°S√≥lo uno de nosotros saldr√° con vida de esta c√°mara!");
 
 	AI_StopProcessInfos	(self);
 	

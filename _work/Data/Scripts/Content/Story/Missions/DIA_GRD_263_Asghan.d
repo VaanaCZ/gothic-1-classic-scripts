@@ -30,7 +30,7 @@ instance  Grd_263_Asghan_NEST (C_INFO)
 	information		= Grd_263_Asghan_NEST_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Por aquí debe haber un nido de reptadores de la mina."; 
+	description		= "Por aquÃ­ debe haber un nido de reptadores de la mina."; 
 };
 
 FUNC int  Grd_263_Asghan_NEST_Condition()
@@ -43,14 +43,14 @@ FUNC int  Grd_263_Asghan_NEST_Condition()
 };
 FUNC void  Grd_263_Asghan_NEST_Info()
 {
-	AI_Output			(other, self,"Grd_263_Asghan_NEST_Info_15_01"); //Debe haber un nido de reptadores de las minas por aquí.
-	AI_Output			(self, other,"Grd_263_Asghan_NEST_Info_06_02"); //¡Toda la maldita montaña es un enorme nido de reptadores!
-	AI_Output			(other, self,"Grd_263_Asghan_NEST_Info_15_03"); //¿Por qué has cerrado este pozo?
-	AI_Output			(self, other,"Grd_263_Asghan_NEST_Info_06_04"); //Daba igual cuántos reptadores matábamos, porque seguían viniendo más y más.
-	AI_Output			(other, self,"Grd_263_Asghan_NEST_Info_15_05"); //Parece que debe haber un nido cerca. ¡Déjame abrir la puerta!
-	AI_Output			(self, other,"Grd_263_Asghan_NEST_Info_06_06"); //¡No! ¡Esta puerta sólo puede abrirse con permiso de Ian! No haremos nada antes.
+	AI_Output			(other, self,"Grd_263_Asghan_NEST_Info_15_01"); //Debe haber un nido de reptadores de las minas por aquÃ­.
+	AI_Output			(self, other,"Grd_263_Asghan_NEST_Info_06_02"); //Â¡Toda la maldita montaÃ±a es un enorme nido de reptadores!
+	AI_Output			(other, self,"Grd_263_Asghan_NEST_Info_15_03"); //Â¿Por quÃ© has cerrado este pozo?
+	AI_Output			(self, other,"Grd_263_Asghan_NEST_Info_06_04"); //Daba igual cuÃ¡ntos reptadores matÃ¡bamos, porque seguÃ­an viniendo mÃ¡s y mÃ¡s.
+	AI_Output			(other, self,"Grd_263_Asghan_NEST_Info_15_05"); //Parece que debe haber un nido cerca. Â¡DÃ©jame abrir la puerta!
+	AI_Output			(self, other,"Grd_263_Asghan_NEST_Info_06_06"); //Â¡No! Â¡Esta puerta sÃ³lo puede abrirse con permiso de Ian! No haremos nada antes.
 	
-	B_LogEntry		(CH2_MCEggs,"Asghan, el jefe de los guardias de la mina, no abrirá la puerta, pues quiere el permiso de Ian.");
+	B_LogEntry		(CH2_MCEggs,"Asghan, el jefe de los guardias de la mina, no abrirÃ¡ la puerta, pues quiere el permiso de Ian.");
 
 };
 /*------------------------------------------------------------------------
@@ -79,13 +79,13 @@ FUNC int  Grd_263_Asghan_OPEN_Condition()
 FUNC void  Grd_263_Asghan_OPEN_Info()
 {
 	AI_Output (other, self,"Grd_263_Asghan_OPEN_Info_15_01"); //Oye Asghan, ya puedes abrir la puerta.
-	AI_Output (self, other,"Grd_263_Asghan_OPEN_Info_06_02"); //Ya te lo he dicho: sólo si Ian...
+	AI_Output (self, other,"Grd_263_Asghan_OPEN_Info_06_02"); //Ya te lo he dicho: sÃ³lo si Ian...
 	AI_Output (other, self,"Grd_263_Asghan_OPEN_Info_15_03"); //Asghan... Todo va a ir bien... y saludos de Ian.
-	AI_Output (self, other,"Grd_263_Asghan_OPEN_Info_06_04"); //Bueno, si Ian se responsabiliza de esto... ¡pero sólo con una condición!
-	AI_Output (other, self,"Grd_263_Asghan_OPEN_Info_15_05"); //¿Con qué condición?
-	AI_Output (self, other,"Grd_263_Asghan_OPEN_Info_06_06"); //Tráeme a dos o tres templarios a modo de refuerzos; ¡no quiero estar sólo cuando los reptadores salgan del pozo!
+	AI_Output (self, other,"Grd_263_Asghan_OPEN_Info_06_04"); //Bueno, si Ian se responsabiliza de esto... Â¡pero sÃ³lo con una condiciÃ³n!
+	AI_Output (other, self,"Grd_263_Asghan_OPEN_Info_15_05"); //Â¿Con quÃ© condiciÃ³n?
+	AI_Output (self, other,"Grd_263_Asghan_OPEN_Info_06_06"); //TrÃ¡eme a dos o tres templarios a modo de refuerzos; Â¡no quiero estar sÃ³lo cuando los reptadores salgan del pozo!
 	
-	B_LogEntry		(CH2_MCEggs,"Aunque Ian ha dado su permiso, Asghan no me abrirá la puerta hasta que haya reunido a algunos templarios como refuerzos frente a la entrada.");
+	B_LogEntry		(CH2_MCEggs,"Aunque Ian ha dado su permiso, Asghan no me abrirÃ¡ la puerta hasta que haya reunido a algunos templarios como refuerzos frente a la entrada.");
 
 	AI_StopProcessInfos	( self );
 };  
@@ -99,7 +99,7 @@ instance  Grd_263_Asghan_OPEN_NOW (C_INFO)
 	information		= Grd_263_Asghan_OPEN_NOW_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Se han hecho todos los preparativos. ¡Ya se puede abrir la puerta!"; 
+	description		= "Se han hecho todos los preparativos. Â¡Ya se puede abrir la puerta!"; 
 };
 
 FUNC int  Grd_263_Asghan_OPEN_NOW_Condition()
@@ -114,14 +114,14 @@ FUNC int  Grd_263_Asghan_OPEN_NOW_Condition()
 };
 FUNC void  Grd_263_Asghan_OPEN_NOW_Info()
 {
-	AI_Output			(other, self,"Grd_263_Asghan_OPEN_NOW_Info_15_01"); //Se han hecho todos los preparativos. ¡Ya se puede abrir la puerta!
-	AI_Output			(self, other,"Grd_263_Asghan_OPEN_NOW_Info_06_02"); //De acuerdo, abre ya el pozo. Que empiece el espectáculo.
+	AI_Output			(other, self,"Grd_263_Asghan_OPEN_NOW_Info_15_01"); //Se han hecho todos los preparativos. Â¡Ya se puede abrir la puerta!
+	AI_Output			(self, other,"Grd_263_Asghan_OPEN_NOW_Info_06_02"); //De acuerdo, abre ya el pozo. Que empiece el espectÃ¡culo.
 	
 	Npc_SetPermAttitude (self,ATT_FRIENDLY);
 	Npc_ExchangeRoutine	(self,"opengate");
 	
 	B_GiveXP			(XP_OpenAsghansGate);
-	B_LogEntry			(CH2_MCEggs,"He logrado reunir a suficientes templarios frente a la puerta de Asghan. ¿Qué nos aguardará en la oscuridad que hay tras ella?");
+	B_LogEntry			(CH2_MCEggs,"He logrado reunir a suficientes templarios frente a la puerta de Asghan. Â¿QuÃ© nos aguardarÃ¡ en la oscuridad que hay tras ella?");
 		
 	AI_StopProcessInfos	(self);
 };    
@@ -134,7 +134,7 @@ instance  Grd_263_Asghan_LAIRFOUND (C_INFO)
 	information		= Grd_263_Asghan_LAIRFOUND_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "¡Los reptadores de la mina ya no deben suponer ninguna amenaza!"; 
+	description		= "Â¡Los reptadores de la mina ya no deben suponer ninguna amenaza!"; 
 };
 
 FUNC int  Grd_263_Asghan_LAIRFOUND_Condition()
@@ -148,14 +148,14 @@ FUNC int  Grd_263_Asghan_LAIRFOUND_Condition()
 };
 FUNC void  Grd_263_Asghan_LAIRFOUND_Info()
 {
-	AI_Output			(other, self,"Grd_263_Asghan_LAIRFOUND_Info_15_01"); //¡Los reptadores de las minas ya no deben suponer ninguna amenaza!
-	AI_Output			(self, other,"Grd_263_Asghan_LAIRFOUND_Info_06_02"); //Ésas son buenas noticias. ¡Enviaré un mensajero a Thorus!
+	AI_Output			(other, self,"Grd_263_Asghan_LAIRFOUND_Info_15_01"); //Â¡Los reptadores de las minas ya no deben suponer ninguna amenaza!
+	AI_Output			(self, other,"Grd_263_Asghan_LAIRFOUND_Info_06_02"); //Ã‰sas son buenas noticias. Â¡EnviarÃ© un mensajero a Thorus!
 
 	AI_StopProcessInfos	(self);
 };    
 
 /*------------------------------------------------------------------------
-						MCQ Hatz läuft noch nicht 						
+						MCQ Hatz lÃ¤uft noch nicht 						
 ------------------------------------------------------------------------*/
 
 instance  Grd_263_Asghan_SMALLTALK (C_INFO)
@@ -165,7 +165,7 @@ instance  Grd_263_Asghan_SMALLTALK (C_INFO)
 	information		= Grd_263_Asghan_SMALLTALK_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "¿Qué tal estás?"; 
+	description		= "Â¿QuÃ© tal estÃ¡s?"; 
 };
 
 FUNC int  Grd_263_Asghan_SMALLTALK_Condition()
@@ -178,9 +178,9 @@ FUNC int  Grd_263_Asghan_SMALLTALK_Condition()
 
 FUNC void  Grd_263_Asghan_SMALLTALK_Info()
 {
-	AI_Output (other, self,"Grd_263_Asghan_SMALLTALK_Info_15_01"); //Eh, ¿qué tal estás?
-	AI_Output (self, other,"Grd_263_Asghan_SMALLTALK_Info_06_02"); //Vale... mientras que a nadie se le ocurra la idea de abrir la puerta, no tendré que hacer daño a nadie.
-	AI_Output (other, self,"Grd_263_Asghan_SMALLTALK_Info_15_03"); //¿Qué tiene de especial esta puerta?
+	AI_Output (other, self,"Grd_263_Asghan_SMALLTALK_Info_15_01"); //Eh, Â¿quÃ© tal estÃ¡s?
+	AI_Output (self, other,"Grd_263_Asghan_SMALLTALK_Info_06_02"); //Vale... mientras que a nadie se le ocurra la idea de abrir la puerta, no tendrÃ© que hacer daÃ±o a nadie.
+	AI_Output (other, self,"Grd_263_Asghan_SMALLTALK_Info_15_03"); //Â¿QuÃ© tiene de especial esta puerta?
 	AI_Output (self, other,"Grd_263_Asghan_SMALLTALK_Info_06_04"); //Los reptadores de las minas. Los feroces reptadores de las minas. Los hay a montones.
 };  
 

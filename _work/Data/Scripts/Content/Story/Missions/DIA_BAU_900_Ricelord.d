@@ -33,7 +33,7 @@ INSTANCE DIA_Ricelord_Hello (C_INFO)
 	condition	= DIA_Ricelord_Hello_Condition;
 	information	= DIA_Ricelord_Hello_Info;
 	permanent	= 0;
-	description	= "Tú te encargas de los arrozales, ¿verdad?";
+	description	= "TÃº te encargas de los arrozales, Â¿verdad?";
 };                       
 
 FUNC INT DIA_Ricelord_Hello_Condition()
@@ -43,8 +43,8 @@ FUNC INT DIA_Ricelord_Hello_Condition()
 
 FUNC VOID DIA_Ricelord_Hello_Info()
 {	
-	AI_Output (other, self,"DIA_Ricelord_Hello_15_00"); //Tú te encargas de los arrozales, ¿verdad?
-	AI_Output (self, other,"DIA_Ricelord_Hello_12_01"); //¿Por qué? ¿Buscas trabajo?
+	AI_Output (other, self,"DIA_Ricelord_Hello_15_00"); //TÃº te encargas de los arrozales, Â¿verdad?
+	AI_Output (self, other,"DIA_Ricelord_Hello_12_01"); //Â¿Por quÃ©? Â¿Buscas trabajo?
 };
 
 // ************************************************************
@@ -58,7 +58,7 @@ INSTANCE DIA_Ricelord_Arbeit (C_INFO)
 	condition	= DIA_Ricelord_Arbeit_Condition;
 	information	= DIA_Ricelord_Arbeit_Info;
 	permanent	= 0;
-	description	= "¿Tienes trabajo para mí?";
+	description	= "Â¿Tienes trabajo para mÃ­?";
 };                       
 
 FUNC INT DIA_Ricelord_Arbeit_Condition()
@@ -73,8 +73,8 @@ FUNC INT DIA_Ricelord_Arbeit_Condition()
 
 FUNC VOID DIA_Ricelord_Arbeit_Info()
 {	
-	AI_Output (other, self,"DIA_Ricelord_Arbeit_15_00"); //¿Tienes algún trabajo para mí?
-	AI_Output (self, other,"DIA_Ricelord_Arbeit_12_01"); //Ve a ver a Lefty. Suele estar a la derecha de la cabaña.
+	AI_Output (other, self,"DIA_Ricelord_Arbeit_15_00"); //Â¿Tienes algÃºn trabajo para mÃ­?
+	AI_Output (self, other,"DIA_Ricelord_Arbeit_12_01"); //Ve a ver a Lefty. Suele estar a la derecha de la cabaÃ±a.
 };
 
 // ************************************************************
@@ -103,7 +103,7 @@ FUNC INT DIA_Ricelord_TRADE_Condition()
 FUNC VOID DIA_Ricelord_TRADE_Info()
 {	
 	AI_Output (other, self,"DIA_Ricelord_TRADE_15_00"); //Podemos hacer un trato...
-	AI_Output (self, other,"DIA_Ricelord_TRADE_12_01"); //¿Qué puedes ofrecerme?
+	AI_Output (self, other,"DIA_Ricelord_TRADE_12_01"); //Â¿QuÃ© puedes ofrecerme?
 };
 	
 // ************************************************************
@@ -133,7 +133,7 @@ FUNC INT DIA_Ricelord_LeftySentMe_Condition()
 FUNC VOID DIA_Ricelord_LeftySentMe_Info()
 {	
 	AI_Output (other, self,"DIA_Ricelord_LeftySentMe_15_00"); //Me manda Lefty.
-	AI_Output (self, other,"DIA_Ricelord_LeftySentMe_12_01"); //¿Ah sí? ¿Y qué ha dicho?
+	AI_Output (self, other,"DIA_Ricelord_LeftySentMe_12_01"); //Â¿Ah sÃ­? Â¿Y quÃ© ha dicho?
 	Ricelord_AskedForWater = TRUE;
 };
 
@@ -165,25 +165,25 @@ FUNC VOID DIA_Ricelord_GetWater_Info()
 	
 	if(Lefty_WorkDay == Wld_GetDay())
 	{
-		AI_Output			(self, other,"DIA_Ricelord_GetWater_12_01"); //De acuerdo. Aquí tienes una docena de botellas de agua.
-		AI_Output			(self, other,"DIA_Ricelord_GetWater_12_02"); //Hay el doble de campesinos, así que asegúrate de repartirla equitativamente.
+		AI_Output			(self, other,"DIA_Ricelord_GetWater_12_01"); //De acuerdo. AquÃ­ tienes una docena de botellas de agua.
+		AI_Output			(self, other,"DIA_Ricelord_GetWater_12_02"); //Hay el doble de campesinos, asÃ­ que asegÃºrate de repartirla equitativamente.
 
 		CreateInvItems		(self, ItFo_Potion_Water_01, 12);
 		B_GiveInvItems		(self, other, ItFo_Potion_Water_01, 12);
 
 		Ricelord_AskedForWater = FALSE;
-		B_LogEntry			(CH1_CarryWater,"El Señor del Arroz me ha dado una docena de botellas de agua.");
+		B_LogEntry			(CH1_CarryWater,"El SeÃ±or del Arroz me ha dado una docena de botellas de agua.");
 
 		AI_StopProcessInfos	(self);
 	}
 	else if (Lefty_WorkDay == Wld_GetDay()-1)
 	{
-		AI_Output (self, other,"DIA_Ricelord_GetWater_TooLate_12_00"); //¡Eso fue ayer, muchacho! Será mejor que vayas a verle. Tiene que decirte algo.
+		AI_Output (self, other,"DIA_Ricelord_GetWater_TooLate_12_00"); //Â¡Eso fue ayer, muchacho! SerÃ¡ mejor que vayas a verle. Tiene que decirte algo.
 		AI_StopProcessInfos	(self);
 	}
 	else
 	{
-		AI_Output (self, other,"DIA_Ricelord_GetWater_TooLate_12_01"); //¡Eso fue hace unos días, muchacho! Será mejor que vayas a verle. Tiene que decirte algo.
+		AI_Output (self, other,"DIA_Ricelord_GetWater_TooLate_12_01"); //Â¡Eso fue hace unos dÃ­as, muchacho! SerÃ¡ mejor que vayas a verle. Tiene que decirte algo.
 		AI_StopProcessInfos	(self);
 	};
 };

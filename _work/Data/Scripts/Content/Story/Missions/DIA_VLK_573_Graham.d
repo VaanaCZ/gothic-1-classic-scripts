@@ -33,7 +33,7 @@ INSTANCE DIA_Graham_Hello (C_INFO)
 	condition	= DIA_Graham_Hello_Condition;
 	information	= DIA_Graham_Hello_Info;
 	permanent	= 0;
-	description = "¡Hola! ¡Soy nuevo aquí!";
+	description = "Â¡Hola! Â¡Soy nuevo aquÃ­!";
 };                       
 
 FUNC INT DIA_Graham_Hello_Condition()
@@ -43,8 +43,8 @@ FUNC INT DIA_Graham_Hello_Condition()
 
 FUNC VOID DIA_Graham_Hello_Info()
 {	
-	AI_Output (other, self,"DIA_Graham_Hello_15_00"); //¡Hola! Soy nuevo aquí.
-	AI_Output (self, other,"DIA_Graham_Hello_02_01"); //Yo soy Graham. Hago mapas. Nunca te había visto por aquí... ¿Qué quieres?
+	AI_Output (other, self,"DIA_Graham_Hello_15_00"); //Â¡Hola! Soy nuevo aquÃ­.
+	AI_Output (self, other,"DIA_Graham_Hello_02_01"); //Yo soy Graham. Hago mapas. Nunca te habÃ­a visto por aquÃ­... Â¿QuÃ© quieres?
 	
 	B_LogEntry( GE_TraderOC,"El cavador Graham vende mapas a la izquierda de la puerta principal.");
 };
@@ -77,26 +77,26 @@ FUNC INT DIA_Graham_SellMap_Condition()
 FUNC VOID DIA_Graham_SellMap_Info()
 {	
 	AI_Output (other, self,"DIA_Graham_SellMap_15_00"); //Vengo de parte de Diego. Te pide que me des un mapa con el camino hasta la Vieja Mina.
-	AI_Output (self, other,"DIA_Graham_SellMap_02_01"); //No hay problema. Para ti serán 20 pepitas.
+	AI_Output (self, other,"DIA_Graham_SellMap_02_01"); //No hay problema. Para ti serÃ¡n 20 pepitas.
 	Info_ClearChoices	(DIA_Graham_SellMap );
-	Info_AddChoice		(DIA_Graham_SellMap,"Lo devolveré.",DIA_Graham_SellMap_BACK);
-	Info_AddChoice		(DIA_Graham_SellMap,"Pagaré por el mapa. Ten, quédate con el mineral.",DIA_Graham_SellMap_Pay);
-	Info_AddChoice		(DIA_Graham_SellMap,"¡Dame el mapa o te lo quitaré!",DIA_Graham_SellMap_AufsMaul);
-	Info_AddChoice		(DIA_Graham_SellMap,"¡Espera, Diego dijo que me DIERAS el mapa, no que me lo VENDIERAS!",DIA_Graham_SellMap_GiveNotSell);
+	Info_AddChoice		(DIA_Graham_SellMap,"Lo devolverÃ©.",DIA_Graham_SellMap_BACK);
+	Info_AddChoice		(DIA_Graham_SellMap,"PagarÃ© por el mapa. Ten, quÃ©date con el mineral.",DIA_Graham_SellMap_Pay);
+	Info_AddChoice		(DIA_Graham_SellMap,"Â¡Dame el mapa o te lo quitarÃ©!",DIA_Graham_SellMap_AufsMaul);
+	Info_AddChoice		(DIA_Graham_SellMap,"Â¡Espera, Diego dijo que me DIERAS el mapa, no que me lo VENDIERAS!",DIA_Graham_SellMap_GiveNotSell);
 };
 
 func void DIA_Graham_SellMap_BACK()
 {
-	AI_Output (other, self,"DIA_Graham_SellMap_BACK_15_00"); //Volveré.
+	AI_Output (other, self,"DIA_Graham_SellMap_BACK_15_00"); //VolverÃ©.
 	Info_ClearChoices	(DIA_Graham_SellMap );
 };
 
 func void DIA_Graham_SellMap_Pay()
 {
-	AI_Output (other, self,"DIA_Graham_SellMap_Pay_15_00"); //Te pago por el mapa. Aquí tienes el mineral.
+	AI_Output (other, self,"DIA_Graham_SellMap_Pay_15_00"); //Te pago por el mapa. AquÃ­ tienes el mineral.
 	if (Npc_HasItems(other, itminugget)>=20)
 	{
-		AI_Output (self, other,"DIA_Graham_SellMap_Pay_02_01"); //Bien. No encontrarás un mapa mejor y más barato que éste; puedes creerme.
+		AI_Output (self, other,"DIA_Graham_SellMap_Pay_02_01"); //Bien. No encontrarÃ¡s un mapa mejor y mÃ¡s barato que Ã©ste; puedes creerme.
 		B_GiveInvItems (other, self, itminugget, 20);
 		B_GiveInvItems (self, other, ItWrOMmap, 1);
 		Graham_OMKarteVerkauft = TRUE;
@@ -104,14 +104,14 @@ func void DIA_Graham_SellMap_Pay()
 	}
 	else
 	{
-		AI_Output (self, other,"DIA_Graham_SellMap_Pay_NoOre_02_00"); //Primero vete a conseguir algo de mineral. Caza animales o recoge setas; luego podrás venderlo aquí, en el Campamento.
+		AI_Output (self, other,"DIA_Graham_SellMap_Pay_NoOre_02_00"); //Primero vete a conseguir algo de mineral. Caza animales o recoge setas; luego podrÃ¡s venderlo aquÃ­, en el Campamento.
 	};
 };
 
 func void DIA_Graham_SellMap_AufsMaul()
 {
-	AI_Output (other, self,"DIA_Graham_SellMap_AufsMaul_15_00"); //¡Dame el mapa o me lo llevo a las malas!
-	AI_Output (self, other,"DIA_Graham_SellMap_AufsMaul_02_01"); //Eh, tranquilo, hombre. No quiero problemas. ¡Aquí tienes el mapa, llévatelo y déjame en paz!
+	AI_Output (other, self,"DIA_Graham_SellMap_AufsMaul_15_00"); //Â¡Dame el mapa o me lo llevo a las malas!
+	AI_Output (self, other,"DIA_Graham_SellMap_AufsMaul_02_01"); //Eh, tranquilo, hombre. No quiero problemas. Â¡AquÃ­ tienes el mapa, llÃ©vatelo y dÃ©jame en paz!
 	B_GiveInvItems(self, other, ItWrOMmap, 1);
 	Info_ClearChoices	(DIA_Graham_SellMap );
 	Npc_SetPermAttitude(self,ATT_ANGRY);
@@ -122,7 +122,7 @@ func void DIA_Graham_SellMap_AufsMaul()
 func void DIA_Graham_SellMap_GiveNotSell()
 {
 	AI_Output (other, self,"DIA_Graham_SellMap_GiveNotSell_15_00"); //Un momento; Diego dijo que me dieras el mapa, no que me lo vendieras.
-	AI_Output (self, other,"DIA_Graham_SellMap_GiveNotSell_02_01"); //¡Pero no me interesa! ¿Sabes lo difícil que es hacer un mapa como éste?
+	AI_Output (self, other,"DIA_Graham_SellMap_GiveNotSell_02_01"); //Â¡Pero no me interesa! Â¿Sabes lo difÃ­cil que es hacer un mapa como Ã©ste?
 	AI_Output (self, other,"DIA_Graham_SellMap_GiveNotSell_02_02"); //20 pepitas es mi precio especial para amigos de Diego. Normalmente cobro 50.
 };
 
@@ -134,7 +134,7 @@ INSTANCE DIA_Graham_BuyMaps (C_INFO)
 	condition	= DIA_Graham_BuyMaps_Condition;
 	information	= DIA_Graham_BuyMaps_Info;
 	permanent	= 1;
-	description = "Me gustaría comprar un mapa.";
+	description = "Me gustarÃ­a comprar un mapa.";
 	Trade 		= 1;
 };                       
 
@@ -148,8 +148,8 @@ FUNC INT DIA_Graham_BuyMaps_Condition()
 
 FUNC VOID DIA_Graham_BuyMaps_Info()
 {	
-	AI_Output (other, self,"DIA_Graham_BuyMaps_15_00"); //Querría comprar un mapa.
-	AI_Output (self, other,"DIA_Graham_BuyMaps_02_01"); //Claro... ¿Qué tenías pensado? Cuantas más cosas puedas ver en el mapa, más cuesta.
+	AI_Output (other, self,"DIA_Graham_BuyMaps_15_00"); //QuerrÃ­a comprar un mapa.
+	AI_Output (self, other,"DIA_Graham_BuyMaps_02_01"); //Claro... Â¿QuÃ© tenÃ­as pensado? Cuantas mÃ¡s cosas puedas ver en el mapa, mÃ¡s cuesta.
 };
 
 

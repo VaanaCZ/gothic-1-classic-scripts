@@ -3,14 +3,14 @@
 //*****************************************************************************
 func void B_Story_FindOrcShaman()
 {
-	//-------- Missionsgegenst‰nde --------
+	//-------- Missionsgegenst√§nde --------
 	
-	//-------- Tagebucheintr‰ge --------
-	B_LogEntry			(CH4_FindXardas,"Por fin me he encontrado con Xardas, pero la reuniÛn ha sido muy distinta de lo que esperaba. No estaba interesado en absoluto en el montÌculo de mineral, pero me ha contado la primera parte de la historia del Durmiente. No sÈ quÈ contarle a Saturas acerca del rumbo de la conversaciÛn.");
+	//-------- Tagebucheintr√§ge --------
+	B_LogEntry			(CH4_FindXardas,"Por fin me he encontrado con Xardas, pero la reuni√≥n ha sido muy distinta de lo que esperaba. No estaba interesado en absoluto en el mont√≠culo de mineral, pero me ha contado la primera parte de la historia del Durmiente. No s√© qu√© contarle a Saturas acerca del rumbo de la conversaci√≥n.");
 
 	Log_CreateTopic		(CH4_FindOrcShaman,	LOG_MISSION);
 	Log_SetTopicStatus	(CH4_FindOrcShaman,	LOG_RUNNING);
-	B_LogEntry			(CH4_FindOrcShaman,"Xardas quiere volver a ponerme a prueba. Para oÌr la segunda parte de la historia del Durmiente, debo visitar al cham·n orco desterrado en las ruinas de un castillo. …ste se encuentra junto a un pico montaÒoso situado al este de la torre de Xardas. No sÈ muy bien cÛmo evitar que me lance bolas de fuego, pero ya pensarÈ en algo.");
+	B_LogEntry			(CH4_FindOrcShaman,"Xardas quiere volver a ponerme a prueba. Para o√≠r la segunda parte de la historia del Durmiente, debo visitar al cham√°n orco desterrado en las ruinas de un castillo. √âste se encuentra junto a un pico monta√±oso situado al este de la torre de Xardas. No s√© muy bien c√≥mo evitar que me lance bolas de fuego, pero ya pensar√© en algo.");
 	
 		
 	//-------- NSCs einsetzen --------

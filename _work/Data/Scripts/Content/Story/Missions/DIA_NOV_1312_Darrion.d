@@ -34,7 +34,7 @@ instance  DIA_Darrion_Hello (C_INFO)
 	condition	= DIA_Darrion_Hello_Condition;
 	information	= DIA_Darrion_Hello_Info;
 	permanent	= 0;
-	description	= "Hola... Soy nuevo y me gustaría conocer el Campamento.";
+	description	= "Hola... Soy nuevo y me gustarÃ­a conocer el Campamento.";
 };                       
 
 FUNC int  DIA_Darrion_Hello_Condition()
@@ -44,12 +44,12 @@ FUNC int  DIA_Darrion_Hello_Condition()
 
 FUNC VOID  DIA_Darrion_Hello_Info()
 {
-	AI_Output (other, self,"DIA_Darrion_Hello_15_00"); //Hola, soy nuevo aquí y me gustaría conocer el Campamento.
-	AI_Output (self, other,"DIA_Darrion_Hello_11_01"); //Entonces has venido al lugar equivocado. Desde que los templarios empezaron a prepararse para la batalla hemos estado trabajando día y noche.
-	AI_Output (self, other,"DIA_Darrion_Hello_11_02"); //No dispongo de mucho tiempo para preguntas. Así que no me molestes, a menos que quieras comprar algo.
+	AI_Output (other, self,"DIA_Darrion_Hello_15_00"); //Hola, soy nuevo aquÃ­ y me gustarÃ­a conocer el Campamento.
+	AI_Output (self, other,"DIA_Darrion_Hello_11_01"); //Entonces has venido al lugar equivocado. Desde que los templarios empezaron a prepararse para la batalla hemos estado trabajando dÃ­a y noche.
+	AI_Output (self, other,"DIA_Darrion_Hello_11_02"); //No dispongo de mucho tiempo para preguntas. AsÃ­ que no me molestes, a menos que quieras comprar algo.
 	
 	Log_CreateTopic	(GE_TraderPSI,	LOG_NOTE);
-	B_LogEntry		(GE_TraderPSI,"El novicio Darrion trata con ARMAS. Pasa la mayor parte del tiempo en la herrería.");
+	B_LogEntry		(GE_TraderPSI,"El novicio Darrion trata con ARMAS. Pasa la mayor parte del tiempo en la herrerÃ­a.");
 };
 
 // **************************************************
@@ -63,7 +63,7 @@ instance  DIA_Darrion_Trade (C_INFO)
 	condition	= DIA_Darrion_Trade_Condition;
 	information	= DIA_Darrion_Trade_Info;
 	permanent	= 1;
-	description	= "¡Me gustaría negociar contigo!";
+	description	= "Â¡Me gustarÃ­a negociar contigo!";
 	trade 		= 1;
 };                       
 
@@ -77,8 +77,8 @@ FUNC int  DIA_Darrion_Trade_Condition()
 
 FUNC VOID  DIA_Darrion_Trade_Info()
 {
-	AI_Output (other, self,"DIA_Darrion_Trade_15_00"); //¡Me gustaría hacer negocios contigo!
-	AI_Output (self, other,"DIA_Darrion_Trade_11_01"); //¡Espléndido! Aquí tienes las armas que tengo disponibles en estos momentos.
+	AI_Output (other, self,"DIA_Darrion_Trade_15_00"); //Â¡Me gustarÃ­a hacer negocios contigo!
+	AI_Output (self, other,"DIA_Darrion_Trade_11_01"); //Â¡EsplÃ©ndido! AquÃ­ tienes las armas que tengo disponibles en estos momentos.
 
 	if	(Npc_HasItems(self,ItMiSwordRaw		) < 5)		{	CreateInvItems(self,ItMiSwordRaw,		5);	};
 	if	(Npc_HasItems(self,ItMiSwordRawHot	) < 5)		{	CreateInvItems(self,ItMiSwordRawHot,	5);	};

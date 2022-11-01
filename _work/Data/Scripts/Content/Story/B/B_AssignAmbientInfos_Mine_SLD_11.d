@@ -37,7 +37,7 @@ INSTANCE Info_Mine_Sld_11_EinerVonEuchWerden (C_INFO) // E1
 	condition	= Info_Mine_Sld_11_EinerVonEuchWerden_Condition;
 	information	= Info_Mine_Sld_11_EinerVonEuchWerden_Info;
 	permanent	= 1;
-	description = "¿Cómo me uno a vosotros?";
+	description = "Â¿CÃ³mo me uno a vosotros?";
 };                       
 
 FUNC INT Info_Mine_Sld_11_EinerVonEuchWerden_Condition()
@@ -53,9 +53,9 @@ FUNC INT Info_Mine_Sld_11_EinerVonEuchWerden_Condition()
 
 FUNC VOID Info_Mine_Sld_11_EinerVonEuchWerden_Info()
 {
-	AI_Output(other,self,"Info_Mine_Sld_11_EinerVonEuchWerden_15_00"); //¿Cómo me uno a vosotros?
-	AI_Output(self,other,"Info_Mine_Sld_11_EinerVonEuchWerden_011_01"); //Si quieres ser uno de nosotros, tienes que labrarte una reputación.
-	AI_Output(self,other,"Info_Mine_Sld_11_EinerVonEuchWerden_011_02"); //Ve y demuestra lo que vales en otro sitio, y después tal vez se te permita trabajar en la Hondonada.
+	AI_Output(other,self,"Info_Mine_Sld_11_EinerVonEuchWerden_15_00"); //Â¿CÃ³mo me uno a vosotros?
+	AI_Output(self,other,"Info_Mine_Sld_11_EinerVonEuchWerden_011_01"); //Si quieres ser uno de nosotros, tienes que labrarte una reputaciÃ³n.
+	AI_Output(self,other,"Info_Mine_Sld_11_EinerVonEuchWerden_011_02"); //Ve y demuestra lo que vales en otro sitio, y despuÃ©s tal vez se te permita trabajar en la Hondonada.
 };
 
 // *************************************************************************
@@ -68,7 +68,7 @@ INSTANCE Info_Mine_Sld_11_WichtigePersonen(C_INFO)
 	condition	= Info_Mine_Sld_11_WichtigePersonen_Condition;
 	information	= Info_Mine_Sld_11_WichtigePersonen_Info;
 	permanent	= 1;
-	description = "¿Quién da las órdenes aquí?";
+	description = "Â¿QuiÃ©n da las Ã³rdenes aquÃ­?";
 };                       
 
 FUNC INT Info_Mine_Sld_11_WichtigePersonen_Condition()
@@ -78,9 +78,9 @@ FUNC INT Info_Mine_Sld_11_WichtigePersonen_Condition()
 
 FUNC VOID Info_Mine_Sld_11_WichtigePersonen_Info()
 {
-	AI_Output(other,self,"Info_Mine_Sld_11_WichtigePersonen_15_00"); //¿Quién da las órdenes aquí?
-	AI_Output(self,other,"Info_Mine_Sld_11_WichtigePersonen_011_01"); //Aquí, en la Hondonada, todo el mundo hace lo que dice Okyl. Conoce a todos los peces gordos del campamento.
-	AI_Output(self,other,"Info_Mine_Sld_11_WichtigePersonen_011_02"); //Por tanto, si haces algo estúpido, los magos del agua del Campamento Nuevo se enterarán.
+	AI_Output(other,self,"Info_Mine_Sld_11_WichtigePersonen_15_00"); //Â¿QuiÃ©n da las Ã³rdenes aquÃ­?
+	AI_Output(self,other,"Info_Mine_Sld_11_WichtigePersonen_011_01"); //AquÃ­, en la Hondonada, todo el mundo hace lo que dice Okyl. Conoce a todos los peces gordos del campamento.
+	AI_Output(self,other,"Info_Mine_Sld_11_WichtigePersonen_011_02"); //Por tanto, si haces algo estÃºpido, los magos del agua del Campamento Nuevo se enterarÃ¡n.
 };
 
 // *************************************************************************
@@ -93,7 +93,7 @@ INSTANCE Info_Mine_Sld_11_DasLager(C_INFO)
 	condition	= Info_Mine_Sld_11_DasLager_Condition;
 	information	= Info_Mine_Sld_11_DasLager_Info;
 	permanent	= 1;
-	description = "¿Sucede algo especial aquí?";
+	description = "Â¿Sucede algo especial aquÃ­?";
 };                       
 
 FUNC INT Info_Mine_Sld_11_DasLager_Condition()
@@ -103,9 +103,9 @@ FUNC INT Info_Mine_Sld_11_DasLager_Condition()
 
 FUNC VOID Info_Mine_Sld_11_DasLager_Info()
 {
-	AI_Output(other,self,"Info_Mine_Sld_11_DasLager_15_00"); //¿Sucede algo especial aquí?
-	AI_Output(self,other,"Info_Mine_Sld_11_DasLager_011_01"); //Nada, pero si intentas algo estúpido te meterás en un lío de narices.
-	AI_Output(self,other,"Info_Mine_Sld_11_DasLager_011_02"); //Oh sí, y en otro lío mayor si tratas de entrar en la mina o el puesto de guardia sin permiso.
+	AI_Output(other,self,"Info_Mine_Sld_11_DasLager_15_00"); //Â¿Sucede algo especial aquÃ­?
+	AI_Output(self,other,"Info_Mine_Sld_11_DasLager_011_01"); //Nada, pero si intentas algo estÃºpido te meterÃ¡s en un lÃ­o de narices.
+	AI_Output(self,other,"Info_Mine_Sld_11_DasLager_011_02"); //Oh sÃ­, y en otro lÃ­o mayor si tratas de entrar en la mina o el puesto de guardia sin permiso.
 };
 
 // *************************************************************************
@@ -118,7 +118,7 @@ INSTANCE Info_Mine_Sld_11_DieLage(C_INFO) // E1
 	condition	= Info_Mine_Sld_11_DieLage_Condition;
 	information	= Info_Mine_Sld_11_DieLage_Info;
 	permanent	= 1;
-	description = "¿Qué tal?";
+	description = "Â¿QuÃ© tal?";
 };                       
 
 FUNC INT Info_Mine_Sld_11_DieLage_Condition()
@@ -128,7 +128,7 @@ FUNC INT Info_Mine_Sld_11_DieLage_Condition()
 
 FUNC VOID Info_Mine_Sld_11_DieLage_Info()
 {
-	AI_Output(other,self,"Info_Mine_Sld_11_DieLage_15_00"); //¿Qué tal?
+	AI_Output(other,self,"Info_Mine_Sld_11_DieLage_15_00"); //Â¿QuÃ© tal?
 	AI_Output(self,other,"Info_Mine_Sld_11_DieLage_011_01"); //Todo tranquilo. Demasiado, para mi gusto.
 };
 	

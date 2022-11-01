@@ -7,11 +7,11 @@
 //	Uhrzeit:	24h
 //
 //	Es passiert folgendes:
-//	1.	Nähert sich der Spieler dem Durchgang, so wird er in diesen
+//	1.	NÃ¤hert sich der Spieler dem Durchgang, so wird er in diesen
 //		Dialog gezwungen und einmal gewarnt
-//	2.	Nähert sich der SC trotzdem weiter, so wird er ein ZWEITES Mal
+//	2.	NÃ¤hert sich der SC trotzdem weiter, so wird er ein ZWEITES Mal
 //		gewarnt (aggressiver mit Waffe ziehen)
-//	3.	Nähert er sich trotzdem wieder, wird er angegriffen
+//	3.	NÃ¤hert er sich trotzdem wieder, wird er angegriffen
 //////////////////////////////////////////////////////////////////////////
 const string	Grd_213_CHECKPOINT		= "OCC_GATE_INSIDE";
 
@@ -43,9 +43,9 @@ func void Info_Grd_213_FirstWarn_Info()
 {
 	PrintGlobals	(PD_MISSION);
 
-	AI_Output (self, hero,"Info_Grd_213_FirstWarn_Info_07_01"); //¡ESPERA!
-	AI_Output (hero, self,"Info_Grd_213_FirstWarn_Info_15_02"); //¿Qué pasa?
-	AI_Output (self, hero,"Info_Grd_213_FirstWarn_Info_07_03"); //¡No puedes entrar en el castillo! ¡Largo de aquí!
+	AI_Output (self, hero,"Info_Grd_213_FirstWarn_Info_07_01"); //Â¡ESPERA!
+	AI_Output (hero, self,"Info_Grd_213_FirstWarn_Info_15_02"); //Â¿QuÃ© pasa?
+	AI_Output (self, hero,"Info_Grd_213_FirstWarn_Info_07_03"); //Â¡No puedes entrar en el castillo! Â¡Largo de aquÃ­!
 
 	hero.aivar[AIV_LASTDISTTOWP] 		= Npc_GetDistToWP(hero,Grd_213_CHECKPOINT);
 	hero.aivar[AIV_GUARDPASSAGE_STATUS]	= AIV_GPS_FIRSTWARN;	
@@ -80,7 +80,7 @@ func int Info_Grd_213_LastWarn_Condition()
 
 func int Info_Grd_213_LastWarn_Info()
 {
-	AI_Output (self, hero,"Info_Grd_213_LastWarn_07_01"); 		//¿Estás sordo? ¡Un paso más y serás pasto de los gusanos!
+	AI_Output (self, hero,"Info_Grd_213_LastWarn_07_01"); 		//Â¿EstÃ¡s sordo? Â¡Un paso mÃ¡s y serÃ¡s pasto de los gusanos!
 
 	hero.aivar[AIV_LASTDISTTOWP] 		= Npc_GetDistToWP (hero,Grd_213_CHECKPOINT);
 	hero.aivar[AIV_GUARDPASSAGE_STATUS]	= AIV_GPS_LASTWARN;	
@@ -120,7 +120,7 @@ func int Info_Grd_213_Attack_Info()
 	hero.aivar[AIV_GUARDPASSAGE_STATUS]	= AIV_GPS_PUNISH;	
 	
 	B_FullStop			(self);	
-	AI_StopProcessInfos	(self);					//dem Spieler sofort wieder die Kontrolle zurückgeben
+	AI_StopProcessInfos	(self);					//dem Spieler sofort wieder die Kontrolle zurÃ¼ckgeben
 	B_IntruderAlert		(self,	other);
 	B_SetAttackReason	(self,	AIV_AR_INTRUDER);
 	Npc_SetTarget		(self,	hero);
@@ -147,7 +147,7 @@ FUNC int  Grd_213_Torwache_WELCOME_Condition()
 };
 func void  Grd_213_Torwache_WELCOME_Info()
 {
-	AI_Output (self, other,"Grd_213_Torwache_WELCOME_Info_07_01"); //¿O sea que ahora eres uno de los nuestros? No está mal para alguien que no lleva mucho aquí.
+	AI_Output (self, other,"Grd_213_Torwache_WELCOME_Info_07_01"); //Â¿O sea que ahora eres uno de los nuestros? No estÃ¡ mal para alguien que no lleva mucho aquÃ­.
 };
 
 // ************************************************************
@@ -185,7 +185,7 @@ INSTANCE Info_Grd_213_Abblitzen (C_INFO)
 	condition	= Info_Grd_213_Abblitzen_Condition;
 	information	= Info_Grd_213_Abblitzen_Info;
 	permanent	= 1;
-	description	= "¡Haz que tu vida sea más emocionante! Por ejemplo, dejando entrar a alguien.";
+	description	= "Â¡Haz que tu vida sea mÃ¡s emocionante! Por ejemplo, dejando entrar a alguien.";
 };                       
 
 FUNC INT Info_Grd_213_Abblitzen_Condition()
@@ -198,8 +198,8 @@ FUNC INT Info_Grd_213_Abblitzen_Condition()
 
 FUNC VOID Info_Grd_213_Abblitzen_Info()
 {
-	AI_Output (other, self,"Info_Grd_213_Abblitzen_15_00"); //¿Sabes?, deberías hacer que tu vida fuera un poco más emocionante! Por ejemplo, dejando entrar a alguien.
-	AI_Output (self, other,"Info_Grd_213_Abblitzen_07_01"); //¿Más emocionante? No es mala idea. Llevo años sin darle una paliza a alguien como tú.
+	AI_Output (other, self,"Info_Grd_213_Abblitzen_15_00"); //Â¿Sabes?, deberÃ­as hacer que tu vida fuera un poco mÃ¡s emocionante! Por ejemplo, dejando entrar a alguien.
+	AI_Output (self, other,"Info_Grd_213_Abblitzen_07_01"); //Â¿MÃ¡s emocionante? No es mala idea. Llevo aÃ±os sin darle una paliza a alguien como tÃº.
 	AI_StopProcessInfos	(self);
 };
 
@@ -214,7 +214,7 @@ INSTANCE Info_Grd_213_Passgate (C_INFO)
 	condition	= Info_Grd_213_Passgate_Condition;
 	information	= Info_Grd_213_Passgate_Info;
 	permanent	= 1;
-	description	= "Oye, ¿estás bien?";
+	description	= "Oye, Â¿estÃ¡s bien?";
 };                       
 
 FUNC INT Info_Grd_213_Passgate_Condition()
@@ -227,7 +227,7 @@ FUNC INT Info_Grd_213_Passgate_Condition()
 
 FUNC VOID Info_Grd_213_Passgate_Info()
 {
-	AI_Output (other, self,"Info_Grd_213_Passgate_15_00"); //Oye, ¿estás bien?
-	AI_Output (self, other,"Info_Grd_213_Passgate_07_01"); //No rondes por aquí. Métete dentro.
+	AI_Output (other, self,"Info_Grd_213_Passgate_15_00"); //Oye, Â¿estÃ¡s bien?
+	AI_Output (self, other,"Info_Grd_213_Passgate_07_01"); //No rondes por aquÃ­. MÃ©tete dentro.
 	AI_StopProcessInfos	(self);
 };

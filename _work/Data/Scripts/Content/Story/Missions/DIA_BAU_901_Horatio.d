@@ -33,7 +33,7 @@ INSTANCE Info_Horatio_Wasser(C_INFO)
 	condition	= Info_Horatio_Wasser_Condition;
 	information	= Info_Horatio_Wasser_Info;
 	permanent	= 1;
-	description = "Me manda Lefty. Os he traÌdo un poco de agua.";
+	description = "Me manda Lefty. Os he tra√≠do un poco de agua.";
 };                       
 
 FUNC INT Info_Horatio_Wasser_Condition()
@@ -47,10 +47,10 @@ FUNC INT Info_Horatio_Wasser_Condition()
 
 FUNC VOID Info_Horatio_Wasser_Info()
 {
-	AI_Output(other,self,"Info_Horatio_Wasser_15_00"); //Me manda Lefty. Os he traÌdo un poco de agua.
+	AI_Output(other,self,"Info_Horatio_Wasser_15_00"); //Me manda Lefty. Os he tra√≠do un poco de agua.
 	if (Npc_HasItems(other, ItFo_Potion_Water_01)>=1)
 	{
-		AI_Output(self,other,"Info_Horatio_Wasser_09_01"); //°Gracias, tÌo! Estaba a punto de empezar a beber barro.
+		AI_Output(self,other,"Info_Horatio_Wasser_09_01"); //¬°Gracias, t√≠o! Estaba a punto de empezar a beber barro.
 		B_GiveInvItems(other,self,ItFo_Potion_Water_01,1);
 		if ( C_BodystateContains(self, BS_SIT) )
 		{
@@ -67,7 +67,7 @@ FUNC VOID Info_Horatio_Wasser_Info()
 	}
 	else
 	{
-		AI_Output(self,other,"Info_Horatio_Wasser_NOWATER_09_00"); //Se te ha acabado. PedirÈ un poco a los dem·s.
+		AI_Output(self,other,"Info_Horatio_Wasser_NOWATER_09_00"); //Se te ha acabado. Pedir√© un poco a los dem√°s.
 	};
 };
 
@@ -96,25 +96,25 @@ FUNC VOID DIA_Horatio_Hello_Info()
 {	
 	AI_GotoNpc	(self, hero);
 
-	AI_Output (self, other,"DIA_Horatio_Hello_09_00"); //øQuÈ haces aquÌ? øBuscas problemas?
+	AI_Output (self, other,"DIA_Horatio_Hello_09_00"); //¬øQu√© haces aqu√≠? ¬øBuscas problemas?
 	
 	Info_ClearChoices(DIA_Horatio_Hello );
-	Info_AddChoice	 (DIA_Horatio_Hello,"øProblemas? øCon quiÈn? øCon un campesino?",DIA_Horatio_Hello_PissOff);
-	Info_AddChoice	 (DIA_Horatio_Hello,"°Eh, tranquilo! Soy nuevo.",DIA_Horatio_Hello_BeCool);
+	Info_AddChoice	 (DIA_Horatio_Hello,"¬øProblemas? ¬øCon qui√©n? ¬øCon un campesino?",DIA_Horatio_Hello_PissOff);
+	Info_AddChoice	 (DIA_Horatio_Hello,"¬°Eh, tranquilo! Soy nuevo.",DIA_Horatio_Hello_BeCool);
 };
 
 func void DIA_Horatio_Hello_BeCool()
 {
-	AI_Output (other, self,"DIA_Horatio_Hello_BeCool_15_00"); //°Eh, tranquilo! Soy nuevo.
-	AI_Output (self, other,"DIA_Horatio_Hello_BeCool_09_01"); //Uh... Pareces buena gente. Nunca se sabe. Todos los dÌas llegan nuevos pensando que son la monda.
+	AI_Output (other, self,"DIA_Horatio_Hello_BeCool_15_00"); //¬°Eh, tranquilo! Soy nuevo.
+	AI_Output (self, other,"DIA_Horatio_Hello_BeCool_09_01"); //Uh... Pareces buena gente. Nunca se sabe. Todos los d√≠as llegan nuevos pensando que son la monda.
 	Info_ClearChoices(DIA_Horatio_Hello );
 };
 
 func void DIA_Horatio_Hello_PissOff()
 {
-	AI_Output (other, self,"DIA_Horatio_Hello_PissOff_15_00"); //øProblemas? øCon quiÈn? øCon un campesino?
-	AI_Output (self, other,"DIA_Horatio_Hello_PissOff_09_01"); //SÛlo porque trabajo en los arrozales no quiere decir que no pueda defenderme de tipos como t˙.
-	AI_Output (self, other,"DIA_Horatio_Hello_PissOff_09_02"); //°Ven aquÌ si quieres problemas!
+	AI_Output (other, self,"DIA_Horatio_Hello_PissOff_15_00"); //¬øProblemas? ¬øCon qui√©n? ¬øCon un campesino?
+	AI_Output (self, other,"DIA_Horatio_Hello_PissOff_09_01"); //S√≥lo porque trabajo en los arrozales no quiere decir que no pueda defenderme de tipos como t√∫.
+	AI_Output (self, other,"DIA_Horatio_Hello_PissOff_09_02"); //¬°Ven aqu√≠ si quieres problemas!
 	horatio_trouble = TRUE;
 	
 	Info_ClearChoices(DIA_Horatio_Hello);
@@ -146,7 +146,7 @@ FUNC INT DIA_Horatio_SORRY_Condition()
 FUNC VOID DIA_Horatio_SORRY_Info()
 {	
 	AI_Output (other, self,"DIA_Horatio_SORRY_15_00"); //Siento lo que dije acerca de los campesinos.
-	AI_Output (self, other,"DIA_Horatio_SORRY_09_01"); //°DeberÌas haberlo pensado antes, muchacho!
+	AI_Output (self, other,"DIA_Horatio_SORRY_09_01"); //¬°Deber√≠as haberlo pensado antes, muchacho!
 };
 
 // ************************************************************
@@ -160,7 +160,7 @@ INSTANCE DIA_Horatio_Story (C_INFO)
 	condition	= DIA_Horatio_Story_Condition;
 	information	= DIA_Horatio_Story_Info;
 	permanent	= 0;
-	description = "øQuÈ hace un hombre como t˙ con los campesinos?";
+	description = "¬øQu√© hace un hombre como t√∫ con los campesinos?";
 };                       
 
 FUNC INT DIA_Horatio_Story_Condition()
@@ -173,11 +173,11 @@ FUNC INT DIA_Horatio_Story_Condition()
 
 FUNC VOID DIA_Horatio_Story_Info()
 {	
-	AI_Output (other, self,"DIA_Horatio_Story_15_00"); //øQuÈ hace con los campesinos un hombre como t˙?
-	AI_Output (self, other,"DIA_Horatio_Story_09_01"); //Me lo pidiÛ Lee. Ya no lucho, salvo en defensa propia.
-	AI_Output (self, other,"DIA_Horatio_Story_09_02"); //Una vez matÈ a un tipo, y estaba borracho. Por eso me arrojaron a esta maldita colonia. Por justicia.
-	AI_Output (other, self,"DIA_Horatio_Story_15_03"); //øCÛmo sucediÛ?
-	AI_Output (self, other,"DIA_Horatio_Story_09_04"); //Fue una pelea de taberna corriente. No pretendÌa matar al tipo, sÛlo que le debÌ golpear demasiado fuerte.
+	AI_Output (other, self,"DIA_Horatio_Story_15_00"); //¬øQu√© hace con los campesinos un hombre como t√∫?
+	AI_Output (self, other,"DIA_Horatio_Story_09_01"); //Me lo pidi√≥ Lee. Ya no lucho, salvo en defensa propia.
+	AI_Output (self, other,"DIA_Horatio_Story_09_02"); //Una vez mat√© a un tipo, y estaba borracho. Por eso me arrojaron a esta maldita colonia. Por justicia.
+	AI_Output (other, self,"DIA_Horatio_Story_15_03"); //¬øC√≥mo sucedi√≥?
+	AI_Output (self, other,"DIA_Horatio_Story_09_04"); //Fue una pelea de taberna corriente. No pretend√≠a matar al tipo, s√≥lo que le deb√≠ golpear demasiado fuerte.
 	AI_Output (self, other,"DIA_Horatio_Story_09_05"); //En aquel entonces era herrero. No era consciente de mis propias fuerzas.
 };
 
@@ -192,7 +192,7 @@ INSTANCE DIA_Horatio_WhyHere (C_INFO)
 	condition	= DIA_Horatio_WhyHere_Condition;
 	information	= DIA_Horatio_WhyHere_Info;
 	permanent	= 0;
-	description = "øPor quÈ te incorporaste a ESTE campamento?";
+	description = "¬øPor qu√© te incorporaste a ESTE campamento?";
 };                       
 
 FUNC INT DIA_Horatio_WhyHere_Condition()
@@ -205,11 +205,11 @@ FUNC INT DIA_Horatio_WhyHere_Condition()
 
 FUNC VOID DIA_Horatio_WhyHere_Info()
 {	
-	AI_Output (other, self,"DIA_Horatio_WhyHere_15_00"); //øPor quÈ te incorporaste a ESTE campamento?
-	AI_Output (self, other,"DIA_Horatio_WhyHere_09_01"); //Te lo dirÈ: La otra opciÛn era unirme a esos zumbados de la secta, y no querÌa que sus gur˙s hurgar·n en mi cerebro.
-	AI_Output (self, other,"DIA_Horatio_WhyHere_09_02"); //En el Campamento Viejo habrÌa tenido bastantes problemas con los guardias, pero los mercenarios y los bandidos muestran algo de respeto.
+	AI_Output (other, self,"DIA_Horatio_WhyHere_15_00"); //¬øPor qu√© te incorporaste a ESTE campamento?
+	AI_Output (self, other,"DIA_Horatio_WhyHere_09_01"); //Te lo dir√©: La otra opci√≥n era unirme a esos zumbados de la secta, y no quer√≠a que sus gur√∫s hurgar√°n en mi cerebro.
+	AI_Output (self, other,"DIA_Horatio_WhyHere_09_02"); //En el Campamento Viejo habr√≠a tenido bastantes problemas con los guardias, pero los mercenarios y los bandidos muestran algo de respeto.
 	AI_Output (other, self,"DIA_Horatio_WhyHere_15_03"); //Te tienen miedo...
-	AI_Output (self, other,"DIA_Horatio_WhyHere_09_04"); //Tal vez. En cualquier caso, aquÌ he encontrado la paz, y t˙ deberÌas intentar hacer lo mismo.
+	AI_Output (self, other,"DIA_Horatio_WhyHere_09_04"); //Tal vez. En cualquier caso, aqu√≠ he encontrado la paz, y t√∫ deber√≠as intentar hacer lo mismo.
 };
 
 // ************************************************************
@@ -225,7 +225,7 @@ INSTANCE DIA_Horatio_PleaseTeachSTR (C_INFO)
 	condition	= DIA_Horatio_PleaseTeachSTR_Condition;
 	information	= DIA_Horatio_PleaseTeachSTR_Info;
 	permanent	= 0;
-	description = "øPuedes hacer que sea tan fuerte como t˙?";
+	description = "¬øPuedes hacer que sea tan fuerte como t√∫?";
 };                       
 
 FUNC INT DIA_Horatio_PleaseTeachSTR_Condition()
@@ -238,49 +238,49 @@ FUNC INT DIA_Horatio_PleaseTeachSTR_Condition()
 
 FUNC VOID DIA_Horatio_PleaseTeachSTR_Info()
 {	
-	AI_Output (other, self,"DIA_Horatio_PleaseTeachSTR_15_00"); //øPuedes hacer que sea tan fuerte como t˙?
-	AI_Output (self, other,"DIA_Horatio_PleaseTeachSTR_09_01"); //Aunque pudiera, øpara QU… utilizarÌas tu fuerza?
+	AI_Output (other, self,"DIA_Horatio_PleaseTeachSTR_15_00"); //¬øPuedes hacer que sea tan fuerte como t√∫?
+	AI_Output (self, other,"DIA_Horatio_PleaseTeachSTR_09_01"); //Aunque pudiera, ¬øpara QU√â utilizar√≠as tu fuerza?
 	Info_ClearChoices(DIA_Horatio_PleaseTeachSTR );
 	var C_NPC ricelord; ricelord = Hlp_GetNpc(Bau_900_Ricelord);
 	if	Npc_KnowsInfo(hero,DIA_Jeremiah_Horatio)
 	{
-		Info_AddChoice	 (DIA_Horatio_PleaseTeachSTR,"°Para poder acabar con el SeÒor del Arroz y sus esbirros!",DIA_Horatio_PleaseTeachSTR_Ricelord);
+		Info_AddChoice	 (DIA_Horatio_PleaseTeachSTR,"¬°Para poder acabar con el Se√±or del Arroz y sus esbirros!",DIA_Horatio_PleaseTeachSTR_Ricelord);
 	}
 	else
 	{
-		Info_AddChoice	 (DIA_Horatio_PleaseTeachSTR,"Buena pregunta. PensarÈ en ello...",DIA_Horatio_PleaseTeachSTR_BACK);
+		Info_AddChoice	 (DIA_Horatio_PleaseTeachSTR,"Buena pregunta. Pensar√© en ello...",DIA_Horatio_PleaseTeachSTR_BACK);
 	};
-	Info_AddChoice	 (DIA_Horatio_PleaseTeachSTR,"°Para defenderme!",DIA_Horatio_PleaseTeachSTR_Defend);
-	Info_AddChoice	 (DIA_Horatio_PleaseTeachSTR,"°Para enseÒar a estos bastardos a dirigirse a mÌ como es debido!",DIA_Horatio_PleaseTeachSTR_Attack);
+	Info_AddChoice	 (DIA_Horatio_PleaseTeachSTR,"¬°Para defenderme!",DIA_Horatio_PleaseTeachSTR_Defend);
+	Info_AddChoice	 (DIA_Horatio_PleaseTeachSTR,"¬°Para ense√±ar a estos bastardos a dirigirse a m√≠ como es debido!",DIA_Horatio_PleaseTeachSTR_Attack);
 
 	Log_CreateTopic		(CH1_HoratiosTeachings,	LOG_MISSION);
 	Log_SetTopicStatus	(CH1_HoratiosTeachings, LOG_RUNNING);
-	B_LogEntry			(CH1_HoratiosTeachings,"Horatio, un granjero de los campos de arroz del Campamento Nuevo, puede enseÒarme a golpear m·s fuerte. Pero, de alg˙n modo, a˙n no he hallado la respuesta adecuada a su pregunta de por quÈ quiero eso.");
+	B_LogEntry			(CH1_HoratiosTeachings,"Horatio, un granjero de los campos de arroz del Campamento Nuevo, puede ense√±arme a golpear m√°s fuerte. Pero, de alg√∫n modo, a√∫n no he hallado la respuesta adecuada a su pregunta de por qu√© quiero eso.");
 };
 
 func void DIA_Horatio_PleaseTeachSTR_Attack()
 {
-	AI_Output (other, self,"DIA_Horatio_PleaseTeachSTR_Attack_15_00"); //°Para enseÒar a estos bastardos a dirigirse a mÌ como es debido!
-	AI_Output (self, other,"DIA_Horatio_PleaseTeachSTR_Attack_09_01"); //Y antes de que te dieras cuenta, te habrÌas convertido en uno de esos bastardos... No, no voy a adiestrarte para eso.
+	AI_Output (other, self,"DIA_Horatio_PleaseTeachSTR_Attack_15_00"); //¬°Para ense√±ar a estos bastardos a dirigirse a m√≠ como es debido!
+	AI_Output (self, other,"DIA_Horatio_PleaseTeachSTR_Attack_09_01"); //Y antes de que te dieras cuenta, te habr√≠as convertido en uno de esos bastardos... No, no voy a adiestrarte para eso.
 	Info_ClearChoices(DIA_Horatio_PleaseTeachSTR );
 };
 
 func void DIA_Horatio_PleaseTeachSTR_Defend()
 {
-	AI_Output (other, self,"DIA_Horatio_PleaseTeachSTR_Defend_15_00"); //°Para defenderme!
-	AI_Output (self, other,"DIA_Horatio_PleaseTeachSTR_Defend_09_01"); //Para eso hace falta velocidad, no fuerza. øCrees que hendir cr·neos es mejor que encontrar la paz?
+	AI_Output (other, self,"DIA_Horatio_PleaseTeachSTR_Defend_15_00"); //¬°Para defenderme!
+	AI_Output (self, other,"DIA_Horatio_PleaseTeachSTR_Defend_09_01"); //Para eso hace falta velocidad, no fuerza. ¬øCrees que hendir cr√°neos es mejor que encontrar la paz?
 };
 
 func void DIA_Horatio_PleaseTeachSTR_BACK()
 {
-	AI_Output (other, self,"DIA_Horatio_PleaseTeachSTR_BACK_15_00"); //Buena pregunta. PensarÈ en ello...
+	AI_Output (other, self,"DIA_Horatio_PleaseTeachSTR_BACK_15_00"); //Buena pregunta. Pensar√© en ello...
 	Info_ClearChoices(DIA_Horatio_PleaseTeachSTR );
 };
 
 func void DIA_Horatio_PleaseTeachSTR_Ricelord()
 {
-	AI_Output (other, self,"DIA_Horatio_PleaseTeachSTR_Ricelord_15_00"); //°Para poder acabar con el SeÒor del Arroz y sus esbirros!
-	AI_Output (self, other,"DIA_Horatio_PleaseTeachSTR_Ricelord_09_01"); //Hmm... No serÌas el primero que lo intenta.
+	AI_Output (other, self,"DIA_Horatio_PleaseTeachSTR_Ricelord_15_00"); //¬°Para poder acabar con el Se√±or del Arroz y sus esbirros!
+	AI_Output (self, other,"DIA_Horatio_PleaseTeachSTR_Ricelord_09_01"); //Hmm... No ser√≠as el primero que lo intenta.
 	horatio_StrFree = TRUE;
 	Info_ClearChoices(DIA_Horatio_PleaseTeachSTR );
 };
@@ -296,7 +296,7 @@ INSTANCE DIA_Horatio_ThoughtSTR (C_INFO)
 	condition	= DIA_Horatio_ThoughtSTR_Condition;
 	information	= DIA_Horatio_ThoughtSTR_Info;
 	permanent	= 1;
-	description = "He estado pens·ndomelo...";
+	description = "He estado pens√°ndomelo...";
 };                       
 
 FUNC INT DIA_Horatio_ThoughtSTR_Condition()
@@ -309,8 +309,8 @@ FUNC INT DIA_Horatio_ThoughtSTR_Condition()
 
 FUNC VOID DIA_Horatio_ThoughtSTR_Info()
 {	
-	AI_Output (other, self,"DIA_Horatio_ThoughtSTR_15_00"); //He estado pens·ndomelo...
-	AI_Output (self, other,"DIA_Horatio_ThoughtSTR_09_01"); //øY? øSe te ocurre algo mejor?
+	AI_Output (other, self,"DIA_Horatio_ThoughtSTR_15_00"); //He estado pens√°ndomelo...
+	AI_Output (self, other,"DIA_Horatio_ThoughtSTR_09_01"); //¬øY? ¬øSe te ocurre algo mejor?
 	
 	Info_ClearChoices(DIA_Horatio_ThoughtSTR );
 	Info_AddChoice	 (DIA_Horatio_ThoughtSTR,"No.",DIA_Horatio_ThoughtSTR_NoIdea);
@@ -318,7 +318,7 @@ FUNC VOID DIA_Horatio_ThoughtSTR_Info()
 	var C_NPC ricelord; ricelord = Hlp_GetNpc(Bau_900_Ricelord);
 	if	Npc_KnowsInfo(hero,DIA_Jeremiah_Horatio)
 	{
-		Info_AddChoice	 (DIA_Horatio_ThoughtSTR,"SÕ. °Quiero ser capaz de enfrentarme al SeÒor del Arroz y sus esbirros!",DIA_Horatio_ThoughtSTR_Ricelord);
+		Info_AddChoice	 (DIA_Horatio_ThoughtSTR,"S√ç. ¬°Quiero ser capaz de enfrentarme al Se√±or del Arroz y sus esbirros!",DIA_Horatio_ThoughtSTR_Ricelord);
 	};
 };
 
@@ -331,15 +331,15 @@ func void DIA_Horatio_ThoughtSTR_NoIdea()
 
 func void DIA_Horatio_ThoughtSTR_Ricelord()
 {
-	AI_Output (other, self,"DIA_Horatio_ThoughtSTR_Ricelord_15_00"); //SÕ. °Quiero ser capaz de enfrentarme al SeÒor del Arroz y sus esbirros!
-	AI_Output (self, other,"DIA_Horatio_ThoughtSTR_Ricelord_09_01"); //Hmm... No serÌas el primero que lo intenta.
+	AI_Output (other, self,"DIA_Horatio_ThoughtSTR_Ricelord_15_00"); //S√ç. ¬°Quiero ser capaz de enfrentarme al Se√±or del Arroz y sus esbirros!
+	AI_Output (self, other,"DIA_Horatio_ThoughtSTR_Ricelord_09_01"); //Hmm... No ser√≠as el primero que lo intenta.
 	horatio_StrFree = TRUE;
 	
 	Info_ClearChoices(DIA_Horatio_ThoughtSTR );
 };
 
 // ************************************************************
-//					Will Ricelord kˆpfen
+//					Will Ricelord k√∂pfen
 // ************************************************************
 
 func void DIA_Horatio_HelpSTR_LEARN_NOW()
@@ -356,8 +356,8 @@ func void DIA_Horatio_HelpSTR_LEARN_NOW()
 	};
 				
 	AI_Output (self, other,"DIA_Horatio_HelpSTR_LEARN_NOW_09_00"); //Si quieres golpear con fuerza tienes que conocer la estrategia adecuada. Eso es lo primero que aprendes como herrero.
-	AI_Output (self, other,"DIA_Horatio_HelpSTR_LEARN_NOW_09_01"); //Aprende a lanzar todo tu brazo, desde el hombro hasta la muÒeca.
-	AI_Output (self, other,"DIA_Horatio_HelpSTR_LEARN_NOW_09_02"); //Cuanto mejor seas, m·s potente ser· el golpe. Coger·s el tranquillo r·pidamente.
+	AI_Output (self, other,"DIA_Horatio_HelpSTR_LEARN_NOW_09_01"); //Aprende a lanzar todo tu brazo, desde el hombro hasta la mu√±eca.
+	AI_Output (self, other,"DIA_Horatio_HelpSTR_LEARN_NOW_09_02"); //Cuanto mejor seas, m√°s potente ser√° el golpe. Coger√°s el tranquillo r√°pidamente.
 };
 
 //--------------------------------------------------------------
@@ -369,7 +369,7 @@ INSTANCE DIA_Horatio_HelpSTR (C_INFO)
 	condition	= DIA_Horatio_HelpSTR_Condition;
 	information	= DIA_Horatio_HelpSTR_Info;
 	permanent	= 0;
-	description = "°Si me ayudas, VENCER… al SeÒor del Arroz y sus secuaces!";
+	description = "¬°Si me ayudas, VENCER√â al Se√±or del Arroz y sus secuaces!";
 };                       
 
 FUNC INT DIA_Horatio_HelpSTR_Condition()
@@ -382,13 +382,13 @@ FUNC INT DIA_Horatio_HelpSTR_Condition()
 
 FUNC VOID DIA_Horatio_HelpSTR_Info()
 {	
-	AI_Output (other, self,"DIA_Horatio_HelpSTR_15_00"); //°Si me ayudas, VENCER… al SeÒor del Arroz y sus secuaces!
-	AI_Output (self, other,"DIA_Horatio_HelpSTR_09_01"); //°Bien! He jurado que nunca volverÈ a atacar a nadie, pero jam·s dije que no enseÒarÌa a nadie a hacerlo.
-	AI_Output (other, self,"DIA_Horatio_HelpSTR_15_02"); //°Soy todo oÌdos!
+	AI_Output (other, self,"DIA_Horatio_HelpSTR_15_00"); //¬°Si me ayudas, VENCER√â al Se√±or del Arroz y sus secuaces!
+	AI_Output (self, other,"DIA_Horatio_HelpSTR_09_01"); //¬°Bien! He jurado que nunca volver√© a atacar a nadie, pero jam√°s dije que no ense√±ar√≠a a nadie a hacerlo.
+	AI_Output (other, self,"DIA_Horatio_HelpSTR_15_02"); //¬°Soy todo o√≠dos!
 	DIA_Horatio_HelpSTR_LEARN_NOW();
 
 	Log_SetTopicStatus	(CH1_HoratiosTeachings, LOG_SUCCESS);
-	B_LogEntry			(CH1_HoratiosTeachings,"Horatio me ha enseÒado cÛmo usar mi fuerza en la batalla y golpear m·s fuerte. …se sÌ que tiene buen corazÛn.");
+	B_LogEntry			(CH1_HoratiosTeachings,"Horatio me ha ense√±ado c√≥mo usar mi fuerza en la batalla y golpear m√°s fuerte. √âse s√≠ que tiene buen coraz√≥n.");
 };
 
 // ************************************************************
@@ -402,7 +402,7 @@ INSTANCE DIA_Horatio_Thanks (C_INFO)
 	condition	= DIA_Horatio_Thanks_Condition;
 	information	= DIA_Horatio_Thanks_Info;
 	permanent	= 1;
-	description = "°Gracias por tu ayuda!";
+	description = "¬°Gracias por tu ayuda!";
 };                       
 
 FUNC INT DIA_Horatio_Thanks_Condition()
@@ -415,8 +415,8 @@ FUNC INT DIA_Horatio_Thanks_Condition()
 
 FUNC VOID DIA_Horatio_Thanks_Info()
 {	
-	AI_Output (other, self,"DIA_Horatio_Thanks_15_00"); //°Gracias por tu ayuda!
-	AI_Output (self, other,"DIA_Horatio_Thanks_09_01"); //Usa tu conocimiento para una causa justa, y para NADA M¡S.
+	AI_Output (other, self,"DIA_Horatio_Thanks_15_00"); //¬°Gracias por tu ayuda!
+	AI_Output (self, other,"DIA_Horatio_Thanks_09_01"); //Usa tu conocimiento para una causa justa, y para NADA M√ÅS.
 };
 
 

@@ -65,10 +65,10 @@ FUNC int  Info_Xardas_DISTURB_Condition()
 FUNC void  Info_Xardas_DISTURB_Info()
 {
 	B_WhirlAround	(self, hero);
-	AI_Output 		(self, hero,"Info_Xardas_DISTURB_14_01"); //¿QUIÉN SE ATREVE A INTERRUMPIR MIS ESTUDIOS?
+	AI_Output 		(self, hero,"Info_Xardas_DISTURB_14_01"); //Â¿QUIÃ‰N SE ATREVE A INTERRUMPIR MIS ESTUDIOS?
 	AI_Output 		(hero, self,"Info_Xardas_DISTURB_15_02"); //Me llamo...
 	AI_Output 		(self, hero,"Info_Xardas_DISTURB_14_03"); //No quiero saber tu nombre. Es del todo intrascendente.
-	AI_Output 		(self, hero,"Info_Xardas_DISTURB_14_04"); //Lo único que importa es que eres la primera persona en muchos años que consigue resolver los acertijos de mi gólem.
+	AI_Output 		(self, hero,"Info_Xardas_DISTURB_14_04"); //Lo Ãºnico que importa es que eres la primera persona en muchos aÃ±os que consigue resolver los acertijos de mi gÃ³lem.
 }; 
 
 //---------------------------------------------------------------------
@@ -81,7 +81,7 @@ instance  Info_Xardas_OTHERS (C_INFO)
 	information	= Info_Xardas_OTHERS_Info;
 	important	= 0;
 	permanent	= 0;
-	description = "¿Ha habido otros visitantes?";
+	description = "Â¿Ha habido otros visitantes?";
 };
 
 FUNC int  Info_Xardas_OTHERS_Condition()
@@ -94,9 +94,9 @@ FUNC int  Info_Xardas_OTHERS_Condition()
 };
 FUNC void  Info_Xardas_OTHERS_Info()
 {
-	AI_Output 		(hero, self,"Info_Xardas_OTHERS_15_01"); //¿Es que ha habido más visitantes?
-	AI_Output 		(self, hero,"Info_Xardas_OTHERS_14_02"); //No muchos; además, cuando empezaron a resultarme molestos les hice enfrentarse a una de mis criaturas sobrenaturales.
-	AI_Output 		(hero, self,"Info_Xardas_OTHERS_15_03"); //Te gusta estar solo, ¿verdad?
+	AI_Output 		(hero, self,"Info_Xardas_OTHERS_15_01"); //Â¿Es que ha habido mÃ¡s visitantes?
+	AI_Output 		(self, hero,"Info_Xardas_OTHERS_14_02"); //No muchos; ademÃ¡s, cuando empezaron a resultarme molestos les hice enfrentarse a una de mis criaturas sobrenaturales.
+	AI_Output 		(hero, self,"Info_Xardas_OTHERS_15_03"); //Te gusta estar solo, Â¿verdad?
 }; 
 
 //---------------------------------------------------------------------
@@ -109,7 +109,7 @@ instance  Info_Xardas_SATURAS (C_INFO)
 	information	= Info_Xardas_SATURAS_Info;
 	important	= 0;
 	permanent	= 0;
-	description = "Me manda Saturas. ¡Necesitamos tu ayuda!";
+	description = "Me manda Saturas. Â¡Necesitamos tu ayuda!";
 };
 
 FUNC int  Info_Xardas_SATURAS_Condition()
@@ -122,11 +122,11 @@ FUNC int  Info_Xardas_SATURAS_Condition()
 };
 FUNC void  Info_Xardas_SATURAS_Info()
 {
-	AI_Output 		(hero, self,"Info_Xardas_SATURAS_15_01"); //Vengo de parte de Saturas. ¡Necesitamos tu ayuda!
-	AI_Output 		(hero, self,"Info_Xardas_SATURAS_15_02"); //Los magos del Agua planean utilizar su gran montículo de mineral.
-	AI_Output 		(self, hero,"Info_Xardas_SATURAS_14_03"); //¡El montículo de mineral NO es la solución!
-	AI_Output 		(hero, self,"Info_Xardas_SATURAS_15_04"); //¿No lo es?
-	AI_Output 		(self, hero,"Info_Xardas_SATURAS_14_05"); //¡NO!
+	AI_Output 		(hero, self,"Info_Xardas_SATURAS_15_01"); //Vengo de parte de Saturas. Â¡Necesitamos tu ayuda!
+	AI_Output 		(hero, self,"Info_Xardas_SATURAS_15_02"); //Los magos del Agua planean utilizar su gran montÃ­culo de mineral.
+	AI_Output 		(self, hero,"Info_Xardas_SATURAS_14_03"); //Â¡El montÃ­culo de mineral NO es la soluciÃ³n!
+	AI_Output 		(hero, self,"Info_Xardas_SATURAS_15_04"); //Â¿No lo es?
+	AI_Output 		(self, hero,"Info_Xardas_SATURAS_14_05"); //Â¡NO!
 }; 
 
 //---------------------------------------------------------------------
@@ -139,7 +139,7 @@ instance  Info_Xardas_KDW (C_INFO)
 	information	= Info_Xardas_KDW_Info;
 	important	= 0;
 	permanent	= 0;
-	description = "¡Todos los Magos del Fuego han muerto!";
+	description = "Â¡Todos los Magos del Fuego han muerto!";
 };
 
 FUNC int  Info_Xardas_KDW_Condition()
@@ -152,10 +152,10 @@ FUNC int  Info_Xardas_KDW_Condition()
 
 FUNC void  Info_Xardas_KDW_Info()
 {
-	AI_Output 		(hero, self,"Info_Xardas_KDW_15_01"); //¡Todos los Magos del Fuego están muertos!
-	AI_Output 		(hero, self,"Info_Xardas_KDW_15_02"); //Gómez los hizo asesinar.
-	AI_Output 		(self, hero,"Info_Xardas_KDW_14_03"); //Eso no me sorprende. Esos necios carniceros bárbaros del castillo nunca fueron de fiar, especialmente Gómez.
-	AI_Output 		(self, hero,"Info_Xardas_KDW_14_04"); //Corristo y los demás magos eligieron a su propio verdugo cuando ayudaron a Gómez a usurpar el poder.
+	AI_Output 		(hero, self,"Info_Xardas_KDW_15_01"); //Â¡Todos los Magos del Fuego estÃ¡n muertos!
+	AI_Output 		(hero, self,"Info_Xardas_KDW_15_02"); //GÃ³mez los hizo asesinar.
+	AI_Output 		(self, hero,"Info_Xardas_KDW_14_03"); //Eso no me sorprende. Esos necios carniceros bÃ¡rbaros del castillo nunca fueron de fiar, especialmente GÃ³mez.
+	AI_Output 		(self, hero,"Info_Xardas_KDW_14_04"); //Corristo y los demÃ¡s magos eligieron a su propio verdugo cuando ayudaron a GÃ³mez a usurpar el poder.
 }; 
 
 //---------------------------------------------------------------------
@@ -168,7 +168,7 @@ instance  Info_Xardas_SLEEPER (C_INFO)
 	information	= Info_Xardas_SLEEPER_Info;
 	important	= 0;
 	permanent	= 0;
-	description = "Se dice que el llamado Durmiente es un archidemonio maléfico.";
+	description = "Se dice que el llamado Durmiente es un archidemonio malÃ©fico.";
 };
 
 FUNC int  Info_Xardas_SLEEPER_Condition()
@@ -182,9 +182,9 @@ FUNC int  Info_Xardas_SLEEPER_Condition()
 FUNC void  Info_Xardas_SLEEPER_Info()
 {
 	AI_Output 		(hero, self,"Info_Xardas_SLEEPER_15_01"); //Se dice que el cacareado 'Durmiente' es un malvado archidemonio.
-	AI_Output 		(hero, self,"Info_Xardas_SLEEPER_15_02"); //Eso es lo que averiguó la Hermandad en el pantano.
+	AI_Output 		(hero, self,"Info_Xardas_SLEEPER_15_02"); //Eso es lo que averiguÃ³ la Hermandad en el pantano.
 	AI_Output 		(hero, self,"Info_Xardas_SLEEPER_15_03"); //Ahora los Magos del Agua creen que todo el mundo en la colonia corre un gran peligro.
-	AI_Output 		(self, hero,"Info_Xardas_SLEEPER_14_04"); //El peligro es más grande de lo que nadie dentro de la Barrera pueda imaginar siquiera. 
+	AI_Output 		(self, hero,"Info_Xardas_SLEEPER_14_04"); //El peligro es mÃ¡s grande de lo que nadie dentro de la Barrera pueda imaginar siquiera. 
 }; 
 
 //---------------------------------------------------------------------
@@ -197,7 +197,7 @@ instance  Info_Xardas_DANGER (C_INFO)
 	information	= Info_Xardas_DANGER_Info;
 	important	= 0;
 	permanent	= 0;
-	description = "Si la explosión del montículo de mineral no evita el gran peligro...";
+	description = "Si la explosiÃ³n del montÃ­culo de mineral no evita el gran peligro...";
 };
 
 FUNC int  Info_Xardas_DANGER_Condition()
@@ -210,11 +210,11 @@ FUNC int  Info_Xardas_DANGER_Condition()
 };
 FUNC void  Info_Xardas_DANGER_Info()
 {
-	AI_Output 		(hero, self,"Info_Xardas_DANGER_15_01"); //Si la explosión del montículo de mineral no previene el gran peligro...
-	AI_Output 		(self, hero,"Info_Xardas_DANGER_14_02"); //¡...Olvida el montículo de mineral! Su poder no abrirá la Barrera.
-	AI_Output 		(self, hero,"Info_Xardas_DANGER_14_03"); //Si Corristo y Saturas no hubieran desperdiciado su tiempo peleándose por asuntos vanos y necios a lo largo de los últimos años, todos sabrían lo que yo sé ahora.
-	AI_Output 		(hero, self,"Info_Xardas_DANGER_15_04"); //¿Y qué es lo que sabes?
-	AI_Output 		(self, hero,"Info_Xardas_DANGER_14_05"); //Ninguno de los doce magos se detuvo a pensar por qué la formación de la Barrera escapó a su control o por qué cobró unas dimensiones tan enormes.
+	AI_Output 		(hero, self,"Info_Xardas_DANGER_15_01"); //Si la explosiÃ³n del montÃ­culo de mineral no previene el gran peligro...
+	AI_Output 		(self, hero,"Info_Xardas_DANGER_14_02"); //Â¡...Olvida el montÃ­culo de mineral! Su poder no abrirÃ¡ la Barrera.
+	AI_Output 		(self, hero,"Info_Xardas_DANGER_14_03"); //Si Corristo y Saturas no hubieran desperdiciado su tiempo peleÃ¡ndose por asuntos vanos y necios a lo largo de los Ãºltimos aÃ±os, todos sabrÃ­an lo que yo sÃ© ahora.
+	AI_Output 		(hero, self,"Info_Xardas_DANGER_15_04"); //Â¿Y quÃ© es lo que sabes?
+	AI_Output 		(self, hero,"Info_Xardas_DANGER_14_05"); //Ninguno de los doce magos se detuvo a pensar por quÃ© la formaciÃ³n de la Barrera escapÃ³ a su control o por quÃ© cobrÃ³ unas dimensiones tan enormes.
 };
 
 //---------------------------------------------------------------------
@@ -227,7 +227,7 @@ instance  Info_Xardas_BARRIER (C_INFO)
 	information	= Info_Xardas_BARRIER_Info;
 	important	= 0;
 	permanent	= 0;
-	description = "¿Averiguaste por qué sucedió aquello?";
+	description = "Â¿Averiguaste por quÃ© sucediÃ³ aquello?";
 };
 
 FUNC int  Info_Xardas_BARRIER_Condition()
@@ -239,13 +239,13 @@ FUNC int  Info_Xardas_BARRIER_Condition()
 };
 FUNC void  Info_Xardas_BARRIER_Info()
 {
-	AI_Output 		(hero, self,"Info_Xardas_BARRIER_15_01"); //¿Conseguiste averiguar la causa? 
+	AI_Output 		(hero, self,"Info_Xardas_BARRIER_15_01"); //Â¿Conseguiste averiguar la causa? 
 	AI_Output 		(self, hero,"Info_Xardas_BARRIER_14_02"); //Bueno, una cosa es segura. La respuesta se encuentra oculta a gran profundidad, bajo el pueblo orco.
-	AI_Output 		(hero, self,"Info_Xardas_BARRIER_15_03"); //¿El pueblo orco?
+	AI_Output 		(hero, self,"Info_Xardas_BARRIER_15_03"); //Â¿El pueblo orco?
 	AI_Output 		(self, hero,"Info_Xardas_BARRIER_14_04"); //En contra de lo que piensa mucha gente, los orcos no son animales. Su cultura es tan antigua como la humana.
-	AI_Output 		(self, hero,"Info_Xardas_BARRIER_14_05"); //Hace unos pocos cientos de años, cinco chamanes orcos invocaron a un viejo archidemonio del que esperaban obtener el poder necesario para que su clan derrotase a sus enemigos.
-	AI_Output 		(hero, self,"Info_Xardas_BARRIER_15_06"); //¿Y este archidemonio era el Durmiente?
-	AI_Output 		(self, hero,"Info_Xardas_BARRIER_14_07"); //Los orcos le dieron este nombre mucho después. ¡Pero no voy a decirte por qué lo hicieron ni por qué están aterrados ahora de esta figura sobrenatural!
+	AI_Output 		(self, hero,"Info_Xardas_BARRIER_14_05"); //Hace unos pocos cientos de aÃ±os, cinco chamanes orcos invocaron a un viejo archidemonio del que esperaban obtener el poder necesario para que su clan derrotase a sus enemigos.
+	AI_Output 		(hero, self,"Info_Xardas_BARRIER_15_06"); //Â¿Y este archidemonio era el Durmiente?
+	AI_Output 		(self, hero,"Info_Xardas_BARRIER_14_07"); //Los orcos le dieron este nombre mucho despuÃ©s. Â¡Pero no voy a decirte por quÃ© lo hicieron ni por quÃ© estÃ¡n aterrados ahora de esta figura sobrenatural!
 }; 
 
 //---------------------------------------------------------------------
@@ -258,7 +258,7 @@ instance  Info_Xardas_EVENT (C_INFO)
 	information	= Info_Xardas_EVENT_Info;
 	important	= 0;
 	permanent	= 0;
-	description = "¿Por qué no? ¿En cuánto mineral estabas pensando?";
+	description = "Â¿Por quÃ© no? Â¿En cuÃ¡nto mineral estabas pensando?";
 };
 
 FUNC int  Info_Xardas_EVENT_Condition()
@@ -270,10 +270,10 @@ FUNC int  Info_Xardas_EVENT_Condition()
 };
 FUNC void  Info_Xardas_EVENT_Info()
 {
-	AI_Output 		(hero, self,"Info_Xardas_EVENT_15_01"); //¿Por qué no?
-	AI_Output 		(self, hero,"Info_Xardas_EVENT_14_02"); //Creo que tú podrías ser... ¡NO, para estar absolutamente seguro, tendrás que llevar a cabo otra tarea!
-	AI_Output 		(hero, self,"Info_Xardas_EVENT_15_03"); //¿Qué tarea?
-	AI_Output 		(self, hero,"Info_Xardas_EVENT_14_04"); //Escucha con atención. Los orcos han expulsado de su poblado a uno de sus chamanes.
+	AI_Output 		(hero, self,"Info_Xardas_EVENT_15_01"); //Â¿Por quÃ© no?
+	AI_Output 		(self, hero,"Info_Xardas_EVENT_14_02"); //Creo que tÃº podrÃ­as ser... Â¡NO, para estar absolutamente seguro, tendrÃ¡s que llevar a cabo otra tarea!
+	AI_Output 		(hero, self,"Info_Xardas_EVENT_15_03"); //Â¿QuÃ© tarea?
+	AI_Output 		(self, hero,"Info_Xardas_EVENT_14_04"); //Escucha con atenciÃ³n. Los orcos han expulsado de su poblado a uno de sus chamanes.
 }; 
 
 //---------------------------------------------------------------------
@@ -286,7 +286,7 @@ instance  Info_Xardas_EVENTWHY (C_INFO)
 	information	= Info_Xardas_EVENTWHY_Info;
 	important	= 0;
 	permanent	= 0;
-	description = "¿Por qué lo han desterrado?";
+	description = "Â¿Por quÃ© lo han desterrado?";
 };
 
 FUNC int  Info_Xardas_EVENTWHY_Condition()
@@ -298,7 +298,7 @@ FUNC int  Info_Xardas_EVENTWHY_Condition()
 };
 FUNC void  Info_Xardas_EVENTWHY_Info()
 {
-	AI_Output 		(hero, self,"Info_Xardas_EVENTWHY_15_01"); //¿Por qué le expulsaron?
+	AI_Output 		(hero, self,"Info_Xardas_EVENTWHY_15_01"); //Â¿Por quÃ© le expulsaron?
 	AI_Output 		(self, hero,"Info_Xardas_EVENTWHY_14_02"); //El agonizante guerrero orco ya no pudo responder a esa pregunta cuando fue interrogado por uno de mis demonios.
 }; 
 
@@ -312,7 +312,7 @@ instance  Info_Xardas_EVENTHOW (C_INFO)
 	information	= Info_Xardas_EVENTHOW_Info;
 	important	= 0;
 	permanent	= 0;
-	description = "¿Qué tiene que ver este chamán orco con mi misión?";
+	description = "Â¿QuÃ© tiene que ver este chamÃ¡n orco con mi misiÃ³n?";
 };
 
 FUNC int  Info_Xardas_EVENTHOW_Condition()
@@ -324,14 +324,14 @@ FUNC int  Info_Xardas_EVENTHOW_Condition()
 };
 FUNC void  Info_Xardas_EVENTHOW_Info()
 {
-	AI_Output 		(hero, self,"Info_Xardas_EVENTHOW_15_01"); //¿Qué tiene que ver este chamán orco con mi tarea?
-	AI_Output 		(self, hero,"Info_Xardas_EVENTHOW_14_02"); //Él te contará el resto de la historia del Durmiente.
-	AI_Output 		(hero, self,"Info_Xardas_EVENTHOW_15_03"); //¡No es muy probable que un chamán orco esté interesado en hablar conmigo!
-	AI_Output 		(self, hero,"Info_Xardas_EVENTHOW_14_04"); //¿Quieres que te ayude o no?
-	AI_Output 		(hero, self,"Info_Xardas_EVENTHOW_15_05"); //Bueno, sí, pero...
-	AI_Output 		(self, hero,"Info_Xardas_EVENTHOW_14_06"); //¡Entonces no vuelvas a cuestionar mis palabras!
-	AI_Output 		(self, hero,"Info_Xardas_EVENTHOW_14_07"); //Encuentra al chamán. No se lleva demasiado bien con sus hermanos del poblado orco, así que quizá te escuche antes de convertirte en una antorcha viviente.
-	AI_Output 		(hero, self,"Info_Xardas_EVENTHOW_15_08"); //¡Eso me tranquiliza!
+	AI_Output 		(hero, self,"Info_Xardas_EVENTHOW_15_01"); //Â¿QuÃ© tiene que ver este chamÃ¡n orco con mi tarea?
+	AI_Output 		(self, hero,"Info_Xardas_EVENTHOW_14_02"); //Ã‰l te contarÃ¡ el resto de la historia del Durmiente.
+	AI_Output 		(hero, self,"Info_Xardas_EVENTHOW_15_03"); //Â¡No es muy probable que un chamÃ¡n orco estÃ© interesado en hablar conmigo!
+	AI_Output 		(self, hero,"Info_Xardas_EVENTHOW_14_04"); //Â¿Quieres que te ayude o no?
+	AI_Output 		(hero, self,"Info_Xardas_EVENTHOW_15_05"); //Bueno, sÃ­, pero...
+	AI_Output 		(self, hero,"Info_Xardas_EVENTHOW_14_06"); //Â¡Entonces no vuelvas a cuestionar mis palabras!
+	AI_Output 		(self, hero,"Info_Xardas_EVENTHOW_14_07"); //Encuentra al chamÃ¡n. No se lleva demasiado bien con sus hermanos del poblado orco, asÃ­ que quizÃ¡ te escuche antes de convertirte en una antorcha viviente.
+	AI_Output 		(hero, self,"Info_Xardas_EVENTHOW_15_08"); //Â¡Eso me tranquiliza!
 }; 
 
 //---------------------------------------------------------------------
@@ -344,7 +344,7 @@ instance  Info_Xardas_EVENTWHERE (C_INFO)
 	information	= Info_Xardas_EVENTWHERE_Info;
 	important	= 0;
 	permanent	= 0;
-	description = "¿Dónde se encuentra este chamán exiliado?";
+	description = "Â¿DÃ³nde se encuentra este chamÃ¡n exiliado?";
 };
 
 FUNC int  Info_Xardas_EVENTWHERE_Condition()
@@ -356,10 +356,10 @@ FUNC int  Info_Xardas_EVENTWHERE_Condition()
 };
 FUNC void  Info_Xardas_EVENTWHERE_Info()
 {
-	AI_Output 		(hero, self,"Info_Xardas_EVENTWHERE_15_01"); //¿Dónde se encuentra este chamán exiliado?
-	AI_Output 		(self, hero,"Info_Xardas_EVENTWHERE_14_02"); //Dirígete hacia la antigua ciudadela al este. No tiene pérdida, está en la cima de una montaña elevada que puede verse desde lejos.
-	AI_Output 		(hero, self,"Info_Xardas_EVENTWHERE_15_03"); //¿Se puede entrar así como así?
-	AI_Output 		(self, hero,"Info_Xardas_EVENTWHERE_14_04"); //La llaman la vieja ciudadela, pero apenas queda ningún resto aparte de los cimientos de las murallas. Hace décadas que no es más que una ruina.
+	AI_Output 		(hero, self,"Info_Xardas_EVENTWHERE_15_01"); //Â¿DÃ³nde se encuentra este chamÃ¡n exiliado?
+	AI_Output 		(self, hero,"Info_Xardas_EVENTWHERE_14_02"); //DirÃ­gete hacia la antigua ciudadela al este. No tiene pÃ©rdida, estÃ¡ en la cima de una montaÃ±a elevada que puede verse desde lejos.
+	AI_Output 		(hero, self,"Info_Xardas_EVENTWHERE_15_03"); //Â¿Se puede entrar asÃ­ como asÃ­?
+	AI_Output 		(self, hero,"Info_Xardas_EVENTWHERE_14_04"); //La llaman la vieja ciudadela, pero apenas queda ningÃºn resto aparte de los cimientos de las murallas. Hace dÃ©cadas que no es mÃ¡s que una ruina.
 }; 
 
 //---------------------------------------------------------------------
@@ -372,7 +372,7 @@ instance  Info_Xardas_ACCEPT (C_INFO)
 	information	= Info_Xardas_ACCEPT_Info;
 	important	= 0;
 	permanent	= 0;
-	description = "¡Conseguiré las respuestas de este chamán!";
+	description = "Â¡ConseguirÃ© las respuestas de este chamÃ¡n!";
 };
 
 FUNC int  Info_Xardas_ACCEPT_Condition()
@@ -386,9 +386,9 @@ FUNC int  Info_Xardas_ACCEPT_Condition()
 };
 FUNC void  Info_Xardas_ACCEPT_Info()
 {
-	AI_Output 		(hero, self,"Info_Xardas_ACCEPT_15_01"); //¡Conseguiré que el chamán me proporcione las respuestas!
+	AI_Output 		(hero, self,"Info_Xardas_ACCEPT_15_01"); //Â¡ConseguirÃ© que el chamÃ¡n me proporcione las respuestas!
 	AI_Output 		(self, hero,"Info_Xardas_ACCEPT_14_02"); //Mi sirviente ya te ha entregado una runa de teletransporte para la estrella de cinco puntas que hay en el piso de abajo.
-	AI_Output 		(self, hero,"Info_Xardas_ACCEPT_14_03"); //Eso facilitará después tu regreso.
+	AI_Output 		(self, hero,"Info_Xardas_ACCEPT_14_03"); //Eso facilitarÃ¡ despuÃ©s tu regreso.
 
 	B_Story_CordsPost();		// Falls Spieler Gorn am Wassermagier-Pentragramm nicht angesprochen hat!
 	B_Story_FindOrcShaman();
@@ -407,7 +407,7 @@ instance  Kdf_404_Xardas_SELLMAGICSTUFF (C_INFO)
 	important		= 0;
 	permanent		= 1;
 	trade			= 1;
-	description		= "Busco conocimiento mágico."; 
+	description		= "Busco conocimiento mÃ¡gico."; 
 	
 };
 
@@ -421,7 +421,7 @@ FUNC int  Kdf_404_Xardas_SELLMAGICSTUFF_Condition()
 };
 FUNC void  Kdf_404_Xardas_SELLMAGICSTUFF_Info()
 {
-	AI_Output (other, self,"Kdf_404_Xardas_SELLMAGICSTUFF_Info_15_01"); //Busco conocimientos mágicos.
+	AI_Output (other, self,"Kdf_404_Xardas_SELLMAGICSTUFF_Info_15_01"); //Busco conocimientos mÃ¡gicos.
 };
 
 //---------------------------------------------------------------------
@@ -434,7 +434,7 @@ instance  Info_Xardas_RETURN (C_INFO)
 	information	= Info_Xardas_RETURN_Info;
 	important	= 0;
 	permanent	= 0;
-	description = "¡Tengo las respuestas del chamán orco!";
+	description = "Â¡Tengo las respuestas del chamÃ¡n orco!";
 };
 
 FUNC int  Info_Xardas_RETURN_Condition()
@@ -447,20 +447,20 @@ FUNC int  Info_Xardas_RETURN_Condition()
 };
 FUNC void  Info_Xardas_RETURN_Info()
 {
-	AI_Output 		(hero, self,"Info_Xardas_RETURN_15_01"); //¡Tengo las respuestas del chamán orco!
-	AI_Output 		(self, hero,"Info_Xardas_RETURN_14_02"); //¡Bueno, entonces infórmame!
-	AI_Output 		(hero, self,"Info_Xardas_RETURN_15_03"); //Los cinco chamanes orcos que invocaron al Durmiente le erigieron un gran templo subterráneo, cuya entrada se encuentra en el poblado orco.
-	AI_Output 		(self, hero,"Info_Xardas_RETURN_14_04"); //¡En efecto!
-	AI_Output 		(hero, self,"Info_Xardas_RETURN_15_05"); //¡Dando muestras de una gran ingratitud, les arrancó los corazones y les condenó a ellos y a los trabajadores a una existencia eterna como criaturas muertas vivientes!
-	AI_Output 		(self, hero,"Info_Xardas_RETURN_14_06"); //¡Espléndido, espléndido!
-	AI_Output 		(hero, self,"Info_Xardas_RETURN_15_07"); //¡Los orcos sellaron el templo y empezaron a hacer sacrificios para aplacar al demonio!
-	AI_Output 		(self, hero,"Info_Xardas_RETURN_14_08"); //¿Has encontrado una manera de entrar en el templo?
-	AI_Output 		(hero, self,"Info_Xardas_RETURN_15_09"); //Sí, hay un orco que...
-	AI_Output 		(self, hero,"Info_Xardas_RETURN_14_10"); //¡No me des los detalles! ¡Ve al templo subterráneo! ¡Ahí encontrarás la única manera de destruir la Barrera!
-	AI_Output 		(hero, self,"Info_Xardas_RETURN_15_11"); //¡No lo comprendo!
-	AI_Output 		(self, hero,"Info_Xardas_RETURN_14_12"); //¿Es que no acudiste a mí para que te ayudara a destruir la Barrera?
-	AI_Output 		(hero, self,"Info_Xardas_RETURN_15_13"); //Sí, pero...
-	AI_Output 		(self, hero,"Info_Xardas_RETURN_14_14"); //¡ENTONCES VE! ¡Ya hemos perdido demasiado tiempo! ¡Ve al templo subterráneo y encuentra la respuesta!
+	AI_Output 		(hero, self,"Info_Xardas_RETURN_15_01"); //Â¡Tengo las respuestas del chamÃ¡n orco!
+	AI_Output 		(self, hero,"Info_Xardas_RETURN_14_02"); //Â¡Bueno, entonces infÃ³rmame!
+	AI_Output 		(hero, self,"Info_Xardas_RETURN_15_03"); //Los cinco chamanes orcos que invocaron al Durmiente le erigieron un gran templo subterrÃ¡neo, cuya entrada se encuentra en el poblado orco.
+	AI_Output 		(self, hero,"Info_Xardas_RETURN_14_04"); //Â¡En efecto!
+	AI_Output 		(hero, self,"Info_Xardas_RETURN_15_05"); //Â¡Dando muestras de una gran ingratitud, les arrancÃ³ los corazones y les condenÃ³ a ellos y a los trabajadores a una existencia eterna como criaturas muertas vivientes!
+	AI_Output 		(self, hero,"Info_Xardas_RETURN_14_06"); //Â¡EsplÃ©ndido, esplÃ©ndido!
+	AI_Output 		(hero, self,"Info_Xardas_RETURN_15_07"); //Â¡Los orcos sellaron el templo y empezaron a hacer sacrificios para aplacar al demonio!
+	AI_Output 		(self, hero,"Info_Xardas_RETURN_14_08"); //Â¿Has encontrado una manera de entrar en el templo?
+	AI_Output 		(hero, self,"Info_Xardas_RETURN_15_09"); //SÃ­, hay un orco que...
+	AI_Output 		(self, hero,"Info_Xardas_RETURN_14_10"); //Â¡No me des los detalles! Â¡Ve al templo subterrÃ¡neo! Â¡AhÃ­ encontrarÃ¡s la Ãºnica manera de destruir la Barrera!
+	AI_Output 		(hero, self,"Info_Xardas_RETURN_15_11"); //Â¡No lo comprendo!
+	AI_Output 		(self, hero,"Info_Xardas_RETURN_14_12"); //Â¿Es que no acudiste a mÃ­ para que te ayudara a destruir la Barrera?
+	AI_Output 		(hero, self,"Info_Xardas_RETURN_15_13"); //SÃ­, pero...
+	AI_Output 		(self, hero,"Info_Xardas_RETURN_14_14"); //Â¡ENTONCES VE! Â¡Ya hemos perdido demasiado tiempo! Â¡Ve al templo subterrÃ¡neo y encuentra la respuesta!
 
 	B_Story_ReturnedFromUrShak();
 }; 
@@ -483,7 +483,7 @@ instance  Info_Xardas_FOUNDTEMPLE (C_INFO)
 	information		= Info_Xardas_FOUNDTEMPLE_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "¡He encontrado el modo de entrar en el templo subterráneo!"; 
+	description		= "Â¡He encontrado el modo de entrar en el templo subterrÃ¡neo!"; 
 };
 
 FUNC int  Info_Xardas_FOUNDTEMPLE_Condition()
@@ -496,10 +496,10 @@ FUNC int  Info_Xardas_FOUNDTEMPLE_Condition()
 
 FUNC void  Info_Xardas_FOUNDTEMPLE_Info()
 {
-	AI_Output (other, self,"Info_Xardas_FOUNDTEMPLE_15_01"); //¡He encontrado una manera de entrar en el templo subterráneo!
-	AI_Output (self, other,"Info_Xardas_FOUNDTEMPLE_14_02"); //¿QUE HAS...? ¡Eso es extraordinario!
-	AI_Output (self, other,"Info_Xardas_FOUNDTEMPLE_14_03"); //¡Te has hecho muy poderoso! Más que cualquier otro dentro de la Barrera.
-	AI_Output (self, other,"Info_Xardas_FOUNDTEMPLE_14_04"); //¡Puede que sea cierto que eres el hombre del que hablaban las profecías orcas!
+	AI_Output (other, self,"Info_Xardas_FOUNDTEMPLE_15_01"); //Â¡He encontrado una manera de entrar en el templo subterrÃ¡neo!
+	AI_Output (self, other,"Info_Xardas_FOUNDTEMPLE_14_02"); //Â¿QUE HAS...? Â¡Eso es extraordinario!
+	AI_Output (self, other,"Info_Xardas_FOUNDTEMPLE_14_03"); //Â¡Te has hecho muy poderoso! MÃ¡s que cualquier otro dentro de la Barrera.
+	AI_Output (self, other,"Info_Xardas_FOUNDTEMPLE_14_04"); //Â¡Puede que sea cierto que eres el hombre del que hablaban las profecÃ­as orcas!
 };
 
 //---------------------------------------------------------------------
@@ -512,7 +512,7 @@ instance  Info_Xardas_PROPHECY (C_INFO)
 	information		= Info_Xardas_PROPHECY_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "¿Profecías? ¿Qué profecías?"; 
+	description		= "Â¿ProfecÃ­as? Â¿QuÃ© profecÃ­as?"; 
 };
 
 FUNC int  Info_Xardas_PROPHECY_Condition()
@@ -525,12 +525,12 @@ FUNC int  Info_Xardas_PROPHECY_Condition()
 
 FUNC void  Info_Xardas_PROPHECY_Info()
 {
-	AI_Output (other, self,"Info_Xardas_PROPHECY_15_01"); //¿Profecías? ¿Qué profecías?
-	AI_Output (self, other,"Info_Xardas_PROPHECY_14_02"); //Unos antiquísimos documentos orcos, escritos poco después del sellado del templo subterráneo, mencionan a un 'Enemigo Santo'.
-	AI_Output (other, self,"Info_Xardas_PROPHECY_15_03"); //¿Un enemigo santo?
-	AI_Output (self, other,"Info_Xardas_PROPHECY_14_04"); //¡Alguien que vendrá a expulsar al DURMIENTE de nuestro mundo para siempre!
-	AI_Output (other, self,"Info_Xardas_PROPHECY_15_05"); //¿Y se supone que yo soy el que mencionan las antiguas profecías? ¡Sin duda te equivocas!
-	AI_Output (self, other,"Info_Xardas_PROPHECY_14_06"); //Tal vez... ¡pero tal vez no!
+	AI_Output (other, self,"Info_Xardas_PROPHECY_15_01"); //Â¿ProfecÃ­as? Â¿QuÃ© profecÃ­as?
+	AI_Output (self, other,"Info_Xardas_PROPHECY_14_02"); //Unos antiquÃ­simos documentos orcos, escritos poco despuÃ©s del sellado del templo subterrÃ¡neo, mencionan a un 'Enemigo Santo'.
+	AI_Output (other, self,"Info_Xardas_PROPHECY_15_03"); //Â¿Un enemigo santo?
+	AI_Output (self, other,"Info_Xardas_PROPHECY_14_04"); //Â¡Alguien que vendrÃ¡ a expulsar al DURMIENTE de nuestro mundo para siempre!
+	AI_Output (other, self,"Info_Xardas_PROPHECY_15_05"); //Â¿Y se supone que yo soy el que mencionan las antiguas profecÃ­as? Â¡Sin duda te equivocas!
+	AI_Output (self, other,"Info_Xardas_PROPHECY_14_06"); //Tal vez... Â¡pero tal vez no!
 };
 
 //---------------------------------------------------------------------
@@ -543,7 +543,7 @@ instance  Info_Xardas_LOADSWORD (C_INFO)
 	information		= Info_Xardas_LOADSWORD_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "He encontrado esta extraña espada."; 
+	description		= "He encontrado esta extraÃ±a espada."; 
 };
 
 FUNC int  Info_Xardas_LOADSWORD_Condition()
@@ -556,8 +556,8 @@ FUNC int  Info_Xardas_LOADSWORD_Condition()
 
 FUNC void  Info_Xardas_LOADSWORD_Info()
 {
-	AI_Output				(other, self,"Info_Xardas_LOADSWORD_15_01"); //He encontrado esta extraña espada.
-	AI_Output				(self, other,"Info_Xardas_LOADSWORD_14_02"); //Enséñamela.
+	AI_Output				(other, self,"Info_Xardas_LOADSWORD_15_01"); //He encontrado esta extraÃ±a espada.
+	AI_Output				(self, other,"Info_Xardas_LOADSWORD_14_02"); //EnsÃ©Ã±amela.
 
 	CreateInvItem 			(self, Mythrilklinge01);
 	AI_EquipBestMeleeWeapon	(self);
@@ -566,10 +566,10 @@ FUNC void  Info_Xardas_LOADSWORD_Info()
 	AI_RemoveWeapon			(self);
 	AI_UnequipWeapons		(self);
 
-	AI_Output				(self, other,"Info_Xardas_LOADSWORD_14_03"); //Interesante. En ella está grabada la palabra 'URIZIEL'
-	AI_Output				(self, other,"Info_Xardas_LOADSWORD_14_04"); //he oído hablar de esta espada. Es un arma de la antigüedad, de cuando la raza humana era joven.
-	AI_Output				(self, other,"Info_Xardas_LOADSWORD_14_05"); //Fue forjada de un material desconocido. ¡Y no hay nada escrito acerca de quien la creó!
-	AI_Output				(self, other,"Info_Xardas_LOADSWORD_14_06"); //¡Se decía que la espada tenía unos poderes increíbles, pero no detecto ningún aura mágica! 
+	AI_Output				(self, other,"Info_Xardas_LOADSWORD_14_03"); //Interesante. En ella estÃ¡ grabada la palabra 'URIZIEL'
+	AI_Output				(self, other,"Info_Xardas_LOADSWORD_14_04"); //he oÃ­do hablar de esta espada. Es un arma de la antigÃ¼edad, de cuando la raza humana era joven.
+	AI_Output				(self, other,"Info_Xardas_LOADSWORD_14_05"); //Fue forjada de un material desconocido. Â¡Y no hay nada escrito acerca de quien la creÃ³!
+	AI_Output				(self, other,"Info_Xardas_LOADSWORD_14_06"); //Â¡Se decÃ­a que la espada tenÃ­a unos poderes increÃ­bles, pero no detecto ningÃºn aura mÃ¡gica! 
 	
 	Npc_RemoveInvItem 		(hero, Mythrilklinge);	
 	CreateInvItem 			(hero, Mythrilklinge01);
@@ -585,7 +585,7 @@ instance  Info_Xardas_LOADSWORD01 (C_INFO)
 	information		= Info_Xardas_LOADSWORD01_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "¿URIZIEL poseía poderes increíbles?"; 
+	description		= "Â¿URIZIEL poseÃ­a poderes increÃ­bles?"; 
 };
 
 FUNC int  Info_Xardas_LOADSWORD01_Condition()
@@ -601,11 +601,11 @@ FUNC void  Info_Xardas_LOADSWORD01_Info()
 {
 	Npc_RemoveInvItem 	(self, Mythrilklinge01);
 
-	AI_Output 			(other, self,"Info_Xardas_LOADSWORD01_15_01"); //¿URIZIEL poseía poderes increíbles?
-	AI_Output 			(self, other,"Info_Xardas_LOADSWORD01_14_02"); //Está escrito que el dueño del arma podía perforar la armadura más resistente y atravesar los hechizos de protección más poderosos.
-	AI_Output 			(other, self,"Info_Xardas_LOADSWORD01_15_03"); //¿Cómo consiguieron obtener los orcos un arma tan poderosa?
-	AI_Output 			(self, other,"Info_Xardas_LOADSWORD01_14_04"); //Se dice que los orcos la obtuvieron de manos de un poderoso señor de la guerra. ¡No sabían cómo utilizarla, pero la escondieron!
-	AI_Output 			(other, self,"Info_Xardas_LOADSWORD01_15_05"); //¡Pero no la ocultaron lo bastante bien!
+	AI_Output 			(other, self,"Info_Xardas_LOADSWORD01_15_01"); //Â¿URIZIEL poseÃ­a poderes increÃ­bles?
+	AI_Output 			(self, other,"Info_Xardas_LOADSWORD01_14_02"); //EstÃ¡ escrito que el dueÃ±o del arma podÃ­a perforar la armadura mÃ¡s resistente y atravesar los hechizos de protecciÃ³n mÃ¡s poderosos.
+	AI_Output 			(other, self,"Info_Xardas_LOADSWORD01_15_03"); //Â¿CÃ³mo consiguieron obtener los orcos un arma tan poderosa?
+	AI_Output 			(self, other,"Info_Xardas_LOADSWORD01_14_04"); //Se dice que los orcos la obtuvieron de manos de un poderoso seÃ±or de la guerra. Â¡No sabÃ­an cÃ³mo utilizarla, pero la escondieron!
+	AI_Output 			(other, self,"Info_Xardas_LOADSWORD01_15_05"); //Â¡Pero no la ocultaron lo bastante bien!
 };
 
 //---------------------------------------------------------------------
@@ -618,7 +618,7 @@ instance  Info_Xardas_LOADSWORD02 (C_INFO)
 	information		= Info_Xardas_LOADSWORD02_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "¿Es posible restaurar los antiguos poderes del arma?"; 
+	description		= "Â¿Es posible restaurar los antiguos poderes del arma?"; 
 };
 
 FUNC int  Info_Xardas_LOADSWORD02_Condition()
@@ -631,12 +631,12 @@ FUNC int  Info_Xardas_LOADSWORD02_Condition()
 
 FUNC void  Info_Xardas_LOADSWORD02_Info()
 {
-	AI_Output 			(other, self,"Info_Xardas_LOADSWORD02_15_01"); //¿Sería posible devolverle al arma sus antiguos poderes?
-	AI_Output 			(self, other,"Info_Xardas_LOADSWORD02_14_02"); //Para eso sería necesaria una gran fuente de poder.
-	AI_Output 			(other, self,"Info_Xardas_LOADSWORD02_15_03"); //¿Quieres decir lo suficientemente fuerte como para poder hacer explotar la Barrera Mágica?
-	AI_Output 			(self, other,"Info_Xardas_LOADSWORD02_14_04"); //Sí, así de fuerte, más o menos.
-	AI_Output 			(self, other,"Info_Xardas_LOADSWORD02_14_05"); //Además, necesitarás una fórmula mágica para transferir el poder.
-	AI_Output			(self, other,"Info_Xardas_LOADSWORD02_14_06"); //Dame algo de tiempo y crearé la fórmula mágica.
+	AI_Output 			(other, self,"Info_Xardas_LOADSWORD02_15_01"); //Â¿SerÃ­a posible devolverle al arma sus antiguos poderes?
+	AI_Output 			(self, other,"Info_Xardas_LOADSWORD02_14_02"); //Para eso serÃ­a necesaria una gran fuente de poder.
+	AI_Output 			(other, self,"Info_Xardas_LOADSWORD02_15_03"); //Â¿Quieres decir lo suficientemente fuerte como para poder hacer explotar la Barrera MÃ¡gica?
+	AI_Output 			(self, other,"Info_Xardas_LOADSWORD02_14_04"); //SÃ­, asÃ­ de fuerte, mÃ¡s o menos.
+	AI_Output 			(self, other,"Info_Xardas_LOADSWORD02_14_05"); //AdemÃ¡s, necesitarÃ¡s una fÃ³rmula mÃ¡gica para transferir el poder.
+	AI_Output			(self, other,"Info_Xardas_LOADSWORD02_14_06"); //Dame algo de tiempo y crearÃ© la fÃ³rmula mÃ¡gica.
 
 	B_Story_ShowedUrizielToXardas();
 };
@@ -652,7 +652,7 @@ instance  Info_Xardas_BETTERARMOR (C_INFO)
 	information		= Info_Xardas_BETTERARMOR_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Mientras tanto, buscaré una armadura mejor."; 
+	description		= "Mientras tanto, buscarÃ© una armadura mejor."; 
 };
 
 FUNC int  Info_Xardas_BETTERARMOR_Condition()
@@ -665,30 +665,30 @@ FUNC int  Info_Xardas_BETTERARMOR_Condition()
 
 FUNC void  Info_Xardas_BETTERARMOR_Info()
 {
-	AI_Output		(other, self,"Info_Xardas_BETTERARMOR_15_01"); //¡Mientras tanto buscaré una armadura mejor!
+	AI_Output		(other, self,"Info_Xardas_BETTERARMOR_15_01"); //Â¡Mientras tanto buscarÃ© una armadura mejor!
 
 	var C_ITEM	armor;			armor 			= Npc_GetEquippedArmor	(hero);
 	var int		armorInstance;	armorInstance	= Hlp_GetInstanceID		(armor);
 	if (armorInstance == CRW_ARMOR_H)
 	{
-		AI_Output	(other, self,"Info_Xardas_BETTERARMOR_15_02"); //¡Estas placas de reptador remendadas han recibido demasiados agujeros en el templo subterráneo!
+		AI_Output	(other, self,"Info_Xardas_BETTERARMOR_15_02"); //Â¡Estas placas de reptador remendadas han recibido demasiados agujeros en el templo subterrÃ¡neo!
 	}
 	else if (armorInstance == KDW_ARMOR_H) || (armorInstance == KDW_ARMOR_L)		
 	{
-		AI_Output	(other, self,"Info_Xardas_BETTERARMOR_15_03"); //¡Estos harapos azules no fueron protección suficiente en el templo subterráneo!
+		AI_Output	(other, self,"Info_Xardas_BETTERARMOR_15_03"); //Â¡Estos harapos azules no fueron protecciÃ³n suficiente en el templo subterrÃ¡neo!
 	}
 	else
 	{
-		AI_Output	(other, self,"Info_Xardas_BETTERARMOR_15_04"); //¡Los muertos vivientes han abollado demasiado mi armadura!
+		AI_Output	(other, self,"Info_Xardas_BETTERARMOR_15_04"); //Â¡Los muertos vivientes han abollado demasiado mi armadura!
 	};
 	
-	AI_Output		(self, other,"Info_Xardas_BETTERARMOR_14_05"); //Deberías ir a mi antigua torre.
-	AI_Output		(other, self,"Info_Xardas_BETTERARMOR_15_06"); //¿Tu antigua torre?
-	AI_Output		(self, other,"Info_Xardas_BETTERARMOR_14_07"); //Se hundió bajo la superficie de uno de los lagos del este durante uno de los terremotos. Sus agujas todavía asoman por encima del agua.
+	AI_Output		(self, other,"Info_Xardas_BETTERARMOR_14_05"); //DeberÃ­as ir a mi antigua torre.
+	AI_Output		(other, self,"Info_Xardas_BETTERARMOR_15_06"); //Â¿Tu antigua torre?
+	AI_Output		(self, other,"Info_Xardas_BETTERARMOR_14_07"); //Se hundiÃ³ bajo la superficie de uno de los lagos del este durante uno de los terremotos. Sus agujas todavÃ­a asoman por encima del agua.
 	AI_Output		(self, other,"Info_Xardas_BETTERARMOR_14_08"); //En su interior quedan algunos artefactos. Nunca he intentado recuperarlos.
-	AI_Output		(other, self,"Info_Xardas_BETTERARMOR_15_09"); //¿Cómo puedo llegar hasta allí?
-	AI_Output		(self, other,"Info_Xardas_BETTERARMOR_14_10"); //No he estado allí desde el terremoto, así que tendrás que encontrar por ti mismo la manera de entrar.
-	AI_Output		(self, other,"Info_Xardas_BETTERARMOR_14_11"); //Pero toma esta llave. Es la que abre el arcón en el que solía guardar algunos artefactos particularmente poco corrientes.
+	AI_Output		(other, self,"Info_Xardas_BETTERARMOR_15_09"); //Â¿CÃ³mo puedo llegar hasta allÃ­?
+	AI_Output		(self, other,"Info_Xardas_BETTERARMOR_14_10"); //No he estado allÃ­ desde el terremoto, asÃ­ que tendrÃ¡s que encontrar por ti mismo la manera de entrar.
+	AI_Output		(self, other,"Info_Xardas_BETTERARMOR_14_11"); //Pero toma esta llave. Es la que abre el arcÃ³n en el que solÃ­a guardar algunos artefactos particularmente poco corrientes.
 
 	B_Story_ExploreSunkenTower();
 };
@@ -722,15 +722,15 @@ FUNC void  Info_Xardas_OREARMOR_Info()
 	if	(armorInstance == ORE_ARMOR_M)
 	||	(armorInstance == ORE_ARMOR_H)
 	{
-		AI_Output	(self, other,"Info_Xardas_OREARMOR_14_01"); //¡Veo que llevas puesta la armadura de mineral!
+		AI_Output	(self, other,"Info_Xardas_OREARMOR_14_01"); //Â¡Veo que llevas puesta la armadura de mineral!
 	}
 	else
 	{
 		AI_Output	(self, other,"Info_Xardas_OREARMOR_14_02"); //Ya veo que has encontrado la armadura de mineral
 	};
-	AI_Output		(other, self,"Info_Xardas_OREARMOR_15_03"); //La encontré en uno de esos arcones viejos en la torre hundida.
-	AI_Output		(self, other,"Info_Xardas_OREARMOR_14_04"); //Pertenecía al general que blandió a URIZIEL en la batalla contra los orcos.
-	AI_Output		(other, self,"Info_Xardas_OREARMOR_15_05"); //¡Espero que me traiga más suerte de la que le trajo a él!
+	AI_Output		(other, self,"Info_Xardas_OREARMOR_15_03"); //La encontrÃ© en uno de esos arcones viejos en la torre hundida.
+	AI_Output		(self, other,"Info_Xardas_OREARMOR_14_04"); //PertenecÃ­a al general que blandiÃ³ a URIZIEL en la batalla contra los orcos.
+	AI_Output		(other, self,"Info_Xardas_OREARMOR_15_05"); //Â¡Espero que me traiga mÃ¡s suerte de la que le trajo a Ã©l!
 };
 
 //---------------------------------------------------------------------
@@ -743,7 +743,7 @@ instance  Info_Xardas_FORMULA (C_INFO)
 	information		= Info_Xardas_FORMULA_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "¿Has finalizado la fórmula mágica para reactivar a URIZIEL?";
+	description		= "Â¿Has finalizado la fÃ³rmula mÃ¡gica para reactivar a URIZIEL?";
 };
 
 FUNC int  Info_Xardas_FORMULA_Condition()
@@ -758,12 +758,12 @@ FUNC int  Info_Xardas_FORMULA_Condition()
 
 FUNC void  Info_Xardas_FORMULA_Info()
 {
-	AI_Output		(other, self,"Info_Xardas_FORMULA_15_01"); //¿Has conseguido completar la fórmula mágica para reactivar a URIZIEL?
-	AI_Output		(self, other,"Info_Xardas_FORMULA_14_02"); //Sí, ya está. Pero no podrás utilizarla tú solo.
-	AI_Output		(other, self,"Info_Xardas_FORMULA_15_03"); //¿Por qué no?
-	AI_Output		(self, other,"Info_Xardas_FORMULA_14_04"); //Tiene que ser leída en voz alta por un mago mientras tú tocas la fuente de poder con la espada.
-	AI_Output		(other, self,"Info_Xardas_FORMULA_15_05"); //¡Entonces tendré que buscar ayuda!
-	AI_Output		(self, other,"Info_Xardas_FORMULA_14_06"); //Toma la fórmula y devuélvele a la espada su antiguo poder. ¡Te hará falta!
+	AI_Output		(other, self,"Info_Xardas_FORMULA_15_01"); //Â¿Has conseguido completar la fÃ³rmula mÃ¡gica para reactivar a URIZIEL?
+	AI_Output		(self, other,"Info_Xardas_FORMULA_14_02"); //SÃ­, ya estÃ¡. Pero no podrÃ¡s utilizarla tÃº solo.
+	AI_Output		(other, self,"Info_Xardas_FORMULA_15_03"); //Â¿Por quÃ© no?
+	AI_Output		(self, other,"Info_Xardas_FORMULA_14_04"); //Tiene que ser leÃ­da en voz alta por un mago mientras tÃº tocas la fuente de poder con la espada.
+	AI_Output		(other, self,"Info_Xardas_FORMULA_15_05"); //Â¡Entonces tendrÃ© que buscar ayuda!
+	AI_Output		(self, other,"Info_Xardas_FORMULA_14_06"); //Toma la fÃ³rmula y devuÃ©lvele a la espada su antiguo poder. Â¡Te harÃ¡ falta!
 
 	B_Story_LoadSword();
 };
@@ -778,7 +778,7 @@ instance  Info_Xardas_ALTRUNE (C_INFO)
 	information		= Info_Xardas_ALTRUNE_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "¡Como soy mago, me resultará difícil blandir a URIZIEL!";
+	description		= "Â¡Como soy mago, me resultarÃ¡ difÃ­cil blandir a URIZIEL!";
 };
 
 FUNC int  Info_Xardas_ALTRUNE_Condition()
@@ -792,9 +792,9 @@ FUNC int  Info_Xardas_ALTRUNE_Condition()
 
 FUNC void  Info_Xardas_ALTRUNE_Info()
 {
-	AI_Output		(other, self,"Info_Xardas_ALTRUNE_15_01"); //¡Dado que soy un mago, me resultará difícil blandir a URIZIEL!
-	AI_Output		(self, other,"Info_Xardas_ALTRUNE_14_02"); //Existe una solución.
-	AI_Output		(self, other,"Info_Xardas_ALTRUNE_14_03"); //¡Pero primero tendrás que devolverle a la espada sus antiguos poderes! ¡Regresa cuando lo hayas hecho!
+	AI_Output		(other, self,"Info_Xardas_ALTRUNE_15_01"); //Â¡Dado que soy un mago, me resultarÃ¡ difÃ­cil blandir a URIZIEL!
+	AI_Output		(self, other,"Info_Xardas_ALTRUNE_14_02"); //Existe una soluciÃ³n.
+	AI_Output		(self, other,"Info_Xardas_ALTRUNE_14_03"); //Â¡Pero primero tendrÃ¡s que devolverle a la espada sus antiguos poderes! Â¡Regresa cuando lo hayas hecho!
 };
 
 
@@ -808,7 +808,7 @@ instance  Info_Xardas_SWORDLOADED (C_INFO)
 	information		= Info_Xardas_SWORDLOADED_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "¡He reactivado a URIZIEL!"; 
+	description		= "Â¡He reactivado a URIZIEL!"; 
 };
 
 FUNC int  Info_Xardas_SWORDLOADED_Condition()
@@ -821,10 +821,10 @@ FUNC int  Info_Xardas_SWORDLOADED_Condition()
 
 FUNC void  Info_Xardas_SWORDLOADED_Info()
 {
-	AI_Output		(other, self,"Info_Xardas_SWORDLOADED_15_01"); //¡He reactivado a URIZIEL!
-	AI_Output		(self, other,"Info_Xardas_SWORDLOADED_14_02"); //Es increíble; la espada ha recuperado sus antiguos poderes. ¡Ahora tienes un arma verdaderamente poderosa!
+	AI_Output		(other, self,"Info_Xardas_SWORDLOADED_15_01"); //Â¡He reactivado a URIZIEL!
+	AI_Output		(self, other,"Info_Xardas_SWORDLOADED_14_02"); //Es increÃ­ble; la espada ha recuperado sus antiguos poderes. Â¡Ahora tienes un arma verdaderamente poderosa!
 
-	Wld_InsertItem			(ItArScrollTeleport4,"OW_ORC_SHAMAN_ROOM2");	//Unblutige Lösung für´s Ich-brauch-Orc-Statue-Massaker ***Björn***
+	Wld_InsertItem			(ItArScrollTeleport4,"OW_ORC_SHAMAN_ROOM2");	//Unblutige LÃ¶sung fÃ¼rÂ´s Ich-brauch-Orc-Statue-Massaker ***BjÃ¶rn***
 
 };
 
@@ -838,7 +838,7 @@ instance  Info_Xardas_MAKERUNE (C_INFO)
 	information		= Info_Xardas_MAKERUNE_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "¡Dijiste que podría haber un modo de esgrimir a URIZIEL aunque yo fuera un mago!"; 
+	description		= "Â¡Dijiste que podrÃ­a haber un modo de esgrimir a URIZIEL aunque yo fuera un mago!"; 
 };
 
 FUNC int  Info_Xardas_MAKERUNE_Condition()
@@ -852,13 +852,13 @@ FUNC int  Info_Xardas_MAKERUNE_Condition()
 
 FUNC void  Info_Xardas_MAKERUNE_Info()
 {
-	AI_Output		(other, self,"Info_Xardas_MAKERUNE_15_01"); //Dijiste que existía una manera en que podría blandir a URIZIEL pese a ser un mago, ¿no?
-	AI_Output		(self, other,"Info_Xardas_MAKERUNE_14_02"); //Examina a URIZIEL con detenimiento. Verás que en la espada hay una joya azul de gran tamaño.
-	AI_Output		(self, other,"Info_Xardas_MAKERUNE_14_03"); //Ahí es donde residen los poderes mágicos del arma.
-	AI_Output		(self, other,"Info_Xardas_MAKERUNE_14_04"); //Si quito la joya, podré crear una runa mágica que posea los atributos de URIZIEL.
-	AI_Output		(other, self,"Info_Xardas_MAKERUNE_15_05"); //¿Una runa mágica hecha con URIZIEL?
-	AI_Output		(self, other,"Info_Xardas_MAKERUNE_14_06"); //¡En combate, la runa será tan poderosa como la espada!
-	AI_Output		(self, other,"Info_Xardas_MAKERUNE_14_07"); //¡Pero no te olvides de que sólo un Mago del Sexto Círculo será capaz de controlar una runa mágica tan poderosa!
+	AI_Output		(other, self,"Info_Xardas_MAKERUNE_15_01"); //Dijiste que existÃ­a una manera en que podrÃ­a blandir a URIZIEL pese a ser un mago, Â¿no?
+	AI_Output		(self, other,"Info_Xardas_MAKERUNE_14_02"); //Examina a URIZIEL con detenimiento. VerÃ¡s que en la espada hay una joya azul de gran tamaÃ±o.
+	AI_Output		(self, other,"Info_Xardas_MAKERUNE_14_03"); //AhÃ­ es donde residen los poderes mÃ¡gicos del arma.
+	AI_Output		(self, other,"Info_Xardas_MAKERUNE_14_04"); //Si quito la joya, podrÃ© crear una runa mÃ¡gica que posea los atributos de URIZIEL.
+	AI_Output		(other, self,"Info_Xardas_MAKERUNE_15_05"); //Â¿Una runa mÃ¡gica hecha con URIZIEL?
+	AI_Output		(self, other,"Info_Xardas_MAKERUNE_14_06"); //Â¡En combate, la runa serÃ¡ tan poderosa como la espada!
+	AI_Output		(self, other,"Info_Xardas_MAKERUNE_14_07"); //Â¡Pero no te olvides de que sÃ³lo un Mago del Sexto CÃ­rculo serÃ¡ capaz de controlar una runa mÃ¡gica tan poderosa!
 };
 
 //---------------------------------------------------------------------
@@ -871,7 +871,7 @@ instance  Info_Xardas_MAKERUNEDOIT (C_INFO)
 	information		= Info_Xardas_MAKERUNEDOIT_Info;
 	important		= 0;
 	permanent		= 1;
-	description		= "¡Quita la joya de URIZIEL!"; 
+	description		= "Â¡Quita la joya de URIZIEL!"; 
 };
 
 FUNC int  Info_Xardas_MAKERUNEDOIT_Condition()
@@ -885,38 +885,38 @@ FUNC int  Info_Xardas_MAKERUNEDOIT_Condition()
 
 FUNC void  Info_Xardas_MAKERUNEDOIT_Info()
 {
-	AI_Output			(other, self,"Info_Xardas_MAKERUNEDOIT_15_01"); //¡Saca la joya de URIZIEL!
+	AI_Output			(other, self,"Info_Xardas_MAKERUNEDOIT_15_01"); //Â¡Saca la joya de URIZIEL!
 	if (Npc_GetTalentSkill(hero, NPC_TALENT_MAGE) < 6)
 	{
-		AI_Output		(self, other,"Info_Xardas_MAKERUNEDOIT_14_02"); //¡Pero todavía no dominas el Sexto Círculo de Magia!
+		AI_Output		(self, other,"Info_Xardas_MAKERUNEDOIT_14_02"); //Â¡Pero todavÃ­a no dominas el Sexto CÃ­rculo de Magia!
 	};
-	AI_Output			(self, other,"Info_Xardas_MAKERUNEDOIT_14_03"); //Esta decisión es definitiva. ¿Estás seguro de querer que extraiga la joya?
+	AI_Output			(self, other,"Info_Xardas_MAKERUNEDOIT_14_03"); //Esta decisiÃ³n es definitiva. Â¿EstÃ¡s seguro de querer que extraiga la joya?
 
 	Info_ClearChoices	(Info_Xardas_MAKERUNEDOIT);
-	Info_AddChoice		(Info_Xardas_MAKERUNEDOIT,"¡SÍ, hazlo!",	Info_Xardas_MAKERUNE_YES);
-	Info_AddChoice		(Info_Xardas_MAKERUNEDOIT,"¡NO, no lo hagas!",	Info_Xardas_MAKERUNE_NO);
+	Info_AddChoice		(Info_Xardas_MAKERUNEDOIT,"Â¡SÃ, hazlo!",	Info_Xardas_MAKERUNE_YES);
+	Info_AddChoice		(Info_Xardas_MAKERUNEDOIT,"Â¡NO, no lo hagas!",	Info_Xardas_MAKERUNE_NO);
 };
 
 func void Info_Xardas_MAKERUNE_YES ()
 {
 	Info_ClearChoices	(Info_Xardas_MAKERUNEDOIT);
-	AI_Output			(other, self,"Info_Xardas_MAKERUNEDOIT_15_04"); //¡Sí, hazlo!
-	AI_Output			(self, other,"Info_Xardas_MAKERUNEDOIT_14_05"); //Ya que así lo deseas... ¡Toma, aquí tienes la espada vacía y la runa!
+	AI_Output			(other, self,"Info_Xardas_MAKERUNEDOIT_15_04"); //Â¡SÃ­, hazlo!
+	AI_Output			(self, other,"Info_Xardas_MAKERUNEDOIT_14_05"); //Ya que asÃ­ lo deseas... Â¡Toma, aquÃ­ tienes la espada vacÃ­a y la runa!
 
 	Npc_RemoveInvItem 	(hero, Mythrilklinge02);
 	CreateInvItems 		(self, UrizielRune, 2);	
-	B_GiveInvItems      (self, hero, UrizielRune, 2);// Wegen Ausgabe "2 Items übergeben", wird direkt angeglichen
+	B_GiveInvItems      (self, hero, UrizielRune, 2);// Wegen Ausgabe "2 Items Ã¼bergeben", wird direkt angeglichen
 	Npc_RemoveInvItem	(hero, UrizielRune);
 	CreateInvItem		(hero, Mythrilklinge03);
-	B_LogEntry			(CH5_Uriziel,"Xardas ha arrancado la gema mágica de la espada URIZIEL. El poder de esta hoja reside ahora en una runa mágica de poderes sin igual.");
+	B_LogEntry			(CH5_Uriziel,"Xardas ha arrancado la gema mÃ¡gica de la espada URIZIEL. El poder de esta hoja reside ahora en una runa mÃ¡gica de poderes sin igual.");
 	Log_SetTopicStatus	(CH5_Uriziel,	LOG_SUCCESS);
 };	
 
 func void Info_Xardas_MAKERUNE_NO ()
 {
 	Info_ClearChoices	(Info_Xardas_MAKERUNEDOIT);
-	AI_Output			(other, self,"Info_Xardas_MAKERUNEDOIT_15_06"); //¡NO, no lo hagas!
-	AI_Output			(self, other,"Info_Xardas_MAKERUNEDOIT_14_07"); //Como desees. ¡La espada seguirá teniendo sus poderes mágicos!
+	AI_Output			(other, self,"Info_Xardas_MAKERUNEDOIT_15_06"); //Â¡NO, no lo hagas!
+	AI_Output			(self, other,"Info_Xardas_MAKERUNEDOIT_14_07"); //Como desees. Â¡La espada seguirÃ¡ teniendo sus poderes mÃ¡gicos!
 };	
 	
 
@@ -943,23 +943,23 @@ FUNC int  Info_Xardas_LOADSWORD09_Condition()
 };
 func void  Info_Xardas_LOADSWORD09_Info()
 {
-	AI_Output (other, self,"Info_Xardas_LOADSWORD09_15_01");		//¿Puedes enseñarme?
+	AI_Output (other, self,"Info_Xardas_LOADSWORD09_15_01");		//Â¿Puedes enseÃ±arme?
 	
 	if ( Npc_GetTalentSkill	( hero,	NPC_TALENT_MAGE ) == 5) 
 	{
 		
 		if (B_GiveSkill(other, NPC_TALENT_MAGE, 6, LPCOST_TALENT_MAGE_6))
 		{
-			AI_Output (self, other,"Info_Xardas_LOADSWORD09_14_02"); //Te elevaré hasta el Sexto Círculo de Magia.
-			AI_Output (self, other,"Info_Xardas_LOADSWORD09_14_03"); //Ten en cuenta que únicamente los magos más poderosos ingresan en el Sexto Círculo. Está reservado para aquellos cuya vida es una señal.
-			AI_Output (self, other,"Info_Xardas_LOADSWORD09_14_04"); //Tu señal es la unificación de los elementos.
-			AI_Output (self, other,"Info_Xardas_LOADSWORD09_14_05"); //El Sexto Círculo te permite hacer uso de la magia de cualquier runa.
+			AI_Output (self, other,"Info_Xardas_LOADSWORD09_14_02"); //Te elevarÃ© hasta el Sexto CÃ­rculo de Magia.
+			AI_Output (self, other,"Info_Xardas_LOADSWORD09_14_03"); //Ten en cuenta que Ãºnicamente los magos mÃ¡s poderosos ingresan en el Sexto CÃ­rculo. EstÃ¡ reservado para aquellos cuya vida es una seÃ±al.
+			AI_Output (self, other,"Info_Xardas_LOADSWORD09_14_04"); //Tu seÃ±al es la unificaciÃ³n de los elementos.
+			AI_Output (self, other,"Info_Xardas_LOADSWORD09_14_05"); //El Sexto CÃ­rculo te permite hacer uso de la magia de cualquier runa.
 			AI_Output (self, other,"Info_Xardas_LOADSWORD09_14_06"); //Y no olvides que no debes reclamar el poder, sino servirlo.
 			
-			CreateInvItem 		(hero, DMB_ARMOR_M);		// SN: kann nicht mit B_GiveInvItem() übergeben werden, da Xardas sonst nackt dasteht!
+			CreateInvItem 		(hero, DMB_ARMOR_M);		// SN: kann nicht mit B_GiveInvItem() Ã¼bergeben werden, da Xardas sonst nackt dasteht!
 			AI_EquipBestArmor	(hero);
 
-			//Fakeitem für Bildschirmausgabe
+			//Fakeitem fÃ¼r Bildschirmausgabe
 			CreateInvItem		(self,			ItAmArrow);
 			B_GiveInvItems		(self, hero,	ItAmArrow, 1);
 			Npc_RemoveInvItem	(hero,			ItAmArrow);
@@ -972,7 +972,7 @@ func void  Info_Xardas_LOADSWORD09_Info()
 	}
 	else 
 	{
-		AI_Output (self, other,"Info_Xardas_LOADSWORD09_14_07"); 	//Todavía no. Tienes el talento, pero careces de la suficiente experiencia. Que Saturas te enseñe primero; después te instruiré yo.
+		AI_Output (self, other,"Info_Xardas_LOADSWORD09_14_07"); 	//TodavÃ­a no. Tienes el talento, pero careces de la suficiente experiencia. Que Saturas te enseÃ±e primero; despuÃ©s te instruirÃ© yo.
 		
 		AI_StopProcessInfos	( self );
 	};

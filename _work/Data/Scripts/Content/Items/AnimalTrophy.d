@@ -1,9 +1,9 @@
 // ************************************************************************************************
-// Wert von Tiertroph鋏n
+// Wert von Tiertroph盲en
 // ************************************************************************************************
 
-// FIXME: welche Troph鋏 wann freigeschaltet? Wert tunen!
-const int	Value_Z鋒ne				=	10;
+// FIXME: welche Troph盲e wann freigeschaltet? Wert tunen!
+const int	Value_Z盲hne				=	10;
 const int	Value_Krallen			=	15;
 
 const int	Value_Wolfsfell			=	10;
@@ -22,17 +22,17 @@ const int	Value_Sumpfhaihaut		=	200;
 const int	Value_Trollfell			=	300;
 
 // Bloodfly
-const int	Value_Fl黦el			=	15;
+const int	Value_Fl眉gel			=	15;
 const int	Value_Stachel			=	25;
 
 // Durch Ulu-Mulu freigeschaltet
 // bei Auftragsvergabe werden je 3 neue Monster gespawnt
 const int	Value_Feuerzunge		=	500;
-const int	Value_Sumpfhaiz鋒ne		=	500;
+const int	Value_Sumpfhaiz盲hne		=	500;
 const int	Value_Shadowbeasthorn	=	500;
 const int	Value_Trollhauer		=	500;
 
-// Golems beim D鋗onenbeschw鰎er
+// Golems beim D盲monenbeschw枚rer
 const int	Value_Steinherz			=	1000;
 const int	Value_Feuerherz			=	1000;
 const int	Value_Eisherz			=	1000;
@@ -42,21 +42,21 @@ const int	Value_Eistueck			=	100;
 /*
 So in der Tasche
 ----------------
-ItAt_Meatbug_01 	//Meatbug			K鰎per (Essen)		(Item-Instanz in Food.d)
+ItAt_Meatbug_01 	//Meatbug			K枚rper (Essen)		(Item-Instanz in Food.d)
 ItFoMuttonRaw		//Scavenger			2 Bollen			OK
 					//Molerats			2 Bollen			OK
 					//Shadowbeast		4 Bollen			OK
 
-ItAt_Bloodfly_01 	//Bloodfly			Fl黦el				OK
+ItAt_Bloodfly_01 	//Bloodfly			Fl眉gel				OK
 
-Durch J鋑er freigeschaltet (noch nicht verteilt)
+Durch J盲ger freigeschaltet (noch nicht verteilt)
 --------------------------
-ItAt_Teeth_01 		//Wolf				2 Z鋒ne				OK
-					//Schwarzer Wolf	2 Z鋒ne				OK
-					//Snapper			10 Z鋒ne			OK
-					//Orcbiter			2 Z鋒ne				OK
-					//Shadowbeast		4 Z鋒ne				OK
-					//Bloodhound		4 Z鋒ne				OK
+ItAt_Teeth_01 		//Wolf				2 Z盲hne				OK
+					//Schwarzer Wolf	2 Z盲hne				OK
+					//Snapper			10 Z盲hne			OK
+					//Orcbiter			2 Z盲hne				OK
+					//Shadowbeast		4 Z盲hne				OK
+					//Bloodhound		4 Z盲hne				OK
 //--------------------------------------------------------------
 ItAt_Claws_01 		//Waran				4 Klauen			OK
 					//Feuerechse		4 Klauen			OK
@@ -85,7 +85,7 @@ ItAt_Crawler_02 	//Crawler			Panzerplatten		OK
 Durch Ulu-Mulu freigeschaltet
 -----------------------------
 ItAt_Waran_01 		//Feuerechse		Flammenzunge		OK
-ItAt_Swampshark_02 	//Sumpfhai			Z鋒ne des Sumpfhais	OK
+ItAt_Swampshark_02 	//Sumpfhai			Z盲hne des Sumpfhais	OK
 ItAt_Shadow_02 		//Shadowbeast		Horn				OK
 ItAt_Troll_02 		//Troll				Hauer				OK
 */
@@ -98,13 +98,13 @@ INSTANCE ItAt_Teeth_01 (C_Item)
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
 
-	value 				=	Value_Z鋒ne;
+	value 				=	Value_Z盲hne;
 
 	visual 				=	"ItAt_Teeth_01.3DS";
 	material 			=	MAT_LEATHER;
 
 	description			= name;
-	TEXT[4]				= NAME_Value;					COUNT[4]	= Value_Z鋒ne;
+	TEXT[4]				= NAME_Value;					COUNT[4]	= Value_Z盲hne;
 };
 
 /******************************************************************************************/
@@ -191,7 +191,7 @@ INSTANCE ItAt_Crawler_02 (C_Item)
 /******************************************************************************************/
 INSTANCE ItAt_Crawler_01 (C_Item)
 {
-	name 				=	"Mand韇ulas de un reptador";
+	name 				=	"Mand铆bulas de un reptador";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -309,7 +309,7 @@ INSTANCE ItAt_Troll_01 (C_Item)
 /******************************************************************************************/
 INSTANCE ItAt_Swampshark_01 (C_Item)
 {
-	name 				=	"Piel de tibur髇 de la ci閚aga";
+	name 				=	"Piel de tibur贸n de la ci茅naga";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -325,18 +325,18 @@ INSTANCE ItAt_Swampshark_01 (C_Item)
 /******************************************************************************************/
 INSTANCE ItAt_Swampshark_02 (C_Item)
 {
-	name 				=	"Dientes de tibur髇 de la ci閚aga";
+	name 				=	"Dientes de tibur贸n de la ci茅naga";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
 
-	value 				=	Value_Sumpfhaiz鋒ne;
+	value 				=	Value_Sumpfhaiz盲hne;
 
 	visual 				=	"ItAt_Swampshark_02.3DS";
 	material 			=	MAT_LEATHER;
 
 	description			= name;
-	TEXT[4]				= NAME_Value;					COUNT[4]	= Value_Sumpfhaiz鋒ne;
+	TEXT[4]				= NAME_Value;					COUNT[4]	= Value_Sumpfhaiz盲hne;
 };
 /******************************************************************************************/
 INSTANCE ItAt_Bloodfly_01 (C_Item)
@@ -346,18 +346,18 @@ INSTANCE ItAt_Bloodfly_01 (C_Item)
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
 
-	value 				=	Value_Fl黦el;
+	value 				=	Value_Fl眉gel;
 
 	visual 				=	"ItAt_Bloodfly_01.3DS";
 	material 			=	MAT_LEATHER;
 
 	description			= name;
-	TEXT[4]				= NAME_Value;					COUNT[4]	= Value_Fl黦el;
+	TEXT[4]				= NAME_Value;					COUNT[4]	= Value_Fl眉gel;
 };
 /******************************************************************************************/
 INSTANCE ItAt_Bloodfly_02 (C_Item)
 {
-	name 				=	"Aguij髇 de mosca de sangre";
+	name 				=	"Aguij贸n de mosca de sangre";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -376,7 +376,7 @@ INSTANCE ItAt_Bloodfly_02 (C_Item)
 /******************************************************************************************/
 INSTANCE ItAt_StoneGolem_01 (C_Item)
 {
-	name 				=	"Coraz髇 de g髄em de piedra";
+	name 				=	"Coraz贸n de g贸lem de piedra";
 
 	mainflag 			=	ITEM_KAT_RUNE;
 	flags 				=	ITEM_MISSION;
@@ -388,8 +388,8 @@ INSTANCE ItAt_StoneGolem_01 (C_Item)
 	material 			=	MAT_STONE;
 
 	description			= name;
-	TEXT[0]				= "Este coraz髇 pertenece a los restos";
-	TEXT[1]				= "de un g髄em de piedra derrotado.";
+	TEXT[0]				= "Este coraz贸n pertenece a los restos";
+	TEXT[1]				= "de un g贸lem de piedra derrotado.";
 	TEXT[2]				= "Tiene el poder de arrojar a un enemigo"; 
 	TEXT[3]				= "por los aires.";
 	TEXT[5]				= NAME_Value;					COUNT[5]	= Value_Steinherz;
@@ -398,7 +398,7 @@ INSTANCE ItAt_StoneGolem_01 (C_Item)
 /******************************************************************************************/
 INSTANCE ItAt_FireGolem_01 (C_Item)
 {
-	name 				=	"Coraz髇 de g髄em de fuego";
+	name 				=	"Coraz贸n de g贸lem de fuego";
 
 	mainflag 			=	ITEM_KAT_RUNE;
 	flags 				=	ITEM_MISSION;
@@ -410,8 +410,8 @@ INSTANCE ItAt_FireGolem_01 (C_Item)
 	material 			=	MAT_STONE;
 
 	description			= name;
-	TEXT[0]				= "Este coraz髇 pertenece a los restos";
-	TEXT[1]				= "de un g髄em de fuego derrotado.";
+	TEXT[0]				= "Este coraz贸n pertenece a los restos";
+	TEXT[1]				= "de un g贸lem de fuego derrotado.";
 	TEXT[2]				= "Tiene el poder de prender fuego";
 	TEXT[3]				= "a un enemigo.";
 	TEXT[5]				= NAME_Value;					COUNT[5]	= Value_Feuerherz;
@@ -420,7 +420,7 @@ INSTANCE ItAt_FireGolem_01 (C_Item)
 /******************************************************************************************/
 INSTANCE ItAt_IceGolem_01 (C_Item)
 {
-	name 				=	"Coraz髇 de g髄em de hielo";
+	name 				=	"Coraz贸n de g贸lem de hielo";
 
 	mainflag 			=	ITEM_KAT_RUNE;
 	flags 				=	ITEM_MISSION;
@@ -432,8 +432,8 @@ INSTANCE ItAt_IceGolem_01 (C_Item)
 	material 			=	MAT_STONE;
 
 	description			= name;
-	TEXT[0]				= "Este coraz髇 pertenece a los restos";
-	TEXT[1]				= "de un g髄em de hielo derrotado.";
+	TEXT[0]				= "Este coraz贸n pertenece a los restos";
+	TEXT[1]				= "de un g贸lem de hielo derrotado.";
 	TEXT[2]				= "Tiene el poder de congelar";
 	TEXT[3]				= "a un enemigo.";
 	TEXT[5]				= NAME_Value;					COUNT[5]	= Value_Eisherz;
@@ -442,7 +442,7 @@ INSTANCE ItAt_IceGolem_01 (C_Item)
 /******************************************************************************************/
 INSTANCE ItAt_IceGolem_02 (C_Item)
 {
-	name 				=	"Fragmento de g髄em de hielo";
+	name 				=	"Fragmento de g贸lem de hielo";
 
 	mainflag 			=	ITEM_KAT_RUNE;
 	flags 				=	0;
@@ -457,6 +457,6 @@ INSTANCE ItAt_IceGolem_02 (C_Item)
 
 	description			= name;
 	TEXT[0]				= "Esto es un fragmento de un";
-	TEXT[1]				= "g髄em de hielo derrotado.";
+	TEXT[1]				= "g贸lem de hielo derrotado.";
 	TEXT[4]				= NAME_Value;					COUNT[4]	= Value_Eistueck;
 };

@@ -37,7 +37,7 @@ INSTANCE Info_Nov_3_EinerVonEuchWerden (C_INFO) // E1
 	condition	= Info_Nov_3_EinerVonEuchWerden_Condition;
 	information	= Info_Nov_3_EinerVonEuchWerden_Info;
 	permanent	= 1;
-	description = "¿Cómo puedo ingresar en este campamento?";
+	description = "Â¿CÃ³mo puedo ingresar en este campamento?";
 };                       
 
 FUNC INT Info_Nov_3_EinerVonEuchWerden_Condition()
@@ -50,9 +50,9 @@ FUNC INT Info_Nov_3_EinerVonEuchWerden_Condition()
 
 FUNC VOID Info_Nov_3_EinerVonEuchWerden_Info()
 {
-	AI_Output(other,self,"Info_Nov_3_EinerVonEuchWerden_15_00"); //¿Cómo puedo ingresar en este campamento?
-	AI_Output(self,other,"Info_Nov_3_EinerVonEuchWerden_03_01"); //Es sencillo. Déjame, tío.
-	AI_Output(self,other,"Info_Nov_3_EinerVonEuchWerden_03_02"); //Habla con los gurús. ¡Ellos te guiarán!
+	AI_Output(other,self,"Info_Nov_3_EinerVonEuchWerden_15_00"); //Â¿CÃ³mo puedo ingresar en este campamento?
+	AI_Output(self,other,"Info_Nov_3_EinerVonEuchWerden_03_01"); //Es sencillo. DÃ©jame, tÃ­o.
+	AI_Output(self,other,"Info_Nov_3_EinerVonEuchWerden_03_02"); //Habla con los gurÃºs. Â¡Ellos te guiarÃ¡n!
 };
 
 // *************************************************************************
@@ -65,7 +65,7 @@ INSTANCE Info_Nov_3_WichtigePersonen(C_INFO)
 	condition	= Info_Nov_3_WichtigePersonen_Condition;
 	information	= Info_Nov_3_WichtigePersonen_Info;
 	permanent	= 1;
-	description = "¿Quién es el jefe por aquí?";
+	description = "Â¿QuiÃ©n es el jefe por aquÃ­?";
 };                       
 
 FUNC INT Info_Nov_3_WichtigePersonen_Condition()
@@ -75,8 +75,8 @@ FUNC INT Info_Nov_3_WichtigePersonen_Condition()
 
 FUNC VOID Info_Nov_3_WichtigePersonen_Info()
 {
-	AI_Output(other,self,"Info_Nov_3_WichtigePersonen_15_00"); //¿Quién es el jefe por aquí?
-	AI_Output(self,other,"Info_Nov_3_WichtigePersonen_03_01"); //¡Y'Berion! ¡Alabado sea el Durmiente! Él nos trajo a este lugar glorioso.
+	AI_Output(other,self,"Info_Nov_3_WichtigePersonen_15_00"); //Â¿QuiÃ©n es el jefe por aquÃ­?
+	AI_Output(self,other,"Info_Nov_3_WichtigePersonen_03_01"); //Â¡Y'Berion! Â¡Alabado sea el Durmiente! Ã‰l nos trajo a este lugar glorioso.
 	AI_Output(self,other,"Info_Nov_3_WichtigePersonen_03_02"); //Todo esto fue creado gracias a sus visiones.
 };
 
@@ -90,7 +90,7 @@ INSTANCE Info_Nov_3_DasLager(C_INFO)
 	condition	= Info_Nov_3_DasLager_Condition;
 	information	= Info_Nov_3_DasLager_Info;
 	permanent	= 1;
-	description = "¿Hay algún lugar importante al que deba ir?";
+	description = "Â¿Hay algÃºn lugar importante al que deba ir?";
 };                       
 
 FUNC INT Info_Nov_3_DasLager_Condition()
@@ -100,9 +100,9 @@ FUNC INT Info_Nov_3_DasLager_Condition()
 
 FUNC VOID Info_Nov_3_DasLager_Info()
 {
-	AI_Output(other,self,"Info_Nov_3_DasLager_15_00"); //¿Hay algún lugar importante al que deba ir?
+	AI_Output(other,self,"Info_Nov_3_DasLager_15_00"); //Â¿Hay algÃºn lugar importante al que deba ir?
 	AI_Output(self,other,"Info_Nov_3_DasLager_03_01"); //A ver a Fortuno. Da hierba del pantano gratis a todos los fieles de la secta.
-	AI_Output(self,other,"Info_Nov_3_DasLager_03_02"); //Lo encontrarás bajo el laboratorio alquímico de Cor Kalom.
+	AI_Output(self,other,"Info_Nov_3_DasLager_03_02"); //Lo encontrarÃ¡s bajo el laboratorio alquÃ­mico de Cor Kalom.
 	
 	var C_NPC CorKalom;		CorKalom= Hlp_GetNpc(Gur_1201_CorKalom);
 	CorKalom.aivar[AIV_FINDABLE] = TRUE;
@@ -118,7 +118,7 @@ INSTANCE Info_Nov_3_DieLage(C_INFO) // E1
 	condition	= Info_Nov_3_DieLage_Condition;
 	information	= Info_Nov_3_DieLage_Info;
 	permanent	= 1;
-	description = "¿Qué tal estás?";
+	description = "Â¿QuÃ© tal estÃ¡s?";
 };                       
 
 FUNC INT Info_Nov_3_DieLage_Condition()
@@ -128,8 +128,8 @@ FUNC INT Info_Nov_3_DieLage_Condition()
 
 FUNC VOID Info_Nov_3_DieLage_Info()
 {
-	AI_Output(other,self,"Info_Nov_3_DieLage_15_00"); //¿Qué tal estás?
-	AI_Output(self,other,"Info_Nov_3_DieLage_03_01"); //¡Estoy maravillosamente bien, tío!
+	AI_Output(other,self,"Info_Nov_3_DieLage_15_00"); //Â¿QuÃ© tal estÃ¡s?
+	AI_Output(self,other,"Info_Nov_3_DieLage_03_01"); //Â¡Estoy maravillosamente bien, tÃ­o!
 };
 	
 // *************************************************************************

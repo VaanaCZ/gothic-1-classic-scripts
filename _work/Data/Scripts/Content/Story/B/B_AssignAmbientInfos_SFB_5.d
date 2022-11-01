@@ -4,7 +4,7 @@
 
 
 // *************************************************************************
-// 									Vor Gespräch
+// 									Vor GesprÃ¤ch
 // *************************************************************************
 
 INSTANCE Info_SFB_5_Pre(C_INFO)
@@ -23,7 +23,7 @@ FUNC INT Info_SFB_5_Pre_Condition()
 
 FUNC VOID Info_SFB_5_Pre_Info()
 {	
-	AI_Output(self,other,"Info_SFB_5_EinerVonEuchWerden_02_00"); //¡Hola!
+	AI_Output(self,other,"Info_SFB_5_EinerVonEuchWerden_02_00"); //Â¡Hola!
 };
 
 // *************************************************************************
@@ -60,7 +60,7 @@ INSTANCE Info_SFB_5_EinerVonEuchWerden (C_INFO)
 	condition	= Info_SFB_5_EinerVonEuchWerden_Condition;
 	information	= Info_SFB_5_EinerVonEuchWerden_Info;
 	permanent	= 1;
-	description = "¿Y si quiero unirme a vosotros?";
+	description = "Â¿Y si quiero unirme a vosotros?";
 };                       
 
 FUNC INT Info_SFB_5_EinerVonEuchWerden_Condition()
@@ -73,11 +73,11 @@ FUNC INT Info_SFB_5_EinerVonEuchWerden_Condition()
 
 FUNC VOID Info_SFB_5_EinerVonEuchWerden_Info()
 {
-	AI_Output(other,self,"Info_SFB_5_EinerVonEuchWerden_15_00"); //¿Y si quiero unirme a vosotros?
-	AI_Output(self,other,"Info_SFB_5_EinerVonEuchWerden_02_01"); //¿A nosotros? ¿Como qué, como aguador?
+	AI_Output(other,self,"Info_SFB_5_EinerVonEuchWerden_15_00"); //Â¿Y si quiero unirme a vosotros?
+	AI_Output(self,other,"Info_SFB_5_EinerVonEuchWerden_02_01"); //Â¿A nosotros? Â¿Como quÃ©, como aguador?
 	AI_Output(other,self,"Info_SFB_5_EinerVonEuchWerden_15_02"); //No, como raspador.
 	AI_Output(self,other,"Info_SFB_5_EinerVonEuchWerden_02_03"); //Mira, voy a decirte algo: nadie se presenta VOLUNTARIO para ser raspador.
-	AI_Output(self,other,"Info_SFB_5_EinerVonEuchWerden_02_04"); //Claro que, si insistes... Ve a hablar con Swiney. Seguro que le sobrará un pico para ti.
+	AI_Output(self,other,"Info_SFB_5_EinerVonEuchWerden_02_04"); //Claro que, si insistes... Ve a hablar con Swiney. Seguro que le sobrarÃ¡ un pico para ti.
 };
 
 // *************************************************************************
@@ -90,7 +90,7 @@ INSTANCE Info_SFB_5_WichtigePersonen(C_INFO)
 	condition	= Info_SFB_5_WichtigePersonen_Condition;
 	information	= Info_SFB_5_WichtigePersonen_Info;
 	permanent	= 1;
-	description = "¿Quién es importante aquí?";
+	description = "Â¿QuiÃ©n es importante aquÃ­?";
 };                       
 
 FUNC INT Info_SFB_5_WichtigePersonen_Condition()
@@ -100,11 +100,11 @@ FUNC INT Info_SFB_5_WichtigePersonen_Condition()
 
 FUNC VOID Info_SFB_5_WichtigePersonen_Info()
 {
-	AI_Output(other,self,"Info_SFB_5_WichtigePersonen_15_00"); //¿Quién es importante aquí?
-	AI_Output(self,other,"Info_SFB_5_WichtigePersonen_02_01"); //¿Quién es importante? Yo, por supuesto.
-	AI_Output(self,other,"Info_SFB_5_WichtigePersonen_02_02"); //Pero supongo que te refieres a quién manda.
+	AI_Output(other,self,"Info_SFB_5_WichtigePersonen_15_00"); //Â¿QuiÃ©n es importante aquÃ­?
+	AI_Output(self,other,"Info_SFB_5_WichtigePersonen_02_01"); //Â¿QuiÃ©n es importante? Yo, por supuesto.
+	AI_Output(self,other,"Info_SFB_5_WichtigePersonen_02_02"); //Pero supongo que te refieres a quiÃ©n manda.
 	AI_Output(self,other,"Info_SFB_5_WichtigePersonen_02_03"); //Bueno, supongo que debes hablar con los mercenarios o los bandidos. Ni te acerques a los magos del agua.
-	AI_Output(self,other,"Info_SFB_5_WichtigePersonen_02_04"); //Ese culo gordo de Swiney cree que es más importante de lo que es. Y sólo reparte los picos y hace lo que Okyl le dice.
+	AI_Output(self,other,"Info_SFB_5_WichtigePersonen_02_04"); //Ese culo gordo de Swiney cree que es mÃ¡s importante de lo que es. Y sÃ³lo reparte los picos y hace lo que Okyl le dice.
 };
 
 // *************************************************************************
@@ -117,7 +117,7 @@ INSTANCE Info_SFB_5_DasLager(C_INFO)
 	condition	= Info_SFB_5_DasLager_Condition;
 	information	= Info_SFB_5_DasLager_Info;
 	permanent	= 1;
-	description = "¿Qué puede ofrecer el campamento?";
+	description = "Â¿QuÃ© puede ofrecer el campamento?";
 };                       
 
 FUNC INT Info_SFB_5_DasLager_Condition()
@@ -127,8 +127,8 @@ FUNC INT Info_SFB_5_DasLager_Condition()
 
 FUNC VOID Info_SFB_5_DasLager_Info()
 {
-	AI_Output(other,self,"Info_SFB_5_DasLager_15_00"); //¿Qué puede ofrecer el campamento?
-	AI_Output(self,other,"Info_SFB_5_DasLager_02_01"); //Lo que tú te ganes. Para algunos, nada más que trabajo; para otros, un montón de diversión.
+	AI_Output(other,self,"Info_SFB_5_DasLager_15_00"); //Â¿QuÃ© puede ofrecer el campamento?
+	AI_Output(self,other,"Info_SFB_5_DasLager_02_01"); //Lo que tÃº te ganes. Para algunos, nada mÃ¡s que trabajo; para otros, un montÃ³n de diversiÃ³n.
 };
 
 // *************************************************************************
@@ -141,7 +141,7 @@ INSTANCE Info_SFB_5_DieLage(C_INFO)
 	condition	= Info_SFB_5_DieLage_Condition;
 	information	= Info_SFB_5_DieLage_Info;
 	permanent	= 1;
-	description = "¿Cómo es la vida aquí?";
+	description = "Â¿CÃ³mo es la vida aquÃ­?";
 };                       
 
 FUNC INT Info_SFB_5_DieLage_Condition()
@@ -151,10 +151,10 @@ FUNC INT Info_SFB_5_DieLage_Condition()
 
 FUNC VOID Info_SFB_5_DieLage_Info()
 {
-	AI_Output(other,self,"Info_SFB_5_DieLage_15_00"); //¿Cómo es la vida aquí?
-	AI_Output(self,other,"Info_SFB_5_DieLage_02_01"); //¡Estupenda!
+	AI_Output(other,self,"Info_SFB_5_DieLage_15_00"); //Â¿CÃ³mo es la vida aquÃ­?
+	AI_Output(self,other,"Info_SFB_5_DieLage_02_01"); //Â¡Estupenda!
 	AI_Output(self,other,"Info_SFB_5_DieLage_02_02"); //Y como estamos tan contentos, hacemos todo lo que podemos para largarnos.
-	AI_Output(self,other,"Info_SFB_5_DieLage_02_03"); //¿Qué te crees que es este lugar? Es una cárcel, y a nadie le gusta vivir en una cárcel.
+	AI_Output(self,other,"Info_SFB_5_DieLage_02_03"); //Â¿QuÃ© te crees que es este lugar? Es una cÃ¡rcel, y a nadie le gusta vivir en una cÃ¡rcel.
 	
 };	
 // *************************************************************************

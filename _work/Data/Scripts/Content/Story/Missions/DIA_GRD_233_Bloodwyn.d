@@ -25,11 +25,11 @@ FUNC VOID Info_Bloodwyn_EXIT_Schutzgeld_Info()
 	AI_Output (other,self,"Info_Bloodwyn_EXIT_Schutzgeld_15_00"); //Hasta luego.
 	if (Bloodwyn_ProtectionPaid == FALSE)
 	{
-		AI_Output (self, other,"Info_Bloodwyn_EXIT_Schutzgeld_08_01"); //Cuídate, muchacho.
+		AI_Output (self, other,"Info_Bloodwyn_EXIT_Schutzgeld_08_01"); //CuÃ­date, muchacho.
 	}
 	else
 	{
-		AI_Output (self, other,"Info_Bloodwyn_EXIT_Schutzgeld_08_02"); //¡No te preocupes por nada aquí en el campamento! Te estaremos protegiendo.
+		AI_Output (self, other,"Info_Bloodwyn_EXIT_Schutzgeld_08_02"); //Â¡No te preocupes por nada aquÃ­ en el campamento! Te estaremos protegiendo.
 	};
 	
 	AI_StopProcessInfos	(self);
@@ -57,24 +57,24 @@ FUNC INT Info_Bloodwyn_Hello_Condition()
 };
 FUNC VOID Info_Bloodwyn_Hello_Info()
 {	
-	AI_Output (self, other,"Info_Bloodwyn_Hello_08_00"); //¡Eh, tú!
-	AI_Output (other, self,"Info_Bloodwyn_Hello_15_01"); //¿Me hablas a mí?
-	AI_Output (self, other,"Info_Bloodwyn_Hello_08_02"); //¡Te lo advierto! ¡La gente como tú puede meterse en líos muy deprisa por aquí!
-	AI_Output (self, other,"Info_Bloodwyn_Hello_08_03"); //¡Y la mayoría de los tipos que meten aquí son unos bastardos!
+	AI_Output (self, other,"Info_Bloodwyn_Hello_08_00"); //Â¡Eh, tÃº!
+	AI_Output (other, self,"Info_Bloodwyn_Hello_15_01"); //Â¿Me hablas a mÃ­?
+	AI_Output (self, other,"Info_Bloodwyn_Hello_08_02"); //Â¡Te lo advierto! Â¡La gente como tÃº puede meterse en lÃ­os muy deprisa por aquÃ­!
+	AI_Output (self, other,"Info_Bloodwyn_Hello_08_03"); //Â¡Y la mayorÃ­a de los tipos que meten aquÃ­ son unos bastardos!
 	AI_Output (self, other,"Info_Bloodwyn_Hello_08_04"); //Creen que pueden hacer lo que les apetece contigo. Pero no lo permitiremos.
-	AI_Output (self, other,"Info_Bloodwyn_Hello_08_05"); //Gómez quiere paz en el campamento, y los guardias aseguramos que la tenga. Pero es un trabajo que no sale barato.
-	AI_Output (self, other,"Info_Bloodwyn_Hello_08_06"); //Por eso te pido un poco de mineral. Considéralo como una especie de muestra de amistad. Tú nos ayudas y nosotros te ayudaremos. Si te metes en líos, nosotros te sacaremos de ellos.
+	AI_Output (self, other,"Info_Bloodwyn_Hello_08_05"); //GÃ³mez quiere paz en el campamento, y los guardias aseguramos que la tenga. Pero es un trabajo que no sale barato.
+	AI_Output (self, other,"Info_Bloodwyn_Hello_08_06"); //Por eso te pido un poco de mineral. ConsidÃ©ralo como una especie de muestra de amistad. TÃº nos ayudas y nosotros te ayudaremos. Si te metes en lÃ­os, nosotros te sacaremos de ellos.
 
 	Info_ClearChoices	(Info_Bloodwyn_Hello );
-	Info_AddChoice		(Info_Bloodwyn_Hello,"¿Por qué no? ¿En cuánto mineral estabas pensando?",Info_Bloodwyn_Hello_HowMuch);
-	Info_AddChoice		(Info_Bloodwyn_Hello,"¿Quieres que pague dinero a cambio de protección? ¡Puedo cuidar de mí mismo!",Info_Bloodwyn_Hello_ForgetIt);
-	Info_AddChoice		(Info_Bloodwyn_Hello,"¿Me estás amenazando?",Info_Bloodwyn_Hello_SollDrohungSein);
+	Info_AddChoice		(Info_Bloodwyn_Hello,"Â¿Por quÃ© no? Â¿En cuÃ¡nto mineral estabas pensando?",Info_Bloodwyn_Hello_HowMuch);
+	Info_AddChoice		(Info_Bloodwyn_Hello,"Â¿Quieres que pague dinero a cambio de protecciÃ³n? Â¡Puedo cuidar de mÃ­ mismo!",Info_Bloodwyn_Hello_ForgetIt);
+	Info_AddChoice		(Info_Bloodwyn_Hello,"Â¿Me estÃ¡s amenazando?",Info_Bloodwyn_Hello_SollDrohungSein);
 };
 
 func void Info_Bloodwyn_Hello_ForgetIt()
 {
-	AI_Output (other, self,"Info_Bloodwyn_ForgetIt_15_00"); //O sea, que queréis que pague a cambio de vuestra protección. ¡No gracias, puedo cuidar de mí mismo.
-	AI_Output (self, other,"Info_Bloodwyn_ForgetIt_08_01"); //Como quieras, chaval. ¡Pronto te arrepentirás de haber rechazado una oferta amistosa!
+	AI_Output (other, self,"Info_Bloodwyn_ForgetIt_15_00"); //O sea, que querÃ©is que pague a cambio de vuestra protecciÃ³n. Â¡No gracias, puedo cuidar de mÃ­ mismo.
+	AI_Output (self, other,"Info_Bloodwyn_ForgetIt_08_01"); //Como quieras, chaval. Â¡Pronto te arrepentirÃ¡s de haber rechazado una oferta amistosa!
 	Bloodwyn_ProtectionPaid = FALSE;
 	Herek_ProtectionBully = TRUE;
 	Grim_ProtectionBully = TRUE;
@@ -84,28 +84,28 @@ func void Info_Bloodwyn_Hello_ForgetIt()
 
 func void Info_Bloodwyn_Hello_SollDrohungSein()
 {
-	AI_Output (other, self,"Info_Bloodwyn_SollDrohungSein_15_00"); //¿Me estás amenazando?
-	AI_Output (self, other,"Info_Bloodwyn_SollDrohungSein_08_01"); //¡Al contrario! ¡Es un ofrecimiento amistoso!
+	AI_Output (other, self,"Info_Bloodwyn_SollDrohungSein_15_00"); //Â¿Me estÃ¡s amenazando?
+	AI_Output (self, other,"Info_Bloodwyn_SollDrohungSein_08_01"); //Â¡Al contrario! Â¡Es un ofrecimiento amistoso!
 };
 
 func void Info_Bloodwyn_Hello_HowMuch()
 {
-	AI_Output (other, self,"Info_Bloodwyn_Hello_HowMuch_15_01"); //¿Por qué no? ¿En cuánto mineral estabas pensando?
+	AI_Output (other, self,"Info_Bloodwyn_Hello_HowMuch_15_01"); //Â¿Por quÃ© no? Â¿En cuÃ¡nto mineral estabas pensando?
 	AI_Output (self, other,"Info_Bloodwyn_Hello_HowMuch_08_02"); //No mucho. Todo lo que necesito son 10 pepitas.
 	
 	Info_ClearChoices	(Info_Bloodwyn_Hello );
 	Info_AddChoice		(Info_Bloodwyn_Hello,"No tengo 10 pepitas de mineral.",Info_Bloodwyn_Hello_NotNow);
 	if (Npc_HasItems(other,itminugget)>=10)
 	{
-		Info_AddChoice	(Info_Bloodwyn_Hello,"Aquí tienes tu mineral. Siempre viene bien tener uno o dos amigos.",Info_Bloodwyn_Hello_OkTakeIt);
+		Info_AddChoice	(Info_Bloodwyn_Hello,"AquÃ­ tienes tu mineral. Siempre viene bien tener uno o dos amigos.",Info_Bloodwyn_Hello_OkTakeIt);
 	};
 };
 // -------------------------------------------------------
 func void Info_Bloodwyn_Hello_OkTakeIt()
 {
-	AI_Output (other, self,"Info_Bloodwyn_Hello_OkTakeIt_15_00"); //Aquí tienes tu mineral. Siempre viene bien tener uno o dos amigos.
+	AI_Output (other, self,"Info_Bloodwyn_Hello_OkTakeIt_15_00"); //AquÃ­ tienes tu mineral. Siempre viene bien tener uno o dos amigos.
 	AI_Output (self, other,"Info_Bloodwyn_Hello_OkTakeIt_08_01"); //Pareces un chico listo. A partir de ahora, te protegeremos.
-	AI_Output (self, other,"Info_Bloodwyn_Hello_OkTakeIt_08_02"); //Pero eso no quiere decir que puedas hacer lo que te dé la gana por aquí, ¿de acuerdo?
+	AI_Output (self, other,"Info_Bloodwyn_Hello_OkTakeIt_08_02"); //Pero eso no quiere decir que puedas hacer lo que te dÃ© la gana por aquÃ­, Â¿de acuerdo?
 	
 	B_GiveInvItems 	    (other, self, itminugget, 10);
 	Bloodwyn_ProtectionPaid = TRUE;
@@ -119,26 +119,26 @@ func void Info_Bloodwyn_Hello_OkTakeIt()
 func void Info_Bloodwyn_Hello_NotNow()
 {
 	AI_Output (other, self,"Info_Bloodwyn_Hello_NotNow_15_00"); //No tengo 10 pepitas.
-	AI_Output (self, other,"Info_Bloodwyn_Hello_NotNow_08_01"); //Entonces aceptaré lo que tengas, no pasa nada. Me puedes dar el resto la próxima vez que te vea.
+	AI_Output (self, other,"Info_Bloodwyn_Hello_NotNow_08_01"); //Entonces aceptarÃ© lo que tengas, no pasa nada. Me puedes dar el resto la prÃ³xima vez que te vea.
 	AI_GotoNpc (self,other);
-	AI_Output (self, other,"Info_Bloodwyn_Hello_NotNow_08_02"); //Déjame ver...
+	AI_Output (self, other,"Info_Bloodwyn_Hello_NotNow_08_02"); //DÃ©jame ver...
 		
 	if (Npc_HasItems(other, itminugget) > 0)
 	{
 		if (Npc_HasItems(other, itminugget) > 9)
 		{
-			AI_Output (self, other,"Info_Bloodwyn_Hello_NotNow_TenOreMore_08_00"); //¡Anda, mira! Parece que alguien no sabe contar hasta 10, ¿eh?
-			AI_Output (self, other,"Info_Bloodwyn_Hello_NotNow_TenOreMore_08_01"); //Voy a quedarme con todo lo que tienes. Eso me ayudará a olvidar que me has mentido.
+			AI_Output (self, other,"Info_Bloodwyn_Hello_NotNow_TenOreMore_08_00"); //Â¡Anda, mira! Parece que alguien no sabe contar hasta 10, Â¿eh?
+			AI_Output (self, other,"Info_Bloodwyn_Hello_NotNow_TenOreMore_08_01"); //Voy a quedarme con todo lo que tienes. Eso me ayudarÃ¡ a olvidar que me has mentido.
 		}
 		else
 		{
-			AI_Output (self, other,"Info_Bloodwyn_Hello_NotNow_LessThanTen_08_00"); //Oh, también acepto pequeños donativos. ¡La intención es lo que cuenta! ¡Gracias por el mineral, chaval!
-			AI_Output (self, other,"Info_Bloodwyn_Hello_NotNow_LessThanTen_08_01"); //A partir de ahora, estaré pendiente de ti cuando estés en el campamento.
+			AI_Output (self, other,"Info_Bloodwyn_Hello_NotNow_LessThanTen_08_00"); //Oh, tambiÃ©n acepto pequeÃ±os donativos. Â¡La intenciÃ³n es lo que cuenta! Â¡Gracias por el mineral, chaval!
+			AI_Output (self, other,"Info_Bloodwyn_Hello_NotNow_LessThanTen_08_01"); //A partir de ahora, estarÃ© pendiente de ti cuando estÃ©s en el campamento.
 		};
 	}
 	else
 	{
-		AI_Output (self, other,"Info_Bloodwyn_Hello_NotNow_NoOre_08_00"); //Hm, estás sin blanca. Bueno, supongo que habrá otras ocasiones.
+		AI_Output (self, other,"Info_Bloodwyn_Hello_NotNow_NoOre_08_00"); //Hm, estÃ¡s sin blanca. Bueno, supongo que habrÃ¡ otras ocasiones.
 	};
 	
 	B_GiveInvItems		(other, self, itminugget, Npc_HasItems(other, itminugget) );//Alle Nuggets entfernen
@@ -176,8 +176,8 @@ FUNC VOID Info_Bloodwyn_PayDay_Info()
 {	
 	if (Bloodwyn_ProtectionPaid == TRUE)
 	{
-		AI_Output (self, other,"Info_Bloodwyn_PayDay_08_00"); //¡Ah, me alegro de verte, amigo mío!
-		AI_Output (self, other,"Info_Bloodwyn_PayDay_08_01"); //¿Cómo va tu contribución diaria? Ya sabes que debes 10 pepitas.
+		AI_Output (self, other,"Info_Bloodwyn_PayDay_08_00"); //Â¡Ah, me alegro de verte, amigo mÃ­o!
+		AI_Output (self, other,"Info_Bloodwyn_PayDay_08_01"); //Â¿CÃ³mo va tu contribuciÃ³n diaria? Ya sabes que debes 10 pepitas.
 		
 		Info_ClearChoices	(Info_Bloodwyn_PayDay );
 		Info_AddChoice		(Info_Bloodwyn_PayDay,"Toma. 10 pepitas no es mucho entre amigos.",Info_Bloodwyn_PayDay_PayAgain);
@@ -185,10 +185,10 @@ FUNC VOID Info_Bloodwyn_PayDay_Info()
 	}
 	else if (Bloodwyn_ProtectionPaid == FALSE)
 	{
-		AI_Output (self, other,"Info_Bloodwyn_PayDay_Den_08_00"); //¡Eh, tú!
-		AI_Output (other, self,"Info_Bloodwyn_PayDay_Den_15_01"); //¿Ahora qué?
+		AI_Output (self, other,"Info_Bloodwyn_PayDay_Den_08_00"); //Â¡Eh, tÃº!
+		AI_Output (other, self,"Info_Bloodwyn_PayDay_Den_15_01"); //Â¿Ahora quÃ©?
 		AI_Output (self, other,"Info_Bloodwyn_PayDay_Den_08_02"); //Ha llegado el momento de que demuestres que eres un verdadero amigo.
-		AI_Output (self, other,"Info_Bloodwyn_PayDay_Den_08_03"); //Sólo 10 pepitas y participas. ¿Qué dices?
+		AI_Output (self, other,"Info_Bloodwyn_PayDay_Den_08_03"); //SÃ³lo 10 pepitas y participas. Â¿QuÃ© dices?
 	};
 	Bloodwyn_PayDay = B_SetDayTolerance();
 };
@@ -196,7 +196,7 @@ FUNC VOID Info_Bloodwyn_PayDay_Info()
 func void Info_Bloodwyn_PayDay_PayAgain()
 {
 	AI_Output (other, self,"Info_Bloodwyn_PayDay_PayAgain_15_00"); //Toma. 10 pepitas no es mucho entre amigos.
-	AI_Output (self, other,"Info_Bloodwyn_PayDay_PayAgain_08_01"); //¡Lo que yo pienso!
+	AI_Output (self, other,"Info_Bloodwyn_PayDay_PayAgain_08_01"); //Â¡Lo que yo pienso!
 	
 	Bloodwyn_ProtectionPaid = TRUE;
 	Herek_ProtectionBully = FALSE;
@@ -208,8 +208,8 @@ func void Info_Bloodwyn_PayDay_PayAgain()
 func void Info_Bloodwyn_PayDay_PayNoMore()
 {
 	AI_Output (other, self,"Info_Bloodwyn_PayDay_PayNoMore_15_00"); //No voy a pagar. Ya me has sacado demasiado.
-	AI_Output (self, other,"Info_Bloodwyn_PayDay_PayNoMore_08_01"); //¡Me decepcionas! Ya no somos amigos. ¡Procura que no te asalten o te roben ahora que estás solo!
-	AI_Output (other, self,"Info_Bloodwyn_PayDay_PayNoMore_15_02"); //No te preocupes, puedo cuidar de mí mismo.
+	AI_Output (self, other,"Info_Bloodwyn_PayDay_PayNoMore_08_01"); //Â¡Me decepcionas! Ya no somos amigos. Â¡Procura que no te asalten o te roben ahora que estÃ¡s solo!
+	AI_Output (other, self,"Info_Bloodwyn_PayDay_PayNoMore_15_02"); //No te preocupes, puedo cuidar de mÃ­ mismo.
 	AI_Output (self, other,"Info_Bloodwyn_PayDay_PayNoMore_08_03"); //Ya veremos...
 	
 	Bloodwyn_ProtectionPaid = FALSE;
@@ -230,7 +230,7 @@ INSTANCE Info_Bloodwyn_Doch (C_INFO)
 	condition	= Info_Bloodwyn_Doch_Condition;
 	information	= Info_Bloodwyn_Doch_Info;
 	permanent	= 1;
-	description = "He cambiado de opinión. Voy a pagarte las 10 pepitas.";
+	description = "He cambiado de opiniÃ³n. Voy a pagarte las 10 pepitas.";
 };                       
 
 FUNC INT Info_Bloodwyn_Doch_Condition()
@@ -243,11 +243,11 @@ FUNC INT Info_Bloodwyn_Doch_Condition()
 
 FUNC VOID Info_Bloodwyn_Doch_Info()
 {	
-	AI_Output (other, self,"Info_Bloodwyn_Doch_15_00"); //He cambiado de opinión. Voy a pagarte las 10 pepitas.
+	AI_Output (other, self,"Info_Bloodwyn_Doch_15_00"); //He cambiado de opiniÃ³n. Voy a pagarte las 10 pepitas.
 	if (Npc_HasItems(other, itminugget)>=10)
 	{
-		AI_Output (self, other,"Info_Bloodwyn_Doch_08_01"); //¡Eso es! ¿Ves? Puedes tomar las decisiones correctas.
-		AI_Output (self, other,"Info_Bloodwyn_Doch_08_02"); //Y a partir de ahora seguirás pagándome tu contribución diaria, ¿verdad?
+		AI_Output (self, other,"Info_Bloodwyn_Doch_08_01"); //Â¡Eso es! Â¿Ves? Puedes tomar las decisiones correctas.
+		AI_Output (self, other,"Info_Bloodwyn_Doch_08_02"); //Y a partir de ahora seguirÃ¡s pagÃ¡ndome tu contribuciÃ³n diaria, Â¿verdad?
 		Bloodwyn_ProtectionPaid = TRUE;
 		Herek_ProtectionBully = FALSE;
 		Grim_ProtectionBully = FALSE;
@@ -292,14 +292,14 @@ FUNC VOID Info_Bloodwyn_PayForJesse_Info()
 	AI_Output (self, other,"Info_Bloodwyn_PayForJesse_08_02"); //No te preocupes por Jesse. Es un perdedor y no va a llegar a ninguna parte.
 	if (Npc_HasItems(other,itminugget) >= 10)
 	{
-		AI_Output (other, self,"Info_Bloodwyn_PayForJesse_15_03"); //No, pago por él. ¡Coge sus 10 pepitas y déjale en paz!
-		AI_Output (self, other,"Info_Bloodwyn_PayForJesse_08_04"); //De acuerdo, tío; si así lo quieres.
+		AI_Output (other, self,"Info_Bloodwyn_PayForJesse_15_03"); //No, pago por Ã©l. Â¡Coge sus 10 pepitas y dÃ©jale en paz!
+		AI_Output (self, other,"Info_Bloodwyn_PayForJesse_08_04"); //De acuerdo, tÃ­o; si asÃ­ lo quieres.
 		Jesse_PayForMe = LOG_SUCCESS;
 	}
 	else
 	{
-		AI_Output (other, self,"Info_Bloodwyn_PayForJesse_15_05"); //¡Oh! Parece que no llevo encima tanto mineral!
-		AI_Output (self, other,"Info_Bloodwyn_PayForJesse_08_06"); //¡Es un augurio, tío! ¡Piénsatelo bien! ¡Pagar por ese haragán es un desperdicio de buen mineral!
+		AI_Output (other, self,"Info_Bloodwyn_PayForJesse_15_05"); //Â¡Oh! Parece que no llevo encima tanto mineral!
+		AI_Output (self, other,"Info_Bloodwyn_PayForJesse_08_06"); //Â¡Es un augurio, tÃ­o! Â¡PiÃ©nsatelo bien! Â¡Pagar por ese haragÃ¡n es un desperdicio de buen mineral!
 	};
 };
 /*------------------------------------------------------------------------
@@ -324,7 +324,7 @@ FUNC int  GRD_233_Bloodwyn_WELCOME_Condition()
 };
 func void  GRD_233_Bloodwyn_WELCOME_Info()
 {
-	AI_Output (self, other,"GRD_233_Bloodwyn_WELCOME_Info_08_01"); //Ya eres uno de los nuestros. Bien hecho. ¡Los guardias necesitan hombres como tú!
+	AI_Output (self, other,"GRD_233_Bloodwyn_WELCOME_Info_08_01"); //Ya eres uno de los nuestros. Bien hecho. Â¡Los guardias necesitan hombres como tÃº!
 };
 
 
@@ -369,63 +369,63 @@ FUNC VOID Info_Bloodwyn_DIE_Info()
 	{
 		if (oldHeroGuild == GIL_GRD)
 		{
-			AI_Output	(self,hero,"Info_Bloodwyn_DIE_08_01"); //¡Es el traidor infiltrado! ¡BAH! ¡Y te consideramos un guardia!
+			AI_Output	(self,hero,"Info_Bloodwyn_DIE_08_01"); //Â¡Es el traidor infiltrado! Â¡BAH! Â¡Y te consideramos un guardia!
 		}
 		else if (oldHeroGuild == GIL_KDF)
 		{
-			AI_Output	(self,hero,"Info_Bloodwyn_DIE_08_02"); //¡Parece que hemos pasado por alto a uno de los magos del fuego rebeldes!
+			AI_Output	(self,hero,"Info_Bloodwyn_DIE_08_02"); //Â¡Parece que hemos pasado por alto a uno de los magos del fuego rebeldes!
 		}
 		else
 		{
-			AI_Output	(self,hero,"Info_Bloodwyn_DIE_08_03"); //¡Es la Sombra que nos traicionó!
+			AI_Output	(self,hero,"Info_Bloodwyn_DIE_08_03"); //Â¡Es la Sombra que nos traicionÃ³!
 		};			
 
-		AI_Output		(hero,self,"Info_Bloodwyn_DIE_15_04"); //Espera. ¿De qué estás hablando, Bloodwyn?
-		AI_Output		(self,hero,"Info_Bloodwyn_DIE_08_05"); //Así que estás confabulado con el Campamento Nuevo, ¿eh?
-		AI_Output		(hero,self,"Info_Bloodwyn_DIE_15_06"); //No, espera, aún...
-		AI_Output		(self,hero,"Info_Bloodwyn_DIE_08_07"); //Supongo que pensabas que podías seguir así eternamente...
-		AI_Output		(hero,self,"Info_Bloodwyn_DIE_15_08"); //Basta de tonterías...
-		AI_Output		(self,hero,"Info_Bloodwyn_DIE_08_09"); //Los traidores como tú deben morir.
-		AI_Output		(self,hero,"Info_Bloodwyn_DIE_08_10"); //¡¡¡MUERE, TRAIDOR!!!
+		AI_Output		(hero,self,"Info_Bloodwyn_DIE_15_04"); //Espera. Â¿De quÃ© estÃ¡s hablando, Bloodwyn?
+		AI_Output		(self,hero,"Info_Bloodwyn_DIE_08_05"); //AsÃ­ que estÃ¡s confabulado con el Campamento Nuevo, Â¿eh?
+		AI_Output		(hero,self,"Info_Bloodwyn_DIE_15_06"); //No, espera, aÃºn...
+		AI_Output		(self,hero,"Info_Bloodwyn_DIE_08_07"); //Supongo que pensabas que podÃ­as seguir asÃ­ eternamente...
+		AI_Output		(hero,self,"Info_Bloodwyn_DIE_15_08"); //Basta de tonterÃ­as...
+		AI_Output		(self,hero,"Info_Bloodwyn_DIE_08_09"); //Los traidores como tÃº deben morir.
+		AI_Output		(self,hero,"Info_Bloodwyn_DIE_08_10"); //Â¡Â¡Â¡MUERE, TRAIDOR!!!
 
 		if	Npc_KnowsInfo(hero, Info_Fletcher_DIE)
 		{
-			B_LogEntry			(CH4_BannedFromOC,"Fletcher, que ahora vigila la puerta principal, ha reaccionado del mismo modo que Bloodwyn en la puerta posterior. No sé por qué, pero debe estar relacionado de algún modo con mi búsqueda de los focos de parte del Campamento Nuevo.");
+			B_LogEntry			(CH4_BannedFromOC,"Fletcher, que ahora vigila la puerta principal, ha reaccionado del mismo modo que Bloodwyn en la puerta posterior. No sÃ© por quÃ©, pero debe estar relacionado de algÃºn modo con mi bÃºsqueda de los focos de parte del Campamento Nuevo.");
 		}
 		else if	(Npc_GetTrueGuild(hero) == GIL_NONE)
 		{
 			Log_CreateTopic		(CH4_BannedFromOC,	LOG_MISSION);
 			Log_SetTopicStatus	(CH4_BannedFromOC,	LOG_RUNNING);
-			B_LogEntry			(CH4_BannedFromOC,"Bloodwyn, que vigila la puerta posterior del Campamento Viejo junto a un grupo de guardias, me ha llamado traidor y renegado. ¡No me ha escuchado y me ha atacado de repente!");
-			B_LogEntry			(CH4_BannedFromOC,"¡Parece que he sido desterrado del Campamento Viejo!");
+			B_LogEntry			(CH4_BannedFromOC,"Bloodwyn, que vigila la puerta posterior del Campamento Viejo junto a un grupo de guardias, me ha llamado traidor y renegado. Â¡No me ha escuchado y me ha atacado de repente!");
+			B_LogEntry			(CH4_BannedFromOC,"Â¡Parece que he sido desterrado del Campamento Viejo!");
 		};
 	}
 	else
 	{
 		if (C_NpcBelongsToNewCamp(hero))
 		{
-			AI_Output	(self,hero,"Info_Bloodwyn_DIE_08_11"); //¿Así que te has atrevido a salir del Campamento Nuevo? ¡Qué maniobra más estúpida!
+			AI_Output	(self,hero,"Info_Bloodwyn_DIE_08_11"); //Â¿AsÃ­ que te has atrevido a salir del Campamento Nuevo? Â¡QuÃ© maniobra mÃ¡s estÃºpida!
 		}
 		else
 		{
-			AI_Output	(self,hero,"Info_Bloodwyn_DIE_08_12"); //Oh, ¿así que te has atrevido a salir del campamento del pantano?  ¡Qué maniobra más estúpida!
+			AI_Output	(self,hero,"Info_Bloodwyn_DIE_08_12"); //Oh, Â¿asÃ­ que te has atrevido a salir del campamento del pantano?  Â¡QuÃ© maniobra mÃ¡s estÃºpida!
 		};
 
-		AI_Output		(hero,self,"Info_Bloodwyn_DIE_15_13"); //¿Qué? ¿Qué quieres decir?
-		AI_Output		(self,hero,"Info_Bloodwyn_DIE_08_14"); //¿No te has enterado del ataque a tu mina?
-		AI_Output		(hero,self,"Info_Bloodwyn_DIE_15_15"); //¿Qué...?
-		AI_Output		(self,hero,"Info_Bloodwyn_DIE_08_16"); //¡Lo siento, pero no podemos dejar que te vayas de la lengua!
-		AI_Output		(hero,self,"Info_Bloodwyn_DIE_15_17"); //Oye, no quiero líos...
-		AI_Output		(self,hero,"Info_Bloodwyn_DIE_08_18"); //¡Deberías haberlo pensado antes!
+		AI_Output		(hero,self,"Info_Bloodwyn_DIE_15_13"); //Â¿QuÃ©? Â¿QuÃ© quieres decir?
+		AI_Output		(self,hero,"Info_Bloodwyn_DIE_08_14"); //Â¿No te has enterado del ataque a tu mina?
+		AI_Output		(hero,self,"Info_Bloodwyn_DIE_15_15"); //Â¿QuÃ©...?
+		AI_Output		(self,hero,"Info_Bloodwyn_DIE_08_16"); //Â¡Lo siento, pero no podemos dejar que te vayas de la lengua!
+		AI_Output		(hero,self,"Info_Bloodwyn_DIE_15_17"); //Oye, no quiero lÃ­os...
+		AI_Output		(self,hero,"Info_Bloodwyn_DIE_08_18"); //Â¡DeberÃ­as haberlo pensado antes!
 		AI_Output		(hero,self,"Info_Bloodwyn_DIE_15_19"); //Mira, ya estoy harto de eso...
-		AI_Output		(self,hero,"Info_Bloodwyn_DIE_08_20"); //¡Y yo también! ¡MATADLO!
+		AI_Output		(self,hero,"Info_Bloodwyn_DIE_08_20"); //Â¡Y yo tambiÃ©n! Â¡MATADLO!
 	};
 	
-	Npc_ExchangeRoutine	(self,				"FMTaken2");	// Verstärkung vor das Hinterem Tor (Anführer)
-	B_ExchangeRoutine	(GRD_232_Gardist,	"FMTaken2");	// Verstärkung vor das Hinterem Tor
-	B_ExchangeRoutine	(GRD_229_Gardist,	"FMTaken2");	// Verstärkung vor das Hinterem Tor (Fernkämpfer)
-	B_ExchangeRoutine	(GRD_216_Torwache,	"FMTaken2");	// reguläre Wache am Hinteren Tor
-	B_ExchangeRoutine	(GRD_217_Torwache,	"FMTaken2");	// reguläre Wache am Hinteren Tor
+	Npc_ExchangeRoutine	(self,				"FMTaken2");	// VerstÃ¤rkung vor das Hinterem Tor (AnfÃ¼hrer)
+	B_ExchangeRoutine	(GRD_232_Gardist,	"FMTaken2");	// VerstÃ¤rkung vor das Hinterem Tor
+	B_ExchangeRoutine	(GRD_229_Gardist,	"FMTaken2");	// VerstÃ¤rkung vor das Hinterem Tor (FernkÃ¤mpfer)
+	B_ExchangeRoutine	(GRD_216_Torwache,	"FMTaken2");	// regulÃ¤re Wache am Hinteren Tor
+	B_ExchangeRoutine	(GRD_217_Torwache,	"FMTaken2");	// regulÃ¤re Wache am Hinteren Tor
 
 	B_SetPermAttitude	(GRD_233_Bloodwyn,	ATT_HOSTILE);
 	B_SetPermAttitude	(GRD_232_Gardist,	ATT_HOSTILE);	
@@ -436,7 +436,7 @@ FUNC VOID Info_Bloodwyn_DIE_Info()
 	
 	if	!Npc_KnowsInfo(hero, Info_Fletcher_DIE)
 	{
-		B_LogEntry		(CH4_Firemages,"Las puertas del Campamento Viejo ahora están cerradas y protegidas por guardias que atacan a todo el que se acerca por allí. ");
+		B_LogEntry		(CH4_Firemages,"Las puertas del Campamento Viejo ahora estÃ¡n cerradas y protegidas por guardias que atacan a todo el que se acerca por allÃ­. ");
 	};
 	
 	AI_StopProcessInfos	(self);

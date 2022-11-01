@@ -33,7 +33,7 @@ INSTANCE DIA_Huno_YouKnowYourJob (C_INFO)
 	information		= DIA_Huno_YouKnowYourJob_Info;
 	permanent		= 0;
 	important		= 0;
-	description		= "Parece como si supieras lo que estás haciendo.";
+	description		= "Parece como si supieras lo que estÃ¡s haciendo.";
 };
 
 FUNC INT DIA_Huno_YouKnowYourJob_Condition()
@@ -43,9 +43,9 @@ FUNC INT DIA_Huno_YouKnowYourJob_Condition()
 
 FUNC VOID DIA_Huno_YouKnowYourJob_Info()
 {
-	AI_Output (other,self,"DIA_Huno_YouKnowYourJob_15_00"); //Parece que sabías lo que estabas haciendo.
-	AI_Output (self,other,"DIA_Huno_YouKnowYourJob_09_01"); //Todavía no se ha quejado nadie.
-	AI_Output (self,other,"DIA_Huno_YouKnowYourJob_09_02"); //Pero ésa sería una mala idea. Todos los idiotas de por aquí necesitan una espada y eso es lo que yo les proporciono.
+	AI_Output (other,self,"DIA_Huno_YouKnowYourJob_15_00"); //Parece que sabÃ­as lo que estabas haciendo.
+	AI_Output (self,other,"DIA_Huno_YouKnowYourJob_09_01"); //TodavÃ­a no se ha quejado nadie.
+	AI_Output (self,other,"DIA_Huno_YouKnowYourJob_09_02"); //Pero Ã©sa serÃ­a una mala idea. Todos los idiotas de por aquÃ­ necesitan una espada y eso es lo que yo les proporciono.
 };
 
 
@@ -60,7 +60,7 @@ INSTANCE DIA_Huno_HowLong (C_INFO)
 	information		= DIA_Huno_HowLong_Info;
 	permanent		= 0;
 	important		= 0;
-	description		= "¿Cuánto tiempo tardas en hacer una espada?";
+	description		= "Â¿CuÃ¡nto tiempo tardas en hacer una espada?";
 };
 
 FUNC INT DIA_Huno_HowLong_Condition()
@@ -73,12 +73,12 @@ FUNC INT DIA_Huno_HowLong_Condition()
 
 FUNC VOID DIA_Huno_HowLong_Info()
 {
-	AI_Output (other,self,"DIA_Huno_HowLong_15_00"); //¿Cuánto tiempo tardas en hacer una espada?
-	AI_Output (self,other,"DIA_Huno_HowLong_09_01"); //Depende. Con las espadas sencillas soy más rápido que el viento.
-	AI_Output (self,other,"DIA_Huno_HowLong_09_02"); //Eso sí, a condición de que el precio me motive.
-	AI_Output (self,other,"DIA_Huno_HowLong_09_03"); //Un bichejo como Whistler suele tener que esperar más que otros por su juguete.
-	AI_Output (other,self,"DIA_Huno_HowLong_15_04"); //¿Por qué? ¿Es que no te paga lo suficiente?
-	AI_Output (self,other,"DIA_Huno_HowLong_09_05"); //No, al contrario. Me pagó 150 pepitas por su última espada.
+	AI_Output (other,self,"DIA_Huno_HowLong_15_00"); //Â¿CuÃ¡nto tiempo tardas en hacer una espada?
+	AI_Output (self,other,"DIA_Huno_HowLong_09_01"); //Depende. Con las espadas sencillas soy mÃ¡s rÃ¡pido que el viento.
+	AI_Output (self,other,"DIA_Huno_HowLong_09_02"); //Eso sÃ­, a condiciÃ³n de que el precio me motive.
+	AI_Output (self,other,"DIA_Huno_HowLong_09_03"); //Un bichejo como Whistler suele tener que esperar mÃ¡s que otros por su juguete.
+	AI_Output (other,self,"DIA_Huno_HowLong_15_04"); //Â¿Por quÃ©? Â¿Es que no te paga lo suficiente?
+	AI_Output (self,other,"DIA_Huno_HowLong_09_05"); //No, al contrario. Me pagÃ³ 150 pepitas por su Ãºltima espada.
 	AI_Output (self,other,"DIA_Huno_HowLong_09_06"); //A ese tipo le gustan las decoraciones y mariconadas de esas y, por supuesto, eso sale caro..
 	AI_Output (self,other,"DIA_Huno_HowLong_09_07"); //Oye, eres curioso de verdad, amigo.
 };
@@ -94,7 +94,7 @@ INSTANCE DIA_Huno_HowsYourBusiness (C_INFO)
 	information		= DIA_Huno_HowsYourBusiness_Info;
 	permanent		= 1;
 	important		= 0;
-	description		= "¿Qué tal va el negocio, herrero?";
+	description		= "Â¿QuÃ© tal va el negocio, herrero?";
 };
 
 FUNC INT DIA_Huno_HowsYourBusiness_Condition()
@@ -107,12 +107,12 @@ FUNC INT DIA_Huno_HowsYourBusiness_Condition()
 
 FUNC VOID DIA_Huno_HowsYourBusiness_Info()
 {
-	AI_Output (other,self,"DIA_Huno_HowsYourBusiness_15_00"); //Hola, herrero ¿cómo va el negocio?
-	AI_Output (self,other,"DIA_Huno_HowsYourBusiness_09_01"); //¿Por qué quieres saberlo?
+	AI_Output (other,self,"DIA_Huno_HowsYourBusiness_15_00"); //Hola, herrero Â¿cÃ³mo va el negocio?
+	AI_Output (self,other,"DIA_Huno_HowsYourBusiness_09_01"); //Â¿Por quÃ© quieres saberlo?
 	AI_Output (other,self,"DIA_Huno_HowsYourBusiness_15_02"); //Puede que tenga un encargo para ti.
-	AI_Output (self,other,"DIA_Huno_HowsYourBusiness_09_03"); //¿Oh? ¿De verdad? ¿Qué encargo?
-	AI_Output (other,self,"DIA_Huno_HowsYourBusiness_15_04"); //Me lo pensaré.
-	AI_Output (self,other,"DIA_Huno_HowsYourBusiness_09_05"); //Vuelve cuando necesites algo de verdad y no me des el coñazo.
+	AI_Output (self,other,"DIA_Huno_HowsYourBusiness_09_03"); //Â¿Oh? Â¿De verdad? Â¿QuÃ© encargo?
+	AI_Output (other,self,"DIA_Huno_HowsYourBusiness_15_04"); //Me lo pensarÃ©.
+	AI_Output (self,other,"DIA_Huno_HowsYourBusiness_09_05"); //Vuelve cuando necesites algo de verdad y no me des el coÃ±azo.
 };
 
 // **************************************************
@@ -129,7 +129,7 @@ INSTANCE DIA_Huno_LEARNSMITH (C_INFO)
 	information		= DIA_Huno_LEARNSMITH_Info;
 	permanent		= 1;
 	important		= 0;
-	description		= "También me gustaría intentar trabajar aquí.";
+	description		= "TambiÃ©n me gustarÃ­a intentar trabajar aquÃ­.";
 };
 
 FUNC INT DIA_Huno_LEARNSMITH_Condition()
@@ -142,15 +142,15 @@ FUNC INT DIA_Huno_LEARNSMITH_Condition()
 
 FUNC VOID DIA_Huno_LEARNSMITH_Info()
 {
-	AI_Output (other,self,"DIA_Huno_LEARNSMITH_15_00"); //A mí también me gustaría trabajar aquí.
-	AI_Output (self,other,"DIA_Huno_LEARNSMITH_09_01"); //¡Oh, pero no te creas que tú también puedes fabricar buenas espadas!
-	AI_Output (other,self,"DIA_Huno_LEARNSMITH_15_02"); //¿Qué es lo que tengo que hacer?
+	AI_Output (other,self,"DIA_Huno_LEARNSMITH_15_00"); //A mÃ­ tambiÃ©n me gustarÃ­a trabajar aquÃ­.
+	AI_Output (self,other,"DIA_Huno_LEARNSMITH_09_01"); //Â¡Oh, pero no te creas que tÃº tambiÃ©n puedes fabricar buenas espadas!
+	AI_Output (other,self,"DIA_Huno_LEARNSMITH_15_02"); //Â¿QuÃ© es lo que tengo que hacer?
 	AI_Output (self,other,"DIA_Huno_LEARNSMITH_09_03"); //Vale, coge el acero y ponlo en el fuego.
-	AI_Output (self,other,"DIA_Huno_LEARNSMITH_09_04"); //Después tienes que depositar el acero al rojo sobre el yunque.
+	AI_Output (self,other,"DIA_Huno_LEARNSMITH_09_04"); //DespuÃ©s tienes que depositar el acero al rojo sobre el yunque.
 	AI_Output (self,other,"DIA_Huno_LEARNSMITH_09_05"); //Cuando hayas acabado, pon la espada caliente en ese cubo para templarla.
-	AI_Output (self,other,"DIA_Huno_LEARNSMITH_09_06"); //Por último, una vez fría, la espada tiene que ser afilada en la piedra de afilar.
+	AI_Output (self,other,"DIA_Huno_LEARNSMITH_09_06"); //Por Ãºltimo, una vez frÃ­a, la espada tiene que ser afilada en la piedra de afilar.
 	AI_Output (other,self,"DIA_Huno_LEARNSMITH_15_07"); //Entiendo.
-	AI_Output (self,other,"DIA_Huno_LEARNSMITH_09_08"); //Pero para hacer eso te harán falta unas cuantas cosas. Yo podría vendértelas.
+	AI_Output (self,other,"DIA_Huno_LEARNSMITH_09_08"); //Pero para hacer eso te harÃ¡n falta unas cuantas cosas. Yo podrÃ­a vendÃ©rtelas.
 
 	Huno_LearnSmith = TRUE;
 };
@@ -166,7 +166,7 @@ INSTANCE DIA_Huno_BUYSMITH (C_INFO)
 	information		= DIA_Huno_BUYSMITH_Info;
 	permanent		= 1;
 	important		= 0;
-	description		= "¡Me gustaría comprar material de herrería!";
+	description		= "Â¡Me gustarÃ­a comprar material de herrerÃ­a!";
 	trade			= 1;
 };
 
@@ -180,7 +180,7 @@ FUNC INT DIA_Huno_BUYSMITH_Condition()
 
 FUNC VOID DIA_Huno_BUYSMITH_Info()
 {
-	AI_Output (other,self,"DIA_Huno_BUYSMITH_15_00"); //¡Quiero comprar herramientas de herrería!
+	AI_Output (other,self,"DIA_Huno_BUYSMITH_15_00"); //Â¡Quiero comprar herramientas de herrerÃ­a!
 
 	if	(Npc_HasItems(self,ItMiSwordRaw		) < 5)		{	CreateInvItems(self,ItMiSwordRaw,		5);	};
 	if	(Npc_HasItems(self,ItMiSwordRawHot	) < 5)		{	CreateInvItems(self,ItMiSwordRawHot,	5);	};

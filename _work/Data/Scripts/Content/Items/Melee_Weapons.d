@@ -87,7 +87,7 @@ INSTANCE ItMw_1H_Sickle_01 (C_Item)
 };
 
 /******************************************************************************************/
-// Auch f¸r Mobsi-Benutzung (PickOre)
+// Auch f√ºr Mobsi-Benutzung (PickOre)
 // VLK, SFB
 INSTANCE ItMwPickaxe (C_Item)
 {
@@ -115,7 +115,7 @@ INSTANCE ItMwPickaxe (C_Item)
 };
 
 /********************************************************************************/
-// Auch f¸r Mobsi-Benutzung (Schmieden)
+// Auch f√ºr Mobsi-Benutzung (Schmieden)
 INSTANCE ItMw_1H_Sledgehammer_01 (C_Item)
 {	
 	name 				=	"Martillo de herrero";
@@ -421,7 +421,7 @@ instance ItMw_1H_Axe_Old_01 (C_Item)
 // FIXME: zu stark?
 INSTANCE ItMw_1H_Scythe_01 (C_Item)	
 {	
-	name 				=	"GuadaÒa";
+	name 				=	"Guada√±a";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_AXE;	
@@ -448,7 +448,7 @@ INSTANCE ItMw_1H_Scythe_01 (C_Item)
 // keine NPCs 
 INSTANCE ItMw_2H_Staff_01 (C_Item)
 {	
-	name 				=	"BastÛn de batalla";  
+	name 				=	"Bast√≥n de batalla";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_AXE;	
@@ -475,7 +475,7 @@ INSTANCE ItMw_2H_Staff_01 (C_Item)
 // keine NPCs
 INSTANCE ItMw_2H_Staff_02 (C_Item)
 {	
-	name 				=	"BastÛn del juicio";  
+	name 				=	"Bast√≥n del juicio";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_AXE;	
@@ -501,7 +501,7 @@ INSTANCE ItMw_2H_Staff_02 (C_Item)
 // keine NPCs
 INSTANCE ItMw_2H_Staff_03 (C_Item)
 {	
-	name 				=	"BastÛn de sacerdote";  
+	name 				=	"Bast√≥n de sacerdote";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_AXE;	
@@ -586,7 +586,7 @@ INSTANCE ItMw_1H_Mace_01 (C_Item)
 // ORG
 INSTANCE ItMw_1H_Mace_02 (C_Item)
 {	
-	name 				=	"Maza de aguijÛn";
+	name 				=	"Maza de aguij√≥n";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_AXE;	
@@ -613,7 +613,7 @@ INSTANCE ItMw_1H_Mace_02 (C_Item)
 // ORG
 INSTANCE ItMw_1H_Mace_03 (C_Item)
 {	
-	name 				=	"AguijÛn de mosca de sangre";
+	name 				=	"Aguij√≥n de mosca de sangre";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_AXE;	
@@ -807,7 +807,7 @@ INSTANCE ItMw_1H_Sword_05 (C_Item)
 
 INSTANCE ItMw_1H_Mace_War_01 (C_Item)
 {	
-	name 				=	"Estrella de la maÒana";
+	name 				=	"Estrella de la ma√±ana";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_AXE;	
@@ -861,7 +861,7 @@ INSTANCE ItMw_1H_Mace_War_02 (C_Item)
 // SLD
 INSTANCE ItMw_1H_Mace_War_03 (C_Item)
 {	
-	name 				=	"Alm·dena";
+	name 				=	"Alm√°dena";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_AXE;	
@@ -1131,7 +1131,7 @@ INSTANCE ItMw_1H_Warhammer_03 (C_Item)
 
 
 /*********************************************************************************
-** ƒxte										**
+** √Ñxte										**
 *********************************************************************************/
 // keine NPCs
 INSTANCE ItMw_1H_Axe_01 (C_Item)
@@ -1163,7 +1163,7 @@ INSTANCE ItMw_1H_Axe_01 (C_Item)
 // keine NPCs
 INSTANCE ItMw_1H_Axe_02 (C_Item)
 {	
-	name 				=	"Partecr·neos"; 
+	name 				=	"Partecr√°neos"; 
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_AXE;	
@@ -1324,7 +1324,7 @@ INSTANCE ItMw_1H_Sword_Broad_04 (C_Item)
 };
 
 /*********************************************************************************
-** Alte Zweih‰nder								**
+** Alte Zweih√§nder								**
 *********************************************************************************/
 // keine NPCs
 INSTANCE ItMw_2H_Sword_Old_01 (C_Item) 
@@ -1439,7 +1439,7 @@ INSTANCE ItMw_1H_Sword_Bastard_03 (C_Item)
 // keine NPCs
 INSTANCE ItMw_1H_Sword_Bastard_04 (C_Item) 
 {	
-	name 				=	"Palabra de bersÈrker";
+	name 				=	"Palabra de bers√©rker";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -1463,7 +1463,7 @@ INSTANCE ItMw_1H_Sword_Bastard_04 (C_Item)
 };
 
 /*********************************************************************************
-** Alte Streit‰xte								**
+** Alte Streit√§xte								**
 *********************************************************************************/
 // keine NPCs
 INSTANCE ItMw_2H_Axe_Old_01 (C_Item)
@@ -1546,7 +1546,7 @@ INSTANCE ItMw_2H_Axe_Old_03 (C_Item)
 };
 
 /*********************************************************************************
-** Leichte Zweih‰nder								**
+** Leichte Zweih√§nder								**
 *********************************************************************************/
 // TPL
 INSTANCE ItMw_2H_Sword_Light_01 (C_Item) 
@@ -1659,7 +1659,7 @@ INSTANCE ItMw_2H_Sword_Light_04 (C_Item)
 // keine NPCS
 INSTANCE ItMw_2H_Sword_Light_05 (C_Item) 
 {	
-	name 				=	"Hoja demonÌaca";
+	name 				=	"Hoja demon√≠aca";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_SWD;	
@@ -1766,7 +1766,7 @@ INSTANCE ItMw_2H_Axe_light_03 (C_Item)
 };
 
 /*********************************************************************************
-** Zweih‰nder									**
+** Zweih√§nder									**
 *********************************************************************************/
 // keine NPCs
 INSTANCE ItMw_2H_Sword_01 (C_Item) 
@@ -1798,7 +1798,7 @@ INSTANCE ItMw_2H_Sword_01 (C_Item)
 // keine NPCs
 INSTANCE ItMw_2H_Sword_02 (C_Item) 
 {	
-	name 				=	"Hoja de hÈroe";
+	name 				=	"Hoja de h√©roe";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_SWD;	
@@ -1849,7 +1849,7 @@ INSTANCE ItMw_2H_Sword_03 (C_Item)
 };
 
 /*********************************************************************************
-** Schwere Zweih‰nder								**
+** Schwere Zweih√§nder								**
 *********************************************************************************/
 // keine NPCs
 INSTANCE ItMw_2H_Sword_Heavy_01 (C_Item) 
@@ -1958,7 +1958,7 @@ INSTANCE ItMw_2H_Sword_Heavy_04 (C_Item)
 };
 
 /*********************************************************************************
-** Streit‰xte									**
+** Streit√§xte									**
 *********************************************************************************/
 // keine NPCs
 INSTANCE ItMw_2H_Axe_Heavy_01 (C_Item)
@@ -2017,7 +2017,7 @@ INSTANCE ItMw_2H_Axe_Heavy_02 (C_Item)
 // keine NPCs
 INSTANCE ItMw_2H_Axe_Heavy_03 (C_Item)
 {	
-	name 				=	"PuÒo de b·rbaro";  
+	name 				=	"Pu√±o de b√°rbaro";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_AXE;	
@@ -2044,7 +2044,7 @@ INSTANCE ItMw_2H_Axe_Heavy_03 (C_Item)
 // keine NPCs
 INSTANCE ItMw_2H_Axe_Heavy_04 (C_Item)
 {	
-	name 				=	"PuÒo de troll";  
+	name 				=	"Pu√±o de troll";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_AXE;	

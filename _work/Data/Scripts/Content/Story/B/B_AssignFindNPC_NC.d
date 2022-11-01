@@ -8,7 +8,7 @@ INSTANCE Info_FindNPC_NC(C_INFO)
 	condition	= Info_FindNPC_NC_Condition;
 	information	= Info_FindNPC_NC_Info;
 	permanent	= 1;
-	description = "¿Dónde puedo encontrar...";
+	description = "Â¿DÃ³nde puedo encontrar...";
 };                       
 
 FUNC INT Info_FindNPC_NC_Condition()
@@ -57,7 +57,7 @@ FUNC VOID Info_FindNPC_NC_BACK()
 
 FUNC VOID Info_FindNPC_NC_Gorn()
 {
-	AI_Output(other,self,"Info_FindNPC_NC_Gorn_15_00"); //¿Dónde puedo encontrar a Gorn?
+	AI_Output(other,self,"Info_FindNPC_NC_Gorn_15_00"); //Â¿DÃ³nde puedo encontrar a Gorn?
 
 	VAR C_NPC Gorn;		Gorn = Hlp_GetNpc(PC_Fighter);
 	
@@ -71,26 +71,26 @@ FUNC VOID Info_FindNPC_NC_Gorn()
 		{
 			if (self.voice == 6)
 			{
-				AI_Output(self,other,"Info_FindNPC_NC_Gorn_06_01"); //Cuando entres en la cueva, ve por tu derecha. Hay un par de cabañas enfrente. Él vive en una de ellas.
+				AI_Output(self,other,"Info_FindNPC_NC_Gorn_06_01"); //Cuando entres en la cueva, ve por tu derecha. Hay un par de cabaÃ±as enfrente. Ã‰l vive en una de ellas.
 			}
 			else if (self.voice == 7)
 			{
-				AI_Output(self,other,"Info_FindNPC_NC_Gorn_07_01"); //Cuando entres en la cueva, ve por tu derecha. Hay un par de cabañas enfrente. Él vive en una de ellas.
+				AI_Output(self,other,"Info_FindNPC_NC_Gorn_07_01"); //Cuando entres en la cueva, ve por tu derecha. Hay un par de cabaÃ±as enfrente. Ã‰l vive en una de ellas.
 			}
 			else if (self.voice == 13)
 			{
-				AI_Output(self,other,"Info_FindNPC_NC_Gorn_13_01"); //Cuando entres en la cueva, ve por tu derecha. Hay un par de cabañas enfrente. Él vive en una de ellas.
+				AI_Output(self,other,"Info_FindNPC_NC_Gorn_13_01"); //Cuando entres en la cueva, ve por tu derecha. Hay un par de cabaÃ±as enfrente. Ã‰l vive en una de ellas.
 			};
 		}
 		else if (self.guild == GIL_SLD) 
 		{
 			if (self.voice == 8)
 			{
-				AI_Output(self,other,"Info_FindNPC_NC_Gorn_08_01"); //Cuando entres en la cueva, ve por tu derecha. Hay un par de cabañas enfrente. Él vive en una de ellas.
+				AI_Output(self,other,"Info_FindNPC_NC_Gorn_08_01"); //Cuando entres en la cueva, ve por tu derecha. Hay un par de cabaÃ±as enfrente. Ã‰l vive en una de ellas.
 			}
 			else if (self.voice == 11)
 			{
-				AI_Output(self,other,"Info_FindNPC_NC_Gorn_11_01"); //Cuando entres en la cueva, ve por tu derecha. Hay un par de cabañas enfrente. Él vive en una de ellas.
+				AI_Output(self,other,"Info_FindNPC_NC_Gorn_11_01"); //Cuando entres en la cueva, ve por tu derecha. Hay un par de cabaÃ±as enfrente. Ã‰l vive en una de ellas.
 			};
 		};
 	};
@@ -104,7 +104,7 @@ FUNC VOID Info_FindNPC_NC_Gorn()
 
 FUNC VOID Info_FindNPC_NC_Lares()
 {
-	AI_Output(other,self,"Info_FindNPC_NC_Lares_15_00"); //¿Dónde puedo encontrar a Lares?
+	AI_Output(other,self,"Info_FindNPC_NC_Lares_15_00"); //Â¿DÃ³nde puedo encontrar a Lares?
 
 	VAR C_NPC Lares;		Lares = Hlp_GetNpc(Org_801_Lares);
 	
@@ -118,26 +118,26 @@ FUNC VOID Info_FindNPC_NC_Lares()
 		{
 			if (self.voice == 6)
 			{
-				AI_Output(self,other,"Info_FindNPC_NC_Lares_06_01"); //Justo detrás, a mano izquierda de la cueva grande. No tiene pérdida. En cuanto sus muchachos te detengan, sabrás que lo has encontrado.
+				AI_Output(self,other,"Info_FindNPC_NC_Lares_06_01"); //Justo detrÃ¡s, a mano izquierda de la cueva grande. No tiene pÃ©rdida. En cuanto sus muchachos te detengan, sabrÃ¡s que lo has encontrado.
 			}
 			else if (self.voice == 7)
 			{
-				AI_Output(self,other,"Info_FindNPC_NC_Lares_07_01"); //Justo detrás, a mano izquierda de la cueva grande. No tiene pérdida. En cuanto sus muchachos te detengan, sabrás que lo has encontrado.
+				AI_Output(self,other,"Info_FindNPC_NC_Lares_07_01"); //Justo detrÃ¡s, a mano izquierda de la cueva grande. No tiene pÃ©rdida. En cuanto sus muchachos te detengan, sabrÃ¡s que lo has encontrado.
 			}
 			else if (self.voice == 13)
 			{
-				AI_Output(self,other,"Info_FindNPC_NC_Lares_13_01"); //Justo detrás, a mano izquierda de la cueva grande. No tiene pérdida. En cuanto sus muchachos te detengan, sabrás que lo has encontrado.
+				AI_Output(self,other,"Info_FindNPC_NC_Lares_13_01"); //Justo detrÃ¡s, a mano izquierda de la cueva grande. No tiene pÃ©rdida. En cuanto sus muchachos te detengan, sabrÃ¡s que lo has encontrado.
 			};
 		}
 		else if (self.guild == GIL_SLD) 
 		{
 			if (self.voice == 8)
 			{
-				AI_Output(self,other,"Info_FindNPC_NC_Lares_08_01"); //Justo detrás, a mano izquierda de la cueva grande. No tiene pérdida. En cuanto sus muchachos te detengan, sabrás que lo has encontrado.
+				AI_Output(self,other,"Info_FindNPC_NC_Lares_08_01"); //Justo detrÃ¡s, a mano izquierda de la cueva grande. No tiene pÃ©rdida. En cuanto sus muchachos te detengan, sabrÃ¡s que lo has encontrado.
 			}
 			else if (self.voice == 11)
 			{
-				AI_Output(self,other,"Info_FindNPC_NC_Lares_11_01"); //Justo detrás, a mano izquierda de la cueva grande. No tiene pérdida. En cuanto sus muchachos te detengan, sabrás que lo has encontrado.
+				AI_Output(self,other,"Info_FindNPC_NC_Lares_11_01"); //Justo detrÃ¡s, a mano izquierda de la cueva grande. No tiene pÃ©rdida. En cuanto sus muchachos te detengan, sabrÃ¡s que lo has encontrado.
 			};
 		};
 	};
@@ -151,7 +151,7 @@ FUNC VOID Info_FindNPC_NC_Lares()
 
 FUNC VOID Info_FindNPC_NC_Lee()
 {
-	AI_Output(other,self,"Info_FindNPC_NC_Lee_15_00"); //¿Dónde puedo encontrar a Lee?
+	AI_Output(other,self,"Info_FindNPC_NC_Lee_15_00"); //Â¿DÃ³nde puedo encontrar a Lee?
 
 	VAR C_NPC Lee;		Lee = Hlp_GetNpc(Sld_700_Lee);
 	
@@ -198,7 +198,7 @@ FUNC VOID Info_FindNPC_NC_Lee()
 
 FUNC VOID Info_FindNPC_NC_Mage()
 {
-	AI_Output(other,self,"Info_FindNPC_NC_Cronos_15_00"); //¿Dónde puedo encontrar a uno de los magos?
+	AI_Output(other,self,"Info_FindNPC_NC_Cronos_15_00"); //Â¿DÃ³nde puedo encontrar a uno de los magos?
 
 	VAR C_NPC Cronos;		Cronos = Hlp_GetNpc(KdW_604_Cronos);
 	
@@ -212,26 +212,26 @@ FUNC VOID Info_FindNPC_NC_Mage()
 		{
 			if (self.voice == 6)
 			{
-				AI_Output(self,other,"Info_FindNPC_NC_Cronos_06_01"); //Suelen vivir en la aislada zona superior de la cueva. Pero a veces se les ve en el montículo de mineral en medio de la caverna.
+				AI_Output(self,other,"Info_FindNPC_NC_Cronos_06_01"); //Suelen vivir en la aislada zona superior de la cueva. Pero a veces se les ve en el montÃ­culo de mineral en medio de la caverna.
 			}
 			else if (self.voice == 7)
 			{
-				AI_Output(self,other,"Info_FindNPC_NC_Cronos_07_01"); //Suelen vivir en la aislada zona superior de la cueva. Pero a veces se les ve en el montículo de mineral en medio de la caverna.
+				AI_Output(self,other,"Info_FindNPC_NC_Cronos_07_01"); //Suelen vivir en la aislada zona superior de la cueva. Pero a veces se les ve en el montÃ­culo de mineral en medio de la caverna.
 			}
 			else if (self.voice == 13)
 			{
-				AI_Output(self,other,"Info_FindNPC_NC_Cronos_13_01"); //Suelen vivir en la aislada zona superior de la cueva. Pero a veces se les ve en el montículo de mineral en medio de la caverna.
+				AI_Output(self,other,"Info_FindNPC_NC_Cronos_13_01"); //Suelen vivir en la aislada zona superior de la cueva. Pero a veces se les ve en el montÃ­culo de mineral en medio de la caverna.
 			};
 		}
 		else if (self.guild == GIL_SLD) 
 		{
 			if (self.voice == 8)
 			{
-				AI_Output(self,other,"Info_FindNPC_NC_Cronos_08_01"); //Suelen vivir en la aislada zona superior de la cueva. Pero a veces se les ve en el montículo de mineral en medio de la caverna.
+				AI_Output(self,other,"Info_FindNPC_NC_Cronos_08_01"); //Suelen vivir en la aislada zona superior de la cueva. Pero a veces se les ve en el montÃ­culo de mineral en medio de la caverna.
 			}
 			else if (self.voice == 11)
 			{
-				AI_Output(self,other,"Info_FindNPC_NC_Cronos_11_01"); //Suelen vivir en la aislada zona superior de la cueva. Pero a veces se les ve en el montículo de mineral en medio de la caverna.
+				AI_Output(self,other,"Info_FindNPC_NC_Cronos_11_01"); //Suelen vivir en la aislada zona superior de la cueva. Pero a veces se les ve en el montÃ­culo de mineral en medio de la caverna.
 			};
 		};
 	};

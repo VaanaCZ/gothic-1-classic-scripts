@@ -33,7 +33,7 @@ INSTANCE Info_GRD_276_Tips(C_INFO)
 	condition	= Info_GRD_276_Tips_Condition;
 	information	= Info_GRD_276_Tips_Info;
 	permanent	= 0;
-	description = "¡Hola! Soy nuevo.";
+	description = "Â¡Hola! Soy nuevo.";
 };                       
 
 FUNC INT Info_GRD_276_Tips_Condition()
@@ -45,7 +45,7 @@ FUNC INT Info_GRD_276_Tips_Condition()
 };
 FUNC VOID Info_GRD_276_Tips_Info()
 {
-	AI_Output (other,self,"Info_GRD_276_Tips_15_00"); //¡Hola! Soy nuevo.
+	AI_Output (other,self,"Info_GRD_276_Tips_15_00"); //Â¡Hola! Soy nuevo.
 	AI_Output (self,other,"Info_GRD_276_Tips_07_01"); //Me alegro por ti.
 };
 
@@ -60,7 +60,7 @@ INSTANCE Info_GRD_276_Bla(C_INFO)
 	condition	= Info_GRD_276_Bla_Condition;
 	information	= Info_GRD_276_Bla_Info;
 	permanent	= 1;
-	description = "¿Es aquél el Campamento Viejo?";
+	description = "Â¿Es aquÃ©l el Campamento Viejo?";
 };                       
 
 FUNC INT Info_GRD_276_Bla_Condition()
@@ -73,7 +73,7 @@ FUNC INT Info_GRD_276_Bla_Condition()
 
 FUNC VOID Info_GRD_276_Bla_Info()
 {
-	AI_Output (other,self,"Info_GRD_276_Bla_15_00"); //¿Es aquél el Campamento Viejo?
-	AI_Output (self,other,"Info_GRD_276_Bla_07_01"); //No, ése es el Campamento Nuevo. El Campamento Viejo está debajo del puente.
+	AI_Output (other,self,"Info_GRD_276_Bla_15_00"); //Â¿Es aquÃ©l el Campamento Viejo?
+	AI_Output (self,other,"Info_GRD_276_Bla_07_01"); //No, Ã©se es el Campamento Nuevo. El Campamento Viejo estÃ¡ debajo del puente.
 	AI_StopProcessInfos(self);
 };

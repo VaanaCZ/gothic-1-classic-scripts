@@ -33,7 +33,7 @@ instance DIA_Gravo_Hallo(C_INFO)
 	condition		= DIA_Gravo_Hallo_Condition;
 	information		= DIA_Gravo_Hallo_Info;
 	permanent		= 0;
-	description 	= "¿Qué tal te va?";
+	description 	= "Â¿QuÃ© tal te va?";
 };                       
 
 FUNC INT DIA_Gravo_Hallo_Condition()
@@ -43,11 +43,11 @@ FUNC INT DIA_Gravo_Hallo_Condition()
 
 func VOID DIA_Gravo_Hallo_Info()
 {
-	AI_Output (other, self,"DIA_Gravo_Hallo_15_00"); //¿Cómo te va?
+	AI_Output (other, self,"DIA_Gravo_Hallo_15_00"); //Â¿CÃ³mo te va?
 	AI_Output (self, other,"DIA_Gravo_Hallo_04_01"); //Dado que he dejado de trabajar en la mina, no puedo quejarme.
-	AI_Output (other, self,"DIA_Gravo_Hallo_15_02"); //¿Y de dónde sacas tu mineral?
+	AI_Output (other, self,"DIA_Gravo_Hallo_15_02"); //Â¿Y de dÃ³nde sacas tu mineral?
 	AI_Output (self, other,"DIA_Gravo_Hallo_04_03"); //Ayudo a los que tienen problemas.
-	AI_Output (self, other,"DIA_Gravo_Hallo_04_04"); //Si te metes en líos con la gente influyente de por aquí, puedo ayudarte a solucionar el asunto.
+	AI_Output (self, other,"DIA_Gravo_Hallo_04_04"); //Si te metes en lÃ­os con la gente influyente de por aquÃ­, puedo ayudarte a solucionar el asunto.
 };
 
 // **************************************************
@@ -61,7 +61,7 @@ instance DIA_Gravo_HelpHow(C_INFO)
 	condition		= DIA_Gravo_HelpHow_Condition;
 	information		= DIA_Gravo_HelpHow_Info;
 	permanent		= 0;
-	description 	= "¿Que me ayudarías si me metiese en un lío? ¿Cómo?";
+	description 	= "Â¿Que me ayudarÃ­as si me metiese en un lÃ­o? Â¿CÃ³mo?";
 };                       
 
 FUNC INT DIA_Gravo_HelpHow_Condition()
@@ -74,14 +74,14 @@ FUNC INT DIA_Gravo_HelpHow_Condition()
 
 func VOID DIA_Gravo_HelpHow_Info()
 {
-	AI_Output (other, self,"DIA_Gravo_HelpHow_15_00"); //Si yo estuviera en problemas, ¿tú me ayudarías? ¿Cómo?
-	AI_Output (self, other,"DIA_Gravo_HelpHow_04_01"); //Bueno, supongamos que tú tienes problemas con Thorus. Será mejor que no te metas nunca en problemas con él, pero nunca se sabe.
-	AI_Output (self, other,"DIA_Gravo_HelpHow_04_02"); //Thorus puede ser muy terco; una vez se cabrea con alguien, no vuelve a hablar con él. Y eso es malo.
-	AI_Output (self, other,"DIA_Gravo_HelpHow_04_03"); //Al ser un novato, dependes de él. Así que vienes a verme. Conozco a mucha gente a la que Thorus hace caso.
-	AI_Output (self, other,"DIA_Gravo_HelpHow_04_04"); //Entonces yo intercedo por ti y Thorus vuelve a ser tu amigo. Claro está que los muchachos quieren algo de mineral a cambio de este tipo de favores. Tu mineral.
+	AI_Output (other, self,"DIA_Gravo_HelpHow_15_00"); //Si yo estuviera en problemas, Â¿tÃº me ayudarÃ­as? Â¿CÃ³mo?
+	AI_Output (self, other,"DIA_Gravo_HelpHow_04_01"); //Bueno, supongamos que tÃº tienes problemas con Thorus. SerÃ¡ mejor que no te metas nunca en problemas con Ã©l, pero nunca se sabe.
+	AI_Output (self, other,"DIA_Gravo_HelpHow_04_02"); //Thorus puede ser muy terco; una vez se cabrea con alguien, no vuelve a hablar con Ã©l. Y eso es malo.
+	AI_Output (self, other,"DIA_Gravo_HelpHow_04_03"); //Al ser un novato, dependes de Ã©l. AsÃ­ que vienes a verme. Conozco a mucha gente a la que Thorus hace caso.
+	AI_Output (self, other,"DIA_Gravo_HelpHow_04_04"); //Entonces yo intercedo por ti y Thorus vuelve a ser tu amigo. Claro estÃ¡ que los muchachos quieren algo de mineral a cambio de este tipo de favores. Tu mineral.
 	AI_Output (self, other,"DIA_Gravo_HelpHow_04_05"); //Y yo me encargo de que el mineral llegue hasta la gente apropiada.
 
-	B_LogEntry(GE_TraderOC,"El cavador Gravo vende un tipo especial de servicio. Si me meto en líos con gente importante del Campamento, puedo pagarle para que lo arregle.");
+	B_LogEntry(GE_TraderOC,"El cavador Gravo vende un tipo especial de servicio. Si me meto en lÃ­os con gente importante del Campamento, puedo pagarle para que lo arregle.");
 };
 
 // **************************************************
@@ -93,12 +93,12 @@ func void B_Gravo_HelpAttitude(var C_NPC prob)
 {
 	if (Npc_GetPermAttitude(prob, other)==ATT_ANGRY)
 	{
-		AI_Output (self, other,"B_Gravo_HelpAttitude_ANGRY_04_00"); //Exacto, estás en su lista negra.
-		AI_Output (self, other,"B_Gravo_HelpAttitude_ANGRY_04_01"); //Haré que alguien hable con él. Dame 100 pepitas y me hago cargo del problema.
+		AI_Output (self, other,"B_Gravo_HelpAttitude_ANGRY_04_00"); //Exacto, estÃ¡s en su lista negra.
+		AI_Output (self, other,"B_Gravo_HelpAttitude_ANGRY_04_01"); //HarÃ© que alguien hable con Ã©l. Dame 100 pepitas y me hago cargo del problema.
 		if (Npc_HasItems(other,itminugget)>=100)
 		{
-			AI_Output (self, other,"B_Gravo_HelpAttitude_ANGRY_04_02"); //Veamos cuanto tienes... ¡Ah! Con esto debería bastar. Puedes dar por resuelto el asunto.
-			AI_Output (self, other,"B_Gravo_HelpAttitude_ANGRY_04_03"); //Y no le hables a nadie acerca de ello. Compórtate como si no hubiera pasado nada.
+			AI_Output (self, other,"B_Gravo_HelpAttitude_ANGRY_04_02"); //Veamos cuanto tienes... Â¡Ah! Con esto deberÃ­a bastar. Puedes dar por resuelto el asunto.
+			AI_Output (self, other,"B_Gravo_HelpAttitude_ANGRY_04_03"); //Y no le hables a nadie acerca de ello. CompÃ³rtate como si no hubiera pasado nada.
 			B_GiveInvItems (hero, self, itminugget, 100);
 			Npc_SetPermAttitude(prob,ATT_NEUTRAL);
 		}
@@ -111,12 +111,12 @@ func void B_Gravo_HelpAttitude(var C_NPC prob)
 	}
 	else if (Npc_GetPermAttitude(prob, other)==ATT_HOSTILE)
 	{
-		AI_Output (self, other,"B_Gravo_HelpAttitude_HOSTILE_04_00"); //¿Y a eso le llamas un problema? Te quedas muy muy corto. Me parece que le gustaría cortarte en pedacitos, muchacho.
-		AI_Output (self, other,"B_Gravo_HelpAttitude_HOSTILE_04_01"); //No saldrá barato convencer a algunas personas para que lo tranquilicen. Te costará por lo menos 500 pepitas.
+		AI_Output (self, other,"B_Gravo_HelpAttitude_HOSTILE_04_00"); //Â¿Y a eso le llamas un problema? Te quedas muy muy corto. Me parece que le gustarÃ­a cortarte en pedacitos, muchacho.
+		AI_Output (self, other,"B_Gravo_HelpAttitude_HOSTILE_04_01"); //No saldrÃ¡ barato convencer a algunas personas para que lo tranquilicen. Te costarÃ¡ por lo menos 500 pepitas.
 		if (Npc_HasItems(other,itminugget)>=500)
 		{
-			AI_Output (self, other,"B_Gravo_HelpAttitude_HOSTILE_04_02"); //Veamos lo que tienes aquí... Parece que eres un ricachón. Me llevaré 500 pepitas y solucionaré el problema.
-			AI_Output (self, other,"B_Gravo_HelpAttitude_HOSTILE_04_03"); //Y recuerda que nunca ha de saberse que yo me ocupé del problema, así que no le hables de ello a nadie. ¿Entendido?
+			AI_Output (self, other,"B_Gravo_HelpAttitude_HOSTILE_04_02"); //Veamos lo que tienes aquÃ­... Parece que eres un ricachÃ³n. Me llevarÃ© 500 pepitas y solucionarÃ© el problema.
+			AI_Output (self, other,"B_Gravo_HelpAttitude_HOSTILE_04_03"); //Y recuerda que nunca ha de saberse que yo me ocupÃ© del problema, asÃ­ que no le hables de ello a nadie. Â¿Entendido?
 			B_GiveInvItems (hero, self, itminugget, 500);
 			Npc_SetPermAttitude(prob,ATT_NEUTRAL);
 		}
@@ -128,7 +128,7 @@ func void B_Gravo_HelpAttitude(var C_NPC prob)
 	}
 	else
 	{
-		AI_Output (self, other,"B_Gravo_HelpAttitude_NoProb_04_00"); //Por lo que yo sé, no tiene ningún problema contigo, así que tranquilo.
+		AI_Output (self, other,"B_Gravo_HelpAttitude_NoProb_04_00"); //Por lo que yo sÃ©, no tiene ningÃºn problema contigo, asÃ­ que tranquilo.
 	};
 };
 
@@ -141,7 +141,7 @@ instance DIA_Gravo_HelpAngryNow(C_INFO)
 	condition		= DIA_Gravo_HelpAngryNow_Condition;
 	information		= DIA_Gravo_HelpAngryNow_Info;
 	permanent		= 1;
-	description 	= "Puedes ayudarme. Creo que estoy metido en un lío.";
+	description 	= "Puedes ayudarme. Creo que estoy metido en un lÃ­o.";
 };                       
 
 FUNC INT DIA_Gravo_HelpAngryNow_Condition()
@@ -154,14 +154,14 @@ FUNC INT DIA_Gravo_HelpAngryNow_Condition()
 
 func VOID DIA_Gravo_HelpAngryNow_Info()
 {
-	AI_Output (other, self,"DIA_Gravo_HelpAngryNow_15_00"); //¿Podrías ayudarme? Creo que tengo un problema.
-	AI_Output (self, other,"DIA_Gravo_HelpAngryNow_04_01"); //Creo que sí, pero mi ayuda podría costarte entre 100 y 500 pepitas.
+	AI_Output (other, self,"DIA_Gravo_HelpAngryNow_15_00"); //Â¿PodrÃ­as ayudarme? Creo que tengo un problema.
+	AI_Output (self, other,"DIA_Gravo_HelpAngryNow_04_01"); //Creo que sÃ­, pero mi ayuda podrÃ­a costarte entre 100 y 500 pepitas.
 	
 	Info_ClearChoices(DIA_Gravo_HelpAngryNow );
 	Info_AddChoice	 (DIA_Gravo_HelpAngryNow, DIALOG_BACK			,DIA_Gravo_HelpAngryNow_BACK);
-	Info_AddChoice	 (DIA_Gravo_HelpAngryNow,"Ayúdame con Diego.",DIA_Gravo_HelpAngryNow_Diego);
-	Info_AddChoice	 (DIA_Gravo_HelpAngryNow,"Ayúdame con Thorus.",DIA_Gravo_HelpAngryNow_Thorus);
-	Info_AddChoice	 (DIA_Gravo_HelpAngryNow,"Ayúdame con Gómez.",DIA_Gravo_HelpAngryNow_Gomez);
+	Info_AddChoice	 (DIA_Gravo_HelpAngryNow,"AyÃºdame con Diego.",DIA_Gravo_HelpAngryNow_Diego);
+	Info_AddChoice	 (DIA_Gravo_HelpAngryNow,"AyÃºdame con Thorus.",DIA_Gravo_HelpAngryNow_Thorus);
+	Info_AddChoice	 (DIA_Gravo_HelpAngryNow,"AyÃºdame con GÃ³mez.",DIA_Gravo_HelpAngryNow_Gomez);
 };
 
 func void DIA_Gravo_HelpAngryNow_BACK()
@@ -171,7 +171,7 @@ func void DIA_Gravo_HelpAngryNow_BACK()
 
 func void DIA_Gravo_HelpAngryNow_Diego()
 {
-	AI_Output (other, self,"DIA_Gravo_HelpAngryNow_Diego_15_00"); //Ayúdame con Diego.
+	AI_Output (other, self,"DIA_Gravo_HelpAngryNow_Diego_15_00"); //AyÃºdame con Diego.
 	var C_NPC diego; diego = Hlp_GetNpc (PC_Thief);
 	B_Gravo_HelpAttitude(diego);
 	
@@ -180,7 +180,7 @@ func void DIA_Gravo_HelpAngryNow_Diego()
 
 func void DIA_Gravo_HelpAngryNow_Thorus()
 {
-	AI_Output (other, self,"DIA_Gravo_HelpAngryNow_Thorus_15_00"); //Ayúdame con Thorus.
+	AI_Output (other, self,"DIA_Gravo_HelpAngryNow_Thorus_15_00"); //AyÃºdame con Thorus.
 	var C_NPC thorus; thorus = Hlp_GetNpc (Grd_200_Thorus);
 	B_Gravo_HelpAttitude(thorus);
 	
@@ -189,7 +189,7 @@ func void DIA_Gravo_HelpAngryNow_Thorus()
 
 func void DIA_Gravo_HelpAngryNow_Gomez()
 {
-	AI_Output (other, self,"DIA_Gravo_HelpAngryNow_Gomez_15_00"); //Ayúdame con Gómez.
+	AI_Output (other, self,"DIA_Gravo_HelpAngryNow_Gomez_15_00"); //AyÃºdame con GÃ³mez.
 	var C_NPC gomez; gomez = Hlp_GetNpc (Ebr_100_Gomez);
 	B_Gravo_HelpAttitude(gomez);
 	
@@ -207,7 +207,7 @@ instance DIA_Gravo_Influence(C_INFO)
 	condition		= DIA_Gravo_Influence_Condition;
 	information		= DIA_Gravo_Influence_Info;
 	permanent		= 1;
-	description 	= "¿Podrías decirme quiénes son las personas influyentes por aquí?";
+	description 	= "Â¿PodrÃ­as decirme quiÃ©nes son las personas influyentes por aquÃ­?";
 };                       
 
 FUNC INT DIA_Gravo_Influence_Condition()
@@ -220,14 +220,14 @@ FUNC INT DIA_Gravo_Influence_Condition()
 
 func VOID DIA_Gravo_Influence_Info()
 {
-	AI_Output (other, self,"DIA_Gravo_Influence_15_00"); //¿Puedes decirme qué miembros de las Sombras son gente influyente por aquí?
-	AI_Output (self, other,"DIA_Gravo_Influence_04_01"); //Quieres impresionar a la gente apropiada, ¿verdad?
-	AI_Output (self, other,"DIA_Gravo_Influence_04_02"); //Diego es el más poderoso entre las Sombras y confía en Fingers, Whistler y Sly.
-	AI_Output (self, other,"DIA_Gravo_Influence_04_03"); //Dexter y Fisk venden sus mercancías en el mercado. Tienen muchos clientes, incluso entre los guardias, y eso les hace ser muy influyentes.
-	AI_Output (self, other,"DIA_Gravo_Influence_04_04"); //Y luego está Scatty. Está al mando de la arena y decide quién combate y todo eso. Mucha gente le debe mineral; él también es importante.
+	AI_Output (other, self,"DIA_Gravo_Influence_15_00"); //Â¿Puedes decirme quÃ© miembros de las Sombras son gente influyente por aquÃ­?
+	AI_Output (self, other,"DIA_Gravo_Influence_04_01"); //Quieres impresionar a la gente apropiada, Â¿verdad?
+	AI_Output (self, other,"DIA_Gravo_Influence_04_02"); //Diego es el mÃ¡s poderoso entre las Sombras y confÃ­a en Fingers, Whistler y Sly.
+	AI_Output (self, other,"DIA_Gravo_Influence_04_03"); //Dexter y Fisk venden sus mercancÃ­as en el mercado. Tienen muchos clientes, incluso entre los guardias, y eso les hace ser muy influyentes.
+	AI_Output (self, other,"DIA_Gravo_Influence_04_04"); //Y luego estÃ¡ Scatty. EstÃ¡ al mando de la arena y decide quiÃ©n combate y todo eso. Mucha gente le debe mineral; Ã©l tambiÃ©n es importante.
 	
 	Log_CreateTopic (GE_TraderOC, LOG_NOTE);
-	B_LogEntry (GE_TraderOC,"Dexter y Fisk comercian con varios artículos en la plaza del mercado.");
+	B_LogEntry (GE_TraderOC,"Dexter y Fisk comercian con varios artÃ­culos en la plaza del mercado.");
 
 	
 };

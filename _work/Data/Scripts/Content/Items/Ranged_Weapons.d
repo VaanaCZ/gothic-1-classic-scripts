@@ -268,7 +268,7 @@ INSTANCE ItRw_Bow_Long_06 (C_Item)
 /******************************************************************************************/
 INSTANCE ItRw_Bow_Long_07 (C_Item)
 {
-	name 				=	"Arco del ejército";
+	name 				=	"Arco del ejÃ©rcito";
 
 	mainflag 			=	ITEM_KAT_FF;
 	flags 				=	ITEM_BOW;

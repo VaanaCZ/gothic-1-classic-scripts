@@ -47,7 +47,7 @@ FUNC INT DIA_Kyle_HutRage_Condition()
 
 FUNC VOID DIA_Kyle_HutRage_Info()
 {
-	AI_Output (self, other,"DIA_Kyle_HutRage_10_00"); //¿Cuántas veces os he dicho que no atraveséis mi cabaña corriendo, bastardos?
+	AI_Output (self, other,"DIA_Kyle_HutRage_10_00"); //Â¿CuÃ¡ntas veces os he dicho que no atravesÃ©is mi cabaÃ±a corriendo, bastardos?
 };
 
 // **************************************************
@@ -61,7 +61,7 @@ INSTANCE DIA_Kyle_Problem (C_INFO)
 	condition		= DIA_Kyle_Problem_Condition;
 	information		= DIA_Kyle_Problem_Info;
 	permanent		= 1;
-	description		= "¿Qué problema tienes?";
+	description		= "Â¿QuÃ© problema tienes?";
 };
 
 FUNC INT DIA_Kyle_Problem_Condition()
@@ -71,14 +71,14 @@ FUNC INT DIA_Kyle_Problem_Condition()
 
 FUNC VOID DIA_Kyle_Problem_Info()
 {
-	AI_Output (other, self,"DIA_Kyle_Problem_15_00"); //¿Cuál es tu problema?
-	AI_Output (self, other,"DIA_Kyle_Problem_10_01"); //¡Déjame en paz, tío! ¡Todo el mundo es un problema para mí!
-	AI_Output (self, other,"DIA_Kyle_Problem_10_02"); //Todo empezó cuando construí mi cabaña.
+	AI_Output (other, self,"DIA_Kyle_Problem_15_00"); //Â¿CuÃ¡l es tu problema?
+	AI_Output (self, other,"DIA_Kyle_Problem_10_01"); //Â¡DÃ©jame en paz, tÃ­o! Â¡Todo el mundo es un problema para mÃ­!
+	AI_Output (self, other,"DIA_Kyle_Problem_10_02"); //Todo empezÃ³ cuando construÃ­ mi cabaÃ±a.
 	AI_Output (self, other,"DIA_Kyle_Problem_10_03"); //Me dijeron que no la levantara cerca de la zanja.
-	AI_Output (self, other,"DIA_Kyle_Problem_10_04"); //Pero ninguno de esos bastardos me advirtió lo que pasaría si lo hacía.
-	AI_Output (self, other,"DIA_Kyle_Problem_10_05"); //A mi regreso de la mina hace unos días, tenía una segunda puerta.
+	AI_Output (self, other,"DIA_Kyle_Problem_10_04"); //Pero ninguno de esos bastardos me advirtiÃ³ lo que pasarÃ­a si lo hacÃ­a.
+	AI_Output (self, other,"DIA_Kyle_Problem_10_05"); //A mi regreso de la mina hace unos dÃ­as, tenÃ­a una segunda puerta.
 	AI_Output (self, other,"DIA_Kyle_Problem_10_06"); //Cerdos. Los odio. No tengo palabras para expresar el odio que siento hacia ellos.
-	AI_Output (self, other,"DIA_Kyle_Problem_10_07"); //Ahora todo el mundo atraviesa mi cabaña corriendo. Todos los idiotas.
+	AI_Output (self, other,"DIA_Kyle_Problem_10_07"); //Ahora todo el mundo atraviesa mi cabaÃ±a corriendo. Todos los idiotas.
 };
 
 	

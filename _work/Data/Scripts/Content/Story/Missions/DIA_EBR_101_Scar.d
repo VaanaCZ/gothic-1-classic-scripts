@@ -33,7 +33,7 @@ INSTANCE DIA_SCAR_Hello (C_INFO)
 	condition	= DIA_SCAR_Hello_Condition;
 	information	= DIA_SCAR_Hello_Info;
 	permanent	= 0;
-	description = "¿Quién eres?";
+	description = "Â¿QuiÃ©n eres?";
 };                       
 
 FUNC INT DIA_SCAR_Hello_Condition()
@@ -43,7 +43,7 @@ FUNC INT DIA_SCAR_Hello_Condition()
 
 FUNC VOID DIA_SCAR_Hello_Info()
 {	
-	AI_Output (other, self,"DIA_SCAR_Hello_15_00"); //¿Quién eres?
+	AI_Output (other, self,"DIA_SCAR_Hello_15_00"); //Â¿QuiÃ©n eres?
 	AI_Output (self, other,"DIA_SCAR_Hello_08_01"); //Me llaman Scar.
 };
 
@@ -58,7 +58,7 @@ INSTANCE DIA_SCAR_What (C_INFO)
 	condition	= DIA_SCAR_What_Condition;
 	information	= DIA_SCAR_What_Info;
 	permanent	= 0;
-	description = "¿En qué trabajas?";
+	description = "Â¿En quÃ© trabajas?";
 };                       
 
 FUNC INT DIA_SCAR_What_Condition()
@@ -71,9 +71,9 @@ FUNC INT DIA_SCAR_What_Condition()
 
 FUNC VOID DIA_SCAR_What_Info()
 {	
-	AI_Output (other, self,"DIA_SCAR_What_15_00"); //¿En qué trabajas?
-	AI_Output (self, other,"DIA_SCAR_What_08_01"); //Arto y yo hacemos que nadie vea a Gómez a menos que esté invitado.
-	AI_Output (self, other,"DIA_SCAR_What_08_02"); //Y también hacemos que las mujeres no se inquieten.
+	AI_Output (other, self,"DIA_SCAR_What_15_00"); //Â¿En quÃ© trabajas?
+	AI_Output (self, other,"DIA_SCAR_What_08_01"); //Arto y yo hacemos que nadie vea a GÃ³mez a menos que estÃ© invitado.
+	AI_Output (self, other,"DIA_SCAR_What_08_02"); //Y tambiÃ©n hacemos que las mujeres no se inquieten.
 };
 
 // ************************************************************
@@ -87,7 +87,7 @@ INSTANCE DIA_SCAR_Frau (C_INFO)
 	condition	= DIA_SCAR_Frau_Condition;
 	information	= DIA_SCAR_Frau_Info;
 	permanent	= 0;
-	description = "Cuando me metieron aquí, vi que traían a una mujer...";
+	description = "Cuando me metieron aquÃ­, vi que traÃ­an a una mujer...";
 };                       
 
 FUNC INT DIA_SCAR_Frau_Condition()
@@ -100,12 +100,12 @@ FUNC INT DIA_SCAR_Frau_Condition()
 
 FUNC VOID DIA_SCAR_Frau_Info()
 {	
-	AI_Output (other, self,"DIA_SCAR_Frau_15_00"); //Cuando me metieron aquí, vi que traían a una mujer junto a las mercancías.
-	AI_Output (self, other,"DIA_SCAR_Frau_08_01"); //¿Y qué?
-	AI_Output (other, self,"DIA_SCAR_Frau_15_02"); //¿Está ella aquí?
-	AI_Output (self, other,"DIA_SCAR_Frau_08_03"); //Mira, déjame darte un consejo por si estás interesado en ella: olvídala.
-	AI_Output (self, other,"DIA_SCAR_Frau_08_04"); //Acaba de llegar y Gómez la tiene encerrada en su alcoba.
-	AI_Output (self, other,"DIA_SCAR_Frau_08_05"); //Cuando haya acabado con ella, tal vez la envíe abajo. Pero por ahora es SUYA, así que será mejor que te olvides de ella.
+	AI_Output (other, self,"DIA_SCAR_Frau_15_00"); //Cuando me metieron aquÃ­, vi que traÃ­an a una mujer junto a las mercancÃ­as.
+	AI_Output (self, other,"DIA_SCAR_Frau_08_01"); //Â¿Y quÃ©?
+	AI_Output (other, self,"DIA_SCAR_Frau_15_02"); //Â¿EstÃ¡ ella aquÃ­?
+	AI_Output (self, other,"DIA_SCAR_Frau_08_03"); //Mira, dÃ©jame darte un consejo por si estÃ¡s interesado en ella: olvÃ­dala.
+	AI_Output (self, other,"DIA_SCAR_Frau_08_04"); //Acaba de llegar y GÃ³mez la tiene encerrada en su alcoba.
+	AI_Output (self, other,"DIA_SCAR_Frau_08_05"); //Cuando haya acabado con ella, tal vez la envÃ­e abajo. Pero por ahora es SUYA, asÃ­ que serÃ¡ mejor que te olvides de ella.
 };
 
 // ************************************************************
@@ -119,7 +119,7 @@ INSTANCE DIA_SCAR_PERM (C_INFO)
 	condition	= DIA_SCAR_PERM_Condition;
 	information	= DIA_SCAR_PERM_Info;
 	permanent	= 1;
-	description = "¿Me puedes decir algo sobre Gómez?";
+	description = "Â¿Me puedes decir algo sobre GÃ³mez?";
 };                       
 
 FUNC INT DIA_SCAR_PERM_Condition()
@@ -132,8 +132,8 @@ FUNC INT DIA_SCAR_PERM_Condition()
 
 FUNC VOID DIA_SCAR_PERM_Info()
 {	
-	AI_Output (other, self,"DIA_SCAR_PERM_15_00"); //¿Me puedes decir algo sobre Gómez?
-	AI_Output (self, other,"DIA_SCAR_PERM_08_01"); //Sólo necesitas saber que es el hombre más poderoso de la colonia.
+	AI_Output (other, self,"DIA_SCAR_PERM_15_00"); //Â¿Me puedes decir algo sobre GÃ³mez?
+	AI_Output (self, other,"DIA_SCAR_PERM_08_01"); //SÃ³lo necesitas saber que es el hombre mÃ¡s poderoso de la colonia.
 	AI_Output (self, other,"DIA_SCAR_PERM_08_02"); //Consigue todo lo que quiere, y lo que de verdad quiere es poder.
 };
 

@@ -23,7 +23,7 @@ FUNC VOID DIA_Cavalorn_Exit_Info()
 };
 
 // **************************************************
-// 					Ich Jäger
+// 					Ich JÃ¤ger
 // **************************************************
 
 INSTANCE DIA_cavalorn_Hunter (C_INFO)
@@ -33,7 +33,7 @@ INSTANCE DIA_cavalorn_Hunter (C_INFO)
 	condition		= DIA_cavalorn_Hunter_Condition;
 	information		= DIA_cavalorn_Hunter_Info;
 	permanent		= 0;
-	description		= "¿Qué estás haciendo aquí?"; 
+	description		= "Â¿QuÃ© estÃ¡s haciendo aquÃ­?"; 
 };
 
 FUNC INT DIA_cavalorn_Hunter_Condition()
@@ -43,8 +43,8 @@ FUNC INT DIA_cavalorn_Hunter_Condition()
 
 FUNC VOID DIA_cavalorn_Hunter_Info()
 {
-	AI_Output (other, self,"DIA_cavalorn_Hunter_15_00"); //¿Qué estás haciendo aquí?
-	AI_Output (self, other,"DIA_cavalorn_Hunter_12_01"); //Soy un cazador; sobre todo de carroñeros.
+	AI_Output (other, self,"DIA_cavalorn_Hunter_15_00"); //Â¿QuÃ© estÃ¡s haciendo aquÃ­?
+	AI_Output (self, other,"DIA_cavalorn_Hunter_12_01"); //Soy un cazador; sobre todo de carroÃ±eros.
 	
 };
 
@@ -59,7 +59,7 @@ INSTANCE DIA_cavalorn_Lehrer (C_INFO)
 	condition		= DIA_cavalorn_Lehrer_Condition;
 	information		= DIA_cavalorn_Lehrer_Info;
 	permanent		= 1;
-	description		= "¿Puedes enseñarme algo acerca de la caza?"; 
+	description		= "Â¿Puedes enseÃ±arme algo acerca de la caza?"; 
 };
 
 FUNC INT DIA_cavalorn_Lehrer_Condition()
@@ -75,10 +75,10 @@ FUNC VOID DIA_cavalorn_Lehrer_Info()
 	if (log_cavalorntrain == FALSE)
 	{
 		Log_CreateTopic (GE_TeacherOW,LOG_NOTE);
-		B_LogEntry		(GE_TeacherOW,"Cavalorn es cazador. Puede enseñarme SIGILO y TIRO CON ARCO. Vive en una cabaña situada entre los Campamentos Viejo y Nuevo.");
+		B_LogEntry		(GE_TeacherOW,"Cavalorn es cazador. Puede enseÃ±arme SIGILO y TIRO CON ARCO. Vive en una cabaÃ±a situada entre los Campamentos Viejo y Nuevo.");
 		log_cavalorntrain = TRUE;
 	};
-	AI_Output (other, self,"DIA_cavalorn_Lehrer_15_00"); //¿Puedes enseñarme algo del arte de cazar?
+	AI_Output (other, self,"DIA_cavalorn_Lehrer_15_00"); //Â¿Puedes enseÃ±arme algo del arte de cazar?
 	AI_Output (self, other,"DIA_cavalorn_Lehrer_12_01"); //Eso depende de lo que quieras saber.
 	
 	Info_ClearChoices	(DIA_cavalorn_Lehrer );
@@ -109,11 +109,11 @@ func void DIA_Cavalorn_Lehrer_Bow()
 {
 	if (B_GiveSkill(other, NPC_TALENT_BOW, 1, LPCOST_TALENT_BOW_1))
 	{		
-		AI_Output (other, self,"DIA_cavalorn_Lehrer_Bow_15_00"); //¿Puedes enseñarme a manejar mejor el arco?
-		AI_Output (self, other,"DIA_cavalorn_Lehrer_Bow_12_01"); //A un principiante no le resulta difícil mejorar. Depende de tu postura.
-		AI_Output (self, other,"DIA_cavalorn_Lehrer_Bow_12_02"); //Separa las piernas, pon ambos brazos a la misma altura, contén el aliento y ¡dispara!
-		AI_Output (self, other,"DIA_cavalorn_Lehrer_Bow_12_03"); //Si alcanzas algunas partes del cuerpo no necesitarás más que un disparo. Al ser un principiante no tienes muchas posibilidades de alcanzar estas partes.
-		AI_Output (self, other,"DIA_cavalorn_Lehrer_Bow_12_04"); //Pero si tienes presente lo que te he dicho, la  próxima vez tu puntería será mejor.
+		AI_Output (other, self,"DIA_cavalorn_Lehrer_Bow_15_00"); //Â¿Puedes enseÃ±arme a manejar mejor el arco?
+		AI_Output (self, other,"DIA_cavalorn_Lehrer_Bow_12_01"); //A un principiante no le resulta difÃ­cil mejorar. Depende de tu postura.
+		AI_Output (self, other,"DIA_cavalorn_Lehrer_Bow_12_02"); //Separa las piernas, pon ambos brazos a la misma altura, contÃ©n el aliento y Â¡dispara!
+		AI_Output (self, other,"DIA_cavalorn_Lehrer_Bow_12_03"); //Si alcanzas algunas partes del cuerpo no necesitarÃ¡s mÃ¡s que un disparo. Al ser un principiante no tienes muchas posibilidades de alcanzar estas partes.
+		AI_Output (self, other,"DIA_cavalorn_Lehrer_Bow_12_04"); //Pero si tienes presente lo que te he dicho, la  prÃ³xima vez tu punterÃ­a serÃ¡ mejor.
 	};
 };
 
@@ -122,10 +122,10 @@ func void DIA_Cavalorn_Lehrer_Schleichen()
 	if (B_GiveSkill(other, NPC_TALENT_SNEAK, 1, LPCOST_TALENT_SNEAK))
 	{		
 		AI_Output (other, self,"DIA_cavalorn_Lehrer_Schleichen_15_00"); //Quiero aprender a moverme con sigilo.
-		AI_Output (self, other,"DIA_cavalorn_Lehrer_Schleichen_12_01"); //Excelente idea. Eso es muy importante a la hora de entrar en cabañas para atacar a alguien por detrás.
-		AI_Output (self, other,"DIA_cavalorn_Lehrer_Schleichen_12_02"); //Si doblas las rodillas al andar, podrás ver mejor el suelo y controlarás mejor tu cuerpo.
-		AI_Output (self, other,"DIA_cavalorn_Lehrer_Schleichen_12_03"); //¡Pero en esta postura resultarás fácil de identificar; haz que nadie te vea cuando te estés moviendo con sigilo!
-		AI_Output (self, other,"DIA_cavalorn_Lehrer_Schleichen_12_04"); //Ten presente lo que te he dicho y, sobre todo, ¡que no te pillen!
+		AI_Output (self, other,"DIA_cavalorn_Lehrer_Schleichen_12_01"); //Excelente idea. Eso es muy importante a la hora de entrar en cabaÃ±as para atacar a alguien por detrÃ¡s.
+		AI_Output (self, other,"DIA_cavalorn_Lehrer_Schleichen_12_02"); //Si doblas las rodillas al andar, podrÃ¡s ver mejor el suelo y controlarÃ¡s mejor tu cuerpo.
+		AI_Output (self, other,"DIA_cavalorn_Lehrer_Schleichen_12_03"); //Â¡Pero en esta postura resultarÃ¡s fÃ¡cil de identificar; haz que nadie te vea cuando te estÃ©s moviendo con sigilo!
+		AI_Output (self, other,"DIA_cavalorn_Lehrer_Schleichen_12_04"); //Ten presente lo que te he dicho y, sobre todo, Â¡que no te pillen!
 	};
 };
 func void DIA_Cavalorn_Lehrer_Bow_2()
@@ -134,8 +134,8 @@ func void DIA_Cavalorn_Lehrer_Bow_2()
 	{		
 			AI_Output (self, other,"DIA_Cavalorn_Lehrer_Bow_2_Info_12_02"); //Ya eres un buen cazador. Ahora debes adquirir los conocimientos que te faltan.
 			AI_Output (self, other,"DIA_Cavalorn_Lehrer_Bow_2_Info_12_03"); //Para convertirte en un buen tirador, tienes que dejar de intentar convertirte en uno.
-			AI_Output (self, other,"DIA_Cavalorn_Lehrer_Bow_2_Info_12_04"); //Descubre las leyes de ojo, la tensión, la trayectoria y el blanco. Estate siempre alerta y preparado.
-			AI_Output (self, other,"DIA_Cavalorn_Lehrer_Bow_2_Info_12_05"); //Ya has conseguido un gran dominio de la técnica. Ahora vete a aplicar tus conocimientos y habilidades.
+			AI_Output (self, other,"DIA_Cavalorn_Lehrer_Bow_2_Info_12_04"); //Descubre las leyes de ojo, la tensiÃ³n, la trayectoria y el blanco. Estate siempre alerta y preparado.
+			AI_Output (self, other,"DIA_Cavalorn_Lehrer_Bow_2_Info_12_05"); //Ya has conseguido un gran dominio de la tÃ©cnica. Ahora vete a aplicar tus conocimientos y habilidades.
 	};
 };
 /*------------------------------------------------------------------------
@@ -149,7 +149,7 @@ instance  STT_336_cavalorn_SELLBOW (C_INFO)
 	information		= STT_336_cavalorn_SELLBOW_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "¿Dónde puedo conseguir un arco?"; 
+	description		= "Â¿DÃ³nde puedo conseguir un arco?"; 
 };
 
 FUNC int  STT_336_cavalorn_SELLBOW_Condition()
@@ -162,10 +162,10 @@ FUNC int  STT_336_cavalorn_SELLBOW_Condition()
 };
 FUNC void  STT_336_cavalorn_SELLBOW_Info()
 {
-	AI_Output (other, self,"STT_336_cavalorn_SELLBOW_Info_15_01"); //¿Dónde puedo conseguir un arco?
-	AI_Output (self, other,"STT_336_cavalorn_SELLBOW_Info_12_02"); //Aquí. Yo vendo los mejores arcos del Campamento Viejo.
+	AI_Output (other, self,"STT_336_cavalorn_SELLBOW_Info_15_01"); //Â¿DÃ³nde puedo conseguir un arco?
+	AI_Output (self, other,"STT_336_cavalorn_SELLBOW_Info_12_02"); //AquÃ­. Yo vendo los mejores arcos del Campamento Viejo.
 	Log_CreateTopic (GE_TraderOC,LOG_NOTE);
-	B_LogEntry (GE_TraderOC,"Cavalorn comercia con ARCOS y FLECHAS. Lo encontraré de camino al Campamento Nuevo, en el cañón situado al oeste del Campamento Viejo.");
+	B_LogEntry (GE_TraderOC,"Cavalorn comercia con ARCOS y FLECHAS. Lo encontrarÃ© de camino al Campamento Nuevo, en el caÃ±Ã³n situado al oeste del Campamento Viejo.");
 };  
 
 /*------------------------------------------------------------------------
@@ -179,7 +179,7 @@ instance  STT_336_cavalorn_TRADE (C_INFO)
 	information		= STT_336_cavalorn_TRADE_Info;
 	important		= 0;
 	permanent		= 1;
-	description		= "Muéstrame tus mercancías."; 
+	description		= "MuÃ©strame tus mercancÃ­as."; 
 	trade 			= 1;
 };
 
@@ -193,7 +193,7 @@ FUNC int  STT_336_cavalorn_TRADE_Condition()
 };
 FUNC void  STT_336_cavalorn_TRADE_Info()
 {
-	AI_Output (other, self,"STT_336_cavalorn_TRADE_Info_15_01"); //Déjame ver tu mercancía.
+	AI_Output (other, self,"STT_336_cavalorn_TRADE_Info_15_01"); //DÃ©jame ver tu mercancÃ­a.
 	
 };  
 

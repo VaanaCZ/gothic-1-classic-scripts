@@ -4,7 +4,7 @@
 
 PROTOTYPE Mst_Default_Golem(C_Npc)			
 {
-	name							=	"GÛlem";
+	name							=	"G√≥lem";
 	guild							=	GIL_GOLEM;
 	// REAL_ID in Instanzen !!!
 	level							=	100;
@@ -82,7 +82,7 @@ func void Set_IceGolem_Visuals()
 
 INSTANCE StoneGolem	(Mst_Default_Golem)
 {
-	name	=	"GÛlem de piedra";
+	name	=	"G√≥lem de piedra";
 	aivar[AIV_MM_REAL_ID]			= 	ID_STONEGOLEM;
 	protection	[PROT_BLUNT]		=	75;
 //--------------------------------------------
@@ -99,7 +99,7 @@ INSTANCE StoneGolem	(Mst_Default_Golem)
 INSTANCE SummonedByPC_StoneGolem (Mst_Default_Golem)
 {
 	//-------- general --------
-	name	=	"GÛlem";
+	name	=	"G√≥lem";
 	aivar[AIV_MM_REAL_ID]			= 	ID_STONEGOLEM;
 
 	//-------- visual --------
@@ -121,7 +121,7 @@ INSTANCE SummonedByPC_StoneGolem (Mst_Default_Golem)
 INSTANCE SummonedByNPC_StoneGolem (Mst_Default_Golem)
 {
 	//-------- general --------
-	name	=	"GÛlem de piedra";
+	name	=	"G√≥lem de piedra";
 	aivar[AIV_MM_REAL_ID]			= 	ID_STONEGOLEM;
 
 	//-------- visual --------
@@ -142,7 +142,7 @@ INSTANCE SummonedByNPC_StoneGolem (Mst_Default_Golem)
 INSTANCE FireGolem	(Mst_Default_Golem)
 {
 	//-------- general --------
-	name	=	"GÛlem de fuego";
+	name	=	"G√≥lem de fuego";
 	aivar		[AIV_MM_REAL_ID]	= 	ID_FIREGOLEM;
 
 	//-------- visual --------
@@ -152,7 +152,7 @@ INSTANCE FireGolem	(Mst_Default_Golem)
 	//-------- attributes --------
 	attribute	[ATR_STRENGTH]		=	50;	// da Feuerschaden
 	protection	[PROT_MAGIC]		=	0;	// betrifft im wesentlichen die Blitz- und Eiszauber
-	attribute	[ATR_HITPOINTS_MAX]	=	150;// da er nur durch Blitz- und Eiszauber verwundbar ist, muﬂ dieser Wert hier sehr viel niedriger sein 
+	attribute	[ATR_HITPOINTS_MAX]	=	150;// da er nur durch Blitz- und Eiszauber verwundbar ist, mu√ü dieser Wert hier sehr viel niedriger sein 
 	attribute	[ATR_HITPOINTS]		=	150;
 	damagetype 						=	DAM_FIRE;
 
@@ -169,7 +169,7 @@ INSTANCE FireGolem	(Mst_Default_Golem)
 INSTANCE IceGolem	(Mst_Default_Golem)
 {
 	//-------- general --------
-	name	=	"GÛlem de hielo";
+	name	=	"G√≥lem de hielo";
 	aivar[AIV_MM_REAL_ID]			= 	ID_ICEGOLEM;
 
 	//-------- visual --------
@@ -195,12 +195,12 @@ INSTANCE IceGolem	(Mst_Default_Golem)
 /*************************************************************************
 **	Bridge Golem   														**
 *************************************************************************/
-// bewacht die Br¸cke zur Bergfestung
+// bewacht die Br√ºcke zur Bergfestung
 // Hinweis im Spiel: sollte mit Keulenwaffen bezwungen werden!
 INSTANCE BridgeGolem	(Mst_Default_Golem)
 {
 	//-------- general --------
-	name	=	"GÛlem del puente";
+	name	=	"G√≥lem del puente";
 	level	=	50;
 
 	//-------- visuals --------

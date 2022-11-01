@@ -33,7 +33,7 @@ INSTANCE DIA_Grd_217_First (C_INFO)
 	condition		= DIA_Grd_217_First_Condition;
 	information		= DIA_Grd_217_First_Info;
 	permanent		= 1;
-	description		= "¡Hola!";
+	description		= "Â¡Hola!";
 };
 
 FUNC INT DIA_Grd_217_First_Condition()
@@ -43,7 +43,7 @@ FUNC INT DIA_Grd_217_First_Condition()
 
 FUNC VOID DIA_Grd_217_First_Info()
 {
-	AI_Output (other, self,"DIA_Grd_217_First_15_00"); //¡Hola!
-	AI_Output (self, other,"DIA_Grd_217_First_06_01"); //¡Mueve el culo! Entra o sal, me da lo mismo mientras te pierda de vista.
+	AI_Output (other, self,"DIA_Grd_217_First_15_00"); //Â¡Hola!
+	AI_Output (self, other,"DIA_Grd_217_First_06_01"); //Â¡Mueve el culo! Entra o sal, me da lo mismo mientras te pierda de vista.
 	AI_StopProcessInfos	( self );
 };

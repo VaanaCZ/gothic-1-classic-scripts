@@ -8,7 +8,7 @@ INSTANCE Info_FindNPC_ST(C_INFO)
 	condition	= Info_FindNPC_ST_Condition;
 	information	= Info_FindNPC_ST_Info;
 	permanent	= 1;
-	description = "¿Dónde puedo encontrar...";
+	description = "Â¿DÃ³nde puedo encontrar...";
 };                       
 
 FUNC INT Info_FindNPC_ST_Condition()
@@ -51,7 +51,7 @@ FUNC VOID Info_FindNPC_ST_BACK()
 
 FUNC VOID Info_FindNPC_ST_CorAngar()
 {
-	AI_Output(other,self,"Info_FindNPC_ST_CorAngar_15_00"); //¿Dónde puedo encontrar a Cor Angar?
+	AI_Output(other,self,"Info_FindNPC_ST_CorAngar_15_00"); //Â¿DÃ³nde puedo encontrar a Cor Angar?
 
 	VAR C_NPC CorAngar;		CorAngar = Hlp_GetNpc(Gur_1202_CorAngar);
 	
@@ -65,26 +65,26 @@ FUNC VOID Info_FindNPC_ST_CorAngar()
 		{
 			if (self.voice == 2)
 			{
-				AI_Output(self,other,"Info_FindNPC_ST_CorAngar_02_01"); //El campo de entrenamiento de los templarios está en el segundo nivel. Suele estar allí durante el día.
+				AI_Output(self,other,"Info_FindNPC_ST_CorAngar_02_01"); //El campo de entrenamiento de los templarios estÃ¡ en el segundo nivel. Suele estar allÃ­ durante el dÃ­a.
 			}
 			else if (self.voice == 3)
 			{
-				AI_Output(self,other,"Info_FindNPC_ST_CorAngar_03_01"); //El campo de entrenamiento de los templarios está en el segundo nivel. Suele estar allí durante el día.
+				AI_Output(self,other,"Info_FindNPC_ST_CorAngar_03_01"); //El campo de entrenamiento de los templarios estÃ¡ en el segundo nivel. Suele estar allÃ­ durante el dÃ­a.
 			}
 			else if (self.voice == 5)
 			{
-				AI_Output(self,other,"Info_FindNPC_ST_CorAngar_05_01"); //El campo de entrenamiento de los templarios está en el segundo nivel. Suele estar allí durante el día.
+				AI_Output(self,other,"Info_FindNPC_ST_CorAngar_05_01"); //El campo de entrenamiento de los templarios estÃ¡ en el segundo nivel. Suele estar allÃ­ durante el dÃ­a.
 			};
 		}
 		else if (self.guild == GIL_TPL) 
 		{
 			if (self.voice == 8)
 			{
-				AI_Output(self,other,"Info_FindNPC_ST_CorAngar_08_01"); //El campo de entrenamiento de los templarios está en el segundo nivel. Suele estar allí durante el día.
+				AI_Output(self,other,"Info_FindNPC_ST_CorAngar_08_01"); //El campo de entrenamiento de los templarios estÃ¡ en el segundo nivel. Suele estar allÃ­ durante el dÃ­a.
 			}
 			else if (self.voice == 13)
 			{
-				AI_Output(self,other,"Info_FindNPC_ST_CorAngar_13_01"); //El campo de entrenamiento de los templarios está en el segundo nivel. Suele estar allí durante el día.
+				AI_Output(self,other,"Info_FindNPC_ST_CorAngar_13_01"); //El campo de entrenamiento de los templarios estÃ¡ en el segundo nivel. Suele estar allÃ­ durante el dÃ­a.
 			};
 		};
 	};
@@ -98,7 +98,7 @@ FUNC VOID Info_FindNPC_ST_CorAngar()
 
 FUNC VOID Info_FindNPC_ST_CorKalom()
 {
-	AI_Output(other,self,"Info_FindNPC_ST_CorKalom_15_00"); //¿Dónde puedo encontrar a Cor Kalom?
+	AI_Output(other,self,"Info_FindNPC_ST_CorKalom_15_00"); //Â¿DÃ³nde puedo encontrar a Cor Kalom?
 
 	VAR C_NPC CorKalom;		CorKalom = Hlp_GetNpc(Gur_1201_CorKalom);
 	
@@ -112,26 +112,26 @@ FUNC VOID Info_FindNPC_ST_CorKalom()
 		{
 			if (self.voice == 2)
 			{
-				AI_Output(self,other,"Info_FindNPC_ST_CorKalom_02_01"); //El laboratorio alquímico está en el segundo nivel, cerca de la colina del templo. Trabaja allí día y noche.
+				AI_Output(self,other,"Info_FindNPC_ST_CorKalom_02_01"); //El laboratorio alquÃ­mico estÃ¡ en el segundo nivel, cerca de la colina del templo. Trabaja allÃ­ dÃ­a y noche.
 			}
 			else if (self.voice == 3)
 			{
-				AI_Output(self,other,"Info_FindNPC_ST_CorKalom_03_01"); //El laboratorio alquímico está en el segundo nivel, cerca de la colina del templo. Trabaja allí día y noche.
+				AI_Output(self,other,"Info_FindNPC_ST_CorKalom_03_01"); //El laboratorio alquÃ­mico estÃ¡ en el segundo nivel, cerca de la colina del templo. Trabaja allÃ­ dÃ­a y noche.
 			}
 			else if (self.voice == 5)
 			{
-				AI_Output(self,other,"Info_FindNPC_ST_CorKalom_05_01"); //El laboratorio alquímico está en el segundo nivel, cerca de la colina del templo. Trabaja allí día y noche.
+				AI_Output(self,other,"Info_FindNPC_ST_CorKalom_05_01"); //El laboratorio alquÃ­mico estÃ¡ en el segundo nivel, cerca de la colina del templo. Trabaja allÃ­ dÃ­a y noche.
 			};
 		}
 		else if (self.guild == GIL_TPL) 
 		{
 			if (self.voice == 8)
 			{
-				AI_Output(self,other,"Info_FindNPC_ST_CorKalom_08_01"); //El laboratorio alquímico está en el segundo nivel, cerca de la colina del templo. Trabaja allí día y noche.
+				AI_Output(self,other,"Info_FindNPC_ST_CorKalom_08_01"); //El laboratorio alquÃ­mico estÃ¡ en el segundo nivel, cerca de la colina del templo. Trabaja allÃ­ dÃ­a y noche.
 			}
 			else if (self.voice == 13)
 			{
-				AI_Output(self,other,"Info_FindNPC_ST_CorKalom_13_01"); //El laboratorio alquímico está en el segundo nivel, cerca de la colina del templo. Trabaja allí día y noche.
+				AI_Output(self,other,"Info_FindNPC_ST_CorKalom_13_01"); //El laboratorio alquÃ­mico estÃ¡ en el segundo nivel, cerca de la colina del templo. Trabaja allÃ­ dÃ­a y noche.
 			};
 		};
 	};
@@ -145,7 +145,7 @@ FUNC VOID Info_FindNPC_ST_CorKalom()
 
 FUNC VOID Info_FindNPC_ST_YBerion()
 {
-	AI_Output(other,self,"Info_FindNPC_ST_YBerion_15_00"); //¿Dónde puedo encontrar a Y'Berion?
+	AI_Output(other,self,"Info_FindNPC_ST_YBerion_15_00"); //Â¿DÃ³nde puedo encontrar a Y'Berion?
 
 	VAR C_NPC YBerion;		YBerion = Hlp_GetNpc(Gur_1200_YBerion);
 	
@@ -159,26 +159,26 @@ FUNC VOID Info_FindNPC_ST_YBerion()
 		{
 			if (self.voice == 2)
 			{
-				AI_Output(self,other,"Info_FindNPC_ST_YBerion_02_01"); //El Iluminado vive aislado al abrigo de la colina del templo. Sólo sale en ocasiones señaladas.
+				AI_Output(self,other,"Info_FindNPC_ST_YBerion_02_01"); //El Iluminado vive aislado al abrigo de la colina del templo. SÃ³lo sale en ocasiones seÃ±aladas.
 			}
 			else if (self.voice == 3)
 			{
-				AI_Output(self,other,"Info_FindNPC_ST_YBerion_03_01"); //El Iluminado vive aislado al abrigo de la colina del templo. Sólo sale en ocasiones señaladas.
+				AI_Output(self,other,"Info_FindNPC_ST_YBerion_03_01"); //El Iluminado vive aislado al abrigo de la colina del templo. SÃ³lo sale en ocasiones seÃ±aladas.
 			}
 			else if (self.voice == 5)
 			{
-				AI_Output(self,other,"Info_FindNPC_ST_YBerion_05_01"); //El Iluminado vive aislado al abrigo de la colina del templo. Sólo sale en ocasiones señaladas.
+				AI_Output(self,other,"Info_FindNPC_ST_YBerion_05_01"); //El Iluminado vive aislado al abrigo de la colina del templo. SÃ³lo sale en ocasiones seÃ±aladas.
 			};
 		}
 		else if (self.guild == GIL_TPL) 
 		{
 			if (self.voice == 8)
 			{
-				AI_Output(self,other,"Info_FindNPC_ST_YBerion_08_01"); //El Iluminado vive aislado al abrigo de la colina del templo. Sólo sale en ocasiones señaladas.
+				AI_Output(self,other,"Info_FindNPC_ST_YBerion_08_01"); //El Iluminado vive aislado al abrigo de la colina del templo. SÃ³lo sale en ocasiones seÃ±aladas.
 			}
 			else if (self.voice == 13)
 			{
-				AI_Output(self,other,"Info_FindNPC_ST_YBerion_13_01"); //El Iluminado vive aislado al abrigo de la colina del templo. Sólo sale en ocasiones señaladas.
+				AI_Output(self,other,"Info_FindNPC_ST_YBerion_13_01"); //El Iluminado vive aislado al abrigo de la colina del templo. SÃ³lo sale en ocasiones seÃ±aladas.
 			};
 		};
 	};

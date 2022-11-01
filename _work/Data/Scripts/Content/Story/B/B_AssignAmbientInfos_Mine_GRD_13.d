@@ -37,7 +37,7 @@ INSTANCE Info_Mine_Grd_13_Mine (C_INFO) // E1
 	condition	= Info_Mine_Grd_13_Mine_Condition;
 	information	= Info_Mine_Grd_13_Mine_Info;
 	permanent	= 1;
-	description = "¿Qué sucede en la mina?";
+	description = "Â¿QuÃ© sucede en la mina?";
 };                       
 
 FUNC INT Info_Mine_Grd_13_Mine_Condition()
@@ -50,8 +50,8 @@ FUNC INT Info_Mine_Grd_13_Mine_Condition()
 
 FUNC VOID Info_Mine_Grd_13_Mine_Info()
 {
-	AI_Output(other,self,"Info_Mine_Grd_13_Mine_15_00"); //¿Qué sucede en la mina?
-	AI_Output(self,other,"Info_Mine_Grd_13_Mine_13_01"); //La mina es el corazón del Campamento Viejo. Sin mina no hay mineral. Y sin mineral, no ha mercancías. ¿Lo pillas?
+	AI_Output(other,self,"Info_Mine_Grd_13_Mine_15_00"); //Â¿QuÃ© sucede en la mina?
+	AI_Output(self,other,"Info_Mine_Grd_13_Mine_13_01"); //La mina es el corazÃ³n del Campamento Viejo. Sin mina no hay mineral. Y sin mineral, no ha mercancÃ­as. Â¿Lo pillas?
 };
 
 // *************************************************************************
@@ -64,7 +64,7 @@ INSTANCE Info_Mine_Grd_13_WichtigePersonen(C_INFO)
 	condition	= Info_Mine_Grd_13_WichtigePersonen_Condition;
 	information	= Info_Mine_Grd_13_WichtigePersonen_Info;
 	permanent	= 1;
-	description = "¿Quién manda por aquí?";
+	description = "Â¿QuiÃ©n manda por aquÃ­?";
 };                       
 
 FUNC INT Info_Mine_Grd_13_WichtigePersonen_Condition()
@@ -77,8 +77,8 @@ FUNC INT Info_Mine_Grd_13_WichtigePersonen_Condition()
 
 FUNC VOID Info_Mine_Grd_13_WichtigePersonen_Info()
 {
-	AI_Output(other,self,"Info_Mine_Grd_13_WichtigePersonen_15_00"); //¿Quién manda por aquí?
-	AI_Output(self,other,"Info_Mine_Grd_13_WichtigePersonen_13_01"); //Nuestro jefe es Asghan. Pero déjale en paz. Ian es el que se ocupa de la gente como tú.
+	AI_Output(other,self,"Info_Mine_Grd_13_WichtigePersonen_15_00"); //Â¿QuiÃ©n manda por aquÃ­?
+	AI_Output(self,other,"Info_Mine_Grd_13_WichtigePersonen_13_01"); //Nuestro jefe es Asghan. Pero dÃ©jale en paz. Ian es el que se ocupa de la gente como tÃº.
 };
 
 // *************************************************************************
@@ -91,7 +91,7 @@ INSTANCE Info_Mine_Grd_13_DasLager(C_INFO)
 	condition	= Info_Mine_Grd_13_DasLager_Condition;
 	information	= Info_Mine_Grd_13_DasLager_Info;
 	permanent	= 1;
-	description = "Háblame de los reptadores.";
+	description = "HÃ¡blame de los reptadores.";
 };                       
 
 FUNC INT Info_Mine_Grd_13_DasLager_Condition()
@@ -104,7 +104,7 @@ FUNC INT Info_Mine_Grd_13_DasLager_Condition()
 
 FUNC VOID Info_Mine_Grd_13_DasLager_Info()
 {
-	AI_Output(other,self,"Info_Mine_Grd_13_DasLager_15_00"); //Háblame de los reptadores.
+	AI_Output(other,self,"Info_Mine_Grd_13_DasLager_15_00"); //HÃ¡blame de los reptadores.
 	AI_Output(self,other,"Info_Mine_Grd_13_DasLager_13_01"); //La hermandad paga al Campamento Viejo con hierba del pantano, y se les permite que cacen reptadores en las minas.
 	
 };
@@ -119,7 +119,7 @@ INSTANCE Info_Mine_Grd_13_DieLage(C_INFO) // E1
 	condition	= Info_Mine_Grd_13_DieLage_Condition;
 	information	= Info_Mine_Grd_13_DieLage_Info;
 	permanent	= 1;
-	description = "¿Qué tal?";
+	description = "Â¿QuÃ© tal?";
 };                       
 
 FUNC INT Info_Mine_Grd_13_DieLage_Condition()
@@ -132,8 +132,8 @@ FUNC INT Info_Mine_Grd_13_DieLage_Condition()
 
 FUNC VOID Info_Mine_Grd_13_DieLage_Info()
 {
-	AI_Output(other,self,"Info_Mine_Grd_13_DieLage_15_00"); //¿Qué tal?
-	AI_Output(self,other,"Info_Mine_Grd_13_DieLage_13_01"); //¡Llevo años sin pelearme!
+	AI_Output(other,self,"Info_Mine_Grd_13_DieLage_15_00"); //Â¿QuÃ© tal?
+	AI_Output(self,other,"Info_Mine_Grd_13_DieLage_13_01"); //Â¡Llevo aÃ±os sin pelearme!
 	
 };
 	

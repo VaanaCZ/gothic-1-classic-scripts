@@ -34,7 +34,7 @@ instance  DIA_Shrat_WhyHere (C_INFO)
 	condition	= DIA_Shrat_WhyHere_Condition;
 	information	= DIA_Shrat_WhyHere_Info;
 	permanent	= 0;
-	description	= "¿Qué haces aquí?";
+	description	= "Â¿QuÃ© haces aquÃ­?";
 };                       
 
 FUNC int  DIA_Shrat_WhyHere_Condition()
@@ -44,12 +44,12 @@ FUNC int  DIA_Shrat_WhyHere_Condition()
 
 FUNC VOID  DIA_Shrat_WhyHere_Info()
 {
-	AI_Output (other, self,"DIA_Shrat_WhyHere_15_00"); //¿Qué estás haciendo aquí?
-	AI_Output (self, other,"DIA_Shrat_WhyHere_02_01"); //¿Acaso te he dado permiso para que me dirijas la palabra?
-	AI_Output (self, other,"DIA_Shrat_WhyHere_02_02"); //¡Era una broma! ¡Esos malditos chiflados me están poniendo de los nervios; por eso estoy aquí!
-	AI_Output (self, other,"DIA_Shrat_WhyHere_02_03"); //'¡No me dirijas la palabra!' '¡Reza por el perdón del Durmiente!' '¡Tu misión es extraordinariamente importante!'
-	AI_Output (self, other,"DIA_Shrat_WhyHere_02_04"); //Es como para volverle loco a uno; no es de extrañar que todos estén desquiciados aquí.
-	AI_Output (self, other,"DIA_Shrat_WhyHere_02_05"); //Yo soy Shrat, novicio del primer rango; ¡y eso es lo que siempre seré!
+	AI_Output (other, self,"DIA_Shrat_WhyHere_15_00"); //Â¿QuÃ© estÃ¡s haciendo aquÃ­?
+	AI_Output (self, other,"DIA_Shrat_WhyHere_02_01"); //Â¿Acaso te he dado permiso para que me dirijas la palabra?
+	AI_Output (self, other,"DIA_Shrat_WhyHere_02_02"); //Â¡Era una broma! Â¡Esos malditos chiflados me estÃ¡n poniendo de los nervios; por eso estoy aquÃ­!
+	AI_Output (self, other,"DIA_Shrat_WhyHere_02_03"); //'Â¡No me dirijas la palabra!' 'Â¡Reza por el perdÃ³n del Durmiente!' 'Â¡Tu misiÃ³n es extraordinariamente importante!'
+	AI_Output (self, other,"DIA_Shrat_WhyHere_02_04"); //Es como para volverle loco a uno; no es de extraÃ±ar que todos estÃ©n desquiciados aquÃ­.
+	AI_Output (self, other,"DIA_Shrat_WhyHere_02_05"); //Yo soy Shrat, novicio del primer rango; Â¡y eso es lo que siempre serÃ©!
 };
 
 // **************************************************
@@ -63,7 +63,7 @@ instance DIA_Shrat_JoinPSI (C_INFO)
 	condition	= DIA_Shrat_JoinPSI_Condition;
 	information	= DIA_Shrat_JoinPSI_Info;
 	permanent	= 0;
-	description	= "Quiero ingresar en la Hermandad. ¿Puedes ayudarme?";
+	description	= "Quiero ingresar en la Hermandad. Â¿Puedes ayudarme?";
 };                       
 
 FUNC int DIA_Shrat_JoinPSI_Condition()
@@ -76,9 +76,9 @@ FUNC int DIA_Shrat_JoinPSI_Condition()
 
 FUNC void DIA_Shrat_JoinPSI_Info()
 {
-	AI_Output (other, self,"DIA_Shrat_JoinPSI_15_00"); //Quiero ingresar en la Hermandad; ¿puedes ayudarme?
-	AI_Output (self, other,"DIA_Shrat_JoinPSI_02_01"); //¿Quieres ingresar aquí? La verdad es que yo estoy intentando pensar en cómo escaparme.
-	AI_Output (self, other,"DIA_Shrat_JoinPSI_02_02"); //Podríamos vagar por la colonia. Robarle su dinero a algunos atontados, reunir algo de mineral... ¿qué te parece?
+	AI_Output (other, self,"DIA_Shrat_JoinPSI_15_00"); //Quiero ingresar en la Hermandad; Â¿puedes ayudarme?
+	AI_Output (self, other,"DIA_Shrat_JoinPSI_02_01"); //Â¿Quieres ingresar aquÃ­? La verdad es que yo estoy intentando pensar en cÃ³mo escaparme.
+	AI_Output (self, other,"DIA_Shrat_JoinPSI_02_02"); //PodrÃ­amos vagar por la colonia. Robarle su dinero a algunos atontados, reunir algo de mineral... Â¿quÃ© te parece?
 };
 
 // **************************************************
@@ -92,7 +92,7 @@ instance DIA_Shrat_ComeWithMe (C_INFO)
 	condition	= DIA_Shrat_ComeWithMe_Condition;
 	information	= DIA_Shrat_ComeWithMe_Info;
 	permanent	= 1;
-	description	= "¡Vamos juntos! ¡Ven conmigo!";
+	description	= "Â¡Vamos juntos! Â¡Ven conmigo!";
 };                       
 
 FUNC int DIA_Shrat_ComeWithMe_Condition()
@@ -105,8 +105,8 @@ FUNC int DIA_Shrat_ComeWithMe_Condition()
 
 FUNC void DIA_Shrat_ComeWithMe_Info()
 {
-	AI_Output (other, self,"DIA_Shrat_ComeWithMe_15_00"); //¡Viajemos juntos! ¡Ven conmigo!
-	AI_Output (self, other,"DIA_Shrat_ComeWithMe_02_01"); //¡Eso es lo que yo quería oír! ¡Vamos!
+	AI_Output (other, self,"DIA_Shrat_ComeWithMe_15_00"); //Â¡Viajemos juntos! Â¡Ven conmigo!
+	AI_Output (self, other,"DIA_Shrat_ComeWithMe_02_01"); //Â¡Eso es lo que yo querÃ­a oÃ­r! Â¡Vamos!
 
 	Npc_ExchangeRoutine (self, "FOLLOW");
 	self.aivar[AIV_PARTYMEMBER] = TRUE;
@@ -123,7 +123,7 @@ instance DIA_Shrat_LeaveMe (C_INFO)
 	condition	= DIA_Shrat_LeaveMe_Condition;
 	information	= DIA_Shrat_LeaveMe_Info;
 	permanent	= 1;
-	description	= "Aquí se separan nuestros caminos. Iré solo.";
+	description	= "AquÃ­ se separan nuestros caminos. IrÃ© solo.";
 };                       
 
 FUNC int DIA_Shrat_LeaveMe_Condition()
@@ -136,8 +136,8 @@ FUNC int DIA_Shrat_LeaveMe_Condition()
 
 FUNC void DIA_Shrat_LeaveMe_Info()
 {
-	AI_Output (other, self,"DIA_Shrat_LeaveMe_15_00"); //Aquí se separan nuestros caminos; yo seguiré solo.
-	AI_Output (self, other,"DIA_Shrat_LeaveMe_02_01"); //De acuerdo. Yo volveré a mi escondite en el pantano. ¡Cuídate!
+	AI_Output (other, self,"DIA_Shrat_LeaveMe_15_00"); //AquÃ­ se separan nuestros caminos; yo seguirÃ© solo.
+	AI_Output (self, other,"DIA_Shrat_LeaveMe_02_01"); //De acuerdo. Yo volverÃ© a mi escondite en el pantano. Â¡CuÃ­date!
 
 	Npc_ExchangeRoutine (self, "START");
 	self.aivar[AIV_PARTYMEMBER] = FALSE;

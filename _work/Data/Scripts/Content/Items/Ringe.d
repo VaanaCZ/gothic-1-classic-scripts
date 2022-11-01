@@ -15,7 +15,7 @@
 	on_equip				=	Equip_Schutzring_Feuer1;
 	on_unequip				=	UnEquip_Schutzring_Feuer1;
 
-	description		= "Anillo de protecci髇 contra llamas";
+	description		= "Anillo de protecci贸n contra llamas";
 	//TEXT[0]			= "";
 	//TEXT[1]			= "";
 	////COUNT[1]		= ;
@@ -56,7 +56,7 @@
 	on_equip				=	Equip_Schutzring_Feuer2;
 	on_unequip				=	UnEquip_Schutzring_Feuer2;
 
-	description		= "Protecci髇 contra fuego";
+	description		= "Protecci贸n contra fuego";
 	//TEXT[0]			= "";
 	//TEXT[1]			= "";
 	////COUNT[1]		= ;
@@ -350,7 +350,7 @@
 	on_equip				=	Equip_Schutzring_Magie1_Fire1;
 	on_unequip				=	UnEquip_Schutzring_Magie1_Fire1;
 
-	description		= "Anillo de Purificaci髇";
+	description		= "Anillo de Purificaci贸n";
 	//TEXT[0]			= "";
 	//TEXT[1]			= "";
 	////COUNT[1]		= ;
@@ -481,7 +481,7 @@
 	on_equip				=  	Equip_Schutzring_Geschosse2_Waffen2;
 	on_unequip				= 	UnEquip_Schutzring_Geschosse2_Waffen2;
 
-	description		= "Anillo de Acusaci髇";
+	description		= "Anillo de Acusaci贸n";
 	//TEXT[0]			= "";
 	//TEXT[1]			= "";
 	////COUNT[1]		= ;
@@ -935,7 +935,7 @@
 	on_equip				=	Equip_Ring_der_Erleuchtung;
 	on_unequip				=	UnEquip_Ring_der_Erleuchtung;
 
-	description		= "Anillo de Iluminaci髇";
+	description		= "Anillo de Iluminaci贸n";
 	//TEXT[0]			= "";
 	//TEXT[1]			= "";
 	////COUNT[1]		= ;

@@ -23,7 +23,7 @@ FUNC VOID  Nov_1371_BaalNetbek_Exit_Info()
 	AI_StopProcessInfos	( self );
 };
 /*------------------------------------------------------------------------
-							GÄRTNER								
+							GÃ„RTNER								
 ------------------------------------------------------------------------*/
 
 instance  Nov_1371_BaalNetbek_CRAZY (C_INFO)
@@ -33,7 +33,7 @@ instance  Nov_1371_BaalNetbek_CRAZY (C_INFO)
 	information		= Nov_1371_BaalNetbek_CRAZY_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "¿Quién eres?"; 
+	description		= "Â¿QuiÃ©n eres?"; 
 };
 
 FUNC int  Nov_1371_BaalNetbek_CRAZY_Condition()
@@ -44,13 +44,13 @@ FUNC int  Nov_1371_BaalNetbek_CRAZY_Condition()
 
 FUNC void  Nov_1371_BaalNetbek_CRAZY_Info()
 {
-	AI_Output (other, self,"Nov_1371_BaalNetbek_CRAZY_Info_15_01"); //¿Quién eres?
-	AI_Output (self, other,"Nov_1371_BaalNetbek_CRAZY_Info_03_02"); //Soy el Gurú; el Gurú del pantano. Mis sirvientes me llaman Baal Netbek.
-	AI_Output (other, self,"Nov_1371_BaalNetbek_CRAZY_Info_15_03"); //¿Sirvientes? ¡No veo a ningún sirviente!
-	AI_Output (self, other,"Nov_1371_BaalNetbek_CRAZY_Info_03_04"); //Están por todas partes. ¡Los árboles! Andan, pegan saltos y bailan...
-	AI_Output (other, self,"Nov_1371_BaalNetbek_CRAZY_Info_15_05"); //...Entiendo. Bueno, seguiré mi camino.
-	AI_Output (self, other,"Nov_1371_BaalNetbek_CRAZY_Info_03_06"); //¡Espera, podrías ayudarme a convertir este pantano en una extensa pradera llena de flores!
-	AI_Output (other, self,"Nov_1371_BaalNetbek_CRAZY_Info_15_07"); //Bueno, empieza tú. Yo... volveré luego.
+	AI_Output (other, self,"Nov_1371_BaalNetbek_CRAZY_Info_15_01"); //Â¿QuiÃ©n eres?
+	AI_Output (self, other,"Nov_1371_BaalNetbek_CRAZY_Info_03_02"); //Soy el GurÃº; el GurÃº del pantano. Mis sirvientes me llaman Baal Netbek.
+	AI_Output (other, self,"Nov_1371_BaalNetbek_CRAZY_Info_15_03"); //Â¿Sirvientes? Â¡No veo a ningÃºn sirviente!
+	AI_Output (self, other,"Nov_1371_BaalNetbek_CRAZY_Info_03_04"); //EstÃ¡n por todas partes. Â¡Los Ã¡rboles! Andan, pegan saltos y bailan...
+	AI_Output (other, self,"Nov_1371_BaalNetbek_CRAZY_Info_15_05"); //...Entiendo. Bueno, seguirÃ© mi camino.
+	AI_Output (self, other,"Nov_1371_BaalNetbek_CRAZY_Info_03_06"); //Â¡Espera, podrÃ­as ayudarme a convertir este pantano en una extensa pradera llena de flores!
+	AI_Output (other, self,"Nov_1371_BaalNetbek_CRAZY_Info_15_07"); //Bueno, empieza tÃº. Yo... volverÃ© luego.
 	AI_TurnAway (hero,self);
 	AI_Output (other, self,"Nov_1371_BaalNetbek_CRAZY_Info_15_08"); //No va a serme de ninguna ayuda.
 	AI_StopProcessInfos	( self );
@@ -66,7 +66,7 @@ instance  Nov_1371_BaalNetbek_AGAIN (C_INFO)
 	information		= Nov_1371_BaalNetbek_AGAIN_Info;
 	important		= 0;
 	permanent		= 1;
-	description		= "Eh, ¿qué tal?"; 
+	description		= "Eh, Â¿quÃ© tal?"; 
 };
 
 FUNC int  Nov_1371_BaalNetbek_AGAIN_Condition()
@@ -79,6 +79,6 @@ FUNC int  Nov_1371_BaalNetbek_AGAIN_Condition()
 };
 FUNC void  Nov_1371_BaalNetbek_AGAIN_Info()
 {
-	AI_Output (other, self,"Nov_1371_BaalNetbek_AGAIN_Info_15_01"); //Oye, ¿cómo va la cosa?
-	AI_Output (self, other,"Nov_1371_BaalNetbek_AGAIN_Info_03_02"); //¡Ten cuidado, no hagas daño a mis árboles!
+	AI_Output (other, self,"Nov_1371_BaalNetbek_AGAIN_Info_15_01"); //Oye, Â¿cÃ³mo va la cosa?
+	AI_Output (self, other,"Nov_1371_BaalNetbek_AGAIN_Info_03_02"); //Â¡Ten cuidado, no hagas daÃ±o a mis Ã¡rboles!
 };  

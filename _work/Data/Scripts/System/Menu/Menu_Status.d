@@ -145,7 +145,7 @@ const int STAT_B_X3 = 7200;
 
 instance MENU_ITEM_PLAYERGUILD_TITLE(C_MENU_ITEM_DEF)
 {
-	text[0]	 = "CofradÌa:";
+	text[0]	 = "Cofrad√≠a:";
 	posx	 = STAT_A_X1;	posy = STAT_PLY_Y+STAT_DY*0;	
 	fontName	=	STAT_FONT_DEFAULT;
 	flags		=	flags & ~IT_SELECTABLE;
@@ -326,7 +326,7 @@ INSTANCE MENU_ITEM_ATTRIBUTE_4(C_MENU_ITEM_DEF)
 
 INSTANCE MENU_ITEM_ARMOR_HEADING(C_MENU_ITEM_DEF)
 {
-	text[0]	= "PROTECCI”N";
+	text[0]	= "PROTECCI√ìN";
 	fontName	=	STAT_FONT_TITLE;
 	posx =  STAT_A_X1; posy = STAT_ARM_Y + 0*STAT_DY;
 	flags = flags & ~IT_SELECTABLE;
@@ -395,7 +395,7 @@ INSTANCE MENU_ITEM_ARMOR_4(C_MENU_ITEM_DEF)
 // Headings
 INSTANCE MENU_ITEM_TALENTS_WEAPON_HEADING(C_MENU_ITEM_DEF)
 {
-	text[0]	= "HAB. COMBATE / GOLPE CRÕTICO";
+	text[0]	= "HAB. COMBATE / GOLPE CR√çTICO";
 	posx	= STAT_B_X1; posy = STAT_TAL_Y + STAT_DY*0;
 	fontName	=	STAT_FONT_TITLE;	
 	flags		=	flags & ~IT_SELECTABLE;

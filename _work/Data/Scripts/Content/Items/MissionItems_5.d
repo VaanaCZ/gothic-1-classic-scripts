@@ -74,7 +74,7 @@ INSTANCE ItMiAlarmhorn (C_Item)
 };
 
 //---------------------------------------------------------------------
-//	Statuette für Tür zum Alten Tempel
+//	Statuette fÃ¼r TÃ¼r zum Alten Tempel
 //---------------------------------------------------------------------
 INSTANCE ItMi_Stuff_Idol_Sleeper_01 (C_Item)
 {
@@ -90,12 +90,12 @@ INSTANCE ItMi_Stuff_Idol_Sleeper_01 (C_Item)
 
 	description			=	name;
 	TEXT[0]				= "Esta estatuilla es de una criatura deforme";
-	TEXT[1]				= "con una máscara.";
-	TEXT[2]				= "Seis grandes aguijones rodean la máscara.";
+	TEXT[1]				= "con una mÃ¡scara.";
+	TEXT[2]				= "Seis grandes aguijones rodean la mÃ¡scara.";
 };
 
 //---------------------------------------------------------------------
-//	Schläferschwert 1
+//	SchlÃ¤ferschwert 1
 //---------------------------------------------------------------------
 INSTANCE Weltenspalter (C_Item) 
 {	
@@ -114,16 +114,16 @@ INSTANCE Weltenspalter (C_Item)
 	cond_value[2]  		= 	30;
 	visual 				=	"ItMi_SleeperKey_01.3DS";
 	description			= 	name;
-	TEXT[0]				=	"Ésta era la espada del sacerdote orco";
+	TEXT[0]				=	"Ã‰sta era la espada del sacerdote orco";
 	TEXT[1]				=	"no-muerto Varrag-Hashor.";
-	TEXT[2]				=	"¡El arma ha quedado inservible por";
+	TEXT[2]				=	"Â¡El arma ha quedado inservible por";
 	TEXT[3]				=	"el paso del tiempo!";
-	TEXT[4]				=	"Quizá esta espada pueda ser utilizada";
+	TEXT[4]				=	"QuizÃ¡ esta espada pueda ser utilizada";
 	TEXT[5]				=	"de alguna otra forma.";
 };
 
 //---------------------------------------------------------------------
-//	Schläferschwert 2
+//	SchlÃ¤ferschwert 2
 //---------------------------------------------------------------------
 INSTANCE Lichtbringer (C_Item) 
 {	
@@ -142,16 +142,16 @@ INSTANCE Lichtbringer (C_Item)
 	cond_value[2]  		= 	30;
 	visual 				=	"ItMi_SleeperKey_01.3DS";
 	description			= 	name;
-	TEXT[0]				=	"Ésta era la espada del sacerdote orco";
+	TEXT[0]				=	"Ã‰sta era la espada del sacerdote orco";
 	TEXT[1]				=	"no-muerto Varrag-Kasorg.";
-	TEXT[2]				=	"¡El arma ha quedado inservible por";
+	TEXT[2]				=	"Â¡El arma ha quedado inservible por";
 	TEXT[3]				=	"el paso del tiempo!";
-	TEXT[4]				=	"Quizá esta espada pueda ser utilizada";
+	TEXT[4]				=	"QuizÃ¡ esta espada pueda ser utilizada";
 	TEXT[5]				=	"de alguna otra forma.";
 };
 
 //---------------------------------------------------------------------
-//	Schläferschwert 3
+//	SchlÃ¤ferschwert 3
 //---------------------------------------------------------------------
 INSTANCE Zeitenklinge (C_Item) 
 {	
@@ -170,20 +170,20 @@ INSTANCE Zeitenklinge (C_Item)
 	cond_value[2]  		= 	30;
 	visual 				=	"ItMi_SleeperKey_01.3DS";
 	description			= 	name;
-	TEXT[0]				=	"Ésta era la espada del sacerdote orco";
+	TEXT[0]				=	"Ã‰sta era la espada del sacerdote orco";
 	TEXT[1]				=	"no-muerto Varrag-Unhilqt.";
-	TEXT[2]				=	"¡El arma ha quedado inservible por";
+	TEXT[2]				=	"Â¡El arma ha quedado inservible por";
 	TEXT[3]				=	"el paso del tiempo!";
-	TEXT[4]				=	"Quizá esta espada pueda ser utilizada";
+	TEXT[4]				=	"QuizÃ¡ esta espada pueda ser utilizada";
 	TEXT[5]				=	"de alguna otra forma.";
 };
 
 //---------------------------------------------------------------------
-//	Schläferschwert 4
+//	SchlÃ¤ferschwert 4
 //---------------------------------------------------------------------
 INSTANCE Daemonenstreich (C_Item) 
 {	
-	name 				=	"Golpe Demoníaco";
+	name 				=	"Golpe DemonÃ­aco";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_2HD_SWD|ITEM_MISSION;	
@@ -198,16 +198,16 @@ INSTANCE Daemonenstreich (C_Item)
 	cond_value[2]  		= 	30;
 	visual 				=	"ItMi_SleeperKey_01.3DS";
 	description			= 	name;
-	TEXT[0]				=	"Ésta era la espada del sacerdote orco";
+	TEXT[0]				=	"Ã‰sta era la espada del sacerdote orco";
 	TEXT[1]				=	"no-muerto Varrag-Ruuushk.";
-	TEXT[2]				=	"¡El arma ha quedado inservible por";
+	TEXT[2]				=	"Â¡El arma ha quedado inservible por";
 	TEXT[3]				=	"el paso del tiempo!";
-	TEXT[4]				=	"Quizá esta espada pueda ser utilizada";
+	TEXT[4]				=	"QuizÃ¡ esta espada pueda ser utilizada";
 	TEXT[5]				=	"de alguna otra forma.";
 };
 
 //---------------------------------------------------------------------
-//	Schläferschwert 5
+//	SchlÃ¤ferschwert 5
 //---------------------------------------------------------------------
 INSTANCE Bannklinge (C_Item) 
 {	
@@ -226,20 +226,20 @@ INSTANCE Bannklinge (C_Item)
 	cond_value[2]  		= 	30;
 	visual 				=	"ItMi_SleeperKey_01.3DS";
 	description			= 	name;
-	TEXT[0]				=	"Ésta era la espada del sumo sacerdote orco";
+	TEXT[0]				=	"Ã‰sta era la espada del sumo sacerdote orco";
 	TEXT[1]				=	"no-muerto Grash-Varrag-Arushat.";
-	TEXT[2]				=	"¡El arma ha quedado inservible por";
+	TEXT[2]				=	"Â¡El arma ha quedado inservible por";
 	TEXT[3]				=	"el paso del tiempo!";
-	TEXT[4]				=	"Quizá esta espada pueda ser utilizada";
+	TEXT[4]				=	"QuizÃ¡ esta espada pueda ser utilizada";
 	TEXT[5]				=	"de alguna otra forma.";
 };
 
 //---------------------------------------------------------------------
-//	Schwert für den Untoten Ork-Hohepriester (unidentifiziert)
+//	Schwert fÃ¼r den Untoten Ork-Hohepriester (unidentifiziert)
 //---------------------------------------------------------------------
 INSTANCE Mythrilklinge (C_Item) 
 {	
-	name 				=	"Espada extraña";
+	name 				=	"Espada extraÃ±a";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_2HD_SWD|ITEM_MISSION;	
@@ -256,13 +256,13 @@ INSTANCE Mythrilklinge (C_Item)
 	description			= 	name;
 	TEXT[0]				=	"Una espada de asombrosa manufactura.";
 	TEXT[1]				=	"Hay grabadas unas antiguas runas en la hoja.";
-	TEXT[2]				=	"¡Quizá Xardas pueda descifrarlas!";
-	TEXT[3]				=	"Mejor no usarla hasta que él la identifique.";
+	TEXT[2]				=	"Â¡QuizÃ¡ Xardas pueda descifrarlas!";
+	TEXT[3]				=	"Mejor no usarla hasta que Ã©l la identifique.";
 	TEXT[4]				=	"";
 };
 
 //---------------------------------------------------------------------
-//	Schwert für den Untoten Ork-Hohepriester (identifiziert)
+//	Schwert fÃ¼r den Untoten Ork-Hohepriester (identifiziert)
 //---------------------------------------------------------------------
 instance Mythrilklinge01 (C_Item) 
 {	
@@ -284,7 +284,7 @@ instance Mythrilklinge01 (C_Item)
 	description			= 	name;
 	TEXT[0]				=	"Xardas ha dicho que se supone que la ";
 	TEXT[1]				=	"espada llamada URIZIEL es antigua. Tuvo ";
-	TEXT[2]				=	"grandes poderes antaño, pero perdió su magia.";
+	TEXT[2]				=	"grandes poderes antaÃ±o, pero perdiÃ³ su magia.";
 
 	TEXT[3]				=	NAME_Damage;				COUNT[3] =	damageTotal;
 	TEXT[4] 			=	NAME_Str_needed;			COUNT[4] =	cond_value[2];
@@ -292,7 +292,7 @@ instance Mythrilklinge01 (C_Item)
 };
 
 //---------------------------------------------------------------------
-//	Schwert für den Untoten Ork-Hohepriester (aufgeladen)
+//	Schwert fÃ¼r den Untoten Ork-Hohepriester (aufgeladen)
 //---------------------------------------------------------------------
 instance Mythrilklinge02 (C_Item) 
 {	
@@ -317,8 +317,8 @@ instance Mythrilklinge02 (C_Item)
 	cond_value[2]  		= 	30;
 	visual 				=	"ItMw_2H_Sword_Sleeper_02.3DS";
 	description			= 	name;
-	TEXT[0]				=	"Ésta es la espada Uriziel.";
-	TEXT[1]				= 	"Uriziel está cargada mágicamente.";
+	TEXT[0]				=	"Ã‰sta es la espada Uriziel.";
+	TEXT[1]				= 	"Uriziel estÃ¡ cargada mÃ¡gicamente.";
 	TEXT[2]				=	NAME_Dam_Magic;			COUNT[2]	=	damage[DAM_INDEX_MAGIC];
 	TEXT[3]				=	NAME_Dam_Fire;			COUNT[3]	=	damage[DAM_INDEX_FIRE];
 	TEXT[4] 			=	NAME_Str_needed;		COUNT[4]	=	cond_value[2];
@@ -346,16 +346,16 @@ instance Mythrilklinge03 (C_Item)
 	visual 				=	"ItMw_2H_Sword_Sleeper_01.3DS";
 
 	description			= 	name;
-	TEXT[0]				=	"La gema mágica ha sido retirada de la hoja.";
-	TEXT[1]				=	"Aún es un arma excelente, pero ha perdido";
-	TEXT[2]				=	"sus poderes mágicos.";
+	TEXT[0]				=	"La gema mÃ¡gica ha sido retirada de la hoja.";
+	TEXT[1]				=	"AÃºn es un arma excelente, pero ha perdido";
+	TEXT[2]				=	"sus poderes mÃ¡gicos.";
 	TEXT[3]				=	NAME_Damage;				COUNT[3] =	damageTotal;
 	TEXT[4] 			=	NAME_Str_needed;			COUNT[4] =	cond_value[2];
 	TEXT[5]				=	NAME_Value;					COUNT[5] =	value;
 };
 
 //---------------------------------------------------------------------
-//	Schriftrolle, um Schwert für den untoten Ork-Hohepriester zu laden
+//	Schriftrolle, um Schwert fÃ¼r den untoten Ork-Hohepriester zu laden
 //---------------------------------------------------------------------
 INSTANCE Scroll4Milten (C_Item)
 {	
@@ -372,12 +372,12 @@ INSTANCE Scroll4Milten (C_Item)
 //	scemeName			=	"MAP";
 	description			= name;
 	TEXT[0]				= "Conjuro para transferir poderes";
-	TEXT[1]				= "mágicos a Uriziel.";
+	TEXT[1]				= "mÃ¡gicos a Uriziel.";
  	TEXT[2]				= "No puedo usarlo.";
 };
 
 //---------------------------------------------------------------------
-//	Schlüssel zum Versunkenen Turm
+//	SchlÃ¼ssel zum Versunkenen Turm
 //---------------------------------------------------------------------
 INSTANCE ItKe_SunkenTower(C_Item)
 {
@@ -397,7 +397,7 @@ INSTANCE ItKe_SunkenTower(C_Item)
 };
 
 //---------------------------------------------------------------------
-//	Kerkerschlüssel
+//	KerkerschlÃ¼ssel
 //---------------------------------------------------------------------
 INSTANCE DungeonKey(C_Item)
 {
@@ -436,7 +436,7 @@ INSTANCE UrizielRune (C_Item)
 	mag_circle 			=	6;
 
 	description			=	name;
-	TEXT	[0]			=	"Esta poderosa runa mágica contiene los";
+	TEXT	[0]			=	"Esta poderosa runa mÃ¡gica contiene los";
 	TEXT	[1]			=	"antiguos poderes de la espada URIZIEL.";
 	TEXT	[2]			=	NAME_Mag_Circle;			COUNT	[2]		=	mag_circle;
 	TEXT	[3]			=	NAME_Manakosten;			COUNT	[3]		=	SPL_SENDCAST_MASSDEATH;

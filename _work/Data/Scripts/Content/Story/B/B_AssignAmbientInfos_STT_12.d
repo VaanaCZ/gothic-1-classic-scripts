@@ -37,7 +37,7 @@ INSTANCE Info_Stt_12_EinerVonEuchWerden (C_INFO) // E1
 	condition	= Info_Stt_12_EinerVonEuchWerden_Condition;
 	information	= Info_Stt_12_EinerVonEuchWerden_Info;
 	permanent	= 1;
-	description = "Me gustaría enrolarme en las Sombras.";
+	description = "Me gustarÃ­a enrolarme en las Sombras.";
 };                       
 
 FUNC INT Info_Stt_12_EinerVonEuchWerden_Condition()
@@ -50,11 +50,11 @@ FUNC INT Info_Stt_12_EinerVonEuchWerden_Condition()
 
 FUNC VOID Info_Stt_12_EinerVonEuchWerden_Info()
 {
-	AI_Output(other,self,"Info_Stt_12_EinerVonEuchWerden_15_00"); //Me gustaría enrolarme en las Sombras.
-	AI_Output(self,other,"Info_Stt_12_EinerVonEuchWerden_12_01"); //Oh. Entonces debes saber que Gómez no tolera fallos. Si quieres ser uno de nosotros, tienes que estar dispuesto a atravesar fuego por él.
-	AI_Output(self,other,"Info_Stt_12_EinerVonEuchWerden_12_02"); //Sólo la mitad de los que lo intentan son aceptados.
-	AI_Output(other,self,"Info_Stt_12_EinerVonEuchWerden_15_03"); //¿Qué pasa con el resto?
-	AI_Output(self,other,"Info_Stt_12_EinerVonEuchWerden_12_04"); //Probablemente estén sentados en el Campamento Nuevo mascando arroz. Je je je.
+	AI_Output(other,self,"Info_Stt_12_EinerVonEuchWerden_15_00"); //Me gustarÃ­a enrolarme en las Sombras.
+	AI_Output(self,other,"Info_Stt_12_EinerVonEuchWerden_12_01"); //Oh. Entonces debes saber que GÃ³mez no tolera fallos. Si quieres ser uno de nosotros, tienes que estar dispuesto a atravesar fuego por Ã©l.
+	AI_Output(self,other,"Info_Stt_12_EinerVonEuchWerden_12_02"); //SÃ³lo la mitad de los que lo intentan son aceptados.
+	AI_Output(other,self,"Info_Stt_12_EinerVonEuchWerden_15_03"); //Â¿QuÃ© pasa con el resto?
+	AI_Output(self,other,"Info_Stt_12_EinerVonEuchWerden_12_04"); //Probablemente estÃ©n sentados en el Campamento Nuevo mascando arroz. Je je je.
 };
 
 // *************************************************************************
@@ -67,7 +67,7 @@ INSTANCE Info_Stt_12_WichtigePersonen(C_INFO)
 	condition	= Info_Stt_12_WichtigePersonen_Condition;
 	information	= Info_Stt_12_WichtigePersonen_Info;
 	permanent	= 1;
-	description = "¿Quién es el jefe de este lugar?";
+	description = "Â¿QuiÃ©n es el jefe de este lugar?";
 };                       
 
 FUNC INT Info_Stt_12_WichtigePersonen_Condition()
@@ -77,8 +77,8 @@ FUNC INT Info_Stt_12_WichtigePersonen_Condition()
 
 FUNC VOID Info_Stt_12_WichtigePersonen_Info()
 {
-	AI_Output(other,self,"Info_Stt_12_WichtigePersonen_15_00"); //¿Quién es el jefe de este lugar?
-	AI_Output(self,other,"Info_Stt_12_WichtigePersonen_12_01"); //Podría decirse que Diego es el jefe de las Sombras. Pero Thorus decide quién va a ver a Gómez.
+	AI_Output(other,self,"Info_Stt_12_WichtigePersonen_15_00"); //Â¿QuiÃ©n es el jefe de este lugar?
+	AI_Output(self,other,"Info_Stt_12_WichtigePersonen_12_01"); //PodrÃ­a decirse que Diego es el jefe de las Sombras. Pero Thorus decide quiÃ©n va a ver a GÃ³mez.
 	
 	var C_NPC Diego;		Diego 	= Hlp_GetNpc(PC_Thief);
 	Diego.aivar[AIV_FINDABLE] = TRUE;
@@ -107,7 +107,7 @@ FUNC INT Info_Stt_12_DasLager_Condition()
 FUNC VOID Info_Stt_12_DasLager_Info()
 {
 	AI_Output(other,self,"Info_Stt_12_DasLager_15_00"); //Quiero saber lo que puede ofrecer este campamento.
-	AI_Output(self,other,"Info_Stt_12_DasLager_12_01"); //Entonces será mejor que preguntes a los cavadores. No tienen nada que hacer en todo el día.
+	AI_Output(self,other,"Info_Stt_12_DasLager_12_01"); //Entonces serÃ¡ mejor que preguntes a los cavadores. No tienen nada que hacer en todo el dÃ­a.
 };
 
 // *************************************************************************
@@ -120,7 +120,7 @@ INSTANCE Info_Stt_12_DieLage(C_INFO) // E1
 	condition	= Info_Stt_12_DieLage_Condition;
 	information	= Info_Stt_12_DieLage_Info;
 	permanent	= 1;
-	description = "Bueno, ¿qué tal estás?";
+	description = "Bueno, Â¿quÃ© tal estÃ¡s?";
 };                       
 
 FUNC INT Info_Stt_12_DieLage_Condition()
@@ -130,8 +130,8 @@ FUNC INT Info_Stt_12_DieLage_Condition()
 
 FUNC VOID Info_Stt_12_DieLage_Info()
 {
-	AI_Output(other,self,"Info_Stt_12_DieLage_15_00"); //Bueno, ¿qué tal estás?
-	AI_Output(self,other,"Info_Stt_12_DieLage_12_01"); //¿Qué quieres?
+	AI_Output(other,self,"Info_Stt_12_DieLage_15_00"); //Bueno, Â¿quÃ© tal estÃ¡s?
+	AI_Output(self,other,"Info_Stt_12_DieLage_12_01"); //Â¿QuÃ© quieres?
 };
 	
 // *************************************************************************

@@ -1,5 +1,5 @@
 /*******************************************************************************************
-**	Rüstungswert-Multiplikator	                                         				  **
+**	RÃ¼stungswert-Multiplikator	                                         				  **
 *******************************************************************************************/
 const int	ARMOR_VALUE_MULTIPLIER	= 30;	// wird mit Schutzwert gegen EDGE-Schaden multipliziert
 
@@ -48,7 +48,7 @@ const int VALUE_SFB_ARMOR_L = 250;
 
 INSTANCE VLK_ARMOR_L(C_Item)
 {
-	name 					=	"Pantalón ligero de cavador";
+	name 					=	"PantalÃ³n ligero de cavador";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -80,7 +80,7 @@ INSTANCE VLK_ARMOR_L(C_Item)
 /******************************************************************************************/
 INSTANCE VLK_ARMOR_M(C_Item)
 {
-	name 					=	"Pantalón de cavador";
+	name 					=	"PantalÃ³n de cavador";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -278,7 +278,7 @@ INSTANCE GRD_ARMOR_H(C_Item)
 
 INSTANCE EBR_ARMOR_M(C_Item)
 {
-	name 					=	"Túnica de Estado";
+	name 					=	"TÃºnica de Estado";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -312,7 +312,7 @@ INSTANCE EBR_ARMOR_M(C_Item)
 /******************************************************************************************/
 INSTANCE EBR_ARMOR_H(C_Item)
 {
-	name 					=	"Armadura de Gómez";
+	name 					=	"Armadura de GÃ³mez";
 
 
 	mainflag 				=	ITEM_KAT_ARMOR;
@@ -347,7 +347,7 @@ INSTANCE EBR_ARMOR_H(C_Item)
 /******************************************************************************************/
 INSTANCE EBR_ARMOR_H2(C_Item)
 {
-	name 					=	"Armadura pesada mineral barón";
+	name 					=	"Armadura pesada mineral barÃ³n";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -383,7 +383,7 @@ INSTANCE EBR_ARMOR_H2(C_Item)
 *******************************************************************************************/
 
 /******************************************************************************************/
-// Schürferbund
+// SchÃ¼rferbund
 
 instance SFB_ARMOR_L(C_Item)
 {
@@ -816,7 +816,7 @@ INSTANCE TPL_ARMOR_H(C_Item)
 
 INSTANCE GUR_ARMOR_M(C_Item)
 {
-	name 					=	"Túnica de Gurú";
+	name 					=	"TÃºnica de GurÃº";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -849,7 +849,7 @@ INSTANCE GUR_ARMOR_M(C_Item)
 /******************************************************************************************/
 INSTANCE GUR_ARMOR_H(C_Item)
 {
-	name 					=	"Gran túnica de los Gurús";
+	name 					=	"Gran tÃºnica de los GurÃºs";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -888,7 +888,7 @@ INSTANCE GUR_ARMOR_H(C_Item)
 
 INSTANCE KDF_ARMOR_L(C_Item)
 {
-	name 					=	"Túnica del fuego";
+	name 					=	"TÃºnica del fuego";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -919,7 +919,7 @@ INSTANCE KDF_ARMOR_L(C_Item)
 /******************************************************************************************/
 INSTANCE KDF_ARMOR_H(C_Item)
 {
-	name 					=	"Gran túnica del fuego";
+	name 					=	"Gran tÃºnica del fuego";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -952,7 +952,7 @@ INSTANCE KDF_ARMOR_H(C_Item)
 
 INSTANCE KDW_ARMOR_L(C_Item)
 {
-	name 					=	"Túnica del agua";
+	name 					=	"TÃºnica del agua";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -984,7 +984,7 @@ INSTANCE KDW_ARMOR_L(C_Item)
 /******************************************************************************************/
 INSTANCE KDW_ARMOR_H(C_Item)
 {
-	name 					=	"Gran túnica del agua";
+	name 					=	"Gran tÃºnica del agua";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -1013,11 +1013,11 @@ INSTANCE KDW_ARMOR_H(C_Item)
 };
 
 /******************************************************************************************/
-// Dämonenbeschwörer
+// DÃ¤monenbeschwÃ¶rer
 
 INSTANCE DMB_ARMOR_M(C_Item)
 {
-	name 					=	"Túnica de las artes oscuras";
+	name 					=	"TÃºnica de las artes oscuras";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -1051,12 +1051,12 @@ INSTANCE DMB_ARMOR_M(C_Item)
 
 
 /*******************************************************************************************
-**	Spezial-Rüstungen                                                                     **
+**	Spezial-RÃ¼stungen                                                                     **
 *******************************************************************************************/
 
-// FIXME: hier fehlen noch die Visuals für die Erz-Rüstungen und das INV-Item für die CRAWLERPLATTEN-RÜSTUNG 
+// FIXME: hier fehlen noch die Visuals fÃ¼r die Erz-RÃ¼stungen und das INV-Item fÃ¼r die CRAWLERPLATTEN-RÃœSTUNG 
 
-// Crawler-Plattenrüstung
+// Crawler-PlattenrÃ¼stung
 INSTANCE CRW_ARMOR_H(C_Item)
 {
 	name 					=	"Armadura de placas de reptador";
@@ -1090,7 +1090,7 @@ INSTANCE CRW_ARMOR_H(C_Item)
 
 
 /******************************************************************************************/
-// Erz-Rüstungen
+// Erz-RÃ¼stungen
 INSTANCE ORE_ARMOR_M(C_Item)
 {
 	name 					=	"Antigua armadura de mineral";
@@ -1114,7 +1114,7 @@ INSTANCE ORE_ARMOR_M(C_Item)
 	material 				=	MAT_WOOD;
 
 	description				=	name;
-	TEXT[0]					=	"Esta antigua armadura es de mineral mágico.";
+	TEXT[0]					=	"Esta antigua armadura es de mineral mÃ¡gico.";
 	TEXT[1]					=	NAME_Prot_Edge;			COUNT[1]	= protection	[PROT_EDGE];
 	TEXT[2]					=	NAME_Prot_Point;		COUNT[2]	= protection	[PROT_POINT];
 	TEXT[3] 				=	NAME_Prot_Fire;			COUNT[3]	= protection	[PROT_FIRE];
@@ -1145,7 +1145,7 @@ INSTANCE ORE_ARMOR_H(C_Item)
 	material 				=	MAT_WOOD;
 
 	description				=	name;
-	TEXT[0]					=	"Stone, el herrero, ¡ha logrado mejorarla!";
+	TEXT[0]					=	"Stone, el herrero, Â¡ha logrado mejorarla!";
 	TEXT[1]					=	NAME_Prot_Edge;			COUNT[1]	= protection	[PROT_EDGE];
 	TEXT[2]					=	NAME_Prot_Point;		COUNT[2]	= protection	[PROT_POINT];
 	TEXT[3] 				=	NAME_Prot_Fire;			COUNT[3]	= protection	[PROT_FIRE];
@@ -1161,7 +1161,7 @@ INSTANCE ORE_ARMOR_H(C_Item)
 *******************************************************************************************/
 INSTANCE LAW_ARMOR (C_Item)
 {
-	name 					=	"Túnica de juez";
+	name 					=	"TÃºnica de juez";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -1197,7 +1197,7 @@ INSTANCE LAW_ARMOR (C_Item)
 
 
 /*******************************************************************************************
-**	Wache für Intro-Cutscene                                                          **
+**	Wache fÃ¼r Intro-Cutscene                                                          **
 *******************************************************************************************/
 INSTANCE GRD_ARMOR_I(C_Item)
 {

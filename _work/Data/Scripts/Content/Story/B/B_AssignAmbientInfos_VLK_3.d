@@ -37,7 +37,7 @@ INSTANCE Info_Vlk_3_EinerVonEuchWerden (C_INFO) // E1
 	condition	= Info_Vlk_3_EinerVonEuchWerden_Condition;
 	information	= Info_Vlk_3_EinerVonEuchWerden_Info;
 	permanent	= 1;
-	description = "¿Cómo puedo ingresar en este campamento?";
+	description = "Â¿CÃ³mo puedo ingresar en este campamento?";
 };                       
 
 FUNC INT Info_Vlk_3_EinerVonEuchWerden_Condition()
@@ -50,8 +50,8 @@ FUNC INT Info_Vlk_3_EinerVonEuchWerden_Condition()
 
 FUNC VOID Info_Vlk_3_EinerVonEuchWerden_Info()
 {
-	AI_Output(other,self,"Info_Vlk_3_EinerVonEuchWerden_15_00"); //¿Cómo puedo ingresar en este campamento?
-	AI_Output(self,other,"Info_Vlk_3_EinerVonEuchWerden_03_01"); //Yo sólo soy un cavador. No tengo voz ni voto en el asunto. Deberías hablar con los guardias o las Sombras.
+	AI_Output(other,self,"Info_Vlk_3_EinerVonEuchWerden_15_00"); //Â¿CÃ³mo puedo ingresar en este campamento?
+	AI_Output(self,other,"Info_Vlk_3_EinerVonEuchWerden_03_01"); //Yo sÃ³lo soy un cavador. No tengo voz ni voto en el asunto. DeberÃ­as hablar con los guardias o las Sombras.
 };
 
 // *************************************************************************
@@ -64,7 +64,7 @@ INSTANCE Info_Vlk_3_WichtigePersonen(C_INFO)
 	condition	= Info_Vlk_3_WichtigePersonen_Condition;
 	information	= Info_Vlk_3_WichtigePersonen_Info;
 	permanent	= 1;
-	description = "¿Quién es el jefe por aquí?";
+	description = "Â¿QuiÃ©n es el jefe por aquÃ­?";
 };                       
 
 FUNC INT Info_Vlk_3_WichtigePersonen_Condition()
@@ -76,9 +76,9 @@ FUNC INT Info_Vlk_3_WichtigePersonen_Condition()
 };
 FUNC VOID Info_Vlk_3_WichtigePersonen_Info()
 {
-	AI_Output(other,self,"Info_Vlk_3_WichtigePersonen_15_00"); //¿Quién es el jefe por aquí?
-	AI_Output(self,other,"Info_Vlk_3_WichtigePersonen_03_01"); //Gómez. Vive en el castillo. Pero los cavadores ya tenemos bastante de qué preocuparnos con los guardias.
-	AI_Output(self,other,"Info_Vlk_3_WichtigePersonen_03_02"); //Lo mejor es que no te interpongas en su camino. Si lo haces, te meterás en líos.
+	AI_Output(other,self,"Info_Vlk_3_WichtigePersonen_15_00"); //Â¿QuiÃ©n es el jefe por aquÃ­?
+	AI_Output(self,other,"Info_Vlk_3_WichtigePersonen_03_01"); //GÃ³mez. Vive en el castillo. Pero los cavadores ya tenemos bastante de quÃ© preocuparnos con los guardias.
+	AI_Output(self,other,"Info_Vlk_3_WichtigePersonen_03_02"); //Lo mejor es que no te interpongas en su camino. Si lo haces, te meterÃ¡s en lÃ­os.
 };
 
 // *************************************************************************
@@ -91,7 +91,7 @@ INSTANCE Info_Vlk_3_DasLager(C_INFO)
 	condition	= Info_Vlk_3_DasLager_Condition;
 	information	= Info_Vlk_3_DasLager_Info;
 	permanent	= 1;
-	description = "¿Cuáles son los lugares más importantes?";
+	description = "Â¿CuÃ¡les son los lugares mÃ¡s importantes?";
 };                       
 
 FUNC INT Info_Vlk_3_DasLager_Condition()
@@ -101,9 +101,9 @@ FUNC INT Info_Vlk_3_DasLager_Condition()
 
 FUNC VOID Info_Vlk_3_DasLager_Info()
 {
-	AI_Output(other,self,"Info_Vlk_3_DasLager_15_00"); //¿Cuáles son los lugares más importantes?
+	AI_Output(other,self,"Info_Vlk_3_DasLager_15_00"); //Â¿CuÃ¡les son los lugares mÃ¡s importantes?
 	AI_Output(self,other,"Info_Vlk_3_DasLager_03_01"); //Bueno, si te gusta jugar, tienes que ir a la arena por las noches. Si quieres comprar cosas, ve al mercado.
-	AI_Output(self,other,"Info_Vlk_3_DasLager_03_02"); //Allí venden prácticamente de todo. Menos mapas. Si quieres mapas, mejor ve a ver a Graham. Su cabaña es la que está frente a la  puerta del castillo.
+	AI_Output(self,other,"Info_Vlk_3_DasLager_03_02"); //AllÃ­ venden prÃ¡cticamente de todo. Menos mapas. Si quieres mapas, mejor ve a ver a Graham. Su cabaÃ±a es la que estÃ¡ frente a la  puerta del castillo.
 };
 
 // *************************************************************************
@@ -116,7 +116,7 @@ INSTANCE Info_Vlk_3_DieLage(C_INFO) // E1
 	condition	= Info_Vlk_3_DieLage_Condition;
 	information	= Info_Vlk_3_DieLage_Info;
 	permanent	= 1;
-	description = "¿Qué pasa?";
+	description = "Â¿QuÃ© pasa?";
 };                       
 
 FUNC INT Info_Vlk_3_DieLage_Condition()
@@ -126,9 +126,9 @@ FUNC INT Info_Vlk_3_DieLage_Condition()
 
 FUNC VOID Info_Vlk_3_DieLage_Info()
 {
-	AI_Output(other,self,"Info_Vlk_3_DieLage_15_00"); //¿Qué pasa?
-	AI_Output(self,other,"Info_Vlk_3_DieLage_03_01"); //Pronto aprenderás. Mantente alerta a todas horas. Especialmente de noche.
-	AI_Output(self,other,"Info_Vlk_3_DieLage_03_02"); //Llevo varios días sin dormir bien. Y, en esta colonia, si no duermes duplicas turno.
+	AI_Output(other,self,"Info_Vlk_3_DieLage_15_00"); //Â¿QuÃ© pasa?
+	AI_Output(self,other,"Info_Vlk_3_DieLage_03_01"); //Pronto aprenderÃ¡s. Mantente alerta a todas horas. Especialmente de noche.
+	AI_Output(self,other,"Info_Vlk_3_DieLage_03_02"); //Llevo varios dÃ­as sin dormir bien. Y, en esta colonia, si no duermes duplicas turno.
 };
 	
 // *************************************************************************

@@ -33,7 +33,7 @@ INSTANCE Info_ORG_829_Hello (C_INFO)
 	condition	= Info_ORG_829_Hello_Condition;
 	information	= Info_ORG_829_Hello_Info;
 	permanent	= 0;
-	description	= "¿Qué tal?";
+	description	= "Â¿QuÃ© tal?";
 };                       
 
 FUNC INT Info_ORG_829_Hello_Condition()
@@ -43,7 +43,7 @@ FUNC INT Info_ORG_829_Hello_Condition()
 
 FUNC VOID Info_ORG_829_Hello_Info()
 {	
-	AI_Output (other, self,"Info_ORG_829_Hello_15_00"); //¿Cómo van las cosas?
+	AI_Output (other, self,"Info_ORG_829_Hello_15_00"); //Â¿CÃ³mo van las cosas?
 	AI_Output (self, other,"Info_ORG_829_Hello_06_01"); //No demasiado mal, pero no tengo nada que fumar.
 };
 
@@ -60,7 +60,7 @@ INSTANCE Info_ORG_829_OfferJoint (C_INFO)
 	condition	= Info_ORG_829_OfferJoint_Condition;
 	information	= Info_ORG_829_OfferJoint_Info;
 	permanent	= 0;
-	description	= "Tengo hierba del pantano. ¿Quieres un poco?";
+	description	= "Tengo hierba del pantano. Â¿Quieres un poco?";
 };                       
 
 FUNC INT Info_ORG_829_OfferJoint_Condition()
@@ -73,7 +73,7 @@ FUNC INT Info_ORG_829_OfferJoint_Condition()
 
 FUNC VOID Info_ORG_829_OfferJoint_Info()
 {	
-	AI_Output (other, self,"Info_ORG_829_OfferJoint_15_00"); //Tengo hierba del pantano. ¿Quieres un poco?
+	AI_Output (other, self,"Info_ORG_829_OfferJoint_15_00"); //Tengo hierba del pantano. Â¿Quieres un poco?
 	
 	if ( (Npc_HasItems(other,ItMiJoint_1)>0) || (Npc_HasItems(other,ItMiJoint_2)>0) || (Npc_HasItems(other,ItMiJoint_3)>0) )
 	{
@@ -84,13 +84,13 @@ FUNC VOID Info_ORG_829_OfferJoint_Info()
 		else if (Npc_HasItems(other,ItMiJoint_3))
 		{	B_GiveInvItems (other,self,ItMiJoint_3,1);	 };
 		
-		AI_Output (self, other,"Info_ORG_829_OfferJoint_06_01"); //¡Claro! ¿Es que eres uno de los comerciantes del Campamento de la Secta, o qué?
+		AI_Output (self, other,"Info_ORG_829_OfferJoint_06_01"); //Â¡Claro! Â¿Es que eres uno de los comerciantes del Campamento de la Secta, o quÃ©?
 		
 		NC_Joints_verteilt = NC_Joints_verteilt + 1;
 	}
 	else
 	{
-		AI_Output (self, other,"Info_ORG_829_OfferJoint_No_Joint_06_00"); //¡Eh, hombre! No te cachondees, ¿vale? ¡No me gusta!
+		AI_Output (self, other,"Info_ORG_829_OfferJoint_No_Joint_06_00"); //Â¡Eh, hombre! No te cachondees, Â¿vale? Â¡No me gusta!
 	};
 };
 
@@ -105,7 +105,7 @@ INSTANCE Info_ORG_829_SpecialInfo (C_INFO)
 	condition	= Info_ORG_829_SpecialInfo_Condition;
 	information	= Info_ORG_829_SpecialInfo_Info;
 	permanent	= 0;
-	description	= "Acabo de llegar... ¿Puedes darme algún consejo?";
+	description	= "Acabo de llegar... Â¿Puedes darme algÃºn consejo?";
 };                       
 
 FUNC INT Info_ORG_829_SpecialInfo_Condition()
@@ -118,10 +118,10 @@ FUNC INT Info_ORG_829_SpecialInfo_Condition()
 
 FUNC VOID Info_ORG_829_SpecialInfo_Info()
 {	
-	AI_Output (other, self,"Info_ORG_829_SpecialInfo_15_00"); //Acabo de llegar; ¿puedes darme algún consejo?
-	AI_Output (self, other,"Info_ORG_829_SpecialInfo_06_01"); //¡Claro! Cuando llegues al Campamento, vete a ver a Gorn. Es uno de los mercenarios de los magos, pero es de los buenos. Antes era uno de nosotros.
-	AI_Output (other, self,"Info_ORG_829_SpecialInfo_15_02"); //¿Qué quieres decir con 'uno de nosotros'?
-	AI_Output (self, other,"Info_ORG_829_SpecialInfo_06_03"); //Bueno, un fuera de la ley, por supuesto. ¡Uno de los bandidos de 'vamos a patear el culo de los Magnates del Mineral'!
+	AI_Output (other, self,"Info_ORG_829_SpecialInfo_15_00"); //Acabo de llegar; Â¿puedes darme algÃºn consejo?
+	AI_Output (self, other,"Info_ORG_829_SpecialInfo_06_01"); //Â¡Claro! Cuando llegues al Campamento, vete a ver a Gorn. Es uno de los mercenarios de los magos, pero es de los buenos. Antes era uno de nosotros.
+	AI_Output (other, self,"Info_ORG_829_SpecialInfo_15_02"); //Â¿QuÃ© quieres decir con 'uno de nosotros'?
+	AI_Output (self, other,"Info_ORG_829_SpecialInfo_06_03"); //Bueno, un fuera de la ley, por supuesto. Â¡Uno de los bandidos de 'vamos a patear el culo de los Magnates del Mineral'!
 };
 
 // ************************************************************
@@ -135,7 +135,7 @@ INSTANCE Info_ORG_829_PERM (C_INFO)
 	condition	= Info_ORG_829_PERM_Condition;
 	information	= Info_ORG_829_PERM_Info;
 	permanent	= 1;
-	description	= "¿Sabes qué debo esperarme en el Campamento?";
+	description	= "Â¿Sabes quÃ© debo esperarme en el Campamento?";
 };                       
 
 FUNC INT Info_ORG_829_PERM_Condition()
@@ -148,6 +148,6 @@ FUNC INT Info_ORG_829_PERM_Condition()
 
 FUNC VOID Info_ORG_829_PERM_Info()
 {	
-	AI_Output (other, self,"Info_ORG_829_PERM_15_00"); //¿Sabes qué es lo que debería esperarme en el Campamento?
-	AI_Output (self, other,"Info_ORG_829_PERM_06_01"); //Entra y averígualo.
+	AI_Output (other, self,"Info_ORG_829_PERM_15_00"); //Â¿Sabes quÃ© es lo que deberÃ­a esperarme en el Campamento?
+	AI_Output (self, other,"Info_ORG_829_PERM_06_01"); //Entra y averÃ­gualo.
 };

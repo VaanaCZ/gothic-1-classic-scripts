@@ -37,7 +37,7 @@ INSTANCE Info_Sld_8_EinerVonEuchWerden (C_INFO) // E1
 	condition	= Info_Sld_8_EinerVonEuchWerden_Condition;
 	information	= Info_Sld_8_EinerVonEuchWerden_Info;
 	permanent	= 1;
-	description = "¿Necesitas a otro hombre competente?";
+	description = "Â¿Necesitas a otro hombre competente?";
 };                       
 
 FUNC INT Info_Sld_8_EinerVonEuchWerden_Condition()
@@ -53,9 +53,9 @@ FUNC INT Info_Sld_8_EinerVonEuchWerden_Condition()
 
 FUNC VOID Info_Sld_8_EinerVonEuchWerden_Info()
 {
-	AI_Output(other,self,"Info_Sld_8_EinerVonEuchWerden_15_00"); //¿Necesitas a otro hombre competente?
-	AI_Output(self,other,"Info_Sld_8_EinerVonEuchWerden_08_01"); //Lee no deja que nadie ingrese en los mercenarios a menos que lleve aquí varios años y haya acumulado mucha experiencia.
-	AI_Output(self,other,"Info_Sld_8_EinerVonEuchWerden_08_02"); //Si quieres quedarte en el campamento, tendrás que abordar antes a los bandidos.
+	AI_Output(other,self,"Info_Sld_8_EinerVonEuchWerden_15_00"); //Â¿Necesitas a otro hombre competente?
+	AI_Output(self,other,"Info_Sld_8_EinerVonEuchWerden_08_01"); //Lee no deja que nadie ingrese en los mercenarios a menos que lleve aquÃ­ varios aÃ±os y haya acumulado mucha experiencia.
+	AI_Output(self,other,"Info_Sld_8_EinerVonEuchWerden_08_02"); //Si quieres quedarte en el campamento, tendrÃ¡s que abordar antes a los bandidos.
 };
 
 // *************************************************************************
@@ -68,7 +68,7 @@ INSTANCE Info_Sld_8_WichtigePersonen(C_INFO)
 	condition	= Info_Sld_8_WichtigePersonen_Condition;
 	information	= Info_Sld_8_WichtigePersonen_Info;
 	permanent	= 1;
-	description = "¿Quién manda por aquí?";
+	description = "Â¿QuiÃ©n manda por aquÃ­?";
 };                       
 
 FUNC INT Info_Sld_8_WichtigePersonen_Condition()
@@ -78,11 +78,11 @@ FUNC INT Info_Sld_8_WichtigePersonen_Condition()
 
 FUNC VOID Info_Sld_8_WichtigePersonen_Info()
 {
-	AI_Output(other,self,"Info_Sld_8_WichtigePersonen_15_00"); //¿Quién manda por aquí?
-	AI_Output(self,other,"Info_Sld_8_WichtigePersonen_08_01"); //Todos los mercenarios seguimos a Lee. Ha hecho un trato con los magos. Nosotros los protegemos,  y ellos nos sacan de aquí.
-	AI_Output(other,self,"Info_Sld_8_WichtigePersonen_15_02"); //¿Así que son los magos los que mandan?
-	AI_Output(self,other,"Info_Sld_8_WichtigePersonen_08_03"); //No. Nadie está al mando del campamento. La mayoría de la gente son tipos que no pudieron o quisieron quedarse en el Campamento Viejo.
-	AI_Output(self,other,"Info_Sld_8_WichtigePersonen_08_04"); //Aquí todos vamos a lo nuestro. Sólo estamos de acuerdo en una cosa: es mejor apilar el mineral en un montículo y reventarlo que enviárselo a ese maldito rey.
+	AI_Output(other,self,"Info_Sld_8_WichtigePersonen_15_00"); //Â¿QuiÃ©n manda por aquÃ­?
+	AI_Output(self,other,"Info_Sld_8_WichtigePersonen_08_01"); //Todos los mercenarios seguimos a Lee. Ha hecho un trato con los magos. Nosotros los protegemos,  y ellos nos sacan de aquÃ­.
+	AI_Output(other,self,"Info_Sld_8_WichtigePersonen_15_02"); //Â¿AsÃ­ que son los magos los que mandan?
+	AI_Output(self,other,"Info_Sld_8_WichtigePersonen_08_03"); //No. Nadie estÃ¡ al mando del campamento. La mayorÃ­a de la gente son tipos que no pudieron o quisieron quedarse en el Campamento Viejo.
+	AI_Output(self,other,"Info_Sld_8_WichtigePersonen_08_04"); //AquÃ­ todos vamos a lo nuestro. SÃ³lo estamos de acuerdo en una cosa: es mejor apilar el mineral en un montÃ­culo y reventarlo que enviÃ¡rselo a ese maldito rey.
 	var C_NPC Lee;			Lee		= Hlp_GetNpc(Sld_700_Lee);
 	Lee.aivar[AIV_FINDABLE] = TRUE;
 	var C_NPC Cronos;		Cronos  = Hlp_GetNpc(KdW_604_Cronos);
@@ -99,7 +99,7 @@ INSTANCE Info_Sld_8_DasLager(C_INFO)
 	condition	= Info_Sld_8_DasLager_Condition;
 	information	= Info_Sld_8_DasLager_Info;
 	permanent	= 1;
-	description = "¿Qué puedes decirme de este campamento?";
+	description = "Â¿QuÃ© puedes decirme de este campamento?";
 };                       
 
 FUNC INT Info_Sld_8_DasLager_Condition()
@@ -111,11 +111,11 @@ FUNC INT Info_Sld_8_DasLager_Condition()
 };
 FUNC VOID Info_Sld_8_DasLager_Info()
 {
-	AI_Output(other,self,"Info_Sld_8_DasLager_15_00"); //¿Qué puedes decirme de este campamento?
-	AI_Output(self,other,"Info_Sld_8_DasLager_08_01"); //Ten cuidado mientras estás aquí. Hay muchos asesinos en el campamento.
-	AI_Output(self,other,"Info_Sld_8_DasLager_08_02"); //Aquí tenemos varias leyes no escritas. Primera: sólo los mercenarios pueden entrar en la zona de los magos.
-	AI_Output(self,other,"Info_Sld_8_DasLager_08_03"); //Segunda: Si tratas de acercarte al montículo de mineral, estás muerto. Tercera: No intentes entrar en la taberna del lago.
-	AI_Output(self,other,"Info_Sld_8_DasLager_08_04"); //Es la cantina de los bandidos, y no les gusta que vayan los nuevos como tú.
+	AI_Output(other,self,"Info_Sld_8_DasLager_15_00"); //Â¿QuÃ© puedes decirme de este campamento?
+	AI_Output(self,other,"Info_Sld_8_DasLager_08_01"); //Ten cuidado mientras estÃ¡s aquÃ­. Hay muchos asesinos en el campamento.
+	AI_Output(self,other,"Info_Sld_8_DasLager_08_02"); //AquÃ­ tenemos varias leyes no escritas. Primera: sÃ³lo los mercenarios pueden entrar en la zona de los magos.
+	AI_Output(self,other,"Info_Sld_8_DasLager_08_03"); //Segunda: Si tratas de acercarte al montÃ­culo de mineral, estÃ¡s muerto. Tercera: No intentes entrar en la taberna del lago.
+	AI_Output(self,other,"Info_Sld_8_DasLager_08_04"); //Es la cantina de los bandidos, y no les gusta que vayan los nuevos como tÃº.
 	var C_NPC Cronos;		Cronos  = Hlp_GetNpc(KdW_604_Cronos);
 	Cronos.aivar[AIV_FINDABLE] = TRUE;
 };
@@ -130,7 +130,7 @@ INSTANCE Info_Sld_8_DieLage(C_INFO) // E1
 	condition	= Info_Sld_8_DieLage_Condition;
 	information	= Info_Sld_8_DieLage_Info;
 	permanent	= 1;
-	description = "¿Qué tal estás?";
+	description = "Â¿QuÃ© tal estÃ¡s?";
 };                       
 
 FUNC INT Info_Sld_8_DieLage_Condition()
@@ -140,7 +140,7 @@ FUNC INT Info_Sld_8_DieLage_Condition()
 
 FUNC VOID Info_Sld_8_DieLage_Info()
 {
-	AI_Output(other,self,"Info_Sld_8_DieLage_15_00"); //¿Qué tal estás?
+	AI_Output(other,self,"Info_Sld_8_DieLage_15_00"); //Â¿QuÃ© tal estÃ¡s?
 	AI_Output(self,other,"Info_Sld_8_DieLage_08_01"); //Como siempre. Asegurando que nadie se acerque demasiado a los magos y al mineral.
 	var C_NPC Cronos;		Cronos  = Hlp_GetNpc(KdW_604_Cronos);
 	Cronos.aivar[AIV_FINDABLE] = TRUE;
@@ -156,7 +156,7 @@ INSTANCE Info_Sld_8_Krautprobe (C_INFO) // E1
 	condition	= Info_Sld_8_Krautprobe_Condition;
 	information	= Info_Sld_8_Krautprobe_Info;
 	permanent	= 1;
-	description = "Tengo un poco de hierba del pantano. ¿Quieres?";
+	description = "Tengo un poco de hierba del pantano. Â¿Quieres?";
 };                       
 
 FUNC INT Info_Sld_8_Krautprobe_Condition()
@@ -170,7 +170,7 @@ FUNC INT Info_Sld_8_Krautprobe_Condition()
 
 FUNC VOID Info_Sld_8_Krautprobe_Info()
 {
-	AI_Output(other,self,"Info_Sld_8_Krautprobe_15_00"); //Tengo un poco de hierba del pantano. ¿Quieres?
+	AI_Output(other,self,"Info_Sld_8_Krautprobe_15_00"); //Tengo un poco de hierba del pantano. Â¿Quieres?
 	
 	if ( (Npc_HasItems(other,ItMiJoint_1)>0) || (Npc_HasItems(other,ItMiJoint_2)>0) || (Npc_HasItems(other,ItMiJoint_3)>0) )
 	{
@@ -181,8 +181,8 @@ FUNC VOID Info_Sld_8_Krautprobe_Info()
 		else if (Npc_HasItems(other,ItMiJoint_3))
 		{	B_GiveInvItems(other,self,ItMiJoint_3,1);	 };
 		
-		AI_Output(self,other,"Info_Sld_8_Krautprobe_08_01"); //¿Por qué no? Te daré 10 pepitas a cambio.
-		AI_Output(self,other,"Info_Sld_8_Krautprobe_08_02"); //Ve y pregúntale a los demás. Seguro que también quieren.
+		AI_Output(self,other,"Info_Sld_8_Krautprobe_08_01"); //Â¿Por quÃ© no? Te darÃ© 10 pepitas a cambio.
+		AI_Output(self,other,"Info_Sld_8_Krautprobe_08_02"); //Ve y pregÃºntale a los demÃ¡s. Seguro que tambiÃ©n quieren.
 		
 		CreateInvItems(self,itminugget,10);
 		B_GiveInvItems(self,other,itminugget,10);
@@ -191,7 +191,7 @@ FUNC VOID Info_Sld_8_Krautprobe_Info()
 	}
 	else
 	{
-		AI_Output (self, other,"Info_Sld_8_Krautprobe_No_Joint_08_00"); //Enséñame antes la hierba. No tienes, ¿verdad?
+		AI_Output (self, other,"Info_Sld_8_Krautprobe_No_Joint_08_00"); //EnsÃ©Ã±ame antes la hierba. No tienes, Â¿verdad?
 	};
 };
 	

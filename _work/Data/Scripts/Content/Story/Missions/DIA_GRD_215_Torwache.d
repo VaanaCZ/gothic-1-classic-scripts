@@ -47,22 +47,22 @@ FUNC INT DIA_Grd_215_Torwache_First_Condition()
 
 FUNC VOID DIA_Grd_215_Torwache_First_Info()
 {
-	AI_Output (self, other,"DIA_Grd_215_Torwache_First_06_00"); //¿Dónde te crees que vas?
+	AI_Output (self, other,"DIA_Grd_215_Torwache_First_06_00"); //Â¿DÃ³nde te crees que vas?
 	AI_Output (other, self,"DIA_Grd_215_Torwache_First_15_01"); //Al campamento.
-	AI_Output (self, other,"DIA_Grd_215_Torwache_First_06_02"); //No has venido para causar problemas, ¿verdad?
+	AI_Output (self, other,"DIA_Grd_215_Torwache_First_06_02"); //No has venido para causar problemas, Â¿verdad?
 	
 	Info_ClearChoices	(DIA_Grd_215_Torwache_First );
-	Info_AddChoice		(DIA_Grd_215_Torwache_First,"¡Por supuesto, tengo previsto conquistar todo el Campamento!",DIA_Grd_215_Torwache_First_Trouble);
-	Info_AddChoice		(DIA_Grd_215_Torwache_First,"Sólo quiero echar un vistazo.",DIA_Grd_215_Torwache_First_JustLooking);
+	Info_AddChoice		(DIA_Grd_215_Torwache_First,"Â¡Por supuesto, tengo previsto conquistar todo el Campamento!",DIA_Grd_215_Torwache_First_Trouble);
+	Info_AddChoice		(DIA_Grd_215_Torwache_First,"SÃ³lo quiero echar un vistazo.",DIA_Grd_215_Torwache_First_JustLooking);
 	if (Npc_KnowsInfo(hero,Info_Diego_Kolonie))
 	{
-		Info_AddChoice		(DIA_Grd_215_Torwache_First,"Diego dice que tengo que reunirme con él en el Campamento.",DIA_Grd_215_Torwache_First_Diego);
+		Info_AddChoice		(DIA_Grd_215_Torwache_First,"Diego dice que tengo que reunirme con Ã©l en el Campamento.",DIA_Grd_215_Torwache_First_Diego);
 	};
 };
 
 func void DIA_Grd_215_Torwache_First_Trouble()
 {
-	AI_Output (other, self,"DIA_Grd_215_Torwache_First_Trouble_15_00"); //¡Por supuesto, tengo previsto conquistar todo el campamento!
+	AI_Output (other, self,"DIA_Grd_215_Torwache_First_Trouble_15_00"); //Â¡Por supuesto, tengo previsto conquistar todo el campamento!
 	AI_Output (self, other,"DIA_Grd_215_Torwache_First_Trouble_06_01"); //Oye, este tipo es un gracioso... No me gustan los graciosos.
 	Info_ClearChoices	(DIA_Grd_215_Torwache_First );
 	
@@ -73,25 +73,25 @@ func void DIA_Grd_215_Torwache_First_Trouble()
 
 func void DIA_Grd_215_Torwache_First_JustLooking()
 {
-	AI_Output (other, self,"DIA_Grd_215_Torwache_First_JustLooking_15_00"); //Sólo quiero echar un vistazo.
-	AI_Output (self, other,"DIA_Grd_215_Torwache_First_JustLooking_06_01"); //Eso te costará 10 pepitas.
+	AI_Output (other, self,"DIA_Grd_215_Torwache_First_JustLooking_15_00"); //SÃ³lo quiero echar un vistazo.
+	AI_Output (self, other,"DIA_Grd_215_Torwache_First_JustLooking_06_01"); //Eso te costarÃ¡ 10 pepitas.
 	
 	Info_ClearChoices	(DIA_Grd_215_Torwache_First );
-	Info_AddChoice		(DIA_Grd_215_Torwache_First,"Olvídalo.",DIA_Grd_215_Torwache_First_NoPay);
-	Info_AddChoice		(DIA_Grd_215_Torwache_First,"De acuerdo, aquí tienes tus 10 pepitas.",DIA_Grd_215_Torwache_First_Pay);
+	Info_AddChoice		(DIA_Grd_215_Torwache_First,"OlvÃ­dalo.",DIA_Grd_215_Torwache_First_NoPay);
+	Info_AddChoice		(DIA_Grd_215_Torwache_First,"De acuerdo, aquÃ­ tienes tus 10 pepitas.",DIA_Grd_215_Torwache_First_Pay);
 };
 
 func void DIA_Grd_215_Torwache_First_Diego()
 {
-	AI_Output (other, self,"DIA_Grd_215_Torwache_First_Diego_15_00"); //Diego dice que tengo que reunirme con él en el campamento.
+	AI_Output (other, self,"DIA_Grd_215_Torwache_First_Diego_15_00"); //Diego dice que tengo que reunirme con Ã©l en el campamento.
 	AI_Output (self, other,"DIA_Grd_215_Torwache_First_Diego_06_01"); //Vale, entonces entra.
 	Info_ClearChoices	(DIA_Grd_215_Torwache_First );
 };
 
 func void DIA_Grd_215_Torwache_First_NoPay()
 {
-	AI_Output (other, self,"DIA_Grd_215_Torwache_First_NoPay_15_00"); //Olvídalo.
-	AI_Output (self, other,"DIA_Grd_215_Torwache_First_NoPay_06_01"); //Entonces lárgate.
+	AI_Output (other, self,"DIA_Grd_215_Torwache_First_NoPay_15_00"); //OlvÃ­dalo.
+	AI_Output (self, other,"DIA_Grd_215_Torwache_First_NoPay_06_01"); //Entonces lÃ¡rgate.
 	Info_ClearChoices	(DIA_Grd_215_Torwache_First );
 };
 
@@ -99,14 +99,14 @@ func void DIA_Grd_215_Torwache_First_Pay()
 {
 	if (Npc_HasItems(other, itminugget) >= 10)
 	{
-		AI_Output (other, self,"DIA_Grd_215_Torwache_First_Pay_15_00"); //De acuerdo, aquí tienes tus 10 pepitas.
+		AI_Output (other, self,"DIA_Grd_215_Torwache_First_Pay_15_00"); //De acuerdo, aquÃ­ tienes tus 10 pepitas.
 		AI_Output (self, other,"DIA_Grd_215_Torwache_First_Pay_06_01"); //Entonces entra.
 		B_GiveInvItems 	(other,self, itminugget,10);CreateInvItems 		(self,  itminugget,10);
 	}
 	else
 	{
 		AI_Output (other, self,"DIA_Grd_215_Torwache_First_Pay_NoOre_15_00"); //No llevo tantas encima.
-		AI_Output (self, other,"DIA_Grd_215_Torwache_First_Pay_NoOre_06_01"); //Haré una excepción, sólo esta vez, porque eres nuevo.
+		AI_Output (self, other,"DIA_Grd_215_Torwache_First_Pay_NoOre_06_01"); //HarÃ© una excepciÃ³n, sÃ³lo esta vez, porque eres nuevo.
 		
 	};
 		
@@ -125,7 +125,7 @@ INSTANCE DIA_Grd_215_Torwache_PERM (C_INFO)
 	condition	= DIA_Grd_215_Torwache_PERM_Condition;
 	information	= DIA_Grd_215_Torwache_PERM_Info;
 	permanent	= 1;
-	description = "¿Alguna novedad?";
+	description = "Â¿Alguna novedad?";
 };                       
 
 FUNC INT DIA_Grd_215_Torwache_PERM_Condition()
@@ -135,6 +135,6 @@ FUNC INT DIA_Grd_215_Torwache_PERM_Condition()
 
 FUNC VOID DIA_Grd_215_Torwache_PERM_Info()
 {
-	AI_Output (other, self,"DIA_Grd_215_Torwache_PERM_15_00"); //¿Alguna novedad?
+	AI_Output (other, self,"DIA_Grd_215_Torwache_PERM_15_00"); //Â¿Alguna novedad?
 	AI_Output (self, other,"DIA_Grd_215_Torwache_PERM_06_01"); //No. Todo es igual que siempre.
 };

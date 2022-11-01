@@ -30,7 +30,7 @@ instance  DIA_Ghorim_MissingHarlok (C_INFO)
 	condition	= DIA_Ghorim_MissingHarlok_Condition;
 	information	= DIA_Ghorim_MissingHarlok_Info;
 	permanent	= 0;
-	description	= "¡Hola! ¿Qué tal?";
+	description	= "Â¡Hola! Â¿QuÃ© tal?";
 };                       
 
 FUNC int  DIA_Ghorim_MissingHarlok_Condition()
@@ -40,14 +40,14 @@ FUNC int  DIA_Ghorim_MissingHarlok_Condition()
 
 FUNC VOID  DIA_Ghorim_MissingHarlok_Info()
 {
-	AI_Output (other, self,"DIA_Ghorim_MissingHarlok_15_00"); //¡Hola! ¿Cómo va eso?
-	AI_Output (self, other,"DIA_Ghorim_MissingHarlok_02_01"); //Estoy hecho polvo, tío. Llevo dos días enteros trabajando sin parar.
-	AI_Output (self, other,"DIA_Ghorim_MissingHarlok_02_02"); //Harlok debería haberme relevado hace mucho. Siempre pasa lo mismo con ése.
-	AI_Output (self, other,"DIA_Ghorim_MissingHarlok_02_03"); //¡Lo más probable es que esté dormido en su choza!
-	AI_Output (other, self,"DIA_Ghorim_MissingHarlok_15_04"); //¿Por qué no vas allí y le pegas una buena patada en el trasero?
-	AI_Output (self, other,"DIA_Ghorim_MissingHarlok_02_05"); //No puedo irme mientras Baal Orun esté al mando; ¡el trabajo tiene que estar hecho sea como sea!
-	AI_Output (self, other,"DIA_Ghorim_MissingHarlok_02_06"); //Pero podrías ir allí en  mi lugar; le encontrarás bajo el laboratorio de alquimia de Cor Kalorn, donde Fortuno.
-	AI_Output (self, other,"DIA_Ghorim_MissingHarlok_02_07"); //Dile que mueva el culo para acá.
+	AI_Output (other, self,"DIA_Ghorim_MissingHarlok_15_00"); //Â¡Hola! Â¿CÃ³mo va eso?
+	AI_Output (self, other,"DIA_Ghorim_MissingHarlok_02_01"); //Estoy hecho polvo, tÃ­o. Llevo dos dÃ­as enteros trabajando sin parar.
+	AI_Output (self, other,"DIA_Ghorim_MissingHarlok_02_02"); //Harlok deberÃ­a haberme relevado hace mucho. Siempre pasa lo mismo con Ã©se.
+	AI_Output (self, other,"DIA_Ghorim_MissingHarlok_02_03"); //Â¡Lo mÃ¡s probable es que estÃ© dormido en su choza!
+	AI_Output (other, self,"DIA_Ghorim_MissingHarlok_15_04"); //Â¿Por quÃ© no vas allÃ­ y le pegas una buena patada en el trasero?
+	AI_Output (self, other,"DIA_Ghorim_MissingHarlok_02_05"); //No puedo irme mientras Baal Orun estÃ© al mando; Â¡el trabajo tiene que estar hecho sea como sea!
+	AI_Output (self, other,"DIA_Ghorim_MissingHarlok_02_06"); //Pero podrÃ­as ir allÃ­ en  mi lugar; le encontrarÃ¡s bajo el laboratorio de alquimia de Cor Kalorn, donde Fortuno.
+	AI_Output (self, other,"DIA_Ghorim_MissingHarlok_02_07"); //Dile que mueva el culo para acÃ¡.
 		
 	Log_CreateTopic		(CH1_GhorimsRelief,	LOG_MISSION);
 	Log_SetTopicStatus	(CH1_GhorimsRelief,	LOG_RUNNING);
@@ -67,7 +67,7 @@ instance  DIA_Ghorim_SUCCESS (C_INFO)
 	condition	= DIA_Ghorim_SUCCESS_Condition;
 	information	= DIA_Ghorim_SUCCESS_Info;
 	permanent	= 1;
-	description	= "¿Y bien? ¿Ya se ha hecho con el poder?";
+	description	= "Â¿Y bien? Â¿Ya se ha hecho con el poder?";
 };                       
 
 FUNC int  DIA_Ghorim_SUCCESS_Condition()
@@ -80,8 +80,8 @@ FUNC int  DIA_Ghorim_SUCCESS_Condition()
 
 FUNC VOID  DIA_Ghorim_SUCCESS_Info()
 {
-	AI_Output (other, self,"DIA_Ghorim_SUCCESS_15_00"); //¿Y bien? ¿Se ha hecho cargo ya?
-	AI_Output (self, other,"DIA_Ghorim_SUCCESS_02_01"); //Sí, por fin puedo irme a dormir. ¡Gracias, hombre!
+	AI_Output (other, self,"DIA_Ghorim_SUCCESS_15_00"); //Â¿Y bien? Â¿Se ha hecho cargo ya?
+	AI_Output (self, other,"DIA_Ghorim_SUCCESS_02_01"); //SÃ­, por fin puedo irme a dormir. Â¡Gracias, hombre!
 };
 
 

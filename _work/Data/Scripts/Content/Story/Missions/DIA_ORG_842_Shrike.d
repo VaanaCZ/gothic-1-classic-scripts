@@ -34,7 +34,7 @@ instance DIA_Shrike_Hello (C_INFO)
 	condition		= DIA_Shrike_Hello_Condition;
 	information		= DIA_Shrike_Hello_Info;
 	important		= 0;
-	description		= "¿Qué tal?";
+	description		= "Â¿QuÃ© tal?";
 };
 
 FUNC int  DIA_Shrike_Hello_Condition()
@@ -44,11 +44,11 @@ FUNC int  DIA_Shrike_Hello_Condition()
 
 func void  DIA_Shrike_Hello_Info()
 {
-	AI_Output (other, self,"DIA_Shrike_Hello_15_00"); //¿Cómo van las cosas?
-	AI_Output (self, other,"DIA_Shrike_Hello_07_01"); //¡Piérdete!
+	AI_Output (other, self,"DIA_Shrike_Hello_15_00"); //Â¿CÃ³mo van las cosas?
+	AI_Output (self, other,"DIA_Shrike_Hello_07_01"); //Â¡PiÃ©rdete!
 	
 	
-	//FMTaken = TRUE; 			//******* TEST - Helper für Sld-KdW Aufnahme!!! *********************  
+	//FMTaken = TRUE; 			//******* TEST - Helper fÃ¼r Sld-KdW Aufnahme!!! *********************  
 	//Kapitel = 4;
 
 	
@@ -67,7 +67,7 @@ instance DIA_Shrike_GetLost (C_INFO)
 	condition		= DIA_Shrike_GetLost_Condition;
 	information		= DIA_Shrike_GetLost_Info;
 	important		= 0;
-	description		= "Piérdete.";
+	description		= "PiÃ©rdete.";
 };
 
 FUNC int  DIA_Shrike_GetLost_Condition()
@@ -80,12 +80,12 @@ FUNC int  DIA_Shrike_GetLost_Condition()
 
 func void  DIA_Shrike_GetLost_Info()
 {
-	AI_Output (other, self,"DIA_Shrike_GetLost_15_00"); //¡Piérdete!
-	AI_Output (self, other,"DIA_Shrike_GetLost_07_01"); //¡Luego hablaré contigo!
+	AI_Output (other, self,"DIA_Shrike_GetLost_15_00"); //Â¡PiÃ©rdete!
+	AI_Output (self, other,"DIA_Shrike_GetLost_07_01"); //Â¡Luego hablarÃ© contigo!
 
 	Log_CreateTopic		(CH1_ShrikesHut,	LOG_MISSION);
 	Log_SetTopicStatus	(CH1_ShrikesHut,	LOG_RUNNING);
-	B_LogEntry			(CH1_ShrikesHut,"He convencido a Shrike de que consiga otra cabaña. Siento mucha curiosidad por lo que Gorn tenga que decir al respecto.");
+	B_LogEntry			(CH1_ShrikesHut,"He convencido a Shrike de que consiga otra cabaÃ±a. Siento mucha curiosidad por lo que Gorn tenga que decir al respecto.");
 	B_GiveXP			(XP_KickedShrike);
 
 	AI_StopProcessInfos	(self);	

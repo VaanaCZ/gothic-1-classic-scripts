@@ -44,8 +44,8 @@ FUNC int  DIA_KalomsGuard_PERM_Condition()
 
 FUNC VOID  DIA_KalomsGuard_PERM_Info()
 {
-	AI_Output (other, self,"DIA_KalomsGuard_PERM_15_00"); //No te importará que entre ahí, ¿verdad?
-	AI_Output (self, other,"DIA_KalomsGuard_PERM_13_01"); //Si le faltas al respeto a mi amo, te mataré.
+	AI_Output (other, self,"DIA_KalomsGuard_PERM_15_00"); //No te importarÃ¡ que entre ahÃ­, Â¿verdad?
+	AI_Output (self, other,"DIA_KalomsGuard_PERM_13_01"); //Si le faltas al respeto a mi amo, te matarÃ©.
 	AI_StopProcessInfos	( self );
 };
 

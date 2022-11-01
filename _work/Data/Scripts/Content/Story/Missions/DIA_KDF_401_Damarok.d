@@ -21,7 +21,7 @@ func void  KDF_401_Damarok_WELCOME_Info()
 {
 
 	AI_GotoNpc (self,hero);
-	AI_Output (self, other,"KDF_401_Damarok_WELCOME_Info_14_01"); //¡Que el Fuego proteja siempre tu alma!
+	AI_Output (self, other,"KDF_401_Damarok_WELCOME_Info_14_01"); //Â¡Que el Fuego proteja siempre tu alma!
 	
 	Corristo_KDFAufnahme = 6;
 	B_Story_Feueraufnahme();
@@ -69,7 +69,7 @@ FUNC int  KDF_401_Damarok_HEAL_Condition()
 };
 func void  KDF_401_Damarok_HEAL_Info()
 {
-	AI_Output (self, other,"KDF_401_Damarok_HEAL_Info_14_01"); //Si estás herido, yo te curaré.
+	AI_Output (self, other,"KDF_401_Damarok_HEAL_Info_14_01"); //Si estÃ¡s herido, yo te curarÃ©.
 	AI_StopProcessInfos	( self );
 };
 // ***************************** INFOS ****************************************//
@@ -82,7 +82,7 @@ instance  KDF_401_Damarok_HEALINFO (C_INFO)
 	information		= KDF_401_Damarok_HEALINFO_Info;
 	important		= 0;
 	permanent		= 1;
-	description		= "Estoy herido. ¿Puedes curarme?"; 
+	description		= "Estoy herido. Â¿Puedes curarme?"; 
 };
 
 FUNC int  KDF_401_Damarok_HEALINFO_Condition()
@@ -96,7 +96,7 @@ FUNC int  KDF_401_Damarok_HEALINFO_Condition()
 };
 FUNC void  KDF_401_Damarok_HEALINFO_Info()
 {
-	AI_Output (other, self,"KDF_401_Damarok_HEALINFO_Info_15_01"); //Estoy herido. ¿Puedes curarme?
+	AI_Output (other, self,"KDF_401_Damarok_HEALINFO_Info_15_01"); //Estoy herido. Â¿Puedes curarme?
 	AI_Output (self, other,"KDF_401_Damarok_HEALINFO_Info_14_02"); //El cuerpo sana, la mente se despeja.
 	Snd_Play  ("MFX_Heal_Cast"); 
 	hero.attribute [ATR_HITPOINTS] = hero.attribute [ATR_HITPOINTS_MAX];

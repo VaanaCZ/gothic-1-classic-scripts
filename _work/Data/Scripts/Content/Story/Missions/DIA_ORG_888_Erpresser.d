@@ -23,17 +23,17 @@ FUNC INT Info_Erpresser_Condition()
 
 FUNC VOID Info_Erpresser_Info()
 {
-	AI_Output (self, other,"Info_Erpresser_Info_13_01"); //Eh, muchacho, si quieres entrar tienes que pagar 10 pepitas o recibirás una zurra. ¿Entiendes?
+	AI_Output (self, other,"Info_Erpresser_Info_13_01"); //Eh, muchacho, si quieres entrar tienes que pagar 10 pepitas o recibirÃ¡s una zurra. Â¿Entiendes?
 	
 	Info_ClearChoices( Info_Erpresser );
-	Info_AddChoice	 ( Info_Erpresser,"¿Por qué no vienes y coges tu mineral?", Info_Erpresser_Choice_AufsMaul );
-	Info_AddChoice	 ( Info_Erpresser,"¿Tres pepitas? No es mucho. Aquí tienes...", Info_Erpresser_Choice_Zahlen );
+	Info_AddChoice	 ( Info_Erpresser,"Â¿Por quÃ© no vienes y coges tu mineral?", Info_Erpresser_Choice_AufsMaul );
+	Info_AddChoice	 ( Info_Erpresser,"Â¿Tres pepitas? No es mucho. AquÃ­ tienes...", Info_Erpresser_Choice_Zahlen );
 };
 
 FUNC VOID Info_Erpresser_Choice_AufsMaul()
 {
-	AI_Output (other, self,"Info_Erpresser_Choice_AufsMaul_15_01"); //Entonces, ¿por qué no vienes a por tu mineral?
-	AI_Output (self, other,"Info_Erpresser_Choice_AufsMaul_13_02"); //Gracias, colega. Me has alegrado el día.
+	AI_Output (other, self,"Info_Erpresser_Choice_AufsMaul_15_01"); //Entonces, Â¿por quÃ© no vienes a por tu mineral?
+	AI_Output (self, other,"Info_Erpresser_Choice_AufsMaul_13_02"); //Gracias, colega. Me has alegrado el dÃ­a.
 	
 	self.aivar[AIV_HAS_ERPRESSED] = 2;
 	
@@ -47,15 +47,15 @@ FUNC VOID Info_Erpresser_Choice_Zahlen()
 {
 	if (Npc_HasItems (other,ITMINUGGET) >= 3)
 	{
-		AI_Output (other, self,"Info_Erpresser_Choice_Zahlen_15_01"); //Aquí tienes 10 pepitas.
-		AI_Output (self, other,"Info_Erpresser_Choice_Zahlen_13_02"); //Qué lástima.
+		AI_Output (other, self,"Info_Erpresser_Choice_Zahlen_15_01"); //AquÃ­ tienes 10 pepitas.
+		AI_Output (self, other,"Info_Erpresser_Choice_Zahlen_13_02"); //QuÃ© lÃ¡stima.
 	
 		self.aivar[AIV_HAS_ERPRESSED] = 1;
 	}
 	else // SC hat keine 3 Erz
 	{
 		AI_Output (other, self,"Info_Erpresser_Choice_Zahlen_15_03"); //Ummm... Ahora mismo no llevo 10 pepitas encima.
-		AI_Output (self, other,"Info_Erpresser_Choice_Zahlen_13_04"); //Es una lástima...
+		AI_Output (self, other,"Info_Erpresser_Choice_Zahlen_13_04"); //Es una lÃ¡stima...
 	
 		self.aivar[AIV_HAS_ERPRESSED] = 2;
 	
@@ -66,7 +66,7 @@ FUNC VOID Info_Erpresser_Choice_Zahlen()
 	AI_StopProcessInfos	(self);
 };
 
-// ****************** für HAS_ERPRESSED == 1 (gezahlt) *********************
+// ****************** fÃ¼r HAS_ERPRESSED == 1 (gezahlt) *********************
 
 INSTANCE Info_BereitsErpresst (C_INFO)
 {
@@ -88,10 +88,10 @@ FUNC INT Info_BereitsErpresst_Condition()
 
 FUNC VOID Info_BereitsErpresst_Info()
 {
-	AI_Output (self, other,"Info_BereitsErpresst_Info_13_02"); //Has pagado. Puedes pasar. Venga, antes de que cambie de opinión.
+	AI_Output (self, other,"Info_BereitsErpresst_Info_13_02"); //Has pagado. Puedes pasar. Venga, antes de que cambie de opiniÃ³n.
 };
 
-// ****************** für HAS_ERPRESSED == 2 (Aufs Maul) *********************
+// ****************** fÃ¼r HAS_ERPRESSED == 2 (Aufs Maul) *********************
 
 INSTANCE Info_BereitsAufsMaul (C_INFO)
 {
@@ -115,7 +115,7 @@ FUNC INT Info_BereitsAufsMaul_Condition()
 
 FUNC VOID Info_BereitsAufsMaul_Info()
 {
-	AI_Output (self, other,"Info_BereitsAufsMaul_Info_13_02"); //¡Lárgate antes de que borre esa estúpida expresión de tu cara!
+	AI_Output (self, other,"Info_BereitsAufsMaul_Info_13_02"); //Â¡LÃ¡rgate antes de que borre esa estÃºpida expresiÃ³n de tu cara!
 };
 
 // ************************ EXIT **************************

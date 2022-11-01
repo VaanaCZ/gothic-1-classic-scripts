@@ -22,7 +22,7 @@ FUNC INT Info_GRD_275_PreExit_Condition()
 
 FUNC VOID Info_GRD_275_PreExit_Info()
 {
-	AI_Output(self,other,"Info_GRD_275_PreExit_06_01"); //Asegúrate de llegar al Campamento Viejo. ¡Te espera un pico, je je!
+	AI_Output(self,other,"Info_GRD_275_PreExit_06_01"); //AsegÃºrate de llegar al Campamento Viejo. Â¡Te espera un pico, je je!
 	AI_StopProcessInfos(self);
 };
 
@@ -62,7 +62,7 @@ INSTANCE Info_GRD_275_WasMachtIhrHier (C_INFO)
 	condition	= Info_GRD_275_WasMachtIhrHier_Condition;
 	information	= Info_GRD_275_WasMachtIhrHier_Info;
 	permanent	= 1;
-	description = "¿Qué haces aquí?";
+	description = "Â¿QuÃ© haces aquÃ­?";
 };                       
 
 FUNC INT Info_GRD_275_WasMachtIhrHier_Condition()
@@ -72,8 +72,8 @@ FUNC INT Info_GRD_275_WasMachtIhrHier_Condition()
 
 FUNC VOID Info_GRD_275_WasMachtIhrHier_Info()
 {
-	AI_Output (other,self,"Info_GRD_275_WasMachtIhrHier_15_00"); //¿Qué haces aquí?
-	AI_Output (self,other,"Info_GRD_275_WasMachtIhrHier_06_01"); //¿Qué crees que hago? ¡Estamos protegiendo el puente, por supuesto!
+	AI_Output (other,self,"Info_GRD_275_WasMachtIhrHier_15_00"); //Â¿QuÃ© haces aquÃ­?
+	AI_Output (self,other,"Info_GRD_275_WasMachtIhrHier_06_01"); //Â¿QuÃ© crees que hago? Â¡Estamos protegiendo el puente, por supuesto!
 	AI_Output (self,other,"Info_GRD_275_WasMachtIhrHier_06_02"); //Hacemos que las bestias no lo crucen.
 };
 
@@ -88,7 +88,7 @@ INSTANCE Info_GRD_275_Tips(C_INFO)
 	condition	= Info_GRD_275_Tips_Condition;
 	information	= Info_GRD_275_Tips_Info;
 	permanent	= 1;
-	description = "¿Puedes ofrecerme algún consejo?";
+	description = "Â¿Puedes ofrecerme algÃºn consejo?";
 };                       
 
 FUNC INT Info_GRD_275_Tips_Condition()
@@ -98,8 +98,8 @@ FUNC INT Info_GRD_275_Tips_Condition()
 
 FUNC VOID Info_GRD_275_Tips_Info()
 {
-	AI_Output (other,self,"Info_GRD_275_Tips_15_00"); //¿Puedes ofrecerme algún consejo?
-	AI_Output (self,other,"Info_GRD_275_Tips_06_01"); //Sí. No vayas solo al bosque.
+	AI_Output (other,self,"Info_GRD_275_Tips_15_00"); //Â¿Puedes ofrecerme algÃºn consejo?
+	AI_Output (self,other,"Info_GRD_275_Tips_06_01"); //SÃ­. No vayas solo al bosque.
 	AI_Output (self,other,"Info_GRD_275_Tips_06_02"); //A menos que seas lo bastante fuerte para vencer a todas las bestias.
 };
 
@@ -110,8 +110,8 @@ FUNC VOID Info_GRD_275_Tips_Info()
 
 
 /*
-	AI_Output(other,self,"Info_GRD_275_PreExit_15_02"); //Ich werde bestimmt nicht in den Minen für euch schuften.
-	AI_Output(self,other,"Info_GRD_275_PreExit_06_03"); //In dem Fall bist du wohl unser zukünftiger Kollege? Dann sei schön lieb zu uns, wir sind nämlich morgen auch noch da, hehe.
-	AI_Output(other,self,"Info_GRD_275_PreExit_15_04"); //Ich habe gehört es gibt auch noch andere Lager...
-	AI_Output(self,other,"Info_GRD_275_PreExit_06_05"); //So wie du rumläufst schaffst Du es nicht mal bis dahin zu kommen. Und jetzt weg mit dir.
+	AI_Output(other,self,"Info_GRD_275_PreExit_15_02"); //Ich werde bestimmt nicht in den Minen fÃ¼r euch schuften.
+	AI_Output(self,other,"Info_GRD_275_PreExit_06_03"); //In dem Fall bist du wohl unser zukÃ¼nftiger Kollege? Dann sei schÃ¶n lieb zu uns, wir sind nÃ¤mlich morgen auch noch da, hehe.
+	AI_Output(other,self,"Info_GRD_275_PreExit_15_04"); //Ich habe gehÃ¶rt es gibt auch noch andere Lager...
+	AI_Output(self,other,"Info_GRD_275_PreExit_06_05"); //So wie du rumlÃ¤ufst schaffst Du es nicht mal bis dahin zu kommen. Und jetzt weg mit dir.
 */

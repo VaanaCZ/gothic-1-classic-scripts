@@ -46,9 +46,9 @@ FUNC int  GRD_261_Brandick_ALEPH_Condition()
 };
 FUNC void  GRD_261_Brandick_ALEPH_Info()
 {
-	AI_Output			(other, self,"GRD_261_Brandick_ALEPH_Info_15_01"); //Escucha, cuando no estás, Aleph está todo el rato sentado sin hacer nada.
-	AI_Output			(self, other,"GRD_261_Brandick_ALEPH_Info_06_02"); //¿Es eso cierto?
-	AI_Output			(self, other,"GRD_261_Brandick_ALEPH_Info_06_03"); //¿Sabes qué desprecio más que a los gandules? A los traidores. ¡Piérdete!
+	AI_Output			(other, self,"GRD_261_Brandick_ALEPH_Info_15_01"); //Escucha, cuando no estÃ¡s, Aleph estÃ¡ todo el rato sentado sin hacer nada.
+	AI_Output			(self, other,"GRD_261_Brandick_ALEPH_Info_06_02"); //Â¿Es eso cierto?
+	AI_Output			(self, other,"GRD_261_Brandick_ALEPH_Info_06_03"); //Â¿Sabes quÃ© desprecio mÃ¡s que a los gandules? A los traidores. Â¡PiÃ©rdete!
 	
 	AI_StopProcessInfos	(self);
 };  

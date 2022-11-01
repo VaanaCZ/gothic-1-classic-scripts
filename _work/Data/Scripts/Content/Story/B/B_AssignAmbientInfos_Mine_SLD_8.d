@@ -37,7 +37,7 @@ INSTANCE Info_Mine_Sld_8_EinerVonEuchWerden (C_INFO) // E1
 	condition	= Info_Mine_Sld_8_EinerVonEuchWerden_Condition;
 	information	= Info_Mine_Sld_8_EinerVonEuchWerden_Info;
 	permanent	= 1;
-	description = "¿Cómo puedo ingresar en esta brigada?";
+	description = "Â¿CÃ³mo puedo ingresar en esta brigada?";
 };                       
 
 FUNC INT Info_Mine_Sld_8_EinerVonEuchWerden_Condition()
@@ -53,9 +53,9 @@ FUNC INT Info_Mine_Sld_8_EinerVonEuchWerden_Condition()
 
 FUNC VOID Info_Mine_Sld_8_EinerVonEuchWerden_Info()
 {
-	AI_Output(other,self,"Info_Mine_Sld_8_EinerVonEuchWerden_15_00"); //¿Cómo puedo ingresar en esta brigada?
-	AI_Output(self,other,"Info_Mine_Sld_8_EinerVonEuchWerden_08_01"); //Si quieres trabajar aquí en la Hondonada, antes tendrás que abrirte paso en el Campamento Nuevo.
-	AI_Output(self,other,"Info_Mine_Sld_8_EinerVonEuchWerden_08_02"); //Ve y pregunta allí.
+	AI_Output(other,self,"Info_Mine_Sld_8_EinerVonEuchWerden_15_00"); //Â¿CÃ³mo puedo ingresar en esta brigada?
+	AI_Output(self,other,"Info_Mine_Sld_8_EinerVonEuchWerden_08_01"); //Si quieres trabajar aquÃ­ en la Hondonada, antes tendrÃ¡s que abrirte paso en el Campamento Nuevo.
+	AI_Output(self,other,"Info_Mine_Sld_8_EinerVonEuchWerden_08_02"); //Ve y pregunta allÃ­.
 };
 
 // *************************************************************************
@@ -68,7 +68,7 @@ INSTANCE Info_Mine_Sld_8_WichtigePersonen(C_INFO)
 	condition	= Info_Mine_Sld_8_WichtigePersonen_Condition;
 	information	= Info_Mine_Sld_8_WichtigePersonen_Info;
 	permanent	= 1;
-	description = "¿Quién manda por aquí?";
+	description = "Â¿QuiÃ©n manda por aquÃ­?";
 };                       
 
 FUNC INT Info_Mine_Sld_8_WichtigePersonen_Condition()
@@ -78,9 +78,9 @@ FUNC INT Info_Mine_Sld_8_WichtigePersonen_Condition()
 
 FUNC VOID Info_Mine_Sld_8_WichtigePersonen_Info()
 {
-	AI_Output(other,self,"Info_Mine_Sld_8_WichtigePersonen_15_00"); //¿Quién manda por aquí?
-	AI_Output(self,other,"Info_Mine_Sld_8_WichtigePersonen_08_01"); //Okyl está al mando aquí en la Hondonada. Lee es el que manda en el campamento.
-	AI_Output(self,other,"Info_Mine_Sld_8_WichtigePersonen_08_02"); //Será mejor que hables con ambos.
+	AI_Output(other,self,"Info_Mine_Sld_8_WichtigePersonen_15_00"); //Â¿QuiÃ©n manda por aquÃ­?
+	AI_Output(self,other,"Info_Mine_Sld_8_WichtigePersonen_08_01"); //Okyl estÃ¡ al mando aquÃ­ en la Hondonada. Lee es el que manda en el campamento.
+	AI_Output(self,other,"Info_Mine_Sld_8_WichtigePersonen_08_02"); //SerÃ¡ mejor que hables con ambos.
 };
 
 // *************************************************************************
@@ -93,7 +93,7 @@ INSTANCE Info_Mine_Sld_8_DasLager(C_INFO)
 	condition	= Info_Mine_Sld_8_DasLager_Condition;
 	information	= Info_Mine_Sld_8_DasLager_Info;
 	permanent	= 1;
-	description = "¿Qué sucede en el campamento?";
+	description = "Â¿QuÃ© sucede en el campamento?";
 };                       
 
 FUNC INT Info_Mine_Sld_8_DasLager_Condition()
@@ -103,7 +103,7 @@ FUNC INT Info_Mine_Sld_8_DasLager_Condition()
 
 FUNC VOID Info_Mine_Sld_8_DasLager_Info()
 {
-	AI_Output(other,self,"Info_Mine_Sld_8_DasLager_15_00"); //¿Qué sucede en el campamento?
+	AI_Output(other,self,"Info_Mine_Sld_8_DasLager_15_00"); //Â¿QuÃ© sucede en el campamento?
 	AI_Output(self,other,"Info_Mine_Sld_8_DasLager_08_01"); //Protegemos la entrada a la mina.
 	AI_Output(other,self,"Info_Mine_Sld_8_DasLager_08_02"); //Nadie que no sea de los nuestros puede entrar.
 };
@@ -118,7 +118,7 @@ INSTANCE Info_Mine_Sld_8_DieLage(C_INFO) // E1
 	condition	= Info_Mine_Sld_8_DieLage_Condition;
 	information	= Info_Mine_Sld_8_DieLage_Info;
 	permanent	= 1;
-	description = "¿Vale?";
+	description = "Â¿Vale?";
 };                       
 
 FUNC INT Info_Mine_Sld_8_DieLage_Condition()
@@ -128,8 +128,8 @@ FUNC INT Info_Mine_Sld_8_DieLage_Condition()
 
 FUNC VOID Info_Mine_Sld_8_DieLage_Info()
 {
-	AI_Output(other,self,"Info_Mine_Sld_8_DieLage_15_00"); //¿Vale?
-	AI_Output(self,other,"Info_Mine_Sld_8_DieLage_08_01"); //¿Por qué me lo preguntas? Todo está bajo control.
+	AI_Output(other,self,"Info_Mine_Sld_8_DieLage_15_00"); //Â¿Vale?
+	AI_Output(self,other,"Info_Mine_Sld_8_DieLage_08_01"); //Â¿Por quÃ© me lo preguntas? Todo estÃ¡ bajo control.
 };
 	
 // *************************************************************************

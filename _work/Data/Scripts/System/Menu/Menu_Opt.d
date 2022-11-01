@@ -31,7 +31,7 @@ const int MENU_OPT_START_Y	= 2200;
 
 INSTANCE MENUITEM_OPT_HEADING(C_MENU_ITEM_DEF) 
 {
-	text[0]		=	"CONFIGURACIÓN";
+	text[0]		=	"CONFIGURACIÃ“N";
 	type		=	MENU_ITEM_TEXT;
 	// Position und Dimension	
 	posx		=	0;		posy		=	MENU_TITLE_Y;
@@ -61,7 +61,7 @@ INSTANCE MENUITEM_OPT_GAME(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_OPT_GRAPHICS(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	text[0]		= "Gráficos";
+	text[0]		= "GrÃ¡ficos";
 	text[1]		= "Alcance, detalles y efectos visuales.";  // Kommentar
 	
 	// Position und Dimension	
@@ -78,8 +78,8 @@ INSTANCE MENUITEM_OPT_GRAPHICS(C_MENU_ITEM_DEF)
 instance MENUITEM_OPT_VIDEO(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	text[0]		=	"Vídeo";
-	text[1]		=	"Tarjeta de vídeo, resolución y brillo.";  // Kommentar
+	text[0]		=	"VÃ­deo";
+	text[1]		=	"Tarjeta de vÃ­deo, resoluciÃ³n y brillo.";  // Kommentar
 	
 	// Position und Dimension	
 	posx		= 0;		posy		= MENU_OPT_START_Y + MENU_OPT_DY*2;
@@ -96,7 +96,7 @@ INSTANCE MENUITEM_OPT_AUDIO(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
 	text[0]		= "Sonido";
-	text[1]		= "Música, idioma y efectos de sonido.";  // Kommentar
+	text[1]		= "MÃºsica, idioma y efectos de sonido.";  // Kommentar
 	
 	// Position und Dimension
 	posx		= 0;		posy		= MENU_OPT_START_Y + MENU_OPT_DY*3;
@@ -114,7 +114,7 @@ INSTANCE MENUITEM_OPT_CONTROLS(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
 	text[0]		= "Teclado";
-	text[1]		= "Configuración del teclado";  // Kommentar
+	text[1]		= "ConfiguraciÃ³n del teclado";  // Kommentar
 	
 	// Position und Dimension	
 	posx		= 0;		posy		= MENU_OPT_START_Y + MENU_OPT_DY*4;
@@ -167,7 +167,7 @@ instance MENUITEM_PERF_CHOICE(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_OPT_BACK(C_MENU_ITEM_DEF)
 {
 	backpic		=	MENU_ITEM_BACK_PIC;
-	text[0]		=	"Atrás";
+	text[0]		=	"AtrÃ¡s";
 	// Position und Dimension	
 	posx		=	1000;			posy		=	MENU_BACK_Y;
 	dimx		=	6192;		dimy		=	MENU_OPT_DY;

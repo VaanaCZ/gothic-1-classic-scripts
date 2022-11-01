@@ -37,7 +37,7 @@ INSTANCE Info_Mine_Grd_7_Mine (C_INFO) // E1
 	condition	= Info_Mine_Grd_7_Mine_Condition;
 	information	= Info_Mine_Grd_7_Mine_Info;
 	permanent	= 1;
-	description = "Háblame de la mina.";
+	description = "HÃ¡blame de la mina.";
 };                       
 
 FUNC INT Info_Mine_Grd_7_Mine_Condition()
@@ -50,7 +50,7 @@ FUNC INT Info_Mine_Grd_7_Mine_Condition()
 
 FUNC VOID Info_Mine_Grd_7_Mine_Info()
 {
-	AI_Output(other,self,"Info_Mine_Grd_7_Mine_15_00"); //Háblame de la mina.
+	AI_Output(other,self,"Info_Mine_Grd_7_Mine_15_00"); //HÃ¡blame de la mina.
 	AI_Output(self,other,"Info_Mine_Grd_7_Mine_07_01"); //Los cavadores extraen el mineral, y nosotros los protegemos de los reptadores.
 	
 };
@@ -65,7 +65,7 @@ INSTANCE Info_Mine_Grd_7_WichtigePersonen(C_INFO)
 	condition	= Info_Mine_Grd_7_WichtigePersonen_Condition;
 	information	= Info_Mine_Grd_7_WichtigePersonen_Info;
 	permanent	= 1;
-	description = "¿Quién manda por aquí?";
+	description = "Â¿QuiÃ©n manda por aquÃ­?";
 };                       
 
 FUNC INT Info_Mine_Grd_7_WichtigePersonen_Condition()
@@ -78,8 +78,8 @@ FUNC INT Info_Mine_Grd_7_WichtigePersonen_Condition()
 
 FUNC VOID Info_Mine_Grd_7_WichtigePersonen_Info()
 {
-	AI_Output(other,self,"Info_Mine_Grd_7_WichtigePersonen_15_00"); //¿Quién manda por aquí?
-	AI_Output(self,other,"Info_Mine_Grd_7_WichtigePersonen_07_01"); //Ian y Asghan. Si quieres algo, será mejor que hables con ellos.
+	AI_Output(other,self,"Info_Mine_Grd_7_WichtigePersonen_15_00"); //Â¿QuiÃ©n manda por aquÃ­?
+	AI_Output(self,other,"Info_Mine_Grd_7_WichtigePersonen_07_01"); //Ian y Asghan. Si quieres algo, serÃ¡ mejor que hables con ellos.
 	
 };
 
@@ -93,7 +93,7 @@ INSTANCE Info_Mine_Grd_7_Minecrawler(C_INFO)
 	condition	= Info_Mine_Grd_7_Minecrawler_Condition;
 	information	= Info_Mine_Grd_7_Minecrawler_Info;
 	permanent	= 1;
-	description = "¿Qué sabes de los reptadores?";
+	description = "Â¿QuÃ© sabes de los reptadores?";
 };                       
 
 FUNC INT Info_Mine_Grd_7_Minecrawler_Condition()
@@ -106,8 +106,8 @@ FUNC INT Info_Mine_Grd_7_Minecrawler_Condition()
 
 FUNC VOID Info_Mine_Grd_7_Minecrawler_Info()
 {
-	AI_Output(other,self,"Info_Mine_Grd_7_Minecrawler_15_00"); //¿Qué sabes de los reptadores?
-	AI_Output(self,other,"Info_Mine_Grd_7_Minecrawler_07_01"); //¡En mi opinión, deberían ser exterminados!
+	AI_Output(other,self,"Info_Mine_Grd_7_Minecrawler_15_00"); //Â¿QuÃ© sabes de los reptadores?
+	AI_Output(self,other,"Info_Mine_Grd_7_Minecrawler_07_01"); //Â¡En mi opiniÃ³n, deberÃ­an ser exterminados!
 	
 	
 };
@@ -121,7 +121,7 @@ INSTANCE Info_Mine_Grd_7_DieLage(C_INFO) // E1
 	condition	= Info_Mine_Grd_7_DieLage_Condition;
 	information	= Info_Mine_Grd_7_DieLage_Info;
 	permanent	= 1;
-	description = "¿Qué tal estás?";
+	description = "Â¿QuÃ© tal estÃ¡s?";
 };                       
 
 FUNC INT Info_Mine_Grd_7_DieLage_Condition()
@@ -134,8 +134,8 @@ FUNC INT Info_Mine_Grd_7_DieLage_Condition()
 
 FUNC VOID Info_Mine_Grd_7_DieLage_Info()
 {
-	AI_Output(other,self,"Info_Mine_Grd_7_DieLage_15_00"); //¿Qué tal estás?
-	AI_Output(self,other,"Info_Mine_Grd_7_DieLage_07_01"); //¡Tío, me estás crispando los nervios!
+	AI_Output(other,self,"Info_Mine_Grd_7_DieLage_15_00"); //Â¿QuÃ© tal estÃ¡s?
+	AI_Output(self,other,"Info_Mine_Grd_7_DieLage_07_01"); //Â¡TÃ­o, me estÃ¡s crispando los nervios!
 };
 	
 // *************************************************************************

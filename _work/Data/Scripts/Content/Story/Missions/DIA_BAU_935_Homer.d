@@ -33,7 +33,7 @@ INSTANCE DIA_Homer_Hello (C_INFO)
 	condition	= DIA_Homer_Hello_Condition;
 	information	= DIA_Homer_Hello_Info;
 	permanent	= 0;
-	description = "¿Buscas algo?";
+	description = "Â¿Buscas algo?";
 };                       
 
 FUNC INT DIA_Homer_Hello_Condition()
@@ -43,10 +43,10 @@ FUNC INT DIA_Homer_Hello_Condition()
 
 FUNC VOID DIA_Homer_Hello_Info()
 {	
-	AI_Output (other, self,"DIA_Homer_Hello_15_00"); //¿Buscas algo?
+	AI_Output (other, self,"DIA_Homer_Hello_15_00"); //Â¿Buscas algo?
 	AI_Output (self, other,"DIA_Homer_Hello_02_01"); //Busco escapes en la presa. Creo que hay un acechador royendo los cimientos.
 	AI_Output (self, other,"DIA_Homer_Hello_02_02"); //La bestia hunde sus dientes y garras contra las piedras y las vigas de madera que hay bajo el agua.
-	AI_Output (self, other,"DIA_Homer_Hello_02_03"); //Si sigue haciéndolo, socavará toda la presa.
+	AI_Output (self, other,"DIA_Homer_Hello_02_03"); //Si sigue haciÃ©ndolo, socavarÃ¡ toda la presa.
 };
 
 // ************************************************************
@@ -60,7 +60,7 @@ INSTANCE DIA_Homer_BuiltDam (C_INFO)
 	condition	= DIA_Homer_BuiltDam_Condition;
 	information	= DIA_Homer_BuiltDam_Info;
 	permanent	= 0;
-	description = "¿Construiste la presa?";
+	description = "Â¿Construiste la presa?";
 };                       
 
 FUNC INT DIA_Homer_BuiltDam_Condition()
@@ -73,9 +73,9 @@ FUNC INT DIA_Homer_BuiltDam_Condition()
 
 FUNC VOID DIA_Homer_BuiltDam_Info()
 {	
-	AI_Output (other, self,"DIA_Homer_BuiltDam_15_00"); //¿Construiste la presa?
-	AI_Output (self, other,"DIA_Homer_BuiltDam_02_01"); //Sí. Construí la presa cuando fundamos el Campamento Nuevo.
-	AI_Output (self, other,"DIA_Homer_BuiltDam_02_02"); //Por supuesto, todo el mundo ayudó, pero yo fui el maestro constructor.
+	AI_Output (other, self,"DIA_Homer_BuiltDam_15_00"); //Â¿Construiste la presa?
+	AI_Output (self, other,"DIA_Homer_BuiltDam_02_01"); //SÃ­. ConstruÃ­ la presa cuando fundamos el Campamento Nuevo.
+	AI_Output (self, other,"DIA_Homer_BuiltDam_02_02"); //Por supuesto, todo el mundo ayudÃ³, pero yo fui el maestro constructor.
 };
 
 // ************************************************************
@@ -91,7 +91,7 @@ INSTANCE DIA_Homer_WannaHelp (C_INFO)
 	condition	= DIA_Homer_WannaHelp_Condition;
 	information	= DIA_Homer_WannaHelp_Info;
 	permanent	= 0;
-	description = "¿Puedo hacer algo para ayudarte?";
+	description = "Â¿Puedo hacer algo para ayudarte?";
 };                       
 
 FUNC INT DIA_Homer_WannaHelp_Condition()
@@ -104,14 +104,14 @@ FUNC INT DIA_Homer_WannaHelp_Condition()
 
 FUNC VOID DIA_Homer_WannaHelp_Info()
 {	
-	AI_Output (other, self,"DIA_Homer_WannaHelp_15_00"); //¿Puedo hacer algo para ayudarte?
+	AI_Output (other, self,"DIA_Homer_WannaHelp_15_00"); //Â¿Puedo hacer algo para ayudarte?
 	AI_Output (self, other,"DIA_Homer_WannaHelp_02_01"); //Claro, impide que esa bestia roya mi presa.
 	
 	Homer_DamLurker = LOG_RUNNING;
 	
 	Log_CreateTopic		(CH1_DamLurker, LOG_MISSION);
 	Log_SetTopicStatus	(CH1_DamLurker, LOG_RUNNING);
-	B_LogEntry			(CH1_DamLurker,"Homer me ha dicho que un acechador está royendo la presa. Si logro detenerlo, también podré reparar la presa.");
+	B_LogEntry			(CH1_DamLurker,"Homer me ha dicho que un acechador estÃ¡ royendo la presa. Si logro detenerlo, tambiÃ©n podrÃ© reparar la presa.");
 
 };
 
@@ -126,7 +126,7 @@ INSTANCE DIA_Homer_Running (C_INFO)
 	condition	= DIA_Homer_Running_Condition;
 	information	= DIA_Homer_Running_Info;
 	permanent	= 0;
-	description = "¿Dónde puedo encontrar a la bestia?";
+	description = "Â¿DÃ³nde puedo encontrar a la bestia?";
 };                       
 
 FUNC INT DIA_Homer_Running_Condition()
@@ -139,8 +139,8 @@ FUNC INT DIA_Homer_Running_Condition()
 
 FUNC VOID DIA_Homer_Running_Info()
 {	
-	AI_Output (other, self,"DIA_Homer_Running_15_00"); //¿Dónde puedo encontrar a la bestia?
-	AI_Output (self, other,"DIA_Homer_Running_02_01"); //Yo buscaría en la otra orilla del lago. Nadie va allí nunca. Probablemente es donde esté su guarida.
+	AI_Output (other, self,"DIA_Homer_Running_15_00"); //Â¿DÃ³nde puedo encontrar a la bestia?
+	AI_Output (self, other,"DIA_Homer_Running_02_01"); //Yo buscarÃ­a en la otra orilla del lago. Nadie va allÃ­ nunca. Probablemente es donde estÃ© su guarida.
 	
 	Homer_DamLurker = LOG_RUNNING;
 	B_LogEntry	(CH1_DamLurker,"El acechador debe tener su nido en alguna parte del lado aislado del embalse.");
@@ -158,7 +158,7 @@ INSTANCE DIA_Homer_Success (C_INFO)
 	condition	= DIA_Homer_Success_Condition;
 	information	= DIA_Homer_Success_Info;
 	permanent	= 0;
-	description = "¡He matado a la bestia!";
+	description = "Â¡He matado a la bestia!";
 };                       
 
 FUNC INT DIA_Homer_Success_Condition()
@@ -176,8 +176,8 @@ FUNC INT DIA_Homer_Success_Condition()
 
 FUNC VOID DIA_Homer_Success_Info()
 {	
-	AI_Output			(other, self,"DIA_Homer_Success_15_00"); //¡He matado a la bestia!
-	AI_Output			(self, other,"DIA_Homer_Success_02_01"); //¡Estupendo! Conseguí que algunos de los hombres del Señor del Arroz me ayudaran a arreglar los daños que ha causado.
+	AI_Output			(other, self,"DIA_Homer_Success_15_00"); //Â¡He matado a la bestia!
+	AI_Output			(self, other,"DIA_Homer_Success_02_01"); //Â¡Estupendo! ConseguÃ­ que algunos de los hombres del SeÃ±or del Arroz me ayudaran a arreglar los daÃ±os que ha causado.
 	AI_Output			(self, other,"DIA_Homer_Success_02_02"); //Por fin puedo dormir un poco.
 		
 	Homer_DamLurker = 	LOG_SUCCESS;
@@ -200,7 +200,7 @@ INSTANCE DIA_Homer_PERM (C_INFO)
 	condition	= DIA_Homer_PERM_Condition;
 	information	= DIA_Homer_PERM_Info;
 	permanent	= 1;
-	description = "¿Todo va bien con la presa?";
+	description = "Â¿Todo va bien con la presa?";
 };                       
 
 FUNC INT DIA_Homer_PERM_Condition()
@@ -213,7 +213,7 @@ FUNC INT DIA_Homer_PERM_Condition()
 
 FUNC VOID DIA_Homer_PERM_Info()
 {	
-	AI_Output (other, self,"DIA_Homer_PERM_15_00"); //¿Todo va bien con la presa?
+	AI_Output (other, self,"DIA_Homer_PERM_15_00"); //Â¿Todo va bien con la presa?
 	AI_Output (self, other,"DIA_Homer_PERM_02_01"); //Es resistente como una fortaleza, nada puede derribarla.
 };
 

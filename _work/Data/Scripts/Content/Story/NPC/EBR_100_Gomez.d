@@ -2,7 +2,7 @@ instance EBR_100_Gomez (Npc_Default)
 {
 	//-------- primary data --------
 	
-	name 		=	"Gómez";
+	name 		=	"GÃ³mez";
    	npctype  	= 	npctype_main;
    	guild 		=	GIL_EBR;
 	level 		=	100;

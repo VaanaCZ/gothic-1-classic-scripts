@@ -33,7 +33,7 @@ INSTANCE DIA_Tpl_1416_Torwache_Life (C_INFO)
 	condition		= DIA_Tpl_1416_Torwache_Life_Condition;
 	information		= DIA_Tpl_1416_Torwache_Life_Info;
 	permanent		= 1;
-	description		= "¿Cómo es la vida de un guardia de la Hermandad?";
+	description		= "Â¿CÃ³mo es la vida de un guardia de la Hermandad?";
 };
 
 FUNC INT DIA_Tpl_1416_Torwache_Life_Condition()
@@ -43,7 +43,7 @@ FUNC INT DIA_Tpl_1416_Torwache_Life_Condition()
 
 FUNC VOID DIA_Tpl_1416_Torwache_Life_Info()
 {
-	AI_Output (other, self,"DIA_Tpl_1416_Torwache_Life_15_00"); //¿Cómo es la vida de un guardia de la Hermandad?
-	AI_Output (self, other,"DIA_Tpl_1416_Torwache_Life_08_01"); //Tengo una tarea de importancia. El Iluminado y sus discípulos confían en mí.
+	AI_Output (other, self,"DIA_Tpl_1416_Torwache_Life_15_00"); //Â¿CÃ³mo es la vida de un guardia de la Hermandad?
+	AI_Output (self, other,"DIA_Tpl_1416_Torwache_Life_08_01"); //Tengo una tarea de importancia. El Iluminado y sus discÃ­pulos confÃ­an en mÃ­.
 	AI_Output (self, other,"DIA_Tpl_1416_Torwache_Life_08_02");	//Mi vida anterior es ahora una cosa del pasado. De ahora en adelante soy un GOR NA: un templario del Durmiente.
 };

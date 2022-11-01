@@ -21,7 +21,7 @@ FUNC int DIA_SLD_761_Soeldner_INTRO_CONDITION()
 
 func void DIA_SLD_761_Soeldner_INTRO_INFO()
 {
-	AI_Output (self, other,"DIA_SLD_761_Soeldner_INTRO_INFO_03_01"); //¿Qué estáis haciendo en esta mina?
+	AI_Output (self, other,"DIA_SLD_761_Soeldner_INTRO_INFO_03_01"); //Â¿QuÃ© estÃ¡is haciendo en esta mina?
 };
 
 //-------------------- Exit 1 -----------------------------
@@ -34,7 +34,7 @@ instance DIA_SLD_761_Soeldner_EXIT_1 (C_INFO)
 	information		= DIA_SLD_761_Soeldner_EXIT_1_INFO;
 	important		= 0;
 	permanent		= 0;
-	description 	= "Aún tengo cosas que hacer.";
+	description 	= "AÃºn tengo cosas que hacer.";
 };
 
 FUNC int DIA_SLD_761_Soeldner_EXIT_1_CONDITION()
@@ -44,8 +44,8 @@ FUNC int DIA_SLD_761_Soeldner_EXIT_1_CONDITION()
 
 func void DIA_SLD_761_Soeldner_EXIT_1_INFO()
 {
-	AI_Output (other, self,"DIA_SLD_761_Soeldner_EXIT_1_INFO_15_01"); //Todavía tengo cosas que hacer.
-	AI_Output (self, other,"DIA_SLD_761_Soeldner_EXIT_1_INFO_03_02");//Eso creo yo también.
+	AI_Output (other, self,"DIA_SLD_761_Soeldner_EXIT_1_INFO_15_01"); //TodavÃ­a tengo cosas que hacer.
+	AI_Output (self, other,"DIA_SLD_761_Soeldner_EXIT_1_INFO_03_02");//Eso creo yo tambiÃ©n.
 	AI_StopProcessInfos	( self );
 };
 
@@ -59,7 +59,7 @@ instance DIA_SLD_761_Soeldner_EXIT_2 (C_INFO)
 	information		= DIA_SLD_761_Soeldner_EXIT_2_INFO;
 	important		= 0;
 	permanent		= 1;
-	description 	= "Será mejor que me marche.";
+	description 	= "SerÃ¡ mejor que me marche.";
 };
 
 FUNC int DIA_SLD_761_Soeldner_EXIT_2_CONDITION()
@@ -72,7 +72,7 @@ FUNC int DIA_SLD_761_Soeldner_EXIT_2_CONDITION()
 
 func void DIA_SLD_761_Soeldner_EXIT_2_INFO()
 {
-	AI_Output (other, self,"DIA_SLD_761_Soeldner_EXIT_2_INFO_15_01"); //Será mejor que me marche.
+	AI_Output (other, self,"DIA_SLD_761_Soeldner_EXIT_2_INFO_15_01"); //SerÃ¡ mejor que me marche.
 	AI_Output (self, other,"DIA_SLD_761_Soeldner_EXIT_2_INFO_03_02");//Vale.
 	AI_StopProcessInfos	( self );
 };
@@ -86,7 +86,7 @@ instance DIA_SLD_761_Soeldner_UMSEHEN (C_INFO)
 	information		= DIA_SLD_761_Soeldner_UMSEHEN_INFO;
 	important		= 0;
 	permanent		= 0;
-	description 	= "Sólo quería echar un vistazo en el campamento.";
+	description 	= "SÃ³lo querÃ­a echar un vistazo en el campamento.";
 };
 
 FUNC int DIA_SLD_761_Soeldner_UMSEHEN_CONDITION()
@@ -96,8 +96,8 @@ FUNC int DIA_SLD_761_Soeldner_UMSEHEN_CONDITION()
 
 func void DIA_SLD_761_Soeldner_UMSEHEN_INFO()
 {  
-	AI_Output (other, self,"DIA_SLD_761_Soeldner_UMSEHEN_INFO_15_01"); //Sólo quería echar un vistazo por el Campamento.
-	AI_Output (self, other,"DIA_SLD_761_Soeldner_UMSEHEN_INFO_03_02");//Entonces has venido al lugar equivocado, porque ésta es la entrada de la mina y no puedes cruzarla.
+	AI_Output (other, self,"DIA_SLD_761_Soeldner_UMSEHEN_INFO_15_01"); //SÃ³lo querÃ­a echar un vistazo por el Campamento.
+	AI_Output (self, other,"DIA_SLD_761_Soeldner_UMSEHEN_INFO_03_02");//Entonces has venido al lugar equivocado, porque Ã©sta es la entrada de la mina y no puedes cruzarla.
 };
 
 
@@ -110,7 +110,7 @@ instance DIA_SLD_761_Soeldner_INMINE (C_INFO)
 	information		= DIA_SLD_761_Soeldner_INMINE_INFO;
 	important		= 0;
 	permanent		= 0;
-	description 	= "Sólo quería ver la mina.";
+	description 	= "SÃ³lo querÃ­a ver la mina.";
 };
 
 FUNC int DIA_SLD_761_Soeldner_INMINE_CONDITION()
@@ -120,8 +120,8 @@ FUNC int DIA_SLD_761_Soeldner_INMINE_CONDITION()
 
 func void DIA_SLD_761_Soeldner_INMINE_INFO()
 {
-	AI_Output (other, self,"DIA_SLD_761_Soeldner_INMINE_INFO_15_01");//Sólo quería ver la mina.
-	AI_Output (self, other,"DIA_SLD_761_Soeldner_INMINE_INFO_03_02");//Supongo que puedes ver que la mina está cerrada, así que no hay absolutamente nada que ver.
+	AI_Output (other, self,"DIA_SLD_761_Soeldner_INMINE_INFO_15_01");//SÃ³lo querÃ­a ver la mina.
+	AI_Output (self, other,"DIA_SLD_761_Soeldner_INMINE_INFO_03_02");//Supongo que puedes ver que la mina estÃ¡ cerrada, asÃ­ que no hay absolutamente nada que ver.
 
 };
 
@@ -134,7 +134,7 @@ instance DIA_SLD_761_Soeldner_Bribe (C_INFO)
 	information		= DIA_SLD_761_Soeldner_Bribe_INFO;
 	important		= 0;
 	permanent		= 0;
-	description 	= "¿No podemos hacer nada al respecto?";
+	description 	= "Â¿No podemos hacer nada al respecto?";
 };
 
 FUNC int DIA_SLD_761_Soeldner_Bribe_CONDITION()
@@ -147,11 +147,11 @@ FUNC int DIA_SLD_761_Soeldner_Bribe_CONDITION()
 
 func void DIA_SLD_761_Soeldner_Bribe_INFO()
 {  
-	AI_Output (other, self,"DIA_SLD_761_Soeldner_Bribe_INFO_15_01");//¿No hay nada que pueda hacer al respecto?
-	AI_Output (self, other,"DIA_SLD_761_Soeldner_Bribe_INFO_03_02");//¿Qué podría hacerse al respecto?
-	AI_Output (self, other,"DIA_SLD_761_Soeldner_Bribe_INFO_03_03");//Un momento; si estás intentando sobornarme, has ido a dar con la persona equivocada.
-	AI_Output (other, self,"DIA_SLD_761_Soeldner_Bribe_INFO_15_04");//No, no estaba intentando sobornar a nadie; es sólo que pensé...
-	AI_Output (other, self,"DIA_SLD_761_Soeldner_Bribe_INFO_15_05");//Será mejor que me marche.
+	AI_Output (other, self,"DIA_SLD_761_Soeldner_Bribe_INFO_15_01");//Â¿No hay nada que pueda hacer al respecto?
+	AI_Output (self, other,"DIA_SLD_761_Soeldner_Bribe_INFO_03_02");//Â¿QuÃ© podrÃ­a hacerse al respecto?
+	AI_Output (self, other,"DIA_SLD_761_Soeldner_Bribe_INFO_03_03");//Un momento; si estÃ¡s intentando sobornarme, has ido a dar con la persona equivocada.
+	AI_Output (other, self,"DIA_SLD_761_Soeldner_Bribe_INFO_15_04");//No, no estaba intentando sobornar a nadie; es sÃ³lo que pensÃ©...
+	AI_Output (other, self,"DIA_SLD_761_Soeldner_Bribe_INFO_15_05");//SerÃ¡ mejor que me marche.
 	AI_StopProcessInfos	(self); 
 };
 

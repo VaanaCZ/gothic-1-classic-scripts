@@ -15,7 +15,7 @@ FUNC int Info_TPL_1455_GorBoba_Condition()
 
 func void Info_TPL_1455_GorBoba_Info()
 {
-	AI_Output (self, other,"Info_TPL_1455_GorBoba_08_01"); //PiÈrdete; aquÌ est·s de m·s.
+	AI_Output (self, other,"Info_TPL_1455_GorBoba_08_01"); //Pi√©rdete; aqu√≠ est√°s de m√°s.
 };
 
 
@@ -26,7 +26,7 @@ instance Info_TPL_1455_GorBoba1 (C_INFO)
 	information		= Info_TPL_1455_GorBoba1_Info;
 	important		= 0;
 	permanent		= 0;
-	description 	= "øY T⁄ vas a detenerme?";	
+	description 	= "¬øY T√ö vas a detenerme?";	
 };
 
 FUNC int Info_TPL_1455_GorBoba1_Condition()
@@ -38,16 +38,16 @@ FUNC int Info_TPL_1455_GorBoba1_Condition()
 
 func void Info_TPL_1455_GorBoba1_Info()
 {
-	AI_Output (other, self,"Info_TPL_1455_GorBoba1_15_01"); //øY vas a ser t˙ el que me detenga?
-	AI_Output (self, other,"Info_TPL_1455_GorBoba1_08_02"); //°SÕ! Yo te detendrÈ; no impedir·s que el Maestro Kalorn despierte al Durmiente.
+	AI_Output (other, self,"Info_TPL_1455_GorBoba1_15_01"); //¬øY vas a ser t√∫ el que me detenga?
+	AI_Output (self, other,"Info_TPL_1455_GorBoba1_08_02"); //¬°S√ç! Yo te detendr√©; no impedir√°s que el Maestro Kalorn despierte al Durmiente.
 	AI_Output (self, other,"Info_TPL_1455_GorBoba1_08_03"); //No intentes atacarme; el sumo sacerdote ha transferido parte de su poder al Maestro Kalorn. Ahora somos inmortales.
-	AI_Output (other, self,"Info_TPL_1455_GorBoba1_15_04"); //°Voy a demostrarte lo inmortal que eres!
-	AI_Output (self, other,"Info_TPL_1455_GorBoba1_08_05"); //°Prep·rate a reunirte con tu creador!
+	AI_Output (other, self,"Info_TPL_1455_GorBoba1_15_04"); //¬°Voy a demostrarte lo inmortal que eres!
+	AI_Output (self, other,"Info_TPL_1455_GorBoba1_08_05"); //¬°Prep√°rate a reunirte con tu creador!
 
 	AI_StopProcessInfos	( self );
 	
 	Log_CreateTopic        ( "Orktempel", LOG_NOTE );
-	B_LogEntry            ( "Orktempel","GorBoba querÌa detenerme. Me ha dicho que Kalom y sus partidarios habÌan recibido del sumo sacerdote  unos poderes que los hacÌan invencibles ante las armas humanas."); 
+	B_LogEntry            ( "Orktempel","GorBoba quer√≠a detenerme. Me ha dicho que Kalom y sus partidarios hab√≠an recibido del sumo sacerdote  unos poderes que los hac√≠an invencibles ante las armas humanas."); 
 
 	Npc_SetAttitude 		( self, ATT_HOSTILE );
 	Npc_SetTempAttitude 	( self, ATT_HOSTILE );	

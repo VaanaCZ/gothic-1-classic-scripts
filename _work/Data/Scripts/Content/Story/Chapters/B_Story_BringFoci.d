@@ -8,7 +8,7 @@
 //#####################################################################
 func void B_Story_BringFoci()
 {
-	//-------- Ausrüstung für Spieler --------
+	//-------- AusrÃ¼stung fÃ¼r Spieler --------
 	CreateInvItems		(self,			ItWrFocimap,	2);		// 2, damit die Bildschirmausgabe stimmt!
 	B_GiveInvItems		(self,	hero,	ItWrFocimap,	2);	
 	Npc_RemoveInvItem	(hero,			ItWrFocimap);
@@ -59,14 +59,14 @@ func void B_Story_BringFoci()
 	var C_NPC sld723;		sld723 = Hlp_GetNpc	(SLD_723_Soeldner);		sld723.aivar[AIV_PASSGATE] = TRUE;
 	var C_NPC sld732;		sld732 = Hlp_GetNpc	(SLD_732_Soeldner);		sld732.aivar[AIV_PASSGATE] = TRUE;
 
-	//-------- Tagebucheinträge --------
+	//-------- TagebucheintrÃ¤ge --------
 	B_LogEntry			(CH3_EscapePlanNC,"He ofrecido mi ayuda a Saturas para completar el plan de fuga. Mi siguiente labor consiste en encontrar los cuatro focos de piedra restantes.");
 	Log_SetTopicStatus	(CH3_EscapePlanNC,	LOG_SUCCESS);
 	
 	Log_CreateTopic		(CH3_BringFoci,		LOG_MISSION);
 	Log_SetTopicStatus	(CH3_BringFoci,		LOG_RUNNING);
-	B_LogEntry			(CH3_BringFoci,"Tras entregarle a Saturas el foco y el almanaque del campamento del pantano, me ha pedido que encuentre los cuatro focos de piedra restantes, que aún no obran en poder de los Magos del Agua.");
-	B_LogEntry			(CH3_BringFoci,"Saturas me ha dado un viejo mapa con los últimos paraderos de los focos de piedra, así como un pergamino mágico que me teleportará de vuelta con los Magos del Agua.");
+	B_LogEntry			(CH3_BringFoci,"Tras entregarle a Saturas el foco y el almanaque del campamento del pantano, me ha pedido que encuentre los cuatro focos de piedra restantes, que aÃºn no obran en poder de los Magos del Agua.");
+	B_LogEntry			(CH3_BringFoci,"Saturas me ha dado un viejo mapa con los Ãºltimos paraderos de los focos de piedra, asÃ­ como un pergamino mÃ¡gico que me teleportarÃ¡ de vuelta con los Magos del Agua.");
 	B_LogEntry			(CH3_BringFoci,"Riordian, uno de los Magos del Agua, ha elaborado algunas pociones para mis viajes. Puedo recogerlas en su laboratorio de alquimia, en el nivel superior del Campamento Nuevo.");
 
 	//-------- Mission auf RUNNING setzen --------

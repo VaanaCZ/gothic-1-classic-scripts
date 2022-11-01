@@ -30,7 +30,7 @@ INSTANCE  Grd_260_Drake_Gefahr (C_INFO)	//E1
 	information		= Grd_260_Drake_Gefahr_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "¿A qué tengo que estar atento en la mina?";
+	description		= "Â¿A quÃ© tengo que estar atento en la mina?";
 };
 
 FUNC INT  Grd_260_Drake_Gefahr_Condition()
@@ -41,12 +41,12 @@ FUNC INT  Grd_260_Drake_Gefahr_Condition()
 func VOID  Grd_260_Drake_Gefahr_Info()
 {
 
-	AI_Output			(other,self,"Grd_260_Drake_Gefahr_Info_15_01");//¿A qué tengo que estar atento en la mina?
+	AI_Output			(other,self,"Grd_260_Drake_Gefahr_Info_15_01");//Â¿A quÃ© tengo que estar atento en la mina?
 	AI_Output			(self,other,"Grd_260_Drake_Gefahr_Info_11_02");//Sobre todo a los reptadores de la mina. Son bestias peligrosas.
-	AI_Output			(self,other,"Grd_260_Drake_Gefahr_Info_11_03");//Tuvimos que abandonar unas cuantas cuevas por su culpa. También se han comido a unos cuantos cavadores.
-	AI_Output			(other,self,"Grd_260_Drake_Gefahr_Info_15_04");//Háblame de los reptadores.
+	AI_Output			(self,other,"Grd_260_Drake_Gefahr_Info_11_03");//Tuvimos que abandonar unas cuantas cuevas por su culpa. TambiÃ©n se han comido a unos cuantos cavadores.
+	AI_Output			(other,self,"Grd_260_Drake_Gefahr_Info_15_04");//HÃ¡blame de los reptadores.
 	AI_Output			(self,other,"Grd_260_Drake_Gefahr_Info_11_05");//Tengo la boca tan seca...
-	AI_Output			(self,other,"Grd_260_Drake_Gefahr_Info_11_06");//Tráeme una cerveza y te hablaré de los reptadores.
+	AI_Output			(self,other,"Grd_260_Drake_Gefahr_Info_11_06");//TrÃ¡eme una cerveza y te hablarÃ© de los reptadores.
 
 
 };
@@ -73,7 +73,7 @@ FUNC void Grd_260_Drake_Crawler_Okay_Info()
 {
 	if	( Npc_HasItems (hero,ItFobeer) )
 	{
-		AI_Output			(hero,self,"Grd_260_Drake_Crawler_Okay_15_01");//¡Ten, bebe a mi salud!
+		AI_Output			(hero,self,"Grd_260_Drake_Crawler_Okay_15_01");//Â¡Ten, bebe a mi salud!
 
 		B_GiveInvItems		(hero, self, ItFoBeer, 1);
 		if ( C_BodystateContains(self, BS_SIT) )
@@ -84,14 +84,14 @@ FUNC void Grd_260_Drake_Crawler_Okay_Info()
 		AI_UseItem			(self,ItFobeer);
 
 		AI_Output			(self,hero,"Grd_260_Drake_Crawler_Okay_11_02");//Gracias. Bueno, los reptadores viven en grandes manadas, sobre todo en las cavernas laterales.
-		AI_Output			(self,hero,"Grd_260_Drake_Crawler_Okay_11_03");//Todavía no nos han atacado en el pozo principal. Si te encuentras alguna vez con uno, ¡huye!
-		AI_Output			(self,hero,"Grd_260_Drake_Crawler_Okay_11_04");//O apoya la espalda contra la pared. ¡De ese modo puedes tener una oportunidad!
+		AI_Output			(self,hero,"Grd_260_Drake_Crawler_Okay_11_03");//TodavÃ­a no nos han atacado en el pozo principal. Si te encuentras alguna vez con uno, Â¡huye!
+		AI_Output			(self,hero,"Grd_260_Drake_Crawler_Okay_11_04");//O apoya la espalda contra la pared. Â¡De ese modo puedes tener una oportunidad!
 
 		//Grd_260_Drake_Crawler_Okay.permanent = 0;
 	}
 	else
 	{
-		AI_Output			(self,other,"Grd_260_Drake_Crawler_Okay_11_06");//¿Estás de broma? Vuelve cuando tengas cerveza.
+		AI_Output			(self,other,"Grd_260_Drake_Crawler_Okay_11_06");//Â¿EstÃ¡s de broma? Vuelve cuando tengas cerveza.
    		Grd_260_Drake_Crawler_Okay.permanent = 1;
    };
 };
@@ -104,7 +104,7 @@ instance  Grd_260_Drake_Mine (C_INFO) //E1
 	information		= Grd_260_Drake_Mine_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "¿Puedes contarme algo de la mina?";
+	description		= "Â¿Puedes contarme algo de la mina?";
 };
 
 FUNC int  Grd_260_Drake_Mine_Condition()
@@ -113,10 +113,10 @@ FUNC int  Grd_260_Drake_Mine_Condition()
 };
 func void Grd_260_Drake_Mine_Info ()
 {
-	AI_Output			(other,self,"Grd_260_Drake_Mine_Info_15_01");//¿Puedes contarme algo de la mina?
+	AI_Output			(other,self,"Grd_260_Drake_Mine_Info_15_01");//Â¿Puedes contarme algo de la mina?
 	AI_Output			(self,other,"Grd_260_Drake_Mine_Info_11_02");//Bueno, la parte en la que estamos es el pozo principal. Un sistema de pasarelas lleva hasta el fondo.
-	AI_Output			(self,other,"Grd_260_Drake_Mine_Info_11_03");//Y por todas partes se cava para extraer mineral. Pero tienes que tener cuidado, también hay allí muchos reptadores.
-	AI_Output			(self,other,"Grd_260_Drake_Mine_Info_11_04");//En el fondo está la fundición. Fundimos parte del mineral para usarlo aquí mismo.
+	AI_Output			(self,other,"Grd_260_Drake_Mine_Info_11_03");//Y por todas partes se cava para extraer mineral. Pero tienes que tener cuidado, tambiÃ©n hay allÃ­ muchos reptadores.
+	AI_Output			(self,other,"Grd_260_Drake_Mine_Info_11_04");//En el fondo estÃ¡ la fundiciÃ³n. Fundimos parte del mineral para usarlo aquÃ­ mismo.
 
 
 };
@@ -128,7 +128,7 @@ instance  Grd_260_Drake_Mine_Mehr (C_INFO) //E1
 	information		= Grd_260_Drake_Mine_Mehr_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "¡Háblame más de la mina!";
+	description		= "Â¡HÃ¡blame mÃ¡s de la mina!";
 };
 
 FUNC int  Grd_260_Drake_Mine_Mehr_Condition()
@@ -140,8 +140,8 @@ FUNC int  Grd_260_Drake_Mine_Mehr_Condition()
 };
 func void  Grd_260_Drake_Mine_Mehr_Info	()
 {
-	AI_Output			(other,self,"Grd_260_Drake_Mine_Mehr_Info_15_01");//¡Cuéntame más cosas!
-	AI_Output			(self,other,"Grd_260_Drake_Mine_Mehr_Info_11_02");//Si quieres saber más, ve a Viper. Él es el fundidor.
+	AI_Output			(other,self,"Grd_260_Drake_Mine_Mehr_Info_15_01");//Â¡CuÃ©ntame mÃ¡s cosas!
+	AI_Output			(self,other,"Grd_260_Drake_Mine_Mehr_Info_11_02");//Si quieres saber mÃ¡s, ve a Viper. Ã‰l es el fundidor.
 	AI_Output			(self,other,"Grd_260_Drake_Mine_Mehr_Info_11_03");//O habla con Ian. Es el jefe y organiza todo en la mina.
 	
 };
@@ -154,7 +154,7 @@ instance  Grd_260_Drake_Ian	(C_INFO) //E1
 	information		= Grd_260_Drake_Ian_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "¿Dónde puedo encontrar a Ian?";
+	description		= "Â¿DÃ³nde puedo encontrar a Ian?";
 };
 
 FUNC int  Grd_260_Drake_Ian_Condition()
@@ -167,11 +167,11 @@ FUNC int  Grd_260_Drake_Ian_Condition()
 };
 FUNC void  Grd_260_Drake_Ian_Info()
 {
-	AI_Output			(other,self,"Grd_260_Drake_Ian_Info_15_01");//¿Dónde puedo encontrar a Ian?
-	AI_Output			(self,other,"Grd_260_Drake_Ian_Info_11_02");//Está en medio del pozo principal, junto al almacén.
-	AI_Output			(self,other,"Grd_260_Drake_Ian_Info_11_03");//Oh, una cosa más; conoces a Thorus, ¿no? ¡Olvídate de él!
-	AI_Output			(self,other,"Grd_260_Drake_Ian_Info_11_04");//Sólo hay una persona que manda aquí, y es Ian. Él es el jefe.
-	AI_Output			(self,other,"Grd_260_Drake_Ian_Info_11_05");//Si te enfrentas a él, te enfrentarás a todos nosotros. ¿Te enteras?
+	AI_Output			(other,self,"Grd_260_Drake_Ian_Info_15_01");//Â¿DÃ³nde puedo encontrar a Ian?
+	AI_Output			(self,other,"Grd_260_Drake_Ian_Info_11_02");//EstÃ¡ en medio del pozo principal, junto al almacÃ©n.
+	AI_Output			(self,other,"Grd_260_Drake_Ian_Info_11_03");//Oh, una cosa mÃ¡s; conoces a Thorus, Â¿no? Â¡OlvÃ­date de Ã©l!
+	AI_Output			(self,other,"Grd_260_Drake_Ian_Info_11_04");//SÃ³lo hay una persona que manda aquÃ­, y es Ian. Ã‰l es el jefe.
+	AI_Output			(self,other,"Grd_260_Drake_Ian_Info_11_05");//Si te enfrentas a Ã©l, te enfrentarÃ¡s a todos nosotros. Â¿Te enteras?
 };	 
 
 /*------------------------------------------------------------------------
@@ -197,10 +197,10 @@ FUNC int  Grd_260_Drake_GARDEAUFNAHME_Condition()
 };
 func void  Grd_260_Drake_GARDEAUFNAHME_Info()
 {
-	AI_Output (self, other,"Grd_260_Drake_GARDEAUFNAHME_Info_11_01"); //¡Oye, hiciste un buen trabajo con los reptadores! ¡Te mereces que se te admita en la guardia!
-	AI_Output (self, other,"Grd_260_Drake_GARDEAUFNAHME_Info_11_02"); //¡Ve al Campamento Viejo y pídeselo a Thorus!
+	AI_Output (self, other,"Grd_260_Drake_GARDEAUFNAHME_Info_11_01"); //Â¡Oye, hiciste un buen trabajo con los reptadores! Â¡Te mereces que se te admita en la guardia!
+	AI_Output (self, other,"Grd_260_Drake_GARDEAUFNAHME_Info_11_02"); //Â¡Ve al Campamento Viejo y pÃ­deselo a Thorus!
 
 	Log_CreateTopic (GE_BecomeGuard,LOG_NOTE);
-	B_LogEntry (GE_BecomeGuard,"Debo hablar con Thorus tan pronto como haya vuelto con los huevos. Quizá él me deje unirme a la guardia.");
+	B_LogEntry (GE_BecomeGuard,"Debo hablar con Thorus tan pronto como haya vuelto con los huevos. QuizÃ¡ Ã©l me deje unirme a la guardia.");
 };
 

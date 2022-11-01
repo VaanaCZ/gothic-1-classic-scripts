@@ -4,7 +4,7 @@
 
 PROTOTYPE Mst_Default_Swampshark(C_Npc)			
 {
-	name							=	"Tiburón de la ciénaga";
+	name							=	"TiburÃ³n de la ciÃ©naga";
 	guild							=	GIL_SWAMPSHARK;
 	aivar[AIV_MM_REAL_ID]			= 	ID_SWAMPSHARK;
 	level							=	40;
@@ -77,7 +77,7 @@ INSTANCE Swampshark	(Mst_Default_Swampshark)
 
 INSTANCE HurtSwampshark(Mst_Default_Swampshark)
 {
-	name							=	"Tiburón de la ciénaga herido";
+	name							=	"TiburÃ³n de la ciÃ©naga herido";
 	attribute	[ATR_HITPOINTS]		=	20;
 
 	Set_Swampshark_Visuals();

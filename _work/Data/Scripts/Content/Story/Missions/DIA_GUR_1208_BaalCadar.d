@@ -23,7 +23,7 @@ FUNC VOID DIA_BaalCadar_Exit_Info()
 };
 
 // ************************************************************
-// 					NICHT ansprechbar (Ungl‰ubiger) 
+// 					NICHT ansprechbar (Ungl√§ubiger) 
 // ************************************************************
 	var int BaalCadar_Ansprechbar;
 	var int BaalCadar_Sakrileg;
@@ -54,28 +54,28 @@ FUNC VOID DIA_BaalCadar_NoTalk_Info()
 {	
 	Info_ClearChoices 	(DIA_BaalCadar_NoTalk);
 	Info_Addchoice 		(DIA_BaalCadar_NoTalk,DIALOG_ENDE					,DIA_BaalCadar_NoTalk_ENDE);
-	Info_Addchoice 		(DIA_BaalCadar_NoTalk,"øVa todo bien, amigo?",DIA_BaalCadar_NoTalk_Imp);
-	Info_Addchoice 		(DIA_BaalCadar_NoTalk,"°Que el Durmiente te acompaÒe!",DIA_BaalCadar_NoTalk_Sleeper);
-	Info_Addchoice 		(DIA_BaalCadar_NoTalk,"°Hola! °Soy nuevo!",DIA_BaalCadar_NoTalk_Hi);
+	Info_Addchoice 		(DIA_BaalCadar_NoTalk,"¬øVa todo bien, amigo?",DIA_BaalCadar_NoTalk_Imp);
+	Info_Addchoice 		(DIA_BaalCadar_NoTalk,"¬°Que el Durmiente te acompa√±e!",DIA_BaalCadar_NoTalk_Sleeper);
+	Info_Addchoice 		(DIA_BaalCadar_NoTalk,"¬°Hola! ¬°Soy nuevo!",DIA_BaalCadar_NoTalk_Hi);
 };
 
 func void DIA_BaalCadar_NoTalk_Hi()
 {
-	AI_Output (other, self,"DIA_BaalCadar_NoTalk_Hi_15_00"); //°Hola! °Soy nuevo aquÌ!
+	AI_Output (other, self,"DIA_BaalCadar_NoTalk_Hi_15_00"); //¬°Hola! ¬°Soy nuevo aqu√≠!
 	AI_Output (self, other,"DIA_BaalCadar_NoTalk_Hi_02_01"); //[Suspiro]
 	BaalCadar_Sakrileg = TRUE;
 };
 
 func void DIA_BaalCadar_NoTalk_Sleeper()
 {
-	AI_Output (other, self,"DIA_BaalCadar_NoTalk_Sleeper_15_00"); //°Que el Durmiente sea contigo!
+	AI_Output (other, self,"DIA_BaalCadar_NoTalk_Sleeper_15_00"); //¬°Que el Durmiente sea contigo!
 	AI_Output (self, other,"DIA_BaalCadar_NoTalk_Sleeper_02_01"); //[Suspiro]
 	BaalCadar_Sakrileg = TRUE;
 };
 
 func void DIA_BaalCadar_NoTalk_Imp()
 {
-	AI_Output (other, self,"DIA_BaalCadar_NoTalk_Imp_15_00"); //øHay alg˙n problema, amigo?
+	AI_Output (other, self,"DIA_BaalCadar_NoTalk_Imp_15_00"); //¬øHay alg√∫n problema, amigo?
 	AI_Output (self, other,"DIA_BaalCadar_NoTalk_Imp_02_01"); //[Suspiro]
 	BaalCadar_Sakrileg = TRUE;
 };
@@ -88,13 +88,13 @@ func void DIA_BaalCadar_NoTalk_ENDE()
 /*
 
 
-	AI_Output (self, other,"Sit_1_PSI_BaalCadar_HypnoticTeacher_2FuncNo_02_01"); //Du solltest deinen Weg mit Bedacht w‰hlen und nach reiflicher ‹berlegung. 
+	AI_Output (self, other,"Sit_1_PSI_BaalCadar_HypnoticTeacher_2FuncNo_02_01"); //Du solltest deinen Weg mit Bedacht w√§hlen und nach reiflicher √úberlegung. 
 	AI_Output (self, other,"Sit_1_PSI_BaalCadar_HypnoticTeacher_2FuncNo_02_02"); //Bedenke wie du entscheidest. In den anderen Lagern bekommst zwar Schutz und Nahrung, aber ist es das, was du willst?
-	AI_Output (self, other,"Sit_1_PSI_BaalCadar_HypnoticTeacher_2FuncNo_15_03"); //Was erwartet mich, was es wert w‰re, zu euch zu kommen?
-	AI_Output (self, other,"Sit_1_PSI_BaalCadar_HypnoticTeacher_2FuncNo_02_04"); //Ich kˆnnte dir jetzt erz‰hlen, das die Templer einen unbezwinglichen Willen haben,das die magische Macht der Gurus, die Vorstellungskraft von Feuer- und Wassermagiern bei weitem ¸bersteigt.
+	AI_Output (self, other,"Sit_1_PSI_BaalCadar_HypnoticTeacher_2FuncNo_15_03"); //Was erwartet mich, was es wert w√§re, zu euch zu kommen?
+	AI_Output (self, other,"Sit_1_PSI_BaalCadar_HypnoticTeacher_2FuncNo_02_04"); //Ich k√∂nnte dir jetzt erz√§hlen, das die Templer einen unbezwinglichen Willen haben,das die magische Macht der Gurus, die Vorstellungskraft von Feuer- und Wassermagiern bei weitem √ºbersteigt.
 	AI_Output (self, other,"Sit_1_PSI_BaalCadar_HypnoticTeacher_2FuncNo_02_05"); //Das unsere Nahrung auch satt macht. Aber das ist es nicht, was diese Gemeinschaft ausmacht.
 	AI_Output (self, other,"Sit_1_PSI_BaalCadar_HypnoticTeacher_2FuncNo_02_06"); //Was dich hier erwartet, ist die Gabe. Du wirst einen Weg beschreiten, der dir sehr viel abverlangt.
-	AI_Output (self, other,"Sit_1_PSI_BaalCadar_HypnoticTeacher_2FuncNo_02_07"); //Aber das was du erreichen wirst ist eine Grˆﬂe, eine Macht die dir Erleuchtung schenkt. Eine Macht, die dich zur Freiheit f¸hrt.
+	AI_Output (self, other,"Sit_1_PSI_BaalCadar_HypnoticTeacher_2FuncNo_02_07"); //Aber das was du erreichen wirst ist eine Gr√∂√üe, eine Macht die dir Erleuchtung schenkt. Eine Macht, die dich zur Freiheit f√ºhrt.
 	AI_Output (self, other,"Sit_1_PSI_BaalCadar_HypnoticTeacher_2FuncNo_02_08"); //Ist es nicht das, was du willst?... Freiheit?
 	AI_Output (self, other,"Sit_1_PSI_BaalCadar_HypnoticTeacher_2FuncNo_02_09"); //Also solltest du nicht die Frage stellen, warum du her kommen solltest, die Frage ist viel mehr, warum solltest du nicht?
 	Log_CreateTopic (GE_TeacherPSI,LOG_NOTE);
@@ -129,10 +129,10 @@ FUNC INT DIA_BaalCadar_SleepSpell_Condition()
 
 FUNC VOID DIA_BaalCadar_SleepSpell_Info()
 {
-	AI_Output (self, other,"DIA_BaalCadar_SleepSpell_02_00"); //øQuÈ est·s haciendo? Estoy intentando meditar con mis discÌpulos.
-	AI_Output (self, other,"DIA_BaalCadar_SleepSpell_02_01"); //øQuiÈn te enseÒÛ a utilizar los poderes m·gicos del Durmiente?
-	AI_Output (other, self,"DIA_BaalCadar_SleepSpell_15_02"); //Nadie. Fue muy f·cil.
-	AI_Output (self, other,"DIA_BaalCadar_SleepSpell_02_03"); //Pareces ser un estudiante inteligente. Yo te instruirÈ.
+	AI_Output (self, other,"DIA_BaalCadar_SleepSpell_02_00"); //¬øQu√© est√°s haciendo? Estoy intentando meditar con mis disc√≠pulos.
+	AI_Output (self, other,"DIA_BaalCadar_SleepSpell_02_01"); //¬øQui√©n te ense√±√≥ a utilizar los poderes m√°gicos del Durmiente?
+	AI_Output (other, self,"DIA_BaalCadar_SleepSpell_15_02"); //Nadie. Fue muy f√°cil.
+	AI_Output (self, other,"DIA_BaalCadar_SleepSpell_02_03"); //Pareces ser un estudiante inteligente. Yo te instruir√©.
 
 	BaalCadar_Ansprechbar = TRUE;
 	if	(Npc_GetTrueGuild(hero) == GIL_NONE)
@@ -140,7 +140,7 @@ FUNC VOID DIA_BaalCadar_SleepSpell_Info()
 		Log_CreateTopic		(CH1_JoinPsi,	LOG_MISSION);
 		Log_SetTopicStatus	(CH1_JoinPsi,	LOG_RUNNING);
 	};
-	B_LogEntry		(CH1_JoinPsi,"°Baal Cadar piensa que soy un discÌpulo receptivo!");
+	B_LogEntry		(CH1_JoinPsi,"¬°Baal Cadar piensa que soy un disc√≠pulo receptivo!");
 	B_GiveXP		(XP_ImpressBaalCadar);
 };
 
@@ -154,7 +154,7 @@ instance  Gur_1208_BaalCadar_Teach (C_INFO)
 	condition		= Gur_1208_BaalCadar_Teach_Condition;
 	information		= Gur_1208_BaalCadar_Teach_Info;
 	permanent		= 1;
-	description		= "Me gustarÌa aprender a aumentar el poder de mi magia."; 
+	description		= "Me gustar√≠a aprender a aumentar el poder de mi magia."; 
 };
 
 FUNC int  Gur_1208_BaalCadar_Teach_Condition()
@@ -167,13 +167,13 @@ FUNC int  Gur_1208_BaalCadar_Teach_Condition()
 };
 FUNC void  Gur_1208_BaalCadar_Teach_Info()
 {
-	AI_Output (other, self,"Gur_1208_BaalCadar_Teach_Info_15_01"); //Me gustarÌa aprender a incrementar el poder de mi magia.
-	AI_Output (self, other,"Gur_1208_BaalCadar_Teach_Info_02_02"); //La clave reside en el poder de tu espÌritu.
+	AI_Output (other, self,"Gur_1208_BaalCadar_Teach_Info_15_01"); //Me gustar√≠a aprender a incrementar el poder de mi magia.
+	AI_Output (self, other,"Gur_1208_BaalCadar_Teach_Info_02_02"); //La clave reside en el poder de tu esp√≠ritu.
 	
 	if (log_baalcadartrain == FALSE) 
 	{
 		Log_CreateTopic   	(GE_TeacherPSI,LOG_NOTE);
-		B_LogEntry			(GE_TeacherPSI,"El Gur˙ Baal Cadar puede ayudarme a incrementar mi MANA.");
+		B_LogEntry			(GE_TeacherPSI,"El Gur√∫ Baal Cadar puede ayudarme a incrementar mi MANA.");
 		log_baalcadartrain = TRUE;
 	};
 	Info_ClearChoices	(Gur_1208_BaalCadar_Teach);
@@ -216,7 +216,7 @@ instance  Gur_1208_BaalCadar_FIRSTTEST (C_INFO)
 	information		= Gur_1208_BaalCadar_FIRSTTEST_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "EnsÈÒame la magia de las runas."; 
+	description		= "Ens√©√±ame la magia de las runas."; 
 };
 
 FUNC int  Gur_1208_BaalCadar_FIRSTTEST_Condition()
@@ -229,12 +229,12 @@ FUNC int  Gur_1208_BaalCadar_FIRSTTEST_Condition()
 };
 FUNC void  Gur_1208_BaalCadar_FIRSTTEST_Info()
 {
-	AI_Output (other, self,"Gur_1208_BaalCadar_FIRSTTEST_Info_15_01"); //EnsÈÒame la magia de las runas.
+	AI_Output (other, self,"Gur_1208_BaalCadar_FIRSTTEST_Info_15_01"); //Ens√©√±ame la magia de las runas.
 	AI_Output (self, other,"Gur_1208_BaalCadar_FIRSTTEST_Info_02_02"); //Muchos son los que han aprendido el lenguaje de las runas, pero muy pocos los que han comprendido su magia.
-	AI_Output (self, other,"Gur_1208_BaalCadar_FIRSTTEST_Info_02_03"); //IntentarÈ instruirte.
+	AI_Output (self, other,"Gur_1208_BaalCadar_FIRSTTEST_Info_02_03"); //Intentar√© instruirte.
 	
 	Log_CreateTopic (GE_TeacherPSI,LOG_NOTE);
-	B_LogEntry    	(GE_TeacherPSI,"Baal Cadar puede enseÒarme los CÕRCULOS m·gicos de la magia r˙nica.");
+	B_LogEntry    	(GE_TeacherPSI,"Baal Cadar puede ense√±arme los C√çRCULOS m√°gicos de la magia r√∫nica.");
 		
 };
 
@@ -249,7 +249,7 @@ instance  Gur_1208_BaalCadar_KREIS1 (C_INFO)
 	information		= Gur_1208_BaalCadar_KREIS1_Info;
 	important		= 0;
 	permanent		= 1;
-	description		= "Estoy preparado para ingresar en el Primer CÌrculo."; 
+	description		= "Estoy preparado para ingresar en el Primer C√≠rculo."; 
 };
 
 FUNC int  Gur_1208_BaalCadar_KREIS1_Condition()
@@ -264,14 +264,14 @@ FUNC int  Gur_1208_BaalCadar_KREIS1_Condition()
 };
 FUNC void  Gur_1208_BaalCadar_KREIS1_Info()
 {
-	AI_Output (other, self,"Gur_1208_BaalCadar_KREIS1_Info_15_01"); //Estoy preparado para entrar en el Primer CÌrculo.
+	AI_Output (other, self,"Gur_1208_BaalCadar_KREIS1_Info_15_01"); //Estoy preparado para entrar en el Primer C√≠rculo.
 	if (B_GiveSkill(other,NPC_TALENT_MAGE , 1, LPCOST_TALENT_MAGE_1))
 	{
 		AI_Output (self, other,"Gur_1208_BaalCadar_KREIS1_Info_02_02"); //Escucha mis palabras.
-		AI_Output (self, other,"Gur_1208_BaalCadar_KREIS1_Info_02_03"); //Hace mucho tiempo, el Durmiente apareciÛ y enviÛ una visiÛn a la humanidad.
+		AI_Output (self, other,"Gur_1208_BaalCadar_KREIS1_Info_02_03"); //Hace mucho tiempo, el Durmiente apareci√≥ y envi√≥ una visi√≥n a la humanidad.
 		AI_Output (self, other,"Gur_1208_BaalCadar_KREIS1_Info_02_04"); //Pero muchos se negaron a ver sus signos; estaban cegados por las ansias de mineral.
-		AI_Output (self, other,"Gur_1208_BaalCadar_KREIS1_Info_02_05"); //SÛlo Y'Berion y otros pocos emprendieron el camino y fundaron la Hermandad.
-		AI_Output (self, other,"Gur_1208_BaalCadar_KREIS1_Info_02_06"); //El Primer Circulo naciÛ en el momento en el que obedecieron la llamada del Durmiente. La magia de las runas podr· ser comprendida por cualquier seguidor del Durmiente.
+		AI_Output (self, other,"Gur_1208_BaalCadar_KREIS1_Info_02_05"); //S√≥lo Y'Berion y otros pocos emprendieron el camino y fundaron la Hermandad.
+		AI_Output (self, other,"Gur_1208_BaalCadar_KREIS1_Info_02_06"); //El Primer Circulo naci√≥ en el momento en el que obedecieron la llamada del Durmiente. La magia de las runas podr√° ser comprendida por cualquier seguidor del Durmiente.
 		Gur_1208_BaalCadar_KREIS1.permanent = 0;
 	};
 	AI_StopProcessInfos	( self );
@@ -288,7 +288,7 @@ instance  Gur_1208_BaalCadar_KREIS2 (C_INFO)
 	information		= Gur_1208_BaalCadar_KREIS2_Info;
 	important		= 0;
 	permanent		= 1;
-	description		= "Estoy preparado para ingresar en el Segundo CÌrculo."; 
+	description		= "Estoy preparado para ingresar en el Segundo C√≠rculo."; 
 };
 
 FUNC int  Gur_1208_BaalCadar_KREIS2_Condition()
@@ -302,14 +302,14 @@ FUNC int  Gur_1208_BaalCadar_KREIS2_Condition()
 };
 FUNC void  Gur_1208_BaalCadar_KREIS2_Info()
 {
-	AI_Output (other, self,"Gur_1208_BaalCadar_KREIS2_Info_15_01"); //Estoy preparado para entrar en el Segundo CÌrculo.
+	AI_Output (other, self,"Gur_1208_BaalCadar_KREIS2_Info_15_01"); //Estoy preparado para entrar en el Segundo C√≠rculo.
 	if (B_GiveSkill(other,NPC_TALENT_MAGE , 2,LPCOST_TALENT_MAGE_2))
 	{
 		AI_Output (self, other,"Gur_1208_BaalCadar_KREIS2_Info_02_02"); //Entonces escucha y comprende.
-		AI_Output (self, other,"Gur_1208_BaalCadar_KREIS2_Info_02_03"); //El Durmiente guiÛ a Y'Berion y sus fieles discÌpulos hasta este lugar y aquÌ  se establecieron.
-		AI_Output (self, other,"Gur_1208_BaalCadar_KREIS2_Info_02_04"); //Trabajaron sin descanso, durante dÌas, semanas y meses. El Campamento creciÛ. M·s y m·s hombres se unÌan a ellos, obedeciendo a la llamada del Durmiente.
+		AI_Output (self, other,"Gur_1208_BaalCadar_KREIS2_Info_02_03"); //El Durmiente gui√≥ a Y'Berion y sus fieles disc√≠pulos hasta este lugar y aqu√≠  se establecieron.
+		AI_Output (self, other,"Gur_1208_BaalCadar_KREIS2_Info_02_04"); //Trabajaron sin descanso, durante d√≠as, semanas y meses. El Campamento creci√≥. M√°s y m√°s hombres se un√≠an a ellos, obedeciendo a la llamada del Durmiente.
 		AI_Output (self, other,"Gur_1208_BaalCadar_KREIS2_Info_02_05"); //Todos juntos intentaron entrar en contacto con el Durmiente en un nivel espiritual.
-		AI_Output (self, other,"Gur_1208_BaalCadar_KREIS2_Info_02_06"); //AsÌ naciÛ el Segundo CÌrculo.
+		AI_Output (self, other,"Gur_1208_BaalCadar_KREIS2_Info_02_06"); //As√≠ naci√≥ el Segundo C√≠rculo.
 		Gur_1208_BaalCadar_KREIS2.permanent = 0;
 	};
 	AI_StopProcessInfos	( self );
@@ -325,7 +325,7 @@ instance  Gur_1208_BaalCadar_KREIS3 (C_INFO)
 	information		= Gur_1208_BaalCadar_KREIS3_Info;
 	important		= 0;
 	permanent		= 1;
-	description		= "Estoy preparado para ingresar en el Tercer CÌrculo."; 
+	description		= "Estoy preparado para ingresar en el Tercer C√≠rculo."; 
 };
 
 FUNC int  Gur_1208_BaalCadar_KREIS3_Condition()
@@ -339,14 +339,14 @@ FUNC int  Gur_1208_BaalCadar_KREIS3_Condition()
 };
 FUNC void  Gur_1208_BaalCadar_KREIS3_Info()
 {
-	AI_Output (other, self,"Gur_1208_BaalCadar_KREIS3_Info_15_01"); //Estoy preparado para entrar en el Tercer CÌrculo.
+	AI_Output (other, self,"Gur_1208_BaalCadar_KREIS3_Info_15_01"); //Estoy preparado para entrar en el Tercer C√≠rculo.
 	if (B_GiveSkill(other,NPC_TALENT_MAGE , 3, LPCOST_TALENT_MAGE_3))
 	{
-		AI_Output (self, other,"Gur_1208_BaalCadar_KREIS3_Info_02_02"); //Presta atenciÛn a mis palabras.
-		AI_Output (self, other,"Gur_1208_BaalCadar_KREIS3_Info_02_03"); //Las visiones se fueron haciendo m·s claras, pero el poder espiritual de la Hermandad no era suficiente para establecer contacto.
-		AI_Output (self, other,"Gur_1208_BaalCadar_KREIS3_Info_02_04"); //Uno de los Gur˙s, un alquimista, resolviÛ el problema. ElaborÛ una pociÛn extraÌda de las secreciones de un reptador. Los hermanos la ingirieron antes de rezar sus oraciones y sus poderes espirituales se unieron por primera vez.
+		AI_Output (self, other,"Gur_1208_BaalCadar_KREIS3_Info_02_02"); //Presta atenci√≥n a mis palabras.
+		AI_Output (self, other,"Gur_1208_BaalCadar_KREIS3_Info_02_03"); //Las visiones se fueron haciendo m√°s claras, pero el poder espiritual de la Hermandad no era suficiente para establecer contacto.
+		AI_Output (self, other,"Gur_1208_BaalCadar_KREIS3_Info_02_04"); //Uno de los Gur√∫s, un alquimista, resolvi√≥ el problema. Elabor√≥ una poci√≥n extra√≠da de las secreciones de un reptador. Los hermanos la ingirieron antes de rezar sus oraciones y sus poderes espirituales se unieron por primera vez.
 		AI_Output (self, other,"Gur_1208_BaalCadar_KREIS3_Info_02_05"); //Al mismo tiempo, los novicios se dirigieron hacia los Campamentos para predicar la palabra del Durmiente y convencer de su veracidad a los infieles.
-		AI_Output (self, other,"Gur_1208_BaalCadar_KREIS3_Info_02_06"); //AsÌ se logrÛ el Tercer CÌrculo.
+		AI_Output (self, other,"Gur_1208_BaalCadar_KREIS3_Info_02_06"); //As√≠ se logr√≥ el Tercer C√≠rculo.
 	};
 	AI_StopProcessInfos	( self );
 };
@@ -361,7 +361,7 @@ instance  Gur_1208_BaalCadar_KREIS4 (C_INFO)
 	information		= Gur_1208_BaalCadar_KREIS4_Info;
 	important		= 0;
 	permanent		= 1;
-	description		= "Estoy preparado para ingresar en el Cuarto CÌrculo."; 
+	description		= "Estoy preparado para ingresar en el Cuarto C√≠rculo."; 
 };
 
 FUNC int  Gur_1208_BaalCadar_KREIS4_Condition()
@@ -375,13 +375,13 @@ FUNC int  Gur_1208_BaalCadar_KREIS4_Condition()
 };
 FUNC void  Gur_1208_BaalCadar_KREIS4_Info()
 {
-	AI_Output (other, self,"Gur_1208_BaalCadar_KREIS4_Info_15_01"); //Estoy preparado para entrar en el Cuarto CÌrculo.
+	AI_Output (other, self,"Gur_1208_BaalCadar_KREIS4_Info_15_01"); //Estoy preparado para entrar en el Cuarto C√≠rculo.
 	if (B_GiveSkill(other,NPC_TALENT_MAGE , 4, LPCOST_TALENT_MAGE_4))
 	{
-		AI_Output (self, other,"Gur_1208_BaalCadar_KREIS4_Info_02_02"); //Ha pasado mucho tiempo desde la fundaciÛn del Campamento. Han cambiado muchas cosas.
+		AI_Output (self, other,"Gur_1208_BaalCadar_KREIS4_Info_02_02"); //Ha pasado mucho tiempo desde la fundaci√≥n del Campamento. Han cambiado muchas cosas.
 		AI_Output (self, other,"Gur_1208_BaalCadar_KREIS4_Info_02_03"); //La fe ha crecido, ha sido reforzada y se ha difundido.
 		AI_Output (self, other,"Gur_1208_BaalCadar_KREIS4_Info_02_04"); //No hemos olvidado nuestro objetivo. No hemos renunciado a intentar invocar al Durmiente.
-		AI_Output (self, other,"Gur_1208_BaalCadar_KREIS4_Info_02_05"); //El Cuarto CÌrculo est· representado por la perseverancia y la estabilidad de la fe.
+		AI_Output (self, other,"Gur_1208_BaalCadar_KREIS4_Info_02_05"); //El Cuarto C√≠rculo est√° representado por la perseverancia y la estabilidad de la fe.
 		AI_Output (self, other,"Gur_1208_BaalCadar_KREIS4_Info_02_06"); //Ahora ya sabes todo lo que un hermano necesita saber acerca de la magia. Has sido un buen estudiante.
 		Gur_1208_BaalCadar_KREIS4.permanent = 0;
 	};
@@ -414,10 +414,10 @@ FUNC void  Gur_1208_BaalCadar_SELLSTUFF_Info()
 	if  (log_baalcadarsell == FALSE)
 	{
 		Log_CreateTopic   	(GE_TraderPSI,LOG_NOTE);
-		B_LogEntry			(GE_TraderPSI,"El Gur˙ Baal Cadar vende RUNAS, PERGAMINOS M¡GICOS, POCIONES, AMULETOS y ANILLOS.");
+		B_LogEntry			(GE_TraderPSI,"El Gur√∫ Baal Cadar vende RUNAS, PERGAMINOS M√ÅGICOS, POCIONES, AMULETOS y ANILLOS.");
 		log_baalcadarsell = TRUE;
 	};	
-	AI_Output (other, self,"Gur_1208_BaalCadar_SELLSTUFF_Info_15_01"); //Quiero obtener escritos m·gicos.
+	AI_Output (other, self,"Gur_1208_BaalCadar_SELLSTUFF_Info_15_01"); //Quiero obtener escritos m√°gicos.
 
 };  
 

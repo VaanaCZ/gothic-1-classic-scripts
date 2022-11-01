@@ -37,7 +37,7 @@ INSTANCE Info_SFB_1_EinerVonEuchWerden (C_INFO)
 	condition	= Info_SFB_1_EinerVonEuchWerden_Condition;
 	information	= Info_SFB_1_EinerVonEuchWerden_Info;
 	permanent	= 1;
-	description = "¿Cómo ingreso en la liga de raspadores?";
+	description = "Â¿CÃ³mo ingreso en la liga de raspadores?";
 };                       
 
 FUNC INT Info_SFB_1_EinerVonEuchWerden_Condition()
@@ -50,10 +50,10 @@ FUNC INT Info_SFB_1_EinerVonEuchWerden_Condition()
 
 FUNC VOID Info_SFB_1_EinerVonEuchWerden_Info()
 {
-	AI_Output(other,self,"Info_SFB_1_EinerVonEuchWerden_15_00"); //¿Cómo ingreso en la liga de raspadores?
-	AI_Output(self,other,"Info_SFB_1_EinerVonEuchWerden_01_01"); //¿Unirte a nosotros? No te vayas a pensar que no trabajamos porque nadie nos obliga.
-	AI_Output(self,other,"Info_SFB_1_EinerVonEuchWerden_01_02"); //Si crees que podemos hacer el vago, vas listo amigo mío.
-	AI_Output(self,other,"Info_SFB_1_EinerVonEuchWerden_01_03"); //Si aún piensas que éste es tu sitio, será mejor que hables con Swiney. Es el raspador que se tira todo el día fumando.
+	AI_Output(other,self,"Info_SFB_1_EinerVonEuchWerden_15_00"); //Â¿CÃ³mo ingreso en la liga de raspadores?
+	AI_Output(self,other,"Info_SFB_1_EinerVonEuchWerden_01_01"); //Â¿Unirte a nosotros? No te vayas a pensar que no trabajamos porque nadie nos obliga.
+	AI_Output(self,other,"Info_SFB_1_EinerVonEuchWerden_01_02"); //Si crees que podemos hacer el vago, vas listo amigo mÃ­o.
+	AI_Output(self,other,"Info_SFB_1_EinerVonEuchWerden_01_03"); //Si aÃºn piensas que Ã©ste es tu sitio, serÃ¡ mejor que hables con Swiney. Es el raspador que se tira todo el dÃ­a fumando.
 };
 
 // *************************************************************************
@@ -66,7 +66,7 @@ INSTANCE Info_SFB_1_WichtigePersonen(C_INFO)
 	condition	= Info_SFB_1_WichtigePersonen_Condition;
 	information	= Info_SFB_1_WichtigePersonen_Info;
 	permanent	= 1;
-	description = "¿Quién está al mando aquí?";
+	description = "Â¿QuiÃ©n estÃ¡ al mando aquÃ­?";
 };                       
 
 FUNC INT Info_SFB_1_WichtigePersonen_Condition()
@@ -76,8 +76,8 @@ FUNC INT Info_SFB_1_WichtigePersonen_Condition()
 
 FUNC VOID Info_SFB_1_WichtigePersonen_Info()
 {
-	AI_Output(other,self,"Info_SFB_1_WichtigePersonen_15_00"); //¿Quién está al mando aquí?
-	AI_Output(self,other,"Info_SFB_1_WichtigePersonen_01_01"); //¿Al mando? Echa un vistazo a tu alrededor. No es el que se tira todo el día matándose a trabajar para extraer mineral, eso está claro.
+	AI_Output(other,self,"Info_SFB_1_WichtigePersonen_15_00"); //Â¿QuiÃ©n estÃ¡ al mando aquÃ­?
+	AI_Output(self,other,"Info_SFB_1_WichtigePersonen_01_01"); //Â¿Al mando? Echa un vistazo a tu alrededor. No es el que se tira todo el dÃ­a matÃ¡ndose a trabajar para extraer mineral, eso estÃ¡ claro.
 };
 
 // *************************************************************************
@@ -90,7 +90,7 @@ INSTANCE Info_SFB_1_DasLager(C_INFO)
 	condition	= Info_SFB_1_DasLager_Condition;
 	information	= Info_SFB_1_DasLager_Info;
 	permanent	= 1;
-	description = "¿Qué es esto?";
+	description = "Â¿QuÃ© es esto?";
 };                       
 
 FUNC INT Info_SFB_1_DasLager_Condition()
@@ -100,9 +100,9 @@ FUNC INT Info_SFB_1_DasLager_Condition()
 
 FUNC VOID Info_SFB_1_DasLager_Info()
 {
-	AI_Output(other,self,"Info_SFB_1_DasLager_15_00"); //¿Qué es esto?
-	AI_Output(self,other,"Info_SFB_1_DasLager_01_01"); //¿Qué crees que es? ¿El palacio real?
-	AI_Output(self,other,"Info_SFB_1_DasLager_01_02"); //Si quieres trabajar en la Mina Libre, tendrás que abrirte paso primero en la Hondonada para demostrar que nos eres de utilidad.
+	AI_Output(other,self,"Info_SFB_1_DasLager_15_00"); //Â¿QuÃ© es esto?
+	AI_Output(self,other,"Info_SFB_1_DasLager_01_01"); //Â¿QuÃ© crees que es? Â¿El palacio real?
+	AI_Output(self,other,"Info_SFB_1_DasLager_01_02"); //Si quieres trabajar en la Mina Libre, tendrÃ¡s que abrirte paso primero en la Hondonada para demostrar que nos eres de utilidad.
 };
 
 // *************************************************************************
@@ -115,7 +115,7 @@ INSTANCE Info_SFB_1_DieLage(C_INFO)
 	condition	= Info_SFB_1_DieLage_Condition;
 	information	= Info_SFB_1_DieLage_Info;
 	permanent	= 1;
-	description = "¿Qué tal estás?";
+	description = "Â¿QuÃ© tal estÃ¡s?";
 };                       
 
 FUNC INT Info_SFB_1_DieLage_Condition()
@@ -125,9 +125,9 @@ FUNC INT Info_SFB_1_DieLage_Condition()
 
 FUNC VOID Info_SFB_1_DieLage_Info()
 {
-	AI_Output(other,self,"Info_SFB_1_DieLage_15_00"); //¿Cómo te va?
-	AI_Output(self,other,"Info_SFB_1_DieLage_01_01"); //¿Y tú qué crees? Tan mal como siempre. Sin nada que comer, y con muchas cosas que hacer.
-	AI_Output(self,other,"Info_SFB_1_DieLage_01_02"); //El único que no está ocupado es Swiney. Okyl lo ascendió a portavoz de los raspadores. Ahora se pasa todo el día comprobando que nadie tenga ampollas en sus manos.
+	AI_Output(other,self,"Info_SFB_1_DieLage_15_00"); //Â¿CÃ³mo te va?
+	AI_Output(self,other,"Info_SFB_1_DieLage_01_01"); //Â¿Y tÃº quÃ© crees? Tan mal como siempre. Sin nada que comer, y con muchas cosas que hacer.
+	AI_Output(self,other,"Info_SFB_1_DieLage_01_02"); //El Ãºnico que no estÃ¡ ocupado es Swiney. Okyl lo ascendiÃ³ a portavoz de los raspadores. Ahora se pasa todo el dÃ­a comprobando que nadie tenga ampollas en sus manos.
 };
 	
 // *************************************************************************

@@ -37,7 +37,7 @@ INSTANCE Info_Tpl_13_EinerVonEuchWerden (C_INFO) // E1
 	condition	= Info_Tpl_13_EinerVonEuchWerden_Condition;
 	information	= Info_Tpl_13_EinerVonEuchWerden_Info;
 	permanent	= 1;
-	description = "Quiero convertirme en templario como tú.";
+	description = "Quiero convertirme en templario como tÃº.";
 };                       
 
 FUNC INT Info_Tpl_13_EinerVonEuchWerden_Condition()
@@ -52,11 +52,11 @@ FUNC INT Info_Tpl_13_EinerVonEuchWerden_Condition()
 
 FUNC VOID Info_Tpl_13_EinerVonEuchWerden_Info()
 {
-	AI_Output(other,self,"Info_Tpl_13_EinerVonEuchWerden_15_00"); //Quiero convertirme en templario como tú.
-	AI_Output(self,other,"Info_Tpl_13_EinerVonEuchWerden_13_01"); //¿Sabes de lo que he tenido que privarme para que se me permitiera servir a los elegidos del Durmiente como guardia del templo?
+	AI_Output(other,self,"Info_Tpl_13_EinerVonEuchWerden_15_00"); //Quiero convertirme en templario como tÃº.
+	AI_Output(self,other,"Info_Tpl_13_EinerVonEuchWerden_13_01"); //Â¿Sabes de lo que he tenido que privarme para que se me permitiera servir a los elegidos del Durmiente como guardia del templo?
 	AI_Output(self,other,"Info_Tpl_13_EinerVonEuchWerden_13_02"); //No pienses que vas a llegar y llevarte todos los honores.
-	AI_Output(self,other,"Info_Tpl_13_EinerVonEuchWerden_13_03"); //Antes de pensar en ello, deberías enterarte un poco de las enseñanzas del Durmiente.
-	AI_Output(self,other,"Info_Tpl_13_EinerVonEuchWerden_13_04"); //Eso te llevará un tiempo, y puede que te haga entrar en vereda.
+	AI_Output(self,other,"Info_Tpl_13_EinerVonEuchWerden_13_03"); //Antes de pensar en ello, deberÃ­as enterarte un poco de las enseÃ±anzas del Durmiente.
+	AI_Output(self,other,"Info_Tpl_13_EinerVonEuchWerden_13_04"); //Eso te llevarÃ¡ un tiempo, y puede que te haga entrar en vereda.
 };
 
 // *************************************************************************
@@ -69,7 +69,7 @@ INSTANCE Info_Tpl_13_WichtigePersonen(C_INFO)
 	condition	= Info_Tpl_13_WichtigePersonen_Condition;
 	information	= Info_Tpl_13_WichtigePersonen_Info;
 	permanent	= 1;
-	description = "¿Quién manda por aquí?";
+	description = "Â¿QuiÃ©n manda por aquÃ­?";
 };                       
 
 FUNC INT Info_Tpl_13_WichtigePersonen_Condition()
@@ -79,8 +79,8 @@ FUNC INT Info_Tpl_13_WichtigePersonen_Condition()
 
 FUNC VOID Info_Tpl_13_WichtigePersonen_Info()
 {
-	AI_Output(other,self,"Info_Tpl_13_WichtigePersonen_15_00"); //¿Quién manda por aquí?
-	AI_Output(self,other,"Info_Tpl_13_WichtigePersonen_13_01"); //¡Nuestros gurús son los elegidos del Durmiente! Éste decide nuestro destino y los gurús lo profetizan.
+	AI_Output(other,self,"Info_Tpl_13_WichtigePersonen_15_00"); //Â¿QuiÃ©n manda por aquÃ­?
+	AI_Output(self,other,"Info_Tpl_13_WichtigePersonen_13_01"); //Â¡Nuestros gurÃºs son los elegidos del Durmiente! Ã‰ste decide nuestro destino y los gurÃºs lo profetizan.
 };
 
 // *************************************************************************
@@ -93,7 +93,7 @@ INSTANCE Info_Tpl_13_DasLager(C_INFO)
 	condition	= Info_Tpl_13_DasLager_Condition;
 	information	= Info_Tpl_13_DasLager_Info;
 	permanent	= 1;
-	description = "Me gustaría echar un vistazo en el templo del Durmiente.";
+	description = "Me gustarÃ­a echar un vistazo en el templo del Durmiente.";
 };                       
 
 FUNC INT Info_Tpl_13_DasLager_Condition()
@@ -105,8 +105,8 @@ FUNC INT Info_Tpl_13_DasLager_Condition()
 };
 FUNC VOID Info_Tpl_13_DasLager_Info()
 {
-	AI_Output(other,self,"Info_Tpl_13_DasLager_15_00"); //Me gustaría echar un vistazo en el templo del Durmiente.
-	AI_Output(self,other,"Info_Tpl_13_DasLager_13_01"); //¡Eso es inimaginable! ¡Un infiel en el templo! ¡No podrás entrar en el templo hasta que no te encomiendes al servicio del Durmiente!
+	AI_Output(other,self,"Info_Tpl_13_DasLager_15_00"); //Me gustarÃ­a echar un vistazo en el templo del Durmiente.
+	AI_Output(self,other,"Info_Tpl_13_DasLager_13_01"); //Â¡Eso es inimaginable! Â¡Un infiel en el templo! Â¡No podrÃ¡s entrar en el templo hasta que no te encomiendes al servicio del Durmiente!
 };
 
 // *************************************************************************
@@ -119,7 +119,7 @@ INSTANCE Info_Tpl_13_DieLage(C_INFO) // E1
 	condition	= Info_Tpl_13_DieLage_Condition;
 	information	= Info_Tpl_13_DieLage_Info;
 	permanent	= 1;
-	description = "¿Qué tal estás?";
+	description = "Â¿QuÃ© tal estÃ¡s?";
 };                       
 
 FUNC INT Info_Tpl_13_DieLage_Condition()
@@ -131,10 +131,10 @@ FUNC INT Info_Tpl_13_DieLage_Condition()
 };
 FUNC VOID Info_Tpl_13_DieLage_Info()
 {
-	AI_Output(other,self,"Info_Tpl_13_DieLage_15_00"); //¿Qué tal estás?
-	AI_Output(self,other,"Info_Tpl_13_DieLage_13_01"); //Desde que me convertí en uno de los protectores elegidos de la fe, me siento mejor que nunca antes.
+	AI_Output(other,self,"Info_Tpl_13_DieLage_15_00"); //Â¿QuÃ© tal estÃ¡s?
+	AI_Output(self,other,"Info_Tpl_13_DieLage_13_01"); //Desde que me convertÃ­ en uno de los protectores elegidos de la fe, me siento mejor que nunca antes.
 	AI_Output(other,self,"Info_Tpl_13_DieLage_15_02"); //Parece bastante importante...
-	AI_Output(self,other,"Info_Tpl_13_DieLage_13_03"); //Eres un infiel. Tú no lo entiendes.
+	AI_Output(self,other,"Info_Tpl_13_DieLage_13_03"); //Eres un infiel. TÃº no lo entiendes.
 };
 	
 // *************************************************************************

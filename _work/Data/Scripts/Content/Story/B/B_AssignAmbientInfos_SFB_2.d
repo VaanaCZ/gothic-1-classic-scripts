@@ -4,7 +4,7 @@
 
 
 // *************************************************************************
-// 									Vor Gespräch
+// 									Vor GesprÃ¤ch
 // *************************************************************************
 
 INSTANCE Info_SFB_2_Pre(C_INFO)
@@ -23,7 +23,7 @@ FUNC INT Info_SFB_2_Pre_Condition()
 
 FUNC VOID Info_SFB_2_Pre_Info()
 {	
-	AI_Output(self,other,"Info_SFB_2_EinerVonEuchWerden_02_00"); //¿Qué quieres? No quiero meterme en ningún lío.
+	AI_Output(self,other,"Info_SFB_2_EinerVonEuchWerden_02_00"); //Â¿QuÃ© quieres? No quiero meterme en ningÃºn lÃ­o.
 };
 
 // *************************************************************************
@@ -60,7 +60,7 @@ INSTANCE Info_SFB_2_EinerVonEuchWerden (C_INFO)
 	condition	= Info_SFB_2_EinerVonEuchWerden_Condition;
 	information	= Info_SFB_2_EinerVonEuchWerden_Info;
 	permanent	= 1;
-	description = "¿Qué tengo que hacer para unirme a vosotros?";
+	description = "Â¿QuÃ© tengo que hacer para unirme a vosotros?";
 };                       
 
 FUNC INT Info_SFB_2_EinerVonEuchWerden_Condition()
@@ -73,7 +73,7 @@ FUNC INT Info_SFB_2_EinerVonEuchWerden_Condition()
 
 FUNC VOID Info_SFB_2_EinerVonEuchWerden_Info()
 {
-	AI_Output(other,self,"Info_SFB_2_EinerVonEuchWerden_15_00"); //¿Qué tengo que hacer para unirme a vosotros?
+	AI_Output(other,self,"Info_SFB_2_EinerVonEuchWerden_15_00"); //Â¿QuÃ© tengo que hacer para unirme a vosotros?
 	AI_Output(self,other,"Info_SFB_2_EinerVonEuchWerden_02_01"); //No puedo ayudarte. Soy un don nadie. Habla con Swiney.
 };
 
@@ -87,7 +87,7 @@ INSTANCE Info_SFB_2_WichtigePersonen(C_INFO)
 	condition	= Info_SFB_2_WichtigePersonen_Condition;
 	information	= Info_SFB_2_WichtigePersonen_Info;
 	permanent	= 1;
-	description = "¿Quién está al mando aquí?";
+	description = "Â¿QuiÃ©n estÃ¡ al mando aquÃ­?";
 };                       
 
 FUNC INT Info_SFB_2_WichtigePersonen_Condition()
@@ -97,9 +97,9 @@ FUNC INT Info_SFB_2_WichtigePersonen_Condition()
 
 FUNC VOID Info_SFB_2_WichtigePersonen_Info()
 {
-	AI_Output(other,self,"Info_SFB_2_WichtigePersonen_15_00"); //¿Quién está al mando aquí?
+	AI_Output(other,self,"Info_SFB_2_WichtigePersonen_15_00"); //Â¿QuiÃ©n estÃ¡ al mando aquÃ­?
 	AI_Output(self,other,"Info_SFB_2_WichtigePersonen_02_01"); //En la Hondonada mandan los mercenarios, pero no sucede lo mismo en el Campamento Nuevo.
-	AI_Output(self,other,"Info_SFB_2_WichtigePersonen_02_02"); //Cuidado con quién te metes.
+	AI_Output(self,other,"Info_SFB_2_WichtigePersonen_02_02"); //Cuidado con quiÃ©n te metes.
 };
 
 // *************************************************************************
@@ -112,7 +112,7 @@ INSTANCE Info_SFB_2_DasLager(C_INFO)
 	condition	= Info_SFB_2_DasLager_Condition;
 	information	= Info_SFB_2_DasLager_Info;
 	permanent	= 1;
-	description = "Tengo que saber más cosas del Campamento.";
+	description = "Tengo que saber mÃ¡s cosas del Campamento.";
 };                       
 
 FUNC INT Info_SFB_2_DasLager_Condition()
@@ -122,8 +122,8 @@ FUNC INT Info_SFB_2_DasLager_Condition()
 
 FUNC VOID Info_SFB_2_DasLager_Info()
 {
-	AI_Output(other,self,"Info_SFB_2_DasLager_15_00"); //Tengo que saber más cosas del campamento.
-	AI_Output(self,other,"Info_SFB_2_DasLager_02_01"); //No creo que pueda ayudarte. Será mejor que hables con Swiney o los mercenarios.
+	AI_Output(other,self,"Info_SFB_2_DasLager_15_00"); //Tengo que saber mÃ¡s cosas del campamento.
+	AI_Output(self,other,"Info_SFB_2_DasLager_02_01"); //No creo que pueda ayudarte. SerÃ¡ mejor que hables con Swiney o los mercenarios.
 };
 
 // *************************************************************************
@@ -136,7 +136,7 @@ INSTANCE Info_SFB_2_DieLage(C_INFO)
 	condition	= Info_SFB_2_DieLage_Condition;
 	information	= Info_SFB_2_DieLage_Info;
 	permanent	= 1;
-	description = "¿Cómo es la vida aquí?";
+	description = "Â¿CÃ³mo es la vida aquÃ­?";
 };                       
 
 FUNC INT Info_SFB_2_DieLage_Condition()
@@ -146,11 +146,11 @@ FUNC INT Info_SFB_2_DieLage_Condition()
 
 FUNC VOID Info_SFB_2_DieLage_Info()
 {
-	AI_Output(other,self,"Info_SFB_2_DieLage_15_00"); //¿Cómo es la vida aquí?
+	AI_Output(other,self,"Info_SFB_2_DieLage_15_00"); //Â¿CÃ³mo es la vida aquÃ­?
 	AI_Output(self,other,"Info_SFB_2_DieLage_02_01"); //No me quejo. Todos tenemos que cumplir con nuestras obligaciones.
-	AI_Output(self,other,"Info_SFB_2_DieLage_02_02"); //Al menos aquí el trabajo es mejor que en el Campamento Viejo.
-	AI_Output(self,other,"Info_SFB_2_DieLage_02_03"); //¿Eres del Campamento Viejo?
-	AI_Output(self,other,"Info_SFB_2_DieLage_02_04"); //¡Si eres del Campamento Viejo, recuerda que no quiero líos!
+	AI_Output(self,other,"Info_SFB_2_DieLage_02_02"); //Al menos aquÃ­ el trabajo es mejor que en el Campamento Viejo.
+	AI_Output(self,other,"Info_SFB_2_DieLage_02_03"); //Â¿Eres del Campamento Viejo?
+	AI_Output(self,other,"Info_SFB_2_DieLage_02_04"); //Â¡Si eres del Campamento Viejo, recuerda que no quiero lÃ­os!
 	AI_StopProcessInfos	(self);
 };	
 	
