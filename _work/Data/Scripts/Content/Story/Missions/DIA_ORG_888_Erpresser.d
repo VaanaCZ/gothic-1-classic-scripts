@@ -23,7 +23,7 @@ FUNC INT Info_Erpresser_Condition()
 
 FUNC VOID Info_Erpresser_Info()
 {
-	AI_Output (self, other,"Info_Erpresser_Info_13_01"); //Hey, Junge, wenn du hier vorbei willst, mußt du 10 Erz zahlen, oder du bekommst aufs Maul, kapiert?
+	AI_Output (self, other,"Info_Erpresser_Info_13_01"); //Hey, Junge, wenn du hier vorbei willst, muÃŸt du 10 Erz zahlen, oder du bekommst aufs Maul, kapiert?
 	
 	Info_ClearChoices( Info_Erpresser );
 	Info_AddChoice	 ( Info_Erpresser, "Dann komm doch her und hol dir dein Erz!"	, Info_Erpresser_Choice_AufsMaul );
@@ -54,7 +54,7 @@ FUNC VOID Info_Erpresser_Choice_Zahlen()
 	}
 	else // SC hat keine 3 Erz
 	{
-		AI_Output (other, self,"Info_Erpresser_Choice_Zahlen_15_03"); //Ähm... hab' gerade keine 10 Erz...
+		AI_Output (other, self,"Info_Erpresser_Choice_Zahlen_15_03"); //Ã„hm... hab' gerade keine 10 Erz...
 		AI_Output (self, other,"Info_Erpresser_Choice_Zahlen_13_04"); //Das ist aber schade...
 	
 		self.aivar[AIV_HAS_ERPRESSED] = 2;
@@ -66,7 +66,7 @@ FUNC VOID Info_Erpresser_Choice_Zahlen()
 	AI_StopProcessInfos	(self);
 };
 
-// ****************** für HAS_ERPRESSED == 1 (gezahlt) *********************
+// ****************** fÃ¼r HAS_ERPRESSED == 1 (gezahlt) *********************
 
 INSTANCE Info_BereitsErpresst (C_INFO)
 {
@@ -88,10 +88,10 @@ FUNC INT Info_BereitsErpresst_Condition()
 
 FUNC VOID Info_BereitsErpresst_Info()
 {
-	AI_Output (self, other,"Info_BereitsErpresst_Info_13_02"); //Du hast bezahlt. Du kannst vorbei. Geh jetzt, bevor ich's mir anders überlege.
+	AI_Output (self, other,"Info_BereitsErpresst_Info_13_02"); //Du hast bezahlt. Du kannst vorbei. Geh jetzt, bevor ich's mir anders Ã¼berlege.
 };
 
-// ****************** für HAS_ERPRESSED == 2 (Aufs Maul) *********************
+// ****************** fÃ¼r HAS_ERPRESSED == 2 (Aufs Maul) *********************
 
 INSTANCE Info_BereitsAufsMaul (C_INFO)
 {

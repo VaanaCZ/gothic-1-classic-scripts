@@ -76,11 +76,11 @@ FUNC INT DIA_Orry_GuardGate_Condition()
 FUNC VOID DIA_Orry_GuardGate_Info()
 {
 	AI_Output (other, self,"DIA_Orry_GuardGate_15_00"); //Was machst du hier?
-	AI_Output (self, other,"DIA_Orry_GuardGate_06_01"); //Dafür sorgen, dass keiner an die Austauschstelle rankommt. Vor allem nicht die Halsabschneider aus dem Neuen Lager.
+	AI_Output (self, other,"DIA_Orry_GuardGate_06_01"); //DafÃ¼r sorgen, dass keiner an die Austauschstelle rankommt. Vor allem nicht die Halsabschneider aus dem Neuen Lager.
 	AI_Output (self, other,"DIA_Orry_GuardGate_06_02"); //Du bist der Neue, den sie heute reingeworfen haben, nicht?
 	AI_Output (other, self,"DIA_Orry_GuardGate_15_03"); //Sieht so aus.
 	AI_Output (self, other,"DIA_Orry_GuardGate_06_04"); //Dann solltest du wissen, dass du dich vor den Typen aus dem Neuen Lager in Acht nehmen musst!
-	AI_Output (self, other,"DIA_Orry_GuardGate_06_05"); //Ich arbeite fürs alte Lager. Genau wie alle anderen, die du an der Austauschstelle gesehen hast.
+	AI_Output (self, other,"DIA_Orry_GuardGate_06_05"); //Ich arbeite fÃ¼rs alte Lager. Genau wie alle anderen, die du an der Austauschstelle gesehen hast.
 	AI_Output (self, other,"DIA_Orry_GuardGate_06_06"); //Du hast schon mit Diego geredet, nehme ich an?
 	Info_ClearChoices	(DIA_Orry_GuardGate );
 	Info_AddChoice		(DIA_Orry_GuardGate,"Nein."	,DIA_Orry_GuardGate_No);
@@ -90,15 +90,15 @@ FUNC VOID DIA_Orry_GuardGate_Info()
 func void DIA_Orry_GuardGate_No()
 {
 	AI_Output (other, self,"DIA_Orry_GuardGate_No_15_00"); //Nein.
-	AI_Output (self, other,"DIA_Orry_GuardGate_No_06_01"); //Dann solltest du das tun! Er kümmert sich um die Neuen.
-	AI_Output (self, other,"DIA_Orry_GuardGate_No_06_02"); //Er weiß viele Dinge über die Kolonie, die für einen Neuen sehr wichtig sein können.
+	AI_Output (self, other,"DIA_Orry_GuardGate_No_06_01"); //Dann solltest du das tun! Er kÃ¼mmert sich um die Neuen.
+	AI_Output (self, other,"DIA_Orry_GuardGate_No_06_02"); //Er weiÃŸ viele Dinge Ã¼ber die Kolonie, die fÃ¼r einen Neuen sehr wichtig sein kÃ¶nnen.
 	Info_ClearChoices	(DIA_Orry_GuardGate );
 };
 
 func void DIA_Orry_GuardGate_Yes()
 {
 	AI_Output (other, self,"DIA_Orry_GuardGate_Yes_15_00"); //Ja, hab' ich.
-	AI_Output (self, other,"DIA_Orry_GuardGate_Yes_06_01"); //Gut! Dann weißt du ja schon Bescheid.
+	AI_Output (self, other,"DIA_Orry_GuardGate_Yes_06_01"); //Gut! Dann weiÃŸt du ja schon Bescheid.
 	Info_ClearChoices	(DIA_Orry_GuardGate );
 };
 
@@ -128,7 +128,7 @@ FUNC VOID DIA_Orry_NewCamp_Info()
 {
 	AI_Output (other, self,"DIA_Orry_NewCamp_15_00"); //Warum sollte ich mich vor dem Neuen Lager in Acht nehmen?
 	AI_Output (self, other,"DIA_Orry_NewCamp_06_01"); //Verglichen mit dem Neuen Lager ist das Alte Lager ein ruhiger und friedlicher Ort.
-	AI_Output (self, other,"DIA_Orry_NewCamp_06_02"); //Das Neue Lager bekommt keine Waren aus der Außenwelt. Die meisten Banditen klauen sich zusammen, was sie zum Leben brauchen.
+	AI_Output (self, other,"DIA_Orry_NewCamp_06_02"); //Das Neue Lager bekommt keine Waren aus der AuÃŸenwelt. Die meisten Banditen klauen sich zusammen, was sie zum Leben brauchen.
 };
 
 // **************************************************
@@ -171,7 +171,7 @@ INSTANCE DIA_Orry_Shore (C_INFO)
 	condition		= DIA_Orry_Shore_Condition;
 	information		= DIA_Orry_Shore_Info;
 	permanent		= 0;
-	description		= "Als ich ans Ufer gespült wurde. hat mich einer von den Typen geschlagen."; 
+	description		= "Als ich ans Ufer gespÃ¼lt wurde. hat mich einer von den Typen geschlagen."; 
 };
 
 FUNC INT DIA_Orry_Shore_Condition()
@@ -184,7 +184,7 @@ FUNC INT DIA_Orry_Shore_Condition()
 
 FUNC VOID DIA_Orry_Shore_Info()
 {
-	AI_Output (other, self,"DIA_Orry_Shore_15_00"); //Als ich ans Ufer gespült wurde, hat mich einer von den Typen mit einem Schlag ins Gesicht begrüßt.
+	AI_Output (other, self,"DIA_Orry_Shore_15_00"); //Als ich ans Ufer gespÃ¼lt wurde, hat mich einer von den Typen mit einem Schlag ins Gesicht begrÃ¼ÃŸt.
 	AI_Output (self, other,"DIA_Orry_Shore_06_01"); //Das machen sie mit jedem Neuen. Sie nennen es 'Die Taufe'.
 	AI_Output (other, self,"DIA_Orry_Shore_15_02"); //Habt ihr im Alten Lager noch mehr so nette Leute?
 	AI_Output (self, other,"DIA_Orry_Shore_06_03"); //Es gibt schon einige Schweine. Aber solange du dein Schutzgeld zahlst, kann dir nichts passieren.
@@ -216,8 +216,8 @@ FUNC VOID DIA_Orry_Woman_Info()
 {
 	AI_Output (other, self,"DIA_Orry_Woman_15_00"); //Ich habe gesehen, wie sie eine Frau zusammen mit den Waren reingeschickt haben.
 	AI_Output (self, other,"DIA_Orry_Woman_06_01"); //Ja, die Erzbarone bekommen alles, was sie wollen.
-	AI_Output (other, self,"DIA_Orry_Woman_15_02"); //Du meinst, der König tauscht Erz gegen Frauen?
-	AI_Output (self, other,"DIA_Orry_Woman_06_03"); //Sie sind natürlich auch verurteilte Gefangene. Aber wenn Gomez sie nicht angefordert hätte, säßen sie in irgendwelchen Kerkern.
+	AI_Output (other, self,"DIA_Orry_Woman_15_02"); //Du meinst, der KÃ¶nig tauscht Erz gegen Frauen?
+	AI_Output (self, other,"DIA_Orry_Woman_06_03"); //Sie sind natÃ¼rlich auch verurteilte Gefangene. Aber wenn Gomez sie nicht angefordert hÃ¤tte, sÃ¤ÃŸen sie in irgendwelchen Kerkern.
 	AI_Output (self, other,"DIA_Orry_Woman_06_04"); //Bin mir nicht sicher, was schlimmer ist ...
 };
 
@@ -246,9 +246,9 @@ FUNC INT DIA_Orry_Waffe_Condition()
 FUNC VOID DIA_Orry_Waffe_Info()
 {
 	AI_Output (other, self,"DIA_Orry_Waffe_15_00"); //Ich suche eine Waffe ...
-	AI_Output (self, other,"DIA_Orry_Waffe_06_01"); //Bei der verlassenen Mine weiter hinten im Canyon müsstest du alte Waffen finden.
-	AI_Output (self, other,"DIA_Orry_Waffe_06_02"); //Aber mach bloß nicht den Fehler und zieh mit 'ner rostigen Spitzhacke in den Krieg - die Dinger sind schwer und langsam.
-	AI_Output (self, other,"DIA_Orry_Waffe_06_03"); //Ein ungeübter Kämpfer sollte sie nur im Notfall benutzen.
+	AI_Output (self, other,"DIA_Orry_Waffe_06_01"); //Bei der verlassenen Mine weiter hinten im Canyon mÃ¼sstest du alte Waffen finden.
+	AI_Output (self, other,"DIA_Orry_Waffe_06_02"); //Aber mach bloÃŸ nicht den Fehler und zieh mit 'ner rostigen Spitzhacke in den Krieg - die Dinger sind schwer und langsam.
+	AI_Output (self, other,"DIA_Orry_Waffe_06_03"); //Ein ungeÃ¼bter KÃ¤mpfer sollte sie nur im Notfall benutzen.
 	
 };
 

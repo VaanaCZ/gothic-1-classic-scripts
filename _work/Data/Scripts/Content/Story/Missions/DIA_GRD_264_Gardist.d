@@ -46,9 +46,9 @@ FUNC int  Grd_264_Gardist_GARDEAUFNAHME_Condition()
 func void  Grd_264_Gardist_GARDEAUFNAHME_Info()
 {
 	AI_Output (self, other,"Grd_264_Gardist_GARDEAUFNAHME_Info_07_01"); //Hey, gute Arbeit, das mit den Crawlern! Damit hast du dir deine Aufnahme bei den Gardisten verdient!
-	AI_Output (self, other,"Grd_264_Gardist_GARDEAUFNAHME_Info_07_02"); //Geh doch mal zum Alten Lager und sprich mit Thorus darüber!
+	AI_Output (self, other,"Grd_264_Gardist_GARDEAUFNAHME_Info_07_02"); //Geh doch mal zum Alten Lager und sprich mit Thorus darÃ¼ber!
 	
 	Log_CreateTopic (GE_BecomeGuard,LOG_NOTE);
-	B_LogEntry (GE_BecomeGuard,"Wenn ich die Eier zurückgebracht hab, sollte ich mal mit Thorus reden. Vielleicht nimmt er mich in die Reihen der Gardisten auf.");
+	B_LogEntry (GE_BecomeGuard,"Wenn ich die Eier zurÃ¼ckgebracht hab, sollte ich mal mit Thorus reden. Vielleicht nimmt er mich in die Reihen der Gardisten auf.");
 
 };

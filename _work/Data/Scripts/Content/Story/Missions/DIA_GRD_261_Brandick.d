@@ -33,7 +33,7 @@ instance  GRD_261_Brandick_ALEPH (C_INFO)
 	information		= GRD_261_Brandick_ALEPH_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "(Aleph anschw‰rzen)"; 
+	description		= "(Aleph anschw√§rzen)"; 
 };
 
 FUNC int  GRD_261_Brandick_ALEPH_Condition()
@@ -46,9 +46,9 @@ FUNC int  GRD_261_Brandick_ALEPH_Condition()
 };
 FUNC void  GRD_261_Brandick_ALEPH_Info()
 {
-	AI_Output			(other, self,"GRD_261_Brandick_ALEPH_Info_15_01"); //Hˆr mal, wenn du nicht da bist, sitzt Aleph die ganze Zeit nur rum, ohne zu arbeiten.
+	AI_Output			(other, self,"GRD_261_Brandick_ALEPH_Info_15_01"); //H√∂r mal, wenn du nicht da bist, sitzt Aleph die ganze Zeit nur rum, ohne zu arbeiten.
 	AI_Output			(self, other,"GRD_261_Brandick_ALEPH_Info_06_02"); //Ist das so?
-	AI_Output			(self, other,"GRD_261_Brandick_ALEPH_Info_06_03"); //Weiﬂt du, was ich noch viel weniger leiden kann als Faulpelze? Das sind Verr‰ter. Also geh mir aus den Augen!
+	AI_Output			(self, other,"GRD_261_Brandick_ALEPH_Info_06_03"); //Wei√üt du, was ich noch viel weniger leiden kann als Faulpelze? Das sind Verr√§ter. Also geh mir aus den Augen!
 	
 	AI_StopProcessInfos	(self);
 };  

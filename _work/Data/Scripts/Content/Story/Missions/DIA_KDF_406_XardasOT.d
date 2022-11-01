@@ -24,18 +24,18 @@ FUNC int  Info_Xardas_OT_Condition()
 
 FUNC void  Info_Xardas_OT_Info()
 {
-	AI_Output			(self, other,"Info_Xardas_OT_14_01"); //Wir haben nicht viel Zeit, also höre mir genau zu!
+	AI_Output			(self, other,"Info_Xardas_OT_14_01"); //Wir haben nicht viel Zeit, also hÃ¶re mir genau zu!
 	AI_Output			(other, self,"Info_Xardas_OT_15_02"); //Wie kommst du ....
-	AI_Output			(self, other,"Info_Xardas_OT_14_03"); //Der Schläfer ist nicht mehr weit. Ich musste all meine Kraft aufbringen, um zu dir zu gelangen.
-	AI_Output			(self, other,"Info_Xardas_OT_14_04"); //Ich habe die orkischen Prophezeiungen übersetzt und herausgefunden, was es mit den fünf Herzen auf sich hat.
-	AI_Output			(self, other,"Info_Xardas_OT_14_05"); //Die fünf Herzen der Priester, die du besiegt hast, wurden in fünf Schreine gelegt.
-	AI_Output			(self, other,"Info_Xardas_OT_14_06"); //Diese Schreine können geöffnet werden, aber nur die alten Klingen, welche die Priester bei sich trugen, können die Herzen verletzen.
-	AI_Output			(self, other,"Info_Xardas_OT_14_07"); //Du musst die Herzen mit den fünf Klingen durchstoßen, nur so wirst du den Schläfer von dieser Welt verbannen können.
+	AI_Output			(self, other,"Info_Xardas_OT_14_03"); //Der SchlÃ¤fer ist nicht mehr weit. Ich musste all meine Kraft aufbringen, um zu dir zu gelangen.
+	AI_Output			(self, other,"Info_Xardas_OT_14_04"); //Ich habe die orkischen Prophezeiungen Ã¼bersetzt und herausgefunden, was es mit den fÃ¼nf Herzen auf sich hat.
+	AI_Output			(self, other,"Info_Xardas_OT_14_05"); //Die fÃ¼nf Herzen der Priester, die du besiegt hast, wurden in fÃ¼nf Schreine gelegt.
+	AI_Output			(self, other,"Info_Xardas_OT_14_06"); //Diese Schreine kÃ¶nnen geÃ¶ffnet werden, aber nur die alten Klingen, welche die Priester bei sich trugen, kÃ¶nnen die Herzen verletzen.
+	AI_Output			(self, other,"Info_Xardas_OT_14_07"); //Du musst die Herzen mit den fÃ¼nf Klingen durchstoÃŸen, nur so wirst du den SchlÃ¤fer von dieser Welt verbannen kÃ¶nnen.
 	AI_Output			(other, self,"Info_Xardas_OT_15_08"); //Ich verstehe!
-	AI_Output			(self, other,"Info_Xardas_OT_14_09"); //Beeile dich, denn das Erwachen des Erzdämons ist nahe, der verrückte Cor Kalom und seine verblendeten Anhänger sind hier.
-	AI_Output			(self, other,"Info_Xardas_OT_14_10"); //Sie haben sich in der Halle des Schläfers versammelt.
+	AI_Output			(self, other,"Info_Xardas_OT_14_09"); //Beeile dich, denn das Erwachen des ErzdÃ¤mons ist nahe, der verrÃ¼ckte Cor Kalom und seine verblendeten AnhÃ¤nger sind hier.
+	AI_Output			(self, other,"Info_Xardas_OT_14_10"); //Sie haben sich in der Halle des SchlÃ¤fers versammelt.
 	AI_Output			(other, self,"Info_Xardas_OT_15_11"); //Ich habe schon genug geblutet! Jetzt wird mich niemand mehr aufhalten!
-	AI_Output			(self, other,"Info_Xardas_OT_14_12"); //Die Macht des Schläfers wird immer stärker, ich kann nicht ...
+	AI_Output			(self, other,"Info_Xardas_OT_14_12"); //Die Macht des SchlÃ¤fers wird immer stÃ¤rker, ich kann nicht ...
 	AI_Output			(other, self,"Info_Xardas_OT_15_13"); //Was ist los mit dir?
 	AI_Output			(self, other,"Info_Xardas_OT_14_14"); //Ich ... muss ...
 
@@ -43,7 +43,7 @@ FUNC void  Info_Xardas_OT_Info()
 	
 	Log_CreateTopic		(CH6_Sleeper,	LOG_MISSION);
 	Log_SetTopicStatus	(CH6_Sleeper,	LOG_RUNNING);
-	B_LogEntry			(CH6_Sleeper,	"Es ist soweit. Ich muss mich kurz vor der Ruhestätte des Schläfers befinden. Xardas tauchte plötzlich auf und gab mir die letzten Instruktionen für den bevorstehenden Kampf. Die fünf Herzen der untoten Ork-Schamanen befinden sich in Schreinen und müssen von den fünf Klingen, die ich bei mir trage, durchstoßen werden. Nur so kann der Schläfer besiegt werden. Hört sich eigentlich ganz einfach an...");
+	B_LogEntry			(CH6_Sleeper,	"Es ist soweit. Ich muss mich kurz vor der RuhestÃ¤tte des SchlÃ¤fers befinden. Xardas tauchte plÃ¶tzlich auf und gab mir die letzten Instruktionen fÃ¼r den bevorstehenden Kampf. Die fÃ¼nf Herzen der untoten Ork-Schamanen befinden sich in Schreinen und mÃ¼ssen von den fÃ¼nf Klingen, die ich bei mir trage, durchstoÃŸen werden. Nur so kann der SchlÃ¤fer besiegt werden. HÃ¶rt sich eigentlich ganz einfach an...");
 	
 	AI_StopProcessInfos	(self);
 };		

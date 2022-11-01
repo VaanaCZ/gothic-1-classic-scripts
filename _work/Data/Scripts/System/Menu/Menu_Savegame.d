@@ -235,7 +235,7 @@ instance MENUITEM_LOADSAVE_PLAYTIME_VALUE(C_MENU_ITEM_DEF)
 
 instance MENUITEM_SAVE_BACK(C_MENU_ITEM_DEF) 
 {
-	text[0]		=	"Zurück";
+	text[0]		=	"ZurÃ¼ck";
 	text[1]		=	"Back";
 	posx		=	SAVEGAME_X1;
 	posy		=	SAVEGAME_Y + 16*SAVEGAME_DY;	
@@ -251,7 +251,7 @@ instance MENUITEM_SAVE_BACK(C_MENU_ITEM_DEF)
 
 INSTANCE MENUITEM_LOAD_BACK(C_MENU_ITEM_DEF) 
 {
-	text[0]		=	"Zurück";	
+	text[0]		=	"ZurÃ¼ck";	
 	posx		=	SAVEGAME_X1;	
 	posy		=	SAVEGAME_Y + 16*SAVEGAME_DY;				
 };

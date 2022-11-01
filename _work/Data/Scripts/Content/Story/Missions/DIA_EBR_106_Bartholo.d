@@ -44,10 +44,10 @@ FUNC INT Info_Bartholo_HAllo_Condition()
 FUNC VOID Info_Bartholo_HAllo_Info()
 {
 	AI_Output (other, self,"Info_Bartholo_HAllo_15_00"); //Wer bist du?
-	AI_Output (self, other,"Info_Bartholo_HAllo_12_01"); //Ich bin Bartholo. Ich kümmere mich um die Versorgung der Erzbarone.
-	AI_Output (self, other,"Info_Bartholo_HAllo_12_02"); //Ich regele alles - von Krautlieferungen, über Essen bis hin zur Versorgung der Frauen.
-	AI_Output (self, other,"Info_Bartholo_HAllo_12_03"); //Außerdem sorge ich dafür, dass die beiden idiotischen Köche ihre Arbeit gut machen.
-	AI_Output (self, other,"Info_Bartholo_HAllo_12_04"); //Sie sollten mir dafür dankbar sein. Gomez lässt sich nicht jeden Fraß gefallen. Die letzten beiden hat er an die Snapper im Fluss verfüttert.
+	AI_Output (self, other,"Info_Bartholo_HAllo_12_01"); //Ich bin Bartholo. Ich kÃ¼mmere mich um die Versorgung der Erzbarone.
+	AI_Output (self, other,"Info_Bartholo_HAllo_12_02"); //Ich regele alles - von Krautlieferungen, Ã¼ber Essen bis hin zur Versorgung der Frauen.
+	AI_Output (self, other,"Info_Bartholo_HAllo_12_03"); //AuÃŸerdem sorge ich dafÃ¼r, dass die beiden idiotischen KÃ¶che ihre Arbeit gut machen.
+	AI_Output (self, other,"Info_Bartholo_HAllo_12_04"); //Sie sollten mir dafÃ¼r dankbar sein. Gomez lÃ¤sst sich nicht jeden FraÃŸ gefallen. Die letzten beiden hat er an die Snapper im Fluss verfÃ¼ttert.
 };
 
 // ************************************************************
@@ -67,7 +67,7 @@ INSTANCE Info_Bartholo_PERM (C_INFO)
 
 FUNC INT Info_Bartholo_PERM_Condition()
 {	
-//SN: Problematisch, da Bartholo auch einen wichtigen Schlüssel hat!
+//SN: Problematisch, da Bartholo auch einen wichtigen SchlÃ¼ssel hat!
 //	if (Npc_KnowsInfo(hero, Info_Bartholo_Hallo))
 //	{
 //		return 1;
@@ -92,7 +92,7 @@ INSTANCE Info_Bartholo_Krautbote (C_INFO)
 	condition	= Info_Bartholo_Krautbote_Condition;
 	information	= Info_Bartholo_Krautbote_Info;
 	permanent	= 1;
-	description = "Ich habe ne Ladung Kraut von Cor Kalom für Gomez.";
+	description = "Ich habe ne Ladung Kraut von Cor Kalom fÃ¼r Gomez.";
 };                       
 
 FUNC INT Info_Bartholo_Krautbote_Condition()
@@ -105,7 +105,7 @@ FUNC INT Info_Bartholo_Krautbote_Condition()
 
 FUNC VOID Info_Bartholo_Krautbote_Info()
 {
-	AI_Output				(other, self,"Info_Bartholo_Krautbote_15_00"); //Ich habe 'ne Ladung Kraut von Cor Kalom für Gomez.
+	AI_Output				(other, self,"Info_Bartholo_Krautbote_15_00"); //Ich habe 'ne Ladung Kraut von Cor Kalom fÃ¼r Gomez.
 	AI_Output				(self, other,"Info_Bartholo_Krautbote_12_01"); //Zeig her!
 	
 	if (Npc_HasItems(other, itmijoint_3) >= 30)
@@ -120,14 +120,14 @@ FUNC VOID Info_Bartholo_Krautbote_Info()
 		B_GiveInvItems		(self,other, itminugget, 500);
 
 		Kalom_DeliveredWeed	= TRUE;
-		B_LogEntry			(CH1_KrautBote,	"Bartholo hat mir 500 Erz für die Krautlieferung gegeben.");
+		B_LogEntry			(CH1_KrautBote,	"Bartholo hat mir 500 Erz fÃ¼r die Krautlieferung gegeben.");
 		B_GiveXP			(XP_WeedShipmentDelivered);
 
 		Info_Bartholo_Krautbote.permanent = 0;
 	}
 	else
 	{
-		AI_Output			(self, other,"Info_Bartholo_Krautbote_NoKraut_12_00"); //Du hast zu wenig Kraut für einen Boten! Ich will für dich nicht hoffen, dass du das Zeug verscherbelt hast! Komm wieder, wenn du die richtige Menge dabei hast!
+		AI_Output			(self, other,"Info_Bartholo_Krautbote_NoKraut_12_00"); //Du hast zu wenig Kraut fÃ¼r einen Boten! Ich will fÃ¼r dich nicht hoffen, dass du das Zeug verscherbelt hast! Komm wieder, wenn du die richtige Menge dabei hast!
 	};
 };
 
@@ -155,10 +155,10 @@ FUNC void  DIA_EBR_106_Bartholo_Wait4SC_Info()
 {
 	AI_SetWalkmode		(self, NPC_WALK);
 	AI_GotoNpc			(self, other);
-	AI_Output			(self, other,"Info_Bartholo_12_01");	//Ich hatte mir fast gedacht, dass es jemand durch das Pentagramm versuchen würde!
-	AI_Output			(self, other,"Info_Bartholo_12_02");	//Aber im Gegensatz zu diesem verräterischen Schmied Stone brauchen wir dich nicht mehr!
+	AI_Output			(self, other,"Info_Bartholo_12_01");	//Ich hatte mir fast gedacht, dass es jemand durch das Pentagramm versuchen wÃ¼rde!
+	AI_Output			(self, other,"Info_Bartholo_12_02");	//Aber im Gegensatz zu diesem verrÃ¤terischen Schmied Stone brauchen wir dich nicht mehr!
 	AI_Output			(other, self,"Info_Bartholo_15_03");	//Wo ist Stone?
-	AI_Output			(self, other,"Info_Bartholo_12_04");	//Hinter Gittern! Aber dafür wirst du gleich unter der Erde liegen!
+	AI_Output			(self, other,"Info_Bartholo_12_04");	//Hinter Gittern! Aber dafÃ¼r wirst du gleich unter der Erde liegen!
 	AI_Output			(self, other,"Info_Bartholo_12_05");	//Schnappt ihn euch, Jungs, und macht ihn kalt!
 
 	AI_StopProcessInfos	(self);

@@ -96,7 +96,7 @@ INSTANCE MENUITEM_MAIN_RESUME(C_MENU_ITEM_DEF)
 {
 	backpic		=	MENU_ITEM_BACK_PIC;
 	text[0]		=	"Weiterspielen";
-	text[1]		=   "Aktuelles Spiel fortführen.";  // Kommentar
+	text[1]		=   "Aktuelles Spiel fortfÃ¼hren.";  // Kommentar
 	
 	// Position und Dimension
 	posx		=	0;		posy		=	MENU_MAIN_Y + MENU_MAIN_DY*3;

@@ -22,7 +22,7 @@ FUNC INT Info_GRD_275_PreExit_Condition()
 
 FUNC VOID Info_GRD_275_PreExit_Info()
 {
-	AI_Output(self,other,"Info_GRD_275_PreExit_06_01"); //Sieh zu, dass du zum Alten Lager kommst, sie halten schon ne Spitzhacke für dich bereit, hee, hee!
+	AI_Output(self,other,"Info_GRD_275_PreExit_06_01"); //Sieh zu, dass du zum Alten Lager kommst, sie halten schon ne Spitzhacke fÃ¼r dich bereit, hee, hee!
 	AI_StopProcessInfos(self);
 };
 
@@ -73,8 +73,8 @@ FUNC INT Info_GRD_275_WasMachtIhrHier_Condition()
 FUNC VOID Info_GRD_275_WasMachtIhrHier_Info()
 {
 	AI_Output (other,self,"Info_GRD_275_WasMachtIhrHier_15_00"); //Was macht ihr hier?
-	AI_Output (self,other,"Info_GRD_275_WasMachtIhrHier_06_01"); //Wonach sieht's denn aus? Wir bewachen die Brücke!
-	AI_Output (self,other,"Info_GRD_275_WasMachtIhrHier_06_02"); //Wir passen auf, dass keine Viecher über die Brücke kommen.
+	AI_Output (self,other,"Info_GRD_275_WasMachtIhrHier_06_01"); //Wonach sieht's denn aus? Wir bewachen die BrÃ¼cke!
+	AI_Output (self,other,"Info_GRD_275_WasMachtIhrHier_06_02"); //Wir passen auf, dass keine Viecher Ã¼ber die BrÃ¼cke kommen.
 };
 
 // *****************************************************************
@@ -88,7 +88,7 @@ INSTANCE Info_GRD_275_Tips(C_INFO)
 	condition	= Info_GRD_275_Tips_Condition;
 	information	= Info_GRD_275_Tips_Info;
 	permanent	= 1;
-	description = "Hast du irgendwelche Tipps für mich?";
+	description = "Hast du irgendwelche Tipps fÃ¼r mich?";
 };                       
 
 FUNC INT Info_GRD_275_Tips_Condition()
@@ -98,7 +98,7 @@ FUNC INT Info_GRD_275_Tips_Condition()
 
 FUNC VOID Info_GRD_275_Tips_Info()
 {
-	AI_Output (other,self,"Info_GRD_275_Tips_15_00"); //Hast du irgendwelche Tipps für mich?
+	AI_Output (other,self,"Info_GRD_275_Tips_15_00"); //Hast du irgendwelche Tipps fÃ¼r mich?
 	AI_Output (self,other,"Info_GRD_275_Tips_06_01"); //Ja. Geh nich' allein in den Wald.
 	AI_Output (self,other,"Info_GRD_275_Tips_06_02"); //Es sei denn, du bist stark genug, gegen die ganzen Viecher anzukommen.
 };
@@ -110,8 +110,8 @@ FUNC VOID Info_GRD_275_Tips_Info()
 
 
 /*
-	AI_Output(other,self,"Info_GRD_275_PreExit_15_02"); //Ich werde bestimmt nicht in den Minen für euch schuften.
-	AI_Output(self,other,"Info_GRD_275_PreExit_06_03"); //In dem Fall bist du wohl unser zukünftiger Kollege? Dann sei schön lieb zu uns, wir sind nämlich morgen auch noch da, hehe.
-	AI_Output(other,self,"Info_GRD_275_PreExit_15_04"); //Ich habe gehört es gibt auch noch andere Lager...
-	AI_Output(self,other,"Info_GRD_275_PreExit_06_05"); //So wie du rumläufst schaffst Du es nicht mal bis dahin zu kommen. Und jetzt weg mit dir.
+	AI_Output(other,self,"Info_GRD_275_PreExit_15_02"); //Ich werde bestimmt nicht in den Minen fÃ¼r euch schuften.
+	AI_Output(self,other,"Info_GRD_275_PreExit_06_03"); //In dem Fall bist du wohl unser zukÃ¼nftiger Kollege? Dann sei schÃ¶n lieb zu uns, wir sind nÃ¤mlich morgen auch noch da, hehe.
+	AI_Output(other,self,"Info_GRD_275_PreExit_15_04"); //Ich habe gehÃ¶rt es gibt auch noch andere Lager...
+	AI_Output(self,other,"Info_GRD_275_PreExit_06_05"); //So wie du rumlÃ¤ufst schaffst Du es nicht mal bis dahin zu kommen. Und jetzt weg mit dir.
 */

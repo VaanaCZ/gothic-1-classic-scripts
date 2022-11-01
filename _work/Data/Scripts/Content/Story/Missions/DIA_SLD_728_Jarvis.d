@@ -19,7 +19,7 @@ FUNC INT DIA_Jarvis_EXIT_Condition()
 
 FUNC VOID DIA_Jarvis_EXIT_Info()
 {	
-	AI_Output (self, other,"DIA_Jarvis_EXIT_08_00"); //Pass auf deinen Rücken auf!
+	AI_Output (self, other,"DIA_Jarvis_EXIT_08_00"); //Pass auf deinen RÃ¼cken auf!
 	AI_StopProcessInfos	(self);
 };
 
@@ -46,13 +46,13 @@ FUNC VOID DIA_Jarvis_First_Info()
 {	
 	AI_Output (self, other,"DIA_Jarvis_First_08_00"); //Hast du vor, durch dies Tor zu gehen?
 	AI_Output (other, self,"DIA_Jarvis_First_15_01"); //Willst du mich aufhalten?
-	AI_Output (self, other,"DIA_Jarvis_First_08_02"); //Nein, aber du solltest wissen, was dich erwartet. Es läuft hier nicht so wie im Alten Lager und erst recht nicht wie bei den Sektenspinnern!
-	AI_Output (other, self,"DIA_Jarvis_First_15_03"); //Und wie läuft es hier?
-	AI_Output (self, other,"DIA_Jarvis_First_08_04"); //Es gibt hier keine Gardisten oder Templer, die auf dich aufpassen. Jeder ist sich selbst der Nächste, und die einzigen, die zusammenhalten, sind wir Söldner.
+	AI_Output (self, other,"DIA_Jarvis_First_08_02"); //Nein, aber du solltest wissen, was dich erwartet. Es lÃ¤uft hier nicht so wie im Alten Lager und erst recht nicht wie bei den Sektenspinnern!
+	AI_Output (other, self,"DIA_Jarvis_First_15_03"); //Und wie lÃ¤uft es hier?
+	AI_Output (self, other,"DIA_Jarvis_First_08_04"); //Es gibt hier keine Gardisten oder Templer, die auf dich aufpassen. Jeder ist sich selbst der NÃ¤chste, und die einzigen, die zusammenhalten, sind wir SÃ¶ldner.
 };
 
 // ************************************************************
-// 						Söldner
+// 						SÃ¶ldner
 // ************************************************************
 
 INSTANCE DIA_Jarvis_SldInfo (C_INFO)
@@ -62,7 +62,7 @@ INSTANCE DIA_Jarvis_SldInfo (C_INFO)
 	condition	= DIA_Jarvis_SldInfo_Condition;
 	information	= DIA_Jarvis_SldInfo_Info;
 	permanent	= 0;
-	description	= "Was machen die Söldner?";
+	description	= "Was machen die SÃ¶ldner?";
 };                       
 
 FUNC INT DIA_Jarvis_SldInfo_Condition()
@@ -75,10 +75,10 @@ FUNC INT DIA_Jarvis_SldInfo_Condition()
 
 FUNC VOID DIA_Jarvis_SldInfo_Info()
 {	
-	AI_Output (other, self,"DIA_Jarvis_SldInfo_15_00"); //Was machen die Söldner?
-	AI_Output (self, other,"DIA_Jarvis_SldInfo_08_01"); //Wir - wir sind die Söldner der Wassermagier.
-	AI_Output (self, other,"DIA_Jarvis_SldInfo_08_02"); //Unser Ziel ist es, hier auszubrechen. Wir arbeiten hart dafür und wir wollen uns hier keinen Lenz machen, wie die Lumpen aus dem Alten Lager, die sich nur auf den Schultern der Buddler ausruhen.
-	AI_Output (self, other,"DIA_Jarvis_SldInfo_08_03"); //Und wir alle folgen Lee. Er ist ein großer Mann. Nur er hält dieses verdammte Lager zusammen.
+	AI_Output (other, self,"DIA_Jarvis_SldInfo_15_00"); //Was machen die SÃ¶ldner?
+	AI_Output (self, other,"DIA_Jarvis_SldInfo_08_01"); //Wir - wir sind die SÃ¶ldner der Wassermagier.
+	AI_Output (self, other,"DIA_Jarvis_SldInfo_08_02"); //Unser Ziel ist es, hier auszubrechen. Wir arbeiten hart dafÃ¼r und wir wollen uns hier keinen Lenz machen, wie die Lumpen aus dem Alten Lager, die sich nur auf den Schultern der Buddler ausruhen.
+	AI_Output (self, other,"DIA_Jarvis_SldInfo_08_03"); //Und wir alle folgen Lee. Er ist ein groÃŸer Mann. Nur er hÃ¤lt dieses verdammte Lager zusammen.
 };
 
 // ************************************************************
@@ -106,9 +106,9 @@ FUNC INT DIA_Jarvis_Magier_Condition()
 FUNC VOID DIA_Jarvis_Magier_Info()
 {	
 	AI_Output (other, self,"DIA_Jarvis_Magier_15_00"); //Was machen die Magier?
-	AI_Output (self, other,"DIA_Jarvis_Magier_08_01"); //Sie erforschen die magischen Eigenschafen des Erzes, das unsere Schürfer aus der Mine holen.
+	AI_Output (self, other,"DIA_Jarvis_Magier_08_01"); //Sie erforschen die magischen Eigenschafen des Erzes, das unsere SchÃ¼rfer aus der Mine holen.
 	AI_Output (self, other,"DIA_Jarvis_Magier_08_02"); //Soweit ich das verstanden habe, wollen sie den ganzen verdammten Erzhaufen in die Luft jagen, um die Barriere wegzusprengen.
-	AI_Output (other, self,"DIA_Jarvis_Magier_15_03"); //Klingt gefährlich.
+	AI_Output (other, self,"DIA_Jarvis_Magier_15_03"); //Klingt gefÃ¤hrlich.
 	AI_Output (self, other,"DIA_Jarvis_Magier_08_04"); //Sie sagen, wir sollen uns keine Sorgen machen.
 };
 
@@ -137,7 +137,7 @@ FUNC INT DIA_Jarvis_Erzhaufen_Condition()
 FUNC VOID DIA_Jarvis_Erzhaufen_Info()
 {	
 	AI_Output (other, self,"DIA_Jarvis_Erzhaufen_15_00"); //Ihr habt einen riesigen Haufen Erz hier?
-	AI_Output (self, other,"DIA_Jarvis_Erzhaufen_08_01"); //Kann man wohl sagen. Wenn wir den mit der Außenwelt tauschen würden, würde uns der König seine Frau dafür verkaufen .
+	AI_Output (self, other,"DIA_Jarvis_Erzhaufen_08_01"); //Kann man wohl sagen. Wenn wir den mit der AuÃŸenwelt tauschen wÃ¼rden, wÃ¼rde uns der KÃ¶nig seine Frau dafÃ¼r verkaufen .
 	AI_Output (self, other,"DIA_Jarvis_Erzhaufen_08_02"); //Aber wir werden einen Dreck tun, dem alten Sack das Erz zu geben. Wir wollen hier RAUS!
 };
 
@@ -166,7 +166,7 @@ FUNC INT DIA_Jarvis_WoHaufen_Condition()
 FUNC VOID DIA_Jarvis_WoHaufen_Info()
 {	
 	AI_Output (other, self,"DIA_Jarvis_WoHaufen_15_00"); //Wo ist der Erzhaufen?
-	AI_Output (self, other,"DIA_Jarvis_WoHaufen_08_01"); //Willst mal richtig viel Erz sehen, was? In der Mitte der Höhle ist ein Loch, da kippen sie alles rein.
+	AI_Output (self, other,"DIA_Jarvis_WoHaufen_08_01"); //Willst mal richtig viel Erz sehen, was? In der Mitte der HÃ¶hle ist ein Loch, da kippen sie alles rein.
 	AI_Output (self, other,"DIA_Jarvis_WoHaufen_08_02"); //Aber ran kommst du da nicht, das kann ich dir gleich sagen. Die Magier und unsere Leute bewachen das Erz Tag und Nacht.
 	AI_Output (other, self,"DIA_Jarvis_WoHaufen_15_03"); //Ich war nur neugierig.
 };
@@ -196,7 +196,7 @@ FUNC INT DIA_Jarvis_Rest_Condition()
 FUNC VOID DIA_Jarvis_Rest_Info()
 {	
 	AI_Output (other, self,"DIA_Jarvis_Rest_15_00"); //Was ist mit dem Rest der Leute?
-	AI_Output (self, other,"DIA_Jarvis_Rest_08_01"); //Alles Banditen. Sie kümmern sich keinen Deut um das Lager. Ich würde sie nicht mal das Vortor bewachen lassen, wahrscheinlich wäre es sinnvoller, dort ein paar Bauern hinzustellen.
+	AI_Output (self, other,"DIA_Jarvis_Rest_08_01"); //Alles Banditen. Sie kÃ¼mmern sich keinen Deut um das Lager. Ich wÃ¼rde sie nicht mal das Vortor bewachen lassen, wahrscheinlich wÃ¤re es sinnvoller, dort ein paar Bauern hinzustellen.
 };
 
 // ************************************************************
@@ -224,11 +224,11 @@ FUNC INT DIA_Jarvis_PERM_Condition()
 FUNC VOID DIA_Jarvis_PERM_Info()
 {	
 	AI_Output (other, self,"DIA_Jarvis_PERM_15_00"); //Wie ist die Lage zur Zeit?
-	AI_Output (self, other,"DIA_Jarvis_PERM_08_01"); //Die Schürfer sammeln noch. Wenn sie genug Erz haben, jagen wir den Haufen in die Luft.
+	AI_Output (self, other,"DIA_Jarvis_PERM_08_01"); //Die SchÃ¼rfer sammeln noch. Wenn sie genug Erz haben, jagen wir den Haufen in die Luft.
 };
 
 /*------------------------------------------------------------------------
-//							SÖLDNERAUFNAHME									//
+//							SÃ–LDNERAUFNAHME									//
 ------------------------------------------------------------------------*/
 instance Sld_728_Jarvis_AUFNAHMESOLDIER (C_INFO)
 {
@@ -251,13 +251,13 @@ FUNC int  Sld_728_Jarvis_AUFNAHMESOLDIER_Condition()
 func void  Sld_728_Jarvis_AUFNAHMESOLDIER_Info()
 {
 	AI_GotoNpc (hero,self); 
-	AI_Output (self, other,"Sld_728_Jarvis_AUFNAHMESOLDIER_Info_08_01"); //Hey, ich habe gehört, du hast die Crawler in der Mine ganz schön aufgemischt.
-	AI_Output (self, other,"Sld_728_Jarvis_AUFNAHMESOLDIER_Info_08_02"); //Lee ist bestimmt bereit, dich als Söldner aufzunehmen. Sprich doch einfach mal mit ihm.
+	AI_Output (self, other,"Sld_728_Jarvis_AUFNAHMESOLDIER_Info_08_01"); //Hey, ich habe gehÃ¶rt, du hast die Crawler in der Mine ganz schÃ¶n aufgemischt.
+	AI_Output (self, other,"Sld_728_Jarvis_AUFNAHMESOLDIER_Info_08_02"); //Lee ist bestimmt bereit, dich als SÃ¶ldner aufzunehmen. Sprich doch einfach mal mit ihm.
 
-	self.flags = 0;		// Immortal-Flag löschen
+	self.flags = 0;		// Immortal-Flag lÃ¶schen
 
 	Log_CreateTopic (GE_BecomeMercenary,LOG_NOTE);
-	B_LogEntry (GE_BecomeMercenary,"Ich sollte mal mit Lee reden. Vielleicht nimmt er mich in die Reihen der Söldner auf.");
+	B_LogEntry (GE_BecomeMercenary,"Ich sollte mal mit Lee reden. Vielleicht nimmt er mich in die Reihen der SÃ¶ldner auf.");
 };
 
 

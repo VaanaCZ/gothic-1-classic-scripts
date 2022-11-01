@@ -45,9 +45,9 @@ FUNC INT DIA_Wolf_Hello_Condition()
 FUNC VOID DIA_Wolf_Hello_Info()
 {
 	AI_Output			(other, self,"DIA_Wolf_Hello_15_00"); //Wer bist du?
-	AI_Output			(self, other,"DIA_Wolf_Hello_09_01"); //Ich bin Wolf, der Rüstungsbauer.
+	AI_Output			(self, other,"DIA_Wolf_Hello_09_01"); //Ich bin Wolf, der RÃ¼stungsbauer.
 
-	B_LogEntry			(GE_TraderNC,	"Wolf versorgt die Banditen mit RÜSTUNGEN. Er ist normalerweise vor seiner Hütte in der Großen Wohnhöhle zu finden.");
+	B_LogEntry			(GE_TraderNC,	"Wolf versorgt die Banditen mit RÃœSTUNGEN. Er ist normalerweise vor seiner HÃ¼tte in der GroÃŸen WohnhÃ¶hle zu finden.");
 };
 
 //****************************************
@@ -100,13 +100,13 @@ FUNC int  Org_855_Wolf_TRADE_Condition()
 FUNC void  Org_855_Wolf_TRADE_Info()
 {
 	AI_Output (other, self,"Org_855_Wolf_TRADE_15_00"); //Handelst du noch mit was anderem?
-	AI_Output (self, other,"Org_855_Wolf_TRADE_09_01"); //Ich kaufe Felle und Häute von den Jägern. Wenn du an so was rankommst, kauf' ich dir die Sachen ab.
+	AI_Output (self, other,"Org_855_Wolf_TRADE_09_01"); //Ich kaufe Felle und HÃ¤ute von den JÃ¤gern. Wenn du an so was rankommst, kauf' ich dir die Sachen ab.
 	
 
 };
 
 //****************************************
-//				Wo Jäger
+//				Wo JÃ¤ger
 //****************************************
 
 instance  Org_855_Wolf_WhereHunter (C_INFO)
@@ -116,7 +116,7 @@ instance  Org_855_Wolf_WhereHunter (C_INFO)
 	condition		= Org_855_Wolf_WhereHunter_Condition;
 	information		= Org_855_Wolf_WhereHunter_Info;
 	permanent		= 1;
-	description		= "Wie komme ich an Felle und Häute?"; 
+	description		= "Wie komme ich an Felle und HÃ¤ute?"; 
 };
 
 FUNC int  Org_855_Wolf_WhereHunter_Condition()
@@ -126,9 +126,9 @@ FUNC int  Org_855_Wolf_WhereHunter_Condition()
 
 FUNC void  Org_855_Wolf_WhereHunter_Info()
 {
-	AI_Output (other, self,"Org_855_Wolf_WhereHunter_15_00"); //Wie komme ich an Felle und Häute?
+	AI_Output (other, self,"Org_855_Wolf_WhereHunter_15_00"); //Wie komme ich an Felle und HÃ¤ute?
 	AI_Output (self, other,"Org_855_Wolf_WhereHunter_09_01"); //Auf dem Weg zum Neuen Lager findest du Aidan. Er kann dir beibringen, wie du Tieren das Fell abziehst.
-	AI_Output (self, other,"Org_855_Wolf_WhereHunter_09_02"); //Ratford und Drax treiben sich nördlich vom Alten Lager rum, auf dem Weg zum Austauschplatz.
+	AI_Output (self, other,"Org_855_Wolf_WhereHunter_09_02"); //Ratford und Drax treiben sich nÃ¶rdlich vom Alten Lager rum, auf dem Weg zum Austauschplatz.
 };
 
 //****************************************
@@ -142,7 +142,7 @@ INSTANCE DIA_Wolf_SellArmor (C_INFO)
 	condition	= DIA_Wolf_SellArmor_Condition;
 	information	= DIA_Wolf_SellArmor_Info;
 	permanent	= 1;
-	description = "Ich suche eine bessere Rüstung.";
+	description = "Ich suche eine bessere RÃ¼stung.";
 };                       
 
 FUNC INT DIA_Wolf_SellArmor_Condition()
@@ -156,7 +156,7 @@ FUNC INT DIA_Wolf_SellArmor_Condition()
 
 FUNC VOID DIA_Wolf_SellArmor_Info()
 {
-	AI_Output (other, self,"DIA_Wolf_SellArmor_15_00"); //Ich suche eine bessere Rüstung.
+	AI_Output (other, self,"DIA_Wolf_SellArmor_15_00"); //Ich suche eine bessere RÃ¼stung.
 	
 	if ( (Npc_GetTrueGuild(other)==GIL_ORG) || (Npc_GetTrueGuild(other)==GIL_SLD) )
 	{
@@ -169,7 +169,7 @@ FUNC VOID DIA_Wolf_SellArmor_Info()
 	}
 	else
 	{
-		AI_Output (self, other,"DIA_Wolf_SellArmor_WRONGGUILD_09_00"); //Ich kann dir keine verkaufen. Lares reißt mir den Kopf ab, wenn ich unsere Rüstungen an Fremde verkaufe.
+		AI_Output (self, other,"DIA_Wolf_SellArmor_WRONGGUILD_09_00"); //Ich kann dir keine verkaufen. Lares reiÃŸt mir den Kopf ab, wenn ich unsere RÃ¼stungen an Fremde verkaufe.
 	};
 };
 
@@ -180,15 +180,15 @@ func void DIA_Wolf_SellArmor_BACK()
 
 func void DIA_Wolf_SellArmor_M()
 {
-	AI_Output (other, self,"DIA_Wolf_SellArmor_M_15_01"); //Ich möchte die mittlere Rüstung haben.
+	AI_Output (other, self,"DIA_Wolf_SellArmor_M_15_01"); //Ich mÃ¶chte die mittlere RÃ¼stung haben.
 	
 	if (Npc_HasItems (hero,ItMinugget)< VALUE_ORG_ARMOR_M)
 	{
-		AI_Output (self, other,"DIA_Wolf_SellArmor_M_09_02"); //Ohne Erz gibt es auch keine Rüstung.
+		AI_Output (self, other,"DIA_Wolf_SellArmor_M_09_02"); //Ohne Erz gibt es auch keine RÃ¼stung.
 	}
 	else 
 	{
-		AI_Output			(self, other,"DIA_Wolf_SellArmor_M_09_03"); //Eine gute Rüstung.Noch nicht so gut, wie das, was ich trage, aber sie bietet ausreichend Schutz.
+		AI_Output			(self, other,"DIA_Wolf_SellArmor_M_09_03"); //Eine gute RÃ¼stung.Noch nicht so gut, wie das, was ich trage, aber sie bietet ausreichend Schutz.
 
 		B_GiveInvItems		(hero, self,ItMinugget,VALUE_ORG_ARMOR_M);
 		
@@ -202,15 +202,15 @@ func void DIA_Wolf_SellArmor_M()
 
 func void DIA_Wolf_SellArmor_H()
 {
-	AI_Output (other,self,"DIA_Wolf_SellArmor_H_15_01"); //Kannst du mir eine schwere Rüstung verkaufen?
+	AI_Output (other,self,"DIA_Wolf_SellArmor_H_15_01"); //Kannst du mir eine schwere RÃ¼stung verkaufen?
 
 	if (Npc_HasItems (hero,ItMinugget) < VALUE_ORG_ARMOR_H) 
 	{
-		AI_Output (self, other,"DIA_Wolf_SellArmor_H_09_02"); //Ohne Erz gibt es auch keine Rüstung.
+		AI_Output (self, other,"DIA_Wolf_SellArmor_H_09_02"); //Ohne Erz gibt es auch keine RÃ¼stung.
 	}
 	else 
 	{
-		AI_Output			(self, other,"DIA_Wolf_SellArmor_H_09_03"); //Diese Rüstung wird dich vor allen Gefahren schützen! Ich trage sie auch und habe bisher überlebt. Nicht zuletzt dank der Rüstung.
+		AI_Output			(self, other,"DIA_Wolf_SellArmor_H_09_03"); //Diese RÃ¼stung wird dich vor allen Gefahren schÃ¼tzen! Ich trage sie auch und habe bisher Ã¼berlebt. Nicht zuletzt dank der RÃ¼stung.
 
 		B_GiveInvItems		(hero, self, ItMinugget,VALUE_ORG_ARMOR_H);
 		
@@ -234,7 +234,7 @@ instance  ORG_855_Wolf_TRAINOFFER (C_INFO)
 	information		= ORG_855_Wolf_TRAINOFFER_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Ich möchte den richtigen Umgang mit dem Bogen lernen"; 
+	description		= "Ich mÃ¶chte den richtigen Umgang mit dem Bogen lernen"; 
 };
 
 FUNC int  ORG_855_Wolf_TRAINOFFER_Condition()
@@ -247,8 +247,8 @@ FUNC int  ORG_855_Wolf_TRAINOFFER_Condition()
 
 FUNC void  ORG_855_Wolf_TRAINOFFER_Info()
 {
-	AI_Output (other, self,"ORG_855_Wolf_TRAINOFFER_Info_15_01"); //Ich möchte den richtigen Umgang mit dem Bogen lernen.
-	AI_Output (self, other,"ORG_855_Wolf_TRAINOFFER_Info_09_02"); //Kann ich dir beibringen. Das ist aber keine Gefälligkeit, denn auch ich muss essen.
+	AI_Output (other, self,"ORG_855_Wolf_TRAINOFFER_Info_15_01"); //Ich mÃ¶chte den richtigen Umgang mit dem Bogen lernen.
+	AI_Output (self, other,"ORG_855_Wolf_TRAINOFFER_Info_09_02"); //Kann ich dir beibringen. Das ist aber keine GefÃ¤lligkeit, denn auch ich muss essen.
 	AI_Output (other, self,"ORG_855_Wolf_TRAINOFFER_Info_15_03"); //Wie viel?
 	AI_Output (self, other,"ORG_855_Wolf_TRAINOFFER_Info_09_04"); //Alles, was ich dir beibringe, kostet dich 50 Erz. Ich feilsche nicht.
 	
@@ -287,8 +287,8 @@ FUNC void  ORG_855_Wolf_TRAIN_Info()
 	{
 		if B_GiveSkill(hero,NPC_TALENT_BOW,1,LPCOST_TALENT_BOW_1)
 		{
-			AI_Output (self, other,"ORG_855_Wolf_TRAIN_Info_09_02"); //Deine Geschicklichkeit ist das Maß für einen Treffer. Je geschickter du wirst, umso genauer werden deine Pfeile ihr Ziel treffen.
-			AI_Output (self, other,"ORG_855_Wolf_TRAIN_Info_09_03"); //Dein Talent bestimmt, auf welche Reichweite du dein Ziel noch triffst. Um ein guter Schütze zu werden, solltest du beides zu gleichen Teilen steigern.
+			AI_Output (self, other,"ORG_855_Wolf_TRAIN_Info_09_02"); //Deine Geschicklichkeit ist das MaÃŸ fÃ¼r einen Treffer. Je geschickter du wirst, umso genauer werden deine Pfeile ihr Ziel treffen.
+			AI_Output (self, other,"ORG_855_Wolf_TRAIN_Info_09_03"); //Dein Talent bestimmt, auf welche Reichweite du dein Ziel noch triffst. Um ein guter SchÃ¼tze zu werden, solltest du beides zu gleichen Teilen steigern.
 			B_GiveInvItems (hero, self, ItMiNugget,50);
 		};
 	};
@@ -324,10 +324,10 @@ FUNC void  ORG_855_Wolf_TRAINAGAIN_Info()
 	{
 		if B_GiveSkill(hero,NPC_TALENT_BOW,2,LPCOST_TALENT_BOW_2)
 		{
-			AI_Output (self, other,"ORG_855_Wolf_TRAINAGAIN_Info_09_02"); //Du bist jetzt schon ein guter Jäger. Erfahre nun das letzte Wissen.
-			AI_Output (self, other,"ORG_855_Wolf_TRAINAGAIN_Info_09_03"); //Um ein Meisterschütze zu werden, musst du aufhören, einer sein zu wollen.
+			AI_Output (self, other,"ORG_855_Wolf_TRAINAGAIN_Info_09_02"); //Du bist jetzt schon ein guter JÃ¤ger. Erfahre nun das letzte Wissen.
+			AI_Output (self, other,"ORG_855_Wolf_TRAINAGAIN_Info_09_03"); //Um ein MeisterschÃ¼tze zu werden, musst du aufhÃ¶ren, einer sein zu wollen.
 			AI_Output (self, other,"ORG_855_Wolf_TRAINAGAIN_Info_09_04"); //Erkenne das Gesetz von Auge, Spannkraft, Flugbahn und Ziel. Sei immer auf der Hut, sei immer bereit.
-			AI_Output (self, other,"ORG_855_Wolf_TRAINAGAIN_Info_09_05"); //Die Technik beherrschst du schon lange zur Genüge. Geh einfach hin und wende dein Wissen und Können an.
+			AI_Output (self, other,"ORG_855_Wolf_TRAINAGAIN_Info_09_05"); //Die Technik beherrschst du schon lange zur GenÃ¼ge. Geh einfach hin und wende dein Wissen und KÃ¶nnen an.
 			
 			B_GiveInvItems (hero, self, ItMiNugget,50);
 		};
@@ -463,13 +463,13 @@ FUNC INT Info_Wolf_SPEAK_Condition()
 func VOID Info_Wolf_SPEAK_Info()
 {
 	AI_Output 			(hero,self,"Info_Wolf_SPEAK_15_01"); //Worum geht es?
-	AI_Output 			(self,hero,"Info_Wolf_SPEAK_09_02"); //Ich hatte neulich eine Idee, wie wir völlig neue Rüstungen herstellen können.
+	AI_Output 			(self,hero,"Info_Wolf_SPEAK_09_02"); //Ich hatte neulich eine Idee, wie wir vÃ¶llig neue RÃ¼stungen herstellen kÃ¶nnen.
 	AI_Output 			(hero,self,"Info_Wolf_SPEAK_15_03"); //Aha, und wie?
-	AI_Output 			(self,hero,"Info_Wolf_SPEAK_09_04"); //Das härteste Material, dass ich kenne, sind die Panzerplatten der Minecrawler.
-	AI_Output 			(self,hero,"Info_Wolf_SPEAK_09_05"); //Nicht etwa die der kleinen, harmlosen Exemplare aus der jetzt verschütteten Mine von Gomez ...
-	AI_Output 			(self,hero,"Info_Wolf_SPEAK_09_06"); //...NEEEEIN. Die nicht. In unserer Mine lebt eine wesentlich gefährlichere Unterart.
+	AI_Output 			(self,hero,"Info_Wolf_SPEAK_09_04"); //Das hÃ¤rteste Material, dass ich kenne, sind die Panzerplatten der Minecrawler.
+	AI_Output 			(self,hero,"Info_Wolf_SPEAK_09_05"); //Nicht etwa die der kleinen, harmlosen Exemplare aus der jetzt verschÃ¼tteten Mine von Gomez ...
+	AI_Output 			(self,hero,"Info_Wolf_SPEAK_09_06"); //...NEEEEIN. Die nicht. In unserer Mine lebt eine wesentlich gefÃ¤hrlichere Unterart.
 	AI_Output 			(self,hero,"Info_Wolf_SPEAK_09_07"); //Der Panzer dieser Biester ist fast nicht zu durchdringen!
-	AI_Output 			(self,hero,"Info_Wolf_SPEAK_09_08"); //Wenn du mir einige dieser Panzerplatten bringen könntest, würde ich versuchen, daraus eine Rüstung herzustellen.
+	AI_Output 			(self,hero,"Info_Wolf_SPEAK_09_08"); //Wenn du mir einige dieser Panzerplatten bringen kÃ¶nntest, wÃ¼rde ich versuchen, daraus eine RÃ¼stung herzustellen.
 };
 
 //---------------------------------------------------------------------
@@ -496,8 +496,8 @@ FUNC INT Info_Wolf_SKIN_Condition()
 func VOID Info_Wolf_SKIN_Info()
 {
 	AI_Output 			(hero,self,"Info_Wolf_SKIN_15_01"); //Wie bekomme ich diese Platten von den Biestern ab?
-	AI_Output 			(self,hero,"Info_Wolf_SKIN_09_02"); //Das ist relativ einfach. Die Rückenplatten sind nur an deren Rändern mit dem Körper verwachsen.
-	AI_Output 			(self,hero,"Info_Wolf_SKIN_09_03"); //Nimm einfach ein Rasiermesser und schneide halbschräg an den Rändern entlang.
+	AI_Output 			(self,hero,"Info_Wolf_SKIN_09_02"); //Das ist relativ einfach. Die RÃ¼ckenplatten sind nur an deren RÃ¤ndern mit dem KÃ¶rper verwachsen.
+	AI_Output 			(self,hero,"Info_Wolf_SKIN_09_03"); //Nimm einfach ein Rasiermesser und schneide halbschrÃ¤g an den RÃ¤ndern entlang.
 	AI_Output 			(hero,self,"Info_Wolf_SKIN_15_04"); //Okay, kapiert! Mal sehen, ob ich solche Panzerplatten finden kann.
 
 	Knows_GetMCPlates = TRUE;
@@ -505,10 +505,10 @@ func VOID Info_Wolf_SKIN_Info()
 	
 	Log_CreateTopic		(CH4_MCPlateArmor,	LOG_MISSION);
 	Log_SetTopicStatus	(CH4_MCPlateArmor,	LOG_RUNNING);
-	B_LogEntry			(CH4_MCPlateArmor,	"Der Bandit Wolf aus dem neuen Lager bot mir an, aus den Panzerplatten von Minecrawlern eine Rüstung anzufertigen. Er zeigte mir, wie man die Panzerplatten von toten Crawlern entfernt."); 
+	B_LogEntry			(CH4_MCPlateArmor,	"Der Bandit Wolf aus dem neuen Lager bot mir an, aus den Panzerplatten von Minecrawlern eine RÃ¼stung anzufertigen. Er zeigte mir, wie man die Panzerplatten von toten Crawlern entfernt."); 
 	
 	Log_CreateTopic (GE_AnimalTrophies,LOG_NOTE);
-	B_LogEntry (GE_AnimalTrophies,"Wissen über Platten entfernen - Minecrawler - Krieger");
+	B_LogEntry (GE_AnimalTrophies,"Wissen Ã¼ber Platten entfernen - Minecrawler - Krieger");
 
 	AI_StopProcessInfos	(self);
 };
@@ -523,7 +523,7 @@ INSTANCE Info_Wolf_PROFIT (C_INFO)
 	information	= Info_Wolf_PROFIT_Info;
 	important	= 0;	
 	permanent	= 0;
-	description = "Und diese Information gibst du mir völlig uneigennützig?";
+	description = "Und diese Information gibst du mir vÃ¶llig uneigennÃ¼tzig?";
 };                       
 
 FUNC INT Info_Wolf_PROFIT_Condition()
@@ -536,8 +536,8 @@ FUNC INT Info_Wolf_PROFIT_Condition()
 
 func VOID Info_Wolf_PROFIT_Info()
 {
-	AI_Output 			(hero,self,"Info_Wolf_PROFIT_15_01"); //Und diese Information gibst du mir völlig uneigennützig?
-	AI_Output 			(self,hero,"Info_Wolf_PROFIT_09_02"); //Nicht ganz ... Wenn es mir gelingt, aus solchen Platten eine gute Rüstung zu zimmern, werde ich sehr schnell  ... sehr viel  ... Ach, lassen wird das!
+	AI_Output 			(hero,self,"Info_Wolf_PROFIT_15_01"); //Und diese Information gibst du mir vÃ¶llig uneigennÃ¼tzig?
+	AI_Output 			(self,hero,"Info_Wolf_PROFIT_09_02"); //Nicht ganz ... Wenn es mir gelingt, aus solchen Platten eine gute RÃ¼stung zu zimmern, werde ich sehr schnell  ... sehr viel  ... Ach, lassen wird das!
 };
 
 //---------------------------------------------------------------------
@@ -566,7 +566,7 @@ FUNC INT Info_Wolf_MCPLATESFEW_Condition()
 func VOID Info_Wolf_MCPLATESFEW_Info()
 {
 	AI_Output 			(hero,self,"Info_Wolf_MCPLATESFEW_15_01"); //Ich habe einige der Minecrawler-Panzerplatten eingesammelt!
-	AI_Output 			(self,hero,"Info_Wolf_MCPLATESFEW_09_02"); //Zu wenig! Das reicht nicht für eine ganze Rüstung!
+	AI_Output 			(self,hero,"Info_Wolf_MCPLATESFEW_09_02"); //Zu wenig! Das reicht nicht fÃ¼r eine ganze RÃ¼stung!
 	AI_Output 			(self,hero,"Info_Wolf_MCPLATESFEW_09_03"); //Bring mir mehr von diesen Platten!
 };
 
@@ -596,13 +596,13 @@ func VOID Info_Wolf_MCPLATESENOUGH_Info()
 {
 	AI_Output 			(hero,self,"Info_Wolf_MCPLATESENOUGH_15_01"); //Ich habe jede Menge dieser Minecrawler-Panzerplatten eingesammelt!
 	AI_Output 			(self,hero,"Info_Wolf_MCPLATESENOUGH_09_02"); //Fantastisch!!! Ich werde mich gleich an die Arbeit machen!
-	AI_Output 			(hero,self,"Info_Wolf_MCPLATESENOUGH_15_03"); //Wie lange wirst du dafür brauchen?
+	AI_Output 			(hero,self,"Info_Wolf_MCPLATESENOUGH_15_03"); //Wie lange wirst du dafÃ¼r brauchen?
 	AI_Output 			(self,hero,"Info_Wolf_MCPLATESENOUGH_09_04"); //Ich habe nicht die geringste Ahnung. Das ist eine komplette Neuentwicklung, Mann!
-	AI_Output 			(self,hero,"Info_Wolf_MCPLATESENOUGH_09_05"); //Schau einfach ab und zu bei mir rein, wenn du in der Nähe bist!
+	AI_Output 			(self,hero,"Info_Wolf_MCPLATESENOUGH_09_05"); //Schau einfach ab und zu bei mir rein, wenn du in der NÃ¤he bist!
 
 	MCPlatesDelivered = TRUE;
 
-	B_LogEntry			(CH4_MCPlateArmor,	"Wolf hat 15 dieser Minecralwerplatten von mir erhalten. Er benötigt etwas Zeit und bat mich später wiederzukommen.");
+	B_LogEntry			(CH4_MCPlateArmor,	"Wolf hat 15 dieser Minecralwerplatten von mir erhalten. Er benÃ¶tigt etwas Zeit und bat mich spÃ¤ter wiederzukommen.");
 	B_GiveXP			(XP_DeliveredMCPlates);
 	
 	B_GiveInvItems	(hero, self, ItAt_Crawler_02,	15);
@@ -619,7 +619,7 @@ INSTANCE Info_Wolf_ARMORINWORK (C_INFO)
 	information	= Info_Wolf_ARMORINWORK_Info;
 	important	= 0;	
 	permanent	= 1;
-	description = "Wie weit bist du mit der Rüstung?";
+	description = "Wie weit bist du mit der RÃ¼stung?";
 };                       
 
 FUNC INT Info_Wolf_ARMORINWORK_Condition()
@@ -633,7 +633,7 @@ FUNC INT Info_Wolf_ARMORINWORK_Condition()
 
 func VOID Info_Wolf_ARMORINWORK_Info()
 {
-	AI_Output 			(hero,self,"Info_Wolf_ARMORINWORK_15_01"); //Wie weit bist du mit der Rüstung?
+	AI_Output 			(hero,self,"Info_Wolf_ARMORINWORK_15_01"); //Wie weit bist du mit der RÃ¼stung?
 	AI_Output 			(self,hero,"Info_Wolf_ARMORINWORK_09_02"); //Dauert noch, Mann! Diese Platten sind verdammt harter Tobak. Ich habe noch keinen Weg gefunden, sie aneinander zu befestigen!
 	AI_Output 			(self,hero,"Info_Wolf_ARMORINWORK_09_03"); //Gib mir noch etwas Zeit, ich bekomme das schon hin!
 	AI_StopProcessInfos	(self);
@@ -649,7 +649,7 @@ INSTANCE Info_Wolf_ARMORFINISHED (C_INFO)
 	information	= Info_Wolf_ARMORFINISHED_Info;
 	important	= 0;	
 	permanent	= 0;
-	description = "Wie weit bist du mit der Rüstung? ";
+	description = "Wie weit bist du mit der RÃ¼stung? ";
 };                       
 
 FUNC INT Info_Wolf_ARMORFINISHED_Condition()
@@ -663,14 +663,14 @@ FUNC INT Info_Wolf_ARMORFINISHED_Condition()
 
 func VOID Info_Wolf_ARMORFINISHED_Info()
 {
-	AI_Output 			(hero,self,"Info_Wolf_ARMORFINISHED_15_01"); //Wie weit bist du mit der Rüstung?
-	AI_Output 			(self,hero,"Info_Wolf_ARMORFINISHED_09_02"); //Ich habe endlich einen Weg gefunden, diese üblen Panzerplatten aneinander zu befestigen!
-	AI_Output 			(hero,self,"Info_Wolf_ARMORFINISHED_15_03"); //Das heißt, die Rüstung ist fertig?
-	AI_Output 			(self,hero,"Info_Wolf_ARMORFINISHED_09_04"); //Ja, Mann. Hier ist sie. Scheint tatsächlich noch härter zu sein als alles, was in unserem Lager so getragen wird.
+	AI_Output 			(hero,self,"Info_Wolf_ARMORFINISHED_15_01"); //Wie weit bist du mit der RÃ¼stung?
+	AI_Output 			(self,hero,"Info_Wolf_ARMORFINISHED_09_02"); //Ich habe endlich einen Weg gefunden, diese Ã¼blen Panzerplatten aneinander zu befestigen!
+	AI_Output 			(hero,self,"Info_Wolf_ARMORFINISHED_15_03"); //Das heiÃŸt, die RÃ¼stung ist fertig?
+	AI_Output 			(self,hero,"Info_Wolf_ARMORFINISHED_09_04"); //Ja, Mann. Hier ist sie. Scheint tatsÃ¤chlich noch hÃ¤rter zu sein als alles, was in unserem Lager so getragen wird.
 	AI_Output 			(hero,self,"Info_Wolf_ARMORFINISHED_15_05"); //Danke, du hast was gut bei mir!
 	AI_Output 			(self,hero,"Info_Wolf_ARMORFINISHED_09_06"); //Ach, ist schon in Ordnung! Ich komme schon auf meine Kosten!
 
-	B_LogEntry			(CH4_MCPlateArmor,	"Die Rüstung ist fertig. Ein ausgezeichnetes Stück Arbeit und der beste Rüstungsschutz, den ich bisher gesehen habe.");
+	B_LogEntry			(CH4_MCPlateArmor,	"Die RÃ¼stung ist fertig. Ein ausgezeichnetes StÃ¼ck Arbeit und der beste RÃ¼stungsschutz, den ich bisher gesehen habe.");
 	Log_SetTopicStatus	(CH4_MCPlateArmor,	LOG_SUCCESS);
 
 	B_GiveXP			(XP_GorMCPlateArmor);
@@ -700,9 +700,9 @@ FUNC int  Org_855_Wolf_SELLBOW_Condition()
 FUNC void  Org_855_Wolf_SELLBOW_Info()
 {
 	AI_Output (other, self,"Org_855_Wolf_SELLBOW_Info_15_01"); //Wo kann ich denn hier einen Bogen bekommen?
-	AI_Output (self, other,"Org_855_Wolf_SELLBOW_Info_09_02"); //Da bist du bei mir genau richtig. Für gutes Erz bekommst du gute Ware.
+	AI_Output (self, other,"Org_855_Wolf_SELLBOW_Info_09_02"); //Da bist du bei mir genau richtig. FÃ¼r gutes Erz bekommst du gute Ware.
 	Log_CreateTopic   	(GE_TraderNC,LOG_NOTE);
-	B_LogEntry			(GE_TraderNC,"Wolf, der Bandit, handelt mit BÖGEN.");
+	B_LogEntry			(GE_TraderNC,"Wolf, der Bandit, handelt mit BÃ–GEN.");
 
 };  
 

@@ -42,7 +42,7 @@ FUNC int  Tpl_1437_Templer_NERV_Condition()
 FUNC void  Tpl_1437_Templer_NERV_Info()
 {
 	AI_Output (other, self,"Tpl_1437_Templer_NERV_Info_15_01"); //Was liegt an?
-	AI_Output (self, other,"Tpl_1437_Templer_NERV_Info_13_02"); //Hör mal, musst du eigentlich jeden anquatschen, der hier rumläuft?
+	AI_Output (self, other,"Tpl_1437_Templer_NERV_Info_13_02"); //HÃ¶r mal, musst du eigentlich jeden anquatschen, der hier rumlÃ¤uft?
 	AI_StopProcessInfos	( self );
 };  
 // ERNEUTES ANSPRECHEN ------------------------------------

@@ -37,7 +37,7 @@ INSTANCE Info_Stt_12_EinerVonEuchWerden (C_INFO) // E1
 	condition	= Info_Stt_12_EinerVonEuchWerden_Condition;
 	information	= Info_Stt_12_EinerVonEuchWerden_Info;
 	permanent	= 1;
-	description = "Ich würde mich gerne den Schatten anschliessen.";
+	description = "Ich wÃ¼rde mich gerne den Schatten anschliessen.";
 };                       
 
 FUNC INT Info_Stt_12_EinerVonEuchWerden_Condition()
@@ -50,9 +50,9 @@ FUNC INT Info_Stt_12_EinerVonEuchWerden_Condition()
 
 FUNC VOID Info_Stt_12_EinerVonEuchWerden_Info()
 {
-	AI_Output(other,self,"Info_Stt_12_EinerVonEuchWerden_15_00"); //Ich würde mich gerne den Schatten anschließen.
-	AI_Output(self,other,"Info_Stt_12_EinerVonEuchWerden_12_01"); //So? Dann solltest du wissen, dass Gomez kein Versagen duldet. Wenn du einer von uns werden willst, musst du für ihn durchs Feuer gehen!
-	AI_Output(self,other,"Info_Stt_12_EinerVonEuchWerden_12_02"); //Nur die Hälfte derer, die es versucht haben, sind aufgenommen worden.
+	AI_Output(other,self,"Info_Stt_12_EinerVonEuchWerden_15_00"); //Ich wÃ¼rde mich gerne den Schatten anschlieÃŸen.
+	AI_Output(self,other,"Info_Stt_12_EinerVonEuchWerden_12_01"); //So? Dann solltest du wissen, dass Gomez kein Versagen duldet. Wenn du einer von uns werden willst, musst du fÃ¼r ihn durchs Feuer gehen!
+	AI_Output(self,other,"Info_Stt_12_EinerVonEuchWerden_12_02"); //Nur die HÃ¤lfte derer, die es versucht haben, sind aufgenommen worden.
 	AI_Output(other,self,"Info_Stt_12_EinerVonEuchWerden_15_03"); //Was ist mit dem Rest passiert?
 	AI_Output(self,other,"Info_Stt_12_EinerVonEuchWerden_12_04"); //Vermutlich sitzen die im Neuen Lager und fressen Reis. He he he.
 };
@@ -78,7 +78,7 @@ FUNC INT Info_Stt_12_WichtigePersonen_Condition()
 FUNC VOID Info_Stt_12_WichtigePersonen_Info()
 {
 	AI_Output(other,self,"Info_Stt_12_WichtigePersonen_15_00"); //Wer ist hier der Boss?
-	AI_Output(self,other,"Info_Stt_12_WichtigePersonen_12_01"); //Diego ist unter den Schatten so was wie der Anführer. Aber Thorus entscheidet, wer zu Gomez vorgelassen wird.
+	AI_Output(self,other,"Info_Stt_12_WichtigePersonen_12_01"); //Diego ist unter den Schatten so was wie der AnfÃ¼hrer. Aber Thorus entscheidet, wer zu Gomez vorgelassen wird.
 	
 	var C_NPC Diego;		Diego 	= Hlp_GetNpc(PC_Thief);
 	Diego.aivar[AIV_FINDABLE] = TRUE;

@@ -44,8 +44,8 @@ FUNC INT DIA_Grd_214_Torwache_job_Condition()
 FUNC VOID DIA_Grd_214_Torwache_job_Info()
 {
 	AI_Output (other, self,"DIA_Grd_214_Torwache_job_15_00"); //Was machst du hier?
-	AI_Output (self, other,"DIA_Grd_214_Torwache_job_07_01"); //Ich passe auf, dass hier keiner reinkommt, der von Gomez nicht erwünscht ist.
-	AI_Output (self, other,"DIA_Grd_214_Torwache_job_07_02"); //Also mach keinen Ärger, wenn du drin bist, sonst bist du das letzte Mal hier gewesen.
+	AI_Output (self, other,"DIA_Grd_214_Torwache_job_07_01"); //Ich passe auf, dass hier keiner reinkommt, der von Gomez nicht erwÃ¼nscht ist.
+	AI_Output (self, other,"DIA_Grd_214_Torwache_job_07_02"); //Also mach keinen Ã„rger, wenn du drin bist, sonst bist du das letzte Mal hier gewesen.
 };
 
 //-----------------------------------------------------------------
@@ -111,6 +111,6 @@ func void  Grd_214_Torwache_NODUSTY_Info()
 	B_ExchangeRoutine	(Vlk_524_Dusty,"start");
 	var C_NPC dusty;	dusty = Hlp_GetNpc(Vlk_524_Dusty);
 	dusty.aivar[AIV_PARTYMEMBER] = FALSE;
-	dusty.flags = 0;	// Immortal löschen
+	dusty.flags = 0;	// Immortal lÃ¶schen
 };
 

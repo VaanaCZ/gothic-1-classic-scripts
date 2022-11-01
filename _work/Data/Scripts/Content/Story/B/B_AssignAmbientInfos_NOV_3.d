@@ -50,7 +50,7 @@ FUNC INT Info_Nov_3_EinerVonEuchWerden_Condition()
 
 FUNC VOID Info_Nov_3_EinerVonEuchWerden_Info()
 {
-	AI_Output(other,self,"Info_Nov_3_EinerVonEuchWerden_15_00"); //Wie kann ich mich diesem Lager anschlieﬂen?
+	AI_Output(other,self,"Info_Nov_3_EinerVonEuchWerden_15_00"); //Wie kann ich mich diesem Lager anschlie√üen?
 	AI_Output(self,other,"Info_Nov_3_EinerVonEuchWerden_03_01"); //Das ist ganz einfach. Du musst einfach loslassen, Mann.
 	AI_Output(self,other,"Info_Nov_3_EinerVonEuchWerden_03_02"); //Sprich mit den Gurus, sie werden dich leiten!
 };
@@ -76,7 +76,7 @@ FUNC INT Info_Nov_3_WichtigePersonen_Condition()
 FUNC VOID Info_Nov_3_WichtigePersonen_Info()
 {
 	AI_Output(other,self,"Info_Nov_3_WichtigePersonen_15_00"); //Wer ist hier der Boss?
-	AI_Output(self,other,"Info_Nov_3_WichtigePersonen_03_01"); //Y'Berion! Der Schl‰fer sei gepriesen! Er hat uns an diesen wunderbaren Ort gebracht.
+	AI_Output(self,other,"Info_Nov_3_WichtigePersonen_03_01"); //Y'Berion! Der Schl√§fer sei gepriesen! Er hat uns an diesen wunderbaren Ort gebracht.
 	AI_Output(self,other,"Info_Nov_3_WichtigePersonen_03_02"); //Durch seine Visionen ist das alles hier entstanden.
 };
 
@@ -90,7 +90,7 @@ INSTANCE Info_Nov_3_DasLager(C_INFO)
 	condition	= Info_Nov_3_DasLager_Condition;
 	information	= Info_Nov_3_DasLager_Info;
 	permanent	= 1;
-	description = "Was gibt es hier f¸r wichtige Orte?";
+	description = "Was gibt es hier f√ºr wichtige Orte?";
 };                       
 
 FUNC INT Info_Nov_3_DasLager_Condition()
@@ -100,8 +100,8 @@ FUNC INT Info_Nov_3_DasLager_Condition()
 
 FUNC VOID Info_Nov_3_DasLager_Info()
 {
-	AI_Output(other,self,"Info_Nov_3_DasLager_15_00"); //Was gibt es hier f¸r wichtige Orte?
-	AI_Output(self,other,"Info_Nov_3_DasLager_03_01"); //Es gibt Fortuno, er verteilt freies Sumpfkraut f¸r alle Anh‰nger der Sekte.
+	AI_Output(other,self,"Info_Nov_3_DasLager_15_00"); //Was gibt es hier f√ºr wichtige Orte?
+	AI_Output(self,other,"Info_Nov_3_DasLager_03_01"); //Es gibt Fortuno, er verteilt freies Sumpfkraut f√ºr alle Anh√§nger der Sekte.
 	AI_Output(self,other,"Info_Nov_3_DasLager_03_02"); //Du findest ihn unter Cor Kaloms Alchemielabor.
 	
 	var C_NPC CorKalom;		CorKalom= Hlp_GetNpc(Gur_1201_CorKalom);

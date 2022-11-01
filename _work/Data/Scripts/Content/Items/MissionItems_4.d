@@ -7,7 +7,7 @@
 //#####################################################################
 
 //---------------------------------------------------------------------
-//	Buch über Golems
+//	Buch Ã¼ber Golems
 //---------------------------------------------------------------------
 INSTANCE ItWr_GolemBook1(C_Item)
 {	
@@ -42,16 +42,16 @@ INSTANCE ItWr_GolemBook1(C_Item)
 		Doc_PrintLine	( nDocID,  0, "=====================");
 		Doc_PrintLines	( nDocID,  0, "(Magie der Golems)");
 		Doc_PrintLine	( nDocID,  0, "");
-		Doc_PrintLines	( nDocID,  0, "Nur wer schon einmal einem dieser aus den Elementen erschaffenen Kreaturen begegnet ist, wird wirklich verstehen, welchen Respekt diese magieschen Wesen einem abenteuerlustigen Wanderer einflößen können.");
+		Doc_PrintLines	( nDocID,  0, "Nur wer schon einmal einem dieser aus den Elementen erschaffenen Kreaturen begegnet ist, wird wirklich verstehen, welchen Respekt diese magieschen Wesen einem abenteuerlustigen Wanderer einflÃ¶ÃŸen kÃ¶nnen.");
 		Doc_PrintLine	( nDocID,  0, "");
 
 		//2.Seite
-		Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1);  //  0 -> margins are in pixels (Position des Textes von den Ränder des TGAs aus, links,oben,rechts,unten)
+		Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1);  //  0 -> margins are in pixels (Position des Textes von den RÃ¤nder des TGAs aus, links,oben,rechts,unten)
 		Doc_PrintLine	( nDocID,  1, "Steingolem");
 		Doc_PrintLine	( nDocID,  1, "------------");
-		Doc_PrintLines	( nDocID,  1, "Diese steinernen Kolosse sind im Kampf fast unverwundbar. Schwerter, Äxte und Bögen scheinen diesen Monstren nichts anhaben zu können.");
+		Doc_PrintLines	( nDocID,  1, "Diese steinernen Kolosse sind im Kampf fast unverwundbar. Schwerter, Ã„xte und BÃ¶gen scheinen diesen Monstren nichts anhaben zu kÃ¶nnen.");
 		Doc_PrintLine	( nDocID,  1, "");
-		Doc_PrintLines	( nDocID,  1, "Der einzige glaubhafte Bericht von der Bezwingung eines solchen Leviathans stammt von einem Söldner. Er schrieb davon, wie der stumpfe Aufprall seines Kriegshammers Risse in den Golem trieb, bis dieser schlußendlich zerbarst.");
+		Doc_PrintLines	( nDocID,  1, "Der einzige glaubhafte Bericht von der Bezwingung eines solchen Leviathans stammt von einem SÃ¶ldner. Er schrieb davon, wie der stumpfe Aufprall seines Kriegshammers Risse in den Golem trieb, bis dieser schluÃŸendlich zerbarst.");
 
 		Doc_Show		( nDocID );
 	};
@@ -91,17 +91,17 @@ INSTANCE ItWr_GolemBook2(C_Item)
 		Doc_PrintLine	( nDocID,  0, "");
 		Doc_PrintLine	( nDocID,  0, "Eisgolem");
 		Doc_PrintLine	( nDocID,  0, "---------");
-		Doc_PrintLines	( nDocID,  0, "Den Steingolems verwandt sind die Eisgolems, deren physische Substanz jedoch völlig aus gefrorenem Wasser zu bestehen scheint. Jede uns bekannte Waffe scheint an der glatten Oberfläche dieser eisigen Wesen abzugleiten.");
-		Doc_PrintLines	( nDocID,  0, "Auch sei der abenteuerlustige Wanderer gewarnt vor dem Eisatem dieser Kreatur, schließt sie doch jeden Ahnungslosen im Nu in einer Säule aus Eis ein.");
+		Doc_PrintLines	( nDocID,  0, "Den Steingolems verwandt sind die Eisgolems, deren physische Substanz jedoch vÃ¶llig aus gefrorenem Wasser zu bestehen scheint. Jede uns bekannte Waffe scheint an der glatten OberflÃ¤che dieser eisigen Wesen abzugleiten.");
+		Doc_PrintLines	( nDocID,  0, "Auch sei der abenteuerlustige Wanderer gewarnt vor dem Eisatem dieser Kreatur, schlieÃŸt sie doch jeden Ahnungslosen im Nu in einer SÃ¤ule aus Eis ein.");
 
 		//2.Seite
-		Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1);  //  0 -> margins are in pixels (Position des Textes von den Ränder des TGAs aus, links,oben,rechts,unten)
-		Doc_PrintLines	( nDocID,  1, "Einst berichtete ein Feuermagier von der Begegnung mit einem solchen Geschöpf, doch schien er keine ernste Bedrohung darin erkannt zu haben.");
+		Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1);  //  0 -> margins are in pixels (Position des Textes von den RÃ¤nder des TGAs aus, links,oben,rechts,unten)
+		Doc_PrintLines	( nDocID,  1, "Einst berichtete ein Feuermagier von der Begegnung mit einem solchen GeschÃ¶pf, doch schien er keine ernste Bedrohung darin erkannt zu haben.");
 		Doc_PrintLine	( nDocID,  1, "");
 		Doc_PrintLine	( nDocID,  1, "Feuergolem");
 		Doc_PrintLine	( nDocID,  1, "------------");
-		Doc_PrintLines	( nDocID,  1, "Berichten zufolge können diese feurigen Geschöpfe ihre Opfer mit nur einer Berührung in ein Flammenmeer verwandeln.");
-		Doc_PrintLines	( nDocID,  1, "Erst im letzten Jahr stieß eine Jagdgruppe im Hochland auf solch einen wandelnden Gluthaufen. Der Ausgang ist unklar, doch sollen Blitze und Eis die Höllenkreatur gestoppt haben.");
+		Doc_PrintLines	( nDocID,  1, "Berichten zufolge kÃ¶nnen diese feurigen GeschÃ¶pfe ihre Opfer mit nur einer BerÃ¼hrung in ein Flammenmeer verwandeln.");
+		Doc_PrintLines	( nDocID,  1, "Erst im letzten Jahr stieÃŸ eine Jagdgruppe im Hochland auf solch einen wandelnden Gluthaufen. Der Ausgang ist unklar, doch sollen Blitze und Eis die HÃ¶llenkreatur gestoppt haben.");
 		Doc_Show		( nDocID );
 	};
 
@@ -123,7 +123,7 @@ INSTANCE ItWrWorldmap_Orc(C_Item)
 	scemeName				=	"MAP";	
 	on_state[0]				=	UseWorldmap_Orc;
 
-	description				= "Karte der Kolonie (ergänzt)";
+	description				= "Karte der Kolonie (ergÃ¤nzt)";
 	TEXT[0]					= "Ur-Shak der Ork-Schamane hat das";
 	TEXT[1]					= "Orkgebiet eingezeichnet!";
 	TEXT[5]					= NAME_Value;
@@ -141,11 +141,11 @@ INSTANCE ItWrWorldmap_Orc(C_Item)
 					Doc_Show		( nDocID 	);
 	};
 //---------------------------------------------------------------------
-//	Schlüssel zur Freien Mine
+//	SchlÃ¼ssel zur Freien Mine
 //---------------------------------------------------------------------
 INSTANCE ItKe_Freemine(C_Item)
 {	
-	name 					=	"Schlüssel zur freien Mine";
+	name 					=	"SchlÃ¼ssel zur freien Mine";
 
 	mainflag 				=	ITEM_KAT_NONE;
 	flags 					=	ITEM_MISSION;	
@@ -154,7 +154,7 @@ INSTANCE ItKe_Freemine(C_Item)
 
 	visual 					=	"ItKe_Key_01.3ds";
 	material 				=	MAT_METAL;
-	description			= "Schlüssel zur freien Mine";
+	description			= "SchlÃ¼ssel zur freien Mine";
 	//TEXT[0]				= "";
 	////COUNT[0]			= ;
 	//TEXT[1]				= "";
@@ -170,7 +170,7 @@ INSTANCE ItKe_Freemine(C_Item)
 };
 
 //---------------------------------------------------------------------
-//	Medizin für den verwundeten Orc in der Freien Mine
+//	Medizin fÃ¼r den verwundeten Orc in der Freien Mine
 //---------------------------------------------------------------------
 INSTANCE	OrcMedicine(C_ITEM)
 {
@@ -226,9 +226,9 @@ INSTANCE UluMulu(C_Item)
 	material 		=	MAT_METAL;
 	
 	description		=	name;
-	TEXT[0]			=	"Das Ulu-Mulu ist ein Zeichen großer Stärke und";
-	TEXT[1]			=	"Würde. Der Träger dieser Standarte hat vor";
-	TEXT[2]			=	"Orks nichts zu befürchten!";
+	TEXT[0]			=	"Das Ulu-Mulu ist ein Zeichen groÃŸer StÃ¤rke und";
+	TEXT[1]			=	"WÃ¼rde. Der TrÃ¤ger dieser Standarte hat vor";
+	TEXT[2]			=	"Orks nichts zu befÃ¼rchten!";
 	TEXT[3]			=	NAME_Damage;			COUNT[3]	= damageTotal;
 	TEXT[4] 		=	NAME_Str_needed;		COUNT[4]	= cond_value[2];
 	TEXT[5]			=	NAME_Value; 			COUNT[5]	= value;

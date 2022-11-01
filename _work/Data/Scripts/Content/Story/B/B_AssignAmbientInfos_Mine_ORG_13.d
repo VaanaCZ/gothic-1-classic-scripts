@@ -37,7 +37,7 @@ INSTANCE Info_Mine_Org_13_Mine (C_INFO) // E1
 	condition	= Info_Mine_Org_13_Mine_Condition;
 	information	= Info_Mine_Org_13_Mine_Info;
 	permanent	= 1;
-	description = "Erzähl mir mal was über das Camp hier.";
+	description = "ErzÃ¤hl mir mal was Ã¼ber das Camp hier.";
 };                       
 
 FUNC INT Info_Mine_Org_13_Mine_Condition()
@@ -47,7 +47,7 @@ FUNC INT Info_Mine_Org_13_Mine_Condition()
 
 FUNC VOID Info_Mine_Org_13_Mine_Info()
 {
-	AI_Output(other,self,"Info_Mine_Org_13_Mine_15_00"); //Erzähl mir mal was über das Lager hier.
+	AI_Output(other,self,"Info_Mine_Org_13_Mine_15_00"); //ErzÃ¤hl mir mal was Ã¼ber das Lager hier.
 	AI_Output(self,other,"Info_Mine_Org_13_Mine_13_01"); //Dieses Felsloch wird uns hier raus bringen. Wenn wir erst genug Erz haben, kann uns das Alte Lager egal sein.
 	
 };
@@ -74,7 +74,7 @@ FUNC VOID Info_Mine_Org_13_WichtigePersonen_Info()
 {
 	AI_Output(other,self,"Info_Mine_Org_13_WichtigePersonen_15_00"); //Wer gibt hier die Befehle?
 	AI_Output(self,other,"Info_Mine_Org_13_WichtigePersonen_13_01"); //Okyl hat hier das Sagen.
-	AI_Output(self,other,"Info_Mine_Org_13_WichtigePersonen_13_02"); //Aber uns Banditen lässt er meist ins Ruhe.
+	AI_Output(self,other,"Info_Mine_Org_13_WichtigePersonen_13_02"); //Aber uns Banditen lÃ¤sst er meist ins Ruhe.
 	
 };
 

@@ -350,7 +350,7 @@
 	on_equip				=	Equip_Schutzring_Magie1_Fire1;
 	on_unequip				=	UnEquip_Schutzring_Magie1_Fire1;
 
-	description		= "Ring der L‰uterung";
+	description		= "Ring der L√§uterung";
 	//TEXT[0]			= "";
 	//TEXT[1]			= "";
 	////COUNT[1]		= ;
@@ -850,7 +850,7 @@
 	on_equip				=	Equip_Staerkering2;
 	on_unequip				=	UnEquip_Staerkering2;
 
-	description		= "Ring der St‰rke";
+	description		= "Ring der St√§rke";
 	//TEXT[0]			= "";
 	//TEXT[1]			= "";
 	////COUNT[1]		= ;

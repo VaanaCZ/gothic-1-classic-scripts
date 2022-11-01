@@ -11,8 +11,8 @@ func void B_Story_GotoOrcGraveyard()
 	//-------- Tagebucheintrag --------
 	Log_CreateTopic		(CH3_OrcGraveyard,	LOG_MISSION);
 	Log_SetTopicStatus	(CH3_OrcGraveyard,	LOG_RUNNING);
-	B_LogEntry			(CH3_OrcGraveyard,	"Die große Anrufung des Schläfers lief nicht wie erwartet. Es waren nur sehr undeutliche Bilder von Orks in Höhlen zu sehen.  Y'Berion, der religiöse Kopf der Bruderschaft ist durch die Anstrengungen der Beschwörung in ein Koma gefallen!"); 
-	B_LogEntry			(CH3_OrcGraveyard,	"Cor-Angar, der Anführer der Templer bat mich in den Ork-Friedhof, ein Höhlensystem in der Nähe des Sumpflagers, zu gehen. Der Guru Baal-Lukor ist bereits mit einigen Templern vor Ort und sucht nach weiteren Hinweisen, um die unklare Vision des Schläfers besser zu verstehen.");
+	B_LogEntry			(CH3_OrcGraveyard,	"Die groÃŸe Anrufung des SchlÃ¤fers lief nicht wie erwartet. Es waren nur sehr undeutliche Bilder von Orks in HÃ¶hlen zu sehen.  Y'Berion, der religiÃ¶se Kopf der Bruderschaft ist durch die Anstrengungen der BeschwÃ¶rung in ein Koma gefallen!"); 
+	B_LogEntry			(CH3_OrcGraveyard,	"Cor-Angar, der AnfÃ¼hrer der Templer bat mich in den Ork-Friedhof, ein HÃ¶hlensystem in der NÃ¤he des Sumpflagers, zu gehen. Der Guru Baal-Lukor ist bereits mit einigen Templern vor Ort und sucht nach weiteren Hinweisen, um die unklare Vision des SchlÃ¤fers besser zu verstehen.");
 	
 	//-------- Templer und Orks vor Ork-Friedhof setzen --------
 	// mitten auf dem Vorplatz 
@@ -21,7 +21,7 @@ func void B_Story_GotoOrcGraveyard()
 	Wld_InsertNpc		(OrcBiter,			"OW_PATH_198_ORCGRAVEYARD4");
 	Wld_InsertNpc		(OrcBiter,			"OW_PATH_198_ORCGRAVEYARD4");
 
-	// vor dem Höhleneingang 
+	// vor dem HÃ¶hleneingang 
 	Wld_InsertNpc		(OrcScout,			"OW_PATH_198_ORCGRAVEYARD5");
 	Wld_InsertNpc		(OrcScout,			"OW_PATH_198_ORCGRAVEYARD6");
 	Wld_InsertNpc		(OrcScout,			"OW_PATH_198_ORCGRAVEYARD7");

@@ -22,11 +22,11 @@ FUNC VOID Info_HighPriest1_Info()
 	AI_GotoNpc			(self, other);
 	
 	AI_Output 			(self, other,"Info_HighPriest1_17_01"); //STEEERBLICHEEERRRR!!!!
-	AI_Output 			(self, other,"Info_HighPriest1_17_02"); //DU WAAAGST ES, MEINE RUUHHE ZU STÖÖÖREN!
+	AI_Output 			(self, other,"Info_HighPriest1_17_02"); //DU WAAAGST ES, MEINE RUUHHE ZU STÃ–Ã–Ã–REN!
 	AI_Output 			(self, other,"Info_HighPriest1_17_03"); //BEREEEITE DIIICH AUF DAS EEEENDE VOOOR!
 	AI_Output 			(other, self,"Info_HighPriest1_15_04"); //Fragt sich, nur wessen Ende, du wurmzerfressener Fleischklops!
 	
-	B_LogEntry			(CH4_EnterTemple,	"Varrag-Hashor, einer der fünf Ork-Schamanen, die damals den Schläfer auf diese Welt geholt haben, steht mir gegenüber. Ich werde sein untotes Dasein ein für allemal beenden.");
+	B_LogEntry			(CH4_EnterTemple,	"Varrag-Hashor, einer der fÃ¼nf Ork-Schamanen, die damals den SchlÃ¤fer auf diese Welt geholt haben, steht mir gegenÃ¼ber. Ich werde sein untotes Dasein ein fÃ¼r allemal beenden.");
 
 	AI_StopProcessInfos	(self);
 

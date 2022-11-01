@@ -37,7 +37,7 @@ INSTANCE Info_Mine_Grd_6_Mine (C_INFO) // E1
 	condition	= Info_Mine_Grd_6_Mine_Condition;
 	information	= Info_Mine_Grd_6_Mine_Info;
 	permanent	= 1;
-	description = "Was l‰uft in der Mine?";
+	description = "Was l√§uft in der Mine?";
 };                       
 
 FUNC INT Info_Mine_Grd_6_Mine_Condition()
@@ -50,8 +50,8 @@ FUNC INT Info_Mine_Grd_6_Mine_Condition()
 
 FUNC VOID Info_Mine_Grd_6_Mine_Info()
 {
-	AI_Output(other,self,"Info_Mine_Grd_6_Mine_15_00"); //Was l‰uft in der Mine?
-	AI_Output(self,other,"Info_Mine_Grd_6_Mine_06_01"); //Die Buddler sch¸rfen das Erz und wenn sie das nicht tun, dann gibt's was aufs Maul!
+	AI_Output(other,self,"Info_Mine_Grd_6_Mine_15_00"); //Was l√§uft in der Mine?
+	AI_Output(self,other,"Info_Mine_Grd_6_Mine_06_01"); //Die Buddler sch√ºrfen das Erz und wenn sie das nicht tun, dann gibt's was aufs Maul!
 	
 };
 
@@ -79,7 +79,7 @@ FUNC INT Info_Mine_Grd_6_WichtigePersonen_Condition()
 FUNC VOID Info_Mine_Grd_6_WichtigePersonen_Info()
 {
 	AI_Output(other,self,"Info_Mine_Grd_6_WichtigePersonen_15_00"); //Wer hat hier das Sagen?
-	AI_Output(self,other,"Info_Mine_Grd_6_WichtigePersonen_06_01"); //Asghan ist unser Chef, Ian k¸mmert sich um die ganze Organisation, Erz und Buddler.
+	AI_Output(self,other,"Info_Mine_Grd_6_WichtigePersonen_06_01"); //Asghan ist unser Chef, Ian k√ºmmert sich um die ganze Organisation, Erz und Buddler.
 	
 };
 
@@ -93,7 +93,7 @@ INSTANCE Info_Mine_Grd_6_Minecrawler(C_INFO)
 	condition	= Info_Mine_Grd_6_Minecrawler_Condition;
 	information	= Info_Mine_Grd_6_Minecrawler_Info;
 	permanent	= 1;
-	description = "Erz‰hl mir was von den Crawlern";
+	description = "Erz√§hl mir was von den Crawlern";
 };                       
 
 FUNC INT Info_Mine_Grd_6_Minecrawler_Condition()
@@ -106,8 +106,8 @@ FUNC INT Info_Mine_Grd_6_Minecrawler_Condition()
 
 FUNC VOID Info_Mine_Grd_6_Minecrawler_Info()
 {
-	AI_Output(other,self,"Info_Mine_Grd_6_Minecrawler_15_00"); //Erz‰hl mir was von den Crawlern.
-	AI_Output(self,other,"Info_Mine_Grd_6_Minecrawler_06_01"); //Die Drecksviecher machen uns das Leben schwer. Ich weiﬂ nicht, wer mehr Arbeit macht, die Viecher oder die Buddler.
+	AI_Output(other,self,"Info_Mine_Grd_6_Minecrawler_15_00"); //Erz√§hl mir was von den Crawlern.
+	AI_Output(self,other,"Info_Mine_Grd_6_Minecrawler_06_01"); //Die Drecksviecher machen uns das Leben schwer. Ich wei√ü nicht, wer mehr Arbeit macht, die Viecher oder die Buddler.
 	
 };	
 

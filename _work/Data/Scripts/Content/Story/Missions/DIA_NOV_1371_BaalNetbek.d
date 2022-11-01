@@ -23,7 +23,7 @@ FUNC VOID  Nov_1371_BaalNetbek_Exit_Info()
 	AI_StopProcessInfos	( self );
 };
 /*------------------------------------------------------------------------
-							GÄRTNER								
+							GÃ„RTNER								
 ------------------------------------------------------------------------*/
 
 instance  Nov_1371_BaalNetbek_CRAZY (C_INFO)
@@ -47,10 +47,10 @@ FUNC void  Nov_1371_BaalNetbek_CRAZY_Info()
 	AI_Output (other, self,"Nov_1371_BaalNetbek_CRAZY_Info_15_01"); //Wer bist du?
 	AI_Output (self, other,"Nov_1371_BaalNetbek_CRAZY_Info_03_02"); //Ich bin der Guru, ich bin der Guru des Sumpfes. Meine Diener nennen mich Baal Netbek.
 	AI_Output (other, self,"Nov_1371_BaalNetbek_CRAZY_Info_15_03"); //Diener? Ich sehe keine Diener!
-	AI_Output (self, other,"Nov_1371_BaalNetbek_CRAZY_Info_03_04"); //Sie sind hier überall. Die Bäume! Sie wandern und springen und tanzen... 
+	AI_Output (self, other,"Nov_1371_BaalNetbek_CRAZY_Info_03_04"); //Sie sind hier Ã¼berall. Die BÃ¤ume! Sie wandern und springen und tanzen... 
 	AI_Output (other, self,"Nov_1371_BaalNetbek_CRAZY_Info_15_05"); //...ach so, na ich geh dann mal wieder...
 	AI_Output (self, other,"Nov_1371_BaalNetbek_CRAZY_Info_03_06"); //Warte, du kannst mir helfen, diesen Sumpf in eine gigantische Blumenwiese zu verwandeln!
-	AI_Output (other, self,"Nov_1371_BaalNetbek_CRAZY_Info_15_07"); //Fang am besten schon mal damit an, ich... ich komme dann später wieder.
+	AI_Output (other, self,"Nov_1371_BaalNetbek_CRAZY_Info_15_07"); //Fang am besten schon mal damit an, ich... ich komme dann spÃ¤ter wieder.
 	AI_TurnAway (hero,self);
 	AI_Output (other, self,"Nov_1371_BaalNetbek_CRAZY_Info_15_08"); //Ich glaube, der Kerl bringt mich nicht wirklich weiter...
 	AI_StopProcessInfos	( self );
@@ -80,5 +80,5 @@ FUNC int  Nov_1371_BaalNetbek_AGAIN_Condition()
 FUNC void  Nov_1371_BaalNetbek_AGAIN_Info()
 {
 	AI_Output (other, self,"Nov_1371_BaalNetbek_AGAIN_Info_15_01"); //Hey, geht's dir gut?
-	AI_Output (self, other,"Nov_1371_BaalNetbek_AGAIN_Info_03_02"); //Pass auf, dass du meine Bäume nicht verletzt! 
+	AI_Output (self, other,"Nov_1371_BaalNetbek_AGAIN_Info_03_02"); //Pass auf, dass du meine BÃ¤ume nicht verletzt! 
 };  

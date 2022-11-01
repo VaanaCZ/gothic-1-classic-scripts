@@ -56,9 +56,9 @@ FUNC INT DIA_Tpl_1415_Torwache_First_Condition()
 
 FUNC VOID DIA_Tpl_1415_Torwache_First_Info()
 {
-	AI_Output (self, other,"DIA_Tpl_1415_Torwache_First_13_00"); //Sei gegrüßt, Fremder!
-	AI_Output (self, other,"DIA_Tpl_1415_Torwache_First_13_01"); //Du bist dabei, heiligen Boden zu betreten. Dies ist die Bruderschaft des Schläfers.
-	AI_Output (self, other,"DIA_Tpl_1415_Torwache_First_13_02"); //Was führt dich her?
+	AI_Output (self, other,"DIA_Tpl_1415_Torwache_First_13_00"); //Sei gegrÃ¼ÃŸt, Fremder!
+	AI_Output (self, other,"DIA_Tpl_1415_Torwache_First_13_01"); //Du bist dabei, heiligen Boden zu betreten. Dies ist die Bruderschaft des SchlÃ¤fers.
+	AI_Output (self, other,"DIA_Tpl_1415_Torwache_First_13_02"); //Was fÃ¼hrt dich her?
 	
 	Info_ClearChoices	(DIA_Tpl_1415_Torwache_First);
 	Info_AddChoice		(DIA_Tpl_1415_Torwache_First,"Ich bin neu hier. Ich wollte mir euer Lager ansehen.",DIA_Tpl_1415_Torwache_First_JustLooking);
@@ -71,8 +71,8 @@ FUNC VOID DIA_Tpl_1415_Torwache_First_Info()
 
 func void DIA_Tpl_1415_Torwache_First_Join()
 {
-	AI_Output (other, self,"DIA_Tpl_1415_Torwache_First_Join_15_00"); //Ich habe gehört, ihr seid auf der Suche nach neuen Leuten. Ich will mich euch anschließen.
-	AI_Output (self, other,"DIA_Tpl_1415_Torwache_First_Join_13_01"); //Dann sei willkommen. Die Bruderschaft des Schläfers hat einen Platz für jeden, der sich vom Geist des Schläfers führen lassen will.
+	AI_Output (other, self,"DIA_Tpl_1415_Torwache_First_Join_15_00"); //Ich habe gehÃ¶rt, ihr seid auf der Suche nach neuen Leuten. Ich will mich euch anschlieÃŸen.
+	AI_Output (self, other,"DIA_Tpl_1415_Torwache_First_Join_13_01"); //Dann sei willkommen. Die Bruderschaft des SchlÃ¤fers hat einen Platz fÃ¼r jeden, der sich vom Geist des SchlÃ¤fers fÃ¼hren lassen will.
 	AI_Output (self, other,"DIA_Tpl_1415_Torwache_First_Join_13_02"); //Wenn es dir wirklich ernst ist, solltest du versuchen, die Aufmerksamkeit von Baal Namib zu erregen. Er steht direkt auf dem Platz hinter dem Tor.
 	AI_Output (self, other,"DIA_Tpl_1415_Torwache_First_Join_13_04"); //Aber du darfst ihn nicht direkt ansprechen. Warte, bis er dich anspricht.
 	Info_ClearChoices	(DIA_Tpl_1415_Torwache_First);
@@ -82,7 +82,7 @@ func void DIA_Tpl_1415_Torwache_First_JustLooking()
 {
 	AI_Output (other, self,"DIA_Tpl_1415_Torwache_First_JustLooking_15_00"); //Ich bin neu hier. Ich wollte mir euer Lager ansehen.
 	AI_Output (self, other,"DIA_Tpl_1415_Torwache_First_JustLooking_13_01"); //Fremde sind uns willkommen.
-	AI_Output (self, other,"DIA_Tpl_1415_Torwache_First_JustLooking_13_02"); //Aber es ist wichtig, das du unsere Regeln achtest. Es gibt bestimmte Bereiche, in denen Fremde sich nicht aufhalten dürfen.
+	AI_Output (self, other,"DIA_Tpl_1415_Torwache_First_JustLooking_13_02"); //Aber es ist wichtig, das du unsere Regeln achtest. Es gibt bestimmte Bereiche, in denen Fremde sich nicht aufhalten dÃ¼rfen.
 	Info_ClearChoices	(DIA_Tpl_1415_Torwache_First);
 };
 
@@ -135,7 +135,7 @@ FUNC int  Tpl_1415_Torwache_TEMPLERAUFNAHME_Condition()
 func void  Tpl_1415_Torwache_TEMPLERAUFNAHME_Info()
 {
 	AI_GotoNpc (hero,self); 
-	AI_Output (self, other,"Tpl_1415_Torwache_IMPORTANT_Info_13_01"); //Hey, ich habe schon gehört, was in der Mine geschehen ist. Gute Arbeit. Damit hast du dir deine Aufnahme zu den Templern verdient!
+	AI_Output (self, other,"Tpl_1415_Torwache_IMPORTANT_Info_13_01"); //Hey, ich habe schon gehÃ¶rt, was in der Mine geschehen ist. Gute Arbeit. Damit hast du dir deine Aufnahme zu den Templern verdient!
 	AI_Output (self, other,"Tpl_1415_Torwache_IMPORTANT_Info_13_02"); //Sprich doch mal mit Cor Angar!
 
 	Log_CreateTopic (GE_BecomeTemplar,LOG_NOTE);
@@ -144,7 +144,7 @@ func void  Tpl_1415_Torwache_TEMPLERAUFNAHME_Info()
 
 
 /*------------------------------------------------------------------------
-						Novizenröckchen							
+						NovizenrÃ¶ckchen							
 ------------------------------------------------------------------------*/
 
 instance  Tpl_1415_Templer_ROCK (C_INFO)
@@ -154,7 +154,7 @@ instance  Tpl_1415_Templer_ROCK (C_INFO)
 	information		= Tpl_1415_Templer_ROCK_Info;
 	important		= 0;
 	permanent		= 1;
-	description		= "Ich brauche eine Rüstung"; 
+	description		= "Ich brauche eine RÃ¼stung"; 
 };
 
 FUNC int  Tpl_1415_Templer_ROCK_Condition()
@@ -167,8 +167,8 @@ FUNC int  Tpl_1415_Templer_ROCK_Condition()
 };
 FUNC void  Tpl_1415_Templer_ROCK_Info()
 {
-	AI_Output (other, self,"Tpl_1415_Templer_ROCK_Info_15_01"); //Ich brauche eine Rüstung.
-	AI_Output (self, other,"Tpl_1415_Templer_ROCK_Info_13_02"); //So eine Templerrüstung, wie ich sie trage, musst du dir erst verdienen. Aber du kannst einen Novizenrock haben.
+	AI_Output (other, self,"Tpl_1415_Templer_ROCK_Info_15_01"); //Ich brauche eine RÃ¼stung.
+	AI_Output (self, other,"Tpl_1415_Templer_ROCK_Info_13_02"); //So eine TemplerrÃ¼stung, wie ich sie trage, musst du dir erst verdienen. Aber du kannst einen Novizenrock haben.
 	AI_Output (other, self,"Tpl_1415_Templer_ROCK_Info_15_03"); //Immerhin besser als Nichts ...
 	AI_Output (self, other,"Tpl_1415_Templer_ROCK_Info_13_04"); //Umsonst gibt es den allerdings nicht!
 
@@ -184,7 +184,7 @@ func void Tpl_1415_Templer_ROCK_BACK()
 
 func void Tpl_1415_Templer_ROCK_BUY()
 {
-	AI_Output (other, self,"Tpl_1415_Templer_ROCK_BUY_15_01"); //Na schön, gib mir den Rock.
+	AI_Output (other, self,"Tpl_1415_Templer_ROCK_BUY_15_01"); //Na schÃ¶n, gib mir den Rock.
 	if (Npc_HasItems (hero,ItMiNugget) <  VALUE_NOV_ARMOR_L)
 	{
 		AI_Output (self, other,"Tpl_1415_Templer_ROCK_BUY_13_02"); //Komm wieder, wenn du genug Erz hast!

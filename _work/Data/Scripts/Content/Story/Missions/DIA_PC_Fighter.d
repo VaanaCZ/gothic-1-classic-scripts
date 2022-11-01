@@ -26,14 +26,14 @@ func VOID Info_Gorn_EXIT_Info()
 	}
 	else
 	{
-		AI_Output (self, other,"Info_Gorn_EXIT_09_02"); //Bis später.
+		AI_Output (self, other,"Info_Gorn_EXIT_09_02"); //Bis spÃ¤ter.
 	};
 	
 	AI_StopProcessInfos	( self );
 };
 
 //*************************************
-//			1. Begrüßung
+//			1. BegrÃ¼ÃŸung
 //*************************************
 
 instance DIA_Gorn_First (C_INFO)
@@ -58,7 +58,7 @@ func void DIA_Gorn_First_Info()
 {
 	AI_Output (self, other,"DIA_Gorn_First_09_00"); //Hey. Ein neues Gesicht.
 	AI_Output (other, self,"DIA_Gorn_First_15_01"); //Wer bist du?
-	AI_Output (self, other,"DIA_Gorn_First_09_02"); //Ich bin Gorn. Söldner der Magier.
+	AI_Output (self, other,"DIA_Gorn_First_09_02"); //Ich bin Gorn. SÃ¶ldner der Magier.
 };
 
 //*************************************
@@ -72,7 +72,7 @@ instance DIA_Gorn_Leben (C_INFO)
 	condition		= Dia_Gorn_Leben_Condition;
 	information		= Dia_Gorn_Leben_Info;
 	permanent		= 0;
-	description		= "Was machst du als Söldner der Magier?";
+	description		= "Was machst du als SÃ¶ldner der Magier?";
 };
 
 FUNC int DIA_Gorn_Leben_Condition()
@@ -85,14 +85,14 @@ FUNC int DIA_Gorn_Leben_Condition()
 
 func void DIA_Gorn_Leben_Info()
 {
-	AI_Output (other, self,"DIA_Gorn_Leben_15_00"); //Was machst du als Söldner der Magier?
-	AI_Output (self, other,"DIA_Gorn_Leben_09_01"); //Lee hat mit den Magiern eine Abmachung getroffen. Er heuert die besten Kämpfer an, die in der Kolonie zu finden sind. Also uns.
-	AI_Output (self, other,"DIA_Gorn_Leben_09_02"); //Wir sorgen dafür, dass die Schürfer ungestört Erz abbauen können und halten den Magiern den Rücken frei.
-	AI_Output (self, other,"DIA_Gorn_Leben_09_03"); //Die Magier kümmern sich darum, dass wir hier rauskommen. Und einen kleinen Teil des Erzes bekommen wir als Sold.
+	AI_Output (other, self,"DIA_Gorn_Leben_15_00"); //Was machst du als SÃ¶ldner der Magier?
+	AI_Output (self, other,"DIA_Gorn_Leben_09_01"); //Lee hat mit den Magiern eine Abmachung getroffen. Er heuert die besten KÃ¤mpfer an, die in der Kolonie zu finden sind. Also uns.
+	AI_Output (self, other,"DIA_Gorn_Leben_09_02"); //Wir sorgen dafÃ¼r, dass die SchÃ¼rfer ungestÃ¶rt Erz abbauen kÃ¶nnen und halten den Magiern den RÃ¼cken frei.
+	AI_Output (self, other,"DIA_Gorn_Leben_09_03"); //Die Magier kÃ¼mmern sich darum, dass wir hier rauskommen. Und einen kleinen Teil des Erzes bekommen wir als Sold.
 };
 
 //*************************************
-//			Hütte (Shrike)
+//			HÃ¼tte (Shrike)
 //*************************************
 	var int Gorn_ShrikesHut;
 //*************************************
@@ -117,21 +117,21 @@ FUNC int DIA_Gorn_Hut_Condition()
 
 func void DIA_Gorn_Hut_Info()
 {
-	AI_Output (other, self,"DIA_Gorn_Hut_15_00"); //Kann ich hier irgendwo pennen, ohne dass ich vorher jemanden aus seiner Hütte prügeln muss?
-	AI_Output (self, other,"DIA_Gorn_Hut_09_01"); //Ich fürchte nicht. Aber wenn du das wirklich vorhast, geh zu Shrike.
-	AI_Output (self, other,"DIA_Gorn_Hut_09_02"); //Er hat sich die Hütte ganz vorne am Höhleneingang geschnappt. Sie stand leer - aber eigentlich gehörte sie uns.
+	AI_Output (other, self,"DIA_Gorn_Hut_15_00"); //Kann ich hier irgendwo pennen, ohne dass ich vorher jemanden aus seiner HÃ¼tte prÃ¼geln muss?
+	AI_Output (self, other,"DIA_Gorn_Hut_09_01"); //Ich fÃ¼rchte nicht. Aber wenn du das wirklich vorhast, geh zu Shrike.
+	AI_Output (self, other,"DIA_Gorn_Hut_09_02"); //Er hat sich die HÃ¼tte ganz vorne am HÃ¶hleneingang geschnappt. Sie stand leer - aber eigentlich gehÃ¶rte sie uns.
 	AI_Output (other, self,"DIA_Gorn_Hut_15_03"); //Uns?
-	AI_Output (self, other,"DIA_Gorn_Hut_09_04"); //Den Söldnern eben. Söldner und Banditen leben hier getrennt. Und normalerweise hat keiner aus Lares' Bande was auf dieser Seite des großen Loches zu suchen.
-	AI_Output (self, other,"DIA_Gorn_Hut_09_05"); //Im Grunde ist es völlig egal. Aber er hat niemanden gefragt. Und man kann den Banditen nicht alles durchgehen lassen, sonst werden sie aufmüpfig!
+	AI_Output (self, other,"DIA_Gorn_Hut_09_04"); //Den SÃ¶ldnern eben. SÃ¶ldner und Banditen leben hier getrennt. Und normalerweise hat keiner aus Lares' Bande was auf dieser Seite des groÃŸen Loches zu suchen.
+	AI_Output (self, other,"DIA_Gorn_Hut_09_05"); //Im Grunde ist es vÃ¶llig egal. Aber er hat niemanden gefragt. Und man kann den Banditen nicht alles durchgehen lassen, sonst werden sie aufmÃ¼pfig!
 
 	Log_CreateTopic		(CH1_ShrikesHut,	LOG_MISSION);
 	Log_SetTopicStatus	(CH1_ShrikesHut,	LOG_RUNNING);
-	B_LogEntry			(CH1_ShrikesHut,	"Der Söldner Gorn erzählte mir, dass Shrike sich ohne zu Fragen eine Söldner-Hütte genommen hat. Da ICH Gorn gefragt habe, wird sich keiner der Söldner einmischen, wenn ich Shrike davon 'überzeugen' kann, sich eine andere Hütte zu suchen.");
+	B_LogEntry			(CH1_ShrikesHut,	"Der SÃ¶ldner Gorn erzÃ¤hlte mir, dass Shrike sich ohne zu Fragen eine SÃ¶ldner-HÃ¼tte genommen hat. Da ICH Gorn gefragt habe, wird sich keiner der SÃ¶ldner einmischen, wenn ich Shrike davon 'Ã¼berzeugen' kann, sich eine andere HÃ¼tte zu suchen.");
 	Gorn_ShrikesHut = LOG_RUNNING;
 };
 
 //*************************************
-//			Hütte LEER (Shrike)
+//			HÃ¼tte LEER (Shrike)
 //*************************************
 
 instance DIA_Gorn_HutFree (C_INFO)
@@ -141,7 +141,7 @@ instance DIA_Gorn_HutFree (C_INFO)
 	condition		= Dia_Gorn_HutFree_Condition;
 	information		= Dia_Gorn_HutFree_Info;
 	permanent		= 0;
-	description		= "Shrike hat sich eine andere Hütte gesucht.";
+	description		= "Shrike hat sich eine andere HÃ¼tte gesucht.";
 };
 
 FUNC int DIA_Gorn_HutFree_Condition()
@@ -154,17 +154,17 @@ FUNC int DIA_Gorn_HutFree_Condition()
 
 func void DIA_Gorn_HutFree_Info()
 {
-	AI_Output			(other, self,"DIA_Gorn_HutFree_15_00"); //Shrike hat sich eine andere Hütte gesucht.
-	AI_Output			(self, other,"DIA_Gorn_HutFree_09_01"); //Gut. Gerade noch hat mich Torlof drauf angesprochen, dass er dem Burschen das Fell über die Ohren ziehen wollte.
+	AI_Output			(other, self,"DIA_Gorn_HutFree_15_00"); //Shrike hat sich eine andere HÃ¼tte gesucht.
+	AI_Output			(self, other,"DIA_Gorn_HutFree_09_01"); //Gut. Gerade noch hat mich Torlof drauf angesprochen, dass er dem Burschen das Fell Ã¼ber die Ohren ziehen wollte.
 
 	Gorn_ShrikesHut = LOG_SUCCESS;
 	Log_SetTopicStatus	(CH1_ShrikesHut,	LOG_SUCCESS);
-	B_LogEntry			(CH1_ShrikesHut,	"Gorn hat sich darüber königlich amüsert, dass ich Shrike aus seiner Hütte geworfen haben. Er macht den Eindruck einer ehrlichen Haut. Hart aber gerecht. Ich sollte mich in Zukunft an ihn halten.");
+	B_LogEntry			(CH1_ShrikesHut,	"Gorn hat sich darÃ¼ber kÃ¶niglich amÃ¼sert, dass ich Shrike aus seiner HÃ¼tte geworfen haben. Er macht den Eindruck einer ehrlichen Haut. Hart aber gerecht. Ich sollte mich in Zukunft an ihn halten.");
 	B_GiveXP			(XP_ReportedKickedShrike);
 };
 
 //*************************************
-//			Söldner werden
+//			SÃ¶ldner werden
 //*************************************
 
 instance DIA_Gorn_BecomeSLD (C_INFO)
@@ -189,9 +189,9 @@ FUNC int DIA_Gorn_BecomeSLD_Condition()
 func void DIA_Gorn_BecomeSLD_Info()
 {
 	AI_Output (other, self,"DIA_Gorn_BecomeSLD_15_00"); //Was muss ich tun, um im Neuen Lager aufgenommen zu werden?
-	AI_Output (self, other,"DIA_Gorn_BecomeSLD_09_01"); //Bevor dich Lee aufnimmt, musst du lernen, besser zu kämpfen. Egal, mit welcher Waffe, aber du musst gut sein.
-	AI_Output (self, other,"DIA_Gorn_BecomeSLD_09_02"); //Außerdem musst du viel Erfahrung haben mit dem Leben hier und allem.
-	AI_Output (self, other,"DIA_Gorn_BecomeSLD_09_03"); //Wenn du keine Lust hast, in die anderen Lager zu gehen, solltest du dich den Banditen anschließen, bevor du als Söldner anfängst.
+	AI_Output (self, other,"DIA_Gorn_BecomeSLD_09_01"); //Bevor dich Lee aufnimmt, musst du lernen, besser zu kÃ¤mpfen. Egal, mit welcher Waffe, aber du musst gut sein.
+	AI_Output (self, other,"DIA_Gorn_BecomeSLD_09_02"); //AuÃŸerdem musst du viel Erfahrung haben mit dem Leben hier und allem.
+	AI_Output (self, other,"DIA_Gorn_BecomeSLD_09_03"); //Wenn du keine Lust hast, in die anderen Lager zu gehen, solltest du dich den Banditen anschlieÃŸen, bevor du als SÃ¶ldner anfÃ¤ngst.
 };
 
 /*
@@ -263,7 +263,7 @@ instance DIA_Gorn_DuHehler (C_INFO)
 	condition		= Dia_Gorn_DuHehler_Condition;
 	information		= Dia_Gorn_DuHehler_Info;
 	permanent		= 0;
-	description		= "Wie kommt es, dass du dich an einem Überfall der Bande beteiligt hast?";
+	description		= "Wie kommt es, dass du dich an einem Ãœberfall der Bande beteiligt hast?";
 };
 
 FUNC int DIA_Gorn_DuHehler_Condition()
@@ -276,16 +276,16 @@ FUNC int DIA_Gorn_DuHehler_Condition()
 
 func void DIA_Gorn_DuHehler_Info()
 {
-	AI_Output (other, self,"DIA_Gorn_DuHehler_15_00"); //Wie kommt es, dass du dich an einem Überfall der Bande beteiligt hast?
+	AI_Output (other, self,"DIA_Gorn_DuHehler_15_00"); //Wie kommt es, dass du dich an einem Ãœberfall der Bande beteiligt hast?
 	AI_Output (self, other,"DIA_Gorn_DuHehler_09_01"); //Wer sagt, dass es so war?
 	AI_Output (other, self,"DIA_Gorn_DuHehler_15_02"); //Warum hast du sonst so viel von diesem Zeug?
-	AI_Output (self, other,"DIA_Gorn_DuHehler_09_03"); //Denk bloß nicht, dass das alles von EINEM Fischzug kommt.
-	AI_Output (other, self,"DIA_Gorn_DuHehler_15_04"); //Du beteiligst dich regelmäßig an den Überfällen?
-	AI_Output (self, other,"DIA_Gorn_DuHehler_09_05"); //Wenn es so wäre, könnte ich es dir nicht sagen. Lee sieht so was nämlich gar nicht gerne.
+	AI_Output (self, other,"DIA_Gorn_DuHehler_09_03"); //Denk bloÃŸ nicht, dass das alles von EINEM Fischzug kommt.
+	AI_Output (other, self,"DIA_Gorn_DuHehler_15_04"); //Du beteiligst dich regelmÃ¤ÃŸig an den ÃœberfÃ¤llen?
+	AI_Output (self, other,"DIA_Gorn_DuHehler_09_05"); //Wenn es so wÃ¤re, kÃ¶nnte ich es dir nicht sagen. Lee sieht so was nÃ¤mlich gar nicht gerne.
 	AI_Output (other, self,"DIA_Gorn_DuHehler_15_06"); //Verstehe.
 	
 	CreateInvItems(self, ItFoApple, 21);
-	B_GiveInvItems	(self,other, ItFoApple,21); //Notwendig für Screenausgabe
+	B_GiveInvItems	(self,other, ItFoApple,21); //Notwendig fÃ¼r Screenausgabe
 	Npc_RemoveInvItems (other, ItFoApple,21);
 	
 	CreateInvItems(other, ItMw_1H_LightGuardsSword_03, 1);
@@ -334,9 +334,9 @@ func VOID Info_Gorn_NCWAIT_Info()
 {
 	AI_GotoNpc	(self,	hero);
 
-	AI_Output (self, other,"Info_Gorn_NCWAIT_09_01"); //Ahh, du bist es! Mein Freund Lester aus dem Sumpflager hat mir erzählt, was du dort alles vollbracht hast.
-	AI_Output (self, other,"Info_Gorn_NCWAIT_09_02"); //Für jemanden, der noch nicht so lange hier ist, hast du es schon weit gebracht.
-	AI_Output (other, self,"Info_Gorn_NCWAIT_15_03"); //Es hat oft nicht viel gefehlt, und ich wäre als Futter für die Würmer geendet.
+	AI_Output (self, other,"Info_Gorn_NCWAIT_09_01"); //Ahh, du bist es! Mein Freund Lester aus dem Sumpflager hat mir erzÃ¤hlt, was du dort alles vollbracht hast.
+	AI_Output (self, other,"Info_Gorn_NCWAIT_09_02"); //FÃ¼r jemanden, der noch nicht so lange hier ist, hast du es schon weit gebracht.
+	AI_Output (other, self,"Info_Gorn_NCWAIT_15_03"); //Es hat oft nicht viel gefehlt, und ich wÃ¤re als Futter fÃ¼r die WÃ¼rmer geendet.
 };
 
 //***************************************************************************
@@ -349,7 +349,7 @@ INSTANCE Info_Gorn_MAGES (C_INFO)
 	information	= Info_Gorn_MAGES_Info;
 	important	= 0;	
 	permanent	= 0;
-	description	= "Ich habe eine wichtige Botschaft für die Wassermagier!";
+	description	= "Ich habe eine wichtige Botschaft fÃ¼r die Wassermagier!";
 };                       
 
 FUNC INT Info_Gorn_MAGES_Condition()
@@ -362,11 +362,11 @@ FUNC INT Info_Gorn_MAGES_Condition()
 
 func VOID Info_Gorn_MAGES_Info()
 {
-	AI_Output (other, self,"Info_Gorn_MAGES_15_01"); //Ich habe eine wichtige Botschaft für die Wassermagier!
+	AI_Output (other, self,"Info_Gorn_MAGES_15_01"); //Ich habe eine wichtige Botschaft fÃ¼r die Wassermagier!
 	AI_Output (self, other,"Info_Gorn_MAGES_09_02"); //Dann sprich am besten gleich mit Saturas. Er ist der oberste Wassermagier und studiert den ganzen Tag irgendwelche Schriften.
 	AI_Output (self, other,"Info_Gorn_MAGES_09_03"); //Aber egal, wie wichtig die Botschaft auch ist, die Wachen zur oberen Ebene werden dich nicht zu ihm durch lassen.
-	AI_Output (other, self,"Info_Gorn_MAGES_15_04"); //Kannst du nicht ein gutes Wort für mich einlegen?
-	AI_Output (self, other,"Info_Gorn_MAGES_09_05"); //Ich nicht, aber Cronos, der Hüter des Erzes, kann dir vielleicht eine Erlaubnis erteilen.
+	AI_Output (other, self,"Info_Gorn_MAGES_15_04"); //Kannst du nicht ein gutes Wort fÃ¼r mich einlegen?
+	AI_Output (self, other,"Info_Gorn_MAGES_09_05"); //Ich nicht, aber Cronos, der HÃ¼ter des Erzes, kann dir vielleicht eine Erlaubnis erteilen.
 };
 
 //***************************************************************************
@@ -379,7 +379,7 @@ INSTANCE Info_Gorn_CRONOS (C_INFO)
 	information	= Info_Gorn_CRONOS_Info;
 	important	= 0;	
 	permanent	= 0;
-	description	= "Wo finde ich diesen 'Hüter des Erzes'?";
+	description	= "Wo finde ich diesen 'HÃ¼ter des Erzes'?";
 };                       
 
 FUNC INT Info_Gorn_CRONOS_Condition()
@@ -392,16 +392,16 @@ FUNC INT Info_Gorn_CRONOS_Condition()
 
 func VOID Info_Gorn_CRONOS_Info()
 {
-	AI_Output			(other, self,"Info_Gorn_CRONOS_15_01"); //Wo finde ich diesen 'Hüter des Erzes'?
-	AI_Output			(self, other,"Info_Gorn_CRONOS_09_01a");//Wenn du von hier weitergehst, stößt du nach dem Damm auf die große Wohnhöhle.
-	AI_Output			(self, other,"Info_Gorn_CRONOS_09_02"); //Cronos hält sich normalerweise am Gitter über dem großen Erzhaufen auf.
-	AI_Output			(self, other,"Info_Gorn_CRONOS_09_03"); //Aber er ist ein wenig arrogant. Du wirst ihn überzeugen müssen, dass deine Botschaft wichtig ist.
+	AI_Output			(other, self,"Info_Gorn_CRONOS_15_01"); //Wo finde ich diesen 'HÃ¼ter des Erzes'?
+	AI_Output			(self, other,"Info_Gorn_CRONOS_09_01a");//Wenn du von hier weitergehst, stÃ¶ÃŸt du nach dem Damm auf die groÃŸe WohnhÃ¶hle.
+	AI_Output			(self, other,"Info_Gorn_CRONOS_09_02"); //Cronos hÃ¤lt sich normalerweise am Gitter Ã¼ber dem groÃŸen Erzhaufen auf.
+	AI_Output			(self, other,"Info_Gorn_CRONOS_09_03"); //Aber er ist ein wenig arrogant. Du wirst ihn Ã¼berzeugen mÃ¼ssen, dass deine Botschaft wichtig ist.
 
 	VAR C_NPC Cronos;
 	Cronos = Hlp_GetNpc(KdW_604_Cronos);
 	Cronos.aivar[AIV_FINDABLE] = TRUE;
 	
-	B_LogEntry		(CH3_EscapePlanNC,	"Gorn empfahl mir, direkt mit dem obersten Wassermagier mit Namen Saturas zu sprechen. Cronos, der Hüter des Erzes, kann eine Audienz erwirken. Cronos hält sich im Zentrum des Neuen Lagers, am Gitter über dem Erzhaufen auf."); 
+	B_LogEntry		(CH3_EscapePlanNC,	"Gorn empfahl mir, direkt mit dem obersten Wassermagier mit Namen Saturas zu sprechen. Cronos, der HÃ¼ter des Erzes, kann eine Audienz erwirken. Cronos hÃ¤lt sich im Zentrum des Neuen Lagers, am Gitter Ã¼ber dem Erzhaufen auf."); 
 
 	Npc_ExchangeRoutine	(self, "start");
 };
@@ -432,7 +432,7 @@ func VOID Info_Gorn_RUINWAIT_Info()
 	AI_GotoNpc	(self,	hero);
 
 	AI_Output	(self, other,"Info_Gorn_RUINWAIT_09_01"); //Hallo, Neuer. Wie du siehst, ist die Kolonie ein kleiner Ort.
-	AI_Output	(self, other,"Info_Gorn_RUINWAIT_09_02"); //Man läuft sich hier ständig über den Weg.
+	AI_Output	(self, other,"Info_Gorn_RUINWAIT_09_02"); //Man lÃ¤uft sich hier stÃ¤ndig Ã¼ber den Weg.
 };
 
 //***************************************************************************
@@ -445,7 +445,7 @@ INSTANCE Info_Gorn_RUINWHAT (C_INFO)
 	information	= Info_Gorn_RUINWHAT_Info;
 	important	= 0;	
 	permanent	= 0;
-	description = "Was führt dich denn hier her?";
+	description = "Was fÃ¼hrt dich denn hier her?";
 };                       
 
 FUNC INT Info_Gorn_RUINWHAT_Condition()
@@ -458,17 +458,17 @@ FUNC INT Info_Gorn_RUINWHAT_Condition()
 
 func VOID Info_Gorn_RUINWHAT_Info()
 {
-	AI_Output 		(other, self,"Info_Gorn_RUINWHAT_15_01"); //Was führt dich denn hierher?
+	AI_Output 		(other, self,"Info_Gorn_RUINWHAT_15_01"); //Was fÃ¼hrt dich denn hierher?
 	AI_Output		(self, other,"Info_Gorn_RUINWHAT_09_02"); //Oh, ich versuche, einer alten Legende auf die Spur zu kommen.
 	AI_Output		(other, self,"Info_Gorn_RUINWHAT_15_03"); //Einer Legende?
-	AI_Output 		(self, other,"Info_Gorn_RUINWHAT_09_04"); //Ja, Milten, mein Kumpel aus dem Alten Lager, hat mir erzählt, dass hier einst Mönche lebten.
-	AI_Output 		(self, other,"Info_Gorn_RUINWHAT_09_05"); //Das war natürlich lange, bevor es die Barriere gab.
-	AI_Output 		(self, other,"Info_Gorn_RUINWHAT_09_06"); //Sie sollen einem Gott gehuldigt haben, der seinen Anhängern die Macht gab, sich in Tiere zu verwandeln.
-	AI_Output 		(self, other,"Info_Gorn_RUINWHAT_09_07"); //Bestimmt gibt es hier noch Schätze aus der alten Zeit.
+	AI_Output 		(self, other,"Info_Gorn_RUINWHAT_09_04"); //Ja, Milten, mein Kumpel aus dem Alten Lager, hat mir erzÃ¤hlt, dass hier einst MÃ¶nche lebten.
+	AI_Output 		(self, other,"Info_Gorn_RUINWHAT_09_05"); //Das war natÃ¼rlich lange, bevor es die Barriere gab.
+	AI_Output 		(self, other,"Info_Gorn_RUINWHAT_09_06"); //Sie sollen einem Gott gehuldigt haben, der seinen AnhÃ¤ngern die Macht gab, sich in Tiere zu verwandeln.
+	AI_Output 		(self, other,"Info_Gorn_RUINWHAT_09_07"); //Bestimmt gibt es hier noch SchÃ¤tze aus der alten Zeit.
 
 	if (!Npc_KnowsInfo(hero, Info_Gorn_RUINFOCUS))
 	{	
-		AI_Output	(self, other,"Info_Gorn_RUINWHAT_09_08"); //Was führt dich hierher?
+		AI_Output	(self, other,"Info_Gorn_RUINWHAT_09_08"); //Was fÃ¼hrt dich hierher?
 	};
 };
 
@@ -510,7 +510,7 @@ INSTANCE Info_Gorn_RUINJOIN (C_INFO)
 	information	= Info_Gorn_RUINJOIN_Info;
 	important	= 0;	
 	permanent	= 0;
-	description = "Wir könnten unseren Weg gemeinsam fortsetzen.";
+	description = "Wir kÃ¶nnten unseren Weg gemeinsam fortsetzen.";
 };                       
 
 FUNC INT Info_Gorn_RUINJOIN_Condition()
@@ -523,18 +523,18 @@ FUNC INT Info_Gorn_RUINJOIN_Condition()
 
 func VOID Info_Gorn_RUINJOIN_Info()
 {
-	AI_Output (other, self,"Info_Gorn_RUINJOIN_15_01"); //Wir können unseren Weg gemeinsam fortsetzen.
+	AI_Output (other, self,"Info_Gorn_RUINJOIN_15_01"); //Wir kÃ¶nnen unseren Weg gemeinsam fortsetzen.
 	AI_Output (self, other,"Info_Gorn_RUINJOIN_09_02"); //Gute Idee. Hier wimmelt es nur so von Snappern.
-	AI_Output (self, other,"Info_Gorn_RUINJOIN_09_03"); //Einzeln sind sie für einen geübten Kämpfer zwar kein Problem, aber sie jagen meistens in Rudeln.
-	AI_Output (self, other,"Info_Gorn_RUINJOIN_09_04"); //So ein Rudel kann auch den gewieftesten Schwertmeister in Fetzen reißen.
+	AI_Output (self, other,"Info_Gorn_RUINJOIN_09_03"); //Einzeln sind sie fÃ¼r einen geÃ¼bten KÃ¤mpfer zwar kein Problem, aber sie jagen meistens in Rudeln.
+	AI_Output (self, other,"Info_Gorn_RUINJOIN_09_04"); //So ein Rudel kann auch den gewieftesten Schwertmeister in Fetzen reiÃŸen.
 	AI_Output (other, self,"Info_Gorn_RUINJOIN_15_05"); //Wir gehen also zusammen?
-	AI_Output (self, other,"Info_Gorn_RUINJOIN_09_06"); //Ok, doch bevor wir über diesen Baumstamm balancieren, möchte ich die Schlucht darunter erforschen. Ich habe gerne einen freien Rücken.
-	AI_Output (self, other,"Info_Gorn_RUINJOIN_09_07"); //Komm mit, ich habe einen Weg entdeckt, der uns dorthin führt.
+	AI_Output (self, other,"Info_Gorn_RUINJOIN_09_06"); //Ok, doch bevor wir Ã¼ber diesen Baumstamm balancieren, mÃ¶chte ich die Schlucht darunter erforschen. Ich habe gerne einen freien RÃ¼cken.
+	AI_Output (self, other,"Info_Gorn_RUINJOIN_09_07"); //Komm mit, ich habe einen Weg entdeckt, der uns dorthin fÃ¼hrt.
 
 	Log_CreateTopic		(CH3_MonasteryRuin,	LOG_MISSION);
 	Log_SetTopicStatus	(CH3_MonasteryRuin,	LOG_RUNNING);
-	B_LogEntry			(CH3_MonasteryRuin,	"Als ich mich der Klosterruine näherte traf ich auf den Söldner Gorn. Er ist hier, um die vor uns liegende Gemäuer nach Schätzen aus alten Tagen zu durchsuchen.");
-	B_LogEntry			(CH3_MonasteryRuin,	"Wir werden unsere Suche gemeinsam fortsetzen. Gorn warnte mich vor grossen Snapper-Rudeln, die in dieser Gegend verstärkt anzutreffen sind.");
+	B_LogEntry			(CH3_MonasteryRuin,	"Als ich mich der Klosterruine nÃ¤herte traf ich auf den SÃ¶ldner Gorn. Er ist hier, um die vor uns liegende GemÃ¤uer nach SchÃ¤tzen aus alten Tagen zu durchsuchen.");
+	B_LogEntry			(CH3_MonasteryRuin,	"Wir werden unsere Suche gemeinsam fortsetzen. Gorn warnte mich vor grossen Snapper-Rudeln, die in dieser Gegend verstÃ¤rkt anzutreffen sind.");
 
 	self.aivar[AIV_PARTYMEMBER] = TRUE;
 	AI_StopProcessInfos(self);
@@ -565,10 +565,10 @@ func VOID Info_Gorn_RUINABYSS_Info()
 {
 	AI_GotoNpc			(self,	hero);
 
-	AI_Output			(self, other,"Info_Gorn_RUINABYSS_09_01"); //Das nenne ich Glück. Hier scheint eine Vorratshöhle gewesen zu sein.
-	AI_Output			(self, other,"Info_Gorn_RUINABYSS_09_02"); //Übernimm du jetzt die Führung, ich wollte nur sicherstellen, dass bei unserer Rückkehr hier keine Überraschung auf uns wartet.
+	AI_Output			(self, other,"Info_Gorn_RUINABYSS_09_01"); //Das nenne ich GlÃ¼ck. Hier scheint eine VorratshÃ¶hle gewesen zu sein.
+	AI_Output			(self, other,"Info_Gorn_RUINABYSS_09_02"); //Ãœbernimm du jetzt die FÃ¼hrung, ich wollte nur sicherstellen, dass bei unserer RÃ¼ckkehr hier keine Ãœberraschung auf uns wartet.
 
-	B_LogEntry		(CH3_MonasteryRuin,	"Wir haben eine geheime Vorratshöhle entdeckt. Vor allem ein Schlüssel und zwei Spruchrollen haben meine Aufmerksamkeit geweckt");
+	B_LogEntry		(CH3_MonasteryRuin,	"Wir haben eine geheime VorratshÃ¶hle entdeckt. Vor allem ein SchlÃ¼ssel und zwei Spruchrollen haben meine Aufmerksamkeit geweckt");
 
 	AI_StopProcessInfos	(self);
 	Npc_ExchangeRoutine	(self,	"RuinFollow");
@@ -602,7 +602,7 @@ func VOID Info_Gorn_RUINLEAVE_Info()
 
 	AI_Output (self, other,"Info_Gorn_RUINLEAVE_09_01"); //Du scheinst doch nicht mehr an der Klosterruine interessiert zu sein.
 	AI_Output (self, other,"Info_Gorn_RUINLEAVE_09_02"); //Ich werde alleine weitergehen.
-	AI_Output (self, other,"Info_Gorn_RUINLEAVE_09_03"); //Komm einfach nach, wenn du es dir anders überlegst.
+	AI_Output (self, other,"Info_Gorn_RUINLEAVE_09_03"); //Komm einfach nach, wenn du es dir anders Ã¼berlegst.
 
 	self.aivar[AIV_PARTYMEMBER] = FALSE;
 	Npc_ExchangeRoutine(self,	"RuinWall");
@@ -634,10 +634,10 @@ func VOID Info_Gorn_RUINWALL_Info()
 {
 	AI_GotoNpc			(self,	hero);
 
-	AI_Output			(self, other,"Info_Gorn_RUINWALL_09_01"); //Dieses verfluchte Tor. Man erzählt sich, dass bisher kein Mensch in der Kolonie es öffnen konnte.
-	AI_Output			(self, other,"Info_Gorn_RUINWALL_09_02"); //Die kleinen Biester da drüben scheinen die Einzigen zu sein, die es geschafft haben, in den Innenhof zu gelangen.
+	AI_Output			(self, other,"Info_Gorn_RUINWALL_09_01"); //Dieses verfluchte Tor. Man erzÃ¤hlt sich, dass bisher kein Mensch in der Kolonie es Ã¶ffnen konnte.
+	AI_Output			(self, other,"Info_Gorn_RUINWALL_09_02"); //Die kleinen Biester da drÃ¼ben scheinen die Einzigen zu sein, die es geschafft haben, in den Innenhof zu gelangen.
 
-	B_LogEntry		(CH3_MonasteryRuin,	"Wir stehen vor einem verschlossenen Tor. Man scheint es von außen nicht öffnen zu können.");
+	B_LogEntry		(CH3_MonasteryRuin,	"Wir stehen vor einem verschlossenen Tor. Man scheint es von auÃŸen nicht Ã¶ffnen zu kÃ¶nnen.");
 
 	AI_StopProcessInfos	(self);
 	Npc_ExchangeRoutine	(self,	"RuinWall");
@@ -698,7 +698,7 @@ func VOID Info_Gorn_RUINLEDGE_Info()
 	AI_GotoNpc	(self,	hero);
 
 	AI_Output 	(self, other,"Info_Gorn_RUINLEDGE_09_01"); //Dort oben ist eine Art Plattform. Aber es scheint zu hoch zu sein, um zu klettern.
-	AI_Output 	(self, other,"Info_Gorn_RUINLEDGE_09_02"); //Wir müssen einen anderen Weg finden.
+	AI_Output 	(self, other,"Info_Gorn_RUINLEDGE_09_02"); //Wir mÃ¼ssen einen anderen Weg finden.
 
 	AI_StopProcessInfos(self);
 };
@@ -729,7 +729,7 @@ func VOID Info_Gorn_RUINPLATFORM_Info()
 {
 	AI_GotoNpc	(self,	hero);
 
-	AI_Output 	(self, other,"Info_Gorn_RUINPLATFORM_09_01"); //Sieht aus wie ein Podest für irgendetwas.
+	AI_Output 	(self, other,"Info_Gorn_RUINPLATFORM_09_01"); //Sieht aus wie ein Podest fÃ¼r irgendetwas.
 	AI_Output 	(self, other,"Info_Gorn_RUINPLATFORM_09_02"); //Vielleicht lag hier mal das Artefakt, dass du suchst.
 
 	AI_StopProcessInfos(self);
@@ -760,10 +760,10 @@ func VOID Info_Gorn_RUINGATE_Info()
 {
 	AI_GotoNpc			(self,	hero);
 
-	AI_Output			(self, other,"Info_Gorn_RUINGATE_09_01"); //Du hast es tatsächlich geschafft, das Tor zu öffnen. Das mit dem Zauber war wirklich clever.
+	AI_Output			(self, other,"Info_Gorn_RUINGATE_09_01"); //Du hast es tatsÃ¤chlich geschafft, das Tor zu Ã¶ffnen. Das mit dem Zauber war wirklich clever.
 	AI_Output			(other, self,"Info_Gorn_RUINGATE_15_02"); //Los, weiter geht's.
 
-	B_LogEntry		(CH3_MonasteryRuin,	"Mithilfe der Spruchrollen aus der Vorratshöhle habe ich mich in eine Fleischwanze verwandelt und bin durch einen Mauerspalt ins Innere gelangt.");
+	B_LogEntry		(CH3_MonasteryRuin,	"Mithilfe der Spruchrollen aus der VorratshÃ¶hle habe ich mich in eine Fleischwanze verwandelt und bin durch einen Mauerspalt ins Innere gelangt.");
 	B_LogEntry		(CH3_MonasteryRuin,	"Das Tor ist nun offen.");
 
 	self.aivar[AIV_PARTYMEMBER] = TRUE;
@@ -799,7 +799,7 @@ func VOID Info_Gorn_RUINLEAVEINSIDE_Info()
 
 	AI_Output (self, other,"Info_Gorn_RUINLEAVEINSIDE_09_01"); //Du scheinst doch nicht mehr an der Klosterruine interessiert zu sein.
 	AI_Output (self, other,"Info_Gorn_RUINLEAVEINSIDE_09_02"); //Ich werde alleine weitersuchen.
-	AI_Output (self, other,"Info_Gorn_RUINLEAVEINSIDE_09_03"); //Komm einfach nach, wenn du es dir anders überlegst.
+	AI_Output (self, other,"Info_Gorn_RUINLEAVEINSIDE_09_03"); //Komm einfach nach, wenn du es dir anders Ã¼berlegst.
 
 	self.aivar[AIV_PARTYMEMBER] = FALSE;
 	Npc_ExchangeRoutine(self,	"RuinStay");
@@ -868,10 +868,10 @@ func VOID Info_Gorn_RUINTROLL_Info()
 {
 	AI_GotoNpc			(self,	hero);
 
-	AI_Output 			(self, other,"Info_Gorn_RUINTROLL_09_01"); //ACH DU SCHEISSE!!! Was ist das für ein Riesenvieh dort drüben?
+	AI_Output 			(self, other,"Info_Gorn_RUINTROLL_09_01"); //ACH DU SCHEISSE!!! Was ist das fÃ¼r ein Riesenvieh dort drÃ¼ben?
 	AI_Output 			(other, self,"Info_Gorn_RUINTROLL_15_02"); //Wo kommt DAS denn her???
 	AI_Output 			(self, other,"Info_Gorn_RUINTROLL_09_03"); //Sieht aus wie einer dieser fast unverwundbaren Trolle. Allerdings etwas kleiner!
-	AI_Output 			(self, other,"Info_Gorn_RUINTROLL_09_04"); //Wie auch immer, wenn wir hier raus wollen, müssen wie an diesem Biest vorbei.
+	AI_Output 			(self, other,"Info_Gorn_RUINTROLL_09_04"); //Wie auch immer, wenn wir hier raus wollen, mÃ¼ssen wie an diesem Biest vorbei.
 
 	AI_StopProcessInfos	(self);
 
@@ -908,15 +908,15 @@ func VOID Info_Gorn_RUINVICTORY_Info()
 {
 	AI_GotoNpc			(self,	hero);
 
-	AI_Output 			(self, other,"Info_Gorn_RUINVICTORY_09_01"); //Das war ein hartes Stück Arbeit.
+	AI_Output 			(self, other,"Info_Gorn_RUINVICTORY_09_01"); //Das war ein hartes StÃ¼ck Arbeit.
 	AI_Output 			(other, self,"Info_Gorn_RUINVICTORY_15_02"); //Ja, wir haben das Monster bezwungen. Doch wenn das nur ein junger Troll war ...
 	AI_Output 			(self, other,"Info_Gorn_RUINVICTORY_09_03"); //... dann willst du wohl einem ausgewachsenen Exemplar lieber nicht zwischen die Finger geraten.
 	AI_Output 			(other, self,"Info_Gorn_RUINVICTORY_15_04"); //So in etwa.
-	AI_Output 			(self, other,"Info_Gorn_RUINVICTORY_09_05"); //Unsere Wege trennen sich hier. Ich werde noch eine Weile bleiben und herumstöbern.
+	AI_Output 			(self, other,"Info_Gorn_RUINVICTORY_09_05"); //Unsere Wege trennen sich hier. Ich werde noch eine Weile bleiben und herumstÃ¶bern.
 	AI_Output 			(self, other,"Info_Gorn_RUINVICTORY_09_06"); //Doch wir werden uns sicher wiedersehen. Bis dann, mein Freund.
 
-	B_LogEntry		(CH3_MonasteryRuin,	"Wir sind auf dem Rückweg in den Hof der Klosterruine auf einen jungen Troll gestoßen. Es war ein harter Kampf aber wir haben ihn gewonnen.");
-	B_LogEntry		(CH3_MonasteryRuin,	"Die Wege von Gorn und mir trennen sich nun. Mein Gefühl sagt mir, dass ich ihn bald wiedersehen werde.");
+	B_LogEntry		(CH3_MonasteryRuin,	"Wir sind auf dem RÃ¼ckweg in den Hof der Klosterruine auf einen jungen Troll gestoÃŸen. Es war ein harter Kampf aber wir haben ihn gewonnen.");
+	B_LogEntry		(CH3_MonasteryRuin,	"Die Wege von Gorn und mir trennen sich nun. Mein GefÃ¼hl sagt mir, dass ich ihn bald wiedersehen werde.");
 
 	self.aivar[AIV_PARTYMEMBER] = FALSE;
 	Npc_ExchangeRoutine	(self,	"RuinStay");
@@ -960,9 +960,9 @@ func VOID Info_Gorn_DIEGOMILTEN_Info()
 {
 	AI_Output 			(hero,self,"Info_Gorn_DIEGOMILTEN_15_01"); //Ich habe Diego und Milten vor dem Alten Lager getroffen!
 	AI_Output 			(self,hero,"Info_Gorn_DIEGOMILTEN_09_02"); //Eine gute Nachricht!
-	AI_Output 			(hero,self,"Info_Gorn_DIEGOMILTEN_15_03"); //Sie wollen sich mit dir und Lester treffen. An eurem üblichen Treffpunkt.
+	AI_Output 			(hero,self,"Info_Gorn_DIEGOMILTEN_15_03"); //Sie wollen sich mit dir und Lester treffen. An eurem Ã¼blichen Treffpunkt.
 	AI_Output 			(self,hero,"Info_Gorn_DIEGOMILTEN_09_04"); //Danke. In diesen turbulenten Zeiten sind gute Freunde unersetzlich.
-	AI_Output 			(self,hero,"Info_Gorn_DIEGOMILTEN_09_05"); //Auch du gehörst mittlerweile schon fast zu uns. Auf dich ist Verlass!
+	AI_Output 			(self,hero,"Info_Gorn_DIEGOMILTEN_09_05"); //Auch du gehÃ¶rst mittlerweile schon fast zu uns. Auf dich ist Verlass!
 
 	B_GiveXP			(XP_MessageForGorn);
 	
@@ -972,7 +972,7 @@ func VOID Info_Gorn_DIEGOMILTEN_Info()
 	}
 	else 
 	{
-		B_LogEntry			(CH4_4Friends,		"Ich habe Lester und Gorn nun darüber informiert sich mit den anderen beiden Freunden zu treffen. Ab jetzt ist dies nicht mehr meine Angelegenheit. Sie werden schon wissen, was zu tun ist."); 
+		B_LogEntry			(CH4_4Friends,		"Ich habe Lester und Gorn nun darÃ¼ber informiert sich mit den anderen beiden Freunden zu treffen. Ab jetzt ist dies nicht mehr meine Angelegenheit. Sie werden schon wissen, was zu tun ist."); 
 		Log_SetTopicStatus	(CH4_4Friends,		LOG_SUCCESS);
 	};
 
@@ -1003,12 +1003,12 @@ FUNC INT Info_Gorn_FREEMINE_Condition()
 func VOID Info_Gorn_FREEMINE_Info()
 {
 	AI_Output 			(hero,self,"Info_Gorn_FREEMINE_15_01"); //Was hast du in der Freien Mine gesehen?
-	AI_Output 			(self,hero,"Info_Gorn_FREEMINE_09_02"); //Nachdem ich von der Klosterruine zurückkam, wollte ich einen Abstecher zu Okyl, dem Boss der Freien Mine, machen.
-	AI_Output 			(self,hero,"Info_Gorn_FREEMINE_09_03"); //Doch als ich ankam, lagen überall Leichen herum.
+	AI_Output 			(self,hero,"Info_Gorn_FREEMINE_09_02"); //Nachdem ich von der Klosterruine zurÃ¼ckkam, wollte ich einen Abstecher zu Okyl, dem Boss der Freien Mine, machen.
+	AI_Output 			(self,hero,"Info_Gorn_FREEMINE_09_03"); //Doch als ich ankam, lagen Ã¼berall Leichen herum.
 	AI_Output 			(self,hero,"Info_Gorn_FREEMINE_09_04"); //Ich konnte gerade noch sehen, wie sich einige Gardisten im Mineneingang verschanzten.
-	AI_Output 			(hero,self,"Info_Gorn_FREEMINE_15_05"); //Wie konnten so viele Söldner zwei Dutzend Gardisten unterliegen?
-	AI_Output 			(self,hero,"Info_Gorn_FREEMINE_09_06"); //Sah mir sehr nach einem Angriff aus dem Hinterhalt aus! Niemand hätte erwartet, dass Angreifer über die Berge kommen würden.
-	AI_Output 			(self,hero,"Info_Gorn_FREEMINE_09_07"); //Das Überraschungsmoment kann die Stärke einer Truppe vervielfachen.
+	AI_Output 			(hero,self,"Info_Gorn_FREEMINE_15_05"); //Wie konnten so viele SÃ¶ldner zwei Dutzend Gardisten unterliegen?
+	AI_Output 			(self,hero,"Info_Gorn_FREEMINE_09_06"); //Sah mir sehr nach einem Angriff aus dem Hinterhalt aus! Niemand hÃ¤tte erwartet, dass Angreifer Ã¼ber die Berge kommen wÃ¼rden.
+	AI_Output 			(self,hero,"Info_Gorn_FREEMINE_09_07"); //Das Ãœberraschungsmoment kann die StÃ¤rke einer Truppe vervielfachen.
 };
 
 //---------------------------------------------------------------------
@@ -1036,7 +1036,7 @@ func VOID Info_Gorn_GUARDNC_Info()
 {
 	AI_Output 			(hero,self,"Info_Gorn_GUARDNC_15_01"); //Was hast du jetzt vor?
 	AI_Output 			(self,hero,"Info_Gorn_GUARDNC_09_02"); //Die gesamte Verteidigung unseres Lagers muss nun umgestellt werden. Das braucht Zeit.
-	AI_Output 			(self,hero,"Info_Gorn_GUARDNC_09_03"); //Bis Lee und seine Leute so weit sind, werde ich mich erst mal Cords provisorischen Wachposten anschließen.
+	AI_Output 			(self,hero,"Info_Gorn_GUARDNC_09_03"); //Bis Lee und seine Leute so weit sind, werde ich mich erst mal Cords provisorischen Wachposten anschlieÃŸen.
 	AI_Output 			(hero,self,"Info_Gorn_GUARDNC_15_04"); //Plant ihr einen Gegenschlag?
 	AI_Output 			(self,hero,"Info_Gorn_GUARDNC_09_05"); //Noch nicht, aber der Tag wird kommen!
 	AI_Output 			(self,hero,"Info_Gorn_GUARDNC_09_06"); //Wenn du mich suchst, gehe von hier in Richtung Mine. Dort werde ich meinen Posten beziehen.
@@ -1071,8 +1071,8 @@ FUNC INT Info_Gorn_GUARDNCRUNNING_Condition()
 func VOID Info_Gorn_GUARDNCRUNNING_Info()
 {
 	AI_Output 			(hero,self,"Info_Gorn_GUARDNCRUNNING_15_01"); //Wie ist die Lage?
-	AI_Output 			(self,hero,"Info_Gorn_GUARDNCRUNNING_09_02"); //Alles ruhig. In der Freien Mine rührt sich nichts.
-	AI_Output 			(self,hero,"Info_Gorn_GUARDNCRUNNING_09_03"); //Lee ist noch damit beschäftigt, unsere Verteidigung zu organisieren!
+	AI_Output 			(self,hero,"Info_Gorn_GUARDNCRUNNING_09_02"); //Alles ruhig. In der Freien Mine rÃ¼hrt sich nichts.
+	AI_Output 			(self,hero,"Info_Gorn_GUARDNCRUNNING_09_03"); //Lee ist noch damit beschÃ¤ftigt, unsere Verteidigung zu organisieren!
 };
 
 //---------------------------------------------------------------------
@@ -1100,7 +1100,7 @@ func VOID Info_Gorn_POST_Info()
 	AI_GotoNpc			(self, hero);
 
 	AI_Output 			(self, hero,"Info_Gorn_POST_09_01"); //Du kommst gerade richtig! Wir bereiten uns auf den Gegenschlag vor.
-	AI_Output 			(self, hero,"Info_Gorn_POST_09_02"); //Die Rückeroberung der Freien Mine ist der erste Schritt!
+	AI_Output 			(self, hero,"Info_Gorn_POST_09_02"); //Die RÃ¼ckeroberung der Freien Mine ist der erste Schritt!
 };
 
 //---------------------------------------------------------------------
@@ -1113,7 +1113,7 @@ INSTANCE Info_Gorn_TAKEBACK (C_INFO)
 	information	= Info_Gorn_TAKEBACK_Info;
 	important	= 0;	
 	permanent	= 0;
-	description = "Eine Rückeroberung mit vier Mann? Wo sind all die anderen Söldner?";
+	description = "Eine RÃ¼ckeroberung mit vier Mann? Wo sind all die anderen SÃ¶ldner?";
 };                       
 
 FUNC INT Info_Gorn_TAKEBACK_Condition()
@@ -1126,31 +1126,31 @@ FUNC INT Info_Gorn_TAKEBACK_Condition()
 
 func VOID Info_Gorn_TAKEBACK_Info()
 {
-	AI_Output 			(hero, self,"Info_Gorn_TAKEBACK_15_01"); //Eine Rückeroberung mit vier Mann? Wo sind all die anderen Söldner?
-	AI_Output 			(self, hero,"Info_Gorn_TAKEBACK_09_02"); //Ein frontaler Angriff bringt nichts! Dafür sind Gomez' Leute zu gut verschanzt!
-	AI_Output 			(self, hero,"Info_Gorn_TAKEBACK_09_03"); //Aber eine verdeckte Operation, bei der wir Mann für Mann ausschalten, könnte gelingen!
+	AI_Output 			(hero, self,"Info_Gorn_TAKEBACK_15_01"); //Eine RÃ¼ckeroberung mit vier Mann? Wo sind all die anderen SÃ¶ldner?
+	AI_Output 			(self, hero,"Info_Gorn_TAKEBACK_09_02"); //Ein frontaler Angriff bringt nichts! DafÃ¼r sind Gomez' Leute zu gut verschanzt!
+	AI_Output 			(self, hero,"Info_Gorn_TAKEBACK_09_03"); //Aber eine verdeckte Operation, bei der wir Mann fÃ¼r Mann ausschalten, kÃ¶nnte gelingen!
 	AI_Output 			(self, hero,"Info_Gorn_TAKEBACK_09_04"); //Lee bat mich, dir etwas auszurichten.
 
 	var int guild;
 	guild = Npc_GetTrueGuild(hero);
 	if 		(guild == GIL_SLD)
 	{
-		AI_Output 		(self, hero,"Info_Gorn_TAKEBACK_09_05"); //Als einer unserer besten Söldner wurdest du bestimmt, die Operation durchzuführen!
+		AI_Output 		(self, hero,"Info_Gorn_TAKEBACK_09_05"); //Als einer unserer besten SÃ¶ldner wurdest du bestimmt, die Operation durchzufÃ¼hren!
 	}
 	else if	(guild == GIL_KDW)
 	{
-		AI_Output 		(self, hero,"Info_Gorn_TAKEBACK_09_06"); //Als Wassermagier mit sehr viel Kampferfahrung wurdest du bestimmt, die Operation durchzuführen!
+		AI_Output 		(self, hero,"Info_Gorn_TAKEBACK_09_06"); //Als Wassermagier mit sehr viel Kampferfahrung wurdest du bestimmt, die Operation durchzufÃ¼hren!
 	}
 	else if (guild == GIL_ORG)
 	{
-		AI_Output 		(self, hero,"Info_Gorn_TAKEBACK_09_07"); //Als einer unserer besten Banditen wurdest du bestimmt, die Operation durchzuführen!
+		AI_Output 		(self, hero,"Info_Gorn_TAKEBACK_09_07"); //Als einer unserer besten Banditen wurdest du bestimmt, die Operation durchzufÃ¼hren!
 	}
 	else
 	{
-		AI_Output 		(self, hero,"Info_Gorn_TAKEBACK_09_08"); //Obwohl du nicht zu uns gehörst, hast du unserem Lager schon große Dienste erwiesen und dich mehr als bewährt.
-		AI_Output 		(self, hero,"Info_Gorn_TAKEBACK_09_09"); //Wir bieten dir die Durchführung der Operation an!
+		AI_Output 		(self, hero,"Info_Gorn_TAKEBACK_09_08"); //Obwohl du nicht zu uns gehÃ¶rst, hast du unserem Lager schon groÃŸe Dienste erwiesen und dich mehr als bewÃ¤hrt.
+		AI_Output 		(self, hero,"Info_Gorn_TAKEBACK_09_09"); //Wir bieten dir die DurchfÃ¼hrung der Operation an!
 	};
-	AI_Output 			(self, hero,"Info_Gorn_TAKEBACK_09_10"); //Ich werde mit dir gehen. Gemeinsam können wir es schaffen!
+	AI_Output 			(self, hero,"Info_Gorn_TAKEBACK_09_10"); //Ich werde mit dir gehen. Gemeinsam kÃ¶nnen wir es schaffen!
 };
 
 //---------------------------------------------------------------------
@@ -1177,7 +1177,7 @@ FUNC INT Info_Gorn_SECOND_Condition()
 func VOID Info_Gorn_SECOND_Info()
 {
 	AI_Output 			(hero, self,"Info_Gorn_SECOND_15_01"); //Der erste Schritt? Was wird denn der Zweite sein?
-	AI_Output 			(self, hero,"Info_Gorn_SECOND_09_02"); //Sobald die Mine wieder in unserem Besitz ist, werden wir den Pass über die Berge suchen, den Gomez' Leute für den Überfall benutzt haben!
+	AI_Output 			(self, hero,"Info_Gorn_SECOND_09_02"); //Sobald die Mine wieder in unserem Besitz ist, werden wir den Pass Ã¼ber die Berge suchen, den Gomez' Leute fÃ¼r den Ãœberfall benutzt haben!
 	AI_Output 			(self, hero,"Info_Gorn_SECOND_09_03"); //Wenn der Pass dicht gemacht wurde, haben wir die Situation wieder im Griff.
 	AI_Output 			(hero, self,"Info_Gorn_SECOND_15_04"); //Verstehe.
 };
@@ -1207,8 +1207,8 @@ func VOID Info_Gorn_WHYME_Info()
 {
 	AI_Output 			(hero, self,"Info_Gorn_WHYME_15_01"); //Warum gerade ich?
 	AI_Output 			(self, hero,"Info_Gorn_WHYME_09_02"); //Du hast schon mehrmals bewiesen, dass du Mut hast und gleichzeitig denken kannst!
-	AI_Output 			(self, hero,"Info_Gorn_WHYME_09_03"); //Außerdem kennst du das Alte Lager und die Gardisten besser als die meisten von uns.
-	AI_Output 			(self, hero,"Info_Gorn_WHYME_09_04"); //Du bist der beste Mann für diesen schwierigen Job!
+	AI_Output 			(self, hero,"Info_Gorn_WHYME_09_03"); //AuÃŸerdem kennst du das Alte Lager und die Gardisten besser als die meisten von uns.
+	AI_Output 			(self, hero,"Info_Gorn_WHYME_09_04"); //Du bist der beste Mann fÃ¼r diesen schwierigen Job!
 };
 
 //---------------------------------------------------------------------
@@ -1221,7 +1221,7 @@ INSTANCE Info_Gorn_KICKBUTT (C_INFO)
 	information	= Info_Gorn_KICKBUTT_Info;
 	important	= 0;	
 	permanent	= 0;
-	description = "Lass uns den ungebetenen Gästen in der Mine kräftig in den Hintern treten!";
+	description = "Lass uns den ungebetenen GÃ¤sten in der Mine krÃ¤ftig in den Hintern treten!";
 };                       
 
 FUNC INT Info_Gorn_KICKBUTT_Condition()
@@ -1235,9 +1235,9 @@ FUNC INT Info_Gorn_KICKBUTT_Condition()
 
 func VOID Info_Gorn_KICKBUTT_Info()
 {
-	AI_Output 			(hero, self,"Info_Gorn_KICKBUTT_15_01"); //Okay, lass uns den ungebetenen Gästen in der Mine kräftig in den Hintern treten!
+	AI_Output 			(hero, self,"Info_Gorn_KICKBUTT_15_01"); //Okay, lass uns den ungebetenen GÃ¤sten in der Mine krÃ¤ftig in den Hintern treten!
 	AI_Output 			(self, hero,"Info_Gorn_KICKBUTT_09_02"); //Nichts anderes habe ich von dir erwartet!
-	AI_Output 			(self, hero,"Info_Gorn_KICKBUTT_09_03"); //Hier, nimm diesen Schlüssel. Er öffnet das Torhaus vor dem Eingang der Mine.
+	AI_Output 			(self, hero,"Info_Gorn_KICKBUTT_09_03"); //Hier, nimm diesen SchlÃ¼ssel. Er Ã¶ffnet das Torhaus vor dem Eingang der Mine.
 
 	B_Story_GornJoins	();
 };
@@ -1267,8 +1267,8 @@ FUNC INT Info_Gorn_MYWAY_Condition()
 func VOID Info_Gorn_MYWAY_Info()
 {
 	AI_Output 			(hero, self,"Info_Gorn_MYWAY_15_01"); //Warum nicht. Ich muss ohnehin in die Mine!
-	AI_Output 			(self, hero,"Info_Gorn_MYWAY_09_02"); //Was immer auch DEINE Gründe sein mögen, ich bin froh, dass wir diese Sache gemeinsam erledigen!
-	AI_Output 			(self, hero,"Info_Gorn_MYWAY_09_03"); //Hier, nimm diesen Schlüssel. Er öffnet das Torhaus vor dem Eingang der Mine.
+	AI_Output 			(self, hero,"Info_Gorn_MYWAY_09_02"); //Was immer auch DEINE GrÃ¼nde sein mÃ¶gen, ich bin froh, dass wir diese Sache gemeinsam erledigen!
+	AI_Output 			(self, hero,"Info_Gorn_MYWAY_09_03"); //Hier, nimm diesen SchlÃ¼ssel. Er Ã¶ffnet das Torhaus vor dem Eingang der Mine.
 
 	B_Story_GornJoins	();
 };
@@ -1298,7 +1298,7 @@ func VOID Info_Gorn_WOLF_Info()
 {
 	AI_GotoNpc			(self, hero);
 
-	AI_Output 			(self, hero,"Info_Gorn_WOLF_09_01"); //Fast hätte ich es vergessen!
+	AI_Output 			(self, hero,"Info_Gorn_WOLF_09_01"); //Fast hÃ¤tte ich es vergessen!
 	AI_Output 			(self, hero,"Info_Gorn_WOLF_09_02"); //Der Bandit Wolf will dich unbedingt sprechen, bevor wir zur Mine aufbrechen!
 
 	Info_ClearChoices	(Info_Gorn_WOLF);
@@ -1360,7 +1360,7 @@ func VOID Info_Gorn_LEAVEFORPOST_Info()
 	}
 	else
 	{
-		AI_Output		(self, hero,"Info_Gorn_LEAVEFORPOST_09_02"); //Du läufst in die falsche Richtung! Wir müssen zur Mine!
+		AI_Output		(self, hero,"Info_Gorn_LEAVEFORPOST_09_02"); //Du lÃ¤ufst in die falsche Richtung! Wir mÃ¼ssen zur Mine!
 	};
 	AI_Output 			(self, hero,"Info_Gorn_LEAVEFORPOST_09_03"); //Ich warte am provisorischen Wachposten auf dich!
 
@@ -1396,7 +1396,7 @@ FUNC INT Info_Gorn_REJOINFORFM_Condition()
 func VOID Info_Gorn_REJOINFORFM_Info()
 {
 	AI_Output 			(hero, self,"Info_Gorn_REJOINFORFM_15_01"); //Es kann losgehen! Auf zur Mine!
-	AI_Output 			(self, hero,"Info_Gorn_REJOINFORFM_09_02"); //Höchste Zeit, dass wir die Gardisten von dort vertreiben!
+	AI_Output 			(self, hero,"Info_Gorn_REJOINFORFM_09_02"); //HÃ¶chste Zeit, dass wir die Gardisten von dort vertreiben!
 	AI_Output 			(self, hero,"Info_Gorn_REJOINFORFM_09_03"); //Geh du vor, ich folge dir!
 
 	Gorn_JoinedForFM = TRUE;
@@ -1431,8 +1431,8 @@ func VOID Info_Gorn_RAZOR_Info()
 	AI_GotoNpc			(self, hero);
 
 	AI_Output 			(self, hero,"Info_Gorn_RAZOR_09_01"); //VORSICHT, RAZORS!!!
-	AI_Output 			(self, hero,"Info_Gorn_RAZOR_09_02"); //Die arbeiten genauso in Rudeln wie die Snapper, nur dass sie viel heftiger zubeißen!
-	AI_Output 			(self, hero,"Info_Gorn_RAZOR_09_03"); //Wir sollten sie aus dem Weg räumen! Du weißt ja, ich habe gerne einen freien Rücken!
+	AI_Output 			(self, hero,"Info_Gorn_RAZOR_09_02"); //Die arbeiten genauso in Rudeln wie die Snapper, nur dass sie viel heftiger zubeiÃŸen!
+	AI_Output 			(self, hero,"Info_Gorn_RAZOR_09_03"); //Wir sollten sie aus dem Weg rÃ¤umen! Du weiÃŸt ja, ich habe gerne einen freien RÃ¼cken!
 
 	AI_StopProcessInfos	(self);
 };
@@ -1463,7 +1463,7 @@ func VOID Info_Gorn_FMCENTRANCE_Info()
 	AI_GotoNpc			(self, hero);
 
 	AI_Output 			(self, hero,"Info_Gorn_FMCENTRANCE_09_01"); //Warte mal, siehst du all die Leichen hier?
-	AI_Output 			(self, hero,"Info_Gorn_FMCENTRANCE_09_02"); //Geh du runter zum Mineneingang, ich bleib' erst mal hier oben und stelle sicher, dass es keine Überraschung von hinten gibt.
+	AI_Output 			(self, hero,"Info_Gorn_FMCENTRANCE_09_02"); //Geh du runter zum Mineneingang, ich bleib' erst mal hier oben und stelle sicher, dass es keine Ãœberraschung von hinten gibt.
 	AI_Output 			(self, hero,"Info_Gorn_FMCENTRANCE_09_03"); //Wenn du unten bist, komme ich nach.
 
 	Npc_ExchangeRoutine	(self,	"WaitFMC");
@@ -1496,9 +1496,9 @@ func VOID Info_Gorn_FMGATE_Info()
 {
 	AI_GotoNpc			(self, hero);
 
-	AI_Output 			(self, hero,"Info_Gorn_FMGATE_09_01"); //Ich hörte dich kämpfen, da bin ich sofort hinterher.
+	AI_Output 			(self, hero,"Info_Gorn_FMGATE_09_01"); //Ich hÃ¶rte dich kÃ¤mpfen, da bin ich sofort hinterher.
 	AI_Output 			(hero, self,"Info_Gorn_FMGATE_15_02"); //Ein alter Bekannter ... aber die Rechnung ist beglichen.
-	AI_Output 			(self, hero,"Info_Gorn_FMGATE_09_03"); //Gut, öffne du das Tor, ich pass' hier auf!
+	AI_Output 			(self, hero,"Info_Gorn_FMGATE_09_03"); //Gut, Ã¶ffne du das Tor, ich pass' hier auf!
 
 	Npc_ExchangeRoutine	(self,	"WaitFM");
 	AI_StopProcessInfos	(self);
@@ -1529,13 +1529,13 @@ func VOID Info_Gorn_AFTERFM_Info()
 	AI_GotoNpc			(self, hero);
 
 	AI_Output 			(self, hero,"Info_Gorn_AFTERFM_09_01"); //Oh, Mann. Das war ein wirklich beinharter Kampf.
-	AI_Output 			(self, hero,"Info_Gorn_AFTERFM_09_02"); //Hätte nicht gedacht, dass Gomez' Gardisten so viel Widerstand leisten.
+	AI_Output 			(self, hero,"Info_Gorn_AFTERFM_09_02"); //HÃ¤tte nicht gedacht, dass Gomez' Gardisten so viel Widerstand leisten.
 	AI_Output 			(hero, self,"Info_Gorn_AFTERFM_15_03"); //Die Hauptsache ist, dass wir sie wieder aus unserer Mine vertrieben haben!
-	AI_Output 			(self, hero,"Info_Gorn_AFTERFM_09_04"); //Ich werde hier bleiben und dafür sorgen, dass das auch so bleibt!
+	AI_Output 			(self, hero,"Info_Gorn_AFTERFM_09_04"); //Ich werde hier bleiben und dafÃ¼r sorgen, dass das auch so bleibt!
 
 	B_Story_LeftFM		();
 	
-	Lee_freeminereport = 1;  //jetzt kann der SC Lee über die befreite Mine informieren.     ***Björn***
+	Lee_freeminereport = 1;  //jetzt kann der SC Lee Ã¼ber die befreite Mine informieren.     ***BjÃ¶rn***
 
 	AI_StopProcessInfos	(self);
 };
@@ -1564,9 +1564,9 @@ FUNC INT Info_Gorn_FMWATCH_Condition()
 func VOID Info_Gorn_FMWATCH_Info()
 {
 	AI_Output 			(hero,self,"Info_Gorn_FMWATCH_15_01"); //Wie ist die Lage?
-	AI_Output 			(self,hero,"Info_Gorn_FMWATCH_09_02"); //Alles ruhig. In der Freien Mine rührt sich nichts.
-	AI_Output 			(self,hero,"Info_Gorn_FMWATCH_09_03"); //Es kann nicht mehr lange dauern, bis Lee die Verstärkung hier hoch schickt.
-	AI_Output 			(self,hero,"Info_Gorn_FMWATCH_09_04"); //So lange werde ich es mir hier gemütlich machen.
+	AI_Output 			(self,hero,"Info_Gorn_FMWATCH_09_02"); //Alles ruhig. In der Freien Mine rÃ¼hrt sich nichts.
+	AI_Output 			(self,hero,"Info_Gorn_FMWATCH_09_03"); //Es kann nicht mehr lange dauern, bis Lee die VerstÃ¤rkung hier hoch schickt.
+	AI_Output 			(self,hero,"Info_Gorn_FMWATCH_09_04"); //So lange werde ich es mir hier gemÃ¼tlich machen.
 };
 
 
@@ -1596,8 +1596,8 @@ func VOID Info_Gorn_FOUNDULUMULU_Info()
 
 	AI_Output 			(self, hero,"Info_Gorn_FOUNDULUMULU_09_01"); //Eine interessante Ork-Standarte, die du da hast.
 	AI_Output 			(self, hero,"Info_Gorn_FOUNDULUMULU_09_02"); //Stammt sie von dem befreiten Ork-Sklaven in der Mine?
-	AI_Output 			(hero, self,"Info_Gorn_FOUNDULUMULU_15_03"); //Es ist ein orkisches Symbol für Freundschaft. Ich will damit die Stadt der Orks betreten.
-	AI_Output 			(self, hero,"Info_Gorn_FOUNDULUMULU_09_04"); //Ich hoffe für dich, die Orks respektieren dieses ... ETWAS!
+	AI_Output 			(hero, self,"Info_Gorn_FOUNDULUMULU_15_03"); //Es ist ein orkisches Symbol fÃ¼r Freundschaft. Ich will damit die Stadt der Orks betreten.
+	AI_Output 			(self, hero,"Info_Gorn_FOUNDULUMULU_09_04"); //Ich hoffe fÃ¼r dich, die Orks respektieren dieses ... ETWAS!
 
 	B_Kapitelwechsel	(5);
 

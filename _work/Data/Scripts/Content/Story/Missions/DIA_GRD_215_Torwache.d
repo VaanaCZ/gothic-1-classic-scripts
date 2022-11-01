@@ -49,11 +49,11 @@ FUNC VOID DIA_Grd_215_Torwache_First_Info()
 {
 	AI_Output (self, other,"DIA_Grd_215_Torwache_First_06_00"); //Wo soll's denn hingehen?
 	AI_Output (other, self,"DIA_Grd_215_Torwache_First_15_01"); //Ich will ins Lager.
-	AI_Output (self, other,"DIA_Grd_215_Torwache_First_06_02"); //Du bist doch nicht hergekommen, um ƒrger zu machen, oder?
+	AI_Output (self, other,"DIA_Grd_215_Torwache_First_06_02"); //Du bist doch nicht hergekommen, um √Ñrger zu machen, oder?
 	
 	Info_ClearChoices	(DIA_Grd_215_Torwache_First );
 	Info_AddChoice		(DIA_Grd_215_Torwache_First,"Klar, ich hatte mir vorgenommen, das ganze Lager auseinanderzunehmen!"		,DIA_Grd_215_Torwache_First_Trouble);
-	Info_AddChoice		(DIA_Grd_215_Torwache_First,"Ich will mich nur ein biﬂchen umsehen."		,DIA_Grd_215_Torwache_First_JustLooking);
+	Info_AddChoice		(DIA_Grd_215_Torwache_First,"Ich will mich nur ein bi√üchen umsehen."		,DIA_Grd_215_Torwache_First_JustLooking);
 	if (Npc_KnowsInfo(hero,Info_Diego_Kolonie))
 	{
 		Info_AddChoice		(DIA_Grd_215_Torwache_First,"Diego hat gesagt, ich soll ihn im Lager treffen."	,DIA_Grd_215_Torwache_First_Diego);
@@ -77,7 +77,7 @@ func void DIA_Grd_215_Torwache_First_JustLooking()
 	AI_Output (self, other,"DIA_Grd_215_Torwache_First_JustLooking_06_01"); //Umsehen kostet 10 Erz.
 	
 	Info_ClearChoices	(DIA_Grd_215_Torwache_First );
-	Info_AddChoice		(DIA_Grd_215_Torwache_First,"Vergiﬂ es."					,DIA_Grd_215_Torwache_First_NoPay);
+	Info_AddChoice		(DIA_Grd_215_Torwache_First,"Vergi√ü es."					,DIA_Grd_215_Torwache_First_NoPay);
 	Info_AddChoice		(DIA_Grd_215_Torwache_First,"Gut, hier sind deine 10 Erz."	,DIA_Grd_215_Torwache_First_Pay);
 };
 

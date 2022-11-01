@@ -7,11 +7,11 @@
 //#####################################################################
 
 //---------------------------------------------------------------------
-//	1. Pergamenthälfte der Ork-Schriftrolle
+//	1. PergamenthÃ¤lfte der Ork-Schriftrolle
 //---------------------------------------------------------------------
 INSTANCE OrkParchmentOne(C_Item)
 {	
-	name 				=	"Pergamenthäfte";
+	name 				=	"PergamenthÃ¤fte";
 
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION;	
@@ -28,16 +28,16 @@ INSTANCE OrkParchmentOne(C_Item)
 	description			= name;
 	TEXT[0]				= "ein Teil eines uralten Pergaments";
 	TEXT[1]				= "das untere Ende scheint abgerissen";
-	TEXT[2]				= "worden zu sein. Diese Schrift ähnelt";
-	TEXT[3] 			= "den Runen an den Wänden dieser Höhlen sehr";
+	TEXT[2]				= "worden zu sein. Diese Schrift Ã¤hnelt";
+	TEXT[3] 			= "den Runen an den WÃ¤nden dieser HÃ¶hlen sehr";
 };
 
 //---------------------------------------------------------------------
-//	2. Pergamenthälfte der Ork-Schriftrolle
+//	2. PergamenthÃ¤lfte der Ork-Schriftrolle
 //---------------------------------------------------------------------
 INSTANCE OrkParchmentTwo(C_Item)
 {	
-	name 				=	"Pergamenthäfte";
+	name 				=	"PergamenthÃ¤fte";
 
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION;	
@@ -54,16 +54,16 @@ INSTANCE OrkParchmentTwo(C_Item)
 	description			= name;
 	TEXT[0]				= "ein Teil eines uralten Pergaments";
 	TEXT[1]				= "das obere Ende scheint abgerissen";
-	TEXT[2]				= "worden zu sein. Diese Schrift ähnelt";
-	TEXT[3] 			= "den Runen an den Wänden dieser Höhlen sehr";
+	TEXT[2]				= "worden zu sein. Diese Schrift Ã¤hnelt";
+	TEXT[3] 			= "den Runen an den WÃ¤nden dieser HÃ¶hlen sehr";
 };
 
 //---------------------------------------------------------------------
-//	Schlüssel zu Kaloms Truhe
+//	SchlÃ¼ssel zu Kaloms Truhe
 //---------------------------------------------------------------------
 INSTANCE ITKE_PSI_KALOM_01(C_Item)
 {	
-	name 				=	"Schlüssel";
+	name 				=	"SchlÃ¼ssel";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	0;	
@@ -72,8 +72,8 @@ INSTANCE ITKE_PSI_KALOM_01(C_Item)
 
 	visual 				=	"ItKe_Key_04.3ds";
 	material 			=	MAT_METAL;
-	description			= "Laborschlüssel";
-	TEXT[0]				= "öffnet die Truhe im Alchemielabor";
+	description			= "LaborschlÃ¼ssel";
+	TEXT[0]				= "Ã¶ffnet die Truhe im Alchemielabor";
 	TEXT[1]				= "des Sumpflagers";
 	//TEXT[1]				= "";
 	TEXT[5]				= NAME_Value;
@@ -100,10 +100,10 @@ INSTANCE ItWrFocimap(C_Item)
 
 	description				= name;
 	TEXT[0]					= "Die Spitzen des Pentagramms markieren die ";
-	TEXT[1]					= "Orte aller fünf Fokussteine, die damals bei";
+	TEXT[1]					= "Orte aller fÃ¼nf Fokussteine, die damals bei";
 	TEXT[2]					= "der Erschaffung der magischen Barriere";
 	TEXT[3]					= "verwendet wurden. Die Karte ist alt und die";
-	TEXT[4]					= "Steine könnten mittlerweile";
+	TEXT[4]					= "Steine kÃ¶nnten mittlerweile";
 	TEXT[5]					= "an anderen Orten liegen";
 };
 
@@ -140,7 +140,7 @@ INSTANCE ItWr_Troll_01(C_Item)
 	description			=	name;
 	TEXT[1]				=	"Eine stark verwitterte Seite, deren Schrift man";
 	TEXT[2]				=	"kaum noch entziffern kann.";
-	TEXT[3]				=	"Der ehemalige Besitzer scheint ein Trolljäger";
+	TEXT[3]				=	"Der ehemalige Besitzer scheint ein TrolljÃ¤ger";
 	TEXT[4]				=	"gewesen zu sein.";
 };
 
@@ -157,11 +157,11 @@ FUNC VOID UseTroll()
 				Doc_SetFont 	(nDocID, -1, "font_10_book.tga");
 				Doc_PrintLine	(nDocID,  0, "");
 				Doc_PrintLine	(nDocID,  0, "");
-				Doc_PrintLines	(nDocID,  0, "Heute werde ich es schaffen. Ich weiß es. Die Götter stehen mir bei. Ich habe alles versucht einen Troll zu töten. Härtester Stahl zeigte keine Wirkung und Pfeile prallten von ihm ab als wäre seine Haut aus Stein.");
+				Doc_PrintLines	(nDocID,  0, "Heute werde ich es schaffen. Ich weiÃŸ es. Die GÃ¶tter stehen mir bei. Ich habe alles versucht einen Troll zu tÃ¶ten. HÃ¤rtester Stahl zeigte keine Wirkung und Pfeile prallten von ihm ab als wÃ¤re seine Haut aus Stein.");
 				Doc_PrintLine	(nDocID,  0, "");
-				Doc_PrintLines	(nDocID,  0, "Nun werde ich mich dieser magischen Spruchrolle bedienen, die mir der Händler in Khorinis verkauft hat. Sie hat mich 50 Goldstücke gekostet, aber der Gewinn, den ich durch die Trophäen bekomme, wird mich reich machen.");
+				Doc_PrintLines	(nDocID,  0, "Nun werde ich mich dieser magischen Spruchrolle bedienen, die mir der HÃ¤ndler in Khorinis verkauft hat. Sie hat mich 50 GoldstÃ¼cke gekostet, aber der Gewinn, den ich durch die TrophÃ¤en bekomme, wird mich reich machen.");
 				Doc_PrintLine	(nDocID,  0, "");
-				Doc_PrintLines	(nDocID,  0, "Heute werde ich einen Troll töten.");
+				Doc_PrintLines	(nDocID,  0, "Heute werde ich einen Troll tÃ¶ten.");
 				Doc_Show		(nDocID);
 };
 
@@ -184,16 +184,16 @@ INSTANCE Focus_2(C_Item)
 	material 			=	MAT_STONE;
 
 	description			=	name;
-	TEXT[1]				=	"Einer der fünf Foki, die zur Erschaffung";
+	TEXT[1]				=	"Einer der fÃ¼nf Foki, die zur Erschaffung";
 	TEXT[2]				=	"der magischen Barriere benutzt wurden.";
 };
 
 //---------------------------------------------------------------------
-//	Truhenschlüssel in der Bergfestung
+//	TruhenschlÃ¼ssel in der Bergfestung
 //---------------------------------------------------------------------
 INSTANCE ItKe_BERG_01(C_Item)
 {	
-	name 				=	"Truhenschlüssel";
+	name 				=	"TruhenschlÃ¼ssel";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	0;	
@@ -204,8 +204,8 @@ INSTANCE ItKe_BERG_01(C_Item)
 	material 			=	MAT_METAL;
 	description			= name;
 	TEXT[0]				= "Alte Bergfestung";
-	TEXT[1]				= "Ein rostiger alter Schlüssel";
-	TEXT[2]				= "der zu einer Truhe gehört";
+	TEXT[1]				= "Ein rostiger alter SchlÃ¼ssel";
+	TEXT[2]				= "der zu einer Truhe gehÃ¶rt";
 	TEXT[5]				= NAME_Value;
 	COUNT[5]			= value;
 };
@@ -247,7 +247,7 @@ FUNC VOID UseUrkunde()
 				Doc_SetFont 	(nDocID, -1, "font_10_book.tga");
 				Doc_PrintLine	(nDocID,  0, "");
 				Doc_PrintLine	(nDocID,  0, "");
-				Doc_PrintLines	(nDocID,  0, "Ich, Bergmar Burggraf zu Westfeld und meines Herren zu Tymoris Landrichter über das Gut in dem Gebiet um Khorinis gelegen, ... tue kund, ... das ich ... dem Besitzer dieser Urkunde ... und dem Innoshaus daselbst das Lehen auf der Bergfeste (mitsamt weiteren Zehenten und allen dort befindlichen Minen) aufgegeben und verkauft habe um 400 Pfund Gold.");
+				Doc_PrintLines	(nDocID,  0, "Ich, Bergmar Burggraf zu Westfeld und meines Herren zu Tymoris Landrichter Ã¼ber das Gut in dem Gebiet um Khorinis gelegen, ... tue kund, ... das ich ... dem Besitzer dieser Urkunde ... und dem Innoshaus daselbst das Lehen auf der Bergfeste (mitsamt weiteren Zehenten und allen dort befindlichen Minen) aufgegeben und verkauft habe um 400 Pfund Gold.");
 				Doc_Show		(nDocID );
 };
 	
@@ -295,16 +295,16 @@ INSTANCE Focus_3(C_Item)
 	material 			=	MAT_STONE;
 
 	description			=	name;
-	TEXT[1]				=	"Einer der fünf Foki, die zur Erschaffung";
+	TEXT[1]				=	"Einer der fÃ¼nf Foki, die zur Erschaffung";
 	TEXT[2]				=	"der magischen Barriere benutzt wurden.";
 };
 
 //---------------------------------------------------------------------
-//	Schlüssel zum Bonusraum in der Klosterruine
+//	SchlÃ¼ssel zum Bonusraum in der Klosterruine
 //---------------------------------------------------------------------
 INSTANCE ItKe_Focus4(C_Item)
 {
-	name 				=	"Schlüssel";
+	name 				=	"SchlÃ¼ssel";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MISSION;
@@ -315,8 +315,8 @@ INSTANCE ItKe_Focus4(C_Item)
 	material 			=	MAT_METAL;
 
 	description			= name;
-	TEXT[1]				= "Dieser Schlüssel stammt aus einer";
-	TEXT[2]				= "Höhle vor der Klosterruine";
+	TEXT[1]				= "Dieser SchlÃ¼ssel stammt aus einer";
+	TEXT[2]				= "HÃ¶hle vor der Klosterruine";
 };
 
 //---------------------------------------------------------------------
@@ -337,7 +337,7 @@ INSTANCE Focus_4(C_Item)
 	visual 				=	"ItMi_Focus_01.3ds";
 	material 			=	MAT_STONE;
 	description			=	name;
-	TEXT[1]				=	"Einer der fünf Foki, die zur Erschaffung";
+	TEXT[1]				=	"Einer der fÃ¼nf Foki, die zur Erschaffung";
 	TEXT[2]				=	"der magischen Barriere benutzt wurden.";
 };
 
@@ -381,11 +381,11 @@ FUNC VOID UnEquip_OrcTalisman()
 
 
 //---------------------------------------------------------------------
-//	Schlüssel unter dem Steinkreis
+//	SchlÃ¼ssel unter dem Steinkreis
 //---------------------------------------------------------------------
 INSTANCE ItKe_Focus5(C_Item)
 {
-	name 				=	"Schlüssel";
+	name 				=	"SchlÃ¼ssel";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MISSION;
@@ -396,7 +396,7 @@ INSTANCE ItKe_Focus5(C_Item)
 	material 			=	MAT_METAL;
 
 	description			= name;
-	TEXT[1]				= "Dieser Schlüssel stammt aus der";
+	TEXT[1]				= "Dieser SchlÃ¼ssel stammt aus der";
 	TEXT[2]				= "Gruft unter dem Steinkreis";
 };
 
@@ -418,7 +418,7 @@ INSTANCE Focus_5(C_Item)
 	visual 				=	"ItMi_Focus_01.3ds";
 	material 			=	MAT_STONE;
 	description			=	name;
-	TEXT[1]				=	"Einer der fünf Foki, die zur Erschaffung";
+	TEXT[1]				=	"Einer der fÃ¼nf Foki, die zur Erschaffung";
 	TEXT[2]				=	"der magischen Barriere benutzt wurden.";
 };
 

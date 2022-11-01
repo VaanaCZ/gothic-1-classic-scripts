@@ -77,11 +77,11 @@ FUNC INT DIA_Graham_SellMap_Condition()
 FUNC VOID DIA_Graham_SellMap_Info()
 {	
 	AI_Output (other, self,"DIA_Graham_SellMap_15_00"); //Diego schickt mich. Er sagt, du sollst mir 'ne Karte geben, auf der der Weg zur Alten Mine verzeichnet ist.
-	AI_Output (self, other,"DIA_Graham_SellMap_02_01"); //Kein Problem. Für dich nur 20 Erz.
+	AI_Output (self, other,"DIA_Graham_SellMap_02_01"); //Kein Problem. FÃ¼r dich nur 20 Erz.
 	Info_ClearChoices	(DIA_Graham_SellMap );
 	Info_AddChoice		(DIA_Graham_SellMap,"Ich komme wieder."							,DIA_Graham_SellMap_BACK);
 	Info_AddChoice		(DIA_Graham_SellMap,"Gut - ich werde die Karte bezahlen. Hier, nimm das Erz."	,DIA_Graham_SellMap_Pay);
-	Info_AddChoice		(DIA_Graham_SellMap,"Rück die Karte raus, oder ich polier dir die Fresse!"								,DIA_Graham_SellMap_AufsMaul);
+	Info_AddChoice		(DIA_Graham_SellMap,"RÃ¼ck die Karte raus, oder ich polier dir die Fresse!"								,DIA_Graham_SellMap_AufsMaul);
 	Info_AddChoice		(DIA_Graham_SellMap,"Moment, Diego sagte, du sollst mir die Karte GEBEN, nicht verkaufen.",DIA_Graham_SellMap_GiveNotSell);
 };
 
@@ -110,8 +110,8 @@ func void DIA_Graham_SellMap_Pay()
 
 func void DIA_Graham_SellMap_AufsMaul()
 {
-	AI_Output (other, self,"DIA_Graham_SellMap_AufsMaul_15_00"); //Rück die Karte raus, oder ich polier dir die Fresse!
-	AI_Output (self, other,"DIA_Graham_SellMap_AufsMaul_02_01"); //Mach bloß keinen Mist, Mann. Ich will keinen Ärger. Hier, nimm die verdammte Karte und jetzt lass mich in Ruhe!
+	AI_Output (other, self,"DIA_Graham_SellMap_AufsMaul_15_00"); //RÃ¼ck die Karte raus, oder ich polier dir die Fresse!
+	AI_Output (self, other,"DIA_Graham_SellMap_AufsMaul_02_01"); //Mach bloÃŸ keinen Mist, Mann. Ich will keinen Ã„rger. Hier, nimm die verdammte Karte und jetzt lass mich in Ruhe!
 	B_GiveInvItems(self, other, ItWrOMmap, 1);
 	Info_ClearChoices	(DIA_Graham_SellMap );
 	Npc_SetPermAttitude(self,ATT_ANGRY);
@@ -123,7 +123,7 @@ func void DIA_Graham_SellMap_GiveNotSell()
 {
 	AI_Output (other, self,"DIA_Graham_SellMap_GiveNotSell_15_00"); //Moment mal, Diego sagte, du sollst mir die Karte GEBEN, nicht verkaufen.
 	AI_Output (self, other,"DIA_Graham_SellMap_GiveNotSell_02_01"); //Das interessiert mich aber nicht! Hast du eine Ahnung, wie viel Arbeit es macht, so eine Karte anzufertigen?
-	AI_Output (self, other,"DIA_Graham_SellMap_GiveNotSell_02_02"); //20 ist schon mein Spezialpreis für Freunde von Diego. Normalerweise würde ich 50 nehmen.
+	AI_Output (self, other,"DIA_Graham_SellMap_GiveNotSell_02_02"); //20 ist schon mein Spezialpreis fÃ¼r Freunde von Diego. Normalerweise wÃ¼rde ich 50 nehmen.
 };
 
 
@@ -134,7 +134,7 @@ INSTANCE DIA_Graham_BuyMaps (C_INFO)
 	condition	= DIA_Graham_BuyMaps_Condition;
 	information	= DIA_Graham_BuyMaps_Info;
 	permanent	= 1;
-	description = "Ich würde gerne eine Karte kaufen.";
+	description = "Ich wÃ¼rde gerne eine Karte kaufen.";
 	Trade 		= 1;
 };                       
 
@@ -148,7 +148,7 @@ FUNC INT DIA_Graham_BuyMaps_Condition()
 
 FUNC VOID DIA_Graham_BuyMaps_Info()
 {	
-	AI_Output (other, self,"DIA_Graham_BuyMaps_15_00"); //Ich würde gerne eine Karte kaufen.
+	AI_Output (other, self,"DIA_Graham_BuyMaps_15_00"); //Ich wÃ¼rde gerne eine Karte kaufen.
 	AI_Output (self, other,"DIA_Graham_BuyMaps_02_01"); //Klar ... Was suchst du? Je mehr drauf zu sehen ist, desto teurer sind die Karten.
 };
 

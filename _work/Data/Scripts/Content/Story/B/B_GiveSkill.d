@@ -39,21 +39,21 @@ func int B_GiveSkill(var C_NPC typ, var int TAL, var int NEW_Wert, var int LP_Co
 			{
 				Npc_SetTalentSkill(typ, NPC_TALENT_BOW, NEW_Wert);
 				Npc_SetTalentValue(typ, NPC_TALENT_BOW, Npc_GetTalentValue(typ, NPC_TALENT_BOW)+15);
-				PrintScreen	("Lerne: Bogenschieﬂen", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
+				PrintScreen	("Lerne: Bogenschie√üen", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
 				return 1;
 			}
 			else if (tal == NPC_TALENT_CROSSBOW)
 			{
 				Npc_SetTalentSkill(typ, NPC_TALENT_CROSSBOW, NEW_Wert);
 				Npc_SetTalentValue(typ, NPC_TALENT_CROSSBOW, Npc_GetTalentValue(typ, NPC_TALENT_CROSSBOW)+20);
-				PrintScreen	("Lerne: Armbrustschieﬂen", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
+				PrintScreen	("Lerne: Armbrustschie√üen", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
 				return 1;
 			}
 			else if (tal == NPC_TALENT_PICKLOCK)
 			{
 				Npc_SetTalentSkill(typ, NPC_TALENT_PICKLOCK, NEW_Wert);
 				Npc_SetTalentValue(typ, NPC_TALENT_PICKLOCK, Npc_GetTalentValue(typ, NPC_TALENT_PICKLOCK)-40);
-				PrintScreen	("Lerne: Schlˆsser knacken", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
+				PrintScreen	("Lerne: Schl√∂sser knacken", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
 				return 1;
 			}
 			else if (tal == NPC_TALENT_PICKPOCKET)
@@ -66,7 +66,7 @@ func int B_GiveSkill(var C_NPC typ, var int TAL, var int NEW_Wert, var int LP_Co
 			else if (tal == NPC_TALENT_MAGE)
 			{
 				Npc_SetTalentSkill(typ, NPC_TALENT_MAGE, NEW_Wert);
-				PrintScreen	("Lerne: N‰chster Kreis der Magie", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
+				PrintScreen	("Lerne: N√§chster Kreis der Magie", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
 				return 1;
 			}
 			else if (tal == NPC_TALENT_SNEAK)
@@ -112,9 +112,9 @@ func int B_GiveSkill(var C_NPC typ, var int TAL, var int NEW_Wert, var int LP_Co
 			B_Say (self, other, "$NOLEARNYOUREBETTER"); //Du bist jetzt schon besser!
 			return 0;
 		}
-		else if ((TAL_Wert+1) < NEW_Wert) //d.h. i.d.R. TAL_Wert=2 und NEW_Wert=0, auﬂer bei TALENT_MAGE
+		else if ((TAL_Wert+1) < NEW_Wert) //d.h. i.d.R. TAL_Wert=2 und NEW_Wert=0, au√üer bei TALENT_MAGE
 		{
-			B_Say (self, other, "$NOLEARNYOUALREADYKNOW"); //Du muﬂt erst Fortgeschritten sein, bevor du ein Meister werden kannst!
+			B_Say (self, other, "$NOLEARNYOUALREADYKNOW"); //Du mu√üt erst Fortgeschritten sein, bevor du ein Meister werden kannst!
 			return 0;
 		};
 	};	

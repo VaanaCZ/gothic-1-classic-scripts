@@ -59,45 +59,45 @@ FUNC VOID Info_FindNPC_OC_Diego()
 		{
 			if (self.voice == 1)
 			{
-				AI_Output(self,other,"Info_FindNPC_OC_Diego_01_01"); //Tagsüber steht er gewöhnlich bei Thorus am Eingang zur Burg.
+				AI_Output(self,other,"Info_FindNPC_OC_Diego_01_01"); //TagsÃ¼ber steht er gewÃ¶hnlich bei Thorus am Eingang zur Burg.
 			}
 			else if (self.voice == 2)
 			{
-				AI_Output(self,other,"Info_FindNPC_OC_Diego_02_01"); //Tagsüber steht er für gewöhnlich bei Thorus am Eingang zur Burg.
+				AI_Output(self,other,"Info_FindNPC_OC_Diego_02_01"); //TagsÃ¼ber steht er fÃ¼r gewÃ¶hnlich bei Thorus am Eingang zur Burg.
 			}
 			else if (self.voice == 3)
 			{
-				AI_Output(self,other,"Info_FindNPC_OC_Diego_03_01"); //Tagsüber steht er für gewöhnlich bei Thorus am Eingang zur Burg.
+				AI_Output(self,other,"Info_FindNPC_OC_Diego_03_01"); //TagsÃ¼ber steht er fÃ¼r gewÃ¶hnlich bei Thorus am Eingang zur Burg.
 			}
 			else if (self.voice == 4)
 			{
-				AI_Output(self,other,"Info_FindNPC_OC_Diego_04_01"); //Tagsüber steht er für gewöhnlich bei Thorus am Eingang zur Burg.
+				AI_Output(self,other,"Info_FindNPC_OC_Diego_04_01"); //TagsÃ¼ber steht er fÃ¼r gewÃ¶hnlich bei Thorus am Eingang zur Burg.
 			};
 		}
 		else if (self.guild == GIL_GRD) 
 		{
 			if (self.voice == 6)
 			{
-				AI_Output(self,other,"Info_FindNPC_OC_Diego_06_01"); //Tagsüber steht er für gewöhnlich bei Thorus am Eingang zur Burg.
+				AI_Output(self,other,"Info_FindNPC_OC_Diego_06_01"); //TagsÃ¼ber steht er fÃ¼r gewÃ¶hnlich bei Thorus am Eingang zur Burg.
 			}
 			else if (self.voice == 7)
 			{
-				AI_Output(self,other,"Info_FindNPC_OC_Diego_07_01"); //Tagsüber steht er für gewöhnlich bei Thorus am Eingang zur Burg.
+				AI_Output(self,other,"Info_FindNPC_OC_Diego_07_01"); //TagsÃ¼ber steht er fÃ¼r gewÃ¶hnlich bei Thorus am Eingang zur Burg.
 			}
 			else if (self.voice == 13)
 			{
-				AI_Output(self,other,"Info_FindNPC_OC_Diego_13_01"); //Tagsüber steht er für gewöhnlich bei Thorus am Eingang zur Burg.
+				AI_Output(self,other,"Info_FindNPC_OC_Diego_13_01"); //TagsÃ¼ber steht er fÃ¼r gewÃ¶hnlich bei Thorus am Eingang zur Burg.
 			};
 		}
 		else if (self.guild == GIL_STT) 
 		{
 			if (self.voice == 10)
 			{
-				AI_Output(self,other,"Info_FindNPC_OC_Diego_10_01"); //Tagsüber steht er für gewöhnlich bei Thorus am Eingang der Burg.
+				AI_Output(self,other,"Info_FindNPC_OC_Diego_10_01"); //TagsÃ¼ber steht er fÃ¼r gewÃ¶hnlich bei Thorus am Eingang der Burg.
 			}
 			else if (self.voice == 12)
 			{
-				AI_Output(self,other,"Info_FindNPC_OC_Diego_12_01"); //Tagsüber steht er für gewöhnlich bei Thorus am Eingang zur Burg.
+				AI_Output(self,other,"Info_FindNPC_OC_Diego_12_01"); //TagsÃ¼ber steht er fÃ¼r gewÃ¶hnlich bei Thorus am Eingang zur Burg.
 			};
 		};
 	};
@@ -125,45 +125,45 @@ FUNC VOID Info_FindNPC_OC_Thorus()
 		{
 			if (self.voice == 1)
 			{
-				AI_Output(self,other,"Info_FindNPC_OC_Thorus_01_01"); //Er steht gewöhnlich am Eingang zur Burg.
+				AI_Output(self,other,"Info_FindNPC_OC_Thorus_01_01"); //Er steht gewÃ¶hnlich am Eingang zur Burg.
 			}
 			else if (self.voice == 2)
 			{
-				AI_Output(self,other,"Info_FindNPC_OC_Thorus_02_01"); //Er steht für gewöhnlich am Eingang zur Burg.
+				AI_Output(self,other,"Info_FindNPC_OC_Thorus_02_01"); //Er steht fÃ¼r gewÃ¶hnlich am Eingang zur Burg.
 			}
 			else if (self.voice == 3)
 			{
-				AI_Output(self,other,"Info_FindNPC_OC_Thorus_03_01"); //Er steht für gewöhnlich am Eingang zur Burg.
+				AI_Output(self,other,"Info_FindNPC_OC_Thorus_03_01"); //Er steht fÃ¼r gewÃ¶hnlich am Eingang zur Burg.
 			}
 			else if (self.voice == 4)
 			{
-				AI_Output(self,other,"Info_FindNPC_OC_Thorus_04_01"); //Er steht für gewöhnlich am Eingang zur Burg.
+				AI_Output(self,other,"Info_FindNPC_OC_Thorus_04_01"); //Er steht fÃ¼r gewÃ¶hnlich am Eingang zur Burg.
 			};
 		}
 		else if (self.guild == GIL_GRD) 
 		{
 			if (self.voice == 6)
 			{
-				AI_Output(self,other,"Info_FindNPC_OC_Thorus_06_01"); //Er steht für gewöhnlich am Eingang zur Burg.
+				AI_Output(self,other,"Info_FindNPC_OC_Thorus_06_01"); //Er steht fÃ¼r gewÃ¶hnlich am Eingang zur Burg.
 			}
 			else if (self.voice == 7)
 			{
-				AI_Output(self,other,"Info_FindNPC_OC_Thorus_07_01"); //Er steht für gewöhnlich am Eingang zur Burg.
+				AI_Output(self,other,"Info_FindNPC_OC_Thorus_07_01"); //Er steht fÃ¼r gewÃ¶hnlich am Eingang zur Burg.
 			}
 			else if (self.voice == 13)
 			{
-				AI_Output(self,other,"Info_FindNPC_OC_Thorus_13_01"); //Er steht für gewöhnlich am Eingang zur Burg.
+				AI_Output(self,other,"Info_FindNPC_OC_Thorus_13_01"); //Er steht fÃ¼r gewÃ¶hnlich am Eingang zur Burg.
 			};
 		}
 		else if (self.guild == GIL_STT) 
 		{
 			if (self.voice == 10)
 			{
-				AI_Output(self,other,"Info_FindNPC_OC_Thorus_10_01"); //Er steht für gewöhnlich am Eingang zur Burg.
+				AI_Output(self,other,"Info_FindNPC_OC_Thorus_10_01"); //Er steht fÃ¼r gewÃ¶hnlich am Eingang zur Burg.
 			}
 			else if (self.voice == 12)
 			{
-				AI_Output(self,other,"Info_FindNPC_OC_Thorus_12_01"); //Er steht für gewöhnlich am Eingang zur Burg.
+				AI_Output(self,other,"Info_FindNPC_OC_Thorus_12_01"); //Er steht fÃ¼r gewÃ¶hnlich am Eingang zur Burg.
 			};
 		};
 	};

@@ -35,8 +35,8 @@ FUNC INT Info_Grd_237_FirstWarn_Condition()
 FUNC VOID Info_Grd_237_FirstWarn_Info()
 {
 	AI_Output			(self, hero,"Info_Grd_237_FirstWarn_07_01"); //Verschwinde hier lieber. Hinter dieser Barrikade beginnt das Orkgebiet!
-	AI_Output			(hero, self,"Info_Grd_237_FirstWarn_15_02"); //Ist das gefährlich?
-	AI_Output			(self, hero,"Info_Grd_237_FirstWarn_07_03"); //Sagen wir's mal so: Da dich die Orks sowieso in Fetzen reißen werden, kannst du uns auch genauso gut all dein Erz geben!
+	AI_Output			(hero, self,"Info_Grd_237_FirstWarn_15_02"); //Ist das gefÃ¤hrlich?
+	AI_Output			(self, hero,"Info_Grd_237_FirstWarn_07_03"); //Sagen wir's mal so: Da dich die Orks sowieso in Fetzen reiÃŸen werden, kannst du uns auch genauso gut all dein Erz geben!
 
 	hero.aivar[AIV_LASTDISTTOWP] 		= Npc_GetDistToWP (hero,Grd_237_CHECKPOINT);
 
@@ -51,7 +51,7 @@ func void Info_Grd_237_FirstWarn_Info_RETREAT ()
 	Info_ClearChoices	(Info_Grd_237_FirstWarn);
 
 	AI_Output			(hero, self,"Info_Grd_237_FirstWarn_15_04"); //Ist wohl besser, wenn ich wieder umdrehe!
-	AI_Output			(self, hero,"Info_Grd_237_FirstWarn_07_05"); //Schade, hätte dein Erz gerne verwahrt.
+	AI_Output			(self, hero,"Info_Grd_237_FirstWarn_07_05"); //Schade, hÃ¤tte dein Erz gerne verwahrt.
 
 	hero.aivar[AIV_GUARDPASSAGE_STATUS] = AIV_GPS_FIRSTWARN;
 
@@ -113,7 +113,7 @@ FUNC INT Info_Grd_237_LastWarn_Condition()
 
 func int Info_Grd_237_LastWarn_Info()
 {
-	AI_Output (self, hero,"Info_Grd_237_LastWarn_07_01"); 		//Bist du taub? Noch ein Schritt und du bist Futter für die Würmer!
+	AI_Output (self, hero,"Info_Grd_237_LastWarn_07_01"); 		//Bist du taub? Noch ein Schritt und du bist Futter fÃ¼r die WÃ¼rmer!
 
 	hero.aivar[AIV_LASTDISTTOWP] 		= Npc_GetDistToWP (hero,Grd_237_CHECKPOINT);
 	hero.aivar[AIV_GUARDPASSAGE_STATUS]	= AIV_GPS_LASTWARN;	
@@ -152,7 +152,7 @@ func int Info_Grd_237_Attack_Info()
 	hero.aivar[AIV_GUARDPASSAGE_STATUS]	= AIV_GPS_PUNISH;	
 	
 	B_FullStop			(self);	
-	AI_StopProcessInfos	(self);					//dem Spieler sofort wieder die Kontrolle zurückgeben
+	AI_StopProcessInfos	(self);					//dem Spieler sofort wieder die Kontrolle zurÃ¼ckgeben
 	B_SetAttackReason	(self,	AIV_AR_INTRUDER);
 	Npc_SetTarget		(self,	hero);
 	AI_StartState		(self,	ZS_Attack,	1,	"");

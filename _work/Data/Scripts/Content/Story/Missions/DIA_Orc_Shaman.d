@@ -54,8 +54,8 @@ FUNC int  Info_OrcShaman_THX_Condition()
 FUNC void  Info_OrcShaman_THX_Info()
 {
 	AI_Output 		(self, hero,"Info_OrcShaman_THX_17_01"); //Dank schulden, Fremder.
-	AI_Output 		(self, hero,"Info_OrcShaman_THX_17_02"); //Böse Orks töten wollen mich.
-	AI_Output 		(self, hero,"Info_OrcShaman_THX_17_03"); //Alte Brüder seien heute Feinde.
+	AI_Output 		(self, hero,"Info_OrcShaman_THX_17_02"); //BÃ¶se Orks tÃ¶ten wollen mich.
+	AI_Output 		(self, hero,"Info_OrcShaman_THX_17_03"); //Alte BrÃ¼der seien heute Feinde.
 }; 
 
 //---------------------------------------------------------------------
@@ -141,7 +141,7 @@ FUNC int  Info_OrcShaman_MINE_Condition()
 FUNC void  Info_OrcShaman_MINE_Info()
 {
 	AI_Output 		(hero, self,"Info_OrcShaman_MINE_15_01"); //Du warst Sklave in der Mine? In welcher Mine?
-	AI_Output 		(self, hero,"Info_OrcShaman_MINE_17_02"); //Mine gewesen mit Dorf in Kessel darüber.
+	AI_Output 		(self, hero,"Info_OrcShaman_MINE_17_02"); //Mine gewesen mit Dorf in Kessel darÃ¼ber.
 }; 
 
 //---------------------------------------------------------------------
@@ -154,7 +154,7 @@ instance  Info_OrcShaman_WHY (C_INFO)
 	information	= Info_OrcShaman_WHY_Info;
 	important	= 0;
 	permanent	= 0;
-	description = "Warum kämpfen deine Stammesbrüder gegen dich?";
+	description = "Warum kÃ¤mpfen deine StammesbrÃ¼der gegen dich?";
 };
 
 FUNC int  Info_OrcShaman_WHY_Condition()
@@ -168,10 +168,10 @@ FUNC int  Info_OrcShaman_WHY_Condition()
 
 FUNC void  Info_OrcShaman_WHY_Info()
 {
-	AI_Output 		(hero, self,"Info_OrcShaman_WHY_15_01"); //Warum kämpfen deine Stammesbrüder gegen dich?
+	AI_Output 		(hero, self,"Info_OrcShaman_WHY_15_01"); //Warum kÃ¤mpfen deine StammesbrÃ¼der gegen dich?
 	AI_Output 		(self, hero,"Info_OrcShaman_WHY_17_02"); //Ur-Shak gefallen in Ungnade.
 	AI_Output 		(self, hero,"Info_OrcShaman_WHY_17_03"); //Haben beschmutzt Ehrfurcht vor KRUSHAK.
-	AI_Output 		(self, hero,"Info_OrcShaman_WHY_17_04"); //Glauben, KRUSHAK seien böser Dämon.
+	AI_Output 		(self, hero,"Info_OrcShaman_WHY_17_04"); //Glauben, KRUSHAK seien bÃ¶ser DÃ¤mon.
 }; 
 
 //---------------------------------------------------------------------
@@ -184,7 +184,7 @@ instance  Info_OrcShaman_KRUSHAK (C_INFO)
 	information	= Info_OrcShaman_KRUSHAK_Info;
 	important	= 0;
 	permanent	= 0;
-	description = "Was heißt KRUSHAK?";
+	description = "Was heiÃŸt KRUSHAK?";
 };
 
 FUNC int  Info_OrcShaman_KRUSHAK_Condition()
@@ -198,10 +198,10 @@ FUNC int  Info_OrcShaman_KRUSHAK_Condition()
 
 FUNC void  Info_OrcShaman_KRUSHAK_Info()
 {
-	AI_Output 		(hero, self,"Info_OrcShaman_KRUSHAK_15_01"); //Was heißt KRUSHAK?
+	AI_Output 		(hero, self,"Info_OrcShaman_KRUSHAK_15_01"); //Was heiÃŸt KRUSHAK?
 	AI_Output 		(self, hero,"Info_OrcShaman_KRUSHAK_17_02"); //Menschen sagen SCHLAFEN.
-	AI_Output 		(hero, self,"Info_OrcShaman_KRUSHAK_15_03"); //Du meinst "Schläfer"?
-	AI_Output 		(self, hero,"Info_OrcShaman_KRUSHAK_17_04"); //Ja, Menschen sagen SCHLÄFER!
+	AI_Output 		(hero, self,"Info_OrcShaman_KRUSHAK_15_03"); //Du meinst "SchlÃ¤fer"?
+	AI_Output 		(self, hero,"Info_OrcShaman_KRUSHAK_17_04"); //Ja, Menschen sagen SCHLÃ„FER!
 }; 
 
 //---------------------------------------------------------------------
@@ -214,7 +214,7 @@ instance  Info_OrcShaman_SLEEPER (C_INFO)
 	information	= Info_OrcShaman_SLEEPER_Info;
 	important	= 0;
 	permanent	= 0;
-	description = "Was weißt du über den Schläfer?";
+	description = "Was weiÃŸt du Ã¼ber den SchlÃ¤fer?";
 };
 
 FUNC int  Info_OrcShaman_SLEEPER_Condition()
@@ -228,14 +228,14 @@ FUNC int  Info_OrcShaman_SLEEPER_Condition()
 
 FUNC void  Info_OrcShaman_SLEEPER_Info()
 {
-	AI_Output 		(hero, self,"Info_OrcShaman_SLEEPER_15_01"); //Was weißt du über den Schläfer?
-	AI_Output 		(self, hero,"Info_OrcShaman_SLEEPER_17_02"); //Fünf Brüder seien gewesen. Seien viiiiele Winter vorher!
-	AI_Output 		(self, hero,"Info_OrcShaman_SLEEPER_17_03"); //Waren Söhne von Geist wie Ur-Shak!
-	AI_Output 		(hero, self,"Info_OrcShaman_SLEEPER_15_04"); //Fünf Schamanen also!
+	AI_Output 		(hero, self,"Info_OrcShaman_SLEEPER_15_01"); //Was weiÃŸt du Ã¼ber den SchlÃ¤fer?
+	AI_Output 		(self, hero,"Info_OrcShaman_SLEEPER_17_02"); //FÃ¼nf BrÃ¼der seien gewesen. Seien viiiiele Winter vorher!
+	AI_Output 		(self, hero,"Info_OrcShaman_SLEEPER_17_03"); //Waren SÃ¶hne von Geist wie Ur-Shak!
+	AI_Output 		(hero, self,"Info_OrcShaman_SLEEPER_15_04"); //FÃ¼nf Schamanen also!
 	AI_Output 		(self, hero,"Info_OrcShaman_SLEEPER_17_05"); //Haben gerufen KRUSHAK!
 	AI_Output 		(self, hero,"Info_OrcShaman_SLEEPER_17_06"); //Haben besiegen wollen Klan von Feind!
-	AI_Output 		(self, hero,"Info_OrcShaman_SLEEPER_17_07"); //Fünf Brüder von damals haben gebaut Tempel in Erde für KRUSHAK!
-	AI_Output 		(hero, self,"Info_OrcShaman_SLEEPER_15_08"); //Ein unterirdischer Tempel zu Ehren des Schläfers! Das muss Xardas gemeint haben mit 'unter der Ork-Stadt'!
+	AI_Output 		(self, hero,"Info_OrcShaman_SLEEPER_17_07"); //FÃ¼nf BrÃ¼der von damals haben gebaut Tempel in Erde fÃ¼r KRUSHAK!
+	AI_Output 		(hero, self,"Info_OrcShaman_SLEEPER_15_08"); //Ein unterirdischer Tempel zu Ehren des SchlÃ¤fers! Das muss Xardas gemeint haben mit 'unter der Ork-Stadt'!
 }; 
 
 //---------------------------------------------------------------------
@@ -263,10 +263,10 @@ FUNC int  Info_OrcShaman_CURSE_Condition()
 FUNC void  Info_OrcShaman_CURSE_Info()
 {
 	AI_Output 		(hero, self,"Info_OrcShaman_CURSE_15_01"); //Was passierte dann im Tempel unter der Erde?
-	AI_Output 		(self, hero,"Info_OrcShaman_CURSE_17_02"); //Brüder von damals haben gegeben Herz für KRUSHAK.
-	AI_Output 		(self, hero,"Info_OrcShaman_CURSE_17_03"); //Aber KRUSHAK gewesen böse. KRUSHAK verfluchen alle, die bauen Tempel.
-	AI_Output 		(self, hero,"Info_OrcShaman_CURSE_17_04"); //Brüder ohne Herz nun seien tot und lebendig. Seien beides.
-	AI_Output 		(self, hero,"Info_OrcShaman_CURSE_17_05"); //KRUSHAK haben Herz von Brüder. Herz seien Kraft für KRUSHAK.
+	AI_Output 		(self, hero,"Info_OrcShaman_CURSE_17_02"); //BrÃ¼der von damals haben gegeben Herz fÃ¼r KRUSHAK.
+	AI_Output 		(self, hero,"Info_OrcShaman_CURSE_17_03"); //Aber KRUSHAK gewesen bÃ¶se. KRUSHAK verfluchen alle, die bauen Tempel.
+	AI_Output 		(self, hero,"Info_OrcShaman_CURSE_17_04"); //BrÃ¼der ohne Herz nun seien tot und lebendig. Seien beides.
+	AI_Output 		(self, hero,"Info_OrcShaman_CURSE_17_05"); //KRUSHAK haben Herz von BrÃ¼der. Herz seien Kraft fÃ¼r KRUSHAK.
 	AI_Output 		(hero, self,"Info_OrcShaman_CURSE_15_06"); //Was passierte mit den Arbeitern, die den Tempel erbauten?
 	AI_Output 		(self, hero,"Info_OrcShaman_CURSE_17_07"); //KRUSHAK verfluchen alle. Auch die gewesen Arbeiter. Seien allen tot und lebendig.
 }; 
@@ -281,7 +281,7 @@ instance  Info_OrcShaman_OUTSIDE (C_INFO)
 	information	= Info_OrcShaman_OUTSIDE_Info;
 	important	= 0;
 	permanent	= 0;
-	description = "Haben die Orks an der Oberfläche nichts unternommen?";
+	description = "Haben die Orks an der OberflÃ¤che nichts unternommen?";
 };
 
 FUNC int  Info_OrcShaman_OUTSIDE_Condition()
@@ -294,11 +294,11 @@ FUNC int  Info_OrcShaman_OUTSIDE_Condition()
 
 FUNC void  Info_OrcShaman_OUTSIDE_Info()
 {
-	AI_Output 		(hero, self,"Info_OrcShaman_OUTSIDE_15_01"); //Haben die Orks an der Oberfläche nichts unternommen?
-	AI_Output 		(self, hero,"Info_OrcShaman_OUTSIDE_17_02"); //Haben verschlossen Tempel. Brüder von heute anbeten KRUSHAK.
-	AI_Output 		(self, hero,"Info_OrcShaman_OUTSIDE_17_03"); //KRUSHAK bekommen Opfer, damit nicht werden böse.
-	AI_Output 		(self, hero,"Info_OrcShaman_OUTSIDE_17_04"); //Ur-Shak Opfer finden falsch. Haben gesagt KRUSHAK böse.
-	AI_Output 		(self, hero,"Info_OrcShaman_OUTSIDE_17_05"); //Brüder wollen nicht hören. Brüder sagen Ur-Shak gehen. Brüder schlagen Ur-Shak.
+	AI_Output 		(hero, self,"Info_OrcShaman_OUTSIDE_15_01"); //Haben die Orks an der OberflÃ¤che nichts unternommen?
+	AI_Output 		(self, hero,"Info_OrcShaman_OUTSIDE_17_02"); //Haben verschlossen Tempel. BrÃ¼der von heute anbeten KRUSHAK.
+	AI_Output 		(self, hero,"Info_OrcShaman_OUTSIDE_17_03"); //KRUSHAK bekommen Opfer, damit nicht werden bÃ¶se.
+	AI_Output 		(self, hero,"Info_OrcShaman_OUTSIDE_17_04"); //Ur-Shak Opfer finden falsch. Haben gesagt KRUSHAK bÃ¶se.
+	AI_Output 		(self, hero,"Info_OrcShaman_OUTSIDE_17_05"); //BrÃ¼der wollen nicht hÃ¶ren. BrÃ¼der sagen Ur-Shak gehen. BrÃ¼der schlagen Ur-Shak.
 }; 
 
 //---------------------------------------------------------------------
@@ -326,7 +326,7 @@ FUNC void  Info_OrcShaman_INTEMPLE_Info()
 {
 	AI_Output 		(hero, self,"Info_OrcShaman_INTEMPLE_15_01"); //Ich muss in den unterirdischen Tempel! Kannst du mich dorthin bringen?
 	AI_Output 		(self, hero,"Info_OrcShaman_INTEMPLE_17_02"); //Ur-Shak sagen Dank zu Fremder. Fremder retten Ur-Shak.
-	AI_Output 		(self, hero,"Info_OrcShaman_INTEMPLE_17_03"); //Aber Eingang von Tempel in Heimat. Ur-Shak nicht können gehen Heimat.
+	AI_Output 		(self, hero,"Info_OrcShaman_INTEMPLE_17_03"); //Aber Eingang von Tempel in Heimat. Ur-Shak nicht kÃ¶nnen gehen Heimat.
 	AI_Output 		(hero, self,"Info_OrcShaman_INTEMPLE_15_04"); //Ur-Shak glauben 
 };
 
@@ -377,7 +377,7 @@ instance  Info_OrcShaman_FIGHT (C_INFO)
 	information	= Info_OrcShaman_FIGHT_Info;
 	important	= 0;
 	permanent	= 0;
-	description = "Nun, dann muss ich mir den Weg wohl freikämpfen!";
+	description = "Nun, dann muss ich mir den Weg wohl freikÃ¤mpfen!";
 };
 
 FUNC int  Info_OrcShaman_FIGHT_Condition()
@@ -390,10 +390,10 @@ FUNC int  Info_OrcShaman_FIGHT_Condition()
 
 FUNC void  Info_OrcShaman_FIGHT_Info()
 {
-	AI_Output 		(hero, self,"Info_OrcShaman_FIGHT_15_01"); //Nun, dann muss ich mir den Weg wohl freikämpfen!
-	AI_Output 		(self, hero,"Info_OrcShaman_FIGHT_17_02"); //Brüder in Heimat seien sehr stark! Brüder seien seeeehr viele!
+	AI_Output 		(hero, self,"Info_OrcShaman_FIGHT_15_01"); //Nun, dann muss ich mir den Weg wohl freikÃ¤mpfen!
+	AI_Output 		(self, hero,"Info_OrcShaman_FIGHT_17_02"); //BrÃ¼der in Heimat seien sehr stark! BrÃ¼der seien seeeehr viele!
 	AI_Output 		(self, hero,"Info_OrcShaman_FIGHT_17_03"); //Fremder nicht gehen. Viele Krieger! Fremder sterben!
-	AI_Output 		(self, hero,"Info_OrcShaman_FIGHT_17_04"); //Andere Söhne von Geist in Heimat. Machen Fremder Feuer, dann Fremder sterben!
+	AI_Output 		(self, hero,"Info_OrcShaman_FIGHT_17_04"); //Andere SÃ¶hne von Geist in Heimat. Machen Fremder Feuer, dann Fremder sterben!
 }; 
 
 //---------------------------------------------------------------------
@@ -422,7 +422,7 @@ FUNC void  Info_OrcShaman_OTHERWAY_Info()
 	AI_Output 		(hero, self,"Info_OrcShaman_OTHERWAY_15_01"); //Okay, okay, aber ich muss einen Weg in den Tempel finden!
 	AI_Output 		(self, hero,"Info_OrcShaman_OTHERWAY_17_02"); //Ur-Shak kennen Weg! Fremder tragen ULU-MULU!
 	AI_Output 		(hero, self,"Info_OrcShaman_OTHERWAY_15_03"); //ULU-MULU??? Was ist ein Ulu-Mulu?
-	AI_Output 		(self, hero,"Info_OrcShaman_OTHERWAY_17_04"); //Seien Standarte der Freundschaft! Brüder respektieren ULU-MULU!
+	AI_Output 		(self, hero,"Info_OrcShaman_OTHERWAY_17_04"); //Seien Standarte der Freundschaft! BrÃ¼der respektieren ULU-MULU!
 	AI_Output 		(self, hero,"Info_OrcShaman_OTHERWAY_17_05"); //Fremder tragen ULU-MULU, dann Fremder nicht sterben!
 };
 
@@ -494,7 +494,7 @@ instance  Info_OrcShaman_BYEBYE (C_INFO)
 	information	= Info_OrcShaman_BYEBYE_Info;
 	important	= 0;
 	permanent	= 0;
-	description = "Danke für deine Hilfe!";
+	description = "Danke fÃ¼r deine Hilfe!";
 };
 
 FUNC int  Info_OrcShaman_BYEBYE_Condition()
@@ -507,11 +507,11 @@ FUNC int  Info_OrcShaman_BYEBYE_Condition()
 
 FUNC void  Info_OrcShaman_BYEBYE_Info()
 {
-	AI_Output 		(hero, self,"Info_OrcShaman_BYEBYE_15_01"); //Danke für deine Hilfe!
+	AI_Output 		(hero, self,"Info_OrcShaman_BYEBYE_15_01"); //Danke fÃ¼r deine Hilfe!
 	AI_Output 		(self, hero,"Info_OrcShaman_BYEBYE_17_02"); //Ur-Shak danken Fremder. Fremder retten Ur-Shak. Fremder nun Freund von Ur-Shak!
-	AI_Output 		(self, hero,"Info_OrcShaman_BYEBYE_17_03"); //Freund nehmen Geschenk. Nehmen Talismann von Ur-Shak! Talisman schützen vor Atem von Feuerwaran!
-	AI_Output 		(self, hero,"Info_OrcShaman_BYEBYE_17_04"); //Ur-Shak nicht können gehen Heimat. Ur-Shak nun hier wohnen! Freund kommen, wenn brauchen Hilfe!
-	AI_Output 		(hero, self,"Info_OrcShaman_BYEBYE_15_05"); //Vielleicht werde ich auf dein Angebot zurückkommen!
+	AI_Output 		(self, hero,"Info_OrcShaman_BYEBYE_17_03"); //Freund nehmen Geschenk. Nehmen Talismann von Ur-Shak! Talisman schÃ¼tzen vor Atem von Feuerwaran!
+	AI_Output 		(self, hero,"Info_OrcShaman_BYEBYE_17_04"); //Ur-Shak nicht kÃ¶nnen gehen Heimat. Ur-Shak nun hier wohnen! Freund kommen, wenn brauchen Hilfe!
+	AI_Output 		(hero, self,"Info_OrcShaman_BYEBYE_15_05"); //Vielleicht werde ich auf dein Angebot zurÃ¼ckkommen!
 
 	B_Story_FriendOfUrShak	();
 
@@ -586,17 +586,17 @@ FUNC void  Info_OrcShaman_ORCCITY_Info()
 	B_FullStop		(hero);
 	AI_GotoNpc		(hero, self);
 
-	AI_Output 		(self, hero,"Info_OrcShaman_ORCCITY_17_01"); //Ur-Shak grüßen Freund!
+	AI_Output 		(self, hero,"Info_OrcShaman_ORCCITY_17_01"); //Ur-Shak grÃ¼ÃŸen Freund!
 
 	if (Npc_HasItems(hero, UluMulu))
 	{
 		AI_Output 	(self, hero,"Info_OrcShaman_ORCCITY_17_02"); //Freund haben ULU-MULU! Seien gut!
-		AI_Output 	(self, hero,"Info_OrcShaman_ORCCITY_17_03"); //Freund nicht vergessen tragen ULU-MULU in Hand, wenn gehen über Brücke!
+		AI_Output 	(self, hero,"Info_OrcShaman_ORCCITY_17_03"); //Freund nicht vergessen tragen ULU-MULU in Hand, wenn gehen Ã¼ber BrÃ¼cke!
 	}
 	else
 	{	
 		AI_Output 	(self, hero,"Info_OrcShaman_ORCCITY_17_04"); //Freund haben kein ULU-MULU! Nicht gut!
-		AI_Output 	(self, hero,"Info_OrcShaman_ORCCITY_17_05"); //Freund nicht gehen über Brücke, sonst sterben!
+		AI_Output 	(self, hero,"Info_OrcShaman_ORCCITY_17_05"); //Freund nicht gehen Ã¼ber BrÃ¼cke, sonst sterben!
 	};
 }; 
 
@@ -624,11 +624,11 @@ FUNC int  Info_OrcShaman_YOUHERE_Condition()
 FUNC void  Info_OrcShaman_YOUHERE_Info()
 {
 	AI_Output 		(hero, self,"Info_OrcShaman_YOUHERE_15_01"); //Was machst du hier so nah am Dorf?
-	AI_Output 		(self, hero,"Info_OrcShaman_YOUHERE_17_02"); //Ur-Shak beobachten Brüder in Heimat!
+	AI_Output 		(self, hero,"Info_OrcShaman_YOUHERE_17_02"); //Ur-Shak beobachten BrÃ¼der in Heimat!
 	AI_Output 		(self, hero,"Info_OrcShaman_YOUHERE_17_03"); //Ur-Shak glauben, KRUSHAK bald aufwachen!
-	AI_Output 		(self, hero,"Info_OrcShaman_YOUHERE_17_04"); //Ur-Shak hier warten und kämpfen gegen KRUSHAK, wenn erwacht!
-	AI_Output 		(hero, self,"Info_OrcShaman_YOUHERE_15_05"); //Der Schläfer wird bald erwachen??? Ich hoffe, du liegst falsch!
-	AI_Output 		(hero, self,"Info_OrcShaman_YOUHERE_15_06"); //Bei allem, was ich bisher über diesen Erzdämon gehört habe, ist er mir schlafend bedeutend lieber!
+	AI_Output 		(self, hero,"Info_OrcShaman_YOUHERE_17_04"); //Ur-Shak hier warten und kÃ¤mpfen gegen KRUSHAK, wenn erwacht!
+	AI_Output 		(hero, self,"Info_OrcShaman_YOUHERE_15_05"); //Der SchlÃ¤fer wird bald erwachen??? Ich hoffe, du liegst falsch!
+	AI_Output 		(hero, self,"Info_OrcShaman_YOUHERE_15_06"); //Bei allem, was ich bisher Ã¼ber diesen ErzdÃ¤mon gehÃ¶rt habe, ist er mir schlafend bedeutend lieber!
 }; 
 
 //---------------------------------------------------------------------
@@ -641,7 +641,7 @@ instance  Info_OrcShaman_SEAL (C_INFO)
 	information	= Info_OrcShaman_SEAL_Info;
 	important	= 0;
 	permanent	= 0;
-	description = "Du erzähltest mir, dass deine Brüder den Tempel verschlossen haben!";
+	description = "Du erzÃ¤hltest mir, dass deine BrÃ¼der den Tempel verschlossen haben!";
 };
 
 FUNC int  Info_OrcShaman_SEAL_Condition()
@@ -654,10 +654,10 @@ FUNC int  Info_OrcShaman_SEAL_Condition()
 };
 FUNC void  Info_OrcShaman_SEAL_Info()
 {
-	AI_Output 		(hero, self,"Info_OrcShaman_SEAL_15_01"); //Bei unserem letzten Treffen erzähltest du, dass deine Brüder den Tempel verschlossen haben!
-	AI_Output 		(self, hero,"Info_OrcShaman_SEAL_17_02"); //Brüder von Ur-Shak haben verschlossen Tempel in Erde sehr gut!
-	AI_Output 		(self, hero,"Info_OrcShaman_SEAL_17_03"); //Freund nicht können gehen hinein!
-	AI_Output 		(self, hero,"Info_OrcShaman_SEAL_17_04"); //Freund müssen benutzen Zauber von Brüder, die seien Söhne von Geist wie Ur-Shak!
+	AI_Output 		(hero, self,"Info_OrcShaman_SEAL_15_01"); //Bei unserem letzten Treffen erzÃ¤hltest du, dass deine BrÃ¼der den Tempel verschlossen haben!
+	AI_Output 		(self, hero,"Info_OrcShaman_SEAL_17_02"); //BrÃ¼der von Ur-Shak haben verschlossen Tempel in Erde sehr gut!
+	AI_Output 		(self, hero,"Info_OrcShaman_SEAL_17_03"); //Freund nicht kÃ¶nnen gehen hinein!
+	AI_Output 		(self, hero,"Info_OrcShaman_SEAL_17_04"); //Freund mÃ¼ssen benutzen Zauber von BrÃ¼der, die seien SÃ¶hne von Geist wie Ur-Shak!
 }; 
 
 //---------------------------------------------------------------------
@@ -684,11 +684,11 @@ FUNC int  Info_OrcShaman_SCROLL_Condition()
 FUNC void  Info_OrcShaman_SCROLL_Info()
 {
 	AI_Output 		(hero, self,"Info_OrcShaman_SCROLL_15_01"); //Wo finde ich diesen Zauber?
-	AI_Output 		(self, hero,"Info_OrcShaman_SCROLL_17_02"); //Müssen gehen in Höhle von Brüder, die seien Söhne von Geist wie Ur-Shak!
-	AI_Output 		(self, hero,"Info_OrcShaman_SCROLL_17_03"); //Aber Freund müssen aufpassen, wenn benutzen Zauber!
-	AI_Output 		(self, hero,"Info_OrcShaman_SCROLL_17_04"); //Brüder von Ur-Shak nicht mögen! ULU-MULU nicht helfen, wenn Freund benutzen Zauber!
+	AI_Output 		(self, hero,"Info_OrcShaman_SCROLL_17_02"); //MÃ¼ssen gehen in HÃ¶hle von BrÃ¼der, die seien SÃ¶hne von Geist wie Ur-Shak!
+	AI_Output 		(self, hero,"Info_OrcShaman_SCROLL_17_03"); //Aber Freund mÃ¼ssen aufpassen, wenn benutzen Zauber!
+	AI_Output 		(self, hero,"Info_OrcShaman_SCROLL_17_04"); //BrÃ¼der von Ur-Shak nicht mÃ¶gen! ULU-MULU nicht helfen, wenn Freund benutzen Zauber!
 
-	B_LogEntry		(CH4_EnterTemple,	"Ich habe den Schamanen Ur-Shak vor der Orkstadt wiedergetroffen. Er verriet mir, dass ich nur mithilfe eines orkischen Zauberspruches in die Vorhalle des unterirdischen Tempels gelangen kann. Die anderen Ork-Schamanen bewahren solche Zauber in ihrer Höhle auf.");
+	B_LogEntry		(CH4_EnterTemple,	"Ich habe den Schamanen Ur-Shak vor der Orkstadt wiedergetroffen. Er verriet mir, dass ich nur mithilfe eines orkischen Zauberspruches in die Vorhalle des unterirdischen Tempels gelangen kann. Die anderen Ork-Schamanen bewahren solche Zauber in ihrer HÃ¶hle auf.");
 }; 
 
 //---------------------------------------------------------------------
@@ -716,22 +716,22 @@ FUNC int  Info_OrcShaman_IDOL_Condition()
 FUNC void  Info_OrcShaman_IDOL_Info()
 {
 	//SN: fliegt raus, da der Hinweis jetzt sofort nach dem Hinweis mit der Scroll gegeben wird.
-	//AI_Output 	(hero, self,"Info_OrcShaman_IDOL_15_01"); //Ich habe den Teleportzauber verbraucht und das Gitter zur Tempelvorhalle lässt sich nicht öffnen!
+	//AI_Output 	(hero, self,"Info_OrcShaman_IDOL_15_01"); //Ich habe den Teleportzauber verbraucht und das Gitter zur Tempelvorhalle lÃ¤sst sich nicht Ã¶ffnen!
 	//AI_Output 	(hero, self,"Info_OrcShaman_IDOL_15_02"); //Wie komme ich jetzt wieder in den Tempel?
 
 	if	Npc_HasItems(hero,ItMi_Stuff_Idol_Sleeper_01) 
 	{
-		AI_Output 	(self, hero,"Info_OrcShaman_IDOL_17_03"); //Freund haben gefunden Figur auf Säule!
-		AI_Output 	(self, hero,"Info_OrcShaman_IDOL_17_04"); //Freund nun können öffnen Tor zu Tempelhalle!
+		AI_Output 	(self, hero,"Info_OrcShaman_IDOL_17_03"); //Freund haben gefunden Figur auf SÃ¤ule!
+		AI_Output 	(self, hero,"Info_OrcShaman_IDOL_17_04"); //Freund nun kÃ¶nnen Ã¶ffnen Tor zu Tempelhalle!
 
-		B_LogEntry	(CH4_EnterTemple,	"Es gibt noch einen weiteren Weg in den Tempel. Ich muss die Schläferfigur von der heiligen Säule der Orkschamanen benutzen. Sie öffnet das Tor zum Tempel.");
+		B_LogEntry	(CH4_EnterTemple,	"Es gibt noch einen weiteren Weg in den Tempel. Ich muss die SchlÃ¤ferfigur von der heiligen SÃ¤ule der Orkschamanen benutzen. Sie Ã¶ffnet das Tor zum Tempel.");
 	}
 	else
 	{
-		AI_Output 	(self, hero,"Info_OrcShaman_IDOL_17_05"); //Freund müssen nehmen Figur von große Säule!
-		AI_Output 	(self, hero,"Info_OrcShaman_IDOL_17_06"); //Figur öffnen Tor zu Tempelhalle!
+		AI_Output 	(self, hero,"Info_OrcShaman_IDOL_17_05"); //Freund mÃ¼ssen nehmen Figur von groÃŸe SÃ¤ule!
+		AI_Output 	(self, hero,"Info_OrcShaman_IDOL_17_06"); //Figur Ã¶ffnen Tor zu Tempelhalle!
 
-		B_LogEntry	(CH4_EnterTemple,	"Es gibt noch einen weiteren Weg in den Tempel zu gelangen. Auf der heiligen Säule der Orkschamanen steht eine Schläferfigur, die das Tor zum Tempel öffnet. Allerdings werden Ur-Shak's Brüder wenig begeistert sein, wenn sie bemerken, dass ich mich ihrer heiligen Ikone bediene.");
+		B_LogEntry	(CH4_EnterTemple,	"Es gibt noch einen weiteren Weg in den Tempel zu gelangen. Auf der heiligen SÃ¤ule der Orkschamanen steht eine SchlÃ¤ferfigur, die das Tor zum Tempel Ã¶ffnet. Allerdings werden Ur-Shak's BrÃ¼der wenig begeistert sein, wenn sie bemerken, dass ich mich ihrer heiligen Ikone bediene.");
 	};
 }; 
 

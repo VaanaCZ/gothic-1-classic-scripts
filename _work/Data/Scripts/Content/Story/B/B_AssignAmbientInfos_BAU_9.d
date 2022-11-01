@@ -37,7 +37,7 @@ INSTANCE Info_Bau_9_WichtigePersonen(C_INFO)
 	condition	= Info_Bau_9_WichtigePersonen_Condition;
 	information	= Info_Bau_9_WichtigePersonen_Info;
 	permanent	= 1;
-	description = "Wer kümmert sich darum, daß hier auf den Feldern alles glatt geht?";
+	description = "Wer kÃ¼mmert sich darum, daÃŸ hier auf den Feldern alles glatt geht?";
 };                       
 
 FUNC INT Info_Bau_9_WichtigePersonen_Condition()
@@ -47,8 +47,8 @@ FUNC INT Info_Bau_9_WichtigePersonen_Condition()
 
 FUNC VOID Info_Bau_9_WichtigePersonen_Info()
 {
-	AI_Output(other,self,"Info_Bau_9_WichtigePersonen_15_00"); //Wer kümmert sich darum, dass hier auf den Feldern alles glatt geht?
-	AI_Output(self,other,"Info_Bau_9_WichtigePersonen_09_01"); //Na, wir alle! Der Reislord überwacht zwar alles, aber ich glaube, er sitzt den ganzen Tag in seinem Bunker und zählt die Säcke.
+	AI_Output(other,self,"Info_Bau_9_WichtigePersonen_15_00"); //Wer kÃ¼mmert sich darum, dass hier auf den Feldern alles glatt geht?
+	AI_Output(self,other,"Info_Bau_9_WichtigePersonen_09_01"); //Na, wir alle! Der Reislord Ã¼berwacht zwar alles, aber ich glaube, er sitzt den ganzen Tag in seinem Bunker und zÃ¤hlt die SÃ¤cke.
 	AI_Output(self,other,"Info_Bau_9_WichtigePersonen_09_02"); //Na, immerhin hat er zusammen mit Homer die ganze Anlage hier gebaut ...
 	var C_NPC Ricelord;			Ricelord	= Hlp_GetNpc(Bau_900_Ricelord);
 	Ricelord.aivar[AIV_FINDABLE] = TRUE;	
@@ -64,7 +64,7 @@ INSTANCE Info_Bau_9_DasLager(C_INFO)
 	condition	= Info_Bau_9_DasLager_Condition;
 	information	= Info_Bau_9_DasLager_Info;
 	permanent	= 1;
-	description = "Erzähl mir was über dieses Lager.";
+	description = "ErzÃ¤hl mir was Ã¼ber dieses Lager.";
 };                       
 
 FUNC INT Info_Bau_9_DasLager_Condition()
@@ -74,9 +74,9 @@ FUNC INT Info_Bau_9_DasLager_Condition()
 
 FUNC VOID Info_Bau_9_DasLager_Info()
 {
-	AI_Output(other,self,"Info_Bau_9_DasLager_15_00"); //Erzähl mir was über dieses Lager.
-	AI_Output(self,other,"Info_Bau_9_DasLager_09_01"); //Es ist randvoll mit Arschlöchern. Wenn's nach mir ginge, sollten die Söldner alle Banditen einfach aus dem Lager werfen.
-	AI_Output(self,other,"Info_Bau_9_DasLager_09_02"); //Die tun gar nichts für uns. Machen nur Ärger.
+	AI_Output(other,self,"Info_Bau_9_DasLager_15_00"); //ErzÃ¤hl mir was Ã¼ber dieses Lager.
+	AI_Output(self,other,"Info_Bau_9_DasLager_09_01"); //Es ist randvoll mit ArschlÃ¶chern. Wenn's nach mir ginge, sollten die SÃ¶ldner alle Banditen einfach aus dem Lager werfen.
+	AI_Output(self,other,"Info_Bau_9_DasLager_09_02"); //Die tun gar nichts fÃ¼r uns. Machen nur Ã„rger.
 };
 
 // *************************************************************************
@@ -113,7 +113,7 @@ INSTANCE Info_Bau_9_Wasser(C_INFO) // E1
 	condition	= Info_Bau_9_Wasser_Condition;
 	information	= Info_Bau_9_Wasser_Info;
 	permanent	= 1;
-	description = "Lefty schickt mich. Ich hab Wasser für dich.";
+	description = "Lefty schickt mich. Ich hab Wasser fÃ¼r dich.";
 };                       
 
 FUNC INT Info_Bau_9_Wasser_Condition()
@@ -127,7 +127,7 @@ FUNC INT Info_Bau_9_Wasser_Condition()
 
 FUNC VOID Info_Bau_9_Wasser_Info()
 {
-	AI_Output(other,self,"Info_Bau_9_Wasser_15_00"); //Lefty schickt mich. Ich hab' Wasser für dich.
+	AI_Output(other,self,"Info_Bau_9_Wasser_15_00"); //Lefty schickt mich. Ich hab' Wasser fÃ¼r dich.
 	if (Npc_HasItems(other, ItFo_Potion_Water_01)>=1)
 	{
 		B_GiveInvItems		(other, self,	ItFo_Potion_Water_01, 1);

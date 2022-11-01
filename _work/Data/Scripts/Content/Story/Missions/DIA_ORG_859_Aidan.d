@@ -44,12 +44,12 @@ FUNC int  DIA_Aidan_Hello_Condition()
 func void  DIA_Aidan_Hello_Info()
 {
 	AI_Output (other, self,"DIA_Aidan_Hello_15_00"); //Was machst du hier?
-	AI_Output (self, other,"DIA_Aidan_Hello_13_01"); //Ich bin Jäger. Ich lebe vom Verkauf von Fellen und Zähnen.
+	AI_Output (self, other,"DIA_Aidan_Hello_13_01"); //Ich bin JÃ¤ger. Ich lebe vom Verkauf von Fellen und ZÃ¤hnen.
 	AI_Output (other, self,"DIA_Aidan_Hello_15_02"); //Bringt das viel ein?
-	AI_Output (self, other,"DIA_Aidan_Hello_13_03"); //Wenn man weiß, wie man die Viecher richtig ausschlachtet, schon.
+	AI_Output (self, other,"DIA_Aidan_Hello_13_03"); //Wenn man weiÃŸ, wie man die Viecher richtig ausschlachtet, schon.
 
 	Log_CreateTopic	(GE_TeacherOW,	LOG_NOTE);
-	B_LogEntry		(GE_TeacherOW,	"Aidan, ein Jäger der auf dem Weg zwischen Altem und Neuen Lager lebt, kann mir beibringen, wie man Tiere richtig ausschlachtet.");
+	B_LogEntry		(GE_TeacherOW,	"Aidan, ein JÃ¤ger der auf dem Weg zwischen Altem und Neuen Lager lebt, kann mir beibringen, wie man Tiere richtig ausschlachtet.");
 };
 
 // **************************************************
@@ -88,7 +88,7 @@ FUNC VOID  Org_859_Aidan_Creatures_Info()
 
 		if (Knows_GetTeeth == FALSE)
 		{
-			Info_AddChoice   (Org_859_Aidan_Creatures, "Zähne entfernen (Kosten: 1 LP, 50 Erz)" 		,Org_859_Aidan_Creatures_Zahn);
+			Info_AddChoice   (Org_859_Aidan_Creatures, "ZÃ¤hne entfernen (Kosten: 1 LP, 50 Erz)" 		,Org_859_Aidan_Creatures_Zahn);
 		};
 		if (Knows_GetFur == FALSE)
 		{
@@ -100,12 +100,12 @@ FUNC VOID  Org_859_Aidan_Creatures_Info()
 		};
 		if (Knows_GetHide == FALSE)
 		{
-			Info_AddChoice	 (Org_859_Aidan_Creatures, "Häuten von Reptilien (Kosten: 1 LP, 100 Erz)"	,Org_859_Aidan_Creatures_Haut);
+			Info_AddChoice	 (Org_859_Aidan_Creatures, "HÃ¤uten von Reptilien (Kosten: 1 LP, 100 Erz)"	,Org_859_Aidan_Creatures_Haut);
 		};
 	}
 	else
 	{
-		AI_Output (self, other,"Org_859_Aidan_Creatures_TaughtAll_13_00"); //Ich habe dir alles beigebracht, was ich weiß.
+		AI_Output (self, other,"Org_859_Aidan_Creatures_TaughtAll_13_00"); //Ich habe dir alles beigebracht, was ich weiÃŸ.
 	};
 };
 
@@ -116,7 +116,7 @@ func void Org_859_Aidan_Creatures_BACK()
 
 func void Org_859_Aidan_Creatures_Zahn()
 {
-	AI_Output (other, self,"Org_859_Aidan_Creatures_Zahn_15_00"); //Wie komme ich an die Zähne?
+	AI_Output (other, self,"Org_859_Aidan_Creatures_Zahn_15_00"); //Wie komme ich an die ZÃ¤hne?
 	
 	if (Npc_HasItems(other,itminugget)>=50)
 	{
@@ -126,14 +126,14 @@ func void Org_859_Aidan_Creatures_Zahn()
 			
 			B_GiveInvItems	(other, self,itminugget,50);
 			
-			PrintScreen	("Lerne: Zähne nehmen", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
+			PrintScreen	("Lerne: ZÃ¤hne nehmen", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
 					
-			AI_Output (self, other,"Org_859_Aidan_Creatures_Zahn_13_01"); //Du musst vor allem darauf achten, dass die Zähne nicht splittern. Um das zu verhindern, musst du dein Messer in der Mitte des Zahns ansetzen und vorsichtig hebeln.
-			AI_Output (self, other,"Org_859_Aidan_Creatures_Zahn_13_02"); //Zähne kannst du von Wölfen, Schattenläufern oder Snappern nehmen.
+			AI_Output (self, other,"Org_859_Aidan_Creatures_Zahn_13_01"); //Du musst vor allem darauf achten, dass die ZÃ¤hne nicht splittern. Um das zu verhindern, musst du dein Messer in der Mitte des Zahns ansetzen und vorsichtig hebeln.
+			AI_Output (self, other,"Org_859_Aidan_Creatures_Zahn_13_02"); //ZÃ¤hne kannst du von WÃ¶lfen, SchattenlÃ¤ufern oder Snappern nehmen.
 			
 			Knows_GetTeeth = TRUE;
 			Log_CreateTopic (GE_AnimalTrophies,LOG_NOTE);
-			B_LogEntry (GE_AnimalTrophies,"Wissen über Zähne entfernen - Wolf, Orkhund, Snapper, Beisser, Bluthund, Schattenläufer.");
+			B_LogEntry (GE_AnimalTrophies,"Wissen Ã¼ber ZÃ¤hne entfernen - Wolf, Orkhund, Snapper, Beisser, Bluthund, SchattenlÃ¤ufer.");
 		}
 		else
 		{
@@ -162,11 +162,11 @@ func void Org_859_Aidan_Creatures_Fell()
 			PrintScreen	("Lerne: Fell abziehen", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
 		
 			AI_Output (self, other,"Org_859_Aidan_Creatures_Fell_13_01"); //Wichtig ist vor allem: Immer von vorne nach hinten. Wenn du den Bogen einmal raushast, ist es kein Problem. Felle sind sehr wertvoll!
-			AI_Output (self, other,"Org_859_Aidan_Creatures_Fell_13_02"); //Das Fell von Wölfen oder Schattenläufern eignet sich zum Herstellen von Kleidung. Du wirst merken, ob ein erlegtes Tier ein brauchbares Fell hat, wenn du es untersuchst.
+			AI_Output (self, other,"Org_859_Aidan_Creatures_Fell_13_02"); //Das Fell von WÃ¶lfen oder SchattenlÃ¤ufern eignet sich zum Herstellen von Kleidung. Du wirst merken, ob ein erlegtes Tier ein brauchbares Fell hat, wenn du es untersuchst.
 			
 			Knows_GetFur = TRUE;
 			Log_CreateTopic (GE_AnimalTrophies,LOG_NOTE);
-			B_LogEntry (GE_AnimalTrophies,"Wissen über Fell abziehen - Wolf, Orkhund, Schattenläufer, Troll");
+			B_LogEntry (GE_AnimalTrophies,"Wissen Ã¼ber Fell abziehen - Wolf, Orkhund, SchattenlÃ¤ufer, Troll");
 		}
 		else
 		{
@@ -193,12 +193,12 @@ func void Org_859_Aidan_Creatures_Kralle()
 			PrintScreen	("Lerne: Krallen abziehen", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
 			
 			AI_Output (other, self,"Org_859_Aidan_Creatures_Kralle_15_00"); //Bring mir bei, Krallen abzuziehen!
-			AI_Output (self, other,"Org_859_Aidan_Creatures_Kralle_13_01"); //Ist im Grunde ganz einfach, wenn du weißt, wie's geht. Du musst die Krallen nach vorne wegknicken, auf keinen Fall nach hinten und NICHT ziehen!
+			AI_Output (self, other,"Org_859_Aidan_Creatures_Kralle_13_01"); //Ist im Grunde ganz einfach, wenn du weiÃŸt, wie's geht. Du musst die Krallen nach vorne wegknicken, auf keinen Fall nach hinten und NICHT ziehen!
 			AI_Output (self, other,"Org_859_Aidan_Creatures_Kralle_13_02"); //Krallen kannst du vor allem von Echsen nehmen. Du wirst ab jetzt erkennen, von welchem erlegten Biest du die Krallen nehmen kannst.
 			
 			Knows_GetClaws = TRUE;
 			Log_CreateTopic (GE_AnimalTrophies,LOG_NOTE);
-			B_LogEntry (GE_AnimalTrophies,"Wissen über Krallen abziehen - Warane, Snapper, Lurker, Beisser, Razor");
+			B_LogEntry (GE_AnimalTrophies,"Wissen Ã¼ber Krallen abziehen - Warane, Snapper, Lurker, Beisser, Razor");
 		}
 		else
 		{
@@ -222,15 +222,15 @@ func void Org_859_Aidan_Creatures_Haut()
 						
 			B_GiveInvItems	(other, self,itminugget,100);
 			
-			PrintScreen	("Lerne: Echsen häuten", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
+			PrintScreen	("Lerne: Echsen hÃ¤uten", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
 				
-			AI_Output (other, self,"Org_859_Aidan_Creatures_Haut_15_00"); //Worauf muss ich beim Häuten von Reptilien achten?
-			AI_Output (self, other,"Org_859_Aidan_Creatures_Haut_13_01"); //Die einzigen Reptilien, die dafür geeignet sind, sind der Lurker und der Sumpfhai.
-			AI_Output (self, other,"Org_859_Aidan_Creatures_Haut_13_02"); //Wenn du die Haut an den Seiten anschneidest, löst sie sich wie von selbst. Du solltest ab jetzt kein Problem mehr haben, Echsen zu häuten.
+			AI_Output (other, self,"Org_859_Aidan_Creatures_Haut_15_00"); //Worauf muss ich beim HÃ¤uten von Reptilien achten?
+			AI_Output (self, other,"Org_859_Aidan_Creatures_Haut_13_01"); //Die einzigen Reptilien, die dafÃ¼r geeignet sind, sind der Lurker und der Sumpfhai.
+			AI_Output (self, other,"Org_859_Aidan_Creatures_Haut_13_02"); //Wenn du die Haut an den Seiten anschneidest, lÃ¶st sie sich wie von selbst. Du solltest ab jetzt kein Problem mehr haben, Echsen zu hÃ¤uten.
 				
 			Knows_GetHide = TRUE;
 			Log_CreateTopic (GE_AnimalTrophies,LOG_NOTE);
-			B_LogEntry (GE_AnimalTrophies,"Wissen über Häuten - Lurker, Sumpfhai");
+			B_LogEntry (GE_AnimalTrophies,"Wissen Ã¼ber HÃ¤uten - Lurker, Sumpfhai");
 		}
 		else
 		{

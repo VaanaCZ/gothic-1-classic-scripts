@@ -7,11 +7,11 @@
 //	Uhrzeit:	24h
 //
 //	Es passiert folgendes:
-//	1.	Nähert sich der Spieler dem Durchgang, so wird er in diesen
+//	1.	NÃ¤hert sich der Spieler dem Durchgang, so wird er in diesen
 //		Dialog gezwungen und einmal gewarnt
-//	2.	Nähert sich der SC trotzdem weiter, so wird er ein ZWEITES Mal
+//	2.	NÃ¤hert sich der SC trotzdem weiter, so wird er ein ZWEITES Mal
 //		gewarnt (aggressiver mit Waffe ziehen)
-//	3.	Nähert er sich trotzdem wieder, wird er angegriffen
+//	3.	NÃ¤hert er sich trotzdem wieder, wird er angegriffen
 //////////////////////////////////////////////////////////////////////////
 const string	Grd_213_CHECKPOINT		= "OCC_GATE_INSIDE";
 
@@ -80,7 +80,7 @@ func int Info_Grd_213_LastWarn_Condition()
 
 func int Info_Grd_213_LastWarn_Info()
 {
-	AI_Output (self, hero,"Info_Grd_213_LastWarn_07_01"); 		//Bist du taub? Noch ein Schritt und du bist Futter für die Würmer!
+	AI_Output (self, hero,"Info_Grd_213_LastWarn_07_01"); 		//Bist du taub? Noch ein Schritt und du bist Futter fÃ¼r die WÃ¼rmer!
 
 	hero.aivar[AIV_LASTDISTTOWP] 		= Npc_GetDistToWP (hero,Grd_213_CHECKPOINT);
 	hero.aivar[AIV_GUARDPASSAGE_STATUS]	= AIV_GPS_LASTWARN;	
@@ -120,7 +120,7 @@ func int Info_Grd_213_Attack_Info()
 	hero.aivar[AIV_GUARDPASSAGE_STATUS]	= AIV_GPS_PUNISH;	
 	
 	B_FullStop			(self);	
-	AI_StopProcessInfos	(self);					//dem Spieler sofort wieder die Kontrolle zurückgeben
+	AI_StopProcessInfos	(self);					//dem Spieler sofort wieder die Kontrolle zurÃ¼ckgeben
 	B_IntruderAlert		(self,	other);
 	B_SetAttackReason	(self,	AIV_AR_INTRUDER);
 	Npc_SetTarget		(self,	hero);
@@ -147,7 +147,7 @@ FUNC int  Grd_213_Torwache_WELCOME_Condition()
 };
 func void  Grd_213_Torwache_WELCOME_Info()
 {
-	AI_Output (self, other,"Grd_213_Torwache_WELCOME_Info_07_01"); //Ich hab' gehört, du bist jetzt einer von uns? Nicht schlecht in so kurzer Zeit.
+	AI_Output (self, other,"Grd_213_Torwache_WELCOME_Info_07_01"); //Ich hab' gehÃ¶rt, du bist jetzt einer von uns? Nicht schlecht in so kurzer Zeit.
 };
 
 // ************************************************************
@@ -198,8 +198,8 @@ FUNC INT Info_Grd_213_Abblitzen_Condition()
 
 FUNC VOID Info_Grd_213_Abblitzen_Info()
 {
-	AI_Output (other, self,"Info_Grd_213_Abblitzen_15_00"); //Du könntest mal ein bisschen Abwechslung in dein Leben bringen. Lass doch mal jemanden in die Burg.
-	AI_Output (self, other,"Info_Grd_213_Abblitzen_07_01"); //Abwechslung? Ist schon 'ne gute Idee - einen wie dich hab' ich schon lange nicht mehr verprügelt.
+	AI_Output (other, self,"Info_Grd_213_Abblitzen_15_00"); //Du kÃ¶nntest mal ein bisschen Abwechslung in dein Leben bringen. Lass doch mal jemanden in die Burg.
+	AI_Output (self, other,"Info_Grd_213_Abblitzen_07_01"); //Abwechslung? Ist schon 'ne gute Idee - einen wie dich hab' ich schon lange nicht mehr verprÃ¼gelt.
 	AI_StopProcessInfos	(self);
 };
 

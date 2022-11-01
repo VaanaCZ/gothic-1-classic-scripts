@@ -37,7 +37,7 @@ INSTANCE Info_Mine_Org_6_Mine (C_INFO) // E1
 	condition	= Info_Mine_Org_6_Mine_Condition;
 	information	= Info_Mine_Org_6_Mine_Info;
 	permanent	= 1;
-	description = "Was läuft in der Mine?";
+	description = "Was lÃ¤uft in der Mine?";
 };                       
 
 FUNC INT Info_Mine_Org_6_Mine_Condition()
@@ -47,9 +47,9 @@ FUNC INT Info_Mine_Org_6_Mine_Condition()
 
 FUNC VOID Info_Mine_Org_6_Mine_Info()
 {
-	AI_Output(other,self,"Info_Mine_Org_6_Mine_15_00"); //Was läuft in der Mine?
+	AI_Output(other,self,"Info_Mine_Org_6_Mine_15_00"); //Was lÃ¤uft in der Mine?
 	AI_Output(self,other,"Info_Mine_Org_6_Mine_06_01"); //In der Mine? Die Typen da drin sind unter sich, es kommt keiner rein und keiner raus.
-	AI_Output(self,other,"Info_Mine_Org_6_Mine_06_02"); //Man kann froh sein, dass wir hier draußen sind.
+	AI_Output(self,other,"Info_Mine_Org_6_Mine_06_02"); //Man kann froh sein, dass wir hier drauÃŸen sind.
 	
 };
 
@@ -90,7 +90,7 @@ INSTANCE Info_Mine_Org_6_DieLage(C_INFO) // E1
 	condition	= Info_Mine_Org_6_DieLage_Condition;
 	information	= Info_Mine_Org_6_DieLage_Info;
 	permanent	= 1;
-	description = "Scheinst Dich ja nicht gerade zu überarbeiten.";
+	description = "Scheinst Dich ja nicht gerade zu Ã¼berarbeiten.";
 };                       
 
 FUNC INT Info_Mine_Org_6_DieLage_Condition()
@@ -100,8 +100,8 @@ FUNC INT Info_Mine_Org_6_DieLage_Condition()
 
 FUNC VOID Info_Mine_Org_6_DieLage_Info()
 {
-	AI_Output(other,self,"Info_Mine_Org_6_DieLage_15_00"); //Scheinst dich ja nicht gerade zu überarbeiten.
- 	AI_Output(self,other,"Info_Mine_Org_6_DieLage_06_01"); //Ich und arbeiten? Wenn ich arbeiten würde, wäre ich nicht hier in der Kuppel, wenn du verstehst was ich meine.
+	AI_Output(other,self,"Info_Mine_Org_6_DieLage_15_00"); //Scheinst dich ja nicht gerade zu Ã¼berarbeiten.
+ 	AI_Output(self,other,"Info_Mine_Org_6_DieLage_06_01"); //Ich und arbeiten? Wenn ich arbeiten wÃ¼rde, wÃ¤re ich nicht hier in der Kuppel, wenn du verstehst was ich meine.
 };
 	
 // *************************************************************************

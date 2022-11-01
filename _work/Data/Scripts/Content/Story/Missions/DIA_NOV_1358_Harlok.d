@@ -52,12 +52,12 @@ FUNC VOID  DIA_Harlok_FetchHarlok_Info()
 	Info_ClearChoices 	(DIA_Harlok_FetchHarlok);
 	Info_Addchoice 		(DIA_Harlok_FetchHarlok,DIALOG_BACK															,DIA_Harlok_FetchHarlok_BACK);
 	Info_Addchoice 		(DIA_Harlok_FetchHarlok,"Schwing deinen Hintern zu den Krautstampfern, oder es gibt saures.",DIA_Harlok_FetchHarlok_OrElse);
-	Info_Addchoice 		(DIA_Harlok_FetchHarlok,"Ich soll dich daran erinnern, dass du ihn ablösen sollst."			,DIA_Harlok_FetchHarlok_Please);
+	Info_Addchoice 		(DIA_Harlok_FetchHarlok,"Ich soll dich daran erinnern, dass du ihn ablÃ¶sen sollst."			,DIA_Harlok_FetchHarlok_Please);
 };
 
 func int DIA_Harlok_FetchHarlok_Please()
 {
-	AI_Output (other, self,"DIA_Harlok_FetchHarlok_Please_15_00"); //Ich soll dich daran erinnern, dass du ihn ablösen sollst.
+	AI_Output (other, self,"DIA_Harlok_FetchHarlok_Please_15_00"); //Ich soll dich daran erinnern, dass du ihn ablÃ¶sen sollst.
 	AI_Output (self, other,"DIA_Harlok_FetchHarlok_Please_01_01"); //Das ist aber nett von dir. Erinnere mich doch noch mal, wenn ich ausgeschlafen habe, ja?
 };
 
@@ -77,7 +77,7 @@ func int DIA_Harlok_FetchHarlok_BACK()
 
 
 // **************************************************
-//				Harlok NOCHMAL überzeugen
+//				Harlok NOCHMAL Ã¼berzeugen
 // **************************************************
 
 instance  DIA_Harlok_HarlokAgain (C_INFO)
@@ -87,7 +87,7 @@ instance  DIA_Harlok_HarlokAgain (C_INFO)
 	condition	= DIA_Harlok_HarlokAgain_Condition;
 	information	= DIA_Harlok_HarlokAgain_Info;
 	permanent	= 0;
-	description	= "Ich wollte dich nochmal dran erinnern, deinen Kumpel abzulösen!";
+	description	= "Ich wollte dich nochmal dran erinnern, deinen Kumpel abzulÃ¶sen!";
 };                       
 
 FUNC int  DIA_Harlok_HarlokAgain_Condition()
@@ -100,10 +100,10 @@ FUNC int  DIA_Harlok_HarlokAgain_Condition()
 
 FUNC VOID  DIA_Harlok_HarlokAgain_Info()
 {
-	AI_Output (other, self,"DIA_Harlok_HarlokAgain_15_00"); //Ich wollte dich noch mal dran erinnern, deinen Kumpel abzulösen!
-	AI_Output (self, other,"DIA_Harlok_HarlokAgain_01_01"); //Hör zu! Ich habe gesagt, mach, dass du wegkommst!
+	AI_Output (other, self,"DIA_Harlok_HarlokAgain_15_00"); //Ich wollte dich noch mal dran erinnern, deinen Kumpel abzulÃ¶sen!
+	AI_Output (self, other,"DIA_Harlok_HarlokAgain_01_01"); //HÃ¶r zu! Ich habe gesagt, mach, dass du wegkommst!
 
-	B_LogEntry(CH1_GhorimsRelief,	"Harlok scheint ein uneinsichtiger Faulenzer zu sein. Ich glaube ich sollte seiner Einsicht etwas auf die Sprünge helfen...");
+	B_LogEntry(CH1_GhorimsRelief,	"Harlok scheint ein uneinsichtiger Faulenzer zu sein. Ich glaube ich sollte seiner Einsicht etwas auf die SprÃ¼nge helfen...");
 };
 
 
@@ -118,7 +118,7 @@ instance  DIA_Harlok_SendHarlok (C_INFO)
 	condition	= DIA_Harlok_SendHarlok_Condition;
 	information	= DIA_Harlok_SendHarlok_Info;
 	permanent	= 0;
-	description	= "Hast du langsam Lust bekommen, deinen Freud abzulösen?";
+	description	= "Hast du langsam Lust bekommen, deinen Freud abzulÃ¶sen?";
 };                       
 
 FUNC int  DIA_Harlok_SendHarlok_Condition()
@@ -131,12 +131,12 @@ FUNC int  DIA_Harlok_SendHarlok_Condition()
 
 FUNC VOID  DIA_Harlok_SendHarlok_Info()
 {
-	AI_Output	(other, self,"DIA_Harlok_SendHarlok_15_00"); //Na, hast du langsam Lust bekommen, deinen Freund abzulösen?
-	AI_Output	(self, other,"DIA_Harlok_SendHarlok_01_01"); //Du verdammter Mistkerl! Wieso mischst du dich überhaupt in unsere Angelegenheiten?
+	AI_Output	(other, self,"DIA_Harlok_SendHarlok_15_00"); //Na, hast du langsam Lust bekommen, deinen Freund abzulÃ¶sen?
+	AI_Output	(self, other,"DIA_Harlok_SendHarlok_01_01"); //Du verdammter Mistkerl! Wieso mischst du dich Ã¼berhaupt in unsere Angelegenheiten?
 	AI_Output	(other, self,"DIA_Harlok_SendHarlok_15_02"); //Ich will dich einfach stampfen sehen.
 	AI_Output	(self, other,"DIA_Harlok_SendHarlok_01_03"); //Ist ja schon gut - ich gehe ja ...  Mistkerl!
 
-	B_LogEntry	(CH1_GhorimsRelief,	"Harlok -traf- die Einsicht. Er will nun Ghorim ablösen.");
+	B_LogEntry	(CH1_GhorimsRelief,	"Harlok -traf- die Einsicht. Er will nun Ghorim ablÃ¶sen.");
 	B_GiveXP	(XP_SentHarlok);
 	
 	Npc_ExchangeRoutine(self,"START");

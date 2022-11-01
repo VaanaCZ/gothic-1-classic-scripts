@@ -60,7 +60,7 @@ INSTANCE DIA_Huno_HowLong (C_INFO)
 	information		= DIA_Huno_HowLong_Info;
 	permanent		= 0;
 	important		= 0;
-	description		= "Wie lange brauchst du für eine Klinge?";
+	description		= "Wie lange brauchst du fÃ¼r eine Klinge?";
 };
 
 FUNC INT DIA_Huno_HowLong_Condition()
@@ -73,14 +73,14 @@ FUNC INT DIA_Huno_HowLong_Condition()
 
 FUNC VOID DIA_Huno_HowLong_Info()
 {
-	AI_Output (other,self,"DIA_Huno_HowLong_15_00"); //Wie lange brauchst du für eine Klinge?
-	AI_Output (self,other,"DIA_Huno_HowLong_09_01"); //Kommt drauf an. Ein einfaches Schwert mach' ich dir schneller, als deine müden Augen zuschauen können.
+	AI_Output (other,self,"DIA_Huno_HowLong_15_00"); //Wie lange brauchst du fÃ¼r eine Klinge?
+	AI_Output (self,other,"DIA_Huno_HowLong_09_01"); //Kommt drauf an. Ein einfaches Schwert mach' ich dir schneller, als deine mÃ¼den Augen zuschauen kÃ¶nnen.
 	AI_Output (self,other,"DIA_Huno_HowLong_09_02"); //Vorausgesetzt, du motivierst mich mit einer entsprechenden Bezahlung.
-	AI_Output (self,other,"DIA_Huno_HowLong_09_03"); //So'n Spinner wie der Whistler muss aber meistens länger auf sein Schmuckstück warten.
+	AI_Output (self,other,"DIA_Huno_HowLong_09_03"); //So'n Spinner wie der Whistler muss aber meistens lÃ¤nger auf sein SchmuckstÃ¼ck warten.
 	AI_Output (other,self,"DIA_Huno_HowLong_15_04"); //Wieso? Bezahlt er nicht gut?
-	AI_Output (self,other,"DIA_Huno_HowLong_09_05"); //Doch, ganz im Gegenteil. Für sein letztes Schwert hat er 150 Erz locker gemacht.
-	AI_Output (self,other,"DIA_Huno_HowLong_09_06"); //Irgendwie hat der Typ ein Faible für Ornamente und so 'nen Weiberkram, und das hat natürlich seinen Preis.
-	AI_Output (self,other,"DIA_Huno_HowLong_09_07"); //Hey, du bist ganz schön neugierig, Freundchen.
+	AI_Output (self,other,"DIA_Huno_HowLong_09_05"); //Doch, ganz im Gegenteil. FÃ¼r sein letztes Schwert hat er 150 Erz locker gemacht.
+	AI_Output (self,other,"DIA_Huno_HowLong_09_06"); //Irgendwie hat der Typ ein Faible fÃ¼r Ornamente und so 'nen Weiberkram, und das hat natÃ¼rlich seinen Preis.
+	AI_Output (self,other,"DIA_Huno_HowLong_09_07"); //Hey, du bist ganz schÃ¶n neugierig, Freundchen.
 };
 
 // **************************************************
@@ -94,7 +94,7 @@ INSTANCE DIA_Huno_HowsYourBusiness (C_INFO)
 	information		= DIA_Huno_HowsYourBusiness_Info;
 	permanent		= 1;
 	important		= 0;
-	description		= "Na, Schmied, wie läuft das Geschäft?";
+	description		= "Na, Schmied, wie lÃ¤uft das GeschÃ¤ft?";
 };
 
 FUNC INT DIA_Huno_HowsYourBusiness_Condition()
@@ -107,11 +107,11 @@ FUNC INT DIA_Huno_HowsYourBusiness_Condition()
 
 FUNC VOID DIA_Huno_HowsYourBusiness_Info()
 {
-	AI_Output (other,self,"DIA_Huno_HowsYourBusiness_15_00"); //Na, Schmied, wie läuft das Geschäft?
+	AI_Output (other,self,"DIA_Huno_HowsYourBusiness_15_00"); //Na, Schmied, wie lÃ¤uft das GeschÃ¤ft?
 	AI_Output (self,other,"DIA_Huno_HowsYourBusiness_09_01"); //Was geht dich das an?
-	AI_Output (other,self,"DIA_Huno_HowsYourBusiness_15_02"); //Vielleicht habe ich einen Auftrag für dich.
+	AI_Output (other,self,"DIA_Huno_HowsYourBusiness_15_02"); //Vielleicht habe ich einen Auftrag fÃ¼r dich.
 	AI_Output (self,other,"DIA_Huno_HowsYourBusiness_09_03"); //Ach ja? Was denn?
-	AI_Output (other,self,"DIA_Huno_HowsYourBusiness_15_04"); //Ich überleg's mir.
+	AI_Output (other,self,"DIA_Huno_HowsYourBusiness_15_04"); //Ich Ã¼berleg's mir.
 	AI_Output (self,other,"DIA_Huno_HowsYourBusiness_09_05"); //Komm wieder, wenn du was brauchst, und geh mir nicht auf die Nerven.
 };
 
@@ -129,7 +129,7 @@ INSTANCE DIA_Huno_LEARNSMITH (C_INFO)
 	information		= DIA_Huno_LEARNSMITH_Info;
 	permanent		= 1;
 	important		= 0;
-	description		= "Ich würde mich selbst gern mal an deiner Schmiede versuchen.";
+	description		= "Ich wÃ¼rde mich selbst gern mal an deiner Schmiede versuchen.";
 };
 
 FUNC INT DIA_Huno_LEARNSMITH_Condition()
@@ -142,15 +142,15 @@ FUNC INT DIA_Huno_LEARNSMITH_Condition()
 
 FUNC VOID DIA_Huno_LEARNSMITH_Info()
 {
-	AI_Output (other,self,"DIA_Huno_LEARNSMITH_15_00"); //Ich würde mich selbst gern mal an deiner Schmiede versuchen.
+	AI_Output (other,self,"DIA_Huno_LEARNSMITH_15_00"); //Ich wÃ¼rde mich selbst gern mal an deiner Schmiede versuchen.
 	AI_Output (self,other,"DIA_Huno_LEARNSMITH_09_01"); //So so, aber glaub nur nicht, dass du tolle Klingen herstellen kannst!
 	AI_Output (other,self,"DIA_Huno_LEARNSMITH_15_02"); //Was muss ich tun?
 	AI_Output (self,other,"DIA_Huno_LEARNSMITH_09_03"); //Okay, nimm den Rohstahl und halte ihn ins Schmiedefeuer.
-	AI_Output (self,other,"DIA_Huno_LEARNSMITH_09_04"); //Dann musst du den glühenden Stahl am Amboss schmieden.
-	AI_Output (self,other,"DIA_Huno_LEARNSMITH_09_05"); //Stecke dann die glühende Klinge dort drüben in den Wassereimer, um sie zu härten.
-	AI_Output (self,other,"DIA_Huno_LEARNSMITH_09_06"); //Am Ende muss die abgekühlte Klinge noch am Schleifstein geschärft werden.
+	AI_Output (self,other,"DIA_Huno_LEARNSMITH_09_04"); //Dann musst du den glÃ¼henden Stahl am Amboss schmieden.
+	AI_Output (self,other,"DIA_Huno_LEARNSMITH_09_05"); //Stecke dann die glÃ¼hende Klinge dort drÃ¼ben in den Wassereimer, um sie zu hÃ¤rten.
+	AI_Output (self,other,"DIA_Huno_LEARNSMITH_09_06"); //Am Ende muss die abgekÃ¼hlte Klinge noch am Schleifstein geschÃ¤rft werden.
 	AI_Output (other,self,"DIA_Huno_LEARNSMITH_15_07"); //Verstehe.
-	AI_Output (self,other,"DIA_Huno_LEARNSMITH_09_08"); //Allerdings brauchst du dafür ein paar Sachen. Ich kann sie dir verkaufen.
+	AI_Output (self,other,"DIA_Huno_LEARNSMITH_09_08"); //Allerdings brauchst du dafÃ¼r ein paar Sachen. Ich kann sie dir verkaufen.
 
 	Huno_LearnSmith = TRUE;
 };
@@ -166,7 +166,7 @@ INSTANCE DIA_Huno_BUYSMITH (C_INFO)
 	information		= DIA_Huno_BUYSMITH_Info;
 	permanent		= 1;
 	important		= 0;
-	description		= "Ich möchte Dinge fürs Schmieden kaufen!";
+	description		= "Ich mÃ¶chte Dinge fÃ¼rs Schmieden kaufen!";
 	trade			= 1;
 };
 
@@ -180,7 +180,7 @@ FUNC INT DIA_Huno_BUYSMITH_Condition()
 
 FUNC VOID DIA_Huno_BUYSMITH_Info()
 {
-	AI_Output (other,self,"DIA_Huno_BUYSMITH_15_00"); //Ich möchte Dinge fürs Schmieden kaufen!
+	AI_Output (other,self,"DIA_Huno_BUYSMITH_15_00"); //Ich mÃ¶chte Dinge fÃ¼rs Schmieden kaufen!
 
 	if	(Npc_HasItems(self,ItMiSwordRaw		) < 5)		{	CreateInvItems(self,ItMiSwordRaw,		5);	};
 	if	(Npc_HasItems(self,ItMiSwordRawHot	) < 5)		{	CreateInvItems(self,ItMiSwordRawHot,	5);	};

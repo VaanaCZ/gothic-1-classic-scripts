@@ -9,7 +9,7 @@
 
 func void B_Story_SentToNC()
 {
-	//-------- Cor-Angar zurück zum Übungsplatz schicken --------
+	//-------- Cor-Angar zurÃ¼ck zum Ãœbungsplatz schicken --------
 	var C_NPC	angar;
 	angar = Hlp_GetNpc	(Gur_1202_CorAngar);
 	Npc_ExchangeRoutine	(angar, "start");
@@ -26,11 +26,11 @@ func void B_Story_SentToNC()
 	Npc_ExchangeRoutine	(gorn, "NCWAIT");
 	AI_ContinueRoutine	(gorn);
 
-	//-------- Tagebucheinträge --------
+	//-------- TagebucheintrÃ¤ge --------
 	Log_CreateTopic		(CH3_EscapePlanNC,	LOG_MISSION);
 	Log_SetTopicStatus	(CH3_EscapePlanNC,	LOG_RUNNING);
-	B_LogEntry			(CH3_EscapePlanNC,	"Y'Berion, der geistige Vater der Bruderschaft ist tot! Möge seine Seele in Frieden ruhen. In seinen letzten Worten legte er alle Hoffnungen auf ein Entkommen aus der Barriere in die Hände der Magier vom Kreis des Wassers.");
-	B_LogEntry			(CH3_EscapePlanNC,	"Mein Entschluß steht fest. Ich werde mich ins Neue Lager begeben, um den Ausbruchsplan der Wassermagier zu unterstützen. Cor-Angar übergab mir den Schlüssel zur Truhe in Cor-Kaloms Alchemielabor. Darin sollen sich sowohl der Fokusstein als auch der Almanach aus meinen bisherigen Missionen für die Bruderschaft befinden. Cor-Angar glaubt, daß die Magier aus dem Neuen Lager diese beiden Artefakte für ihren Plan benötigen werden.");
+	B_LogEntry			(CH3_EscapePlanNC,	"Y'Berion, der geistige Vater der Bruderschaft ist tot! MÃ¶ge seine Seele in Frieden ruhen. In seinen letzten Worten legte er alle Hoffnungen auf ein Entkommen aus der Barriere in die HÃ¤nde der Magier vom Kreis des Wassers.");
+	B_LogEntry			(CH3_EscapePlanNC,	"Mein EntschluÃŸ steht fest. Ich werde mich ins Neue Lager begeben, um den Ausbruchsplan der Wassermagier zu unterstÃ¼tzen. Cor-Angar Ã¼bergab mir den SchlÃ¼ssel zur Truhe in Cor-Kaloms Alchemielabor. Darin sollen sich sowohl der Fokusstein als auch der Almanach aus meinen bisherigen Missionen fÃ¼r die Bruderschaft befinden. Cor-Angar glaubt, daÃŸ die Magier aus dem Neuen Lager diese beiden Artefakte fÃ¼r ihren Plan benÃ¶tigen werden.");
 
 	//-------- Missionitem --------
 	CreateInvItem		(self,			ItArRuneTeleport5);

@@ -1,9 +1,9 @@
 func void B_Story_UrizielLoaded()
 {
-	//-------- Missionsgegenst‰nde --------
+	//-------- Missionsgegenst√§nde --------
 	
-	//-------- Tagebucheintr‰ge --------
-	B_LogEntry			(CH5_Uriziel,	"Es ist vollbracht. URIZIEL scheint seine alten Kr‰fte wiedergewonnen zu haben. Saturas und seine Wassermagier sind jetzt stinksauer und ich sollte ihnen besser nicht mehr ¸ber den Weg laufen. Doch das ist jetzt unwichtig, denn der Schl‰fer wartet auf mich!");
+	//-------- Tagebucheintr√§ge --------
+	B_LogEntry			(CH5_Uriziel,	"Es ist vollbracht. URIZIEL scheint seine alten Kr√§fte wiedergewonnen zu haben. Saturas und seine Wassermagier sind jetzt stinksauer und ich sollte ihnen besser nicht mehr √ºber den Weg laufen. Doch das ist jetzt unwichtig, denn der Schl√§fer wartet auf mich!");
 	
 	if (Npc_GetTrueGuild(hero) != GIL_KDW)
 	{
@@ -11,7 +11,7 @@ func void B_Story_UrizielLoaded()
 	}
 	else
 	{
-		B_LogEntry		(CH5_Uriziel,	"Xardas erw‰hnte bei meinem letzten Besuch, daﬂ es einen Weg g‰be, wie ich die Kr‰fte von URIZIEL auch als Magier effektiv nutzen kˆnne, doch er wollte vorher das aufgeladenen Schwert begutachten. Ich sollte ihn aufsuchen.");
+		B_LogEntry		(CH5_Uriziel,	"Xardas erw√§hnte bei meinem letzten Besuch, da√ü es einen Weg g√§be, wie ich die Kr√§fte von URIZIEL auch als Magier effektiv nutzen k√∂nne, doch er wollte vorher das aufgeladenen Schwert begutachten. Ich sollte ihn aufsuchen.");
 	};
 	
 	//-------- Erfahrung --------

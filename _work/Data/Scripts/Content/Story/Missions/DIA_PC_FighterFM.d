@@ -25,7 +25,7 @@ func VOID Info_GornFM_EXIT_Info()
 	}
 	else
 	{
-		AI_Output (self, other,"Info_GornFM_EXIT_09_02"); //Bis später.
+		AI_Output (self, other,"Info_GornFM_EXIT_09_02"); //Bis spÃ¤ter.
 	};
 	
 	AI_StopProcessInfos	(self);
@@ -53,7 +53,7 @@ INSTANCE Info_GornFM_WAIT (C_INFO)
 	information	= Info_GornFM_WAIT_Info;
 	important	= 0;	
 	permanent	= 1;
-	description	= "Halt die Stellung, ich werde erst mal die Lage prüfen!";
+	description	= "Halt die Stellung, ich werde erst mal die Lage prÃ¼fen!";
 };                       
 
 FUNC INT Info_GornFM_WAIT_Condition()
@@ -66,8 +66,8 @@ FUNC INT Info_GornFM_WAIT_Condition()
 
 func VOID Info_GornFM_WAIT_Info()
 {
-	AI_Output 			(hero,self,"Info_GornFM_WAIT_15_01"); //Halt die Stellung, ich werde erst mal die Lage prüfen!
-	AI_Output 			(self,hero,"Info_GornFM_WAIT_09_02"); //Ist gut. Ich warte am Mineneingang und sorge dafür, dass dir niemand in den Rücken fällt!
+	AI_Output 			(hero,self,"Info_GornFM_WAIT_15_01"); //Halt die Stellung, ich werde erst mal die Lage prÃ¼fen!
+	AI_Output 			(self,hero,"Info_GornFM_WAIT_09_02"); //Ist gut. Ich warte am Mineneingang und sorge dafÃ¼r, dass dir niemand in den RÃ¼cken fÃ¤llt!
 
 	self.aivar[AIV_PARTYMEMBER] = FALSE;
 	Npc_ExchangeRoutine	(self,	"wait");
@@ -83,7 +83,7 @@ INSTANCE Info_GornFM_FOLLOW (C_INFO)
 	information	= Info_GornFM_FOLLOW_Info;
 	important	= 0;	
 	permanent	= 1;
-	description	= "Komm mit, ich brauche deine Unterstützung!";
+	description	= "Komm mit, ich brauche deine UnterstÃ¼tzung!";
 };                       
 
 FUNC INT Info_GornFM_FOLLOW_Condition()
@@ -96,7 +96,7 @@ FUNC INT Info_GornFM_FOLLOW_Condition()
 
 func VOID Info_GornFM_FOLLOW_Info()
 {
-	AI_Output 			(hero,self,"Info_GornFM_FOLLOW_15_01"); //Komm mit, ich brauche deine Unterstützung!
+	AI_Output 			(hero,self,"Info_GornFM_FOLLOW_15_01"); //Komm mit, ich brauche deine UnterstÃ¼tzung!
 	AI_Output 			(self,hero,"Info_GornFM_FOLLOW_09_02"); //Endlich geht es weiter! Geh voraus, ich folge dir!
 
 	self.aivar[AIV_PARTYMEMBER] = TRUE;

@@ -66,11 +66,11 @@ FUNC int  GRD_271_ULBERT_TRICK_Condition()
 FUNC void  GRD_271_ULBERT_TRICK_Info()
 {
 	AI_Output			(other, self,"GRD_271_ULBERT_TRICK_Info_15_01"); //So lange herumstehen macht bestimmt durstig.
-	AI_Output			(self, other,"GRD_271_ULBERT_TRICK_Info_07_02"); //Und wie! Mann, ich könnte wohl den ein oder anderen Schluck vertragen. Hast du was dabei?
+	AI_Output			(self, other,"GRD_271_ULBERT_TRICK_Info_07_02"); //Und wie! Mann, ich kÃ¶nnte wohl den ein oder anderen Schluck vertragen. Hast du was dabei?
 
 	Log_CreateTopic		(CH2_StorageShed,	LOG_MISSION);
 	Log_SetTopicStatus	(CH2_StorageShed,	LOG_RUNNING);
-	B_LogEntry		(CH2_StorageShed,	"Der Gardist Ulbert hält Wache vor dem Lagerschuppen der Alten Mine. Ich sollte ihm was zu trinken besorgen!"); 
+	B_LogEntry		(CH2_StorageShed,	"Der Gardist Ulbert hÃ¤lt Wache vor dem Lagerschuppen der Alten Mine. Ich sollte ihm was zu trinken besorgen!"); 
 };  
 
 // ***************** Infos *****************************
@@ -153,11 +153,11 @@ FUNC int  GRD_271_ULBERT_DRUNK_Condition()
 FUNC void  GRD_271_ULBERT_DRUNK_Info()
 {
 	AI_Output			(other, self,"GRD_271_ULBERT_DRUNK_Info_15_01"); //Gibt's denn JETZT in dem Schuppen was Besonderes?
-	AI_Output			(self, other,"GRD_271_ULBERT_DRUNK_Info_07_02"); //Ein paar Truhen, in denen wir Vorräte lagern. Allerdings ist der Schlüssel verschwunden.
+	AI_Output			(self, other,"GRD_271_ULBERT_DRUNK_Info_07_02"); //Ein paar Truhen, in denen wir VorrÃ¤te lagern. Allerdings ist der SchlÃ¼ssel verschwunden.
 	AI_Output			(other, self,"GRD_271_ULBERT_DRUNK_Info_15_03"); //Verschwunden?
 	AI_Output			(self, other,"GRD_271_ULBERT_DRUNK_Info_07_04"); //Ich wette, Aleph hat da seine Finger im Spiel. Dem Kerl kann man nicht trauen.
 
-	B_LogEntry		(CH2_StorageShed,	"Nachdem ich Ulbert was zu trinken  gegeben habe, erzählte er mir, dass er den Schlüssel für die Truhen vermißt. Angeblich soll Aleph der Buddler seine Finger im Spiel haben!");
+	B_LogEntry		(CH2_StorageShed,	"Nachdem ich Ulbert was zu trinken  gegeben habe, erzÃ¤hlte er mir, dass er den SchlÃ¼ssel fÃ¼r die Truhen vermiÃŸt. Angeblich soll Aleph der Buddler seine Finger im Spiel haben!");
 };  
 // ***************** Infos *****************************
 instance  GRD_271_ULBERT_LOCK (C_INFO)
@@ -180,10 +180,10 @@ FUNC int  GRD_271_ULBERT_LOCK_Condition()
 };
 FUNC void  GRD_271_ULBERT_LOCK_Info()
 {
-	AI_Output			(other, self,"GRD_271_ULBERT_LOCK_Info_15_01"); //Hör zu, Ian und die anderen sitzen unten und lassen sich gebratenes Fleisch schmecken.
+	AI_Output			(other, self,"GRD_271_ULBERT_LOCK_Info_15_01"); //HÃ¶r zu, Ian und die anderen sitzen unten und lassen sich gebratenes Fleisch schmecken.
 	AI_Output			(self, other,"GRD_271_ULBERT_LOCK_Info_07_02"); //Was? Ohne mich? Na, ich werde mir meinen Anteil schon holen!
 	
-	B_LogEntry		(CH2_StorageShed,	"Ulbert ließ sich sehr leicht vom Lagerschuppen weglocken. Er scheint nicht gerade der Hellste zu sein!");
+	B_LogEntry		(CH2_StorageShed,	"Ulbert lieÃŸ sich sehr leicht vom Lagerschuppen weglocken. Er scheint nicht gerade der Hellste zu sein!");
 
 	Npc_ExchangeRoutine	(self,	"away");
 	AI_StopProcessInfos	(self);
@@ -211,7 +211,7 @@ FUNC int  GRD_271_ULBERT_ANGRY_Condition()
 FUNC void  GRD_271_ULBERT_ANGRY_Info()
 {
 	AI_Output			(self, other,"GRD_271_ULBERT_ANGRY_Info_07_01"); //Hey du, es gab gar kein gebratenes Fleisch!
-	AI_Output			(other, self,"GRD_271_ULBERT_ANGRY_Info_15_02"); //Oh ... äh ...  ... da muss ich mich wohl geirrt haben! Schönen Tag noch!
+	AI_Output			(other, self,"GRD_271_ULBERT_ANGRY_Info_15_02"); //Oh ... Ã¤h ...  ... da muss ich mich wohl geirrt haben! SchÃ¶nen Tag noch!
 
 	B_GiveXP			(XP_LureUlbertAway);
 	

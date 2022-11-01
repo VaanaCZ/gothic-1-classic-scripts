@@ -20,7 +20,7 @@ FUNC int DIA_SLD_752_OKYL_INTRO_CONDITION()
 
 func void DIA_SLD_752_OKYL_INTRO_INFO()
 {
-	AI_Output (self, other,"DIA_SLD_752_OKYL_INTRO_INFO_11_01"); //Hey, du! Du gehörst nicht zu meinen Jungs. Was machst du hier?
+	AI_Output (self, other,"DIA_SLD_752_OKYL_INTRO_INFO_11_01"); //Hey, du! Du gehÃ¶rst nicht zu meinen Jungs. Was machst du hier?
 };
 
 //-------------------- Exit -----------------------------
@@ -68,7 +68,7 @@ FUNC int DIA_SLD_752_OKYL_UMSEHEN_CONDITION()
 func void DIA_SLD_752_OKYL_UMSEHEN_INFO()
 {
 	AI_Output (other, self,"DIA_SLD_752_OKYL_UMSEHEN_INFO_15_01"); //Ich seh' mich hier nur mal um.
-	AI_Output (self, other,"DIA_SLD_752_OKYL_UMSEHEN_INFO_11_02");//Dann pass bloß auf, dass du hier im Kessel keinen Mist baust, sonst bist du schneller im Grab, als dir lieb ist. 
+	AI_Output (self, other,"DIA_SLD_752_OKYL_UMSEHEN_INFO_11_02");//Dann pass bloÃŸ auf, dass du hier im Kessel keinen Mist baust, sonst bist du schneller im Grab, als dir lieb ist. 
 };
 
 //--------------------- Wer bist Du -----------------------------
@@ -91,7 +91,7 @@ FUNC int DIA_SLD_752_OKYL_WERBISTDU_CONDITION()
 func void DIA_SLD_752_OKYL_WERBISTDU_INFO()
 {
 	AI_Output (other, self,"DIA_SLD_752_OKYL_WERBISTDU_INFO_15_01"); //Wer bist du?
-	AI_Output (self, other,"DIA_SLD_752_OKYL_WERBISTDU_INFO_11_02");//Ich bin Okyl. Ich hab' das Kommando über den Kessel.
+	AI_Output (self, other,"DIA_SLD_752_OKYL_WERBISTDU_INFO_11_02");//Ich bin Okyl. Ich hab' das Kommando Ã¼ber den Kessel.
 
 };
 
@@ -116,7 +116,7 @@ func void DIA_SLD_752_OKYL_INMINE_INFO()
 {
 	AI_Output (other, self,"DIA_SLD_752_OKYL_INMINE_INFO_15_01"); //Ich wollte nur mal in die Mine.
 	AI_Output (self, other,"DIA_SLD_752_OKYL_INMINE_INFO_11_02");//Ach so, du wolltest nur mal kurz in die Mine.
-	AI_Output (self, other,"DIA_SLD_752_OKYL_INMINE_INFO_11_03");//Ich glaube, du weisst nicht, wie das hier läuft. Keiner kommt in die Mine ohne meine Erlaubnis.
+	AI_Output (self, other,"DIA_SLD_752_OKYL_INMINE_INFO_11_03");//Ich glaube, du weisst nicht, wie das hier lÃ¤uft. Keiner kommt in die Mine ohne meine Erlaubnis.
 	AI_Output (self, other,"DIA_SLD_752_OKYL_INMINE_INFO_11_04");//Schreib dir das hinter die Ohren. Wer ohne meine Erlaubnis die Mine oder das Torhaus betritt, ist ein toter Mann!
 };
 

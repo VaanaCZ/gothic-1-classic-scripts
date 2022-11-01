@@ -4,7 +4,7 @@
 
 
 // *************************************************************************
-// 									Vor Gespräch
+// 									Vor GesprÃ¤ch
 // *************************************************************************
 
 INSTANCE Info_SFB_2_Pre(C_INFO)
@@ -23,7 +23,7 @@ FUNC INT Info_SFB_2_Pre_Condition()
 
 FUNC VOID Info_SFB_2_Pre_Info()
 {	
-	AI_Output(self,other,"Info_SFB_2_EinerVonEuchWerden_02_00"); //Was willst du hier. Ich habe keine Lust, irgendwelchen Ärger zu bekommen.
+	AI_Output(self,other,"Info_SFB_2_EinerVonEuchWerden_02_00"); //Was willst du hier. Ich habe keine Lust, irgendwelchen Ã„rger zu bekommen.
 };
 
 // *************************************************************************
@@ -98,7 +98,7 @@ FUNC INT Info_SFB_2_WichtigePersonen_Condition()
 FUNC VOID Info_SFB_2_WichtigePersonen_Info()
 {
 	AI_Output(other,self,"Info_SFB_2_WichtigePersonen_15_00"); //Wer hat hier was zu sagen?
-	AI_Output(self,other,"Info_SFB_2_WichtigePersonen_02_01"); //Hier im Kessel haben die Söldner das Sagen. Im Neuen Lager sieht das schon anders aus.
+	AI_Output(self,other,"Info_SFB_2_WichtigePersonen_02_01"); //Hier im Kessel haben die SÃ¶ldner das Sagen. Im Neuen Lager sieht das schon anders aus.
 	AI_Output(self,other,"Info_SFB_2_WichtigePersonen_02_02"); //Also pass gut auf, mit wem du dich anlegst.
 };
 
@@ -112,7 +112,7 @@ INSTANCE Info_SFB_2_DasLager(C_INFO)
 	condition	= Info_SFB_2_DasLager_Condition;
 	information	= Info_SFB_2_DasLager_Info;
 	permanent	= 1;
-	description = "Ich will mehr über dieses Lager erfahren.";
+	description = "Ich will mehr Ã¼ber dieses Lager erfahren.";
 };                       
 
 FUNC INT Info_SFB_2_DasLager_Condition()
@@ -122,8 +122,8 @@ FUNC INT Info_SFB_2_DasLager_Condition()
 
 FUNC VOID Info_SFB_2_DasLager_Info()
 {
-	AI_Output(other,self,"Info_SFB_2_DasLager_15_00"); //Ich will mehr über dieses Lager erfahren.
-	AI_Output(self,other,"Info_SFB_2_DasLager_02_01"); //Ich weiß nicht, ob ich dir da weiterhelfen kann, sprich am besten mit Swiney oder mit den Söldnern.
+	AI_Output(other,self,"Info_SFB_2_DasLager_15_00"); //Ich will mehr Ã¼ber dieses Lager erfahren.
+	AI_Output(self,other,"Info_SFB_2_DasLager_02_01"); //Ich weiÃŸ nicht, ob ich dir da weiterhelfen kann, sprich am besten mit Swiney oder mit den SÃ¶ldnern.
 };
 
 // *************************************************************************
@@ -150,7 +150,7 @@ FUNC VOID Info_SFB_2_DieLage_Info()
 	AI_Output(self,other,"Info_SFB_2_DieLage_02_01"); //Ich will mich nicht beklagen. Wir haben alle unseren Teil zu tragen.
 	AI_Output(self,other,"Info_SFB_2_DieLage_02_02"); //Aber zumindest ist es hier besser als im Alten Lager.
 	AI_Output(self,other,"Info_SFB_2_DieLage_02_03"); //Kommst du aus dem Alten Lager?
-	AI_Output(self,other,"Info_SFB_2_DieLage_02_04"); //Wenn du aus dem Alten Lager kommst, ich will keinen Ärger!
+	AI_Output(self,other,"Info_SFB_2_DieLage_02_04"); //Wenn du aus dem Alten Lager kommst, ich will keinen Ã„rger!
 	AI_StopProcessInfos	(self);
 };	
 	

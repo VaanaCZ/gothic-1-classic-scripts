@@ -414,7 +414,7 @@ INSTANCE ItRw_Bow_War_03 (C_Item)
 /******************************************************************************************/
 INSTANCE ItRw_Bow_War_04 (C_Item)
 {
-	name 				=	"Dämonenbogen";
+	name 				=	"DÃ¤monenbogen";
 
 	mainflag 			=	ITEM_KAT_FF;
 	flags 				=	ITEM_BOW;

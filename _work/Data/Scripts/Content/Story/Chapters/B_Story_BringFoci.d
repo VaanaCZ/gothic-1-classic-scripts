@@ -8,7 +8,7 @@
 //#####################################################################
 func void B_Story_BringFoci()
 {
-	//-------- Ausrüstung für Spieler --------
+	//-------- AusrÃ¼stung fÃ¼r Spieler --------
 	CreateInvItems		(self,			ItWrFocimap,	2);		// 2, damit die Bildschirmausgabe stimmt!
 	B_GiveInvItems		(self,	hero,	ItWrFocimap,	2);	
 	Npc_RemoveInvItem	(hero,			ItWrFocimap);
@@ -59,15 +59,15 @@ func void B_Story_BringFoci()
 	var C_NPC sld723;		sld723 = Hlp_GetNpc	(SLD_723_Soeldner);		sld723.aivar[AIV_PASSGATE] = TRUE;
 	var C_NPC sld732;		sld732 = Hlp_GetNpc	(SLD_732_Soeldner);		sld732.aivar[AIV_PASSGATE] = TRUE;
 
-	//-------- Tagebucheinträge --------
-	B_LogEntry			(CH3_EscapePlanNC,	"Ich habe Saturas meine Hilfe bei der Vollendung des Ausbruchsplans angeboten. Meine nächste Aufgabe besteht darin, die vier nochfehlenden Fokus-Steinen zu finden.");
+	//-------- TagebucheintrÃ¤ge --------
+	B_LogEntry			(CH3_EscapePlanNC,	"Ich habe Saturas meine Hilfe bei der Vollendung des Ausbruchsplans angeboten. Meine nÃ¤chste Aufgabe besteht darin, die vier nochfehlenden Fokus-Steinen zu finden.");
 	Log_SetTopicStatus	(CH3_EscapePlanNC,	LOG_SUCCESS);
 	
 	Log_CreateTopic		(CH3_BringFoci,		LOG_MISSION);
 	Log_SetTopicStatus	(CH3_BringFoci,		LOG_RUNNING);
-	B_LogEntry			(CH3_BringFoci,		"Nachdem ich Fokus und Almanach aus dem Sumpflager an Saturas übergeben habe, bat er mich, die restlichen vier Fokussteine, die sich nicht im Besitz der Wassermagier befinden, zu suchen.");
-	B_LogEntry			(CH3_BringFoci,		"Saturas gab mir eine alte Karte, auf der die letzten bekannten Aufenthaltsorte der Fokussteine verzeichnet sind sowie eine Spruchrolle, die mich bei Benutzung direkt zu den Wassermagiern zurückteleportiert.");
-	B_LogEntry			(CH3_BringFoci,		"Riordian, einer der Wassermagier, hat eine Reihe Tränke für meine Reise gebraut. Ich kann sie mir in seinem Alchemielabor auf der obersten Ebene des Neuen Lagers abholen.");
+	B_LogEntry			(CH3_BringFoci,		"Nachdem ich Fokus und Almanach aus dem Sumpflager an Saturas Ã¼bergeben habe, bat er mich, die restlichen vier Fokussteine, die sich nicht im Besitz der Wassermagier befinden, zu suchen.");
+	B_LogEntry			(CH3_BringFoci,		"Saturas gab mir eine alte Karte, auf der die letzten bekannten Aufenthaltsorte der Fokussteine verzeichnet sind sowie eine Spruchrolle, die mich bei Benutzung direkt zu den Wassermagiern zurÃ¼ckteleportiert.");
+	B_LogEntry			(CH3_BringFoci,		"Riordian, einer der Wassermagier, hat eine Reihe TrÃ¤nke fÃ¼r meine Reise gebraut. Ich kann sie mir in seinem Alchemielabor auf der obersten Ebene des Neuen Lagers abholen.");
 
 	//-------- Mission auf RUNNING setzen --------
 	Saturas_BringFoci = 1;

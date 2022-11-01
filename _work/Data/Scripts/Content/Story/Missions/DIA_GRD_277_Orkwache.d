@@ -23,8 +23,8 @@ FUNC int  Grd_277_Gardist_SITTINGORK_Condition()
 FUNC void  Grd_277_Gardist_SITTINGORK_Info()
 {
 	AI_Output (other, self,"Grd_277_Gardist_SITTINGORK_Info_15_01"); //Was ist mit dem Ork da?
-	AI_Output (self, other,"Grd_277_Gardist_SITTINGORK_Info_06_02"); //Unser Gefangener. Sein Gl¸ck, dass das Zahnrad des Stampfers gebrochen ist.So kann dieser Hundesohn ausruhen.
-	AI_Output (self, other,"Grd_277_Gardist_SITTINGORK_Info_06_03"); //Wenn der Stampfer repariert ist, wird er wieder arbeiten. Schlieﬂlich ist er nicht zum Faulenzen hier!
+	AI_Output (self, other,"Grd_277_Gardist_SITTINGORK_Info_06_02"); //Unser Gefangener. Sein Gl√ºck, dass das Zahnrad des Stampfers gebrochen ist.So kann dieser Hundesohn ausruhen.
+	AI_Output (self, other,"Grd_277_Gardist_SITTINGORK_Info_06_03"); //Wenn der Stampfer repariert ist, wird er wieder arbeiten. Schlie√ülich ist er nicht zum Faulenzen hier!
 };  
 /*------------------------------------------------------------------------
 							WORKINGORK							

@@ -97,7 +97,7 @@ FUNC int DIA_SLD_761_Soeldner_UMSEHEN_CONDITION()
 func void DIA_SLD_761_Soeldner_UMSEHEN_INFO()
 {  
 	AI_Output (other, self,"DIA_SLD_761_Soeldner_UMSEHEN_INFO_15_01"); //Ich wollte mir nur mal das Camp ansehen.
-	AI_Output (self, other,"DIA_SLD_761_Soeldner_UMSEHEN_INFO_03_02");//Dann bist du hier wohl falsch, hier ist der Mineneingang, und der ist tabu für dich.
+	AI_Output (self, other,"DIA_SLD_761_Soeldner_UMSEHEN_INFO_03_02");//Dann bist du hier wohl falsch, hier ist der Mineneingang, und der ist tabu fÃ¼r dich.
 };
 
 
@@ -121,7 +121,7 @@ FUNC int DIA_SLD_761_Soeldner_INMINE_CONDITION()
 func void DIA_SLD_761_Soeldner_INMINE_INFO()
 {
 	AI_Output (other, self,"DIA_SLD_761_Soeldner_INMINE_INFO_15_01");//Ich wollte mir nur mal die Mine ansehen.
-	AI_Output (self, other,"DIA_SLD_761_Soeldner_INMINE_INFO_03_02");//Du siehst doch, dass die Mine abgeschlossen ist, also hier gibt´s nichts zu sehen.
+	AI_Output (self, other,"DIA_SLD_761_Soeldner_INMINE_INFO_03_02");//Du siehst doch, dass die Mine abgeschlossen ist, also hier gibtÂ´s nichts zu sehen.
 
 };
 
@@ -148,7 +148,7 @@ FUNC int DIA_SLD_761_Soeldner_Bribe_CONDITION()
 func void DIA_SLD_761_Soeldner_Bribe_INFO()
 {  
 	AI_Output (other, self,"DIA_SLD_761_Soeldner_Bribe_INFO_15_01");//Kann man da gar nichts machen?
-	AI_Output (self, other,"DIA_SLD_761_Soeldner_Bribe_INFO_03_02");//Was sollte man da machen können? 
+	AI_Output (self, other,"DIA_SLD_761_Soeldner_Bribe_INFO_03_02");//Was sollte man da machen kÃ¶nnen? 
 	AI_Output (self, other,"DIA_SLD_761_Soeldner_Bribe_INFO_03_03");//Moment mal, wenn du versucht, mich zu bestechen, dann bist du hier an der falschen Adresse. 
 	AI_Output (other, self,"DIA_SLD_761_Soeldner_Bribe_INFO_15_04");//Nein, ich wollte niemanden bestechen, ich dachte nur.. 
 	AI_Output (other, self,"DIA_SLD_761_Soeldner_Bribe_INFO_15_05");//Ich glaub', ich geh' dann besser.

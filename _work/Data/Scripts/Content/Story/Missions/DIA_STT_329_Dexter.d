@@ -23,7 +23,7 @@ FUNC VOID DIA_Dexter_Exit_Info()
 };
 
 // **************************************************
-// 					Erste Begrüssung
+// 					Erste BegrÃ¼ssung
 // **************************************************
 
 INSTANCE DIA_Dexter_First (C_INFO)
@@ -46,7 +46,7 @@ FUNC INT DIA_Dexter_First_Condition()
 
 FUNC VOID DIA_Dexter_First_Info()
 {
-	AI_Output (self,other,"DIA_Dexter_IAmNew_10_00"); //Hey, du! Ich handele mit Sumpfkraut und Tränken aus dem Sektenlager. Willst du was?
+	AI_Output (self,other,"DIA_Dexter_IAmNew_10_00"); //Hey, du! Ich handele mit Sumpfkraut und TrÃ¤nken aus dem Sektenlager. Willst du was?
 };
 
 // **************************************************
@@ -104,7 +104,7 @@ FUNC VOID DIA_Dexter_Trade_Info()
 	if	(Dexter_Traded == FALSE)
 	{
 		Log_CreateTopic(GE_TraderOC, LOG_NOTE);
-		B_LogEntry(GE_TraderOC, "Der Schatten Dexter am Marktplatz handelt mit Sumpfkraut und TRÄNKEN aus dem Sektenlager.");
+		B_LogEntry(GE_TraderOC, "Der Schatten Dexter am Marktplatz handelt mit Sumpfkraut und TRÃ„NKEN aus dem Sektenlager.");
 	
 		Dexter_Traded = TRUE;
 	};
@@ -123,7 +123,7 @@ INSTANCE DIA_Dexter_JoinOC (C_INFO)
 	condition	= DIA_Dexter_JoinOC_Condition;
 	information	= DIA_Dexter_JoinOC_Info;
 	permanent	= 0;
-	description	= "Ich will mich dem Lager anschließen - ich will Schatten werden.";
+	description	= "Ich will mich dem Lager anschlieÃŸen - ich will Schatten werden.";
 };                       
 
 FUNC INT DIA_Dexter_JoinOC_Condition()
@@ -135,22 +135,22 @@ FUNC INT DIA_Dexter_JoinOC_Condition()
 };
 FUNC VOID DIA_Dexter_JoinOC_Info()
 {
-	AI_Output (other,self,"DIA_Dexter_JoinOC_15_00"); //Ich will mich dem Lager anschließen - ich will Schatten werden.
-	AI_Output (self,other,"DIA_Dexter_JoinOC_10_01"); //So? Du suchst eine Möglichkeit, dich zu bewähren?
-	AI_Output (self,other,"DIA_Dexter_JoinOC_10_02"); //Gut - du kannst etwas für mich erledigen. Wenn du die Sache gut machst, leg' ich ein gutes Wort bei Diego für dich ein.
+	AI_Output (other,self,"DIA_Dexter_JoinOC_15_00"); //Ich will mich dem Lager anschlieÃŸen - ich will Schatten werden.
+	AI_Output (self,other,"DIA_Dexter_JoinOC_10_01"); //So? Du suchst eine MÃ¶glichkeit, dich zu bewÃ¤hren?
+	AI_Output (self,other,"DIA_Dexter_JoinOC_10_02"); //Gut - du kannst etwas fÃ¼r mich erledigen. Wenn du die Sache gut machst, leg' ich ein gutes Wort bei Diego fÃ¼r dich ein.
 	AI_Output (other,self,"DIA_Dexter_JoinOC_15_03"); //Um was geht es?
-	AI_Output (self,other,"DIA_Dexter_JoinOC_10_04"); //Im Sektenlager gibt es einen Mann, der Kalom heißt. Ist ein ziemlich hohes Tier - einer der Gurus der Sekte.
-	AI_Output (self,other,"DIA_Dexter_JoinOC_10_05"); //Kalom ist Alchimist. Er hat das Rezept für einen ziemlich wirkungsvollen Heiltrank.
+	AI_Output (self,other,"DIA_Dexter_JoinOC_10_04"); //Im Sektenlager gibt es einen Mann, der Kalom heiÃŸt. Ist ein ziemlich hohes Tier - einer der Gurus der Sekte.
+	AI_Output (self,other,"DIA_Dexter_JoinOC_10_05"); //Kalom ist Alchimist. Er hat das Rezept fÃ¼r einen ziemlich wirkungsvollen Heiltrank.
 	AI_Output (self,other,"DIA_Dexter_JoinOC_10_06"); //Ich will ihm das Rezept abkaufen, dann kann ich die Dinger selber herstellen.
 	AI_Output (self,other,"DIA_Dexter_JoinOC_10_07"); //Aber an Kalom kommt niemand ran.
 	AI_Output (other,self,"DIA_Dexter_JoinOC_15_08"); //Und was soll ich da machen?
 	AI_Output (self,other,"DIA_Dexter_JoinOC_10_09"); //Die Sektenspinner sind dauernd auf der Suche nach neuen Leuten. Du bist neu hier. Tu einfach so, als wenn du dich anwerben lassen willst.
-	AI_Output (self,other,"DIA_Dexter_JoinOC_10_10"); //Kalom ist einer der Gurus, das heißt, er prüft die neuen Anwärter. Wenn du mit ihm in Kontakt kommst. versuch, an das Rezept zu kommen.
-	AI_Output (self,other,"DIA_Dexter_JoinOC_10_11"); //Ob du dafür bezahlst oder nicht, ist mir egal.
+	AI_Output (self,other,"DIA_Dexter_JoinOC_10_10"); //Kalom ist einer der Gurus, das heiÃŸt, er prÃ¼ft die neuen AnwÃ¤rter. Wenn du mit ihm in Kontakt kommst. versuch, an das Rezept zu kommen.
+	AI_Output (self,other,"DIA_Dexter_JoinOC_10_11"); //Ob du dafÃ¼r bezahlst oder nicht, ist mir egal.
 
 	Info_ClearChoices(DIA_Dexter_JoinOC);
 	Info_AddChoice	 (DIA_Dexter_JoinOC, "Okay - ich werd sehen, ob ich das Ding kriege."						,DIA_Dexter_JoinOC_Ok);
-	Info_AddChoice	 (DIA_Dexter_JoinOC, "Hört sich nach ner schwierigen Sache an - wieviel ist für mich drin?"	,DIA_Dexter_JoinOC_HowMuch);
+	Info_AddChoice	 (DIA_Dexter_JoinOC, "HÃ¶rt sich nach ner schwierigen Sache an - wieviel ist fÃ¼r mich drin?"	,DIA_Dexter_JoinOC_HowMuch);
 };
 
 func void DIA_Dexter_JoinOC_Ok()
@@ -160,7 +160,7 @@ func void DIA_Dexter_JoinOC_Ok()
 	
 	Log_CreateTopic (CH1_KalomsRecipe,LOG_MISSION);
 	Log_SetTopicStatus (CH1_KalomsRecipe,LOG_RUNNING);
-	B_LogEntry    (CH1_KalomsRecipe,"Der Schatten Dexter am Marktplatz hat mir aufgetragen, für ihn ein Rezept vom Guru Kalom im Sektenlager zu besorgen.");
+	B_LogEntry    (CH1_KalomsRecipe,"Der Schatten Dexter am Marktplatz hat mir aufgetragen, fÃ¼r ihn ein Rezept vom Guru Kalom im Sektenlager zu besorgen.");
 	B_LogEntry    (CH1_KalomsRecipe,"Dexter meinte, ich solle mich als Bewerber ins Sektenlager einschleichen.");
 	
 	Info_ClearChoices(DIA_Dexter_JoinOC);
@@ -168,15 +168,15 @@ func void DIA_Dexter_JoinOC_Ok()
 
 func void DIA_Dexter_JoinOC_HowMuch()	
 {
-	AI_Output (other,self,"DIA_Dexter_JoinOC_HowMuch_15_00"); //Hört sich nach 'ner schwierigen Sache an - wie viel ist für mich drin?
-	AI_Output (self,other,"DIA_Dexter_JoinOC_HowMuch_10_01"); //Irgendwann wird Diego mich fragen, ob du für uns geeignet bist. Rate mal, wovon meine Antwort abhängen wird.
+	AI_Output (other,self,"DIA_Dexter_JoinOC_HowMuch_15_00"); //HÃ¶rt sich nach 'ner schwierigen Sache an - wie viel ist fÃ¼r mich drin?
+	AI_Output (self,other,"DIA_Dexter_JoinOC_HowMuch_10_01"); //Irgendwann wird Diego mich fragen, ob du fÃ¼r uns geeignet bist. Rate mal, wovon meine Antwort abhÃ¤ngen wird.
 	
-	Info_AddChoice	 (DIA_Dexter_JoinOC, "Es kann sein, dass ich das Rezept bezahlen muss - gib mir 50 Erz Vorschuß."	,DIA_Dexter_JoinOC_Advance);
+	Info_AddChoice	 (DIA_Dexter_JoinOC, "Es kann sein, dass ich das Rezept bezahlen muss - gib mir 50 Erz VorschuÃŸ."	,DIA_Dexter_JoinOC_Advance);
 };
 
 func void DIA_Dexter_JoinOC_Advance()
 {
-	AI_Output (other,self,"DIA_Dexter_JoinOC_Advance_15_00"); //Es kann sein, dass ich für das Rezept bezahlen muss - gib mir 50 Erz als Vorschuss.
+	AI_Output (other,self,"DIA_Dexter_JoinOC_Advance_15_00"); //Es kann sein, dass ich fÃ¼r das Rezept bezahlen muss - gib mir 50 Erz als Vorschuss.
 	AI_Output (self,other,"DIA_Dexter_JoinOC_Advance_10_01"); //Vergiss es.
 	
 	Info_AddChoice	 (DIA_Dexter_JoinOC, "Kein Erz - kein Rezept!"	,DIA_Dexter_JoinOC_Threat);
@@ -185,7 +185,7 @@ func void DIA_Dexter_JoinOC_Advance()
 func void DIA_Dexter_JoinOC_Threat()
 {
 	AI_Output (other,self,"DIA_Dexter_JoinOC_Threat_15_00"); //Kein Erz - kein Rezept!
-	AI_Output (self,other,"DIA_Dexter_JoinOC_Threat_10_01"); //Na schön! Über das Erz können wir reden, wenn du das Rezept hast.
+	AI_Output (self,other,"DIA_Dexter_JoinOC_Threat_10_01"); //Na schÃ¶n! Ãœber das Erz kÃ¶nnen wir reden, wenn du das Rezept hast.
 	
 	Info_AddChoice	 (DIA_Dexter_JoinOC, "Ich will jetzt Erz sehen, oder du kannst dein Rezept selber abholen."	,DIA_Dexter_JoinOC_OreNowOrElse);
 };
@@ -201,15 +201,15 @@ func void DIA_Dexter_JoinOC_OreNowOrElse()
 func void DIA_Dexter_JoinOC_ForgetIt()
 {
 	AI_Output (other,self,"DIA_Dexter_JoinOC_ForgetIt_15_00"); //Gut! Vergessen wir die Sache.
-	AI_Output (self,other,"DIA_Dexter_JoinOC_ForgetIt_10_01"); //Nicht so schnell! Wollte nur wissen, wie weit du gehst ... 50 Erz ist ziemlich viel für einen Neuen, was denkst du?
+	AI_Output (self,other,"DIA_Dexter_JoinOC_ForgetIt_10_01"); //Nicht so schnell! Wollte nur wissen, wie weit du gehst ... 50 Erz ist ziemlich viel fÃ¼r einen Neuen, was denkst du?
 	AI_Output (other,self,"DIA_Dexter_JoinOC_ForgetIt_15_02"); //Klingt schon besser.
-	AI_Output (self,other,"DIA_Dexter_JoinOC_ForgetIt_10_03"); //Gut, gut, 50 Erzbrocken kann ich gerade noch entbehren. Enttäusch mich nicht, Kleiner!
+	AI_Output (self,other,"DIA_Dexter_JoinOC_ForgetIt_10_03"); //Gut, gut, 50 Erzbrocken kann ich gerade noch entbehren. EnttÃ¤usch mich nicht, Kleiner!
 	
 	Dexter_GetKalomsRecipe = LOG_RUNNING;
 	
 	Log_CreateTopic (CH1_KalomsRecipe,LOG_MISSION);
 	Log_SetTopicStatus (CH1_KalomsRecipe,LOG_RUNNING);
-	B_LogEntry    (CH1_KalomsRecipe,"Der Schatten Dexter am Marktplatz hat mir aufgetragen, für ihn ein Rezept vom Guru Kalom im Sektenlager zu besorgen.");
+	B_LogEntry    (CH1_KalomsRecipe,"Der Schatten Dexter am Marktplatz hat mir aufgetragen, fÃ¼r ihn ein Rezept vom Guru Kalom im Sektenlager zu besorgen.");
 	B_LogEntry    (CH1_KalomsRecipe,"Dexter meinte, ich solle mich als Bewerber ins Sektenlager einschleichen.");
 	
 	CreateInvItems(self, itminugget, 50);
@@ -245,19 +245,19 @@ FUNC INT DIA_Dexter_WhereST_Condition()
 FUNC VOID DIA_Dexter_WhereST_Info()
 {
 	AI_Output (other,self,"DIA_Dexter_WhereST_15_00"); //Wo ist das Sektenlager?
-	AI_Output (self,other,"DIA_Dexter_WhereST_10_01"); //Durch den Südausgang aus dem Lager raus, dann immer östlich halten. Am besten besorgst du dir eine Karte -
+	AI_Output (self,other,"DIA_Dexter_WhereST_10_01"); //Durch den SÃ¼dausgang aus dem Lager raus, dann immer Ã¶stlich halten. Am besten besorgst du dir eine Karte -
 	
-	if (Npc_HasItems(self,ItWrWorldmap) >0)														//Björn
-		{																						//Björn
-			AI_Output (self,other,"DIA_Dexter_WhereST_10_02"); //Ich hab' eine da für 50 Erz ...
-		};																						//Björn
+	if (Npc_HasItems(self,ItWrWorldmap) >0)														//BjÃ¶rn
+		{																						//BjÃ¶rn
+			AI_Output (self,other,"DIA_Dexter_WhereST_10_02"); //Ich hab' eine da fÃ¼r 50 Erz ...
+		};																						//BjÃ¶rn
 	
-	AI_Output (other,self,"DIA_Dexter_WhereST_15_02"); //Der Südausgang ist der umgestürzte Turm, richtig?
+	AI_Output (other,self,"DIA_Dexter_WhereST_15_02"); //Der SÃ¼dausgang ist der umgestÃ¼rzte Turm, richtig?
 	AI_Output (self,other,"DIA_Dexter_WhereST_10_03"); //Stimmt genau.
 	
 	if	!Dexter_PsiCamp
 	{
-		B_LogEntry    (CH1_KalomsRecipe,"Das Sektenlager befindet sich östlich vom Alten Lager");
+		B_LogEntry    (CH1_KalomsRecipe,"Das Sektenlager befindet sich Ã¶stlich vom Alten Lager");
 		Dexter_PsiCamp = TRUE;
 	};
 };
@@ -291,9 +291,9 @@ FUNC VOID DIA_Dexter_KalomsRecipeSuccess_Info()
 	
 	B_UseFakeScroll();
 	
-	AI_Output (self,other,"DIA_Dexter_KalomsRecipeSuccess_10_02"); //Gut! Jetzt kann ich die Tränke selber herstellen.
-	AI_Output (self,other,"DIA_Dexter_KalomsRecipeSuccess_10_03"); //Bist ein guter Mann! Werde Diego von der Sache erzählen!
-	AI_Output (self,other,"DIA_Dexter_KalomsRecipeSuccess_10_04"); //Hier - nimm das - für deine Mühen...
+	AI_Output (self,other,"DIA_Dexter_KalomsRecipeSuccess_10_02"); //Gut! Jetzt kann ich die TrÃ¤nke selber herstellen.
+	AI_Output (self,other,"DIA_Dexter_KalomsRecipeSuccess_10_03"); //Bist ein guter Mann! Werde Diego von der Sache erzÃ¤hlen!
+	AI_Output (self,other,"DIA_Dexter_KalomsRecipeSuccess_10_04"); //Hier - nimm das - fÃ¼r deine MÃ¼hen...
 	
 	CreateInvItems (other,itminugget,50);
 	

@@ -47,9 +47,9 @@ FUNC VOID DIA_Whistler_IAmNew_Info()
 {
 	AI_Output (other,self,"DIA_Whistler_IAmNew_15_00"); //Hi! Ich bin neu hier!
 	AI_Output (self,other,"DIA_Whistler_IAmNew_11_01"); //Was willst du von mir?
-	AI_Output (other,self,"DIA_Whistler_IAmNew_15_02"); //Ich will einer von euch werden - ich will mich dem Lager anschließen.
-	AI_Output (self,other,"DIA_Whistler_IAmNew_11_03"); //Auf der Suche nach Fürsprechern, was?
-	AI_Output (self,other,"DIA_Whistler_IAmNew_11_04"); //Wenn ich ein gutes Wort bei Diego für dich einlegen soll, schuldest du mir einen Gefallen.
+	AI_Output (other,self,"DIA_Whistler_IAmNew_15_02"); //Ich will einer von euch werden - ich will mich dem Lager anschlieÃŸen.
+	AI_Output (self,other,"DIA_Whistler_IAmNew_11_03"); //Auf der Suche nach FÃ¼rsprechern, was?
+	AI_Output (self,other,"DIA_Whistler_IAmNew_11_04"); //Wenn ich ein gutes Wort bei Diego fÃ¼r dich einlegen soll, schuldest du mir einen Gefallen.
 };
 
 // **************************************************
@@ -66,7 +66,7 @@ INSTANCE DIA_Whistler_Favour (C_INFO)
 	condition	= DIA_Whistler_Favour_Condition;
 	information	= DIA_Whistler_Favour_Info;
 	permanent	= 0;
-	description = "Was ist das für ein Gefallen, den du von mir erwartest?";
+	description = "Was ist das fÃ¼r ein Gefallen, den du von mir erwartest?";
 };                       
 
 FUNC INT DIA_Whistler_Favour_Condition()
@@ -79,21 +79,21 @@ FUNC INT DIA_Whistler_Favour_Condition()
 
 FUNC VOID DIA_Whistler_Favour_Info()
 {
-	AI_Output (other,self,"DIA_Whistler_Favour_15_00"); //Was ist das für ein Gefallen, den du von mir erwartest?
-	AI_Output (self,other,"DIA_Whistler_Favour_11_01"); //Ich will eine Waffe von Fisk haben. Er ist einer der Händler am Marktplatz.
+	AI_Output (other,self,"DIA_Whistler_Favour_15_00"); //Was ist das fÃ¼r ein Gefallen, den du von mir erwartest?
+	AI_Output (self,other,"DIA_Whistler_Favour_11_01"); //Ich will eine Waffe von Fisk haben. Er ist einer der HÃ¤ndler am Marktplatz.
 	AI_Output (self,other,"DIA_Whistler_Favour_11_02"); //Er will sie mir nicht mehr verkaufen. Es ist ein Breitschwert mit Ornamenten.
-	AI_Output (self,other,"DIA_Whistler_Favour_11_03"); //Ich gebe dir 100 Erz und du holst die Waffe für mich ab. Aber sag ihm nichts von mir, klar?
+	AI_Output (self,other,"DIA_Whistler_Favour_11_03"); //Ich gebe dir 100 Erz und du holst die Waffe fÃ¼r mich ab. Aber sag ihm nichts von mir, klar?
 
 	Info_ClearChoices(DIA_Whistler_Favour);
 	Info_AddChoice	 (DIA_Whistler_Favour, "Okay, her mit den 100 Erzbrocken. Ich hol das Ding."								,DIA_Whistler_Favour_Ok);
-	Info_AddChoice	 (DIA_Whistler_Favour, "Hast du mal daran gedacht, dass ich mit dem Erz durchbrennen könnte...?"	,DIA_Whistler_Favour_OreAway);
+	Info_AddChoice	 (DIA_Whistler_Favour, "Hast du mal daran gedacht, dass ich mit dem Erz durchbrennen kÃ¶nnte...?"	,DIA_Whistler_Favour_OreAway);
 	Info_AddChoice	 (DIA_Whistler_Favour, "Warum will er dir die Waffe nicht mehr verkaufen?"									,DIA_Whistler_Favour_WhyNotSell);
 };
 
 func void DIA_Whistler_Favour_Ok()
 {
 	AI_Output (other,self,"DIA_Whistler_Favour_Ok_15_00"); //Okay, her mit den 100 Erzbrocken. Ich hol' das Ding.
-	AI_Output (self,other,"DIA_Whistler_Favour_Ok_11_01"); //Hier hast du sie. Kommt direkt zu mir zurück!
+	AI_Output (self,other,"DIA_Whistler_Favour_Ok_11_01"); //Hier hast du sie. Kommt direkt zu mir zurÃ¼ck!
 	
 	Whistler_BuyMySword = LOG_RUNNING;
 	
@@ -102,7 +102,7 @@ func void DIA_Whistler_Favour_Ok()
 		Log_CreateTopic		(CH1_JoinOC,LOG_MISSION);
 		Log_SetTopicStatus	(CH1_JoinOC,LOG_RUNNING);
 	};
-	B_LogEntry (CH1_JoinOC,"Whistler unterstützt mich, wenn ich ihm bei Fisk auf dem Marktplatz ein Schwert kaufe. Er hat mir 100 Erz gegeben.");
+	B_LogEntry (CH1_JoinOC,"Whistler unterstÃ¼tzt mich, wenn ich ihm bei Fisk auf dem Marktplatz ein Schwert kaufe. Er hat mir 100 Erz gegeben.");
 	
 	var C_NPC fisk; fisk = Hlp_GetNpc(Stt_311_Fisk);
 	
@@ -116,7 +116,7 @@ func void DIA_Whistler_Favour_Ok()
 
 func void DIA_Whistler_Favour_OreAway()
 {
-	AI_Output (other,self,"DIA_Whistler_Favour_OreAway_15_00"); //Hast du mal daran gedacht, dass ich einfach mit dem Erz durchbrennen könnte ...?
+	AI_Output (other,self,"DIA_Whistler_Favour_OreAway_15_00"); //Hast du mal daran gedacht, dass ich einfach mit dem Erz durchbrennen kÃ¶nnte ...?
 	AI_Output (self,other,"DIA_Whistler_Favour_OreAway_11_01"); //Vergiss nicht: Die Kolonie ist klein! Wenn du mit dem Erz durchbrennst, finde ich dich!
 };
 
@@ -139,7 +139,7 @@ INSTANCE DIA_Whistler_Running110 (C_INFO)
 	condition	= DIA_Whistler_Running110_Condition;
 	information	= DIA_Whistler_Running110_Info;
 	permanent	= 0;
-	description = "Fisk will jetzt 110 Erz für dein Schwert";
+	description = "Fisk will jetzt 110 Erz fÃ¼r dein Schwert";
 };                       
 
 FUNC INT DIA_Whistler_Running110_Condition()
@@ -152,7 +152,7 @@ FUNC INT DIA_Whistler_Running110_Condition()
 
 FUNC VOID DIA_Whistler_Running110_Info()
 {
-	AI_Output (other,self,"DIA_Whistler_Running110_15_00"); //Fisk will jetzt 110 Erz für dein Schwert.
+	AI_Output (other,self,"DIA_Whistler_Running110_15_00"); //Fisk will jetzt 110 Erz fÃ¼r dein Schwert.
 	AI_Output (self,other,"DIA_Whistler_Running110_11_01"); //Und ich soll dir jetzt noch 10 Erz geben ...
 	AI_Output (other,self,"DIA_Whistler_Running110_15_02"); //Ich dachte, du legst Wert auf dein Schwert.
 	AI_Output (self,other,"DIA_Whistler_Running110_11_03"); //Hier, nimm, und jetzt beeil dich!
@@ -171,7 +171,7 @@ INSTANCE DIA_Whistler_RunningPayBack (C_INFO)
 	condition	= DIA_Whistler_RunningPayBack_Condition;
 	information	= DIA_Whistler_RunningPayBack_Info;
 	permanent	= 1;
-	description = "Ich kriege das Schwert nicht - hier hast du deine 100 Erz zurück.";
+	description = "Ich kriege das Schwert nicht - hier hast du deine 100 Erz zurÃ¼ck.";
 };                       
 
 FUNC INT DIA_Whistler_RunningPayBack_Condition()
@@ -184,11 +184,11 @@ FUNC INT DIA_Whistler_RunningPayBack_Condition()
 
 FUNC VOID DIA_Whistler_RunningPayBack_Info()
 {
-	AI_Output (other,self,"DIA_Whistler_RunningPayBack_15_00"); //Ich kriege das Schwert nicht - hier hast du deine 100 Erz zurück.
+	AI_Output (other,self,"DIA_Whistler_RunningPayBack_15_00"); //Ich kriege das Schwert nicht - hier hast du deine 100 Erz zurÃ¼ck.
 	
 	if (Npc_HasItems(other,itminugget) >= 100)
 	{
-		AI_Output (self,other,"DIA_Whistler_RunningPayBack_11_01"); //Du Idiot! So 'ne Flasche wie dich können wir hier nicht gebrauchen! Zieh Leine!
+		AI_Output (self,other,"DIA_Whistler_RunningPayBack_11_01"); //Du Idiot! So 'ne Flasche wie dich kÃ¶nnen wir hier nicht gebrauchen! Zieh Leine!
 		B_GiveInvItems (hero, self, itminugget, 100);
 		Whistler_BuyMySword = LOG_OBSOLETE;
 		
@@ -198,7 +198,7 @@ FUNC VOID DIA_Whistler_RunningPayBack_Info()
 	}
 	else
 	{
-		AI_Output (self,other,"DIA_Whistler_RunningPayBack_11_02"); //Ich sehe aber keine 100 Erz - du besorgst sie am besten, so schnell du kannst, sonst gibt's Ärger!
+		AI_Output (self,other,"DIA_Whistler_RunningPayBack_11_02"); //Ich sehe aber keine 100 Erz - du besorgst sie am besten, so schnell du kannst, sonst gibt's Ã„rger!
 		AI_StopProcessInfos(self);
 	};
 };	
@@ -230,11 +230,11 @@ FUNC INT DIA_Whistler_MySword_TooLate_Condition()
 
 FUNC VOID DIA_Whistler_MySword_TooLate_Info()
 {
-	AI_Output (self,other,"DIA_Whistler_MySword_TooLate_11_00"); //Da bist du ja! Wolltest mit meinen Erz durchbrennen, was? Komm her, Bürschchen!
+	AI_Output (self,other,"DIA_Whistler_MySword_TooLate_11_00"); //Da bist du ja! Wolltest mit meinen Erz durchbrennen, was? Komm her, BÃ¼rschchen!
 	
 	Whistler_BuyMySword = LOG_FAILED;
 	
-	B_LogEntry (CH1_JoinOC,"Ich hab's vermasselt. Whistler ist ganz schön sauer auf mich.");
+	B_LogEntry (CH1_JoinOC,"Ich hab's vermasselt. Whistler ist ganz schÃ¶n sauer auf mich.");
 	
 	AI_StopProcessInfos	(self);
 	
@@ -272,16 +272,16 @@ FUNC VOID DIA_Whistler_MySword_Success_Info()
 
     B_GiveInvItems (other, self, Whistlers_Schwert, 1);
 	
-	AI_Output (self,other,"DIA_Whistler_MySword_Success_11_01"); //War ja auch nicht wirklich schwierig. Wie auch immer - eine Hand wäscht die andere.
+	AI_Output (self,other,"DIA_Whistler_MySword_Success_11_01"); //War ja auch nicht wirklich schwierig. Wie auch immer - eine Hand wÃ¤scht die andere.
 	if (Npc_GetTrueGuild (hero) == GIL_NONE)
 	{
 	AI_Output (self,other,"DIA_Whistler_MySword_Success_11_02"); //Falls Diego mich nach dir fragt, ist dir meine Stimme sicher. Bis dahin - mach's gut!
 	
-	B_LogEntry (CH1_JoinOC,"Whistler war zufrieden, als ich ihm das gewünschte Schwert übergab. Er will sich bei Diego für mich einsetzen.");
+	B_LogEntry (CH1_JoinOC,"Whistler war zufrieden, als ich ihm das gewÃ¼nschte Schwert Ã¼bergab. Er will sich bei Diego fÃ¼r mich einsetzen.");
 	}
 	else
 	{
-	B_LogEntry (CH1_JoinOC,"Whistler war zufrieden, als ich ihm das gewünschte Schwert übergab.Leider nützt mir das nicht viel, denn Schatten kann ich nicht mehr werden.");
+	B_LogEntry (CH1_JoinOC,"Whistler war zufrieden, als ich ihm das gewÃ¼nschte Schwert Ã¼bergab.Leider nÃ¼tzt mir das nicht viel, denn Schatten kann ich nicht mehr werden.");
 	};
 	Whistler_BuyMySword = LOG_SUCCESS;
 	B_GiveXP (XP_Whistlerssword);
@@ -314,7 +314,7 @@ FUNC INT DIA_Whistler_StandardKap1_Condition()
 FUNC VOID DIA_Whistler_StandardKap1_Info()
 {
 	AI_Output (other,self,"DIA_Whistler_StandardKap1_15_00"); //Wie sieht's aus ...
-	AI_Output (self,other,"DIA_Whistler_StandardKap1_11_01"); //Gut! Du hast mir einen Gefallen getan, ich tue dir einen. Ich werd Diego erzählen, dass du ein zuverlässiger Mann bist.
+	AI_Output (self,other,"DIA_Whistler_StandardKap1_11_01"); //Gut! Du hast mir einen Gefallen getan, ich tue dir einen. Ich werd Diego erzÃ¤hlen, dass du ein zuverlÃ¤ssiger Mann bist.
 };
 
 

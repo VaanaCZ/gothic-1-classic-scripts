@@ -54,7 +54,7 @@ FUNC VOID  Info_Corristo_Intruder_Info()
 
 
 //--------------------------------------------------------------------------
-// 							ÜBER DIE MAGIER
+// 							ÃœBER DIE MAGIER
 //--------------------------------------------------------------------------
 instance  KDF_402_Corristo_EXPLAINMAGE (C_INFO)
 {
@@ -63,7 +63,7 @@ instance  KDF_402_Corristo_EXPLAINMAGE (C_INFO)
 	information		= KDF_402_Corristo_EXPLAINMAGE_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Erzähl mir, wie ist es, ein Magier zu sein."; 
+	description		= "ErzÃ¤hl mir, wie ist es, ein Magier zu sein."; 
 };
 
 FUNC int  KDF_402_Corristo_EXPLAINMAGE_Condition()
@@ -77,10 +77,10 @@ FUNC int  KDF_402_Corristo_EXPLAINMAGE_Condition()
 };
 FUNC void  KDF_402_Corristo_EXPLAINMAGE_Info()
 {
-	AI_Output (other, self,"KDF_402_Corristo_EXPLAINMAGE_Info_15_01"); //Erzähl mir, wie ist es, ein Magier zu sein.
-	AI_Output (self, other,"KDF_402_Corristo_EXPLAINMAGE_Info_14_02"); //Wir sind die Magier des Feuers. Die Diener von Innos, dem obersten aller Götter.
-	AI_Output (self, other,"KDF_402_Corristo_EXPLAINMAGE_Info_14_03"); //Unsere Magie ist ein Geschenk der Götter. Wir sind auserwählt, zugleich Priester, Lehrer und Richter zu sein.
-	AI_Output (self, other,"KDF_402_Corristo_EXPLAINMAGE_Info_14_04"); //Ein Geschenk, das zugleich eine Bürde ist. Ein Amt, das unser Leben bestimmt.
+	AI_Output (other, self,"KDF_402_Corristo_EXPLAINMAGE_Info_15_01"); //ErzÃ¤hl mir, wie ist es, ein Magier zu sein.
+	AI_Output (self, other,"KDF_402_Corristo_EXPLAINMAGE_Info_14_02"); //Wir sind die Magier des Feuers. Die Diener von Innos, dem obersten aller GÃ¶tter.
+	AI_Output (self, other,"KDF_402_Corristo_EXPLAINMAGE_Info_14_03"); //Unsere Magie ist ein Geschenk der GÃ¶tter. Wir sind auserwÃ¤hlt, zugleich Priester, Lehrer und Richter zu sein.
+	AI_Output (self, other,"KDF_402_Corristo_EXPLAINMAGE_Info_14_04"); //Ein Geschenk, das zugleich eine BÃ¼rde ist. Ein Amt, das unser Leben bestimmt.
 };  
 //--------------------------------------------------------------------------
 // 							MAGIERAUFNAHME
@@ -92,7 +92,7 @@ instance KDF_402_Corristo_WANNBEKDF (C_INFO)
 	information		= KDF_402_Corristo_WANNBEKDF_Info;
 	important		= 0;
 	permanent		= 1;
-	description     = "Ich möchte in den Kreis der Magier aufgenommen werden";
+	description     = "Ich mÃ¶chte in den Kreis der Magier aufgenommen werden";
 };
 
 FUNC int  KDF_402_Corristo_WANNBEKDF_Condition()
@@ -105,7 +105,7 @@ FUNC int  KDF_402_Corristo_WANNBEKDF_Condition()
 };
 func void  KDF_402_Corristo_WANNBEKDF_Info()
 {
-	AI_Output (other, self,"KDF_402_Corristo_WANNBEKDF_Info_15_01"); //Ich möchte in den Kreis der Magier aufgenommen werden.
+	AI_Output (other, self,"KDF_402_Corristo_WANNBEKDF_Info_15_01"); //Ich mÃ¶chte in den Kreis der Magier aufgenommen werden.
 	AI_Output (self, other,"KDF_402_Corristo_WANNBEKDF_Info_14_02"); //Du willst also ein Magier des Feuers werden? Hm....
 
 	
@@ -118,14 +118,14 @@ func void  KDF_402_Corristo_WANNBEKDF_Info()
 	}
 	else
 	{
-		AI_Output (self, other,"KDF_402_Corristo_WANNBEKDF_Info_14_03"); //Schon viele wollten uns angehören und nur einen habe ich in all den Jahren zum Lehrling genommen. Alle anderen haben versagt.
-		AI_Output (self, other,"KDF_402_Corristo_WANNBEKDF_Info_14_05"); //Dein Geist ist reif für die Aufnahme. Wenn du Magier werden willst, dann muss ich dich zuvor prüfen. Sag mir Bescheid, wenn du dich dieser Prüfung unterziehen willst.
+		AI_Output (self, other,"KDF_402_Corristo_WANNBEKDF_Info_14_03"); //Schon viele wollten uns angehÃ¶ren und nur einen habe ich in all den Jahren zum Lehrling genommen. Alle anderen haben versagt.
+		AI_Output (self, other,"KDF_402_Corristo_WANNBEKDF_Info_14_05"); //Dein Geist ist reif fÃ¼r die Aufnahme. Wenn du Magier werden willst, dann muss ich dich zuvor prÃ¼fen. Sag mir Bescheid, wenn du dich dieser PrÃ¼fung unterziehen willst.
 		Corristo_KDFAufnahme = 1;
 		KDF_402_Corristo_WANNBEKDF.permanent = 0;
 		Info_ClearChoices (KDF_402_Corristo_WANNBEKDF);
 
 		Log_CreateTopic	(GE_BecomeFiremage,	LOG_NOTE);
-		B_LogEntry	(GE_BecomeFiremage,	"Corristo hat sich bereit erklärt, mich in den Kreis der Feuermagier aufzunehmen. Er will mich allerdings vorher auf die Probe stellen.");
+		B_LogEntry	(GE_BecomeFiremage,	"Corristo hat sich bereit erklÃ¤rt, mich in den Kreis der Feuermagier aufzunehmen. Er will mich allerdings vorher auf die Probe stellen.");
 	};
 };
 //--------------------------------------------------------------------------
@@ -166,7 +166,7 @@ FUNC VOID  KDF_402_Corristo_KDFTEST_JA()
 	Corristo_KDFAufnahme = 2;
 	Info_ClearChoices (KDF_402_Corristo_KDFTEST);
 	Info_Addchoice (KDF_402_Corristo_KDFTEST,"Adanos",KDF_402_Corristo_KDFTEST_ADANOS); 
-	Info_Addchoice (KDF_402_Corristo_KDFTEST,"Der Schläfer",KDF_402_Corristo_KDFTEST_SLEEPER);
+	Info_Addchoice (KDF_402_Corristo_KDFTEST,"Der SchlÃ¤fer",KDF_402_Corristo_KDFTEST_SLEEPER);
 	Info_Addchoice (KDF_402_Corristo_KDFTEST,"Innos",KDF_402_Corristo_KDFTEST_INNOS); 
 	Info_Addchoice (KDF_402_Corristo_KDFTEST,"Gomez",KDF_402_Corristo_KDFTEST_GOMEZ);
 };
@@ -175,8 +175,8 @@ FUNC VOID  KDF_402_Corristo_KDFTEST_NO()
 {
 	AI_Output (other, self,"KDF_402_Corristo_KDFTEST_NO_Info_15_01"); //Nein.
 	AI_Output (self, other,"KDF_402_Corristo_KDFTEST_NO_Info_14_02"); //Hmmm...
-	AI_Output (self, other,"KDF_402_Corristo_KDFTEST_NO_Info_14_03"); //Einen Mann der seine Taten verleugnet, können wir nicht gebrauchen.
-	AI_Output (self, other,"KDF_402_Corristo_KDFTEST_NO_Info_14_04"); //Mach dich als Kämpfer oder Buddler nützlich. Der Weg der Magie wird dir immer verschlossen bleiben.
+	AI_Output (self, other,"KDF_402_Corristo_KDFTEST_NO_Info_14_03"); //Einen Mann der seine Taten verleugnet, kÃ¶nnen wir nicht gebrauchen.
+	AI_Output (self, other,"KDF_402_Corristo_KDFTEST_NO_Info_14_04"); //Mach dich als KÃ¤mpfer oder Buddler nÃ¼tzlich. Der Weg der Magie wird dir immer verschlossen bleiben.
 	AI_StopProcessInfos	( self );
 	Npc_ExchangeRoutine (self,"START");
 };
@@ -190,9 +190,9 @@ FUNC VOID  KDF_402_Corristo_KDFTEST_ADANOS()
 };
 FUNC VOID  KDF_402_Corristo_KDFTEST_SLEEPER()
 {
-	AI_Output (other, self,"KDF_402_Corristo_KDFTEST_SLEEPER_Info_15_01"); //Der Schläfer.
+	AI_Output (other, self,"KDF_402_Corristo_KDFTEST_SLEEPER_Info_15_01"); //Der SchlÃ¤fer.
 	AI_Output (self, other,"KDF_402_Corristo_KDFTEST_SLEEPER_Info_14_02"); //Hmmm...
-	AI_Output (self, other,"KDF_402_Corristo_KDFTEST_SLEEPER_Info_14_03"); //Du warst wohl zu lange bei den Sumpfbrüdern. Vielleicht wärst du besser bei ihnen geblieben.
+	AI_Output (self, other,"KDF_402_Corristo_KDFTEST_SLEEPER_Info_14_03"); //Du warst wohl zu lange bei den SumpfbrÃ¼dern. Vielleicht wÃ¤rst du besser bei ihnen geblieben.
 	AI_StopProcessInfos	( self );
 	Npc_ExchangeRoutine (self,"START");
 };
@@ -200,19 +200,19 @@ FUNC VOID  KDF_402_Corristo_KDFTEST_INNOS()
 {
 	AI_Output (other, self,"KDF_402_Corristo_KDFTEST_INNOS_Info_15_01"); //Innos.
 	AI_Output (self, other,"KDF_402_Corristo_KDFTEST_INNOS_Info_14_02"); //Hmmm...
-	AI_Output (self, other,"KDF_402_Corristo_KDFTEST_INNOS_Info_14_03"); //Was ist die höchste Tugend?
+	AI_Output (self, other,"KDF_402_Corristo_KDFTEST_INNOS_Info_14_03"); //Was ist die hÃ¶chste Tugend?
 	Corristo_KDFAufnahme = 3;
 	Info_ClearChoices (KDF_402_Corristo_KDFTEST);
-	Info_Addchoice (KDF_402_Corristo_KDFTEST,"Die Ehre des Kämpfers",KDF_402_Corristo_KDFTEST_FIGHT); 
+	Info_Addchoice (KDF_402_Corristo_KDFTEST,"Die Ehre des KÃ¤mpfers",KDF_402_Corristo_KDFTEST_FIGHT); 
 	Info_Addchoice (KDF_402_Corristo_KDFTEST,"Die Demut vor der Magie",KDF_402_Corristo_KDFTEST_DEMUT);
 	Info_Addchoice (KDF_402_Corristo_KDFTEST,"Die Disziplin des Mannes",KDF_402_Corristo_KDFTEST_DISZIPLIN); 
-	Info_Addchoice (KDF_402_Corristo_KDFTEST,"Die Ehrfurcht vor den Göttern",KDF_402_Corristo_KDFTEST_EHRFURCHT);
+	Info_Addchoice (KDF_402_Corristo_KDFTEST,"Die Ehrfurcht vor den GÃ¶ttern",KDF_402_Corristo_KDFTEST_EHRFURCHT);
 };
 FUNC VOID  KDF_402_Corristo_KDFTEST_GOMEZ()
 {
 	AI_Output (other, self,"KDF_402_Corristo_KDFTEST_GOMEZ_Info_15_01"); //Gomez.
 	AI_Output (self, other,"KDF_402_Corristo_KDFTEST_GOMEZ_Info_14_02"); //Hmmm...
-	AI_Output (self, other,"KDF_402_Corristo_KDFTEST_GOMEZ_Info_14_03"); //Ich glaube, die Garde wäre genau das richtige für dich! Sprich mal mit Thorus!
+	AI_Output (self, other,"KDF_402_Corristo_KDFTEST_GOMEZ_Info_14_03"); //Ich glaube, die Garde wÃ¤re genau das richtige fÃ¼r dich! Sprich mal mit Thorus!
 	AI_StopProcessInfos	( self );
 	Npc_ExchangeRoutine (self,"START");
 };
@@ -221,9 +221,9 @@ FUNC VOID  KDF_402_Corristo_KDFTEST_GOMEZ()
 //--------------------------------------------------------------------------
 FUNC VOID  KDF_402_Corristo_KDFTEST_FIGHT()
 {
-	AI_Output (other, self,"KDF_402_Corristo_KDFTEST_FIGHT_Info_15_01"); //Die Ehre des Kämpfers.
+	AI_Output (other, self,"KDF_402_Corristo_KDFTEST_FIGHT_Info_15_01"); //Die Ehre des KÃ¤mpfers.
 	AI_Output (self, other,"KDF_402_Corristo_KDFTEST_FIGHT_Info_14_02"); //Hmmm...
-	AI_Output (self, other,"KDF_402_Corristo_KDFTEST_FIGHT_Info_14_03"); //Ich glaube, die Garde wäre genau das Richtige für dich! Sprich mal mit Thorus!
+	AI_Output (self, other,"KDF_402_Corristo_KDFTEST_FIGHT_Info_14_03"); //Ich glaube, die Garde wÃ¤re genau das Richtige fÃ¼r dich! Sprich mal mit Thorus!
 	AI_StopProcessInfos	( self );
 
 };
@@ -251,7 +251,7 @@ FUNC VOID  KDF_402_Corristo_KDFTEST_DISZIPLIN()
 };
 FUNC VOID  KDF_402_Corristo_KDFTEST_EHRFURCHT()
 {
-	AI_Output (other, self,"KDF_402_Corristo_KDFTEST_EHRFURCHT_Info_15_01"); //Die Ehrfurcht vor den Göttern.
+	AI_Output (other, self,"KDF_402_Corristo_KDFTEST_EHRFURCHT_Info_15_01"); //Die Ehrfurcht vor den GÃ¶ttern.
 	AI_Output (self, other,"KDF_402_Corristo_KDFTEST_EHRFURCHT_Info_14_02"); //Hmmm...
 	AI_Output (self, other,"KDF_402_Corristo_KDFTEST_EHRFURCHT_Info_14_03"); //Du hast gut und recht geantwortet. Ich werde dich die Kunst der Magie lehren.
 	AI_Output (self, other,"KDF_402_Corristo_KDFTEST_EHRFURCHT_Info_14_04"); //Folge mir nun zur Halle der Magie, wo du den alten Schwur leisten wirst. 
@@ -288,16 +288,16 @@ func void  KDF_402_Corristo_AUFNAHME_Info()
 	AI_SetWalkmode (hero,NPC_WALK); 
 	AI_GotoNpc (hero,self);
 	AI_Output  (self, other,"KDF_402_Corristo_AUFNAHME_Info_14_01"); //Wir sind heute zusammengekommen, um einen Diener des Feuers zu weihen.
-	AI_Output  (self, other,"KDF_402_Corristo_AUFNAHME_Info_14_02"); //Schwöre nun den Eid des Feuers.
+	AI_Output  (self, other,"KDF_402_Corristo_AUFNAHME_Info_14_02"); //SchwÃ¶re nun den Eid des Feuers.
 	Snd_Play   ("howling_01");
-	AI_Output  (self, other,"KDF_402_Corristo_AUFNAHME_Info_14_03"); //Ich schwöre bei den Mächten der Götter...
-	AI_Output  (other, self,"KDF_402_Corristo_AUFNAHME_Info_15_04"); //Ich schwöre bei den Mächten der Götter...
-	AI_Output  (self, other,"KDF_402_Corristo_AUFNAHME_Info_14_05"); //Ich schwöre bei der Macht des heiligen Feuers...
-	AI_Output  (other, self,"KDF_402_Corristo_AUFNAHME_Info_15_06"); //Ich schwöre bei der Macht des heiligen Feuers...
+	AI_Output  (self, other,"KDF_402_Corristo_AUFNAHME_Info_14_03"); //Ich schwÃ¶re bei den MÃ¤chten der GÃ¶tter...
+	AI_Output  (other, self,"KDF_402_Corristo_AUFNAHME_Info_15_04"); //Ich schwÃ¶re bei den MÃ¤chten der GÃ¶tter...
+	AI_Output  (self, other,"KDF_402_Corristo_AUFNAHME_Info_14_05"); //Ich schwÃ¶re bei der Macht des heiligen Feuers...
+	AI_Output  (other, self,"KDF_402_Corristo_AUFNAHME_Info_15_06"); //Ich schwÃ¶re bei der Macht des heiligen Feuers...
 	AI_Output  (self, other,"KDF_402_Corristo_AUFNAHME_Info_14_07"); //Dass mein Wissen und Handlen von nun an und auf ewig mit der Flamme verbunden sei...
 	AI_Output  (other, self,"KDF_402_Corristo_AUFNAHME_Info_15_08"); //Dass mein Wissen und Handlen von nun an und auf ewig mit der Flamme verbunden sei...
-	AI_Output  (self, other,"KDF_402_Corristo_AUFNAHME_Info_14_09"); //Bis mein Körper einkehrt in Beliars Reich und das Feuer des Lebens erlischt.
-	AI_Output  (other, self,"KDF_402_Corristo_AUFNAHME_Info_15_10"); //Bis mein Körper einkehrt in Beliars Reich und das Feuer des Lebens erlischt.
+	AI_Output  (self, other,"KDF_402_Corristo_AUFNAHME_Info_14_09"); //Bis mein KÃ¶rper einkehrt in Beliars Reich und das Feuer des Lebens erlischt.
+	AI_Output  (other, self,"KDF_402_Corristo_AUFNAHME_Info_15_10"); //Bis mein KÃ¶rper einkehrt in Beliars Reich und das Feuer des Lebens erlischt.
 	AI_StopProcessInfos	( self );
 };
 instance KDF_402_Corristo_ROBE (C_INFO)
@@ -338,7 +338,7 @@ func void  KDF_402_Corristo_ROBE_Info()
 
 	B_LogEntry		(GE_BecomeFiremage,	"Ich habe die Probe bestanden und den Schwur des Feuers abgelegt. Fortan trage ich die rote Robe des Feuerkreises!");
 	Log_CreateTopic	(GE_TeacherOC,LOG_NOTE);
-	B_LogEntry		(GE_TeacherOC,"Corristo kann mich die magischen KREISE lehren und meine MANA steigern. Er hält sich den ganzen Tag im Haus der Feuermagier auf.");	
+	B_LogEntry		(GE_TeacherOC,"Corristo kann mich die magischen KREISE lehren und meine MANA steigern. Er hÃ¤lt sich den ganzen Tag im Haus der Feuermagier auf.");	
 };
 //--------------------------------------------------------------------------
 // 							MANA KAUFEN
@@ -352,7 +352,7 @@ instance  KDF_402_Corristo_MANA (C_INFO)
 	information		= KDF_402_Corristo_MANA_Info;
 	important		= 0;
 	permanent		= 1;
-	description		= "Ich benötige mehr magische Kraft"; 
+	description		= "Ich benÃ¶tige mehr magische Kraft"; 
 };
 
 FUNC int  KDF_402_Corristo_MANA_Condition()
@@ -365,7 +365,7 @@ FUNC int  KDF_402_Corristo_MANA_Condition()
 };
 FUNC void  KDF_402_Corristo_MANA_Info()
 {
-	AI_Output (other, self,"KDF_402_Corristo_MANA_Info_15_01"); //Ich benötige mehr magische Kraft.
+	AI_Output (other, self,"KDF_402_Corristo_MANA_Info_15_01"); //Ich benÃ¶tige mehr magische Kraft.
 	AI_Output (self, other,"KDF_402_Corristo_MANA_Info_14_02"); //Ich kann dir helfen, deine Kraft zu steigern. Wie du sie nutzt, liegt nur an dir.
 	
 	Info_ClearChoices	(KDF_402_Corristo_MANA);
@@ -398,7 +398,7 @@ func void KDF_402_Corristo_MANA_MAN_5()
 
 };
 //--------------------------------------------------------------------------
-// 							ERLÄUTERUNG DER KREISE
+// 							ERLÃ„UTERUNG DER KREISE
 //--------------------------------------------------------------------------
 // ***************************** INFOS ****************************************//
 
@@ -409,7 +409,7 @@ instance  KDF_402_Corristo_EXPLAINCIRCLES (C_INFO)
 	information		= KDF_402_Corristo_EXPLAINCIRCLES_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Erkläre mir das Wesen der magischen Kreise."; 
+	description		= "ErklÃ¤re mir das Wesen der magischen Kreise."; 
 };
 
 FUNC int  KDF_402_Corristo_EXPLAINCIRCLES_Condition()
@@ -421,12 +421,12 @@ FUNC int  KDF_402_Corristo_EXPLAINCIRCLES_Condition()
 };
 func void  KDF_402_Corristo_EXPLAINCIRCLES_Info()
 {
-	AI_Output (other, self,"KDF_402_Corristo_EXPLAINCIRCLES_Info_15_01"); //Erkläre mir das Wesen der magischen Kreise.
-	AI_Output (self, other,"KDF_402_Corristo_EXPLAINCIRCLES_Info_14_02"); //Natürlich. Die Kreise symbolisieren deinen Anteil an der magischen Macht.  
-	AI_Output (self, other,"KDF_402_Corristo_EXPLAINCIRCLES_Info_14_03"); //Sie stehen für Wissen, Begabung und für das Erlernen neuer Zaubersprüche. 
-	AI_Output (self, other,"KDF_402_Corristo_EXPLAINCIRCLES_Info_14_04"); //Du wirst jeden Kreis durchlaufen, bis du in den nächsten aufgenommen werden kannst.
-	AI_Output (self, other,"KDF_402_Corristo_EXPLAINCIRCLES_Info_14_05"); //Es erfordert viele Lernstunden und es bedarf hoher Erfahrung, willst du die höheren Kreise erreichen. 
-	AI_Output (self, other,"KDF_402_Corristo_EXPLAINCIRCLES_Info_14_06"); //Doch die Mühe, sie zu erlernen, wird jedes Mal mit neuen machtvollen Zaubern belohnt. Die Kreise der Magie sind aber noch mehr als das.
+	AI_Output (other, self,"KDF_402_Corristo_EXPLAINCIRCLES_Info_15_01"); //ErklÃ¤re mir das Wesen der magischen Kreise.
+	AI_Output (self, other,"KDF_402_Corristo_EXPLAINCIRCLES_Info_14_02"); //NatÃ¼rlich. Die Kreise symbolisieren deinen Anteil an der magischen Macht.  
+	AI_Output (self, other,"KDF_402_Corristo_EXPLAINCIRCLES_Info_14_03"); //Sie stehen fÃ¼r Wissen, Begabung und fÃ¼r das Erlernen neuer ZaubersprÃ¼che. 
+	AI_Output (self, other,"KDF_402_Corristo_EXPLAINCIRCLES_Info_14_04"); //Du wirst jeden Kreis durchlaufen, bis du in den nÃ¤chsten aufgenommen werden kannst.
+	AI_Output (self, other,"KDF_402_Corristo_EXPLAINCIRCLES_Info_14_05"); //Es erfordert viele Lernstunden und es bedarf hoher Erfahrung, willst du die hÃ¶heren Kreise erreichen. 
+	AI_Output (self, other,"KDF_402_Corristo_EXPLAINCIRCLES_Info_14_06"); //Doch die MÃ¼he, sie zu erlernen, wird jedes Mal mit neuen machtvollen Zaubern belohnt. Die Kreise der Magie sind aber noch mehr als das.
 	AI_Output (self, other,"KDF_402_Corristo_EXPLAINCIRCLES_Info_14_07"); //Sie sind ein Teil deines Lebens. Sie werden dich immer begleiten. Mache sie zu einem Teil von dir.
 	AI_Output (self, other,"KDF_402_Corristo_EXPLAINCIRCLES_Info_14_08"); //Ihre Macht zu verstehen, bedeutet deine eigene Macht zu erkennen.
 };  
@@ -462,10 +462,10 @@ FUNC void  KDF_402_Corristo_KREIS1_Info()
 		AI_Output (self, other,"KDF_402_Corristo_KREIS1_Info_14_02"); //Den ersten der magischen Kreise zu betreten, bedeutet die Anwendung magischer Runen erlernen.
 		AI_Output (self, other,"KDF_402_Corristo_KREIS1_Info_14_03"); //Jede Rune birgt in sich die Struktur eines speziellen Zaubers.
 		AI_Output (self, other,"KDF_402_Corristo_KREIS1_Info_14_04"); //Durch den Einsatz deiner eigenen magischen Energie, bist du in der Lage, den Zauber der Rune zu wirken.
-		AI_Output (self, other,"KDF_402_Corristo_KREIS1_Info_14_05"); //Doch anders als Spruchrollen, die auch eine Zauberformel sind, sorgt die magische Kraft, die der Rune innewohnt dafür, dass die Struktur des Zaubers erhalten bleibt. 
-		AI_Output (self, other,"KDF_402_Corristo_KREIS1_Info_14_06"); //Jede Rune ist eine Quelle magischer Kraft, auf die du immer wieder zurückgreifen kannst.  
+		AI_Output (self, other,"KDF_402_Corristo_KREIS1_Info_14_05"); //Doch anders als Spruchrollen, die auch eine Zauberformel sind, sorgt die magische Kraft, die der Rune innewohnt dafÃ¼r, dass die Struktur des Zaubers erhalten bleibt. 
+		AI_Output (self, other,"KDF_402_Corristo_KREIS1_Info_14_06"); //Jede Rune ist eine Quelle magischer Kraft, auf die du immer wieder zurÃ¼ckgreifen kannst.  
 		AI_Output (self, other,"KDF_402_Corristo_KREIS1_Info_14_07"); //Deine eigene magische Kraft verbraucht sich beim Benutzen der Rune, wie bei einer Spruchrolle.
-		AI_Output (self, other,"KDF_402_Corristo_KREIS1_Info_14_08"); //Mit jedem Kreis, den du lernst, lernst du auch die Möglichkeit weitere Runen zu benutzen.
+		AI_Output (self, other,"KDF_402_Corristo_KREIS1_Info_14_08"); //Mit jedem Kreis, den du lernst, lernst du auch die MÃ¶glichkeit weitere Runen zu benutzen.
 		AI_Output (self, other,"KDF_402_Corristo_KREIS1_Info_14_09"); //Nutze die Kraft der Runen, um dich selber zu erkennen.
 		KDF_402_Corristo_KREIS1.permanent	= 0;
 	};
@@ -495,14 +495,14 @@ FUNC int  KDF_402_Corristo_KREIS2_Condition()
 };
 FUNC void  KDF_402_Corristo_KREIS2_Info()
 {
-	AI_Output (other, self,"KDF_402_Corristo_KREIS2_Info_15_01"); //Ich möchte den zweiten Kreis erlernen.
+	AI_Output (other, self,"KDF_402_Corristo_KREIS2_Info_15_01"); //Ich mÃ¶chte den zweiten Kreis erlernen.
 	
 	if (B_GiveSkill(other,NPC_TALENT_MAGE , 2, LPCOST_TALENT_MAGE_2))
 	{
-		AI_Output (self, other,"KDF_402_Corristo_KREIS2_Info_14_02"); //Du hast das Verständnis der Runen gelernt. Nun ist es an der Zeit, dieses Verständnis zu vertiefen.
-		AI_Output (self, other,"KDF_402_Corristo_KREIS2_Info_14_03"); //Mit dem zweiten Kreis lernst du die Grundsätze stärkerer Kampfzauber und vor allem das Geheimnis der Heilung. 
-		AI_Output (self, other,"KDF_402_Corristo_KREIS2_Info_14_04"); //Doch du musst noch viel lernen, willst du die tatsächlichen Geheimnisse der Magie ergründen. 
-		AI_Output (self, other,"KDF_402_Corristo_KREIS2_Info_14_05"); //Du weißt, dass du jede Rune solange einsetzen kannst, bis deine eigene Kraft verbraucht ist.
+		AI_Output (self, other,"KDF_402_Corristo_KREIS2_Info_14_02"); //Du hast das VerstÃ¤ndnis der Runen gelernt. Nun ist es an der Zeit, dieses VerstÃ¤ndnis zu vertiefen.
+		AI_Output (self, other,"KDF_402_Corristo_KREIS2_Info_14_03"); //Mit dem zweiten Kreis lernst du die GrundsÃ¤tze stÃ¤rkerer Kampfzauber und vor allem das Geheimnis der Heilung. 
+		AI_Output (self, other,"KDF_402_Corristo_KREIS2_Info_14_04"); //Doch du musst noch viel lernen, willst du die tatsÃ¤chlichen Geheimnisse der Magie ergrÃ¼nden. 
+		AI_Output (self, other,"KDF_402_Corristo_KREIS2_Info_14_05"); //Du weiÃŸt, dass du jede Rune solange einsetzen kannst, bis deine eigene Kraft verbraucht ist.
 		AI_Output (self, other,"KDF_402_Corristo_KREIS2_Info_14_06"); //Aber frage dich, ob es sinnvoll ist. Du hast Macht verliehen bekommen, mit der es dir ein Leichtes ist, Tod und Verderben zu bringen.   
 		AI_Output (self, other,"KDF_402_Corristo_KREIS2_Info_14_07"); //Doch der wahrhafte Magier zaubert nur dann, wenn es angebracht ist.
 		AI_Output (self, other,"KDF_402_Corristo_KREIS2_Info_14_08"); //Erkenne die Situation, dann wirst du die Macht der Runen erkennen.   
@@ -538,11 +538,11 @@ FUNC void  KDF_402_Corristo_KREIS3_Info()
 	AI_Output (other, self,"KDF_402_Corristo_KREIS3_Info_15_01"); //Kannst du mich den dritten Kreis lehren?
 	if (B_GiveSkill(other,NPC_TALENT_MAGE , 3, LPCOST_TALENT_MAGE_3))
 	{
-		AI_Output (self, other,"KDF_402_Corristo_KREIS3_Info_14_02"); //Der dritte Kreis der Magie ist einer der wichtigsten Schritte im Leben eines Magiers. Nicht länger bist du ein Suchender. 
-		AI_Output (self, other,"KDF_402_Corristo_KREIS3_Info_14_03"); //Du bist bereits ein Stück des magischen Weges gegangen. Du hast gelernt, die Runen zu nutzen. 
-		AI_Output (self, other,"KDF_402_Corristo_KREIS3_Info_14_04"); //Dieses Wissen ist das Fundament für deinen weiteren Weg. Nutze die Runen mit Bedacht. 
-		AI_Output (self, other,"KDF_402_Corristo_KREIS3_Info_14_05"); //Du kannst eine Rune nutzen oder nicht. Aber entscheide dich für eine der Möglichkeiten.
-		AI_Output (self, other,"KDF_402_Corristo_KREIS3_Info_14_06"); //Zögere nicht, deine Macht einzusetzen, wenn du dich einmal entscheiden hast.
+		AI_Output (self, other,"KDF_402_Corristo_KREIS3_Info_14_02"); //Der dritte Kreis der Magie ist einer der wichtigsten Schritte im Leben eines Magiers. Nicht lÃ¤nger bist du ein Suchender. 
+		AI_Output (self, other,"KDF_402_Corristo_KREIS3_Info_14_03"); //Du bist bereits ein StÃ¼ck des magischen Weges gegangen. Du hast gelernt, die Runen zu nutzen. 
+		AI_Output (self, other,"KDF_402_Corristo_KREIS3_Info_14_04"); //Dieses Wissen ist das Fundament fÃ¼r deinen weiteren Weg. Nutze die Runen mit Bedacht. 
+		AI_Output (self, other,"KDF_402_Corristo_KREIS3_Info_14_05"); //Du kannst eine Rune nutzen oder nicht. Aber entscheide dich fÃ¼r eine der MÃ¶glichkeiten.
+		AI_Output (self, other,"KDF_402_Corristo_KREIS3_Info_14_06"); //ZÃ¶gere nicht, deine Macht einzusetzen, wenn du dich einmal entscheiden hast.
 		AI_Output (self, other,"KDF_402_Corristo_KREIS3_Info_14_07"); //Erkenne deinen Weg, dann wirst du die Macht der Entscheidung erkennen.
 		KDF_402_Corristo_KREIS3.permanent = 0;
 	};
@@ -572,13 +572,13 @@ FUNC int  KDF_402_Corristo_KREIS4_Condition()
 };
 FUNC void  KDF_402_Corristo_KREIS4_Info()
 {
-	AI_Output (other, self,"KDF_402_Corristo_KREIS4_Info_15_01"); //Ich bin bereit für den vierten der Kreise.
+	AI_Output (other, self,"KDF_402_Corristo_KREIS4_Info_15_01"); //Ich bin bereit fÃ¼r den vierten der Kreise.
 	if (B_GiveSkill(other,NPC_TALENT_MAGE , 4, LPCOST_TALENT_MAGE_4))
 	{
 		AI_Output (self, other,"KDF_402_Corristo_KREIS4_Info_14_02"); //Du hast die ersten drei Kreise durchschritten. Nun ist es an der Zeit, dass du die Geheimnisse der Magie kennenlernst.
 		AI_Output (self, other,"KDF_402_Corristo_KREIS4_Info_14_03"); //Die Magie der Runen ruht in ihrem Stein. Es sind magische Steine, gewonnen aus magischem Erz. 
 		AI_Output (self, other,"KDF_402_Corristo_KREIS4_Info_14_04"); //Das gleiche Erz, was hier abgebaut wird. Dieses Erz wird in den Tempeln mit den Formeln der Magie versehen. Dort werden sie zu den Instrumenten unserer Macht geformt.
-		AI_Output (self, other,"KDF_402_Corristo_KREIS4_Info_14_05"); //Mit allen Runen, die du nun beherrschen kannst, steht dir das gesammelte Wissen der Tempel zur Verfügung.
+		AI_Output (self, other,"KDF_402_Corristo_KREIS4_Info_14_05"); //Mit allen Runen, die du nun beherrschen kannst, steht dir das gesammelte Wissen der Tempel zur VerfÃ¼gung.
 		AI_Output (self, other,"KDF_402_Corristo_KREIS4_Info_14_06"); //Du hast jetzt alles gelernt, was ich dir beibringen kann. 
 		AI_Output (self, other,"KDF_402_Corristo_KREIS4_Info_14_07"); //Erkenne die Magie, dann wirst du das Geheimnis von Macht erkennen.
 		KDF_402_Corristo_KREIS4.permanent = 0;
@@ -608,7 +608,7 @@ FUNC int  KDF_402_Corristo_HEAVYARMOR_Condition()
 };
 FUNC void  KDF_402_Corristo_HEAVYARMOR_Info()
 {
-	AI_Output (other, self,"KDF_402_Corristo_HEAVYARMOR_Info_15_01"); //Meister, ich möchte die hohe Robe des Feuers tragen.
+	AI_Output (other, self,"KDF_402_Corristo_HEAVYARMOR_Info_15_01"); //Meister, ich mÃ¶chte die hohe Robe des Feuers tragen.
 	if (Kapitel < 3) 
 	{
 		AI_Output (self, other,"KDF_402_Corristo_WANNBEKDF_Info_14_04"); //Du bist noch nicht so weit. Komm erst wieder zu mir, wenn du mehr gelernt hast.
@@ -616,11 +616,11 @@ FUNC void  KDF_402_Corristo_HEAVYARMOR_Info()
 	}
 	else if (Npc_HasItems (hero,ItMinugget)< VALUE_KDF_ARMOR_H) 
 	{ 
-		AI_Output			(self, other,"KDF_402_Corristo_HEAVYARMOR_Info_14_03"); //Du besitzt nicht genügend Erz.
+		AI_Output			(self, other,"KDF_402_Corristo_HEAVYARMOR_Info_14_03"); //Du besitzt nicht genÃ¼gend Erz.
 	}	
 	else
 	{	
-		AI_Output			(self, other,"KDF_402_Corristo_HEAVYARMOR_Info_14_04"); //Die Zeit ist gekommen. Du bist würdig, die hohe Robe des Feuers zu tragen.
+		AI_Output			(self, other,"KDF_402_Corristo_HEAVYARMOR_Info_14_04"); //Die Zeit ist gekommen. Du bist wÃ¼rdig, die hohe Robe des Feuers zu tragen.
 		
 		CreateInvItem		(hero,KDF_ARMOR_H);
 		

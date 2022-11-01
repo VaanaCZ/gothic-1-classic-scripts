@@ -33,7 +33,7 @@ INSTANCE DIA_Ricelord_Hello (C_INFO)
 	condition	= DIA_Ricelord_Hello_Condition;
 	information	= DIA_Ricelord_Hello_Info;
 	permanent	= 0;
-	description	= "Du kümmerst dich um die Reisfelder, richtig?";
+	description	= "Du kÃ¼mmerst dich um die Reisfelder, richtig?";
 };                       
 
 FUNC INT DIA_Ricelord_Hello_Condition()
@@ -43,7 +43,7 @@ FUNC INT DIA_Ricelord_Hello_Condition()
 
 FUNC VOID DIA_Ricelord_Hello_Info()
 {	
-	AI_Output (other, self,"DIA_Ricelord_Hello_15_00"); //Du kümmerst dich um die Reisfelder, richtig?
+	AI_Output (other, self,"DIA_Ricelord_Hello_15_00"); //Du kÃ¼mmerst dich um die Reisfelder, richtig?
 	AI_Output (self, other,"DIA_Ricelord_Hello_12_01"); //Warum? Suchst du Arbeit?
 };
 
@@ -58,7 +58,7 @@ INSTANCE DIA_Ricelord_Arbeit (C_INFO)
 	condition	= DIA_Ricelord_Arbeit_Condition;
 	information	= DIA_Ricelord_Arbeit_Info;
 	permanent	= 0;
-	description	= "Hast du Arbeit für mich?";
+	description	= "Hast du Arbeit fÃ¼r mich?";
 };                       
 
 FUNC INT DIA_Ricelord_Arbeit_Condition()
@@ -73,7 +73,7 @@ FUNC INT DIA_Ricelord_Arbeit_Condition()
 
 FUNC VOID DIA_Ricelord_Arbeit_Info()
 {	
-	AI_Output (other, self,"DIA_Ricelord_Arbeit_15_00"); //Hast du Arbeit für mich?
+	AI_Output (other, self,"DIA_Ricelord_Arbeit_15_00"); //Hast du Arbeit fÃ¼r mich?
 	AI_Output (self, other,"DIA_Ricelord_Arbeit_12_01"); //Geh zu Lefty. Er ist meistens hier vorne rechts neben der Scheune.
 };
 
@@ -88,7 +88,7 @@ INSTANCE DIA_Ricelord_TRADE (C_INFO)
 	condition	= DIA_Ricelord_TRADE_Condition;
 	information	= DIA_Ricelord_TRADE_Info;
 	permanent	= 1;
-	description	= "Wir könnten handeln...";
+	description	= "Wir kÃ¶nnten handeln...";
 	trade 		= 1;
 };                       
 
@@ -102,7 +102,7 @@ FUNC INT DIA_Ricelord_TRADE_Condition()
 
 FUNC VOID DIA_Ricelord_TRADE_Info()
 {	
-	AI_Output (other, self,"DIA_Ricelord_TRADE_15_00"); //Wir könnten handeln ...
+	AI_Output (other, self,"DIA_Ricelord_TRADE_15_00"); //Wir kÃ¶nnten handeln ...
 	AI_Output (self, other,"DIA_Ricelord_TRADE_12_01"); //Was hast du denn zu bieten?
 };
 	
@@ -166,7 +166,7 @@ FUNC VOID DIA_Ricelord_GetWater_Info()
 	if(Lefty_WorkDay == Wld_GetDay())
 	{
 		AI_Output			(self, other,"DIA_Ricelord_GetWater_12_01"); //Gut. Hier sind ein Dutzend Flaschen Wasser.
-		AI_Output			(self, other,"DIA_Ricelord_GetWater_12_02"); //Es gibt etwa doppelt so viele Bauern, also verteil sie gleichmäßig.
+		AI_Output			(self, other,"DIA_Ricelord_GetWater_12_02"); //Es gibt etwa doppelt so viele Bauern, also verteil sie gleichmÃ¤ÃŸig.
 
 		CreateInvItems		(self, ItFo_Potion_Water_01, 12);
 		B_GiveInvItems		(self, other, ItFo_Potion_Water_01, 12);

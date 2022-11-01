@@ -46,9 +46,9 @@ FUNC void  VLK_583_Glen_INFO_Info()
 {
 	AI_Output (other, self,"VLK_583_Glen_INFO_Info_15_01"); //Worauf sollte ich in der Mine achten?
 	AI_Output (self, other,"VLK_583_Glen_INFO_Info_02_02"); //Auf die Minecrawler.
-	AI_Output (self, other,"VLK_583_Glen_INFO_Info_02_03"); //Je weiter du nach unten kommst, desto näher bist den Viechern. Die Mistdinger kommen direkt aus Beliars Reich!
-	AI_Output (self, other,"VLK_583_Glen_INFO_Info_02_04"); //Man kann sie schaben und kratzen hören. Sie lauern in der Dunkelheit und warten nur auf dich. Ich habe gesehen, wie sie getötet haben.
-	AI_Output (self, other,"VLK_583_Glen_INFO_Info_02_05"); //Gnadenlos und schnell. Wenn du am Leben hängst, solltest du dich nicht hier unten aufhalten. Geh lieber, bevor dir noch was passiert.
+	AI_Output (self, other,"VLK_583_Glen_INFO_Info_02_03"); //Je weiter du nach unten kommst, desto nÃ¤her bist den Viechern. Die Mistdinger kommen direkt aus Beliars Reich!
+	AI_Output (self, other,"VLK_583_Glen_INFO_Info_02_04"); //Man kann sie schaben und kratzen hÃ¶ren. Sie lauern in der Dunkelheit und warten nur auf dich. Ich habe gesehen, wie sie getÃ¶tet haben.
+	AI_Output (self, other,"VLK_583_Glen_INFO_Info_02_05"); //Gnadenlos und schnell. Wenn du am Leben hÃ¤ngst, solltest du dich nicht hier unten aufhalten. Geh lieber, bevor dir noch was passiert.
 };  
 // ***************** Infos *****************************
 
@@ -72,8 +72,8 @@ FUNC int  VLK_583_Glen_LOCKPICK_Condition()
 
 FUNC VOID  VLK_583_Glen_LOCKPICK_Info()
 {
-	AI_Output (other, self,"VLK_583_Glen_LOCKPICK_15_01"); //Ich hab' gehört, bei dir kann ich Dietriche kaufen.
-	AI_Output (self, other,"VLK_583_Glen_LOCKPICK_02_02"); //Nun, wenn du schlau genug warst, das herauszufinden, dann kannst du welche haben. 10 Erz das Stück.
+	AI_Output (other, self,"VLK_583_Glen_LOCKPICK_15_01"); //Ich hab' gehÃ¶rt, bei dir kann ich Dietriche kaufen.
+	AI_Output (self, other,"VLK_583_Glen_LOCKPICK_02_02"); //Nun, wenn du schlau genug warst, das herauszufinden, dann kannst du welche haben. 10 Erz das StÃ¼ck.
 	
 	
 };

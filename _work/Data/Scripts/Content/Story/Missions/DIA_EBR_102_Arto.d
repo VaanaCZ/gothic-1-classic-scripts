@@ -72,7 +72,7 @@ FUNC INT DIA_ARTO_What_Condition()
 FUNC VOID DIA_ARTO_What_Info()
 {	
 	AI_Output (other, self,"DIA_ARTO_What_15_00"); //Was machst du so?
-	AI_Output (self, other,"DIA_ARTO_What_13_01"); //Ich bin Gomez' Leibw‰chter.
+	AI_Output (self, other,"DIA_ARTO_What_13_01"); //Ich bin Gomez' Leibw√§chter.
 };
 
 // ************************************************************

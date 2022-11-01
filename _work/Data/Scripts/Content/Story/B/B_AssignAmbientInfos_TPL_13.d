@@ -53,9 +53,9 @@ FUNC INT Info_Tpl_13_EinerVonEuchWerden_Condition()
 FUNC VOID Info_Tpl_13_EinerVonEuchWerden_Info()
 {
 	AI_Output(other,self,"Info_Tpl_13_EinerVonEuchWerden_15_00"); //Ich will ein Templer werden - so wie du.
-	AI_Output(self,other,"Info_Tpl_13_EinerVonEuchWerden_13_01"); //Hast du eine Ahnung wie viele Entbehrungen ich auf mich nehmen musste, um den Auserw‰hlten des Schl‰fers als Tempelw‰chter dienen zu d¸rfen?
-	AI_Output(self,other,"Info_Tpl_13_EinerVonEuchWerden_13_02"); //Glaub bloﬂ nicht, du kannst hier einfach reinspazieren und bekommst so mir nichts dir nichts die hˆchsten Auszeichnungen.
-	AI_Output(self,other,"Info_Tpl_13_EinerVonEuchWerden_13_03"); //Bevor du ¸berhaupt dar¸ber nachdenkst, solltest du dich mit der Lehre des Schl‰fers vertraut machen.
+	AI_Output(self,other,"Info_Tpl_13_EinerVonEuchWerden_13_01"); //Hast du eine Ahnung wie viele Entbehrungen ich auf mich nehmen musste, um den Auserw√§hlten des Schl√§fers als Tempelw√§chter dienen zu d√ºrfen?
+	AI_Output(self,other,"Info_Tpl_13_EinerVonEuchWerden_13_02"); //Glaub blo√ü nicht, du kannst hier einfach reinspazieren und bekommst so mir nichts dir nichts die h√∂chsten Auszeichnungen.
+	AI_Output(self,other,"Info_Tpl_13_EinerVonEuchWerden_13_03"); //Bevor du √ºberhaupt dar√ºber nachdenkst, solltest du dich mit der Lehre des Schl√§fers vertraut machen.
 	AI_Output(self,other,"Info_Tpl_13_EinerVonEuchWerden_13_04"); //Das wird einige Zeit in Anspruch nehmen und es wird dir auch sicher die Flausen aus dem Kopf treiben.
 };
 
@@ -80,7 +80,7 @@ FUNC INT Info_Tpl_13_WichtigePersonen_Condition()
 FUNC VOID Info_Tpl_13_WichtigePersonen_Info()
 {
 	AI_Output(other,self,"Info_Tpl_13_WichtigePersonen_15_00"); //Wer hat hier das Sagen?
-	AI_Output(self,other,"Info_Tpl_13_WichtigePersonen_13_01"); //Unsere Gurus sind die Auserw‰hlten des Schl‰fers! Der Schl‰fer bestimmt unser Schicksal und die Gurus verk¸nden es uns.
+	AI_Output(self,other,"Info_Tpl_13_WichtigePersonen_13_01"); //Unsere Gurus sind die Auserw√§hlten des Schl√§fers! Der Schl√§fer bestimmt unser Schicksal und die Gurus verk√ºnden es uns.
 };
 
 // *************************************************************************
@@ -93,7 +93,7 @@ INSTANCE Info_Tpl_13_DasLager(C_INFO)
 	condition	= Info_Tpl_13_DasLager_Condition;
 	information	= Info_Tpl_13_DasLager_Info;
 	permanent	= 1;
-	description = "Ich w¸rde gerne mal in den Tempel des Schl‰fers gehen...";
+	description = "Ich w√ºrde gerne mal in den Tempel des Schl√§fers gehen...";
 };                       
 
 FUNC INT Info_Tpl_13_DasLager_Condition()
@@ -105,8 +105,8 @@ FUNC INT Info_Tpl_13_DasLager_Condition()
 };
 FUNC VOID Info_Tpl_13_DasLager_Info()
 {
-	AI_Output(other,self,"Info_Tpl_13_DasLager_15_00"); //Ich w¸rde gerne mal in den Tempel des Schl‰fers gehen ...
-	AI_Output(self,other,"Info_Tpl_13_DasLager_13_01"); //Undenkbar! Ein Ungl‰ubiger im Tempel! Bevor du dich nicht in den Dienst des Schl‰fers gestellt hast, wird dir der Zutritt zum Tempel verwehrt bleiben!
+	AI_Output(other,self,"Info_Tpl_13_DasLager_15_00"); //Ich w√ºrde gerne mal in den Tempel des Schl√§fers gehen ...
+	AI_Output(self,other,"Info_Tpl_13_DasLager_13_01"); //Undenkbar! Ein Ungl√§ubiger im Tempel! Bevor du dich nicht in den Dienst des Schl√§fers gestellt hast, wird dir der Zutritt zum Tempel verwehrt bleiben!
 };
 
 // *************************************************************************
@@ -119,7 +119,7 @@ INSTANCE Info_Tpl_13_DieLage(C_INFO) // E1
 	condition	= Info_Tpl_13_DieLage_Condition;
 	information	= Info_Tpl_13_DieLage_Info;
 	permanent	= 1;
-	description = "Wie l‰uft's?";
+	description = "Wie l√§uft's?";
 };                       
 
 FUNC INT Info_Tpl_13_DieLage_Condition()
@@ -131,10 +131,10 @@ FUNC INT Info_Tpl_13_DieLage_Condition()
 };
 FUNC VOID Info_Tpl_13_DieLage_Info()
 {
-	AI_Output(other,self,"Info_Tpl_13_DieLage_15_00"); //Wie l‰uft's?
-	AI_Output(self,other,"Info_Tpl_13_DieLage_13_01"); //Seit ich ein auserw‰hlter Besch¸tzer des Glaubens bin, f¸hle ich mich besser als je zuvor in meinem Leben.
-	AI_Output(other,self,"Info_Tpl_13_DieLage_15_02"); //Hˆrt sich wichtig an ...
-	AI_Output(self,other,"Info_Tpl_13_DieLage_13_03"); //Du bist ein Ungl‰ubiger. Du verstehst davon nichts.
+	AI_Output(other,self,"Info_Tpl_13_DieLage_15_00"); //Wie l√§uft's?
+	AI_Output(self,other,"Info_Tpl_13_DieLage_13_01"); //Seit ich ein auserw√§hlter Besch√ºtzer des Glaubens bin, f√ºhle ich mich besser als je zuvor in meinem Leben.
+	AI_Output(other,self,"Info_Tpl_13_DieLage_15_02"); //H√∂rt sich wichtig an ...
+	AI_Output(self,other,"Info_Tpl_13_DieLage_13_03"); //Du bist ein Ungl√§ubiger. Du verstehst davon nichts.
 };
 	
 // *************************************************************************

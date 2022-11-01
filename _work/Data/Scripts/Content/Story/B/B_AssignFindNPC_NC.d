@@ -71,26 +71,26 @@ FUNC VOID Info_FindNPC_NC_Gorn()
 		{
 			if (self.voice == 6)
 			{
-				AI_Output(self,other,"Info_FindNPC_NC_Gorn_06_01"); //Wenn du in die Wohnhöhle kommst, halte dich rechts. Direkt vorne sind ein paar Hütten. In einer davon wohnt er.
+				AI_Output(self,other,"Info_FindNPC_NC_Gorn_06_01"); //Wenn du in die WohnhÃ¶hle kommst, halte dich rechts. Direkt vorne sind ein paar HÃ¼tten. In einer davon wohnt er.
 			}
 			else if (self.voice == 7)
 			{
-				AI_Output(self,other,"Info_FindNPC_NC_Gorn_07_01"); //Wenn du in die Wohnhöhle kommst, halte dich rechts. Direkt vorne sind ein paar Hütten. In einer davon wohnt er.
+				AI_Output(self,other,"Info_FindNPC_NC_Gorn_07_01"); //Wenn du in die WohnhÃ¶hle kommst, halte dich rechts. Direkt vorne sind ein paar HÃ¼tten. In einer davon wohnt er.
 			}
 			else if (self.voice == 13)
 			{
-				AI_Output(self,other,"Info_FindNPC_NC_Gorn_13_01"); //Wenn du in die Wohnhöhle kommst, halte dich rechts. Direkt vorne sind ein paar Hütten. In einer davon wohnt er.
+				AI_Output(self,other,"Info_FindNPC_NC_Gorn_13_01"); //Wenn du in die WohnhÃ¶hle kommst, halte dich rechts. Direkt vorne sind ein paar HÃ¼tten. In einer davon wohnt er.
 			};
 		}
 		else if (self.guild == GIL_SLD) 
 		{
 			if (self.voice == 8)
 			{
-				AI_Output(self,other,"Info_FindNPC_NC_Gorn_08_01"); //Wenn du in die Wohnhöhle kommst, halte dich rechts. Direkt vorne sind ein paar Hütten. In einer davon wohnt er.
+				AI_Output(self,other,"Info_FindNPC_NC_Gorn_08_01"); //Wenn du in die WohnhÃ¶hle kommst, halte dich rechts. Direkt vorne sind ein paar HÃ¼tten. In einer davon wohnt er.
 			}
 			else if (self.voice == 11)
 			{
-				AI_Output(self,other,"Info_FindNPC_NC_Gorn_11_01"); //Wenn du in die Wohnhöhle kommst, halte dich rechts. Direkt vorne sind ein paar Hütten. In einer davon wohnt er.
+				AI_Output(self,other,"Info_FindNPC_NC_Gorn_11_01"); //Wenn du in die WohnhÃ¶hle kommst, halte dich rechts. Direkt vorne sind ein paar HÃ¼tten. In einer davon wohnt er.
 			};
 		};
 	};
@@ -118,26 +118,26 @@ FUNC VOID Info_FindNPC_NC_Lares()
 		{
 			if (self.voice == 6)
 			{
-				AI_Output(self,other,"Info_FindNPC_NC_Lares_06_01"); //In der Wohnhöhle ganz hinten links. Du kannst es nicht verfehlen, sobald dich seine Jungs aufhalten bist du richtig.
+				AI_Output(self,other,"Info_FindNPC_NC_Lares_06_01"); //In der WohnhÃ¶hle ganz hinten links. Du kannst es nicht verfehlen, sobald dich seine Jungs aufhalten bist du richtig.
 			}
 			else if (self.voice == 7)
 			{
-				AI_Output(self,other,"Info_FindNPC_NC_Lares_07_01"); //In der Wohnhöhle ganz hinten links. Du kannst es nicht verfehlen, sobald dich seine Jungs aufhalten bist du richtig.
+				AI_Output(self,other,"Info_FindNPC_NC_Lares_07_01"); //In der WohnhÃ¶hle ganz hinten links. Du kannst es nicht verfehlen, sobald dich seine Jungs aufhalten bist du richtig.
 			}
 			else if (self.voice == 13)
 			{
-				AI_Output(self,other,"Info_FindNPC_NC_Lares_13_01"); //In der Wohnhöhle ganz hinten links. Du kannst es nicht verfehlen, sobald dich seine Jungs aufhalten bist du richtig.
+				AI_Output(self,other,"Info_FindNPC_NC_Lares_13_01"); //In der WohnhÃ¶hle ganz hinten links. Du kannst es nicht verfehlen, sobald dich seine Jungs aufhalten bist du richtig.
 			};
 		}
 		else if (self.guild == GIL_SLD) 
 		{
 			if (self.voice == 8)
 			{
-				AI_Output(self,other,"Info_FindNPC_NC_Lares_08_01"); //In der Wohnhöhle ganz hinten links. Du kannst es nicht verfehlen, sobald dich seine Jungs aufhalten bist du richtig.
+				AI_Output(self,other,"Info_FindNPC_NC_Lares_08_01"); //In der WohnhÃ¶hle ganz hinten links. Du kannst es nicht verfehlen, sobald dich seine Jungs aufhalten bist du richtig.
 			}
 			else if (self.voice == 11)
 			{
-				AI_Output(self,other,"Info_FindNPC_NC_Lares_11_01"); //In der Wohnhöhle ganz hinten links. Du kannst es nicht verfehlen, sobald dich seine Jungs aufhalten bist du richtig.
+				AI_Output(self,other,"Info_FindNPC_NC_Lares_11_01"); //In der WohnhÃ¶hle ganz hinten links. Du kannst es nicht verfehlen, sobald dich seine Jungs aufhalten bist du richtig.
 			};
 		};
 	};
@@ -165,26 +165,26 @@ FUNC VOID Info_FindNPC_NC_Lee()
 		{
 			if (self.voice == 6)
 			{
-				AI_Output(self,other,"Info_FindNPC_NC_Lee_06_01"); //Wenn du die große Wohnhöhle betrittst, halte dich rechts und geh ganz nach oben.
+				AI_Output(self,other,"Info_FindNPC_NC_Lee_06_01"); //Wenn du die groÃŸe WohnhÃ¶hle betrittst, halte dich rechts und geh ganz nach oben.
 			}
 			else if (self.voice == 7)
 			{
-				AI_Output(self,other,"Info_FindNPC_NC_Lee_07_01"); //Wenn du die große Wohnhöhle betrittst, halte dich rechts und geh ganz nach oben.
+				AI_Output(self,other,"Info_FindNPC_NC_Lee_07_01"); //Wenn du die groÃŸe WohnhÃ¶hle betrittst, halte dich rechts und geh ganz nach oben.
 			}
 			else if (self.voice == 13)
 			{
-				AI_Output(self,other,"Info_FindNPC_NC_Lee_13_01"); //Wenn du die große Wohnhöhle betrittst, halte dich rechts und geh ganz nach oben.
+				AI_Output(self,other,"Info_FindNPC_NC_Lee_13_01"); //Wenn du die groÃŸe WohnhÃ¶hle betrittst, halte dich rechts und geh ganz nach oben.
 			};
 		}
 		else if (self.guild == GIL_SLD) 
 		{
 			if (self.voice == 8)
 			{
-				AI_Output(self,other,"Info_FindNPC_NC_Lee_08_01"); //Wenn du die große Wohnhöhle betrittst, halte dich rechts und geh ganz nach oben.
+				AI_Output(self,other,"Info_FindNPC_NC_Lee_08_01"); //Wenn du die groÃŸe WohnhÃ¶hle betrittst, halte dich rechts und geh ganz nach oben.
 			}
 			else if (self.voice == 11)
 			{
-				AI_Output(self,other,"Info_FindNPC_NC_Lee_11_01"); //Wenn du die große Wohnhöhle betrittst, halte dich rechts und geh ganz nach oben.
+				AI_Output(self,other,"Info_FindNPC_NC_Lee_11_01"); //Wenn du die groÃŸe WohnhÃ¶hle betrittst, halte dich rechts und geh ganz nach oben.
 			};
 		};
 	};
@@ -212,26 +212,26 @@ FUNC VOID Info_FindNPC_NC_Mage()
 		{
 			if (self.voice == 6)
 			{
-				AI_Output(self,other,"Info_FindNPC_NC_Cronos_06_01"); //Normalerweise leben sie zurückgezogen im oberen Teil der Höhle. Aber am Erzhaufen, in der Mitte der Höhle, kannst du manchmal einen von ihnen treffen.
+				AI_Output(self,other,"Info_FindNPC_NC_Cronos_06_01"); //Normalerweise leben sie zurÃ¼ckgezogen im oberen Teil der HÃ¶hle. Aber am Erzhaufen, in der Mitte der HÃ¶hle, kannst du manchmal einen von ihnen treffen.
 			}
 			else if (self.voice == 7)
 			{
-				AI_Output(self,other,"Info_FindNPC_NC_Cronos_07_01"); //Normalerweise leben sie zurückgezogen im oberen Teil der Höhle. Aber am Erzhaufen, in der Mitte der Höhle, kannst du manchmal einen von ihnen treffen.
+				AI_Output(self,other,"Info_FindNPC_NC_Cronos_07_01"); //Normalerweise leben sie zurÃ¼ckgezogen im oberen Teil der HÃ¶hle. Aber am Erzhaufen, in der Mitte der HÃ¶hle, kannst du manchmal einen von ihnen treffen.
 			}
 			else if (self.voice == 13)
 			{
-				AI_Output(self,other,"Info_FindNPC_NC_Cronos_13_01"); //Normalerweise leben sie zurückgezogen im oberen Teil der Höhle. Aber am Erzhaufen, in der Mitte der Höhle, kannst du manchmal einen von ihnen treffen.
+				AI_Output(self,other,"Info_FindNPC_NC_Cronos_13_01"); //Normalerweise leben sie zurÃ¼ckgezogen im oberen Teil der HÃ¶hle. Aber am Erzhaufen, in der Mitte der HÃ¶hle, kannst du manchmal einen von ihnen treffen.
 			};
 		}
 		else if (self.guild == GIL_SLD) 
 		{
 			if (self.voice == 8)
 			{
-				AI_Output(self,other,"Info_FindNPC_NC_Cronos_08_01"); //Normalerweise leben sie zurückgezogen im oberen Teil der Höhle. Aber am Erzhaufen, in der Mitte der Höhle, kannst du manchmal einen von ihnen treffen.
+				AI_Output(self,other,"Info_FindNPC_NC_Cronos_08_01"); //Normalerweise leben sie zurÃ¼ckgezogen im oberen Teil der HÃ¶hle. Aber am Erzhaufen, in der Mitte der HÃ¶hle, kannst du manchmal einen von ihnen treffen.
 			}
 			else if (self.voice == 11)
 			{
-				AI_Output(self,other,"Info_FindNPC_NC_Cronos_11_01"); //Normalerweise leben sie zurückgezogen im oberen Teil der Höhle. Aber am Erzhaufen, in der Mitte der Höhle, kannst du manchmal einen von ihnen treffen.
+				AI_Output(self,other,"Info_FindNPC_NC_Cronos_11_01"); //Normalerweise leben sie zurÃ¼ckgezogen im oberen Teil der HÃ¶hle. Aber am Erzhaufen, in der Mitte der HÃ¶hle, kannst du manchmal einen von ihnen treffen.
 			};
 		};
 	};

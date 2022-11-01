@@ -47,9 +47,9 @@ FUNC int  Org_843_Sharky_Fisk_Condition()
 FUNC void  Org_843_Sharky_Fisk_Info()
 {
 	AI_Output (other, self,"Org_843_Sharky_Fisk_Info_15_00"); //Fisk aus dem Alten Lager ist auf der Suche nach einem neuen Handelspartner.
-	AI_Output (self, other,"Org_843_Sharky_Fisk_Info_10_01"); //Und warum erz‰hlst du mir das?
-	AI_Output (other, self,"Org_843_Sharky_Fisk_Info_15_02"); //Ich dachte, du h‰ttest vielleicht Lust, ein bisschen Erz zu verdienen.
-	AI_Output (self, other,"Org_843_Sharky_Fisk_Info_10_03"); //Warum nicht ... Sag Fisk, er kann in den n‰chsten Tagen mit mir rechnen.
+	AI_Output (self, other,"Org_843_Sharky_Fisk_Info_10_01"); //Und warum erz√§hlst du mir das?
+	AI_Output (other, self,"Org_843_Sharky_Fisk_Info_15_02"); //Ich dachte, du h√§ttest vielleicht Lust, ein bisschen Erz zu verdienen.
+	AI_Output (self, other,"Org_843_Sharky_Fisk_Info_10_03"); //Warum nicht ... Sag Fisk, er kann in den n√§chsten Tagen mit mir rechnen.
 };  
 
 
@@ -64,7 +64,7 @@ instance  Org_843_Sharky_TRADE (C_INFO)
 	information		= Org_843_Sharky_TRADE_Info;
 	important		= 0;
 	permanent		= 1;
-	description		= "Ich kˆnnte ein paar Sachen gebrauchen"; 
+	description		= "Ich k√∂nnte ein paar Sachen gebrauchen"; 
 	trade 			= 1;
 };
 
@@ -78,11 +78,11 @@ FUNC int  Org_843_Sharky_TRADE_Condition()
 };
 FUNC void  Org_843_Sharky_TRADE_Info()
 {
-	AI_Output (other, self,"Org_843_Sharky_TRADE_Info_15_01"); //Ich kˆnnte ein paar Sachen gebrauchen ...
+	AI_Output (other, self,"Org_843_Sharky_TRADE_Info_15_01"); //Ich k√∂nnte ein paar Sachen gebrauchen ...
 };  
 
 /*------------------------------------------------------------------------
-							TRADE BEGR‹ﬂUNG 								
+							TRADE BEGR√ú√üUNG 								
 ------------------------------------------------------------------------*/
 
 instance  Org_843_Sharky_GREET (C_INFO) 
@@ -106,7 +106,7 @@ FUNC void  Org_843_Sharky_GREET_Info()
 	AI_Output		(other, self,"Org_843_Sharky_GREET_Info_15_01"); //Hey, wie sieht's aus?
 	AI_Output		(self, other,"Org_843_Sharky_GREET_Info_10_02"); //Willst du was kaufen?
 	Log_CreateTopic (GE_TraderNC,LOG_NOTE);
-	B_LogEntry		(GE_TraderNC,"Sharky der Bandit, handelt mit WAFFEN und anderen Waren. Er h‰lt sich meistens irgendwo im Neuen Lager auf."); 
+	B_LogEntry		(GE_TraderNC,"Sharky der Bandit, handelt mit WAFFEN und anderen Waren. Er h√§lt sich meistens irgendwo im Neuen Lager auf."); 
 };
 
 

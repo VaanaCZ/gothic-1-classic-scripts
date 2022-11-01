@@ -1,5 +1,5 @@
 /*******************************************************************************************
-**	Rüstungswert-Multiplikator	                                         				  **
+**	RÃ¼stungswert-Multiplikator	                                         				  **
 *******************************************************************************************/
 const int	ARMOR_VALUE_MULTIPLIER	= 30;	// wird mit Schutzwert gegen EDGE-Schaden multipliziert
 
@@ -146,7 +146,7 @@ INSTANCE STT_ARMOR_M(C_Item)
 /******************************************************************************************/
 INSTANCE STT_ARMOR_H(C_Item)
 {
-	name 					=	"Schattenrüstung";
+	name 					=	"SchattenrÃ¼stung";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -180,7 +180,7 @@ INSTANCE STT_ARMOR_H(C_Item)
 
 INSTANCE GRD_ARMOR_L(C_Item)
 {
-	name 					=	"Leichte Garderüstung";
+	name 					=	"Leichte GarderÃ¼stung";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -212,7 +212,7 @@ INSTANCE GRD_ARMOR_L(C_Item)
 /******************************************************************************************/
 INSTANCE GRD_ARMOR_M(C_Item)
 {
-	name 					=	"Garderüstung";
+	name 					=	"GarderÃ¼stung";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -244,7 +244,7 @@ INSTANCE GRD_ARMOR_M(C_Item)
 /******************************************************************************************/
 INSTANCE GRD_ARMOR_H(C_Item)
 {
-	name 					=	"Schwere Garderüstung";
+	name 					=	"Schwere GarderÃ¼stung";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -312,7 +312,7 @@ INSTANCE EBR_ARMOR_M(C_Item)
 /******************************************************************************************/
 INSTANCE EBR_ARMOR_H(C_Item)
 {
-	name 					=	"Gomez'Rüstung";
+	name 					=	"Gomez'RÃ¼stung";
 
 
 	mainflag 				=	ITEM_KAT_ARMOR;
@@ -347,7 +347,7 @@ INSTANCE EBR_ARMOR_H(C_Item)
 /******************************************************************************************/
 INSTANCE EBR_ARMOR_H2(C_Item)
 {
-	name 					=	"Schwere Erzbaronrüstung";
+	name 					=	"Schwere ErzbaronrÃ¼stung";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -383,11 +383,11 @@ INSTANCE EBR_ARMOR_H2(C_Item)
 *******************************************************************************************/
 
 /******************************************************************************************/
-// Schürferbund
+// SchÃ¼rferbund
 
 instance SFB_ARMOR_L(C_Item)
 {
-	name 					=	"Schürferklamotten";
+	name 					=	"SchÃ¼rferklamotten";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -517,7 +517,7 @@ INSTANCE ORG_ARMOR_H(C_Item)
 /******************************************************************************************/
 INSTANCE SLD_ARMOR_L(C_Item)
 {
-	name 					=	"leichte Söldnerrüstung";
+	name 					=	"leichte SÃ¶ldnerrÃ¼stung";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -549,7 +549,7 @@ INSTANCE SLD_ARMOR_L(C_Item)
 /******************************************************************************************/
 instance SLD_ARMOR_M(C_Item)
 {
-	name 					=	"Söldnerrüstung";
+	name 					=	"SÃ¶ldnerrÃ¼stung";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -581,7 +581,7 @@ instance SLD_ARMOR_M(C_Item)
 /******************************************************************************************/
 INSTANCE SLD_ARMOR_H(C_Item)
 {
-	name 					=	"Schwere Söldnerrüstung";
+	name 					=	"Schwere SÃ¶ldnerrÃ¼stung";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -652,7 +652,7 @@ INSTANCE NOV_ARMOR_L(C_Item)
 /******************************************************************************************/
 INSTANCE NOV_ARMOR_M(C_Item)
 {
-	name 					=	"Leichte Novizenrüstung";
+	name 					=	"Leichte NovizenrÃ¼stung";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -684,7 +684,7 @@ INSTANCE NOV_ARMOR_M(C_Item)
 /******************************************************************************************/
 INSTANCE NOV_ARMOR_H(C_Item)
 {
-	name 					=	"Novizenrüstung";
+	name 					=	"NovizenrÃ¼stung";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -718,7 +718,7 @@ INSTANCE NOV_ARMOR_H(C_Item)
 
 INSTANCE TPL_ARMOR_L(C_Item)
 {
-	name 					=	"Leichte Templerrüstung";
+	name 					=	"Leichte TemplerrÃ¼stung";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -750,7 +750,7 @@ INSTANCE TPL_ARMOR_L(C_Item)
 /******************************************************************************************/
 INSTANCE TPL_ARMOR_M(C_Item)
 {
-	name 					=	"Templerrüstung";
+	name 					=	"TemplerrÃ¼stung";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -782,7 +782,7 @@ INSTANCE TPL_ARMOR_M(C_Item)
 /******************************************************************************************/
 INSTANCE TPL_ARMOR_H(C_Item)
 {
-	name 					=	"Schwere Templerrüstung";
+	name 					=	"Schwere TemplerrÃ¼stung";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -919,7 +919,7 @@ INSTANCE KDF_ARMOR_L(C_Item)
 /******************************************************************************************/
 INSTANCE KDF_ARMOR_H(C_Item)
 {
-	name 					=	"Große Feuerrobe";
+	name 					=	"GroÃŸe Feuerrobe";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -984,7 +984,7 @@ INSTANCE KDW_ARMOR_L(C_Item)
 /******************************************************************************************/
 INSTANCE KDW_ARMOR_H(C_Item)
 {
-	name 					=	"Große Wasserrobe";
+	name 					=	"GroÃŸe Wasserrobe";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -1013,11 +1013,11 @@ INSTANCE KDW_ARMOR_H(C_Item)
 };
 
 /******************************************************************************************/
-// Dämonenbeschwörer
+// DÃ¤monenbeschwÃ¶rer
 
 INSTANCE DMB_ARMOR_M(C_Item)
 {
-	name 					=	"Robe der Dunklen Künste";
+	name 					=	"Robe der Dunklen KÃ¼nste";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -1051,15 +1051,15 @@ INSTANCE DMB_ARMOR_M(C_Item)
 
 
 /*******************************************************************************************
-**	Spezial-Rüstungen                                                                     **
+**	Spezial-RÃ¼stungen                                                                     **
 *******************************************************************************************/
 
-// FIXME: hier fehlen noch die Visuals für die Erz-Rüstungen und das INV-Item für die CRAWLERPLATTEN-RÜSTUNG 
+// FIXME: hier fehlen noch die Visuals fÃ¼r die Erz-RÃ¼stungen und das INV-Item fÃ¼r die CRAWLERPLATTEN-RÃœSTUNG 
 
-// Crawler-Plattenrüstung
+// Crawler-PlattenrÃ¼stung
 INSTANCE CRW_ARMOR_H(C_Item)
 {
-	name 					=	"Crawler-Plattenrüstung";
+	name 					=	"Crawler-PlattenrÃ¼stung";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -1090,10 +1090,10 @@ INSTANCE CRW_ARMOR_H(C_Item)
 
 
 /******************************************************************************************/
-// Erz-Rüstungen
+// Erz-RÃ¼stungen
 INSTANCE ORE_ARMOR_M(C_Item)
 {
-	name 					=	"antike Erzrüstung";
+	name 					=	"antike ErzrÃ¼stung";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -1114,7 +1114,7 @@ INSTANCE ORE_ARMOR_M(C_Item)
 	material 				=	MAT_WOOD;
 
 	description				=	name;
-	TEXT[0]					=	"Diese uralte Rüstung wurde vollständig aus magischen Erz geschmiedet.";
+	TEXT[0]					=	"Diese uralte RÃ¼stung wurde vollstÃ¤ndig aus magischen Erz geschmiedet.";
 	TEXT[1]					=	NAME_Prot_Edge;			COUNT[1]	= protection	[PROT_EDGE];
 	TEXT[2]					=	NAME_Prot_Point;		COUNT[2]	= protection	[PROT_POINT];
 	TEXT[3] 				=	NAME_Prot_Fire;			COUNT[3]	= protection	[PROT_FIRE];
@@ -1124,7 +1124,7 @@ INSTANCE ORE_ARMOR_M(C_Item)
 
 INSTANCE ORE_ARMOR_H(C_Item)
 {
-	name 					=	"verbesserte Erzrüstung";
+	name 					=	"verbesserte ErzrÃ¼stung";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -1145,7 +1145,7 @@ INSTANCE ORE_ARMOR_H(C_Item)
 	material 				=	MAT_WOOD;
 
 	description				=	name;
-	TEXT[0]					=	"Stone der Schmied hat diese antike Rüstung noch verbessern können!";
+	TEXT[0]					=	"Stone der Schmied hat diese antike RÃ¼stung noch verbessern kÃ¶nnen!";
 	TEXT[1]					=	NAME_Prot_Edge;			COUNT[1]	= protection	[PROT_EDGE];
 	TEXT[2]					=	NAME_Prot_Point;		COUNT[2]	= protection	[PROT_POINT];
 	TEXT[3] 				=	NAME_Prot_Fire;			COUNT[3]	= protection	[PROT_FIRE];
@@ -1197,11 +1197,11 @@ INSTANCE LAW_ARMOR (C_Item)
 
 
 /*******************************************************************************************
-**	Wache für Intro-Cutscene                                                          **
+**	Wache fÃ¼r Intro-Cutscene                                                          **
 *******************************************************************************************/
 INSTANCE GRD_ARMOR_I(C_Item)
 {
-	name 					=	"Königliche Garderüstung";
+	name 					=	"KÃ¶nigliche GarderÃ¼stung";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;

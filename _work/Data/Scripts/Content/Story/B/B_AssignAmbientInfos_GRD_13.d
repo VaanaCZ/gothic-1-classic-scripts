@@ -121,17 +121,17 @@ FUNC VOID Info_grd_13_DasLager_Verstehe()
 FUNC VOID Info_grd_13_DasLager_WachenBestechen()
 {
 	AI_Output(other,self,"Info_grd_13_DasLager_WachenBestechen_15_00"); //Und wenn ich die Wachen besteche?
-	AI_Output(self,other,"Info_grd_13_DasLager_WachenBestechen_13_01"); //Ganz schön dreist, Kleiner. Schätze für die richtige Menge Erz könntest du sie überzeugen, mal wegzusehen.
-	AI_Output(self,other,"Info_grd_13_DasLager_WachenBestechen_13_02"); //Aber wenn Gomez erfährt, dass sie einen Frischling einfach so in seine Burg gelassen haben, lässt er sie in den Kerker werfen.
-	AI_Output(self,other,"Info_grd_13_DasLager_WachenBestechen_13_03"); //Das steigert natürlich den Preis.
-	AI_Output(self,other,"Info_grd_13_DasLager_WachenBestechen_13_04"); //Aber selbst wenn du reinkommst, was würdest du drinnen machen? Alle Gebäude sind streng bewacht.
+	AI_Output(self,other,"Info_grd_13_DasLager_WachenBestechen_13_01"); //Ganz schÃ¶n dreist, Kleiner. SchÃ¤tze fÃ¼r die richtige Menge Erz kÃ¶nntest du sie Ã¼berzeugen, mal wegzusehen.
+	AI_Output(self,other,"Info_grd_13_DasLager_WachenBestechen_13_02"); //Aber wenn Gomez erfÃ¤hrt, dass sie einen Frischling einfach so in seine Burg gelassen haben, lÃ¤sst er sie in den Kerker werfen.
+	AI_Output(self,other,"Info_grd_13_DasLager_WachenBestechen_13_03"); //Das steigert natÃ¼rlich den Preis.
+	AI_Output(self,other,"Info_grd_13_DasLager_WachenBestechen_13_04"); //Aber selbst wenn du reinkommst, was wÃ¼rdest du drinnen machen? Alle GebÃ¤ude sind streng bewacht.
 	AI_Output(other,self,"Info_grd_13_DasLager_WachenBestechen_15_05"); //Ich war nur neugierig.
 };
 
 FUNC VOID Info_grd_13_DasLager_GomezSprechen()
 {
 	AI_Output(other,self,"Info_grd_13_DasLager_GomezSprechen_15_00"); //Und wenn ich mit Gomez sprechen will?
-	AI_Output(self,other,"Info_grd_13_DasLager_GomezSprechen_13_01"); //Gomez hat kein Interesse an dahergelaufenen Neuen, die sich noch nicht bewährt haben.
+	AI_Output(self,other,"Info_grd_13_DasLager_GomezSprechen_13_01"); //Gomez hat kein Interesse an dahergelaufenen Neuen, die sich noch nicht bewÃ¤hrt haben.
 	AI_Output(self,other,"Info_grd_13_DasLager_GomezSprechen_13_02"); //Rede mit Thorus, wenn es dir ernst ist.
 
 	var C_NPC Thorus;		Thorus 	= Hlp_GetNpc(GRD_200_Thorus);
@@ -148,7 +148,7 @@ INSTANCE Info_grd_13_DieLage(C_INFO) // E1
 	condition	= Info_grd_13_DieLage_Condition;
 	information	= Info_grd_13_DieLage_Info;
 	permanent	= 1;
-	description = "Wie läuft's?";
+	description = "Wie lÃ¤uft's?";
 };                       
 
 FUNC INT Info_grd_13_DieLage_Condition()
@@ -161,9 +161,9 @@ FUNC INT Info_grd_13_DieLage_Condition()
 };
 FUNC VOID Info_grd_13_DieLage_Info()
 {
-	AI_Output(other,self,"Info_grd_13_DieLage_15_00"); //Wie läuft's?
+	AI_Output(other,self,"Info_grd_13_DieLage_15_00"); //Wie lÃ¤uft's?
 	AI_Output(self,other,"Info_grd_13_DieLage_13_01"); //Ruhig. Ab und zu gibt's Scherereien mit dem Neuen Lager oder ein paar von den Sektenspinnern.
-	AI_Output(self,other,"Info_grd_13_DieLage_13_02"); //Solange du noch neu bist, hast du kein Problem damit, aber wenn du dich erst mal für ein Lager entschieden hast, steckst du mittendrin - wie wir alle.
+	AI_Output(self,other,"Info_grd_13_DieLage_13_02"); //Solange du noch neu bist, hast du kein Problem damit, aber wenn du dich erst mal fÃ¼r ein Lager entschieden hast, steckst du mittendrin - wie wir alle.
 };
 	
 // *************************************************************************

@@ -64,7 +64,7 @@ instance DIA_Jeremiah_PERM (C_INFO)
 	condition	= DIA_Jeremiah_PERM_Condition;
 	information	= DIA_Jeremiah_PERM_Info;
 	permanent	= 1;
-	description = "Wie läuft das Schnapsbrennergeschäft?";
+	description = "Wie lÃ¤uft das SchnapsbrennergeschÃ¤ft?";
 };                       
 
 FUNC int DIA_Jeremiah_PERM_Condition()
@@ -74,7 +74,7 @@ FUNC int DIA_Jeremiah_PERM_Condition()
 
 FUNC VOID  DIA_Jeremiah_PERM_Info()
 {
-	AI_Output (other, self,"DIA_Jeremiah_PERM_15_00"); //Wie läuft das Schnapsbrennergeschäft?
+	AI_Output (other, self,"DIA_Jeremiah_PERM_15_00"); //Wie lÃ¤uft das SchnapsbrennergeschÃ¤ft?
 	AI_Output (self, other,"DIA_Jeremiah_PERM_04_01"); //Ich kann kaum soviel nachlegen, wie die Kerle wegsaufen.
 	AI_Output (self, other,"DIA_Jeremiah_PERM_04_02"); //Ist auch ganz gut so - solange ich hier genug zu tun habe, lassen mich die Jungs vom Reislord in Ruhe.
 	
@@ -92,7 +92,7 @@ instance DIA_Jeremiah_Horatio (C_INFO)
 	condition	= DIA_Jeremiah_Horatio_Condition;
 	information	= DIA_Jeremiah_Horatio_Info;
 	permanent	= 0;
-	description = "Was kannst du mir über den Reislord sagen?";
+	description = "Was kannst du mir Ã¼ber den Reislord sagen?";
 };                       
 
 FUNC int DIA_Jeremiah_Horatio_Condition()
@@ -105,10 +105,10 @@ FUNC int DIA_Jeremiah_Horatio_Condition()
 
 FUNC VOID  DIA_Jeremiah_Horatio_Info()
 {
-	AI_Output (other, self,"DIA_Jeremiah_Horatio_15_00"); //Was kannst du mir über den Reislord sagen?
-	AI_Output (self, other,"DIA_Jeremiah_Horatio_04_01"); //Er ist ein verdammtes Schwein! Seine Schläger suchen sich die Schwachen aus, um sie zur Arbeit auf den Feldern zu zwingen.
-	AI_Output (self, other,"DIA_Jeremiah_Horatio_04_02"); //Der einzige, der sich wehren könnte ist Horatio. Aber der hat mit Gewalt nichts am Hut.
-	AI_Output (self, other,"DIA_Jeremiah_Horatio_04_03"); //Ich hab' mal gehört, wie er gesagt hat, er würde dem Reislord gerne den Schädel einschlagen, aber das würde er nie tun.
-	AI_Output (self, other,"DIA_Jeremiah_Horatio_04_04"); //Seine Überzeugung hält ihn davon ab.
+	AI_Output (other, self,"DIA_Jeremiah_Horatio_15_00"); //Was kannst du mir Ã¼ber den Reislord sagen?
+	AI_Output (self, other,"DIA_Jeremiah_Horatio_04_01"); //Er ist ein verdammtes Schwein! Seine SchlÃ¤ger suchen sich die Schwachen aus, um sie zur Arbeit auf den Feldern zu zwingen.
+	AI_Output (self, other,"DIA_Jeremiah_Horatio_04_02"); //Der einzige, der sich wehren kÃ¶nnte ist Horatio. Aber der hat mit Gewalt nichts am Hut.
+	AI_Output (self, other,"DIA_Jeremiah_Horatio_04_03"); //Ich hab' mal gehÃ¶rt, wie er gesagt hat, er wÃ¼rde dem Reislord gerne den SchÃ¤del einschlagen, aber das wÃ¼rde er nie tun.
+	AI_Output (self, other,"DIA_Jeremiah_Horatio_04_04"); //Seine Ãœberzeugung hÃ¤lt ihn davon ab.
 };
 

@@ -18,7 +18,7 @@ FUNC int  VLK_586_Grimes_Exit_Condition()
 
 FUNC VOID  VLK_586_Grimes_Exit_Info()
 {
-	AI_Output (other, self,"VLK_586_Grimes_Exit_Info_15_01"); //Viel Glück noch.
+	AI_Output (other, self,"VLK_586_Grimes_Exit_Info_15_01"); //Viel GlÃ¼ck noch.
 	AI_Output (self, other,"VLK_586_Grimes_Exit_Info_04_02"); //Dir auch, Jungchen, dir auch.
 	
 	AI_StopProcessInfos	( self );
@@ -54,7 +54,7 @@ FUNC void  VLK_586_Grimes_STORY_Info()
 	AI_Output (other, self,"VLK_586_Grimes_STORY_Info_15_01"); //Bist du schon lange hier?
 	AI_Output (self, other,"VLK_586_Grimes_STORY_Info_04_02"); //Ich bin schon seit 10 Jahren hier. Du kannst mir glauben, dass ich schon einiges gesehen und erlebt hab'.
 	AI_Output (self, other,"VLK_586_Grimes_STORY_Info_04_03"); //So manche Gefahr hab' ich schon gemeistert und es immer verstanden, am Leben zu bleiben!
-	AI_Output (self, other,"VLK_586_Grimes_STORY_Info_04_04"); //Damals, als wir noch in der inzwischen verlassenen Mine gearbeitet haben und die Stützbalken eingekracht sind ...
+	AI_Output (self, other,"VLK_586_Grimes_STORY_Info_04_04"); //Damals, als wir noch in der inzwischen verlassenen Mine gearbeitet haben und die StÃ¼tzbalken eingekracht sind ...
 	AI_Output (self, other,"VLK_586_Grimes_STORY_Info_04_05"); //Aber das sind alte Geschichten.
 };
 
@@ -65,7 +65,7 @@ instance  VLK_586_Grimes_KNOW (C_INFO)
 	information		= VLK_586_Grimes_KNOW_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Du hast doch bestimmt auch eine Menge Ausbruchspläne mitgekriegt."; 
+	description		= "Du hast doch bestimmt auch eine Menge AusbruchsplÃ¤ne mitgekriegt."; 
 };
 
 FUNC int  VLK_586_Grimes_KNOW_Condition()
@@ -78,12 +78,12 @@ FUNC int  VLK_586_Grimes_KNOW_Condition()
 };
 FUNC void  VLK_586_Grimes_KNOW_Info()
 {
-	AI_Output (other, self,"VLK_586_Grimes_KNOW_Info_15_01"); //Du hast doch bestimmt auch eine Menge Ausbruchspläne mitgekriegt.
-	AI_Output (self, other,"VLK_586_Grimes_KNOW_Info_04_02"); //Hör zu, mein Junge: Ich weiß genau, du willst hier raus - aber vergiss es.
-	AI_Output (self, other,"VLK_586_Grimes_KNOW_Info_04_03"); //Gewöhn dich direkt daran und vergiss die Gedanken vom Ausbruch. Ich hab' die Gesichter der Leute gesehen, die versucht haben, aus der Barriere zu fliehen.
-	AI_Output (self, other,"VLK_586_Grimes_KNOW_Info_04_04"); //Mach nicht denselben Fehler, die Barriere hält jeden auf!
-	AI_Output (other, self,"VLK_586_Grimes_KNOW_Info_15_05"); //Ich habe nicht vor, die nächsten 10 Jahre meines Lebens hier zu schürfen!
-	AI_Output (self, other,"VLK_586_Grimes_KNOW_Info_04_06"); //Nein. Das wirst du nicht. Vielleicht wirst du zu den ganz Grossen gehören, wer weiß.
+	AI_Output (other, self,"VLK_586_Grimes_KNOW_Info_15_01"); //Du hast doch bestimmt auch eine Menge AusbruchsplÃ¤ne mitgekriegt.
+	AI_Output (self, other,"VLK_586_Grimes_KNOW_Info_04_02"); //HÃ¶r zu, mein Junge: Ich weiÃŸ genau, du willst hier raus - aber vergiss es.
+	AI_Output (self, other,"VLK_586_Grimes_KNOW_Info_04_03"); //GewÃ¶hn dich direkt daran und vergiss die Gedanken vom Ausbruch. Ich hab' die Gesichter der Leute gesehen, die versucht haben, aus der Barriere zu fliehen.
+	AI_Output (self, other,"VLK_586_Grimes_KNOW_Info_04_04"); //Mach nicht denselben Fehler, die Barriere hÃ¤lt jeden auf!
+	AI_Output (other, self,"VLK_586_Grimes_KNOW_Info_15_05"); //Ich habe nicht vor, die nÃ¤chsten 10 Jahre meines Lebens hier zu schÃ¼rfen!
+	AI_Output (self, other,"VLK_586_Grimes_KNOW_Info_04_06"); //Nein. Das wirst du nicht. Vielleicht wirst du zu den ganz Grossen gehÃ¶ren, wer weiÃŸ.
 	AI_Output (self, other,"VLK_586_Grimes_KNOW_Info_04_07"); //Du wirst dich nach oben arbeiten, aber ganz egal, wie weit du auch kommst, die Barriere wird dich aufhalten!
 };
 
@@ -103,5 +103,5 @@ FUNC int  VLK_586_Grimes_FIRST_Condition()
 
 func void  VLK_586_Grimes_FIRST_Info()
 {
-	AI_Output (self, other,"VLK_586_Grimes_FIRST_Info_04_02"); //Ein neues Gesicht. Na, schon mal Erz geschürft, Jungchen?
+	AI_Output (self, other,"VLK_586_Grimes_FIRST_Info_04_02"); //Ein neues Gesicht. Na, schon mal Erz geschÃ¼rft, Jungchen?
 };  

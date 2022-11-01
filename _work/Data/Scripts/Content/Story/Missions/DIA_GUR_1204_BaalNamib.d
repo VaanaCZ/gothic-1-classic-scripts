@@ -23,7 +23,7 @@ FUNC VOID DIA_BaalNamib_EXIT_Info()
 };
 
 // ************************************************************
-// 					NICHT ansprechbar (Ungl‰ubiger) 
+// 					NICHT ansprechbar (Ungl√§ubiger) 
 // ************************************************************
 // ************************************************************
 
@@ -50,28 +50,28 @@ FUNC VOID DIA_BaalNamib_NoTalk_Info()
 	Info_ClearChoices 	(DIA_BaalNamib_NoTalk);
 	Info_Addchoice 		(DIA_BaalNamib_NoTalk,DIALOG_ENDE					,DIA_BaalNamib_NoTalk_ENDE);
 	Info_Addchoice 		(DIA_BaalNamib_NoTalk,"Alles, klar, Alter?"			,DIA_BaalNamib_NoTalk_Imp);
-	Info_Addchoice 		(DIA_BaalNamib_NoTalk,"Der Schl‰fer sei mit dir!"	,DIA_BaalNamib_NoTalk_Sleeper);
+	Info_Addchoice 		(DIA_BaalNamib_NoTalk,"Der Schl√§fer sei mit dir!"	,DIA_BaalNamib_NoTalk_Sleeper);
 	Info_Addchoice 		(DIA_BaalNamib_NoTalk,"Hi! Ich bin neu hier!"		,DIA_BaalNamib_NoTalk_Hi);
 };
 
 func void DIA_BaalNamib_NoTalk_Hi()
 {
 	AI_Output (other, self,"DIA_BaalNamib_NoTalk_Hi_15_00"); //Hi! Ich bin neu hier!
-	AI_Output (self, other,"DIA_BaalNamib_NoTalk_Hi_02_01"); //(ver‰rgertes Schnauben)
+	AI_Output (self, other,"DIA_BaalNamib_NoTalk_Hi_02_01"); //(ver√§rgertes Schnauben)
 	BaalNamib_Sakrileg = TRUE;
 };
 
 func void DIA_BaalNamib_NoTalk_Sleeper()
 {
-	AI_Output (other, self,"DIA_BaalNamib_NoTalk_Sleeper_15_00"); //Der Schl‰fer sei mit dir!
-	AI_Output (self, other,"DIA_BaalNamib_NoTalk_Sleeper_02_01"); //(ver‰rgertes Schnauben)
+	AI_Output (other, self,"DIA_BaalNamib_NoTalk_Sleeper_15_00"); //Der Schl√§fer sei mit dir!
+	AI_Output (self, other,"DIA_BaalNamib_NoTalk_Sleeper_02_01"); //(ver√§rgertes Schnauben)
 	BaalNamib_Sakrileg = TRUE;
 };
 
 func void DIA_BaalNamib_NoTalk_Imp()
 {
 	AI_Output (other, self,"DIA_BaalNamib_NoTalk_Imp_15_00"); //Alles, klar, Alter?
-	AI_Output (self, other,"DIA_BaalNamib_NoTalk_Imp_02_01"); //(ver‰rgertes Schnauben)
+	AI_Output (self, other,"DIA_BaalNamib_NoTalk_Imp_02_01"); //(ver√§rgertes Schnauben)
 	BaalNamib_Sakrileg = TRUE;
 };
 
@@ -105,11 +105,11 @@ FUNC INT DIA_BaalNamib_FirstTalk_Condition()
 FUNC VOID DIA_BaalNamib_FirstTalk_Info()
 {	
 	AI_Output (self, other,"DIA_BaalNamib_FirstTalk_02_00"); //(seufzt)
-	AI_Output (self, other,"DIA_BaalNamib_FirstTalk_02_01"); //Der Schl‰fer hat dich erw‰hlt. Ist es dir wirklich ernst mit deinem Wunsch, uns beizutreten?
+	AI_Output (self, other,"DIA_BaalNamib_FirstTalk_02_01"); //Der Schl√§fer hat dich erw√§hlt. Ist es dir wirklich ernst mit deinem Wunsch, uns beizutreten?
 
 	Info_ClearChoices 	(DIA_BaalNamib_FirstTalk);
 	Info_AddChoice 		(DIA_BaalNamib_FirstTalk,"NICHTS SAGEN"										,DIA_BaalNamib_FirstTalk_Mute);
-	Info_AddChoice 		(DIA_BaalNamib_FirstTalk,"Ja, ich will den Weg des Schl‰fers beschreiten!"	,DIA_BaalNamib_FirstTalk_Sleeper);
+	Info_AddChoice 		(DIA_BaalNamib_FirstTalk,"Ja, ich will den Weg des Schl√§fers beschreiten!"	,DIA_BaalNamib_FirstTalk_Sleeper);
 };
 
 func void DIA_BaalNamib_FirstTalk_Mute()
@@ -120,16 +120,16 @@ func void DIA_BaalNamib_FirstTalk_Mute()
 
 func void DIA_BaalNamib_FirstTalk_Sleeper()
 {
-	AI_Output 			(other, self,"DIA_BaalNamib_FirstTalk_Sleeper_15_00"); //Ja, ich will den Weg des Schl‰fers beschreiten!
-	AI_Output 			(self, other,"DIA_BaalNamib_FirstTalk_Sleeper_02_01"); //Geh zu Cor Kalom. Sag ihm, ich schicke ihm einen wahren Anh‰nger des Glaubens!
+	AI_Output 			(other, self,"DIA_BaalNamib_FirstTalk_Sleeper_15_00"); //Ja, ich will den Weg des Schl√§fers beschreiten!
+	AI_Output 			(self, other,"DIA_BaalNamib_FirstTalk_Sleeper_02_01"); //Geh zu Cor Kalom. Sag ihm, ich schicke ihm einen wahren Anh√§nger des Glaubens!
 	Info_ClearChoices 	(DIA_BaalNamib_FirstTalk);
 
-	B_LogEntry			(CH1_JoinPsi,	"Lester's Schauspiel hat funktioniert. Baal Namib hat mir mir gesprochen und ist ¸berzeugt, dass ich nun ein wahrer Anh‰nger des Glaubens bin. Ich soll nun den Guru Cor Kalom in seinem Alchemielabor aufsuchen!");
+	B_LogEntry			(CH1_JoinPsi,	"Lester's Schauspiel hat funktioniert. Baal Namib hat mir mir gesprochen und ist √ºberzeugt, dass ich nun ein wahrer Anh√§nger des Glaubens bin. Ich soll nun den Guru Cor Kalom in seinem Alchemielabor aufsuchen!");
 	B_GiveXP			(XP_ImpressBaalNamib);
 };
 
 //-----------------------------------------------------
-// BESSERE R‹STUNG NOVIZEN
+// BESSERE R√úSTUNG NOVIZEN
 //-----------------------------------------------------
 instance  GUR_1204_BaalNamib_ARMOR (C_INFO)
 {
@@ -138,7 +138,7 @@ instance  GUR_1204_BaalNamib_ARMOR (C_INFO)
 	information		= GUR_1204_BaalNamib_ARMOR_Info;
 	important		= 0;
 	permanent		= 1;
-	description		= "Ich mˆchte eine bessere R¸stung haben."; 
+	description		= "Ich m√∂chte eine bessere R√ºstung haben."; 
 };
 
 FUNC int  GUR_1204_BaalNamib_ARMOR_Condition()
@@ -152,11 +152,11 @@ FUNC int  GUR_1204_BaalNamib_ARMOR_Condition()
 };
 FUNC void  GUR_1204_BaalNamib_ARMOR_Info()
 {
-	AI_Output (hero,self,"GUR_1204_BaalNamib_ARMOR_Info_15_01");//Ich mˆchte eine bessere R¸stung haben.
+	AI_Output (hero,self,"GUR_1204_BaalNamib_ARMOR_Info_15_01");//Ich m√∂chte eine bessere R√ºstung haben.
 	
 	if (Kapitel < 3)
 	{
-		AI_Output (self,other,"GUR_1204_BaalNamib_ARMOR_Info_02_02");//Es ist noch nicht an der Zeit f¸r dich, die schwere R¸stung der Novizen zu tragen.
+		AI_Output (self,other,"GUR_1204_BaalNamib_ARMOR_Info_02_02");//Es ist noch nicht an der Zeit f√ºr dich, die schwere R√ºstung der Novizen zu tragen.
 	}
 	else if (Npc_HasItems (hero, ItMinugget) < VALUE_NOV_ARMOR_H )
 	{
@@ -164,7 +164,7 @@ FUNC void  GUR_1204_BaalNamib_ARMOR_Info()
 	}
 	else
 	{
-		AI_Output (self,other,"GUR_1204_BaalNamib_ARMOR_Info_02_04");//Diese R¸stung sch¸tzt deinen Kˆrper, wie der Schl‰fer deinen Geist sch¸tzt!
+		AI_Output (self,other,"GUR_1204_BaalNamib_ARMOR_Info_02_04");//Diese R√ºstung sch√ºtzt deinen K√∂rper, wie der Schl√§fer deinen Geist sch√ºtzt!
 		CreateInvItem (self,NOV_ARMOR_H);
 		B_GiveInvItems (self, hero, NOV_ARMOR_H, 1);
 		B_GiveInvItems (hero, self, ItMinugget,VALUE_NOV_ARMOR_H);
@@ -187,7 +187,7 @@ INSTANCE Info_BaalNamib_BROTHERHOOD (C_INFO)
 	information	= Info_BaalNamib_BROTHERHOOD_Info;
 	important	= 0;
 	permanent	= 0;
-	description = "Gibt es Aufgaben, die ich f¸r die Bruderschaft erledigen kann?";
+	description = "Gibt es Aufgaben, die ich f√ºr die Bruderschaft erledigen kann?";
 };
 
 FUNC INT Info_BaalNamib_BROTHERHOOD_Condition()
@@ -197,12 +197,12 @@ FUNC INT Info_BaalNamib_BROTHERHOOD_Condition()
 
 FUNC VOID Info_BaalNamib_BROTHERHOOD_Info()
 {
-	AI_Output (other, self,"Info_BaalNamib_BROTHERHOOD_15_01"); //Gibt es Aufgaben, die ich f¸r die Bruderschaft erledigen kann?
+	AI_Output (other, self,"Info_BaalNamib_BROTHERHOOD_15_01"); //Gibt es Aufgaben, die ich f√ºr die Bruderschaft erledigen kann?
 	AI_Output (self, other,"Info_BaalNamib_BROTHERHOOD_02_02"); //Unser Meister, der weise Y'Berion, schickt nach einem Novizen. Nun, da du ein Bruder der Gemeinschaft geworden bist, geh zu ihm und biete ihm deine Hilfe an.
 	Info_Clearchoices ( Info_BaalNamib_BROTHERHOOD);
 	Info_Addchoice (Info_BaalNamib_BROTHERHOOD,"In Ordnung, ich werde ihn sofort aufsuchen"		,Info_BaalNamib_BROTHERHOOD_OK);
 	Info_Addchoice (Info_BaalNamib_BROTHERHOOD,"Wo finde ich Y'Berion?"							,Info_BaalNamib_BROTHERHOOD_YBWO);  
-	Info_Addchoice (Info_BaalNamib_BROTHERHOOD,"Weiﬂt du, was ich f¸r Y'berion erledigen soll?"	,Info_BaalNamib_BROTHERHOOD_YBWAS);
+	Info_Addchoice (Info_BaalNamib_BROTHERHOOD,"Wei√üt du, was ich f√ºr Y'berion erledigen soll?"	,Info_BaalNamib_BROTHERHOOD_YBWAS);
 	var C_NPC Kalom;
 	Kalom = Hlp_GetNpc (GUR_1201_CORKALOM); 
 	Npc_ExchangeRoutine (Kalom,"kapitel2");
@@ -211,20 +211,20 @@ FUNC VOID Info_BaalNamib_BROTHERHOOD_Info()
 FUNC VOID Info_BaalNamib_BROTHERHOOD_YBWO()
 {
 	AI_Output (other, self,"Info_BaalNamib_BROTHERHOOD_YBWO_15_01"); //Wo finde ich Y'Berion?
-	AI_Output (self, other,"Info_BaalNamib_BROTHERHOOD_YBWO_02_02"); //Er h‰lt sich im Inneren des Tempelbergs auf. Wie immer.
+	AI_Output (self, other,"Info_BaalNamib_BROTHERHOOD_YBWO_02_02"); //Er h√§lt sich im Inneren des Tempelbergs auf. Wie immer.
 
 };	
 FUNC VOID Info_BaalNamib_BROTHERHOOD_YBWAS()
 {
-	AI_Output (other, self,"Info_BaalNamib_BROTHERHOOD_YBWAS_15_01"); //Weiﬂt du, was ich f¸r Y'Berion erledigen soll?
-	AI_Output (self, other,"Info_BaalNamib_BROTHERHOOD_YBWAS_02_02"); //Eine groﬂe Beschwˆrung wird stattfinden. Allerdings brauchen wir daf¸r einen magischen Gegenstand.
-	AI_Output (self, other,"Info_BaalNamib_BROTHERHOOD_YBWAS_02_03"); //Y'Berion sucht M‰nner, die mutig genug sind, ihm dieses Artefakt zu bringen.
+	AI_Output (other, self,"Info_BaalNamib_BROTHERHOOD_YBWAS_15_01"); //Wei√üt du, was ich f√ºr Y'Berion erledigen soll?
+	AI_Output (self, other,"Info_BaalNamib_BROTHERHOOD_YBWAS_02_02"); //Eine gro√üe Beschw√∂rung wird stattfinden. Allerdings brauchen wir daf√ºr einen magischen Gegenstand.
+	AI_Output (self, other,"Info_BaalNamib_BROTHERHOOD_YBWAS_02_03"); //Y'Berion sucht M√§nner, die mutig genug sind, ihm dieses Artefakt zu bringen.
 	AI_Output (other, self,"Info_BaalNamib_BROTHERHOOD_YBWAS_15_04"); //Klingt einfach.
-	AI_Output (self, other,"Info_BaalNamib_BROTHERHOOD_YBWAS_02_05"); //Wenn es einfach w‰re, h‰tten wir den Gegenstand schon. Sprich erst mal mit Y'Berion. Er wird dir alles erkl‰ren.
+	AI_Output (self, other,"Info_BaalNamib_BROTHERHOOD_YBWAS_02_05"); //Wenn es einfach w√§re, h√§tten wir den Gegenstand schon. Sprich erst mal mit Y'Berion. Er wird dir alles erkl√§ren.
 };	
 FUNC VOID Info_BaalNamib_BROTHERHOOD_OK()
 {
 	AI_Output (other, self,"Info_BaalNamib_BROTHERHOOD_OK_15_01"); //In Ordnung, ich werde ihn sofort aufsuchen.
-	AI_Output (self, other,"Info_BaalNamib_BROTHERHOOD_OK_02_02"); //Mˆge der Schl‰fer dich besch¸tzen
+	AI_Output (self, other,"Info_BaalNamib_BROTHERHOOD_OK_02_02"); //M√∂ge der Schl√§fer dich besch√ºtzen
 	Info_Clearchoices ( Info_BaalNamib_BROTHERHOOD);
 };	

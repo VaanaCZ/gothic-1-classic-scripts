@@ -45,7 +45,7 @@ FUNC VOID DIA_Vlk_534_LeaveMe_Info()
 {
 	AI_Output (other, self,"DIA_Vlk_534_LeaveMe_15_00"); //Warum bist du hier und nicht im Lager?
 	AI_Output (self, other,"DIA_Vlk_534_LeaveMe_02_01"); //Ich warte darauf, dass ein Kumpel von mir aus der Mine kommt. Er schuldet mit noch Erz.
-	AI_Output (self, other,"DIA_Vlk_534_LeaveMe_02_02"); //Ohne das Erz kann ich mich nicht im Lager sehen lassen - sonst kann ich den Gardisten kein Schutzgeld zahlen und dann kann die Sache für einen ziemlich unangenehm werden.
+	AI_Output (self, other,"DIA_Vlk_534_LeaveMe_02_02"); //Ohne das Erz kann ich mich nicht im Lager sehen lassen - sonst kann ich den Gardisten kein Schutzgeld zahlen und dann kann die Sache fÃ¼r einen ziemlich unangenehm werden.
 
 	AI_StopProcessInfos	(self);
 };

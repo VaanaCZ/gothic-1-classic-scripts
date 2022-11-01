@@ -47,7 +47,7 @@ FUNC VOID DIA_Snaf_Hello_Info()
 	AI_Output (self, other,"DIA_Snaf_Hello_01_01"); //Nicht schlecht. Wenn man gut kochen kann, hat man viele Freunde hier.
 	AI_Output (self, other,"DIA_Snaf_Hello_01_02");	//Willst du etwas von meinem Reiseintopf? Hier, nimm und lass es dir schmecken.
 	AI_Output (other, self,"DIA_Snaf_Hello_15_03"); //Danke.
-	AI_Output (self, other,"DIA_Snaf_Hello_01_04");	//Du könntest mir einen Gefallen tun.
+	AI_Output (self, other,"DIA_Snaf_Hello_01_04");	//Du kÃ¶nntest mir einen Gefallen tun.
 	
 	CreateInvItem (self,ItFoRice);
 	B_GiveInvItems(self,other,ItFoRice,1);
@@ -67,7 +67,7 @@ INSTANCE DIA_Snaf_Zutaten (C_INFO)
 	condition		= DIA_Snaf_Zutaten_Condition;
 	information		= DIA_Snaf_Zutaten_Info;
 	permanent		= 0;
-	description		="Was kann ich für dich tun?";
+	description		="Was kann ich fÃ¼r dich tun?";
 };
 
 FUNC INT DIA_Snaf_Zutaten_Condition()
@@ -80,40 +80,40 @@ FUNC INT DIA_Snaf_Zutaten_Condition()
 
 FUNC VOID DIA_Snaf_Zutaten_Info()
 {
-	AI_Output (other, self,"DIA_Snaf_Zutaten_15_00"); //Was kann ich für dich tun?
-	AI_Output (self, other,"DIA_Snaf_Zutaten_01_01"); //Du bist sicher gutes Essen gewöhnt. Ich hab' da ein neues Rezept: Fleischwanzen-Ragout à la Snaf, mit Reis und Pilzen.
-	AI_Output (self, other,"DIA_Snaf_Zutaten_01_02"); //Du kannst haben, so viel du willst, aber ich brauche aber noch 3 Fleischwanzen und einige Höllenpilze - 5 müssten reichen.
+	AI_Output (other, self,"DIA_Snaf_Zutaten_15_00"); //Was kann ich fÃ¼r dich tun?
+	AI_Output (self, other,"DIA_Snaf_Zutaten_01_01"); //Du bist sicher gutes Essen gewÃ¶hnt. Ich hab' da ein neues Rezept: Fleischwanzen-Ragout Ã  la Snaf, mit Reis und Pilzen.
+	AI_Output (self, other,"DIA_Snaf_Zutaten_01_02"); //Du kannst haben, so viel du willst, aber ich brauche aber noch 3 Fleischwanzen und einige HÃ¶llenpilze - 5 mÃ¼ssten reichen.
 	
 	Info_ClearChoices(DIA_Snaf_Zutaten);
 	Info_AddChoice	 (DIA_Snaf_Zutaten, "Willst du, dass ich kotze?"	,DIA_Snaf_Zutaten_KOTZ);
-	Info_AddChoice	 (DIA_Snaf_Zutaten, "Hört sich gut an."			,DIA_Snaf_Zutaten_DoIt);
+	Info_AddChoice	 (DIA_Snaf_Zutaten, "HÃ¶rt sich gut an."			,DIA_Snaf_Zutaten_DoIt);
 };
 
 func void DIA_Snaf_Zutaten_KOTZ()
 {
 	AI_Output (other, self,"DIA_Snaf_Zutaten_KOTZ_15_00"); //Willst du, dass ich kotze?
 	AI_Output (self, other,"DIA_Snaf_Zutaten_KOTZ_01_01"); //Du musst es ja nicht essen, aber zumindest probieren solltest du es! Falls du an die Sachen rankommst, denk an mich.
-	AI_Output (self, other,"DIA_Snaf_Zutaten_KOTZ_01_02"); //Ich hab' schon jemanden geschickt, aber der kommt einfach nicht wieder - ist bestimmt zum Neuen Lager übergelaufen.
+	AI_Output (self, other,"DIA_Snaf_Zutaten_KOTZ_01_02"); //Ich hab' schon jemanden geschickt, aber der kommt einfach nicht wieder - ist bestimmt zum Neuen Lager Ã¼bergelaufen.
 	Snaf_Zutaten = LOG_RUNNING;
 	
 	Log_CreateTopic(CH1_SnafsRecipe, LOG_MISSION);
 	Log_SetTopicStatus(CH1_SnafsRecipe, LOG_RUNNING);
-	B_LogEntry( CH1_SnafsRecipe, "Der Koch Snaf im Aussenring des Alten Lagers hat mich geschickt, ihm 3 Fleischwanzen und 5 Höllenpilze für ein neues Rezept zu besorgen.");
+	B_LogEntry( CH1_SnafsRecipe, "Der Koch Snaf im Aussenring des Alten Lagers hat mich geschickt, ihm 3 Fleischwanzen und 5 HÃ¶llenpilze fÃ¼r ein neues Rezept zu besorgen.");
 	
 	Info_ClearChoices(DIA_Snaf_Zutaten);
 };
 
 func void DIA_Snaf_Zutaten_DoIt()
 {
-	AI_Output (other, self,"DIA_Snaf_Zutaten_DoIt_15_00"); //Hört sich gut an.
+	AI_Output (other, self,"DIA_Snaf_Zutaten_DoIt_15_00"); //HÃ¶rt sich gut an.
 	AI_Output (self, other,"DIA_Snaf_Zutaten_DoIt_01_01"); //Dann sieh mal zu, dass du die Sachen besorgst.
-	AI_Output (self, other,"DIA_Snaf_Zutaten_DoIt_01_02"); //Der Letzte, den ich losgeschickt hab, kommt einfach nicht wieder - ist bestimmt zum Neuen Lager übergelaufen.
+	AI_Output (self, other,"DIA_Snaf_Zutaten_DoIt_01_02"); //Der Letzte, den ich losgeschickt hab, kommt einfach nicht wieder - ist bestimmt zum Neuen Lager Ã¼bergelaufen.
 	Snaf_Zutaten = LOG_RUNNING;
 	Snaf_FreeMBRagout = TRUE;
 		
     Log_CreateTopic(CH1_SnafsRecipe, LOG_MISSION);
 	Log_SetTopicStatus(CH1_SnafsRecipe, LOG_RUNNING);
-	B_LogEntry( CH1_SnafsRecipe, "Der Koch Snaf im Aussenring des Alten Lagers hat mich geschickt, ihm 3 Fleischwanzen und 5 Höllenpilze für ein neues Rezept zu besorgen. Er gibt mir dann auch was ab.");		
+	B_LogEntry( CH1_SnafsRecipe, "Der Koch Snaf im Aussenring des Alten Lagers hat mich geschickt, ihm 3 Fleischwanzen und 5 HÃ¶llenpilze fÃ¼r ein neues Rezept zu besorgen. Er gibt mir dann auch was ab.");		
 			
 	Info_ClearChoices(DIA_Snaf_Zutaten);	
 };
@@ -146,7 +146,7 @@ FUNC VOID DIA_Snaf_ZutatenSuccess_Info()
 	AI_Output (self, other,"DIA_Snaf_ZutatenSuccess_01_01"); //Gut, ich brauch sie nur noch dazuzugeben, dann ist der Eintopf fertig ... warte ...
 	
 	CreateInvItems(other, ItFo_Plants_Mushroom_01, 3);
-	B_GiveInvItems(other,self,ItFo_Plants_Mushroom_01,8);//Notwendig zur Anzeige 8 Items übergeben, wird sofort angepasst
+	B_GiveInvItems(other,self,ItFo_Plants_Mushroom_01,8);//Notwendig zur Anzeige 8 Items Ã¼bergeben, wird sofort angepasst
 	
 	Npc_RemoveInvItems(self, ItFo_Plants_Mushroom_01, 8);//Alle Zutaten weg
 	Npc_RemoveInvItems(other, ItAt_MeatBug_01, 3);
@@ -157,7 +157,7 @@ FUNC VOID DIA_Snaf_ZutatenSuccess_Info()
 	Snaf_Zutaten = LOG_SUCCESS;
 	
 	Log_SetTopicStatus	(CH1_SnafsRecipe, LOG_SUCCESS);
-	B_LogEntry			(CH1_SnafsRecipe, "Snaf war sehr zufrieden, als ich ihm die Zutaten übergab.");
+	B_LogEntry			(CH1_SnafsRecipe, "Snaf war sehr zufrieden, als ich ihm die Zutaten Ã¼bergab.");
 	
 	if Snaf_FreeMBRagout==TRUE
 	{
@@ -235,10 +235,10 @@ FUNC INT DIA_Snaf_WhereMeatbugs_Condition()
 FUNC VOID DIA_Snaf_WhereMeatbugs_Info()
 {
 	AI_Output (other, self,"DIA_Snaf_WhereMeatbugs_15_00"); //Wo finde ich Fleischwanzen?
-	AI_Output (self, other,"DIA_Snaf_WhereMeatbugs_01_01"); //Überall da, wo Müll rumliegt. An der Burgmauer gibt es einige verlassene Hütten, da solltest du welche finden.
-	AI_Output (self, other,"DIA_Snaf_WhereMeatbugs_01_02"); //Lass dich von ihrem fiesen Aussehen nicht täuschen. Gekocht sind sie lecker.
+	AI_Output (self, other,"DIA_Snaf_WhereMeatbugs_01_01"); //Ãœberall da, wo MÃ¼ll rumliegt. An der Burgmauer gibt es einige verlassene HÃ¼tten, da solltest du welche finden.
+	AI_Output (self, other,"DIA_Snaf_WhereMeatbugs_01_02"); //Lass dich von ihrem fiesen Aussehen nicht tÃ¤uschen. Gekocht sind sie lecker.
 	
-    B_LogEntry( CH1_SnafsRecipe, "Fleischwanzen gibt es bei den verlassenen Hütten an der Burgmauer.");			
+    B_LogEntry( CH1_SnafsRecipe, "Fleischwanzen gibt es bei den verlassenen HÃ¼tten an der Burgmauer.");			
 };
 
 // **************************************************
@@ -252,7 +252,7 @@ INSTANCE DIA_Snaf_WhereMushrooms (C_INFO)
 	condition		= DIA_Snaf_WhereMushrooms_Condition;
 	information		= DIA_Snaf_WhereMushrooms_Info;
 	permanent		= 0;
-	description		= "Wo finde ich Höllenpilze?";
+	description		= "Wo finde ich HÃ¶llenpilze?";
 };
 
 FUNC INT DIA_Snaf_WhereMushrooms_Condition()
@@ -265,10 +265,10 @@ FUNC INT DIA_Snaf_WhereMushrooms_Condition()
 
 FUNC VOID DIA_Snaf_WhereMushrooms_Info()
 {
-	AI_Output (other, self,"DIA_Snaf_WhereMushrooms_15_00"); //Wo finde ich Höllenpilze?
-	AI_Output (self, other,"DIA_Snaf_WhereMushrooms_01_01"); //Wenn du aus dem Südtor rausgehst - das ist der umgestürzte Turm - findest du direkt vor dir eine Ebene, auf der Pilze wachsen.
+	AI_Output (other, self,"DIA_Snaf_WhereMushrooms_15_00"); //Wo finde ich HÃ¶llenpilze?
+	AI_Output (self, other,"DIA_Snaf_WhereMushrooms_01_01"); //Wenn du aus dem SÃ¼dtor rausgehst - das ist der umgestÃ¼rzte Turm - findest du direkt vor dir eine Ebene, auf der Pilze wachsen.
 	
-	B_LogEntry( CH1_SnafsRecipe, "Höllenpilze gibt es auf der Ebene vor dem umgestürzten Turm, dem Südtor.");			
+	B_LogEntry( CH1_SnafsRecipe, "HÃ¶llenpilze gibt es auf der Ebene vor dem umgestÃ¼rzten Turm, dem SÃ¼dtor.");			
 };
 
 // **************************************************
@@ -305,7 +305,7 @@ FUNC VOID DIA_Snaf_WhereNek_Info()
 		Log_CreateTopic		(CH1_LostNek,	LOG_MISSION);
 		Log_SetTopicStatus	(CH1_LostNek,	LOG_RUNNING);
 	};
-	B_LogEntry			(CH1_LostNek,	"Der Koch Snaf hat Nek zum letzten Mal gesehen, als er Pilze pflücken ging.");
+	B_LogEntry			(CH1_LostNek,	"Der Koch Snaf hat Nek zum letzten Mal gesehen, als er Pilze pflÃ¼cken ging.");
 };
 
 

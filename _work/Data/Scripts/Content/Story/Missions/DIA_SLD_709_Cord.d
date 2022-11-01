@@ -32,7 +32,7 @@ instance  SLD_709_Cord_TRAINOFFER (C_INFO)
 	information		= SLD_709_Cord_TRAINOFFER_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Ich will besser mit Einhandwaffen umgehen kˆnnen."; 
+	description		= "Ich will besser mit Einhandwaffen umgehen k√∂nnen."; 
 };
 
 FUNC int  SLD_709_Cord_TRAINOFFER_Condition()
@@ -45,11 +45,11 @@ FUNC int  SLD_709_Cord_TRAINOFFER_Condition()
 };
 FUNC void  SLD_709_Cord_TRAINOFFER_Info()
 {
-	AI_Output (other, self,"SLD_709_Cord_TRAINOFFER_Info_15_01"); //Ich will besser mit Einhandwaffen umgehen kˆnnen.
-	AI_Output (self, other,"SLD_709_Cord_TRAINOFFER_Info_14_02"); //Nat¸rlich. Kostet aber 'ne Kleinigkeit. 30 Erz will ich sehen.
+	AI_Output (other, self,"SLD_709_Cord_TRAINOFFER_Info_15_01"); //Ich will besser mit Einhandwaffen umgehen k√∂nnen.
+	AI_Output (self, other,"SLD_709_Cord_TRAINOFFER_Info_14_02"); //Nat√ºrlich. Kostet aber 'ne Kleinigkeit. 30 Erz will ich sehen.
 
 	Log_CreateTopic	(GE_TeacherNC,	LOG_NOTE);
-	B_LogEntry		(GE_TeacherNC,	"Cord der Sˆldner, kann mich im Kampf mit EINHƒNDERN schulen. Er ist tags¸ber auf dem Felsplateau am See zu finden.");
+	B_LogEntry		(GE_TeacherNC,	"Cord der S√∂ldner, kann mich im Kampf mit EINH√ÑNDERN schulen. Er ist tags√ºber auf dem Felsplateau am See zu finden.");
 };  
 /*------------------------------------------------------------------------
 						EINHANDKAMPF	DIE ERSTE LEHRSTUNDE							
@@ -75,27 +75,27 @@ FUNC int  SLD_709_Cord_TRAIN_Condition()
 };
 FUNC void  SLD_709_Cord_TRAIN_Info()
 {
-	AI_Output (other, self,"SLD_709_Cord_TRAIN_Info_15_00"); //Ich will besser mit Einhandwaffen umgehen kˆnnen.
+	AI_Output (other, self,"SLD_709_Cord_TRAIN_Info_15_00"); //Ich will besser mit Einhandwaffen umgehen k√∂nnen.
 
 	if (Npc_HasItems (hero,ItMiNugget) >= 30)
 	{
 		if B_GiveSkill(hero,NPC_TALENT_1H,1,LPCOST_TALENT_1H_1)
 		{
 			AI_Output			(self,other,"SLD_709_Cord_TRAIN_14_01"); //Gute Entscheidung! Um deine Technik zu verbessern, musst du erst einmal lernen, deine Waffe richtig zu halten.
-			AI_Output			(self,other,"SLD_709_Cord_TRAIN_14_02"); //Anf‰nger neigen dazu, Einhandwaffen mit beiden H‰nden zu halten. Mit so was f‰ngst du am besten gar nicht erst an, das behindert dich nur.
-			AI_Output			(self,other,"SLD_709_Cord_TRAIN_14_03"); //Halt die Waffe mit einer Hand, Klinge nach oben, und dann immer schˆn schwingen lassen.
+			AI_Output			(self,other,"SLD_709_Cord_TRAIN_14_02"); //Anf√§nger neigen dazu, Einhandwaffen mit beiden H√§nden zu halten. Mit so was f√§ngst du am besten gar nicht erst an, das behindert dich nur.
+			AI_Output			(self,other,"SLD_709_Cord_TRAIN_14_03"); //Halt die Waffe mit einer Hand, Klinge nach oben, und dann immer sch√∂n schwingen lassen.
 			AI_Output			(self,other,"SLD_709_Cord_TRAIN_14_04"); //Du musst lernen, den Schwung deiner Waffe mit deinen Bewegungen in Einklang zu bringen, dann kannst du schneller zuschlagen.
-			AI_Output			(self,other,"SLD_709_Cord_TRAIN_14_05"); //Wenn du dich an meine Anweisungen h‰ltst, wirst du in Zukunft eleganter und vor allem schneller k‰mpfen.
+			AI_Output			(self,other,"SLD_709_Cord_TRAIN_14_05"); //Wenn du dich an meine Anweisungen h√§ltst, wirst du in Zukunft eleganter und vor allem schneller k√§mpfen.
 			B_PracticeCombat	("NC_WATERFALL_TOP01");
-			AI_Output			(self,other,"SLD_709_Cord_TRAIN_14_06"); //Ach, und noch was: Manche Treffer richten mehr Schaden an als andere! Als Anf‰nger hast du nur eine geringe Chance, solche kritischen Treffer zu landen.
-			AI_Output			(self,other,"SLD_709_Cord_TRAIN_14_07"); //Aber je weiter du fortschreitest, desto besser wird diese F‰higkeit.
+			AI_Output			(self,other,"SLD_709_Cord_TRAIN_14_06"); //Ach, und noch was: Manche Treffer richten mehr Schaden an als andere! Als Anf√§nger hast du nur eine geringe Chance, solche kritischen Treffer zu landen.
+			AI_Output			(self,other,"SLD_709_Cord_TRAIN_14_07"); //Aber je weiter du fortschreitest, desto besser wird diese F√§higkeit.
 			B_GiveInvItems (hero, self,ItMiNugget,30);
 			SLD_709_Cord_TRAIN.permanent = 0;
 		};
 	}
 	else
 	{
-		AI_Output (self, other,"KDF_402_Corristo_HEAVYARMOR_Info_14_03"); //Du besitzt nicht gen¸gend Erz.
+		AI_Output (self, other,"KDF_402_Corristo_HEAVYARMOR_Info_14_03"); //Du besitzt nicht gen√ºgend Erz.
 	};
 };  
 /*------------------------------------------------------------------------
@@ -129,17 +129,17 @@ FUNC void  SLD_709_Cord_TRAINAGAIN_Info()
 	{
 		if B_GiveSkill(hero,NPC_TALENT_1H,2,LPCOST_TALENT_1H_2)
 		{
-			AI_Output		(self, other,"SLD_709_Cord_TRAINAGAIN_Info_14_02"); //Na gut, die Grundkenntnisse hast du ja schon. Wenn du die Waffe gesenkt h‰ltst, dann kannst du direkt mehr Wucht in deinen ersten Schlag legen.
-			AI_Output		(self, other,"SLD_709_Cord_TRAINAGAIN_Info_14_03"); //Nutze den Schwung, weiﬂt du noch? Gut, der n‰chste Schritt ist, dass du deinen Kˆrper mehr einsetzt. Wenn du zweimal geschlagen hast, drehe dich um die eigene Achse, damit ¸berrascht du den Gegner und bist in einer optimalen Position.
+			AI_Output		(self, other,"SLD_709_Cord_TRAINAGAIN_Info_14_02"); //Na gut, die Grundkenntnisse hast du ja schon. Wenn du die Waffe gesenkt h√§ltst, dann kannst du direkt mehr Wucht in deinen ersten Schlag legen.
+			AI_Output		(self, other,"SLD_709_Cord_TRAINAGAIN_Info_14_03"); //Nutze den Schwung, wei√üt du noch? Gut, der n√§chste Schritt ist, dass du deinen K√∂rper mehr einsetzt. Wenn du zweimal geschlagen hast, drehe dich um die eigene Achse, damit √ºberrascht du den Gegner und bist in einer optimalen Position.
 			AI_Output		(self, other,"SLD_709_Cord_TRAINAGAIN_Info_14_04"); //Dann ziehst du deine Klinge noch einmal quer von rechts nach links.
 			B_PracticeCombat("NC_WATERFALL_TOP01");
-			AI_Output		(self, other,"SLD_709_Cord_TRAINAGAIN_Info_14_05"); //Und wieder von vorne. Vergiss nicht, ‹bung macht den Meister. Also, geh jetzt und werde ein wahrer Meister des einh‰ndigen Kampfes.
+			AI_Output		(self, other,"SLD_709_Cord_TRAINAGAIN_Info_14_05"); //Und wieder von vorne. Vergiss nicht, √úbung macht den Meister. Also, geh jetzt und werde ein wahrer Meister des einh√§ndigen Kampfes.
 			B_GiveInvItems	(hero, self, ItMiNugget, 50);
 			SLD_709_Cord_TRAINAGAIN.permanent = 0;
 		};
 	}
 	else
 	{
-		AI_Output (self, other,"KDF_402_Corristo_HEAVYARMOR_Info_14_03"); //Du besitzt nicht gen¸gend Erz.
+		AI_Output (self, other,"KDF_402_Corristo_HEAVYARMOR_Info_14_03"); //Du besitzt nicht gen√ºgend Erz.
 	};
 }; 

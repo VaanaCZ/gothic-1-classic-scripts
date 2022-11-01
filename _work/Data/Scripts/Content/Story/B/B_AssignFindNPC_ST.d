@@ -65,26 +65,26 @@ FUNC VOID Info_FindNPC_ST_CorAngar()
 		{
 			if (self.voice == 2)
 			{
-				AI_Output(self,other,"Info_FindNPC_ST_CorAngar_02_01"); //Auf der zweiten Ebene ist der groﬂe ‹bungsplatz der Templer. Dort kannst du ihn tags¸ber finden.
+				AI_Output(self,other,"Info_FindNPC_ST_CorAngar_02_01"); //Auf der zweiten Ebene ist der gro√üe √úbungsplatz der Templer. Dort kannst du ihn tags√ºber finden.
 			}
 			else if (self.voice == 3)
 			{
-				AI_Output(self,other,"Info_FindNPC_ST_CorAngar_03_01"); //Auf der zweiten Ebene ist der groﬂe ‹bungsplatz der Templer. Dort kannst du ihn tags¸ber finden.
+				AI_Output(self,other,"Info_FindNPC_ST_CorAngar_03_01"); //Auf der zweiten Ebene ist der gro√üe √úbungsplatz der Templer. Dort kannst du ihn tags√ºber finden.
 			}
 			else if (self.voice == 5)
 			{
-				AI_Output(self,other,"Info_FindNPC_ST_CorAngar_05_01"); //Auf der zweiten Ebene ist der groﬂe ‹bungsplatz der Templer. Dort kannst du ihn tags¸ber finden.
+				AI_Output(self,other,"Info_FindNPC_ST_CorAngar_05_01"); //Auf der zweiten Ebene ist der gro√üe √úbungsplatz der Templer. Dort kannst du ihn tags√ºber finden.
 			};
 		}
 		else if (self.guild == GIL_TPL) 
 		{
 			if (self.voice == 8)
 			{
-				AI_Output(self,other,"Info_FindNPC_ST_CorAngar_08_01"); //Auf der zweiten Ebene ist der groﬂe ‹bungsplatz der Templer. Dort kannst du ihn tags¸ber finden.
+				AI_Output(self,other,"Info_FindNPC_ST_CorAngar_08_01"); //Auf der zweiten Ebene ist der gro√üe √úbungsplatz der Templer. Dort kannst du ihn tags√ºber finden.
 			}
 			else if (self.voice == 13)
 			{
-				AI_Output(self,other,"Info_FindNPC_ST_CorAngar_13_01"); //Auf der zweiten Ebene ist der groﬂe ‹bungsplatz der Templer. Dort kannst du ihn tags¸ber finden.
+				AI_Output(self,other,"Info_FindNPC_ST_CorAngar_13_01"); //Auf der zweiten Ebene ist der gro√üe √úbungsplatz der Templer. Dort kannst du ihn tags√ºber finden.
 			};
 		};
 	};
@@ -159,26 +159,26 @@ FUNC VOID Info_FindNPC_ST_YBerion()
 		{
 			if (self.voice == 2)
 			{
-				AI_Output(self,other,"Info_FindNPC_ST_YBerion_02_01"); //Der Erleuchtete lebt zur¸ckgezogen in der Sicherheit des Tempelberges. Er kommt nur zu besonderen Anl‰ssen heraus.
+				AI_Output(self,other,"Info_FindNPC_ST_YBerion_02_01"); //Der Erleuchtete lebt zur√ºckgezogen in der Sicherheit des Tempelberges. Er kommt nur zu besonderen Anl√§ssen heraus.
 			}
 			else if (self.voice == 3)
 			{
-				AI_Output(self,other,"Info_FindNPC_ST_YBerion_03_01"); //Der Erleuchtete lebt zur¸ckgezogen in der Sicherheit des Tempelberges. Er kommt nur zu besonderen Anl‰ssen heraus.
+				AI_Output(self,other,"Info_FindNPC_ST_YBerion_03_01"); //Der Erleuchtete lebt zur√ºckgezogen in der Sicherheit des Tempelberges. Er kommt nur zu besonderen Anl√§ssen heraus.
 			}
 			else if (self.voice == 5)
 			{
-				AI_Output(self,other,"Info_FindNPC_ST_YBerion_05_01"); //Der Erleuchtete lebt zur¸ckgezogen in der Sicherheit des Tempelberges. Er kommt nur zu besonderen Anl‰ssen heraus.
+				AI_Output(self,other,"Info_FindNPC_ST_YBerion_05_01"); //Der Erleuchtete lebt zur√ºckgezogen in der Sicherheit des Tempelberges. Er kommt nur zu besonderen Anl√§ssen heraus.
 			};
 		}
 		else if (self.guild == GIL_TPL) 
 		{
 			if (self.voice == 8)
 			{
-				AI_Output(self,other,"Info_FindNPC_ST_YBerion_08_01"); //Der Erleuchtete lebt zur¸ckgezogen in der Sicherheit des Tempelberges. Er kommt nur zu besonderen Anl‰ssen heraus.
+				AI_Output(self,other,"Info_FindNPC_ST_YBerion_08_01"); //Der Erleuchtete lebt zur√ºckgezogen in der Sicherheit des Tempelberges. Er kommt nur zu besonderen Anl√§ssen heraus.
 			}
 			else if (self.voice == 13)
 			{
-				AI_Output(self,other,"Info_FindNPC_ST_YBerion_13_01"); //Der Erleuchtete lebt zur¸ckgezogen in der Sicherheit des Tempelberges. Er kommt nur zu besonderen Anl‰ssen heraus.
+				AI_Output(self,other,"Info_FindNPC_ST_YBerion_13_01"); //Der Erleuchtete lebt zur√ºckgezogen in der Sicherheit des Tempelberges. Er kommt nur zu besonderen Anl√§ssen heraus.
 			};
 		};
 	};

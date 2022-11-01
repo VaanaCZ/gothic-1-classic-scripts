@@ -37,7 +37,7 @@ INSTANCE Info_Org_13_EinerVonEuchWerden (C_INFO) // E1
 	condition	= Info_Org_13_EinerVonEuchWerden_Condition;
 	information	= Info_Org_13_EinerVonEuchWerden_Info;
 	permanent	= 1;
-	description = "Was muß ich tun, wenn ich mich dem Lager anschließen will?";
+	description = "Was muÃŸ ich tun, wenn ich mich dem Lager anschlieÃŸen will?";
 };                       
 
 FUNC INT Info_Org_13_EinerVonEuchWerden_Condition()
@@ -50,8 +50,8 @@ FUNC INT Info_Org_13_EinerVonEuchWerden_Condition()
 
 FUNC VOID Info_Org_13_EinerVonEuchWerden_Info()
 {
-	AI_Output(other,self,"Info_Org_13_EinerVonEuchWerden_15_00"); //Was muss ich tun, wenn ich mich dem Lager anschließen will?
-	AI_Output(self,other,"Info_Org_13_EinerVonEuchWerden_13_01"); //Geh auf die Felder und hilf den Bauern beim Reispflücken.
+	AI_Output(other,self,"Info_Org_13_EinerVonEuchWerden_15_00"); //Was muss ich tun, wenn ich mich dem Lager anschlieÃŸen will?
+	AI_Output(self,other,"Info_Org_13_EinerVonEuchWerden_13_01"); //Geh auf die Felder und hilf den Bauern beim ReispflÃ¼cken.
 };
 
 // *************************************************************************
@@ -75,7 +75,7 @@ FUNC INT Info_Org_13_WichtigePersonen_Condition()
 FUNC VOID Info_Org_13_WichtigePersonen_Info()
 {
 	AI_Output(other,self,"Info_Org_13_WichtigePersonen_15_00"); //Wer hat hier das Sagen?
-	AI_Output(self,other,"Info_Org_13_WichtigePersonen_13_01"); //Lee führt die Söldner an, wenn du DAS wissen wolltest. Aber ich bin kein Söldner und ich lasse mir von den Pennern auch bestimmt nichts sagen!
+	AI_Output(self,other,"Info_Org_13_WichtigePersonen_13_01"); //Lee fÃ¼hrt die SÃ¶ldner an, wenn du DAS wissen wolltest. Aber ich bin kein SÃ¶ldner und ich lasse mir von den Pennern auch bestimmt nichts sagen!
 	var C_NPC Lee;			Lee		= Hlp_GetNpc(Sld_700_Lee);
 	Lee.aivar[AIV_FINDABLE] = TRUE;
 };
@@ -90,7 +90,7 @@ INSTANCE Info_Org_13_DasLager(C_INFO)
 	condition	= Info_Org_13_DasLager_Condition;
 	information	= Info_Org_13_DasLager_Info;
 	permanent	= 1;
-	description = "Ich will mehr über dieses Lager erfahren.";
+	description = "Ich will mehr Ã¼ber dieses Lager erfahren.";
 };                       
 
 FUNC INT Info_Org_13_DasLager_Condition()
@@ -100,7 +100,7 @@ FUNC INT Info_Org_13_DasLager_Condition()
 
 FUNC VOID Info_Org_13_DasLager_Info()
 {
-	AI_Output(other,self,"Info_Org_13_DasLager_15_00"); //Ich will mehr über dieses Lager erfahren.
+	AI_Output(other,self,"Info_Org_13_DasLager_15_00"); //Ich will mehr Ã¼ber dieses Lager erfahren.
 	AI_Output(self,other,"Info_Org_13_DasLager_13_01"); //Dann geh rein und schau es dir an. Solange du nicht einer von Gomez' Leuten bist, wird dich keiner aufhalten.
 };
 
@@ -163,7 +163,7 @@ FUNC VOID Info_Org_13_Krautprobe_Info()
 		else if (Npc_HasItems(other,ItMiJoint_3))
 		{	B_GiveInvItems(other,self,ItMiJoint_3,1);	 };
 		
-		AI_Output(self,other,"Info_Org_13_Krautprobe_13_01"); //Hast du was? Ich nehm einen Stengel für 10 Erz.
+		AI_Output(self,other,"Info_Org_13_Krautprobe_13_01"); //Hast du was? Ich nehm einen Stengel fÃ¼r 10 Erz.
 		AI_Output(self,other,"Info_Org_13_Krautprobe_13_02"); //Kannst jederzeit wieder kommen, Bruder.
 		
 		CreateInvItems(self,itminugget,10);
@@ -173,7 +173,7 @@ FUNC VOID Info_Org_13_Krautprobe_Info()
 	}
 	else
 	{
-		AI_Output (self, other,"Info_Org_13_Krautprobe_No_Joint_13_00"); //Aber du hast nichts. Mach keine dummen Späße mit mir, klar?
+		AI_Output (self, other,"Info_Org_13_Krautprobe_No_Joint_13_00"); //Aber du hast nichts. Mach keine dummen SpÃ¤ÃŸe mit mir, klar?
 	};
 };
 	

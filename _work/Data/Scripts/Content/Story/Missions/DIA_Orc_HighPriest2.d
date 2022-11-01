@@ -21,11 +21,11 @@ FUNC VOID Info_HighPriest2_Info()
 	AI_SetWalkmode		(self, NPC_WALK);
 	AI_GotoNpc			(self, other);
 	
-	AI_Output			(self, other,"Info_HighPriest2_17_01"); //EIN UNGLÄUBIGEEEEER IM HORT DES MEEEISTERS!!!!
-	AI_Output			(self, other,"Info_HighPriest2_17_02"); //VERDAMMMMMMMNIS ÜBER DIIIICH!
+	AI_Output			(self, other,"Info_HighPriest2_17_01"); //EIN UNGLÃ„UBIGEEEEER IM HORT DES MEEEISTERS!!!!
+	AI_Output			(self, other,"Info_HighPriest2_17_02"); //VERDAMMMMMMMNIS ÃœBER DIIIICH!
 	AI_Output			(other, self,"Info_HighPriest2_15_03"); //Verdammt sein wirst DU, stinkender Moderteppich!
 	
-	B_LogEntry			(CH4_EnterTemple,	"Varrag-Kasorg, ein weiterer der fünf Ork-Schamanen, wird nun seine erbärmliche Existenz mir zu Füßen beenden!");
+	B_LogEntry			(CH4_EnterTemple,	"Varrag-Kasorg, ein weiterer der fÃ¼nf Ork-Schamanen, wird nun seine erbÃ¤rmliche Existenz mir zu FÃ¼ÃŸen beenden!");
 
 	AI_StopProcessInfos	(self );
 

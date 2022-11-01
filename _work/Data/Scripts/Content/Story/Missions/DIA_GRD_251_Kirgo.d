@@ -46,8 +46,8 @@ FUNC INT Info_Kirgo_What_Condition()
 func VOID Info_Kirgo_What_Info()
 {
 	AI_Output (other, self,"Info_Kirgo_What_15_00"); //Hi! Ich bin neu hier.
-	AI_Output (self, other,"Info_Kirgo_What_05_01"); //Ein Neuer! Erz‰hl mir was von drauﬂen! Es ist schon ¸ber einen Monat her, dass ich Neuigkeiten aus der Auﬂenwelt gehˆrt hab.
-	AI_Output (self, other,"Info_Kirgo_What_05_02"); //Ich bin Kirgo. Ich k‰mpfe in der Arena.
+	AI_Output (self, other,"Info_Kirgo_What_05_01"); //Ein Neuer! Erz√§hl mir was von drau√üen! Es ist schon √ºber einen Monat her, dass ich Neuigkeiten aus der Au√üenwelt geh√∂rt hab.
+	AI_Output (self, other,"Info_Kirgo_What_05_02"); //Ich bin Kirgo. Ich k√§mpfe in der Arena.
 };
 
 // **************************************************
@@ -61,7 +61,7 @@ instance Info_Kirgo_Good (C_INFO)
 	condition		= Info_Kirgo_Good_Condition;
 	information		= Info_Kirgo_Good_Info;
 	permanent		= 0;
-	description 	= "Bist du gut? - Im K‰mpfen meine ich.";
+	description 	= "Bist du gut? - Im K√§mpfen meine ich.";
 };                       
 
 FUNC INT Info_Kirgo_Good_Condition()
@@ -75,7 +75,7 @@ FUNC INT Info_Kirgo_Good_Condition()
 func VOID Info_Kirgo_Good_Info()
 {
 	AI_Output (other, self,"Info_Kirgo_Good_15_00"); //Bist du gut?
-	AI_Output (self, other,"Info_Kirgo_Good_05_01"); //Im K‰mpfen? Ich bin noch nicht lange dabei, aber ich habe schon einen Kampf gewonnen!
+	AI_Output (self, other,"Info_Kirgo_Good_05_01"); //Im K√§mpfen? Ich bin noch nicht lange dabei, aber ich habe schon einen Kampf gewonnen!
 };
 
 // **************************************
@@ -94,7 +94,7 @@ instance Info_Kirgo_Charge(C_INFO)
 
 FUNC INT Info_Kirgo_Charge_Condition()
 {
-	if (Npc_KnowsInfo (hero,DIA_Scatty_JoinOC) && Npc_KnowsInfo (hero,Info_Kirgo_What) && (Kapitel <= 1))	// Kapitelfix   ***Bjˆrn***
+	if (Npc_KnowsInfo (hero,DIA_Scatty_JoinOC) && Npc_KnowsInfo (hero,Info_Kirgo_What) && (Kapitel <= 1))	// Kapitelfix   ***Bj√∂rn***
 	{
 		return 1;
 	};
@@ -103,31 +103,31 @@ FUNC INT Info_Kirgo_Charge_Condition()
 func VOID Info_Kirgo_Charge_Info()
 {
 	AI_Output (other, self,"Info_Kirgo_Charge_15_00"); //Ich fordere dich zum Kampf in der Arena!
-	AI_Output (self, other,"Info_Kirgo_Charge_05_01"); //Was? Aber ich hab' gerade keine Lust zu k‰mpfen. Lass uns doch lieber ein Bier zusammen trinken und erz‰hl mir was von drauﬂen.
+	AI_Output (self, other,"Info_Kirgo_Charge_05_01"); //Was? Aber ich hab' gerade keine Lust zu k√§mpfen. Lass uns doch lieber ein Bier zusammen trinken und erz√§hl mir was von drau√üen.
 	Info_ClearChoices	(Info_Kirgo_Charge );
-	Info_AddChoice		(Info_Kirgo_Charge,"Nein! Ich will gegen dich k‰mpfen. Jetzt!"		,Info_Kirgo_Charge_NOW);
-	Info_AddChoice		(Info_Kirgo_Charge,"Okay, gib ein Bier r¸ber!"						,Info_Kirgo_Charge_Beer);
+	Info_AddChoice		(Info_Kirgo_Charge,"Nein! Ich will gegen dich k√§mpfen. Jetzt!"		,Info_Kirgo_Charge_NOW);
+	Info_AddChoice		(Info_Kirgo_Charge,"Okay, gib ein Bier r√ºber!"						,Info_Kirgo_Charge_Beer);
 };
 
 func void Info_Kirgo_Charge_NOW()
 {
-	AI_Output (other, self,"Info_Kirgo_Charge_NOW_15_00"); //Nein! Ich will gegen dich k‰mpfen. Jetzt!
+	AI_Output (other, self,"Info_Kirgo_Charge_NOW_15_00"); //Nein! Ich will gegen dich k√§mpfen. Jetzt!
 	AI_Output (self, other,"Info_Kirgo_Charge_NOW_05_01"); //Wie du willst ... Ich bin bereit, wenn du es bist.
 	Info_ClearChoices	(Info_Kirgo_Charge );
 };
 
 func void Info_Kirgo_Charge_Beer()
 {
-	AI_Output (other, self,"Info_Kirgo_Charge_Beer_15_00"); //Okay, gib mir ein Bier r¸ber!
+	AI_Output (other, self,"Info_Kirgo_Charge_Beer_15_00"); //Okay, gib mir ein Bier r√ºber!
 	AI_Output (self, other,"Info_Kirgo_Charge_Beer_05_01"); //Hier nimm!
-	AI_Output (other, self,"Info_Kirgo_Charge_Beer_15_02"); //Danke! Ich f¸rchte, von drauﬂen kann ich nicht viel erz‰hlen - sie haben mich fast zwei Monate in einem dunklen Loch gefangen gehalten, bevor sie mich hier reingeworfen haben.
-	AI_Output (self, other,"Info_Kirgo_Charge_Beer_05_03"); //Schade ... Na, was soll's ... Hey, f¸r zwei Monate Kerker siehst du aber noch ziemlich gut aus.
+	AI_Output (other, self,"Info_Kirgo_Charge_Beer_15_02"); //Danke! Ich f√ºrchte, von drau√üen kann ich nicht viel erz√§hlen - sie haben mich fast zwei Monate in einem dunklen Loch gefangen gehalten, bevor sie mich hier reingeworfen haben.
+	AI_Output (self, other,"Info_Kirgo_Charge_Beer_05_03"); //Schade ... Na, was soll's ... Hey, f√ºr zwei Monate Kerker siehst du aber noch ziemlich gut aus.
 	AI_Output (other, self,"Info_Kirgo_Charge_Beer_15_04"); //Ich werde zusehen, dass das so bleibt.
 	AI_Output (self, other,"Info_Kirgo_Charge_Beer_05_05"); //Warum willst du dann unbedingt gegen einen von uns antreten?
 	AI_Output (other, self,"Info_Kirgo_Charge_Beer_15_06"); //Ich will Anerkennung im Lager finden!
-	AI_Output (self, other,"Info_Kirgo_Charge_Beer_05_07"); //Bei Scatty, meinst du? Hm, er ist einer der einflussreichsten Leute hier im Auﬂenring ... Wenn du mich besiegst, kˆnnte ihn das schon beeindrucken ...
-	AI_Output (self, other,"Info_Kirgo_Charge_Beer_05_08"); //Aber wenn du ihm richtig imponieren willst, m¸sstest du Kharim umhauen. Ich f¸rchte nur, er ist viel zu gut f¸r dich!
-	AI_Output (self, other,"Info_Kirgo_Charge_Beer_05_09"); //Falls du immer noch gegen mich k‰mpfen willst - sag mir Bescheid! Aber ich werd' dir nicht gerne die Fresse polieren.
+	AI_Output (self, other,"Info_Kirgo_Charge_Beer_05_07"); //Bei Scatty, meinst du? Hm, er ist einer der einflussreichsten Leute hier im Au√üenring ... Wenn du mich besiegst, k√∂nnte ihn das schon beeindrucken ...
+	AI_Output (self, other,"Info_Kirgo_Charge_Beer_05_08"); //Aber wenn du ihm richtig imponieren willst, m√ºsstest du Kharim umhauen. Ich f√ºrchte nur, er ist viel zu gut f√ºr dich!
+	AI_Output (self, other,"Info_Kirgo_Charge_Beer_05_09"); //Falls du immer noch gegen mich k√§mpfen willst - sag mir Bescheid! Aber ich werd' dir nicht gerne die Fresse polieren.
 	
 	CreateInvItem (other, ItFoBeer);
 	B_GiveInvItems (other, self, ItFoBeer, 1);
@@ -150,12 +150,12 @@ instance Info_Kirgo_ChargeREAL(C_INFO)
 	condition		= Info_Kirgo_ChargeREAL_Condition;
 	information		= Info_Kirgo_ChargeREAL_Info;
 	permanent		= 0;
-	description 	= "Lass uns k‰mpfen - Bist du bereit?";
+	description 	= "Lass uns k√§mpfen - Bist du bereit?";
 };                       
 
 FUNC INT Info_Kirgo_ChargeREAL_Condition()
 {
-	if (Npc_KnowsInfo (hero,Info_Kirgo_Charge) &&  (Kapitel <= 1))	//Kapitelfix	****Bjˆrn****
+	if (Npc_KnowsInfo (hero,Info_Kirgo_Charge) &&  (Kapitel <= 1))	//Kapitelfix	****Bj√∂rn****
 	{
 		return 1;
 	};
@@ -163,7 +163,7 @@ FUNC INT Info_Kirgo_ChargeREAL_Condition()
 
 func VOID Info_Kirgo_ChargeREAL_Info()
 {
-	AI_Output (other, self,"Info_Kirgo_ChargeREAL_15_00"); //Lass uns k‰mpfen - Bist du bereit?
+	AI_Output (other, self,"Info_Kirgo_ChargeREAL_15_00"); //Lass uns k√§mpfen - Bist du bereit?
 	AI_Output (self, other,"Info_Kirgo_ChargeREAL_05_01"); //Folge mir!
 	
 	AI_StopProcessInfos	( self );
@@ -197,9 +197,9 @@ FUNC INT Info_Kirgo_InArena_Condition()
 
 func VOID Info_Kirgo_InArena_Info()
 {
-	if (Kapitel <= 1)			//Fix f¸r sp‰tere Kapitel ****Bjˆrn****
+	if (Kapitel <= 1)			//Fix f√ºr sp√§tere Kapitel ****Bj√∂rn****
 	{
-		AI_Output (self, other,"Info_Kirgo_InArena_05_00"); //So, dann wollen wir mal. Mˆge der Bessere gewinnen!
+		AI_Output (self, other,"Info_Kirgo_InArena_05_00"); //So, dann wollen wir mal. M√∂ge der Bessere gewinnen!
 		
 		AI_StopProcessInfos	( self );
 			

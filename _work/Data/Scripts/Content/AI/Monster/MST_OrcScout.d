@@ -4,7 +4,7 @@
 
 PROTOTYPE Mst_Default_OrcScout(C_Npc)			
 {
-	name							=	"Orc J‰ger";
+	name							=	"Orc J√§ger";
 	guild							=	GIL_ORCSCOUT;
 	npctype							=	NPCTYPE_GUARD;
 	voice							=	17;
@@ -104,10 +104,10 @@ INSTANCE OrcPeasantEatAndDrink (Mst_Default_OrcScout)
 
 INSTANCE OrcScoutGYD (Mst_Default_OrcScout)
 {
-	name						=	"Orc Sp‰her";
+	name						=	"Orc Sp√§her";
 	level						=	18;
 
-	attribute[ATR_STRENGTH]		=	30;	// SN: regul‰re OrcScouts w‰ren an dieser Stelle noch zu heftig!
+	attribute[ATR_STRENGTH]		=	30;	// SN: regul√§re OrcScouts w√§ren an dieser Stelle noch zu heftig!
 
 	aivar[AIV_MM_PercRange]		=	1500;
 	aivar[AIV_MM_DrohRange]		=	1200;

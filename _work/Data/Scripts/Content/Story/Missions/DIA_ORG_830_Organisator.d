@@ -101,7 +101,7 @@ FUNC INT Info_ORG_830_Aufhalten_Condition()
 FUNC VOID Info_ORG_830_Aufhalten_Info()
 {	
 	AI_Output (other, self,"Info_ORG_830_Aufhalten_15_00"); //Willst du mich nicht aufhalten? Mich fragen, was ich hier will oder so?
-	AI_Output (self, other,"Info_ORG_830_Aufhalten_13_01"); //Nein. Ist mir zu viel Stress. Auﬂerdem kann einer wie du sowieso nicht viel Schaden da drin anrichten.
+	AI_Output (self, other,"Info_ORG_830_Aufhalten_13_01"); //Nein. Ist mir zu viel Stress. Au√üerdem kann einer wie du sowieso nicht viel Schaden da drin anrichten.
 };
 
 // ************************************************************
@@ -129,5 +129,5 @@ FUNC INT Info_ORG_830_Perm_Condition()
 FUNC VOID Info_ORG_830_Perm_Info()
 {	
 	AI_Output (other, self,"Info_ORG_830_Perm_15_00"); //Wie sieht's drinnen aus?
-	AI_Output (self, other,"Info_ORG_830_Perm_13_01"); //Das ‹bliche - ruhig bis auf ein paar kleine Schl‰gereien.
+	AI_Output (self, other,"Info_ORG_830_Perm_13_01"); //Das √úbliche - ruhig bis auf ein paar kleine Schl√§gereien.
 };

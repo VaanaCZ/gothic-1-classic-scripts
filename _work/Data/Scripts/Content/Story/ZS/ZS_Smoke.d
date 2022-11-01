@@ -38,7 +38,7 @@ func void ZS_Smoke_End ()
 	}
 	else
 	{
-		AI_UseMob			(self,	"SMOKE",	-1);			// Lösen vom Mobsi bei verlassen des Zustandes, wegen Zeit oder Reaktion
+		AI_UseMob			(self,	"SMOKE",	-1);			// LÃ¶sen vom Mobsi bei verlassen des Zustandes, wegen Zeit oder Reaktion
 	};	
 };
 

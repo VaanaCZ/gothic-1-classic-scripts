@@ -37,7 +37,7 @@ INSTANCE Info_Sld_11_EinerVonEuchWerden (C_INFO) // E1
 	condition	= Info_Sld_11_EinerVonEuchWerden_Condition;
 	information	= Info_Sld_11_EinerVonEuchWerden_Info;
 	permanent	= 1;
-	description = "Ich will ein Söldner der Magier werden.";
+	description = "Ich will ein SÃ¶ldner der Magier werden.";
 };                       
 
 FUNC INT Info_Sld_11_EinerVonEuchWerden_Condition()
@@ -53,12 +53,12 @@ FUNC INT Info_Sld_11_EinerVonEuchWerden_Condition()
 
 FUNC VOID Info_Sld_11_EinerVonEuchWerden_Info()
 {
-	AI_Output(other,self,"Info_Sld_11_EinerVonEuchWerden_15_00"); //Ich will ein Söldner der Magier werden.
-	AI_Output(self,other,"Info_Sld_11_EinerVonEuchWerden_11_01"); //Das ist nicht schwer. Wenn du für unsere Sache kämpfen willst, wird Lee dich nehmen.
-	AI_Output(self,other,"Info_Sld_11_EinerVonEuchWerden_11_02"); //Aber er nimmt nur Leute, die gut mit dem Schwert umgehen können. Wie sieht's damit bei dir aus?
+	AI_Output(other,self,"Info_Sld_11_EinerVonEuchWerden_15_00"); //Ich will ein SÃ¶ldner der Magier werden.
+	AI_Output(self,other,"Info_Sld_11_EinerVonEuchWerden_11_01"); //Das ist nicht schwer. Wenn du fÃ¼r unsere Sache kÃ¤mpfen willst, wird Lee dich nehmen.
+	AI_Output(self,other,"Info_Sld_11_EinerVonEuchWerden_11_02"); //Aber er nimmt nur Leute, die gut mit dem Schwert umgehen kÃ¶nnen. Wie sieht's damit bei dir aus?
 	AI_Output(other,self,"Info_Sld_11_EinerVonEuchWerden_15_03"); //Nun ...
 	AI_Output(self,other,"Info_Sld_11_EinerVonEuchWerden_11_04"); //Dachte ich mir. Wenn es dir wirklich ernst ist, rede mit Gorn. Er hat schon mal einen Frischling ausgebildet.
-	AI_Output(self,other,"Info_Sld_11_EinerVonEuchWerden_11_05"); //Vielleicht hast du ja Glück und er macht sich auch bei dir die Mühe.
+	AI_Output(self,other,"Info_Sld_11_EinerVonEuchWerden_11_05"); //Vielleicht hast du ja GlÃ¼ck und er macht sich auch bei dir die MÃ¼he.
 	var C_NPC Gorn;			Gorn	= Hlp_GetNpc(PC_Fighter);
 	Gorn.aivar[AIV_FINDABLE] = TRUE;
 };
@@ -84,8 +84,8 @@ FUNC INT Info_Sld_11_WichtigePersonen_Condition()
 FUNC VOID Info_Sld_11_WichtigePersonen_Info()
 {
 	AI_Output(other,self,"Info_Sld_11_WichtigePersonen_15_00"); //Wer hat hier das Sagen?
-	AI_Output(self,other,"Info_Sld_11_WichtigePersonen_11_01"); //Wir tun was die Magier sagen. Aber meistens sagen sie gar nichts. Sie hängen beim Erzhaufen und brüten über ihren Büchern.
-	AI_Output(self,other,"Info_Sld_11_WichtigePersonen_11_02"); //Im Grunde regelt Lee alles. Er ist unser Anführer.
+	AI_Output(self,other,"Info_Sld_11_WichtigePersonen_11_01"); //Wir tun was die Magier sagen. Aber meistens sagen sie gar nichts. Sie hÃ¤ngen beim Erzhaufen und brÃ¼ten Ã¼ber ihren BÃ¼chern.
+	AI_Output(self,other,"Info_Sld_11_WichtigePersonen_11_02"); //Im Grunde regelt Lee alles. Er ist unser AnfÃ¼hrer.
 	var C_NPC Lee;			Lee		= Hlp_GetNpc(Sld_700_Lee);
 	Lee.aivar[AIV_FINDABLE] = TRUE;
 	var C_NPC Cronos;		Cronos  = Hlp_GetNpc(KdW_604_Cronos);
@@ -113,7 +113,7 @@ FUNC INT Info_Sld_11_DasLager_Condition()
 FUNC VOID Info_Sld_11_DasLager_Info()
 {
 	AI_Output(other,self,"Info_Sld_11_DasLager_15_00"); //Gibt es Probleme hier im Lager?
-	AI_Output(self,other,"Info_Sld_11_DasLager_11_01"); //Junge, hier gibt es immer Probleme. Die Banditen machen, was sie wollen und wir Söldner sind damit beschäftigt, die Magier zu decken und die Verteidigung des Lagers aufrecht zu erhalten.
+	AI_Output(self,other,"Info_Sld_11_DasLager_11_01"); //Junge, hier gibt es immer Probleme. Die Banditen machen, was sie wollen und wir SÃ¶ldner sind damit beschÃ¤ftigt, die Magier zu decken und die Verteidigung des Lagers aufrecht zu erhalten.
 };
 
 // *************************************************************************
@@ -139,8 +139,8 @@ FUNC VOID Info_Sld_11_DieLage_Info()
 	AI_Output(other,self,"Info_Sld_11_DieLage_15_00"); //Alles klar bei dir?
 	AI_Output(self,other,"Info_Sld_11_DieLage_11_01"); //Noch ist alles ruhig ...
 	AI_Output(other,self,"Info_Sld_11_DieLage_15_02"); //Noch?
-	AI_Output(self,other,"Info_Sld_11_DieLage_11_03"); //Wenn die Banditen weiter Gomez' Konvois überfallen, steht er irgendwann mit seiner Armee hier vor dem Tor.
-	AI_Output(self,other,"Info_Sld_11_DieLage_11_04"); //Und das wird bestimmt kein Spaß.
+	AI_Output(self,other,"Info_Sld_11_DieLage_11_03"); //Wenn die Banditen weiter Gomez' Konvois Ã¼berfallen, steht er irgendwann mit seiner Armee hier vor dem Tor.
+	AI_Output(self,other,"Info_Sld_11_DieLage_11_04"); //Und das wird bestimmt kein SpaÃŸ.
 };
 
 // *************************************************************************
@@ -179,7 +179,7 @@ FUNC VOID Info_Sld_11_Krautprobe_Info()
 		{	B_GiveInvItems(other,self,ItMiJoint_3,1);	 };
 		
 		AI_Output(self,other,"Info_Sld_11_Krautprobe_11_01"); //Gib her. Hier - 10 Erz.
-		AI_Output(self,other,"Info_Sld_11_Krautprobe_11_02"); //Wenn du wieder mal was hast - du weißt Bescheid..
+		AI_Output(self,other,"Info_Sld_11_Krautprobe_11_02"); //Wenn du wieder mal was hast - du weiÃŸt Bescheid..
 		
 		CreateInvItems(self,itminugget,10);
 		B_GiveInvItems(self,other,itminugget,10);

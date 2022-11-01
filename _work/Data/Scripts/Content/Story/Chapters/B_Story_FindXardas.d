@@ -1,16 +1,16 @@
 //*****************************************************************************
-//***			Diese Funktion tötet alle Bewohner des FMC					***
+//***			Diese Funktion tÃ¶tet alle Bewohner des FMC					***
 //*****************************************************************************
 func void B_Story_FindXardas()
 {
-	//-------- Tagebucheinträge --------
+	//-------- TagebucheintrÃ¤ge --------
 	Log_CreateTopic		(CH4_FindXardas,	LOG_MISSION);
 	Log_SetTopicStatus	(CH4_FindXardas,	LOG_RUNNING);
-	B_LogEntry			(CH4_FindXardas,	"Nach der Ermordung der Feuermagier bleibt nur noch EINER übrig, der die Sprengung des Erzhaufens ermöglichen kann. Saturas erzählte, daß die Erschaffung der magischen Barriere von einem 13. Zauberer geleitet wurde.");
-	B_LogEntry			(CH4_FindXardas,	"Dieser 13. Zauberer mit Namen Xardas lebt zurückgezogen in einem Turm mitten im Orkgebiet. Ich habe mich dazu bereiterklärt, ihn aufzusuchen und um Hilfe zu bitten.");
+	B_LogEntry			(CH4_FindXardas,	"Nach der Ermordung der Feuermagier bleibt nur noch EINER Ã¼brig, der die Sprengung des Erzhaufens ermÃ¶glichen kann. Saturas erzÃ¤hlte, daÃŸ die Erschaffung der magischen Barriere von einem 13. Zauberer geleitet wurde.");
+	B_LogEntry			(CH4_FindXardas,	"Dieser 13. Zauberer mit Namen Xardas lebt zurÃ¼ckgezogen in einem Turm mitten im Orkgebiet. Ich habe mich dazu bereiterklÃ¤rt, ihn aufzusuchen und um Hilfe zu bitten.");
 	
 
-	//-------- Missionsgegenstände --------
+	//-------- MissionsgegenstÃ¤nde --------
 	
 	//-------- NSCs einsetzen --------
 	Wld_InsertNpc	(XardasDemon,	"DT_E1_06");

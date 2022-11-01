@@ -37,7 +37,7 @@ INSTANCE Info_Mine_Grd_7_Mine (C_INFO) // E1
 	condition	= Info_Mine_Grd_7_Mine_Condition;
 	information	= Info_Mine_Grd_7_Mine_Info;
 	permanent	= 1;
-	description = "Erzähl mir von der Mine";
+	description = "ErzÃ¤hl mir von der Mine";
 };                       
 
 FUNC INT Info_Mine_Grd_7_Mine_Condition()
@@ -50,8 +50,8 @@ FUNC INT Info_Mine_Grd_7_Mine_Condition()
 
 FUNC VOID Info_Mine_Grd_7_Mine_Info()
 {
-	AI_Output(other,self,"Info_Mine_Grd_7_Mine_15_00"); //Erzähl mir von der Mine
-	AI_Output(self,other,"Info_Mine_Grd_7_Mine_07_01"); //Die Buddler schürfen das Erz und wir beschützen sie vor den Crawlern.
+	AI_Output(other,self,"Info_Mine_Grd_7_Mine_15_00"); //ErzÃ¤hl mir von der Mine
+	AI_Output(self,other,"Info_Mine_Grd_7_Mine_07_01"); //Die Buddler schÃ¼rfen das Erz und wir beschÃ¼tzen sie vor den Crawlern.
 	
 };
 
@@ -93,7 +93,7 @@ INSTANCE Info_Mine_Grd_7_Minecrawler(C_INFO)
 	condition	= Info_Mine_Grd_7_Minecrawler_Condition;
 	information	= Info_Mine_Grd_7_Minecrawler_Info;
 	permanent	= 1;
-	description = "Weißt Du was über die Crawler?";
+	description = "WeiÃŸt Du was Ã¼ber die Crawler?";
 };                       
 
 FUNC INT Info_Mine_Grd_7_Minecrawler_Condition()
@@ -106,7 +106,7 @@ FUNC INT Info_Mine_Grd_7_Minecrawler_Condition()
 
 FUNC VOID Info_Mine_Grd_7_Minecrawler_Info()
 {
-	AI_Output(other,self,"Info_Mine_Grd_7_Minecrawler_15_00"); //Weißt du was über die Crawler?
+	AI_Output(other,self,"Info_Mine_Grd_7_Minecrawler_15_00"); //WeiÃŸt du was Ã¼ber die Crawler?
 	AI_Output(self,other,"Info_Mine_Grd_7_Minecrawler_07_01"); //Die ganze Brut sollte man ausrotten!
 	
 	

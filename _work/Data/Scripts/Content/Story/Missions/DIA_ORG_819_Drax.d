@@ -46,10 +46,10 @@ FUNC VOID  Org_819_Drax_HuntHere_Info()
 {
 	AI_Output (other, self,"Org_819_Drax_HuntHere_15_00"); //Ihr jagt hier - richtig?
 	AI_Output (self, other,"Org_819_Drax_HuntHere_06_01"); //Sieht so aus... was willst du?
-	AI_Output (other, self,"Org_819_Drax_HuntHere_15_02"); //Hast du ein paar Tipps f¸r die Jagd?
-	AI_Output (self, other,"Org_819_Drax_HuntHere_06_03"); //Ich kˆnnte dir schon was beibringen - aber alles hat seinen Preis.
-	AI_Output (other, self,"Org_819_Drax_HuntHere_15_04"); //Und der w‰re?
-	AI_Output (self, other,"Org_819_Drax_HuntHere_06_05"); //F¸r den Anfang reicht ein ordentlicher Schluck Bier - danach sehen wir weiter.
+	AI_Output (other, self,"Org_819_Drax_HuntHere_15_02"); //Hast du ein paar Tipps f√ºr die Jagd?
+	AI_Output (self, other,"Org_819_Drax_HuntHere_06_03"); //Ich k√∂nnte dir schon was beibringen - aber alles hat seinen Preis.
+	AI_Output (other, self,"Org_819_Drax_HuntHere_15_04"); //Und der w√§re?
+	AI_Output (self, other,"Org_819_Drax_HuntHere_06_05"); //F√ºr den Anfang reicht ein ordentlicher Schluck Bier - danach sehen wir weiter.
 };
 
 // **************************************************
@@ -66,7 +66,7 @@ instance  Org_819_Drax_Scavenger (C_INFO)
 	condition	= Org_819_Drax_Scavenger_Condition;
 	information	= Org_819_Drax_Scavenger_Info;
 	permanent	= 1;
-	description = "Hier, nimm ein Bier und erz‰hl mir was ¸ber's Jagen.";
+	description = "Hier, nimm ein Bier und erz√§hl mir was √ºber's Jagen.";
 };                       
 
 FUNC int  Org_819_Drax_Scavenger_Condition()
@@ -83,16 +83,16 @@ FUNC VOID  Org_819_Drax_Scavenger_Info()
 	{
 		B_GiveInvItems	(other, self, itfobeer,1);
 	
-		AI_Output	(other, self,"Org_819_Drax_Scavenger_15_00"); //Hier, nimm ein Bier und erz‰hl mir was ¸bers Jagen.
+		AI_Output	(other, self,"Org_819_Drax_Scavenger_15_00"); //Hier, nimm ein Bier und erz√§hl mir was √ºbers Jagen.
 		if ( C_BodystateContains(self, BS_SIT) )
 		{
 			AI_StandUp		(self);
 			AI_TurnToNpc	(self, hero);
 		};
 		AI_UseItem	(self,	ItFobeer);
-		AI_Output	(self, other,"Org_819_Drax_Scavenger_06_01"); //Scavenger, so nennen wir die groﬂen Vˆgel, greift man am besten einzeln an. Du kannst einzelne Scavenger leicht aus dem Rudel locken.
-		AI_Output	(self, other,"Org_819_Drax_Scavenger_06_02"); //Wenn du ihnen zu nahe kommst, reagieren sie gereizt. Nach einer Weile st¸rmen sie dann auf dich los. Du solltest zu diesem Zeitpunkt schon mit erhobener Waffe warten.
-		AI_Output	(self, other,"Org_819_Drax_Scavenger_06_03"); //Wenn du gut bist, und ihn triffst, bevor er dich trifft, heiﬂt es dranbleiben, dann kannst du das Vieh besiegen, ohne einen Kratzer abzubekommen.
+		AI_Output	(self, other,"Org_819_Drax_Scavenger_06_01"); //Scavenger, so nennen wir die gro√üen V√∂gel, greift man am besten einzeln an. Du kannst einzelne Scavenger leicht aus dem Rudel locken.
+		AI_Output	(self, other,"Org_819_Drax_Scavenger_06_02"); //Wenn du ihnen zu nahe kommst, reagieren sie gereizt. Nach einer Weile st√ºrmen sie dann auf dich los. Du solltest zu diesem Zeitpunkt schon mit erhobener Waffe warten.
+		AI_Output	(self, other,"Org_819_Drax_Scavenger_06_03"); //Wenn du gut bist, und ihn triffst, bevor er dich trifft, hei√üt es dranbleiben, dann kannst du das Vieh besiegen, ohne einen Kratzer abzubekommen.
 		AI_Output	(self, other,"Org_819_Drax_Scavenger_06_04"); //Wenn es DICH zuerst trifft - nun ja - pass einfach auf, dass es dich nicht zuerst trifft.
 		drax_bierbekommen = TRUE;
 	}
@@ -100,12 +100,12 @@ FUNC VOID  Org_819_Drax_Scavenger_Info()
 	{
 		AI_Output (other, self,"Org_819_Drax_Scavenger_KEIN_BIER_15_00"); //Ich hab' kein Bier.
 		AI_Output (self, other,"Org_819_Drax_Scavenger_KEIN_BIER_06_01"); //Dann geh und hol eins, so billig kommst du nie wieder an einen guten Rat. Und wenn du schon mal dabei bist - bring gleich noch etwas Erz mit!
-		AI_Output (self, other,"Org_819_Drax_Scavenger_KEIN_BIER_06_02"); //Ich kann dir einiges ¸ber Tiere beibringen, aber das kostet dich was!
+		AI_Output (self, other,"Org_819_Drax_Scavenger_KEIN_BIER_06_02"); //Ich kann dir einiges √ºber Tiere beibringen, aber das kostet dich was!
 	};	
 	drax_Lehrer_frei = TRUE;
 	
 	Log_CreateTopic	(GE_TeacherOW, LOG_NOTE);
-	B_LogEntry		(GE_TeacherOW, "Der Bandit Drax bot an, mir viel ¸ber das Ausnehmen von Tieren hier beizubringen, wenn ich seine Preise bezahlen kann. Er jagt am Weg vom Austauschplatz zum Alten Lager.");
+	B_LogEntry		(GE_TeacherOW, "Der Bandit Drax bot an, mir viel √ºber das Ausnehmen von Tieren hier beizubringen, wenn ich seine Preise bezahlen kann. Er jagt am Weg vom Austauschplatz zum Alten Lager.");
 };
 
 // **************************************************
@@ -119,7 +119,7 @@ instance  Org_819_Drax_Creatures (C_INFO)
 	condition	= Org_819_Drax_Creatures_Condition;
 	information	= Org_819_Drax_Creatures_Info;
 	permanent	= 1;
-	description = "Was kannst du mir noch ¸ber die Jagd beibringen?";
+	description = "Was kannst du mir noch √ºber die Jagd beibringen?";
 };                       
 
 FUNC int  Org_819_Drax_Creatures_Condition()
@@ -133,20 +133,20 @@ FUNC int  Org_819_Drax_Creatures_Condition()
 
 FUNC VOID  Org_819_Drax_Creatures_Info()
 {
-	AI_Output (other, self,"Org_819_Drax_Creatures_15_00"); //Was kannst du mir noch ¸ber die Jagd beibringen?
+	AI_Output (other, self,"Org_819_Drax_Creatures_15_00"); //Was kannst du mir noch √ºber die Jagd beibringen?
 	
 	if ( (Knows_GetTeeth == FALSE)||(Knows_GetFur == FALSE)||(Knows_GetClaws == FALSE)||(Knows_GetHide == FALSE) )
 	{
 		AI_Output (self, other,"Org_819_Drax_Creatures_06_01"); //'Ne ganze Menge - aber das wird dich mehr kosten als nur ein Bier.
-		AI_Output (self, other,"Org_819_Drax_Creatures_06_02"); //Wenn du weiﬂt wie, kannst du den Viechern Z‰hne, Haut oder Krallen abziehen. An die Sachen ist schwer ranzukommen, also sind sie wertvoll.
-		AI_Output (self, other,"Org_819_Drax_Creatures_06_03"); //Zumindest wird jeder H‰ndler diese Dinge mit dir tauschen.
+		AI_Output (self, other,"Org_819_Drax_Creatures_06_02"); //Wenn du wei√üt wie, kannst du den Viechern Z√§hne, Haut oder Krallen abziehen. An die Sachen ist schwer ranzukommen, also sind sie wertvoll.
+		AI_Output (self, other,"Org_819_Drax_Creatures_06_03"); //Zumindest wird jeder H√§ndler diese Dinge mit dir tauschen.
 		
 		Info_ClearChoices(Org_819_Drax_Creatures);
 		Info_AddChoice   (Org_819_Drax_Creatures, DIALOG_BACK 													,Org_819_Drax_Creatures_BACK);
-		Info_AddChoice   (Org_819_Drax_Creatures, "Du verlangst verdammt viel f¸r dein Wissen." 				,Org_819_Drax_Creatures_PrettyMuch);
+		Info_AddChoice   (Org_819_Drax_Creatures, "Du verlangst verdammt viel f√ºr dein Wissen." 				,Org_819_Drax_Creatures_PrettyMuch);
 		if (Knows_GetTeeth == FALSE)
 		{
-			Info_AddChoice   (Org_819_Drax_Creatures, "Z‰hne entfernen (Kosten: 1 Lernpunkt, 50 Erz)" 		,Org_819_Drax_Creatures_Zahn);
+			Info_AddChoice   (Org_819_Drax_Creatures, "Z√§hne entfernen (Kosten: 1 Lernpunkt, 50 Erz)" 		,Org_819_Drax_Creatures_Zahn);
 		};
 		if (Knows_GetFur == FALSE)
 		{
@@ -158,12 +158,12 @@ FUNC VOID  Org_819_Drax_Creatures_Info()
 		};
 		if (Knows_GetHide == FALSE)
 		{
-			Info_AddChoice	 (Org_819_Drax_Creatures, "H‰uten von Reptilien (Kosten: 1 Lernpunkt, 100 Erz)"	,Org_819_Drax_Creatures_Haut);
+			Info_AddChoice	 (Org_819_Drax_Creatures, "H√§uten von Reptilien (Kosten: 1 Lernpunkt, 100 Erz)"	,Org_819_Drax_Creatures_Haut);
 		};
 	}
 	else
 	{
-		AI_Output (self, other,"Org_819_Drax_Creatures_TaughtAll_06_00"); //Ich habe dir alles beigebracht, was ich weiﬂ.
+		AI_Output (self, other,"Org_819_Drax_Creatures_TaughtAll_06_00"); //Ich habe dir alles beigebracht, was ich wei√ü.
 	};
 };
 
@@ -174,16 +174,16 @@ func void Org_819_Drax_Creatures_BACK()
 
 func void Org_819_Drax_Creatures_PrettyMuch()
 {
-	AI_Output (other, self,"Org_819_Drax_Creatures_PrettyMuch_15_00"); //Du verlangst verdammt viel f¸r dein Wissen.
+	AI_Output (other, self,"Org_819_Drax_Creatures_PrettyMuch_15_00"); //Du verlangst verdammt viel f√ºr dein Wissen.
 	AI_Output (self, other,"Org_819_Drax_Creatures_PrettyMuch_06_01"); //Mag sein, aber du kannst 'ne Menge Erz damit verdienen.
-	AI_Output (self, other,"Org_819_Drax_Creatures_PrettyMuch_06_02"); //Alle Tiere, die du tˆtest, ohne zu wissen, wie man sie vern¸nftig ausschlachtet, werden einfach verwesen.
+	AI_Output (self, other,"Org_819_Drax_Creatures_PrettyMuch_06_02"); //Alle Tiere, die du t√∂test, ohne zu wissen, wie man sie vern√ºnftig ausschlachtet, werden einfach verwesen.
 	AI_Output (self, other,"Org_819_Drax_Creatures_PrettyMuch_06_03"); //Das ist eine verschwendete Gelegenheit, ihnen das Fell abzuziehen und teuer zu verkaufen.
-	AI_Output (self, other,"Org_819_Drax_Creatures_PrettyMuch_06_04"); //Wenn ich du w‰re, w¸rde ich mir dieses Wissen so schnell wie mˆglich aneignen.
+	AI_Output (self, other,"Org_819_Drax_Creatures_PrettyMuch_06_04"); //Wenn ich du w√§re, w√ºrde ich mir dieses Wissen so schnell wie m√∂glich aneignen.
 };
 
 func void Org_819_Drax_Creatures_Zahn()
 {
-	AI_Output (other, self,"Org_819_Drax_Creatures_Zahn_15_00"); //Wie komme ich an die Z‰hne?
+	AI_Output (other, self,"Org_819_Drax_Creatures_Zahn_15_00"); //Wie komme ich an die Z√§hne?
 	
 	if (Npc_HasItems(other,itminugget)>=50)
 	{
@@ -193,18 +193,18 @@ func void Org_819_Drax_Creatures_Zahn()
 			
 			B_GiveInvItems	(other, self,itminugget,50);
 			
-			PrintScreen	("Lerne: Z‰hne nehmen", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
+			PrintScreen	("Lerne: Z√§hne nehmen", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
 					
-			AI_Output (self, other,"Org_819_Drax_Creatures_Zahn_06_01"); //Du muﬂt vor allem darauf achten, dass die Z‰hne nicht splittern. Um das zu verhindern, muﬂt du dein Messer in der Mitte des Zahns ansetzen und vorsichtig hebeln.
-			AI_Output (self, other,"Org_819_Drax_Creatures_Zahn_06_02"); //Z‰hne kannst du von Wˆlfen, Schattenl‰ufern oder Snappern nehmen.
+			AI_Output (self, other,"Org_819_Drax_Creatures_Zahn_06_01"); //Du mu√üt vor allem darauf achten, dass die Z√§hne nicht splittern. Um das zu verhindern, mu√üt du dein Messer in der Mitte des Zahns ansetzen und vorsichtig hebeln.
+			AI_Output (self, other,"Org_819_Drax_Creatures_Zahn_06_02"); //Z√§hne kannst du von W√∂lfen, Schattenl√§ufern oder Snappern nehmen.
 			
 			Knows_GetTeeth = TRUE;
 			Log_CreateTopic (GE_AnimalTrophies,LOG_NOTE);
-			B_LogEntry (GE_AnimalTrophies,"Wissen ¸ber Z‰hne entfernen - Wolf, Orchund, Snapper, Beisser, Bluthund, Schattenl‰ufer.");
+			B_LogEntry (GE_AnimalTrophies,"Wissen √ºber Z√§hne entfernen - Wolf, Orchund, Snapper, Beisser, Bluthund, Schattenl√§ufer.");
 		}
 		else
 		{
-			AI_Output (self, other,"Org_819_Drax_Creatures_KEINE_LP_06_00"); //Du muﬂt mehr Erfahrung sammeln, vorher wird dich mein Wissen nicht weiterbringen.
+			AI_Output (self, other,"Org_819_Drax_Creatures_KEINE_LP_06_00"); //Du mu√üt mehr Erfahrung sammeln, vorher wird dich mein Wissen nicht weiterbringen.
 			PrintScreen	("Zu wenig Lernpunkte!", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
 		};
 	}
@@ -229,15 +229,15 @@ func void Org_819_Drax_Creatures_Fell()
 			PrintScreen	("Lerne: Fell abziehen", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
 		
 			AI_Output (self, other,"Org_819_Drax_Creatures_Fell_06_01"); //Wichtig ist vor allem: Immer von vorne nach hinten. Wenn du den Bogen einmal raushast, ist es kein Problem. Felle sind sehr wertvoll!
-			AI_Output (self, other,"Org_819_Drax_Creatures_Fell_06_02"); //Das Fell von Wˆlfen oder Schattenl‰ufern eignet sich zum Herstellen von Kleidung. Du wirst merken, ob ein erlegtes Tier ein brauchbares Fell hat, wenn du es untersuchst.
+			AI_Output (self, other,"Org_819_Drax_Creatures_Fell_06_02"); //Das Fell von W√∂lfen oder Schattenl√§ufern eignet sich zum Herstellen von Kleidung. Du wirst merken, ob ein erlegtes Tier ein brauchbares Fell hat, wenn du es untersuchst.
 			
 			Knows_GetFur = TRUE;
 			Log_CreateTopic (GE_AnimalTrophies,LOG_NOTE);
-			B_LogEntry (GE_AnimalTrophies,"Wissen ¸ber Fell abziehen - Wolf, Orkhund, Schattenl‰ufer, Troll");
+			B_LogEntry (GE_AnimalTrophies,"Wissen √ºber Fell abziehen - Wolf, Orkhund, Schattenl√§ufer, Troll");
 		}
 		else
 		{
-			AI_Output (self, other,"Org_819_Drax_Creatures_KEINE_LP_06_01"); //Du muﬂt mehr Erfahrung sammeln, vorher wird dich mein Wissen nicht weiterbringen.
+			AI_Output (self, other,"Org_819_Drax_Creatures_KEINE_LP_06_01"); //Du mu√üt mehr Erfahrung sammeln, vorher wird dich mein Wissen nicht weiterbringen.
 			PrintScreen	("Zu wenig Lernpunkte!", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
 		};
 	}
@@ -260,16 +260,16 @@ func void Org_819_Drax_Creatures_Kralle()
 			PrintScreen	("Lerne: Krallen abziehen", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
 			
 			AI_Output (other, self,"Org_819_Drax_Creatures_Kralle_15_00"); //Bring mir bei, Krallen abzuziehen!  
-			AI_Output (self, other,"Org_819_Drax_Creatures_Kralle_06_01"); //Ist im Grunde ganz einfach, wenn du weiﬂt, wie's geht. Du muﬂt die Krallen nach vorne wegknicken, auf keinen Fall nach hinten und NICHT ziehen!
+			AI_Output (self, other,"Org_819_Drax_Creatures_Kralle_06_01"); //Ist im Grunde ganz einfach, wenn du wei√üt, wie's geht. Du mu√üt die Krallen nach vorne wegknicken, auf keinen Fall nach hinten und NICHT ziehen!
 			AI_Output (self, other,"Org_819_Drax_Creatures_Kralle_06_02"); //Krallen kannst du vor allem von Echsen nehmen. Du wirst ab jetzt erkennen, von welchem erlegten Biest du die Krallen nehmen kannst.
 			
 			Knows_GetClaws = TRUE;
 			Log_CreateTopic (GE_AnimalTrophies,LOG_NOTE);
-			B_LogEntry (GE_AnimalTrophies,"Wissen ¸ber Krallen abziehen - Warane, Snapper, Lurker, Beisser, Razor");
+			B_LogEntry (GE_AnimalTrophies,"Wissen √ºber Krallen abziehen - Warane, Snapper, Lurker, Beisser, Razor");
 		}
 		else
 		{
-			AI_Output (self, other,"Org_819_Drax_Creatures_KEINE_LP_06_02"); //Du muﬂt mehr Erfahrung sammeln, vorher wird dich mein Wissen nicht weiterbringen.
+			AI_Output (self, other,"Org_819_Drax_Creatures_KEINE_LP_06_02"); //Du mu√üt mehr Erfahrung sammeln, vorher wird dich mein Wissen nicht weiterbringen.
 			PrintScreen	("Zu wenig Lernpunkte!", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
 		};
 	}
@@ -289,20 +289,20 @@ func void Org_819_Drax_Creatures_Haut()
 						
 			B_GiveInvItems	(other, self,itminugget,100);
 			
-			PrintScreen	("Lerne: Echsen h‰uten", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
+			PrintScreen	("Lerne: Echsen h√§uten", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
 				
-			AI_Output (other, self,"Org_819_Drax_Creatures_Haut_15_00"); //Worauf muss ich beim H‰uten von Reptilien achten?
-			AI_Output (self, other,"Org_819_Drax_Creatures_Haut_06_01"); //Die einzigen Reptilien, die daf¸r geeignet sind, sind der Lurker und der Sumpfhai.
-			AI_Output (self, other,"Org_819_Drax_Creatures_Haut_06_02"); //Wenn du die Haut an den Seiten anschneidest, lˆst sie sich wie von selbst. Du solltest ab jetzt kein Problem mehr haben, Echsen zu h‰uten.
+			AI_Output (other, self,"Org_819_Drax_Creatures_Haut_15_00"); //Worauf muss ich beim H√§uten von Reptilien achten?
+			AI_Output (self, other,"Org_819_Drax_Creatures_Haut_06_01"); //Die einzigen Reptilien, die daf√ºr geeignet sind, sind der Lurker und der Sumpfhai.
+			AI_Output (self, other,"Org_819_Drax_Creatures_Haut_06_02"); //Wenn du die Haut an den Seiten anschneidest, l√∂st sie sich wie von selbst. Du solltest ab jetzt kein Problem mehr haben, Echsen zu h√§uten.
 				
 			Knows_GetHide = TRUE;
 			
 			Log_CreateTopic (GE_AnimalTrophies,LOG_NOTE);
-			B_LogEntry (GE_AnimalTrophies,"Wissen ¸ber H‰uten - Lurker, Sumpfhai");
+			B_LogEntry (GE_AnimalTrophies,"Wissen √ºber H√§uten - Lurker, Sumpfhai");
 		}
 		else
 		{
-			AI_Output (self, other,"Org_819_Drax_Creatures_KEINE_LP_06_03"); //Du muﬂt mehr Erfahrung sammeln, vorher wird dich mein Wissen nicht weiterbringen.
+			AI_Output (self, other,"Org_819_Drax_Creatures_KEINE_LP_06_03"); //Du mu√üt mehr Erfahrung sammeln, vorher wird dich mein Wissen nicht weiterbringen.
 			PrintScreen	("Zu wenig Lernpunkte!", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
 		};
 	}

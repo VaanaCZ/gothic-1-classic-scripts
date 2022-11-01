@@ -37,7 +37,7 @@ INSTANCE Info_Sld_8_EinerVonEuchWerden (C_INFO) // E1
 	condition	= Info_Sld_8_EinerVonEuchWerden_Condition;
 	information	= Info_Sld_8_EinerVonEuchWerden_Info;
 	permanent	= 1;
-	description = "Könnt ihr noch einen guten Mann brauchen?";
+	description = "KÃ¶nnt ihr noch einen guten Mann brauchen?";
 };                       
 
 FUNC INT Info_Sld_8_EinerVonEuchWerden_Condition()
@@ -53,8 +53,8 @@ FUNC INT Info_Sld_8_EinerVonEuchWerden_Condition()
 
 FUNC VOID Info_Sld_8_EinerVonEuchWerden_Info()
 {
-	AI_Output(other,self,"Info_Sld_8_EinerVonEuchWerden_15_00"); //Könnt ihr noch einen guten Mann brauchen?
-	AI_Output(self,other,"Info_Sld_8_EinerVonEuchWerden_08_01"); //Lee wird keine Leute bei den Söldnern zulassen, die nicht schon 'ne Zeit lang hier waren und Erfahrung gesammelt haben.
+	AI_Output(other,self,"Info_Sld_8_EinerVonEuchWerden_15_00"); //KÃ¶nnt ihr noch einen guten Mann brauchen?
+	AI_Output(self,other,"Info_Sld_8_EinerVonEuchWerden_08_01"); //Lee wird keine Leute bei den SÃ¶ldnern zulassen, die nicht schon 'ne Zeit lang hier waren und Erfahrung gesammelt haben.
 	AI_Output(self,other,"Info_Sld_8_EinerVonEuchWerden_08_02"); //Wenn du hier im Lager bleiben willst, musst du dich zuerst mit den Banditen rumschlagen.
 };
 
@@ -79,10 +79,10 @@ FUNC INT Info_Sld_8_WichtigePersonen_Condition()
 FUNC VOID Info_Sld_8_WichtigePersonen_Info()
 {
 	AI_Output(other,self,"Info_Sld_8_WichtigePersonen_15_00"); //Wer hat hier das Sagen?
-	AI_Output(self,other,"Info_Sld_8_WichtigePersonen_08_01"); //Wir Söldner folgen alle Lee. Er hat den Deal mit den Magiern gemacht - wir beschützen sie, und sie bringen uns hier raus.
-	AI_Output(other,self,"Info_Sld_8_WichtigePersonen_15_02"); //Also führen die Magier das Lager?
-	AI_Output(self,other,"Info_Sld_8_WichtigePersonen_08_03"); //Nein. Niemand führt das Lager. Die meisten hier sind einfach Männer, die im Alten Lager nicht bleiben konnten oder wollten.
-	AI_Output(self,other,"Info_Sld_8_WichtigePersonen_08_04"); //Hier kocht jeder sein eigenes Süppchen. Die Jungs sind sich nur in einem einig: Besser das ganze Erz auf einen Haufen schütten und in die Luft jagen, als es dem verdammten König in den Rachen zu schieben!
+	AI_Output(self,other,"Info_Sld_8_WichtigePersonen_08_01"); //Wir SÃ¶ldner folgen alle Lee. Er hat den Deal mit den Magiern gemacht - wir beschÃ¼tzen sie, und sie bringen uns hier raus.
+	AI_Output(other,self,"Info_Sld_8_WichtigePersonen_15_02"); //Also fÃ¼hren die Magier das Lager?
+	AI_Output(self,other,"Info_Sld_8_WichtigePersonen_08_03"); //Nein. Niemand fÃ¼hrt das Lager. Die meisten hier sind einfach MÃ¤nner, die im Alten Lager nicht bleiben konnten oder wollten.
+	AI_Output(self,other,"Info_Sld_8_WichtigePersonen_08_04"); //Hier kocht jeder sein eigenes SÃ¼ppchen. Die Jungs sind sich nur in einem einig: Besser das ganze Erz auf einen Haufen schÃ¼tten und in die Luft jagen, als es dem verdammten KÃ¶nig in den Rachen zu schieben!
 	var C_NPC Lee;			Lee		= Hlp_GetNpc(Sld_700_Lee);
 	Lee.aivar[AIV_FINDABLE] = TRUE;
 	var C_NPC Cronos;		Cronos  = Hlp_GetNpc(KdW_604_Cronos);
@@ -99,7 +99,7 @@ INSTANCE Info_Sld_8_DasLager(C_INFO)
 	condition	= Info_Sld_8_DasLager_Condition;
 	information	= Info_Sld_8_DasLager_Info;
 	permanent	= 1;
-	description = "Was kannst du mir über dieses Lager erzählen?";
+	description = "Was kannst du mir Ã¼ber dieses Lager erzÃ¤hlen?";
 };                       
 
 FUNC INT Info_Sld_8_DasLager_Condition()
@@ -111,11 +111,11 @@ FUNC INT Info_Sld_8_DasLager_Condition()
 };
 FUNC VOID Info_Sld_8_DasLager_Info()
 {
-	AI_Output(other,self,"Info_Sld_8_DasLager_15_00"); //Was kannst du mir über dieses Lager erzählen?
-	AI_Output(self,other,"Info_Sld_8_DasLager_08_01"); //Pass auf dich auf, während du hier bist. Im Lager sind 'ne Menge Halsabschneider unterwegs.
-	AI_Output(self,other,"Info_Sld_8_DasLager_08_02"); //Es gibt 'ne Reihe ungeschriebener Gesetze hier. Erstens: Nur die Söldner kommen in den Bereich der Magier.
-	AI_Output(self,other,"Info_Sld_8_DasLager_08_03"); //Zweitens: Wer versucht, an den Erzhaufen ranzukommen, ist ein toter Mann. Drittens: Ich würde nicht versuchen, in die Kneipe auf dem See zu gehen.
-	AI_Output(self,other,"Info_Sld_8_DasLager_08_04"); //Die gehört nämlich den Banditen und die sehen es nicht gerne, wenn grüne Jungs wie du da aufkreuzen.
+	AI_Output(other,self,"Info_Sld_8_DasLager_15_00"); //Was kannst du mir Ã¼ber dieses Lager erzÃ¤hlen?
+	AI_Output(self,other,"Info_Sld_8_DasLager_08_01"); //Pass auf dich auf, wÃ¤hrend du hier bist. Im Lager sind 'ne Menge Halsabschneider unterwegs.
+	AI_Output(self,other,"Info_Sld_8_DasLager_08_02"); //Es gibt 'ne Reihe ungeschriebener Gesetze hier. Erstens: Nur die SÃ¶ldner kommen in den Bereich der Magier.
+	AI_Output(self,other,"Info_Sld_8_DasLager_08_03"); //Zweitens: Wer versucht, an den Erzhaufen ranzukommen, ist ein toter Mann. Drittens: Ich wÃ¼rde nicht versuchen, in die Kneipe auf dem See zu gehen.
+	AI_Output(self,other,"Info_Sld_8_DasLager_08_04"); //Die gehÃ¶rt nÃ¤mlich den Banditen und die sehen es nicht gerne, wenn grÃ¼ne Jungs wie du da aufkreuzen.
 	var C_NPC Cronos;		Cronos  = Hlp_GetNpc(KdW_604_Cronos);
 	Cronos.aivar[AIV_FINDABLE] = TRUE;
 };
@@ -181,7 +181,7 @@ FUNC VOID Info_Sld_8_Krautprobe_Info()
 		else if (Npc_HasItems(other,ItMiJoint_3))
 		{	B_GiveInvItems(other,self,ItMiJoint_3,1);	 };
 		
-		AI_Output(self,other,"Info_Sld_8_Krautprobe_08_01"); //Warum nicht. Gib mir was für 10 Erz.
+		AI_Output(self,other,"Info_Sld_8_Krautprobe_08_01"); //Warum nicht. Gib mir was fÃ¼r 10 Erz.
 		AI_Output(self,other,"Info_Sld_8_Krautprobe_08_02"); //Frag mal ein paar von den anderen Jungs, die wollen sicher auch was.
 		
 		CreateInvItems(self,itminugget,10);

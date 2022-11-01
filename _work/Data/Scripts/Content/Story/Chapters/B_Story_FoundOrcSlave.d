@@ -3,10 +3,10 @@
 //*****************************************************************************
 func void B_Story_FoundOrcSlave()
 {
-	//-------- Missionsgegenst‰nde --------
+	//-------- Missionsgegenst√§nde --------
 	
-	//-------- Tagebucheintr‰ge --------
-	B_LogEntry			(CH4_UluMulu,	"Ich habe den Freund von Ur-Shak in einem unteren Stollen der Freien Mine gefunden. Er heiﬂt Tarrok, ist allerdings vergiftet und benˆtigt dringend eine spezielle Flasche Ork-Medizin, die er bei seiner Flucht hierher verloren hat. Sie liegt irgendwo hier in den unteren Stollen der Mine. Ich muﬂ sie wiederfinden, sonst stirbt er.");
+	//-------- Tagebucheintr√§ge --------
+	B_LogEntry			(CH4_UluMulu,	"Ich habe den Freund von Ur-Shak in einem unteren Stollen der Freien Mine gefunden. Er hei√üt Tarrok, ist allerdings vergiftet und ben√∂tigt dringend eine spezielle Flasche Ork-Medizin, die er bei seiner Flucht hierher verloren hat. Sie liegt irgendwo hier in den unteren Stollen der Mine. Ich mu√ü sie wiederfinden, sonst stirbt er.");
 
 	//-------- Erfahrung --------
 	B_GiveXP			(XP_FoundOrcSlave);

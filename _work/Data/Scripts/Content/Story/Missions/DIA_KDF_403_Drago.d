@@ -16,7 +16,7 @@ FUNC int  KDF_403_Drago_RUNE_Condition()
 };
 func void  KDF_403_Drago_RUNE_Info()
 {
-	AI_Output (self, other,"KDF_403_Drago_RUNE_Info_13_01"); //Nimm diese Rune als Geschenk von Innos. Sie schütze dich auf deinem Weg.  
+	AI_Output (self, other,"KDF_403_Drago_RUNE_Info_13_01"); //Nimm diese Rune als Geschenk von Innos. Sie schÃ¼tze dich auf deinem Weg.  
 	CreateInvItem (self,ItArRuneFirebolt);
 	B_GiveInvItems (self, other, ItArRuneFirebolt, 1);
 	AI_StopProcessInfos	( self );

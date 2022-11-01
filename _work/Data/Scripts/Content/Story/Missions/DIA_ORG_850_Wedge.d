@@ -79,7 +79,7 @@ FUNC void  DIA_Wedge_Hello_Info()
 	AI_Output (other, self,"DIA_Wedge_Hello_15_00"); //Was willst du von mir?
 	AI_Output (self, other,"DIA_Wedge_Hello_05_01"); //Du bist noch nicht lange hier, was? So was sehe ich direkt.
 	AI_Output (self, other,"DIA_Wedge_Hello_05_02"); //Es gibt 'ne Menge Sachen, die du hier wissen musst. Einige davon kann ich dir beibringen.
-	AI_Output (self, other,"DIA_Wedge_Hello_05_03"); //Außerdem musst du hier aufpassen, mit wem du redest. Butch zum Beispiel - der Typ da drüben am Lagerfeuer, vor dem musst du dich in Acht nehmen.
+	AI_Output (self, other,"DIA_Wedge_Hello_05_03"); //AuÃŸerdem musst du hier aufpassen, mit wem du redest. Butch zum Beispiel - der Typ da drÃ¼ben am Lagerfeuer, vor dem musst du dich in Acht nehmen.
 };  
 
 // ****************************************
@@ -107,7 +107,7 @@ FUNC int  DIA_Wedge_WarnsOfButch_Condition()
 FUNC void  DIA_Wedge_WarnsOfButch_Info()
 {
 	AI_Output (other, self,"DIA_Wedge_WarnsOfButch_15_00"); //Was ist mit Butch?
-	AI_Output (self, other,"DIA_Wedge_WarnsOfButch_05_01"); //Er hat die fiese Angewohnheit, Neuen zur Begrüßung das Fell über die Ohren zu ziehen. Also geh' ihm am besten aus dem Weg.
+	AI_Output (self, other,"DIA_Wedge_WarnsOfButch_05_01"); //Er hat die fiese Angewohnheit, Neuen zur BegrÃ¼ÃŸung das Fell Ã¼ber die Ohren zu ziehen. Also geh' ihm am besten aus dem Weg.
 	//AI_Output (self, other,"DIA_Wedge_WarnsOfButch_05_02"); //Also, geh ihm am besten aus dem Weg.//***Doppelt***
 };  
 
@@ -138,7 +138,7 @@ FUNC VOID DIA_Wedge_Lehrer_Info()
 	if (log_wedgelearn == FALSE)
 	{
 		Log_CreateTopic   	(GE_TeacherNC,LOG_NOTE);
-		B_LogEntry			(GE_TeacherNC, "Wedge der Bandit, kann mir die Talente SCHLEICHEN, TASCHENDIEBSTAHL und SCHLÖSSER ÖFFNEN beibringen.");
+		B_LogEntry			(GE_TeacherNC, "Wedge der Bandit, kann mir die Talente SCHLEICHEN, TASCHENDIEBSTAHL und SCHLÃ–SSER Ã–FFNEN beibringen.");
 		log_wedgelearn = TRUE ;
 	};
 	AI_Output (other, self,"DIA_Wedge_Lehrer_15_00"); //Was kannst du mir beibringen?
@@ -176,17 +176,17 @@ func void DIA_Wedge_Lehrer_Schleichen()
 	if (B_GiveSkill(other, NPC_TALENT_SNEAK, 1, LPCOST_TALENT_SNEAK))
 	{
 		AI_Output (self, other,"DIA_Wedge_Lehrer_Schleichen_05_01"); //Es ist alles eine Frage des Gleichgewichts. Du musst auch lernen, deinen Atem zu kontrollieren.
-		AI_Output (self, other,"DIA_Wedge_Lehrer_Schleichen_05_02"); //Beachte die richtige Haltung, und niemand wird dich hören, wenn du dich bewegst.
+		AI_Output (self, other,"DIA_Wedge_Lehrer_Schleichen_05_02"); //Beachte die richtige Haltung, und niemand wird dich hÃ¶ren, wenn du dich bewegst.
 	};
 };
 
 func void DIA_Wedge_Lehrer_Lockpick()
 {
-	AI_Output (other, self,"DIA_Wedge_Lehrer_Lockpick_15_00"); //Wie werde ich besser im Knacken von Schlössern?
+	AI_Output (other, self,"DIA_Wedge_Lehrer_Lockpick_15_00"); //Wie werde ich besser im Knacken von SchlÃ¶ssern?
 	
 	if (B_GiveSkill(other, NPC_TALENT_PICKLOCK, 1, LPCOST_TALENT_PICKLOCK_1))
 	{
-		AI_Output (self, other,"DIA_Wedge_Lehrer_Lockpick_05_01"); //Das willst du gerne wissen, hm? Ist für den Anfang nicht so schwer.
+		AI_Output (self, other,"DIA_Wedge_Lehrer_Lockpick_05_01"); //Das willst du gerne wissen, hm? Ist fÃ¼r den Anfang nicht so schwer.
 		AI_Output (self, other,"DIA_Wedge_Lehrer_Lockpick_05_02"); //Du musst vor allem darauf achten, dass dir dein Dietrich nicht abbricht.
 		AI_Output (self, other,"DIA_Wedge_Lehrer_Lockpick_05_03"); //Wenn du in Zukunft mit weniger Gewalt an die Sache rangehst, wirst du merken, dass du weniger Dietriche verbrauchst!
 	};
@@ -194,13 +194,13 @@ func void DIA_Wedge_Lehrer_Lockpick()
 
 func void DIA_Wedge_Lehrer_Lockpick2()
 {
-	AI_Output (other, self,"DIA_Wedge_Lehrer_Lockpick2_15_00"); //Wie werde ich ein Meister im Öffnen von Schlössern?
+	AI_Output (other, self,"DIA_Wedge_Lehrer_Lockpick2_15_00"); //Wie werde ich ein Meister im Ã–ffnen von SchlÃ¶ssern?
 	
 	if (B_GiveSkill(other, NPC_TALENT_PICKLOCK, 2, LPCOST_TALENT_PICKLOCK_2))
 	{
-		AI_Output (self, other,"DIA_Wedge_Lehrer_Lockpick2_05_01"); //Nur wer schon einige Übung hat, merkt genau, wann ihm ein Dietrich abbricht und wann nicht. Du erkennst es am Geräusch!
+		AI_Output (self, other,"DIA_Wedge_Lehrer_Lockpick2_05_01"); //Nur wer schon einige Ãœbung hat, merkt genau, wann ihm ein Dietrich abbricht und wann nicht. Du erkennst es am GerÃ¤usch!
 		AI_Output (self, other,"DIA_Wedge_Lehrer_Lockpick2_05_02"); //Ich denke, du bist jetzt so weit - lerne auf das leise Klicken des Schlosses zu achten, und du wirst nur noch selten das Pech haben, einen Dietrich zu verlieren.
-		AI_Output (self, other,"DIA_Wedge_Lehrer_Lockpick2_05_03"); //Ein Meister des Fachs hat eine gute Chance, eine Truhe zu öffnen, ohne dass sein Dietrich überhaupt abbricht.
+		AI_Output (self, other,"DIA_Wedge_Lehrer_Lockpick2_05_03"); //Ein Meister des Fachs hat eine gute Chance, eine Truhe zu Ã¶ffnen, ohne dass sein Dietrich Ã¼berhaupt abbricht.
 	};
 };
 
@@ -213,7 +213,7 @@ func void DIA_Wedge_Lehrer_Pickpocket()
 		{
 			AI_Output (self, other,"DIA_Wedge_Lehrer_PICKPOCKET_05_01"); //So, du willst also ein paar Leute um ihre Sachen erleichtern? Nun gut.
 			AI_Output (self, other,"DIA_Wedge_Lehrer_PICKPOCKET_05_02"); //Ich werde dir beibringen, wie du besser wirst, aber es besteht immer noch eine Chance, dass du erwischt wirst.
-			AI_Output (self, other,"DIA_Wedge_Lehrer_PICKPOCKET_05_03"); //Das Risiko solltest du nur eingehen, wenn außer deinem Opfer niemand sonst da ist.
+			AI_Output (self, other,"DIA_Wedge_Lehrer_PICKPOCKET_05_03"); //Das Risiko solltest du nur eingehen, wenn auÃŸer deinem Opfer niemand sonst da ist.
 			AI_Output (self, other,"DIA_Wedge_Lehrer_PICKPOCKET_05_04"); //Erst als Meister wirst du in der Lage sein, jemanden etwas aus der Tasche zu ziehen, ohne dass er es bemerkt!
 		};
 	}
