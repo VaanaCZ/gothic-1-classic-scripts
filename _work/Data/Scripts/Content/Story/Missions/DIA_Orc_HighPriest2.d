@@ -21,11 +21,11 @@ FUNC VOID Info_HighPriest2_Info()
 	AI_SetWalkmode		(self, NPC_WALK);
 	AI_GotoNpc			(self, other);
 	
-	AI_Output			(self, other,"Info_HighPriest2_17_01"); //¡UN INFIEL EN EL HOGAR DEL MAESTRO!
-	AI_Output			(self, other,"Info_HighPriest2_17_02"); //¡MALDITO SEEEEEAS!
-	AI_Output			(other, self,"Info_HighPriest2_15_03"); //¡Maldito seas tú, felpudo mohoso y maloliente!
+	AI_Output			(self, other,"Info_HighPriest2_17_01"); //Â¡UN INFIEL EN EL HOGAR DEL MAESTRO!
+	AI_Output			(self, other,"Info_HighPriest2_17_02"); //Â¡MALDITO SEEEEEAS!
+	AI_Output			(other, self,"Info_HighPriest2_15_03"); //Â¡Maldito seas tÃº, felpudo mohoso y maloliente!
 	
-	B_LogEntry			(CH4_EnterTemple,"Varrag-Kasorg, otro de los cinco chamanes orcos, ¡verá el fin de su existencia bajo mis pies!");
+	B_LogEntry			(CH4_EnterTemple,"Varrag-Kasorg, otro de los cinco chamanes orcos, Â¡verÃ¡ el fin de su existencia bajo mis pies!");
 
 	AI_StopProcessInfos	(self );
 

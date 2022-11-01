@@ -46,13 +46,13 @@ FUNC int DIA_Grd_218_FirstIn_Condition()
 
 FUNC VOID DIA_Grd_218_FirstIn_Info()
 {
-	AI_Output (self, other,"DIA_Grd_218_FirstIn_07_00"); //¡Espera! ¿Qué haces?
+	AI_Output (self, other,"DIA_Grd_218_FirstIn_07_00"); //Â¡Espera! Â¿QuÃ© haces?
 	AI_Output (other, self,"DIA_Grd_218_FirstIn_15_01"); //Quiero entrar.
-	AI_Output (self, other,"DIA_Grd_218_FirstIn_07_02"); //¿Bromeas?
-	AI_Output (other, self,"DIA_Grd_218_FirstIn_15_03"); //¿Por qué no se lo preguntas a Thorus?
-	AI_Output (self, other,"DIA_Grd_218_FirstIn_07_04"); //Lo haré. ¡Si mientes, has firmado tu sentencia de muerte!
-	AI_Output (other, self,"DIA_Grd_218_FirstIn_15_05"); //¿Estás diciendo que puedo entrar?
-	AI_Output (self, other,"DIA_Grd_218_FirstIn_07_06"); //¡Sí, muévete!
+	AI_Output (self, other,"DIA_Grd_218_FirstIn_07_02"); //Â¿Bromeas?
+	AI_Output (other, self,"DIA_Grd_218_FirstIn_15_03"); //Â¿Por quÃ© no se lo preguntas a Thorus?
+	AI_Output (self, other,"DIA_Grd_218_FirstIn_07_04"); //Lo harÃ©. Â¡Si mientes, has firmado tu sentencia de muerte!
+	AI_Output (other, self,"DIA_Grd_218_FirstIn_15_05"); //Â¿EstÃ¡s diciendo que puedo entrar?
+	AI_Output (self, other,"DIA_Grd_218_FirstIn_07_06"); //Â¡SÃ­, muÃ©vete!
 	AI_StopProcessInfos	(self);
 };
 
@@ -68,9 +68,9 @@ FUNC VOID DIA_Grd_218_FirstIn_Info()
 //	Uhrzeit:	24h
 //
 //	Es passiert folgendes:
-//	1.	Nähert sich der Spieler dem Durchgang, so wird er in diesen
+//	1.	NÃ¤hert sich der Spieler dem Durchgang, so wird er in diesen
 //		Dialog gezwungen und einmal gewarnt
-//	2.	Nähert er sich trotzdem wieder, wird er angegriffen
+//	2.	NÃ¤hert er sich trotzdem wieder, wird er angegriffen
 //////////////////////////////////////////////////////////////////////////
 const string	Grd_218_CHECKPOINT		= "OCC_BARONS_HALLWAY_FRONT";
 
@@ -102,9 +102,9 @@ func void Info_Grd_218_FirstWarn_Info()
 {
 	PrintGlobals	(PD_MISSION);
 
-	AI_Output (self, hero,"Info_Grd_218_FirstWarn_Info_07_01"); //¡ALTO! ¡Ni un paso más!
-	AI_Output (hero, self,"Info_Grd_218_FirstWarn_Info_15_02"); //¿Por qué?
-	AI_Output (self, hero,"Info_Grd_218_FirstWarn_Info_07_03"); //¡La casa de los magnates del mineral es zona prohibida para escoria como tú!
+	AI_Output (self, hero,"Info_Grd_218_FirstWarn_Info_07_01"); //Â¡ALTO! Â¡Ni un paso mÃ¡s!
+	AI_Output (hero, self,"Info_Grd_218_FirstWarn_Info_15_02"); //Â¿Por quÃ©?
+	AI_Output (self, hero,"Info_Grd_218_FirstWarn_Info_07_03"); //Â¡La casa de los magnates del mineral es zona prohibida para escoria como tÃº!
 
 	hero.aivar[AIV_LASTDISTTOWP] 		= Npc_GetDistToWP(hero,Grd_218_CHECKPOINT);
 	hero.aivar[AIV_GUARDPASSAGE_STATUS]	= AIV_GPS_FIRSTWARN;	
@@ -144,7 +144,7 @@ func int Info_Grd_218_Attack_Info()
 	hero.aivar[AIV_GUARDPASSAGE_STATUS]	= AIV_GPS_PUNISH;	
 	
 	B_FullStop			(self);	
-	AI_StopProcessInfos	(self);					// dem Spieler sofort wieder die Kontrolle zurückgeben
+	AI_StopProcessInfos	(self);					// dem Spieler sofort wieder die Kontrolle zurÃ¼ckgeben
 	B_IntruderAlert		(self,	other);
 	B_SetAttackReason	(self,	AIV_AR_INTRUDER);
 	Npc_SetTarget		(self,	hero);

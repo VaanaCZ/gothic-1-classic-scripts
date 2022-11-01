@@ -32,7 +32,7 @@ instance  Org_843_Sharky_Fisk (C_INFO)
 	condition		= Org_843_Sharky_Fisk_Condition;
 	information		= Org_843_Sharky_Fisk_Info;
 	permanent		= 0;
-	description		= "Fisk, del Campamento Viejo, está buscando un nuevo socio comercial."; 
+	description		= "Fisk, del Campamento Viejo, estÃ¡ buscando un nuevo socio comercial."; 
 	trade 			= 1;
 };
 
@@ -46,10 +46,10 @@ FUNC int  Org_843_Sharky_Fisk_Condition()
 };
 FUNC void  Org_843_Sharky_Fisk_Info()
 {
-	AI_Output (other, self,"Org_843_Sharky_Fisk_Info_15_00"); //Fisk, del Campamento Viejo, está buscando un nuevo socio comercial.
-	AI_Output (self, other,"Org_843_Sharky_Fisk_Info_10_01"); //¿Y por qué me lo dices a mí?
-	AI_Output (other, self,"Org_843_Sharky_Fisk_Info_15_02"); //Pensé que podrías estar interesado en ganar algo de mineral.
-	AI_Output (self, other,"Org_843_Sharky_Fisk_Info_10_03"); //¿Por qué no? Dile a Fisk que puede contar conmigo durante los próximos días.
+	AI_Output (other, self,"Org_843_Sharky_Fisk_Info_15_00"); //Fisk, del Campamento Viejo, estÃ¡ buscando un nuevo socio comercial.
+	AI_Output (self, other,"Org_843_Sharky_Fisk_Info_10_01"); //Â¿Y por quÃ© me lo dices a mÃ­?
+	AI_Output (other, self,"Org_843_Sharky_Fisk_Info_15_02"); //PensÃ© que podrÃ­as estar interesado en ganar algo de mineral.
+	AI_Output (self, other,"Org_843_Sharky_Fisk_Info_10_03"); //Â¿Por quÃ© no? Dile a Fisk que puede contar conmigo durante los prÃ³ximos dÃ­as.
 };  
 
 
@@ -82,7 +82,7 @@ FUNC void  Org_843_Sharky_TRADE_Info()
 };  
 
 /*------------------------------------------------------------------------
-							TRADE BEGRÜßUNG 								
+							TRADE BEGRÃœÃŸUNG 								
 ------------------------------------------------------------------------*/
 
 instance  Org_843_Sharky_GREET (C_INFO) 
@@ -92,7 +92,7 @@ instance  Org_843_Sharky_GREET (C_INFO)
 	information		= Org_843_Sharky_GREET_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Eh, ¿qué tal?"; 
+	description		= "Eh, Â¿quÃ© tal?"; 
 };
 
 FUNC int  Org_843_Sharky_GREET_Condition()
@@ -103,10 +103,10 @@ FUNC int  Org_843_Sharky_GREET_Condition()
 
 FUNC void  Org_843_Sharky_GREET_Info()
 {
-	AI_Output		(other, self,"Org_843_Sharky_GREET_Info_15_01"); //Eh, ¿cómo va?
-	AI_Output		(self, other,"Org_843_Sharky_GREET_Info_10_02"); //¿Quieres comprar algo?
+	AI_Output		(other, self,"Org_843_Sharky_GREET_Info_15_01"); //Eh, Â¿cÃ³mo va?
+	AI_Output		(self, other,"Org_843_Sharky_GREET_Info_10_02"); //Â¿Quieres comprar algo?
 	Log_CreateTopic (GE_TraderNC,LOG_NOTE);
-	B_LogEntry		(GE_TraderNC,"Sharky, el bandido, comercia con ARMAS y otros artículos. Suele estar por el Campamento Nuevo."); 
+	B_LogEntry		(GE_TraderNC,"Sharky, el bandido, comercia con ARMAS y otros artÃ­culos. Suele estar por el Campamento Nuevo."); 
 };
 
 

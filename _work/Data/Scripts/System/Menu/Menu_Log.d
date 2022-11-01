@@ -26,7 +26,7 @@ instance MENU_LOG(C_MENU_DEF)
 };
 
 //
-// Menüpunkte
+// MenÃ¼punkte
 //
 
 const int LOG_ITEM_X1 	= 1200;
@@ -208,7 +208,7 @@ INSTANCE MENU_ITEM_CONTENT_VIEWER(C_MENU_ITEM_DEF)
 
 INSTANCE MENU_ITEM_DAY_TITLE(C_MENU_ITEM_DEF)
 {
-	text[0]		= 	"Día";
+	text[0]		= 	"DÃ­a";
 	posx 		= 	1800; // see dimx of MENU_ITEM_DAY!!
 	posy		= 	6000;
 	fontName	=	LOG_FONT_DATETIME;

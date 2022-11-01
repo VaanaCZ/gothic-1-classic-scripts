@@ -33,7 +33,7 @@ INSTANCE Info_Bartholo_HAllo (C_INFO)
 	condition	= Info_Bartholo_HAllo_Condition;
 	information	= Info_Bartholo_HAllo_Info;
 	permanent	= 0;
-	description = "¿Quién eres?";
+	description = "Â¿QuiÃ©n eres?";
 };                       
 
 FUNC INT Info_Bartholo_HAllo_Condition()
@@ -43,11 +43,11 @@ FUNC INT Info_Bartholo_HAllo_Condition()
 
 FUNC VOID Info_Bartholo_HAllo_Info()
 {
-	AI_Output (other, self,"Info_Bartholo_HAllo_15_00"); //¿Quién eres?
+	AI_Output (other, self,"Info_Bartholo_HAllo_15_00"); //Â¿QuiÃ©n eres?
 	AI_Output (self, other,"Info_Bartholo_HAllo_12_01"); //Me llamo Bartholo. Aseguro que los magnates del mineral reciban sus suministros.
 	AI_Output (self, other,"Info_Bartholo_HAllo_12_02"); //Estoy a cargo de todo; desde las reservas de hierba a los alimentos y las provisiones para las mujeres.
-	AI_Output (self, other,"Info_Bartholo_HAllo_12_03"); //Además, me encargo de que estos cocineros estúpidos hagan bien su trabajo.
-	AI_Output (self, other,"Info_Bartholo_HAllo_12_04"); //Deberían agradecérmelo. Gómez no tolera fallos. Echó a los dos últimos cocineros a los acechadores del río.
+	AI_Output (self, other,"Info_Bartholo_HAllo_12_03"); //AdemÃ¡s, me encargo de que estos cocineros estÃºpidos hagan bien su trabajo.
+	AI_Output (self, other,"Info_Bartholo_HAllo_12_04"); //DeberÃ­an agradecÃ©rmelo. GÃ³mez no tolera fallos. EchÃ³ a los dos Ãºltimos cocineros a los acechadores del rÃ­o.
 };
 
 // ************************************************************
@@ -67,7 +67,7 @@ INSTANCE Info_Bartholo_PERM (C_INFO)
 
 FUNC INT Info_Bartholo_PERM_Condition()
 {	
-//SN: Problematisch, da Bartholo auch einen wichtigen Schlüssel hat!
+//SN: Problematisch, da Bartholo auch einen wichtigen SchlÃ¼ssel hat!
 //	if (Npc_KnowsInfo(hero, Info_Bartholo_Hallo))
 //	{
 //		return 1;
@@ -92,7 +92,7 @@ INSTANCE Info_Bartholo_Krautbote (C_INFO)
 	condition	= Info_Bartholo_Krautbote_Condition;
 	information	= Info_Bartholo_Krautbote_Info;
 	permanent	= 1;
-	description = "Tengo un poco de hierba para Gómez. La manda Cor Kalom.";
+	description = "Tengo un poco de hierba para GÃ³mez. La manda Cor Kalom.";
 };                       
 
 FUNC INT Info_Bartholo_Krautbote_Condition()
@@ -105,14 +105,14 @@ FUNC INT Info_Bartholo_Krautbote_Condition()
 
 FUNC VOID Info_Bartholo_Krautbote_Info()
 {
-	AI_Output				(other, self,"Info_Bartholo_Krautbote_15_00"); //Tengo un poco de hierba para Gómez. La manda Cor Kalom.
-	AI_Output				(self, other,"Info_Bartholo_Krautbote_12_01"); //¡Enséñamela!
+	AI_Output				(other, self,"Info_Bartholo_Krautbote_15_00"); //Tengo un poco de hierba para GÃ³mez. La manda Cor Kalom.
+	AI_Output				(self, other,"Info_Bartholo_Krautbote_12_01"); //Â¡EnsÃ©Ã±amela!
 	
 	if (Npc_HasItems(other, itmijoint_3) >= 30)
 	{
 		AI_Output			(self, other,"Info_Bartholo_Krautbote_12_02"); //Hmmmmmmm...
-		AI_Output			(self, other,"Info_Bartholo_Krautbote_12_03"); //¡Muy bien! Gómez se estaba impacientando. ¡Tienes suerte de haberla entregado hoy!
-		AI_Output			(other, self,"Info_Bartholo_Krautbote_15_04"); //¿Y el pago?
+		AI_Output			(self, other,"Info_Bartholo_Krautbote_12_03"); //Â¡Muy bien! GÃ³mez se estaba impacientando. Â¡Tienes suerte de haberla entregado hoy!
+		AI_Output			(other, self,"Info_Bartholo_Krautbote_15_04"); //Â¿Y el pago?
 		AI_Output			(self, other,"Info_Bartholo_Krautbote_12_05"); //No tan deprisa... Ten, toma. 500 pepitas es lo acordado.
 		
 		B_GiveInvItems  	(other,self,itmijoint_3,30);
@@ -127,7 +127,7 @@ FUNC VOID Info_Bartholo_Krautbote_Info()
 	}
 	else
 	{
-		AI_Output			(self, other,"Info_Bartholo_Krautbote_NoKraut_12_00"); //¡No tienes suficiente hierba para ser un recadero! ¡Por tu bien, espero que no la hayas vendido por ahí! ¡Vuelve cuando tengas la cantidad adecuada!
+		AI_Output			(self, other,"Info_Bartholo_Krautbote_NoKraut_12_00"); //Â¡No tienes suficiente hierba para ser un recadero! Â¡Por tu bien, espero que no la hayas vendido por ahÃ­! Â¡Vuelve cuando tengas la cantidad adecuada!
 	};
 };
 
@@ -155,11 +155,11 @@ FUNC void  DIA_EBR_106_Bartholo_Wait4SC_Info()
 {
 	AI_SetWalkmode		(self, NPC_WALK);
 	AI_GotoNpc			(self, other);
-	AI_Output			(self, other,"Info_Bartholo_12_01");	//¡Sabía que alguien intentaría llegar hasta nosotros a través de la estrella de cinco puntas!
-	AI_Output			(self, other,"Info_Bartholo_12_02");	//¡Pero, a diferencia de Stone, ese herrero traidor, a ti no te necesitamos!
-	AI_Output			(other, self,"Info_Bartholo_15_03");	//¿Dónde está Stone?
-	AI_Output			(self, other,"Info_Bartholo_12_04");	//¡Entre rejas! ¡Pero tú vas a estar bajo tierra en un instante!
-	AI_Output			(self, other,"Info_Bartholo_12_05");	//¡Muchachos, cogedle y hacedle rebanadas!
+	AI_Output			(self, other,"Info_Bartholo_12_01");	//Â¡SabÃ­a que alguien intentarÃ­a llegar hasta nosotros a travÃ©s de la estrella de cinco puntas!
+	AI_Output			(self, other,"Info_Bartholo_12_02");	//Â¡Pero, a diferencia de Stone, ese herrero traidor, a ti no te necesitamos!
+	AI_Output			(other, self,"Info_Bartholo_15_03");	//Â¿DÃ³nde estÃ¡ Stone?
+	AI_Output			(self, other,"Info_Bartholo_12_04");	//Â¡Entre rejas! Â¡Pero tÃº vas a estar bajo tierra en un instante!
+	AI_Output			(self, other,"Info_Bartholo_12_05");	//Â¡Muchachos, cogedle y hacedle rebanadas!
 
 	AI_StopProcessInfos	(self);
 	

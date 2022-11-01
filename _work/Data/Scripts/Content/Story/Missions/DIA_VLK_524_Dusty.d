@@ -33,7 +33,7 @@ INSTANCE DIA_Dusty_Hello (C_INFO)
 	condition		= DIA_Dusty_Hello_Condition;
 	information		= DIA_Dusty_Hello_Info;
 	permanent		= 0;
-	description		= "¡Hola! Soy nuevo aquí. ¿Qué tal?";
+	description		= "Â¡Hola! Soy nuevo aquÃ­. Â¿QuÃ© tal?";
 };
 
 FUNC INT DIA_Dusty_Hello_Condition()
@@ -43,11 +43,11 @@ FUNC INT DIA_Dusty_Hello_Condition()
 
 FUNC VOID DIA_Dusty_Hello_Info()
 {
-	AI_Output (other, self,"DIA_Dusty_Hello_15_00"); //¡Hola! Soy nuevo aquí; ¿cómo va todo?
-	AI_Output (self, other,"DIA_Dusty_Hello_03_01"); //¡Lárgate! He estado trabajando como una mula en las minas durante las dos últimas semanas. ¿Y para qué?
-	AI_Output (self, other,"DIA_Dusty_Hello_03_02"); //Sólo he conseguido unos patéticos trozos de mineral. Me lo tuve que gastar casi todo en comida.
+	AI_Output (other, self,"DIA_Dusty_Hello_15_00"); //Â¡Hola! Soy nuevo aquÃ­; Â¿cÃ³mo va todo?
+	AI_Output (self, other,"DIA_Dusty_Hello_03_01"); //Â¡LÃ¡rgate! He estado trabajando como una mula en las minas durante las dos Ãºltimas semanas. Â¿Y para quÃ©?
+	AI_Output (self, other,"DIA_Dusty_Hello_03_02"); //SÃ³lo he conseguido unos patÃ©ticos trozos de mineral. Me lo tuve que gastar casi todo en comida.
 	AI_Output (self, other,"DIA_Dusty_Hello_03_03"); //He hablado con Baal Parvez. Me ha contado algunas cosas interesantes acerca del Campamento de la Secta.
-	AI_Output (self, other,"DIA_Dusty_Hello_03_04"); //Será mejor que vaya allí en vez de partirme la espalda por Gómez.
+	AI_Output (self, other,"DIA_Dusty_Hello_03_04"); //SerÃ¡ mejor que vaya allÃ­ en vez de partirme la espalda por GÃ³mez.
 };
 
 // **************************************************
@@ -61,7 +61,7 @@ INSTANCE DIA_Dusty_WhyNotLeave (C_INFO)
 	condition		= DIA_Dusty_WhyNotLeave_Condition;
 	information		= DIA_Dusty_WhyNotLeave_Info;
 	permanent		= 0;
-	description		= "¿No te gusta esto? Entonces, ¿por qué no te vas?";
+	description		= "Â¿No te gusta esto? Entonces, Â¿por quÃ© no te vas?";
 };
 
 FUNC INT DIA_Dusty_WhyNotLeave_Condition()
@@ -75,13 +75,13 @@ FUNC INT DIA_Dusty_WhyNotLeave_Condition()
 
 FUNC VOID DIA_Dusty_WhyNotLeave_Info()
 {
-	AI_Output (other, self,"DIA_Dusty_WhyNotLeave_15_00"); //¿No estás a gusto aquí? ¿Por qué no te marchas, entonces?
-	AI_Output (self, other,"DIA_Dusty_WhyNotLeave_03_01"); //Porque no estoy muy seguro de lo que voy a encontrarme allí. Tenía un amigo aquí; se llamaba Melvin. Salió hacia el Campamento de la Secta hace una semana.
-	AI_Output (self, other,"DIA_Dusty_WhyNotLeave_03_02"); //Pero, desde entonces, no he recibido noticias suyas. ¡Y mientras siga sin recibirlas, aquí me quedo!
+	AI_Output (other, self,"DIA_Dusty_WhyNotLeave_15_00"); //Â¿No estÃ¡s a gusto aquÃ­? Â¿Por quÃ© no te marchas, entonces?
+	AI_Output (self, other,"DIA_Dusty_WhyNotLeave_03_01"); //Porque no estoy muy seguro de lo que voy a encontrarme allÃ­. TenÃ­a un amigo aquÃ­; se llamaba Melvin. SaliÃ³ hacia el Campamento de la Secta hace una semana.
+	AI_Output (self, other,"DIA_Dusty_WhyNotLeave_03_02"); //Pero, desde entonces, no he recibido noticias suyas. Â¡Y mientras siga sin recibirlas, aquÃ­ me quedo!
 
 	Log_CreateTopic		(CH1_RecruitDusty,	LOG_MISSION);
 	Log_SetTopicStatus	(CH1_RecruitDusty,	LOG_RUNNING);
-	B_LogEntry			(CH1_RecruitDusty,"Dusty, un cavador del Campamento Viejo, ya no está satisfecho con vivir allí. Está pensando en unirse a la Hermandad del pantano.");
+	B_LogEntry			(CH1_RecruitDusty,"Dusty, un cavador del Campamento Viejo, ya no estÃ¡ satisfecho con vivir allÃ­. EstÃ¡ pensando en unirse a la Hermandad del pantano.");
 };
 
 // **************************************************
@@ -95,7 +95,7 @@ INSTANCE DIA_Dusty_MetMelvin (C_INFO)
 	condition		= DIA_Dusty_MetMelvin_Condition;
 	information		= DIA_Dusty_MetMelvin_Info;
 	permanent		= 0;
-	description		= "Estaba en el Campamento de la Secta y me encontré con Melvin.";
+	description		= "Estaba en el Campamento de la Secta y me encontrÃ© con Melvin.";
 };
 
 FUNC INT DIA_Dusty_MetMelvin_Condition()
@@ -109,10 +109,10 @@ FUNC INT DIA_Dusty_MetMelvin_Condition()
 FUNC VOID DIA_Dusty_MetMelvin_Info()
 {
 	AI_Output (other, self,"DIA_Dusty_MetMelvin_15_00"); //Yo he estado en el Campamento de la Secta y he visto a Melvin.
-	AI_Output (self, other,"DIA_Dusty_MetMelvin_03_01"); //¿Y? ¿Qué te contó?
-	AI_Output (other, self,"DIA_Dusty_MetMelvin_15_02"); //Parece ser que le gusta más eso que ser acosado por los guardias.
-	AI_Output (self, other,"DIA_Dusty_MetMelvin_03_03"); //¡Oye, tío! A ver si él va a ser el único que se lo pasa bien. Tengo que ir allí. Pero nunca conseguiré salir del Campamento.
-	AI_Output (other, self,"DIA_Dusty_MetMelvin_15_04"); //¿De verdad? ¿Por qué no?
+	AI_Output (self, other,"DIA_Dusty_MetMelvin_03_01"); //Â¿Y? Â¿QuÃ© te contÃ³?
+	AI_Output (other, self,"DIA_Dusty_MetMelvin_15_02"); //Parece ser que le gusta mÃ¡s eso que ser acosado por los guardias.
+	AI_Output (self, other,"DIA_Dusty_MetMelvin_03_03"); //Â¡Oye, tÃ­o! A ver si Ã©l va a ser el Ãºnico que se lo pasa bien. Tengo que ir allÃ­. Pero nunca conseguirÃ© salir del Campamento.
+	AI_Output (other, self,"DIA_Dusty_MetMelvin_15_04"); //Â¿De verdad? Â¿Por quÃ© no?
 	AI_Output (self, other,"DIA_Dusty_MetMelvin_03_05"); //Los guardias se han enterado de que quiero marcharme; parece que he hablado demasiado.
 	AI_Output (self, other,"DIA_Dusty_MetMelvin_03_06"); //Necesito por lo menos 100 pepitas para sobornar a los guardias.
 };
@@ -128,7 +128,7 @@ INSTANCE DIA_Dusty_Offer100Ore (C_INFO)
 	condition		= DIA_Dusty_Offer100Ore_Condition;
 	information		= DIA_Dusty_Offer100Ore_Info;
 	permanent		= 0;
-	description		= "¿Y si te doy las 100 pepitas para los guardias?";
+	description		= "Â¿Y si te doy las 100 pepitas para los guardias?";
 };
 
 FUNC INT DIA_Dusty_Offer100Ore_Condition()
@@ -142,10 +142,10 @@ FUNC INT DIA_Dusty_Offer100Ore_Condition()
 
 FUNC VOID DIA_Dusty_Offer100Ore_Info()
 {
-	AI_Output (other, self,"DIA_Dusty_Offer100Ore_15_00"); //¿Y si yo te diera las 100 pepitas para la guardia?
-	AI_Output (self, other,"DIA_Dusty_Offer100Ore_03_01"); //¿Harías eso? ¿Por qué?
-	AI_Output (other, self,"DIA_Dusty_Offer100Ore_15_02"); //Bueno, digamos que tú no eres el único que prefiere que estés en el Campamento de la Secta.
-	AI_Output (self, other,"DIA_Dusty_Offer100Ore_03_03"); //¿Quieres decir que quieres venir conmigo?
+	AI_Output (other, self,"DIA_Dusty_Offer100Ore_15_00"); //Â¿Y si yo te diera las 100 pepitas para la guardia?
+	AI_Output (self, other,"DIA_Dusty_Offer100Ore_03_01"); //Â¿HarÃ­as eso? Â¿Por quÃ©?
+	AI_Output (other, self,"DIA_Dusty_Offer100Ore_15_02"); //Bueno, digamos que tÃº no eres el Ãºnico que prefiere que estÃ©s en el Campamento de la Secta.
+	AI_Output (self, other,"DIA_Dusty_Offer100Ore_03_03"); //Â¿Quieres decir que quieres venir conmigo?
 };
 
 // **************************************************
@@ -159,7 +159,7 @@ INSTANCE DIA_Dusty_IWouldGo (C_INFO)
 	condition		= DIA_Dusty_IWouldGo_Condition;
 	information		= DIA_Dusty_IWouldGo_Info;
 	permanent		= 0;
-	description		= "IRÉ contigo al Campamento de la Secta.";
+	description		= "IRÃ‰ contigo al Campamento de la Secta.";
 };
 
 FUNC INT DIA_Dusty_IWouldGo_Condition()
@@ -172,11 +172,11 @@ FUNC INT DIA_Dusty_IWouldGo_Condition()
 
 FUNC VOID DIA_Dusty_IWouldGo_Info()
 {
-	AI_Output	(other, self,"DIA_Dusty_IWouldGo_15_00"); //Sí, iré contigo al Campamento de la Secta.
-	AI_Output	(self, other,"DIA_Dusty_IWouldGo_03_01"); //¡Genial, tío! Estoy dispuesto. Podemos empezar cuando quieras.
+	AI_Output	(other, self,"DIA_Dusty_IWouldGo_15_00"); //SÃ­, irÃ© contigo al Campamento de la Secta.
+	AI_Output	(self, other,"DIA_Dusty_IWouldGo_03_01"); //Â¡Genial, tÃ­o! Estoy dispuesto. Podemos empezar cuando quieras.
 	AI_Output	(self, other,"DIA_Dusty_IWouldGo_03_02"); //Pero no te olvides de que necesitamos 100 pepitas para los guardias.
 
-	B_LogEntry	(CH1_RecruitDusty,"He logrado convencer al cavador Dusty de que se una a la Hermandad del campamento del pantano. Pero tendré que sobornar a los guardias con algún mineral. Lo mejor será que le lleve directamente a ver a Baal Tondral.");
+	B_LogEntry	(CH1_RecruitDusty,"He logrado convencer al cavador Dusty de que se una a la Hermandad del campamento del pantano. Pero tendrÃ© que sobornar a los guardias con algÃºn mineral. Lo mejor serÃ¡ que le lleve directamente a ver a Baal Tondral.");
 	B_GiveXP	(XP_DustyJoined);
 };
 
@@ -193,7 +193,7 @@ INSTANCE DIA_Dusty_LetsGo (C_INFO)
 	condition		= DIA_Dusty_LetsGo_Condition;
 	information		= DIA_Dusty_LetsGo_Info;
 	permanent		= 1;
-	description		= "Estoy listo. ¡Vamos!";
+	description		= "Estoy listo. Â¡Vamos!";
 };
 
 FUNC INT DIA_Dusty_LetsGo_Condition()
@@ -209,14 +209,14 @@ FUNC INT DIA_Dusty_LetsGo_Condition()
 
 FUNC VOID DIA_Dusty_LetsGo_Info()
 {
-	AI_Output (other, self,"DIA_Dusty_LetsGo_15_00"); //¡Estoy listo; vamos!
+	AI_Output (other, self,"DIA_Dusty_LetsGo_15_00"); //Â¡Estoy listo; vamos!
 	AI_Output (self, other,"DIA_Dusty_LetsGo_03_01"); //Vale; salgamos por la puerta sur. La puerta norte no nos vale; es imposible sobornar a sus guardias.
-	AI_Output (self, other,"DIA_Dusty_LetsGo_03_02"); //Quizá deberías ser tú quien se encargara de lo del mineral; a mí no se me dan bien estas cosas.
-	AI_Output (other, self,"DIA_Dusty_LetsGo_15_03"); //De acuerdo; ¡vamos!
+	AI_Output (self, other,"DIA_Dusty_LetsGo_03_02"); //QuizÃ¡ deberÃ­as ser tÃº quien se encargara de lo del mineral; a mÃ­ no se me dan bien estas cosas.
+	AI_Output (other, self,"DIA_Dusty_LetsGo_15_03"); //De acuerdo; Â¡vamos!
 
 	if	!Dusty_LetsGo
 	{
-		B_LogEntry(CH1_RecruitDusty,"Dusty me ha advertido que no use la puerta principal del norte. Parece ser más fácil sobornar a los guardias de la puerta del sur.");
+		B_LogEntry(CH1_RecruitDusty,"Dusty me ha advertido que no use la puerta principal del norte. Parece ser mÃ¡s fÃ¡cil sobornar a los guardias de la puerta del sur.");
 		Dusty_LetsGo = TRUE;
 	};
 	

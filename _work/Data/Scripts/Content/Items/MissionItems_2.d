@@ -7,7 +7,7 @@
 //#####################################################################
 
 //---------------------------------------------------------------------
-//	Karte f¸r 1. Fokus
+//	Karte f√ºr 1. Fokus
 //---------------------------------------------------------------------
 INSTANCE ItWrFocusmapPsi(C_Item)
 {	
@@ -47,7 +47,7 @@ INSTANCE ItWrFocusmapPsi(C_Item)
 //---------------------------------------------------------------------
 INSTANCE Focus_1(C_Item)
 {	
-	name 				=	"Foco del Acantilado del OcÈano";
+	name 				=	"Foco del Acantilado del Oc√©ano";
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MISSION;	
 
@@ -61,11 +61,11 @@ INSTANCE Focus_1(C_Item)
 
 	description			=	name;
 	TEXT[1]				=	"Uno de los cinco focos de piedra";
-	TEXT[2]				=	"utilizados para crear la Barrera M·gica.";
+	TEXT[2]				=	"utilizados para crear la Barrera M√°gica.";
 };
 
 //---------------------------------------------------------------------
-//	Zahnrad f¸r Ian
+//	Zahnrad f√ºr Ian
 //---------------------------------------------------------------------
 INSTANCE ItMi_Stuff_Gearwheel_01(C_Item)
 {	
@@ -80,7 +80,7 @@ INSTANCE ItMi_Stuff_Gearwheel_01(C_Item)
 	material 			=	MAT_METAL;
 	description			=	name;
 	TEXT[0]				=	"Pertenece a una trituradora de mineral rota";
-	TEXT[1]				=	"que se quedÛ en un t˙nel lateral abandonado";
+	TEXT[1]				=	"que se qued√≥ en un t√∫nel lateral abandonado";
 	TEXT[2]				=	"de la Vieja Mina.";
 };
 
@@ -102,8 +102,8 @@ INSTANCE ItAt_Crawlerqueen(C_Item)
 	description				=	name;
 	TEXT[0]					=	"Estos huevos fueron puestos por una reina";
 	TEXT[1]					=	"reptadora de la mina.";
-	TEXT[2]					=	"Contienen una secreciÛn mucho m·s potente";
-	TEXT[3]					=	"que las mandÌbulas de un espÈcimen normal.";
+	TEXT[2]					=	"Contienen una secreci√≥n mucho m√°s potente";
+	TEXT[3]					=	"que las mand√≠bulas de un esp√©cimen normal.";
 	TEXT[5]					=	NAME_Value;					COUNT[5]	= value;
 };
 
@@ -126,7 +126,7 @@ INSTANCE ItWrFokusbuch(C_Item)
 	on_state[0]				= 	UseItWrFokusbuch;
 	description				=	name;
 	TEXT[0]					=	"Este antiguo libro de magia contiene algunas";
-	TEXT[1]					=	"fÛrmulas m·gicas, todas ellas referidas al ";
+	TEXT[1]					=	"f√≥rmulas m√°gicas, todas ellas referidas al ";
 	TEXT[2]					=	"uso de los llamados focos de piedra.";
 };
 	FUNC VOID UseItWrFokusbuch()
@@ -150,21 +150,21 @@ INSTANCE ItWrFokusbuch(C_Item)
   					
   					Doc_SetFont 	( nDocID, -1, "font_15_book.tga"	   			); 	// -1 -> all pages 
   					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   		);  //  0 -> margins are in pixels
-					Doc_PrintLine	( nDocID,  0,"CapÌtulo 23");
+					Doc_PrintLine	( nDocID,  0,"Cap√≠tulo 23");
 					Doc_PrintLine	( nDocID,  0, "");
 					Doc_SetFont 	( nDocID, -1, "font_10_book.TGA"	   			); 	// -1 -> all pages 
 					Doc_PrintLine	( nDocID,  0,"El enfoque de poderes");
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLines	( nDocID,  0,"El poder inherente a la piedra aumenta continuamente y es liberado por las palabras del mago. Queda a su discreciÛn que sea duradero o surja de una sola vez.");
+					Doc_PrintLines	( nDocID,  0,"El poder inherente a la piedra aumenta continuamente y es liberado por las palabras del mago. Queda a su discreci√≥n que sea duradero o surja de una sola vez.");
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLines	( nDocID,  0,"Pero una vez liberado, el foco queda sin poder, reducido a una mera c·scara vacÌa.");
+					Doc_PrintLines	( nDocID,  0,"Pero una vez liberado, el foco queda sin poder, reducido a una mera c√°scara vac√≠a.");
 
 					//2.Seite
-					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den R‰nder des TGAs aus, links,oben,rechts,unten)
+					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den R√§nder des TGAs aus, links,oben,rechts,unten)
 					Doc_PrintLine	( nDocID,  1,  "");
-					Doc_PrintLines	( nDocID,  1,"Las palabras que han de pronunciarse para liberar el poder del foco est·n a disposiciÛn de muchos artistas del poder arcano. Incluso la concesiÛn de poderes m·gicos a un artefacto es ya m·s una costumbre que un secreto de los entendidos.");
+					Doc_PrintLines	( nDocID,  1,"Las palabras que han de pronunciarse para liberar el poder del foco est√°n a disposici√≥n de muchos artistas del poder arcano. Incluso la concesi√≥n de poderes m√°gicos a un artefacto es ya m√°s una costumbre que un secreto de los entendidos.");
 					Doc_PrintLine	( nDocID,  1,  "");
-					Doc_PrintLines	( nDocID,  1,"Pero sÛlo unos elegidos saben quÈ hace falta para recargar un foco de piedra usado. Esta fÛrmula de tiempos pasados es prueba de un gran don.");
+					Doc_PrintLines	( nDocID,  1,"Pero s√≥lo unos elegidos saben qu√© hace falta para recargar un foco de piedra usado. Esta f√≥rmula de tiempos pasados es prueba de un gran don.");
 					Doc_PrintLine	( nDocID,  1, "");
 					Doc_PrintLines	( nDocID,  1,"Ahora, oh entendido, abre tu mente a las palabras del antiguo poder.");
 					

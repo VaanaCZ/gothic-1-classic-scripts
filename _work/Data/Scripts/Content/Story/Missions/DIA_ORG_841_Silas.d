@@ -33,7 +33,7 @@ INSTANCE DIA_Silas_Hehler(C_Info)
 	condition	= DIA_Silas_Hehler_Condition;
 	information	= DIA_Silas_Hehler_Info;
 	permanent	= 0;
-	description = "¿Qué tal?";
+	description = "Â¿QuÃ© tal?";
 };                       
 
 FUNC INT DIA_Silas_Hehler_Condition()
@@ -43,9 +43,9 @@ FUNC INT DIA_Silas_Hehler_Condition()
 
 FUNC VOID DIA_Silas_Hehler_Info()
 {	
-	AI_Output (other, self,"DIA_Silas_Hehler_15_00"); //¿Cómo van las cosas?
-	AI_Output (self, other,"DIA_Silas_Hehler_06_01"); //¡Genial! Cambiamos nuestro aguardiente de arroz casero por mineral.
-	AI_Output (self, other,"DIA_Silas_Hehler_06_02"); //Bueno, los chicos llevan mineral más que suficiente. ¿Dónde iban a gastarlo si no es aquí?
+	AI_Output (other, self,"DIA_Silas_Hehler_15_00"); //Â¿CÃ³mo van las cosas?
+	AI_Output (self, other,"DIA_Silas_Hehler_06_01"); //Â¡Genial! Cambiamos nuestro aguardiente de arroz casero por mineral.
+	AI_Output (self, other,"DIA_Silas_Hehler_06_02"); //Bueno, los chicos llevan mineral mÃ¡s que suficiente. Â¿DÃ³nde iban a gastarlo si no es aquÃ­?
 };
 
 // ************************************************************
@@ -71,5 +71,5 @@ FUNC INT DIA_Silas_Trade_Condition()
 FUNC VOID DIA_Silas_Trade_Info()
 {	
 	AI_Output (other, self,"DIA_Silas_Trade_15_00"); //Quiero un trago..
-	AI_Output (self, other,"DIA_Silas_Trade_06_01"); //Tendrás que pagarlo.
+	AI_Output (self, other,"DIA_Silas_Trade_06_01"); //TendrÃ¡s que pagarlo.
 };

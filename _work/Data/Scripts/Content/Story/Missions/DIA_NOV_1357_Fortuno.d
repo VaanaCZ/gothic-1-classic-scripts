@@ -23,7 +23,7 @@ FUNC VOID  DIA_Fortuno_EXIT_Info()
 };
 
 // **************************************************
-//					Erste Begrüssung
+//					Erste BegrÃ¼ssung
 // **************************************************
 
 instance  DIA_Fortuno_Greet (C_INFO)
@@ -46,7 +46,7 @@ FUNC int  DIA_Fortuno_Greet_Condition()
 
 FUNC VOID  DIA_Fortuno_Greet_Info()
 {
-	AI_Output (self, other,"DIA_Fortuno_Greet_05_00"); //¡Acércate más! ¡Todos los recién llegados a este lugar reciben un regalo de bienvenida!
+	AI_Output (self, other,"DIA_Fortuno_Greet_05_00"); //Â¡AcÃ©rcate mÃ¡s! Â¡Todos los reciÃ©n llegados a este lugar reciben un regalo de bienvenida!
 };
 
 // **************************************************
@@ -62,7 +62,7 @@ instance  DIA_Fortuno_GetGeschenk (C_INFO)
 	condition	= DIA_Fortuno_GetGeschenk_Condition;
 	information	= DIA_Fortuno_GetGeschenk_Info;
 	permanent	= 0;
-	description = "¿Qué tienes para mí?";
+	description = "Â¿QuÃ© tienes para mÃ­?";
 };                       
 
 FUNC int  DIA_Fortuno_GetGeschenk_Condition()
@@ -72,10 +72,10 @@ FUNC int  DIA_Fortuno_GetGeschenk_Condition()
 
 FUNC VOID  DIA_Fortuno_GetGeschenk_Info()
 {
-	AI_Output (other, self,"DIA_Fortuno_GetGeschenk_15_00"); //¿Qué tienes para mí?
-	AI_Output (self, other,"DIA_Fortuno_GetGeschenk_05_01"); //Toma, aquí tienes tres rollos de hierba del pantano. Es Oscura del norte. De la buena.
-	AI_Output (self, other,"DIA_Fortuno_GetGeschenk_05_02"); //Puedes obtener más cada día, pero si quieres una cantidad mayor que la de tu ración diaria, tendrás que pagar.
-	AI_Output (self, other,"DIA_Fortuno_GetGeschenk_05_03"); //Si encuentras bayas y hierbas en los senderos entre los campamentos, puedes traérmelos. Yo te los compraré.
+	AI_Output (other, self,"DIA_Fortuno_GetGeschenk_15_00"); //Â¿QuÃ© tienes para mÃ­?
+	AI_Output (self, other,"DIA_Fortuno_GetGeschenk_05_01"); //Toma, aquÃ­ tienes tres rollos de hierba del pantano. Es Oscura del norte. De la buena.
+	AI_Output (self, other,"DIA_Fortuno_GetGeschenk_05_02"); //Puedes obtener mÃ¡s cada dÃ­a, pero si quieres una cantidad mayor que la de tu raciÃ³n diaria, tendrÃ¡s que pagar.
+	AI_Output (self, other,"DIA_Fortuno_GetGeschenk_05_03"); //Si encuentras bayas y hierbas en los senderos entre los campamentos, puedes traÃ©rmelos. Yo te los comprarÃ©.
 
 	CreateInvItems(self, itmijoint_2, 3);
 	B_GiveInvItems(self, other, itmijoint_2, 3);
@@ -86,7 +86,7 @@ FUNC VOID  DIA_Fortuno_GetGeschenk_Info()
 };
 
 // **************************************************
-//				Tägliche Ration
+//				TÃ¤gliche Ration
 // **************************************************
 
 instance  DIA_Fortuno_DailyRation (C_INFO)
@@ -96,7 +96,7 @@ instance  DIA_Fortuno_DailyRation (C_INFO)
 	condition	= DIA_Fortuno_DailyRation_Condition;
 	information	= DIA_Fortuno_DailyRation_Info;
 	permanent	= 1;
-	description = "He venido a recoger mi ración diaria.";
+	description = "He venido a recoger mi raciÃ³n diaria.";
 };                       
 
 FUNC int  DIA_Fortuno_DailyRation_Condition()
@@ -109,17 +109,17 @@ FUNC int  DIA_Fortuno_DailyRation_Condition()
 
 FUNC VOID  DIA_Fortuno_DailyRation_Info()
 {
-	AI_Output (other, self,"DIA_Fortuno_DailyRation_15_00"); //He venido a recoger mi ración diaria.
+	AI_Output (other, self,"DIA_Fortuno_DailyRation_15_00"); //He venido a recoger mi raciÃ³n diaria.
 	if (Fortuno_RationDay!=Wld_GetDay())
  	{
- 		AI_Output (self, other,"DIA_Fortuno_DailyRation_05_01"); //Aquí la tienes. Tres de Oscura del norte; pero no los fumes todos a la vez.
+ 		AI_Output (self, other,"DIA_Fortuno_DailyRation_05_01"); //AquÃ­ la tienes. Tres de Oscura del norte; pero no los fumes todos a la vez.
 		CreateInvItems(self, itmijoint_2, 3);
 		B_GiveInvItems(self, other, itmijoint_2, 3);
 		Fortuno_RationDay = Wld_GetDay();
 	}
 	else
 	{
-		AI_Output (self, other,"DIA_Fortuno_DailyRation_05_02"); //Ya has recibido tu ración diaria. Si quieres más, vuelve mañana o cómprala.
+		AI_Output (self, other,"DIA_Fortuno_DailyRation_05_02"); //Ya has recibido tu raciÃ³n diaria. Si quieres mÃ¡s, vuelve maÃ±ana o cÃ³mprala.
 	};
 };
 
@@ -149,7 +149,7 @@ FUNC int  DIA_Fortuno_BuyJoints_Condition()
 FUNC VOID  DIA_Fortuno_BuyJoints_Info()
 {
 	AI_Output (other, self,"DIA_Fortuno_BuyJoints_15_00"); //Quiero hacer negocios.
-	AI_Output (self, other,"DIA_Fortuno_BuyJoints_05_01"); //¿Qué es lo que quieres de mí? ¿O es que quieres venderme algo?
+	AI_Output (self, other,"DIA_Fortuno_BuyJoints_05_01"); //Â¿QuÃ© es lo que quieres de mÃ­? Â¿O es que quieres venderme algo?
 };
 
 

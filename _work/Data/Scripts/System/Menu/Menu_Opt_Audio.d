@@ -94,8 +94,8 @@ INSTANCE MENUITEM_AUDIO_SFXVOL_SLIDER(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_AUDIO_MUSICVOL(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	text[0]		= "Volumen música";
-	text[1]		= "Volumen de la música de fondo."; // Kommentar
+	text[0]		= "Volumen mÃºsica";
+	text[1]		= "Volumen de la mÃºsica de fondo."; // Kommentar
 	
 	// Position und Dimension	
 	posx		= 1000;		posy		=	MENU_START_Y + MENU_SOUND_DY*1;
@@ -130,8 +130,8 @@ INSTANCE MENUITEM_AUDIO_MUSICVOL_SLIDER(C_MENU_ITEM_DEF)
 instance MENUITEM_AUDIO_MUSIC(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	text[0]		= "Música";
-	text[1]		= "Activar/desactivar música de fondo."; // Kommentar
+	text[0]		= "MÃºsica";
+	text[1]		= "Activar/desactivar mÃºsica de fondo."; // Kommentar
 	
 	// Position und Dimension	
 	posx		=	1000;	posy		=	MENU_START_Y + MENU_SOUND_DY*2;
@@ -174,7 +174,7 @@ instance MENUITEM_AUDIO_PROVIDER(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
 	text[0]		= "Proveed. sonido";
-	//text[1]		= "Eine Änderung wirkt sich erst beim Neustart aus!"; // Kommentar
+	//text[1]		= "Eine Ã„nderung wirkt sich erst beim Neustart aus!"; // Kommentar
 text[1]		= "Reiniciar Gothic para activar config."; // Kommentar
 	
 	// Position und Dimension	
@@ -224,7 +224,7 @@ instance MENUITEM_AUDIO_SPEEKER_CHOICE(C_MENU_ITEM_DEF)
 {
 	backPic		=	MENU_CHOICE_BACK_PIC;
 	type		=	MENU_ITEM_CHOICEBOX;	
-	//text[0]		=   "2 Lautsprecher|Kopfhörer|Surround|4 Lautsprecher";
+	//text[0]		=   "2 Lautsprecher|KopfhÃ¶rer|Surround|4 Lautsprecher";
 text[0]		=   "2 altavoces|auriculares|envolvente|4 altavoces";
 	fontName	= 	MENU_FONT_SMALL;
 	// Position und Dimension	
@@ -242,7 +242,7 @@ instance MENUITEM_AUDIO_REVERB(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
 	//text[0]		= "Hall-Effekt";
-	//text[1]		= "Sollen Halleffekte in Höhlen aktiviert werden (Neustart erforderlich) ?"; // Kommentar
+	//text[1]		= "Sollen Halleffekte in HÃ¶hlen aktiviert werden (Neustart erforderlich) ?"; // Kommentar
 text[0]		= "Ef. resonancia";
 text[1]		= "Activa efecto en cuevas (req. reiniciar)"; // Kommentar
 	
@@ -277,7 +277,7 @@ instance MENUITEM_AUDIO_SAMPLERATE(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
 	//text[0]		= "Sample-Rate";
-	//text[1]		= "Eine Änderung wirkt sich erst beim Neustart aus!"; // Kommentar
+	//text[1]		= "Eine Ã„nderung wirkt sich erst beim Neustart aus!"; // Kommentar
 text[0]		= "Veloc. muestra";
 text[1]		= "Reiniciar Gothic para activar config."; // Kommentar
 	
@@ -310,7 +310,7 @@ instance MENUITEM_AUDIO_SAMPLERATE_CHOICE(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_AUDIO_BACK(C_MENU_ITEM_DEF)
 {
 	backpic		=	MENU_ITEM_BACK_PIC;
-	text[0]		=	"Atrás";
+	text[0]		=	"AtrÃ¡s";
 	// Position und Dimension	
 	posx		=	1000;		posy		=	MENU_BACK_Y;
 	dimx		=	6192;		dimy		=	MENU_SOUND_DY;

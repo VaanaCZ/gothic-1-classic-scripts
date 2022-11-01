@@ -22,11 +22,11 @@ FUNC VOID Info_HighPriest4_Info()
 	AI_SetWalkmode		(self, NPC_WALK);
 	AI_GotoNpc			(self, other);
 	
-	AI_Output			(self, other,"Info_HighPriest4_17_01"); //°TUUUU LAAAAAARGO VIAAAAJEEE LLEEEEEGAR¡ A SU FIIIIIN!
-	AI_Output			(self, other,"Info_HighPriest4_17_02"); //°TUUU CUUUUUERPOOO MOOORTAAAL AAAARDER¡!
-	AI_Output			(other, self,"Info_HighPriest4_15_03"); //°Mira, eso no me parece una buena idea!
+	AI_Output			(self, other,"Info_HighPriest4_17_01"); //¬°TUUUU LAAAAAARGO VIAAAAJEEE LLEEEEEGAR√Å A SU FIIIIIN!
+	AI_Output			(self, other,"Info_HighPriest4_17_02"); //¬°TUUU CUUUUUERPOOO MOOORTAAAL AAAARDER√Å!
+	AI_Output			(other, self,"Info_HighPriest4_15_03"); //¬°Mira, eso no me parece una buena idea!
 	
-	B_LogEntry			(CH4_EnterTemple,"Varrag-Ruuushk, uno de los chamanes no-muertos de la invocaciÛn del Durmiente, se ha cruzado en mi camino, pero no va a detenerme. °Ya me encargarÈ!");
+	B_LogEntry			(CH4_EnterTemple,"Varrag-Ruuushk, uno de los chamanes no-muertos de la invocaci√≥n del Durmiente, se ha cruzado en mi camino, pero no va a detenerme. ¬°Ya me encargar√©!");
 	AI_StopProcessInfos	(self);
 
 	Npc_SetAttitude 	(self, ATT_HOSTILE);

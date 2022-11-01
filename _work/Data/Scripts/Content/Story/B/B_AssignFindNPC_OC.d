@@ -8,7 +8,7 @@ INSTANCE Info_FindNPC_OC(C_INFO)
 	condition	= Info_FindNPC_OC_Condition;
 	information	= Info_FindNPC_OC_Info;
 	permanent	= 1;
-	description = "¿Dónde puedo encontrar...";
+	description = "Â¿DÃ³nde puedo encontrar...";
 };                       
 
 FUNC INT Info_FindNPC_OC_Condition()
@@ -45,7 +45,7 @@ FUNC VOID Info_FindNPC_OC_BACK()
 
 FUNC VOID Info_FindNPC_OC_Diego()
 {
-	AI_Output(other,self,"Info_FindNPC_Diego_15_00"); //¿Dónde puedo encontrar a Diego?
+	AI_Output(other,self,"Info_FindNPC_Diego_15_00"); //Â¿DÃ³nde puedo encontrar a Diego?
 
 	VAR C_NPC Diego;		Diego	= Hlp_GetNpc(PC_THIEF);
 	
@@ -59,45 +59,45 @@ FUNC VOID Info_FindNPC_OC_Diego()
 		{
 			if (self.voice == 1)
 			{
-				AI_Output(self,other,"Info_FindNPC_OC_Diego_01_01"); //Durante el día suele estar en la entrada del castillo con Thorus.
+				AI_Output(self,other,"Info_FindNPC_OC_Diego_01_01"); //Durante el dÃ­a suele estar en la entrada del castillo con Thorus.
 			}
 			else if (self.voice == 2)
 			{
-				AI_Output(self,other,"Info_FindNPC_OC_Diego_02_01"); //Durante el día suele estar en la entrada del castillo con Thorus.
+				AI_Output(self,other,"Info_FindNPC_OC_Diego_02_01"); //Durante el dÃ­a suele estar en la entrada del castillo con Thorus.
 			}
 			else if (self.voice == 3)
 			{
-				AI_Output(self,other,"Info_FindNPC_OC_Diego_03_01"); //Durante el día suele estar en la entrada del castillo con Thorus.
+				AI_Output(self,other,"Info_FindNPC_OC_Diego_03_01"); //Durante el dÃ­a suele estar en la entrada del castillo con Thorus.
 			}
 			else if (self.voice == 4)
 			{
-				AI_Output(self,other,"Info_FindNPC_OC_Diego_04_01"); //Durante el día suele estar en la entrada del castillo con Thorus.
+				AI_Output(self,other,"Info_FindNPC_OC_Diego_04_01"); //Durante el dÃ­a suele estar en la entrada del castillo con Thorus.
 			};
 		}
 		else if (self.guild == GIL_GRD) 
 		{
 			if (self.voice == 6)
 			{
-				AI_Output(self,other,"Info_FindNPC_OC_Diego_06_01"); //Durante el día suele estar en la entrada del castillo con Thorus.
+				AI_Output(self,other,"Info_FindNPC_OC_Diego_06_01"); //Durante el dÃ­a suele estar en la entrada del castillo con Thorus.
 			}
 			else if (self.voice == 7)
 			{
-				AI_Output(self,other,"Info_FindNPC_OC_Diego_07_01"); //Durante el día suele estar en la entrada del castillo con Thorus.
+				AI_Output(self,other,"Info_FindNPC_OC_Diego_07_01"); //Durante el dÃ­a suele estar en la entrada del castillo con Thorus.
 			}
 			else if (self.voice == 13)
 			{
-				AI_Output(self,other,"Info_FindNPC_OC_Diego_13_01"); //Durante el día suele estar en la entrada del castillo con Thorus.
+				AI_Output(self,other,"Info_FindNPC_OC_Diego_13_01"); //Durante el dÃ­a suele estar en la entrada del castillo con Thorus.
 			};
 		}
 		else if (self.guild == GIL_STT) 
 		{
 			if (self.voice == 10)
 			{
-				AI_Output(self,other,"Info_FindNPC_OC_Diego_10_01"); //Durante el día suele estar en la entrada del castillo con Thorus.
+				AI_Output(self,other,"Info_FindNPC_OC_Diego_10_01"); //Durante el dÃ­a suele estar en la entrada del castillo con Thorus.
 			}
 			else if (self.voice == 12)
 			{
-				AI_Output(self,other,"Info_FindNPC_OC_Diego_12_01"); //Durante el día suele estar en la entrada del castillo con Thorus.
+				AI_Output(self,other,"Info_FindNPC_OC_Diego_12_01"); //Durante el dÃ­a suele estar en la entrada del castillo con Thorus.
 			};
 		};
 	};
@@ -111,7 +111,7 @@ FUNC VOID Info_FindNPC_OC_Diego()
 
 FUNC VOID Info_FindNPC_OC_Thorus()
 {
-	AI_Output(other,self,"Info_FindNPC_OC_Thorus_15_00"); //¿Dónde puedo encontrar a Thorus?
+	AI_Output(other,self,"Info_FindNPC_OC_Thorus_15_00"); //Â¿DÃ³nde puedo encontrar a Thorus?
 	
 	VAR C_NPC Thorus;		Thorus 	= Hlp_GetNpc(GRD_200_Thorus);
 	

@@ -56,9 +56,9 @@ FUNC INT DIA_Grd_216_First_Condition()
 
 FUNC VOID DIA_Grd_216_First_Info()
 {
-	AI_Output (self, other,"DIA_Grd_216_First_13_00"); //¡Oye, tú! ¡Me parece que no te he visto antes por aquí!
-	AI_Output (other, self,"DIA_Grd_216_First_15_01"); //No me extraña. Acabo de llegar.
-	AI_Output (self, other,"DIA_Grd_216_First_13_02"); //¡Entonces ten cuidado! El mundo exterior es muy peligroso. Sólo se está a salvo dentro de un campamento.
+	AI_Output (self, other,"DIA_Grd_216_First_13_00"); //Â¡Oye, tÃº! Â¡Me parece que no te he visto antes por aquÃ­!
+	AI_Output (other, self,"DIA_Grd_216_First_15_01"); //No me extraÃ±a. Acabo de llegar.
+	AI_Output (self, other,"DIA_Grd_216_First_13_02"); //Â¡Entonces ten cuidado! El mundo exterior es muy peligroso. SÃ³lo se estÃ¡ a salvo dentro de un campamento.
 };
 
 // **************************************************
@@ -87,20 +87,20 @@ FUNC INT DIA_Grd_216_DustyZoll_Condition()
 
 FUNC VOID DIA_Grd_216_DustyZoll_Info()
 {
-	AI_Output			(self, other,"DIA_Grd_216_Dusty_Zoll_13_00"); //¡Alto! ¿Dónde te crees que vas con nuestro amigo?
+	AI_Output			(self, other,"DIA_Grd_216_Dusty_Zoll_13_00"); //Â¡Alto! Â¿DÃ³nde te crees que vas con nuestro amigo?
 	Info_ClearChoices	(DIA_Grd_216_DustyZoll);
-	Info_AddChoice		(DIA_Grd_216_DustyZoll,"¡No es asunto tuyo!",DIA_Grd_216_DustyZoll_PissOff);
+	Info_AddChoice		(DIA_Grd_216_DustyZoll,"Â¡No es asunto tuyo!",DIA_Grd_216_DustyZoll_PissOff);
 	Info_AddChoice		(DIA_Grd_216_DustyZoll,"Vamos al campamento de la Hermandad.",DIA_Grd_216_DustyZoll_ToPSI);
 	if (Npc_HasItems (other,itminugget) >= 100)
 	{
-		Info_AddChoice	(DIA_Grd_216_DustyZoll,"Sólo vamos a dar un paseo. Aquí tienes 100 pepitas.",DIA_Grd_216_DustyZoll_LittleWalk);
+		Info_AddChoice	(DIA_Grd_216_DustyZoll,"SÃ³lo vamos a dar un paseo. AquÃ­ tienes 100 pepitas.",DIA_Grd_216_DustyZoll_LittleWalk);
 	};
 };
 
 func void DIA_Grd_216_DustyZoll_PissOff()
 {
-	AI_Output			(other, self,"DIA_Grd_216_Dusty_Zoll_PissOff_15_00"); //¡No es asunto tuyo!
-	AI_Output			(self, other,"DIA_Grd_216_Dusty_Zoll_PIssOff_13_00"); //¡No estoy de acuerdo!
+	AI_Output			(other, self,"DIA_Grd_216_Dusty_Zoll_PissOff_15_00"); //Â¡No es asunto tuyo!
+	AI_Output			(self, other,"DIA_Grd_216_Dusty_Zoll_PIssOff_13_00"); //Â¡No estoy de acuerdo!
 	AI_StopProcessInfos	(self);
 	Npc_SetTarget		(self,other);
 	AI_StartState		(self,ZS_Attack,1,"");
@@ -108,13 +108,13 @@ func void DIA_Grd_216_DustyZoll_PissOff()
 	B_ExchangeRoutine	(Vlk_524_Dusty,"start");
 	var C_NPC dusty;	dusty = Hlp_GetNpc(Vlk_524_Dusty);
 	dusty.aivar[AIV_PARTYMEMBER] = FALSE;
-	dusty.flags = 0;	// Immortal löschen
+	dusty.flags = 0;	// Immortal lÃ¶schen
 };
 
 func void DIA_Grd_216_DustyZoll_ToPSI()
 {
 	AI_Output			(other, self,"DIA_Grd_216_Dusty_Zoll_ToPsi_15_00"); //Vamos al campamento de la Hermandad.
-	AI_Output 			(self, other,"DIA_Grd_216_Dusty_Zoll_ToPsi_13_00"); //Bueno, no vais a llegar allí...
+	AI_Output 			(self, other,"DIA_Grd_216_Dusty_Zoll_ToPsi_13_00"); //Bueno, no vais a llegar allÃ­...
 	AI_StopProcessInfos	(self);
 	Npc_SetTarget		(self,other);
 	AI_StartState		(self,ZS_Attack,1,"");
@@ -122,26 +122,26 @@ func void DIA_Grd_216_DustyZoll_ToPSI()
 	B_ExchangeRoutine	(Vlk_524_Dusty,"start");
 	var C_NPC dusty;	dusty = Hlp_GetNpc(Vlk_524_Dusty);
 	dusty.aivar[AIV_PARTYMEMBER] = FALSE;
-	dusty.flags = 0;	// Immortal löschen
+	dusty.flags = 0;	// Immortal lÃ¶schen
 };
 
 func void DIA_Grd_216_DustyZoll_LittleWalk()
 {
-	AI_Output				(other, self,"DIA_Grd_216_Dusty_Zoll_LittleWalk_15_00"); //Sólo vamos a dar un paseo. Aquí tienes 100 pepitas.
+	AI_Output				(other, self,"DIA_Grd_216_Dusty_Zoll_LittleWalk_15_00"); //SÃ³lo vamos a dar un paseo. AquÃ­ tienes 100 pepitas.
 	if (Npc_HasItems (hero,itminugget) >= 100)
 	{
 		AI_Output			(self, other,"DIA_Grd_216_Dusty_Zoll_LittleWalk_13_00"); //No he visto nada.
 
 		B_GiveInvItems	(hero, self, ItMiNugget, 100);
 		DIA_Grd_216_DustyZoll.permanent = 0;
-		B_LogEntry			(CH1_RecruitDusty,"He conseguido sobornar a los guardias de la puerta sur posterior. ¡Todo el mundo tiene un precio!");
+		B_LogEntry			(CH1_RecruitDusty,"He conseguido sobornar a los guardias de la puerta sur posterior. Â¡Todo el mundo tiene un precio!");
 		B_GiveXP			(XP_BribedDustyGuard);
 		
 		AI_StopProcessInfos	(self);
 	}
 	else
 	{
-		AI_Output			(self, other,"DIA_Grd_216_Dusty_Zoll_LittleWalk_13_02"); //¿Me estás tomando el pelo? ¡No te vas a librar tan fácilmente, chaval!
+		AI_Output			(self, other,"DIA_Grd_216_Dusty_Zoll_LittleWalk_13_02"); //Â¿Me estÃ¡s tomando el pelo? Â¡No te vas a librar tan fÃ¡cilmente, chaval!
 		AI_StopProcessInfos	(self);
 		Npc_SetTarget		(self,other);
 		AI_StartState		(self,ZS_Attack,1,"");
@@ -149,7 +149,7 @@ func void DIA_Grd_216_DustyZoll_LittleWalk()
 		B_ExchangeRoutine	(Vlk_524_Dusty,"start");
 		var C_NPC dusty;	dusty = Hlp_GetNpc(Vlk_524_Dusty);
 		dusty.aivar[AIV_PARTYMEMBER] = FALSE;
-		dusty.flags = 0;	// Immortal löschen
+		dusty.flags = 0;	// Immortal lÃ¶schen
 	};
 };
 
@@ -179,7 +179,7 @@ FUNC int  GRD_216_Torwache_SEETHORUS_Condition()
 
 func void  GRD_216_Torwache_SEETHORUS_Info()
 {
-	AI_Output (self, other,"Grd_216_Torwache_SEETHORUS_Info_13_01"); //Oye, me alegro de que aparezcas. ¡Thorus quiere verte!
-	AI_Output (other, self,"Grd_216_Torwache_SEETHORUS_Info_15_02"); //¿Qué quiere?
-	AI_Output (self, other,"Grd_216_Torwache_SEETHORUS_Info_13_03"); //Seguro que te lo dirá enseguida.
+	AI_Output (self, other,"Grd_216_Torwache_SEETHORUS_Info_13_01"); //Oye, me alegro de que aparezcas. Â¡Thorus quiere verte!
+	AI_Output (other, self,"Grd_216_Torwache_SEETHORUS_Info_15_02"); //Â¿QuÃ© quiere?
+	AI_Output (self, other,"Grd_216_Torwache_SEETHORUS_Info_13_03"); //Seguro que te lo dirÃ¡ enseguida.
 };

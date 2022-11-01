@@ -19,7 +19,7 @@ FUNC int  VLK_584_Snipes_Exit_Condition()
 FUNC VOID  VLK_584_Snipes_Exit_Info()
 {
 	AI_Output			(other, self,"Info_Exit_Info_15_001"); //Luego te veo.
-	AI_Output			(self, other,"Info_Exit_Info_07_02"); //¡Vale, claro!
+	AI_Output			(self, other,"Info_Exit_Info_07_02"); //Â¡Vale, claro!
 	
 	AI_StopProcessInfos	( self );
 };
@@ -32,7 +32,7 @@ instance  VLK_584_Snipes_DEAL (C_INFO)
 	information		= VLK_584_Snipes_DEAL_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "¿Qué tal?"; 
+	description		= "Â¿QuÃ© tal?"; 
 };
 
 FUNC int  VLK_584_Snipes_DEAL_Condition()
@@ -43,14 +43,14 @@ FUNC int  VLK_584_Snipes_DEAL_Condition()
 
 FUNC void  VLK_584_Snipes_DEAL_Info()
 {
-	AI_Output			(other, self,"VLK_584_Snipes_DEAL_Info_15_01");//¿Cómo van las cosas?
-	AI_Output			(self, other,"VLK_584_Snipes_DEAL_Info_07_02"); //Tengo una proposición que hacerte.
-	AI_Output			(self, other,"VLK_584_Snipes_DEAL_Info_07_03"); //¡Te daré 10 pepitas si consigues que Aaron deje en paz el cofre!
+	AI_Output			(other, self,"VLK_584_Snipes_DEAL_Info_15_01");//Â¿CÃ³mo van las cosas?
+	AI_Output			(self, other,"VLK_584_Snipes_DEAL_Info_07_02"); //Tengo una proposiciÃ³n que hacerte.
+	AI_Output			(self, other,"VLK_584_Snipes_DEAL_Info_07_03"); //Â¡Te darÃ© 10 pepitas si consigues que Aaron deje en paz el cofre!
 	Snipes_Deal = LOG_RUNNING;
 
 	Log_CreateTopic		(CH2_SnipesDeal,	LOG_MISSION);
 	Log_SetTopicStatus	(CH2_SnipesDeal,	LOG_RUNNING);
-	B_LogEntry		(CH2_SnipesDeal,"¡El cavador Snipes me ha ofrecido 10 pepitas de mineral para alejar al guardia Aaron de su cofre!");
+	B_LogEntry		(CH2_SnipesDeal,"Â¡El cavador Snipes me ha ofrecido 10 pepitas de mineral para alejar al guardia Aaron de su cofre!");
 };
 // ***************** Infos *****************************  
 instance  VLK_584_Snipes_DEAL_RUN (C_INFO)
@@ -60,7 +60,7 @@ instance  VLK_584_Snipes_DEAL_RUN (C_INFO)
 	information		= VLK_584_Snipes_DEAL_RUN_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "¡Me debes 10 pepitas!"; 
+	description		= "Â¡Me debes 10 pepitas!"; 
 };
 
 FUNC int  VLK_584_Snipes_DEAL_RUN_Condition()
@@ -73,9 +73,9 @@ FUNC int  VLK_584_Snipes_DEAL_RUN_Condition()
 
 FUNC void  VLK_584_Snipes_DEAL_RUN_Info()
 {
-	AI_Output			(other, self,"VLK_584_Snipes_DEAL_RUN_Info_15_01"); //¡Me debes 10 pepitas!
+	AI_Output			(other, self,"VLK_584_Snipes_DEAL_RUN_Info_15_01"); //Â¡Me debes 10 pepitas!
 	AI_Output			(self, other,"VLK_584_Snipes_DEAL_RUN_Info_07_02"); //Toma, te has ganado las 10.
-	AI_Output			(self, other,"VLK_584_Snipes_DEAL_RUN_Info_07_03"); //Oh, una cosa más: también tengo la llave de su cofre. ¡Te las dejo en nada más que 30 pepitas!
+	AI_Output			(self, other,"VLK_584_Snipes_DEAL_RUN_Info_07_03"); //Oh, una cosa mÃ¡s: tambiÃ©n tengo la llave de su cofre. Â¡Te las dejo en nada mÃ¡s que 30 pepitas!
 	CreateInvItems		(self,ItMinugget,10);
 	B_GiveInvItems      (self, other, ItMinugget,10);
 	CreateInvItem 		(self,ItKe_OM_02);
@@ -111,18 +111,18 @@ FUNC void  VLK_584_Snipes_DEAL_2_Info()
 	if ( Npc_HasItems (hero, ItMinugget)  >= 30 ) 
 	{
 		AI_Output			(other, self,"VLK_584_Snipes_DEAL_2_Info_15_01");//Dame la llave.
-		AI_Output			(self, other,"VLK_584_Snipes_DEAL_2_Info_07_02");//Has hecho una buena adquisición.
-		AI_Output			(other, self,"VLK_584_Snipes_DEAL_2_Info_15_03");//Me pregunto qué sacas tú de ello.
-		AI_Output			(self, other,"VLK_584_Snipes_DEAL_2_Info_07_04");//Siempre me alegra meterles una por alto a los guardias. Y si hubieran encontrado los contenidos del cofre en mi posesión, sería hombre muerto.
+		AI_Output			(self, other,"VLK_584_Snipes_DEAL_2_Info_07_02");//Has hecho una buena adquisiciÃ³n.
+		AI_Output			(other, self,"VLK_584_Snipes_DEAL_2_Info_15_03");//Me pregunto quÃ© sacas tÃº de ello.
+		AI_Output			(self, other,"VLK_584_Snipes_DEAL_2_Info_07_04");//Siempre me alegra meterles una por alto a los guardias. Y si hubieran encontrado los contenidos del cofre en mi posesiÃ³n, serÃ­a hombre muerto.
 		
 		B_GiveInvItems 	(hero, self, ItMiNugget,30);
 		B_GiveInvItems 	(self, hero, ItKe_OM_02, 1);
 		VLK_584_Snipes_DEAL_2.permanent = 0;
 	
-		B_LogEntry		(CH2_SnipesDeal,"¡Le he comprado a Snipes la llave del cofre! Me pregunto qué hará Aaron cuando se lo cuente."); 
+		B_LogEntry		(CH2_SnipesDeal,"Â¡Le he comprado a Snipes la llave del cofre! Me pregunto quÃ© harÃ¡ Aaron cuando se lo cuente."); 
 	}
 	else
 	{
-		AI_Output			(self, other,"VLK_584_Snipes_DEAL_2_Info_07_05"); //¡Dije 30 pepitas! ¡Dame las pepitas y yo te daré la llave!
+		AI_Output			(self, other,"VLK_584_Snipes_DEAL_2_Info_07_05"); //Â¡Dije 30 pepitas! Â¡Dame las pepitas y yo te darÃ© la llave!
 	};
 };  

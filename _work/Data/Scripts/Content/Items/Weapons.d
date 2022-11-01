@@ -1,5 +1,5 @@
 //------------------------------------------------------------------
-//PERSÖNLICHE WAFFEN
+//PERSÃ–NLICHE WAFFEN
 /***********************************************************/
 //ALTES LAGER
 /***********************************************************/
@@ -250,7 +250,7 @@ INSTANCE Whistlers_Schwert (C_Item)
 //-----------------------------------------------------------
 INSTANCE Stab_des_Lichts (C_Item)
 {
-	name 				=	"Bastón de Luz";
+	name 				=	"BastÃ³n de Luz";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_AXE;

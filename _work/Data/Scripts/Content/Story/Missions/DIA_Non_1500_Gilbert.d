@@ -46,7 +46,7 @@ FUNC int DIA_Gilbert_First_Condition()
 
 FUNC VOID  DIA_Gilbert_First_Info()
 {
-	AI_Output (self, other,"DIA_Gilbert_First_04_00"); //¿Qué estás haciendo aquí? ¡No suelo recibir muchos visitantes aquí arriba, je, je!
+	AI_Output (self, other,"DIA_Gilbert_First_04_00"); //Â¿QuÃ© estÃ¡s haciendo aquÃ­? Â¡No suelo recibir muchos visitantes aquÃ­ arriba, je, je!
 	AI_Output (self, other,"DIA_Gilbert_First_04_01"); //Has sido muy listo al encontrar mi escondite.
 	
 	B_GiveXP(XP_GilbertFound);
@@ -63,7 +63,7 @@ instance DIA_Gilbert_Hallo (C_INFO)
 	condition	= DIA_Gilbert_Hallo_Condition;
 	information	= DIA_Gilbert_Hallo_Info;
 	permanent	= 1;
-	description = "¿Qué estás haciendo aquí?";
+	description = "Â¿QuÃ© estÃ¡s haciendo aquÃ­?";
 };                       
 
 FUNC int DIA_Gilbert_Hallo_Condition()
@@ -73,9 +73,9 @@ FUNC int DIA_Gilbert_Hallo_Condition()
 
 FUNC VOID  DIA_Gilbert_Hallo_Info()
 {
-	AI_Output (other, self,"DIA_Gilbert_Hallo_15_00"); //¿Qué estás haciendo aquí?
-	AI_Output (self, other,"DIA_Gilbert_Hallo_04_01"); //Estoy harto del Campamento Viejo. Tuve unos problemas con la gente de Gómez. Hace mucho tiempo de eso.
-	AI_Output (self, other,"DIA_Gilbert_Hallo_04_02"); //Supongo que nadie se acuerda ya de ello. Pero me quedo aquí. Hay demasiados tarugos circulando por el Campamento Viejo para mi gusto.
+	AI_Output (other, self,"DIA_Gilbert_Hallo_15_00"); //Â¿QuÃ© estÃ¡s haciendo aquÃ­?
+	AI_Output (self, other,"DIA_Gilbert_Hallo_04_01"); //Estoy harto del Campamento Viejo. Tuve unos problemas con la gente de GÃ³mez. Hace mucho tiempo de eso.
+	AI_Output (self, other,"DIA_Gilbert_Hallo_04_02"); //Supongo que nadie se acuerda ya de ello. Pero me quedo aquÃ­. Hay demasiados tarugos circulando por el Campamento Viejo para mi gusto.
 };
 
 

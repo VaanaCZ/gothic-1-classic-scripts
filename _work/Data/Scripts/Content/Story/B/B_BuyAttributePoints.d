@@ -37,13 +37,13 @@ func void B_BuyAttributePoints (var C_NPC typ, var int ATR, var int AtrPlus)
 		}
 		else
 		{
-			PrintScreen	("¡No puede superarse el 100 máximo!", -1,-1,"FONT_OLD_20_WHITE.TGA",1);
+			PrintScreen	("Â¡No puede superarse el 100 mÃ¡ximo!", -1,-1,"FONT_OLD_20_WHITE.TGA",1);
 			B_Say (self, other, "$NOLEARNOVERMAX");
 		};
 	}
 	else 
 	{
-		PrintScreen	("¡Faltan puntos de habilidad!", -1,-1,"FONT_OLD_20_WHITE.TGA",1);
+		PrintScreen	("Â¡Faltan puntos de habilidad!", -1,-1,"FONT_OLD_20_WHITE.TGA",1);
 		B_Say (self, other, "$NOLEARNNOPOINTS");
 	};
 };

@@ -184,7 +184,7 @@ INSTANCE MENU_ITEM_KEY_WEAPON(C_MENU_ITEM_DEF)
 
 INSTANCE MENU_ITEM_KEY_ACTION(C_MENU_ITEM_DEF)
 {
-	text[0]			=	"Acción";
+	text[0]			=	"AcciÃ³n";
 	text[1]			=   "SUPR eliminar, INTRO definir tecla."; // Kommentar
 	posx			=	ctrl_sp1_1;		posy	=	ctrl_y_start + ctrl_y_step * 7 + CTRL_GROUP2;
 	
@@ -245,7 +245,7 @@ INSTANCE MENU_ITEM_KEY_LOOK(C_MENU_ITEM_DEF)
 
 INSTANCE MENU_ITEM_KEY_LOOK_FP(C_MENU_ITEM_DEF)
 {
-	text[0]			=	"Observar 1ª p.";
+	text[0]			=	"Observar 1Âª p.";
 	text[1]			=   "SUPR eliminar, INTRO definir tecla."; // Kommentar
 	posx			=	ctrl_sp1_1;		posy	=	ctrl_y_start + ctrl_y_step * 12 + CTRL_GROUP2;
 	
@@ -598,7 +598,7 @@ INSTANCE MENU_ITEM_CHG_KEYS_SET_ALTERNATIVE(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_CHG_KEYS_BACK(C_MENU_ITEM_DEF)
 {
 	backpic		=	MENU_ITEM_BACK_PIC;
-	text[0]		=	"Atrás";
+	text[0]		=	"AtrÃ¡s";
 	// Position und Dimension	
 	posx		=	ctrl_sp1_1;		posy		=	ctrl_y_start + ctrl_y_step * 18 + CTRL_GROUP5;
 	dimy		=	300;

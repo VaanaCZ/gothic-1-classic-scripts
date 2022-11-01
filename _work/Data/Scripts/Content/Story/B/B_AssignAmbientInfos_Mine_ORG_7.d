@@ -37,7 +37,7 @@ INSTANCE Info_Mine_Org_7_Mine (C_INFO) // E1
 	condition	= Info_Mine_Org_7_Mine_Condition;
 	information	= Info_Mine_Org_7_Mine_Info;
 	permanent	= 1;
-	description = "Háblame de este campamento.";
+	description = "HÃ¡blame de este campamento.";
 };                       
 
 FUNC INT Info_Mine_Org_7_Mine_Condition()
@@ -47,8 +47,8 @@ FUNC INT Info_Mine_Org_7_Mine_Condition()
 
 FUNC VOID Info_Mine_Org_7_Mine_Info()
 {
-	AI_Output(other,self,"Info_Mine_Org_7_Mine_15_00"); //Háblame de este campamento.
-	AI_Output(self,other,"Info_Mine_Org_7_Mine_07_01"); //¿El campamento? Te refieres a la Hondonada. Tampoco es tan malo. Los raspadores extraen mineral, los mercenarios montan guardia y los bandidos lo mantenemos todo bajo control.
+	AI_Output(other,self,"Info_Mine_Org_7_Mine_15_00"); //HÃ¡blame de este campamento.
+	AI_Output(self,other,"Info_Mine_Org_7_Mine_07_01"); //Â¿El campamento? Te refieres a la Hondonada. Tampoco es tan malo. Los raspadores extraen mineral, los mercenarios montan guardia y los bandidos lo mantenemos todo bajo control.
 	
 };
 
@@ -62,7 +62,7 @@ INSTANCE Info_Mine_Org_7_WichtigePersonen(C_INFO)
 	condition	= Info_Mine_Org_7_WichtigePersonen_Condition;
 	information	= Info_Mine_Org_7_WichtigePersonen_Info;
 	permanent	= 1;
-	description = "¿Quién está al mando?";
+	description = "Â¿QuiÃ©n estÃ¡ al mando?";
 };                       
 
 FUNC INT Info_Mine_Org_7_WichtigePersonen_Condition()
@@ -72,9 +72,9 @@ FUNC INT Info_Mine_Org_7_WichtigePersonen_Condition()
 
 FUNC VOID Info_Mine_Org_7_WichtigePersonen_Info()
 {
-	AI_Output(other,self,"Info_Mine_Org_7_WichtigePersonen_15_00"); //¿Quién está al mando?
-	AI_Output(self,other,"Info_Mine_Org_7_WichtigePersonen_07_01"); //Depende de quién sea el que te da las órdenes.
-	AI_Output(self,other,"Info_Mine_Org_7_WichtigePersonen_07_02"); //En cualquier caso, si Okyl quiere algo, será mejor que no pongas objeciones. Puede volverse muy peligroso si se cabrea.
+	AI_Output(other,self,"Info_Mine_Org_7_WichtigePersonen_15_00"); //Â¿QuiÃ©n estÃ¡ al mando?
+	AI_Output(self,other,"Info_Mine_Org_7_WichtigePersonen_07_01"); //Depende de quiÃ©n sea el que te da las Ã³rdenes.
+	AI_Output(self,other,"Info_Mine_Org_7_WichtigePersonen_07_02"); //En cualquier caso, si Okyl quiere algo, serÃ¡ mejor que no pongas objeciones. Puede volverse muy peligroso si se cabrea.
 	
 };
 
@@ -88,7 +88,7 @@ INSTANCE Info_Mine_Org_7_DieLage(C_INFO) // E1
 	condition	= Info_Mine_Org_7_DieLage_Condition;
 	information	= Info_Mine_Org_7_DieLage_Info;
 	permanent	= 1;
-	description = "¿Qué tal estás?";
+	description = "Â¿QuÃ© tal estÃ¡s?";
 };                       
 
 FUNC INT Info_Mine_Org_7_DieLage_Condition()
@@ -98,8 +98,8 @@ FUNC INT Info_Mine_Org_7_DieLage_Condition()
 
 FUNC VOID Info_Mine_Org_7_DieLage_Info()
 {
-	AI_Output(other,self,"Info_Mine_Org_7_DieLage_15_00"); //¿Qué tal estás?
-	AI_Output(self,other,"Info_Mine_Org_7_DieLage_07_01"); //¡Tío, me estás crispando los nervios!
+	AI_Output(other,self,"Info_Mine_Org_7_DieLage_15_00"); //Â¿QuÃ© tal estÃ¡s?
+	AI_Output(self,other,"Info_Mine_Org_7_DieLage_07_01"); //Â¡TÃ­o, me estÃ¡s crispando los nervios!
 };
 	
 // *************************************************************************

@@ -43,9 +43,9 @@ FUNC int  Stt_311_Fisk_First_Condition()
 
 FUNC VOID  Stt_311_Fisk_First_Info()
 {
-	AI_Output		(self, other,"Stt_311_Fisk_First_12_00"); //¡Eh, hombre! Soy Fisk. Vendo todo tipo de cosas. Si necesitaras algo, éste es el lugar apropiado.
+	AI_Output		(self, other,"Stt_311_Fisk_First_12_00"); //Â¡Eh, hombre! Soy Fisk. Vendo todo tipo de cosas. Si necesitaras algo, Ã©ste es el lugar apropiado.
 	Log_CreateTopic (GE_TraderOC,LOG_NOTE);
-	B_LogEntry		(GE_TraderOC,"Fisk, la Sombra, comercia con todo tipo de artículos, especialmente ARMAS. Suele estar en el mercado."); 
+	B_LogEntry		(GE_TraderOC,"Fisk, la Sombra, comercia con todo tipo de artÃ­culos, especialmente ARMAS. Suele estar en el mercado."); 
 	
 };
 
@@ -60,7 +60,7 @@ instance  Stt_311_Fisk_Trade (C_INFO)
 	condition	= Stt_311_Fisk_Trade_Condition;
 	information	= Stt_311_Fisk_Trade_Info;
 	permanent	= 1;
-	description = "Muéstrame tus mercancías.";
+	description = "MuÃ©strame tus mercancÃ­as.";
 	trade		= 1;
 };                       
 
@@ -71,7 +71,7 @@ FUNC int  Stt_311_Fisk_Trade_Condition()
 
 FUNC VOID  Stt_311_Fisk_Trade_Info()
 {
-	AI_Output (other, self,"Stt_311_Fisk_Trade_15_00"); //Déjame ver tus mercancías.
+	AI_Output (other, self,"Stt_311_Fisk_Trade_15_00"); //DÃ©jame ver tus mercancÃ­as.
 };
 
 
@@ -83,7 +83,7 @@ instance  Stt_311_Fisk_WhistlersSword (C_INFO)
 	condition	= Stt_311_Fisk_WhistlersSword_Condition;
 	information	= Stt_311_Fisk_WhistlersSword_Info;
 	permanent	= 1;
-	description = "Me gustaría comprar una espada. Querría algo más ornamental... ";
+	description = "Me gustarÃ­a comprar una espada. QuerrÃ­a algo mÃ¡s ornamental... ";
 };                       
 
 FUNC int  Stt_311_Fisk_WhistlersSword_Condition()
@@ -96,29 +96,29 @@ FUNC int  Stt_311_Fisk_WhistlersSword_Condition()
 
 FUNC VOID  Stt_311_Fisk_WhistlersSword_Info()
 {
-	AI_Output (other, self,"Stt_311_Fisk_WhistlersSword_15_00"); //Me gustaría comprar una espada. Pero no una cualquiera. Quiero algo más ornamental.
-	AI_Output (self, other,"Stt_311_Fisk_WhistlersSword_12_01"); //Tengo una que va a gustarte. El miembro de las Sombras que quería recogerla no va a volver a por ella.
-	AI_Output (self, other,"Stt_311_Fisk_WhistlersSword_12_02"); //Cuesta 110 pepitas. ¿Te interesa?
+	AI_Output (other, self,"Stt_311_Fisk_WhistlersSword_15_00"); //Me gustarÃ­a comprar una espada. Pero no una cualquiera. Quiero algo mÃ¡s ornamental.
+	AI_Output (self, other,"Stt_311_Fisk_WhistlersSword_12_01"); //Tengo una que va a gustarte. El miembro de las Sombras que querÃ­a recogerla no va a volver a por ella.
+	AI_Output (self, other,"Stt_311_Fisk_WhistlersSword_12_02"); //Cuesta 110 pepitas. Â¿Te interesa?
 	Fisk_SCknows110 = TRUE;
 
 	Info_ClearChoices	(Stt_311_Fisk_WhistlersSword );
 	Info_AddChoice		(Stt_311_Fisk_WhistlersSword,"Tal vez luego.",Stt_311_Fisk_WhistlersSword_BACK);
-	Info_AddChoice		(Stt_311_Fisk_WhistlersSword,"Querías vendérsela a Whistler por cien...",Stt_311_Fisk_WhistlersSword_Fault);
-	Info_AddChoice		(Stt_311_Fisk_WhistlersSword,"Sí, me la quedo.",Stt_311_Fisk_WhistlersSword_TakeIt);
+	Info_AddChoice		(Stt_311_Fisk_WhistlersSword,"QuerÃ­as vendÃ©rsela a Whistler por cien...",Stt_311_Fisk_WhistlersSword_Fault);
+	Info_AddChoice		(Stt_311_Fisk_WhistlersSword,"SÃ­, me la quedo.",Stt_311_Fisk_WhistlersSword_TakeIt);
 };
 
 func void Stt_311_Fisk_WhistlersSword_BACK()
 {
-	AI_Output (other, self,"Org_826_Mordrag_WhistlersSword_BACK_15_00"); //Tal vez más tarde.
+	AI_Output (other, self,"Org_826_Mordrag_WhistlersSword_BACK_15_00"); //Tal vez mÃ¡s tarde.
 	Info_ClearChoices	(Stt_311_Fisk_WhistlersSword );
 };
 
 func void Stt_311_Fisk_WhistlersSword_Fault()
 {
-	AI_Output (other, self,"Stt_311_Fisk_WhistlersSword_Fault_15_00"); //A Whistler se la vendías por cien pepitas.
-	AI_Output (self, other,"Stt_311_Fisk_WhistlersSword_Fault_12_01"); //¡Ah! Un momento... Ah, sí. ¡Casi te cobro de menos! Por supuesto, quise decir 500.
-	AI_Output (other, self,"Stt_311_Fisk_WhistlersSword_Fault_15_02"); //¿Quinientas?
-	AI_Output (self, other,"Stt_311_Fisk_WhistlersSword_Fault_12_03"); //¿Demasiado poco? ¿Prefieres 1000? Por mí, estupendo. Bueno, ahora que lo pienso... ¡prefiero quedármela!
+	AI_Output (other, self,"Stt_311_Fisk_WhistlersSword_Fault_15_00"); //A Whistler se la vendÃ­as por cien pepitas.
+	AI_Output (self, other,"Stt_311_Fisk_WhistlersSword_Fault_12_01"); //Â¡Ah! Un momento... Ah, sÃ­. Â¡Casi te cobro de menos! Por supuesto, quise decir 500.
+	AI_Output (other, self,"Stt_311_Fisk_WhistlersSword_Fault_15_02"); //Â¿Quinientas?
+	AI_Output (self, other,"Stt_311_Fisk_WhistlersSword_Fault_12_03"); //Â¿Demasiado poco? Â¿Prefieres 1000? Por mÃ­, estupendo. Bueno, ahora que lo pienso... Â¡prefiero quedÃ¡rmela!
 	
 	Fisk_ForgetSword = TRUE;
 	Info_ClearChoices	(Stt_311_Fisk_WhistlersSword );
@@ -126,11 +126,11 @@ func void Stt_311_Fisk_WhistlersSword_Fault()
 
 func void Stt_311_Fisk_WhistlersSword_TakeIt()
 {
-	AI_Output (other, self,"Stt_311_Fisk_WhistlersSword_TakeIt_15_00"); //Sí, me la llevo.
+	AI_Output (other, self,"Stt_311_Fisk_WhistlersSword_TakeIt_15_00"); //SÃ­, me la llevo.
 	
 	if (Npc_HasItems(other,itminugget) >= 110)
 	{
-		AI_Output (self, other,"Stt_311_Fisk_WhistlersSword_TakeIt_12_01"); //¡Es una buena compra!
+		AI_Output (self, other,"Stt_311_Fisk_WhistlersSword_TakeIt_12_01"); //Â¡Es una buena compra!
 		B_GiveInvItems(other, self,itminugget,110);
 		CreateInvItem (self,Whistlers_Schwert);
 		B_GiveInvItems(self, other,Whistlers_Schwert,1);
@@ -140,7 +140,7 @@ func void Stt_311_Fisk_WhistlersSword_TakeIt()
 	}
 	else
 	{
-		AI_Output (self, other,"Stt_311_Fisk_WhistlersSword_TakeIt_12_02"); //Me temo que no tienes mineral suficiente. Te guardaré la espada un tiempo, ¡pero no tardes demasiado!
+		AI_Output (self, other,"Stt_311_Fisk_WhistlersSword_TakeIt_12_02"); //Me temo que no tienes mineral suficiente. Te guardarÃ© la espada un tiempo, Â¡pero no tardes demasiado!
 	};
 };
 
@@ -169,7 +169,7 @@ FUNC int  Stt_311_Fisk_ForgetSword_Condition()
 FUNC VOID  Stt_311_Fisk_ForgetSword_Info()
 {
 	AI_Output (other, self,"Stt_311_Fisk_ForgetSword_15_00"); //Sigamos hablando de la espada de Whistler.
-	AI_Output (self, other,"Stt_311_Fisk_ForgetSword_12_01"); //Puedes irte a decirle que nunca tendrá su espada.
+	AI_Output (self, other,"Stt_311_Fisk_ForgetSword_12_01"); //Puedes irte a decirle que nunca tendrÃ¡ su espada.
 };
 
 // **************************************************
@@ -199,33 +199,33 @@ FUNC int  Stt_311_Fisk_MordragKO_Condition()
 
 FUNC VOID  Stt_311_Fisk_MordragKO_Info()
 {
-	AI_Output (self, other,"Stt_311_Fisk_MordragKO_12_00"); //¡Eh, tú!
-	AI_Output (self, other,"Stt_311_Fisk_MordragKO_12_01"); //¡Mordrag era uno de mis proveedores más importantes, idiota!
-	AI_Output (self, other,"Stt_311_Fisk_MordragKO_12_02"); //¡Si quieres unirte a este campamento, lo tendrás difícil para que YO te vote!
+	AI_Output (self, other,"Stt_311_Fisk_MordragKO_12_00"); //Â¡Eh, tÃº!
+	AI_Output (self, other,"Stt_311_Fisk_MordragKO_12_01"); //Â¡Mordrag era uno de mis proveedores mÃ¡s importantes, idiota!
+	AI_Output (self, other,"Stt_311_Fisk_MordragKO_12_02"); //Â¡Si quieres unirte a este campamento, lo tendrÃ¡s difÃ­cil para que YO te vote!
 
 	Info_ClearChoices(Stt_311_Fisk_MordragKO);
-	Info_AddChoice   (Stt_311_Fisk_MordragKO,"¡Vendes las pertenencias de los Magnates! A Thorus le interesará saberlo...",Stt_311_Fisk_MordragKO_Petze);
-	Info_AddChoice   (Stt_311_Fisk_MordragKO,"¡Tranquilo! Tal vez pueda ofrecer alguna compensación, ¿no?",Stt_311_Fisk_MordragKO_Relax);
-	Info_AddChoice	 (Stt_311_Fisk_MordragKO,"¡Entonces vete a la mierda!",Stt_311_Fisk_MordragKO_FuckOff);
+	Info_AddChoice   (Stt_311_Fisk_MordragKO,"Â¡Vendes las pertenencias de los Magnates! A Thorus le interesarÃ¡ saberlo...",Stt_311_Fisk_MordragKO_Petze);
+	Info_AddChoice   (Stt_311_Fisk_MordragKO,"Â¡Tranquilo! Tal vez pueda ofrecer alguna compensaciÃ³n, Â¿no?",Stt_311_Fisk_MordragKO_Relax);
+	Info_AddChoice	 (Stt_311_Fisk_MordragKO,"Â¡Entonces vete a la mierda!",Stt_311_Fisk_MordragKO_FuckOff);
 };
 
 func void Stt_311_Fisk_MordragKO_Relax()
 {
-	AI_Output (other, self,"Stt_311_Fisk_MordragKO_Relax_15_00"); //¡Calma! Tal vez pueda compensarte por ello, ¿no?
-	AI_Output (self, other,"Stt_311_Fisk_MordragKO_Relax_12_01"); //No sé cómo ibas a hacerlo. ¡A no ser que me consiguieras a otro perista en el Campamento Nuevo!
-	AI_Output (other, self,"Stt_311_Fisk_MordragKO_Relax_15_02"); //¿Cómo puedo encontrar yo a alguien así?
+	AI_Output (other, self,"Stt_311_Fisk_MordragKO_Relax_15_00"); //Â¡Calma! Tal vez pueda compensarte por ello, Â¿no?
+	AI_Output (self, other,"Stt_311_Fisk_MordragKO_Relax_12_01"); //No sÃ© cÃ³mo ibas a hacerlo. Â¡A no ser que me consiguieras a otro perista en el Campamento Nuevo!
+	AI_Output (other, self,"Stt_311_Fisk_MordragKO_Relax_15_02"); //Â¿CÃ³mo puedo encontrar yo a alguien asÃ­?
 	AI_Output (self, other,"Stt_311_Fisk_MordragKO_Relax_12_03"); //Ya te he dicho que no creo que vayas a estar nunca en paz conmigo.
 	
 	Log_CreateTopic(CH1_FiskNewDealer, LOG_MISSION);
 	Log_SetTopicStatus(CH1_FiskNewDealer, LOG_RUNNING);
-	B_LogEntry( CH1_FiskNewDealer,"Después de haber vapuleado a Mordrag, el comerciante Fisk del mercado del Campamento Viejo quiere que le encuentre un nuevo perista.");
+	B_LogEntry( CH1_FiskNewDealer,"DespuÃ©s de haber vapuleado a Mordrag, el comerciante Fisk del mercado del Campamento Viejo quiere que le encuentre un nuevo perista.");
 	
 	Fisk_GetNewHehler = LOG_RUNNING;
 };
 
 func void Stt_311_Fisk_MordragKO_FuckOff()
 {
-	AI_Output (other, self,"Stt_311_Fisk_MordragKO_FuckOff_15_00"); //¡Entonces bésame el culo!
+	AI_Output (other, self,"Stt_311_Fisk_MordragKO_FuckOff_15_00"); //Â¡Entonces bÃ©same el culo!
 	Info_ClearChoices(Stt_311_Fisk_MordragKO);
 	
 	AI_StopProcessInfos	(self);
@@ -233,8 +233,8 @@ func void Stt_311_Fisk_MordragKO_FuckOff()
 
 func void Stt_311_Fisk_MordragKO_Petze()
 {
-	AI_Output (other, self,"Stt_311_Fisk_MordragKO_Petze_15_00"); //Estás vendiendo cosas que pertenecen a los Magnates del Mineral. A Thorus le parecerá interesante.
-	AI_Output (self, other,"Stt_311_Fisk_MordragKO_Petze_12_01"); //¡Ni lo intentes, amigo!
+	AI_Output (other, self,"Stt_311_Fisk_MordragKO_Petze_15_00"); //EstÃ¡s vendiendo cosas que pertenecen a los Magnates del Mineral. A Thorus le parecerÃ¡ interesante.
+	AI_Output (self, other,"Stt_311_Fisk_MordragKO_Petze_12_01"); //Â¡Ni lo intentes, amigo!
 };
 
 // **************************************************
@@ -262,20 +262,20 @@ FUNC int  Stt_311_Fisk_HehlerSuccess_Condition()
 FUNC VOID  Stt_311_Fisk_HehlerSuccess_Info()
 {
 	AI_Output (other, self,"Stt_311_Fisk_HehlerSuccess_15_00"); //He encontrado a alguien del Campamento Nuevo que quiere hacer negocios contigo.
-	AI_Output (self, other,"Stt_311_Fisk_HehlerSuccess_12_01"); //¡No! Vaya, ¿quién iba a pensarlo? Parece que estás intentando hacerte popular por estos pagos.
-	AI_Output (self, other,"Stt_311_Fisk_HehlerSuccess_12_02"); //¡Y parece que lo has conseguido! ¿Quién es?
+	AI_Output (self, other,"Stt_311_Fisk_HehlerSuccess_12_01"); //Â¡No! Vaya, Â¿quiÃ©n iba a pensarlo? Parece que estÃ¡s intentando hacerte popular por estos pagos.
+	AI_Output (self, other,"Stt_311_Fisk_HehlerSuccess_12_02"); //Â¡Y parece que lo has conseguido! Â¿QuiÃ©n es?
 	AI_Output (other, self,"Stt_311_Fisk_HehlerSuccess_15_03"); //Se llama Sharky.
-	AI_Output (self, other,"Stt_311_Fisk_HehlerSuccess_12_04"); //¿Sharky? Es incluso peor que Mordrag.
+	AI_Output (self, other,"Stt_311_Fisk_HehlerSuccess_12_04"); //Â¿Sharky? Es incluso peor que Mordrag.
 	AI_Output (self, other,"Stt_311_Fisk_HehlerSuccess_12_05"); //En cuanto a Diego... Ya no necesitas preocuparte de eso.
 	
 	Fisk_GetNewHehler = LOG_SUCCESS;
 	B_GiveXP(XP_fiskdealer);
 
 	Log_SetTopicStatus(CH1_FiskNewDealer, LOG_SUCCESS);
-	B_LogEntry( CH1_FiskNewDealer,"Fisk está contento, pues Sharky se hará cargo del negocio de Mordrag.");
+	B_LogEntry( CH1_FiskNewDealer,"Fisk estÃ¡ contento, pues Sharky se harÃ¡ cargo del negocio de Mordrag.");
 };
 /*------------------------------------------------------------------------
-							RÜSTUNG									
+							RÃœSTUNG									
 ------------------------------------------------------------------------*/
 
 instance  Stt_311_Fisk_ARMOR (C_INFO)
@@ -285,7 +285,7 @@ instance  Stt_311_Fisk_ARMOR (C_INFO)
 	information		= Stt_311_Fisk_ARMOR_Info;
 	important		= 0;
 	permanent		= 1;
-	description		= "¿También tienes una armadura para mí?"; 
+	description		= "Â¿TambiÃ©n tienes una armadura para mÃ­?"; 
 };
 
 FUNC int  Stt_311_Fisk_ARMOR_Condition()
@@ -299,7 +299,7 @@ FUNC int  Stt_311_Fisk_ARMOR_Condition()
 };
 FUNC void  Stt_311_Fisk_ARMOR_Info()
 {
-	AI_Output (other, self,"Stt_311_Fisk_ARMOR_Info_15_01"); //¿Me has conseguido una armadura?
+	AI_Output (other, self,"Stt_311_Fisk_ARMOR_Info_15_01"); //Â¿Me has conseguido una armadura?
 	AI_Output (self, other,"Stt_311_Fisk_ARMOR_Info_12_02"); //Bueno, estoy seguro de poder complacerte.
 	Info_ClearChoices (Stt_311_Fisk_ARMOR);
 	Info_Addchoice (Stt_311_Fisk_ARMOR,DIALOG_BACK,Stt_311_Fisk_ARMOR_BACK);
@@ -319,11 +319,11 @@ func void Stt_311_Fisk_ARMOR_L()
 	
 	if (Npc_HasItems (hero,ItMiNugget) <  VALUE_VLK_ARMOR_L)
 	{
-		AI_Output (self, other,"Stt_311_Fisk_ARMOR_L_Info_12_02"); //¡Vuelve a verme cuando tengas el mineral suficiente!
+		AI_Output (self, other,"Stt_311_Fisk_ARMOR_L_Info_12_02"); //Â¡Vuelve a verme cuando tengas el mineral suficiente!
 	}
 	else
 	{
-		AI_Output		(self,	other,	"Stt_311_Fisk_ARMOR_L_Info_12_03"); //¡Sabia elección!
+		AI_Output		(self,	other,	"Stt_311_Fisk_ARMOR_L_Info_12_03"); //Â¡Sabia elecciÃ³n!
 		B_GiveInvItems	(hero,	self,	ItMinugget, VALUE_VLK_ARMOR_L);
 		CreateInvItem	(self,			VLK_ARMOR_L);
 		B_GiveInvItems	(self,	hero,	VLK_ARMOR_L, 1);
@@ -335,11 +335,11 @@ func void Stt_311_Fisk_ARMOR_M()
 	AI_Output (other, self,"Stt_311_Fisk_ARMOR_M_Info_15_01"); //Dame los pantalones de cavador.
 	if (Npc_HasItems (hero,ItMiNugget) <  VALUE_VLK_ARMOR_M)
 	{
-		AI_Output (self, other,"Stt_311_Fisk_ARMOR_M_Info_12_02"); //¡Vuelve a verme cuando tengas el mineral suficiente!
+		AI_Output (self, other,"Stt_311_Fisk_ARMOR_M_Info_12_02"); //Â¡Vuelve a verme cuando tengas el mineral suficiente!
 	}
 	else
 	{
-		AI_Output		(self, other,"Stt_311_Fisk_ARMOR_M_Info_12_03"); //¡Sabia elección!
+		AI_Output		(self, other,"Stt_311_Fisk_ARMOR_M_Info_12_03"); //Â¡Sabia elecciÃ³n!
 		B_GiveInvItems	(hero, self, ItMinugget, VALUE_VLK_ARMOR_M);
 		CreateInvItem	(self, VLK_ARMOR_M);
 		B_GiveInvItems	(self,hero, VLK_ARMOR_M, 1);

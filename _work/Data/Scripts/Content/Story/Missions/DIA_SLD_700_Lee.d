@@ -34,7 +34,7 @@ instance  Sld_700_Lee_Greet (C_INFO)
 	condition	=  Sld_700_Lee_Greet_Condition;
 	information	=  Sld_700_Lee_Greet_Info;
 	permanent	=  0;
-	description = "Eres el jefe de los mercenarios, ¿verdad?";
+	description = "Eres el jefe de los mercenarios, Â¿verdad?";
 };                       
 
 FUNC int  Sld_700_Lee_Greet_Condition()
@@ -44,8 +44,8 @@ FUNC int  Sld_700_Lee_Greet_Condition()
 
 FUNC VOID  Sld_700_Lee_Greet_Info()
 {
-	AI_Output (other, self,"DIA_Lee_Greet_15_00"); //Tú eres el jefe de los mercenarios, ¿verdad?
-	AI_Output (self, other,"DIA_Lee_Greet_08_01"); //¡Exacto, muchacho!
+	AI_Output (other, self,"DIA_Lee_Greet_15_00"); //TÃº eres el jefe de los mercenarios, Â¿verdad?
+	AI_Output (self, other,"DIA_Lee_Greet_08_01"); //Â¡Exacto, muchacho!
 };
 
 //*********************************************************
@@ -59,7 +59,7 @@ instance  Sld_700_Lee_Define (C_INFO)
 	condition	=  Sld_700_Lee_Define_Condition;
 	information	=  Sld_700_Lee_Define_Info;
 	permanent	=  0;
-	description = "¿Qué tienen que hacer los mercenarios de los magos?";
+	description = "Â¿QuÃ© tienen que hacer los mercenarios de los magos?";
 };                       
 
 FUNC int  Sld_700_Lee_Define_Condition()
@@ -72,7 +72,7 @@ FUNC int  Sld_700_Lee_Define_Condition()
 
 FUNC VOID  Sld_700_Lee_Define_Info()
 {
-	AI_Output (other, self,"DIA_Lee_Define_15_00"); //¿Qué es lo que tienen que hacer los mercenarios de los magos?
+	AI_Output (other, self,"DIA_Lee_Define_15_00"); //Â¿QuÃ© es lo que tienen que hacer los mercenarios de los magos?
 	AI_Output (self, other,"DIA_Lee_Define_08_01"); //Es muy sencillo. Proteger el mineral; proteger a los magos.
 	AI_Output (self, other,"DIA_Lee_Define_08_02"); //A veces los magos tienen una tarea especial para alguno de nosotros.
 };
@@ -88,7 +88,7 @@ instance  Sld_700_Lee_Mitmachen (C_INFO)
 	condition	=  Sld_700_Lee_Mitmachen_Condition;
 	information	=  Sld_700_Lee_Mitmachen_Info;
 	permanent	=  0;
-	description = "¡Me gustaría unirme a vosotros!";
+	description = "Â¡Me gustarÃ­a unirme a vosotros!";
 };                       
 
 FUNC int  Sld_700_Lee_Mitmachen_Condition()
@@ -103,9 +103,9 @@ FUNC int  Sld_700_Lee_Mitmachen_Condition()
 
 FUNC VOID  Sld_700_Lee_Mitmachen_Info()
 {
-	AI_Output (other, self,"DIA_Lee_Mitmachen_15_00"); //¡Me gustaría unirme a vosotros!
-	AI_Output (self, other,"DIA_Lee_Mitmachen_08_01"); //¡Qué valor tienes! ¿De verdad crees que voy a aceptar al primero que venga?
-	AI_Output (self, other,"DIA_Lee_Mitmachen_08_02"); //No puedes convertirte en uno de nosotros hasta que hayas pasado algún tiempo en el Campamento. ¡Te estaré observando!
+	AI_Output (other, self,"DIA_Lee_Mitmachen_15_00"); //Â¡Me gustarÃ­a unirme a vosotros!
+	AI_Output (self, other,"DIA_Lee_Mitmachen_08_01"); //Â¡QuÃ© valor tienes! Â¿De verdad crees que voy a aceptar al primero que venga?
+	AI_Output (self, other,"DIA_Lee_Mitmachen_08_02"); //No puedes convertirte en uno de nosotros hasta que hayas pasado algÃºn tiempo en el Campamento. Â¡Te estarÃ© observando!
 };
 
 //*********************************************************
@@ -121,7 +121,7 @@ instance  Sld_700_Lee_NowReady (C_INFO)
 	condition	=  Sld_700_Lee_NowReady_Condition;
 	information	=  Sld_700_Lee_NowReady_Info;
 	permanent	=  1;
-	description = "Me gustaría convertirme en mercenario de los magos. ¿Estoy preparado?";
+	description = "Me gustarÃ­a convertirme en mercenario de los magos. Â¿Estoy preparado?";
 };                       
 
 FUNC int  Sld_700_Lee_NowReady_Condition()
@@ -135,16 +135,16 @@ FUNC int  Sld_700_Lee_NowReady_Condition()
 
 FUNC VOID  Sld_700_Lee_NowReady_Info()
 {
-	AI_Output (other, self,"DIA_Lee_NowReady_15_00"); //Me gustaría ser uno de los mercenarios de los magos; ¿estoy listo ya?
+	AI_Output (other, self,"DIA_Lee_NowReady_15_00"); //Me gustarÃ­a ser uno de los mercenarios de los magos; Â¿estoy listo ya?
 	
 	if (CorKalom_BringMCQBalls == LOG_SUCCESS)
 	{
-		AI_Output			(self, other,"Sld_700_Lee_BECOMESLD_Info_08_01"); //Tus hazañas en favor de la gente de la Vieja Mina han demostrado que eres un hombre de gran valía.
+		AI_Output			(self, other,"Sld_700_Lee_BECOMESLD_Info_08_01"); //Tus hazaÃ±as en favor de la gente de la Vieja Mina han demostrado que eres un hombre de gran valÃ­a.
 		AI_Output			(self, other,"Sld_700_Lee_BECOMESLD_Info_08_02"); //Estoy dispuesto a dejarte que te unas a los mercenarios.
 	
 		if hero.level < 10
 		{
-			AI_Output			(self, other,"Sld_700_Lee_BECOMESLD_Info_08_03"); //Pero todavía no estás listo para los mercenarios. Acumula algo de experiencia y lo conseguirás.
+			AI_Output			(self, other,"Sld_700_Lee_BECOMESLD_Info_08_03"); //Pero todavÃ­a no estÃ¡s listo para los mercenarios. Acumula algo de experiencia y lo conseguirÃ¡s.
 	    	AI_StopProcessInfos	(self);
 			B_PrintGuildCondition(10);
 	    }
@@ -158,19 +158,19 @@ FUNC VOID  Sld_700_Lee_NowReady_Info()
 	{	
 		if hero.level < 10
 		{
-			AI_Output (self, other,"DIA_Lee_NowReady_08_01"); //Todavía no tienes experiencia suficiente. Necesitas mejorar tus habilidades.
+			AI_Output (self, other,"DIA_Lee_NowReady_08_01"); //TodavÃ­a no tienes experiencia suficiente. Necesitas mejorar tus habilidades.
 			B_PrintGuildCondition(10);
 	    }
 	    else if hero.level >= 10
 	    {
-	    	AI_Output			(self, other,"Sld_700_Lee_BECOMESLD_Info_08_04"); //Voy a darte una oportunidad. ¿Qué te parece?
+	    	AI_Output			(self, other,"Sld_700_Lee_BECOMESLD_Info_08_04"); //Voy a darte una oportunidad. Â¿QuÃ© te parece?
 	    	Lee_SldPossible = TRUE;
 		};
 	};
 };
 
 /*------------------------------------------------------------------------
-							SÖLDNER WERDEN	2									
+							SÃ–LDNER WERDEN	2									
 ------------------------------------------------------------------------*/
 
 instance  Sld_700_Lee_BECOMESLDNOW (C_INFO)
@@ -195,22 +195,22 @@ FUNC int  Sld_700_Lee_BECOMESLDNOW_Condition()
 FUNC void  Sld_700_Lee_BECOMESLDNOW_Info()
 {
 	AI_Output			(other, self,"Sld_700_Lee_BECOMESLDNOW_Info_15_01"); //Quiero ser un mercenario.
-	AI_Output			(self, other,"Sld_700_Lee_BECOMESLDNOW_Info_08_02"); //Una excelente decisión. No te arrepentirás.
-	AI_Output			(self, other,"Sld_700_Lee_BECOMESLDNOW_Info_08_03"); //Dime una cosa: ¿por qué? ¿Por qué te has unido a nosotros y no al Campamento Viejo o a la Hermandad?
+	AI_Output			(self, other,"Sld_700_Lee_BECOMESLDNOW_Info_08_02"); //Una excelente decisiÃ³n. No te arrepentirÃ¡s.
+	AI_Output			(self, other,"Sld_700_Lee_BECOMESLDNOW_Info_08_03"); //Dime una cosa: Â¿por quÃ©? Â¿Por quÃ© te has unido a nosotros y no al Campamento Viejo o a la Hermandad?
 
 	Log_CreateTopic		(GE_BecomeMercenary,LOG_NOTE);
 	B_LogEntry			(GE_BecomeMercenary,"Lee me ha dejado unirme a los mercenarios.");
 	
 	Info_ClearChoices	(Sld_700_Lee_BECOMESLDNOW);
-	Info_AddChoice		(Sld_700_Lee_BECOMESLDNOW,"Los demás campamentos no merecen la pena.",Sld_700_Lee_BECOMESLDNOW_NOOTHER);
-	Info_AddChoice		(Sld_700_Lee_BECOMESLDNOW,"Quería libertad desde el principio.",Sld_700_Lee_BECOMESLDNOW_FREEDOM);
-	Info_AddChoice		(Sld_700_Lee_BECOMESLDNOW,"Más o menos sucedió de ese modo.",Sld_700_Lee_BECOMESLDNOW_JUSTBECAUSE);
+	Info_AddChoice		(Sld_700_Lee_BECOMESLDNOW,"Los demÃ¡s campamentos no merecen la pena.",Sld_700_Lee_BECOMESLDNOW_NOOTHER);
+	Info_AddChoice		(Sld_700_Lee_BECOMESLDNOW,"QuerÃ­a libertad desde el principio.",Sld_700_Lee_BECOMESLDNOW_FREEDOM);
+	Info_AddChoice		(Sld_700_Lee_BECOMESLDNOW,"MÃ¡s o menos sucediÃ³ de ese modo.",Sld_700_Lee_BECOMESLDNOW_JUSTBECAUSE);
 };
   
 FUNC void  Sld_700_Lee_BECOMESLDNOW_NOOTHER()
 {
 	AI_Output			(other, self,"Sld_700_Lee_BECOMESLDNOW_NOOTHER_15_01"); //Los otros campamentos no merecen la pena.
-	AI_Output			(self, other,"Sld_700_Lee_BECOMESLDNOW_NOOTHER_08_02"); //Aquí lo único que merece la pena es la esperanza de ser libres. ¡Bienvenido, MERCENARIO!
+	AI_Output			(self, other,"Sld_700_Lee_BECOMESLDNOW_NOOTHER_08_02"); //AquÃ­ lo Ãºnico que merece la pena es la esperanza de ser libres. Â¡Bienvenido, MERCENARIO!
 	CreateInvItem		(self,SLD_ARMOR_L);
 	B_GiveInvItems      (self, hero, SLD_ARMOR_L, 1);
 	AI_EquipBestArmor	(hero);
@@ -233,8 +233,8 @@ FUNC void  Sld_700_Lee_BECOMESLDNOW_FREEDOM()
 
 FUNC void  Sld_700_Lee_BECOMESLDNOW_JUSTBECAUSE()
 {
-	AI_Output			(other, self,"Sld_700_Lee_BECOMESLDNOW_JUSTBECAUSE_15_01"); //Las cosas salieron así.
-	AI_Output			(self, other,"Sld_700_Lee_BECOMESLDNOW_JUSTBECAUSE_08_02"); //Espero que las cosas no salgan de manera que seamos prisioneros aquí para siempre. Bienvenido, MERCENARIO.
+	AI_Output			(other, self,"Sld_700_Lee_BECOMESLDNOW_JUSTBECAUSE_15_01"); //Las cosas salieron asÃ­.
+	AI_Output			(self, other,"Sld_700_Lee_BECOMESLDNOW_JUSTBECAUSE_08_02"); //Espero que las cosas no salgan de manera que seamos prisioneros aquÃ­ para siempre. Bienvenido, MERCENARIO.
 	CreateInvItem		(self,SLD_ARMOR_L);
 	B_GiveInvItems      (self, hero, SLD_ARMOR_L, 1);
 	AI_EquipBestArmor	(hero);
@@ -275,17 +275,17 @@ FUNC int  Sld_700_Lee_DAMNPAST_Condition()
 func void  Sld_700_Lee_DAMNPAST_Info()
 {
 	AI_Output			(self, other,"Sld_700_Lee_DAMNPAST_Info_08_01"); //Hubo un tiempo en que llevaba una vida muy diferente.
-	AI_Output			(self, other,"Sld_700_Lee_DAMNPAST_Info_08_02"); //Yo era uno de los generales de este país.
-	AI_Output			(self, other,"Sld_700_Lee_DAMNPAST_Info_08_03"); //Me he pasado toda la vida luchando por mi país.
-	AI_Output			(self, other,"Sld_700_Lee_DAMNPAST_Info_08_04"); //Pero a los nobles no les caía bien, porque el rey escuchaba mis consejos. Y sabían que yo suponía una amenaza para sus negocios sucios.
-	AI_Output			(self, other,"Sld_700_Lee_DAMNPAST_Info_08_05"); //No había contado con su inventiva. Utilizaron a la mujer del rey para atacarme.
-	AI_Output			(self, other,"Sld_700_Lee_DAMNPAST_Info_08_06"); //Se me culpó de su asesinato sin sentido. El rey Rhobar no tuvo elección.
-	AI_Output			(self, other,"Sld_700_Lee_DAMNPAST_Info_08_07"); //Los servicios prestados a mi país me libraron del patíbulo. Pero me quitaron la libertad.
-	AI_Output			(self, other,"Sld_700_Lee_DAMNPAST_Info_08_08"); //Un día seré libre de nuevo. Entonces volveré y me vengaré.
+	AI_Output			(self, other,"Sld_700_Lee_DAMNPAST_Info_08_02"); //Yo era uno de los generales de este paÃ­s.
+	AI_Output			(self, other,"Sld_700_Lee_DAMNPAST_Info_08_03"); //Me he pasado toda la vida luchando por mi paÃ­s.
+	AI_Output			(self, other,"Sld_700_Lee_DAMNPAST_Info_08_04"); //Pero a los nobles no les caÃ­a bien, porque el rey escuchaba mis consejos. Y sabÃ­an que yo suponÃ­a una amenaza para sus negocios sucios.
+	AI_Output			(self, other,"Sld_700_Lee_DAMNPAST_Info_08_05"); //No habÃ­a contado con su inventiva. Utilizaron a la mujer del rey para atacarme.
+	AI_Output			(self, other,"Sld_700_Lee_DAMNPAST_Info_08_06"); //Se me culpÃ³ de su asesinato sin sentido. El rey Rhobar no tuvo elecciÃ³n.
+	AI_Output			(self, other,"Sld_700_Lee_DAMNPAST_Info_08_07"); //Los servicios prestados a mi paÃ­s me libraron del patÃ­bulo. Pero me quitaron la libertad.
+	AI_Output			(self, other,"Sld_700_Lee_DAMNPAST_Info_08_08"); //Un dÃ­a serÃ© libre de nuevo. Entonces volverÃ© y me vengarÃ©.
 	
 	AI_AlignToWP		(self);
 	
-	AI_Output			(self, other,"Sld_700_Lee_DAMNPAST_Info_08_09"); //Me vengaré.
+	AI_Output			(self, other,"Sld_700_Lee_DAMNPAST_Info_08_09"); //Me vengarÃ©.
 	
 	Npc_ExchangeRoutine (self,"START");
 	
@@ -306,7 +306,7 @@ instance  Sld_700_Lee_FMTaken (C_INFO)
 	condition	=  Sld_700_Lee_FMTaken_Condition;
 	information	=  Sld_700_Lee_FMTaken_Info;
 	permanent	=  1;
-	description = "¿Qué piensas de la mina?";
+	description = "Â¿QuÃ© piensas de la mina?";
 };                       
 
 FUNC int  Sld_700_Lee_FMTaken_Condition()
@@ -319,26 +319,26 @@ FUNC int  Sld_700_Lee_FMTaken_Condition()
 
 FUNC VOID  Sld_700_Lee_FMTaken_Info()
 {
-	AI_Output (other, self,"DIA_Lee_FMTaken_15_00"); //¿Qué piensas de la mina?
+	AI_Output (other, self,"DIA_Lee_FMTaken_15_00"); //Â¿QuÃ© piensas de la mina?
 	
-	if (Lee_freeminereport == 0) 					//SC hat jetzt die Möglichkeit, Lee über die freie Mine zu informieren! ***Björn***
+	if (Lee_freeminereport == 0) 					//SC hat jetzt die MÃ¶glichkeit, Lee Ã¼ber die freie Mine zu informieren! ***BjÃ¶rn***
 	{
 	
-		AI_Output (self, other,"DIA_Lee_FMTaken_08_01"); //Han ido demasiado lejos; se arrepentirán.
+		AI_Output (self, other,"DIA_Lee_FMTaken_08_01"); //Han ido demasiado lejos; se arrepentirÃ¡n.
 	
 	}
 	else
 	{
-		AI_Output			(hero, self,"Info_Lee_now_freeminefree_15_01"); 	//¡Pero ya no deberían ser ninguna amenaza!
-		AI_Output			(self, hero,"Sld_700_Lee_CHANGESIDE_Info_08_02"); 	//Has hecho mucho por nuestro campamento. Me vendría bien un hombre como tú.
+		AI_Output			(hero, self,"Info_Lee_now_freeminefree_15_01"); 	//Â¡Pero ya no deberÃ­an ser ninguna amenaza!
+		AI_Output			(self, hero,"Sld_700_Lee_CHANGESIDE_Info_08_02"); 	//Has hecho mucho por nuestro campamento. Me vendrÃ­a bien un hombre como tÃº.
 		AI_Output			(hero, self,"Info_FreemineOrc_EXIT_15_03"); 		//Gracias. Me marcho.
-		AI_Output			(self, hero,"Info_CorAngar_TELEPORT_08_01"); 		//¡Un momento!
-		AI_Output			(self, hero,"Info_CorAngar_TELEPORT_08_03"); 		//Acepta esta runa de magia como muestra de nuestra gratitud por tus grandes hazañas.
-		AI_Output			(hero, self,"Info_CorAngar_TELEPORT_15_05"); 		//¡Gracias!
+		AI_Output			(self, hero,"Info_CorAngar_TELEPORT_08_01"); 		//Â¡Un momento!
+		AI_Output			(self, hero,"Info_CorAngar_TELEPORT_08_03"); 		//Acepta esta runa de magia como muestra de nuestra gratitud por tus grandes hazaÃ±as.
+		AI_Output			(hero, self,"Info_CorAngar_TELEPORT_15_05"); 		//Â¡Gracias!
 		AI_Output			(hero,	self,"Info_Exit_Info_15_01"); 				//Hasta la vista.
 
 
-		B_LogEntry			(CH4_BannedFromOC,	"He informado a Lee acerca de la acción de limpieza que Gorn y yo hemos llevado a cabo en la Mina Libre. Se ha mostrado muy complacido.");
+		B_LogEntry			(CH4_BannedFromOC,	"He informado a Lee acerca de la acciÃ³n de limpieza que Gorn y yo hemos llevado a cabo en la Mina Libre. Se ha mostrado muy complacido.");
 		
  	   	B_GiveInvItems (self,other, ItArRuneFirestorm, 1);
 		B_GiveXP (500);		
@@ -356,7 +356,7 @@ instance  Sld_700_Lee_CHANGESIDE (C_INFO)
 	information		= Sld_700_Lee_CHANGESIDE_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "¡Me han desterrado del Campamento Viejo, y quiero unirme a vosotros!"; 
+	description		= "Â¡Me han desterrado del Campamento Viejo, y quiero unirme a vosotros!"; 
 };
 
 FUNC int  Sld_700_Lee_CHANGESIDE_Condition()
@@ -370,10 +370,10 @@ FUNC int  Sld_700_Lee_CHANGESIDE_Condition()
 
 FUNC void  Sld_700_Lee_CHANGESIDE_Info()
 {
-	AI_Output			(other, self,"Sld_700_Lee_CHANGESIDE_Info_15_01"); //Me han expulsado del Campamento Viejo; ¡me gustaría unirme a vosotros!
-	AI_Output			(self, other,"Sld_700_Lee_CHANGESIDE_Info_08_02"); //Has hecho mucho por nuestro campamento. Me vendría bien un hombre como tú.
-	AI_Output			(self, other,"Sld_700_Lee_CHANGESIDE_Info_08_03"); //Seré breve. ¡Bienvenido al Campamento Nuevo, MERCENARIO!
-	AI_Output			(self, other,"Sld_700_Lee_CHANGESIDE_Info_08_04"); //Aquí tienes una armadura. Me alegro de tenerte entre nosotros.
+	AI_Output			(other, self,"Sld_700_Lee_CHANGESIDE_Info_15_01"); //Me han expulsado del Campamento Viejo; Â¡me gustarÃ­a unirme a vosotros!
+	AI_Output			(self, other,"Sld_700_Lee_CHANGESIDE_Info_08_02"); //Has hecho mucho por nuestro campamento. Me vendrÃ­a bien un hombre como tÃº.
+	AI_Output			(self, other,"Sld_700_Lee_CHANGESIDE_Info_08_03"); //SerÃ© breve. Â¡Bienvenido al Campamento Nuevo, MERCENARIO!
+	AI_Output			(self, other,"Sld_700_Lee_CHANGESIDE_Info_08_04"); //AquÃ­ tienes una armadura. Me alegro de tenerte entre nosotros.
 
 	CreateInvItem		(self, SLD_ARMOR_M);
 	B_GiveInvItems      (self, hero, SLD_ARMOR_M, 1);
@@ -386,10 +386,10 @@ FUNC void  Sld_700_Lee_CHANGESIDE_Info()
 	Npc_SetTrueGuild	(hero, GIL_SLD);
 	hero.guild = GIL_SLD;
 
-	B_LogEntry			(CH4_BannedFromOC,"He cambiado de bando. Después de ser desterrado del Campamento Viejo, me he unido a los mercenarios. ¡Ahora tengo que volver con Saturas!");
+	B_LogEntry			(CH4_BannedFromOC,"He cambiado de bando. DespuÃ©s de ser desterrado del Campamento Viejo, me he unido a los mercenarios. Â¡Ahora tengo que volver con Saturas!");
 
 	Log_CreateTopic 	(GE_TeacherNC,LOG_NOTE);
-	B_LogEntry			(GE_TeacherNC,"Lee puede enseñarme a combatir con ARMAS DE DOS MANOS. Aparte de eso, puede ayudarme a mejorar mi FUERZA y mi DESTREZA.");
+	B_LogEntry			(GE_TeacherNC,"Lee puede enseÃ±arme a combatir con ARMAS DE DOS MANOS. Aparte de eso, puede ayudarme a mejorar mi FUERZA y mi DESTREZA.");
 };  
 
 /*------------------------------------------------------------------------
@@ -416,7 +416,7 @@ FUNC int  Sld_700_Lee_ARMOR_Condition()
 FUNC void  Sld_700_Lee_ARMOR_Info()
 {
 	AI_Output				(other, self,"Sld_700_Lee_ARMOR_Info_15_01"); //Necesito una armadura mejor.
-	AI_Output				(self, other,"Sld_700_Lee_ARMOR_Info_08_02"); //Primero tendrás que ganártela. Aparte de eso, no son baratas.
+	AI_Output				(self, other,"Sld_700_Lee_ARMOR_Info_08_02"); //Primero tendrÃ¡s que ganÃ¡rtela. Aparte de eso, no son baratas.
 	
 	Info_ClearChoices	(Sld_700_Lee_ARMOR);
 	Info_AddChoice		(Sld_700_Lee_ARMOR,DIALOG_BACK,Sld_700_Lee_ARMOR_BACK);
@@ -432,15 +432,15 @@ func void Sld_700_Lee_ARMOR_M()
 	AI_Output				(other, self,"Sld_700_Lee_ARMOR_M_Info_08_01"); //Quiero una armadura intermedia.
 	if (Kapitel < 3)
 	{
-		AI_Output			(self, other,"Sld_700_Lee_ARMOR_M_Info_08_02"); //No tienes experiencia suficiente para llevar una armadura mejor. Vuelve cuando hayas acumulado más experiencia.
+		AI_Output			(self, other,"Sld_700_Lee_ARMOR_M_Info_08_02"); //No tienes experiencia suficiente para llevar una armadura mejor. Vuelve cuando hayas acumulado mÃ¡s experiencia.
 	}
 	else if (Npc_HasItems (hero,ItMinugget) < VALUE_SLD_ARMOR_M) 
 	{
-		AI_Output			(self, other,"Sld_700_Lee_ARMOR_M_Info_08_03"); //Sin mineral tampoco conseguirás una armadura.
+		AI_Output			(self, other,"Sld_700_Lee_ARMOR_M_Info_08_03"); //Sin mineral tampoco conseguirÃ¡s una armadura.
 	}
 	else 
 	{
-		AI_Output			(self, other,"Sld_700_Lee_ARMOR_M_Info_08_04"); //Esta armadura es de buena calidad. Protegerá bien tu cuerpo.
+		AI_Output			(self, other,"Sld_700_Lee_ARMOR_M_Info_08_04"); //Esta armadura es de buena calidad. ProtegerÃ¡ bien tu cuerpo.
 		B_GiveInvItems  	(hero, self, ItMinugget,VALUE_SLD_ARMOR_M);
 		CreateInvItem		(hero,SLD_ARMOR_M);
 		
@@ -454,15 +454,15 @@ func void Sld_700_Lee_ARMOR_H()
 	AI_Output				(other, self,"Sld_700_Lee_ARMOR_H_Info_08_01"); //Dame una armadura pesada.
 	if (Kapitel < 4)
 	{
-		AI_Output			(self, other,"Sld_700_Lee_ARMOR_H_Info_08_02"); //No tienes experiencia suficiente para llevar la armadura pesada. Vuelve cuando hayas acumulado más experiencia.
+		AI_Output			(self, other,"Sld_700_Lee_ARMOR_H_Info_08_02"); //No tienes experiencia suficiente para llevar la armadura pesada. Vuelve cuando hayas acumulado mÃ¡s experiencia.
 	}
 	else if (Npc_HasItems(hero,ItMinugget) < VALUE_SLD_ARMOR_H) 
 	{
-		AI_Output			(self, other,"Sld_700_Lee_ARMOR_H_Info_08_03"); //Sin mineral tampoco conseguirás una armadura.
+		AI_Output			(self, other,"Sld_700_Lee_ARMOR_H_Info_08_03"); //Sin mineral tampoco conseguirÃ¡s una armadura.
 	}
 	else 
 	{
-		AI_Output			(self, other,"Sld_700_Lee_ARMOR_H_Info_08_04"); //Este armadura es la mejor que conseguirás en el interior de la Barrera. Puedes creerme cuando te digo que vale el mineral que cuesta.
+		AI_Output			(self, other,"Sld_700_Lee_ARMOR_H_Info_08_04"); //Este armadura es la mejor que conseguirÃ¡s en el interior de la Barrera. Puedes creerme cuando te digo que vale el mineral que cuesta.
 		B_GiveInvItems  	(hero, self, ItMinugget,VALUE_SLD_ARMOR_H);
 
 		CreateInvItem		(hero,SLD_ARMOR_H);	//SN: ohne B_GiveInvItem, weil sonst Lee nackt dasteht!
@@ -484,7 +484,7 @@ INSTANCE Sld_700_Lee_Teach(C_INFO)
 	condition	= Sld_700_Lee_Teach_Condition;
 	information	= Sld_700_Lee_Teach_Info;
 	permanent	= 1;
-	description = "¿Puedes enseñarme algo?";
+	description = "Â¿Puedes enseÃ±arme algo?";
 };                       
 
 FUNC INT Sld_700_Lee_Teach_Condition()
@@ -498,8 +498,8 @@ FUNC INT Sld_700_Lee_Teach_Condition()
 
 FUNC VOID Sld_700_Lee_Teach_Info()
 {
-	AI_Output(other,self,"Sld_700_Lee_Teach_15_00"); //¿Puedes enseñarme algo?
-	AI_Output(self,other,"Sld_700_Lee_Teach_08_01"); //Puedo ayudarte a ser más fuerte y habilidoso.
+	AI_Output(other,self,"Sld_700_Lee_Teach_15_00"); //Â¿Puedes enseÃ±arme algo?
+	AI_Output(self,other,"Sld_700_Lee_Teach_08_01"); //Puedo ayudarte a ser mÃ¡s fuerte y habilidoso.
 	
 	
 	
@@ -577,7 +577,7 @@ FUNC int  Sld_700_Lee_ZWEIHAND1_Condition()
 {	
 	if 	( 
 			(Npc_GetTalentSkill  (hero,NPC_TALENT_2H) < 1)
-			&& ((Npc_GetTrueGuild    (hero) == GIL_SLD) || ((Npc_GetTrueGuild(hero)==GIL_KDW) && (Kapitel >= 4))  )	//jetzt auch als Wassermagier im 4. Kapitel möglich ***BJÖRN***
+			&& ((Npc_GetTrueGuild    (hero) == GIL_SLD) || ((Npc_GetTrueGuild(hero)==GIL_KDW) && (Kapitel >= 4))  )	//jetzt auch als Wassermagier im 4. Kapitel mÃ¶glich ***BJÃ–RN***
 		)
 	{
 		return TRUE;
@@ -590,12 +590,12 @@ FUNC void  Sld_700_Lee_ZWEIHAND1_Info()
 	
 	if (B_GiveSkill(other,NPC_TALENT_2H , 1, LPCOST_TALENT_2H_1))
 	{
-		AI_Output			(self, other,"Sld_700_Lee_ZWEIHAND1_Info_08_02"); //De acuerdo; repasemos primero los puntos básicos.
-		AI_Output			(self, other,"Sld_700_Lee_ZWEIHAND1_Info_08_03"); //Mantén la espada en una posición horizontal. Para atacar a tu oponente con un arma tan pesada vas a necesitar describir un gran arco.
-		AI_Output			(self, other,"Sld_700_Lee_ZWEIHAND1_Info_08_04"); //Levanta el brazo y bájalo en línea recta. Normalmente basta con eso para derribar al oponente.
+		AI_Output			(self, other,"Sld_700_Lee_ZWEIHAND1_Info_08_02"); //De acuerdo; repasemos primero los puntos bÃ¡sicos.
+		AI_Output			(self, other,"Sld_700_Lee_ZWEIHAND1_Info_08_03"); //MantÃ©n la espada en una posiciÃ³n horizontal. Para atacar a tu oponente con un arma tan pesada vas a necesitar describir un gran arco.
+		AI_Output			(self, other,"Sld_700_Lee_ZWEIHAND1_Info_08_04"); //Levanta el brazo y bÃ¡jalo en lÃ­nea recta. Normalmente basta con eso para derribar al oponente.
 		AI_Output			(self, other,"Sld_700_Lee_ZWEIHAND1_Info_08_05"); //Utiliza la inercia del arma para volver a levantarla.
 		AI_Output			(self, other,"Sld_700_Lee_ZWEIHAND1_Info_08_06"); //Las espadas de dos manos son ideales para coordinar mandobles que mantengan a los oponentes a distancia.
-		AI_Output			(self, other,"Sld_700_Lee_ZWEIHAND1_Info_08_07"); //Con eso debería bastar para empezar. Practica un poco.
+		AI_Output			(self, other,"Sld_700_Lee_ZWEIHAND1_Info_08_07"); //Con eso deberÃ­a bastar para empezar. Practica un poco.
 	
 		Sld_700_Lee_ZWEIHAND1.permanent = 0;
 	};
@@ -618,7 +618,7 @@ FUNC int  Sld_700_Lee_ZWEIHAND2_Condition()
 	if
 		( 
 			(Npc_GetTalentSkill  (hero,NPC_TALENT_2H) == 1)
-			&& ( (Npc_GetTrueGuild    (hero) == GIL_SLD) ||  ((Npc_GetTrueGuild(hero)==GIL_KDW) && (Kapitel >= 4))  )	//jetzt auch als Wassermagier im 4. Kapitel möglich ***BJÖRN***
+			&& ( (Npc_GetTrueGuild    (hero) == GIL_SLD) ||  ((Npc_GetTrueGuild(hero)==GIL_KDW) && (Kapitel >= 4))  )	//jetzt auch als Wassermagier im 4. Kapitel mÃ¶glich ***BJÃ–RN***
 		)
 	{
 		return TRUE;
@@ -627,18 +627,18 @@ FUNC int  Sld_700_Lee_ZWEIHAND2_Condition()
 };
 FUNC void  Sld_700_Lee_ZWEIHAND2_Info()
 {
-	AI_Output			(other, self,"Sld_700_Lee_ZWEIHAND2_Info_15_01"); //Quiero aprender más acerca de cómo luchar con una espada de dos manos.
+	AI_Output			(other, self,"Sld_700_Lee_ZWEIHAND2_Info_15_01"); //Quiero aprender mÃ¡s acerca de cÃ³mo luchar con una espada de dos manos.
 	
 	if (B_GiveSkill(other,NPC_TALENT_2H , 2, LPCOST_TALENT_2H_2))
 	{
-		AI_Output			(self, other,"Sld_700_Lee_ZWEIHAND2_Info_08_02"); //Lo primero que necesitas hacer es cambiar tu postura básica. Levanta la espada y ponla vertical, agarra el pomo firmemente con las dos manos y sostenla a un lado de tu cuerpo.
-		AI_Output			(self, other,"Sld_700_Lee_ZWEIHAND2_Info_08_03"); //Bájala con rapidez y haz girar la espada sobre tu hombro. Ahora tienes la oportunidad de dar un mandoble rápido hacia la derecha.
-		AI_Output			(self, other,"Sld_700_Lee_ZWEIHAND2_Info_08_04"); //TU oponente no tendrá ninguna posibilidad de atacarte.
+		AI_Output			(self, other,"Sld_700_Lee_ZWEIHAND2_Info_08_02"); //Lo primero que necesitas hacer es cambiar tu postura bÃ¡sica. Levanta la espada y ponla vertical, agarra el pomo firmemente con las dos manos y sostenla a un lado de tu cuerpo.
+		AI_Output			(self, other,"Sld_700_Lee_ZWEIHAND2_Info_08_03"); //BÃ¡jala con rapidez y haz girar la espada sobre tu hombro. Ahora tienes la oportunidad de dar un mandoble rÃ¡pido hacia la derecha.
+		AI_Output			(self, other,"Sld_700_Lee_ZWEIHAND2_Info_08_04"); //TU oponente no tendrÃ¡ ninguna posibilidad de atacarte.
 		AI_Output			(self, other,"Sld_700_Lee_ZWEIHAND2_Info_08_05"); //O baja la espada desde la izquierda en un mandoble hacia delante para obligar a tu enemigo a retroceder.
 		AI_Output			(self, other,"Sld_700_Lee_ZWEIHAND2_Info_08_06"); //Da un giro para imprimir a tu siguiente ataque la inercia suficiente para abatir a tu oponente.
 		AI_Output			(self, other,"Sld_700_Lee_ZWEIHAND2_Info_08_07"); //Si con eso no ha bastado, utiliza el impulso restante para volver a blandir la espada.
 		AI_Output			(self, other,"Sld_700_Lee_ZWEIHAND2_Info_08_08"); //Cuando hayas acabado tu ataque, bloquea a tu oponente y espera la oportunidad de volver a atacar.
-		AI_Output			(self, other,"Sld_700_Lee_ZWEIHAND2_Info_08_09"); //La clave del éxito es variar tus posturas y cambiar de posición.
+		AI_Output			(self, other,"Sld_700_Lee_ZWEIHAND2_Info_08_09"); //La clave del Ã©xito es variar tus posturas y cambiar de posiciÃ³n.
 	
 		Sld_700_Lee_ZWEIHAND2.permanent = 0;
 	};

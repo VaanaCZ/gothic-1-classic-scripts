@@ -48,23 +48,23 @@ FUNC int  DIA_Harlok_FetchHarlok_Condition()
 FUNC VOID  DIA_Harlok_FetchHarlok_Info()
 {
 	AI_Output (other, self,"DIA_Harlok_FetchHarlok_15_00"); //Vengo de parte de Ghorim.
-	AI_Output (self, other,"DIA_Harlok_FetchHarlok_01_01"); //¿Cómo?
+	AI_Output (self, other,"DIA_Harlok_FetchHarlok_01_01"); //Â¿CÃ³mo?
 	Info_ClearChoices 	(DIA_Harlok_FetchHarlok);
 	Info_Addchoice 		(DIA_Harlok_FetchHarlok,DIALOG_BACK															,DIA_Harlok_FetchHarlok_BACK);
-	Info_Addchoice 		(DIA_Harlok_FetchHarlok,"Mueve tu culo hasta las trituradoras de hierba o te la cargarás.",DIA_Harlok_FetchHarlok_OrElse);
-	Info_Addchoice 		(DIA_Harlok_FetchHarlok,"Estoy aquí para recordarte que tienes que sustituirle.",DIA_Harlok_FetchHarlok_Please);
+	Info_Addchoice 		(DIA_Harlok_FetchHarlok,"Mueve tu culo hasta las trituradoras de hierba o te la cargarÃ¡s.",DIA_Harlok_FetchHarlok_OrElse);
+	Info_Addchoice 		(DIA_Harlok_FetchHarlok,"Estoy aquÃ­ para recordarte que tienes que sustituirle.",DIA_Harlok_FetchHarlok_Please);
 };
 
 func int DIA_Harlok_FetchHarlok_Please()
 {
 	AI_Output (other, self,"DIA_Harlok_FetchHarlok_Please_15_00"); //He venido a recordarte que tienes que sustituirle.
-	AI_Output (self, other,"DIA_Harlok_FetchHarlok_Please_01_01"); //Muy amable por tu parte. Vuelve a recordármelo cuando acabe de dormir, ¿vale?
+	AI_Output (self, other,"DIA_Harlok_FetchHarlok_Please_01_01"); //Muy amable por tu parte. Vuelve a recordÃ¡rmelo cuando acabe de dormir, Â¿vale?
 };
 
 func int DIA_Harlok_FetchHarlok_OrElse()
 {
 	AI_Output (other, self,"DIA_Harlok_FetchHarlok_OrElse_15_00"); //Mueve el culo y vete a las trituradoras de hierba o te la vas a cargar.
-	AI_Output (self, other,"DIA_Harlok_FetchHarlok_OrElse_01_01"); //¡Intenta siquiera volver a jugar conmigo, mamón!
+	AI_Output (self, other,"DIA_Harlok_FetchHarlok_OrElse_01_01"); //Â¡Intenta siquiera volver a jugar conmigo, mamÃ³n!
 	
 	AI_StopProcessInfos(self);
 };
@@ -77,7 +77,7 @@ func int DIA_Harlok_FetchHarlok_BACK()
 
 
 // **************************************************
-//				Harlok NOCHMAL überzeugen
+//				Harlok NOCHMAL Ã¼berzeugen
 // **************************************************
 
 instance  DIA_Harlok_HarlokAgain (C_INFO)
@@ -87,7 +87,7 @@ instance  DIA_Harlok_HarlokAgain (C_INFO)
 	condition	= DIA_Harlok_HarlokAgain_Condition;
 	information	= DIA_Harlok_HarlokAgain_Info;
 	permanent	= 0;
-	description	= "¡Quería recordarte que ocuparas el lugar de tu amigo ahora mismo!";
+	description	= "Â¡QuerÃ­a recordarte que ocuparas el lugar de tu amigo ahora mismo!";
 };                       
 
 FUNC int  DIA_Harlok_HarlokAgain_Condition()
@@ -100,10 +100,10 @@ FUNC int  DIA_Harlok_HarlokAgain_Condition()
 
 FUNC VOID  DIA_Harlok_HarlokAgain_Info()
 {
-	AI_Output (other, self,"DIA_Harlok_HarlokAgain_15_00"); //¡Sólo quería recordarte que tienes que relevar a tu colega!
-	AI_Output (self, other,"DIA_Harlok_HarlokAgain_01_01"); //¡Oye, te he dicho que te vayas por ahí!
+	AI_Output (other, self,"DIA_Harlok_HarlokAgain_15_00"); //Â¡SÃ³lo querÃ­a recordarte que tienes que relevar a tu colega!
+	AI_Output (self, other,"DIA_Harlok_HarlokAgain_01_01"); //Â¡Oye, te he dicho que te vayas por ahÃ­!
 
-	B_LogEntry(CH1_GhorimsRelief,"Parece que Harlok no sólo es vago, sino también testarudo. Quizá deba darle un empujoncito...");
+	B_LogEntry(CH1_GhorimsRelief,"Parece que Harlok no sÃ³lo es vago, sino tambiÃ©n testarudo. QuizÃ¡ deba darle un empujoncito...");
 };
 
 
@@ -118,7 +118,7 @@ instance  DIA_Harlok_SendHarlok (C_INFO)
 	condition	= DIA_Harlok_SendHarlok_Condition;
 	information	= DIA_Harlok_SendHarlok_Info;
 	permanent	= 0;
-	description	= "Bueno, ¿te apetece dar un respiro a tu amigo?";
+	description	= "Bueno, Â¿te apetece dar un respiro a tu amigo?";
 };                       
 
 FUNC int  DIA_Harlok_SendHarlok_Condition()
@@ -131,12 +131,12 @@ FUNC int  DIA_Harlok_SendHarlok_Condition()
 
 FUNC VOID  DIA_Harlok_SendHarlok_Info()
 {
-	AI_Output	(other, self,"DIA_Harlok_SendHarlok_15_00"); //Bueno, ¿te sientes ahora con ánimo de darle un descanso a tu colega?
-	AI_Output	(self, other,"DIA_Harlok_SendHarlok_01_01"); //¡Maldito incordio de tío! ¿Por qué metes las narices en mis asuntos?
-	AI_Output	(other, self,"DIA_Harlok_SendHarlok_15_02"); //Quiero verte haciendo puré.
-	AI_Output	(self, other,"DIA_Harlok_SendHarlok_01_03"); //Vale, vale, ya voy... ¡mamón!
+	AI_Output	(other, self,"DIA_Harlok_SendHarlok_15_00"); //Bueno, Â¿te sientes ahora con Ã¡nimo de darle un descanso a tu colega?
+	AI_Output	(self, other,"DIA_Harlok_SendHarlok_01_01"); //Â¡Maldito incordio de tÃ­o! Â¿Por quÃ© metes las narices en mis asuntos?
+	AI_Output	(other, self,"DIA_Harlok_SendHarlok_15_02"); //Quiero verte haciendo purÃ©.
+	AI_Output	(self, other,"DIA_Harlok_SendHarlok_01_03"); //Vale, vale, ya voy... Â¡mamÃ³n!
 
-	B_LogEntry	(CH1_GhorimsRelief,"Harlok ha captado por fin el mensaje. Ahora sustituirá a Ghorim.");
+	B_LogEntry	(CH1_GhorimsRelief,"Harlok ha captado por fin el mensaje. Ahora sustituirÃ¡ a Ghorim.");
 	B_GiveXP	(XP_SentHarlok);
 	
 	Npc_ExchangeRoutine(self,"START");
@@ -172,7 +172,7 @@ FUNC int  DIA_Harlok_Angry_Condition()
 
 FUNC VOID  DIA_Harlok_Angry_Info()
 {
-	AI_Output (self, other,"DIA_Harlok_Angry_01_00"); //¡Déjame en paz! Ya voy...
+	AI_Output (self, other,"DIA_Harlok_Angry_01_00"); //Â¡DÃ©jame en paz! Ya voy...
 
 	AI_StopProcessInfos	(self);
 };

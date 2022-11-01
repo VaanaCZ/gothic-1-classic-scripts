@@ -52,7 +52,7 @@ instance  Stt_302_Viper_MELT (C_INFO)
 	information		= Stt_302_Viper_MELT_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Tengo entendido que sólo fundís parte del mineral."; 
+	description		= "Tengo entendido que sÃ³lo fundÃ­s parte del mineral."; 
 };
 
 FUNC int  Stt_302_Viper_MELT_Condition()
@@ -65,11 +65,11 @@ FUNC int  Stt_302_Viper_MELT_Condition()
 };
 FUNC void  Stt_302_Viper_MELT_Info()
 {
-	AI_Output (other, self,"Stt_302_Viper_MELT_Info_15_01"); //He oído que sólo fundes parte del mineral.
-	AI_Output (self, other,"Stt_302_Viper_MELT_Info_11_02"); //Hace algún tiempo solíamos fundirlo todo. Pero Gómez y los magos no estaban nada contentos al respecto.
-	AI_Output (self, other,"Stt_302_Viper_MELT_Info_11_03"); //Se quedaron aquí semanas, examinando el mineral y todo lo demás.
-	AI_Output (self, other,"Stt_302_Viper_MELT_Info_11_04"); //Anduvieron perdiendo el tiempo y metiendo sus nobles narices en cosas de las que no tenían ni idea.
-	AI_Output (self, other,"Stt_302_Viper_MELT_Info_11_05"); //Al final sólo fundimos parte del mineral. Los magos nunca volvieron.
+	AI_Output (other, self,"Stt_302_Viper_MELT_Info_15_01"); //He oÃ­do que sÃ³lo fundes parte del mineral.
+	AI_Output (self, other,"Stt_302_Viper_MELT_Info_11_02"); //Hace algÃºn tiempo solÃ­amos fundirlo todo. Pero GÃ³mez y los magos no estaban nada contentos al respecto.
+	AI_Output (self, other,"Stt_302_Viper_MELT_Info_11_03"); //Se quedaron aquÃ­ semanas, examinando el mineral y todo lo demÃ¡s.
+	AI_Output (self, other,"Stt_302_Viper_MELT_Info_11_04"); //Anduvieron perdiendo el tiempo y metiendo sus nobles narices en cosas de las que no tenÃ­an ni idea.
+	AI_Output (self, other,"Stt_302_Viper_MELT_Info_11_05"); //Al final sÃ³lo fundimos parte del mineral. Los magos nunca volvieron.
 };
 // *****************************  ****************************************//
 instance  Stt_302_Viper_BUY (C_INFO)
@@ -79,7 +79,7 @@ instance  Stt_302_Viper_BUY (C_INFO)
 	information		= Stt_302_Viper_BUY_Info;
 	important		= 0;
 	permanent		= 1;
-	description		= "¿Puedes darme mineral?"; 
+	description		= "Â¿Puedes darme mineral?"; 
 	trade           = 1;
 };
 
@@ -93,7 +93,7 @@ FUNC int  Stt_302_Viper_BUY_Condition()
 };
 FUNC void  Stt_302_Viper_BUY_Info()
 {
-	AI_Output (other, self,"Stt_302_Viper_BUY_Info_15_01"); //¿Puedes darme algo de mineral?
-	AI_Output (self, other,"Stt_302_Viper_BUY_Info_11_02"); //Si tú puedes darme algo a cambio.
+	AI_Output (other, self,"Stt_302_Viper_BUY_Info_15_01"); //Â¿Puedes darme algo de mineral?
+	AI_Output (self, other,"Stt_302_Viper_BUY_Info_11_02"); //Si tÃº puedes darme algo a cambio.
 };
 

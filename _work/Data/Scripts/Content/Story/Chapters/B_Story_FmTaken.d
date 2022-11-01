@@ -2,8 +2,8 @@
 //##
 //##							KAPITEL 4
 //##							=========
-//##	Söldner, Banditen und Schürfer der Freien Mine werden
-//##	getötet und beraubt.
+//##	SÃ¶ldner, Banditen und SchÃ¼rfer der Freien Mine werden
+//##	getÃ¶tet und beraubt.
 //##	Drei Gardisten bewachen jetzt den Eingang zur Mine.						
 //##
 //#####################################################################
@@ -13,7 +13,7 @@ func void B_Story_FMTaken()
 	var C_NPC fighter;	fighter = Hlp_GetNpc(PC_FIGHTER);
 	Npc_ExchangeRoutine(fighter, "NCREPORT");
 
-	//-------- Besatzung des Kessels töten --------
+	//-------- Besatzung des Kessels tÃ¶ten --------
 	B_KillNpc	(SLD_750_Soeldner);
 	B_KillNpc	(SLD_751_Soeldner);
 	B_KillNpc	(SLD_752_Okyl);
@@ -50,12 +50,12 @@ func void B_Story_FMTaken()
 	B_KillNpc	(ORG_891_Organisator);
 	B_KillNpc	(ORG_892_Organisator);
 		
-	//-------- Gardisten-Eroberer einfügen --------
+	//-------- Gardisten-Eroberer einfÃ¼gen --------
 	Wld_InsertNpc		(Grd_283_Gardist,	"FMC_ENTRANCE");	//FMC-Guard(Mineneingang)			
 	Wld_InsertNpc		(Grd_285_Gardist,	"FMC_ENTRANCE");	//FMC-Guard(Mineneingang)	
 	B_ExchangeRoutine	(Grd_201_Jackal,	"FMTaken");			//FMC-Guard(Mineneingang)
 
-	//-------- Tor zur Alten Mine im Stundentakt auf Verschluß checken! --------
+	//-------- Tor zur Alten Mine im Stundentakt auf VerschluÃŸ checken! --------
 	//B_ExchangeRoutine	(Grd_250_Gardist,	"FMTaken");
 	Wld_SetObjectRoutine		(0,00,"EVT_AM_LOB_GATE_BIG",1);
 	Wld_SetObjectRoutine		(1,00,"EVT_AM_LOB_GATE_BIG",1);
@@ -82,22 +82,22 @@ func void B_Story_FMTaken()
 	Wld_SetObjectRoutine		(22,00,"EVT_AM_LOB_GATE_BIG",1);
 	Wld_SetObjectRoutine		(23,00,"EVT_AM_LOB_GATE_BIG",1);
 
-	//-------- Tagebucheinträge --------
+	//-------- TagebucheintrÃ¤ge --------
 	if (Npc_KnowsInfo(hero, Info_Milten_OCWARN))
 	{
-		B_LogEntry	(CH4_Firemages,"La verdad es que Diego ha podido contarme más acerca de los acontecimientos en el Campamento Viejo.");
+		B_LogEntry	(CH4_Firemages,"La verdad es que Diego ha podido contarme mÃ¡s acerca de los acontecimientos en el Campamento Viejo.");
 	}
 	else
 	{
 		B_LogEntry	(CH4_Firemages,"Diego me ha interceptado en la entrada posterior del Campamento Viejo y avisado de los graves incidentes que acababan de tener lugar.");
 	};
-	B_LogEntry		(CH4_Firemages,"Tras el derrumbe de la Vieja Mina, Gómez ordenó a sus hombres que atacaran la Mina Libre del Campamento Nuevo. Cuando Corristo y sus Magos del Fuego se opusieron a su plan, fueron asesinados por los hombres de Gómez.");
+	B_LogEntry		(CH4_Firemages,"Tras el derrumbe de la Vieja Mina, GÃ³mez ordenÃ³ a sus hombres que atacaran la Mina Libre del Campamento Nuevo. Cuando Corristo y sus Magos del Fuego se opusieron a su plan, fueron asesinados por los hombres de GÃ³mez.");
 	B_LogEntry		(CH4_Firemages,"Debo avisar al Campamento Nuevo lo antes posible e informar a Saturas acerca del incidente. Espero no llegar demasiado tarde.");
 	
 	if (Scorpio_Exile == FALSE)
 	{
 		Log_CreateTopic (GE_TraderOW,LOG_NOTE);
-		B_LogEntry		(GE_TraderOW,"Scorpio se ha marchado del Campamento Viejo y ahora está con Cavalorn en el refugio de caza que hay entre los Campamentos Viejo y Nuevo.");
+		B_LogEntry		(GE_TraderOW,"Scorpio se ha marchado del Campamento Viejo y ahora estÃ¡ con Cavalorn en el refugio de caza que hay entre los Campamentos Viejo y Nuevo.");
 		Scorpio_Exile = TRUE;
 	};
 	//-------- globale Variable setzen --------

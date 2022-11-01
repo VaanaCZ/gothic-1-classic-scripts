@@ -35,7 +35,7 @@ instance  DIA_Skip_First (C_INFO)
 	condition	=  DIA_Skip_First_Condition;
 	information	=  DIA_Skip_First_Info;
 	permanent	=  0;
-	description = "¿Qué haces aquí?";
+	description = "Â¿QuÃ© haces aquÃ­?";
 };                       
 
 FUNC int  DIA_Skip_First_Condition()
@@ -48,29 +48,29 @@ FUNC int  DIA_Skip_First_Condition()
 
 FUNC VOID  DIA_Skip_First_Info()
 {
-	AI_Output (other, self,"DIA_Skip_First_15_00"); //¿Qué haces aquí?
+	AI_Output (other, self,"DIA_Skip_First_15_00"); //Â¿QuÃ© haces aquÃ­?
 	AI_Output (self, other,"DIA_Skip_First_12_01"); //Me ocupo de las armas de los guardias.
-	AI_Output (other, self,"DIA_Skip_First_15_02"); //¿Vendes armas?
-	AI_Output (self, other,"DIA_Skip_First_12_03"); //Sólo a Gómez y a sus hombres.
+	AI_Output (other, self,"DIA_Skip_First_15_02"); //Â¿Vendes armas?
+	AI_Output (self, other,"DIA_Skip_First_12_03"); //SÃ³lo a GÃ³mez y a sus hombres.
 
 	if	!Npc_KnowsInfo(hero, DIA_Raven_Equipment)
 	{
 		Log_CreateTopic	(GE_TraderOC,	LOG_NOTE);
-		B_LogEntry		(GE_TraderOC,"El guardia Skip del patio posterior vende ARMAS. Pero sólo a los hombres de Gómez.");
+		B_LogEntry		(GE_TraderOC,"El guardia Skip del patio posterior vende ARMAS. Pero sÃ³lo a los hombres de GÃ³mez.");
 	};
 	
 	Info_ClearChoices 	(DIA_Skip_First);
 	Info_Addchoice 		(DIA_Skip_First,"Entiendo. Hasta luego.",DIA_Skip_First_BACK);
 	Info_Addchoice 		(DIA_Skip_First,"Me manda Thorus. Me dijo que consiguiera un arma.",DIA_Skip_First_Thorus);
-	Info_Addchoice 		(DIA_Skip_First,"Me manda Gómez. Me dijo que me darías algo de equipo.",DIA_Skip_First_Gomez);
+	Info_Addchoice 		(DIA_Skip_First,"Me manda GÃ³mez. Me dijo que me darÃ­as algo de equipo.",DIA_Skip_First_Gomez);
 		
 };
 
 func void DIA_Skip_First_Gomez()
 {
-	AI_Output (other, self,"DIA_Skip_First_Gomez_15_00"); //Me manda Gómez. Me dijo que me darías algo de equipo.
-	AI_Output (self, other,"DIA_Skip_First_Gomez_12_01"); //Lo normal, ¿eh? Una armadura nueva y la mejor arma en existencia.
-	AI_Output (self, other,"DIA_Skip_First_Gomez_12_02"); //¡Largo de aquí antes de que vaya a por ti!
+	AI_Output (other, self,"DIA_Skip_First_Gomez_15_00"); //Me manda GÃ³mez. Me dijo que me darÃ­as algo de equipo.
+	AI_Output (self, other,"DIA_Skip_First_Gomez_12_01"); //Lo normal, Â¿eh? Una armadura nueva y la mejor arma en existencia.
+	AI_Output (self, other,"DIA_Skip_First_Gomez_12_02"); //Â¡Largo de aquÃ­ antes de que vaya a por ti!
 	Info_ClearChoices 	(DIA_Skip_First);
 	AI_StopProcessInfos	(self);
 };
@@ -78,11 +78,11 @@ func void DIA_Skip_First_Gomez()
 func void DIA_Skip_First_Thorus()
 {
 	AI_Output (other, self,"DIA_Skip_First_Thorus_15_00"); //Me manda Thorus. Me dijo que consiguiera un arma.
-	AI_Output (self, other,"DIA_Skip_First_Thorus_12_01"); //¿Oh?
+	AI_Output (self, other,"DIA_Skip_First_Thorus_12_01"); //Â¿Oh?
 	Info_ClearChoices 	(DIA_Skip_First);
-	Info_Addchoice 		(DIA_Skip_First,"¿Por qué no vas y se lo preguntas?",DIA_Skip_First_Thorus_AskHim);
+	Info_Addchoice 		(DIA_Skip_First,"Â¿Por quÃ© no vas y se lo preguntas?",DIA_Skip_First_Thorus_AskHim);
 	Info_Addchoice 		(DIA_Skip_First,"Me dijo que te diera una buena patada en el culo si no me dabas un arma.",DIA_Skip_First_Thorus_KickAss);
-	Info_Addchoice 		(DIA_Skip_First,"Quiere que haga algo por él que ninguno de vosotros podéis, ¿entiendes?",DIA_Skip_First_Thorus_Stranger);
+	Info_Addchoice 		(DIA_Skip_First,"Quiere que haga algo por Ã©l que ninguno de vosotros podÃ©is, Â¿entiendes?",DIA_Skip_First_Thorus_Stranger);
 };
 
 func void DIA_Skip_First_BACK()
@@ -94,26 +94,26 @@ func void DIA_Skip_First_BACK()
 //------------------------------------------------------
 func void DIA_Skip_First_Thorus_Stranger()
 {
-	AI_Output (other, self,"DIA_Skip_First_Thorus_Stranger_15_00"); //Quiere que haga algo por él que ninguno de vosotros podéis hacer, ¿entiendes?
-	AI_Output (self, other,"DIA_Skip_First_Thorus_Stranger_12_01"); //¿Ah sí? Y supongo que no tiene nada mejor que hacer que enviarte a mí, ¿no?
+	AI_Output (other, self,"DIA_Skip_First_Thorus_Stranger_15_00"); //Quiere que haga algo por Ã©l que ninguno de vosotros podÃ©is hacer, Â¿entiendes?
+	AI_Output (self, other,"DIA_Skip_First_Thorus_Stranger_12_01"); //Â¿Ah sÃ­? Y supongo que no tiene nada mejor que hacer que enviarte a mÃ­, Â¿no?
 	Info_ClearChoices 	(DIA_Skip_First);
-	Info_Addchoice 		(DIA_Skip_First,"¿Por qué no vas y se lo preguntas?",DIA_Skip_First_Thorus_AskHim);
+	Info_Addchoice 		(DIA_Skip_First,"Â¿Por quÃ© no vas y se lo preguntas?",DIA_Skip_First_Thorus_AskHim);
 	Info_Addchoice 		(DIA_Skip_First,"Me dijo que te diera una buena patada en el culo si no me dabas un arma.",DIA_Skip_First_Thorus_KickAssAGAIN);
 };
 
 func void DIA_Skip_First_Thorus_KickAss()
 {
 	AI_Output (other, self,"DIA_Skip_First_Thorus_KickAss_15_00"); //Me dijo que te diera una buena patada en el culo si no me dabas un arma.
-	AI_Output (self, other,"DIA_Skip_First_Thorus_KickAss_12_01"); //¿Ah sí? Desde mi punto de vista, como no te largues rápidamente de aquí, yo voy a ser el que te pegue la patada en el culo!
+	AI_Output (self, other,"DIA_Skip_First_Thorus_KickAss_12_01"); //Â¿Ah sÃ­? Desde mi punto de vista, como no te largues rÃ¡pidamente de aquÃ­, yo voy a ser el que te pegue la patada en el culo!
 	Info_ClearChoices 	(DIA_Skip_First);
 	AI_StopProcessInfos	(self);
 };
 
 func void DIA_Skip_First_Thorus_AskHim()
 {
-	AI_Output (other, self,"DIA_Skip_First_Thorus_AskHim_15_00"); //¿Por qué no vas y se lo preguntas?
-	AI_Output (self, other,"DIA_Skip_First_Thorus_AskHim_12_01"); //Ya lo creo que lo haré. Pero ahora no. Apuesto a que le interesa escuchar lo que cuentas de él.
-	AI_Output (self, other,"DIA_Skip_First_Thorus_AskHim_12_02"); //¡No sé quién te ha dejado entrar, pero será mejor que utilices el camino más corto para salir!
+	AI_Output (other, self,"DIA_Skip_First_Thorus_AskHim_15_00"); //Â¿Por quÃ© no vas y se lo preguntas?
+	AI_Output (self, other,"DIA_Skip_First_Thorus_AskHim_12_01"); //Ya lo creo que lo harÃ©. Pero ahora no. Apuesto a que le interesa escuchar lo que cuentas de Ã©l.
+	AI_Output (self, other,"DIA_Skip_First_Thorus_AskHim_12_02"); //Â¡No sÃ© quiÃ©n te ha dejado entrar, pero serÃ¡ mejor que utilices el camino mÃ¡s corto para salir!
 	Info_ClearChoices 	(DIA_Skip_First);
 	AI_StopProcessInfos	(self);
 };
@@ -121,7 +121,7 @@ func void DIA_Skip_First_Thorus_AskHim()
 func void DIA_Skip_First_Thorus_KickAssAGAIN()
 {
 	AI_Output (other, self,"DIA_Skip_First_Thorus_KickAssAGAIN_15_00"); //Me dijo que te diera una buena patada en el culo si no me dabas un arma.
-	AI_Output (self, other,"DIA_Skip_First_Thorus_KickAssAGAIN_12_01"); //De acuerdo, tío; ¿qué quieres?
+	AI_Output (self, other,"DIA_Skip_First_Thorus_KickAssAGAIN_12_01"); //De acuerdo, tÃ­o; Â¿quÃ© quieres?
 	Info_ClearChoices 	(DIA_Skip_First);
 	Skip_TradeFree = TRUE;
 };
@@ -137,7 +137,7 @@ instance  DIA_Skip_VERPATZT (C_INFO)
 	condition	=  DIA_Skip_VERPATZT_Condition;
 	information	=  DIA_Skip_VERPATZT_Info;
 	permanent	=  1;
-	description = "Se me ocurrió volver a pedirte ese equipo...";
+	description = "Se me ocurriÃ³ volver a pedirte ese equipo...";
 };                       
 
 FUNC int  DIA_Skip_VERPATZT_Condition()
@@ -153,8 +153,8 @@ FUNC int  DIA_Skip_VERPATZT_Condition()
 
 FUNC VOID  DIA_Skip_VERPATZT_Info()
 {
-	AI_Output (other, self,"DIA_Skip_VERPATZT_15_00"); //Se me ocurrió volver a pedirte ese equipo...
-	AI_Output (self, other,"DIA_Skip_VERPATZT_12_01"); //¡Lárgate!
+	AI_Output (other, self,"DIA_Skip_VERPATZT_15_00"); //Se me ocurriÃ³ volver a pedirte ese equipo...
+	AI_Output (self, other,"DIA_Skip_VERPATZT_12_01"); //Â¡LÃ¡rgate!
 };
 
 /*------------------------------------------------------------------------
@@ -167,7 +167,7 @@ instance  GRD_211_Skip_TRADE (C_INFO)
 	condition		= GRD_211_Skip_TRADE_Condition;
 	information		= GRD_211_Skip_TRADE_Info;
 	permanent		= 1;
-	description		= "Me apaño con unas cuantas cosillas."; 
+	description		= "Me apaÃ±o con unas cuantas cosillas."; 
 	trade 			= 1;
 };
 
@@ -183,8 +183,8 @@ FUNC int  GRD_211_Skip_TRADE_Condition()
 
 FUNC void  GRD_211_Skip_TRADE_Info()
 {
-	AI_Output (other, self,"GRD_211_Skip_TRADE_Info_15_01"); //Me apaño con unas cuantas cosillas.
-	AI_Output (self, other,"GRD_211_Skip_TRADE_Info_12_02"); //Podría venderte unas cuantas cosillas.
+	AI_Output (other, self,"GRD_211_Skip_TRADE_Info_15_01"); //Me apaÃ±o con unas cuantas cosillas.
+	AI_Output (self, other,"GRD_211_Skip_TRADE_Info_12_02"); //PodrÃ­a venderte unas cuantas cosillas.
 };  
 
 /*------------------------------------------------------------------------
@@ -209,5 +209,5 @@ FUNC int  GRD_211_Skip_WELCOME_Condition()
 };
 func void  GRD_211_Skip_WELCOME_Info()
 {
-	AI_Output (self, other,"GRD_211_Skip_WELCOME_Info_12_01"); //Eh, has llegado bastante lejos, teniendo en cuenta que no llevas aquí mucho tiempo.
+	AI_Output (self, other,"GRD_211_Skip_WELCOME_Info_12_01"); //Eh, has llegado bastante lejos, teniendo en cuenta que no llevas aquÃ­ mucho tiempo.
 };

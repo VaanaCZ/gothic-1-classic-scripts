@@ -47,26 +47,26 @@ FUNC int DIA_Scorpio_Hello_Condition()
 
 FUNC VOID DIA_Scorpio_Hello_Info()
 {
-	AI_Output (self, other,"DIA_Scorpio_Hello_13_00"); //¿Quién te ha dejado entrar?
+	AI_Output (self, other,"DIA_Scorpio_Hello_13_00"); //Â¿QuiÃ©n te ha dejado entrar?
 	AI_Output (other, self,"DIA_Scorpio_Hello_15_01"); //Thorus.
-	AI_Output (self, other,"DIA_Scorpio_Hello_13_02"); //¿Y qué crees que estás haciendo?
+	AI_Output (self, other,"DIA_Scorpio_Hello_13_02"); //Â¿Y quÃ© crees que estÃ¡s haciendo?
 
 	Info_ClearChoices 	(DIA_Scorpio_Hello);
-	Info_Addchoice 		(DIA_Scorpio_Hello,"Simplemente quería ver cómo es esto.",DIA_Scorpio_Hello_JustLooking);
+	Info_Addchoice 		(DIA_Scorpio_Hello,"Simplemente querÃ­a ver cÃ³mo es esto.",DIA_Scorpio_Hello_JustLooking);
 	Info_Addchoice 		(DIA_Scorpio_Hello,"Tengo un mensaje para los magos.",DIA_Scorpio_Hello_Mages);
 	if (Kalom_Krautbote == LOG_RUNNING)
 	{
-		Info_Addchoice 		(DIA_Scorpio_Hello,"He traído un poco de hierba para Gómez.",DIA_Scorpio_Hello_Kraut);
+		Info_Addchoice 		(DIA_Scorpio_Hello,"He traÃ­do un poco de hierba para GÃ³mez.",DIA_Scorpio_Hello_Kraut);
 	};
 	if (Npc_KnowsInfo(hero, Info_Thorus_ReadyForGomez))
 	{
-		Info_Addchoice 		(DIA_Scorpio_Hello,"Voy a ver a Gómez. Voy a unirme a vosotros.",DIA_Scorpio_Hello_Join);
+		Info_Addchoice 		(DIA_Scorpio_Hello,"Voy a ver a GÃ³mez. Voy a unirme a vosotros.",DIA_Scorpio_Hello_Join);
 	};
 };
 
 func void DIA_Scorpio_Hello_JustLooking()
 {
-	AI_Output (other, self,"DIA_Scorpio_Hello_JustLooking_15_00"); //Simplemente quería ver cómo es esto.
+	AI_Output (other, self,"DIA_Scorpio_Hello_JustLooking_15_00"); //Simplemente querÃ­a ver cÃ³mo es esto.
 	AI_Output (self, other,"DIA_Scorpio_Hello_JustLooking_13_01"); //Muy gracioso.
 	Info_ClearChoices 	(DIA_Scorpio_Hello);
 };
@@ -74,23 +74,23 @@ func void DIA_Scorpio_Hello_JustLooking()
 func void DIA_Scorpio_Hello_Mages()
 {
 	AI_Output (other, self,"DIA_Scorpio_Hello_Mages_15_00"); //Tengo un mensaje para los magos.
-	AI_Output (self, other,"DIA_Scorpio_Hello_Mages_13_01"); //¿Trabajas para los magos? No quiero tener nada que ver con ellos...
+	AI_Output (self, other,"DIA_Scorpio_Hello_Mages_13_01"); //Â¿Trabajas para los magos? No quiero tener nada que ver con ellos...
 	Info_ClearChoices 	(DIA_Scorpio_Hello);
 };
 
 func void DIA_Scorpio_Hello_Kraut()
 {
-	AI_Output (other, self,"DIA_Scorpio_Hello_Kraut_15_00"); //He traído un poco de hierba para Gómez.
-	AI_Output (self, other,"DIA_Scorpio_Hello_Kraut_13_01"); //Entonces llévala a la casa con dos guardias en su puerta.
+	AI_Output (other, self,"DIA_Scorpio_Hello_Kraut_15_00"); //He traÃ­do un poco de hierba para GÃ³mez.
+	AI_Output (self, other,"DIA_Scorpio_Hello_Kraut_13_01"); //Entonces llÃ©vala a la casa con dos guardias en su puerta.
 	Info_ClearChoices 	(DIA_Scorpio_Hello);
 };
 
 func void DIA_Scorpio_Hello_Join()
 {
-	AI_Output (other, self,"DIA_Scorpio_Hello_Join_15_00"); //Voy a ver a Gómez. Voy a unirme a vosotros.
-	AI_Output (self, other,"DIA_Scorpio_Hello_Join_13_01"); //¿Tú? ¿Qué has hecho por nosotros?
+	AI_Output (other, self,"DIA_Scorpio_Hello_Join_15_00"); //Voy a ver a GÃ³mez. Voy a unirme a vosotros.
+	AI_Output (self, other,"DIA_Scorpio_Hello_Join_13_01"); //Â¿TÃº? Â¿QuÃ© has hecho por nosotros?
 	AI_Output (other, self,"DIA_Scorpio_Hello_Join_15_02"); //Las Sombras estaban muy contentas conmigo.
-	AI_Output (self, other,"DIA_Scorpio_Hello_Join_13_03"); //Aquí nadie quiere oír hablar de las Sombras. Aquí mandamos NOSOTROS.
+	AI_Output (self, other,"DIA_Scorpio_Hello_Join_13_03"); //AquÃ­ nadie quiere oÃ­r hablar de las Sombras. AquÃ­ mandamos NOSOTROS.
 	Info_ClearChoices 	(DIA_Scorpio_Hello);
 };
 
@@ -105,7 +105,7 @@ instance DIA_Scorpio_REFUSETRAIN (C_INFO)
 	condition	= DIA_Scorpio_REFUSETRAIN_Condition;
 	information	= DIA_Scorpio_REFUSETRAIN_Info;
 	permanent	= 1;
-	description = "¿Puedes enseñarme a luchar?";
+	description = "Â¿Puedes enseÃ±arme a luchar?";
 };                       
 
 FUNC int DIA_Scorpio_REFUSETRAIN_Condition()
@@ -118,13 +118,13 @@ FUNC int DIA_Scorpio_REFUSETRAIN_Condition()
 
 FUNC VOID DIA_Scorpio_REFUSETRAIN_Info()
 {
-	AI_Output (other, self,"DIA_Scorpio_REFUSETRAIN_15_00"); //¿Puedes enseñarme a luchar?
-	AI_Output (self, other,"DIA_Scorpio_REFUSETRAIN_13_01"); //Sólo adiestro a los guardias. Hasta que Thorus no te nombre, tendrás que encontrar a otro.
+	AI_Output (other, self,"DIA_Scorpio_REFUSETRAIN_15_00"); //Â¿Puedes enseÃ±arme a luchar?
+	AI_Output (self, other,"DIA_Scorpio_REFUSETRAIN_13_01"); //SÃ³lo adiestro a los guardias. Hasta que Thorus no te nombre, tendrÃ¡s que encontrar a otro.
 	
 };
 
 //*******************************
-//*********°°°°°°°°°°°***********
+//*********Â°Â°Â°Â°Â°Â°Â°Â°Â°Â°Â°***********
 //********* KAPITEL 3 ***********
 //*********...........***********
 //*******************************
@@ -152,7 +152,7 @@ FUNC int  GRD_205_Scorpio_WELCOME_Condition()
 func void  GRD_205_Scorpio_WELCOME_Info()
 {
 	
-	AI_Output (self, other,"GRD_205_Scorpio_WELCOME_Info_13_01"); //¡Unirte a nosotros ha sido la mejor decisión que has tomado en tu vida!
+	AI_Output (self, other,"GRD_205_Scorpio_WELCOME_Info_13_01"); //Â¡Unirte a nosotros ha sido la mejor decisiÃ³n que has tomado en tu vida!
 	AI_StopProcessInfos	( self );
 };
 
@@ -167,7 +167,7 @@ instance  GRD_205_Scorpio_CROSSBOW (C_INFO)
 	information		= GRD_205_Scorpio_CROSSBOW_Info;
 	important		= 0;
 	permanent		= 1;
-	description		= "¿Me adiestrarás?"; 
+	description		= "Â¿Me adiestrarÃ¡s?"; 
 };
 
 FUNC int  GRD_205_Scorpio_CROSSBOW_Condition()
@@ -182,20 +182,20 @@ FUNC int  GRD_205_Scorpio_CROSSBOW_Condition()
 };
 FUNC void  GRD_205_Scorpio_CROSSBOW_Info()
 {
-	AI_Output (other, self,"GRD_205_Scorpio_CROSSBOW_Info_15_01"); //¿Me adiestrarás?
-	AI_Output (self, other,"GRD_205_Scorpio_CROSSBOW_Info_13_02"); //Si tienes suficiente mineral, te enseñaré a manejar la ballesta. Págame 200 pepitas.
+	AI_Output (other, self,"GRD_205_Scorpio_CROSSBOW_Info_15_01"); //Â¿Me adiestrarÃ¡s?
+	AI_Output (self, other,"GRD_205_Scorpio_CROSSBOW_Info_13_02"); //Si tienes suficiente mineral, te enseÃ±arÃ© a manejar la ballesta. PÃ¡game 200 pepitas.
 	if (log_scorpiocrossbow == FALSE)
 	&& (Kapitel <= 4)
 	{
 		Log_CreateTopic   	(GE_TeacherOC,LOG_NOTE);
-		B_LogEntry			(GE_TeacherOC,"Scorpio puede enseñarme a usar una BALLESTA.");
+		B_LogEntry			(GE_TeacherOC,"Scorpio puede enseÃ±arme a usar una BALLESTA.");
 		log_scorpiocrossbow = TRUE;
 	}
 	else if (log_scorpiocrossbow == FALSE)
 	&& (Kapitel > 4)
 	{
 		Log_CreateTopic   	(GE_TeacherOW,LOG_NOTE);
-		B_LogEntry			(GE_TeacherOW,"Scorpio puede enseñarme a usar una BALLESTA.");
+		B_LogEntry			(GE_TeacherOW,"Scorpio puede enseÃ±arme a usar una BALLESTA.");
 		log_scorpiocrossbow = TRUE;
 	};
 	Info_ClearChoices (GRD_205_Scorpio_CROSSBOW);
@@ -210,23 +210,23 @@ func void GRD_205_Scorpio_CROSSBOW_BACK()
 
 func void GRD_205_Scorpio_CROSSBOW_OK()
 {
-	AI_Output (other, self,"GRD_205_Scorpio_CROSSBOW_OK_15_01"); //Trato hecho. Enséñame a manejar la ballesta.
+	AI_Output (other, self,"GRD_205_Scorpio_CROSSBOW_OK_15_01"); //Trato hecho. EnsÃ©Ã±ame a manejar la ballesta.
 	if (Npc_HasItems (hero,ItMiNugget)>= 200)
 	{
 		if (B_GiveSkill(other,NPC_TALENT_CROSSBOW , 1, LPCOST_TALENT_CROSSBOW_1))
 		{
 			AI_Output (self, other,"GRD_205_Scorpio_CROSSBOW_OK_13_02"); //De acuerdo, empecemos.
-			AI_Output (self, other,"GRD_205_Scorpio_CROSSBOW_OK_13_03"); //Agarra el mango y apóyalo fuerte en tu hombro. Eso la estabilizará al apuntar.
-			AI_Output (self, other,"GRD_205_Scorpio_CROSSBOW_OK_13_04"); //Durante los primeros días, te va a parecer que se te cae el hombro.
-			AI_Output (self, other,"GRD_205_Scorpio_CROSSBOW_OK_13_05"); //¡Pero después de una semana, lo tendrás como una piedra!
-			AI_Output (self, other,"GRD_205_Scorpio_CROSSBOW_OK_13_06"); //Apunta al objetivo y tira del virote. Sobre el virote se ejerce más fuerza que sobre una flecha en un arco largo, con lo que va a causar más daño.
+			AI_Output (self, other,"GRD_205_Scorpio_CROSSBOW_OK_13_03"); //Agarra el mango y apÃ³yalo fuerte en tu hombro. Eso la estabilizarÃ¡ al apuntar.
+			AI_Output (self, other,"GRD_205_Scorpio_CROSSBOW_OK_13_04"); //Durante los primeros dÃ­as, te va a parecer que se te cae el hombro.
+			AI_Output (self, other,"GRD_205_Scorpio_CROSSBOW_OK_13_05"); //Â¡Pero despuÃ©s de una semana, lo tendrÃ¡s como una piedra!
+			AI_Output (self, other,"GRD_205_Scorpio_CROSSBOW_OK_13_06"); //Apunta al objetivo y tira del virote. Sobre el virote se ejerce mÃ¡s fuerza que sobre una flecha en un arco largo, con lo que va a causar mÃ¡s daÃ±o.
 			B_GiveInvItems (hero,other,ItMiNugget,200);
 			GRD_205_Scorpio_CROSSBOW.permanent = 0;
 		};
 	}
 	else
 	{
-	 AI_Output (self, other,"GRD_205_Scorpio_CROSSBOW_OK_13_07"); //DOSCIENTAS PEPITAS DE MINERAL, aquí mismo, en mi mano. ¡Si no tienes suficiente mineral, ve a buscarlo!
+	 AI_Output (self, other,"GRD_205_Scorpio_CROSSBOW_OK_13_07"); //DOSCIENTAS PEPITAS DE MINERAL, aquÃ­ mismo, en mi mano. Â¡Si no tienes suficiente mineral, ve a buscarlo!
 	};
 };
 
@@ -241,7 +241,7 @@ instance  GRD_205_Scorpio_CROSSBOW2 (C_INFO)
 	information		= GRD_205_Scorpio_CROSSBOW2_Info;
 	important		= 0;
 	permanent		= 1;
-	description		= "Enséñame más cosas del manejo de la ballesta."; 
+	description		= "EnsÃ©Ã±ame mÃ¡s cosas del manejo de la ballesta."; 
 };
 
 FUNC int  GRD_205_Scorpio_CROSSBOW2_Condition()
@@ -254,8 +254,8 @@ FUNC int  GRD_205_Scorpio_CROSSBOW2_Condition()
 };
 FUNC void  GRD_205_Scorpio_CROSSBOW2_Info()
 {
-	AI_Output (other, self,"GRD_205_Scorpio_CROSSBOW2_Info_15_01"); //Enséñame más cosas del manejo de la ballesta.
-	AI_Output (self, other,"GRD_205_Scorpio_CROSSBOW2_Info_13_02"); //Eso te costará 300 pepitas de mineral.
+	AI_Output (other, self,"GRD_205_Scorpio_CROSSBOW2_Info_15_01"); //EnsÃ©Ã±ame mÃ¡s cosas del manejo de la ballesta.
+	AI_Output (self, other,"GRD_205_Scorpio_CROSSBOW2_Info_13_02"); //Eso te costarÃ¡ 300 pepitas de mineral.
   
 	Info_ClearChoices (GRD_205_Scorpio_CROSSBOW2);
 	Info_Addchoice 	(GRD_205_Scorpio_CROSSBOW2,B_BuildLearnString(NAME_LearnCrossbow_2,	LPCOST_TALENT_CROSSBOW_2,300),GRD_205_Scorpio_CROSSBOW2_OK);
@@ -275,11 +275,11 @@ func void GRD_205_Scorpio_CROSSBOW2_OK()
 	{
 		if (B_GiveSkill(other,NPC_TALENT_CROSSBOW , 2, LPCOST_TALENT_CROSSBOW_2))
 		{
-		AI_Output (self, other,"GRD_205_Scorpio_CROSSBOW2_OK_13_02"); //De acuerdo. Tus disparos serán más certeros y precisos si doblas las rodillas al tirar.
-		AI_Output (self, other,"GRD_205_Scorpio_CROSSBOW2_OK_13_03"); //Tendrás que aprender a calcular la velocidad a la que se mueve tu objetivo.
-		AI_Output (self, other,"GRD_205_Scorpio_CROSSBOW2_OK_13_04"); //Dispara el virote hacia la trayectoria del objetivo móvil para alcanzarlo y frenarlo.
-		AI_Output (self, other,"GRD_205_Scorpio_CROSSBOW2_OK_13_05"); //Si hay más de un objetivo, no pierdas el tiempo. Atraviésalos uno tras otro con disparos calculados.
-		AI_Output (self, other,"GRD_205_Scorpio_CROSSBOW2_OK_13_06"); //Ya está, te he enseñado todo lo que sé.
+		AI_Output (self, other,"GRD_205_Scorpio_CROSSBOW2_OK_13_02"); //De acuerdo. Tus disparos serÃ¡n mÃ¡s certeros y precisos si doblas las rodillas al tirar.
+		AI_Output (self, other,"GRD_205_Scorpio_CROSSBOW2_OK_13_03"); //TendrÃ¡s que aprender a calcular la velocidad a la que se mueve tu objetivo.
+		AI_Output (self, other,"GRD_205_Scorpio_CROSSBOW2_OK_13_04"); //Dispara el virote hacia la trayectoria del objetivo mÃ³vil para alcanzarlo y frenarlo.
+		AI_Output (self, other,"GRD_205_Scorpio_CROSSBOW2_OK_13_05"); //Si hay mÃ¡s de un objetivo, no pierdas el tiempo. AtraviÃ©salos uno tras otro con disparos calculados.
+		AI_Output (self, other,"GRD_205_Scorpio_CROSSBOW2_OK_13_06"); //Ya estÃ¡, te he enseÃ±ado todo lo que sÃ©.
 		B_GiveInvItems (hero,other,ItMiNugget,300);
 		GRD_205_Scorpio_CROSSBOW2.permanent = 0;
 		};
@@ -314,7 +314,7 @@ FUNC int  GRD_205_Scorpio_HeyPC_Condition()
 };
 func void  GRD_205_Scorpio_HeyPC_Info()
 {
-	AI_Output (self, other,"GRD_205_Scorpio_HeyPC_Info_13_01"); //Eh, tranquilo, tío. ¡Ven aquí!
+	AI_Output (self, other,"GRD_205_Scorpio_HeyPC_Info_13_01"); //Eh, tranquilo, tÃ­o. Â¡Ven aquÃ­!
 };
 
 /*------------------------------------------------------------------------
@@ -327,7 +327,7 @@ instance  GRD_205_Scorpio_BANISHED (C_INFO)
 	information		= GRD_205_Scorpio_BANISHED_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "¿Estás bien?"; 
+	description		= "Â¿EstÃ¡s bien?"; 
 };
 
 FUNC int  GRD_205_Scorpio_BANISHED_Condition()
@@ -340,13 +340,13 @@ FUNC int  GRD_205_Scorpio_BANISHED_Condition()
 };
 FUNC void  GRD_205_Scorpio_BANISHED_Info()
 {
-	AI_Output (other, self,"GRD_205_Scorpio_BANISHED_Info_15_01"); //¿Estás bien?
-	AI_Output (self, other,"GRD_205_Scorpio_BANISHED_Info_13_02"); //Me escondo aquí. No me gusta esa basura que hacen los guardias.
-	AI_Output (self, other,"GRD_205_Scorpio_BANISHED_Info_13_03"); //Pero he cogido material bastante bueno del arsenal. Si necesitas un arma, házmelo saber.
+	AI_Output (other, self,"GRD_205_Scorpio_BANISHED_Info_15_01"); //Â¿EstÃ¡s bien?
+	AI_Output (self, other,"GRD_205_Scorpio_BANISHED_Info_13_02"); //Me escondo aquÃ­. No me gusta esa basura que hacen los guardias.
+	AI_Output (self, other,"GRD_205_Scorpio_BANISHED_Info_13_03"); //Pero he cogido material bastante bueno del arsenal. Si necesitas un arma, hÃ¡zmelo saber.
 	if (Scorpio_Exile == FALSE)
 	{
 	Log_CreateTopic   	(GE_TraderOW,LOG_NOTE);
-	B_LogEntry		(GE_TraderOW,"Scorpio se ha marchado del Campamento Viejo y ahora está con Cavalorn en el refugio de caza que hay entre los Campamentos Viejo y Nuevo.");
+	B_LogEntry		(GE_TraderOW,"Scorpio se ha marchado del Campamento Viejo y ahora estÃ¡ con Cavalorn en el refugio de caza que hay entre los Campamentos Viejo y Nuevo.");
 	Scorpio_Exile = TRUE;
 	};
 };  
@@ -362,7 +362,7 @@ instance  GRD_205_Scorpio_TRADE (C_INFO)
 	information		= GRD_205_Scorpio_TRADE_Info;
 	important		= 0;
 	permanent		= 1;
-	description		= "Enséñame lo que tienes."; 
+	description		= "EnsÃ©Ã±ame lo que tienes."; 
 	trade			= 1;
 };
 
@@ -376,6 +376,6 @@ FUNC int  GRD_205_Scorpio_TRADE_Condition()
 };
 FUNC void  GRD_205_Scorpio_TRADE_Info()
 {
-	AI_Output (other, self,"GRD_205_Scorpio_TRADE_Info_15_01"); //Enséñame lo que tienes.
+	AI_Output (other, self,"GRD_205_Scorpio_TRADE_Info_15_01"); //EnsÃ©Ã±ame lo que tienes.
 	
 };  

@@ -20,8 +20,8 @@ FUNC VOID  VLK_585_Aleph_Exit_Info()
 {
 	if	!Npc_KnowsInfo (hero, GRD_261_Brandick_ALEPH)
 	{
-		AI_Output (other, self,"VLK_585_Aleph_Exit_Info_15_01"); //¡Buena suerte!
-		AI_Output (self, other,"VLK_585_Aleph_Exit_Info_05_02"); //Bueno, ya sabes dónde encontrarme.
+		AI_Output (other, self,"VLK_585_Aleph_Exit_Info_15_01"); //Â¡Buena suerte!
+		AI_Output (self, other,"VLK_585_Aleph_Exit_Info_05_02"); //Bueno, ya sabes dÃ³nde encontrarme.
 	};
 	
 	AI_StopProcessInfos	( self );
@@ -44,9 +44,9 @@ FUNC int  VLK_585_Aleph_CLEVER_Condition()
 
 func void  VLK_585_Aleph_CLEVER_Info()
 {
-	AI_Output (self,other,"VLK_585_Aleph_CLEVER_Info_05_01"); //¡Jejejeje; los guardias no me pillarán nunca!
+	AI_Output (self,other,"VLK_585_Aleph_CLEVER_Info_05_01"); //Â¡Jejejeje; los guardias no me pillarÃ¡n nunca!
 };
-// ***************** ALEPH ERKLÄRT SEINE ARBEITSHALTUNG *****************************
+// ***************** ALEPH ERKLÃ„RT SEINE ARBEITSHALTUNG *****************************
 
 instance  VLK_585_Aleph_GUARDS (C_INFO)
 {
@@ -55,7 +55,7 @@ instance  VLK_585_Aleph_GUARDS (C_INFO)
 	information		= VLK_585_Aleph_GUARDS_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "¿Qué quieres decir?"; 
+	description		= "Â¿QuÃ© quieres decir?"; 
 };
 
 FUNC int  VLK_585_Aleph_GUARDS_Condition()
@@ -68,11 +68,11 @@ FUNC int  VLK_585_Aleph_GUARDS_Condition()
 
 FUNC void  VLK_585_Aleph_GUARDS_Info()
 {
-	AI_Output (other, self,"VLK_585_Aleph_GUARDS_Info_15_01"); //¿Qué quieres decir?
-	AI_Output (self, other,"VLK_585_Aleph_GUARDS_Info_05_02"); //Sólo trabajo cuando los guardias están cerca o pueden verme. Si no, me limito a perder el tiempo.
-	AI_Output (other, self,"VLK_585_Aleph_GUARDS_Info_15_03"); //¿Y no sospechan nada?
-	AI_Output (self, other,"VLK_585_Aleph_GUARDS_Info_05_04"); //Bueno, claro que extraigo menos mineral que los otros. No siempre es suficiente, así que tengo que hacer algún trapicheo.
-	AI_Output (self, other,"VLK_585_Aleph_GUARDS_Info_05_05"); //Suelo mantener los ojos abiertos, así que me entero de cosas de interés. ¿No llevarás algo de mineral encima, por casualidad? ¿Digamos que unas 10 pepitas?
+	AI_Output (other, self,"VLK_585_Aleph_GUARDS_Info_15_01"); //Â¿QuÃ© quieres decir?
+	AI_Output (self, other,"VLK_585_Aleph_GUARDS_Info_05_02"); //SÃ³lo trabajo cuando los guardias estÃ¡n cerca o pueden verme. Si no, me limito a perder el tiempo.
+	AI_Output (other, self,"VLK_585_Aleph_GUARDS_Info_15_03"); //Â¿Y no sospechan nada?
+	AI_Output (self, other,"VLK_585_Aleph_GUARDS_Info_05_04"); //Bueno, claro que extraigo menos mineral que los otros. No siempre es suficiente, asÃ­ que tengo que hacer algÃºn trapicheo.
+	AI_Output (self, other,"VLK_585_Aleph_GUARDS_Info_05_05"); //Suelo mantener los ojos abiertos, asÃ­ que me entero de cosas de interÃ©s. Â¿No llevarÃ¡s algo de mineral encima, por casualidad? Â¿Digamos que unas 10 pepitas?
 
 	Npc_ExchangeRoutine (self,"BUSY");
 	
@@ -103,15 +103,15 @@ FUNC int  VLK_585_Aleph_INFO_Condition()
 
 func void  VLK_585_Aleph_INFO_Info()
 {
-	AI_Output (other,self,"VLK_585_Aleph_INFO_Info_15_01"); //De acuerdo, aquí tienes 10 pepitas.
-	AI_Output (self,other,"VLK_585_Aleph_INFO_Info_05_02"); //Gracias. Si vas al pozo principal y bajas por las pasarelas, enseguida llegarás a dos cuevas laterales.
-	AI_Output (self,other,"VLK_585_Aleph_INFO_Info_05_03"); //En la segunda hay un guardia y también una trituradora vieja.
-	AI_Output (self,other,"VLK_585_Aleph_INFO_Info_05_04"); //Por ahí debe haber una poción de curación, ¡pero ten cuidado y mantente alerta por si los reptadores!
-	AI_Output (self,other,"VLK_585_Aleph_INFO_Info_05_05"); //Y si necesitas u oyes algo, vuelve a verme; seguro que podré serte de ayuda.
+	AI_Output (other,self,"VLK_585_Aleph_INFO_Info_15_01"); //De acuerdo, aquÃ­ tienes 10 pepitas.
+	AI_Output (self,other,"VLK_585_Aleph_INFO_Info_05_02"); //Gracias. Si vas al pozo principal y bajas por las pasarelas, enseguida llegarÃ¡s a dos cuevas laterales.
+	AI_Output (self,other,"VLK_585_Aleph_INFO_Info_05_03"); //En la segunda hay un guardia y tambiÃ©n una trituradora vieja.
+	AI_Output (self,other,"VLK_585_Aleph_INFO_Info_05_04"); //Por ahÃ­ debe haber una pociÃ³n de curaciÃ³n, Â¡pero ten cuidado y mantente alerta por si los reptadores!
+	AI_Output (self,other,"VLK_585_Aleph_INFO_Info_05_05"); //Y si necesitas u oyes algo, vuelve a verme; seguro que podrÃ© serte de ayuda.
 	
 	B_GiveInvItems (hero, other, ItMiNugget,10);
 };
-// ***************** WIRD ALEPH ANGESCHWÄRZT IST ER SAUER*****************************
+// ***************** WIRD ALEPH ANGESCHWÃ„RZT IST ER SAUER*****************************
 instance VLK_585_Aleph_ANGRY (C_INFO)
 {
 	npc				= VLK_585_Aleph;
@@ -132,7 +132,7 @@ FUNC int  VLK_585_Aleph_ANGRY_Condition()
 func void  VLK_585_Aleph_ANGRY_Info()
 {
 	
-	AI_Output (self,other,"VLK_585_Aleph_ANGRY_Info_05_01"); //¿Que me has puesto a parir delante de Brandick? ¡Vete por ahí!
+	AI_Output (self,other,"VLK_585_Aleph_ANGRY_Info_05_01"); //Â¿Que me has puesto a parir delante de Brandick? Â¡Vete por ahÃ­!
 	
 	AI_StopProcessInfos	( self );
 	Npc_SetTempAttitude (self,ATT_ANGRY);
@@ -145,7 +145,7 @@ instance VLK_585_Aleph_KEY (C_INFO)
 	information		= VLK_585_Aleph_KEY_Info;
 	important		= 0;
 	permanent		= 0;
-	description     = "¿Tienes más información útil?";
+	description     = "Â¿Tienes mÃ¡s informaciÃ³n Ãºtil?";
 };
 FUNC int  VLK_585_Aleph_KEY_Condition()
 {
@@ -157,8 +157,8 @@ FUNC int  VLK_585_Aleph_KEY_Condition()
 
 func void  VLK_585_Aleph_KEY_Info()
 {
-	AI_Output (other,self,"VLK_585_Aleph_KEY_Info_15_01"); //¿Tienes alguna otra información útil?
-	AI_Output (self,other,"VLK_585_Aleph_KEY_Info_05_02"); //Claro, ¿tienes 10 pepitas?
+	AI_Output (other,self,"VLK_585_Aleph_KEY_Info_15_01"); //Â¿Tienes alguna otra informaciÃ³n Ãºtil?
+	AI_Output (self,other,"VLK_585_Aleph_KEY_Info_05_02"); //Claro, Â¿tienes 10 pepitas?
 };
 
 //***************** LOCKPICKS*****************************
@@ -182,15 +182,15 @@ FUNC int  VLK_585_Aleph_GLEN_Condition()
 func void  VLK_585_Aleph_GLEN_Info()
 {
 	
-	AI_Output (other,self,"VLK_585_Aleph_GLEN_Info_15_01"); //¡Espero recibir buena información a cambio de mi mineral!
-	AI_Output (self,other,"VLK_585_Aleph_GLEN_Info_05_02"); //Aquí hay un montón de cofres cerrados con llave. Glen, el cavador de arriba, podría proporcionarte un par de ganzúas.
+	AI_Output (other,self,"VLK_585_Aleph_GLEN_Info_15_01"); //Â¡Espero recibir buena informaciÃ³n a cambio de mi mineral!
+	AI_Output (self,other,"VLK_585_Aleph_GLEN_Info_05_02"); //AquÃ­ hay un montÃ³n de cofres cerrados con llave. Glen, el cavador de arriba, podrÃ­a proporcionarte un par de ganzÃºas.
 	
 	B_GiveInvItems (hero, self, ItMinugget,10); 
 };
-//***************** LAGERSCHUPPENSCHLÜSSEL*****************************
+//***************** LAGERSCHUPPENSCHLÃœSSEL*****************************
 func void B_Aleph_StorageShedKey()
 {
-	B_LogEntry		(CH2_StorageShed,"¡Aleph me ha vendido la llave de los cofres de la caseta de almacenamiento!");
+	B_LogEntry		(CH2_StorageShed,"Â¡Aleph me ha vendido la llave de los cofres de la caseta de almacenamiento!");
 };
 
 instance VLK_585_Aleph_SCHUPPEN (C_INFO)
@@ -200,7 +200,7 @@ instance VLK_585_Aleph_SCHUPPEN (C_INFO)
 	information		= VLK_585_Aleph_SCHUPPEN_Info;
 	important		= 0;
 	permanent		= 0;
-	description     = "¿Sabes algo de la llave de los cofres del almacén?";
+	description     = "Â¿Sabes algo de la llave de los cofres del almacÃ©n?";
 };
 FUNC int  VLK_585_Aleph_SCHUPPEN_Condition()
 {
@@ -213,10 +213,10 @@ FUNC int  VLK_585_Aleph_SCHUPPEN_Condition()
 func void  VLK_585_Aleph_SCHUPPEN_Info()
 {
 	
-	AI_Output (other,self,"VLK_585_Aleph_SCHUPPEN_Info_15_01"); //¿Sabes algo acerca de la llave de los cofres que hay en la cabaña de almacenamiento?
+	AI_Output (other,self,"VLK_585_Aleph_SCHUPPEN_Info_15_01"); //Â¿Sabes algo acerca de la llave de los cofres que hay en la cabaÃ±a de almacenamiento?
 	AI_Output (self,other,"VLK_585_Aleph_SCHUPPEN_Info_05_02"); //Bueno, eso depende.
-	AI_Output (other,self,"VLK_585_Aleph_SCHUPPEN_Info_15_03"); //¿De cuántas pepitas te pague?
-	AI_Output (self,other,"VLK_585_Aleph_SCHUPPEN_Info_05_04"); //Aprendes rápido.
+	AI_Output (other,self,"VLK_585_Aleph_SCHUPPEN_Info_15_03"); //Â¿De cuÃ¡ntas pepitas te pague?
+	AI_Output (self,other,"VLK_585_Aleph_SCHUPPEN_Info_05_04"); //Aprendes rÃ¡pido.
 	
 	Info_ClearChoices ( VLK_585_Aleph_SCHUPPEN );
 	
@@ -232,10 +232,10 @@ func void VLK_585_Aleph_SCHUPPEN_50 ()
 	
 	if (Npc_HasItems (hero, ItMiNugget) >= 50)
 	{ 
-		AI_Output			(other,self,"VLK_585_Aleph_SCHUPPEN_50_15_01"); //¡Por tratarse de ti, debería bastar con 50 pepitas!
-		AI_Output			(self,other,"VLK_585_Aleph_SCHUPPEN_50_05_02"); //¡Muy generoso! Aquí tienes la llave. Y llévate este anillo también. A mí siempre me ha traído suerte.
+		AI_Output			(other,self,"VLK_585_Aleph_SCHUPPEN_50_15_01"); //Â¡Por tratarse de ti, deberÃ­a bastar con 50 pepitas!
+		AI_Output			(self,other,"VLK_585_Aleph_SCHUPPEN_50_05_02"); //Â¡Muy generoso! AquÃ­ tienes la llave. Y llÃ©vate este anillo tambiÃ©n. A mÃ­ siempre me ha traÃ­do suerte.
 
-		CreateInvItems		(self, ItKe_OM_03,	1);			// nur für die korrekte Textausgaben!!!
+		CreateInvItems		(self, ItKe_OM_03,	1);			// nur fÃ¼r die korrekte Textausgaben!!!
 		B_GiveInvItems      (self, hero, ItKe_OM_03, 2);
 		Npc_RemoveInvItem	(hero, ItKe_OM_03);
 
@@ -251,7 +251,7 @@ func void VLK_585_Aleph_SCHUPPEN_50 ()
 	}
 	else
 	{
-		AI_Output (self,other,"VLK_585_Aleph_SCHUPPEN_50_05_03"); //¡No tienes pepitas suficientes!
+		AI_Output (self,other,"VLK_585_Aleph_SCHUPPEN_50_05_03"); //Â¡No tienes pepitas suficientes!
 		VLK_585_Aleph_SCHUPPEN.permanent = 1;
 	};
 };
@@ -266,7 +266,7 @@ func void VLK_585_Aleph_SCHUPPEN_30 ()
 		B_GiveInvItems      (self, other, ItKe_OM_03, 1);
 		B_GiveInvItems	(hero, self, ItMinugget,30);  
 		Info_ClearChoices	(VLK_585_Aleph_SCHUPPEN );
-		AI_Output (other,self,"VLK_585_Aleph_SCHUPPEN_30_15_01"); //Con 30 pepitas debería bastar.
+		AI_Output (other,self,"VLK_585_Aleph_SCHUPPEN_30_15_01"); //Con 30 pepitas deberÃ­a bastar.
 		AI_Output (self,other,"VLK_585_Aleph_SCHUPPEN_30_05_02"); //Vale; da la casualidad de que llevo la llave encima.
 		VLK_585_Aleph_SCHUPPEN.permanent = 0;
 		B_Aleph_StorageShedKey();
@@ -279,8 +279,8 @@ func void VLK_585_Aleph_SCHUPPEN_30 ()
 };	
 func void VLK_585_Aleph_SCHUPPEN_15 ()
 {
-	AI_Output (other,self,"VLK_585_Aleph_SCHUPPEN_15_15_01"); //¿Te parecen bien 15 pepitas?
-	AI_Output (self,other,"VLK_585_Aleph_SCHUPPEN_15_05_02"); //¿15 pepitas? ¡Yo no sé nada de ninguna llave!
+	AI_Output (other,self,"VLK_585_Aleph_SCHUPPEN_15_15_01"); //Â¿Te parecen bien 15 pepitas?
+	AI_Output (self,other,"VLK_585_Aleph_SCHUPPEN_15_05_02"); //Â¿15 pepitas? Â¡Yo no sÃ© nada de ninguna llave!
 	VLK_585_Aleph_SCHUPPEN.permanent = 0;
 };	
 func void VLK_585_Aleph_SCHUPPEN_Back ()
@@ -289,7 +289,7 @@ func void VLK_585_Aleph_SCHUPPEN_Back ()
 	VLK_585_Aleph_SCHUPPEN.permanent = 1;
 };
 
-// WENN DER SPIELER ALEPH BEI BRANDICK ANGESCHWÄRZT HAT
+// WENN DER SPIELER ALEPH BEI BRANDICK ANGESCHWÃ„RZT HAT
 instance  VLK_585_Aleph_DIRTY (C_INFO)
 {
 	npc				= VLK_585_Aleph;
@@ -297,7 +297,7 @@ instance  VLK_585_Aleph_DIRTY (C_INFO)
 	information		= VLK_585_Aleph_DIRTY_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "¿Sabes algo de la llave de los cofres del almacén?"; 
+	description		= "Â¿Sabes algo de la llave de los cofres del almacÃ©n?"; 
 };
 
 FUNC int  VLK_585_Aleph_DIRTY_Condition()
@@ -311,10 +311,10 @@ FUNC int  VLK_585_Aleph_DIRTY_Condition()
 
 FUNC void  VLK_585_Aleph_DIRTY_Info()
 {
-	AI_Output (other,self,"VLK_585_Aleph_DIRTY_Info_15_01"); //¿Sabes algo acerca de la llave de los cofres que hay en la cabaña de almacenamiento?
+	AI_Output (other,self,"VLK_585_Aleph_DIRTY_Info_15_01"); //Â¿Sabes algo acerca de la llave de los cofres que hay en la cabaÃ±a de almacenamiento?
 	AI_Output (self,other,"VLK_585_Aleph_DIRTY_Info_05_02"); //Bueno, eso depende.
-	AI_Output (other,self,"VLK_585_Aleph_DIRTY_Info_15_03"); //¿De cuántas pepitas te pague?
-	AI_Output (self,other,"VLK_585_Aleph_DIRTY_Info_05_04"); //Aprendes rápido. Quiero 100 pepitas.
+	AI_Output (other,self,"VLK_585_Aleph_DIRTY_Info_15_03"); //Â¿De cuÃ¡ntas pepitas te pague?
+	AI_Output (self,other,"VLK_585_Aleph_DIRTY_Info_05_04"); //Aprendes rÃ¡pido. Quiero 100 pepitas.
 	
 	Info_ClearChoices ( VLK_585_Aleph_DIRTY );
 	
@@ -325,8 +325,8 @@ func void VLK_585_Aleph_DIRTY_100()
 {
 	if Npc_HasItems (hero,ItMinugget)>=100
 	{ 
-		AI_Output (other,self,"VLK_585_Aleph_DIRTY_100_Info_15_01"); //Vale, estafador. Aquí tienes las 100.
-		AI_Output (self,other,"VLK_585_Aleph_DIRTY_100_Info_05_02"); //No deberías haberme delatado. Aquí tienes la llave.
+		AI_Output (other,self,"VLK_585_Aleph_DIRTY_100_Info_15_01"); //Vale, estafador. AquÃ­ tienes las 100.
+		AI_Output (self,other,"VLK_585_Aleph_DIRTY_100_Info_05_02"); //No deberÃ­as haberme delatado. AquÃ­ tienes la llave.
 		B_GiveInvItems	(hero, self, ItMinugget,100);
 		CreateInvItem		(self, ItKe_OM_03);
 		B_GiveInvItems      (self, other, ItKe_OM_03, 1);
@@ -336,13 +336,13 @@ func void VLK_585_Aleph_DIRTY_100()
 	}
 	else
 	{
-		AI_Output (self,other,"VLK_585_Aleph_DIRTY_100_Info_05_03"); //¿Es que piensas que soy estúpido o qué? ¡100 pepitas, ni una menos!
+		AI_Output (self,other,"VLK_585_Aleph_DIRTY_100_Info_05_03"); //Â¿Es que piensas que soy estÃºpido o quÃ©? Â¡100 pepitas, ni una menos!
 		VLK_585_Aleph_DIRTY.permanent = 1;
 	};
 };
 func void VLK_585_Aleph_DIRTY_NO()
 {
-	AI_Output (other,self,"VLK_585_Aleph_DIRTY_NO_Info_15_01"); //¡No voy a regalarte 100 pepitas!
-	AI_Output (self,other,"VLK_585_Aleph_DIRTY_NO_Info_05_02"); //¡Oye, eres tú el que no hace más que ponerse a hablar conmigo!
+	AI_Output (other,self,"VLK_585_Aleph_DIRTY_NO_Info_15_01"); //Â¡No voy a regalarte 100 pepitas!
+	AI_Output (self,other,"VLK_585_Aleph_DIRTY_NO_Info_05_02"); //Â¡Oye, eres tÃº el que no hace mÃ¡s que ponerse a hablar conmigo!
 	VLK_585_Aleph_DIRTY.permanent = 0;	
 };

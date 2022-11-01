@@ -33,7 +33,7 @@ instance   VLK_583_Glen_INFO(C_INFO)
 	information		= VLK_583_Glen_INFO_Info;
 	important		= 0;
 	permanent		= 1;
-	description		= "¿Qué debo tener presente cuando esté en la mina?"; 
+	description		= "Â¿QuÃ© debo tener presente cuando estÃ© en la mina?"; 
 };
 
 FUNC int  VLK_583_Glen_INFO_Condition()
@@ -44,11 +44,11 @@ FUNC int  VLK_583_Glen_INFO_Condition()
 
 FUNC void  VLK_583_Glen_INFO_Info()
 {
-	AI_Output (other, self,"VLK_583_Glen_INFO_Info_15_01"); //¿Qué debería tener presente cuando esté en la mina?
+	AI_Output (other, self,"VLK_583_Glen_INFO_Info_15_01"); //Â¿QuÃ© deberÃ­a tener presente cuando estÃ© en la mina?
 	AI_Output (self, other,"VLK_583_Glen_INFO_Info_02_02"); //Ten cuidado con los reptadores.
-	AI_Output (self, other,"VLK_583_Glen_INFO_Info_02_03"); //Cuanto más abajo llegues, más cerca estarás de las bestias. ¡Esas repugnantes criaturas vienen derechitas del reino de Beliar!
-	AI_Output (self, other,"VLK_583_Glen_INFO_Info_02_04"); //Se las puede oír raspar y rascar. Se quedan sentadas en la oscuridad, esperándote. Las he visto matar...
-	AI_Output (self, other,"VLK_583_Glen_INFO_Info_02_05"); //Son despiadadas y veloces. Si te gusta la vida, no deberías estar aquí abajo. Será mejor que te marches antes de que te ocurra algo.
+	AI_Output (self, other,"VLK_583_Glen_INFO_Info_02_03"); //Cuanto mÃ¡s abajo llegues, mÃ¡s cerca estarÃ¡s de las bestias. Â¡Esas repugnantes criaturas vienen derechitas del reino de Beliar!
+	AI_Output (self, other,"VLK_583_Glen_INFO_Info_02_04"); //Se las puede oÃ­r raspar y rascar. Se quedan sentadas en la oscuridad, esperÃ¡ndote. Las he visto matar...
+	AI_Output (self, other,"VLK_583_Glen_INFO_Info_02_05"); //Son despiadadas y veloces. Si te gusta la vida, no deberÃ­as estar aquÃ­ abajo. SerÃ¡ mejor que te marches antes de que te ocurra algo.
 };  
 // ***************** Infos *****************************
 
@@ -59,7 +59,7 @@ instance  VLK_583_Glen_LOCKPICK (C_INFO)
 	information	=  VLK_583_Glen_LOCKPICK_Info;
 	important	= 0;	
 	permanent	= 0;
-	description = "Tengo entendido que aquí puedo comprar ganzúas.";
+	description = "Tengo entendido que aquÃ­ puedo comprar ganzÃºas.";
 };                       
 
 FUNC int  VLK_583_Glen_LOCKPICK_Condition()
@@ -72,7 +72,7 @@ FUNC int  VLK_583_Glen_LOCKPICK_Condition()
 
 FUNC VOID  VLK_583_Glen_LOCKPICK_Info()
 {
-	AI_Output (other, self,"VLK_583_Glen_LOCKPICK_15_01"); //Me dijeron que aquí abajo podría conseguir ganzúas.
+	AI_Output (other, self,"VLK_583_Glen_LOCKPICK_15_01"); //Me dijeron que aquÃ­ abajo podrÃ­a conseguir ganzÃºas.
 	AI_Output (self, other,"VLK_583_Glen_LOCKPICK_02_02"); //Bueno, dado que fuiste lo bastante listo como para averiguar eso, puedo venderte alguna. 10 pepitas cada una.
 	
 	
@@ -86,7 +86,7 @@ instance  VLK_583_Glen_BUY (C_INFO)
 	information	=  VLK_583_Glen_BUY_Info;
 	important	= 0;	
 	permanent	= 1;
-	description = "(Comprar ganzúas)";
+	description = "(Comprar ganzÃºas)";
 	trade		= 1;
 };                       
 
@@ -99,7 +99,7 @@ FUNC int  VLK_583_Glen_BUY_Condition()
 };
 FUNC VOID  VLK_583_Glen_BUY_Info()
 {
-	AI_Output (other, self,"VLK_583_Glen_BUY_Info_15_01"); //Quiero comprar unas ganzúas.
+	AI_Output (other, self,"VLK_583_Glen_BUY_Info_15_01"); //Quiero comprar unas ganzÃºas.
 	
 	
 	

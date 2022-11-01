@@ -50,9 +50,9 @@ FUNC int  DIA_Balor_FetchWeed_Condition()
 FUNC VOID  DIA_Balor_FetchWeed_Info()
 {
 	AI_Output (other, self,"DIA_Balor_FetchWeed_15_00"); //Vengo de parte de Baal Orun. Tengo que llevarme toda la hierba del pantano.
-	AI_Output (self, other,"DIA_Balor_FetchWeed_01_01"); //Mejor. Así no tengo que llevársela yo. Aquí la tienes.
+	AI_Output (self, other,"DIA_Balor_FetchWeed_01_01"); //Mejor. AsÃ­ no tengo que llevÃ¡rsela yo. AquÃ­ la tienes.
 	AI_Output (self, other,"DIA_Balor_FetchWeed_01_02"); //No te olvides de ir a ver a Viran en la otra punta del pantano, si es que no lo has hecho ya.
-	AI_Output (self, other,"DIA_Balor_FetchWeed_01_03"); //Si no, tu cargamento parecerá un poco escaso, y la gente podría pensar que vendiste la otra mitad. Je, je, je.
+	AI_Output (self, other,"DIA_Balor_FetchWeed_01_03"); //Si no, tu cargamento parecerÃ¡ un poco escaso, y la gente podrÃ­a pensar que vendiste la otra mitad. Je, je, je.
 	
 	B_GiveInvItems 		(self, other, ItMi_Plants_Swampherb_01, 50);
 
@@ -62,14 +62,14 @@ FUNC VOID  DIA_Balor_FetchWeed_Info()
 	if	!Npc_KnowsInfo(hero, DIA_Viran_What)
 	&&	!Npc_KnowsInfo(hero, DIA_Viran_FetchWeed)
 	{
-		 B_LogEntry		(CH1_DeliverWeed,"Según Balor, hay un segundo grupo de cosechadores trabajando al otro lado del pantano. Dado que no tengo permiso para preguntar nada a Baal Orun, debo recorrer el pantano en busca del segundo grupo, me guste o no."); 
+		 B_LogEntry		(CH1_DeliverWeed,"SegÃºn Balor, hay un segundo grupo de cosechadores trabajando al otro lado del pantano. Dado que no tengo permiso para preguntar nada a Baal Orun, debo recorrer el pantano en busca del segundo grupo, me guste o no."); 
 	};
 	
 	Balor_BotenDay = Wld_GetDay(); 
 };
 
 // **************************************************
-//				Wem verhökern?
+//				Wem verhÃ¶kern?
 // **************************************************
 	var int Balor_PlayerCheating;
 // **************************************************
@@ -81,7 +81,7 @@ instance  DIA_Balor_SellUnder (C_INFO)
 	condition	= DIA_Balor_SellUnder_Condition;
 	information	= DIA_Balor_SellUnder_Info;
 	permanent	= 0;
-	description	= "En cualquier caso, ¿a quién podría vender las hierbas?";
+	description	= "En cualquier caso, Â¿a quiÃ©n podrÃ­a vender las hierbas?";
 };                       
 
 FUNC int  DIA_Balor_SellUnder_Condition()
@@ -94,34 +94,34 @@ FUNC int  DIA_Balor_SellUnder_Condition()
 
 FUNC VOID  DIA_Balor_SellUnder_Info()
 {
-	AI_Output (other, self,"DIA_Balor_SellUnder_15_00"); //¿Y a quién iba a venderle yo las hierbas?
-	AI_Output (self, other,"DIA_Balor_SellUnder_01_01"); //¡Oh, oh! Ahora te he dado ideas, ¿eh?
+	AI_Output (other, self,"DIA_Balor_SellUnder_15_00"); //Â¿Y a quiÃ©n iba a venderle yo las hierbas?
+	AI_Output (self, other,"DIA_Balor_SellUnder_01_01"); //Â¡Oh, oh! Ahora te he dado ideas, Â¿eh?
 	
 	Info_ClearChoices 	(DIA_Balor_SellUnder);
-	Info_AddChoice 		(DIA_Balor_SellUnder,"Olvídalo, sólo era una idea.",DIA_Balor_SellUnder_ForgetIt);
+	Info_AddChoice 		(DIA_Balor_SellUnder,"OlvÃ­dalo, sÃ³lo era una idea.",DIA_Balor_SellUnder_ForgetIt);
 	Info_AddChoice 		(DIA_Balor_SellUnder,"Si conoces a alguien, podemos ir a medias.",DIA_Balor_SellUnder_HalfHalf);
-	Info_AddChoice 		(DIA_Balor_SellUnder,"No... Dime... ¿quién?",DIA_Balor_SellUnder_ComeOn);
+	Info_AddChoice 		(DIA_Balor_SellUnder,"No... Dime... Â¿quiÃ©n?",DIA_Balor_SellUnder_ComeOn);
 };
 
 func void DIA_Balor_SellUnder_ForgetIt()
 {
-	AI_Output (other, self,"DIA_Balor_SellUnder_ForgetIt_15_00"); //Olvídalo, no era más que una idea.
+	AI_Output (other, self,"DIA_Balor_SellUnder_ForgetIt_15_00"); //OlvÃ­dalo, no era mÃ¡s que una idea.
 	Info_ClearChoices 	(DIA_Balor_SellUnder);
 };
 
 func void DIA_Balor_SellUnder_HalfHalf()
 {
 	AI_Output (other, self,"DIA_Balor_SellUnder_HalfHalf_15_00"); //Si sabes de alguien, podemos ir a medias.
-	AI_Output (self, other,"DIA_Balor_SellUnder_HalfHalf_01_01"); //Bueno, puede que yo conozca a alguien en el Campamento Nuevo que estaría interesado en las hierbas.
-	AI_Output (self, other,"DIA_Balor_SellUnder_HalfHalf_01_02"); //¡Pero si te pillan los Gurús, te echarán a los tiburones de la ciénaga! Yo no sé nada, ¿vale?
+	AI_Output (self, other,"DIA_Balor_SellUnder_HalfHalf_01_01"); //Bueno, puede que yo conozca a alguien en el Campamento Nuevo que estarÃ­a interesado en las hierbas.
+	AI_Output (self, other,"DIA_Balor_SellUnder_HalfHalf_01_02"); //Â¡Pero si te pillan los GurÃºs, te echarÃ¡n a los tiburones de la ciÃ©naga! Yo no sÃ© nada, Â¿vale?
 	Balor_PlayerCheating = TRUE;
 	Info_ClearChoices 	(DIA_Balor_SellUnder);
 };
 
 func void DIA_Balor_SellUnder_ComeOn()
 {
-	AI_Output (other, self,"DIA_Balor_SellUnder_ComeOn_15_00"); //No; dime quién es.
-	AI_Output (self, other,"DIA_Balor_SellUnder_ComeOn_01_01"); //¡Tienes algo en mente! ¡Te digo que si la mercancía no le llega a Cor Kalorn, estaremos metidos hasta el cuello en problemas!
+	AI_Output (other, self,"DIA_Balor_SellUnder_ComeOn_15_00"); //No; dime quiÃ©n es.
+	AI_Output (self, other,"DIA_Balor_SellUnder_ComeOn_01_01"); //Â¡Tienes algo en mente! Â¡Te digo que si la mercancÃ­a no le llega a Cor Kalorn, estaremos metidos hasta el cuello en problemas!
 };
 
 // **************************************************
@@ -137,7 +137,7 @@ instance  DIA_Balor_TellDealer (C_INFO)
 	condition	= DIA_Balor_TellDealer_Condition;
 	information	= DIA_Balor_TellDealer_Info;
 	permanent	= 1;
-	description	= "De acuerdo. ¿Quién es el comprador en el Campamento Nuevo?";
+	description	= "De acuerdo. Â¿QuiÃ©n es el comprador en el Campamento Nuevo?";
 };                       
 
 FUNC int  DIA_Balor_TellDealer_Condition()
@@ -150,45 +150,45 @@ FUNC int  DIA_Balor_TellDealer_Condition()
 
 FUNC VOID  DIA_Balor_TellDealer_Info()
 {
-	AI_Output (other, self,"DIA_Balor_TellDealer_15_00"); //Vale; ¿quién es el comprador en el Campamento Nuevo?
-	AI_Output (self, other,"DIA_Balor_TellDealer_01_01"); //¿Es que piensas que voy a darte el nombre para que te vayas corriendo con las hierbas? ¡No es así como funcionan las cosas!
+	AI_Output (other, self,"DIA_Balor_TellDealer_15_00"); //Vale; Â¿quiÃ©n es el comprador en el Campamento Nuevo?
+	AI_Output (self, other,"DIA_Balor_TellDealer_01_01"); //Â¿Es que piensas que voy a darte el nombre para que te vayas corriendo con las hierbas? Â¡No es asÃ­ como funcionan las cosas!
 	AI_Output (self, other,"DIA_Balor_TellDealer_01_02"); //Quiero 50 pepitas por adelantado. Luego, ya veremos.
 	
 	Info_ClearChoices 	(DIA_Balor_TellDealer);
-	Info_Addchoice 		(DIA_Balor_TellDealer,"Olvídalo.",DIA_Balor_TellDealer_ForgetIt);
-	Info_Addchoice 		(DIA_Balor_TellDealer,"La mitad es lo justo. Aquí tienes.",DIA_Balor_TellDealer_Pay);
+	Info_Addchoice 		(DIA_Balor_TellDealer,"OlvÃ­dalo.",DIA_Balor_TellDealer_ForgetIt);
+	Info_Addchoice 		(DIA_Balor_TellDealer,"La mitad es lo justo. AquÃ­ tienes.",DIA_Balor_TellDealer_Pay);
 };
 
 func void DIA_Balor_TellDealer_Pay()
 {
-	AI_Output (other, self,"DIA_Balor_TellDealer_Pay_15_00"); //50 me parece bien. Aquí las tienes.
+	AI_Output (other, self,"DIA_Balor_TellDealer_Pay_15_00"); //50 me parece bien. AquÃ­ las tienes.
 	if (Npc_HasItems(other, itminugget) >= 50)
 	{
-		AI_Output			(self, other,"DIA_Balor_TellDealer_Pay_01_01"); //Muy bien... Mira, su nombre es Cipher. Probablemente podrás encontrarle en la taberna del lago.
-		AI_Output			(self, other,"DIA_Balor_TellDealer_Pay_01_02"); //Ten cuidado y no te dejes engañar.
+		AI_Output			(self, other,"DIA_Balor_TellDealer_Pay_01_01"); //Muy bien... Mira, su nombre es Cipher. Probablemente podrÃ¡s encontrarle en la taberna del lago.
+		AI_Output			(self, other,"DIA_Balor_TellDealer_Pay_01_02"); //Ten cuidado y no te dejes engaÃ±ar.
 		Info_ClearChoices 	(DIA_Balor_TellDealer);
 
 		B_GiveInvItems		(other, self,itminugget,50);
 		Balor_TellsNCDealer = TRUE;
 
-		B_LogEntry			(CH1_DeliverWeed,"Balor ha mencionado a un hombre llamado Cipher al que le gustaría comprar la cosecha de hierba del pantano. Puedo encontrarlo en la taberna del lago del Campamento Nuevo. Sin embargo, me metería en muchos problemas con los Gurús.");
+		B_LogEntry			(CH1_DeliverWeed,"Balor ha mencionado a un hombre llamado Cipher al que le gustarÃ­a comprar la cosecha de hierba del pantano. Puedo encontrarlo en la taberna del lago del Campamento Nuevo. Sin embargo, me meterÃ­a en muchos problemas con los GurÃºs.");
 		B_GiveXP			(XP_BalorNamedCipher);
 
 		Log_CreateTopic		(GE_TraderNC, LOG_NOTE);
-		B_LogEntry			(GE_TraderNC,"Cipher compra y vende todo tipo de bienes en la taberna del lago. Está especialmente interesado en las entregas importantes de hierba del pantano.");
+		B_LogEntry			(GE_TraderNC,"Cipher compra y vende todo tipo de bienes en la taberna del lago. EstÃ¡ especialmente interesado en las entregas importantes de hierba del pantano.");
 	}
 	else
 	{
-		AI_Output (self, other,"DIA_Balor_TellDealer_Pay_NoOre_01_00"); //No veo mis 50 pepitas. Quiero 50 pepitas, ni una menos, ¿de acuerdo?
+		AI_Output (self, other,"DIA_Balor_TellDealer_Pay_NoOre_01_00"); //No veo mis 50 pepitas. Quiero 50 pepitas, ni una menos, Â¿de acuerdo?
 		Info_ClearChoices 	(DIA_Balor_TellDealer);
 	};
 };
 
 func void DIA_Balor_TellDealer_ForgetIt()
 {
-	AI_Output (other, self,"DIA_Balor_TellDealer_ForgetIt_15_00"); //Olvídalo.
-	AI_Output (self, other,"DIA_Balor_TellDealer_ForgetIt_01_01"); //¡No te creas que puedes entrar sencillamente en el Campamento Nuevo y vendérselas a cualquiera! Si no sabes el nombre, no conseguirás vendérselas a nadie.
-	AI_Output (self, other,"DIA_Balor_TellDealer_ForgetIt_01_02"); //A menos que dejes que algún bandido te pegue un buen porrazo en el colodrillo.
+	AI_Output (other, self,"DIA_Balor_TellDealer_ForgetIt_15_00"); //OlvÃ­dalo.
+	AI_Output (self, other,"DIA_Balor_TellDealer_ForgetIt_01_01"); //Â¡No te creas que puedes entrar sencillamente en el Campamento Nuevo y vendÃ©rselas a cualquiera! Si no sabes el nombre, no conseguirÃ¡s vendÃ©rselas a nadie.
+	AI_Output (self, other,"DIA_Balor_TellDealer_ForgetIt_01_02"); //A menos que dejes que algÃºn bandido te pegue un buen porrazo en el colodrillo.
 	Info_ClearChoices 	(DIA_Balor_TellDealer);
 };
 
@@ -216,16 +216,16 @@ FUNC int  DIA_Balor_RipOff_Condition()
 
 FUNC VOID  DIA_Balor_RipOff_Info()
 {
-	AI_Output (other, self,"DIA_Balor_RipOff_15_00"); //Soy yo de nuevo. Tengo que recoger el próximo cargamento.
+	AI_Output (other, self,"DIA_Balor_RipOff_15_00"); //Soy yo de nuevo. Tengo que recoger el prÃ³ximo cargamento.
 	if (Balor_PlayerCheating == TRUE)
 	{
-		AI_Output (self, other,"DIA_Balor_RipOff_01_01"); //¡Claro! ¡Para venderlo otra vez en el Campamento Nuevo!
+		AI_Output (self, other,"DIA_Balor_RipOff_01_01"); //Â¡Claro! Â¡Para venderlo otra vez en el Campamento Nuevo!
 		AI_Output (self, other,"DIA_Balor_RipOff_01_02"); //Quiero 50 pepitas; el pago habitual por adelantado.
 	}
 	else
 	{
-		AI_Output (self, other,"DIA_Balor_RipOff_01_03"); //¿Otra vez tú? Bueno, aquí lo tienes, pero no hagas ninguna estupidez, ¿entiendes?
-		AI_Output (other, self,"DIA_Balor_RipOff_15_04"); //No sería capaz.
+		AI_Output (self, other,"DIA_Balor_RipOff_01_03"); //Â¿Otra vez tÃº? Bueno, aquÃ­ lo tienes, pero no hagas ninguna estupidez, Â¿entiendes?
+		AI_Output (other, self,"DIA_Balor_RipOff_15_04"); //No serÃ­a capaz.
 		CreateInvItems (self, ItMi_Plants_Swampherb_01, 50);
 		B_GiveInvItems (self, hero, ItMi_Plants_Swampherb_01, 50);
 	};
@@ -242,7 +242,7 @@ instance  DIA_Balor_Perm (C_INFO)
 	condition	= DIA_Balor_Perm_Condition;
 	information	= DIA_Balor_Perm_Info;
 	permanent	= 1;
-	description	= "¡Seguid esforzándoos en recoger!";
+	description	= "Â¡Seguid esforzÃ¡ndoos en recoger!";
 };                       
 
 FUNC int  DIA_Balor_Perm_Condition()
@@ -255,6 +255,6 @@ FUNC int  DIA_Balor_Perm_Condition()
 
 FUNC VOID  DIA_Balor_Perm_Info()
 {
-	AI_Output (other, self,"DIA_Balor_Perm_15_00"); //¡Tú sigue recogiendo!
-	AI_Output (self, other,"DIA_Balor_Perm_01_01"); //Pues claro, ¿qué te crees que estoy haciendo? ¿Tocándome las pelotas?
+	AI_Output (other, self,"DIA_Balor_Perm_15_00"); //Â¡TÃº sigue recogiendo!
+	AI_Output (self, other,"DIA_Balor_Perm_01_01"); //Pues claro, Â¿quÃ© te crees que estoy haciendo? Â¿TocÃ¡ndome las pelotas?
 };

@@ -33,7 +33,7 @@ instance DIA_Jeremiah_Hallo (C_INFO)
 	condition	= DIA_Jeremiah_Hallo_Condition;
 	information	= DIA_Jeremiah_Hallo_Info;
 	permanent	= 0;
-	description = "¿Qué estás haciendo?";
+	description = "Â¿QuÃ© estÃ¡s haciendo?";
 };                       
 
 FUNC int DIA_Jeremiah_Hallo_Condition()
@@ -43,7 +43,7 @@ FUNC int DIA_Jeremiah_Hallo_Condition()
 
 FUNC VOID  DIA_Jeremiah_Hallo_Info()
 {
-	AI_Output (other, self,"DIA_Jeremiah_Hallo_15_00"); //¿Qué estás haciendo?
+	AI_Output (other, self,"DIA_Jeremiah_Hallo_15_00"); //Â¿QuÃ© estÃ¡s haciendo?
 	AI_Output (self, other,"DIA_Jeremiah_Hallo_04_01"); //Estoy elaborando aguardiente de arroz, muchacho.
 	AI_Output (self, other,"DIA_Jeremiah_Hallo_04_02"); //Ten, toma una botella. Pero no se lo digas a Silas.
 	
@@ -64,7 +64,7 @@ instance DIA_Jeremiah_PERM (C_INFO)
 	condition	= DIA_Jeremiah_PERM_Condition;
 	information	= DIA_Jeremiah_PERM_Info;
 	permanent	= 1;
-	description = "¿Cómo va la destilería?";
+	description = "Â¿CÃ³mo va la destilerÃ­a?";
 };                       
 
 FUNC int DIA_Jeremiah_PERM_Condition()
@@ -74,9 +74,9 @@ FUNC int DIA_Jeremiah_PERM_Condition()
 
 FUNC VOID  DIA_Jeremiah_PERM_Info()
 {
-	AI_Output (other, self,"DIA_Jeremiah_PERM_15_00"); //¿Cómo va la destilería?
-	AI_Output (self, other,"DIA_Jeremiah_PERM_04_01"); //Apenas puedo aguantar el ritmo de estos tipos. ¡Caramba, cómo beben!
-	AI_Output (self, other,"DIA_Jeremiah_PERM_04_02"); //En realidad, es bueno que sea así. Mientras estoy ocupado, los perros falderos del Señor del Arroz me dejan en paz.
+	AI_Output (other, self,"DIA_Jeremiah_PERM_15_00"); //Â¿CÃ³mo va la destilerÃ­a?
+	AI_Output (self, other,"DIA_Jeremiah_PERM_04_01"); //Apenas puedo aguantar el ritmo de estos tipos. Â¡Caramba, cÃ³mo beben!
+	AI_Output (self, other,"DIA_Jeremiah_PERM_04_02"); //En realidad, es bueno que sea asÃ­. Mientras estoy ocupado, los perros falderos del SeÃ±or del Arroz me dejan en paz.
 	
 	Jeremiah_Bauer = TRUE;
 };
@@ -92,7 +92,7 @@ instance DIA_Jeremiah_Horatio (C_INFO)
 	condition	= DIA_Jeremiah_Horatio_Condition;
 	information	= DIA_Jeremiah_Horatio_Info;
 	permanent	= 0;
-	description = "¿Qué puedes decirme del Señor del Arroz?";
+	description = "Â¿QuÃ© puedes decirme del SeÃ±or del Arroz?";
 };                       
 
 FUNC int DIA_Jeremiah_Horatio_Condition()
@@ -105,10 +105,10 @@ FUNC int DIA_Jeremiah_Horatio_Condition()
 
 FUNC VOID  DIA_Jeremiah_Horatio_Info()
 {
-	AI_Output (other, self,"DIA_Jeremiah_Horatio_15_00"); //¿Qué puedes decirme del Señor del Arroz?
-	AI_Output (self, other,"DIA_Jeremiah_Horatio_04_01"); //¡Es un maldito cerdo! Sus matones se meten con los débiles y les obligan a trabajar en los arrozales.
-	AI_Output (self, other,"DIA_Jeremiah_Horatio_04_02"); //El único que podría enfrentarse a él es Horatio. Pero evita la violencia.
-	AI_Output (self, other,"DIA_Jeremiah_Horatio_04_03"); //En una ocasión le oí decir que le encantaría machacar la cabeza del Señor del Arroz, pero nunca lo haría.
-	AI_Output (self, other,"DIA_Jeremiah_Horatio_04_04"); //Iría contra sus convicciones.
+	AI_Output (other, self,"DIA_Jeremiah_Horatio_15_00"); //Â¿QuÃ© puedes decirme del SeÃ±or del Arroz?
+	AI_Output (self, other,"DIA_Jeremiah_Horatio_04_01"); //Â¡Es un maldito cerdo! Sus matones se meten con los dÃ©biles y les obligan a trabajar en los arrozales.
+	AI_Output (self, other,"DIA_Jeremiah_Horatio_04_02"); //El Ãºnico que podrÃ­a enfrentarse a Ã©l es Horatio. Pero evita la violencia.
+	AI_Output (self, other,"DIA_Jeremiah_Horatio_04_03"); //En una ocasiÃ³n le oÃ­ decir que le encantarÃ­a machacar la cabeza del SeÃ±or del Arroz, pero nunca lo harÃ­a.
+	AI_Output (self, other,"DIA_Jeremiah_Horatio_04_04"); //IrÃ­a contra sus convicciones.
 };
 

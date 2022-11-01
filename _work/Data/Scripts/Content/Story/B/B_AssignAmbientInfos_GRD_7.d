@@ -37,7 +37,7 @@ INSTANCE Info_grd_7_EinerVonEuchWerden (C_INFO) // E1
 	condition	= Info_grd_7_EinerVonEuchWerden_Condition;
 	information	= Info_grd_7_EinerVonEuchWerden_Info;
 	permanent	= 1;
-	description = "øQuÈ tengo que hacer para ser aceptado en la guardia de GÛmez?";
+	description = "¬øQu√© tengo que hacer para ser aceptado en la guardia de G√≥mez?";
 };                       
 
 FUNC INT Info_grd_7_EinerVonEuchWerden_Condition()
@@ -53,10 +53,10 @@ FUNC INT Info_grd_7_EinerVonEuchWerden_Condition()
 
 FUNC VOID Info_grd_7_EinerVonEuchWerden_Info()
 {
-	AI_Output(other,self,"Info_grd_7_EinerVonEuchWerden_15_00"); //øQuÈ tengo que hacer para ser aceptado en la guardia de GÛmez?
-	AI_Output(self,other,"Info_grd_7_EinerVonEuchWerden_07_01"); //øT˙? Bromeas. øCrees que puedes presentarte aquÌ pavone·ndote e ir directamente a la cima, o quÈ?
-	AI_Output(self,other,"Info_grd_7_EinerVonEuchWerden_07_02"); //GÛmez sÛlo selecciona a los mejores para ser guardias.
-	AI_Output(self,other,"Info_grd_7_EinerVonEuchWerden_07_03"); //Tienes que ascender por medio de tu trabajo como todos los dem·s, y demostrar tu lealtad como Sombra.
+	AI_Output(other,self,"Info_grd_7_EinerVonEuchWerden_15_00"); //¬øQu√© tengo que hacer para ser aceptado en la guardia de G√≥mez?
+	AI_Output(self,other,"Info_grd_7_EinerVonEuchWerden_07_01"); //¬øT√∫? Bromeas. ¬øCrees que puedes presentarte aqu√≠ pavone√°ndote e ir directamente a la cima, o qu√©?
+	AI_Output(self,other,"Info_grd_7_EinerVonEuchWerden_07_02"); //G√≥mez s√≥lo selecciona a los mejores para ser guardias.
+	AI_Output(self,other,"Info_grd_7_EinerVonEuchWerden_07_03"); //Tienes que ascender por medio de tu trabajo como todos los dem√°s, y demostrar tu lealtad como Sombra.
 };
 
 // *************************************************************************
@@ -69,7 +69,7 @@ INSTANCE Info_grd_7_WichtigePersonen(C_INFO)
 	condition	= Info_grd_7_WichtigePersonen_Condition;
 	information	= Info_grd_7_WichtigePersonen_Info;
 	permanent	= 1;
-	description = "øQuiÈn manda por aquÌ?";
+	description = "¬øQui√©n manda por aqu√≠?";
 };                       
 
 FUNC INT Info_grd_7_WichtigePersonen_Condition()
@@ -81,7 +81,7 @@ FUNC INT Info_grd_7_WichtigePersonen_Condition()
 };
 FUNC VOID Info_grd_7_WichtigePersonen_Info()
 {
-	AI_Output(other,self,"Info_grd_7_WichtigePersonen_15_00"); //øQuiÈn manda por aquÌ?
+	AI_Output(other,self,"Info_grd_7_WichtigePersonen_15_00"); //¬øQui√©n manda por aqu√≠?
 	AI_Output(self,other,"Info_grd_7_WichtigePersonen_07_01"); //Thorus controla todo lo que pasa en el campamento. Diego es su lugarteniente.
 	AI_Output(self,other,"Info_grd_7_WichtigePersonen_07_02"); //Si quieres llegar a alguna parte, son los tipos con quienes tienes que hablar.
 	var C_NPC Diego;		Diego 	= Hlp_GetNpc(PC_Thief);
@@ -100,7 +100,7 @@ INSTANCE Info_grd_7_DasLager(C_INFO)
 	condition	= Info_grd_7_DasLager_Condition;
 	information	= Info_grd_7_DasLager_Info;
 	permanent	= 1;
-	description = "øAquÌ todo el mundo trabaja para GÛmez?";
+	description = "¬øAqu√≠ todo el mundo trabaja para G√≥mez?";
 };                       
 
 FUNC INT Info_grd_7_DasLager_Condition()
@@ -112,14 +112,14 @@ FUNC INT Info_grd_7_DasLager_Condition()
 };
 FUNC VOID Info_grd_7_DasLager_Info()
 {
-	AI_Output(other,self,"Info_grd_7_DasLager_15_00"); //øAquÌ todo el mundo trabaja para GÛmez?
-	AI_Output(self,other,"Info_grd_7_DasLager_07_01"); //No. La mayorÌa sÛlo son cavadores.
-	AI_Output(self,other,"Info_grd_7_DasLager_07_02"); //SÛlo los guardias y las Sombras est·n con GÛmez.
+	AI_Output(other,self,"Info_grd_7_DasLager_15_00"); //¬øAqu√≠ todo el mundo trabaja para G√≥mez?
+	AI_Output(self,other,"Info_grd_7_DasLager_07_01"); //No. La mayor√≠a s√≥lo son cavadores.
+	AI_Output(self,other,"Info_grd_7_DasLager_07_02"); //S√≥lo los guardias y las Sombras est√°n con G√≥mez.
 	Info_ClearChoices(Info_grd_7_DasLager);
-	Info_AddChoice(Info_grd_7_DasLager,"ATR¡S", Info_grd_7_DasLager_Zurueck);
-	Info_AddChoice(Info_grd_7_DasLager,"øQuÈ hacen los guardias?", Info_grd_7_DasLager_Gardisten);
-	Info_AddChoice(Info_grd_7_DasLager,"øQuÈ hacen las Sombras?", Info_grd_7_DasLager_Schatten);
-	Info_AddChoice(Info_grd_7_DasLager,"øQuÈ hacen los cavadores?", Info_grd_7_DasLager_Buddler);
+	Info_AddChoice(Info_grd_7_DasLager,"ATR√ÅS", Info_grd_7_DasLager_Zurueck);
+	Info_AddChoice(Info_grd_7_DasLager,"¬øQu√© hacen los guardias?", Info_grd_7_DasLager_Gardisten);
+	Info_AddChoice(Info_grd_7_DasLager,"¬øQu√© hacen las Sombras?", Info_grd_7_DasLager_Schatten);
+	Info_AddChoice(Info_grd_7_DasLager,"¬øQu√© hacen los cavadores?", Info_grd_7_DasLager_Buddler);
 };
 
 FUNC VOID Info_grd_7_DasLager_ZURUECK()
@@ -129,27 +129,27 @@ FUNC VOID Info_grd_7_DasLager_ZURUECK()
 
 FUNC VOID Info_grd_7_DasLager_Gardisten()
 {
-	AI_Output(other,self,"Info_grd_7_DasLager_WasIstAerger_15_00"); //øQuÈ hacen los guardias?
+	AI_Output(other,self,"Info_grd_7_DasLager_WasIstAerger_15_00"); //¬øQu√© hacen los guardias?
 	AI_Output(self,other,"Info_grd_7_DasLager_WasIstAerger_07_01"); //Vigilamos el campamento y protegemos a los cavadores.
-	AI_Output(self,other,"Info_grd_7_DasLager_WasIstAerger_07_02"); //GÛmez nos paga, y los cavadores nos dan dinero a cambio de protecciÛn. Es un negocio bastante lucrativo.
+	AI_Output(self,other,"Info_grd_7_DasLager_WasIstAerger_07_02"); //G√≥mez nos paga, y los cavadores nos dan dinero a cambio de protecci√≥n. Es un negocio bastante lucrativo.
 };
 
 FUNC VOID Info_grd_7_DasLager_Schatten()
 {
-	AI_Output(other,self,"Info_grd_7_DasLager_Schatten_15_00"); //øQuÈ hacen las Sombras?
-	AI_Output(self,other,"Info_grd_7_DasLager_Schatten_07_01"); //Las Sombras hacen que se obedezcan las Ûrdenes de GÛmez.
-	AI_Output(self,other,"Info_grd_7_DasLager_Schatten_07_02"); //La mayorÌa son pelotas tratando de ascender por el escalafÛn. Si quieres llegar a alguna parte aquÌ, Èse es el camino a seguir.
+	AI_Output(other,self,"Info_grd_7_DasLager_Schatten_15_00"); //¬øQu√© hacen las Sombras?
+	AI_Output(self,other,"Info_grd_7_DasLager_Schatten_07_01"); //Las Sombras hacen que se obedezcan las √≥rdenes de G√≥mez.
+	AI_Output(self,other,"Info_grd_7_DasLager_Schatten_07_02"); //La mayor√≠a son pelotas tratando de ascender por el escalaf√≥n. Si quieres llegar a alguna parte aqu√≠, √©se es el camino a seguir.
 	AI_Output(self,other,"Info_grd_7_DasLager_Schatten_07_03"); //Si realizas tus quehaceres sin fallar durante bastante tiempo, puedes convertirte en uno de nosotros.
-	AI_Output(self,other,"Info_grd_7_DasLager_Schatten_07_04"); //Una vez estÈs con GÛmez, nadie de la colonia te molestar· m·s, muchacho.
+	AI_Output(self,other,"Info_grd_7_DasLager_Schatten_07_04"); //Una vez est√©s con G√≥mez, nadie de la colonia te molestar√° m√°s, muchacho.
 };
 
 FUNC VOID Info_grd_7_DasLager_Buddler()
 {
-	AI_Output(other,self,"Info_grd_7_DasLager_Buddler_15_00"); //øQuÈ hacen los cavadores?
-	AI_Output(self,other,"Info_grd_7_DasLager_Buddler_07_01"); //°Buena pregunta! No deberÌamos dejar que esos comebarro salieran de la mina.
-	AI_Output(self,other,"Info_grd_7_DasLager_Buddler_07_02"); //Cuando llevan bastante tiempo en la mina, salen para gastarse su botÌn.
-	AI_Output(self,other,"Info_grd_7_DasLager_Buddler_07_03"); //Cuando lo han derrochado, vuelven a la mina. Eso es lo que hace la mayorÌa de la gente.
-	AI_Output(self,other,"Info_grd_7_DasLager_Buddler_07_04"); //Parece que est·s hecho para algo m·s que manejar un pico. DeberÌas hablar con Thorus, si es que no lo has hecho ya.
+	AI_Output(other,self,"Info_grd_7_DasLager_Buddler_15_00"); //¬øQu√© hacen los cavadores?
+	AI_Output(self,other,"Info_grd_7_DasLager_Buddler_07_01"); //¬°Buena pregunta! No deber√≠amos dejar que esos comebarro salieran de la mina.
+	AI_Output(self,other,"Info_grd_7_DasLager_Buddler_07_02"); //Cuando llevan bastante tiempo en la mina, salen para gastarse su bot√≠n.
+	AI_Output(self,other,"Info_grd_7_DasLager_Buddler_07_03"); //Cuando lo han derrochado, vuelven a la mina. Eso es lo que hace la mayor√≠a de la gente.
+	AI_Output(self,other,"Info_grd_7_DasLager_Buddler_07_04"); //Parece que est√°s hecho para algo m√°s que manejar un pico. Deber√≠as hablar con Thorus, si es que no lo has hecho ya.
 	VAR C_NPC Thorus; Thorus = Hlp_GetNpc(GRD_200_THORUS);
 	Thorus.aivar[AIV_FINDABLE]=TRUE;
 };
@@ -164,7 +164,7 @@ INSTANCE Info_grd_7_DieLage(C_INFO) // E1
 	condition	= Info_grd_7_DieLage_Condition;
 	information	= Info_grd_7_DieLage_Info;
 	permanent	= 1;
-	description = "øQuÈ tal?";
+	description = "¬øQu√© tal?";
 };                       
 
 FUNC INT Info_grd_7_DieLage_Condition()
@@ -176,8 +176,8 @@ FUNC INT Info_grd_7_DieLage_Condition()
 };
 FUNC VOID Info_grd_7_DieLage_Info()
 {
-	AI_Output(other,self,"Info_grd_7_DieLage_15_00"); //øQuÈ tal?
-	AI_Output(self,other,"Info_grd_7_DieLage_07_01"); //øPara ti, quieres decir? Hasta que decidas con quÈ campamento est·s, nadie va a tomarte en serio, chaval.
+	AI_Output(other,self,"Info_grd_7_DieLage_15_00"); //¬øQu√© tal?
+	AI_Output(self,other,"Info_grd_7_DieLage_07_01"); //¬øPara ti, quieres decir? Hasta que decidas con qu√© campamento est√°s, nadie va a tomarte en serio, chaval.
 };
 	
 // *************************************************************************

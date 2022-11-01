@@ -33,7 +33,7 @@ instance DIA_Aidan_Hello (C_INFO)
 	condition		= DIA_Aidan_Hello_Condition;
 	information		= DIA_Aidan_Hello_Info;
 	permanent		= 0;
-	description		= "¿Qué haces aquí?";
+	description		= "Â¿QuÃ© haces aquÃ­?";
 };
 
 FUNC int  DIA_Aidan_Hello_Condition()
@@ -43,13 +43,13 @@ FUNC int  DIA_Aidan_Hello_Condition()
 
 func void  DIA_Aidan_Hello_Info()
 {
-	AI_Output (other, self,"DIA_Aidan_Hello_15_00"); //¿Qué estás haciendo aquí?
+	AI_Output (other, self,"DIA_Aidan_Hello_15_00"); //Â¿QuÃ© estÃ¡s haciendo aquÃ­?
 	AI_Output (self, other,"DIA_Aidan_Hello_13_01"); //Soy un cazador. Me gano la vida vendiendo pieles y dientes.
-	AI_Output (other, self,"DIA_Aidan_Hello_15_02"); //¿Se saca dinero con eso?
-	AI_Output (self, other,"DIA_Aidan_Hello_13_03"); //Sí; siempre que conozcas la manera correcta de descuartizar a estas bestias.
+	AI_Output (other, self,"DIA_Aidan_Hello_15_02"); //Â¿Se saca dinero con eso?
+	AI_Output (self, other,"DIA_Aidan_Hello_13_03"); //SÃ­; siempre que conozcas la manera correcta de descuartizar a estas bestias.
 
 	Log_CreateTopic	(GE_TeacherOW,	LOG_NOTE);
-	B_LogEntry		(GE_TeacherOW,"Aidan, un cazador que vive en el camino entre los Campamentos Viejo y Nuevo, puede enseñarme a destripar animales.");
+	B_LogEntry		(GE_TeacherOW,"Aidan, un cazador que vive en el camino entre los Campamentos Viejo y Nuevo, puede enseÃ±arme a destripar animales.");
 };
 
 // **************************************************
@@ -81,7 +81,7 @@ FUNC VOID  Org_859_Aidan_Creatures_Info()
 	
 	if ( (Knows_GetTeeth == FALSE)||(Knows_GetFur == FALSE)||(Knows_GetClaws == FALSE)||(Knows_GetHide == FALSE) )
 	{
-		AI_Output (self, other,"Org_859_Aidan_Creatures_13_01"); //¿Qué es lo que quieres saber?
+		AI_Output (self, other,"Org_859_Aidan_Creatures_13_01"); //Â¿QuÃ© es lo que quieres saber?
 		
 		Info_ClearChoices(Org_859_Aidan_Creatures);
 		Info_AddChoice   (Org_859_Aidan_Creatures, DIALOG_BACK 											,Org_859_Aidan_Creatures_BACK);
@@ -105,7 +105,7 @@ FUNC VOID  Org_859_Aidan_Creatures_Info()
 	}
 	else
 	{
-		AI_Output (self, other,"Org_859_Aidan_Creatures_TaughtAll_13_00"); //Te he enseñado todo lo que sé.
+		AI_Output (self, other,"Org_859_Aidan_Creatures_TaughtAll_13_00"); //Te he enseÃ±ado todo lo que sÃ©.
 	};
 };
 
@@ -116,7 +116,7 @@ func void Org_859_Aidan_Creatures_BACK()
 
 func void Org_859_Aidan_Creatures_Zahn()
 {
-	AI_Output (other, self,"Org_859_Aidan_Creatures_Zahn_15_00"); //¿Cómo hago para sacar los dientes?
+	AI_Output (other, self,"Org_859_Aidan_Creatures_Zahn_15_00"); //Â¿CÃ³mo hago para sacar los dientes?
 	
 	if (Npc_HasItems(other,itminugget)>=50)
 	{
@@ -128,28 +128,28 @@ func void Org_859_Aidan_Creatures_Zahn()
 			
 			PrintScreen	("Aprender: sacar dientes", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
 					
-			AI_Output (self, other,"Org_859_Aidan_Creatures_Zahn_13_01"); //Lo más importante es lograr que no se astillen. Para evitarlo, aplica tu puñal cerca del centro del diente y haz palanca con mucho cuidado.
+			AI_Output (self, other,"Org_859_Aidan_Creatures_Zahn_13_01"); //Lo mÃ¡s importante es lograr que no se astillen. Para evitarlo, aplica tu puÃ±al cerca del centro del diente y haz palanca con mucho cuidado.
 			AI_Output (self, other,"Org_859_Aidan_Creatures_Zahn_13_02"); //Puedes sacarle los dientes a los lobos, bestias de sombra y chasqueadores.
 			
 			Knows_GetTeeth = TRUE;
 			Log_CreateTopic (GE_AnimalTrophies,LOG_NOTE);
-			B_LogEntry (GE_AnimalTrophies,"Conocimientos sobre la extracción de dientes: lobo, perro orco, chasqueador, mordedor, sabueso de sangre, bestia de sombra.");
+			B_LogEntry (GE_AnimalTrophies,"Conocimientos sobre la extracciÃ³n de dientes: lobo, perro orco, chasqueador, mordedor, sabueso de sangre, bestia de sombra.");
 		}
 		else
 		{
-			AI_Output (self, other,"Org_859_Aidan_Creatures_KEINE_LP_13_00"); //Necesitas más experiencia; si no, mis consejos no te servirán de nada.
-			PrintScreen	("¡Faltan puntos de habilidad!", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
+			AI_Output (self, other,"Org_859_Aidan_Creatures_KEINE_LP_13_00"); //Necesitas mÃ¡s experiencia; si no, mis consejos no te servirÃ¡n de nada.
+			PrintScreen	("Â¡Faltan puntos de habilidad!", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
 		};
 	}
 	else
 	{
-		AI_Output (self, other,"Org_859_Aidan_Creatures_KEIN_ERZ_13_00"); //Antes quiero ver algo de mineral. ¡Como ya te dije, todo tiene un precio!
+		AI_Output (self, other,"Org_859_Aidan_Creatures_KEIN_ERZ_13_00"); //Antes quiero ver algo de mineral. Â¡Como ya te dije, todo tiene un precio!
 	};
 };
 
 func void Org_859_Aidan_Creatures_Fell()
 {
-	AI_Output (other, self,"Org_859_Aidan_Creatures_Fell_15_00"); //¿Cómo hago para despellejar a estas criaturas?
+	AI_Output (other, self,"Org_859_Aidan_Creatures_Fell_15_00"); //Â¿CÃ³mo hago para despellejar a estas criaturas?
 	
 	if (Npc_HasItems(other,itminugget)>=100)
 	{
@@ -161,22 +161,22 @@ func void Org_859_Aidan_Creatures_Fell()
 			
 			PrintScreen	("Aprender: despellejar", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
 		
-			AI_Output (self, other,"Org_859_Aidan_Creatures_Fell_13_01"); //Es muy importante despellejarlas de atrás adelante. Te resultará fácil una vez le hayas cogido el truco. ¡Las pieles son muy valiosas!
-			AI_Output (self, other,"Org_859_Aidan_Creatures_Fell_13_02"); //Las pieles de los lobos y bestias de sombra puede utilizarse para confeccionar ropas. Cuando examines la piel de un animal muerto, pronto verás si puede ser utilizada o no. 
+			AI_Output (self, other,"Org_859_Aidan_Creatures_Fell_13_01"); //Es muy importante despellejarlas de atrÃ¡s adelante. Te resultarÃ¡ fÃ¡cil una vez le hayas cogido el truco. Â¡Las pieles son muy valiosas!
+			AI_Output (self, other,"Org_859_Aidan_Creatures_Fell_13_02"); //Las pieles de los lobos y bestias de sombra puede utilizarse para confeccionar ropas. Cuando examines la piel de un animal muerto, pronto verÃ¡s si puede ser utilizada o no. 
 			
 			Knows_GetFur = TRUE;
 			Log_CreateTopic (GE_AnimalTrophies,LOG_NOTE);
-			B_LogEntry (GE_AnimalTrophies,"Conocimientos sobre cómo quitar pieles: lobo, perro orco, bestia de sombra, troll.");
+			B_LogEntry (GE_AnimalTrophies,"Conocimientos sobre cÃ³mo quitar pieles: lobo, perro orco, bestia de sombra, troll.");
 		}
 		else
 		{
-			AI_Output (self, other,"Org_859_Aidan_Creatures_KEINE_LP_13_00"); //Necesitas más experiencia; si no, mis consejos no te servirán de nada.
-			PrintScreen	("¡Faltan puntos de habilidad!", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
+			AI_Output (self, other,"Org_859_Aidan_Creatures_KEINE_LP_13_00"); //Necesitas mÃ¡s experiencia; si no, mis consejos no te servirÃ¡n de nada.
+			PrintScreen	("Â¡Faltan puntos de habilidad!", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
 		};
 	}
 	else
 	{
-		AI_Output (self, other,"Org_859_Aidan_Creatures_KEIN_ERZ_13_00"); //Antes quiero ver algo de mineral. ¡Como ya te dije, todo tiene un precio!
+		AI_Output (self, other,"Org_859_Aidan_Creatures_KEIN_ERZ_13_00"); //Antes quiero ver algo de mineral. Â¡Como ya te dije, todo tiene un precio!
 	};
 };
 
@@ -192,23 +192,23 @@ func void Org_859_Aidan_Creatures_Kralle()
 			
 			PrintScreen	("Aprender: arrancar garras", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
 			
-			AI_Output (other, self,"Org_859_Aidan_Creatures_Kralle_15_00"); //¡Enséñame a arrancar las garras!
-			AI_Output (self, other,"Org_859_Aidan_Creatures_Kralle_13_01"); //La verdad es que es muy sencillo, si sabes lo que tienes que hacer. Dobla las garras hacia delante, nunca hacia atrás; ¡tampoco debes sacarlas tirando de ellas!
-			AI_Output (self, other,"Org_859_Aidan_Creatures_Kralle_13_02"); //Las garras de lagarto son especialmente útiles. A partir de ahora, sabrás de qué criaturas debes obtener garras.
+			AI_Output (other, self,"Org_859_Aidan_Creatures_Kralle_15_00"); //Â¡EnsÃ©Ã±ame a arrancar las garras!
+			AI_Output (self, other,"Org_859_Aidan_Creatures_Kralle_13_01"); //La verdad es que es muy sencillo, si sabes lo que tienes que hacer. Dobla las garras hacia delante, nunca hacia atrÃ¡s; Â¡tampoco debes sacarlas tirando de ellas!
+			AI_Output (self, other,"Org_859_Aidan_Creatures_Kralle_13_02"); //Las garras de lagarto son especialmente Ãºtiles. A partir de ahora, sabrÃ¡s de quÃ© criaturas debes obtener garras.
 			
 			Knows_GetClaws = TRUE;
 			Log_CreateTopic (GE_AnimalTrophies,LOG_NOTE);
-			B_LogEntry (GE_AnimalTrophies,"Conocimiento sobre la extracción de garras: lagarto, chasqueador, acechador, mordedor, cuchilla.");
+			B_LogEntry (GE_AnimalTrophies,"Conocimiento sobre la extracciÃ³n de garras: lagarto, chasqueador, acechador, mordedor, cuchilla.");
 		}
 		else
 		{
-			AI_Output (self, other,"Org_859_Aidan_Creatures_KEINE_LP_13_00"); //Necesitas más experiencia; si no, mis consejos no te servirán de nada.
-			PrintScreen	("¡Faltan puntos de habilidad!", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
+			AI_Output (self, other,"Org_859_Aidan_Creatures_KEINE_LP_13_00"); //Necesitas mÃ¡s experiencia; si no, mis consejos no te servirÃ¡n de nada.
+			PrintScreen	("Â¡Faltan puntos de habilidad!", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
 		};
 	}
 	else
 	{
-		AI_Output (self, other,"Org_859_Aidan_Creatures_KEIN_ERZ_13_00"); //Antes quiero ver algo de mineral. ¡Como ya te dije, todo tiene un precio!
+		AI_Output (self, other,"Org_859_Aidan_Creatures_KEIN_ERZ_13_00"); //Antes quiero ver algo de mineral. Â¡Como ya te dije, todo tiene un precio!
 	};
 };
 
@@ -224,22 +224,22 @@ func void Org_859_Aidan_Creatures_Haut()
 			
 			PrintScreen	("Aprender: desollar lagarto", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
 				
-			AI_Output (other, self,"Org_859_Aidan_Creatures_Haut_15_00"); //¿Qué debo tener en cuenta al despellejar reptiles?
-			AI_Output (self, other,"Org_859_Aidan_Creatures_Haut_13_01"); //Los únicos reptiles adecuados para este propósito son los acechadores y los tiburones de la ciénaga.
-			AI_Output (self, other,"Org_859_Aidan_Creatures_Haut_13_02"); //Si cortas la piel por los costados, saldrá sola. De ahora en adelante deberías poder despellejar reptiles.
+			AI_Output (other, self,"Org_859_Aidan_Creatures_Haut_15_00"); //Â¿QuÃ© debo tener en cuenta al despellejar reptiles?
+			AI_Output (self, other,"Org_859_Aidan_Creatures_Haut_13_01"); //Los Ãºnicos reptiles adecuados para este propÃ³sito son los acechadores y los tiburones de la ciÃ©naga.
+			AI_Output (self, other,"Org_859_Aidan_Creatures_Haut_13_02"); //Si cortas la piel por los costados, saldrÃ¡ sola. De ahora en adelante deberÃ­as poder despellejar reptiles.
 				
 			Knows_GetHide = TRUE;
 			Log_CreateTopic (GE_AnimalTrophies,LOG_NOTE);
-			B_LogEntry (GE_AnimalTrophies,"Conocimientos sobre cómo quitar pieles: acechador, tiburón de la ciénaga.");
+			B_LogEntry (GE_AnimalTrophies,"Conocimientos sobre cÃ³mo quitar pieles: acechador, tiburÃ³n de la ciÃ©naga.");
 		}
 		else
 		{
-			AI_Output (self, other,"Org_859_Aidan_Creatures_KEINE_LP_13_00"); //Necesitas más experiencia; si no, mis consejos no te servirán de nada.
-			PrintScreen	("¡Faltan puntos de habilidad!", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
+			AI_Output (self, other,"Org_859_Aidan_Creatures_KEINE_LP_13_00"); //Necesitas mÃ¡s experiencia; si no, mis consejos no te servirÃ¡n de nada.
+			PrintScreen	("Â¡Faltan puntos de habilidad!", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
 		};
 	}
 	else
 	{
-		AI_Output (self, other,"Org_859_Aidan_Creatures_KEIN_ERZ_13_00"); //Antes quiero ver algo de mineral. ¡Como ya te dije, todo tiene un precio!
+		AI_Output (self, other,"Org_859_Aidan_Creatures_KEIN_ERZ_13_00"); //Antes quiero ver algo de mineral. Â¡Como ya te dije, todo tiene un precio!
 	};
 };

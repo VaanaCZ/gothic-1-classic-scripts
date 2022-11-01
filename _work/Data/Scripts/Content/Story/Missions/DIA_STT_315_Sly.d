@@ -23,7 +23,7 @@ FUNC VOID DIA_STT_315_Sly_Exit_Info()
 };
 
 // **************************************************
-// 					Erste Begrüssung 
+// 					Erste BegrÃ¼ssung 
 // **************************************************
 
 instance DIA_STT_315_Sly (C_INFO)
@@ -48,12 +48,12 @@ func void DIA_STT_315_Sly_Info()
 {
 	AI_SetWalkmode	(self, NPC_WALK);
 	AI_GotoNpc		(self, other);
-	AI_Output		(self, other,"DIA_STT_315_Sly_10_01"); //Eres nuevo aquí, ¿verdad? Tu cara no me resulta conocida.
-	AI_Output		(self, other,"DIA_STT_315_Sly_10_02"); //Me llamo Sly. Tengo una oferta de trabajo para un recién llegado..
+	AI_Output		(self, other,"DIA_STT_315_Sly_10_01"); //Eres nuevo aquÃ­, Â¿verdad? Tu cara no me resulta conocida.
+	AI_Output		(self, other,"DIA_STT_315_Sly_10_02"); //Me llamo Sly. Tengo una oferta de trabajo para un reciÃ©n llegado..
 };
 
 // **************************************************
-// 					Erste Begrüssung 
+// 					Erste BegrÃ¼ssung 
 // **************************************************
 	var int Sly_LostNek;
 // **************************************************
@@ -65,7 +65,7 @@ INSTANCE DIA_STT_315_LostNek (C_INFO)
 	condition		= DIA_STT_315_LostNek_Condition;
 	information		= DIA_STT_315_LostNek_Info;
 	permanent		= 0;
-	description		= "¿Tienes trabajo para mí? ¿En qué consiste?";
+	description		= "Â¿Tienes trabajo para mÃ­? Â¿En quÃ© consiste?";
 };
 
 FUNC INT DIA_STT_315_LostNek_Condition()
@@ -75,35 +75,35 @@ FUNC INT DIA_STT_315_LostNek_Condition()
 
 func VOID DIA_STT_315_LostNek_Info()
 {
-	AI_Output (other, self,"DIA_STT_315_LostNek_15_00"); //¿Tienes un trabajo para mí? ¿Cuál?
-	AI_Output (self, other,"DIA_STT_315_LostNek_10_01"); //¡Uno de nuestros guardias ha desaparecido! Se llama Nek. Es posible que se haya pasado al Campamento Nuevo.
-	AI_Output (self, other,"DIA_STT_315_LostNek_10_02"); //Al ser nuevo aquí, andarás mucho por ahí. Así que mantén los ojos bien abiertos.
+	AI_Output (other, self,"DIA_STT_315_LostNek_15_00"); //Â¿Tienes un trabajo para mÃ­? Â¿CuÃ¡l?
+	AI_Output (self, other,"DIA_STT_315_LostNek_10_01"); //Â¡Uno de nuestros guardias ha desaparecido! Se llama Nek. Es posible que se haya pasado al Campamento Nuevo.
+	AI_Output (self, other,"DIA_STT_315_LostNek_10_02"); //Al ser nuevo aquÃ­, andarÃ¡s mucho por ahÃ­. AsÃ­ que mantÃ©n los ojos bien abiertos.
 	
 	if (Npc_GetTrueGuild (hero) == GIL_NONE)
 	{
-	AI_Output (self, other,"DIA_STT_315_LostNek_10_03"); //Si le encuentras, hablaré en tu favor en el Campamento.
+	AI_Output (self, other,"DIA_STT_315_LostNek_10_03"); //Si le encuentras, hablarÃ© en tu favor en el Campamento.
 	};
 	Info_ClearChoices	(DIA_STT_315_LostNek);
-	Info_AddChoice		(DIA_STT_315_LostNek,"Veré si puedo encontrarlo.",DIA_STT_315_LostNek_DoIt);
+	Info_AddChoice		(DIA_STT_315_LostNek,"VerÃ© si puedo encontrarlo.",DIA_STT_315_LostNek_DoIt);
 	
 	if (Npc_GetTrueGuild (hero) == GIL_NONE)
 	{
-		Info_AddChoice		(DIA_STT_315_LostNek,"¿De qué servirá que hables en mi favor?",DIA_STT_315_LostNek_Why);
+		Info_AddChoice		(DIA_STT_315_LostNek,"Â¿De quÃ© servirÃ¡ que hables en mi favor?",DIA_STT_315_LostNek_Why);
 	};
 };
 
 func void DIA_STT_315_LostNek_Why()
 {
-	AI_Output (other, self,"DIA_STT_315_LostNek_Why_15_00"); //¿Para qué me servirá que hables en mi favor?
+	AI_Output (other, self,"DIA_STT_315_LostNek_Why_15_00"); //Â¿Para quÃ© me servirÃ¡ que hables en mi favor?
 	AI_Output (self, other,"DIA_STT_315_LostNek_Why_10_01"); //Si quieres unirte al Campamento, necesitas a gente que hable en tu favor.
-	AI_Output (self, other,"DIA_STT_315_LostNek_Why_10_02"); //Si Diego y yo hablamos en tu favor, eso te ayudaría mucho.
+	AI_Output (self, other,"DIA_STT_315_LostNek_Why_10_02"); //Si Diego y yo hablamos en tu favor, eso te ayudarÃ­a mucho.
 };
 
 func void DIA_STT_315_LostNek_DoIt()
 {
-	AI_Output (other, self,"DIA_STT_315_LostNek_DoIt_15_00"); //Intentaré encontrarle.
-	AI_Output (self, other,"DIA_STT_315_LostNek_DoIt_10_01"); //Si ves a Fletcher, pregúntale por Nek. Él es quien ha pasado a encargarse del distrito tras la desaparición de Nek.
-	AI_Output (other, self,"DIA_STT_315_LostNek_DoIt_15_02"); //¿Dónde puedo encontrarle?
+	AI_Output (other, self,"DIA_STT_315_LostNek_DoIt_15_00"); //IntentarÃ© encontrarle.
+	AI_Output (self, other,"DIA_STT_315_LostNek_DoIt_10_01"); //Si ves a Fletcher, pregÃºntale por Nek. Ã‰l es quien ha pasado a encargarse del distrito tras la desapariciÃ³n de Nek.
+	AI_Output (other, self,"DIA_STT_315_LostNek_DoIt_15_02"); //Â¿DÃ³nde puedo encontrarle?
 	AI_Output (self, other,"DIA_STT_315_LostNek_DoIt_10_03"); //Su distrito es el de la arena.
 	Sly_LostNek = LOG_RUNNING;
 	
@@ -111,13 +111,13 @@ func void DIA_STT_315_LostNek_DoIt()
 	{
 		Log_CreateTopic( CH1_LostNek, LOG_MISSION);
 		Log_SetTopicStatus( CH1_LostNek, LOG_RUNNING);
-		B_LogEntry( CH1_LostNek,"Sly, la Sombra, ha prometido hablan por mí ante Diego si encuentro a Nek. El guardia puede haberse unido al Campamento Nuevo. Debería preguntar por Nek a Fletcher, del distrito de la arena.");
+		B_LogEntry( CH1_LostNek,"Sly, la Sombra, ha prometido hablan por mÃ­ ante Diego si encuentro a Nek. El guardia puede haberse unido al Campamento Nuevo. DeberÃ­a preguntar por Nek a Fletcher, del distrito de la arena.");
 	}
 	else
 	{
 		Log_CreateTopic( CH1_LostNek, LOG_MISSION);
 		Log_SetTopicStatus( CH1_LostNek, LOG_RUNNING);
-		B_LogEntry( CH1_LostNek,"Sly, la Sombra, me ha pedido que encuentre al guardia desterrado Nek, que podría haberse unido al Campamento Nuevo. Debería preguntar por Nek a Fletcher, del distrito de la arena.");
+		B_LogEntry( CH1_LostNek,"Sly, la Sombra, me ha pedido que encuentre al guardia desterrado Nek, que podrÃ­a haberse unido al Campamento Nuevo. DeberÃ­a preguntar por Nek a Fletcher, del distrito de la arena.");
 	};
 	Info_ClearChoices	(DIA_STT_315_LostNek );
 	AI_StopProcessInfos	(self);
@@ -148,22 +148,22 @@ FUNC INT DIA_STT_315_LostNekSuccess_Condition()
 func VOID DIA_STT_315_LostNekSuccess_Info()
 {
 	AI_Output (other, self,"DIA_STT_315_LostNekSuccess_15_00"); //He encontrado a Nek.
-	AI_Output (self, other,"DIA_STT_315_LostNekSuccess_10_01"); //¡Espléndido! ¿Tienes alguna prueba de ello?
+	AI_Output (self, other,"DIA_STT_315_LostNekSuccess_10_01"); //Â¡EsplÃ©ndido! Â¿Tienes alguna prueba de ello?
 	
 	Info_ClearChoices	(DIA_STT_315_LostNekSuccess );
 	Info_AddChoice		(DIA_STT_315_LostNekSuccess,"No, me temo que no.",DIA_STT_315_LostNekSuccess_NoProof);
-	Info_AddChoice		(DIA_STT_315_LostNekSuccess,"He encontrado este amuleto que llevaba encima. Aquí tienes.",DIA_STT_315_LostNekSuccess_Proof);
+	Info_AddChoice		(DIA_STT_315_LostNekSuccess,"He encontrado este amuleto que llevaba encima. AquÃ­ tienes.",DIA_STT_315_LostNekSuccess_Proof);
 };
 
 func void DIA_STT_315_LostNekSuccess_Proof()
 {
-	AI_Output (other, self,"DIA_STT_315_LostNekSuccess_Proof_15_00"); //Llevaba encima un amuleto; aquí lo tienes.
+	AI_Output (other, self,"DIA_STT_315_LostNekSuccess_Proof_15_00"); //Llevaba encima un amuleto; aquÃ­ lo tienes.
 	AI_Output (self, other,"DIA_STT_315_LostNekSuccess_Proof_10_01"); //La verdad es que lo importante era el amuleto. Eres un tipo listo.
-	AI_Output (self, other,"DIA_STT_315_LostNekSuccess_Proof_10_02"); //Puede que hayas pensado en quedarte con el amuleto, pero has tomado la decisión correcta.
+	AI_Output (self, other,"DIA_STT_315_LostNekSuccess_Proof_10_02"); //Puede que hayas pensado en quedarte con el amuleto, pero has tomado la decisiÃ³n correcta.
 	if (Npc_GetTrueGuild (hero) == GIL_NONE)
 	&& hero.guild == GIL_NONE
 	{
-		AI_Output (self, other,"DIA_STT_315_LostNekSuccess_Proof_10_03"); //Si Diego me pregunta por ti, votaré en tu favor.
+		AI_Output (self, other,"DIA_STT_315_LostNekSuccess_Proof_10_03"); //Si Diego me pregunta por ti, votarÃ© en tu favor.
 	};
 	Sly_LostNek = LOG_SUCCESS;
 	
@@ -177,13 +177,13 @@ func void DIA_STT_315_LostNekSuccess_Proof()
 	{
 		Log_CreateTopic		(CH1_JoinOC, LOG_MISSION);
 		Log_SetTopicStatus	(CH1_JoinOC, LOG_RUNNING);
-		B_LogEntry			(CH1_JoinOC,"Le he dado a Sly el amuleto de Nek. Irá a ver a Diego y hablará en mi favor.");
+		B_LogEntry			(CH1_JoinOC,"Le he dado a Sly el amuleto de Nek. IrÃ¡ a ver a Diego y hablarÃ¡ en mi favor.");
 	}
 	else
 	{	
 		Log_CreateTopic		(CH1_JoinOC, LOG_MISSION);
 		Log_SetTopicStatus  (CH1_JoinOC, LOG_FAILED);
-		B_LogEntry			(CH1_JoinOC,"Le he dado a Sly el amuleto de Nek. Tampoco es que vaya a servirme de nada: de todas formas, ya nunca me dejarán unirme el Campamento Viejo.");
+		B_LogEntry			(CH1_JoinOC,"Le he dado a Sly el amuleto de Nek. Tampoco es que vaya a servirme de nada: de todas formas, ya nunca me dejarÃ¡n unirme el Campamento Viejo.");
 	};
 	Info_ClearChoices	(DIA_STT_315_LostNekSuccess );
 	AI_StopProcessInfos	( self );
@@ -193,9 +193,9 @@ func void DIA_STT_315_LostNekSuccess_Proof()
 func void DIA_STT_315_LostNekSuccess_NoProof()
 {
 	AI_Output (other, self,"DIA_STT_315_LostNekSuccess_NoProof_15_00"); //No, me temo que no.
-	AI_Output (self, other,"DIA_STT_315_LostNekSuccess_NoProof_10_01"); //¿Oh? No me estarás ocultando algo, ¿verdad? Nek llevaba encima un amuleto.
-	AI_Output (self, other,"DIA_STT_315_LostNekSuccess_NoProof_10_02"); //No me gusta que la gente me oculte cosas que me pertenecen. ¡Si encuentras el amuleto, tráemelo!
-	AI_Output (other, self,"DIA_STT_315_LostNekSuccess_NoProof_15_03"); //Pensaré en ti cuando tenga el amuleto en la mano.
+	AI_Output (self, other,"DIA_STT_315_LostNekSuccess_NoProof_10_01"); //Â¿Oh? No me estarÃ¡s ocultando algo, Â¿verdad? Nek llevaba encima un amuleto.
+	AI_Output (self, other,"DIA_STT_315_LostNekSuccess_NoProof_10_02"); //No me gusta que la gente me oculte cosas que me pertenecen. Â¡Si encuentras el amuleto, trÃ¡emelo!
+	AI_Output (other, self,"DIA_STT_315_LostNekSuccess_NoProof_15_03"); //PensarÃ© en ti cuando tenga el amuleto en la mano.
 	
 	B_LogEntry( CH1_LostNek,"Sly quiere tener el amuleto de Nek.");
 	
@@ -214,7 +214,7 @@ instance DIA_STT_315_Sly_AfterSuccess (C_INFO)
 	condition		= DIA_STT_315_Sly_AfterSuccess_Condition;
 	information		= DIA_STT_315_Sly_AfterSuccess_Info;
 	permanent		= 1;
-	description		= "¿Qué tal?";
+	description		= "Â¿QuÃ© tal?";
 	
 };
 
@@ -229,10 +229,10 @@ FUNC int DIA_STT_315_Sly_AfterSuccess_Condition()
 
 func void DIA_STT_315_Sly_AfterSuccess_Info()
 {
-	AI_Output (other, self,"DIA_STT_315_Sly_AfterSuccess_15_00"); //¿Cómo va todo?
-	AI_Output (self, other,"DIA_STT_315_Sly_AfterSuccess_10_01"); //¡Muy bien! ¡Conmigo ya no necesitarás seguir preocupándote por Diego!
-	AI_Output (other, self,"DIA_STT_315_Sly_AfterSuccess_15_02"); //Favor por favor, ¿eh?
-	AI_Output (self, other,"DIA_STT_315_Sly_AfterSuccess_10_03"); //Así es.
+	AI_Output (other, self,"DIA_STT_315_Sly_AfterSuccess_15_00"); //Â¿CÃ³mo va todo?
+	AI_Output (self, other,"DIA_STT_315_Sly_AfterSuccess_10_01"); //Â¡Muy bien! Â¡Conmigo ya no necesitarÃ¡s seguir preocupÃ¡ndote por Diego!
+	AI_Output (other, self,"DIA_STT_315_Sly_AfterSuccess_15_02"); //Favor por favor, Â¿eh?
+	AI_Output (self, other,"DIA_STT_315_Sly_AfterSuccess_10_03"); //AsÃ­ es.
 };
 
 

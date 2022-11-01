@@ -274,7 +274,7 @@ INSTANCE ItArRuneTeleport1 (C_Item)
 	material			=	MAT_STONE;
 
 	spell				= 	SPL_TELEPORT1;
-//mag_circle 			= 	4;   //SN: Teleport-Spells müssen auch ohne Circle sprechbar sein!
+//mag_circle 			= 	4;   //SN: Teleport-Spells mÃ¼ssen auch ohne Circle sprechbar sein!
 
 	description			= 	"Teleportarse hasta los Magos del Fuego";
 	TEXT	[0]			=	NAME_Mag_Circle;			COUNT	[0]		=	mag_circle;
@@ -314,7 +314,7 @@ INSTANCE ItArRuneTeleport2 (C_Item)
 	material			=	MAT_STONE;
 
 	spell				= 	SPL_TELEPORT2;
-//mag_circle 			= 	4;   //SN: Teleport-Spells müssen auch ohne Circle sprechbar sein!
+//mag_circle 			= 	4;   //SN: Teleport-Spells mÃ¼ssen auch ohne Circle sprechbar sein!
 
 	description			= 	"Teleportarse hasta los Magos del Agua";
 	TEXT	[0]			=	NAME_Mag_Circle;			COUNT	[0]		=	mag_circle;
@@ -354,7 +354,7 @@ INSTANCE ItArRuneTeleport3 (C_Item)
 	material			=	MAT_STONE;
 
 	spell				= 	SPL_TELEPORT3;
-	//mag_circle 			= 	4;   //SN: Teleport-Spells müssen auch ohne Circle sprechbar sein!
+	//mag_circle 			= 	4;   //SN: Teleport-Spells mÃ¼ssen auch ohne Circle sprechbar sein!
 
 	description			=	"Teleportarse hasta el Nigromante";	//blaue Rune
 	TEXT	[0]			=	NAME_Mag_Circle;			COUNT	[0]		=	mag_circle;
@@ -414,11 +414,11 @@ INSTANCE ItArRuneTeleport5 (C_Item)
 	mainflag 			=	ITEM_KAT_RUNE;
 	flags 				=	0;
 
-	visual				=	"ItAr_Rune_39.3ds";	//grüne Rune
+	visual				=	"ItAr_Rune_39.3ds";	//grÃ¼ne Rune
 	material			=	MAT_STONE;
 
 	spell				= 	SPL_TELEPORT5;
-//mag_circle 			= 	4;   //SN: Teleport-Spells müssen auch ohne Circle sprechbar sein!
+//mag_circle 			= 	4;   //SN: Teleport-Spells mÃ¼ssen auch ohne Circle sprechbar sein!
 
 	description			=	"Teleportarse hasta el Campamento del Pantano";	//lila Rune
 	TEXT	[0]			=	NAME_Mag_Circle;			COUNT	[0]		=	mag_circle;
@@ -466,7 +466,7 @@ INSTANCE ItArRuneHeal (C_Item)
 	spell				= 	SPL_HEAL;
 	mag_circle 			= 	2;
 
-	description			=	"Curación";
+	description			=	"CuraciÃ³n";
 	TEXT	[0]			=	NAME_Mag_Circle;			COUNT	[0]		=	mag_circle;
 	TEXT	[1]			=	NAME_HealingPerMana;		COUNT	[1]		=	SPL_HEALING_HP_PER_MP;
 	//TEXT	[2]			=	"";							COUNT	[2]		=	;
@@ -492,7 +492,7 @@ INSTANCE ItArScrollHeal (C_Item)
 	cond_atr[2]   		= 	ATR_MANA_MAX;
 	cond_value[2]  		= 	SPL_HEALING_HP_PER_MP;
 
-	description			=	"Curación";
+	description			=	"CuraciÃ³n";
 	//TEXT	[0]			=	NAME_Mag_Circle;			COUNT	[0]		=	mag_circle;
 	TEXT	[1]			=	NAME_HealingPerMana;		COUNT	[1]		=	SPL_HEALING_HP_PER_MP;
 	TEXT	[2]			=	NAME_Mana_needed;			COUNT	[2]		=	SPL_HEALING_HP_PER_MP;
@@ -672,7 +672,7 @@ INSTANCE ItArScrollTrfScavenger (C_Item)
 	cond_atr[2]   		=	ATR_MANA_MAX;
 	cond_value[2]  		=	SPL_SENDCAST_TRF_SCAVENGER;
 
-	description			=	"Transformarse en carroñero";
+	description			=	"Transformarse en carroÃ±ero";
 	//TEXT	[0]			=	NAME_Mag_Circle;			COUNT	[0]		=	mag_circle;
 	TEXT	[1]			=	NAME_Manakosten;			COUNT	[1]		=	SPL_SENDCAST_TRF_SCAVENGER;
 	//TEXT	[2]			=	"";							COUNT	[2]		=	;
@@ -800,7 +800,7 @@ INSTANCE ItArRuneChainLightning (C_Item)
 	spell				= 	SPL_CHAINLIGHTNING;
 	mag_circle 			=	4;
 
-	description			=	"Relámpago zigzagueante";
+	description			=	"RelÃ¡mpago zigzagueante";
 	TEXT	[0]			=	NAME_Mag_Circle;			COUNT	[0]		=	mag_circle;
 	TEXT	[1]			=	NAME_DamagePerSec;			COUNT	[1]		=	SPL_ZAPPED_DAMAGE_PER_SEC;
 	//TEXT	[2]			=	"";							COUNT	[2]		=	;
@@ -824,7 +824,7 @@ INSTANCE ItArScrollChainLightning (C_Item)
 	spell				= 	SPL_CHAINLIGHTNING;
 	//mag_circle 			=	3;
 
-	description			=	"Relámpago zigzagueante";
+	description			=	"RelÃ¡mpago zigzagueante";
 	//TEXT	[0]			=	NAME_Mag_Circle;			COUNT	[0]		=	mag_circle;
 	TEXT	[1]			=	NAME_DamagePerSec;			COUNT	[1]		=	SPL_ZAPPED_DAMAGE_PER_SEC;
 	//TEXT	[2]			=	"";							COUNT	[2]		=	;
@@ -852,7 +852,7 @@ INSTANCE ItArRuneThunderbolt (C_Item)
 	spell				= 	SPL_THUNDERBOLT;
 	mag_circle 			=	1;
 
-// FIXME: kann man die DAMAGE_PER_LEVEL-Werte der Spells aus der Spells_Params hier für Manakosten einsetzen??
+// FIXME: kann man die DAMAGE_PER_LEVEL-Werte der Spells aus der Spells_Params hier fÃ¼r Manakosten einsetzen??
 	description			=	"Rayo de hielo";
 	TEXT	[0]			=	NAME_Mag_Circle;			COUNT	[0]		=	mag_circle;
 	TEXT	[1]			=	NAME_Manakosten;			COUNT	[1]		=	SPL_SENDCAST_THUNDERBOLT;
@@ -904,7 +904,7 @@ INSTANCE ItArRuneThunderball (C_Item)
 	material			=	MAT_STONE;
 
 	spell				= 	SPL_THUNDERBALL;
-	mag_circle 			=	3;		//SN: von 4 auf 3 geändert!
+	mag_circle 			=	3;		//SN: von 4 auf 3 geÃ¤ndert!
 
 	description			=	"Bola relampagueante";
 	TEXT	[0]			=	NAME_Mag_Circle;							COUNT	[0]		=	mag_circle;
@@ -1048,7 +1048,7 @@ INSTANCE ItArScrollIceWave (C_Item)
 
 
 /*******************************************************************************************
-**  Dämonenbeschwörer	 (Runensteine  und Scrolls)										  **
+**  DÃ¤monenbeschwÃ¶rer	 (Runensteine  und Scrolls)										  **
 *******************************************************************************************/
 
 // Summon Demon (Scrolls)
@@ -1125,7 +1125,7 @@ INSTANCE ItArScrollSummonGolem (C_Item)
 	cond_atr[2]   		=	ATR_MANA_MAX;
 	cond_value[2]  		=	SPL_SENDCAST_SUMMONGOLEM;
 
-	description			=	"Convocar gólem";
+	description			=	"Convocar gÃ³lem";
 	//TEXT	[0]			=	NAME_Mag_Circle;			COUNT	[0]		=	mag_circle;
 	TEXT	[1]			=	NAME_Manakosten;			COUNT	[1]		=	SPL_SENDCAST_SUMMONGOLEM;
 	//TEXT	[2]			=	"";							COUNT	[2]		=	;
@@ -1153,7 +1153,7 @@ INSTANCE ItArScrollArmyOfDarkness (C_Item)
 	cond_atr[2]   		=	ATR_MANA_MAX;
 	cond_value[2]  		=	SPL_SENDCAST_ARMYOFDARKNESS;
 
-	description			=	"Ejército de las Tinieblas";
+	description			=	"EjÃ©rcito de las Tinieblas";
 	//TEXT	[0]			=	NAME_Mag_Circle;			COUNT	[0]		=	mag_circle;
 	TEXT	[1]			=	NAME_Manakosten;			COUNT	[1]		=	SPL_SENDCAST_ARMYOFDARKNESS;
 	//TEXT	[2]			=	"";							COUNT	[2]		=	;
@@ -1216,7 +1216,7 @@ INSTANCE ItArScrollDestroyUndead (C_Item)
 
 
 /*******************************************************************************************
-**  PSI-Sprüche		(Runen und Scrolls)													  **
+**  PSI-SprÃ¼che		(Runen und Scrolls)													  **
 *******************************************************************************************/
 
 // Windfist (Scrolls und Runen)
@@ -1236,7 +1236,7 @@ INSTANCE ItArRuneWindfist (C_Item)
 	spell				= 	SPL_WINDFIST;
 	mag_circle 			=	2;
 
-	description			=	"Puño del viento";
+	description			=	"PuÃ±o del viento";
 	TEXT	[0]			=	NAME_Mag_Circle;							COUNT	[0]		=	mag_circle;
 	TEXT	[1]			=	NAME_ManakostenMax;							COUNT	[1]		=	SPL_SENDCAST_WINDFIST;
 	TEXT	[2]			=	ConcatStrings(NAME_Dam_Fly,NAME_PerMana);	COUNT	[2]		=	SPL_DAMAGE_WINDFIST;
@@ -1261,7 +1261,7 @@ INSTANCE ItArScrollWindfist (C_Item)
 	cond_atr[2]   		=	ATR_MANA_MAX;
 	cond_value[2]  		=	SPL_SENDCAST_WINDFIST;
 
-	description			=	"Puño del viento";
+	description			=	"PuÃ±o del viento";
 	//TEXT	[0]			=	NAME_Mag_Circle;							COUNT	[0]		=	mag_circle;
 	TEXT	[1]			=	NAME_ManakostenMax;							COUNT	[1]		=	SPL_SENDCAST_WINDFIST;
 	TEXT	[2]			=	ConcatStrings(NAME_Dam_Fly,NAME_PerMana);	COUNT	[2]		=	SPL_DAMAGE_WINDFIST;
@@ -1288,7 +1288,7 @@ INSTANCE ItArRuneStormfist (C_Item)
 	spell				= 	SPL_STORMFIST;
 	mag_circle 			=	4;
 
-	description			=	"Puño de la tormenta";
+	description			=	"PuÃ±o de la tormenta";
 	TEXT	[0]			=	NAME_Mag_Circle;							COUNT	[0]		=	mag_circle;
 	TEXT	[1]			=	NAME_ManakostenMax;							COUNT	[1]		=	SPL_SENDCAST_STORMFIST;
 	TEXT	[2]			=	ConcatStrings(NAME_Dam_Fly,NAME_PerMana);	COUNT	[2]		=	SPL_DAMAGE_STORMFIST;
@@ -1313,7 +1313,7 @@ INSTANCE ItArScrollStormfist (C_Item)
 	cond_atr[2]   		=	ATR_MANA_MAX;
 	cond_value[2]  		=	SPL_SENDCAST_STORMFIST;
 
-	description			=	"Puño de la tormenta";
+	description			=	"PuÃ±o de la tormenta";
 	//TEXT	[0]			=	NAME_Mag_Circle;							COUNT	[0]		=	mag_circle;
 	TEXT	[1]			=	NAME_ManakostenMax;							COUNT	[1]		=	SPL_SENDCAST_STORMFIST;
 	TEXT	[2]			=	ConcatStrings(NAME_Dam_Fly,NAME_PerMana);	COUNT	[2]		=	SPL_DAMAGE_STORMFIST;

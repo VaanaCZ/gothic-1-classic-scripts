@@ -7,11 +7,11 @@
 //	Uhrzeit:
 //
 //	Es passiert folgendes:
-//	1.	N‰hert sich der Spieler dem Durchgang, so wird er in diesen
+//	1.	N√§hert sich der Spieler dem Durchgang, so wird er in diesen
 //		Dialog gezwungen und einmal gewarnt
-//	2.	N‰hert sich der SC trotzdem weiter, so wird er ein ZWEITES Mal
+//	2.	N√§hert sich der SC trotzdem weiter, so wird er ein ZWEITES Mal
 //		gewarnt (aggressiver mit Waffe ziehen)
-//	3.	N‰hert er sich trotzdem wieder, wird er angegriffen
+//	3.	N√§hert er sich trotzdem wieder, wird er angegriffen
 //////////////////////////////////////////////////////////////////////////
 const string	SLD_723_CHECKPOINT		= "NC_PLACE02";
 
@@ -42,7 +42,7 @@ func void Info_SLD_723_FirstWarn_Info()
 {
 	PrintGlobals	(PD_MISSION);
 
-	AI_Output 		(self, hero,"Info_SLD_723_FirstWarn_11_01"); //°ALTO! °Nadie puede pasar sin dar la contraseÒa!
+	AI_Output 		(self, hero,"Info_SLD_723_FirstWarn_11_01"); //¬°ALTO! ¬°Nadie puede pasar sin dar la contrase√±a!
 
 	hero.aivar[AIV_LASTDISTTOWP] 		= Npc_GetDistToWP(hero,SLD_723_CHECKPOINT);
 	hero.aivar[AIV_GUARDPASSAGE_STATUS]	= AIV_GPS_FIRSTWARN;	
@@ -50,11 +50,11 @@ func void Info_SLD_723_FirstWarn_Info()
 	if (Npc_KnowsInfo(hero, Info_Cronos_SLEEPER))
 	{
 		Info_Clearchoices 	(Info_SLD_723_FirstWarn);
-		Info_Addchoice 		(Info_SLD_723_FirstWarn,"°Cronos me ha dado permiso!",	Info_SLD_723_Parole_CRONOS);  
-		Info_Addchoice 		(Info_SLD_723_FirstWarn,"°Ni idea, la he olvidado!",	Info_SLD_723_Parole_FORGOT);  
-		Info_Addchoice 		(Info_SLD_723_FirstWarn,"La contraseÒa es TERIANTROCH.",	Info_SLD_723_Parole_FALSE2);  
-		Info_Addchoice 		(Info_SLD_723_FirstWarn,"La contraseÒa es TETRIANDOCH.",	Info_SLD_723_Parole_TRUE);  
-		Info_Addchoice 		(Info_SLD_723_FirstWarn,"La contraseÒa es TETRIDANOCH.",	Info_SLD_723_Parole_FALSE1);  
+		Info_Addchoice 		(Info_SLD_723_FirstWarn,"¬°Cronos me ha dado permiso!",	Info_SLD_723_Parole_CRONOS);  
+		Info_Addchoice 		(Info_SLD_723_FirstWarn,"¬°Ni idea, la he olvidado!",	Info_SLD_723_Parole_FORGOT);  
+		Info_Addchoice 		(Info_SLD_723_FirstWarn,"La contrase√±a es TERIANTROCH.",	Info_SLD_723_Parole_FALSE2);  
+		Info_Addchoice 		(Info_SLD_723_FirstWarn,"La contrase√±a es TETRIANDOCH.",	Info_SLD_723_Parole_TRUE);  
+		Info_Addchoice 		(Info_SLD_723_FirstWarn,"La contrase√±a es TETRIDANOCH.",	Info_SLD_723_Parole_FALSE1);  
 	}
 	else
 	{
@@ -64,36 +64,36 @@ func void Info_SLD_723_FirstWarn_Info()
 
 func void Info_SLD_723_Parole_CRONOS ()
 {
-	AI_Output 			(hero, self,"Info_SLD_723_Parole_CRONOS_15_01"); //°Tengo permiso de Cronos!
-	AI_Output 			(self, hero,"Info_SLD_723_Parole_CRONOS_11_02"); //Si asÌ fuera, te habrÌa dado la contraseÒa. °PiÈrdete, embustero!
+	AI_Output 			(hero, self,"Info_SLD_723_Parole_CRONOS_15_01"); //¬°Tengo permiso de Cronos!
+	AI_Output 			(self, hero,"Info_SLD_723_Parole_CRONOS_11_02"); //Si as√≠ fuera, te habr√≠a dado la contrase√±a. ¬°Pi√©rdete, embustero!
 	AI_StopProcessInfos	(self);
 };
 
 func void Info_SLD_723_Parole_FORGOT ()
 {
-	AI_Output 			(hero, self,"Info_SLD_723_Parole_FORGOT_15_01"); //°No tengo ni idea, se me ha olvidado!
-	AI_Output 			(self, hero,"Info_SLD_723_Parole_FORGOT_11_02"); //°Entonces, vuelve cuando la recuerdes y no me hagas perder el tiempo!
+	AI_Output 			(hero, self,"Info_SLD_723_Parole_FORGOT_15_01"); //¬°No tengo ni idea, se me ha olvidado!
+	AI_Output 			(self, hero,"Info_SLD_723_Parole_FORGOT_11_02"); //¬°Entonces, vuelve cuando la recuerdes y no me hagas perder el tiempo!
 	AI_StopProcessInfos	(self);
 };
 
 func void Info_SLD_723_Parole_FALSE1 ()
 {
-	AI_Output 			(hero, self,"Info_SLD_723_Parole_FALSE1_15_01"); //La contraseÒa es TETRIDANOCH.
-	AI_Output 			(self, hero,"Info_SLD_723_Parole_FALSE1_11_02"); //°MAL!
+	AI_Output 			(hero, self,"Info_SLD_723_Parole_FALSE1_15_01"); //La contrase√±a es TETRIDANOCH.
+	AI_Output 			(self, hero,"Info_SLD_723_Parole_FALSE1_11_02"); //¬°MAL!
 	AI_StopProcessInfos	(self);
 };
 
 func void Info_SLD_723_Parole_FALSE2 ()
 {
-	AI_Output 			(hero, self,"Info_SLD_723_Parole_FALSE2_15_01"); //La contraseÒa es TERIANTROCH.
-	AI_Output 			(self, hero,"Info_SLD_723_Parole_FALSE2_11_02"); //°MAL!
+	AI_Output 			(hero, self,"Info_SLD_723_Parole_FALSE2_15_01"); //La contrase√±a es TERIANTROCH.
+	AI_Output 			(self, hero,"Info_SLD_723_Parole_FALSE2_11_02"); //¬°MAL!
 	AI_StopProcessInfos	(self);
 };
 
 func void Info_SLD_723_Parole_TRUE ()
 {
-	AI_Output 			(hero, self,"Info_SLD_723_Parole_TRUE_15_01"); //La contraseÒa es TETRIANDOCH.
-	AI_Output 			(self, hero,"Info_SLD_723_Parole_TRUE_11_02"); //°Correcto! °Puedes pasar!
+	AI_Output 			(hero, self,"Info_SLD_723_Parole_TRUE_15_01"); //La contrase√±a es TETRIANDOCH.
+	AI_Output 			(self, hero,"Info_SLD_723_Parole_TRUE_11_02"); //¬°Correcto! ¬°Puedes pasar!
 	AI_StopProcessInfos	(self);
 
 	//---- beide Wachen auf passieren schalten ----
@@ -132,7 +132,7 @@ func int Info_SLD_723_LastWarn_Condition()
 
 func int Info_SLD_723_LastWarn_Info()
 {
-	AI_Output 		(self, hero,"Info_SLD_723_LastWarn_11_01"); 		//°No te lo dirÈ otra vez! °NO DES NI UN PASO M¡S!
+	AI_Output 		(self, hero,"Info_SLD_723_LastWarn_11_01"); 		//¬°No te lo dir√© otra vez! ¬°NO DES NI UN PASO M√ÅS!
 
 	hero.aivar[AIV_LASTDISTTOWP] 		= Npc_GetDistToWP(hero,SLD_723_CHECKPOINT);
 	hero.aivar[AIV_GUARDPASSAGE_STATUS]	= AIV_GPS_LASTWARN;
@@ -171,7 +171,7 @@ func int Info_SLD_723_Attack_Info()
 	hero.aivar[AIV_GUARDPASSAGE_STATUS]	= AIV_GPS_PUNISH;	
 	
 	B_FullStop			(self);	
-	AI_StopProcessInfos	(self);					// dem Spieler sofort wieder die Kontrolle zur¸ckgeben
+	AI_StopProcessInfos	(self);					// dem Spieler sofort wieder die Kontrolle zur√ºckgeben
 	B_IntruderAlert		(self,	other);
 	B_SetAttackReason	(self,	AIV_AR_INTRUDER);
 	Npc_SetTarget		(self,	hero);
@@ -189,7 +189,7 @@ instance Info_SLD_723_PAROLE (C_INFO)
 	information	= Info_SLD_723_PAROLE_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "(Decir la contraseÒa)";
+	description	= "(Decir la contrase√±a)";
 };                       
 
 func int Info_SLD_723_PAROLE_Condition()
@@ -204,9 +204,9 @@ func int Info_SLD_723_PAROLE_Condition()
 func int Info_SLD_723_PAROLE_Info()
 {
 	Info_ClearChoices 	(Info_SLD_723_PAROLE);
-	Info_AddChoice 		(Info_SLD_723_PAROLE,"°Cronos me ha dado permiso!",	Info_SLD_723_Parole_CRONOS);  
-	Info_AddChoice 		(Info_SLD_723_PAROLE,"°Ni idea, la he olvidado!",	Info_SLD_723_Parole_FORGOT);  
-	Info_AddChoice 		(Info_SLD_723_PAROLE,"La contraseÒa es TERIANTROCH.",	Info_SLD_723_Parole_FALSE2);  
-	Info_AddChoice 		(Info_SLD_723_PAROLE,"La contraseÒa es TETRIANDOCH.",	Info_SLD_723_Parole_TRUE);  
-	Info_AddChoice 		(Info_SLD_723_PAROLE,"La contraseÒa es TETRIDANOCH.",	Info_SLD_723_Parole_FALSE1);  
+	Info_AddChoice 		(Info_SLD_723_PAROLE,"¬°Cronos me ha dado permiso!",	Info_SLD_723_Parole_CRONOS);  
+	Info_AddChoice 		(Info_SLD_723_PAROLE,"¬°Ni idea, la he olvidado!",	Info_SLD_723_Parole_FORGOT);  
+	Info_AddChoice 		(Info_SLD_723_PAROLE,"La contrase√±a es TERIANTROCH.",	Info_SLD_723_Parole_FALSE2);  
+	Info_AddChoice 		(Info_SLD_723_PAROLE,"La contrase√±a es TETRIANDOCH.",	Info_SLD_723_Parole_TRUE);  
+	Info_AddChoice 		(Info_SLD_723_PAROLE,"La contrase√±a es TETRIDANOCH.",	Info_SLD_723_Parole_FALSE1);  
 };

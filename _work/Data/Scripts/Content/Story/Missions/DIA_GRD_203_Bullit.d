@@ -43,7 +43,7 @@ FUNC int  DIA_Bullit_First_Condition()
 
 FUNC VOID  DIA_Bullit_First_Info()
 {
-	AI_Output (self, other,"DIA_Bullit_First_06_00"); //¿A quién tenemos aquí? ¿No eres el tipo que bauticé antes? ¿Qué quieres? ¿Vienes a por más?
+	AI_Output (self, other,"DIA_Bullit_First_06_00"); //Â¿A quiÃ©n tenemos aquÃ­? Â¿No eres el tipo que bauticÃ© antes? Â¿QuÃ© quieres? Â¿Vienes a por mÃ¡s?
 };
 
 //******************************************
@@ -68,7 +68,7 @@ FUNC int  DIA_Bullit_AufsMAul_Condition()
 FUNC VOID  DIA_Bullit_AufsMAul_Info()
 {
 	AI_Output (other, self,"DIA_Bullit_AufsMAul_15_00"); //He venido a cerrarte la boca.
-	AI_Output (self, other,"DIA_Bullit_AufsMAul_06_01"); //¡Ja, ven e inténtalo, hijito!
+	AI_Output (self, other,"DIA_Bullit_AufsMAul_06_01"); //Â¡Ja, ven e intÃ©ntalo, hijito!
 	
 	Npc_SetAttitude 		( self, ATT_HOSTILE );
 	Npc_SetTempAttitude 	( self, ATT_HOSTILE );
@@ -102,9 +102,9 @@ FUNC int  DIA_GRD_203_Bullit_Wait4SC_Condition()
 
 func void  DIA_GRD_203_Bullit_Wait4SC_Info()
 {
-	AI_Output (self, other,"DIA_GRD_203_Bullit_Wait4SC_06_01"); //¡Tú otra vez! ¡Debería haberte ahogado en el lago en cuanto te vi!
-	AI_Output (other, self,"DIA_GRD_203_Bullit_Wait4SC_15_02"); //En aquella ocasión no tuve ninguna posibilidad, pero ahora han cambiado las tornas.
-	AI_Output (self, other,"DIA_GRD_203_Bullit_Wait4SC_06_03"); //¡Gusano! ¡Espero que no me lo pongas tan fácil como la primera vez!
+	AI_Output (self, other,"DIA_GRD_203_Bullit_Wait4SC_06_01"); //Â¡TÃº otra vez! Â¡DeberÃ­a haberte ahogado en el lago en cuanto te vi!
+	AI_Output (other, self,"DIA_GRD_203_Bullit_Wait4SC_15_02"); //En aquella ocasiÃ³n no tuve ninguna posibilidad, pero ahora han cambiado las tornas.
+	AI_Output (self, other,"DIA_GRD_203_Bullit_Wait4SC_06_03"); //Â¡Gusano! Â¡Espero que no me lo pongas tan fÃ¡cil como la primera vez!
 		
 	AI_StopProcessInfos	( self );
 

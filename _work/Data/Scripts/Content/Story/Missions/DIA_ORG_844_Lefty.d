@@ -33,7 +33,7 @@ instance DIA_Lefty_FirstAtNight (C_INFO)
 	condition	= DIA_Lefty_FirstAtNight_Condition;
 	information	= DIA_Lefty_FirstAtNight_Info;
 	permanent	= 0;
-	description = "¿Qué estás haciendo aquí?";
+	description = "Â¿QuÃ© estÃ¡s haciendo aquÃ­?";
 };                       
 
 FUNC int DIA_Lefty_FirstAtNight_Condition()
@@ -47,10 +47,10 @@ FUNC int DIA_Lefty_FirstAtNight_Condition()
 
 FUNC VOID DIA_Lefty_FirstAtNight_Info()
 {
-	AI_Output (other, self,"DIA_Aidan_Hello_15_00"); //¿Qué estás haciendo aquí?
-	AI_Output (self, other,"DIA_846_Hello_07_01"); //Trabajo para el Señor del Arroz.
-	AI_Output (other, self,"DIA_Ricelord_Arbeit_15_00"); //¿Tienes algún trabajo para mí?
-	AI_Output (self, other,"DIA_Shrike_GetLost_07_01"); //¡Luego hablaré contigo!
+	AI_Output (other, self,"DIA_Aidan_Hello_15_00"); //Â¿QuÃ© estÃ¡s haciendo aquÃ­?
+	AI_Output (self, other,"DIA_846_Hello_07_01"); //Trabajo para el SeÃ±or del Arroz.
+	AI_Output (other, self,"DIA_Ricelord_Arbeit_15_00"); //Â¿Tienes algÃºn trabajo para mÃ­?
+	AI_Output (self, other,"DIA_Shrike_GetLost_07_01"); //Â¡Luego hablarÃ© contigo!
 	AI_StopProcessInfos	(self);
 };
 
@@ -79,38 +79,38 @@ FUNC int DIA_Lefty_First_Condition()
 
 FUNC VOID DIA_Lefty_First_Info()
 {
-	AI_Output (self, other,"DIA_Lefty_First_07_00"); //¡Hey! ¿Eres un recién llegado?  Necesitamos a alguien que lleve algo de agua a los campesinos en los campos de arroz.
-	AI_Output (self, other,"DIA_Lefty_First_07_01"); //De esta manera podrás hacer algunos nuevos amigos. ¿Qué opinas?
+	AI_Output (self, other,"DIA_Lefty_First_07_00"); //Â¡Hey! Â¿Eres un reciÃ©n llegado?  Necesitamos a alguien que lleve algo de agua a los campesinos en los campos de arroz.
+	AI_Output (self, other,"DIA_Lefty_First_07_01"); //De esta manera podrÃ¡s hacer algunos nuevos amigos. Â¿QuÃ© opinas?
 	
 	Log_CreateTopic		(CH1_CarryWater,	LOG_MISSION);
 	Log_SetTopicStatus	(CH1_CarryWater,	LOG_RUNNING);
-	B_LogEntry			(CH1_CarryWater,"Lefty, un bandido del Campamento Nuevo que no para de hablar de sí mismo, quiere que lleve agua a los campesinos de los campos de arroz.");
+	B_LogEntry			(CH1_CarryWater,"Lefty, un bandido del Campamento Nuevo que no para de hablar de sÃ­ mismo, quiere que lleve agua a los campesinos de los campos de arroz.");
 	
 	Info_ClearChoices	(DIA_Lefty_First );
 	Info_AddChoice		(DIA_Lefty_First,"Tal vez luego.",DIA_Lefty_First_Later);
-	Info_AddChoice		(DIA_Lefty_First,"¡Lleva tú el agua a los campesinos!",DIA_Lefty_First_Never);
+	Info_AddChoice		(DIA_Lefty_First,"Â¡Lleva tÃº el agua a los campesinos!",DIA_Lefty_First_Never);
 	Info_AddChoice		(DIA_Lefty_First,"Claro, me alegro de ayudar.",DIA_Lefty_First_Yes);
 };
 
 func void DIA_Lefty_First_Yes()
 {
-	AI_Output (other, self,"DIA_Lefty_First_Yes_15_00"); //Claro que sí, encantado de poder ayudar.
-	AI_Output (self, other,"DIA_Lefty_First_Yes_07_01"); //¡Estupendo! Vete a ver al Señor del Arroz. Él te dará el agua y te dirá todo lo que necesitas saber. 
+	AI_Output (other, self,"DIA_Lefty_First_Yes_15_00"); //Claro que sÃ­, encantado de poder ayudar.
+	AI_Output (self, other,"DIA_Lefty_First_Yes_07_01"); //Â¡Estupendo! Vete a ver al SeÃ±or del Arroz. Ã‰l te darÃ¡ el agua y te dirÃ¡ todo lo que necesitas saber. 
 	Lefty_WorkDay = B_SetDayTolerance();
 	Lefty_Mission = LOG_RUNNING;
 	An_Bauern_verteilt = 0;
-	B_LogEntry			(CH1_CarryWater,"Aunque probablemente se trate de una labor estúpida, he aceptado, pues quizá pueda hacer algunos amigos allí. Debo obtener el agua del llamado Señor del Arroz.");
+	B_LogEntry			(CH1_CarryWater,"Aunque probablemente se trate de una labor estÃºpida, he aceptado, pues quizÃ¡ pueda hacer algunos amigos allÃ­. Debo obtener el agua del llamado SeÃ±or del Arroz.");
 
 	Info_ClearChoices	(DIA_Lefty_First);
 };
 
 func void DIA_Lefty_First_Never()
 {
-	AI_Output (other, self,"DIA_Lefty_First_Never_15_00"); //¡Llévale tú el agua a los campesinos!
-	AI_Output (self, other,"DIA_Lefty_First_Never_07_01"); //¡Ésa no es forma de tratar a los amigos! ¡Me parece que vamos a tener que enseñarte buenas maneras!
+	AI_Output (other, self,"DIA_Lefty_First_Never_15_00"); //Â¡LlÃ©vale tÃº el agua a los campesinos!
+	AI_Output (self, other,"DIA_Lefty_First_Never_07_01"); //Â¡Ã‰sa no es forma de tratar a los amigos! Â¡Me parece que vamos a tener que enseÃ±arte buenas maneras!
 	Lefty_WorkDay = B_SetDayTolerance();
 	Lefty_Mission = LOG_FAILED;
-	B_LogEntry			(CH1_CarryWater,"Cuando rechacé la 'oferta' de Lefty, ¡se puso bastante desagradable! ¡Y yo que pensaba que el Campamento Viejo era un lugar duro!");
+	B_LogEntry			(CH1_CarryWater,"Cuando rechacÃ© la 'oferta' de Lefty, Â¡se puso bastante desagradable! Â¡Y yo que pensaba que el Campamento Viejo era un lugar duro!");
 	
 	Info_ClearChoices	(DIA_Lefty_First );
 	AI_StopProcessInfos	(self);
@@ -120,8 +120,8 @@ func void DIA_Lefty_First_Never()
 
 func void DIA_Lefty_First_Later()
 {
-	AI_Output (other, self,"DIA_Lefty_First_Later_15_00"); //Tal vez más tarde.
-	AI_Output (self, other,"DIA_Lefty_First_Later_07_01"); //Pero más tarde no necesitaré a nadie. Necesito tu ayuda ahora mismo. ¿Quieres ayudarme o no?
+	AI_Output (other, self,"DIA_Lefty_First_Later_15_00"); //Tal vez mÃ¡s tarde.
+	AI_Output (self, other,"DIA_Lefty_First_Later_07_01"); //Pero mÃ¡s tarde no necesitarÃ© a nadie. Necesito tu ayuda ahora mismo. Â¿Quieres ayudarme o no?
 };
 
 // **************************************
@@ -152,26 +152,26 @@ FUNC int DIA_Lefty_WorkDay_Condition()
 
 FUNC VOID DIA_Lefty_WorkDay_Info()
 {
-	AI_Output (self, other,"DIA_Lefty_WorkDay_07_00"); //¡Eh, tú!
+	AI_Output (self, other,"DIA_Lefty_WorkDay_07_00"); //Â¡Eh, tÃº!
 	
 	if (Lefty_Mission == LOG_FAILED)
 	{
-		AI_Output (self, other,"DIA_Lefty_WorkDay_NextChance_07_00"); //¡Estás de suerte! Voy a darte una segunda oportunidad.
-		AI_Output (self, other,"DIA_Lefty_WorkDay_NextChance_07_01"); //¡Esta vez, intenta no meter la pata! Bueno, vete a ver al Señor del Arroz y llévale agua a todos los campesinos. ¿Entendido?
+		AI_Output (self, other,"DIA_Lefty_WorkDay_NextChance_07_00"); //Â¡EstÃ¡s de suerte! Voy a darte una segunda oportunidad.
+		AI_Output (self, other,"DIA_Lefty_WorkDay_NextChance_07_01"); //Â¡Esta vez, intenta no meter la pata! Bueno, vete a ver al SeÃ±or del Arroz y llÃ©vale agua a todos los campesinos. Â¿Entendido?
 		Lefty_WorkDay = B_SetDayTolerance();
 		Lefty_Mission = LOG_RUNNING;
 		An_Bauern_verteilt = 0;
-		B_LogEntry			(CH1_CarryWater,"¡He vuelto a encontrarme con Lefty! Quiere que vaya ante el Señor del Arroz y consiga el agua para los campesinos de los arrozales.");
+		B_LogEntry			(CH1_CarryWater,"Â¡He vuelto a encontrarme con Lefty! Quiere que vaya ante el SeÃ±or del Arroz y consiga el agua para los campesinos de los arrozales.");
 		
 		AI_StopProcessInfos	(self);
 	}
 	else if (Lefty_Mission == LOG_RUNNING)
 	{
-		AI_Output (self, other,"DIA_Lefty_WorkDay_StillRunning_07_00"); //¡Te he dicho que le lleves algo de agua a los campesinos!
-		AI_Output (self, other,"DIA_Lefty_WorkDay_StillRunning_07_01"); //¡No me gusta la gente que hace promesas y luego no las cumple!
+		AI_Output (self, other,"DIA_Lefty_WorkDay_StillRunning_07_00"); //Â¡Te he dicho que le lleves algo de agua a los campesinos!
+		AI_Output (self, other,"DIA_Lefty_WorkDay_StillRunning_07_01"); //Â¡No me gusta la gente que hace promesas y luego no las cumple!
 		Lefty_WorkDay = B_SetDayTolerance();
 		Lefty_Mission = LOG_FAILED;
-		B_LogEntry			(CH1_CarryWater,"¡A Lefty no le ha gustado nada que aún no haya distribuido el agua! Parece que aún voy a poder divertirme a costa de él.");
+		B_LogEntry			(CH1_CarryWater,"Â¡A Lefty no le ha gustado nada que aÃºn no haya distribuido el agua! Parece que aÃºn voy a poder divertirme a costa de Ã©l.");
 		
 		AI_StopProcessInfos	(self);
 		Npc_SetTarget (self, other);
@@ -179,14 +179,14 @@ FUNC VOID DIA_Lefty_WorkDay_Info()
 	}
 	else if (Lefty_Mission == LOG_SUCCESS)
 	{
-		AI_Output (self, other,"DIA_Lefty_WorkDay_SUCCESS_07_00"); //¡Buen trabajo! Parece que sirves para algo, después de todo.
-		AI_Output (self, other,"DIA_Lefty_WorkDay_SUCCESS_07_01"); //Creo que ésta es la tarea perfecta para ti. De ahora en adelante, la harás todos los días. Venga, ponte a ello ahora mismo.
+		AI_Output (self, other,"DIA_Lefty_WorkDay_SUCCESS_07_00"); //Â¡Buen trabajo! Parece que sirves para algo, despuÃ©s de todo.
+		AI_Output (self, other,"DIA_Lefty_WorkDay_SUCCESS_07_01"); //Creo que Ã©sta es la tarea perfecta para ti. De ahora en adelante, la harÃ¡s todos los dÃ­as. Venga, ponte a ello ahora mismo.
 		Lefty_WorkDay = B_SetDayTolerance();
 		Lefty_Mission = LOG_RUNNING;
 		An_Bauern_verteilt = 0;
 		if	!CarriedWaterForLefty
 		{
-			B_LogEntry		(CH1_CarryWater,"No puedo creerlo. Después de distribuir el agua por todas partes, Lefty quiere que me encargue de llevarla todos los días. Creo que este imbécil necesita que le digan cuatro cosas.");
+			B_LogEntry		(CH1_CarryWater,"No puedo creerlo. DespuÃ©s de distribuir el agua por todas partes, Lefty quiere que me encargue de llevarla todos los dÃ­as. Creo que este imbÃ©cil necesita que le digan cuatro cosas.");
 			B_GiveXP		(XP_LeftyCarriedWater);
 			CarriedWaterForLefty = TRUE;
 		};
@@ -206,7 +206,7 @@ instance DIA_Lefty_NeverAgain (C_INFO)
 	condition	= DIA_Lefty_NeverAgain_Condition;
 	information	= DIA_Lefty_NeverAgain_Info;
 	permanent	= 1;
-	description	= "A partir de ahora puedes llevar tú el agua.";
+	description	= "A partir de ahora puedes llevar tÃº el agua.";
 };                       
 
 FUNC int DIA_Lefty_NeverAgain_Condition()
@@ -219,9 +219,9 @@ FUNC int DIA_Lefty_NeverAgain_Condition()
 
 FUNC VOID DIA_Lefty_NeverAgain_Info()
 {
-	AI_Output (other, self,"DIA_Lefty_NeverAgain_15_00"); //De ahora en adelante puedes llevar el agua tú mismo.
-	AI_Output (self, other,"DIA_Lefty_NeverAgain_07_01"); //¿Oh? ¿Es que tienes planes más interesantes?
-	AI_Output (self, other,"DIA_Lefty_NeverAgain_07_02"); //¡Me parece que voy a tener que recordarte quién es el jefe!
+	AI_Output (other, self,"DIA_Lefty_NeverAgain_15_00"); //De ahora en adelante puedes llevar el agua tÃº mismo.
+	AI_Output (self, other,"DIA_Lefty_NeverAgain_07_01"); //Â¿Oh? Â¿Es que tienes planes mÃ¡s interesantes?
+	AI_Output (self, other,"DIA_Lefty_NeverAgain_07_02"); //Â¡Me parece que voy a tener que recordarte quiÃ©n es el jefe!
 	
 	AI_StopProcessInfos	(self);
 	Npc_SetTarget (self, other);
@@ -240,7 +240,7 @@ instance DIA_Lefty_PERM (C_INFO)
 	condition	= DIA_Lefty_PERM_Condition;
 	information	= DIA_Lefty_PERM_Info;
 	permanent	= 1;
-	description	= "¿Qué tal estás, amigo mío?";
+	description	= "Â¿QuÃ© tal estÃ¡s, amigo mÃ­o?";
 };                       
 
 FUNC int DIA_Lefty_PERM_Condition()
@@ -253,27 +253,27 @@ FUNC int DIA_Lefty_PERM_Condition()
 
 FUNC VOID DIA_Lefty_PERM_Info()
 {
-	AI_Output (other, self,"DIA_Lefty_PERM_15_00"); //¿Cómo estás, amigo mío?
-	AI_Output (self, other,"DIA_Lefty_PERM_07_01"); //¡Oh, vaya! ¿Qué quieres?
+	AI_Output (other, self,"DIA_Lefty_PERM_15_00"); //Â¿CÃ³mo estÃ¡s, amigo mÃ­o?
+	AI_Output (self, other,"DIA_Lefty_PERM_07_01"); //Â¡Oh, vaya! Â¿QuÃ© quieres?
 
 	if	!LeftyWasBeaten
 	{
-		B_LogEntry			(CH1_CarryWater,"Le he dejado claro a Lefty que no me moleste más con sus teorías acerca del transporte del agua. Algunas personas sólo aprenden a base de golpes.");
+		B_LogEntry			(CH1_CarryWater,"Le he dejado claro a Lefty que no me moleste mÃ¡s con sus teorÃ­as acerca del transporte del agua. Algunas personas sÃ³lo aprenden a base de golpes.");
 		Log_SetTopicStatus	(CH1_CarryWater,	LOG_SUCCESS);
 		B_GiveXP			(XP_LeftyConfronted);
 		LeftyWasBeaten = TRUE;
 	};
 	
 	Info_ClearChoices	(DIA_Lefty_PERM );
-	Info_AddChoice		(DIA_Lefty_PERM,"Simplemente quería ver cómo estás.",DIA_Lefty_PERM_Nothing);
+	Info_AddChoice		(DIA_Lefty_PERM,"Simplemente querÃ­a ver cÃ³mo estÃ¡s.",DIA_Lefty_PERM_Nothing);
 	Info_AddChoice		(DIA_Lefty_PERM,"Los campesinos parecen sedientos.",DIA_Lefty_PERM_Durstig);
-	Info_AddChoice		(DIA_Lefty_PERM,"He tenido un día muy malo. Quiero aliviar mi tensión... Quédate quieto...",DIA_Lefty_PERM_AufsMaul);
+	Info_AddChoice		(DIA_Lefty_PERM,"He tenido un dÃ­a muy malo. Quiero aliviar mi tensiÃ³n... QuÃ©date quieto...",DIA_Lefty_PERM_AufsMaul);
 
 };	
 
 func void DIA_Lefty_PERM_AufsMaul()
 {
-	AI_Output (other, self,"DIA_Lefty_PERM_AufsMaul_15_00"); //He tenido un día pésimo y estoy buscando alguna manera de liberar tensión... Quédate quieto un minuto...
+	AI_Output (other, self,"DIA_Lefty_PERM_AufsMaul_15_00"); //He tenido un dÃ­a pÃ©simo y estoy buscando alguna manera de liberar tensiÃ³n... QuÃ©date quieto un minuto...
 	B_Say (self,other,"$YOUWANNAFOOLME");
 	Info_ClearChoices	(DIA_Lefty_PERM );
 	AI_StopProcessInfos	(self);
@@ -291,7 +291,7 @@ func void DIA_Lefty_PERM_Durstig()
 
 func void DIA_Lefty_PERM_Nothing()
 {
-	AI_Output (other, self,"DIA_Lefty_PERM_Nothing_15_00"); //Quería ver cómo estabas.
+	AI_Output (other, self,"DIA_Lefty_PERM_Nothing_15_00"); //QuerÃ­a ver cÃ³mo estabas.
 	AI_StopProcessInfos	(self);
 };
 

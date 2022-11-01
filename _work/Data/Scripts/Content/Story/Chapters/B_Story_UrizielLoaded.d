@@ -1,9 +1,9 @@
 func void B_Story_UrizielLoaded()
 {
-	//-------- Missionsgegenstände --------
+	//-------- MissionsgegenstÃ¤nde --------
 	
-	//-------- Tagebucheinträge --------
-	B_LogEntry			(CH5_Uriziel,"Ya está hecho. URIZIEL parece haber recuperado sus antiguos poderes. Saturas y sus Magos del Agua están hartos de mí, y preferiría no ir a verlos de momento. Pero eso no importa; ¡el Durmiente me aguarda!");
+	//-------- TagebucheintrÃ¤ge --------
+	B_LogEntry			(CH5_Uriziel,"Ya estÃ¡ hecho. URIZIEL parece haber recuperado sus antiguos poderes. Saturas y sus Magos del Agua estÃ¡n hartos de mÃ­, y preferirÃ­a no ir a verlos de momento. Pero eso no importa; Â¡el Durmiente me aguarda!");
 	
 	if (Npc_GetTrueGuild(hero) != GIL_KDW)
 	{
@@ -11,7 +11,7 @@ func void B_Story_UrizielLoaded()
 	}
 	else
 	{
-		B_LogEntry		(CH5_Uriziel,"Durante mi última visita, Xardas mencionó que podría haber una forma de que yo usara los poderes de UZIRIEL, aun como mago, pero que quería echar un vistazo a la espada cargada. Debería visitarle.");
+		B_LogEntry		(CH5_Uriziel,"Durante mi Ãºltima visita, Xardas mencionÃ³ que podrÃ­a haber una forma de que yo usara los poderes de UZIRIEL, aun como mago, pero que querÃ­a echar un vistazo a la espada cargada. DeberÃ­a visitarle.");
 	};
 	
 	//-------- Erfahrung --------

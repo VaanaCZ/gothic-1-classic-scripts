@@ -37,7 +37,7 @@ INSTANCE Info_Mine_Vlk_1_Mine (C_INFO) // E1
 	condition	= Info_Mine_Vlk_1_Mine_Condition;
 	information	= Info_Mine_Vlk_1_Mine_Info;
 	permanent	= 1;
-	description = "Háblame de la mina.";
+	description = "HÃ¡blame de la mina.";
 };                       
 
 FUNC INT Info_Mine_Vlk_1_Mine_Condition()
@@ -50,8 +50,8 @@ FUNC INT Info_Mine_Vlk_1_Mine_Condition()
 
 FUNC VOID Info_Mine_Vlk_1_Mine_Info()
 {
-	AI_Output(other,self,"Info_Mine_Vlk_1_Mine_15_00"); //Háblame de la mina.
-	AI_Output(self,other,"Info_Mine_Vlk_1_Mine_01_01"); //En las cuevas crecen hierbas y setas. Es fácil digerirlas, pero no te llenan como un buen trozo de carne.
+	AI_Output(other,self,"Info_Mine_Vlk_1_Mine_15_00"); //HÃ¡blame de la mina.
+	AI_Output(self,other,"Info_Mine_Vlk_1_Mine_01_01"); //En las cuevas crecen hierbas y setas. Es fÃ¡cil digerirlas, pero no te llenan como un buen trozo de carne.
 	AI_Output(self,other,"Info_Mine_Vlk_1_Mine_01_02"); //Los reptadores tampoco saben demasiado bien. Menuda letrina.
 };
 
@@ -65,7 +65,7 @@ INSTANCE Info_Mine_Vlk_1_WichtigePersonen(C_INFO)
 	condition	= Info_Mine_Vlk_1_WichtigePersonen_Condition;
 	information	= Info_Mine_Vlk_1_WichtigePersonen_Info;
 	permanent	= 1;
-	description = "¿Quién está al mando?";
+	description = "Â¿QuiÃ©n estÃ¡ al mando?";
 };                       
 
 FUNC INT Info_Mine_Vlk_1_WichtigePersonen_Condition()
@@ -78,8 +78,8 @@ FUNC INT Info_Mine_Vlk_1_WichtigePersonen_Condition()
 
 FUNC VOID Info_Mine_Vlk_1_WichtigePersonen_Info()
 {
-	AI_Output(other,self,"Info_Mine_Vlk_1_WichtigePersonen_15_00"); //¿Quién está al mando?
-	AI_Output(self,other,"Info_Mine_Vlk_1_WichtigePersonen_01_01"); //Ian es el jefe de la mina. Él organiza al personal y el intercambio de mercancías con el campamento. Si quieres algo, será mejor que hables con él.
+	AI_Output(other,self,"Info_Mine_Vlk_1_WichtigePersonen_15_00"); //Â¿QuiÃ©n estÃ¡ al mando?
+	AI_Output(self,other,"Info_Mine_Vlk_1_WichtigePersonen_01_01"); //Ian es el jefe de la mina. Ã‰l organiza al personal y el intercambio de mercancÃ­as con el campamento. Si quieres algo, serÃ¡ mejor que hables con Ã©l.
 };
 
 // *************************************************************************
@@ -92,7 +92,7 @@ INSTANCE Info_Mine_Vlk_1_Minecrawler(C_INFO)
 	condition	= Info_Mine_Vlk_1_Minecrawler_Condition;
 	information	= Info_Mine_Vlk_1_Minecrawler_Info;
 	permanent	= 1;
-	description = "¿Qué sabes de los reptadores?";
+	description = "Â¿QuÃ© sabes de los reptadores?";
 };                       
 
 FUNC INT Info_Mine_Vlk_1_Minecrawler_Condition()
@@ -105,8 +105,8 @@ FUNC INT Info_Mine_Vlk_1_Minecrawler_Condition()
 
 FUNC VOID Info_Mine_Vlk_1_Minecrawler_Info()
 {
-	AI_Output(other,self,"Info_Mine_Vlk_1_Minecrawler_15_00"); //¿Qué sabes de los reptadores?
-	AI_Output(self,other,"Info_Mine_Vlk_1_Minecrawler_01_01"); //Los templarios hicieron un trato con Gómez. Ellos matan a los reptadores y se quedan con las mandíbulas de las bestias.
+	AI_Output(other,self,"Info_Mine_Vlk_1_Minecrawler_15_00"); //Â¿QuÃ© sabes de los reptadores?
+	AI_Output(self,other,"Info_Mine_Vlk_1_Minecrawler_01_01"); //Los templarios hicieron un trato con GÃ³mez. Ellos matan a los reptadores y se quedan con las mandÃ­bulas de las bestias.
 	
 };
 
@@ -120,7 +120,7 @@ INSTANCE Info_Mine_Vlk_1_DieLage(C_INFO) // E1
 	condition	= Info_Mine_Vlk_1_DieLage_Condition;
 	information	= Info_Mine_Vlk_1_DieLage_Info;
 	permanent	= 1;
-	description = "¿Qué tal estás?";
+	description = "Â¿QuÃ© tal estÃ¡s?";
 };                       
 
 FUNC INT Info_Mine_Vlk_1_DieLage_Condition()
@@ -133,7 +133,7 @@ FUNC INT Info_Mine_Vlk_1_DieLage_Condition()
 
 FUNC VOID Info_Mine_Vlk_1_DieLage_Info()
 {
-	AI_Output(other,self,"Info_Mine_Vlk_1_DieLage_15_00"); //¿Qué tal estás?
+	AI_Output(other,self,"Info_Mine_Vlk_1_DieLage_15_00"); //Â¿QuÃ© tal estÃ¡s?
 	AI_Output(self,other,"Info_Mine_Vlk_1_DieLage_01_01"); //Con mucho trabajo y poco descanso. Date prisa con tus preguntas. Tengo cosas que hacer.
 };
 

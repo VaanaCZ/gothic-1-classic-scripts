@@ -33,7 +33,7 @@ INSTANCE DIA_Org_875_PERM (C_INFO)
 	condition	= DIA_Org_875_PERM_Condition;
 	information	= DIA_Org_875_PERM_Info;
 	permanent	= 1;
-	description = "¿Sólo permitís el ingreso de bandidos y raspadores?";
+	description = "Â¿SÃ³lo permitÃ­s el ingreso de bandidos y raspadores?";
 };                       
 
 FUNC INT DIA_Org_875_PERM_Condition()
@@ -43,7 +43,7 @@ FUNC INT DIA_Org_875_PERM_Condition()
 
 FUNC VOID DIA_Org_875_PERM_Info()
 {	
-	AI_Output (other, self,"DIA_Org_875_PERM_15_00"); //¿Sólo dejas pasar a bandidos y a raspadores?
+	AI_Output (other, self,"DIA_Org_875_PERM_15_00"); //Â¿SÃ³lo dejas pasar a bandidos y a raspadores?
 	AI_Output (self, other,"DIA_Org_875_PERM_13_01"); //Tampoco nos importa que sean hermanos de la secta.
 	AI_Output (self, other,"DIA_Org_875_PERM_13_02"); //Pero, aparte de eso, no dejamos entrar a nadie.
 };

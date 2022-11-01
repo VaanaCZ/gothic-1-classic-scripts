@@ -47,7 +47,7 @@ FUNC int DIA_Gomez_Fault_Condition()
 FUNC VOID DIA_Gomez_Fault_Info()
 {
 	AI_Output (other, self,"DIA_Gomez_Fault_15_00"); //Vine a ofrecer mis servicios.
-	AI_Output (self, other,"DIA_Gomez_Fault_11_01"); //¿Llegas decididamente y esperas que me preocupe por ti, gusano? ¡GUARDIAS!
+	AI_Output (self, other,"DIA_Gomez_Fault_11_01"); //Â¿Llegas decididamente y esperas que me preocupe por ti, gusano? Â¡GUARDIAS!
 	
 	AI_StopProcessInfos	(self);
 	Npc_SetPermAttitude	(self, ATT_HOSTILE);
@@ -83,11 +83,11 @@ FUNC int DIA_Gomez_Hello_Condition()
 FUNC VOID DIA_Gomez_Hello_Info()
 {
 	AI_Output (other, self,"DIA_Gomez_Hello_15_00"); //He venido a ofrecer mis servicios.
-	AI_Output (self, other,"DIA_Gomez_Hello_11_01"); //¿Qué te hace pensar que nos interesan tus servicios?
+	AI_Output (self, other,"DIA_Gomez_Hello_11_01"); //Â¿QuÃ© te hace pensar que nos interesan tus servicios?
 	
 	Info_ClearChoices	(DIA_Gomez_Hello);																			
-	Info_AddChoice		(DIA_Gomez_Hello,"Espero no tener que cortarte la cabeza para demostrar mi valía.",DIA_Gomez_Hello_KopfAb);
-	Info_AddChoice		(DIA_Gomez_Hello,"Aquí no hay más que tarugos.",DIA_Gomez_Hello_Spinner);
+	Info_AddChoice		(DIA_Gomez_Hello,"Espero no tener que cortarte la cabeza para demostrar mi valÃ­a.",DIA_Gomez_Hello_KopfAb);
+	Info_AddChoice		(DIA_Gomez_Hello,"AquÃ­ no hay mÃ¡s que tarugos.",DIA_Gomez_Hello_Spinner);
 	Info_AddChoice		(DIA_Gomez_Hello,"He viajado mucho y tengo contactos en todos los campamentos.",DIA_Gomez_Hello_Kontakte);
 	Info_AddChoice		(DIA_Gomez_Hello,"He superado la prueba de fe.",DIA_Gomez_Hello_ThorusSays);
 	
@@ -96,14 +96,14 @@ FUNC VOID DIA_Gomez_Hello_Info()
 func void DIA_Gomez_Hello_ThorusSays()
 {
 	AI_Output (other, self,"DIA_Gomez_Hello_ThorusSays_15_00"); //He superado la prueba de fe y Thorus dice que soy digno.
-	AI_Output (self, other,"DIA_Gomez_Hello_ThorusSays_11_01"); //No habrías llegado aquí vivo si no fuera así. Espero que eso no sea lo mejor que puedes hacer.
+	AI_Output (self, other,"DIA_Gomez_Hello_ThorusSays_11_01"); //No habrÃ­as llegado aquÃ­ vivo si no fuera asÃ­. Espero que eso no sea lo mejor que puedes hacer.
 };
 
 func void DIA_Gomez_Hello_Kontakte()
 {
 	gomez_kontakte = 0;
 	AI_Output (other, self,"DIA_Gomez_Hello_Kontakte_15_00"); //He viajado mucho y tengo contactos en todos los campamentos.
-	AI_Output (self, other,"DIA_Gomez_Hello_Kontakte_11_01"); //Eso podría resultar útil. ¿Con quién estás en contacto?
+	AI_Output (self, other,"DIA_Gomez_Hello_Kontakte_11_01"); //Eso podrÃ­a resultar Ãºtil. Â¿Con quiÃ©n estÃ¡s en contacto?
 	Info_ClearChoices	(DIA_Gomez_Hello);
 	Info_AddChoice		(DIA_Gomez_Hello,"Aquellos eran los importantes.",DIA_Gomez_Hello_Kontakte_ThatsAll);
 	Info_AddChoice		(DIA_Gomez_Hello,"Un par de peristas del Campamento Nuevo.",DIA_Gomez_Hello_Kontakte_NLHehler);
@@ -120,14 +120,14 @@ func void DIA_Gomez_Hello_Kontakte()
 
 func void DIA_Gomez_Hello_Spinner()
 {
-	AI_Output (other, self,"DIA_Gomez_Hello_Spinner_15_00"); //Aquí no hay más que tarugos, que buscan recién llegados a los que pasar sus trabajos para no hacerlos ellos mismos.
-	AI_Output (self, other,"DIA_Gomez_Hello_Spinner_11_01"); //Eso puede ser cierto, con pocas excepciones. Aun así, no es motivo para contratar a otro tarugo.
+	AI_Output (other, self,"DIA_Gomez_Hello_Spinner_15_00"); //AquÃ­ no hay mÃ¡s que tarugos, que buscan reciÃ©n llegados a los que pasar sus trabajos para no hacerlos ellos mismos.
+	AI_Output (self, other,"DIA_Gomez_Hello_Spinner_11_01"); //Eso puede ser cierto, con pocas excepciones. Aun asÃ­, no es motivo para contratar a otro tarugo.
 };
 
 func void DIA_Gomez_Hello_KopfAb()
 {
 	AI_Output (other, self,"DIA_Gomez_Hello_KopfAb_15_00"); //Espero que no tenga que cortarte la cabeza para demostrar que puedo blandir un arma.
-	AI_Output (self, other,"DIA_Gomez_Hello_KopfAb_11_01"); //Hay una línea sutil entre la valentía y la estupidez.
+	AI_Output (self, other,"DIA_Gomez_Hello_KopfAb_11_01"); //Hay una lÃ­nea sutil entre la valentÃ­a y la estupidez.
 	
 	AI_StopProcessInfos	(self);
 	Npc_SetPermAttitude	(self, ATT_HOSTILE);
@@ -141,9 +141,9 @@ func void DIA_Gomez_Hello_KopfAb()
 func void DIA_Gomez_Hello_Kontakte_YBerion()
 {
 	AI_Output (other, self,"DIA_Gomez_Hello_Kontakte_YBerion_15_00"); //Y'Berion.
-	AI_Output (self, other,"DIA_Gomez_Hello_Kontakte_YBerion_11_01"); //Y'Berion no pierde el tiempo con tipos como tú.
+	AI_Output (self, other,"DIA_Gomez_Hello_Kontakte_YBerion_11_01"); //Y'Berion no pierde el tiempo con tipos como tÃº.
 	AI_Output (self, other,"DIA_Gomez_Hello_Kontakte_YBerion_11_02"); //Tus mentiras me dicen que crees que soy idiota.
-	AI_Output (self, other,"DIA_Gomez_Hello_Kontakte_YBerion_11_03"); //Es decepcionante ver que crees que soy ESTÚPIDO.
+	AI_Output (self, other,"DIA_Gomez_Hello_Kontakte_YBerion_11_03"); //Es decepcionante ver que crees que soy ESTÃšPIDO.
 	AI_Output (self, other,"DIA_Gomez_Hello_Kontakte_YBerion_11_04"); //Y odio las decepciones.
 	AI_StopProcessInfos	(self);
 	Npc_SetPermAttitude	(self, ATT_HOSTILE);
@@ -154,14 +154,14 @@ func void DIA_Gomez_Hello_Kontakte_YBerion()
 func void DIA_Gomez_Hello_Kontakte_Kalom()
 {
 	AI_Output (other, self,"DIA_Gomez_Hello_Kontakte_Kalom_15_00"); //Cor Kalom.
-	AI_Output (self, other,"DIA_Gomez_Hello_Kontakte_Kalom_11_01"); //¿Y?
+	AI_Output (self, other,"DIA_Gomez_Hello_Kontakte_Kalom_11_01"); //Â¿Y?
 	gomez_kontakte = gomez_kontakte + 1;
 };
 
 func void DIA_Gomez_Hello_Kontakte_Baals()
 {
 	AI_Output (other, self,"DIA_Gomez_Hello_Kontakte_Baals_15_00"); //Unos cuantos Baal del campamento de la Hermandad.
-	AI_Output (self, other,"DIA_Gomez_Hello_Kontakte_Baals_11_01"); //¿Y?
+	AI_Output (self, other,"DIA_Gomez_Hello_Kontakte_Baals_11_01"); //Â¿Y?
 	gomez_kontakte = gomez_kontakte + 1;
 };
 
@@ -170,7 +170,7 @@ func void DIA_Gomez_Hello_Kontakte_Lee()
 {
 	AI_Output (other, self,"DIA_Gomez_Hello_Kontakte_Lee_15_00"); //Zu Lee.
 	AI_Output (self, other,"DIA_Gomez_Hello_Kontakte_Lee_11_01"); //Lee ist also ein guter Freund von dir, ja?
-	AI_Output (self, other,"DIA_Gomez_Hello_Kontakte_Lee_11_02"); //Dann sieht die Sache natürlich ANDERS AUS (zornig am ENDE)
+	AI_Output (self, other,"DIA_Gomez_Hello_Kontakte_Lee_11_02"); //Dann sieht die Sache natÃ¼rlich ANDERS AUS (zornig am ENDE)
 
 	AI_StopProcessInfos	(self);
 	Npc_SetPermAttitude	(self, ATT_HOSTILE);
@@ -181,14 +181,14 @@ func void DIA_Gomez_Hello_Kontakte_Lee()
 func void DIA_Gomez_Hello_Kontakte_Lares()
 {
 	AI_Output (other, self,"DIA_Gomez_Hello_Kontakte_Lares_15_00"); //Lares.
-	AI_Output (self, other,"DIA_Gomez_Hello_Kontakte_Lares_11_01"); //¿Y?
+	AI_Output (self, other,"DIA_Gomez_Hello_Kontakte_Lares_11_01"); //Â¿Y?
 	gomez_kontakte = gomez_kontakte + 1;
 };
 
 func void DIA_Gomez_Hello_Kontakte_NLHehler()
 {
 	AI_Output (other, self,"DIA_Gomez_Hello_Kontakte_NLHehler_15_00"); //Un par de peristas del Campamento Nuevo.
-	AI_Output (self, other,"DIA_Gomez_Hello_Kontakte_NLHehler_11_01"); //¿Y?
+	AI_Output (self, other,"DIA_Gomez_Hello_Kontakte_NLHehler_11_01"); //Â¿Y?
 	gomez_kontakte = gomez_kontakte + 1;
 };
 
@@ -197,13 +197,13 @@ func void DIA_Gomez_Hello_Kontakte_ThatsAll()
 	AI_Output (other, self,"DIA_Gomez_Hello_Kontakte_ThatsAll_15_00"); //Aquellos eran los importantes.
 	if (gomez_kontakte >= 4)	
 	{
-		AI_Output (self, other,"DIA_Gomez_Hello_Kontakte_ThatsAll_11_01"); //No está mal para un novato.
-		AI_Output (self, other,"DIA_Gomez_Hello_Kontakte_ThatsAll_11_02"); //Tendrás tu oportunidad.
+		AI_Output (self, other,"DIA_Gomez_Hello_Kontakte_ThatsAll_11_01"); //No estÃ¡ mal para un novato.
+		AI_Output (self, other,"DIA_Gomez_Hello_Kontakte_ThatsAll_11_02"); //TendrÃ¡s tu oportunidad.
 		Info_ClearChoices	(DIA_Gomez_Hello);
 	}
 	else
 	{
-		AI_Output (self, other,"DIA_Gomez_Hello_Kontakte_ThatsAll_INSUFF_11_00"); //¿Esperas que ESO me impresione? ¡Tenemos CAVADORES con mejores contactos!
+		AI_Output (self, other,"DIA_Gomez_Hello_Kontakte_ThatsAll_INSUFF_11_00"); //Â¿Esperas que ESO me impresione? Â¡Tenemos CAVADORES con mejores contactos!
 		Info_ClearChoices	(DIA_Gomez_Hello);
 	};
 };
@@ -219,7 +219,7 @@ instance DIA_Gomez_Dabei (C_INFO)
 	condition	= DIA_Gomez_Dabei_Condition;
 	information	= DIA_Gomez_Dabei_Info;
 	permanent	= 0;
-	description	= "¿Significa eso que estoy admitido?";
+	description	= "Â¿Significa eso que estoy admitido?";
 };                       
 
 FUNC int DIA_Gomez_Dabei_Condition()
@@ -233,24 +233,24 @@ FUNC int DIA_Gomez_Dabei_Condition()
 
 FUNC VOID DIA_Gomez_Dabei_Info()
 {
-	AI_Output (other, self,"DIA_Gomez_Dabei_15_00"); //¿Significa eso que estoy admitido?
-	AI_Output (self, other,"DIA_Gomez_Dabei_11_01"); //Apuesta a que sí. Ya eres uno de los nuestros, muchacho.
-	AI_Output (self, other,"DIA_Gomez_Dabei_11_02"); //Raven te explicará todo.
+	AI_Output (other, self,"DIA_Gomez_Dabei_15_00"); //Â¿Significa eso que estoy admitido?
+	AI_Output (self, other,"DIA_Gomez_Dabei_11_01"); //Apuesta a que sÃ­. Ya eres uno de los nuestros, muchacho.
+	AI_Output (self, other,"DIA_Gomez_Dabei_11_02"); //Raven te explicarÃ¡ todo.
 	
 	Npc_SetTrueGuild (hero,GIL_STT );
 	hero.guild = GIL_STT;
 	B_GiveXP (XP_BecomeShadow);
-	B_LogEntry			(CH1_JoinOC,"De ahora en adelante, trabajo para Gómez y el Campamento Viejo. ¡Raven me contará todo lo demás!");
+	B_LogEntry			(CH1_JoinOC,"De ahora en adelante, trabajo para GÃ³mez y el Campamento Viejo. Â¡Raven me contarÃ¡ todo lo demÃ¡s!");
 	Log_SetTopicStatus	(CH1_JoinOC,	LOG_SUCCESS);
 
 	// Canceln der anderen Aufnahmen
 	Log_CreateTopic		(CH1_JoinNC,	LOG_MISSION);
 	Log_SetTopicStatus	(CH1_JoinNC,	LOG_FAILED);
-	B_LogEntry			(CH1_JoinNC,"Dado que ahora pertenezco a la gente de Gómez, ¡no me admiten en la banda de Lares!");
+	B_LogEntry			(CH1_JoinNC,"Dado que ahora pertenezco a la gente de GÃ³mez, Â¡no me admiten en la banda de Lares!");
 	
 	Log_CreateTopic		(CH1_JoinPsi,	LOG_MISSION);
 	Log_SetTopicStatus	(CH1_JoinPsi,	LOG_FAILED);
-	B_LogEntry			(CH1_JoinPsi,"De ahora en adelante, el Campamento Viejo es mi nuevo hogar. La Hermandad del Durmiente tendrá que arreglárselas sin mí.");
+	B_LogEntry			(CH1_JoinPsi,"De ahora en adelante, el Campamento Viejo es mi nuevo hogar. La Hermandad del Durmiente tendrÃ¡ que arreglÃ¡rselas sin mÃ­.");
 	
 	AI_StopProcessInfos	(self);
 };
@@ -266,7 +266,7 @@ instance DIA_Gomez_NurSo (C_INFO)
 	condition	= DIA_Gomez_NurSo_Condition;
 	information	= DIA_Gomez_NurSo_Info;
 	permanent	= 1;
-	description	= "Se me ocurrió presentarme para informar.";
+	description	= "Se me ocurriÃ³ presentarme para informar.";
 };                       
 
 FUNC int DIA_Gomez_NurSo_Condition()
@@ -279,8 +279,8 @@ FUNC int DIA_Gomez_NurSo_Condition()
 
 FUNC VOID DIA_Gomez_NurSo_Info()
 {
-	AI_Output (other, self,"DIA_Gomez_NurSo_15_00"); //Se me ocurrió presentarme para informar.
-	AI_Output (self, other,"DIA_Gomez_NurSo_11_00"); //Entonces ve a ver a Raven. ¡Y no vuelvas a hablarme a menos que se te ordene!
+	AI_Output (other, self,"DIA_Gomez_NurSo_15_00"); //Se me ocurriÃ³ presentarme para informar.
+	AI_Output (self, other,"DIA_Gomez_NurSo_11_00"); //Entonces ve a ver a Raven. Â¡Y no vuelvas a hablarme a menos que se te ordene!
 };
 
 
@@ -313,11 +313,11 @@ FUNC int  DIA_EBR_100_Gomez_Wait4SC_Condition()
 };
 FUNC void  DIA_EBR_100_Gomez_Wait4SC_Info()
 {
-	AI_Output (self, other,"DIA_EBR_100_Gomez_Wait4SC_11_01"); //¿Cómo has entrado aquí?
-	AI_Output (self, other,"DIA_EBR_100_Gomez_Wait4SC_11_02"); //¡Espera! ¿No eres uno de los que lucharon con nuestros hombres en la Mina Libre?
-	AI_Output (other, self,"DIA_EBR_100_Gomez_Wait4SC_15_03"); //Tus hombres no tenían derecho a invadirla. ¡Simplemente corregí su ataque de megalomanía!
-	AI_Output (self, other,"DIA_EBR_100_Gomez_Wait4SC_11_04"); //Hablarme a mí, a GOMEZ, de ese modo demuestra cierta valentía. Pero cometiste una estupidez al presentarte aquí así.
-	AI_Output (self, other,"DIA_EBR_100_Gomez_Wait4SC_11_05"); //Me encargaré personalmente de que no te vuelvas a interponer en mi camino.
+	AI_Output (self, other,"DIA_EBR_100_Gomez_Wait4SC_11_01"); //Â¿CÃ³mo has entrado aquÃ­?
+	AI_Output (self, other,"DIA_EBR_100_Gomez_Wait4SC_11_02"); //Â¡Espera! Â¿No eres uno de los que lucharon con nuestros hombres en la Mina Libre?
+	AI_Output (other, self,"DIA_EBR_100_Gomez_Wait4SC_15_03"); //Tus hombres no tenÃ­an derecho a invadirla. Â¡Simplemente corregÃ­ su ataque de megalomanÃ­a!
+	AI_Output (self, other,"DIA_EBR_100_Gomez_Wait4SC_11_04"); //Hablarme a mÃ­, a GOMEZ, de ese modo demuestra cierta valentÃ­a. Pero cometiste una estupidez al presentarte aquÃ­ asÃ­.
+	AI_Output (self, other,"DIA_EBR_100_Gomez_Wait4SC_11_05"); //Me encargarÃ© personalmente de que no te vuelvas a interponer en mi camino.
 	
 	AI_StopProcessInfos	( self );
 

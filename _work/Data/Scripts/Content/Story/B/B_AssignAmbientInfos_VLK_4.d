@@ -39,7 +39,7 @@ INSTANCE Info_Vlk_4_EinerVonEuchWerden (C_INFO) // E1
 	condition	= Info_Vlk_4_EinerVonEuchWerden_Condition;
 	information	= Info_Vlk_4_EinerVonEuchWerden_Info;
 	permanent	= 1;
-	description = "¿Qué tengo que hacer para ingresar en este campamento?";
+	description = "Â¿QuÃ© tengo que hacer para ingresar en este campamento?";
 };                       
 
 FUNC INT Info_Vlk_4_EinerVonEuchWerden_Condition()
@@ -52,10 +52,10 @@ FUNC INT Info_Vlk_4_EinerVonEuchWerden_Condition()
 
 FUNC VOID Info_Vlk_4_EinerVonEuchWerden_Info()
 {
-	AI_Output(other,self,"Info_Vlk_4_EinerVonEuchWerden_15_01"); //¿Qué tengo que hacer para ingresar en este campamento?
-	AI_Output(self,other,"Info_Vlk_4_EinerVonEuchWerden_04_04"); //¿Como Sombra o como guardia? No será fácil, tío. Tienes que superar unas cuantas pruebas antes de que Thorus te deje ver a Gómez.
-	AI_Output(self,other,"Info_Vlk_4_EinerVonEuchWerden_04_02"); //Y tendrás que caerle bien a la gente de aquí. Pero mientras no pertenezcas a ningún campamento, nadie va a tomarte en serio.
-	AI_Output(self,other,"Info_Vlk_4_EinerVonEuchWerden_04_03"); //Si yo estuviese en tu lugar, hablaría con alguna de las Sombras. Tal vez encuentres a alguien que esté dispuesto a ayudarte. Es decir, si le ofreces algo a cambio.
+	AI_Output(other,self,"Info_Vlk_4_EinerVonEuchWerden_15_01"); //Â¿QuÃ© tengo que hacer para ingresar en este campamento?
+	AI_Output(self,other,"Info_Vlk_4_EinerVonEuchWerden_04_04"); //Â¿Como Sombra o como guardia? No serÃ¡ fÃ¡cil, tÃ­o. Tienes que superar unas cuantas pruebas antes de que Thorus te deje ver a GÃ³mez.
+	AI_Output(self,other,"Info_Vlk_4_EinerVonEuchWerden_04_02"); //Y tendrÃ¡s que caerle bien a la gente de aquÃ­. Pero mientras no pertenezcas a ningÃºn campamento, nadie va a tomarte en serio.
+	AI_Output(self,other,"Info_Vlk_4_EinerVonEuchWerden_04_03"); //Si yo estuviese en tu lugar, hablarÃ­a con alguna de las Sombras. Tal vez encuentres a alguien que estÃ© dispuesto a ayudarte. Es decir, si le ofreces algo a cambio.
 	
 	var C_NPC Thorus;		Thorus 	= Hlp_GetNpc(GRD_200_Thorus);
 	Thorus.aivar[AIV_FINDABLE] = TRUE;
@@ -71,7 +71,7 @@ INSTANCE Info_Vlk_4_WichtigePersonen(C_INFO)
 	condition	= Info_Vlk_4_WichtigePersonen_Condition;
 	information	= Info_Vlk_4_WichtigePersonen_Info;
 	permanent	= 1;
-	description = "¿Hay algo especial que deba saber?";
+	description = "Â¿Hay algo especial que deba saber?";
 };                       
 
 FUNC INT Info_Vlk_4_WichtigePersonen_Condition()
@@ -81,9 +81,9 @@ FUNC INT Info_Vlk_4_WichtigePersonen_Condition()
 
 FUNC VOID Info_Vlk_4_WichtigePersonen_Info()
 {
-	AI_Output(other,self,"Info_Vlk_4_WichtigePersonen_15_00"); //¿Hay algo especial que deba saber?
-	AI_Output(self,other,"Info_Vlk_4_WichtigePersonen_04_01"); //Siendo nuevo, asegúrate de no pelearte con Gravo. Puede que sólo sea un cavador, pero sabe cómo tratar con los magnates del mineral.
-	AI_Output(self,other,"Info_Vlk_4_WichtigePersonen_04_02"); //Si te metes en líos con la panda de Gómez, puede ayudarte a salir de ellos.
+	AI_Output(other,self,"Info_Vlk_4_WichtigePersonen_15_00"); //Â¿Hay algo especial que deba saber?
+	AI_Output(self,other,"Info_Vlk_4_WichtigePersonen_04_01"); //Siendo nuevo, asegÃºrate de no pelearte con Gravo. Puede que sÃ³lo sea un cavador, pero sabe cÃ³mo tratar con los magnates del mineral.
+	AI_Output(self,other,"Info_Vlk_4_WichtigePersonen_04_02"); //Si te metes en lÃ­os con la panda de GÃ³mez, puede ayudarte a salir de ellos.
 };
 
 // *************************************************************************
@@ -96,7 +96,7 @@ INSTANCE Info_Vlk_4_DasLager(C_INFO)
 	condition	= Info_Vlk_4_DasLager_Condition;
 	information	= Info_Vlk_4_DasLager_Info;
 	permanent	= 1;
-	description = "¿Qué lugares debo conocer por aquí?";
+	description = "Â¿QuÃ© lugares debo conocer por aquÃ­?";
 };                       
 
 FUNC INT Info_Vlk_4_DasLager_Condition()
@@ -108,12 +108,12 @@ FUNC INT Info_Vlk_4_DasLager_Condition()
 };
 FUNC VOID Info_Vlk_4_DasLager_Info()
 {
-	AI_Output(other,self,"Info_Vlk_4_DasLager_15_00"); //¿Qué lugares debo conocer por aquí?
-	AI_Output(self,other,"Info_Vlk_4_DasLager_04_01"); //A menos que te guste cavar en las minas, deberías moverte entre la puerta norte y la puerta del castillo.
-	AI_Output(self,other,"Info_Vlk_4_DasLager_04_02"); //Si tienes suerte, tal vez Thorus o Diego te den algo que hacer... Eso te ofrecerá la posibilidad de congraciarte con ellos. No puede perjudicarte llevarte bien con la gente de Gómez.
+	AI_Output(other,self,"Info_Vlk_4_DasLager_15_00"); //Â¿QuÃ© lugares debo conocer por aquÃ­?
+	AI_Output(self,other,"Info_Vlk_4_DasLager_04_01"); //A menos que te guste cavar en las minas, deberÃ­as moverte entre la puerta norte y la puerta del castillo.
+	AI_Output(self,other,"Info_Vlk_4_DasLager_04_02"); //Si tienes suerte, tal vez Thorus o Diego te den algo que hacer... Eso te ofrecerÃ¡ la posibilidad de congraciarte con ellos. No puede perjudicarte llevarte bien con la gente de GÃ³mez.
 	AI_Output(self,other,"Info_Vlk_4_DasLager_04_03"); //O puede que te encuentres con un mago. A veces piden a la gente que hagan recados. Y pagan bien.
-	AI_Output(other,self,"Info_Vlk_4_DasLager_15_04"); //¿Los magos salen del castillo? ¿Cuándo?
-	AI_Output(self,other,"Info_Vlk_4_DasLager_04_05"); //¿Y yo qué sé? Pregunta a la gente que vive allí.
+	AI_Output(other,self,"Info_Vlk_4_DasLager_15_04"); //Â¿Los magos salen del castillo? Â¿CuÃ¡ndo?
+	AI_Output(self,other,"Info_Vlk_4_DasLager_04_05"); //Â¿Y yo quÃ© sÃ©? Pregunta a la gente que vive allÃ­.
 };
 
 // *************************************************************************
@@ -126,7 +126,7 @@ INSTANCE Info_Vlk_4_DieLage(C_INFO) // E1
 	condition	= Info_Vlk_4_DieLage_Condition;
 	information	= Info_Vlk_4_DieLage_Info;
 	permanent	= 1;
-	description = "¿Estás bien?";
+	description = "Â¿EstÃ¡s bien?";
 };                       
 
 FUNC INT Info_Vlk_4_DieLage_Condition()
@@ -136,8 +136,8 @@ FUNC INT Info_Vlk_4_DieLage_Condition()
 
 FUNC VOID Info_Vlk_4_DieLage_Info()
 {
-	AI_Output(other,self,"Info_Vlk_4_DieLage_15_00"); //¿Estás bien?
-	AI_Output(self,other,"Info_Vlk_4_DieLage_04_01"); //Tan bien como hace 20 años. No ha cambiado gran cosa desde entonces.
+	AI_Output(other,self,"Info_Vlk_4_DieLage_15_00"); //Â¿EstÃ¡s bien?
+	AI_Output(self,other,"Info_Vlk_4_DieLage_04_01"); //Tan bien como hace 20 aÃ±os. No ha cambiado gran cosa desde entonces.
 };
 	
 // *************************************************************************

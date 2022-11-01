@@ -37,7 +37,7 @@ INSTANCE Info_Vlk_1_EinerVonEuchWerden (C_INFO) // E1
 	condition	= Info_Vlk_1_EinerVonEuchWerden_Condition;
 	information	= Info_Vlk_1_EinerVonEuchWerden_Info;
 	permanent	= 1;
-	description = "¿Cómo ingreso en este campamento?";
+	description = "Â¿CÃ³mo ingreso en este campamento?";
 };                       
 
 FUNC INT Info_Vlk_1_EinerVonEuchWerden_Condition()
@@ -50,9 +50,9 @@ FUNC INT Info_Vlk_1_EinerVonEuchWerden_Condition()
 
 FUNC VOID Info_Vlk_1_EinerVonEuchWerden_Info()
 {
-	AI_Output(other,self,"Info_Vlk_1_EinerVonEuchWerden_15_00"); //¿Cómo ingreso en este campamento?
-	AI_Output(self,other,"Info_Vlk_1_EinerVonEuchWerden_01_01"); //Es sencillo. Coge un pico y métete en la mina. La mitad del mineral que extraigas es para protección, y el resto te permitirá sobrevivir.
-	AI_Output(self,other,"Info_Vlk_1_EinerVonEuchWerden_01_02"); //El precio que Gómez pide por sus provisiones es un robo. Aun así, es mejor que masticar arroz todo el día como hacen en el Campamento Nuevo.
+	AI_Output(other,self,"Info_Vlk_1_EinerVonEuchWerden_15_00"); //Â¿CÃ³mo ingreso en este campamento?
+	AI_Output(self,other,"Info_Vlk_1_EinerVonEuchWerden_01_01"); //Es sencillo. Coge un pico y mÃ©tete en la mina. La mitad del mineral que extraigas es para protecciÃ³n, y el resto te permitirÃ¡ sobrevivir.
+	AI_Output(self,other,"Info_Vlk_1_EinerVonEuchWerden_01_02"); //El precio que GÃ³mez pide por sus provisiones es un robo. Aun asÃ­, es mejor que masticar arroz todo el dÃ­a como hacen en el Campamento Nuevo.
 };
 
 // *************************************************************************
@@ -65,7 +65,7 @@ INSTANCE Info_Vlk_1_WichtigePersonen(C_INFO)
 	condition	= Info_Vlk_1_WichtigePersonen_Condition;
 	information	= Info_Vlk_1_WichtigePersonen_Info;
 	permanent	= 1;
-	description = "¿Quién manda por aquí?";
+	description = "Â¿QuiÃ©n manda por aquÃ­?";
 };                       
 
 FUNC INT Info_Vlk_1_WichtigePersonen_Condition()
@@ -75,8 +75,8 @@ FUNC INT Info_Vlk_1_WichtigePersonen_Condition()
 
 FUNC VOID Info_Vlk_1_WichtigePersonen_Info()
 {
-	AI_Output(other,self,"Info_Vlk_1_WichtigePersonen_15_00"); //¿Quién manda por aquí?
-	AI_Output(self,other,"Info_Vlk_1_WichtigePersonen_01_01"); //Los magnates del mineral. Ellos organizan el intercambio de mineral con el rey. Cuanto más importante eres, más recibes.
+	AI_Output(other,self,"Info_Vlk_1_WichtigePersonen_15_00"); //Â¿QuiÃ©n manda por aquÃ­?
+	AI_Output(self,other,"Info_Vlk_1_WichtigePersonen_01_01"); //Los magnates del mineral. Ellos organizan el intercambio de mineral con el rey. Cuanto mÃ¡s importante eres, mÃ¡s recibes.
 };
 
 // *************************************************************************
@@ -89,7 +89,7 @@ INSTANCE Info_Vlk_1_DasLager(C_INFO)
 	condition	= Info_Vlk_1_DasLager_Condition;
 	information	= Info_Vlk_1_DasLager_Info;
 	permanent	= 1;
-	description = "¿Hay algo interesante que ver que no sean chozas?";
+	description = "Â¿Hay algo interesante que ver que no sean chozas?";
 };                       
 
 FUNC INT Info_Vlk_1_DasLager_Condition()
@@ -99,8 +99,8 @@ FUNC INT Info_Vlk_1_DasLager_Condition()
 
 FUNC VOID Info_Vlk_1_DasLager_Info()
 {
-	AI_Output(other,self,"Info_Vlk_1_DasLager_15_00"); //¿Hay algo interesante que ver que no sean chozas?
-	AI_Output(self,other,"Info_Vlk_1_DasLager_01_01"); //Bueno, puedes ir a la arena por las noches y ver cómo los guardias se parten la cara.
+	AI_Output(other,self,"Info_Vlk_1_DasLager_15_00"); //Â¿Hay algo interesante que ver que no sean chozas?
+	AI_Output(self,other,"Info_Vlk_1_DasLager_01_01"); //Bueno, puedes ir a la arena por las noches y ver cÃ³mo los guardias se parten la cara.
 	AI_Output(self,other,"Info_Vlk_1_DasLager_01_02"); //Realmente vale lo que cuesta la entrada.
 };
 
@@ -114,7 +114,7 @@ INSTANCE Info_Vlk_1_DieLage(C_INFO) // E1
 	condition	= Info_Vlk_1_DieLage_Condition;
 	information	= Info_Vlk_1_DieLage_Info;
 	permanent	= 1;
-	description = "¿Qué tal estás?";
+	description = "Â¿QuÃ© tal estÃ¡s?";
 };                       
 
 FUNC INT Info_Vlk_1_DieLage_Condition()
@@ -124,8 +124,8 @@ FUNC INT Info_Vlk_1_DieLage_Condition()
 
 FUNC VOID Info_Vlk_1_DieLage_Info()
 {
-	AI_Output(other,self,"Info_Vlk_1_DieLage_15_00"); //¿Qué tal estás?
-	AI_Output(self,other,"Info_Vlk_1_DieLage_01_01"); //Me he pasado las dos últimas semanas trabajando en la mina. Lo único que quiero es paz. Quítate de en medio.
+	AI_Output(other,self,"Info_Vlk_1_DieLage_15_00"); //Â¿QuÃ© tal estÃ¡s?
+	AI_Output(self,other,"Info_Vlk_1_DieLage_01_01"); //Me he pasado las dos Ãºltimas semanas trabajando en la mina. Lo Ãºnico que quiero es paz. QuÃ­tate de en medio.
 };
 	
 // *************************************************************************

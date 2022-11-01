@@ -37,7 +37,7 @@ INSTANCE Info_Mine_Org_13_Mine (C_INFO) // E1
 	condition	= Info_Mine_Org_13_Mine_Condition;
 	information	= Info_Mine_Org_13_Mine_Info;
 	permanent	= 1;
-	description = "Háblame de este campamento.";
+	description = "HÃ¡blame de este campamento.";
 };                       
 
 FUNC INT Info_Mine_Org_13_Mine_Condition()
@@ -47,8 +47,8 @@ FUNC INT Info_Mine_Org_13_Mine_Condition()
 
 FUNC VOID Info_Mine_Org_13_Mine_Info()
 {
-	AI_Output(other,self,"Info_Mine_Org_13_Mine_15_00"); //Háblame de este campamento.
-	AI_Output(self,other,"Info_Mine_Org_13_Mine_13_01"); //Este agujero en la roca nos va a sacar de aquí. En cuanto tengamos suficiente mineral, nos olvidaremos del Campamento Viejo.
+	AI_Output(other,self,"Info_Mine_Org_13_Mine_15_00"); //HÃ¡blame de este campamento.
+	AI_Output(self,other,"Info_Mine_Org_13_Mine_13_01"); //Este agujero en la roca nos va a sacar de aquÃ­. En cuanto tengamos suficiente mineral, nos olvidaremos del Campamento Viejo.
 	
 };
 
@@ -62,7 +62,7 @@ INSTANCE Info_Mine_Org_13_WichtigePersonen(C_INFO)
 	condition	= Info_Mine_Org_13_WichtigePersonen_Condition;
 	information	= Info_Mine_Org_13_WichtigePersonen_Info;
 	permanent	= 1;
-	description = "¿Quién da las órdenes aquí?";
+	description = "Â¿QuiÃ©n da las Ã³rdenes aquÃ­?";
 };                       
 
 FUNC INT Info_Mine_Org_13_WichtigePersonen_Condition()
@@ -72,7 +72,7 @@ FUNC INT Info_Mine_Org_13_WichtigePersonen_Condition()
 
 FUNC VOID Info_Mine_Org_13_WichtigePersonen_Info()
 {
-	AI_Output(other,self,"Info_Mine_Org_13_WichtigePersonen_15_00"); //¿Quién da las órdenes aquí?
+	AI_Output(other,self,"Info_Mine_Org_13_WichtigePersonen_15_00"); //Â¿QuiÃ©n da las Ã³rdenes aquÃ­?
 	AI_Output(self,other,"Info_Mine_Org_13_WichtigePersonen_13_01"); //Okyl es quien manda.
 	AI_Output(self,other,"Info_Mine_Org_13_WichtigePersonen_13_02"); //Pero a los bandidos suele dejarnos en paz.
 	
@@ -88,7 +88,7 @@ INSTANCE Info_Mine_Org_13_DieLage(C_INFO) // E1
 	condition	= Info_Mine_Org_13_DieLage_Condition;
 	information	= Info_Mine_Org_13_DieLage_Info;
 	permanent	= 1;
-	description = "¿Estás bien?";
+	description = "Â¿EstÃ¡s bien?";
 };                       
 
 FUNC INT Info_Mine_Org_13_DieLage_Condition()
@@ -98,7 +98,7 @@ FUNC INT Info_Mine_Org_13_DieLage_Condition()
 
 FUNC VOID Info_Mine_Org_13_DieLage_Info()
 {
-	AI_Output(other,self,"Info_Mine_Org_13_DieLage_15_00"); //¿Estás bien?
+	AI_Output(other,self,"Info_Mine_Org_13_DieLage_15_00"); //Â¿EstÃ¡s bien?
 	AI_Output(self,other,"Info_Mine_Org_13_DieLage_13_01");//No peor que ayer.
 };
 	

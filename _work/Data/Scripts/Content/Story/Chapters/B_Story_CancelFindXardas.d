@@ -1,10 +1,10 @@
 func void B_Story_CancelFindXardas()
 {
-	//-------- Tagebucheinträge --------
-	B_LogEntry			(CH4_FindXardas,"He decidido NO CONTARLE a Saturas que, según Xardas, todos estos años de acumular mineral han sido en vano. Le contaré toda la verdad tan pronto como encuentre otra forma de destruir la Barrera Mágica. Hasta entonces, viviré con la vergüenza de no haber completado una búsqueda."); 
+	//-------- TagebucheintrÃ¤ge --------
+	B_LogEntry			(CH4_FindXardas,"He decidido NO CONTARLE a Saturas que, segÃºn Xardas, todos estos aÃ±os de acumular mineral han sido en vano. Le contarÃ© toda la verdad tan pronto como encuentre otra forma de destruir la Barrera MÃ¡gica. Hasta entonces, vivirÃ© con la vergÃ¼enza de no haber completado una bÃºsqueda."); 
 	Log_SetTopicStatus	(CH4_FindXardas,	LOG_FAILED);
 
-	//-------- Missionsgegenstände --------
+	//-------- MissionsgegenstÃ¤nde --------
 	
 	//-------- NSCs einsetzen --------
 	

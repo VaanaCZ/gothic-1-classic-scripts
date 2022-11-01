@@ -33,7 +33,7 @@ INSTANCE DIA_Senyan_Hello(C_INFO)
 	condition	= DIA_Senyan_Hello_Condition;
 	information	= DIA_Senyan_Hello_Info;
 	permanent	= 0;
-	description = "Eres de la Mina Libre, ¿verdad?";
+	description = "Eres de la Mina Libre, Â¿verdad?";
 };                       
 
 FUNC INT DIA_Senyan_Hello_Condition()
@@ -43,8 +43,8 @@ FUNC INT DIA_Senyan_Hello_Condition()
 
 FUNC VOID DIA_Senyan_Hello_Info()
 {	
-	AI_Output (other, self,"DIA_Senyan_Hello_15_00"); //Tú vienes de la Mina Libre, ¿verdad?
-	AI_Output (self, other,"DIA_Senyan_Hello_01_01"); //Sí. ¿Cómo te has enterado?
+	AI_Output (other, self,"DIA_Senyan_Hello_15_00"); //TÃº vienes de la Mina Libre, Â¿verdad?
+	AI_Output (self, other,"DIA_Senyan_Hello_01_01"); //SÃ­. Â¿CÃ³mo te has enterado?
 	AI_StopProcessInfos	(self);
 };
 
@@ -59,7 +59,7 @@ INSTANCE DIA_Senyan_JustTalk(C_INFO)
 	condition	= DIA_Senyan_JustTalk_Condition;
 	information	= DIA_Senyan_JustTalk_Info;
 	permanent	= 1;
-	description = "Sólo quiero hablar contigo.";
+	description = "SÃ³lo quiero hablar contigo.";
 };                       
 
 FUNC INT DIA_Senyan_JustTalk_Condition()
@@ -72,7 +72,7 @@ FUNC INT DIA_Senyan_JustTalk_Condition()
 
 FUNC VOID DIA_Senyan_JustTalk_Info()
 {	
-	AI_Output (other, self,"DIA_Senyan_JustTalk_15_00"); //Sólo quiero hablar contigo.
+	AI_Output (other, self,"DIA_Senyan_JustTalk_15_00"); //SÃ³lo quiero hablar contigo.
 	AI_Output (self, other,"DIA_Senyan_JustTalk_01_01"); //No he venido a hablar.
 	AI_StopProcessInfos	(self);
 };

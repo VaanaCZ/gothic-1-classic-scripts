@@ -37,7 +37,7 @@ INSTANCE Info_Nov_5_EinerVonEuchWerden (C_INFO) // E1
 	condition	= Info_Nov_5_EinerVonEuchWerden_Condition;
 	information	= Info_Nov_5_EinerVonEuchWerden_Info;
 	permanent	= 1;
-	description = "¿Cómo puedo ingresar en este campamento?";
+	description = "Â¿CÃ³mo puedo ingresar en este campamento?";
 };                       
 
 FUNC INT Info_Nov_5_EinerVonEuchWerden_Condition()
@@ -50,9 +50,9 @@ FUNC INT Info_Nov_5_EinerVonEuchWerden_Condition()
 
 FUNC VOID Info_Nov_5_EinerVonEuchWerden_Info()
 {
-	AI_Output(other,self,"Info_Nov_5_EinerVonEuchWerden_15_00"); //¿Cómo puedo ingresar en este campamento?
-	AI_Output(self,other,"Info_Nov_5_EinerVonEuchWerden_05_01"); //Es lo más sencillo del mundo. Habla con un par de los gurús inferiores. Ellos te ayudarán.
-	AI_Output(self,other,"Info_Nov_5_EinerVonEuchWerden_05_02"); //Ya verás como esto te acaba gustando.
+	AI_Output(other,self,"Info_Nov_5_EinerVonEuchWerden_15_00"); //Â¿CÃ³mo puedo ingresar en este campamento?
+	AI_Output(self,other,"Info_Nov_5_EinerVonEuchWerden_05_01"); //Es lo mÃ¡s sencillo del mundo. Habla con un par de los gurÃºs inferiores. Ellos te ayudarÃ¡n.
+	AI_Output(self,other,"Info_Nov_5_EinerVonEuchWerden_05_02"); //Ya verÃ¡s como esto te acaba gustando.
 };
 
 // *************************************************************************
@@ -65,7 +65,7 @@ INSTANCE Info_Nov_5_WichtigePersonen(C_INFO)
 	condition	= Info_Nov_5_WichtigePersonen_Condition;
 	information	= Info_Nov_5_WichtigePersonen_Info;
 	permanent	= 1;
-	description = "¿Quién manda por aquí?";
+	description = "Â¿QuiÃ©n manda por aquÃ­?";
 };                       
 
 FUNC INT Info_Nov_5_WichtigePersonen_Condition()
@@ -75,8 +75,8 @@ FUNC INT Info_Nov_5_WichtigePersonen_Condition()
 
 FUNC VOID Info_Nov_5_WichtigePersonen_Info()
 {
-	AI_Output(other,self,"Info_Nov_5_WichtigePersonen_15_00"); //¿Quién manda por aquí?
-	AI_Output(self,other,"Info_Nov_5_WichtigePersonen_05_01"); //Los gurús tienen todo bajo control. Pero si no llamas la atención, te dejarán en paz.
+	AI_Output(other,self,"Info_Nov_5_WichtigePersonen_15_00"); //Â¿QuiÃ©n manda por aquÃ­?
+	AI_Output(self,other,"Info_Nov_5_WichtigePersonen_05_01"); //Los gurÃºs tienen todo bajo control. Pero si no llamas la atenciÃ³n, te dejarÃ¡n en paz.
 };
 
 // *************************************************************************
@@ -89,7 +89,7 @@ INSTANCE Info_Nov_5_DasLager(C_INFO)
 	condition	= Info_Nov_5_DasLager_Condition;
 	information	= Info_Nov_5_DasLager_Info;
 	permanent	= 1;
-	description = "¿Qué puedes decirme de este campamento?";
+	description = "Â¿QuÃ© puedes decirme de este campamento?";
 };                       
 
 FUNC INT Info_Nov_5_DasLager_Condition()
@@ -99,10 +99,10 @@ FUNC INT Info_Nov_5_DasLager_Condition()
 
 FUNC VOID Info_Nov_5_DasLager_Info()
 {
-	AI_Output(other,self,"Info_Nov_5_DasLager_15_00"); //¿Qué puedes decirme de este campamento?
+	AI_Output(other,self,"Info_Nov_5_DasLager_15_00"); //Â¿QuÃ© puedes decirme de este campamento?
 	AI_Output(self,other,"Info_Nov_5_DasLager_05_01"); //Es el mejor lugar donde estar de toda la colonia.
-	AI_Output(self,other,"Info_Nov_5_DasLager_05_02"); //Aunque no creas en las enseñanzas del Durmiente, al menos recibes tus raciones diarias de hierba del pantano y comida. Sólo tienes que hablar con Fortuno.
-	AI_Output(other,self,"Info_Nov_5_DasLager_15_03"); //¿Dónde puedo encontrarlo?
+	AI_Output(self,other,"Info_Nov_5_DasLager_05_02"); //Aunque no creas en las enseÃ±anzas del Durmiente, al menos recibes tus raciones diarias de hierba del pantano y comida. SÃ³lo tienes que hablar con Fortuno.
+	AI_Output(other,self,"Info_Nov_5_DasLager_15_03"); //Â¿DÃ³nde puedo encontrarlo?
 	AI_Output(self,other,"Info_Nov_5_DasLager_05_04"); //Abajo, en el laboratorio de Cor Kalom, cerca del gran patio del templo.
 	
 	var C_NPC CorKalom;		CorKalom = Hlp_GetNpc(Gur_1201_CorKalom);
@@ -119,7 +119,7 @@ INSTANCE Info_Nov_5_DieLage(C_INFO) // E1
 	condition	= Info_Nov_5_DieLage_Condition;
 	information	= Info_Nov_5_DieLage_Info;
 	permanent	= 1;
-	description = "¿Qué tal?";
+	description = "Â¿QuÃ© tal?";
 };                       
 
 FUNC INT Info_Nov_5_DieLage_Condition()
@@ -129,8 +129,8 @@ FUNC INT Info_Nov_5_DieLage_Condition()
 
 FUNC VOID Info_Nov_5_DieLage_Info()
 {
-	AI_Output(other,self,"Info_Nov_5_DieLage_15_00"); //¿Qué tal?
-	AI_Output(self,other,"Info_Nov_5_DieLage_05_01"); //No puedo quejarme. ¿Eres nuevo por aquí?
+	AI_Output(other,self,"Info_Nov_5_DieLage_15_00"); //Â¿QuÃ© tal?
+	AI_Output(self,other,"Info_Nov_5_DieLage_05_01"); //No puedo quejarme. Â¿Eres nuevo por aquÃ­?
 	AI_Output(other,self,"Info_Nov_5_DieLage_15_02"); //Acabo de llegar.
 };
 	

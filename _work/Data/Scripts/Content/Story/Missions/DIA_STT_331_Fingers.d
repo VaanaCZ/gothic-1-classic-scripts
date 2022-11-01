@@ -35,7 +35,7 @@ INSTANCE DIA_Fingers_BecomeShadow (C_INFO)
 	condition		= DIA_Fingers_BecomeShadow_Condition;
 	information		= DIA_Fingers_BecomeShadow_Info;
 	permanent		= 1;
-	description		= "¡Quiero convertirme en una Sombra!"; 
+	description		= "Â¡Quiero convertirme en una Sombra!"; 
 };
 
 FUNC INT DIA_Fingers_BecomeShadow_Condition()
@@ -49,15 +49,15 @@ FUNC INT DIA_Fingers_BecomeShadow_Condition()
 
 FUNC VOID DIA_Fingers_BecomeShadow_Info()
 {
-	AI_Output (other, self,"DIA_Fingers_BecomeShadow_15_00"); //¡Quiero ingresar en las Sombras!
-	AI_Output (self, other,"DIA_Fingers_BecomeShadow_05_01"); //¿Y?
+	AI_Output (other, self,"DIA_Fingers_BecomeShadow_15_00"); //Â¡Quiero ingresar en las Sombras!
+	AI_Output (self, other,"DIA_Fingers_BecomeShadow_05_01"); //Â¿Y?
 	Info_ClearChoices	(DIA_Fingers_BecomeShadow );
 	Info_AddChoice		(DIA_Fingers_BecomeShadow,DIALOG_BACK										,DIA_Fingers_BecomeShadow_BACK);
 	if (Npc_KnowsInfo(hero,Info_Diego_Teachers))
 	{
-		Info_AddChoice		(DIA_Fingers_BecomeShadow,"Busco a alguien que me enseñe algo.",DIA_Fingers_BecomeShadow_TeachMe);
+		Info_AddChoice		(DIA_Fingers_BecomeShadow,"Busco a alguien que me enseÃ±e algo.",DIA_Fingers_BecomeShadow_TeachMe);
 	};
-	Info_AddChoice		(DIA_Fingers_BecomeShadow,"¿Puedes ayudarme?",DIA_Fingers_BecomeShadow_AnyTips);
+	Info_AddChoice		(DIA_Fingers_BecomeShadow,"Â¿Puedes ayudarme?",DIA_Fingers_BecomeShadow_AnyTips);
 };
 
 func void DIA_Fingers_BecomeShadow_BACK()
@@ -67,23 +67,23 @@ func void DIA_Fingers_BecomeShadow_BACK()
 
 func void DIA_Fingers_BecomeShadow_AnyTips()
 {
-	AI_Output (other, self,"DIA_Fingers_BecomeShadow_AnyTips_15_00"); //¿Puedes ayudarme?
-	AI_Output (self, other,"DIA_Fingers_BecomeShadow_AnyTips_05_01"); //No sé cómo...
+	AI_Output (other, self,"DIA_Fingers_BecomeShadow_AnyTips_15_00"); //Â¿Puedes ayudarme?
+	AI_Output (self, other,"DIA_Fingers_BecomeShadow_AnyTips_05_01"); //No sÃ© cÃ³mo...
 };
 
 func void DIA_Fingers_BecomeShadow_TeachMe()
 {
-	AI_Output (other, self,"DIA_Fingers_BecomeShadow_TeachMe_15_00"); //Busco a alguien que me enseñe algo.
-	AI_Output (self, other,"DIA_Fingers_BecomeShadow_TeachMe_05_01"); //¿Por qué acudes a mí?
+	AI_Output (other, self,"DIA_Fingers_BecomeShadow_TeachMe_15_00"); //Busco a alguien que me enseÃ±e algo.
+	AI_Output (self, other,"DIA_Fingers_BecomeShadow_TeachMe_05_01"); //Â¿Por quÃ© acudes a mÃ­?
 	AI_Output (other, self,"DIA_Fingers_BecomeShadow_TeachMe_15_02"); //Vengo de parte de Diego.
 	AI_Output (self, other,"DIA_Fingers_BecomeShadow_TeachMe_05_03"); //Haberlo dicho antes.
-	AI_Output (self, other,"DIA_Fingers_BecomeShadow_TeachMe_05_04"); //Si quieres unirte al Campamento, es beneficioso ser un buen luchador o un buen ladrón.
-	AI_Output (self, other,"DIA_Fingers_BecomeShadow_TeachMe_05_05"); //Si los miembros influyentes de las Sombras te ponen a prueba, te encargarán tareas que será mejor que nadie te pille llevando a cabo.
-	AI_Output (self, other,"DIA_Fingers_BecomeShadow_TeachMe_05_06"); //Por eso te sería de utilidad aprender a ser un buen ladrón.
-	AI_Output (self, other,"DIA_Fingers_BecomeShadow_TeachMe_05_07"); //Por cierto, yo soy el mejor ladrón de todo el Campamento Viejo.
+	AI_Output (self, other,"DIA_Fingers_BecomeShadow_TeachMe_05_04"); //Si quieres unirte al Campamento, es beneficioso ser un buen luchador o un buen ladrÃ³n.
+	AI_Output (self, other,"DIA_Fingers_BecomeShadow_TeachMe_05_05"); //Si los miembros influyentes de las Sombras te ponen a prueba, te encargarÃ¡n tareas que serÃ¡ mejor que nadie te pille llevando a cabo.
+	AI_Output (self, other,"DIA_Fingers_BecomeShadow_TeachMe_05_06"); //Por eso te serÃ­a de utilidad aprender a ser un buen ladrÃ³n.
+	AI_Output (self, other,"DIA_Fingers_BecomeShadow_TeachMe_05_07"); //Por cierto, yo soy el mejor ladrÃ³n de todo el Campamento Viejo.
 	Fingers_CanTeach = TRUE;
 	Log_CreateTopic   	(GE_TeacherOC,LOG_NOTE);
-	B_LogEntry			(GE_TeacherOC,"Fingers puede enseñarme las habilidades de HURTO y CERRAJERÍA.");
+	B_LogEntry			(GE_TeacherOC,"Fingers puede enseÃ±arme las habilidades de HURTO y CERRAJERÃA.");
 	Info_ClearChoices	(DIA_Fingers_BecomeShadow );
 };
 
@@ -99,7 +99,7 @@ INSTANCE DIA_Fingers_Lehrer (C_INFO)
 	condition		= DIA_Fingers_Lehrer_Condition;
 	information		= DIA_Fingers_Lehrer_Info;
 	permanent		= 1;
-	description		= "¿Qué puedes enseñarme?"; 
+	description		= "Â¿QuÃ© puedes enseÃ±arme?"; 
 };
 
 FUNC INT DIA_Fingers_Lehrer_Condition()
@@ -112,7 +112,7 @@ FUNC INT DIA_Fingers_Lehrer_Condition()
 
 FUNC VOID DIA_Fingers_Lehrer_Info()
 {
-	AI_Output (other, self,"DIA_Fingers_Lehrer_15_00"); //¿Qué puedes enseñarme?
+	AI_Output (other, self,"DIA_Fingers_Lehrer_15_00"); //Â¿QuÃ© puedes enseÃ±arme?
 	AI_Output (self, other,"DIA_Fingers_Lehrer_05_02"); //Eso depende de lo que quieras saber.
 
 
@@ -131,62 +131,62 @@ func void DIA_Fingers_Lehrer_Schleichen()
 {
 	AI_Output (other, self,"DIA_Fingers_Lehrer_Schleichen_15_00"); //Quiero aprender a moverme con sigilo.
 	AI_Output (self, other,"DIA_Fingers_Lehrer_Schleichen_05_01"); //Modestia aparte, creo que soy uno de los mejores ladrones que han sido arrojados a esta colonia.
-	AI_Output (self, other,"DIA_Fingers_Lehrer_Schleichen_05_02"); //¡Pero cuando se trata de enseñar a moverse con sigilo, Cavalorn es el mejor!
+	AI_Output (self, other,"DIA_Fingers_Lehrer_Schleichen_05_02"); //Â¡Pero cuando se trata de enseÃ±ar a moverse con sigilo, Cavalorn es el mejor!
 	Fingers_Wherecavalorn = TRUE;
 };
 
 func void DIA_Fingers_Lehrer_Lockpick()
 {
-	AI_Output (other, self,"DIA_Fingers_Lehrer_Lockpick_15_00"); //¿Cómo puedo mejorar mis habilidades de cerrajería?
+	AI_Output (other, self,"DIA_Fingers_Lehrer_Lockpick_15_00"); //Â¿CÃ³mo puedo mejorar mis habilidades de cerrajerÃ­a?
 	
 	if (B_GiveSkill(other, NPC_TALENT_PICKLOCK, 1, LPCOST_TALENT_PICKLOCK_1))
 	{
-		AI_Output (self, other,"DIA_Fingers_Lehrer_Lockpick_05_01"); //¡Ya te gustaría saber eso! Para empezar, no es demasiado difícil.
-		AI_Output (self, other,"DIA_Fingers_Lehrer_Lockpick_05_02"); //Sobre todo tienes que conseguir que tu ganzúa no se rompa.
-		AI_Output (self, other,"DIA_Fingers_Lehrer_Lockpick_05_03"); //¡En el futuro, si eres un poco más paciente, verás como dejas de necesitar tantas ganzúas!
+		AI_Output (self, other,"DIA_Fingers_Lehrer_Lockpick_05_01"); //Â¡Ya te gustarÃ­a saber eso! Para empezar, no es demasiado difÃ­cil.
+		AI_Output (self, other,"DIA_Fingers_Lehrer_Lockpick_05_02"); //Sobre todo tienes que conseguir que tu ganzÃºa no se rompa.
+		AI_Output (self, other,"DIA_Fingers_Lehrer_Lockpick_05_03"); //Â¡En el futuro, si eres un poco mÃ¡s paciente, verÃ¡s como dejas de necesitar tantas ganzÃºas!
 	};
 };
 
 func void DIA_Fingers_Lehrer_Lockpick2()
 {
-	AI_Output (other, self,"DIA_Fingers_Lehrer_Lockpick2_15_00"); //¿Cómo puedo convertirme en un experto en abrir cerraduras?
+	AI_Output (other, self,"DIA_Fingers_Lehrer_Lockpick2_15_00"); //Â¿CÃ³mo puedo convertirme en un experto en abrir cerraduras?
 	
 	if (B_GiveSkill(other, NPC_TALENT_PICKLOCK, 2, LPCOST_TALENT_PICKLOCK_2))
 	{
-		AI_Output (self, other,"DIA_Fingers_Lehrer_Lockpick2_05_01"); //Sólo podrás saber el momento en que va a romperse una ganzúa cuando hayas ganado algo de experiencia. ¡Produce un sonido diferente!
-		AI_Output (self, other,"DIA_Fingers_Lehrer_Lockpick2_05_02"); //Me parece que ya lo has pillado. Aprende a escuchar los suaves chasquidos de la cerradura y no perderás tantas ganzúas.
-		AI_Output (self, other,"DIA_Fingers_Lehrer_Lockpick2_05_03"); //Un experto en este campo tiene muchas posibilidades de abrir un arcón sin romper su ganzúa.
+		AI_Output (self, other,"DIA_Fingers_Lehrer_Lockpick2_05_01"); //SÃ³lo podrÃ¡s saber el momento en que va a romperse una ganzÃºa cuando hayas ganado algo de experiencia. Â¡Produce un sonido diferente!
+		AI_Output (self, other,"DIA_Fingers_Lehrer_Lockpick2_05_02"); //Me parece que ya lo has pillado. Aprende a escuchar los suaves chasquidos de la cerradura y no perderÃ¡s tantas ganzÃºas.
+		AI_Output (self, other,"DIA_Fingers_Lehrer_Lockpick2_05_03"); //Un experto en este campo tiene muchas posibilidades de abrir un arcÃ³n sin romper su ganzÃºa.
 	};
 };
 
 func void DIA_Fingers_Lehrer_Pickpocket()
 {
-	AI_Output (other, self,"DIA_Fingers_Lehrer_PICKPOCKET_15_00"); //¡Quiero convertirme en un buen carterista!
+	AI_Output (other, self,"DIA_Fingers_Lehrer_PICKPOCKET_15_00"); //Â¡Quiero convertirme en un buen carterista!
 	if (Npc_GetTalentSkill(other, NPC_TALENT_SNEAK) == 1)
 	{
 		if (B_GiveSkill(other, NPC_TALENT_PICKPOCKET, 1, LPCOST_TALENT_PICKPOCKET_1))
 		{
-			AI_Output (self, other,"DIA_Fingers_Lehrer_PICKPOCKET_05_01"); //Así que quieres quitarle sus pertenencias a unos cuantos, ¿eh? Bueno.
-			AI_Output (self, other,"DIA_Fingers_Lehrer_PICKPOCKET_05_02"); //Te enseñaré cómo mejorar tus habilidades, pero seguirá siendo probable que te pillen.
-			AI_Output (self, other,"DIA_Fingers_Lehrer_PICKPOCKET_05_03"); //Sólo deberías arriesgarte cuando no haya nadie alrededor de tu víctima.
-			AI_Output (self, other,"DIA_Fingers_Lehrer_PICKPOCKET_05_04"); //¡Sólo un experto puede quitarle cosas de los bolsillos a la gente sin que se note!
+			AI_Output (self, other,"DIA_Fingers_Lehrer_PICKPOCKET_05_01"); //AsÃ­ que quieres quitarle sus pertenencias a unos cuantos, Â¿eh? Bueno.
+			AI_Output (self, other,"DIA_Fingers_Lehrer_PICKPOCKET_05_02"); //Te enseÃ±arÃ© cÃ³mo mejorar tus habilidades, pero seguirÃ¡ siendo probable que te pillen.
+			AI_Output (self, other,"DIA_Fingers_Lehrer_PICKPOCKET_05_03"); //SÃ³lo deberÃ­as arriesgarte cuando no haya nadie alrededor de tu vÃ­ctima.
+			AI_Output (self, other,"DIA_Fingers_Lehrer_PICKPOCKET_05_04"); //Â¡SÃ³lo un experto puede quitarle cosas de los bolsillos a la gente sin que se note!
 		};
 	}
 	else
 	{
-		AI_Output (self, other,"DIA_Fingers_lehrer_Pickpocket_05_05"); //¡Olvídalo! Nunca conseguirás convertirte en un ladrón habilidoso si no sabes moverte sigilosamente.
+		AI_Output (self, other,"DIA_Fingers_lehrer_Pickpocket_05_05"); //Â¡OlvÃ­dalo! Nunca conseguirÃ¡s convertirte en un ladrÃ³n habilidoso si no sabes moverte sigilosamente.
 	};
 };
 
 func void DIA_Fingers_Lehrer_Pickpocket2()
 {
-	AI_Output (other, self,"DIA_Fingers_Lehrer_Pickpocket2_15_00"); //¡Quiero convertirme en un carterista experto!
+	AI_Output (other, self,"DIA_Fingers_Lehrer_Pickpocket2_15_00"); //Â¡Quiero convertirme en un carterista experto!
 	
 	if (B_GiveSkill(other, NPC_TALENT_PICKPOCKET, 2, LPCOST_TALENT_PICKPOCKET_2))
 	{		
-		AI_Output (self, other,"DIA_Fingers_Lehrer_Pickpocket2_05_01"); //Me parece que has hecho los suficientes progresos como para que te enseñe los últimos trucos del oficio.
+		AI_Output (self, other,"DIA_Fingers_Lehrer_Pickpocket2_05_01"); //Me parece que has hecho los suficientes progresos como para que te enseÃ±e los Ãºltimos trucos del oficio.
 		AI_Output (self, other,"DIA_Fingers_Lehrer_Pickpocket2_05_02"); //Pero tienes que saber que incluso los mejores pueden ser atrapados a veces.
-		AI_Output (self, other,"DIA_Fingers_Lehrer_Pickpocket2_05_03"); //Cuídate.
+		AI_Output (self, other,"DIA_Fingers_Lehrer_Pickpocket2_05_03"); //CuÃ­date.
 	};
 };
 
@@ -206,7 +206,7 @@ INSTANCE DIA_Fingers_WhereCavalorn (C_INFO)
 	condition		= DIA_Fingers_WhereCavalorn_Condition;
 	information		= DIA_Fingers_WhereCavalorn_Info;
 	permanent		= 1;
-	description		= "¿Dónde puedo encontrar a Cavalorn?"; 
+	description		= "Â¿DÃ³nde puedo encontrar a Cavalorn?"; 
 };
 
 FUNC INT DIA_Fingers_WhereCavalorn_Condition()
@@ -219,11 +219,11 @@ FUNC INT DIA_Fingers_WhereCavalorn_Condition()
 
 FUNC VOID DIA_Fingers_WhereCavalorn_Info()
 {
-	AI_Output (other, self,"DIA_Fingers_WhereCavalorn_15_00"); //¿Dónde puedo encontrar a Cavalorn?
-	AI_Output (self, other,"DIA_Fingers_WhereCavalorn_05_01"); //Está cazando en el bosque. Lo encontrarás en el sendero hacia el Campamento Nuevo. Al oeste del Campamento Viejo hay un gran cañón.
-	AI_Output (self, other,"DIA_Fingers_WhereCavalorn_05_02"); //En ese cañón hay un antiguo refugio de leñadores. Allí podrás encontrarle.
+	AI_Output (other, self,"DIA_Fingers_WhereCavalorn_15_00"); //Â¿DÃ³nde puedo encontrar a Cavalorn?
+	AI_Output (self, other,"DIA_Fingers_WhereCavalorn_05_01"); //EstÃ¡ cazando en el bosque. Lo encontrarÃ¡s en el sendero hacia el Campamento Nuevo. Al oeste del Campamento Viejo hay un gran caÃ±Ã³n.
+	AI_Output (self, other,"DIA_Fingers_WhereCavalorn_05_02"); //En ese caÃ±Ã³n hay un antiguo refugio de leÃ±adores. AllÃ­ podrÃ¡s encontrarle.
 	
-	B_LogEntry( GE_TeacherOW,"Cavalorn puede enseñarme SIGILO. Su cabaña se encuentra en un cañón situado al oeste del Campamento Viejo, en dirección al Campamento Nuevo.");
+	B_LogEntry( GE_TeacherOW,"Cavalorn puede enseÃ±arme SIGILO. Su cabaÃ±a se encuentra en un caÃ±Ã³n situado al oeste del Campamento Viejo, en direcciÃ³n al Campamento Nuevo.");
 };
 
 // **************************************************
@@ -239,7 +239,7 @@ INSTANCE DIA_Fingers_Learnt (C_INFO)
 	condition		= DIA_Fingers_Learnt_Condition;
 	information		= DIA_Fingers_Learnt_Info;
 	permanent		= 1;
-	description		= "No me defenderías delante de Diego, ¿verdad?"; 
+	description		= "No me defenderÃ­as delante de Diego, Â¿verdad?"; 
 };
 
 FUNC INT DIA_Fingers_Learnt_Condition()
@@ -253,26 +253,26 @@ FUNC INT DIA_Fingers_Learnt_Condition()
 
 FUNC VOID DIA_Fingers_Learnt_Info()
 {
-	AI_Output (other, self,"DIA_Fingers_Learnt_15_00"); //¿Podrías hablar a Diego en mi favor?
+	AI_Output (other, self,"DIA_Fingers_Learnt_15_00"); //Â¿PodrÃ­as hablar a Diego en mi favor?
 
 	if ( Npc_GetTalentSkill(other, NPC_TALENT_PICKLOCK)+Npc_GetTalentSkill(other, NPC_TALENT_PICKPOCKET)+Npc_GetTalentSkill(other, NPC_TALENT_SNEAK)	> 0)
 	{
-		AI_Output (self, other,"DIA_Fingers_Learnt_05_01"); //Sí. Has aprendido algo que te vuelve muy útil para nosotros.
-		AI_Output (self, other,"DIA_Fingers_Learnt_05_02"); //En este campamento siempre vienen bien los ladrones habilidosos. Tendrás mi voto.
+		AI_Output (self, other,"DIA_Fingers_Learnt_05_01"); //SÃ­. Has aprendido algo que te vuelve muy Ãºtil para nosotros.
+		AI_Output (self, other,"DIA_Fingers_Learnt_05_02"); //En este campamento siempre vienen bien los ladrones habilidosos. TendrÃ¡s mi voto.
 		Fingers_Learnt = LOG_SUCCESS;
 		
 		B_GiveXP (XP_Fingerstrain);
-		B_LogEntry( CH1_JoinOC,"Fingers está muy satisfecho con mis progresos.");
+		B_LogEntry( CH1_JoinOC,"Fingers estÃ¡ muy satisfecho con mis progresos.");
 	}
 	else
 	{
 		AI_Output (self, other,"DIA_Fingers_Learnt_05_03"); //Depende...
-		AI_Output (self, other,"DIA_Fingers_Learnt_05_04"); //¡Si me demuestras que has aprendido algo como ladrón, nos vendrías bien!
-		AI_Output (other, self,"DIA_Fingers_Learnt_15_05"); //¿Cómo puedo hacerlo?
-		AI_Output (self, other,"DIA_Fingers_Learnt_05_06"); //¡Aprende habilidades de ladrón! Necesitas moverte con mayor sigilo, ser mejor carterista y mejorar a la hora de abrir cerraduras. Entonces tendrás mi voto.
+		AI_Output (self, other,"DIA_Fingers_Learnt_05_04"); //Â¡Si me demuestras que has aprendido algo como ladrÃ³n, nos vendrÃ­as bien!
+		AI_Output (other, self,"DIA_Fingers_Learnt_15_05"); //Â¿CÃ³mo puedo hacerlo?
+		AI_Output (self, other,"DIA_Fingers_Learnt_05_06"); //Â¡Aprende habilidades de ladrÃ³n! Necesitas moverte con mayor sigilo, ser mejor carterista y mejorar a la hora de abrir cerraduras. Entonces tendrÃ¡s mi voto.
 		Fingers_Learnt = LOG_RUNNING;
 		
-		B_LogEntry( CH1_JoinOC,"Fingers hablará en mi favor en cuanto aprenda una de las habilidades de ladrón.");
+		B_LogEntry( CH1_JoinOC,"Fingers hablarÃ¡ en mi favor en cuanto aprenda una de las habilidades de ladrÃ³n.");
 	};
 };
 

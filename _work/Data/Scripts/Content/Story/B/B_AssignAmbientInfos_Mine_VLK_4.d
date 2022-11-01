@@ -37,7 +37,7 @@ INSTANCE Info_Mine_Vlk_4_Mine (C_INFO) // E1
 	condition	= Info_Mine_Vlk_4_Mine_Condition;
 	information	= Info_Mine_Vlk_4_Mine_Info;
 	permanent	= 1;
-	description = "Háblame de la mina.";
+	description = "HÃ¡blame de la mina.";
 };                       
 
 FUNC INT Info_Mine_Vlk_4_Mine_Condition()
@@ -50,9 +50,9 @@ FUNC INT Info_Mine_Vlk_4_Mine_Condition()
 
 FUNC VOID Info_Mine_Vlk_4_Mine_Info()
 {
-	AI_Output(other,self,"Info_Mine_Vlk_4_Mine_15_00"); //Háblame de la mina.
-	AI_Output(self,other,"Info_Mine_Vlk_4_Mine_04_01"); //Picos y sudor. Eso es lo que consigues allí dentro. Tú llegas y después te vas.
-	AI_Output(self,other,"Info_Mine_Vlk_4_Mine_04_02"); //Pero mucho después de que te hayas ido, yo seguiré allí, extrayendo el mineral de la roca. Es mi trabajo, y mi vida.
+	AI_Output(other,self,"Info_Mine_Vlk_4_Mine_15_00"); //HÃ¡blame de la mina.
+	AI_Output(self,other,"Info_Mine_Vlk_4_Mine_04_01"); //Picos y sudor. Eso es lo que consigues allÃ­ dentro. TÃº llegas y despuÃ©s te vas.
+	AI_Output(self,other,"Info_Mine_Vlk_4_Mine_04_02"); //Pero mucho despuÃ©s de que te hayas ido, yo seguirÃ© allÃ­, extrayendo el mineral de la roca. Es mi trabajo, y mi vida.
 };
 
 // *************************************************************************
@@ -65,7 +65,7 @@ INSTANCE Info_Mine_Vlk_4_WichtigePersonen(C_INFO)
 	condition	= Info_Mine_Vlk_4_WichtigePersonen_Condition;
 	information	= Info_Mine_Vlk_4_WichtigePersonen_Info;
 	permanent	= 1;
-	description = "¿Quién está al mando?";
+	description = "Â¿QuiÃ©n estÃ¡ al mando?";
 };                       
 
 FUNC INT Info_Mine_Vlk_4_WichtigePersonen_Condition()
@@ -78,8 +78,8 @@ FUNC INT Info_Mine_Vlk_4_WichtigePersonen_Condition()
 
 FUNC VOID Info_Mine_Vlk_4_WichtigePersonen_Info()
 {
-	AI_Output(other,self,"Info_Mine_Vlk_4_WichtigePersonen_15_00"); //¿Quién está al mando?
-	AI_Output(self,other,"Info_Mine_Vlk_4_WichtigePersonen_04_01"); //Santino y Alberto consiguen mercancías a cambio del mineral que extraemos. Nos dan nuestras raciones diarias.
+	AI_Output(other,self,"Info_Mine_Vlk_4_WichtigePersonen_15_00"); //Â¿QuiÃ©n estÃ¡ al mando?
+	AI_Output(self,other,"Info_Mine_Vlk_4_WichtigePersonen_04_01"); //Santino y Alberto consiguen mercancÃ­as a cambio del mineral que extraemos. Nos dan nuestras raciones diarias.
 };
 
 // *************************************************************************
@@ -92,7 +92,7 @@ INSTANCE Info_Mine_Vlk_4_Minecrawler(C_INFO)
 	condition	= Info_Mine_Vlk_4_Minecrawler_Condition;
 	information	= Info_Mine_Vlk_4_Minecrawler_Info;
 	permanent	= 1;
-	description = "¿Qué sabes de los reptadores?";
+	description = "Â¿QuÃ© sabes de los reptadores?";
 };                       
 
 FUNC INT Info_Mine_Vlk_4_Minecrawler_Condition()
@@ -105,8 +105,8 @@ FUNC INT Info_Mine_Vlk_4_Minecrawler_Condition()
 
 FUNC VOID Info_Mine_Vlk_4_Minecrawler_Info()
 {
-	AI_Output(other,self,"Info_Mine_Vlk_4_Minecrawler_15_00"); //¿Qué sabes de los reptadores?
-	AI_Output(self,other,"Info_Mine_Vlk_4_Minecrawler_04_01"); //Si ves a alguno de esos asquerosos bichos, sacúdelo entre los ojos con tu pico. Pero tienes que apuntar bien, porque no tendrás una segunda oportunidad.
+	AI_Output(other,self,"Info_Mine_Vlk_4_Minecrawler_15_00"); //Â¿QuÃ© sabes de los reptadores?
+	AI_Output(self,other,"Info_Mine_Vlk_4_Minecrawler_04_01"); //Si ves a alguno de esos asquerosos bichos, sacÃºdelo entre los ojos con tu pico. Pero tienes que apuntar bien, porque no tendrÃ¡s una segunda oportunidad.
 	
 };
 
@@ -120,7 +120,7 @@ INSTANCE Info_Mine_Vlk_4_DieLage(C_INFO) // E1
 	condition	= Info_Mine_Vlk_4_DieLage_Condition;
 	information	= Info_Mine_Vlk_4_DieLage_Info;
 	permanent	= 1;
-	description = "¿Qué tal estás?";
+	description = "Â¿QuÃ© tal estÃ¡s?";
 };                       
 
 FUNC INT Info_Mine_Vlk_4_DieLage_Condition()
@@ -133,7 +133,7 @@ FUNC INT Info_Mine_Vlk_4_DieLage_Condition()
 
 FUNC VOID Info_Mine_Vlk_4_DieLage_Info()
 {
-	AI_Output(other,self,"Info_Mine_Vlk_4_DieLage_15_00"); //¿Qué tal estás?
+	AI_Output(other,self,"Info_Mine_Vlk_4_DieLage_15_00"); //Â¿QuÃ© tal estÃ¡s?
 	AI_Output(self,other,"Info_Mine_Vlk_4_DieLage_04_01"); //He conocido tiempos mejores.
 };
 	

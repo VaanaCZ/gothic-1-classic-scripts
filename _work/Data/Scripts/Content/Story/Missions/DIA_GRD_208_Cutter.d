@@ -46,8 +46,8 @@ FUNC int  DIA_Cutter_Hello_Condition()
 FUNC VOID  DIA_Cutter_Hello_Info()
 {
 	AI_Output (other, self,"DIA_Cutter_Hello_15_00"); //Este castillo es muy espacioso.
-	AI_Output (self, other,"DIA_Cutter_Hello_08_01"); //Me parece que no te he visto por aquí antes. ¿Quién eres?
-	AI_Output (other, self,"DIA_Cutter_Hello_15_02"); //Soy un recién llegado. Se me ocurrió echar un vistazo.
+	AI_Output (self, other,"DIA_Cutter_Hello_08_01"); //Me parece que no te he visto por aquÃ­ antes. Â¿QuiÃ©n eres?
+	AI_Output (other, self,"DIA_Cutter_Hello_15_02"); //Soy un reciÃ©n llegado. Se me ocurriÃ³ echar un vistazo.
 };
 
 //******************************************
@@ -61,7 +61,7 @@ instance  DIA_Cutter_Burg (C_INFO)
 	condition	= DIA_Cutter_Burg_Condition;
 	information	= DIA_Cutter_Burg_Info;
 	permanent	= 10;
-	description = "¿Qué puedes decirme del castillo?";
+	description = "Â¿QuÃ© puedes decirme del castillo?";
 };                       
 
 FUNC int  DIA_Cutter_Burg_Condition()
@@ -74,12 +74,12 @@ FUNC int  DIA_Cutter_Burg_Condition()
 
 FUNC VOID  DIA_Cutter_Burg_Info()
 {
-	AI_Output (other, self,"DIA_Cutter_Burg_15_00"); //¿Qué puedes decirme del castillo?
-	AI_Output (self, other,"DIA_Cutter_Burg_08_01"); //Gómez y su banda lo tomaron tras la gran sublevación.
-	AI_Output (self, other,"DIA_Cutter_Burg_08_02"); //Enseguida supe que lo mejor era unirse a él.
-	AI_Output (self, other,"DIA_Cutter_Burg_08_03"); //Incluso cuando aún estábamos encerrados en las mazmorras, y teníamos que matarnos a trabajar en las minas, el resto de los prisioneros siempre hacían lo que él decía.
-	AI_Output (other, self,"DIA_Cutter_Burg_15_04"); //¿Hay mazmorras bajo el castillo?
-	AI_Output (self, other,"DIA_Cutter_Burg_08_05"); //Sí, pero ahora ya no hay nada en ellas. Nadie ha bajado allí después de la gran sublevación.
+	AI_Output (other, self,"DIA_Cutter_Burg_15_00"); //Â¿QuÃ© puedes decirme del castillo?
+	AI_Output (self, other,"DIA_Cutter_Burg_08_01"); //GÃ³mez y su banda lo tomaron tras la gran sublevaciÃ³n.
+	AI_Output (self, other,"DIA_Cutter_Burg_08_02"); //Enseguida supe que lo mejor era unirse a Ã©l.
+	AI_Output (self, other,"DIA_Cutter_Burg_08_03"); //Incluso cuando aÃºn estÃ¡bamos encerrados en las mazmorras, y tenÃ­amos que matarnos a trabajar en las minas, el resto de los prisioneros siempre hacÃ­an lo que Ã©l decÃ­a.
+	AI_Output (other, self,"DIA_Cutter_Burg_15_04"); //Â¿Hay mazmorras bajo el castillo?
+	AI_Output (self, other,"DIA_Cutter_Burg_08_05"); //SÃ­, pero ahora ya no hay nada en ellas. Nadie ha bajado allÃ­ despuÃ©s de la gran sublevaciÃ³n.
 };
 
 //******************************************
@@ -93,7 +93,7 @@ instance  DIA_Cutter_PERM (C_INFO)
 	condition	= DIA_Cutter_PERM_Condition;
 	information	= DIA_Cutter_PERM_Info;
 	permanent	= 1;
-	description = "¿Cómo es la vida de un guardia?";
+	description = "Â¿CÃ³mo es la vida de un guardia?";
 };                       
 
 FUNC int  DIA_Cutter_PERM_Condition()
@@ -106,8 +106,8 @@ FUNC int  DIA_Cutter_PERM_Condition()
 
 FUNC VOID  DIA_Cutter_PERM_Info()
 {
-	AI_Output (other, self,"DIA_Cutter_PERM_15_00"); //¿Cómo es la vida de un guardia?
-	AI_Output (self, other,"DIA_Cutter_PERM_08_01"); //Tranquila. Somos el campamento más grande y fuerte de toda la colonia. Nadie se mete con nosotros.
+	AI_Output (other, self,"DIA_Cutter_PERM_15_00"); //Â¿CÃ³mo es la vida de un guardia?
+	AI_Output (self, other,"DIA_Cutter_PERM_08_01"); //Tranquila. Somos el campamento mÃ¡s grande y fuerte de toda la colonia. Nadie se mete con nosotros.
 	AI_Output (other, self,"DIA_Cutter_PERM_15_02"); //Entiendo.
 	AI_StopProcessInfos	(self);
 };
@@ -148,6 +148,6 @@ FUNC int  GRD_208_Cutter_WELCOME_Condition()
 };
 func void  GRD_208_Cutter_WELCOME_Info()
 {
-	AI_Output (self, other,"GRD_208_Cutter_WELCOME_Info_08_01"); //Has tomado la decisión correcta. ¡Te gustará ser guardia!
+	AI_Output (self, other,"GRD_208_Cutter_WELCOME_Info_08_01"); //Has tomado la decisiÃ³n correcta. Â¡Te gustarÃ¡ ser guardia!
 	AI_StopProcessInfos	(self);
 };

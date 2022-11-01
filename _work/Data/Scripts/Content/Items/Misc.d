@@ -2,8 +2,8 @@
 // Wert von Kram
 // ************************************************************************************************
 
-// Items f¸r Objektbenutzung und Item-Interaktion...
-// z.B. Krautstampfer, Hammer, Kochˆffel, Laborflasche, Roheisen (Schmiede)
+// Items f√ºr Objektbenutzung und Item-Interaktion...
+// z.B. Krautstampfer, Hammer, Koch√∂ffel, Laborflasche, Roheisen (Schmiede)
 const int	Value_MobsiItem			=	3;
 
 // mit 80% kann bei einem kompletten Durchgang ca. 10 Erz verdient werden
@@ -13,7 +13,7 @@ const int	Value_SwordRawHot		= 	(Value_SwordBladeHot*8)/10; // 80% der geschmied
 const int	Value_SwordRaw			= 	(Value_SwordRawHot	*8)/10; // 80% des erhitzen Rohstahls
 
 const int	Value_Dietrich			=	10;
-const int	Value_Schl¸ssel			=	3;
+const int	Value_Schl√ºssel			=	3;
 
 const int	Value_Joint1			=	8;
 const int	Value_Joint2			=	15;
@@ -26,9 +26,9 @@ const int	Value_Fackel			=	2;
 const int	Value_Sumpfkraut		=	8;
 const int	Value_Pfeife			=	10;
 const int	Value_Rasiermesser		=	5;// EX 25 NIEDRIGER WERT WEIL ES VIEL DAVON GIBT!!! 
-const int	Value_M¸nze				=	0;// BITTE AUF 0 LASSEN, DAF‹R IST SIE DA, F‹R SONST NIX!!!!! M.F.
-const int	Value_Sch¸ssel			=	4;
-const int	Value_Kerzenst‰nder		=	10;
+const int	Value_M√ºnze				=	0;// BITTE AUF 0 LASSEN, DAF√úR IST SIE DA, F√úR SONST NIX!!!!! M.F.
+const int	Value_Sch√ºssel			=	4;
+const int	Value_Kerzenst√§nder		=	10;
 const int	Value_Becher			=	 4;
 const int	Value_Pokal				=	50;
 const int	Value_Besteck			=	15;
@@ -38,25 +38,25 @@ const int	Value_Amphore			=	15; //EX 45
 const int	Value_Statue			=	15;
 
 // Alchemie-Ingredienzien
-// FIXME: noch benutzen? // NEin, aber liegen ¸berall ind er Welt, von daher als Ambient Items drinlassen!M.F.
+// FIXME: noch benutzen? // NEin, aber liegen √ºberall ind er Welt, von daher als Ambient Items drinlassen!M.F.
 const int	Value_Schwefel			=	20;
 const int	Value_Quecksilber		=	25;
 const int	Value_Salz				=	10;
-const int	Value_÷l				=	15;
+const int	Value_√ñl				=	15;
 const int	Value_Moleratfett		=	5;
 const int	Value_Alcohol			=	18;
 
 
 
 /*******************************************************************************************
-**	Items f¸r Mobsi-Benutzung               					  		  				  **
+**	Items f√ºr Mobsi-Benutzung               					  		  				  **
 *******************************************************************************************/
 
 /******************************************************************************************/
 //	Dietrich
 INSTANCE ItKeLockpick (C_Item)
 {
-	name 				=	"Ganz˙a";
+	name 				=	"Ganz√∫a";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -71,9 +71,9 @@ INSTANCE ItKeLockpick (C_Item)
 };
 
 /******************************************************************************************/
-//	Schl¸ssel
+//	Schl√ºssel
 
-// FIXME: aussagekr‰ftigere Schl¸sselnamen?
+// FIXME: aussagekr√§ftigere Schl√ºsselnamen?
 INSTANCE ItKeKey1(C_Item)
 {
 	name 				=	"Llave";
@@ -81,13 +81,13 @@ INSTANCE ItKeKey1(C_Item)
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	0;
 
-	value 				=	Value_Schl¸ssel;
+	value 				=	Value_Schl√ºssel;
 
 	visual 				=	"ItKe_Key_01.3ds";
 	material 			=	MAT_METAL;
 
 	description			= name;
-	TEXT[4]				= NAME_Value;					COUNT[4]	= Value_Schl¸ssel;
+	TEXT[4]				= NAME_Value;					COUNT[4]	= Value_Schl√ºssel;
 };
 
 /******************************************************************************************/
@@ -98,13 +98,13 @@ INSTANCE ItKeKey2(C_Item)
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	0;
 
-	value 				=	Value_Schl¸ssel;
+	value 				=	Value_Schl√ºssel;
 
 	visual 				=	"ItKe_Key_02.3ds";
 	material 			=	MAT_METAL;
 
 	description			= name;
-	TEXT[4]				= NAME_Value;					COUNT[4]	= Value_Schl¸ssel;
+	TEXT[4]				= NAME_Value;					COUNT[4]	= Value_Schl√ºssel;
 };
 
 /******************************************************************************************/
@@ -115,13 +115,13 @@ INSTANCE ItKeKey3(C_Item)
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	0;
 
-	value 				=	Value_Schl¸ssel;
+	value 				=	Value_Schl√ºssel;
 
 	visual 				=	"ItKe_Key_03.3ds";
 	material 			=	MAT_METAL;
 
 	description			= name;
-	TEXT[4]				= NAME_Value;					COUNT[4]	= Value_Schl¸ssel;
+	TEXT[4]				= NAME_Value;					COUNT[4]	= Value_Schl√ºssel;
 };
 
 /******************************************************************************************/
@@ -132,13 +132,13 @@ INSTANCE ItKeKey4(C_Item)
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	0;
 
-	value 				=	Value_Schl¸ssel;
+	value 				=	Value_Schl√ºssel;
 
 	visual 				=	"ItKe_Key_04.3ds";
 	material 			=	MAT_METAL;
 
 	description			= name;
-	TEXT[4]				= NAME_Value;					COUNT[4]	= Value_Schl¸ssel;
+	TEXT[4]				= NAME_Value;					COUNT[4]	= Value_Schl√ºssel;
 };
 
 /******************************************************************************************/
@@ -149,13 +149,13 @@ INSTANCE ItKeCavalorn01(C_Item)
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	0;
 
-	value 				=	Value_Schl¸ssel;
+	value 				=	Value_Schl√ºssel;
 
 	visual 				=	"ItKe_Key_04.3ds";
 	material 			=	MAT_METAL;
 
 	description			= name;
-	TEXT[4]				= NAME_Value;					COUNT[4]	= Value_Schl¸ssel;
+	TEXT[4]				= NAME_Value;					COUNT[4]	= Value_Schl√ºssel;
 };
 
 
@@ -198,7 +198,7 @@ INSTANCE ItMiHammer (C_Item)
 };
 
 /******************************************************************************************/
-// im Topf r¸hren
+// im Topf r√ºhren
 INSTANCE ItMiScoop (C_Item)
 {
 	name 				=	"Cuchara de palo";
@@ -236,7 +236,7 @@ INSTANCE ItMiFlask(C_Item)
 
 
 /******************************************************************************************/
-//	Items f¸r Schmiede	    					 								 		  **
+//	Items f√ºr Schmiede	    					 								 		  **
 
 INSTANCE ItMiSwordraw (C_Item)
 {
@@ -309,10 +309,10 @@ INSTANCE ItMiSwordblade	(C_Item)
 
 
 /*******************************************************************************************
-**	Items f¸r Item-Interaktionen (ohne Mobsi benutzbar)               		 		  	  **
+**	Items f√ºr Item-Interaktionen (ohne Mobsi benutzbar)               		 		  	  **
 *******************************************************************************************/
 
-// f¸r Feuerspucker
+// f√ºr Feuerspucker
 INSTANCE ItLsTorchFirespit(C_Item)
 {
 	name 				=	"Antorcha";
@@ -336,7 +336,7 @@ INSTANCE ItLsTorchFirespit(C_Item)
 // zum Rumklimpern
 INSTANCE ItMiLute (C_Item)
 {
-	name 				=	"La˙d";
+	name 				=	"La√∫d";
 
 	mainflag 			=	ITEM_KAT_NONE;
 
@@ -362,7 +362,7 @@ func void UseLute()
 
 
 /******************************************************************************************/
-// F¸r Babe-Luftzuf‰cheln
+// F√ºr Babe-Luftzuf√§cheln
 INSTANCE ItMiWedel(C_Item)
 {
 	name 				=	"Hoja de palma";
@@ -381,7 +381,7 @@ INSTANCE ItMiWedel(C_Item)
 };
 
 /******************************************************************************************/
-// F¸r Babe-Putzen
+// F√ºr Babe-Putzen
 INSTANCE ItMiBrush(C_Item)
 {
 	name 				=	"Cepillo";
@@ -457,7 +457,7 @@ func void UseItMiJoint_2()
 /******************************************************************************************/
 INSTANCE ItMiJoint_3(C_Item)
 {
-	name 				=	"Llamada onÌrica";
+	name 				=	"Llamada on√≠rica";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -537,7 +537,7 @@ INSTANCE ItLsTorchburning(C_Item)
 	material 			=	MAT_WOOD;
 
 	description			= name;
-	//	TEXT[4]				= NAME_Value;					COUNT[4]	= Value_Schl¸ssel;
+	//	TEXT[4]				= NAME_Value;					COUNT[4]	= Value_Schl√ºssel;
 };
 
 /******************************************************************************************/
@@ -554,7 +554,7 @@ INSTANCE ItLsTorchburned(C_Item)
 	material 			=	MAT_WOOD;
 
 	description			= name;
-	//	TEXT[4]				= NAME_Value;					COUNT[4]	= Value_Schl¸ssel;
+	//	TEXT[4]				= NAME_Value;					COUNT[4]	= Value_Schl√ºssel;
 };
 
 
@@ -564,7 +564,7 @@ INSTANCE ItLsTorchburned(C_Item)
 //STUFF//
 /******************************************************************************************/
 
-// Sumpfkraut (f¸r Joints)
+// Sumpfkraut (f√ºr Joints)
 INSTANCE ItMi_Plants_Swampherb_01(C_Item)
 {
 	name 				=	"Hierba del pantano";
@@ -623,7 +623,7 @@ INSTANCE ItMi_Stuff_OldCoin_01 (C_Item)
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
 
-	value 				=	Value_M¸nze;
+	value 				=	Value_M√ºnze;
 
 	visual 				=	"ItMi_Stuff_OldCoin_01.3DS";
 	material 			=	MAT_METAL;
@@ -632,7 +632,7 @@ INSTANCE ItMi_Stuff_OldCoin_01 (C_Item)
 	TEXT[4]				= NAME_Value;					COUNT[4]	= value;
 };
 
-//	M¸nze mit Mission Flag um tote liegenzulassen
+//	M√ºnze mit Mission Flag um tote liegenzulassen
 INSTANCE ItMi_Stuff_OldCoin_02 (C_Item)
 {
 	name 				=	"Moneda";
@@ -640,7 +640,7 @@ INSTANCE ItMi_Stuff_OldCoin_02 (C_Item)
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI|ITEM_MISSION;
 
-	value 				=	Value_M¸nze;
+	value 				=	Value_M√ºnze;
 
 	visual 				=	"ItMi_Stuff_OldCoin_01.3DS";
 	material 			=	MAT_METAL;
@@ -657,7 +657,7 @@ INSTANCE ItMi_Stuff_Plate_01 (C_Item)
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
 
-	value 				=	Value_Sch¸ssel;
+	value 				=	Value_Sch√ºssel;
 
 	visual 				=	"ItMi_Stuff_Plate_01.3DS";
 	material 			=	MAT_CLAY;
@@ -674,7 +674,7 @@ INSTANCE ItMi_Stuff_Candel_01 (C_Item)
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
 
-	value 				=	Value_Kerzenst‰nder;
+	value 				=	Value_Kerzenst√§nder;
 
 	visual 				=	"ItMi_Stuff_Candel_01.3DS";
 	material 			=	MAT_METAL;
@@ -737,7 +737,7 @@ INSTANCE ItMi_Stuff_Silverware_01 (C_Item)
 /******************************************************************************************/
 INSTANCE ItMi_Stuff_Pan_01 (C_Item)
 {
-	name 				=	"SartÈn";
+	name 				=	"Sart√©n";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -771,7 +771,7 @@ INSTANCE ItMi_Stuff_Mug_01 (C_Item)
 /******************************************************************************************/
 INSTANCE ItMi_Stuff_Amphore_01 (C_Item)
 {
-	name 				=	"¡nfora";
+	name 				=	"√Ånfora";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -859,12 +859,12 @@ INSTANCE ItMi_Alchemy_Salt_01 (C_Item)
 /******************************************************************************************/
 INSTANCE ItMi_Alchemy_Syrianoil_01 (C_Item)
 {
-	name 				=	"Aceite siri·nico";
+	name 				=	"Aceite siri√°nico";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
 
-	value 				=	Value_÷l;
+	value 				=	Value_√ñl;
 
 	visual 				=	"ItMi_Alchemy_Syrianoil_01.3DS";
 	material 			=	MAT_CLAY;
@@ -928,7 +928,7 @@ INSTANCE ItMiLuteIE (C_Item)
 	material 			=	MAT_WOOD;
 
 	description			= name;
-	TEXT[4]				= NAME_Value;					COUNT[4]	= Value_Schl¸ssel;
+	TEXT[4]				= NAME_Value;					COUNT[4]	= Value_Schl√ºssel;
 };
 
 INSTANCE ItMiBluepipe(C_Item)
@@ -943,7 +943,7 @@ INSTANCE ItMiBluepipe(C_Item)
 	material 			=	MAT_WOOD;
 
 	description			= name;
-	TEXT[4]				= NAME_Value;					COUNT[4]	= Value_Schl¸ssel;
+	TEXT[4]				= NAME_Value;					COUNT[4]	= Value_Schl√ºssel;
 };
 
 INSTANCE ItMiYellowpipe (C_Item)
@@ -958,7 +958,7 @@ INSTANCE ItMiYellowpipe (C_Item)
 	material 			=	MAT_WOOD;
 
 	description			= name;
-	TEXT[4]				= NAME_Value;					COUNT[4]	= Value_Schl¸ssel;
+	TEXT[4]				= NAME_Value;					COUNT[4]	= Value_Schl√ºssel;
 };
 
 INSTANCE ItMiDrumscheit (C_Item)
@@ -973,12 +973,12 @@ INSTANCE ItMiDrumscheit (C_Item)
 	material 			=	MAT_WOOD;
 
 	description			= name;
-	TEXT[4]				= NAME_Value;					COUNT[4]	= Value_Schl¸ssel;
+	TEXT[4]				= NAME_Value;					COUNT[4]	= Value_Schl√ºssel;
 };
 
 INSTANCE ItMiDrumstick (C_Item)
 {
-	name 				=	"Trommelstˆcke";
+	name 				=	"Trommelst√∂cke";
 
 	mainflag 			=	ITEM_KAT_NONE;
 
@@ -988,7 +988,7 @@ INSTANCE ItMiDrumstick (C_Item)
 	material 			=	MAT_WOOD;
 
 	description			= name;
-	TEXT[4]				= NAME_Value;					COUNT[4]	= Value_Schl¸ssel;
+	TEXT[4]				= NAME_Value;					COUNT[4]	= Value_Schl√ºssel;
 };
 
 INSTANCE ItMiCello (C_Item)
@@ -1003,7 +1003,7 @@ INSTANCE ItMiCello (C_Item)
 	material 			=	MAT_WOOD;
 
 	description			= name;
-	TEXT[4]				= NAME_Value;					COUNT[4]	= Value_Schl¸ssel;
+	TEXT[4]				= NAME_Value;					COUNT[4]	= Value_Schl√ºssel;
 };
 
 INSTANCE ItMiCellobow (C_Item)
@@ -1018,7 +1018,7 @@ INSTANCE ItMiCellobow (C_Item)
 	material 			=	MAT_WOOD;
 
 	description			= name;
-	TEXT[4]				= NAME_Value;					COUNT[4]	= Value_Schl¸ssel;
+	TEXT[4]				= NAME_Value;					COUNT[4]	= Value_Schl√ºssel;
 };
 
 INSTANCE ItMiHarp (C_Item)
@@ -1033,7 +1033,7 @@ INSTANCE ItMiHarp (C_Item)
 	material 			=	MAT_WOOD;
 
 	description			= name;
-	TEXT[4]				= NAME_Value;					COUNT[4]	= Value_Schl¸ssel;
+	TEXT[4]				= NAME_Value;					COUNT[4]	= Value_Schl√ºssel;
 };
 
 */

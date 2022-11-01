@@ -52,9 +52,9 @@ FUNC VOID ORG_801_Lares_YouHere_Info()
 	var C_NPC Roscoe; Roscoe = Hlp_GetNpc(Org_840_Roscoe);
 	if ( (Npc_IsInState(Roscoe, ZS_MagicSleep)) || (Npc_GetTempAttitude(Roscoe,other)==ATT_FRIENDLY) )
 	{
-		AI_Output	(self, other,"ORG_801_Lares_YouHere_11_00"); //¿Cómo has entrado aquí? ¿Qué le pasa a Roscoe?
+		AI_Output	(self, other,"ORG_801_Lares_YouHere_11_00"); //Â¿CÃ³mo has entrado aquÃ­? Â¿QuÃ© le pasa a Roscoe?
 		AI_Output	(other, self,"ORG_801_Lares_YouHere_15_01"); //No tuvo ganas de detenerme.
-		AI_Output	(self, other,"ORG_801_Lares_YouHere_11_02"); //¿Qué es lo que quieres?
+		AI_Output	(self, other,"ORG_801_Lares_YouHere_11_02"); //Â¿QuÃ© es lo que quieres?
 		Roscoe.aivar[AIV_PASSGATE] = TRUE;
 		Lares_vorbeigemogelt = TRUE;
 		B_GiveXP	(XP_CheatedIntoLaresHut);
@@ -94,7 +94,7 @@ FUNC int ORG_801_Lares_WannaJoin_Condition()
 FUNC VOID ORG_801_Lares_WannaJoin_Info()
 {
 	AI_Output (other, self,"ORG_801_Lares_WannaJoin_15_00"); //Quiero unirme a tu banda.
-	AI_Output (self, other,"ORG_801_Lares_WannaJoin_11_01"); //¿Ah, sí? ¿Tienes algo que mostrarme?
+	AI_Output (self, other,"ORG_801_Lares_WannaJoin_11_01"); //Â¿Ah, sÃ­? Â¿Tienes algo que mostrarme?
 };
 
 // ****************************** 
@@ -124,13 +124,13 @@ FUNC int ORG_801_Lares_BringList_Condition()
 FUNC VOID ORG_801_Lares_BringList_Info()
 {
 	AI_Output (other, self,"ORG_801_Lares_BringList_15_00"); //Llevo encima la lista de las cosas que hacen falta en la Vieja Mina.
-	AI_Output (self, other,"ORG_801_Lares_BringList_11_01"); //¡No! ¡No puedo creerlo! Tengo que confesar que tienes muchas agallas.
-	AI_Output (self, other,"ORG_801_Lares_BringList_11_02"); //¡Muéstramela!
-	AI_Output (other, self,"ORG_801_Lares_BringList_15_03"); //Aquí la tienes.
+	AI_Output (self, other,"ORG_801_Lares_BringList_11_01"); //Â¡No! Â¡No puedo creerlo! Tengo que confesar que tienes muchas agallas.
+	AI_Output (self, other,"ORG_801_Lares_BringList_11_02"); //Â¡MuÃ©stramela!
+	AI_Output (other, self,"ORG_801_Lares_BringList_15_03"); //AquÃ­ la tienes.
 	B_UseFakeScroll();
-	AI_Output (self, other,"ORG_801_Lares_BringList_11_04"); //¡En efecto! ¿Sabes lo que vamos a hacer con ella? ¡Vamos a añadirle cosas y llevarás la lista de vuelta al Campamento Viejo!
-	AI_Output (self, other,"ORG_801_Lares_BringList_11_05"); //¡Entonces, cuando entreguen el material a la mina, les asaltaremos y nos lo llevaremos todo! No tardaremos ni un minuto... ¡Ja! Aquí tienes la lista. Ya sabes lo que tienes que hacer.
-	//AI_Output (self, other,"ORG_801_Lares_BringList_11_06"); //Das haben wir gleich ... So! Hier ist die Liste. Du weißt, was du zu tun hast.
+	AI_Output (self, other,"ORG_801_Lares_BringList_11_04"); //Â¡En efecto! Â¿Sabes lo que vamos a hacer con ella? Â¡Vamos a aÃ±adirle cosas y llevarÃ¡s la lista de vuelta al Campamento Viejo!
+	AI_Output (self, other,"ORG_801_Lares_BringList_11_05"); //Â¡Entonces, cuando entreguen el material a la mina, les asaltaremos y nos lo llevaremos todo! No tardaremos ni un minuto... Â¡Ja! AquÃ­ tienes la lista. Ya sabes lo que tienes que hacer.
+	//AI_Output (self, other,"ORG_801_Lares_BringList_11_06"); //Das haben wir gleich ... So! Hier ist die Liste. Du weiÃŸt, was du zu tun hast.
 	
 	Points_NC = Points_NC + 10;
 	
@@ -143,7 +143,7 @@ FUNC VOID ORG_801_Lares_BringList_Info()
 		Log_CreateTopic		(CH1_JoinNC, LOG_MISSION);
 		Log_SetTopicStatus	(CH1_JoinNC, LOG_RUNNING);
 	};
-	B_LogEntry				(CH1_JoinNC,"Lares, el líder de los bandidos, se ha mostrado muy sorprendido al ver la lista de cosas que hacían falta. La ha ampliado y ahora tengo que llevársela a Diego.");		
+	B_LogEntry				(CH1_JoinNC,"Lares, el lÃ­der de los bandidos, se ha mostrado muy sorprendido al ver la lista de cosas que hacÃ­an falta. La ha ampliado y ahora tengo que llevÃ¡rsela a Diego.");		
 	B_GiveXP				(XP_GiveListToLares);	
 };
 
@@ -172,12 +172,12 @@ FUNC int ORG_801_Lares_BringListBack_Condition()
 FUNC VOID ORG_801_Lares_BringListBack_Info()
 {
 	AI_Output			(other, self,"ORG_801_Lares_BringListBack_15_00"); //Le he entregado la lista a Diego.
-	AI_Output			(self, other,"ORG_801_Lares_BringListBack_11_01"); //¡Espléndido! He colocado a algunos hombres en el sendero a la Vieja Mina. Los guardias de Thorus yacen muertos en el bosque.
+	AI_Output			(self, other,"ORG_801_Lares_BringListBack_11_01"); //Â¡EsplÃ©ndido! He colocado a algunos hombres en el sendero a la Vieja Mina. Los guardias de Thorus yacen muertos en el bosque.
 		
 	Points_NC = Points_NC + 10;
 	Lares_BringListBack = LOG_SUCCESS;
 
-	B_LogEntry			(CH1_JoinNC,"Lares ya ha asaltado la caravana del Campamento Viejo. Al parecer, no quería esperar hasta que yo volviera... si volvía.");		
+	B_LogEntry			(CH1_JoinNC,"Lares ya ha asaltado la caravana del Campamento Viejo. Al parecer, no querÃ­a esperar hasta que yo volviera... si volvÃ­a.");		
 
 	B_GiveXP			(XP_ReportListDeliveryToLares);
 };
@@ -193,7 +193,7 @@ INSTANCE   ORG_801_Lares_BringListAnteil (C_INFO)
 	condition	= ORG_801_Lares_BringListAnteil_Condition;
 	information	= ORG_801_Lares_BringListAnteil_Info;
 	permanent	= 0;
-	description = "¿Ya han asaltado la caravana? ¿Dónde está mi parte?";
+	description = "Â¿Ya han asaltado la caravana? Â¿DÃ³nde estÃ¡ mi parte?";
 };                       
 
 FUNC int ORG_801_Lares_BringListAnteil_Condition()
@@ -206,17 +206,17 @@ FUNC int ORG_801_Lares_BringListAnteil_Condition()
 
 FUNC VOID ORG_801_Lares_BringListAnteil_Info()
 {
-	AI_Output (other, self,"ORG_801_Lares_BringListAnteil_15_00"); //¿Ya han asaltado la caravana? ¿Dónde está mi parte?
-	AI_Output (self, other,"ORG_801_Lares_BringListAnteil_11_01"); //Vete a ver a Gorn. Él te dará algo.
+	AI_Output (other, self,"ORG_801_Lares_BringListAnteil_15_00"); //Â¿Ya han asaltado la caravana? Â¿DÃ³nde estÃ¡ mi parte?
+	AI_Output (self, other,"ORG_801_Lares_BringListAnteil_11_01"); //Vete a ver a Gorn. Ã‰l te darÃ¡ algo.
 	var C_NPC gorn; gorn = Hlp_GetNpc(PC_Fighter);
 	if (gorn.aivar[AIV_FINDABLE]==TRUE)
 	{
 		AI_Output (other, self,"ORG_801_Lares_BringListAnteil_15_02"); //Ya conozco a Gorn. No es miembro de la banda. Es un mercenario que trabaja para los magos.
 		AI_Output (self, other,"ORG_801_Lares_BringListAnteil_11_03"); //Exacto.
-		AI_Output (other, self,"ORG_801_Lares_BringListAnteil_15_04"); //¿Estaba él involucrado en este asunto?
-		AI_Output (self, other,"ORG_801_Lares_BringListAnteil_11_05"); //Saber demasiado no es bueno para ti. Limítate a ir a verle y a recoger tu parte.
+		AI_Output (other, self,"ORG_801_Lares_BringListAnteil_15_04"); //Â¿Estaba Ã©l involucrado en este asunto?
+		AI_Output (self, other,"ORG_801_Lares_BringListAnteil_11_05"); //Saber demasiado no es bueno para ti. LimÃ­tate a ir a verle y a recoger tu parte.
 	};
-	B_LogEntry(CH1_JoinNC,"Gorn, el mercenario, participó en el asalto a la caravana de manera misteriosa. Será él quien me dé mi parte.");
+	B_LogEntry(CH1_JoinNC,"Gorn, el mercenario, participÃ³ en el asalto a la caravana de manera misteriosa. SerÃ¡ Ã©l quien me dÃ© mi parte.");
 	gorn.aivar[AIV_FINDABLE]==TRUE;
 };
 
@@ -249,10 +249,10 @@ FUNC VOID ORG_801_Lares_MordragSentMe_Info()
     B_GiveInvItems (other,self, MordragsRing, 1);
     
 	AI_Output (other, self,"ORG_801_Lares_MordragSentMe_15_00"); //Vengo de parte de Mordrag. Me ha dado un anillo para ti.
-	AI_Output (self, other,"ORG_801_Lares_MordragSentMe_11_01"); //¡Una pieza magnífica! Aquí forma parte de los trámites el compartir tu botín con el líder de tu banda.
+	AI_Output (self, other,"ORG_801_Lares_MordragSentMe_11_01"); //Â¡Una pieza magnÃ­fica! AquÃ­ forma parte de los trÃ¡mites el compartir tu botÃ­n con el lÃ­der de tu banda.
 	AI_Output (self, other,"ORG_801_Lares_MordragSentMe_11_02"); //Pero el hecho de que te diera el anillo a TI demuestra que te tiene en alta estima.
 	AI_Output (self, other,"ORG_801_Lares_MordragSentMe_11_03"); //Quiero que vayas a verle y le digas una cosa de mi parte.
-	AI_Output (self, other,"ORG_801_Lares_MordragSentMe_11_04"); //Dile que quiero que infiltre a alguien en el Campamento de la Secta. La Hermandad está tramando algo gordo; quiero saber qué es lo que está ocurriendo allí exactamente.
+	AI_Output (self, other,"ORG_801_Lares_MordragSentMe_11_04"); //Dile que quiero que infiltre a alguien en el Campamento de la Secta. La Hermandad estÃ¡ tramando algo gordo; quiero saber quÃ© es lo que estÃ¡ ocurriendo allÃ­ exactamente.
 	
 	Lares_InformMordrag = LOG_RUNNING;
 		
@@ -261,7 +261,7 @@ FUNC VOID ORG_801_Lares_MordragSentMe_Info()
 		Log_CreateTopic		(CH1_JoinNC, LOG_MISSION);
 		Log_SetTopicStatus	(CH1_JoinNC, LOG_RUNNING);
 	};
-	B_LogEntry				(CH1_JoinNC,"Lares me ha enviado ante Mordrag. Quiere que le diga que se enviará un espía al Campamento de la Secta para averiguar qué está planeando la Hermandad.");	
+	B_LogEntry				(CH1_JoinNC,"Lares me ha enviado ante Mordrag. Quiere que le diga que se enviarÃ¡ un espÃ­a al Campamento de la Secta para averiguar quÃ© estÃ¡ planeando la Hermandad.");	
 	B_GiveXP				(XP_GiveRingToLares);	
 		
 	Points_NC = Points_NC + 10;
@@ -278,7 +278,7 @@ INSTANCE   ORG_801_Lares_Vorbeigemogelt (C_INFO)
 	condition	= ORG_801_Lares_Vorbeigemogelt_Condition;
 	information	= ORG_801_Lares_Vorbeigemogelt_Info;
 	permanent	= 0;
-	description = "Conseguí pasar entre tus guardias.";
+	description = "ConseguÃ­ pasar entre tus guardias.";
 };                       
 
 FUNC int  ORG_801_Lares_Vorbeigemogelt_Condition()
@@ -291,7 +291,7 @@ FUNC int  ORG_801_Lares_Vorbeigemogelt_Condition()
 
 FUNC VOID  ORG_801_Lares_Vorbeigemogelt_Info()
 {
-	AI_Output (other, self,"ORG_801_Lares_Vorbeigemogelt_15_00"); //Conseguí superar a tus guardias.
+	AI_Output (other, self,"ORG_801_Lares_Vorbeigemogelt_15_00"); //ConseguÃ­ superar a tus guardias.
 	AI_Output (self, other,"ORG_801_Lares_Vorbeigemogelt_11_01"); //Es cierto. Pero no basta con eso.
 		
 	Points_NC = Points_NC + 10;
@@ -310,7 +310,7 @@ INSTANCE   ORG_801_Lares_GetKraut (C_INFO)
 	condition	= ORG_801_Lares_GetKraut_Condition;
 	information	= ORG_801_Lares_GetKraut_Info;
 	permanent	= 0;
-	description = "¿Qué más puedo hacer?";
+	description = "Â¿QuÃ© mÃ¡s puedo hacer?";
 };                       
 
 FUNC int  ORG_801_Lares_GetKraut_Condition()
@@ -323,17 +323,17 @@ FUNC int  ORG_801_Lares_GetKraut_Condition()
 
 FUNC VOID  ORG_801_Lares_GetKraut_Info()
 {
-	AI_Output (other, self,"ORG_801_Lares_GetKraut_15_00"); //¿Qué más puedo hacer?
-	AI_Output (self, other,"ORG_801_Lares_GetKraut_11_01"); //Baal Isidro del Campamento de la Secta tiene hierba por valor de 400 pepitas como mínimo. Quiero que la consigas. No me importa cómo lo hagas.
+	AI_Output (other, self,"ORG_801_Lares_GetKraut_15_00"); //Â¿QuÃ© mÃ¡s puedo hacer?
+	AI_Output (self, other,"ORG_801_Lares_GetKraut_11_01"); //Baal Isidro del Campamento de la Secta tiene hierba por valor de 400 pepitas como mÃ­nimo. Quiero que la consigas. No me importa cÃ³mo lo hagas.
 	
 	if ( (BaalIsidro_DealerJob==LOG_RUNNING) || (BaalIsidro_DealerJob==LOG_SUCCESS) )
 	{
-		AI_Output (other, self,"ORG_801_Lares_GetKraut_15_02"); //Si te refieres al montón enorme de hierba, ya la tengo en mi poder.
-		AI_Output (self, other,"ORG_801_Lares_GetKraut_11_03"); //¡Parece que has sido muy listo!
+		AI_Output (other, self,"ORG_801_Lares_GetKraut_15_02"); //Si te refieres al montÃ³n enorme de hierba, ya la tengo en mi poder.
+		AI_Output (self, other,"ORG_801_Lares_GetKraut_11_03"); //Â¡Parece que has sido muy listo!
 	};
 	
-	AI_Output (self, other,"ORG_801_Lares_GetKraut_11_04"); //Si tienes la hierba, véndela. Tráeme las 400 pepitas.
-	AI_Output (self, other,"ORG_801_Lares_GetKraut_11_05"); //Entonces volveremos a hablar acerca de tu admisión en la banda.
+	AI_Output (self, other,"ORG_801_Lares_GetKraut_11_04"); //Si tienes la hierba, vÃ©ndela. TrÃ¡eme las 400 pepitas.
+	AI_Output (self, other,"ORG_801_Lares_GetKraut_11_05"); //Entonces volveremos a hablar acerca de tu admisiÃ³n en la banda.
 	Lares_Get400Ore = LOG_RUNNING;
 	
 	if	(Npc_GetTrueGuild(hero) == GIL_NONE)
@@ -371,7 +371,7 @@ FUNC VOID  ORG_801_Lares_400Ore_Info()
 	AI_Output			(other, self,"ORG_801_Lares_400Ore_15_00"); //Ya tengo las 400 pepitas.
 	if (Npc_HasItems(other,itminugget)>=400)
 	{
-		AI_Output		(self, other,"ORG_801_Lares_400Ore_11_01"); //¡Bien! Muy bien. Creo que con eso debería bastar.
+		AI_Output		(self, other,"ORG_801_Lares_400Ore_11_01"); //Â¡Bien! Muy bien. Creo que con eso deberÃ­a bastar.
 		Lares_Get400Ore = LOG_SUCCESS;
 		Points_NC = Points_NC + 10;
 		
@@ -381,7 +381,7 @@ FUNC VOID  ORG_801_Lares_400Ore_Info()
 	}
 	else
 	{
-		AI_Output		(self, other,"ORG_801_Lares_400Ore_NOORE_11_00"); //Cuéntalas otra vez. Espero que no te hayas gastado la mitad en alcohol.
+		AI_Output		(self, other,"ORG_801_Lares_400Ore_NOORE_11_00"); //CuÃ©ntalas otra vez. Espero que no te hayas gastado la mitad en alcohol.
 	};
 };
 
@@ -396,7 +396,7 @@ INSTANCE   ORG_801_Lares_Reicht (C_INFO)
 	condition	= ORG_801_Lares_Reicht_Condition;
 	information	= ORG_801_Lares_Reicht_Info;
 	permanent	= 1;
-	description = "¿Es suficiente para que me una a vosotros?";
+	description = "Â¿Es suficiente para que me una a vosotros?";
 };                       
 
 FUNC int  ORG_801_Lares_Reicht_Condition()
@@ -412,11 +412,11 @@ FUNC int  ORG_801_Lares_Reicht_Condition()
 
 FUNC VOID  ORG_801_Lares_Reicht_Info()
 {
-	AI_Output (other, self,"ORG_801_Lares_Reicht_15_00"); //¿Es suficiente para unirme a vosotros?
+	AI_Output (other, self,"ORG_801_Lares_Reicht_15_00"); //Â¿Es suficiente para unirme a vosotros?
 	
 	if ( (Points_NC >= 30) && (hero.level >= 5) )
 	{
-		AI_Output (self, other,"ORG_801_Lares_Reicht_AUFNAHME_11_00"); //¡Vaya que sí!
+		AI_Output (self, other,"ORG_801_Lares_Reicht_AUFNAHME_11_00"); //Â¡Vaya que sÃ­!
 		AI_Output (self, other,"ORG_801_Lares_Reicht_AUFNAHME_11_01"); //Incluso tengo un regalo para ti. Una armadura mejor. No es gran cosa, pero te la has ganado.
 	
 		hero.guild = GIL_ORG;
@@ -430,17 +430,17 @@ FUNC VOID  ORG_801_Lares_Reicht_Info()
 		AI_EquipBestArmor	(hero);
 		B_GiveXP			(XP_BecomeBandit);	
 
-		B_LogEntry			(CH1_JoinNC,"Lares me ha convertido en miembro de su banda. ¡Ahora el Campamento Nuevo es mi hogar!");
+		B_LogEntry			(CH1_JoinNC,"Lares me ha convertido en miembro de su banda. Â¡Ahora el Campamento Nuevo es mi hogar!");
 		Log_SetTopicStatus	(CH1_JoinNC,	LOG_SUCCESS);
 
 		// Canceln der anderen Aufnahmen
 		Log_CreateTopic		(CH1_JoinOC,	LOG_MISSION);
 		Log_SetTopicStatus	(CH1_JoinOC,	LOG_FAILED);
-		B_LogEntry			(CH1_JoinOC,"Un miembro de la banda de Lares no puede unirse al Campamento Viejo. ¡Es imposible!");
+		B_LogEntry			(CH1_JoinOC,"Un miembro de la banda de Lares no puede unirse al Campamento Viejo. Â¡Es imposible!");
 		
 		Log_CreateTopic		(CH1_JoinPsi,	LOG_MISSION);
 		Log_SetTopicStatus	(CH1_JoinPsi,	LOG_FAILED);
-		B_LogEntry			(CH1_JoinPsi,"La Hermandad tendrá que valerse sin mí, pues el Campamento Nuevo es mi hogar de ahora en adelante.");
+		B_LogEntry			(CH1_JoinPsi,"La Hermandad tendrÃ¡ que valerse sin mÃ­, pues el Campamento Nuevo es mi hogar de ahora en adelante.");
 		
 		Log_SetTopicStatus	(CH1_LostNek,	LOG_FAILED);
 		Log_SetTopicStatus	(CH1_FiskNewDealer,	LOG_FAILED);
@@ -458,7 +458,7 @@ FUNC VOID  ORG_801_Lares_Reicht_Info()
 		{
 			AI_Output (self, other,"ORG_801_Lares_Reicht_11_03"); //Te has hecho muy popular desde que trajiste la lista.
 		};
-		AI_Output (self, other,"ORG_801_Lares_Reicht_11_04"); //Pero todavía no estás preparado. Cumple tus tareas.
+		AI_Output (self, other,"ORG_801_Lares_Reicht_11_04"); //Pero todavÃ­a no estÃ¡s preparado. Cumple tus tareas.
 		
 		B_PrintGuildCondition(5);
 	};
@@ -475,7 +475,7 @@ INSTANCE   ORG_801_Lares_GotoKalom (C_INFO)
 	condition	= ORG_801_Lares_GotoKalom_Condition;
 	information	= ORG_801_Lares_GotoKalom_Info;
 	permanent	= 0;
-	description = "¿Y qué se supone que debo hacer ahora?";
+	description = "Â¿Y quÃ© se supone que debo hacer ahora?";
 };                       
 
 FUNC int  ORG_801_Lares_GotoKalom_Condition()
@@ -488,32 +488,32 @@ FUNC int  ORG_801_Lares_GotoKalom_Condition()
 
 FUNC VOID  ORG_801_Lares_GotoKalom_Info()
 {
-	AI_Output (other, self,"ORG_801_Lares_GotoKalom_15_00"); //¿Y qué se supone que debo hacer ahora?
+	AI_Output (other, self,"ORG_801_Lares_GotoKalom_15_00"); //Â¿Y quÃ© se supone que debo hacer ahora?
 	AI_Output (self, other,"ORG_801_Lares_GotoKalom_11_01"); //Ahora eres un miembro de nuestra banda. Eres libre de hacer lo que quieras.
 		
 	Log_CreateTopic		(CH1_GotoPsiCamp,	LOG_MISSION);
 	Log_SetTopicStatus	(CH1_GotoPsiCamp,	LOG_RUNNING);
-	B_LogEntry			(CH1_GotoPsiCamp,"La Hermandad del campamento del pantano está planeando algo grande. Lares, el líder de los bandidos, quiere saber de qué se trata.");
+	B_LogEntry			(CH1_GotoPsiCamp,"La Hermandad del campamento del pantano estÃ¡ planeando algo grande. Lares, el lÃ­der de los bandidos, quiere saber de quÃ© se trata.");
 
 	if	(Lares_InformMordrag == LOG_RUNNING)
 	{	
-		AI_Output 		(self, other,"ORG_801_Lares_GotoKalom_11_02"); //Si quieres ser útil, ve a ver a Mordrag y échale una mano con el asunto de la secta.
-		B_LogEntry		(CH1_GotoPsiCamp,"¡Tengo que ayudar a Mordrag a averiguar qué está pasando allí!");
+		AI_Output 		(self, other,"ORG_801_Lares_GotoKalom_11_02"); //Si quieres ser Ãºtil, ve a ver a Mordrag y Ã©chale una mano con el asunto de la secta.
+		B_LogEntry		(CH1_GotoPsiCamp,"Â¡Tengo que ayudar a Mordrag a averiguar quÃ© estÃ¡ pasando allÃ­!");
 	}
 	else
 	{
 		var C_NPC Mordrag; Mordrag = Hlp_GetNpc(Org_826_Mordrag);
 		if (Npc_IsDead(Mordrag))
 		{
-			AI_Output	(self, other,"ORG_801_Lares_GotoKalom_11_03"); //Mordrag, uno de los nuestros en el Campamento Viejo, ha muerto. Antes de morir, nos envió un mensaje. En él decía que se preparaba algo gordo en el Campamento de la Secta.
-			AI_Output	(self, other,"ORG_801_Lares_GotoKalom_11_04"); //Vete al campamento de la Hermandad y averigua qué es lo que está ocurriendo.
+			AI_Output	(self, other,"ORG_801_Lares_GotoKalom_11_03"); //Mordrag, uno de los nuestros en el Campamento Viejo, ha muerto. Antes de morir, nos enviÃ³ un mensaje. En Ã©l decÃ­a que se preparaba algo gordo en el Campamento de la Secta.
+			AI_Output	(self, other,"ORG_801_Lares_GotoKalom_11_04"); //Vete al campamento de la Hermandad y averigua quÃ© es lo que estÃ¡ ocurriendo.
 			B_LogEntry	(CH1_GotoPsiCamp,"Me ha enviado directamente al campamento de la Hermandad.");
 		}
 		else
 		{
-			AI_Output	(self, other,"ORG_801_Lares_GotoKalom_11_05"); //Mordrag, uno de los nuestros en el Campamento Viejo, está de vuelta.
-			AI_Output	(self, other,"ORG_801_Lares_GotoKalom_11_06"); //Vete a verle. Dile que quiero que infiltre a alguien en el Campamento de la Secta. La Hermandad está tramando algo gordo; quiero saber qué es lo que está ocurriendo allí exactamente.
-			AI_Output	(self, other,"ORG_801_Lares_GotoKalom_11_07"); //Échale una mano.
+			AI_Output	(self, other,"ORG_801_Lares_GotoKalom_11_05"); //Mordrag, uno de los nuestros en el Campamento Viejo, estÃ¡ de vuelta.
+			AI_Output	(self, other,"ORG_801_Lares_GotoKalom_11_06"); //Vete a verle. Dile que quiero que infiltre a alguien en el Campamento de la Secta. La Hermandad estÃ¡ tramando algo gordo; quiero saber quÃ© es lo que estÃ¡ ocurriendo allÃ­ exactamente.
+			AI_Output	(self, other,"ORG_801_Lares_GotoKalom_11_07"); //Ã‰chale una mano.
 			B_LogEntry	(CH1_GotoPsiCamp,"Se supone que un bandido llamado Mordrag debe ocuparse del asunto; puedo encontrarlo en la taberna del lago del Campamento Nuevo.");
 			
 			B_ExchangeRoutine(Org_826_Mordrag,"START");
@@ -535,7 +535,7 @@ instance  ORG_801_Lares_WhereLearn (C_INFO)
 	condition		= ORG_801_Lares_WhereLearn_Condition;
 	information		= ORG_801_Lares_WhereLearn_Info;
 	permanent		= 0;
-	description		= "¿Dónde puedo aprender algo?"; 
+	description		= "Â¿DÃ³nde puedo aprender algo?"; 
 };
 
 FUNC int  ORG_801_Lares_WhereLearn_Condition()
@@ -545,10 +545,10 @@ FUNC int  ORG_801_Lares_WhereLearn_Condition()
 
 FUNC void  ORG_801_Lares_WhereLearn_Info()
 {
-	AI_Output 		(other, self,"ORG_801_Lares_WhereLearn_Info_15_01"); //¿Dónde puedo averiguar algo?
+	AI_Output 		(other, self,"ORG_801_Lares_WhereLearn_Info_15_01"); //Â¿DÃ³nde puedo averiguar algo?
 	AI_Output 		(self, other,"ORG_801_Lares_WhereLearn_Info_11_02"); //Conmigo. Puedo ayudarte a mejorar tu fuerza y tu habilidad.
 	Log_CreateTopic (GE_TeacherNC,LOG_NOTE);
-	B_LogEntry		(GE_TeacherNC,"Lares puede enseñarme a mejorar tanto mi HABILIDAD como mi FUERZA.");
+	B_LogEntry		(GE_TeacherNC,"Lares puede enseÃ±arme a mejorar tanto mi HABILIDAD como mi FUERZA.");
 
 };  
 // ******************************
@@ -573,7 +573,7 @@ FUNC INT ORG_801_Lares_Teach_Condition()
 };
 FUNC VOID ORG_801_Lares_Teach_Info()
 {
-	AI_Output(other,self,"ORG_801_Lares_Teach_15_00"); //Quiero mejorarme a mí mismo.
+	AI_Output(other,self,"ORG_801_Lares_Teach_15_00"); //Quiero mejorarme a mÃ­ mismo.
 	
 	Info_ClearChoices	(ORG_801_Lares_Teach);
 	Info_AddChoice		(ORG_801_Lares_Teach,DIALOG_BACK									,ORG_801_Lares_Teach_BACK);

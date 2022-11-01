@@ -32,7 +32,7 @@ instance DIA_GorNaToth_Abweisend (C_INFO)
 	condition	= DIA_GorNaToth_Abweisend_Condition;
 	information	= DIA_GorNaToth_Abweisend_Info;
 	permanent	= 1;
-	description = "¿Puedes adiestrarme?";
+	description = "Â¿Puedes adiestrarme?";
 };                       
 
 FUNC int DIA_GorNaToth_Abweisend_Condition()
@@ -46,8 +46,8 @@ FUNC int DIA_GorNaToth_Abweisend_Condition()
 
 FUNC VOID DIA_GorNaToth_Abweisend_Info()
 {
-	AI_Output			(other, self,"DIA_GorNaToth_AngarTalked_15_00"); //¿Puedes entrenarme?
-	AI_Output			(self, other,"DIA_GorNaToth_AngarTalked_11_01"); //Fuera de mi vista, ser indigno. Yo sólo entreno a los templarios del Durmiente.
+	AI_Output			(other, self,"DIA_GorNaToth_AngarTalked_15_00"); //Â¿Puedes entrenarme?
+	AI_Output			(self, other,"DIA_GorNaToth_AngarTalked_11_01"); //Fuera de mi vista, ser indigno. Yo sÃ³lo entreno a los templarios del Durmiente.
 	AI_StopProcessInfos	(self);
 };
 
@@ -75,33 +75,33 @@ FUNC int DIA_GorNaToth_AngarTalked_Condition()
 
 FUNC VOID DIA_GorNaToth_AngarTalked_Info()
 {
-	AI_Output (self, other,"DIA_GorNaToth_AngarTalked_11_00"); //¿Has hablado con Cor Angar? ¿Qué te ha dicho?
+	AI_Output (self, other,"DIA_GorNaToth_AngarTalked_11_00"); //Â¿Has hablado con Cor Angar? Â¿QuÃ© te ha dicho?
 	Info_ClearChoices		(DIA_GorNaToth_AngarTalked);
-	Info_AddChoice			(DIA_GorNaToth_AngarTalked,"Dice que no serías digno de vestir la armadura de un templario.",DIA_GorNaToth_AngarTalked_Unworthy);	
-	Info_AddChoice			(DIA_GorNaToth_AngarTalked,"Dijo que nunca le gustaron los tiburones de la ciénaga.",DIA_GorNaToth_AngarTalked_Shark);	
-	Info_AddChoice			(DIA_GorNaToth_AngarTalked,"Dijo que debía volver en cuanto fuera templario.",DIA_GorNaToth_AngarTalked_Normal);	
+	Info_AddChoice			(DIA_GorNaToth_AngarTalked,"Dice que no serÃ­as digno de vestir la armadura de un templario.",DIA_GorNaToth_AngarTalked_Unworthy);	
+	Info_AddChoice			(DIA_GorNaToth_AngarTalked,"Dijo que nunca le gustaron los tiburones de la ciÃ©naga.",DIA_GorNaToth_AngarTalked_Shark);	
+	Info_AddChoice			(DIA_GorNaToth_AngarTalked,"Dijo que debÃ­a volver en cuanto fuera templario.",DIA_GorNaToth_AngarTalked_Normal);	
 };
 
 func void DIA_GorNaToth_AngarTalked_Normal()
 {
 	AI_Output (other, self,"DIA_GorNaToth_AngarTalked_Normal_15_00"); //Dijo que tengo que volver en cuanto me convierta en un templario.
-	AI_Output (self, other,"DIA_GorNaToth_AngarTalked_Normal_11_01"); //Parece que tiene una excelente opinión de ti. Nunca habla con nadie.
-	AI_Output (self, other,"DIA_GorNaToth_AngarTalked_Normal_11_02"); //El mero hecho de que te haya prestado su atención es un honor. La última vez que me dirigió la palabra fue hace dos meses.
+	AI_Output (self, other,"DIA_GorNaToth_AngarTalked_Normal_11_01"); //Parece que tiene una excelente opiniÃ³n de ti. Nunca habla con nadie.
+	AI_Output (self, other,"DIA_GorNaToth_AngarTalked_Normal_11_02"); //El mero hecho de que te haya prestado su atenciÃ³n es un honor. La Ãºltima vez que me dirigiÃ³ la palabra fue hace dos meses.
 	Info_ClearChoices		(DIA_GorNaToth_AngarTalked);
 };
 
 func void DIA_GorNaToth_AngarTalked_Shark()
 {
-	AI_Output (other, self,"DIA_GorNaToth_AngarTalked_Shark_15_00"); //Dijo que nunca le gustaron los tiburones de la ciénaga.
-	AI_Output (self, other,"DIA_GorNaToth_AngarTalked_Shark_11_01"); //¿Qué...? ¡Me aguarda una misión sagrada!
-	AI_Output (self, other,"DIA_GorNaToth_AngarTalked_Shark_11_02"); //Los deseos de mi maestro son órdenes.
+	AI_Output (other, self,"DIA_GorNaToth_AngarTalked_Shark_15_00"); //Dijo que nunca le gustaron los tiburones de la ciÃ©naga.
+	AI_Output (self, other,"DIA_GorNaToth_AngarTalked_Shark_11_01"); //Â¿QuÃ©...? Â¡Me aguarda una misiÃ³n sagrada!
+	AI_Output (self, other,"DIA_GorNaToth_AngarTalked_Shark_11_02"); //Los deseos de mi maestro son Ã³rdenes.
 	Info_ClearChoices		(DIA_GorNaToth_AngarTalked);
 };
 
 func void DIA_GorNaToth_AngarTalked_Unworthy()
 {
 	AI_Output (other, self,"DIA_GorNaToth_AngarTalked_Unworthy_15_00"); //Dice que eres indigno de llevar la armadura de un templario.
-	AI_Output (self, other,"DIA_GorNaToth_AngarTalked_Unworthy_11_01"); //¡Imposible! ¡No puede haber dicho eso! ¡No sobre mí!
+	AI_Output (self, other,"DIA_GorNaToth_AngarTalked_Unworthy_11_01"); //Â¡Imposible! Â¡No puede haber dicho eso! Â¡No sobre mÃ­!
 	Info_ClearChoices		(DIA_GorNaToth_AngarTalked);
 	AI_StopProcessInfos	( self );
 	Npc_SetTarget(self,other);
@@ -118,7 +118,7 @@ instance  TPL_1402_GorNaToth_GETSTUFF (C_INFO)
 	information		= TPL_1402_GorNaToth_GETSTUFF_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Me gustaría recoger mi armadura de templario."; 
+	description		= "Me gustarÃ­a recoger mi armadura de templario."; 
 };
 
 FUNC int  TPL_1402_GorNaToth_GETSTUFF_Condition()
@@ -132,14 +132,14 @@ FUNC int  TPL_1402_GorNaToth_GETSTUFF_Condition()
 };
 FUNC void  TPL_1402_GorNaToth_GETSTUFF_Info()
 {
-	AI_Output			(other, self,"TPL_1402_GorNaToth_GETSTUFF_Info_15_01"); //Me gustaría recoger mi armadura de templario.
-	AI_Output			(self, other,"TPL_1402_GorNaToth_GETSTUFF_Info_11_02"); //Me complace tener el honor de entregarle su armadura al hombre que encontró los huevos de los reptadores.
-	AI_Output			(self, other,"TPL_1402_GorNaToth_GETSTUFF_Info_11_03"); //¡Que esta armadura te proteja, igual que el Durmiente protege a la Hermandad!
+	AI_Output			(other, self,"TPL_1402_GorNaToth_GETSTUFF_Info_15_01"); //Me gustarÃ­a recoger mi armadura de templario.
+	AI_Output			(self, other,"TPL_1402_GorNaToth_GETSTUFF_Info_11_02"); //Me complace tener el honor de entregarle su armadura al hombre que encontrÃ³ los huevos de los reptadores.
+	AI_Output			(self, other,"TPL_1402_GorNaToth_GETSTUFF_Info_11_03"); //Â¡Que esta armadura te proteja, igual que el Durmiente protege a la Hermandad!
 	
-	B_LogEntry			(GE_BecomeTemplar,"Gor Na Toth me ha entregado mi primera armadura de templario. ¡Ahora soy miembro de pleno derecho del clan guerrero!");
+	B_LogEntry			(GE_BecomeTemplar,"Gor Na Toth me ha entregado mi primera armadura de templario. Â¡Ahora soy miembro de pleno derecho del clan guerrero!");
 
 	Log_CreateTopic		(GE_TraderPSI,		LOG_NOTE);
-	B_LogEntry			(GE_TraderPSI,"Gor Na Toth tiene disponible una ARMADURA de templario mejor, pero a cambio espera un generoso donativo a la Hermandad. Durante el día, está en el campo de entrenamiento.");
+	B_LogEntry			(GE_TraderPSI,"Gor Na Toth tiene disponible una ARMADURA de templario mejor, pero a cambio espera un generoso donativo a la Hermandad. Durante el dÃ­a, estÃ¡ en el campo de entrenamiento.");
 	
 	CreateInvItem		(hero, TPL_ARMOR_L);
 	
@@ -174,7 +174,7 @@ FUNC int  TPL_1402_GorNaToth_ARMOR_Condition()
 FUNC void  TPL_1402_GorNaToth_ARMOR_Info()
 {
 	AI_Output				(other, self,"Info_GorNaToth_ARMOR_15_01"); //Necesito una armadura mejor.
-	AI_Output				(self, other,"Info_GorNaToth_ARMOR_11_02"); //Podría darte una armadura mejor, ¡pero primero tienes que hacer una generosa contribución a la Hermandad!
+	AI_Output				(self, other,"Info_GorNaToth_ARMOR_11_02"); //PodrÃ­a darte una armadura mejor, Â¡pero primero tienes que hacer una generosa contribuciÃ³n a la Hermandad!
 
 	Info_ClearChoices		(TPL_1402_GorNaToth_ARMOR);
 	Info_AddChoice			(TPL_1402_GorNaToth_ARMOR,	DIALOG_BACK	,	TPL_1402_GorNaToth_ARMOR_BACK);	
@@ -186,19 +186,19 @@ FUNC void  TPL_1402_GorNaToth_ARMOR_Info()
 
 func void TPL_1402_GorNaToth_ARMOR_M ()
 {
-	AI_Output				(hero, self,"Info_GorNaToth_ARMOR_M_15_01"); //¿Podrías darme la armadura intermedia?
+	AI_Output				(hero, self,"Info_GorNaToth_ARMOR_M_15_01"); //Â¿PodrÃ­as darme la armadura intermedia?
 
 	if (Kapitel < 3)
 	{
-		AI_Output			(self, hero,"Info_GorNaToth_ARMOR_M_11_02"); //¡Todavía no tienes la experiencia suficiente! Demuestra tu valía como templario; entonces te ganarás el derecho a llevar una armadura mejor.
+		AI_Output			(self, hero,"Info_GorNaToth_ARMOR_M_11_02"); //Â¡TodavÃ­a no tienes la experiencia suficiente! Demuestra tu valÃ­a como templario; entonces te ganarÃ¡s el derecho a llevar una armadura mejor.
 	}
 	else if (Npc_HasItems(hero, ItMiNugget)<VALUE_TPL_ARMOR_M)
 	{
-		AI_Output			(self, hero,"Info_GorNaToth_ARMOR_M_11_03"); //¡Tendrás una armadura mejor en cuanto puedas hacer un donativo lo bastante importante a nuestra comunidad!
+		AI_Output			(self, hero,"Info_GorNaToth_ARMOR_M_11_03"); //Â¡TendrÃ¡s una armadura mejor en cuanto puedas hacer un donativo lo bastante importante a nuestra comunidad!
 	}
 	else
 	{
-		AI_Output			(self, hero,"Info_GorNaToth_ARMOR_M_11_04"); //Ahora que puedes hacer el donativo tendrás la protección de la nueva armadura.
+		AI_Output			(self, hero,"Info_GorNaToth_ARMOR_M_11_04"); //Ahora que puedes hacer el donativo tendrÃ¡s la protecciÃ³n de la nueva armadura.
 		B_GiveInvItems	    (hero, self, ItMiNugget,	VALUE_TPL_ARMOR_M);
 		
 		CreateInvItem		(hero, TPL_ARMOR_M);
@@ -215,23 +215,23 @@ func void TPL_1402_GorNaToth_ARMOR_M ()
 
 func void TPL_1402_GorNaToth_ARMOR_H ()
 {
-	AI_Output				(hero, self,"Info_GorNaToth_ARMOR_H_15_01"); //Me gustaría que me dieras una armadura pesada de templario.
+	AI_Output				(hero, self,"Info_GorNaToth_ARMOR_H_15_01"); //Me gustarÃ­a que me dieras una armadura pesada de templario.
 
 	if (Kapitel < 4)
 	{
-		AI_Output			(self, hero,"Info_GorNaToth_ARMOR_H_11_02"); //¡Aún no tienes la experiencia suficiente! Demuestra tu valía como miembro de esta comunidad; entonces se te permitirá llevar esta excelsa armadura.
+		AI_Output			(self, hero,"Info_GorNaToth_ARMOR_H_11_02"); //Â¡AÃºn no tienes la experiencia suficiente! Demuestra tu valÃ­a como miembro de esta comunidad; entonces se te permitirÃ¡ llevar esta excelsa armadura.
 	}
 	else if (Npc_HasItems(hero, ItMiNugget)<VALUE_TPL_ARMOR_H)
 	{
-		AI_Output			(self, hero,"Info_GorNaToth_ARMOR_H_11_03"); //Entretanto, te has ganado el derecho a llevar tal armadura, ¡pero de momento no puedes realizar un donativo lo bastante importante a la comunidad!
+		AI_Output			(self, hero,"Info_GorNaToth_ARMOR_H_11_03"); //Entretanto, te has ganado el derecho a llevar tal armadura, Â¡pero de momento no puedes realizar un donativo lo bastante importante a la comunidad!
 	}
 	else
 	{
-		AI_Output			(self, hero,"Info_GorNaToth_ARMOR_H_11_04"); //¡De aquí en adelante, lleva esta armadura como seña del más alto de los honores!
+		AI_Output			(self, hero,"Info_GorNaToth_ARMOR_H_11_04"); //Â¡De aquÃ­ en adelante, lleva esta armadura como seÃ±a del mÃ¡s alto de los honores!
 
 		B_GiveInvItems  	(hero, self, ItMiNugget,VALUE_TPL_ARMOR_H);
 
-		CreateInvItem		(self, ItAmArrow);				//SN: Kronkelgegenstand, damit die Bildschrimausgabe "1 Gegenstand erhalten" stimmt (Rüstung geht nicht, da dann immer Gor Na Toth seine eigene erst auszieht, und eine Sekunde nackt dasteht)
+		CreateInvItem		(self, ItAmArrow);				//SN: Kronkelgegenstand, damit die Bildschrimausgabe "1 Gegenstand erhalten" stimmt (RÃ¼stung geht nicht, da dann immer Gor Na Toth seine eigene erst auszieht, und eine Sekunde nackt dasteht)
 		B_GiveInvItems  	(self, hero, ItAmArrow, 1);
 		Npc_RemoveInvItem	(hero,	ItAmArrow);
 
@@ -244,8 +244,8 @@ func void TPL_1402_GorNaToth_ARMOR_H ()
 
 func void TPL_1402_GorNaToth_ARMOR_BACK ()
 {
-	AI_Output				(hero, self,"Info_GorNaToth_ARMOR_BACK_15_01"); //¡He cambiado de idea!
-	AI_Output				(self, hero,"Info_GorNaToth_ARMOR_BACK_11_02"); //Como tú quieras. ¡Ya sabes dónde encontrarme!
+	AI_Output				(hero, self,"Info_GorNaToth_ARMOR_BACK_15_01"); //Â¡He cambiado de idea!
+	AI_Output				(self, hero,"Info_GorNaToth_ARMOR_BACK_11_02"); //Como tÃº quieras. Â¡Ya sabes dÃ³nde encontrarme!
 
 	Info_ClearChoices		(TPL_1402_GorNaToth_ARMOR);
 };
@@ -261,7 +261,7 @@ INSTANCE TPL_1402_GorNaToth_Teach(C_INFO)
 	condition	= TPL_1402_GorNaToth_Teach_Condition;
 	information	= TPL_1402_GorNaToth_Teach_Info;
 	permanent	= 1;
-	description = "¿Puedes adiestrarme?";
+	description = "Â¿Puedes adiestrarme?";
 };                       
 
 FUNC INT TPL_1402_GorNaToth_Teach_Condition()
@@ -274,7 +274,7 @@ FUNC INT TPL_1402_GorNaToth_Teach_Condition()
 
 FUNC VOID TPL_1402_GorNaToth_Teach_Info()
 {
-	AI_Output			(other,self,"TPL_1402_GorNaToth_Teach_15_00"); //¿Puedes entrenarme?
+	AI_Output			(other,self,"TPL_1402_GorNaToth_Teach_15_00"); //Â¿Puedes entrenarme?
 	AI_Output			(self,other,"TPL_1402_GorNaToth_Teach_11_01"); //La fuerza y la destreza son tan importantes como el poder de la mente.
 	
 	Info_ClearChoices	(TPL_1402_GorNaToth_Teach);
@@ -404,20 +404,20 @@ FUNC void  TPL_1402_GorNaToth_TRAIN_Info()
 	if	(log_gornatothfight == FALSE) 
 	{
 		Log_CreateTopic   	(GE_TeacherPSI,LOG_NOTE);
-		B_LogEntry			(GE_TeacherPSI,"El templario Gor Na Toth puede enseñarme a combatir con ARMAS DE UNA MANO.");
+		B_LogEntry			(GE_TeacherPSI,"El templario Gor Na Toth puede enseÃ±arme a combatir con ARMAS DE UNA MANO.");
 		log_gornatothfight = TRUE;
 	};
 	AI_Output (other, self,"TPL_1402_GorNaToth_TRAIN_Info_15_00"); //Quiero mejorar mi manejo de las armas de una mano.
 	
 	if B_GiveSkill(hero,NPC_TALENT_1H,1,LPCOST_TALENT_1H_1)
 	{
-		AI_Output			(self,other,"TPL_1402_GorNaToth_TRAIN_11_01"); //¡Buena decisión! Antes de mejorar tu técnica, debes aprender la manera correcta de sostener el arma.
-		AI_Output			(self,other,"TPL_1402_GorNaToth_TRAIN_11_02"); //Los principiantes suelen sujetar las armas de una mano con ambos puños. Será mejor que no desarrolles este hábito; no será más que un obstáculo.
+		AI_Output			(self,other,"TPL_1402_GorNaToth_TRAIN_11_01"); //Â¡Buena decisiÃ³n! Antes de mejorar tu tÃ©cnica, debes aprender la manera correcta de sostener el arma.
+		AI_Output			(self,other,"TPL_1402_GorNaToth_TRAIN_11_02"); //Los principiantes suelen sujetar las armas de una mano con ambos puÃ±os. SerÃ¡ mejor que no desarrolles este hÃ¡bito; no serÃ¡ mÃ¡s que un obstÃ¡culo.
 		AI_Output			(self,other,"TPL_1402_GorNaToth_TRAIN_11_03"); //Sujeta el arma con una mano, con la hoja hacia arriba y dale vueltas.
-		AI_Output			(self,other,"TPL_1402_GorNaToth_TRAIN_11_04"); //Tienes que hacer que el movimiento de tu arma esté en armonía con tus propios movimientos. Eso dará velocidad a tu ataque.
-		AI_Output			(self,other,"TPL_1402_GorNaToth_TRAIN_11_05"); //Si no olvidas lo que te he enseñado, en el futuro tus combates serán más elegantes y mucho más veloces.
-		AI_Output			(self,other,"TPL_1402_GorNaToth_TRAIN_11_06"); //Ah, una cosa más. ¡Algunos impactos infligen más daño que otros! Al ser un principiante, no es probable que consigas asestar un golpe definitivo.
-		AI_Output			(self,other,"TPL_1402_GorNaToth_TRAIN_11_07"); //Pero, cuanto más vayas progresando, mejor lo harás.
+		AI_Output			(self,other,"TPL_1402_GorNaToth_TRAIN_11_04"); //Tienes que hacer que el movimiento de tu arma estÃ© en armonÃ­a con tus propios movimientos. Eso darÃ¡ velocidad a tu ataque.
+		AI_Output			(self,other,"TPL_1402_GorNaToth_TRAIN_11_05"); //Si no olvidas lo que te he enseÃ±ado, en el futuro tus combates serÃ¡n mÃ¡s elegantes y mucho mÃ¡s veloces.
+		AI_Output			(self,other,"TPL_1402_GorNaToth_TRAIN_11_06"); //Ah, una cosa mÃ¡s. Â¡Algunos impactos infligen mÃ¡s daÃ±o que otros! Al ser un principiante, no es probable que consigas asestar un golpe definitivo.
+		AI_Output			(self,other,"TPL_1402_GorNaToth_TRAIN_11_07"); //Pero, cuanto mÃ¡s vayas progresando, mejor lo harÃ¡s.
 		TPL_1402_GorNaToth_TRAIN.permanent = 0;
 
 		AI_StopProcessInfos	(self);
@@ -449,13 +449,13 @@ FUNC int  TPL_1402_GorNaToth_TRAINAGAIN_Condition()
 };
 FUNC void  TPL_1402_GorNaToth_TRAINAGAIN_Info()
 {
-	AI_Output (other, self,"TPL_1402_GorNaToth_TRAINAGAIN_Info_15_01"); //Enséñame a manejar armas de una mano con mayor destreza.
+	AI_Output (other, self,"TPL_1402_GorNaToth_TRAINAGAIN_Info_15_01"); //EnsÃ©Ã±ame a manejar armas de una mano con mayor destreza.
 	if B_GiveSkill(hero,NPC_TALENT_1H,2,LPCOST_TALENT_1H_2)
 	{
-		AI_Output (self, other,"TPL_1402_GorNaToth_TRAINAGAIN_Info_11_02"); //Bueno, ya sabes lo fundamental. Si sostienes la espada un poco más abajo, podrás imprimirle más fuerza a tu primer mandoble.
-		AI_Output (self, other,"TPL_1402_GorNaToth_TRAINAGAIN_Info_11_03"); //Utiliza la inercia, ¿te acuerdas? Vale, ahora necesitas utilizar más tu cuerpo. Cuando hayas dado dos mandobles, haz un giro. Eso confundirá a tu oponente y te pondrá en una posición ventajosa.
-		AI_Output (self, other,"TPL_1402_GorNaToth_TRAINAGAIN_Info_11_04"); //Entonces desplaza tu espada de derecha a izquierda una vez más.
-		AI_Output (self, other,"TPL_1402_GorNaToth_TRAINAGAIN_Info_11_05"); //Y vuelta al frente. No olvides que la práctica perfecciona. Así que ponte a ello y te convertirás en un verdadero maestro en el arte de la lucha con armas de una mano.
+		AI_Output (self, other,"TPL_1402_GorNaToth_TRAINAGAIN_Info_11_02"); //Bueno, ya sabes lo fundamental. Si sostienes la espada un poco mÃ¡s abajo, podrÃ¡s imprimirle mÃ¡s fuerza a tu primer mandoble.
+		AI_Output (self, other,"TPL_1402_GorNaToth_TRAINAGAIN_Info_11_03"); //Utiliza la inercia, Â¿te acuerdas? Vale, ahora necesitas utilizar mÃ¡s tu cuerpo. Cuando hayas dado dos mandobles, haz un giro. Eso confundirÃ¡ a tu oponente y te pondrÃ¡ en una posiciÃ³n ventajosa.
+		AI_Output (self, other,"TPL_1402_GorNaToth_TRAINAGAIN_Info_11_04"); //Entonces desplaza tu espada de derecha a izquierda una vez mÃ¡s.
+		AI_Output (self, other,"TPL_1402_GorNaToth_TRAINAGAIN_Info_11_05"); //Y vuelta al frente. No olvides que la prÃ¡ctica perfecciona. AsÃ­ que ponte a ello y te convertirÃ¡s en un verdadero maestro en el arte de la lucha con armas de una mano.
 		TPL_1402_GorNaToth_TRAINAGAIN.permanent = 0;
 
 		AI_StopProcessInfos	(self);

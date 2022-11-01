@@ -9,7 +9,7 @@ instance  Grd_277_Gardist_SITTINGORK (C_INFO)
 	information		= Grd_277_Gardist_SITTINGORK_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "¿Qué pasa con ese orco?"; 
+	description		= "Â¿QuÃ© pasa con ese orco?"; 
 };
 
 FUNC int  Grd_277_Gardist_SITTINGORK_Condition()
@@ -22,9 +22,9 @@ FUNC int  Grd_277_Gardist_SITTINGORK_Condition()
 };
 FUNC void  Grd_277_Gardist_SITTINGORK_Info()
 {
-	AI_Output (other, self,"Grd_277_Gardist_SITTINGORK_Info_15_01"); //¿Qué pasa con ese orco?
+	AI_Output (other, self,"Grd_277_Gardist_SITTINGORK_Info_15_01"); //Â¿QuÃ© pasa con ese orco?
 	AI_Output (self, other,"Grd_277_Gardist_SITTINGORK_Info_06_02"); //Es nuestro prisionero. Tiene suerte de que la rueda de la trituradora se haya roto. Por eso este hijo de perra puede descansar un poco.
-	AI_Output (self, other,"Grd_277_Gardist_SITTINGORK_Info_06_03"); //En cuanto la trituradora esté reparada, volverá al trabajo. ¡No está aquí para vaguear todo el rato!
+	AI_Output (self, other,"Grd_277_Gardist_SITTINGORK_Info_06_03"); //En cuanto la trituradora estÃ© reparada, volverÃ¡ al trabajo. Â¡No estÃ¡ aquÃ­ para vaguear todo el rato!
 };  
 /*------------------------------------------------------------------------
 							WORKINGORK							
@@ -37,7 +37,7 @@ instance  Grd_277_Gardist_WORKINGORK (C_INFO)
 	information		= Grd_277_Gardist_WORKINGORK_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Veo que la trituradora ya está arreglada."; 
+	description		= "Veo que la trituradora ya estÃ¡ arreglada."; 
 };
 
 FUNC int  Grd_277_Gardist_WORKINGORK_Condition()
@@ -50,6 +50,6 @@ FUNC int  Grd_277_Gardist_WORKINGORK_Condition()
 };
 FUNC void  Grd_277_Gardist_WORKINGORK_Info()
 {
-	AI_Output (other, self,"Grd_277_Gardist_WORKINGORK_Info_15_01"); //Veo que la trituradora ya está arreglada.
-	AI_Output (self, other,"Grd_277_Gardist_WORKINGORK_Info_06_02"); //Sí, somos rápidos a la hora de hacer que la gente trabaje.
+	AI_Output (other, self,"Grd_277_Gardist_WORKINGORK_Info_15_01"); //Veo que la trituradora ya estÃ¡ arreglada.
+	AI_Output (self, other,"Grd_277_Gardist_WORKINGORK_Info_06_02"); //SÃ­, somos rÃ¡pidos a la hora de hacer que la gente trabaje.
 };  

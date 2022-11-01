@@ -36,7 +36,7 @@ INSTANCE Info_Pock_Wasser(C_INFO) // E1
 	condition	= Info_Pock_Wasser_Condition;
 	information	= Info_Pock_Wasser_Info;
 	permanent	= 1;
-	description = "Me manda Lefty. Os he traído un poco de agua.";
+	description = "Me manda Lefty. Os he traÃ­do un poco de agua.";
 };                       
 
 FUNC INT Info_Pock_Wasser_Condition()
@@ -50,7 +50,7 @@ FUNC INT Info_Pock_Wasser_Condition()
 
 FUNC VOID Info_Pock_Wasser_Info()
 {
-	AI_Output(other,self,"Info_Pock_Wasser_15_00"); //Me manda Lefty. Os he traído un poco de agua.
+	AI_Output(other,self,"Info_Pock_Wasser_15_00"); //Me manda Lefty. Os he traÃ­do un poco de agua.
 	if (Npc_HasItems(other, ItFo_Potion_Water_01)>=1)
 	{
 		B_GiveInvItems(other,self,ItFo_Potion_Water_01,1);
@@ -60,7 +60,7 @@ FUNC VOID Info_Pock_Wasser_Info()
 			AI_TurnToNpc	(self, hero);
 		};
 		AI_UseItem(self, ItFo_Potion_Water_01);
-		AI_Output(self,other,"Info_Pock_Wasser_04_01"); //¡Gracias, muchacho! ¡La necesitaba!
+		AI_Output(self,other,"Info_Pock_Wasser_04_01"); //Â¡Gracias, muchacho! Â¡La necesitaba!
 		An_Bauern_verteilt = An_Bauern_verteilt+1;
 		if (An_Bauern_verteilt>=DurstigeBauern)
 		{
@@ -70,7 +70,7 @@ FUNC VOID Info_Pock_Wasser_Info()
 	}
 	else
 	{
-		AI_Output(self,other,"Info_Pock_Wasser_NOWATER_04_00"); //Pero no te queda. Da igual, muchacho. Le pediré a los demás.
+		AI_Output(self,other,"Info_Pock_Wasser_NOWATER_04_00"); //Pero no te queda. Da igual, muchacho. Le pedirÃ© a los demÃ¡s.
 	};
 };
 
@@ -85,7 +85,7 @@ INSTANCE DIA_Pock_Hello (C_INFO)
 	condition	= DIA_Pock_Hello_Condition;
 	information	= DIA_Pock_Hello_Info;
 	permanent	= 0;
-	description	= "¡Hola! Soy nuevo aquí.";
+	description	= "Â¡Hola! Soy nuevo aquÃ­.";
 };                       
 
 FUNC INT DIA_Pock_Hello_Condition()
@@ -98,14 +98,14 @@ FUNC INT DIA_Pock_Hello_Condition()
 
 FUNC VOID DIA_Pock_Hello_Info()
 {	
-	AI_Output (other, self,"DIA_Pock_Hello_15_00"); //¡Hola! Soy nuevo aquí.
+	AI_Output (other, self,"DIA_Pock_Hello_15_00"); //Â¡Hola! Soy nuevo aquÃ­.
 	AI_Output (self, other,"DIA_Pock_Hello_04_01"); //Me alegro de ver una cara nueva.
-	AI_Output (other, self,"DIA_Pock_Hello_15_02"); //Debes llevar aquí mucho tiempo, ¿no?
+	AI_Output (other, self,"DIA_Pock_Hello_15_02"); //Debes llevar aquÃ­ mucho tiempo, Â¿no?
 	AI_Output (self, other,"DIA_Pock_Hello_04_03"); //Has dado en el clavo, muchacho. Fui uno de los primeros.
 };
 
 // ************************************************************
-// 						Weißt ne Menge
+// 						WeiÃŸt ne Menge
 // ************************************************************
 
 INSTANCE DIA_Pock_KnowMuch (C_INFO)
@@ -129,8 +129,8 @@ FUNC INT DIA_Pock_KnowMuch_Condition()
 FUNC VOID DIA_Pock_KnowMuch_Info()
 {	
 	AI_Output (other, self,"DIA_Pock_KnowMuch_15_00"); //En ese caso debes saber mucho de este lugar.
-	AI_Output (self, other,"DIA_Pock_KnowMuch_04_01"); //Más o menos. Me paso la mayor parte del tiempo aquí, recogiendo arroz.
-	AI_Output (self, other,"DIA_Pock_KnowMuch_04_02"); //Así es como he llegado a viejo. Nos dan arroz y algo de aguardiente. No es mucho, pero basta.
+	AI_Output (self, other,"DIA_Pock_KnowMuch_04_01"); //MÃ¡s o menos. Me paso la mayor parte del tiempo aquÃ­, recogiendo arroz.
+	AI_Output (self, other,"DIA_Pock_KnowMuch_04_02"); //AsÃ­ es como he llegado a viejo. Nos dan arroz y algo de aguardiente. No es mucho, pero basta.
 };
 
 // ************************************************************
@@ -144,7 +144,7 @@ INSTANCE DIA_Pock_WhyJail (C_INFO)
 	condition	= DIA_Pock_WhyJail_Condition;
 	information	= DIA_Pock_WhyJail_Info;
 	permanent	= 0;
-	description	= "¿Por qué estás aquí?";
+	description	= "Â¿Por quÃ© estÃ¡s aquÃ­?";
 };                       
 
 FUNC INT DIA_Pock_WhyJail_Condition()
@@ -157,10 +157,10 @@ FUNC INT DIA_Pock_WhyJail_Condition()
 
 FUNC VOID DIA_Pock_WhyJail_Info()
 {	
-	AI_Output (other, self,"DIA_Pock_WhyJail_15_00"); //¿Por qué estás aquí?
-	AI_Output (self, other,"DIA_Pock_WhyJail_04_01"); //Por los impuestos, muchacho. Mi cobertizo estaba tan vacío como mi estómago, y no pude pagar.
-	AI_Output (self, other,"DIA_Pock_WhyJail_04_02"); //Un día llegaron los soldados y me trajeron aquí. Pero esto no es peor que lo que había fuera. Al menos aquí no paso hambre.
-	AI_Output (self, other,"DIA_Pock_WhyJail_04_03"); //Siempre había pagado mis impuestos, toda mi vida. ¡Pero eso no bastó para ese hijo de perra de la corona!
+	AI_Output (other, self,"DIA_Pock_WhyJail_15_00"); //Â¿Por quÃ© estÃ¡s aquÃ­?
+	AI_Output (self, other,"DIA_Pock_WhyJail_04_01"); //Por los impuestos, muchacho. Mi cobertizo estaba tan vacÃ­o como mi estÃ³mago, y no pude pagar.
+	AI_Output (self, other,"DIA_Pock_WhyJail_04_02"); //Un dÃ­a llegaron los soldados y me trajeron aquÃ­. Pero esto no es peor que lo que habÃ­a fuera. Al menos aquÃ­ no paso hambre.
+	AI_Output (self, other,"DIA_Pock_WhyJail_04_03"); //Siempre habÃ­a pagado mis impuestos, toda mi vida. Â¡Pero eso no bastÃ³ para ese hijo de perra de la corona!
 };
 
 // ************************************************************
@@ -174,7 +174,7 @@ INSTANCE DIA_Pock_ForgotAll (C_INFO)
 	condition	= DIA_Pock_ForgotAll_Condition;
 	information	= DIA_Pock_ForgotAll_Info;
 	permanent	= 1;
-	description	= "¿Todo va bien?";
+	description	= "Â¿Todo va bien?";
 };                       
 
 FUNC INT DIA_Pock_ForgotAll_Condition()
@@ -187,10 +187,10 @@ FUNC INT DIA_Pock_ForgotAll_Condition()
 
 FUNC VOID DIA_Pock_ForgotAll_Info()
 {	
-	AI_Output (other, self,"DIA_Pock_ForgotAll_15_00"); //¿Todo va bien?
+	AI_Output (other, self,"DIA_Pock_ForgotAll_15_00"); //Â¿Todo va bien?
 	AI_Output (self, other,"DIA_Pock_ForgotAll_04_01"); //Me alegro de ver una cara nueva.
-	AI_Output (other, self,"DIA_Pock_ForgotAll_15_02"); //¡Espera! Hablamos antes.
-	AI_Output (self, other,"DIA_Pock_ForgotAll_04_03"); //¡No! No puede ser. No te he visto en mi vida.
+	AI_Output (other, self,"DIA_Pock_ForgotAll_15_02"); //Â¡Espera! Hablamos antes.
+	AI_Output (self, other,"DIA_Pock_ForgotAll_04_03"); //Â¡No! No puede ser. No te he visto en mi vida.
 	AI_Output (other, self,"DIA_Pock_ForgotAll_15_04"); //Claro...
 };
 

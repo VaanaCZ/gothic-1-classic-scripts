@@ -34,7 +34,7 @@ instance  Org_819_Drax_HuntHere (C_INFO)
 	condition	= Org_819_Drax_HuntHere_Condition;
 	information	= Org_819_Drax_HuntHere_Info;
 	permanent	= 0;
-	description = "Estás cazando, ¿verdad?";
+	description = "EstÃ¡s cazando, Â¿verdad?";
 };                       
 
 FUNC int  Org_819_Drax_HuntHere_Condition()
@@ -44,12 +44,12 @@ FUNC int  Org_819_Drax_HuntHere_Condition()
 
 FUNC VOID  Org_819_Drax_HuntHere_Info()
 {
-	AI_Output (other, self,"Org_819_Drax_HuntHere_15_00"); //Estás de caza, ¿verdad?
-	AI_Output (self, other,"Org_819_Drax_HuntHere_06_01"); //Eso parece... ¿qué es lo que quieres?
-	AI_Output (other, self,"Org_819_Drax_HuntHere_15_02"); //¿Me puedes dar algún consejo para la caza?
-	AI_Output (self, other,"Org_819_Drax_HuntHere_06_03"); //Podría enseñarte algunas cosas... pero todo tiene un precio.
-	AI_Output (other, self,"Org_819_Drax_HuntHere_15_04"); //¿Cuánto sería?
-	AI_Output (self, other,"Org_819_Drax_HuntHere_06_05"); //Para empezar, bastaría con un buen trago de cerveza... luego, ya veremos.
+	AI_Output (other, self,"Org_819_Drax_HuntHere_15_00"); //EstÃ¡s de caza, Â¿verdad?
+	AI_Output (self, other,"Org_819_Drax_HuntHere_06_01"); //Eso parece... Â¿quÃ© es lo que quieres?
+	AI_Output (other, self,"Org_819_Drax_HuntHere_15_02"); //Â¿Me puedes dar algÃºn consejo para la caza?
+	AI_Output (self, other,"Org_819_Drax_HuntHere_06_03"); //PodrÃ­a enseÃ±arte algunas cosas... pero todo tiene un precio.
+	AI_Output (other, self,"Org_819_Drax_HuntHere_15_04"); //Â¿CuÃ¡nto serÃ­a?
+	AI_Output (self, other,"Org_819_Drax_HuntHere_06_05"); //Para empezar, bastarÃ­a con un buen trago de cerveza... luego, ya veremos.
 };
 
 // **************************************************
@@ -66,7 +66,7 @@ instance  Org_819_Drax_Scavenger (C_INFO)
 	condition	= Org_819_Drax_Scavenger_Condition;
 	information	= Org_819_Drax_Scavenger_Info;
 	permanent	= 1;
-	description = "Aquí tienes, toma una cerveza y háblame de la caza.";
+	description = "AquÃ­ tienes, toma una cerveza y hÃ¡blame de la caza.";
 };                       
 
 FUNC int  Org_819_Drax_Scavenger_Condition()
@@ -83,29 +83,29 @@ FUNC VOID  Org_819_Drax_Scavenger_Info()
 	{
 		B_GiveInvItems	(other, self, itfobeer,1);
 	
-		AI_Output	(other, self,"Org_819_Drax_Scavenger_15_00"); //Aquí tienes, tómate une cerveza y háblame de la caza.
+		AI_Output	(other, self,"Org_819_Drax_Scavenger_15_00"); //AquÃ­ tienes, tÃ³mate une cerveza y hÃ¡blame de la caza.
 		if ( C_BodystateContains(self, BS_SIT) )
 		{
 			AI_StandUp		(self);
 			AI_TurnToNpc	(self, hero);
 		};
 		AI_UseItem	(self,	ItFobeer);
-		AI_Output	(self, other,"Org_819_Drax_Scavenger_06_01"); //Carroñeros, así llamamos a los grandes pájaros; hay que atacarlos uno tras otro. Es fácil atraer a uno para que se aleje de la manada.
-		AI_Output	(self, other,"Org_819_Drax_Scavenger_06_02"); //Se irritarán si te acercas demasiado. Pasado un rato, se lanzarán a atacarte. Llegados a este punto, deberías esperarlos arma en ristre.
-		AI_Output	(self, other,"Org_819_Drax_Scavenger_06_03"); //Si consigues darle a la bestia antes de que ella te dé a ti, tienes que seguir luchando y entonces podrás derrotar a la criatura sin sufrir daño alguno.
+		AI_Output	(self, other,"Org_819_Drax_Scavenger_06_01"); //CarroÃ±eros, asÃ­ llamamos a los grandes pÃ¡jaros; hay que atacarlos uno tras otro. Es fÃ¡cil atraer a uno para que se aleje de la manada.
+		AI_Output	(self, other,"Org_819_Drax_Scavenger_06_02"); //Se irritarÃ¡n si te acercas demasiado. Pasado un rato, se lanzarÃ¡n a atacarte. Llegados a este punto, deberÃ­as esperarlos arma en ristre.
+		AI_Output	(self, other,"Org_819_Drax_Scavenger_06_03"); //Si consigues darle a la bestia antes de que ella te dÃ© a ti, tienes que seguir luchando y entonces podrÃ¡s derrotar a la criatura sin sufrir daÃ±o alguno.
 		AI_Output	(self, other,"Org_819_Drax_Scavenger_06_04"); //Si es la bestia la que te da a ti primero... Bueno... No dejes que lo hagan.
 		drax_bierbekommen = TRUE;
 	}
 	else
 	{
 		AI_Output (other, self,"Org_819_Drax_Scavenger_KEIN_BIER_15_00"); //No tengo cerveza.
-		AI_Output (self, other,"Org_819_Drax_Scavenger_KEIN_BIER_06_01"); //Entonces ve a por ella. Ese será el mejor consejo gratis que recibas en mucho tiempo. ¡Y, de paso, tráete también algo de mineral!
-		AI_Output (self, other,"Org_819_Drax_Scavenger_KEIN_BIER_06_02"); //¡Puedo darte algo de información sobre animales, pero tiene un precio!
+		AI_Output (self, other,"Org_819_Drax_Scavenger_KEIN_BIER_06_01"); //Entonces ve a por ella. Ese serÃ¡ el mejor consejo gratis que recibas en mucho tiempo. Â¡Y, de paso, trÃ¡ete tambiÃ©n algo de mineral!
+		AI_Output (self, other,"Org_819_Drax_Scavenger_KEIN_BIER_06_02"); //Â¡Puedo darte algo de informaciÃ³n sobre animales, pero tiene un precio!
 	};	
 	drax_Lehrer_frei = TRUE;
 	
 	Log_CreateTopic	(GE_TeacherOW, LOG_NOTE);
-	B_LogEntry		(GE_TeacherOW,"El bandido Drax se ha ofrecido a enseñarme a destripar animales si puedo pagarle lo que pide. Caza yendo de camino de la plaza del mercado al Campamento Viejo.");
+	B_LogEntry		(GE_TeacherOW,"El bandido Drax se ha ofrecido a enseÃ±arme a destripar animales si puedo pagarle lo que pide. Caza yendo de camino de la plaza del mercado al Campamento Viejo.");
 };
 
 // **************************************************
@@ -119,7 +119,7 @@ instance  Org_819_Drax_Creatures (C_INFO)
 	condition	= Org_819_Drax_Creatures_Condition;
 	information	= Org_819_Drax_Creatures_Info;
 	permanent	= 1;
-	description = "¿Qué más puedes contarme acerca de la caza?";
+	description = "Â¿QuÃ© mÃ¡s puedes contarme acerca de la caza?";
 };                       
 
 FUNC int  Org_819_Drax_Creatures_Condition()
@@ -133,13 +133,13 @@ FUNC int  Org_819_Drax_Creatures_Condition()
 
 FUNC VOID  Org_819_Drax_Creatures_Info()
 {
-	AI_Output (other, self,"Org_819_Drax_Creatures_15_00"); //¿Qué más puedes contarme sobre la caza?
+	AI_Output (other, self,"Org_819_Drax_Creatures_15_00"); //Â¿QuÃ© mÃ¡s puedes contarme sobre la caza?
 	
 	if ( (Knows_GetTeeth == FALSE)||(Knows_GetFur == FALSE)||(Knows_GetClaws == FALSE)||(Knows_GetHide == FALSE) )
 	{
-		AI_Output (self, other,"Org_819_Drax_Creatures_06_01"); //Mucho... Pero te costará más que una cerveza.
-		AI_Output (self, other,"Org_819_Drax_Creatures_06_02"); //Si sabes cómo hacerlo, puedes llevarte los dientes, garras y piel de las criaturas. Son difíciles de conseguir, pero muy valiosas.
-		AI_Output (self, other,"Org_819_Drax_Creatures_06_03"); //Cualquier mercader te las cambiará por algo.
+		AI_Output (self, other,"Org_819_Drax_Creatures_06_01"); //Mucho... Pero te costarÃ¡ mÃ¡s que una cerveza.
+		AI_Output (self, other,"Org_819_Drax_Creatures_06_02"); //Si sabes cÃ³mo hacerlo, puedes llevarte los dientes, garras y piel de las criaturas. Son difÃ­ciles de conseguir, pero muy valiosas.
+		AI_Output (self, other,"Org_819_Drax_Creatures_06_03"); //Cualquier mercader te las cambiarÃ¡ por algo.
 		
 		Info_ClearChoices(Org_819_Drax_Creatures);
 		Info_AddChoice   (Org_819_Drax_Creatures, DIALOG_BACK 													,Org_819_Drax_Creatures_BACK);
@@ -163,7 +163,7 @@ FUNC VOID  Org_819_Drax_Creatures_Info()
 	}
 	else
 	{
-		AI_Output (self, other,"Org_819_Drax_Creatures_TaughtAll_06_00"); //Ya te he contado todo lo que sé.
+		AI_Output (self, other,"Org_819_Drax_Creatures_TaughtAll_06_00"); //Ya te he contado todo lo que sÃ©.
 	};
 };
 
@@ -174,16 +174,16 @@ func void Org_819_Drax_Creatures_BACK()
 
 func void Org_819_Drax_Creatures_PrettyMuch()
 {
-	AI_Output (other, self,"Org_819_Drax_Creatures_PrettyMuch_15_00"); //Estás pidiendo mucho por tus consejos.
-	AI_Output (self, other,"Org_819_Drax_Creatures_PrettyMuch_06_01"); //Es posible, pero podrás ganar mucho mineral con estos consejos.
-	AI_Output (self, other,"Org_819_Drax_Creatures_PrettyMuch_06_02"); //Los animales que mates sin saber cómo descuartizarlos no harán más que pudrirse.
+	AI_Output (other, self,"Org_819_Drax_Creatures_PrettyMuch_15_00"); //EstÃ¡s pidiendo mucho por tus consejos.
+	AI_Output (self, other,"Org_819_Drax_Creatures_PrettyMuch_06_01"); //Es posible, pero podrÃ¡s ganar mucho mineral con estos consejos.
+	AI_Output (self, other,"Org_819_Drax_Creatures_PrettyMuch_06_02"); //Los animales que mates sin saber cÃ³mo descuartizarlos no harÃ¡n mÃ¡s que pudrirse.
 	AI_Output (self, other,"Org_819_Drax_Creatures_PrettyMuch_06_03"); //Y eso es desperdiciar una oportunidad de despellejarlos y vender sus pieles por mucho dinero.
-	AI_Output (self, other,"Org_819_Drax_Creatures_PrettyMuch_06_04"); //Yo en tu lugar intentaría obtener estos conocimientos lo antes posible.
+	AI_Output (self, other,"Org_819_Drax_Creatures_PrettyMuch_06_04"); //Yo en tu lugar intentarÃ­a obtener estos conocimientos lo antes posible.
 };
 
 func void Org_819_Drax_Creatures_Zahn()
 {
-	AI_Output (other, self,"Org_819_Drax_Creatures_Zahn_15_00"); //¿Cómo hago para sacarles los dientes?
+	AI_Output (other, self,"Org_819_Drax_Creatures_Zahn_15_00"); //Â¿CÃ³mo hago para sacarles los dientes?
 	
 	if (Npc_HasItems(other,itminugget)>=50)
 	{
@@ -195,28 +195,28 @@ func void Org_819_Drax_Creatures_Zahn()
 			
 			PrintScreen	("Aprender: sacar dientes", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
 					
-			AI_Output (self, other,"Org_819_Drax_Creatures_Zahn_06_01"); //Lo más importante es lograr que los dientes no se astillen. Para evitarlo, aplica tu puñal cerca del centro del diente y haz palanca con mucho cuidado.
+			AI_Output (self, other,"Org_819_Drax_Creatures_Zahn_06_01"); //Lo mÃ¡s importante es lograr que los dientes no se astillen. Para evitarlo, aplica tu puÃ±al cerca del centro del diente y haz palanca con mucho cuidado.
 			AI_Output (self, other,"Org_819_Drax_Creatures_Zahn_06_02"); //Puedes sacarle los dientes a los lobos, bestias de sombra y chasqueadores.
 			
 			Knows_GetTeeth = TRUE;
 			Log_CreateTopic (GE_AnimalTrophies,LOG_NOTE);
-			B_LogEntry (GE_AnimalTrophies,"Conocimientos sobre la extracción de dientes: lobo, perro orco, chasqueador, mordedor, sabueso de sangre, bestia de sombra.");
+			B_LogEntry (GE_AnimalTrophies,"Conocimientos sobre la extracciÃ³n de dientes: lobo, perro orco, chasqueador, mordedor, sabueso de sangre, bestia de sombra.");
 		}
 		else
 		{
-			AI_Output (self, other,"Org_819_Drax_Creatures_KEINE_LP_06_00"); //Tienes que acumular más experiencia o este conocimiento no te será de ninguna utilidad.
-			PrintScreen	("¡Faltan puntos de habilidad!", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
+			AI_Output (self, other,"Org_819_Drax_Creatures_KEINE_LP_06_00"); //Tienes que acumular mÃ¡s experiencia o este conocimiento no te serÃ¡ de ninguna utilidad.
+			PrintScreen	("Â¡Faltan puntos de habilidad!", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
 		};
 	}
 	else
 	{
-		AI_Output (self, other,"Org_819_Drax_Creatures_KEIN_ERZ_06_00"); //Antes quiero ver algo de mineral. ¡Como ya te dije, todo tiene un precio!
+		AI_Output (self, other,"Org_819_Drax_Creatures_KEIN_ERZ_06_00"); //Antes quiero ver algo de mineral. Â¡Como ya te dije, todo tiene un precio!
 	};
 };
 
 func void Org_819_Drax_Creatures_Fell()
 {
-	AI_Output (other, self,"Org_819_Drax_Creatures_Fell_15_00"); //¿Cómo hago para despellejar a estas criaturas?
+	AI_Output (other, self,"Org_819_Drax_Creatures_Fell_15_00"); //Â¿CÃ³mo hago para despellejar a estas criaturas?
 	
 	if (Npc_HasItems(other,itminugget)>=100)
 	{
@@ -228,22 +228,22 @@ func void Org_819_Drax_Creatures_Fell()
 			
 			PrintScreen	("Aprender: despellejar", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
 		
-			AI_Output (self, other,"Org_819_Drax_Creatures_Fell_06_01"); //Es muy importante despellejarlas de atrás adelante. Te resultará fácil una vez le hayas cogido el truco. ¡Las pieles son muy valiosas!
-			AI_Output (self, other,"Org_819_Drax_Creatures_Fell_06_02"); //Las pieles de los lobos y bestias de sombra pueden utilizarse para confeccionar ropas. Cuando examines la piel de un animal muerto, pronto verás si puede ser utilizada o no. 
+			AI_Output (self, other,"Org_819_Drax_Creatures_Fell_06_01"); //Es muy importante despellejarlas de atrÃ¡s adelante. Te resultarÃ¡ fÃ¡cil una vez le hayas cogido el truco. Â¡Las pieles son muy valiosas!
+			AI_Output (self, other,"Org_819_Drax_Creatures_Fell_06_02"); //Las pieles de los lobos y bestias de sombra pueden utilizarse para confeccionar ropas. Cuando examines la piel de un animal muerto, pronto verÃ¡s si puede ser utilizada o no. 
 			
 			Knows_GetFur = TRUE;
 			Log_CreateTopic (GE_AnimalTrophies,LOG_NOTE);
-			B_LogEntry (GE_AnimalTrophies,"Conocimientos sobre cómo quitar pieles: lobo, perro orco, bestia de sombra, troll.");
+			B_LogEntry (GE_AnimalTrophies,"Conocimientos sobre cÃ³mo quitar pieles: lobo, perro orco, bestia de sombra, troll.");
 		}
 		else
 		{
-			AI_Output (self, other,"Org_819_Drax_Creatures_KEINE_LP_06_01"); //Necesitas más experiencia; si no, mis consejos no te servirán de nada.
-			PrintScreen	("¡Faltan puntos de habilidad!", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
+			AI_Output (self, other,"Org_819_Drax_Creatures_KEINE_LP_06_01"); //Necesitas mÃ¡s experiencia; si no, mis consejos no te servirÃ¡n de nada.
+			PrintScreen	("Â¡Faltan puntos de habilidad!", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
 		};
 	}
 	else
 	{
-		AI_Output (self, other,"Org_819_Drax_Creatures_KEIN_ERZ_06_01"); //Antes quiero ver algo de mineral. ¡Como ya te dije, todo tiene un precio!
+		AI_Output (self, other,"Org_819_Drax_Creatures_KEIN_ERZ_06_01"); //Antes quiero ver algo de mineral. Â¡Como ya te dije, todo tiene un precio!
 	};
 };
 
@@ -259,23 +259,23 @@ func void Org_819_Drax_Creatures_Kralle()
 			
 			PrintScreen	("Aprender: arrancar garras", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
 			
-			AI_Output (other, self,"Org_819_Drax_Creatures_Kralle_15_00"); //¡Enséñame a arrancar las garras!
-			AI_Output (self, other,"Org_819_Drax_Creatures_Kralle_06_01"); //La verdad es que es muy sencillo, si sabes lo que tienes que hacer. Dobla las garras hacia delante, nunca hacia atrás; ¡tampoco debes sacarlas tirando de ellas!
-			AI_Output (self, other,"Org_819_Drax_Creatures_Kralle_06_02"); //Las garras se pueden sacar especialmente de los lagartos. A partir de ahora, sabrás de qué criaturas debes obtener garras.
+			AI_Output (other, self,"Org_819_Drax_Creatures_Kralle_15_00"); //Â¡EnsÃ©Ã±ame a arrancar las garras!
+			AI_Output (self, other,"Org_819_Drax_Creatures_Kralle_06_01"); //La verdad es que es muy sencillo, si sabes lo que tienes que hacer. Dobla las garras hacia delante, nunca hacia atrÃ¡s; Â¡tampoco debes sacarlas tirando de ellas!
+			AI_Output (self, other,"Org_819_Drax_Creatures_Kralle_06_02"); //Las garras se pueden sacar especialmente de los lagartos. A partir de ahora, sabrÃ¡s de quÃ© criaturas debes obtener garras.
 			
 			Knows_GetClaws = TRUE;
 			Log_CreateTopic (GE_AnimalTrophies,LOG_NOTE);
-			B_LogEntry (GE_AnimalTrophies,"Conocimiento sobre la extracción de garras: lagarto, chasqueador, acechador, mordedor, cuchilla.");
+			B_LogEntry (GE_AnimalTrophies,"Conocimiento sobre la extracciÃ³n de garras: lagarto, chasqueador, acechador, mordedor, cuchilla.");
 		}
 		else
 		{
-			AI_Output (self, other,"Org_819_Drax_Creatures_KEINE_LP_06_02"); //Necesitas más experiencia; si no, mis consejos no te servirán de nada.
-			PrintScreen	("¡Faltan puntos de habilidad!", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
+			AI_Output (self, other,"Org_819_Drax_Creatures_KEINE_LP_06_02"); //Necesitas mÃ¡s experiencia; si no, mis consejos no te servirÃ¡n de nada.
+			PrintScreen	("Â¡Faltan puntos de habilidad!", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
 		};
 	}
 	else
 	{
-		AI_Output (self, other,"Org_819_Drax_Creatures_KEIN_ERZ_06_02"); //Antes quiero ver algo de mineral. ¡Como ya te dije, todo tiene un precio!
+		AI_Output (self, other,"Org_819_Drax_Creatures_KEIN_ERZ_06_02"); //Antes quiero ver algo de mineral. Â¡Como ya te dije, todo tiene un precio!
 	};
 };
 
@@ -291,23 +291,23 @@ func void Org_819_Drax_Creatures_Haut()
 			
 			PrintScreen	("Aprender: desollar lagarto", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
 				
-			AI_Output (other, self,"Org_819_Drax_Creatures_Haut_15_00"); //¿Qué debo tener en cuenta a la hora de despellejar reptiles?
-			AI_Output (self, other,"Org_819_Drax_Creatures_Haut_06_01"); //Los únicos reptiles adecuados para este propósito son los acechadores y los tiburones de la ciénaga.
-			AI_Output (self, other,"Org_819_Drax_Creatures_Haut_06_02"); //Si cortas la piel por los costados, saldrá sola. De ahora en adelante deberías poder despellejar reptiles.
+			AI_Output (other, self,"Org_819_Drax_Creatures_Haut_15_00"); //Â¿QuÃ© debo tener en cuenta a la hora de despellejar reptiles?
+			AI_Output (self, other,"Org_819_Drax_Creatures_Haut_06_01"); //Los Ãºnicos reptiles adecuados para este propÃ³sito son los acechadores y los tiburones de la ciÃ©naga.
+			AI_Output (self, other,"Org_819_Drax_Creatures_Haut_06_02"); //Si cortas la piel por los costados, saldrÃ¡ sola. De ahora en adelante deberÃ­as poder despellejar reptiles.
 				
 			Knows_GetHide = TRUE;
 			
 			Log_CreateTopic (GE_AnimalTrophies,LOG_NOTE);
-			B_LogEntry (GE_AnimalTrophies,"Conocimientos sobre cómo quita pieles: acechador, tiburón de la ciénaga.");
+			B_LogEntry (GE_AnimalTrophies,"Conocimientos sobre cÃ³mo quita pieles: acechador, tiburÃ³n de la ciÃ©naga.");
 		}
 		else
 		{
-			AI_Output (self, other,"Org_819_Drax_Creatures_KEINE_LP_06_03"); //Necesitas más experiencia; si no, mis consejos no te servirán de nada.
-			PrintScreen	("¡Faltan puntos de habilidad!", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
+			AI_Output (self, other,"Org_819_Drax_Creatures_KEINE_LP_06_03"); //Necesitas mÃ¡s experiencia; si no, mis consejos no te servirÃ¡n de nada.
+			PrintScreen	("Â¡Faltan puntos de habilidad!", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
 		};
 	}
 	else
 	{
-		AI_Output (self, other,"Org_819_Drax_Creatures_KEIN_ERZ_06_03"); //Antes quiero ver algo de mineral. ¡Como ya te dije, todo tiene un precio!
+		AI_Output (self, other,"Org_819_Drax_Creatures_KEIN_ERZ_06_03"); //Antes quiero ver algo de mineral. Â¡Como ya te dije, todo tiene un precio!
 	};
 };

@@ -37,7 +37,7 @@ INSTANCE Info_Bau_2_WichtigePersonen(C_INFO)
 	condition	= Info_Bau_2_WichtigePersonen_Condition;
 	information	= Info_Bau_2_WichtigePersonen_Info;
 	permanent	= 1;
-	description = "¿Trabajas voluntariamente en los arrozales?";
+	description = "Â¿Trabajas voluntariamente en los arrozales?";
 };                       
 
 FUNC INT Info_Bau_2_WichtigePersonen_Condition()
@@ -47,8 +47,8 @@ FUNC INT Info_Bau_2_WichtigePersonen_Condition()
 
 FUNC VOID Info_Bau_2_WichtigePersonen_Info()
 {
-	AI_Output(other,self,"Info_Bau_2_WichtigePersonen_15_00"); //¿Trabajas voluntariamente en los arrozales?
-	AI_Output(self,other,"Info_Bau_2_WichtigePersonen_02_01"); //Sí. Eso es. Es mejor trabajar por voluntad propia que ser obligado a ello por los matones del Señor del Arroz.
+	AI_Output(other,self,"Info_Bau_2_WichtigePersonen_15_00"); //Â¿Trabajas voluntariamente en los arrozales?
+	AI_Output(self,other,"Info_Bau_2_WichtigePersonen_02_01"); //SÃ­. Eso es. Es mejor trabajar por voluntad propia que ser obligado a ello por los matones del SeÃ±or del Arroz.
 	AI_Output(other,self,"Info_Bau_2_WichtigePersonen_15_02"); //Entiendo...
 	var C_NPC Ricelord;			Ricelord	= Hlp_GetNpc(Bau_900_Ricelord);
 	Ricelord.aivar[AIV_FINDABLE] = TRUE;	
@@ -64,7 +64,7 @@ INSTANCE Info_Bau_2_DasLager(C_INFO)
 	condition	= Info_Bau_2_DasLager_Condition;
 	information	= Info_Bau_2_DasLager_Info;
 	permanent	= 1;
-	description = "¿Qué puedes decirme del campamento?";
+	description = "Â¿QuÃ© puedes decirme del campamento?";
 };                       
 
 FUNC INT Info_Bau_2_DasLager_Condition()
@@ -74,8 +74,8 @@ FUNC INT Info_Bau_2_DasLager_Condition()
 
 FUNC VOID Info_Bau_2_DasLager_Info()
 {
-	AI_Output(other,self,"Info_Bau_2_DasLager_15_00"); //¿Qué puedes decirme del campamento?
-	AI_Output(self,other,"Info_Bau_2_DasLager_02_01"); //Es peligroso ir allí. No pasa nada con los mercenarios de Lee y los magos, pero hay que tener cuidado con los bandidos.
+	AI_Output(other,self,"Info_Bau_2_DasLager_15_00"); //Â¿QuÃ© puedes decirme del campamento?
+	AI_Output(self,other,"Info_Bau_2_DasLager_02_01"); //Es peligroso ir allÃ­. No pasa nada con los mercenarios de Lee y los magos, pero hay que tener cuidado con los bandidos.
 	var C_NPC Lee;			Lee		= Hlp_GetNpc(Sld_700_Lee);
 	Lee.aivar[AIV_FINDABLE] = TRUE;	
 	var C_NPC Cronos;		Cronos  = Hlp_GetNpc(KdW_604_Cronos);
@@ -92,7 +92,7 @@ INSTANCE Info_Bau_2_DieLage(C_INFO) // E1
 	condition	= Info_Bau_2_DieLage_Condition;
 	information	= Info_Bau_2_DieLage_Info;
 	permanent	= 1;
-	description = "¿Estás bien?";
+	description = "Â¿EstÃ¡s bien?";
 };                       
 
 FUNC INT Info_Bau_2_DieLage_Condition()
@@ -102,9 +102,9 @@ FUNC INT Info_Bau_2_DieLage_Condition()
 
 FUNC VOID Info_Bau_2_DieLage_Info()
 {
-	AI_Output(other,self,"Info_Bau_2_DieLage_15_00"); //¿Estás bien?
-	AI_Output(self,other,"Info_Bau_2_DieLage_02_01"); //¿Qué quieres? ¿Te manda el Señor del Arroz? ¡Ya trabajo todo lo que puedo!
-	AI_Output(other,self,"Info_Bau_2_DieLage_15_02"); //No me manda nadie, sólo quiero charlar.
+	AI_Output(other,self,"Info_Bau_2_DieLage_15_00"); //Â¿EstÃ¡s bien?
+	AI_Output(self,other,"Info_Bau_2_DieLage_02_01"); //Â¿QuÃ© quieres? Â¿Te manda el SeÃ±or del Arroz? Â¡Ya trabajo todo lo que puedo!
+	AI_Output(other,self,"Info_Bau_2_DieLage_15_02"); //No me manda nadie, sÃ³lo quiero charlar.
 	var C_NPC Ricelord;			Ricelord	= Hlp_GetNpc(Bau_900_Ricelord);
 	Ricelord.aivar[AIV_FINDABLE] = TRUE;	
 };
@@ -119,7 +119,7 @@ INSTANCE Info_Bau_2_Wasser(C_INFO) // E1
 	condition	= Info_Bau_2_Wasser_Condition;
 	information	= Info_Bau_2_Wasser_Info;
 	permanent	= 1;
-	description = "Me manda Lefty. Os he traído un poco de agua.";
+	description = "Me manda Lefty. Os he traÃ­do un poco de agua.";
 };                       
 
 FUNC INT Info_Bau_2_Wasser_Condition()
@@ -133,10 +133,10 @@ FUNC INT Info_Bau_2_Wasser_Condition()
 
 FUNC VOID Info_Bau_2_Wasser_Info()
 {
-	AI_Output(other,self,"Info_Bau_2_Wasser_15_00"); //Me manda Lefty. Os he traído un poco de agua.
+	AI_Output(other,self,"Info_Bau_2_Wasser_15_00"); //Me manda Lefty. Os he traÃ­do un poco de agua.
 	if (Npc_HasItems(other, ItFo_Potion_Water_01)>=1)
 	{
-		AI_Output			(self,other,"Info_Bau_2_Wasser_02_01"); //Gracias, tío. ¡Mi boca es como un desierto!
+		AI_Output			(self,other,"Info_Bau_2_Wasser_02_01"); //Gracias, tÃ­o. Â¡Mi boca es como un desierto!
 
 		B_GiveInvItems		(other, self,	ItFo_Potion_Water_01, 1);
 		if ( C_BodystateContains(self, BS_SIT) )
@@ -155,7 +155,7 @@ FUNC VOID Info_Bau_2_Wasser_Info()
 	}
 	else
 	{
-		AI_Output(self,other,"Info_Bau_2_Wasser_NOWATER_02_00"); //¡Agua! ¡Eh, tío! ¡No queda! No me digas que han bebido todos menos yo otra vez.
+		AI_Output(self,other,"Info_Bau_2_Wasser_NOWATER_02_00"); //Â¡Agua! Â¡Eh, tÃ­o! Â¡No queda! No me digas que han bebido todos menos yo otra vez.
 	};
 };
 	

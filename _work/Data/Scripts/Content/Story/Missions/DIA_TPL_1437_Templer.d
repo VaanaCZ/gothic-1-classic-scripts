@@ -30,7 +30,7 @@ instance  Tpl_1437_Templer_NERV (C_INFO)
 	information		= Tpl_1437_Templer_NERV_Info;
 	important		= 0;
 	permanent		= 1;
-	description		= "¿Qué pasa?"; 
+	description		= "Â¿QuÃ© pasa?"; 
 };
 
 FUNC int  Tpl_1437_Templer_NERV_Condition()
@@ -41,8 +41,8 @@ FUNC int  Tpl_1437_Templer_NERV_Condition()
 
 FUNC void  Tpl_1437_Templer_NERV_Info()
 {
-	AI_Output (other, self,"Tpl_1437_Templer_NERV_Info_15_01"); //¿Qué pasa?
-	AI_Output (self, other,"Tpl_1437_Templer_NERV_Info_13_02"); //Oye, ¿tienes que abordar a todos los que te encuentras?
+	AI_Output (other, self,"Tpl_1437_Templer_NERV_Info_15_01"); //Â¿QuÃ© pasa?
+	AI_Output (self, other,"Tpl_1437_Templer_NERV_Info_13_02"); //Oye, Â¿tienes que abordar a todos los que te encuentras?
 	AI_StopProcessInfos	( self );
 };  
 // ERNEUTES ANSPRECHEN ------------------------------------
@@ -53,7 +53,7 @@ instance  Tpl_1437_Templer_LEAVE (C_INFO)
 	information		= Tpl_1437_Templer_LEAVE_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "¿Todo va bien?"; 
+	description		= "Â¿Todo va bien?"; 
 };
 
 FUNC int  Tpl_1437_Templer_LEAVE_Condition()
@@ -66,8 +66,8 @@ FUNC int  Tpl_1437_Templer_LEAVE_Condition()
 };
 FUNC void  Tpl_1437_Templer_LEAVE_Info()
 {
-	AI_Output (other, self,"Tpl_1437_Templer_LEAVE_Info_15_01"); //¿Va todo bien?
-	AI_Output (self, other,"Tpl_1437_Templer_LEAVE_Info_13_02"); //Quiero tranquilidad, ¿entendido? Así que esfúmate y haz otra cosa, ¡lo que sea!
+	AI_Output (other, self,"Tpl_1437_Templer_LEAVE_Info_15_01"); //Â¿Va todo bien?
+	AI_Output (self, other,"Tpl_1437_Templer_LEAVE_Info_13_02"); //Quiero tranquilidad, Â¿entendido? AsÃ­ que esfÃºmate y haz otra cosa, Â¡lo que sea!
 	AI_StopProcessInfos	( self );
 };
 // ERNEUTES ANSPRECHEN ------------------------------------
@@ -78,7 +78,7 @@ instance  Tpl_1437_Templer_LEAVENOW (C_INFO)
 	information		= Tpl_1437_Templer_LEAVENOW_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "¡No, no te entiendo!"; 
+	description		= "Â¡No, no te entiendo!"; 
 };
 
 FUNC int  Tpl_1437_Templer_LEAVENOW_Condition()
@@ -91,13 +91,13 @@ FUNC int  Tpl_1437_Templer_LEAVENOW_Condition()
 };
 FUNC void  Tpl_1437_Templer_LEAVENOW_Info()
 {
-	AI_Output (other, self,"Tpl_1437_Templer_LEAVENOW_Info_15_01"); //¡No, no te entiendo!
-	AI_Output (self, other,"Tpl_1437_Templer_LEAVENOW_Info_13_02"); //Bueno, entonces intentaré decirlo con mayor claridad.
-	AI_Output (self, other,"Tpl_1437_Templer_LEAVENOW_Info_13_03"); //¡Largo!
-	AI_Output (self, other,"Tpl_1437_Templer_LEAVENOW_Info_13_04"); //¡Abandona esta mina!
-	AI_Output (self, other,"Tpl_1437_Templer_LEAVENOW_Info_13_05"); //¡No vuelvas a dirigirme la palabra!
-	AI_Output (self, other,"Tpl_1437_Templer_LEAVENOW_Info_13_06"); //¡Esfúmate! ¡Déjame en paz!
-	AI_Output (self, other,"Tpl_1437_Templer_LEAVENOW_Info_13_07"); //¡PIÉRDETE!
+	AI_Output (other, self,"Tpl_1437_Templer_LEAVENOW_Info_15_01"); //Â¡No, no te entiendo!
+	AI_Output (self, other,"Tpl_1437_Templer_LEAVENOW_Info_13_02"); //Bueno, entonces intentarÃ© decirlo con mayor claridad.
+	AI_Output (self, other,"Tpl_1437_Templer_LEAVENOW_Info_13_03"); //Â¡Largo!
+	AI_Output (self, other,"Tpl_1437_Templer_LEAVENOW_Info_13_04"); //Â¡Abandona esta mina!
+	AI_Output (self, other,"Tpl_1437_Templer_LEAVENOW_Info_13_05"); //Â¡No vuelvas a dirigirme la palabra!
+	AI_Output (self, other,"Tpl_1437_Templer_LEAVENOW_Info_13_06"); //Â¡EsfÃºmate! Â¡DÃ©jame en paz!
+	AI_Output (self, other,"Tpl_1437_Templer_LEAVENOW_Info_13_07"); //Â¡PIÃ‰RDETE!
 	AI_StopProcessInfos	( self );
 };
 

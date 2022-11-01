@@ -33,7 +33,7 @@ INSTANCE DIA_Grd_281_GuardGate (C_INFO)
 	condition		= DIA_Grd_281_GuardGate_Condition;
 	information		= DIA_Grd_281_GuardGate_Info;
 	permanent		= 1;
-	description		= "¿Qué tal estás?"; 
+	description		= "Â¿QuÃ© tal estÃ¡s?"; 
 };
 
 FUNC INT DIA_Grd_281_GuardGate_Condition()
@@ -45,7 +45,7 @@ FUNC INT DIA_Grd_281_GuardGate_Condition()
 };
 FUNC VOID DIA_Grd_281_GuardGate_Info()
 {
-	AI_Output (other, self,"DIA_Grd_281_GuardGate_15_00"); //¿Qué tal estás?
-	AI_Output (self, other,"DIA_Grd_281_GuardGate_07_01"); //Bien. ¡Los bandidos del Campamento Nuevo no aparecen por ninguna parte!
+	AI_Output (other, self,"DIA_Grd_281_GuardGate_15_00"); //Â¿QuÃ© tal estÃ¡s?
+	AI_Output (self, other,"DIA_Grd_281_GuardGate_07_01"); //Bien. Â¡Los bandidos del Campamento Nuevo no aparecen por ninguna parte!
 	AI_StopProcessInfos	( self );
 };

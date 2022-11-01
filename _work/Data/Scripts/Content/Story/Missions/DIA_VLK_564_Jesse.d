@@ -33,7 +33,7 @@ INSTANCE DIA_Jesse_Hallo (C_INFO)
 	condition		= DIA_Jesse_Hallo_Condition;
 	information		= DIA_Jesse_Hallo_Info;
 	permanent		= 0;
-	description		= "¿Qué tal?";
+	description		= "Â¿QuÃ© tal?";
 };
 
 FUNC INT DIA_Jesse_Hallo_Condition()
@@ -46,9 +46,9 @@ FUNC INT DIA_Jesse_Hallo_Condition()
 
 FUNC VOID DIA_Jesse_Hallo_Info()
 {
-	AI_Output (other, self,"DIA_Jesse_Hallo_15_00"); //¿Cómo van las cosas?
-	AI_Output (self, other,"DIA_Jesse_Hallo_03_01"); //Eres nuevo aquí, ¿verdad? Será mejor que sepas que no debes meterte en problemas con los guardias.
-	AI_Output (self, other,"DIA_Jesse_Hallo_03_02"); //Cuando te pidan el dinero de la protección, será mejor que se lo des; si no tendrás a medio Campamento en tu contra.
+	AI_Output (other, self,"DIA_Jesse_Hallo_15_00"); //Â¿CÃ³mo van las cosas?
+	AI_Output (self, other,"DIA_Jesse_Hallo_03_01"); //Eres nuevo aquÃ­, Â¿verdad? SerÃ¡ mejor que sepas que no debes meterte en problemas con los guardias.
+	AI_Output (self, other,"DIA_Jesse_Hallo_03_02"); //Cuando te pidan el dinero de la protecciÃ³n, serÃ¡ mejor que se lo des; si no tendrÃ¡s a medio Campamento en tu contra.
 };
 
 // **************************************************
@@ -75,12 +75,12 @@ FUNC INT DIA_Jesse_Warn_Condition()
 
 FUNC VOID DIA_Jesse_Warn_Info()
 {
-	AI_Output (self, other,"DIA_Jesse_Warn_03_00"); //¡Eh, tú! He oído que no quieres pagarle dinero por protección a Bloodwyn. ¿Es eso cierto?
-	AI_Output (other, self,"DIA_Jesse_Warn_15_01"); //¿Qué es lo que quieres?
-	AI_Output (self, other,"DIA_Jesse_Warn_03_02"); //¡Prevenirte! Bloodwyn ha pagado a algunos tipos para que te liquiden.
-	AI_Output (self, other,"DIA_Jesse_Warn_03_03"); //¡Le he visto hablar con gente como Herek y Dios sabe a quién más ha contratado!
+	AI_Output (self, other,"DIA_Jesse_Warn_03_00"); //Â¡Eh, tÃº! He oÃ­do que no quieres pagarle dinero por protecciÃ³n a Bloodwyn. Â¿Es eso cierto?
+	AI_Output (other, self,"DIA_Jesse_Warn_15_01"); //Â¿QuÃ© es lo que quieres?
+	AI_Output (self, other,"DIA_Jesse_Warn_03_02"); //Â¡Prevenirte! Bloodwyn ha pagado a algunos tipos para que te liquiden.
+	AI_Output (self, other,"DIA_Jesse_Warn_03_03"); //Â¡Le he visto hablar con gente como Herek y Dios sabe a quiÃ©n mÃ¡s ha contratado!
 	AI_Output (other, self,"DIA_Jesse_Warn_15_04"); //Tu aviso acerca de Herek llega un poco tarde.
-	AI_Output (self, other,"DIA_Jesse_Warn_03_05"); //Por lo que yo sé, también debe haber hablado con algunos más. Así que ten cuidado.
+	AI_Output (self, other,"DIA_Jesse_Warn_03_05"); //Por lo que yo sÃ©, tambiÃ©n debe haber hablado con algunos mÃ¡s. AsÃ­ que ten cuidado.
 };
 
 // **************************************************
@@ -96,7 +96,7 @@ INSTANCE DIA_Jesse_Mission (C_INFO)
 	condition		= DIA_Jesse_Mission_Condition;
 	information		= DIA_Jesse_Mission_Info;
 	permanent		= 0;
-	description		= "¿Por qué me contaste la historia de Bloodwyn?";
+	description		= "Â¿Por quÃ© me contaste la historia de Bloodwyn?";
 };
 
 FUNC INT DIA_Jesse_Mission_Condition()
@@ -109,19 +109,19 @@ FUNC INT DIA_Jesse_Mission_Condition()
 
 FUNC VOID DIA_Jesse_Mission_Info()
 {
-	AI_Output (other, self,"DIA_Jesse_Mission_15_00"); //¿Por qué me has contado lo de Bloodwyn?
+	AI_Output (other, self,"DIA_Jesse_Mission_15_00"); //Â¿Por quÃ© me has contado lo de Bloodwyn?
 	AI_Output (self, other,"DIA_Jesse_Mission_03_01"); //Porque los favores pueden devolverse. Y no pareces ser alguien que no comprenda eso.
 	AI_Output (self, other,"DIA_Jesse_Mission_03_02"); //Y, dado que yo te he hecho un favor, quiero darte la oportunidad de devolverlo.
 	
 	Info_ClearChoices	(DIA_Jesse_Mission );
-	Info_AddChoice		(DIA_Jesse_Mission,"¡Olvídalo! ¡No te debo nada!",DIA_Jesse_Mission_ForgetIt);
-	Info_AddChoice		(DIA_Jesse_Mission,"¿Qué tienes pensado exactamente?",DIA_Jesse_Mission_What);
+	Info_AddChoice		(DIA_Jesse_Mission,"Â¡OlvÃ­dalo! Â¡No te debo nada!",DIA_Jesse_Mission_ForgetIt);
+	Info_AddChoice		(DIA_Jesse_Mission,"Â¿QuÃ© tienes pensado exactamente?",DIA_Jesse_Mission_What);
 };
 
 func void DIA_Jesse_Mission_ForgetIt()
 {
-	AI_Output (other, self,"DIA_Jesse_Mission_ForgetIt_15_00"); //¡No te debo nada!
-	AI_Output (self, other,"DIA_Jesse_Mission_ForgetIt_03_01"); //¡Oh! ¡Entonces, piérdete!
+	AI_Output (other, self,"DIA_Jesse_Mission_ForgetIt_15_00"); //Â¡No te debo nada!
+	AI_Output (self, other,"DIA_Jesse_Mission_ForgetIt_03_01"); //Â¡Oh! Â¡Entonces, piÃ©rdete!
 	Npc_SetPermAttitude(self,ATT_ANGRY);
 	Info_ClearChoices	(DIA_Jesse_Mission );
 	AI_StopProcessInfos	(self);
@@ -129,19 +129,19 @@ func void DIA_Jesse_Mission_ForgetIt()
 
 func void DIA_Jesse_Mission_What()
 {
-	AI_Output (other, self,"DIA_Jesse_Mission_What_15_00"); //¿Qué es exactamente lo que tienes en mente?
-	AI_Output (self, other,"DIA_Jesse_Mission_What_03_01"); //No me queda nada de mineral y además Bloodwyn también me ha esquilmado.
-	AI_Output (self, other,"DIA_Jesse_Mission_What_03_02"); //Ahora que te he ayudado, podrías pagarle las 10 pepitas que le debo, ¿no? Dile que es de mi parte.
+	AI_Output (other, self,"DIA_Jesse_Mission_What_15_00"); //Â¿QuÃ© es exactamente lo que tienes en mente?
+	AI_Output (self, other,"DIA_Jesse_Mission_What_03_01"); //No me queda nada de mineral y ademÃ¡s Bloodwyn tambiÃ©n me ha esquilmado.
+	AI_Output (self, other,"DIA_Jesse_Mission_What_03_02"); //Ahora que te he ayudado, podrÃ­as pagarle las 10 pepitas que le debo, Â¿no? Dile que es de mi parte.
 	Npc_SetTrueGuild(self,GIL_NONE); //KEIN Schutzgeld
 	
-	Info_AddChoice		(DIA_Jesse_Mission,"¿Que yo te pague? ¡Ni hablar!",DIA_Jesse_Mission_NO);
-	Info_AddChoice		(DIA_Jesse_Mission,"Veré lo que puedo hacer.",DIA_Jesse_Mission_YES);
+	Info_AddChoice		(DIA_Jesse_Mission,"Â¿Que yo te pague? Â¡Ni hablar!",DIA_Jesse_Mission_NO);
+	Info_AddChoice		(DIA_Jesse_Mission,"VerÃ© lo que puedo hacer.",DIA_Jesse_Mission_YES);
 };
 //-------------------------------
 func void DIA_Jesse_Mission_YES()
 {
-	AI_Output (other, self,"DIA_Jesse_Mission_YES_15_00"); //Veré qué puedo hacer.
-	AI_Output (self, other,"DIA_Jesse_Mission_YES_03_01"); //¡Gracias, tío! ¡Me has salvado el pellejo! Avísame cuando el asunto esté solucionado, por favor.
+	AI_Output (other, self,"DIA_Jesse_Mission_YES_15_00"); //VerÃ© quÃ© puedo hacer.
+	AI_Output (self, other,"DIA_Jesse_Mission_YES_03_01"); //Â¡Gracias, tÃ­o! Â¡Me has salvado el pellejo! AvÃ­same cuando el asunto estÃ© solucionado, por favor.
 	Jesse_PayForMe = LOG_RUNNING;
 	
 	Info_ClearChoices	(DIA_Jesse_Mission );
@@ -149,7 +149,7 @@ func void DIA_Jesse_Mission_YES()
 
 func void DIA_Jesse_Mission_NO()
 {
-	AI_Output (other, self,"DIA_Jesse_Mission_NO_15_00"); //¿Que yo pague por ti? ¡Ni hablar!
+	AI_Output (other, self,"DIA_Jesse_Mission_NO_15_00"); //Â¿Que yo pague por ti? Â¡Ni hablar!
 	AI_Output (self, other,"DIA_Jesse_Mission_NO_03_01"); //Parece que me equivocaba respecto a ti. En el futuro, no cuentes conmigo.
 	//MUSS SO - Mike
 	Npc_SetPermAttitude(self,ATT_ANGRY);
@@ -168,7 +168,7 @@ INSTANCE DIA_Jesse_MisSuccess (C_INFO)
 	condition		= DIA_Jesse_MisSuccess_Condition;
 	information		= DIA_Jesse_MisSuccess_Info;
 	permanent		= 0;
-	description		= "¡Pagué a Bloodwyn!";
+	description		= "Â¡PaguÃ© a Bloodwyn!";
 };
 
 FUNC INT DIA_Jesse_MisSuccess_Condition()
@@ -181,24 +181,24 @@ FUNC INT DIA_Jesse_MisSuccess_Condition()
 
 FUNC VOID DIA_Jesse_MisSuccess_Info()
 {
-	AI_Output (other, self,"DIA_Jesse_MisSuccess_15_00"); //¡He pagado a Bloodwyn!
-	AI_Output (self, other,"DIA_Jesse_MisSuccess_03_01"); //¿De veras? ¡Genial! Ahora estamos en paz.
+	AI_Output (other, self,"DIA_Jesse_MisSuccess_15_00"); //Â¡He pagado a Bloodwyn!
+	AI_Output (self, other,"DIA_Jesse_MisSuccess_03_01"); //Â¿De veras? Â¡Genial! Ahora estamos en paz.
 	Npc_SetTrueGuild(self,GIL_VLK); //Schutzgeld GEZAHLT
 	
 	Info_ClearChoices	(DIA_Jesse_MisSuccess );
-	Info_AddChoice		(DIA_Jesse_MisSuccess,"¿QUEEEEEÉ? ¿He gastado 10 pepitas en una pista que ya sabía?",DIA_Jesse_MisSuccess_Waaas);
-	Info_AddChoice		(DIA_Jesse_MisSuccess,"Sí. Hoy por ti, mañana por mí.",DIA_Jesse_MisSuccess_Ok);
+	Info_AddChoice		(DIA_Jesse_MisSuccess,"Â¿QUEEEEEÃ‰? Â¿He gastado 10 pepitas en una pista que ya sabÃ­a?",DIA_Jesse_MisSuccess_Waaas);
+	Info_AddChoice		(DIA_Jesse_MisSuccess,"SÃ­. Hoy por ti, maÃ±ana por mÃ­.",DIA_Jesse_MisSuccess_Ok);
 };
 
 func void DIA_Jesse_MisSuccess_Waaas()
 {
-	AI_Output (other, self,"DIA_Jesse_MisSuccess_Waaas_15_00"); //¿CÓMO? ¿Me he gastado 10 pepitas en una pista que ya conocía?
-	AI_Output (self, other,"DIA_Jesse_MisSuccess_Waaas_03_01"); //Parece que sí...
+	AI_Output (other, self,"DIA_Jesse_MisSuccess_Waaas_15_00"); //Â¿CÃ“MO? Â¿Me he gastado 10 pepitas en una pista que ya conocÃ­a?
+	AI_Output (self, other,"DIA_Jesse_MisSuccess_Waaas_03_01"); //Parece que sÃ­...
 };
 
 func void DIA_Jesse_MisSuccess_Ok()
 {
-	AI_Output (other, self,"DIA_Jesse_MisSuccess_Ok_15_00"); //Sí. Favor por favor.
+	AI_Output (other, self,"DIA_Jesse_MisSuccess_Ok_15_00"); //SÃ­. Favor por favor.
 };
 
 //a) <Herek tot>

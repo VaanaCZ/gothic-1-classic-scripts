@@ -45,10 +45,10 @@ FUNC int  Grd_264_Gardist_GARDEAUFNAHME_Condition()
 };
 func void  Grd_264_Gardist_GARDEAUFNAHME_Info()
 {
-	AI_Output (self, other,"Grd_264_Gardist_GARDEAUFNAHME_Info_07_01"); //¡Oye, has hecho un buen trabajo con los reptadores! ¡Te has ganado un puesto en la guardia!
-	AI_Output (self, other,"Grd_264_Gardist_GARDEAUFNAHME_Info_07_02"); //¡Ve al Campamento Viejo y pídeselo a Thorus!
+	AI_Output (self, other,"Grd_264_Gardist_GARDEAUFNAHME_Info_07_01"); //Â¡Oye, has hecho un buen trabajo con los reptadores! Â¡Te has ganado un puesto en la guardia!
+	AI_Output (self, other,"Grd_264_Gardist_GARDEAUFNAHME_Info_07_02"); //Â¡Ve al Campamento Viejo y pÃ­deselo a Thorus!
 	
 	Log_CreateTopic (GE_BecomeGuard,LOG_NOTE);
-	B_LogEntry (GE_BecomeGuard,"Debo hablar con Thorus tan pronto como haya vuelto con los huevos. Quizá él me deje unirme a la guardia.");
+	B_LogEntry (GE_BecomeGuard,"Debo hablar con Thorus tan pronto como haya vuelto con los huevos. QuizÃ¡ Ã©l me deje unirme a la guardia.");
 
 };

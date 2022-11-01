@@ -51,7 +51,7 @@ FUNC INT Info_Vlk_2_EinerVonEuchWerden_Condition()
 FUNC VOID Info_Vlk_2_EinerVonEuchWerden_Info()
 {
 	AI_Output(other,self,"Info_Vlk_2_EinerVonEuchWerden_15_00"); //Quiero unirme a vosotros.
-	AI_Output(self,other,"Info_Vlk_2_EinerVonEuchWerden_02_01"); //No entiendo por qué quieres presentarte voluntario para trabajar en las minas. Los tipos como tú suelen acabar viviendo en el castillo.
+	AI_Output(self,other,"Info_Vlk_2_EinerVonEuchWerden_02_01"); //No entiendo por quÃ© quieres presentarte voluntario para trabajar en las minas. Los tipos como tÃº suelen acabar viviendo en el castillo.
 };
 
 // *************************************************************************
@@ -64,7 +64,7 @@ INSTANCE Info_Vlk_2_WichtigePersonen(C_INFO)
 	condition	= Info_Vlk_2_WichtigePersonen_Condition;
 	information	= Info_Vlk_2_WichtigePersonen_Info;
 	permanent	= 1;
-	description = "¿Quién manda por aquí?";
+	description = "Â¿QuiÃ©n manda por aquÃ­?";
 };                       
 
 FUNC INT Info_Vlk_2_WichtigePersonen_Condition()
@@ -74,9 +74,9 @@ FUNC INT Info_Vlk_2_WichtigePersonen_Condition()
 
 FUNC VOID Info_Vlk_2_WichtigePersonen_Info()
 {
-	AI_Output(other,self,"Info_Vlk_2_WichtigePersonen_15_00"); //¿Quién manda por aquí?
-	AI_Output(self,other,"Info_Vlk_2_WichtigePersonen_02_01"); //Aquí, en el Anillo Exterior, Fletcher, Bloodwyn y Jackal recaudan el dinero de la protección. Cada uno lleva un distrito.
-	AI_Output(self,other,"Info_Vlk_2_WichtigePersonen_02_02"); //Si les gustas, te irá bien.
+	AI_Output(other,self,"Info_Vlk_2_WichtigePersonen_15_00"); //Â¿QuiÃ©n manda por aquÃ­?
+	AI_Output(self,other,"Info_Vlk_2_WichtigePersonen_02_01"); //AquÃ­, en el Anillo Exterior, Fletcher, Bloodwyn y Jackal recaudan el dinero de la protecciÃ³n. Cada uno lleva un distrito.
+	AI_Output(self,other,"Info_Vlk_2_WichtigePersonen_02_02"); //Si les gustas, te irÃ¡ bien.
 };
 
 // *************************************************************************
@@ -89,7 +89,7 @@ INSTANCE Info_Vlk_2_DasLager(C_INFO)
 	condition	= Info_Vlk_2_DasLager_Condition;
 	information	= Info_Vlk_2_DasLager_Info;
 	permanent	= 1;
-	description = "Quiero saber más cosas de este campamento.";
+	description = "Quiero saber mÃ¡s cosas de este campamento.";
 };                       
 
 FUNC INT Info_Vlk_2_DasLager_Condition()
@@ -99,8 +99,8 @@ FUNC INT Info_Vlk_2_DasLager_Condition()
 
 FUNC VOID Info_Vlk_2_DasLager_Info()
 {
-	AI_Output(other,self,"Info_Vlk_2_DasLager_15_00"); //Quiero saber más cosas de este campamento.
-	AI_Output(self,other,"Info_Vlk_2_DasLager_02_01"); //Deberías hablar con las Sombras. Ellos pueden contarte todo lo que necesites saber. No obstante, ten cuidado; en la mayoría no se puede confiar.
+	AI_Output(other,self,"Info_Vlk_2_DasLager_15_00"); //Quiero saber mÃ¡s cosas de este campamento.
+	AI_Output(self,other,"Info_Vlk_2_DasLager_02_01"); //DeberÃ­as hablar con las Sombras. Ellos pueden contarte todo lo que necesites saber. No obstante, ten cuidado; en la mayorÃ­a no se puede confiar.
 };
 
 // *************************************************************************
@@ -113,7 +113,7 @@ INSTANCE Info_Vlk_2_DieLage(C_INFO) // E1
 	condition	= Info_Vlk_2_DieLage_Condition;
 	information	= Info_Vlk_2_DieLage_Info;
 	permanent	= 1;
-	description = "¿Cómo es la vida aquí?";
+	description = "Â¿CÃ³mo es la vida aquÃ­?";
 };                       
 
 FUNC INT Info_Vlk_2_DieLage_Condition()
@@ -125,11 +125,11 @@ FUNC INT Info_Vlk_2_DieLage_Condition()
 };
 FUNC VOID Info_Vlk_2_DieLage_Info()
 {
-	AI_Output(other,self,"Info_Vlk_2_DieLage_15_00"); //¿Cómo es la vida aquí?
-	AI_Output(self,other,"Info_Vlk_2_DieLage_02_01"); //Si te mandan los magnates del mineral, diles que no quiero líos. No voy a hablar con nadie.
+	AI_Output(other,self,"Info_Vlk_2_DieLage_15_00"); //Â¿CÃ³mo es la vida aquÃ­?
+	AI_Output(self,other,"Info_Vlk_2_DieLage_02_01"); //Si te mandan los magnates del mineral, diles que no quiero lÃ­os. No voy a hablar con nadie.
 	AI_Output(self,other,"Info_Vlk_2_DieLage_02_02"); //Estoy contento con lo que nos dan.
 	AI_Output(other,self,"Info_Vlk_2_DieLage_15_03"); //No me manda nadie. Acabo de llegar.
-	AI_Output(self,other,"Info_Vlk_2_DieLage_02_04"); //Uno nuevo, ¿eh? Los recién llegados se meten en líos enseguida. No quiero verme implicado, ¿vale?
+	AI_Output(self,other,"Info_Vlk_2_DieLage_02_04"); //Uno nuevo, Â¿eh? Los reciÃ©n llegados se meten en lÃ­os enseguida. No quiero verme implicado, Â¿vale?
 };	
 	
 // *************************************************************************

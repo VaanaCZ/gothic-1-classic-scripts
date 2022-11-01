@@ -51,8 +51,8 @@ FUNC INT Info_Nov_2_EinerVonEuchWerden_Condition()
 FUNC VOID Info_Nov_2_EinerVonEuchWerden_Info()
 {
 	AI_Output(other,self,"Info_Nov_2_EinerVonEuchWerden_15_00"); //Quiero unirme a vosotros.
-	AI_Output(self,other,"Info_Nov_2_EinerVonEuchWerden_02_01"); //¿Te refieres a que has decidido servir al Durmiente? Ante ti se presenta una senda de felicidad y buena suerte.
-	AI_Output(self,other,"Info_Nov_2_EinerVonEuchWerden_02_02"); //Ve y habla con Cor Kalom. Él decidirá para qué trabajo estás más cualificado.
+	AI_Output(self,other,"Info_Nov_2_EinerVonEuchWerden_02_01"); //Â¿Te refieres a que has decidido servir al Durmiente? Ante ti se presenta una senda de felicidad y buena suerte.
+	AI_Output(self,other,"Info_Nov_2_EinerVonEuchWerden_02_02"); //Ve y habla con Cor Kalom. Ã‰l decidirÃ¡ para quÃ© trabajo estÃ¡s mÃ¡s cualificado.
 	
 	var C_NPC CorKalom;		CorKalom= Hlp_GetNpc(Gur_1201_CorKalom);
 	CorKalom.aivar[AIV_FINDABLE] = TRUE;
@@ -68,7 +68,7 @@ INSTANCE Info_Nov_2_WichtigePersonen(C_INFO)
 	condition	= Info_Nov_2_WichtigePersonen_Condition;
 	information	= Info_Nov_2_WichtigePersonen_Info;
 	permanent	= 1;
-	description = "¿Quiénes son vuestros líderes?";
+	description = "Â¿QuiÃ©nes son vuestros lÃ­deres?";
 };                       
 
 FUNC INT Info_Nov_2_WichtigePersonen_Condition()
@@ -78,9 +78,9 @@ FUNC INT Info_Nov_2_WichtigePersonen_Condition()
 
 FUNC VOID Info_Nov_2_WichtigePersonen_Info()
 {
-	AI_Output(other,self,"Info_Nov_2_WichtigePersonen_15_00"); //¿Quiénes son vuestros líderes?
+	AI_Output(other,self,"Info_Nov_2_WichtigePersonen_15_00"); //Â¿QuiÃ©nes son vuestros lÃ­deres?
 	AI_Output(self,other,"Info_Nov_2_WichtigePersonen_02_01"); //Y'Berion, Cor Kalom y Cor Angar son nuestros mentores.
-	AI_Output(self,other,"Info_Nov_2_WichtigePersonen_02_02"); //Son nuestro vínculo con el Durmiente. Durante las invocaciones, son los que se ponen en contacto con él.
+	AI_Output(self,other,"Info_Nov_2_WichtigePersonen_02_02"); //Son nuestro vÃ­nculo con el Durmiente. Durante las invocaciones, son los que se ponen en contacto con Ã©l.
 	
 	var C_NPC YBerion;		YBerion	= Hlp_GetNpc(Gur_1200_Yberion);
 	var C_NPC CorKalom;		CorKalom= Hlp_GetNpc(Gur_1201_CorKalom);
@@ -100,7 +100,7 @@ INSTANCE Info_Nov_2_DasLager(C_INFO)
 	condition	= Info_Nov_2_DasLager_Condition;
 	information	= Info_Nov_2_DasLager_Info;
 	permanent	= 1;
-	description = "¿Qué tengo que saber de este lugar?";
+	description = "Â¿QuÃ© tengo que saber de este lugar?";
 };                       
 
 FUNC INT Info_Nov_2_DasLager_Condition()
@@ -110,9 +110,9 @@ FUNC INT Info_Nov_2_DasLager_Condition()
 
 FUNC VOID Info_Nov_2_DasLager_Info()
 {
-	AI_Output(other,self,"Info_Nov_2_DasLager_15_00"); //¿Qué tengo que saber de este lugar?
-	AI_Output(self,other,"Info_Nov_2_DasLager_02_01"); //Es un lugar de oración, hermano. No tenemos mucho, pero lo que tenemos lo compartimos con todos aquellos que estén dispuestos a escuchar las enseñanzas del Durmiente.
-	AI_Output(self,other,"Info_Nov_2_DasLager_02_02"); //Habla con uno de los gurús, y tu alma se enriquecerá.
+	AI_Output(other,self,"Info_Nov_2_DasLager_15_00"); //Â¿QuÃ© tengo que saber de este lugar?
+	AI_Output(self,other,"Info_Nov_2_DasLager_02_01"); //Es un lugar de oraciÃ³n, hermano. No tenemos mucho, pero lo que tenemos lo compartimos con todos aquellos que estÃ©n dispuestos a escuchar las enseÃ±anzas del Durmiente.
+	AI_Output(self,other,"Info_Nov_2_DasLager_02_02"); //Habla con uno de los gurÃºs, y tu alma se enriquecerÃ¡.
 };
 
 // *************************************************************************
@@ -125,7 +125,7 @@ INSTANCE Info_Nov_2_DieLage(C_INFO) // E1
 	condition	= Info_Nov_2_DieLage_Condition;
 	information	= Info_Nov_2_DieLage_Info;
 	permanent	= 1;
-	description = "¿Qué tal estás?";
+	description = "Â¿QuÃ© tal estÃ¡s?";
 };                       
 
 FUNC INT Info_Nov_2_DieLage_Condition()
@@ -135,7 +135,7 @@ FUNC INT Info_Nov_2_DieLage_Condition()
 
 FUNC VOID Info_Nov_2_DieLage_Info()
 {
-	AI_Output(other,self,"Info_Nov_2_DieLage_15_00"); //¿Qué tal estás?
+	AI_Output(other,self,"Info_Nov_2_DieLage_15_00"); //Â¿QuÃ© tal estÃ¡s?
 	AI_Output(self,other,"Info_Nov_2_DieLage_02_01"); //No tengo mucho tiempo. Tengo tareas que hacer.
 };
 	

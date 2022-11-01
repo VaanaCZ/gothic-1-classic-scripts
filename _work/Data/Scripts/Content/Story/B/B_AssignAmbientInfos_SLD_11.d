@@ -54,10 +54,10 @@ FUNC INT Info_Sld_11_EinerVonEuchWerden_Condition()
 FUNC VOID Info_Sld_11_EinerVonEuchWerden_Info()
 {
 	AI_Output(other,self,"Info_Sld_11_EinerVonEuchWerden_15_00"); //Quiero convertirme en mercenario para los magos.
-	AI_Output(self,other,"Info_Sld_11_EinerVonEuchWerden_11_01"); //No es muy difÌcil. Si est·s listo para luchar por nuestra causa, seguro que Lee te acepta.
-	AI_Output(self,other,"Info_Sld_11_EinerVonEuchWerden_11_02"); //Pero sÛlo acepta a gente que es buena con la espada. øT˙ lo eres?
+	AI_Output(self,other,"Info_Sld_11_EinerVonEuchWerden_11_01"); //No es muy dif√≠cil. Si est√°s listo para luchar por nuestra causa, seguro que Lee te acepta.
+	AI_Output(self,other,"Info_Sld_11_EinerVonEuchWerden_11_02"); //Pero s√≥lo acepta a gente que es buena con la espada. ¬øT√∫ lo eres?
 	AI_Output(other,self,"Info_Sld_11_EinerVonEuchWerden_15_03"); //Bueno...
-	AI_Output(self,other,"Info_Sld_11_EinerVonEuchWerden_11_04"); //Eso pensaba. Si vas en serio, habla con Gorn. Ya ha entrenado antes a reciÈn llegados.
+	AI_Output(self,other,"Info_Sld_11_EinerVonEuchWerden_11_04"); //Eso pensaba. Si vas en serio, habla con Gorn. Ya ha entrenado antes a reci√©n llegados.
 	AI_Output(self,other,"Info_Sld_11_EinerVonEuchWerden_11_05"); //Tal vez tengas suerte y se tome la molestia de entrenarte.
 	var C_NPC Gorn;			Gorn	= Hlp_GetNpc(PC_Fighter);
 	Gorn.aivar[AIV_FINDABLE] = TRUE;
@@ -73,7 +73,7 @@ INSTANCE Info_Sld_11_WichtigePersonen(C_INFO)
 	condition	= Info_Sld_11_WichtigePersonen_Condition;
 	information	= Info_Sld_11_WichtigePersonen_Info;
 	permanent	= 1;
-	description = "øQuiÈn manda por aquÌ?";
+	description = "¬øQui√©n manda por aqu√≠?";
 };                       
 
 FUNC INT Info_Sld_11_WichtigePersonen_Condition()
@@ -83,9 +83,9 @@ FUNC INT Info_Sld_11_WichtigePersonen_Condition()
 
 FUNC VOID Info_Sld_11_WichtigePersonen_Info()
 {
-	AI_Output(other,self,"Info_Sld_11_WichtigePersonen_15_00"); //øQuiÈn manda por aquÌ?
-	AI_Output(self,other,"Info_Sld_11_WichtigePersonen_11_01"); //Hacemos lo que dicen los magos. Pero por lo general no dicen nada. Se limitan a pasearse junto al montÌculo de mineral y a enterrar las narices en sus libros.
-	AI_Output(self,other,"Info_Sld_11_WichtigePersonen_11_02"); //Fundamentalmente, Lee est· al mando. Es nuestro jefe.
+	AI_Output(other,self,"Info_Sld_11_WichtigePersonen_15_00"); //¬øQui√©n manda por aqu√≠?
+	AI_Output(self,other,"Info_Sld_11_WichtigePersonen_11_01"); //Hacemos lo que dicen los magos. Pero por lo general no dicen nada. Se limitan a pasearse junto al mont√≠culo de mineral y a enterrar las narices en sus libros.
+	AI_Output(self,other,"Info_Sld_11_WichtigePersonen_11_02"); //Fundamentalmente, Lee est√° al mando. Es nuestro jefe.
 	var C_NPC Lee;			Lee		= Hlp_GetNpc(Sld_700_Lee);
 	Lee.aivar[AIV_FINDABLE] = TRUE;
 	var C_NPC Cronos;		Cronos  = Hlp_GetNpc(KdW_604_Cronos);
@@ -102,7 +102,7 @@ INSTANCE Info_Sld_11_DasLager(C_INFO)
 	condition	= Info_Sld_11_DasLager_Condition;
 	information	= Info_Sld_11_DasLager_Info;
 	permanent	= 1;
-	description = "øHay problemas en este campamento?";
+	description = "¬øHay problemas en este campamento?";
 };                       
 
 FUNC INT Info_Sld_11_DasLager_Condition()
@@ -112,8 +112,8 @@ FUNC INT Info_Sld_11_DasLager_Condition()
 
 FUNC VOID Info_Sld_11_DasLager_Info()
 {
-	AI_Output(other,self,"Info_Sld_11_DasLager_15_00"); //øHay problemas en este campamento?
-	AI_Output(self,other,"Info_Sld_11_DasLager_11_01"); //TÌo, siempre hay problemas. Los bandidos hacen lo que les da la gana y los mercenarios tenemos que proteger a los magos y defender el campamento.
+	AI_Output(other,self,"Info_Sld_11_DasLager_15_00"); //¬øHay problemas en este campamento?
+	AI_Output(self,other,"Info_Sld_11_DasLager_11_01"); //T√≠o, siempre hay problemas. Los bandidos hacen lo que les da la gana y los mercenarios tenemos que proteger a los magos y defender el campamento.
 };
 
 // *************************************************************************
@@ -126,7 +126,7 @@ INSTANCE Info_Sld_11_DieLage(C_INFO) // E1
 	condition	= Info_Sld_11_DieLage_Condition;
 	information	= Info_Sld_11_DieLage_Info;
 	permanent	= 1;
-	description = "øEst·s bien?";
+	description = "¬øEst√°s bien?";
 };                       
 
 FUNC INT Info_Sld_11_DieLage_Condition()
@@ -136,10 +136,10 @@ FUNC INT Info_Sld_11_DieLage_Condition()
 
 FUNC VOID Info_Sld_11_DieLage_Info()
 {
-	AI_Output(other,self,"Info_Sld_11_DieLage_15_00"); //øEst·s bien?
-	AI_Output(self,other,"Info_Sld_11_DieLage_11_01"); //Por ahora todo est· tranquilo...
-	AI_Output(other,self,"Info_Sld_11_DieLage_15_02"); //øPor ahora?
-	AI_Output(self,other,"Info_Sld_11_DieLage_11_03"); //Si los bandidos siguen atacando las caravanas de GÛmez, no tardar· mucho en aparecer con su ejÈrcito ante las puertas.
+	AI_Output(other,self,"Info_Sld_11_DieLage_15_00"); //¬øEst√°s bien?
+	AI_Output(self,other,"Info_Sld_11_DieLage_11_01"); //Por ahora todo est√° tranquilo...
+	AI_Output(other,self,"Info_Sld_11_DieLage_15_02"); //¬øPor ahora?
+	AI_Output(self,other,"Info_Sld_11_DieLage_11_03"); //Si los bandidos siguen atacando las caravanas de G√≥mez, no tardar√° mucho en aparecer con su ej√©rcito ante las puertas.
 	AI_Output(self,other,"Info_Sld_11_DieLage_11_04"); //Y eso no va a ser muy divertido.
 };
 
@@ -153,7 +153,7 @@ INSTANCE Info_Sld_11_Krautprobe (C_INFO) // E1
 	condition	= Info_Sld_11_Krautprobe_Condition;
 	information	= Info_Sld_11_Krautprobe_Info;
 	permanent	= 1;
-	description = "øQuieres un poco de hierba del pantano?";
+	description = "¬øQuieres un poco de hierba del pantano?";
 };                       
 
 FUNC INT Info_Sld_11_Krautprobe_Condition()
@@ -167,7 +167,7 @@ FUNC INT Info_Sld_11_Krautprobe_Condition()
 
 FUNC VOID Info_Sld_11_Krautprobe_Info()
 {
-	AI_Output(other,self,"Info_Sld_11_Krautprobe_15_00"); //øQuieres un poco de hierba del pantano?
+	AI_Output(other,self,"Info_Sld_11_Krautprobe_15_00"); //¬øQuieres un poco de hierba del pantano?
 	
 	if ( (Npc_HasItems(other,ItMiJoint_1)>0) || (Npc_HasItems(other,ItMiJoint_2)>0) || (Npc_HasItems(other,ItMiJoint_3)>0) )
 	{
@@ -178,8 +178,8 @@ FUNC VOID Info_Sld_11_Krautprobe_Info()
 		else if (Npc_HasItems(other,ItMiJoint_3))
 		{	B_GiveInvItems(other,self,ItMiJoint_3,1);	 };
 		
-		AI_Output(self,other,"Info_Sld_11_Krautprobe_11_01"); //Claro. AquÌ tienes 10 pepitas.
-		AI_Output(self,other,"Info_Sld_11_Krautprobe_11_02"); //Si consigues m·s, ya sabes...
+		AI_Output(self,other,"Info_Sld_11_Krautprobe_11_01"); //Claro. Aqu√≠ tienes 10 pepitas.
+		AI_Output(self,other,"Info_Sld_11_Krautprobe_11_02"); //Si consigues m√°s, ya sabes...
 		
 		CreateInvItems(self,itminugget,10);
 		B_GiveInvItems(self,other,itminugget,10);
@@ -188,7 +188,7 @@ FUNC VOID Info_Sld_11_Krautprobe_Info()
 	}
 	else
 	{
-		AI_Output (self, other,"Info_Sld_11_Krautprobe_No_Joint_11_00"); //Tr·eme un poco y hablaremos.
+		AI_Output (self, other,"Info_Sld_11_Krautprobe_No_Joint_11_00"); //Tr√°eme un poco y hablaremos.
 	};
 };
 	

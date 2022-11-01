@@ -18,7 +18,7 @@ FUNC int  Tpl_1400_GorNaBar_Exit_Condition()
 
 FUNC VOID  Tpl_1400_GorNaBar_Exit_Info()
 {
-	AI_Output			(self, other,"Tpl_1400_GorNaBar_Exit_Info_09_02"); //¡Que el Durmiente te proteja!
+	AI_Output			(self, other,"Tpl_1400_GorNaBar_Exit_Info_09_02"); //Â¡Que el Durmiente te proteja!
 	AI_StopProcessInfos	( self );
 };
 
@@ -49,16 +49,16 @@ FUNC int  Tpl_1400_GorNaBar_SUGGEST_Condition()
 FUNC void  Tpl_1400_GorNaBar_SUGGEST_Info()
 {
 	AI_Output			(other, self,"Tpl_1400_GorNaBar_SUGGEST_Info_15_01"); //Necesito tu ayuda.
-	AI_Output			(other, self,"Tpl_1400_GorNaBar_SUGGEST_Info_15_02"); //Estoy buscando secreciones para Kalorn y creo que sé dónde se encuentra el nido de reptadores.
-	AI_Output			(other, self,"Tpl_1400_GorNaBar_SUGGEST_Info_15_03"); //Si nos abrimos paso, ¿vendrás con nosotros?
-	AI_Output			(self, other,"Tpl_1400_GorNaBar_SUGGEST_Info_09_04"); //¡El nido de reptadores! ¡Por fin, mi espada está a tu servicio!
+	AI_Output			(other, self,"Tpl_1400_GorNaBar_SUGGEST_Info_15_02"); //Estoy buscando secreciones para Kalorn y creo que sÃ© dÃ³nde se encuentra el nido de reptadores.
+	AI_Output			(other, self,"Tpl_1400_GorNaBar_SUGGEST_Info_15_03"); //Si nos abrimos paso, Â¿vendrÃ¡s con nosotros?
+	AI_Output			(self, other,"Tpl_1400_GorNaBar_SUGGEST_Info_09_04"); //Â¡El nido de reptadores! Â¡Por fin, mi espada estÃ¡ a tu servicio!
 
 	AI_StopProcessInfos	(self);
 	Npc_ExchangeRoutine (self,"GATE"); 
 	Npc_SetPermAttitude (self,ATT_FRIENDLY); 
 	B_GiveXP			(XP_HireGorNaBar);
 
-	B_LogEntry		(CH2_MCEggs,"Al mencionar el nido de los reptadores de la mina, el templario Gor Na Bar se ha unido a mis refuerzos en la puerta de Asghan. Allí lo encontraré.");
+	B_LogEntry		(CH2_MCEggs,"Al mencionar el nido de los reptadores de la mina, el templario Gor Na Bar se ha unido a mis refuerzos en la puerta de Asghan. AllÃ­ lo encontrarÃ©.");
 };
 
 // ***************** Infos *****************************
@@ -70,7 +70,7 @@ instance  Tpl_1400_GorNaBar_INFO (C_INFO)
 	information		= Tpl_1400_GorNaBar_INFO_Info;
 	important		= 0;
 	permanent		= 1;
-	description		= "¿Qué sabes de los reptadores de la mina?";
+	description		= "Â¿QuÃ© sabes de los reptadores de la mina?";
 };
 
 FUNC int  Tpl_1400_GorNaBar_INFO_Condition()
@@ -83,8 +83,8 @@ FUNC int  Tpl_1400_GorNaBar_INFO_Condition()
 
 FUNC void  Tpl_1400_GorNaBar_INFO_Info()
 {
-	AI_Output			(other, self,"Tpl_1400_GorNaBar_INFO_Info_15_01"); //¿Qué sabes acerca de los reptadores de la mina?
-	AI_Output			(self, other,"Tpl_1400_GorNaBar_INFO_Info_09_02"); //Los reptadores deben tener un nido en alguna parte. ¡Si supiéramos dónde, podríamos destruir a toda la nidada!
+	AI_Output			(other, self,"Tpl_1400_GorNaBar_INFO_Info_15_01"); //Â¿QuÃ© sabes acerca de los reptadores de la mina?
+	AI_Output			(self, other,"Tpl_1400_GorNaBar_INFO_Info_09_02"); //Los reptadores deben tener un nido en alguna parte. Â¡Si supiÃ©ramos dÃ³nde, podrÃ­amos destruir a toda la nidada!
 };    
 
 
@@ -96,7 +96,7 @@ instance  Tpl_1400_GorNaBar_VICTORY (C_INFO)
 	information		= Tpl_1400_GorNaBar_VICTORY_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "¡He encontrado el nido de la reina!"; 
+	description		= "Â¡He encontrado el nido de la reina!"; 
 };
 
 FUNC int  Tpl_1400_GorNaBar_VICTORY_Condition()
@@ -109,9 +109,9 @@ FUNC int  Tpl_1400_GorNaBar_VICTORY_Condition()
 };
 FUNC void  Tpl_1400_GorNaBar_VICTORY_Info()
 {
-	AI_Output			(other, self,"Tpl_1400_GorNaBar_VICTORY_Info_15_01"); //¡He encontrado el nido de la reina!
-	AI_Output			(self, other,"Tpl_1400_GorNaBar_VICTORY_Info_09_02"); //Has demostrado poseer espíritu y coraje. ¡Necesitamos gente como tú!
+	AI_Output			(other, self,"Tpl_1400_GorNaBar_VICTORY_Info_15_01"); //Â¡He encontrado el nido de la reina!
+	AI_Output			(self, other,"Tpl_1400_GorNaBar_VICTORY_Info_09_02"); //Has demostrado poseer espÃ­ritu y coraje. Â¡Necesitamos gente como tÃº!
 	
 	Log_CreateTopic (GE_BecomeTemplar,LOG_NOTE);
-	B_LogEntry (GE_BecomeTemplar,"Después de traer los huevos, debo hablar con Cor Angar. Quizá él me permita unirme a los templarios.");
+	B_LogEntry (GE_BecomeTemplar,"DespuÃ©s de traer los huevos, debo hablar con Cor Angar. QuizÃ¡ Ã©l me permita unirme a los templarios.");
 };  

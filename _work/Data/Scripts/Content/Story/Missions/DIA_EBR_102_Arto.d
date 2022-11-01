@@ -33,7 +33,7 @@ INSTANCE DIA_ARTO_Hello (C_INFO)
 	condition	= DIA_ARTO_Hello_Condition;
 	information	= DIA_ARTO_Hello_Info;
 	permanent	= 0;
-	description = "¿Quién eres?";
+	description = "Â¿QuiÃ©n eres?";
 };                       
 
 FUNC INT DIA_ARTO_Hello_Condition()
@@ -43,7 +43,7 @@ FUNC INT DIA_ARTO_Hello_Condition()
 
 FUNC VOID DIA_ARTO_Hello_Info()
 {	
-	AI_Output (other, self,"DIA_ARTO_Hello_15_00"); //¿Quién eres?
+	AI_Output (other, self,"DIA_ARTO_Hello_15_00"); //Â¿QuiÃ©n eres?
 	AI_Output (self, other,"DIA_ARTO_Hello_13_01"); //Soy Arto.
 };
 
@@ -58,7 +58,7 @@ INSTANCE DIA_ARTO_What (C_INFO)
 	condition	= DIA_ARTO_What_Condition;
 	information	= DIA_ARTO_What_Info;
 	permanent	= 0;
-	description = "¿Qué haces aquí?";
+	description = "Â¿QuÃ© haces aquÃ­?";
 };                       
 
 FUNC INT DIA_ARTO_What_Condition()
@@ -71,8 +71,8 @@ FUNC INT DIA_ARTO_What_Condition()
 
 FUNC VOID DIA_ARTO_What_Info()
 {	
-	AI_Output (other, self,"DIA_ARTO_What_15_00"); //¿Qué haces aquí?
-	AI_Output (self, other,"DIA_ARTO_What_13_01"); //Soy el guardaespaldas de Gómez.
+	AI_Output (other, self,"DIA_ARTO_What_15_00"); //Â¿QuÃ© haces aquÃ­?
+	AI_Output (self, other,"DIA_ARTO_What_13_01"); //Soy el guardaespaldas de GÃ³mez.
 };
 
 // ************************************************************
@@ -86,7 +86,7 @@ INSTANCE DIA_ARTO_PERM (C_INFO)
 	condition	= DIA_ARTO_PERM_Condition;
 	information	= DIA_ARTO_PERM_Info;
 	permanent	= 1;
-	description = "No hablas mucho, ¿verdad?";
+	description = "No hablas mucho, Â¿verdad?";
 };                       
 
 FUNC INT DIA_ARTO_PERM_Condition()
@@ -99,7 +99,7 @@ FUNC INT DIA_ARTO_PERM_Condition()
 
 FUNC VOID DIA_ARTO_PERM_Info()
 {	
-	AI_Output (other, self,"DIA_ARTO_PERM_15_00"); //No hablas mucho, ¿verdad?
+	AI_Output (other, self,"DIA_ARTO_PERM_15_00"); //No hablas mucho, Â¿verdad?
 	AI_Output (self, other,"DIA_ARTO_PERM_13_01"); //No.
 };
 

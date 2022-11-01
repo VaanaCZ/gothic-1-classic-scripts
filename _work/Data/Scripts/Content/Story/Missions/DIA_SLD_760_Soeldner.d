@@ -21,7 +21,7 @@ FUNC int DIA_SLD_760_Soeldner_INTRO_CONDITION()
 
 func void DIA_SLD_760_Soeldner_INTRO_INFO()
 {
-	AI_Output (self, other,"DIA_SLD_760_Soeldner_INTRO_INFO_13_01"); //¿Qué andas buscando? Deja que te diga una cosa: mantén las manos alejadas de la puerta.
+	AI_Output (self, other,"DIA_SLD_760_Soeldner_INTRO_INFO_13_01"); //Â¿QuÃ© andas buscando? Deja que te diga una cosa: mantÃ©n las manos alejadas de la puerta.
 };
 
 //-------------------- Exit 1 -----------------------------
@@ -34,7 +34,7 @@ instance DIA_SLD_760_Soeldner_EXIT_1 (C_INFO)
 	information		= DIA_SLD_760_Soeldner_EXIT_1_INFO;
 	important		= 0;
 	permanent		= 0;
-	description 	= "Será mejor que me marche.";
+	description 	= "SerÃ¡ mejor que me marche.";
 };
 
 FUNC int DIA_SLD_760_Soeldner_EXIT_1_CONDITION()
@@ -44,7 +44,7 @@ FUNC int DIA_SLD_760_Soeldner_EXIT_1_CONDITION()
 
 func void DIA_SLD_760_Soeldner_EXIT_1_INFO()
 {
-	AI_Output (other, self,"DIA_SLD_760_Soeldner_EXIT_1_INFO_15_01"); //Será mejor que me vaya.
+	AI_Output (other, self,"DIA_SLD_760_Soeldner_EXIT_1_INFO_15_01"); //SerÃ¡ mejor que me vaya.
 	AI_Output (self, other,"DIA_SLD_760_Soeldner_EXIT_1_INFO_13_02");//Espero que nos entendamos.
 	AI_StopProcessInfos	( self );
 };
@@ -86,7 +86,7 @@ instance DIA_SLD_760_Soeldner_UMSEHEN (C_INFO)
 	information		= DIA_SLD_760_Soeldner_UMSEHEN_INFO;
 	important		= 0;
 	permanent		= 0;
-	description 	= "Simplemente me gustaría echar un vistazo.";
+	description 	= "Simplemente me gustarÃ­a echar un vistazo.";
 };
 
 FUNC int DIA_SLD_760_Soeldner_UMSEHEN_CONDITION()
@@ -96,7 +96,7 @@ FUNC int DIA_SLD_760_Soeldner_UMSEHEN_CONDITION()
 
 func void DIA_SLD_760_Soeldner_UMSEHEN_INFO()
 {
-	AI_Output (other, self,"DIA_SLD_760_Soeldner_UMSEHEN_INFO_15_01"); //Me gustaría echar un vistazo por aquí.
+	AI_Output (other, self,"DIA_SLD_760_Soeldner_UMSEHEN_INFO_15_01"); //Me gustarÃ­a echar un vistazo por aquÃ­.
 	AI_Output (self, other,"DIA_SLD_760_Soeldner_UMSEHEN_INFO_13_02");//Entonces no saques las manos de los bolsillos o te las corto.
 };
 
@@ -121,20 +121,20 @@ FUNC int DIA_SLD_760_Soeldner_INMINE_CONDITION()
 func void DIA_SLD_760_Soeldner_INMINE_INFO()
 {
 	AI_Output (other, self,"DIA_SLD_760_Soeldner_INMINE_INFO_15_01"); //Quiero entrar en la mina.
-	AI_Output (self, other,"DIA_SLD_760_Soeldner_INMINE_INFO_13_02");//¿En la mina? No dejo entrar a nadie en la mina sin el permiso expreso de Okyl.
+	AI_Output (self, other,"DIA_SLD_760_Soeldner_INMINE_INFO_13_02");//Â¿En la mina? No dejo entrar a nadie en la mina sin el permiso expreso de Okyl.
 
 	if	(!Npc_KnowsInfo	(hero, DIA_SLD_752_OKYL_WERBISTDU))
 	{
-		AI_Output (other, self,"DIA_SLD_760_Soeldner_INMINE_INFO_15_03");//¿Quién es Okyl?
+		AI_Output (other, self,"DIA_SLD_760_Soeldner_INMINE_INFO_15_03");//Â¿QuiÃ©n es Okyl?
 	}
 	else
 	{
-		AI_Output (other, self,"DIA_SLD_760_Soeldner_INMINE_INFO_15_08");//¿Okyl? ¿No es ese que lleva un pedazo de hacha y una armadura pesada?
+		AI_Output (other, self,"DIA_SLD_760_Soeldner_INMINE_INFO_15_08");//Â¿Okyl? Â¿No es ese que lleva un pedazo de hacha y una armadura pesada?
 	};
 	AI_Output (self, other,"DIA_SLD_760_Soeldner_INMINE_INFO_13_04");//Cuidadito con lo que dices de nuestro jefe.
-	AI_Output (self, other,"DIA_SLD_760_Soeldner_INMINE_INFO_13_05");//Déjame que te cuente una cosa sobre Okyl; es el tipo más duro de todo el Campamento. Una vez incluso se coló en el Campamento Viejo y le robó un montón de mineral a los Magnates.
-	AI_Output (self, other,"DIA_SLD_760_Soeldner_INMINE_INFO_13_06");//Así que muestra un poco más de respeto, por favor.
-	AI_Output (self, other,"DIA_SLD_760_Soeldner_INMINE_INFO_13_07");//No sé dónde está, pero si le ves deberías tener presente esa historia.
+	AI_Output (self, other,"DIA_SLD_760_Soeldner_INMINE_INFO_13_05");//DÃ©jame que te cuente una cosa sobre Okyl; es el tipo mÃ¡s duro de todo el Campamento. Una vez incluso se colÃ³ en el Campamento Viejo y le robÃ³ un montÃ³n de mineral a los Magnates.
+	AI_Output (self, other,"DIA_SLD_760_Soeldner_INMINE_INFO_13_06");//AsÃ­ que muestra un poco mÃ¡s de respeto, por favor.
+	AI_Output (self, other,"DIA_SLD_760_Soeldner_INMINE_INFO_13_07");//No sÃ© dÃ³nde estÃ¡, pero si le ves deberÃ­as tener presente esa historia.
 };
 
 

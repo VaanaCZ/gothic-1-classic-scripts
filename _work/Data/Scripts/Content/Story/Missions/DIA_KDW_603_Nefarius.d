@@ -33,7 +33,7 @@ instance  Info_Nefarius_Hallo (C_INFO)
 	condition	=	Info_Nefarius_Hallo_Condition;
 	information	=	Info_Nefarius_Hallo_Info;
 	permanent	=	0;
-	description =	"¿Quién eres?";
+	description =	"Â¿QuiÃ©n eres?";
 };                       
 
 FUNC int  Info_Nefarius_Hallo_Condition()
@@ -43,8 +43,8 @@ FUNC int  Info_Nefarius_Hallo_Condition()
 
 FUNC VOID  Info_Nefarius_Hallo_Info()
 {
-	AI_Output (other, self,"Info_Nefarius_Hallo_15_00"); //¿Quién eres?
-	AI_Output (self, other,"Info_Nefarius_Hallo_04_01"); //Yo soy Nefarius. Mago del Círculo del Agua.
+	AI_Output (other, self,"Info_Nefarius_Hallo_15_00"); //Â¿QuiÃ©n eres?
+	AI_Output (self, other,"Info_Nefarius_Hallo_04_01"); //Yo soy Nefarius. Mago del CÃ­rculo del Agua.
 };
 
 // **************************** 
@@ -58,7 +58,7 @@ instance  Info_Nefarius_WoSaturas (C_INFO)
 	condition	=	Info_Nefarius_WoSaturas_Condition;
 	information	=	Info_Nefarius_WoSaturas_Info;
 	permanent	=	0;
-	description =	"¿Dónde puedo encontrar a Saturas?";
+	description =	"Â¿DÃ³nde puedo encontrar a Saturas?";
 };                       
 
 FUNC int  Info_Nefarius_WoSaturas_Condition()
@@ -68,8 +68,8 @@ FUNC int  Info_Nefarius_WoSaturas_Condition()
 
 FUNC VOID  Info_Nefarius_WoSaturas_Info()
 {
-	AI_Output (other, self,"Info_Nefarius_WoSaturas_15_00"); //¿Dónde puedo encontrar a Saturas?
-	AI_Output (self, other,"Info_Nefarius_WoSaturas_04_01"); //Atraviesa el gran portal circular. Allí le encontrarás.
+	AI_Output (other, self,"Info_Nefarius_WoSaturas_15_00"); //Â¿DÃ³nde puedo encontrar a Saturas?
+	AI_Output (self, other,"Info_Nefarius_WoSaturas_04_01"); //Atraviesa el gran portal circular. AllÃ­ le encontrarÃ¡s.
 };
 
 // **************************** 
@@ -83,7 +83,7 @@ instance  Info_Nefarius_WannaMage (C_INFO)
 	condition	=	Info_Nefarius_WannaMage_Condition;
 	information	=	Info_Nefarius_WannaMage_Info;
 	permanent	=	0;
-	description =	"¡Me gustaría convertirme en Mago del Círculo del Agua!";
+	description =	"Â¡Me gustarÃ­a convertirme en Mago del CÃ­rculo del Agua!";
 };                       
 
 FUNC int  Info_Nefarius_WannaMage_Condition()
@@ -96,12 +96,12 @@ FUNC int  Info_Nefarius_WannaMage_Condition()
 
 FUNC VOID  Info_Nefarius_WannaMage_Info()
 {
-	AI_Output (other, self,"Info_Nefarius_WannaMage_15_00"); //¡Me gustaría convertirme en Mago del Círculo del Agua!
-	AI_Output (self, other,"Info_Nefarius_WannaMage_04_01"); //(Se ríe) ¡No tan deprisa, muchacho!
+	AI_Output (other, self,"Info_Nefarius_WannaMage_15_00"); //Â¡Me gustarÃ­a convertirme en Mago del CÃ­rculo del Agua!
+	AI_Output (self, other,"Info_Nefarius_WannaMage_04_01"); //(Se rÃ­e) Â¡No tan deprisa, muchacho!
 	AI_Output (self, other,"Info_Nefarius_WannaMage_04_02"); //Para que permitamos que un muchacho se una a nosotros, primero tiene que haber hecho algo grande.
-	AI_Output (self, other,"Info_Nefarius_WannaMage_04_03"); //Y tiene que habernos servido durante algún tiempo.
-	AI_Output (self, other,"Info_Nefarius_WannaMage_04_04"); //Si vas totalmente en serio, deberías unirte a nuestros mercenarios. Así podrás servirnos.
-	AI_Output (self, other,"Info_Nefarius_WannaMage_04_05"); //Y tal vez un día se te conceda la oportunidad de hacer algo grande.
+	AI_Output (self, other,"Info_Nefarius_WannaMage_04_03"); //Y tiene que habernos servido durante algÃºn tiempo.
+	AI_Output (self, other,"Info_Nefarius_WannaMage_04_04"); //Si vas totalmente en serio, deberÃ­as unirte a nuestros mercenarios. AsÃ­ podrÃ¡s servirnos.
+	AI_Output (self, other,"Info_Nefarius_WannaMage_04_05"); //Y tal vez un dÃ­a se te conceda la oportunidad de hacer algo grande.
 };
 
 // **************************** 
@@ -115,7 +115,7 @@ instance  Info_Nefarius_NowReady (C_INFO)
 	condition	=	Info_Nefarius_NowReady_Condition;
 	information	=	Info_Nefarius_NowReady_Info;
 	permanent	=	1;
-	description =	"¿Estoy listo para el Círculo del Agua?";
+	description =	"Â¿Estoy listo para el CÃ­rculo del Agua?";
 };                       
 
 FUNC int  Info_Nefarius_NowReady_Condition()
@@ -128,16 +128,16 @@ FUNC int  Info_Nefarius_NowReady_Condition()
 
 FUNC VOID  Info_Nefarius_NowReady_Info()
 {
-	AI_Output (other, self,"Info_Nefarius_NowReady_15_00"); //¿Estoy preparado para el Círculo del Agua?
+	AI_Output (other, self,"Info_Nefarius_NowReady_15_00"); //Â¿Estoy preparado para el CÃ­rculo del Agua?
 	
 	if (Npc_GetTrueGuild (hero) != GIL_SLD) 
 	{
-		AI_Output (self, other,"Info_Nefarius_NowReady_04_01"); //Únete a nuestros mercenarios y ya veremos.
+		AI_Output (self, other,"Info_Nefarius_NowReady_04_01"); //Ãšnete a nuestros mercenarios y ya veremos.
 	}
 	else
 	{
 		AI_Output (self, other,"Info_Nefarius_NowReady_04_02"); //Ya veo que te has unido a nuestros mercenarios. Excelente, excelente.
-		AI_Output (self, other,"Info_Nefarius_NowReady_04_03"); //El tiempo hará el resto.
+		AI_Output (self, other,"Info_Nefarius_NowReady_04_03"); //El tiempo harÃ¡ el resto.
 	};
 };
 
@@ -172,15 +172,15 @@ FUNC int  Info_Nefarius_OCNews_Condition()
 
 FUNC VOID  Info_Nefarius_OCNews_Info()
 {
-	AI_Output (self, other,"Info_Nefarius_OCNews_04_00"); //¿Hay alguna noticia de nuestros amigos del Campamento Viejo?
-	AI_Output (other, self,"Info_Nefarius_OCNews_15_01"); //¡Gómez ha hecho asesinar a todos los Magos del Fuego!
-	AI_Output (self, other,"Info_Nefarius_OCNews_04_02"); //¡No! ¡El muy cretino! ¡Ya le dije a Corristo que no era de fiar! ¡Debes informar de ello a Saturas!
+	AI_Output (self, other,"Info_Nefarius_OCNews_04_00"); //Â¿Hay alguna noticia de nuestros amigos del Campamento Viejo?
+	AI_Output (other, self,"Info_Nefarius_OCNews_15_01"); //Â¡GÃ³mez ha hecho asesinar a todos los Magos del Fuego!
+	AI_Output (self, other,"Info_Nefarius_OCNews_04_02"); //Â¡No! Â¡El muy cretino! Â¡Ya le dije a Corristo que no era de fiar! Â¡Debes informar de ello a Saturas!
 	if (Npc_GetTrueGuild(hero)==GIL_SLD)
 	{
-		AI_Output (self, other,"Info_Nefarius_OCNews_04_03"); //¡Espera!
+		AI_Output (self, other,"Info_Nefarius_OCNews_04_03"); //Â¡Espera!
 		AI_Output (self, other,"Info_Nefarius_OCNews_04_04"); //Te has enfrentado a grandes peligros en nuestro nombre.
-		AI_Output (self, other,"Info_Nefarius_OCNews_04_05"); //Creo que ya estás preparado para vestir la túnica de un Mago del Agua.
-		AI_Output (self, other,"Info_Nefarius_OCNews_04_06"); //¡Pero ahora ve a hablar con Saturas! ¡Date prisa!
+		AI_Output (self, other,"Info_Nefarius_OCNews_04_05"); //Creo que ya estÃ¡s preparado para vestir la tÃºnica de un Mago del Agua.
+		AI_Output (self, other,"Info_Nefarius_OCNews_04_06"); //Â¡Pero ahora ve a hablar con Saturas! Â¡Date prisa!
 	};
 	AI_StopProcessInfos	(self);
 };

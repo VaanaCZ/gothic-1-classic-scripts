@@ -37,7 +37,7 @@ INSTANCE Info_Org_6_EinerVonEuchWerden (C_INFO) // E1
 	condition	= Info_Org_6_EinerVonEuchWerden_Condition;
 	information	= Info_Org_6_EinerVonEuchWerden_Info;
 	permanent	= 1;
-	description = "¡Quiero unirme a vosotros!";
+	description = "Â¡Quiero unirme a vosotros!";
 };                       
 
 FUNC INT Info_Org_6_EinerVonEuchWerden_Condition()
@@ -50,11 +50,11 @@ FUNC INT Info_Org_6_EinerVonEuchWerden_Condition()
 
 FUNC VOID Info_Org_6_EinerVonEuchWerden_Info()
 {
-	AI_Output(other,self,"Info_Org_6_EinerVonEuchWerden_15_00"); //¡Quiero unirme a vosotros!
-	AI_Output(self,other,"Info_Org_6_EinerVonEuchWerden_06_01"); //Lares decide quién se une a la banda.
-	AI_Output(self,other,"Info_Org_6_EinerVonEuchWerden_06_02"); //Pero necesitarás un buen motivo si quieres verlo.
-	AI_Output(other,self,"Info_Org_6_EinerVonEuchWerden_15_03"); //¿Como cuál?
-	AI_Output(self,other,"Info_Org_6_EinerVonEuchWerden_06_04"); //Como alguien que te envíe ante él.
+	AI_Output(other,self,"Info_Org_6_EinerVonEuchWerden_15_00"); //Â¡Quiero unirme a vosotros!
+	AI_Output(self,other,"Info_Org_6_EinerVonEuchWerden_06_01"); //Lares decide quiÃ©n se une a la banda.
+	AI_Output(self,other,"Info_Org_6_EinerVonEuchWerden_06_02"); //Pero necesitarÃ¡s un buen motivo si quieres verlo.
+	AI_Output(other,self,"Info_Org_6_EinerVonEuchWerden_15_03"); //Â¿Como cuÃ¡l?
+	AI_Output(self,other,"Info_Org_6_EinerVonEuchWerden_06_04"); //Como alguien que te envÃ­e ante Ã©l.
 	var C_NPC Lares;		Lares	= Hlp_GetNpc(Org_801_Lares);
 	Lares.aivar[AIV_FINDABLE] = TRUE;
 };
@@ -69,7 +69,7 @@ INSTANCE Info_Org_6_WichtigePersonen(C_INFO)
 	condition	= Info_Org_6_WichtigePersonen_Condition;
 	information	= Info_Org_6_WichtigePersonen_Info;
 	permanent	= 1;
-	description = "¿Quién es el jefe?";
+	description = "Â¿QuiÃ©n es el jefe?";
 };                       
 
 FUNC INT Info_Org_6_WichtigePersonen_Condition()
@@ -79,10 +79,10 @@ FUNC INT Info_Org_6_WichtigePersonen_Condition()
 
 FUNC VOID Info_Org_6_WichtigePersonen_Info()
 {
-	AI_Output(other,self,"Info_Org_6_WichtigePersonen_15_00"); //¿Quién es el jefe?
-	AI_Output(self,other,"Info_Org_6_WichtigePersonen_06_01"); //Acabas de llegar del Campamento Viejo, ¿eh?
-	AI_Output(self,other,"Info_Org_6_WichtigePersonen_06_02"); //Aquí nadie es el jefe. Ese maldito Lee sigue intentando mantenernos controlados, pero hacemos lo que nos parece.
-	AI_Output(self,other,"Info_Org_6_WichtigePersonen_06_03"); //Si tuviéramos jefe, sería Lares. ¡Pero es lo bastante inteligente como para no meterse en los asuntos de los demás!
+	AI_Output(other,self,"Info_Org_6_WichtigePersonen_15_00"); //Â¿QuiÃ©n es el jefe?
+	AI_Output(self,other,"Info_Org_6_WichtigePersonen_06_01"); //Acabas de llegar del Campamento Viejo, Â¿eh?
+	AI_Output(self,other,"Info_Org_6_WichtigePersonen_06_02"); //AquÃ­ nadie es el jefe. Ese maldito Lee sigue intentando mantenernos controlados, pero hacemos lo que nos parece.
+	AI_Output(self,other,"Info_Org_6_WichtigePersonen_06_03"); //Si tuviÃ©ramos jefe, serÃ­a Lares. Â¡Pero es lo bastante inteligente como para no meterse en los asuntos de los demÃ¡s!
 	var C_NPC Lee;			Lee		= Hlp_GetNpc(Sld_700_Lee);
 	Lee.aivar[AIV_FINDABLE] = TRUE;
 	var C_NPC Lares;		Lares	= Hlp_GetNpc(Org_801_Lares);
@@ -99,7 +99,7 @@ INSTANCE Info_Org_6_DasLager(C_INFO)
 	condition	= Info_Org_6_DasLager_Condition;
 	information	= Info_Org_6_DasLager_Info;
 	permanent	= 1;
-	description = "¿Hay algo que deba saber de este lugar?";
+	description = "Â¿Hay algo que deba saber de este lugar?";
 };                       
 
 FUNC INT Info_Org_6_DasLager_Condition()
@@ -109,9 +109,9 @@ FUNC INT Info_Org_6_DasLager_Condition()
 
 FUNC VOID Info_Org_6_DasLager_Info()
 {
-	AI_Output(other,self,"Info_Org_6_DasLager_15_00"); //¿Hay algo que deba saber de este lugar?
-	AI_Output(self,other,"Info_Org_6_DasLager_06_01"); //En mitad de la cueva hay un enorme agujero lleno de mineral. Si tienes pensado echar mano de él... ¡Olvídalo!
-	AI_Output(self,other,"Info_Org_6_DasLager_06_02"); //Yo lo intenté en una ocasión, pero los mercenarios montan guardia de día y de noche.
+	AI_Output(other,self,"Info_Org_6_DasLager_15_00"); //Â¿Hay algo que deba saber de este lugar?
+	AI_Output(self,other,"Info_Org_6_DasLager_06_01"); //En mitad de la cueva hay un enorme agujero lleno de mineral. Si tienes pensado echar mano de Ã©l... Â¡OlvÃ­dalo!
+	AI_Output(self,other,"Info_Org_6_DasLager_06_02"); //Yo lo intentÃ© en una ocasiÃ³n, pero los mercenarios montan guardia de dÃ­a y de noche.
 };
 
 // *************************************************************************
@@ -124,7 +124,7 @@ INSTANCE Info_Org_6_DieLage(C_INFO) // E1
 	condition	= Info_Org_6_DieLage_Condition;
 	information	= Info_Org_6_DieLage_Info;
 	permanent	= 1;
-	description = "¿Qué tal estás?";
+	description = "Â¿QuÃ© tal estÃ¡s?";
 };                       
 
 FUNC INT Info_Org_6_DieLage_Condition()
@@ -134,9 +134,9 @@ FUNC INT Info_Org_6_DieLage_Condition()
 
 FUNC VOID Info_Org_6_DieLage_Info()
 {
-	AI_Output(other,self,"Info_Org_6_DieLage_15_00"); //¿Qué tal estás?
-	AI_Output(self,other,"Info_Org_6_DieLage_06_01"); //¡Tío! ¿Y tú qué crees? Comiendo arroz todo el día y esperando la oportunidad para conseguir un poco de mineral.
-	AI_Output(self,other,"Info_Org_6_DieLage_06_02"); //¡Y después al bar, a ponerme hasta las cejas de aguardiente de arroz!
+	AI_Output(other,self,"Info_Org_6_DieLage_15_00"); //Â¿QuÃ© tal estÃ¡s?
+	AI_Output(self,other,"Info_Org_6_DieLage_06_01"); //Â¡TÃ­o! Â¿Y tÃº quÃ© crees? Comiendo arroz todo el dÃ­a y esperando la oportunidad para conseguir un poco de mineral.
+	AI_Output(self,other,"Info_Org_6_DieLage_06_02"); //Â¡Y despuÃ©s al bar, a ponerme hasta las cejas de aguardiente de arroz!
 };
 
 // *************************************************************************
@@ -149,7 +149,7 @@ INSTANCE Info_Org_6_Krautprobe (C_INFO) // E1
 	condition	= Info_Org_6_Krautprobe_Condition;
 	information	= Info_Org_6_Krautprobe_Info;
 	permanent	= 1;
-	description = "Tengo un poco de hierba del pantano. ¿Quieres?";
+	description = "Tengo un poco de hierba del pantano. Â¿Quieres?";
 };                       
 
 FUNC INT Info_Org_6_Krautprobe_Condition()
@@ -163,7 +163,7 @@ FUNC INT Info_Org_6_Krautprobe_Condition()
 
 FUNC VOID Info_Org_6_Krautprobe_Info()
 {
-	AI_Output(other,self,"Info_Org_6_Krautprobe_15_00"); //Tengo un poco de hierba del pantano. ¿Quieres?
+	AI_Output(other,self,"Info_Org_6_Krautprobe_15_00"); //Tengo un poco de hierba del pantano. Â¿Quieres?
 	
 	if ( (Npc_HasItems(other,ItMiJoint_1)>0) || (Npc_HasItems(other,ItMiJoint_2)>0) || (Npc_HasItems(other,ItMiJoint_3)>0) )
 	{
@@ -174,8 +174,8 @@ FUNC VOID Info_Org_6_Krautprobe_Info()
 		else if (Npc_HasItems(other,ItMiJoint_3))
 		{	B_GiveInvItems(other,self,ItMiJoint_3,1);	 };
 		
-		AI_Output(self,other,"Info_Org_6_Krautprobe_06_01"); //Claro. Aquí tienes 10 pepitas.
-		AI_Output(self,other,"Info_Org_6_Krautprobe_06_02"); //Vuelve cuando consigas más, ¿vale?
+		AI_Output(self,other,"Info_Org_6_Krautprobe_06_01"); //Claro. AquÃ­ tienes 10 pepitas.
+		AI_Output(self,other,"Info_Org_6_Krautprobe_06_02"); //Vuelve cuando consigas mÃ¡s, Â¿vale?
 		
 		CreateInvItems(self,itminugget,10);
 		B_GiveInvItems(self,other,itminugget,10);
@@ -184,7 +184,7 @@ FUNC VOID Info_Org_6_Krautprobe_Info()
 	}
 	else
 	{
-		AI_Output (self, other,"Info_Org_6_Krautprobe_No_Joint_06_00"); //¿Dónde? No veo hierba.
+		AI_Output (self, other,"Info_Org_6_Krautprobe_No_Joint_06_00"); //Â¿DÃ³nde? No veo hierba.
 	};
 };
 	

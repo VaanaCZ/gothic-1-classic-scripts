@@ -33,7 +33,7 @@ instance DIA_846_Hello (C_INFO)
 	condition	= DIA_846_Hello_Condition;
 	information	= DIA_846_Hello_Info;
 	permanent	= 0;
-	description	= "¿Qué estás haciendo aquí?";
+	description	= "Â¿QuÃ© estÃ¡s haciendo aquÃ­?";
 };                       
 
 FUNC int DIA_846_Hello_Condition()
@@ -43,12 +43,12 @@ FUNC int DIA_846_Hello_Condition()
 
 FUNC VOID DIA_846_Hello_Info()
 {
-	AI_Output (other, self,"DIA_846_Hello_15_00"); //¿Qué estás haciendo aquí?
-	AI_Output (self, other,"DIA_846_Hello_07_01"); //Trabajo para el Señor del Arroz.
+	AI_Output (other, self,"DIA_846_Hello_15_00"); //Â¿QuÃ© estÃ¡s haciendo aquÃ­?
+	AI_Output (self, other,"DIA_846_Hello_07_01"); //Trabajo para el SeÃ±or del Arroz.
 	
 	var C_NPC Lefty; Lefty = Hlp_GetNpc (Org_844_Lefty);
 	if (!Npc_IsDead(Lefty))
 	{
-		AI_Output (self, other,"DIA_846_Hello_07_02"); //Si necesitas algo, díselo a Lefty.
+		AI_Output (self, other,"DIA_846_Hello_07_02"); //Si necesitas algo, dÃ­selo a Lefty.
 	};
 };

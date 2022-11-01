@@ -49,16 +49,16 @@ FUNC int Info_Pacho_STOP_Condition()
 
 func void Info_Pacho_STOP_Info()
 {
-	AI_Output			(self, hero,"Info_Pacho_STOP_13_01"); //¡Eh, tú!
-	AI_Output			(hero, self,"Info_Pacho_STOP_15_02"); //¿Quién? ¿Yo?
-	AI_Output			(self, hero,"Info_Pacho_STOP_13_03"); //No, tu abuela... ¿A quién más podría referirme?
-	AI_Output			(self, hero,"Info_Pacho_STOP_13_04"); //¡Si estuviese en tu lugar, no iría por ese camino!
-	AI_Output			(hero, self,"Info_Pacho_STOP_15_05"); //¿Por qué no?
-	AI_Output			(self, hero,"Info_Pacho_STOP_13_06"); //¡No llevas mucho tiempo por aquí!
-	AI_Output			(self, hero,"Info_Pacho_STOP_13_07"); //Tío, ése es el camino hacia el territorio orco.
-	AI_Output			(self, hero,"Info_Pacho_STOP_13_08"); //¡Te harán picadillo!
+	AI_Output			(self, hero,"Info_Pacho_STOP_13_01"); //Â¡Eh, tÃº!
+	AI_Output			(hero, self,"Info_Pacho_STOP_15_02"); //Â¿QuiÃ©n? Â¿Yo?
+	AI_Output			(self, hero,"Info_Pacho_STOP_13_03"); //No, tu abuela... Â¿A quiÃ©n mÃ¡s podrÃ­a referirme?
+	AI_Output			(self, hero,"Info_Pacho_STOP_13_04"); //Â¡Si estuviese en tu lugar, no irÃ­a por ese camino!
+	AI_Output			(hero, self,"Info_Pacho_STOP_15_05"); //Â¿Por quÃ© no?
+	AI_Output			(self, hero,"Info_Pacho_STOP_13_06"); //Â¡No llevas mucho tiempo por aquÃ­!
+	AI_Output			(self, hero,"Info_Pacho_STOP_13_07"); //TÃ­o, Ã©se es el camino hacia el territorio orco.
+	AI_Output			(self, hero,"Info_Pacho_STOP_13_08"); //Â¡Te harÃ¡n picadillo!
 	AI_Output			(hero, self,"Info_Pacho_STOP_15_09"); //Oh.
-	AI_Output			(self, hero,"Info_Pacho_STOP_13_10"); //¡Tú mismo!
+	AI_Output			(self, hero,"Info_Pacho_STOP_13_10"); //Â¡TÃº mismo!
 
 	AI_StopProcessInfos	(self);
 };

@@ -33,7 +33,7 @@ INSTANCE DIA_Melvin_Hello (C_INFO)
 	condition		= DIA_Melvin_Hello_Condition;
 	information		= DIA_Melvin_Hello_Info;
 	permanent		= 0;
-	description		= "¡Hola! No eres de este campamento, ¿verdad?";
+	description		= "Â¡Hola! No eres de este campamento, Â¿verdad?";
 };
 
 FUNC INT DIA_Melvin_Hello_Condition()
@@ -43,12 +43,12 @@ FUNC INT DIA_Melvin_Hello_Condition()
 
 FUNC VOID DIA_Melvin_Hello_Info()
 {
-	AI_Output (other, self,"DIA_Melvin_Hello_15_00"); //¡Hola! Tú no eres de este campamento, ¿verdad?
-	AI_Output (self, other,"DIA_Melvin_Hello_03_01"); //¡Bueno, ahora sí lo soy! Abandoné el Campamento Viejo hace una semana. Le dije a mi amigo Dusty que viniera conmigo, pero prefirió esperar.
+	AI_Output (other, self,"DIA_Melvin_Hello_15_00"); //Â¡Hola! TÃº no eres de este campamento, Â¿verdad?
+	AI_Output (self, other,"DIA_Melvin_Hello_03_01"); //Â¡Bueno, ahora sÃ­ lo soy! AbandonÃ© el Campamento Viejo hace una semana. Le dije a mi amigo Dusty que viniera conmigo, pero prefiriÃ³ esperar.
 
 	Log_CreateTopic		(CH1_RecruitDusty,	LOG_MISSION);
 	Log_SetTopicStatus	(CH1_RecruitDusty,	LOG_RUNNING);
-	B_LogEntry			(CH1_RecruitDusty,"El cavador Melvin se ha unido a la Hermandad. Su amigo Dusty sigue en el Campamento Viejo, pero también está pensando en marcharse.");
+	B_LogEntry			(CH1_RecruitDusty,"El cavador Melvin se ha unido a la Hermandad. Su amigo Dusty sigue en el Campamento Viejo, pero tambiÃ©n estÃ¡ pensando en marcharse.");
 };
 
 // **************************************************
@@ -62,7 +62,7 @@ INSTANCE DIA_Melvin_MetDusty (C_INFO)
 	condition		= DIA_Melvin_MetDusty_Condition;
 	information		= DIA_Melvin_MetDusty_Info;
 	permanent		= 0;
-	description		= "Conozco a Dusty. Hablé con él un rato.";
+	description		= "Conozco a Dusty. HablÃ© con Ã©l un rato.";
 };
 
 FUNC INT DIA_Melvin_MetDusty_Condition()
@@ -75,9 +75,9 @@ FUNC INT DIA_Melvin_MetDusty_Condition()
 
 FUNC VOID DIA_Melvin_MetDusty_Info()
 {
-	AI_Output (other, self,"DIA_Melvin_MetDusty_15_00"); //Conozco a Dusty; hablé con él un rato.
-	AI_Output (self, other,"DIA_Melvin_MetDusty_03_01"); //Si vuelves a verle, dile que fue una tontería quedarse ahí. Esto es diez veces mejor que sufrir los abusos de los guardias del Campamento Viejo.
-	AI_Output (other, self,"DIA_Melvin_MetDusty_15_02"); //Se lo diré si vuelvo a verle.
+	AI_Output (other, self,"DIA_Melvin_MetDusty_15_00"); //Conozco a Dusty; hablÃ© con Ã©l un rato.
+	AI_Output (self, other,"DIA_Melvin_MetDusty_03_01"); //Si vuelves a verle, dile que fue una tonterÃ­a quedarse ahÃ­. Esto es diez veces mejor que sufrir los abusos de los guardias del Campamento Viejo.
+	AI_Output (other, self,"DIA_Melvin_MetDusty_15_02"); //Se lo dirÃ© si vuelvo a verle.
 };
 
 

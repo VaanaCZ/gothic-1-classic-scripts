@@ -33,7 +33,7 @@ instance  Org_825_Organisator_PERM (C_INFO)
 	condition	= Org_825_Organisator_PERM_Condition;
 	information	= Org_825_Organisator_PERM_Info;
 	permanent	= 1;
-	description = "¿Qué estás vigilando?";
+	description = "Â¿QuÃ© estÃ¡s vigilando?";
 };                       
 
 FUNC int  Org_825_Organisator_PERM_Condition()
@@ -43,7 +43,7 @@ FUNC int  Org_825_Organisator_PERM_Condition()
 
 FUNC VOID  Org_825_Organisator_PERM_Info()
 {
-	AI_Output (other, self,"Org_825_Organisator_PERM_15_00"); //¿Qué es lo que vigilas?
-	AI_Output (self, other,"Org_825_Organisator_PERM_07_01"); //Aseguramos que ninguno de los hombres de Lee o Gómez se acerque demasiado a Lares.
+	AI_Output (other, self,"Org_825_Organisator_PERM_15_00"); //Â¿QuÃ© es lo que vigilas?
+	AI_Output (self, other,"Org_825_Organisator_PERM_07_01"); //Aseguramos que ninguno de los hombres de Lee o GÃ³mez se acerque demasiado a Lares.
 	AI_StopProcessInfos	(self);
 };

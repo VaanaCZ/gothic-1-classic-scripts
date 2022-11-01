@@ -23,7 +23,7 @@ FUNC VOID  DIA_Rodriguez_Exit_Info()
 };
 
 //***********************************************
-//				Hallo und tschüß
+//				Hallo und tschÃ¼ÃŸ
 //***********************************************
 
 instance  DIA_Rodriguez_Hello (C_INFO)
@@ -33,7 +33,7 @@ instance  DIA_Rodriguez_Hello (C_INFO)
 	condition	=  DIA_Rodriguez_Hello_Condition;
 	information	=  DIA_Rodriguez_Hello_Info;
 	permanent	=  1;
-	description =  "¡Busco al Gran Mago del Círculo del Fuego!";
+	description =  "Â¡Busco al Gran Mago del CÃ­rculo del Fuego!";
 };                       
 
 FUNC int  DIA_Rodriguez_Hello_Condition()
@@ -46,7 +46,7 @@ FUNC int  DIA_Rodriguez_Hello_Condition()
 
 FUNC VOID  DIA_Rodriguez_Hello_Info()
 {
-	AI_Output (other, self,"DIA_Rodriguez_Hello_15_00"); //¡Estoy buscando al Gran Mago del Círculo de Fuego!
-	AI_Output (self, other,"DIA_Rodriguez_Hello_12_01"); //Ve a ver a Milten. Él es quien se ocupa de los decididos como tú.
+	AI_Output (other, self,"DIA_Rodriguez_Hello_15_00"); //Â¡Estoy buscando al Gran Mago del CÃ­rculo de Fuego!
+	AI_Output (self, other,"DIA_Rodriguez_Hello_12_01"); //Ve a ver a Milten. Ã‰l es quien se ocupa de los decididos como tÃº.
 	AI_StopProcessInfos	( self );
 };

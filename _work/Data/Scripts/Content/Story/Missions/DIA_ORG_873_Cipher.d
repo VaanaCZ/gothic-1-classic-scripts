@@ -34,7 +34,7 @@ instance  Org_873_Cipher_Hello (C_INFO)
 	condition	=  Org_873_Cipher_Hello_Condition;
 	information	=  Org_873_Cipher_Hello_Info;
 	permanent	=  0;
-	description = "¿Qué tal?";
+	description = "Â¿QuÃ© tal?";
 };                       
 
 FUNC int  Org_873_Cipher_Hello_Condition()
@@ -47,11 +47,11 @@ FUNC int  Org_873_Cipher_Hello_Condition()
 
 FUNC VOID  Org_873_Cipher_Hello_Info()
 {
-	AI_Output (other, self,"DIA_Cipher_Hello_15_00"); //¿Cómo van las cosas?
-	AI_Output (self, other,"DIA_Cipher_Hello_12_01"); //¡Le hemos puesto otra zancadilla a Gómez!
-	AI_Output (self, other,"DIA_Cipher_Hello_12_02"); //Tres guardias muertos y muchas cosas que vender. ¡Esto merece un trago!
-	AI_Output (other, self,"DIA_Cipher_Hello_15_03"); //¿Eres tú uno de los que suelen lanzar incursiones al Campamento Viejo?
-	AI_Output (self, other,"DIA_Cipher_Hello_12_04"); //No. Sólo cuando merece la pena.
+	AI_Output (other, self,"DIA_Cipher_Hello_15_00"); //Â¿CÃ³mo van las cosas?
+	AI_Output (self, other,"DIA_Cipher_Hello_12_01"); //Â¡Le hemos puesto otra zancadilla a GÃ³mez!
+	AI_Output (self, other,"DIA_Cipher_Hello_12_02"); //Tres guardias muertos y muchas cosas que vender. Â¡Esto merece un trago!
+	AI_Output (other, self,"DIA_Cipher_Hello_15_03"); //Â¿Eres tÃº uno de los que suelen lanzar incursiones al Campamento Viejo?
+	AI_Output (self, other,"DIA_Cipher_Hello_12_04"); //No. SÃ³lo cuando merece la pena.
 };
 
 // ******************************
@@ -65,7 +65,7 @@ instance  Org_873_Cipher_Fisk (C_INFO)
 	condition	=  Org_873_Cipher_Fisk_Condition;
 	information	=  Org_873_Cipher_Fisk_Info;
 	permanent	=  1;
-	description = "Fisk, del Campamento Viejo, está buscando un nuevo socio comercial.";
+	description = "Fisk, del Campamento Viejo, estÃ¡ buscando un nuevo socio comercial.";
 };                       
 
 FUNC int  Org_873_Cipher_Fisk_Condition()
@@ -80,7 +80,7 @@ FUNC VOID  Org_873_Cipher_Fisk_Info()
 {
 	AI_Output (other, self,"DIA_Cipher_Fisk_15_00"); //Fisk del Campamento Viejo anda en busca de un nuevo socio.
 	AI_Output (self, other,"DIA_Cipher_Fisk_12_01"); //No me interesa.
-	AI_Output (self, other,"DIA_Cipher_Fisk_12_02"); //Pero puede que a Sharky sí le interese. Si te lo encuentras, díselo.
+	AI_Output (self, other,"DIA_Cipher_Fisk_12_02"); //Pero puede que a Sharky sÃ­ le interese. Si te lo encuentras, dÃ­selo.
 };
 
 // ******************************
@@ -96,7 +96,7 @@ instance  Org_873_Cipher_FromBalor (C_INFO)
 	condition	=  Org_873_Cipher_FromBalor_Condition;
 	information	=  Org_873_Cipher_FromBalor_Info;
 	permanent	=  1;
-	description = "¿Qué puedes ofrecer?";
+	description = "Â¿QuÃ© puedes ofrecer?";
 };                       
 
 FUNC int  Org_873_Cipher_FromBalor_Condition()
@@ -109,12 +109,12 @@ FUNC int  Org_873_Cipher_FromBalor_Condition()
 
 FUNC VOID  Org_873_Cipher_FromBalor_Info()
 {
-	AI_Output (other, self,"DIA_Cipher_FromBalor_15_00"); //¿Qué me ofreces?
-	AI_Output (self, other,"DIA_Cipher_FromBalor_12_01"); //Permíteme que te lo pregunte de otra manera. ¿Qué ME ofreces? Sólo me interesan los envíos importantes.
+	AI_Output (other, self,"DIA_Cipher_FromBalor_15_00"); //Â¿QuÃ© me ofreces?
+	AI_Output (self, other,"DIA_Cipher_FromBalor_12_01"); //PermÃ­teme que te lo pregunte de otra manera. Â¿QuÃ© ME ofreces? SÃ³lo me interesan los envÃ­os importantes.
 	if (Balor_TellsNCDealer == TRUE)
 	{
-		AI_Output (other, self,"DIA_Cipher_FromBalor_15_02"); //Balor me ha dicho que estarías interesado en la hierba del pantano.
-		AI_Output (self, other,"DIA_Cipher_FromBalor_12_03"); //Mmmmmm. ¿Quieres vender?
+		AI_Output (other, self,"DIA_Cipher_FromBalor_15_02"); //Balor me ha dicho que estarÃ­as interesado en la hierba del pantano.
+		AI_Output (self, other,"DIA_Cipher_FromBalor_12_03"); //Mmmmmm. Â¿Quieres vender?
 		Cipher_Trade = TRUE;
 	}
 	else
@@ -150,5 +150,5 @@ FUNC int  Org_873_Cipher_TRADE_Condition()
 FUNC VOID  Org_873_Cipher_TRADE_Info()
 {
 	AI_Output (other, self,"DIA_Cipher_TRADE_15_00"); //Hagamos un trato.
-	AI_Output (self, other,"DIA_Cipher_TRADE_12_01"); //¿Qué es lo que quieres?
+	AI_Output (self, other,"DIA_Cipher_TRADE_12_01"); //Â¿QuÃ© es lo que quieres?
 };

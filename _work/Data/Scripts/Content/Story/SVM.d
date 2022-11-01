@@ -3,53 +3,53 @@
 // **********************************************
 
 // Diese Klasse	kann beliebig von den Skriptern	erweitert um
-// "VAR	STRING xxxx" erweitert werden, diese können	dann in	den
+// "VAR	STRING xxxx" erweitert werden, diese kÃ¶nnen	dann in	den
 // einzelnen SVM - Instanzen initialisiert werden.
 
 
 CLASS C_SVM
 {
 // SC hat Waffe oder Magie gezogen oder zielt auf NSC
-	VAR	STRING	StopMagic;					// NSC  sieht wie in seiner Nähe gezaubert wird -> er fordert auf, damit aufzuhören!
+	VAR	STRING	StopMagic;					// NSC  sieht wie in seiner NÃ¤he gezaubert wird -> er fordert auf, damit aufzuhÃ¶ren!
 	VAR	STRING	ISaidStopMagic;				// NSC hat bereits mit $StopMagic gewarnt und greift nun an	(nachdem er	diesen Satz	gesagt hat;	WICHTIG: dies ist KEINE	letzte Warnung,	sonder sofort Angriff!)
 
-	var string	WeaponDown				;	//ZS_AssessFighter: SC steht mit gezogener Waffe vor NSC -> NSC ist NEUTRAL zu SC	-> (herausfordernd,	bei	Pünten-Stimme etwas	unsicher, trotzdem kernig)
+	var string	WeaponDown				;	//ZS_AssessFighter: SC steht mit gezogener Waffe vor NSC -> NSC ist NEUTRAL zu SC	-> (herausfordernd,	bei	PÃ¼nten-Stimme etwas	unsicher, trotzdem kernig)
 	var string	ISaidWeaponDown			;	//Kommt nachdem der SC $WeaponDown ignoriert hat!
 
-	VAR	STRING	WatchYourAim;				// ein FRIENDLY-SC zielt mit einer Fernkampfwaffe auf den NSC .	'Paß auf! Ziel woanders	hin!' B_Orc_AssessThreat hat das auch noch
-	var string	WatchYourAimAngry		;	// SC zielt mit einer Fernkampfwaffe auf den Angry-NSC. (genervte Auffordern, damit	aufzuhören)
+	VAR	STRING	WatchYourAim;				// ein FRIENDLY-SC zielt mit einer Fernkampfwaffe auf den NSC .	'PaÃŸ auf! Ziel woanders	hin!' B_Orc_AssessThreat hat das auch noch
+	var string	WatchYourAimAngry		;	// SC zielt mit einer Fernkampfwaffe auf den Angry-NSC. (genervte Auffordern, damit	aufzuhÃ¶ren)
 	VAR	STRING	WhatAreYouDoing;			// NSC wird von einem FRIENDLY-SC/NSC geschlagen
 
 // SC hat Waffe weggesteckt, NSC beendet Kampf
-	VAR	STRING	LetsForgetOurLittleFight;	//Friede, kann direkt kommen ( Wenn freundliche kämpfen und der Spieler die Waffe wegsteckt) oder als Reaction über das news-Gedächtnis, sollte daher Zeitneutral sein (--> nicht wie jetzt lass uns den Streit von letztens vergessen
+	VAR	STRING	LetsForgetOurLittleFight;	//Friede, kann direkt kommen ( Wenn freundliche kÃ¤mpfen und der Spieler die Waffe wegsteckt) oder als Reaction Ã¼ber das news-GedÃ¤chtnis, sollte daher Zeitneutral sein (--> nicht wie jetzt lass uns den Streit von letztens vergessen
 
 // NSC hat Gegner aus den Augen verloren
-	VAR	STRING	Strange			;			// 1. NSC wird attackiert -> rennt mit gezogener Waffe zum Angreifer ->	kann ihn plötzlich nicht mehr entdecken	-> (muttering to himself)
-											// 2. NSC sieht	einen Mord -> rennt	mit	gezogener Waffe	zum	Mörder -> kann ihn plötzlich nicht mehr	entdecken
+	VAR	STRING	Strange			;			// 1. NSC wird attackiert -> rennt mit gezogener Waffe zum Angreifer ->	kann ihn plÃ¶tzlich nicht mehr entdecken	-> (muttering to himself)
+											// 2. NSC sieht	einen Mord -> rennt	mit	gezogener Waffe	zum	MÃ¶rder -> kann ihn plÃ¶tzlich nicht mehr	entdecken
 
 // NSC greift an!
 	var string	DieMonster				;	// NSC greift Monster an -> "Aus dir mach ich Gulasch, Drecksvieh!"
 	var string	DieMOrtalEnemy;				// Der Nsc greift an, da er durch die Story permanent Hostile ist, d.h. die Lager sind in Blutfehde
 
-	VAR	STRING	NowWait;					// NSC hat den SC früher noch NICHT besiegt -> SC greift den NSC an -> "Na warte!"
-	VAR	STRING	YouStillNotHaveEnough	;	// NSC hat den SC früher besiegt ->	SC greift den NSC an -> "Hast du immer noch nicht genug?!"
+	VAR	STRING	NowWait;					// NSC hat den SC frÃ¼her noch NICHT besiegt -> SC greift den NSC an -> "Na warte!"
+	VAR	STRING	YouStillNotHaveEnough	;	// NSC hat den SC frÃ¼her besiegt ->	SC greift den NSC an -> "Hast du immer noch nicht genug?!"
 
-	var	string	YouAskedForIt			;	// 1. SC hat eine Aufforderung ignoriert: den Raum zu verlassen, ein Item zurückzugeben, seine Waffe wegzustecken -> "Wer nicht hören will muß fühlen..."
+	var	string	YouAskedForIt			;	// 1. SC hat eine Aufforderung ignoriert: den Raum zu verlassen, ein Item zurÃ¼ckzugeben, seine Waffe wegzustecken -> "Wer nicht hÃ¶ren will muÃŸ fÃ¼hlen..."
 	var string	NowWaitIntruder			;	// SC hat einen bewachten Durchgang durchbrochen...
 
-	var	string	IWillTeachYouRespectForForeignProperty;	// 1. SC benutzt ein Besitz-Mob(Tür,Fallgitter-Drehkreuz,Kiste,...) und	wird ohne Vorwarnung attackiert
-											// 2. SC trägt Waffe des NSCs -> NSC ist stärker und holt sie sich mit Gewalt wieder ->	vorher dieser Spruch
+	var	string	IWillTeachYouRespectForForeignProperty;	// 1. SC benutzt ein Besitz-Mob(TÃ¼r,Fallgitter-Drehkreuz,Kiste,...) und	wird ohne Vorwarnung attackiert
+											// 2. SC trÃ¤gt Waffe des NSCs -> NSC ist stÃ¤rker und holt sie sich mit Gewalt wieder ->	vorher dieser Spruch
 
-	VAR	STRING	DirtyThief;					// 1. NSC ertappt den (schwächeren)	SC mit den Fingern in den eigenen Taschen
-											// 2. NSC sieht	wie	der	(schwächere) SC	etwas nimmt, daß ihm gehört	(z.B. Waffe	auf	den	Tisch)
-											// 3. NSC sieht	feindlichen, schwächeren SC, der ihn vorher	mal	beklaut	hat	und	sagt ihm diesen	Spruch,	bevor er angreift "Da hab ich Dich also	wieder,	Du dreckiger Dieb"
+	VAR	STRING	DirtyThief;					// 1. NSC ertappt den (schwÃ¤cheren)	SC mit den Fingern in den eigenen Taschen
+											// 2. NSC sieht	wie	der	(schwÃ¤chere) SC	etwas nimmt, daÃŸ ihm gehÃ¶rt	(z.B. Waffe	auf	den	Tisch)
+											// 3. NSC sieht	feindlichen, schwÃ¤cheren SC, der ihn vorher	mal	beklaut	hat	und	sagt ihm diesen	Spruch,	bevor er angreift "Da hab ich Dich also	wieder,	Du dreckiger Dieb"
 											// 4. Nsc ist in einen Raum eingedrungen
 
-	var string	YouAttackedMyCharge		;	// SC/NSC greift einen Schützling einer NSC-Wache an -> Wache attackiert den Angreifer danach
-	var string	YouKilledOneOfUs;			// NSC erblickt feindlichen SC, der einen Freund des NSCs getötet hat -> Angriff!
+	var string	YouAttackedMyCharge		;	// SC/NSC greift einen SchÃ¼tzling einer NSC-Wache an -> Wache attackiert den Angreifer danach
+	var string	YouKilledOneOfUs;			// NSC erblickt feindlichen SC, der einen Freund des NSCs getÃ¶tet hat -> Angriff!
 
 // im Kampf
-	VAR	STRING	Dead			;			// Tödlich verletzt
+	VAR	STRING	Dead			;			// TÃ¶dlich verletzt
 	VAR	STRING	Aargh_1			;			// Treffer kassiert im Kampf	
 	VAR	STRING	Aargh_2			;			// Treffer kassiert im Kampf	
 	VAR	STRING	Aargh_3			;			// Treffer kassiert im Kampf	
@@ -59,168 +59,168 @@ CLASS C_SVM
 // SC hat NSC niedergeschlagen oder bedroht
 	VAR	STRING	YoullBeSorryForThis;		// NSC wurde durch SC/aNSC besiegt und wacht aus der Ohnmacht wieder auf: 'Das wird	Dir	noch leidtun!'
 
-	VAR	STRING	YesYes			;			// 1. NSC wurde	im Kampf besiegt ->	erwacht	wieder ist aber	schächer als sein Kontrahent
-											// 2. SC zieht Waffe oder nähert sich mit Waffe und NSC ist schwächer als SC
+	VAR	STRING	YesYes			;			// 1. NSC wurde	im Kampf besiegt ->	erwacht	wieder ist aber	schÃ¤cher als sein Kontrahent
+											// 2. SC zieht Waffe oder nÃ¤hert sich mit Waffe und NSC ist schwÃ¤cher als SC
 // NSC flieht
-	var string	ShitWhatAMonster		;	// NSC flieht vor zu starkem Monster -> "Scheiße, was ein Höllenvieh. Nichts wie weg!"
+	var string	ShitWhatAMonster		;	// NSC flieht vor zu starkem Monster -> "ScheiÃŸe, was ein HÃ¶llenvieh. Nichts wie weg!"
 	VAR	STRING	Help;						// NSC flieht vor Gegner, Babe Nsc flieht vor Spieler, Orcs haben das auch
-	var	STRING	WeWillMeetAgain;			// NSC flieht vor Gegner, ist aber eigentlich Stärker als er, ist aber trotzdem besiegt worden
+	var	STRING	WeWillMeetAgain;			// NSC flieht vor Gegner, ist aber eigentlich StÃ¤rker als er, ist aber trotzdem besiegt worden
 
-// SC wurde von NSC besiegt und wird geplündert
+// SC wurde von NSC besiegt und wird geplÃ¼ndert
 	VAR	STRING	NeverTryThatAgain	;		// NSC hat Gegner besiegt -> ("Versuch das NIE wieder!!")
-	var string	ITakeYourWeapon;			// NSC plündert bewußtlosen SC/aNSC. Während er sich bückt, um nach der vom Besiegten fallengelassenen Waffe zu greifen sagt er diesen Spruch.
-	VAR	STRING	ITookYourOre	;			// NSC plündert bewußtlosen SC/aNSC. Nachdem er sich einen Teil des Erzes genommen hat, sagt er diesen Spruch.
-	var string	ShitNoOre		;			// NSC ärgert sich darüber, daß er beim Durchsuchen eines bewußtlosen/toten Körpers kein Erz gefunden hat!
+	var string	ITakeYourWeapon;			// NSC plÃ¼ndert bewuÃŸtlosen SC/aNSC. WÃ¤hrend er sich bÃ¼ckt, um nach der vom Besiegten fallengelassenen Waffe zu greifen sagt er diesen Spruch.
+	VAR	STRING	ITookYourOre	;			// NSC plÃ¼ndert bewuÃŸtlosen SC/aNSC. Nachdem er sich einen Teil des Erzes genommen hat, sagt er diesen Spruch.
+	var string	ShitNoOre		;			// NSC Ã¤rgert sich darÃ¼ber, daÃŸ er beim Durchsuchen eines bewuÃŸtlosen/toten KÃ¶rpers kein Erz gefunden hat!
 
 // NSC verwarnt SC
-	VAR	STRING	HandsOff;					// SC manipuliert ein MOB (Drehkreuz, Truhe, Tür) und ein befreundeter bzw. gildengleicher NSC sieht das...
-	VAR	STRING	GetOutOfHere		;		// NSC erwischt	schwächeren	SC in seiner Hütte -> ("Raus hier")	(SC	soll aus Raum gehen)
+	VAR	STRING	HandsOff;					// SC manipuliert ein MOB (Drehkreuz, Truhe, TÃ¼r) und ein befreundeter bzw. gildengleicher NSC sieht das...
+	VAR	STRING	GetOutOfHere		;		// NSC erwischt	schwÃ¤cheren	SC in seiner HÃ¼tte -> ("Raus hier")	(SC	soll aus Raum gehen)
 	var	string	YouViolatedForbiddenTerritory		;	// SC wird beim Betreten eines verbotenen Portalraums erwischt -> Warnung!
 
-	var	STRING	YouWannaFoolMe;				// SC schnappt NSC ein Item vor der Nase weg und wird mit $GiveItToMe aufgefordert es zurückzugeben -> SC gibt ein falsches Item an den NSC -> 'Willst Du mich verarschen'
+	var	STRING	YouWannaFoolMe;				// SC schnappt NSC ein Item vor der Nase weg und wird mit $GiveItToMe aufgefordert es zurÃ¼ckzugeben -> SC gibt ein falsches Item an den NSC -> 'Willst Du mich verarschen'
 
 	VAR	STRING	WhatsThisSupposedToBe	;	// 1. SC schleicht vor den Augen des NSCs -> "Was schleichst Du	hier rum?" (besser als "Was	soll das denn werden", weil	besseres Feedback!)
 											// 2. SC bewegt	sich hinter	einer Wache	-> diese dreht sich	um und sagt	dann
-	var string	WhyAreYouInHere			;	//im ZS_ClearRoom / SC steht in verbotenem Portalraum	-> schwächerer NSC fragt
-	var string	WhatDidYouInThere		;	// Wache sieht Sc aus einer Hütte rauskommen und verwarnt ihn, ohne das ein Angriff folgt
+	var string	WhyAreYouInHere			;	//im ZS_ClearRoom / SC steht in verbotenem Portalraum	-> schwÃ¤cherer NSC fragt
+	var string	WhatDidYouInThere		;	// Wache sieht Sc aus einer HÃ¼tte rauskommen und verwarnt ihn, ohne das ein Angriff folgt
 
 	VAR	STRING	WiseMove;					// 1. NSC wurde	gewarnt, seine Waffe wegzustecken ($RemoveYourWeapon) -> SC	befolgt	dies und steckt	die	Waffe weg
 											// 2. SC steht in verbotenem Raum und wird mit $GetOutOfHere aufgefordert, rauszugehen -> SC befolgt die Aufforderung
-											// 3. SC hat NSC ein Item vor der Nase weggeschnappt und wurde mit $GiveItToMe aufgefordert	es zurückzugeben ->	SC gehorcht
+											// 3. SC hat NSC ein Item vor der Nase weggeschnappt und wurde mit $GiveItToMe aufgefordert	es zurÃ¼ckzugeben ->	SC gehorcht
 
 // NSC alarmiert/warnt andere NSCs vor SC
 	VAR	STRING	Alarm;						// Wache alarmiert die Sichtung	eines permanent	HOSTILE	SC/aNSC	"Alaaaaaaarm!!!!!"
 											// Nicht Wache sieht wie ein Portalraum betreten wird, der einer Gilde zugeordnet ist und ruft die Wachen
-											// Gemüse (NpcWorker) ruft Wachen nach einem Diebstahl/beobachteten Diebstahl etc.
+											// GemÃ¼se (NpcWorker) ruft Wachen nach einem Diebstahl/beobachteten Diebstahl etc.
 	var string	IntruderAlert;				// SC hat einen bewachten Durchgang durchbrochen und die Wache alarmiert alle umstehenden
 	VAR	STRING	BehindYou;					// NSC sieht, wie ein anderer NSC vom SC bestohlen wird	und	warnt das Opfer
 
 // NSC beobachtet Kampf
-	var	string	TheresAFight	;			// NSC entdeckt	einen Kampf	und	will zuschauen (ZS_WatchFight) -> vorher ein Spruch	wie	"Hey da	drüben gibt's einen	Kampf"
+	var	string	TheresAFight	;			// NSC entdeckt	einen Kampf	und	will zuschauen (ZS_WatchFight) -> vorher ein Spruch	wie	"Hey da	drÃ¼ben gibt's einen	Kampf"
 	VAR	STRING	HeyHeyHey;					// Hintergrund anfeuern	beim Beobachten	eines Kampfes: 'Hau	ihm	aufs Maul!'	(kommt alle	paar Sekunden!)
-	VAR	STRING	CheerFight;					// NSC ist im Zustand WatchFight: Neutraler	Kämpfer	schlägt irgendeinen Typen. '5 Erz auf den Dicken'
+	VAR	STRING	CheerFight;					// NSC ist im Zustand WatchFight: Neutraler	KÃ¤mpfer	schlÃ¤gt irgendeinen Typen. '5 Erz auf den Dicken'
 	VAR	STRING	CheerFriend;				// NSC ist im Zustand WatchFight: Freund landet	einen Treffer. 'Immer in die Fresse!'
 	VAR	STRING	Ooh;						// NSC ist im Zustand WatchFight: Freund kriegt	aufs Maul. 'Mist - das tat weh.'
-	var	STRING	YeahWellDone;				// NSC sieht, wie SC/aNSC, zu dem er ANGRY/HOSTILE ist getötet wird. 'Gut gemacht, das hat sie Sau verdient.'
+	var	STRING	YeahWellDone;				// NSC sieht, wie SC/aNSC, zu dem er ANGRY/HOSTILE ist getÃ¶tet wird. 'Gut gemacht, das hat sie Sau verdient.'
 
 // NSC-Gegner flieht
-	VAR	STRING	RunCoward;					// 1. Der NSC befindet sich	im Zustand WatchFight -> einer der Kämpfer haut	ab
+	VAR	STRING	RunCoward;					// 1. Der NSC befindet sich	im Zustand WatchFight -> einer der KÃ¤mpfer haut	ab
 											// 2. Der Gegner des NSCs flieht
 	var	string	HeDefeatedHim	;			// NSC sieht wie ein SC/aNSC einen anderen aNSC/SC besiegt 	(WICHTIG: dies ist der normale Ausgang!)
 	var	string	HeDeservedIt	;			// NSC sieht wie ein SC/aNSC, zu dem er	ANGRY/HOSTILE steht, besiegt wird -> ("DAS hat er verdient!")
-	var	string	HeKilledHim		;			// NSC sieht wie ein SC/aNSC einen anderen aNSC/SC tötet	(WICHTIG: dies ist ein Skandal, niemand wird normalerweise	in einer "Schlägerei" getötet)
+	var	string	HeKilledHim		;			// NSC sieht wie ein SC/aNSC einen anderen aNSC/SC tÃ¶tet	(WICHTIG: dies ist ein Skandal, niemand wird normalerweise	in einer "SchlÃ¤gerei" getÃ¶tet)
 	var	string	ItWasAGoodFight	;			// NSC sieht wie ein FRIENDLY/NEUTRAL-SC/aNSC einen	anderen	besiegt
 
-	VAR	STRING	Awake			;			// NSC wacht aus dem Zustand Sleep wieder auf (Aufwachen, räkeln)
+	VAR	STRING	Awake			;			// NSC wacht aus dem Zustand Sleep wieder auf (Aufwachen, rÃ¤keln)
 
-// Grüße
+// GrÃ¼ÃŸe
 	VAR	STRING	FriendlyGreetings;			// 1. Am Anfang	eines Dialoges, wenn NSC FRIENDLY/NEUTRAL zum SC,  2. Wenn sie sich unterwegs begegnen.
-	VAR	STRING	ALGreetings;				// 1. Am Anfang	eines Dialoges, wenn NSC und SC aus Altem Lager und FRIENDLY/NEUTRAL ('Für Gomez'), 2. Wenn sie sich unterwegs begegnen.
+	VAR	STRING	ALGreetings;				// 1. Am Anfang	eines Dialoges, wenn NSC und SC aus Altem Lager und FRIENDLY/NEUTRAL ('FÃ¼r Gomez'), 2. Wenn sie sich unterwegs begegnen.
 	var	STRING	MageGreetings;				// 1. Am Anfang	eines Dialoges, wenn NSC und SC beide Magier und FRIENDLY/NEUTRAL, 2. Wenn sie sich unterwegs begegnen.
-	VAR	STRING	SectGreetings;				// 1. Am Anfang	eines Dialoges, wenn NSC aus Psi-Camp und FRIENDLY/NEUTRAL	zum	SC ('Erwache. Der Schläfer erwache.') 2. Wenn sie sich unterwegs begegnen.
+	VAR	STRING	SectGreetings;				// 1. Am Anfang	eines Dialoges, wenn NSC aus Psi-Camp und FRIENDLY/NEUTRAL	zum	SC ('Erwache. Der SchlÃ¤fer erwache.') 2. Wenn sie sich unterwegs begegnen.
 
-	var string	ThereHeIs;					// NSC zeigt SC wo ein anderer NSC steht nach dem der SC gefragt hat: "Da drüben ist er"
+	var string	ThereHeIs;					// NSC zeigt SC wo ein anderer NSC steht nach dem der SC gefragt hat: "Da drÃ¼ben ist er"
 
 // Lehrer-Kommentare
 	var string	NoLearnNoPoints			;	// NSC-Lehrer verbietet Steigerung - keine Lernpunkte!
-	var string	NoLearnOverMax			;	// NSC-Lehrer verbietet Attribut-Steigerung über 100
-	var string	NoLearnYouAlreadyKnow	;	// Du mußt erst Fortgeschritten sein, bevor du ein Meister werden kannst!
+	var string	NoLearnOverMax			;	// NSC-Lehrer verbietet Attribut-Steigerung Ã¼ber 100
+	var string	NoLearnYouAlreadyKnow	;	// Du muÃŸt erst Fortgeschritten sein, bevor du ein Meister werden kannst!
 	var string	NoLearnYoureBetter		;	// Du bist jetzt schon besser!
 
 // NSC spricht SC an
-	VAR	STRING	HeyYou;						// z.B. Wache, die den SC im Räumen erwischt, wo er nicht hin darf sagt HeyYou, und geht dann zum SC
+	VAR	STRING	HeyYou;						// z.B. Wache, die den SC im RÃ¤umen erwischt, wo er nicht hin darf sagt HeyYou, und geht dann zum SC
 
 // NSC will nicht reden
-	VAR	STRING	NotNow;						// NSC / Babe wird vom SC angesprochen,	lehnt aber ein Gespräch	ab.
+	VAR	STRING	NotNow;						// NSC / Babe wird vom SC angesprochen,	lehnt aber ein GesprÃ¤ch	ab.
 
 // SC zu nah
-	VAR	STRING	WhatDoYouWant;				// SC rückt NSC zu dicht auf die Pelle -> "Kann ich was für Dich tun?"
+	VAR	STRING	WhatDoYouWant;				// SC rÃ¼ckt NSC zu dicht auf die Pelle -> "Kann ich was fÃ¼r Dich tun?"
 	VAR	STRING	ISaidWhatDoYouWant;			// NSC hat $WhatDoYouWant gesagt, aber der SC hat nicht reagiert -> "Was willst Du?"
 // SC im Weg
-	VAR	STRING	MakeWay;					// SC steht	schwächerem NSC im Weg	-> Aufforderung, Platz zu	machen
-	VAR	STRING	OutOfMyWay;					// SC steht stärkerem NSC (Magier, Erzbaron) im Weg -> aggressive Aufforderung, Platz zu machen
-	VAR	STRING	YouDeafOrWhat;				// SC folgt	nicht der Aufforderung des stärkeren NSCs	-> letzte Warnung, danach Angriff
+	VAR	STRING	MakeWay;					// SC steht	schwÃ¤cherem NSC im Weg	-> Aufforderung, Platz zu	machen
+	VAR	STRING	OutOfMyWay;					// SC steht stÃ¤rkerem NSC (Magier, Erzbaron) im Weg -> aggressive Aufforderung, Platz zu machen
+	VAR	STRING	YouDeafOrWhat;				// SC folgt	nicht der Aufforderung des stÃ¤rkeren NSCs	-> letzte Warnung, danach Angriff
 
 // SC spricht NSC an, der ihn besiegt hat
-	VAR	STRING	LookingForTroubleAgain;		//Erster Satz eines Dialoges, nachdem der NSC und der SC gekämpft haben (entweder wurde der SC besiegt oder es gab keinen klaren Ausgang des Kampfes)
+	VAR	STRING	LookingForTroubleAgain;		//Erster Satz eines Dialoges, nachdem der NSC und der SC gekÃ¤mpft haben (entweder wurde der SC besiegt oder es gab keinen klaren Ausgang des Kampfes)
 
-// NSC ist schwächer...
-	var string	LookAway;					// Eingeschüchterter NSC guckt weg bei bedrohlichen Situationen
-	VAR	STRING	OkayKeepIt;					// SC trägt	Waffe des schächeren NSCs -> NSCs verlangt die Waffe zurück	($GiveItToMe) -> SC	bedroht	NSC	-> ("Okay, okay, du	kannst das Ding	behalten..." zurückweichen)
+// NSC ist schwÃ¤cher...
+	var string	LookAway;					// EingeschÃ¼chterter NSC guckt weg bei bedrohlichen Situationen
+	VAR	STRING	OkayKeepIt;					// SC trÃ¤gt	Waffe des schÃ¤cheren NSCs -> NSCs verlangt die Waffe zurÃ¼ck	($GiveItToMe) -> SC	bedroht	NSC	-> ("Okay, okay, du	kannst das Ding	behalten..." zurÃ¼ckweichen)
 	VAR	STRING	WhatsThat;					// Verwandelter SC wird vor den Augen des NSCs wieder zum Menschen (Erschreckter Ausruf) Nsc wird aus dem MagicSleep wieder wach und wundert sich...
 
-	VAR	STRING	ThatsMyWeapon;				// SC trägt	eine Waffe,	die	dem	NSC	gehört -> Folge: ZS_GetBackBelongings
-	VAR	STRING	GiveItToMe;					// 1. SC trägt Waffe des NSCs -> NSC ist schwächer (also kein Kampf) ->	"Gib sie mir wieder"
-	VAR	STRING	YouCanKeeptheCrap;			// 1. SC trägt Waffe des schwächeren NSCs ->	NSCs verlangt die Waffe	zurück ($GiveItToMe) ->	SC geht	einfach	weg	-> ("Behalt	das	Scheiß-Ding	doch!)
-											// 2. NSC will ein Item	aufheben und wird von einem	stärkeren NSC gewarnt, der das auch	tun	will ->	unser NSC weicht zurück
+	VAR	STRING	ThatsMyWeapon;				// SC trÃ¤gt	eine Waffe,	die	dem	NSC	gehÃ¶rt -> Folge: ZS_GetBackBelongings
+	VAR	STRING	GiveItToMe;					// 1. SC trÃ¤gt Waffe des NSCs -> NSC ist schwÃ¤cher (also kein Kampf) ->	"Gib sie mir wieder"
+	VAR	STRING	YouCanKeeptheCrap;			// 1. SC trÃ¤gt Waffe des schwÃ¤cheren NSCs ->	NSCs verlangt die Waffe	zurÃ¼ck ($GiveItToMe) ->	SC geht	einfach	weg	-> ("Behalt	das	ScheiÃŸ-Ding	doch!)
+											// 2. NSC will ein Item	aufheben und wird von einem	stÃ¤rkeren NSC gewarnt, der das auch	tun	will ->	unser NSC weicht zurÃ¼ck
 
-	VAR	STRING	TheyKilledMyFriend;			// NSC Täter - NSC zu Opfer freundlich, zu Täter freundlich oder neutral
+	VAR	STRING	TheyKilledMyFriend;			// NSC TÃ¤ter - NSC zu Opfer freundlich, zu TÃ¤ter freundlich oder neutral
 
 	var	string	YouDisturbedMySlumber;		// NSC wurde vom SC	mittelsanft	aus	dem	Schlaf gerissen	(z.B. durch	Ansprechen)
 
 // Angry NSCs kommentieren SC-Aktionen
-	VAR	STRING	SuckerGotSome;				// Angry NSC hat gehört, daß der SC umgehauen wurde. "Das Dich jemand umgehauen hat, geschieht Dir Recht!"
+	VAR	STRING	SuckerGotSome;				// Angry NSC hat gehÃ¶rt, daÃŸ der SC umgehauen wurde. "Das Dich jemand umgehauen hat, geschieht Dir Recht!"
 
 	VAR	STRING	SuckerDefeatedEBr;			// Du hast einen	EBR	besiegt. Er war wirklich beeindruckt!
 	VAR	STRING	SuckerDefeatedGur;			// Du hast einen	GUR	niedergeschlagen,	Du bist	ein	toter Mann
 	VAR	STRING	SuckerDefeatedMage;			// (News) - im Stil von SuckerDefeatedXY
 
 	var string	SuckerDefeatedNOV_Guard;	// Der Spieler hat einen Novizen umgehauen, Templer spricht den Spieler an, Templer ist ANGRY zu Spieler
-	var string	SuckerDefeatedVLK_Guard;	// Der Spieler hat einen Schützling der Wache niedergeschlagen
-	var string	YouDefeatedMyComrade;		// Wache stellt fest, das sie gesehen/gehört hat, daß ich eine andere Wache umgehauen habe
+	var string	SuckerDefeatedVLK_Guard;	// Der Spieler hat einen SchÃ¼tzling der Wache niedergeschlagen
+	var string	YouDefeatedMyComrade;		// Wache stellt fest, das sie gesehen/gehÃ¶rt hat, daÃŸ ich eine andere Wache umgehauen habe
 	var string	YouDefeatedNOV_Guard;		// Der Spieler hat einen Novizen umgehauen, Templer spricht den Spieler an, Templer ist NEUTRAL/FRIENDLY zu Spieler
 	var string	YouDefeatedVLK_Guard;		// Der Spieler hat einen Buddler umgehauen, Wache spricht den Spieler an, Wache ist NEUTRAL/FRIENDLY zu Spieler
 	VAR	STRING	YouStoleFromMe;				// Du Sau hast mich beklaut
 
-//Wichtige Person (Lehrer, Auftraggeber?), hat davon gehört, daß Du Mist gebaut hat...
-// FIXME: damit das so benutzt werden kann müssen noch Anpassungen in der B_ReactToMemory.d gemacht werden
+//Wichtige Person (Lehrer, Auftraggeber?), hat davon gehÃ¶rt, daÃŸ Du Mist gebaut hat...
+// FIXME: damit das so benutzt werden kann mÃ¼ssen noch Anpassungen in der B_ReactToMemory.d gemacht werden
 	VAR	STRING	YouStoleFromUs;				// eigene oder befreundete Gilde beklaut.
 	VAR	STRING	YouStoleFromEBr;			// Erzbarone beklaut.
 	VAR	STRING	YouStoleFromGur;			// Gurus beklaut.
 	VAR	STRING	StoleFromMage;				// Magier beklaut.
 
-	VAR	STRING	YouKilledMyFriend;			// jemand aus eigener oder befreundeter Gilde getötet
-	var	STRING	YouKilledEBr;				// Erzbaron getötet
-	VAR	STRING	YouKilledGur;				// Guru getötet
-	VAR	STRING	YouKilledMage;				// Guru getötet
+	VAR	STRING	YouKilledMyFriend;			// jemand aus eigener oder befreundeter Gilde getÃ¶tet
+	var	STRING	YouKilledEBr;				// Erzbaron getÃ¶tet
+	VAR	STRING	YouKilledGur;				// Guru getÃ¶tet
+	VAR	STRING	YouKilledMage;				// Guru getÃ¶tet
 
-	VAR	STRING	YouKilledOCfolk;			// Gardist, Schatten oder Buddler getötet.
-	VAR	STRING	YouKilledNCfolk;			// Söldner, Organisator, Schürfer oder Bauer getötet
-	VAR	STRING	YouKilledPSIfolk;			// Templer oder Novize getötet
+	VAR	STRING	YouKilledOCfolk;			// Gardist, Schatten oder Buddler getÃ¶tet.
+	VAR	STRING	YouKilledNCfolk;			// SÃ¶ldner, Organisator, SchÃ¼rfer oder Bauer getÃ¶tet
+	VAR	STRING	YouKilledPSIfolk;			// Templer oder Novize getÃ¶tet
 
 	VAR	STRING	GetThingsRight;				//SC hat Mist gebaut. NSC sagt, "Das wieder hinzubiegen wird nicht einfach!"
 
-	VAR	STRING	YouDefeatedMeWell;			//Zu SC	freundlich/neutral:	Du hast	mich ganz schön	geplättet
+	VAR	STRING	YouDefeatedMeWell;			//Zu SC	freundlich/neutral:	Du hast	mich ganz schÃ¶n	geplÃ¤ttet
 
-// Ambient-Unterhaltungen zwischen zwei NSCs (gemurmelte Wortfetzen, die zufällig zu "Dialogen" zusammengewürfelt werden...
+// Ambient-Unterhaltungen zwischen zwei NSCs (gemurmelte Wortfetzen, die zufÃ¤llig zu "Dialogen" zusammengewÃ¼rfelt werden...
 	VAR	STRING	Smalltalk01;				// ...wenn Du meinst...
 	VAR	STRING	Smalltalk02;				// ...kann schon sein...
 	VAR	STRING	Smalltalk03;				// ...war nicht besonders schlau....
 	VAR	STRING	Smalltalk04;				// ...ich halt mich da lieber raus...
 	VAR	STRING	Smalltalk05;				// ...das ist wirklich nicht mein Problem...
-	VAR	STRING	Smalltalk06;				// ...war doch klar, daß das Ärger gibt...
-	VAR	STRING	Smalltalk07;				// ...aber behalt's für Dich, muß nicht gleich jeder wissen...
+	VAR	STRING	Smalltalk06;				// ...war doch klar, daÃŸ das Ã„rger gibt...
+	VAR	STRING	Smalltalk07;				// ...aber behalt's fÃ¼r Dich, muÃŸ nicht gleich jeder wissen...
 	VAR	STRING	Smalltalk08;				// ...das passiert mir nicht nochmal...
-	VAR	STRING	Smalltalk09;				// ...an der Gechichte muß wohl doch was dran sein...
-	VAR	STRING	Smalltalk10;				// ...man muß eben aufpassen was man rumerzählt...
+	VAR	STRING	Smalltalk09;				// ...an der Gechichte muÃŸ wohl doch was dran sein...
+	VAR	STRING	Smalltalk10;				// ...man muÃŸ eben aufpassen was man rumerzÃ¤hlt...
 	VAR	STRING	Smalltalk11;				// ...solange ich damit nichts zu tun habe...
-	VAR	STRING	Smalltalk12;				// ...man darf auch nicht alles glauben, was man hört...
+	VAR	STRING	Smalltalk12;				// ...man darf auch nicht alles glauben, was man hÃ¶rt...
 	VAR	STRING	Smalltalk13;				// ...in seiner Haut will ich trotzdem nicht stecken...
 	VAR	STRING	Smalltalk14;				// ...immer wieder die selbe Leier...
 	VAR	STRING	Smalltalk15;				// ...manche lernen eben garnichts dazu...
-	VAR	STRING	Smalltalk16;				// ...früher wäre das ganz anders gelaufen...
+	VAR	STRING	Smalltalk16;				// ...frÃ¼her wÃ¤re das ganz anders gelaufen...
 	VAR	STRING	Smalltalk17;				// ...gequatscht wird viel...
-	VAR	STRING	Smalltalk18;				// ...ich hör nicht mehr auf das Gefasel...
-	VAR	STRING	Smalltalk19;				// ...verlaß Dich auf jemanden und Du bist verlassen, das ist eben so...
-	VAR	STRING	Smalltalk20;				// ...ich glaube kaum, daß sich daran was ändern wird...
+	VAR	STRING	Smalltalk18;				// ...ich hÃ¶r nicht mehr auf das Gefasel...
+	VAR	STRING	Smalltalk19;				// ...verlaÃŸ Dich auf jemanden und Du bist verlassen, das ist eben so...
+	VAR	STRING	Smalltalk20;				// ...ich glaube kaum, daÃŸ sich daran was Ã¤ndern wird...
 	VAR	STRING	Smalltalk21;				// ...wahrscheinlich hast Du recht...
-	VAR	STRING	Smalltalk22;				// ...erstmal abwarten. Es wird nichts so heiß gegessen, wie es gekocht wird...
-	VAR	STRING	Smalltalk23;				// ...ich dachte, das wäre schon lange geklärt, aber das ist wohl nicht so...
-	VAR	STRING	Smalltalk24;				// ...laß uns lieber über was anderes reden...
+	VAR	STRING	Smalltalk22;				// ...erstmal abwarten. Es wird nichts so heiÃŸ gegessen, wie es gekocht wird...
+	VAR	STRING	Smalltalk23;				// ...ich dachte, das wÃ¤re schon lange geklÃ¤rt, aber das ist wohl nicht so...
+	VAR	STRING	Smalltalk24;				// ...laÃŸ uns lieber Ã¼ber was anderes reden...
 	VAR	STRING	Om;							// Ommm (Meditation)
 
 // SC Dialog
-	var string	SC_HeyTurnAround;			//SC: Hey du! (Nsc ansprechen, steht mit Rücken zu dir)                                   
+	var string	SC_HeyTurnAround;			//SC: Hey du! (Nsc ansprechen, steht mit RÃ¼cken zu dir)                                   
 	var string	SC_HeyWaitASecond;			//SC: Warte mal! (Nsc im vorgeigehen anhalten)                                            
 	var string DoesntWork;				
 	var string PickBroke;				
@@ -238,278 +238,278 @@ instance SVM_0 (C_SVM)				// wird nur intern gebraucht...
 
 
 // ********************************
-// 		Die SVM-Instanzen		(ToDo: News noch überarbeiten wie in Prototypen)
+// 		Die SVM-Instanzen		(ToDo: News noch Ã¼berarbeiten wie in Prototypen)
 // ********************************
 
 // Die einzelnen Instanzen der SVMs
-// Diese müssen	immer "SVM_x" heissen, wobei x die VoiceNummer ist.
+// Diese mÃ¼ssen	immer "SVM_x" heissen, wobei x die VoiceNummer ist.
 
-instance SVM_1 (C_SVM)	//Malocher (Volk, Schürfer)	Nörgler, Alkoholiker, schimpft über	alles - zieht Kraft aus seinem Hass
+instance SVM_1 (C_SVM)	//Malocher (Volk, SchÃ¼rfer)	NÃ¶rgler, Alkoholiker, schimpft Ã¼ber	alles - zieht Kraft aus seinem Hass
 
 {
-	StopMagic					=	"SVM_1_StopMagic"					;//¡Detén esa hechicería!
-	ISaidStopMagic				=	"SVM_1_ISaidStopMagic"				;//¿Quieres que te dé una paliza? ¡¡¡Detenla de inmediato!!!
-	WeaponDown					=	"SVM_1_WeaponDown"					;//¡Deja esa arma!
-	ISaidWeaponDown				=	"SVM_1_ISaidWeaponDown"				;//¡Aparta de una vez esa maldita arma!
-	WatchYourAim				=	"SVM_1_WatchYourAim"				;//¡¡Déjala!!
-	WatchYourAimAngry			=	"SVM_1_WatchYourAimAngry"			;//¡Si quieres que te parta la boca, apúntame otra vez!
-	WhatAreYouDoing				=	"SVM_1_WhatAreYouDoing"				;//¡Cuidado! Si intentas eso otra vez te parto la jeta.
-	LetsForgetOurLittleFight	=	"SVM_1_LetsForgetOurLittleFight"	;//Olvidemos esa discusión sin importancia, ¿vale?
-	Strange						=	"SVM_1_Strange"						;//¡Lárgate, bastardo!
-	DieMonster					=	"SVM_1_DieMonster"					;//¡Maldito hijo de perra!
-	DieMortalEnemy				=	"SVM_1_DieMortalEnemy"				;//¡Te vas a enterar!
+	StopMagic					=	"SVM_1_StopMagic"					;//Â¡DetÃ©n esa hechicerÃ­a!
+	ISaidStopMagic				=	"SVM_1_ISaidStopMagic"				;//Â¿Quieres que te dÃ© una paliza? Â¡Â¡Â¡Detenla de inmediato!!!
+	WeaponDown					=	"SVM_1_WeaponDown"					;//Â¡Deja esa arma!
+	ISaidWeaponDown				=	"SVM_1_ISaidWeaponDown"				;//Â¡Aparta de una vez esa maldita arma!
+	WatchYourAim				=	"SVM_1_WatchYourAim"				;//Â¡Â¡DÃ©jala!!
+	WatchYourAimAngry			=	"SVM_1_WatchYourAimAngry"			;//Â¡Si quieres que te parta la boca, apÃºntame otra vez!
+	WhatAreYouDoing				=	"SVM_1_WhatAreYouDoing"				;//Â¡Cuidado! Si intentas eso otra vez te parto la jeta.
+	LetsForgetOurLittleFight	=	"SVM_1_LetsForgetOurLittleFight"	;//Olvidemos esa discusiÃ³n sin importancia, Â¿vale?
+	Strange						=	"SVM_1_Strange"						;//Â¡LÃ¡rgate, bastardo!
+	DieMonster					=	"SVM_1_DieMonster"					;//Â¡Maldito hijo de perra!
+	DieMortalEnemy				=	"SVM_1_DieMortalEnemy"				;//Â¡Te vas a enterar!
 	NowWait						=	"SVM_1_NowWait"						;//Te voy a partir la cara...
-	YouStillNotHaveEnough		=	"SVM_1_YouStillNotHaveEnough"		;//¡Parece que quieres que te parta la cara!
-	YouAskedForIt				=	"SVM_1_YouAskedForIt"				;//¡Lo estabas pidiendo!
-	NowWaitIntruder				= 	"SVM_1_NowWaitIntruder"				;//Haré que tengan que sacarte en cachitos.
-	IWillTeachYouRespectForForeignProperty	=	"SVM_1_IWillTeachYouRespectForForeignProperty"	;//¡Te advertí que apartaras tus manazas de mis cosas!
-	DirtyThief					=	"SVM_1_DirtyThief"					;//¡Te mataré, ladrón!
-	YouAttackedMyCharge			=	"SVM_1_YouAttackedMyCharge"			;//¡Nadie se mete con mis amigos!
-	YouKilledOneOfUs			=	"SVM_1_YouKilledOneOfUs"			;//Has sacudido a uno de los nuestros. ¡Ahora me toca a mí ZURRARTE!
-	Dead						=	"SVM_1_Dead"						;//¡Aaaaargh!
+	YouStillNotHaveEnough		=	"SVM_1_YouStillNotHaveEnough"		;//Â¡Parece que quieres que te parta la cara!
+	YouAskedForIt				=	"SVM_1_YouAskedForIt"				;//Â¡Lo estabas pidiendo!
+	NowWaitIntruder				= 	"SVM_1_NowWaitIntruder"				;//HarÃ© que tengan que sacarte en cachitos.
+	IWillTeachYouRespectForForeignProperty	=	"SVM_1_IWillTeachYouRespectForForeignProperty"	;//Â¡Te advertÃ­ que apartaras tus manazas de mis cosas!
+	DirtyThief					=	"SVM_1_DirtyThief"					;//Â¡Te matarÃ©, ladrÃ³n!
+	YouAttackedMyCharge			=	"SVM_1_YouAttackedMyCharge"			;//Â¡Nadie se mete con mis amigos!
+	YouKilledOneOfUs			=	"SVM_1_YouKilledOneOfUs"			;//Has sacudido a uno de los nuestros. Â¡Ahora me toca a mÃ­ ZURRARTE!
+	Dead						=	"SVM_1_Dead"						;//Â¡Aaaaargh!
 	Aargh_1						=	"SVM_1_Aargh_1"						;//Aargh
 	Aargh_2						=	"SVM_1_Aargh_2"						;//Aargh
 	Aargh_3						=	"SVM_1_Aargh_3"						;//Aargh
-	Berzerk						=	"SVM_1_Berzerk"						;//¡¡¡UUAAARRGGGHHH!!!
-	YoullBeSorryForThis			=	"SVM_1_YoullBeSorryForThis"			;//¡Te arrepentirás de eso!
-	YesYes						=	"SVM_1_YesYes"						;//¡Tranquilo! ¡Has vencido!
-	ShitWhatAMonster			=	"SVM_1_ShitWhatAMonster"			;//¡Mierda! ¡Corre todo lo que puedas!
-	Help						=	"SVM_1_Help"						;//¡Maldita sea!
-	WeWillMeetAgain				=	"SVM_1_WeWillMeetAgain"				;//¡Nos volveremos a ver!
-	NeverTryThatAgain			=	"SVM_1_NeverTryThatAgain"			;//Intenta eso otra vez y lo lamentarás.
-	ITakeYourWeapon				=	"SVM_1_ITakeYourWeapon"				;//¡Es un arma preciosa! ¡Dámela!
-	ITookYourOre				=	"SVM_1_ITookYourOre"				;//¡Gracias por el mineral, héroe!
-	ShitNoOre					=	"SVM_1_ShitNoOre"					;//¡Pobre imbécil, ni siquiera tienes mineral!
-	HandsOff					=	"SVM_1_HandsOff"					;//¡Quita las manos!
-	GetOutOfHere				=	"SVM_1_GetOutOfHere"				;//¡Pírate!
-	YouViolatedForbiddenTerritory=	"SVM_1_YouViolatedForbiddenTerritory";//¡Oye! ¿Cómo has entrado aquí?
-	YouWannaFoolMe				=	"SVM_1_YouWannaFoolMe"				;//¿Crees que soy estúpido?
-	WhatsThisSupposedToBe		=	"SVM_1_WhatsThisSupposedToBe"		;//¡Eh, tú! ¿Qué haces rondando por aquí?
-	WhyAreYouInHere				=	"SVM_1_WhyYouAreInHere"				;//¡Sal de mi cabaña o llamaré a los guardias!
-	WhatDidYouInThere			=	"SVM_1_WhatDidYouInThere"			;//¡Aquí no pintas nada! ¡Lárgate!
-	WiseMove					=	"SVM_1_WiseMove"					;//¡Chico listo!
-	Alarm						=	"SVM_1_Alarm"						;//¡Guardias! ¡Por aquí!
-	IntruderAlert				= 	"SVM_1_IntruderAlert"				;//¡¡¡ALERTA!!! ¡¡¡INTRUSO!!!
-	BehindYou					=	"SVM_1_BehindYou"					;//¡Detrás de ti!
-	TheresAFight				=	"SVM_1_TheresAFight"				;//¡Ah, una pelea!
-	HeyHeyHey					=	"SVM_1_HeyHeyHey"					;//¡Más fuerte!
-	CheerFight					=	"SVM_1_CheerFight"					;//¡Lucháis como mujeres!
-	CheerFriend					=	"SVM_1_CheerFriend"					;//¡Acaba con él!
-	Ooh							=	"SVM_1_Ooh"							;//¡Devuélvesela!
-	YeahWellDone				=	"SVM_1_YeahWellDone"				;//¡Dale!
-	RunCoward					=	"SVM_1_RunCoward"					;//¡Vuelve, mariquita!
-	HeDefeatedHim				=	"SVM_1_HeDefeatedHim"				;//¡Ya ha tenido bastante!
-	HeDeservedIt				=	"SVM_1_HeDeservedIt"				;//¡Se lo merece!
-	HeKilledHim					=	"SVM_1_HeKilledHim"					;//¿Por qué lo has matado? ¡Has firmado tu sentencia de muerte!
-	ItWasAGoodFight				=	"SVM_1_ItWasAGoodFight"				;//¡Buena pelea!
+	Berzerk						=	"SVM_1_Berzerk"						;//Â¡Â¡Â¡UUAAARRGGGHHH!!!
+	YoullBeSorryForThis			=	"SVM_1_YoullBeSorryForThis"			;//Â¡Te arrepentirÃ¡s de eso!
+	YesYes						=	"SVM_1_YesYes"						;//Â¡Tranquilo! Â¡Has vencido!
+	ShitWhatAMonster			=	"SVM_1_ShitWhatAMonster"			;//Â¡Mierda! Â¡Corre todo lo que puedas!
+	Help						=	"SVM_1_Help"						;//Â¡Maldita sea!
+	WeWillMeetAgain				=	"SVM_1_WeWillMeetAgain"				;//Â¡Nos volveremos a ver!
+	NeverTryThatAgain			=	"SVM_1_NeverTryThatAgain"			;//Intenta eso otra vez y lo lamentarÃ¡s.
+	ITakeYourWeapon				=	"SVM_1_ITakeYourWeapon"				;//Â¡Es un arma preciosa! Â¡DÃ¡mela!
+	ITookYourOre				=	"SVM_1_ITookYourOre"				;//Â¡Gracias por el mineral, hÃ©roe!
+	ShitNoOre					=	"SVM_1_ShitNoOre"					;//Â¡Pobre imbÃ©cil, ni siquiera tienes mineral!
+	HandsOff					=	"SVM_1_HandsOff"					;//Â¡Quita las manos!
+	GetOutOfHere				=	"SVM_1_GetOutOfHere"				;//Â¡PÃ­rate!
+	YouViolatedForbiddenTerritory=	"SVM_1_YouViolatedForbiddenTerritory";//Â¡Oye! Â¿CÃ³mo has entrado aquÃ­?
+	YouWannaFoolMe				=	"SVM_1_YouWannaFoolMe"				;//Â¿Crees que soy estÃºpido?
+	WhatsThisSupposedToBe		=	"SVM_1_WhatsThisSupposedToBe"		;//Â¡Eh, tÃº! Â¿QuÃ© haces rondando por aquÃ­?
+	WhyAreYouInHere				=	"SVM_1_WhyYouAreInHere"				;//Â¡Sal de mi cabaÃ±a o llamarÃ© a los guardias!
+	WhatDidYouInThere			=	"SVM_1_WhatDidYouInThere"			;//Â¡AquÃ­ no pintas nada! Â¡LÃ¡rgate!
+	WiseMove					=	"SVM_1_WiseMove"					;//Â¡Chico listo!
+	Alarm						=	"SVM_1_Alarm"						;//Â¡Guardias! Â¡Por aquÃ­!
+	IntruderAlert				= 	"SVM_1_IntruderAlert"				;//Â¡Â¡Â¡ALERTA!!! Â¡Â¡Â¡INTRUSO!!!
+	BehindYou					=	"SVM_1_BehindYou"					;//Â¡DetrÃ¡s de ti!
+	TheresAFight				=	"SVM_1_TheresAFight"				;//Â¡Ah, una pelea!
+	HeyHeyHey					=	"SVM_1_HeyHeyHey"					;//Â¡MÃ¡s fuerte!
+	CheerFight					=	"SVM_1_CheerFight"					;//Â¡LuchÃ¡is como mujeres!
+	CheerFriend					=	"SVM_1_CheerFriend"					;//Â¡Acaba con Ã©l!
+	Ooh							=	"SVM_1_Ooh"							;//Â¡DevuÃ©lvesela!
+	YeahWellDone				=	"SVM_1_YeahWellDone"				;//Â¡Dale!
+	RunCoward					=	"SVM_1_RunCoward"					;//Â¡Vuelve, mariquita!
+	HeDefeatedHim				=	"SVM_1_HeDefeatedHim"				;//Â¡Ya ha tenido bastante!
+	HeDeservedIt				=	"SVM_1_HeDeservedIt"				;//Â¡Se lo merece!
+	HeKilledHim					=	"SVM_1_HeKilledHim"					;//Â¿Por quÃ© lo has matado? Â¡Has firmado tu sentencia de muerte!
+	ItWasAGoodFight				=	"SVM_1_ItWasAGoodFight"				;//Â¡Buena pelea!
 	Awake						=	"SVM_1_Awake"						;//Aaaau (bostezo)
 	FriendlyGreetings			=	"SVM_1_FriendlyGreetings"			;//Hola
-	ALGreetings					=	"SVM_1_ALGreetings"					;//¡Por Gómez!
-	MageGreetings				=	"SVM_1_MageGreetings"				;//¡Por el honor de la magia!
-	SectGreetings				=	"SVM_1_SectGreetings"				;//¡Despierta!
-	ThereHeIs					= 	"SVM_1_ThereHeIs"					;//Está allí.
-	NoLearnNoPoints				= 	"SVM_1_NoLearnNoPoints"				;//Vuelve en cuanto tengas más experiencia.
-	NoLearnOverMax				= 	"SVM_1_NoLearnOverMax"				;//Tus posibilidades no dan más de sí. Deberías aprender algo diferente.
-	NoLearnYouAlreadyKnow		=	"SVM_1_NoLearnYouAlreadyKnow"		;//¡Tienes que llegar al nivel avanzado antes de convertirte en maestro!
-	NoLearnYoureBetter			=	"SVM_1_NoLearnYoureBetter"			;//¡Ya estás por encima de ese nivel!
-	HeyYou						=	"SVM_1_HeyYou"						;//¡Oye, tú!
-	NotNow						=	"SVM_1_NotNow"						;//¡Ahora no!
-	WhatDoYouWant				=	"SVM_1_WhatDoYouWant"				;//¿Qué quieres?
-	ISaidWhatDoYouWant			=	"SVM_1_ISaidWhatDoYouWant"			;//¿Puedo hacer algo por ti?
-	MakeWay						=	"SVM_1_MakeWay"						;//¡Déjame pasar!
-	OutOfMyWay					=	"SVM_1_OutOfMyWay"					;//¡Quítate de en medio, tío!
-	YouDeafOrWhat				=	"SVM_1_YouDeafOrWhat"				;//¿Estás sordo? ¡¡APARTA!!
-	LookingForTroubleAgain		=	"SVM_1_LookingForTroubleAgain"		;//¿Otra vez buscas líos?
-	LookAway					=	"SVM_1_LookAway"					;//¡Uhhhhh! ¡No he visto nada!
-	OkayKeepIt					=	"SVM_1_OkayKeepIt"					;//¡Vale, vale! ¡Quédatelo!
-	WhatsThat					=	"SVM_1_WhatsThat"					;//¿Qué ha sido eso?
-	ThatsMyWeapon				=	"SVM_1_ThatsMyWeapon"				;//¡Vas por ahí con MI arma!
-	GiveItToMe					=	"SVM_1_GiveItToMe"					;//¡Dame eso!
-	YouCanKeeptheCrap			=	"SVM_1_YouCanKeeptheCrap"			;//¡Entonces quédatelo! ¡No lo necesito!
+	ALGreetings					=	"SVM_1_ALGreetings"					;//Â¡Por GÃ³mez!
+	MageGreetings				=	"SVM_1_MageGreetings"				;//Â¡Por el honor de la magia!
+	SectGreetings				=	"SVM_1_SectGreetings"				;//Â¡Despierta!
+	ThereHeIs					= 	"SVM_1_ThereHeIs"					;//EstÃ¡ allÃ­.
+	NoLearnNoPoints				= 	"SVM_1_NoLearnNoPoints"				;//Vuelve en cuanto tengas mÃ¡s experiencia.
+	NoLearnOverMax				= 	"SVM_1_NoLearnOverMax"				;//Tus posibilidades no dan mÃ¡s de sÃ­. DeberÃ­as aprender algo diferente.
+	NoLearnYouAlreadyKnow		=	"SVM_1_NoLearnYouAlreadyKnow"		;//Â¡Tienes que llegar al nivel avanzado antes de convertirte en maestro!
+	NoLearnYoureBetter			=	"SVM_1_NoLearnYoureBetter"			;//Â¡Ya estÃ¡s por encima de ese nivel!
+	HeyYou						=	"SVM_1_HeyYou"						;//Â¡Oye, tÃº!
+	NotNow						=	"SVM_1_NotNow"						;//Â¡Ahora no!
+	WhatDoYouWant				=	"SVM_1_WhatDoYouWant"				;//Â¿QuÃ© quieres?
+	ISaidWhatDoYouWant			=	"SVM_1_ISaidWhatDoYouWant"			;//Â¿Puedo hacer algo por ti?
+	MakeWay						=	"SVM_1_MakeWay"						;//Â¡DÃ©jame pasar!
+	OutOfMyWay					=	"SVM_1_OutOfMyWay"					;//Â¡QuÃ­tate de en medio, tÃ­o!
+	YouDeafOrWhat				=	"SVM_1_YouDeafOrWhat"				;//Â¿EstÃ¡s sordo? Â¡Â¡APARTA!!
+	LookingForTroubleAgain		=	"SVM_1_LookingForTroubleAgain"		;//Â¿Otra vez buscas lÃ­os?
+	LookAway					=	"SVM_1_LookAway"					;//Â¡Uhhhhh! Â¡No he visto nada!
+	OkayKeepIt					=	"SVM_1_OkayKeepIt"					;//Â¡Vale, vale! Â¡QuÃ©datelo!
+	WhatsThat					=	"SVM_1_WhatsThat"					;//Â¿QuÃ© ha sido eso?
+	ThatsMyWeapon				=	"SVM_1_ThatsMyWeapon"				;//Â¡Vas por ahÃ­ con MI arma!
+	GiveItToMe					=	"SVM_1_GiveItToMe"					;//Â¡Dame eso!
+	YouCanKeeptheCrap			=	"SVM_1_YouCanKeeptheCrap"			;//Â¡Entonces quÃ©datelo! Â¡No lo necesito!
 	TheyKilledMyFriend			=	"SVM_1_TheyKilledMyFriend"			;//Cogieron a uno de los nuestros. Si le pongo las manos encima a ese cerdo...
-	YouDisturbedMySlumber		=	"SVM_1_YouDisturbedMySlumber"		;//Maldita sea, ¿por qué no me has despertado?
-	SuckerGotSome				=	"SVM_1_SuckerGotSome"				;//¿Te han dado una paliza? ¡Te lo mereces!
-	SuckerDefeatedEBr			=	"SVM_1_SuckerDefeatedEBr"			;//¡Has tumbado a un magnate del mineral! ¡Está realmente furioso contigo!
-	SuckerDefeatedGur			=	"SVM_1_SuckerDefeatedGur"			;//Has tumbado a un gurú. ¡Parece que te las apañas para atraer problemas como un imán!
-	SuckerDefeatedMage			=	"SVM_1_SuckerDefeatedMage"			;//¡Vencer a un mago es muy mala idea!
-	SuckerDefeatedNov_Guard		= 	"SVM_1_SuckerDefeatedNov_Guard"		;//¡No puedes ir por ahí pegando a los novicios!
-	SuckerDefeatedVlk_Guard		= 	"SVM_1_SuckerDefeatedVlk_Guard"		;//¡Deja en paz a mis muchachos!
+	YouDisturbedMySlumber		=	"SVM_1_YouDisturbedMySlumber"		;//Maldita sea, Â¿por quÃ© no me has despertado?
+	SuckerGotSome				=	"SVM_1_SuckerGotSome"				;//Â¿Te han dado una paliza? Â¡Te lo mereces!
+	SuckerDefeatedEBr			=	"SVM_1_SuckerDefeatedEBr"			;//Â¡Has tumbado a un magnate del mineral! Â¡EstÃ¡ realmente furioso contigo!
+	SuckerDefeatedGur			=	"SVM_1_SuckerDefeatedGur"			;//Has tumbado a un gurÃº. Â¡Parece que te las apaÃ±as para atraer problemas como un imÃ¡n!
+	SuckerDefeatedMage			=	"SVM_1_SuckerDefeatedMage"			;//Â¡Vencer a un mago es muy mala idea!
+	SuckerDefeatedNov_Guard		= 	"SVM_1_SuckerDefeatedNov_Guard"		;//Â¡No puedes ir por ahÃ­ pegando a los novicios!
+	SuckerDefeatedVlk_Guard		= 	"SVM_1_SuckerDefeatedVlk_Guard"		;//Â¡Deja en paz a mis muchachos!
 	YouDefeatedMyComrade		=	"SVM_1_YouDefeatedMyComrade"		;//Has zurrado a mi amigo...
-	YouDefeatedNOV_Guard		=	"SVM_1_YouDefeatedNOV_Guard"		;//¡No se tolerará que causes problemas!
-	YouDefeatedVLK_Guard		=	"SVM_1_YouDefeatedVLK_Guard"		;//¡Si golpeas a alguien que esté bajo mi protección, habrá repercusiones!
-	YouStoleFromMe				=	"SVM_1_YouStoleFromMe"				;//¡Capullo, me has robado! ¡No vuelvas a intentarlo!
-	YouStoleFromUs				=	"SVM_1_YouStoleFromUs"				;//¡Queremos recuperar nuestras cosas! ¡Dánoslas!
-	YouStoleFromEBr				=	"SVM_1_YouStoleFromEBr"				;//¡Has robado a los magnates del mineral! ¿Para qué demonios lo has hecho?
-	YouStoleFromGur				=	"SVM_1_YouStoleFromGur"				;//¿Has robado a los gurús? Lástima que te pillaran.
-	StoleFromMage				=	"SVM_1_StoleFromMage"				;//¡Has robado a los magos! ¡Qué idea más estúpida!
-	YouKilledMyFriend			=	"SVM_1_YouKilledMyFriend"			;//¡Uno de los nuestros ha muerto y tú estás implicado! ¡Si cometes el más mínimo error, morirás!
-	YouKilledEBr				=	"SVM_1_YouKilledEBr"				;//¡Has matado a un magnate del mineral! Tío, ¿estás loco?
-	YouKilledGur				=	"SVM_1_YouKilledGur"				;//¡Has matado a un gurú! ¡No me lo puedo creer!
-	YouKilledMage				=	"SVM_1_YouKilledMage"				;//¡Has matado a un mago! ¿Cómo tienes pensado justificarlo?
+	YouDefeatedNOV_Guard		=	"SVM_1_YouDefeatedNOV_Guard"		;//Â¡No se tolerarÃ¡ que causes problemas!
+	YouDefeatedVLK_Guard		=	"SVM_1_YouDefeatedVLK_Guard"		;//Â¡Si golpeas a alguien que estÃ© bajo mi protecciÃ³n, habrÃ¡ repercusiones!
+	YouStoleFromMe				=	"SVM_1_YouStoleFromMe"				;//Â¡Capullo, me has robado! Â¡No vuelvas a intentarlo!
+	YouStoleFromUs				=	"SVM_1_YouStoleFromUs"				;//Â¡Queremos recuperar nuestras cosas! Â¡DÃ¡noslas!
+	YouStoleFromEBr				=	"SVM_1_YouStoleFromEBr"				;//Â¡Has robado a los magnates del mineral! Â¿Para quÃ© demonios lo has hecho?
+	YouStoleFromGur				=	"SVM_1_YouStoleFromGur"				;//Â¿Has robado a los gurÃºs? LÃ¡stima que te pillaran.
+	StoleFromMage				=	"SVM_1_StoleFromMage"				;//Â¡Has robado a los magos! Â¡QuÃ© idea mÃ¡s estÃºpida!
+	YouKilledMyFriend			=	"SVM_1_YouKilledMyFriend"			;//Â¡Uno de los nuestros ha muerto y tÃº estÃ¡s implicado! Â¡Si cometes el mÃ¡s mÃ­nimo error, morirÃ¡s!
+	YouKilledEBr				=	"SVM_1_YouKilledEBr"				;//Â¡Has matado a un magnate del mineral! TÃ­o, Â¿estÃ¡s loco?
+	YouKilledGur				=	"SVM_1_YouKilledGur"				;//Â¡Has matado a un gurÃº! Â¡No me lo puedo creer!
+	YouKilledMage				=	"SVM_1_YouKilledMage"				;//Â¡Has matado a un mago! Â¿CÃ³mo tienes pensado justificarlo?
 	YouKilledOCfolk				=	"SVM_1_YouKilledOCfolk"				;//Ha muerto un miembro del Campamento Viejo, y se ha relacionado tu nombre con la muerte...
-	YouKilledNCfolk				=	"SVM_1_YouKilledNCfolk"				;//¡El Campamento Nuevo ha sufrido una pérdida trágica, y parece que estás implicado!
-	YouKilledPSIfolk			=	"SVM_1_YouKilledPSIfolk"			;//¡La hermandad tiene un fiel menos, y su muerte pesa sobre tu conciencia!
-	GetThingsRight				=	"SVM_1_GetThingsRight"				;//¡No será fácil solucionar esto!
-	YouDefeatedMeWell			=	"SVM_1_YouDefeatedMeWell"			;//¡Ha sido una lucha justa! ¡Me has dado una buena tunda, tío!
+	YouKilledNCfolk				=	"SVM_1_YouKilledNCfolk"				;//Â¡El Campamento Nuevo ha sufrido una pÃ©rdida trÃ¡gica, y parece que estÃ¡s implicado!
+	YouKilledPSIfolk			=	"SVM_1_YouKilledPSIfolk"			;//Â¡La hermandad tiene un fiel menos, y su muerte pesa sobre tu conciencia!
+	GetThingsRight				=	"SVM_1_GetThingsRight"				;//Â¡No serÃ¡ fÃ¡cil solucionar esto!
+	YouDefeatedMeWell			=	"SVM_1_YouDefeatedMeWell"			;//Â¡Ha sido una lucha justa! Â¡Me has dado una buena tunda, tÃ­o!
 	Smalltalk01					=	"SVM_1_Smalltalk01"					;// ...lo peor...
-	Smalltalk02					=	"SVM_1_Smalltalk02"					;// ...tal vez, pero ¿qué más da?...
-	Smalltalk03					=	"SVM_1_Smalltalk03"					;// ...totalmente imbécil...
-	Smalltalk04					=	"SVM_1_Smalltalk04"					;// ...será mejor que me mantenga al margen...
+	Smalltalk02					=	"SVM_1_Smalltalk02"					;// ...tal vez, pero Â¿quÃ© mÃ¡s da?...
+	Smalltalk03					=	"SVM_1_Smalltalk03"					;// ...totalmente imbÃ©cil...
+	Smalltalk04					=	"SVM_1_Smalltalk04"					;// ...serÃ¡ mejor que me mantenga al margen...
 	Smalltalk05					=	"SVM_1_Smalltalk05"					;// ...no es mi problema...
-	Smalltalk06					=	"SVM_1_Smalltalk06"					;// ...era evidente que habría problemas...
-	Smalltalk07					=	"SVM_1_Smalltalk07"					;// ...¿por qué sucede eso una y otra vez?...
-	Smalltalk08					=	"SVM_1_Smalltalk08"					;// ...no volverá a suceder...
+	Smalltalk06					=	"SVM_1_Smalltalk06"					;// ...era evidente que habrÃ­a problemas...
+	Smalltalk07					=	"SVM_1_Smalltalk07"					;// ...Â¿por quÃ© sucede eso una y otra vez?...
+	Smalltalk08					=	"SVM_1_Smalltalk08"					;// ...no volverÃ¡ a suceder...
 	Smalltalk09					=	"SVM_1_Smalltalk09"					;// ...debe de haber algo de cierto en esa historia...
-	Smalltalk10					=	"SVM_1_Smalltalk10"					;// ...no digas tantas chorradas, sí, sí...
+	Smalltalk10					=	"SVM_1_Smalltalk10"					;// ...no digas tantas chorradas, sÃ­, sÃ­...
 	Smalltalk11					=	"SVM_1_Smalltalk11"					;// ...mientras no me vea implicado...
-	Smalltalk12					=	"SVM_1_Smalltalk12"					;// ...no deberías creerte todo...
-	Smalltalk13					=	"SVM_1_Smalltalk13"					;// ...no me gustaría estar en su lugar...
+	Smalltalk12					=	"SVM_1_Smalltalk12"					;// ...no deberÃ­as creerte todo...
+	Smalltalk13					=	"SVM_1_Smalltalk13"					;// ...no me gustarÃ­a estar en su lugar...
 	Smalltalk14					=	"SVM_1_Smalltalk14"					;// ...lo mismo de siempre...
 	Smalltalk15					=	"SVM_1_Smalltalk15"					;// ...algunos no aprenden...
-	Smalltalk16					=	"SVM_1_Smalltalk16"					;// ...hubo un tiempo en que las cosas habrían sucedido de manera muy distinta...
+	Smalltalk16					=	"SVM_1_Smalltalk16"					;// ...hubo un tiempo en que las cosas habrÃ­an sucedido de manera muy distinta...
 	Smalltalk17					=	"SVM_1_Smalltalk17"					;// ...la gente no para de hablar...
 	Smalltalk18					=	"SVM_1_Smalltalk18"					;// ...ya no hago caso de los chismorreos...
-	Smalltalk19					=	"SVM_1_Smalltalk19"					;// ...confías en alguien y te metes en un lío; eso es lo que pasa...
-	Smalltalk20					=	"SVM_1_Smalltalk20"					;// ...me extraña que vaya a cambiar...
-	Smalltalk21					=	"SVM_1_Smalltalk21"					;// ...seguramente tengas razón...
-	Smalltalk22					=	"SVM_1_Smalltalk22"					;// ...espera. Será mejor no apresurarse...
-	Smalltalk23					=	"SVM_1_Smalltalk23"					;// ...creía que eso se había resuelto hace mucho...
+	Smalltalk19					=	"SVM_1_Smalltalk19"					;// ...confÃ­as en alguien y te metes en un lÃ­o; eso es lo que pasa...
+	Smalltalk20					=	"SVM_1_Smalltalk20"					;// ...me extraÃ±a que vaya a cambiar...
+	Smalltalk21					=	"SVM_1_Smalltalk21"					;// ...seguramente tengas razÃ³n...
+	Smalltalk22					=	"SVM_1_Smalltalk22"					;// ...espera. SerÃ¡ mejor no apresurarse...
+	Smalltalk23					=	"SVM_1_Smalltalk23"					;// ...creÃ­a que eso se habÃ­a resuelto hace mucho...
 	Smalltalk24					=	"SVM_1_Smalltalk24"					;// ...hablemos de otra cosa...
 	Om							= 	"SVM_1_Om"							;//Ommm
 };
 
 
-//SVM_2	// Misstrauisch (Volk, Bauern, Novizen, MILTEN) Misstrauisch. Defensiv. Angst in was reingezogen zu werden. Klug. Nov: Glauben durch Einschüchterung
+//SVM_2	// Misstrauisch (Volk, Bauern, Novizen, MILTEN) Misstrauisch. Defensiv. Angst in was reingezogen zu werden. Klug. Nov: Glauben durch EinschÃ¼chterung
 
 instance SVM_2 (C_SVM)				// Misstrauisch
 {
-	StopMagic					=	"SVM_2_StopMagic"					;//¡Sin hechicería!
-	ISaidStopMagic				=	"SVM_2_ISaidStopMagic"				;//¡OYE! ¡He dicho que sin magia!
-	WeaponDown					=	"SVM_2_WeaponDown"					;//¡Vamos, aparta eso!
-	ISaidWeaponDown				=	"SVM_2_ISaidWeaponDown"				;//¡Deja esa arma!
-	WatchYourAim				=	"SVM_2_WatchYourAim"				;//¡Cuidado a dónde apuntas!
-	WatchYourAimAngry			=	"SVM_2_WatchYourAimAngry"			;//¡Si sigues apuntándome, me lo voy a tomar como algo personal!
-	WhatAreYouDoing				=	"SVM_2_WhatAreYouDoing"				;//Oye, ¿a qué venía eso?
-	LetsForgetOurLittleFight	=	"SVM_2_LetsForgetOurLittleFight"	;//Olvidémoslo, ¿vale?
-	Strange						=	"SVM_2_Strange"						;//¡Qué raro! ¿Dónde se ha ido?
-	DieMonster					=	"SVM_2_DieMonster"					;//¡Otro!
-	DieMortalEnemy				=	"SVM_2_DieMortalEnemy"				;//¡Me temo que tengo que eliminarte!
-	NowWait						=	"SVM_2_NowWait"						;//¡Es por tu culpa!
-	YouStillNotHaveEnough		=	"SVM_2_YouStillNotHaveEnough"		;//¿Aún no has tenido bastante?
-	YouAskedForIt				=	"SVM_2_YouAskedForIt"				;//¡Si eso es lo que quieres!
-	NowWaitIntruder				= 	"SVM_2_NowWaitIntruder"				;//¡Sabes que aquí no pintas nada!
-	IWillTeachYouRespectForForeignProperty	=	"SVM_2_IWillTeachYouRespectForForeignProperty"	;//¿Por qué toqueteas cosas que no son tuyas?
-	DirtyThief					=	"SVM_2_DirtyThief"					;//¡Me has robado! ¡No lo olvidaré!
-	YouAttackedMyCharge			=	"SVM_2_YouAttackedMyCharge"			;//¡Nadie se mete con mis chicos!
-	YouKilledOneOfUs			=	"SVM_2_YouKilledOneOfUs"			;//¡Has matado a uno de los nuestros! ¡Pagarás por ello!
-	Dead						=	"SVM_2_Dead"						;//¡Aaargh!
+	StopMagic					=	"SVM_2_StopMagic"					;//Â¡Sin hechicerÃ­a!
+	ISaidStopMagic				=	"SVM_2_ISaidStopMagic"				;//Â¡OYE! Â¡He dicho que sin magia!
+	WeaponDown					=	"SVM_2_WeaponDown"					;//Â¡Vamos, aparta eso!
+	ISaidWeaponDown				=	"SVM_2_ISaidWeaponDown"				;//Â¡Deja esa arma!
+	WatchYourAim				=	"SVM_2_WatchYourAim"				;//Â¡Cuidado a dÃ³nde apuntas!
+	WatchYourAimAngry			=	"SVM_2_WatchYourAimAngry"			;//Â¡Si sigues apuntÃ¡ndome, me lo voy a tomar como algo personal!
+	WhatAreYouDoing				=	"SVM_2_WhatAreYouDoing"				;//Oye, Â¿a quÃ© venÃ­a eso?
+	LetsForgetOurLittleFight	=	"SVM_2_LetsForgetOurLittleFight"	;//OlvidÃ©moslo, Â¿vale?
+	Strange						=	"SVM_2_Strange"						;//Â¡QuÃ© raro! Â¿DÃ³nde se ha ido?
+	DieMonster					=	"SVM_2_DieMonster"					;//Â¡Otro!
+	DieMortalEnemy				=	"SVM_2_DieMortalEnemy"				;//Â¡Me temo que tengo que eliminarte!
+	NowWait						=	"SVM_2_NowWait"						;//Â¡Es por tu culpa!
+	YouStillNotHaveEnough		=	"SVM_2_YouStillNotHaveEnough"		;//Â¿AÃºn no has tenido bastante?
+	YouAskedForIt				=	"SVM_2_YouAskedForIt"				;//Â¡Si eso es lo que quieres!
+	NowWaitIntruder				= 	"SVM_2_NowWaitIntruder"				;//Â¡Sabes que aquÃ­ no pintas nada!
+	IWillTeachYouRespectForForeignProperty	=	"SVM_2_IWillTeachYouRespectForForeignProperty"	;//Â¿Por quÃ© toqueteas cosas que no son tuyas?
+	DirtyThief					=	"SVM_2_DirtyThief"					;//Â¡Me has robado! Â¡No lo olvidarÃ©!
+	YouAttackedMyCharge			=	"SVM_2_YouAttackedMyCharge"			;//Â¡Nadie se mete con mis chicos!
+	YouKilledOneOfUs			=	"SVM_2_YouKilledOneOfUs"			;//Â¡Has matado a uno de los nuestros! Â¡PagarÃ¡s por ello!
+	Dead						=	"SVM_2_Dead"						;//Â¡Aaargh!
 	Aargh_1						=	"SVM_2_Aargh_1"						;//Aargh
 	Aargh_2						=	"SVM_2_Aargh_2"						;//Aargh
 	Aargh_3						=	"SVM_2_Aargh_3"						;//Aargh
-	Berzerk						=	"SVM_2_Berzerk"						;//¡¡¡UUAAARRGGGHHH!!!
-	YoullBeSorryForThis			=	"SVM_2_YoullBeSorryForThis"			;//¡Lo lamentarás!
-	YesYes						=	"SVM_2_YesYes"						;//¡Tranquilo, tranquilo, has vencido!
-	ShitWhatAMonster			=	"SVM_2_ShitWhatAMonster"			;//¡Yo... sólo estoy consiguiendo ayuda!
-	Help						=	"SVM_2_Help"						;//¡No tengo tiempo, tengo cosas que hacer!
-	WeWillMeetAgain				=	"SVM_2_WeWillMeetAgain"				;//¡Seguro que nos volveremos a ver!
-	NeverTryThatAgain			=	"SVM_2_NeverTryThatAgain"			;//¡No vuelvas a intentar eso!
-	ITakeYourWeapon				=	"SVM_2_ITakeYourWeapon"				;//¡Me quedaré con esa arma!
-	ITookYourOre				=	"SVM_2_ITookYourOre"				;//¡No necesitas tanto mineral!
-	ShitNoOre					=	"SVM_2_ShitNoOre"					;//¿No tienes mineral? ¡No parece que sea tu día de suerte!
-	HandsOff					=	"SVM_2_HandsOff"					;//¡Quita las manos!
-	GetOutOfHere				=	"SVM_2_GetOutOfHere"				;//¡Largo de aquí!
-	YouViolatedForbiddenTerritory=	"SVM_2_YouViolatedForbiddenTerritory";//¡Oye! ¿Cómo has entrado aquí?
-	YouWannaFoolMe				=	"SVM_2_YouWannaFoolMe"				;//¡No es muy inteligente por tu parte que me consideres estúpido!
-	WhatsThisSupposedToBe		=	"SVM_2_WhatsThisSupposedToBe"		;//¿Qué haces rondando por aquí?
-	WhyAreYouInHere				=	"SVM_2_WhyYouAreInHere"				;//¡Sal de mi cabaña o llamaré a los guardias!
-	WhatDidYouInThere			=	"SVM_2_WhatDidYouInThere"			;//¡Apártate de las cabañas!
-	WiseMove					=	"SVM_2_WiseMove"					;//¡La decisión correcta!
-	Alarm						=	"SVM_2_Alarm"						;//¡Guardias! ¡Por aquí!
-	IntruderAlert				= 	"SVM_2_IntruderAlert"				;//¡¡ALERTA!!
-	BehindYou					=	"SVM_2_BehindYou"					;//¡Detrás de ti!
-	TheresAFight				=	"SVM_2_TheresAFight"				;//¡Ah, una pelea!
-	HeyHeyHey					=	"SVM_2_HeyHeyHey"					;//¿Eso es todo?
-	CheerFight					=	"SVM_2_CheerFight"					;//¡Despierta, tortuga!
-	CheerFriend					=	"SVM_2_CheerFriend"					;//¡Buen golpe!
-	Ooh							=	"SVM_2_Ooh"							;//¡Eso duele!
-	YeahWellDone				=	"SVM_2_YeahWellDone"				;//Aún se mueve.
-	RunCoward					=	"SVM_2_RunCoward"					;//¡Quédate aquí, canijo!
-	HeDefeatedHim				=	"SVM_2_HeDefeatedHim"				;//¡Ya ha tenido bastante!
-	HeDeservedIt				=	"SVM_2_HeDeservedIt"				;//¡Se lo merecía!
-	HeKilledHim					=	"SVM_2_HeKilledHim"					;//¡Lo has matado! ¿Era necesario?
-	ItWasAGoodFight				=	"SVM_2_ItWasAGoodFight"				;//¡Fue una buena pelea, aunque demasiado corta!
+	Berzerk						=	"SVM_2_Berzerk"						;//Â¡Â¡Â¡UUAAARRGGGHHH!!!
+	YoullBeSorryForThis			=	"SVM_2_YoullBeSorryForThis"			;//Â¡Lo lamentarÃ¡s!
+	YesYes						=	"SVM_2_YesYes"						;//Â¡Tranquilo, tranquilo, has vencido!
+	ShitWhatAMonster			=	"SVM_2_ShitWhatAMonster"			;//Â¡Yo... sÃ³lo estoy consiguiendo ayuda!
+	Help						=	"SVM_2_Help"						;//Â¡No tengo tiempo, tengo cosas que hacer!
+	WeWillMeetAgain				=	"SVM_2_WeWillMeetAgain"				;//Â¡Seguro que nos volveremos a ver!
+	NeverTryThatAgain			=	"SVM_2_NeverTryThatAgain"			;//Â¡No vuelvas a intentar eso!
+	ITakeYourWeapon				=	"SVM_2_ITakeYourWeapon"				;//Â¡Me quedarÃ© con esa arma!
+	ITookYourOre				=	"SVM_2_ITookYourOre"				;//Â¡No necesitas tanto mineral!
+	ShitNoOre					=	"SVM_2_ShitNoOre"					;//Â¿No tienes mineral? Â¡No parece que sea tu dÃ­a de suerte!
+	HandsOff					=	"SVM_2_HandsOff"					;//Â¡Quita las manos!
+	GetOutOfHere				=	"SVM_2_GetOutOfHere"				;//Â¡Largo de aquÃ­!
+	YouViolatedForbiddenTerritory=	"SVM_2_YouViolatedForbiddenTerritory";//Â¡Oye! Â¿CÃ³mo has entrado aquÃ­?
+	YouWannaFoolMe				=	"SVM_2_YouWannaFoolMe"				;//Â¡No es muy inteligente por tu parte que me consideres estÃºpido!
+	WhatsThisSupposedToBe		=	"SVM_2_WhatsThisSupposedToBe"		;//Â¿QuÃ© haces rondando por aquÃ­?
+	WhyAreYouInHere				=	"SVM_2_WhyYouAreInHere"				;//Â¡Sal de mi cabaÃ±a o llamarÃ© a los guardias!
+	WhatDidYouInThere			=	"SVM_2_WhatDidYouInThere"			;//Â¡ApÃ¡rtate de las cabaÃ±as!
+	WiseMove					=	"SVM_2_WiseMove"					;//Â¡La decisiÃ³n correcta!
+	Alarm						=	"SVM_2_Alarm"						;//Â¡Guardias! Â¡Por aquÃ­!
+	IntruderAlert				= 	"SVM_2_IntruderAlert"				;//Â¡Â¡ALERTA!!
+	BehindYou					=	"SVM_2_BehindYou"					;//Â¡DetrÃ¡s de ti!
+	TheresAFight				=	"SVM_2_TheresAFight"				;//Â¡Ah, una pelea!
+	HeyHeyHey					=	"SVM_2_HeyHeyHey"					;//Â¿Eso es todo?
+	CheerFight					=	"SVM_2_CheerFight"					;//Â¡Despierta, tortuga!
+	CheerFriend					=	"SVM_2_CheerFriend"					;//Â¡Buen golpe!
+	Ooh							=	"SVM_2_Ooh"							;//Â¡Eso duele!
+	YeahWellDone				=	"SVM_2_YeahWellDone"				;//AÃºn se mueve.
+	RunCoward					=	"SVM_2_RunCoward"					;//Â¡QuÃ©date aquÃ­, canijo!
+	HeDefeatedHim				=	"SVM_2_HeDefeatedHim"				;//Â¡Ya ha tenido bastante!
+	HeDeservedIt				=	"SVM_2_HeDeservedIt"				;//Â¡Se lo merecÃ­a!
+	HeKilledHim					=	"SVM_2_HeKilledHim"					;//Â¡Lo has matado! Â¿Era necesario?
+	ItWasAGoodFight				=	"SVM_2_ItWasAGoodFight"				;//Â¡Fue una buena pelea, aunque demasiado corta!
 	Awake						=	"SVM_2_Awake"						;//Aaaau (bostezo)
 	FriendlyGreetings			=	"SVM_2_FriendlyGreetings"			;//Hola.
-	ALGreetings					=	"SVM_2_ALGreetings"					;//¡Por Gómez!
-	MageGreetings				=	"SVM_2_MageGreetings"				;//¡Por el honor de la magia!
-	SectGreetings				=	"SVM_2_SectGreetings"				;//¡Despierta!
-	ThereHeIs					= 	"SVM_2_ThereHeIs"					;//Por allí.
-	NoLearnNoPoints				= 	"SVM_2_NoLearnNoPoints"				;//No puedo enseñarte nada. No tienes suficiente experiencia.
-	NoLearnOverMax				= 	"SVM_2_NoLearnOverMax"				;//Tus posibilidades no dan más de sí. Deberías aprender algo diferente.
+	ALGreetings					=	"SVM_2_ALGreetings"					;//Â¡Por GÃ³mez!
+	MageGreetings				=	"SVM_2_MageGreetings"				;//Â¡Por el honor de la magia!
+	SectGreetings				=	"SVM_2_SectGreetings"				;//Â¡Despierta!
+	ThereHeIs					= 	"SVM_2_ThereHeIs"					;//Por allÃ­.
+	NoLearnNoPoints				= 	"SVM_2_NoLearnNoPoints"				;//No puedo enseÃ±arte nada. No tienes suficiente experiencia.
+	NoLearnOverMax				= 	"SVM_2_NoLearnOverMax"				;//Tus posibilidades no dan mÃ¡s de sÃ­. DeberÃ­as aprender algo diferente.
 	NoLearnYouAlreadyKnow		=	"SVM_2_NoLearnYouAlreadyKnow"		;//Tienes que llegar al nivel avanzado antes de convertirte en maestro
-	NoLearnYoureBetter			=	"SVM_2_NoLearnYoureBetter"			;//¡Ya estás por encima de ese nivel!
-	HeyYou						=	"SVM_2_HeyYou"						;//¡Oye, tú!
-	NotNow						=	"SVM_2_NotNow"						;//¡Ahora no!
-	WhatDoYouWant				=	"SVM_2_WhatDoYouWant"				;//¿Qué quieres?
-	ISaidWhatDoYouWant			=	"SVM_2_ISaidWhatDoYouWant"			;//¿Puedo hacer algo por ti?
-	MakeWay						=	"SVM_2_MakeWay"						;//¡Déjame pasar!
-	OutOfMyWay					=	"SVM_2_OutOfMyWay"					;//¡Quítate de en medio!
-	YouDeafOrWhat				=	"SVM_2_YouDeafOrWhat"				;//¡Lárgate o te pasaré por encima!
-	LookingForTroubleAgain		=	"SVM_2_LookingForTroubleAgain"		;//¿Otra vez buscas líos conmigo?
-	LookAway					=	"SVM_2_LookAway"					;//¡No he visto nada! ¡No hay problema!
-	OkayKeepIt					=	"SVM_2_OkayKeepIt"					;//¡Vale! ¡Quédatelo!
-	WhatsThat					=	"SVM_2_WhatsThat"					;//¿Eh? ¿Qué?
-	ThatsMyWeapon				=	"SVM_2_ThatsMyWeapon"				;//¡Ésa que llevas ahí parece mi arma!
-	GiveItToMe					=	"SVM_2_GiveItToMe"					;//¡Venga, dame eso!
-	YouCanKeeptheCrap			=	"SVM_2_YouCanKeeptheCrap"			;//¡No lo necesito!
-	TheyKilledMyFriend			=	"SVM_2_TheyKilledMyFriend"			;//Alguien ha matado a uno de los nuestros. ¡Si lo cogemos, está perdido!
-	YouDisturbedMySlumber		=	"SVM_2_YouDisturbedMySlumber"		;//¿Por qué me has despertado?
-	SuckerGotSome				=	"SVM_2_SuckerGotSome"				;//¿Te han dado una paliza? ¡Debo admitir que me parece bien!
-	SuckerDefeatedEBr			=	"SVM_2_SuckerDefeatedEBr"			;//¡Has vencido a un magnate del mineral!
-	SuckerDefeatedGur			=	"SVM_2_SuckerDefeatedGur"			;//Has tumbado a un gurú. ¡No sé si eso es valentía o locura!
-	SuckerDefeatedMage			=	"SVM_2_SuckerDefeatedMage"			;//¡Para vencer a un mago... tienes que ser un hombre muy valiente!
-	SuckerDefeatedNov_Guard		= 	"SVM_2_SuckerDefeatedNov_Guard"		;//¡Yo me aseguro de mantener el orden aquí!
-	SuckerDefeatedVlk_Guard		= 	"SVM_2_SuckerDefeatedVlk_Guard"		;//¡El motivo da igual! ¡Si golpeas a un cavador, te metes en un lío!
-	YouDefeatedMyComrade		=	"SVM_2_YouDefeatedMyComrade"		;//¡Has pegado a un amigo mío!
-	YouDefeatedNOV_Guard		=	"SVM_2_YouDefeatedNOV_Guard"		;//¡Deja en paz a los novicios!
-	YouDefeatedVLK_Guard		=	"SVM_2_YouDefeatedVLK_Guard"		;//¡No se pega a mis chicos! ¿Entiendes?
-	YouStoleFromMe				=	"SVM_2_YouStoleFromMe"				;//¿Por qué me has robado?
-	YouStoleFromUs				=	"SVM_2_YouStoleFromUs"				;//Tienes algo que nos pertenece. ¡Nos gustaría recuperarlo!
-	YouStoleFromEBr				=	"SVM_2_YouStoleFromEBr"				;//¡Tío! ¡Has robado a los magnates del mineral! ¡Estarán furiosos!
-	YouStoleFromGur				=	"SVM_2_YouStoleFromGur"				;//¿Has robado a los gurús? ¡Tienes suerte de que no te hayan cogido!
-	StoleFromMage				=	"SVM_2_StoleFromMage"				;//¡A los magos no les gusta que la gente revuelva en sus cosas!
-	YouKilledMyFriend			=	"SVM_2_YouKilledMyFriend"			;//¡Uno de los nuestros pesa sobre tu conciencia! ¡Si cometes otro error, te tocará a ti!
-	YouKilledEBr				=	"SVM_2_YouKilledEBr"				;//¡Has matado a un magnate del mineral! Tío, ¿estás zumbado?
-	YouKilledGur				=	"SVM_2_YouKilledGur"				;//¡Has matado a un gurú! ¡No me lo puedo creer!
-	YouKilledMage				=	"SVM_2_YouKilledMage"				;//¡Has matado a un mago! ¿Cómo tienes pensado justificarlo?
+	NoLearnYoureBetter			=	"SVM_2_NoLearnYoureBetter"			;//Â¡Ya estÃ¡s por encima de ese nivel!
+	HeyYou						=	"SVM_2_HeyYou"						;//Â¡Oye, tÃº!
+	NotNow						=	"SVM_2_NotNow"						;//Â¡Ahora no!
+	WhatDoYouWant				=	"SVM_2_WhatDoYouWant"				;//Â¿QuÃ© quieres?
+	ISaidWhatDoYouWant			=	"SVM_2_ISaidWhatDoYouWant"			;//Â¿Puedo hacer algo por ti?
+	MakeWay						=	"SVM_2_MakeWay"						;//Â¡DÃ©jame pasar!
+	OutOfMyWay					=	"SVM_2_OutOfMyWay"					;//Â¡QuÃ­tate de en medio!
+	YouDeafOrWhat				=	"SVM_2_YouDeafOrWhat"				;//Â¡LÃ¡rgate o te pasarÃ© por encima!
+	LookingForTroubleAgain		=	"SVM_2_LookingForTroubleAgain"		;//Â¿Otra vez buscas lÃ­os conmigo?
+	LookAway					=	"SVM_2_LookAway"					;//Â¡No he visto nada! Â¡No hay problema!
+	OkayKeepIt					=	"SVM_2_OkayKeepIt"					;//Â¡Vale! Â¡QuÃ©datelo!
+	WhatsThat					=	"SVM_2_WhatsThat"					;//Â¿Eh? Â¿QuÃ©?
+	ThatsMyWeapon				=	"SVM_2_ThatsMyWeapon"				;//Â¡Ã‰sa que llevas ahÃ­ parece mi arma!
+	GiveItToMe					=	"SVM_2_GiveItToMe"					;//Â¡Venga, dame eso!
+	YouCanKeeptheCrap			=	"SVM_2_YouCanKeeptheCrap"			;//Â¡No lo necesito!
+	TheyKilledMyFriend			=	"SVM_2_TheyKilledMyFriend"			;//Alguien ha matado a uno de los nuestros. Â¡Si lo cogemos, estÃ¡ perdido!
+	YouDisturbedMySlumber		=	"SVM_2_YouDisturbedMySlumber"		;//Â¿Por quÃ© me has despertado?
+	SuckerGotSome				=	"SVM_2_SuckerGotSome"				;//Â¿Te han dado una paliza? Â¡Debo admitir que me parece bien!
+	SuckerDefeatedEBr			=	"SVM_2_SuckerDefeatedEBr"			;//Â¡Has vencido a un magnate del mineral!
+	SuckerDefeatedGur			=	"SVM_2_SuckerDefeatedGur"			;//Has tumbado a un gurÃº. Â¡No sÃ© si eso es valentÃ­a o locura!
+	SuckerDefeatedMage			=	"SVM_2_SuckerDefeatedMage"			;//Â¡Para vencer a un mago... tienes que ser un hombre muy valiente!
+	SuckerDefeatedNov_Guard		= 	"SVM_2_SuckerDefeatedNov_Guard"		;//Â¡Yo me aseguro de mantener el orden aquÃ­!
+	SuckerDefeatedVlk_Guard		= 	"SVM_2_SuckerDefeatedVlk_Guard"		;//Â¡El motivo da igual! Â¡Si golpeas a un cavador, te metes en un lÃ­o!
+	YouDefeatedMyComrade		=	"SVM_2_YouDefeatedMyComrade"		;//Â¡Has pegado a un amigo mÃ­o!
+	YouDefeatedNOV_Guard		=	"SVM_2_YouDefeatedNOV_Guard"		;//Â¡Deja en paz a los novicios!
+	YouDefeatedVLK_Guard		=	"SVM_2_YouDefeatedVLK_Guard"		;//Â¡No se pega a mis chicos! Â¿Entiendes?
+	YouStoleFromMe				=	"SVM_2_YouStoleFromMe"				;//Â¿Por quÃ© me has robado?
+	YouStoleFromUs				=	"SVM_2_YouStoleFromUs"				;//Tienes algo que nos pertenece. Â¡Nos gustarÃ­a recuperarlo!
+	YouStoleFromEBr				=	"SVM_2_YouStoleFromEBr"				;//Â¡TÃ­o! Â¡Has robado a los magnates del mineral! Â¡EstarÃ¡n furiosos!
+	YouStoleFromGur				=	"SVM_2_YouStoleFromGur"				;//Â¿Has robado a los gurÃºs? Â¡Tienes suerte de que no te hayan cogido!
+	StoleFromMage				=	"SVM_2_StoleFromMage"				;//Â¡A los magos no les gusta que la gente revuelva en sus cosas!
+	YouKilledMyFriend			=	"SVM_2_YouKilledMyFriend"			;//Â¡Uno de los nuestros pesa sobre tu conciencia! Â¡Si cometes otro error, te tocarÃ¡ a ti!
+	YouKilledEBr				=	"SVM_2_YouKilledEBr"				;//Â¡Has matado a un magnate del mineral! TÃ­o, Â¿estÃ¡s zumbado?
+	YouKilledGur				=	"SVM_2_YouKilledGur"				;//Â¡Has matado a un gurÃº! Â¡No me lo puedo creer!
+	YouKilledMage				=	"SVM_2_YouKilledMage"				;//Â¡Has matado a un mago! Â¿CÃ³mo tienes pensado justificarlo?
 	YouKilledOCfolk				=	"SVM_2_YouKilledOCfolk"				;//Ha muerto un miembro del Campamento Viejo, y se ha relacionado tu nombre con la muerte...
-	YouKilledNCfolk				=	"SVM_2_YouKilledNCfolk"				;//¡El Campamento Nuevo ha sufrido una pérdida trágica, y parece que estás implicado!
-	YouKilledPSIfolk			=	"SVM_2_YouKilledPSIfolk"			;//¡La hermandad tiene un fiel menos, y su muerte pesa sobre tu conciencia!
-	GetThingsRight				=	"SVM_2_GetThingsRight"				;//¡No será fácil solucionar esto!
-	YouDefeatedMeWell			=	"SVM_2_YouDefeatedMeWell"			;//¡Ha sido una lucha justa! ¡Me has dado una buena tunda, tío!
-	Smalltalk01					=	"SVM_2_Smalltalk01"					;// ...si tú crees...
+	YouKilledNCfolk				=	"SVM_2_YouKilledNCfolk"				;//Â¡El Campamento Nuevo ha sufrido una pÃ©rdida trÃ¡gica, y parece que estÃ¡s implicado!
+	YouKilledPSIfolk			=	"SVM_2_YouKilledPSIfolk"			;//Â¡La hermandad tiene un fiel menos, y su muerte pesa sobre tu conciencia!
+	GetThingsRight				=	"SVM_2_GetThingsRight"				;//Â¡No serÃ¡ fÃ¡cil solucionar esto!
+	YouDefeatedMeWell			=	"SVM_2_YouDefeatedMeWell"			;//Â¡Ha sido una lucha justa! Â¡Me has dado una buena tunda, tÃ­o!
+	Smalltalk01					=	"SVM_2_Smalltalk01"					;// ...si tÃº crees...
 	Smalltalk02					=	"SVM_2_Smalltalk02"					;// ...tal vez...
 	Smalltalk03					=	"SVM_2_Smalltalk03"					;// ...eso no fue muy inteligente...
-	Smalltalk04					=	"SVM_2_Smalltalk04"					;// ...será mejor que me mantenga al margen...
+	Smalltalk04					=	"SVM_2_Smalltalk04"					;// ...serÃ¡ mejor que me mantenga al margen...
 	Smalltalk05					=	"SVM_2_Smalltalk05"					;// ...en realidad no es mi problema...
-	Smalltalk06					=	"SVM_2_Smalltalk06"					;// ...era evidente que habría problemas...
-	Smalltalk07					=	"SVM_2_Smalltalk07"					;// ...pero sé discreto; la gente no tiene por qué saberlo.
-	Smalltalk08					=	"SVM_2_Smalltalk08"					;// ...no volverá a suceder...
+	Smalltalk06					=	"SVM_2_Smalltalk06"					;// ...era evidente que habrÃ­a problemas...
+	Smalltalk07					=	"SVM_2_Smalltalk07"					;// ...pero sÃ© discreto; la gente no tiene por quÃ© saberlo.
+	Smalltalk08					=	"SVM_2_Smalltalk08"					;// ...no volverÃ¡ a suceder...
 	Smalltalk09					=	"SVM_2_Smalltalk09"					;// ...debe haber algo de cierto en esa historia...
 	Smalltalk10					=	"SVM_2_Smalltalk10"					;// ...has de tener cuidado con lo que dices a la gente...
 	Smalltalk11					=	"SVM_2_Smalltalk11"					;// ...mientras no me vea implicado...
-	Smalltalk12					=	"SVM_2_Smalltalk12"					;// ...no deberías creerte todo lo que oyes...
-	Smalltalk13					=	"SVM_2_Smalltalk13"					;// ...no me gustaría estar en su lugar...
+	Smalltalk12					=	"SVM_2_Smalltalk12"					;// ...no deberÃ­as creerte todo lo que oyes...
+	Smalltalk13					=	"SVM_2_Smalltalk13"					;// ...no me gustarÃ­a estar en su lugar...
 	Smalltalk14					=	"SVM_2_Smalltalk14"					;// ...lo mismo de siempre...
 	Smalltalk15					=	"SVM_2_Smalltalk15"					;// ...algunos no aprenden...
-	Smalltalk16					=	"SVM_2_Smalltalk16"					;// ...hubo un tiempo en que las cosas habrían sucedido de manera muy distinta...
+	Smalltalk16					=	"SVM_2_Smalltalk16"					;// ...hubo un tiempo en que las cosas habrÃ­an sucedido de manera muy distinta...
 	Smalltalk17					=	"SVM_2_Smalltalk17"					;// ...la gente no para de hablar...
 	Smalltalk18					=	"SVM_2_Smalltalk18"					;// ...ya no hago caso de los chismorreos...
-	Smalltalk19					=	"SVM_2_Smalltalk19"					;// ...confías en alguien y te metes en un lío; eso es lo que pasa...
-	Smalltalk20					=	"SVM_2_Smalltalk20"					;// ...me extraña que vaya a cambiar...
-	Smalltalk21					=	"SVM_2_Smalltalk21"					;// ...seguramente tengas razón...
-	Smalltalk22					=	"SVM_2_Smalltalk22"					;// ...espera. Será mejor no apresurarse...
-	Smalltalk23					=	"SVM_2_Smalltalk23"					;// ...creía que eso se había resuelto hace mucho...
+	Smalltalk19					=	"SVM_2_Smalltalk19"					;// ...confÃ­as en alguien y te metes en un lÃ­o; eso es lo que pasa...
+	Smalltalk20					=	"SVM_2_Smalltalk20"					;// ...me extraÃ±a que vaya a cambiar...
+	Smalltalk21					=	"SVM_2_Smalltalk21"					;// ...seguramente tengas razÃ³n...
+	Smalltalk22					=	"SVM_2_Smalltalk22"					;// ...espera. SerÃ¡ mejor no apresurarse...
+	Smalltalk23					=	"SVM_2_Smalltalk23"					;// ...creÃ­a que eso se habÃ­a resuelto hace mucho...
 	Smalltalk24					=	"SVM_2_Smalltalk24"					;// ...hablemos de otra cosa...
 	Om							= 	"SVM_2_Om"							;// Ommm
 };
@@ -517,537 +517,537 @@ instance SVM_2 (C_SVM)				// Misstrauisch
 
 
 
-instance SVM_3 (C_SVM)				 // Depressiv (Resigniert. Menschliches Gemüse. "Ich schau noch´n bisschen an die Decke.." , "Wir sind eh alle verloren..." Nov:Glauben an Drogen
+instance SVM_3 (C_SVM)				 // Depressiv (Resigniert. Menschliches GemÃ¼se. "Ich schau nochÂ´n bisschen an die Decke.." , "Wir sind eh alle verloren..." Nov:Glauben an Drogen
 {
-	StopMagic					=	"SVM_3_StopMagic"					;//¡Basta de magia!
-	ISaidStopMagic				=	"SVM_3_ISaidStopMagic"				;//¡Ya basta de magia!
-	WeaponDown					=	"SVM_3_WeaponDown"					;//¡Deja esa arma!
-	ISaidWeaponDown				=	"SVM_3_ISaidWeaponDown"				;//¡¡Si sigues jugueteando con esa arma me voy a cabrear!!
-	WatchYourAim				=	"SVM_3_WatchYourAim"				;//¿Por qué me apuntas?
-	WatchYourAimAngry			=	"SVM_3_WatchYourAimAngry"			;//¡Deja el arma si no quieres que me cabree!
-	WhatAreYouDoing				=	"SVM_3_WhatAreYouDoing"				;//Oye, ¿a qué venía eso?
-	LetsForgetOurLittleFight	=	"SVM_3_LetsForgetOurLittleFight"	;//De acuerdo, consideremos que nuestra discusión ha sido un malentendido.
-	Strange						=	"SVM_3_Strange"						;//¿Ha desaparecido?
-	DieMonster					=	"SVM_3_DieMonster"					;//¡Maldito animal, no volverás a molestarme!
-	DieMortalEnemy				=	"SVM_3_DieMortalEnemy"				;//¡Vas a morir enseguida!
-	NowWait						=	"SVM_3_NowWait"						;//¡Parece que debo explicarme mejor!
-	YouStillNotHaveEnough		=	"SVM_3_YouStillNotHaveEnough"		;//¡Parece que aún no has tenido bastante!
-	YouAskedForIt				=	"SVM_3_YouAskedForIt"				;//¡Tú lo has querido!
-	NowWaitIntruder				= 	"SVM_3_NowWaitIntruder"				;//¡Aquí no pintas nada! ¡Voy a tener que darte una tunda!
-	IWillTeachYouRespectForForeignProperty	=	"SVM_3_IWillTeachYouRespectForForeignProperty"	;//Supongo que tendré que sacudirte en la mano; es el único idioma que entiendes.
-	DirtyThief					=	"SVM_3_DirtyThief"					;//¡Me estás robando! ¡No me lo puedo creer!
-	YouAttackedMyCharge			=	"SVM_3_YouAttackedMyCharge"			;//¡No puedes ir por ahí pegando a todo el que te encuentras!
-	YouKilledOneOfUs			=	"SVM_3_YouKilledOneOfUs"			;//¡Has matado a uno de los nuestros! ¡Ése ha sido tu último error!
-	Dead						=	"SVM_3_Dead"						;//¡Aaargh!
+	StopMagic					=	"SVM_3_StopMagic"					;//Â¡Basta de magia!
+	ISaidStopMagic				=	"SVM_3_ISaidStopMagic"				;//Â¡Ya basta de magia!
+	WeaponDown					=	"SVM_3_WeaponDown"					;//Â¡Deja esa arma!
+	ISaidWeaponDown				=	"SVM_3_ISaidWeaponDown"				;//Â¡Â¡Si sigues jugueteando con esa arma me voy a cabrear!!
+	WatchYourAim				=	"SVM_3_WatchYourAim"				;//Â¿Por quÃ© me apuntas?
+	WatchYourAimAngry			=	"SVM_3_WatchYourAimAngry"			;//Â¡Deja el arma si no quieres que me cabree!
+	WhatAreYouDoing				=	"SVM_3_WhatAreYouDoing"				;//Oye, Â¿a quÃ© venÃ­a eso?
+	LetsForgetOurLittleFight	=	"SVM_3_LetsForgetOurLittleFight"	;//De acuerdo, consideremos que nuestra discusiÃ³n ha sido un malentendido.
+	Strange						=	"SVM_3_Strange"						;//Â¿Ha desaparecido?
+	DieMonster					=	"SVM_3_DieMonster"					;//Â¡Maldito animal, no volverÃ¡s a molestarme!
+	DieMortalEnemy				=	"SVM_3_DieMortalEnemy"				;//Â¡Vas a morir enseguida!
+	NowWait						=	"SVM_3_NowWait"						;//Â¡Parece que debo explicarme mejor!
+	YouStillNotHaveEnough		=	"SVM_3_YouStillNotHaveEnough"		;//Â¡Parece que aÃºn no has tenido bastante!
+	YouAskedForIt				=	"SVM_3_YouAskedForIt"				;//Â¡TÃº lo has querido!
+	NowWaitIntruder				= 	"SVM_3_NowWaitIntruder"				;//Â¡AquÃ­ no pintas nada! Â¡Voy a tener que darte una tunda!
+	IWillTeachYouRespectForForeignProperty	=	"SVM_3_IWillTeachYouRespectForForeignProperty"	;//Supongo que tendrÃ© que sacudirte en la mano; es el Ãºnico idioma que entiendes.
+	DirtyThief					=	"SVM_3_DirtyThief"					;//Â¡Me estÃ¡s robando! Â¡No me lo puedo creer!
+	YouAttackedMyCharge			=	"SVM_3_YouAttackedMyCharge"			;//Â¡No puedes ir por ahÃ­ pegando a todo el que te encuentras!
+	YouKilledOneOfUs			=	"SVM_3_YouKilledOneOfUs"			;//Â¡Has matado a uno de los nuestros! Â¡Ã‰se ha sido tu Ãºltimo error!
+	Dead						=	"SVM_3_Dead"						;//Â¡Aaargh!
 	Aargh_1						=	"SVM_3_Aargh_1"						;//Aargh
 	Aargh_2						=	"SVM_3_Aargh_2"						;//Aargh
 	Aargh_3						=	"SVM_3_Aargh_3"						;//Aargh
-	Berzerk						=	"SVM_3_Berzerk"						;//¡¡¡UUAAARRGGGHHH!!!
-	YoullBeSorryForThis			=	"SVM_3_YoullBeSorryForThis"			;//¡Lo lamentarás!
-	YesYes						=	"SVM_3_YesYes"						;//¡Has vencido! ¡Vale!
-	ShitWhatAMonster			=	"SVM_3_ShitWhatAMonster"			;//¡Mierda! ¡Corre todo lo que puedas!
-	Help						=	"SVM_3_Help"						;//¡Tengo que marcharme!
-	WeWillMeetAgain				=	"SVM_3_WeWillMeetAgain"				;//¡Nos volveremos a ver!
-	NeverTryThatAgain			=	"SVM_3_NeverTryThatAgain"			;//¡No vuelvas a intentar nada parecido!
-	ITakeYourWeapon				=	"SVM_3_ITakeYourWeapon"				;//¡Gracias por el arma!
-	ITookYourOre				=	"SVM_3_ITookYourOre"				;//¡Cogeré un poco más de tu mineral!
-	ShitNoOre					=	"SVM_3_ShitNoOre"					;//¿No tienes mineral? ¡Qué pena, tío, qué pena!
-	HandsOff					=	"SVM_3_HandsOff"					;//¡Quita las manos!
-	GetOutOfHere				=	"SVM_3_GetOutOfHere"				;//¡Pírate!
-	YouViolatedForbiddenTerritory=	"SVM_3_YouViolatedForbiddenTerritory";//¡Oye! ¿De dónde has salido?
-	YouWannaFoolMe				=	"SVM_3_YouWannaFoolMe"				;//¡No soy tan estúpido como crees!
-	WhatsThisSupposedToBe		=	"SVM_3_WhatsThisSupposedToBe"		;//¡Deja de rondar por aquí!
-	WhyAreYouInHere				=	"SVM_3_WhyYouAreInHere"				;//¡Desaparece de mi cabaña o llamaré a los guardias!
-	WhatDidYouInThere			=	"SVM_3_WhatDidYouInThere"			;//¿Qué haces? ¡Como te coja, vas a morir!
-	WiseMove					=	"SVM_3_WiseMove"					;//¡Así que sabes lo que te conviene!
-	Alarm						=	"SVM_3_Alarm"						;//¡Guardias! ¡Por aquí!
-	IntruderAlert				= 	"SVM_3_IntruderAlert"				;//¡¡ALERTA!!
-	BehindYou					=	"SVM_3_BehindYou"					;//¡Cuidado!
-	TheresAFight				=	"SVM_3_TheresAFight"				;//¡Una pelea!
-	HeyHeyHey					=	"SVM_3_HeyHeyHey"					;//¡Sacúdele!
-	CheerFight					=	"SVM_3_CheerFight"					;//¿Qué intentas hacer?
-	CheerFriend					=	"SVM_3_CheerFriend"					;//¡Buen golpe!
-	Ooh							=	"SVM_3_Ooh"							;//¡Ooooh!
-	YeahWellDone				=	"SVM_3_YeahWellDone"				;//¡Sí! ¡Muy bien!
-	RunCoward					=	"SVM_3_RunCoward"					;//¡Está huyendo!
-	HeDefeatedHim				=	"SVM_3_HeDefeatedHim"				;//¡Ha acabado con él!
-	HeDeservedIt				=	"SVM_3_HeDeservedIt"				;//¡Se lo merecía desde hace bastante tiempo!
-	HeKilledHim					=	"SVM_3_HeKilledHim"					;//Ya no va a moverse más. Le has matado.
-	ItWasAGoodFight				=	"SVM_3_ItWasAGoodFight"				;//Nada más que peleas...
-	Awake						=	"SVM_3_Awake"						;//Un nuevo día y nada ha cambiado...
-	FriendlyGreetings			=	"SVM_3_FriendlyGreetings"			;//Eh, tío.
-	ALGreetings					=	"SVM_3_ALGreetings"					;//¡Por Gómez, sí, sí!
-	MageGreetings				=	"SVM_3_MageGreetings"				;//¡Por el honor de la magia!
-	SectGreetings				=	"SVM_3_SectGreetings"				;//¡Despierta!
-	ThereHeIs					= 	"SVM_3_ThereHeIs"					;//Está allí.
-	NoLearnNoPoints				= 	"SVM_3_NoLearnNoPoints"				;//No tienes suficiente experiencia. ¡No puedo enseñarte eso!
-	NoLearnOverMax				= 	"SVM_3_NoLearnOverMax"				;//Tus posibilidades no dan más de sí. Deberías aprender algo diferente.
-	NoLearnYouAlreadyKnow		=	"SVM_3_NoLearnYouAlreadyKnow"		;//¡Tienes que llegar al nivel avanzado antes de convertirte en maestro!
-	NoLearnYoureBetter			=	"SVM_3_NoLearnYoureBetter"			;//¡Ya estás por encima de ese nivel!
-	HeyYou						=	"SVM_3_HeyYou"						;//¡Oye, tú!
-	NotNow						=	"SVM_3_NotNow"						;//¡Ahora no!
-	WhatDoYouWant				=	"SVM_3_WhatDoYouWant"				;//¿Querías algo?
-	ISaidWhatDoYouWant			=	"SVM_3_ISaidWhatDoYouWant"			;//¿Puedo hacer algo por ti?
-	MakeWay						=	"SVM_3_MakeWay"						;//¡Déjame pasar!
-	OutOfMyWay					=	"SVM_3_OutOfMyWay"					;//¡Quítate de en medio, tío!
-	YouDeafOrWhat				=	"SVM_3_YouDeafOrWhat"				;//¿Cuántas veces te lo tengo que decir? ¡Déjame pasar!
-	LookingForTroubleAgain		=	"SVM_3_LookingForTroubleAgain"		;//¿Otra vez buscas líos conmigo?
-	LookAway					=	"SVM_3_LookAway"					;//¡No he visto NADA! ¡Ni siquiera estoy aquí!
-	OkayKeepIt					=	"SVM_3_OkayKeepIt"					;//¡Vale, vale! ¡Quédatelo!
-	WhatsThat					=	"SVM_3_WhatsThat"					;//¿Qué ha sido eso?
-	ThatsMyWeapon				=	"SVM_3_ThatsMyWeapon"				;//¡Llevas encima mi arma!
-	GiveItToMe					=	"SVM_3_GiveItToMe"					;//¡Dame eso!
-	YouCanKeeptheCrap			=	"SVM_3_YouCanKeeptheCrap"			;//¡Lo que tú digas! ¡De todos modos, no lo necesito!
-	TheyKilledMyFriend			=	"SVM_3_TheyKilledMyFriend"			;//Han matado a otro de los nuestros. Ninguno saldremos con vida de aquí...
-	YouDisturbedMySlumber		=	"SVM_3_YouDisturbedMySlumber"		;//¿Por qué me has arrancado de mis sueños?
-	SuckerGotSome				=	"SVM_3_SuckerGotSome"				;//¡Te merecías esa paliza!
-	SuckerDefeatedEBr			=	"SVM_3_SuckerDefeatedEBr"			;//¡Has vencido a un magnate del mineral! Tienes ganas de líos, ¿no?
-	SuckerDefeatedGur			=	"SVM_3_SuckerDefeatedGur"			;//Has vencido a un gurú. ¡Ésa te la van a guardar!
-	SuckerDefeatedMage			=	"SVM_3_SuckerDefeatedMage"			;//¡Vencer a un mago te reportará muchos problemas!
-	SuckerDefeatedNov_Guard		= 	"SVM_3_SuckerDefeatedNov_Guard"		;//¡La próxima vez deja en paz a los novicios!
-	SuckerDefeatedVlk_Guard		= 	"SVM_3_SuckerDefeatedVlk_Guard"		;//¡Si sacudes a un cavador, yo tendré que hacer lo mismo contigo!
-	YouDefeatedMyComrade		=	"SVM_3_YouDefeatedMyComrade"		;//¡Has zurrado a uno de mis amigos!
-	YouDefeatedNOV_Guard		=	"SVM_3_YouDefeatedNOV_Guard"		;//¡Los novicios están bajo mi protección! ¡Déjales en paz!
-	YouDefeatedVLK_Guard		=	"SVM_3_YouDefeatedVLK_Guard"		;//¡Los cavadores me pagan para que no tengan problemas! ¡Haré que siga siendo así!
-	YouStoleFromMe				=	"SVM_3_YouStoleFromMe"				;//¡Me has robado, ladrón asqueroso!
-	YouStoleFromUs				=	"SVM_3_YouStoleFromUs"				;//Tienes cosas que nos pertenecen. Será mejor que nos las devuelvas.
-	YouStoleFromEBr				=	"SVM_3_YouStoleFromEBr"				;//¡Tío! ¡Has robado a los magnates del mineral! ¡Estarán furiosos!
-	YouStoleFromGur				=	"SVM_3_YouStoleFromGur"				;//¡Has robado a los gurús! Lástima que te pillaran.
-	StoleFromMage				=	"SVM_3_StoleFromMage"				;//¡Deberías ser más rápido al tratar de robar a los magos!
-	YouKilledMyFriend			=	"SVM_3_YouKilledMyFriend"			;//¡Uno de los nuestros pesa sobre tu conciencia! ¡Un error más y te tocará a ti!
-	YouKilledEBr				=	"SVM_3_YouKilledEBr"				;//¡Has matado a un magnate del mineral! Tío, ¿estás zumbado?
-	YouKilledGur				=	"SVM_3_YouKilledGur"				;//¡Has matado a un gurú! ¡No me lo puedo creer!
-	YouKilledMage				=	"SVM_3_YouKilledMage"				;//¡Has matado a un mago! ¿Cómo tienes pensado justificarlo?
+	Berzerk						=	"SVM_3_Berzerk"						;//Â¡Â¡Â¡UUAAARRGGGHHH!!!
+	YoullBeSorryForThis			=	"SVM_3_YoullBeSorryForThis"			;//Â¡Lo lamentarÃ¡s!
+	YesYes						=	"SVM_3_YesYes"						;//Â¡Has vencido! Â¡Vale!
+	ShitWhatAMonster			=	"SVM_3_ShitWhatAMonster"			;//Â¡Mierda! Â¡Corre todo lo que puedas!
+	Help						=	"SVM_3_Help"						;//Â¡Tengo que marcharme!
+	WeWillMeetAgain				=	"SVM_3_WeWillMeetAgain"				;//Â¡Nos volveremos a ver!
+	NeverTryThatAgain			=	"SVM_3_NeverTryThatAgain"			;//Â¡No vuelvas a intentar nada parecido!
+	ITakeYourWeapon				=	"SVM_3_ITakeYourWeapon"				;//Â¡Gracias por el arma!
+	ITookYourOre				=	"SVM_3_ITookYourOre"				;//Â¡CogerÃ© un poco mÃ¡s de tu mineral!
+	ShitNoOre					=	"SVM_3_ShitNoOre"					;//Â¿No tienes mineral? Â¡QuÃ© pena, tÃ­o, quÃ© pena!
+	HandsOff					=	"SVM_3_HandsOff"					;//Â¡Quita las manos!
+	GetOutOfHere				=	"SVM_3_GetOutOfHere"				;//Â¡PÃ­rate!
+	YouViolatedForbiddenTerritory=	"SVM_3_YouViolatedForbiddenTerritory";//Â¡Oye! Â¿De dÃ³nde has salido?
+	YouWannaFoolMe				=	"SVM_3_YouWannaFoolMe"				;//Â¡No soy tan estÃºpido como crees!
+	WhatsThisSupposedToBe		=	"SVM_3_WhatsThisSupposedToBe"		;//Â¡Deja de rondar por aquÃ­!
+	WhyAreYouInHere				=	"SVM_3_WhyYouAreInHere"				;//Â¡Desaparece de mi cabaÃ±a o llamarÃ© a los guardias!
+	WhatDidYouInThere			=	"SVM_3_WhatDidYouInThere"			;//Â¿QuÃ© haces? Â¡Como te coja, vas a morir!
+	WiseMove					=	"SVM_3_WiseMove"					;//Â¡AsÃ­ que sabes lo que te conviene!
+	Alarm						=	"SVM_3_Alarm"						;//Â¡Guardias! Â¡Por aquÃ­!
+	IntruderAlert				= 	"SVM_3_IntruderAlert"				;//Â¡Â¡ALERTA!!
+	BehindYou					=	"SVM_3_BehindYou"					;//Â¡Cuidado!
+	TheresAFight				=	"SVM_3_TheresAFight"				;//Â¡Una pelea!
+	HeyHeyHey					=	"SVM_3_HeyHeyHey"					;//Â¡SacÃºdele!
+	CheerFight					=	"SVM_3_CheerFight"					;//Â¿QuÃ© intentas hacer?
+	CheerFriend					=	"SVM_3_CheerFriend"					;//Â¡Buen golpe!
+	Ooh							=	"SVM_3_Ooh"							;//Â¡Ooooh!
+	YeahWellDone				=	"SVM_3_YeahWellDone"				;//Â¡SÃ­! Â¡Muy bien!
+	RunCoward					=	"SVM_3_RunCoward"					;//Â¡EstÃ¡ huyendo!
+	HeDefeatedHim				=	"SVM_3_HeDefeatedHim"				;//Â¡Ha acabado con Ã©l!
+	HeDeservedIt				=	"SVM_3_HeDeservedIt"				;//Â¡Se lo merecÃ­a desde hace bastante tiempo!
+	HeKilledHim					=	"SVM_3_HeKilledHim"					;//Ya no va a moverse mÃ¡s. Le has matado.
+	ItWasAGoodFight				=	"SVM_3_ItWasAGoodFight"				;//Nada mÃ¡s que peleas...
+	Awake						=	"SVM_3_Awake"						;//Un nuevo dÃ­a y nada ha cambiado...
+	FriendlyGreetings			=	"SVM_3_FriendlyGreetings"			;//Eh, tÃ­o.
+	ALGreetings					=	"SVM_3_ALGreetings"					;//Â¡Por GÃ³mez, sÃ­, sÃ­!
+	MageGreetings				=	"SVM_3_MageGreetings"				;//Â¡Por el honor de la magia!
+	SectGreetings				=	"SVM_3_SectGreetings"				;//Â¡Despierta!
+	ThereHeIs					= 	"SVM_3_ThereHeIs"					;//EstÃ¡ allÃ­.
+	NoLearnNoPoints				= 	"SVM_3_NoLearnNoPoints"				;//No tienes suficiente experiencia. Â¡No puedo enseÃ±arte eso!
+	NoLearnOverMax				= 	"SVM_3_NoLearnOverMax"				;//Tus posibilidades no dan mÃ¡s de sÃ­. DeberÃ­as aprender algo diferente.
+	NoLearnYouAlreadyKnow		=	"SVM_3_NoLearnYouAlreadyKnow"		;//Â¡Tienes que llegar al nivel avanzado antes de convertirte en maestro!
+	NoLearnYoureBetter			=	"SVM_3_NoLearnYoureBetter"			;//Â¡Ya estÃ¡s por encima de ese nivel!
+	HeyYou						=	"SVM_3_HeyYou"						;//Â¡Oye, tÃº!
+	NotNow						=	"SVM_3_NotNow"						;//Â¡Ahora no!
+	WhatDoYouWant				=	"SVM_3_WhatDoYouWant"				;//Â¿QuerÃ­as algo?
+	ISaidWhatDoYouWant			=	"SVM_3_ISaidWhatDoYouWant"			;//Â¿Puedo hacer algo por ti?
+	MakeWay						=	"SVM_3_MakeWay"						;//Â¡DÃ©jame pasar!
+	OutOfMyWay					=	"SVM_3_OutOfMyWay"					;//Â¡QuÃ­tate de en medio, tÃ­o!
+	YouDeafOrWhat				=	"SVM_3_YouDeafOrWhat"				;//Â¿CuÃ¡ntas veces te lo tengo que decir? Â¡DÃ©jame pasar!
+	LookingForTroubleAgain		=	"SVM_3_LookingForTroubleAgain"		;//Â¿Otra vez buscas lÃ­os conmigo?
+	LookAway					=	"SVM_3_LookAway"					;//Â¡No he visto NADA! Â¡Ni siquiera estoy aquÃ­!
+	OkayKeepIt					=	"SVM_3_OkayKeepIt"					;//Â¡Vale, vale! Â¡QuÃ©datelo!
+	WhatsThat					=	"SVM_3_WhatsThat"					;//Â¿QuÃ© ha sido eso?
+	ThatsMyWeapon				=	"SVM_3_ThatsMyWeapon"				;//Â¡Llevas encima mi arma!
+	GiveItToMe					=	"SVM_3_GiveItToMe"					;//Â¡Dame eso!
+	YouCanKeeptheCrap			=	"SVM_3_YouCanKeeptheCrap"			;//Â¡Lo que tÃº digas! Â¡De todos modos, no lo necesito!
+	TheyKilledMyFriend			=	"SVM_3_TheyKilledMyFriend"			;//Han matado a otro de los nuestros. Ninguno saldremos con vida de aquÃ­...
+	YouDisturbedMySlumber		=	"SVM_3_YouDisturbedMySlumber"		;//Â¿Por quÃ© me has arrancado de mis sueÃ±os?
+	SuckerGotSome				=	"SVM_3_SuckerGotSome"				;//Â¡Te merecÃ­as esa paliza!
+	SuckerDefeatedEBr			=	"SVM_3_SuckerDefeatedEBr"			;//Â¡Has vencido a un magnate del mineral! Tienes ganas de lÃ­os, Â¿no?
+	SuckerDefeatedGur			=	"SVM_3_SuckerDefeatedGur"			;//Has vencido a un gurÃº. Â¡Ã‰sa te la van a guardar!
+	SuckerDefeatedMage			=	"SVM_3_SuckerDefeatedMage"			;//Â¡Vencer a un mago te reportarÃ¡ muchos problemas!
+	SuckerDefeatedNov_Guard		= 	"SVM_3_SuckerDefeatedNov_Guard"		;//Â¡La prÃ³xima vez deja en paz a los novicios!
+	SuckerDefeatedVlk_Guard		= 	"SVM_3_SuckerDefeatedVlk_Guard"		;//Â¡Si sacudes a un cavador, yo tendrÃ© que hacer lo mismo contigo!
+	YouDefeatedMyComrade		=	"SVM_3_YouDefeatedMyComrade"		;//Â¡Has zurrado a uno de mis amigos!
+	YouDefeatedNOV_Guard		=	"SVM_3_YouDefeatedNOV_Guard"		;//Â¡Los novicios estÃ¡n bajo mi protecciÃ³n! Â¡DÃ©jales en paz!
+	YouDefeatedVLK_Guard		=	"SVM_3_YouDefeatedVLK_Guard"		;//Â¡Los cavadores me pagan para que no tengan problemas! Â¡HarÃ© que siga siendo asÃ­!
+	YouStoleFromMe				=	"SVM_3_YouStoleFromMe"				;//Â¡Me has robado, ladrÃ³n asqueroso!
+	YouStoleFromUs				=	"SVM_3_YouStoleFromUs"				;//Tienes cosas que nos pertenecen. SerÃ¡ mejor que nos las devuelvas.
+	YouStoleFromEBr				=	"SVM_3_YouStoleFromEBr"				;//Â¡TÃ­o! Â¡Has robado a los magnates del mineral! Â¡EstarÃ¡n furiosos!
+	YouStoleFromGur				=	"SVM_3_YouStoleFromGur"				;//Â¡Has robado a los gurÃºs! LÃ¡stima que te pillaran.
+	StoleFromMage				=	"SVM_3_StoleFromMage"				;//Â¡DeberÃ­as ser mÃ¡s rÃ¡pido al tratar de robar a los magos!
+	YouKilledMyFriend			=	"SVM_3_YouKilledMyFriend"			;//Â¡Uno de los nuestros pesa sobre tu conciencia! Â¡Un error mÃ¡s y te tocarÃ¡ a ti!
+	YouKilledEBr				=	"SVM_3_YouKilledEBr"				;//Â¡Has matado a un magnate del mineral! TÃ­o, Â¿estÃ¡s zumbado?
+	YouKilledGur				=	"SVM_3_YouKilledGur"				;//Â¡Has matado a un gurÃº! Â¡No me lo puedo creer!
+	YouKilledMage				=	"SVM_3_YouKilledMage"				;//Â¡Has matado a un mago! Â¿CÃ³mo tienes pensado justificarlo?
 	YouKilledOCfolk				=	"SVM_3_YouKilledOCfolk"				;//Ha muerto un miembro del Campamento Viejo, y se ha relacionado tu nombre con la muerte...
-	YouKilledNCfolk				=	"SVM_3_YouKilledNCfolk"				;//¡El Campamento Nuevo ha sufrido una pérdida trágica, y parece que estás implicado!
-	YouKilledPSIfolk			=	"SVM_3_YouKilledPSIfolk"			;//¡La hermandad tiene un fiel menos, y su muerte pesa sobre tu conciencia!
-	GetThingsRight				=	"SVM_3_GetThingsRight"				;//¡No será fácil solucionar esto!
-	YouDefeatedMeWell			=	"SVM_3_YouDefeatedMeWell"			;//¡Ha sido una lucha justa! ¡Me has dado una buena tunda, tío!
-	Smalltalk01					=	"SVM_3_Smalltalk01"					;// ...si tú crees...
+	YouKilledNCfolk				=	"SVM_3_YouKilledNCfolk"				;//Â¡El Campamento Nuevo ha sufrido una pÃ©rdida trÃ¡gica, y parece que estÃ¡s implicado!
+	YouKilledPSIfolk			=	"SVM_3_YouKilledPSIfolk"			;//Â¡La hermandad tiene un fiel menos, y su muerte pesa sobre tu conciencia!
+	GetThingsRight				=	"SVM_3_GetThingsRight"				;//Â¡No serÃ¡ fÃ¡cil solucionar esto!
+	YouDefeatedMeWell			=	"SVM_3_YouDefeatedMeWell"			;//Â¡Ha sido una lucha justa! Â¡Me has dado una buena tunda, tÃ­o!
+	Smalltalk01					=	"SVM_3_Smalltalk01"					;// ...si tÃº crees...
 	Smalltalk02					=	"SVM_3_Smalltalk02"					;// ...tal vez...
 	Smalltalk03					=	"SVM_3_Smalltalk03"					;// ...eso no fue muy inteligente...
-	Smalltalk04					=	"SVM_3_Smalltalk04"					;// ...será mejor que me mantenga al margen...
+	Smalltalk04					=	"SVM_3_Smalltalk04"					;// ...serÃ¡ mejor que me mantenga al margen...
 	Smalltalk05					=	"SVM_3_Smalltalk05"					;// ...en realidad no es mi problema...
-	Smalltalk06					=	"SVM_3_Smalltalk06"					;// ...era evidente que habría problemas...
-	Smalltalk07					=	"SVM_3_Smalltalk07"					;// ...pero sé discreto; la gente no tiene por qué saberlo.
-	Smalltalk08					=	"SVM_3_Smalltalk08"					;// ...no volverá a suceder...
+	Smalltalk06					=	"SVM_3_Smalltalk06"					;// ...era evidente que habrÃ­a problemas...
+	Smalltalk07					=	"SVM_3_Smalltalk07"					;// ...pero sÃ© discreto; la gente no tiene por quÃ© saberlo.
+	Smalltalk08					=	"SVM_3_Smalltalk08"					;// ...no volverÃ¡ a suceder...
 	Smalltalk09					=	"SVM_3_Smalltalk09"					;// ...debe haber algo de cierto en esa historia...
 	Smalltalk10					=	"SVM_3_Smalltalk10"					;// ...has de tener cuidado con lo que dices a la gente...
 	Smalltalk11					=	"SVM_3_Smalltalk11"					;// ...mientras no me vea implicado...
-	Smalltalk12					=	"SVM_3_Smalltalk12"					;// ...no deberías creerte todo lo que oyes...
-	Smalltalk13					=	"SVM_3_Smalltalk13"					;// ...no me gustaría estar en su lugar...
+	Smalltalk12					=	"SVM_3_Smalltalk12"					;// ...no deberÃ­as creerte todo lo que oyes...
+	Smalltalk13					=	"SVM_3_Smalltalk13"					;// ...no me gustarÃ­a estar en su lugar...
 	Smalltalk14					=	"SVM_3_Smalltalk14"					;// ...lo mismo de siempre...
 	Smalltalk15					=	"SVM_3_Smalltalk15"					;// ...algunos no aprenden...
-	Smalltalk16					=	"SVM_3_Smalltalk16"					;// ...hubo un tiempo en que las cosas habrían sucedido de manera muy distinta...
+	Smalltalk16					=	"SVM_3_Smalltalk16"					;// ...hubo un tiempo en que las cosas habrÃ­an sucedido de manera muy distinta...
 	Smalltalk17					=	"SVM_3_Smalltalk17"					;// ...la gente no para de hablar...
 	Smalltalk18					=	"SVM_3_Smalltalk18"					;// ...ya no hago caso de los chismorreos...
-	Smalltalk19					=	"SVM_3_Smalltalk19"					;// ...confías en alguien y te metes en un lío; eso es lo que pasa...
-	Smalltalk20					=	"SVM_3_Smalltalk20"					;// ...me extraña que vaya a cambiar...
-	Smalltalk21					=	"SVM_3_Smalltalk21"					;// ...seguramente tengas razón...
-	Smalltalk22					=	"SVM_3_Smalltalk22"					;// ...espera. Será mejor no apresurarse...
-	Smalltalk23					=	"SVM_3_Smalltalk23"					;// ...creía que eso se había resuelto hace mucho...
+	Smalltalk19					=	"SVM_3_Smalltalk19"					;// ...confÃ­as en alguien y te metes en un lÃ­o; eso es lo que pasa...
+	Smalltalk20					=	"SVM_3_Smalltalk20"					;// ...me extraÃ±a que vaya a cambiar...
+	Smalltalk21					=	"SVM_3_Smalltalk21"					;// ...seguramente tengas razÃ³n...
+	Smalltalk22					=	"SVM_3_Smalltalk22"					;// ...espera. SerÃ¡ mejor no apresurarse...
+	Smalltalk23					=	"SVM_3_Smalltalk23"					;// ...creÃ­a que eso se habÃ­a resuelto hace mucho...
 	Smalltalk24					=	"SVM_3_Smalltalk24"					;// ...hablemos de otra cosa...
 	Om							= 	"SVM_3_Om"							;// Ommm
 };
 
 
-instance SVM_4 (C_SVM)				// Alter Sack,  (Torrez, KDF-Magier, alte Buddler....), alter Hase. Kann Grünschnäbeln noch was zeigen
+instance SVM_4 (C_SVM)				// Alter Sack,  (Torrez, KDF-Magier, alte Buddler....), alter Hase. Kann GrÃ¼nschnÃ¤beln noch was zeigen
 {
-	StopMagic					=	"SVM_4_StopMagic"					;//¡Basta de magia!
-	ISaidStopMagic				=	"SVM_4_ISaidStopMagic"				;//¡Será mejor que hagas caso de mi consejo y te dejes de hechicerías!
-	WeaponDown					=	"SVM_4_WeaponDown"					;//¡Deja esa arma si no quieres meterte en un lío!
-	ISaidWeaponDown				=	"SVM_4_ISaidWeaponDown"				;//¡¡Deja esa arma inmediatamente!!
-	WatchYourAim				=	"SVM_4_WatchYourAim"				;//¡A ver a dónde apuntas con eso!
-	WatchYourAimAngry			=	"SVM_4_WatchYourAimAngry"			;//¡Si no te estás quieto te quitaré tu juguete!
-	WhatAreYouDoing				=	"SVM_4_WhatAreYouDoing"				;//¡Eh! ¡Cuidado!
-	LetsForgetOurLittleFight	=	"SVM_4_LetsForgetOurLittleFight"	;//¡Olvidemos nuestra discusión sin importancia!
-	Strange						=	"SVM_4_Strange"						;//¡Sal! ¡Que se te vea!
-	DieMonster					=	"SVM_4_DieMonster"					;//¡Da igual cuántos mates, siguen viniendo más!
-	DieMortalEnemy				=	"SVM_4_DieMortalEnemy"				;//¡No vas a cumplir más años!
-	NowWait						=	"SVM_4_NowWait"						;//Te enseñaré a no incordiarme...
-	YouStillNotHaveEnough		=	"SVM_4_YouStillNotHaveEnough"		;//¿Aún no has tenido bastante?
-	YouAskedForIt				=	"SVM_4_YouAskedForIt"				;//¡Tú lo has querido!
-	NowWaitIntruder				= 	"SVM_4_NowWaitIntruder"				;//¡No fuiste muy listo al meterte aquí!
-	IWillTeachYouRespectForForeignProperty	=	"SVM_4_IWillTeachYouRespectForForeignProperty"	;//¡Tus artimañas no pueden quedar sin castigo!
-	DirtyThief					=	"SVM_4_DirtyThief"					;//¡Te atreviste a robarme!
-	YouAttackedMyCharge			=	"SVM_4_YouAttackedMyCharge"			;//Meterte con nosotros no te reportará ningún beneficio.
-	YouKilledOneOfUs			=	"SVM_4_YouKilledOneOfUs"			;//¡Has matado a uno de los nuestros! ¡Ojo por ojo!
-	Dead						=	"SVM_4_Dead"						;//¡Aaargh!
+	StopMagic					=	"SVM_4_StopMagic"					;//Â¡Basta de magia!
+	ISaidStopMagic				=	"SVM_4_ISaidStopMagic"				;//Â¡SerÃ¡ mejor que hagas caso de mi consejo y te dejes de hechicerÃ­as!
+	WeaponDown					=	"SVM_4_WeaponDown"					;//Â¡Deja esa arma si no quieres meterte en un lÃ­o!
+	ISaidWeaponDown				=	"SVM_4_ISaidWeaponDown"				;//Â¡Â¡Deja esa arma inmediatamente!!
+	WatchYourAim				=	"SVM_4_WatchYourAim"				;//Â¡A ver a dÃ³nde apuntas con eso!
+	WatchYourAimAngry			=	"SVM_4_WatchYourAimAngry"			;//Â¡Si no te estÃ¡s quieto te quitarÃ© tu juguete!
+	WhatAreYouDoing				=	"SVM_4_WhatAreYouDoing"				;//Â¡Eh! Â¡Cuidado!
+	LetsForgetOurLittleFight	=	"SVM_4_LetsForgetOurLittleFight"	;//Â¡Olvidemos nuestra discusiÃ³n sin importancia!
+	Strange						=	"SVM_4_Strange"						;//Â¡Sal! Â¡Que se te vea!
+	DieMonster					=	"SVM_4_DieMonster"					;//Â¡Da igual cuÃ¡ntos mates, siguen viniendo mÃ¡s!
+	DieMortalEnemy				=	"SVM_4_DieMortalEnemy"				;//Â¡No vas a cumplir mÃ¡s aÃ±os!
+	NowWait						=	"SVM_4_NowWait"						;//Te enseÃ±arÃ© a no incordiarme...
+	YouStillNotHaveEnough		=	"SVM_4_YouStillNotHaveEnough"		;//Â¿AÃºn no has tenido bastante?
+	YouAskedForIt				=	"SVM_4_YouAskedForIt"				;//Â¡TÃº lo has querido!
+	NowWaitIntruder				= 	"SVM_4_NowWaitIntruder"				;//Â¡No fuiste muy listo al meterte aquÃ­!
+	IWillTeachYouRespectForForeignProperty	=	"SVM_4_IWillTeachYouRespectForForeignProperty"	;//Â¡Tus artimaÃ±as no pueden quedar sin castigo!
+	DirtyThief					=	"SVM_4_DirtyThief"					;//Â¡Te atreviste a robarme!
+	YouAttackedMyCharge			=	"SVM_4_YouAttackedMyCharge"			;//Meterte con nosotros no te reportarÃ¡ ningÃºn beneficio.
+	YouKilledOneOfUs			=	"SVM_4_YouKilledOneOfUs"			;//Â¡Has matado a uno de los nuestros! Â¡Ojo por ojo!
+	Dead						=	"SVM_4_Dead"						;//Â¡Aaargh!
 	Aargh_1						=	"SVM_4_Aargh_1"						;//Aargh
 	Aargh_2						=	"SVM_4_Aargh_2"						;//Aargh
 	Aargh_3						=	"SVM_4_Aargh_3"						;//Aargh
-	Berzerk						=	"SVM_4_Berzerk"						;//¡¡¡UUAAARRGGGHHH!!!
-	YoullBeSorryForThis			=	"SVM_4_YoullBeSorryForThis"			;//¡Lo lamentarás!
-	YesYes						=	"SVM_4_YesYes"						;//¡No hay problema! ¡Has vencido!
-	ShitWhatAMonster			=	"SVM_4_ShitWhatAMonster"			;//¡Larguémonos de aquí rápido!
-	Help						=	"SVM_4_Help"						;//¡Me estoy volviendo demasiado viejo para eso!
-	WeWillMeetAgain				=	"SVM_4_WeWillMeetAgain"				;//¡Esto no se me va a olvidar en mucho tiempo!
-	NeverTryThatAgain			=	"SVM_4_NeverTryThatAgain"			;//¡No vuelvas a intentar nada parecido!
-	ITakeYourWeapon				=	"SVM_4_ITakeYourWeapon"				;//¡Será mejor que me lleve esa arma!
-	ITookYourOre				=	"SVM_4_ITookYourOre"				;//¡Yo me ocuparé mejor de tu mineral!
+	Berzerk						=	"SVM_4_Berzerk"						;//Â¡Â¡Â¡UUAAARRGGGHHH!!!
+	YoullBeSorryForThis			=	"SVM_4_YoullBeSorryForThis"			;//Â¡Lo lamentarÃ¡s!
+	YesYes						=	"SVM_4_YesYes"						;//Â¡No hay problema! Â¡Has vencido!
+	ShitWhatAMonster			=	"SVM_4_ShitWhatAMonster"			;//Â¡LarguÃ©monos de aquÃ­ rÃ¡pido!
+	Help						=	"SVM_4_Help"						;//Â¡Me estoy volviendo demasiado viejo para eso!
+	WeWillMeetAgain				=	"SVM_4_WeWillMeetAgain"				;//Â¡Esto no se me va a olvidar en mucho tiempo!
+	NeverTryThatAgain			=	"SVM_4_NeverTryThatAgain"			;//Â¡No vuelvas a intentar nada parecido!
+	ITakeYourWeapon				=	"SVM_4_ITakeYourWeapon"				;//Â¡SerÃ¡ mejor que me lleve esa arma!
+	ITookYourOre				=	"SVM_4_ITookYourOre"				;//Â¡Yo me ocuparÃ© mejor de tu mineral!
 	ShitNoOre					=	"SVM_4_ShitNoOre"					;//Ni siquiera unas pocas pepitas de mineral.
-	HandsOff					=	"SVM_4_HandsOff"					;//¡Quita las manos!
-	GetOutOfHere				=	"SVM_4_GetOutOfHere"				;//¡Lárgate!
-	YouViolatedForbiddenTerritory=	"SVM_4_YouViolatedForbiddenTerritory";//¡Aquí no pintas nada!
-	YouWannaFoolMe				=	"SVM_4_YouWannaFoolMe"				;//¡No estoy de humor para esas bromas!
-	WhatsThisSupposedToBe		=	"SVM_4_WhatsThisSupposedToBe"		;//¡Eh, tú! ¿Qué haces rondando por aquí?
-	WhyAreYouInHere				=	"SVM_4_WhyYouAreInHere"				;//¡Sal o llamo a los guardias!
-	WhatDidYouInThere			=	"SVM_4_WhatDidYouInThere"			;//¿Qué hacías aquí dentro?
-	WiseMove					=	"SVM_4_WiseMove"					;//¡Has tenido suerte!
-	Alarm						=	"SVM_4_Alarm"						;//¡Guardias! ¡Por aquí!
-	IntruderAlert				= 	"SVM_4_IntruderAlert"				;//¡¡¡INTRUSO!!!
-	BehindYou					=	"SVM_4_BehindYou"					;//¡Detrás de ti!
+	HandsOff					=	"SVM_4_HandsOff"					;//Â¡Quita las manos!
+	GetOutOfHere				=	"SVM_4_GetOutOfHere"				;//Â¡LÃ¡rgate!
+	YouViolatedForbiddenTerritory=	"SVM_4_YouViolatedForbiddenTerritory";//Â¡AquÃ­ no pintas nada!
+	YouWannaFoolMe				=	"SVM_4_YouWannaFoolMe"				;//Â¡No estoy de humor para esas bromas!
+	WhatsThisSupposedToBe		=	"SVM_4_WhatsThisSupposedToBe"		;//Â¡Eh, tÃº! Â¿QuÃ© haces rondando por aquÃ­?
+	WhyAreYouInHere				=	"SVM_4_WhyYouAreInHere"				;//Â¡Sal o llamo a los guardias!
+	WhatDidYouInThere			=	"SVM_4_WhatDidYouInThere"			;//Â¿QuÃ© hacÃ­as aquÃ­ dentro?
+	WiseMove					=	"SVM_4_WiseMove"					;//Â¡Has tenido suerte!
+	Alarm						=	"SVM_4_Alarm"						;//Â¡Guardias! Â¡Por aquÃ­!
+	IntruderAlert				= 	"SVM_4_IntruderAlert"				;//Â¡Â¡Â¡INTRUSO!!!
+	BehindYou					=	"SVM_4_BehindYou"					;//Â¡DetrÃ¡s de ti!
 	TheresAFight				=	"SVM_4_TheresAFight"				;//Otra pelea.
-	HeyHeyHey					=	"SVM_4_HeyHeyHey"					;//¡Más fuerte!
-	CheerFight					=	"SVM_4_CheerFight"					;//¿Eso es todo lo que puedes hacer?
-	CheerFriend					=	"SVM_4_CheerFriend"					;//¡Sacúdele!
-	Ooh							=	"SVM_4_Ooh"							;//¡Devuélvesela!
-	YeahWellDone				=	"SVM_4_YeahWellDone"				;//¡Muy bien!
-	RunCoward					=	"SVM_4_RunCoward"					;//¡Ese cobarde huye!
-	HeDefeatedHim				=	"SVM_4_HeDefeatedHim"				;//¡Cuando era joven, los hombres eran duros!
-	HeDeservedIt				=	"SVM_4_HeDeservedIt"				;//¡Es por tu culpa!
-	HeKilledHim					=	"SVM_4_HeKilledHim"					;//¡Le has matado! ¡Has cometido un grave error!
+	HeyHeyHey					=	"SVM_4_HeyHeyHey"					;//Â¡MÃ¡s fuerte!
+	CheerFight					=	"SVM_4_CheerFight"					;//Â¿Eso es todo lo que puedes hacer?
+	CheerFriend					=	"SVM_4_CheerFriend"					;//Â¡SacÃºdele!
+	Ooh							=	"SVM_4_Ooh"							;//Â¡DevuÃ©lvesela!
+	YeahWellDone				=	"SVM_4_YeahWellDone"				;//Â¡Muy bien!
+	RunCoward					=	"SVM_4_RunCoward"					;//Â¡Ese cobarde huye!
+	HeDefeatedHim				=	"SVM_4_HeDefeatedHim"				;//Â¡Cuando era joven, los hombres eran duros!
+	HeDeservedIt				=	"SVM_4_HeDeservedIt"				;//Â¡Es por tu culpa!
+	HeKilledHim					=	"SVM_4_HeKilledHim"					;//Â¡Le has matado! Â¡Has cometido un grave error!
 	ItWasAGoodFight				=	"SVM_4_ItWasAGoodFight"				;//En los viejos tiempos, las peleas eran mejores.
 	Awake						=	"SVM_4_Awake"						;//Aaaau (bostezo)
 	FriendlyGreetings			=	"SVM_4_FriendlyGreetings"			;//Saludos.
-	ALGreetings					=	"SVM_4_ALGreetings"					;//¡Por Gómez!
-	MageGreetings				=	"SVM_4_MageGreetings"				;//¡Por el honor de la magia!
-	SectGreetings				=	"SVM_4_SectGreetings"				;//¡Despierta!
-	ThereHeIs					= 	"SVM_4_ThereHeIs"					;//¡Puedes encontrarle allí!
-	NoLearnNoPoints				= 	"SVM_4_NoLearnNoPoints"				;//No puedo enseñarte nada. No tienes suficiente experiencia.
-	NoLearnOverMax				= 	"SVM_4_NoLearnOverMax"				;//Tus posibilidades no dan más de sí. Deberías aprender algo diferente.
-	NoLearnYouAlreadyKnow		=	"SVM_4_NoLearnYouAlreadyKnow"		;//¡Tienes que llegar al nivel avanzado antes de convertirte en maestro!
-	NoLearnYoureBetter			=	"SVM_4_NoLearnYoureBetter"			;//¡Ya estás por encima de ese nivel!
-	HeyYou						=	"SVM_4_HeyYou"						;//¡Oye, tú!
-	NotNow						=	"SVM_4_NotNow"						;//¡Ahora no!
-	WhatDoYouWant				=	"SVM_4_WhatDoYouWant"				;//¿Qué quieres?
-	ISaidWhatDoYouWant			=	"SVM_4_ISaidWhatDoYouWant"			;//¿Querías algo?
-	MakeWay						=	"SVM_4_MakeWay"						;//Déjame pasar.
-	OutOfMyWay					=	"SVM_4_OutOfMyWay"					;//¡Quítate de en medio!
-	YouDeafOrWhat				=	"SVM_4_YouDeafOrWhat"				;//¡Apártate o lo lamentarás!
-	LookingForTroubleAgain		=	"SVM_4_LookingForTroubleAgain"		;//¿Otra vez buscas líos conmigo?
+	ALGreetings					=	"SVM_4_ALGreetings"					;//Â¡Por GÃ³mez!
+	MageGreetings				=	"SVM_4_MageGreetings"				;//Â¡Por el honor de la magia!
+	SectGreetings				=	"SVM_4_SectGreetings"				;//Â¡Despierta!
+	ThereHeIs					= 	"SVM_4_ThereHeIs"					;//Â¡Puedes encontrarle allÃ­!
+	NoLearnNoPoints				= 	"SVM_4_NoLearnNoPoints"				;//No puedo enseÃ±arte nada. No tienes suficiente experiencia.
+	NoLearnOverMax				= 	"SVM_4_NoLearnOverMax"				;//Tus posibilidades no dan mÃ¡s de sÃ­. DeberÃ­as aprender algo diferente.
+	NoLearnYouAlreadyKnow		=	"SVM_4_NoLearnYouAlreadyKnow"		;//Â¡Tienes que llegar al nivel avanzado antes de convertirte en maestro!
+	NoLearnYoureBetter			=	"SVM_4_NoLearnYoureBetter"			;//Â¡Ya estÃ¡s por encima de ese nivel!
+	HeyYou						=	"SVM_4_HeyYou"						;//Â¡Oye, tÃº!
+	NotNow						=	"SVM_4_NotNow"						;//Â¡Ahora no!
+	WhatDoYouWant				=	"SVM_4_WhatDoYouWant"				;//Â¿QuÃ© quieres?
+	ISaidWhatDoYouWant			=	"SVM_4_ISaidWhatDoYouWant"			;//Â¿QuerÃ­as algo?
+	MakeWay						=	"SVM_4_MakeWay"						;//DÃ©jame pasar.
+	OutOfMyWay					=	"SVM_4_OutOfMyWay"					;//Â¡QuÃ­tate de en medio!
+	YouDeafOrWhat				=	"SVM_4_YouDeafOrWhat"				;//Â¡ApÃ¡rtate o lo lamentarÃ¡s!
+	LookingForTroubleAgain		=	"SVM_4_LookingForTroubleAgain"		;//Â¿Otra vez buscas lÃ­os conmigo?
 	LookAway					=	"SVM_4_LookAway"					;//Ni veo, ni oigo, ni digo...
-	OkayKeepIt					=	"SVM_4_OkayKeepIt"					;//¡Quédatelo!
-	WhatsThat					=	"SVM_4_WhatsThat"					;//¿Qué ha sido eso?
-	ThatsMyWeapon				=	"SVM_4_ThatsMyWeapon"				;//¡Sé buen chico y devuélveme mi arma!
-	GiveItToMe					=	"SVM_4_GiveItToMe"					;//¡Venga, dame eso!
-	YouCanKeeptheCrap			=	"SVM_4_YouCanKeeptheCrap"			;//¡Pues no lo hagas! ¡Me alegro de librarme de eso!
-	TheyKilledMyFriend			=	"SVM_4_TheyKilledMyFriend"			;//Si averiguamos quién mató a uno de los nuestros...
-	YouDisturbedMySlumber		=	"SVM_4_YouDisturbedMySlumber"		;//¡Estás interrumpiendo mi descanso!
-	SuckerGotSome				=	"SVM_4_SuckerGotSome"				;//¡Te han zurrado! ¡Te venía bien una paliza!
-	SuckerDefeatedEBr			=	"SVM_4_SuckerDefeatedEBr"			;//¡Has vencido a un magnate del mineral!
-	SuckerDefeatedGur			=	"SVM_4_SuckerDefeatedGur"			;//Has vencido a un gurú. Estoy impresionado. Pero ni se te ocurra intentarlo de nuevo.
-	SuckerDefeatedMage			=	"SVM_4_SuckerDefeatedMage"			;//Si has vencido a un mago... ¡debes ser un hombre valiente!
-	SuckerDefeatedNov_Guard		= 	"SVM_4_SuckerDefeatedNov_Guard"		;//Debes estar loco para sacudir así a un novicio.
-	SuckerDefeatedVlk_Guard		= 	"SVM_4_SuckerDefeatedVlk_Guard"		;//¿Qué creías que hacías sacudiendo a un cavador?
-	YouDefeatedMyComrade		=	"SVM_4_YouDefeatedMyComrade"		;//¡Te has metido con uno de mis amigos! ¡Eso es muy arriesgado!
-	YouDefeatedNOV_Guard		=	"SVM_4_YouDefeatedNOV_Guard"		;//¡Si vuelves a poner la mano encima de un novicio lo lamentarás!
-	YouDefeatedVLK_Guard		=	"SVM_4_YouDefeatedVLK_Guard"		;//Eres demasiado valiente; si tocas a uno de los protegidos, te podrías meter en un lío.
-	YouStoleFromMe				=	"SVM_4_YouStoleFromMe"				;//¡Mantén las manos alejadas de mis cosas! ¿Te enteras?
-	YouStoleFromUs				=	"SVM_4_YouStoleFromUs"				;//Tienes cosas que nos pertenecen. ¡Devuélvenoslas!
-	YouStoleFromEBr				=	"SVM_4_YouStoleFromEBr"				;//¡Tío! ¡Has robado a los magnates del mineral! ¡Estarán furiosos!
-	YouStoleFromGur				=	"SVM_4_YouStoleFromGur"				;//¡Has robado a los gurús! ¡Al menos tendrías que haber evitado que te pillaran!
-	StoleFromMage				=	"SVM_4_StoleFromMage"				;//¡A los magos no les gusta que haya gente revolviendo en sus cosas!
-	YouKilledMyFriend			=	"SVM_4_YouKilledMyFriend"			;//¡Uno de los nuestros pesa sobre tu conciencia! ¡Un error más y te tocará a ti!
-	YouKilledEBr				=	"SVM_4_YouKilledEBr"				;//¡Has matado a un magnate del mineral! Tío, ¿estás zumbado?
-	YouKilledGur				=	"SVM_4_YouKilledGur"				;//¡Has matado a un gurú! ¡No me lo puedo creer!
-	YouKilledMage				=	"SVM_4_YouKilledMage"				;//¡Has matado a un mago! ¿Cómo tienes pensado justificarlo?
+	OkayKeepIt					=	"SVM_4_OkayKeepIt"					;//Â¡QuÃ©datelo!
+	WhatsThat					=	"SVM_4_WhatsThat"					;//Â¿QuÃ© ha sido eso?
+	ThatsMyWeapon				=	"SVM_4_ThatsMyWeapon"				;//Â¡SÃ© buen chico y devuÃ©lveme mi arma!
+	GiveItToMe					=	"SVM_4_GiveItToMe"					;//Â¡Venga, dame eso!
+	YouCanKeeptheCrap			=	"SVM_4_YouCanKeeptheCrap"			;//Â¡Pues no lo hagas! Â¡Me alegro de librarme de eso!
+	TheyKilledMyFriend			=	"SVM_4_TheyKilledMyFriend"			;//Si averiguamos quiÃ©n matÃ³ a uno de los nuestros...
+	YouDisturbedMySlumber		=	"SVM_4_YouDisturbedMySlumber"		;//Â¡EstÃ¡s interrumpiendo mi descanso!
+	SuckerGotSome				=	"SVM_4_SuckerGotSome"				;//Â¡Te han zurrado! Â¡Te venÃ­a bien una paliza!
+	SuckerDefeatedEBr			=	"SVM_4_SuckerDefeatedEBr"			;//Â¡Has vencido a un magnate del mineral!
+	SuckerDefeatedGur			=	"SVM_4_SuckerDefeatedGur"			;//Has vencido a un gurÃº. Estoy impresionado. Pero ni se te ocurra intentarlo de nuevo.
+	SuckerDefeatedMage			=	"SVM_4_SuckerDefeatedMage"			;//Si has vencido a un mago... Â¡debes ser un hombre valiente!
+	SuckerDefeatedNov_Guard		= 	"SVM_4_SuckerDefeatedNov_Guard"		;//Debes estar loco para sacudir asÃ­ a un novicio.
+	SuckerDefeatedVlk_Guard		= 	"SVM_4_SuckerDefeatedVlk_Guard"		;//Â¿QuÃ© creÃ­as que hacÃ­as sacudiendo a un cavador?
+	YouDefeatedMyComrade		=	"SVM_4_YouDefeatedMyComrade"		;//Â¡Te has metido con uno de mis amigos! Â¡Eso es muy arriesgado!
+	YouDefeatedNOV_Guard		=	"SVM_4_YouDefeatedNOV_Guard"		;//Â¡Si vuelves a poner la mano encima de un novicio lo lamentarÃ¡s!
+	YouDefeatedVLK_Guard		=	"SVM_4_YouDefeatedVLK_Guard"		;//Eres demasiado valiente; si tocas a uno de los protegidos, te podrÃ­as meter en un lÃ­o.
+	YouStoleFromMe				=	"SVM_4_YouStoleFromMe"				;//Â¡MantÃ©n las manos alejadas de mis cosas! Â¿Te enteras?
+	YouStoleFromUs				=	"SVM_4_YouStoleFromUs"				;//Tienes cosas que nos pertenecen. Â¡DevuÃ©lvenoslas!
+	YouStoleFromEBr				=	"SVM_4_YouStoleFromEBr"				;//Â¡TÃ­o! Â¡Has robado a los magnates del mineral! Â¡EstarÃ¡n furiosos!
+	YouStoleFromGur				=	"SVM_4_YouStoleFromGur"				;//Â¡Has robado a los gurÃºs! Â¡Al menos tendrÃ­as que haber evitado que te pillaran!
+	StoleFromMage				=	"SVM_4_StoleFromMage"				;//Â¡A los magos no les gusta que haya gente revolviendo en sus cosas!
+	YouKilledMyFriend			=	"SVM_4_YouKilledMyFriend"			;//Â¡Uno de los nuestros pesa sobre tu conciencia! Â¡Un error mÃ¡s y te tocarÃ¡ a ti!
+	YouKilledEBr				=	"SVM_4_YouKilledEBr"				;//Â¡Has matado a un magnate del mineral! TÃ­o, Â¿estÃ¡s zumbado?
+	YouKilledGur				=	"SVM_4_YouKilledGur"				;//Â¡Has matado a un gurÃº! Â¡No me lo puedo creer!
+	YouKilledMage				=	"SVM_4_YouKilledMage"				;//Â¡Has matado a un mago! Â¿CÃ³mo tienes pensado justificarlo?
 	YouKilledOCfolk				=	"SVM_4_YouKilledOCfolk"				;//Ha muerto un miembro del Campamento Viejo, y se ha relacionado tu nombre con la muerte...
-	YouKilledNCfolk				=	"SVM_4_YouKilledNCfolk"				;//¡Hay otra cabaña vacía en el Campamento Nuevo, y parece que estás implicado de algún modo!
-	YouKilledPSIfolk			=	"SVM_4_YouKilledPSIfolk"			;//¡La hermandad tiene un fiel menos, y su muerte pesa sobre tu conciencia!
-	GetThingsRight				=	"SVM_4_GetThingsRight"				;//¡No será fácil solucionar esto!
-	YouDefeatedMeWell			=	"SVM_4_YouDefeatedMeWell"			;//¡Me has dado una buena tunda, tío! ¡Ha sido una lucha justa! ¡Pero ya ha acabado!
-	Smalltalk01					=	"SVM_4_Smalltalk01"					;// ...si tú crees...
+	YouKilledNCfolk				=	"SVM_4_YouKilledNCfolk"				;//Â¡Hay otra cabaÃ±a vacÃ­a en el Campamento Nuevo, y parece que estÃ¡s implicado de algÃºn modo!
+	YouKilledPSIfolk			=	"SVM_4_YouKilledPSIfolk"			;//Â¡La hermandad tiene un fiel menos, y su muerte pesa sobre tu conciencia!
+	GetThingsRight				=	"SVM_4_GetThingsRight"				;//Â¡No serÃ¡ fÃ¡cil solucionar esto!
+	YouDefeatedMeWell			=	"SVM_4_YouDefeatedMeWell"			;//Â¡Me has dado una buena tunda, tÃ­o! Â¡Ha sido una lucha justa! Â¡Pero ya ha acabado!
+	Smalltalk01					=	"SVM_4_Smalltalk01"					;// ...si tÃº crees...
 	Smalltalk02					=	"SVM_4_Smalltalk02"					;// ...tal vez...
 	Smalltalk03					=	"SVM_4_Smalltalk03"					;// ...eso no fue muy inteligente...
-	Smalltalk04					=	"SVM_4_Smalltalk04"					;// ...será mejor que me mantenga al margen...
+	Smalltalk04					=	"SVM_4_Smalltalk04"					;// ...serÃ¡ mejor que me mantenga al margen...
 	Smalltalk05					=	"SVM_4_Smalltalk05"					;// ...en realidad no es mi problema...
-	Smalltalk06					=	"SVM_4_Smalltalk06"					;// ...era evidente que habría problemas...
-	Smalltalk07					=	"SVM_4_Smalltalk07"					;// ...pero sé discreto; la gente no tiene por qué saberlo.
-	Smalltalk08					=	"SVM_4_Smalltalk08"					;// ...no volverá a suceder...
+	Smalltalk06					=	"SVM_4_Smalltalk06"					;// ...era evidente que habrÃ­a problemas...
+	Smalltalk07					=	"SVM_4_Smalltalk07"					;// ...pero sÃ© discreto; la gente no tiene por quÃ© saberlo.
+	Smalltalk08					=	"SVM_4_Smalltalk08"					;// ...no volverÃ¡ a suceder...
 	Smalltalk09					=	"SVM_4_Smalltalk09"					;// ...debe de haber algo de cierto en esa historia...
 	Smalltalk10					=	"SVM_4_Smalltalk10"					;// ...has de tener cuidado con lo que dices a la gente...
 	Smalltalk11					=	"SVM_4_Smalltalk11"					;// ...mientras no me vea implicado...
-	Smalltalk12					=	"SVM_4_Smalltalk12"					;// ...no deberías creerte todo lo que oyes...
-	Smalltalk13					=	"SVM_4_Smalltalk13"					;// ...no me gustaría estar en su lugar...
+	Smalltalk12					=	"SVM_4_Smalltalk12"					;// ...no deberÃ­as creerte todo lo que oyes...
+	Smalltalk13					=	"SVM_4_Smalltalk13"					;// ...no me gustarÃ­a estar en su lugar...
 	Smalltalk14					=	"SVM_4_Smalltalk14"					;// ...lo mismo de siempre...
 	Smalltalk15					=	"SVM_4_Smalltalk15"					;// ...algunos no aprenden...
-	Smalltalk16					=	"SVM_4_Smalltalk16"					;// ...hubo un tiempo en que las cosas habrían sucedido de manera muy distinta...
+	Smalltalk16					=	"SVM_4_Smalltalk16"					;// ...hubo un tiempo en que las cosas habrÃ­an sucedido de manera muy distinta...
 	Smalltalk17					=	"SVM_4_Smalltalk17"					;// ...la gente no para de hablar...
 	Smalltalk18					=	"SVM_4_Smalltalk18"					;// ...ya no hago caso de los chismorreos...
-	Smalltalk19					=	"SVM_4_Smalltalk19"					;// ...confías en alguien y te metes en un lío; eso es lo que pasa...
-	Smalltalk20					=	"SVM_4_Smalltalk20"					;// ...me extraña que vaya a cambiar...
-	Smalltalk21					=	"SVM_4_Smalltalk21"					;// ...seguramente tengas razón...
-	Smalltalk22					=	"SVM_4_Smalltalk22"					;// ...espera. Será mejor no apresurarse...
-	Smalltalk23					=	"SVM_4_Smalltalk23"					;// ...creía que eso se había resuelto hace mucho...
+	Smalltalk19					=	"SVM_4_Smalltalk19"					;// ...confÃ­as en alguien y te metes en un lÃ­o; eso es lo que pasa...
+	Smalltalk20					=	"SVM_4_Smalltalk20"					;// ...me extraÃ±a que vaya a cambiar...
+	Smalltalk21					=	"SVM_4_Smalltalk21"					;// ...seguramente tengas razÃ³n...
+	Smalltalk22					=	"SVM_4_Smalltalk22"					;// ...espera. SerÃ¡ mejor no apresurarse...
+	Smalltalk23					=	"SVM_4_Smalltalk23"					;// ...creÃ­a que eso se habÃ­a resuelto hace mucho...
 	Smalltalk24					=	"SVM_4_Smalltalk24"					;// ...hablemos de otra cosa...
 	Om							= 	"SVM_4_Om"							;//Ommm
 };
 
 
-instance SVM_5 (C_SVM)				//Lebenskünstler, offen, Fröhlich. humorvoller Verarscher. Auch: Fauler Verpisser. Selbstbewußt, wortgewandt, charismatisch. (Lester)
+instance SVM_5 (C_SVM)				//LebenskÃ¼nstler, offen, FrÃ¶hlich. humorvoller Verarscher. Auch: Fauler Verpisser. SelbstbewuÃŸt, wortgewandt, charismatisch. (Lester)
 {
-	StopMagic					=	"SVM_5_StopMagic"					;//¡Será mejor que pares esa magia!
-	ISaidStopMagic				=	"SVM_5_ISaidStopMagic"				;//¡Cuando te digo que dejes la magia, hablo en serio!
-	WeaponDown					=	"SVM_5_WeaponDown"					;//¿Qué pretendes hacer con esa arma, tío?
-	ISaidWeaponDown				=	"SVM_5_ISaidWeaponDown"				;//¡Vega, aparta eso!
-	WatchYourAim				=	"SVM_5_WatchYourAim"				;//¡Estás apuntándome, payaso!
-	WatchYourAimAngry			=	"SVM_5_WatchYourAimAngry"			;//¡Si no paras, yo también practicaré contigo!
-	WhatAreYouDoing				=	"SVM_5_WhatAreYouDoing"				;//¡Eh! ¿Estás ciego o qué?
-	LetsForgetOurLittleFight	=	"SVM_5_LetsForgetOurLittleFight"	;//¡Olvidemos nuestra discusión sin importancia! ¿Vale?
-	Strange						=	"SVM_5_Strange"						;//¡Estaba aquí hace un instante! ¡Qué raro!
-	DieMonster					=	"SVM_5_DieMonster"					;//¡Ahora te toca a ti, bastardo!
-	DieMortalEnemy				=	"SVM_5_DieMortalEnemy"				;//¡Te toca pagar!
-	NowWait						=	"SVM_5_NowWait"						;//¡Estás pidiendo que te den una paliza urgentemente!
-	YouStillNotHaveEnough		=	"SVM_5_YouStillNotHaveEnough"		;//¿Aún no has tenido bastante?
-	YouAskedForIt				=	"SVM_5_YouAskedForIt"				;//¡De acuerdo, tú lo has querido!
-	NowWaitIntruder				= 	"SVM_5_NowWaitIntruder"				;//¡Tendrán que sacarte fuera!
-	IWillTeachYouRespectForForeignProperty	=	"SVM_5_IWillTeachYouRespectForForeignProperty"	;//Te lo advertí. ¡Si tocas mis cosas, te metes en un lío!
-	DirtyThief					=	"SVM_5_DirtyThief"					;//¡Ladrón! ¡Te enseñaré modales!
-	YouAttackedMyCharge			=	"SVM_5_YouAttackedMyCharge"			;//¡Nadie se mete con mis chicos sin lamentarlo después!
-	YouKilledOneOfUs			=	"SVM_5_YouKilledOneOfUs"			;//¡Has matado a uno de mis hombres! ¡Te voy a matar!
-	Dead						=	"SVM_5_Dead"					;//¡Aaargh!
+	StopMagic					=	"SVM_5_StopMagic"					;//Â¡SerÃ¡ mejor que pares esa magia!
+	ISaidStopMagic				=	"SVM_5_ISaidStopMagic"				;//Â¡Cuando te digo que dejes la magia, hablo en serio!
+	WeaponDown					=	"SVM_5_WeaponDown"					;//Â¿QuÃ© pretendes hacer con esa arma, tÃ­o?
+	ISaidWeaponDown				=	"SVM_5_ISaidWeaponDown"				;//Â¡Vega, aparta eso!
+	WatchYourAim				=	"SVM_5_WatchYourAim"				;//Â¡EstÃ¡s apuntÃ¡ndome, payaso!
+	WatchYourAimAngry			=	"SVM_5_WatchYourAimAngry"			;//Â¡Si no paras, yo tambiÃ©n practicarÃ© contigo!
+	WhatAreYouDoing				=	"SVM_5_WhatAreYouDoing"				;//Â¡Eh! Â¿EstÃ¡s ciego o quÃ©?
+	LetsForgetOurLittleFight	=	"SVM_5_LetsForgetOurLittleFight"	;//Â¡Olvidemos nuestra discusiÃ³n sin importancia! Â¿Vale?
+	Strange						=	"SVM_5_Strange"						;//Â¡Estaba aquÃ­ hace un instante! Â¡QuÃ© raro!
+	DieMonster					=	"SVM_5_DieMonster"					;//Â¡Ahora te toca a ti, bastardo!
+	DieMortalEnemy				=	"SVM_5_DieMortalEnemy"				;//Â¡Te toca pagar!
+	NowWait						=	"SVM_5_NowWait"						;//Â¡EstÃ¡s pidiendo que te den una paliza urgentemente!
+	YouStillNotHaveEnough		=	"SVM_5_YouStillNotHaveEnough"		;//Â¿AÃºn no has tenido bastante?
+	YouAskedForIt				=	"SVM_5_YouAskedForIt"				;//Â¡De acuerdo, tÃº lo has querido!
+	NowWaitIntruder				= 	"SVM_5_NowWaitIntruder"				;//Â¡TendrÃ¡n que sacarte fuera!
+	IWillTeachYouRespectForForeignProperty	=	"SVM_5_IWillTeachYouRespectForForeignProperty"	;//Te lo advertÃ­. Â¡Si tocas mis cosas, te metes en un lÃ­o!
+	DirtyThief					=	"SVM_5_DirtyThief"					;//Â¡LadrÃ³n! Â¡Te enseÃ±arÃ© modales!
+	YouAttackedMyCharge			=	"SVM_5_YouAttackedMyCharge"			;//Â¡Nadie se mete con mis chicos sin lamentarlo despuÃ©s!
+	YouKilledOneOfUs			=	"SVM_5_YouKilledOneOfUs"			;//Â¡Has matado a uno de mis hombres! Â¡Te voy a matar!
+	Dead						=	"SVM_5_Dead"					;//Â¡Aaargh!
 	Aargh_1						=	"SVM_5_Aargh_1"						;//Aargh
 	Aargh_2						=	"SVM_5_Aargh_2"						;//Aargh
 	Aargh_3						=	"SVM_5_Aargh_3"						;//Aargh
-	Berzerk						=	"SVM_5_Berzerk"						;//¡¡¡UUAAARRGGGHHH!!!
-	YoullBeSorryForThis			=	"SVM_5_YoullBeSorryForThis"			;//¡Lo lamentarás!
-	YesYes						=	"SVM_5_YesYes"						;//¡Tranquilo! ¡Has vencido!
-	ShitWhatAMonster			=	"SVM_5_ShitWhatAMonster"			;//¡Éste es demasiado grande para mí!
-	Help						=	"SVM_5_Help"						;//¡Maldita sea!
-	WeWillMeetAgain				=	"SVM_5_WeWillMeetAgain"				;//¡La próxima vez será distinto!
-	NeverTryThatAgain			=	"SVM_5_NeverTryThatAgain"			;//¡No vuelvas a intentar nada parecido!
-	ITakeYourWeapon				=	"SVM_5_ITakeYourWeapon"				;//¡Me gusta esa arma!
-	ITookYourOre				=	"SVM_5_ITookYourOre"				;//¡Haré que se invierta bien tu mineral!
-	ShitNoOre					=	"SVM_5_ShitNoOre"					;//¡Qué mala suerte! ¡No hay mineral!
-	HandsOff					=	"SVM_5_HandsOff"					;//¡Quita las manos!
-	GetOutOfHere				=	"SVM_5_GetOutOfHere"				;//¡Lárgate de aquí!
-	YouViolatedForbiddenTerritory=	"SVM_5_YouViolatedForbiddenTerritory";//¡Eh! ¿De dónde has salido?
-	YouWannaFoolMe				=	"SVM_5_YouWannaFoolMe"				;//¡Buen chiste!
-	WhatsThisSupposedToBe		=	"SVM_5_WhatsThisSupposedToBe"		;//¿Qué haces rondando por aquí?
-	WhyAreYouInHere				=	"SVM_5_WhyYouAreInHere"				;//¡Sal de aquí o llamo a los guardias!
-	WhatDidYouInThere			=	"SVM_5_WhatDidYouInThere"			;//¡Aquí no pintas nada!
-	WiseMove					=	"SVM_5_WiseMove"					;//¡Aprendes rápido!
-	Alarm						=	"SVM_5_Alarm"						;//¡Guardias! ¡Por aquí!
-	IntruderAlert				= 	"SVM_5_IntruderAlert"				;//¡¡¡¡ALERTA!!!!
-	BehindYou					=	"SVM_5_BehindYou"					;//¡Eh, cuidado!
-	TheresAFight				=	"SVM_5_TheresAFight"				;//¡Una pelea!
-	HeyHeyHey					=	"SVM_5_HeyHeyHey"					;//¡Dale!
-	CheerFight					=	"SVM_5_CheerFight"					;//¡Bien!
-	CheerFriend					=	"SVM_5_CheerFriend"					;//¡Sacúdele!
-	Ooh							=	"SVM_5_Ooh"							;//¡Cuidado!
-	YeahWellDone				=	"SVM_5_YeahWellDone"				;//¡Ya era hora!
-	RunCoward					=	"SVM_5_RunCoward"					;//¡Se está escabullendo!
-	HeDefeatedHim				=	"SVM_5_HeDefeatedHim"				;//¡Yo diría que ha ganado con claridad!
-	HeDeservedIt				=	"SVM_5_HeDeservedIt"				;//¡Se lo merecía!
-	HeKilledHim					=	"SVM_5_HeKilledHim"					;//¡Si vas por ahí matando gente, es normal que te metas en líos!
-	ItWasAGoodFight				=	"SVM_5_ItWasAGoodFight"				;//¡Menuda pelea!
+	Berzerk						=	"SVM_5_Berzerk"						;//Â¡Â¡Â¡UUAAARRGGGHHH!!!
+	YoullBeSorryForThis			=	"SVM_5_YoullBeSorryForThis"			;//Â¡Lo lamentarÃ¡s!
+	YesYes						=	"SVM_5_YesYes"						;//Â¡Tranquilo! Â¡Has vencido!
+	ShitWhatAMonster			=	"SVM_5_ShitWhatAMonster"			;//Â¡Ã‰ste es demasiado grande para mÃ­!
+	Help						=	"SVM_5_Help"						;//Â¡Maldita sea!
+	WeWillMeetAgain				=	"SVM_5_WeWillMeetAgain"				;//Â¡La prÃ³xima vez serÃ¡ distinto!
+	NeverTryThatAgain			=	"SVM_5_NeverTryThatAgain"			;//Â¡No vuelvas a intentar nada parecido!
+	ITakeYourWeapon				=	"SVM_5_ITakeYourWeapon"				;//Â¡Me gusta esa arma!
+	ITookYourOre				=	"SVM_5_ITookYourOre"				;//Â¡HarÃ© que se invierta bien tu mineral!
+	ShitNoOre					=	"SVM_5_ShitNoOre"					;//Â¡QuÃ© mala suerte! Â¡No hay mineral!
+	HandsOff					=	"SVM_5_HandsOff"					;//Â¡Quita las manos!
+	GetOutOfHere				=	"SVM_5_GetOutOfHere"				;//Â¡LÃ¡rgate de aquÃ­!
+	YouViolatedForbiddenTerritory=	"SVM_5_YouViolatedForbiddenTerritory";//Â¡Eh! Â¿De dÃ³nde has salido?
+	YouWannaFoolMe				=	"SVM_5_YouWannaFoolMe"				;//Â¡Buen chiste!
+	WhatsThisSupposedToBe		=	"SVM_5_WhatsThisSupposedToBe"		;//Â¿QuÃ© haces rondando por aquÃ­?
+	WhyAreYouInHere				=	"SVM_5_WhyYouAreInHere"				;//Â¡Sal de aquÃ­ o llamo a los guardias!
+	WhatDidYouInThere			=	"SVM_5_WhatDidYouInThere"			;//Â¡AquÃ­ no pintas nada!
+	WiseMove					=	"SVM_5_WiseMove"					;//Â¡Aprendes rÃ¡pido!
+	Alarm						=	"SVM_5_Alarm"						;//Â¡Guardias! Â¡Por aquÃ­!
+	IntruderAlert				= 	"SVM_5_IntruderAlert"				;//Â¡Â¡Â¡Â¡ALERTA!!!!
+	BehindYou					=	"SVM_5_BehindYou"					;//Â¡Eh, cuidado!
+	TheresAFight				=	"SVM_5_TheresAFight"				;//Â¡Una pelea!
+	HeyHeyHey					=	"SVM_5_HeyHeyHey"					;//Â¡Dale!
+	CheerFight					=	"SVM_5_CheerFight"					;//Â¡Bien!
+	CheerFriend					=	"SVM_5_CheerFriend"					;//Â¡SacÃºdele!
+	Ooh							=	"SVM_5_Ooh"							;//Â¡Cuidado!
+	YeahWellDone				=	"SVM_5_YeahWellDone"				;//Â¡Ya era hora!
+	RunCoward					=	"SVM_5_RunCoward"					;//Â¡Se estÃ¡ escabullendo!
+	HeDefeatedHim				=	"SVM_5_HeDefeatedHim"				;//Â¡Yo dirÃ­a que ha ganado con claridad!
+	HeDeservedIt				=	"SVM_5_HeDeservedIt"				;//Â¡Se lo merecÃ­a!
+	HeKilledHim					=	"SVM_5_HeKilledHim"					;//Â¡Si vas por ahÃ­ matando gente, es normal que te metas en lÃ­os!
+	ItWasAGoodFight				=	"SVM_5_ItWasAGoodFight"				;//Â¡Menuda pelea!
 	Awake						=	"SVM_5_Awake"						;//Aaaau (bostezo)
-	FriendlyGreetings			=	"SVM_5_FriendlyGreetings"			;//¡Hola amigo!
-	ALGreetings					=	"SVM_5_ALGreetings"					;//¡Por Gómez!
-	MageGreetings				=	"SVM_5_MageGreetings"				;//¡Por el honor de la magia!
-	SectGreetings				=	"SVM_5_SectGreetings"				;//¡Despierta!
-	ThereHeIs					= 	"SVM_5_ThereHeIs"					;//Por allí.
-	NoLearnNoPoints				= 	"SVM_5_NoLearnNoPoints"				;//No puedo enseñarte nada porque eres bastante inexperto.
-	NoLearnOverMax				= 	"SVM_5_NoLearnOverMax"				;//Tus posibilidades no dan más de sí. Deberías aprender algo diferente.
-	NoLearnYouAlreadyKnow		=	"SVM_5_NoLearnYouAlreadyKnow"		;//¡Tienes que llegar al nivel avanzado antes de convertirte en maestro!
-	NoLearnYoureBetter			=	"SVM_5_NoLearnYoureBetter"			;//¡Ya estás por encima de ese nivel!
-	HeyYou						=	"SVM_5_HeyYou"						;//¡Oye, tú!
-	NotNow						=	"SVM_5_NotNow"						;//¡Ahora no!
-	WhatDoYouWant				=	"SVM_5_WhatDoYouWant"				;//¿Puedo ayudarte?
-	ISaidWhatDoYouWant			=	"SVM_5_ISaidWhatDoYouWant"			;//¿Qué quieres?
-	MakeWay						=	"SVM_5_MakeWay"						;//Déjame pasar.
-	OutOfMyWay					=	"SVM_5_OutOfMyWay"					;//¡Vamos, quiero pasar!
-	YouDeafOrWhat				=	"SVM_5_YouDeafOrWhat"				;//¿Estás sordo o quieres bronca?
-	LookingForTroubleAgain		=	"SVM_5_LookingForTroubleAgain"		;//¿Otra vez buscas líos conmigo?
-	LookAway					=	"SVM_5_LookAway"					;//No he visto NADA... ¿Por qué? ¿Qué ha pasado?
-	OkayKeepIt					=	"SVM_5_OkayKeepIt"					;//¡Vale, quédatelo!
-	WhatsThat					=	"SVM_5_WhatsThat"					;//¿Qué ha sido eso?
-	ThatsMyWeapon				=	"SVM_5_ThatsMyWeapon"				;//¡Preferiría recuperar mi arma!
-	GiveItToMe					=	"SVM_5_GiveItToMe"					;//¡Dámela!
-	YouCanKeeptheCrap			=	"SVM_5_YouCanKeeptheCrap"			;//¡Hm, tampoco pasa nada! ¡Tengo más!
+	FriendlyGreetings			=	"SVM_5_FriendlyGreetings"			;//Â¡Hola amigo!
+	ALGreetings					=	"SVM_5_ALGreetings"					;//Â¡Por GÃ³mez!
+	MageGreetings				=	"SVM_5_MageGreetings"				;//Â¡Por el honor de la magia!
+	SectGreetings				=	"SVM_5_SectGreetings"				;//Â¡Despierta!
+	ThereHeIs					= 	"SVM_5_ThereHeIs"					;//Por allÃ­.
+	NoLearnNoPoints				= 	"SVM_5_NoLearnNoPoints"				;//No puedo enseÃ±arte nada porque eres bastante inexperto.
+	NoLearnOverMax				= 	"SVM_5_NoLearnOverMax"				;//Tus posibilidades no dan mÃ¡s de sÃ­. DeberÃ­as aprender algo diferente.
+	NoLearnYouAlreadyKnow		=	"SVM_5_NoLearnYouAlreadyKnow"		;//Â¡Tienes que llegar al nivel avanzado antes de convertirte en maestro!
+	NoLearnYoureBetter			=	"SVM_5_NoLearnYoureBetter"			;//Â¡Ya estÃ¡s por encima de ese nivel!
+	HeyYou						=	"SVM_5_HeyYou"						;//Â¡Oye, tÃº!
+	NotNow						=	"SVM_5_NotNow"						;//Â¡Ahora no!
+	WhatDoYouWant				=	"SVM_5_WhatDoYouWant"				;//Â¿Puedo ayudarte?
+	ISaidWhatDoYouWant			=	"SVM_5_ISaidWhatDoYouWant"			;//Â¿QuÃ© quieres?
+	MakeWay						=	"SVM_5_MakeWay"						;//DÃ©jame pasar.
+	OutOfMyWay					=	"SVM_5_OutOfMyWay"					;//Â¡Vamos, quiero pasar!
+	YouDeafOrWhat				=	"SVM_5_YouDeafOrWhat"				;//Â¿EstÃ¡s sordo o quieres bronca?
+	LookingForTroubleAgain		=	"SVM_5_LookingForTroubleAgain"		;//Â¿Otra vez buscas lÃ­os conmigo?
+	LookAway					=	"SVM_5_LookAway"					;//No he visto NADA... Â¿Por quÃ©? Â¿QuÃ© ha pasado?
+	OkayKeepIt					=	"SVM_5_OkayKeepIt"					;//Â¡Vale, quÃ©datelo!
+	WhatsThat					=	"SVM_5_WhatsThat"					;//Â¿QuÃ© ha sido eso?
+	ThatsMyWeapon				=	"SVM_5_ThatsMyWeapon"				;//Â¡PreferirÃ­a recuperar mi arma!
+	GiveItToMe					=	"SVM_5_GiveItToMe"					;//Â¡DÃ¡mela!
+	YouCanKeeptheCrap			=	"SVM_5_YouCanKeeptheCrap"			;//Â¡Hm, tampoco pasa nada! Â¡Tengo mÃ¡s!
 	TheyKilledMyFriend			=	"SVM_5_TheyKilledMyFriend"			;//Se han cargado a uno de los nuestros. Si cojo a ese cerdo...
-	YouDisturbedMySlumber		=	"SVM_5_YouDisturbedMySlumber"		;//Eh, ¿a qué viene eso? ¿Por qué me has despertado?
-	SuckerGotSome				=	"SVM_5_SuckerGotSome"				;//¿Eh? ¿Te han zurrado? ¡Te lo mereces!
-	SuckerDefeatedEBr			=	"SVM_5_SuckerDefeatedEBr"			;//¡Has vencido a un magnate del mineral! ¡Se quedó impresionado!
-	SuckerDefeatedGur			=	"SVM_5_SuckerDefeatedGur"			;//Has vencido a un gurú. Estoy impresionado. Pero ni se te ocurra intentarlo de nuevo.
-	SuckerDefeatedMage			=	"SVM_5_SuckerDefeatedMage"			;//Si has vencido a un mago... ¡debes ser un hombre valiente!
-	SuckerDefeatedNov_Guard		= 	"SVM_5_SuckerDefeatedNov_Guard"		;//Debes estar loco para sacudir así a un novicio.
-	SuckerDefeatedVlk_Guard		= 	"SVM_5_SuckerDefeatedVlk_Guard"		;//¿Qué creías que hacías sacudiendo a un cavador?
-	YouDefeatedMyComrade		=	"SVM_5_YouDefeatedMyComrade"		;//¡Has sacudido a uno de mis amigos! ¿A qué venía eso?
-	YouDefeatedNOV_Guard		=	"SVM_5_YouDefeatedNOV_Guard"		;//¡Si vuelves a poner la mano encima de un novicio lo lamentarás!
-	YouDefeatedVLK_Guard		=	"SVM_5_YouDefeatedVLK_Guard"		;//Eres demasiado valiente; si tocas a uno de mis protegidos, podría resultarte muy peligroso.
-	YouStoleFromMe				=	"SVM_5_YouStoleFromMe"				;//¿Cómo te atreves a presentarte aquí, ladrón asqueroso?
-	YouStoleFromUs				=	"SVM_5_YouStoleFromUs"				;//Tienes cosas que nos pertenecen. ¡Será mejor que nos las devuelvas!
-	YouStoleFromEBr				=	"SVM_5_YouStoleFromEBr"				;//¡Tío! ¡Has robado a los magnates del mineral! ¡Estarán furiosos!
-	YouStoleFromGur				=	"SVM_5_YouStoleFromGur"				;//¡Has robado a los gurús! ¡Al menos tendrías que haber evitado que te pillaran!
-	StoleFromMage				=	"SVM_5_StoleFromMage"				;//¡A los magos no les gusta que haya gente revolviendo en sus cosas!
-	YouKilledMyFriend			=	"SVM_5_YouKilledMyFriend"			;//¡Uno de los nuestros pesa sobre tu conciencia! ¡Un error más y te tocará a ti!
-	YouKilledEBr				=	"SVM_5_YouKilledEBr"				;//¡Has matado a un magnate del mineral! Tío, ¿estás zumbado?
-	YouKilledGur				=	"SVM_5_YouKilledGur"				;//¡Has matado a un gurú! ¡No me lo puedo creer!
-	YouKilledMage				=	"SVM_5_YouKilledMage"				;//¡Has matado a un mago! ¿Cómo tienes pensado justificarlo?
+	YouDisturbedMySlumber		=	"SVM_5_YouDisturbedMySlumber"		;//Eh, Â¿a quÃ© viene eso? Â¿Por quÃ© me has despertado?
+	SuckerGotSome				=	"SVM_5_SuckerGotSome"				;//Â¿Eh? Â¿Te han zurrado? Â¡Te lo mereces!
+	SuckerDefeatedEBr			=	"SVM_5_SuckerDefeatedEBr"			;//Â¡Has vencido a un magnate del mineral! Â¡Se quedÃ³ impresionado!
+	SuckerDefeatedGur			=	"SVM_5_SuckerDefeatedGur"			;//Has vencido a un gurÃº. Estoy impresionado. Pero ni se te ocurra intentarlo de nuevo.
+	SuckerDefeatedMage			=	"SVM_5_SuckerDefeatedMage"			;//Si has vencido a un mago... Â¡debes ser un hombre valiente!
+	SuckerDefeatedNov_Guard		= 	"SVM_5_SuckerDefeatedNov_Guard"		;//Debes estar loco para sacudir asÃ­ a un novicio.
+	SuckerDefeatedVlk_Guard		= 	"SVM_5_SuckerDefeatedVlk_Guard"		;//Â¿QuÃ© creÃ­as que hacÃ­as sacudiendo a un cavador?
+	YouDefeatedMyComrade		=	"SVM_5_YouDefeatedMyComrade"		;//Â¡Has sacudido a uno de mis amigos! Â¿A quÃ© venÃ­a eso?
+	YouDefeatedNOV_Guard		=	"SVM_5_YouDefeatedNOV_Guard"		;//Â¡Si vuelves a poner la mano encima de un novicio lo lamentarÃ¡s!
+	YouDefeatedVLK_Guard		=	"SVM_5_YouDefeatedVLK_Guard"		;//Eres demasiado valiente; si tocas a uno de mis protegidos, podrÃ­a resultarte muy peligroso.
+	YouStoleFromMe				=	"SVM_5_YouStoleFromMe"				;//Â¿CÃ³mo te atreves a presentarte aquÃ­, ladrÃ³n asqueroso?
+	YouStoleFromUs				=	"SVM_5_YouStoleFromUs"				;//Tienes cosas que nos pertenecen. Â¡SerÃ¡ mejor que nos las devuelvas!
+	YouStoleFromEBr				=	"SVM_5_YouStoleFromEBr"				;//Â¡TÃ­o! Â¡Has robado a los magnates del mineral! Â¡EstarÃ¡n furiosos!
+	YouStoleFromGur				=	"SVM_5_YouStoleFromGur"				;//Â¡Has robado a los gurÃºs! Â¡Al menos tendrÃ­as que haber evitado que te pillaran!
+	StoleFromMage				=	"SVM_5_StoleFromMage"				;//Â¡A los magos no les gusta que haya gente revolviendo en sus cosas!
+	YouKilledMyFriend			=	"SVM_5_YouKilledMyFriend"			;//Â¡Uno de los nuestros pesa sobre tu conciencia! Â¡Un error mÃ¡s y te tocarÃ¡ a ti!
+	YouKilledEBr				=	"SVM_5_YouKilledEBr"				;//Â¡Has matado a un magnate del mineral! TÃ­o, Â¿estÃ¡s zumbado?
+	YouKilledGur				=	"SVM_5_YouKilledGur"				;//Â¡Has matado a un gurÃº! Â¡No me lo puedo creer!
+	YouKilledMage				=	"SVM_5_YouKilledMage"				;//Â¡Has matado a un mago! Â¿CÃ³mo tienes pensado justificarlo?
 	YouKilledOCfolk				=	"SVM_5_YouKilledOCfolk"				;//Ha muerto un miembro del Campamento Viejo, y se ha relacionado tu nombre con la muerte...
-	YouKilledNCfolk				=	"SVM_5_YouKilledNCfolk"				;//¡El Campamento Nuevo ha sufrido una pérdida trágica, y parece que estás implicado!
-	YouKilledPSIfolk			=	"SVM_5_YouKilledPSIfolk"			;//¡La hermandad tiene un fiel menos, y su muerte pesa sobre tu conciencia!
-	GetThingsRight				=	"SVM_5_GetThingsRight"				;//¡No será fácil solucionar esto!
-	YouDefeatedMeWell			=	"SVM_5_YouDefeatedMeWell"			;//¡Me has dado una buena tunda, tío! ¡Ha sido una lucha justa! ¡Pero ha ya acabado!
-	Smalltalk01					=	"SVM_5_Smalltalk01"					;// ...si tú crees...
+	YouKilledNCfolk				=	"SVM_5_YouKilledNCfolk"				;//Â¡El Campamento Nuevo ha sufrido una pÃ©rdida trÃ¡gica, y parece que estÃ¡s implicado!
+	YouKilledPSIfolk			=	"SVM_5_YouKilledPSIfolk"			;//Â¡La hermandad tiene un fiel menos, y su muerte pesa sobre tu conciencia!
+	GetThingsRight				=	"SVM_5_GetThingsRight"				;//Â¡No serÃ¡ fÃ¡cil solucionar esto!
+	YouDefeatedMeWell			=	"SVM_5_YouDefeatedMeWell"			;//Â¡Me has dado una buena tunda, tÃ­o! Â¡Ha sido una lucha justa! Â¡Pero ha ya acabado!
+	Smalltalk01					=	"SVM_5_Smalltalk01"					;// ...si tÃº crees...
 	Smalltalk02					=	"SVM_5_Smalltalk02"					;// ...tal vez...
 	Smalltalk03					=	"SVM_5_Smalltalk03"					;// ...eso no fue muy inteligente...
-	Smalltalk04					=	"SVM_5_Smalltalk04"					;// ...será mejor que me mantenga al margen...
+	Smalltalk04					=	"SVM_5_Smalltalk04"					;// ...serÃ¡ mejor que me mantenga al margen...
 	Smalltalk05					=	"SVM_5_Smalltalk05"					;// ...en realidad no es mi problema...
-	Smalltalk06					=	"SVM_5_Smalltalk06"					;// ...era evidente que habría problemas...
-	Smalltalk07					=	"SVM_5_Smalltalk07"					;// ...pero sé discreto; la gente no tiene por qué saberlo.
-	Smalltalk08					=	"SVM_5_Smalltalk08"					;// ...no volverá a suceder...
+	Smalltalk06					=	"SVM_5_Smalltalk06"					;// ...era evidente que habrÃ­a problemas...
+	Smalltalk07					=	"SVM_5_Smalltalk07"					;// ...pero sÃ© discreto; la gente no tiene por quÃ© saberlo.
+	Smalltalk08					=	"SVM_5_Smalltalk08"					;// ...no volverÃ¡ a suceder...
 	Smalltalk09					=	"SVM_5_Smalltalk09"					;// ...debe haber algo de cierto en esa historia...
 	Smalltalk10					=	"SVM_5_Smalltalk10"					;// ...has de tener cuidado con lo que dices a la gente...
 	Smalltalk11					=	"SVM_5_Smalltalk11"					;// ...mientras no me vea implicado...
-	Smalltalk12					=	"SVM_5_Smalltalk12"					;// ...no deberías creerte todo lo que oyes...
-	Smalltalk13					=	"SVM_5_Smalltalk13"					;// ...no me gustaría estar en su lugar...
+	Smalltalk12					=	"SVM_5_Smalltalk12"					;// ...no deberÃ­as creerte todo lo que oyes...
+	Smalltalk13					=	"SVM_5_Smalltalk13"					;// ...no me gustarÃ­a estar en su lugar...
 	Smalltalk14					=	"SVM_5_Smalltalk14"					;// ...lo mismo de siempre...
 	Smalltalk15					=	"SVM_5_Smalltalk15"					;// ...algunos no aprenden...
-	Smalltalk16					=	"SVM_5_Smalltalk16"					;// ...hubo un tiempo en que las cosas habrían sucedido de manera muy distinta...
+	Smalltalk16					=	"SVM_5_Smalltalk16"					;// ...hubo un tiempo en que las cosas habrÃ­an sucedido de manera muy distinta...
 	Smalltalk17					=	"SVM_5_Smalltalk17"					;// ...la gente no para de hablar...
 	Smalltalk18					=	"SVM_5_Smalltalk18"					;// ...ya no hago caso de los chismorreos...
-	Smalltalk19					=	"SVM_5_Smalltalk19"					;// ...confías en alguien y te metes en un lío; eso es lo que pasa...
-	Smalltalk20					=	"SVM_5_Smalltalk20"					;// ...me extraña que vaya a cambiar...
-	Smalltalk21					=	"SVM_5_Smalltalk21"					;// ...seguramente tengas razón...
-	Smalltalk22					=	"SVM_5_Smalltalk22"					;// ...espera. Será mejor no apresurarse...
-	Smalltalk23					=	"SVM_5_Smalltalk23"					;// ...creía que eso se había resuelto hace mucho...
+	Smalltalk19					=	"SVM_5_Smalltalk19"					;// ...confÃ­as en alguien y te metes en un lÃ­o; eso es lo que pasa...
+	Smalltalk20					=	"SVM_5_Smalltalk20"					;// ...me extraÃ±a que vaya a cambiar...
+	Smalltalk21					=	"SVM_5_Smalltalk21"					;// ...seguramente tengas razÃ³n...
+	Smalltalk22					=	"SVM_5_Smalltalk22"					;// ...espera. SerÃ¡ mejor no apresurarse...
+	Smalltalk23					=	"SVM_5_Smalltalk23"					;// ...creÃ­a que eso se habÃ­a resuelto hace mucho...
 	Smalltalk24					=	"SVM_5_Smalltalk24"					;// ...hablemos de otra cosa...
 	Om							= 	"SVM_5_Om"							;//Ommm
 };
 
 //////////////////////////////////////////
-instance SVM_6 (C_SVM)				//Raufbold	(Will saufen und raufen	(Matrose) Alkoholiker. Grölt viel)
+instance SVM_6 (C_SVM)				//Raufbold	(Will saufen und raufen	(Matrose) Alkoholiker. GrÃ¶lt viel)
 {
-	StopMagic					=	"SVM_6_StopMagic"					;//¡Basta de hechicería!
-	ISaidStopMagic				=	"SVM_6_ISaidStopMagic"				;//¡Detén esa magia! ¡Ahora mismo!
-	WeaponDown					=	"SVM_6_WeaponDown"					;//¡Aparta esa arma!
-	ISaidWeaponDown				=	"SVM_6_ISaidWeaponDown"				;//¿Quieres que te dé una zurra? ¡Aparta eso!
-	WatchYourAim				=	"SVM_6_WatchYourAim"				;//¡Si no dejas eso va a pasarte algo malo!
-	WatchYourAimAngry			=	"SVM_6_WatchYourAimAngry"			;//¡Deja de apuntarme si no quieres que te parta la cara!
-	WhatAreYouDoing				=	"SVM_6_WhatAreYouDoing"				;//¡Eh! ¡Cuidado!
-	LetsForgetOurLittleFight	=	"SVM_6_LetsForgetOurLittleFight"	;//¡Eh, tío! ¡Olvidemos nuestra discusión sin importancia! ¿Vale?
-	Strange						=	"SVM_6_Strange"						;//¡Sal! ¡Que se te vea!
-	DieMonster					=	"SVM_6_DieMonster"					;//¡Te voy a hacer picadillo, cerdo!
-	DieMortalEnemy				=	"SVM_6_DieMortalEnemy"				;//¡Te la has cargado!
+	StopMagic					=	"SVM_6_StopMagic"					;//Â¡Basta de hechicerÃ­a!
+	ISaidStopMagic				=	"SVM_6_ISaidStopMagic"				;//Â¡DetÃ©n esa magia! Â¡Ahora mismo!
+	WeaponDown					=	"SVM_6_WeaponDown"					;//Â¡Aparta esa arma!
+	ISaidWeaponDown				=	"SVM_6_ISaidWeaponDown"				;//Â¿Quieres que te dÃ© una zurra? Â¡Aparta eso!
+	WatchYourAim				=	"SVM_6_WatchYourAim"				;//Â¡Si no dejas eso va a pasarte algo malo!
+	WatchYourAimAngry			=	"SVM_6_WatchYourAimAngry"			;//Â¡Deja de apuntarme si no quieres que te parta la cara!
+	WhatAreYouDoing				=	"SVM_6_WhatAreYouDoing"				;//Â¡Eh! Â¡Cuidado!
+	LetsForgetOurLittleFight	=	"SVM_6_LetsForgetOurLittleFight"	;//Â¡Eh, tÃ­o! Â¡Olvidemos nuestra discusiÃ³n sin importancia! Â¿Vale?
+	Strange						=	"SVM_6_Strange"						;//Â¡Sal! Â¡Que se te vea!
+	DieMonster					=	"SVM_6_DieMonster"					;//Â¡Te voy a hacer picadillo, cerdo!
+	DieMortalEnemy				=	"SVM_6_DieMortalEnemy"				;//Â¡Te la has cargado!
 	NowWait						=	"SVM_6_NowWait"						;//Te voy a partir la cara...
-	YouStillNotHaveEnough		=	"SVM_6_YouStillNotHaveEnough"		;//¡Parece que quieres que te parta la cara!
-	YouAskedForIt				=	"SVM_6_YouAskedForIt"				;//¡Así lo has querido!
-	NowWaitIntruder				= 	"SVM_6_NowWaitIntruder"				;//¡Te voy a hacer picadillo!
-	IWillTeachYouRespectForForeignProperty	=	"SVM_6_IWillTeachYouRespectForForeignProperty"	;//Te lo advertí. ¡Si tocas mis cosas, te metes en un lío!
-	DirtyThief					=	"SVM_6_DirtyThief"					;//¡Ladrón! ¡Voy a acabar contigo!
-	YouAttackedMyCharge			=	"SVM_6_YouAttackedMyCharge"			;//¡Nadie se mete con mis chicos!
-	YouKilledOneOfUs			=	"SVM_6_YouKilledOneOfUs"			;//¡Has matado a uno de mis hombres! ¡Te voy a matar!
-	Dead						=	"SVM_6_Dead"						;//¡Aaargh!
+	YouStillNotHaveEnough		=	"SVM_6_YouStillNotHaveEnough"		;//Â¡Parece que quieres que te parta la cara!
+	YouAskedForIt				=	"SVM_6_YouAskedForIt"				;//Â¡AsÃ­ lo has querido!
+	NowWaitIntruder				= 	"SVM_6_NowWaitIntruder"				;//Â¡Te voy a hacer picadillo!
+	IWillTeachYouRespectForForeignProperty	=	"SVM_6_IWillTeachYouRespectForForeignProperty"	;//Te lo advertÃ­. Â¡Si tocas mis cosas, te metes en un lÃ­o!
+	DirtyThief					=	"SVM_6_DirtyThief"					;//Â¡LadrÃ³n! Â¡Voy a acabar contigo!
+	YouAttackedMyCharge			=	"SVM_6_YouAttackedMyCharge"			;//Â¡Nadie se mete con mis chicos!
+	YouKilledOneOfUs			=	"SVM_6_YouKilledOneOfUs"			;//Â¡Has matado a uno de mis hombres! Â¡Te voy a matar!
+	Dead						=	"SVM_6_Dead"						;//Â¡Aaargh!
 	Aargh_1						=	"SVM_6_Aargh_1"						;//Aargh
 	Aargh_2						=	"SVM_6_Aargh_2"						;//Aargh
 	Aargh_3						=	"SVM_6_Aargh_3"						;//Aargh
-	Berzerk						=	"SVM_6_Berzerk"						;//¡¡¡UUAAARRGGGHHH!!!
-	YoullBeSorryForThis			=	"SVM_6_YoullBeSorryForThis"			;//¡Lo lamentarás!
-	YesYes						=	"SVM_6_YesYes"						;//¡Sí, sí! ¡Tranquilo! ¡Has vencido!
-	ShitWhatAMonster			=	"SVM_6_ShitWhatAMonster"			;//¡Maldita sea, menudo animal! ¡Lárgate tan deprisa como puedas!
-	Help						=	"SVM_6_Help"						;//¡Maldita sea!
-	WeWillMeetAgain				=	"SVM_6_WeWillMeetAgain"				;//¡¡Acabarás conociéndome!!
-	NeverTryThatAgain			=	"SVM_6_NeverTryThatAgain"			;//Si vuelves a intentar eso lo lamentarás.
-	ITakeYourWeapon				=	"SVM_6_ITakeYourWeapon"				;//¡Esa arma parece muy manejable!
-	ITookYourOre				=	"SVM_6_ITookYourOre"				;//¡Gracias por el mineral, beberé a tu salud!
+	Berzerk						=	"SVM_6_Berzerk"						;//Â¡Â¡Â¡UUAAARRGGGHHH!!!
+	YoullBeSorryForThis			=	"SVM_6_YoullBeSorryForThis"			;//Â¡Lo lamentarÃ¡s!
+	YesYes						=	"SVM_6_YesYes"						;//Â¡SÃ­, sÃ­! Â¡Tranquilo! Â¡Has vencido!
+	ShitWhatAMonster			=	"SVM_6_ShitWhatAMonster"			;//Â¡Maldita sea, menudo animal! Â¡LÃ¡rgate tan deprisa como puedas!
+	Help						=	"SVM_6_Help"						;//Â¡Maldita sea!
+	WeWillMeetAgain				=	"SVM_6_WeWillMeetAgain"				;//Â¡Â¡AcabarÃ¡s conociÃ©ndome!!
+	NeverTryThatAgain			=	"SVM_6_NeverTryThatAgain"			;//Si vuelves a intentar eso lo lamentarÃ¡s.
+	ITakeYourWeapon				=	"SVM_6_ITakeYourWeapon"				;//Â¡Esa arma parece muy manejable!
+	ITookYourOre				=	"SVM_6_ITookYourOre"				;//Â¡Gracias por el mineral, beberÃ© a tu salud!
 	ShitNoOre					=	"SVM_6_ShitNoOre"					;//Mierda, ni siquiera tiene mineral...
-	HandsOff					=	"SVM_6_HandsOff"					;//¡Quita las manos!
-	GetOutOfHere				=	"SVM_6_GetOutOfHere"				;//¡Lárgate de aquí!
-	YouViolatedForbiddenTerritory=	"SVM_6_YouViolatedForbiddenTerritory";//¡Eh! ¿De dónde has salido?
-	YouWannaFoolMe				=	"SVM_6_YouWannaFoolMe"				;//Sí, ¿te crees que soy tonto?
-	WhatsThisSupposedToBe		=	"SVM_6_WhatsThisSupposedToBe"		;//¡Eh! ¿Qué haces rondando por aquí?
-	WhyAreYouInHere				=	"SVM_6_WhyYouAreInHere"				;//¡Sal o llamo a los guardias!
-	WhatDidYouInThere			=	"SVM_6_WhatDidYouInThere"			;//¿Qué has estado haciendo aquí dentro?
-	WiseMove					=	"SVM_6_WiseMove"					;//¡Has tenido suerte!
-	Alarm						=	"SVM_6_Alarm"						;//¡Guardias! ¡Por aquí!
-	IntruderAlert				= 	"SVM_6_IntruderAlert"				;//¡¡¡ALERTA!!! ¡¡¡INTRUSO!!!
-	BehindYou					=	"SVM_6_BehindYou"					;//¡Detrás de ti!
-	TheresAFight				=	"SVM_6_TheresAFight"				;//¡Ah, una pelea!
-	HeyHeyHey					=	"SVM_6_HeyHeyHey"					;//¡Más fuerte!
-	CheerFight					=	"SVM_6_CheerFight"					;//¡Lucháis como mujeres!
-	CheerFriend					=	"SVM_6_CheerFriend"					;//¡¡Acaba con él!!
-	Ooh							=	"SVM_6_Ooh"							;//¡No se lo consientas! ¡Dale una en los morros!
-	YeahWellDone				=	"SVM_6_YeahWellDone"				;//Dale. Sí, se sigue moviendo.
-	RunCoward					=	"SVM_6_RunCoward"					;//¡Vuelve, cobarde!
-	HeDefeatedHim				=	"SVM_6_HeDefeatedHim"				;//¡Ha tenido suficiente!
-	HeDeservedIt				=	"SVM_6_HeDeservedIt"				;//¡Se lo merece!
-	HeKilledHim					=	"SVM_6_HeKilledHim"					;//¡Has firmado tu sentencia de muerte! ¡Eso te enseñará a no ir por ahí matando gente!
-	ItWasAGoodFight				=	"SVM_6_ItWasAGoodFight"				;//¡Ja ja ja! ¡Le has dado una lección!
+	HandsOff					=	"SVM_6_HandsOff"					;//Â¡Quita las manos!
+	GetOutOfHere				=	"SVM_6_GetOutOfHere"				;//Â¡LÃ¡rgate de aquÃ­!
+	YouViolatedForbiddenTerritory=	"SVM_6_YouViolatedForbiddenTerritory";//Â¡Eh! Â¿De dÃ³nde has salido?
+	YouWannaFoolMe				=	"SVM_6_YouWannaFoolMe"				;//SÃ­, Â¿te crees que soy tonto?
+	WhatsThisSupposedToBe		=	"SVM_6_WhatsThisSupposedToBe"		;//Â¡Eh! Â¿QuÃ© haces rondando por aquÃ­?
+	WhyAreYouInHere				=	"SVM_6_WhyYouAreInHere"				;//Â¡Sal o llamo a los guardias!
+	WhatDidYouInThere			=	"SVM_6_WhatDidYouInThere"			;//Â¿QuÃ© has estado haciendo aquÃ­ dentro?
+	WiseMove					=	"SVM_6_WiseMove"					;//Â¡Has tenido suerte!
+	Alarm						=	"SVM_6_Alarm"						;//Â¡Guardias! Â¡Por aquÃ­!
+	IntruderAlert				= 	"SVM_6_IntruderAlert"				;//Â¡Â¡Â¡ALERTA!!! Â¡Â¡Â¡INTRUSO!!!
+	BehindYou					=	"SVM_6_BehindYou"					;//Â¡DetrÃ¡s de ti!
+	TheresAFight				=	"SVM_6_TheresAFight"				;//Â¡Ah, una pelea!
+	HeyHeyHey					=	"SVM_6_HeyHeyHey"					;//Â¡MÃ¡s fuerte!
+	CheerFight					=	"SVM_6_CheerFight"					;//Â¡LuchÃ¡is como mujeres!
+	CheerFriend					=	"SVM_6_CheerFriend"					;//Â¡Â¡Acaba con Ã©l!!
+	Ooh							=	"SVM_6_Ooh"							;//Â¡No se lo consientas! Â¡Dale una en los morros!
+	YeahWellDone				=	"SVM_6_YeahWellDone"				;//Dale. SÃ­, se sigue moviendo.
+	RunCoward					=	"SVM_6_RunCoward"					;//Â¡Vuelve, cobarde!
+	HeDefeatedHim				=	"SVM_6_HeDefeatedHim"				;//Â¡Ha tenido suficiente!
+	HeDeservedIt				=	"SVM_6_HeDeservedIt"				;//Â¡Se lo merece!
+	HeKilledHim					=	"SVM_6_HeKilledHim"					;//Â¡Has firmado tu sentencia de muerte! Â¡Eso te enseÃ±arÃ¡ a no ir por ahÃ­ matando gente!
+	ItWasAGoodFight				=	"SVM_6_ItWasAGoodFight"				;//Â¡Ja ja ja! Â¡Le has dado una lecciÃ³n!
 	Awake						=	"SVM_6_Awake"						;//Aaaau (bostezo)
-	FriendlyGreetings			=	"SVM_6_FriendlyGreetings"			;//¡Hola!
-	ALGreetings					=	"SVM_6_ALGreetings"					;//¡Por Gómez!
-	MageGreetings				=	"SVM_6_MageGreetings"				;//¡Por el honor de la magia!
-	SectGreetings				=	"SVM_6_SectGreetings"				;//¡Despierta!
-	ThereHeIs					= 	"SVM_6_ThereHeIs"					;//Está allí.
-	NoLearnNoPoints				= 	"SVM_6_NoLearnNoPoints"				;//No puedo enseñarte nada. No tienes suficiente experiencia.
-	NoLearnOverMax				= 	"SVM_6_NoLearnOverMax"				;//Tus posibilidades no dan más de sí. Deberías aprender algo diferente.
-	NoLearnYouAlreadyKnow		=	"SVM_6_NoLearnYouAlreadyKnow"		;//¡Tienes que llegar al nivel avanzado antes de convertirte en maestro!
-	NoLearnYoureBetter			=	"SVM_6_NoLearnYoureBetter"			;//¡Ya estás por encima de ese nivel!
-	HeyYou						=	"SVM_6_HeyYou"						;//¡Oye, tú!
-	NotNow						=	"SVM_6_NotNow"						;//¡Ahora no!
-	WhatDoYouWant				=	"SVM_6_WhatDoYouWant"				;//¿Qué quieres?
-	ISaidWhatDoYouWant			=	"SVM_6_ISaidWhatDoYouWant"			;//¿Querías algo?
-	MakeWay						=	"SVM_6_MakeWay"						;//¡Déjame pasar!
-	OutOfMyWay					=	"SVM_6_OutOfMyWay"					;//¡Vamos, hazte a un lado!
-	YouDeafOrWhat				=	"SVM_6_YouDeafOrWhat"				;//¡Apártate! ¿O quieres que te lo haga entender a golpes?
-	LookingForTroubleAgain		=	"SVM_6_LookingForTroubleAgain"		;//¿Otra vez buscas bronca?
-	LookAway					=	"SVM_6_LookAway"					;//¡No he visto nada! ¡De verdad!
-	OkayKeepIt					=	"SVM_6_OkayKeepIt"					;//¡Vale, vale, quédatelo!
-	WhatsThat					=	"SVM_6_WhatsThat"					;//¿Qué ha sido eso?
-	ThatsMyWeapon				=	"SVM_6_ThatsMyWeapon"				;//¡Devuélveme mi arma, bufón!
-	GiveItToMe					=	"SVM_6_GiveItToMe"					;//¡Devuélvemela, tío!
-	YouCanKeeptheCrap			=	"SVM_6_YouCanKeeptheCrap"			;//¡No importa! ¡No voy a necesitarla!
+	FriendlyGreetings			=	"SVM_6_FriendlyGreetings"			;//Â¡Hola!
+	ALGreetings					=	"SVM_6_ALGreetings"					;//Â¡Por GÃ³mez!
+	MageGreetings				=	"SVM_6_MageGreetings"				;//Â¡Por el honor de la magia!
+	SectGreetings				=	"SVM_6_SectGreetings"				;//Â¡Despierta!
+	ThereHeIs					= 	"SVM_6_ThereHeIs"					;//EstÃ¡ allÃ­.
+	NoLearnNoPoints				= 	"SVM_6_NoLearnNoPoints"				;//No puedo enseÃ±arte nada. No tienes suficiente experiencia.
+	NoLearnOverMax				= 	"SVM_6_NoLearnOverMax"				;//Tus posibilidades no dan mÃ¡s de sÃ­. DeberÃ­as aprender algo diferente.
+	NoLearnYouAlreadyKnow		=	"SVM_6_NoLearnYouAlreadyKnow"		;//Â¡Tienes que llegar al nivel avanzado antes de convertirte en maestro!
+	NoLearnYoureBetter			=	"SVM_6_NoLearnYoureBetter"			;//Â¡Ya estÃ¡s por encima de ese nivel!
+	HeyYou						=	"SVM_6_HeyYou"						;//Â¡Oye, tÃº!
+	NotNow						=	"SVM_6_NotNow"						;//Â¡Ahora no!
+	WhatDoYouWant				=	"SVM_6_WhatDoYouWant"				;//Â¿QuÃ© quieres?
+	ISaidWhatDoYouWant			=	"SVM_6_ISaidWhatDoYouWant"			;//Â¿QuerÃ­as algo?
+	MakeWay						=	"SVM_6_MakeWay"						;//Â¡DÃ©jame pasar!
+	OutOfMyWay					=	"SVM_6_OutOfMyWay"					;//Â¡Vamos, hazte a un lado!
+	YouDeafOrWhat				=	"SVM_6_YouDeafOrWhat"				;//Â¡ApÃ¡rtate! Â¿O quieres que te lo haga entender a golpes?
+	LookingForTroubleAgain		=	"SVM_6_LookingForTroubleAgain"		;//Â¿Otra vez buscas bronca?
+	LookAway					=	"SVM_6_LookAway"					;//Â¡No he visto nada! Â¡De verdad!
+	OkayKeepIt					=	"SVM_6_OkayKeepIt"					;//Â¡Vale, vale, quÃ©datelo!
+	WhatsThat					=	"SVM_6_WhatsThat"					;//Â¿QuÃ© ha sido eso?
+	ThatsMyWeapon				=	"SVM_6_ThatsMyWeapon"				;//Â¡DevuÃ©lveme mi arma, bufÃ³n!
+	GiveItToMe					=	"SVM_6_GiveItToMe"					;//Â¡DevuÃ©lvemela, tÃ­o!
+	YouCanKeeptheCrap			=	"SVM_6_YouCanKeeptheCrap"			;//Â¡No importa! Â¡No voy a necesitarla!
 	TheyKilledMyFriend			=	"SVM_6_TheyKilledMyFriend"			;//Se han cargado a uno de los nuestros. Si cojo a ese cerdo...
-	YouDisturbedMySlumber		=	"SVM_6_YouDisturbedMySlumber"		;//Maldita sea, ¿por qué me has despertado?
-	SuckerGotSome				=	"SVM_6_SuckerGotSome"				;//¿Te han pegado una buena paliza? ¡Te lo mereces!
-	SuckerDefeatedEBr			=	"SVM_6_SuckerDefeatedEBr"			;//¡Has sacudido a un magnate del mineral! ¡Está furioso contigo!
-	SuckerDefeatedGur			=	"SVM_6_SuckerDefeatedGur"			;//Has sacudido a un gurú. ¡Parece como si atrajeras los problemas como un imán!
-	SuckerDefeatedMage			=	"SVM_6_SuckerDefeatedMage"			;//¡Vencer a un mago es una idea espantosa, tío!
-	SuckerDefeatedNov_Guard		= 	"SVM_6_SuckerDefeatedNov_Guard"		;//¡No puedes ir por ahí pegando a los novicios!
-	SuckerDefeatedVlk_Guard		= 	"SVM_6_SuckerDefeatedVlk_Guard"		;//¡Deja en paz a mis muchachos!
-	YouDefeatedMyComrade		=	"SVM_6_YouDefeatedMyComrade"		;//Has zurrado a un amigo mío...
-	YouDefeatedNOV_Guard		=	"SVM_6_YouDefeatedNOV_Guard"		;//¡No se tolerará que causes problemas!
-	YouDefeatedVLK_Guard		=	"SVM_6_YouDefeatedVLK_Guard"		;//¡Si golpeas a alguien que esté bajo mi protección, habrá repercusiones!
-	YouStoleFromMe				=	"SVM_6_YouStoleFromMe"				;//¡Capullo, me has robado! ¡No vuelvas a intentarlo!
-	YouStoleFromUs				=	"SVM_6_YouStoleFromUs"				;//¡Queremos recuperar nuestras cosas! ¡Dánoslas!
-	YouStoleFromEBr				=	"SVM_6_YouStoleFromEBr"				;//¡Has robado a los magnates del mineral! ¿Para qué demonios lo has hecho?
-	YouStoleFromGur				=	"SVM_6_YouStoleFromGur"				;//¿Has robado a los gurús? Lástima que te pillaran.
-	StoleFromMage				=	"SVM_6_StoleFromMage"				;//¡Has robado a los magos! ¡Qué idea más estúpida!
-	YouKilledMyFriend			=	"SVM_6_YouKilledMyFriend"			;//¡Uno de los nuestros ha muerto y tú estás implicado! ¡Si cometes el más mínimo error, morirás!
-	YouKilledEBr				=	"SVM_6_YouKilledEBr"				;//¡Has matado a un magnate del mineral! Tío, ¿estás loco?
-	YouKilledGur				=	"SVM_6_YouKilledGur"				;//¡Has matado a un gurú! ¡No me lo puedo creer!
-	YouKilledMage				=	"SVM_6_YouKilledMage"				;//¡Has matado a un mago! ¿Cómo tienes pensado justificarlo?
+	YouDisturbedMySlumber		=	"SVM_6_YouDisturbedMySlumber"		;//Maldita sea, Â¿por quÃ© me has despertado?
+	SuckerGotSome				=	"SVM_6_SuckerGotSome"				;//Â¿Te han pegado una buena paliza? Â¡Te lo mereces!
+	SuckerDefeatedEBr			=	"SVM_6_SuckerDefeatedEBr"			;//Â¡Has sacudido a un magnate del mineral! Â¡EstÃ¡ furioso contigo!
+	SuckerDefeatedGur			=	"SVM_6_SuckerDefeatedGur"			;//Has sacudido a un gurÃº. Â¡Parece como si atrajeras los problemas como un imÃ¡n!
+	SuckerDefeatedMage			=	"SVM_6_SuckerDefeatedMage"			;//Â¡Vencer a un mago es una idea espantosa, tÃ­o!
+	SuckerDefeatedNov_Guard		= 	"SVM_6_SuckerDefeatedNov_Guard"		;//Â¡No puedes ir por ahÃ­ pegando a los novicios!
+	SuckerDefeatedVlk_Guard		= 	"SVM_6_SuckerDefeatedVlk_Guard"		;//Â¡Deja en paz a mis muchachos!
+	YouDefeatedMyComrade		=	"SVM_6_YouDefeatedMyComrade"		;//Has zurrado a un amigo mÃ­o...
+	YouDefeatedNOV_Guard		=	"SVM_6_YouDefeatedNOV_Guard"		;//Â¡No se tolerarÃ¡ que causes problemas!
+	YouDefeatedVLK_Guard		=	"SVM_6_YouDefeatedVLK_Guard"		;//Â¡Si golpeas a alguien que estÃ© bajo mi protecciÃ³n, habrÃ¡ repercusiones!
+	YouStoleFromMe				=	"SVM_6_YouStoleFromMe"				;//Â¡Capullo, me has robado! Â¡No vuelvas a intentarlo!
+	YouStoleFromUs				=	"SVM_6_YouStoleFromUs"				;//Â¡Queremos recuperar nuestras cosas! Â¡DÃ¡noslas!
+	YouStoleFromEBr				=	"SVM_6_YouStoleFromEBr"				;//Â¡Has robado a los magnates del mineral! Â¿Para quÃ© demonios lo has hecho?
+	YouStoleFromGur				=	"SVM_6_YouStoleFromGur"				;//Â¿Has robado a los gurÃºs? LÃ¡stima que te pillaran.
+	StoleFromMage				=	"SVM_6_StoleFromMage"				;//Â¡Has robado a los magos! Â¡QuÃ© idea mÃ¡s estÃºpida!
+	YouKilledMyFriend			=	"SVM_6_YouKilledMyFriend"			;//Â¡Uno de los nuestros ha muerto y tÃº estÃ¡s implicado! Â¡Si cometes el mÃ¡s mÃ­nimo error, morirÃ¡s!
+	YouKilledEBr				=	"SVM_6_YouKilledEBr"				;//Â¡Has matado a un magnate del mineral! TÃ­o, Â¿estÃ¡s loco?
+	YouKilledGur				=	"SVM_6_YouKilledGur"				;//Â¡Has matado a un gurÃº! Â¡No me lo puedo creer!
+	YouKilledMage				=	"SVM_6_YouKilledMage"				;//Â¡Has matado a un mago! Â¿CÃ³mo tienes pensado justificarlo?
 	YouKilledOCfolk				=	"SVM_6_YouKilledOCfolk"				;//Ha muerto un miembro del Campamento Viejo, y se ha relacionado tu nombre con la muerte...
-	YouKilledNCfolk				=	"SVM_6_YouKilledNCfolk"				;//¡El Campamento Nuevo ha sufrido una pérdida trágica, y parece que estás implicado!
-	YouKilledPSIfolk			=	"SVM_6_YouKilledPSIfolk"			;//¡La hermandad tiene un fiel menos, y su muerte pesa sobre tu conciencia!
-	GetThingsRight				=	"SVM_6_GetThingsRight"				;//¡No será fácil solucionar esto!
-	YouDefeatedMeWell			=	"SVM_6_YouDefeatedMeWell"			;//¡Me has dado una buena tunda, tío! ¡Ha sido una lucha justa! ¡Pero ya ha acabado!
-	Smalltalk01					=	"SVM_6_Smalltalk01"					;// ...si tú crees...
+	YouKilledNCfolk				=	"SVM_6_YouKilledNCfolk"				;//Â¡El Campamento Nuevo ha sufrido una pÃ©rdida trÃ¡gica, y parece que estÃ¡s implicado!
+	YouKilledPSIfolk			=	"SVM_6_YouKilledPSIfolk"			;//Â¡La hermandad tiene un fiel menos, y su muerte pesa sobre tu conciencia!
+	GetThingsRight				=	"SVM_6_GetThingsRight"				;//Â¡No serÃ¡ fÃ¡cil solucionar esto!
+	YouDefeatedMeWell			=	"SVM_6_YouDefeatedMeWell"			;//Â¡Me has dado una buena tunda, tÃ­o! Â¡Ha sido una lucha justa! Â¡Pero ya ha acabado!
+	Smalltalk01					=	"SVM_6_Smalltalk01"					;// ...si tÃº crees...
 	Smalltalk02					=	"SVM_6_Smalltalk02"					;// ...tal vez...
 	Smalltalk03					=	"SVM_6_Smalltalk03"					;// ...eso no fue muy inteligente...
-	Smalltalk04					=	"SVM_6_Smalltalk04"					;// ...será mejor que me mantenga al margen...
+	Smalltalk04					=	"SVM_6_Smalltalk04"					;// ...serÃ¡ mejor que me mantenga al margen...
 	Smalltalk05					=	"SVM_6_Smalltalk05"					;// ...en realidad no es mi problema...
-	Smalltalk06					=	"SVM_6_Smalltalk06"					;// ...era evidente que habría problemas...
-	Smalltalk07					=	"SVM_6_Smalltalk07"					;// ...pero sé discreto; la gente no tiene por qué saberlo.
-	Smalltalk08					=	"SVM_6_Smalltalk08"					;// ...no volverá a suceder...
+	Smalltalk06					=	"SVM_6_Smalltalk06"					;// ...era evidente que habrÃ­a problemas...
+	Smalltalk07					=	"SVM_6_Smalltalk07"					;// ...pero sÃ© discreto; la gente no tiene por quÃ© saberlo.
+	Smalltalk08					=	"SVM_6_Smalltalk08"					;// ...no volverÃ¡ a suceder...
 	Smalltalk09					=	"SVM_6_Smalltalk09"					;// ...debe haber algo de cierto en esa historia...
 	Smalltalk10					=	"SVM_6_Smalltalk10"					;// ...has de tener cuidado con lo que dices a la gente...
 	Smalltalk11					=	"SVM_6_Smalltalk11"					;// ...mientras no me vea implicado...
-	Smalltalk12					=	"SVM_6_Smalltalk12"					;// ...no deberías creerte todo lo que oyes...
-	Smalltalk13					=	"SVM_6_Smalltalk13"					;// ...no me gustaría estar en su lugar...
+	Smalltalk12					=	"SVM_6_Smalltalk12"					;// ...no deberÃ­as creerte todo lo que oyes...
+	Smalltalk13					=	"SVM_6_Smalltalk13"					;// ...no me gustarÃ­a estar en su lugar...
 	Smalltalk14					=	"SVM_6_Smalltalk14"					;// ...lo mismo de siempre...
 	Smalltalk15					=	"SVM_6_Smalltalk15"					;// ...algunos no aprenden...
-	Smalltalk16					=	"SVM_6_Smalltalk16"					;// ...hubo un tiempo en que las cosas habrían sucedido de manera muy distinta...
+	Smalltalk16					=	"SVM_6_Smalltalk16"					;// ...hubo un tiempo en que las cosas habrÃ­an sucedido de manera muy distinta...
 	Smalltalk17					=	"SVM_6_Smalltalk17"					;// ...la gente no para de hablar...
 	Smalltalk18					=	"SVM_6_Smalltalk18"					;// ...ya no hago caso de los chismorreos...
-	Smalltalk19					=	"SVM_6_Smalltalk19"					;// ...confías en alguien y te metes en un lío; eso es lo que pasa...
-	Smalltalk20					=	"SVM_6_Smalltalk20"					;// ...me extraña que vaya a cambiar...
-	Smalltalk21					=	"SVM_6_Smalltalk21"					;// ...seguramente tengas razón...
-	Smalltalk22					=	"SVM_6_Smalltalk22"					;// ...espera. Será mejor no apresurarse...
-	Smalltalk23					=	"SVM_6_Smalltalk23"					;// ...creía que eso se había resuelto hace mucho...
+	Smalltalk19					=	"SVM_6_Smalltalk19"					;// ...confÃ­as en alguien y te metes en un lÃ­o; eso es lo que pasa...
+	Smalltalk20					=	"SVM_6_Smalltalk20"					;// ...me extraÃ±a que vaya a cambiar...
+	Smalltalk21					=	"SVM_6_Smalltalk21"					;// ...seguramente tengas razÃ³n...
+	Smalltalk22					=	"SVM_6_Smalltalk22"					;// ...espera. SerÃ¡ mejor no apresurarse...
+	Smalltalk23					=	"SVM_6_Smalltalk23"					;// ...creÃ­a que eso se habÃ­a resuelto hace mucho...
 	Smalltalk24					=	"SVM_6_Smalltalk24"					;// ...hablemos de otra cosa...
 	Om							= 	"SVM_6_Om"							;//Ommm
 };
@@ -1055,401 +1055,401 @@ instance SVM_6 (C_SVM)				//Raufbold	(Will saufen und raufen	(Matrose) Alkoholik
 //////////////////////////////////////////
 instance SVM_7 (C_SVM)				//Freak, Aggressiv. Spielt mit seiner Macht. Sadist. Org: Abschaum, den im AL keiner wollte. Nov (selten): Durchgeknallter Abschaum.
 {
-	StopMagic					=	"SVM_7_StopMagic"					;//¡Deja eso! ¡Deja eso!
-	ISaidStopMagic				=	"SVM_7_ISaidStopMagic"				;//¡Deja esa magia, déjala!
-	WeaponDown					=	"SVM_7_WeaponDown"					;//¡Deja esa arma, déjala!
-	ISaidWeaponDown				=	"SVM_7_ISaidWeaponDown"				;//¡Te lo digo en serio! ¡Déjala!
-	WatchYourAim				=	"SVM_7_WatchYourAim"				;//¿Me estás apuntando? ¡Cuidado!
-	WatchYourAimAngry			=	"SVM_7_WatchYourAimAngry"			;//¿Crees que puedes intimidarme? ¡Estás equivocado!
-	WhatAreYouDoing				=	"SVM_7_WhatAreYouDoing"				;//¡Me acordaré de eso! ¡Cuidado!
-	LetsForgetOurLittleFight	=	"SVM_7_LetsForgetOurLittleFight"	;//Olvídate de esa discusión, ¿vale?
-	Strange						=	"SVM_7_Strange"						;//¿Dónde se ha ido? ¡No puede ser! ¡¡Es imposible!!
-	DieMonster					=	"SVM_7_DieMonster"					;//¡Te haré pedazos, animal!
-	DieMortalEnemy				=	"SVM_7_DieMortalEnemy"				;//¡Te voy a partir en dos! ¡Ahora te toca a ti! ¡Sin piedad!
-	NowWait						=	"SVM_7_NowWait"						;//¡Por fin me das una razón!
-	YouStillNotHaveEnough		=	"SVM_7_YouStillNotHaveEnough"		;//¿Quieres volver a intentarlo?
-	YouAskedForIt				=	"SVM_7_YouAskedForIt"				;//¡Sangre! ¡¡Tu sangre!!
-	NowWaitIntruder				= 	"SVM_7_NowWaitIntruder"				;//¡Te voy a partir en lonchas!
-	IWillTeachYouRespectForForeignProperty	=	"SVM_7_IWillTeachYouRespectForForeignProperty"	;//¡Debería cortarte los dedos!
-	DirtyThief					=	"SVM_7_DirtyThief"					;//¡Ladrón asqueroso! ¡Quiero verte sufrir!
-	YouAttackedMyCharge			=	"SVM_7_YouAttackedMyCharge"			;//¡Aquí nadie sacude a nadie excepto yo!
-	YouKilledOneOfUs			=	"SVM_7_YouKilledOneOfUs"			;//¡Has matado a uno de los nuestros!
-	Dead						=	"SVM_7_Dead"						;//¡Aaargh!
+	StopMagic					=	"SVM_7_StopMagic"					;//Â¡Deja eso! Â¡Deja eso!
+	ISaidStopMagic				=	"SVM_7_ISaidStopMagic"				;//Â¡Deja esa magia, dÃ©jala!
+	WeaponDown					=	"SVM_7_WeaponDown"					;//Â¡Deja esa arma, dÃ©jala!
+	ISaidWeaponDown				=	"SVM_7_ISaidWeaponDown"				;//Â¡Te lo digo en serio! Â¡DÃ©jala!
+	WatchYourAim				=	"SVM_7_WatchYourAim"				;//Â¿Me estÃ¡s apuntando? Â¡Cuidado!
+	WatchYourAimAngry			=	"SVM_7_WatchYourAimAngry"			;//Â¿Crees que puedes intimidarme? Â¡EstÃ¡s equivocado!
+	WhatAreYouDoing				=	"SVM_7_WhatAreYouDoing"				;//Â¡Me acordarÃ© de eso! Â¡Cuidado!
+	LetsForgetOurLittleFight	=	"SVM_7_LetsForgetOurLittleFight"	;//OlvÃ­date de esa discusiÃ³n, Â¿vale?
+	Strange						=	"SVM_7_Strange"						;//Â¿DÃ³nde se ha ido? Â¡No puede ser! Â¡Â¡Es imposible!!
+	DieMonster					=	"SVM_7_DieMonster"					;//Â¡Te harÃ© pedazos, animal!
+	DieMortalEnemy				=	"SVM_7_DieMortalEnemy"				;//Â¡Te voy a partir en dos! Â¡Ahora te toca a ti! Â¡Sin piedad!
+	NowWait						=	"SVM_7_NowWait"						;//Â¡Por fin me das una razÃ³n!
+	YouStillNotHaveEnough		=	"SVM_7_YouStillNotHaveEnough"		;//Â¿Quieres volver a intentarlo?
+	YouAskedForIt				=	"SVM_7_YouAskedForIt"				;//Â¡Sangre! Â¡Â¡Tu sangre!!
+	NowWaitIntruder				= 	"SVM_7_NowWaitIntruder"				;//Â¡Te voy a partir en lonchas!
+	IWillTeachYouRespectForForeignProperty	=	"SVM_7_IWillTeachYouRespectForForeignProperty"	;//Â¡DeberÃ­a cortarte los dedos!
+	DirtyThief					=	"SVM_7_DirtyThief"					;//Â¡LadrÃ³n asqueroso! Â¡Quiero verte sufrir!
+	YouAttackedMyCharge			=	"SVM_7_YouAttackedMyCharge"			;//Â¡AquÃ­ nadie sacude a nadie excepto yo!
+	YouKilledOneOfUs			=	"SVM_7_YouKilledOneOfUs"			;//Â¡Has matado a uno de los nuestros!
+	Dead						=	"SVM_7_Dead"						;//Â¡Aaargh!
 	Aargh_1						=	"SVM_7_Aargh_1"						;//Aargh
 	Aargh_2						=	"SVM_7_Aargh_2"						;//Aargh
 	Aargh_3						=	"SVM_7_Aargh_3"						;//Aargh
-	Berzerk						=	"SVM_7_Berzerk"						;//¡¡¡UUAAARRGGGHHH!!!
-	YoullBeSorryForThis			=	"SVM_7_YoullBeSorryForThis"			;//¡No tendrás mucho tiempo para lamentarte por ello!
-	YesYes						=	"SVM_7_YesYes"						;//¡Vale, vale!
+	Berzerk						=	"SVM_7_Berzerk"						;//Â¡Â¡Â¡UUAAARRGGGHHH!!!
+	YoullBeSorryForThis			=	"SVM_7_YoullBeSorryForThis"			;//Â¡No tendrÃ¡s mucho tiempo para lamentarte por ello!
+	YesYes						=	"SVM_7_YesYes"						;//Â¡Vale, vale!
 	ShitWhatAMonster			=	"SVM_7_ShitWhatAMonster"			;//No tengo el arma adecuada. Nos volveremos a ver...
-	Help						=	"SVM_7_Help"						;//¡Maldita sea!
-	WeWillMeetAgain				=	"SVM_7_WeWillMeetAgain"				;//¡Nos vemos!
-	NeverTryThatAgain			=	"SVM_7_NeverTryThatAgain"			;//¡No vuelvas a hacer eso!
-	ITakeYourWeapon				=	"SVM_7_ITakeYourWeapon"				;//¡Me quedaré con esa arma!
-	ITookYourOre				=	"SVM_7_ITookYourOre"				;//¡Preferiría matarte, pero el mineral tampoco me viene mal!
-	ShitNoOre					=	"SVM_7_ShitNoOre"					;//¿No tienes mineral? ¡Vago inútil!
-	HandsOff					=	"SVM_7_HandsOff"					;//¡Aparta tus manazas!
-	GetOutOfHere				=	"SVM_7_GetOutOfHere"				;//¡Lárgate! ¡Sal de aquí!
-	YouViolatedForbiddenTerritory=	"SVM_7_YouViolatedForbiddenTerritory";//¿Cómo has entrado aquí?
-	YouWannaFoolMe				=	"SVM_7_YouWannaFoolMe"				;//Te gusta aprovecharte de mí, ¿verdad?
-	WhatsThisSupposedToBe		=	"SVM_7_WhatsThisSupposedToBe"		;//¡Eh, tú! ¿Qué haces rondando por aquí?
-	WhyAreYouInHere				=	"SVM_7_WhyYouAreInHere"				;//¡Lárgate o llamaré a los guardias!
-	WhatDidYouInThere			=	"SVM_7_WhatDidYouInThere"			;//¡Aquí no pintas nada!
-	WiseMove					=	"SVM_7_WiseMove"					;//¡Has tenido suerte! ¡Pero me habría gustado sobarte los morros!
-	Alarm						=	"SVM_7_Alarm"						;//¡Guardias! ¡Por aquí!
-	IntruderAlert				= 	"SVM_7_IntruderAlert"				;//¡¡ALERTA!!
-	BehindYou					=	"SVM_7_BehindYou"					;//¡Detrás de ti!
-	TheresAFight				=	"SVM_7_TheresAFight"				;//¡Una pelea!
-	HeyHeyHey					=	"SVM_7_HeyHeyHey"					;//¡Más fuerte!
-	CheerFight					=	"SVM_7_CheerFight"					;//¡Quiero ver sangre!
-	CheerFriend					=	"SVM_7_CheerFriend"					;//¡¡Dale la vuelta!!
-	Ooh							=	"SVM_7_Ooh"							;//¡Devuélvele el golpe, idiota!
-	YeahWellDone				=	"SVM_7_YeahWellDone"				;//¡¡Sííííí!!
-	RunCoward					=	"SVM_7_RunCoward"					;//¡¡Vuelve con tu mamá!!
-	HeDefeatedHim				=	"SVM_7_HeDefeatedHim"				;//¡Ya ha tenido bastante!
-	HeDeservedIt				=	"SVM_7_HeDeservedIt"				;//¡Es por tu culpa!
+	Help						=	"SVM_7_Help"						;//Â¡Maldita sea!
+	WeWillMeetAgain				=	"SVM_7_WeWillMeetAgain"				;//Â¡Nos vemos!
+	NeverTryThatAgain			=	"SVM_7_NeverTryThatAgain"			;//Â¡No vuelvas a hacer eso!
+	ITakeYourWeapon				=	"SVM_7_ITakeYourWeapon"				;//Â¡Me quedarÃ© con esa arma!
+	ITookYourOre				=	"SVM_7_ITookYourOre"				;//Â¡PreferirÃ­a matarte, pero el mineral tampoco me viene mal!
+	ShitNoOre					=	"SVM_7_ShitNoOre"					;//Â¿No tienes mineral? Â¡Vago inÃºtil!
+	HandsOff					=	"SVM_7_HandsOff"					;//Â¡Aparta tus manazas!
+	GetOutOfHere				=	"SVM_7_GetOutOfHere"				;//Â¡LÃ¡rgate! Â¡Sal de aquÃ­!
+	YouViolatedForbiddenTerritory=	"SVM_7_YouViolatedForbiddenTerritory";//Â¿CÃ³mo has entrado aquÃ­?
+	YouWannaFoolMe				=	"SVM_7_YouWannaFoolMe"				;//Te gusta aprovecharte de mÃ­, Â¿verdad?
+	WhatsThisSupposedToBe		=	"SVM_7_WhatsThisSupposedToBe"		;//Â¡Eh, tÃº! Â¿QuÃ© haces rondando por aquÃ­?
+	WhyAreYouInHere				=	"SVM_7_WhyYouAreInHere"				;//Â¡LÃ¡rgate o llamarÃ© a los guardias!
+	WhatDidYouInThere			=	"SVM_7_WhatDidYouInThere"			;//Â¡AquÃ­ no pintas nada!
+	WiseMove					=	"SVM_7_WiseMove"					;//Â¡Has tenido suerte! Â¡Pero me habrÃ­a gustado sobarte los morros!
+	Alarm						=	"SVM_7_Alarm"						;//Â¡Guardias! Â¡Por aquÃ­!
+	IntruderAlert				= 	"SVM_7_IntruderAlert"				;//Â¡Â¡ALERTA!!
+	BehindYou					=	"SVM_7_BehindYou"					;//Â¡DetrÃ¡s de ti!
+	TheresAFight				=	"SVM_7_TheresAFight"				;//Â¡Una pelea!
+	HeyHeyHey					=	"SVM_7_HeyHeyHey"					;//Â¡MÃ¡s fuerte!
+	CheerFight					=	"SVM_7_CheerFight"					;//Â¡Quiero ver sangre!
+	CheerFriend					=	"SVM_7_CheerFriend"					;//Â¡Â¡Dale la vuelta!!
+	Ooh							=	"SVM_7_Ooh"							;//Â¡DevuÃ©lvele el golpe, idiota!
+	YeahWellDone				=	"SVM_7_YeahWellDone"				;//Â¡Â¡SÃ­Ã­Ã­Ã­Ã­!!
+	RunCoward					=	"SVM_7_RunCoward"					;//Â¡Â¡Vuelve con tu mamÃ¡!!
+	HeDefeatedHim				=	"SVM_7_HeDefeatedHim"				;//Â¡Ya ha tenido bastante!
+	HeDeservedIt				=	"SVM_7_HeDeservedIt"				;//Â¡Es por tu culpa!
 	HeKilledHim					=	"SVM_7_HeKilledHim"					;//Es un suicidio matar a alguien delante de testigos.
-	ItWasAGoodFight				=	"SVM_7_ItWasAGoodFight"				;//¡Buena pelea!
-	Awake						=	"SVM_7_Awake"						;//¡Hora de levantarse!
+	ItWasAGoodFight				=	"SVM_7_ItWasAGoodFight"				;//Â¡Buena pelea!
+	Awake						=	"SVM_7_Awake"						;//Â¡Hora de levantarse!
 	FriendlyGreetings			=	"SVM_7_FriendlyGreetings"			;//Hola.
-	ALGreetings					=	"SVM_7_ALGreetings"					;//¡Por Gómez!
-	MageGreetings				=	"SVM_7_MageGreetings"				;//¡Por el honor de la magia!
-	SectGreetings				=	"SVM_7_SectGreetings"				;//¡Despierta!
-	ThereHeIs					= 	"SVM_7_ThereHeIs"					;//¿Estás ciego? ¡Por allí!
-	NoLearnNoPoints				= 	"SVM_7_NoLearnNoPoints"				;//No puedo enseñarte nada. No tienes suficiente experiencia.
-	NoLearnOverMax				= 	"SVM_7_NoLearnOverMax"				;//Tus posibilidades no dan más de sí. Deberías aprender algo diferente.
+	ALGreetings					=	"SVM_7_ALGreetings"					;//Â¡Por GÃ³mez!
+	MageGreetings				=	"SVM_7_MageGreetings"				;//Â¡Por el honor de la magia!
+	SectGreetings				=	"SVM_7_SectGreetings"				;//Â¡Despierta!
+	ThereHeIs					= 	"SVM_7_ThereHeIs"					;//Â¿EstÃ¡s ciego? Â¡Por allÃ­!
+	NoLearnNoPoints				= 	"SVM_7_NoLearnNoPoints"				;//No puedo enseÃ±arte nada. No tienes suficiente experiencia.
+	NoLearnOverMax				= 	"SVM_7_NoLearnOverMax"				;//Tus posibilidades no dan mÃ¡s de sÃ­. DeberÃ­as aprender algo diferente.
 	NoLearnYouAlreadyKnow		=	"SVM_7_NoLearnYouAlreadyKnow"		;//Tienes que llegar al nivel avanzado antes de convertirte en maestro
-	NoLearnYoureBetter			=	"SVM_7_NoLearnYoureBetter"			;//¡Ya estás por encima de ese nivel!
-	HeyYou						=	"SVM_7_HeyYou"						;//¡Oye, tú!
-	NotNow						=	"SVM_7_NotNow"						;//¡Ahora no!
-	WhatDoYouWant				=	"SVM_7_WhatDoYouWant"				;//¿Qué quieres de mí?
-	ISaidWhatDoYouWant			=	"SVM_7_ISaidWhatDoYouWant"			;//¿Puedo hacer algo por ti?
-	MakeWay						=	"SVM_7_MakeWay"						;//¡Déjame pasar!
-	OutOfMyWay					=	"SVM_7_OutOfMyWay"					;//¡Quítate de en medio!
-	YouDeafOrWhat				=	"SVM_7_YouDeafOrWhat"				;//¿Buscas bronca? ¡Lárgate de aquí!
-	LookingForTroubleAgain		=	"SVM_7_LookingForTroubleAgain"		;//¿Otra vez buscas líos conmigo?
-	LookAway					=	"SVM_7_LookAway"					;//¡No he visto NADA!
-	OkayKeepIt					=	"SVM_7_OkayKeepIt"					;//¡Vale, vale! ¡Quédatelo!
-	WhatsThat					=	"SVM_7_WhatsThat"					;//¿Qué ha sido eso?
-	ThatsMyWeapon				=	"SVM_7_ThatsMyWeapon"				;//¡Devuélveme mi arma!
-	GiveItToMe					=	"SVM_7_GiveItToMe"					;//¡Dámela!
-	YouCanKeeptheCrap			=	"SVM_7_YouCanKeeptheCrap"			;//¡Vale! ¡Quédatela! ¡Encontraré otra solución!
-	TheyKilledMyFriend			=	"SVM_7_TheyKilledMyFriend"			;//¡Uno de los nuestros ha muerto! ¡Esto clama venganza!
-	YouDisturbedMySlumber		=	"SVM_7_YouDisturbedMySlumber"		;//¿Por qué me has despertado?
-	SuckerGotSome				=	"SVM_7_SuckerGotSome"				;//¡Te mereces la paliza que te han dado!
-	SuckerDefeatedEBr			=	"SVM_7_SuckerDefeatedEBr"			;//¡Has sacudido a un magnate del mineral! ¡Está furioso contigo!
-	SuckerDefeatedGur			=	"SVM_7_SuckerDefeatedGur"			;//Has sacudido a un Gurú. ¡Parece como si atrajeras los problemas como un imán!
-	SuckerDefeatedMage			=	"SVM_7_SuckerDefeatedMage"			;//¡Vencer a un mago es una idea espantosa, tío!
-	SuckerDefeatedNov_Guard		= 	"SVM_7_SuckerDefeatedNov_Guard"		;//¡Así que tú eres el que va por ahí pegando a los novicios!
-	SuckerDefeatedVlk_Guard		= 	"SVM_7_SuckerDefeatedVlk_Guard"		;//¡Deja en paz a mis muchachos!
-	YouDefeatedMyComrade		=	"SVM_7_YouDefeatedMyComrade"		;//¡Has sacudido a la persona incorrecta! ¡Aquí estamos muy unidos!
-	YouDefeatedNOV_Guard		=	"SVM_7_YouDefeatedNOV_Guard"		;//¡No se tolerará que causes problemas!
-	YouDefeatedVLK_Guard		=	"SVM_7_YouDefeatedVLK_Guard"		;//¡Si golpeas a alguien que esté bajo mi protección, habrá repercusiones!
-	YouStoleFromMe				=	"SVM_7_YouStoleFromMe"				;//¡Capullo, me has robado! ¡No vuelvas a intentarlo!
-	YouStoleFromUs				=	"SVM_7_YouStoleFromUs"				;//¡Queremos recuperar nuestras cosas! ¡Dánoslas!
-	YouStoleFromEBr				=	"SVM_7_YouStoleFromEBr"				;//¡Has robado a los magnates del mineral! ¿Para qué demonios lo has hecho?
-	YouStoleFromGur				=	"SVM_7_YouStoleFromGur"				;//¿Has robado a los gurús? Lástima que te pillaran.
-	StoleFromMage				=	"SVM_7_StoleFromMage"				;//¡Has robado a los magos! ¡Qué idea más estúpida!
-	YouKilledMyFriend			=	"SVM_7_YouKilledMyFriend"			;//¡Uno de los nuestros ha muerto y tú estás implicado! ¡Si cometes el más mínimo error, morirás!
-	YouKilledEBr				=	"SVM_7_YouKilledEBr"				;//¡Has matado a un magnate del mineral! Tío, ¿estás zumbado?
-	YouKilledGur				=	"SVM_7_YouKilledGur"				;//¡Has matado a un gurú! ¡No me lo puedo creer!
-	YouKilledMage				=	"SVM_7_YouKilledMage"				;//¡Has matado a un mago! ¿Cómo tienes pensado justificarlo?
+	NoLearnYoureBetter			=	"SVM_7_NoLearnYoureBetter"			;//Â¡Ya estÃ¡s por encima de ese nivel!
+	HeyYou						=	"SVM_7_HeyYou"						;//Â¡Oye, tÃº!
+	NotNow						=	"SVM_7_NotNow"						;//Â¡Ahora no!
+	WhatDoYouWant				=	"SVM_7_WhatDoYouWant"				;//Â¿QuÃ© quieres de mÃ­?
+	ISaidWhatDoYouWant			=	"SVM_7_ISaidWhatDoYouWant"			;//Â¿Puedo hacer algo por ti?
+	MakeWay						=	"SVM_7_MakeWay"						;//Â¡DÃ©jame pasar!
+	OutOfMyWay					=	"SVM_7_OutOfMyWay"					;//Â¡QuÃ­tate de en medio!
+	YouDeafOrWhat				=	"SVM_7_YouDeafOrWhat"				;//Â¿Buscas bronca? Â¡LÃ¡rgate de aquÃ­!
+	LookingForTroubleAgain		=	"SVM_7_LookingForTroubleAgain"		;//Â¿Otra vez buscas lÃ­os conmigo?
+	LookAway					=	"SVM_7_LookAway"					;//Â¡No he visto NADA!
+	OkayKeepIt					=	"SVM_7_OkayKeepIt"					;//Â¡Vale, vale! Â¡QuÃ©datelo!
+	WhatsThat					=	"SVM_7_WhatsThat"					;//Â¿QuÃ© ha sido eso?
+	ThatsMyWeapon				=	"SVM_7_ThatsMyWeapon"				;//Â¡DevuÃ©lveme mi arma!
+	GiveItToMe					=	"SVM_7_GiveItToMe"					;//Â¡DÃ¡mela!
+	YouCanKeeptheCrap			=	"SVM_7_YouCanKeeptheCrap"			;//Â¡Vale! Â¡QuÃ©datela! Â¡EncontrarÃ© otra soluciÃ³n!
+	TheyKilledMyFriend			=	"SVM_7_TheyKilledMyFriend"			;//Â¡Uno de los nuestros ha muerto! Â¡Esto clama venganza!
+	YouDisturbedMySlumber		=	"SVM_7_YouDisturbedMySlumber"		;//Â¿Por quÃ© me has despertado?
+	SuckerGotSome				=	"SVM_7_SuckerGotSome"				;//Â¡Te mereces la paliza que te han dado!
+	SuckerDefeatedEBr			=	"SVM_7_SuckerDefeatedEBr"			;//Â¡Has sacudido a un magnate del mineral! Â¡EstÃ¡ furioso contigo!
+	SuckerDefeatedGur			=	"SVM_7_SuckerDefeatedGur"			;//Has sacudido a un GurÃº. Â¡Parece como si atrajeras los problemas como un imÃ¡n!
+	SuckerDefeatedMage			=	"SVM_7_SuckerDefeatedMage"			;//Â¡Vencer a un mago es una idea espantosa, tÃ­o!
+	SuckerDefeatedNov_Guard		= 	"SVM_7_SuckerDefeatedNov_Guard"		;//Â¡AsÃ­ que tÃº eres el que va por ahÃ­ pegando a los novicios!
+	SuckerDefeatedVlk_Guard		= 	"SVM_7_SuckerDefeatedVlk_Guard"		;//Â¡Deja en paz a mis muchachos!
+	YouDefeatedMyComrade		=	"SVM_7_YouDefeatedMyComrade"		;//Â¡Has sacudido a la persona incorrecta! Â¡AquÃ­ estamos muy unidos!
+	YouDefeatedNOV_Guard		=	"SVM_7_YouDefeatedNOV_Guard"		;//Â¡No se tolerarÃ¡ que causes problemas!
+	YouDefeatedVLK_Guard		=	"SVM_7_YouDefeatedVLK_Guard"		;//Â¡Si golpeas a alguien que estÃ© bajo mi protecciÃ³n, habrÃ¡ repercusiones!
+	YouStoleFromMe				=	"SVM_7_YouStoleFromMe"				;//Â¡Capullo, me has robado! Â¡No vuelvas a intentarlo!
+	YouStoleFromUs				=	"SVM_7_YouStoleFromUs"				;//Â¡Queremos recuperar nuestras cosas! Â¡DÃ¡noslas!
+	YouStoleFromEBr				=	"SVM_7_YouStoleFromEBr"				;//Â¡Has robado a los magnates del mineral! Â¿Para quÃ© demonios lo has hecho?
+	YouStoleFromGur				=	"SVM_7_YouStoleFromGur"				;//Â¿Has robado a los gurÃºs? LÃ¡stima que te pillaran.
+	StoleFromMage				=	"SVM_7_StoleFromMage"				;//Â¡Has robado a los magos! Â¡QuÃ© idea mÃ¡s estÃºpida!
+	YouKilledMyFriend			=	"SVM_7_YouKilledMyFriend"			;//Â¡Uno de los nuestros ha muerto y tÃº estÃ¡s implicado! Â¡Si cometes el mÃ¡s mÃ­nimo error, morirÃ¡s!
+	YouKilledEBr				=	"SVM_7_YouKilledEBr"				;//Â¡Has matado a un magnate del mineral! TÃ­o, Â¿estÃ¡s zumbado?
+	YouKilledGur				=	"SVM_7_YouKilledGur"				;//Â¡Has matado a un gurÃº! Â¡No me lo puedo creer!
+	YouKilledMage				=	"SVM_7_YouKilledMage"				;//Â¡Has matado a un mago! Â¿CÃ³mo tienes pensado justificarlo?
 	YouKilledOCfolk				=	"SVM_7_YouKilledOCfolk"				;//Ha muerto un miembro del Campamento Viejo, y se ha relacionado tu nombre con la muerte...
-	YouKilledNCfolk				=	"SVM_7_YouKilledNCfolk"				;//¡El Campamento Nuevo ha sufrido una pérdida trágica, y parece que estás implicado!
-	YouKilledPSIfolk			=	"SVM_7_YouKilledPSIfolk"			;//¡La hermandad tiene un fiel menos, y su muerte pesa sobre tu conciencia!
-	GetThingsRight				=	"SVM_7_GetThingsRight"				;//¡No será fácil solucionar esto!
-	YouDefeatedMeWell			=	"SVM_7_YouDefeatedMeWell"			;//¡Me has dado una buena tunda, tío! ¡Ha sido una lucha justa! ¡Pero ya ha acabado!
-	Smalltalk01					=	"SVM_7_Smalltalk01"					;// ...si tú crees...
+	YouKilledNCfolk				=	"SVM_7_YouKilledNCfolk"				;//Â¡El Campamento Nuevo ha sufrido una pÃ©rdida trÃ¡gica, y parece que estÃ¡s implicado!
+	YouKilledPSIfolk			=	"SVM_7_YouKilledPSIfolk"			;//Â¡La hermandad tiene un fiel menos, y su muerte pesa sobre tu conciencia!
+	GetThingsRight				=	"SVM_7_GetThingsRight"				;//Â¡No serÃ¡ fÃ¡cil solucionar esto!
+	YouDefeatedMeWell			=	"SVM_7_YouDefeatedMeWell"			;//Â¡Me has dado una buena tunda, tÃ­o! Â¡Ha sido una lucha justa! Â¡Pero ya ha acabado!
+	Smalltalk01					=	"SVM_7_Smalltalk01"					;// ...si tÃº crees...
 	Smalltalk02					=	"SVM_7_Smalltalk02"					;// ...tal vez...
 	Smalltalk03					=	"SVM_7_Smalltalk03"					;// ...eso no fue muy inteligente...
-	Smalltalk04					=	"SVM_7_Smalltalk04"					;// ...será mejor que me mantenga al margen...
+	Smalltalk04					=	"SVM_7_Smalltalk04"					;// ...serÃ¡ mejor que me mantenga al margen...
 	Smalltalk05					=	"SVM_7_Smalltalk05"					;// ...en realidad no es mi problema...
-	Smalltalk06					=	"SVM_7_Smalltalk06"					;// ...era evidente que habría problemas...
-	Smalltalk07					=	"SVM_7_Smalltalk07"					;// ...pero sé discreto; la gente no tiene por qué saberlo.
-	Smalltalk08					=	"SVM_7_Smalltalk08"					;// ...no volverá a suceder...
+	Smalltalk06					=	"SVM_7_Smalltalk06"					;// ...era evidente que habrÃ­a problemas...
+	Smalltalk07					=	"SVM_7_Smalltalk07"					;// ...pero sÃ© discreto; la gente no tiene por quÃ© saberlo.
+	Smalltalk08					=	"SVM_7_Smalltalk08"					;// ...no volverÃ¡ a suceder...
 	Smalltalk09					=	"SVM_7_Smalltalk09"					;// ...debe haber algo de cierto en esa historia...
 	Smalltalk10					=	"SVM_7_Smalltalk10"					;// ...has de tener cuidado con lo que dices a la gente...
 	Smalltalk11					=	"SVM_7_Smalltalk11"					;// ...mientras no me vea implicado...
-	Smalltalk12					=	"SVM_7_Smalltalk12"					;// ...no deberías creerte todo lo que oyes...
-	Smalltalk13					=	"SVM_7_Smalltalk13"					;// ...no me gustaría estar en su lugar...
+	Smalltalk12					=	"SVM_7_Smalltalk12"					;// ...no deberÃ­as creerte todo lo que oyes...
+	Smalltalk13					=	"SVM_7_Smalltalk13"					;// ...no me gustarÃ­a estar en su lugar...
 	Smalltalk14					=	"SVM_7_Smalltalk14"					;// ...lo mismo de siempre...
 	Smalltalk15					=	"SVM_7_Smalltalk15"					;// ...algunos no aprenden...
-	Smalltalk16					=	"SVM_7_Smalltalk16"					;// ...hubo un tiempo en que las cosas habrían sucedido de manera muy distinta...
+	Smalltalk16					=	"SVM_7_Smalltalk16"					;// ...hubo un tiempo en que las cosas habrÃ­an sucedido de manera muy distinta...
 	Smalltalk17					=	"SVM_7_Smalltalk17"					;// ...la gente no para de hablar...
 	Smalltalk18					=	"SVM_7_Smalltalk18"					;// ...ya no hago caso de los chismorreos...
-	Smalltalk19					=	"SVM_7_Smalltalk19"					;// ...confías en alguien y te metes en un lío; eso es lo que pasa...
-	Smalltalk20					=	"SVM_7_Smalltalk20"					;// ...me extraña que vaya a cambiar...
-	Smalltalk21					=	"SVM_7_Smalltalk21"					;// ...seguramente tengas razón...
-	Smalltalk22					=	"SVM_7_Smalltalk22"					;// ...espera. Será mejor no apresurarse...
-	Smalltalk23					=	"SVM_7_Smalltalk23"					;// ...creía que eso se había resuelto hace mucho...
+	Smalltalk19					=	"SVM_7_Smalltalk19"					;// ...confÃ­as en alguien y te metes en un lÃ­o; eso es lo que pasa...
+	Smalltalk20					=	"SVM_7_Smalltalk20"					;// ...me extraÃ±a que vaya a cambiar...
+	Smalltalk21					=	"SVM_7_Smalltalk21"					;// ...seguramente tengas razÃ³n...
+	Smalltalk22					=	"SVM_7_Smalltalk22"					;// ...espera. SerÃ¡ mejor no apresurarse...
+	Smalltalk23					=	"SVM_7_Smalltalk23"					;// ...creÃ­a que eso se habÃ­a resuelto hace mucho...
 	Smalltalk24					=	"SVM_7_Smalltalk24"					;// ...hablemos de otra cosa...
 	Om							= 	"SVM_7_Om"							;//Ommm
 };
 
 //////////////////////////////////////////
-instance SVM_8 (C_SVM)				// Elite-Garde. Ultra-cool. Pflichtbewusst, ernst, nüchtern! Klare Stimme
+instance SVM_8 (C_SVM)				// Elite-Garde. Ultra-cool. Pflichtbewusst, ernst, nÃ¼chtern! Klare Stimme
 {
-	StopMagic					=	"SVM_8_StopMagic"					;//¡No hagas hechizos cerca de mí!
-	ISaidStopMagic				=	"SVM_8_ISaidStopMagic"				;//¡Te digo que pares! ¡Ahora mismo!
-	WeaponDown					=	"SVM_8_WeaponDown"					;//¡Deja esa arma!
-	ISaidWeaponDown				=	"SVM_8_ISaidWeaponDown"				;//¡Como no apartes esa arma, te la vas a cargar!
-	WatchYourAim				=	"SVM_8_WatchYourAim"				;//¡Deja esa arma, idiota!
-	WatchYourAimAngry			=	"SVM_8_WatchYourAimAngry"			;//Gusano, ¿cómo osas apuntarme?
-	WhatAreYouDoing				=	"SVM_8_WhatAreYouDoing"				;//¡Cuidado!
-	LetsForgetOurLittleFight	=	"SVM_8_LetsForgetOurLittleFight"	;//De acuerdo, olvidémonos de nuestra discusión.
-	Strange						=	"SVM_8_Strange"						;//¡Sal! ¡Sé que puedes oírme!
-	DieMonster					=	"SVM_8_DieMonster"					;//¡Malditas criaturas!
-	DieMortalEnemy				=	"SVM_8_DieMortalEnemy"				;//Vas a morir. ¡No te lo tomes como algo personal!
-	NowWait						=	"SVM_8_NowWait"						;//¡Gusano, me estás atacando! ¡Te vas a enterar...!
-	YouStillNotHaveEnough		=	"SVM_8_YouStillNotHaveEnough"		;//¿No te tumbé ya en una ocasión? Vuelta a empezar...
-	YouAskedForIt				=	"SVM_8_YouAskedForIt"				;//¡Si no escuchas, tendrás que recibir!
-	NowWaitIntruder				= 	"SVM_8_NowWaitIntruder"				;//¿Cómo te atreves a venir por AQUÍ? ¡Espera un instante!
-	IWillTeachYouRespectForForeignProperty	=	"SVM_8_IWillTeachYouRespectForForeignProperty"	;//¡Supongo que tendré que machacarte los dedos!
-	DirtyThief					=	"SVM_8_DirtyThief"					;//¡No deberías haber robado eso!
-	YouAttackedMyCharge			=	"SVM_8_YouAttackedMyCharge"			;//¡Nadie se mete con mis chicos sin lamentarlo después!
-	YouKilledOneOfUs			=	"SVM_8_YouKilledOneOfUs"			;//¡Matar a uno de los nuestros ha sido tu último error!
-	Dead						=	"SVM_8_Dead"						;//¡Aaargh!
+	StopMagic					=	"SVM_8_StopMagic"					;//Â¡No hagas hechizos cerca de mÃ­!
+	ISaidStopMagic				=	"SVM_8_ISaidStopMagic"				;//Â¡Te digo que pares! Â¡Ahora mismo!
+	WeaponDown					=	"SVM_8_WeaponDown"					;//Â¡Deja esa arma!
+	ISaidWeaponDown				=	"SVM_8_ISaidWeaponDown"				;//Â¡Como no apartes esa arma, te la vas a cargar!
+	WatchYourAim				=	"SVM_8_WatchYourAim"				;//Â¡Deja esa arma, idiota!
+	WatchYourAimAngry			=	"SVM_8_WatchYourAimAngry"			;//Gusano, Â¿cÃ³mo osas apuntarme?
+	WhatAreYouDoing				=	"SVM_8_WhatAreYouDoing"				;//Â¡Cuidado!
+	LetsForgetOurLittleFight	=	"SVM_8_LetsForgetOurLittleFight"	;//De acuerdo, olvidÃ©monos de nuestra discusiÃ³n.
+	Strange						=	"SVM_8_Strange"						;//Â¡Sal! Â¡SÃ© que puedes oÃ­rme!
+	DieMonster					=	"SVM_8_DieMonster"					;//Â¡Malditas criaturas!
+	DieMortalEnemy				=	"SVM_8_DieMortalEnemy"				;//Vas a morir. Â¡No te lo tomes como algo personal!
+	NowWait						=	"SVM_8_NowWait"						;//Â¡Gusano, me estÃ¡s atacando! Â¡Te vas a enterar...!
+	YouStillNotHaveEnough		=	"SVM_8_YouStillNotHaveEnough"		;//Â¿No te tumbÃ© ya en una ocasiÃ³n? Vuelta a empezar...
+	YouAskedForIt				=	"SVM_8_YouAskedForIt"				;//Â¡Si no escuchas, tendrÃ¡s que recibir!
+	NowWaitIntruder				= 	"SVM_8_NowWaitIntruder"				;//Â¿CÃ³mo te atreves a venir por AQUÃ? Â¡Espera un instante!
+	IWillTeachYouRespectForForeignProperty	=	"SVM_8_IWillTeachYouRespectForForeignProperty"	;//Â¡Supongo que tendrÃ© que machacarte los dedos!
+	DirtyThief					=	"SVM_8_DirtyThief"					;//Â¡No deberÃ­as haber robado eso!
+	YouAttackedMyCharge			=	"SVM_8_YouAttackedMyCharge"			;//Â¡Nadie se mete con mis chicos sin lamentarlo despuÃ©s!
+	YouKilledOneOfUs			=	"SVM_8_YouKilledOneOfUs"			;//Â¡Matar a uno de los nuestros ha sido tu Ãºltimo error!
+	Dead						=	"SVM_8_Dead"						;//Â¡Aaargh!
 	Aargh_1						=	"SVM_8_Aargh_1"						;//Aargh
 	Aargh_2						=	"SVM_8_Aargh_2"						;//Aargh
 	Aargh_3						=	"SVM_8_Aargh_3"						;//Aargh
-	Berzerk						=	"SVM_8_Berzerk"						;//¡¡¡UUAAARRGGGHHH!!!
-	YoullBeSorryForThis			=	"SVM_8_YoullBeSorryForThis"			;//¡Lo vas a lamentar mucho!
-	YesYes						=	"SVM_8_YesYes"						;//Tranquilo. ¡No pasa nada!
-	ShitWhatAMonster			=	"SVM_8_ShitWhatAMonster"			;//¡Preferiría echar un vistazo a esta bestia desde lejos!
-	Help						=	"SVM_8_Help"						;//¡Rápido, salgamos de aquí!
-	WeWillMeetAgain				=	"SVM_8_WeWillMeetAgain"				;//¡Nos volveremos a ver!
-	NeverTryThatAgain			=	"SVM_8_NeverTryThatAgain"			;//¡Si vuelves a intentar eso, morirás!
-	ITakeYourWeapon				=	"SVM_8_ITakeYourWeapon"				;//¡Me gusta esa arma!
-	ITookYourOre				=	"SVM_8_ITookYourOre"				;//¡Creo que aún no me has pagado el impuesto sobre el mineral!
-	ShitNoOre					=	"SVM_8_ShitNoOre"					;//¡Es normal que un vago como tú no tenga mineral!
-	HandsOff					=	"SVM_8_HandsOff"					;//¡Aparta tus manazas!
-	GetOutOfHere				=	"SVM_8_GetOutOfHere"				;//¡Lárgate de aquí!
-	YouViolatedForbiddenTerritory=	"SVM_8_YouViolatedForbiddenTerritory";//Eh, ¿cómo has entrado aquí?
-	YouWannaFoolMe				=	"SVM_8_YouWannaFoolMe"				;//Eres un listillo, ¿verdad?
-	WhatsThisSupposedToBe		=	"SVM_8_WhatsThisSupposedToBe"		;//¡Eh, tú! ¿Qué haces rondando por aquí?
-	WhyAreYouInHere				=	"SVM_8_WhyYouAreInHere"				;//¡Lárgate o llamaré a los guardias!
-	WhatDidYouInThere			=	"SVM_8_WhatDidYouInThere"			;//¿Qué has estado haciendo aquí dentro?
-	WiseMove					=	"SVM_8_WiseMove"					;//¡Has tenido suerte!
-	Alarm						=	"SVM_8_Alarm"						;//¡Guardias! ¡Por aquí!
-	IntruderAlert				= 	"SVM_8_IntruderAlert"				;//¡¡ALERTA!! ¡¡¡¡INTRUSO!!!!
-	BehindYou					=	"SVM_8_BehindYou"					;//¡Detrás de ti!
-	TheresAFight				=	"SVM_8_TheresAFight"				;//¡Veamos quién se está peleando!
-	HeyHeyHey					=	"SVM_8_HeyHeyHey"					;//¡Más fuerte!
-	CheerFight					=	"SVM_8_CheerFight"					;//¡Sí! ¡Vamos, vamos!
-	CheerFriend					=	"SVM_8_CheerFriend"					;//¡Bien! ¡No aflojes!
-	Ooh							=	"SVM_8_Ooh"							;//¡No se lo consientas! ¡Dale una en los morros!
-	YeahWellDone				=	"SVM_8_YeahWellDone"				;//Sí, dale. ¡Aún se mueve!
-	RunCoward					=	"SVM_8_RunCoward"					;//¡No vuelvas a aparecer por aquí!
-	HeDefeatedHim				=	"SVM_8_HeDefeatedHim"				;//¡Vaya pelea más aburrida!
-	HeDeservedIt				=	"SVM_8_HeDeservedIt"				;//¡Se lo merece!
-	HeKilledHim					=	"SVM_8_HeKilledHim"					;//Eso no era innecesario. Ahora tendrás que afrontar las consecuencias.
-	ItWasAGoodFight				=	"SVM_8_ItWasAGoodFight"				;//¡Ha sido una buena pelea!
+	Berzerk						=	"SVM_8_Berzerk"						;//Â¡Â¡Â¡UUAAARRGGGHHH!!!
+	YoullBeSorryForThis			=	"SVM_8_YoullBeSorryForThis"			;//Â¡Lo vas a lamentar mucho!
+	YesYes						=	"SVM_8_YesYes"						;//Tranquilo. Â¡No pasa nada!
+	ShitWhatAMonster			=	"SVM_8_ShitWhatAMonster"			;//Â¡PreferirÃ­a echar un vistazo a esta bestia desde lejos!
+	Help						=	"SVM_8_Help"						;//Â¡RÃ¡pido, salgamos de aquÃ­!
+	WeWillMeetAgain				=	"SVM_8_WeWillMeetAgain"				;//Â¡Nos volveremos a ver!
+	NeverTryThatAgain			=	"SVM_8_NeverTryThatAgain"			;//Â¡Si vuelves a intentar eso, morirÃ¡s!
+	ITakeYourWeapon				=	"SVM_8_ITakeYourWeapon"				;//Â¡Me gusta esa arma!
+	ITookYourOre				=	"SVM_8_ITookYourOre"				;//Â¡Creo que aÃºn no me has pagado el impuesto sobre el mineral!
+	ShitNoOre					=	"SVM_8_ShitNoOre"					;//Â¡Es normal que un vago como tÃº no tenga mineral!
+	HandsOff					=	"SVM_8_HandsOff"					;//Â¡Aparta tus manazas!
+	GetOutOfHere				=	"SVM_8_GetOutOfHere"				;//Â¡LÃ¡rgate de aquÃ­!
+	YouViolatedForbiddenTerritory=	"SVM_8_YouViolatedForbiddenTerritory";//Eh, Â¿cÃ³mo has entrado aquÃ­?
+	YouWannaFoolMe				=	"SVM_8_YouWannaFoolMe"				;//Eres un listillo, Â¿verdad?
+	WhatsThisSupposedToBe		=	"SVM_8_WhatsThisSupposedToBe"		;//Â¡Eh, tÃº! Â¿QuÃ© haces rondando por aquÃ­?
+	WhyAreYouInHere				=	"SVM_8_WhyYouAreInHere"				;//Â¡LÃ¡rgate o llamarÃ© a los guardias!
+	WhatDidYouInThere			=	"SVM_8_WhatDidYouInThere"			;//Â¿QuÃ© has estado haciendo aquÃ­ dentro?
+	WiseMove					=	"SVM_8_WiseMove"					;//Â¡Has tenido suerte!
+	Alarm						=	"SVM_8_Alarm"						;//Â¡Guardias! Â¡Por aquÃ­!
+	IntruderAlert				= 	"SVM_8_IntruderAlert"				;//Â¡Â¡ALERTA!! Â¡Â¡Â¡Â¡INTRUSO!!!!
+	BehindYou					=	"SVM_8_BehindYou"					;//Â¡DetrÃ¡s de ti!
+	TheresAFight				=	"SVM_8_TheresAFight"				;//Â¡Veamos quiÃ©n se estÃ¡ peleando!
+	HeyHeyHey					=	"SVM_8_HeyHeyHey"					;//Â¡MÃ¡s fuerte!
+	CheerFight					=	"SVM_8_CheerFight"					;//Â¡SÃ­! Â¡Vamos, vamos!
+	CheerFriend					=	"SVM_8_CheerFriend"					;//Â¡Bien! Â¡No aflojes!
+	Ooh							=	"SVM_8_Ooh"							;//Â¡No se lo consientas! Â¡Dale una en los morros!
+	YeahWellDone				=	"SVM_8_YeahWellDone"				;//SÃ­, dale. Â¡AÃºn se mueve!
+	RunCoward					=	"SVM_8_RunCoward"					;//Â¡No vuelvas a aparecer por aquÃ­!
+	HeDefeatedHim				=	"SVM_8_HeDefeatedHim"				;//Â¡Vaya pelea mÃ¡s aburrida!
+	HeDeservedIt				=	"SVM_8_HeDeservedIt"				;//Â¡Se lo merece!
+	HeKilledHim					=	"SVM_8_HeKilledHim"					;//Eso no era innecesario. Ahora tendrÃ¡s que afrontar las consecuencias.
+	ItWasAGoodFight				=	"SVM_8_ItWasAGoodFight"				;//Â¡Ha sido una buena pelea!
 	Awake						=	"SVM_8_Awake"						;//Aaaau (bostezo)
 	FriendlyGreetings			=	"SVM_8_FriendlyGreetings"			;//Hola.
-	ALGreetings					=	"SVM_8_ALGreetings"					;//¡Por Gómez!
-	MageGreetings				=	"SVM_8_MageGreetings"				;//¡Por el honor de la magia!
-	SectGreetings				=	"SVM_8_SectGreetings"				;//¡Despierta!
-	ThereHeIs					= 	"SVM_8_ThereHeIs"					;//Está por allí.
-	NoLearnNoPoints				= 	"SVM_8_NoLearnNoPoints"				;//No puedo enseñarte nada. No tienes suficiente experiencia.
-	NoLearnOverMax				= 	"SVM_8_NoLearnOverMax"				;//Tus posibilidades no dan más de sí. Deberías aprender algo diferente.
+	ALGreetings					=	"SVM_8_ALGreetings"					;//Â¡Por GÃ³mez!
+	MageGreetings				=	"SVM_8_MageGreetings"				;//Â¡Por el honor de la magia!
+	SectGreetings				=	"SVM_8_SectGreetings"				;//Â¡Despierta!
+	ThereHeIs					= 	"SVM_8_ThereHeIs"					;//EstÃ¡ por allÃ­.
+	NoLearnNoPoints				= 	"SVM_8_NoLearnNoPoints"				;//No puedo enseÃ±arte nada. No tienes suficiente experiencia.
+	NoLearnOverMax				= 	"SVM_8_NoLearnOverMax"				;//Tus posibilidades no dan mÃ¡s de sÃ­. DeberÃ­as aprender algo diferente.
 	NoLearnYouAlreadyKnow		=	"SVM_8_NoLearnYouAlreadyKnow"		;//Tienes que llegar al nivel avanzado antes de convertirte en maestro
-	NoLearnYoureBetter			=	"SVM_8_NoLearnYoureBetter"			;//¡Ya estás por encima de ese nivel!
-	HeyYou						=	"SVM_8_HeyYou"						;//¡Oye, tú!
-	NotNow						=	"SVM_8_NotNow"						;//¡Ahora no!
-	WhatDoYouWant				=	"SVM_8_WhatDoYouWant"				;//¿Qué quieres?
-	ISaidWhatDoYouWant			=	"SVM_8_ISaidWhatDoYouWant"			;//¿Puedo hacer algo por ti?
-	MakeWay						=	"SVM_8_MakeWay"						;//¿Me dejas pasar por aquí?
-	OutOfMyWay					=	"SVM_8_OutOfMyWay"					;//¡Quítate de en medio!
-	YouDeafOrWhat				=	"SVM_8_YouDeafOrWhat"				;//¿Quieres que te lo haga entender a golpes? ¡Lárgate de aquí!
-	LookingForTroubleAgain		=	"SVM_8_LookingForTroubleAgain"		;//¿Otra vez buscas líos conmigo?
-	LookAway					=	"SVM_8_LookAway"					;//Ejem... ¡Una vista preciosa!
-	OkayKeepIt					=	"SVM_8_OkayKeepIt"					;//¡Estupendo! Es tuya.
-	WhatsThat					=	"SVM_8_WhatsThat"					;//¡Eh! ¿Qué ha sido eso?
-	ThatsMyWeapon				=	"SVM_8_ThatsMyWeapon"				;//¿Ésa que llevas es mi arma...?
-	GiveItToMe					=	"SVM_8_GiveItToMe"					;//¡Dámela! ¡Ahora mismo!
-	YouCanKeeptheCrap			=	"SVM_8_YouCanKeeptheCrap"			;//Quédatela, no la necesito.
+	NoLearnYoureBetter			=	"SVM_8_NoLearnYoureBetter"			;//Â¡Ya estÃ¡s por encima de ese nivel!
+	HeyYou						=	"SVM_8_HeyYou"						;//Â¡Oye, tÃº!
+	NotNow						=	"SVM_8_NotNow"						;//Â¡Ahora no!
+	WhatDoYouWant				=	"SVM_8_WhatDoYouWant"				;//Â¿QuÃ© quieres?
+	ISaidWhatDoYouWant			=	"SVM_8_ISaidWhatDoYouWant"			;//Â¿Puedo hacer algo por ti?
+	MakeWay						=	"SVM_8_MakeWay"						;//Â¿Me dejas pasar por aquÃ­?
+	OutOfMyWay					=	"SVM_8_OutOfMyWay"					;//Â¡QuÃ­tate de en medio!
+	YouDeafOrWhat				=	"SVM_8_YouDeafOrWhat"				;//Â¿Quieres que te lo haga entender a golpes? Â¡LÃ¡rgate de aquÃ­!
+	LookingForTroubleAgain		=	"SVM_8_LookingForTroubleAgain"		;//Â¿Otra vez buscas lÃ­os conmigo?
+	LookAway					=	"SVM_8_LookAway"					;//Ejem... Â¡Una vista preciosa!
+	OkayKeepIt					=	"SVM_8_OkayKeepIt"					;//Â¡Estupendo! Es tuya.
+	WhatsThat					=	"SVM_8_WhatsThat"					;//Â¡Eh! Â¿QuÃ© ha sido eso?
+	ThatsMyWeapon				=	"SVM_8_ThatsMyWeapon"				;//Â¿Ã‰sa que llevas es mi arma...?
+	GiveItToMe					=	"SVM_8_GiveItToMe"					;//Â¡DÃ¡mela! Â¡Ahora mismo!
+	YouCanKeeptheCrap			=	"SVM_8_YouCanKeeptheCrap"			;//QuÃ©datela, no la necesito.
 	TheyKilledMyFriend			=	"SVM_8_TheyKilledMyFriend"			;//Se han cargado a uno de los nuestros. Si cojo a ese cerdo...
-	YouDisturbedMySlumber		=	"SVM_8_YouDisturbedMySlumber"		;//¿Qué pasa?
-	SuckerGotSome				=	"SVM_8_SuckerGotSome"				;//¿Eh? ¿Te han partido la cara? ¡Te lo mereces!
-	SuckerDefeatedEBr			=	"SVM_8_SuckerDefeatedEBr"			;//¡Has vencido a un magnate del mineral! ¡Se quedó impresionado!
-	SuckerDefeatedGur			=	"SVM_8_SuckerDefeatedGur"			;//Has vencido a un gurú. Estoy impresionado. Pero ni se te ocurra intentarlo de nuevo.
-	SuckerDefeatedMage			=	"SVM_8_SuckerDefeatedMage"			;//Si has vencido a un mago... ¡debes ser un hombre valiente!
-	SuckerDefeatedNov_Guard		= 	"SVM_8_SuckerDefeatedNov_Guard"		;//¿Sabes que los novicios están bajo mi protección y, aun así, les pones las manos encima?
-	SuckerDefeatedVlk_Guard		= 	"SVM_8_SuckerDefeatedVlk_Guard"		;//¡Si tocas a los cavadores es como si echas mano a mis ingresos!
-	YouDefeatedMyComrade		=	"SVM_8_YouDefeatedMyComrade"		;//No deberías meterte con mis amigos.
-	YouDefeatedNOV_Guard		=	"SVM_8_YouDefeatedNOV_Guard"		;//¡Si vuelves a poner la mano encima de un novicio lo lamentarás!
-	YouDefeatedVLK_Guard		=	"SVM_8_YouDefeatedVLK_Guard"		;//Si atacas a uno de mis protegidos, te podría costar la cabeza.
-	YouStoleFromMe				=	"SVM_8_YouStoleFromMe"				;//¿Cómo te atreves a presentarte aquí, ladrón asqueroso?
-	YouStoleFromUs				=	"SVM_8_YouStoleFromUs"				;//Tienes cosas que nos pertenecen. ¡Será mejor que nos las devuelvas!
-	YouStoleFromEBr				=	"SVM_8_YouStoleFromEBr"				;//¡Tío! ¡Has robado a los magnates del mineral! ¡Estarán furiosos!
-	YouStoleFromGur				=	"SVM_8_YouStoleFromGur"				;//Has levantado a los gurús algunas cosas, ¿verdad?
-	StoleFromMage				=	"SVM_8_StoleFromMage"				;//Has levantado a los magos un par de cosas, ¿verdad?
-	YouKilledMyFriend			=	"SVM_8_YouKilledMyFriend"			;//¡Uno de los nuestros pesa sobre tu conciencia! ¡Un error más y te tocará a ti!
-	YouKilledEBr				=	"SVM_8_YouKilledEBr"				;//¡Has matado a un magnate del mineral! Tío, ¿estás zumbado?
-	YouKilledGur				=	"SVM_8_YouKilledGur"				;//¡Has matado a un gurú! ¡No me lo puedo creer!
-	YouKilledMage				=	"SVM_8_YouKilledMage"				;//¡Has matado a un mago! ¿Cómo tienes pensado justificarlo?
+	YouDisturbedMySlumber		=	"SVM_8_YouDisturbedMySlumber"		;//Â¿QuÃ© pasa?
+	SuckerGotSome				=	"SVM_8_SuckerGotSome"				;//Â¿Eh? Â¿Te han partido la cara? Â¡Te lo mereces!
+	SuckerDefeatedEBr			=	"SVM_8_SuckerDefeatedEBr"			;//Â¡Has vencido a un magnate del mineral! Â¡Se quedÃ³ impresionado!
+	SuckerDefeatedGur			=	"SVM_8_SuckerDefeatedGur"			;//Has vencido a un gurÃº. Estoy impresionado. Pero ni se te ocurra intentarlo de nuevo.
+	SuckerDefeatedMage			=	"SVM_8_SuckerDefeatedMage"			;//Si has vencido a un mago... Â¡debes ser un hombre valiente!
+	SuckerDefeatedNov_Guard		= 	"SVM_8_SuckerDefeatedNov_Guard"		;//Â¿Sabes que los novicios estÃ¡n bajo mi protecciÃ³n y, aun asÃ­, les pones las manos encima?
+	SuckerDefeatedVlk_Guard		= 	"SVM_8_SuckerDefeatedVlk_Guard"		;//Â¡Si tocas a los cavadores es como si echas mano a mis ingresos!
+	YouDefeatedMyComrade		=	"SVM_8_YouDefeatedMyComrade"		;//No deberÃ­as meterte con mis amigos.
+	YouDefeatedNOV_Guard		=	"SVM_8_YouDefeatedNOV_Guard"		;//Â¡Si vuelves a poner la mano encima de un novicio lo lamentarÃ¡s!
+	YouDefeatedVLK_Guard		=	"SVM_8_YouDefeatedVLK_Guard"		;//Si atacas a uno de mis protegidos, te podrÃ­a costar la cabeza.
+	YouStoleFromMe				=	"SVM_8_YouStoleFromMe"				;//Â¿CÃ³mo te atreves a presentarte aquÃ­, ladrÃ³n asqueroso?
+	YouStoleFromUs				=	"SVM_8_YouStoleFromUs"				;//Tienes cosas que nos pertenecen. Â¡SerÃ¡ mejor que nos las devuelvas!
+	YouStoleFromEBr				=	"SVM_8_YouStoleFromEBr"				;//Â¡TÃ­o! Â¡Has robado a los magnates del mineral! Â¡EstarÃ¡n furiosos!
+	YouStoleFromGur				=	"SVM_8_YouStoleFromGur"				;//Has levantado a los gurÃºs algunas cosas, Â¿verdad?
+	StoleFromMage				=	"SVM_8_StoleFromMage"				;//Has levantado a los magos un par de cosas, Â¿verdad?
+	YouKilledMyFriend			=	"SVM_8_YouKilledMyFriend"			;//Â¡Uno de los nuestros pesa sobre tu conciencia! Â¡Un error mÃ¡s y te tocarÃ¡ a ti!
+	YouKilledEBr				=	"SVM_8_YouKilledEBr"				;//Â¡Has matado a un magnate del mineral! TÃ­o, Â¿estÃ¡s zumbado?
+	YouKilledGur				=	"SVM_8_YouKilledGur"				;//Â¡Has matado a un gurÃº! Â¡No me lo puedo creer!
+	YouKilledMage				=	"SVM_8_YouKilledMage"				;//Â¡Has matado a un mago! Â¿CÃ³mo tienes pensado justificarlo?
 	YouKilledOCfolk				=	"SVM_8_YouKilledOCfolk"				;//Ha muerto un miembro del Campamento Viejo, y se ha relacionado tu nombre con la muerte...
-	YouKilledNCfolk				=	"SVM_8_YouKilledNCfolk"				;//¡El Campamento Nuevo ha sufrido una pérdida trágica, y parece que estás implicado!
-	YouKilledPSIfolk			=	"SVM_8_YouKilledPSIfolk"			;//¡La hermandad tiene un fiel menos, y su muerte pesa sobre tu conciencia!
-	GetThingsRight				=	"SVM_8_GetThingsRight"				;//¡No será fácil solucionar esto!
-	YouDefeatedMeWell			=	"SVM_8_YouDefeatedMeWell"			;//¡Me has dado una buena tunda, tío! ¡Ha sido una lucha justa! ¡Pero ya ha acabado!
-	Smalltalk01					=	"SVM_8_Smalltalk01"					;// ...si tú crees...
+	YouKilledNCfolk				=	"SVM_8_YouKilledNCfolk"				;//Â¡El Campamento Nuevo ha sufrido una pÃ©rdida trÃ¡gica, y parece que estÃ¡s implicado!
+	YouKilledPSIfolk			=	"SVM_8_YouKilledPSIfolk"			;//Â¡La hermandad tiene un fiel menos, y su muerte pesa sobre tu conciencia!
+	GetThingsRight				=	"SVM_8_GetThingsRight"				;//Â¡No serÃ¡ fÃ¡cil solucionar esto!
+	YouDefeatedMeWell			=	"SVM_8_YouDefeatedMeWell"			;//Â¡Me has dado una buena tunda, tÃ­o! Â¡Ha sido una lucha justa! Â¡Pero ya ha acabado!
+	Smalltalk01					=	"SVM_8_Smalltalk01"					;// ...si tÃº crees...
 	Smalltalk02					=	"SVM_8_Smalltalk02"					;// ...tal vez...
 	Smalltalk03					=	"SVM_8_Smalltalk03"					;// ...eso no fue muy inteligente...
-	Smalltalk04					=	"SVM_8_Smalltalk04"					;// ...será mejor que me mantenga al margen...
+	Smalltalk04					=	"SVM_8_Smalltalk04"					;// ...serÃ¡ mejor que me mantenga al margen...
 	Smalltalk05					=	"SVM_8_Smalltalk05"					;// ...en realidad no es mi problema...
-	Smalltalk06					=	"SVM_8_Smalltalk06"					;// ...era evidente que habría problemas...
-	Smalltalk07					=	"SVM_8_Smalltalk07"					;// ...pero sé discreto; la gente no tiene por qué saberlo.
-	Smalltalk08					=	"SVM_8_Smalltalk08"					;// ...no volverá a suceder...
+	Smalltalk06					=	"SVM_8_Smalltalk06"					;// ...era evidente que habrÃ­a problemas...
+	Smalltalk07					=	"SVM_8_Smalltalk07"					;// ...pero sÃ© discreto; la gente no tiene por quÃ© saberlo.
+	Smalltalk08					=	"SVM_8_Smalltalk08"					;// ...no volverÃ¡ a suceder...
 	Smalltalk09					=	"SVM_8_Smalltalk09"					;// ...debe haber algo de cierto en esa historia...
 	Smalltalk10					=	"SVM_8_Smalltalk10"					;// ...has de tener cuidado con lo que dices a la gente...
 	Smalltalk11					=	"SVM_8_Smalltalk11"					;// ...mientras no me vea implicado...
-	Smalltalk12					=	"SVM_8_Smalltalk12"					;// ...no deberías creerte todo lo que oyes...
-	Smalltalk13					=	"SVM_8_Smalltalk13"					;// ...no me gustaría estar en su lugar...
+	Smalltalk12					=	"SVM_8_Smalltalk12"					;// ...no deberÃ­as creerte todo lo que oyes...
+	Smalltalk13					=	"SVM_8_Smalltalk13"					;// ...no me gustarÃ­a estar en su lugar...
 	Smalltalk14					=	"SVM_8_Smalltalk14"					;// ...lo mismo de siempre...
 	Smalltalk15					=	"SVM_8_Smalltalk15"					;// ...algunos no aprenden...
-	Smalltalk16					=	"SVM_8_Smalltalk16"					;// ...hubo un tiempo en que las cosas habrían sucedido de manera muy distinta...
+	Smalltalk16					=	"SVM_8_Smalltalk16"					;// ...hubo un tiempo en que las cosas habrÃ­an sucedido de manera muy distinta...
 	Smalltalk17					=	"SVM_8_Smalltalk17"					;// ...la gente no para de hablar...
 	Smalltalk18					=	"SVM_8_Smalltalk18"					;// ...ya no hago caso de los chismorreos...
-	Smalltalk19					=	"SVM_8_Smalltalk19"					;// ...confías en alguien y te metes en un lío; eso es lo que pasa...
-	Smalltalk20					=	"SVM_8_Smalltalk20"					;// ...me extraña que vaya a cambiar...
-	Smalltalk21					=	"SVM_8_Smalltalk21"					;// ...seguramente tengas razón...
-	Smalltalk22					=	"SVM_8_Smalltalk22"					;// ...espera. Será mejor no apresurarse...
-	Smalltalk23					=	"SVM_8_Smalltalk23"					;// ...creía que eso se había resuelto hace mucho...
+	Smalltalk19					=	"SVM_8_Smalltalk19"					;// ...confÃ­as en alguien y te metes en un lÃ­o; eso es lo que pasa...
+	Smalltalk20					=	"SVM_8_Smalltalk20"					;// ...me extraÃ±a que vaya a cambiar...
+	Smalltalk21					=	"SVM_8_Smalltalk21"					;// ...seguramente tengas razÃ³n...
+	Smalltalk22					=	"SVM_8_Smalltalk22"					;// ...espera. SerÃ¡ mejor no apresurarse...
+	Smalltalk23					=	"SVM_8_Smalltalk23"					;// ...creÃ­a que eso se habÃ­a resuelto hace mucho...
 	Smalltalk24					=	"SVM_8_Smalltalk24"					;// ...hablemos de otra cosa...
 	Om							= 	"SVM_8_Om"							;//Ommm
 };
 
 
-instance SVM_9 (C_SVM)				// brummig		   gemütlicher Hüne, Besonnen, Brummiger Bär, Einfacher	Mensch
+instance SVM_9 (C_SVM)				// brummig		   gemÃ¼tlicher HÃ¼ne, Besonnen, Brummiger BÃ¤r, Einfacher	Mensch
 {
-	StopMagic					=	"SVM_9_StopMagic"					;//¡No quiero magia cerca de mí!
-	ISaidStopMagic				=	"SVM_9_ISaidStopMagic"				;//¡Te digo que pares! ¡Ahora mismo!
-	WeaponDown					=	"SVM_9_WeaponDown"					;//¿Tienes pensado atacarme?
+	StopMagic					=	"SVM_9_StopMagic"					;//Â¡No quiero magia cerca de mÃ­!
+	ISaidStopMagic				=	"SVM_9_ISaidStopMagic"				;//Â¡Te digo que pares! Â¡Ahora mismo!
+	WeaponDown					=	"SVM_9_WeaponDown"					;//Â¿Tienes pensado atacarme?
 	ISaidWeaponDown				=	"SVM_9_ISaidWeaponDown"				;//Aparta eso si no quieres que te parta la cara.
-	WatchYourAim				=	"SVM_9_WatchYourAim"				;//¡Cuidado con dónde apuntas!
-	WatchYourAimAngry			=	"SVM_9_WatchYourAimAngry"			;//¡Aparta eso!
-	WhatAreYouDoing				=	"SVM_9_WhatAreYouDoing"				;//¡Eh! ¡Cuidado!
+	WatchYourAim				=	"SVM_9_WatchYourAim"				;//Â¡Cuidado con dÃ³nde apuntas!
+	WatchYourAimAngry			=	"SVM_9_WatchYourAimAngry"			;//Â¡Aparta eso!
+	WhatAreYouDoing				=	"SVM_9_WhatAreYouDoing"				;//Â¡Eh! Â¡Cuidado!
 	LetsForgetOurLittleFight	=	"SVM_9_LetsForgetOurLittleFight"	;//I wouldn't mind forgetting about this little argument ...
-	Strange						=	"SVM_9_Strange"						;//¡Sal! ¡Sé que puedes oírme!
-	DieMonster					=	"SVM_9_DieMonster"					;//¡Estas bestias son estúpidas a más no poder!
-	DieMortalEnemy				=	"SVM_9_DieMortalEnemy"				;//¡Estás acabado!
-	NowWait						=	"SVM_9_NowWait"						;//¡Vas a saber quién soy!
-	YouStillNotHaveEnough		=	"SVM_9_YouStillNotHaveEnough"		;//¡Eres jodidamente insistente!
-	YouAskedForIt				=	"SVM_9_YouAskedForIt"				;//¡Si no escuchas, tendrás que recibir!
-	NowWaitIntruder				= 	"SVM_9_NowWaitIntruder"				;//¡Vas a morir, intruso!
-	IWillTeachYouRespectForForeignProperty	=	"SVM_9_IWillTeachYouRespectForForeignProperty"	;//Te lo advertí. ¡Si tocas mis cosas, te metes en un lío!
-	DirtyThief					=	"SVM_9_DirtyThief"					;//¡Ladrón! ¡Voy a acabar contigo!
-	YouAttackedMyCharge			=	"SVM_9_YouAttackedMyCharge"			;//¡Nadie se mete con mis chicos!
-	YouKilledOneOfUs			=	"SVM_9_YouKilledOneOfUs"			;//¡Has matado a uno de mis hombres! ¡Te voy a matar!
-	Dead						=	"SVM_9_Dead"						;//¡Aaargh!
+	Strange						=	"SVM_9_Strange"						;//Â¡Sal! Â¡SÃ© que puedes oÃ­rme!
+	DieMonster					=	"SVM_9_DieMonster"					;//Â¡Estas bestias son estÃºpidas a mÃ¡s no poder!
+	DieMortalEnemy				=	"SVM_9_DieMortalEnemy"				;//Â¡EstÃ¡s acabado!
+	NowWait						=	"SVM_9_NowWait"						;//Â¡Vas a saber quiÃ©n soy!
+	YouStillNotHaveEnough		=	"SVM_9_YouStillNotHaveEnough"		;//Â¡Eres jodidamente insistente!
+	YouAskedForIt				=	"SVM_9_YouAskedForIt"				;//Â¡Si no escuchas, tendrÃ¡s que recibir!
+	NowWaitIntruder				= 	"SVM_9_NowWaitIntruder"				;//Â¡Vas a morir, intruso!
+	IWillTeachYouRespectForForeignProperty	=	"SVM_9_IWillTeachYouRespectForForeignProperty"	;//Te lo advertÃ­. Â¡Si tocas mis cosas, te metes en un lÃ­o!
+	DirtyThief					=	"SVM_9_DirtyThief"					;//Â¡LadrÃ³n! Â¡Voy a acabar contigo!
+	YouAttackedMyCharge			=	"SVM_9_YouAttackedMyCharge"			;//Â¡Nadie se mete con mis chicos!
+	YouKilledOneOfUs			=	"SVM_9_YouKilledOneOfUs"			;//Â¡Has matado a uno de mis hombres! Â¡Te voy a matar!
+	Dead						=	"SVM_9_Dead"						;//Â¡Aaargh!
 	Aargh_1						=	"SVM_9_Aargh_1"						;//Aargh
 	Aargh_2						=	"SVM_9_Aargh_2"						;//Aargh
 	Aargh_3						=	"SVM_9_Aargh_3"						;//Aargh
-	Berzerk						=	"SVM_9_Berzerk"						;//¡¡¡UUAAARRGGGHHH!!!
-	YoullBeSorryForThis			=	"SVM_9_YoullBeSorryForThis"			;//Ya estás muerto, sólo que no lo sabes.
-	YesYes						=	"SVM_9_YesYes"						;//Tranquilo. ¡No pasa nada!
-	ShitWhatAMonster			=	"SVM_9_ShitWhatAMonster"			;//¡Mierda, menuda bestia!
-	Help						=	"SVM_9_Help"						;//¡Rápido, salgamos de aquí!
+	Berzerk						=	"SVM_9_Berzerk"						;//Â¡Â¡Â¡UUAAARRGGGHHH!!!
+	YoullBeSorryForThis			=	"SVM_9_YoullBeSorryForThis"			;//Ya estÃ¡s muerto, sÃ³lo que no lo sabes.
+	YesYes						=	"SVM_9_YesYes"						;//Tranquilo. Â¡No pasa nada!
+	ShitWhatAMonster			=	"SVM_9_ShitWhatAMonster"			;//Â¡Mierda, menuda bestia!
+	Help						=	"SVM_9_Help"						;//Â¡RÃ¡pido, salgamos de aquÃ­!
 	WeWillMeetAgain				=	"SVM_9_WeWillMeetAgain"				;//Seguro que nos volvemos a ver.
-	NeverTryThatAgain			=	"SVM_9_NeverTryThatAgain"			;//¡La próxima vez te mataré!
-	ITakeYourWeapon				=	"SVM_9_ITakeYourWeapon"				;//¡Esta arma ahora es mía!
-	ITookYourOre				=	"SVM_9_ITookYourOre"				;//¡Mineral! ¡Bueno, es mejor que nada!
+	NeverTryThatAgain			=	"SVM_9_NeverTryThatAgain"			;//Â¡La prÃ³xima vez te matarÃ©!
+	ITakeYourWeapon				=	"SVM_9_ITakeYourWeapon"				;//Â¡Esta arma ahora es mÃ­a!
+	ITookYourOre				=	"SVM_9_ITookYourOre"				;//Â¡Mineral! Â¡Bueno, es mejor que nada!
 	ShitNoOre					=	"SVM_9_ShitNoOre"					;//Ni siquiera tiene mineral...
-	HandsOff					=	"SVM_9_HandsOff"					;//¡Quita las manos, amigo!
-	GetOutOfHere				=	"SVM_9_GetOutOfHere"				;//¡Lárgate de aquí!
-	YouViolatedForbiddenTerritory=	"SVM_9_YouViolatedForbiddenTerritory";//¿Qué haces aquí?
-	YouWannaFoolMe				=	"SVM_9_YouWannaFoolMe"				;//¿Tienes pensado dejarme en ridículo, tío?
-	WhatsThisSupposedToBe		=	"SVM_9_WhatsThisSupposedToBe"		;//¡Eh, tú! ¿Qué haces rondando por aquí?
-	WhyAreYouInHere				=	"SVM_9_WhyYouAreInHere"				;//¡Sal o llamo a los guardias!
-	WhatDidYouInThere			=	"SVM_9_WhatDidYouInThere"			;//¿Qué has estado haciendo aquí dentro?
-	WiseMove					=	"SVM_9_WiseMove"					;//¡Tipo listo!
-	Alarm						=	"SVM_9_Alarm"						;//¡Guardias! ¡Por aquí!
-	IntruderAlert				= 	"SVM_9_IntruderAlert"				;//¡¡¡ALERTA!!! ¡¡¡INTRUSO!!!
-	BehindYou					=	"SVM_9_BehindYou"					;//¡Detrás de ti!
+	HandsOff					=	"SVM_9_HandsOff"					;//Â¡Quita las manos, amigo!
+	GetOutOfHere				=	"SVM_9_GetOutOfHere"				;//Â¡LÃ¡rgate de aquÃ­!
+	YouViolatedForbiddenTerritory=	"SVM_9_YouViolatedForbiddenTerritory";//Â¿QuÃ© haces aquÃ­?
+	YouWannaFoolMe				=	"SVM_9_YouWannaFoolMe"				;//Â¿Tienes pensado dejarme en ridÃ­culo, tÃ­o?
+	WhatsThisSupposedToBe		=	"SVM_9_WhatsThisSupposedToBe"		;//Â¡Eh, tÃº! Â¿QuÃ© haces rondando por aquÃ­?
+	WhyAreYouInHere				=	"SVM_9_WhyYouAreInHere"				;//Â¡Sal o llamo a los guardias!
+	WhatDidYouInThere			=	"SVM_9_WhatDidYouInThere"			;//Â¿QuÃ© has estado haciendo aquÃ­ dentro?
+	WiseMove					=	"SVM_9_WiseMove"					;//Â¡Tipo listo!
+	Alarm						=	"SVM_9_Alarm"						;//Â¡Guardias! Â¡Por aquÃ­!
+	IntruderAlert				= 	"SVM_9_IntruderAlert"				;//Â¡Â¡Â¡ALERTA!!! Â¡Â¡Â¡INTRUSO!!!
+	BehindYou					=	"SVM_9_BehindYou"					;//Â¡DetrÃ¡s de ti!
 	TheresAFight				=	"SVM_9_TheresAFight"				;//Veamos lo buenos que son...
-	HeyHeyHey					=	"SVM_9_HeyHeyHey"					;//¡Sigue!
-	CheerFight					=	"SVM_9_CheerFight"					;//¡Sí! ¡Vamos, vamos!
-	CheerFriend					=	"SVM_9_CheerFriend"					;//¡Bien!
-	Ooh							=	"SVM_9_Ooh"							;//¡Oh, ha golpeado donde duele!
-	YeahWellDone				=	"SVM_9_YeahWellDone"				;//¡Maravilloso control, chaval!
-	RunCoward					=	"SVM_9_RunCoward"					;//¡No vuelvas a aparecer por aquí!
-	HeDefeatedHim				=	"SVM_9_HeDefeatedHim"				;//La lucha está decidida!
-	HeDeservedIt				=	"SVM_9_HeDeservedIt"				;//¡Es por tu culpa!
-	HeKilledHim					=	"SVM_9_HeKilledHim"					;//Eso era innecesario. Ahora tendrás que afrontar las consecuencias.
-	ItWasAGoodFight				=	"SVM_9_ItWasAGoodFight"				;//¡Fue una buena pelea!
+	HeyHeyHey					=	"SVM_9_HeyHeyHey"					;//Â¡Sigue!
+	CheerFight					=	"SVM_9_CheerFight"					;//Â¡SÃ­! Â¡Vamos, vamos!
+	CheerFriend					=	"SVM_9_CheerFriend"					;//Â¡Bien!
+	Ooh							=	"SVM_9_Ooh"							;//Â¡Oh, ha golpeado donde duele!
+	YeahWellDone				=	"SVM_9_YeahWellDone"				;//Â¡Maravilloso control, chaval!
+	RunCoward					=	"SVM_9_RunCoward"					;//Â¡No vuelvas a aparecer por aquÃ­!
+	HeDefeatedHim				=	"SVM_9_HeDefeatedHim"				;//La lucha estÃ¡ decidida!
+	HeDeservedIt				=	"SVM_9_HeDeservedIt"				;//Â¡Es por tu culpa!
+	HeKilledHim					=	"SVM_9_HeKilledHim"					;//Eso era innecesario. Ahora tendrÃ¡s que afrontar las consecuencias.
+	ItWasAGoodFight				=	"SVM_9_ItWasAGoodFight"				;//Â¡Fue una buena pelea!
 	Awake						=	"SVM_9_Awake"						;//Aaaau (bostezo)
 	FriendlyGreetings			=	"SVM_9_FriendlyGreetings"			;//Hola.
-	ALGreetings					=	"SVM_9_ALGreetings"					;//¡Por Gómez!
-	MageGreetings				=	"SVM_9_MageGreetings"				;//¡Por el honor de la magia!
-	SectGreetings				=	"SVM_9_SectGreetings"				;//¡Despierta!
-	ThereHeIs					= 	"SVM_13_ThereHeIs"					;//¿Estás ciego? ¡Por allí!
-	NoLearnNoPoints				= 	"SVM_9_NoLearnNoPoints"				;//No puedo enseñarte nada. No tienes suficiente experiencia.
-	NoLearnOverMax				= 	"SVM_9_NoLearnOverMax"				;//Tus posibilidades no dan más de sí. Deberías aprender algo diferente.
-	NoLearnYouAlreadyKnow		=	"SVM_9_NoLearnYouAlreadyKnow"		;//¡Tienes que llegar al nivel avanzado antes de convertirte en maestro!
-	NoLearnYoureBetter			=	"SVM_9_NoLearnYoureBetter"			;//¡Ya estás por encima de ese nivel!
-	HeyYou						=	"SVM_9_HeyYou"						;//¡Oye, tú!
-	NotNow						=	"SVM_9_NotNow"						;//¡Ahora no!
-	WhatDoYouWant				=	"SVM_9_WhatDoYouWant"				;//¿Qué quieres?
-	ISaidWhatDoYouWant			=	"SVM_9_ISaidWhatDoYouWant"			;//¿Puedo ayudarte?
-	MakeWay						=	"SVM_9_MakeWay"						;//¡Déjame pasar!
-	OutOfMyWay					=	"SVM_9_OutOfMyWay"					;//¡Hazte a un lado!
-	YouDeafOrWhat				=	"SVM_9_YouDeafOrWhat"				;//¡Vamos, apártate!
-	LookingForTroubleAgain		=	"SVM_9_LookingForTroubleAgain"		;//¿Otra vez buscas bronca? ¿Por qué siempre te metes conmigo?
-	LookAway					=	"SVM_9_LookAway"					;//¡Oh sí! ¡Qué buen tiempo hace hoy!
-	OkayKeepIt					=	"SVM_9_OkayKeepIt"					;//¡Bien! Es tuyo.
-	WhatsThat					=	"SVM_9_WhatsThat"					;//¿Qué ha sido eso?
-	ThatsMyWeapon				=	"SVM_9_ThatsMyWeapon"				;//Contaré hasta tres, y después me devolverás el arma.
-	GiveItToMe					=	"SVM_9_GiveItToMe"					;//¡Dámela! ¡Ahora mismo!
-	YouCanKeeptheCrap			=	"SVM_9_YouCanKeeptheCrap"			;//Quédatela, no la necesito.
+	ALGreetings					=	"SVM_9_ALGreetings"					;//Â¡Por GÃ³mez!
+	MageGreetings				=	"SVM_9_MageGreetings"				;//Â¡Por el honor de la magia!
+	SectGreetings				=	"SVM_9_SectGreetings"				;//Â¡Despierta!
+	ThereHeIs					= 	"SVM_13_ThereHeIs"					;//Â¿EstÃ¡s ciego? Â¡Por allÃ­!
+	NoLearnNoPoints				= 	"SVM_9_NoLearnNoPoints"				;//No puedo enseÃ±arte nada. No tienes suficiente experiencia.
+	NoLearnOverMax				= 	"SVM_9_NoLearnOverMax"				;//Tus posibilidades no dan mÃ¡s de sÃ­. DeberÃ­as aprender algo diferente.
+	NoLearnYouAlreadyKnow		=	"SVM_9_NoLearnYouAlreadyKnow"		;//Â¡Tienes que llegar al nivel avanzado antes de convertirte en maestro!
+	NoLearnYoureBetter			=	"SVM_9_NoLearnYoureBetter"			;//Â¡Ya estÃ¡s por encima de ese nivel!
+	HeyYou						=	"SVM_9_HeyYou"						;//Â¡Oye, tÃº!
+	NotNow						=	"SVM_9_NotNow"						;//Â¡Ahora no!
+	WhatDoYouWant				=	"SVM_9_WhatDoYouWant"				;//Â¿QuÃ© quieres?
+	ISaidWhatDoYouWant			=	"SVM_9_ISaidWhatDoYouWant"			;//Â¿Puedo ayudarte?
+	MakeWay						=	"SVM_9_MakeWay"						;//Â¡DÃ©jame pasar!
+	OutOfMyWay					=	"SVM_9_OutOfMyWay"					;//Â¡Hazte a un lado!
+	YouDeafOrWhat				=	"SVM_9_YouDeafOrWhat"				;//Â¡Vamos, apÃ¡rtate!
+	LookingForTroubleAgain		=	"SVM_9_LookingForTroubleAgain"		;//Â¿Otra vez buscas bronca? Â¿Por quÃ© siempre te metes conmigo?
+	LookAway					=	"SVM_9_LookAway"					;//Â¡Oh sÃ­! Â¡QuÃ© buen tiempo hace hoy!
+	OkayKeepIt					=	"SVM_9_OkayKeepIt"					;//Â¡Bien! Es tuyo.
+	WhatsThat					=	"SVM_9_WhatsThat"					;//Â¿QuÃ© ha sido eso?
+	ThatsMyWeapon				=	"SVM_9_ThatsMyWeapon"				;//ContarÃ© hasta tres, y despuÃ©s me devolverÃ¡s el arma.
+	GiveItToMe					=	"SVM_9_GiveItToMe"					;//Â¡DÃ¡mela! Â¡Ahora mismo!
+	YouCanKeeptheCrap			=	"SVM_9_YouCanKeeptheCrap"			;//QuÃ©datela, no la necesito.
 	TheyKilledMyFriend			=	"SVM_9_TheyKilledMyFriend"			;//Se han cargado a uno de los nuestros. Si cojo a ese cerdo...
-	YouDisturbedMySlumber		=	"SVM_9_YouDisturbedMySlumber"		;//¿Qué pasa?
-	SuckerGotSome				=	"SVM_9_SuckerGotSome"				;//¿Eh? ¿Te han pegado una paliza? ¡Te lo mereces!
-	SuckerDefeatedEBr			=	"SVM_9_SuckerDefeatedEBr"			;//¡Has vencido a un magnate del mineral! ¡Se quedó impresionado!
-	SuckerDefeatedGur			=	"SVM_9_SuckerDefeatedGur"			;//Has vencido a un gurú. Estoy impresionado. Pero ni se te ocurra intentarlo de nuevo.
-	SuckerDefeatedMage			=	"SVM_9_SuckerDefeatedMage"			;//Si has vencido a un mago... ¡debes ser un hombre valiente!
-	SuckerDefeatedNov_Guard		= 	"SVM_9_SuckerDefeatedNov_Guard"		;//Debes estar loco para sacudir así a un novicio.
-	SuckerDefeatedVlk_Guard		= 	"SVM_9_SuckerDefeatedVlk_Guard"		;//¿Qué creías que hacías sacudiendo a un cavador?
-	YouDefeatedMyComrade		=	"SVM_9_YouDefeatedMyComrade"		;//¡Has sacudido a uno de mis amigos! ¿A qué venía eso?
-	YouDefeatedNOV_Guard		=	"SVM_9_YouDefeatedNOV_Guard"		;//¡Si vuelves a poner la mano encima de un novicio lo lamentarás!
-	YouDefeatedVLK_Guard		=	"SVM_9_YouDefeatedVLK_Guard"		;//Eres demasiado valiente; si tocas a uno de mis protegidos, podría resultarte muy peligroso.
-	YouStoleFromMe				=	"SVM_9_YouStoleFromMe"				;//¿Cómo te atreves a presentarte aquí, ladrón asqueroso?
-	YouStoleFromUs				=	"SVM_9_YouStoleFromUs"				;//¡Robar a los nuestros es lo peor que podías hacer! ¡Lo lamentarás!
-	YouStoleFromEBr				=	"SVM_9_YouStoleFromEBr"				;//¡Tío! ¡Has robado a los magnates del mineral! ¡Estarán furiosos!
-	YouStoleFromGur				=	"SVM_9_YouStoleFromGur"				;//Has levantado a los gurús algunas cosas, ¿verdad?
-	StoleFromMage				=	"SVM_9_StoleFromMage"				;//Has levantado a los magos un par de cosas, ¿verdad?
-	YouKilledMyFriend			=	"SVM_9_YouKilledMyFriend"			;//¡Uno de los nuestros pesa sobre tu conciencia! ¡Un error más y te tocará a ti!
-	YouKilledEBr				=	"SVM_9_YouKilledEBr"				;//¡Has matado a un magnate del mineral! Tío, ¿estás zumbado?
-	YouKilledGur				=	"SVM_9_YouKilledGur"				;//¡Has matado a un gurú! ¡No me lo puedo creer!
-	YouKilledMage				=	"SVM_9_YouKilledMage"				;//¡Has matado a un mago! ¿Cómo tienes pensado justificarlo?
+	YouDisturbedMySlumber		=	"SVM_9_YouDisturbedMySlumber"		;//Â¿QuÃ© pasa?
+	SuckerGotSome				=	"SVM_9_SuckerGotSome"				;//Â¿Eh? Â¿Te han pegado una paliza? Â¡Te lo mereces!
+	SuckerDefeatedEBr			=	"SVM_9_SuckerDefeatedEBr"			;//Â¡Has vencido a un magnate del mineral! Â¡Se quedÃ³ impresionado!
+	SuckerDefeatedGur			=	"SVM_9_SuckerDefeatedGur"			;//Has vencido a un gurÃº. Estoy impresionado. Pero ni se te ocurra intentarlo de nuevo.
+	SuckerDefeatedMage			=	"SVM_9_SuckerDefeatedMage"			;//Si has vencido a un mago... Â¡debes ser un hombre valiente!
+	SuckerDefeatedNov_Guard		= 	"SVM_9_SuckerDefeatedNov_Guard"		;//Debes estar loco para sacudir asÃ­ a un novicio.
+	SuckerDefeatedVlk_Guard		= 	"SVM_9_SuckerDefeatedVlk_Guard"		;//Â¿QuÃ© creÃ­as que hacÃ­as sacudiendo a un cavador?
+	YouDefeatedMyComrade		=	"SVM_9_YouDefeatedMyComrade"		;//Â¡Has sacudido a uno de mis amigos! Â¿A quÃ© venÃ­a eso?
+	YouDefeatedNOV_Guard		=	"SVM_9_YouDefeatedNOV_Guard"		;//Â¡Si vuelves a poner la mano encima de un novicio lo lamentarÃ¡s!
+	YouDefeatedVLK_Guard		=	"SVM_9_YouDefeatedVLK_Guard"		;//Eres demasiado valiente; si tocas a uno de mis protegidos, podrÃ­a resultarte muy peligroso.
+	YouStoleFromMe				=	"SVM_9_YouStoleFromMe"				;//Â¿CÃ³mo te atreves a presentarte aquÃ­, ladrÃ³n asqueroso?
+	YouStoleFromUs				=	"SVM_9_YouStoleFromUs"				;//Â¡Robar a los nuestros es lo peor que podÃ­as hacer! Â¡Lo lamentarÃ¡s!
+	YouStoleFromEBr				=	"SVM_9_YouStoleFromEBr"				;//Â¡TÃ­o! Â¡Has robado a los magnates del mineral! Â¡EstarÃ¡n furiosos!
+	YouStoleFromGur				=	"SVM_9_YouStoleFromGur"				;//Has levantado a los gurÃºs algunas cosas, Â¿verdad?
+	StoleFromMage				=	"SVM_9_StoleFromMage"				;//Has levantado a los magos un par de cosas, Â¿verdad?
+	YouKilledMyFriend			=	"SVM_9_YouKilledMyFriend"			;//Â¡Uno de los nuestros pesa sobre tu conciencia! Â¡Un error mÃ¡s y te tocarÃ¡ a ti!
+	YouKilledEBr				=	"SVM_9_YouKilledEBr"				;//Â¡Has matado a un magnate del mineral! TÃ­o, Â¿estÃ¡s zumbado?
+	YouKilledGur				=	"SVM_9_YouKilledGur"				;//Â¡Has matado a un gurÃº! Â¡No me lo puedo creer!
+	YouKilledMage				=	"SVM_9_YouKilledMage"				;//Â¡Has matado a un mago! Â¿CÃ³mo tienes pensado justificarlo?
 	YouKilledOCfolk				=	"SVM_9_YouKilledOCfolk"				;//Ha muerto un miembro del Campamento Viejo, y se ha relacionado tu nombre con la muerte...
-	YouKilledNCfolk				=	"SVM_9_YouKilledNCfolk"				;//¡El Campamento Nuevo ha sufrido una pérdida trágica, y parece que estás implicado!
-	YouKilledPSIfolk			=	"SVM_9_YouKilledPSIfolk"			;//¡La hermandad tiene un fiel menos, y su muerte pesa sobre tu conciencia!
-	GetThingsRight				=	"SVM_9_GetThingsRight"				;//¡No será fácil solucionar esto!
+	YouKilledNCfolk				=	"SVM_9_YouKilledNCfolk"				;//Â¡El Campamento Nuevo ha sufrido una pÃ©rdida trÃ¡gica, y parece que estÃ¡s implicado!
+	YouKilledPSIfolk			=	"SVM_9_YouKilledPSIfolk"			;//Â¡La hermandad tiene un fiel menos, y su muerte pesa sobre tu conciencia!
+	GetThingsRight				=	"SVM_9_GetThingsRight"				;//Â¡No serÃ¡ fÃ¡cil solucionar esto!
 	YouDefeatedMeWell			=	"SVM_9_YouDefeatedMeWell"			;//Una buena pelea. Tu entrenamiento ha merecido la pena.
-	Smalltalk01					=	"SVM_9_Smalltalk01"					;// ...sí, si tú crees eso...
+	Smalltalk01					=	"SVM_9_Smalltalk01"					;// ...sÃ­, si tÃº crees eso...
 	Smalltalk02					=	"SVM_9_Smalltalk02"					;// ...tal vez...
 	Smalltalk03					=	"SVM_9_Smalltalk03"					;// ...eso no fue muy inteligente...
-	Smalltalk04					=	"SVM_9_Smalltalk04"					;// ...será mejor que me mantenga al margen...
+	Smalltalk04					=	"SVM_9_Smalltalk04"					;// ...serÃ¡ mejor que me mantenga al margen...
 	Smalltalk05					=	"SVM_9_Smalltalk05"					;// ...en realidad no es mi problema...
-	Smalltalk06					=	"SVM_9_Smalltalk06"					;// ...era evidente que habría problemas...
-	Smalltalk07					=	"SVM_9_Smalltalk07"					;// ...pero sé discreto; la gente no tiene por qué saberlo.
-	Smalltalk08					=	"SVM_9_Smalltalk08"					;// ...no volverá a suceder...
+	Smalltalk06					=	"SVM_9_Smalltalk06"					;// ...era evidente que habrÃ­a problemas...
+	Smalltalk07					=	"SVM_9_Smalltalk07"					;// ...pero sÃ© discreto; la gente no tiene por quÃ© saberlo.
+	Smalltalk08					=	"SVM_9_Smalltalk08"					;// ...no volverÃ¡ a suceder...
 	Smalltalk09					=	"SVM_9_Smalltalk09"					;// ...debe haber algo de cierto en esa historia...
 	Smalltalk10					=	"SVM_9_Smalltalk10"					;// ...has de tener cuidado con lo que dices a la gente...
 	Smalltalk11					=	"SVM_9_Smalltalk11"					;// ...mientras no me vea implicado...
-	Smalltalk12					=	"SVM_9_Smalltalk12"					;// ...no deberías creerte todo lo que oyes...
-	Smalltalk13					=	"SVM_9_Smalltalk13"					;// ...no me gustaría estar en su lugar...
+	Smalltalk12					=	"SVM_9_Smalltalk12"					;// ...no deberÃ­as creerte todo lo que oyes...
+	Smalltalk13					=	"SVM_9_Smalltalk13"					;// ...no me gustarÃ­a estar en su lugar...
 	Smalltalk14					=	"SVM_9_Smalltalk14"					;// ...lo mismo de siempre...
 	Smalltalk15					=	"SVM_9_Smalltalk15"					;// ...algunos no aprenden...
-	Smalltalk16					=	"SVM_9_Smalltalk16"					;// ...hubo un tiempo en que las cosas habrían sucedido de manera muy distinta...
+	Smalltalk16					=	"SVM_9_Smalltalk16"					;// ...hubo un tiempo en que las cosas habrÃ­an sucedido de manera muy distinta...
 	Smalltalk17					=	"SVM_9_Smalltalk17"					;// ...la gente no para de hablar...
 	Smalltalk18					=	"SVM_9_Smalltalk18"					;// ...ya no hago caso de los chismorreos...
-	Smalltalk19					=	"SVM_9_Smalltalk19"					;// ...confías en alguien y te metes en un lío; eso es lo que pasa...
-	Smalltalk20					=	"SVM_9_Smalltalk20"					;// ...me extraña que vaya a cambiar...
-	Smalltalk21					=	"SVM_9_Smalltalk21"					;// ...seguramente tengas razón...
-	Smalltalk22					=	"SVM_9_Smalltalk22"					;// ...espera. Será mejor no apresurarse...
-	Smalltalk23					=	"SVM_9_Smalltalk23"					;// ...creía que eso se había resuelto hace mucho...
+	Smalltalk19					=	"SVM_9_Smalltalk19"					;// ...confÃ­as en alguien y te metes en un lÃ­o; eso es lo que pasa...
+	Smalltalk20					=	"SVM_9_Smalltalk20"					;// ...me extraÃ±a que vaya a cambiar...
+	Smalltalk21					=	"SVM_9_Smalltalk21"					;// ...seguramente tengas razÃ³n...
+	Smalltalk22					=	"SVM_9_Smalltalk22"					;// ...espera. SerÃ¡ mejor no apresurarse...
+	Smalltalk23					=	"SVM_9_Smalltalk23"					;// ...creÃ­a que eso se habÃ­a resuelto hace mucho...
 	Smalltalk24					=	"SVM_9_Smalltalk24"					;// ...hablemos de otra cosa...
 	Om							= 	"SVM_9_Om"							;// Ommm   
 };
@@ -1458,133 +1458,133 @@ instance SVM_9 (C_SVM)				// brummig		   gemütlicher Hüne, Besonnen, Brummiger B
 
 instance SVM_10	(C_SVM)				// Schlau, verschlagen,	heimlich, Zwielichtig, zynisch,	intrigant Dealer (RAVEN, KALOM)
 {
-	StopMagic					=	"SVM_10_StopMagic"						;//¡Basta de hechicería!
-	ISaidStopMagic				=	"SVM_10_ISaidStopMagic"					;//¡¡¡Detenla ahora mismo!!!
-	WeaponDown					=	"SVM_10_WeaponDown"						;//¡Deja esa arma!
-	ISaidWeaponDown				=	"SVM_10_ISaidWeaponDown"				;//¿Qué crees que haces? ¿Quieres bronca conmigo?
-	WatchYourAim				=	"SVM_10_WatchYourAim"					;//¡Guarda eso o te lo guardo yo!
-	WatchYourAimAngry			=	"SVM_10_WatchYourAimAngry"				;//¡Si quieres líos, sigue apuntándome!
-	WhatAreYouDoing				=	"SVM_10_WhatAreYouDoing"				;//¡Eh! ¡Cuidado! ¡Si lo haces una vez más, te la cargas!
-	LetsForgetOurLittleFight	=	"SVM_10_LetsForgetOurLittleFight"		;//¡Eh, tío! ¡Olvidemos nuestra discusión sin importancia! ¿Vale?
-	Strange						=	"SVM_10_Strange"						;//¡Sal! ¡Que se te vea!
-	DieMonster					=	"SVM_10_DieMonster"						;//¡Bestias asquerosas!
-	DieMortalEnemy				=	"SVM_10_DieMortalEnemy"					;//¡Te la has cargado!
-	NowWait						=	"SVM_10_NowWait"						;//¡Te toca pagar!
-	YouStillNotHaveEnough		=	"SVM_10_YouStillNotHaveEnough"			;//¡Parece que quieres que te parta la cara!
-	YouAskedForIt				=	"SVM_10_YouAskedForIt"					;//¡Así lo has querido!
-	NowWaitIntruder				= 	"SVM_10_NowWaitIntruder"				;//¡Te vas a enterar, intruso!
-	IWillTeachYouRespectForForeignProperty	=	"SVM_10_IWillTeachYouRespectForForeignProperty"	;//Te lo advertí. ¡Si tocas mis cosas, te metes en un lío!
-	DirtyThief					=	"SVM_10_DirtyThief"						;//¡Ladrón! ¡Voy a acabar contigo!
-	YouAttackedMyCharge			=	"SVM_10_YouAttackedMyCharge"			;//¡Nadie se mete con mis chicos!
-	YouKilledOneOfUs			=	"SVM_10_YouKilledOneOfUs"				;//¡Has matado a uno de mis hombres! ¡Te voy a matar!
-	Dead						=	"SVM_10_Dead"							;//¡Aaargh!
+	StopMagic					=	"SVM_10_StopMagic"						;//Â¡Basta de hechicerÃ­a!
+	ISaidStopMagic				=	"SVM_10_ISaidStopMagic"					;//Â¡Â¡Â¡Detenla ahora mismo!!!
+	WeaponDown					=	"SVM_10_WeaponDown"						;//Â¡Deja esa arma!
+	ISaidWeaponDown				=	"SVM_10_ISaidWeaponDown"				;//Â¿QuÃ© crees que haces? Â¿Quieres bronca conmigo?
+	WatchYourAim				=	"SVM_10_WatchYourAim"					;//Â¡Guarda eso o te lo guardo yo!
+	WatchYourAimAngry			=	"SVM_10_WatchYourAimAngry"				;//Â¡Si quieres lÃ­os, sigue apuntÃ¡ndome!
+	WhatAreYouDoing				=	"SVM_10_WhatAreYouDoing"				;//Â¡Eh! Â¡Cuidado! Â¡Si lo haces una vez mÃ¡s, te la cargas!
+	LetsForgetOurLittleFight	=	"SVM_10_LetsForgetOurLittleFight"		;//Â¡Eh, tÃ­o! Â¡Olvidemos nuestra discusiÃ³n sin importancia! Â¿Vale?
+	Strange						=	"SVM_10_Strange"						;//Â¡Sal! Â¡Que se te vea!
+	DieMonster					=	"SVM_10_DieMonster"						;//Â¡Bestias asquerosas!
+	DieMortalEnemy				=	"SVM_10_DieMortalEnemy"					;//Â¡Te la has cargado!
+	NowWait						=	"SVM_10_NowWait"						;//Â¡Te toca pagar!
+	YouStillNotHaveEnough		=	"SVM_10_YouStillNotHaveEnough"			;//Â¡Parece que quieres que te parta la cara!
+	YouAskedForIt				=	"SVM_10_YouAskedForIt"					;//Â¡AsÃ­ lo has querido!
+	NowWaitIntruder				= 	"SVM_10_NowWaitIntruder"				;//Â¡Te vas a enterar, intruso!
+	IWillTeachYouRespectForForeignProperty	=	"SVM_10_IWillTeachYouRespectForForeignProperty"	;//Te lo advertÃ­. Â¡Si tocas mis cosas, te metes en un lÃ­o!
+	DirtyThief					=	"SVM_10_DirtyThief"						;//Â¡LadrÃ³n! Â¡Voy a acabar contigo!
+	YouAttackedMyCharge			=	"SVM_10_YouAttackedMyCharge"			;//Â¡Nadie se mete con mis chicos!
+	YouKilledOneOfUs			=	"SVM_10_YouKilledOneOfUs"				;//Â¡Has matado a uno de mis hombres! Â¡Te voy a matar!
+	Dead						=	"SVM_10_Dead"							;//Â¡Aaargh!
 	Aargh_1						=	"SVM_10_Aargh_1"						;//Aargh
 	Aargh_2						=	"SVM_10_Aargh_2"						;//Aargh
 	Aargh_3						=	"SVM_10_Aargh_3"						;//Aargh
-	Berzerk						=	"SVM_10_Berzerk"						;//¡¡¡UUAAARRGGGHHH!!!
-	YoullBeSorryForThis			=	"SVM_10_YoullBeSorryForThis"			;//¡Te vas a enterar! ¡Bastardo!
-	YesYes						=	"SVM_10_YesYes"							;//¡Sí, sí! ¡Tranquilo! ¡Has vencido!
-	ShitWhatAMonster			=	"SVM_10_ShitWhatAMonster"				;//¡Menudo monstruo! ¡Corre todo lo que puedas!
-	Help						=	"SVM_10_Help"							;//¡Retirada!
-	WeWillMeetAgain				=	"SVM_10_WeWillMeetAgain"				;//¡¡Ya nos veremos!!
-	NeverTryThatAgain			=	"SVM_10_NeverTryThatAgain"				;//Si vuelves a intentar eso lo lamentarás.
-	ITakeYourWeapon				=	"SVM_10_ITakeYourWeapon"				;//¡Esta arma ahora es mía!
-	ITookYourOre				=	"SVM_10_ITookYourOre"					;//¡Me quedaré con parte de tu mineral!
-	ShitNoOre					=	"SVM_10_ShitNoOre"						;//¡Maldita sea, no tiene mineral!
-	HandsOff					=	"SVM_10_HandsOff"						;//¡Canalla! ¡Aparta tus manazas!
-	GetOutOfHere				=	"SVM_10_GetOutOfHere"					;//¡Lárgate de aquí!
-	YouViolatedForbiddenTerritory=	"SVM_10_YouViolatedForbiddenTerritory"	;//¡Eh! ¿De dónde has salido?
-	YouWannaFoolMe				=	"SVM_10_YouWannaFoolMe"					;//¡Debes creer que soy tonto!
-	WhatsThisSupposedToBe		=	"SVM_10_WhatsThisSupposedToBe"			;//¡Eh, tú! ¿Qué haces rondando por aquí?
-	WhyAreYouInHere				=	"SVM_10_WhyYouAreInHere"				;//¡Sal o llamo a los guardias!
-	WhatDidYouInThere			=	"SVM_10_WhatDidYouInThere"				;//¿Qué has estado haciendo aquí dentro?
-	WiseMove					=	"SVM_10_WiseMove"						;//¡Has tenido suerte!
-	Alarm						=	"SVM_10_Alarm"							;//¡Guardias! ¡Por aquí!
-	IntruderAlert				= 	"SVM_10_IntruderAlert"					;//¡¡¡ALERTA!!! ¡¡¡INTRUSO!!!
-	BehindYou					=	"SVM_10_BehindYou"						;//¡Detrás de ti!
-	TheresAFight				=	"SVM_10_TheresAFight"					;//¡Ah, una pelea!
-	HeyHeyHey					=	"SVM_10_HeyHeyHey"						;//¡Más fuerte!
-	CheerFight					=	"SVM_10_CheerFight"						;//¡Sin piedad!
-	CheerFriend					=	"SVM_10_CheerFriend"					;//¡¡Acaba con él!!
-	Ooh							=	"SVM_10_Ooh"							;//¡No se lo consientas!
-	YeahWellDone				=	"SVM_10_YeahWellDone"					;//¡Dale en la boca!
-	RunCoward					=	"SVM_10_RunCoward"						;//¡Vuelve, cobarde!
-	HeDefeatedHim				=	"SVM_10_HeDefeatedHim"					;//Un poco de viento y habría caído solo.
-	HeDeservedIt				=	"SVM_10_HeDeservedIt"					;//¡Se lo merece!
-	HeKilledHim					=	"SVM_10_HeKilledHim"					;//¡Has firmado tu sentencia de muerte! ¡Eso te enseñará a no ir por ahí matando gente!
-	ItWasAGoodFight				=	"SVM_10_ItWasAGoodFight"				;//¡Le has dado una lección!
+	Berzerk						=	"SVM_10_Berzerk"						;//Â¡Â¡Â¡UUAAARRGGGHHH!!!
+	YoullBeSorryForThis			=	"SVM_10_YoullBeSorryForThis"			;//Â¡Te vas a enterar! Â¡Bastardo!
+	YesYes						=	"SVM_10_YesYes"							;//Â¡SÃ­, sÃ­! Â¡Tranquilo! Â¡Has vencido!
+	ShitWhatAMonster			=	"SVM_10_ShitWhatAMonster"				;//Â¡Menudo monstruo! Â¡Corre todo lo que puedas!
+	Help						=	"SVM_10_Help"							;//Â¡Retirada!
+	WeWillMeetAgain				=	"SVM_10_WeWillMeetAgain"				;//Â¡Â¡Ya nos veremos!!
+	NeverTryThatAgain			=	"SVM_10_NeverTryThatAgain"				;//Si vuelves a intentar eso lo lamentarÃ¡s.
+	ITakeYourWeapon				=	"SVM_10_ITakeYourWeapon"				;//Â¡Esta arma ahora es mÃ­a!
+	ITookYourOre				=	"SVM_10_ITookYourOre"					;//Â¡Me quedarÃ© con parte de tu mineral!
+	ShitNoOre					=	"SVM_10_ShitNoOre"						;//Â¡Maldita sea, no tiene mineral!
+	HandsOff					=	"SVM_10_HandsOff"						;//Â¡Canalla! Â¡Aparta tus manazas!
+	GetOutOfHere				=	"SVM_10_GetOutOfHere"					;//Â¡LÃ¡rgate de aquÃ­!
+	YouViolatedForbiddenTerritory=	"SVM_10_YouViolatedForbiddenTerritory"	;//Â¡Eh! Â¿De dÃ³nde has salido?
+	YouWannaFoolMe				=	"SVM_10_YouWannaFoolMe"					;//Â¡Debes creer que soy tonto!
+	WhatsThisSupposedToBe		=	"SVM_10_WhatsThisSupposedToBe"			;//Â¡Eh, tÃº! Â¿QuÃ© haces rondando por aquÃ­?
+	WhyAreYouInHere				=	"SVM_10_WhyYouAreInHere"				;//Â¡Sal o llamo a los guardias!
+	WhatDidYouInThere			=	"SVM_10_WhatDidYouInThere"				;//Â¿QuÃ© has estado haciendo aquÃ­ dentro?
+	WiseMove					=	"SVM_10_WiseMove"						;//Â¡Has tenido suerte!
+	Alarm						=	"SVM_10_Alarm"							;//Â¡Guardias! Â¡Por aquÃ­!
+	IntruderAlert				= 	"SVM_10_IntruderAlert"					;//Â¡Â¡Â¡ALERTA!!! Â¡Â¡Â¡INTRUSO!!!
+	BehindYou					=	"SVM_10_BehindYou"						;//Â¡DetrÃ¡s de ti!
+	TheresAFight				=	"SVM_10_TheresAFight"					;//Â¡Ah, una pelea!
+	HeyHeyHey					=	"SVM_10_HeyHeyHey"						;//Â¡MÃ¡s fuerte!
+	CheerFight					=	"SVM_10_CheerFight"						;//Â¡Sin piedad!
+	CheerFriend					=	"SVM_10_CheerFriend"					;//Â¡Â¡Acaba con Ã©l!!
+	Ooh							=	"SVM_10_Ooh"							;//Â¡No se lo consientas!
+	YeahWellDone				=	"SVM_10_YeahWellDone"					;//Â¡Dale en la boca!
+	RunCoward					=	"SVM_10_RunCoward"						;//Â¡Vuelve, cobarde!
+	HeDefeatedHim				=	"SVM_10_HeDefeatedHim"					;//Un poco de viento y habrÃ­a caÃ­do solo.
+	HeDeservedIt				=	"SVM_10_HeDeservedIt"					;//Â¡Se lo merece!
+	HeKilledHim					=	"SVM_10_HeKilledHim"					;//Â¡Has firmado tu sentencia de muerte! Â¡Eso te enseÃ±arÃ¡ a no ir por ahÃ­ matando gente!
+	ItWasAGoodFight				=	"SVM_10_ItWasAGoodFight"				;//Â¡Le has dado una lecciÃ³n!
 	Awake						=	"SVM_10_Awake"							;//Aaaau (bostezo)
-	FriendlyGreetings			=	"SVM_10_FriendlyGreetings"				;//¡Hola!
-	ALGreetings					=	"SVM_10_ALGreetings"					;//¡Por Gómez!
-	MageGreetings				=	"SVM_10_MageGreetings"					;//¡Por el honor de la magia!
-	SectGreetings				=	"SVM_10_SectGreetings"					;//¡Despierta!
-	ThereHeIs					= 	"SVM_10_ThereHeIs"						;//Está allí.
-	NoLearnNoPoints				= 	"SVM_10_NoLearnNoPoints"				;//No puedo enseñarte nada. No tienes suficiente experiencia.
-	NoLearnOverMax				= 	"SVM_10_NoLearnOverMax"					;//Tus posibilidades no dan más de sí. Deberías aprender algo diferente.
-	NoLearnYouAlreadyKnow		=	"SVM_10_NoLearnYouAlreadyKnow"			;//¡Tienes que llegar al nivel avanzado antes de convertirte en maestro!
-	NoLearnYoureBetter			=	"SVM_10_NoLearnYoureBetter"				;//¡Ya estás por encima de ese nivel!
-	HeyYou						=	"SVM_10_HeyYou"							;//¡Oye, tú!
-	NotNow						=	"SVM_10_NotNow"							;//¡Ahora no!
-	WhatDoYouWant				=	"SVM_10_WhatDoYouWant"					;//¿Qué quieres?
-	ISaidWhatDoYouWant			=	"SVM_10_ISaidWhatDoYouWant"				;//¿Puedo ayudarte?
-	MakeWay						=	"SVM_10_MakeWay"						;//Déjame pasar.
-	OutOfMyWay					=	"SVM_10_OutOfMyWay"						;//¡Quítate de en medio!
-	YouDeafOrWhat				=	"SVM_10_YouDeafOrWhat"					;//¿Quieres que te lo haga entender a golpes? ¡Largo de aquí!
-	LookingForTroubleAgain		=	"SVM_10_LookingForTroubleAgain"			;//¿Otra vez buscas bronca conmigo?
-	LookAway					=	"SVM_10_LookAway"						;//En realidad no estoy aquí...
-	OkayKeepIt					=	"SVM_10_OkayKeepIt"						;//¡Quédatelo!
-	WhatsThat					=	"SVM_10_WhatsThat"						;//¿Qué ha sido eso?
-	ThatsMyWeapon				=	"SVM_10_ThatsMyWeapon"					;//¡Devuélveme mi arma!
-	GiveItToMe					=	"SVM_10_GiveItToMe"						;//¡Devuélvemela, tío!
-	YouCanKeeptheCrap			=	"SVM_10_YouCanKeeptheCrap"				;//¡No importa! ¡No voy a necesitarla!
-	TheyKilledMyFriend			=	"SVM_10_TheyKilledMyFriend"				;//Se han cargado a uno de los nuestros. ¡Estoy muy furioso!
-	YouDisturbedMySlumber		=	"SVM_10_YouDisturbedMySlumber"			;//¿Por qué me has despertado?
-	SuckerGotSome				=	"SVM_10_SuckerGotSome"					;//¿Eh? ¿Te han pegado una buena paliza? ¡Te lo mereces!
-	SuckerDefeatedEBr			=	"SVM_10_SuckerDefeatedEBr"				;//¡Has zurrado a un magnate del mineral!
-	SuckerDefeatedGur			=	"SVM_10_SuckerDefeatedGur"				;//Has vencido a uno de los gurús.
+	FriendlyGreetings			=	"SVM_10_FriendlyGreetings"				;//Â¡Hola!
+	ALGreetings					=	"SVM_10_ALGreetings"					;//Â¡Por GÃ³mez!
+	MageGreetings				=	"SVM_10_MageGreetings"					;//Â¡Por el honor de la magia!
+	SectGreetings				=	"SVM_10_SectGreetings"					;//Â¡Despierta!
+	ThereHeIs					= 	"SVM_10_ThereHeIs"						;//EstÃ¡ allÃ­.
+	NoLearnNoPoints				= 	"SVM_10_NoLearnNoPoints"				;//No puedo enseÃ±arte nada. No tienes suficiente experiencia.
+	NoLearnOverMax				= 	"SVM_10_NoLearnOverMax"					;//Tus posibilidades no dan mÃ¡s de sÃ­. DeberÃ­as aprender algo diferente.
+	NoLearnYouAlreadyKnow		=	"SVM_10_NoLearnYouAlreadyKnow"			;//Â¡Tienes que llegar al nivel avanzado antes de convertirte en maestro!
+	NoLearnYoureBetter			=	"SVM_10_NoLearnYoureBetter"				;//Â¡Ya estÃ¡s por encima de ese nivel!
+	HeyYou						=	"SVM_10_HeyYou"							;//Â¡Oye, tÃº!
+	NotNow						=	"SVM_10_NotNow"							;//Â¡Ahora no!
+	WhatDoYouWant				=	"SVM_10_WhatDoYouWant"					;//Â¿QuÃ© quieres?
+	ISaidWhatDoYouWant			=	"SVM_10_ISaidWhatDoYouWant"				;//Â¿Puedo ayudarte?
+	MakeWay						=	"SVM_10_MakeWay"						;//DÃ©jame pasar.
+	OutOfMyWay					=	"SVM_10_OutOfMyWay"						;//Â¡QuÃ­tate de en medio!
+	YouDeafOrWhat				=	"SVM_10_YouDeafOrWhat"					;//Â¿Quieres que te lo haga entender a golpes? Â¡Largo de aquÃ­!
+	LookingForTroubleAgain		=	"SVM_10_LookingForTroubleAgain"			;//Â¿Otra vez buscas bronca conmigo?
+	LookAway					=	"SVM_10_LookAway"						;//En realidad no estoy aquÃ­...
+	OkayKeepIt					=	"SVM_10_OkayKeepIt"						;//Â¡QuÃ©datelo!
+	WhatsThat					=	"SVM_10_WhatsThat"						;//Â¿QuÃ© ha sido eso?
+	ThatsMyWeapon				=	"SVM_10_ThatsMyWeapon"					;//Â¡DevuÃ©lveme mi arma!
+	GiveItToMe					=	"SVM_10_GiveItToMe"						;//Â¡DevuÃ©lvemela, tÃ­o!
+	YouCanKeeptheCrap			=	"SVM_10_YouCanKeeptheCrap"				;//Â¡No importa! Â¡No voy a necesitarla!
+	TheyKilledMyFriend			=	"SVM_10_TheyKilledMyFriend"				;//Se han cargado a uno de los nuestros. Â¡Estoy muy furioso!
+	YouDisturbedMySlumber		=	"SVM_10_YouDisturbedMySlumber"			;//Â¿Por quÃ© me has despertado?
+	SuckerGotSome				=	"SVM_10_SuckerGotSome"					;//Â¿Eh? Â¿Te han pegado una buena paliza? Â¡Te lo mereces!
+	SuckerDefeatedEBr			=	"SVM_10_SuckerDefeatedEBr"				;//Â¡Has zurrado a un magnate del mineral!
+	SuckerDefeatedGur			=	"SVM_10_SuckerDefeatedGur"				;//Has vencido a uno de los gurÃºs.
 	SuckerDefeatedMage			=	"SVM_10_SuckerDefeatedMage"				;//Para vencer a un mago...
-	SuckerDefeatedNov_Guard		= 	"SVM_10_SuckerDefeatedNov_Guard"		;//¡Antes de pegar a los novicios deberías averiguar a quién estás molestando!
-	SuckerDefeatedVlk_Guard		= 	"SVM_10_SuckerDefeatedVlk_Guard"		;//¡Tengo que mantener el orden! ¡Deja en paz a mi gente!
-	YouDefeatedMyComrade		=	"SVM_10_YouDefeatedMyComrade"			;//¡Has pegado a un amigo mío!
-	YouDefeatedNOV_Guard		=	"SVM_10_YouDefeatedNOV_Guard"			;//¡Vuelve a poner las manos sobre un novicio y lo lamentarás!
-	YouDefeatedVLK_Guard		=	"SVM_10_YouDefeatedVLK_Guard"			;//Si tocas a uno de mis protegidos, te costará caro.
-	YouStoleFromMe				=	"SVM_10_YouStoleFromMe"					;//¡No vuelvas a intentarlo, ladrón!
-	YouStoleFromUs				=	"SVM_10_YouStoleFromUs"					;//Tienes algo que nos pertenece. ¡Será mejor que lo devuelvas!
-	YouStoleFromEBr				=	"SVM_10_YouStoleFromEBr"				;//¡Tío! ¡Has robado a los magnates del mineral! ¡Estarán furiosos!
-	YouStoleFromGur				=	"SVM_10_YouStoleFromGur"				;//Has levantando unas cuantas cosas a los gurús. ¡No obstante, no fue muy inteligente que te pillaran haciéndolo!
-	StoleFromMage				=	"SVM_10_StoleFromMage"					;//Has levantando un par de cosas a los magos, ¿verdad?
-	YouKilledMyFriend			=	"SVM_10_YouKilledMyFriend"				;//¡Uno de los nuestros pesa sobre tu conciencia! ¡Si cometes otro error, te tocará a ti!
-	YouKilledEBr				=	"SVM_10_YouKilledEBr"					;//¡Has matado a un magnate del mineral! Tío, ¿estás zumbado?
-	YouKilledGur				=	"SVM_10_YouKilledGur"					;//¡Has matado a un gurú! ¡No me lo puedo creer!
-	YouKilledMage				=	"SVM_10_YouKilledMage"					;//¡Has matado a un mago! ¿Cómo tienes pensado justificarlo?
+	SuckerDefeatedNov_Guard		= 	"SVM_10_SuckerDefeatedNov_Guard"		;//Â¡Antes de pegar a los novicios deberÃ­as averiguar a quiÃ©n estÃ¡s molestando!
+	SuckerDefeatedVlk_Guard		= 	"SVM_10_SuckerDefeatedVlk_Guard"		;//Â¡Tengo que mantener el orden! Â¡Deja en paz a mi gente!
+	YouDefeatedMyComrade		=	"SVM_10_YouDefeatedMyComrade"			;//Â¡Has pegado a un amigo mÃ­o!
+	YouDefeatedNOV_Guard		=	"SVM_10_YouDefeatedNOV_Guard"			;//Â¡Vuelve a poner las manos sobre un novicio y lo lamentarÃ¡s!
+	YouDefeatedVLK_Guard		=	"SVM_10_YouDefeatedVLK_Guard"			;//Si tocas a uno de mis protegidos, te costarÃ¡ caro.
+	YouStoleFromMe				=	"SVM_10_YouStoleFromMe"					;//Â¡No vuelvas a intentarlo, ladrÃ³n!
+	YouStoleFromUs				=	"SVM_10_YouStoleFromUs"					;//Tienes algo que nos pertenece. Â¡SerÃ¡ mejor que lo devuelvas!
+	YouStoleFromEBr				=	"SVM_10_YouStoleFromEBr"				;//Â¡TÃ­o! Â¡Has robado a los magnates del mineral! Â¡EstarÃ¡n furiosos!
+	YouStoleFromGur				=	"SVM_10_YouStoleFromGur"				;//Has levantando unas cuantas cosas a los gurÃºs. Â¡No obstante, no fue muy inteligente que te pillaran haciÃ©ndolo!
+	StoleFromMage				=	"SVM_10_StoleFromMage"					;//Has levantando un par de cosas a los magos, Â¿verdad?
+	YouKilledMyFriend			=	"SVM_10_YouKilledMyFriend"				;//Â¡Uno de los nuestros pesa sobre tu conciencia! Â¡Si cometes otro error, te tocarÃ¡ a ti!
+	YouKilledEBr				=	"SVM_10_YouKilledEBr"					;//Â¡Has matado a un magnate del mineral! TÃ­o, Â¿estÃ¡s zumbado?
+	YouKilledGur				=	"SVM_10_YouKilledGur"					;//Â¡Has matado a un gurÃº! Â¡No me lo puedo creer!
+	YouKilledMage				=	"SVM_10_YouKilledMage"					;//Â¡Has matado a un mago! Â¿CÃ³mo tienes pensado justificarlo?
 	YouKilledOCfolk				=	"SVM_10_YouKilledOCfolk"				;//Ha muerto un miembro del Campamento Viejo, y se ha relacionado tu nombre con la muerte...
-	YouKilledNCfolk				=	"SVM_10_YouKilledNCfolk"				;//¡El Campamento Nuevo ha sufrido una pérdida trágica, y parece que estás implicado!
-	YouKilledPSIfolk			=	"SVM_10_YouKilledPSIfolk"				;//¡La hermandad tiene un fiel menos, y su muerte pesa sobre tu conciencia!
-	GetThingsRight				=	"SVM_10_GetThingsRight"					;//¡No será fácil solucionar esto!
-	YouDefeatedMeWell			=	"SVM_10_YouDefeatedMeWell"				;//¡Felicidades! Has vencido. Ha sido una buena pelea.
-	Smalltalk01					=	"SVM_10_Smalltalk01"					;// ...si tú crees...
+	YouKilledNCfolk				=	"SVM_10_YouKilledNCfolk"				;//Â¡El Campamento Nuevo ha sufrido una pÃ©rdida trÃ¡gica, y parece que estÃ¡s implicado!
+	YouKilledPSIfolk			=	"SVM_10_YouKilledPSIfolk"				;//Â¡La hermandad tiene un fiel menos, y su muerte pesa sobre tu conciencia!
+	GetThingsRight				=	"SVM_10_GetThingsRight"					;//Â¡No serÃ¡ fÃ¡cil solucionar esto!
+	YouDefeatedMeWell			=	"SVM_10_YouDefeatedMeWell"				;//Â¡Felicidades! Has vencido. Ha sido una buena pelea.
+	Smalltalk01					=	"SVM_10_Smalltalk01"					;// ...si tÃº crees...
 	Smalltalk02					=	"SVM_10_Smalltalk02"					;// ...tal vez...
 	Smalltalk03					=	"SVM_10_Smalltalk03"					;// ...eso no fue muy inteligente...
-	Smalltalk04					=	"SVM_10_Smalltalk04"					;// ...será mejor que me mantenga al margen...
+	Smalltalk04					=	"SVM_10_Smalltalk04"					;// ...serÃ¡ mejor que me mantenga al margen...
 	Smalltalk05					=	"SVM_10_Smalltalk05"					;// ...en realidad no es mi problema...
-	Smalltalk06					=	"SVM_10_Smalltalk06"					;// ...era evidente que habría problemas...
-	Smalltalk07					=	"SVM_10_Smalltalk07"					;// ...pero sé discreto; la gente no tiene por qué saberlo.
-	Smalltalk08					=	"SVM_10_Smalltalk08"					;// ...no volverá a suceder...
+	Smalltalk06					=	"SVM_10_Smalltalk06"					;// ...era evidente que habrÃ­a problemas...
+	Smalltalk07					=	"SVM_10_Smalltalk07"					;// ...pero sÃ© discreto; la gente no tiene por quÃ© saberlo.
+	Smalltalk08					=	"SVM_10_Smalltalk08"					;// ...no volverÃ¡ a suceder...
 	Smalltalk09					=	"SVM_10_Smalltalk09"					;// ...debe haber algo de cierto en esa historia...
 	Smalltalk10					=	"SVM_10_Smalltalk10"					;// ...has de tener cuidado con lo que dices a la gente...
 	Smalltalk11					=	"SVM_10_Smalltalk11"					;// ...mientras no me vea implicado...
-	Smalltalk12					=	"SVM_10_Smalltalk12"					;// ...no deberías creerte todo lo que oyes...
-	Smalltalk13					=	"SVM_10_Smalltalk13"					;// ...no me gustaría estar en su lugar...
+	Smalltalk12					=	"SVM_10_Smalltalk12"					;// ...no deberÃ­as creerte todo lo que oyes...
+	Smalltalk13					=	"SVM_10_Smalltalk13"					;// ...no me gustarÃ­a estar en su lugar...
 	Smalltalk14					=	"SVM_10_Smalltalk14"					;// ...lo mismo de siempre...
 	Smalltalk15					=	"SVM_10_Smalltalk15"					;// ...algunos no aprenden...
-	Smalltalk16					=	"SVM_10_Smalltalk16"					;// ...hubo un tiempo en que las cosas habrían sucedido de manera muy distinta...
+	Smalltalk16					=	"SVM_10_Smalltalk16"					;// ...hubo un tiempo en que las cosas habrÃ­an sucedido de manera muy distinta...
 	Smalltalk17					=	"SVM_10_Smalltalk17"					;// ...la gente no para de hablar...
 	Smalltalk18					=	"SVM_10_Smalltalk18"					;// ...ya no hago caso de los chismorreos...
-	Smalltalk19					=	"SVM_10_Smalltalk19"					;// ...confías en alguien y te metes en un lío; eso es lo que pasa...
-	Smalltalk20					=	"SVM_10_Smalltalk20"					;// ...me extraña que vaya a cambiar...
-	Smalltalk21					=	"SVM_10_Smalltalk21"					;// ...seguramente tengas razón...
-	Smalltalk22					=	"SVM_10_Smalltalk22"					;// ...espera. Será mejor no apresurarse...
-	Smalltalk23					=	"SVM_10_Smalltalk23"					;// ...creía que eso se había resuelto hace mucho...
+	Smalltalk19					=	"SVM_10_Smalltalk19"					;// ...confÃ­as en alguien y te metes en un lÃ­o; eso es lo que pasa...
+	Smalltalk20					=	"SVM_10_Smalltalk20"					;// ...me extraÃ±a que vaya a cambiar...
+	Smalltalk21					=	"SVM_10_Smalltalk21"					;// ...seguramente tengas razÃ³n...
+	Smalltalk22					=	"SVM_10_Smalltalk22"					;// ...espera. SerÃ¡ mejor no apresurarse...
+	Smalltalk23					=	"SVM_10_Smalltalk23"					;// ...creÃ­a que eso se habÃ­a resuelto hace mucho...
 	Smalltalk24					=	"SVM_10_Smalltalk24"					;// ...hablemos de otra cosa...
 	Om							= 	"SVM_10_Om"							;//Ommm
 };
@@ -1592,403 +1592,403 @@ instance SVM_10	(C_SVM)				// Schlau, verschlagen,	heimlich, Zwielichtig, zynisc
 
 
 //////////////////////////////////////////
-instance SVM_11	(C_SVM)				//Profi				Ruhig, abgezockt, Vernünftig aberknallhart
+instance SVM_11	(C_SVM)				//Profi				Ruhig, abgezockt, VernÃ¼nftig aberknallhart
 {
-	StopMagic					=	"SVM_11_StopMagic"						;//¡No intentes ninguna hechicería cerca de mí!
-	ISaidStopMagic				=	"SVM_11_ISaidStopMagic"					;//¡Te digo que pares! ¡Ahora mismo!
-	WeaponDown					=	"SVM_11_WeaponDown"						;//¡Si buscas bronca, ven aquí!
-	ISaidWeaponDown				=	"SVM_11_ISaidWeaponDown"				;//¡Aparta eso o te la cargas!
-	WatchYourAim				=	"SVM_11_WatchYourAim"					;//¡Deja eso!
-	WatchYourAimAngry			=	"SVM_11_WatchYourAimAngry"				;//¿Así que quieres bronca? ¿Estás seguro?
-	WhatAreYouDoing				=	"SVM_11_WhatAreYouDoing"				;//¿Qué haces? ¡Basta!
-	LetsForgetOurLittleFight	=	"SVM_11_LetsForgetOurLittleFight"		;//De acuerdo, olvidemos nuestra pequeña discusión.
-	Strange						=	"SVM_11_Strange"						;//¡Mmh! ¡Maldita sea? ¿Dónde se ha metido?
-	DieMonster					=	"SVM_11_DieMonster"						;//¡Morirán si siguen cruzándose en mi camino!
+	StopMagic					=	"SVM_11_StopMagic"						;//Â¡No intentes ninguna hechicerÃ­a cerca de mÃ­!
+	ISaidStopMagic				=	"SVM_11_ISaidStopMagic"					;//Â¡Te digo que pares! Â¡Ahora mismo!
+	WeaponDown					=	"SVM_11_WeaponDown"						;//Â¡Si buscas bronca, ven aquÃ­!
+	ISaidWeaponDown				=	"SVM_11_ISaidWeaponDown"				;//Â¡Aparta eso o te la cargas!
+	WatchYourAim				=	"SVM_11_WatchYourAim"					;//Â¡Deja eso!
+	WatchYourAimAngry			=	"SVM_11_WatchYourAimAngry"				;//Â¿AsÃ­ que quieres bronca? Â¿EstÃ¡s seguro?
+	WhatAreYouDoing				=	"SVM_11_WhatAreYouDoing"				;//Â¿QuÃ© haces? Â¡Basta!
+	LetsForgetOurLittleFight	=	"SVM_11_LetsForgetOurLittleFight"		;//De acuerdo, olvidemos nuestra pequeÃ±a discusiÃ³n.
+	Strange						=	"SVM_11_Strange"						;//Â¡Mmh! Â¡Maldita sea? Â¿DÃ³nde se ha metido?
+	DieMonster					=	"SVM_11_DieMonster"						;//Â¡MorirÃ¡n si siguen cruzÃ¡ndose en mi camino!
 	DieMortalEnemy				=	"SVM_11_DieMortalEnemy"					;//Si te haces enemigos, tienes que poder dominarlos. Muere.
-	NowWait						=	"SVM_11_NowWait"						;//¡No deberías haber hecho eso!
-	YouStillNotHaveEnough		=	"SVM_11_YouStillNotHaveEnough"			;//¿No te tumbé ya en una ocasión? Vuelta a empezar...
-	YouAskedForIt				=	"SVM_11_YouAskedForIt"					;//¡Si no escuchas, vas a sufrir!
-	NowWaitIntruder				= 	"SVM_11_NowWaitIntruder"				;//¡Eh, intruso! ¡Te voy a dar una lección!
-	IWillTeachYouRespectForForeignProperty	=	"SVM_11_IWillTeachYouRespectForForeignProperty"	;//¡Supongo que tendré que machacarte los dedos!
-	DirtyThief					=	"SVM_11_DirtyThief"						;//¡El robo no merece la pena!
-	YouAttackedMyCharge			=	"SVM_11_YouAttackedMyCharge"			;//¡Estás perturbando mi zona! ¡Tengo que acabar contigo!
-	YouKilledOneOfUs			=	"SVM_11_YouKilledOneOfUs"				;//¡Matar a uno de los nuestros ha sido tu último error!
-	Dead						=	"SVM_11_Dead"							;//¡Aaargh!
+	NowWait						=	"SVM_11_NowWait"						;//Â¡No deberÃ­as haber hecho eso!
+	YouStillNotHaveEnough		=	"SVM_11_YouStillNotHaveEnough"			;//Â¿No te tumbÃ© ya en una ocasiÃ³n? Vuelta a empezar...
+	YouAskedForIt				=	"SVM_11_YouAskedForIt"					;//Â¡Si no escuchas, vas a sufrir!
+	NowWaitIntruder				= 	"SVM_11_NowWaitIntruder"				;//Â¡Eh, intruso! Â¡Te voy a dar una lecciÃ³n!
+	IWillTeachYouRespectForForeignProperty	=	"SVM_11_IWillTeachYouRespectForForeignProperty"	;//Â¡Supongo que tendrÃ© que machacarte los dedos!
+	DirtyThief					=	"SVM_11_DirtyThief"						;//Â¡El robo no merece la pena!
+	YouAttackedMyCharge			=	"SVM_11_YouAttackedMyCharge"			;//Â¡EstÃ¡s perturbando mi zona! Â¡Tengo que acabar contigo!
+	YouKilledOneOfUs			=	"SVM_11_YouKilledOneOfUs"				;//Â¡Matar a uno de los nuestros ha sido tu Ãºltimo error!
+	Dead						=	"SVM_11_Dead"							;//Â¡Aaargh!
 	Aargh_1						=	"SVM_11_Aargh_1"						;//Aargh
 	Aargh_2						=	"SVM_11_Aargh_2"						;//Aargh
 	Aargh_3						=	"SVM_11_Aargh_3"						;//Aargh
-	Berzerk						=	"SVM_11_Berzerk"						;//¡¡¡UUAAARRGGGHHH!!!
-	YoullBeSorryForThis			=	"SVM_11_YoullBeSorryForThis"			;//¡No deberías haber hecho eso!
-	YesYes						=	"SVM_11_YesYes"							;//¡Vale, vale! ¡Tú ganas!
-	ShitWhatAMonster			=	"SVM_11_ShitWhatAMonster"				;//¡Éste es demasiado grande para mí!
-	Help						=	"SVM_11_Help"							;//¡Retirada!
-	WeWillMeetAgain				=	"SVM_11_WeWillMeetAgain"				;//¡Eso tendrá consecuencias, amigo!
-	NeverTryThatAgain			=	"SVM_11_NeverTryThatAgain"				;//¡No vuelvas a intentar eso!
-	ITakeYourWeapon				=	"SVM_11_ITakeYourWeapon"				;//¡Yo cuidaré tu arma mejor que tú!
-	ITookYourOre				=	"SVM_11_ITookYourOre"					;//¡Qué amable eres dejándome parte de tu mineral!
-	ShitNoOre					=	"SVM_11_ShitNoOre"						;//¡Nada, no hay mineral!
-	HandsOff					=	"SVM_11_HandsOff"						;//¡Aparta tus sucias manos!
-	GetOutOfHere				=	"SVM_11_GetOutOfHere"					;//¡Lárgate de aquí o haré que corras!
-	YouViolatedForbiddenTerritory=	"SVM_11_YouViolatedForbiddenTerritory"	;//Eh, ¿cómo has entrado aquí?
-	YouWannaFoolMe				=	"SVM_11_YouWannaFoolMe"					;//¡No conmigo, colega!
-	WhatsThisSupposedToBe		=	"SVM_11_WhatsThisSupposedToBe"			;//¿Qué se supone que sucede?
-	WhyAreYouInHere				=	"SVM_11_WhyYouAreInHere"				;//La cabaña es mía. ¡Lárgate o llamaré a los guardias!
-	WhatDidYouInThere			=	"SVM_11_WhatDidYouInThere"				;//¿Qué estabas haciendo ahí dentro? ¡Lárgate si no quieres que te sacuda!
-	WiseMove					=	"SVM_11_WiseMove"						;//¡Bien! ¡No vuelvas a hacerlo!
-	Alarm						=	"SVM_11_Alarm"							;//¡Guardias! ¡Por aquí!
-	IntruderAlert				= 	"SVM_11_IntruderAlert"					;//¡¡ALERTA!! ¡¡¡¡INTRUSO!!!!
-	BehindYou					=	"SVM_11_BehindYou"						;//¡Detrás de ti!
-	TheresAFight				=	"SVM_11_TheresAFight"					;//¡Veamos quién gana esta vez!
-	HeyHeyHey					=	"SVM_11_HeyHeyHey"						;//¡Venga, hazlo!
-	CheerFight					=	"SVM_11_CheerFight"						;//¡Deja de jugar con él!
-	CheerFriend					=	"SVM_11_CheerFriend"					;//Oh, venga, puedes con él, ¿no?
-	Ooh							=	"SVM_11_Ooh"							;//¡Oh! ¡No ha estado demasiado bien!
-	YeahWellDone				=	"SVM_11_YeahWellDone"					;//¡Mmh! No está mal.
-	RunCoward					=	"SVM_11_RunCoward"						;//¡No vuelvas a aparecer por aquí!
-	HeDefeatedHim				=	"SVM_11_HeDefeatedHim"					;//¡Buen golpe!
-	HeDeservedIt				=	"SVM_11_HeDeservedIt"					;//¡No importa! ¡Se lo merecía!
-	HeKilledHim					=	"SVM_11_HeKilledHim"					;//¡Lo has matado, y te has metido en un buen lío!
-	ItWasAGoodFight				=	"SVM_11_ItWasAGoodFight"				;//¡Muy bien! ¡Magnífica actuación!
+	Berzerk						=	"SVM_11_Berzerk"						;//Â¡Â¡Â¡UUAAARRGGGHHH!!!
+	YoullBeSorryForThis			=	"SVM_11_YoullBeSorryForThis"			;//Â¡No deberÃ­as haber hecho eso!
+	YesYes						=	"SVM_11_YesYes"							;//Â¡Vale, vale! Â¡TÃº ganas!
+	ShitWhatAMonster			=	"SVM_11_ShitWhatAMonster"				;//Â¡Ã‰ste es demasiado grande para mÃ­!
+	Help						=	"SVM_11_Help"							;//Â¡Retirada!
+	WeWillMeetAgain				=	"SVM_11_WeWillMeetAgain"				;//Â¡Eso tendrÃ¡ consecuencias, amigo!
+	NeverTryThatAgain			=	"SVM_11_NeverTryThatAgain"				;//Â¡No vuelvas a intentar eso!
+	ITakeYourWeapon				=	"SVM_11_ITakeYourWeapon"				;//Â¡Yo cuidarÃ© tu arma mejor que tÃº!
+	ITookYourOre				=	"SVM_11_ITookYourOre"					;//Â¡QuÃ© amable eres dejÃ¡ndome parte de tu mineral!
+	ShitNoOre					=	"SVM_11_ShitNoOre"						;//Â¡Nada, no hay mineral!
+	HandsOff					=	"SVM_11_HandsOff"						;//Â¡Aparta tus sucias manos!
+	GetOutOfHere				=	"SVM_11_GetOutOfHere"					;//Â¡LÃ¡rgate de aquÃ­ o harÃ© que corras!
+	YouViolatedForbiddenTerritory=	"SVM_11_YouViolatedForbiddenTerritory"	;//Eh, Â¿cÃ³mo has entrado aquÃ­?
+	YouWannaFoolMe				=	"SVM_11_YouWannaFoolMe"					;//Â¡No conmigo, colega!
+	WhatsThisSupposedToBe		=	"SVM_11_WhatsThisSupposedToBe"			;//Â¿QuÃ© se supone que sucede?
+	WhyAreYouInHere				=	"SVM_11_WhyYouAreInHere"				;//La cabaÃ±a es mÃ­a. Â¡LÃ¡rgate o llamarÃ© a los guardias!
+	WhatDidYouInThere			=	"SVM_11_WhatDidYouInThere"				;//Â¿QuÃ© estabas haciendo ahÃ­ dentro? Â¡LÃ¡rgate si no quieres que te sacuda!
+	WiseMove					=	"SVM_11_WiseMove"						;//Â¡Bien! Â¡No vuelvas a hacerlo!
+	Alarm						=	"SVM_11_Alarm"							;//Â¡Guardias! Â¡Por aquÃ­!
+	IntruderAlert				= 	"SVM_11_IntruderAlert"					;//Â¡Â¡ALERTA!! Â¡Â¡Â¡Â¡INTRUSO!!!!
+	BehindYou					=	"SVM_11_BehindYou"						;//Â¡DetrÃ¡s de ti!
+	TheresAFight				=	"SVM_11_TheresAFight"					;//Â¡Veamos quiÃ©n gana esta vez!
+	HeyHeyHey					=	"SVM_11_HeyHeyHey"						;//Â¡Venga, hazlo!
+	CheerFight					=	"SVM_11_CheerFight"						;//Â¡Deja de jugar con Ã©l!
+	CheerFriend					=	"SVM_11_CheerFriend"					;//Oh, venga, puedes con Ã©l, Â¿no?
+	Ooh							=	"SVM_11_Ooh"							;//Â¡Oh! Â¡No ha estado demasiado bien!
+	YeahWellDone				=	"SVM_11_YeahWellDone"					;//Â¡Mmh! No estÃ¡ mal.
+	RunCoward					=	"SVM_11_RunCoward"						;//Â¡No vuelvas a aparecer por aquÃ­!
+	HeDefeatedHim				=	"SVM_11_HeDefeatedHim"					;//Â¡Buen golpe!
+	HeDeservedIt				=	"SVM_11_HeDeservedIt"					;//Â¡No importa! Â¡Se lo merecÃ­a!
+	HeKilledHim					=	"SVM_11_HeKilledHim"					;//Â¡Lo has matado, y te has metido en un buen lÃ­o!
+	ItWasAGoodFight				=	"SVM_11_ItWasAGoodFight"				;//Â¡Muy bien! Â¡MagnÃ­fica actuaciÃ³n!
 	Awake						=	"SVM_11_Awake"							;//Aaaau (bostezo)
 	FriendlyGreetings			=	"SVM_11_FriendlyGreetings"				;//Hola.
-	ALGreetings					=	"SVM_11_ALGreetings"					;//¡Por Gómez!
-	MageGreetings				=	"SVM_11_MageGreetings"					;//¡Por el honor de la magia!
-	SectGreetings				=	"SVM_11_SectGreetings"					;//¡Despierta!
-	ThereHeIs					= 	"SVM_13_ThereHeIs"						;//¿Estás ciego? ¡Por allí!
-	NoLearnNoPoints				= 	"SVM_11_NoLearnNoPoints"				;//No puedo enseñarte nada. No tienes suficiente experiencia.
-	NoLearnOverMax				= 	"SVM_11_NoLearnOverMax"					;//Tus posibilidades no dan más de sí. Deberías aprender algo diferente.
+	ALGreetings					=	"SVM_11_ALGreetings"					;//Â¡Por GÃ³mez!
+	MageGreetings				=	"SVM_11_MageGreetings"					;//Â¡Por el honor de la magia!
+	SectGreetings				=	"SVM_11_SectGreetings"					;//Â¡Despierta!
+	ThereHeIs					= 	"SVM_13_ThereHeIs"						;//Â¿EstÃ¡s ciego? Â¡Por allÃ­!
+	NoLearnNoPoints				= 	"SVM_11_NoLearnNoPoints"				;//No puedo enseÃ±arte nada. No tienes suficiente experiencia.
+	NoLearnOverMax				= 	"SVM_11_NoLearnOverMax"					;//Tus posibilidades no dan mÃ¡s de sÃ­. DeberÃ­as aprender algo diferente.
 	NoLearnYouAlreadyKnow		=	"SVM_11_NoLearnYouAlreadyKnow"			;//Tienes que llegar al nivel avanzado antes de convertirte en maestro
-	NoLearnYoureBetter			=	"SVM_11_NoLearnYoureBetter"				;//¡Ya estás por encima de ese nivel!
-	HeyYou						=	"SVM_11_HeyYou"							;//¡Oye, tú!
-	NotNow						=	"SVM_11_NotNow"							;//¡Ahora no!
-	WhatDoYouWant				=	"SVM_11_WhatDoYouWant"					;//¿Qué quieres?
-	ISaidWhatDoYouWant			=	"SVM_11_ISaidWhatDoYouWant"				;//¿Puedo hacer algo por ti?
-	MakeWay						=	"SVM_11_MakeWay"						;//¿Me dejas pasar por aquí?
-	OutOfMyWay					=	"SVM_11_OutOfMyWay"						;//¡Quítate de en medio!
-	YouDeafOrWhat				=	"SVM_11_YouDeafOrWhat"					;//¿Quieres que te lo haga entender a golpes? ¡Lárgate de aquí!
-	LookingForTroubleAgain		=	"SVM_11_LookingForTroubleAgain"			;//¿Otra vez buscas líos conmigo?
-	LookAway					=	"SVM_11_LookAway"						;//¡No voy a implicarme en esto!
-	OkayKeepIt					=	"SVM_11_OkayKeepIt"						;//¡Estupendo! Es tuya.
-	WhatsThat					=	"SVM_11_WhatsThat"						;//¡Eh! ¿Qué ha sido eso?
-	ThatsMyWeapon				=	"SVM_11_ThatsMyWeapon"					;//¿Ésa que llevas es mi arma...?
-	GiveItToMe					=	"SVM_11_GiveItToMe"						;//¡Venga, dámela!
-	YouCanKeeptheCrap			=	"SVM_11_YouCanKeeptheCrap"				;//Quédatela, no la necesito.
+	NoLearnYoureBetter			=	"SVM_11_NoLearnYoureBetter"				;//Â¡Ya estÃ¡s por encima de ese nivel!
+	HeyYou						=	"SVM_11_HeyYou"							;//Â¡Oye, tÃº!
+	NotNow						=	"SVM_11_NotNow"							;//Â¡Ahora no!
+	WhatDoYouWant				=	"SVM_11_WhatDoYouWant"					;//Â¿QuÃ© quieres?
+	ISaidWhatDoYouWant			=	"SVM_11_ISaidWhatDoYouWant"				;//Â¿Puedo hacer algo por ti?
+	MakeWay						=	"SVM_11_MakeWay"						;//Â¿Me dejas pasar por aquÃ­?
+	OutOfMyWay					=	"SVM_11_OutOfMyWay"						;//Â¡QuÃ­tate de en medio!
+	YouDeafOrWhat				=	"SVM_11_YouDeafOrWhat"					;//Â¿Quieres que te lo haga entender a golpes? Â¡LÃ¡rgate de aquÃ­!
+	LookingForTroubleAgain		=	"SVM_11_LookingForTroubleAgain"			;//Â¿Otra vez buscas lÃ­os conmigo?
+	LookAway					=	"SVM_11_LookAway"						;//Â¡No voy a implicarme en esto!
+	OkayKeepIt					=	"SVM_11_OkayKeepIt"						;//Â¡Estupendo! Es tuya.
+	WhatsThat					=	"SVM_11_WhatsThat"						;//Â¡Eh! Â¿QuÃ© ha sido eso?
+	ThatsMyWeapon				=	"SVM_11_ThatsMyWeapon"					;//Â¿Ã‰sa que llevas es mi arma...?
+	GiveItToMe					=	"SVM_11_GiveItToMe"						;//Â¡Venga, dÃ¡mela!
+	YouCanKeeptheCrap			=	"SVM_11_YouCanKeeptheCrap"				;//QuÃ©datela, no la necesito.
 	TheyKilledMyFriend			=	"SVM_11_TheyKilledMyFriend"				;//Se han cargado a uno de los nuestros. Si cojo a ese cerdo...
-	YouDisturbedMySlumber		=	"SVM_11_YouDisturbedMySlumber"			;//¿Qué pasa?
-	SuckerGotSome				=	"SVM_11_SuckerGotSome"					;//¿Eh? ¿Te han partido la cara? ¡Te lo mereces!
-	SuckerDefeatedEBr			=	"SVM_11_SuckerDefeatedEBr"				;//Has vencido a un magnate del mineral. Es impresionante, pero estúpido. De hecho, muy estúpido.
-	SuckerDefeatedGur			=	"SVM_11_SuckerDefeatedGur"				;//Has vencido a un gurú.
-	SuckerDefeatedMage			=	"SVM_11_SuckerDefeatedMage"				;//¡Vencer a un mago... no es demasiado inteligente!
-	SuckerDefeatedNov_Guard		= 	"SVM_11_SuckerDefeatedNov_Guard"		;//Yo protejo a estos muchachos, y tú has sacudido a uno de ellos...
-	SuckerDefeatedVlk_Guard		= 	"SVM_11_SuckerDefeatedVlk_Guard"		;//¡Si tocas a los cavadores es como si echas mano a mis ingresos!
-	YouDefeatedMyComrade		=	"SVM_11_YouDefeatedMyComrade"			;//Quien hace daño a mis amigos, me hace daño a mí.
-	YouDefeatedNOV_Guard		=	"SVM_11_YouDefeatedNOV_Guard"			;//¡Si vuelves a poner la mano encima de un novicio lo lamentarás!
-	YouDefeatedVLK_Guard		=	"SVM_11_YouDefeatedVLK_Guard"			;//Si atacas a uno de mis protegidos, te podría costar la cabeza.
-	YouStoleFromMe				=	"SVM_11_YouStoleFromMe"					;//¿Cómo te atreves a presentarte aquí, ladrón asqueroso?
-	YouStoleFromUs				=	"SVM_11_YouStoleFromUs"					;//Tienes cosas que nos pertenecen. ¡Será mejor que nos las devuelvas!
-	YouStoleFromEBr				=	"SVM_11_YouStoleFromEBr"				;//¡Tío! ¡Has robado a los magnates del mineral! ¡Estarán furiosos!
-	YouStoleFromGur				=	"SVM_11_YouStoleFromGur"				;//Has levantado a los gurús algunas cosas, ¿verdad?
-	StoleFromMage				=	"SVM_11_StoleFromMage"					;//Has levantado a los magos un par de cosas, ¿verdad?
-	YouKilledMyFriend			=	"SVM_11_YouKilledMyFriend"				;//¡Has infringido la norma principal! ¡No matarás!
-	YouKilledEBr				=	"SVM_11_YouKilledEBr"					;//¡Has matado a un magnate del mineral! Tío, ¿estás zumbado?
-	YouKilledGur				=	"SVM_11_YouKilledGur"					;//¡Has matado a un gurú! ¡No me lo puedo creer!
-	YouKilledMage				=	"SVM_11_YouKilledMage"					;//¡Has matado a un mago! ¿Cómo tienes pensado justificarlo?
+	YouDisturbedMySlumber		=	"SVM_11_YouDisturbedMySlumber"			;//Â¿QuÃ© pasa?
+	SuckerGotSome				=	"SVM_11_SuckerGotSome"					;//Â¿Eh? Â¿Te han partido la cara? Â¡Te lo mereces!
+	SuckerDefeatedEBr			=	"SVM_11_SuckerDefeatedEBr"				;//Has vencido a un magnate del mineral. Es impresionante, pero estÃºpido. De hecho, muy estÃºpido.
+	SuckerDefeatedGur			=	"SVM_11_SuckerDefeatedGur"				;//Has vencido a un gurÃº.
+	SuckerDefeatedMage			=	"SVM_11_SuckerDefeatedMage"				;//Â¡Vencer a un mago... no es demasiado inteligente!
+	SuckerDefeatedNov_Guard		= 	"SVM_11_SuckerDefeatedNov_Guard"		;//Yo protejo a estos muchachos, y tÃº has sacudido a uno de ellos...
+	SuckerDefeatedVlk_Guard		= 	"SVM_11_SuckerDefeatedVlk_Guard"		;//Â¡Si tocas a los cavadores es como si echas mano a mis ingresos!
+	YouDefeatedMyComrade		=	"SVM_11_YouDefeatedMyComrade"			;//Quien hace daÃ±o a mis amigos, me hace daÃ±o a mÃ­.
+	YouDefeatedNOV_Guard		=	"SVM_11_YouDefeatedNOV_Guard"			;//Â¡Si vuelves a poner la mano encima de un novicio lo lamentarÃ¡s!
+	YouDefeatedVLK_Guard		=	"SVM_11_YouDefeatedVLK_Guard"			;//Si atacas a uno de mis protegidos, te podrÃ­a costar la cabeza.
+	YouStoleFromMe				=	"SVM_11_YouStoleFromMe"					;//Â¿CÃ³mo te atreves a presentarte aquÃ­, ladrÃ³n asqueroso?
+	YouStoleFromUs				=	"SVM_11_YouStoleFromUs"					;//Tienes cosas que nos pertenecen. Â¡SerÃ¡ mejor que nos las devuelvas!
+	YouStoleFromEBr				=	"SVM_11_YouStoleFromEBr"				;//Â¡TÃ­o! Â¡Has robado a los magnates del mineral! Â¡EstarÃ¡n furiosos!
+	YouStoleFromGur				=	"SVM_11_YouStoleFromGur"				;//Has levantado a los gurÃºs algunas cosas, Â¿verdad?
+	StoleFromMage				=	"SVM_11_StoleFromMage"					;//Has levantado a los magos un par de cosas, Â¿verdad?
+	YouKilledMyFriend			=	"SVM_11_YouKilledMyFriend"				;//Â¡Has infringido la norma principal! Â¡No matarÃ¡s!
+	YouKilledEBr				=	"SVM_11_YouKilledEBr"					;//Â¡Has matado a un magnate del mineral! TÃ­o, Â¿estÃ¡s zumbado?
+	YouKilledGur				=	"SVM_11_YouKilledGur"					;//Â¡Has matado a un gurÃº! Â¡No me lo puedo creer!
+	YouKilledMage				=	"SVM_11_YouKilledMage"					;//Â¡Has matado a un mago! Â¿CÃ³mo tienes pensado justificarlo?
 	YouKilledOCfolk				=	"SVM_11_YouKilledOCfolk"				;//Ha muerto un miembro del Campamento Viejo, y se ha relacionado tu nombre con la muerte...
-	YouKilledNCfolk				=	"SVM_11_YouKilledNCfolk"				;//¡El Campamento Nuevo ha sufrido una pérdida trágica, y parece que estás implicado!
-	YouKilledPSIfolk			=	"SVM_11_YouKilledPSIfolk"				;//¡La hermandad tiene un fiel menos, y su muerte pesa sobre tu conciencia!
-	GetThingsRight				=	"SVM_11_GetThingsRight"					;//¡No será fácil solucionar esto!
-	YouDefeatedMeWell			=	"SVM_11_YouDefeatedMeWell"				;//Ha sido una buena pelea. Va a dolerme varios días. ¡Pero ya ha acabado!
-	Smalltalk01					=	"SVM_11_Smalltalk01"					;// ...si tú crees...
+	YouKilledNCfolk				=	"SVM_11_YouKilledNCfolk"				;//Â¡El Campamento Nuevo ha sufrido una pÃ©rdida trÃ¡gica, y parece que estÃ¡s implicado!
+	YouKilledPSIfolk			=	"SVM_11_YouKilledPSIfolk"				;//Â¡La hermandad tiene un fiel menos, y su muerte pesa sobre tu conciencia!
+	GetThingsRight				=	"SVM_11_GetThingsRight"					;//Â¡No serÃ¡ fÃ¡cil solucionar esto!
+	YouDefeatedMeWell			=	"SVM_11_YouDefeatedMeWell"				;//Ha sido una buena pelea. Va a dolerme varios dÃ­as. Â¡Pero ya ha acabado!
+	Smalltalk01					=	"SVM_11_Smalltalk01"					;// ...si tÃº crees...
 	Smalltalk02					=	"SVM_11_Smalltalk02"					;// ...tal vez...
 	Smalltalk03					=	"SVM_11_Smalltalk03"					;// ...eso no fue muy inteligente...
-	Smalltalk04					=	"SVM_11_Smalltalk04"					;// ...será mejor que me mantenga al margen...
+	Smalltalk04					=	"SVM_11_Smalltalk04"					;// ...serÃ¡ mejor que me mantenga al margen...
 	Smalltalk05					=	"SVM_11_Smalltalk05"					;// ...en realidad no es mi problema...
-	Smalltalk06					=	"SVM_11_Smalltalk06"					;// ...era evidente que habría problemas...
-	Smalltalk07					=	"SVM_11_Smalltalk07"					;// ...pero sé discreto; la gente no tiene por qué saberlo.
-	Smalltalk08					=	"SVM_11_Smalltalk08"					;// ...no volverá a suceder...
+	Smalltalk06					=	"SVM_11_Smalltalk06"					;// ...era evidente que habrÃ­a problemas...
+	Smalltalk07					=	"SVM_11_Smalltalk07"					;// ...pero sÃ© discreto; la gente no tiene por quÃ© saberlo.
+	Smalltalk08					=	"SVM_11_Smalltalk08"					;// ...no volverÃ¡ a suceder...
 	Smalltalk09					=	"SVM_11_Smalltalk09"					;// ...debe haber algo de cierto en esa historia...
 	Smalltalk10					=	"SVM_11_Smalltalk10"					;// ...has de tener cuidado con lo que dices a la gente...
 	Smalltalk11					=	"SVM_11_Smalltalk11"					;// ...mientras no me vea implicado...
-	Smalltalk12					=	"SVM_11_Smalltalk12"					;// ...no deberías creerte todo lo que oyes...
-	Smalltalk13					=	"SVM_11_Smalltalk13"					;// ...no me gustaría estar en su lugar...
+	Smalltalk12					=	"SVM_11_Smalltalk12"					;// ...no deberÃ­as creerte todo lo que oyes...
+	Smalltalk13					=	"SVM_11_Smalltalk13"					;// ...no me gustarÃ­a estar en su lugar...
 	Smalltalk14					=	"SVM_11_Smalltalk14"					;// ...lo mismo de siempre...
 	Smalltalk15					=	"SVM_11_Smalltalk15"					;// ...algunos no aprenden...
-	Smalltalk16					=	"SVM_11_Smalltalk16"					;// ...hubo un tiempo en que las cosas habrían sucedido de manera muy distinta...
+	Smalltalk16					=	"SVM_11_Smalltalk16"					;// ...hubo un tiempo en que las cosas habrÃ­an sucedido de manera muy distinta...
 	Smalltalk17					=	"SVM_11_Smalltalk17"					;// ...la gente no para de hablar...
 	Smalltalk18					=	"SVM_11_Smalltalk18"					;// ...ya no hago caso de los chismorreos...
-	Smalltalk19					=	"SVM_11_Smalltalk19"					;// ...confías en alguien y te metes en un lío; eso es lo que pasa...
-	Smalltalk20					=	"SVM_11_Smalltalk20"					;// ...me extraña que vaya a cambiar...
-	Smalltalk21					=	"SVM_11_Smalltalk21"					;// ...seguramente tengas razón...
-	Smalltalk22					=	"SVM_11_Smalltalk22"					;// ...espera. Será mejor no apresurarse...
-	Smalltalk23					=	"SVM_11_Smalltalk23"					;// ...creía que eso se había resuelto hace mucho...
+	Smalltalk19					=	"SVM_11_Smalltalk19"					;// ...confÃ­as en alguien y te metes en un lÃ­o; eso es lo que pasa...
+	Smalltalk20					=	"SVM_11_Smalltalk20"					;// ...me extraÃ±a que vaya a cambiar...
+	Smalltalk21					=	"SVM_11_Smalltalk21"					;// ...seguramente tengas razÃ³n...
+	Smalltalk22					=	"SVM_11_Smalltalk22"					;// ...espera. SerÃ¡ mejor no apresurarse...
+	Smalltalk23					=	"SVM_11_Smalltalk23"					;// ...creÃ­a que eso se habÃ­a resuelto hace mucho...
 	Smalltalk24					=	"SVM_11_Smalltalk24"					;// ...hablemos de otra cosa...
 	Om							= 	"SVM_11_Om"								;//Ommm
 };
 
 
-instance SVM_12	(C_SVM)		//Bazaar-Händler		Nach außen freundlich,jovial,Innen hinterhältig, raffgierig
+instance SVM_12	(C_SVM)		//Bazaar-HÃ¤ndler		Nach auÃŸen freundlich,jovial,Innen hinterhÃ¤ltig, raffgierig
 {
-	StopMagic					=	"SVM_12_StopMagic"						;//¡Detén esa magia!
-	ISaidStopMagic				=	"SVM_12_ISaidStopMagic"					;//¡Cuando digo 'detén la magia', hablo en serio!
-	WeaponDown					=	"SVM_12_WeaponDown"						;//¿Qué pretendes hacer con el arma, tío?
-	ISaidWeaponDown				=	"SVM_12_ISaidWeaponDown"				;//¡Deja eso!
-	WatchYourAim				=	"SVM_12_WatchYourAim"					;//¡Me estás apuntando!
-	WatchYourAimAngry			=	"SVM_12_WatchYourAimAngry"				;//¡Si no dejas de hacer eso, te vas a meter en un lío!
-	WhatAreYouDoing				=	"SVM_12_WhatAreYouDoing"				;//¡Eh!, ¿estás ciego o qué?
-	LetsForgetOurLittleFight	=	"SVM_12_LetsForgetOurLittleFight"		;//Olvidemos esta discusión sin importancia, ¿vale?
-	Strange						=	"SVM_12_Strange"						;//Estaba aquí hace un momento. ¡Qué raro!
-	DieMonster					=	"SVM_12_DieMonster"						;//¡Ha llegado tu hora, bastardo!
-	DieMortalEnemy				=	"SVM_12_DieMortalEnemy"					;//¡Te toca pagar!
-	NowWait						=	"SVM_12_NowWait"						;//¡Estás pidiendo una buena paliza!
-	YouStillNotHaveEnough		=	"SVM_12_YouStillNotHaveEnough"			;//¿Aún no has tenido bastante?
-	YouAskedForIt				=	"SVM_12_YouAskedForIt"					;//¡De acuerdo, te lo has buscado!
-	NowWaitIntruder				= 	"SVM_12_NowWaitIntruder"				;//¡Tendrán que sacarte fuera!
-	IWillTeachYouRespectForForeignProperty	=	"SVM_12_IWillTeachYouRespectForForeignProperty"	;//Te lo advertí. ¡Si tocas mis cosas, te metes en un lío!
-	DirtyThief					=	"SVM_12_DirtyThief"						;//¡Ladrón! ¡Voy a enseñarte modales!
-	YouAttackedMyCharge			=	"SVM_12_YouAttackedMyCharge"			;//¡Nadie se mete con mis chicos sin lamentarlo después!
-	YouKilledOneOfUs			=	"SVM_12_YouKilledOneOfUs"				;//¡Has matado a uno de mis hombres! ¡Te voy a matar!
-	Dead						=	"SVM_12_Dead"							;//¡Aaargh!
+	StopMagic					=	"SVM_12_StopMagic"						;//Â¡DetÃ©n esa magia!
+	ISaidStopMagic				=	"SVM_12_ISaidStopMagic"					;//Â¡Cuando digo 'detÃ©n la magia', hablo en serio!
+	WeaponDown					=	"SVM_12_WeaponDown"						;//Â¿QuÃ© pretendes hacer con el arma, tÃ­o?
+	ISaidWeaponDown				=	"SVM_12_ISaidWeaponDown"				;//Â¡Deja eso!
+	WatchYourAim				=	"SVM_12_WatchYourAim"					;//Â¡Me estÃ¡s apuntando!
+	WatchYourAimAngry			=	"SVM_12_WatchYourAimAngry"				;//Â¡Si no dejas de hacer eso, te vas a meter en un lÃ­o!
+	WhatAreYouDoing				=	"SVM_12_WhatAreYouDoing"				;//Â¡Eh!, Â¿estÃ¡s ciego o quÃ©?
+	LetsForgetOurLittleFight	=	"SVM_12_LetsForgetOurLittleFight"		;//Olvidemos esta discusiÃ³n sin importancia, Â¿vale?
+	Strange						=	"SVM_12_Strange"						;//Estaba aquÃ­ hace un momento. Â¡QuÃ© raro!
+	DieMonster					=	"SVM_12_DieMonster"						;//Â¡Ha llegado tu hora, bastardo!
+	DieMortalEnemy				=	"SVM_12_DieMortalEnemy"					;//Â¡Te toca pagar!
+	NowWait						=	"SVM_12_NowWait"						;//Â¡EstÃ¡s pidiendo una buena paliza!
+	YouStillNotHaveEnough		=	"SVM_12_YouStillNotHaveEnough"			;//Â¿AÃºn no has tenido bastante?
+	YouAskedForIt				=	"SVM_12_YouAskedForIt"					;//Â¡De acuerdo, te lo has buscado!
+	NowWaitIntruder				= 	"SVM_12_NowWaitIntruder"				;//Â¡TendrÃ¡n que sacarte fuera!
+	IWillTeachYouRespectForForeignProperty	=	"SVM_12_IWillTeachYouRespectForForeignProperty"	;//Te lo advertÃ­. Â¡Si tocas mis cosas, te metes en un lÃ­o!
+	DirtyThief					=	"SVM_12_DirtyThief"						;//Â¡LadrÃ³n! Â¡Voy a enseÃ±arte modales!
+	YouAttackedMyCharge			=	"SVM_12_YouAttackedMyCharge"			;//Â¡Nadie se mete con mis chicos sin lamentarlo despuÃ©s!
+	YouKilledOneOfUs			=	"SVM_12_YouKilledOneOfUs"				;//Â¡Has matado a uno de mis hombres! Â¡Te voy a matar!
+	Dead						=	"SVM_12_Dead"							;//Â¡Aaargh!
 	Aargh_1						=	"SVM_12_Aargh_1"						;//Aargh
 	Aargh_2						=	"SVM_12_Aargh_2"						;//Aargh
 	Aargh_3						=	"SVM_12_Aargh_3"						;//Aargh
-	Berzerk						=	"SVM_12_Berzerk"						;//¡¡¡UUAAARRGGGHHH!!!
-	YoullBeSorryForThis			=	"SVM_12_YoullBeSorryForThis"			;//¡Lo lamentarás!
-	YesYes						=	"SVM_12_YesYes"							;//¡Tranquilo! Has ganado.
-	ShitWhatAMonster			=	"SVM_12_ShitWhatAMonster"				;//¡Me largo! ¡Ése es demasiado grande para mí!
-	Help						=	"SVM_12_Help"							;//¡Maldita sea!
-	WeWillMeetAgain				=	"SVM_12_WeWillMeetAgain"				;//¡La próxima vez será distinto!
-	NeverTryThatAgain			=	"SVM_12_NeverTryThatAgain"				;//¡No vuelvas a intentar eso!
-	ITakeYourWeapon				=	"SVM_12_ITakeYourWeapon"				;//¡Me gusta esa arma!
-	ITookYourOre				=	"SVM_12_ITookYourOre"					;//¡Haré que se invierta bien tu mineral!
-	ShitNoOre					=	"SVM_12_ShitNoOre"						;//¡Maldita sea! ¡No hay mineral!
-	HandsOff					=	"SVM_12_HandsOff"						;//¡Quita las manos!
-	GetOutOfHere				=	"SVM_12_GetOutOfHere"					;//¡Lárgate de aquí!
-	YouViolatedForbiddenTerritory=	"SVM_12_YouViolatedForbiddenTerritory";//¡Eh! ¿De dónde has salido?
-	YouWannaFoolMe				=	"SVM_12_YouWannaFoolMe"					;//¿Te crees que soy estúpido?
-	WhatsThisSupposedToBe		=	"SVM_12_WhatsThisSupposedToBe"			;//¿Qué haces rondando por aquí?
-	WhyAreYouInHere				=	"SVM_12_WhyYouAreInHere"				;//¡Sal de aquí o llamo a los guardias!
-	WhatDidYouInThere			=	"SVM_12_WhatDidYouInThere"				;//¡Aquí no pintas nada!
-	WiseMove					=	"SVM_12_WiseMove"						;//¡Aprendes rápido!
-	Alarm						=	"SVM_12_Alarm"							;//¡Guardias! ¡Por aquí!
-	IntruderAlert				= 	"SVM_12_IntruderAlert"					;//¡¡¡¡ALERTA!!!!
-	BehindYou					=	"SVM_12_BehindYou"						;//¡Eh, cuidado!
-	TheresAFight				=	"SVM_12_TheresAFight"					;//¡Una pelea!
-	HeyHeyHey					=	"SVM_12_HeyHeyHey"						;//¡Dale!
-	CheerFight					=	"SVM_12_CheerFight"						;//¡Bien!
-	CheerFriend					=	"SVM_12_CheerFriend"					;//¡Sacúdele!
-	Ooh							=	"SVM_12_Ooh"							;//¡Cuidado!
-	YeahWellDone				=	"SVM_12_YeahWellDone"					;//¡Ya era hora!
-	RunCoward					=	"SVM_12_RunCoward"						;//¡Se está escabullendo!
-	HeDefeatedHim				=	"SVM_12_HeDefeatedHim"					;//¡Yo diría que ha ganado con claridad!
-	HeDeservedIt				=	"SVM_12_HeDeservedIt"					;//¡Se lo merecía!
-	HeKilledHim					=	"SVM_12_HeKilledHim"					;//¡Si vas por ahí matando gente, es normal que te metas en líos!
-	ItWasAGoodFight				=	"SVM_12_ItWasAGoodFight"				;//¡Menuda pelea!
+	Berzerk						=	"SVM_12_Berzerk"						;//Â¡Â¡Â¡UUAAARRGGGHHH!!!
+	YoullBeSorryForThis			=	"SVM_12_YoullBeSorryForThis"			;//Â¡Lo lamentarÃ¡s!
+	YesYes						=	"SVM_12_YesYes"							;//Â¡Tranquilo! Has ganado.
+	ShitWhatAMonster			=	"SVM_12_ShitWhatAMonster"				;//Â¡Me largo! Â¡Ã‰se es demasiado grande para mÃ­!
+	Help						=	"SVM_12_Help"							;//Â¡Maldita sea!
+	WeWillMeetAgain				=	"SVM_12_WeWillMeetAgain"				;//Â¡La prÃ³xima vez serÃ¡ distinto!
+	NeverTryThatAgain			=	"SVM_12_NeverTryThatAgain"				;//Â¡No vuelvas a intentar eso!
+	ITakeYourWeapon				=	"SVM_12_ITakeYourWeapon"				;//Â¡Me gusta esa arma!
+	ITookYourOre				=	"SVM_12_ITookYourOre"					;//Â¡HarÃ© que se invierta bien tu mineral!
+	ShitNoOre					=	"SVM_12_ShitNoOre"						;//Â¡Maldita sea! Â¡No hay mineral!
+	HandsOff					=	"SVM_12_HandsOff"						;//Â¡Quita las manos!
+	GetOutOfHere				=	"SVM_12_GetOutOfHere"					;//Â¡LÃ¡rgate de aquÃ­!
+	YouViolatedForbiddenTerritory=	"SVM_12_YouViolatedForbiddenTerritory";//Â¡Eh! Â¿De dÃ³nde has salido?
+	YouWannaFoolMe				=	"SVM_12_YouWannaFoolMe"					;//Â¿Te crees que soy estÃºpido?
+	WhatsThisSupposedToBe		=	"SVM_12_WhatsThisSupposedToBe"			;//Â¿QuÃ© haces rondando por aquÃ­?
+	WhyAreYouInHere				=	"SVM_12_WhyYouAreInHere"				;//Â¡Sal de aquÃ­ o llamo a los guardias!
+	WhatDidYouInThere			=	"SVM_12_WhatDidYouInThere"				;//Â¡AquÃ­ no pintas nada!
+	WiseMove					=	"SVM_12_WiseMove"						;//Â¡Aprendes rÃ¡pido!
+	Alarm						=	"SVM_12_Alarm"							;//Â¡Guardias! Â¡Por aquÃ­!
+	IntruderAlert				= 	"SVM_12_IntruderAlert"					;//Â¡Â¡Â¡Â¡ALERTA!!!!
+	BehindYou					=	"SVM_12_BehindYou"						;//Â¡Eh, cuidado!
+	TheresAFight				=	"SVM_12_TheresAFight"					;//Â¡Una pelea!
+	HeyHeyHey					=	"SVM_12_HeyHeyHey"						;//Â¡Dale!
+	CheerFight					=	"SVM_12_CheerFight"						;//Â¡Bien!
+	CheerFriend					=	"SVM_12_CheerFriend"					;//Â¡SacÃºdele!
+	Ooh							=	"SVM_12_Ooh"							;//Â¡Cuidado!
+	YeahWellDone				=	"SVM_12_YeahWellDone"					;//Â¡Ya era hora!
+	RunCoward					=	"SVM_12_RunCoward"						;//Â¡Se estÃ¡ escabullendo!
+	HeDefeatedHim				=	"SVM_12_HeDefeatedHim"					;//Â¡Yo dirÃ­a que ha ganado con claridad!
+	HeDeservedIt				=	"SVM_12_HeDeservedIt"					;//Â¡Se lo merecÃ­a!
+	HeKilledHim					=	"SVM_12_HeKilledHim"					;//Â¡Si vas por ahÃ­ matando gente, es normal que te metas en lÃ­os!
+	ItWasAGoodFight				=	"SVM_12_ItWasAGoodFight"				;//Â¡Menuda pelea!
 	Awake						=	"SVM_12_Awake"							;//Aaaau (bostezo)
-	FriendlyGreetings			=	"SVM_12_FriendlyGreetings"				;//¡Hola amigo!
-	ALGreetings					=	"SVM_12_ALGreetings"					;//¡Por Gómez!
-	MageGreetings				=	"SVM_12_MageGreetings"					;//¡Por el honor de la magia!
-	SectGreetings				=	"SVM_12_SectGreetings"					;//¡Despierta!
-	ThereHeIs					= 	"SVM_12_ThereHeIs"						;//Por allí.
-	NoLearnNoPoints				= 	"SVM_12_NoLearnNoPoints"				;//No puedo enseñarte nada porque eres bastante inexperto.
-	NoLearnOverMax				= 	"SVM_12_NoLearnOverMax"					;//Tus posibilidades no dan más de sí. Deberías aprender algo diferente.
-	NoLearnYouAlreadyKnow		=	"SVM_12_NoLearnYouAlreadyKnow"			;//¡Tienes que llegar al nivel avanzado antes de convertirte en maestro!
-	NoLearnYoureBetter			=	"SVM_12_NoLearnYoureBetter"				;//¡Ya estás por encima de ese nivel!
-	HeyYou						=	"SVM_12_HeyYou"							;//¡Oye, tú!
-	NotNow						=	"SVM_12_NotNow"							;//¡Ahora no!
-	WhatDoYouWant				=	"SVM_12_WhatDoYouWant"					;//¿Puedo ayudarte?
-	ISaidWhatDoYouWant			=	"SVM_12_ISaidWhatDoYouWant"				;//¿Qué quieres?
-	MakeWay						=	"SVM_12_MakeWay"						;//Déjame pasar.
-	OutOfMyWay					=	"SVM_12_OutOfMyWay"						;//¡Vamos, quiero pasar!
-	YouDeafOrWhat				=	"SVM_12_YouDeafOrWhat"					;//¿Estás sordo o quieres bronca?
-	LookingForTroubleAgain		=	"SVM_12_LookingForTroubleAgain"			;//¿Otra vez buscas líos conmigo?
-	LookAway					=	"SVM_12_LookAway"						;//¿Ha pasado algo? No he visto NADA...
-	OkayKeepIt					=	"SVM_12_OkayKeepIt"						;//¡Vale, quédatelo!
-	WhatsThat					=	"SVM_12_WhatsThat"						;//¿Qué ha sido eso?
-	ThatsMyWeapon				=	"SVM_12_ThatsMyWeapon"					;//¡Me gustaría recuperar mi arma!
-	GiveItToMe					=	"SVM_12_GiveItToMe"						;//¡Dámela!
-	YouCanKeeptheCrap			=	"SVM_12_YouCanKeeptheCrap"				;//¡Hm, tampoco pasa nada! ¡Tengo más!
+	FriendlyGreetings			=	"SVM_12_FriendlyGreetings"				;//Â¡Hola amigo!
+	ALGreetings					=	"SVM_12_ALGreetings"					;//Â¡Por GÃ³mez!
+	MageGreetings				=	"SVM_12_MageGreetings"					;//Â¡Por el honor de la magia!
+	SectGreetings				=	"SVM_12_SectGreetings"					;//Â¡Despierta!
+	ThereHeIs					= 	"SVM_12_ThereHeIs"						;//Por allÃ­.
+	NoLearnNoPoints				= 	"SVM_12_NoLearnNoPoints"				;//No puedo enseÃ±arte nada porque eres bastante inexperto.
+	NoLearnOverMax				= 	"SVM_12_NoLearnOverMax"					;//Tus posibilidades no dan mÃ¡s de sÃ­. DeberÃ­as aprender algo diferente.
+	NoLearnYouAlreadyKnow		=	"SVM_12_NoLearnYouAlreadyKnow"			;//Â¡Tienes que llegar al nivel avanzado antes de convertirte en maestro!
+	NoLearnYoureBetter			=	"SVM_12_NoLearnYoureBetter"				;//Â¡Ya estÃ¡s por encima de ese nivel!
+	HeyYou						=	"SVM_12_HeyYou"							;//Â¡Oye, tÃº!
+	NotNow						=	"SVM_12_NotNow"							;//Â¡Ahora no!
+	WhatDoYouWant				=	"SVM_12_WhatDoYouWant"					;//Â¿Puedo ayudarte?
+	ISaidWhatDoYouWant			=	"SVM_12_ISaidWhatDoYouWant"				;//Â¿QuÃ© quieres?
+	MakeWay						=	"SVM_12_MakeWay"						;//DÃ©jame pasar.
+	OutOfMyWay					=	"SVM_12_OutOfMyWay"						;//Â¡Vamos, quiero pasar!
+	YouDeafOrWhat				=	"SVM_12_YouDeafOrWhat"					;//Â¿EstÃ¡s sordo o quieres bronca?
+	LookingForTroubleAgain		=	"SVM_12_LookingForTroubleAgain"			;//Â¿Otra vez buscas lÃ­os conmigo?
+	LookAway					=	"SVM_12_LookAway"						;//Â¿Ha pasado algo? No he visto NADA...
+	OkayKeepIt					=	"SVM_12_OkayKeepIt"						;//Â¡Vale, quÃ©datelo!
+	WhatsThat					=	"SVM_12_WhatsThat"						;//Â¿QuÃ© ha sido eso?
+	ThatsMyWeapon				=	"SVM_12_ThatsMyWeapon"					;//Â¡Me gustarÃ­a recuperar mi arma!
+	GiveItToMe					=	"SVM_12_GiveItToMe"						;//Â¡DÃ¡mela!
+	YouCanKeeptheCrap			=	"SVM_12_YouCanKeeptheCrap"				;//Â¡Hm, tampoco pasa nada! Â¡Tengo mÃ¡s!
 	TheyKilledMyFriend			=	"SVM_12_TheyKilledMyFriend"				;//Se han cargado a uno de los nuestros. Si cojo a ese cerdo...
-	YouDisturbedMySlumber		=	"SVM_12_YouDisturbedMySlumber"			;//Eh, ¿a qué viene eso? ¿Por qué me has despertado?
-	SuckerGotSome				=	"SVM_12_SuckerGotSome"					;//¿Eh? ¿Te han zurrado? ¡Te lo mereces!
-	SuckerDefeatedEBr			=	"SVM_12_SuckerDefeatedEBr"				;//¡Has vencido a un magnate del mineral! ¡Se quedó impresionado!
-	SuckerDefeatedGur			=	"SVM_12_SuckerDefeatedGur"				;//Has vencido a un gurú. Estoy impresionado. Pero ni se te ocurra intentarlo de nuevo.
-	SuckerDefeatedMage			=	"SVM_12_SuckerDefeatedMage"				;//Si has vencido a un mago... ¡debes ser un hombre valiente!
-	SuckerDefeatedNov_Guard		= 	"SVM_12_SuckerDefeatedNov_Guard"		;//Debes estar loco para sacudir así a un novicio.
-	SuckerDefeatedVlk_Guard		= 	"SVM_12_SuckerDefeatedVlk_Guard"		;//¿Qué creías que hacías sacudiendo a un cavador?
-	YouDefeatedMyComrade		=	"SVM_12_YouDefeatedMyComrade"			;//¡Has sacudido a uno de mis amigos! ¿A qué venía eso?
-	YouDefeatedNOV_Guard		=	"SVM_12_YouDefeatedNOV_Guard"			;//¡Si vuelves a poner la mano encima de un novicio lo lamentarás!
-	YouDefeatedVLK_Guard		=	"SVM_12_YouDefeatedVLK_Guard"			;//Eres demasiado valiente; si tocas a uno de mis protegidos, podría resultarte muy peligroso.
-	YouStoleFromMe				=	"SVM_12_YouStoleFromMe"					;//¿Cómo te atreves a presentarte aquí, ladrón asqueroso?
-	YouStoleFromUs				=	"SVM_12_YouStoleFromUs"					;//Tienes cosas que nos pertenecen. ¡Será mejor que nos las devuelvas!
-	YouStoleFromEBr				=	"SVM_12_YouStoleFromEBr"				;//¡Tío! ¡Has robado a los magnates del mineral! ¡Estarán furiosos!
-	YouStoleFromGur				=	"SVM_12_YouStoleFromGur"				;//¡Has robado a los gurús! ¡Al menos tendrías que haber evitado que te pillaran!
-	StoleFromMage				=	"SVM_12_StoleFromMage"					;//¡A los magos no les gusta que haya gente revolviendo en sus cosas!
-	YouKilledMyFriend			=	"SVM_12_YouKilledMyFriend"				;//¡Uno de los nuestros pesa sobre tu conciencia! ¡Un error más y te tocará a ti!
-	YouKilledEBr				=	"SVM_12_YouKilledEBr"					;//¡Has matado a un magnate del mineral! Tío, ¿estás zumbado?
-	YouKilledGur				=	"SVM_12_YouKilledGur"					;//¡Has matado a un gurú! ¡No me lo puedo creer!
-	YouKilledMage				=	"SVM_12_YouKilledMage"					;//¡Has matado a un mago! ¿Cómo tienes pensado justificarlo?
+	YouDisturbedMySlumber		=	"SVM_12_YouDisturbedMySlumber"			;//Eh, Â¿a quÃ© viene eso? Â¿Por quÃ© me has despertado?
+	SuckerGotSome				=	"SVM_12_SuckerGotSome"					;//Â¿Eh? Â¿Te han zurrado? Â¡Te lo mereces!
+	SuckerDefeatedEBr			=	"SVM_12_SuckerDefeatedEBr"				;//Â¡Has vencido a un magnate del mineral! Â¡Se quedÃ³ impresionado!
+	SuckerDefeatedGur			=	"SVM_12_SuckerDefeatedGur"				;//Has vencido a un gurÃº. Estoy impresionado. Pero ni se te ocurra intentarlo de nuevo.
+	SuckerDefeatedMage			=	"SVM_12_SuckerDefeatedMage"				;//Si has vencido a un mago... Â¡debes ser un hombre valiente!
+	SuckerDefeatedNov_Guard		= 	"SVM_12_SuckerDefeatedNov_Guard"		;//Debes estar loco para sacudir asÃ­ a un novicio.
+	SuckerDefeatedVlk_Guard		= 	"SVM_12_SuckerDefeatedVlk_Guard"		;//Â¿QuÃ© creÃ­as que hacÃ­as sacudiendo a un cavador?
+	YouDefeatedMyComrade		=	"SVM_12_YouDefeatedMyComrade"			;//Â¡Has sacudido a uno de mis amigos! Â¿A quÃ© venÃ­a eso?
+	YouDefeatedNOV_Guard		=	"SVM_12_YouDefeatedNOV_Guard"			;//Â¡Si vuelves a poner la mano encima de un novicio lo lamentarÃ¡s!
+	YouDefeatedVLK_Guard		=	"SVM_12_YouDefeatedVLK_Guard"			;//Eres demasiado valiente; si tocas a uno de mis protegidos, podrÃ­a resultarte muy peligroso.
+	YouStoleFromMe				=	"SVM_12_YouStoleFromMe"					;//Â¿CÃ³mo te atreves a presentarte aquÃ­, ladrÃ³n asqueroso?
+	YouStoleFromUs				=	"SVM_12_YouStoleFromUs"					;//Tienes cosas que nos pertenecen. Â¡SerÃ¡ mejor que nos las devuelvas!
+	YouStoleFromEBr				=	"SVM_12_YouStoleFromEBr"				;//Â¡TÃ­o! Â¡Has robado a los magnates del mineral! Â¡EstarÃ¡n furiosos!
+	YouStoleFromGur				=	"SVM_12_YouStoleFromGur"				;//Â¡Has robado a los gurÃºs! Â¡Al menos tendrÃ­as que haber evitado que te pillaran!
+	StoleFromMage				=	"SVM_12_StoleFromMage"					;//Â¡A los magos no les gusta que haya gente revolviendo en sus cosas!
+	YouKilledMyFriend			=	"SVM_12_YouKilledMyFriend"				;//Â¡Uno de los nuestros pesa sobre tu conciencia! Â¡Un error mÃ¡s y te tocarÃ¡ a ti!
+	YouKilledEBr				=	"SVM_12_YouKilledEBr"					;//Â¡Has matado a un magnate del mineral! TÃ­o, Â¿estÃ¡s zumbado?
+	YouKilledGur				=	"SVM_12_YouKilledGur"					;//Â¡Has matado a un gurÃº! Â¡No me lo puedo creer!
+	YouKilledMage				=	"SVM_12_YouKilledMage"					;//Â¡Has matado a un mago! Â¿CÃ³mo tienes pensado justificarlo?
 	YouKilledOCfolk				=	"SVM_12_YouKilledOCfolk"				;//Ha muerto un miembro del Campamento Viejo, y se ha relacionado tu nombre con la muerte...
-	YouKilledNCfolk				=	"SVM_12_YouKilledNCfolk"				;//¡El Campamento Nuevo ha sufrido una pérdida trágica, y parece que estás implicado!
-	YouKilledPSIfolk			=	"SVM_12_YouKilledPSIfolk"				;//¡La hermandad tiene un fiel menos, y su muerte pesa sobre tu conciencia!
-	GetThingsRight				=	"SVM_12_GetThingsRight"					;//¡No será fácil solucionar esto!
+	YouKilledNCfolk				=	"SVM_12_YouKilledNCfolk"				;//Â¡El Campamento Nuevo ha sufrido una pÃ©rdida trÃ¡gica, y parece que estÃ¡s implicado!
+	YouKilledPSIfolk			=	"SVM_12_YouKilledPSIfolk"				;//Â¡La hermandad tiene un fiel menos, y su muerte pesa sobre tu conciencia!
+	GetThingsRight				=	"SVM_12_GetThingsRight"					;//Â¡No serÃ¡ fÃ¡cil solucionar esto!
 	YouDefeatedMeWell			=	"SVM_12_YouDefeatedMeWell"				;//Una buena pelea. Tu entrenamiento ha merecido la pena.
-	Smalltalk01					=	"SVM_12_Smalltalk01"					;// ...si tú crees...
+	Smalltalk01					=	"SVM_12_Smalltalk01"					;// ...si tÃº crees...
 	Smalltalk02					=	"SVM_12_Smalltalk02"					;// ...tal vez...
 	Smalltalk03					=	"SVM_12_Smalltalk03"					;// ...eso no fue muy inteligente...
-	Smalltalk04					=	"SVM_12_Smalltalk04"					;// ...será mejor que me mantenga al margen...
+	Smalltalk04					=	"SVM_12_Smalltalk04"					;// ...serÃ¡ mejor que me mantenga al margen...
 	Smalltalk05					=	"SVM_12_Smalltalk05"					;// ...en realidad no es mi problema...
-	Smalltalk06					=	"SVM_12_Smalltalk06"					;// ...era evidente que habría problemas...
-	Smalltalk07					=	"SVM_12_Smalltalk07"					;// ...pero sé discreto; la gente no tiene por qué saberlo.
-	Smalltalk08					=	"SVM_12_Smalltalk08"					;// ...no volverá a suceder...
+	Smalltalk06					=	"SVM_12_Smalltalk06"					;// ...era evidente que habrÃ­a problemas...
+	Smalltalk07					=	"SVM_12_Smalltalk07"					;// ...pero sÃ© discreto; la gente no tiene por quÃ© saberlo.
+	Smalltalk08					=	"SVM_12_Smalltalk08"					;// ...no volverÃ¡ a suceder...
 	Smalltalk09					=	"SVM_12_Smalltalk09"					;// ...debe haber algo de cierto en esa historia...
 	Smalltalk10					=	"SVM_12_Smalltalk10"					;// ...has de tener cuidado con lo que dices a la gente...
 	Smalltalk11					=	"SVM_12_Smalltalk11"					;// ...mientras no me vea implicado...
-	Smalltalk12					=	"SVM_12_Smalltalk12"					;// ...no deberías creerte todo lo que oyes...
-	Smalltalk13					=	"SVM_12_Smalltalk13"					;// ...no me gustaría estar en su lugar...
+	Smalltalk12					=	"SVM_12_Smalltalk12"					;// ...no deberÃ­as creerte todo lo que oyes...
+	Smalltalk13					=	"SVM_12_Smalltalk13"					;// ...no me gustarÃ­a estar en su lugar...
 	Smalltalk14					=	"SVM_12_Smalltalk14"					;// ...lo mismo de siempre...
 	Smalltalk15					=	"SVM_12_Smalltalk15"					;// ...algunos no aprenden...
-	Smalltalk16					=	"SVM_12_Smalltalk16"					;// ...hubo un tiempo en que las cosas habrían sucedido de manera muy distinta...
+	Smalltalk16					=	"SVM_12_Smalltalk16"					;// ...hubo un tiempo en que las cosas habrÃ­an sucedido de manera muy distinta...
 	Smalltalk17					=	"SVM_12_Smalltalk17"					;// ...la gente no para de hablar...
 	Smalltalk18					=	"SVM_12_Smalltalk18"					;// ...ya no hago caso de los chismorreos...
-	Smalltalk19					=	"SVM_12_Smalltalk19"					;// ...confías en alguien y te metes en un lío, eso es lo que pasa...
-	Smalltalk20					=	"SVM_12_Smalltalk20"					;// ...me extraña que vaya a cambiar...
-	Smalltalk21					=	"SVM_12_Smalltalk21"					;// ...seguramente tengas razón...
-	Smalltalk22					=	"SVM_12_Smalltalk22"					;// ...espera. Será mejor no apresurarse...
-	Smalltalk23					=	"SVM_12_Smalltalk23"					;// ...creía que eso se había resuelto hace mucho...
+	Smalltalk19					=	"SVM_12_Smalltalk19"					;// ...confÃ­as en alguien y te metes en un lÃ­o, eso es lo que pasa...
+	Smalltalk20					=	"SVM_12_Smalltalk20"					;// ...me extraÃ±a que vaya a cambiar...
+	Smalltalk21					=	"SVM_12_Smalltalk21"					;// ...seguramente tengas razÃ³n...
+	Smalltalk22					=	"SVM_12_Smalltalk22"					;// ...espera. SerÃ¡ mejor no apresurarse...
+	Smalltalk23					=	"SVM_12_Smalltalk23"					;// ...creÃ­a que eso se habÃ­a resuelto hace mucho...
 	Smalltalk24					=	"SVM_12_Smalltalk24"					;// ...hablemos de otra cosa...
 	Om							= 	"SVM_12_Om"							;//Ommm
 };
 
 
-instance SVM_13	(C_SVM)					// Fanatiker	Agressiv, übereifrig, Ähnlich wie Stimme7Freak,	aber klarer, Ruhm-und-Ehre-Typ,	Nov: Glauben an	Y´berion blind,	Mitläufer
+instance SVM_13	(C_SVM)					// Fanatiker	Agressiv, Ã¼bereifrig, Ã„hnlich wie Stimme7Freak,	aber klarer, Ruhm-und-Ehre-Typ,	Nov: Glauben an	YÂ´berion blind,	MitlÃ¤ufer
 {
-	StopMagic					=	"SVM_13_StopMagic"						;//¡Basta de hechicería!
-	ISaidStopMagic				=	"SVM_13_ISaidStopMagic"					;//¡¡Basta, BASTA!!
-	WeaponDown					=	"SVM_13_WeaponDown"						;//¡Deja esa arma!
-	ISaidWeaponDown				=	"SVM_13_ISaidWeaponDown"				;//¡Deja esa arma!
-	WatchYourAim				=	"SVM_13_WatchYourAim"					;//¿Estás apuntándome? ¡Cuidado!
-	WatchYourAimAngry			=	"SVM_13_WatchYourAimAngry"				;//Te diriges de cabeza a tu muerte. ¡Será mejor que apuntes hacia otro lado!
-	WhatAreYouDoing				=	"SVM_13_WhatAreYouDoing"				;//¿Para qué es eso?
-	LetsForgetOurLittleFight	=	"SVM_13_LetsForgetOurLittleFight"		;//Olvidemos esa discusión, ¿de acuerdo?
-	Strange						=	"SVM_13_Strange"						;//¿Dónde se ha metido? ¡Es imposible!
-	DieMonster					=	"SVM_13_DieMonster"						;//¡Esta noche tendremos carne!
-	DieMortalEnemy				=	"SVM_13_DieMortalEnemy"					;//¡Ahora te toca a ti! ¡Sin piedad!
+	StopMagic					=	"SVM_13_StopMagic"						;//Â¡Basta de hechicerÃ­a!
+	ISaidStopMagic				=	"SVM_13_ISaidStopMagic"					;//Â¡Â¡Basta, BASTA!!
+	WeaponDown					=	"SVM_13_WeaponDown"						;//Â¡Deja esa arma!
+	ISaidWeaponDown				=	"SVM_13_ISaidWeaponDown"				;//Â¡Deja esa arma!
+	WatchYourAim				=	"SVM_13_WatchYourAim"					;//Â¿EstÃ¡s apuntÃ¡ndome? Â¡Cuidado!
+	WatchYourAimAngry			=	"SVM_13_WatchYourAimAngry"				;//Te diriges de cabeza a tu muerte. Â¡SerÃ¡ mejor que apuntes hacia otro lado!
+	WhatAreYouDoing				=	"SVM_13_WhatAreYouDoing"				;//Â¿Para quÃ© es eso?
+	LetsForgetOurLittleFight	=	"SVM_13_LetsForgetOurLittleFight"		;//Olvidemos esa discusiÃ³n, Â¿de acuerdo?
+	Strange						=	"SVM_13_Strange"						;//Â¿DÃ³nde se ha metido? Â¡Es imposible!
+	DieMonster					=	"SVM_13_DieMonster"						;//Â¡Esta noche tendremos carne!
+	DieMortalEnemy				=	"SVM_13_DieMortalEnemy"					;//Â¡Ahora te toca a ti! Â¡Sin piedad!
 	NowWait						=	"SVM_13_NowWait"						;//Eso  va a significar una buena paliza...
-	YouStillNotHaveEnough		=	"SVM_13_YouStillNotHaveEnough"			;//No quieres intentarlo de nuevo, ¿verdad?
-	YouAskedForIt				=	"SVM_13_YouAskedForIt"					;//¡Tú lo has querido!
-	NowWaitIntruder				= 	"SVM_13_NowWaitIntruder"				;//¡Te vas a enterar, intruso!
-	IWillTeachYouRespectForForeignProperty	=	"SVM_13_IWillTeachYouRespctForForeignProperty"	;//¡Debería cortarte los dedos!
-	DirtyThief					=	"SVM_13_DirtyThief"						;//¡Ladrón asqueroso! ¡Voy a romperte las manos!
-	YouAttackedMyCharge			=	"SVM_13_YouAttackedMyCharge"			;//¡Aquí nadie sacude a nadie excepto yo!
-	YouKilledOneOfUs			=	"SVM_13_YouKilledOneOfUs"				;//¡Ha matado a uno de los nuestros!
-	Dead						=	"SVM_13_Dead"							;//¡Aaargh!
+	YouStillNotHaveEnough		=	"SVM_13_YouStillNotHaveEnough"			;//No quieres intentarlo de nuevo, Â¿verdad?
+	YouAskedForIt				=	"SVM_13_YouAskedForIt"					;//Â¡TÃº lo has querido!
+	NowWaitIntruder				= 	"SVM_13_NowWaitIntruder"				;//Â¡Te vas a enterar, intruso!
+	IWillTeachYouRespectForForeignProperty	=	"SVM_13_IWillTeachYouRespctForForeignProperty"	;//Â¡DeberÃ­a cortarte los dedos!
+	DirtyThief					=	"SVM_13_DirtyThief"						;//Â¡LadrÃ³n asqueroso! Â¡Voy a romperte las manos!
+	YouAttackedMyCharge			=	"SVM_13_YouAttackedMyCharge"			;//Â¡AquÃ­ nadie sacude a nadie excepto yo!
+	YouKilledOneOfUs			=	"SVM_13_YouKilledOneOfUs"				;//Â¡Ha matado a uno de los nuestros!
+	Dead						=	"SVM_13_Dead"							;//Â¡Aaargh!
 	Aargh_1						=	"SVM_13_Aargh_1"						;//Aargh
 	Aargh_2						=	"SVM_13_Aargh_2"						;//Aargh
 	Aargh_3						=	"SVM_13_Aargh_3"						;//Aargh
-	Berzerk						=	"SVM_13_Berzerk"						;//¡¡¡UUAAARRGGGHHH!!!
-	YoullBeSorryForThis			=	"SVM_13_YoullBeSorryForThis"			;//¡No vas a tener mucho tiempo para lamentarte!
-	YesYes						=	"SVM_13_YesYes"							;//¡No hay problema, no hay ningún problema!
+	Berzerk						=	"SVM_13_Berzerk"						;//Â¡Â¡Â¡UUAAARRGGGHHH!!!
+	YoullBeSorryForThis			=	"SVM_13_YoullBeSorryForThis"			;//Â¡No vas a tener mucho tiempo para lamentarte!
+	YesYes						=	"SVM_13_YesYes"							;//Â¡No hay problema, no hay ningÃºn problema!
 	ShitWhatAMonster			=	"SVM_13_ShitWhatAMonster"				;//No tengo el arma adecuada. Ya nos veremos...
-	Help						=	"SVM_13_Help"							;//¡Guaaaaaaahhhh! ¡Larguémonos!
-	WeWillMeetAgain				=	"SVM_13_WeWillMeetAgain"				;//¡Ya nos veremos!
-	NeverTryThatAgain			=	"SVM_13_NeverTryThatAgain"				;//¡La próxima vez te mataré!
-	ITakeYourWeapon				=	"SVM_13_ITakeYourWeapon"				;//¡Bonita arma! ¿Es tuya? ¿No? ¡De acuerdo!
+	Help						=	"SVM_13_Help"							;//Â¡Guaaaaaaahhhh! Â¡LarguÃ©monos!
+	WeWillMeetAgain				=	"SVM_13_WeWillMeetAgain"				;//Â¡Ya nos veremos!
+	NeverTryThatAgain			=	"SVM_13_NeverTryThatAgain"				;//Â¡La prÃ³xima vez te matarÃ©!
+	ITakeYourWeapon				=	"SVM_13_ITakeYourWeapon"				;//Â¡Bonita arma! Â¿Es tuya? Â¿No? Â¡De acuerdo!
 	ITookYourOre				=	"SVM_13_ITookYourOre"					;//Supongo que no te importa que me quede con un poco de mineral.
-	ShitNoOre					=	"SVM_13_ShitNoOre"						;//¡Ni siquiera tienes mineral en tus bolsillos!
-	HandsOff					=	"SVM_13_HandsOff"						;//¡Canalla! ¡Aparta tus manazas! ¡Yo te lo doy!
-	GetOutOfHere				=	"SVM_13_GetOutOfHere"					;//¡Largo! ¡Sal de aquí!
-	YouViolatedForbiddenTerritory=	"SVM_13_YouViolatedForbiddenTerritory"	;//¿Qué haces aquí?
-	YouWannaFoolMe				=	"SVM_13_YouWannaFoolMe"					;//¿Estás intentando dejarme en ridículo?
-	WhatsThisSupposedToBe		=	"SVM_13_WhatsThisSupposedToBe"			;//¡Eh, tú! ¿Qué haces rondando por aquí?
-	WhyAreYouInHere				=	"SVM_13_WhyYouAreInHere"				;//¿Qué haces aquí? ¡Lárgate o llamo a los guardias!
-	WhatDidYouInThere			=	"SVM_13_WhatDidYouInThere"				;//¡Aquí no pintas nada!
-	WiseMove					=	"SVM_13_WiseMove"						;//¡Has tenido suerte! ¡Me habría gustado partirte la cara!
-	Alarm						=	"SVM_13_Alarm"							;//¡Guardias! ¡Por aquí!
-	IntruderAlert				= 	"SVM_13_IntruderAlert"					;//¡¡¡ALERTA!!!
-	BehindYou					=	"SVM_13_BehindYou"						;//¡Detrás de ti!
-	TheresAFight				=	"SVM_13_TheresAFight"					;//A ver quién muerde el polvo.
-	HeyHeyHey					=	"SVM_13_HeyHeyHey"						;//¡Sí, otra vez!
-	CheerFight					=	"SVM_13_CheerFight"						;//¡Quiero ver sangre!
-	CheerFriend					=	"SVM_13_CheerFriend"					;//¡Dale la vuelta!
-	Ooh							=	"SVM_13_Ooh"							;//¡Devuélvele el golpe, idiota!
-	YeahWellDone				=	"SVM_13_YeahWellDone"					;//¡¡Síííí!!
-	RunCoward					=	"SVM_13_RunCoward"						;//¡Sí, lárgate!
-	HeDefeatedHim				=	"SVM_13_HeDefeatedHim"					;//¡Qué comportamiento más triste! Un poco de viento y habría caído solo.
-	HeDeservedIt				=	"SVM_13_HeDeservedIt"					;//¡Bah, se lo merece!
+	ShitNoOre					=	"SVM_13_ShitNoOre"						;//Â¡Ni siquiera tienes mineral en tus bolsillos!
+	HandsOff					=	"SVM_13_HandsOff"						;//Â¡Canalla! Â¡Aparta tus manazas! Â¡Yo te lo doy!
+	GetOutOfHere				=	"SVM_13_GetOutOfHere"					;//Â¡Largo! Â¡Sal de aquÃ­!
+	YouViolatedForbiddenTerritory=	"SVM_13_YouViolatedForbiddenTerritory"	;//Â¿QuÃ© haces aquÃ­?
+	YouWannaFoolMe				=	"SVM_13_YouWannaFoolMe"					;//Â¿EstÃ¡s intentando dejarme en ridÃ­culo?
+	WhatsThisSupposedToBe		=	"SVM_13_WhatsThisSupposedToBe"			;//Â¡Eh, tÃº! Â¿QuÃ© haces rondando por aquÃ­?
+	WhyAreYouInHere				=	"SVM_13_WhyYouAreInHere"				;//Â¿QuÃ© haces aquÃ­? Â¡LÃ¡rgate o llamo a los guardias!
+	WhatDidYouInThere			=	"SVM_13_WhatDidYouInThere"				;//Â¡AquÃ­ no pintas nada!
+	WiseMove					=	"SVM_13_WiseMove"						;//Â¡Has tenido suerte! Â¡Me habrÃ­a gustado partirte la cara!
+	Alarm						=	"SVM_13_Alarm"							;//Â¡Guardias! Â¡Por aquÃ­!
+	IntruderAlert				= 	"SVM_13_IntruderAlert"					;//Â¡Â¡Â¡ALERTA!!!
+	BehindYou					=	"SVM_13_BehindYou"						;//Â¡DetrÃ¡s de ti!
+	TheresAFight				=	"SVM_13_TheresAFight"					;//A ver quiÃ©n muerde el polvo.
+	HeyHeyHey					=	"SVM_13_HeyHeyHey"						;//Â¡SÃ­, otra vez!
+	CheerFight					=	"SVM_13_CheerFight"						;//Â¡Quiero ver sangre!
+	CheerFriend					=	"SVM_13_CheerFriend"					;//Â¡Dale la vuelta!
+	Ooh							=	"SVM_13_Ooh"							;//Â¡DevuÃ©lvele el golpe, idiota!
+	YeahWellDone				=	"SVM_13_YeahWellDone"					;//Â¡Â¡SÃ­Ã­Ã­Ã­!!
+	RunCoward					=	"SVM_13_RunCoward"						;//Â¡SÃ­, lÃ¡rgate!
+	HeDefeatedHim				=	"SVM_13_HeDefeatedHim"					;//Â¡QuÃ© comportamiento mÃ¡s triste! Un poco de viento y habrÃ­a caÃ­do solo.
+	HeDeservedIt				=	"SVM_13_HeDeservedIt"					;//Â¡Bah, se lo merece!
 	HeKilledHim					=	"SVM_13_HeKilledHim"					;//Es un suicidio matar a alguien delante de testigos.
-	ItWasAGoodFight				=	"SVM_13_ItWasAGoodFight"				;//¡Buena pelea!
+	ItWasAGoodFight				=	"SVM_13_ItWasAGoodFight"				;//Â¡Buena pelea!
 	Awake						=	"SVM_13_Awake"							;//Aaaau (bostezo)
-	FriendlyGreetings			=	"SVM_13_FriendlyGreetings"				;//¿Todo va bien?
-	ALGreetings					=	"SVM_13_ALGreetings"					;//¡Por Gómez!
-	MageGreetings				=	"SVM_13_MageGreetings"					;//¡Por el honor de la magia!
-	SectGreetings				=	"SVM_13_SectGreetings"					;//¡Despierta!
-	ThereHeIs					= 	"SVM_13_ThereHeIs"						;//¿Estás ciego? ¡Por allí!
-	NoLearnNoPoints				= 	"SVM_13_NoLearnNoPoints"				;//No puedo enseñarte nada. No tienes suficiente experiencia.
-	NoLearnOverMax				= 	"SVM_13_NoLearnOverMax"					;//Tus posibilidades no dan más de sí. Deberías aprender algo diferente.
+	FriendlyGreetings			=	"SVM_13_FriendlyGreetings"				;//Â¿Todo va bien?
+	ALGreetings					=	"SVM_13_ALGreetings"					;//Â¡Por GÃ³mez!
+	MageGreetings				=	"SVM_13_MageGreetings"					;//Â¡Por el honor de la magia!
+	SectGreetings				=	"SVM_13_SectGreetings"					;//Â¡Despierta!
+	ThereHeIs					= 	"SVM_13_ThereHeIs"						;//Â¿EstÃ¡s ciego? Â¡Por allÃ­!
+	NoLearnNoPoints				= 	"SVM_13_NoLearnNoPoints"				;//No puedo enseÃ±arte nada. No tienes suficiente experiencia.
+	NoLearnOverMax				= 	"SVM_13_NoLearnOverMax"					;//Tus posibilidades no dan mÃ¡s de sÃ­. DeberÃ­as aprender algo diferente.
 	NoLearnYouAlreadyKnow		=	"SVM_13_NoLearnYouAlreadyKnow"			;//Tienes que llegar al nivel avanzado antes de convertirte en maestro.
-	NoLearnYoureBetter			=	"SVM_13_NoLearnYoureBetter"				;//¡Ya estás por encima de ese nivel!
-	HeyYou						=	"SVM_13_HeyYou"							;//¡Oye, tú!
-	NotNow						=	"SVM_13_NotNow"							;//¡Ahora no!
-	WhatDoYouWant				=	"SVM_13_WhatDoYouWant"					;//¿Qué quieres de mí?
-	ISaidWhatDoYouWant			=	"SVM_13_ISaidWhatDoYouWant"				;//¿Puedo hacer algo por ti?
-	MakeWay						=	"SVM_13_MakeWay"						;//¡Déjame pasar!
-	OutOfMyWay					=	"SVM_13_OutOfMyWay"						;//¡Quítate de en medio!
-	YouDeafOrWhat				=	"SVM_13_YouDeafOrWhat"					;//¿Buscas bronca? ¡Lárgate de aquí!
-	LookingForTroubleAgain		=	"SVM_13_LookingForTroubleAgain"			;//¿Otra vez buscas líos conmigo?
-	LookAway					=	"SVM_13_LookAway"						;//¡No he visto NADA!
+	NoLearnYoureBetter			=	"SVM_13_NoLearnYoureBetter"				;//Â¡Ya estÃ¡s por encima de ese nivel!
+	HeyYou						=	"SVM_13_HeyYou"							;//Â¡Oye, tÃº!
+	NotNow						=	"SVM_13_NotNow"							;//Â¡Ahora no!
+	WhatDoYouWant				=	"SVM_13_WhatDoYouWant"					;//Â¿QuÃ© quieres de mÃ­?
+	ISaidWhatDoYouWant			=	"SVM_13_ISaidWhatDoYouWant"				;//Â¿Puedo hacer algo por ti?
+	MakeWay						=	"SVM_13_MakeWay"						;//Â¡DÃ©jame pasar!
+	OutOfMyWay					=	"SVM_13_OutOfMyWay"						;//Â¡QuÃ­tate de en medio!
+	YouDeafOrWhat				=	"SVM_13_YouDeafOrWhat"					;//Â¿Buscas bronca? Â¡LÃ¡rgate de aquÃ­!
+	LookingForTroubleAgain		=	"SVM_13_LookingForTroubleAgain"			;//Â¿Otra vez buscas lÃ­os conmigo?
+	LookAway					=	"SVM_13_LookAway"						;//Â¡No he visto NADA!
 	OkayKeepIt					=	"SVM_13_OkayKeepIt"						;//Tranquilo. Es tuyo.
-	WhatsThat					=	"SVM_13_WhatsThat"						;//¿Qué ha sido eso?
-	ThatsMyWeapon				=	"SVM_13_ThatsMyWeapon"					;//¡Devuélveme mi arma!
-	GiveItToMe					=	"SVM_13_GiveItToMe"						;//¡Dámela!
-	YouCanKeeptheCrap			=	"SVM_13_YouCanKeeptheCrap"				;//¡Vale! ¡Quédatela! ¡Encontraré otra solución!
-	TheyKilledMyFriend			=	"SVM_13_TheyKilledMyFriend"				;//¡Uno de los nuestros ha muerto! ¡Esto clama venganza!
-	YouDisturbedMySlumber		=	"SVM_13_YouDisturbedMySlumber"			;//¿Por qué me has despertado?
-	SuckerGotSome				=	"SVM_13_SuckerGotSome"					;//¡Te mereces la paliza que te han dado!
-	SuckerDefeatedEBr			=	"SVM_13_SuckerDefeatedEBr"				;//¡Has tumbado a un magnate del mineral! ¡Está realmente furioso contigo!
-	SuckerDefeatedGur			=	"SVM_13_SuckerDefeatedGur"				;//Has tumbado a un gurú. ¡Parece que te las apañas para atraer problemas como un imán!
-	SuckerDefeatedMage			=	"SVM_13_SuckerDefeatedMage"				;//¡Vencer a un mago es muy mala idea!
-	SuckerDefeatedNov_Guard		= 	"SVM_13_SuckerDefeatedNov_Guard"		;//¡Así que eres tú el que pega a los novicios!
-	SuckerDefeatedVlk_Guard		= 	"SVM_13_SuckerDefeatedVlk_Guard"		;//¡Deja en paz a mis muchachos!
+	WhatsThat					=	"SVM_13_WhatsThat"						;//Â¿QuÃ© ha sido eso?
+	ThatsMyWeapon				=	"SVM_13_ThatsMyWeapon"					;//Â¡DevuÃ©lveme mi arma!
+	GiveItToMe					=	"SVM_13_GiveItToMe"						;//Â¡DÃ¡mela!
+	YouCanKeeptheCrap			=	"SVM_13_YouCanKeeptheCrap"				;//Â¡Vale! Â¡QuÃ©datela! Â¡EncontrarÃ© otra soluciÃ³n!
+	TheyKilledMyFriend			=	"SVM_13_TheyKilledMyFriend"				;//Â¡Uno de los nuestros ha muerto! Â¡Esto clama venganza!
+	YouDisturbedMySlumber		=	"SVM_13_YouDisturbedMySlumber"			;//Â¿Por quÃ© me has despertado?
+	SuckerGotSome				=	"SVM_13_SuckerGotSome"					;//Â¡Te mereces la paliza que te han dado!
+	SuckerDefeatedEBr			=	"SVM_13_SuckerDefeatedEBr"				;//Â¡Has tumbado a un magnate del mineral! Â¡EstÃ¡ realmente furioso contigo!
+	SuckerDefeatedGur			=	"SVM_13_SuckerDefeatedGur"				;//Has tumbado a un gurÃº. Â¡Parece que te las apaÃ±as para atraer problemas como un imÃ¡n!
+	SuckerDefeatedMage			=	"SVM_13_SuckerDefeatedMage"				;//Â¡Vencer a un mago es muy mala idea!
+	SuckerDefeatedNov_Guard		= 	"SVM_13_SuckerDefeatedNov_Guard"		;//Â¡AsÃ­ que eres tÃº el que pega a los novicios!
+	SuckerDefeatedVlk_Guard		= 	"SVM_13_SuckerDefeatedVlk_Guard"		;//Â¡Deja en paz a mis muchachos!
 	YouDefeatedMyComrade		=	"SVM_13_YouDefeatedMyComrade"			;//No es buena idea acercarse a mis amigos.
-	YouDefeatedNOV_Guard		=	"SVM_13_YouDefeatedNOV_Guard"			;//¡No se tolerará que causes problemas!
-	YouDefeatedVLK_Guard		=	"SVM_13_YouDefeatedVLK_Guard"			;//¡Si golpeas a alguien que esté bajo mi protección, habrá repercusiones!
-	YouStoleFromMe				=	"SVM_13_YouStoleFromMe"					;//¡Me has robado! ¡No vuelvas a intentarlo!
-	YouStoleFromUs				=	"SVM_13_YouStoleFromUs"					;//¡Queremos recuperar nuestras cosas! ¡Dánoslas!
-	YouStoleFromEBr				=	"SVM_13_YouStoleFromEBr"				;//¡Has robado a los magnates del mineral! ¿Para qué demonios lo has hecho?
-	YouStoleFromGur				=	"SVM_13_YouStoleFromGur"				;//¿Has robado a los gurús? Lástima que te pillaran.
-	StoleFromMage				=	"SVM_13_StoleFromMage"					;//¡Has robado a los magos! ¡Qué idea más estúpida!
-	YouKilledMyFriend			=	"SVM_13_YouKilledMyFriend"				;//¡Uno de los nuestros ha muerto y tú estás implicado! ¡Si cometes el más mínimo error, morirás!
-	YouKilledEBr				=	"SVM_13_YouKilledEBr"					;//¡Has matado a un magnate del mineral! Tío, ¿estás zumbado?
-	YouKilledGur				=	"SVM_13_YouKilledGur"					;//¡Has matado a un gurú! ¡No me lo puedo creer!
-	YouKilledMage				=	"SVM_13_YouKilledMage"					;//¡Has matado a un mago! ¿Cómo tienes pensado justificarlo?
+	YouDefeatedNOV_Guard		=	"SVM_13_YouDefeatedNOV_Guard"			;//Â¡No se tolerarÃ¡ que causes problemas!
+	YouDefeatedVLK_Guard		=	"SVM_13_YouDefeatedVLK_Guard"			;//Â¡Si golpeas a alguien que estÃ© bajo mi protecciÃ³n, habrÃ¡ repercusiones!
+	YouStoleFromMe				=	"SVM_13_YouStoleFromMe"					;//Â¡Me has robado! Â¡No vuelvas a intentarlo!
+	YouStoleFromUs				=	"SVM_13_YouStoleFromUs"					;//Â¡Queremos recuperar nuestras cosas! Â¡DÃ¡noslas!
+	YouStoleFromEBr				=	"SVM_13_YouStoleFromEBr"				;//Â¡Has robado a los magnates del mineral! Â¿Para quÃ© demonios lo has hecho?
+	YouStoleFromGur				=	"SVM_13_YouStoleFromGur"				;//Â¿Has robado a los gurÃºs? LÃ¡stima que te pillaran.
+	StoleFromMage				=	"SVM_13_StoleFromMage"					;//Â¡Has robado a los magos! Â¡QuÃ© idea mÃ¡s estÃºpida!
+	YouKilledMyFriend			=	"SVM_13_YouKilledMyFriend"				;//Â¡Uno de los nuestros ha muerto y tÃº estÃ¡s implicado! Â¡Si cometes el mÃ¡s mÃ­nimo error, morirÃ¡s!
+	YouKilledEBr				=	"SVM_13_YouKilledEBr"					;//Â¡Has matado a un magnate del mineral! TÃ­o, Â¿estÃ¡s zumbado?
+	YouKilledGur				=	"SVM_13_YouKilledGur"					;//Â¡Has matado a un gurÃº! Â¡No me lo puedo creer!
+	YouKilledMage				=	"SVM_13_YouKilledMage"					;//Â¡Has matado a un mago! Â¿CÃ³mo tienes pensado justificarlo?
 	YouKilledOCfolk				=	"SVM_13_YouKilledOCfolk"				;//Ha muerto un miembro del Campamento Viejo, y se ha relacionado tu nombre con la muerte...
-	YouKilledNCfolk				=	"SVM_13_YouKilledNCfolk"				;//¡El Campamento Nuevo ha sufrido una pérdida trágica, y parece que estás implicado!
-	YouKilledPSIfolk			=	"SVM_13_YouKilledPSIfolk"				;//¡La hermandad tiene un fiel menos, y su muerte pesa sobre tu conciencia!
-	GetThingsRight				=	"SVM_13_GetThingsRight"					;//¡No será fácil solucionar esto!
-	YouDefeatedMeWell			=	"SVM_13_YouDefeatedMeWell"				;//¡Me has dado una buena tunda! ¡Ha sido una lucha justa, tío! ¡Pero ya ha acabado!
-	Smalltalk01					=	"SVM_13_Smalltalk01"					;// ...si tú crees...
+	YouKilledNCfolk				=	"SVM_13_YouKilledNCfolk"				;//Â¡El Campamento Nuevo ha sufrido una pÃ©rdida trÃ¡gica, y parece que estÃ¡s implicado!
+	YouKilledPSIfolk			=	"SVM_13_YouKilledPSIfolk"				;//Â¡La hermandad tiene un fiel menos, y su muerte pesa sobre tu conciencia!
+	GetThingsRight				=	"SVM_13_GetThingsRight"					;//Â¡No serÃ¡ fÃ¡cil solucionar esto!
+	YouDefeatedMeWell			=	"SVM_13_YouDefeatedMeWell"				;//Â¡Me has dado una buena tunda! Â¡Ha sido una lucha justa, tÃ­o! Â¡Pero ya ha acabado!
+	Smalltalk01					=	"SVM_13_Smalltalk01"					;// ...si tÃº crees...
 	Smalltalk02					=	"SVM_13_Smalltalk02"					;// ...tal vez...
 	Smalltalk03					=	"SVM_13_Smalltalk03"					;// ...eso no fue muy inteligente...
-	Smalltalk04					=	"SVM_13_Smalltalk04"					;// ...será mejor que me mantenga al margen...
+	Smalltalk04					=	"SVM_13_Smalltalk04"					;// ...serÃ¡ mejor que me mantenga al margen...
 	Smalltalk05					=	"SVM_13_Smalltalk05"					;// ...en realidad no es mi problema...
-	Smalltalk06					=	"SVM_13_Smalltalk06"					;// ...era evidente que habría problemas...
-	Smalltalk07					=	"SVM_13_Smalltalk07"					;// ...pero sé discreto; la gente no tiene por qué saberlo.
-	Smalltalk08					=	"SVM_13_Smalltalk08"					;// ...no volverá a suceder...
+	Smalltalk06					=	"SVM_13_Smalltalk06"					;// ...era evidente que habrÃ­a problemas...
+	Smalltalk07					=	"SVM_13_Smalltalk07"					;// ...pero sÃ© discreto; la gente no tiene por quÃ© saberlo.
+	Smalltalk08					=	"SVM_13_Smalltalk08"					;// ...no volverÃ¡ a suceder...
 	Smalltalk09					=	"SVM_13_Smalltalk09"					;// ...debe haber algo de cierto en esa historia...
 	Smalltalk10					=	"SVM_13_Smalltalk10"					;// ...has de tener cuidado con lo que dices a la gente...
 	Smalltalk11					=	"SVM_13_Smalltalk11"					;// ...mientras no me vea implicado...
-	Smalltalk12					=	"SVM_13_Smalltalk12"					;// ...no deberías creerte todo lo que oyes...
-	Smalltalk13					=	"SVM_13_Smalltalk13"					;// ...no me gustaría estar en su lugar...
+	Smalltalk12					=	"SVM_13_Smalltalk12"					;// ...no deberÃ­as creerte todo lo que oyes...
+	Smalltalk13					=	"SVM_13_Smalltalk13"					;// ...no me gustarÃ­a estar en su lugar...
 	Smalltalk14					=	"SVM_13_Smalltalk14"					;// ...lo mismo de siempre...
 	Smalltalk15					=	"SVM_13_Smalltalk15"					;// ...algunos no aprenden...
-	Smalltalk16					=	"SVM_13_Smalltalk16"					;// ...hubo un tiempo en que las cosas habrían sucedido de manera muy distinta...
+	Smalltalk16					=	"SVM_13_Smalltalk16"					;// ...hubo un tiempo en que las cosas habrÃ­an sucedido de manera muy distinta...
 	Smalltalk17					=	"SVM_13_Smalltalk17"					;// ...la gente no para de hablar...
 	Smalltalk18					=	"SVM_13_Smalltalk18"					;// ...ya no hago caso de los chismorreos...
-	Smalltalk19					=	"SVM_13_Smalltalk19"					;// ...confías en alguien y te metes en un lío, eso es lo que pasa...
-	Smalltalk20					=	"SVM_13_Smalltalk20"					;// ...me extraña que vaya a cambiar...
-	Smalltalk21					=	"SVM_13_Smalltalk21"					;// ...seguramente tengas razón...
-	Smalltalk22					=	"SVM_13_Smalltalk22"					;// ...espera. Será mejor no apresurarse...
-	Smalltalk23					=	"SVM_13_Smalltalk23"					;// ...creía que eso se había resuelto hace mucho...
+	Smalltalk19					=	"SVM_13_Smalltalk19"					;// ...confÃ­as en alguien y te metes en un lÃ­o, eso es lo que pasa...
+	Smalltalk20					=	"SVM_13_Smalltalk20"					;// ...me extraÃ±a que vaya a cambiar...
+	Smalltalk21					=	"SVM_13_Smalltalk21"					;// ...seguramente tengas razÃ³n...
+	Smalltalk22					=	"SVM_13_Smalltalk22"					;// ...espera. SerÃ¡ mejor no apresurarse...
+	Smalltalk23					=	"SVM_13_Smalltalk23"					;// ...creÃ­a que eso se habÃ­a resuelto hace mucho...
 	Smalltalk24					=	"SVM_13_Smalltalk24"					;// ...hablemos de otra cosa...
 	Om							= 	"SVM_13_Om"							;//Ommm
 };
@@ -1996,135 +1996,135 @@ instance SVM_13	(C_SVM)					// Fanatiker	Agressiv, übereifrig, Ähnlich wie Stimm
 
 
 //////////////////////////////////////////
-instance SVM_14	(C_SVM)				// Xardas(DMB),Corristo,Erzähler	alt	arrogant, gebildet
+instance SVM_14	(C_SVM)				// Xardas(DMB),Corristo,ErzÃ¤hler	alt	arrogant, gebildet
 {
-	StopMagic					=	"SVM_14_StopMagic"						;//¡Detén tu magia!
-	ISaidStopMagic				=	"SVM_14_ISaidStopMagic"					;//¡Ya me has oído: detén tu magia!
-	WeaponDown					=	"SVM_14_WeaponDown"						;//¿Qué quieres con esa arma?
-	ISaidWeaponDown				=	"SVM_14_ISaidWeaponDown"				;//¡Deja esa arma!
-	WatchYourAim				=	"SVM_14_WatchYourAim"					;//¡Estás apuntándome!
-	WatchYourAimAngry			=	"SVM_14_WatchYourAimAngry"				;//¿Quieres dejar de apuntarme?
-	WhatAreYouDoing				=	"SVM_14_WhatAreYouDoing"				;//¡Ten cuidado!
-	LetsForgetOurLittleFight	=	"SVM_14_LetsForgetOurLittleFight"		;//¡Olvidemos nuestra pequeña diferencia de opiniones!
-	Strange						=	"SVM_14_Strange"						;//¡Buen truco, acaba de desaparecer!
+	StopMagic					=	"SVM_14_StopMagic"						;//Â¡DetÃ©n tu magia!
+	ISaidStopMagic				=	"SVM_14_ISaidStopMagic"					;//Â¡Ya me has oÃ­do: detÃ©n tu magia!
+	WeaponDown					=	"SVM_14_WeaponDown"						;//Â¿QuÃ© quieres con esa arma?
+	ISaidWeaponDown				=	"SVM_14_ISaidWeaponDown"				;//Â¡Deja esa arma!
+	WatchYourAim				=	"SVM_14_WatchYourAim"					;//Â¡EstÃ¡s apuntÃ¡ndome!
+	WatchYourAimAngry			=	"SVM_14_WatchYourAimAngry"				;//Â¿Quieres dejar de apuntarme?
+	WhatAreYouDoing				=	"SVM_14_WhatAreYouDoing"				;//Â¡Ten cuidado!
+	LetsForgetOurLittleFight	=	"SVM_14_LetsForgetOurLittleFight"		;//Â¡Olvidemos nuestra pequeÃ±a diferencia de opiniones!
+	Strange						=	"SVM_14_Strange"						;//Â¡Buen truco, acaba de desaparecer!
 	DieMonster					=	"SVM_14_DieMonster"						;//Una criatura fastidiosa.
-	DieMortalEnemy				=	"SVM_14_DieMortalEnemy"					;//Tengo que matarte... ¡Como comprenderás, no es nada personal!
-	NowWait						=	"SVM_14_NowWait"						;//¡Por ahora es suficiente!
-	YouStillNotHaveEnough		=	"SVM_14_YouStillNotHaveEnough"			;//No quieres bronca otra vez, ¿verdad?
-	YouAskedForIt				=	"SVM_14_YouAskedForIt"					;//¡Así lo has querido!
-	NowWaitIntruder				= 	"SVM_14_NowWaitIntruder"				;//¡No se te ha invitado!
-	IWillTeachYouRespectForForeignProperty	=	"SVM_14_IWillTeachYouRespectForForeignProperty"	;//¡Mis propiedades no son para ti!
-	DirtyThief					=	"SVM_14_DirtyThief"						;//¡Has tomado prestado algo mío! ¡Ahora tendrás que pagar por ello!
-	YouAttackedMyCharge			=	"SVM_14_YouAttackedMyCharge"			;//¡Tienes que aprender a cumplir las normas!
-	YouKilledOneOfUs			=	"SVM_14_YouKilledOneOfUs"				;//¡Has matado a alguien!
-	Dead						=	"SVM_14_Dead"							;//¡Aaargh!
+	DieMortalEnemy				=	"SVM_14_DieMortalEnemy"					;//Tengo que matarte... Â¡Como comprenderÃ¡s, no es nada personal!
+	NowWait						=	"SVM_14_NowWait"						;//Â¡Por ahora es suficiente!
+	YouStillNotHaveEnough		=	"SVM_14_YouStillNotHaveEnough"			;//No quieres bronca otra vez, Â¿verdad?
+	YouAskedForIt				=	"SVM_14_YouAskedForIt"					;//Â¡AsÃ­ lo has querido!
+	NowWaitIntruder				= 	"SVM_14_NowWaitIntruder"				;//Â¡No se te ha invitado!
+	IWillTeachYouRespectForForeignProperty	=	"SVM_14_IWillTeachYouRespectForForeignProperty"	;//Â¡Mis propiedades no son para ti!
+	DirtyThief					=	"SVM_14_DirtyThief"						;//Â¡Has tomado prestado algo mÃ­o! Â¡Ahora tendrÃ¡s que pagar por ello!
+	YouAttackedMyCharge			=	"SVM_14_YouAttackedMyCharge"			;//Â¡Tienes que aprender a cumplir las normas!
+	YouKilledOneOfUs			=	"SVM_14_YouKilledOneOfUs"				;//Â¡Has matado a alguien!
+	Dead						=	"SVM_14_Dead"							;//Â¡Aaargh!
 	Aargh_1						=	"SVM_14_Aargh_1"						;//Aargh
 	Aargh_2						=	"SVM_14_Aargh_2"						;//Aargh
 	Aargh_3						=	"SVM_14_Aargh_3"						;//Aargh
-	Berzerk						=	"SVM_14_Berzerk"						;//¡¡¡UUAAARRGGGHHH!!!
-	YoullBeSorryForThis			=	"SVM_14_YoullBeSorryForThis"			;//¡Te arrepentirás!
-	YesYes						=	"SVM_14_YesYes"							;//¡Vale, vale!
-	ShitWhatAMonster			=	"SVM_14_ShitWhatAMonster"				;//¡No quiero afrontar este desafío en este momento!
-	Help						=	"SVM_14_Help"							;//¡Tengo que volver a mis estudios!
-	WeWillMeetAgain				=	"SVM_14_WeWillMeetAgain"				;//¡Seguro que nos volveremos a ver!
-	NeverTryThatAgain			=	"SVM_14_NeverTryThatAgain"				;//¡Será mejor que no vuelvas a hacer eso!
-	ITakeYourWeapon				=	"SVM_14_ITakeYourWeapon"				;//¡Me quedaré con esa arma!
-	ITookYourOre				=	"SVM_14_ITookYourOre"					;//¡Seguro que el mineral resulta útil!
-	ShitNoOre					=	"SVM_14_ShitNoOre"						;//¡No tienes nada de mineral!
-	HandsOff					=	"SVM_14_HandsOff"						;//¡Aparta tus manazas!
-	GetOutOfHere				=	"SVM_14_GetOutOfHere"					;//¡Largo de aquí!
-	YouViolatedForbiddenTerritory=	"SVM_14_YouViolatedForbiddenTerritory"	;//¿Cómo has entrado?
-	YouWannaFoolMe				=	"SVM_14_YouWannaFoolMe"					;//¡Debes estar bromeando!
-	WhatsThisSupposedToBe		=	"SVM_14_WhatsThisSupposedToBe"			;//¿Qué buscas a escondidas por aquí?
-	WhyAreYouInHere				=	"SVM_14_WhyYouAreInHere"				;//¡Lárgate antes de que llame a los guardias!
-	WhatDidYouInThere			=	"SVM_14_WhatDidYouInThere"				;//¡Aquí no pintas nada! ¿Te enteras?
-	WiseMove					=	"SVM_14_WiseMove"						;//¡Inteligente decisión!
-	Alarm						=	"SVM_14_Alarm"							;//¡Guardias! ¡Aquí, aquí!
-	IntruderAlert				= 	"SVM_14_IntruderAlert"					;//¡¡¡INTRUSO!!!
-	BehindYou					=	"SVM_14_BehindYou"						;//¡Detrás de ti!
-	TheresAFight				=	"SVM_14_TheresAFight"					;//¡Una pelea!
+	Berzerk						=	"SVM_14_Berzerk"						;//Â¡Â¡Â¡UUAAARRGGGHHH!!!
+	YoullBeSorryForThis			=	"SVM_14_YoullBeSorryForThis"			;//Â¡Te arrepentirÃ¡s!
+	YesYes						=	"SVM_14_YesYes"							;//Â¡Vale, vale!
+	ShitWhatAMonster			=	"SVM_14_ShitWhatAMonster"				;//Â¡No quiero afrontar este desafÃ­o en este momento!
+	Help						=	"SVM_14_Help"							;//Â¡Tengo que volver a mis estudios!
+	WeWillMeetAgain				=	"SVM_14_WeWillMeetAgain"				;//Â¡Seguro que nos volveremos a ver!
+	NeverTryThatAgain			=	"SVM_14_NeverTryThatAgain"				;//Â¡SerÃ¡ mejor que no vuelvas a hacer eso!
+	ITakeYourWeapon				=	"SVM_14_ITakeYourWeapon"				;//Â¡Me quedarÃ© con esa arma!
+	ITookYourOre				=	"SVM_14_ITookYourOre"					;//Â¡Seguro que el mineral resulta Ãºtil!
+	ShitNoOre					=	"SVM_14_ShitNoOre"						;//Â¡No tienes nada de mineral!
+	HandsOff					=	"SVM_14_HandsOff"						;//Â¡Aparta tus manazas!
+	GetOutOfHere				=	"SVM_14_GetOutOfHere"					;//Â¡Largo de aquÃ­!
+	YouViolatedForbiddenTerritory=	"SVM_14_YouViolatedForbiddenTerritory"	;//Â¿CÃ³mo has entrado?
+	YouWannaFoolMe				=	"SVM_14_YouWannaFoolMe"					;//Â¡Debes estar bromeando!
+	WhatsThisSupposedToBe		=	"SVM_14_WhatsThisSupposedToBe"			;//Â¿QuÃ© buscas a escondidas por aquÃ­?
+	WhyAreYouInHere				=	"SVM_14_WhyYouAreInHere"				;//Â¡LÃ¡rgate antes de que llame a los guardias!
+	WhatDidYouInThere			=	"SVM_14_WhatDidYouInThere"				;//Â¡AquÃ­ no pintas nada! Â¿Te enteras?
+	WiseMove					=	"SVM_14_WiseMove"						;//Â¡Inteligente decisiÃ³n!
+	Alarm						=	"SVM_14_Alarm"							;//Â¡Guardias! Â¡AquÃ­, aquÃ­!
+	IntruderAlert				= 	"SVM_14_IntruderAlert"					;//Â¡Â¡Â¡INTRUSO!!!
+	BehindYou					=	"SVM_14_BehindYou"						;//Â¡DetrÃ¡s de ti!
+	TheresAFight				=	"SVM_14_TheresAFight"					;//Â¡Una pelea!
 	HeyHeyHey					=	"SVM_14_HeyHeyHey"						;//Hm.
-	CheerFight					=	"SVM_14_CheerFight"						;//¡Qué inútil!
-	CheerFriend					=	"SVM_14_CheerFriend"					;//¡Parece bastante tenaz!
-	Ooh							=	"SVM_14_Ooh"							;//¡Eso duele!
+	CheerFight					=	"SVM_14_CheerFight"						;//Â¡QuÃ© inÃºtil!
+	CheerFriend					=	"SVM_14_CheerFriend"					;//Â¡Parece bastante tenaz!
+	Ooh							=	"SVM_14_Ooh"							;//Â¡Eso duele!
 	YeahWellDone				=	"SVM_14_YeahWellDone"					;//Es un modo de hacerlo...
-	RunCoward					=	"SVM_14_RunCoward"						;//¡Ha aprendido la lección!
+	RunCoward					=	"SVM_14_RunCoward"						;//Â¡Ha aprendido la lecciÃ³n!
 	HeDefeatedHim				=	"SVM_14_HeDefeatedHim"					;//Eso ha sido todo.
-	HeDeservedIt				=	"SVM_14_HeDeservedIt"					;//¡Se lo merece!
-	HeKilledHim					=	"SVM_14_HeKilledHim"					;//Eso era innecesario. Ahora tendrás que afrontar las consecuencias.
-	ItWasAGoodFight				=	"SVM_14_ItWasAGoodFight"				;//¡Estas peleas me aburren!
-	Awake						=	"SVM_14_Awake"							;//¿Me he dormido?
+	HeDeservedIt				=	"SVM_14_HeDeservedIt"					;//Â¡Se lo merece!
+	HeKilledHim					=	"SVM_14_HeKilledHim"					;//Eso era innecesario. Ahora tendrÃ¡s que afrontar las consecuencias.
+	ItWasAGoodFight				=	"SVM_14_ItWasAGoodFight"				;//Â¡Estas peleas me aburren!
+	Awake						=	"SVM_14_Awake"							;//Â¿Me he dormido?
 	FriendlyGreetings			=	"SVM_14_FriendlyGreetings"				;//Saludos.
-	ALGreetings					=	"SVM_14_ALGreetings"					;//¡Por Gómez!
-	MageGreetings				=	"SVM_14_MageGreetings"					;//¡Por el honor de la magia!
-	SectGreetings				=	"SVM_14_SectGreetings"					;//¡Despierta!
-	ThereHeIs					= 	"SVM_14_ThereHeIs"						;//Está por allí.
-	NoLearnNoPoints				= 	"SVM_14_NoLearnNoPoints"				;//No puedo enseñarte nada. No tienes suficiente experiencia.
-	NoLearnOverMax				= 	"SVM_14_NoLearnOverMax"					;//Tus posibilidades no dan más de sí. Deberías aprender algo diferente.
+	ALGreetings					=	"SVM_14_ALGreetings"					;//Â¡Por GÃ³mez!
+	MageGreetings				=	"SVM_14_MageGreetings"					;//Â¡Por el honor de la magia!
+	SectGreetings				=	"SVM_14_SectGreetings"					;//Â¡Despierta!
+	ThereHeIs					= 	"SVM_14_ThereHeIs"						;//EstÃ¡ por allÃ­.
+	NoLearnNoPoints				= 	"SVM_14_NoLearnNoPoints"				;//No puedo enseÃ±arte nada. No tienes suficiente experiencia.
+	NoLearnOverMax				= 	"SVM_14_NoLearnOverMax"					;//Tus posibilidades no dan mÃ¡s de sÃ­. DeberÃ­as aprender algo diferente.
 	NoLearnYouAlreadyKnow		=	"SVM_14_NoLearnYouAlreadyKnow"			;//Tienes que llegar al nivel avanzado antes de convertirte en maestro
-	NoLearnYoureBetter			=	"SVM_14_NoLearnYoureBetter"				;//¡Ya estás por encima de ese nivel!
-	HeyYou						=	"SVM_14_HeyYou"							;//¡Oye, tú!
-	NotNow						=	"SVM_14_NotNow"							;//¡Ahora no!
-	WhatDoYouWant				=	"SVM_14_WhatDoYouWant"					;//¿Qué puedo hacer por ti?
-	ISaidWhatDoYouWant			=	"SVM_14_ISaidWhatDoYouWant"				;//¿Puedo ayudarte?
-	MakeWay						=	"SVM_14_MakeWay"						;//¡Hazte a un lado!
-	OutOfMyWay					=	"SVM_14_OutOfMyWay"						;//Déjame pasar.
-	YouDeafOrWhat				=	"SVM_14_YouDeafOrWhat"					;//¡Lárgate de una vez!
-	LookingForTroubleAgain		=	"SVM_14_LookingForTroubleAgain"			;//¿Otra vez buscas líos conmigo?
-	LookAway					=	"SVM_14_LookAway"						;//¡No me interesa lo que hagáis!
-	OkayKeepIt					=	"SVM_14_OkayKeepIt"						;//¡Quédatela!
-	WhatsThat					=	"SVM_14_WhatsThat"						;//¿Qué ha sido eso?
-	ThatsMyWeapon				=	"SVM_14_ThatsMyWeapon"					;//¡Devuélveme mi arma!
-	GiveItToMe					=	"SVM_14_GiveItToMe"						;//¡Dámela!
-	YouCanKeeptheCrap			=	"SVM_14_YouCanKeeptheCrap"				;//Vale. ¡Ya no la quiero!
+	NoLearnYoureBetter			=	"SVM_14_NoLearnYoureBetter"				;//Â¡Ya estÃ¡s por encima de ese nivel!
+	HeyYou						=	"SVM_14_HeyYou"							;//Â¡Oye, tÃº!
+	NotNow						=	"SVM_14_NotNow"							;//Â¡Ahora no!
+	WhatDoYouWant				=	"SVM_14_WhatDoYouWant"					;//Â¿QuÃ© puedo hacer por ti?
+	ISaidWhatDoYouWant			=	"SVM_14_ISaidWhatDoYouWant"				;//Â¿Puedo ayudarte?
+	MakeWay						=	"SVM_14_MakeWay"						;//Â¡Hazte a un lado!
+	OutOfMyWay					=	"SVM_14_OutOfMyWay"						;//DÃ©jame pasar.
+	YouDeafOrWhat				=	"SVM_14_YouDeafOrWhat"					;//Â¡LÃ¡rgate de una vez!
+	LookingForTroubleAgain		=	"SVM_14_LookingForTroubleAgain"			;//Â¿Otra vez buscas lÃ­os conmigo?
+	LookAway					=	"SVM_14_LookAway"						;//Â¡No me interesa lo que hagÃ¡is!
+	OkayKeepIt					=	"SVM_14_OkayKeepIt"						;//Â¡QuÃ©datela!
+	WhatsThat					=	"SVM_14_WhatsThat"						;//Â¿QuÃ© ha sido eso?
+	ThatsMyWeapon				=	"SVM_14_ThatsMyWeapon"					;//Â¡DevuÃ©lveme mi arma!
+	GiveItToMe					=	"SVM_14_GiveItToMe"						;//Â¡DÃ¡mela!
+	YouCanKeeptheCrap			=	"SVM_14_YouCanKeeptheCrap"				;//Vale. Â¡Ya no la quiero!
 	TheyKilledMyFriend			=	"SVM_14_TheyKilledMyFriend"				;//Uno de los nuestros ha muerto. Encontraremos al culpable...
-	YouDisturbedMySlumber		=	"SVM_14_YouDisturbedMySlumber"			;//¡Estás molestando mis estudios!
-	SuckerGotSome				=	"SVM_14_SuckerGotSome"					;//¡He oído que tuviste problemas!
-	SuckerDefeatedEBr			=	"SVM_14_SuckerDefeatedEBr"				;//¡Has vencido a un magnate del mineral! ¡Se quedó impresionado!
-	SuckerDefeatedGur			=	"SVM_14_SuckerDefeatedGur"				;//Has vencido a un gurú. Estoy impresionado.
+	YouDisturbedMySlumber		=	"SVM_14_YouDisturbedMySlumber"			;//Â¡EstÃ¡s molestando mis estudios!
+	SuckerGotSome				=	"SVM_14_SuckerGotSome"					;//Â¡He oÃ­do que tuviste problemas!
+	SuckerDefeatedEBr			=	"SVM_14_SuckerDefeatedEBr"				;//Â¡Has vencido a un magnate del mineral! Â¡Se quedÃ³ impresionado!
+	SuckerDefeatedGur			=	"SVM_14_SuckerDefeatedGur"				;//Has vencido a un gurÃº. Estoy impresionado.
 	SuckerDefeatedMage			=	"SVM_14_SuckerDefeatedMage"				;//Si has vencido a un mago...
-	SuckerDefeatedNov_Guard		= 	"SVM_14_SuckerDefeatedNov_Guard"		;//¿Sabes que los novicios están bajo mi protección y, aun así, les pones la mano encima?
-	SuckerDefeatedVlk_Guard		= 	"SVM_14_SuckerDefeatedVlk_Guard"		;//¡Si tocas a los cavadores es como si echas mano a mis ingresos!
-	YouDefeatedMyComrade		=	"SVM_14_YouDefeatedMyComrade"			;//No deberías meterte con mis amigos.
-	YouDefeatedNOV_Guard		=	"SVM_14_YouDefeatedNOV_Guard"			;//¡Si vuelves a poner la mano encima de un novicio lo lamentarás!
-	YouDefeatedVLK_Guard		=	"SVM_14_YouDefeatedVLK_Guard"			;//Si atacas a uno de mis protegidos, te podría costar la cabeza.
-	YouStoleFromMe				=	"SVM_14_YouStoleFromMe"					;//¿Cómo te atreves a presentarte aquí, ladrón asqueroso?
-	YouStoleFromUs				=	"SVM_14_YouStoleFromUs"					;//Tienes cosas que nos pertenecen. ¡Será mejor que nos las devuelvas!
-	YouStoleFromEBr				=	"SVM_14_YouStoleFromEBr"				;//¡Tío! ¡Has robado a los magnates del mineral! ¡Estarán furiosos!
-	YouStoleFromGur				=	"SVM_14_YouStoleFromGur"				;//Has levantado algunas cosas a los gurús.
+	SuckerDefeatedNov_Guard		= 	"SVM_14_SuckerDefeatedNov_Guard"		;//Â¿Sabes que los novicios estÃ¡n bajo mi protecciÃ³n y, aun asÃ­, les pones la mano encima?
+	SuckerDefeatedVlk_Guard		= 	"SVM_14_SuckerDefeatedVlk_Guard"		;//Â¡Si tocas a los cavadores es como si echas mano a mis ingresos!
+	YouDefeatedMyComrade		=	"SVM_14_YouDefeatedMyComrade"			;//No deberÃ­as meterte con mis amigos.
+	YouDefeatedNOV_Guard		=	"SVM_14_YouDefeatedNOV_Guard"			;//Â¡Si vuelves a poner la mano encima de un novicio lo lamentarÃ¡s!
+	YouDefeatedVLK_Guard		=	"SVM_14_YouDefeatedVLK_Guard"			;//Si atacas a uno de mis protegidos, te podrÃ­a costar la cabeza.
+	YouStoleFromMe				=	"SVM_14_YouStoleFromMe"					;//Â¿CÃ³mo te atreves a presentarte aquÃ­, ladrÃ³n asqueroso?
+	YouStoleFromUs				=	"SVM_14_YouStoleFromUs"					;//Tienes cosas que nos pertenecen. Â¡SerÃ¡ mejor que nos las devuelvas!
+	YouStoleFromEBr				=	"SVM_14_YouStoleFromEBr"				;//Â¡TÃ­o! Â¡Has robado a los magnates del mineral! Â¡EstarÃ¡n furiosos!
+	YouStoleFromGur				=	"SVM_14_YouStoleFromGur"				;//Has levantado algunas cosas a los gurÃºs.
 	StoleFromMage				=	"SVM_14_StoleFromMage"					;//Has levantado un par de cosas a los magos.
-	YouKilledMyFriend			=	"SVM_14_YouKilledMyFriend"				;//¡Has matado a uno de los nuestros! ¡Un error más y te tocará a ti!
-	YouKilledEBr				=	"SVM_14_YouKilledEBr"					;//¡Has matado a un magnate del mineral! Tío, ¿estás zumbado?
-	YouKilledGur				=	"SVM_14_YouKilledGur"					;//¡Has matado a un gurú! ¡No me lo puedo creer!
-	YouKilledMage				=	"SVM_14_YouKilledMage"					;//¡Has matado a un mago! ¿Cómo tienes pensado justificarlo?
+	YouKilledMyFriend			=	"SVM_14_YouKilledMyFriend"				;//Â¡Has matado a uno de los nuestros! Â¡Un error mÃ¡s y te tocarÃ¡ a ti!
+	YouKilledEBr				=	"SVM_14_YouKilledEBr"					;//Â¡Has matado a un magnate del mineral! TÃ­o, Â¿estÃ¡s zumbado?
+	YouKilledGur				=	"SVM_14_YouKilledGur"					;//Â¡Has matado a un gurÃº! Â¡No me lo puedo creer!
+	YouKilledMage				=	"SVM_14_YouKilledMage"					;//Â¡Has matado a un mago! Â¿CÃ³mo tienes pensado justificarlo?
 	YouKilledOCfolk				=	"SVM_14_YouKilledOCfolk"				;//Ha muerto un miembro del Campamento Viejo, y se ha relacionado tu nombre con la muerte...
-	YouKilledNCfolk				=	"SVM_14_YouKilledNCfolk"				;//¡El Campamento Nuevo ha sufrido una pérdida trágica, y parece que estás implicado!
-	YouKilledPSIfolk			=	"SVM_14_YouKilledPSIfolk"				;//¡La hermandad tiene un fiel menos, y su muerte pesa sobre tu conciencia!
-	GetThingsRight				=	"SVM_14_GetThingsRight"					;//¡No será fácil solucionar esto!
-	YouDefeatedMeWell			=	"SVM_14_YouDefeatedMeWell"				;//¡Me has dado una buena tunda, tío! ¡Ha sido una lucha justa! ¡Pero ya ha acabado!
-	Smalltalk01					=	"SVM_14_Smalltalk01"					;// ...si tú crees...
+	YouKilledNCfolk				=	"SVM_14_YouKilledNCfolk"				;//Â¡El Campamento Nuevo ha sufrido una pÃ©rdida trÃ¡gica, y parece que estÃ¡s implicado!
+	YouKilledPSIfolk			=	"SVM_14_YouKilledPSIfolk"				;//Â¡La hermandad tiene un fiel menos, y su muerte pesa sobre tu conciencia!
+	GetThingsRight				=	"SVM_14_GetThingsRight"					;//Â¡No serÃ¡ fÃ¡cil solucionar esto!
+	YouDefeatedMeWell			=	"SVM_14_YouDefeatedMeWell"				;//Â¡Me has dado una buena tunda, tÃ­o! Â¡Ha sido una lucha justa! Â¡Pero ya ha acabado!
+	Smalltalk01					=	"SVM_14_Smalltalk01"					;// ...si tÃº crees...
 	Smalltalk02					=	"SVM_14_Smalltalk02"					;// ...tal vez...
 	Smalltalk03					=	"SVM_14_Smalltalk03"					;// ...eso no fue muy inteligente...
-	Smalltalk04					=	"SVM_14_Smalltalk04"					;// ...será mejor que me mantenga al margen...
+	Smalltalk04					=	"SVM_14_Smalltalk04"					;// ...serÃ¡ mejor que me mantenga al margen...
 	Smalltalk05					=	"SVM_14_Smalltalk05"					;// ...en realidad no es mi problema...
-	Smalltalk06					=	"SVM_14_Smalltalk06"					;// ...era evidente que habría problemas...
-	Smalltalk07					=	"SVM_14_Smalltalk07"					;// ...pero sé discreto; la gente no tiene por qué saberlo.
-	Smalltalk08					=	"SVM_14_Smalltalk08"					;// ...no volverá a suceder...
+	Smalltalk06					=	"SVM_14_Smalltalk06"					;// ...era evidente que habrÃ­a problemas...
+	Smalltalk07					=	"SVM_14_Smalltalk07"					;// ...pero sÃ© discreto; la gente no tiene por quÃ© saberlo.
+	Smalltalk08					=	"SVM_14_Smalltalk08"					;// ...no volverÃ¡ a suceder...
 	Smalltalk09					=	"SVM_14_Smalltalk09"					;// ...debe haber algo de cierto en esa historia...
 	Smalltalk10					=	"SVM_14_Smalltalk10"					;// ...has de tener cuidado con lo que dices a la gente...
 	Smalltalk11					=	"SVM_14_Smalltalk11"					;// ...mientras no me vea implicado...
-	Smalltalk12					=	"SVM_14_Smalltalk12"					;// ...no deberías creerte todo lo que oyes...
-	Smalltalk13					=	"SVM_14_Smalltalk13"					;// ...no me gustaría estar en su lugar...
+	Smalltalk12					=	"SVM_14_Smalltalk12"					;// ...no deberÃ­as creerte todo lo que oyes...
+	Smalltalk13					=	"SVM_14_Smalltalk13"					;// ...no me gustarÃ­a estar en su lugar...
 	Smalltalk14					=	"SVM_14_Smalltalk14"					;// ...lo mismo de siempre...
 	Smalltalk15					=	"SVM_14_Smalltalk15"					;// ...algunos no aprenden...
-	Smalltalk16					=	"SVM_14_Smalltalk16"					;// ...hubo un tiempo en que las cosas habrían sucedido de manera muy distinta...
+	Smalltalk16					=	"SVM_14_Smalltalk16"					;// ...hubo un tiempo en que las cosas habrÃ­an sucedido de manera muy distinta...
 	Smalltalk17					=	"SVM_14_Smalltalk17"					;// ...la gente no para de hablar...
 	Smalltalk18					=	"SVM_14_Smalltalk18"					;// ...ya no hago caso de los chismorreos...
-	Smalltalk19					=	"SVM_14_Smalltalk19"					;// ...confías en alguien y te metes en un lío, eso es lo que pasa...
-	Smalltalk20					=	"SVM_14_Smalltalk20"					;// ...me extraña que vaya a cambiar...
-	Smalltalk21					=	"SVM_14_Smalltalk21"					;// ...seguramente tengas razón...
-	Smalltalk22					=	"SVM_14_Smalltalk22"					;// ...espera. Será mejor no apresurarse...
-	Smalltalk23					=	"SVM_14_Smalltalk23"					;// ...creía que eso se había resuelto hace mucho...
+	Smalltalk19					=	"SVM_14_Smalltalk19"					;// ...confÃ­as en alguien y te metes en un lÃ­o, eso es lo que pasa...
+	Smalltalk20					=	"SVM_14_Smalltalk20"					;// ...me extraÃ±a que vaya a cambiar...
+	Smalltalk21					=	"SVM_14_Smalltalk21"					;// ...seguramente tengas razÃ³n...
+	Smalltalk22					=	"SVM_14_Smalltalk22"					;// ...espera. SerÃ¡ mejor no apresurarse...
+	Smalltalk23					=	"SVM_14_Smalltalk23"					;// ...creÃ­a que eso se habÃ­a resuelto hace mucho...
 	Smalltalk24					=	"SVM_14_Smalltalk24"					;// ...hablemos de otra cosa...
 	Om							= 	"SVM_14_Om"							;//Ommm
 };
@@ -2133,29 +2133,29 @@ instance SVM_14	(C_SVM)				// Xardas(DMB),Corristo,Erzähler	alt	arrogant, gebild
 //////////////////////////////////////////
 INSTANCE SVM_15	(C_SVM)		//	PLAYER	trocken,ernst
 {
-	SC_HeyTurnAround		= 	"SVM_15_SC_HeyTurnAround"			;//¡Eh, tú!
-	SC_HeyWaitASecond		= 	"SVM_15_SC_HeyWaitASecond"			;//¡Espera!
+	SC_HeyTurnAround		= 	"SVM_15_SC_HeyTurnAround"			;//Â¡Eh, tÃº!
+	SC_HeyWaitASecond		= 	"SVM_15_SC_HeyWaitASecond"			;//Â¡Espera!
 
-	SectGreetings			=	"SVM_15_SectGreetings"				;//¡Despierta!
-	ALGreetings				=	"SVM_15_ALGreetings"				;//¡Por Gómez!
-	MageGreetings			=	"SVM_15_MageGreetings"				;//¡Saludos!
-	FriendlyGreetings		=	"SVM_15_FriendlyGreetings"			;//¡Hola!
+	SectGreetings			=	"SVM_15_SectGreetings"				;//Â¡Despierta!
+	ALGreetings				=	"SVM_15_ALGreetings"				;//Â¡Por GÃ³mez!
+	MageGreetings			=	"SVM_15_MageGreetings"				;//Â¡Saludos!
+	FriendlyGreetings		=	"SVM_15_FriendlyGreetings"			;//Â¡Hola!
 	Aargh_1					=	"SVM_15_Aargh_1"					;//Aargh
 	Aargh_2					=	"SVM_15_Aargh_2"					;//Aargh
 	Aargh_3					=	"SVM_15_Aargh_3"					;//Aargh
 	Dead					=	"SVM_15_Dead"						;//Aargh
 	Awake					=	"SVM_15_Awake"						;//(se despierta)
 	DoesntWork				= 	"SVM_15_DoesntWork"					;//No funciona.
-	PickBroke				= 	"SVM_15_PickBroke"					;// Hm, está roto.
+	PickBroke				= 	"SVM_15_PickBroke"					;// Hm, estÃ¡ roto.
 	NeedKey					= 	"SVM_15_NeedKey"					;// Necesito una llave para eso...
-	NoMorePicks				= 	"SVM_15_NoMorePicks"				;// No hay más llaves maestras...
-	InvFull					= 	"SVM_15_InvFull"					;// No puedo llevar más cosas.
+	NoMorePicks				= 	"SVM_15_NoMorePicks"				;// No hay mÃ¡s llaves maestras...
+	InvFull					= 	"SVM_15_InvFull"					;// No puedo llevar mÃ¡s cosas.
 };
 
 //////////////////////////////////////////
 INSTANCE SVM_16	(C_SVM)				// Stimmbeschreibung	:		Babes halt!!!!!
 {
-	NotNow						=	"SVM_16_NotNow"			;	//¡Vete! ¡Se supone que no puedes hablar conmigo!
+	NotNow						=	"SVM_16_NotNow"			;	//Â¡Vete! Â¡Se supone que no puedes hablar conmigo!
 	Help						=	"SVM_16_Help"			;	//(grita)
 	Aargh_1						=	"SVM_16_Aargh_1"		;	//Aargh
 	Aargh_2						=	"SVM_16_Aargh_2"		;	//Aargh
@@ -2164,10 +2164,10 @@ INSTANCE SVM_16	(C_SVM)				// Stimmbeschreibung	:		Babes halt!!!!!
 };
 
 //////////////////////////////////////////
-INSTANCE SVM_17	(C_SVM)							//Ork-Stimme (alle SVMs werden auf wenige guturalen, unverständlichen Laute umgeleitet)
+INSTANCE SVM_17	(C_SVM)							//Ork-Stimme (alle SVMs werden auf wenige guturalen, unverstÃ¤ndlichen Laute umgeleitet)
 												//Die Dialoge mit dem verbannten Ork-Shamanen im Kastell und dem Ork-Sklaven in der Freien Mine laufen auch
-												//über Stimme 17, sind aber in halbwegsverständlichem orkisch-deutsch
-												//Das hier überall vergebene SVM_17_OrcSound01 wird noch durch 9 weitere Variationen ergänzt
+												//Ã¼ber Stimme 17, sind aber in halbwegsverstÃ¤ndlichem orkisch-deutsch
+												//Das hier Ã¼berall vergebene SVM_17_OrcSound01 wird noch durch 9 weitere Variationen ergÃ¤nzt
 
 // FIXME: mehr Varianten!?
 {

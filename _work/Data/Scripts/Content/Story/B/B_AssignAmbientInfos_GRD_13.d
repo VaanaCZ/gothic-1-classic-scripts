@@ -54,7 +54,7 @@ FUNC INT Info_grd_13_EinerVonEuchWerden_Condition()
 FUNC VOID Info_grd_13_EinerVonEuchWerden_Info()
 {
 	AI_Output(other,self,"Info_grd_13_EinerVonEuchWerden_15_00"); //Quiero ingresar en la guardia.
-	AI_Output(self,other,"Info_grd_13_EinerVonEuchWerden_13_01"); //¡Entonces tienes un largo camino por delante, muchacho!
+	AI_Output(self,other,"Info_grd_13_EinerVonEuchWerden_13_01"); //Â¡Entonces tienes un largo camino por delante, muchacho!
 };
 
 // *************************************************************************
@@ -67,7 +67,7 @@ INSTANCE Info_grd_13_WichtigePersonen(C_INFO)
 	condition	= Info_grd_13_WichtigePersonen_Condition;
 	information	= Info_grd_13_WichtigePersonen_Info;
 	permanent	= 1;
-	description = "¿Quién manda por aquí?";
+	description = "Â¿QuiÃ©n manda por aquÃ­?";
 };                       
 
 FUNC INT Info_grd_13_WichtigePersonen_Condition()
@@ -77,8 +77,8 @@ FUNC INT Info_grd_13_WichtigePersonen_Condition()
 
 FUNC VOID Info_grd_13_WichtigePersonen_Info()
 {
-	AI_Output(other,self,"Info_grd_13_WichtigePersonen_15_00"); //¿Quién manda por aquí?
-	AI_Output(self,other,"Info_grd_13_WichtigePersonen_13_01"); //Yo. ¡Y te aconsejo que tengas cuidado con lo que dices, muchacho!
+	AI_Output(other,self,"Info_grd_13_WichtigePersonen_15_00"); //Â¿QuiÃ©n manda por aquÃ­?
+	AI_Output(self,other,"Info_grd_13_WichtigePersonen_13_01"); //Yo. Â¡Y te aconsejo que tengas cuidado con lo que dices, muchacho!
 };
 
 // *************************************************************************
@@ -91,7 +91,7 @@ INSTANCE Info_grd_13_DasLager(C_INFO)
 	condition	= Info_grd_13_DasLager_Condition;
 	information	= Info_grd_13_DasLager_Info;
 	permanent	= 1;
-	description = "¿Cómo consigo entrar en el castillo?";
+	description = "Â¿CÃ³mo consigo entrar en el castillo?";
 };                       
 
 FUNC INT Info_grd_13_DasLager_Condition()
@@ -104,12 +104,12 @@ FUNC INT Info_grd_13_DasLager_Condition()
 
 FUNC VOID Info_grd_13_DasLager_Info()
 {
-	AI_Output(other,self,"Info_grd_13_DasLager_15_00"); //¿Cómo consigo entrar en el castillo?
-	AI_Output(self,other,"Info_grd_13_DasLager_13_01"); //No se puede. Sólo la gente de Gómez entra allí.
+	AI_Output(other,self,"Info_grd_13_DasLager_15_00"); //Â¿CÃ³mo consigo entrar en el castillo?
+	AI_Output(self,other,"Info_grd_13_DasLager_13_01"); //No se puede. SÃ³lo la gente de GÃ³mez entra allÃ­.
 	Info_ClearChoices(Info_grd_13_DasLager);
 	Info_AddChoice(Info_grd_13_DasLager,"Entiendo.", Info_grd_13_DasLager_Verstehe);
-	Info_AddChoice(Info_grd_13_DasLager,"¿Y si soborno a los guardias?", Info_grd_13_DasLager_WachenBestechen);
-	Info_AddChoice(Info_grd_13_DasLager,"¿Cómo consigo hablar con Gómez?", Info_grd_13_DasLager_GomezSprechen);
+	Info_AddChoice(Info_grd_13_DasLager,"Â¿Y si soborno a los guardias?", Info_grd_13_DasLager_WachenBestechen);
+	Info_AddChoice(Info_grd_13_DasLager,"Â¿CÃ³mo consigo hablar con GÃ³mez?", Info_grd_13_DasLager_GomezSprechen);
 };
 
 FUNC VOID Info_grd_13_DasLager_Verstehe()
@@ -120,19 +120,19 @@ FUNC VOID Info_grd_13_DasLager_Verstehe()
 
 FUNC VOID Info_grd_13_DasLager_WachenBestechen()
 {
-	AI_Output(other,self,"Info_grd_13_DasLager_WachenBestechen_15_00"); //¿Y si soborno a los guardias?
-	AI_Output(self,other,"Info_grd_13_DasLager_WachenBestechen_13_01"); //Eres valiente, muchacho. Supongo que podrías convencerles para que miraran a otro lado un minuto... si les das suficiente mineral.
-	AI_Output(self,other,"Info_grd_13_DasLager_WachenBestechen_13_02"); //Pero si Gómez se entera de que han dejado entrar al castillo a un novato, les arrojará a las mazmorras.
-	AI_Output(self,other,"Info_grd_13_DasLager_WachenBestechen_13_03"); //Por supuesto, ese riesgo hará que sea más difícil aun entrar.
-	AI_Output(self,other,"Info_grd_13_DasLager_WachenBestechen_13_04"); //Pero aunque consiguieras pasar ¿qué harías una vez dentro? Todos los edificios están muy vigilados.
-	AI_Output(other,self,"Info_grd_13_DasLager_WachenBestechen_15_05"); //Sólo tenía curiosidad, eso es todo.
+	AI_Output(other,self,"Info_grd_13_DasLager_WachenBestechen_15_00"); //Â¿Y si soborno a los guardias?
+	AI_Output(self,other,"Info_grd_13_DasLager_WachenBestechen_13_01"); //Eres valiente, muchacho. Supongo que podrÃ­as convencerles para que miraran a otro lado un minuto... si les das suficiente mineral.
+	AI_Output(self,other,"Info_grd_13_DasLager_WachenBestechen_13_02"); //Pero si GÃ³mez se entera de que han dejado entrar al castillo a un novato, les arrojarÃ¡ a las mazmorras.
+	AI_Output(self,other,"Info_grd_13_DasLager_WachenBestechen_13_03"); //Por supuesto, ese riesgo harÃ¡ que sea mÃ¡s difÃ­cil aun entrar.
+	AI_Output(self,other,"Info_grd_13_DasLager_WachenBestechen_13_04"); //Pero aunque consiguieras pasar Â¿quÃ© harÃ­as una vez dentro? Todos los edificios estÃ¡n muy vigilados.
+	AI_Output(other,self,"Info_grd_13_DasLager_WachenBestechen_15_05"); //SÃ³lo tenÃ­a curiosidad, eso es todo.
 };
 
 FUNC VOID Info_grd_13_DasLager_GomezSprechen()
 {
-	AI_Output(other,self,"Info_grd_13_DasLager_GomezSprechen_15_00"); //¿Cómo consigo hablar con Gómez?
-	AI_Output(self,other,"Info_grd_13_DasLager_GomezSprechen_13_01"); //A Gómez no le interesan los muchachos nuevos que no han demostrado su valía.
-	AI_Output(self,other,"Info_grd_13_DasLager_GomezSprechen_13_02"); //Si hablas en serio, charlaré con Thorus.
+	AI_Output(other,self,"Info_grd_13_DasLager_GomezSprechen_15_00"); //Â¿CÃ³mo consigo hablar con GÃ³mez?
+	AI_Output(self,other,"Info_grd_13_DasLager_GomezSprechen_13_01"); //A GÃ³mez no le interesan los muchachos nuevos que no han demostrado su valÃ­a.
+	AI_Output(self,other,"Info_grd_13_DasLager_GomezSprechen_13_02"); //Si hablas en serio, charlarÃ© con Thorus.
 
 	var C_NPC Thorus;		Thorus 	= Hlp_GetNpc(GRD_200_Thorus);
 	Thorus.aivar[AIV_FINDABLE] = TRUE;
@@ -148,7 +148,7 @@ INSTANCE Info_grd_13_DieLage(C_INFO) // E1
 	condition	= Info_grd_13_DieLage_Condition;
 	information	= Info_grd_13_DieLage_Info;
 	permanent	= 1;
-	description = "¿Qué tal?";
+	description = "Â¿QuÃ© tal?";
 };                       
 
 FUNC INT Info_grd_13_DieLage_Condition()
@@ -161,9 +161,9 @@ FUNC INT Info_grd_13_DieLage_Condition()
 };
 FUNC VOID Info_grd_13_DieLage_Info()
 {
-	AI_Output(other,self,"Info_grd_13_DieLage_15_00"); //¿Qué tal?
+	AI_Output(other,self,"Info_grd_13_DieLage_15_00"); //Â¿QuÃ© tal?
 	AI_Output(self,other,"Info_grd_13_DieLage_13_01"); //Todo tranquilo. Alguna pelea de vez en cuando con el Campamento Nuevo o con un par de los zumbados de la secta.
-	AI_Output(self,other,"Info_grd_13_DieLage_13_02"); //Mientras seas nuevo, da igual. Pero en cuanto decidas en qué campamento ingresarás, te meterás hasta el cuello.
+	AI_Output(self,other,"Info_grd_13_DieLage_13_02"); //Mientras seas nuevo, da igual. Pero en cuanto decidas en quÃ© campamento ingresarÃ¡s, te meterÃ¡s hasta el cuello.
 };
 	
 // *************************************************************************

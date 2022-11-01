@@ -115,8 +115,8 @@ INSTANCE MENUITEM_MAIN_RESUME(C_MENU_ITEM_DEF)
 instance MENUITEM_MAIN_OPTIONS(C_MENU_ITEM_DEF) 
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	text[0]		= "ConfiguraciÛn";
-	text[1]		= "Ajustar juego, gr·ficos, sonido, teclado";  // Kommentar
+	text[0]		= "Configuraci√≥n";
+	text[1]		= "Ajustar juego, gr√°ficos, sonido, teclado";  // Kommentar
 	
 	// Positionen  und Dimensionen	
 	posx		= 0;		posy		= MENU_MAIN_Y + MENU_MAIN_DY*4;
@@ -133,7 +133,7 @@ instance MENUITEM_MAIN_INTRO(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
 	text[0]		= "Reprod. Intro";
-	text[1]		= "Reproducir de nuevo la introducciÛn.";
+	text[1]		= "Reproducir de nuevo la introducci√≥n.";
 	// Positionen  und Dimensione	
 	posx		= 0;		posy		= MENU_MAIN_Y + MENU_MAIN_DY*5;
 	dimx		= 8100;		dimy		=  750;
@@ -147,8 +147,8 @@ instance MENUITEM_MAIN_INTRO(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_MAIN_CREDITS(C_MENU_ITEM_DEF) 
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	text[0]		= "CrÈditos";
-	text[1]		= "CrÈditos";  // Kommentar
+	text[0]		= "Cr√©ditos";
+	text[1]		= "Cr√©ditos";  // Kommentar
 	
 	// Positionen  und Dimensionen	
 	posx		= 0;		posy		= MENU_MAIN_Y + MENU_MAIN_DY*6;

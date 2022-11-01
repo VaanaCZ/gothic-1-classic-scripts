@@ -11,8 +11,8 @@ func void B_Story_GotoOrcGraveyard()
 	//-------- Tagebucheintrag --------
 	Log_CreateTopic		(CH3_OrcGraveyard,	LOG_MISSION);
 	Log_SetTopicStatus	(CH3_OrcGraveyard,	LOG_RUNNING);
-	B_LogEntry			(CH3_OrcGraveyard,"La gran invocación del Durmiente no cumplió con las expectativas. En sus cuevas sólo pudieron verse imágenes muy vagas de orcos. Y'Berion, el líder espiritual de la Hermandad, ¡quedó inconsciente como resultado de su esfuerzo durante la invocación!"); 
-	B_LogEntry			(CH3_OrcGraveyard,"Cor Angar, el líder de los templarios, me ha pedido que vaya al cementerio orco; un complejo de cavernas cercano al campamento del pantano. El Gurú Baal Lukor ya ha ido allí con algunos templarios en busca de más pistas con las que entender mejor la visión de los orcos.");
+	B_LogEntry			(CH3_OrcGraveyard,"La gran invocaciÃ³n del Durmiente no cumpliÃ³ con las expectativas. En sus cuevas sÃ³lo pudieron verse imÃ¡genes muy vagas de orcos. Y'Berion, el lÃ­der espiritual de la Hermandad, Â¡quedÃ³ inconsciente como resultado de su esfuerzo durante la invocaciÃ³n!"); 
+	B_LogEntry			(CH3_OrcGraveyard,"Cor Angar, el lÃ­der de los templarios, me ha pedido que vaya al cementerio orco; un complejo de cavernas cercano al campamento del pantano. El GurÃº Baal Lukor ya ha ido allÃ­ con algunos templarios en busca de mÃ¡s pistas con las que entender mejor la visiÃ³n de los orcos.");
 	
 	//-------- Templer und Orks vor Ork-Friedhof setzen --------
 	// mitten auf dem Vorplatz 
@@ -21,7 +21,7 @@ func void B_Story_GotoOrcGraveyard()
 	Wld_InsertNpc		(OrcBiter,			"OW_PATH_198_ORCGRAVEYARD4");
 	Wld_InsertNpc		(OrcBiter,			"OW_PATH_198_ORCGRAVEYARD4");
 
-	// vor dem Höhleneingang 
+	// vor dem HÃ¶hleneingang 
 	Wld_InsertNpc		(OrcScout,			"OW_PATH_198_ORCGRAVEYARD5");
 	Wld_InsertNpc		(OrcScout,			"OW_PATH_198_ORCGRAVEYARD6");
 	Wld_InsertNpc		(OrcScout,			"OW_PATH_198_ORCGRAVEYARD7");

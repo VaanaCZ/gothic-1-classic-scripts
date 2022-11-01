@@ -1,5 +1,5 @@
 // ************************************************************************************************
-// Wirkung und Kosten von Tränken
+// Wirkung und Kosten von TrÃ¤nken
 // ************************************************************************************************
 
 // Heilung
@@ -16,8 +16,8 @@ const int	Value_ManaElixier		=	65;		const int	Mana_Elixier		=	70;
 const int	Value_Elixier1			=	95;		const int	Mana_Elixier1		=	100;
 
 // Permanente Attribut-Steigerungen
-// FIXME: sind die zu kaufen (müüsen dann teuer sein) oder zu fnden (dann evtl. billiger)
-// FIXME: Textanzeige der Attribut-Änderung bei Benutzung möglich?
+// FIXME: sind die zu kaufen (mÃ¼Ã¼sen dann teuer sein) oder zu fnden (dann evtl. billiger)
+// FIXME: Textanzeige der Attribut-Ã„nderung bei Benutzung mÃ¶glich?
 const int	Value_ElixierEgg		=	1;		const int	ManaMax_ElixierEgg	=	10;	// FIXME: was wenn der SC das selbst benutzt??
 
 const int	Value_StrEssenz			=	300;	const int	STR_Essenz			=	3;
@@ -48,7 +48,7 @@ const int	Value_Haste3			=	200;	const int	Time_Haste3			=	300000;	// 5 min.
 
 
 /******************************************************************************************/
-//	MANATRÄNKE																			//
+//	MANATRÃ„NKE																			//
 /******************************************************************************************/
 INSTANCE ItFo_Potion_Mana_01(C_Item)
 {
@@ -64,7 +64,7 @@ INSTANCE ItFo_Potion_Mana_01(C_Item)
 	on_state[0]		=	UseManaPotion;
 	scemeName		=	"POTIONFAST";
 
-	description			= "Esencia de Energía Mágica";
+	description			= "Esencia de EnergÃ­a MÃ¡gica";
 	TEXT[1]				= NAME_Bonus_Mana;				COUNT[1]	= Mana_Essenz;
 	TEXT[5]				= NAME_Value;					COUNT[5]	= Value_ManaEssenz;
 };
@@ -90,7 +90,7 @@ INSTANCE ItFo_Potion_Mana_02(C_Item)
 	on_state[0]		=	UseMana2Potion;
 	scemeName		=	"POTIONFAST";
 
-	description			= "Extracto de Energía Mágica";
+	description			= "Extracto de EnergÃ­a MÃ¡gica";
 	TEXT[1]				= NAME_Bonus_Mana;				COUNT[1]	= Mana_Extrakt;
 	TEXT[5]				= NAME_Value;					COUNT[5]	= Value_ManaExtrakt;
 };
@@ -116,7 +116,7 @@ INSTANCE ItFo_Potion_Mana_03(C_Item)
 	on_state[0]		=	UseMana3Potion;
 	scemeName		=	"POTIONFAST";
 
-	description			= "Elixir de Energía Mágica";
+	description			= "Elixir de EnergÃ­a MÃ¡gica";
 	TEXT[1]				= NAME_Bonus_Mana;				COUNT[1]	= Mana_Elixier;
 	TEXT[5]				= NAME_Value;					COUNT[5]	= Value_ManaElixier;
 };
@@ -159,7 +159,7 @@ INSTANCE ItFo_Potion_Elixier(C_Item)
 
 
 /******************************************************************************************/
-//	HEILTRÄNKE																			//
+//	HEILTRÃ„NKE																			//
 /******************************************************************************************/
 INSTANCE ItFo_Potion_Health_01(C_Item)
 {
@@ -175,7 +175,7 @@ INSTANCE ItFo_Potion_Health_01(C_Item)
 	on_state[0]		=	UseHealthPotion;
 	scemeName		=	"POTIONFAST";
 
-	description			= "Esencia de Curación";
+	description			= "Esencia de CuraciÃ³n";
 	TEXT[1]				= NAME_Bonus_HP;				COUNT[1]	= HP_Essenz;
 	TEXT[5]				= NAME_Value;					COUNT[5]	= Value_HpEssenz;
 };
@@ -201,7 +201,7 @@ INSTANCE ItFo_Potion_Health_02(C_Item)
 	on_state[0]		=	UseHealth2Potion;
 	scemeName		=	"POTIONFAST";
 
-	description			= "Extracto de Curación";
+	description			= "Extracto de CuraciÃ³n";
 	TEXT[1]				= NAME_Bonus_HP;				COUNT[1]	= HP_Extrakt;
 	TEXT[5]				= NAME_Value;					COUNT[5]	= Value_HpExtrakt;
 };
@@ -227,7 +227,7 @@ INSTANCE ItFo_Potion_Health_03(C_Item)
 	on_state[0]		=	UseHealth3Potion;
 	scemeName		=	"POTIONFAST";
 
-	description			= "Elixir de Curación";
+	description			= "Elixir de CuraciÃ³n";
 	TEXT[1]				= NAME_Bonus_HP;				COUNT[1]	= HP_Elixier;
 	TEXT[5]				= NAME_Value;					COUNT[5]	= Value_HpElixier;
 };
@@ -241,7 +241,7 @@ INSTANCE ItFo_Potion_Health_03(C_Item)
 
 
 /******************************************************************************************/
-// TRÄNKE FÜR PERMANENTE ATTRIBUT-ÄNDERUNGEN!
+// TRÃ„NKE FÃœR PERMANENTE ATTRIBUT-Ã„NDERUNGEN!
 /******************************************************************************************/
 
 /******************************************************************************************/
@@ -259,7 +259,7 @@ INSTANCE ItFo_Potion_Elixier_Egg(C_Item)
 	on_state[0]		=	UseEggElixier;
 	scemeName		=	"POTIONFAST";
 
-	description			= "Poción de Reptador";
+	description			= "PociÃ³n de Reptador";
 	TEXT[0]				= "Permite contactar con el Durmiente.";
 	TEXT[1]				= NAME_Bonus_ManaMax;			COUNT[1]	= ManaMax_ElixierEgg;
 	TEXT[5]				= NAME_Value;					COUNT[5]	= Value_ElixierEgg;
@@ -446,7 +446,7 @@ INSTANCE ItFo_Potion_Master_01(C_Item)
 	on_state[0]		=	UseMasterPotion;
 	scemeName		=	"POTIONFAST";
 
-	description			= "Poción de Poder";
+	description			= "PociÃ³n de Poder";
 	TEXT[1]				= NAME_Bonus_Dex;				COUNT[1]	= StrDex_Macht;
 	TEXT[2]				= NAME_Bonus_Str;				COUNT[2]	= StrDex_Macht;
 	TEXT[5]				= NAME_Value;					COUNT[5]	= Value_StrDex_Macht;
@@ -477,7 +477,7 @@ INSTANCE ItFo_Potion_Master_02(C_Item)
 	on_state[0]		=	UseMaster2Potion;
 	scemeName		=	"POTIONFAST";
 
-	description			= "Poción de Supremacía";
+	description			= "PociÃ³n de SupremacÃ­a";
 	TEXT[1]				= NAME_Bonus_Dex;				COUNT[1]	= StrDex_Herrschaft;
 	TEXT[2]				= NAME_Bonus_Str;				COUNT[2]	= StrDex_Herrschaft;
 	TEXT[5]				= NAME_Value;					COUNT[5]	= Value_StrDex_Herrschaft;
@@ -589,7 +589,7 @@ INSTANCE ItFo_Potion_Mana_Perma_01(C_Item)
 	on_state[0]		=	UseNectarPotion;
 	scemeName		=	"POTIONFAST";
 
-	description			= "Esencia del Espíritu";
+	description			= "Esencia del EspÃ­ritu";
 	TEXT[1]				= NAME_Bonus_ManaMax;			COUNT[1]	= ManaMax_Essenz;
 	TEXT[5]				= NAME_Value;					COUNT[5]	= Value_ManaMaxEssenz;
 };
@@ -615,7 +615,7 @@ INSTANCE ItFo_Potion_Mana_Perma_02(C_Item)
 	on_state[0]		=	UseNectar2Potion;
 	scemeName		=	"POTIONFAST";
 
-	description			= "Extracto del Espíritu";
+	description			= "Extracto del EspÃ­ritu";
 	TEXT[1]				= NAME_Bonus_ManaMax;			COUNT[1]	= ManaMax_Extrakt;
 	TEXT[5]				= NAME_Value;					COUNT[5]	= Value_ManaMaxExtrakt;
 };
@@ -641,7 +641,7 @@ INSTANCE ItFo_Potion_Mana_Perma_03(C_Item)
 	on_state[0]		=	UseNectar3Potion;
 	scemeName		=	"POTIONFAST";
 
-	description			= "Elixir del Espíritu";
+	description			= "Elixir del EspÃ­ritu";
 	TEXT[1]				= NAME_Bonus_ManaMax;			COUNT[1]	= ManaMax_Elixier;
 	TEXT[5]				= NAME_Value;					COUNT[5]	= Value_ManaMaxElixier;
 };
@@ -671,7 +671,7 @@ INSTANCE ItFo_Potion_Haste_01(C_Item)
 	on_state[0]		=	UseHastePotion;
 	scemeName		=	"POTIONFAST";
 
-	description		= "Poción de Rapidez";
+	description		= "PociÃ³n de Rapidez";
 	TEXT[1]			= "Permite al jugador esprintar brevemente.";
 	TEXT[3]			= NAME_Duration;				COUNT[3]	= Time_Haste1/60000;
 	TEXT[5]			= NAME_Value;					COUNT[5]	= value;
@@ -698,7 +698,7 @@ INSTANCE ItFo_Potion_Haste_02(C_Item)
 	on_state[0]		=	UseHastePotion2;
 	scemeName		=	"POTIONFAST";
 
-	description		= "Poción de Velocidad";
+	description		= "PociÃ³n de Velocidad";
 	TEXT[1]			= "Permite al jugador esprintar.";
 	TEXT[3]			= NAME_Duration;				COUNT[3]	= Time_Haste2/60000;
 	TEXT[5]			= NAME_Value;					COUNT[5]	= value;
@@ -725,8 +725,8 @@ INSTANCE ItFo_Potion_Haste_03(C_Item)
 	on_state[0]		=	UseHastePotion3;
 	scemeName		=	"POTIONFAST";
 
-	description		= "Poción de Celeridad";
-	TEXT[1]			= "Permite al jugador esprintar más tiempo.";
+	description		= "PociÃ³n de Celeridad";
+	TEXT[1]			= "Permite al jugador esprintar mÃ¡s tiempo.";
 	TEXT[3]			= NAME_Duration;				COUNT[3]	= Time_Haste3/60000;
 	TEXT[5]			= NAME_Value;					COUNT[5]	= value;
 };

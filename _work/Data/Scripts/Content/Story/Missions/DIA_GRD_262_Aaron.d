@@ -29,7 +29,7 @@ instance  GRD_262_Aaron_CHEST (C_INFO)
 	information	=  GRD_262_Aaron_CHEST_Info;
 	important	= 0;	
 	permanent	= 1;
-	description = "¿Qué estás haciendo aquí?";
+	description = "Â¿QuÃ© estÃ¡s haciendo aquÃ­?";
 };                       
 
 FUNC int  GRD_262_Aaron_CHEST_Condition()
@@ -42,7 +42,7 @@ FUNC int  GRD_262_Aaron_CHEST_Condition()
 };
 FUNC VOID  GRD_262_Aaron_CHEST_Info()
 {
-	AI_Output			(other, self,"GRD_262_Aaron_CHEST_Info_15_01"); //¿Qué estás haciendo aquí?
+	AI_Output			(other, self,"GRD_262_Aaron_CHEST_Info_15_01"); //Â¿QuÃ© estÃ¡s haciendo aquÃ­?
 	AI_Output			(self, other,"GRD_262_Aaron_CHEST_Info_09_02"); //Vigilo a los cavadores como Snipes para asegurar que mantengan las manos alejadas de mi cofre.
 };
 
@@ -71,50 +71,50 @@ FUNC void  GRD_262_Aaron_BLUFF_Info()
 {
 	Info_ClearChoices	(GRD_262_Aaron_BLUFF);
 	Info_AddChoice		(GRD_262_Aaron_BLUFF,DIALOG_BACK												,GRD_262_Aaron_BLUFF_BACK);
-	Info_AddChoice		(GRD_262_Aaron_BLUFF,"Me manda Ian. ¡Debes ir a verle enseguida!",GRD_262_Aaron_BLUFF_IAN);
-	Info_AddChoice		(GRD_262_Aaron_BLUFF,"He oído que hay hampones en la mina.",GRD_262_Aaron_BLUFF_BANDIT);
-	Info_AddChoice		(GRD_262_Aaron_BLUFF,"¡Los cavadores han encontrado una pepita de mineral enorme!",GRD_262_Aaron_BLUFF_ORE);
+	Info_AddChoice		(GRD_262_Aaron_BLUFF,"Me manda Ian. Â¡Debes ir a verle enseguida!",GRD_262_Aaron_BLUFF_IAN);
+	Info_AddChoice		(GRD_262_Aaron_BLUFF,"He oÃ­do que hay hampones en la mina.",GRD_262_Aaron_BLUFF_BANDIT);
+	Info_AddChoice		(GRD_262_Aaron_BLUFF,"Â¡Los cavadores han encontrado una pepita de mineral enorme!",GRD_262_Aaron_BLUFF_ORE);
 };
 
 FUNC void   GRD_262_Aaron_BLUFF_ORE ()
 {
-	AI_Output			(other, self,"GRD_262_Aaron_BLUFF_ORE_15_01");//¡Los cavadores han encontrado una pepita de mineral enorme!
-	AI_Output			(self, other,"GRD_262_Aaron_BLUFF_ORE_09_02");//¿Y qué?
-	AI_Output			(other, self,"GRD_262_Aaron_BLUFF_ORE_15_03");//¡Tienes que echarle un vistazo!
-	AI_Output			(self, other,"GRD_262_Aaron_BLUFF_ORE_09_04");//Olvídalo.
+	AI_Output			(other, self,"GRD_262_Aaron_BLUFF_ORE_15_01");//Â¡Los cavadores han encontrado una pepita de mineral enorme!
+	AI_Output			(self, other,"GRD_262_Aaron_BLUFF_ORE_09_02");//Â¿Y quÃ©?
+	AI_Output			(other, self,"GRD_262_Aaron_BLUFF_ORE_15_03");//Â¡Tienes que echarle un vistazo!
+	AI_Output			(self, other,"GRD_262_Aaron_BLUFF_ORE_09_04");//OlvÃ­dalo.
 };  
 FUNC VOID GRD_262_Aaron_BLUFF_BANDIT ()
 {
-	AI_Output			(other, self,"GRD_262_Aaron_BLUFF_BANDIT_15_01"); //He oído que hay hampones en la mina. ¡Quieren el mineral!
-	AI_Output			(self, other,"GRD_262_Aaron_BLUFF_BANDIT_09_02"); //¿Crees que soy estúpido? ¡No se atreverían a hacer algo así!
+	AI_Output			(other, self,"GRD_262_Aaron_BLUFF_BANDIT_15_01"); //He oÃ­do que hay hampones en la mina. Â¡Quieren el mineral!
+	AI_Output			(self, other,"GRD_262_Aaron_BLUFF_BANDIT_09_02"); //Â¿Crees que soy estÃºpido? Â¡No se atreverÃ­an a hacer algo asÃ­!
 };
 func void  GRD_262_Aaron_BLUFF_IAN()
 {
-	AI_Output			(other, self,"GRD_262_Aaron_BLUFF_IAN_15_01"); //Me manda Ian. ¡Debes ir a verle enseguida!
-	AI_Output			(self, other,"GRD_262_Aaron_BLUFF_IAN_09_02"); //¿Qué quiere?
+	AI_Output			(other, self,"GRD_262_Aaron_BLUFF_IAN_15_01"); //Me manda Ian. Â¡Debes ir a verle enseguida!
+	AI_Output			(self, other,"GRD_262_Aaron_BLUFF_IAN_09_02"); //Â¿QuÃ© quiere?
 	
 	Info_ClearChoices	(GRD_262_Aaron_BLUFF);
 	Info_AddChoice		(GRD_262_Aaron_BLUFF,"Ni idea.",GRD_262_Aaron_BLUFF_UGLY);
-	Info_AddChoice		(GRD_262_Aaron_BLUFF,"Te matará.",GRD_262_Aaron_BLUFF_BAD);
+	Info_AddChoice		(GRD_262_Aaron_BLUFF,"Te matarÃ¡.",GRD_262_Aaron_BLUFF_BAD);
 	Info_AddChoice		(GRD_262_Aaron_BLUFF,"Quiere recompensarte.",GRD_262_Aaron_BLUFF_GOOD);
 };  
 func void GRD_262_Aaron_BLUFF_GOOD ()
 {
 	AI_Output			(other, self,"GRD_262_Aaron_BLUFF_GOOD_15_01"); //Quiere recompensarte por tu buen trabajo.
-	AI_Output			(self, other,"GRD_262_Aaron_BLUFF_GOOD_09_02"); //¿Ah, sí? Creo que será mejor que te vayas.
+	AI_Output			(self, other,"GRD_262_Aaron_BLUFF_GOOD_09_02"); //Â¿Ah, sÃ­? Creo que serÃ¡ mejor que te vayas.
 	Npc_SetTempAttitude (self, ATT_ANGRY);
 	AI_StopProcessInfos	(self);
 };
 func void 	GRD_262_Aaron_BLUFF_BAD ()
 {
 	AI_Output			(other, self,"GRD_262_Aaron_BLUFF_BAD_15_01"); //Te va a matar porque eres un gandul.
-	AI_Output			(self, other,"GRD_262_Aaron_BLUFF_BAD_09_02"); //Bueno, eso no es ninguna novedad. ¡Lárgate!
+	AI_Output			(self, other,"GRD_262_Aaron_BLUFF_BAD_09_02"); //Bueno, eso no es ninguna novedad. Â¡LÃ¡rgate!
 	AI_StopProcessInfos	(self);
 };
 func void GRD_262_Aaron_BLUFF_UGLY()
 {
-	AI_Output			(other, self,"GRD_262_Aaron_BLUFF_UGLY_15_01"); //Ni idea. ¡Te lo dirá Ian en persona! ¿Crees que me diría algo así?
-	AI_Output			(self, other,"GRD_262_Aaron_BLUFF_UGLY_09_02"); //¡Entonces iré a verle!
+	AI_Output			(other, self,"GRD_262_Aaron_BLUFF_UGLY_15_01"); //Ni idea. Â¡Te lo dirÃ¡ Ian en persona! Â¿Crees que me dirÃ­a algo asÃ­?
+	AI_Output			(self, other,"GRD_262_Aaron_BLUFF_UGLY_09_02"); //Â¡Entonces irÃ© a verle!
 
 	AI_StopProcessInfos	(self);
 		
@@ -124,7 +124,7 @@ func void GRD_262_Aaron_BLUFF_UGLY()
 	Snipes_Deal = LOG_SUCCESS;
 	GRD_262_Aaron_BLUFF.permanent = 0;
 	
-	B_LogEntry		(CH2_SnipesDeal,"He alejado a Aaron del cofre con la excusa de que Ian quería verle. Espero que se lo tome con buen humor.");
+	B_LogEntry		(CH2_SnipesDeal,"He alejado a Aaron del cofre con la excusa de que Ian querÃ­a verle. Espero que se lo tome con buen humor.");
 };
 
 func void GRD_262_Aaron_BLUFF_BACK()
@@ -153,7 +153,7 @@ FUNC int  GRD_262_Aaron_PISSED_Condition()
 FUNC VOID  GRD_262_Aaron_PISSED_Info()
 {
 	AI_DrawWeapon		(self);
-	AI_Output			(self, other,"Info_Aaron_PISSED_09_01"); //¡¡¡OYE, TÚ!!! Si vuelves a intentar ponerme en ridículo, te la vas a cargar. ¿Te enteras?
+	AI_Output			(self, other,"Info_Aaron_PISSED_09_01"); //Â¡Â¡Â¡OYE, TÃš!!! Si vuelves a intentar ponerme en ridÃ­culo, te la vas a cargar. Â¿Te enteras?
 	AI_RemoveWeapon		(self);
 
 	Npc_ExchangeRoutine	(self,	"start");
@@ -162,7 +162,7 @@ FUNC VOID  GRD_262_Aaron_PISSED_Info()
 	B_LogEntry		(CH2_SnipesDeal,"He vuelto a encontrarme con Aaron; ciertamente, NO se lo ha tomado muy bien."); 
 };
 
-// ***************** Schlüssel verkaufen *****************************
+// ***************** SchlÃ¼ssel verkaufen *****************************
 instance  GRD_262_Aaron_SELL (C_INFO)
 {
 	npc			=  GRD_262_Aaron;
@@ -170,7 +170,7 @@ instance  GRD_262_Aaron_SELL (C_INFO)
 	information	=  GRD_262_Aaron_SELL_Info;
 	important	= 0;	
 	permanent	= 0;
-	description = "Oye, ¿no echas en falta tu llave?";
+	description = "Oye, Â¿no echas en falta tu llave?";
 };                       
 
 FUNC int  GRD_262_Aaron_SELL_Condition()
@@ -183,14 +183,14 @@ FUNC int  GRD_262_Aaron_SELL_Condition()
 
 FUNC VOID  GRD_262_Aaron_SELL_Info()
 {
-	AI_Output			(other, self,"Info_Aaron_SELL_15_01"); //Oye, ¿no echas en falta la llave de tu cofre?
-	AI_Output			(self, other,"Info_Aaron_SELL_09_02"); //Efectivamente. No quiero ni pensar cómo es que sabes de la existencia de la llave.
-	AI_Output			(self, other,"Info_Aaron_SELL_09_03"); //Pero te daré 20 pepitas si la recuperas.
+	AI_Output			(other, self,"Info_Aaron_SELL_15_01"); //Oye, Â¿no echas en falta la llave de tu cofre?
+	AI_Output			(self, other,"Info_Aaron_SELL_09_02"); //Efectivamente. No quiero ni pensar cÃ³mo es que sabes de la existencia de la llave.
+	AI_Output			(self, other,"Info_Aaron_SELL_09_03"); //Pero te darÃ© 20 pepitas si la recuperas.
 
-	B_LogEntry		(CH2_SnipesDeal,"¡Aaron me ha ofrecido 20 pepitas para conseguirle las llaves de su cofre!"); 
+	B_LogEntry		(CH2_SnipesDeal,"Â¡Aaron me ha ofrecido 20 pepitas para conseguirle las llaves de su cofre!"); 
 };
 
-// ***************** Schlüssel verkaufen 2*****************************
+// ***************** SchlÃ¼ssel verkaufen 2*****************************
 instance  GRD_262_Aaron_SELLNOW (C_INFO)
 {
 	npc			=  GRD_262_Aaron;
@@ -210,9 +210,9 @@ FUNC int  GRD_262_Aaron_SELLNOW_Condition()
 };
 FUNC VOID  GRD_262_Aaron_SELLNOW_Info()
 {
-	AI_Output			(other, self,"Info_Aaron_SELLNOW_15_01"); //Aquí tienes tu llave.
-	AI_Output			(self, other,"Info_Aaron_SELLNOW_09_02"); //Sí, es ésa. Bueno, aquí tienes tus 20 pepitas, como acordamos.
-	AI_Output			(self, other,"Info_Aaron_SELLNOW_09_03"); //Pero será mejor que tengas cuidado en el futuro. ¡A partir de ahora te estaré vigilando!
+	AI_Output			(other, self,"Info_Aaron_SELLNOW_15_01"); //AquÃ­ tienes tu llave.
+	AI_Output			(self, other,"Info_Aaron_SELLNOW_09_02"); //SÃ­, es Ã©sa. Bueno, aquÃ­ tienes tus 20 pepitas, como acordamos.
+	AI_Output			(self, other,"Info_Aaron_SELLNOW_09_03"); //Pero serÃ¡ mejor que tengas cuidado en el futuro. Â¡A partir de ahora te estarÃ© vigilando!
 	
 	CreateInvItems 		(self,ItMinugget,20);
 	B_GiveInvItems      (self,other,ItMinugget,20);
@@ -220,7 +220,7 @@ FUNC VOID  GRD_262_Aaron_SELLNOW_Info()
 
 	B_GiveXP			(XP_SellKeyToAaron);
 
-	B_LogEntry		(CH2_SnipesDeal,"Le he vendido a Aaron su propia llave. En general, ¡he sacado un buen provecho de esto!"); 
+	B_LogEntry		(CH2_SnipesDeal,"Le he vendido a Aaron su propia llave. En general, Â¡he sacado un buen provecho de esto!"); 
 	Log_SetTopicStatus	(CH2_SnipesDeal,	LOG_SUCCESS);
 };
 
