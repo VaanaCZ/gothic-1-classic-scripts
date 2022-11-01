@@ -37,7 +37,7 @@ INSTANCE Info_Nov_5_EinerVonEuchWerden (C_INFO) // E1
 	condition	= Info_Nov_5_EinerVonEuchWerden_Condition;
 	information	= Info_Nov_5_EinerVonEuchWerden_Info;
 	permanent	= 1;
-	description = "W jaki sposób mogê do was do³¹czyæ?";
+	description = "W jaki sposÃ³b mogÄ™ do was doÅ‚Ä…czyÄ‡?";
 };                       
 
 FUNC INT Info_Nov_5_EinerVonEuchWerden_Condition()
@@ -50,9 +50,9 @@ FUNC INT Info_Nov_5_EinerVonEuchWerden_Condition()
 
 FUNC VOID Info_Nov_5_EinerVonEuchWerden_Info()
 {
-	AI_Output(other,self,"Info_Nov_5_EinerVonEuchWerden_15_00"); //W jaki sposób mogê do was do³¹czyæ?
-	AI_Output(self,other,"Info_Nov_5_EinerVonEuchWerden_05_01"); //Nic prostszego. Porozmawiaj z m³odszymi Guru. Oni ci chêtnie pomog¹.
-	AI_Output(self,other,"Info_Nov_5_EinerVonEuchWerden_05_02"); //Spodoba ci siê tutaj, uwierz mi.
+	AI_Output(other,self,"Info_Nov_5_EinerVonEuchWerden_15_00"); //W jaki sposÃ³b mogÄ™ do was doÅ‚Ä…czyÄ‡?
+	AI_Output(self,other,"Info_Nov_5_EinerVonEuchWerden_05_01"); //Nic prostszego. Porozmawiaj z mÅ‚odszymi Guru. Oni ci chÄ™tnie pomogÄ….
+	AI_Output(self,other,"Info_Nov_5_EinerVonEuchWerden_05_02"); //Spodoba ci siÄ™ tutaj, uwierz mi.
 };
 
 // *************************************************************************
@@ -65,7 +65,7 @@ INSTANCE Info_Nov_5_WichtigePersonen(C_INFO)
 	condition	= Info_Nov_5_WichtigePersonen_Condition;
 	information	= Info_Nov_5_WichtigePersonen_Info;
 	permanent	= 1;
-	description = "Kto tu rz¹dzi?";
+	description = "Kto tu rzÄ…dzi?";
 };                       
 
 FUNC INT Info_Nov_5_WichtigePersonen_Condition()
@@ -75,8 +75,8 @@ FUNC INT Info_Nov_5_WichtigePersonen_Condition()
 
 FUNC VOID Info_Nov_5_WichtigePersonen_Info()
 {
-	AI_Output(other,self,"Info_Nov_5_WichtigePersonen_15_00"); //Kto tu rz¹dzi?
-	AI_Output(self,other,"Info_Nov_5_WichtigePersonen_05_01"); //Guru sprawuj¹ kontrolê nad ca³ym obozem, ale jeœli nie bêdziesz siê wychyla³, zostawi¹ ciê w spokoju.
+	AI_Output(other,self,"Info_Nov_5_WichtigePersonen_15_00"); //Kto tu rzÄ…dzi?
+	AI_Output(self,other,"Info_Nov_5_WichtigePersonen_05_01"); //Guru sprawujÄ… kontrolÄ™ nad caÅ‚ym obozem, ale jeÅ›li nie bÄ™dziesz siÄ™ wychylaÅ‚, zostawiÄ… ciÄ™ w spokoju.
 };
 
 // *************************************************************************
@@ -89,7 +89,7 @@ INSTANCE Info_Nov_5_DasLager(C_INFO)
 	condition	= Info_Nov_5_DasLager_Condition;
 	information	= Info_Nov_5_DasLager_Info;
 	permanent	= 1;
-	description = "Co mo¿esz mi powiedzieæ o tym obozie?";
+	description = "Co moÅ¼esz mi powiedzieÄ‡ o tym obozie?";
 };                       
 
 FUNC INT Info_Nov_5_DasLager_Condition()
@@ -99,11 +99,11 @@ FUNC INT Info_Nov_5_DasLager_Condition()
 
 FUNC VOID Info_Nov_5_DasLager_Info()
 {
-	AI_Output(other,self,"Info_Nov_5_DasLager_15_00"); //Co mo¿esz mi powiedzieæ o tym obozie?
-	AI_Output(self,other,"Info_Nov_5_DasLager_05_01"); //To najwspanialsze miejsce w ca³ej cholernej kolonii.
-	AI_Output(self,other,"Info_Nov_5_DasLager_05_02"); //Nawet jeœli nie wierzysz w nauki Œni¹cego, dostaniesz dzienn¹ racjê jedzenia i ziela. Wystarczy tylko zg³osiæ siê do Fortuno.
-	AI_Output(other,self,"Info_Nov_5_DasLager_15_03"); //Gdzie go znajdê?
-	AI_Output(self,other,"Info_Nov_5_DasLager_05_04"); //Pod laboratorium Cor Kaloma, w pobli¿u dziedziñca wielkiej œwi¹tyni.
+	AI_Output(other,self,"Info_Nov_5_DasLager_15_00"); //Co moÅ¼esz mi powiedzieÄ‡ o tym obozie?
+	AI_Output(self,other,"Info_Nov_5_DasLager_05_01"); //To najwspanialsze miejsce w caÅ‚ej cholernej kolonii.
+	AI_Output(self,other,"Info_Nov_5_DasLager_05_02"); //Nawet jeÅ›li nie wierzysz w nauki ÅšniÄ…cego, dostaniesz dziennÄ… racjÄ™ jedzenia i ziela. Wystarczy tylko zgÅ‚osiÄ‡ siÄ™ do Fortuno.
+	AI_Output(other,self,"Info_Nov_5_DasLager_15_03"); //Gdzie go znajdÄ™?
+	AI_Output(self,other,"Info_Nov_5_DasLager_05_04"); //Pod laboratorium Cor Kaloma, w pobliÅ¼u dziedziÅ„ca wielkiej Å›wiÄ…tyni.
 	
 	var C_NPC CorKalom;		CorKalom = Hlp_GetNpc(Gur_1201_CorKalom);
 	CorKalom.aivar[AIV_FINDABLE] = TRUE;
@@ -119,7 +119,7 @@ INSTANCE Info_Nov_5_DieLage(C_INFO) // E1
 	condition	= Info_Nov_5_DieLage_Condition;
 	information	= Info_Nov_5_DieLage_Info;
 	permanent	= 1;
-	description = "Co s³ychaæ?";
+	description = "Co sÅ‚ychaÄ‡?";
 };                       
 
 FUNC INT Info_Nov_5_DieLage_Condition()
@@ -129,9 +129,9 @@ FUNC INT Info_Nov_5_DieLage_Condition()
 
 FUNC VOID Info_Nov_5_DieLage_Info()
 {
-	AI_Output(other,self,"Info_Nov_5_DieLage_15_00"); //Co s³ychaæ?
-	AI_Output(self,other,"Info_Nov_5_DieLage_05_01"); //Nie mogê narzekaæ. Jesteœ tu nowy, prawda?
-	AI_Output(other,self,"Info_Nov_5_DieLage_15_02"); //Dopiero co przyby³em.
+	AI_Output(other,self,"Info_Nov_5_DieLage_15_00"); //Co sÅ‚ychaÄ‡?
+	AI_Output(self,other,"Info_Nov_5_DieLage_05_01"); //Nie mogÄ™ narzekaÄ‡. JesteÅ› tu nowy, prawda?
+	AI_Output(other,self,"Info_Nov_5_DieLage_15_02"); //Dopiero co przybyÅ‚em.
 };
 	
 // *************************************************************************

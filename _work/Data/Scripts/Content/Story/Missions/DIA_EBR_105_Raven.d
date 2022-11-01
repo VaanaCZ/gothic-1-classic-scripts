@@ -47,7 +47,7 @@ FUNC int DIA_Raven_FirstIn_Condition()
 
 FUNC VOID DIA_Raven_FirstIn_Info()
 {
-	AI_Output (self, other,"DIA_Raven_FirstIn_10_00"); //Co mogÍ dla ciebie zrobiÊ?
+	AI_Output (self, other,"DIA_Raven_FirstIn_10_00"); //Co mogƒô dla ciebie zrobiƒá?
 };
 
 // **************************************
@@ -61,7 +61,7 @@ instance DIA_Raven_Who (C_INFO)
 	condition	= DIA_Raven_Who_Condition;
 	information	= DIA_Raven_Who_Info;
 	permanent	= 0;
-	description	= "Kim jesteú?";
+	description	= "Kim jeste≈õ?";
 };                       
 
 FUNC int DIA_Raven_Who_Condition()
@@ -71,8 +71,8 @@ FUNC int DIA_Raven_Who_Condition()
 
 FUNC VOID DIA_Raven_Who_Info()
 {
-	AI_Output (other, self,"DIA_Raven_Who_15_00"); //Kim jesteú?
-	AI_Output (self, other,"DIA_Raven_Who_10_01"); //Nazywam siÍ Kruk. Jestem prawπ rÍkπ Gomeza. Kaødy, kto chce siÍ spotkaÊ z szefem, musi najpierw porozmawiaÊ ze mnπ.
+	AI_Output (other, self,"DIA_Raven_Who_15_00"); //Kim jeste≈õ?
+	AI_Output (self, other,"DIA_Raven_Who_10_01"); //Nazywam siƒô Kruk. Jestem prawƒÖ rƒôkƒÖ Gomeza. Ka≈ºdy, kto chce siƒô spotkaƒá z szefem, musi najpierw porozmawiaƒá ze mnƒÖ.
 };
 
 // **************************************
@@ -86,7 +86,7 @@ instance DIA_Raven_Krautbote (C_INFO)
 	condition	= DIA_Raven_Krautbote_Condition;
 	information	= DIA_Raven_Krautbote_Info;
 	permanent	= 0;
-	description	= "Mam trochÍ bagiennego ziela dla Gomeza od Cor Kaloma.";
+	description	= "Mam trochƒô bagiennego ziela dla Gomeza od Cor Kaloma.";
 };                       
 
 FUNC int DIA_Raven_Krautbote_Condition()
@@ -99,12 +99,12 @@ FUNC int DIA_Raven_Krautbote_Condition()
 
 FUNC VOID DIA_Raven_Krautbote_Info()
 {
-	AI_Output			(other, self,"DIA_Raven_Krautbote_15_00"); //Mam trochÍ bagiennego ziela dla Gomeza od Cor Kaloma.
-	AI_Output			(self, other,"DIA_Raven_Krautbote_10_01"); //Gomez nie zajmuje siÍ takimi rzeczami osobiúcie. To dzia≥ka Bartholo.
-	AI_Output			(self, other,"DIA_Raven_Krautbote_10_02"); //Znajdziesz go w komnacie na prawo od wejúcia, albo w kuchni w duøej wieøy.
-	AI_Output			(self, other,"DIA_Raven_Krautbote_10_03"); //Oczywiúcie w nocy pewnie úpi. Na twoim miejscu nie przeszkadza≥bym mu do rana.
+	AI_Output			(other, self,"DIA_Raven_Krautbote_15_00"); //Mam trochƒô bagiennego ziela dla Gomeza od Cor Kaloma.
+	AI_Output			(self, other,"DIA_Raven_Krautbote_10_01"); //Gomez nie zajmuje siƒô takimi rzeczami osobi≈õcie. To dzia≈Çka Bartholo.
+	AI_Output			(self, other,"DIA_Raven_Krautbote_10_02"); //Znajdziesz go w komnacie na prawo od wej≈õcia, albo w kuchni w du≈ºej wie≈ºy.
+	AI_Output			(self, other,"DIA_Raven_Krautbote_10_03"); //Oczywi≈õcie w nocy pewnie ≈õpi. Na twoim miejscu nie przeszkadza≈Çbym mu do rana.
 
-	B_LogEntry			(CH1_KrautBote,"Ziele dla Gomeza naleøy dostarczyÊ do Bartholo. ZnajdÍ go w rezydencji MagnatÛw.");
+	B_LogEntry			(CH1_KrautBote,"Ziele dla Gomeza nale≈ºy dostarczyƒá do Bartholo. Znajdƒô go w rezydencji Magnat√≥w.");
 };
 
 // **************************************
@@ -118,7 +118,7 @@ instance DIA_Raven_Aufnahme (C_INFO)
 	condition	= DIA_Raven_Aufnahme_Condition;
 	information	= DIA_Raven_Aufnahme_Info;
 	permanent	= 0;
-	description	= "ChcÍ siÍ zobaczyÊ z Gomezem. Thorus powiedzia≥, øe mogÍ zostaÊ Cieniem.";
+	description	= "Chcƒô siƒô zobaczyƒá z Gomezem. Thorus powiedzia≈Ç, ≈ºe mogƒô zostaƒá Cieniem.";
 };                       
 
 FUNC int DIA_Raven_Aufnahme_Condition()
@@ -132,9 +132,9 @@ FUNC int DIA_Raven_Aufnahme_Condition()
 
 FUNC VOID DIA_Raven_Aufnahme_Info()
 {
-	AI_Output (other, self,"DIA_Raven_Aufnahme_15_00"); //ChcÍ siÍ zobaczyÊ z Gomezem. Thorus powiedzia≥, øe mogÍ zostaÊ Cieniem.
-	AI_Output (self, other,"DIA_Raven_Aufnahme_10_01"); //Dobrych ludzi nigdy nie za wielu. Chyba masz wystarczajπco rÛwno pod sufitem. Moøesz siÍ nam przydaÊ.
-	AI_Output (self, other,"DIA_Raven_Aufnahme_10_02"); //ZabiorÍ ciÍ do Gomeza. Chodü za mnπ, tylko niczego nie dotykaj!
+	AI_Output (other, self,"DIA_Raven_Aufnahme_15_00"); //Chcƒô siƒô zobaczyƒá z Gomezem. Thorus powiedzia≈Ç, ≈ºe mogƒô zostaƒá Cieniem.
+	AI_Output (self, other,"DIA_Raven_Aufnahme_10_01"); //Dobrych ludzi nigdy nie za wielu. Chyba masz wystarczajƒÖco r√≥wno pod sufitem. Mo≈ºesz siƒô nam przydaƒá.
+	AI_Output (self, other,"DIA_Raven_Aufnahme_10_02"); //Zabiorƒô ciƒô do Gomeza. Chod≈∫ za mnƒÖ, tylko niczego nie dotykaj!
 	
 	AI_StopProcessInfos	(self);
 	Npc_ExchangeRoutine(self, "GUIDE");
@@ -164,7 +164,7 @@ FUNC int DIA_Raven_There_Condition()
 
 FUNC VOID DIA_Raven_There_Info()
 {
-	AI_Output (self, other,"DIA_Raven_There_10_01"); //Gomez jest tam. Jeúli nie okaøesz mu naleønego szacunku, osobiúcie nauczÍ ciÍ dobrych manier. Zrozumiano?
+	AI_Output (self, other,"DIA_Raven_There_10_01"); //Gomez jest tam. Je≈õli nie oka≈ºesz mu nale≈ºnego szacunku, osobi≈õcie nauczƒô ciƒô dobrych manier. Zrozumiano?
 	AI_StopProcessInfos	(self);
 		
 	Npc_ExchangeRoutine(self, "START");
@@ -182,7 +182,7 @@ instance DIA_Raven_PERM (C_INFO)
 	condition	= DIA_Raven_PERM_Condition;
 	information	= DIA_Raven_PERM_Info;
 	permanent	= 1;
-	description	= "Jak idzie handel rudπ?";
+	description	= "Jak idzie handel rudƒÖ?";
 };                       
 
 FUNC int DIA_Raven_PERM_Condition()
@@ -195,8 +195,8 @@ FUNC int DIA_Raven_PERM_Condition()
 
 FUNC VOID DIA_Raven_PERM_Info()
 {
-	AI_Output (other, self,"DIA_Raven_PERM_15_00"); //Jak idzie handel rudπ?
-	AI_Output (self, other,"DIA_Raven_PERM_10_01"); //Stara Kopalnia jakoú radzi sobie z wydobyciem. Ostatni transport do zewnÍtrznego úwiata by≥ bardzo duøy.
+	AI_Output (other, self,"DIA_Raven_PERM_15_00"); //Jak idzie handel rudƒÖ?
+	AI_Output (self, other,"DIA_Raven_PERM_10_01"); //Stara Kopalnia jako≈õ radzi sobie z wydobyciem. Ostatni transport do zewnƒôtrznego ≈õwiata by≈Ç bardzo du≈ºy.
 };
 
 // **************************************
@@ -210,7 +210,7 @@ instance DIA_Raven_BinDabei (C_INFO)
 	condition	= DIA_Raven_BinDabei_Condition;
 	information	= DIA_Raven_BinDabei_Info;
 	permanent	= 0;
-	description	= "Gomez powiedzia≥, øe siÍ nadajÍ.";
+	description	= "Gomez powiedzia≈Ç, ≈ºe siƒô nadajƒô.";
 };                       
 
 FUNC int DIA_Raven_BinDabei_Condition()
@@ -229,9 +229,9 @@ FUNC VOID DIA_Raven_BinDabei_Info()
 	B_GiveInvItems      (self, hero, ItAmArrow, 1);
 	Npc_RemoveInvItem	(hero, ItAmArrow);
 	
-	AI_Output			(other, self,"DIA_Raven_BinDabei_15_00"); //Gomez powiedzia≥, øe siÍ nadajÍ.
-	AI_Output			(self, other,"DIA_Raven_BinDabei_10_01"); //åwietnie! Tak siÍ sk≥ada, øe moøesz od razu udowodniÊ, na co ciÍ staÊ. Jest dla ciebie robota.
-	AI_Output			(self, other,"DIA_Raven_BinDabei_10_02"); //To nie powinno byÊ zbyt trudne, jeúli rzeczywiúcie masz kontakty, o jakich mÛwi≥eú.
+	AI_Output			(other, self,"DIA_Raven_BinDabei_15_00"); //Gomez powiedzia≈Ç, ≈ºe siƒô nadajƒô.
+	AI_Output			(self, other,"DIA_Raven_BinDabei_10_01"); //≈öwietnie! Tak siƒô sk≈Çada, ≈ºe mo≈ºesz od razu udowodniƒá, na co ciƒô staƒá. Jest dla ciebie robota.
+	AI_Output			(self, other,"DIA_Raven_BinDabei_10_02"); //To nie powinno byƒá zbyt trudne, je≈õli rzeczywi≈õcie masz kontakty, o jakich m√≥wi≈Çe≈õ.
 
 	AI_EquipBestArmor	(hero); 
 };
@@ -249,7 +249,7 @@ INSTANCE DIA_Raven_SpySect (C_INFO)
 	condition	= DIA_Raven_SpySect_Condition;
 	information	= DIA_Raven_SpySect_Info;
 	permanent	= 0;
-	description	= "Co mam zrobiÊ?";
+	description	= "Co mam zrobiƒá?";
 };
 
 FUNC INT DIA_Raven_SpySect_Condition()
@@ -262,23 +262,23 @@ FUNC INT DIA_Raven_SpySect_Condition()
 
 FUNC VOID DIA_Raven_SpySect_Info()
 {
-	AI_Output (other, self,"DIA_Raven_SpySect_15_00"); //Co mam zrobiÊ?
-	AI_Output (self, other,"DIA_Raven_SpySect_10_01"); //Prowadzimy intensywnπ wymianÍ handlowπ z Bractwem, co nie znaczy, øe im do koÒca ufamy.
-	AI_Output (self, other,"DIA_Raven_SpySect_10_02"); //Idü na bagna.
-	AI_Output (self, other,"DIA_Raven_SpySect_10_03"); //Kiedy dotrzesz do Obozu Bractwa, miej uszy i oczy szeroko otwarte. Kaødy strzÍpek informacji moøe siÍ okazaÊ niezwykle cenny.
-	AI_Output (self, other,"DIA_Raven_SpySect_10_04"); //Im wiÍcej wywÍszysz, tym lepiej. Ta misja wymaga odrobiny taktu, jeúli wiesz, co mam na myúli.
-	AI_Output (other, self,"DIA_Raven_SpySect_15_05"); //Bez obaw. Postaram siÍ ich nie rozz≥oúciÊ.
-	AI_Output (self, other,"DIA_Raven_SpySect_10_06"); //Wiedzia≥em, øe siÍ zrozumiemy.
+	AI_Output (other, self,"DIA_Raven_SpySect_15_00"); //Co mam zrobiƒá?
+	AI_Output (self, other,"DIA_Raven_SpySect_10_01"); //Prowadzimy intensywnƒÖ wymianƒô handlowƒÖ z Bractwem, co nie znaczy, ≈ºe im do ko≈Ñca ufamy.
+	AI_Output (self, other,"DIA_Raven_SpySect_10_02"); //Id≈∫ na bagna.
+	AI_Output (self, other,"DIA_Raven_SpySect_10_03"); //Kiedy dotrzesz do Obozu Bractwa, miej uszy i oczy szeroko otwarte. Ka≈ºdy strzƒôpek informacji mo≈ºe siƒô okazaƒá niezwykle cenny.
+	AI_Output (self, other,"DIA_Raven_SpySect_10_04"); //Im wiƒôcej wywƒôszysz, tym lepiej. Ta misja wymaga odrobiny taktu, je≈õli wiesz, co mam na my≈õli.
+	AI_Output (other, self,"DIA_Raven_SpySect_15_05"); //Bez obaw. Postaram siƒô ich nie rozz≈Ço≈õciƒá.
+	AI_Output (self, other,"DIA_Raven_SpySect_10_06"); //Wiedzia≈Çem, ≈ºe siƒô zrozumiemy.
 	
 	Raven_SpySect = LOG_RUNNING;
 	
 	Log_CreateTopic	(CH1_GoToPsi,	LOG_MISSION);
 	Log_SetTopicStatus (CH1_GoToPsi,	LOG_RUNNING);
-	B_LogEntry (CH1_GoToPsi,"Kruk wys≥a≥ mnie do obozu Bractwa. Mam siÍ tam trochÍ rozejrzeÊ i donieúÊ mu o wszystkich podejrzanych wydarzeniach. Moøe uda mi siÍ dowiedzieÊ czegoú ciekawego.");
+	B_LogEntry (CH1_GoToPsi,"Kruk wys≈Ça≈Ç mnie do obozu Bractwa. Mam siƒô tam trochƒô rozejrzeƒá i donie≈õƒá mu o wszystkich podejrzanych wydarzeniach. Mo≈ºe uda mi siƒô dowiedzieƒá czego≈õ ciekawego.");
 };
 
 // *********************************************
-// 				Ausr¸stung
+// 				Ausr√ºstung
 // *********************************************
 
 INSTANCE DIA_Raven_Equipment (C_INFO)
@@ -288,7 +288,7 @@ INSTANCE DIA_Raven_Equipment (C_INFO)
 	condition	= DIA_Raven_Equipment_Condition;
 	information	= DIA_Raven_Equipment_Info;
 	permanent	= 0;
-	description	= "Gdzie mogÍ dostaÊ lepsze wyposaøenie?";
+	description	= "Gdzie mogƒô dostaƒá lepsze wyposa≈ºenie?";
 };
 
 FUNC INT DIA_Raven_Equipment_Condition()
@@ -301,16 +301,16 @@ FUNC INT DIA_Raven_Equipment_Condition()
 
 FUNC VOID DIA_Raven_Equipment_Info()
 {
-	AI_Output	(other, self,"DIA_Raven_Equipment_15_00"); //Gdzie mogÍ dostaÊ lepsze wyposaøenie?
-	AI_Output	(self, other,"DIA_Raven_Equipment_10_01"); //Porozmawiaj z Diego, on da ci jakπú zbrojÍ. Ten pancerz nie tylko uchroni ciÍ przed úmierciπ, ale bÍdzie rÛwnieø s≥uøy≥ jako znak rozpoznawczy.
-	AI_Output	(self, other,"DIA_Raven_Equipment_10_02"); //DziÍki niemu zyskasz dostÍp do wszystkich waøniejszych miejsc.
-	AI_Output	(self, other,"DIA_Raven_Equipment_10_03"); //Gdybyú potrzebowa≥ broni, porozmawiaj ze Skipem. Znajdziesz go w tej wielkiej szopie, w lewym tylnym rogu zamkowego dziedziÒca.
+	AI_Output	(other, self,"DIA_Raven_Equipment_15_00"); //Gdzie mogƒô dostaƒá lepsze wyposa≈ºenie?
+	AI_Output	(self, other,"DIA_Raven_Equipment_10_01"); //Porozmawiaj z Diego, on da ci jakƒÖ≈õ zbrojƒô. Ten pancerz nie tylko uchroni ciƒô przed ≈õmierciƒÖ, ale bƒôdzie r√≥wnie≈º s≈Çu≈ºy≈Ç jako znak rozpoznawczy.
+	AI_Output	(self, other,"DIA_Raven_Equipment_10_02"); //Dziƒôki niemu zyskasz dostƒôp do wszystkich wa≈ºniejszych miejsc.
+	AI_Output	(self, other,"DIA_Raven_Equipment_10_03"); //Gdyby≈õ potrzebowa≈Ç broni, porozmawiaj ze Skipem. Znajdziesz go w tej wielkiej szopie, w lewym tylnym rogu zamkowego dziedzi≈Ñca.
 
 	Log_CreateTopic	(GE_TraderOC,	LOG_NOTE);
-	B_LogEntry		(GE_TraderOC,"Diego ma lepsze wyposaøenie dla Cieni Gomeza. ZnajdÍ go przy zamkowej bramie.");
+	B_LogEntry		(GE_TraderOC,"Diego ma lepsze wyposa≈ºenie dla Cieni Gomeza. Znajdƒô go przy zamkowej bramie.");
 	if	!Npc_KnowsInfo(hero, DIA_Skip_First)
 	{
-		B_LogEntry	(GE_TraderOC,"Skip, straønik z tylnego dziedziÒca, sprzedaje orÍø, ale tylko ludziom Gomeza.");
+		B_LogEntry	(GE_TraderOC,"Skip, stra≈ºnik z tylnego dziedzi≈Ñca, sprzedaje orƒô≈º, ale tylko ludziom Gomeza.");
 	};
 };
 
@@ -331,7 +331,7 @@ INSTANCE DIA_Raven_SpyBericht (C_INFO)
 	condition	= DIA_Raven_SpyBericht_Condition;
 	information	= DIA_Raven_SpyBericht_Info;
 	permanent	= 1;
-	description	= "Pomyúla≥em, øe zdam ci raport...";
+	description	= "Pomy≈õla≈Çem, ≈ºe zdam ci raport...";
 };
 
 FUNC INT DIA_Raven_SpyBericht_Condition()
@@ -344,41 +344,41 @@ FUNC INT DIA_Raven_SpyBericht_Condition()
 
 FUNC VOID DIA_Raven_SpyBericht_Info()
 {
-	AI_Output (other, self,"DIA_Raven_SpyBericht_15_00"); //Pomyúla≥em, øe zdam ci raport...
-	AI_Output (self, other,"DIA_Raven_SpyBericht_10_01"); //To dobrze. LubiÍ byÊ informowany na bieøπco.
+	AI_Output (other, self,"DIA_Raven_SpyBericht_15_00"); //Pomy≈õla≈Çem, ≈ºe zdam ci raport...
+	AI_Output (self, other,"DIA_Raven_SpyBericht_10_01"); //To dobrze. Lubiƒô byƒá informowany na bie≈ºƒÖco.
 	if (Npc_HasItems (other, itat_Crawlerqueen)>=1)
 	|| (CorKalom_BringMCQBalls == LOG_SUCCESS)
 	{
 		if (Kapitel >= 3)
 		{
-			AI_Output (other, self,"Org_826_Mordrag_RUNNING_15_04"); //Odby≥o siÍ wielkie przywo≥anie.
-			AI_Output (self, other,"DIA_Raven_SpyBericht_10_04"); //Dobrze siÍ spisa≥eú.
+			AI_Output (other, self,"Org_826_Mordrag_RUNNING_15_04"); //Odby≈Ço siƒô wielkie przywo≈Çanie.
+			AI_Output (self, other,"DIA_Raven_SpyBericht_10_04"); //Dobrze siƒô spisa≈Çe≈õ.
 			Raven_SpySect=LOG_SUCCESS;
 			B_GiveXP (XP_ReportToRaven);
 			Log_SetTopicStatus (CH1_GoToPsi,	LOG_SUCCESS);
-			B_LogEntry (CH1_GoToPsi,"Kruk sp≥awi≥ mnie byle gadkπ. Nie potrzeba mi takich przyjaciÛ≥. Od tej pory dzia≥am na w≥asny rachunek.");
+			B_LogEntry (CH1_GoToPsi,"Kruk sp≈Çawi≈Ç mnie byle gadkƒÖ. Nie potrzeba mi takich przyjaci√≥≈Ç. Od tej pory dzia≈Çam na w≈Çasny rachunek.");
 		}
 		else
 		{
-			AI_Output (other, self,"DIA_Raven_SpyBericht_15_02"); //Teraz Bractwo potrzebuje jaj krÛlowej pe≥zaczy. Przygotujπ z nich napÛj, ktÛry umoøliwi im nawiπzanie kontaktu ze åniπcym. Mam te jaja przy sobie.
+			AI_Output (other, self,"DIA_Raven_SpyBericht_15_02"); //Teraz Bractwo potrzebuje jaj kr√≥lowej pe≈Çzaczy. PrzygotujƒÖ z nich nap√≥j, kt√≥ry umo≈ºliwi im nawiƒÖzanie kontaktu ze ≈öniƒÖcym. Mam te jaja przy sobie.
 			if (CorKalom_BringMCQBalls != LOG_SUCCESS)
 			{
-				AI_Output (self, other,"DIA_Raven_SpyBericht_10_03"); //Hmm, interesujπce. Ciekawe czy to zadzia≥a. Zanieú jaja do úwiπtyni.
+				AI_Output (self, other,"DIA_Raven_SpyBericht_10_03"); //Hmm, interesujƒÖce. Ciekawe czy to zadzia≈Ça. Zanie≈õ jaja do ≈õwiƒÖtyni.
 			}
 			else
 			{
-				AI_Output (self, other,"DIA_Raven_SpyBericht_10_04"); //Dobrze siÍ spisa≥eú.
+				AI_Output (self, other,"DIA_Raven_SpyBericht_10_04"); //Dobrze siƒô spisa≈Çe≈õ.
 				Raven_SpySect=LOG_SUCCESS;
 				B_GiveXP (XP_ReportToRaven);
 				Log_SetTopicStatus (CH1_GoToPsi,	LOG_SUCCESS);
-				B_LogEntry (CH1_GoToPsi,"Kruk sp≥awi≥ mnie byle gadkπ. Nie potrzeba mi takich przyjaciÛ≥. Od tej pory dzia≥am na w≥asny rachunek.");
+				B_LogEntry (CH1_GoToPsi,"Kruk sp≈Çawi≈Ç mnie byle gadkƒÖ. Nie potrzeba mi takich przyjaci√≥≈Ç. Od tej pory dzia≈Çam na w≈Çasny rachunek.");
 			};
 		};
 	}
 	else
 	{
-		AI_Output (other, self,"DIA_Raven_SpyBericht_15_05"); //Niestety, jeszcze nie wiem, co planujπ ludzie z Bractwa.
-		AI_Output (self, other,"DIA_Raven_SpyBericht_10_06"); //To dlaczego zawracasz mi g≥owÍ?
+		AI_Output (other, self,"DIA_Raven_SpyBericht_15_05"); //Niestety, jeszcze nie wiem, co planujƒÖ ludzie z Bractwa.
+		AI_Output (self, other,"DIA_Raven_SpyBericht_10_06"); //To dlaczego zawracasz mi g≈Çowƒô?
 	};
 };
 

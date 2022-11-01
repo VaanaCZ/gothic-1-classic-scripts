@@ -44,10 +44,10 @@ FUNC INT DIA_Snaf_Hello_Condition()
 FUNC VOID DIA_Snaf_Hello_Info()
 {
 	AI_Output (other, self,"DIA_Snaf_Hello_15_00"); //Jak leci?
-	AI_Output (self, other,"DIA_Snaf_Hello_01_01"); //Nienajgorzej! Cz³owiek, który umie dobrze gotowaæ, ma tutaj wielu przyjació³!
-	AI_Output (self, other,"DIA_Snaf_Hello_01_02");	//Chcesz mo¿e trochê mojej ry¿owej zupy?
-	AI_Output (other, self,"DIA_Snaf_Hello_15_03"); //Dziêki.
-	AI_Output (self, other,"DIA_Snaf_Hello_01_04");	//Móg³byœ coœ dla mnie zrobiæ...
+	AI_Output (self, other,"DIA_Snaf_Hello_01_01"); //Nienajgorzej! CzÅ‚owiek, ktÃ³ry umie dobrze gotowaÄ‡, ma tutaj wielu przyjaciÃ³Å‚!
+	AI_Output (self, other,"DIA_Snaf_Hello_01_02");	//Chcesz moÅ¼e trochÄ™ mojej ryÅ¼owej zupy?
+	AI_Output (other, self,"DIA_Snaf_Hello_15_03"); //DziÄ™ki.
+	AI_Output (self, other,"DIA_Snaf_Hello_01_04");	//MÃ³gÅ‚byÅ› coÅ› dla mnie zrobiÄ‡...
 	
 	CreateInvItem (self,ItFoRice);
 	B_GiveInvItems(self,other,ItFoRice,1);
@@ -81,39 +81,39 @@ FUNC INT DIA_Snaf_Zutaten_Condition()
 FUNC VOID DIA_Snaf_Zutaten_Info()
 {
 	AI_Output (other, self,"DIA_Snaf_Zutaten_15_00"); //Co takiego?
-	AI_Output (self, other,"DIA_Snaf_Zutaten_01_01"); //Za³o¿ê siê, ¿e lubisz sobie dobrze podjeœæ. Opracowa³em w³aœnie nowy przepis: potrawka z chrz¹szcza a la Snaf z ry¿em i grzybami.
-	AI_Output (self, other,"DIA_Snaf_Zutaten_01_02"); //Dostaniesz ile tylko zechcesz, ale potrzebujê jeszcze 3 chrz¹szczy i parê piekielników - 5 powinno wystarczyæ.
+	AI_Output (self, other,"DIA_Snaf_Zutaten_01_01"); //ZaÅ‚oÅ¼Ä™ siÄ™, Å¼e lubisz sobie dobrze podjeÅ›Ä‡. OpracowaÅ‚em wÅ‚aÅ›nie nowy przepis: potrawka z chrzÄ…szcza a la Snaf z ryÅ¼em i grzybami.
+	AI_Output (self, other,"DIA_Snaf_Zutaten_01_02"); //Dostaniesz ile tylko zechcesz, ale potrzebujÄ™ jeszcze 3 chrzÄ…szczy i parÄ™ piekielnikÃ³w - 5 powinno wystarczyÄ‡.
 	
 	Info_ClearChoices(DIA_Snaf_Zutaten);
-	Info_AddChoice	 (DIA_Snaf_Zutaten,"Chcesz ¿ebym siê porzyga³?",DIA_Snaf_Zutaten_KOTZ);
-	Info_AddChoice	 (DIA_Snaf_Zutaten,"Brzmi nieŸle.",DIA_Snaf_Zutaten_DoIt);
+	Info_AddChoice	 (DIA_Snaf_Zutaten,"Chcesz Å¼ebym siÄ™ porzygaÅ‚?",DIA_Snaf_Zutaten_KOTZ);
+	Info_AddChoice	 (DIA_Snaf_Zutaten,"Brzmi nieÅºle.",DIA_Snaf_Zutaten_DoIt);
 };
 
 func void DIA_Snaf_Zutaten_KOTZ()
 {
-	AI_Output (other, self,"DIA_Snaf_Zutaten_KOTZ_15_00"); //Chcesz, ¿ebym siê porzyga³?
-	AI_Output (self, other,"DIA_Snaf_Zutaten_KOTZ_01_01"); //Nie musisz tego jeœæ, ale powinieneœ przynajmniej spróbowaæ! Zreszt¹, zawsze mo¿esz to komuœ odsprzedaæ!
-	AI_Output (self, other,"DIA_Snaf_Zutaten_KOTZ_01_02"); //Wys³a³em ju¿ kogoœ po sk³adniki, ale œlad po nim zagin¹³. Pewnie uciek³ do Nowego Obozu.
+	AI_Output (other, self,"DIA_Snaf_Zutaten_KOTZ_15_00"); //Chcesz, Å¼ebym siÄ™ porzygaÅ‚?
+	AI_Output (self, other,"DIA_Snaf_Zutaten_KOTZ_01_01"); //Nie musisz tego jeÅ›Ä‡, ale powinieneÅ› przynajmniej sprÃ³bowaÄ‡! ZresztÄ…, zawsze moÅ¼esz to komuÅ› odsprzedaÄ‡!
+	AI_Output (self, other,"DIA_Snaf_Zutaten_KOTZ_01_02"); //WysÅ‚aÅ‚em juÅ¼ kogoÅ› po skÅ‚adniki, ale Å›lad po nim zaginÄ…Å‚. Pewnie uciekÅ‚ do Nowego Obozu.
 	Snaf_Zutaten = LOG_RUNNING;
 	
 	Log_CreateTopic(CH1_SnafsRecipe, LOG_MISSION);
 	Log_SetTopicStatus(CH1_SnafsRecipe, LOG_RUNNING);
-	B_LogEntry( CH1_SnafsRecipe,"Snaf, kucharz mieszkaj¹cy w Zewnêtrznym Pierœcieniu, wys³a³ mnie po 3 chrz¹szcze i 5 grzybów zwanych piekielnikami, których potrzebuje do swojego nowego przepisu.");
+	B_LogEntry( CH1_SnafsRecipe,"Snaf, kucharz mieszkajÄ…cy w ZewnÄ™trznym PierÅ›cieniu, wysÅ‚aÅ‚ mnie po 3 chrzÄ…szcze i 5 grzybÃ³w zwanych piekielnikami, ktÃ³rych potrzebuje do swojego nowego przepisu.");
 	
 	Info_ClearChoices(DIA_Snaf_Zutaten);
 };
 
 func void DIA_Snaf_Zutaten_DoIt()
 {
-	AI_Output (other, self,"DIA_Snaf_Zutaten_DoIt_15_00"); //Brzmi nieŸle.
-	AI_Output (self, other,"DIA_Snaf_Zutaten_DoIt_01_01"); //Zatem idŸ, i przynieœ mi potrzebne sk³adniki.
-	AI_Output (self, other,"DIA_Snaf_Zutaten_DoIt_01_02"); //Poprzedni cz³owiek, którego wys³a³em nie wróci³. Zapewne uciek³ do Nowego Obozu.
+	AI_Output (other, self,"DIA_Snaf_Zutaten_DoIt_15_00"); //Brzmi nieÅºle.
+	AI_Output (self, other,"DIA_Snaf_Zutaten_DoIt_01_01"); //Zatem idÅº, i przynieÅ› mi potrzebne skÅ‚adniki.
+	AI_Output (self, other,"DIA_Snaf_Zutaten_DoIt_01_02"); //Poprzedni czÅ‚owiek, ktÃ³rego wysÅ‚aÅ‚em nie wrÃ³ciÅ‚. Zapewne uciekÅ‚ do Nowego Obozu.
 	Snaf_Zutaten = LOG_RUNNING;
 	Snaf_FreeMBRagout = TRUE;
 		
     Log_CreateTopic(CH1_SnafsRecipe, LOG_MISSION);
 	Log_SetTopicStatus(CH1_SnafsRecipe, LOG_RUNNING);
-	B_LogEntry( CH1_SnafsRecipe,"Snaf, kucharz mieszkaj¹cy w Zewnêtrznym Pierœcieniu, wys³a³ mnie po 3 chrz¹szcze i 5 grzybów zwanych piekielnikami, których potrzebuje do swojego nowego przepisu. W nagrodê mogê liczyæ na darmowe porcje.");		
+	B_LogEntry( CH1_SnafsRecipe,"Snaf, kucharz mieszkajÄ…cy w ZewnÄ™trznym PierÅ›cieniu, wysÅ‚aÅ‚ mnie po 3 chrzÄ…szcze i 5 grzybÃ³w zwanych piekielnikami, ktÃ³rych potrzebuje do swojego nowego przepisu. W nagrodÄ™ mogÄ™ liczyÄ‡ na darmowe porcje.");		
 			
 	Info_ClearChoices(DIA_Snaf_Zutaten);	
 };
@@ -129,7 +129,7 @@ INSTANCE DIA_Snaf_ZutatenSuccess (C_INFO)
 	condition		= DIA_Snaf_ZutatenSuccess_Condition;
 	information		= DIA_Snaf_ZutatenSuccess_Info;
 	permanent		= 0;
-	description		= "Mam przy sobie rzeczy, o które prosi³eœ!";
+	description		= "Mam przy sobie rzeczy, o ktÃ³re prosiÅ‚eÅ›!";
 };
 
 FUNC INT DIA_Snaf_ZutatenSuccess_Condition()
@@ -142,11 +142,11 @@ FUNC INT DIA_Snaf_ZutatenSuccess_Condition()
 
 FUNC VOID DIA_Snaf_ZutatenSuccess_Info()
 {
-	AI_Output (other, self,"DIA_Snaf_ZutatenSuccess_15_00"); //Mam przy sobie rzeczy, o które prosi³eœ!
-	AI_Output (self, other,"DIA_Snaf_ZutatenSuccess_01_01"); //Œwietnie! Teraz muszê je tylko wrzuciæ i za chwilê potrawka bêdzie gotowa. Zaczekaj...
+	AI_Output (other, self,"DIA_Snaf_ZutatenSuccess_15_00"); //Mam przy sobie rzeczy, o ktÃ³re prosiÅ‚eÅ›!
+	AI_Output (self, other,"DIA_Snaf_ZutatenSuccess_01_01"); //Åšwietnie! Teraz muszÄ™ je tylko wrzuciÄ‡ i za chwilÄ™ potrawka bÄ™dzie gotowa. Zaczekaj...
 	
 	CreateInvItems(other, ItFo_Plants_Mushroom_01, 3);
-	B_GiveInvItems(other,self,ItFo_Plants_Mushroom_01,8);//Notwendig zur Anzeige 8 Items übergeben, wird sofort angepasst
+	B_GiveInvItems(other,self,ItFo_Plants_Mushroom_01,8);//Notwendig zur Anzeige 8 Items Ã¼bergeben, wird sofort angepasst
 	
 	Npc_RemoveInvItems(self, ItFo_Plants_Mushroom_01, 8);//Alle Zutaten weg
 	Npc_RemoveInvItems(other, ItAt_MeatBug_01, 3);
@@ -157,11 +157,11 @@ FUNC VOID DIA_Snaf_ZutatenSuccess_Info()
 	Snaf_Zutaten = LOG_SUCCESS;
 	
 	Log_SetTopicStatus	(CH1_SnafsRecipe, LOG_SUCCESS);
-	B_LogEntry			(CH1_SnafsRecipe,"Snaf ucieszy³ siê, gdy da³em mu sk³adniki, których szuka³.");
+	B_LogEntry			(CH1_SnafsRecipe,"Snaf ucieszyÅ‚ siÄ™, gdy daÅ‚em mu skÅ‚adniki, ktÃ³rych szukaÅ‚.");
 	
 	if Snaf_FreeMBRagout==TRUE
 	{
-	    B_LogEntry( CH1_SnafsRecipe,"Od tej pory bêdzie mi codziennie dawa³ darmow¹ porcjê swojej nowej potrawy.");
+	    B_LogEntry( CH1_SnafsRecipe,"Od tej pory bÄ™dzie mi codziennie dawaÅ‚ darmowÄ… porcjÄ™ swojej nowej potrawy.");
 	};
 	
 	B_GiveXP(100);
@@ -182,7 +182,7 @@ INSTANCE DIA_Snaf_AfterSuccess (C_INFO)
 	condition		= DIA_Snaf_AfterSuccess_Condition;
 	information		= DIA_Snaf_AfterSuccess_Info;
 	permanent		= 1;
-	description		= "Powiedzia³eœ, ¿e mogê dostaæ tyle potrawki ile tylko zapragnê...";
+	description		= "PowiedziaÅ‚eÅ›, Å¼e mogÄ™ dostaÄ‡ tyle potrawki ile tylko zapragnÄ™...";
 };
 
 FUNC INT DIA_Snaf_AfterSuccess_Condition()
@@ -195,18 +195,18 @@ FUNC INT DIA_Snaf_AfterSuccess_Condition()
 
 FUNC VOID DIA_Snaf_AfterSuccess_Info()
 {
- 	AI_Output (other, self,"DIA_Snaf_AfterSuccess_15_00"); //Powiedzia³eœ, ¿e mogê dostaæ tyle potrawki ile tylko zapragnê...
+ 	AI_Output (other, self,"DIA_Snaf_AfterSuccess_15_00"); //PowiedziaÅ‚eÅ›, Å¼e mogÄ™ dostaÄ‡ tyle potrawki ile tylko zapragnÄ™...
  	
  	if (Snaf_RagoutDay!=Wld_GetDay())
  	{
- 		AI_Output (self, other,"DIA_Snaf_AfterSuccess_01_01"); //I dotrzymam s³owa. Proszê, weŸ te 3 porcje.
+ 		AI_Output (self, other,"DIA_Snaf_AfterSuccess_01_01"); //I dotrzymam sÅ‚owa. ProszÄ™, weÅº te 3 porcje.
 		CreateInvItems(self, ItFoMeatbugragout,3);
 		B_GiveInvItems(self, other,ItFoMeatbugragout,3);
 		Snaf_RagoutDay = Wld_GetDay();
 	}
 	else
 	{
-		AI_Output (self, other,"DIA_Snaf_AfterSuccess_01_02"); //Jasne! Ale nic mi ju¿ dzisiaj nie zosta³o. Wróæ jutro!
+		AI_Output (self, other,"DIA_Snaf_AfterSuccess_01_02"); //Jasne! Ale nic mi juÅ¼ dzisiaj nie zostaÅ‚o. WrÃ³Ä‡ jutro!
 	};
 };
 
@@ -221,7 +221,7 @@ INSTANCE DIA_Snaf_WhereMeatbugs (C_INFO)
 	condition		= DIA_Snaf_WhereMeatbugs_Condition;
 	information		= DIA_Snaf_WhereMeatbugs_Info;
 	permanent		= 0;
-	description		= "Gdzie mogê znaleŸæ te chrz¹szcze?";
+	description		= "Gdzie mogÄ™ znaleÅºÄ‡ te chrzÄ…szcze?";
 };
 
 FUNC INT DIA_Snaf_WhereMeatbugs_Condition()
@@ -234,11 +234,11 @@ FUNC INT DIA_Snaf_WhereMeatbugs_Condition()
 
 FUNC VOID DIA_Snaf_WhereMeatbugs_Info()
 {
-	AI_Output (other, self,"DIA_Snaf_WhereMeatbugs_15_00"); //Gdzie mogê znaleŸæ te chrz¹szcze?
-	AI_Output (self, other,"DIA_Snaf_WhereMeatbugs_01_01"); //Wszêdzie, gdzie walaj¹ siê jakieœ odpady. Poszukaj w opuszczonych chatach przy zamkowych murach.
-	AI_Output (self, other,"DIA_Snaf_WhereMeatbugs_01_02"); //Tylko niech ciê nie odstraszy ich paskudny wygl¹d. Po ugotowaniu s¹ ca³kiem smaczne.
+	AI_Output (other, self,"DIA_Snaf_WhereMeatbugs_15_00"); //Gdzie mogÄ™ znaleÅºÄ‡ te chrzÄ…szcze?
+	AI_Output (self, other,"DIA_Snaf_WhereMeatbugs_01_01"); //WszÄ™dzie, gdzie walajÄ… siÄ™ jakieÅ› odpady. Poszukaj w opuszczonych chatach przy zamkowych murach.
+	AI_Output (self, other,"DIA_Snaf_WhereMeatbugs_01_02"); //Tylko niech ciÄ™ nie odstraszy ich paskudny wyglÄ…d. Po ugotowaniu sÄ… caÅ‚kiem smaczne.
 	
-    B_LogEntry( CH1_SnafsRecipe,"Chrz¹szcze znajdê w opuszczonych chatach, przy zamkowych murach.");			
+    B_LogEntry( CH1_SnafsRecipe,"ChrzÄ…szcze znajdÄ™ w opuszczonych chatach, przy zamkowych murach.");			
 };
 
 // **************************************************
@@ -252,7 +252,7 @@ INSTANCE DIA_Snaf_WhereMushrooms (C_INFO)
 	condition		= DIA_Snaf_WhereMushrooms_Condition;
 	information		= DIA_Snaf_WhereMushrooms_Info;
 	permanent		= 0;
-	description		= "Gdzie znajdê te piekielniki?";
+	description		= "Gdzie znajdÄ™ te piekielniki?";
 };
 
 FUNC INT DIA_Snaf_WhereMushrooms_Condition()
@@ -265,10 +265,10 @@ FUNC INT DIA_Snaf_WhereMushrooms_Condition()
 
 FUNC VOID DIA_Snaf_WhereMushrooms_Info()
 {
-	AI_Output (other, self,"DIA_Snaf_WhereMushrooms_15_00"); //Gdzie znajdê te piekielniki?
-	AI_Output (self, other,"DIA_Snaf_WhereMushrooms_01_01"); //WyjdŸ z Obozu przez po³udniow¹ bramê, to ta pod zawalon¹ wie¿¹. Znajdziesz siê na ³¹ce, na której rosn¹ grzyby.
+	AI_Output (other, self,"DIA_Snaf_WhereMushrooms_15_00"); //Gdzie znajdÄ™ te piekielniki?
+	AI_Output (self, other,"DIA_Snaf_WhereMushrooms_01_01"); //WyjdÅº z Obozu przez poÅ‚udniowÄ… bramÄ™, to ta pod zawalonÄ… wieÅ¼Ä…. Znajdziesz siÄ™ na Å‚Ä…ce, na ktÃ³rej rosnÄ… grzyby.
 	
-	B_LogEntry( CH1_SnafsRecipe,"Piekielniki rosn¹ na ³¹ce, przy zawalonej wie¿y po³udniowej bramy.");			
+	B_LogEntry( CH1_SnafsRecipe,"Piekielniki rosnÄ… na Å‚Ä…ce, przy zawalonej wieÅ¼y poÅ‚udniowej bramy.");			
 };
 
 // **************************************************
@@ -282,7 +282,7 @@ INSTANCE DIA_Snaf_WhereNek (C_INFO)
 	condition		= DIA_Snaf_WhereNek_Condition;
 	information		= DIA_Snaf_WhereNek_Info;
 	permanent		= 0;
-	description		= "Kim by³ cz³owiek, którego wys³a³eœ na poszukiwania przede mn¹?";
+	description		= "Kim byÅ‚ czÅ‚owiek, ktÃ³rego wysÅ‚aÅ‚eÅ› na poszukiwania przede mnÄ…?";
 };
 
 FUNC INT DIA_Snaf_WhereNek_Condition()
@@ -295,9 +295,9 @@ FUNC INT DIA_Snaf_WhereNek_Condition()
 
 FUNC VOID DIA_Snaf_WhereNek_Info()
 {
-	AI_Output (other, self,"DIA_Snaf_WhereNek_15_00"); //Kim by³ cz³owiek, którego wys³a³eœ na poszukiwania przede mn¹?
-	AI_Output (self, other,"DIA_Snaf_WhereNek_01_01"); //Nazywa³ siê Nek. Chyba nie czu³ siê tu zbyt dobrze. Podejrzewam, ¿e uciek³ do Nowego Obozu.
-	AI_Output (self, other,"DIA_Snaf_WhereNek_01_02"); //Wys³a³em go po grzyby, ale nigdy nie wróci³...
+	AI_Output (other, self,"DIA_Snaf_WhereNek_15_00"); //Kim byÅ‚ czÅ‚owiek, ktÃ³rego wysÅ‚aÅ‚eÅ› na poszukiwania przede mnÄ…?
+	AI_Output (self, other,"DIA_Snaf_WhereNek_01_01"); //NazywaÅ‚ siÄ™ Nek. Chyba nie czuÅ‚ siÄ™ tu zbyt dobrze. Podejrzewam, Å¼e uciekÅ‚ do Nowego Obozu.
+	AI_Output (self, other,"DIA_Snaf_WhereNek_01_02"); //WysÅ‚aÅ‚em go po grzyby, ale nigdy nie wrÃ³ciÅ‚...
 	
 	if	(Sly_LostNek != LOG_SUCCESS)
 	&&	(Npc_GetTrueGuild(hero) == GIL_NONE)
@@ -305,7 +305,7 @@ FUNC VOID DIA_Snaf_WhereNek_Info()
 		Log_CreateTopic		(CH1_LostNek,	LOG_MISSION);
 		Log_SetTopicStatus	(CH1_LostNek,	LOG_RUNNING);
 	};
-	B_LogEntry			(CH1_LostNek,"Snaf wys³a³ Neka na poszukiwanie grzybów.");
+	B_LogEntry			(CH1_LostNek,"Snaf wysÅ‚aÅ‚ Neka na poszukiwanie grzybÃ³w.");
 };
 
 

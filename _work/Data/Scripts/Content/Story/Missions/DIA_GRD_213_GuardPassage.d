@@ -7,11 +7,11 @@
 //	Uhrzeit:	24h
 //
 //	Es passiert folgendes:
-//	1.	Nähert sich der Spieler dem Durchgang, so wird er in diesen
+//	1.	NÃ¤hert sich der Spieler dem Durchgang, so wird er in diesen
 //		Dialog gezwungen und einmal gewarnt
-//	2.	Nähert sich der SC trotzdem weiter, so wird er ein ZWEITES Mal
+//	2.	NÃ¤hert sich der SC trotzdem weiter, so wird er ein ZWEITES Mal
 //		gewarnt (aggressiver mit Waffe ziehen)
-//	3.	Nähert er sich trotzdem wieder, wird er angegriffen
+//	3.	NÃ¤hert er sich trotzdem wieder, wird er angegriffen
 //////////////////////////////////////////////////////////////////////////
 const string	Grd_213_CHECKPOINT		= "OCC_GATE_INSIDE";
 
@@ -43,9 +43,9 @@ func void Info_Grd_213_FirstWarn_Info()
 {
 	PrintGlobals	(PD_MISSION);
 
-	AI_Output (self, hero,"Info_Grd_213_FirstWarn_Info_07_01"); //STÓJ!
-	AI_Output (hero, self,"Info_Grd_213_FirstWarn_Info_15_02"); //Co siê dzieje?
-	AI_Output (self, hero,"Info_Grd_213_FirstWarn_Info_07_03"); //Nie wolno ci wejœæ do zamku. Spadaj!
+	AI_Output (self, hero,"Info_Grd_213_FirstWarn_Info_07_01"); //STÃ“J!
+	AI_Output (hero, self,"Info_Grd_213_FirstWarn_Info_15_02"); //Co siÄ™ dzieje?
+	AI_Output (self, hero,"Info_Grd_213_FirstWarn_Info_07_03"); //Nie wolno ci wejÅ›Ä‡ do zamku. Spadaj!
 
 	hero.aivar[AIV_LASTDISTTOWP] 		= Npc_GetDistToWP(hero,Grd_213_CHECKPOINT);
 	hero.aivar[AIV_GUARDPASSAGE_STATUS]	= AIV_GPS_FIRSTWARN;	
@@ -80,7 +80,7 @@ func int Info_Grd_213_LastWarn_Condition()
 
 func int Info_Grd_213_LastWarn_Info()
 {
-	AI_Output (self, hero,"Info_Grd_213_LastWarn_07_01"); 		//Og³uch³eœ? Jeszcze jeden krok a nakarmiê tob¹ robaki!
+	AI_Output (self, hero,"Info_Grd_213_LastWarn_07_01"); 		//OgÅ‚uchÅ‚eÅ›? Jeszcze jeden krok a nakarmiÄ™ tobÄ… robaki!
 
 	hero.aivar[AIV_LASTDISTTOWP] 		= Npc_GetDistToWP (hero,Grd_213_CHECKPOINT);
 	hero.aivar[AIV_GUARDPASSAGE_STATUS]	= AIV_GPS_LASTWARN;	
@@ -120,7 +120,7 @@ func int Info_Grd_213_Attack_Info()
 	hero.aivar[AIV_GUARDPASSAGE_STATUS]	= AIV_GPS_PUNISH;	
 	
 	B_FullStop			(self);	
-	AI_StopProcessInfos	(self);					//dem Spieler sofort wieder die Kontrolle zurückgeben
+	AI_StopProcessInfos	(self);					//dem Spieler sofort wieder die Kontrolle zurÃ¼ckgeben
 	B_IntruderAlert		(self,	other);
 	B_SetAttackReason	(self,	AIV_AR_INTRUDER);
 	Npc_SetTarget		(self,	hero);
@@ -147,7 +147,7 @@ FUNC int  Grd_213_Torwache_WELCOME_Condition()
 };
 func void  Grd_213_Torwache_WELCOME_Info()
 {
-	AI_Output (self, other,"Grd_213_Torwache_WELCOME_Info_07_01"); //Podobno jesteœ teraz jednym z nas? NieŸle jak na kogoœ, kto jest tu od niedawna.
+	AI_Output (self, other,"Grd_213_Torwache_WELCOME_Info_07_01"); //Podobno jesteÅ› teraz jednym z nas? NieÅºle jak na kogoÅ›, kto jest tu od niedawna.
 };
 
 // ************************************************************
@@ -185,7 +185,7 @@ INSTANCE Info_Grd_213_Abblitzen (C_INFO)
 	condition	= Info_Grd_213_Abblitzen_Condition;
 	information	= Info_Grd_213_Abblitzen_Info;
 	permanent	= 1;
-	description	= "Móg³byœ od czasu wpuœciæ kogoœ potajemnie do zamku.";
+	description	= "MÃ³gÅ‚byÅ› od czasu wpuÅ›ciÄ‡ kogoÅ› potajemnie do zamku.";
 };                       
 
 FUNC INT Info_Grd_213_Abblitzen_Condition()
@@ -198,8 +198,8 @@ FUNC INT Info_Grd_213_Abblitzen_Condition()
 
 FUNC VOID Info_Grd_213_Abblitzen_Info()
 {
-	AI_Output (other, self,"Info_Grd_213_Abblitzen_15_00"); //Móg³byœ od czasu do czasu zrobiæ coœ bardziej ekscytuj¹cego. Na przyk³ad wpuœciæ kogoœ potajemnie do zamku.
-	AI_Output (self, other,"Info_Grd_213_Abblitzen_07_01"); //Bardziej ekscytuj¹cego, powiadasz? To ca³kiem dobry pomys³ - ju¿ od dawna nie obi³em nikomu twarzy.
+	AI_Output (other, self,"Info_Grd_213_Abblitzen_15_00"); //MÃ³gÅ‚byÅ› od czasu do czasu zrobiÄ‡ coÅ› bardziej ekscytujÄ…cego. Na przykÅ‚ad wpuÅ›ciÄ‡ kogoÅ› potajemnie do zamku.
+	AI_Output (self, other,"Info_Grd_213_Abblitzen_07_01"); //Bardziej ekscytujÄ…cego, powiadasz? To caÅ‚kiem dobry pomysÅ‚ - juÅ¼ od dawna nie obiÅ‚em nikomu twarzy.
 	AI_StopProcessInfos	(self);
 };
 
@@ -214,7 +214,7 @@ INSTANCE Info_Grd_213_Passgate (C_INFO)
 	condition	= Info_Grd_213_Passgate_Condition;
 	information	= Info_Grd_213_Passgate_Info;
 	permanent	= 1;
-	description	= "Hej, wszystko w porz¹dku?";
+	description	= "Hej, wszystko w porzÄ…dku?";
 };                       
 
 FUNC INT Info_Grd_213_Passgate_Condition()
@@ -227,7 +227,7 @@ FUNC INT Info_Grd_213_Passgate_Condition()
 
 FUNC VOID Info_Grd_213_Passgate_Info()
 {
-	AI_Output (other, self,"Info_Grd_213_Passgate_15_00"); //Hej, wszystko w porz¹dku?
-	AI_Output (self, other,"Info_Grd_213_Passgate_07_01"); //Przestañ siê tu krêciæ. W³aŸ do œrodka.
+	AI_Output (other, self,"Info_Grd_213_Passgate_15_00"); //Hej, wszystko w porzÄ…dku?
+	AI_Output (self, other,"Info_Grd_213_Passgate_07_01"); //PrzestaÅ„ siÄ™ tu krÄ™ciÄ‡. WÅ‚aÅº do Å›rodka.
 	AI_StopProcessInfos	(self);
 };

@@ -47,52 +47,52 @@ FUNC INT DIA_Grim_Falle_Condition()
 
 FUNC VOID DIA_Grim_Falle_Info()
 {
-	AI_Output (self, other,"DIA_Grim_Falle_06_00"); //Hej, ty! Czy to nie ty chcesz do³¹czyæ do naszego obozu?
-	AI_Output (other, self,"DIA_Grim_Falle_15_01"); //A jeœli chcê?
-	AI_Output (self, other,"DIA_Grim_Falle_06_02"); //Móg³bym ci pomóc...
+	AI_Output (self, other,"DIA_Grim_Falle_06_00"); //Hej, ty! Czy to nie ty chcesz doÅ‚Ä…czyÄ‡ do naszego obozu?
+	AI_Output (other, self,"DIA_Grim_Falle_15_01"); //A jeÅ›li chcÄ™?
+	AI_Output (self, other,"DIA_Grim_Falle_06_02"); //MÃ³gÅ‚bym ci pomÃ³c...
 	AI_Output (other, self,"DIA_Grim_Falle_15_03"); //Jak?
-	AI_Output (self, other,"DIA_Grim_Falle_06_04"); //Na zewn¹trz Obozu siedzi dwóch goœci. Jeden z nich ukrad³ coœ cennego Magnatom. To cenny amulet, który mia³ nam zostaæ przys³any z ostatnim transportem ze œwiata zewnêtrznego.
-	AI_Output (self, other,"DIA_Grim_Falle_06_05"); //Któryœ z nich powinien mieæ ten amulet przy sobie. Jeœli zaatakujemy ich razem, powinno nam siê udaæ. Sam raczej nie dam rady. Co ty na to?
+	AI_Output (self, other,"DIA_Grim_Falle_06_04"); //Na zewnÄ…trz Obozu siedzi dwÃ³ch goÅ›ci. Jeden z nich ukradÅ‚ coÅ› cennego Magnatom. To cenny amulet, ktÃ³ry miaÅ‚ nam zostaÄ‡ przysÅ‚any z ostatnim transportem ze Å›wiata zewnÄ™trznego.
+	AI_Output (self, other,"DIA_Grim_Falle_06_05"); //KtÃ³ryÅ› z nich powinien mieÄ‡ ten amulet przy sobie. JeÅ›li zaatakujemy ich razem, powinno nam siÄ™ udaÄ‡. Sam raczej nie dam rady. Co ty na to?
 		
 	Info_ClearChoices	(DIA_Grim_Falle );
-	Info_AddChoice		(DIA_Grim_Falle,"To nie dla mnie. Poszukaj sobie kogoœ innego.",DIA_Grim_Falle_Deny);
-	Info_AddChoice		(DIA_Grim_Falle,"A co siê stanie, gdy ju¿ zdobêdziemy amulet?",DIA_Grim_Falle_HowShare);
-	Info_AddChoice		(DIA_Grim_Falle,"Pójdê z tob¹.",DIA_Grim_Falle_Accepr);
+	Info_AddChoice		(DIA_Grim_Falle,"To nie dla mnie. Poszukaj sobie kogoÅ› innego.",DIA_Grim_Falle_Deny);
+	Info_AddChoice		(DIA_Grim_Falle,"A co siÄ™ stanie, gdy juÅ¼ zdobÄ™dziemy amulet?",DIA_Grim_Falle_HowShare);
+	Info_AddChoice		(DIA_Grim_Falle,"PÃ³jdÄ™ z tobÄ….",DIA_Grim_Falle_Accepr);
 };
 
 func void DIA_Grim_Falle_Deny()
 {
-	AI_Output (other, self,"DIA_Grim_Falle_Deny_15_00"); //To nie dla mnie. Poszukaj sobie kogoœ innego.
-	AI_Output (self, other,"DIA_Grim_Falle_Deny_06_01"); //Z takim podejœciem d³ugo tu miejsca nie zagrzejesz. Daj mi znaæ, gdybyœ zmieni³ zdanie!
+	AI_Output (other, self,"DIA_Grim_Falle_Deny_15_00"); //To nie dla mnie. Poszukaj sobie kogoÅ› innego.
+	AI_Output (self, other,"DIA_Grim_Falle_Deny_06_01"); //Z takim podejÅ›ciem dÅ‚ugo tu miejsca nie zagrzejesz. Daj mi znaÄ‡, gdybyÅ› zmieniÅ‚ zdanie!
 	Info_ClearChoices	(DIA_Grim_Falle );
 };
 
 func void DIA_Grim_Falle_HowShare()
 {
-	AI_Output (other, self,"DIA_Grim_Falle_HowShare_15_00"); //A co siê stanie, gdy ju¿ zdobêdziemy amulet?
-	AI_Output (self, other,"DIA_Grim_Falle_HowShare_06_01"); //To proste. Zwrócê go Magnatom i odbiorê nagrodê. Przy okazji powiem im, ¿e mi pomog³eœ. Ta wiadomoœæ na pewno dotrze do Gomeza! 
+	AI_Output (other, self,"DIA_Grim_Falle_HowShare_15_00"); //A co siÄ™ stanie, gdy juÅ¼ zdobÄ™dziemy amulet?
+	AI_Output (self, other,"DIA_Grim_Falle_HowShare_06_01"); //To proste. ZwrÃ³cÄ™ go Magnatom i odbiorÄ™ nagrodÄ™. Przy okazji powiem im, Å¼e mi pomogÅ‚eÅ›. Ta wiadomoÅ›Ä‡ na pewno dotrze do Gomeza! 
 	
 	Info_ClearChoices	(DIA_Grim_Falle );
-	Info_AddChoice		(DIA_Grim_Falle,"To nie dla mnie. Poszukaj sobie kogoœ innego.",DIA_Grim_Falle_Deny);
-	Info_AddChoice		(DIA_Grim_Falle,"Nie! Albo dzielimy siê po po³owie, albo baw siê sam!",DIA_Grim_Falle_HalfHalf);
-	Info_AddChoice		(DIA_Grim_Falle,"Pójdê z tob¹.",DIA_Grim_Falle_Accepr);
+	Info_AddChoice		(DIA_Grim_Falle,"To nie dla mnie. Poszukaj sobie kogoÅ› innego.",DIA_Grim_Falle_Deny);
+	Info_AddChoice		(DIA_Grim_Falle,"Nie! Albo dzielimy siÄ™ po poÅ‚owie, albo baw siÄ™ sam!",DIA_Grim_Falle_HalfHalf);
+	Info_AddChoice		(DIA_Grim_Falle,"PÃ³jdÄ™ z tobÄ….",DIA_Grim_Falle_Accepr);
 };
 
 func void DIA_Grim_Falle_HalfHalf()
 {
-	AI_Output (other, self,"DIA_Grim_Falle_HalfHalf_15_00"); //Nie! Albo dzielimy siê po po³owie, albo baw siê sam!
-	AI_Output (self, other,"DIA_Grim_Falle_HalfHalf_06_01"); //Niech bêdzie, pó³ na pó³! Nagrody wystarczy dla nas dwóch! To jak? Mogê na ciebie liczyæ?
+	AI_Output (other, self,"DIA_Grim_Falle_HalfHalf_15_00"); //Nie! Albo dzielimy siÄ™ po poÅ‚owie, albo baw siÄ™ sam!
+	AI_Output (self, other,"DIA_Grim_Falle_HalfHalf_06_01"); //Niech bÄ™dzie, pÃ³Å‚ na pÃ³Å‚! Nagrody wystarczy dla nas dwÃ³ch! To jak? MogÄ™ na ciebie liczyÄ‡?
 };
 
 func void DIA_Grim_Falle_Accepr()
 {
-	AI_Output (other, self,"DIA_Grim_Falle_Accepr_15_00"); //Pójdê z tob¹.
-	AI_Output (self, other,"DIA_Grim_Falle_Accepr_06_01"); //Œwietnie, daj mi znaæ, gdy bêdziesz gotów.
+	AI_Output (other, self,"DIA_Grim_Falle_Accepr_15_00"); //PÃ³jdÄ™ z tobÄ….
+	AI_Output (self, other,"DIA_Grim_Falle_Accepr_06_01"); //Åšwietnie, daj mi znaÄ‡, gdy bÄ™dziesz gotÃ³w.
 	Info_ClearChoices	(DIA_Grim_Falle );
 };
 
 // **************************************************
-// 				Bereit für Falle
+// 				Bereit fÃ¼r Falle
 // **************************************************
 
 INSTANCE DIA_Grim_ReadyToGo (C_INFO)
@@ -102,7 +102,7 @@ INSTANCE DIA_Grim_ReadyToGo (C_INFO)
 	condition		= DIA_Grim_ReadyToGo_Condition;
 	information		= DIA_Grim_ReadyToGo_Info;
 	permanent		= 0;
-	description		= "Jestem gotowy. ChodŸmy po ten amulet.";
+	description		= "Jestem gotowy. ChodÅºmy po ten amulet.";
 };
 
 FUNC INT DIA_Grim_ReadyToGo_Condition()
@@ -115,8 +115,8 @@ FUNC INT DIA_Grim_ReadyToGo_Condition()
 
 FUNC VOID DIA_Grim_ReadyToGo_Info()
 {
-	AI_Output (other, self,"DIA_Grim_ReadyToGo_15_00"); //Jestem gotowy. ChodŸmy po ten amulet.
-	AI_Output (self, other,"DIA_Grim_ReadyToGo_06_01"); //Zatem do dzie³a!
+	AI_Output (other, self,"DIA_Grim_ReadyToGo_15_00"); //Jestem gotowy. ChodÅºmy po ten amulet.
+	AI_Output (self, other,"DIA_Grim_ReadyToGo_06_01"); //Zatem do dzieÅ‚a!
 	
 	AI_StopProcessInfos	(self);
 	
@@ -147,14 +147,14 @@ FUNC int  DIA_Grim_AtOCdraussen_Condition()
 
 FUNC VOID  DIA_Grim_AtOCdraussen_Info()
 {
-	AI_Output (self, other,"DIA_Grim_AtOCdraussen_06_00"); //Oto jesteœmy - daleko od twojego kumpla, Diego.
+	AI_Output (self, other,"DIA_Grim_AtOCdraussen_06_00"); //Oto jesteÅ›my - daleko od twojego kumpla, Diego.
 	if ( ((Npc_GetDistToNpc(self,Bu520)<1000)&&(!Npc_IsDead(Bu520))) || ((Npc_GetDistToNpc(self,Bu534)<1000)&&(!Npc_IsDead(Bu534))) )
 	{
-		AI_Output (self, other,"DIA_Grim_AtOCdraussen_06_01"); //Mamy ci przekazaæ pozdrowienia od Bloodwyna!
+		AI_Output (self, other,"DIA_Grim_AtOCdraussen_06_01"); //Mamy ci przekazaÄ‡ pozdrowienia od Bloodwyna!
 	}
 	else
 	{
-		AI_Output (self, other,"DIA_Grim_AtOCdraussen_06_02"); //Mam ci przekazaæ pozdrowienia od Bloodwyna!
+		AI_Output (self, other,"DIA_Grim_AtOCdraussen_06_02"); //Mam ci przekazaÄ‡ pozdrowienia od Bloodwyna!
 	};
 
 	AI_StopProcessInfos	(self);
@@ -203,22 +203,22 @@ FUNC INT DIA_Grim_NACHFalle_Condition()
 
 FUNC VOID DIA_Grim_NACHFalle_Info()
 {
-	AI_Output (other, self,"DIA_Grim_NACHFalle_15_01"); //Ty g³upcze, chcia³eœ mnie zwabiæ w pu³apkê...
-	AI_Output (self, other,"DIA_Grim_NACHFalle_06_02"); //Hej, stary! Jedziemy na tym samym wózku! Ja te¿ nie zamierzam ryæ pod ziemi¹ do koñca moich dni!
-	AI_Output (self, other,"DIA_Grim_NACHFalle_06_03"); //Dlatego wype³niam polecenia Stra¿ników. Ja te¿ chcê do³¹czyæ do Obozu!
-	AI_Output (self, other,"DIA_Grim_NACHFalle_06_04"); //Zreszt¹ sam zas³u¿y³eœ na ca³y ten bajzel. Dlaczego zadar³eœ ze Stra¿nikami?
-	AI_Output (self, other,"DIA_Grim_NACHFalle_06_05"); //Osobiœcie nic do ciebie nie mam. To jak bêdzie - wojna czy pokój.
+	AI_Output (other, self,"DIA_Grim_NACHFalle_15_01"); //Ty gÅ‚upcze, chciaÅ‚eÅ› mnie zwabiÄ‡ w puÅ‚apkÄ™...
+	AI_Output (self, other,"DIA_Grim_NACHFalle_06_02"); //Hej, stary! Jedziemy na tym samym wÃ³zku! Ja teÅ¼ nie zamierzam ryÄ‡ pod ziemiÄ… do koÅ„ca moich dni!
+	AI_Output (self, other,"DIA_Grim_NACHFalle_06_03"); //Dlatego wypeÅ‚niam polecenia StraÅ¼nikÃ³w. Ja teÅ¼ chcÄ™ doÅ‚Ä…czyÄ‡ do Obozu!
+	AI_Output (self, other,"DIA_Grim_NACHFalle_06_04"); //ZresztÄ… sam zasÅ‚uÅ¼yÅ‚eÅ› na caÅ‚y ten bajzel. Dlaczego zadarÅ‚eÅ› ze StraÅ¼nikami?
+	AI_Output (self, other,"DIA_Grim_NACHFalle_06_05"); //OsobiÅ›cie nic do ciebie nie mam. To jak bÄ™dzie - wojna czy pokÃ³j.
 	
 	Info_ClearChoices	(DIA_Grim_NACHFalle );
 	Info_AddChoice		(DIA_Grim_NACHFalle,"Wojna.",DIA_Grim_NACHFalle_Weiterpruegeln);
-	Info_AddChoice		(DIA_Grim_NACHFalle,"Pokój.",DIA_Grim_NACHFalle_Frieden);
+	Info_AddChoice		(DIA_Grim_NACHFalle,"PokÃ³j.",DIA_Grim_NACHFalle_Frieden);
 };
 
 
 func void DIA_Grim_NACHFalle_Weiterpruegeln()
 {
 	AI_Output (other, self,"DIA_Grim_NACHFalle_Weiterpruegeln_15_00"); //Nie mam nic przeciwko wojnie!
-	AI_Output (self, other,"DIA_Grim_NACHFalle_Weiterpruegeln_06_01"); //Stary, mam ju¿ tego doœæ...
+	AI_Output (self, other,"DIA_Grim_NACHFalle_Weiterpruegeln_06_01"); //Stary, mam juÅ¼ tego doÅ›Ä‡...
 	Info_ClearChoices	(DIA_Grim_NACHFalle );
 	AI_StopProcessInfos	(self);
 
@@ -228,9 +228,9 @@ func void DIA_Grim_NACHFalle_Weiterpruegeln()
 
 func void DIA_Grim_NACHFalle_Frieden()
 {
-	AI_Output (other, self,"DIA_Grim_NACHFalle_Frieden_15_00"); //Niech bêdzie pokój.
-	AI_Output (self, other,"DIA_Grim_NACHFalle_Frieden_06_01"); //Cieszê siê, ¿e mogliœmy to sobie wyjaœniæ. Najlepiej zapomnijmy o ca³ej sprawie. Od tej chwili jestem po twojej stronie.
-	AI_Output (self, other,"DIA_Grim_NACHFalle_Frieden_06_02"); //Gdybyœ jeszcze kiedyœ wpad³ w tarapaty, mo¿esz na mnie liczyæ. W koñcu jestem ci coœ winien.
+	AI_Output (other, self,"DIA_Grim_NACHFalle_Frieden_15_00"); //Niech bÄ™dzie pokÃ³j.
+	AI_Output (self, other,"DIA_Grim_NACHFalle_Frieden_06_01"); //CieszÄ™ siÄ™, Å¼e mogliÅ›my to sobie wyjaÅ›niÄ‡. Najlepiej zapomnijmy o caÅ‚ej sprawie. Od tej chwili jestem po twojej stronie.
+	AI_Output (self, other,"DIA_Grim_NACHFalle_Frieden_06_02"); //GdybyÅ› jeszcze kiedyÅ› wpadÅ‚ w tarapaty, moÅ¼esz na mnie liczyÄ‡. W koÅ„cu jestem ci coÅ› winien.
 	Info_ClearChoices	(DIA_Grim_NACHFalle );
 
 	Npc_SetPermAttitude(self,ATT_FRIENDLY);
@@ -268,7 +268,7 @@ FUNC INT DIA_Grim_Hallo_Condition()
 FUNC VOID DIA_Grim_Hallo_Info()
 {
 	AI_Output (other, self,"DIA_Grim_Hallo_15_00"); //Jestem tu nowy.
-	AI_Output (self, other,"DIA_Grim_Hallo_06_01"); //¯ó³todziób, co? Nazywam siê Grim - te¿ jestem tu od niedawna. Wrzucili mnie nied³ugo przed tob¹.
+	AI_Output (self, other,"DIA_Grim_Hallo_06_01"); //Å»Ã³Å‚todziÃ³b, co? Nazywam siÄ™ Grim - teÅ¼ jestem tu od niedawna. Wrzucili mnie niedÅ‚ugo przed tobÄ….
 };
 
 // **************************************************
@@ -282,7 +282,7 @@ INSTANCE DIA_Grim_Leben (C_INFO)
 	condition		= DIA_Grim_Leben_Condition;
 	information		= DIA_Grim_Leben_Info;
 	permanent		= 0;
-	description		= "Jak wygl¹da ¿ycie w kolonii?";
+	description		= "Jak wyglÄ…da Å¼ycie w kolonii?";
 };
 
 FUNC INT DIA_Grim_Leben_Condition()
@@ -292,8 +292,8 @@ FUNC INT DIA_Grim_Leben_Condition()
 
 FUNC VOID DIA_Grim_Leben_Info()
 {
-	AI_Output (other, self,"DIA_Grim_Leben_15_00"); //Jak wygl¹da ¿ycie w kolonii?
-	AI_Output (self, other,"DIA_Grim_Leben_06_01"); //Nie jest Ÿle, jeœli zap³acisz Stra¿nikom za ochronê.
+	AI_Output (other, self,"DIA_Grim_Leben_15_00"); //Jak wyglÄ…da Å¼ycie w kolonii?
+	AI_Output (self, other,"DIA_Grim_Leben_06_01"); //Nie jest Åºle, jeÅ›li zapÅ‚acisz StraÅ¼nikom za ochronÄ™.
 };
 
 // **************************************************
@@ -307,7 +307,7 @@ INSTANCE DIA_Grim_Aufnahme (C_INFO)
 	condition		= DIA_Grim_Aufnahme_Condition;
 	information		= DIA_Grim_Aufnahme_Info;
 	permanent		= 0;
-	description		= "Co mam zrobiæ, jeœli chcê zostaæ przyjêty do tego obozu?";
+	description		= "Co mam zrobiÄ‡, jeÅ›li chcÄ™ zostaÄ‡ przyjÄ™ty do tego obozu?";
 };
 
 FUNC INT DIA_Grim_Aufnahme_Condition()
@@ -317,11 +317,11 @@ FUNC INT DIA_Grim_Aufnahme_Condition()
 
 FUNC VOID DIA_Grim_Aufnahme_Info()
 {
-	AI_Output (other, self,"DIA_Grim_Aufnahme_15_00"); //Co mam zrobiæ, jeœli chcê zostaæ przyjêty do tego obozu?
-	AI_Output (self, other,"DIA_Grim_Aufnahme_06_01"); //Na pocz¹tek musisz zostaæ Cieniem. W tym celu poszukaj sobie jakiegoœ wp³ywowego opiekuna. Kogoœ, kto wyjaœni ci co w trawie piszczy i wska¿e ci w³aœciw¹ drogê.
-	AI_Output (self, other,"DIA_Grim_Aufnahme_06_02"); //Na twoim miejscu trzyma³bym siê blisko Diego - ja tak zrobi³em i nie ¿a³ujê!
-	AI_Output (self, other,"DIA_Grim_Aufnahme_06_03"); //On podda ciê testowi zaufania - dla ka¿dego wygl¹da on trochê inaczej. No i musisz wype³niaæ jeszcze zadania zlecane ci przez Cienie.
-	AI_Output (self, other,"DIA_Grim_Aufnahme_06_04"); //Jeœli ci siê uda, zostaniesz jednym z nas.
+	AI_Output (other, self,"DIA_Grim_Aufnahme_15_00"); //Co mam zrobiÄ‡, jeÅ›li chcÄ™ zostaÄ‡ przyjÄ™ty do tego obozu?
+	AI_Output (self, other,"DIA_Grim_Aufnahme_06_01"); //Na poczÄ…tek musisz zostaÄ‡ Cieniem. W tym celu poszukaj sobie jakiegoÅ› wpÅ‚ywowego opiekuna. KogoÅ›, kto wyjaÅ›ni ci co w trawie piszczy i wskaÅ¼e ci wÅ‚aÅ›ciwÄ… drogÄ™.
+	AI_Output (self, other,"DIA_Grim_Aufnahme_06_02"); //Na twoim miejscu trzymaÅ‚bym siÄ™ blisko Diego - ja tak zrobiÅ‚em i nie Å¼aÅ‚ujÄ™!
+	AI_Output (self, other,"DIA_Grim_Aufnahme_06_03"); //On podda ciÄ™ testowi zaufania - dla kaÅ¼dego wyglÄ…da on trochÄ™ inaczej. No i musisz wypeÅ‚niaÄ‡ jeszcze zadania zlecane ci przez Cienie.
+	AI_Output (self, other,"DIA_Grim_Aufnahme_06_04"); //JeÅ›li ci siÄ™ uda, zostaniesz jednym z nas.
 };
 
 // **************************************************
@@ -351,11 +351,11 @@ FUNC INT DIA_Grim_HowFarAreYou_Condition()
 FUNC VOID DIA_Grim_HowFarAreYou_Info()
 {
 	AI_Output (other, self,"DIA_Grim_HowFarAreYou_15_00"); //A ty, jak sobie radzisz?
-	AI_Output (self, other,"DIA_Grim_HowFarAreYou_06_01"); //Rozmawia³em ju¿ z Dexterem, Z³ym i R¹czk¹. To jedni najbardziej wp³ywowych ludzi w Zewnêtrznym Pierœcieniu.
+	AI_Output (self, other,"DIA_Grim_HowFarAreYou_06_01"); //RozmawiaÅ‚em juÅ¼ z Dexterem, ZÅ‚ym i RÄ…czkÄ…. To jedni najbardziej wpÅ‚ywowych ludzi w ZewnÄ™trznym PierÅ›cieniu.
 	
 	if	!Grim_Tests
 	{
-		B_LogEntry( CH1_JoinOC,"Dexter, Z³y i R¹czka nale¿¹ do wp³ywowych Cieni.");
+		B_LogEntry( CH1_JoinOC,"Dexter, ZÅ‚y i RÄ…czka naleÅ¼Ä… do wpÅ‚ywowych Cieni.");
 		Grim_Tests = TRUE;
 	};
 };
@@ -371,7 +371,7 @@ INSTANCE DIA_Grim_YourPDV (C_INFO)
 	condition		= DIA_Grim_YourPDV_Condition;
 	information		= DIA_Grim_YourPDV_Info;
 	permanent		= 0;
-	description		= "A jak wygl¹da³ TWÓJ test zaufania?";
+	description		= "A jak wyglÄ…daÅ‚ TWÃ“J test zaufania?";
 };
 
 FUNC INT DIA_Grim_YourPDV_Condition()
@@ -384,8 +384,8 @@ FUNC INT DIA_Grim_YourPDV_Condition()
 
 FUNC VOID DIA_Grim_YourPDV_Info()
 {
-	AI_Output (other, self,"DIA_Grim_YourPDV_15_00"); //A jak wygl¹da³ TWÓJ test zaufania?
-	AI_Output (self, other,"DIA_Grim_YourPDV_06_01"); //Tego nie mogê ci powiedzieæ. O takich rzeczach lepiej nie mówiæ g³oœno!
+	AI_Output (other, self,"DIA_Grim_YourPDV_15_00"); //A jak wyglÄ…daÅ‚ TWÃ“J test zaufania?
+	AI_Output (self, other,"DIA_Grim_YourPDV_06_01"); //Tego nie mogÄ™ ci powiedzieÄ‡. O takich rzeczach lepiej nie mÃ³wiÄ‡ gÅ‚oÅ›no!
 };
 
 
@@ -418,9 +418,9 @@ FUNC int  DIA_Grim_INEXTREMO_Condition()
 
 FUNC VOID  DIA_Grim_INEXTREMO_Info()
 {
-	AI_Output		(self, other,"DIA_Grim_INEXTREMO_06_01"); //Hej, s³ysza³eœ ju¿ wieœci?
-	AI_Output		(self, other,"DIA_Grim_INEXTREMO_06_02"); //S¹ tu In Extremo! W³aœnie weszli na scenê!
-	AI_Output		(self, other,"DIA_Grim_INEXTREMO_06_03"); //Pospiesz siê, albo przegapisz koncert!
+	AI_Output		(self, other,"DIA_Grim_INEXTREMO_06_01"); //Hej, sÅ‚yszaÅ‚eÅ› juÅ¼ wieÅ›ci?
+	AI_Output		(self, other,"DIA_Grim_INEXTREMO_06_02"); //SÄ… tu In Extremo! WÅ‚aÅ›nie weszli na scenÄ™!
+	AI_Output		(self, other,"DIA_Grim_INEXTREMO_06_03"); //Pospiesz siÄ™, albo przegapisz koncert!
 
 	Npc_ExchangeRoutine	(self,	"InExtremo");
 
@@ -446,7 +446,7 @@ instance  DIA_Grim_INEXTREMOAWAY(C_INFO)
 	information	= DIA_Grim_INEXTREMOAWAY_Info;
 	permanent	= 0;
 	important 	= 0;
-	description = "Gdzie s¹ In Extremo?";
+	description = "Gdzie sÄ… In Extremo?";
 };                       
 
 FUNC int  DIA_Grim_INEXTREMOAWAY_Condition()
@@ -460,8 +460,8 @@ FUNC int  DIA_Grim_INEXTREMOAWAY_Condition()
 
 FUNC VOID  DIA_Grim_INEXTREMOAWAY_Info()
 {
-	AI_Output			(hero, self,"DIA_Grim_INEXTREMOAWAY_15_01"); //Gdzie s¹ In Extremo?
-	AI_Output			(self, hero,"DIA_Grim_INEXTREMOAWAY_06_02"); //Pojechali dalej. Szkoda. Zd¹¿y³em siê przyzwyczaiæ do imprez pod scen¹.
+	AI_Output			(hero, self,"DIA_Grim_INEXTREMOAWAY_15_01"); //Gdzie sÄ… In Extremo?
+	AI_Output			(self, hero,"DIA_Grim_INEXTREMOAWAY_06_02"); //Pojechali dalej. Szkoda. ZdÄ…Å¼yÅ‚em siÄ™ przyzwyczaiÄ‡ do imprez pod scenÄ….
 
 	AI_StopProcessInfos	(self);
 };

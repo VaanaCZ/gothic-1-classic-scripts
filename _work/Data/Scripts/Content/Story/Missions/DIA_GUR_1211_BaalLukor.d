@@ -41,7 +41,7 @@ FUNC INT Info_BaalLukor_MEET_Condition()
 
 FUNC VOID Info_BaalLukor_MEET_Info()
 {
-	AI_Output 		(self, other,"Info_BaalLukor_MEET_13_01"); //DziÍki za pomoc. Zjawi≥eú siÍ w ostatniej chwili.
+	AI_Output 		(self, other,"Info_BaalLukor_MEET_13_01"); //Dziƒôki za pomoc. Zjawi≈Çe≈õ siƒô w ostatniej chwili.
 	
 	B_GiveXP		(XP_SaveBaalLukor);
 };
@@ -57,7 +57,7 @@ INSTANCE Info_BaalLukor_DEAD (C_INFO)
 	nr			= 20;
 	permanent	= 0;
 	important 	= 0;
-	description = "Po drodze znalaz≥em cia≥a åwiπtynnych StraønikÛw! Co siÍ sta≥o?";
+	description = "Po drodze znalaz≈Çem cia≈Ça ≈öwiƒÖtynnych Stra≈ºnik√≥w! Co siƒô sta≈Ço?";
 };
 
 FUNC INT Info_BaalLukor_DEAD_Condition()
@@ -67,14 +67,14 @@ FUNC INT Info_BaalLukor_DEAD_Condition()
 
 FUNC VOID Info_BaalLukor_DEAD_Info()
 {
-	AI_Output 			(other, self,"Info_BaalLukor_DEAD_15_01"); //Po drodze znalaz≥em cia≥a åwiπtynnych StraønikÛw! Co siÍ sta≥o?
-	AI_Output 			(self, other,"Info_BaalLukor_DEAD_13_02"); //Mistrz Cor Angar przys≥a≥ nas tutaj, byúmy przeszukali jaskinie.
-	AI_Output 			(self, other,"Info_BaalLukor_DEAD_13_03"); //Spodziewaliúmy siÍ znaleüÊ tu tylko stare groby i rozpadajπce siÍ mumie.
-	AI_Output 			(self, other,"Info_BaalLukor_DEAD_13_04"); //Nagle coú poruszy≥o siÍ w ciemnoúciach i dooko≥a pojawili siÍ Orkowie. Nie wiem, czego tam szukali, ale ich obecnoúÊ tutaj jest bardzo niepokojπca!
-	AI_Output 			(other, self,"Info_BaalLukor_DEAD_15_05"); //Gdzie sπ pozostali Straønicy?
-	AI_Output 			(self, other,"Info_BaalLukor_DEAD_13_06"); //Nie øyjπ! Nieúwiadomie doprowadzi≥em do ich zag≥ady! Niech åniπcy zlituje siÍ nad mojπ duszπ!
+	AI_Output 			(other, self,"Info_BaalLukor_DEAD_15_01"); //Po drodze znalaz≈Çem cia≈Ça ≈öwiƒÖtynnych Stra≈ºnik√≥w! Co siƒô sta≈Ço?
+	AI_Output 			(self, other,"Info_BaalLukor_DEAD_13_02"); //Mistrz Cor Angar przys≈Ça≈Ç nas tutaj, by≈õmy przeszukali jaskinie.
+	AI_Output 			(self, other,"Info_BaalLukor_DEAD_13_03"); //Spodziewali≈õmy siƒô znale≈∫ƒá tu tylko stare groby i rozpadajƒÖce siƒô mumie.
+	AI_Output 			(self, other,"Info_BaalLukor_DEAD_13_04"); //Nagle co≈õ poruszy≈Ço siƒô w ciemno≈õciach i dooko≈Ça pojawili siƒô Orkowie. Nie wiem, czego tam szukali, ale ich obecno≈õƒá tutaj jest bardzo niepokojƒÖca!
+	AI_Output 			(other, self,"Info_BaalLukor_DEAD_15_05"); //Gdzie sƒÖ pozostali Stra≈ºnicy?
+	AI_Output 			(self, other,"Info_BaalLukor_DEAD_13_06"); //Nie ≈ºyjƒÖ! Nie≈õwiadomie doprowadzi≈Çem do ich zag≈Çady! Niech ≈öniƒÖcy zlituje siƒô nad mojƒÖ duszƒÖ!
 
-	B_LogEntry		(CH3_OrcGraveyard,"Ocali≥em Guru Baal Lukora od pewnej úmierci z rπk orkÛw. Niestety, towarzyszπcy mu Straønicy åwiπtynni polegli...");
+	B_LogEntry		(CH3_OrcGraveyard,"Ocali≈Çem Guru Baal Lukora od pewnej ≈õmierci z rƒÖk ork√≥w. Niestety, towarzyszƒÖcy mu Stra≈ºnicy ≈öwiƒÖtynni polegli...");
 };
 
 //**************************************************************************
@@ -88,7 +88,7 @@ INSTANCE Info_BaalLukor_SUMMONING (C_INFO)
 	nr			= 10;
 	permanent	= 0;
 	important 	= 0;
-	description = "Przysy≥a mnie Cor Angar.";
+	description = "Przysy≈Ça mnie Cor Angar.";
 };
 
 FUNC INT Info_BaalLukor_SUMMONING_Condition()
@@ -98,12 +98,12 @@ FUNC INT Info_BaalLukor_SUMMONING_Condition()
 
 FUNC VOID Info_BaalLukor_SUMMONING_Info()
 {
-	AI_Output 		(other, self,"Info_BaalLukor_SUMMONING_15_01"); //Przysy≥a mnie Cor Angar. Odnaleüliúcie jakieú úlady åniπcego?
-	AI_Output 		(self, other,"Info_BaalLukor_SUMMONING_13_02"); //Jeszcze nie. A co z Y'Berionem? Doszed≥ juø do siebie?
+	AI_Output 		(other, self,"Info_BaalLukor_SUMMONING_15_01"); //Przysy≈Ça mnie Cor Angar. Odnale≈∫li≈õcie jakie≈õ ≈õlady ≈öniƒÖcego?
+	AI_Output 		(self, other,"Info_BaalLukor_SUMMONING_13_02"); //Jeszcze nie. A co z Y'Berionem? Doszed≈Ç ju≈º do siebie?
 	AI_Output 		(other, self,"Info_BaalLukor_SUMMONING_15_03"); //Nie, nadal jest nieprzytomny.
-	AI_Output 		(self, other,"Info_BaalLukor_SUMMONING_13_04"); //Musimy zbadaÊ ten kompleks jaskiÒ. Po tych wszystkich straszliwych wydarzeniach nie mogÍ wrÛciÊ do Obozu z pustymi rÍkami.
-	AI_Output 		(self, other,"Info_BaalLukor_SUMMONING_13_05"); //Ale moje zdolnoúci bojowe sπ doúÊ ograniczone, a Orkowie nie reagujπ na mojπ magiÍ jak ci g≥upcy ze Starego Obozu.
-	AI_Output 		(self, other,"Info_BaalLukor_SUMMONING_13_06"); //Skoro przysy≥a ciÍ Bractwo, moøe pomoøesz mi w badaniu tego cmentarzyska.
+	AI_Output 		(self, other,"Info_BaalLukor_SUMMONING_13_04"); //Musimy zbadaƒá ten kompleks jaski≈Ñ. Po tych wszystkich straszliwych wydarzeniach nie mogƒô wr√≥ciƒá do Obozu z pustymi rƒôkami.
+	AI_Output 		(self, other,"Info_BaalLukor_SUMMONING_13_05"); //Ale moje zdolno≈õci bojowe sƒÖ do≈õƒá ograniczone, a Orkowie nie reagujƒÖ na mojƒÖ magiƒô jak ci g≈Çupcy ze Starego Obozu.
+	AI_Output 		(self, other,"Info_BaalLukor_SUMMONING_13_06"); //Skoro przysy≈Ça ciƒô Bractwo, mo≈ºe pomo≈ºesz mi w badaniu tego cmentarzyska.
 };
 
 //**************************************************************************
@@ -116,7 +116,7 @@ INSTANCE Info_BaalLukor_HELP (C_INFO)
 	information	= Info_BaalLukor_HELP_Info;
 	permanent	= 0;
 	important 	= 0;
-	description = "PomogÍ ci.";
+	description = "Pomogƒô ci.";
 };
 
 FUNC INT Info_BaalLukor_HELP_Condition()
@@ -126,11 +126,11 @@ FUNC INT Info_BaalLukor_HELP_Condition()
 
 FUNC VOID Info_BaalLukor_HELP_Info()
 {
-	AI_Output 			(other, self,"Info_BaalLukor_HELP_15_01"); //PomogÍ ci.
-	AI_Output 			(self, other,"Info_BaalLukor_HELP_13_02"); //To wspaniale. Z tego pomieszczenia wychodzπ trzy korytarze. Powinniúmy przeszukaÊ kaødy z nich.
-	AI_Output 			(self, other,"Info_BaalLukor_HELP_13_03"); //Prowadü. PÛjdÍ za tobπ!
+	AI_Output 			(other, self,"Info_BaalLukor_HELP_15_01"); //Pomogƒô ci.
+	AI_Output 			(self, other,"Info_BaalLukor_HELP_13_02"); //To wspaniale. Z tego pomieszczenia wychodzƒÖ trzy korytarze. Powinni≈õmy przeszukaƒá ka≈ºdy z nich.
+	AI_Output 			(self, other,"Info_BaalLukor_HELP_13_03"); //Prowad≈∫. P√≥jdƒô za tobƒÖ!
 
-	B_LogEntry		(CH3_OrcGraveyard,"Baal Lukor i ja po≥πczyliúmy si≥y. WspÛlnie wyjaúnimy tajemnicÍ tego miejsca!");
+	B_LogEntry		(CH3_OrcGraveyard,"Baal Lukor i ja po≈ÇƒÖczyli≈õmy si≈Çy. Wsp√≥lnie wyja≈õnimy tajemnicƒô tego miejsca!");
 
 	AI_StopProcessInfos	(self);
 	Npc_ExchangeRoutine	(self, "Follow");
@@ -163,10 +163,10 @@ FUNC INT Info_BaalLukor_FOUNDNONE_Condition()
 FUNC VOID Info_BaalLukor_FOUNDNONE_Info()
 {
 	AI_Output 		(other, self,"Info_BaalLukor_FOUNDNONE_15_01"); //Nic tu nie ma.
-	AI_Output 		(self, other,"Info_BaalLukor_FOUNDNONE_13_02"); //Musimy przeszukaÊ wszystkie trzy tunele.
+	AI_Output 		(self, other,"Info_BaalLukor_FOUNDNONE_13_02"); //Musimy przeszukaƒá wszystkie trzy tunele.
 	
 	
-	Npc_ExchangeRoutine	(self, "Follow"); //Bjˆrn: Patch2
+	Npc_ExchangeRoutine	(self, "Follow"); //Bj√∂rn: Patch2
 };
 
 //**************************************************************************
@@ -179,7 +179,7 @@ INSTANCE Info_BaalLukor_FOUNDONE (C_INFO)
 	information	= Info_BaalLukor_FOUNDONE_Info;
 	permanent	= 1;
 	important 	= 0;
-	description = "Najwyraüniej druga po≥owa pergaminu uleg≥a zniszczeniu!";
+	description = "Najwyra≈∫niej druga po≈Çowa pergaminu uleg≈Ça zniszczeniu!";
 };
 
 FUNC INT Info_BaalLukor_FOUNDONE_Condition()
@@ -193,10 +193,10 @@ FUNC INT Info_BaalLukor_FOUNDONE_Condition()
 
 FUNC VOID Info_BaalLukor_FOUNDONE_Info()
 {
-	AI_Output 		(other, self,"Info_BaalLukor_FOUNDONE_15_01"); //Najwyraüniej druga po≥owa pergaminu uleg≥a zniszczeniu!
-	AI_Output 		(self, other,"Info_BaalLukor_FOUNDONE_13_02"); //Druga po≥owa musi byÊ gdzieú w pobliøu! Musimy przeszukaÊ pozosta≥e tunele!
+	AI_Output 		(other, self,"Info_BaalLukor_FOUNDONE_15_01"); //Najwyra≈∫niej druga po≈Çowa pergaminu uleg≈Ça zniszczeniu!
+	AI_Output 		(self, other,"Info_BaalLukor_FOUNDONE_13_02"); //Druga po≈Çowa musi byƒá gdzie≈õ w pobli≈ºu! Musimy przeszukaƒá pozosta≈Çe tunele!
 	
-	Npc_ExchangeRoutine	(self, "Follow"); //Bjˆrn: Patch2
+	Npc_ExchangeRoutine	(self, "Follow"); //Bj√∂rn: Patch2
 };
 
 //**************************************************************************
@@ -225,7 +225,7 @@ FUNC VOID Info_BaalLukor_FIRSTWAIT_Info()
 	B_FullStop		(hero);
 	AI_GotoNpc		(self, hero);
 
-	AI_Output 		(self, other,"Info_BaalLukor_FIRSTWAIT_13_01"); //Dalej juø nie pÛjdziemy. Moøe w tych niszach znajdziemy jakπú wskazÛwkÍ.
+	AI_Output 		(self, other,"Info_BaalLukor_FIRSTWAIT_13_01"); //Dalej ju≈º nie p√≥jdziemy. Mo≈ºe w tych niszach znajdziemy jakƒÖ≈õ wskaz√≥wkƒô.
 
 	AI_StopProcessInfos	(self);
 	Npc_ExchangeRoutine	(self, "WaitInSideTunnelOne");
@@ -241,7 +241,7 @@ INSTANCE Info_BaalLukor_FIRSTSCROLL (C_INFO)
 	information	= Info_BaalLukor_FIRSTSCROLL_Info;
 	permanent	= 0;
 	important 	= 0;
-	description = "Znalaz≥em fragment pergaminu!";
+	description = "Znalaz≈Çem fragment pergaminu!";
 };
 
 FUNC INT Info_BaalLukor_FIRSTSCROLL_Condition()
@@ -255,17 +255,17 @@ FUNC INT Info_BaalLukor_FIRSTSCROLL_Condition()
 
 FUNC VOID Info_BaalLukor_FIRSTSCROLL_Info()
 {
-	AI_Output 		(other, self,"Info_BaalLukor_FIRSTSCROLL_15_01"); //Znalaz≥em fragment pergaminu!
-	B_GiveInvItems 	(hero, self, OrkParchmentOne,1); //Pergament1 ¸bergeben
+	AI_Output 		(other, self,"Info_BaalLukor_FIRSTSCROLL_15_01"); //Znalaz≈Çem fragment pergaminu!
+	B_GiveInvItems 	(hero, self, OrkParchmentOne,1); //Pergament1 √ºbergeben
 	if (BaalLukor_BringParchment == 2)
 	{
-		AI_Output	(self, other,"Info_BaalLukor_FIRSTSCROLL_13_02"); //Wspaniale! To druga po≥owa zwoju z zaklÍciem OrkÛw!
+		AI_Output	(self, other,"Info_BaalLukor_FIRSTSCROLL_13_02"); //Wspaniale! To druga po≈Çowa zwoju z zaklƒôciem Ork√≥w!
 		BaalLukor_BringParchment = 3;
 	}
 	else
 	{
-		AI_Output	(self, other,"Info_BaalLukor_FIRSTSCROLL_13_03"); //To mi wyglπda na zwÛj z zaklÍciem OrkÛw. Niestety, zosta≥ przerwany na pÛ≥.
-		AI_Output 	(self, other,"Info_BaalLukor_FIRSTSCROLL_13_04"); //Gdzieú musi byÊ druga po≥owa tego pergaminu!
+		AI_Output	(self, other,"Info_BaalLukor_FIRSTSCROLL_13_03"); //To mi wyglƒÖda na zw√≥j z zaklƒôciem Ork√≥w. Niestety, zosta≈Ç przerwany na p√≥≈Ç.
+		AI_Output 	(self, other,"Info_BaalLukor_FIRSTSCROLL_13_04"); //Gdzie≈õ musi byƒá druga po≈Çowa tego pergaminu!
 		AI_StopProcessInfos	(self);
 		BaalLukor_BringParchment = 1;
 	};
@@ -299,7 +299,7 @@ FUNC VOID Info_BaalLukor_SECONDWAIT_Info()
 	B_FullStop		(hero);
 	AI_GotoNpc		(self, hero);
 
-	AI_Output 		(self, other,"Info_BaalLukor_SECONDWAIT_13_01"); //Hmmm... Ten tunel okaza≥ siÍ úlepπ uliczkπ. Moøe znajdziemy tutaj jakieú wskazÛwki, ktÛre pomogπ nam w naszych poszukiwaniach.
+	AI_Output 		(self, other,"Info_BaalLukor_SECONDWAIT_13_01"); //Hmmm... Ten tunel okaza≈Ç siƒô ≈õlepƒÖ uliczkƒÖ. Mo≈ºe znajdziemy tutaj jakie≈õ wskaz√≥wki, kt√≥re pomogƒÖ nam w naszych poszukiwaniach.
 
 	if (!Npc_HasItems	(hero, OrkParchmentTwo)	) 
 	{	
@@ -317,7 +317,7 @@ INSTANCE Info_BaalLukor_SECONDSCROLL (C_INFO)
 	condition	= Info_BaalLukor_SECONDSCROLL_Condition;
 	information	= Info_BaalLukor_SECONDSCROLL_Info;
 	permanent	= 0;
-	description = "Znalaz≥em fragment pergaminu!";
+	description = "Znalaz≈Çem fragment pergaminu!";
 };
 
 FUNC INT Info_BaalLukor_SECONDSCROLL_Condition()
@@ -334,17 +334,17 @@ FUNC VOID Info_BaalLukor_SECONDSCROLL_Info()
 	B_FullStop		(hero);
 	AI_GotoNpc		(self,	hero);
 
-	AI_Output 		(other, self,"Info_BaalLukor_SECONDSCROLL_15_01"); //Znalaz≥em fragment pergaminu!
-	B_GiveInvItems 	(hero, self, OrkParchmentTwo,1); //Pergament2 ¸bergeben
+	AI_Output 		(other, self,"Info_BaalLukor_SECONDSCROLL_15_01"); //Znalaz≈Çem fragment pergaminu!
+	B_GiveInvItems 	(hero, self, OrkParchmentTwo,1); //Pergament2 √ºbergeben
 	if (BaalLukor_BringParchment == 1)
 	{
-		AI_Output	(self, other,"Info_BaalLukor_SECONDSCROLL_13_02"); //Wspaniale! To druga po≥owa zwoju z zaklÍciem OrkÛw!
+		AI_Output	(self, other,"Info_BaalLukor_SECONDSCROLL_13_02"); //Wspaniale! To druga po≈Çowa zwoju z zaklƒôciem Ork√≥w!
 		BaalLukor_BringParchment = 3;
 	}
 	else
 	{
-		AI_Output	(self, other,"Info_BaalLukor_SECONDSCROLL_13_03"); //To mi wyglπda na zwÛj z zaklÍciem OrkÛw. Niestety, zosta≥ przerwany na pÛ≥.
-		AI_Output 	(self, other,"Info_BaalLukor_SECONDSCROLL_13_04"); //Gdzieú musi byÊ druga po≥owa tego pergaminu!
+		AI_Output	(self, other,"Info_BaalLukor_SECONDSCROLL_13_03"); //To mi wyglƒÖda na zw√≥j z zaklƒôciem Ork√≥w. Niestety, zosta≈Ç przerwany na p√≥≈Ç.
+		AI_Output 	(self, other,"Info_BaalLukor_SECONDSCROLL_13_04"); //Gdzie≈õ musi byƒá druga po≈Çowa tego pergaminu!
 		AI_StopProcessInfos	(self);
 		BaalLukor_BringParchment = 2;
 	};
@@ -377,11 +377,11 @@ FUNC INT Info_BaalLukor_BOTHSCROLLS_Condition()
 FUNC VOID Info_BaalLukor_BOTHSCROLLS_Info()
 {
 	AI_Output 			(other, self,"Info_BaalLukor_BOTHSCROLLS_15_01"); //Co teraz zrobimy z tymi dwoma fragmentami?
-	AI_Output			(self, other,"Info_BaalLukor_BOTHSCROLLS_13_02"); //To dwie po≥owy tego samego manuskryptu. Ale nie potrafiÍ odcyfrowaÊ tego pisma.
+	AI_Output			(self, other,"Info_BaalLukor_BOTHSCROLLS_13_02"); //To dwie po≈Çowy tego samego manuskryptu. Ale nie potrafiƒô odcyfrowaƒá tego pisma.
 
-	B_LogEntry		(CH3_OrcGraveyard,"Znaleüliúmy dwie po≥Ûwki orkowego manuskryptu, ale Baal Lukor nie jest w stanie go przet≥umaczyÊ. Musimy szukaÊ dalej.");
+	B_LogEntry		(CH3_OrcGraveyard,"Znale≈∫li≈õmy dwie po≈Ç√≥wki orkowego manuskryptu, ale Baal Lukor nie jest w stanie go przet≈Çumaczyƒá. Musimy szukaƒá dalej.");
 
-	Npc_ExchangeRoutine	(self, "Follow"); //Bjˆrn: Patch2
+	Npc_ExchangeRoutine	(self, "Follow"); //Bj√∂rn: Patch2
 };
 
 //**************************************************************************
@@ -410,23 +410,23 @@ FUNC VOID Info_BaalLukor_RUNES_Info()
 	B_FullStop		(hero);
 	AI_GotoNpc		(self, hero);
 
-	AI_Output		(self, other,"Info_BaalLukor_RUNES_13_01"); //Czekaj! To interesujπce...
-	AI_Output 		(other, self,"Info_BaalLukor_RUNES_15_02"); //CÛø, nie widzÍ tu nic interesujπcego.
-	AI_Output		(self, other,"Info_BaalLukor_RUNES_13_03"); //Cicho! Przyjrzyj siÍ uwaønie ornamentom zdobiπcym tÍ jaskiniÍ.
-	AI_Output		(self, other,"Info_BaalLukor_RUNES_13_04"); //Tak, to mi powinno wystarczyÊ do przet≥umaczenia znalezionego przez nas pergaminu.
+	AI_Output		(self, other,"Info_BaalLukor_RUNES_13_01"); //Czekaj! To interesujƒÖce...
+	AI_Output 		(other, self,"Info_BaalLukor_RUNES_15_02"); //C√≥≈º, nie widzƒô tu nic interesujƒÖcego.
+	AI_Output		(self, other,"Info_BaalLukor_RUNES_13_03"); //Cicho! Przyjrzyj siƒô uwa≈ºnie ornamentom zdobiƒÖcym tƒô jaskiniƒô.
+	AI_Output		(self, other,"Info_BaalLukor_RUNES_13_04"); //Tak, to mi powinno wystarczyƒá do przet≈Çumaczenia znalezionego przez nas pergaminu.
 	B_UseFakeScroll ();
 	//AI_Output		(self, other,"Info_BaalLukor_RUNES_13_05"); //...(murmel)...(murmel)...(murmel)... 
-	AI_Output		(self, other,"Info_BaalLukor_RUNES_13_06"); //Juø wiem! To zaklÍcie teleportacji! Wyglπda na to, øe moøna go uøyÊ tylko w konkretnym miejscu!
+	AI_Output		(self, other,"Info_BaalLukor_RUNES_13_06"); //Ju≈º wiem! To zaklƒôcie teleportacji! WyglƒÖda na to, ≈ºe mo≈ºna go u≈ºyƒá tylko w konkretnym miejscu!
 	AI_Output		(self, other,"Info_BaalLukor_RUNES_13_07"); //Dziwne!
 
 	Npc_RemoveInvItems	(self,			OrkParchmentOne, 1); //Pergament 1 entfernen
 	Npc_RemoveInvItems	(self,			OrkParchmentTwo, 1); //Pergament 2 entfernen
-	//Hier Teleport-‹bergabe entfernt --> erst wenn vor wand!
+	//Hier Teleport-√úbergabe entfernt --> erst wenn vor wand!
 
-	B_LogEntry			(CH3_OrcGraveyard,"Przy pomocy inskrypcji na úcianach, Baal Lukorowi uda≥o siÍ przet≥umaczyÊ manuskrypt. Jest to chyba zaklÍcie krÛtkodystansowej teleportacji."); 
+	B_LogEntry			(CH3_OrcGraveyard,"Przy pomocy inskrypcji na ≈õcianach, Baal Lukorowi uda≈Ço siƒô przet≈Çumaczyƒá manuskrypt. Jest to chyba zaklƒôcie kr√≥tkodystansowej teleportacji."); 
 
 
-	Npc_ExchangeRoutine	(self, "Follow"); //Bjˆrn: Patch2
+	Npc_ExchangeRoutine	(self, "Follow"); //Bj√∂rn: Patch2
 
 };
 
@@ -456,9 +456,9 @@ FUNC INT Info_BaalLukor_WHATNOW_Condition()
 FUNC VOID Info_BaalLukor_WHATNOW_Info()
 {
 	AI_Output 		(other, self,"Info_BaalLukor_WHATNOW_15_01"); //Jakim "konkretnym" miejscu?
-	AI_Output 		(self, other,"Info_BaalLukor_WHATNOW_13_02"); //Ta wielka komora, przez ktÛrπ przechodziliúmy wczeúniej wyda≥a mi siÍ doúÊ... niezwyk≥a. Powinniúmy tam czym prÍdzej wrÛciÊ!
+	AI_Output 		(self, other,"Info_BaalLukor_WHATNOW_13_02"); //Ta wielka komora, przez kt√≥rƒÖ przechodzili≈õmy wcze≈õniej wyda≈Ça mi siƒô do≈õƒá... niezwyk≈Ça. Powinni≈õmy tam czym prƒôdzej wr√≥ciƒá!
 
-	Npc_ExchangeRoutine	(self, "Follow"); //Bjˆrn: Patch2
+	Npc_ExchangeRoutine	(self, "Follow"); //Bj√∂rn: Patch2
 
 };
 
@@ -490,12 +490,12 @@ FUNC VOID Info_BaalLukor_HALLWITHOUT_Info()
 	AI_SetWalkmode	(self,	NPC_WALK);
 	AI_GotoNpc		(self, hero);
 
-	AI_Output		(self, other,"Info_BaalLukor_HALLWITHOUT_13_01"); //To miejsce... Nie potrafiÍ tego wyjaúniÊ, ale to miejsce...
-	AI_Output		(self, other,"Info_BaalLukor_HALLWITHOUT_13_02"); //Och, niewaøne. Pewnie mi siÍ tylko wydaje.
+	AI_Output		(self, other,"Info_BaalLukor_HALLWITHOUT_13_01"); //To miejsce... Nie potrafiƒô tego wyja≈õniƒá, ale to miejsce...
+	AI_Output		(self, other,"Info_BaalLukor_HALLWITHOUT_13_02"); //Och, niewa≈ºne. Pewnie mi siƒô tylko wydaje.
 
-	B_LogEntry	(CH3_OrcGraveyard,"Guru wyczu≥ coú dziwnego, gdy weszliúmy do duøej komory, jednak nie by≥ pewien, co to by≥o.");
+	B_LogEntry	(CH3_OrcGraveyard,"Guru wyczu≈Ç co≈õ dziwnego, gdy weszli≈õmy do du≈ºej komory, jednak nie by≈Ç pewien, co to by≈Ço.");
 
-	Npc_ExchangeRoutine	(self, "Follow"); //Bjˆrn: Patch2
+	Npc_ExchangeRoutine	(self, "Follow"); //Bj√∂rn: Patch2
 };
 
 //**************************************************************************
@@ -525,11 +525,11 @@ FUNC VOID Info_BaalLukor_HALLWITH_Info()
 	AI_SetWalkmode		(self,	NPC_WALK);
 	AI_GotoNpc			(self, hero);
 
-	AI_Output			(self, other,"Info_BaalLukor_HALLWITH_13_01"); //To miejsce posiada szczegÛlnπ aurÍ. AurÍ tajemnicy.
+	AI_Output			(self, other,"Info_BaalLukor_HALLWITH_13_01"); //To miejsce posiada szczeg√≥lnƒÖ aurƒô. Aurƒô tajemnicy.
 	AI_Output			(other, self,"Info_BaalLukor_HALLWITH_15_02"); //To pomieszczenie przypomina mi obraz z naszej wizji.
-	AI_Output			(self, other,"Info_BaalLukor_HALLWITH_13_03"); //Wizja... Jesteúmy juø bardzo blisko celu...
+	AI_Output			(self, other,"Info_BaalLukor_HALLWITH_13_03"); //Wizja... Jeste≈õmy ju≈º bardzo blisko celu...
 
-	B_LogEntry		(CH3_OrcGraveyard,"Prowadzony przez niewidzialnπ si≥Í, Baal Lukor wskaza≥ jednπ ze úcian komory.");
+	B_LogEntry		(CH3_OrcGraveyard,"Prowadzony przez niewidzialnƒÖ si≈Çƒô, Baal Lukor wskaza≈Ç jednƒÖ ze ≈õcian komory.");
 
 	AI_StopProcessInfos	(self);
 	Npc_ExchangeRoutine	(self, "DOOR");
@@ -562,12 +562,12 @@ FUNC VOID Info_BaalLukor_DOOR_Info()
 	AI_SetWalkmode		(self,	NPC_WALK);
 	AI_GotoNpc			(self, hero);
 
-	AI_Output			(self, other,"Info_BaalLukor_DOOR_13_01"); //Za tπ úcianπ... To musi byÊ tutaj!
-	AI_Output			(self, other,"Info_BaalLukor_DOOR_13_02"); //Moje moce magiczne sπ wciπø bardzo os≥abione.
-	AI_Output			(self, other,"Info_BaalLukor_DOOR_13_03"); //Uøyj orkowego zaklÍcia teleportacji! W≥aúnie tutaj, przed tπ úcianπ.
+	AI_Output			(self, other,"Info_BaalLukor_DOOR_13_01"); //Za tƒÖ ≈õcianƒÖ... To musi byƒá tutaj!
+	AI_Output			(self, other,"Info_BaalLukor_DOOR_13_02"); //Moje moce magiczne sƒÖ wciƒÖ≈º bardzo os≈Çabione.
+	AI_Output			(self, other,"Info_BaalLukor_DOOR_13_03"); //U≈ºyj orkowego zaklƒôcia teleportacji! W≈Ça≈õnie tutaj, przed tƒÖ ≈õcianƒÖ.
 	
 	CreateInvItem		(self,			ItArScrollTeleport4); //Teleport erschaffen
-	B_GiveInvItems  	(self, hero,	ItArScrollTeleport4, 1); //Teleport ¸bergeben
+	B_GiveInvItems  	(self, hero,	ItArScrollTeleport4, 1); //Teleport √ºbergeben
 	
 	AI_StopProcessInfos	(self);
 };
@@ -600,13 +600,13 @@ FUNC VOID Info_BaalLukor_TELEPORT_Info()
 	AI_SetWalkmode		(self,	NPC_WALK);
 	AI_GotoNpc			(self, hero);
 
-	AI_Output			(self, other,"Info_BaalLukor_TELEPORT_13_01"); //Znalaz≥eú ukrytπ komorÍ! MÛj instynkt mnie nie zawiÛd≥.
-	AI_Output			(other, self,"Info_BaalLukor_TELEPORT_15_02"); //NaprawdÍ znajdziemy tu odpowiedü na tajemnicze wydarzenia zwiπzane z przyzwaniem åniπcego?
-	AI_Output			(other, self,"Info_BaalLukor_TELEPORT_15_03"); //To mi raczej wyglπda na kolejnπ komorÍ grobowcowπ.
-	AI_Output			(self, other,"Info_BaalLukor_TELEPORT_13_04"); //Musimy iúÊ dalej.
-	AI_Output 			(self, other,"Info_BaalLukor_HELP_13_03"); //Prowadü. PÛjdÍ za tobπ!
+	AI_Output			(self, other,"Info_BaalLukor_TELEPORT_13_01"); //Znalaz≈Çe≈õ ukrytƒÖ komorƒô! M√≥j instynkt mnie nie zawi√≥d≈Ç.
+	AI_Output			(other, self,"Info_BaalLukor_TELEPORT_15_02"); //Naprawdƒô znajdziemy tu odpowied≈∫ na tajemnicze wydarzenia zwiƒÖzane z przyzwaniem ≈öniƒÖcego?
+	AI_Output			(other, self,"Info_BaalLukor_TELEPORT_15_03"); //To mi raczej wyglƒÖda na kolejnƒÖ komorƒô grobowcowƒÖ.
+	AI_Output			(self, other,"Info_BaalLukor_TELEPORT_13_04"); //Musimy i≈õƒá dalej.
+	AI_Output 			(self, other,"Info_BaalLukor_HELP_13_03"); //Prowad≈∫. P√≥jdƒô za tobƒÖ!
 
-	B_LogEntry		(CH3_OrcGraveyard,"Przy uøyciu orkowego zaklÍcia teleportacji odkry≥em tajemne przejúcie odchodzπce od komory.");
+	B_LogEntry		(CH3_OrcGraveyard,"Przy u≈ºyciu orkowego zaklƒôcia teleportacji odkry≈Çem tajemne przej≈õcie odchodzƒÖce od komory.");
 
 	AI_StopProcessInfos	(self);
 	Npc_ExchangeRoutine	(self,	"TELEPORT");
@@ -641,26 +641,26 @@ FUNC VOID Info_BaalLukor_ALTAR_Info()
 	AI_AlignToWP		(hero);
 
 	AI_GotoNpc			(self, hero);
-	AI_Output			(self, hero,"Info_BaalLukor_ALTAR_13_01"); //NIE! To nie moøe byÊ prawda! To nic nie ma... Tylko kurz i... i koúci.
+	AI_Output			(self, hero,"Info_BaalLukor_ALTAR_13_01"); //NIE! To nie mo≈ºe byƒá prawda! To nic nie ma... Tylko kurz i... i ko≈õci.
 
 	AI_SetWalkmode		(self, NPC_RUN);
 	AI_GotoWP			(self, "GRYD_082");
 
 	AI_PlayAniBS		(self, "T_STAND_2_PRAY", BS_SIT);
 	AI_Output			(self, hero,"Info_BaalLukor_ALTAR_13_02"); //NIE!
-	AI_Output			(self, hero,"Info_BaalLukor_ALTAR_13_03"); //PANIE, PRZEM”W DO MNIE!!!
-	AI_Output			(self, hero,"Info_BaalLukor_ALTAR_13_04"); //åNI•CY, UKAØ SI  SWOJEMU S£UDZE!
+	AI_Output			(self, hero,"Info_BaalLukor_ALTAR_13_03"); //PANIE, PRZEM√ìW DO MNIE!!!
+	AI_Output			(self, hero,"Info_BaalLukor_ALTAR_13_04"); //≈öNIƒÑCY, UKA≈ª SIƒò SWOJEMU S≈ÅUDZE!
 	AI_Output			(self, hero,"Info_BaalLukor_ALTAR_13_05"); //NIEEE!!!
 
-	AI_Output			(hero, self,"Info_BaalLukor_ALTAR_15_06"); //No to koniec. Teraz ca≥kiem mu odbi≥o.
+	AI_Output			(hero, self,"Info_BaalLukor_ALTAR_15_06"); //No to koniec. Teraz ca≈Çkiem mu odbi≈Ço.
 
 	AI_StandUp			(self);
 	B_WhirlAround		(self, hero);
-	AI_Output			(self, hero,"Info_BaalLukor_ALTAR_13_07"); //To wszystko twoja wina. Twoja bluüniercza obecnoúÊ rozgniewa≥a wszechmocnego åniπcego!
-	AI_Output			(self, hero,"Info_BaalLukor_ALTAR_13_08"); //Teraz ja bÍdÍ musia≥ ponieúÊ karÍ za twoje grzeszne czyny!
-	AI_Output			(self, hero,"Info_BaalLukor_ALTAR_13_09"); //MuszÍ z≥oøyÊ ofiarÍ, aby przeb≥agaÊ mego pana. OFIAR  Z CZ£OWIEKA!!!
-	AI_Output			(self, hero,"Info_BaalLukor_ALTAR_13_10"); //Wtedy åniπcy znÛw spojrzy na mnie przychylnym okiem i uczyni mnie swoim s≥ugπ.
-	AI_Output			(self, hero,"Info_BaalLukor_ALTAR_13_11"); //GI—, NIEWIERNY PSIE!!!
+	AI_Output			(self, hero,"Info_BaalLukor_ALTAR_13_07"); //To wszystko twoja wina. Twoja blu≈∫niercza obecno≈õƒá rozgniewa≈Ça wszechmocnego ≈öniƒÖcego!
+	AI_Output			(self, hero,"Info_BaalLukor_ALTAR_13_08"); //Teraz ja bƒôdƒô musia≈Ç ponie≈õƒá karƒô za twoje grzeszne czyny!
+	AI_Output			(self, hero,"Info_BaalLukor_ALTAR_13_09"); //Muszƒô z≈Ço≈ºyƒá ofiarƒô, aby przeb≈Çagaƒá mego pana. OFIARƒò Z CZ≈ÅOWIEKA!!!
+	AI_Output			(self, hero,"Info_BaalLukor_ALTAR_13_10"); //Wtedy ≈öniƒÖcy zn√≥w spojrzy na mnie przychylnym okiem i uczyni mnie swoim s≈ÇugƒÖ.
+	AI_Output			(self, hero,"Info_BaalLukor_ALTAR_13_11"); //GI≈É, NIEWIERNY PSIE!!!
 	AI_Output			(self, hero,"Info_BaalLukor_ALTAR_13_12"); //AIIIEEEEHHHHHH!!!!!!
 
 	self.flags = 0;
@@ -670,7 +670,7 @@ FUNC VOID Info_BaalLukor_ALTAR_Info()
 	Npc_SetPermAttitude	(self,	ATT_HOSTILE);
 	//CreateInvItems		(self,	ItArScrollPyrokinesis,	3);
 
-	B_LogEntry		(CH3_OrcGraveyard,"Gdy Baal Lukor zrozumia≥, øe nie ma tu absolutnie nic, puúci≥y mu nerwy. Szaleniec nawet rzuci≥ siÍ na mnie miotajπc bezpodstawne oskarøenia. Cor Angar nie bÍdzie zadowolony, gdy dowie siÍ o tych wydarzeniach.");
+	B_LogEntry		(CH3_OrcGraveyard,"Gdy Baal Lukor zrozumia≈Ç, ≈ºe nie ma tu absolutnie nic, pu≈õci≈Çy mu nerwy. Szaleniec nawet rzuci≈Ç siƒô na mnie miotajƒÖc bezpodstawne oskar≈ºenia. Cor Angar nie bƒôdzie zadowolony, gdy dowie siƒô o tych wydarzeniach.");
 
 	AI_StopProcessInfos	(self);
 

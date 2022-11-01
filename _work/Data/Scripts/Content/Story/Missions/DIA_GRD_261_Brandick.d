@@ -46,9 +46,9 @@ FUNC int  GRD_261_Brandick_ALEPH_Condition()
 };
 FUNC void  GRD_261_Brandick_ALEPH_Info()
 {
-	AI_Output			(other, self,"GRD_261_Brandick_ALEPH_Info_15_01"); //S³uchaj, za ka¿dym razem, kiedy siê odwracasz, Aleph siedzi bezczynnie i zbija b¹ki.
-	AI_Output			(self, other,"GRD_261_Brandick_ALEPH_Info_06_02"); //Czy¿by?
-	AI_Output			(self, other,"GRD_261_Brandick_ALEPH_Info_06_03"); //Wiesz jakich ludzi nienawidzê jeszcze bardziej od obiboków? Donosicieli! ZejdŸ mi z oczu!
+	AI_Output			(other, self,"GRD_261_Brandick_ALEPH_Info_15_01"); //SÅ‚uchaj, za kaÅ¼dym razem, kiedy siÄ™ odwracasz, Aleph siedzi bezczynnie i zbija bÄ…ki.
+	AI_Output			(self, other,"GRD_261_Brandick_ALEPH_Info_06_02"); //CzyÅ¼by?
+	AI_Output			(self, other,"GRD_261_Brandick_ALEPH_Info_06_03"); //Wiesz jakich ludzi nienawidzÄ™ jeszcze bardziej od obibokÃ³w? Donosicieli! ZejdÅº mi z oczu!
 	
 	AI_StopProcessInfos	(self);
 };  

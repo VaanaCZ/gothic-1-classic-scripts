@@ -33,7 +33,7 @@ INSTANCE DIA_Ricelord_Hello (C_INFO)
 	condition	= DIA_Ricelord_Hello_Condition;
 	information	= DIA_Ricelord_Hello_Info;
 	permanent	= 0;
-	description	= "Troszczysz siê o pola ry¿owe, czy¿ nie?";
+	description	= "Troszczysz siÄ™ o pola ryÅ¼owe, czyÅ¼ nie?";
 };                       
 
 FUNC INT DIA_Ricelord_Hello_Condition()
@@ -43,7 +43,7 @@ FUNC INT DIA_Ricelord_Hello_Condition()
 
 FUNC VOID DIA_Ricelord_Hello_Info()
 {	
-	AI_Output (other, self,"DIA_Ricelord_Hello_15_00"); //Troszczysz siê o pola ry¿owe, czy¿ nie?
+	AI_Output (other, self,"DIA_Ricelord_Hello_15_00"); //Troszczysz siÄ™ o pola ryÅ¼owe, czyÅ¼ nie?
 	AI_Output (self, other,"DIA_Ricelord_Hello_12_01"); //Czemu pytasz? Szukasz pracy?
 };
 
@@ -58,7 +58,7 @@ INSTANCE DIA_Ricelord_Arbeit (C_INFO)
 	condition	= DIA_Ricelord_Arbeit_Condition;
 	information	= DIA_Ricelord_Arbeit_Info;
 	permanent	= 0;
-	description	= "A masz dla mnie jakieœ zajêcie?";
+	description	= "A masz dla mnie jakieÅ› zajÄ™cie?";
 };                       
 
 FUNC INT DIA_Ricelord_Arbeit_Condition()
@@ -73,8 +73,8 @@ FUNC INT DIA_Ricelord_Arbeit_Condition()
 
 FUNC VOID DIA_Ricelord_Arbeit_Info()
 {	
-	AI_Output (other, self,"DIA_Ricelord_Arbeit_15_00"); //A masz dla mnie jakieœ zajêcie?
-	AI_Output (self, other,"DIA_Ricelord_Arbeit_12_01"); //Porozmawiaj z Lewusem. Krêci siê zwykle na prawo od szopy.
+	AI_Output (other, self,"DIA_Ricelord_Arbeit_15_00"); //A masz dla mnie jakieÅ› zajÄ™cie?
+	AI_Output (self, other,"DIA_Ricelord_Arbeit_12_01"); //Porozmawiaj z Lewusem. KrÄ™ci siÄ™ zwykle na prawo od szopy.
 };
 
 // ************************************************************
@@ -88,7 +88,7 @@ INSTANCE DIA_Ricelord_TRADE (C_INFO)
 	condition	= DIA_Ricelord_TRADE_Condition;
 	information	= DIA_Ricelord_TRADE_Info;
 	permanent	= 1;
-	description	= "Mo¿e siê dogadamy...";
+	description	= "MoÅ¼e siÄ™ dogadamy...";
 	trade 		= 1;
 };                       
 
@@ -102,8 +102,8 @@ FUNC INT DIA_Ricelord_TRADE_Condition()
 
 FUNC VOID DIA_Ricelord_TRADE_Info()
 {	
-	AI_Output (other, self,"DIA_Ricelord_TRADE_15_00"); //Mo¿e siê dogadamy...
-	AI_Output (self, other,"DIA_Ricelord_TRADE_12_01"); //A co mo¿esz mi zaoferowaæ?
+	AI_Output (other, self,"DIA_Ricelord_TRADE_15_00"); //MoÅ¼e siÄ™ dogadamy...
+	AI_Output (self, other,"DIA_Ricelord_TRADE_12_01"); //A co moÅ¼esz mi zaoferowaÄ‡?
 };
 	
 // ************************************************************
@@ -116,7 +116,7 @@ INSTANCE DIA_Ricelord_LeftySentMe (C_INFO)
 	condition	= DIA_Ricelord_LeftySentMe_Condition;
 	information	= DIA_Ricelord_LeftySentMe_Info;
 	permanent	= 1;
-	description	= "Przysy³a mnie Lewus.";
+	description	= "PrzysyÅ‚a mnie Lewus.";
 };                       
 
 FUNC INT DIA_Ricelord_LeftySentMe_Condition()
@@ -132,8 +132,8 @@ FUNC INT DIA_Ricelord_LeftySentMe_Condition()
 
 FUNC VOID DIA_Ricelord_LeftySentMe_Info()
 {	
-	AI_Output (other, self,"DIA_Ricelord_LeftySentMe_15_00"); //Przysy³a mnie Lewus.
-	AI_Output (self, other,"DIA_Ricelord_LeftySentMe_12_01"); //Tak? I co powiedzia³?
+	AI_Output (other, self,"DIA_Ricelord_LeftySentMe_15_00"); //PrzysyÅ‚a mnie Lewus.
+	AI_Output (self, other,"DIA_Ricelord_LeftySentMe_12_01"); //Tak? I co powiedziaÅ‚?
 	Ricelord_AskedForWater = TRUE;
 };
 
@@ -148,7 +148,7 @@ INSTANCE DIA_Ricelord_GetWater (C_INFO)
 	condition	= DIA_Ricelord_GetWater_Condition;
 	information	= DIA_Ricelord_GetWater_Info;
 	permanent	= 1;
-	description	= "Mam zanieœæ wodê zbieraczom ry¿u!";
+	description	= "Mam zanieÅ›Ä‡ wodÄ™ zbieraczom ryÅ¼u!";
 };                       
 
 FUNC INT DIA_Ricelord_GetWater_Condition()
@@ -161,29 +161,29 @@ FUNC INT DIA_Ricelord_GetWater_Condition()
 
 FUNC VOID DIA_Ricelord_GetWater_Info()
 {	
-	AI_Output (other, self,"DIA_Ricelord_GetWater_15_00"); //Mam zanieœæ wodê zbieraczom ry¿u!
+	AI_Output (other, self,"DIA_Ricelord_GetWater_15_00"); //Mam zanieÅ›Ä‡ wodÄ™ zbieraczom ryÅ¼u!
 	
 	if(Lefty_WorkDay == Wld_GetDay())
 	{
 		AI_Output			(self, other,"DIA_Ricelord_GetWater_12_01"); //Dobra. Masz tu tuzin butelek.
-		AI_Output			(self, other,"DIA_Ricelord_GetWater_12_02"); //To jakieœ dwa razy wiêcej ni¿ liczba zbieraczy, wiêc postaraj siê rozdzieliæ je sprawiedliwie.
+		AI_Output			(self, other,"DIA_Ricelord_GetWater_12_02"); //To jakieÅ› dwa razy wiÄ™cej niÅ¼ liczba zbieraczy, wiÄ™c postaraj siÄ™ rozdzieliÄ‡ je sprawiedliwie.
 
 		CreateInvItems		(self, ItFo_Potion_Water_01, 12);
 		B_GiveInvItems		(self, other, ItFo_Potion_Water_01, 12);
 
 		Ricelord_AskedForWater = FALSE;
-		B_LogEntry			(CH1_CarryWater,"Ry¿owy Ksi¹¿e da³ mi tuzin butelek z wod¹.");
+		B_LogEntry			(CH1_CarryWater,"RyÅ¼owy KsiÄ…Å¼e daÅ‚ mi tuzin butelek z wodÄ….");
 
 		AI_StopProcessInfos	(self);
 	}
 	else if (Lefty_WorkDay == Wld_GetDay()-1)
 	{
-		AI_Output (self, other,"DIA_Ricelord_GetWater_TooLate_12_00"); //To by³o wczoraj, ch³opcze. Lepiej zajrzyj znowu do Lewusa. Chyba ma ci coœ do powiedzenia.
+		AI_Output (self, other,"DIA_Ricelord_GetWater_TooLate_12_00"); //To byÅ‚o wczoraj, chÅ‚opcze. Lepiej zajrzyj znowu do Lewusa. Chyba ma ci coÅ› do powiedzenia.
 		AI_StopProcessInfos	(self);
 	}
 	else
 	{
-		AI_Output (self, other,"DIA_Ricelord_GetWater_TooLate_12_01"); //To by³o parê dni temu, ch³opcze. Lepiej zajrzyj znowu do Lewusa. Chyba ma ci coœ do powiedzenia.
+		AI_Output (self, other,"DIA_Ricelord_GetWater_TooLate_12_01"); //To byÅ‚o parÄ™ dni temu, chÅ‚opcze. Lepiej zajrzyj znowu do Lewusa. Chyba ma ci coÅ› do powiedzenia.
 		AI_StopProcessInfos	(self);
 	};
 };

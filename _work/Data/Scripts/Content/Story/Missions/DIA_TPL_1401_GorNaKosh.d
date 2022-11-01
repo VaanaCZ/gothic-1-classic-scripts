@@ -18,7 +18,7 @@ FUNC int  Tpl_1401_GorNaKosh_Exit_Condition()
 
 FUNC VOID  Tpl_1401_GorNaKosh_Exit_Info()
 {
-	AI_Output			(self, other,"Tpl_1401_GorNaKosh_Exit_Info_13_02"); //Niech Œni¹cy zbudzi siê ku naszemu zbawieniu!
+	AI_Output			(self, other,"Tpl_1401_GorNaKosh_Exit_Info_13_02"); //Niech ÅšniÄ…cy zbudzi siÄ™ ku naszemu zbawieniu!
 	AI_StopProcessInfos	( self );
 };
 
@@ -34,7 +34,7 @@ instance  Tpl_1401_GorNaKosh_SUGGEST (C_INFO)
 	information		= Tpl_1401_GorNaKosh_SUGGEST_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Wiem gdzie znajduje siê gniazdo pe³zaczy."; 
+	description		= "Wiem gdzie znajduje siÄ™ gniazdo peÅ‚zaczy."; 
 };
 
 FUNC int  Tpl_1401_GorNaKosh_SUGGEST_Condition()
@@ -49,14 +49,14 @@ FUNC int  Tpl_1401_GorNaKosh_SUGGEST_Condition()
 
 FUNC void  Tpl_1401_GorNaKosh_SUGGEST_Info()
 {
-	AI_Output			(other, self,"Tpl_1401_GorNaKosh_SUGGEST_Info_15_01"); //Wiem, gdzie znajduje siê gniazdo pe³zaczy. Muszê tam pójœæ, ¿eby zdobyæ coœ dla Cor Kaloma.
-	AI_Output			(self, other,"Tpl_1401_GorNaKosh_SUGGEST_Info_13_02"); //Zatem przyda ci siê moja pomoc. Pójdê z tob¹.
-	AI_Output			(other, self,"Tpl_1401_GorNaKosh_SUGGEST_Info_15_03"); //Dobrze. Spotkamy siê przy wielkim przejœciu.
+	AI_Output			(other, self,"Tpl_1401_GorNaKosh_SUGGEST_Info_15_01"); //Wiem, gdzie znajduje siÄ™ gniazdo peÅ‚zaczy. MuszÄ™ tam pÃ³jÅ›Ä‡, Å¼eby zdobyÄ‡ coÅ› dla Cor Kaloma.
+	AI_Output			(self, other,"Tpl_1401_GorNaKosh_SUGGEST_Info_13_02"); //Zatem przyda ci siÄ™ moja pomoc. PÃ³jdÄ™ z tobÄ….
+	AI_Output			(other, self,"Tpl_1401_GorNaKosh_SUGGEST_Info_15_03"); //Dobrze. Spotkamy siÄ™ przy wielkim przejÅ›ciu.
 	
 	Npc_ExchangeRoutine (self,"GATE");
 	Npc_SetPermAttitude (self,ATT_FRIENDLY); 
 	B_GiveXP			(XP_HireGorNaKosh);
-	B_LogEntry		(CH2_MCEggs,"Przekona³em Gor Na Kosha, by do³¹czy³ do oddzia³u przy bramie Asghana.");	
+	B_LogEntry		(CH2_MCEggs,"PrzekonaÅ‚em Gor Na Kosha, by doÅ‚Ä…czyÅ‚ do oddziaÅ‚u przy bramie Asghana.");	
 
 	AI_StopProcessInfos	(self);
 };
@@ -84,12 +84,12 @@ FUNC int  Tpl_1401_GorNaKosh_INFO_Condition()
 FUNC void  Tpl_1401_GorNaKosh_INFO_Info()
 {
 	AI_Output			(other, self,"Tpl_1401_GorNaKosh_INFO_Info_15_01"); //Co tu robisz?
-	AI_Output			(self, other,"Tpl_1401_GorNaKosh_INFO_Info_13_02"); //Polujê na pe³zacze.
-	AI_Output			(other, self,"Tpl_1401_GorNaKosh_INFO_Info_15_03"); //Mo¿esz mi opowiedzieæ o sposobach polowania na pe³zacze?
-	AI_Output			(self, other,"Tpl_1401_GorNaKosh_INFO_Info_13_04"); //Przy ³owach na pe³zacze obowi¹zuje tylko jedna zasada: gdy jakiegoœ zobaczysz, rzuæ siê na niego czym prêdzej i spróbuj go zabiæ pierwszym ciosem.
-	AI_Output			(self, other,"Tpl_1401_GorNaKosh_INFO_Info_13_05"); //Walcz bez strachu i zabijaj bez litoœci.
+	AI_Output			(self, other,"Tpl_1401_GorNaKosh_INFO_Info_13_02"); //PolujÄ™ na peÅ‚zacze.
+	AI_Output			(other, self,"Tpl_1401_GorNaKosh_INFO_Info_15_03"); //MoÅ¼esz mi opowiedzieÄ‡ o sposobach polowania na peÅ‚zacze?
+	AI_Output			(self, other,"Tpl_1401_GorNaKosh_INFO_Info_13_04"); //Przy Å‚owach na peÅ‚zacze obowiÄ…zuje tylko jedna zasada: gdy jakiegoÅ› zobaczysz, rzuÄ‡ siÄ™ na niego czym prÄ™dzej i sprÃ³buj go zabiÄ‡ pierwszym ciosem.
+	AI_Output			(self, other,"Tpl_1401_GorNaKosh_INFO_Info_13_05"); //Walcz bez strachu i zabijaj bez litoÅ›ci.
 
-	AI_StopProcessInfos(self);		// SN:nur für die Vermeidung des Bugs, dass der letzte Satz in roter Schrift erscheint, und der InfoManager danach defekt ist
+	AI_StopProcessInfos(self);		// SN:nur fÃ¼r die Vermeidung des Bugs, dass der letzte Satz in roter Schrift erscheint, und der InfoManager danach defekt ist
 };
 
 // ***************** Infos *****************************
@@ -101,7 +101,7 @@ instance  Tpl_1401_GorNaKosh_CRAWLER (C_INFO)
 	information		= Tpl_1401_GorNaKosh_CRAWLER_Info;
 	important		= 0;
 	permanent		= 1;
-	description		= "Mo¿esz mi opowiedzieæ coœ jeszcze o tych pe³zaczach?"; 
+	description		= "MoÅ¼esz mi opowiedzieÄ‡ coÅ› jeszcze o tych peÅ‚zaczach?"; 
 };
 
 FUNC int  Tpl_1401_GorNaKosh_CRAWLER_Condition()
@@ -114,12 +114,12 @@ FUNC int  Tpl_1401_GorNaKosh_CRAWLER_Condition()
 
 FUNC void  Tpl_1401_GorNaKosh_CRAWLER_Info()
 {
-	AI_Output			(other, self,"Tpl_1401_GorNaKosh_CRAWLER_Info_15_01"); //Mo¿esz mi opowiedzieæ coœ jeszcze o tych pe³zaczach?
-	AI_Output			(self, other,"Tpl_1401_GorNaKosh_CRAWLER_Info_13_02"); //Te bestie dzia³aj¹ instynktownie. Próbuj¹ zabiæ wszystko co nie jest pe³zaczem.
-	AI_Output			(self, other,"Tpl_1401_GorNaKosh_CRAWLER_Info_13_03"); //Wykorzystaj tê wiedzê w walce z tymi potworami.
+	AI_Output			(other, self,"Tpl_1401_GorNaKosh_CRAWLER_Info_15_01"); //MoÅ¼esz mi opowiedzieÄ‡ coÅ› jeszcze o tych peÅ‚zaczach?
+	AI_Output			(self, other,"Tpl_1401_GorNaKosh_CRAWLER_Info_13_02"); //Te bestie dziaÅ‚ajÄ… instynktownie. PrÃ³bujÄ… zabiÄ‡ wszystko co nie jest peÅ‚zaczem.
+	AI_Output			(self, other,"Tpl_1401_GorNaKosh_CRAWLER_Info_13_03"); //Wykorzystaj tÄ™ wiedzÄ™ w walce z tymi potworami.
 }; 
 
-// ***************************** Die Königin ist tot, lang lebe die Königin ****************************************//
+// ***************************** Die KÃ¶nigin ist tot, lang lebe die KÃ¶nigin ****************************************//
 
 instance  Tpl_1401_GorNaKosh_VICTORY (C_INFO)
 {
@@ -128,7 +128,7 @@ instance  Tpl_1401_GorNaKosh_VICTORY (C_INFO)
 	information		= Tpl_1401_GorNaKosh_VICTORY_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Znalaz³em gniazdo pe³zaczy!"; 
+	description		= "ZnalazÅ‚em gniazdo peÅ‚zaczy!"; 
 };
 
 FUNC int  Tpl_1401_GorNaKosh_VICTORY_Condition()
@@ -141,7 +141,7 @@ FUNC int  Tpl_1401_GorNaKosh_VICTORY_Condition()
 };
 FUNC void  Tpl_1401_GorNaKosh_VICTORY_Info()
 {
-	AI_Output			(other, self,"Tpl_1401_GorNaKosh_VICTORY_Info_15_01"); //Znalaz³em gniazdo pe³zaczy!
-	AI_Output			(self, other,"Tpl_1401_GorNaKosh_VICTORY_Info_13_02"); //Wspaniale! Wróæ do obozu i wype³nij rozkaz do koñca. Cor Kalom na pewno siê niecierpliwi!
-	B_LogEntry			(CH2_MCEggs,"Mam zanieœæ jaja pe³zaczy do laboratorium Cor Kaloma.");
+	AI_Output			(other, self,"Tpl_1401_GorNaKosh_VICTORY_Info_15_01"); //ZnalazÅ‚em gniazdo peÅ‚zaczy!
+	AI_Output			(self, other,"Tpl_1401_GorNaKosh_VICTORY_Info_13_02"); //Wspaniale! WrÃ³Ä‡ do obozu i wypeÅ‚nij rozkaz do koÅ„ca. Cor Kalom na pewno siÄ™ niecierpliwi!
+	B_LogEntry			(CH2_MCEggs,"Mam zanieÅ›Ä‡ jaja peÅ‚zaczy do laboratorium Cor Kaloma.");
 };  

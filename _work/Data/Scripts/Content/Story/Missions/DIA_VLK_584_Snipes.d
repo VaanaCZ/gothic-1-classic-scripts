@@ -18,7 +18,7 @@ FUNC int  VLK_584_Snipes_Exit_Condition()
 
 FUNC VOID  VLK_584_Snipes_Exit_Info()
 {
-	AI_Output			(other, self,"Info_Exit_Info_15_001"); //Do zobaczenia nastêpnym razem!
+	AI_Output			(other, self,"Info_Exit_Info_15_001"); //Do zobaczenia nastÄ™pnym razem!
 	AI_Output			(self, other,"Info_Exit_Info_07_02"); //Jasne!
 	
 	AI_StopProcessInfos	( self );
@@ -44,13 +44,13 @@ FUNC int  VLK_584_Snipes_DEAL_Condition()
 FUNC void  VLK_584_Snipes_DEAL_Info()
 {
 	AI_Output			(other, self,"VLK_584_Snipes_DEAL_Info_15_01");//Jak leci?
-	AI_Output			(self, other,"VLK_584_Snipes_DEAL_Info_07_02"); //Mam dla ciebie pewn¹ propozycjê.
-	AI_Output			(self, other,"VLK_584_Snipes_DEAL_Info_07_03"); //Spraw, ¿eby Aaron odczepi³ siê od tej skrzyni, a zap³acê ci 10 bry³ek rudy.
+	AI_Output			(self, other,"VLK_584_Snipes_DEAL_Info_07_02"); //Mam dla ciebie pewnÄ… propozycjÄ™.
+	AI_Output			(self, other,"VLK_584_Snipes_DEAL_Info_07_03"); //Spraw, Å¼eby Aaron odczepiÅ‚ siÄ™ od tej skrzyni, a zapÅ‚acÄ™ ci 10 bryÅ‚ek rudy.
 	Snipes_Deal = LOG_RUNNING;
 
 	Log_CreateTopic		(CH2_SnipesDeal,	LOG_MISSION);
 	Log_SetTopicStatus	(CH2_SnipesDeal,	LOG_RUNNING);
-	B_LogEntry		(CH2_SnipesDeal,"Kopacz Snipes zaoferowa³ mi 10 bry³ek rudy w zamian za odci¹gniêcie Aarona od jego skrzyni.");
+	B_LogEntry		(CH2_SnipesDeal,"Kopacz Snipes zaoferowaÅ‚ mi 10 bryÅ‚ek rudy w zamian za odciÄ…gniÄ™cie Aarona od jego skrzyni.");
 };
 // ***************** Infos *****************************  
 instance  VLK_584_Snipes_DEAL_RUN (C_INFO)
@@ -60,7 +60,7 @@ instance  VLK_584_Snipes_DEAL_RUN (C_INFO)
 	information		= VLK_584_Snipes_DEAL_RUN_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Nale¿y mi siê 10 bry³ek rudy!"; 
+	description		= "NaleÅ¼y mi siÄ™ 10 bryÅ‚ek rudy!"; 
 };
 
 FUNC int  VLK_584_Snipes_DEAL_RUN_Condition()
@@ -73,16 +73,16 @@ FUNC int  VLK_584_Snipes_DEAL_RUN_Condition()
 
 FUNC void  VLK_584_Snipes_DEAL_RUN_Info()
 {
-	AI_Output			(other, self,"VLK_584_Snipes_DEAL_RUN_Info_15_01"); //Nale¿y mi siê 10 bry³ek rudy!
-	AI_Output			(self, other,"VLK_584_Snipes_DEAL_RUN_Info_07_02"); //Proszê, zas³u¿y³eœ na nie.
-	AI_Output			(self, other,"VLK_584_Snipes_DEAL_RUN_Info_07_03"); //Ach, i jeszcze coœ: mam przy sobie klucz do tej skrzyni. Jak dla ciebie - 30 bry³ek.
+	AI_Output			(other, self,"VLK_584_Snipes_DEAL_RUN_Info_15_01"); //NaleÅ¼y mi siÄ™ 10 bryÅ‚ek rudy!
+	AI_Output			(self, other,"VLK_584_Snipes_DEAL_RUN_Info_07_02"); //ProszÄ™, zasÅ‚uÅ¼yÅ‚eÅ› na nie.
+	AI_Output			(self, other,"VLK_584_Snipes_DEAL_RUN_Info_07_03"); //Ach, i jeszcze coÅ›: mam przy sobie klucz do tej skrzyni. Jak dla ciebie - 30 bryÅ‚ek.
 	CreateInvItems		(self,ItMinugget,10);
 	B_GiveInvItems      (self, other, ItMinugget,10);
 	CreateInvItem 		(self,ItKe_OM_02);
 
 	B_GiveXP			(XP_LureAaronAway);
 	
-	B_LogEntry		(CH2_SnipesDeal,"Za kolejne 30 bry³ek Snipes zaoferowa³ mi klucz do skrzyni Aarona."); 
+	B_LogEntry		(CH2_SnipesDeal,"Za kolejne 30 bryÅ‚ek Snipes zaoferowaÅ‚ mi klucz do skrzyni Aarona."); 
 };  
 // ***************** Infos *****************************
 instance  VLK_584_Snipes_DEAL_2 (C_INFO)
@@ -110,19 +110,19 @@ FUNC void  VLK_584_Snipes_DEAL_2_Info()
 	
 	if ( Npc_HasItems (hero, ItMinugget)  >= 30 ) 
 	{
-		AI_Output			(other, self,"VLK_584_Snipes_DEAL_2_Info_15_01");//Wezmê ten klucz.
-		AI_Output			(self, other,"VLK_584_Snipes_DEAL_2_Info_07_02");//Trafi³a ci siê nie lada okazja.
-		AI_Output			(other, self,"VLK_584_Snipes_DEAL_2_Info_15_03");//Zastanawiam siê co TY z tego masz.
-		AI_Output			(self, other,"VLK_584_Snipes_DEAL_2_Info_07_04");//Zawsze siê cieszê, kiedy mogê daæ prztyczka w nos któremuœ ze Stra¿ników. Zreszt¹, gdyby znaleŸli przy mnie rzeczy z tej skrzyni, by³bym martwy.
+		AI_Output			(other, self,"VLK_584_Snipes_DEAL_2_Info_15_01");//WezmÄ™ ten klucz.
+		AI_Output			(self, other,"VLK_584_Snipes_DEAL_2_Info_07_02");//TrafiÅ‚a ci siÄ™ nie lada okazja.
+		AI_Output			(other, self,"VLK_584_Snipes_DEAL_2_Info_15_03");//Zastanawiam siÄ™ co TY z tego masz.
+		AI_Output			(self, other,"VLK_584_Snipes_DEAL_2_Info_07_04");//Zawsze siÄ™ cieszÄ™, kiedy mogÄ™ daÄ‡ prztyczka w nos ktÃ³remuÅ› ze StraÅ¼nikÃ³w. ZresztÄ…, gdyby znaleÅºli przy mnie rzeczy z tej skrzyni, byÅ‚bym martwy.
 		
 		B_GiveInvItems 	(hero, self, ItMiNugget,30);
 		B_GiveInvItems 	(self, hero, ItKe_OM_02, 1);
 		VLK_584_Snipes_DEAL_2.permanent = 0;
 	
-		B_LogEntry		(CH2_SnipesDeal,"Kupi³em od Snipesa klucz od skrzyni! Ciekawe, co zrobi Aaron, gdy mu o tym powiem?"); 
+		B_LogEntry		(CH2_SnipesDeal,"KupiÅ‚em od Snipesa klucz od skrzyni! Ciekawe, co zrobi Aaron, gdy mu o tym powiem?"); 
 	}
 	else
 	{
-		AI_Output			(self, other,"VLK_584_Snipes_DEAL_2_Info_07_05"); //Ma byæ 30 bry³ek! Daj mi rudê, to dostaniesz klucz.
+		AI_Output			(self, other,"VLK_584_Snipes_DEAL_2_Info_07_05"); //Ma byÄ‡ 30 bryÅ‚ek! Daj mi rudÄ™, to dostaniesz klucz.
 	};
 };  

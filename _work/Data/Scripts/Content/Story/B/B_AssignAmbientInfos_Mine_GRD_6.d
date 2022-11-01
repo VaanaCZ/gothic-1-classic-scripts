@@ -37,7 +37,7 @@ INSTANCE Info_Mine_Grd_6_Mine (C_INFO) // E1
 	condition	= Info_Mine_Grd_6_Mine_Condition;
 	information	= Info_Mine_Grd_6_Mine_Info;
 	permanent	= 1;
-	description = "Jak wygl¹da praca w kopalni?";
+	description = "Jak wyglÄ…da praca w kopalni?";
 };                       
 
 FUNC INT Info_Mine_Grd_6_Mine_Condition()
@@ -50,8 +50,8 @@ FUNC INT Info_Mine_Grd_6_Mine_Condition()
 
 FUNC VOID Info_Mine_Grd_6_Mine_Info()
 {
-	AI_Output(other,self,"Info_Mine_Grd_6_Mine_15_00"); //Jak wygl¹da praca w kopalni?
-	AI_Output(self,other,"Info_Mine_Grd_6_Mine_06_01"); //Kopacze wydobywaj¹ tu rudê. A jak nie wydobywaj¹, to dostaj¹ porz¹dne baty.
+	AI_Output(other,self,"Info_Mine_Grd_6_Mine_15_00"); //Jak wyglÄ…da praca w kopalni?
+	AI_Output(self,other,"Info_Mine_Grd_6_Mine_06_01"); //Kopacze wydobywajÄ… tu rudÄ™. A jak nie wydobywajÄ…, to dostajÄ… porzÄ…dne baty.
 	
 };
 
@@ -65,7 +65,7 @@ INSTANCE Info_Mine_Grd_6_WichtigePersonen(C_INFO)
 	condition	= Info_Mine_Grd_6_WichtigePersonen_Condition;
 	information	= Info_Mine_Grd_6_WichtigePersonen_Info;
 	permanent	= 1;
-	description = "Kto tu rz¹dzi?";
+	description = "Kto tu rzÄ…dzi?";
 };                       
 
 FUNC INT Info_Mine_Grd_6_WichtigePersonen_Condition()
@@ -78,7 +78,7 @@ FUNC INT Info_Mine_Grd_6_WichtigePersonen_Condition()
 
 FUNC VOID Info_Mine_Grd_6_WichtigePersonen_Info()
 {
-	AI_Output(other,self,"Info_Mine_Grd_6_WichtigePersonen_15_00"); //Kto tu rz¹dzi?
+	AI_Output(other,self,"Info_Mine_Grd_6_WichtigePersonen_15_00"); //Kto tu rzÄ…dzi?
 	AI_Output(self,other,"Info_Mine_Grd_6_WichtigePersonen_06_01"); //Szefem jest Asghan, ale to Ian organizuje takie rzeczy, jak ruda i Kopacze.
 	
 };
@@ -93,7 +93,7 @@ INSTANCE Info_Mine_Grd_6_Minecrawler(C_INFO)
 	condition	= Info_Mine_Grd_6_Minecrawler_Condition;
 	information	= Info_Mine_Grd_6_Minecrawler_Info;
 	permanent	= 1;
-	description = "Opowiedz mi o pe³zaczach.";
+	description = "Opowiedz mi o peÅ‚zaczach.";
 };                       
 
 FUNC INT Info_Mine_Grd_6_Minecrawler_Condition()
@@ -106,8 +106,8 @@ FUNC INT Info_Mine_Grd_6_Minecrawler_Condition()
 
 FUNC VOID Info_Mine_Grd_6_Minecrawler_Info()
 {
-	AI_Output(other,self,"Info_Mine_Grd_6_Minecrawler_15_00"); //Opowiedz mi o pe³zaczach.
-	AI_Output(self,other,"Info_Mine_Grd_6_Minecrawler_06_01"); //Same k³opoty z tymi bestiami. Sam ju¿ nie wiem, z czym jest wiêcej roboty - z nimi czy z Kopaczami.
+	AI_Output(other,self,"Info_Mine_Grd_6_Minecrawler_15_00"); //Opowiedz mi o peÅ‚zaczach.
+	AI_Output(self,other,"Info_Mine_Grd_6_Minecrawler_06_01"); //Same kÅ‚opoty z tymi bestiami. Sam juÅ¼ nie wiem, z czym jest wiÄ™cej roboty - z nimi czy z Kopaczami.
 	
 };	
 
@@ -135,7 +135,7 @@ FUNC INT Info_Mine_Grd_6_DieLage_Condition()
 FUNC VOID Info_Mine_Grd_6_DieLage_Info()
 {
 	AI_Output(other,self,"Info_Mine_Grd_6_DieLage_15_00"); //Jak leci?
- 	AI_Output(self,other,"Info_Mine_Grd_6_DieLage_06_01"); //A jak myœlisz?
+ 	AI_Output(self,other,"Info_Mine_Grd_6_DieLage_06_01"); //A jak myÅ›lisz?
 };
 	
 // *************************************************************************

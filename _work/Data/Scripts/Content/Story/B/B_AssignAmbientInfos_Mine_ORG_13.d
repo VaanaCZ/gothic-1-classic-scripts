@@ -37,7 +37,7 @@ INSTANCE Info_Mine_Org_13_Mine (C_INFO) // E1
 	condition	= Info_Mine_Org_13_Mine_Condition;
 	information	= Info_Mine_Org_13_Mine_Info;
 	permanent	= 1;
-	description = "Opowiedz mi coœ o tym obozie.";
+	description = "Opowiedz mi coÅ› o tym obozie.";
 };                       
 
 FUNC INT Info_Mine_Org_13_Mine_Condition()
@@ -47,8 +47,8 @@ FUNC INT Info_Mine_Org_13_Mine_Condition()
 
 FUNC VOID Info_Mine_Org_13_Mine_Info()
 {
-	AI_Output(other,self,"Info_Mine_Org_13_Mine_15_00"); //Opowiedz mi coœ o tym obozie.
-	AI_Output(self,other,"Info_Mine_Org_13_Mine_13_01"); //Ta dziura w ziemi pomo¿e nam siê st¹d wydostaæ. Jak tylko uzbieramy doœæ rudy, bêdziemy mieli gdzieœ Stary Obóz.
+	AI_Output(other,self,"Info_Mine_Org_13_Mine_15_00"); //Opowiedz mi coÅ› o tym obozie.
+	AI_Output(self,other,"Info_Mine_Org_13_Mine_13_01"); //Ta dziura w ziemi pomoÅ¼e nam siÄ™ stÄ…d wydostaÄ‡. Jak tylko uzbieramy doÅ›Ä‡ rudy, bÄ™dziemy mieli gdzieÅ› Stary ObÃ³z.
 	
 };
 
@@ -62,7 +62,7 @@ INSTANCE Info_Mine_Org_13_WichtigePersonen(C_INFO)
 	condition	= Info_Mine_Org_13_WichtigePersonen_Condition;
 	information	= Info_Mine_Org_13_WichtigePersonen_Info;
 	permanent	= 1;
-	description = "Kto tu rz¹dzi?";
+	description = "Kto tu rzÄ…dzi?";
 };                       
 
 FUNC INT Info_Mine_Org_13_WichtigePersonen_Condition()
@@ -72,7 +72,7 @@ FUNC INT Info_Mine_Org_13_WichtigePersonen_Condition()
 
 FUNC VOID Info_Mine_Org_13_WichtigePersonen_Info()
 {
-	AI_Output(other,self,"Info_Mine_Org_13_WichtigePersonen_15_00"); //Kto tu rz¹dzi?
+	AI_Output(other,self,"Info_Mine_Org_13_WichtigePersonen_15_00"); //Kto tu rzÄ…dzi?
 	AI_Output(self,other,"Info_Mine_Org_13_WichtigePersonen_13_01"); //Okyl jest tu szefem.
 	AI_Output(self,other,"Info_Mine_Org_13_WichtigePersonen_13_02"); //Ale zwykle zostawia Szkodniki w spokoju.
 	
@@ -88,7 +88,7 @@ INSTANCE Info_Mine_Org_13_DieLage(C_INFO) // E1
 	condition	= Info_Mine_Org_13_DieLage_Condition;
 	information	= Info_Mine_Org_13_DieLage_Info;
 	permanent	= 1;
-	description = "Dobrze siê czujesz?";
+	description = "Dobrze siÄ™ czujesz?";
 };                       
 
 FUNC INT Info_Mine_Org_13_DieLage_Condition()
@@ -98,8 +98,8 @@ FUNC INT Info_Mine_Org_13_DieLage_Condition()
 
 FUNC VOID Info_Mine_Org_13_DieLage_Info()
 {
-	AI_Output(other,self,"Info_Mine_Org_13_DieLage_15_00"); //Dobrze siê czujesz?
-	AI_Output(self,other,"Info_Mine_Org_13_DieLage_13_01");//Nie gorzej ni¿ wczoraj.
+	AI_Output(other,self,"Info_Mine_Org_13_DieLage_15_00"); //Dobrze siÄ™ czujesz?
+	AI_Output(self,other,"Info_Mine_Org_13_DieLage_13_01");//Nie gorzej niÅ¼ wczoraj.
 };
 	
 // *************************************************************************

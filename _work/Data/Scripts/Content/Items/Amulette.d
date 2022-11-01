@@ -41,7 +41,7 @@ INSTANCE  Schutzamulett_Feuer(C_Item)
 	on_equip		=	Equip_Schutzamulett_Feuer;
 	on_unequip		=	UnEquip_Schutzamulett_Feuer;
 
-	description		= "Amulet P³omieni";
+	description		= "Amulet PÅ‚omieni";
 	//TEXT[0]			= "";
 	TEXT[2]			= NAME_Prot_Fire;
 	COUNT[2]		= 10;
@@ -119,7 +119,7 @@ INSTANCE  Schutzamulett_Feuer(C_Item)
 	on_equip		=	Equip_Schutzamulett_Geschosse;
 	on_unequip		=	UnEquip_Schutzamulett_Geschosse;
 
-	description		= "Amulet Dêbowej Skóry";
+	description		= "Amulet DÄ™bowej SkÃ³ry";
 	//TEXT[0]			= "";
 	TEXT[2]			= NAME_Prot_Point;
 	COUNT[2]		= 15;
@@ -157,7 +157,7 @@ INSTANCE  Schutzamulett_Feuer(C_Item)
 	on_equip		=	Equip_Schutzamulett_Magie;
 	on_unequip		=	UnEquip_Schutzamulett_Magie;
 
-	description		= "Amulet Duchowej Si³y";
+	description		= "Amulet Duchowej SiÅ‚y";
 	//TEXT[0]			= "";
 	TEXT[2]			= NAME_Prot_Magic;
 	COUNT[2]		= 8;
@@ -235,7 +235,7 @@ INSTANCE  Schutzamulett_Feuer(C_Item)
 	on_equip		=	Equip_Schutzamulett_Waffen_Geschosse;
 	on_unequip		=	UnEquip_Schutzamulett_Waffen_Geschosse;
 
-	description		= "Amulet Kamiennej Skóry";
+	description		= "Amulet Kamiennej SkÃ³ry";
 	//TEXT[0]			= "";
 	TEXT[2]			= NAME_Prot_Edge;
 	COUNT[2]		= 15;
@@ -326,7 +326,7 @@ INSTANCE  Schutzamulett_Feuer(C_Item)
 	on_equip		=	Equip_Gewandtheitsamulett;
 	on_unequip		=	UnEquip_Gewandtheitsamulett;
 
-	description		= "Amulet Zwinnoœci";
+	description		= "Amulet ZwinnoÅ›ci";
 	//TEXT[0]			= "";
 	//TEXT[1]			= "";
 	////COUNT[1]		= ;
@@ -368,7 +368,7 @@ INSTANCE  Schutzamulett_Feuer(C_Item)
 	on_equip		=	Equip_Gewandtheitsamulett2;
 	on_unequip		=	UnEquip_Gewandtheitsamulett2;
 
-	description		= "Amulet Zrêcznoœci";
+	description		= "Amulet ZrÄ™cznoÅ›ci";
 	//TEXT[0]			= "";
 	//TEXT[1]			= "";
 	////COUNT[1]		= ;
@@ -450,7 +450,7 @@ INSTANCE  Schutzamulett_Feuer(C_Item)
 	on_equip		=	Equip_Staerkeamulett2;
 	on_unequip		=	UnEquip_Staerkeamulett2;
 
-	description		= "Amulet Si³y";
+	description		= "Amulet SiÅ‚y";
 	//TEXT[0]			= "";
 	//TEXT[1]			= "";
 	////COUNT[1]		= ;
@@ -492,7 +492,7 @@ INSTANCE  Schutzamulett_Feuer(C_Item)
 	on_equip		=	Equip_Lebensamulett;
 	on_unequip		=	UnEquip_Lebensamulett;
 
-	description		= "Amulet Witalnoœci";
+	description		= "Amulet WitalnoÅ›ci";
 	//TEXT[0]			= "";
 	//TEXT[1]			= "";
 	////COUNT[1]		= ;
@@ -573,7 +573,7 @@ INSTANCE  Schutzamulett_Feuer(C_Item)
 /******************************************************************************************/
 	INSTANCE  Amulett_der_Macht(C_Item)
 {
-	name 			=	"Amulet Potêgi";
+	name 			=	"Amulet PotÄ™gi";
 
 	mainflag 		=	ITEM_KAT_MAGIC;
 	flags 			=	ITEM_AMULET;
@@ -587,7 +587,7 @@ INSTANCE  Schutzamulett_Feuer(C_Item)
 	on_equip		=	Equip_Amulett_der_Macht;
 	on_unequip		=	UnEquip_Amulett_der_Macht;
 
-	description		= "Amulet Potêgi";
+	description		= "Amulet PotÄ™gi";
 	//TEXT[0]			= "";
 	//TEXT[1]			= "";
 	////COUNT[1]		= ;
@@ -617,7 +617,7 @@ INSTANCE  Schutzamulett_Feuer(C_Item)
 /******************************************************************************************/
 	INSTANCE  Amulett_der_Erleuchtung(C_Item)
 {
-	name 			=	"Amulet Oœwiecenia";
+	name 			=	"Amulet OÅ›wiecenia";
 
 	mainflag 		=	ITEM_KAT_MAGIC;
 	flags 			=	ITEM_AMULET;
@@ -631,7 +631,7 @@ INSTANCE  Schutzamulett_Feuer(C_Item)
 	on_equip		=	Equip_Amulett_der_Erleuchtung;
 	on_unequip		=	UnEquip_Amulett_der_Erleuchtung;
 
-	description		= "Amulet Oœwiecenia";
+	description		= "Amulet OÅ›wiecenia";
 	//TEXT[0]			= "";
 	//TEXT[1]			= "";
 	////COUNT[1]		= ;
@@ -674,8 +674,8 @@ INSTANCE  Schutzamulett_Feuer(C_Item)
 
 /******************************************************************************************/
 /*
-// FIXME: was soll das machen? Dämon beschwören???
-	INSTANCE  Beschwörungsamulett(C_Item)
+// FIXME: was soll das machen? DÃ¤mon beschwÃ¶ren???
+	INSTANCE  BeschwÃ¶rungsamulett(C_Item)
 {
 	name 			=	"Amulett der Erleuchtung";
 
@@ -688,13 +688,13 @@ INSTANCE  Schutzamulett_Feuer(C_Item)
 
 	visual_skin 		=	0;
 	material 		=	MAT_METAL;
-	on_equip		=	Equip_Beschwörungsamulett;
-	on_unequip		=	UnEquip_Beschwörungsamulett;
-	description		= "Dämonenbeschwörung";
+	on_equip		=	Equip_BeschwÃ¶rungsamulett;
+	on_unequip		=	UnEquip_BeschwÃ¶rungsamulett;
+	description		= "DÃ¤monenbeschwÃ¶rung";
 	TEXT[0]			= "Schwarz wie die Seele";
 	TEXT[1]			= "Schwarz wie die Nacht";
 	////COUNT[1]		= ;
-	TEXT[2]			= "Schwarz wie das Böse";
+	TEXT[2]			= "Schwarz wie das BÃ¶se";
 	////COUNT[2]		= ;
 	TEXT[3] 		= "Schwarz verheisst Macht";
 	////COUNT[3]		= ;
@@ -704,14 +704,14 @@ INSTANCE  Schutzamulett_Feuer(C_Item)
 	COUNT[5]		= value;
 };
 
-	FUNC VOID Equip_Beschwörungsamulett()
+	FUNC VOID Equip_BeschwÃ¶rungsamulett()
 	{
 
 
 	};
 
 
-	FUNC VOID UnEquip_Beschwörungsamulett ()
+	FUNC VOID UnEquip_BeschwÃ¶rungsamulett ()
 	{
 
 

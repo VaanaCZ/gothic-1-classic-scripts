@@ -8,7 +8,7 @@ INSTANCE Info_FindNPC_ST(C_INFO)
 	condition	= Info_FindNPC_ST_Condition;
 	information	= Info_FindNPC_ST_Info;
 	permanent	= 1;
-	description = "Gdzie mogê znaleŸæ...";
+	description = "Gdzie mogÄ™ znaleÅºÄ‡...";
 };                       
 
 FUNC INT Info_FindNPC_ST_Condition()
@@ -51,7 +51,7 @@ FUNC VOID Info_FindNPC_ST_BACK()
 
 FUNC VOID Info_FindNPC_ST_CorAngar()
 {
-	AI_Output(other,self,"Info_FindNPC_ST_CorAngar_15_00"); //Gdzie mogê znaleŸæ Cor Angara?
+	AI_Output(other,self,"Info_FindNPC_ST_CorAngar_15_00"); //Gdzie mogÄ™ znaleÅºÄ‡ Cor Angara?
 
 	VAR C_NPC CorAngar;		CorAngar = Hlp_GetNpc(Gur_1202_CorAngar);
 	
@@ -65,26 +65,26 @@ FUNC VOID Info_FindNPC_ST_CorAngar()
 		{
 			if (self.voice == 2)
 			{
-				AI_Output(self,other,"Info_FindNPC_ST_CorAngar_02_01"); //Plac treningowy Œwi¹tynnej Stra¿y znajduje siê na wy¿szym poziomie. W ci¹gu dnia tam go znajdziesz.
+				AI_Output(self,other,"Info_FindNPC_ST_CorAngar_02_01"); //Plac treningowy ÅšwiÄ…tynnej StraÅ¼y znajduje siÄ™ na wyÅ¼szym poziomie. W ciÄ…gu dnia tam go znajdziesz.
 			}
 			else if (self.voice == 3)
 			{
-				AI_Output(self,other,"Info_FindNPC_ST_CorAngar_03_01"); //Plac treningowy Œwi¹tynnej Stra¿y znajduje siê na wy¿szym poziomie. W ci¹gu dnia tam go znajdziesz.
+				AI_Output(self,other,"Info_FindNPC_ST_CorAngar_03_01"); //Plac treningowy ÅšwiÄ…tynnej StraÅ¼y znajduje siÄ™ na wyÅ¼szym poziomie. W ciÄ…gu dnia tam go znajdziesz.
 			}
 			else if (self.voice == 5)
 			{
-				AI_Output(self,other,"Info_FindNPC_ST_CorAngar_05_01"); //Plac treningowy Œwi¹tynnej Stra¿y znajduje siê na wy¿szym poziomie. W ci¹gu dnia tam go znajdziesz.
+				AI_Output(self,other,"Info_FindNPC_ST_CorAngar_05_01"); //Plac treningowy ÅšwiÄ…tynnej StraÅ¼y znajduje siÄ™ na wyÅ¼szym poziomie. W ciÄ…gu dnia tam go znajdziesz.
 			};
 		}
 		else if (self.guild == GIL_TPL) 
 		{
 			if (self.voice == 8)
 			{
-				AI_Output(self,other,"Info_FindNPC_ST_CorAngar_08_01"); //Plac treningowy Œwi¹tynnej Stra¿y znajduje siê na wy¿szym poziomie. W ci¹gu dnia tam go znajdziesz.
+				AI_Output(self,other,"Info_FindNPC_ST_CorAngar_08_01"); //Plac treningowy ÅšwiÄ…tynnej StraÅ¼y znajduje siÄ™ na wyÅ¼szym poziomie. W ciÄ…gu dnia tam go znajdziesz.
 			}
 			else if (self.voice == 13)
 			{
-				AI_Output(self,other,"Info_FindNPC_ST_CorAngar_13_01"); //Plac treningowy Œwi¹tynnej Stra¿y znajduje siê na wy¿szym poziomie. W ci¹gu dnia tam go znajdziesz.
+				AI_Output(self,other,"Info_FindNPC_ST_CorAngar_13_01"); //Plac treningowy ÅšwiÄ…tynnej StraÅ¼y znajduje siÄ™ na wyÅ¼szym poziomie. W ciÄ…gu dnia tam go znajdziesz.
 			};
 		};
 	};
@@ -98,7 +98,7 @@ FUNC VOID Info_FindNPC_ST_CorAngar()
 
 FUNC VOID Info_FindNPC_ST_CorKalom()
 {
-	AI_Output(other,self,"Info_FindNPC_ST_CorKalom_15_00"); //Gdzie znajdê Cor Kaloma?
+	AI_Output(other,self,"Info_FindNPC_ST_CorKalom_15_00"); //Gdzie znajdÄ™ Cor Kaloma?
 
 	VAR C_NPC CorKalom;		CorKalom = Hlp_GetNpc(Gur_1201_CorKalom);
 	
@@ -112,26 +112,26 @@ FUNC VOID Info_FindNPC_ST_CorKalom()
 		{
 			if (self.voice == 2)
 			{
-				AI_Output(self,other,"Info_FindNPC_ST_CorKalom_02_01"); //Laboratorium alchemiczne znajduje siê na wy¿szym poziomie, w pobli¿u œwi¹tynnego wzgórza. Cor Kalom raczej siê stamt¹d nie rusza.
+				AI_Output(self,other,"Info_FindNPC_ST_CorKalom_02_01"); //Laboratorium alchemiczne znajduje siÄ™ na wyÅ¼szym poziomie, w pobliÅ¼u Å›wiÄ…tynnego wzgÃ³rza. Cor Kalom raczej siÄ™ stamtÄ…d nie rusza.
 			}
 			else if (self.voice == 3)
 			{
-				AI_Output(self,other,"Info_FindNPC_ST_CorKalom_03_01"); //Laboratorium alchemiczne znajduje siê na wy¿szym poziomie, w pobli¿u œwi¹tynnego wzgórza. Cor Kalom raczej siê stamt¹d nie rusza.
+				AI_Output(self,other,"Info_FindNPC_ST_CorKalom_03_01"); //Laboratorium alchemiczne znajduje siÄ™ na wyÅ¼szym poziomie, w pobliÅ¼u Å›wiÄ…tynnego wzgÃ³rza. Cor Kalom raczej siÄ™ stamtÄ…d nie rusza.
 			}
 			else if (self.voice == 5)
 			{
-				AI_Output(self,other,"Info_FindNPC_ST_CorKalom_05_01"); //Laboratorium alchemiczne znajduje siê na wy¿szym poziomie, w pobli¿u œwi¹tynnego wzgórza. Cor Kalom raczej siê stamt¹d nie rusza.
+				AI_Output(self,other,"Info_FindNPC_ST_CorKalom_05_01"); //Laboratorium alchemiczne znajduje siÄ™ na wyÅ¼szym poziomie, w pobliÅ¼u Å›wiÄ…tynnego wzgÃ³rza. Cor Kalom raczej siÄ™ stamtÄ…d nie rusza.
 			};
 		}
 		else if (self.guild == GIL_TPL) 
 		{
 			if (self.voice == 8)
 			{
-				AI_Output(self,other,"Info_FindNPC_ST_CorKalom_08_01"); //Laboratorium alchemiczne znajduje siê na wy¿szym poziomie, w pobli¿u œwi¹tynnego wzgórza. Cor Kalom raczej siê stamt¹d nie rusza.
+				AI_Output(self,other,"Info_FindNPC_ST_CorKalom_08_01"); //Laboratorium alchemiczne znajduje siÄ™ na wyÅ¼szym poziomie, w pobliÅ¼u Å›wiÄ…tynnego wzgÃ³rza. Cor Kalom raczej siÄ™ stamtÄ…d nie rusza.
 			}
 			else if (self.voice == 13)
 			{
-				AI_Output(self,other,"Info_FindNPC_ST_CorKalom_13_01"); //Laboratorium alchemiczne znajduje siê na wy¿szym poziomie, w pobli¿u œwi¹tynnego wzgórza. Cor Kalom raczej siê stamt¹d nie rusza.
+				AI_Output(self,other,"Info_FindNPC_ST_CorKalom_13_01"); //Laboratorium alchemiczne znajduje siÄ™ na wyÅ¼szym poziomie, w pobliÅ¼u Å›wiÄ…tynnego wzgÃ³rza. Cor Kalom raczej siÄ™ stamtÄ…d nie rusza.
 			};
 		};
 	};
@@ -145,7 +145,7 @@ FUNC VOID Info_FindNPC_ST_CorKalom()
 
 FUNC VOID Info_FindNPC_ST_YBerion()
 {
-	AI_Output(other,self,"Info_FindNPC_ST_YBerion_15_00"); //Gdzie znajdê Y'Beriona?
+	AI_Output(other,self,"Info_FindNPC_ST_YBerion_15_00"); //Gdzie znajdÄ™ Y'Beriona?
 
 	VAR C_NPC YBerion;		YBerion = Hlp_GetNpc(Gur_1200_YBerion);
 	
@@ -159,26 +159,26 @@ FUNC VOID Info_FindNPC_ST_YBerion()
 		{
 			if (self.voice == 2)
 			{
-				AI_Output(self,other,"Info_FindNPC_ST_YBerion_02_01"); //Jaœnie Oœwiecony ¿yje w odosobnieniu, wewn¹trz œwi¹tynnego wzgórza. Publicznie pojawia siê tylko na szczególne okazje.
+				AI_Output(self,other,"Info_FindNPC_ST_YBerion_02_01"); //JaÅ›nie OÅ›wiecony Å¼yje w odosobnieniu, wewnÄ…trz Å›wiÄ…tynnego wzgÃ³rza. Publicznie pojawia siÄ™ tylko na szczegÃ³lne okazje.
 			}
 			else if (self.voice == 3)
 			{
-				AI_Output(self,other,"Info_FindNPC_ST_YBerion_03_01"); //Jaœnie Oœwiecony ¿yje w odosobnieniu, wewn¹trz œwi¹tynnego wzgórza. Publicznie pojawia siê tylko na szczególne okazje.
+				AI_Output(self,other,"Info_FindNPC_ST_YBerion_03_01"); //JaÅ›nie OÅ›wiecony Å¼yje w odosobnieniu, wewnÄ…trz Å›wiÄ…tynnego wzgÃ³rza. Publicznie pojawia siÄ™ tylko na szczegÃ³lne okazje.
 			}
 			else if (self.voice == 5)
 			{
-				AI_Output(self,other,"Info_FindNPC_ST_YBerion_05_01"); //Jaœnie Oœwiecony ¿yje w odosobnieniu, wewn¹trz œwi¹tynnego wzgórza. Publicznie pojawia siê tylko na szczególne okazje.
+				AI_Output(self,other,"Info_FindNPC_ST_YBerion_05_01"); //JaÅ›nie OÅ›wiecony Å¼yje w odosobnieniu, wewnÄ…trz Å›wiÄ…tynnego wzgÃ³rza. Publicznie pojawia siÄ™ tylko na szczegÃ³lne okazje.
 			};
 		}
 		else if (self.guild == GIL_TPL) 
 		{
 			if (self.voice == 8)
 			{
-				AI_Output(self,other,"Info_FindNPC_ST_YBerion_08_01"); //Jaœnie Oœwiecony ¿yje w odosobnieniu, wewn¹trz œwi¹tynnego wzgórza. Publicznie pojawia siê tylko na szczególne okazje.
+				AI_Output(self,other,"Info_FindNPC_ST_YBerion_08_01"); //JaÅ›nie OÅ›wiecony Å¼yje w odosobnieniu, wewnÄ…trz Å›wiÄ…tynnego wzgÃ³rza. Publicznie pojawia siÄ™ tylko na szczegÃ³lne okazje.
 			}
 			else if (self.voice == 13)
 			{
-				AI_Output(self,other,"Info_FindNPC_ST_YBerion_13_01"); //Jaœnie Oœwiecony ¿yje w odosobnieniu, wewn¹trz œwi¹tynnego wzgórza. Publicznie pojawia siê tylko na szczególne okazje.
+				AI_Output(self,other,"Info_FindNPC_ST_YBerion_13_01"); //JaÅ›nie OÅ›wiecony Å¼yje w odosobnieniu, wewnÄ…trz Å›wiÄ…tynnego wzgÃ³rza. Publicznie pojawia siÄ™ tylko na szczegÃ³lne okazje.
 			};
 		};
 	};

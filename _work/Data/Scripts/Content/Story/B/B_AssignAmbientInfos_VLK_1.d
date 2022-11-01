@@ -37,7 +37,7 @@ INSTANCE Info_Vlk_1_EinerVonEuchWerden (C_INFO) // E1
 	condition	= Info_Vlk_1_EinerVonEuchWerden_Condition;
 	information	= Info_Vlk_1_EinerVonEuchWerden_Info;
 	permanent	= 1;
-	description = "Jak mogê zostaæ cz³onkiem waszego obozu?";
+	description = "Jak mogÄ™ zostaÄ‡ czÅ‚onkiem waszego obozu?";
 };                       
 
 FUNC INT Info_Vlk_1_EinerVonEuchWerden_Condition()
@@ -50,9 +50,9 @@ FUNC INT Info_Vlk_1_EinerVonEuchWerden_Condition()
 
 FUNC VOID Info_Vlk_1_EinerVonEuchWerden_Info()
 {
-	AI_Output(other,self,"Info_Vlk_1_EinerVonEuchWerden_15_00"); //Jak mogê zostaæ cz³onkiem waszego obozu?
-	AI_Output(self,other,"Info_Vlk_1_EinerVonEuchWerden_01_01"); //To proste. Z³ap jakiœ kilof i z³aŸ do kopalni. Pó³ wydobytej przez ciebie rudy pójdzie na ochronê, drugie pó³ powinno ci wystarczyæ na przetrwanie.
-	AI_Output(self,other,"Info_Vlk_1_EinerVonEuchWerden_01_02"); //Cena, któr¹ Gomez ka¿e sobie p³aciæ za jego dostawy to zdzierstwo, ale chyba lepsze to ni¿ ry¿owa dieta, serwowana wszystkim w Nowym Obozie.
+	AI_Output(other,self,"Info_Vlk_1_EinerVonEuchWerden_15_00"); //Jak mogÄ™ zostaÄ‡ czÅ‚onkiem waszego obozu?
+	AI_Output(self,other,"Info_Vlk_1_EinerVonEuchWerden_01_01"); //To proste. ZÅ‚ap jakiÅ› kilof i zÅ‚aÅº do kopalni. PÃ³Å‚ wydobytej przez ciebie rudy pÃ³jdzie na ochronÄ™, drugie pÃ³Å‚ powinno ci wystarczyÄ‡ na przetrwanie.
+	AI_Output(self,other,"Info_Vlk_1_EinerVonEuchWerden_01_02"); //Cena, ktÃ³rÄ… Gomez kaÅ¼e sobie pÅ‚aciÄ‡ za jego dostawy to zdzierstwo, ale chyba lepsze to niÅ¼ ryÅ¼owa dieta, serwowana wszystkim w Nowym Obozie.
 };
 
 // *************************************************************************
@@ -76,7 +76,7 @@ FUNC INT Info_Vlk_1_WichtigePersonen_Condition()
 FUNC VOID Info_Vlk_1_WichtigePersonen_Info()
 {
 	AI_Output(other,self,"Info_Vlk_1_WichtigePersonen_15_00"); //Kto tu dowodzi?
-	AI_Output(self,other,"Info_Vlk_1_WichtigePersonen_01_01"); //Magnaci. To oni organizuj¹ wymianê rudy z królem. Im jesteœ wa¿niejszy, tym wiêksz¹ dostajesz dolê.
+	AI_Output(self,other,"Info_Vlk_1_WichtigePersonen_01_01"); //Magnaci. To oni organizujÄ… wymianÄ™ rudy z krÃ³lem. Im jesteÅ› waÅ¼niejszy, tym wiÄ™kszÄ… dostajesz dolÄ™.
 };
 
 // *************************************************************************
@@ -89,7 +89,7 @@ INSTANCE Info_Vlk_1_DasLager(C_INFO)
 	condition	= Info_Vlk_1_DasLager_Condition;
 	information	= Info_Vlk_1_DasLager_Info;
 	permanent	= 1;
-	description = "Jest tu coœ ciekawszego do ogl¹dania ni¿ te chaty?";
+	description = "Jest tu coÅ› ciekawszego do oglÄ…dania niÅ¼ te chaty?";
 };                       
 
 FUNC INT Info_Vlk_1_DasLager_Condition()
@@ -99,9 +99,9 @@ FUNC INT Info_Vlk_1_DasLager_Condition()
 
 FUNC VOID Info_Vlk_1_DasLager_Info()
 {
-	AI_Output(other,self,"Info_Vlk_1_DasLager_15_00"); //Jest tu coœ ciekawszego do ogl¹dania ni¿ te chaty?
-	AI_Output(self,other,"Info_Vlk_1_DasLager_01_01"); //Có¿, wieczorem mo¿na zajrzeæ na arenê, popatrzeæ, jak Stra¿nicy gruchocz¹ sobie koœci.
-	AI_Output(self,other,"Info_Vlk_1_DasLager_01_02"); //Piêkny widok. Wart ka¿dej ceny.
+	AI_Output(other,self,"Info_Vlk_1_DasLager_15_00"); //Jest tu coÅ› ciekawszego do oglÄ…dania niÅ¼ te chaty?
+	AI_Output(self,other,"Info_Vlk_1_DasLager_01_01"); //CÃ³Å¼, wieczorem moÅ¼na zajrzeÄ‡ na arenÄ™, popatrzeÄ‡, jak StraÅ¼nicy gruchoczÄ… sobie koÅ›ci.
+	AI_Output(self,other,"Info_Vlk_1_DasLager_01_02"); //PiÄ™kny widok. Wart kaÅ¼dej ceny.
 };
 
 // *************************************************************************
@@ -125,7 +125,7 @@ FUNC INT Info_Vlk_1_DieLage_Condition()
 FUNC VOID Info_Vlk_1_DieLage_Info()
 {
 	AI_Output(other,self,"Info_Vlk_1_DieLage_15_00"); //Jak leci?
-	AI_Output(self,other,"Info_Vlk_1_DieLage_01_01"); //Spêdzi³em ostatnie dwa tygodnie pracuj¹c w kopalni. Teraz chcê wreszcie odpocz¹æ, wiêc zejdŸ mi z oczu.
+	AI_Output(self,other,"Info_Vlk_1_DieLage_01_01"); //SpÄ™dziÅ‚em ostatnie dwa tygodnie pracujÄ…c w kopalni. Teraz chcÄ™ wreszcie odpoczÄ…Ä‡, wiÄ™c zejdÅº mi z oczu.
 };
 	
 // *************************************************************************

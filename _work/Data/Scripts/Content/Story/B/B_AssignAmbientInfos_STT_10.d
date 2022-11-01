@@ -37,7 +37,7 @@ INSTANCE Info_Stt_10_EinerVonEuchWerden (C_INFO) // E1
 	condition	= Info_Stt_10_EinerVonEuchWerden_Condition;
 	information	= Info_Stt_10_EinerVonEuchWerden_Info;
 	permanent	= 1;
-	description = "Chcia³bym zostaæ Cieniem.";
+	description = "ChciaÅ‚bym zostaÄ‡ Cieniem.";
 };                       
 
 FUNC INT Info_Stt_10_EinerVonEuchWerden_Condition()
@@ -50,8 +50,8 @@ FUNC INT Info_Stt_10_EinerVonEuchWerden_Condition()
 
 FUNC VOID Info_Stt_10_EinerVonEuchWerden_Info()
 {
-	AI_Output(other,self,"Info_Stt_10_EinerVonEuchWerden_15_00"); //Chcia³bym zostaæ Cieniem.
-	AI_Output(self,other,"Info_Stt_10_EinerVonEuchWerden_10_01"); //Czy¿by? Rozmawia³eœ ju¿ z Diego?
+	AI_Output(other,self,"Info_Stt_10_EinerVonEuchWerden_15_00"); //ChciaÅ‚bym zostaÄ‡ Cieniem.
+	AI_Output(self,other,"Info_Stt_10_EinerVonEuchWerden_10_01"); //CzyÅ¼by? RozmawiaÅ‚eÅ› juÅ¼ z Diego?
 	
 	var C_NPC Diego;		Diego 	= Hlp_GetNpc(PC_Thief);
 	Diego.aivar[AIV_FINDABLE] = TRUE;
@@ -64,14 +64,14 @@ FUNC VOID Info_Stt_10_EinerVonEuchWerden_Info()
 FUNC VOID Info_Stt_10_EinerVonEuchWerden_Nein()
 {
 	AI_Output(other,self,"Info_Stt_10_EinerVonEuchWerden_Nein_15_00"); //Jeszcze nie.
-	AI_Output(self,other,"Info_Stt_10_EinerVonEuchWerden_Nein_10_01"); //Wiêc zrób to czym prêdzej. Znajdziesz go przy wejœciu do zamku.
+	AI_Output(self,other,"Info_Stt_10_EinerVonEuchWerden_Nein_10_01"); //WiÄ™c zrÃ³b to czym prÄ™dzej. Znajdziesz go przy wejÅ›ciu do zamku.
 	Info_ClearChoices(Info_Stt_10_EinerVonEuchWerden);
 };
 
 FUNC VOID Info_Stt_10_EinerVonEuchWerden_Ja()
 {
-	AI_Output(other,self,"Info_Stt_10_EinerVonEuchWerden_Ja_15_00"); //Tak, rozmawia³em.
-	AI_Output(self,other,"Info_Stt_10_EinerVonEuchWerden_Ja_10_01"); //To œwietnie. S³uchaj go we wszystkim. Mi to nie zaszkodzi³o... w ka¿dym razie - powa¿nie.
+	AI_Output(other,self,"Info_Stt_10_EinerVonEuchWerden_Ja_15_00"); //Tak, rozmawiaÅ‚em.
+	AI_Output(self,other,"Info_Stt_10_EinerVonEuchWerden_Ja_10_01"); //To Å›wietnie. SÅ‚uchaj go we wszystkim. Mi to nie zaszkodziÅ‚o... w kaÅ¼dym razie - powaÅ¼nie.
 	Info_ClearChoices(Info_Stt_10_EinerVonEuchWerden);
 };
 
@@ -85,7 +85,7 @@ INSTANCE Info_Stt_10_WichtigePersonen(C_INFO)
 	condition	= Info_Stt_10_WichtigePersonen_Condition;
 	information	= Info_Stt_10_WichtigePersonen_Info;
 	permanent	= 1;
-	description = "Kogo warto tutaj poznaæ?";
+	description = "Kogo warto tutaj poznaÄ‡?";
 };                       
 
 FUNC INT Info_Stt_10_WichtigePersonen_Condition()
@@ -95,8 +95,8 @@ FUNC INT Info_Stt_10_WichtigePersonen_Condition()
 
 FUNC VOID Info_Stt_10_WichtigePersonen_Info()
 {
-	AI_Output(other,self,"Info_Stt_10_WichtigePersonen_15_00"); //Kogo warto tutaj poznaæ?
-	AI_Output(self,other,"Info_Stt_10_WichtigePersonen_10_01"); //Jak podpadniesz stra¿nikom, porozmawiaj z Gravo. Znajdziesz go na k¹pielisku, obok bramy do zamku. On zajmuje siê ludŸmi, którzy wpl¹tali siê w k³opoty. Zw³aszcza nowym zdarza siê to niezwykle czêsto.
+	AI_Output(other,self,"Info_Stt_10_WichtigePersonen_15_00"); //Kogo warto tutaj poznaÄ‡?
+	AI_Output(self,other,"Info_Stt_10_WichtigePersonen_10_01"); //Jak podpadniesz straÅ¼nikom, porozmawiaj z Gravo. Znajdziesz go na kÄ…pielisku, obok bramy do zamku. On zajmuje siÄ™ ludÅºmi, ktÃ³rzy wplÄ…tali siÄ™ w kÅ‚opoty. ZwÅ‚aszcza nowym zdarza siÄ™ to niezwykle czÄ™sto.
 };
 
 // *************************************************************************
@@ -109,7 +109,7 @@ INSTANCE Info_Stt_10_DasLager(C_INFO)
 	condition	= Info_Stt_10_DasLager_Condition;
 	information	= Info_Stt_10_DasLager_Info;
 	permanent	= 1;
-	description = "Co mo¿esz mi powiedzieæ o Obozie?";
+	description = "Co moÅ¼esz mi powiedzieÄ‡ o Obozie?";
 };                       
 
 FUNC INT Info_Stt_10_DasLager_Condition()
@@ -119,9 +119,9 @@ FUNC INT Info_Stt_10_DasLager_Condition()
 
 FUNC VOID Info_Stt_10_DasLager_Info()
 {
-	AI_Output(other,self,"Info_Stt_10_DasLager_15_00"); //Co mo¿esz mi powiedzieæ o Obozie?
-	AI_Output(self,other,"Info_Stt_10_DasLager_10_01"); //Chyba najciekawsz¹ czêœci¹ Starego Obozu jest targowisko. Jeœli chcesz coœ kupiæ, wal tam jak w dym.
-	AI_Output(self,other,"Info_Stt_10_DasLager_10_02"); //Znajdziesz je pod tym wielkim zadaszeniem, w po³udniowej czêœci Zewnêtrznego Pierœcienia.
+	AI_Output(other,self,"Info_Stt_10_DasLager_15_00"); //Co moÅ¼esz mi powiedzieÄ‡ o Obozie?
+	AI_Output(self,other,"Info_Stt_10_DasLager_10_01"); //Chyba najciekawszÄ… czÄ™Å›ciÄ… Starego Obozu jest targowisko. JeÅ›li chcesz coÅ› kupiÄ‡, wal tam jak w dym.
+	AI_Output(self,other,"Info_Stt_10_DasLager_10_02"); //Znajdziesz je pod tym wielkim zadaszeniem, w poÅ‚udniowej czÄ™Å›ci ZewnÄ™trznego PierÅ›cienia.
 };
 
 // *************************************************************************
@@ -134,7 +134,7 @@ INSTANCE Info_Stt_10_DieLage(C_INFO) // E1
 	condition	= Info_Stt_10_DieLage_Condition;
 	information	= Info_Stt_10_DieLage_Info;
 	permanent	= 1;
-	description = "Czeœæ!";
+	description = "CzeÅ›Ä‡!";
 };                       
 
 FUNC INT Info_Stt_10_DieLage_Condition()
@@ -144,7 +144,7 @@ FUNC INT Info_Stt_10_DieLage_Condition()
 
 FUNC VOID Info_Stt_10_DieLage_Info()
 {
-	AI_Output(other,self,"Info_Stt_10_DieLage_15_00"); //Czeœæ!
+	AI_Output(other,self,"Info_Stt_10_DieLage_15_00"); //CzeÅ›Ä‡!
 	AI_Output(self,other,"Info_Stt_10_DieLage_10_01"); //Czego chcesz? 
 };
 	

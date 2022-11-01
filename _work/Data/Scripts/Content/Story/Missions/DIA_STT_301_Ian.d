@@ -19,8 +19,8 @@ FUNC int  STT_301_IAN_Exit_Condition()
 
 FUNC VOID  STT_301_IAN_Exit_Info()
 {
-	AI_Output			(other, self,"STT_301_IAN_Exit_Info_15_01"); //Rozejrzê siê trochê po okolicy.
-	AI_Output			(self, other,"STT_301_IAN_Exit_Info_13_02"); //Nie sprawiaj ¿adnych k³opotów.
+	AI_Output			(other, self,"STT_301_IAN_Exit_Info_15_01"); //RozejrzÄ™ siÄ™ trochÄ™ po okolicy.
+	AI_Output			(self, other,"STT_301_IAN_Exit_Info_13_02"); //Nie sprawiaj Å¼adnych kÅ‚opotÃ³w.
 	
 	AI_StopProcessInfos	( self );
 };
@@ -33,7 +33,7 @@ instance  STT_301_IAN_HI (C_INFO)
 	information		= STT_301_IAN_HI_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "To ty jesteœ Ian, szef tej kopalni?"; 
+	description		= "To ty jesteÅ› Ian, szef tej kopalni?"; 
 };
 
 FUNC int  STT_301_IAN_HI_Condition()
@@ -45,8 +45,8 @@ FUNC int  STT_301_IAN_HI_Condition()
 };
 FUNC void  STT_301_IAN_HI_Info()
 {
-	AI_Output			(other, self,"STT_301_IAN_HI_Info_15_01"); //To ty jesteœ Ian, szef tej kopalni?
-	AI_Output			(self, other,"STT_301_IAN_HI_Info_13_02"); //Tak, to ja. A to moja kopalnia, wiêc lepiej nie próbuj niczego g³upiego.
+	AI_Output			(other, self,"STT_301_IAN_HI_Info_15_01"); //To ty jesteÅ› Ian, szef tej kopalni?
+	AI_Output			(self, other,"STT_301_IAN_HI_Info_13_02"); //Tak, to ja. A to moja kopalnia, wiÄ™c lepiej nie prÃ³buj niczego gÅ‚upiego.
 }; 
 // ***************** Infos *****************************
 instance STT_301_IAN_GOMEZ  (C_INFO)
@@ -56,7 +56,7 @@ instance STT_301_IAN_GOMEZ  (C_INFO)
 	information		= STT_301_IAN_GOMEZ_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Myœla³em, ¿e to kopalnia Gomeza?"; 
+	description		= "MyÅ›laÅ‚em, Å¼e to kopalnia Gomeza?"; 
 };
 
 FUNC int  STT_301_IAN_GOMEZ_Condition()
@@ -69,8 +69,8 @@ FUNC int  STT_301_IAN_GOMEZ_Condition()
 };
 FUNC void  STT_301_IAN_GOMEZ_Info()
 {
-	AI_Output			(other, self,"STT_301_IAN_GOMEZ_Info_15_01"); //Myœla³em, ¿e to kopalnia Gomeza?
-	AI_Output			(self, other,"STT_301_IAN_GOMEZ_Info_13_02"); //No có¿, oczywiœcie, kopalnia nale¿y do Starego Obozu. Ale tutaj, pod ziemi¹, jest tylko jeden szef - ja!
+	AI_Output			(other, self,"STT_301_IAN_GOMEZ_Info_15_01"); //MyÅ›laÅ‚em, Å¼e to kopalnia Gomeza?
+	AI_Output			(self, other,"STT_301_IAN_GOMEZ_Info_13_02"); //No cÃ³Å¼, oczywiÅ›cie, kopalnia naleÅ¼y do Starego Obozu. Ale tutaj, pod ziemiÄ…, jest tylko jeden szef - ja!
 }; 
 // ***************** Infos *****************************
 instance  STT_301_IAN_ORE (C_INFO)
@@ -80,7 +80,7 @@ instance  STT_301_IAN_ORE (C_INFO)
 	information		= STT_301_IAN_ORE_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Mo¿esz mi opowiedzieæ o wydobyciu rudy?"; 
+	description		= "MoÅ¼esz mi opowiedzieÄ‡ o wydobyciu rudy?"; 
 };
 
 FUNC int  STT_301_IAN_ORE_Condition()
@@ -93,9 +93,9 @@ FUNC int  STT_301_IAN_ORE_Condition()
 };
 FUNC void  STT_301_IAN_ORE_Info()
 {
-	AI_Output			(other, self,"STT_301_IAN_ORE_Info_15_01"); //Mo¿esz mi opowiedzieæ o wydobyciu rudy?
-	AI_Output			(self, other,"STT_301_IAN_ORE_Info_13_02"); //Kopiemy dniem i noc¹. Dziêki temu wydobywamy oko³o 200 worków rudy na miesi¹c, plus jakieœ 20 worków, które od razu zostaj¹ przetopione.
-	AI_Output			(self, other,"STT_301_IAN_ORE_Info_13_03"); //Z rudy, któr¹ dostarczamy królowi mo¿na by wykuæ orê¿ dla nie lada armii.
+	AI_Output			(other, self,"STT_301_IAN_ORE_Info_15_01"); //MoÅ¼esz mi opowiedzieÄ‡ o wydobyciu rudy?
+	AI_Output			(self, other,"STT_301_IAN_ORE_Info_13_02"); //Kopiemy dniem i nocÄ…. DziÄ™ki temu wydobywamy okoÅ‚o 200 workÃ³w rudy na miesiÄ…c, plus jakieÅ› 20 workÃ³w, ktÃ³re od razu zostajÄ… przetopione.
+	AI_Output			(self, other,"STT_301_IAN_ORE_Info_13_03"); //Z rudy, ktÃ³rÄ… dostarczamy krÃ³lowi moÅ¼na by wykuÄ‡ orÄ™Å¼ dla nie lada armii.
 	
 }; 
 // ***************** Infos *****************************   
@@ -106,7 +106,7 @@ instance  STT_301_IAN_MORE (C_INFO)
 	information		= STT_301_IAN_MORE_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "S³ysza³em, ¿e ruda ma w³aœciwoœci magiczne. Opowiedz mi o tym."; 
+	description		= "SÅ‚yszaÅ‚em, Å¼e ruda ma wÅ‚aÅ›ciwoÅ›ci magiczne. Opowiedz mi o tym."; 
 };
 
 FUNC int  STT_301_IAN_MORE_Condition()
@@ -117,9 +117,9 @@ FUNC int  STT_301_IAN_MORE_Condition()
 
 FUNC void  STT_301_IAN_MORE_Info()
 {
-	AI_Output			(other, self,"STT_301_IAN_MORE_Info_15_01"); //S³ysza³em, ¿e ruda ma w³aœciwoœci magiczne. Opowiedz mi o tym.
-	AI_Output			(self, other,"STT_301_IAN_MORE_Info_13_02"); //Tak, nasza ruda rzeczywiœcie posiada w³aœciwoœci magiczne. Wykuta z niej broñ nigdy siê nie psuje, a miecze i topory s¹ ostrzejsze, ni¿ te wykute ze stali.
-	AI_Output			(self, other,"STT_301_IAN_MORE_Info_13_03"); //Ka¿da armia wyposa¿ona w taki orê¿ ma powa¿n¹ przewagê w boju.
+	AI_Output			(other, self,"STT_301_IAN_MORE_Info_15_01"); //SÅ‚yszaÅ‚em, Å¼e ruda ma wÅ‚aÅ›ciwoÅ›ci magiczne. Opowiedz mi o tym.
+	AI_Output			(self, other,"STT_301_IAN_MORE_Info_13_02"); //Tak, nasza ruda rzeczywiÅ›cie posiada wÅ‚aÅ›ciwoÅ›ci magiczne. Wykuta z niej broÅ„ nigdy siÄ™ nie psuje, a miecze i topory sÄ… ostrzejsze, niÅ¼ te wykute ze stali.
+	AI_Output			(self, other,"STT_301_IAN_MORE_Info_13_03"); //KaÅ¼da armia wyposaÅ¼ona w taki orÄ™Å¼ ma powaÅ¼nÄ… przewagÄ™ w boju.
 	
 };   
 // ***************** Infos *****************************  
@@ -130,7 +130,7 @@ instance  STT_301_IAN_MAGIC (C_INFO)
 	information		= STT_301_IAN_MAGIC_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Opowiedz mi coœ jeszcze o rudzie."; 
+	description		= "Opowiedz mi coÅ› jeszcze o rudzie."; 
 };
 
 FUNC int  STT_301_IAN_MAGIC_Condition()
@@ -141,9 +141,9 @@ FUNC int  STT_301_IAN_MAGIC_Condition()
 
 FUNC void  STT_301_IAN_MAGIC_Info()
 {
-	AI_Output			(other, self,"STT_301_IAN_MAGIC_Info_15_01"); //Opowiedz mi coœ jeszcze o rudzie.
-	AI_Output			(self, other,"STT_301_IAN_MAGIC_Info_13_02"); //Niestety, magiczne w³aœciwoœci rudy zanikaj¹ podczas przetapiania. W hutach Nordmaru znaj¹ odpowiednie techniki przetapiania.
-	AI_Output			(self, other,"STT_301_IAN_MAGIC_Info_13_03"); //Ale nawet bez mocy magicznych, broñ wykonana z naszej rudy jest bardziej wytrzyma³a i zadaje wiêksze obra¿enia ni¿ zwyk³y orê¿.
+	AI_Output			(other, self,"STT_301_IAN_MAGIC_Info_15_01"); //Opowiedz mi coÅ› jeszcze o rudzie.
+	AI_Output			(self, other,"STT_301_IAN_MAGIC_Info_13_02"); //Niestety, magiczne wÅ‚aÅ›ciwoÅ›ci rudy zanikajÄ… podczas przetapiania. W hutach Nordmaru znajÄ… odpowiednie techniki przetapiania.
+	AI_Output			(self, other,"STT_301_IAN_MAGIC_Info_13_03"); //Ale nawet bez mocy magicznych, broÅ„ wykonana z naszej rudy jest bardziej wytrzymaÅ‚a i zadaje wiÄ™ksze obraÅ¼enia niÅ¼ zwykÅ‚y orÄ™Å¼.
 	
 };   
 // ***************** Infos *****************************   
@@ -169,11 +169,11 @@ FUNC int  STT_301_IAN_MINE_Condition()
 func void  STT_301_IAN_MINE_Info()
 {
 	AI_Output			(other, self,"STT_301_IAN_MINE_Info_15_01"); //Opowiedz mi o kopalni.
-	AI_Output			(self, other,"STT_301_IAN_MINE_Info_13_02"); //Jeœli chcesz siê tu trochê rozejrzeæ, to radzê ci dobrze uwa¿aæ. W jaskiniach kryj¹ siê pe³zacze. Najlepiej trzymaj siê g³ównego szybu.
-	AI_Output			(self, other,"STT_301_IAN_MINE_Info_13_03"); //I nie przeszkadzaj Œwi¹tynnym Stra¿nikom. Chocia¿ przez wiêkszoœæ czasu zbijaj¹ b¹ki, to najlepsi sprzymierzeñcy, jakich mo¿na sobie wyobraziæ podczas starcia z pe³zaczami.
-	AI_Output			(other, self,"STT_301_IAN_MINE_Info_15_04"); //Postaram siê o tym pamiêtaæ.
+	AI_Output			(self, other,"STT_301_IAN_MINE_Info_13_02"); //JeÅ›li chcesz siÄ™ tu trochÄ™ rozejrzeÄ‡, to radzÄ™ ci dobrze uwaÅ¼aÄ‡. W jaskiniach kryjÄ… siÄ™ peÅ‚zacze. Najlepiej trzymaj siÄ™ gÅ‚Ã³wnego szybu.
+	AI_Output			(self, other,"STT_301_IAN_MINE_Info_13_03"); //I nie przeszkadzaj ÅšwiÄ…tynnym StraÅ¼nikom. ChociaÅ¼ przez wiÄ™kszoÅ›Ä‡ czasu zbijajÄ… bÄ…ki, to najlepsi sprzymierzeÅ„cy, jakich moÅ¼na sobie wyobraziÄ‡ podczas starcia z peÅ‚zaczami.
+	AI_Output			(other, self,"STT_301_IAN_MINE_Info_15_04"); //Postaram siÄ™ o tym pamiÄ™taÄ‡.
 	AI_Output			(self, other,"STT_301_IAN_MINE_Info_13_05"); //Mam jeszcze sporo roboty. A, i nie przeszkadzaj w pracy moim ludziom!
-	AI_Output			(other, self,"STT_301_IAN_MINE_Info_15_06"); //Tylko siê tu trochê rozejrzê.
+	AI_Output			(other, self,"STT_301_IAN_MINE_Info_15_06"); //Tylko siÄ™ tu trochÄ™ rozejrzÄ™.
 };
 /*------------------------------------------------------------------------
 					BRING LIST									
@@ -186,7 +186,7 @@ instance  STT_301_IAN_WANTLIST (C_INFO)
 	information		= STT_301_IAN_WANTLIST_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Przychodzê tu po listê dla Obozu."; 
+	description		= "PrzychodzÄ™ tu po listÄ™ dla Obozu."; 
 };
 
 FUNC int  STT_301_IAN_WANTLIST_Condition()
@@ -200,8 +200,8 @@ FUNC int  STT_301_IAN_WANTLIST_Condition()
 };
 FUNC void  STT_301_IAN_WANTLIST_Info()
 {
-	AI_Output			(other, self,"STT_301_IAN_WANTLIST_Info_15_01"); //Przychodzê tu po listê dla Obozu.
-	AI_Output			(self, other,"STT_301_IAN_WANTLIST_Info_13_02"); //Ka¿dy mo¿e tak powiedzieæ. Spadaj.
+	AI_Output			(other, self,"STT_301_IAN_WANTLIST_Info_15_01"); //PrzychodzÄ™ tu po listÄ™ dla Obozu.
+	AI_Output			(self, other,"STT_301_IAN_WANTLIST_Info_13_02"); //KaÅ¼dy moÅ¼e tak powiedzieÄ‡. Spadaj.
 	 
 };  
 /*------------------------------------------------------------------------
@@ -215,7 +215,7 @@ instance  STT_301_IAN_GETLIST (C_INFO)
 	information		= STT_301_IAN_GETLIST_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Przysy³a mnie Diego. Mam odebraæ listê."; 
+	description		= "PrzysyÅ‚a mnie Diego. Mam odebraÄ‡ listÄ™."; 
 };
 
 FUNC int  STT_301_IAN_GETLIST_Condition()
@@ -229,9 +229,9 @@ FUNC int  STT_301_IAN_GETLIST_Condition()
 };
 FUNC void  STT_301_IAN_GETLIST_Info()
 {
-	AI_Output			(other, self,"STT_301_IAN_GETLIST_Info_15_01"); //Przysy³a mnie Diego. Mam odebraæ listê.
-	AI_Output			(self, other,"STT_301_IAN_GETLIST_Info_13_02"); //W porz¹dku. Oto i ona. Powiedz im, ¿eby siê pospieszyli z dostawami.
-	B_LogEntry  (CH1_BringList,"Ian bez sprzeciwu wrêczy³ mi listê zamówieñ.");
+	AI_Output			(other, self,"STT_301_IAN_GETLIST_Info_15_01"); //PrzysyÅ‚a mnie Diego. Mam odebraÄ‡ listÄ™.
+	AI_Output			(self, other,"STT_301_IAN_GETLIST_Info_13_02"); //W porzÄ…dku. Oto i ona. Powiedz im, Å¼eby siÄ™ pospieszyli z dostawami.
+	B_LogEntry  (CH1_BringList,"Ian bez sprzeciwu wrÄ™czyÅ‚ mi listÄ™ zamÃ³wieÅ„.");
 	B_GiveInvItems	(self,hero,TheList,1);
 };  
 // **************************************************************************
@@ -245,7 +245,7 @@ instance  STT_301_IAN_NEST (C_INFO)
 	information	=  STT_301_IAN_NEST_Info;
 	important	= 0;	
 	permanent	= 0;
-	description = "Gdzieœ tutaj musi byæ gniazdo pe³zaczy.";
+	description = "GdzieÅ› tutaj musi byÄ‡ gniazdo peÅ‚zaczy.";
 };                       
 
 FUNC int  STT_301_IAN_NEST_Condition()
@@ -258,14 +258,14 @@ FUNC int  STT_301_IAN_NEST_Condition()
 };
 FUNC VOID  STT_301_IAN_NEST_Info()
 {
-	AI_Output			(other, self,"STT_301_IAN_NEST_Info_15_01"); //Gdzieœ tutaj musi byæ gniazdo pe³zaczy.
-	AI_Output			(self, other,"STT_301_IAN_NEST_Info_13_02"); //Za³o¿ê siê, ¿e jest tu przynajmniej z tuzin gniazd.
-	AI_Output			(other, self,"STT_301_IAN_NEST_Info_15_03"); //S³uchaj, muszê natychmiast iœæ do tego gniazda...
-	AI_Output			(self, other,"STT_301_IAN_NEST_Info_13_04"); //Nie mam teraz na to czasu! Parê godzin temu zepsu³a siê nasza m³ocarnia. Ko³o zêbate pêk³o w drzazgi.
-	AI_Output			(self, other,"STT_301_IAN_NEST_Info_13_05"); //Nie mam pojêcia, gdzie znajdê nowe.
-	AI_Output			(self, other,"STT_301_IAN_NEST_Info_13_06"); //Przynieœ mi ko³o zêbate. Wtedy zajmê siê twoim problemem.
+	AI_Output			(other, self,"STT_301_IAN_NEST_Info_15_01"); //GdzieÅ› tutaj musi byÄ‡ gniazdo peÅ‚zaczy.
+	AI_Output			(self, other,"STT_301_IAN_NEST_Info_13_02"); //ZaÅ‚oÅ¼Ä™ siÄ™, Å¼e jest tu przynajmniej z tuzin gniazd.
+	AI_Output			(other, self,"STT_301_IAN_NEST_Info_15_03"); //SÅ‚uchaj, muszÄ™ natychmiast iÅ›Ä‡ do tego gniazda...
+	AI_Output			(self, other,"STT_301_IAN_NEST_Info_13_04"); //Nie mam teraz na to czasu! ParÄ™ godzin temu zepsuÅ‚a siÄ™ nasza mÅ‚ocarnia. KoÅ‚o zÄ™bate pÄ™kÅ‚o w drzazgi.
+	AI_Output			(self, other,"STT_301_IAN_NEST_Info_13_05"); //Nie mam pojÄ™cia, gdzie znajdÄ™ nowe.
+	AI_Output			(self, other,"STT_301_IAN_NEST_Info_13_06"); //PrzynieÅ› mi koÅ‚o zÄ™bate. Wtedy zajmÄ™ siÄ™ twoim problemem.
 
-	B_LogEntry		(CH2_MCEggs,"Ian, szef Starej Kopalni, nie pomo¿e mi w odnalezieniu gniazda pe³zaczy. Mam za to przynieœæ mu ko³o zêbate do zepsutego rozdrabniacza rudy. Podobno mogê je znaleŸæ w którymœ z opuszczonych bocznych tuneli.");
+	B_LogEntry		(CH2_MCEggs,"Ian, szef Starej Kopalni, nie pomoÅ¼e mi w odnalezieniu gniazda peÅ‚zaczy. Mam za to przynieÅ›Ä‡ mu koÅ‚o zÄ™bate do zepsutego rozdrabniacza rudy. Podobno mogÄ™ je znaleÅºÄ‡ w ktÃ³rymÅ› z opuszczonych bocznych tuneli.");
 
 	Ian_gearwheel = LOG_RUNNING;
 };
@@ -277,7 +277,7 @@ instance  STT_301_IAN_GEAR_RUN (C_INFO)
 	information	=  STT_301_IAN_GEAR_RUN_Info;
 	important	= 0;	
 	permanent	= 0;
-	description = "Ko³o zêbate? A gdzie ja niby mam je znaleŸæ?";
+	description = "KoÅ‚o zÄ™bate? A gdzie ja niby mam je znaleÅºÄ‡?";
 };                       
 
 FUNC int  STT_301_IAN_GEAR_RUN_Condition()
@@ -292,9 +292,9 @@ FUNC int  STT_301_IAN_GEAR_RUN_Condition()
 };
 FUNC VOID  STT_301_IAN_GEAR_RUN_Info()
 {
-	AI_Output			(other, self,"STT_301_IAN_GEAR_RUN_Info_15_01"); //Ko³o zêbate? A gdzie ja niby mam je znaleŸæ?
-	AI_Output			(self, other,"STT_301_IAN_GEAR_RUN_Info_13_02"); //Nie mam pojêcia. Jestem równie bezradny co ty!
-	AI_Output			(self, other,"STT_301_IAN_GEAR_RUN_Info_13_03"); //W którymœ z bocznych szybów stoi zepsuta m³ocarnia. Mo¿e tam coœ znajdziesz.
+	AI_Output			(other, self,"STT_301_IAN_GEAR_RUN_Info_15_01"); //KoÅ‚o zÄ™bate? A gdzie ja niby mam je znaleÅºÄ‡?
+	AI_Output			(self, other,"STT_301_IAN_GEAR_RUN_Info_13_02"); //Nie mam pojÄ™cia. Jestem rÃ³wnie bezradny co ty!
+	AI_Output			(self, other,"STT_301_IAN_GEAR_RUN_Info_13_03"); //W ktÃ³rymÅ› z bocznych szybÃ³w stoi zepsuta mÅ‚ocarnia. MoÅ¼e tam coÅ› znajdziesz.
 };
 
 // ******************************MISSION SUCCESS********************************************  
@@ -305,7 +305,7 @@ instance  STT_301_IAN_GEAR_SUC (C_INFO)
 	information	=  STT_301_IAN_GEAR_SUC_Info;
 	important	= 0;	
 	permanent	= 0;
-	description = "Mam ko³o zêbate.";
+	description = "Mam koÅ‚o zÄ™bate.";
 };                       
 
 FUNC int  STT_301_IAN_GEAR_SUC_Condition()
@@ -328,12 +328,12 @@ FUNC VOID  STT_301_IAN_GEAR_SUC_Info()
 	Sklave = Hlp_GetNpc	(ORC_2001_SKLAVE);
 	Npc_ExchangeRoutine (Sklave,"Stomper");
 
-	AI_Output			(other, self,"STT_301_IAN_GEAR_SUC_Info_15_01"); //Mam ko³o zêbate.
-	AI_Output			(self, other,"STT_301_IAN_GEAR_SUC_Info_13_02"); //Dobra robota! Powinno dzia³aæ. No a teraz wróæmy do twojej sprawy. Szukasz gniazda pe³zaczy... Hmmm...
-	AI_Output			(self, other,"STT_301_IAN_GEAR_SUC_Info_13_03"); //ZnajdŸ Asghana i powiedz mu, ¿eby otworzy³ ci drzwi. Bêdziesz móg³ rozejrzeæ siê po zamkniêtych korytarzach.
-	AI_Output			(self, other,"STT_301_IAN_GEAR_SUC_Info_13_04"); //Powiedz mu "Wszystko bêdzie w porz¹dku". Po tym pozna, ¿e to ja ciê przysy³am.
+	AI_Output			(other, self,"STT_301_IAN_GEAR_SUC_Info_15_01"); //Mam koÅ‚o zÄ™bate.
+	AI_Output			(self, other,"STT_301_IAN_GEAR_SUC_Info_13_02"); //Dobra robota! Powinno dziaÅ‚aÄ‡. No a teraz wrÃ³Ä‡my do twojej sprawy. Szukasz gniazda peÅ‚zaczy... Hmmm...
+	AI_Output			(self, other,"STT_301_IAN_GEAR_SUC_Info_13_03"); //ZnajdÅº Asghana i powiedz mu, Å¼eby otworzyÅ‚ ci drzwi. BÄ™dziesz mÃ³gÅ‚ rozejrzeÄ‡ siÄ™ po zamkniÄ™tych korytarzach.
+	AI_Output			(self, other,"STT_301_IAN_GEAR_SUC_Info_13_04"); //Powiedz mu "Wszystko bÄ™dzie w porzÄ…dku". Po tym pozna, Å¼e to ja ciÄ™ przysyÅ‚am.
 
-	B_LogEntry		(CH2_MCEggs,"Przynios³em Ianowi ko³o zêbate, o które prosi³. Teraz mam powiedzieæ Asghanowi, ¿e WSZYSTKO BÊDZIE W PORZ¥DKU. Wtedy Stra¿nik otworzy dla mnie bramê do opuszczonych szybów.");
+	B_LogEntry		(CH2_MCEggs,"PrzyniosÅ‚em Ianowi koÅ‚o zÄ™bate, o ktÃ³re prosiÅ‚. Teraz mam powiedzieÄ‡ Asghanowi, Å¼e WSZYSTKO BÄ˜DZIE W PORZÄ„DKU. Wtedy StraÅ¼nik otworzy dla mnie bramÄ™ do opuszczonych szybÃ³w.");
 };
 
 // ******************************GOTO ASGHAN********************************************  
@@ -344,7 +344,7 @@ instance  STT_301_IAN_GOTOASGHAN (C_INFO)
 	information	=  STT_301_IAN_GOTOASGHAN_Info;
 	important	= 0;	
 	permanent	= 0;
-	description = "Nadal szukam gniazda pe³zaczy.";
+	description = "Nadal szukam gniazda peÅ‚zaczy.";
 };                       
 
 FUNC int  STT_301_IAN_GOTOASGHAN_Condition()
@@ -357,10 +357,10 @@ FUNC int  STT_301_IAN_GOTOASGHAN_Condition()
 };
 FUNC VOID  STT_301_IAN_GOTOASGHAN_Info()
 {
-	AI_Output			(other, self,"STT_301_IAN_GOTOASGHAN_Info_15_01"); //Nadal szukam gniazda pe³zaczy.
-	AI_Output			(self, other,"STT_301_IAN_GOTOASGHAN_Info_13_02"); //Mówi³em ci ju¿ - idŸ do Asghana. To dowódca stra¿ników. Znajdziesz go gdzieœ na najni¿szym poziomie.
+	AI_Output			(other, self,"STT_301_IAN_GOTOASGHAN_Info_15_01"); //Nadal szukam gniazda peÅ‚zaczy.
+	AI_Output			(self, other,"STT_301_IAN_GOTOASGHAN_Info_13_02"); //MÃ³wiÅ‚em ci juÅ¼ - idÅº do Asghana. To dowÃ³dca straÅ¼nikÃ³w. Znajdziesz go gdzieÅ› na najniÅ¼szym poziomie.
 
-	B_LogEntry		(CH2_MCEggs,"Jeœli chcê odnaleŸæ gniazdo pe³zaczy, powinienem porozmawiaæ z Asghanem.");
+	B_LogEntry		(CH2_MCEggs,"JeÅ›li chcÄ™ odnaleÅºÄ‡ gniazdo peÅ‚zaczy, powinienem porozmawiaÄ‡ z Asghanem.");
 };
 
 //--SPIELER HAT DIE EIER AM START-------------------------
@@ -371,7 +371,7 @@ instance  STT_301_IAN_AFTERALL (C_INFO)
 	information	=  STT_301_IAN_AFTERALL_Info;
 	important	= 0;	
 	permanent	= 0;
-	description = "Znalaz³em gniazdo!";
+	description = "ZnalazÅ‚em gniazdo!";
 };                       
 
 FUNC int  STT_301_IAN_AFTERALL_Condition()
@@ -383,10 +383,10 @@ FUNC int  STT_301_IAN_AFTERALL_Condition()
 };
 FUNC VOID  STT_301_IAN_AFTERALL_Info()
 {
-	AI_Output			(other, self,"STT_301_IAN_AFTERALL_Info_15_01"); //Znalaz³em gniazdo!
-	AI_Output			(self, other,"STT_301_IAN_AFTERALL_Info_13_02"); //No to nareszcie bêdziemy tu mieli chwilê spokoju. Ha ha ha!
-	AI_Output			(self, other,"STT_301_IAN_AFTERALL_Info_13_03"); //Bez obrazy. Dobra robota, ch³opcze.
-	AI_Output			(self, other,"STT_301_IAN_AFTERALL_Info_13_04"); //Masz. WeŸ tê skrzynkê piwa. Zas³u¿y³eœ.
+	AI_Output			(other, self,"STT_301_IAN_AFTERALL_Info_15_01"); //ZnalazÅ‚em gniazdo!
+	AI_Output			(self, other,"STT_301_IAN_AFTERALL_Info_13_02"); //No to nareszcie bÄ™dziemy tu mieli chwilÄ™ spokoju. Ha ha ha!
+	AI_Output			(self, other,"STT_301_IAN_AFTERALL_Info_13_03"); //Bez obrazy. Dobra robota, chÅ‚opcze.
+	AI_Output			(self, other,"STT_301_IAN_AFTERALL_Info_13_04"); //Masz. WeÅº tÄ™ skrzynkÄ™ piwa. ZasÅ‚uÅ¼yÅ‚eÅ›.
 	CreateInvItems		(self, ItFo_OM_Beer_01,6);
 	B_GiveInvItems      (self, hero, ItFo_OM_Beer_01,6);
 };
@@ -399,7 +399,7 @@ instance  STT_301_IAN_NOTENOUGH (C_INFO)
 	information	=  STT_301_IAN_NOTENOUGH_Info;
 	important	= 0;	
 	permanent	= 0;
-	description = "Znalaz³em gniazdo! I jaja z³o¿one przez królow¹ pe³zaczy!";
+	description = "ZnalazÅ‚em gniazdo! I jaja zÅ‚oÅ¼one przez krÃ³lowÄ… peÅ‚zaczy!";
 };                       
 
 FUNC int  STT_301_IAN_NOTENOUGH_Condition()
@@ -412,6 +412,6 @@ FUNC int  STT_301_IAN_NOTENOUGH_Condition()
 };
 FUNC VOID  STT_301_IAN_NOTENOUGH_Info()
 {
-	AI_Output			(other, self,"STT_301_IAN_NOTENOUGH_Info_15_01"); //Znalaz³em gniazdo! I jaja z³o¿one przez królow¹ pe³zaczy!
-	AI_Output			(self, other,"STT_301_IAN_NOTENOUGH_Info_13_02"); //Co? Tylko tyle tych jaj? A zreszt¹... Udowodni³eœ, ¿e twardy z ciebie goœæ.
+	AI_Output			(other, self,"STT_301_IAN_NOTENOUGH_Info_15_01"); //ZnalazÅ‚em gniazdo! I jaja zÅ‚oÅ¼one przez krÃ³lowÄ… peÅ‚zaczy!
+	AI_Output			(self, other,"STT_301_IAN_NOTENOUGH_Info_13_02"); //Co? Tylko tyle tych jaj? A zresztÄ…... UdowodniÅ‚eÅ›, Å¼e twardy z ciebie goÅ›Ä‡.
 };

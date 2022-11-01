@@ -33,7 +33,7 @@ INSTANCE Info_Swiney_Hello(C_INFO)
 	condition	= Info_Swiney_Hello_Condition;
 	information	= Info_Swiney_Hello_Info;
 	permanent	= 0;
-	description = "Kim jesteœ?";
+	description = "Kim jesteÅ›?";
 };                       
 
 FUNC INT Info_Swiney_Hello_Condition()
@@ -43,13 +43,13 @@ FUNC INT Info_Swiney_Hello_Condition()
 
 FUNC VOID Info_Swiney_Hello_Info()
 {	
-	AI_Output (other, self,"Info_Swiney_Hello_15_00"); //Kim jesteœ?
-	AI_Output (self, other,"Info_Swiney_Hello_09_01"); //Jestem najlepszym in¿ynierem, jakiego ta przeklêta kolonia kiedykolwiek widzia³a, ch³opcze.
-	AI_Output (self, other,"Info_Swiney_Hello_09_02"); //Pilnujê, ¿eby nasi ch³opcy nie œci¹gnêli sobie na g³owy sterty kamieni kopi¹c w niew³aœciwym miejscu.
+	AI_Output (other, self,"Info_Swiney_Hello_15_00"); //Kim jesteÅ›?
+	AI_Output (self, other,"Info_Swiney_Hello_09_01"); //Jestem najlepszym inÅ¼ynierem, jakiego ta przeklÄ™ta kolonia kiedykolwiek widziaÅ‚a, chÅ‚opcze.
+	AI_Output (self, other,"Info_Swiney_Hello_09_02"); //PilnujÄ™, Å¼eby nasi chÅ‚opcy nie Å›ciÄ…gnÄ™li sobie na gÅ‚owy sterty kamieni kopiÄ…c w niewÅ‚aÅ›ciwym miejscu.
 };
 
 // ************************************************************
-// 						Schürfer
+// 						SchÃ¼rfer
 // ************************************************************
 
 INSTANCE Info_Swiney_Schuerfer(C_INFO)
@@ -59,7 +59,7 @@ INSTANCE Info_Swiney_Schuerfer(C_INFO)
 	condition	= Info_Swiney_Schuerfer_Condition;
 	information	= Info_Swiney_Schuerfer_Info;
 	permanent	= 0;
-	description = "Chcia³bym do was do³¹czyæ, jako Kret.";
+	description = "ChciaÅ‚bym do was doÅ‚Ä…czyÄ‡, jako Kret.";
 };                       
 
 FUNC INT Info_Swiney_Schuerfer_Condition()
@@ -72,12 +72,12 @@ FUNC INT Info_Swiney_Schuerfer_Condition()
 
 FUNC VOID Info_Swiney_Schuerfer_Info()
 {	
-	AI_Output (other, self,"Info_Swiney_Schuerfer_15_00"); //Chcia³bym do was do³¹czyæ, jako Kret.
-	AI_Output (self, other,"Info_Swiney_Schuerfer_09_01"); //Czy¿by? Tylko nie oczekuj zbyt wiele po tej robocie. Trzy porcje ry¿u na dzieñ. Resztê musisz sobie sam za³atwiæ.
-	AI_Output (self, other,"Info_Swiney_Schuerfer_09_02"); //Wiesz dlaczego odwalamy ca³¹ tê brudn¹ robotê? ¯eby pewnego dnia móc wyjœæ na wolnoœæ z tego przeklêtego wiêzienia.
-	AI_Output (self, other,"Info_Swiney_Schuerfer_09_03"); //Ca³y nasz urobek jest sk³adowany na wielkim kopcu. Raz w miesi¹cu ka¿dy z nas dostaje 50 bry³ek, ¿eby móc siê porz¹dnie upiæ.
-	AI_Output (self, other,"Info_Swiney_Schuerfer_09_04"); //To najwa¿niejsze rzeczy, które powinieneœ wiedzieæ.
-	AI_Output (self, other,"Info_Swiney_Schuerfer_09_05"); //Masz chocia¿ jakieœ doœwiadczenie w tej robocie?
+	AI_Output (other, self,"Info_Swiney_Schuerfer_15_00"); //ChciaÅ‚bym do was doÅ‚Ä…czyÄ‡, jako Kret.
+	AI_Output (self, other,"Info_Swiney_Schuerfer_09_01"); //CzyÅ¼by? Tylko nie oczekuj zbyt wiele po tej robocie. Trzy porcje ryÅ¼u na dzieÅ„. ResztÄ™ musisz sobie sam zaÅ‚atwiÄ‡.
+	AI_Output (self, other,"Info_Swiney_Schuerfer_09_02"); //Wiesz dlaczego odwalamy caÅ‚Ä… tÄ™ brudnÄ… robotÄ™? Å»eby pewnego dnia mÃ³c wyjÅ›Ä‡ na wolnoÅ›Ä‡ z tego przeklÄ™tego wiÄ™zienia.
+	AI_Output (self, other,"Info_Swiney_Schuerfer_09_03"); //CaÅ‚y nasz urobek jest skÅ‚adowany na wielkim kopcu. Raz w miesiÄ…cu kaÅ¼dy z nas dostaje 50 bryÅ‚ek, Å¼eby mÃ³c siÄ™ porzÄ…dnie upiÄ‡.
+	AI_Output (self, other,"Info_Swiney_Schuerfer_09_04"); //To najwaÅ¼niejsze rzeczy, ktÃ³re powinieneÅ› wiedzieÄ‡.
+	AI_Output (self, other,"Info_Swiney_Schuerfer_09_05"); //Masz chociaÅ¼ jakieÅ› doÅ›wiadczenie w tej robocie?
 	
 	Info_ClearChoices(Info_Swiney_Schuerfer);
 	Info_AddChoice   (Info_Swiney_Schuerfer,"Nie.",Info_Swiney_Schuerfer_Nein);
@@ -87,7 +87,7 @@ FUNC VOID Info_Swiney_Schuerfer_Info()
 func void Info_Swiney_Schuerfer_Ja()
 {
 	AI_Output (other, self,"Info_Swiney_Schuerfer_Ja_15_00"); //Tak.
-	AI_Output (self, other,"Info_Swiney_Schuerfer_Ja_09_01"); //To œwietnie! Zatem wiesz, na co nale¿y uwa¿aæ. Masz tu swój strój roboczy. Kilof musisz znaleŸæ sobie sam. Mi³ej zabawy.
+	AI_Output (self, other,"Info_Swiney_Schuerfer_Ja_09_01"); //To Å›wietnie! Zatem wiesz, na co naleÅ¼y uwaÅ¼aÄ‡. Masz tu swÃ³j strÃ³j roboczy. Kilof musisz znaleÅºÄ‡ sobie sam. MiÅ‚ej zabawy.
 	CreateInvItem (self, SFB_ARMOR_L);
 	B_GiveInvItems(self, hero, SFB_ARMOR_L, 1);
 	
@@ -97,10 +97,10 @@ func void Info_Swiney_Schuerfer_Ja()
 func void Info_Swiney_Schuerfer_Nein()
 {
 	AI_Output (other, self,"Info_Swiney_Schuerfer_Nein_15_00"); //Nie.
-	AI_Output (self, other,"Info_Swiney_Schuerfer_Nein_09_01"); //No jasne! Dlaczego to zawsze ja muszê was uœwiadamiaæ. S³uchaj uwa¿nie: weŸ te ciuchy i za³ó¿ je na siebie - tutaj.
-	AI_Output (self, other,"Info_Swiney_Schuerfer_Nein_09_02"); //Gdyby kawa³ek rudy spad³ ci na bos¹ stopê, zosta³byœ kalek¹ do koñca ¿ycia. Oczywiœcie wtedy by³byœ dla nas znacznie mniej przydatny.
-	AI_Output (self, other,"Info_Swiney_Schuerfer_Nein_09_03"); //Gdzieœ w pobli¿u powinien le¿eæ jakiœ kilof.
-	AI_Output (self, other,"Info_Swiney_Schuerfer_Nein_09_04"); //Oczywiœcie wiele z nim nie zdzia³asz... Mówi siê trudno...
+	AI_Output (self, other,"Info_Swiney_Schuerfer_Nein_09_01"); //No jasne! Dlaczego to zawsze ja muszÄ™ was uÅ›wiadamiaÄ‡. SÅ‚uchaj uwaÅ¼nie: weÅº te ciuchy i zaÅ‚Ã³Å¼ je na siebie - tutaj.
+	AI_Output (self, other,"Info_Swiney_Schuerfer_Nein_09_02"); //Gdyby kawaÅ‚ek rudy spadÅ‚ ci na bosÄ… stopÄ™, zostaÅ‚byÅ› kalekÄ… do koÅ„ca Å¼ycia. OczywiÅ›cie wtedy byÅ‚byÅ› dla nas znacznie mniej przydatny.
+	AI_Output (self, other,"Info_Swiney_Schuerfer_Nein_09_03"); //GdzieÅ› w pobliÅ¼u powinien leÅ¼eÄ‡ jakiÅ› kilof.
+	AI_Output (self, other,"Info_Swiney_Schuerfer_Nein_09_04"); //OczywiÅ›cie wiele z nim nie zdziaÅ‚asz... MÃ³wi siÄ™ trudno...
 	
 	CreateInvItem (self, SFB_ARMOR_L);
 	B_GiveInvItems(self, hero, SFB_ARMOR_L, 1);
@@ -119,7 +119,7 @@ INSTANCE Info_Swiney_PERM(C_INFO)
 	condition	= Info_Swiney_PERM_Condition;
 	information	= Info_Swiney_PERM_Info;
 	permanent	= 1;
-	description = "Jak du¿o rudy uda³o siê wam uzbieraæ do tej pory?";
+	description = "Jak duÅ¼o rudy udaÅ‚o siÄ™ wam uzbieraÄ‡ do tej pory?";
 };                       
 
 FUNC INT Info_Swiney_PERM_Condition()
@@ -132,8 +132,8 @@ FUNC INT Info_Swiney_PERM_Condition()
 
 FUNC VOID Info_Swiney_PERM_Info()
 {	
-	AI_Output (other, self,"Info_Swiney_PERM_15_00"); //Jak du¿o rudy uda³o siê wam uzbieraæ do tej pory?
-	AI_Output (self, other,"Info_Swiney_PERM_09_01"); //Magowie mówi¹, ¿e mamy ju¿ niemal ca³¹ potrzebn¹ iloœæ. Kiedy bêdziesz w Nowym Obozie rzuæ okiem na kopiec.
+	AI_Output (other, self,"Info_Swiney_PERM_15_00"); //Jak duÅ¼o rudy udaÅ‚o siÄ™ wam uzbieraÄ‡ do tej pory?
+	AI_Output (self, other,"Info_Swiney_PERM_09_01"); //Magowie mÃ³wiÄ…, Å¼e mamy juÅ¼ niemal caÅ‚Ä… potrzebnÄ… iloÅ›Ä‡. Kiedy bÄ™dziesz w Nowym Obozie rzuÄ‡ okiem na kopiec.
 	AI_StopProcessInfos	(self);
 };
 

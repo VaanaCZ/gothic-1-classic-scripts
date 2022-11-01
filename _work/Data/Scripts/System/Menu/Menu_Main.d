@@ -36,7 +36,7 @@ instance MENUITEM_MAIN_NEWGAME(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
 	text[0]		= "Nowa gra";
-	text[1]		= "Rozpocznij now¹ przygodê.";  // Kommentar
+	text[1]		= "Rozpocznij nowÄ… przygodÄ™.";  // Kommentar
 	
 	// Positionen  und Dimensionen	
 	posx		= 0;		posy		= MENU_MAIN_Y + MENU_MAIN_DY*0;
@@ -58,7 +58,7 @@ INSTANCE MENUITEM_MAIN_SAVEGAME_LOAD(C_MENU_ITEM_DEF)
 {
 	backpic		=	MENU_ITEM_BACK_PIC;
 	text[0]		=	"Wczytaj";
-	text[1]		=	"Wczytaj zapisan¹ grê.";  // Kommentar
+	text[1]		=	"Wczytaj zapisanÄ… grÄ™.";  // Kommentar
 	
 	// Positionen  und Dimensionen	
 	posx		=  0;		posy		= MENU_MAIN_Y + MENU_MAIN_DY*1;
@@ -74,7 +74,7 @@ instance MENUITEM_MAIN_SAVEGAME_SAVE(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
 	text[0]		= "Zapisz";
-	text[1]		= "Zapisz bie¿¹c¹ grê.";  // Kommentar
+	text[1]		= "Zapisz bieÅ¼Ä…cÄ… grÄ™.";  // Kommentar
 	
 	// Positionen  und Dimensionen
 	posx		= 0;		posy		= MENU_MAIN_Y + MENU_MAIN_DY*2;
@@ -96,7 +96,7 @@ INSTANCE MENUITEM_MAIN_RESUME(C_MENU_ITEM_DEF)
 {
 	backpic		=	MENU_ITEM_BACK_PIC;
 	text[0]		=	"Dalej";
-	text[1]		=   "Powrót do gry.";  // Kommentar
+	text[1]		=   "PowrÃ³t do gry.";  // Kommentar
 	
 	// Position und Dimension
 	posx		=	0;		posy		=	MENU_MAIN_Y + MENU_MAIN_DY*3;
@@ -116,7 +116,7 @@ instance MENUITEM_MAIN_OPTIONS(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
 	text[0]		= "Ustawienia";
-	text[1]		= "Ustawienia dŸwiêku, grafiki i klawiatury.";  // Kommentar
+	text[1]		= "Ustawienia dÅºwiÄ™ku, grafiki i klawiatury.";  // Kommentar
 	
 	// Positionen  und Dimensionen	
 	posx		= 0;		posy		= MENU_MAIN_Y + MENU_MAIN_DY*4;
@@ -133,7 +133,7 @@ instance MENUITEM_MAIN_INTRO(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
 	text[0]		= "Wprowadzenie";
-	text[1]		= "Odtwórz sekwencjê wprowadzaj¹c¹.";
+	text[1]		= "OdtwÃ³rz sekwencjÄ™ wprowadzajÄ…cÄ….";
 	// Positionen  und Dimensione	
 	posx		= 0;		posy		= MENU_MAIN_Y + MENU_MAIN_DY*5;
 	dimx		= 8100;		dimy		=  750;
@@ -148,7 +148,7 @@ INSTANCE MENUITEM_MAIN_CREDITS(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
 	text[0]		= "Autorzy";
-	text[1]		= "Wyœwietl autorów gry.";  // Kommentar
+	text[1]		= "WyÅ›wietl autorÃ³w gry.";  // Kommentar
 	
 	// Positionen  und Dimensionen	
 	posx		= 0;		posy		= MENU_MAIN_Y + MENU_MAIN_DY*6;
@@ -168,8 +168,8 @@ INSTANCE MENUITEM_MAIN_CREDITS(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_MAIN_EXIT(C_MENU_ITEM_DEF) 
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	text[0]		= "Wyjœcie";
-	text[1]		= "Powrót do systemu Windows.";  // Kommentar
+	text[0]		= "WyjÅ›cie";
+	text[1]		= "PowrÃ³t do systemu Windows.";  // Kommentar
 	
 	// Positionen  und Dimensionen
 	posx		= 0;		posy		= MENU_MAIN_Y + MENU_MAIN_DY*7;	

@@ -56,9 +56,9 @@ FUNC INT DIA_Grd_216_First_Condition()
 
 FUNC VOID DIA_Grd_216_First_Info()
 {
-	AI_Output (self, other,"DIA_Grd_216_First_13_00"); //Hej, ty! Chyba ciê tu wczeœniej nie widzia³em!
-	AI_Output (other, self,"DIA_Grd_216_First_15_01"); //Nic dziwnego. Dopiero co tutaj trafi³em.
-	AI_Output (self, other,"DIA_Grd_216_First_13_02"); //To lepiej uwa¿aj! Poza murami jest bardzo niebezpiecznie. Tylko w obozie mo¿esz spaæ spokojnie.
+	AI_Output (self, other,"DIA_Grd_216_First_13_00"); //Hej, ty! Chyba ciÄ™ tu wczeÅ›niej nie widziaÅ‚em!
+	AI_Output (other, self,"DIA_Grd_216_First_15_01"); //Nic dziwnego. Dopiero co tutaj trafiÅ‚em.
+	AI_Output (self, other,"DIA_Grd_216_First_13_02"); //To lepiej uwaÅ¼aj! Poza murami jest bardzo niebezpiecznie. Tylko w obozie moÅ¼esz spaÄ‡ spokojnie.
 };
 
 // **************************************************
@@ -87,19 +87,19 @@ FUNC INT DIA_Grd_216_DustyZoll_Condition()
 
 FUNC VOID DIA_Grd_216_DustyZoll_Info()
 {
-	AI_Output			(self, other,"DIA_Grd_216_Dusty_Zoll_13_00"); //Stój! Dok¹d zabierasz naszego drogiego przyjaciela?
+	AI_Output			(self, other,"DIA_Grd_216_Dusty_Zoll_13_00"); //StÃ³j! DokÄ…d zabierasz naszego drogiego przyjaciela?
 	Info_ClearChoices	(DIA_Grd_216_DustyZoll);
-	Info_AddChoice		(DIA_Grd_216_DustyZoll,"Nie twój interes!",DIA_Grd_216_DustyZoll_PissOff);
-	Info_AddChoice		(DIA_Grd_216_DustyZoll,"Udajemy siê do obozu Bractwa.",DIA_Grd_216_DustyZoll_ToPSI);
+	Info_AddChoice		(DIA_Grd_216_DustyZoll,"Nie twÃ³j interes!",DIA_Grd_216_DustyZoll_PissOff);
+	Info_AddChoice		(DIA_Grd_216_DustyZoll,"Udajemy siÄ™ do obozu Bractwa.",DIA_Grd_216_DustyZoll_ToPSI);
 	if (Npc_HasItems (other,itminugget) >= 100)
 	{
-		Info_AddChoice	(DIA_Grd_216_DustyZoll,"Idziemy siê przespacerowaæ. A oto 100 bry³ek rudy.",DIA_Grd_216_DustyZoll_LittleWalk);
+		Info_AddChoice	(DIA_Grd_216_DustyZoll,"Idziemy siÄ™ przespacerowaÄ‡. A oto 100 bryÅ‚ek rudy.",DIA_Grd_216_DustyZoll_LittleWalk);
 	};
 };
 
 func void DIA_Grd_216_DustyZoll_PissOff()
 {
-	AI_Output			(other, self,"DIA_Grd_216_Dusty_Zoll_PissOff_15_00"); //Nie twój interes!
+	AI_Output			(other, self,"DIA_Grd_216_Dusty_Zoll_PissOff_15_00"); //Nie twÃ³j interes!
 	AI_Output			(self, other,"DIA_Grd_216_Dusty_Zoll_PIssOff_13_00"); //Mam na ten temat nieco inne zdanie!
 	AI_StopProcessInfos	(self);
 	Npc_SetTarget		(self,other);
@@ -108,12 +108,12 @@ func void DIA_Grd_216_DustyZoll_PissOff()
 	B_ExchangeRoutine	(Vlk_524_Dusty,"start");
 	var C_NPC dusty;	dusty = Hlp_GetNpc(Vlk_524_Dusty);
 	dusty.aivar[AIV_PARTYMEMBER] = FALSE;
-	dusty.flags = 0;	// Immortal löschen
+	dusty.flags = 0;	// Immortal lÃ¶schen
 };
 
 func void DIA_Grd_216_DustyZoll_ToPSI()
 {
-	AI_Output			(other, self,"DIA_Grd_216_Dusty_Zoll_ToPsi_15_00"); //Udajemy siê do obozu Bractwa.
+	AI_Output			(other, self,"DIA_Grd_216_Dusty_Zoll_ToPsi_15_00"); //Udajemy siÄ™ do obozu Bractwa.
 	AI_Output 			(self, other,"DIA_Grd_216_Dusty_Zoll_ToPsi_13_00"); //Gdzie nigdy nie dotrzecie...
 	AI_StopProcessInfos	(self);
 	Npc_SetTarget		(self,other);
@@ -122,26 +122,26 @@ func void DIA_Grd_216_DustyZoll_ToPSI()
 	B_ExchangeRoutine	(Vlk_524_Dusty,"start");
 	var C_NPC dusty;	dusty = Hlp_GetNpc(Vlk_524_Dusty);
 	dusty.aivar[AIV_PARTYMEMBER] = FALSE;
-	dusty.flags = 0;	// Immortal löschen
+	dusty.flags = 0;	// Immortal lÃ¶schen
 };
 
 func void DIA_Grd_216_DustyZoll_LittleWalk()
 {
-	AI_Output				(other, self,"DIA_Grd_216_Dusty_Zoll_LittleWalk_15_00"); //Idziemy siê przespacerowaæ. A oto 100 bry³ek rudy.
+	AI_Output				(other, self,"DIA_Grd_216_Dusty_Zoll_LittleWalk_15_00"); //Idziemy siÄ™ przespacerowaÄ‡. A oto 100 bryÅ‚ek rudy.
 	if (Npc_HasItems (hero,itminugget) >= 100)
 	{
-		AI_Output			(self, other,"DIA_Grd_216_Dusty_Zoll_LittleWalk_13_00"); //Nic nie widzia³em.
+		AI_Output			(self, other,"DIA_Grd_216_Dusty_Zoll_LittleWalk_13_00"); //Nic nie widziaÅ‚em.
 
 		B_GiveInvItems	(hero, self, ItMiNugget, 100);
 		DIA_Grd_216_DustyZoll.permanent = 0;
-		B_LogEntry			(CH1_RecruitDusty,"Uda³o mi siê przekupiæ stra¿ników przy po³udniowej bramie!");
+		B_LogEntry			(CH1_RecruitDusty,"UdaÅ‚o mi siÄ™ przekupiÄ‡ straÅ¼nikÃ³w przy poÅ‚udniowej bramie!");
 		B_GiveXP			(XP_BribedDustyGuard);
 		
 		AI_StopProcessInfos	(self);
 	}
 	else
 	{
-		AI_Output			(self, other,"DIA_Grd_216_Dusty_Zoll_LittleWalk_13_02"); //Myœlisz, ¿e jestem taki g³upi? Tak ³atwo ci nie pójdzie, ma³y!
+		AI_Output			(self, other,"DIA_Grd_216_Dusty_Zoll_LittleWalk_13_02"); //MyÅ›lisz, Å¼e jestem taki gÅ‚upi? Tak Å‚atwo ci nie pÃ³jdzie, maÅ‚y!
 		AI_StopProcessInfos	(self);
 		Npc_SetTarget		(self,other);
 		AI_StartState		(self,ZS_Attack,1,"");
@@ -149,7 +149,7 @@ func void DIA_Grd_216_DustyZoll_LittleWalk()
 		B_ExchangeRoutine	(Vlk_524_Dusty,"start");
 		var C_NPC dusty;	dusty = Hlp_GetNpc(Vlk_524_Dusty);
 		dusty.aivar[AIV_PARTYMEMBER] = FALSE;
-		dusty.flags = 0;	// Immortal löschen
+		dusty.flags = 0;	// Immortal lÃ¶schen
 	};
 };
 
@@ -179,7 +179,7 @@ FUNC int  GRD_216_Torwache_SEETHORUS_Condition()
 
 func void  GRD_216_Torwache_SEETHORUS_Info()
 {
-	AI_Output (self, other,"Grd_216_Torwache_SEETHORUS_Info_13_01"); //Cieszê siê, ¿e ciê widzê. Thorus chce z tob¹ porozmawiaæ.
+	AI_Output (self, other,"Grd_216_Torwache_SEETHORUS_Info_13_01"); //CieszÄ™ siÄ™, Å¼e ciÄ™ widzÄ™. Thorus chce z tobÄ… porozmawiaÄ‡.
 	AI_Output (other, self,"Grd_216_Torwache_SEETHORUS_Info_15_02"); //A czego ode mnie chce?
-	AI_Output (self, other,"Grd_216_Torwache_SEETHORUS_Info_13_03"); //Porozmawiaj z nim, to siê dowiesz.
+	AI_Output (self, other,"Grd_216_Torwache_SEETHORUS_Info_13_03"); //Porozmawiaj z nim, to siÄ™ dowiesz.
 };

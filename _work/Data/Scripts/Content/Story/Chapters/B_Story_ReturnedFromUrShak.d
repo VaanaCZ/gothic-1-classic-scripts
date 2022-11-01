@@ -1,20 +1,20 @@
 func void B_Story_ReturnedFromUrShak()
 {
-	//-------- Missionsgegenstände --------
+	//-------- MissionsgegenstÃ¤nde --------
 	
 
-	//-------- Tagebucheinträge --------
-	B_LogEntry			(CH4_FindOrcShaman,"Xardas by³ zadowolony z informacji, które uzyska³em od Ur-Shaka. Teraz mam udaæ siê do Wolnej Kopalni, w poszukiwaniu przyjaciela szamana orków.");
+	//-------- TagebucheintrÃ¤ge --------
+	B_LogEntry			(CH4_FindOrcShaman,"Xardas byÅ‚ zadowolony z informacji, ktÃ³re uzyskaÅ‚em od Ur-Shaka. Teraz mam udaÄ‡ siÄ™ do Wolnej Kopalni, w poszukiwaniu przyjaciela szamana orkÃ³w.");
 	Log_SetTopicStatus	(CH4_FindOrcShaman,	LOG_SUCCESS);
 
 	Log_CreateTopic		(CH4_EnterTemple,	LOG_MISSION);
 	Log_SetTopicStatus	(CH4_EnterTemple,	LOG_RUNNING);
-	B_LogEntry			(CH4_EnterTemple,"Zaczynam rozumieæ plan Xardasa. Poprosi³em go o pomoc w zniszczeniu bariery, której zgodzi³ siê mi udzieliæ. Jednak nie zamierza pos³u¿yæ siê w tym celu kopcem rudy! Zamiast tego poleci³ mi odnaleŸæ drogê do podziemnej œwi¹tyni Œni¹cego."); 
+	B_LogEntry			(CH4_EnterTemple,"Zaczynam rozumieÄ‡ plan Xardasa. PoprosiÅ‚em go o pomoc w zniszczeniu bariery, ktÃ³rej zgodziÅ‚ siÄ™ mi udzieliÄ‡. Jednak nie zamierza posÅ‚uÅ¼yÄ‡ siÄ™ w tym celu kopcem rudy! Zamiast tego poleciÅ‚ mi odnaleÅºÄ‡ drogÄ™ do podziemnej Å›wiÄ…tyni ÅšniÄ…cego."); 
 
 	//-------- Erfahrung --------
 	B_GiveXP		(XP_ReturnedFromUrShak);
 
-	//-------- Tagesabläufe ändern --------
+	//-------- TagesablÃ¤ufe Ã¤ndern --------
 	var C_NPC riordian;	riordian= Hlp_GetNpc(KDW_605_Riordian);	Npc_ExchangeRoutine(riordian,	"FoundUrShak");	
 	
 	

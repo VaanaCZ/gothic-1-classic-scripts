@@ -77,7 +77,7 @@ INSTANCE Troll	(Mst_Default_Troll)
 INSTANCE YoungTroll	(Mst_Default_Troll)
 {
 	//-------- general data --------
-	name							=	"M³ody troll";
+	name							=	"MÅ‚ody troll";
 	guild							=	GIL_TROLL;
 	aivar[AIV_MM_REAL_ID]			= 	ID_TROLL;
 	level							=	100;

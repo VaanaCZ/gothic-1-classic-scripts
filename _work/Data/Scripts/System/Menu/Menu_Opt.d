@@ -45,7 +45,7 @@ INSTANCE MENUITEM_OPT_GAME(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
 	text[0]		= "Gra";
-	text[1]		= "Ró¿ne ustawienia dotycz¹ce gry.";  // Kommentar
+	text[1]		= "RÃ³Å¼ne ustawienia dotyczÄ…ce gry.";  // Kommentar
 	
 	// Position und Dimension	
 	posx		= 0;		posy		= MENU_OPT_START_Y + MENU_OPT_DY*0;
@@ -62,7 +62,7 @@ INSTANCE MENUITEM_OPT_GRAPHICS(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
 	text[0]		= "Grafika";
-	text[1]		= "Szczegó³owoœæ obrazu i efekty specjalne.";  // Kommentar
+	text[1]		= "SzczegÃ³Å‚owoÅ›Ä‡ obrazu i efekty specjalne.";  // Kommentar
 	
 	// Position und Dimension	
 	posx		= 0;		posy		= MENU_OPT_START_Y + MENU_OPT_DY*1;
@@ -79,7 +79,7 @@ instance MENUITEM_OPT_VIDEO(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
 	text[0]		=	"Obraz";
-	text[1]		=	"Karta graficzna, rozdzielczoœæ i jasnoœæ.";  // Kommentar
+	text[1]		=	"Karta graficzna, rozdzielczoÅ›Ä‡ i jasnoÅ›Ä‡.";  // Kommentar
 	
 	// Position und Dimension	
 	posx		= 0;		posy		= MENU_OPT_START_Y + MENU_OPT_DY*2;
@@ -95,8 +95,8 @@ instance MENUITEM_OPT_VIDEO(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_OPT_AUDIO(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	text[0]		= "DŸwiêk";
-	text[1]		= "Muzyka, mowa i efekty dŸwiêkowe.";  // Kommentar
+	text[0]		= "DÅºwiÄ™k";
+	text[1]		= "Muzyka, mowa i efekty dÅºwiÄ™kowe.";  // Kommentar
 	
 	// Position und Dimension
 	posx		= 0;		posy		= MENU_OPT_START_Y + MENU_OPT_DY*3;
@@ -132,8 +132,8 @@ INSTANCE MENUITEM_OPT_CONTROLS(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_PERF(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	text[0]		= "Wydajnoœæ/Jakoœæ";
-	text[1]		= "Dostosowanie wydajnoœci i jakoœci obrazu.";  // Kommentar
+	text[0]		= "WydajnoÅ›Ä‡/JakoÅ›Ä‡";
+	text[1]		= "Dostosowanie wydajnoÅ›ci i jakoÅ›ci obrazu.";  // Kommentar
 	
 	// Position und Dimension	
 	posx		= 0;		posy		= MENU_OPT_START_Y + MENU_OPT_DY*5;
@@ -149,7 +149,7 @@ INSTANCE MENUITEM_PERF(C_MENU_ITEM_DEF)
 instance MENUITEM_PERF_CHOICE(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_CHOICE_BACK_PIC;
-	text[0]		= "opcje u¿ytkownika#wydajnoœæ|œrednia jakoœæ|wysoka jakoœæ";	// # trennt die UnDef-Option von der auswaehlbaren Optionen
+	text[0]		= "opcje uÅ¼ytkownika#wydajnoÅ›Ä‡|Å›rednia jakoÅ›Ä‡|wysoka jakoÅ›Ä‡";	// # trennt die UnDef-Option von der auswaehlbaren Optionen
 	type		= MENU_ITEM_CHOICEBOX;
 	fontName	= MENU_FONT_SMALL;
 	// Position und Dimension	

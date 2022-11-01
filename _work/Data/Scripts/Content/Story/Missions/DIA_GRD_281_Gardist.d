@@ -33,7 +33,7 @@ INSTANCE DIA_Grd_281_GuardGate (C_INFO)
 	condition		= DIA_Grd_281_GuardGate_Condition;
 	information		= DIA_Grd_281_GuardGate_Info;
 	permanent		= 1;
-	description		= "Co s³ychaæ?"; 
+	description		= "Co sÅ‚ychaÄ‡?"; 
 };
 
 FUNC INT DIA_Grd_281_GuardGate_Condition()
@@ -45,7 +45,7 @@ FUNC INT DIA_Grd_281_GuardGate_Condition()
 };
 FUNC VOID DIA_Grd_281_GuardGate_Info()
 {
-	AI_Output (other, self,"DIA_Grd_281_GuardGate_15_00"); //Co s³ychaæ?
-	AI_Output (self, other,"DIA_Grd_281_GuardGate_07_01"); //Wszystko w porz¹dku. Jak okiem siêgn¹æ - ¿adnego bandyty z Nowego Obozu!
+	AI_Output (other, self,"DIA_Grd_281_GuardGate_15_00"); //Co sÅ‚ychaÄ‡?
+	AI_Output (self, other,"DIA_Grd_281_GuardGate_07_01"); //Wszystko w porzÄ…dku. Jak okiem siÄ™gnÄ…Ä‡ - Å¼adnego bandyty z Nowego Obozu!
 	AI_StopProcessInfos	( self );
 };

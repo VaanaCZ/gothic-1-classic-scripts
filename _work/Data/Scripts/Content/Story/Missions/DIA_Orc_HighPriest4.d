@@ -22,11 +22,11 @@ FUNC VOID Info_HighPriest4_Info()
 	AI_SetWalkmode		(self, NPC_WALK);
 	AI_GotoNpc			(self, other);
 	
-	AI_Output			(self, other,"Info_HighPriest4_17_01"); //TWOJA DROGA KO—CZY SI  TUTAJ!
-	AI_Output			(self, other,"Info_HighPriest4_17_02"); //NIECH SCZEèNIE TWA CIELESNA POW£OKA!
-	AI_Output			(other, self,"Info_HighPriest4_15_03"); //Wola≥bym nie, jeúli ≥aska!
+	AI_Output			(self, other,"Info_HighPriest4_17_01"); //TWOJA DROGA KO≈ÉCZY SIƒò TUTAJ!
+	AI_Output			(self, other,"Info_HighPriest4_17_02"); //NIECH SCZE≈πNIE TWA CIELESNA POW≈ÅOKA!
+	AI_Output			(other, self,"Info_HighPriest4_15_03"); //Wola≈Çbym nie, je≈õli ≈Çaska!
 	
-	B_LogEntry			(CH4_EnterTemple,"Varrag-Ruuushk, jeden z przeklÍtych szamanÛw åniπcego, stanπ≥ mi na drodze. Zobaczymy, kto jest silniejszy!");
+	B_LogEntry			(CH4_EnterTemple,"Varrag-Ruuushk, jeden z przeklƒôtych szaman√≥w ≈öniƒÖcego, stanƒÖ≈Ç mi na drodze. Zobaczymy, kto jest silniejszy!");
 	AI_StopProcessInfos	(self);
 
 	Npc_SetAttitude 	(self, ATT_HOSTILE);

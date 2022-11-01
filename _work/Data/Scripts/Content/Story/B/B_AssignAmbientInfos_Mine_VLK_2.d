@@ -51,8 +51,8 @@ FUNC INT Info_Mine_Vlk_2_Mine_Condition()
 FUNC VOID Info_Mine_Vlk_2_Mine_Info()
 {
 	AI_Output(other,self,"Info_Mine_Vlk_2_Mine_15_00"); //Opowiedz mi o kopalni.
-	AI_Output(self,other,"Info_Mine_Vlk_2_Mine_01_01"); //Jest jeszcze wiele jaskiñ, gdzie zosta³o trochê rudy, ale pe³zacze nie pozwalaj¹ nam w nich pracowaæ.
-	AI_Output(self,other,"Info_Mine_Vlk_2_Mine_01_02"); //Zbyt wiele napadów, zbyt powa¿ne straty.
+	AI_Output(self,other,"Info_Mine_Vlk_2_Mine_01_01"); //Jest jeszcze wiele jaskiÅ„, gdzie zostaÅ‚o trochÄ™ rudy, ale peÅ‚zacze nie pozwalajÄ… nam w nich pracowaÄ‡.
+	AI_Output(self,other,"Info_Mine_Vlk_2_Mine_01_02"); //Zbyt wiele napadÃ³w, zbyt powaÅ¼ne straty.
 };
 
 // *************************************************************************
@@ -78,8 +78,8 @@ FUNC INT Info_Mine_Vlk_2_WichtigePersonen_Condition()
 
 FUNC VOID Info_Mine_Vlk_2_WichtigePersonen_Info()
 {
-	AI_Output(other,self,"Info_Mine_Vlk_2_WichtigePersonen_15_00"); //Kto mo¿e mieæ tu coœ do powiedzenia?
-	AI_Output(self,other,"Info_Mine_Vlk_2_WichtigePersonen_01_01"); //W¹¿, jest hutnikiem. Wie wszystko o wytapianiu rudy. Zreszt¹ chyba sam jest z ¿elaza - ca³y dzieñ spêdza przed piecem. Nie mam pojêcia jak wytrzymuje ten ¿ar.
+	AI_Output(other,self,"Info_Mine_Vlk_2_WichtigePersonen_15_00"); //Kto moÅ¼e mieÄ‡ tu coÅ› do powiedzenia?
+	AI_Output(self,other,"Info_Mine_Vlk_2_WichtigePersonen_01_01"); //WÄ…Å¼, jest hutnikiem. Wie wszystko o wytapianiu rudy. ZresztÄ… chyba sam jest z Å¼elaza - caÅ‚y dzieÅ„ spÄ™dza przed piecem. Nie mam pojÄ™cia jak wytrzymuje ten Å¼ar.
 };
 
 // *************************************************************************
@@ -92,7 +92,7 @@ INSTANCE Info_Mine_Vlk_2_Minecrawler(C_INFO)
 	condition	= Info_Mine_Vlk_2_Minecrawler_Condition;
 	information	= Info_Mine_Vlk_2_Minecrawler_Info;
 	permanent	= 1;
-	description = "Co mo¿esz mi powiedzieæ o pe³zaczach?";
+	description = "Co moÅ¼esz mi powiedzieÄ‡ o peÅ‚zaczach?";
 };                       
 
 FUNC INT Info_Mine_Vlk_2_Minecrawler_Condition()
@@ -105,9 +105,9 @@ FUNC INT Info_Mine_Vlk_2_Minecrawler_Condition()
 
 FUNC VOID Info_Mine_Vlk_2_Minecrawler_Info()
 {
-	AI_Output(other,self,"Info_Mine_Vlk_2_Minecrawler_15_00"); //Co mo¿esz mi powiedzieæ o pe³zaczach?
-	AI_Output(self,other,"Info_Mine_Vlk_2_Minecrawler_01_01"); //Musieliœmy zamkn¹æ wielki szyb na dole. A¿ roi siê w nim od pe³zaczy.
-	AI_Output(self,other,"Info_Mine_Vlk_2_Minecrawler_01_02"); //Pe³zacze s¹ tu wszêdzie. Nie s³yszysz ich? Bo ja s³yszê.
+	AI_Output(other,self,"Info_Mine_Vlk_2_Minecrawler_15_00"); //Co moÅ¼esz mi powiedzieÄ‡ o peÅ‚zaczach?
+	AI_Output(self,other,"Info_Mine_Vlk_2_Minecrawler_01_01"); //MusieliÅ›my zamknÄ…Ä‡ wielki szyb na dole. AÅ¼ roi siÄ™ w nim od peÅ‚zaczy.
+	AI_Output(self,other,"Info_Mine_Vlk_2_Minecrawler_01_02"); //PeÅ‚zacze sÄ… tu wszÄ™dzie. Nie sÅ‚yszysz ich? Bo ja sÅ‚yszÄ™.
 };
 
 // *************************************************************************
@@ -120,7 +120,7 @@ INSTANCE Info_Mine_Vlk_2_DieLage(C_INFO) // E1
 	condition	= Info_Mine_Vlk_2_DieLage_Condition;
 	information	= Info_Mine_Vlk_2_DieLage_Info;
 	permanent	= 1;
-	description = "Jak siê masz?";
+	description = "Jak siÄ™ masz?";
 };                       
 
 FUNC INT Info_Mine_Vlk_2_DieLage_Condition()
@@ -133,8 +133,8 @@ FUNC INT Info_Mine_Vlk_2_DieLage_Condition()
 
 FUNC VOID Info_Mine_Vlk_2_DieLage_Info()
 {
-	AI_Output(other,self,"Info_Mine_Vlk_2_DieLage_15_00"); //Jak siê masz?
-	AI_Output(self,other,"Info_Mine_Vlk_2_DieLage_01_01"); //Muszê pracowaæ. Jak stra¿nicy zobacz¹, ¿e z tob¹ rozmawiam, obetn¹ mi racje.
+	AI_Output(other,self,"Info_Mine_Vlk_2_DieLage_15_00"); //Jak siÄ™ masz?
+	AI_Output(self,other,"Info_Mine_Vlk_2_DieLage_01_01"); //MuszÄ™ pracowaÄ‡. Jak straÅ¼nicy zobaczÄ…, Å¼e z tobÄ… rozmawiam, obetnÄ… mi racje.
 };
 	
 // *************************************************************************

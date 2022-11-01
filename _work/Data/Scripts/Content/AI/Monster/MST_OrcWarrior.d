@@ -4,7 +4,7 @@
 
 PROTOTYPE Mst_Default_OrcWarrior(C_Npc)			
 {
-	name							=	"Ork-øo≥nierz";
+	name							=	"Ork-≈ºo≈Çnierz";
 	guild							=	GIL_ORCWARRIOR;
 	npctype							=	NPCTYPE_GUARD;
 	voice							=	17;
@@ -93,7 +93,7 @@ INSTANCE OrcWarrior1	(Mst_Default_OrcWarrior)
 INSTANCE OrcWarrior2	(Mst_Default_OrcWarrior)
 {
 	//-------- general --------
-	name							=	"Ork-øo≥nierz";
+	name							=	"Ork-≈ºo≈Çnierz";
 	level							=	30;
 
 	//-------- visual --------
@@ -147,7 +147,7 @@ INSTANCE OrcWarrior3	(Mst_Default_OrcWarrior)
 INSTANCE OrcWarrior4	(Mst_Default_OrcWarrior)
 {
 	//-------- general --------
-	name							=	"Ork-straønik";
+	name							=	"Ork-stra≈ºnik";
 	level							=	40;
 
 	//-------- visual --------

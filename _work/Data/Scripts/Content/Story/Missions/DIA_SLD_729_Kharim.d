@@ -33,7 +33,7 @@ instance Info_Kharim_What(C_INFO)
 	condition		= Info_Kharim_What_Condition;
 	information		= Info_Kharim_What_Info;
 	permanent		= 0;
-	description 	= "Jestem tu nowy. A ty kim jesteú?";
+	description 	= "Jestem tu nowy. A ty kim jeste≈õ?";
 };                       
 
 FUNC INT Info_Kharim_What_Condition()
@@ -43,9 +43,9 @@ FUNC INT Info_Kharim_What_Condition()
 
 func VOID Info_Kharim_What_Info()
 {
-	AI_Output (other, self,"Info_Kharim_What_15_00"); //Jestem tu nowy. A ty kim jesteú?
-	AI_Output (self, other,"Info_Kharim_What_09_01"); //Jestem Kharim! WidzÍ, øe trafi≥eú tu niedawno, inaczej juø byú o mnie us≥ysza≥!
-	AI_Output (self, other,"Info_Kharim_What_09_02"); //Jestem najlepszym wojownikiem jakiego ten zawszony ObÛz kiedykolwiek oglπda≥.
+	AI_Output (other, self,"Info_Kharim_What_15_00"); //Jestem tu nowy. A ty kim jeste≈õ?
+	AI_Output (self, other,"Info_Kharim_What_09_01"); //Jestem Kharim! Widzƒô, ≈ºe trafi≈Çe≈õ tu niedawno, inaczej ju≈º by≈õ o mnie us≈Çysza≈Ç!
+	AI_Output (self, other,"Info_Kharim_What_09_02"); //Jestem najlepszym wojownikiem jakiego ten zawszony Ob√≥z kiedykolwiek oglƒÖda≈Ç.
 };
 
 // **************************************
@@ -61,12 +61,12 @@ instance Info_Kharim_Charge(C_INFO)
 	condition		= Info_Kharim_Charge_Condition;
 	information		= Info_Kharim_Charge_Info;
 	permanent		= 1;
-	description 	= "Wyzywam ciÍ na pojedynek! Chodümy na arenÍ!";
+	description 	= "Wyzywam ciƒô na pojedynek! Chod≈∫my na arenƒô!";
 };                       
 
 FUNC INT Info_Kharim_Charge_Condition()
 {
-	if ( Npc_KnowsInfo (hero,DIA_Scatty_JoinOC) && Npc_KnowsInfo(hero,Info_Kharim_What) && (Kharim_Charged != TRUE) && (Kapitel <= 1) ) // Kapitelfix ***Bjˆrn***
+	if ( Npc_KnowsInfo (hero,DIA_Scatty_JoinOC) && Npc_KnowsInfo(hero,Info_Kharim_What) && (Kharim_Charged != TRUE) && (Kapitel <= 1) ) // Kapitelfix ***Bj√∂rn***
 	{
 		return 1;
 	};
@@ -74,19 +74,19 @@ FUNC INT Info_Kharim_Charge_Condition()
 
 func VOID Info_Kharim_Charge_Info()
 {
-	AI_Output (other, self,"Info_Kharim_Charge_15_00"); //Wyzywam ciÍ na pojedynek! Chodümy na arenÍ!
-	AI_Output (self, other,"Info_Kharim_Charge_09_01"); //TY?! Takich jak ty zjadam na úniadanie!
-	AI_Output (self, other,"Info_Kharim_Charge_09_02"); //Dobrze ci radzÍ, ch≥optasiu - SPADAJ ST•D!
+	AI_Output (other, self,"Info_Kharim_Charge_15_00"); //Wyzywam ciƒô na pojedynek! Chod≈∫my na arenƒô!
+	AI_Output (self, other,"Info_Kharim_Charge_09_01"); //TY?! Takich jak ty zjadam na ≈õniadanie!
+	AI_Output (self, other,"Info_Kharim_Charge_09_02"); //Dobrze ci radzƒô, ch≈Çoptasiu - SPADAJ STƒÑD!
 
 	Info_ClearChoices	(Info_Kharim_Charge );
-	Info_AddChoice		(Info_Kharim_Charge,"Dobra, spokojnie. Zapomnijmy o ca≥ej sprawie!",Info_Kharim_Charge_BACK);
-	Info_AddChoice		(Info_Kharim_Charge,"Boisz siÍ, øe oberwiesz, tchÛrzu?!",Info_Kharim_Charge_Insult);
+	Info_AddChoice		(Info_Kharim_Charge,"Dobra, spokojnie. Zapomnijmy o ca≈Çej sprawie!",Info_Kharim_Charge_BACK);
+	Info_AddChoice		(Info_Kharim_Charge,"Boisz siƒô, ≈ºe oberwiesz, tch√≥rzu?!",Info_Kharim_Charge_Insult);
 
 };
 
 func void Info_Kharim_Charge_BACK()
 {
-	AI_Output (other, self,"Info_Kharim_Charge_BACK_15_00"); //Dobra, spokojnie. Zapomnijmy o ca≥ej sprawie!
+	AI_Output (other, self,"Info_Kharim_Charge_BACK_15_00"); //Dobra, spokojnie. Zapomnijmy o ca≈Çej sprawie!
 	
 	AI_StopProcessInfos (self);
 };
@@ -95,15 +95,15 @@ func void Info_Kharim_Charge_BACK()
 
 func void Info_Kharim_Charge_Insult()
 {
-	AI_Output (other, self,"Info_Kharim_Charge_Insult_15_00"); //Boisz siÍ, øe oberwiesz, tchÛrzu?!
-	AI_Output (self, other,"Info_Kharim_Charge_Insult_09_01"); //Nie staÊ ciÍ na nic lepszego, ch≥opcze?
+	AI_Output (other, self,"Info_Kharim_Charge_Insult_15_00"); //Boisz siƒô, ≈ºe oberwiesz, tch√≥rzu?!
+	AI_Output (self, other,"Info_Kharim_Charge_Insult_09_01"); //Nie staƒá ciƒô na nic lepszego, ch≈Çopcze?
 	
 	Info_ClearChoices	(Info_Kharim_Charge );
-	Info_AddChoice		(Info_Kharim_Charge,"Przyszed≥eú tutaj tylko dlatego, øeby mÛc poca≥owaÊ Gomeza w dupÍ!",Info_Kharim_Charge_Insult_GomezAss);
-	Info_AddChoice		(Info_Kharim_Charge,"To moøe tak: TwÛj ojciec zabawia≥ siÍ z owcami...",Info_Kharim_Charge_Insult_Goats);
-	Info_AddChoice		(Info_Kharim_Charge,"Nie przychodzi mi do g≥owy nic, co by≥byú w stanie zrozumieÊ.",Info_Kharim_Charge_Insult_Stupid);
-	Info_AddChoice		(Info_Kharim_Charge,"Chcia≥em powiedzieÊ coú o twoich ramionach, ale zobaczy≥em twojπ mordÍ.",Info_Kharim_Charge_Insult_Face);
-	Info_AddChoice		(Info_Kharim_Charge,"Dobra, spokojnie. Zapomnijmy o ca≥ej sprawie!",Info_Kharim_Charge_BACK);
+	Info_AddChoice		(Info_Kharim_Charge,"Przyszed≈Çe≈õ tutaj tylko dlatego, ≈ºeby m√≥c poca≈Çowaƒá Gomeza w dupƒô!",Info_Kharim_Charge_Insult_GomezAss);
+	Info_AddChoice		(Info_Kharim_Charge,"To mo≈ºe tak: Tw√≥j ojciec zabawia≈Ç siƒô z owcami...",Info_Kharim_Charge_Insult_Goats);
+	Info_AddChoice		(Info_Kharim_Charge,"Nie przychodzi mi do g≈Çowy nic, co by≈Çby≈õ w stanie zrozumieƒá.",Info_Kharim_Charge_Insult_Stupid);
+	Info_AddChoice		(Info_Kharim_Charge,"Chcia≈Çem powiedzieƒá co≈õ o twoich ramionach, ale zobaczy≈Çem twojƒÖ mordƒô.",Info_Kharim_Charge_Insult_Face);
+	Info_AddChoice		(Info_Kharim_Charge,"Dobra, spokojnie. Zapomnijmy o ca≈Çej sprawie!",Info_Kharim_Charge_BACK);
 	
 };
 
@@ -111,16 +111,16 @@ func void Info_Kharim_Charge_Insult()
 
 func void Info_Kharim_Charge_Insult_Goats()
 {
-	AI_Output (other, self,"Info_Kharim_Charge_Insult_Goats_15_00"); //To moøe tak: twÛj ojciec zabawia≥ siÍ z owcami...
-	AI_Output (self, other,"Info_Kharim_Charge_Insult_Goats_09_01"); //CÛø, by≥y takie plotki...
+	AI_Output (other, self,"Info_Kharim_Charge_Insult_Goats_15_00"); //To mo≈ºe tak: tw√≥j ojciec zabawia≈Ç siƒô z owcami...
+	AI_Output (self, other,"Info_Kharim_Charge_Insult_Goats_09_01"); //C√≥≈º, by≈Çy takie plotki...
 };
 
 func void Info_Kharim_Charge_Insult_GomezAss()
 {
-	AI_Output (other, self,"Info_Kharim_Charge_Insult_GomezAss_15_00"); //Powiedzmy sobie szczerze: przyszed≥eú tutaj tylko dlatego, øeby mÛc poca≥owaÊ Gomeza w dupÍ!
-	AI_Output (self, other,"Info_Kharim_Charge_Insult_GomezAss_09_01"); //CO!?! Ty gnido! Nie wiesz o czym mÛwisz! Nowy ObÛz ma was gdzieú!
-	AI_Output (self, other,"Info_Kharim_Charge_Insult_GomezAss_09_02"); //A poza tym jest tylko jeden powÛd, dla ktÛrego tutaj przyszed≥em: zamierzam publicznie upokorzyÊ kaødego miÍczaka, ktÛry oúmieli siÍ wyzwaÊ mnie na pojedynek.
-	AI_Output (self, other,"Info_Kharim_Charge_Insult_GomezAss_09_03"); //Ale ciebie za≥atwiÍ z wyjπtkowπ przyjemnoúciπ! Czekam na ciebie na arenie!
+	AI_Output (other, self,"Info_Kharim_Charge_Insult_GomezAss_15_00"); //Powiedzmy sobie szczerze: przyszed≈Çe≈õ tutaj tylko dlatego, ≈ºeby m√≥c poca≈Çowaƒá Gomeza w dupƒô!
+	AI_Output (self, other,"Info_Kharim_Charge_Insult_GomezAss_09_01"); //CO!?! Ty gnido! Nie wiesz o czym m√≥wisz! Nowy Ob√≥z ma was gdzie≈õ!
+	AI_Output (self, other,"Info_Kharim_Charge_Insult_GomezAss_09_02"); //A poza tym jest tylko jeden pow√≥d, dla kt√≥rego tutaj przyszed≈Çem: zamierzam publicznie upokorzyƒá ka≈ºdego miƒôczaka, kt√≥ry o≈õmieli siƒô wyzwaƒá mnie na pojedynek.
+	AI_Output (self, other,"Info_Kharim_Charge_Insult_GomezAss_09_03"); //Ale ciebie za≈Çatwiƒô z wyjƒÖtkowƒÖ przyjemno≈õciƒÖ! Czekam na ciebie na arenie!
 	
 	Kharim_Charged = TRUE;
 	
@@ -132,14 +132,14 @@ func void Info_Kharim_Charge_Insult_GomezAss()
 
 func void Info_Kharim_Charge_Insult_Stupid()
 {
-	AI_Output (other, self,"Info_Kharim_Charge_Insult_Stupid_15_00"); //Pomyúlmy... Nie, nie przychodzi mi do g≥owy nic, co by≥byú w stanie zrozumieÊ.
-	AI_Output (self, other,"Info_Kharim_Charge_Insult_Stupid_09_01"); //Moøe jednak powinieneú sprÛbowaÊ.
+	AI_Output (other, self,"Info_Kharim_Charge_Insult_Stupid_15_00"); //Pomy≈õlmy... Nie, nie przychodzi mi do g≈Çowy nic, co by≈Çby≈õ w stanie zrozumieƒá.
+	AI_Output (self, other,"Info_Kharim_Charge_Insult_Stupid_09_01"); //Mo≈ºe jednak powiniene≈õ spr√≥bowaƒá.
 };
 
 func void Info_Kharim_Charge_Insult_Face()
 {
-	AI_Output (other, self,"Info_Kharim_Charge_Insult_Face_15_00"); //Z poczπtku chcia≥em powiedzieÊ coú o twoich wπt≥ych ramionach, ale potem zobaczy≥em twojπ paskudnπ mordÍ.
-	AI_Output (self, other,"Info_Kharim_Charge_Insult_Face_09_01"); //To twoja ostatnia szansa, øeby odejúÊ stπd o w≥asnych si≥ach!
+	AI_Output (other, self,"Info_Kharim_Charge_Insult_Face_15_00"); //Z poczƒÖtku chcia≈Çem powiedzieƒá co≈õ o twoich wƒÖt≈Çych ramionach, ale potem zobaczy≈Çem twojƒÖ paskudnƒÖ mordƒô.
+	AI_Output (self, other,"Info_Kharim_Charge_Insult_Face_09_01"); //To twoja ostatnia szansa, ≈ºeby odej≈õƒá stƒÖd o w≈Çasnych si≈Çach!
 };
 
 // **************************************
@@ -166,9 +166,9 @@ FUNC INT Info_Kharim_InArena_Condition()
 
 func VOID Info_Kharim_InArena_Info()
 {
-	if (Kapitel <= 1)				// Kapitelfix ***Bjˆrn***
+	if (Kapitel <= 1)				// Kapitelfix ***Bj√∂rn***
 	{
-		AI_Output (self, other,"Info_Kharim_InArena_09_00"); //BÛl to tylko kwestia si≥y woli!
+		AI_Output (self, other,"Info_Kharim_InArena_09_00"); //B√≥l to tylko kwestia si≈Çy woli!
 		
 		AI_StopProcessInfos	( self );
 		
@@ -179,7 +179,7 @@ func VOID Info_Kharim_InArena_Info()
 	}
 	else
 	{
-		AI_Output (self, other,"SVM_9_LetsForgetOurLittleFight"); //Moøe zapomnimy o naszej ma≥ej sprzeczce...
+		AI_Output (self, other,"SVM_9_LetsForgetOurLittleFight"); //Mo≈ºe zapomnimy o naszej ma≈Çej sprzeczce...
 		AI_StopProcessInfos	( self );
 		Npc_ExchangeRoutine(self,"START");
 	};

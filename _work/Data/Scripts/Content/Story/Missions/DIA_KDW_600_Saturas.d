@@ -18,7 +18,7 @@ FUNC int  Info_Saturas_EXIT_Condition()
 
 FUNC VOID  Info_Saturas_EXIT_Info()
 {
-	AI_Output			(self, other,"Info_Saturas_EXIT_14_01"); //Obyœ wróci³ ca³y i zdrowy!
+	AI_Output			(self, other,"Info_Saturas_EXIT_14_01"); //ObyÅ› wrÃ³ciÅ‚ caÅ‚y i zdrowy!
 
 	AI_StopProcessInfos	(self);
 };
@@ -46,7 +46,7 @@ FUNC int  Info_Saturas_Intruder_Condition()
 
 FUNC VOID  Info_Saturas_Intruder_Info()
 {
-	AI_Output			(self, other,"Info_Saturas_Intruder_14_00"); //Co ty tu robisz? Nie masz tu czego szukaæ! Precz!
+	AI_Output			(self, other,"Info_Saturas_Intruder_14_00"); //Co ty tu robisz? Nie masz tu czego szukaÄ‡! Precz!
 
 	AI_StopProcessInfos	(self);
 };
@@ -71,7 +71,7 @@ instance Info_Saturas_NEWS (C_INFO)
 	information	= Info_Saturas_NEWS_Info;
 	permanent	= 0;
 	IMPORTANT 	= 0;
-	description = "Mam wa¿ne wieœci z obozu Bractwa!";
+	description = "Mam waÅ¼ne wieÅ›ci z obozu Bractwa!";
 };
 
 FUNC INT Info_Saturas_NEWS_Condition()
@@ -84,8 +84,8 @@ FUNC INT Info_Saturas_NEWS_Condition()
 
 FUNC VOID Info_Saturas_NEWS_Info()
 {
-	AI_Output			(other, self,"Info_Saturas_NEWS_15_01"); //Mam wa¿ne wieœci z obozu Bractwa!
-	AI_Output			(self, other,"Info_Saturas_NEWS_14_02"); //Jeœli Cronos pozwoli³ ci mnie odwiedziæ, musia³o siê staæ coœ naprawdê wa¿nego!
+	AI_Output			(other, self,"Info_Saturas_NEWS_15_01"); //Mam waÅ¼ne wieÅ›ci z obozu Bractwa!
+	AI_Output			(self, other,"Info_Saturas_NEWS_14_02"); //JeÅ›li Cronos pozwoliÅ‚ ci mnie odwiedziÄ‡, musiaÅ‚o siÄ™ staÄ‡ coÅ› naprawdÄ™ waÅ¼nego!
 };
 
 //***************************************************************************
@@ -98,7 +98,7 @@ instance Info_Saturas_YBERION (C_INFO)
 	information	= Info_Saturas_YBERION_Info;
 	permanent	= 0;
 	IMPORTANT = 0;
-	description = "Y'Berion nie ¿yje!";
+	description = "Y'Berion nie Å¼yje!";
 };
 
 FUNC INT Info_Saturas_YBERION_Condition()
@@ -111,18 +111,18 @@ FUNC INT Info_Saturas_YBERION_Condition()
 
 FUNC VOID Info_Saturas_YBERION_Info()
 {
-	AI_Output			(other, self,"Info_Saturas_YBERION_15_01"); //Y'Berion nie ¿yje! Zgin¹³ podczas rytua³u przyzwania Œni¹cego.
-	AI_Output			(self, other,"Info_Saturas_YBERION_14_02"); //Y'Berion martwy? To z³e wieœci... Bardzo z³e.
-	AI_Output			(self, other,"Info_Saturas_YBERION_14_03"); //Kto teraz przewodzi Bractwu? Czy¿by ten zbyt ambitny, jadowity w¹¿ - Cor Kalom?
-	AI_Output			(other, self,"Info_Saturas_YBERION_15_04"); //Nie! Kalom wyrzek³ siê Bractwa. Zabra³ ze sob¹ kilku Stra¿ników Œwi¹tynnych. Nikt nie wie dok¹d siê udali.
-	AI_Output			(self, other,"Info_Saturas_YBERION_14_05"); //Jak to mo¿liwe? By³ najwa¿niejszym cz³onkiem Bractwa, zaraz po Y'Berionie!
-	AI_Output			(other, self,"Info_Saturas_YBERION_15_06"); //Pewne wydarzenia uœwiadomi³y wszystkim Guru, ¿e droga, któr¹ pod¹¿ali by³a b³êdna. Ich rzekomy bóg okaza³ siê niszczycielskim demonem.
-	AI_Output			(other, self,"Info_Saturas_YBERION_15_07"); //Pod wp³ywem Œni¹cego, jeden z Guru próbowa³ mnie zg³adziæ, mimo, i¿ kilka chwil wczeœniej ocali³em jego ¿ycie.
-	AI_Output			(other, self,"Info_Saturas_YBERION_15_08"); //Cor Kalom by³ jedynym Guru, który nie chcia³ uznaæ prawdziwej natury Œni¹cego. W³aœnie dlatego opuœci³ obóz na bagnie.
-	AI_Output			(self, other,"Info_Saturas_YBERION_14_09"); //Rozumiem! Có¿, przynajmniej tutaj mamy trochê szczêœcia. Cor Angar to dobry cz³owiek. Twardy, ale uczciwy.
-	AI_Output			(self, other,"Info_Saturas_YBERION_14_10"); //Jeœli ktoœ mo¿e zapobiec ca³kowitemu rozpadowi Bractwa po tej katastrofie, to w³aœnie on.
+	AI_Output			(other, self,"Info_Saturas_YBERION_15_01"); //Y'Berion nie Å¼yje! ZginÄ…Å‚ podczas rytuaÅ‚u przyzwania ÅšniÄ…cego.
+	AI_Output			(self, other,"Info_Saturas_YBERION_14_02"); //Y'Berion martwy? To zÅ‚e wieÅ›ci... Bardzo zÅ‚e.
+	AI_Output			(self, other,"Info_Saturas_YBERION_14_03"); //Kto teraz przewodzi Bractwu? CzyÅ¼by ten zbyt ambitny, jadowity wÄ…Å¼ - Cor Kalom?
+	AI_Output			(other, self,"Info_Saturas_YBERION_15_04"); //Nie! Kalom wyrzekÅ‚ siÄ™ Bractwa. ZabraÅ‚ ze sobÄ… kilku StraÅ¼nikÃ³w ÅšwiÄ…tynnych. Nikt nie wie dokÄ…d siÄ™ udali.
+	AI_Output			(self, other,"Info_Saturas_YBERION_14_05"); //Jak to moÅ¼liwe? ByÅ‚ najwaÅ¼niejszym czÅ‚onkiem Bractwa, zaraz po Y'Berionie!
+	AI_Output			(other, self,"Info_Saturas_YBERION_15_06"); //Pewne wydarzenia uÅ›wiadomiÅ‚y wszystkim Guru, Å¼e droga, ktÃ³rÄ… podÄ…Å¼ali byÅ‚a bÅ‚Ä™dna. Ich rzekomy bÃ³g okazaÅ‚ siÄ™ niszczycielskim demonem.
+	AI_Output			(other, self,"Info_Saturas_YBERION_15_07"); //Pod wpÅ‚ywem ÅšniÄ…cego, jeden z Guru prÃ³bowaÅ‚ mnie zgÅ‚adziÄ‡, mimo, iÅ¼ kilka chwil wczeÅ›niej ocaliÅ‚em jego Å¼ycie.
+	AI_Output			(other, self,"Info_Saturas_YBERION_15_08"); //Cor Kalom byÅ‚ jedynym Guru, ktÃ³ry nie chciaÅ‚ uznaÄ‡ prawdziwej natury ÅšniÄ…cego. WÅ‚aÅ›nie dlatego opuÅ›ciÅ‚ obÃ³z na bagnie.
+	AI_Output			(self, other,"Info_Saturas_YBERION_14_09"); //Rozumiem! CÃ³Å¼, przynajmniej tutaj mamy trochÄ™ szczÄ™Å›cia. Cor Angar to dobry czÅ‚owiek. Twardy, ale uczciwy.
+	AI_Output			(self, other,"Info_Saturas_YBERION_14_10"); //JeÅ›li ktoÅ› moÅ¼e zapobiec caÅ‚kowitemu rozpadowi Bractwa po tej katastrofie, to wÅ‚aÅ›nie on.
 
-	B_LogEntry		(CH3_EscapePlanNC,"Opowiedzia³em Saturasowi o wydarzeniach z obozu na bagnie. Wyrazi³ zadowolenie z faktu, ¿e Cor Angar zosta³ przywódc¹ Bractwa.");
+	B_LogEntry		(CH3_EscapePlanNC,"OpowiedziaÅ‚em Saturasowi o wydarzeniach z obozu na bagnie. WyraziÅ‚ zadowolenie z faktu, Å¼e Cor Angar zostaÅ‚ przywÃ³dcÄ… Bractwa.");
 };
 
 //***************************************************************************
@@ -149,9 +149,9 @@ FUNC INT Info_Saturas_BOOK_Condition()
 FUNC VOID Info_Saturas_BOOK_Info()
 {
 	AI_Output			(other, self,"Info_Saturas_BOOK_15_01"); //Mam ten almanach...
-	AI_Output			(other, self,"Info_Saturas_BOOK_15_02"); //Y'Berion wykorzysta³ go do na³adowania kamienia ogniskuj¹cego.
-	AI_Output			(self, other,"Info_Saturas_BOOK_14_03"); //Œwietnie. Wiedza zawarta w tej ksiêdze pozwoli nam na³adowaæ piêæ pierwotnych kamieni ogniskuj¹cych.
-	AI_Output			(self, other,"Info_Saturas_BOOK_14_04"); //Wezmê ten almanach!
+	AI_Output			(other, self,"Info_Saturas_BOOK_15_02"); //Y'Berion wykorzystaÅ‚ go do naÅ‚adowania kamienia ogniskujÄ…cego.
+	AI_Output			(self, other,"Info_Saturas_BOOK_14_03"); //Åšwietnie. Wiedza zawarta w tej ksiÄ™dze pozwoli nam naÅ‚adowaÄ‡ piÄ™Ä‡ pierwotnych kamieni ogniskujÄ…cych.
+	AI_Output			(self, other,"Info_Saturas_BOOK_14_04"); //WezmÄ™ ten almanach!
 
 	B_GiveInvItems		(hero,self,ItWrFokusbuch,1);
 	Npc_RemoveInvItem	(self,ItWrFokusbuch);
@@ -168,7 +168,7 @@ instance Info_Saturas_FOCUS (C_INFO)
 	information	= Info_Saturas_FOCUS_Info;
 	permanent	= 0;
 	important 	= 0;
-	description = "Mam tu ten kamieñ ogniskuj¹cy...";
+	description = "Mam tu ten kamieÅ„ ogniskujÄ…cy...";
 };
 
 FUNC INT Info_Saturas_FOCUS_Condition()
@@ -181,16 +181,16 @@ FUNC INT Info_Saturas_FOCUS_Condition()
 
 FUNC VOID Info_Saturas_FOCUS_Info()
 {
-	AI_Output			(other, self,"Info_Saturas_FOCUS_15_01"); //Mam tu ten kamieñ ogniskuj¹cy...
-	AI_Output			(self, other,"Info_Saturas_FOCUS_14_02"); //Trzymasz w rêku klucz, który mo¿e nas wyzwoliæ z kajdan niewolnictwa.
-	AI_Output			(self, other,"Info_Saturas_FOCUS_14_03"); //To jeden z piêciu kamieni ogniskuj¹cych, które wykorzystywano podczas tworzenia Magicznej Bariery.
-	AI_Output			(self, other,"Info_Saturas_FOCUS_14_04"); //A my z pomoc¹ tej samej si³y ogniskuj¹cej zniszczymy wielk¹ magiczn¹ Barierê.
-	AI_Output			(other, self,"Info_Saturas_FOCUS_15_05"); //Ale czy do tego nie bêdzie potrzeba potê¿nego Ÿród³a magicznej energii?
-	AI_Output			(self, other,"Info_Saturas_FOCUS_14_06"); //To prawda. Dlatego przez te wszystkie lata gromadziliœmy rudê, zamiast wymieniaæ j¹ na towary z zewnêtrznego œwiata.
-	AI_Output			(self, other,"Info_Saturas_FOCUS_14_07"); //Jak zapewne wiesz, ka¿dy kawa³ek rudy zawiera niewielki ³adunek energii magicznej. Mamy nadziejê, ¿e wyzwalaj¹c jednoczeœnie ca³y potencja³ zgromadzonego przez nas kopca, bêdziemy w stanie zniszczyæ Barierê.
-	AI_Output			(other, self,"Info_Saturas_FOCUS_15_08"); //To chyba doœæ ryzykowne?
-	AI_Output			(self, other,"Info_Saturas_FOCUS_14_09"); //Eksplozja energii magicznej mo¿e zniszczyæ wy³¹cznie twory utworzone lub zmodyfikowane przy u¿yciu magii. Nie istnieje ¿adne zagro¿enie dla istot ludzkich.
-	AI_Output			(other, self,"Info_Saturas_FOCUS_15_10"); //Proszê, oto kamieñ ogniskuj¹cy. Mam nadziejê, ¿e wasze plany zwi¹zane z detonacj¹ kopca powiod¹ siê.
+	AI_Output			(other, self,"Info_Saturas_FOCUS_15_01"); //Mam tu ten kamieÅ„ ogniskujÄ…cy...
+	AI_Output			(self, other,"Info_Saturas_FOCUS_14_02"); //Trzymasz w rÄ™ku klucz, ktÃ³ry moÅ¼e nas wyzwoliÄ‡ z kajdan niewolnictwa.
+	AI_Output			(self, other,"Info_Saturas_FOCUS_14_03"); //To jeden z piÄ™ciu kamieni ogniskujÄ…cych, ktÃ³re wykorzystywano podczas tworzenia Magicznej Bariery.
+	AI_Output			(self, other,"Info_Saturas_FOCUS_14_04"); //A my z pomocÄ… tej samej siÅ‚y ogniskujÄ…cej zniszczymy wielkÄ… magicznÄ… BarierÄ™.
+	AI_Output			(other, self,"Info_Saturas_FOCUS_15_05"); //Ale czy do tego nie bÄ™dzie potrzeba potÄ™Å¼nego ÅºrÃ³dÅ‚a magicznej energii?
+	AI_Output			(self, other,"Info_Saturas_FOCUS_14_06"); //To prawda. Dlatego przez te wszystkie lata gromadziliÅ›my rudÄ™, zamiast wymieniaÄ‡ jÄ… na towary z zewnÄ™trznego Å›wiata.
+	AI_Output			(self, other,"Info_Saturas_FOCUS_14_07"); //Jak zapewne wiesz, kaÅ¼dy kawaÅ‚ek rudy zawiera niewielki Å‚adunek energii magicznej. Mamy nadziejÄ™, Å¼e wyzwalajÄ…c jednoczeÅ›nie caÅ‚y potencjaÅ‚ zgromadzonego przez nas kopca, bÄ™dziemy w stanie zniszczyÄ‡ BarierÄ™.
+	AI_Output			(other, self,"Info_Saturas_FOCUS_15_08"); //To chyba doÅ›Ä‡ ryzykowne?
+	AI_Output			(self, other,"Info_Saturas_FOCUS_14_09"); //Eksplozja energii magicznej moÅ¼e zniszczyÄ‡ wyÅ‚Ä…cznie twory utworzone lub zmodyfikowane przy uÅ¼yciu magii. Nie istnieje Å¼adne zagroÅ¼enie dla istot ludzkich.
+	AI_Output			(other, self,"Info_Saturas_FOCUS_15_10"); //ProszÄ™, oto kamieÅ„ ogniskujÄ…cy. Mam nadziejÄ™, Å¼e wasze plany zwiÄ…zane z detonacjÄ… kopca powiodÄ… siÄ™.
 
 	B_GiveInvItems		(hero, self, Focus_1, 1);
 	Npc_RemoveInvItem	(self, Focus_1);
@@ -221,8 +221,8 @@ FUNC INT Info_Saturas_WHATNOW_Condition()
 FUNC VOID Info_Saturas_WHATNOW_Info()
 {
 	AI_Output			(other, self,"Info_Saturas_WHATNOW_15_01"); //Co teraz zrobicie z tym kamieniem i almanachem?
-	AI_Output			(self, other,"Info_Saturas_WHATNOW_14_03"); //Nic. Najpierw musimy odnaleŸæ pozosta³e cztery kamienie ogniskuj¹ce!
-	AI_Output			(self, other,"Info_Saturas_WHATNOW_14_04"); //Niestety, nie trafiliœmy jeszcze na œlad ¿adnego z kamieni.
+	AI_Output			(self, other,"Info_Saturas_WHATNOW_14_03"); //Nic. Najpierw musimy odnaleÅºÄ‡ pozostaÅ‚e cztery kamienie ogniskujÄ…ce!
+	AI_Output			(self, other,"Info_Saturas_WHATNOW_14_04"); //Niestety, nie trafiliÅ›my jeszcze na Å›lad Å¼adnego z kamieni.
 };
 
 //***************************************************************************
@@ -235,7 +235,7 @@ instance Info_Saturas_OFFER (C_INFO)
 	information	= Info_Saturas_OFFER_Info;
 	permanent	= 0;
 	important 	= 0;
-	description = "Móg³bym spróbowaæ odnaleŸæ brakuj¹ce kamienie.";
+	description = "MÃ³gÅ‚bym sprÃ³bowaÄ‡ odnaleÅºÄ‡ brakujÄ…ce kamienie.";
 };
 
 FUNC INT Info_Saturas_OFFER_Condition()
@@ -248,17 +248,17 @@ FUNC INT Info_Saturas_OFFER_Condition()
 
 FUNC VOID Info_Saturas_OFFER_Info()
 {
-	AI_Output			(other, self,"Info_Saturas_OFFER_15_01"); //Móg³bym spróbowaæ odnaleŸæ brakuj¹ce kamienie.
-	AI_Output			(other, self,"Info_Saturas_OFFER_15_02"); //Koniec koñców - mi te¿ zale¿y na wydostaniu siê z tej kolonii.
-	AI_Output			(self, other,"Info_Saturas_OFFER_14_03"); //Muszê ciê ostrzec: te poszukiwania mog¹ siê okazaæ równie trudne co i niebezpieczne.
-	AI_Output			(self, other,"Info_Saturas_OFFER_14_04"); //Konflikt ze Starym Obozem zaostrza siê z dnia na dzieñ. Nie mogê ci nawet przydzieliæ eskorty Najemników.
-	AI_Output			(self, other,"Info_Saturas_OFFER_14_05"); //Bêdziesz zdany wy³¹cznie na siebie.
-	AI_Output			(other, self,"Info_Saturas_OFFER_15_06"); //Có¿... To mi nie pierwszyzna! Jakoœ sobie poradzê.
-	AI_Output			(self, other,"Info_Saturas_OFFER_14_07"); //Twoja pewnoœæ siebie dobrze o tobie œwiadczy, ale przyda ci siê kilka przedmiotów...
-	AI_Output			(self, other,"Info_Saturas_OFFER_14_08"); //WeŸ tê mapê. Jest doœæ stara, ale zaznaczono na niej oryginalne rozmieszczenie kamieni ogniskuj¹cych w chwili tworzenia Bariery.
-	AI_Output			(self, other,"Info_Saturas_OFFER_14_09"); //Ten zwój magiczny pozwoli ci b³yskawicznie przenieœæ siê do naszego obozu.
-	AI_Output			(self, other,"Info_Saturas_OFFER_14_10"); //Na koniec powinieneœ jeszcze porozmawiaæ z Riordianem. To cz³owiek, który przygotowuje magiczne wywary dla naszego obozu.
-	AI_Output			(self, other,"Info_Saturas_OFFER_14_11"); //Znajdziesz go w jego chacie, tutaj, na najwy¿szym poziomie.
+	AI_Output			(other, self,"Info_Saturas_OFFER_15_01"); //MÃ³gÅ‚bym sprÃ³bowaÄ‡ odnaleÅºÄ‡ brakujÄ…ce kamienie.
+	AI_Output			(other, self,"Info_Saturas_OFFER_15_02"); //Koniec koÅ„cÃ³w - mi teÅ¼ zaleÅ¼y na wydostaniu siÄ™ z tej kolonii.
+	AI_Output			(self, other,"Info_Saturas_OFFER_14_03"); //MuszÄ™ ciÄ™ ostrzec: te poszukiwania mogÄ… siÄ™ okazaÄ‡ rÃ³wnie trudne co i niebezpieczne.
+	AI_Output			(self, other,"Info_Saturas_OFFER_14_04"); //Konflikt ze Starym Obozem zaostrza siÄ™ z dnia na dzieÅ„. Nie mogÄ™ ci nawet przydzieliÄ‡ eskorty NajemnikÃ³w.
+	AI_Output			(self, other,"Info_Saturas_OFFER_14_05"); //BÄ™dziesz zdany wyÅ‚Ä…cznie na siebie.
+	AI_Output			(other, self,"Info_Saturas_OFFER_15_06"); //CÃ³Å¼... To mi nie pierwszyzna! JakoÅ› sobie poradzÄ™.
+	AI_Output			(self, other,"Info_Saturas_OFFER_14_07"); //Twoja pewnoÅ›Ä‡ siebie dobrze o tobie Å›wiadczy, ale przyda ci siÄ™ kilka przedmiotÃ³w...
+	AI_Output			(self, other,"Info_Saturas_OFFER_14_08"); //WeÅº tÄ™ mapÄ™. Jest doÅ›Ä‡ stara, ale zaznaczono na niej oryginalne rozmieszczenie kamieni ogniskujÄ…cych w chwili tworzenia Bariery.
+	AI_Output			(self, other,"Info_Saturas_OFFER_14_09"); //Ten zwÃ³j magiczny pozwoli ci bÅ‚yskawicznie przenieÅ›Ä‡ siÄ™ do naszego obozu.
+	AI_Output			(self, other,"Info_Saturas_OFFER_14_10"); //Na koniec powinieneÅ› jeszcze porozmawiaÄ‡ z Riordianem. To czÅ‚owiek, ktÃ³ry przygotowuje magiczne wywary dla naszego obozu.
+	AI_Output			(self, other,"Info_Saturas_OFFER_14_11"); //Znajdziesz go w jego chacie, tutaj, na najwyÅ¼szym poziomie.
 
 	B_Story_BringFoci	();
 };
@@ -271,9 +271,9 @@ func void B_DeliverFocus()
 	//-------- 2. Fokus abliefern --------
 	if 		(Saturas_BringFoci == 1)
 	{
-		AI_Output		(self, other,"Info_Saturas_BRINGFOCUS_14_01"); //Hmmm, na dobry pocz¹tek wystarczy. NieŸle sobie radzisz.
-		AI_Output		(self, other,"Info_Saturas_BRINGFOCUS_14_02"); //Musisz jeszcze odnaleŸæ trzy pozosta³e kamienie.
-		AI_Output		(self, other,"Info_Saturas_BRINGFOCUS_14_03"); //Ruszaj w drogê! Nie zosta³o nam zbyt wiele czasu.
+		AI_Output		(self, other,"Info_Saturas_BRINGFOCUS_14_01"); //Hmmm, na dobry poczÄ…tek wystarczy. NieÅºle sobie radzisz.
+		AI_Output		(self, other,"Info_Saturas_BRINGFOCUS_14_02"); //Musisz jeszcze odnaleÅºÄ‡ trzy pozostaÅ‚e kamienie.
+		AI_Output		(self, other,"Info_Saturas_BRINGFOCUS_14_03"); //Ruszaj w drogÄ™! Nie zostaÅ‚o nam zbyt wiele czasu.
 		Saturas_BringFoci = 2;	
 		B_GiveXP  		(XP_DeliverSecondFocus);
 	}
@@ -281,9 +281,9 @@ func void B_DeliverFocus()
 	//-------- 3. Fokus abliefern --------
 	else if	(Saturas_BringFoci == 2)
 	{
-		AI_Output		(self, other,"Info_Saturas_BRINGFOCUS_14_04"); //Œwietnie. To ju¿ drugi kamieñ, który nam przynosisz!
-		AI_Output		(self, other,"Info_Saturas_BRINGFOCUS_14_05"); //Jesteœmy ju¿ znacznie bli¿ej naszego celu.
-		AI_Output		(self, other,"Info_Saturas_BRINGFOCUS_14_06"); //Nie ustawaj w wysi³kach. Potrzebujemy jeszcze dwóch kamieni ogniskuj¹cych.
+		AI_Output		(self, other,"Info_Saturas_BRINGFOCUS_14_04"); //Åšwietnie. To juÅ¼ drugi kamieÅ„, ktÃ³ry nam przynosisz!
+		AI_Output		(self, other,"Info_Saturas_BRINGFOCUS_14_05"); //JesteÅ›my juÅ¼ znacznie bliÅ¼ej naszego celu.
+		AI_Output		(self, other,"Info_Saturas_BRINGFOCUS_14_06"); //Nie ustawaj w wysiÅ‚kach. Potrzebujemy jeszcze dwÃ³ch kamieni ogniskujÄ…cych.
 		Saturas_BringFoci = 3;	
 		B_GiveXP  		(XP_DeliverThirdFocus);
 	}
@@ -291,9 +291,9 @@ func void B_DeliverFocus()
 	//-------- 4. Fokus abliefern --------
 	else if	(Saturas_BringFoci == 3)
 	{
-		AI_Output		(self, other,"Info_Saturas_BRINGFOCUS_14_07"); //Niesamowite! Mamy ju¿ cztery kamienie ogniskuj¹ce!
+		AI_Output		(self, other,"Info_Saturas_BRINGFOCUS_14_07"); //Niesamowite! Mamy juÅ¼ cztery kamienie ogniskujÄ…ce!
 		AI_Output		(self, other,"Info_Saturas_BRINGFOCUS_14_08"); //Brakuje jeszcze tylko jednego!
-		AI_Output		(self, other,"Info_Saturas_BRINGFOCUS_14_09"); //Odda³eœ naszej spo³ecznoœci nieocenione us³ugi. Jeœli uda ci siê odnaleŸæ ostatni z kamieni, wkrótce bêdziemy znów na wolnoœci!
+		AI_Output		(self, other,"Info_Saturas_BRINGFOCUS_14_09"); //OddaÅ‚eÅ› naszej spoÅ‚ecznoÅ›ci nieocenione usÅ‚ugi. JeÅ›li uda ci siÄ™ odnaleÅºÄ‡ ostatni z kamieni, wkrÃ³tce bÄ™dziemy znÃ³w na wolnoÅ›ci!
 		Saturas_BringFoci = 4;	
 		B_GiveXP  		(XP_DeliverFourthFocus);
 	}
@@ -301,19 +301,19 @@ func void B_DeliverFocus()
 	//-------- 5. Fokus abliefern --------
 	else if	(Saturas_BringFoci == 4)
 	{
-		AI_Output		(self, other,"Info_Saturas_BRINGFOCUS_14_10"); //Wspaniale! Mamy ju¿ wszystkie piêæ kamieni!
-		AI_Output		(self, other,"Info_Saturas_BRINGFOCUS_14_11"); //Nie wiem jak bêdziemy ci siê mogli odwdziêczyæ! Jestem twoim dozgonnym d³u¿nikiem.
-		AI_Output		(self, other,"Info_Saturas_BRINGFOCUS_14_12"); //PójdŸ teraz do Riordiana. On da ci chocia¿ skromn¹ namiastkê nagrody za twoje wysi³ki!
-		AI_Output		(self, other,"Info_Saturas_BRINGFOCUS_14_13"); //Porozmawiaj równie¿ z Cronosem, stra¿nikiem rudy. Od niego dostaniesz kolejny wyraz naszej wdziêcznoœci.
+		AI_Output		(self, other,"Info_Saturas_BRINGFOCUS_14_10"); //Wspaniale! Mamy juÅ¼ wszystkie piÄ™Ä‡ kamieni!
+		AI_Output		(self, other,"Info_Saturas_BRINGFOCUS_14_11"); //Nie wiem jak bÄ™dziemy ci siÄ™ mogli odwdziÄ™czyÄ‡! Jestem twoim dozgonnym dÅ‚uÅ¼nikiem.
+		AI_Output		(self, other,"Info_Saturas_BRINGFOCUS_14_12"); //PÃ³jdÅº teraz do Riordiana. On da ci chociaÅ¼ skromnÄ… namiastkÄ™ nagrody za twoje wysiÅ‚ki!
+		AI_Output		(self, other,"Info_Saturas_BRINGFOCUS_14_13"); //Porozmawiaj rÃ³wnieÅ¼ z Cronosem, straÅ¼nikiem rudy. Od niego dostaniesz kolejny wyraz naszej wdziÄ™cznoÅ›ci.
 
 		Saturas_BringFoci = 5;	
 		B_GiveXP  			(XP_DeliverFifthFocus);
 
-		B_LogEntry		(CH3_BringFoci,"Uda³o mi siê odnaleŸæ wszystkie cztery kamienie ogniskuj¹ce. Saturas jest niezwykle szczêœliwy. Nowy Obóz ma u mnie chyba d³ug wdziêcznoœci.");
-		B_LogEntry		(CH3_BringFoci,"Cronos i Riordian obiecali mi nagrodê za odnalezienie wszystkich kamieni ogniskuj¹cych. Powinienem ich odwiedziæ.");
+		B_LogEntry		(CH3_BringFoci,"UdaÅ‚o mi siÄ™ odnaleÅºÄ‡ wszystkie cztery kamienie ogniskujÄ…ce. Saturas jest niezwykle szczÄ™Å›liwy. Nowy ObÃ³z ma u mnie chyba dÅ‚ug wdziÄ™cznoÅ›ci.");
+		B_LogEntry		(CH3_BringFoci,"Cronos i Riordian obiecali mi nagrodÄ™ za odnalezienie wszystkich kamieni ogniskujÄ…cych. Powinienem ich odwiedziÄ‡.");
 
 		
-		// Aufhebung des Log_running_Status, wenn die Foki schon vorher abgegeben wurden, bevor SC die einzelnen Aufträge bekam.    ***Björn***
+		// Aufhebung des Log_running_Status, wenn die Foki schon vorher abgegeben wurden, bevor SC die einzelnen AuftrÃ¤ge bekam.    ***BjÃ¶rn***
 		
 		Log_SetTopicStatus	(CH3_MonasteryRuin,	LOG_SUCCESS);
 		Log_SetTopicStatus	(CH3_Stonehenge,	LOG_SUCCESS);
@@ -325,7 +325,7 @@ func void B_DeliverFocus()
 	//-------- Neuer Teleportzauber ? --------
 	if ( !Npc_HasItems(hero, ItArScrollTeleport2) && (Saturas_BringFoci < 5) )	
 	{
-		AI_Output		(self, other,"Info_Saturas_BRINGFOCUS_14_14"); //Widzê, ¿e wykorzysta³eœ zwój teleportacyjny. Proszê, weŸ nastêpny.
+		AI_Output		(self, other,"Info_Saturas_BRINGFOCUS_14_14"); //WidzÄ™, Å¼e wykorzystaÅ‚eÅ› zwÃ³j teleportacyjny. ProszÄ™, weÅº nastÄ™pny.
 		CreateInvItem	(self,	ItArScrollTeleport2);
 		B_GiveInvItems	(self, other, ItArScrollTeleport2, 1);
 	};
@@ -341,7 +341,7 @@ instance Info_Saturas_BRINGFOCUS2 (C_INFO)
 	information	= Info_Saturas_BRINGFOCUS2_Info;
 	permanent	= 0;
 	important	= 0;
-	description = "Znalaz³em kamieñ ogniskuj¹cy w kanionie Trolli!";
+	description = "ZnalazÅ‚em kamieÅ„ ogniskujÄ…cy w kanionie Trolli!";
 };
 
 FUNC INT Info_Saturas_BRINGFOCUS2_Condition()
@@ -354,9 +354,9 @@ FUNC INT Info_Saturas_BRINGFOCUS2_Condition()
 
 FUNC VOID Info_Saturas_BRINGFOCUS2_Info()
 {
-	AI_Output			(other, self,"Info_Saturas_BRINGFOCUS2_15_01"); //Znalaz³em kamieñ ogniskuj¹cy w kanionie Trolli!
+	AI_Output			(other, self,"Info_Saturas_BRINGFOCUS2_15_01"); //ZnalazÅ‚em kamieÅ„ ogniskujÄ…cy w kanionie Trolli!
 
-	B_LogEntry		(CH3_TrollCanyon,"Kamieñ z kanionu trolli jest ju¿ bezpieczny u Saturasa.");
+	B_LogEntry		(CH3_TrollCanyon,"KamieÅ„ z kanionu trolli jest juÅ¼ bezpieczny u Saturasa.");
 	Log_SetTopicStatus	(CH3_TrollCanyon,	LOG_SUCCESS);
 
 	//-------- Fokus abliefern ! --------
@@ -375,7 +375,7 @@ instance Info_Saturas_BRINGFOCUS3 (C_INFO)
 	information	= Info_Saturas_BRINGFOCUS3_Info;
 	permanent	= 0;
 	important 	= 0;
-	description = "Znalaz³em kamieñ ogniskuj¹cy w górskiej fortecy!";
+	description = "ZnalazÅ‚em kamieÅ„ ogniskujÄ…cy w gÃ³rskiej fortecy!";
 };
 
 FUNC INT Info_Saturas_BRINGFOCUS3_Condition()
@@ -388,9 +388,9 @@ FUNC INT Info_Saturas_BRINGFOCUS3_Condition()
 
 FUNC VOID Info_Saturas_BRINGFOCUS3_Info()
 {
-	AI_Output			(other, self,"Info_Saturas_BRINGFOCUS3_15_01"); //Znalaz³em kamieñ ogniskuj¹cy w górskiej fortecy!
+	AI_Output			(other, self,"Info_Saturas_BRINGFOCUS3_15_01"); //ZnalazÅ‚em kamieÅ„ ogniskujÄ…cy w gÃ³rskiej fortecy!
 
-	B_LogEntry		(CH3_Fortress,"Wrêczy³em Saturasowi kamieñ z górskiej fortecy.");
+	B_LogEntry		(CH3_Fortress,"WrÄ™czyÅ‚em Saturasowi kamieÅ„ z gÃ³rskiej fortecy.");
 	Log_SetTopicStatus	(CH3_Fortress,		LOG_SUCCESS);
 
 	//-------- Fokus abliefern ! --------
@@ -409,7 +409,7 @@ instance Info_Saturas_BRINGFOCUS4 (C_INFO)
 	information	= Info_Saturas_BRINGFOCUS4_Info;
 	permanent	= 0;
 	important 	= 0;
-	description = "Znalaz³em kamieñ ogniskuj¹cy w ruinach starego klasztoru!";
+	description = "ZnalazÅ‚em kamieÅ„ ogniskujÄ…cy w ruinach starego klasztoru!";
 };
 
 FUNC INT Info_Saturas_BRINGFOCUS4_Condition()
@@ -422,10 +422,10 @@ FUNC INT Info_Saturas_BRINGFOCUS4_Condition()
 
 FUNC VOID Info_Saturas_BRINGFOCUS4_Info()
 {
-	AI_Output			(other, self,"Info_Saturas_BRINGFOCUS4_15_01"); //Znalaz³em kamieñ ogniskuj¹cy w ruinach starego klasztoru!
-	AI_Output			(other, self,"Info_Saturas_BRINGFOCUS4_15_02"); //Spotka³em tam Gorna, tego Najemnika. Pomóg³ mi w poszukiwaniach.
+	AI_Output			(other, self,"Info_Saturas_BRINGFOCUS4_15_01"); //ZnalazÅ‚em kamieÅ„ ogniskujÄ…cy w ruinach starego klasztoru!
+	AI_Output			(other, self,"Info_Saturas_BRINGFOCUS4_15_02"); //SpotkaÅ‚em tam Gorna, tego Najemnika. PomÃ³gÅ‚ mi w poszukiwaniach.
 
-	B_LogEntry		(CH3_MonasteryRuin,"Wreszcie mog³em oddaæ Saturasowi kamieñ ze starego klasztoru.");
+	B_LogEntry		(CH3_MonasteryRuin,"Wreszcie mogÅ‚em oddaÄ‡ Saturasowi kamieÅ„ ze starego klasztoru.");
 	Log_SetTopicStatus	(CH3_MonasteryRuin,	LOG_SUCCESS);
 
 	//-------- Fokus abliefern ! --------
@@ -444,7 +444,7 @@ instance Info_Saturas_BRINGFOCUS5 (C_INFO)
 	information	= Info_Saturas_BRINGFOCUS5_Info;
 	permanent	= 0;
 	important 	= 0;
-	description = "Znalaz³em kamieñ ogniskuj¹cy pod kamiennym krêgiem!";
+	description = "ZnalazÅ‚em kamieÅ„ ogniskujÄ…cy pod kamiennym krÄ™giem!";
 };
 
 FUNC INT Info_Saturas_BRINGFOCUS5_Condition()
@@ -457,9 +457,9 @@ FUNC INT Info_Saturas_BRINGFOCUS5_Condition()
 
 FUNC VOID Info_Saturas_BRINGFOCUS5_Info()
 {
-	AI_Output			(other, self,"Info_Saturas_BRINGFOCUS5_15_01"); //Znalaz³em kamieñ ogniskuj¹cy pod kamiennym krêgiem!
+	AI_Output			(other, self,"Info_Saturas_BRINGFOCUS5_15_01"); //ZnalazÅ‚em kamieÅ„ ogniskujÄ…cy pod kamiennym krÄ™giem!
 
-	B_LogEntry		(CH3_Stonehenge,"Przekaza³em Saturasowi kamieñ z krypty pod kamiennym krêgiem.");
+	B_LogEntry		(CH3_Stonehenge,"PrzekazaÅ‚em Saturasowi kamieÅ„ z krypty pod kamiennym krÄ™giem.");
 	Log_SetTopicStatus	(CH3_Stonehenge,	LOG_SUCCESS);
 
 	//-------- Fokus abliefern ! --------
@@ -478,7 +478,7 @@ instance Info_Saturas_ALLFOCI (C_INFO)
 	information	= Info_Saturas_ALLFOCI_Info;
 	permanent	= 0;
 	important 	= 0;
-	description = "Czy mo¿ecie teraz przyst¹piæ do detonacji kopca rudy?";
+	description = "Czy moÅ¼ecie teraz przystÄ…piÄ‡ do detonacji kopca rudy?";
 };
 
 FUNC INT Info_Saturas_ALLFOCI_Condition()
@@ -492,13 +492,13 @@ FUNC INT Info_Saturas_ALLFOCI_Condition()
 
 FUNC VOID Info_Saturas_ALLFOCI_Info()
 {
-	AI_Output			(other, self,"Info_Saturas_ALLFOCI_15_01"); //Czy mo¿ecie teraz przyst¹piæ do detonacji kopca rudy?
-	AI_Output			(self, other,"Info_Saturas_ALLFOCI_14_02"); //Mamy ju¿ wszystkie artefakty niezbêdne do wprowadzenia naszego planu w ¿ycie.
-	AI_Output			(self, other,"Info_Saturas_ALLFOCI_14_03"); //Ale Barierê utworzy³o dwunastu magów.
-	AI_Output			(self, other,"Info_Saturas_ALLFOCI_14_04"); //W ca³ym Krêgu Wody nie ma doœæ mistrzów magii, by zapanowaæ nad tak ogromn¹ iloœci¹ energii. Nie mówi¹c ju¿ o jej odpowiednim ukierunkowaniu!
+	AI_Output			(other, self,"Info_Saturas_ALLFOCI_15_01"); //Czy moÅ¼ecie teraz przystÄ…piÄ‡ do detonacji kopca rudy?
+	AI_Output			(self, other,"Info_Saturas_ALLFOCI_14_02"); //Mamy juÅ¼ wszystkie artefakty niezbÄ™dne do wprowadzenia naszego planu w Å¼ycie.
+	AI_Output			(self, other,"Info_Saturas_ALLFOCI_14_03"); //Ale BarierÄ™ utworzyÅ‚o dwunastu magÃ³w.
+	AI_Output			(self, other,"Info_Saturas_ALLFOCI_14_04"); //W caÅ‚ym KrÄ™gu Wody nie ma doÅ›Ä‡ mistrzÃ³w magii, by zapanowaÄ‡ nad tak ogromnÄ… iloÅ›ciÄ… energii. Nie mÃ³wiÄ…c juÅ¼ o jej odpowiednim ukierunkowaniu!
 	AI_Output			(other, self,"Info_Saturas_ALLFOCI_15_05"); //I co teraz zrobimy?
-	AI_Output			(self, other,"Info_Saturas_ALLFOCI_14_06"); //Wiem ile ju¿ zrobi³eœ dla naszej spo³ecznoœci. Wszyscy jesteœmy twoimi d³u¿nikami...
-	AI_Output			(self, other,"Info_Saturas_ALLFOCI_14_07"); //...Ale w interesie wszystkich mieszkañców kolonii muszê ciê poprosiæ o jeszcze jedn¹ przys³ugê.
+	AI_Output			(self, other,"Info_Saturas_ALLFOCI_14_06"); //Wiem ile juÅ¼ zrobiÅ‚eÅ› dla naszej spoÅ‚ecznoÅ›ci. Wszyscy jesteÅ›my twoimi dÅ‚uÅ¼nikami...
+	AI_Output			(self, other,"Info_Saturas_ALLFOCI_14_07"); //...Ale w interesie wszystkich mieszkaÅ„cÃ³w kolonii muszÄ™ ciÄ™ poprosiÄ‡ o jeszcze jednÄ… przysÅ‚ugÄ™.
 };
 
 //***************************************************************************
@@ -511,7 +511,7 @@ instance Info_Saturas_FAVOR (C_INFO)
 	information	= Info_Saturas_FAVOR_Info;
 	permanent	= 0;
 	important 	= 0;
-	description = "Jeszcze jedn¹ przys³ugê?";
+	description = "Jeszcze jednÄ… przysÅ‚ugÄ™?";
 };
 
 FUNC INT Info_Saturas_FAVOR_Condition()
@@ -524,12 +524,12 @@ FUNC INT Info_Saturas_FAVOR_Condition()
 
 FUNC VOID Info_Saturas_FAVOR_Info()
 {
-	AI_Output			(other, self,"Info_Saturas_FAVOR_15_01"); //Jeszcze jedn¹ przys³ugê?
-	AI_Output			(self, other,"Info_Saturas_FAVOR_14_02"); //Tak. Musisz iœæ do Starego Obozu i przekonaæ do naszej sprawy kilku Magów Ognia.
-	AI_Output			(other, self,"Info_Saturas_FAVOR_15_03"); //MAGÓW OGNIA?? Myœlisz, ¿e zechc¹ przy³¹czyæ siê do was i zrezygnowaæ ze swego wygodnego ¿ycia?
-	AI_Output			(other, self,"Info_Saturas_FAVOR_15_04"); //Przecie¿ upadek Bariery pozbawi ich uprzywilejowanej pozycji!
-	AI_Output			(self, other,"Info_Saturas_FAVOR_14_05"); //W³aœnie dlatego to TY musisz podj¹æ siê tego zadania. Znasz ludzi ze wszystkich obozów w ca³ej kolonii.
-	AI_Output			(self, other,"Info_Saturas_FAVOR_14_06"); //Przypomnij Magom Ognia stare czasy, kiedy wspólnie studiowaliœmy sztuki magiczne.
+	AI_Output			(other, self,"Info_Saturas_FAVOR_15_01"); //Jeszcze jednÄ… przysÅ‚ugÄ™?
+	AI_Output			(self, other,"Info_Saturas_FAVOR_14_02"); //Tak. Musisz iÅ›Ä‡ do Starego Obozu i przekonaÄ‡ do naszej sprawy kilku MagÃ³w Ognia.
+	AI_Output			(other, self,"Info_Saturas_FAVOR_15_03"); //MAGÃ“W OGNIA?? MyÅ›lisz, Å¼e zechcÄ… przyÅ‚Ä…czyÄ‡ siÄ™ do was i zrezygnowaÄ‡ ze swego wygodnego Å¼ycia?
+	AI_Output			(other, self,"Info_Saturas_FAVOR_15_04"); //PrzecieÅ¼ upadek Bariery pozbawi ich uprzywilejowanej pozycji!
+	AI_Output			(self, other,"Info_Saturas_FAVOR_14_05"); //WÅ‚aÅ›nie dlatego to TY musisz podjÄ…Ä‡ siÄ™ tego zadania. Znasz ludzi ze wszystkich obozÃ³w w caÅ‚ej kolonii.
+	AI_Output			(self, other,"Info_Saturas_FAVOR_14_06"); //Przypomnij Magom Ognia stare czasy, kiedy wspÃ³lnie studiowaliÅ›my sztuki magiczne.
 };	
 
 //***************************************************************************
@@ -542,7 +542,7 @@ instance Info_Saturas_ACCEPT (C_INFO)
 	information	= Info_Saturas_ACCEPT_Info;
 	permanent	= 0;
 	important 	= 0;
-	description = "No dobrze. Spróbujê jakoœ przekonaæ Magów Ognia!";
+	description = "No dobrze. SprÃ³bujÄ™ jakoÅ› przekonaÄ‡ MagÃ³w Ognia!";
 };
 
 FUNC INT Info_Saturas_ACCEPT_Condition()
@@ -555,15 +555,15 @@ FUNC INT Info_Saturas_ACCEPT_Condition()
 
 FUNC VOID Info_Saturas_ACCEPT_Info()
 {
-	AI_Output			(other, self,"Info_Saturas_ACCEPT_15_01"); //No dobrze. Spróbujê jakoœ przekonaæ Magów Ognia!
-	AI_Output			(other, self,"Info_Saturas_ACCEPT_15_02"); //Ale nic nie obiecujê! Obawiam siê, ¿e to zadanie jest z góry skazane na niepowodzenie!
-	AI_Output			(self, other,"Info_Saturas_ACCEPT_14_03"); //Musisz chocia¿ spróbowaæ. Jeœli ci siê nie powiedzie, jest ju¿ tylko jeden...
+	AI_Output			(other, self,"Info_Saturas_ACCEPT_15_01"); //No dobrze. SprÃ³bujÄ™ jakoÅ› przekonaÄ‡ MagÃ³w Ognia!
+	AI_Output			(other, self,"Info_Saturas_ACCEPT_15_02"); //Ale nic nie obiecujÄ™! Obawiam siÄ™, Å¼e to zadanie jest z gÃ³ry skazane na niepowodzenie!
+	AI_Output			(self, other,"Info_Saturas_ACCEPT_14_03"); //Musisz chociaÅ¼ sprÃ³bowaÄ‡. JeÅ›li ci siÄ™ nie powiedzie, jest juÅ¼ tylko jeden...
 	AI_Output			(self, other,"Info_Saturas_ACCEPT_14_04"); //Tylko jeden...
 	AI_Output			(other, self,"Info_Saturas_ACCEPT_15_05"); //...jeden CO?
-	AI_Output			(self, other,"Info_Saturas_ACCEPT_14_06"); //Niewa¿ne! MUSI ci siê udaæ!
-	AI_Output			(self, other,"Info_Saturas_ACCEPT_14_07"); //WeŸ tê magiczn¹ runê jako znak naszego zaufania. Poka¿esz j¹ Corristo, Arcymistrzowi Magów Ognia.
-	AI_Output			(self, other,"Info_Saturas_ACCEPT_14_08"); //Dziêki jej pomocy bêdzie móg³ przeteleportowaæ siê do tej komnaty, nie przechodz¹c przez posterunki stra¿y.
-	AI_Output			(self, other,"Info_Saturas_ACCEPT_14_09"); //Mam nadziejê, ¿e to przekona naszych dawnych przyjació³ o szczeroœci naszych intencji.
+	AI_Output			(self, other,"Info_Saturas_ACCEPT_14_06"); //NiewaÅ¼ne! MUSI ci siÄ™ udaÄ‡!
+	AI_Output			(self, other,"Info_Saturas_ACCEPT_14_07"); //WeÅº tÄ™ magicznÄ… runÄ™ jako znak naszego zaufania. PokaÅ¼esz jÄ… Corristo, Arcymistrzowi MagÃ³w Ognia.
+	AI_Output			(self, other,"Info_Saturas_ACCEPT_14_08"); //DziÄ™ki jej pomocy bÄ™dzie mÃ³gÅ‚ przeteleportowaÄ‡ siÄ™ do tej komnaty, nie przechodzÄ…c przez posterunki straÅ¼y.
+	AI_Output			(self, other,"Info_Saturas_ACCEPT_14_09"); //Mam nadziejÄ™, Å¼e to przekona naszych dawnych przyjaciÃ³Å‚ o szczeroÅ›ci naszych intencji.
 
 	B_KapitelWechsel	(4);
 };	
@@ -609,12 +609,12 @@ FUNC VOID Info_Saturas_AMBUSH_Info()
 	gorn = Hlp_GetNpc(PC_FIGHTER);
 	AI_TurnToNpc		(gorn,hero);
 	
-	AI_Output			(self,hero,"Info_Saturas_AMBUSH_14_01"); //Cieszê siê, ¿e wróci³eœ. Sta³o siê coœ strasznego!
-	AI_Output			(hero,self,"Info_Saturas_AMBUSH_15_02"); //Niech zgadnê: Wolna Kopalnia zosta³a zaatakowana przez Stra¿ników ze Starego Obozu, którzy niespodziewanie wyroœli jak spod ziemi?
-	AI_Output			(self,hero,"Info_Saturas_AMBUSH_14_03"); //Zaraz... Jak... Ale¿ oczywiœcie! Dowiedzia³eœ siê o tym w Starym Obozie!
-	AI_Output	 		(self,hero,"Info_Saturas_AMBUSH_14_04"); //Gorn zjawi³ siê tutaj tu¿ przed tob¹.
-	AI_Output			(self,hero,"Info_Saturas_AMBUSH_14_05"); //Co mog³o sk³oniæ Gomeza do podjêcia tak drastycznych dzia³añ?
-	AI_Output			(self,hero,"Info_Saturas_AMBUSH_14_06"); //Przecie¿ musia³ zdawaæ sobie sprawê, ¿e ten napad stanowi wypowiedzenie wojny.
+	AI_Output			(self,hero,"Info_Saturas_AMBUSH_14_01"); //CieszÄ™ siÄ™, Å¼e wrÃ³ciÅ‚eÅ›. StaÅ‚o siÄ™ coÅ› strasznego!
+	AI_Output			(hero,self,"Info_Saturas_AMBUSH_15_02"); //Niech zgadnÄ™: Wolna Kopalnia zostaÅ‚a zaatakowana przez StraÅ¼nikÃ³w ze Starego Obozu, ktÃ³rzy niespodziewanie wyroÅ›li jak spod ziemi?
+	AI_Output			(self,hero,"Info_Saturas_AMBUSH_14_03"); //Zaraz... Jak... AleÅ¼ oczywiÅ›cie! DowiedziaÅ‚eÅ› siÄ™ o tym w Starym Obozie!
+	AI_Output	 		(self,hero,"Info_Saturas_AMBUSH_14_04"); //Gorn zjawiÅ‚ siÄ™ tutaj tuÅ¼ przed tobÄ….
+	AI_Output			(self,hero,"Info_Saturas_AMBUSH_14_05"); //Co mogÅ‚o skÅ‚oniÄ‡ Gomeza do podjÄ™cia tak drastycznych dziaÅ‚aÅ„?
+	AI_Output			(self,hero,"Info_Saturas_AMBUSH_14_06"); //PrzecieÅ¼ musiaÅ‚ zdawaÄ‡ sobie sprawÄ™, Å¼e ten napad stanowi wypowiedzenie wojny.
 };	
 
 //---------------------------------------------------------------------
@@ -627,7 +627,7 @@ instance Info_Saturas_COLLAPSE (C_INFO)
 	information	= Info_Saturas_COLLAPSE_Info;
 	permanent	= 0;
 	important 	= 0;
-	description = "Stara Kopalnia zosta³a zalana przez podziemn¹ rzekê!";
+	description = "Stara Kopalnia zostaÅ‚a zalana przez podziemnÄ… rzekÄ™!";
 };
 
 FUNC INT Info_Saturas_COLLAPSE_Condition()
@@ -640,9 +640,9 @@ FUNC INT Info_Saturas_COLLAPSE_Condition()
 
 FUNC VOID Info_Saturas_COLLAPSE_Info()
 {
-	AI_Output			(hero,self,"Info_Saturas_COLLAPSE_15_01"); //Stara Kopalnia zosta³a zalana przez podziemn¹ rzekê!
-	AI_Output			(self,hero,"Info_Saturas_COLLAPSE_14_02"); //...Zalana... Naturalnie... Teraz zaczynam rozumieæ...
-	AI_Output			(self,hero,"Info_Saturas_COLLAPSE_14_03"); //Gomez zosta³ przyparty do muru. Jest teraz jeszcze groŸniejszy ni¿ kiedyœ. Nie ma nic do stracenia, wiêc sta³ siê ca³kowicie nieobliczalny!
+	AI_Output			(hero,self,"Info_Saturas_COLLAPSE_15_01"); //Stara Kopalnia zostaÅ‚a zalana przez podziemnÄ… rzekÄ™!
+	AI_Output			(self,hero,"Info_Saturas_COLLAPSE_14_02"); //...Zalana... Naturalnie... Teraz zaczynam rozumieÄ‡...
+	AI_Output			(self,hero,"Info_Saturas_COLLAPSE_14_03"); //Gomez zostaÅ‚ przyparty do muru. Jest teraz jeszcze groÅºniejszy niÅ¼ kiedyÅ›. Nie ma nic do stracenia, wiÄ™c staÅ‚ siÄ™ caÅ‚kowicie nieobliczalny!
 };
 
 //---------------------------------------------------------------------
@@ -655,7 +655,7 @@ instance Info_Saturas_MURDER (C_INFO)
 	information	= Info_Saturas_MURDER_Info;
 	permanent	= 0;
 	important 	= 0;
-	description = "Gomez wymordowa³ wszystkich Magów Ognia!";
+	description = "Gomez wymordowaÅ‚ wszystkich MagÃ³w Ognia!";
 };
 
 FUNC INT Info_Saturas_MURDER_Condition()
@@ -668,15 +668,15 @@ FUNC INT Info_Saturas_MURDER_Condition()
 
 FUNC VOID Info_Saturas_MURDER_Info()
 {
-	AI_Output			(hero,self,"Info_Saturas_MURDER_15_01"); //Gomez wymordowa³ wszystkich Magów Ognia!
-	AI_Output			(self,hero,"Info_Saturas_MURDER_14_02"); //WYMORDOWA£?!? Na Beliara, czemu mia³by zrobiæ coœ takiego?!
-	AI_Output			(hero,self,"Info_Saturas_MURDER_15_03"); //Magowie sprzeciwili siê atakowi na Woln¹ Kopalniê, a tym samym stanêli Gomezowi na drodze.
-	AI_Output			(self,hero,"Info_Saturas_MURDER_14_04"); //Zatem jesteœmy zgubieni. Bez pomocy pozosta³ych szeœciu magów nie uda siê nam zapanowaæ nad energi¹ wyzwolon¹ podczas detonacji kopca.
-	AI_Output			(self,hero,"Info_Saturas_MURDER_14_05"); //Mimo wszystko, dziêkujê ci za dostarczenie tych przykrych wieœci. Wróg ju¿ nas nie zaskoczy.
+	AI_Output			(hero,self,"Info_Saturas_MURDER_15_01"); //Gomez wymordowaÅ‚ wszystkich MagÃ³w Ognia!
+	AI_Output			(self,hero,"Info_Saturas_MURDER_14_02"); //WYMORDOWAÅ?!? Na Beliara, czemu miaÅ‚by zrobiÄ‡ coÅ› takiego?!
+	AI_Output			(hero,self,"Info_Saturas_MURDER_15_03"); //Magowie sprzeciwili siÄ™ atakowi na WolnÄ… KopalniÄ™, a tym samym stanÄ™li Gomezowi na drodze.
+	AI_Output			(self,hero,"Info_Saturas_MURDER_14_04"); //Zatem jesteÅ›my zgubieni. Bez pomocy pozostaÅ‚ych szeÅ›ciu magÃ³w nie uda siÄ™ nam zapanowaÄ‡ nad energiÄ… wyzwolonÄ… podczas detonacji kopca.
+	AI_Output			(self,hero,"Info_Saturas_MURDER_14_05"); //Mimo wszystko, dziÄ™kujÄ™ ci za dostarczenie tych przykrych wieÅ›ci. WrÃ³g juÅ¼ nas nie zaskoczy.
 
 	B_GiveXP			(XP_ReportToSaturas);
 	
-	B_LogEntry			(CH4_Firemages,"Saturas zasmuci³ siê na wieœæ o wydarzeniach w Starym Obozie. Cokolwiek zamierzaj¹ zrobiæ w sprawie ucieczki... bêd¹ musieli obyæ siê bez pomocy Magów Ognia.");
+	B_LogEntry			(CH4_Firemages,"Saturas zasmuciÅ‚ siÄ™ na wieÅ›Ä‡ o wydarzeniach w Starym Obozie. Cokolwiek zamierzajÄ… zrobiÄ‡ w sprawie ucieczki... bÄ™dÄ… musieli obyÄ‡ siÄ™ bez pomocy MagÃ³w Ognia.");
 	Log_SetTopicStatus	(CH4_Firemages,	LOG_SUCCESS);
 };
 
@@ -692,7 +692,7 @@ instance  KDW_600_Saturas_NOMOREOC (C_INFO)
 	information		= KDW_600_Saturas_NOMOREOC_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Wygnano mnie ze Starego Obozu za to, ¿e wam pomog³em!"; 
+	description		= "Wygnano mnie ze Starego Obozu za to, Å¼e wam pomogÅ‚em!"; 
 };
 
 FUNC int  KDW_600_Saturas_NOMOREOC_Condition()
@@ -706,13 +706,13 @@ FUNC int  KDW_600_Saturas_NOMOREOC_Condition()
 
 FUNC void  KDW_600_Saturas_NOMOREOC_Info()
 {
-	AI_Output			(other, self,"KDW_600_Saturas_NOMOREOC_Info_15_01"); //Wygnano mnie ze Starego Obozu za to, ¿e wam pomog³em!
-	AI_Output			(self, other,"KDW_600_Saturas_NOMOREOC_Info_14_02"); //Nie nale¿ysz ju¿ do Starego Obozu?
-	AI_Output			(self, other,"KDW_600_Saturas_NOMOREOC_Info_14_03"); //Zatem witaj w naszej spo³ecznoœci!
+	AI_Output			(other, self,"KDW_600_Saturas_NOMOREOC_Info_15_01"); //Wygnano mnie ze Starego Obozu za to, Å¼e wam pomogÅ‚em!
+	AI_Output			(self, other,"KDW_600_Saturas_NOMOREOC_Info_14_02"); //Nie naleÅ¼ysz juÅ¼ do Starego Obozu?
+	AI_Output			(self, other,"KDW_600_Saturas_NOMOREOC_Info_14_03"); //Zatem witaj w naszej spoÅ‚ecznoÅ›ci!
 
 	Log_CreateTopic		(CH4_BannedFromOC,	LOG_MISSION);
 	Log_SetTopicStatus	(CH4_BannedFromOC,	LOG_RUNNING);
-	B_LogEntry			(CH4_BannedFromOC,"Po tym, jak zosta³em przepêdzony przez ludzi Gomeza, Saturas z otwartymi ramionami przyj¹³ mnie do Nowego Obozu!");
+	B_LogEntry			(CH4_BannedFromOC,"Po tym, jak zostaÅ‚em przepÄ™dzony przez ludzi Gomeza, Saturas z otwartymi ramionami przyjÄ…Å‚ mnie do Nowego Obozu!");
 }; 
 
 /*------------------------------------------------------------------------
@@ -726,7 +726,7 @@ instance  KDW_600_Saturas_GOTOLEE (C_INFO)
 	information		= KDW_600_Saturas_GOTOLEE_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Czy to oznacza, ¿e zostanê przyjêty w poczet Najemników?"; 
+	description		= "Czy to oznacza, Å¼e zostanÄ™ przyjÄ™ty w poczet NajemnikÃ³w?"; 
 };
 
 FUNC int  KDW_600_Saturas_GOTOLEE_Condition()
@@ -740,10 +740,10 @@ FUNC int  KDW_600_Saturas_GOTOLEE_Condition()
 };
 FUNC void  KDW_600_Saturas_GOTOLEE_Info()
 {
-	AI_Output			(other, self,"KDW_600_Saturas_GOTOLEE_Info_15_01"); //Czy to oznacza, ¿e zostanê przyjêty w poczet Najemników?
-	AI_Output			(self, other,"KDW_600_Saturas_GOTOLEE_Info_14_02"); //Porozmawiaj z Lee. On siê tob¹ zajmie. Ale potem zajrzyj koniecznie do mnie!
+	AI_Output			(other, self,"KDW_600_Saturas_GOTOLEE_Info_15_01"); //Czy to oznacza, Å¼e zostanÄ™ przyjÄ™ty w poczet NajemnikÃ³w?
+	AI_Output			(self, other,"KDW_600_Saturas_GOTOLEE_Info_14_02"); //Porozmawiaj z Lee. On siÄ™ tobÄ… zajmie. Ale potem zajrzyj koniecznie do mnie!
 
-	B_LogEntry			(CH4_BannedFromOC,"Lee, przywódca Najemników, chce siê ze mn¹ widzieæ. Po rozmowie z nim mam wróciæ do Saturasa."); 
+	B_LogEntry			(CH4_BannedFromOC,"Lee, przywÃ³dca NajemnikÃ³w, chce siÄ™ ze mnÄ… widzieÄ‡. Po rozmowie z nim mam wrÃ³ciÄ‡ do Saturasa."); 
 };  
  
 /*------------------------------------------------------------------------
@@ -757,7 +757,7 @@ instance  KDW_600_Saturas_OATH (C_INFO)
 	information		= KDW_600_Saturas_OATH_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Czy to oznacza, ¿e nale¿ê teraz do krêgu Magów Wody?"; 
+	description		= "Czy to oznacza, Å¼e naleÅ¼Ä™ teraz do krÄ™gu MagÃ³w Wody?"; 
 };
 
 FUNC int  KDW_600_Saturas_OATH_Condition()
@@ -771,16 +771,16 @@ FUNC int  KDW_600_Saturas_OATH_Condition()
 };
 FUNC void  KDW_600_Saturas_OATH_Info()
 {
-	AI_Output			(other, self,"KDW_600_Saturas_OATH_Info_15_01"); //Czy to oznacza, ¿e nale¿ê teraz do krêgu Magów Wody?
-	AI_Output			(self, other,"KDW_600_Saturas_OATH_Info_14_02"); //Jeszcze nie. Najpierw musisz z³o¿yæ œluby Wody.
-	AI_Output			(other, self,"KDW_600_Saturas_OATH_Info_15_03"); //Ale sk³ada³em ju¿ przysiêgê Ognia!
+	AI_Output			(other, self,"KDW_600_Saturas_OATH_Info_15_01"); //Czy to oznacza, Å¼e naleÅ¼Ä™ teraz do krÄ™gu MagÃ³w Wody?
+	AI_Output			(self, other,"KDW_600_Saturas_OATH_Info_14_02"); //Jeszcze nie. Najpierw musisz zÅ‚oÅ¼yÄ‡ Å›luby Wody.
+	AI_Output			(other, self,"KDW_600_Saturas_OATH_Info_15_03"); //Ale skÅ‚adaÅ‚em juÅ¼ przysiÄ™gÄ™ Ognia!
 	AI_Output			(self, other,"KDW_600_Saturas_OATH_Info_14_04"); //Hmmm...
-	AI_Output			(self, other,"KDW_600_Saturas_OATH_Info_14_05"); //Przecie¿ nie musisz jednoczeœnie ³amaæ z³o¿onej przysiêgi!
+	AI_Output			(self, other,"KDW_600_Saturas_OATH_Info_14_05"); //PrzecieÅ¼ nie musisz jednoczeÅ›nie Å‚amaÄ‡ zÅ‚oÅ¼onej przysiÄ™gi!
 	AI_Output			(other, self,"KDW_600_Saturas_OATH_Info_15_06"); //Eee... Nie rozumiem...
-	AI_Output			(self, other,"KDW_600_Saturas_OATH_Info_14_07"); //Ty j¹ tylko rozszerzysz. Od tej pory bêdziesz magiem w s³u¿bie obydwu ¿ywio³ów!
-	AI_Output			(self, other,"KDW_600_Saturas_OATH_Info_14_08"); //Posi¹dziesz si³ê Ognia oraz m¹droœæ Wody jednoczeœnie!
+	AI_Output			(self, other,"KDW_600_Saturas_OATH_Info_14_07"); //Ty jÄ… tylko rozszerzysz. Od tej pory bÄ™dziesz magiem w sÅ‚uÅ¼bie obydwu Å¼ywioÅ‚Ã³w!
+	AI_Output			(self, other,"KDW_600_Saturas_OATH_Info_14_08"); //PosiÄ…dziesz siÅ‚Ä™ Ognia oraz mÄ…droÅ›Ä‡ Wody jednoczeÅ›nie!
 
-	B_LogEntry			(CH4_BannedFromOC,"Saturas pozwoli mi do³¹czyæ do Krêgu Wody. Nie bêdê przy tym musia³ ³amaæ mojej przysiêgi Ognia!"); 
+	B_LogEntry			(CH4_BannedFromOC,"Saturas pozwoli mi doÅ‚Ä…czyÄ‡ do KrÄ™gu Wody. Nie bÄ™dÄ™ przy tym musiaÅ‚ Å‚amaÄ‡ mojej przysiÄ™gi Ognia!"); 
 };  
 
 /*------------------------------------------------------------------------
@@ -793,7 +793,7 @@ instance KDW_600_Saturas_KDWAUFNAHME (C_INFO)
 	information		= KDW_600_Saturas_KDWAUFNAHME_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Jestem gotów do z³o¿enia œlubów."; 
+	description		= "Jestem gotÃ³w do zÅ‚oÅ¼enia Å›lubÃ³w."; 
 };
 
 FUNC int  KDW_600_Saturas_KDWAUFNAHME_Condition()
@@ -807,21 +807,21 @@ func void  KDW_600_Saturas_KDWAUFNAHME_Info()
 {
 	
 	AI_GotoNpc 			(hero,self);
-	AI_Output			(other, self,"KDW_600_Saturas_KDWAUFNAHME_Info_15_01"); //Jestem gotów do z³o¿enia œlubów.
-	AI_Output			(self, other,"KDW_600_Saturas_KDWAUFNAHME_Info_14_02"); //S³ugo Ognia, otrzymasz teraz b³ogos³awieñstwo Wody!
-	AI_Output			(self, other,"KDW_600_Saturas_KDWAUFNAHME_Info_14_03"); //Powtarzaj za mn¹ s³owa przysiêgi:
-	AI_Output			(self, other,"KDW_600_Saturas_KDWAUFNAHME_Info_14_04"); //Przysiêgam, na wszechmocnych bogów...
-	AI_Output			(other, self,"KDW_600_Saturas_KDWAUFNAHME_Info_15_05"); //Przysiêgam, na wszechmocnych bogów...
-	AI_Output			(self, other,"KDW_600_Saturas_KDWAUFNAHME_Info_14_06"); //...Przysiêgam, na potêgê œwiêtej Wody...
-	AI_Output			(other, self,"KDW_600_Saturas_KDWAUFNAHME_Info_15_07"); //...Przysiêgam, na potêgê œwiêtej Wody...
-	AI_Output			(self, other,"KDW_600_Saturas_KDWAUFNAHME_Info_14_08"); //...¯e ma wiedza i me czyny teraz i na wieki stanowiæ bêd¹ jednoœæ z Wod¹...
-	AI_Output			(other, self,"KDW_600_Saturas_KDWAUFNAHME_Info_15_09"); //...¯e ma wiedza i me czyny teraz i na wieki stanowiæ bêd¹ jednoœæ z Wod¹...
-	AI_Output			(self, other,"KDW_600_Saturas_KDWAUFNAHME_Info_14_10"); //...Dopóki me cia³o nie powróci do królestwa Beliara, gdy Ÿród³o mego ¿ycia wyschnie.
-	AI_Output			(other, self,"KDW_600_Saturas_KDWAUFNAHME_Info_15_11"); //...Dopóki me cia³o nie powróci do królestwa Beliara, gdy Ÿród³o mego ¿ycia wyschnie.
+	AI_Output			(other, self,"KDW_600_Saturas_KDWAUFNAHME_Info_15_01"); //Jestem gotÃ³w do zÅ‚oÅ¼enia Å›lubÃ³w.
+	AI_Output			(self, other,"KDW_600_Saturas_KDWAUFNAHME_Info_14_02"); //SÅ‚ugo Ognia, otrzymasz teraz bÅ‚ogosÅ‚awieÅ„stwo Wody!
+	AI_Output			(self, other,"KDW_600_Saturas_KDWAUFNAHME_Info_14_03"); //Powtarzaj za mnÄ… sÅ‚owa przysiÄ™gi:
+	AI_Output			(self, other,"KDW_600_Saturas_KDWAUFNAHME_Info_14_04"); //PrzysiÄ™gam, na wszechmocnych bogÃ³w...
+	AI_Output			(other, self,"KDW_600_Saturas_KDWAUFNAHME_Info_15_05"); //PrzysiÄ™gam, na wszechmocnych bogÃ³w...
+	AI_Output			(self, other,"KDW_600_Saturas_KDWAUFNAHME_Info_14_06"); //...PrzysiÄ™gam, na potÄ™gÄ™ Å›wiÄ™tej Wody...
+	AI_Output			(other, self,"KDW_600_Saturas_KDWAUFNAHME_Info_15_07"); //...PrzysiÄ™gam, na potÄ™gÄ™ Å›wiÄ™tej Wody...
+	AI_Output			(self, other,"KDW_600_Saturas_KDWAUFNAHME_Info_14_08"); //...Å»e ma wiedza i me czyny teraz i na wieki stanowiÄ‡ bÄ™dÄ… jednoÅ›Ä‡ z WodÄ…...
+	AI_Output			(other, self,"KDW_600_Saturas_KDWAUFNAHME_Info_15_09"); //...Å»e ma wiedza i me czyny teraz i na wieki stanowiÄ‡ bÄ™dÄ… jednoÅ›Ä‡ z WodÄ…...
+	AI_Output			(self, other,"KDW_600_Saturas_KDWAUFNAHME_Info_14_10"); //...DopÃ³ki me ciaÅ‚o nie powrÃ³ci do krÃ³lestwa Beliara, gdy ÅºrÃ³dÅ‚o mego Å¼ycia wyschnie.
+	AI_Output			(other, self,"KDW_600_Saturas_KDWAUFNAHME_Info_15_11"); //...DopÃ³ki me ciaÅ‚o nie powrÃ³ci do krÃ³lestwa Beliara, gdy ÅºrÃ³dÅ‚o mego Å¼ycia wyschnie.
 	
-	AI_Output			(self, other,"KDW_600_Saturas_KDWAUFNAHME_Info_14_12"); //Sk³adaj¹c tê przysiêgê zjednoczy³eœ w sobie potêgê Ognia i b³ogos³awieñstwo Wody.
-	AI_Output			(self, other,"KDW_600_Saturas_KDWAUFNAHME_Info_14_13"); //Po³¹czy³eœ teraz to, co niegdyœ rozdzielono. Niech twe ¿ycie i czyny bêd¹ znakiem zjednoczenia potêgi ¿ywio³ów.
-	AI_Output			(self, other,"KDW_600_Saturas_KDWAUFNAHME_Info_14_14"); //Noœ tê szatê, jako symbol twojego przymierza ze œwiêt¹ Wod¹ i wszechmocnym Adanosem.
+	AI_Output			(self, other,"KDW_600_Saturas_KDWAUFNAHME_Info_14_12"); //SkÅ‚adajÄ…c tÄ™ przysiÄ™gÄ™ zjednoczyÅ‚eÅ› w sobie potÄ™gÄ™ Ognia i bÅ‚ogosÅ‚awieÅ„stwo Wody.
+	AI_Output			(self, other,"KDW_600_Saturas_KDWAUFNAHME_Info_14_13"); //PoÅ‚Ä…czyÅ‚eÅ› teraz to, co niegdyÅ› rozdzielono. Niech twe Å¼ycie i czyny bÄ™dÄ… znakiem zjednoczenia potÄ™gi Å¼ywioÅ‚Ã³w.
+	AI_Output			(self, other,"KDW_600_Saturas_KDWAUFNAHME_Info_14_14"); //NoÅ› tÄ™ szatÄ™, jako symbol twojego przymierza ze Å›wiÄ™tÄ… WodÄ… i wszechmocnym Adanosem.
 
 	CreateInvItem		(self,KDW_ARMOR_L);
 	B_GiveInvItems		(self,other,KDW_ARMOR_L,1);
@@ -830,7 +830,7 @@ func void  KDW_600_Saturas_KDWAUFNAHME_Info()
 	Npc_SetTrueGuild	(hero,GIL_KDW);
 	hero.guild = GIL_KDW;
 
-	B_LogEntry			(CH4_BannedFromOC,"Do³¹czy³em do Magów Wody. Od tej chwili uzyska³em dostêp do obydwu szkó³ magii."); 
+	B_LogEntry			(CH4_BannedFromOC,"DoÅ‚Ä…czyÅ‚em do MagÃ³w Wody. Od tej chwili uzyskaÅ‚em dostÄ™p do obydwu szkÃ³Å‚ magii."); 
 	Log_SetTopicStatus	(CH4_BannedFromOC,	LOG_SUCCESS);
 
 	AI_StopProcessInfos	(self);
@@ -847,7 +847,7 @@ instance  KDW_600_Saturas_LESSON (C_INFO)
 	information		= KDW_600_Saturas_LESSON_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Mo¿esz mnie czegoœ nauczyæ?"; 
+	description		= "MoÅ¼esz mnie czegoÅ› nauczyÄ‡?"; 
 };
 
 FUNC int  KDW_600_Saturas_LESSON_Condition()
@@ -860,24 +860,24 @@ FUNC int  KDW_600_Saturas_LESSON_Condition()
 };
 FUNC void  KDW_600_Saturas_LESSON_Info()
 {
-	AI_Output			(other, self,"KDW_600_Saturas_LESSON_Info_15_01"); //Mo¿esz mnie czegoœ nauczyæ?
+	AI_Output			(other, self,"KDW_600_Saturas_LESSON_Info_15_01"); //MoÅ¼esz mnie czegoÅ› nauczyÄ‡?
 	
 	if (Npc_GetTalentSkill (hero,NPC_TALENT_MAGE ) <= 3)
 	{
-		AI_Output		(self, other,"KDW_600_Saturas_LESSON_Info_14_02"); //Przed tob¹ jeszcze wiele nauki. Rozpoczniemy zajêcia, gdy bêdziesz gotów.
+		AI_Output		(self, other,"KDW_600_Saturas_LESSON_Info_14_02"); //Przed tobÄ… jeszcze wiele nauki. Rozpoczniemy zajÄ™cia, gdy bÄ™dziesz gotÃ³w.
 	}
 	else if (Npc_GetTalentSkill (hero,NPC_TALENT_MAGE ) == 4)
 	{
-		AI_Output		(self, other,"KDW_600_Saturas_LESSON_Info_14_03"); //Jest jeszcze jeden Kr¹g, o którym nie wiesz. Opowiem ci o nim, gdy bêdziesz gotów.
+		AI_Output		(self, other,"KDW_600_Saturas_LESSON_Info_14_03"); //Jest jeszcze jeden KrÄ…g, o ktÃ³rym nie wiesz. Opowiem ci o nim, gdy bÄ™dziesz gotÃ³w.
 	}
 	else
 	{
-		AI_Output		(self, other,"KDW_600_Saturas_LESSON_Info_14_04"); //Opanowa³eœ ju¿ umiejêtnoœci z Pi¹tego Krêgu magii. Nauczy³em ciê wszystkiego co sam wiem.
-		AI_Output		(self, other,"KDW_600_Saturas_LESSON_Info_14_05"); //Wiêcej nie jestem w stanie ciê nauczyæ!
+		AI_Output		(self, other,"KDW_600_Saturas_LESSON_Info_14_04"); //OpanowaÅ‚eÅ› juÅ¼ umiejÄ™tnoÅ›ci z PiÄ…tego KrÄ™gu magii. NauczyÅ‚em ciÄ™ wszystkiego co sam wiem.
+		AI_Output		(self, other,"KDW_600_Saturas_LESSON_Info_14_05"); //WiÄ™cej nie jestem w stanie ciÄ™ nauczyÄ‡!
 	};
 
 	Log_CreateTopic		(GE_TeacherNC,	LOG_NOTE);
-	B_LogEntry			(GE_TeacherNC,"Saturas, przywódca Magów Wody, mo¿e mnie wprowadziæ w kolejne krêgi magii. Przebywa zwykle przy pentagramie, na górnym poziomie.");
+	B_LogEntry			(GE_TeacherNC,"Saturas, przywÃ³dca MagÃ³w Wody, moÅ¼e mnie wprowadziÄ‡ w kolejne krÄ™gi magii. Przebywa zwykle przy pentagramie, na gÃ³rnym poziomie.");
 };  
 //--------------------------------------------------------------------------
 // 							DER ERSTE KREIS
@@ -905,18 +905,18 @@ FUNC int  KDW_600_Saturas_KREIS1_Condition()
 };
 FUNC void  KDW_600_Saturas_KREIS1_Info()
 {
-	AI_Output			(other, self,"KDW_600_Saturas_KREIS1_Info_15_01"); //Jestem gotów, by przyst¹piæ do Pierwszego Krêgu.
+	AI_Output			(other, self,"KDW_600_Saturas_KREIS1_Info_15_01"); //Jestem gotÃ³w, by przystÄ…piÄ‡ do Pierwszego KrÄ™gu.
 	
 	if (B_GiveSkill(other,NPC_TALENT_MAGE , 1, LPCOST_TALENT_MAGE_1))
 	{
-		AI_Output			(self, other,"KDW_600_Saturas_KREIS1_Info_14_02"); //Przyst¹pienie do Pierwszego Krêgu wi¹¿e siê z poznaniem tajników magii runicznej.
-		AI_Output			(self, other,"KDW_600_Saturas_KREIS1_Info_14_03"); //Ka¿da runa zawiera esencjê szczególnego zaklêcia magicznego.
-		AI_Output			(self, other,"KDW_600_Saturas_KREIS1_Info_14_04"); //Wykorzystuj¹c swoje zdolnoœci magiczne, bêdziesz w stanie j¹ uwolniæ.
-		AI_Output			(self, other,"KDW_600_Saturas_KREIS1_Info_14_05"); //W odró¿nieniu od magicznych zwojów zawieraj¹cych formu³y zaklêæ, magia zawarta w runach jest trwa³a.
-		AI_Output			(self, other,"KDW_600_Saturas_KREIS1_Info_14_06"); //Runy s¹ Ÿród³em czarodziejskiej mocy, na którym mo¿esz polegaæ w ka¿dej sytuacji.
-		AI_Output			(self, other,"KDW_600_Saturas_KREIS1_Info_14_07"); //Twoja w³asna magia potrzebna jest podczas korzystania z run tak samo, jak gdy korzystasz z magicznych zwojów.
-		AI_Output			(self, other,"KDW_600_Saturas_KREIS1_Info_14_08"); //W miarê awansowania do kolejnych Krêgów, bêdziesz poznawa³ nowe runy.
-		AI_Output			(self, other,"KDW_600_Saturas_KREIS1_Info_14_09"); //Wykorzystaj drzemi¹c¹ w runach moc do poznania samego siebie.
+		AI_Output			(self, other,"KDW_600_Saturas_KREIS1_Info_14_02"); //PrzystÄ…pienie do Pierwszego KrÄ™gu wiÄ…Å¼e siÄ™ z poznaniem tajnikÃ³w magii runicznej.
+		AI_Output			(self, other,"KDW_600_Saturas_KREIS1_Info_14_03"); //KaÅ¼da runa zawiera esencjÄ™ szczegÃ³lnego zaklÄ™cia magicznego.
+		AI_Output			(self, other,"KDW_600_Saturas_KREIS1_Info_14_04"); //WykorzystujÄ…c swoje zdolnoÅ›ci magiczne, bÄ™dziesz w stanie jÄ… uwolniÄ‡.
+		AI_Output			(self, other,"KDW_600_Saturas_KREIS1_Info_14_05"); //W odrÃ³Å¼nieniu od magicznych zwojÃ³w zawierajÄ…cych formuÅ‚y zaklÄ™Ä‡, magia zawarta w runach jest trwaÅ‚a.
+		AI_Output			(self, other,"KDW_600_Saturas_KREIS1_Info_14_06"); //Runy sÄ… ÅºrÃ³dÅ‚em czarodziejskiej mocy, na ktÃ³rym moÅ¼esz polegaÄ‡ w kaÅ¼dej sytuacji.
+		AI_Output			(self, other,"KDW_600_Saturas_KREIS1_Info_14_07"); //Twoja wÅ‚asna magia potrzebna jest podczas korzystania z run tak samo, jak gdy korzystasz z magicznych zwojÃ³w.
+		AI_Output			(self, other,"KDW_600_Saturas_KREIS1_Info_14_08"); //W miarÄ™ awansowania do kolejnych KrÄ™gÃ³w, bÄ™dziesz poznawaÅ‚ nowe runy.
+		AI_Output			(self, other,"KDW_600_Saturas_KREIS1_Info_14_09"); //Wykorzystaj drzemiÄ…cÄ… w runach moc do poznania samego siebie.
 		KDW_600_Saturas_KREIS1.permanent = 0;
 	};
 };  
@@ -947,17 +947,17 @@ FUNC int  KDW_600_Saturas_KREIS2_Condition()
 };
 FUNC void  KDW_600_Saturas_KREIS2_Info()
 {
-	AI_Output			(other, self,"KDW_600_Saturas_KREIS2_Info_15_01"); //Jestem gotowy do przyst¹pienia do Drugiego Krêgu.
+	AI_Output			(other, self,"KDW_600_Saturas_KREIS2_Info_15_01"); //Jestem gotowy do przystÄ…pienia do Drugiego KrÄ™gu.
 	
 	if (B_GiveSkill(other,NPC_TALENT_MAGE , 2, LPCOST_TALENT_MAGE_2))
 	{
-		AI_Output			(self, other,"KDW_600_Saturas_KREIS2_Info_14_02"); //Pozna³eœ ju¿ magiczn¹ naturê jêzyka runicznego. Teraz zg³êbisz jego tajniki.
-		AI_Output			(self, other,"KDW_600_Saturas_KREIS2_Info_14_03"); //Po przyst¹pieniu do Drugiego Krêgu poznasz silniejsze zaklêcia ofensywne oraz tajemnicê magii uzdrawiaj¹cej.
-		AI_Output			(self, other,"KDW_600_Saturas_KREIS2_Info_14_04"); //Musisz siê jeszcze wiele nauczyæ, zanim dane ci bêdzie poznaæ prawdziwe oblicze magii.
-		AI_Output			(self, other,"KDW_600_Saturas_KREIS2_Info_14_05"); //Wiesz ju¿, ¿e runy mog¹ byæ wykorzystywane do chwili wyczerpania twoich w³asnych pok³adów si³y magicznej.
-		AI_Output			(self, other,"KDW_600_Saturas_KREIS2_Info_14_06"); //Jednak zanim przyst¹pisz do dzia³ania, zastanów siê nad celem, jaki ci przyœwieca. Moce, którymi bêdziesz dysponowa³ mog¹ nieœæ œmieræ i zniszczenie.
-		AI_Output			(self, other,"KDW_600_Saturas_KREIS2_Info_14_07"); //Ale prawdziwy mag wykorzystuje swoje zdolnoœci tylko wtedy, gdy jest to absolutnie niezbêdne.
-		AI_Output			(self, other,"KDW_600_Saturas_KREIS2_Info_14_08"); //Kiedy w pe³ni uœwiadomisz sobie ten fakt, zrozumiesz prawdê kryj¹c¹ siê za magi¹ runiczn¹.
+		AI_Output			(self, other,"KDW_600_Saturas_KREIS2_Info_14_02"); //PoznaÅ‚eÅ› juÅ¼ magicznÄ… naturÄ™ jÄ™zyka runicznego. Teraz zgÅ‚Ä™bisz jego tajniki.
+		AI_Output			(self, other,"KDW_600_Saturas_KREIS2_Info_14_03"); //Po przystÄ…pieniu do Drugiego KrÄ™gu poznasz silniejsze zaklÄ™cia ofensywne oraz tajemnicÄ™ magii uzdrawiajÄ…cej.
+		AI_Output			(self, other,"KDW_600_Saturas_KREIS2_Info_14_04"); //Musisz siÄ™ jeszcze wiele nauczyÄ‡, zanim dane ci bÄ™dzie poznaÄ‡ prawdziwe oblicze magii.
+		AI_Output			(self, other,"KDW_600_Saturas_KREIS2_Info_14_05"); //Wiesz juÅ¼, Å¼e runy mogÄ… byÄ‡ wykorzystywane do chwili wyczerpania twoich wÅ‚asnych pokÅ‚adÃ³w siÅ‚y magicznej.
+		AI_Output			(self, other,"KDW_600_Saturas_KREIS2_Info_14_06"); //Jednak zanim przystÄ…pisz do dziaÅ‚ania, zastanÃ³w siÄ™ nad celem, jaki ci przyÅ›wieca. Moce, ktÃ³rymi bÄ™dziesz dysponowaÅ‚ mogÄ… nieÅ›Ä‡ Å›mierÄ‡ i zniszczenie.
+		AI_Output			(self, other,"KDW_600_Saturas_KREIS2_Info_14_07"); //Ale prawdziwy mag wykorzystuje swoje zdolnoÅ›ci tylko wtedy, gdy jest to absolutnie niezbÄ™dne.
+		AI_Output			(self, other,"KDW_600_Saturas_KREIS2_Info_14_08"); //Kiedy w peÅ‚ni uÅ›wiadomisz sobie ten fakt, zrozumiesz prawdÄ™ kryjÄ…cÄ… siÄ™ za magiÄ… runicznÄ….
 		KDW_600_Saturas_KREIS2.permanent = 0;
 	};
 
@@ -989,15 +989,15 @@ FUNC int  KDW_600_Saturas_KREIS3_Condition()
 };
 FUNC void  KDW_600_Saturas_KREIS3_Info()
 {
-	AI_Output			(other, self,"KDW_600_Saturas_KREIS3_Info_15_01"); //Mo¿esz mnie wprowadziæ w arkana Trzeciego Krêgu?
+	AI_Output			(other, self,"KDW_600_Saturas_KREIS3_Info_15_01"); //MoÅ¼esz mnie wprowadziÄ‡ w arkana Trzeciego KrÄ™gu?
 	if (B_GiveSkill(other,NPC_TALENT_MAGE , 3, LPCOST_TALENT_MAGE_3))
 	{
-		AI_Output			(self, other,"KDW_600_Saturas_KREIS3_Info_14_02"); //Trzeci Kr¹g to jeden z najwa¿niejszych etapów w ¿yciu ka¿dego maga. Przystêpuj¹c do niego przestajesz byæ uczniem.
-		AI_Output			(self, other,"KDW_600_Saturas_KREIS3_Info_14_03"); //Zaszed³eœ ju¿ bardzo daleko na œcie¿ce magii. Potrafisz pos³ugiwaæ siê runami.
-		AI_Output			(self, other,"KDW_600_Saturas_KREIS3_Info_14_04"); //Ta wiedza pos³u¿y za fundament twojej dalszej nauki. U¿ywaj magii runicznej œwiadomie i z rozwag¹.
-		AI_Output			(self, other,"KDW_600_Saturas_KREIS3_Info_14_05"); //To, czy z niej skorzystasz, czy nie, powinno zale¿eæ wy³¹cznie od ciebie.
-		AI_Output			(self, other,"KDW_600_Saturas_KREIS3_Info_14_06"); //Wybór, którego dokonasz, musi byæ ostateczny. W magii nie ma miejsca na wahanie.
-		AI_Output			(self, other,"KDW_600_Saturas_KREIS3_Info_14_07"); //WyobraŸ sobie wyraŸnie œcie¿kê, któr¹ chcesz kroczyæ i ponieœ wszelkie konsekwencje swojego wyboru.
+		AI_Output			(self, other,"KDW_600_Saturas_KREIS3_Info_14_02"); //Trzeci KrÄ…g to jeden z najwaÅ¼niejszych etapÃ³w w Å¼yciu kaÅ¼dego maga. PrzystÄ™pujÄ…c do niego przestajesz byÄ‡ uczniem.
+		AI_Output			(self, other,"KDW_600_Saturas_KREIS3_Info_14_03"); //ZaszedÅ‚eÅ› juÅ¼ bardzo daleko na Å›cieÅ¼ce magii. Potrafisz posÅ‚ugiwaÄ‡ siÄ™ runami.
+		AI_Output			(self, other,"KDW_600_Saturas_KREIS3_Info_14_04"); //Ta wiedza posÅ‚uÅ¼y za fundament twojej dalszej nauki. UÅ¼ywaj magii runicznej Å›wiadomie i z rozwagÄ….
+		AI_Output			(self, other,"KDW_600_Saturas_KREIS3_Info_14_05"); //To, czy z niej skorzystasz, czy nie, powinno zaleÅ¼eÄ‡ wyÅ‚Ä…cznie od ciebie.
+		AI_Output			(self, other,"KDW_600_Saturas_KREIS3_Info_14_06"); //WybÃ³r, ktÃ³rego dokonasz, musi byÄ‡ ostateczny. W magii nie ma miejsca na wahanie.
+		AI_Output			(self, other,"KDW_600_Saturas_KREIS3_Info_14_07"); //WyobraÅº sobie wyraÅºnie Å›cieÅ¼kÄ™, ktÃ³rÄ… chcesz kroczyÄ‡ i ponieÅ› wszelkie konsekwencje swojego wyboru.
 		KDW_600_Saturas_KREIS3.permanent = 0;
 	};
 
@@ -1029,20 +1029,20 @@ FUNC int  KDW_600_Saturas_KREIS4_Condition()
 };
 FUNC void  KDW_600_Saturas_KREIS4_Info()
 {
-	AI_Output			(other, self,"KDW_600_Saturas_KREIS4_Info_15_01"); //Jestem gotowy do przyst¹pienia do Czwartego Krêgu.
+	AI_Output			(other, self,"KDW_600_Saturas_KREIS4_Info_15_01"); //Jestem gotowy do przystÄ…pienia do Czwartego KrÄ™gu.
 	if (B_GiveSkill(other,NPC_TALENT_MAGE , 4, LPCOST_TALENT_MAGE_4))
 	{
-		AI_Output			(self, other,"KDW_600_Saturas_KREIS4_Info_14_02"); //Ukoñczy³eœ ju¿ pierwsze trzy Krêgi. Nadesz³a pora, byœ zg³êbi³ prawdziw¹ naturê magii.
-		AI_Output			(self, other,"KDW_600_Saturas_KREIS4_Info_14_03"); //Magia runiczna jest zaklêta w kamieniu. W koñcu runy to fragmenty magicznej rudy.
-		AI_Output			(self, other,"KDW_600_Saturas_KREIS4_Info_14_04"); //Tej samej rudy, która wydobywana jest w kopalniach. Z pomoc¹ bogów runy nasycane s¹ magi¹ w naszych œwi¹tyniach staj¹c siê narzêdziem naszej potêgi.
-		AI_Output			(self, other,"KDW_600_Saturas_KREIS4_Info_14_05"); //Z twoj¹ znajomoœci¹ magii runicznej, ca³a wiedza zgromadzona przez wszystkie œwi¹tynie w tym królestwie stoi przed tob¹ otworem.
+		AI_Output			(self, other,"KDW_600_Saturas_KREIS4_Info_14_02"); //UkoÅ„czyÅ‚eÅ› juÅ¼ pierwsze trzy KrÄ™gi. NadeszÅ‚a pora, byÅ› zgÅ‚Ä™biÅ‚ prawdziwÄ… naturÄ™ magii.
+		AI_Output			(self, other,"KDW_600_Saturas_KREIS4_Info_14_03"); //Magia runiczna jest zaklÄ™ta w kamieniu. W koÅ„cu runy to fragmenty magicznej rudy.
+		AI_Output			(self, other,"KDW_600_Saturas_KREIS4_Info_14_04"); //Tej samej rudy, ktÃ³ra wydobywana jest w kopalniach. Z pomocÄ… bogÃ³w runy nasycane sÄ… magiÄ… w naszych Å›wiÄ…tyniach stajÄ…c siÄ™ narzÄ™dziem naszej potÄ™gi.
+		AI_Output			(self, other,"KDW_600_Saturas_KREIS4_Info_14_05"); //Z twojÄ… znajomoÅ›ciÄ… magii runicznej, caÅ‚a wiedza zgromadzona przez wszystkie Å›wiÄ…tynie w tym krÃ³lestwie stoi przed tobÄ… otworem.
 		//AI_Output			(self, other,"KDW_600_Saturas_KREIS4_Info_14_06"); //Du hast jetzt alles gelernt, was ich dir beibringen kann.
-		AI_Output			(self, other,"KDW_600_Saturas_KREIS4_Info_14_07"); //Pamiêtaj: poznanie natury magii jest kluczem do poznania natury potêgi i w³adzy.
+		AI_Output			(self, other,"KDW_600_Saturas_KREIS4_Info_14_07"); //PamiÄ™taj: poznanie natury magii jest kluczem do poznania natury potÄ™gi i wÅ‚adzy.
 		KDW_600_Saturas_KREIS4.permanent = 0;
 	};
 };  
 /*------------------------------------------------------------------------
-							DER FÜNFTE KREIS							
+							DER FÃœNFTE KREIS							
 ------------------------------------------------------------------------*/
 
 instance  KDW_600_Saturas_KREIS5 (C_INFO)
@@ -1068,15 +1068,15 @@ FUNC int  KDW_600_Saturas_KREIS5_Condition()
 };
 FUNC void  KDW_600_Saturas_KREIS5_Info()
 {
-	AI_Output			(other, self,"KDW_600_Saturas_KREIS5_Info_15_01"); //Jestem gotów do przyst¹pienia do Pi¹tego Krêgu.
+	AI_Output			(other, self,"KDW_600_Saturas_KREIS5_Info_15_01"); //Jestem gotÃ³w do przystÄ…pienia do PiÄ…tego KrÄ™gu.
 	if (B_GiveSkill(other,NPC_TALENT_MAGE , 5, LPCOST_TALENT_MAGE_5))
 	{
-		AI_Output		(self, other,"KDW_600_Saturas_KREIS5_Info_14_02"); //Dobrze. Wprowadzê ciê w arkana Pi¹tego Krêgu Magii.
-		AI_Output		(self, other,"KDW_600_Saturas_KREIS5_Info_14_03"); //Od tej pory bêdziesz móg³ wykorzystywaæ magiczne runy zaklêæ Ognistej Burzy i Lodowej Fali oraz posi¹dziesz moc niszczenia O¿ywieñców.
-		AI_Output		(self, other,"KDW_600_Saturas_KREIS5_Info_14_04"); //Jednak najpotê¿niejszym zaklêciem Pi¹tego Krêgu Magii jest Tchnienie Œmierci. Gdyby uda³o ci siê kiedyœ odnaleŸæ tê runê, dysponowa³byœ niewyobra¿aln¹ moc¹.
-		AI_Output		(self, other,"KDW_600_Saturas_KREIS5_Info_14_05"); //Staraj siê nie wykorzystywaæ magii tego rodzaju bez potrzeby. Jest ona darem od boga ciemnoœci!
-		AI_Output		(self, other,"KDW_600_Saturas_KREIS4_Info_14_06"); //Nauczy³em ciê wszystkiego, co sam potrafiê.
-		AI_Output		(self, other,"KDW_600_Saturas_KREIS5_Info_14_06"); //Poznaj granice swoich mo¿liwoœci, a poznasz samego siebie.
+		AI_Output		(self, other,"KDW_600_Saturas_KREIS5_Info_14_02"); //Dobrze. WprowadzÄ™ ciÄ™ w arkana PiÄ…tego KrÄ™gu Magii.
+		AI_Output		(self, other,"KDW_600_Saturas_KREIS5_Info_14_03"); //Od tej pory bÄ™dziesz mÃ³gÅ‚ wykorzystywaÄ‡ magiczne runy zaklÄ™Ä‡ Ognistej Burzy i Lodowej Fali oraz posiÄ…dziesz moc niszczenia OÅ¼ywieÅ„cÃ³w.
+		AI_Output		(self, other,"KDW_600_Saturas_KREIS5_Info_14_04"); //Jednak najpotÄ™Å¼niejszym zaklÄ™ciem PiÄ…tego KrÄ™gu Magii jest Tchnienie Åšmierci. Gdyby udaÅ‚o ci siÄ™ kiedyÅ› odnaleÅºÄ‡ tÄ™ runÄ™, dysponowaÅ‚byÅ› niewyobraÅ¼alnÄ… mocÄ….
+		AI_Output		(self, other,"KDW_600_Saturas_KREIS5_Info_14_05"); //Staraj siÄ™ nie wykorzystywaÄ‡ magii tego rodzaju bez potrzeby. Jest ona darem od boga ciemnoÅ›ci!
+		AI_Output		(self, other,"KDW_600_Saturas_KREIS4_Info_14_06"); //NauczyÅ‚em ciÄ™ wszystkiego, co sam potrafiÄ™.
+		AI_Output		(self, other,"KDW_600_Saturas_KREIS5_Info_14_06"); //Poznaj granice swoich moÅ¼liwoÅ›ci, a poznasz samego siebie.
 		KDW_600_Saturas_KREIS5.permanent = 0;
 	};
 };  
@@ -1105,20 +1105,20 @@ FUNC int  KDW_600_Saturas_HEAVYARMOR_Condition()
 };
 FUNC void  KDW_600_Saturas_HEAVYARMOR_Info()
 {
-	AI_Output				(other, self,"KDW_600_Saturas_HEAVYARMOR_Info_15_01"); //Chcia³bym nosiæ szatê Arcymaga Wody.
+	AI_Output				(other, self,"KDW_600_Saturas_HEAVYARMOR_Info_15_01"); //ChciaÅ‚bym nosiÄ‡ szatÄ™ Arcymaga Wody.
 	
 	if (Npc_GetTalentSkill (hero,NPC_TALENT_MAGE ) < 4)
 	&& (Kapitel < 5)
 	{
-		AI_Output			(self, other,"KDW_600_Saturas_HEAVYARMOR_Info_14_02"); //Nie jesteœ jeszcze godzien nosiæ szatê Arcymaga.
+		AI_Output			(self, other,"KDW_600_Saturas_HEAVYARMOR_Info_14_02"); //Nie jesteÅ› jeszcze godzien nosiÄ‡ szatÄ™ Arcymaga.
 	}
 	else if (Npc_HasItems (hero,ItMinugget) < VALUE_KDW_ARMOR_H)
 	{
-		AI_Output			(self, other,"KDW_600_Saturas_HEAVYARMOR_Info_14_03"); //Te kila bry³ek rudy, które posiadasz, nie wystarczy nawet na pokrycie kosztów jej utkania!
+		AI_Output			(self, other,"KDW_600_Saturas_HEAVYARMOR_Info_14_03"); //Te kila bryÅ‚ek rudy, ktÃ³re posiadasz, nie wystarczy nawet na pokrycie kosztÃ³w jej utkania!
 	}
 	else
 	{
-		AI_Output			(self, other,"KDW_600_Saturas_HEAVYARMOR_Info_14_04"); //Twój czas nadszed³. Jesteœ godzien, by od dziœ nosiæ szatê Arcymaga Wody.
+		AI_Output			(self, other,"KDW_600_Saturas_HEAVYARMOR_Info_14_04"); //TwÃ³j czas nadszedÅ‚. JesteÅ› godzien, by od dziÅ› nosiÄ‡ szatÄ™ Arcymaga Wody.
 		KDW_600_Saturas_HEAVYARMOR.permanent = 0;
 
 		B_GiveInvItems		(hero,self,	ItMinugget,VALUE_KDW_ARMOR_H);
@@ -1142,7 +1142,7 @@ instance Info_Saturas_NOWSLD (C_INFO)
 	information	= Info_Saturas_NOWSLD_Info;
 	permanent	= 0;
 	important	= 0;
-	description = "Lee przyj¹³ mnie w poczet Najemników.";
+	description = "Lee przyjÄ…Å‚ mnie w poczet NajemnikÃ³w.";
 };
 
 FUNC INT Info_Saturas_NOWSLD_Condition()
@@ -1155,11 +1155,11 @@ FUNC INT Info_Saturas_NOWSLD_Condition()
 
 FUNC VOID Info_Saturas_NOWSLD_Info()
 {
-	AI_Output			(hero,self,"Info_Saturas_NOWSLD_15_01"); //Lee przyj¹³ mnie w poczet Najemników.
-	AI_Output			(self,hero,"Info_Saturas_NOWSLD_14_02"); //Dobrze. Bardzo dobrze. Teraz jesteœ oficjalnie cz³onkiem naszej spo³ecznoœci.
-	AI_Output			(self,hero,"Info_Saturas_NOWSLD_14_03"); //Witaj wœród nas!
+	AI_Output			(hero,self,"Info_Saturas_NOWSLD_15_01"); //Lee przyjÄ…Å‚ mnie w poczet NajemnikÃ³w.
+	AI_Output			(self,hero,"Info_Saturas_NOWSLD_14_02"); //Dobrze. Bardzo dobrze. Teraz jesteÅ› oficjalnie czÅ‚onkiem naszej spoÅ‚ecznoÅ›ci.
+	AI_Output			(self,hero,"Info_Saturas_NOWSLD_14_03"); //Witaj wÅ›rÃ³d nas!
 
-	B_LogEntry			(CH4_BannedFromOC,"Saturas oficjalnie przywita³ mnie w gronie Najemników.");
+	B_LogEntry			(CH4_BannedFromOC,"Saturas oficjalnie przywitaÅ‚ mnie w gronie NajemnikÃ³w.");
 	Log_SetTopicStatus	(CH4_BannedFromOC,	LOG_SUCCESS);	
 };
 
@@ -1173,14 +1173,14 @@ instance Info_Saturas_XARDAS (C_INFO)
 	information	= Info_Saturas_XARDAS_Info;
 	permanent	= 0;
 	important	= 0;
-	description = "Kiedy wysy³a³eœ mnie do Magów Ognia, wspomnia³eœ coœ o... jeszcze jednym?";
+	description = "Kiedy wysyÅ‚aÅ‚eÅ› mnie do MagÃ³w Ognia, wspomniaÅ‚eÅ› coÅ› o... jeszcze jednym?";
 };
 
 FUNC INT Info_Saturas_XARDAS_Condition()
 {	
 	if	Npc_KnowsInfo(hero, Info_Saturas_COLLAPSE)
 	&&	Npc_KnowsInfo(hero, Info_Saturas_MURDER)
-	{		 										//***Björn***>
+	{		 										//***BjÃ¶rn***>
 
 		if( (Npc_GetTrueGuild(hero)!=GIL_GRD)  &&  (Npc_GetTrueGuild(hero)!=GIL_KDF)  )
 		{
@@ -1205,7 +1205,7 @@ FUNC INT Info_Saturas_XARDAS_Condition()
 		else
 		{
 			return TRUE;
-		}; 											<***Björn***
+		}; 											<***BjÃ¶rn***
 */												
 
 	};	
@@ -1213,17 +1213,17 @@ FUNC INT Info_Saturas_XARDAS_Condition()
 
 FUNC VOID Info_Saturas_XARDAS_Info()
 {
-	AI_Output			(hero,self,"Info_Saturas_XARDAS_15_01"); //Kiedy wysy³a³eœ mnie do Magów Ognia, wspomnia³eœ coœ o... jeszcze jednym?
-	AI_Output			(self,hero,"Info_Saturas_XARDAS_14_02"); //Có¿, mia³em nadziejê, ¿e obejdziemy siê bez jego pomocy, ale w œwietle ostatnich wydarzeñ...
-	AI_Output			(hero,self,"Info_Saturas_XARDAS_15_03"); //O kim mówisz?
-	AI_Output			(self,hero,"Info_Saturas_XARDAS_14_04"); //No dobrze ju¿, dobrze.
+	AI_Output			(hero,self,"Info_Saturas_XARDAS_15_01"); //Kiedy wysyÅ‚aÅ‚eÅ› mnie do MagÃ³w Ognia, wspomniaÅ‚eÅ› coÅ› o... jeszcze jednym?
+	AI_Output			(self,hero,"Info_Saturas_XARDAS_14_02"); //CÃ³Å¼, miaÅ‚em nadziejÄ™, Å¼e obejdziemy siÄ™ bez jego pomocy, ale w Å›wietle ostatnich wydarzeÅ„...
+	AI_Output			(hero,self,"Info_Saturas_XARDAS_15_03"); //O kim mÃ³wisz?
+	AI_Output			(self,hero,"Info_Saturas_XARDAS_14_04"); //No dobrze juÅ¼, dobrze.
 	AI_Output			(self,hero,"Info_Saturas_XARDAS_14_05"); //Wiele lat temu...
-	AI_Output			(hero,self,"Info_Saturas_XARDAS_15_06"); //Wola³bym wersjê skrócon¹, jeœli ³aska!
-	AI_Output			(self,hero,"Info_Saturas_XARDAS_14_07"); //B¹dŸ cierpliwy. Có¿, kiedy tworzyliœmy magiczn¹ Barierê, nadzorowa³ nas jeszcze jeden, trzynasty mag. 
-	AI_Output			(hero,self,"Info_Saturas_XARDAS_15_08"); //Trzynasty mag? Wed³ug legendy mia³o was byæ tylko dwunastu!
-	AI_Output			(self,hero,"Info_Saturas_XARDAS_14_09"); //Niewielu z ¿yj¹cych pamiêta dok³adnie wydarzenia tamtych dni, a my - magowie - woleliœmy nie odœwie¿aæ im niepotrzebnie pamiêci.
-	AI_Output			(self,hero,"Info_Saturas_XARDAS_14_10"); //Ten trzynasty mag by³ naszym przywódc¹. Oczywiœcie dzia³o siê to jeszcze przed podzia³em na Krêgi Wody i Ognia.
-	AI_Output			(self,hero,"Info_Saturas_XARDAS_14_11"); //Tu¿ po za³o¿eniu Starego Obozu - a wtedy by³ to jeszcze jedyny obóz w kolonii - ów mag postanowi³ wieœæ ¿ycie samotnika.
+	AI_Output			(hero,self,"Info_Saturas_XARDAS_15_06"); //WolaÅ‚bym wersjÄ™ skrÃ³conÄ…, jeÅ›li Å‚aska!
+	AI_Output			(self,hero,"Info_Saturas_XARDAS_14_07"); //BÄ…dÅº cierpliwy. CÃ³Å¼, kiedy tworzyliÅ›my magicznÄ… BarierÄ™, nadzorowaÅ‚ nas jeszcze jeden, trzynasty mag. 
+	AI_Output			(hero,self,"Info_Saturas_XARDAS_15_08"); //Trzynasty mag? WedÅ‚ug legendy miaÅ‚o was byÄ‡ tylko dwunastu!
+	AI_Output			(self,hero,"Info_Saturas_XARDAS_14_09"); //Niewielu z Å¼yjÄ…cych pamiÄ™ta dokÅ‚adnie wydarzenia tamtych dni, a my - magowie - woleliÅ›my nie odÅ›wieÅ¼aÄ‡ im niepotrzebnie pamiÄ™ci.
+	AI_Output			(self,hero,"Info_Saturas_XARDAS_14_10"); //Ten trzynasty mag byÅ‚ naszym przywÃ³dcÄ…. OczywiÅ›cie dziaÅ‚o siÄ™ to jeszcze przed podziaÅ‚em na KrÄ™gi Wody i Ognia.
+	AI_Output			(self,hero,"Info_Saturas_XARDAS_14_11"); //TuÅ¼ po zaÅ‚oÅ¼eniu Starego Obozu - a wtedy byÅ‚ to jeszcze jedyny obÃ³z w kolonii - Ã³w mag postanowiÅ‚ wieÅ›Ä‡ Å¼ycie samotnika.
 };
 
 //---------------------------------------------------------------------
@@ -1236,7 +1236,7 @@ instance Info_Saturas_XARDASWHO (C_INFO)
 	information	= Info_Saturas_XARDASWHO_Info;
 	permanent	= 0;
 	important 	= 0;
-	description = "Jak ma na imiê ten trzynasty mag?";
+	description = "Jak ma na imiÄ™ ten trzynasty mag?";
 };
 
 FUNC INT Info_Saturas_XARDASWHO_Condition()
@@ -1249,9 +1249,9 @@ FUNC INT Info_Saturas_XARDASWHO_Condition()
 
 FUNC VOID Info_Saturas_XARDASWHO_Info()
 {
-	AI_Output			(hero,self,"Info_Saturas_XARDASWHO_15_01"); //Jak ma na imiê ten trzynasty mag?
-	AI_Output			(self,hero,"Info_Saturas_XARDASWHO_14_02"); //Nazywa³ siê Xardas. Dzisiaj ju¿ tylko garstka ludzi pamiêta o jego istnieniu.
-	AI_Output			(self,hero,"Info_Saturas_XARDASWHO_14_03"); //Ale ci, którzy go znali, nazywali go po prostu NEKROMANT¥!
+	AI_Output			(hero,self,"Info_Saturas_XARDASWHO_15_01"); //Jak ma na imiÄ™ ten trzynasty mag?
+	AI_Output			(self,hero,"Info_Saturas_XARDASWHO_14_02"); //NazywaÅ‚ siÄ™ Xardas. Dzisiaj juÅ¼ tylko garstka ludzi pamiÄ™ta o jego istnieniu.
+	AI_Output			(self,hero,"Info_Saturas_XARDASWHO_14_03"); //Ale ci, ktÃ³rzy go znali, nazywali go po prostu NEKROMANTÄ„!
 };
 
 //---------------------------------------------------------------------
@@ -1264,7 +1264,7 @@ instance Info_Saturas_XARDASWHY (C_INFO)
 	information	= Info_Saturas_XARDASWHY_Info;
 	permanent	= 0;
 	important 	= 0;
-	description = "Dlaczego opuœci³ Stary Obóz?";
+	description = "Dlaczego opuÅ›ciÅ‚ Stary ObÃ³z?";
 };
 
 FUNC INT Info_Saturas_XARDASWHY_Condition()
@@ -1277,11 +1277,11 @@ FUNC INT Info_Saturas_XARDASWHY_Condition()
 
 FUNC VOID Info_Saturas_XARDASWHY_Info()
 {
-	AI_Output			(hero,self,"Info_Saturas_XARDASWHY_15_01"); //Dlaczego opuœci³ Stary Obóz?
-	AI_Output			(self,hero,"Info_Saturas_XARDASWHY_14_02"); //Xardas chcia³ kontynuowaæ swe badania nad przyzywaniem o¿ywieñców i istot z innych wymiarów.
-	AI_Output			(self,hero,"Info_Saturas_XARDASWHY_14_03"); //Nie tylko Gomez zacz¹³ siê tym niepokoiæ. Pozostali magowie równie¿ krzywo patrzyli na niego i jego plugawe badania.
-	AI_Output			(hero,self,"Info_Saturas_XARDASWHY_15_04"); //I co siê z nim sta³o?
-	AI_Output			(self,hero,"Info_Saturas_XARDASWHY_14_05"); //W odró¿nieniu od Gomeza, Xardas nie by³ rzeŸnikiem i wola³ unikn¹æ otwartego konfliktu. Pewnego dnia opuœci³ Obóz.
+	AI_Output			(hero,self,"Info_Saturas_XARDASWHY_15_01"); //Dlaczego opuÅ›ciÅ‚ Stary ObÃ³z?
+	AI_Output			(self,hero,"Info_Saturas_XARDASWHY_14_02"); //Xardas chciaÅ‚ kontynuowaÄ‡ swe badania nad przyzywaniem oÅ¼ywieÅ„cÃ³w i istot z innych wymiarÃ³w.
+	AI_Output			(self,hero,"Info_Saturas_XARDASWHY_14_03"); //Nie tylko Gomez zaczÄ…Å‚ siÄ™ tym niepokoiÄ‡. Pozostali magowie rÃ³wnieÅ¼ krzywo patrzyli na niego i jego plugawe badania.
+	AI_Output			(hero,self,"Info_Saturas_XARDASWHY_15_04"); //I co siÄ™ z nim staÅ‚o?
+	AI_Output			(self,hero,"Info_Saturas_XARDASWHY_14_05"); //W odrÃ³Å¼nieniu od Gomeza, Xardas nie byÅ‚ rzeÅºnikiem i wolaÅ‚ uniknÄ…Ä‡ otwartego konfliktu. Pewnego dnia opuÅ›ciÅ‚ ObÃ³z.
 };
 
 //---------------------------------------------------------------------
@@ -1294,7 +1294,7 @@ instance Info_Saturas_XARDASWHERE (C_INFO)
 	information	= Info_Saturas_XARDASWHERE_Info;
 	permanent	= 0;
 	important 	= 0;
-	description = "Wiesz mo¿e gdzie podziewa siê teraz ten trzynasty mag?";
+	description = "Wiesz moÅ¼e gdzie podziewa siÄ™ teraz ten trzynasty mag?";
 };
 
 FUNC INT Info_Saturas_XARDASWHERE_Condition()
@@ -1307,9 +1307,9 @@ FUNC INT Info_Saturas_XARDASWHERE_Condition()
 
 FUNC VOID Info_Saturas_XARDASWHERE_Info()
 {
-	AI_Output			(hero,self,"Info_Saturas_XARDASWHERE_15_01"); //Wiesz mo¿e, gdzie podziewa siê teraz ten trzynasty mag?
-	AI_Output			(self,hero,"Info_Saturas_XARDASWHERE_14_02"); //¯yje w odosobnieniu, w swej wie¿y, gdzieœ na terytoriach kontrolowanych przez Orków.
-	AI_Output			(self,hero,"Info_Saturas_XARDASWHERE_14_03"); //To chyba najdalej wysuniêty na po³udnie punkt ca³ej kolonii.
+	AI_Output			(hero,self,"Info_Saturas_XARDASWHERE_15_01"); //Wiesz moÅ¼e, gdzie podziewa siÄ™ teraz ten trzynasty mag?
+	AI_Output			(self,hero,"Info_Saturas_XARDASWHERE_14_02"); //Å»yje w odosobnieniu, w swej wieÅ¼y, gdzieÅ› na terytoriach kontrolowanych przez OrkÃ³w.
+	AI_Output			(self,hero,"Info_Saturas_XARDASWHERE_14_03"); //To chyba najdalej wysuniÄ™ty na poÅ‚udnie punkt caÅ‚ej kolonii.
 };
 
 //---------------------------------------------------------------------
@@ -1322,7 +1322,7 @@ instance Info_Saturas_XARDASHELP (C_INFO)
 	information	= Info_Saturas_XARDASHELP_Info;
 	permanent	= 0;
 	important 	= 0;
-	description = "Spróbujê dotrzeæ do tego Xardasa i poproszê go o pomoc!";
+	description = "SprÃ³bujÄ™ dotrzeÄ‡ do tego Xardasa i poproszÄ™ go o pomoc!";
 };
 
 FUNC INT Info_Saturas_XARDASHELP_Condition()
@@ -1337,10 +1337,10 @@ FUNC INT Info_Saturas_XARDASHELP_Condition()
 
 FUNC VOID Info_Saturas_XARDASHELP_Info()
 {
-	AI_Output			(hero,self,"Info_Saturas_XARDASHELP_15_01"); //Spróbujê dotrzeæ do tego Xardasa i poproszê go o pomoc!
-	AI_Output			(self,hero,"Info_Saturas_XARDASHELP_14_02"); //Tylko on jeden mo¿e nas teraz uratowaæ.
-	AI_Output			(self,hero,"Info_Saturas_XARDASHELP_14_03"); //A gdyby nawet on nie wiedzia³, jak nas st¹d wydostaæ, albo nie zechcia³ nam pomóc...
-	AI_Output			(hero,self,"Info_Saturas_XARDASHELP_15_04"); //BÊDZIE... I ZECHCE!
+	AI_Output			(hero,self,"Info_Saturas_XARDASHELP_15_01"); //SprÃ³bujÄ™ dotrzeÄ‡ do tego Xardasa i poproszÄ™ go o pomoc!
+	AI_Output			(self,hero,"Info_Saturas_XARDASHELP_14_02"); //Tylko on jeden moÅ¼e nas teraz uratowaÄ‡.
+	AI_Output			(self,hero,"Info_Saturas_XARDASHELP_14_03"); //A gdyby nawet on nie wiedziaÅ‚, jak nas stÄ…d wydostaÄ‡, albo nie zechciaÅ‚ nam pomÃ³c...
+	AI_Output			(hero,self,"Info_Saturas_XARDASHELP_15_04"); //BÄ˜DZIE... I ZECHCE!
 	AI_Output			(self,hero,"Info_Saturas_XARDASHELP_14_05"); //Jest jednak inny problem...
 	
 	B_Story_FindXardas	();
@@ -1370,14 +1370,14 @@ FUNC INT Info_Saturas_XARDASPROBLEM_Condition()
 FUNC VOID Info_Saturas_XARDASPROBLEM_Info()
 {
 	AI_Output			(hero,self,"Info_Saturas_XARDASPROBLEM_15_01"); //Mianowicie?
-	AI_Output			(self,hero,"Info_Saturas_XARDASPROBLEM_14_02"); //Có¿, przez te wszystkie lata kilkakrotnie próbowaliœmy nawi¹zaæ z Xardasem jakiœ kontakt.
-	AI_Output			(self,hero,"Info_Saturas_XARDASPROBLEM_14_03"); //Ale wygl¹da na to, ¿e nie ¿yczy sobie, ¿eby mu przeszkadzano.
-	AI_Output			(hero,self,"Info_Saturas_XARDASPROBLEM_15_04"); //Co chcesz przez to powiedzieæ?
-	AI_Output			(self,hero,"Info_Saturas_XARDASPROBLEM_14_05"); //¯aden z wys³anych przez nas pos³añców nie wróci³ z jego wie¿y.
-	AI_Output			(self,hero,"Info_Saturas_XARDASPROBLEM_14_06"); //Musisz znaleŸæ jakiœ sposób, aby przedrzeæ siê przez stra¿ników Xardasa.
-	AI_Output			(hero,self,"Info_Saturas_XARDASPROBLEM_15_07"); //Widzê, ¿e szykuje siê nie lada wyprawa!
+	AI_Output			(self,hero,"Info_Saturas_XARDASPROBLEM_14_02"); //CÃ³Å¼, przez te wszystkie lata kilkakrotnie prÃ³bowaliÅ›my nawiÄ…zaÄ‡ z Xardasem jakiÅ› kontakt.
+	AI_Output			(self,hero,"Info_Saturas_XARDASPROBLEM_14_03"); //Ale wyglÄ…da na to, Å¼e nie Å¼yczy sobie, Å¼eby mu przeszkadzano.
+	AI_Output			(hero,self,"Info_Saturas_XARDASPROBLEM_15_04"); //Co chcesz przez to powiedzieÄ‡?
+	AI_Output			(self,hero,"Info_Saturas_XARDASPROBLEM_14_05"); //Å»aden z wysÅ‚anych przez nas posÅ‚aÅ„cÃ³w nie wrÃ³ciÅ‚ z jego wieÅ¼y.
+	AI_Output			(self,hero,"Info_Saturas_XARDASPROBLEM_14_06"); //Musisz znaleÅºÄ‡ jakiÅ› sposÃ³b, aby przedrzeÄ‡ siÄ™ przez straÅ¼nikÃ³w Xardasa.
+	AI_Output			(hero,self,"Info_Saturas_XARDASPROBLEM_15_07"); //WidzÄ™, Å¼e szykuje siÄ™ nie lada wyprawa!
 	
-	B_LogEntry			(CH4_FindXardas,"Saturas uprzedzi³ mnie o magicznych stra¿nikach Xardasa Nekromanty. W bibliotece Magów Wody znajdê informacje o silnych i s³abych stronach tych istot. Powinienem poœwiêciæ trochê czasu na przestudiowanie odpowiednich manuskryptów.");	
+	B_LogEntry			(CH4_FindXardas,"Saturas uprzedziÅ‚ mnie o magicznych straÅ¼nikach Xardasa Nekromanty. W bibliotece MagÃ³w Wody znajdÄ™ informacje o silnych i sÅ‚abych stronach tych istot. Powinienem poÅ›wiÄ™ciÄ‡ trochÄ™ czasu na przestudiowanie odpowiednich manuskryptÃ³w.");	
 };
 
 //---------------------------------------------------------------------
@@ -1390,7 +1390,7 @@ instance Info_Saturas_XARDASGO (C_INFO)
 	information	= Info_Saturas_XARDASGO_Info;
 	permanent	= 0;
 	important 	= 0;
-	description = "Jak mogê przedostaæ siê do Xardasa?";
+	description = "Jak mogÄ™ przedostaÄ‡ siÄ™ do Xardasa?";
 };
 
 FUNC INT Info_Saturas_XARDASGO_Condition()
@@ -1403,19 +1403,19 @@ FUNC INT Info_Saturas_XARDASGO_Condition()
 
 FUNC VOID Info_Saturas_XARDASGO_Info()
 {
-	AI_Output			(hero,self,"Info_Saturas_XARDASGO_15_01"); //Jak mogê przedostaæ siê do Xardasa?
-	AI_Output			(self,hero,"Info_Saturas_XARDASGO_14_02"); //Niestety, nie mam ¿adnego pomys³u...
-	AI_Output			(self,hero,"Info_Saturas_XARDASGO_14_03"); //Radzi³bym ci jednak rozejrzeæ siê trochê w naszej bibliotece.
-	AI_Output			(self,hero,"Info_Saturas_XARDASGO_14_04"); //Mo¿e w którejœ ze starych ksi¹g odnajdziesz jakieœ wskazówki co do mocnych i s³abych stron istot przywo³anych magicznie.
-	AI_Output			(hero,self,"Info_Saturas_XARDASGO_15_05"); //W takim razie pójdê rozejrzeæ siê trochê po bibliotece. Nie obawiaj siê...
-	AI_Output			(hero,self,"Info_Saturas_XARDASGO_15_06"); //Nied³ugo wrócê!
+	AI_Output			(hero,self,"Info_Saturas_XARDASGO_15_01"); //Jak mogÄ™ przedostaÄ‡ siÄ™ do Xardasa?
+	AI_Output			(self,hero,"Info_Saturas_XARDASGO_14_02"); //Niestety, nie mam Å¼adnego pomysÅ‚u...
+	AI_Output			(self,hero,"Info_Saturas_XARDASGO_14_03"); //RadziÅ‚bym ci jednak rozejrzeÄ‡ siÄ™ trochÄ™ w naszej bibliotece.
+	AI_Output			(self,hero,"Info_Saturas_XARDASGO_14_04"); //MoÅ¼e w ktÃ³rejÅ› ze starych ksiÄ…g odnajdziesz jakieÅ› wskazÃ³wki co do mocnych i sÅ‚abych stron istot przywoÅ‚anych magicznie.
+	AI_Output			(hero,self,"Info_Saturas_XARDASGO_15_05"); //W takim razie pÃ³jdÄ™ rozejrzeÄ‡ siÄ™ trochÄ™ po bibliotece. Nie obawiaj siÄ™...
+	AI_Output			(hero,self,"Info_Saturas_XARDASGO_15_06"); //NiedÅ‚ugo wrÃ³cÄ™!
 
-	B_LogEntry			(CH4_FindXardas,"W bibliotece Magów Wody znajduj¹ siê zapiski traktuj¹ce o sposobach walki z takimi istotami. Powinienem poœwiêciæ trochê czasu na przestudiowanie tych manuskryptów.");
+	B_LogEntry			(CH4_FindXardas,"W bibliotece MagÃ³w Wody znajdujÄ… siÄ™ zapiski traktujÄ…ce o sposobach walki z takimi istotami. Powinienem poÅ›wiÄ™ciÄ‡ trochÄ™ czasu na przestudiowanie tych manuskryptÃ³w.");
 	
 };
 
 /*------------------------------------------------------------------------
-//	TIMESUP- Xardas ist die Schlüsselperson, Saturas ist nicht mehr wichtig									
+//	TIMESUP- Xardas ist die SchlÃ¼sselperson, Saturas ist nicht mehr wichtig									
 ------------------------------------------------------------------------*/
 instance KDW_600_Saturas_TIMESUP (C_INFO)
 {
@@ -1436,19 +1436,19 @@ FUNC int  KDW_600_Saturas_TIMESUP_Condition()
 };
 func void  KDW_600_Saturas_TIMESUP_Info()
 {
-	AI_Output			(self, other,"KDW_600_Saturas_TIMESUP_Info_14_00"); //Rozmawia³eœ z Xardasem?
+	AI_Output			(self, other,"KDW_600_Saturas_TIMESUP_Info_14_00"); //RozmawiaÅ‚eÅ› z Xardasem?
 	Info_ClearChoices	(KDW_600_Saturas_TIMESUP);
 	Info_AddChoice		(KDW_600_Saturas_TIMESUP,"No wiesz...",KDW_600_Saturas_TIMESUP_JA1);
 	Info_AddChoice		(KDW_600_Saturas_TIMESUP,"Nie...",KDW_600_Saturas_TIMESUP_JA2);
-	Info_AddChoice		(KDW_600_Saturas_TIMESUP,"To nie jest tak jak myœlisz...",KDW_600_Saturas_TIMESUP_JA3);
+	Info_AddChoice		(KDW_600_Saturas_TIMESUP,"To nie jest tak jak myÅ›lisz...",KDW_600_Saturas_TIMESUP_JA3);
 
 };
 func void KDW_600_Saturas_TIMESUP_JA1()
 {
 	AI_Output			(other, self,"KDW_600_Saturas_TIMESUP_Info_15_01"); //No wiesz...
 	AI_Output			(self, other,"KDW_600_Saturas_TIMESUP_Info_14_02"); //Wiesz? CO WIESZ?
-	//AI_Output			(other, self,"KDW_600_Saturas_TIMESUP_Info_15_03"); //Äh ... noch nicht ... ich bin aber schon unterwegs ...
-	//AI_Output			(self, other,"KDW_600_Saturas_TIMESUP_Info_14_04"); //Beeile dich, wir dürfen keine Zeit mehr verlieren!
+	//AI_Output			(other, self,"KDW_600_Saturas_TIMESUP_Info_15_03"); //Ã„h ... noch nicht ... ich bin aber schon unterwegs ...
+	//AI_Output			(self, other,"KDW_600_Saturas_TIMESUP_Info_14_04"); //Beeile dich, wir dÃ¼rfen keine Zeit mehr verlieren!
 	//B_Story_CancelFindXardas();
 	//AI_StopProcessInfos(self);
 };
@@ -1456,17 +1456,17 @@ func void KDW_600_Saturas_TIMESUP_JA2()
 {
 	AI_Output			(other, self,"KDW_600_Saturas_TIMESUP_Info_15_05"); //Nie...
 	AI_Output			(self, other,"KDW_600_Saturas_TIMESUP_Info_14_06"); //Dlaczego?
-	AI_Output			(other, self,"KDW_600_Saturas_TIMESUP_Info_15_07"); //Nie uda³o mi siê jeszcze do niego dotrzeæ.
-	AI_Output			(self, other,"KDW_600_Saturas_TIMESUP_Info_14_08"); //Musisz go odnaleŸæ i poprosiæ go o pomoc!
+	AI_Output			(other, self,"KDW_600_Saturas_TIMESUP_Info_15_07"); //Nie udaÅ‚o mi siÄ™ jeszcze do niego dotrzeÄ‡.
+	AI_Output			(self, other,"KDW_600_Saturas_TIMESUP_Info_14_08"); //Musisz go odnaleÅºÄ‡ i poprosiÄ‡ go o pomoc!
 	B_Story_CancelFindXardas();
 	AI_StopProcessInfos	(self);
 };
 func void KDW_600_Saturas_TIMESUP_JA3()
 {
-	AI_Output			(other, self,"KDW_600_Saturas_TIMESUP_Info_15_09"); //To nie jest tak jak myœlisz...
-	AI_Output			(self, other,"KDW_600_Saturas_TIMESUP_Info_14_10"); //Jak to? Xardas musi nam pomóc w zdetonowaniu kopca rudy!
-	AI_Output			(other, self,"KDW_600_Saturas_TIMESUP_Info_15_11"); //Kopiec... jest... Ehm... Jest ju¿ bardzo du¿y!
-	AI_Output			(self, other,"KDW_600_Saturas_TIMESUP_Info_14_12"); //ZnajdŸ Xardasa! On musi nam pomóc!
+	AI_Output			(other, self,"KDW_600_Saturas_TIMESUP_Info_15_09"); //To nie jest tak jak myÅ›lisz...
+	AI_Output			(self, other,"KDW_600_Saturas_TIMESUP_Info_14_10"); //Jak to? Xardas musi nam pomÃ³c w zdetonowaniu kopca rudy!
+	AI_Output			(other, self,"KDW_600_Saturas_TIMESUP_Info_15_11"); //Kopiec... jest... Ehm... Jest juÅ¼ bardzo duÅ¼y!
+	AI_Output			(self, other,"KDW_600_Saturas_TIMESUP_Info_14_12"); //ZnajdÅº Xardasa! On musi nam pomÃ³c!
 	B_Story_CancelFindXardas();
 	AI_StopProcessInfos	(self);
 };
@@ -1491,7 +1491,7 @@ instance KDW_600_Saturas_HogeAUFNAHME (C_INFO)
 	condition		= KDW_600_Saturas_HogeAUFNAHME_Condition;
 	information		= KDW_600_Saturas_HogeAUFNAHME_Info;
 	permanent		= 0;
-	description		= "Nefarius powiedzia³, ¿e mogê ju¿ za³o¿yæ szatê Maga Wody."; 
+	description		= "Nefarius powiedziaÅ‚, Å¼e mogÄ™ juÅ¼ zaÅ‚oÅ¼yÄ‡ szatÄ™ Maga Wody."; 
 };
 
 FUNC int  KDW_600_Saturas_HogeAUFNAHME_Condition()
@@ -1504,13 +1504,13 @@ FUNC int  KDW_600_Saturas_HogeAUFNAHME_Condition()
 
 func void  KDW_600_Saturas_HogeAUFNAHME_Info()
 {
-	AI_Output(other, self,"KDW_600_Saturas_HogeAUFNAHME_15_00"); //Nefarius powiedzia³, ¿e mogê ju¿ za³o¿yæ szatê Maga Wody.
+	AI_Output(other, self,"KDW_600_Saturas_HogeAUFNAHME_15_00"); //Nefarius powiedziaÅ‚, Å¼e mogÄ™ juÅ¼ zaÅ‚oÅ¼yÄ‡ szatÄ™ Maga Wody.
 	
 	/* AB HIER IST ALLES DOPPELT - geklaut aus der KdF-KdW-Aufnahme */
 	
-	AI_Output(self, other,"KDW_600_Saturas_NOMOREOC_Info_14_03"); //Zatem witaj w naszej spo³ecznoœci!
-	AI_Output(other, self,"KDW_600_Saturas_OATH_Info_15_01"); //Czy to oznacza, ¿e nale¿ê teraz do krêgu Magów Wody?
-	AI_Output(self, other,"KDW_600_Saturas_OATH_Info_14_02"); //Jeszcze nie. Najpierw musisz z³o¿yæ œluby Wody.
+	AI_Output(self, other,"KDW_600_Saturas_NOMOREOC_Info_14_03"); //Zatem witaj w naszej spoÅ‚ecznoÅ›ci!
+	AI_Output(other, self,"KDW_600_Saturas_OATH_Info_15_01"); //Czy to oznacza, Å¼e naleÅ¼Ä™ teraz do krÄ™gu MagÃ³w Wody?
+	AI_Output(self, other,"KDW_600_Saturas_OATH_Info_14_02"); //Jeszcze nie. Najpierw musisz zÅ‚oÅ¼yÄ‡ Å›luby Wody.
 };
 	
 // ****************************************
@@ -1523,7 +1523,7 @@ instance KDW_600_Saturas_HogeAUFNAHMETeil2 (C_INFO)
 	condition		= KDW_600_Saturas_HogeAUFNAHMETeil2_Condition;
 	information		= KDW_600_Saturas_HogeAUFNAHMETeil2_Info;
 	permanent		= 0;
-	description		= "Jestem gotów do z³o¿enia œlubów."; 
+	description		= "Jestem gotÃ³w do zÅ‚oÅ¼enia Å›lubÃ³w."; 
 };
 
 FUNC int  KDW_600_Saturas_HogeAUFNAHMETeil2_Condition()
@@ -1537,18 +1537,18 @@ FUNC int  KDW_600_Saturas_HogeAUFNAHMETeil2_Condition()
 func void  KDW_600_Saturas_HogeAUFNAHMETeil2_Info()
 {
 	AI_GotoNpc 			(hero,self);
-	AI_Output			(other, self,"KDW_600_Saturas_KDWAUFNAHME_Info_15_01"); //Jestem gotów do z³o¿enia œlubów.
-	AI_Output			(self, other,"KDW_600_Saturas_KDWAUFNAHME_Info_14_03"); //Powtarzaj za mn¹ s³owa przysiêgi:
-	AI_Output			(self, other,"KDW_600_Saturas_KDWAUFNAHME_Info_14_04"); //Przysiêgam, na wszechmocnych bogów...
-	AI_Output			(other, self,"KDW_600_Saturas_KDWAUFNAHME_Info_15_05"); //Przysiêgam, na wszechmocnych bogów...
-	AI_Output			(self, other,"KDW_600_Saturas_KDWAUFNAHME_Info_14_06"); //...Przysiêgam, na potêgê œwiêtej Wody...
-	AI_Output			(other, self,"KDW_600_Saturas_KDWAUFNAHME_Info_15_07"); //...Przysiêgam, na potêgê œwiêtej Wody...
-	AI_Output			(self, other,"KDW_600_Saturas_KDWAUFNAHME_Info_14_08"); //...¯e ma wiedza i me czyny teraz i na wieki stanowiæ bêd¹ jednoœæ z Wod¹...
-	AI_Output			(other, self,"KDW_600_Saturas_KDWAUFNAHME_Info_15_09"); //...¯e ma wiedza i me czyny teraz i na wieki stanowiæ bêd¹ jednoœæ z Wod¹...
-	AI_Output			(self, other,"KDW_600_Saturas_KDWAUFNAHME_Info_14_10"); //...Dopóki me cia³o nie powróci do królestwa Beliara, gdy Ÿród³o mego ¿ycia wyschnie.
-	AI_Output			(other, self,"KDW_600_Saturas_KDWAUFNAHME_Info_15_11"); //...Dopóki me cia³o nie powróci do królestwa Beliara, gdy Ÿród³o mego ¿ycia wyschnie.
+	AI_Output			(other, self,"KDW_600_Saturas_KDWAUFNAHME_Info_15_01"); //Jestem gotÃ³w do zÅ‚oÅ¼enia Å›lubÃ³w.
+	AI_Output			(self, other,"KDW_600_Saturas_KDWAUFNAHME_Info_14_03"); //Powtarzaj za mnÄ… sÅ‚owa przysiÄ™gi:
+	AI_Output			(self, other,"KDW_600_Saturas_KDWAUFNAHME_Info_14_04"); //PrzysiÄ™gam, na wszechmocnych bogÃ³w...
+	AI_Output			(other, self,"KDW_600_Saturas_KDWAUFNAHME_Info_15_05"); //PrzysiÄ™gam, na wszechmocnych bogÃ³w...
+	AI_Output			(self, other,"KDW_600_Saturas_KDWAUFNAHME_Info_14_06"); //...PrzysiÄ™gam, na potÄ™gÄ™ Å›wiÄ™tej Wody...
+	AI_Output			(other, self,"KDW_600_Saturas_KDWAUFNAHME_Info_15_07"); //...PrzysiÄ™gam, na potÄ™gÄ™ Å›wiÄ™tej Wody...
+	AI_Output			(self, other,"KDW_600_Saturas_KDWAUFNAHME_Info_14_08"); //...Å»e ma wiedza i me czyny teraz i na wieki stanowiÄ‡ bÄ™dÄ… jednoÅ›Ä‡ z WodÄ…...
+	AI_Output			(other, self,"KDW_600_Saturas_KDWAUFNAHME_Info_15_09"); //...Å»e ma wiedza i me czyny teraz i na wieki stanowiÄ‡ bÄ™dÄ… jednoÅ›Ä‡ z WodÄ…...
+	AI_Output			(self, other,"KDW_600_Saturas_KDWAUFNAHME_Info_14_10"); //...DopÃ³ki me ciaÅ‚o nie powrÃ³ci do krÃ³lestwa Beliara, gdy ÅºrÃ³dÅ‚o mego Å¼ycia wyschnie.
+	AI_Output			(other, self,"KDW_600_Saturas_KDWAUFNAHME_Info_15_11"); //...DopÃ³ki me ciaÅ‚o nie powrÃ³ci do krÃ³lestwa Beliara, gdy ÅºrÃ³dÅ‚o mego Å¼ycia wyschnie.
 	
-	AI_Output			(self, other,"KDW_600_Saturas_KDWAUFNAHME_Info_14_14"); //Noœ tê szatê, jako symbol twojego przymierza ze œwiêt¹ Wod¹ i wszechmocnym Adanosem.
+	AI_Output			(self, other,"KDW_600_Saturas_KDWAUFNAHME_Info_14_14"); //NoÅ› tÄ™ szatÄ™, jako symbol twojego przymierza ze Å›wiÄ™tÄ… WodÄ… i wszechmocnym Adanosem.
 
 	CreateInvItem		(self,KDW_ARMOR_L);
 	B_GiveInvItems		(self,other,KDW_ARMOR_L,1);
@@ -1558,7 +1558,7 @@ func void  KDW_600_Saturas_HogeAUFNAHMETeil2_Info()
 	hero.guild = GIL_KDW;
 
 	Log_CreateTopic		(CH4_SldToKdW,	LOG_NOTE);
-	B_LogEntry			(CH4_SldToKdW,"Saturas przyj¹³ mnie w poczet Magów Wody.");
+	B_LogEntry			(CH4_SldToKdW,"Saturas przyjÄ…Å‚ mnie w poczet MagÃ³w Wody.");
 
 	AI_StopProcessInfos	(self);
 };

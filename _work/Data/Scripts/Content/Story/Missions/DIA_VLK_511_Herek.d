@@ -46,11 +46,11 @@ FUNC INT DIA_Herek_Bully_Condition()
 
 FUNC VOID DIA_Herek_Bully_Info()
 {
-	AI_Output (self, other,"DIA_Herek_Bully_01_00"); //Zaczekaj! S³ysza³em, ¿e gada³eœ z Bloodwynem?
+	AI_Output (self, other,"DIA_Herek_Bully_01_00"); //Zaczekaj! SÅ‚yszaÅ‚em, Å¼e gadaÅ‚eÅ› z Bloodwynem?
 	AI_Output (other, self,"DIA_Herek_Bully_15_01"); //A co? Czego chcesz?
-	AI_Output (self, other,"DIA_Herek_Bully_01_02"); //Niez³y z ciebie goœæ! Niewielu ma tyle odwagi, ¿eby mu podskoczyæ!
-	AI_Output (self, other,"DIA_Herek_Bully_01_03"); //A to oznacza, ¿e teraz my wszyscy bêdziemy musieli p³aciæ twoj¹ dolê.
-	AI_Output (self, other,"DIA_Herek_Bully_01_04"); //Postaram siê, ¿ebyœ o tym pamiêta³, gdy Bloodwyn znów poprosi ciê o datek.
+	AI_Output (self, other,"DIA_Herek_Bully_01_02"); //NiezÅ‚y z ciebie goÅ›Ä‡! Niewielu ma tyle odwagi, Å¼eby mu podskoczyÄ‡!
+	AI_Output (self, other,"DIA_Herek_Bully_01_03"); //A to oznacza, Å¼e teraz my wszyscy bÄ™dziemy musieli pÅ‚aciÄ‡ twojÄ… dolÄ™.
+	AI_Output (self, other,"DIA_Herek_Bully_01_04"); //Postaram siÄ™, Å¼ebyÅ› o tym pamiÄ™taÅ‚, gdy Bloodwyn znÃ³w poprosi ciÄ™ o datek.
 	
 	Npc_SetPermAttitude (self,ATT_ANGRY);
 	
@@ -71,7 +71,7 @@ INSTANCE DIA_Herek_Motz (C_INFO)
 	condition		= DIA_Herek_Motz_Condition;
 	information		= DIA_Herek_Motz_Info;
 	permanent		= 0;
-	description		= "Co s³ychaæ?";
+	description		= "Co sÅ‚ychaÄ‡?";
 };
 
 FUNC INT DIA_Herek_Motz_Condition()
@@ -84,11 +84,11 @@ FUNC INT DIA_Herek_Motz_Condition()
 
 FUNC VOID DIA_Herek_Motz_Info()
 {
-	AI_Output (other, self,"DIA_Herek_Motz_15_00"); //Co s³ychaæ?
+	AI_Output (other, self,"DIA_Herek_Motz_15_00"); //Co sÅ‚ychaÄ‡?
 	AI_Output (self, other,"DIA_Herek_Motz_01_01"); //W tym obozie jest miejsce tylko dla jednego z nas!
-	AI_Output (other, self,"DIA_Herek_Motz_15_02"); //Co proszê?
-	AI_Output (self, other,"DIA_Herek_Motz_01_03"); //Gdyby to zale¿a³o ode mnie, dawno ju¿ byœ nie ¿y³!
-	AI_Output (self, other,"DIA_Herek_Motz_01_04"); //Wiesz dlaczego tu trafi³em? Zabi³em dwunastu ludzi jednej nocy, ot - tak sobie... Hi hi hi!
+	AI_Output (other, self,"DIA_Herek_Motz_15_02"); //Co proszÄ™?
+	AI_Output (self, other,"DIA_Herek_Motz_01_03"); //Gdyby to zaleÅ¼aÅ‚o ode mnie, dawno juÅ¼ byÅ› nie Å¼yÅ‚!
+	AI_Output (self, other,"DIA_Herek_Motz_01_04"); //Wiesz dlaczego tu trafiÅ‚em? ZabiÅ‚em dwunastu ludzi jednej nocy, ot - tak sobie... Hi hi hi!
 	
 	Npc_SetPermAttitude (self,ATT_ANGRY);
 		
@@ -106,7 +106,7 @@ INSTANCE DIA_Herek_Anlegen (C_INFO)
 	condition		= DIA_Herek_Anlegen_Condition;
 	information		= DIA_Herek_Anlegen_Info;
 	permanent		= 1;
-	description		= "Myœlisz, ¿e taki twardziel z ciebie? Mo¿e spróbujesz szczêœcia ze mn¹?!";
+	description		= "MyÅ›lisz, Å¼e taki twardziel z ciebie? MoÅ¼e sprÃ³bujesz szczÄ™Å›cia ze mnÄ…?!";
 };
 
 FUNC INT DIA_Herek_Anlegen_Condition()
@@ -119,8 +119,8 @@ FUNC INT DIA_Herek_Anlegen_Condition()
 
 FUNC VOID DIA_Herek_Anlegen_Info()
 {
-	AI_Output (other, self,"DIA_Herek_Anlegen_15_00"); //Myœlisz, ¿e taki twardziel z ciebie? Mo¿e spróbujesz szczêœcia ze mn¹?!
-	AI_Output (self, other,"DIA_Herek_Anlegen_01_01"); //Chcesz dostaæ w czapê? Có¿, nasz klient - nasz pan!
+	AI_Output (other, self,"DIA_Herek_Anlegen_15_00"); //MyÅ›lisz, Å¼e taki twardziel z ciebie? MoÅ¼e sprÃ³bujesz szczÄ™Å›cia ze mnÄ…?!
+	AI_Output (self, other,"DIA_Herek_Anlegen_01_01"); //Chcesz dostaÄ‡ w czapÄ™? CÃ³Å¼, nasz klient - nasz pan!
 	
 	AI_StopProcessInfos	(self);
 	

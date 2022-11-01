@@ -34,7 +34,7 @@ instance  Org_873_Cipher_Hello (C_INFO)
 	condition	=  Org_873_Cipher_Hello_Condition;
 	information	=  Org_873_Cipher_Hello_Info;
 	permanent	=  0;
-	description = "Co s³ychaæ?";
+	description = "Co sÅ‚ychaÄ‡?";
 };                       
 
 FUNC int  Org_873_Cipher_Hello_Condition()
@@ -47,11 +47,11 @@ FUNC int  Org_873_Cipher_Hello_Condition()
 
 FUNC VOID  Org_873_Cipher_Hello_Info()
 {
-	AI_Output (other, self,"DIA_Cipher_Hello_15_00"); //Co s³ychaæ?
-	AI_Output (self, other,"DIA_Cipher_Hello_12_01"); //Nasypaliœmy trochê piasku w machinê Gomeza.
-	AI_Output (self, other,"DIA_Cipher_Hello_12_02"); //Trzech zabitych stra¿ników i mnóstwo towaru na sprzeda¿. Trzeba to opiæ!
-	AI_Output (other, self,"DIA_Cipher_Hello_15_03"); //Jesteœ jednym z ludzi, którzy bez przerwy napadaj¹ Stary Obóz?
-	AI_Output (self, other,"DIA_Cipher_Hello_12_04"); //Nie. Napadamy go tylko wtedy, kiedy siê to op³aca.
+	AI_Output (other, self,"DIA_Cipher_Hello_15_00"); //Co sÅ‚ychaÄ‡?
+	AI_Output (self, other,"DIA_Cipher_Hello_12_01"); //NasypaliÅ›my trochÄ™ piasku w machinÄ™ Gomeza.
+	AI_Output (self, other,"DIA_Cipher_Hello_12_02"); //Trzech zabitych straÅ¼nikÃ³w i mnÃ³stwo towaru na sprzedaÅ¼. Trzeba to opiÄ‡!
+	AI_Output (other, self,"DIA_Cipher_Hello_15_03"); //JesteÅ› jednym z ludzi, ktÃ³rzy bez przerwy napadajÄ… Stary ObÃ³z?
+	AI_Output (self, other,"DIA_Cipher_Hello_12_04"); //Nie. Napadamy go tylko wtedy, kiedy siÄ™ to opÅ‚aca.
 };
 
 // ******************************
@@ -65,7 +65,7 @@ instance  Org_873_Cipher_Fisk (C_INFO)
 	condition	=  Org_873_Cipher_Fisk_Condition;
 	information	=  Org_873_Cipher_Fisk_Info;
 	permanent	=  1;
-	description = "Fisk ze Starego Obozu szuka nowego partnera do interesów.";
+	description = "Fisk ze Starego Obozu szuka nowego partnera do interesÃ³w.";
 };                       
 
 FUNC int  Org_873_Cipher_Fisk_Condition()
@@ -78,9 +78,9 @@ FUNC int  Org_873_Cipher_Fisk_Condition()
 
 FUNC VOID  Org_873_Cipher_Fisk_Info()
 {
-	AI_Output (other, self,"DIA_Cipher_Fisk_15_00"); //Fisk ze Starego Obozu szuka nowego partnera do interesów.
+	AI_Output (other, self,"DIA_Cipher_Fisk_15_00"); //Fisk ze Starego Obozu szuka nowego partnera do interesÃ³w.
 	AI_Output (self, other,"DIA_Cipher_Fisk_12_01"); //Nie jestem zainteresowany.
-	AI_Output (self, other,"DIA_Cipher_Fisk_12_02"); //Ale powinieneœ porozmawiaæ z Sharkym. Mo¿e on na to pójdzie.
+	AI_Output (self, other,"DIA_Cipher_Fisk_12_02"); //Ale powinieneÅ› porozmawiaÄ‡ z Sharkym. MoÅ¼e on na to pÃ³jdzie.
 };
 
 // ******************************
@@ -110,17 +110,17 @@ FUNC int  Org_873_Cipher_FromBalor_Condition()
 FUNC VOID  Org_873_Cipher_FromBalor_Info()
 {
 	AI_Output (other, self,"DIA_Cipher_FromBalor_15_00"); //Co masz do zaoferowania?
-	AI_Output (self, other,"DIA_Cipher_FromBalor_12_01"); //Nie, nie! Pytanie brzmi: co TY masz do zaoferowania! Interesuj¹ mnie wy³¹cznie powa¿ne dostawy.
+	AI_Output (self, other,"DIA_Cipher_FromBalor_12_01"); //Nie, nie! Pytanie brzmi: co TY masz do zaoferowania! InteresujÄ… mnie wyÅ‚Ä…cznie powaÅ¼ne dostawy.
 	if (Balor_TellsNCDealer == TRUE)
 	{
-		AI_Output (other, self,"DIA_Cipher_FromBalor_15_02"); //Balor powiedzia³ mi, ¿e interesuje ciê bagienne ziele.
-		AI_Output (self, other,"DIA_Cipher_FromBalor_12_03"); //Mhm. Masz coœ na sprzeda¿?
+		AI_Output (other, self,"DIA_Cipher_FromBalor_15_02"); //Balor powiedziaÅ‚ mi, Å¼e interesuje ciÄ™ bagienne ziele.
+		AI_Output (self, other,"DIA_Cipher_FromBalor_12_03"); //Mhm. Masz coÅ› na sprzedaÅ¼?
 		Cipher_Trade = TRUE;
 	}
 	else
 	{
 		AI_Output (other, self,"DIA_Cipher_FromBalor_15_04"); //Niestety nie.
-		AI_Output (self, other,"DIA_Cipher_FromBalor_12_05"); //Wiêc wróæ do mnie, jak bêdziesz mia³ coœ co mnie zainteresuje.
+		AI_Output (self, other,"DIA_Cipher_FromBalor_12_05"); //WiÄ™c wrÃ³Ä‡ do mnie, jak bÄ™dziesz miaÅ‚ coÅ› co mnie zainteresuje.
 	};
 };
 

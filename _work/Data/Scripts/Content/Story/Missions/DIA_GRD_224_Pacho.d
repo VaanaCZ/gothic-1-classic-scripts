@@ -51,12 +51,12 @@ func void Info_Pacho_STOP_Info()
 {
 	AI_Output			(self, hero,"Info_Pacho_STOP_13_01"); //Hej, ty!
 	AI_Output			(hero, self,"Info_Pacho_STOP_15_02"); //Kto? Ja?
-	AI_Output			(self, hero,"Info_Pacho_STOP_13_03"); //Nie, twoja babcia... Jasne, ¿e ty!!!
-	AI_Output			(self, hero,"Info_Pacho_STOP_13_04"); //Na twoim miejscu nie szed³bym dalej!
+	AI_Output			(self, hero,"Info_Pacho_STOP_13_03"); //Nie, twoja babcia... Jasne, Å¼e ty!!!
+	AI_Output			(self, hero,"Info_Pacho_STOP_13_04"); //Na twoim miejscu nie szedÅ‚bym dalej!
 	AI_Output			(hero, self,"Info_Pacho_STOP_15_05"); //Dlaczego?
-	AI_Output			(self, hero,"Info_Pacho_STOP_13_06"); //Widzê, ¿e jesteœ tu nowy, co?
-	AI_Output			(self, hero,"Info_Pacho_STOP_13_07"); //Stary, ta droga prowadzi na ziemie Orków...
-	AI_Output			(self, hero,"Info_Pacho_STOP_13_08"); //Zrobi¹ z ciebie kotlety!
+	AI_Output			(self, hero,"Info_Pacho_STOP_13_06"); //WidzÄ™, Å¼e jesteÅ› tu nowy, co?
+	AI_Output			(self, hero,"Info_Pacho_STOP_13_07"); //Stary, ta droga prowadzi na ziemie OrkÃ³w...
+	AI_Output			(self, hero,"Info_Pacho_STOP_13_08"); //ZrobiÄ… z ciebie kotlety!
 	AI_Output			(hero, self,"Info_Pacho_STOP_15_09"); //Och!
 	AI_Output			(self, hero,"Info_Pacho_STOP_13_10"); //Nie ma za co!
 

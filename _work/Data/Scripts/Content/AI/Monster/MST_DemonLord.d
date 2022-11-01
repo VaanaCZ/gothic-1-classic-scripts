@@ -4,7 +4,7 @@
 
 PROTOTYPE Mst_Default_DemonLord(C_Npc)			
 {
-	name							=	"Ksi¹¿e Demonów";
+	name							=	"KsiÄ…Å¼e DemonÃ³w";
 	guild							=	GIL_DEMON;
 	aivar[AIV_MM_REAL_ID]			= 	ID_DEMONLORD;
 	level							=	100;

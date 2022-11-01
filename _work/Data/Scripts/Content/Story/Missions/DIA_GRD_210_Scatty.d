@@ -33,7 +33,7 @@ INSTANCE DIA_Scatty_WhatDoYouDo (C_INFO)
 	condition	= DIA_Scatty_WhatDoYouDo_Condition;
 	information	= DIA_Scatty_WhatDoYouDo_Info;
 	permanent	= 0;
-	description = "Czym siê tutaj zajmujesz?";
+	description = "Czym siÄ™ tutaj zajmujesz?";
 };                       
 
 FUNC INT DIA_Scatty_WhatDoYouDo_Condition()
@@ -43,8 +43,8 @@ FUNC INT DIA_Scatty_WhatDoYouDo_Condition()
 
 FUNC VOID DIA_Scatty_WhatDoYouDo_Info()
 {
-	AI_Output (other,self,"DIA_Scatty_WhatDoYouDo_15_00"); //Czym siê tutaj zajmujesz?
-	AI_Output (self,other,"DIA_Scatty_WhatDoYouDo_01_01"); //Organizujê walki na arenie. Przyjmujê zak³ady, pozyskujê nowych wojowników... No wiesz.
+	AI_Output (other,self,"DIA_Scatty_WhatDoYouDo_15_00"); //Czym siÄ™ tutaj zajmujesz?
+	AI_Output (self,other,"DIA_Scatty_WhatDoYouDo_01_01"); //OrganizujÄ™ walki na arenie. PrzyjmujÄ™ zakÅ‚ady, pozyskujÄ™ nowych wojownikÃ³w... No wiesz.
 };
 
 // **************************************************
@@ -62,7 +62,7 @@ INSTANCE DIA_Scatty_JoinOC (C_INFO)
 	condition	= DIA_Scatty_JoinOC_Condition;
 	information	= DIA_Scatty_JoinOC_Info;
 	permanent	= 0;
-	description = "Chcê do³¹czyæ do waszego obozu. Mo¿esz mi pomóc?";
+	description = "ChcÄ™ doÅ‚Ä…czyÄ‡ do waszego obozu. MoÅ¼esz mi pomÃ³c?";
 };                       
 
 FUNC INT DIA_Scatty_JoinOC_Condition()
@@ -74,10 +74,10 @@ FUNC INT DIA_Scatty_JoinOC_Condition()
 };
 FUNC VOID DIA_Scatty_JoinOC_Info()
 {
-	AI_Output (other,self,"DIA_Scatty_JoinOC_15_00"); //Chcê do³¹czyæ do waszego obozu. Mo¿esz mi pomóc?
-	AI_Output (self,other,"DIA_Scatty_JoinOC_01_01"); //Pomogê ci, jeœli zrobisz na mnie odpowiednio dobre wra¿enie.
-	AI_Output (self,other,"DIA_Scatty_JoinOC_01_02"); //Najlepsi wojownicy z wszystkich obozów przybywaj¹ tutaj, by stan¹æ w szranki na mojej arenie.
-	AI_Output (self,other,"DIA_Scatty_JoinOC_01_03"); //Wyzwij któregoœ z nich na pojedynek. Zobaczê, co potrafisz, i jeœli mi siê spodoba, mo¿e szepnê s³ówko w twoim imieniu.
+	AI_Output (other,self,"DIA_Scatty_JoinOC_15_00"); //ChcÄ™ doÅ‚Ä…czyÄ‡ do waszego obozu. MoÅ¼esz mi pomÃ³c?
+	AI_Output (self,other,"DIA_Scatty_JoinOC_01_01"); //PomogÄ™ ci, jeÅ›li zrobisz na mnie odpowiednio dobre wraÅ¼enie.
+	AI_Output (self,other,"DIA_Scatty_JoinOC_01_02"); //Najlepsi wojownicy z wszystkich obozÃ³w przybywajÄ… tutaj, by stanÄ…Ä‡ w szranki na mojej arenie.
+	AI_Output (self,other,"DIA_Scatty_JoinOC_01_03"); //Wyzwij ktÃ³regoÅ› z nich na pojedynek. ZobaczÄ™, co potrafisz, i jeÅ›li mi siÄ™ spodoba, moÅ¼e szepnÄ™ sÅ‚Ã³wko w twoim imieniu.
 	
 	Scatty_ChargeKirgo = LOG_RUNNING;
 	Scatty_ChargeKharim = LOG_RUNNING;
@@ -86,7 +86,7 @@ FUNC VOID DIA_Scatty_JoinOC_Info()
 	var C_NPC Kharim;	Kharim = Hlp_GetNpc(Sld_729_Kharim);		Kharim.aivar[AIV_WASDEFEATEDBYSC] = FALSE;		Kharim.aivar[AIV_HASDEFEATEDSC] = FALSE;
 	var C_NPC GorHanis;	GorHanis = Hlp_GetNpc(Tpl_1422_GorHanis);	GorHanis.aivar[AIV_WASDEFEATEDBYSC] = FALSE;	GorHanis.aivar[AIV_HASDEFEATEDSC] = FALSE;
 	
-	B_LogEntry( CH1_JoinOC,"Scatty, organizator walk na arenie, chcia³by zobaczyæ, jak sobie poradzê w starciu z którymœ z jego wojowników.");
+	B_LogEntry( CH1_JoinOC,"Scatty, organizator walk na arenie, chciaÅ‚by zobaczyÄ‡, jak sobie poradzÄ™ w starciu z ktÃ³rymÅ› z jego wojownikÃ³w.");
 };
 
 // **************************************************
@@ -100,7 +100,7 @@ INSTANCE DIA_Scatty_KirgoSuccess (C_INFO)
 	condition	= DIA_Scatty_KirgoSuccess_Condition;
 	information	= DIA_Scatty_KirgoSuccess_Info;
 	permanent	= 0;
-	description = "Walczy³em z Kirgo!";
+	description = "WalczyÅ‚em z Kirgo!";
 };                       
 
 FUNC INT DIA_Scatty_KirgoSuccess_Condition()
@@ -117,21 +117,21 @@ FUNC VOID DIA_Scatty_KirgoSuccess_Info()
 {
 	var C_NPC Kirgo; 	Kirgo = Hlp_GetNpc(Grd_251_Kirgo);	
 	
-	AI_Output (other,self,"DIA_Scatty_KirgoSuccess_15_00"); //Walczy³em z Kirgo!
+	AI_Output (other,self,"DIA_Scatty_KirgoSuccess_15_00"); //WalczyÅ‚em z Kirgo!
 	if (Kirgo.aivar[AIV_HASDEFEATEDSC] == TRUE)
 	{
-		AI_Output (self,other,"DIA_Scatty_KirgoSuccess_01_01"); //Tak, ale przegra³eœ!
-		AI_Output (self,other,"DIA_Scatty_KirgoSuccess_01_02"); //Chyba nie myœlisz, ¿e bêdê pod wra¿eniem takiego popisu...
+		AI_Output (self,other,"DIA_Scatty_KirgoSuccess_01_01"); //Tak, ale przegraÅ‚eÅ›!
+		AI_Output (self,other,"DIA_Scatty_KirgoSuccess_01_02"); //Chyba nie myÅ›lisz, Å¼e bÄ™dÄ™ pod wraÅ¼eniem takiego popisu...
 		Scatty_ChargeKirgo = LOG_FAILED;
 		
-		B_LogEntry( CH1_JoinOC,"Pora¿ka w walce z Kirgo nie zjedna³a mi bynajmniej sympatii Scatty'ego.");
+		B_LogEntry( CH1_JoinOC,"PoraÅ¼ka w walce z Kirgo nie zjednaÅ‚a mi bynajmniej sympatii Scatty'ego.");
 	}
 	else if (Kirgo.aivar[AIV_WASDEFEATEDBYSC] == TRUE)
 	{
-		AI_Output (self,other,"DIA_Scatty_KirgoSuccess_01_03"); //I pokona³eœ go! Ca³kiem nieŸle jak na takiego ¿ó³todzioba! Jestem pod wra¿eniem!
+		AI_Output (self,other,"DIA_Scatty_KirgoSuccess_01_03"); //I pokonaÅ‚eÅ› go! CaÅ‚kiem nieÅºle jak na takiego Å¼Ã³Å‚todzioba! Jestem pod wraÅ¼eniem!
 		Scatty_ChargeKirgo = LOG_SUCCESS;
 		
-		B_LogEntry( CH1_JoinOC,"Scatty by³ pod wra¿eniem mojej walki z Kirgo.");
+		B_LogEntry( CH1_JoinOC,"Scatty byÅ‚ pod wraÅ¼eniem mojej walki z Kirgo.");
 		B_GiveXP (XP_kirgovictory);
 	};
 };
@@ -147,7 +147,7 @@ INSTANCE DIA_Scatty_KHARIMSuccess (C_INFO)
 	condition	= DIA_Scatty_KHARIMSuccess_Condition;
 	information	= DIA_Scatty_KHARIMSuccess_Info;
 	permanent	= 0;
-	description = "Wyzwa³em Kharima na pojedynek!";
+	description = "WyzwaÅ‚em Kharima na pojedynek!";
 };                       
 
 FUNC INT DIA_Scatty_KHARIMSuccess_Condition()
@@ -164,34 +164,34 @@ FUNC VOID DIA_Scatty_KHARIMSuccess_Info()
 {
 	var C_NPC KHARIM; 	KHARIM = Hlp_GetNpc(Sld_729_Kharim);	
 	
-	AI_Output (other,self,"DIA_Scatty_KHARIMSuccess_15_00"); //Wyzwa³em Kharima na pojedynek!
+	AI_Output (other,self,"DIA_Scatty_KHARIMSuccess_15_00"); //WyzwaÅ‚em Kharima na pojedynek!
 	if (KHARIM.aivar[AIV_HASDEFEATEDSC] == TRUE)
 	{
-		AI_Output (self,other,"DIA_Scatty_KHARIMSuccess_01_01"); //I spuœci³ ci niez³e baty!
+		AI_Output (self,other,"DIA_Scatty_KHARIMSuccess_01_01"); //I spuÅ›ciÅ‚ ci niezÅ‚e baty!
 		if (Npc_GetTrueGuild (hero) == GIL_NONE)
 		{
-			AI_Output (self,other,"DIA_Scatty_KHARIMSuccess_01_02"); //Ale muszê przyznaæ, ¿e wybra³eœ sobie dobrego przeciwnika. Nie znoszê tych sukinsynów z Nowego Obozu.
-			AI_Output (self,other,"DIA_Scatty_KHARIMSuccess_01_03"); //Widzê, ¿e myœlimy podobnie. Przyda siê nam ktoœ taki jak ty!
+			AI_Output (self,other,"DIA_Scatty_KHARIMSuccess_01_02"); //Ale muszÄ™ przyznaÄ‡, Å¼e wybraÅ‚eÅ› sobie dobrego przeciwnika. Nie znoszÄ™ tych sukinsynÃ³w z Nowego Obozu.
+			AI_Output (self,other,"DIA_Scatty_KHARIMSuccess_01_03"); //WidzÄ™, Å¼e myÅ›limy podobnie. Przyda siÄ™ nam ktoÅ› taki jak ty!
 		};
 		Scatty_ChargeKHARIM = LOG_FAILED;
 		B_GiveXP(XP_Kharimlost);
-		B_LogEntry( CH1_JoinOC,"Zosta³em pokonany przez Kharima! Scatty podziwia moj¹ odwagê, ale uwa¿a, ¿e wojownik ze mnie ¿aden.");
+		B_LogEntry( CH1_JoinOC,"ZostaÅ‚em pokonany przez Kharima! Scatty podziwia mojÄ… odwagÄ™, ale uwaÅ¼a, Å¼e wojownik ze mnie Å¼aden.");
 		
 	}
 	else if (KHARIM.aivar[AIV_WASDEFEATEDBYSC] == TRUE)
 	{
-		AI_Output (self,other,"DIA_Scatty_KHARIMSuccess_01_04"); //I pokona³eœ go! Muszê przyznaæ, ¿e œwietnie sobie poradzi³eœ. Kharim od dawna uchodzi³ za jednego z najlepszych wojowników w kolonii.
-		AI_Output (self,other,"DIA_Scatty_KHARIMSuccess_01_05"); //Jestem pod wra¿eniem!
+		AI_Output (self,other,"DIA_Scatty_KHARIMSuccess_01_04"); //I pokonaÅ‚eÅ› go! MuszÄ™ przyznaÄ‡, Å¼e Å›wietnie sobie poradziÅ‚eÅ›. Kharim od dawna uchodziÅ‚ za jednego z najlepszych wojownikÃ³w w kolonii.
+		AI_Output (self,other,"DIA_Scatty_KHARIMSuccess_01_05"); //Jestem pod wraÅ¼eniem!
 		Scatty_ChargeKHARIM = LOG_SUCCESS;
 		
-		B_LogEntry( CH1_JoinOC,"Pokaza³em Kharimowi, gdzie raki zimuj¹. Scatty by³ pod wra¿eniem.");
+		B_LogEntry( CH1_JoinOC,"PokazaÅ‚em Kharimowi, gdzie raki zimujÄ…. Scatty byÅ‚ pod wraÅ¼eniem.");
 		B_GiveXP(XP_kharimvictory);
 	};
 };
 
 
 // **************************************************
-// 				 Warum andere Lager Kämpfer
+// 				 Warum andere Lager KÃ¤mpfer
 // **************************************************
 
 INSTANCE DIA_Scatty_OtherCamps (C_INFO)
@@ -201,7 +201,7 @@ INSTANCE DIA_Scatty_OtherCamps (C_INFO)
 	condition	= DIA_Scatty_OtherCamps_Condition;
 	information	= DIA_Scatty_OtherCamps_Info;
 	permanent	= 0;
-	description = "Dlaczego pozwalacie obcym walczyæ na waszej arenie?";
+	description = "Dlaczego pozwalacie obcym walczyÄ‡ na waszej arenie?";
 };                       
 
 FUNC INT DIA_Scatty_OtherCamps_Condition()
@@ -214,10 +214,10 @@ FUNC INT DIA_Scatty_OtherCamps_Condition()
 
 FUNC VOID DIA_Scatty_OtherCamps_Info()
 {
-	AI_Output (other,self,"DIA_Scatty_OtherCamps_15_00"); //Myœla³em, ¿e Stary i Nowy Obóz nie dogaduj¹ siê najlepiej. Dlaczego pozwalacie obcym walczyæ na waszej arenie?
-	AI_Output (self,other,"DIA_Scatty_OtherCamps_01_01"); //To proste. Raz w tygodniu organizujemy walki, a Kopacze lubi¹ patrzeæ, jak Szkodniki z Nowego Obozu dostaj¹ po g³owie.
-	AI_Output (self,other,"DIA_Scatty_OtherCamps_01_02"); //Gdy walczy któryœ z nich przyjmujê wiêcej zak³adów, a to dobrze wp³ywa na interes!
-	AI_Output (self,other,"DIA_Scatty_OtherCamps_01_03"); //Osobiœcie nienawidzê tych wieprzy z Nowego Obozu, ale w tych trudnych czasach ¿aden pieni¹dz nie œmierdzi...
+	AI_Output (other,self,"DIA_Scatty_OtherCamps_15_00"); //MyÅ›laÅ‚em, Å¼e Stary i Nowy ObÃ³z nie dogadujÄ… siÄ™ najlepiej. Dlaczego pozwalacie obcym walczyÄ‡ na waszej arenie?
+	AI_Output (self,other,"DIA_Scatty_OtherCamps_01_01"); //To proste. Raz w tygodniu organizujemy walki, a Kopacze lubiÄ… patrzeÄ‡, jak Szkodniki z Nowego Obozu dostajÄ… po gÅ‚owie.
+	AI_Output (self,other,"DIA_Scatty_OtherCamps_01_02"); //Gdy walczy ktÃ³ryÅ› z nich przyjmujÄ™ wiÄ™cej zakÅ‚adÃ³w, a to dobrze wpÅ‚ywa na interes!
+	AI_Output (self,other,"DIA_Scatty_OtherCamps_01_03"); //OsobiÅ›cie nienawidzÄ™ tych wieprzy z Nowego Obozu, ale w tych trudnych czasach Å¼aden pieniÄ…dz nie Å›mierdzi...
 };
 
 // **************************************************
@@ -231,7 +231,7 @@ INSTANCE DIA_Scatty_WannaBet (C_INFO)
 	condition	= DIA_Scatty_WannaBet_Condition;
 	information	= DIA_Scatty_WannaBet_Info;
 	permanent	= 1;
-	description = "Chcia³bym obstawiæ walkê.";
+	description = "ChciaÅ‚bym obstawiÄ‡ walkÄ™.";
 };                       
 
 FUNC INT DIA_Scatty_WannaBet_Condition()
@@ -244,14 +244,14 @@ FUNC INT DIA_Scatty_WannaBet_Condition()
 
 FUNC VOID DIA_Scatty_WannaBet_Info()
 {
-	AI_Output (other,self,"DIA_Scatty_WannaBet_15_00"); //Chcia³bym obstawiæ walkê.
-	AI_Output (self,other,"DIA_Scatty_WannaBet_01_01"); //Przecie¿ teraz nikt nie walczy!
-	AI_Output (self,other,"DIA_Scatty_WannaBet_01_02"); //Najbli¿sza walka odbêdzie siê dopiero za kilka dni. Bêdzie og³oszenie!
+	AI_Output (other,self,"DIA_Scatty_WannaBet_15_00"); //ChciaÅ‚bym obstawiÄ‡ walkÄ™.
+	AI_Output (self,other,"DIA_Scatty_WannaBet_01_01"); //PrzecieÅ¼ teraz nikt nie walczy!
+	AI_Output (self,other,"DIA_Scatty_WannaBet_01_02"); //NajbliÅ¼sza walka odbÄ™dzie siÄ™ dopiero za kilka dni. BÄ™dzie ogÅ‚oszenie!
 	
 };
 
 // **************************************************
-// 					Will Kämpfen
+// 					Will KÃ¤mpfen
 // **************************************************
 
 INSTANCE DIA_Scatty_WannaFight (C_INFO)
@@ -261,7 +261,7 @@ INSTANCE DIA_Scatty_WannaFight (C_INFO)
 	condition	= DIA_Scatty_WannaFight_Condition;
 	information	= DIA_Scatty_WannaFight_Info;
 	permanent	= 1;
-	description = "Chcia³bym stoczyæ walkê na arenie.";
+	description = "ChciaÅ‚bym stoczyÄ‡ walkÄ™ na arenie.";
 };                       
 
 FUNC INT DIA_Scatty_WannaFight_Condition()
@@ -274,9 +274,9 @@ FUNC INT DIA_Scatty_WannaFight_Condition()
 
 FUNC VOID DIA_Scatty_WannaFight_Info()
 {
-	AI_Output (other,self,"DIA_Scatty_WannaFight_15_00"); //Chcia³bym stoczyæ walkê na arenie.
-	AI_Output (self,other,"DIA_Scatty_WannaFight_01_01"); //Nie mogê ci pozwoliæ walczyæ, póki nie do³¹czysz do któregoœ z obozów.
-	AI_Output (self,other,"DIA_Scatty_WannaFight_01_02"); //Ludzi nie interesuj¹ niezale¿ni wojownicy.
+	AI_Output (other,self,"DIA_Scatty_WannaFight_15_00"); //ChciaÅ‚bym stoczyÄ‡ walkÄ™ na arenie.
+	AI_Output (self,other,"DIA_Scatty_WannaFight_01_01"); //Nie mogÄ™ ci pozwoliÄ‡ walczyÄ‡, pÃ³ki nie doÅ‚Ä…czysz do ktÃ³regoÅ› z obozÃ³w.
+	AI_Output (self,other,"DIA_Scatty_WannaFight_01_02"); //Ludzi nie interesujÄ… niezaleÅ¼ni wojownicy.
 };
 
 // **************************************************
@@ -290,7 +290,7 @@ INSTANCE DIA_Scatty_TRAIN (C_INFO)
 	condition	= DIA_Scatty_TRAIN_Condition;
 	information	= DIA_Scatty_TRAIN_Info;
 	permanent	= 1;
-	description = "Zajmujesz siê równie¿ szkoleniem wojowników?";
+	description = "Zajmujesz siÄ™ rÃ³wnieÅ¼ szkoleniem wojownikÃ³w?";
 };                       
 
 FUNC INT DIA_Scatty_TRAIN_Condition()
@@ -306,11 +306,11 @@ FUNC VOID DIA_Scatty_TRAIN_Info()
 	if( log_scattytrain == FALSE)
 	{
 	Log_CreateTopic   	(GE_TeacherOC,LOG_NOTE);
-    B_LogEntry(GE_TeacherOC,"Scatty mo¿e mnie nauczyæ walki jednorêcznym orê¿em.");
+    B_LogEntry(GE_TeacherOC,"Scatty moÅ¼e mnie nauczyÄ‡ walki jednorÄ™cznym orÄ™Å¼em.");
     log_scattytrain = TRUE;
     };
-	AI_Output (other,self,"DIA_Scatty_TRAIN_15_00"); //Zajmujesz siê równie¿ szkoleniem wojowników?
-	AI_Output (self,other,"DIA_Scatty_TRAIN_01_01"); //Tak, ale nie za darmo. Jak chcesz, ¿ebym ciê czegoœ nauczy³, musisz zap³aciæ.
+	AI_Output (other,self,"DIA_Scatty_TRAIN_15_00"); //Zajmujesz siÄ™ rÃ³wnieÅ¼ szkoleniem wojownikÃ³w?
+	AI_Output (self,other,"DIA_Scatty_TRAIN_01_01"); //Tak, ale nie za darmo. Jak chcesz, Å¼ebym ciÄ™ czegoÅ› nauczyÅ‚, musisz zapÅ‚aciÄ‡.
 
 
 	Info_ClearChoices	(DIA_Scatty_TRAIN );
@@ -332,45 +332,45 @@ func void DIA_Scatty_TRAIN_BACK()
 
 func void DIA_Scatty_TRAIN_1h()
 {
-	AI_Output (other,self,"DIA_Scatty_TRAIN_1h_15_00"); //Chcia³bym nauczyæ siê walki jednorêcznym orê¿em.
+	AI_Output (other,self,"DIA_Scatty_TRAIN_1h_15_00"); //ChciaÅ‚bym nauczyÄ‡ siÄ™ walki jednorÄ™cznym orÄ™Å¼em.
 	
 	if (Npc_HasItems(other,itminugget) >= 50)
 	{
 		if (B_GiveSkill(other, NPC_TALENT_1H, 1, LPCOST_TALENT_1H_1))
 		{
-			AI_Output (self,other,"DIA_Scatty_TRAIN_1h_01_01"); //M¹dra decyzja. Jednak zanim poznasz bardziej zaawansowane techniki, powinieneœ nauczyæ siê prawid³owo trzymaæ orê¿ w rêku.
-			AI_Output (self,other,"DIA_Scatty_TRAIN_1h_01_02"); //Pocz¹tkuj¹cy czêsto ³api¹ zwyk³y miecz obydwoma rêkami. Radzi³bym ci siê do tego nie przyzwyczajaæ, to fatalny nawyk. 
-			AI_Output (self,other,"DIA_Scatty_TRAIN_1h_01_03"); //Trzymaj broñ jedn¹ rêk¹, ostrzem do góry, i zacznij ni¹ machaæ.
-			AI_Output (self,other,"DIA_Scatty_TRAIN_1h_01_04"); //Musisz siê nauczyæ, jak zgraæ twoje ruchy z bezw³adnoœci¹ orê¿a. Dziêki temu twoje ataki bêd¹ szybsze i bardziej zaskakuj¹ce.
-			AI_Output (self,other,"DIA_Scatty_TRAIN_1h_01_05"); //Zapamiêtaj sobie dobrze, co ci powiedzia³em, a twój styl walki stanie siê o wiele bardziej elegancki i skuteczny.
-			AI_Output (self,other,"DIA_Scatty_TRAIN_1h_01_06"); //A, i jeszcze coœ! Niektóre ciosy powoduj¹ wiêksze obra¿enia ni¿ zwykle. Oczywiœcie, jako pocz¹tkuj¹cy masz raczej niewielkie szanse na zadanie krytycznego uderzenia.
-			AI_Output (self,other,"DIA_Scatty_TRAIN_1h_01_07"); //Ale to siê zmieni w miarê czynienia przez ciebie postêpów.
+			AI_Output (self,other,"DIA_Scatty_TRAIN_1h_01_01"); //MÄ…dra decyzja. Jednak zanim poznasz bardziej zaawansowane techniki, powinieneÅ› nauczyÄ‡ siÄ™ prawidÅ‚owo trzymaÄ‡ orÄ™Å¼ w rÄ™ku.
+			AI_Output (self,other,"DIA_Scatty_TRAIN_1h_01_02"); //PoczÄ…tkujÄ…cy czÄ™sto Å‚apiÄ… zwykÅ‚y miecz obydwoma rÄ™kami. RadziÅ‚bym ci siÄ™ do tego nie przyzwyczajaÄ‡, to fatalny nawyk. 
+			AI_Output (self,other,"DIA_Scatty_TRAIN_1h_01_03"); //Trzymaj broÅ„ jednÄ… rÄ™kÄ…, ostrzem do gÃ³ry, i zacznij niÄ… machaÄ‡.
+			AI_Output (self,other,"DIA_Scatty_TRAIN_1h_01_04"); //Musisz siÄ™ nauczyÄ‡, jak zgraÄ‡ twoje ruchy z bezwÅ‚adnoÅ›ciÄ… orÄ™Å¼a. DziÄ™ki temu twoje ataki bÄ™dÄ… szybsze i bardziej zaskakujÄ…ce.
+			AI_Output (self,other,"DIA_Scatty_TRAIN_1h_01_05"); //ZapamiÄ™taj sobie dobrze, co ci powiedziaÅ‚em, a twÃ³j styl walki stanie siÄ™ o wiele bardziej elegancki i skuteczny.
+			AI_Output (self,other,"DIA_Scatty_TRAIN_1h_01_06"); //A, i jeszcze coÅ›! NiektÃ³re ciosy powodujÄ… wiÄ™ksze obraÅ¼enia niÅ¼ zwykle. OczywiÅ›cie, jako poczÄ…tkujÄ…cy masz raczej niewielkie szanse na zadanie krytycznego uderzenia.
+			AI_Output (self,other,"DIA_Scatty_TRAIN_1h_01_07"); //Ale to siÄ™ zmieni w miarÄ™ czynienia przez ciebie postÄ™pÃ³w.
 			B_GiveInvItems(other,self,itminugget,50);
 		};
 	}
 	else
 	{
-		AI_Output (self,other,"DIA_Scatty_TRAIN_1h_NoOre_01_00"); //Nie masz wystarczaj¹cej iloœci rudy!
+		AI_Output (self,other,"DIA_Scatty_TRAIN_1h_NoOre_01_00"); //Nie masz wystarczajÄ…cej iloÅ›ci rudy!
 	};
 };
 
 func void DIA_Scatty_TRAIN_2h()
 {
-	AI_Output (other,self,"DIA_Scatty_TRAIN_2h_15_01"); //Naucz mnie sprawniej pos³ugiwaæ siê jednorêczn¹ broni¹.
+	AI_Output (other,self,"DIA_Scatty_TRAIN_2h_15_01"); //Naucz mnie sprawniej posÅ‚ugiwaÄ‡ siÄ™ jednorÄ™cznÄ… broniÄ….
 	
 	if (Npc_HasItems(other,itminugget) >= 150)
 	{
 		if (B_GiveSkill(other, NPC_TALENT_1H, 2, LPCOST_TALENT_1H_2))
 		{
-			AI_Output (self, other,"DIA_Scatty_TRAIN_2h_Info_01_02"); //Dobrze, podstawy ju¿ znasz. Nieznaczne opuszczenie broni zwiêkszy si³ê twojego pierwszego ciosu.
-			AI_Output (self, other,"DIA_Scatty_TRAIN_2h_Info_01_03"); //Musisz wykorzystaæ si³ê bezw³adnoœci, pamiêtasz? Œwietnie. Teraz nauczysz siê lepiej balansowaæ cia³em. Po zadaniu dwóch ciosów wykonaj obrót. To powinno zmyliæ twojego przeciwnika i pozwoliæ ci wyjœæ na dobr¹ pozycjê do nastêpnego ataku.
-			AI_Output (self, other,"DIA_Scatty_TRAIN_2h_Info_01_04"); //Wtedy wyprowadŸ nastêpne ciêcie z prawej strony...
-			AI_Output (self, other,"DIA_Scatty_TRAIN_2h_Info_01_05"); //I znowu do przodu. Pamiêtaj - trening czyni mistrza, wiêc najlepiej weŸ siê od razu do roboty!
+			AI_Output (self, other,"DIA_Scatty_TRAIN_2h_Info_01_02"); //Dobrze, podstawy juÅ¼ znasz. Nieznaczne opuszczenie broni zwiÄ™kszy siÅ‚Ä™ twojego pierwszego ciosu.
+			AI_Output (self, other,"DIA_Scatty_TRAIN_2h_Info_01_03"); //Musisz wykorzystaÄ‡ siÅ‚Ä™ bezwÅ‚adnoÅ›ci, pamiÄ™tasz? Åšwietnie. Teraz nauczysz siÄ™ lepiej balansowaÄ‡ ciaÅ‚em. Po zadaniu dwÃ³ch ciosÃ³w wykonaj obrÃ³t. To powinno zmyliÄ‡ twojego przeciwnika i pozwoliÄ‡ ci wyjÅ›Ä‡ na dobrÄ… pozycjÄ™ do nastÄ™pnego ataku.
+			AI_Output (self, other,"DIA_Scatty_TRAIN_2h_Info_01_04"); //Wtedy wyprowadÅº nastÄ™pne ciÄ™cie z prawej strony...
+			AI_Output (self, other,"DIA_Scatty_TRAIN_2h_Info_01_05"); //I znowu do przodu. PamiÄ™taj - trening czyni mistrza, wiÄ™c najlepiej weÅº siÄ™ od razu do roboty!
 			B_GiveInvItems(other,self,itminugget,150);
 		};
 	}
 	else
 	{
-		AI_Output (self,other,"DIA_Scatty_TRAIN_2h_NoOre_01_00"); //Wróæ, gdy bêdziesz mia³ wystarczaj¹co du¿o rudy.
+		AI_Output (self,other,"DIA_Scatty_TRAIN_2h_NoOre_01_00"); //WrÃ³Ä‡, gdy bÄ™dziesz miaÅ‚ wystarczajÄ…co duÅ¼o rudy.
 	};
 };

@@ -33,7 +33,7 @@ INSTANCE DIA_Tpl_1416_Torwache_Life (C_INFO)
 	condition		= DIA_Tpl_1416_Torwache_Life_Condition;
 	information		= DIA_Tpl_1416_Torwache_Life_Info;
 	permanent		= 1;
-	description		= "Jak wyglπda øycie straønikÛw Bractwa?";
+	description		= "Jak wyglƒÖda ≈ºycie stra≈ºnik√≥w Bractwa?";
 };
 
 FUNC INT DIA_Tpl_1416_Torwache_Life_Condition()
@@ -43,7 +43,7 @@ FUNC INT DIA_Tpl_1416_Torwache_Life_Condition()
 
 FUNC VOID DIA_Tpl_1416_Torwache_Life_Info()
 {
-	AI_Output (other, self,"DIA_Tpl_1416_Torwache_Life_15_00"); //Jak wyglπda øycie straønikÛw Bractwa?
-	AI_Output (self, other,"DIA_Tpl_1416_Torwache_Life_08_01"); //Otrzyma≥em niezwykle waøne zadanie. Jaúnie Oúwiecony i jego uczniowie z≥oøyli swe øycie w moich rÍkach.
-	AI_Output (self, other,"DIA_Tpl_1416_Torwache_Life_08_02");	//Niech cieÒ zapomnienia pokryje moje dawne øycie. Teraz jestem GOR NA - åwiÍty Straønik åniπcego!
+	AI_Output (other, self,"DIA_Tpl_1416_Torwache_Life_15_00"); //Jak wyglƒÖda ≈ºycie stra≈ºnik√≥w Bractwa?
+	AI_Output (self, other,"DIA_Tpl_1416_Torwache_Life_08_01"); //Otrzyma≈Çem niezwykle wa≈ºne zadanie. Ja≈õnie O≈õwiecony i jego uczniowie z≈Ço≈ºyli swe ≈ºycie w moich rƒôkach.
+	AI_Output (self, other,"DIA_Tpl_1416_Torwache_Life_08_02");	//Niech cie≈Ñ zapomnienia pokryje moje dawne ≈ºycie. Teraz jestem GOR NA - ≈öwiƒôty Stra≈ºnik ≈öniƒÖcego!
 };

@@ -37,7 +37,7 @@ INSTANCE Info_Org_13_EinerVonEuchWerden (C_INFO) // E1
 	condition	= Info_Org_13_EinerVonEuchWerden_Condition;
 	information	= Info_Org_13_EinerVonEuchWerden_Info;
 	permanent	= 1;
-	description = "Co muszê zrobiæ, ¿eby do³¹czyæ do waszego Obozu?";
+	description = "Co muszÄ™ zrobiÄ‡, Å¼eby doÅ‚Ä…czyÄ‡ do waszego Obozu?";
 };                       
 
 FUNC INT Info_Org_13_EinerVonEuchWerden_Condition()
@@ -50,8 +50,8 @@ FUNC INT Info_Org_13_EinerVonEuchWerden_Condition()
 
 FUNC VOID Info_Org_13_EinerVonEuchWerden_Info()
 {
-	AI_Output(other,self,"Info_Org_13_EinerVonEuchWerden_15_00"); //Co muszê zrobiæ, ¿eby do³¹czyæ do waszego Obozu?
-	AI_Output(self,other,"Info_Org_13_EinerVonEuchWerden_13_01"); //WyjdŸ na pole i pomó¿ przy zbieraniu ry¿u.
+	AI_Output(other,self,"Info_Org_13_EinerVonEuchWerden_15_00"); //Co muszÄ™ zrobiÄ‡, Å¼eby doÅ‚Ä…czyÄ‡ do waszego Obozu?
+	AI_Output(self,other,"Info_Org_13_EinerVonEuchWerden_13_01"); //WyjdÅº na pole i pomÃ³Å¼ przy zbieraniu ryÅ¼u.
 };
 
 // *************************************************************************
@@ -75,7 +75,7 @@ FUNC INT Info_Org_13_WichtigePersonen_Condition()
 FUNC VOID Info_Org_13_WichtigePersonen_Info()
 {
 	AI_Output(other,self,"Info_Org_13_WichtigePersonen_15_00"); //Kto tu dowodzi?
-	AI_Output(self,other,"Info_Org_13_WichtigePersonen_13_01"); //Lee jest szefem Najemników, jeœli o to ci chodzi. Ale JA nie jestem Najemnikiem, wiêc niech mnie szlag, jeœli pozwolê mu sob¹ pomiataæ!
+	AI_Output(self,other,"Info_Org_13_WichtigePersonen_13_01"); //Lee jest szefem NajemnikÃ³w, jeÅ›li o to ci chodzi. Ale JA nie jestem Najemnikiem, wiÄ™c niech mnie szlag, jeÅ›li pozwolÄ™ mu sobÄ… pomiataÄ‡!
 	var C_NPC Lee;			Lee		= Hlp_GetNpc(Sld_700_Lee);
 	Lee.aivar[AIV_FINDABLE] = TRUE;
 };
@@ -90,7 +90,7 @@ INSTANCE Info_Org_13_DasLager(C_INFO)
 	condition	= Info_Org_13_DasLager_Condition;
 	information	= Info_Org_13_DasLager_Info;
 	permanent	= 1;
-	description = "Chcia³bym siê dowiedzieæ wiêcej o waszym Obozie.";
+	description = "ChciaÅ‚bym siÄ™ dowiedzieÄ‡ wiÄ™cej o waszym Obozie.";
 };                       
 
 FUNC INT Info_Org_13_DasLager_Condition()
@@ -100,8 +100,8 @@ FUNC INT Info_Org_13_DasLager_Condition()
 
 FUNC VOID Info_Org_13_DasLager_Info()
 {
-	AI_Output(other,self,"Info_Org_13_DasLager_15_00"); //Chcia³bym siê dowiedzieæ czegoœ wiêcej o waszym Obozie.
-	AI_Output(self,other,"Info_Org_13_DasLager_13_01"); //Najlepiej wejdŸ do œrodka i po prostu rozejrzyj siê! Tak d³ugo jak nie jesteœ jednym z ludzi Gomeza, nikt ciê nie bêdzie zaczepia³.
+	AI_Output(other,self,"Info_Org_13_DasLager_15_00"); //ChciaÅ‚bym siÄ™ dowiedzieÄ‡ czegoÅ› wiÄ™cej o waszym Obozie.
+	AI_Output(self,other,"Info_Org_13_DasLager_13_01"); //Najlepiej wejdÅº do Å›rodka i po prostu rozejrzyj siÄ™! Tak dÅ‚ugo jak nie jesteÅ› jednym z ludzi Gomeza, nikt ciÄ™ nie bÄ™dzie zaczepiaÅ‚.
 };
 
 // *************************************************************************
@@ -114,7 +114,7 @@ INSTANCE Info_Org_13_DieLage(C_INFO) // E1
 	condition	= Info_Org_13_DieLage_Condition;
 	information	= Info_Org_13_DieLage_Info;
 	permanent	= 1;
-	description = "Co s³ychaæ?";
+	description = "Co sÅ‚ychaÄ‡?";
 };                       
 
 FUNC INT Info_Org_13_DieLage_Condition()
@@ -124,7 +124,7 @@ FUNC INT Info_Org_13_DieLage_Condition()
 
 FUNC VOID Info_Org_13_DieLage_Info()
 {
-	AI_Output(other,self,"Info_Org_13_DieLage_15_00"); //Co s³ychaæ?
+	AI_Output(other,self,"Info_Org_13_DieLage_15_00"); //Co sÅ‚ychaÄ‡?
 	AI_Output(self,other,"Info_Org_13_DieLage_13_01"); //A czego chcesz?
 };
 
@@ -138,7 +138,7 @@ INSTANCE Info_Org_13_Krautprobe (C_INFO) // E1
 	condition	= Info_Org_13_Krautprobe_Condition;
 	information	= Info_Org_13_Krautprobe_Info;
 	permanent	= 1;
-	description = "Wygl¹dasz mi na kogoœ, komu przyda³oby siê trochê ziela.";
+	description = "WyglÄ…dasz mi na kogoÅ›, komu przydaÅ‚oby siÄ™ trochÄ™ ziela.";
 };                       
 
 FUNC INT Info_Org_13_Krautprobe_Condition()
@@ -152,7 +152,7 @@ FUNC INT Info_Org_13_Krautprobe_Condition()
 
 FUNC VOID Info_Org_13_Krautprobe_Info()
 {
-	AI_Output(other,self,"Info_Org_13_Krautprobe_15_00"); //Wygl¹dasz mi na kogoœ, komu przyda³oby siê trochê bagiennego ziela.
+	AI_Output(other,self,"Info_Org_13_Krautprobe_15_00"); //WyglÄ…dasz mi na kogoÅ›, komu przydaÅ‚oby siÄ™ trochÄ™ bagiennego ziela.
 	
 	if ( (Npc_HasItems(other,ItMiJoint_1)>0) || (Npc_HasItems(other,ItMiJoint_2)>0) || (Npc_HasItems(other,ItMiJoint_3)>0) )
 	{
@@ -163,7 +163,7 @@ FUNC VOID Info_Org_13_Krautprobe_Info()
 		else if (Npc_HasItems(other,ItMiJoint_3))
 		{	B_GiveInvItems(other,self,ItMiJoint_3,1);	 };
 		
-		AI_Output(self,other,"Info_Org_13_Krautprobe_13_01"); //A masz je przy sobie? Dam ci 10 bry³ek rudy!
+		AI_Output(self,other,"Info_Org_13_Krautprobe_13_01"); //A masz je przy sobie? Dam ci 10 bryÅ‚ek rudy!
 		AI_Output(self,other,"Info_Org_13_Krautprobe_13_02"); //Wracaj, kiedy tylko zechcesz, Bracie!
 		
 		CreateInvItems(self,itminugget,10);
@@ -173,7 +173,7 @@ FUNC VOID Info_Org_13_Krautprobe_Info()
 	}
 	else
 	{
-		AI_Output (self, other,"Info_Org_13_Krautprobe_No_Joint_13_00"); //Ale ty wcale nie masz ziela! Przestañ mnie wkurzaæ!
+		AI_Output (self, other,"Info_Org_13_Krautprobe_No_Joint_13_00"); //Ale ty wcale nie masz ziela! PrzestaÅ„ mnie wkurzaÄ‡!
 	};
 };
 	

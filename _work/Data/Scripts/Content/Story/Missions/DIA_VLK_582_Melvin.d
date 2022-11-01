@@ -33,7 +33,7 @@ INSTANCE DIA_Melvin_Hello (C_INFO)
 	condition		= DIA_Melvin_Hello_Condition;
 	information		= DIA_Melvin_Hello_Info;
 	permanent		= 0;
-	description		= "CzeúÊ! Nie jesteú z tego obozu, prawda?";
+	description		= "Cze≈õƒá! Nie jeste≈õ z tego obozu, prawda?";
 };
 
 FUNC INT DIA_Melvin_Hello_Condition()
@@ -43,12 +43,12 @@ FUNC INT DIA_Melvin_Hello_Condition()
 
 FUNC VOID DIA_Melvin_Hello_Info()
 {
-	AI_Output (other, self,"DIA_Melvin_Hello_15_00"); //CzeúÊ! Nie jesteú z tego obozu, prawda?
-	AI_Output (self, other,"DIA_Melvin_Hello_03_01"); //CÛø, teraz juø jestem! TydzieÒ temu wyruszy≥em ze Starego Obozu. MÛj kumpel, Dusty, mia≥ iúÊ ze mnπ, ale postanowi≥ jeszcze trochÍ poczekaÊ.
+	AI_Output (other, self,"DIA_Melvin_Hello_15_00"); //Cze≈õƒá! Nie jeste≈õ z tego obozu, prawda?
+	AI_Output (self, other,"DIA_Melvin_Hello_03_01"); //C√≥≈º, teraz ju≈º jestem! Tydzie≈Ñ temu wyruszy≈Çem ze Starego Obozu. M√≥j kumpel, Dusty, mia≈Ç i≈õƒá ze mnƒÖ, ale postanowi≈Ç jeszcze trochƒô poczekaƒá.
 
 	Log_CreateTopic		(CH1_RecruitDusty,	LOG_MISSION);
 	Log_SetTopicStatus	(CH1_RecruitDusty,	LOG_RUNNING);
-	B_LogEntry			(CH1_RecruitDusty,"Kopacz Melvin do≥πczy≥ do Bractwa. Jego kumpel, Dusty, zosta≥ w Starym Obozie, ale on teø zastanawia siÍ nad przejúciem do obozu na bagnie.");
+	B_LogEntry			(CH1_RecruitDusty,"Kopacz Melvin do≈ÇƒÖczy≈Ç do Bractwa. Jego kumpel, Dusty, zosta≈Ç w Starym Obozie, ale on te≈º zastanawia siƒô nad przej≈õciem do obozu na bagnie.");
 };
 
 // **************************************************
@@ -62,7 +62,7 @@ INSTANCE DIA_Melvin_MetDusty (C_INFO)
 	condition		= DIA_Melvin_MetDusty_Condition;
 	information		= DIA_Melvin_MetDusty_Info;
 	permanent		= 0;
-	description		= "Znam Dustego - zamieniliúmy kiedyú kilka s≥Ûw.";
+	description		= "Znam Dustego - zamienili≈õmy kiedy≈õ kilka s≈Ç√≥w.";
 };
 
 FUNC INT DIA_Melvin_MetDusty_Condition()
@@ -75,9 +75,9 @@ FUNC INT DIA_Melvin_MetDusty_Condition()
 
 FUNC VOID DIA_Melvin_MetDusty_Info()
 {
-	AI_Output (other, self,"DIA_Melvin_MetDusty_15_00"); //Znam Dustego - zamieniliúmy kiedyú kilka s≥Ûw.
-	AI_Output (self, other,"DIA_Melvin_MetDusty_03_01"); //Gdybyú go jeszcze kiedyú spotka≥, powiedz mu, øe g≥upio zrobi≥ nie idπc ze mnπ. Øycie w Bractwie jest sto razy lepsze od ciπg≥ego uøerania siÍ ze Straønikami ze Starego Obozu.
-	AI_Output (other, self,"DIA_Melvin_MetDusty_15_02"); //Nie omieszkam mu tego powtÛrzyÊ.
+	AI_Output (other, self,"DIA_Melvin_MetDusty_15_00"); //Znam Dustego - zamienili≈õmy kiedy≈õ kilka s≈Ç√≥w.
+	AI_Output (self, other,"DIA_Melvin_MetDusty_03_01"); //Gdyby≈õ go jeszcze kiedy≈õ spotka≈Ç, powiedz mu, ≈ºe g≈Çupio zrobi≈Ç nie idƒÖc ze mnƒÖ. ≈ªycie w Bractwie jest sto razy lepsze od ciƒÖg≈Çego u≈ºerania siƒô ze Stra≈ºnikami ze Starego Obozu.
+	AI_Output (other, self,"DIA_Melvin_MetDusty_15_02"); //Nie omieszkam mu tego powt√≥rzyƒá.
 };
 
 

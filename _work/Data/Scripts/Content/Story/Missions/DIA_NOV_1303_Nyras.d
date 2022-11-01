@@ -33,7 +33,7 @@ instance DIA_Nyras_Hallo (C_INFO)
 	condition		= DIA_Nyras_Hallo_Condition;
 	information		= DIA_Nyras_Hallo_Info;
 	permanent		= 0;
-	description		= "Czeœæ, jestem tu nowy.";
+	description		= "CzeÅ›Ä‡, jestem tu nowy.";
 };
 
 FUNC int  DIA_Nyras_Hallo_Condition()
@@ -45,8 +45,8 @@ FUNC int  DIA_Nyras_Hallo_Condition()
 };
 func void  DIA_Nyras_Hallo_Info()
 {
-	AI_Output			(other, self,"DIA_Nyras_Hallo_15_00"); //Czeœæ, jestem tu nowy.
-	AI_Output			(self, other,"DIA_Nyras_Hallo_03_01"); //Niech Œni¹cy bêdzie z tob¹, nieznajomy.
+	AI_Output			(other, self,"DIA_Nyras_Hallo_15_00"); //CzeÅ›Ä‡, jestem tu nowy.
+	AI_Output			(self, other,"DIA_Nyras_Hallo_03_01"); //Niech ÅšniÄ…cy bÄ™dzie z tobÄ…, nieznajomy.
 };
 
 // **************************************************
@@ -60,7 +60,7 @@ instance DIA_Nyras_Ort (C_INFO)
 	condition		= DIA_Nyras_Ort_Condition;
 	information		= DIA_Nyras_Ort_Info;
 	permanent		= 0;
-	description		= "Co mo¿esz mi powiedzieæ o tym miejscu?";
+	description		= "Co moÅ¼esz mi powiedzieÄ‡ o tym miejscu?";
 };
 
 FUNC int  DIA_Nyras_Ort_Condition()
@@ -74,31 +74,31 @@ FUNC int  DIA_Nyras_Ort_Condition()
 
 func void  DIA_Nyras_Ort_Info()
 {
-	AI_Output			(other, self,"DIA_Nyras_Ort_15_00"); //Co mo¿esz mi powiedzieæ o tym miejscu?
-	AI_Output			(self, other,"DIA_Nyras_Ort_03_01"); //Có¿ - najwa¿niejszymi osobami w obozie s¹ Guru. Oni g³osz¹ s³owo Œni¹cego i przekazuj¹ Nowicjuszom informacje o wizjach naszego Mistrza.
-	AI_Output			(self, other,"DIA_Nyras_Ort_03_02"); //On sam jest naturalnie zbyt zapracowany, by rozmawiaæ ze wszystkimi osobiœcie.
-	AI_Output			(self, other,"DIA_Nyras_Ort_03_03"); //Ale czasami przemawia do zgromadzonych na œwi¹tynnym dziedziñcu, objawiaj¹c œwiête prawdy ustanowione przez Œni¹cego.
+	AI_Output			(other, self,"DIA_Nyras_Ort_15_00"); //Co moÅ¼esz mi powiedzieÄ‡ o tym miejscu?
+	AI_Output			(self, other,"DIA_Nyras_Ort_03_01"); //CÃ³Å¼ - najwaÅ¼niejszymi osobami w obozie sÄ… Guru. Oni gÅ‚oszÄ… sÅ‚owo ÅšniÄ…cego i przekazujÄ… Nowicjuszom informacje o wizjach naszego Mistrza.
+	AI_Output			(self, other,"DIA_Nyras_Ort_03_02"); //On sam jest naturalnie zbyt zapracowany, by rozmawiaÄ‡ ze wszystkimi osobiÅ›cie.
+	AI_Output			(self, other,"DIA_Nyras_Ort_03_03"); //Ale czasami przemawia do zgromadzonych na Å›wiÄ…tynnym dziedziÅ„cu, objawiajÄ…c Å›wiÄ™te prawdy ustanowione przez ÅšniÄ…cego.
 	
 	Info_ClearChoices 	(DIA_Nyras_Ort);
-	Info_Addchoice 		(DIA_Nyras_Ort,"Opowiedz mi jeszcze o œwiêtych s³owach Œni¹cego.",DIA_Nyras_Ort_Holy);
-	Info_Addchoice 		(DIA_Nyras_Ort,"I co wtedy mówi?",DIA_Nyras_Ort_Casual);
+	Info_Addchoice 		(DIA_Nyras_Ort,"Opowiedz mi jeszcze o Å›wiÄ™tych sÅ‚owach ÅšniÄ…cego.",DIA_Nyras_Ort_Holy);
+	Info_Addchoice 		(DIA_Nyras_Ort,"I co wtedy mÃ³wi?",DIA_Nyras_Ort_Casual);
 };
 
 func void DIA_Nyras_Ort_Casual()
 {
-	AI_Output			(other, self,"DIA_Nyras_Ort_Casual_15_00"); //I co wtedy mówi?
-	AI_Output			(self, other,"DIA_Nyras_Ort_Casual_03_01"); //Œni¹cy wskazuje nam jedyn¹ s³uszn¹ drogê. Ale niewierny nigdy tego nie zrozumie!
+	AI_Output			(other, self,"DIA_Nyras_Ort_Casual_15_00"); //I co wtedy mÃ³wi?
+	AI_Output			(self, other,"DIA_Nyras_Ort_Casual_03_01"); //ÅšniÄ…cy wskazuje nam jedynÄ… sÅ‚usznÄ… drogÄ™. Ale niewierny nigdy tego nie zrozumie!
 	Info_ClearChoices 	(DIA_Nyras_Ort);
 };
 
 func void DIA_Nyras_Ort_Holy()
 {
-	AI_Output			(other, self,"DIA_Nyras_Ort_Holy_15_00"); //Opowiedz mi jeszcze o œwiêtych s³owach Œni¹cego.
-	AI_Output			(self, other,"DIA_Nyras_Ort_Holy_03_01"); //On bêdzie tym, który wyprowadzi nas na wolnoœæ.
-	AI_Output			(self, other,"DIA_Nyras_Ort_Holy_03_02"); //Y'Berion powiedzia³, ¿e poznamy w³aœciw¹ drogê, jak tylko uda siê nam nawi¹zaæ kontakt ze Œni¹cym.
-	AI_Output			(self, other,"DIA_Nyras_Ort_Holy_03_03"); //Nasz Mistrz przygotowuje rytua³ wielkiego przyzwania, podczas którego wspólnie z najlepszymi Nowicjuszami nawi¹¿e kontakt ze Œni¹cym.
-	AI_Output			(self, other,"DIA_Nyras_Ort_Holy_03_04"); //Pomaga mu w tym Cor Kalom, alchemik, który przygotowuje magiczne wywary wprowadzaj¹ce nas w stan transu.
-	AI_Output			(self, other,"DIA_Nyras_Ort_Holy_03_05"); //Tylko w transie - lub we œnie - mo¿na us³yszeæ s³owa naszego Wyzwoliciela.
+	AI_Output			(other, self,"DIA_Nyras_Ort_Holy_15_00"); //Opowiedz mi jeszcze o Å›wiÄ™tych sÅ‚owach ÅšniÄ…cego.
+	AI_Output			(self, other,"DIA_Nyras_Ort_Holy_03_01"); //On bÄ™dzie tym, ktÃ³ry wyprowadzi nas na wolnoÅ›Ä‡.
+	AI_Output			(self, other,"DIA_Nyras_Ort_Holy_03_02"); //Y'Berion powiedziaÅ‚, Å¼e poznamy wÅ‚aÅ›ciwÄ… drogÄ™, jak tylko uda siÄ™ nam nawiÄ…zaÄ‡ kontakt ze ÅšniÄ…cym.
+	AI_Output			(self, other,"DIA_Nyras_Ort_Holy_03_03"); //Nasz Mistrz przygotowuje rytuaÅ‚ wielkiego przyzwania, podczas ktÃ³rego wspÃ³lnie z najlepszymi Nowicjuszami nawiÄ…Å¼e kontakt ze ÅšniÄ…cym.
+	AI_Output			(self, other,"DIA_Nyras_Ort_Holy_03_04"); //Pomaga mu w tym Cor Kalom, alchemik, ktÃ³ry przygotowuje magiczne wywary wprowadzajÄ…ce nas w stan transu.
+	AI_Output			(self, other,"DIA_Nyras_Ort_Holy_03_05"); //Tylko w transie - lub we Å›nie - moÅ¼na usÅ‚yszeÄ‡ sÅ‚owa naszego Wyzwoliciela.
 	Info_ClearChoices 	(DIA_Nyras_Ort);
 };
 
@@ -119,7 +119,7 @@ func void DIA_Nyras_Ort_Holy()
 ///////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////
 
-// ***************************** BEGRÜßUNG ****************************************//
+// ***************************** BEGRÃœÃŸUNG ****************************************//
 
 instance Nov_1303_Nyras_GREET (C_INFO)
 {
@@ -139,7 +139,7 @@ FUNC int  Nov_1303_Nyras_GREET_Condition()
 };
 func void  Nov_1303_Nyras_GREET_Info()
 {
-	AI_Output			(self,other ,"Nov_1303_Nyras_GREET_Info_03_00"); //IdŸ precz! Nie masz tu czego szukaæ!
+	AI_Output			(self,other ,"Nov_1303_Nyras_GREET_Info_03_00"); //IdÅº precz! Nie masz tu czego szukaÄ‡!
 };
 // ***************************** INFOS ****************************************//
 
@@ -150,7 +150,7 @@ instance  Nov_1303_Nyras_LEAVE (C_INFO)
 	information		= Nov_1303_Nyras_LEAVE_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Szukam kamienia ogniskuj¹cego!"; 
+	description		= "Szukam kamienia ogniskujÄ…cego!"; 
 };
 
 FUNC int  Nov_1303_Nyras_LEAVE_Condition()
@@ -162,15 +162,15 @@ FUNC int  Nov_1303_Nyras_LEAVE_Condition()
 };
 FUNC void  Nov_1303_Nyras_LEAVE_Info()
 {
-	AI_Output			(other, self,"Nov_1303_Nyras_LEAVE_Info_15_01"); //Szukam kamienia ogniskuj¹cego!
-	AI_Output			(self, other,"Nov_1303_Nyras_LEAVE_Info_03_02"); //Obawiam siê, ¿e trochê siê spóŸni³eœ! Ja go znalaz³em wczeœniej!
-	AI_Output			(self, other,"Nov_1303_Nyras_LEAVE_Info_03_03"); //I zamierzam go sobie zatrzymaæ!
-	AI_Output			(self, other,"Nov_1303_Nyras_LEAVE_Info_03_04"); //Œni¹cy przemówi³ do mnie ostatniej nocy i uczyni³ mnie swym arcykap³anem!
-	AI_Output			(self, other,"Nov_1303_Nyras_LEAVE_Info_03_05"); //Teraz jestem jedynym prawdziwym s³ug¹ Œni¹cego. ¯adnej Stra¿y, ¿adnych Guru!
+	AI_Output			(other, self,"Nov_1303_Nyras_LEAVE_Info_15_01"); //Szukam kamienia ogniskujÄ…cego!
+	AI_Output			(self, other,"Nov_1303_Nyras_LEAVE_Info_03_02"); //Obawiam siÄ™, Å¼e trochÄ™ siÄ™ spÃ³ÅºniÅ‚eÅ›! Ja go znalazÅ‚em wczeÅ›niej!
+	AI_Output			(self, other,"Nov_1303_Nyras_LEAVE_Info_03_03"); //I zamierzam go sobie zatrzymaÄ‡!
+	AI_Output			(self, other,"Nov_1303_Nyras_LEAVE_Info_03_04"); //ÅšniÄ…cy przemÃ³wiÅ‚ do mnie ostatniej nocy i uczyniÅ‚ mnie swym arcykapÅ‚anem!
+	AI_Output			(self, other,"Nov_1303_Nyras_LEAVE_Info_03_05"); //Teraz jestem jedynym prawdziwym sÅ‚ugÄ… ÅšniÄ…cego. Å»adnej StraÅ¼y, Å¼adnych Guru!
 	AI_Output			(self, other,"Nov_1303_Nyras_LEAVE_Info_03_06"); //TYLKO JA!!!
-	AI_Output			(self, other,"Nov_1303_Nyras_LEAVE_Info_03_07"); //GIÑ!
+	AI_Output			(self, other,"Nov_1303_Nyras_LEAVE_Info_03_07"); //GIÅƒ!
 
-	B_LogEntry		(CH2_Focus,"Nyras postrada³ zmys³y! Chce zatrzymaæ dla siebie kamieñ ogniskuj¹cy i rzuci³ siê na mnie bez ostrze¿enia!");
+	B_LogEntry		(CH2_Focus,"Nyras postradaÅ‚ zmysÅ‚y! Chce zatrzymaÄ‡ dla siebie kamieÅ„ ogniskujÄ…cy i rzuciÅ‚ siÄ™ na mnie bez ostrzeÅ¼enia!");
 
 	Npc_SetPermAttitude (self,ATT_HOSTILE);
 	AI_StopProcessInfos	(self);

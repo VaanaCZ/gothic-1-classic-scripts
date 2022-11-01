@@ -33,7 +33,7 @@ instance  DIA_Cutter_Hello (C_INFO)
 	condition	= DIA_Cutter_Hello_Condition;
 	information	= DIA_Cutter_Hello_Info;
 	permanent	= 0;
-	description = "Wasz zamek jest bardzo du¿y.";
+	description = "Wasz zamek jest bardzo duÅ¼y.";
 };                       
 
 FUNC int  DIA_Cutter_Hello_Condition()
@@ -45,9 +45,9 @@ FUNC int  DIA_Cutter_Hello_Condition()
 };
 FUNC VOID  DIA_Cutter_Hello_Info()
 {
-	AI_Output (other, self,"DIA_Cutter_Hello_15_00"); //Wasz zamek jest bardzo du¿y.
-	AI_Output (self, other,"DIA_Cutter_Hello_08_01"); //Chyba ciê jeszcze tutaj nie widzia³em. Kim jesteœ?
-	AI_Output (other, self,"DIA_Cutter_Hello_15_02"); //Jestem tu nowy. Chcia³em siê trochê rozejrzeæ.
+	AI_Output (other, self,"DIA_Cutter_Hello_15_00"); //Wasz zamek jest bardzo duÅ¼y.
+	AI_Output (self, other,"DIA_Cutter_Hello_08_01"); //Chyba ciÄ™ jeszcze tutaj nie widziaÅ‚em. Kim jesteÅ›?
+	AI_Output (other, self,"DIA_Cutter_Hello_15_02"); //Jestem tu nowy. ChciaÅ‚em siÄ™ trochÄ™ rozejrzeÄ‡.
 };
 
 //******************************************
@@ -61,7 +61,7 @@ instance  DIA_Cutter_Burg (C_INFO)
 	condition	= DIA_Cutter_Burg_Condition;
 	information	= DIA_Cutter_Burg_Info;
 	permanent	= 10;
-	description = "Mo¿esz mi opowiedzieæ o tym zamku?";
+	description = "MoÅ¼esz mi opowiedzieÄ‡ o tym zamku?";
 };                       
 
 FUNC int  DIA_Cutter_Burg_Condition()
@@ -74,12 +74,12 @@ FUNC int  DIA_Cutter_Burg_Condition()
 
 FUNC VOID  DIA_Cutter_Burg_Info()
 {
-	AI_Output (other, self,"DIA_Cutter_Burg_15_00"); //Mo¿esz mi opowiedzieæ o tym zamku?
-	AI_Output (self, other,"DIA_Cutter_Burg_08_01"); //Co tu du¿o mówiæ: Gomez i jego ludzie zajêli go po wielkim buncie.
-	AI_Output (self, other,"DIA_Cutter_Burg_08_02"); //Od pocz¹tku wiedzia³em, ¿e warto bêdzie stan¹æ po jego stronie.
-	AI_Output (self, other,"DIA_Cutter_Burg_08_03"); //Wielu z nas, jeszcze jako wiêŸniowie zamkniêci w lochach lub zmuszani do pracy w kopalni, uznawa³o zwierzchnictwo Gomeza.
-	AI_Output (other, self,"DIA_Cutter_Burg_15_04"); //Czy te lochy znajduj¹ siê pod zamkiem?
-	AI_Output (self, other,"DIA_Cutter_Burg_08_05"); //Tak, ale teraz œwiec¹ pustk¹. Nikt tam nie schodzi³ od czasu wielkiego buntu.
+	AI_Output (other, self,"DIA_Cutter_Burg_15_00"); //MoÅ¼esz mi opowiedzieÄ‡ o tym zamku?
+	AI_Output (self, other,"DIA_Cutter_Burg_08_01"); //Co tu duÅ¼o mÃ³wiÄ‡: Gomez i jego ludzie zajÄ™li go po wielkim buncie.
+	AI_Output (self, other,"DIA_Cutter_Burg_08_02"); //Od poczÄ…tku wiedziaÅ‚em, Å¼e warto bÄ™dzie stanÄ…Ä‡ po jego stronie.
+	AI_Output (self, other,"DIA_Cutter_Burg_08_03"); //Wielu z nas, jeszcze jako wiÄ™Åºniowie zamkniÄ™ci w lochach lub zmuszani do pracy w kopalni, uznawaÅ‚o zwierzchnictwo Gomeza.
+	AI_Output (other, self,"DIA_Cutter_Burg_15_04"); //Czy te lochy znajdujÄ… siÄ™ pod zamkiem?
+	AI_Output (self, other,"DIA_Cutter_Burg_08_05"); //Tak, ale teraz Å›wiecÄ… pustkÄ…. Nikt tam nie schodziÅ‚ od czasu wielkiego buntu.
 };
 
 //******************************************
@@ -93,7 +93,7 @@ instance  DIA_Cutter_PERM (C_INFO)
 	condition	= DIA_Cutter_PERM_Condition;
 	information	= DIA_Cutter_PERM_Info;
 	permanent	= 1;
-	description = "Jak wygl¹da ¿ycie stra¿nika?";
+	description = "Jak wyglÄ…da Å¼ycie straÅ¼nika?";
 };                       
 
 FUNC int  DIA_Cutter_PERM_Condition()
@@ -106,8 +106,8 @@ FUNC int  DIA_Cutter_PERM_Condition()
 
 FUNC VOID  DIA_Cutter_PERM_Info()
 {
-	AI_Output (other, self,"DIA_Cutter_PERM_15_00"); //Jak wygl¹da ¿ycie stra¿nika?
-	AI_Output (self, other,"DIA_Cutter_PERM_08_01"); //Jest spokojne. Jesteœmy najwiêkszym i najsilniejszym obozem w kolonii. Nikt nie œmie nas zaczepiaæ.
+	AI_Output (other, self,"DIA_Cutter_PERM_15_00"); //Jak wyglÄ…da Å¼ycie straÅ¼nika?
+	AI_Output (self, other,"DIA_Cutter_PERM_08_01"); //Jest spokojne. JesteÅ›my najwiÄ™kszym i najsilniejszym obozem w kolonii. Nikt nie Å›mie nas zaczepiaÄ‡.
 	AI_Output (other, self,"DIA_Cutter_PERM_15_02"); //Rozumiem.
 	AI_StopProcessInfos	(self);
 };
@@ -148,6 +148,6 @@ FUNC int  GRD_208_Cutter_WELCOME_Condition()
 };
 func void  GRD_208_Cutter_WELCOME_Info()
 {
-	AI_Output (self, other,"GRD_208_Cutter_WELCOME_Info_08_01"); //Dokona³eœ w³aœciwego wyboru. Spodoba ci siê bycie Stra¿nikiem!
+	AI_Output (self, other,"GRD_208_Cutter_WELCOME_Info_08_01"); //DokonaÅ‚eÅ› wÅ‚aÅ›ciwego wyboru. Spodoba ci siÄ™ bycie StraÅ¼nikiem!
 	AI_StopProcessInfos	(self);
 };

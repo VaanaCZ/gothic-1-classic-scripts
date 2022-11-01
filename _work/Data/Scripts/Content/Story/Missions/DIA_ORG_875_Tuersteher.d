@@ -44,6 +44,6 @@ FUNC INT DIA_Org_875_PERM_Condition()
 FUNC VOID DIA_Org_875_PERM_Info()
 {	
 	AI_Output (other, self,"DIA_Org_875_PERM_15_00"); //Wpuszczacie tu tylko Szkodniki i Krety?
-	AI_Output (self, other,"DIA_Org_875_PERM_13_01"); //Nie mamy teø nic do Braci z Sekty.
+	AI_Output (self, other,"DIA_Org_875_PERM_13_01"); //Nie mamy te≈º nic do Braci z Sekty.
 	AI_Output (self, other,"DIA_Org_875_PERM_13_02"); //Ale poza nimi nie wpuszczamy tu nikogo.
 };

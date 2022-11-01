@@ -5,7 +5,7 @@ func void B_CheckDeadMissionNPCs ()
 	{
 		if (Lefty_Mission == LOG_RUNNING)
 		{
-			B_LogEntry	(CH1_CarryWater,	"Po œmierci Lewusa problem wody chyba sam siê rozwi¹za³. Nigdy nie lubi³em tego cz³owieka.");
+			B_LogEntry	(CH1_CarryWater,	"Po Å›mierci Lewusa problem wody chyba sam siÄ™ rozwiÄ…zaÅ‚. Nigdy nie lubiÅ‚em tego czÅ‚owieka.");
 			Log_SetTopicStatus	(CH1_CarryWater,	LOG_SUCCESS);
 			LeftyDead = TRUE;
 		};

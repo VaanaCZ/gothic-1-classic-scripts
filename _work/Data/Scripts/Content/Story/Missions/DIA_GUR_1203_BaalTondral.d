@@ -9,7 +9,7 @@ INSTANCE DIA_BaalTondral_MuteExit (C_INFO)
 	condition	= DIA_BaalTondral_MuteExit_Condition;
 	information	= DIA_BaalTondral_MuteExit_Info;
 	permanent	= 0;
-	description = "Nic nie mów.";
+	description = "Nic nie mÃ³w.";
 };                       
 
 FUNC INT DIA_BaalTondral_MuteExit_Condition()
@@ -73,15 +73,15 @@ FUNC INT DIA_BaalTondral_FanaticTeacher_Condition()
 
 FUNC VOID DIA_BaalTondral_FanaticTeacher_Info()
 {
-	AI_Output (self, other,"DIA_BaalTondral_FanaticTeacher_13_00"); //Nie wygl¹dasz mi na kogoœ, kto chcia³by nosiæ niewolnicze jarzmo nak³adane ludziom przez Magnatów.
-	AI_Output (self, other,"DIA_BaalTondral_FanaticTeacher_13_01"); //Myœlê, ¿e jesteœ raczej poszukiwaczem - kimœ, kto szuka prawdziwej wiary. Czy czujesz, jak ogieñ trawi twoje cia³o podczas snu?
-	AI_Output (self, other,"DIA_BaalTondral_FanaticTeacher_13_02"); //Widzê, ¿e pow¹tpiewasz w rzeczy opowiadane ci przez s³ugusów Magnatów. Przecie¿ wiesz, dlaczego nie mo¿na im ufaæ, prawda? To k³amcy!
-	AI_Output (self, other,"DIA_BaalTondral_FanaticTeacher_13_03"); //Ich ³garstwa czyni¹ s³abych ludzi œlepcami. Ale twój duch jest silniejszy ni¿ ich k³amstwa!
-	AI_Output (self, other,"DIA_BaalTondral_FanaticTeacher_13_04"); //Czy nie odczuwasz pragnienia wolnoœci ka¿dego dnia? Nie czujesz, jak z ka¿d¹ godzin¹ pragnienie to staje siê silniejsze? Pozwól mu pokierowaæ twoim duchem!
-	AI_Output (self, other,"DIA_BaalTondral_FanaticTeacher_13_05"); //Czy wiesz, co robisz, próbuj¹c zag³uszyæ w sobie ten g³os? Wyrzekasz siê swojej duszy, wyrzekasz siê samego siebie! Nie pozwól, by strach tob¹ kierowa³.
-	AI_Output (self, other,"DIA_BaalTondral_FanaticTeacher_13_06"); //Uwolnij siê. Przejrzyj na oczy! Œni¹cy zbudzi siê pewnego dnia, wyzwoli swoich poddanych i str¹ci niewiernych w najczarniejsze czeluœci piekie³.
-	AI_Output (self, other,"DIA_BaalTondral_FanaticTeacher_13_07"); //Znikn¹ z tego œwiata jak nieczystoœci sp³ukane przez deszcz. Bêd¹ b³agaæ o litoœæ, ale wtedy bêdzie ju¿ dla nich za póŸno.
-	AI_Output (self, other,"DIA_BaalTondral_FanaticTeacher_13_08"); //Wtedy zap³ac¹ cenê. Zap³ac¹ j¹ w³asn¹ krwi¹... I w³asnym ¿yciem.
+	AI_Output (self, other,"DIA_BaalTondral_FanaticTeacher_13_00"); //Nie wyglÄ…dasz mi na kogoÅ›, kto chciaÅ‚by nosiÄ‡ niewolnicze jarzmo nakÅ‚adane ludziom przez MagnatÃ³w.
+	AI_Output (self, other,"DIA_BaalTondral_FanaticTeacher_13_01"); //MyÅ›lÄ™, Å¼e jesteÅ› raczej poszukiwaczem - kimÅ›, kto szuka prawdziwej wiary. Czy czujesz, jak ogieÅ„ trawi twoje ciaÅ‚o podczas snu?
+	AI_Output (self, other,"DIA_BaalTondral_FanaticTeacher_13_02"); //WidzÄ™, Å¼e powÄ…tpiewasz w rzeczy opowiadane ci przez sÅ‚ugusÃ³w MagnatÃ³w. PrzecieÅ¼ wiesz, dlaczego nie moÅ¼na im ufaÄ‡, prawda? To kÅ‚amcy!
+	AI_Output (self, other,"DIA_BaalTondral_FanaticTeacher_13_03"); //Ich Å‚garstwa czyniÄ… sÅ‚abych ludzi Å›lepcami. Ale twÃ³j duch jest silniejszy niÅ¼ ich kÅ‚amstwa!
+	AI_Output (self, other,"DIA_BaalTondral_FanaticTeacher_13_04"); //Czy nie odczuwasz pragnienia wolnoÅ›ci kaÅ¼dego dnia? Nie czujesz, jak z kaÅ¼dÄ… godzinÄ… pragnienie to staje siÄ™ silniejsze? PozwÃ³l mu pokierowaÄ‡ twoim duchem!
+	AI_Output (self, other,"DIA_BaalTondral_FanaticTeacher_13_05"); //Czy wiesz, co robisz, prÃ³bujÄ…c zagÅ‚uszyÄ‡ w sobie ten gÅ‚os? Wyrzekasz siÄ™ swojej duszy, wyrzekasz siÄ™ samego siebie! Nie pozwÃ³l, by strach tobÄ… kierowaÅ‚.
+	AI_Output (self, other,"DIA_BaalTondral_FanaticTeacher_13_06"); //Uwolnij siÄ™. Przejrzyj na oczy! ÅšniÄ…cy zbudzi siÄ™ pewnego dnia, wyzwoli swoich poddanych i strÄ…ci niewiernych w najczarniejsze czeluÅ›ci piekieÅ‚.
+	AI_Output (self, other,"DIA_BaalTondral_FanaticTeacher_13_07"); //ZniknÄ… z tego Å›wiata jak nieczystoÅ›ci spÅ‚ukane przez deszcz. BÄ™dÄ… bÅ‚agaÄ‡ o litoÅ›Ä‡, ale wtedy bÄ™dzie juÅ¼ dla nich za pÃ³Åºno.
+	AI_Output (self, other,"DIA_BaalTondral_FanaticTeacher_13_08"); //Wtedy zapÅ‚acÄ… cenÄ™. ZapÅ‚acÄ… jÄ… wÅ‚asnÄ… krwiÄ…... I wÅ‚asnym Å¼yciem.
 };
 
 // **************************************************
@@ -95,7 +95,7 @@ INSTANCE DIA_BaalTondral_YouTalked (C_INFO)
 	condition	= DIA_BaalTondral_YouTalked_Condition;
 	information	= DIA_BaalTondral_YouTalked_Info;
 	permanent	= 0;
-	description = "Hej! Odezwa³eœ siê do mnie. Czy to znaczy, ¿e mogê ju¿ z tob¹ rozmawiaæ?";
+	description = "Hej! OdezwaÅ‚eÅ› siÄ™ do mnie. Czy to znaczy, Å¼e mogÄ™ juÅ¼ z tobÄ… rozmawiaÄ‡?";
 };                       
 
 FUNC INT DIA_BaalTondral_YouTalked_Condition()
@@ -105,14 +105,14 @@ FUNC INT DIA_BaalTondral_YouTalked_Condition()
 
 FUNC VOID DIA_BaalTondral_YouTalked_Info()
 {
-	AI_Output (other, self,"DIA_BaalTondral_YouTalked_15_00"); //Hej! Odezwa³eœ siê do mnie. Czy to znaczy, ¿e mogê ju¿ z tob¹ rozmawiaæ?
-	AI_Output (self, other,"DIA_BaalTondral_YouTalked_13_01"); //Widzê, ¿e zaznajomi³eœ siê ju¿ z naszymi zasadami. To dobrze.
-	AI_Output (self, other,"DIA_BaalTondral_YouTalked_13_02"); //Wyczuwam w tobie wielk¹ si³ê ducha. Wkrótce bêdziesz gotów, by do nas do³¹czyæ.
-	AI_Output (self, other,"DIA_BaalTondral_YouTalked_13_03"); //Przemówi³em do ciebie, bo chcê daæ ci szansê udowodnienia swojej lojalnoœci.
+	AI_Output (other, self,"DIA_BaalTondral_YouTalked_15_00"); //Hej! OdezwaÅ‚eÅ› siÄ™ do mnie. Czy to znaczy, Å¼e mogÄ™ juÅ¼ z tobÄ… rozmawiaÄ‡?
+	AI_Output (self, other,"DIA_BaalTondral_YouTalked_13_01"); //WidzÄ™, Å¼e zaznajomiÅ‚eÅ› siÄ™ juÅ¼ z naszymi zasadami. To dobrze.
+	AI_Output (self, other,"DIA_BaalTondral_YouTalked_13_02"); //Wyczuwam w tobie wielkÄ… siÅ‚Ä™ ducha. WkrÃ³tce bÄ™dziesz gotÃ³w, by do nas doÅ‚Ä…czyÄ‡.
+	AI_Output (self, other,"DIA_BaalTondral_YouTalked_13_03"); //PrzemÃ³wiÅ‚em do ciebie, bo chcÄ™ daÄ‡ ci szansÄ™ udowodnienia swojej lojalnoÅ›ci.
 };
 
 // **************************************************
-// 				Loyalität beweisen
+// 				LoyalitÃ¤t beweisen
 // **************************************************
 	var int BaalTondral_GetNewGuy;
 // **************************************************
@@ -124,7 +124,7 @@ INSTANCE DIA_BaalTondral_Loyality (C_INFO)
 	condition	= DIA_BaalTondral_Loyality_Condition;
 	information	= DIA_BaalTondral_Loyality_Info;
 	permanent	= 0;
-	description = "W jaki sposób mogê udowodniæ swoj¹ lojalnoœæ?";
+	description = "W jaki sposÃ³b mogÄ™ udowodniÄ‡ swojÄ… lojalnoÅ›Ä‡?";
 };                       
 
 FUNC INT DIA_BaalTondral_Loyality_Condition()
@@ -137,13 +137,13 @@ FUNC INT DIA_BaalTondral_Loyality_Condition()
 
 FUNC VOID DIA_BaalTondral_Loyality_Info()
 {
-	AI_Output (other, self,"DIA_BaalTondral_Loyality_15_00"); //W jaki sposób mogê udowodniæ swoj¹ lojalnoœæ?
-	AI_Output (self, other,"DIA_BaalTondral_Loyality_13_01"); //Przede wszystkim, potrzebujemy nowych dusz, które zechc¹ przy³¹czyæ siê do naszej spo³ecznoœci.
-	AI_Output (self, other,"DIA_BaalTondral_Loyality_13_02"); //Jeœli chcesz mnie przekonaæ o swojej przydatnoœci dla naszego obozu, przyprowadŸ mi jeszcze jednego cz³owieka, który zechce zostaæ cz³onkiem Bractwa.
+	AI_Output (other, self,"DIA_BaalTondral_Loyality_15_00"); //W jaki sposÃ³b mogÄ™ udowodniÄ‡ swojÄ… lojalnoÅ›Ä‡?
+	AI_Output (self, other,"DIA_BaalTondral_Loyality_13_01"); //Przede wszystkim, potrzebujemy nowych dusz, ktÃ³re zechcÄ… przyÅ‚Ä…czyÄ‡ siÄ™ do naszej spoÅ‚ecznoÅ›ci.
+	AI_Output (self, other,"DIA_BaalTondral_Loyality_13_02"); //JeÅ›li chcesz mnie przekonaÄ‡ o swojej przydatnoÅ›ci dla naszego obozu, przyprowadÅº mi jeszcze jednego czÅ‚owieka, ktÃ³ry zechce zostaÄ‡ czÅ‚onkiem Bractwa.
 
 	Log_CreateTopic		(CH1_RecruitDusty,	LOG_MISSION);
 	Log_SetTopicStatus	(CH1_RecruitDusty,	LOG_RUNNING);
-	B_LogEntry			(CH1_RecruitDusty,"Baal Tondral wys³a³ mnie do Starego Obozu, gdzie mam zwerbowaæ nowego cz³onka dla Bractwa. To chyba niez³a okazja, ¿eby zjednaæ sobie jego sympatiê!");
+	B_LogEntry			(CH1_RecruitDusty,"Baal Tondral wysÅ‚aÅ‚ mnie do Starego Obozu, gdzie mam zwerbowaÄ‡ nowego czÅ‚onka dla Bractwa. To chyba niezÅ‚a okazja, Å¼eby zjednaÄ‡ sobie jego sympatiÄ™!");
 
 	BaalTondral_GetNewGuy = LOG_RUNNING;
 };
@@ -159,7 +159,7 @@ INSTANCE DIA_BaalTondral_NewMember (C_INFO)
 	condition	= DIA_BaalTondral_NewMember_Condition;
 	information	= DIA_BaalTondral_NewMember_Info;
 	permanent	= 1;
-	description = "Gdzie mam szukaæ nowych cz³onków Bractwa?";
+	description = "Gdzie mam szukaÄ‡ nowych czÅ‚onkÃ³w Bractwa?";
 };                       
 
 FUNC INT DIA_BaalTondral_NewMember_Condition()
@@ -172,9 +172,9 @@ FUNC INT DIA_BaalTondral_NewMember_Condition()
 
 FUNC VOID DIA_BaalTondral_NewMember_Info()
 {
-	AI_Output (other, self,"DIA_BaalTondral_NewMember_15_00"); //Gdzie mam szukaæ nowych cz³onków Bractwa?
-	AI_Output (self, other,"DIA_BaalTondral_NewMember_13_01"); //Na pocz¹tek rozejrzyj siê w Starym Obozie. Wielu z tamtejszych ludzi ma ju¿ doœæ terroru i k³amstw. Potrzebuj¹ tylko odrobiny wsparcia.
-	AI_Output (self, other,"DIA_BaalTondral_NewMember_13_02"); //W Nowym Obozie raczej wiele nie zwojujesz. Mieszkaj¹ tam sami barbarzyñcy.
+	AI_Output (other, self,"DIA_BaalTondral_NewMember_15_00"); //Gdzie mam szukaÄ‡ nowych czÅ‚onkÃ³w Bractwa?
+	AI_Output (self, other,"DIA_BaalTondral_NewMember_13_01"); //Na poczÄ…tek rozejrzyj siÄ™ w Starym Obozie. Wielu z tamtejszych ludzi ma juÅ¼ doÅ›Ä‡ terroru i kÅ‚amstw. PotrzebujÄ… tylko odrobiny wsparcia.
+	AI_Output (self, other,"DIA_BaalTondral_NewMember_13_02"); //W Nowym Obozie raczej wiele nie zwojujesz. MieszkajÄ… tam sami barbarzyÅ„cy.
 };
 
 // **************************************************
@@ -188,7 +188,7 @@ INSTANCE DIA_BaalTondral_NewMember2 (C_INFO)
 	condition	= DIA_BaalTondral_NewMember2_Condition;
 	information	= DIA_BaalTondral_NewMember2_Info;
 	permanent	= 0;
-	description = "Dlaczego tak desperacko szukacie nowych cz³onków?";
+	description = "Dlaczego tak desperacko szukacie nowych czÅ‚onkÃ³w?";
 };                       
 
 FUNC INT DIA_BaalTondral_NewMember2_Condition()
@@ -201,11 +201,11 @@ FUNC INT DIA_BaalTondral_NewMember2_Condition()
 
 FUNC VOID DIA_BaalTondral_NewMember2_Info()
 {
-	AI_Output (other, self,"DIA_BaalTondral_NewMember2_15_00"); //Dlaczego tak desperacko szukacie nowych cz³onków?
-	AI_Output (self, other,"DIA_BaalTondral_NewMember2_13_01"); //Œni¹cy przemówi³ do naszego mistrza, oznajmiaj¹c, ¿e ma dla nas niezwykle wa¿n¹ wiadomoœæ.
-	AI_Output (self, other,"DIA_BaalTondral_NewMember2_13_02"); //Ale nie zebra³ jeszcze wszystkich si³. Dlatego potrzebuje NASZEJ si³y, by nawi¹zaæ ostateczny kontakt.
-	AI_Output (self, other,"DIA_BaalTondral_NewMember2_13_03"); //Dlatego przygotowujemy siê do wielkiego przyzwania. Im wiêcej ludzi weŸmie w nim udzia³, tym wiêksze bêd¹ szanse powodzenia.
-	AI_Output (self, other,"DIA_BaalTondral_NewMember2_13_04"); //Jeœli chcesz dowiedzieæ siê wiêcej na ten temat, idŸ na œwi¹tynny dziedziniec. Tylko nie przeszkadzaj naszemu mistrzowi w medytacji!
+	AI_Output (other, self,"DIA_BaalTondral_NewMember2_15_00"); //Dlaczego tak desperacko szukacie nowych czÅ‚onkÃ³w?
+	AI_Output (self, other,"DIA_BaalTondral_NewMember2_13_01"); //ÅšniÄ…cy przemÃ³wiÅ‚ do naszego mistrza, oznajmiajÄ…c, Å¼e ma dla nas niezwykle waÅ¼nÄ… wiadomoÅ›Ä‡.
+	AI_Output (self, other,"DIA_BaalTondral_NewMember2_13_02"); //Ale nie zebraÅ‚ jeszcze wszystkich siÅ‚. Dlatego potrzebuje NASZEJ siÅ‚y, by nawiÄ…zaÄ‡ ostateczny kontakt.
+	AI_Output (self, other,"DIA_BaalTondral_NewMember2_13_03"); //Dlatego przygotowujemy siÄ™ do wielkiego przyzwania. Im wiÄ™cej ludzi weÅºmie w nim udziaÅ‚, tym wiÄ™ksze bÄ™dÄ… szanse powodzenia.
+	AI_Output (self, other,"DIA_BaalTondral_NewMember2_13_04"); //JeÅ›li chcesz dowiedzieÄ‡ siÄ™ wiÄ™cej na ten temat, idÅº na Å›wiÄ…tynny dziedziniec. Tylko nie przeszkadzaj naszemu mistrzowi w medytacji!
 };
 
 // **************************************************
@@ -219,7 +219,7 @@ INSTANCE DIA_BaalTondral_DustySuccess (C_INFO)
 	condition	= DIA_BaalTondral_DustySuccess_Condition;
 	information	= DIA_BaalTondral_DustySuccess_Info;
 	permanent	= 0;
-	description = "Mistrzu, oto ktoœ, kto chcia³by ciê poznaæ!";
+	description = "Mistrzu, oto ktoÅ›, kto chciaÅ‚by ciÄ™ poznaÄ‡!";
 };                       
 
 FUNC INT DIA_BaalTondral_DustySuccess_Condition()
@@ -235,28 +235,28 @@ FUNC VOID DIA_BaalTondral_DustySuccess_Info()
 {
 	var C_NPC dusty; dusty = Hlp_GetNpc(Vlk_524_Dusty);
 	
-	AI_Output			(other, self,"DIA_BaalTondral_DustySuccess_15_00"); //Mistrzu, oto ktoœ, kto chcia³by ciê poznaæ!
-	AI_Output			(self, other,"DIA_BaalTondral_DustySuccess_13_01"); //Kogó¿ mi tu przyprowadzi³eœ? Czy jest godzien?
-	AI_Output			(other, self,"DIA_BaalTondral_DustySuccess_15_02"); //Có¿, bez twojego duchowego wsparcia zapewne siê nie obêdzie, Mistrzu.
-	AI_Output			(self, other,"DIA_BaalTondral_DustySuccess_13_03"); //Dobrze. Od dzisiaj ten cz³owiek bêdzie moim uczniem.
+	AI_Output			(other, self,"DIA_BaalTondral_DustySuccess_15_00"); //Mistrzu, oto ktoÅ›, kto chciaÅ‚by ciÄ™ poznaÄ‡!
+	AI_Output			(self, other,"DIA_BaalTondral_DustySuccess_13_01"); //KogÃ³Å¼ mi tu przyprowadziÅ‚eÅ›? Czy jest godzien?
+	AI_Output			(other, self,"DIA_BaalTondral_DustySuccess_15_02"); //CÃ³Å¼, bez twojego duchowego wsparcia zapewne siÄ™ nie obÄ™dzie, Mistrzu.
+	AI_Output			(self, other,"DIA_BaalTondral_DustySuccess_13_03"); //Dobrze. Od dzisiaj ten czÅ‚owiek bÄ™dzie moim uczniem.
 	//------------------------------------------------------------------	
 	AI_TurnToNpc		(self, dusty);
 	AI_TurnToNpc		(dusty,other);
-	AI_Output			(self, NULL,"DIA_BaalTondral_DustySuccess_13_04"); //Ka¿dego dnia bêdziesz przychodzi³ do mojej chaty po nauki. Dla twojej duszy jeszcze nie jest zbyt póŸno.
+	AI_Output			(self, NULL,"DIA_BaalTondral_DustySuccess_13_04"); //KaÅ¼dego dnia bÄ™dziesz przychodziÅ‚ do mojej chaty po nauki. Dla twojej duszy jeszcze nie jest zbyt pÃ³Åºno.
 
-	//AI_Output			(dusty,other,"DIA_BaalTondral_DustySuccess_03_05"); //Heißt das, ich bin dabei - einfach so?
+	//AI_Output			(dusty,other,"DIA_BaalTondral_DustySuccess_03_05"); //HeiÃŸt das, ich bin dabei - einfach so?
 	//AI_TurnToNpc		(other,dusty);
 	//AI_Output			(other,NULL,"DIA_BaalTondral_DustySuccess_15_06"); //Sieht so aus. Tu einfach, was der Meister dir sagt.
 
-	//---- Dusty vom SC lösen ----
+	//---- Dusty vom SC lÃ¶sen ----
 	dusty.aivar[AIV_PARTYMEMBER] = FALSE;
-	dusty.flags = 0;	// Immortal löschen
+	dusty.flags = 0;	// Immortal lÃ¶schen
 	dusty.guild = GIL_NOV;
 	Npc_SetTrueGuild	(dusty, GIL_NOV);
 	B_ExchangeRoutine	(Vlk_524_Dusty,"PREPARERITUAL");
 	
 	BaalTondral_GetNewGuy = LOG_SUCCESS;
-	B_LogEntry			(CH1_RecruitDusty,"Dusty zosta³ uczniem Baal Tondrala. Moje zadanie skoñczone.");
+	B_LogEntry			(CH1_RecruitDusty,"Dusty zostaÅ‚ uczniem Baal Tondrala. Moje zadanie skoÅ„czone.");
 	Log_SetTopicStatus	(CH1_RecruitDusty,	LOG_SUCCESS);
 	B_GiveXP			(XP_DeliveredDusty);
 };
@@ -272,7 +272,7 @@ INSTANCE DIA_BaalTondral_SendToKalom (C_INFO)
 	condition	= DIA_BaalTondral_SendToKalom_Condition;
 	information	= DIA_BaalTondral_SendToKalom_Info;
 	permanent	= 0;
-	description = "Mistrzu! Chcia³bym do³¹czyæ do Bractwa.";
+	description = "Mistrzu! ChciaÅ‚bym doÅ‚Ä…czyÄ‡ do Bractwa.";
 };                       
 
 FUNC INT DIA_BaalTondral_SendToKalom_Condition()
@@ -285,11 +285,11 @@ FUNC INT DIA_BaalTondral_SendToKalom_Condition()
 
 FUNC VOID DIA_BaalTondral_SendToKalom_Info()
 {
-	AI_Output 		(other, self,"DIA_BaalTondral_SendToKalom_15_00"); //Mistrzu! Chcia³bym do³¹czyæ do Bractwa. Czy mogê liczyæ na twoj¹ przychylnoœæ?
+	AI_Output 		(other, self,"DIA_BaalTondral_SendToKalom_15_00"); //Mistrzu! ChciaÅ‚bym doÅ‚Ä…czyÄ‡ do Bractwa. Czy mogÄ™ liczyÄ‡ na twojÄ… przychylnoÅ›Ä‡?
 	AI_TurnToNpc	(self, other);
-	AI_Output 		(self, other,"DIA_BaalTondral_SendToKalom_13_01"); //Udowodni³eœ, ¿e jesteœ cz³owiekiem prawym. Cor Kalom powinien ciê przyj¹æ.
+	AI_Output 		(self, other,"DIA_BaalTondral_SendToKalom_13_01"); //UdowodniÅ‚eÅ›, Å¼e jesteÅ› czÅ‚owiekiem prawym. Cor Kalom powinien ciÄ™ przyjÄ…Ä‡.
 
-	B_LogEntry(CH1_JoinPsi,"Baal Tondral uwa¿a, ¿e jestem godzien za³o¿yæ szatê Nowicjusza!");
+	B_LogEntry(CH1_JoinPsi,"Baal Tondral uwaÅ¼a, Å¼e jestem godzien zaÅ‚oÅ¼yÄ‡ szatÄ™ Nowicjusza!");
 };
 
 

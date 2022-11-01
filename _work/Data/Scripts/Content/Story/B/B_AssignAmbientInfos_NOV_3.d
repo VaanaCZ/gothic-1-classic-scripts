@@ -37,7 +37,7 @@ INSTANCE Info_Nov_3_EinerVonEuchWerden (C_INFO) // E1
 	condition	= Info_Nov_3_EinerVonEuchWerden_Condition;
 	information	= Info_Nov_3_EinerVonEuchWerden_Info;
 	permanent	= 1;
-	description = "Jak mogê do was do³¹czyæ?";
+	description = "Jak mogÄ™ do was doÅ‚Ä…czyÄ‡?";
 };                       
 
 FUNC INT Info_Nov_3_EinerVonEuchWerden_Condition()
@@ -50,9 +50,9 @@ FUNC INT Info_Nov_3_EinerVonEuchWerden_Condition()
 
 FUNC VOID Info_Nov_3_EinerVonEuchWerden_Info()
 {
-	AI_Output(other,self,"Info_Nov_3_EinerVonEuchWerden_15_00"); //Jak mogê do was do³¹czyæ?
-	AI_Output(self,other,"Info_Nov_3_EinerVonEuchWerden_03_01"); //To proste. Musisz siê po prostu otworzyæ.
-	AI_Output(self,other,"Info_Nov_3_EinerVonEuchWerden_03_02"); //Porozmawiaj z Guru, oni wska¿¹ ci drogê!
+	AI_Output(other,self,"Info_Nov_3_EinerVonEuchWerden_15_00"); //Jak mogÄ™ do was doÅ‚Ä…czyÄ‡?
+	AI_Output(self,other,"Info_Nov_3_EinerVonEuchWerden_03_01"); //To proste. Musisz siÄ™ po prostu otworzyÄ‡.
+	AI_Output(self,other,"Info_Nov_3_EinerVonEuchWerden_03_02"); //Porozmawiaj z Guru, oni wskaÅ¼Ä… ci drogÄ™!
 };
 
 // *************************************************************************
@@ -65,7 +65,7 @@ INSTANCE Info_Nov_3_WichtigePersonen(C_INFO)
 	condition	= Info_Nov_3_WichtigePersonen_Condition;
 	information	= Info_Nov_3_WichtigePersonen_Info;
 	permanent	= 1;
-	description = "Kto tu rz¹dzi?";
+	description = "Kto tu rzÄ…dzi?";
 };                       
 
 FUNC INT Info_Nov_3_WichtigePersonen_Condition()
@@ -75,9 +75,9 @@ FUNC INT Info_Nov_3_WichtigePersonen_Condition()
 
 FUNC VOID Info_Nov_3_WichtigePersonen_Info()
 {
-	AI_Output(other,self,"Info_Nov_3_WichtigePersonen_15_00"); //Kto tu rz¹dzi?
-	AI_Output(self,other,"Info_Nov_3_WichtigePersonen_03_01"); //Y'Berion! Chwa³a Œni¹cemu! To w³aœnie on sprowadzi³ nas do tego wspania³ego miejsca.
-	AI_Output(self,other,"Info_Nov_3_WichtigePersonen_03_02"); //Wszystko tutaj powsta³o w rezultacie jego œwiêtych objawieñ.
+	AI_Output(other,self,"Info_Nov_3_WichtigePersonen_15_00"); //Kto tu rzÄ…dzi?
+	AI_Output(self,other,"Info_Nov_3_WichtigePersonen_03_01"); //Y'Berion! ChwaÅ‚a ÅšniÄ…cemu! To wÅ‚aÅ›nie on sprowadziÅ‚ nas do tego wspaniaÅ‚ego miejsca.
+	AI_Output(self,other,"Info_Nov_3_WichtigePersonen_03_02"); //Wszystko tutaj powstaÅ‚o w rezultacie jego Å›wiÄ™tych objawieÅ„.
 };
 
 // *************************************************************************
@@ -90,7 +90,7 @@ INSTANCE Info_Nov_3_DasLager(C_INFO)
 	condition	= Info_Nov_3_DasLager_Condition;
 	information	= Info_Nov_3_DasLager_Info;
 	permanent	= 1;
-	description = "Jakie miejsca warto tu odwiedziæ?";
+	description = "Jakie miejsca warto tu odwiedziÄ‡?";
 };                       
 
 FUNC INT Info_Nov_3_DasLager_Condition()
@@ -100,8 +100,8 @@ FUNC INT Info_Nov_3_DasLager_Condition()
 
 FUNC VOID Info_Nov_3_DasLager_Info()
 {
-	AI_Output(other,self,"Info_Nov_3_DasLager_15_00"); //Jakie miejsca warto tu odwiedziæ?
-	AI_Output(self,other,"Info_Nov_3_DasLager_03_01"); //Hmm... mo¿e Fortuno? On wydziela darmowe racje bagiennego ziela wszystkim cz³onkom Sekty.
+	AI_Output(other,self,"Info_Nov_3_DasLager_15_00"); //Jakie miejsca warto tu odwiedziÄ‡?
+	AI_Output(self,other,"Info_Nov_3_DasLager_03_01"); //Hmm... moÅ¼e Fortuno? On wydziela darmowe racje bagiennego ziela wszystkim czÅ‚onkom Sekty.
 	AI_Output(self,other,"Info_Nov_3_DasLager_03_02"); //Znajdziesz go pod laboratorium alchemicznym Cor Kaloma.
 	
 	var C_NPC CorKalom;		CorKalom= Hlp_GetNpc(Gur_1201_CorKalom);
@@ -118,7 +118,7 @@ INSTANCE Info_Nov_3_DieLage(C_INFO) // E1
 	condition	= Info_Nov_3_DieLage_Condition;
 	information	= Info_Nov_3_DieLage_Info;
 	permanent	= 1;
-	description = "Jak siê masz?";
+	description = "Jak siÄ™ masz?";
 };                       
 
 FUNC INT Info_Nov_3_DieLage_Condition()
@@ -128,7 +128,7 @@ FUNC INT Info_Nov_3_DieLage_Condition()
 
 FUNC VOID Info_Nov_3_DieLage_Info()
 {
-	AI_Output(other,self,"Info_Nov_3_DieLage_15_00"); //Jak siê masz?
+	AI_Output(other,self,"Info_Nov_3_DieLage_15_00"); //Jak siÄ™ masz?
 	AI_Output(self,other,"Info_Nov_3_DieLage_03_01"); //Znakomicie... fantastycznie... wspaniale...
 };
 	

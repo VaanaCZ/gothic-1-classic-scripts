@@ -51,7 +51,7 @@ INSTANCE MENUITEM_VID_DEVICE(C_MENU_ITEM_DEF)
 {
 	backpic		=	MENU_ITEM_BACK_PIC;
 	text[0]		=	"Karta graf.";
-	text[1]		=	"Zmiany uaktywni¹ siê po ponownym uruchomieniu!"; // Kommentar
+	text[1]		=	"Zmiany uaktywniÄ… siÄ™ po ponownym uruchomieniu!"; // Kommentar
 	
 	// Position und Dimension	
 	posx		=	1000;	posy		=	MENU_START_Y + MENU_DY*0;
@@ -87,8 +87,8 @@ INSTANCE MENUITEM_VID_DEVICE_CHOICE(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_VID_RESOLUTION(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	text[0]		= "Rozdzielczoœæ";
-	text[1]		= "PotwierdŸ wybór naciskaj¹c ENTER."; // Kommentar
+	text[0]		= "RozdzielczoÅ›Ä‡";
+	text[1]		= "PotwierdÅº wybÃ³r naciskajÄ…c ENTER."; // Kommentar
 	
 	// Position und Dimension	
 	posx		= 1000;		posy		= MENU_START_Y + MENU_DY*1;
@@ -124,8 +124,8 @@ INSTANCE MENUITEM_VID_RESOLUTION_CHOICE(C_MENU_ITEM_DEF)
 instance MENUITEM_VID_BRIGHTNESS(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	text[0]		= "Jasnoœæ";
-	text[1]		= "Jasnoœæ"; // Kommentar
+	text[0]		= "JasnoÅ›Ä‡";
+	text[1]		= "JasnoÅ›Ä‡"; // Kommentar
 	
 	// Position und Dimension	
 	posx		=	1000;	posy		=	MENU_START_Y + MENU_DY*3;

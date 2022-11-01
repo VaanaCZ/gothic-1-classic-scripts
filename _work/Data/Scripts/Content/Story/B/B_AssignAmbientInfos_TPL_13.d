@@ -37,7 +37,7 @@ INSTANCE Info_Tpl_13_EinerVonEuchWerden (C_INFO) // E1
 	condition	= Info_Tpl_13_EinerVonEuchWerden_Condition;
 	information	= Info_Tpl_13_EinerVonEuchWerden_Info;
 	permanent	= 1;
-	description = "Chcê zostaæ Œwi¹tynnym Stra¿nikiem, tak jak ty!";
+	description = "ChcÄ™ zostaÄ‡ ÅšwiÄ…tynnym StraÅ¼nikiem, tak jak ty!";
 };                       
 
 FUNC INT Info_Tpl_13_EinerVonEuchWerden_Condition()
@@ -52,11 +52,11 @@ FUNC INT Info_Tpl_13_EinerVonEuchWerden_Condition()
 
 FUNC VOID Info_Tpl_13_EinerVonEuchWerden_Info()
 {
-	AI_Output(other,self,"Info_Tpl_13_EinerVonEuchWerden_15_00"); //Chcê zostaæ Œwi¹tynnym Stra¿nikiem, tak jak ty!
-	AI_Output(self,other,"Info_Tpl_13_EinerVonEuchWerden_13_01"); //Czy masz pojêcie, jakich wyrzeczeñ wymaga³a ode mnie s³u¿ba wybrañcom Œni¹cego w Œwi¹tynnej Stra¿y?
-	AI_Output(self,other,"Info_Tpl_13_EinerVonEuchWerden_13_02"); //Chyba nie myœlisz, ¿e przyjdziesz tu i tak po prostu otrzymasz najwy¿sze wyró¿nienie?!
-	AI_Output(self,other,"Info_Tpl_13_EinerVonEuchWerden_13_03"); //Zanim choæby zaczniesz o tym myœleæ, powinieneœ lepiej poznaæ najwa¿niejsze nauki Œni¹cego.
-	AI_Output(self,other,"Info_Tpl_13_EinerVonEuchWerden_13_04"); //To powinno zaj¹æ ci trochê czasu i przywróciæ odrobinê zdrowego rozs¹dku.
+	AI_Output(other,self,"Info_Tpl_13_EinerVonEuchWerden_15_00"); //ChcÄ™ zostaÄ‡ ÅšwiÄ…tynnym StraÅ¼nikiem, tak jak ty!
+	AI_Output(self,other,"Info_Tpl_13_EinerVonEuchWerden_13_01"); //Czy masz pojÄ™cie, jakich wyrzeczeÅ„ wymagaÅ‚a ode mnie sÅ‚uÅ¼ba wybraÅ„com ÅšniÄ…cego w ÅšwiÄ…tynnej StraÅ¼y?
+	AI_Output(self,other,"Info_Tpl_13_EinerVonEuchWerden_13_02"); //Chyba nie myÅ›lisz, Å¼e przyjdziesz tu i tak po prostu otrzymasz najwyÅ¼sze wyrÃ³Å¼nienie?!
+	AI_Output(self,other,"Info_Tpl_13_EinerVonEuchWerden_13_03"); //Zanim choÄ‡by zaczniesz o tym myÅ›leÄ‡, powinieneÅ› lepiej poznaÄ‡ najwaÅ¼niejsze nauki ÅšniÄ…cego.
+	AI_Output(self,other,"Info_Tpl_13_EinerVonEuchWerden_13_04"); //To powinno zajÄ…Ä‡ ci trochÄ™ czasu i przywrÃ³ciÄ‡ odrobinÄ™ zdrowego rozsÄ…dku.
 };
 
 // *************************************************************************
@@ -69,7 +69,7 @@ INSTANCE Info_Tpl_13_WichtigePersonen(C_INFO)
 	condition	= Info_Tpl_13_WichtigePersonen_Condition;
 	information	= Info_Tpl_13_WichtigePersonen_Info;
 	permanent	= 1;
-	description = "Kto tu rz¹dzi?";
+	description = "Kto tu rzÄ…dzi?";
 };                       
 
 FUNC INT Info_Tpl_13_WichtigePersonen_Condition()
@@ -79,8 +79,8 @@ FUNC INT Info_Tpl_13_WichtigePersonen_Condition()
 
 FUNC VOID Info_Tpl_13_WichtigePersonen_Info()
 {
-	AI_Output(other,self,"Info_Tpl_13_WichtigePersonen_15_00"); //Kto tu rz¹dzi?
-	AI_Output(self,other,"Info_Tpl_13_WichtigePersonen_13_01"); //Nasi Guru s¹ wybrañcami Œni¹cego! Œni¹cy posiada w³adzê nad ¿yciem ka¿dego z nas, a Guru objawiaj¹ nam jego wolê.
+	AI_Output(other,self,"Info_Tpl_13_WichtigePersonen_15_00"); //Kto tu rzÄ…dzi?
+	AI_Output(self,other,"Info_Tpl_13_WichtigePersonen_13_01"); //Nasi Guru sÄ… wybraÅ„cami ÅšniÄ…cego! ÅšniÄ…cy posiada wÅ‚adzÄ™ nad Å¼yciem kaÅ¼dego z nas, a Guru objawiajÄ… nam jego wolÄ™.
 };
 
 // *************************************************************************
@@ -93,7 +93,7 @@ INSTANCE Info_Tpl_13_DasLager(C_INFO)
 	condition	= Info_Tpl_13_DasLager_Condition;
 	information	= Info_Tpl_13_DasLager_Info;
 	permanent	= 1;
-	description = "Chcia³bym rozejrzeæ siê wewn¹trz œwi¹tyni Œni¹cego...";
+	description = "ChciaÅ‚bym rozejrzeÄ‡ siÄ™ wewnÄ…trz Å›wiÄ…tyni ÅšniÄ…cego...";
 };                       
 
 FUNC INT Info_Tpl_13_DasLager_Condition()
@@ -105,8 +105,8 @@ FUNC INT Info_Tpl_13_DasLager_Condition()
 };
 FUNC VOID Info_Tpl_13_DasLager_Info()
 {
-	AI_Output(other,self,"Info_Tpl_13_DasLager_15_00"); //Chcia³bym rozejrzeæ siê wewn¹trz œwi¹tyni Œni¹cego...
-	AI_Output(self,other,"Info_Tpl_13_DasLager_13_01"); //To nie do pomyœlenia! Niewierny w œwi¹tyni! Dopóki nie przysiêgniesz wype³niaæ wolê Œni¹cego, nie bêdzie ci wolno wejœæ do jego domu modlitwy!
+	AI_Output(other,self,"Info_Tpl_13_DasLager_15_00"); //ChciaÅ‚bym rozejrzeÄ‡ siÄ™ wewnÄ…trz Å›wiÄ…tyni ÅšniÄ…cego...
+	AI_Output(self,other,"Info_Tpl_13_DasLager_13_01"); //To nie do pomyÅ›lenia! Niewierny w Å›wiÄ…tyni! DopÃ³ki nie przysiÄ™gniesz wypeÅ‚niaÄ‡ wolÄ™ ÅšniÄ…cego, nie bÄ™dzie ci wolno wejÅ›Ä‡ do jego domu modlitwy!
 };
 
 // *************************************************************************
@@ -132,9 +132,9 @@ FUNC INT Info_Tpl_13_DieLage_Condition()
 FUNC VOID Info_Tpl_13_DieLage_Info()
 {
 	AI_Output(other,self,"Info_Tpl_13_DieLage_15_00"); //Jak leci?
-	AI_Output(self,other,"Info_Tpl_13_DieLage_13_01"); //Odk¹d zosta³em jednym z wybranych obroñców wiary czujê siê tak wspaniale, jak nigdy dot¹d w moim ¿yciu!
+	AI_Output(self,other,"Info_Tpl_13_DieLage_13_01"); //OdkÄ…d zostaÅ‚em jednym z wybranych obroÅ„cÃ³w wiary czujÄ™ siÄ™ tak wspaniale, jak nigdy dotÄ…d w moim Å¼yciu!
 	AI_Output(other,self,"Info_Tpl_13_DieLage_15_02"); //To chyba bardzo odpowiedzialna funkcja?
-	AI_Output(self,other,"Info_Tpl_13_DieLage_13_03"); //Jako niewierny nie jesteœ w stanie tego zrozumieæ...
+	AI_Output(self,other,"Info_Tpl_13_DieLage_13_03"); //Jako niewierny nie jesteÅ› w stanie tego zrozumieÄ‡...
 };
 	
 // *************************************************************************

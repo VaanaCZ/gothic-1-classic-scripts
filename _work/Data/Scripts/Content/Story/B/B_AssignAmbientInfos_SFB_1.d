@@ -37,7 +37,7 @@ INSTANCE Info_SFB_1_EinerVonEuchWerden (C_INFO)
 	condition	= Info_SFB_1_EinerVonEuchWerden_Condition;
 	information	= Info_SFB_1_EinerVonEuchWerden_Info;
 	permanent	= 1;
-	description = "W jaki sposób mogê do³¹czyæ do zwi¹zku Kretów?";
+	description = "W jaki sposÃ³b mogÄ™ doÅ‚Ä…czyÄ‡ do zwiÄ…zku KretÃ³w?";
 };                       
 
 FUNC INT Info_SFB_1_EinerVonEuchWerden_Condition()
@@ -50,10 +50,10 @@ FUNC INT Info_SFB_1_EinerVonEuchWerden_Condition()
 
 FUNC VOID Info_SFB_1_EinerVonEuchWerden_Info()
 {
-	AI_Output(other,self,"Info_SFB_1_EinerVonEuchWerden_15_00"); //W jaki sposób mogê do³¹czyæ do Kretów?
-	AI_Output(self,other,"Info_SFB_1_EinerVonEuchWerden_01_01"); //Do³¹czyæ do nas? Tylko sobie nie myœl, ¿e skoro nikt nas nie pilnuje, nie musimy tutaj harowaæ w pocie czo³a.
-	AI_Output(self,other,"Info_SFB_1_EinerVonEuchWerden_01_02"); //Jeœli wyobra¿asz sobie, ¿e bêdziesz tu zbija³ b¹ki, to grubo siê mylisz, przyjacielu.
-	AI_Output(self,other,"Info_SFB_1_EinerVonEuchWerden_01_03"); //No, ale jeœli wci¹¿ uwa¿asz, ¿e to praca w sam raz dla ciebie, porozmawiaj ze Swineyem. £atwo go poznasz - pali na okr¹g³o.
+	AI_Output(other,self,"Info_SFB_1_EinerVonEuchWerden_15_00"); //W jaki sposÃ³b mogÄ™ doÅ‚Ä…czyÄ‡ do KretÃ³w?
+	AI_Output(self,other,"Info_SFB_1_EinerVonEuchWerden_01_01"); //DoÅ‚Ä…czyÄ‡ do nas? Tylko sobie nie myÅ›l, Å¼e skoro nikt nas nie pilnuje, nie musimy tutaj harowaÄ‡ w pocie czoÅ‚a.
+	AI_Output(self,other,"Info_SFB_1_EinerVonEuchWerden_01_02"); //JeÅ›li wyobraÅ¼asz sobie, Å¼e bÄ™dziesz tu zbijaÅ‚ bÄ…ki, to grubo siÄ™ mylisz, przyjacielu.
+	AI_Output(self,other,"Info_SFB_1_EinerVonEuchWerden_01_03"); //No, ale jeÅ›li wciÄ…Å¼ uwaÅ¼asz, Å¼e to praca w sam raz dla ciebie, porozmawiaj ze Swineyem. Åatwo go poznasz - pali na okrÄ…gÅ‚o.
 };
 
 // *************************************************************************
@@ -77,7 +77,7 @@ FUNC INT Info_SFB_1_WichtigePersonen_Condition()
 FUNC VOID Info_SFB_1_WichtigePersonen_Info()
 {
 	AI_Output(other,self,"Info_SFB_1_WichtigePersonen_15_00"); //Kto tu dowodzi?
-	AI_Output(self,other,"Info_SFB_1_WichtigePersonen_01_01"); //Kto dowodzi? Rozejrzyj siê! Na pewno nie ci, którzy tyraj¹ ca³y dzieñ przy zbieraniu rudy! Ha!
+	AI_Output(self,other,"Info_SFB_1_WichtigePersonen_01_01"); //Kto dowodzi? Rozejrzyj siÄ™! Na pewno nie ci, ktÃ³rzy tyrajÄ… caÅ‚y dzieÅ„ przy zbieraniu rudy! Ha!
 };
 
 // *************************************************************************
@@ -101,8 +101,8 @@ FUNC INT Info_SFB_1_DasLager_Condition()
 FUNC VOID Info_SFB_1_DasLager_Info()
 {
 	AI_Output(other,self,"Info_SFB_1_DasLager_15_00"); //Co to jest?
-	AI_Output(self,other,"Info_SFB_1_DasLager_01_01"); //A na co ci to wygl¹da? Królewski pa³ac?
-	AI_Output(self,other,"Info_SFB_1_DasLager_01_02"); //Jeœli naprawdê chcesz pracowaæ w Wolnej Kopalni, musisz najpierw pokazaæ ludziom w Kotle, na co ciê staæ.
+	AI_Output(self,other,"Info_SFB_1_DasLager_01_01"); //A na co ci to wyglÄ…da? KrÃ³lewski paÅ‚ac?
+	AI_Output(self,other,"Info_SFB_1_DasLager_01_02"); //JeÅ›li naprawdÄ™ chcesz pracowaÄ‡ w Wolnej Kopalni, musisz najpierw pokazaÄ‡ ludziom w Kotle, na co ciÄ™ staÄ‡.
 };
 
 // *************************************************************************
@@ -115,7 +115,7 @@ INSTANCE Info_SFB_1_DieLage(C_INFO)
 	condition	= Info_SFB_1_DieLage_Condition;
 	information	= Info_SFB_1_DieLage_Info;
 	permanent	= 1;
-	description = "Jak siê masz?";
+	description = "Jak siÄ™ masz?";
 };                       
 
 FUNC INT Info_SFB_1_DieLage_Condition()
@@ -125,9 +125,9 @@ FUNC INT Info_SFB_1_DieLage_Condition()
 
 FUNC VOID Info_SFB_1_DieLage_Info()
 {
-	AI_Output(other,self,"Info_SFB_1_DieLage_15_00"); //Co s³ychaæ?
-	AI_Output(self,other,"Info_SFB_1_DieLage_01_01"); //A jak myœlisz? Fatalnie, jak zwykle zreszt¹. Nic do jedzenia a mnóstwo do zrobienia! Psia maæ!
-	AI_Output(self,other,"Info_SFB_1_DieLage_01_02"); //Jedyn¹ osob¹, która siê tu nie przepracowuje jest Swiney. Okyl awansowa³ go na oficjalnego przedstawiciela Kretów. Teraz facet krêci siê tu przez ca³y dzieñ, uwa¿aj¹c ¿eby nie pobrudziæ sobie r¹czek.
+	AI_Output(other,self,"Info_SFB_1_DieLage_15_00"); //Co sÅ‚ychaÄ‡?
+	AI_Output(self,other,"Info_SFB_1_DieLage_01_01"); //A jak myÅ›lisz? Fatalnie, jak zwykle zresztÄ…. Nic do jedzenia a mnÃ³stwo do zrobienia! Psia maÄ‡!
+	AI_Output(self,other,"Info_SFB_1_DieLage_01_02"); //JedynÄ… osobÄ…, ktÃ³ra siÄ™ tu nie przepracowuje jest Swiney. Okyl awansowaÅ‚ go na oficjalnego przedstawiciela KretÃ³w. Teraz facet krÄ™ci siÄ™ tu przez caÅ‚y dzieÅ„, uwaÅ¼ajÄ…c Å¼eby nie pobrudziÄ‡ sobie rÄ…czek.
 };
 	
 // *************************************************************************

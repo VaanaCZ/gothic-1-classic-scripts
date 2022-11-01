@@ -51,8 +51,8 @@ FUNC INT Info_Mine_Vlk_1_Mine_Condition()
 FUNC VOID Info_Mine_Vlk_1_Mine_Info()
 {
 	AI_Output(other,self,"Info_Mine_Vlk_1_Mine_15_00"); //Opowiedz mi o kopalni.
-	AI_Output(self,other,"Info_Mine_Vlk_1_Mine_01_01"); //W jaskiniach rosn¹ ró¿ne grzyby i zio³a. Da siê to prze³kn¹æ, ale nie ma to jak soczysty kawa³ miêsa.
-	AI_Output(self,other,"Info_Mine_Vlk_1_Mine_01_02"); //Pe³zacze te¿ nie nale¿¹ do przysmaków. Cholerna nora!
+	AI_Output(self,other,"Info_Mine_Vlk_1_Mine_01_01"); //W jaskiniach rosnÄ… rÃ³Å¼ne grzyby i zioÅ‚a. Da siÄ™ to przeÅ‚knÄ…Ä‡, ale nie ma to jak soczysty kawaÅ‚ miÄ™sa.
+	AI_Output(self,other,"Info_Mine_Vlk_1_Mine_01_02"); //PeÅ‚zacze teÅ¼ nie naleÅ¼Ä… do przysmakÃ³w. Cholerna nora!
 };
 
 // *************************************************************************
@@ -79,7 +79,7 @@ FUNC INT Info_Mine_Vlk_1_WichtigePersonen_Condition()
 FUNC VOID Info_Mine_Vlk_1_WichtigePersonen_Info()
 {
 	AI_Output(other,self,"Info_Mine_Vlk_1_WichtigePersonen_15_00"); //Kto wami dowodzi?
-	AI_Output(self,other,"Info_Mine_Vlk_1_WichtigePersonen_01_01"); //Ian organizuje si³ê robocz¹ i wymianê dóbr z obozem. Jeœli szukasz czegoœ konkretnego, najlepiej pogadaj z nim.
+	AI_Output(self,other,"Info_Mine_Vlk_1_WichtigePersonen_01_01"); //Ian organizuje siÅ‚Ä™ roboczÄ… i wymianÄ™ dÃ³br z obozem. JeÅ›li szukasz czegoÅ› konkretnego, najlepiej pogadaj z nim.
 };
 
 // *************************************************************************
@@ -92,7 +92,7 @@ INSTANCE Info_Mine_Vlk_1_Minecrawler(C_INFO)
 	condition	= Info_Mine_Vlk_1_Minecrawler_Condition;
 	information	= Info_Mine_Vlk_1_Minecrawler_Info;
 	permanent	= 1;
-	description = "Co mo¿esz mi powiedzieæ o pe³zaczach?";
+	description = "Co moÅ¼esz mi powiedzieÄ‡ o peÅ‚zaczach?";
 };                       
 
 FUNC INT Info_Mine_Vlk_1_Minecrawler_Condition()
@@ -105,8 +105,8 @@ FUNC INT Info_Mine_Vlk_1_Minecrawler_Condition()
 
 FUNC VOID Info_Mine_Vlk_1_Minecrawler_Info()
 {
-	AI_Output(other,self,"Info_Mine_Vlk_1_Minecrawler_15_00"); //Co mo¿esz mi powiedzieæ o pe³zaczach?
-	AI_Output(self,other,"Info_Mine_Vlk_1_Minecrawler_01_01"); //Stra¿nicy Œwi¹tynni zawarli uk³ad z Gomezem. Zabijaj¹ pe³zacze, w zamian za co mog¹ zatrzymaæ ich wnêtrznoœci.
+	AI_Output(other,self,"Info_Mine_Vlk_1_Minecrawler_15_00"); //Co moÅ¼esz mi powiedzieÄ‡ o peÅ‚zaczach?
+	AI_Output(self,other,"Info_Mine_Vlk_1_Minecrawler_01_01"); //StraÅ¼nicy ÅšwiÄ…tynni zawarli ukÅ‚ad z Gomezem. ZabijajÄ… peÅ‚zacze, w zamian za co mogÄ… zatrzymaÄ‡ ich wnÄ™trznoÅ›ci.
 	
 };
 
@@ -134,7 +134,7 @@ FUNC INT Info_Mine_Vlk_1_DieLage_Condition()
 FUNC VOID Info_Mine_Vlk_1_DieLage_Info()
 {
 	AI_Output(other,self,"Info_Mine_Vlk_1_DieLage_15_00"); //Jak leci?
-	AI_Output(self,other,"Info_Mine_Vlk_1_DieLage_01_01"); //Mnóstwo pracy, niewiele odpoczynku. Dlatego jeœli chcesz czegoœ ode mnie, lepiej siê streszczaj.
+	AI_Output(self,other,"Info_Mine_Vlk_1_DieLage_01_01"); //MnÃ³stwo pracy, niewiele odpoczynku. Dlatego jeÅ›li chcesz czegoÅ› ode mnie, lepiej siÄ™ streszczaj.
 };
 
 // *************************************************************************

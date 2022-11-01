@@ -49,11 +49,11 @@ func void  DIA_Fletcher_First_Info()
 {
 	AI_Output (self, other,"DIA_Fletcher_First_06_00"); //Hej, ty!
 	AI_Output (other, self,"DIA_Fletcher_First_15_01"); //Kto? Ja?
-	AI_Output (self, other,"DIA_Fletcher_First_06_02"); //Wiesz dobrze, do kogo mÛwiÍ, synku!
-	AI_Output (self, other,"DIA_Fletcher_First_06_03"); //Coú ci powiem: to mÛj rejon. I nie chcÍ tutaj øadnych k≥opotÛw!
-	AI_Output (self, other,"DIA_Fletcher_First_06_04"); //Ale nowi, tacy jak ty, zawsze sprawiajπ k≥opoty. Zw≥aszcza, kiedy buszujπ tutaj w nocy.
-	AI_Output (self, other,"DIA_Fletcher_First_06_05"); //Lepiej bÍdzie jeúli pÛjdziesz sobie juø do domu i nie pokaøesz siÍ tutaj zbyt prÍdko. Przy arenie jest jedna pusta chata, ma daszek nad wejúciem. Idü spaÊ!
-	AI_Output (self, other,"DIA_Fletcher_First_06_06"); //Ale jeúli z≥apiÍ ciÍ na grzebaniu w cudzych chatach, osobiúcie postaram siÍ, øebyú juø nigdy wiÍcej tego nie zrobi≥!
+	AI_Output (self, other,"DIA_Fletcher_First_06_02"); //Wiesz dobrze, do kogo m√≥wiƒô, synku!
+	AI_Output (self, other,"DIA_Fletcher_First_06_03"); //Co≈õ ci powiem: to m√≥j rejon. I nie chcƒô tutaj ≈ºadnych k≈Çopot√≥w!
+	AI_Output (self, other,"DIA_Fletcher_First_06_04"); //Ale nowi, tacy jak ty, zawsze sprawiajƒÖ k≈Çopoty. Zw≈Çaszcza, kiedy buszujƒÖ tutaj w nocy.
+	AI_Output (self, other,"DIA_Fletcher_First_06_05"); //Lepiej bƒôdzie je≈õli p√≥jdziesz sobie ju≈º do domu i nie poka≈ºesz siƒô tutaj zbyt prƒôdko. Przy arenie jest jedna pusta chata, ma daszek nad wej≈õciem. Id≈∫ spaƒá!
+	AI_Output (self, other,"DIA_Fletcher_First_06_06"); //Ale je≈õli z≈Çapiƒô ciƒô na grzebaniu w cudzych chatach, osobi≈õcie postaram siƒô, ≈ºeby≈õ ju≈º nigdy wiƒôcej tego nie zrobi≈Ç!
 	
 	AI_StopProcessInfos	(self);
 };
@@ -85,27 +85,27 @@ FUNC int  DIA_Fletcher_Hello_Condition()
 func void  DIA_Fletcher_Hello_Info()
 {
 	AI_Output (other, self,"DIA_Fletcher_Hello_15_00"); //Hej, ty!
-	AI_Output (self, other,"DIA_Fletcher_Hello_06_01"); //Jeúli chcesz siÍ pozbyÊ swoich pieniÍdzy za ochronÍ, wybra≥eú z≥y dzieÒ.
+	AI_Output (self, other,"DIA_Fletcher_Hello_06_01"); //Je≈õli chcesz siƒô pozbyƒá swoich pieniƒôdzy za ochronƒô, wybra≈Çe≈õ z≈Çy dzie≈Ñ.
 	AI_Output (other, self,"DIA_Fletcher_Hello_15_02"); //Tak? A dlaczego?
 	AI_Output (self, other,"DIA_Fletcher_Hello_06_03"); //Bo mnie tu nie ma.
 	
 	Info_ClearChoices	(DIA_Fletcher_Hello);
 	Info_AddChoice		(DIA_Fletcher_Hello,"Rozumiem.",DIA_Fletcher_Hello_ISee);
-	Info_AddChoice		(DIA_Fletcher_Hello,"To jakim cudem z tobπ rozmawiam?",DIA_Fletcher_Hello_WhyTalk);
-	Info_AddChoice		(DIA_Fletcher_Hello,"Czyøby? A gdzie jesteú?",DIA_Fletcher_Hello_WhereElse);
+	Info_AddChoice		(DIA_Fletcher_Hello,"To jakim cudem z tobƒÖ rozmawiam?",DIA_Fletcher_Hello_WhyTalk);
+	Info_AddChoice		(DIA_Fletcher_Hello,"Czy≈ºby? A gdzie jeste≈õ?",DIA_Fletcher_Hello_WhereElse);
 };
 
 func void DIA_Fletcher_Hello_WhereElse()
 {
-	AI_Output (other, self,"DIA_Fletcher_Hello_WhereElse_15_00"); //Czyøby? A gdzie jesteú?
-	AI_Output (self, other,"DIA_Fletcher_Hello_WhereElse_06_01"); //W tej chwili siedzÍ w zamku, przy ognisku i popijam piwo.
+	AI_Output (other, self,"DIA_Fletcher_Hello_WhereElse_15_00"); //Czy≈ºby? A gdzie jeste≈õ?
+	AI_Output (self, other,"DIA_Fletcher_Hello_WhereElse_06_01"); //W tej chwili siedzƒô w zamku, przy ognisku i popijam piwo.
 };
 
 func void DIA_Fletcher_Hello_WhyTalk()
 {
-	AI_Output (other, self,"DIA_Fletcher_Hello_WhyTalk_15_00"); //To jakim cudem z tobπ rozmawiam?
-	AI_Output (self, other,"DIA_Fletcher_Hello_WhyTalk_06_01"); //Nek gdzieú zniknπ≥. Zwykle to on patroluje ten rejon.
-	AI_Output (self, other,"DIA_Fletcher_Hello_WhyTalk_06_02"); //A dopÛki nie raczy siÍ tutaj zjawiÊ, Thorus kaza≥ MI mieÊ oko na wszystko.
+	AI_Output (other, self,"DIA_Fletcher_Hello_WhyTalk_15_00"); //To jakim cudem z tobƒÖ rozmawiam?
+	AI_Output (self, other,"DIA_Fletcher_Hello_WhyTalk_06_01"); //Nek gdzie≈õ zniknƒÖ≈Ç. Zwykle to on patroluje ten rejon.
+	AI_Output (self, other,"DIA_Fletcher_Hello_WhyTalk_06_02"); //A dop√≥ki nie raczy siƒô tutaj zjawiƒá, Thorus kaza≈Ç MI mieƒá oko na wszystko.
 	fletcher_whytalk = TRUE;
 	Info_ClearChoices	(DIA_Fletcher_Hello);
 };
@@ -127,7 +127,7 @@ instance DIA_Fletcher_WoNek (C_INFO)
 	condition		= DIA_Fletcher_WoNek_Condition;
 	information		= DIA_Fletcher_WoNek_Info;
 	permanent		= 0;
-	description		= "Wiesz gdzie siÍ podziewa Nek?";
+	description		= "Wiesz gdzie siƒô podziewa Nek?";
 };
 
 func int DIA_Fletcher_WoNek_Condition()
@@ -140,14 +140,14 @@ func int DIA_Fletcher_WoNek_Condition()
 
 func void  DIA_Fletcher_WoNek_Info()
 {
-	AI_Output (other, self,"DIA_Fletcher_WoNek_15_00"); //Wiesz, gdzie siÍ podziewa Nek?
-	AI_Output (self, other,"DIA_Fletcher_WoNek_06_01"); //Nie, i raczej siÍ tego nie dowiem.
-	AI_Output (self, other,"DIA_Fletcher_WoNek_06_02"); //Jeúli komuú coú o tym wiadomo, to pewnie tutejszym Kopaczom. Ale oni nie rozmawiajπ ze Straønikami.
-	AI_Output (self, other,"DIA_Fletcher_WoNek_06_03"); //A zw≥aszcza ze mnπ, bo wiedzπ, øe brzydzÍ siÍ ich robotπ. Za≥oøÍ siÍ, øe podúmiewajπ siÍ ze mnie za moimi plecami.
+	AI_Output (other, self,"DIA_Fletcher_WoNek_15_00"); //Wiesz, gdzie siƒô podziewa Nek?
+	AI_Output (self, other,"DIA_Fletcher_WoNek_06_01"); //Nie, i raczej siƒô tego nie dowiem.
+	AI_Output (self, other,"DIA_Fletcher_WoNek_06_02"); //Je≈õli komu≈õ co≈õ o tym wiadomo, to pewnie tutejszym Kopaczom. Ale oni nie rozmawiajƒÖ ze Stra≈ºnikami.
+	AI_Output (self, other,"DIA_Fletcher_WoNek_06_03"); //A zw≈Çaszcza ze mnƒÖ, bo wiedzƒÖ, ≈ºe brzydzƒô siƒô ich robotƒÖ. Za≈Ço≈ºƒô siƒô, ≈ºe pod≈õmiewajƒÖ siƒô ze mnie za moimi plecami.
 	
 	Log_CreateTopic		(CH1_LostNek,	LOG_MISSION);
 	Log_SetTopicStatus	(CH1_LostNek,	LOG_RUNNING);
-	B_LogEntry			(CH1_LostNek,"Moøe Kopacze mieszkajπcy w pobliøu areny wiedzπ gdzie siÍ podzia≥ Nek.");
+	B_LogEntry			(CH1_LostNek,"Mo≈ºe Kopacze mieszkajƒÖcy w pobli≈ºu areny wiedzƒÖ gdzie siƒô podzia≈Ç Nek.");
 };
 
 // ************************************************************
@@ -161,7 +161,7 @@ instance DIA_Fletcher_TroSchu (C_INFO)
 	condition		= DIA_Fletcher_TroSchu_Condition;
 	information		= DIA_Fletcher_TroSchu_Info;
 	permanent		= 0;
-	description		= "Ale dlaczego nie zbierasz pieniÍdzy za ochronÍ?";
+	description		= "Ale dlaczego nie zbierasz pieniƒôdzy za ochronƒô?";
 };
 
 FUNC int  DIA_Fletcher_TroSchu_Condition()
@@ -174,8 +174,8 @@ FUNC int  DIA_Fletcher_TroSchu_Condition()
 
 func void  DIA_Fletcher_TroSchu_Info()
 {
-	AI_Output (other, self,"DIA_Fletcher_TroSchu_15_00"); //Ale dlaczego nie zbierasz pieniÍdzy za ochronÍ?
-	AI_Output (self, other,"DIA_Fletcher_TroSchu_06_01"); //Nek zebra≥ juø, co by≥o do zebrania. WiÍcej z nich nie wycisnÍ.
+	AI_Output (other, self,"DIA_Fletcher_TroSchu_15_00"); //Ale dlaczego nie zbierasz pieniƒôdzy za ochronƒô?
+	AI_Output (self, other,"DIA_Fletcher_TroSchu_06_01"); //Nek zebra≈Ç ju≈º, co by≈Ço do zebrania. Wiƒôcej z nich nie wycisnƒô.
 };
 
 // ************************************************************
@@ -211,17 +211,17 @@ func void  DIA_Fletcher_WegenNek_Info()
 	
 	if ( (Sly_LostNek == LOG_SUCCESS) || (!Hlp_IsValidNpc(Nek)) )
 	{
-		AI_Output (other, self,"DIA_Fletcher_WegenNek_15_02"); //Chyba go znalaz≥em.
+		AI_Output (other, self,"DIA_Fletcher_WegenNek_15_02"); //Chyba go znalaz≈Çem.
 		AI_Output (self, other,"DIA_Fletcher_WegenNek_06_03"); //Co? Gdzie on jest?
-		AI_Output (other, self,"DIA_Fletcher_WegenNek_15_04"); //W innym, lepszym úwiecie...
-		AI_Output (self, other,"DIA_Fletcher_WegenNek_06_05"); //O cholera! To znaczy, øe bÍdÍ tutaj tkwi≥ do koÒca øycia. Mia≥em nadziejÍ, øe ten bÍcwa≥ jednak wrÛci.
-		AI_Output (self, other,"DIA_Fletcher_WegenNek_06_06"); //Teraz mam k≥opot.
+		AI_Output (other, self,"DIA_Fletcher_WegenNek_15_04"); //W innym, lepszym ≈õwiecie...
+		AI_Output (self, other,"DIA_Fletcher_WegenNek_06_05"); //O cholera! To znaczy, ≈ºe bƒôdƒô tutaj tkwi≈Ç do ko≈Ñca ≈ºycia. Mia≈Çem nadziejƒô, ≈ºe ten bƒôcwa≈Ç jednak wr√≥ci.
+		AI_Output (self, other,"DIA_Fletcher_WegenNek_06_06"); //Teraz mam k≈Çopot.
 		fletcher_foundNek = TRUE;
 	}
 	else
 	{
-		AI_Output (other, self,"DIA_Fletcher_WegenNek_15_07"); //Øadnych wieúci.
-		AI_Output (self, other,"DIA_Fletcher_WegenNek_06_08"); //Informuj mnie na bieøπco.
+		AI_Output (other, self,"DIA_Fletcher_WegenNek_15_07"); //≈ªadnych wie≈õci.
+		AI_Output (self, other,"DIA_Fletcher_WegenNek_06_08"); //Informuj mnie na bie≈ºƒÖco.
 	};
 };
 
@@ -250,7 +250,7 @@ FUNC int  DIA_Fletcher_Problem_Condition()
 func void  DIA_Fletcher_Problem_Info()
 {
 	AI_Output (other, self,"DIA_Fletcher_Problem_15_00"); //Jaki problem?
-	AI_Output (self, other,"DIA_Fletcher_Problem_06_01"); //Jestem winien Scatty'emu nie lada sumkÍ. Kiedy dowie siÍ, øe przejπ≥em dzia≥kÍ Neka, bÍdzie mnie nachodzi≥ codziennie...
+	AI_Output (self, other,"DIA_Fletcher_Problem_06_01"); //Jestem winien Scatty'emu nie lada sumkƒô. Kiedy dowie siƒô, ≈ºe przejƒÖ≈Çem dzia≈Çkƒô Neka, bƒôdzie mnie nachodzi≈Ç codziennie...
 };	
 
 
@@ -294,7 +294,7 @@ FUNC int  Grd_255_Fletcher_WELCOME_Condition()
 };
 func void  Grd_255_Fletcher_WELCOME_Info()
 {
-	AI_Output (self, other,"Grd_255_Fletcher_WELCOME_Info_06_01"); //WidzÍ, øe szybko nauczy≥eú siÍ dbaÊ o swoje interesy. Witamy w Straøy!
+	AI_Output (self, other,"Grd_255_Fletcher_WELCOME_Info_06_01"); //Widzƒô, ≈ºe szybko nauczy≈Çe≈õ siƒô dbaƒá o swoje interesy. Witamy w Stra≈ºy!
 };
 
 //#####################################################################
@@ -335,64 +335,64 @@ FUNC VOID Info_Fletcher_DIE_Info()
 	{
 		if (oldHeroGuild == GIL_GRD)
 		{
-			AI_Output	(self,hero,"Info_Fletcher_DIE_06_01"); //Zdrajco! I pomyúleÊ, øe uwaøaliúmy ciÍ za jednego z nas!
+			AI_Output	(self,hero,"Info_Fletcher_DIE_06_01"); //Zdrajco! I pomy≈õleƒá, ≈ºe uwa≈ºali≈õmy ciƒô za jednego z nas!
 		}
 		else if (oldHeroGuild == GIL_KDF)
 		{
-			AI_Output	(self,hero,"Info_Fletcher_DIE_06_02"); //To jeden z tych zdradzieckich MagÛw Ognia!
+			AI_Output	(self,hero,"Info_Fletcher_DIE_06_02"); //To jeden z tych zdradzieckich Mag√≥w Ognia!
 		}
 		else
 		{
-			AI_Output	(self,hero,"Info_Fletcher_DIE_06_03"); //Witaj, ZDRAJCO! Teraz nie pomogπ ci nawet znajomoúci wúrÛd Cieni!
+			AI_Output	(self,hero,"Info_Fletcher_DIE_06_03"); //Witaj, ZDRAJCO! Teraz nie pomogƒÖ ci nawet znajomo≈õci w≈õr√≥d Cieni!
 		};			
 
-		AI_Output		(hero,self,"Info_Fletcher_DIE_15_04"); //O czym ty do diab≥a mÛwisz, Fletcher?
-		AI_Output		(self,hero,"Info_Fletcher_DIE_06_05"); //Zadajesz siÍ z tymi bandziorami z Nowego Obozu! A moøe nie?!
+		AI_Output		(hero,self,"Info_Fletcher_DIE_15_04"); //O czym ty do diab≈Ça m√≥wisz, Fletcher?
+		AI_Output		(self,hero,"Info_Fletcher_DIE_06_05"); //Zadajesz siƒô z tymi bandziorami z Nowego Obozu! A mo≈ºe nie?!
 		AI_Output		(hero,self,"Info_Fletcher_DIE_15_06"); //Zaczekaj...
-		AI_Output		(self,hero,"Info_Fletcher_DIE_06_07"); //Myúla≥eú, øe siÍ nie domyúlimy, co? CO?!
-		AI_Output		(hero,self,"Info_Fletcher_DIE_15_08"); //Hej... Postrada≥eú zmys≥y?!
-		AI_Output		(self,hero,"Info_Fletcher_DIE_06_09"); //Ja? Aleø skπd. Za to TY za chwilÍ stracisz G£OW , kolego.
-		AI_Output		(self,hero,"Info_Fletcher_DIE_06_10"); //GI—, ZDRAJCO!!!
+		AI_Output		(self,hero,"Info_Fletcher_DIE_06_07"); //My≈õla≈Çe≈õ, ≈ºe siƒô nie domy≈õlimy, co? CO?!
+		AI_Output		(hero,self,"Info_Fletcher_DIE_15_08"); //Hej... Postrada≈Çe≈õ zmys≈Çy?!
+		AI_Output		(self,hero,"Info_Fletcher_DIE_06_09"); //Ja? Ale≈º skƒÖd. Za to TY za chwilƒô stracisz G≈ÅOWƒò, kolego.
+		AI_Output		(self,hero,"Info_Fletcher_DIE_06_10"); //GI≈É, ZDRAJCO!!!
 
 		if	Npc_KnowsInfo(hero, Info_Bloodwyn_DIE)
 		{
-			B_LogEntry			(CH4_BannedFromOC,"Bloodwyn okopa≥ siÍ przy tylnej bramie. Na mÛj widok zareagowa≥ podobnie jak Fletcher. Mam wraøenie, øe ma to coú wspÛlnego z moimi poszukiwaniami kamienia ogniskujπcego dla Nowego Obozu.");
+			B_LogEntry			(CH4_BannedFromOC,"Bloodwyn okopa≈Ç siƒô przy tylnej bramie. Na m√≥j widok zareagowa≈Ç podobnie jak Fletcher. Mam wra≈ºenie, ≈ºe ma to co≈õ wsp√≥lnego z moimi poszukiwaniami kamienia ogniskujƒÖcego dla Nowego Obozu.");
 		}
 		else if	(Npc_GetTrueGuild(hero) == GIL_NONE)
 		{
 			Log_CreateTopic		(CH4_BannedFromOC,	LOG_MISSION);
 			Log_SetTopicStatus	(CH4_BannedFromOC,	LOG_RUNNING);
-			B_LogEntry			(CH4_BannedFromOC,"Fletcher, ktÛry strzeøe teraz g≥Ûwnej bramy Starego Obozu, nazwa≥ mnie zdrajcπ. Nie chcia≥ mnie nawet wys≥uchaÊ - od razu rzuci≥ siÍ do ataku!");
-			B_LogEntry			(CH4_BannedFromOC,"Wyglπda na to, øe zosta≥em wygnany ze Starego Obozu!");
+			B_LogEntry			(CH4_BannedFromOC,"Fletcher, kt√≥ry strze≈ºe teraz g≈Ç√≥wnej bramy Starego Obozu, nazwa≈Ç mnie zdrajcƒÖ. Nie chcia≈Ç mnie nawet wys≈Çuchaƒá - od razu rzuci≈Ç siƒô do ataku!");
+			B_LogEntry			(CH4_BannedFromOC,"WyglƒÖda na to, ≈ºe zosta≈Çem wygnany ze Starego Obozu!");
 		};
 	}
 	else
 	{
 		if (C_NpcBelongsToNewCamp(hero))
 		{
-			AI_Output	(self,hero,"Info_Fletcher_DIE_06_11"); //No proszÍ. To goúÊ z Nowego Obozu!
+			AI_Output	(self,hero,"Info_Fletcher_DIE_06_11"); //No proszƒô. To go≈õƒá z Nowego Obozu!
 		}
 		else
 		{
-			AI_Output	(self,hero,"Info_Fletcher_DIE_06_12"); //Patrzcie no. To goúÊ z Sekty!
+			AI_Output	(self,hero,"Info_Fletcher_DIE_06_12"); //Patrzcie no. To go≈õƒá z Sekty!
 		};
 
-		AI_Output		(hero,self,"Info_Fletcher_DIE_15_13"); //I co z tego? Masz z tym jakiú problem?
-		AI_Output		(self,hero,"Info_Fletcher_DIE_06_14"); //MieÊ, to ja bÍdÍ waszπ ma≥π kopalniÍ!
-		AI_Output		(hero,self,"Info_Fletcher_DIE_15_15"); //Czyøby? Chyba únisz!
-		AI_Output		(self,hero,"Info_Fletcher_DIE_06_16"); //Przykro mi, ale nie moøemy pozwoliÊ, øebyú o tym komuú powiedzia≥!
-		AI_Output		(hero,self,"Info_Fletcher_DIE_15_17"); //Zaczekaj, nie szukam k≥opotÛw.
-		AI_Output		(self,hero,"Info_Fletcher_DIE_06_18"); //Trzeba by≥o o tym pomyúleÊ zanim tutaj przyszed≥eú!
+		AI_Output		(hero,self,"Info_Fletcher_DIE_15_13"); //I co z tego? Masz z tym jaki≈õ problem?
+		AI_Output		(self,hero,"Info_Fletcher_DIE_06_14"); //Mieƒá, to ja bƒôdƒô waszƒÖ ma≈ÇƒÖ kopalniƒô!
+		AI_Output		(hero,self,"Info_Fletcher_DIE_15_15"); //Czy≈ºby? Chyba ≈õnisz!
+		AI_Output		(self,hero,"Info_Fletcher_DIE_06_16"); //Przykro mi, ale nie mo≈ºemy pozwoliƒá, ≈ºeby≈õ o tym komu≈õ powiedzia≈Ç!
+		AI_Output		(hero,self,"Info_Fletcher_DIE_15_17"); //Zaczekaj, nie szukam k≈Çopot√≥w.
+		AI_Output		(self,hero,"Info_Fletcher_DIE_06_18"); //Trzeba by≈Ço o tym pomy≈õleƒá zanim tutaj przyszed≈Çe≈õ!
 		AI_Output		(hero,self,"Info_Fletcher_DIE_15_19"); //Hej, co u...
-		AI_Output		(self,hero,"Info_Fletcher_DIE_06_20"); //Dalej ch≥opcy! Na niego!
+		AI_Output		(self,hero,"Info_Fletcher_DIE_06_20"); //Dalej ch≈Çopcy! Na niego!
 	};
 
-	Npc_ExchangeRoutine	(self,	"FMTaken2");				// Verst‰rkung vor das Haupttor (Anf¸hrer)
-	B_ExchangeRoutine	(GRD_252_Gardist,	"FMTaken2");	// Verst‰rkung vor das Haupttor
-	B_ExchangeRoutine	(GRD_253_Gardist,	"FMTaken2");	// Verst‰rkung vor das Haupttor
-	B_ExchangeRoutine	(GRD_244_Gardist,	"FMTaken2");	// Verst‰rkung vor das Haupttor (Fernk‰mpfer)
-	B_ExchangeRoutine	(GRD_214_Torwache,	"FMTaken2");	// regul‰re Wache am Haupttor
-	B_ExchangeRoutine	(GRD_215_Torwache,	"FMTaken2");	// regul‰re Wache am Haupttor
+	Npc_ExchangeRoutine	(self,	"FMTaken2");				// Verst√§rkung vor das Haupttor (Anf√ºhrer)
+	B_ExchangeRoutine	(GRD_252_Gardist,	"FMTaken2");	// Verst√§rkung vor das Haupttor
+	B_ExchangeRoutine	(GRD_253_Gardist,	"FMTaken2");	// Verst√§rkung vor das Haupttor
+	B_ExchangeRoutine	(GRD_244_Gardist,	"FMTaken2");	// Verst√§rkung vor das Haupttor (Fernk√§mpfer)
+	B_ExchangeRoutine	(GRD_214_Torwache,	"FMTaken2");	// regul√§re Wache am Haupttor
+	B_ExchangeRoutine	(GRD_215_Torwache,	"FMTaken2");	// regul√§re Wache am Haupttor
 
 	B_SetPermAttitude	(GRD_255_Fletcher,	ATT_HOSTILE);
 	B_SetPermAttitude	(GRD_252_Gardist,	ATT_HOSTILE);
@@ -403,7 +403,7 @@ FUNC VOID Info_Fletcher_DIE_Info()
 	
 	if	!Npc_KnowsInfo(hero, Info_Bloodwyn_DIE)
 	{
-		B_LogEntry		(CH4_Firemages,"Bramy do Starego Obozu zosta≥y zamkniÍte i pozostajπ pilnie strzeøone. Straønicy atakujπ kaødego, kto podejdzie w pobliøe obozu.");
+		B_LogEntry		(CH4_Firemages,"Bramy do Starego Obozu zosta≈Çy zamkniƒôte i pozostajƒÖ pilnie strze≈ºone. Stra≈ºnicy atakujƒÖ ka≈ºdego, kto podejdzie w pobli≈ºe obozu.");
 	};
 	
 	AI_StopProcessInfos	(self);

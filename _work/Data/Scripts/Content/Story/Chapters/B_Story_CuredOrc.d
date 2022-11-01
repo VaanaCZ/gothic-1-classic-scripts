@@ -1,14 +1,14 @@
 func void B_Story_CuredOrc()
 {
-	//-------- Missionsgegenstände --------
+	//-------- MissionsgegenstÃ¤nde --------
 	
-	//-------- Tagebucheinträge --------
-	B_LogEntry			(CH4_UluMulu,"Odk¹d dostarczy³em uwiêzionemu orkowi jego lekarstwo, sta³ siê bardzo pomocny.");
+	//-------- TagebucheintrÃ¤ge --------
+	B_LogEntry			(CH4_UluMulu,"OdkÄ…d dostarczyÅ‚em uwiÄ™zionemu orkowi jego lekarstwo, staÅ‚ siÄ™ bardzo pomocny.");
 
 	//-------- Erfahrung --------
 	B_GiveXP			(XP_CuredOrcSlave);
 
-	//-------- Tarroks Fokusnamen ändern --------
+	//-------- Tarroks Fokusnamen Ã¤ndern --------
 	var C_NPC tarrok;
 	tarrok = Hlp_GetNpc(FreemineOrc);
 	tarrok.name =	"Tarrok";

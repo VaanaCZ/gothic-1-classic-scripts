@@ -1,16 +1,16 @@
 //*****************************************************************************
-//***			Diese Funktion tötet alle Bewohner des FMC					***
+//***			Diese Funktion tÃ¶tet alle Bewohner des FMC					***
 //*****************************************************************************
 func void B_Story_FindXardas()
 {
-	//-------- Tagebucheinträge --------
+	//-------- TagebucheintrÃ¤ge --------
 	Log_CreateTopic		(CH4_FindXardas,	LOG_MISSION);
 	Log_SetTopicStatus	(CH4_FindXardas,	LOG_RUNNING);
-	B_LogEntry			(CH4_FindXardas,"Po tragicznej œmierci Magów Ognia pozosta³a ju¿ tylko jedna osoba, która mo¿e nam pomóc wydostaæ siê z kolonii. Saturas wyzna³ mi, ¿e prace nad tworzeniem Bariery nadzorowa³ trzynasty mag!");
-	B_LogEntry			(CH4_FindXardas,"Trzynasty mag, imieniem Xardas, prowadzi samotnicze ¿ycie w swej wie¿y, gdzieœ g³êboko na ziemiach orków. Zgodzi³em siê odnaleŸæ go i poprosiæ o pomoc.");
+	B_LogEntry			(CH4_FindXardas,"Po tragicznej Å›mierci MagÃ³w Ognia pozostaÅ‚a juÅ¼ tylko jedna osoba, ktÃ³ra moÅ¼e nam pomÃ³c wydostaÄ‡ siÄ™ z kolonii. Saturas wyznaÅ‚ mi, Å¼e prace nad tworzeniem Bariery nadzorowaÅ‚ trzynasty mag!");
+	B_LogEntry			(CH4_FindXardas,"Trzynasty mag, imieniem Xardas, prowadzi samotnicze Å¼ycie w swej wieÅ¼y, gdzieÅ› gÅ‚Ä™boko na ziemiach orkÃ³w. ZgodziÅ‚em siÄ™ odnaleÅºÄ‡ go i poprosiÄ‡ o pomoc.");
 	
 
-	//-------- Missionsgegenstände --------
+	//-------- MissionsgegenstÃ¤nde --------
 	
 	//-------- NSCs einsetzen --------
 	Wld_InsertNpc	(XardasDemon,	"DT_E1_06");

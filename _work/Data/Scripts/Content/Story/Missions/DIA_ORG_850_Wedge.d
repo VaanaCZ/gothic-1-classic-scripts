@@ -48,7 +48,7 @@ func void  DIA_Wedge_Psst_Info()
 {
 	AI_Output (self, other,"DIA_Wedge_Psst_05_00"); //Ciiii... Hej, ty!
 	AI_Output (other, self,"DIA_Wedge_Psst_15_01"); //Co? Ja?
-	AI_Output (self, other,"DIA_Wedge_Psst_05_02"); //Tak... ChodŸ no tutaj!
+	AI_Output (self, other,"DIA_Wedge_Psst_05_02"); //Tak... ChodÅº no tutaj!
 	AI_StopProcessInfos	(self);
 };
 
@@ -77,9 +77,9 @@ FUNC int  DIA_Wedge_Hello_Condition()
 FUNC void  DIA_Wedge_Hello_Info()
 {
 	AI_Output (other, self,"DIA_Wedge_Hello_15_00"); //Czego ode mnie chcesz?
-	AI_Output (self, other,"DIA_Wedge_Hello_05_01"); //Jesteœ tu nowy, co? Od razu zauwa¿y³em.
-	AI_Output (self, other,"DIA_Wedge_Hello_05_02"); //Musisz siê jeszcze wiele nauczyæ. Móg³bym ci pokazaæ, co w trawie piszczy.
-	AI_Output (self, other,"DIA_Wedge_Hello_05_03"); //Przede wszystkim musisz uwa¿aæ z kim rozmawiasz. Widzisz tego faceta, tam - przy ognisku? To Butch. Strze¿ siê go!
+	AI_Output (self, other,"DIA_Wedge_Hello_05_01"); //JesteÅ› tu nowy, co? Od razu zauwaÅ¼yÅ‚em.
+	AI_Output (self, other,"DIA_Wedge_Hello_05_02"); //Musisz siÄ™ jeszcze wiele nauczyÄ‡. MÃ³gÅ‚bym ci pokazaÄ‡, co w trawie piszczy.
+	AI_Output (self, other,"DIA_Wedge_Hello_05_03"); //Przede wszystkim musisz uwaÅ¼aÄ‡ z kim rozmawiasz. Widzisz tego faceta, tam - przy ognisku? To Butch. StrzeÅ¼ siÄ™ go!
 };  
 
 // ****************************************
@@ -107,7 +107,7 @@ FUNC int  DIA_Wedge_WarnsOfButch_Condition()
 FUNC void  DIA_Wedge_WarnsOfButch_Info()
 {
 	AI_Output (other, self,"DIA_Wedge_WarnsOfButch_15_00"); //A co z nim jest nie tak?
-	AI_Output (self, other,"DIA_Wedge_WarnsOfButch_05_01"); //Ma paskudny nawyk napadania nowoprzyby³ych. Na twoim miejscu unika³bym go jak ognia.
+	AI_Output (self, other,"DIA_Wedge_WarnsOfButch_05_01"); //Ma paskudny nawyk napadania nowoprzybyÅ‚ych. Na twoim miejscu unikaÅ‚bym go jak ognia.
 	//AI_Output (self, other,"DIA_Wedge_WarnsOfButch_05_02"); //Also, geh ihm am besten aus dem Weg.//***Doppelt***
 };  
 
@@ -122,7 +122,7 @@ INSTANCE DIA_Wedge_Lehrer (C_INFO)
 	condition		= DIA_Wedge_Lehrer_Condition;
 	information		= DIA_Wedge_Lehrer_Info;
 	permanent		= 1;
-	description		= "Czego mo¿esz mnie nauczyæ?"; 
+	description		= "Czego moÅ¼esz mnie nauczyÄ‡?"; 
 };
 
 FUNC INT DIA_Wedge_Lehrer_Condition()
@@ -138,11 +138,11 @@ FUNC VOID DIA_Wedge_Lehrer_Info()
 	if (log_wedgelearn == FALSE)
 	{
 		Log_CreateTopic   	(GE_TeacherNC,LOG_NOTE);
-		B_LogEntry			(GE_TeacherNC,"Szkodnik o przezwisku Klin mo¿e mnie nauczyæ skradania siê, otwierania zamków i kradzie¿y kieszonkowej.");
+		B_LogEntry			(GE_TeacherNC,"Szkodnik o przezwisku Klin moÅ¼e mnie nauczyÄ‡ skradania siÄ™, otwierania zamkÃ³w i kradzieÅ¼y kieszonkowej.");
 		log_wedgelearn = TRUE ;
 	};
-	AI_Output (other, self,"DIA_Wedge_Lehrer_15_00"); //Czego mo¿esz mnie nauczyæ?
-	AI_Output (self, other,"DIA_Wedge_Lehrer_05_01"); //To zale¿y... A co chcesz wiedzieæ?
+	AI_Output (other, self,"DIA_Wedge_Lehrer_15_00"); //Czego moÅ¼esz mnie nauczyÄ‡?
+	AI_Output (self, other,"DIA_Wedge_Lehrer_05_01"); //To zaleÅ¼y... A co chcesz wiedzieÄ‡?
 	
 
 	Info_ClearChoices	(DIA_Wedge_Lehrer );
@@ -172,66 +172,66 @@ FUNC VOID DIA_Wedge_Lehrer_Info()
 
 func void DIA_Wedge_Lehrer_Schleichen()
 {
-	AI_Output (other, self,"DIA_Wedge_Lehrer_Schleichen_15_00"); //Chcia³bym nauczyæ siê poruszaæ bezszelestnie.
+	AI_Output (other, self,"DIA_Wedge_Lehrer_Schleichen_15_00"); //ChciaÅ‚bym nauczyÄ‡ siÄ™ poruszaÄ‡ bezszelestnie.
 	if (B_GiveSkill(other, NPC_TALENT_SNEAK, 1, LPCOST_TALENT_SNEAK))
 	{
-		AI_Output (self, other,"DIA_Wedge_Lehrer_Schleichen_05_01"); //Grunt to zachowaæ równowagê. Oprócz tego musisz nauczyæ siê kontrolowaæ swój oddech.
-		AI_Output (self, other,"DIA_Wedge_Lehrer_Schleichen_05_02"); //Przyjmij odpowiedni¹ postawê, a nikt nie us³yszy twoich kroków.
+		AI_Output (self, other,"DIA_Wedge_Lehrer_Schleichen_05_01"); //Grunt to zachowaÄ‡ rÃ³wnowagÄ™. OprÃ³cz tego musisz nauczyÄ‡ siÄ™ kontrolowaÄ‡ swÃ³j oddech.
+		AI_Output (self, other,"DIA_Wedge_Lehrer_Schleichen_05_02"); //Przyjmij odpowiedniÄ… postawÄ™, a nikt nie usÅ‚yszy twoich krokÃ³w.
 	};
 };
 
 func void DIA_Wedge_Lehrer_Lockpick()
 {
-	AI_Output (other, self,"DIA_Wedge_Lehrer_Lockpick_15_00"); //Chcia³bym nauczyæ siê otwieraæ zamki.
+	AI_Output (other, self,"DIA_Wedge_Lehrer_Lockpick_15_00"); //ChciaÅ‚bym nauczyÄ‡ siÄ™ otwieraÄ‡ zamki.
 	
 	if (B_GiveSkill(other, NPC_TALENT_PICKLOCK, 1, LPCOST_TALENT_PICKLOCK_1))
 	{
-		AI_Output (self, other,"DIA_Wedge_Lehrer_Lockpick_05_01"); //Nie w¹tpiê! Có¿... Pocz¹tki nie s¹ zbyt trudne.
-		AI_Output (self, other,"DIA_Wedge_Lehrer_Lockpick_05_02"); //Przede wszystkim musisz uwa¿aæ, ¿eby nie z³amaæ wytrycha.
-		AI_Output (self, other,"DIA_Wedge_Lehrer_Lockpick_05_03"); //Musisz byæ bardzo cierpliwy. Wtedy nie bêdziesz potrzebowa³ tylu wytrychów, he he!
+		AI_Output (self, other,"DIA_Wedge_Lehrer_Lockpick_05_01"); //Nie wÄ…tpiÄ™! CÃ³Å¼... PoczÄ…tki nie sÄ… zbyt trudne.
+		AI_Output (self, other,"DIA_Wedge_Lehrer_Lockpick_05_02"); //Przede wszystkim musisz uwaÅ¼aÄ‡, Å¼eby nie zÅ‚amaÄ‡ wytrycha.
+		AI_Output (self, other,"DIA_Wedge_Lehrer_Lockpick_05_03"); //Musisz byÄ‡ bardzo cierpliwy. Wtedy nie bÄ™dziesz potrzebowaÅ‚ tylu wytrychÃ³w, he he!
 	};
 };
 
 func void DIA_Wedge_Lehrer_Lockpick2()
 {
-	AI_Output (other, self,"DIA_Wedge_Lehrer_Lockpick2_15_00"); //Chcia³bym zostaæ ekspertem w otwieraniu zamków.
+	AI_Output (other, self,"DIA_Wedge_Lehrer_Lockpick2_15_00"); //ChciaÅ‚bym zostaÄ‡ ekspertem w otwieraniu zamkÃ³w.
 	
 	if (B_GiveSkill(other, NPC_TALENT_PICKLOCK, 2, LPCOST_TALENT_PICKLOCK_2))
 	{
-		AI_Output (self, other,"DIA_Wedge_Lehrer_Lockpick2_05_01"); //Gdy nabierzesz ju¿ trochê doœwiadczenia, nauczysz siê rozpoznawaæ dŸwiêk, jaki wydaje wytrych zanim pêknie.
-		AI_Output (self, other,"DIA_Wedge_Lehrer_Lockpick2_05_02"); //Myœlê, ¿e powinieneœ sobie z tym poradziæ. Ws³uchaj siê uwa¿nie w dŸwiêki jakie wydaje otwierany zamek, a nie bêdziesz potrzebowa³ tylu wytrychów, he, he!
-		AI_Output (self, other,"DIA_Wedge_Lehrer_Lockpick2_05_03"); //Prawdziwy mistrz w tym fachu potrafi otworzyæ ka¿d¹ skrzyniê nie ³ami¹c ani jednego wytrycha.
+		AI_Output (self, other,"DIA_Wedge_Lehrer_Lockpick2_05_01"); //Gdy nabierzesz juÅ¼ trochÄ™ doÅ›wiadczenia, nauczysz siÄ™ rozpoznawaÄ‡ dÅºwiÄ™k, jaki wydaje wytrych zanim pÄ™knie.
+		AI_Output (self, other,"DIA_Wedge_Lehrer_Lockpick2_05_02"); //MyÅ›lÄ™, Å¼e powinieneÅ› sobie z tym poradziÄ‡. WsÅ‚uchaj siÄ™ uwaÅ¼nie w dÅºwiÄ™ki jakie wydaje otwierany zamek, a nie bÄ™dziesz potrzebowaÅ‚ tylu wytrychÃ³w, he, he!
+		AI_Output (self, other,"DIA_Wedge_Lehrer_Lockpick2_05_03"); //Prawdziwy mistrz w tym fachu potrafi otworzyÄ‡ kaÅ¼dÄ… skrzyniÄ™ nie Å‚amiÄ…c ani jednego wytrycha.
 	};
 };
 
 func void DIA_Wedge_Lehrer_Pickpocket()
 {
-	AI_Output (other, self,"DIA_Wedge_Lehrer_PICKPOCKET_15_00"); //Chcia³bym zostaæ zrêcznym kieszonkowcem!
+	AI_Output (other, self,"DIA_Wedge_Lehrer_PICKPOCKET_15_00"); //ChciaÅ‚bym zostaÄ‡ zrÄ™cznym kieszonkowcem!
 	if (Npc_GetTalentSkill(other, NPC_TALENT_SNEAK) == 1)
 	{
 		if (B_GiveSkill(other, NPC_TALENT_PICKPOCKET, 1, LPCOST_TALENT_PICKPOCKET_1))
 		{
-			AI_Output (self, other,"DIA_Wedge_Lehrer_PICKPOCKET_05_01"); //Chcia³byœ odci¹¿yæ parê osób z ich dobytku, co? No dobra.
-			AI_Output (self, other,"DIA_Wedge_Lehrer_PICKPOCKET_05_02"); //Poka¿ê ci na czym powinieneœ siê skoncentrowaæ, ale szanse, ¿e zostaniesz z³apany bêd¹ nadal znaczne.
-			AI_Output (self, other,"DIA_Wedge_Lehrer_PICKPOCKET_05_03"); //Podejmuj ryzyko wy³¹cznie jeœli w pobli¿u ofiary nie ma osób trzecich.
-			AI_Output (self, other,"DIA_Wedge_Lehrer_PICKPOCKET_05_04"); //Tylko prawdziwy mistrz potrafi ukraœæ coœ pozostaj¹c ca³kowicie niezauwa¿onym!
+			AI_Output (self, other,"DIA_Wedge_Lehrer_PICKPOCKET_05_01"); //ChciaÅ‚byÅ› odciÄ…Å¼yÄ‡ parÄ™ osÃ³b z ich dobytku, co? No dobra.
+			AI_Output (self, other,"DIA_Wedge_Lehrer_PICKPOCKET_05_02"); //PokaÅ¼Ä™ ci na czym powinieneÅ› siÄ™ skoncentrowaÄ‡, ale szanse, Å¼e zostaniesz zÅ‚apany bÄ™dÄ… nadal znaczne.
+			AI_Output (self, other,"DIA_Wedge_Lehrer_PICKPOCKET_05_03"); //Podejmuj ryzyko wyÅ‚Ä…cznie jeÅ›li w pobliÅ¼u ofiary nie ma osÃ³b trzecich.
+			AI_Output (self, other,"DIA_Wedge_Lehrer_PICKPOCKET_05_04"); //Tylko prawdziwy mistrz potrafi ukraÅ›Ä‡ coÅ› pozostajÄ…c caÅ‚kowicie niezauwaÅ¼onym!
 		};
 	}
 	else
 	{
-		AI_Output (self, other,"DIA_Wedge_lehrer_Pickpocket_05_05"); //Nie ma o czym mówiæ! Nie bêdzie z ciebie z³odzieja, dopóki nie nauczysz siê skradaæ!
+		AI_Output (self, other,"DIA_Wedge_lehrer_Pickpocket_05_05"); //Nie ma o czym mÃ³wiÄ‡! Nie bÄ™dzie z ciebie zÅ‚odzieja, dopÃ³ki nie nauczysz siÄ™ skradaÄ‡!
 	};
 };
 
 func void DIA_Wedge_Lehrer_Pickpocket2()
 {
-	AI_Output (other, self,"DIA_Wedge_Lehrer_Pickpocket2_15_00"); //Chcia³bym zostaæ mistrzem kieszonkowców!
+	AI_Output (other, self,"DIA_Wedge_Lehrer_Pickpocket2_15_00"); //ChciaÅ‚bym zostaÄ‡ mistrzem kieszonkowcÃ³w!
 	
 	if (B_GiveSkill(other, NPC_TALENT_PICKPOCKET, 2, LPCOST_TALENT_PICKPOCKET_2))
 	{		
-		AI_Output (self, other,"DIA_Wedge_Lehrer_Pickpocket2_05_01"); //Có¿, chyba rzeczywiœcie potrafisz ju¿ wystarczaj¹co du¿o, ¿eby opanowaæ zaawansowane sztuczki.
-		AI_Output (self, other,"DIA_Wedge_Lehrer_Pickpocket2_05_02"); //Ale musisz pamiêtaæ, ¿e nawet mistrzowie z³odziejscy od czasu do czasu zostaj¹ z³apani.
-		AI_Output (self, other,"DIA_Wedge_Lehrer_Pickpocket2_05_03"); //Uwa¿aj na siebie.
+		AI_Output (self, other,"DIA_Wedge_Lehrer_Pickpocket2_05_01"); //CÃ³Å¼, chyba rzeczywiÅ›cie potrafisz juÅ¼ wystarczajÄ…co duÅ¼o, Å¼eby opanowaÄ‡ zaawansowane sztuczki.
+		AI_Output (self, other,"DIA_Wedge_Lehrer_Pickpocket2_05_02"); //Ale musisz pamiÄ™taÄ‡, Å¼e nawet mistrzowie zÅ‚odziejscy od czasu do czasu zostajÄ… zÅ‚apani.
+		AI_Output (self, other,"DIA_Wedge_Lehrer_Pickpocket2_05_03"); //UwaÅ¼aj na siebie.
 	};
 };
 

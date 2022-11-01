@@ -1,7 +1,7 @@
 instance STT_331_Fingers (Npc_Default)
 {
 	//-------- primary data --------
-	name 			=		"R¹czka";
+	name 			=		"RÄ…czka";
 	npctype			=		npctype_Main;
 	guild 			=		GIL_STT;
 	level 			=		7;

@@ -23,7 +23,7 @@ FUNC VOID  DIA_Fortuno_EXIT_Info()
 };
 
 // **************************************************
-//					Erste Begrüssung
+//					Erste BegrÃ¼ssung
 // **************************************************
 
 instance  DIA_Fortuno_Greet (C_INFO)
@@ -46,7 +46,7 @@ FUNC int  DIA_Fortuno_Greet_Condition()
 
 FUNC VOID  DIA_Fortuno_Greet_Info()
 {
-	AI_Output (self, other,"DIA_Fortuno_Greet_05_00"); //ChodŸ bli¿ej! Ka¿dy nowoprzyby³y otrzymuje od Bractwa powitalny prezent!
+	AI_Output (self, other,"DIA_Fortuno_Greet_05_00"); //ChodÅº bliÅ¼ej! KaÅ¼dy nowoprzybyÅ‚y otrzymuje od Bractwa powitalny prezent!
 };
 
 // **************************************************
@@ -73,20 +73,20 @@ FUNC int  DIA_Fortuno_GetGeschenk_Condition()
 FUNC VOID  DIA_Fortuno_GetGeschenk_Info()
 {
 	AI_Output (other, self,"DIA_Fortuno_GetGeschenk_15_00"); //Co to za prezent?
-	AI_Output (self, other,"DIA_Fortuno_GetGeschenk_05_01"); //To Mrok Pó³nocy - dobry towar!
-	AI_Output (self, other,"DIA_Fortuno_GetGeschenk_05_02"); //Mo¿esz do mnie przychodziæ codziennie po now¹ porcjê, ale gdybyœ chcia³ dostaæ wiêcej ni¿ przewiduje dzienna racja, bêdziesz musia³ zap³aciæ.
-	AI_Output (self, other,"DIA_Fortuno_GetGeschenk_05_03"); //Gdybyœ znalaz³ jakieœ zio³a lub owoce mo¿esz je przynieœæ do mnie. Chêtnie je od ciebie odkupiê.
+	AI_Output (self, other,"DIA_Fortuno_GetGeschenk_05_01"); //To Mrok PÃ³Å‚nocy - dobry towar!
+	AI_Output (self, other,"DIA_Fortuno_GetGeschenk_05_02"); //MoÅ¼esz do mnie przychodziÄ‡ codziennie po nowÄ… porcjÄ™, ale gdybyÅ› chciaÅ‚ dostaÄ‡ wiÄ™cej niÅ¼ przewiduje dzienna racja, bÄ™dziesz musiaÅ‚ zapÅ‚aciÄ‡.
+	AI_Output (self, other,"DIA_Fortuno_GetGeschenk_05_03"); //GdybyÅ› znalazÅ‚ jakieÅ› zioÅ‚a lub owoce moÅ¼esz je przynieÅ›Ä‡ do mnie. ChÄ™tnie je od ciebie odkupiÄ™.
 
 	CreateInvItems(self, itmijoint_2, 3);
 	B_GiveInvItems(self, other, itmijoint_2, 3);
 	Fortuno_RationDay = Wld_GetDay();
 	
 	Log_CreateTopic	(GE_TraderPSI,	LOG_NOTE);
-	B_LogEntry		(GE_TraderPSI,"Fortuno handluje bagiennym zielem. Znajdê go pod laboratorium alchemicznym.");
+	B_LogEntry		(GE_TraderPSI,"Fortuno handluje bagiennym zielem. ZnajdÄ™ go pod laboratorium alchemicznym.");
 };
 
 // **************************************************
-//				Tägliche Ration
+//				TÃ¤gliche Ration
 // **************************************************
 
 instance  DIA_Fortuno_DailyRation (C_INFO)
@@ -96,7 +96,7 @@ instance  DIA_Fortuno_DailyRation (C_INFO)
 	condition	= DIA_Fortuno_DailyRation_Condition;
 	information	= DIA_Fortuno_DailyRation_Info;
 	permanent	= 1;
-	description = "Przyszed³em po moj¹ codzienn¹ porcjê ziela.";
+	description = "PrzyszedÅ‚em po mojÄ… codziennÄ… porcjÄ™ ziela.";
 };                       
 
 FUNC int  DIA_Fortuno_DailyRation_Condition()
@@ -109,17 +109,17 @@ FUNC int  DIA_Fortuno_DailyRation_Condition()
 
 FUNC VOID  DIA_Fortuno_DailyRation_Info()
 {
-	AI_Output (other, self,"DIA_Fortuno_DailyRation_15_00"); //Przyszed³em po moj¹ codzienn¹ porcjê ziela.
+	AI_Output (other, self,"DIA_Fortuno_DailyRation_15_00"); //PrzyszedÅ‚em po mojÄ… codziennÄ… porcjÄ™ ziela.
 	if (Fortuno_RationDay!=Wld_GetDay())
  	{
- 		AI_Output (self, other,"DIA_Fortuno_DailyRation_05_01"); //Proszê bardzo. Trzy sztuki Mroku Pó³nocy. Tylko nie wypal wszystkiego na raz!
+ 		AI_Output (self, other,"DIA_Fortuno_DailyRation_05_01"); //ProszÄ™ bardzo. Trzy sztuki Mroku PÃ³Å‚nocy. Tylko nie wypal wszystkiego na raz!
 		CreateInvItems(self, itmijoint_2, 3);
 		B_GiveInvItems(self, other, itmijoint_2, 3);
 		Fortuno_RationDay = Wld_GetDay();
 	}
 	else
 	{
-		AI_Output (self, other,"DIA_Fortuno_DailyRation_05_02"); //Dosta³eœ ju¿ dziœ swoj¹ porcjê. Jeœli chcesz wiêcej, bêdziesz musia³ zap³aciæ. Najlepiej przyjdŸ jutro.
+		AI_Output (self, other,"DIA_Fortuno_DailyRation_05_02"); //DostaÅ‚eÅ› juÅ¼ dziÅ› swojÄ… porcjÄ™. JeÅ›li chcesz wiÄ™cej, bÄ™dziesz musiaÅ‚ zapÅ‚aciÄ‡. Najlepiej przyjdÅº jutro.
 	};
 };
 
@@ -134,7 +134,7 @@ instance  DIA_Fortuno_BuyJoints (C_INFO)
 	condition	= DIA_Fortuno_BuyJoints_Condition;
 	information	= DIA_Fortuno_BuyJoints_Info;
 	permanent	= 1;
-	description = "Chcê coœ kupiæ.";
+	description = "ChcÄ™ coÅ› kupiÄ‡.";
 	Trade		= 1;
 };                       
 
@@ -148,8 +148,8 @@ FUNC int  DIA_Fortuno_BuyJoints_Condition()
 
 FUNC VOID  DIA_Fortuno_BuyJoints_Info()
 {
-	AI_Output (other, self,"DIA_Fortuno_BuyJoints_15_00"); //Chcê coœ kupiæ.
-	AI_Output (self, other,"DIA_Fortuno_BuyJoints_05_01"); //Czego szukasz? A mo¿e chcesz coœ sprzedaæ?
+	AI_Output (other, self,"DIA_Fortuno_BuyJoints_15_00"); //ChcÄ™ coÅ› kupiÄ‡.
+	AI_Output (self, other,"DIA_Fortuno_BuyJoints_05_01"); //Czego szukasz? A moÅ¼e chcesz coÅ› sprzedaÄ‡?
 };
 
 

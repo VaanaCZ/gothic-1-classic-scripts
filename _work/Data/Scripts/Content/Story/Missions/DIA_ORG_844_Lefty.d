@@ -48,8 +48,8 @@ FUNC int DIA_Lefty_FirstAtNight_Condition()
 FUNC VOID DIA_Lefty_FirstAtNight_Info()
 {
 	AI_Output (other, self,"DIA_Aidan_Hello_15_00"); //Co tu robisz?
-	AI_Output (self, other,"DIA_846_Hello_07_01"); //Pracujê dla Ry¿owego Ksiêcia.
-	AI_Output (other, self,"DIA_Ricelord_Arbeit_15_00"); //A masz dla mnie jakieœ zajêcie?
+	AI_Output (self, other,"DIA_846_Hello_07_01"); //PracujÄ™ dla RyÅ¼owego KsiÄ™cia.
+	AI_Output (other, self,"DIA_Ricelord_Arbeit_15_00"); //A masz dla mnie jakieÅ› zajÄ™cie?
 	AI_Output (self, other,"DIA_Shrike_GetLost_07_01"); //Porozmawiamy innym razem!
 	AI_StopProcessInfos	(self);
 };
@@ -79,38 +79,38 @@ FUNC int DIA_Lefty_First_Condition()
 
 FUNC VOID DIA_Lefty_First_Info()
 {
-	AI_Output (self, other,"DIA_Lefty_First_07_00"); //Hej! Jesteœ tu nowy, nie? Potrzebujê kogoœ, kto zaniesie wodê naszym zbieraczom ry¿u.
-	AI_Output (self, other,"DIA_Lefty_First_07_01"); //W ten sposób od razu poznasz kilku ludzi. Zainteresowany?
+	AI_Output (self, other,"DIA_Lefty_First_07_00"); //Hej! JesteÅ› tu nowy, nie? PotrzebujÄ™ kogoÅ›, kto zaniesie wodÄ™ naszym zbieraczom ryÅ¼u.
+	AI_Output (self, other,"DIA_Lefty_First_07_01"); //W ten sposÃ³b od razu poznasz kilku ludzi. Zainteresowany?
 	
 	Log_CreateTopic		(CH1_CarryWater,	LOG_MISSION);
 	Log_SetTopicStatus	(CH1_CarryWater,	LOG_RUNNING);
-	B_LogEntry			(CH1_CarryWater,"Lewus, zadufany w sobie Szkodnik z Nowego Obozu, chce, ¿ebym zaniós³ wodê zbieraczom ry¿u.");
+	B_LogEntry			(CH1_CarryWater,"Lewus, zadufany w sobie Szkodnik z Nowego Obozu, chce, Å¼ebym zaniÃ³sÅ‚ wodÄ™ zbieraczom ryÅ¼u.");
 	
 	Info_ClearChoices	(DIA_Lefty_First );
-	Info_AddChoice		(DIA_Lefty_First,"Mo¿e innym razem.",DIA_Lefty_First_Later);
-	Info_AddChoice		(DIA_Lefty_First,"Sam sobie noœ tê wodê.",DIA_Lefty_First_Never);
-	Info_AddChoice		(DIA_Lefty_First,"Jasne, chêtnie wam pomogê.",DIA_Lefty_First_Yes);
+	Info_AddChoice		(DIA_Lefty_First,"MoÅ¼e innym razem.",DIA_Lefty_First_Later);
+	Info_AddChoice		(DIA_Lefty_First,"Sam sobie noÅ› tÄ™ wodÄ™.",DIA_Lefty_First_Never);
+	Info_AddChoice		(DIA_Lefty_First,"Jasne, chÄ™tnie wam pomogÄ™.",DIA_Lefty_First_Yes);
 };
 
 func void DIA_Lefty_First_Yes()
 {
-	AI_Output (other, self,"DIA_Lefty_First_Yes_15_00"); //Jasne, chêtnie wam pomogê.
-	AI_Output (self, other,"DIA_Lefty_First_Yes_07_01"); //Œwietnie! IdŸ do Ry¿owego Ksiêcia. On da ci wodê i powie ci co nale¿y zrobiæ. 
+	AI_Output (other, self,"DIA_Lefty_First_Yes_15_00"); //Jasne, chÄ™tnie wam pomogÄ™.
+	AI_Output (self, other,"DIA_Lefty_First_Yes_07_01"); //Åšwietnie! IdÅº do RyÅ¼owego KsiÄ™cia. On da ci wodÄ™ i powie ci co naleÅ¼y zrobiÄ‡. 
 	Lefty_WorkDay = B_SetDayTolerance();
 	Lefty_Mission = LOG_RUNNING;
 	An_Bauern_verteilt = 0;
-	B_LogEntry			(CH1_CarryWater,"Nie jest to mo¿e zbyt zaszczytne zadanie, ale zyskam kilku przyjació³. Wodê dostanê od niejakiego Ry¿owego Ksiêcia.");
+	B_LogEntry			(CH1_CarryWater,"Nie jest to moÅ¼e zbyt zaszczytne zadanie, ale zyskam kilku przyjaciÃ³Å‚. WodÄ™ dostanÄ™ od niejakiego RyÅ¼owego KsiÄ™cia.");
 
 	Info_ClearChoices	(DIA_Lefty_First);
 };
 
 func void DIA_Lefty_First_Never()
 {
-	AI_Output (other, self,"DIA_Lefty_First_Never_15_00"); //Sam sobie noœ tê wodê.
-	AI_Output (self, other,"DIA_Lefty_First_Never_07_01"); //Tak siê nie traktuje przyjació³! Widzê, ¿e muszê nauczyæ ciê dobrych manier!
+	AI_Output (other, self,"DIA_Lefty_First_Never_15_00"); //Sam sobie noÅ› tÄ™ wodÄ™.
+	AI_Output (self, other,"DIA_Lefty_First_Never_07_01"); //Tak siÄ™ nie traktuje przyjaciÃ³Å‚! WidzÄ™, Å¼e muszÄ™ nauczyÄ‡ ciÄ™ dobrych manier!
 	Lefty_WorkDay = B_SetDayTolerance();
 	Lefty_Mission = LOG_FAILED;
-	B_LogEntry			(CH1_CarryWater,"Lewus nieŸle siê wœciek³, gdy odrzuci³em jego 'propozycjê'! A myœla³em, ¿e w Starym Obozie by³o niebezpiecznie!");
+	B_LogEntry			(CH1_CarryWater,"Lewus nieÅºle siÄ™ wÅ›ciekÅ‚, gdy odrzuciÅ‚em jego 'propozycjÄ™'! A myÅ›laÅ‚em, Å¼e w Starym Obozie byÅ‚o niebezpiecznie!");
 	
 	Info_ClearChoices	(DIA_Lefty_First );
 	AI_StopProcessInfos	(self);
@@ -120,8 +120,8 @@ func void DIA_Lefty_First_Never()
 
 func void DIA_Lefty_First_Later()
 {
-	AI_Output (other, self,"DIA_Lefty_First_Later_15_00"); //Mo¿e innym razem.
-	AI_Output (self, other,"DIA_Lefty_First_Later_07_01"); //Innym razem mogê ciê ju¿ nie potrzebowaæ. Zdecyduj siê: chcesz mi pomóc czy nie?
+	AI_Output (other, self,"DIA_Lefty_First_Later_15_00"); //MoÅ¼e innym razem.
+	AI_Output (self, other,"DIA_Lefty_First_Later_07_01"); //Innym razem mogÄ™ ciÄ™ juÅ¼ nie potrzebowaÄ‡. Zdecyduj siÄ™: chcesz mi pomÃ³c czy nie?
 };
 
 // **************************************
@@ -156,22 +156,22 @@ FUNC VOID DIA_Lefty_WorkDay_Info()
 	
 	if (Lefty_Mission == LOG_FAILED)
 	{
-		AI_Output (self, other,"DIA_Lefty_WorkDay_NextChance_07_00"); //Masz ogromne szczêœcie! Postanowi³em daæ ci drug¹ szansê.
-		AI_Output (self, other,"DIA_Lefty_WorkDay_NextChance_07_01"); //Ale tym razem postaraj siê tego nie spartaczyæ! IdŸ do Ry¿owego Ksiêcia, a potem roznieœ wodê wszystkim zbieraczom, jasne?
+		AI_Output (self, other,"DIA_Lefty_WorkDay_NextChance_07_00"); //Masz ogromne szczÄ™Å›cie! PostanowiÅ‚em daÄ‡ ci drugÄ… szansÄ™.
+		AI_Output (self, other,"DIA_Lefty_WorkDay_NextChance_07_01"); //Ale tym razem postaraj siÄ™ tego nie spartaczyÄ‡! IdÅº do RyÅ¼owego KsiÄ™cia, a potem roznieÅ› wodÄ™ wszystkim zbieraczom, jasne?
 		Lefty_WorkDay = B_SetDayTolerance();
 		Lefty_Mission = LOG_RUNNING;
 		An_Bauern_verteilt = 0;
-		B_LogEntry			(CH1_CarryWater,"Znowu wpad³em na Lewusa! Kaza³ mi zajrzeæ do Ry¿owego Ksiêcia i zanieœæ wodê zbieraczom na polach ry¿owych.");
+		B_LogEntry			(CH1_CarryWater,"Znowu wpadÅ‚em na Lewusa! KazaÅ‚ mi zajrzeÄ‡ do RyÅ¼owego KsiÄ™cia i zanieÅ›Ä‡ wodÄ™ zbieraczom na polach ryÅ¼owych.");
 		
 		AI_StopProcessInfos	(self);
 	}
 	else if (Lefty_Mission == LOG_RUNNING)
 	{
-		AI_Output (self, other,"DIA_Lefty_WorkDay_StillRunning_07_00"); //Przecie¿ kaza³em ci roznieœæ wodê zbieraczom!
-		AI_Output (self, other,"DIA_Lefty_WorkDay_StillRunning_07_01"); //Nie lubiê ludzi, którzy coœ obiecuj¹, a potem nie dotrzymuj¹ s³owa!
+		AI_Output (self, other,"DIA_Lefty_WorkDay_StillRunning_07_00"); //PrzecieÅ¼ kazaÅ‚em ci roznieÅ›Ä‡ wodÄ™ zbieraczom!
+		AI_Output (self, other,"DIA_Lefty_WorkDay_StillRunning_07_01"); //Nie lubiÄ™ ludzi, ktÃ³rzy coÅ› obiecujÄ…, a potem nie dotrzymujÄ… sÅ‚owa!
 		Lefty_WorkDay = B_SetDayTolerance();
 		Lefty_Mission = LOG_FAILED;
-		B_LogEntry			(CH1_CarryWater,"Lewus bardzo siê zez³oœci³, ¿e nie roznios³em jeszcze wody! Z tym goœciem bêd¹ jeszcze k³opoty!");
+		B_LogEntry			(CH1_CarryWater,"Lewus bardzo siÄ™ zezÅ‚oÅ›ciÅ‚, Å¼e nie rozniosÅ‚em jeszcze wody! Z tym goÅ›ciem bÄ™dÄ… jeszcze kÅ‚opoty!");
 		
 		AI_StopProcessInfos	(self);
 		Npc_SetTarget (self, other);
@@ -179,14 +179,14 @@ FUNC VOID DIA_Lefty_WorkDay_Info()
 	}
 	else if (Lefty_Mission == LOG_SUCCESS)
 	{
-		AI_Output (self, other,"DIA_Lefty_WorkDay_SUCCESS_07_00"); //Dobra robota! Mo¿e bêd¹ z ciebie ludzie.
-		AI_Output (self, other,"DIA_Lefty_WorkDay_SUCCESS_07_01"); //Widzê, ¿e jesteœ wprost stworzony do tego zadania! Od tej pory bêdziesz to robi³ codziennie. Bierz siê do roboty!
+		AI_Output (self, other,"DIA_Lefty_WorkDay_SUCCESS_07_00"); //Dobra robota! MoÅ¼e bÄ™dÄ… z ciebie ludzie.
+		AI_Output (self, other,"DIA_Lefty_WorkDay_SUCCESS_07_01"); //WidzÄ™, Å¼e jesteÅ› wprost stworzony do tego zadania! Od tej pory bÄ™dziesz to robiÅ‚ codziennie. Bierz siÄ™ do roboty!
 		Lefty_WorkDay = B_SetDayTolerance();
 		Lefty_Mission = LOG_RUNNING;
 		An_Bauern_verteilt = 0;
 		if	!CarriedWaterForLefty
 		{
-			B_LogEntry		(CH1_CarryWater,"Nie mogê w to uwierzyæ! Roznios³em wodê tak, jak mi kazano, ale Lewus oczekuje, ¿e bêdê to robi³ codziennie! Ten dureñ powinien chyba dostaæ nauczkê.");
+			B_LogEntry		(CH1_CarryWater,"Nie mogÄ™ w to uwierzyÄ‡! RozniosÅ‚em wodÄ™ tak, jak mi kazano, ale Lewus oczekuje, Å¼e bÄ™dÄ™ to robiÅ‚ codziennie! Ten dureÅ„ powinien chyba dostaÄ‡ nauczkÄ™.");
 			B_GiveXP		(XP_LeftyCarriedWater);
 			CarriedWaterForLefty = TRUE;
 		};
@@ -206,7 +206,7 @@ instance DIA_Lefty_NeverAgain (C_INFO)
 	condition	= DIA_Lefty_NeverAgain_Condition;
 	information	= DIA_Lefty_NeverAgain_Info;
 	permanent	= 1;
-	description	= "Od tej pory mo¿esz sam sobie biegaæ z t¹ wod¹!";
+	description	= "Od tej pory moÅ¼esz sam sobie biegaÄ‡ z tÄ… wodÄ…!";
 };                       
 
 FUNC int DIA_Lefty_NeverAgain_Condition()
@@ -219,9 +219,9 @@ FUNC int DIA_Lefty_NeverAgain_Condition()
 
 FUNC VOID DIA_Lefty_NeverAgain_Info()
 {
-	AI_Output (other, self,"DIA_Lefty_NeverAgain_15_00"); //Od tej pory mo¿esz sam sobie biegaæ z t¹ wod¹!
-	AI_Output (self, other,"DIA_Lefty_NeverAgain_07_01"); //Czy¿by? A co - masz coœ lepszego do roboty?
-	AI_Output (self, other,"DIA_Lefty_NeverAgain_07_02"); //Chyba muszê ci przypomnieæ kto tu jest szefem!
+	AI_Output (other, self,"DIA_Lefty_NeverAgain_15_00"); //Od tej pory moÅ¼esz sam sobie biegaÄ‡ z tÄ… wodÄ…!
+	AI_Output (self, other,"DIA_Lefty_NeverAgain_07_01"); //CzyÅ¼by? A co - masz coÅ› lepszego do roboty?
+	AI_Output (self, other,"DIA_Lefty_NeverAgain_07_02"); //Chyba muszÄ™ ci przypomnieÄ‡ kto tu jest szefem!
 	
 	AI_StopProcessInfos	(self);
 	Npc_SetTarget (self, other);
@@ -240,7 +240,7 @@ instance DIA_Lefty_PERM (C_INFO)
 	condition	= DIA_Lefty_PERM_Condition;
 	information	= DIA_Lefty_PERM_Info;
 	permanent	= 1;
-	description	= "Co s³ychaæ, przyjacielu?";
+	description	= "Co sÅ‚ychaÄ‡, przyjacielu?";
 };                       
 
 FUNC int DIA_Lefty_PERM_Condition()
@@ -253,27 +253,27 @@ FUNC int DIA_Lefty_PERM_Condition()
 
 FUNC VOID DIA_Lefty_PERM_Info()
 {
-	AI_Output (other, self,"DIA_Lefty_PERM_15_00"); //Co s³ychaæ, przyjacielu?
-	AI_Output (self, other,"DIA_Lefty_PERM_07_01"); //Cz³owieku! Czego chcesz?!
+	AI_Output (other, self,"DIA_Lefty_PERM_15_00"); //Co sÅ‚ychaÄ‡, przyjacielu?
+	AI_Output (self, other,"DIA_Lefty_PERM_07_01"); //CzÅ‚owieku! Czego chcesz?!
 
 	if	!LeftyWasBeaten
 	{
-		B_LogEntry			(CH1_CarryWater,"Wyjaœni³em Lewusowi, ¿e nie zamierzam ganiaæ w tê i z powrotem z wod¹ dla Zbieraczy. Niektórzy ludzie musz¹ oberwaæ, zanim zrozumiej¹, co siê do nich mówi.");
+		B_LogEntry			(CH1_CarryWater,"WyjaÅ›niÅ‚em Lewusowi, Å¼e nie zamierzam ganiaÄ‡ w tÄ™ i z powrotem z wodÄ… dla Zbieraczy. NiektÃ³rzy ludzie muszÄ… oberwaÄ‡, zanim zrozumiejÄ…, co siÄ™ do nich mÃ³wi.");
 		Log_SetTopicStatus	(CH1_CarryWater,	LOG_SUCCESS);
 		B_GiveXP			(XP_LeftyConfronted);
 		LeftyWasBeaten = TRUE;
 	};
 	
 	Info_ClearChoices	(DIA_Lefty_PERM );
-	Info_AddChoice		(DIA_Lefty_PERM,"Chcia³em zobaczyæ, co u ciebie s³ychaæ.",DIA_Lefty_PERM_Nothing);
-	Info_AddChoice		(DIA_Lefty_PERM,"Zbieracze wygl¹daj¹ na spragnionych.",DIA_Lefty_PERM_Durstig);
-	Info_AddChoice		(DIA_Lefty_PERM,"Mia³em paskudny dzieñ, i mam ochotê roz³adowaæ drzemi¹c¹ we mnie z³oœæ!",DIA_Lefty_PERM_AufsMaul);
+	Info_AddChoice		(DIA_Lefty_PERM,"ChciaÅ‚em zobaczyÄ‡, co u ciebie sÅ‚ychaÄ‡.",DIA_Lefty_PERM_Nothing);
+	Info_AddChoice		(DIA_Lefty_PERM,"Zbieracze wyglÄ…dajÄ… na spragnionych.",DIA_Lefty_PERM_Durstig);
+	Info_AddChoice		(DIA_Lefty_PERM,"MiaÅ‚em paskudny dzieÅ„, i mam ochotÄ™ rozÅ‚adowaÄ‡ drzemiÄ…cÄ… we mnie zÅ‚oÅ›Ä‡!",DIA_Lefty_PERM_AufsMaul);
 
 };	
 
 func void DIA_Lefty_PERM_AufsMaul()
 {
-	AI_Output (other, self,"DIA_Lefty_PERM_AufsMaul_15_00"); //Mia³em paskudny dzieñ, i mam ochotê roz³adowaæ czêœæ drzemi¹cej we mnie z³oœci... Nie ruszaj siê przez chwilkê!
+	AI_Output (other, self,"DIA_Lefty_PERM_AufsMaul_15_00"); //MiaÅ‚em paskudny dzieÅ„, i mam ochotÄ™ rozÅ‚adowaÄ‡ czÄ™Å›Ä‡ drzemiÄ…cej we mnie zÅ‚oÅ›ci... Nie ruszaj siÄ™ przez chwilkÄ™!
 	B_Say (self,other,"$YOUWANNAFOOLME");
 	Info_ClearChoices	(DIA_Lefty_PERM );
 	AI_StopProcessInfos	(self);
@@ -284,14 +284,14 @@ func void DIA_Lefty_PERM_AufsMaul()
 
 func void DIA_Lefty_PERM_Durstig()
 {
-	AI_Output (other, self,"DIA_Lefty_PERM_Durstig_15_00"); //Zbieracze wygl¹daj¹ na spragnionych.
-	AI_Output (self, other,"DIA_Lefty_PERM_Durstig_07_01"); //Zajmê siê tym... Nie ma obawy.
+	AI_Output (other, self,"DIA_Lefty_PERM_Durstig_15_00"); //Zbieracze wyglÄ…dajÄ… na spragnionych.
+	AI_Output (self, other,"DIA_Lefty_PERM_Durstig_07_01"); //ZajmÄ™ siÄ™ tym... Nie ma obawy.
 	AI_StopProcessInfos	(self);
 };
 
 func void DIA_Lefty_PERM_Nothing()
 {
-	AI_Output (other, self,"DIA_Lefty_PERM_Nothing_15_00"); //Chcia³em zobaczyæ, co u ciebie s³ychaæ.
+	AI_Output (other, self,"DIA_Lefty_PERM_Nothing_15_00"); //ChciaÅ‚em zobaczyÄ‡, co u ciebie sÅ‚ychaÄ‡.
 	AI_StopProcessInfos	(self);
 };
 

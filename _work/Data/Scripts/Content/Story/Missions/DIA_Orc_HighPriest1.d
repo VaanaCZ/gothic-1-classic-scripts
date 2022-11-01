@@ -21,12 +21,12 @@ FUNC VOID Info_HighPriest1_Info()
 	AI_SetWalkmode		(self, NPC_WALK);
 	AI_GotoNpc			(self, other);
 	
-	AI_Output 			(self, other,"Info_HighPriest1_17_01"); //ŒMIERTELNY!
-	AI_Output 			(self, other,"Info_HighPriest1_17_02"); //JAK ŒMIESZ ZAK£ÓCAÆ MÓJ SPOKÓJ?!
-	AI_Output 			(self, other,"Info_HighPriest1_17_03"); //PRZYGOTUJ SIÊ NA ŒMIERÆ!
-	AI_Output 			(other, self,"Info_HighPriest1_15_04"); //Jeszcze siê przekonamy, na kogo przysz³a pora, ty gnij¹cy och³apie.
+	AI_Output 			(self, other,"Info_HighPriest1_17_01"); //ÅšMIERTELNY!
+	AI_Output 			(self, other,"Info_HighPriest1_17_02"); //JAK ÅšMIESZ ZAKÅÃ“CAÄ† MÃ“J SPOKÃ“J?!
+	AI_Output 			(self, other,"Info_HighPriest1_17_03"); //PRZYGOTUJ SIÄ˜ NA ÅšMIERÄ†!
+	AI_Output 			(other, self,"Info_HighPriest1_15_04"); //Jeszcze siÄ™ przekonamy, na kogo przyszÅ‚a pora, ty gnijÄ…cy ochÅ‚apie.
 	
-	B_LogEntry			(CH4_EnterTemple,"Przede mn¹ stoi Varrag-Hashor, jeden z piêciu orkowych szamanów, którzy sprowadzili Œni¹cego do tego œwiata. Wybi³a ostatnia godzina tego o¿ywieñca!");
+	B_LogEntry			(CH4_EnterTemple,"Przede mnÄ… stoi Varrag-Hashor, jeden z piÄ™ciu orkowych szamanÃ³w, ktÃ³rzy sprowadzili ÅšniÄ…cego do tego Å›wiata. WybiÅ‚a ostatnia godzina tego oÅ¼ywieÅ„ca!");
 
 	AI_StopProcessInfos	(self);
 

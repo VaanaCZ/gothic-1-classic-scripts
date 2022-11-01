@@ -23,7 +23,7 @@ FUNC VOID DIA_BaalCadar_Exit_Info()
 };
 
 // ************************************************************
-// 					NICHT ansprechbar (Ungläubiger) 
+// 					NICHT ansprechbar (UnglÃ¤ubiger) 
 // ************************************************************
 	var int BaalCadar_Ansprechbar;
 	var int BaalCadar_Sakrileg;
@@ -54,28 +54,28 @@ FUNC VOID DIA_BaalCadar_NoTalk_Info()
 {	
 	Info_ClearChoices 	(DIA_BaalCadar_NoTalk);
 	Info_Addchoice 		(DIA_BaalCadar_NoTalk,DIALOG_ENDE					,DIA_BaalCadar_NoTalk_ENDE);
-	Info_Addchoice 		(DIA_BaalCadar_NoTalk,"Wszystko w porz¹dku, kolego?",DIA_BaalCadar_NoTalk_Imp);
-	Info_Addchoice 		(DIA_BaalCadar_NoTalk,"Niech Œni¹cy bêdzie z tob¹!",DIA_BaalCadar_NoTalk_Sleeper);
-	Info_Addchoice 		(DIA_BaalCadar_NoTalk,"Czeœæ! Jestem tu nowy!",DIA_BaalCadar_NoTalk_Hi);
+	Info_Addchoice 		(DIA_BaalCadar_NoTalk,"Wszystko w porzÄ…dku, kolego?",DIA_BaalCadar_NoTalk_Imp);
+	Info_Addchoice 		(DIA_BaalCadar_NoTalk,"Niech ÅšniÄ…cy bÄ™dzie z tobÄ…!",DIA_BaalCadar_NoTalk_Sleeper);
+	Info_Addchoice 		(DIA_BaalCadar_NoTalk,"CzeÅ›Ä‡! Jestem tu nowy!",DIA_BaalCadar_NoTalk_Hi);
 };
 
 func void DIA_BaalCadar_NoTalk_Hi()
 {
-	AI_Output (other, self,"DIA_BaalCadar_NoTalk_Hi_15_00"); //Czeœæ! Jestem tu nowy!
+	AI_Output (other, self,"DIA_BaalCadar_NoTalk_Hi_15_00"); //CzeÅ›Ä‡! Jestem tu nowy!
 	AI_Output (self, other,"DIA_BaalCadar_NoTalk_Hi_02_01"); //(Wzdycha)
 	BaalCadar_Sakrileg = TRUE;
 };
 
 func void DIA_BaalCadar_NoTalk_Sleeper()
 {
-	AI_Output (other, self,"DIA_BaalCadar_NoTalk_Sleeper_15_00"); //Niech Œni¹cy bêdzie z tob¹!
+	AI_Output (other, self,"DIA_BaalCadar_NoTalk_Sleeper_15_00"); //Niech ÅšniÄ…cy bÄ™dzie z tobÄ…!
 	AI_Output (self, other,"DIA_BaalCadar_NoTalk_Sleeper_02_01"); //(Wzdycha)
 	BaalCadar_Sakrileg = TRUE;
 };
 
 func void DIA_BaalCadar_NoTalk_Imp()
 {
-	AI_Output (other, self,"DIA_BaalCadar_NoTalk_Imp_15_00"); //Wszystko w porz¹dku, kolego?
+	AI_Output (other, self,"DIA_BaalCadar_NoTalk_Imp_15_00"); //Wszystko w porzÄ…dku, kolego?
 	AI_Output (self, other,"DIA_BaalCadar_NoTalk_Imp_02_01"); //(Wzdycha)
 	BaalCadar_Sakrileg = TRUE;
 };
@@ -88,13 +88,13 @@ func void DIA_BaalCadar_NoTalk_ENDE()
 /*
 
 
-	AI_Output (self, other,"Sit_1_PSI_BaalCadar_HypnoticTeacher_2FuncNo_02_01"); //Du solltest deinen Weg mit Bedacht wählen und nach reiflicher Überlegung. 
+	AI_Output (self, other,"Sit_1_PSI_BaalCadar_HypnoticTeacher_2FuncNo_02_01"); //Du solltest deinen Weg mit Bedacht wÃ¤hlen und nach reiflicher Ãœberlegung. 
 	AI_Output (self, other,"Sit_1_PSI_BaalCadar_HypnoticTeacher_2FuncNo_02_02"); //Bedenke wie du entscheidest. In den anderen Lagern bekommst zwar Schutz und Nahrung, aber ist es das, was du willst?
-	AI_Output (self, other,"Sit_1_PSI_BaalCadar_HypnoticTeacher_2FuncNo_15_03"); //Was erwartet mich, was es wert wäre, zu euch zu kommen?
-	AI_Output (self, other,"Sit_1_PSI_BaalCadar_HypnoticTeacher_2FuncNo_02_04"); //Ich könnte dir jetzt erzählen, das die Templer einen unbezwinglichen Willen haben,das die magische Macht der Gurus, die Vorstellungskraft von Feuer- und Wassermagiern bei weitem übersteigt.
+	AI_Output (self, other,"Sit_1_PSI_BaalCadar_HypnoticTeacher_2FuncNo_15_03"); //Was erwartet mich, was es wert wÃ¤re, zu euch zu kommen?
+	AI_Output (self, other,"Sit_1_PSI_BaalCadar_HypnoticTeacher_2FuncNo_02_04"); //Ich kÃ¶nnte dir jetzt erzÃ¤hlen, das die Templer einen unbezwinglichen Willen haben,das die magische Macht der Gurus, die Vorstellungskraft von Feuer- und Wassermagiern bei weitem Ã¼bersteigt.
 	AI_Output (self, other,"Sit_1_PSI_BaalCadar_HypnoticTeacher_2FuncNo_02_05"); //Das unsere Nahrung auch satt macht. Aber das ist es nicht, was diese Gemeinschaft ausmacht.
 	AI_Output (self, other,"Sit_1_PSI_BaalCadar_HypnoticTeacher_2FuncNo_02_06"); //Was dich hier erwartet, ist die Gabe. Du wirst einen Weg beschreiten, der dir sehr viel abverlangt.
-	AI_Output (self, other,"Sit_1_PSI_BaalCadar_HypnoticTeacher_2FuncNo_02_07"); //Aber das was du erreichen wirst ist eine Größe, eine Macht die dir Erleuchtung schenkt. Eine Macht, die dich zur Freiheit führt.
+	AI_Output (self, other,"Sit_1_PSI_BaalCadar_HypnoticTeacher_2FuncNo_02_07"); //Aber das was du erreichen wirst ist eine GrÃ¶ÃŸe, eine Macht die dir Erleuchtung schenkt. Eine Macht, die dich zur Freiheit fÃ¼hrt.
 	AI_Output (self, other,"Sit_1_PSI_BaalCadar_HypnoticTeacher_2FuncNo_02_08"); //Ist es nicht das, was du willst?... Freiheit?
 	AI_Output (self, other,"Sit_1_PSI_BaalCadar_HypnoticTeacher_2FuncNo_02_09"); //Also solltest du nicht die Frage stellen, warum du her kommen solltest, die Frage ist viel mehr, warum solltest du nicht?
 	Log_CreateTopic (GE_TeacherPSI,LOG_NOTE);
@@ -129,10 +129,10 @@ FUNC INT DIA_BaalCadar_SleepSpell_Condition()
 
 FUNC VOID DIA_BaalCadar_SleepSpell_Info()
 {
-	AI_Output (self, other,"DIA_BaalCadar_SleepSpell_02_00"); //Co ty wyprawiasz? Próbujê medytowaæ z moimi uczniami.
-	AI_Output (self, other,"DIA_BaalCadar_SleepSpell_02_01"); //Kto ciê nauczy³ wykorzystywaæ magiczne moce Œni¹cego?
-	AI_Output (other, self,"DIA_BaalCadar_SleepSpell_15_02"); //Nikt. To by³o ca³kiem proste!
-	AI_Output (self, other,"DIA_BaalCadar_SleepSpell_02_03"); //Wygl¹dasz mi na pojêtnego ucznia. Bêdê twoim mistrzem.
+	AI_Output (self, other,"DIA_BaalCadar_SleepSpell_02_00"); //Co ty wyprawiasz? PrÃ³bujÄ™ medytowaÄ‡ z moimi uczniami.
+	AI_Output (self, other,"DIA_BaalCadar_SleepSpell_02_01"); //Kto ciÄ™ nauczyÅ‚ wykorzystywaÄ‡ magiczne moce ÅšniÄ…cego?
+	AI_Output (other, self,"DIA_BaalCadar_SleepSpell_15_02"); //Nikt. To byÅ‚o caÅ‚kiem proste!
+	AI_Output (self, other,"DIA_BaalCadar_SleepSpell_02_03"); //WyglÄ…dasz mi na pojÄ™tnego ucznia. BÄ™dÄ™ twoim mistrzem.
 
 	BaalCadar_Ansprechbar = TRUE;
 	if	(Npc_GetTrueGuild(hero) == GIL_NONE)
@@ -140,7 +140,7 @@ FUNC VOID DIA_BaalCadar_SleepSpell_Info()
 		Log_CreateTopic		(CH1_JoinPsi,	LOG_MISSION);
 		Log_SetTopicStatus	(CH1_JoinPsi,	LOG_RUNNING);
 	};
-	B_LogEntry		(CH1_JoinPsi,"Baal Cadar ma mnie za pojêtnego ucznia!");
+	B_LogEntry		(CH1_JoinPsi,"Baal Cadar ma mnie za pojÄ™tnego ucznia!");
 	B_GiveXP		(XP_ImpressBaalCadar);
 };
 
@@ -154,7 +154,7 @@ instance  Gur_1208_BaalCadar_Teach (C_INFO)
 	condition		= Gur_1208_BaalCadar_Teach_Condition;
 	information		= Gur_1208_BaalCadar_Teach_Info;
 	permanent		= 1;
-	description		= "Chcia³bym zwiêkszyæ potêgê moich zaklêæ!"; 
+	description		= "ChciaÅ‚bym zwiÄ™kszyÄ‡ potÄ™gÄ™ moich zaklÄ™Ä‡!"; 
 };
 
 FUNC int  Gur_1208_BaalCadar_Teach_Condition()
@@ -167,13 +167,13 @@ FUNC int  Gur_1208_BaalCadar_Teach_Condition()
 };
 FUNC void  Gur_1208_BaalCadar_Teach_Info()
 {
-	AI_Output (other, self,"Gur_1208_BaalCadar_Teach_Info_15_01"); //Chcia³bym zwiêkszyæ potêgê moich zaklêæ!
-	AI_Output (self, other,"Gur_1208_BaalCadar_Teach_Info_02_02"); //Kluczem do tego jest si³a twego ducha.
+	AI_Output (other, self,"Gur_1208_BaalCadar_Teach_Info_15_01"); //ChciaÅ‚bym zwiÄ™kszyÄ‡ potÄ™gÄ™ moich zaklÄ™Ä‡!
+	AI_Output (self, other,"Gur_1208_BaalCadar_Teach_Info_02_02"); //Kluczem do tego jest siÅ‚a twego ducha.
 	
 	if (log_baalcadartrain == FALSE) 
 	{
 		Log_CreateTopic   	(GE_TeacherPSI,LOG_NOTE);
-		B_LogEntry			(GE_TeacherPSI,"Guru Baal Cadar pomo¿e mi zwiêkszyæ moj¹ mana.");
+		B_LogEntry			(GE_TeacherPSI,"Guru Baal Cadar pomoÅ¼e mi zwiÄ™kszyÄ‡ mojÄ… mana.");
 		log_baalcadartrain = TRUE;
 	};
 	Info_ClearChoices	(Gur_1208_BaalCadar_Teach);
@@ -216,7 +216,7 @@ instance  Gur_1208_BaalCadar_FIRSTTEST (C_INFO)
 	information		= Gur_1208_BaalCadar_FIRSTTEST_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Naucz mnie wykorzystywaæ magiê runiczn¹."; 
+	description		= "Naucz mnie wykorzystywaÄ‡ magiÄ™ runicznÄ…."; 
 };
 
 FUNC int  Gur_1208_BaalCadar_FIRSTTEST_Condition()
@@ -229,12 +229,12 @@ FUNC int  Gur_1208_BaalCadar_FIRSTTEST_Condition()
 };
 FUNC void  Gur_1208_BaalCadar_FIRSTTEST_Info()
 {
-	AI_Output (other, self,"Gur_1208_BaalCadar_FIRSTTEST_Info_15_01"); //Naucz mnie wykorzystywaæ magiê runiczn¹.
-	AI_Output (self, other,"Gur_1208_BaalCadar_FIRSTTEST_Info_02_02"); //Wielu pozna³o jêzyk runiczny, ale tylko kilku rozumie naturê ich magii.
-	AI_Output (self, other,"Gur_1208_BaalCadar_FIRSTTEST_Info_02_03"); //Spróbujê ci j¹ wyjaœniæ.
+	AI_Output (other, self,"Gur_1208_BaalCadar_FIRSTTEST_Info_15_01"); //Naucz mnie wykorzystywaÄ‡ magiÄ™ runicznÄ….
+	AI_Output (self, other,"Gur_1208_BaalCadar_FIRSTTEST_Info_02_02"); //Wielu poznaÅ‚o jÄ™zyk runiczny, ale tylko kilku rozumie naturÄ™ ich magii.
+	AI_Output (self, other,"Gur_1208_BaalCadar_FIRSTTEST_Info_02_03"); //SprÃ³bujÄ™ ci jÄ… wyjaÅ›niÄ‡.
 	
 	Log_CreateTopic (GE_TeacherPSI,LOG_NOTE);
-	B_LogEntry    	(GE_TeacherPSI,"Baal Cadar wprowadzi mnie w krêgi magii runicznej.");
+	B_LogEntry    	(GE_TeacherPSI,"Baal Cadar wprowadzi mnie w krÄ™gi magii runicznej.");
 		
 };
 
@@ -249,7 +249,7 @@ instance  Gur_1208_BaalCadar_KREIS1 (C_INFO)
 	information		= Gur_1208_BaalCadar_KREIS1_Info;
 	important		= 0;
 	permanent		= 1;
-	description		= "Jestem gotów, by przyst¹piæ do Pierwszego Krêgu:"; 
+	description		= "Jestem gotÃ³w, by przystÄ…piÄ‡ do Pierwszego KrÄ™gu:"; 
 };
 
 FUNC int  Gur_1208_BaalCadar_KREIS1_Condition()
@@ -264,14 +264,14 @@ FUNC int  Gur_1208_BaalCadar_KREIS1_Condition()
 };
 FUNC void  Gur_1208_BaalCadar_KREIS1_Info()
 {
-	AI_Output (other, self,"Gur_1208_BaalCadar_KREIS1_Info_15_01"); //Jestem gotów, by przyst¹piæ do Pierwszego Krêgu:
+	AI_Output (other, self,"Gur_1208_BaalCadar_KREIS1_Info_15_01"); //Jestem gotÃ³w, by przystÄ…piÄ‡ do Pierwszego KrÄ™gu:
 	if (B_GiveSkill(other,NPC_TALENT_MAGE , 1, LPCOST_TALENT_MAGE_1))
 	{
-		AI_Output (self, other,"Gur_1208_BaalCadar_KREIS1_Info_02_02"); //S³uchaj mnie uwa¿nie:
-		AI_Output (self, other,"Gur_1208_BaalCadar_KREIS1_Info_02_03"); //Dawno temu Œni¹cy przyby³ tutaj i zes³a³ ludziom prorocz¹ wizjê.
-		AI_Output (self, other,"Gur_1208_BaalCadar_KREIS1_Info_02_04"); //Jednak wielu z nich nie chcia³o zobaczyæ jego potêgi. Nie chcia³o uwierzyæ. Zaœlepia³a ich chciwoœæ rudy.
-		AI_Output (self, other,"Gur_1208_BaalCadar_KREIS1_Info_02_05"); //Tylko Y'Berion, wraz z garstk¹ towarzyszy us³ucha³ g³osu Œni¹cego. Tak powsta³o Bractwo.
-		AI_Output (self, other,"Gur_1208_BaalCadar_KREIS1_Info_02_06"); //W chwili, w której po raz pierwszy wst¹pili na œcie¿kê zbawienia, powsta³ równie¿ Pierwszy Kr¹g. Magia runiczna staje siê zrozumia³a dla ka¿dego, kto pod¹¿a œladem Œni¹cego.
+		AI_Output (self, other,"Gur_1208_BaalCadar_KREIS1_Info_02_02"); //SÅ‚uchaj mnie uwaÅ¼nie:
+		AI_Output (self, other,"Gur_1208_BaalCadar_KREIS1_Info_02_03"); //Dawno temu ÅšniÄ…cy przybyÅ‚ tutaj i zesÅ‚aÅ‚ ludziom proroczÄ… wizjÄ™.
+		AI_Output (self, other,"Gur_1208_BaalCadar_KREIS1_Info_02_04"); //Jednak wielu z nich nie chciaÅ‚o zobaczyÄ‡ jego potÄ™gi. Nie chciaÅ‚o uwierzyÄ‡. ZaÅ›lepiaÅ‚a ich chciwoÅ›Ä‡ rudy.
+		AI_Output (self, other,"Gur_1208_BaalCadar_KREIS1_Info_02_05"); //Tylko Y'Berion, wraz z garstkÄ… towarzyszy usÅ‚uchaÅ‚ gÅ‚osu ÅšniÄ…cego. Tak powstaÅ‚o Bractwo.
+		AI_Output (self, other,"Gur_1208_BaalCadar_KREIS1_Info_02_06"); //W chwili, w ktÃ³rej po raz pierwszy wstÄ…pili na Å›cieÅ¼kÄ™ zbawienia, powstaÅ‚ rÃ³wnieÅ¼ Pierwszy KrÄ…g. Magia runiczna staje siÄ™ zrozumiaÅ‚a dla kaÅ¼dego, kto podÄ…Å¼a Å›ladem ÅšniÄ…cego.
 		Gur_1208_BaalCadar_KREIS1.permanent = 0;
 	};
 	AI_StopProcessInfos	( self );
@@ -288,7 +288,7 @@ instance  Gur_1208_BaalCadar_KREIS2 (C_INFO)
 	information		= Gur_1208_BaalCadar_KREIS2_Info;
 	important		= 0;
 	permanent		= 1;
-	description		= "Jestem gotów, by przyst¹piæ do Drugiego Krêgu."; 
+	description		= "Jestem gotÃ³w, by przystÄ…piÄ‡ do Drugiego KrÄ™gu."; 
 };
 
 FUNC int  Gur_1208_BaalCadar_KREIS2_Condition()
@@ -302,14 +302,14 @@ FUNC int  Gur_1208_BaalCadar_KREIS2_Condition()
 };
 FUNC void  Gur_1208_BaalCadar_KREIS2_Info()
 {
-	AI_Output (other, self,"Gur_1208_BaalCadar_KREIS2_Info_15_01"); //Jestem gotów, by przyst¹piæ do Drugiego Krêgu.
+	AI_Output (other, self,"Gur_1208_BaalCadar_KREIS2_Info_15_01"); //Jestem gotÃ³w, by przystÄ…piÄ‡ do Drugiego KrÄ™gu.
 	if (B_GiveSkill(other,NPC_TALENT_MAGE , 2,LPCOST_TALENT_MAGE_2))
 	{
-		AI_Output (self, other,"Gur_1208_BaalCadar_KREIS2_Info_02_02"); //Zatem s³uchaj uwa¿nie:
-		AI_Output (self, other,"Gur_1208_BaalCadar_KREIS2_Info_02_03"); //Œni¹cy wskaza³ Y'Berionowi i jego uczniom miejsce, w którym mieli siê osiedliæ.
-		AI_Output (self, other,"Gur_1208_BaalCadar_KREIS2_Info_02_04"); //Wybrani pracowali bez przerwy, dniem i noc¹, niebaczni na niebezpieczeñstwa i zmêczenie. Co chwila przybywali do nich nowi ludzie, gotowi wys³uchaæ nauk Œni¹cego.
-		AI_Output (self, other,"Gur_1208_BaalCadar_KREIS2_Info_02_05"); //Wspólnie spróbowali przez modlitwê zjednoczyæ siê duchowo ze Œni¹cym.
-		AI_Output (self, other,"Gur_1208_BaalCadar_KREIS2_Info_02_06"); //Narodzi³ siê Drugi Kr¹g.
+		AI_Output (self, other,"Gur_1208_BaalCadar_KREIS2_Info_02_02"); //Zatem sÅ‚uchaj uwaÅ¼nie:
+		AI_Output (self, other,"Gur_1208_BaalCadar_KREIS2_Info_02_03"); //ÅšniÄ…cy wskazaÅ‚ Y'Berionowi i jego uczniom miejsce, w ktÃ³rym mieli siÄ™ osiedliÄ‡.
+		AI_Output (self, other,"Gur_1208_BaalCadar_KREIS2_Info_02_04"); //Wybrani pracowali bez przerwy, dniem i nocÄ…, niebaczni na niebezpieczeÅ„stwa i zmÄ™czenie. Co chwila przybywali do nich nowi ludzie, gotowi wysÅ‚uchaÄ‡ nauk ÅšniÄ…cego.
+		AI_Output (self, other,"Gur_1208_BaalCadar_KREIS2_Info_02_05"); //WspÃ³lnie sprÃ³bowali przez modlitwÄ™ zjednoczyÄ‡ siÄ™ duchowo ze ÅšniÄ…cym.
+		AI_Output (self, other,"Gur_1208_BaalCadar_KREIS2_Info_02_06"); //NarodziÅ‚ siÄ™ Drugi KrÄ…g.
 		Gur_1208_BaalCadar_KREIS2.permanent = 0;
 	};
 	AI_StopProcessInfos	( self );
@@ -325,7 +325,7 @@ instance  Gur_1208_BaalCadar_KREIS3 (C_INFO)
 	information		= Gur_1208_BaalCadar_KREIS3_Info;
 	important		= 0;
 	permanent		= 1;
-	description		= "Jestem gotów, by przyst¹piæ do Trzeciego Krêgu."; 
+	description		= "Jestem gotÃ³w, by przystÄ…piÄ‡ do Trzeciego KrÄ™gu."; 
 };
 
 FUNC int  Gur_1208_BaalCadar_KREIS3_Condition()
@@ -339,14 +339,14 @@ FUNC int  Gur_1208_BaalCadar_KREIS3_Condition()
 };
 FUNC void  Gur_1208_BaalCadar_KREIS3_Info()
 {
-	AI_Output (other, self,"Gur_1208_BaalCadar_KREIS3_Info_15_01"); //Jestem gotów, by przyst¹piæ do Trzeciego Krêgu.
+	AI_Output (other, self,"Gur_1208_BaalCadar_KREIS3_Info_15_01"); //Jestem gotÃ³w, by przystÄ…piÄ‡ do Trzeciego KrÄ™gu.
 	if (B_GiveSkill(other,NPC_TALENT_MAGE , 3, LPCOST_TALENT_MAGE_3))
 	{
-		AI_Output (self, other,"Gur_1208_BaalCadar_KREIS3_Info_02_02"); //Zapamiêtaj sobie:
-		AI_Output (self, other,"Gur_1208_BaalCadar_KREIS3_Info_02_03"); //Zsy³ane przez Œni¹cego wizje by³y co raz wyraŸniejsze, ale Bractwo nie dysponowa³o si³¹ wystarczaj¹c¹ by nawi¹zaæ kontakt.
-		AI_Output (self, other,"Gur_1208_BaalCadar_KREIS3_Info_02_04"); //Jeden z Guru, alchemik, znalaz³ rozwi¹zanie. Przygotowa³ napój sporz¹dzony z wydzieliny z wnêtrznoœci pe³zaczy. Bracia wypili go przed rozpoczêciem mod³ów i ich duchowe si³y zjednoczy³y siê po raz pierwszy.
-		AI_Output (self, other,"Gur_1208_BaalCadar_KREIS3_Info_02_05"); //W tym samym czasie nasi Nowicjusze wyruszyli do innych obozów, by g³osiæ tam nauki Œni¹cego i wyprowadziæ niewiernych z b³êdów pogañstwa.
-		AI_Output (self, other,"Gur_1208_BaalCadar_KREIS3_Info_02_06"); //W ten sposób zamkn¹³ siê Trzeci Kr¹g.
+		AI_Output (self, other,"Gur_1208_BaalCadar_KREIS3_Info_02_02"); //ZapamiÄ™taj sobie:
+		AI_Output (self, other,"Gur_1208_BaalCadar_KREIS3_Info_02_03"); //ZsyÅ‚ane przez ÅšniÄ…cego wizje byÅ‚y co raz wyraÅºniejsze, ale Bractwo nie dysponowaÅ‚o siÅ‚Ä… wystarczajÄ…cÄ… by nawiÄ…zaÄ‡ kontakt.
+		AI_Output (self, other,"Gur_1208_BaalCadar_KREIS3_Info_02_04"); //Jeden z Guru, alchemik, znalazÅ‚ rozwiÄ…zanie. PrzygotowaÅ‚ napÃ³j sporzÄ…dzony z wydzieliny z wnÄ™trznoÅ›ci peÅ‚zaczy. Bracia wypili go przed rozpoczÄ™ciem modÅ‚Ã³w i ich duchowe siÅ‚y zjednoczyÅ‚y siÄ™ po raz pierwszy.
+		AI_Output (self, other,"Gur_1208_BaalCadar_KREIS3_Info_02_05"); //W tym samym czasie nasi Nowicjusze wyruszyli do innych obozÃ³w, by gÅ‚osiÄ‡ tam nauki ÅšniÄ…cego i wyprowadziÄ‡ niewiernych z bÅ‚Ä™dÃ³w pogaÅ„stwa.
+		AI_Output (self, other,"Gur_1208_BaalCadar_KREIS3_Info_02_06"); //W ten sposÃ³b zamknÄ…Å‚ siÄ™ Trzeci KrÄ…g.
 	};
 	AI_StopProcessInfos	( self );
 };
@@ -361,7 +361,7 @@ instance  Gur_1208_BaalCadar_KREIS4 (C_INFO)
 	information		= Gur_1208_BaalCadar_KREIS4_Info;
 	important		= 0;
 	permanent		= 1;
-	description		= "Jestem gotów, by przyst¹piæ do Czwartego Krêgu."; 
+	description		= "Jestem gotÃ³w, by przystÄ…piÄ‡ do Czwartego KrÄ™gu."; 
 };
 
 FUNC int  Gur_1208_BaalCadar_KREIS4_Condition()
@@ -375,14 +375,14 @@ FUNC int  Gur_1208_BaalCadar_KREIS4_Condition()
 };
 FUNC void  Gur_1208_BaalCadar_KREIS4_Info()
 {
-	AI_Output (other, self,"Gur_1208_BaalCadar_KREIS4_Info_15_01"); //Jestem gotów, by przyst¹piæ do Czwartego Krêgu.
+	AI_Output (other, self,"Gur_1208_BaalCadar_KREIS4_Info_15_01"); //Jestem gotÃ³w, by przystÄ…piÄ‡ do Czwartego KrÄ™gu.
 	if (B_GiveSkill(other,NPC_TALENT_MAGE , 4, LPCOST_TALENT_MAGE_4))
 	{
-		AI_Output (self, other,"Gur_1208_BaalCadar_KREIS4_Info_02_02"); //D³ugi czas up³yn¹³ od chwili za³o¿enia Obozu. Wiele siê tutaj zmieni³o.
-		AI_Output (self, other,"Gur_1208_BaalCadar_KREIS4_Info_02_03"); //Nasza wiara umocni³a siê i rozprzestrzeni³a.
-		AI_Output (self, other,"Gur_1208_BaalCadar_KREIS4_Info_02_04"); //I nie zapomnieliœmy o naszym celu. Nie ustaliœmy w naszych wysi³kach, by przyzwaæ Œni¹cego do tego œwiata.
-		AI_Output (self, other,"Gur_1208_BaalCadar_KREIS4_Info_02_05"); //Trwa³oœæ i niezmiennoœæ naszej wiary symbolizuje Czwarty Kr¹g.
-		AI_Output (self, other,"Gur_1208_BaalCadar_KREIS4_Info_02_06"); //Teraz wiesz ju¿ wszystko, co cz³onek Bractwa powinien wiedzieæ o magii. By³eœ pojêtnym uczniem.
+		AI_Output (self, other,"Gur_1208_BaalCadar_KREIS4_Info_02_02"); //DÅ‚ugi czas upÅ‚ynÄ…Å‚ od chwili zaÅ‚oÅ¼enia Obozu. Wiele siÄ™ tutaj zmieniÅ‚o.
+		AI_Output (self, other,"Gur_1208_BaalCadar_KREIS4_Info_02_03"); //Nasza wiara umocniÅ‚a siÄ™ i rozprzestrzeniÅ‚a.
+		AI_Output (self, other,"Gur_1208_BaalCadar_KREIS4_Info_02_04"); //I nie zapomnieliÅ›my o naszym celu. Nie ustaliÅ›my w naszych wysiÅ‚kach, by przyzwaÄ‡ ÅšniÄ…cego do tego Å›wiata.
+		AI_Output (self, other,"Gur_1208_BaalCadar_KREIS4_Info_02_05"); //TrwaÅ‚oÅ›Ä‡ i niezmiennoÅ›Ä‡ naszej wiary symbolizuje Czwarty KrÄ…g.
+		AI_Output (self, other,"Gur_1208_BaalCadar_KREIS4_Info_02_06"); //Teraz wiesz juÅ¼ wszystko, co czÅ‚onek Bractwa powinien wiedzieÄ‡ o magii. ByÅ‚eÅ› pojÄ™tnym uczniem.
 		Gur_1208_BaalCadar_KREIS4.permanent = 0;
 	};
 
@@ -414,10 +414,10 @@ FUNC void  Gur_1208_BaalCadar_SELLSTUFF_Info()
 	if  (log_baalcadarsell == FALSE)
 	{
 		Log_CreateTopic   	(GE_TraderPSI,LOG_NOTE);
-		B_LogEntry			(GE_TraderPSI,"Guru Baal Cadar sprzedaje runy, magiczne zwoje, napoje, amulety i pierœcienie.");
+		B_LogEntry			(GE_TraderPSI,"Guru Baal Cadar sprzedaje runy, magiczne zwoje, napoje, amulety i pierÅ›cienie.");
 		log_baalcadarsell = TRUE;
 	};	
-	AI_Output (other, self,"Gur_1208_BaalCadar_SELLSTUFF_Info_15_01"); //Chcia³bym zdobyæ ksiêgi traktuj¹ce o magii.
+	AI_Output (other, self,"Gur_1208_BaalCadar_SELLSTUFF_Info_15_01"); //ChciaÅ‚bym zdobyÄ‡ ksiÄ™gi traktujÄ…ce o magii.
 
 };  
 

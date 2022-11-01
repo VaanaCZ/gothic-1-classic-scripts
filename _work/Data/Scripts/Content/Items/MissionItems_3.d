@@ -7,11 +7,11 @@
 //#####################################################################
 
 //---------------------------------------------------------------------
-//	1. Pergamenthälfte der Ork-Schriftrolle
+//	1. PergamenthÃ¤lfte der Ork-Schriftrolle
 //---------------------------------------------------------------------
 INSTANCE OrkParchmentOne(C_Item)
 {	
-	name 				=	"Po³owa pergaminu";
+	name 				=	"PoÅ‚owa pergaminu";
 
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION;	
@@ -26,18 +26,18 @@ INSTANCE OrkParchmentOne(C_Item)
 	
 	scemeName			=	"MAP";	
 	description			= name;
-	TEXT[0]				= "Fragment staro¿ytnego pergaminu.";
-	TEXT[1]				= "Dolna po³owa zosta³a oderwana.";
-	TEXT[2]				= "Pismo przypomina runy zdobi¹ce";
-	TEXT[3] 			= "œciany jaskini.";
+	TEXT[0]				= "Fragment staroÅ¼ytnego pergaminu.";
+	TEXT[1]				= "Dolna poÅ‚owa zostaÅ‚a oderwana.";
+	TEXT[2]				= "Pismo przypomina runy zdobiÄ…ce";
+	TEXT[3] 			= "Å›ciany jaskini.";
 };
 
 //---------------------------------------------------------------------
-//	2. Pergamenthälfte der Ork-Schriftrolle
+//	2. PergamenthÃ¤lfte der Ork-Schriftrolle
 //---------------------------------------------------------------------
 INSTANCE OrkParchmentTwo(C_Item)
 {	
-	name 				=	"Po³owa pergaminu";
+	name 				=	"PoÅ‚owa pergaminu";
 
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION;	
@@ -52,14 +52,14 @@ INSTANCE OrkParchmentTwo(C_Item)
 	
 	scemeName			=	"MAP";	
 	description			= name;
-	TEXT[0]				= "Fragment staro¿ytnego pergaminu.";
-	TEXT[1]				= "Górna po³owa zosta³a oderwana.";
-	TEXT[2]				= "Pismo przypomina runy zdobi¹ce";
-	TEXT[3] 			= "œciany jaskini.";
+	TEXT[0]				= "Fragment staroÅ¼ytnego pergaminu.";
+	TEXT[1]				= "GÃ³rna poÅ‚owa zostaÅ‚a oderwana.";
+	TEXT[2]				= "Pismo przypomina runy zdobiÄ…ce";
+	TEXT[3] 			= "Å›ciany jaskini.";
 };
 
 //---------------------------------------------------------------------
-//	Schlüssel zu Kaloms Truhe
+//	SchlÃ¼ssel zu Kaloms Truhe
 //---------------------------------------------------------------------
 INSTANCE ITKE_PSI_KALOM_01(C_Item)
 {	
@@ -73,7 +73,7 @@ INSTANCE ITKE_PSI_KALOM_01(C_Item)
 	visual 				=	"ItKe_Key_04.3ds";
 	material 			=	MAT_METAL;
 	description			= "Klucz do laboratorium.";
-	TEXT[0]				= "Otwiera skrzyniê w laboratorium";
+	TEXT[0]				= "Otwiera skrzyniÄ™ w laboratorium";
 	TEXT[1]				= "alchemicznym w obozie Bractwa.";
 	//TEXT[1]				= "";
 	TEXT[5]				= NAME_Value;
@@ -99,11 +99,11 @@ INSTANCE ItWrFocimap(C_Item)
 	on_state[0]				=	UseFocimap;
 
 	description				= name;
-	TEXT[0]					= "Rogi pentagramu znacz¹";
-	TEXT[1]					= "po³o¿enie wszystkich piêciu";
-	TEXT[2]					= "kamieni ogniskuj¹cych, u¿ytych do";
+	TEXT[0]					= "Rogi pentagramu znaczÄ…";
+	TEXT[1]					= "poÅ‚oÅ¼enie wszystkich piÄ™ciu";
+	TEXT[2]					= "kamieni ogniskujÄ…cych, uÅ¼ytych do";
 	TEXT[3]					= "stworzenia Bariery. Mapa jest bardzo";
-	TEXT[4]					= "stara i kamienie mog³y ju¿ zostaæ";
+	TEXT[4]					= "stara i kamienie mogÅ‚y juÅ¼ zostaÄ‡";
 	TEXT[5]					= "przeniesione w inne miejsce.";
 };
 
@@ -139,9 +139,9 @@ INSTANCE ItWr_Troll_01(C_Item)
 
 	description			=	name;
 	TEXT[1]				=	"Bardzo zniszczona strona.";
-	TEXT[2]				=	"Pismo ledwie mo¿na rozpoznaæ.";
-	TEXT[3]				=	"Poprzedni w³aœciciel by³ najwyraŸniej";
-	TEXT[4]				=	"³owc¹ trolli.";
+	TEXT[2]				=	"Pismo ledwie moÅ¼na rozpoznaÄ‡.";
+	TEXT[3]				=	"Poprzedni wÅ‚aÅ›ciciel byÅ‚ najwyraÅºniej";
+	TEXT[4]				=	"Å‚owcÄ… trolli.";
 };
 
 FUNC VOID UseTroll()
@@ -153,15 +153,15 @@ FUNC VOID UseTroll()
 				Doc_SetPage 	(nDocID,  0, "letters.TGA"  , 0); 
 				Doc_SetMargins	(nDocID, -1, 50, 50, 50, 50, 1);  
 				Doc_SetFont 	(nDocID, -1, "font_15_book.tga");
-				Doc_PrintLine	(nDocID,  0,"Dzieñ 169");
+				Doc_PrintLine	(nDocID,  0,"DzieÅ„ 169");
 				Doc_SetFont 	(nDocID, -1, "font_10_book.tga");
 				Doc_PrintLine	(nDocID,  0, "");
 				Doc_PrintLine	(nDocID,  0, "");
-				Doc_PrintLines	(nDocID,  0,"Dziœ mi siê uda, jestem pewien. Bogowie bêd¹ mi sprzyjali. Wypróbowa³em ju¿ wszystko: najtwardsza stal pêka w zetkniêciu z tward¹ skór¹ trolla, strza³y po prostu odbijaj¹ siê od niego.");
+				Doc_PrintLines	(nDocID,  0,"DziÅ› mi siÄ™ uda, jestem pewien. Bogowie bÄ™dÄ… mi sprzyjali. WyprÃ³bowaÅ‚em juÅ¼ wszystko: najtwardsza stal pÄ™ka w zetkniÄ™ciu z twardÄ… skÃ³rÄ… trolla, strzaÅ‚y po prostu odbijajÄ… siÄ™ od niego.");
 				Doc_PrintLine	(nDocID,  0, "");
-				Doc_PrintLines	(nDocID,  0,"Teraz jednak wykorzystam magiczne zaklêcie, które kupi³em od kupca w Khorinis. Zap³aci³em za nie s³on¹ cenê, ale myœliwskie trofea, które zdobêdê przy jego u¿yciu, odp³ac¹ mi wszystko z nawi¹zk¹.");
+				Doc_PrintLines	(nDocID,  0,"Teraz jednak wykorzystam magiczne zaklÄ™cie, ktÃ³re kupiÅ‚em od kupca w Khorinis. ZapÅ‚aciÅ‚em za nie sÅ‚onÄ… cenÄ™, ale myÅ›liwskie trofea, ktÃ³re zdobÄ™dÄ™ przy jego uÅ¼yciu, odpÅ‚acÄ… mi wszystko z nawiÄ…zkÄ….");
 				Doc_PrintLine	(nDocID,  0, "");
-				Doc_PrintLines	(nDocID,  0,"Dzisiaj zabijê trolla.");
+				Doc_PrintLines	(nDocID,  0,"Dzisiaj zabijÄ™ trolla.");
 				Doc_Show		(nDocID);
 };
 
@@ -170,7 +170,7 @@ FUNC VOID UseTroll()
 //---------------------------------------------------------------------
 INSTANCE Focus_2(C_Item)
 {	
-	name 				=	"Kamieñ z kanionu trolli";
+	name 				=	"KamieÅ„ z kanionu trolli";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MISSION;	
@@ -184,12 +184,12 @@ INSTANCE Focus_2(C_Item)
 	material 			=	MAT_STONE;
 
 	description			=	name;
-	TEXT[1]				=	"Jeden z piêciu artefaktów u¿ytych";
+	TEXT[1]				=	"Jeden z piÄ™ciu artefaktÃ³w uÅ¼ytych";
 	TEXT[2]				=	"przy tworzeniu Bariery.";
 };
 
 //---------------------------------------------------------------------
-//	Truhenschlüssel in der Bergfestung
+//	TruhenschlÃ¼ssel in der Bergfestung
 //---------------------------------------------------------------------
 INSTANCE ItKe_BERG_01(C_Item)
 {	
@@ -203,8 +203,8 @@ INSTANCE ItKe_BERG_01(C_Item)
 	visual 				=	"ItKe_Key_01.3ds";
 	material 			=	MAT_METAL;
 	description			= name;
-	TEXT[0]				= "Opuszczona górska forteca.";
-	TEXT[1]				= "Zardzewia³y klucz do skrzyni.";
+	TEXT[0]				= "Opuszczona gÃ³rska forteca.";
+	TEXT[1]				= "ZardzewiaÅ‚y klucz do skrzyni.";
 	TEXT[2]				= " ";
 	TEXT[5]				= NAME_Value;
 	COUNT[5]			= value;
@@ -227,11 +227,11 @@ INSTANCE ItWr_Urkunde_01(C_Item)
 
 	scemeName		=	"MAP";	
 	on_state[0]		=	UseUrkunde;
-	description		=	"Akt w³asnoœci.";
-	TEXT[0]			=	"Nadaje w³aœcicielowi prawo do";
-	TEXT[1]			=	"ziem, na których le¿y forteca.";
+	description		=	"Akt wÅ‚asnoÅ›ci.";
+	TEXT[0]			=	"Nadaje wÅ‚aÅ›cicielowi prawo do";
+	TEXT[1]			=	"ziem, na ktÃ³rych leÅ¼y forteca.";
 	TEXT[2]			=	" ";
-	TEXT[5]			=	"Wartoœæ                                 400 funtów z³ota";
+	TEXT[5]			=	"WartoÅ›Ä‡                                 400 funtÃ³w zÅ‚ota";
 };
 
 FUNC VOID UseUrkunde()
@@ -247,7 +247,7 @@ FUNC VOID UseUrkunde()
 				Doc_SetFont 	(nDocID, -1, "font_10_book.tga");
 				Doc_PrintLine	(nDocID,  0, "");
 				Doc_PrintLine	(nDocID,  0, "");
-				Doc_PrintLines	(nDocID,  0,"Ja, Bergmar, Burgrabia Zachodnich Terytoriów i sêdzia z nadania mojego Mi³oœciwego Pana, Lorda Tymorisin, terenów wokó³ Khorinis... Niniejszym oœwiadczam, ¿e... przekazujê posiadaczowi tego dokumentu... i domowi Innosa ziemie przynale¿ne tej fortecy wraz z ca³ym lennem i nale¿¹cymi do nich kopalniami za 400 funtów z³ota.");
+				Doc_PrintLines	(nDocID,  0,"Ja, Bergmar, Burgrabia Zachodnich TerytoriÃ³w i sÄ™dzia z nadania mojego MiÅ‚oÅ›ciwego Pana, Lorda Tymorisin, terenÃ³w wokÃ³Å‚ Khorinis... Niniejszym oÅ›wiadczam, Å¼e... przekazujÄ™ posiadaczowi tego dokumentu... i domowi Innosa ziemie przynaleÅ¼ne tej fortecy wraz z caÅ‚ym lennem i naleÅ¼Ä…cymi do nich kopalniami za 400 funtÃ³w zÅ‚ota.");
 				Doc_Show		(nDocID );
 };
 	
@@ -281,7 +281,7 @@ INSTANCE Fakescroll(C_Item)
 //---------------------------------------------------------------------
 INSTANCE Focus_3(C_Item)
 {	
-	name 				=	"Kamieñ z górskiej fortecy";
+	name 				=	"KamieÅ„ z gÃ³rskiej fortecy";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MISSION;	
@@ -295,12 +295,12 @@ INSTANCE Focus_3(C_Item)
 	material 			=	MAT_STONE;
 
 	description			=	name;
-	TEXT[1]				=	"Jeden z piêciu artefaktów u¿ytych";
+	TEXT[1]				=	"Jeden z piÄ™ciu artefaktÃ³w uÅ¼ytych";
 	TEXT[2]				=	"przy tworzeniu Bariery.";
 };
 
 //---------------------------------------------------------------------
-//	Schlüssel zum Bonusraum in der Klosterruine
+//	SchlÃ¼ssel zum Bonusraum in der Klosterruine
 //---------------------------------------------------------------------
 INSTANCE ItKe_Focus4(C_Item)
 {
@@ -324,7 +324,7 @@ INSTANCE ItKe_Focus4(C_Item)
 //---------------------------------------------------------------------
 INSTANCE Focus_4(C_Item)
 {	
-	name 				=	"Kamieñ ze starego klasztoru";
+	name 				=	"KamieÅ„ ze starego klasztoru";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MISSION;	
@@ -337,7 +337,7 @@ INSTANCE Focus_4(C_Item)
 	visual 				=	"ItMi_Focus_01.3ds";
 	material 			=	MAT_STONE;
 	description			=	name;
-	TEXT[1]				=	"Jeden z piêciu artefaktów u¿ytych";
+	TEXT[1]				=	"Jeden z piÄ™ciu artefaktÃ³w uÅ¼ytych";
 	TEXT[2]				=	"przy tworzeniu Bariery.";
 };
 
@@ -346,7 +346,7 @@ INSTANCE Focus_4(C_Item)
 //---------------------------------------------------------------------
 INSTANCE  ItMi_OrcTalisman(C_Item)
 {
-	name 			= "Talizman orków";
+	name 			= "Talizman orkÃ³w";
 
 	mainflag 		= ITEM_KAT_MAGIC;
 	flags 			= ITEM_AMULET|ITEM_MISSION;
@@ -381,7 +381,7 @@ FUNC VOID UnEquip_OrcTalisman()
 
 
 //---------------------------------------------------------------------
-//	Schlüssel unter dem Steinkreis
+//	SchlÃ¼ssel unter dem Steinkreis
 //---------------------------------------------------------------------
 INSTANCE ItKe_Focus5(C_Item)
 {
@@ -397,7 +397,7 @@ INSTANCE ItKe_Focus5(C_Item)
 
 	description			= name;
 	TEXT[1]				= "Ten klucz pochodzi z krypty";
-	TEXT[2]				= "pod kamiennym krêgiem.";
+	TEXT[2]				= "pod kamiennym krÄ™giem.";
 };
 
 //---------------------------------------------------------------------
@@ -405,7 +405,7 @@ INSTANCE ItKe_Focus5(C_Item)
 //---------------------------------------------------------------------
 INSTANCE Focus_5(C_Item)
 {	
-	name 				=	"Kamieñ z kamiennego krêgu";
+	name 				=	"KamieÅ„ z kamiennego krÄ™gu";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MISSION;	
@@ -418,7 +418,7 @@ INSTANCE Focus_5(C_Item)
 	visual 				=	"ItMi_Focus_01.3ds";
 	material 			=	MAT_STONE;
 	description			=	name;
-	TEXT[1]				=	"Jeden z piêciu artefaktów u¿ytych";
+	TEXT[1]				=	"Jeden z piÄ™ciu artefaktÃ³w uÅ¼ytych";
 	TEXT[2]				=	"przy tworzeniu Bariery.";
 };
 

@@ -4,7 +4,7 @@
 
 
 // *************************************************************************
-// 									Vor Gespräch
+// 									Vor GesprÃ¤ch
 // *************************************************************************
 
 INSTANCE Info_SFB_2_Pre(C_INFO)
@@ -23,7 +23,7 @@ FUNC INT Info_SFB_2_Pre_Condition()
 
 FUNC VOID Info_SFB_2_Pre_Info()
 {	
-	AI_Output(self,other,"Info_SFB_2_EinerVonEuchWerden_02_00"); //Czego chcesz? Nie chcê mieæ przez ciebie jakichœ k³opotów.
+	AI_Output(self,other,"Info_SFB_2_EinerVonEuchWerden_02_00"); //Czego chcesz? Nie chcÄ™ mieÄ‡ przez ciebie jakichÅ› kÅ‚opotÃ³w.
 };
 
 // *************************************************************************
@@ -60,7 +60,7 @@ INSTANCE Info_SFB_2_EinerVonEuchWerden (C_INFO)
 	condition	= Info_SFB_2_EinerVonEuchWerden_Condition;
 	information	= Info_SFB_2_EinerVonEuchWerden_Info;
 	permanent	= 1;
-	description = "Co mam zrobiæ, ¿eby do was do³¹czyæ?";
+	description = "Co mam zrobiÄ‡, Å¼eby do was doÅ‚Ä…czyÄ‡?";
 };                       
 
 FUNC INT Info_SFB_2_EinerVonEuchWerden_Condition()
@@ -73,8 +73,8 @@ FUNC INT Info_SFB_2_EinerVonEuchWerden_Condition()
 
 FUNC VOID Info_SFB_2_EinerVonEuchWerden_Info()
 {
-	AI_Output(other,self,"Info_SFB_2_EinerVonEuchWerden_15_00"); //Co mam zrobiæ, ¿eby do was do³¹czyæ?
-	AI_Output(self,other,"Info_SFB_2_EinerVonEuchWerden_02_01"); //Tu ci nie pomogê. Jestem tylko drobn¹ p³otk¹. Porozmawiaj ze Swineyem.
+	AI_Output(other,self,"Info_SFB_2_EinerVonEuchWerden_15_00"); //Co mam zrobiÄ‡, Å¼eby do was doÅ‚Ä…czyÄ‡?
+	AI_Output(self,other,"Info_SFB_2_EinerVonEuchWerden_02_01"); //Tu ci nie pomogÄ™. Jestem tylko drobnÄ… pÅ‚otkÄ…. Porozmawiaj ze Swineyem.
 };
 
 // *************************************************************************
@@ -98,8 +98,8 @@ FUNC INT Info_SFB_2_WichtigePersonen_Condition()
 FUNC VOID Info_SFB_2_WichtigePersonen_Info()
 {
 	AI_Output(other,self,"Info_SFB_2_WichtigePersonen_15_00"); //Kto tu dowodzi?
-	AI_Output(self,other,"Info_SFB_2_WichtigePersonen_02_01"); //Ca³ym Kot³em trzês¹ Najemnicy, ale w Nowym Obozie sprawy maj¹ siê nieco inaczej.
-	AI_Output(self,other,"Info_SFB_2_WichtigePersonen_02_02"); //Dlatego lepiej uwa¿aj, z kim zadzierasz.
+	AI_Output(self,other,"Info_SFB_2_WichtigePersonen_02_01"); //CaÅ‚ym KotÅ‚em trzÄ™sÄ… Najemnicy, ale w Nowym Obozie sprawy majÄ… siÄ™ nieco inaczej.
+	AI_Output(self,other,"Info_SFB_2_WichtigePersonen_02_02"); //Dlatego lepiej uwaÅ¼aj, z kim zadzierasz.
 };
 
 // *************************************************************************
@@ -112,7 +112,7 @@ INSTANCE Info_SFB_2_DasLager(C_INFO)
 	condition	= Info_SFB_2_DasLager_Condition;
 	information	= Info_SFB_2_DasLager_Info;
 	permanent	= 1;
-	description = "Chcia³bym dowiedzieæ siê wiêcej o waszym Obozie.";
+	description = "ChciaÅ‚bym dowiedzieÄ‡ siÄ™ wiÄ™cej o waszym Obozie.";
 };                       
 
 FUNC INT Info_SFB_2_DasLager_Condition()
@@ -122,8 +122,8 @@ FUNC INT Info_SFB_2_DasLager_Condition()
 
 FUNC VOID Info_SFB_2_DasLager_Info()
 {
-	AI_Output(other,self,"Info_SFB_2_DasLager_15_00"); //Chcia³bym dowiedzieæ siê czegoœ wiêcej o waszym Obozie.
-	AI_Output(self,other,"Info_SFB_2_DasLager_02_01"); //Nie wiem, czy mogê ci z tym jakoœ pomóc. Porozmawiaj lepiej ze Swineyem albo z najemnikami.
+	AI_Output(other,self,"Info_SFB_2_DasLager_15_00"); //ChciaÅ‚bym dowiedzieÄ‡ siÄ™ czegoÅ› wiÄ™cej o waszym Obozie.
+	AI_Output(self,other,"Info_SFB_2_DasLager_02_01"); //Nie wiem, czy mogÄ™ ci z tym jakoÅ› pomÃ³c. Porozmawiaj lepiej ze Swineyem albo z najemnikami.
 };
 
 // *************************************************************************
@@ -136,7 +136,7 @@ INSTANCE Info_SFB_2_DieLage(C_INFO)
 	condition	= Info_SFB_2_DieLage_Condition;
 	information	= Info_SFB_2_DieLage_Info;
 	permanent	= 1;
-	description = "Jak wygl¹da ¿ycie tutaj?";
+	description = "Jak wyglÄ…da Å¼ycie tutaj?";
 };                       
 
 FUNC INT Info_SFB_2_DieLage_Condition()
@@ -146,11 +146,11 @@ FUNC INT Info_SFB_2_DieLage_Condition()
 
 FUNC VOID Info_SFB_2_DieLage_Info()
 {
-	AI_Output(other,self,"Info_SFB_2_DieLage_15_00"); //Jak wygl¹da ¿ycie tutaj?
-	AI_Output(self,other,"Info_SFB_2_DieLage_02_01"); //Nie mogê narzekaæ. Ka¿dy musi odpracowaæ swoje i tyle.
-	AI_Output(self,other,"Info_SFB_2_DieLage_02_02"); //Ale i tak jest tu lepiej ni¿ w Starym Obozie.
+	AI_Output(other,self,"Info_SFB_2_DieLage_15_00"); //Jak wyglÄ…da Å¼ycie tutaj?
+	AI_Output(self,other,"Info_SFB_2_DieLage_02_01"); //Nie mogÄ™ narzekaÄ‡. KaÅ¼dy musi odpracowaÄ‡ swoje i tyle.
+	AI_Output(self,other,"Info_SFB_2_DieLage_02_02"); //Ale i tak jest tu lepiej niÅ¼ w Starym Obozie.
 	AI_Output(self,other,"Info_SFB_2_DieLage_02_03"); //Przybywasz ze Starego Obozu?
-	AI_Output(self,other,"Info_SFB_2_DieLage_02_04"); //Jeœli jesteœ ze Starego Obozu, wiedz, ¿e ja nie szukam ¿adnych k³opotów!
+	AI_Output(self,other,"Info_SFB_2_DieLage_02_04"); //JeÅ›li jesteÅ› ze Starego Obozu, wiedz, Å¼e ja nie szukam Å¼adnych kÅ‚opotÃ³w!
 	AI_StopProcessInfos	(self);
 };	
 	

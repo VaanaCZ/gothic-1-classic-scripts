@@ -7,11 +7,11 @@
 //	Uhrzeit:
 //
 //	Es passiert folgendes:
-//	1.	N‰hert sich der Spieler dem Durchgang, so wird er in diesen
+//	1.	N√§hert sich der Spieler dem Durchgang, so wird er in diesen
 //		Dialog gezwungen und einmal gewarnt
-//	2.	N‰hert sich der SC trotzdem weiter, so wird er ein ZWEITES Mal
+//	2.	N√§hert sich der SC trotzdem weiter, so wird er ein ZWEITES Mal
 //		gewarnt (aggressiver mit Waffe ziehen)
-//	3.	N‰hert er sich trotzdem wieder, wird er angegriffen
+//	3.	N√§hert er sich trotzdem wieder, wird er angegriffen
 //////////////////////////////////////////////////////////////////////////
 const string	SLD_732_CHECKPOINT		= "NC_PLACE02";
 
@@ -42,7 +42,7 @@ func void Info_SLD_732_FirstWarn_Info()
 {
 	PrintGlobals	(PD_MISSION);
 
-	AI_Output 		(self, hero,"Info_SLD_732_FirstWarn_08_01"); //STA∆! Nikt nie przejdzie bez podania has≥a.
+	AI_Output 		(self, hero,"Info_SLD_732_FirstWarn_08_01"); //STAƒÜ! Nikt nie przejdzie bez podania has≈Ça.
 
 	hero.aivar[AIV_LASTDISTTOWP] 		= Npc_GetDistToWP(hero,SLD_732_CHECKPOINT);
 	hero.aivar[AIV_GUARDPASSAGE_STATUS]	= AIV_GPS_FIRSTWARN;	
@@ -50,11 +50,11 @@ func void Info_SLD_732_FirstWarn_Info()
 	if (Npc_KnowsInfo(hero, Info_Cronos_SLEEPER))
 	{
 		Info_Clearchoices 	(Info_SLD_732_FirstWarn);
-		Info_Addchoice 		(Info_SLD_732_FirstWarn,"Cronos udzieli≥ mi pozwolenia!",	Info_SLD_732_Parole_CRONOS);  
-		Info_Addchoice 		(Info_SLD_732_FirstWarn,"Cholera. Chyba zapomnia≥em...",	Info_SLD_732_Parole_FORGOT);  
-		Info_Addchoice 		(Info_SLD_732_FirstWarn,"Has≥o brzmi TERIANTROCH.",	Info_SLD_732_Parole_FALSE2);  
-		Info_Addchoice 		(Info_SLD_732_FirstWarn,"Has≥o brzmi TETRIANDOCH.",	Info_SLD_732_Parole_TRUE);  
-		Info_Addchoice 		(Info_SLD_732_FirstWarn,"Has≥o brzmi TETRIDANOCH.",	Info_SLD_732_Parole_FALSE1);  
+		Info_Addchoice 		(Info_SLD_732_FirstWarn,"Cronos udzieli≈Ç mi pozwolenia!",	Info_SLD_732_Parole_CRONOS);  
+		Info_Addchoice 		(Info_SLD_732_FirstWarn,"Cholera. Chyba zapomnia≈Çem...",	Info_SLD_732_Parole_FORGOT);  
+		Info_Addchoice 		(Info_SLD_732_FirstWarn,"Has≈Ço brzmi TERIANTROCH.",	Info_SLD_732_Parole_FALSE2);  
+		Info_Addchoice 		(Info_SLD_732_FirstWarn,"Has≈Ço brzmi TETRIANDOCH.",	Info_SLD_732_Parole_TRUE);  
+		Info_Addchoice 		(Info_SLD_732_FirstWarn,"Has≈Ço brzmi TETRIDANOCH.",	Info_SLD_732_Parole_FALSE1);  
 	}
 	else
 	{
@@ -64,36 +64,36 @@ func void Info_SLD_732_FirstWarn_Info()
 
 func void Info_SLD_732_Parole_CRONOS ()
 {
-	AI_Output 			(hero, self,"Info_SLD_732_Parole_CRONOS_15_01"); //Cronos udzieli≥ mi pozwolenia!
-	AI_Output 			(self, hero,"Info_SLD_732_Parole_CRONOS_08_02"); //W takim wypadku poda≥by ci rÛwnieø has≥o. Zejdü mi z oczu, k≥amco.
+	AI_Output 			(hero, self,"Info_SLD_732_Parole_CRONOS_15_01"); //Cronos udzieli≈Ç mi pozwolenia!
+	AI_Output 			(self, hero,"Info_SLD_732_Parole_CRONOS_08_02"); //W takim wypadku poda≈Çby ci r√≥wnie≈º has≈Ço. Zejd≈∫ mi z oczu, k≈Çamco.
 	AI_StopProcessInfos	(self);
 };
 
 func void Info_SLD_732_Parole_FORGOT ()
 {
-	AI_Output 			(hero, self,"Info_SLD_732_Parole_FORGOT_15_01"); //Cholera. Chyba zapomnia≥em...
-	AI_Output 			(self, hero,"Info_SLD_732_Parole_FORGOT_08_02"); //To wrÛÊ, jak tylko sobie przypomnisz i przestaÒ zawracaÊ mi g≥owÍ!
+	AI_Output 			(hero, self,"Info_SLD_732_Parole_FORGOT_15_01"); //Cholera. Chyba zapomnia≈Çem...
+	AI_Output 			(self, hero,"Info_SLD_732_Parole_FORGOT_08_02"); //To wr√≥ƒá, jak tylko sobie przypomnisz i przesta≈Ñ zawracaƒá mi g≈Çowƒô!
 	AI_StopProcessInfos	(self);
 };
 
 func void Info_SLD_732_Parole_FALSE1 ()
 {
-	AI_Output 			(hero, self,"Info_SLD_732_Parole_FALSE1_15_01"); //Has≥o brzmi TETRIDANOCH.
-	AI_Output 			(self, hero,"Info_SLD_732_Parole_FALSE1_08_02"); //B£•D!
+	AI_Output 			(hero, self,"Info_SLD_732_Parole_FALSE1_15_01"); //Has≈Ço brzmi TETRIDANOCH.
+	AI_Output 			(self, hero,"Info_SLD_732_Parole_FALSE1_08_02"); //B≈ÅƒÑD!
 	AI_StopProcessInfos	(self);
 };
 
 func void Info_SLD_732_Parole_FALSE2 ()
 {
-	AI_Output 			(hero, self,"Info_SLD_732_Parole_FALSE2_15_01"); //Has≥o brzmi TERIANTROCH.
-	AI_Output 			(self, hero,"Info_SLD_732_Parole_FALSE2_08_02"); //B£•D!
+	AI_Output 			(hero, self,"Info_SLD_732_Parole_FALSE2_15_01"); //Has≈Ço brzmi TERIANTROCH.
+	AI_Output 			(self, hero,"Info_SLD_732_Parole_FALSE2_08_02"); //B≈ÅƒÑD!
 	AI_StopProcessInfos	(self);
 };
 
 func void Info_SLD_732_Parole_TRUE ()
 {
-	AI_Output 			(hero, self,"Info_SLD_732_Parole_TRUE_15_01"); //Has≥o brzmi TETRIANDOCH.
-	AI_Output 			(self, hero,"Info_SLD_732_Parole_TRUE_08_02"); //Zgadza siÍ. Moøesz przejúÊ.
+	AI_Output 			(hero, self,"Info_SLD_732_Parole_TRUE_15_01"); //Has≈Ço brzmi TETRIANDOCH.
+	AI_Output 			(self, hero,"Info_SLD_732_Parole_TRUE_08_02"); //Zgadza siƒô. Mo≈ºesz przej≈õƒá.
 	AI_StopProcessInfos	(self);
 
 	//---- beide Wachen auf passieren schalten ----
@@ -132,7 +132,7 @@ func int Info_SLD_732_LastWarn_Condition()
 
 func int Info_SLD_732_LastWarn_Info()
 {
-	AI_Output 		(self, hero,"Info_SLD_732_LastWarn_08_01"); 		//Nie bÍdÍ siÍ powtarza≥. ANI KROKU DALEJ!
+	AI_Output 		(self, hero,"Info_SLD_732_LastWarn_08_01"); 		//Nie bƒôdƒô siƒô powtarza≈Ç. ANI KROKU DALEJ!
 
 	hero.aivar[AIV_LASTDISTTOWP] 		= Npc_GetDistToWP(hero,SLD_732_CHECKPOINT);
 	hero.aivar[AIV_GUARDPASSAGE_STATUS]	= AIV_GPS_LASTWARN;
@@ -171,7 +171,7 @@ func int Info_SLD_732_Attack_Info()
 	hero.aivar[AIV_GUARDPASSAGE_STATUS]	= AIV_GPS_PUNISH;	
 	
 	B_FullStop			(self);	
-	AI_StopProcessInfos	(self);					// dem Spieler sofort wieder die Kontrolle zur¸ckgeben
+	AI_StopProcessInfos	(self);					// dem Spieler sofort wieder die Kontrolle zur√ºckgeben
 	B_IntruderAlert		(self,	other);
 	B_SetAttackReason	(self,	AIV_AR_INTRUDER);
 	Npc_SetTarget		(self,	hero);
@@ -189,7 +189,7 @@ instance Info_SLD_732_PAROLE (C_INFO)
 	information	= Info_SLD_732_PAROLE_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "(podaj has≥o)";
+	description	= "(podaj has≈Ço)";
 };                       
 
 func int Info_SLD_732_PAROLE_Condition()
@@ -204,9 +204,9 @@ func int Info_SLD_732_PAROLE_Condition()
 func int Info_SLD_732_PAROLE_Info()
 {
 	Info_ClearChoices 	(Info_SLD_732_PAROLE);
-	Info_AddChoice 		(Info_SLD_732_PAROLE,"Cronos udzieli≥ mi pozwolenia!",	Info_SLD_732_Parole_CRONOS);  
-	Info_AddChoice 		(Info_SLD_732_PAROLE,"Cholera. Chyba zapomnia≥em...",	Info_SLD_732_Parole_FORGOT);  
-	Info_AddChoice 		(Info_SLD_732_PAROLE,"Has≥o brzmi TERIANTROCH.",	Info_SLD_732_Parole_FALSE2);  
-	Info_AddChoice 		(Info_SLD_732_PAROLE,"Has≥o brzmi TETRIANDOCH.",	Info_SLD_732_Parole_TRUE);  
-	Info_AddChoice 		(Info_SLD_732_PAROLE,"Has≥o brzmi TETRIDANOCH.",	Info_SLD_732_Parole_FALSE1);  
+	Info_AddChoice 		(Info_SLD_732_PAROLE,"Cronos udzieli≈Ç mi pozwolenia!",	Info_SLD_732_Parole_CRONOS);  
+	Info_AddChoice 		(Info_SLD_732_PAROLE,"Cholera. Chyba zapomnia≈Çem...",	Info_SLD_732_Parole_FORGOT);  
+	Info_AddChoice 		(Info_SLD_732_PAROLE,"Has≈Ço brzmi TERIANTROCH.",	Info_SLD_732_Parole_FALSE2);  
+	Info_AddChoice 		(Info_SLD_732_PAROLE,"Has≈Ço brzmi TETRIANDOCH.",	Info_SLD_732_Parole_TRUE);  
+	Info_AddChoice 		(Info_SLD_732_PAROLE,"Has≈Ço brzmi TETRIDANOCH.",	Info_SLD_732_Parole_FALSE1);  
 };

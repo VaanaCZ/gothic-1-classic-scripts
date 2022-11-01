@@ -44,7 +44,7 @@ FUNC int DIA_Vlk_520_LeaveMe_Condition()
 FUNC VOID DIA_Vlk_520_LeaveMe_Info()
 {
 	AI_Output (other, self,"DIA_Vlk_520_LeaveMe_15_00"); //Co tu robisz?
-	AI_Output (self, other,"DIA_Vlk_520_LeaveMe_01_01"); //Szukam ciszy i spokoju, wiêc spadaj st¹d!
+	AI_Output (self, other,"DIA_Vlk_520_LeaveMe_01_01"); //Szukam ciszy i spokoju, wiÄ™c spadaj stÄ…d!
 
 	AI_StopProcessInfos	(self);
 };

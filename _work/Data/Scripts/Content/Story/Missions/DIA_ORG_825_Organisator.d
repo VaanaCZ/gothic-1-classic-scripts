@@ -44,6 +44,6 @@ FUNC int  Org_825_Organisator_PERM_Condition()
 FUNC VOID  Org_825_Organisator_PERM_Info()
 {
 	AI_Output (other, self,"Org_825_Organisator_PERM_15_00"); //Czego tu pilnujecie?
-	AI_Output (self, other,"Org_825_Organisator_PERM_07_01"); //Pilnujemy, ¿eby ¿aden z ludzi Lee ani Gomeza nie zbli¿a³ siê do Laresa.
+	AI_Output (self, other,"Org_825_Organisator_PERM_07_01"); //Pilnujemy, Å¼eby Å¼aden z ludzi Lee ani Gomeza nie zbliÅ¼aÅ‚ siÄ™ do Laresa.
 	AI_StopProcessInfos	(self);
 };

@@ -55,17 +55,17 @@ FUNC INT DIA_Mud_FirstEXIT_Condition()
 
 FUNC VOID DIA_Mud_FirstEXIT_Info()
 {
-	AI_Output (self, other,"DIA_Mud_FirstEXIT_07_00"); //Hej, kolego! Nowy? Chyba ciê jeszcze tu nie widzia³em.
-	AI_Output (self, other,"DIA_Mud_FirstEXIT_07_01"); //Przy³¹czê siê do ciebie na chwilê, jeœli nie masz nic przeciwko. Przyda ci siê przyjaciel...
+	AI_Output (self, other,"DIA_Mud_FirstEXIT_07_00"); //Hej, kolego! Nowy? Chyba ciÄ™ jeszcze tu nie widziaÅ‚em.
+	AI_Output (self, other,"DIA_Mud_FirstEXIT_07_01"); //PrzyÅ‚Ä…czÄ™ siÄ™ do ciebie na chwilÄ™, jeÅ›li nie masz nic przeciwko. Przyda ci siÄ™ przyjaciel...
 	Info_ClearChoices(DIA_Mud_FirstEXIT);
 	Info_AddChoice	 (DIA_Mud_FirstEXIT,"Spadaj!",DIA_Mud_FirstEXIT_Verpiss);
-	Info_AddChoice	 (DIA_Mud_FirstEXIT,"Czemu nie? ChodŸmy!",DIA_Mud_FirstEXIT_Komm);
+	Info_AddChoice	 (DIA_Mud_FirstEXIT,"Czemu nie? ChodÅºmy!",DIA_Mud_FirstEXIT_Komm);
 };
 
 func void DIA_Mud_FirstEXIT_Verpiss()
 {
 	AI_Output (other, self,"DIA_Mud_FirstEXIT_Verpiss_15_00"); //Spadaj!
-	AI_Output (self, other,"DIA_Mud_FirstEXIT_Verpiss_07_01"); //Oho, nie jesteœmy w humorze, co? Lepiej bêdzie jak pójdê z tob¹!
+	AI_Output (self, other,"DIA_Mud_FirstEXIT_Verpiss_07_01"); //Oho, nie jesteÅ›my w humorze, co? Lepiej bÄ™dzie jak pÃ³jdÄ™ z tobÄ…!
 	Info_ClearChoices(DIA_Mud_FirstEXIT);
 	AI_StopProcessInfos	( self );
 	Npc_ExchangeRoutine (self,"FOLLOW");
@@ -73,8 +73,8 @@ func void DIA_Mud_FirstEXIT_Verpiss()
 
 func void DIA_Mud_FirstEXIT_Komm()
 {
-	AI_Output (other, self,"DIA_Mud_FirstEXIT_Komm_15_00"); //Czemu nie? ChodŸmy!
-	AI_Output (self, other,"DIA_Mud_FirstEXIT_Komm_07_01"); //Œwietnie. Po drodze mo¿emy sobie trochê porozmawiaæ.
+	AI_Output (other, self,"DIA_Mud_FirstEXIT_Komm_15_00"); //Czemu nie? ChodÅºmy!
+	AI_Output (self, other,"DIA_Mud_FirstEXIT_Komm_07_01"); //Åšwietnie. Po drodze moÅ¼emy sobie trochÄ™ porozmawiaÄ‡.
 	Info_ClearChoices(DIA_Mud_FirstEXIT);
 	AI_StopProcessInfos	( self );
 	Npc_ExchangeRoutine (self,"FOLLOW");
@@ -91,7 +91,7 @@ INSTANCE DIA_Mud_ShutUp (C_INFO)
 	condition	= DIA_Mud_ShutUp_Condition;
 	information	= DIA_Mud_ShutUp_Info;
 	permanent	= 1;
-	description	= "Mo¿esz siê zamkn¹æ choæ na chwilê?";
+	description	= "MoÅ¼esz siÄ™ zamknÄ…Ä‡ choÄ‡ na chwilÄ™?";
 };                       
 
 FUNC INT DIA_Mud_ShutUp_Condition()
@@ -105,13 +105,13 @@ FUNC INT DIA_Mud_ShutUp_Condition()
 
 FUNC VOID DIA_Mud_ShutUp_Info()
 {
-	AI_Output (other, self,"DIA_Mud_ShutUp_15_00"); //Mo¿esz siê zamkn¹æ choæ na chwilê?
+	AI_Output (other, self,"DIA_Mud_ShutUp_15_00"); //MoÅ¼esz siÄ™ zamknÄ…Ä‡ choÄ‡ na chwilÄ™?
 	AI_Output (self, other,"DIA_Mud_ShutUp_07_01"); //Jasne.
 	Npc_SetRefuseTalk(self, 300);
 };
 
 // **************************************************
-// 					Verpiß dich
+// 					VerpiÃŸ dich
 // **************************************************
 
 INSTANCE DIA_Mud_GetLost (C_INFO)
@@ -132,7 +132,7 @@ FUNC INT DIA_Mud_GetLost_Condition()
 FUNC VOID DIA_Mud_GetLost_Info()
 {
 	AI_Output (other, self,"DIA_Mud_GetLost_15_00"); //Spadaj!
-	AI_Output (self, other,"DIA_Mud_GetLost_07_01"); //Chcesz byæ przez chwilê sam, tak? Rozumiem... Bêdê siê trzyma³ na uboczu.
+	AI_Output (self, other,"DIA_Mud_GetLost_07_01"); //Chcesz byÄ‡ przez chwilÄ™ sam, tak? Rozumiem... BÄ™dÄ™ siÄ™ trzymaÅ‚ na uboczu.
 };
 
 // **************************************************
@@ -159,9 +159,9 @@ FUNC INT DIA_Mud_Defeated_Condition()
 
 FUNC VOID DIA_Mud_Defeated_Info()
 {
-	AI_Output (self, other,"DIA_Mud_GetLost_07_00"); //Hej, stary! Czemu mnie bijesz? Co ci takiego zrobi³em?
-	AI_Output (other, self,"DIA_Mud_GetLost_15_01"); //Za chwilê znowu ci przy³o¿ê! Bardzo lubiê to robiæ!
-	AI_Output (self, other,"DIA_Mud_GetLost_07_02"); //Jakiœ œwir z ciebie, czy co? Nie chcê mieæ z tob¹ nic wspólnego!
+	AI_Output (self, other,"DIA_Mud_GetLost_07_00"); //Hej, stary! Czemu mnie bijesz? Co ci takiego zrobiÅ‚em?
+	AI_Output (other, self,"DIA_Mud_GetLost_15_01"); //Za chwilÄ™ znowu ci przyÅ‚oÅ¼Ä™! Bardzo lubiÄ™ to robiÄ‡!
+	AI_Output (self, other,"DIA_Mud_GetLost_07_02"); //JakiÅ› Å›wir z ciebie, czy co? Nie chcÄ™ mieÄ‡ z tobÄ… nic wspÃ³lnego!
 	
 	AI_StopProcessInfos	(self);
 	Npc_ExchangeRoutine(self,"START");
@@ -188,7 +188,7 @@ FUNC INT DIA_Mud_Nerve_0_Condition()
 
 FUNC VOID DIA_Mud_Nerve_0_Info()
 {
-	AI_Output (self, other,"DIA_Mud_Nerve_0_07_00"); //Powiedz, dok¹d idziemy? A mo¿e to niespodzianka?! Uwielbiam niespodzianki!
+	AI_Output (self, other,"DIA_Mud_Nerve_0_07_00"); //Powiedz, dokÄ…d idziemy? A moÅ¼e to niespodzianka?! Uwielbiam niespodzianki!
 	Npc_SetRefuseTalk(self, NerveSec);
 	Mud_Nerve = 1;
 	AI_StopProcessInfos	( self );
@@ -215,7 +215,7 @@ FUNC INT DIA_Mud_Nerve_1_Condition()
 
 FUNC VOID DIA_Mud_Nerve_1_Info()
 {
-	AI_Output (self, other,"DIA_Mud_Nerve_1_07_00"); //Nie zwracaj na mnie uwagi. Bêdê siê trzyma³ ciebie, spokojna g³owa.
+	AI_Output (self, other,"DIA_Mud_Nerve_1_07_00"); //Nie zwracaj na mnie uwagi. BÄ™dÄ™ siÄ™ trzymaÅ‚ ciebie, spokojna gÅ‚owa.
 	Npc_SetRefuseTalk(self, NerveSec);
 	Mud_Nerve = 2;
 	Mud_NerveRealized = TRUE;
@@ -243,7 +243,7 @@ FUNC INT DIA_Mud_Nerve_2_Condition()
 
 FUNC VOID DIA_Mud_Nerve_2_Info()
 {
-	AI_Output (self, other,"DIA_Mud_Nerve_2_07_00"); //Zdecydowa³eœ siê wreszcie dok¹d chcesz iœæ?
+	AI_Output (self, other,"DIA_Mud_Nerve_2_07_00"); //ZdecydowaÅ‚eÅ› siÄ™ wreszcie dokÄ…d chcesz iÅ›Ä‡?
 	Npc_SetRefuseTalk(self, NerveSec);
 	Mud_Nerve = 3;
 	AI_StopProcessInfos	( self );
@@ -270,7 +270,7 @@ FUNC INT DIA_Mud_Nerve_3_Condition()
 
 FUNC VOID DIA_Mud_Nerve_3_Info()
 {
-	AI_Output (self, other,"DIA_Mud_Nerve_3_07_00"); //Mo¿e szukasz jakiegoœ spokojnego miejsca, gdzie moglibyœmy pogadaæ?
+	AI_Output (self, other,"DIA_Mud_Nerve_3_07_00"); //MoÅ¼e szukasz jakiegoÅ› spokojnego miejsca, gdzie moglibyÅ›my pogadaÄ‡?
 	Npc_SetRefuseTalk(self, NerveSec);
 	Mud_Nerve = 4;
 	AI_StopProcessInfos	( self );
@@ -297,7 +297,7 @@ FUNC INT DIA_Mud_Nerve_4_Condition()
 
 FUNC VOID DIA_Mud_Nerve_4_Info()
 {
-	AI_Output (self, other,"DIA_Mud_Nerve_4_07_00"); //Czy to mo¿liwe, ¿e chodzimy w kó³ko... To znaczy, nie wiem dok¹d chcesz iœæ, ale...
+	AI_Output (self, other,"DIA_Mud_Nerve_4_07_00"); //Czy to moÅ¼liwe, Å¼e chodzimy w kÃ³Å‚ko... To znaczy, nie wiem dokÄ…d chcesz iÅ›Ä‡, ale...
 	Npc_SetRefuseTalk(self, NerveSec);
 	Mud_Nerve = 5;
 	AI_StopProcessInfos	( self );
@@ -324,7 +324,7 @@ FUNC INT DIA_Mud_Nerve_5_Condition()
 
 FUNC VOID DIA_Mud_Nerve_5_Info()
 {
-	AI_Output (self, other,"DIA_Mud_Nerve_5_07_00"); //Ale fajnie! Dziêki, ¿e zabra³eœ mnie ze sob¹! Moglibyœmy robiæ to czêœciej. Nie mam nic do roboty przez wiêkszoœæ dnia!
+	AI_Output (self, other,"DIA_Mud_Nerve_5_07_00"); //Ale fajnie! DziÄ™ki, Å¼e zabraÅ‚eÅ› mnie ze sobÄ…! MoglibyÅ›my robiÄ‡ to czÄ™Å›ciej. Nie mam nic do roboty przez wiÄ™kszoÅ›Ä‡ dnia!
 	Npc_SetRefuseTalk(self, NerveSec);
 	Mud_Nerve = 6;
 	AI_StopProcessInfos	( self );
@@ -351,7 +351,7 @@ FUNC INT DIA_Mud_Nerve_6_Condition()
 
 FUNC VOID DIA_Mud_Nerve_6_Info()
 {
-	AI_Output (self, other,"DIA_Mud_Nerve_6_07_00"); //Wiesz co? Ju¿ ciê polubi³em! Prze¿yjemy wspólnie wiele ciekawych przygód! Co nie?! Gdzie nocujesz? Jakbyœ chcia³, mo¿esz przenocowaæ u mnie!
+	AI_Output (self, other,"DIA_Mud_Nerve_6_07_00"); //Wiesz co? JuÅ¼ ciÄ™ polubiÅ‚em! PrzeÅ¼yjemy wspÃ³lnie wiele ciekawych przygÃ³d! Co nie?! Gdzie nocujesz? JakbyÅ› chciaÅ‚, moÅ¼esz przenocowaÄ‡ u mnie!
 	Npc_SetRefuseTalk(self, NerveSec);
 	Mud_Nerve = 7;
 	AI_StopProcessInfos	( self );
@@ -378,7 +378,7 @@ FUNC INT DIA_Mud_Nerve_7_Condition()
 
 FUNC VOID DIA_Mud_Nerve_7_Info()
 {
-	AI_Output (self, other,"DIA_Mud_Nerve_7_07_00"); //A tak w ogóle, to za co tutaj trafi³eœ? Ty te¿ za bardzo lubisz zwierzêta? Oni krzywo na to patrz¹, wiesz? W³aœnie tak tutaj wyl¹dowa³em.
+	AI_Output (self, other,"DIA_Mud_Nerve_7_07_00"); //A tak w ogÃ³le, to za co tutaj trafiÅ‚eÅ›? Ty teÅ¼ za bardzo lubisz zwierzÄ™ta? Oni krzywo na to patrzÄ…, wiesz? WÅ‚aÅ›nie tak tutaj wylÄ…dowaÅ‚em.
 	Npc_SetRefuseTalk(self, NerveSec);
 	Mud_Nerve = 8;
 	AI_StopProcessInfos	( self );
@@ -406,7 +406,7 @@ FUNC INT DIA_Mud_Nerve_8_Condition()
 
 FUNC VOID DIA_Mud_Nerve_8_Info()
 {
-	AI_Output (self, other,"DIA_Mud_Nerve_8_07_00"); //Kilku facetów bez przerwy próbuje mnie pobiæ. Paskudni ludzie z Nowego Obozu! Bandziory jedne! Nastêpnym razem powiem im, ¿e kto ze mn¹ zadziera, bêdzie mia³ z tob¹ do czynienia! To ich nauczy!
+	AI_Output (self, other,"DIA_Mud_Nerve_8_07_00"); //Kilku facetÃ³w bez przerwy prÃ³buje mnie pobiÄ‡. Paskudni ludzie z Nowego Obozu! Bandziory jedne! NastÄ™pnym razem powiem im, Å¼e kto ze mnÄ… zadziera, bÄ™dzie miaÅ‚ z tobÄ… do czynienia! To ich nauczy!
 	Npc_SetRefuseTalk(self, NerveSec);
 	Mud_Nerve = 9;
 	AI_StopProcessInfos	( self );
@@ -433,7 +433,7 @@ FUNC INT DIA_Mud_Nerve_9_Condition()
 
 FUNC VOID DIA_Mud_Nerve_9_Info()
 {
-	AI_Output (self, other,"DIA_Mud_Nerve_9_07_00"); //Ale siê zdziwi¹ ci z Nowego Obozu, jak im powiem jakiego mam obroñcê! Posikaj¹ siê ze strachu! Ale bêdzie fajnie. Normalnie zabijaj¹ ludzi bez mrugniêcia okiem, ale teraz bêd¹ musieli dobrze siê zastanowiæ.
+	AI_Output (self, other,"DIA_Mud_Nerve_9_07_00"); //Ale siÄ™ zdziwiÄ… ci z Nowego Obozu, jak im powiem jakiego mam obroÅ„cÄ™! PosikajÄ… siÄ™ ze strachu! Ale bÄ™dzie fajnie. Normalnie zabijajÄ… ludzi bez mrugniÄ™cia okiem, ale teraz bÄ™dÄ… musieli dobrze siÄ™ zastanowiÄ‡.
 	Npc_SetRefuseTalk(self, NerveSec);
 	Mud_Nerve = 10;
 	AI_StopProcessInfos	( self );
@@ -460,7 +460,7 @@ FUNC INT DIA_Mud_Nerve_10_Condition()
 
 FUNC VOID DIA_Mud_Nerve_10_Info()
 {
-	AI_Output (self, other,"DIA_Mud_Nerve_10_07_00"); //Wiesz co? Wyœwiadczê ci przys³ugê. Wstawiê siê za tob¹. Mo¿e wtedy zostaniesz przyjêty do Obozu. W ten sposób moglibyœmy spotykaæ siê codziennie.
+	AI_Output (self, other,"DIA_Mud_Nerve_10_07_00"); //Wiesz co? WyÅ›wiadczÄ™ ci przysÅ‚ugÄ™. WstawiÄ™ siÄ™ za tobÄ…. MoÅ¼e wtedy zostaniesz przyjÄ™ty do Obozu. W ten sposÃ³b moglibyÅ›my spotykaÄ‡ siÄ™ codziennie.
 	Npc_SetRefuseTalk(self, NerveSec);
 	Mud_Nerve = 11;
 	AI_StopProcessInfos	( self );
@@ -487,7 +487,7 @@ FUNC INT DIA_Mud_Nerve_11_Condition()
 
 FUNC VOID DIA_Mud_Nerve_11_Info()
 {
-	AI_Output (self, other,"DIA_Mud_Nerve_11_07_00"); //Niektórzy tutaj maj¹ mnie za jakiegoœ wariata. Ale przecie¿ ktoœ taki jak ty nie zadawa³by siê z wariatem, prawda? Teraz wszyscy zrozumiej¹ jak niesprawiedliwie mnie ocenili.
+	AI_Output (self, other,"DIA_Mud_Nerve_11_07_00"); //NiektÃ³rzy tutaj majÄ… mnie za jakiegoÅ› wariata. Ale przecieÅ¼ ktoÅ› taki jak ty nie zadawaÅ‚by siÄ™ z wariatem, prawda? Teraz wszyscy zrozumiejÄ… jak niesprawiedliwie mnie ocenili.
 	Npc_SetRefuseTalk(self, NerveSec);
 	Mud_Nerve = 12;
 	AI_StopProcessInfos	( self );
@@ -514,7 +514,7 @@ FUNC INT DIA_Mud_Nerve_12_Condition()
 
 FUNC VOID DIA_Mud_Nerve_12_Info()
 {
-	AI_Output (self, other,"DIA_Mud_Nerve_12_07_00"); //Jestem moim najlepszym kumplem, wiesz? Inni tylko próbuj¹ siê mnie pozbyæ. Jestem ci bardzo wdziêczny, naprawdê!
+	AI_Output (self, other,"DIA_Mud_Nerve_12_07_00"); //Jestem moim najlepszym kumplem, wiesz? Inni tylko prÃ³bujÄ… siÄ™ mnie pozbyÄ‡. Jestem ci bardzo wdziÄ™czny, naprawdÄ™!
 	Npc_SetRefuseTalk(self, NerveSec);
 	Mud_Nerve = 13;
 	AI_StopProcessInfos	( self );
@@ -541,7 +541,7 @@ FUNC INT DIA_Mud_Nerve_13_Condition()
 
 FUNC VOID DIA_Mud_Nerve_13_Info()
 {
-	AI_Output (self, other,"DIA_Mud_Nerve_13_07_00"); //S³uchaj, ca³e to bieganie zaczyna mnie mêczyæ. Mo¿e poszukamy sobie jakiegoœ przytulnego gniazdka i chwilê odpoczniemy, co?
+	AI_Output (self, other,"DIA_Mud_Nerve_13_07_00"); //SÅ‚uchaj, caÅ‚e to bieganie zaczyna mnie mÄ™czyÄ‡. MoÅ¼e poszukamy sobie jakiegoÅ› przytulnego gniazdka i chwilÄ™ odpoczniemy, co?
 	Npc_SetRefuseTalk(self, NerveSec);
 	Mud_Nerve = 14;
 	AI_StopProcessInfos	( self );
@@ -568,7 +568,7 @@ FUNC INT DIA_Mud_Nerve_14_Condition()
 
 FUNC VOID DIA_Mud_Nerve_14_Info()
 {
-	AI_Output (self, other,"DIA_Mud_Nerve_14_07_00"); //Jesteœ dla mnie jak starszy brat. Nigdy nie mia³em starszego brata... Ani nawet m³odszego! Moi rodzice mnie nie kochali, ale to musia³o byæ dla nich bardzo trudne.
+	AI_Output (self, other,"DIA_Mud_Nerve_14_07_00"); //JesteÅ› dla mnie jak starszy brat. Nigdy nie miaÅ‚em starszego brata... Ani nawet mÅ‚odszego! Moi rodzice mnie nie kochali, ale to musiaÅ‚o byÄ‡ dla nich bardzo trudne.
 	AI_Output (other, self,"DIA_Mud_Nerve_14_15_01"); //Jaaasne.
 	Npc_SetRefuseTalk(self, NerveSec);
 	Mud_Nerve = 15;
@@ -596,7 +596,7 @@ FUNC INT DIA_Mud_Nerve_15_Condition()
 
 FUNC VOID DIA_Mud_Nerve_15_Info()
 {
-	AI_Output (self, other,"DIA_Mud_Nerve_15_07_00"); //Sk¹d jesteœ? Na pewno cieszysz siê, ¿e znalaz³eœ tu bratni¹ duszê, kogoœ, kto ciê zrozumie. Jestem z Khorinis. By³eœ tam kiedyœ? Zreszt¹ - niewa¿ne.
+	AI_Output (self, other,"DIA_Mud_Nerve_15_07_00"); //SkÄ…d jesteÅ›? Na pewno cieszysz siÄ™, Å¼e znalazÅ‚eÅ› tu bratniÄ… duszÄ™, kogoÅ›, kto ciÄ™ zrozumie. Jestem z Khorinis. ByÅ‚eÅ› tam kiedyÅ›? ZresztÄ… - niewaÅ¼ne.
 	Npc_SetRefuseTalk(self, NerveSec);
 	Mud_Nerve = 16;
 	AI_StopProcessInfos	( self );
@@ -623,7 +623,7 @@ FUNC INT DIA_Mud_Nerve_16_Condition()
 
 FUNC VOID DIA_Mud_Nerve_16_Info()
 {
-	AI_Output (self, other,"DIA_Mud_Nerve_16_07_00"); //Masz mo¿e dla mnie coœ do jedzenia. Jestem jakby twoim goœciem, wiêc uprzejmoœæ nakazywa³aby, abyœ mnie czymœ poczêstowa³. Nauczy³em siê tego w Khorinis. Tam mieszkaj¹ uprzejmi ludzie.
+	AI_Output (self, other,"DIA_Mud_Nerve_16_07_00"); //Masz moÅ¼e dla mnie coÅ› do jedzenia. Jestem jakby twoim goÅ›ciem, wiÄ™c uprzejmoÅ›Ä‡ nakazywaÅ‚aby, abyÅ› mnie czymÅ› poczÄ™stowaÅ‚. NauczyÅ‚em siÄ™ tego w Khorinis. Tam mieszkajÄ… uprzejmi ludzie.
 	Npc_SetRefuseTalk(self, NerveSec);
 	Mud_Nerve = 17;
 	AI_StopProcessInfos	( self );
@@ -650,7 +650,7 @@ FUNC INT DIA_Mud_Nerve_17_Condition()
 
 FUNC VOID DIA_Mud_Nerve_17_Info()
 {
-	AI_Output (self, other,"DIA_Mud_Nerve_17_07_00"); //Myœlisz, ¿e ktoœ wpadnie do nas z wizyt¹? Pewnie nie, bo nie mogliby wydostaæ siê z powrotem, co nie?
+	AI_Output (self, other,"DIA_Mud_Nerve_17_07_00"); //MyÅ›lisz, Å¼e ktoÅ› wpadnie do nas z wizytÄ…? Pewnie nie, bo nie mogliby wydostaÄ‡ siÄ™ z powrotem, co nie?
 	Npc_SetRefuseTalk(self, NerveSec);
 	Mud_Nerve = 18;
 	AI_StopProcessInfos	( self );
@@ -677,7 +677,7 @@ FUNC INT DIA_Mud_Nerve_18_Condition()
 
 FUNC VOID DIA_Mud_Nerve_18_Info()
 {
-	AI_Output (self, other,"DIA_Mud_Nerve_18_07_00"); //Teraz, gdy jesteœmy razem, moglibyœmy pokazaæ kilku ludziom, gdzie raki zimuj¹. Te skurczybyki nachodz¹ mnie od lat! Jak zobaczê któregoœ z nich, dam im do s³uchu!
+	AI_Output (self, other,"DIA_Mud_Nerve_18_07_00"); //Teraz, gdy jesteÅ›my razem, moglibyÅ›my pokazaÄ‡ kilku ludziom, gdzie raki zimujÄ…. Te skurczybyki nachodzÄ… mnie od lat! Jak zobaczÄ™ ktÃ³regoÅ› z nich, dam im do sÅ‚uchu!
 	Npc_SetRefuseTalk(self, NerveSec);
 	Mud_Nerve = 19;
 	AI_StopProcessInfos	( self );
@@ -704,7 +704,7 @@ FUNC INT DIA_Mud_Nerve_19_Condition()
 
 FUNC VOID DIA_Mud_Nerve_19_Info()
 {
-	AI_Output (self, other,"DIA_Mud_Nerve_19_07_00"); //Wiesz co? Stanowimy dobran¹ parê. Moglibyœmy przej¹æ kontrolê nad ca³ym Starym Obozem. Jesteœmy zespo³em, wiêc powinniœmy ³atwo uporaæ siê z Magnatami. Obmyœlê jakiœ plan.
+	AI_Output (self, other,"DIA_Mud_Nerve_19_07_00"); //Wiesz co? Stanowimy dobranÄ… parÄ™. MoglibyÅ›my przejÄ…Ä‡ kontrolÄ™ nad caÅ‚ym Starym Obozem. JesteÅ›my zespoÅ‚em, wiÄ™c powinniÅ›my Å‚atwo uporaÄ‡ siÄ™ z Magnatami. ObmyÅ›lÄ™ jakiÅ› plan.
 	Npc_SetRefuseTalk(self, NerveSec);
 	Mud_Nerve = 0;
 	AI_StopProcessInfos	( self );

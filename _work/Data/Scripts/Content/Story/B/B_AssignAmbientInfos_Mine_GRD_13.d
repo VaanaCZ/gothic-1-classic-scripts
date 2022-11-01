@@ -37,7 +37,7 @@ INSTANCE Info_Mine_Grd_13_Mine (C_INFO) // E1
 	condition	= Info_Mine_Grd_13_Mine_Condition;
 	information	= Info_Mine_Grd_13_Mine_Info;
 	permanent	= 1;
-	description = "Co siê dzieje w kopalni?";
+	description = "Co siÄ™ dzieje w kopalni?";
 };                       
 
 FUNC INT Info_Mine_Grd_13_Mine_Condition()
@@ -50,8 +50,8 @@ FUNC INT Info_Mine_Grd_13_Mine_Condition()
 
 FUNC VOID Info_Mine_Grd_13_Mine_Info()
 {
-	AI_Output(other,self,"Info_Mine_Grd_13_Mine_15_00"); //Co siê dzieje w kopalni?
-	AI_Output(self,other,"Info_Mine_Grd_13_Mine_13_01"); //Kopalnia to serce Starego Obozu. Bez kopalni nie ma rudy. Bez rudy nie ma towarów od króla. Kapujesz?
+	AI_Output(other,self,"Info_Mine_Grd_13_Mine_15_00"); //Co siÄ™ dzieje w kopalni?
+	AI_Output(self,other,"Info_Mine_Grd_13_Mine_13_01"); //Kopalnia to serce Starego Obozu. Bez kopalni nie ma rudy. Bez rudy nie ma towarÃ³w od krÃ³la. Kapujesz?
 };
 
 // *************************************************************************
@@ -64,7 +64,7 @@ INSTANCE Info_Mine_Grd_13_WichtigePersonen(C_INFO)
 	condition	= Info_Mine_Grd_13_WichtigePersonen_Condition;
 	information	= Info_Mine_Grd_13_WichtigePersonen_Info;
 	permanent	= 1;
-	description = "Kto tu rz¹dzi?";
+	description = "Kto tu rzÄ…dzi?";
 };                       
 
 FUNC INT Info_Mine_Grd_13_WichtigePersonen_Condition()
@@ -77,8 +77,8 @@ FUNC INT Info_Mine_Grd_13_WichtigePersonen_Condition()
 
 FUNC VOID Info_Mine_Grd_13_WichtigePersonen_Info()
 {
-	AI_Output(other,self,"Info_Mine_Grd_13_WichtigePersonen_15_00"); //Kto tu rz¹dzi?
-	AI_Output(self,other,"Info_Mine_Grd_13_WichtigePersonen_13_01"); //Asghan jest tu szefem, ale lepiej nie zawracaj mu g³owy. Takimi jak ty zajmuje siê Ian.
+	AI_Output(other,self,"Info_Mine_Grd_13_WichtigePersonen_15_00"); //Kto tu rzÄ…dzi?
+	AI_Output(self,other,"Info_Mine_Grd_13_WichtigePersonen_13_01"); //Asghan jest tu szefem, ale lepiej nie zawracaj mu gÅ‚owy. Takimi jak ty zajmuje siÄ™ Ian.
 };
 
 // *************************************************************************
@@ -91,7 +91,7 @@ INSTANCE Info_Mine_Grd_13_DasLager(C_INFO)
 	condition	= Info_Mine_Grd_13_DasLager_Condition;
 	information	= Info_Mine_Grd_13_DasLager_Info;
 	permanent	= 1;
-	description = "Opowiedz mi o pe³zaczach.";
+	description = "Opowiedz mi o peÅ‚zaczach.";
 };                       
 
 FUNC INT Info_Mine_Grd_13_DasLager_Condition()
@@ -104,8 +104,8 @@ FUNC INT Info_Mine_Grd_13_DasLager_Condition()
 
 FUNC VOID Info_Mine_Grd_13_DasLager_Info()
 {
-	AI_Output(other,self,"Info_Mine_Grd_13_DasLager_15_00"); //Opowiedz mi o pe³zaczach.
-	AI_Output(self,other,"Info_Mine_Grd_13_DasLager_13_01"); //Bractwo p³aci Staremu Obozowi bagiennym zielem za prawo do polowania na pe³zacze w kopalni.
+	AI_Output(other,self,"Info_Mine_Grd_13_DasLager_15_00"); //Opowiedz mi o peÅ‚zaczach.
+	AI_Output(self,other,"Info_Mine_Grd_13_DasLager_13_01"); //Bractwo pÅ‚aci Staremu Obozowi bagiennym zielem za prawo do polowania na peÅ‚zacze w kopalni.
 	
 };
 
@@ -133,7 +133,7 @@ FUNC INT Info_Mine_Grd_13_DieLage_Condition()
 FUNC VOID Info_Mine_Grd_13_DieLage_Info()
 {
 	AI_Output(other,self,"Info_Mine_Grd_13_DieLage_15_00"); //Jak leci?
-	AI_Output(self,other,"Info_Mine_Grd_13_DieLage_13_01"); //Ach... Od wieków nie bra³em udzia³u w ¿adnej rozróbie.
+	AI_Output(self,other,"Info_Mine_Grd_13_DieLage_13_01"); //Ach... Od wiekÃ³w nie braÅ‚em udziaÅ‚u w Å¼adnej rozrÃ³bie.
 	
 };
 	

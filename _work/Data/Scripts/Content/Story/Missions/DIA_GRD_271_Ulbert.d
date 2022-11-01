@@ -28,7 +28,7 @@ instance  GRD_271_ULBERT_KEY (C_INFO)
 	information		= GRD_271_ULBERT_KEY_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Co siê znajduje w sk³adowisku?"; 
+	description		= "Co siÄ™ znajduje w skÅ‚adowisku?"; 
 };
 
 FUNC int  GRD_271_ULBERT_KEY_Condition()
@@ -39,8 +39,8 @@ FUNC int  GRD_271_ULBERT_KEY_Condition()
 
 FUNC void  GRD_271_ULBERT_KEY_Info()
 {
-	AI_Output			(other, self,"GRD_271_ULBERT_KEY_Info_15_01"); //Co siê znajduje w sk³adowisku?
-	AI_Output			(self, other,"GRD_271_ULBERT_KEY_Info_07_02"); //Nie twój interes!
+	AI_Output			(other, self,"GRD_271_ULBERT_KEY_Info_15_01"); //Co siÄ™ znajduje w skÅ‚adowisku?
+	AI_Output			(self, other,"GRD_271_ULBERT_KEY_Info_07_02"); //Nie twÃ³j interes!
 };  
 // ***************** Infos *****************************
 
@@ -51,7 +51,7 @@ instance  GRD_271_ULBERT_TRICK (C_INFO)
 	information		= GRD_271_ULBERT_TRICK_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Za³o¿ê siê, ¿e zasch³o ci w ustach od tej ciê¿kiej pracy."; 
+	description		= "ZaÅ‚oÅ¼Ä™ siÄ™, Å¼e zaschÅ‚o ci w ustach od tej ciÄ™Å¼kiej pracy."; 
 };
 
 FUNC int  GRD_271_ULBERT_TRICK_Condition()
@@ -65,12 +65,12 @@ FUNC int  GRD_271_ULBERT_TRICK_Condition()
 
 FUNC void  GRD_271_ULBERT_TRICK_Info()
 {
-	AI_Output			(other, self,"GRD_271_ULBERT_TRICK_Info_15_01"); //Za³o¿ê siê, ¿e zasch³o ci w ustach od tej ciê¿kiej pracy.
-	AI_Output			(self, other,"GRD_271_ULBERT_TRICK_Info_07_02"); //Jeszcze jak! Chêtnie bym siê czegoœ napi³. Mo¿e móg³byœ mnie czymœ poczêstowaæ, co?
+	AI_Output			(other, self,"GRD_271_ULBERT_TRICK_Info_15_01"); //ZaÅ‚oÅ¼Ä™ siÄ™, Å¼e zaschÅ‚o ci w ustach od tej ciÄ™Å¼kiej pracy.
+	AI_Output			(self, other,"GRD_271_ULBERT_TRICK_Info_07_02"); //Jeszcze jak! ChÄ™tnie bym siÄ™ czegoÅ› napiÅ‚. MoÅ¼e mÃ³gÅ‚byÅ› mnie czymÅ› poczÄ™stowaÄ‡, co?
 
 	Log_CreateTopic		(CH2_StorageShed,	LOG_MISSION);
 	Log_SetTopicStatus	(CH2_StorageShed,	LOG_RUNNING);
-	B_LogEntry		(CH2_StorageShed,"Ulbert pilnuje sk³adowiska w Starej Kopalni. Muszê mu przynieœæ coœ do picia."); 
+	B_LogEntry		(CH2_StorageShed,"Ulbert pilnuje skÅ‚adowiska w Starej Kopalni. MuszÄ™ mu przynieÅ›Ä‡ coÅ› do picia."); 
 };  
 
 // ***************** Infos *****************************
@@ -82,7 +82,7 @@ instance  GRD_271_ULBERT_DRINK (C_INFO)
 	information		= GRD_271_ULBERT_DRINK_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "(daj coœ do picia)"; 
+	description		= "(daj coÅ› do picia)"; 
 };
 
 FUNC int  GRD_271_ULBERT_DRINK_Condition()
@@ -97,8 +97,8 @@ FUNC int  GRD_271_ULBERT_DRINK_Condition()
 };
 FUNC void  GRD_271_ULBERT_DRINK_Info()
 {
-	AI_Output			(other, self,"GRD_271_ULBERT_DRINK_Info_15_01"); //Proszê bardzo, na zdrowie!
-	AI_Output			(self, other,"GRD_271_ULBERT_DRINK_Info_07_02"); //Dziêki.
+	AI_Output			(other, self,"GRD_271_ULBERT_DRINK_Info_15_01"); //ProszÄ™ bardzo, na zdrowie!
+	AI_Output			(self, other,"GRD_271_ULBERT_DRINK_Info_07_02"); //DziÄ™ki.
 	
 	if 		(Npc_HasItems (hero, ItFobeer ))
 	{
@@ -139,7 +139,7 @@ instance  GRD_271_ULBERT_DRUNK (C_INFO)
 	information		= GRD_271_ULBERT_DRUNK_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "To jak z tym sk³adowiskiem? Jest tam coœ ciekawego?"; 
+	description		= "To jak z tym skÅ‚adowiskiem? Jest tam coÅ› ciekawego?"; 
 };
 
 FUNC int  GRD_271_ULBERT_DRUNK_Condition()
@@ -152,12 +152,12 @@ FUNC int  GRD_271_ULBERT_DRUNK_Condition()
 };
 FUNC void  GRD_271_ULBERT_DRUNK_Info()
 {
-	AI_Output			(other, self,"GRD_271_ULBERT_DRUNK_Info_15_01"); //To jak z tym sk³adowiskiem? Jest tam coœ ciekawego?
-	AI_Output			(self, other,"GRD_271_ULBERT_DRUNK_Info_07_02"); //Kilka skrzyñ, w których przechowujemy zapasy. Niestety, gdzieœ siê nam zapodzia³ klucz.
-	AI_Output			(other, self,"GRD_271_ULBERT_DRUNK_Info_15_03"); //Zapodzia³?
-	AI_Output			(self, other,"GRD_271_ULBERT_DRUNK_Info_07_04"); //Za³o¿ê siê, ¿e to sprawka Alepha. Temu cz³owiekowi nie mo¿na ufaæ.
+	AI_Output			(other, self,"GRD_271_ULBERT_DRUNK_Info_15_01"); //To jak z tym skÅ‚adowiskiem? Jest tam coÅ› ciekawego?
+	AI_Output			(self, other,"GRD_271_ULBERT_DRUNK_Info_07_02"); //Kilka skrzyÅ„, w ktÃ³rych przechowujemy zapasy. Niestety, gdzieÅ› siÄ™ nam zapodziaÅ‚ klucz.
+	AI_Output			(other, self,"GRD_271_ULBERT_DRUNK_Info_15_03"); //ZapodziaÅ‚?
+	AI_Output			(self, other,"GRD_271_ULBERT_DRUNK_Info_07_04"); //ZaÅ‚oÅ¼Ä™ siÄ™, Å¼e to sprawka Alepha. Temu czÅ‚owiekowi nie moÅ¼na ufaÄ‡.
 
-	B_LogEntry		(CH2_StorageShed,"Poczêstowany trunkiem Ulbert powiedzia³ mi, ¿e zgubi³ gdzieœ klucz do skrzyñ. Ponoæ jeden z Kopaczy imieniem Aleph mia³ z tym coœ wspólnego!");
+	B_LogEntry		(CH2_StorageShed,"PoczÄ™stowany trunkiem Ulbert powiedziaÅ‚ mi, Å¼e zgubiÅ‚ gdzieÅ› klucz do skrzyÅ„. PonoÄ‡ jeden z Kopaczy imieniem Aleph miaÅ‚ z tym coÅ› wspÃ³lnego!");
 };  
 // ***************** Infos *****************************
 instance  GRD_271_ULBERT_LOCK (C_INFO)
@@ -167,7 +167,7 @@ instance  GRD_271_ULBERT_LOCK (C_INFO)
 	information		= GRD_271_ULBERT_LOCK_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "(odci¹gnij Ulberta)"; 
+	description		= "(odciÄ…gnij Ulberta)"; 
 };
 
 FUNC int  GRD_271_ULBERT_LOCK_Condition()
@@ -180,10 +180,10 @@ FUNC int  GRD_271_ULBERT_LOCK_Condition()
 };
 FUNC void  GRD_271_ULBERT_LOCK_Info()
 {
-	AI_Output			(other, self,"GRD_271_ULBERT_LOCK_Info_15_01"); //S³uchaj, Ian i pozostali siedz¹ teraz na dole i zajadaj¹ siê pieczonym miêsem.
-	AI_Output			(self, other,"GRD_271_ULBERT_LOCK_Info_07_02"); //Co? Beze mnie? No nie! Ju¿ ja im poka¿ê!
+	AI_Output			(other, self,"GRD_271_ULBERT_LOCK_Info_15_01"); //SÅ‚uchaj, Ian i pozostali siedzÄ… teraz na dole i zajadajÄ… siÄ™ pieczonym miÄ™sem.
+	AI_Output			(self, other,"GRD_271_ULBERT_LOCK_Info_07_02"); //Co? Beze mnie? No nie! JuÅ¼ ja im pokaÅ¼Ä™!
 	
-	B_LogEntry		(CH2_StorageShed,"Odci¹gniêcie Ulberta od sk³adowiska nie by³o zbyt trudne. Nie jest to szczególnie inteligentny cz³owiek.");
+	B_LogEntry		(CH2_StorageShed,"OdciÄ…gniÄ™cie Ulberta od skÅ‚adowiska nie byÅ‚o zbyt trudne. Nie jest to szczegÃ³lnie inteligentny czÅ‚owiek.");
 
 	Npc_ExchangeRoutine	(self,	"away");
 	AI_StopProcessInfos	(self);
@@ -210,12 +210,12 @@ FUNC int  GRD_271_ULBERT_ANGRY_Condition()
 };
 FUNC void  GRD_271_ULBERT_ANGRY_Info()
 {
-	AI_Output			(self, other,"GRD_271_ULBERT_ANGRY_Info_07_01"); //Hej, ty! Tam nie by³o ¿adnego pieczonego miêsa!
-	AI_Output			(other, self,"GRD_271_ULBERT_ANGRY_Info_15_02"); //Eee... Có¿, widocznie siê pomyli³em. ¯yczê mi³ego dnia!
+	AI_Output			(self, other,"GRD_271_ULBERT_ANGRY_Info_07_01"); //Hej, ty! Tam nie byÅ‚o Å¼adnego pieczonego miÄ™sa!
+	AI_Output			(other, self,"GRD_271_ULBERT_ANGRY_Info_15_02"); //Eee... CÃ³Å¼, widocznie siÄ™ pomyliÅ‚em. Å»yczÄ™ miÅ‚ego dnia!
 
 	B_GiveXP			(XP_LureUlbertAway);
 	
-	B_LogEntry		(CH2_StorageShed,"Spotka³em ponownie Ulberta. Ten g³upol nie zorientowa³ siê nawet, ¿e wystrychn¹³em go na dudka!");
+	B_LogEntry		(CH2_StorageShed,"SpotkaÅ‚em ponownie Ulberta. Ten gÅ‚upol nie zorientowaÅ‚ siÄ™ nawet, Å¼e wystrychnÄ…Å‚em go na dudka!");
 	Log_SetTopicStatus	(CH2_StorageShed,	LOG_SUCCESS);
 
 	Npc_ExchangeRoutine	(self,	"start");

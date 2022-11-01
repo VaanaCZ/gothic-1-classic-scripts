@@ -15,7 +15,7 @@
 	on_equip				=	Equip_Schutzring_Feuer1;
 	on_unequip				=	UnEquip_Schutzring_Feuer1;
 
-	description		= "PierúcieÒ ochrony przed ogniem";
+	description		= "Pier≈õcie≈Ñ ochrony przed ogniem";
 	//TEXT[0]			= "";
 	//TEXT[1]			= "";
 	////COUNT[1]		= ;
@@ -97,7 +97,7 @@
 	on_equip				=	Equip_Schutzring_Geschosse1;
 	on_unequip				=	UnEquip_Schutzring_Geschosse1;
 
-	description		= "PierúcieÒ drewnianej skÛry";
+	description		= "Pier≈õcie≈Ñ drewnianej sk√≥ry";
 	//TEXT[0]			= "";
 	//TEXT[1]			= "";
 	////COUNT[1]		= ;
@@ -138,7 +138,7 @@
 	on_equip				=	Equip_Schutzring_Geschosse2;
 	on_unequip				=	UnEquip_Schutzring_Geschosse2;
 
-	description		= "PierúcieÒ kamiennej skÛry";
+	description		= "Pier≈õcie≈Ñ kamiennej sk√≥ry";
 	//TEXT[0]			= "";
 	//TEXT[1]			= "";
 	////COUNT[1]		= ;
@@ -179,7 +179,7 @@
 	on_equip				=	Equip_Schutzring_Waffen1;
 	on_unequip				=	UnEquip_Schutzring_Waffen1;
 
-	description		= "PierúcieÒ øelaznej skÛry";
+	description		= "Pier≈õcie≈Ñ ≈ºelaznej sk√≥ry";
 	//TEXT[0]			= "";
 	//TEXT[1]			= "";
 	////COUNT[1]		= ;
@@ -222,7 +222,7 @@
 	on_equip				=	Equip_Schutzring_Waffen2;
 	on_unequip				=	UnEquip_Schutzring_Waffen2;
 
-	description		= "PierúcieÒ magicznego pancerza";
+	description		= "Pier≈õcie≈Ñ magicznego pancerza";
 	//TEXT[0]			= "";
 	//TEXT[1]			= "";
 	////COUNT[1]		= ;
@@ -251,7 +251,7 @@
 /******************************************************************************************/
 	INSTANCE Schutzring_Magie1(C_ITEM)
 {
-	name 					=	"PierúcieÒ ";
+	name 					=	"Pier≈õcie≈Ñ ";
 
 	mainflag 				=	ITEM_KAT_MAGIC;
 	flags 					=	ITEM_RING;
@@ -265,7 +265,7 @@
 	on_equip				=	Equip_Schutzring_Magie1;
 	on_unequip				=	UnEquip_Schutzring_Magie1;
 
-	description		= "PierúcieÒ si≥y duchowej";
+	description		= "Pier≈õcie≈Ñ si≈Çy duchowej";
 	//TEXT[0]			= "";
 	//TEXT[1]			= "";
 	////COUNT[1]		= ;
@@ -307,7 +307,7 @@
 	on_equip				=	Equip_Schutzring_Magie2;
 	on_unequip				=	UnEquip_Schutzring_Magie2;
 
-	description		= "PierúcieÒ obrony";
+	description		= "Pier≈õcie≈Ñ obrony";
 	//TEXT[0]			= "";
 	//TEXT[1]			= "";
 	////COUNT[1]		= ;
@@ -350,7 +350,7 @@
 	on_equip				=	Equip_Schutzring_Magie1_Fire1;
 	on_unequip				=	UnEquip_Schutzring_Magie1_Fire1;
 
-	description		= "PierúcieÒ oczyszczenia";
+	description		= "Pier≈õcie≈Ñ oczyszczenia";
 	//TEXT[0]			= "";
 	//TEXT[1]			= "";
 	////COUNT[1]		= ;
@@ -393,7 +393,7 @@
 	on_equip				=	Equip_Schutzring_Magie2_Fire2;
 	on_unequip				=	UnEquip_Schutzring_Magie2_Fire2;
 
-	description		= "PierúcieÒ niezwyciÍøonoúci";
+	description		= "Pier≈õcie≈Ñ niezwyciƒô≈ºono≈õci";
 	//TEXT[0]			= "";
 	//TEXT[1]			= "";
 	////COUNT[1]		= ;
@@ -436,7 +436,7 @@
 	on_equip				=  	Equip_Schutzring_Geschosse1_Waffen1;
 	on_unequip				= 	UnEquip_Schutzring_Geschosse1_Waffen1;
 
-	description		= "PierúcieÒ wytrwa≥oúci";
+	description		= "Pier≈õcie≈Ñ wytrwa≈Ço≈õci";
 	//TEXT[0]			= "";
 	//TEXT[1]			= "";
 	////COUNT[1]		= ;
@@ -481,7 +481,7 @@
 	on_equip				=  	Equip_Schutzring_Geschosse2_Waffen2;
 	on_unequip				= 	UnEquip_Schutzring_Geschosse2_Waffen2;
 
-	description		= "PierúcieÒ niewzruszonoúci";
+	description		= "Pier≈õcie≈Ñ niewzruszono≈õci";
 	//TEXT[0]			= "";
 	//TEXT[1]			= "";
 	////COUNT[1]		= ;
@@ -526,7 +526,7 @@
 	on_equip				=  	Equip_Schutzring_Total1;
 	on_unequip				= 	UnEquip_Schutzring_Total1;
 
-	description		= "Pomniejszy pierúcieÒ niezwyciÍøonoúci";
+	description		= "Pomniejszy pier≈õcie≈Ñ niezwyciƒô≈ºono≈õci";
 	//TEXT[0]			= "";
 	TEXT[1]			= NAME_Prot_Magic;
 	COUNT[1]		= 1;
@@ -575,7 +575,7 @@
 	on_equip				=  	Equip_Schutzring_Total2;
 	on_unequip				= 	UnEquip_Schutzring_Total2;
 
-	description		= "WiÍkszy pierúcieÒ niezwyciÍøonoúci";
+	description		= "Wiƒôkszy pier≈õcie≈Ñ niezwyciƒô≈ºono≈õci";
 	//TEXT[0]			= "";
 	TEXT[1]			= NAME_Prot_Magic;
 	COUNT[1]		= 3;
@@ -624,7 +624,7 @@
 	on_equip				=	Equip_Ring_des_Geschicks;
 	on_unequip				=	UnEquip_Ring_des_Geschicks;
 
-	description		= "Pomniejszy pierúcieÒ zwinnoúci";
+	description		= "Pomniejszy pier≈õcie≈Ñ zwinno≈õci";
 	//TEXT[0]			= "";
 	//TEXT[1]			= "";
 	////COUNT[1]		= ;
@@ -666,7 +666,7 @@
 	on_equip				=	Equip_Ring_des_Geschicks2;
 	on_unequip				=	UnEquip_Ring_des_Geschicks2;
 
-	description		= "WiÍkszy pierúcieÒ zwinnoúci";
+	description		= "Wiƒôkszy pier≈õcie≈Ñ zwinno≈õci";
 	//TEXT[0]			= "";
 	//TEXT[1]			= "";
 	////COUNT[1]		= ;
@@ -708,7 +708,7 @@
 	on_equip				=	Equip_Ring_des_Lebens;
 	on_unequip				=	UnEquip_Ring_des_Lebens;
 
-	description		= "PierúcieÒ øycia";
+	description		= "Pier≈õcie≈Ñ ≈ºycia";
 	//TEXT[0]			= "";
 	//TEXT[1]			= "";
 	////COUNT[1]		= ;
@@ -757,7 +757,7 @@
 	material 				=	MAT_METAL;
 	on_equip				=	Equip_Ring_des_Lebens2;
 	on_unequip				=	UnEquip_Ring_des_Lebens2;
-	description		= "WiÍkszy pierúcieÒ øycia";
+	description		= "Wiƒôkszy pier≈õcie≈Ñ ≈ºycia";
 	//TEXT[0]			= "";
 	//TEXT[1]			= "";
 	////COUNT[1]		= ;
@@ -808,7 +808,7 @@
 	on_equip				=	Equip_Staerkering;
 	on_unequip				=	UnEquip_Staerkering;
 
-	description		= "PierúcieÒ mocy";
+	description		= "Pier≈õcie≈Ñ mocy";
 	//TEXT[0]			= "";
 	//TEXT[1]			= "";
 	////COUNT[1]		= ;
@@ -850,7 +850,7 @@
 	on_equip				=	Equip_Staerkering2;
 	on_unequip				=	UnEquip_Staerkering2;
 
-	description		= "PierúcieÒ si≥y";
+	description		= "Pier≈õcie≈Ñ si≈Çy";
 	//TEXT[0]			= "";
 	//TEXT[1]			= "";
 	////COUNT[1]		= ;
@@ -891,7 +891,7 @@
 	on_equip				=	Equip_Ring_der_Magie;
 	on_unequip				=	UnEquip_Ring_der_Magie;
 
-	description		= "PierúcieÒ magii";
+	description		= "Pier≈õcie≈Ñ magii";
 	//TEXT[0]			= "";
 	//TEXT[1]			= "";
 	////COUNT[1]		= ;
@@ -935,7 +935,7 @@
 	on_equip				=	Equip_Ring_der_Erleuchtung;
 	on_unequip				=	UnEquip_Ring_der_Erleuchtung;
 
-	description		= "PierúcieÒ oúwiecenia";
+	description		= "Pier≈õcie≈Ñ o≈õwiecenia";
 	//TEXT[0]			= "";
 	//TEXT[1]			= "";
 	////COUNT[1]		= ;
@@ -993,7 +993,7 @@
 	on_equip				=	Equip_Machtring;
 	on_unequip				=	UnEquip_Machtring;
 
-	description		= "PierúcieÒ si≥y wojownika";
+	description		= "Pier≈õcie≈Ñ si≈Çy wojownika";
 	//TEXT[0]			= "";
 	//TEXT[1]			= "";
 	////COUNT[1]		= ;

@@ -2,8 +2,8 @@
 //##
 //##							KAPITEL 4
 //##							=========
-//##	Söldner, Banditen und Schürfer der Freien Mine werden
-//##	getötet und beraubt.
+//##	SÃ¶ldner, Banditen und SchÃ¼rfer der Freien Mine werden
+//##	getÃ¶tet und beraubt.
 //##	Drei Gardisten bewachen jetzt den Eingang zur Mine.						
 //##
 //#####################################################################
@@ -13,7 +13,7 @@ func void B_Story_FMTaken()
 	var C_NPC fighter;	fighter = Hlp_GetNpc(PC_FIGHTER);
 	Npc_ExchangeRoutine(fighter, "NCREPORT");
 
-	//-------- Besatzung des Kessels töten --------
+	//-------- Besatzung des Kessels tÃ¶ten --------
 	B_KillNpc	(SLD_750_Soeldner);
 	B_KillNpc	(SLD_751_Soeldner);
 	B_KillNpc	(SLD_752_Okyl);
@@ -50,12 +50,12 @@ func void B_Story_FMTaken()
 	B_KillNpc	(ORG_891_Organisator);
 	B_KillNpc	(ORG_892_Organisator);
 		
-	//-------- Gardisten-Eroberer einfügen --------
+	//-------- Gardisten-Eroberer einfÃ¼gen --------
 	Wld_InsertNpc		(Grd_283_Gardist,	"FMC_ENTRANCE");	//FMC-Guard(Mineneingang)			
 	Wld_InsertNpc		(Grd_285_Gardist,	"FMC_ENTRANCE");	//FMC-Guard(Mineneingang)	
 	B_ExchangeRoutine	(Grd_201_Jackal,	"FMTaken");			//FMC-Guard(Mineneingang)
 
-	//-------- Tor zur Alten Mine im Stundentakt auf Verschluß checken! --------
+	//-------- Tor zur Alten Mine im Stundentakt auf VerschluÃŸ checken! --------
 	//B_ExchangeRoutine	(Grd_250_Gardist,	"FMTaken");
 	Wld_SetObjectRoutine		(0,00,"EVT_AM_LOB_GATE_BIG",1);
 	Wld_SetObjectRoutine		(1,00,"EVT_AM_LOB_GATE_BIG",1);
@@ -82,22 +82,22 @@ func void B_Story_FMTaken()
 	Wld_SetObjectRoutine		(22,00,"EVT_AM_LOB_GATE_BIG",1);
 	Wld_SetObjectRoutine		(23,00,"EVT_AM_LOB_GATE_BIG",1);
 
-	//-------- Tagebucheinträge --------
+	//-------- TagebucheintrÃ¤ge --------
 	if (Npc_KnowsInfo(hero, Info_Milten_OCWARN))
 	{
-		B_LogEntry	(CH4_Firemages,"Diego opowiedzia³ mi nieco wiêcej o wydarzeniach w Starym Obozie.");
+		B_LogEntry	(CH4_Firemages,"Diego opowiedziaÅ‚ mi nieco wiÄ™cej o wydarzeniach w Starym Obozie.");
 	}
 	else
 	{
-		B_LogEntry	(CH4_Firemages,"Przy tylnym wejœciu do Starego Obozu spotka³em Diego, który opowiedzia³ mi o tragicznych wydarzeniach ostatnich dni.");
+		B_LogEntry	(CH4_Firemages,"Przy tylnym wejÅ›ciu do Starego Obozu spotkaÅ‚em Diego, ktÃ³ry opowiedziaÅ‚ mi o tragicznych wydarzeniach ostatnich dni.");
 	};
-	B_LogEntry		(CH4_Firemages,"Po zawaleniu siê Starej Kopalni, Gomez rozkaza³ swoim ludziom zaatakowaæ nale¿¹c¹ do Nowego Obozu Woln¹ Kopalniê. Wobec zdecydowanego sprzeciwu Corristo i jego Magów Ognia, Gomez kaza³ ich wszystkich zamordowaæ.");
-	B_LogEntry		(CH4_Firemages,"Mam czym prêdzej wróciæ do Nowego Obozu i zdaæ Saturasowi relacjê z tych wydarzeñ.");
+	B_LogEntry		(CH4_Firemages,"Po zawaleniu siÄ™ Starej Kopalni, Gomez rozkazaÅ‚ swoim ludziom zaatakowaÄ‡ naleÅ¼Ä…cÄ… do Nowego Obozu WolnÄ… KopalniÄ™. Wobec zdecydowanego sprzeciwu Corristo i jego MagÃ³w Ognia, Gomez kazaÅ‚ ich wszystkich zamordowaÄ‡.");
+	B_LogEntry		(CH4_Firemages,"Mam czym prÄ™dzej wrÃ³ciÄ‡ do Nowego Obozu i zdaÄ‡ Saturasowi relacjÄ™ z tych wydarzeÅ„.");
 	
 	if (Scorpio_Exile == FALSE)
 	{
 		Log_CreateTopic (GE_TraderOW,LOG_NOTE);
-		B_LogEntry		(GE_TraderOW,"Skorpion porzuci³ Stary Obóz i wraz z Cavalornem zatrzyma³ siê w myœliwskiej chacie na drodze pomiêdzy Starym a Nowym Obozem.");
+		B_LogEntry		(GE_TraderOW,"Skorpion porzuciÅ‚ Stary ObÃ³z i wraz z Cavalornem zatrzymaÅ‚ siÄ™ w myÅ›liwskiej chacie na drodze pomiÄ™dzy Starym a Nowym Obozem.");
 		Scorpio_Exile = TRUE;
 	};
 	//-------- globale Variable setzen --------

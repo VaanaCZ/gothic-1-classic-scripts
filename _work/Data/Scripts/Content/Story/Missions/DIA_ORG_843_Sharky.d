@@ -32,7 +32,7 @@ instance  Org_843_Sharky_Fisk (C_INFO)
 	condition		= Org_843_Sharky_Fisk_Condition;
 	information		= Org_843_Sharky_Fisk_Info;
 	permanent		= 0;
-	description		= "Fisk ze Starego Obozu szuka nowego partnera do interesów."; 
+	description		= "Fisk ze Starego Obozu szuka nowego partnera do interesÃ³w."; 
 	trade 			= 1;
 };
 
@@ -46,10 +46,10 @@ FUNC int  Org_843_Sharky_Fisk_Condition()
 };
 FUNC void  Org_843_Sharky_Fisk_Info()
 {
-	AI_Output (other, self,"Org_843_Sharky_Fisk_Info_15_00"); //Fisk ze Starego Obozu szuka nowego partnera do interesów.
-	AI_Output (self, other,"Org_843_Sharky_Fisk_Info_10_01"); //A dlaczego mówisz o tym w³aœnie mi?
-	AI_Output (other, self,"Org_843_Sharky_Fisk_Info_15_02"); //Pomyœla³em, ¿e zainteresuje ciê mo¿liwoœæ zarobienia paru bry³ek rudy.
-	AI_Output (self, other,"Org_843_Sharky_Fisk_Info_10_03"); //Czemu nie... Powiedz Fiskowi, ¿e mo¿e na mnie liczyæ.
+	AI_Output (other, self,"Org_843_Sharky_Fisk_Info_15_00"); //Fisk ze Starego Obozu szuka nowego partnera do interesÃ³w.
+	AI_Output (self, other,"Org_843_Sharky_Fisk_Info_10_01"); //A dlaczego mÃ³wisz o tym wÅ‚aÅ›nie mi?
+	AI_Output (other, self,"Org_843_Sharky_Fisk_Info_15_02"); //PomyÅ›laÅ‚em, Å¼e zainteresuje ciÄ™ moÅ¼liwoÅ›Ä‡ zarobienia paru bryÅ‚ek rudy.
+	AI_Output (self, other,"Org_843_Sharky_Fisk_Info_10_03"); //Czemu nie... Powiedz Fiskowi, Å¼e moÅ¼e na mnie liczyÄ‡.
 };  
 
 
@@ -64,7 +64,7 @@ instance  Org_843_Sharky_TRADE (C_INFO)
 	information		= Org_843_Sharky_TRADE_Info;
 	important		= 0;
 	permanent		= 1;
-	description		= "Przyda³oby mi siê kilka drobiazgów."; 
+	description		= "PrzydaÅ‚oby mi siÄ™ kilka drobiazgÃ³w."; 
 	trade 			= 1;
 };
 
@@ -78,11 +78,11 @@ FUNC int  Org_843_Sharky_TRADE_Condition()
 };
 FUNC void  Org_843_Sharky_TRADE_Info()
 {
-	AI_Output (other, self,"Org_843_Sharky_TRADE_Info_15_01"); //Przyda³oby mi siê kilka drobiazgów.
+	AI_Output (other, self,"Org_843_Sharky_TRADE_Info_15_01"); //PrzydaÅ‚oby mi siÄ™ kilka drobiazgÃ³w.
 };  
 
 /*------------------------------------------------------------------------
-							TRADE BEGRÜßUNG 								
+							TRADE BEGRÃœÃŸUNG 								
 ------------------------------------------------------------------------*/
 
 instance  Org_843_Sharky_GREET (C_INFO) 
@@ -92,7 +92,7 @@ instance  Org_843_Sharky_GREET (C_INFO)
 	information		= Org_843_Sharky_GREET_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Czeœæ, jak leci?"; 
+	description		= "CzeÅ›Ä‡, jak leci?"; 
 };
 
 FUNC int  Org_843_Sharky_GREET_Condition()
@@ -103,10 +103,10 @@ FUNC int  Org_843_Sharky_GREET_Condition()
 
 FUNC void  Org_843_Sharky_GREET_Info()
 {
-	AI_Output		(other, self,"Org_843_Sharky_GREET_Info_15_01"); //Czeœæ, jak leci?
-	AI_Output		(self, other,"Org_843_Sharky_GREET_Info_10_02"); //Chcesz coœ kupiæ?
+	AI_Output		(other, self,"Org_843_Sharky_GREET_Info_15_01"); //CzeÅ›Ä‡, jak leci?
+	AI_Output		(self, other,"Org_843_Sharky_GREET_Info_10_02"); //Chcesz coÅ› kupiÄ‡?
 	Log_CreateTopic (GE_TraderNC,LOG_NOTE);
-	B_LogEntry		(GE_TraderNC,"Szkodnik Sharky handluje broni¹ i innymi dobrami. Przebywa zwykle na terenie Nowego Obozu."); 
+	B_LogEntry		(GE_TraderNC,"Szkodnik Sharky handluje broniÄ… i innymi dobrami. Przebywa zwykle na terenie Nowego Obozu."); 
 };
 
 

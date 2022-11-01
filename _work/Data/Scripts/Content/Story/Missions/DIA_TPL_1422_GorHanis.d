@@ -44,7 +44,7 @@ FUNC INT Info_GorHanis_What_Condition()
 func VOID Info_GorHanis_What_Info()
 {
 	AI_Output (other, self,"Info_GorHanis_What_15_00"); //Co tu robisz?
-	AI_Output (self, other,"Info_GorHanis_What_08_01"); //Ja? Walczê ku chwale wielkiego Œni¹cego!
+	AI_Output (self, other,"Info_GorHanis_What_08_01"); //Ja? WalczÄ™ ku chwale wielkiego ÅšniÄ…cego!
 };
 
 // **************************************************
@@ -72,12 +72,12 @@ FUNC INT Info_GorHanis_Arena_Condition()
 func VOID Info_GorHanis_Arena_Info()
 {
 	AI_Output (other, self,"Info_GorHanis_Arena_15_00"); //Walczysz na arenie?
-	AI_Output (self, other,"Info_GorHanis_Arena_08_01"); //Zosta³em wybrany przez moich mistrzów, by broniæ na arenie honoru obozu na bagnie.
-	AI_Output (self, other,"Info_GorHanis_Arena_08_02"); //Przyœwieca mi wiêc wy¿szy cel. Walczê, by pokazaæ niewiernym jak wielka jest potêga Œni¹cego!
+	AI_Output (self, other,"Info_GorHanis_Arena_08_01"); //ZostaÅ‚em wybrany przez moich mistrzÃ³w, by broniÄ‡ na arenie honoru obozu na bagnie.
+	AI_Output (self, other,"Info_GorHanis_Arena_08_02"); //PrzyÅ›wieca mi wiÄ™c wyÅ¼szy cel. WalczÄ™, by pokazaÄ‡ niewiernym jak wielka jest potÄ™ga ÅšniÄ…cego!
 };
 
 // **************************************************
-//					Schläfer
+//					SchlÃ¤fer
 // **************************************************
 
 instance Info_GorHanis_Sleeper(C_INFO)
@@ -87,7 +87,7 @@ instance Info_GorHanis_Sleeper(C_INFO)
 	condition		= Info_GorHanis_Sleeper_Condition;
 	information		= Info_GorHanis_Sleeper_Info;
 	permanent		= 0;
-	description 	= "Kim jest Œni¹cy?";
+	description 	= "Kim jest ÅšniÄ…cy?";
 };                       
 
 FUNC INT Info_GorHanis_Sleeper_Condition()
@@ -100,15 +100,15 @@ FUNC INT Info_GorHanis_Sleeper_Condition()
 
 func VOID Info_GorHanis_Sleeper_Info()
 {
-	AI_Output (other, self,"Info_GorHanis_Sleeper_15_00"); //Kim jest Œni¹cy?
-	AI_Output (self, other,"Info_GorHanis_Sleeper_08_01"); //W naszym obozie znajdziesz œwiêtych mê¿ów, którzy odpowiedz¹ ci na to pytanie znacznie lepiej ni¿ ja.
-	AI_Output (self, other,"Info_GorHanis_Sleeper_08_02"); //Powiem ci tylko tyle: Œni¹cy bêdzie naszym zbawicielem. Przyprowadzi³ nas tutaj i z jego pomoc¹ uda siê nam st¹d wydostaæ.
-	AI_Output (other, self,"Info_GorHanis_Sleeper_15_03"); //Chcesz przez to powiedzieæ, ¿e czekacie a¿ wasz bóg zwróci wam wolnoœæ?
-	AI_Output (self, other,"Info_GorHanis_Sleeper_08_04"); //Tak! Nasze oczekiwanie wkrótce dobiegnie koñca. W tej chwili przygotowujemy siê do rytua³u wielkiego przyzwania.
+	AI_Output (other, self,"Info_GorHanis_Sleeper_15_00"); //Kim jest ÅšniÄ…cy?
+	AI_Output (self, other,"Info_GorHanis_Sleeper_08_01"); //W naszym obozie znajdziesz Å›wiÄ™tych mÄ™Å¼Ã³w, ktÃ³rzy odpowiedzÄ… ci na to pytanie znacznie lepiej niÅ¼ ja.
+	AI_Output (self, other,"Info_GorHanis_Sleeper_08_02"); //Powiem ci tylko tyle: ÅšniÄ…cy bÄ™dzie naszym zbawicielem. PrzyprowadziÅ‚ nas tutaj i z jego pomocÄ… uda siÄ™ nam stÄ…d wydostaÄ‡.
+	AI_Output (other, self,"Info_GorHanis_Sleeper_15_03"); //Chcesz przez to powiedzieÄ‡, Å¼e czekacie aÅ¼ wasz bÃ³g zwrÃ³ci wam wolnoÅ›Ä‡?
+	AI_Output (self, other,"Info_GorHanis_Sleeper_08_04"); //Tak! Nasze oczekiwanie wkrÃ³tce dobiegnie koÅ„ca. W tej chwili przygotowujemy siÄ™ do rytuaÅ‚u wielkiego przyzwania.
 };
 
 // **************************************************
-//					Große Anrufung
+//					GroÃŸe Anrufung
 // **************************************************
 
 instance Info_GorHanis_Summoning (C_INFO)
@@ -118,7 +118,7 @@ instance Info_GorHanis_Summoning (C_INFO)
 	condition		= Info_GorHanis_Summoning_Condition;
 	information		= Info_GorHanis_Summoning_Info;
 	permanent		= 0;
-	description 	= "Na czym polega rytua³, który planujecie?";
+	description 	= "Na czym polega rytuaÅ‚, ktÃ³ry planujecie?";
 };                       
 
 FUNC INT Info_GorHanis_Summoning_Condition()
@@ -131,9 +131,9 @@ FUNC INT Info_GorHanis_Summoning_Condition()
 
 func VOID Info_GorHanis_Summoning_Info()
 {
-	AI_Output (other, self,"Info_GorHanis_Summoning_15_00"); //Na czym polega rytua³, który planujecie?
-	AI_Output (self, other,"Info_GorHanis_Summoning_08_01"); //Nasi prorocy przewidzieli, ¿e wspólne przywo³anie Œni¹cego jest jedyn¹ drog¹ do odzyskania wolnoœci!
-	AI_Output (self, other,"Info_GorHanis_Summoning_08_02"); //Jeœli chcesz siê jeszcze czegoœ dowiedzieæ, powinieneœ udaæ siê do naszego obozu.
+	AI_Output (other, self,"Info_GorHanis_Summoning_15_00"); //Na czym polega rytuaÅ‚, ktÃ³ry planujecie?
+	AI_Output (self, other,"Info_GorHanis_Summoning_08_01"); //Nasi prorocy przewidzieli, Å¼e wspÃ³lne przywoÅ‚anie ÅšniÄ…cego jest jedynÄ… drogÄ… do odzyskania wolnoÅ›ci!
+	AI_Output (self, other,"Info_GorHanis_Summoning_08_02"); //JeÅ›li chcesz siÄ™ jeszcze czegoÅ› dowiedzieÄ‡, powinieneÅ› udaÄ‡ siÄ™ do naszego obozu.
 };
 
 // **************************************************
@@ -147,7 +147,7 @@ instance Info_GorHanis_WayToST(C_INFO)
 	condition		= Info_GorHanis_WayToST_Condition;
 	information		= Info_GorHanis_WayToST_Info;
 	permanent		= 1;
-	description 	= "Móg³byœ opisaæ mi drogê do waszego obozu?";
+	description 	= "MÃ³gÅ‚byÅ› opisaÄ‡ mi drogÄ™ do waszego obozu?";
 };                       
 
 FUNC INT Info_GorHanis_WayToST_Condition()
@@ -160,8 +160,8 @@ FUNC INT Info_GorHanis_WayToST_Condition()
 
 func VOID Info_GorHanis_WayToST_Info()
 {
-	AI_Output (other, self,"Info_GorHanis_WayToST_15_00"); //Móg³byœ opisaæ mi drogê do waszego obozu?
-	AI_Output (self, other,"Info_GorHanis_WayToST_08_01"); //W Starym Obozie znajdziesz kilku Nowicjuszy Bractwa, którzy chêtnie wska¿¹ ci drogê do obozu na bagnie. ZnajdŸ któregoœ z nich i porozmawiaj z nim!
+	AI_Output (other, self,"Info_GorHanis_WayToST_15_00"); //MÃ³gÅ‚byÅ› opisaÄ‡ mi drogÄ™ do waszego obozu?
+	AI_Output (self, other,"Info_GorHanis_WayToST_08_01"); //W Starym Obozie znajdziesz kilku Nowicjuszy Bractwa, ktÃ³rzy chÄ™tnie wskaÅ¼Ä… ci drogÄ™ do obozu na bagnie. ZnajdÅº ktÃ³regoÅ› z nich i porozmawiaj z nim!
 };
 
 // **************************************************
@@ -175,7 +175,7 @@ instance Info_GorHanis_Charge (C_INFO)
 	condition		= Info_GorHanis_Charge_Condition;
 	information		= Info_GorHanis_Charge_Info;
 	permanent		= 0;
-	description 	= "Wyzywam ciê na pojedynek na arenie!";
+	description 	= "Wyzywam ciÄ™ na pojedynek na arenie!";
 };                       
 
 FUNC INT Info_GorHanis_Charge_Condition()
@@ -188,10 +188,10 @@ FUNC INT Info_GorHanis_Charge_Condition()
 
 func VOID Info_GorHanis_Charge_Info()
 {
-	AI_Output (other, self,"Info_GorHanis_Charge_15_00"); //Wyzywam ciê na pojedynek na arenie!
-	AI_Output (self, other,"Info_GorHanis_Charge_08_01"); //Zabicie kogoœ takiego jak ty nie przysporzy raczej chwa³y Œni¹cemu.
-	AI_Output (self, other,"Info_GorHanis_Charge_08_02"); //Stanê z tob¹ w szranki dopiero w tedy, gdy oka¿esz siê godnym rywalem.
-	AI_Output (self, other,"Info_GorHanis_Charge_08_03"); //Ale jestem pewien, ¿e wojownicy z Nowego Obozu nie bêd¹ mieli takich skrupu³ów...…
+	AI_Output (other, self,"Info_GorHanis_Charge_15_00"); //Wyzywam ciÄ™ na pojedynek na arenie!
+	AI_Output (self, other,"Info_GorHanis_Charge_08_01"); //Zabicie kogoÅ› takiego jak ty nie przysporzy raczej chwaÅ‚y ÅšniÄ…cemu.
+	AI_Output (self, other,"Info_GorHanis_Charge_08_02"); //StanÄ™ z tobÄ… w szranki dopiero w tedy, gdy okaÅ¼esz siÄ™ godnym rywalem.
+	AI_Output (self, other,"Info_GorHanis_Charge_08_03"); //Ale jestem pewien, Å¼e wojownicy z Nowego Obozu nie bÄ™dÄ… mieli takich skrupuÅ‚Ã³w...â€¦
 };
 
 // **************************************************
@@ -205,7 +205,7 @@ instance Info_GorHanis_ChargeGood (C_INFO)
 	condition		= Info_GorHanis_ChargeGood_Condition;
 	information		= Info_GorHanis_ChargeGood_Info;
 	permanent		= 1;
-	description 	= "Czy jestem ju¿ doœæ silny, ¿eby siê z tob¹ zmierzyæ?";
+	description 	= "Czy jestem juÅ¼ doÅ›Ä‡ silny, Å¼eby siÄ™ z tobÄ… zmierzyÄ‡?";
 };                       
 
 FUNC INT Info_GorHanis_ChargeGood_Condition()
@@ -218,8 +218,8 @@ FUNC INT Info_GorHanis_ChargeGood_Condition()
 
 func VOID Info_GorHanis_ChargeGood_Info()
 {
-	AI_Output (other, self,"Info_GorHanis_ChargeGood_15_00"); //Czy jestem ju¿ doœæ silny, ¿eby siê z tob¹ zmierzyæ?
-	AI_Output (self, other,"Info_GorHanis_ChargeGood_08_01"); //Nie! Jesteœ jeszcze zbyt s³aby. Nie sprostasz mi w walce!
+	AI_Output (other, self,"Info_GorHanis_ChargeGood_15_00"); //Czy jestem juÅ¼ doÅ›Ä‡ silny, Å¼eby siÄ™ z tobÄ… zmierzyÄ‡?
+	AI_Output (self, other,"Info_GorHanis_ChargeGood_08_01"); //Nie! JesteÅ› jeszcze zbyt sÅ‚aby. Nie sprostasz mi w walce!
 };
 
 
@@ -276,7 +276,7 @@ instance Info_TPL_1422_GorHanis1 (C_INFO)
 	information		= Info_TPL_1422_GorHanis1_Info;
 	important			= 0;
 	permanent		= 0;
-	description		= "Ich will helfen den Schläfer zu erwecken."; 
+	description		= "Ich will helfen den SchlÃ¤fer zu erwecken."; 
 };
 
 FUNC int Info_TPL_1422_GorHanis1_Condition()
@@ -288,8 +288,8 @@ FUNC int Info_TPL_1422_GorHanis1_Condition()
 
 func void Info_TPL_1422_GorHanis1_Info()
 {
-	AI_Output (other, self,"Info_TPL_1422_GorHanis1_15_01"); //Ich will helfen den Schläfer zu erwecken.
-	AI_Output (self, other,"Info_TPL_1422_GorHanis1_08_02"); //Hmm, siehst gar nicht so aus, als wolltest Du wirklich helfen wollen. Geh aber ruhig weiter, ich halte dich nicht auf, falls du lügst, wird der Hohenpriester dir schon eine Lektion erteilen.
+	AI_Output (other, self,"Info_TPL_1422_GorHanis1_15_01"); //Ich will helfen den SchlÃ¤fer zu erwecken.
+	AI_Output (self, other,"Info_TPL_1422_GorHanis1_08_02"); //Hmm, siehst gar nicht so aus, als wolltest Du wirklich helfen wollen. Geh aber ruhig weiter, ich halte dich nicht auf, falls du lÃ¼gst, wird der Hohenpriester dir schon eine Lektion erteilen.
 };
 
 
@@ -338,7 +338,7 @@ FUNC int Info_TPL_1422_GorHanis3_Condition()
 func void Info_TPL_1422_GorHanis3_Info()
 {
 	AI_Output (other, self,"Info_TPL_1422_GorHanis3_15_01"); //Wie seit ihr an dem Priester vorbei gekommen?
-	AI_Output (self, other,"Info_TPL_1422_GorHanis3_08_02"); //Ich sage es dir, es wird dir eh nicht nutzen. Der Priester hat uns nur passieren lassen, weil Meister Kalom mit im gesprochen hat, dass Glück wirst du nicht haben. Geh nur (lacht).
+	AI_Output (self, other,"Info_TPL_1422_GorHanis3_08_02"); //Ich sage es dir, es wird dir eh nicht nutzen. Der Priester hat uns nur passieren lassen, weil Meister Kalom mit im gesprochen hat, dass GlÃ¼ck wirst du nicht haben. Geh nur (lacht).
 };
 
 */

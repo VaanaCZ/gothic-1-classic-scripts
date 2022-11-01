@@ -47,7 +47,7 @@ FUNC INT DIA_Kyle_HutRage_Condition()
 
 FUNC VOID DIA_Kyle_HutRage_Info()
 {
-	AI_Output (self, other,"DIA_Kyle_HutRage_10_00"); //Ile razy mam wam powtarzaæ, sukinsyny, ¿ebyœcie nie przebiegali przez moj¹ chatê!
+	AI_Output (self, other,"DIA_Kyle_HutRage_10_00"); //Ile razy mam wam powtarzaÄ‡, sukinsyny, Å¼ebyÅ›cie nie przebiegali przez mojÄ… chatÄ™!
 };
 
 // **************************************************
@@ -61,7 +61,7 @@ INSTANCE DIA_Kyle_Problem (C_INFO)
 	condition		= DIA_Kyle_Problem_Condition;
 	information		= DIA_Kyle_Problem_Info;
 	permanent		= 1;
-	description		= "Co ciê ugryz³o?";
+	description		= "Co ciÄ™ ugryzÅ‚o?";
 };
 
 FUNC INT DIA_Kyle_Problem_Condition()
@@ -71,14 +71,14 @@ FUNC INT DIA_Kyle_Problem_Condition()
 
 FUNC VOID DIA_Kyle_Problem_Info()
 {
-	AI_Output (other, self,"DIA_Kyle_Problem_15_00"); //Co ciê ugryz³o?
-	AI_Output (self, other,"DIA_Kyle_Problem_10_01"); //Zostaw mnie w spokoju! Mam was wszystkich serdecznie doœæ!
-	AI_Output (self, other,"DIA_Kyle_Problem_10_02"); //Wszystko zaczê³o siê, gdy zbudowa³em sobie tê chatê.
-	AI_Output (self, other,"DIA_Kyle_Problem_10_03"); //Wszyscy mówili: nie buduj chaty tak blisko rowu.
-	AI_Output (self, other,"DIA_Kyle_Problem_10_04"); //Ale ¿aden z tych sukinkotów nie powiedzia³ mi, co siê mo¿e staæ, jeœli j¹ tu jednak wybudujê!
-	AI_Output (self, other,"DIA_Kyle_Problem_10_05"); //Jak wróci³em z kopalni kilka dni temu, mia³em dodatkowe drzwi.
-	AI_Output (self, other,"DIA_Kyle_Problem_10_06"); //Banda wieprzy! Nienawidzê ich! Nie wyobra¿asz sobie, jak ja ich NIENAWIDZÊ!!!
-	AI_Output (self, other,"DIA_Kyle_Problem_10_07"); //Teraz wszyscy prze³a¿¹ przez moj¹ chatê jakby nigdy nic. Ka¿dy cholerny dupek!
+	AI_Output (other, self,"DIA_Kyle_Problem_15_00"); //Co ciÄ™ ugryzÅ‚o?
+	AI_Output (self, other,"DIA_Kyle_Problem_10_01"); //Zostaw mnie w spokoju! Mam was wszystkich serdecznie doÅ›Ä‡!
+	AI_Output (self, other,"DIA_Kyle_Problem_10_02"); //Wszystko zaczÄ™Å‚o siÄ™, gdy zbudowaÅ‚em sobie tÄ™ chatÄ™.
+	AI_Output (self, other,"DIA_Kyle_Problem_10_03"); //Wszyscy mÃ³wili: nie buduj chaty tak blisko rowu.
+	AI_Output (self, other,"DIA_Kyle_Problem_10_04"); //Ale Å¼aden z tych sukinkotÃ³w nie powiedziaÅ‚ mi, co siÄ™ moÅ¼e staÄ‡, jeÅ›li jÄ… tu jednak wybudujÄ™!
+	AI_Output (self, other,"DIA_Kyle_Problem_10_05"); //Jak wrÃ³ciÅ‚em z kopalni kilka dni temu, miaÅ‚em dodatkowe drzwi.
+	AI_Output (self, other,"DIA_Kyle_Problem_10_06"); //Banda wieprzy! NienawidzÄ™ ich! Nie wyobraÅ¼asz sobie, jak ja ich NIENAWIDZÄ˜!!!
+	AI_Output (self, other,"DIA_Kyle_Problem_10_07"); //Teraz wszyscy przeÅ‚aÅ¼Ä… przez mojÄ… chatÄ™ jakby nigdy nic. KaÅ¼dy cholerny dupek!
 };
 
 	

@@ -20,7 +20,7 @@ func VOID DIA_Milten_EXIT_Info()
 {
 	if (self.aivar[AIV_PARTYMEMBER])
 	{
-		AI_Output 		(self, hero,"DIA_Milten_EXIT_02_00"); //Ruszamy w drogê.
+		AI_Output 		(self, hero,"DIA_Milten_EXIT_02_00"); //Ruszamy w drogÄ™.
 	}
 	else
 	{
@@ -54,7 +54,7 @@ FUNC INT DIA_Milten_First_Condition()
 
 func VOID DIA_Milten_First_Info()
 {
-	AI_Output (self, other,"DIA_Milten_First_02_00"); //Nie wolno ci przekroczyæ progu tego domu bez pozwolenia Mistrza Corristo.
+	AI_Output (self, other,"DIA_Milten_First_02_00"); //Nie wolno ci przekroczyÄ‡ progu tego domu bez pozwolenia Mistrza Corristo.
 };
 
 //*********************************************
@@ -68,7 +68,7 @@ instance DIA_Milten_Hello (C_INFO)
 	condition	= DIA_Milten_Hello_Condition;
 	information	= DIA_Milten_Hello_Info;
 	permanent	= 0;
-	description = "Szukam Arcymistrza Krêgu Ognia.";
+	description = "Szukam Arcymistrza KrÄ™gu Ognia.";
 };                       
 
 FUNC INT DIA_Milten_Hello_Condition()
@@ -81,7 +81,7 @@ FUNC INT DIA_Milten_Hello_Condition()
 
 func VOID DIA_Milten_Hello_Info()
 {
-	AI_Output (other, self,"DIA_Milten_Hello_15_00"); //Szukam Arcymistrza Krêgu Ognia.
+	AI_Output (other, self,"DIA_Milten_Hello_15_00"); //Szukam Arcymistrza KrÄ™gu Ognia.
 	AI_Output (self, other,"DIA_Milten_Hello_02_01"); //Chodzi ci o Corristo? Czego od niego chcesz?
 };
 
@@ -113,12 +113,12 @@ func VOID DIA_Milten_GotoCorristo_Info()
 	if ( (Npc_HasItems(other,ItWr_Fire_Letter_01)>=1) || (Npc_HasItems(other,ItWr_Fire_Letter_02)>=1) )
 	{
 		//***kopierte AI_outputs, falls SC Brief noch hat***
-		AI_Output (other, self,"DIA_Milten_Hello_15_00"); //Szukam Arcymistrza Krêgu Ognia.
+		AI_Output (other, self,"DIA_Milten_Hello_15_00"); //Szukam Arcymistrza KrÄ™gu Ognia.
 		AI_Output (self, other,"DIA_Milten_Hello_02_01"); //Chodzi ci o Corristo? Czego od niego chcesz?
 		AI_Output (other, self,"DIA_Milten_Letter_15_00"); //Mam list dla Arcymistrza.
-		//AI_Output (self, other,"DIA_Milten_Letter_02_01"); //Bist du ein Bote aus der Außenwelt?
+		//AI_Output (self, other,"DIA_Milten_Letter_02_01"); //Bist du ein Bote aus der AuÃŸenwelt?
 		//AI_Output (other, self,"DIA_Milten_Letter_15_02"); //Ja. Ein Magier gab mir den Brief, kurz bevor sie mich in die Kolonie geworfen haben.
-		AI_Output (self, other,"DIA_Milten_Letter_02_03"); //Poka¿ to pismo.
+		AI_Output (self, other,"DIA_Milten_Letter_02_03"); //PokaÅ¼ to pismo.
 		AI_Output (other, self,"DIA_Milten_Letter_Give_15_00"); //Oto i ono.
 		B_GiveXP(XP_XardasLetter);
 		if		Npc_HasItems(other,ItWr_Fire_Letter_01)
@@ -129,13 +129,13 @@ func VOID DIA_Milten_GotoCorristo_Info()
 		{ 
 			B_GiveInvItems(other, self, ItWr_Fire_Letter_02, 1);
 		};
-		AI_Output (other, self,"GUR_1200_Yberion_EARN_Info_15_01"); //Chyba nale¿y mi siê jakaœ nagroda?
-		AI_Output (self,hero,"Info_Milten_SHSEAL_02_05"); //To ju¿ nie bêdzie potrzebne.
+		AI_Output (other, self,"GUR_1200_Yberion_EARN_Info_15_01"); //Chyba naleÅ¼y mi siÄ™ jakaÅ› nagroda?
+		AI_Output (self,hero,"Info_Milten_SHSEAL_02_05"); //To juÅ¼ nie bÄ™dzie potrzebne.
 		//***kopierte AI_outputs ENDE***
 	};
 	
-	AI_Output (self, other,"DIA_Milten_GotoCorristo_02_01"); //S³yszeliœmy o twoich dokonaniach w Starej Kopalni. Nasi górnicy nie musz¹ siê ju¿ obawiaæ ataków ze strony pe³zaczy.
-	AI_Output (self, other,"DIA_Milten_GotoCorristo_02_02"); //Wieœci o tobie dotar³y nawet do Corristo. Mistrz ¿yczy sobie z tob¹ rozmawiaæ. IdŸ do niego natychmiast.
+	AI_Output (self, other,"DIA_Milten_GotoCorristo_02_01"); //SÅ‚yszeliÅ›my o twoich dokonaniach w Starej Kopalni. Nasi gÃ³rnicy nie muszÄ… siÄ™ juÅ¼ obawiaÄ‡ atakÃ³w ze strony peÅ‚zaczy.
+	AI_Output (self, other,"DIA_Milten_GotoCorristo_02_02"); //WieÅ›ci o tobie dotarÅ‚y nawet do Corristo. Mistrz Å¼yczy sobie z tobÄ… rozmawiaÄ‡. IdÅº do niego natychmiast.
 };
 
 //*********************************************
@@ -166,11 +166,11 @@ FUNC INT DIA_Milten_Letter_Condition()
 func VOID DIA_Milten_Letter_Info()
 {
 	AI_Output			(other, self,"DIA_Milten_Letter_15_00"); //Mam list dla Arcymistrza.
-	AI_Output			(self, other,"DIA_Milten_Letter_02_01"); //Jesteœ pos³añcem z zewnêtrznego œwiata?
-	AI_Output			(other, self,"DIA_Milten_Letter_15_02"); //Tak. Jakiœ mag da³ mi to pismo zanim zrzucono mnie na dó³.
-	AI_Output			(self, other,"DIA_Milten_Letter_02_03"); //Poka¿ to pismo.
+	AI_Output			(self, other,"DIA_Milten_Letter_02_01"); //JesteÅ› posÅ‚aÅ„cem z zewnÄ™trznego Å›wiata?
+	AI_Output			(other, self,"DIA_Milten_Letter_15_02"); //Tak. JakiÅ› mag daÅ‚ mi to pismo zanim zrzucono mnie na dÃ³Å‚.
+	AI_Output			(self, other,"DIA_Milten_Letter_02_03"); //PokaÅ¼ to pismo.
 	Info_ClearChoices	(DIA_Milten_Letter);
-	Info_AddChoice		(DIA_Milten_Letter,"Najpierw chcê dostaæ moj¹ nagrodê.",DIA_Milten_Letter_NO);
+	Info_AddChoice		(DIA_Milten_Letter,"Najpierw chcÄ™ dostaÄ‡ mojÄ… nagrodÄ™.",DIA_Milten_Letter_NO);
 	Info_AddChoice		(DIA_Milten_Letter,"Oto i ono.",DIA_Milten_Letter_Give);
 };
 
@@ -180,13 +180,13 @@ func void DIA_Milten_Letter_Give()
 	B_UseFakeScroll();
 	
 	B_GiveXP(XP_XardasLetter);
-	AI_Output (self, other,"DIA_Milten_Letter_Give_02_03"); //Ale¿ ten list zaadresowano do Xardasa!
-	AI_Output (other, self,"DIA_Milten_Letter_Give_15_04"); //Co w tym takiego niezwyk³ego?
-	AI_Output (self, other,"DIA_Milten_Letter_Give_02_05"); //Xardas ju¿ od dawna nie jest s³ug¹ Innosa. Opuœci³ nas wiele lat temu i zwróci³ siê w stronê czarnej magii.
-	AI_Output (self, other,"DIA_Milten_Letter_Give_02_06"); //Mieszka w wie¿y, w samym œrodku terytorium Orków. Chyba ca³kowicie poœwiêci³ siê swoim badaniom.
-	AI_Output (self, other,"DIA_Milten_Letter_Give_02_07"); //Xardas próbuje na w³asn¹ rêkê dowiedzieæ siê co posz³o nie tak przy tworzeniu Bariery.
+	AI_Output (self, other,"DIA_Milten_Letter_Give_02_03"); //AleÅ¼ ten list zaadresowano do Xardasa!
+	AI_Output (other, self,"DIA_Milten_Letter_Give_15_04"); //Co w tym takiego niezwykÅ‚ego?
+	AI_Output (self, other,"DIA_Milten_Letter_Give_02_05"); //Xardas juÅ¼ od dawna nie jest sÅ‚ugÄ… Innosa. OpuÅ›ciÅ‚ nas wiele lat temu i zwrÃ³ciÅ‚ siÄ™ w stronÄ™ czarnej magii.
+	AI_Output (self, other,"DIA_Milten_Letter_Give_02_06"); //Mieszka w wieÅ¼y, w samym Å›rodku terytorium OrkÃ³w. Chyba caÅ‚kowicie poÅ›wiÄ™ciÅ‚ siÄ™ swoim badaniom.
+	AI_Output (self, other,"DIA_Milten_Letter_Give_02_07"); //Xardas prÃ³buje na wÅ‚asnÄ… rÄ™kÄ™ dowiedzieÄ‡ siÄ™ co poszÅ‚o nie tak przy tworzeniu Bariery.
 	
-	AI_Output (self, other,"DIA_Milten_Letter_Give_02_08"); //Zaczekaj tu na mnie. Nied³ugo wrócê.
+	AI_Output (self, other,"DIA_Milten_Letter_Give_02_08"); //Zaczekaj tu na mnie. NiedÅ‚ugo wrÃ³cÄ™.
 	AI_StopProcessInfos	(self);
 	AI_GotoWP (self, "OCC_CHAPEL_STAIRCASE_TOP");
 	AI_GotoWP (self, "OCC_CHAPEL_ENTRANCE");
@@ -205,20 +205,20 @@ func void DIA_Milten_Letter_Give()
 
 func void DIA_Milten_Letter_NO()
 {
-	AI_Output (other, self,"DIA_Milten_Letter_NO_15_00"); //Najpierw chcê dostaæ moj¹ nagrodê.
-	AI_Output (self, other,"DIA_Milten_Letter_NO_02_01"); //Corristo ka¿e Torrezowi wydaæ ci nagrodê, jak tylko obejrzy ten list.
-	AI_Output (self, other,"DIA_Milten_Letter_NO_02_02"); //Jestem s³ug¹ Innosa - nigdy nie k³amiê. A teraz daj mi ten list.
+	AI_Output (other, self,"DIA_Milten_Letter_NO_15_00"); //Najpierw chcÄ™ dostaÄ‡ mojÄ… nagrodÄ™.
+	AI_Output (self, other,"DIA_Milten_Letter_NO_02_01"); //Corristo kaÅ¼e Torrezowi wydaÄ‡ ci nagrodÄ™, jak tylko obejrzy ten list.
+	AI_Output (self, other,"DIA_Milten_Letter_NO_02_02"); //Jestem sÅ‚ugÄ… Innosa - nigdy nie kÅ‚amiÄ™. A teraz daj mi ten list.
 	Info_ClearChoices	(DIA_Milten_Letter);
-	Info_AddChoice		(DIA_Milten_Letter,"Wola³bym oddaæ ten list Torrezowi.",DIA_Milten_Letter_NO_AGAIN);
+	Info_AddChoice		(DIA_Milten_Letter,"WolaÅ‚bym oddaÄ‡ ten list Torrezowi.",DIA_Milten_Letter_NO_AGAIN);
 	Info_AddChoice		(DIA_Milten_Letter,"Oto i ono.",DIA_Milten_Letter_Give);
 };
 
 func void DIA_Milten_Letter_NO_AGAIN()
 {
-	AI_Output (other, self,"DIA_Milten_Letter_NO_AGAIN_15_00"); //Wola³bym oddaæ ten list Torrezowi.
-	AI_Output (self, other,"DIA_Milten_Letter_NO_AGAIN_02_01"); //Nie dasz siê przekonaæ, co?
-	AI_Output (other, self,"DIA_Milten_Letter_NO_AGAIN_15_02"); //Nie. Najpierw chcê zobaczyæ moj¹ nagrodê.
-	AI_Output (self, other,"DIA_Milten_Letter_NO_AGAIN_02_03"); //Có¿. Jeœli tego sobie ¿yczysz. Zaczekaj tutaj.
+	AI_Output (other, self,"DIA_Milten_Letter_NO_AGAIN_15_00"); //WolaÅ‚bym oddaÄ‡ ten list Torrezowi.
+	AI_Output (self, other,"DIA_Milten_Letter_NO_AGAIN_02_01"); //Nie dasz siÄ™ przekonaÄ‡, co?
+	AI_Output (other, self,"DIA_Milten_Letter_NO_AGAIN_15_02"); //Nie. Najpierw chcÄ™ zobaczyÄ‡ mojÄ… nagrodÄ™.
+	AI_Output (self, other,"DIA_Milten_Letter_NO_AGAIN_02_03"); //CÃ³Å¼. JeÅ›li tego sobie Å¼yczysz. Zaczekaj tutaj.
 
 	Info_ClearChoices	(DIA_Milten_Letter);
 	AI_StopProcessInfos	(self);
@@ -255,12 +255,12 @@ func VOID DIA_Milten_ComesBack_Info()
 {
 	if (milten_HasLetter==FALSE)
 	{
-		AI_Output (self, other,"DIA_Milten_ComesBack_02_00"); //Corristo nie by³ zachwycony brakiem szacunku, jaki okaza³eœ s³ugom Innosa.
-		AI_Output (self, other,"DIA_Milten_ComesBack_02_01"); //Ale powiedzia³, ¿e mo¿esz iœæ do Torreza i odebraæ zwyczajow¹ nagrodê pos³añców.
+		AI_Output (self, other,"DIA_Milten_ComesBack_02_00"); //Corristo nie byÅ‚ zachwycony brakiem szacunku, jaki okazaÅ‚eÅ› sÅ‚ugom Innosa.
+		AI_Output (self, other,"DIA_Milten_ComesBack_02_01"); //Ale powiedziaÅ‚, Å¼e moÅ¼esz iÅ›Ä‡ do Torreza i odebraÄ‡ zwyczajowÄ… nagrodÄ™ posÅ‚aÅ„cÃ³w.
 	}
 	else
 	{
-		AI_Output (self, other,"DIA_Milten_ComesBack_02_02"); //Corristo jest niezwykle uradowany. Powiedzia³, ¿e mo¿esz iœæ do Torreza i wybraæ sobie nagrodê.
+		AI_Output (self, other,"DIA_Milten_ComesBack_02_02"); //Corristo jest niezwykle uradowany. PowiedziaÅ‚, Å¼e moÅ¼esz iÅ›Ä‡ do Torreza i wybraÄ‡ sobie nagrodÄ™.
 	};
 };
 
@@ -275,7 +275,7 @@ instance DIA_Milten_WoTorrez (C_INFO)
 	condition	= DIA_Milten_WoTorrez_Condition;
 	information	= DIA_Milten_WoTorrez_Info;
 	permanent	= 0;
-	description	= "Gdzie znajdê tego Torreza?";
+	description	= "Gdzie znajdÄ™ tego Torreza?";
 };                       
 
 FUNC INT DIA_Milten_WoTorrez_Condition()
@@ -288,9 +288,9 @@ FUNC INT DIA_Milten_WoTorrez_Condition()
 
 func VOID DIA_Milten_WoTorrez_Info()
 {
-	AI_Output (other, self,"DIA_Milten_WoTorrez_15_00"); //Gdzie znajdê tego Torreza?
-	AI_Output (self, other,"DIA_Milten_WoTorrez_02_01"); //W ci¹gu dnia znajdziesz go pewnie przed œwi¹tyni¹.
-	AI_Output (self, other,"DIA_Milten_WoTorrez_02_02"); //Noc spêdza w œrodku, jak my wszyscy, ale tylko magom wolno wchodziæ do œwi¹tyni, wiêc mo¿esz z nim porozmawiaæ jedynie za dnia.
+	AI_Output (other, self,"DIA_Milten_WoTorrez_15_00"); //Gdzie znajdÄ™ tego Torreza?
+	AI_Output (self, other,"DIA_Milten_WoTorrez_02_01"); //W ciÄ…gu dnia znajdziesz go pewnie przed Å›wiÄ…tyniÄ….
+	AI_Output (self, other,"DIA_Milten_WoTorrez_02_02"); //Noc spÄ™dza w Å›rodku, jak my wszyscy, ale tylko magom wolno wchodziÄ‡ do Å›wiÄ…tyni, wiÄ™c moÅ¼esz z nim porozmawiaÄ‡ jedynie za dnia.
 };
 
 //*********************************************
@@ -304,7 +304,7 @@ instance DIA_Milten_NochEinBrief (C_INFO)
 	condition	= DIA_Milten_NochEinBrief_Condition;
 	information	= DIA_Milten_NochEinBrief_Info;
 	permanent	= 0;
-	description = "Przynoszê list od Magów Wody.";
+	description = "PrzynoszÄ™ list od MagÃ³w Wody.";
 };                       
 
 FUNC INT DIA_Milten_NochEinBrief_Condition()
@@ -317,9 +317,9 @@ FUNC INT DIA_Milten_NochEinBrief_Condition()
 
 func VOID DIA_Milten_NochEinBrief_Info()
 {
-	AI_Output (other, self,"DIA_Milten_NochEinBrief_15_00"); //Przynoszê list od Magów Wody.
-	AI_Output (self, other,"DIA_Milten_NochEinBrief_02_01"); //Ach, to œwietnie! Zaniosê go Corristo.
-	AI_Output (self, other,"DIA_Milten_NochEinBrief_02_02"); //Magowie Wody z pewnoœci¹ sowicie wynagrodz¹ ciê po powrocie do Nowego Obozu.
+	AI_Output (other, self,"DIA_Milten_NochEinBrief_15_00"); //PrzynoszÄ™ list od MagÃ³w Wody.
+	AI_Output (self, other,"DIA_Milten_NochEinBrief_02_01"); //Ach, to Å›wietnie! ZaniosÄ™ go Corristo.
+	AI_Output (self, other,"DIA_Milten_NochEinBrief_02_02"); //Magowie Wody z pewnoÅ›ciÄ… sowicie wynagrodzÄ… ciÄ™ po powrocie do Nowego Obozu.
 	
 	Cronos_Messenger = LOG_SUCCESS;
 	B_GiveInvItems (other,self,Cronos_Brief,1);
@@ -336,7 +336,7 @@ instance DIA_Milten_PERM (C_INFO)
 	condition	= DIA_Milten_PERM_Condition;
 	information	= DIA_Milten_PERM_Info;
 	permanent	= 0;
-	description = "Opowiedz mi coœ o Magach Ognia.";
+	description = "Opowiedz mi coÅ› o Magach Ognia.";
 };                       
 
 FUNC INT DIA_Milten_PERM_Condition()
@@ -349,11 +349,11 @@ FUNC INT DIA_Milten_PERM_Condition()
 
 func VOID DIA_Milten_PERM_Info()
 {
-	AI_Output (other, self,"DIA_Milten_PERM_15_00"); //Opowiedz mi coœ o Magach Ognia.
-	AI_Output (self, other,"DIA_Milten_PERM_02_01"); //Kr¹g Magów Ognia czerpie sw¹ moc z ³aski Innosa. Bóg œwiat³a, prawdy i sprawiedliwoœci roztacza nad nami swoj¹ opiekê.
-	AI_Output (self, other,"DIA_Milten_PERM_02_02"); //Magowie s¹ jego wybrañcami i pozosta³ych ludzi traktuj¹ w sposób nale¿ny wybrañcom.
-	AI_Output (self, other,"DIA_Milten_PERM_02_03"); //Przyjêcie do Krêgu to najwa¿niejszy moment w moim ¿yciu. Opiekê nade mn¹ roztoczy³ sam Corristo, który twierdzi, ¿e wnios³em do naszej spo³ecznoœci powiew œwie¿oœci.
-	AI_Output (self, other,"DIA_Milten_PERM_02_04"); //Od tej chwili ca³y mój czas poœwiêcam na ci¹g³e doskonalenie umiejêtnoœci magicznych. Mam nadziejê, ¿e pewnego dnia zostanê przyjêty do wy¿szego Krêgu.
+	AI_Output (other, self,"DIA_Milten_PERM_15_00"); //Opowiedz mi coÅ› o Magach Ognia.
+	AI_Output (self, other,"DIA_Milten_PERM_02_01"); //KrÄ…g MagÃ³w Ognia czerpie swÄ… moc z Å‚aski Innosa. BÃ³g Å›wiatÅ‚a, prawdy i sprawiedliwoÅ›ci roztacza nad nami swojÄ… opiekÄ™.
+	AI_Output (self, other,"DIA_Milten_PERM_02_02"); //Magowie sÄ… jego wybraÅ„cami i pozostaÅ‚ych ludzi traktujÄ… w sposÃ³b naleÅ¼ny wybraÅ„com.
+	AI_Output (self, other,"DIA_Milten_PERM_02_03"); //PrzyjÄ™cie do KrÄ™gu to najwaÅ¼niejszy moment w moim Å¼yciu. OpiekÄ™ nade mnÄ… roztoczyÅ‚ sam Corristo, ktÃ³ry twierdzi, Å¼e wniosÅ‚em do naszej spoÅ‚ecznoÅ›ci powiew Å›wieÅ¼oÅ›ci.
+	AI_Output (self, other,"DIA_Milten_PERM_02_04"); //Od tej chwili caÅ‚y mÃ³j czas poÅ›wiÄ™cam na ciÄ…gÅ‚e doskonalenie umiejÄ™tnoÅ›ci magicznych. Mam nadziejÄ™, Å¼e pewnego dnia zostanÄ™ przyjÄ™ty do wyÅ¼szego KrÄ™gu.
 };
 
 //*********************************************
@@ -367,7 +367,7 @@ instance DIA_Milten_WannaMage (C_INFO)
 	condition	= DIA_Milten_WannaMage_Condition;
 	information	= DIA_Milten_WannaMage_Info;
 	permanent	= 1;
-	description = "Chcia³bym zostaæ uczniem maga, tak jak ty.";
+	description = "ChciaÅ‚bym zostaÄ‡ uczniem maga, tak jak ty.";
 };                       
 
 FUNC INT DIA_Milten_WannaMage_Condition()
@@ -380,10 +380,10 @@ FUNC INT DIA_Milten_WannaMage_Condition()
 
 func VOID DIA_Milten_WannaMage_Info()
 {
-	AI_Output (other, self,"DIA_Milten_WannaMage_15_00"); //Chcia³bym zostaæ uczniem maga, tak jak ty.
-	AI_Output (self, other,"DIA_Milten_WannaMage_02_01"); //Corristo wybra³ mnie, bo odda³em szczególne us³ugi potê¿nym Magnatom.
-	AI_Output (self, other,"DIA_Milten_WannaMage_02_02"); //Jeœli naprawdê chcesz zostaæ jego uczniem, musisz wykazaæ siê czymœ niezwyk³ym.
-	AI_Output (self, other,"DIA_Milten_WannaMage_02_03"); //No i oczywiœcie musisz najpierw zostaæ przyjêty do Starego Obozu. Corristo niechêtnie patrzy na ludzi z innych osiedli.
+	AI_Output (other, self,"DIA_Milten_WannaMage_15_00"); //ChciaÅ‚bym zostaÄ‡ uczniem maga, tak jak ty.
+	AI_Output (self, other,"DIA_Milten_WannaMage_02_01"); //Corristo wybraÅ‚ mnie, bo oddaÅ‚em szczegÃ³lne usÅ‚ugi potÄ™Å¼nym Magnatom.
+	AI_Output (self, other,"DIA_Milten_WannaMage_02_02"); //JeÅ›li naprawdÄ™ chcesz zostaÄ‡ jego uczniem, musisz wykazaÄ‡ siÄ™ czymÅ› niezwykÅ‚ym.
+	AI_Output (self, other,"DIA_Milten_WannaMage_02_03"); //No i oczywiÅ›cie musisz najpierw zostaÄ‡ przyjÄ™ty do Starego Obozu. Corristo niechÄ™tnie patrzy na ludzi z innych osiedli.
 };
 
 
@@ -431,9 +431,9 @@ func void Info_Milten_SHWAIT_Info()
 {
 	AI_GotoNpc		(self,hero);
 	
-	AI_Output		(self,hero,"Info_Milten_SHWAIT_02_01"); //Witaj! Mój przyjaciel Lester, z obozu na bagnie powiadomi³ mnie o twoich niezwyk³ych czynach!
-	AI_Output		(self,hero,"Info_Milten_SHWAIT_02_02"); //Jestem pod wra¿eniem. Sta³eœ siê bardzo potê¿ny.
-	AI_Output		(hero,self,"Info_Milten_SHWAIT_15_03"); //Robiê co mogê.
+	AI_Output		(self,hero,"Info_Milten_SHWAIT_02_01"); //Witaj! MÃ³j przyjaciel Lester, z obozu na bagnie powiadomiÅ‚ mnie o twoich niezwykÅ‚ych czynach!
+	AI_Output		(self,hero,"Info_Milten_SHWAIT_02_02"); //Jestem pod wraÅ¼eniem. StaÅ‚eÅ› siÄ™ bardzo potÄ™Å¼ny.
+	AI_Output		(hero,self,"Info_Milten_SHWAIT_15_03"); //RobiÄ™ co mogÄ™.
 	AI_Output		(self,hero,"Info_Milten_SHWAIT_02_04"); //Ach, zawsze skromny, co?
 };
 
@@ -447,7 +447,7 @@ instance Info_Milten_SHGORN (C_INFO)
 	information	= Info_Milten_SHGORN_Info;
 	important	= 0;
 	permanent	= 0;
-	description	= "Spotka³em Gorna.";
+	description	= "SpotkaÅ‚em Gorna.";
 };
 
 FUNC int Info_Milten_SHGORN_Condition()
@@ -460,10 +460,10 @@ FUNC int Info_Milten_SHGORN_Condition()
 
 func void Info_Milten_SHGORN_Info()
 {
-	AI_Output		(hero,self,"Info_Milten_SHGORN_15_01"); //Spotka³em Gorna.
-	AI_Output		(self,hero,"Info_Milten_SHGORN_02_02"); //Naprawdê? Gdzie?
-	AI_Output		(hero,self,"Info_Milten_SHGORN_15_03"); //W ruinach klasztoru, nad morzem. Bawiliœmy siê w poszukiwaczy skarbów.
-	AI_Output		(self,hero,"Info_Milten_SHGORN_02_04"); //Zapewne nie omieszka mi o tym opowiedzieæ podczas naszego nastêpnego spotkania.
+	AI_Output		(hero,self,"Info_Milten_SHGORN_15_01"); //SpotkaÅ‚em Gorna.
+	AI_Output		(self,hero,"Info_Milten_SHGORN_02_02"); //NaprawdÄ™? Gdzie?
+	AI_Output		(hero,self,"Info_Milten_SHGORN_15_03"); //W ruinach klasztoru, nad morzem. BawiliÅ›my siÄ™ w poszukiwaczy skarbÃ³w.
+	AI_Output		(self,hero,"Info_Milten_SHGORN_02_04"); //Zapewne nie omieszka mi o tym opowiedzieÄ‡ podczas naszego nastÄ™pnego spotkania.
 };
 
 //***************************************************************************
@@ -476,7 +476,7 @@ instance Info_Milten_SHLESTER (C_INFO)
 	information	= Info_Milten_SHLESTER_Info;
 	important	= 0;
 	permanent	= 0;
-	description	= "Lester i ja rozejrzeliœmy siê trochê po fortecy w górach.";
+	description	= "Lester i ja rozejrzeliÅ›my siÄ™ trochÄ™ po fortecy w gÃ³rach.";
 };
 
 FUNC int Info_Milten_SHLESTER_Condition()
@@ -489,10 +489,10 @@ FUNC int Info_Milten_SHLESTER_Condition()
 
 func void Info_Milten_SHLESTER_Info()
 {
-	AI_Output		(hero,self,"Info_Milten_SHLESTER_15_01"); //Lester i ja rozejrzeliœmy siê trochê po fortecy w górach.
-	AI_Output		(self,hero,"Info_Milten_SHLESTER_02_02"); //Tak, s³ysza³em. Wygl¹da na to, ¿e mo¿na ci zaufaæ.
-	AI_Output		(hero,self,"Info_Milten_SHLESTER_15_03"); //Gdzie wasza czwórka zwyk³a siê spotykaæ?
-	AI_Output		(self,hero,"Info_Milten_SHLESTER_02_04"); //Ach, tu i tam. Spotykamy siê w najró¿niejszych miejscach.
+	AI_Output		(hero,self,"Info_Milten_SHLESTER_15_01"); //Lester i ja rozejrzeliÅ›my siÄ™ trochÄ™ po fortecy w gÃ³rach.
+	AI_Output		(self,hero,"Info_Milten_SHLESTER_02_02"); //Tak, sÅ‚yszaÅ‚em. WyglÄ…da na to, Å¼e moÅ¼na ci zaufaÄ‡.
+	AI_Output		(hero,self,"Info_Milten_SHLESTER_15_03"); //Gdzie wasza czwÃ³rka zwykÅ‚a siÄ™ spotykaÄ‡?
+	AI_Output		(self,hero,"Info_Milten_SHLESTER_02_04"); //Ach, tu i tam. Spotykamy siÄ™ w najrÃ³Å¼niejszych miejscach.
 };
 
 //***************************************************************************
@@ -519,10 +519,10 @@ FUNC int Info_Milten_SHYOU_Condition()
 func void Info_Milten_SHYOU_Info()
 {
 	AI_Output		(hero,self,"Info_Milten_SHYOU_15_01"); //Co tu robisz?
-	AI_Output		(self,hero,"Info_Milten_SHYOU_02_02"); //Niedaleko st¹d le¿y staro¿ytny kamienny kr¹g. W jego centrum znajduje siê wejœcie do podziemnej komory.
-	AI_Output		(hero,self,"Info_Milten_SHYOU_15_03"); //Jakiœ rodzaj grobowca?
-	AI_Output		(self,hero,"Info_Milten_SHYOU_02_04"); //Tak, coœ w tym rodzaju.
-	AI_Output		(self,hero,"Info_Milten_SHYOU_02_05"); //W tym grobowcu znajduje siê przedmiot, który chcia³bym zdobyæ.
+	AI_Output		(self,hero,"Info_Milten_SHYOU_02_02"); //Niedaleko stÄ…d leÅ¼y staroÅ¼ytny kamienny krÄ…g. W jego centrum znajduje siÄ™ wejÅ›cie do podziemnej komory.
+	AI_Output		(hero,self,"Info_Milten_SHYOU_15_03"); //JakiÅ› rodzaj grobowca?
+	AI_Output		(self,hero,"Info_Milten_SHYOU_02_04"); //Tak, coÅ› w tym rodzaju.
+	AI_Output		(self,hero,"Info_Milten_SHYOU_02_05"); //W tym grobowcu znajduje siÄ™ przedmiot, ktÃ³ry chciaÅ‚bym zdobyÄ‡.
 };
 
 //***************************************************************************
@@ -535,7 +535,7 @@ instance Info_Milten_SHME (C_INFO)
 	information	= Info_Milten_SHME_Info;
 	important	= 0;
 	permanent	= 0;
-	description	= "Szukam kamienia ogniskuj¹cego.";
+	description	= "Szukam kamienia ogniskujÄ…cego.";
 };
 
 FUNC int Info_Milten_SHME_Condition()
@@ -549,8 +549,8 @@ FUNC int Info_Milten_SHME_Condition()
 
 func void Info_Milten_SHME_Info()
 {
-	AI_Output		(hero,self,"Info_Milten_SHME_15_01"); //Szukam kamienia ogniskuj¹cego. Powinien gdzieœ tam byæ.
-	AI_Output		(self,hero,"Info_Milten_SHME_02_02"); //Wygl¹da na to, ¿e obydwaj szukamy czegoœ w tym samym miejscu.
+	AI_Output		(hero,self,"Info_Milten_SHME_15_01"); //Szukam kamienia ogniskujÄ…cego. Powinien gdzieÅ› tam byÄ‡.
+	AI_Output		(self,hero,"Info_Milten_SHME_02_02"); //WyglÄ…da na to, Å¼e obydwaj szukamy czegoÅ› w tym samym miejscu.
 };
 
 //***************************************************************************
@@ -577,10 +577,10 @@ FUNC int Info_Milten_SHPROBLEM_Condition()
 func void Info_Milten_SHPROBLEM_Info()
 {
 	AI_Output			(hero,self,"Info_Milten_SHPROBLEM_15_01"); //Dlaczego nie zejdziesz do grobowca i nie zabierzesz tego, czego szukasz?
-	AI_Output			(self,hero,"Info_Milten_SHPROBLEM_02_02"); //Och, to d³uga historia. Musia³bym zanudzaæ ciê opowieœci¹ o bardzo dawnych czasach.
-	AI_Output			(hero,self,"Info_Milten_SHPROBLEM_15_03"); //Œmia³o, nigdzie mi siê nie spieszy.
-	AI_Output			(self,hero,"Info_Milten_SHPROBLEM_02_04"); //No dobrze! Po utworzeniu magicznej Bariery, która sta³a siê naszym wspólnym wiêzieniem...
-	AI_Output			(self,hero,"Info_Milten_SHPROBLEM_02_05"); //... Jeden z magów zamkn¹³ pod ziemi¹ potê¿ny artefakt.
+	AI_Output			(self,hero,"Info_Milten_SHPROBLEM_02_02"); //Och, to dÅ‚uga historia. MusiaÅ‚bym zanudzaÄ‡ ciÄ™ opowieÅ›ciÄ… o bardzo dawnych czasach.
+	AI_Output			(hero,self,"Info_Milten_SHPROBLEM_15_03"); //ÅšmiaÅ‚o, nigdzie mi siÄ™ nie spieszy.
+	AI_Output			(self,hero,"Info_Milten_SHPROBLEM_02_04"); //No dobrze! Po utworzeniu magicznej Bariery, ktÃ³ra staÅ‚a siÄ™ naszym wspÃ³lnym wiÄ™zieniem...
+	AI_Output			(self,hero,"Info_Milten_SHPROBLEM_02_05"); //... Jeden z magÃ³w zamknÄ…Å‚ pod ziemiÄ… potÄ™Å¼ny artefakt.
 };
 
 //***************************************************************************
@@ -593,7 +593,7 @@ instance Info_Milten_SHFOCUS (C_INFO)
 	information	= Info_Milten_SHFOCUS_Info;
 	important	= 0;
 	permanent	= 0;
-	description	= "Czy¿byœ mówi³ o jednym z piêciu kamieni ogniskuj¹cych?";
+	description	= "CzyÅ¼byÅ› mÃ³wiÅ‚ o jednym z piÄ™ciu kamieni ogniskujÄ…cych?";
 };
 
 FUNC int Info_Milten_SHFOCUS_Condition()
@@ -606,10 +606,10 @@ FUNC int Info_Milten_SHFOCUS_Condition()
 
 func void Info_Milten_SHFOCUS_Info()
 {
-	AI_Output			(hero,self,"Info_Milten_SHFOCUS_15_01"); //Czy¿byœ mówi³ o jednym z piêciu kamieni ogniskuj¹cych?
-	AI_Output			(self,hero,"Info_Milten_SHFOCUS_02_02"); //Dok³adnie! A wiêc znasz ju¿ historiê piêciu kamieni?
-	AI_Output			(hero,self,"Info_Milten_SHFOCUS_15_03"); //Tylko mi nie mów, ¿e ty te¿ szukasz tego kamienia!
-	AI_Output			(self,hero,"Info_Milten_SHFOCUS_02_04"); //Nie. Nie interesuje mnie kamieñ ogniskuj¹cy. Szukam pewnego talizmanu Orków.
+	AI_Output			(hero,self,"Info_Milten_SHFOCUS_15_01"); //CzyÅ¼byÅ› mÃ³wiÅ‚ o jednym z piÄ™ciu kamieni ogniskujÄ…cych?
+	AI_Output			(self,hero,"Info_Milten_SHFOCUS_02_02"); //DokÅ‚adnie! A wiÄ™c znasz juÅ¼ historiÄ™ piÄ™ciu kamieni?
+	AI_Output			(hero,self,"Info_Milten_SHFOCUS_15_03"); //Tylko mi nie mÃ³w, Å¼e ty teÅ¼ szukasz tego kamienia!
+	AI_Output			(self,hero,"Info_Milten_SHFOCUS_02_04"); //Nie. Nie interesuje mnie kamieÅ„ ogniskujÄ…cy. Szukam pewnego talizmanu OrkÃ³w.
 };
 
 //***************************************************************************
@@ -622,7 +622,7 @@ instance Info_Milten_SHSEAL (C_INFO)
 	information	= Info_Milten_SHSEAL_Info;
 	important	= 0;
 	permanent	= 0;
-	description	= "Artefakt jest w jakiœ sposób chroniony?";
+	description	= "Artefakt jest w jakiÅ› sposÃ³b chroniony?";
 };
 
 FUNC int Info_Milten_SHSEAL_Condition()
@@ -635,13 +635,13 @@ FUNC int Info_Milten_SHSEAL_Condition()
 
 func void Info_Milten_SHSEAL_Info()
 {
-	AI_Output			(hero,self,"Info_Milten_SHSEAL_15_01"); //Artefakt jest w jakiœ sposób chroniony?
-	AI_Output			(self,hero,"Info_Milten_SHSEAL_02_02"); //Tak. Strze¿e go potê¿ne zaklêcie. Pierwszy rabuœ, który spróbuje go zabraæ...
-	AI_Output			(self,hero,"Info_Milten_SHSEAL_02_03"); //... bêdzie przeklêty i zostanie skazany na wieczn¹ egzystencjê jako O¿ywieniec. Od tej pory po wsze czasy sam stanie siê stra¿nikiem kamienia, który próbowa³ ukraœæ.
-	AI_Output			(hero,self,"Info_Milten_SHSEAL_15_04"); //Czy istnieje jakiœ sposób na unikniêcie kl¹twy?
-	AI_Output			(self,hero,"Info_Milten_SHSEAL_02_05"); //To ju¿ nie bêdzie potrzebne.
-	AI_Output			(self,hero,"Info_Milten_SHSEAL_02_06"); //Kilka lat temu jeden z Magnatów poluj¹cy dla rozrywki na Orków okaza³ siê na tyle bezmyœlny, ¿e zszed³ do grobowca.
-	AI_Output			(self,hero,"Info_Milten_SHSEAL_02_07"); //Teraz ON jest stra¿nikiem spoczywaj¹cych pod ziemi¹ skarbów.
+	AI_Output			(hero,self,"Info_Milten_SHSEAL_15_01"); //Artefakt jest w jakiÅ› sposÃ³b chroniony?
+	AI_Output			(self,hero,"Info_Milten_SHSEAL_02_02"); //Tak. StrzeÅ¼e go potÄ™Å¼ne zaklÄ™cie. Pierwszy rabuÅ›, ktÃ³ry sprÃ³buje go zabraÄ‡...
+	AI_Output			(self,hero,"Info_Milten_SHSEAL_02_03"); //... bÄ™dzie przeklÄ™ty i zostanie skazany na wiecznÄ… egzystencjÄ™ jako OÅ¼ywieniec. Od tej pory po wsze czasy sam stanie siÄ™ straÅ¼nikiem kamienia, ktÃ³ry prÃ³bowaÅ‚ ukraÅ›Ä‡.
+	AI_Output			(hero,self,"Info_Milten_SHSEAL_15_04"); //Czy istnieje jakiÅ› sposÃ³b na unikniÄ™cie klÄ…twy?
+	AI_Output			(self,hero,"Info_Milten_SHSEAL_02_05"); //To juÅ¼ nie bÄ™dzie potrzebne.
+	AI_Output			(self,hero,"Info_Milten_SHSEAL_02_06"); //Kilka lat temu jeden z MagnatÃ³w polujÄ…cy dla rozrywki na OrkÃ³w okazaÅ‚ siÄ™ na tyle bezmyÅ›lny, Å¼e zszedÅ‚ do grobowca.
+	AI_Output			(self,hero,"Info_Milten_SHSEAL_02_07"); //Teraz ON jest straÅ¼nikiem spoczywajÄ…cych pod ziemiÄ… skarbÃ³w.
 };
 
 //***************************************************************************
@@ -668,8 +668,8 @@ FUNC int Info_Milten_SHTALISMAN_Condition()
 func void Info_Milten_SHTALISMAN_Info()
 {
 	AI_Output			(hero,self,"Info_Milten_SHTALISMAN_15_01"); //A co z twoim talizmanem?
-	AI_Output			(self,hero,"Info_Milten_SHTALISMAN_02_02"); //Jestem przekonany, ¿e jego poprzedni w³aœciciel wykorzystywa³ go do ochrony przed rozwœcieczonymi Orkami.
-	AI_Output			(self,hero,"Info_Milten_SHTALISMAN_02_03"); //Jeœli mam racjê, ten talizman mo¿e siê okazaæ niezwykle przydatny.
+	AI_Output			(self,hero,"Info_Milten_SHTALISMAN_02_02"); //Jestem przekonany, Å¼e jego poprzedni wÅ‚aÅ›ciciel wykorzystywaÅ‚ go do ochrony przed rozwÅ›cieczonymi Orkami.
+	AI_Output			(self,hero,"Info_Milten_SHTALISMAN_02_03"); //JeÅ›li mam racjÄ™, ten talizman moÅ¼e siÄ™ okazaÄ‡ niezwykle przydatny.
 };
 
 //***************************************************************************
@@ -682,7 +682,7 @@ instance Info_Milten_SHOFFER (C_INFO)
 	information	= Info_Milten_SHOFFER_Info;
 	important	= 0;
 	permanent	= 0;
-	description	= "Zatem powinniœmy wspólnie przeszukaæ ten grobowiec!";
+	description	= "Zatem powinniÅ›my wspÃ³lnie przeszukaÄ‡ ten grobowiec!";
 };
 
 FUNC int Info_Milten_SHOFFER_Condition()
@@ -696,14 +696,14 @@ FUNC int Info_Milten_SHOFFER_Condition()
 
 func void Info_Milten_SHOFFER_Info()
 {
-	AI_Output			(hero,self,"Info_Milten_SHOFFER_15_01"); //Zatem powinniœmy wspólnie przeszukaæ ten grobowiec! Ty znajdziesz swój talizman, a ja - mój kamieñ ogniskuj¹cy!
-	AI_Output			(self,hero,"Info_Milten_SHOFFER_02_02"); //W porz¹dku, ale jest pewien ma³y problem...
+	AI_Output			(hero,self,"Info_Milten_SHOFFER_15_01"); //Zatem powinniÅ›my wspÃ³lnie przeszukaÄ‡ ten grobowiec! Ty znajdziesz swÃ³j talizman, a ja - mÃ³j kamieÅ„ ogniskujÄ…cy!
+	AI_Output			(self,hero,"Info_Milten_SHOFFER_02_02"); //W porzÄ…dku, ale jest pewien maÅ‚y problem...
 	AI_Output			(hero,self,"Info_Milten_SHOFFER_15_03"); //Problem?
-	AI_Output			(self,hero,"Info_Milten_SHOFFER_02_04"); //Tak. Stra¿nik podziemnej krypty...
-	AI_Output			(hero,self,"Info_Milten_SHOFFER_15_05"); //A nie mo¿na go po prostu posiekaæ na drobne kawa³eczki?
-	AI_Output			(self,hero,"Info_Milten_SHOFFER_02_06"); //To nie bêdzie takie proste. Ten o¿ywieniec zdaje siê byæ niezwykle odporny na dzia³anie zwyk³ego orê¿a.
-	AI_Output			(hero,self,"Info_Milten_SHOFFER_15_07"); //Niech zgadnê: pewnie masz ju¿ jakiœ plan, jak go pokonaæ, tak?
-	AI_Output			(self,hero,"Info_Milten_SHOFFER_02_08"); //Umm... No có¿... MAM pewien plan, ale nie jestem w stanie sam go wykonaæ.
+	AI_Output			(self,hero,"Info_Milten_SHOFFER_02_04"); //Tak. StraÅ¼nik podziemnej krypty...
+	AI_Output			(hero,self,"Info_Milten_SHOFFER_15_05"); //A nie moÅ¼na go po prostu posiekaÄ‡ na drobne kawaÅ‚eczki?
+	AI_Output			(self,hero,"Info_Milten_SHOFFER_02_06"); //To nie bÄ™dzie takie proste. Ten oÅ¼ywieniec zdaje siÄ™ byÄ‡ niezwykle odporny na dziaÅ‚anie zwykÅ‚ego orÄ™Å¼a.
+	AI_Output			(hero,self,"Info_Milten_SHOFFER_15_07"); //Niech zgadnÄ™: pewnie masz juÅ¼ jakiÅ› plan, jak go pokonaÄ‡, tak?
+	AI_Output			(self,hero,"Info_Milten_SHOFFER_02_08"); //Umm... No cÃ³Å¼... MAM pewien plan, ale nie jestem w stanie sam go wykonaÄ‡.
 };
 
 //***************************************************************************
@@ -716,7 +716,7 @@ instance Info_Milten_SHOFFER2 (C_INFO)
 	information	= Info_Milten_SHOFFER2_Info;
 	important	= 0;
 	permanent	= 0;
-	description	= "Zamieniam siê w s³uch!";
+	description	= "Zamieniam siÄ™ w sÅ‚uch!";
 };
 
 FUNC int Info_Milten_SHOFFER2_Condition()
@@ -729,13 +729,13 @@ FUNC int Info_Milten_SHOFFER2_Condition()
 
 func void Info_Milten_SHOFFER2_Info()
 {
-	AI_Output			(hero,self,"Info_Milten_SHOFFER2_15_01"); //Zamieniam siê w s³uch!
-	AI_Output			(self,hero,"Info_Milten_SHOFFER2_02_02"); //Mam przy sobie magiczny zwój z niezwykle potê¿nym zaklêciem.
-	AI_Output			(self,hero,"Info_Milten_SHOFFER2_02_03"); //To zaklêcie natychmiast niszczy wszystkich o¿ywieñców znajduj¹cych siê w okolicy.
-	AI_Output			(hero,self,"Info_Milten_SHOFFER2_15_04"); //Zatem dostanie siê do grobowca powinno byæ dziecinnie proste, prawda?
-	AI_Output			(self,hero,"Info_Milten_SHOFFER2_02_05"); //Hmmm... Nie zupe³nie! Obawiam siê, ¿e nasz przeklêty stra¿nik nie jest ju¿ sam.
-	AI_Output			(self,hero,"Info_Milten_SHOFFER2_02_06"); //Wygl¹da na to, ¿e rabusie, którzy przyszli po nim mieli równie ma³o szczêœcia co on sam.
-	AI_Output			(self,hero,"Info_Milten_SHOFFER2_02_07"); //Pewnego razu zszed³em na dó³ i ma³o brakowa³o, a postrada³bym ¿ycie. Jeden cz³owiek nie sprosta wszystkim przeciwnikom.
+	AI_Output			(hero,self,"Info_Milten_SHOFFER2_15_01"); //Zamieniam siÄ™ w sÅ‚uch!
+	AI_Output			(self,hero,"Info_Milten_SHOFFER2_02_02"); //Mam przy sobie magiczny zwÃ³j z niezwykle potÄ™Å¼nym zaklÄ™ciem.
+	AI_Output			(self,hero,"Info_Milten_SHOFFER2_02_03"); //To zaklÄ™cie natychmiast niszczy wszystkich oÅ¼ywieÅ„cÃ³w znajdujÄ…cych siÄ™ w okolicy.
+	AI_Output			(hero,self,"Info_Milten_SHOFFER2_15_04"); //Zatem dostanie siÄ™ do grobowca powinno byÄ‡ dziecinnie proste, prawda?
+	AI_Output			(self,hero,"Info_Milten_SHOFFER2_02_05"); //Hmmm... Nie zupeÅ‚nie! Obawiam siÄ™, Å¼e nasz przeklÄ™ty straÅ¼nik nie jest juÅ¼ sam.
+	AI_Output			(self,hero,"Info_Milten_SHOFFER2_02_06"); //WyglÄ…da na to, Å¼e rabusie, ktÃ³rzy przyszli po nim mieli rÃ³wnie maÅ‚o szczÄ™Å›cia co on sam.
+	AI_Output			(self,hero,"Info_Milten_SHOFFER2_02_07"); //Pewnego razu zszedÅ‚em na dÃ³Å‚ i maÅ‚o brakowaÅ‚o, a postradaÅ‚bym Å¼ycie. Jeden czÅ‚owiek nie sprosta wszystkim przeciwnikom.
 };
 
 //***************************************************************************
@@ -748,7 +748,7 @@ instance Info_Milten_SHACCEPT (C_INFO)
 	information	= Info_Milten_SHACCEPT_Info;
 	important	= 0;
 	permanent	= 0;
-	description	= "Daj mi ten magiczny zwój i razem zajmiemy siê tymi o¿ywieñcami!";
+	description	= "Daj mi ten magiczny zwÃ³j i razem zajmiemy siÄ™ tymi oÅ¼ywieÅ„cami!";
 };
 
 FUNC int Info_Milten_SHACCEPT_Condition()
@@ -761,17 +761,17 @@ FUNC int Info_Milten_SHACCEPT_Condition()
 
 func void Info_Milten_SHACCEPT_Info()
 {
-	AI_Output			(hero,self,"Info_Milten_SHACCEPT_15_01"); //Daj mi ten magiczny zwój i razem zajmiemy siê tymi o¿ywieñcami!
-	AI_Output			(self,hero,"Info_Milten_SHACCEPT_02_02"); //Ha! Mia³em nadziejê, ¿e to powiesz.
-	AI_Output			(self,hero,"Info_Milten_SHACCEPT_02_03"); //Niestety, mam tylko jeden zwój. Wykorzystaj go przeciw Stra¿nikowi.
-	AI_Output			(self,hero,"Info_Milten_SHACCEPT_02_04"); //Pozosta³e o¿ywieñce mo¿na zabiæ zwyk³ym orê¿em.
-	AI_Output			(hero,self,"Info_Milten_SHACCEPT_15_05"); //Rozumiem. No dobrze, którêdy do tego kamiennego krêgu?
-	AI_Output			(self,hero,"Info_Milten_SHACCEPT_02_06"); //ChodŸ za mn¹!
+	AI_Output			(hero,self,"Info_Milten_SHACCEPT_15_01"); //Daj mi ten magiczny zwÃ³j i razem zajmiemy siÄ™ tymi oÅ¼ywieÅ„cami!
+	AI_Output			(self,hero,"Info_Milten_SHACCEPT_02_02"); //Ha! MiaÅ‚em nadziejÄ™, Å¼e to powiesz.
+	AI_Output			(self,hero,"Info_Milten_SHACCEPT_02_03"); //Niestety, mam tylko jeden zwÃ³j. Wykorzystaj go przeciw StraÅ¼nikowi.
+	AI_Output			(self,hero,"Info_Milten_SHACCEPT_02_04"); //PozostaÅ‚e oÅ¼ywieÅ„ce moÅ¼na zabiÄ‡ zwykÅ‚ym orÄ™Å¼em.
+	AI_Output			(hero,self,"Info_Milten_SHACCEPT_15_05"); //Rozumiem. No dobrze, ktÃ³rÄ™dy do tego kamiennego krÄ™gu?
+	AI_Output			(self,hero,"Info_Milten_SHACCEPT_02_06"); //ChodÅº za mnÄ…!
 
 	Log_CreateTopic		(CH3_Stonehenge,	LOG_MISSION);
 	Log_SetTopicStatus	(CH3_Stonehenge,	LOG_RUNNING);
-	B_LogEntry		(CH3_Stonehenge,"W pobli¿u kamiennego krêgu spotka³em Miltena, jednego z magów Ognia. Od niego dowiedzia³em siê, ¿e kamieñ, którego szukam, spoczywa w podziemnej krypcie pod krêgiem.");
-	B_LogEntry		(CH3_Stonehenge,"Milten da³ mi magiczny zwój, przy u¿yciu którego pokonam o¿ywieñca strzeg¹cego krypty. Na szczêœcie na dó³ zejdziemy razem.");
+	B_LogEntry		(CH3_Stonehenge,"W pobliÅ¼u kamiennego krÄ™gu spotkaÅ‚em Miltena, jednego z magÃ³w Ognia. Od niego dowiedziaÅ‚em siÄ™, Å¼e kamieÅ„, ktÃ³rego szukam, spoczywa w podziemnej krypcie pod krÄ™giem.");
+	B_LogEntry		(CH3_Stonehenge,"Milten daÅ‚ mi magiczny zwÃ³j, przy uÅ¼yciu ktÃ³rego pokonam oÅ¼ywieÅ„ca strzegÄ…cego krypty. Na szczÄ™Å›cie na dÃ³Å‚ zejdziemy razem.");
 	
 	CreateInvItem		(self,	ItArScrollDestroyUndead);
 	B_GiveInvItems  (self, hero, ItArScrollDestroyUndead, 1);
@@ -805,8 +805,8 @@ func void Info_Milten_SHARRIVED_Info()
 {
 	AI_GotoNpc			(self,hero);
 
-	AI_Output			(self,hero,"Info_Milten_SHARRIVED_02_01"); //No i jesteœmy. Ten tunel prowadzi wprost do grobowca. 
-	AI_Output			(hero,self,"Info_Milten_SHARRIVED_15_02"); //Zatem ruszajmy. Pora z³o¿yæ wizytê stra¿nikom.
+	AI_Output			(self,hero,"Info_Milten_SHARRIVED_02_01"); //No i jesteÅ›my. Ten tunel prowadzi wprost do grobowca. 
+	AI_Output			(hero,self,"Info_Milten_SHARRIVED_15_02"); //Zatem ruszajmy. Pora zÅ‚oÅ¼yÄ‡ wizytÄ™ straÅ¼nikom.
 
   	self.aivar[AIV_PARTYMEMBER] =	TRUE;
 	Npc_ExchangeRoutine	(self,	"SHFollow");
@@ -823,7 +823,7 @@ instance Info_Milten_SHHEAL (C_INFO)
 	information	= Info_Milten_SHHEAL_Info;
 	important	= 0;
 	permanent	= 0;
-	description	= "Jestem ranny. Mo¿esz mi pomóc?";
+	description	= "Jestem ranny. MoÅ¼esz mi pomÃ³c?";
 };
 
 FUNC int Info_Milten_SHHEAL_Condition()
@@ -839,16 +839,16 @@ FUNC int Info_Milten_SHHEAL_Condition()
 
 func void Info_Milten_SHHEAL_Info()
 {
-	AI_Output				(hero,self,"Info_Milten_SHHEAL_15_01"); //Jestem ranny. Mo¿esz mi pomóc?
+	AI_Output				(hero,self,"Info_Milten_SHHEAL_15_01"); //Jestem ranny. MoÅ¼esz mi pomÃ³c?
 
 	if (	(Npc_HasItems(self,ItFo_Potion_Health_02) >  0)		)
 	{
-		AI_Output			(self,hero,"Info_Milten_SHHEAL_02_02"); //WeŸ ten napój uzdrawiaj¹cy.
+		AI_Output			(self,hero,"Info_Milten_SHHEAL_02_02"); //WeÅº ten napÃ³j uzdrawiajÄ…cy.
 		B_GiveInvItems	    (self, hero,	ItFo_Potion_Health_02,	1);
 	}
 	else
 	{
-		AI_Output			(self,hero,"Info_Milten_SHHEAL_02_03"); //Nie mam ju¿ ¿adnych magicznych wywarów.
+		AI_Output			(self,hero,"Info_Milten_SHHEAL_02_03"); //Nie mam juÅ¼ Å¼adnych magicznych wywarÃ³w.
 	};	
 
 	AI_StopProcessInfos		(self);
@@ -864,7 +864,7 @@ instance Info_Milten_SHRUNNING (C_INFO)
 	information	= Info_Milten_SHRUNNING_Info;
 	important	= 0;
 	permanent	= 1;
-	description	= "Stra¿nik wci¹¿ ¿yje!";
+	description	= "StraÅ¼nik wciÄ…Å¼ Å¼yje!";
 };
 
 FUNC int Info_Milten_SHRUNNING_Condition()
@@ -874,7 +874,7 @@ FUNC int Info_Milten_SHRUNNING_Condition()
 	keeperFound = Wld_DetectNpc(self, ZombieTheKeeper, NOFUNC, -1);
 
 	if	Npc_KnowsInfo(hero,Info_Milten_SHACCEPT)
-	&&	(keeperFound && !Npc_IsDead(other))							// Wächter noch nicht besiegt...
+	&&	(keeperFound && !Npc_IsDead(other))							// WÃ¤chter noch nicht besiegt...
 	{
 		return TRUE;
 	};	
@@ -882,8 +882,8 @@ FUNC int Info_Milten_SHRUNNING_Condition()
 
 func void Info_Milten_SHRUNNING_Info()
 {
-	AI_Output			(hero,self,"Info_Milten_SHRUNNING_15_01"); 	//Stra¿nik wci¹¿ ¿yje!
-	AI_Output			(self,hero,"Info_Milten_SHRUNNING_02_02"); 	//Wiêc zniszcz go przy u¿yciu magicznego zwoju!
+	AI_Output			(hero,self,"Info_Milten_SHRUNNING_15_01"); 	//StraÅ¼nik wciÄ…Å¼ Å¼yje!
+	AI_Output			(self,hero,"Info_Milten_SHRUNNING_02_02"); 	//WiÄ™c zniszcz go przy uÅ¼yciu magicznego zwoju!
 };
 
 //***************************************************************************
@@ -896,7 +896,7 @@ instance Info_Milten_SHSCROLL (C_INFO)
 	information	= Info_Milten_SHSCROLL_Info;
 	important	= 0;
 	permanent	= 0;
-	description	= "Wykorzysta³em zwój!";
+	description	= "WykorzystaÅ‚em zwÃ³j!";
 };
 
 FUNC int Info_Milten_SHSCROLL_Condition()
@@ -904,7 +904,7 @@ FUNC int Info_Milten_SHSCROLL_Condition()
 	var int keeperFound;
 	Npc_PerceiveAll(self);
 	keeperFound = Wld_DetectNpc(self, ZombieTheKeeper, NOFUNC, -1);
-	if (	(keeperFound && !Npc_IsDead(other))							// Wächter noch nicht besiegt...
+	if (	(keeperFound && !Npc_IsDead(other))							// WÃ¤chter noch nicht besiegt...
 	&&		Npc_KnowsInfo(hero, Info_Milten_SHACCEPT)
 	&&		(Npc_HasItems(hero, ItArScrollDestroyUndead)==0)	
 	&&		(Npc_HasItems(hero, ItArRuneDestroyUndead)==0)	)
@@ -915,10 +915,10 @@ FUNC int Info_Milten_SHSCROLL_Condition()
 
 func void Info_Milten_SHSCROLL_Info()
 {
-	AI_Output			(hero,self,"Info_Milten_SHSCROLL_15_01"); //Wykorzysta³em zwój, ale niestety nie na Stra¿niku!
-	AI_Output			(self,hero,"Info_Milten_SHSCROLL_02_02"); //Jesteœmy zgubieni! Chyba, ¿e znajdziesz jakiœ inny sposób, ¿eby go pokonaæ!
-	AI_Output			(self,hero,"Info_Milten_SHSCROLL_02_03"); //Mo¿e w którymœ z obozów uda ci siê kupiæ nastêpny zwój albo magiczn¹ runê.
-	AI_Output			(self,hero,"Info_Milten_SHSCROLL_02_04"); //Zaczekam na ciebie w miejscu, w którym siê spotkaliœmy.
+	AI_Output			(hero,self,"Info_Milten_SHSCROLL_15_01"); //WykorzystaÅ‚em zwÃ³j, ale niestety nie na StraÅ¼niku!
+	AI_Output			(self,hero,"Info_Milten_SHSCROLL_02_02"); //JesteÅ›my zgubieni! Chyba, Å¼e znajdziesz jakiÅ› inny sposÃ³b, Å¼eby go pokonaÄ‡!
+	AI_Output			(self,hero,"Info_Milten_SHSCROLL_02_03"); //MoÅ¼e w ktÃ³rymÅ› z obozÃ³w uda ci siÄ™ kupiÄ‡ nastÄ™pny zwÃ³j albo magicznÄ… runÄ™.
+	AI_Output			(self,hero,"Info_Milten_SHSCROLL_02_04"); //Zaczekam na ciebie w miejscu, w ktÃ³rym siÄ™ spotkaliÅ›my.
 
   	self.aivar[AIV_PARTYMEMBER] =	FALSE;
 
@@ -936,7 +936,7 @@ instance Info_Milten_SHNEWSCROLL (C_INFO)
 	information	= Info_Milten_SHNEWSCROLL_Info;
 	important	= 0;
 	permanent	= 0;
-	description	= "Mam nowy zwój z zaklêciem 'Œmieræ O¿ywieñcom'!";
+	description	= "Mam nowy zwÃ³j z zaklÄ™ciem 'ÅšmierÄ‡ OÅ¼ywieÅ„com'!";
 };
 
 FUNC int Info_Milten_SHNEWSCROLL_Condition()
@@ -951,9 +951,9 @@ FUNC int Info_Milten_SHNEWSCROLL_Condition()
 
 func void Info_Milten_SHNEWSCROLL_Info()
 {
-	AI_Output			(hero,self,"Info_Milten_SHNEWSCROLL_15_01"); //Mam nowy zwój z zaklêciem "Œmieræ O¿ywieñcom!"
-	AI_Output			(self,hero,"Info_Milten_SHNEWSCROLL_02_02"); //To wspaniale! Mo¿emy z³o¿yæ Stra¿nikowi kolejn¹ wizytê!
-	AI_Output			(self,hero,"Info_Milten_SHNEWSCROLL_02_03"); //IdŸ przodem. Pójdê za tob¹.
+	AI_Output			(hero,self,"Info_Milten_SHNEWSCROLL_15_01"); //Mam nowy zwÃ³j z zaklÄ™ciem "ÅšmierÄ‡ OÅ¼ywieÅ„com!"
+	AI_Output			(self,hero,"Info_Milten_SHNEWSCROLL_02_02"); //To wspaniale! MoÅ¼emy zÅ‚oÅ¼yÄ‡ StraÅ¼nikowi kolejnÄ… wizytÄ™!
+	AI_Output			(self,hero,"Info_Milten_SHNEWSCROLL_02_03"); //IdÅº przodem. PÃ³jdÄ™ za tobÄ….
 
   	self.aivar[AIV_PARTYMEMBER] =	TRUE;
 	AI_StopProcessInfos	(self);
@@ -987,8 +987,8 @@ func void Info_Milten_SHLEAVE_Info()
 {
 	AI_GotoNpc			(self,hero);
 
-	AI_Output			(self,hero,"Info_Milten_SHLEAVE_02_01"); 	//Czy¿byœ straci³ zainteresowanie tym grobowcem?
-	AI_Output			(self,hero,"Info_Milten_SHLEAVE_02_02"); 	//Jakbyœ zmieni³ zdanie, znajdziesz mnie w miejscu naszego pierwszego spotkania.
+	AI_Output			(self,hero,"Info_Milten_SHLEAVE_02_01"); 	//CzyÅ¼byÅ› straciÅ‚ zainteresowanie tym grobowcem?
+	AI_Output			(self,hero,"Info_Milten_SHLEAVE_02_02"); 	//JakbyÅ› zmieniÅ‚ zdanie, znajdziesz mnie w miejscu naszego pierwszego spotkania.
 
   	self.aivar[AIV_PARTYMEMBER] =	FALSE;
 	Npc_ExchangeRoutine	(self,	"SHWait");
@@ -1024,7 +1024,7 @@ func void Info_Milten_SHCONTINUE_Info()
 	AI_GotoNpc			(self,hero);
 
 	AI_Output			(hero,self,"Info_Milten_SHCONTINUE_15_01"); //To jak? Schodzimy znowu do krypty?
-	AI_Output			(self,hero,"Info_Milten_SHCONTINUE_02_02"); //Jestem gotów. IdŸ przodem. Pójdê za tob¹.
+	AI_Output			(self,hero,"Info_Milten_SHCONTINUE_02_02"); //Jestem gotÃ³w. IdÅº przodem. PÃ³jdÄ™ za tobÄ….
 
   	self.aivar[AIV_PARTYMEMBER] = TRUE;
 	Npc_ExchangeRoutine	(self,	"SHFollow");
@@ -1055,15 +1055,15 @@ func void Info_Milten_SHSUCCESS_Info()
 {
 	AI_GotoNpc			(self,hero);
 
-	AI_Output			(self,hero,"Info_Milten_SHSUCCESS_02_01"); //Dobrze. Widzê, ¿e znalaz³eœ talizman.
-	AI_Output			(hero,self,"Info_Milten_SHSUCCESS_15_02"); //Proszê, weŸ go. Taka by³a umowa.
-	AI_Output			(self,hero,"Info_Milten_SHSUCCESS_02_03"); //Dziêkujê, przyjacielu. Nigdy nie zapominam o ludziach, którzy mi pomogli.
-	AI_Output			(self,hero,"Info_Milten_SHSUCCESS_02_04"); //Wrócê teraz do Starego Obozu. Mo¿e tam siê jeszcze kiedyœ spotkamy.
+	AI_Output			(self,hero,"Info_Milten_SHSUCCESS_02_01"); //Dobrze. WidzÄ™, Å¼e znalazÅ‚eÅ› talizman.
+	AI_Output			(hero,self,"Info_Milten_SHSUCCESS_15_02"); //ProszÄ™, weÅº go. Taka byÅ‚a umowa.
+	AI_Output			(self,hero,"Info_Milten_SHSUCCESS_02_03"); //DziÄ™kujÄ™, przyjacielu. Nigdy nie zapominam o ludziach, ktÃ³rzy mi pomogli.
+	AI_Output			(self,hero,"Info_Milten_SHSUCCESS_02_04"); //WrÃ³cÄ™ teraz do Starego Obozu. MoÅ¼e tam siÄ™ jeszcze kiedyÅ› spotkamy.
 	
 	B_GiveInvItems	(hero,self,	ItMi_OrcTalisman, 1);
 	
-	B_LogEntry		(CH3_Stonehenge,"Wspólnymi si³ami uda³o siê nam pokonaæ stra¿nika kamiennego krêgu. Milten zabra³ swoj¹ czêœæ zdobyczy i wróci³ do Starego Obozu.");
-	B_LogEntry		(CH3_Stonehenge,"Saturas ucieszy siê, ¿e odnalaz³em ten kamieñ ogniskuj¹cy!");
+	B_LogEntry		(CH3_Stonehenge,"WspÃ³lnymi siÅ‚ami udaÅ‚o siÄ™ nam pokonaÄ‡ straÅ¼nika kamiennego krÄ™gu. Milten zabraÅ‚ swojÄ… czÄ™Å›Ä‡ zdobyczy i wrÃ³ciÅ‚ do Starego Obozu.");
+	B_LogEntry		(CH3_Stonehenge,"Saturas ucieszy siÄ™, Å¼e odnalazÅ‚em ten kamieÅ„ ogniskujÄ…cy!");
 	
   	self.aivar[AIV_PARTYMEMBER] =	FALSE;
 	Npc_ExchangeRoutine	(self, "ReturnToOC");
@@ -1106,27 +1106,27 @@ func void Info_Milten_OCWARN_Info()
 {
 	AI_GotoNpc			(self,hero);
 
-	AI_Output			(self,hero,"Info_Milten_OCWARN_02_01"); //Oni... nie ¿yj¹... Wszyscy zginêli... Nie mog³em im pomóc... By³em za daleko... Ja...
+	AI_Output			(self,hero,"Info_Milten_OCWARN_02_01"); //Oni... nie Å¼yjÄ…... Wszyscy zginÄ™li... Nie mogÅ‚em im pomÃ³c... ByÅ‚em za daleko... Ja...
 
 	if (Npc_KnowsInfo(hero, Info_Diego_OCRETREAT))
 	{
-		AI_Output		(hero,self,"Info_Milten_OCWARN_15_02"); //Spokojnie, Miltenie. Spotka³em ju¿ Diego po drugiej stronie Obozu.
-		AI_Output		(self,hero,"Info_Milten_OCWARN_02_03"); //Zatem wiesz ju¿, co siê sta³o. Co ci powiedzia³ Diego?
-		AI_Output		(hero,self,"Info_Milten_OCWARN_15_04"); //Powiedzia³, ¿e jeœli spotkam Gorna i Lestera, mam im powiedzieæ, ¿e spotkanie odbêdzie siê tam gdzie zwykle.
-		AI_Output		(self,hero,"Info_Milten_OCWARN_02_05"); //Powodzenia i uwa¿aj na siebie!
-		B_LogEntry		(CH4_Firemages,"Milten, podobnie jak Diego, ukrywa³ siê w pobli¿u Starego Obozu. Teraz Mag Ognia uprzedza przyjació³ o niebezpieczeñstwie czyhaj¹cym na nich w œrodku.");
+		AI_Output		(hero,self,"Info_Milten_OCWARN_15_02"); //Spokojnie, Miltenie. SpotkaÅ‚em juÅ¼ Diego po drugiej stronie Obozu.
+		AI_Output		(self,hero,"Info_Milten_OCWARN_02_03"); //Zatem wiesz juÅ¼, co siÄ™ staÅ‚o. Co ci powiedziaÅ‚ Diego?
+		AI_Output		(hero,self,"Info_Milten_OCWARN_15_04"); //PowiedziaÅ‚, Å¼e jeÅ›li spotkam Gorna i Lestera, mam im powiedzieÄ‡, Å¼e spotkanie odbÄ™dzie siÄ™ tam gdzie zwykle.
+		AI_Output		(self,hero,"Info_Milten_OCWARN_02_05"); //Powodzenia i uwaÅ¼aj na siebie!
+		B_LogEntry		(CH4_Firemages,"Milten, podobnie jak Diego, ukrywaÅ‚ siÄ™ w pobliÅ¼u Starego Obozu. Teraz Mag Ognia uprzedza przyjaciÃ³Å‚ o niebezpieczeÅ„stwie czyhajÄ…cym na nich w Å›rodku.");
 		AI_StopProcessInfos(self);
 	}
 	else
 	{
-		AI_Output		(hero,self,"Info_Milten_OCWARN_15_06"); //Uspokój siê, Miltenie. Co siê sta³o?
-		AI_Output		(self,hero,"Info_Milten_OCWARN_02_07"); //Wymordowali Magów Ognia! Wszystkich... oprócz mnie. Ale nawet ja otar³em siê o œmieræ.
-		AI_Output		(hero,self,"Info_Milten_OCWARN_15_08"); //Lepiej opowiedz mi wszystko po kolei, od samego pocz¹tku.
-		AI_Output		(self,hero,"Info_Milten_OCWARN_02_09"); //Ju¿ dobrze, uspokój siê, przyjacielu.
-		AI_Output		(self,hero,"Info_Milten_OCWARN_02_10"); //Wszystko zaczê³o siê od zawalenia Starej Kopalni?
+		AI_Output		(hero,self,"Info_Milten_OCWARN_15_06"); //UspokÃ³j siÄ™, Miltenie. Co siÄ™ staÅ‚o?
+		AI_Output		(self,hero,"Info_Milten_OCWARN_02_07"); //Wymordowali MagÃ³w Ognia! Wszystkich... oprÃ³cz mnie. Ale nawet ja otarÅ‚em siÄ™ o Å›mierÄ‡.
+		AI_Output		(hero,self,"Info_Milten_OCWARN_15_08"); //Lepiej opowiedz mi wszystko po kolei, od samego poczÄ…tku.
+		AI_Output		(self,hero,"Info_Milten_OCWARN_02_09"); //JuÅ¼ dobrze, uspokÃ³j siÄ™, przyjacielu.
+		AI_Output		(self,hero,"Info_Milten_OCWARN_02_10"); //Wszystko zaczÄ™Å‚o siÄ™ od zawalenia Starej Kopalni?
 		AI_Output		(hero,self,"Info_Milten_OCWARN_15_11"); //Zawalenia Starej Kopalni?!?
-		AI_Output		(self,hero,"Info_Milten_OCWARN_02_12"); //Tak. To dzia³o siê tak szybko. Nikt nie zdo³a³ siê wydostaæ.
-		AI_Output		(self,hero,"Info_Milten_OCWARN_02_13"); //Stra¿nicy zablokowali wejœcie do kopalni.
+		AI_Output		(self,hero,"Info_Milten_OCWARN_02_12"); //Tak. To dziaÅ‚o siÄ™ tak szybko. Nikt nie zdoÅ‚aÅ‚ siÄ™ wydostaÄ‡.
+		AI_Output		(self,hero,"Info_Milten_OCWARN_02_13"); //StraÅ¼nicy zablokowali wejÅ›cie do kopalni.
 	};
 };
 
@@ -1140,7 +1140,7 @@ instance Info_Milten_OCMINE (C_INFO)
 	information	= Info_Milten_OCMINE_Info;
 	important	= 0;
 	permanent	= 0;
-	description = "Jak do tego dosz³o?";
+	description = "Jak do tego doszÅ‚o?";
 };
 
 FUNC int Info_Milten_OCMINE_Condition()
@@ -1153,10 +1153,10 @@ FUNC int Info_Milten_OCMINE_Condition()
 
 func void Info_Milten_OCMINE_Info()
 {
-	AI_Output			(hero,self,"Info_Milten_OCMINE_15_01"); //Jak do tego dosz³o?
-	AI_Output			(self,hero,"Info_Milten_OCMINE_02_02"); //Nie mam pojêcia. Kilku Kopaczy stoj¹cych przy wejœciu mówi³o coœ o potê¿nym wstrz¹sie i wielkiej chmurze py³u z tunelu.
-	AI_Output			(hero,self,"Info_Milten_OCMINE_15_03"); //By³eœ tam, kiedy to siê sta³o?
-	AI_Output			(self,hero,"Info_Milten_OCMINE_02_04"); //Tak. St¹d wiem o zawaleniu siê kopalni.
+	AI_Output			(hero,self,"Info_Milten_OCMINE_15_01"); //Jak do tego doszÅ‚o?
+	AI_Output			(self,hero,"Info_Milten_OCMINE_02_02"); //Nie mam pojÄ™cia. Kilku Kopaczy stojÄ…cych przy wejÅ›ciu mÃ³wiÅ‚o coÅ› o potÄ™Å¼nym wstrzÄ…sie i wielkiej chmurze pyÅ‚u z tunelu.
+	AI_Output			(hero,self,"Info_Milten_OCMINE_15_03"); //ByÅ‚eÅ› tam, kiedy to siÄ™ staÅ‚o?
+	AI_Output			(self,hero,"Info_Milten_OCMINE_02_04"); //Tak. StÄ…d wiem o zawaleniu siÄ™ kopalni.
 };
 
 //***************************************************************************
@@ -1169,7 +1169,7 @@ instance Info_Milten_OCKDW (C_INFO)
 	information	= Info_Milten_OCKDW_Info;
 	important	= 0;
 	permanent	= 0;
-	description = "Mówi³eœ coœ o Magach Ognia?";
+	description = "MÃ³wiÅ‚eÅ› coÅ› o Magach Ognia?";
 };
 
 FUNC int Info_Milten_OCKDW_Condition()
@@ -1182,10 +1182,10 @@ FUNC int Info_Milten_OCKDW_Condition()
 
 func void Info_Milten_OCKDW_Info()
 {
-	AI_Output			(hero,self,"Info_Milten_OCKDW_15_01"); //Mówi³eœ coœ o Magach Ognia?
-	AI_Output			(self,hero,"Info_Milten_OCKDW_02_02"); //Wiem tylko, ¿e wszyscy zostali zabici przez Magnatów tu¿ po zawaleniu siê Starej Kopalni.
-	AI_Output			(self,hero,"Info_Milten_OCKDW_02_03"); //Kiedy wróci³em z naszej wyprawy pod kamienny kr¹g, stra¿nicy przy bramie rzucili siê na mnie bez ostrze¿enia.
-	AI_Output			(self,hero,"Info_Milten_OCKDW_02_04"); //Krzyczeli "zdrajca" i "spiskowiec". Ledwie uszed³em z ¿yciem.
+	AI_Output			(hero,self,"Info_Milten_OCKDW_15_01"); //MÃ³wiÅ‚eÅ› coÅ› o Magach Ognia?
+	AI_Output			(self,hero,"Info_Milten_OCKDW_02_02"); //Wiem tylko, Å¼e wszyscy zostali zabici przez MagnatÃ³w tuÅ¼ po zawaleniu siÄ™ Starej Kopalni.
+	AI_Output			(self,hero,"Info_Milten_OCKDW_02_03"); //Kiedy wrÃ³ciÅ‚em z naszej wyprawy pod kamienny krÄ…g, straÅ¼nicy przy bramie rzucili siÄ™ na mnie bez ostrzeÅ¼enia.
+	AI_Output			(self,hero,"Info_Milten_OCKDW_02_04"); //Krzyczeli "zdrajca" i "spiskowiec". Ledwie uszedÅ‚em z Å¼yciem.
 };
 
 //***************************************************************************
@@ -1198,7 +1198,7 @@ instance Info_Milten_OCWHY (C_INFO)
 	information	= Info_Milten_OCWHY_Info;
 	important	= 0;
 	permanent	= 0;
-	description = "Dlaczego Magnaci mieliby wymordowaæ Magów? To bez sensu!";
+	description = "Dlaczego Magnaci mieliby wymordowaÄ‡ MagÃ³w? To bez sensu!";
 };
 
 FUNC int Info_Milten_OCWHY_Condition()
@@ -1211,9 +1211,9 @@ FUNC int Info_Milten_OCWHY_Condition()
 
 func void Info_Milten_OCWHY_Info()
 {
-	AI_Output			(hero,self,"Info_Milten_OCWHY_15_01"); //Dlaczego Magnaci mieliby wymordowaæ Magów? To bez sensu!
-	AI_Output			(self,hero,"Info_Milten_OCWHY_02_02"); //Wiem, ale nie mia³em czasu, ¿eby zapytaæ stra¿ników. Zaatakowali mnie natychmiast.
-	AI_Output			(self,hero,"Info_Milten_OCWHY_02_03"); //Mo¿e Diego bêdzie wiedzia³ wiêcej. By³ w Obozie, kiedy rozegra³a siê ta tragedia.
+	AI_Output			(hero,self,"Info_Milten_OCWHY_15_01"); //Dlaczego Magnaci mieliby wymordowaÄ‡ MagÃ³w? To bez sensu!
+	AI_Output			(self,hero,"Info_Milten_OCWHY_02_02"); //Wiem, ale nie miaÅ‚em czasu, Å¼eby zapytaÄ‡ straÅ¼nikÃ³w. Zaatakowali mnie natychmiast.
+	AI_Output			(self,hero,"Info_Milten_OCWHY_02_03"); //MoÅ¼e Diego bÄ™dzie wiedziaÅ‚ wiÄ™cej. ByÅ‚ w Obozie, kiedy rozegraÅ‚a siÄ™ ta tragedia.
 };
 
 //***************************************************************************
@@ -1226,7 +1226,7 @@ instance Info_Milten_OCYOU (C_INFO)
 	information	= Info_Milten_OCYOU_Info;
 	important	= 0;
 	permanent	= 0;
-	description = "Powinieneœ siê ukryæ. Najlepiej daleko st¹d.";
+	description = "PowinieneÅ› siÄ™ ukryÄ‡. Najlepiej daleko stÄ…d.";
 };
 
 FUNC int Info_Milten_OCYOU_Condition()
@@ -1239,16 +1239,16 @@ FUNC int Info_Milten_OCYOU_Condition()
 
 func void Info_Milten_OCYOU_Info()
 {
-	AI_Output			(hero,self,"Info_Milten_OCYOU_15_01"); //Powinieneœ siê ukryæ. Najlepiej daleko st¹d.
-	AI_Output			(self,hero,"Info_Milten_OCYOU_02_02"); //Nie. Diego kaza³ mi pilnowaæ drugiego wejœcia do Obozu. Mamy ostrzegaæ naszych przyjació³ przed niebezpieczeñstwem.
+	AI_Output			(hero,self,"Info_Milten_OCYOU_15_01"); //PowinieneÅ› siÄ™ ukryÄ‡. Najlepiej daleko stÄ…d.
+	AI_Output			(self,hero,"Info_Milten_OCYOU_02_02"); //Nie. Diego kazaÅ‚ mi pilnowaÄ‡ drugiego wejÅ›cia do Obozu. Mamy ostrzegaÄ‡ naszych przyjaciÃ³Å‚ przed niebezpieczeÅ„stwem.
 
 	if (!Npc_KnowsInfo(hero, Info_Diego_OCSTORY))
 	{	
-		AI_Output		(self,hero,"Info_Milten_OCYOU_02_03"); //Proszê, porozmawiaj z Diego!
+		AI_Output		(self,hero,"Info_Milten_OCYOU_02_03"); //ProszÄ™, porozmawiaj z Diego!
 	}
 	else
 	{
-		B_LogEntry		(CH4_Firemages,"Po tym jak Diego opowiedzia³ mi o tych niewiarygodnych wydarzeniach, przed g³ówn¹ bram¹ Starego Obozu wpad³em na Miltena. Mam nadziejê, ¿e nie wpadn¹ w ³apy Stra¿ników!");
+		B_LogEntry		(CH4_Firemages,"Po tym jak Diego opowiedziaÅ‚ mi o tych niewiarygodnych wydarzeniach, przed gÅ‚Ã³wnÄ… bramÄ… Starego Obozu wpadÅ‚em na Miltena. Mam nadziejÄ™, Å¼e nie wpadnÄ… w Å‚apy StraÅ¼nikÃ³w!");
 	};
 };
 
@@ -1262,7 +1262,7 @@ instance Info_Milten_OCDIEGO (C_INFO)
 	information	= Info_Milten_OCDIEGO_Info;
 	important	= 0;
 	permanent	= 0;
-	description = "Gdzie znajdê Diego?";
+	description = "Gdzie znajdÄ™ Diego?";
 };
 
 FUNC int Info_Milten_OCDIEGO_Condition()
@@ -1277,12 +1277,12 @@ FUNC int Info_Milten_OCDIEGO_Condition()
 
 func void Info_Milten_OCDIEGO_Info()
 {
-	AI_Output			(hero,self,"Info_Milten_OCDIEGO_15_01"); //Gdzie znajdê Diego?
-	AI_Output			(self,hero,"Info_Milten_OCDIEGO_02_02"); //Ukrywa siê po drugiej stronie Obozu, w pobli¿u tylnej bramy.
-	AI_Output			(self,hero,"Info_Milten_OCDIEGO_02_03"); //Musisz z nim koniecznie porozmawiaæ!
+	AI_Output			(hero,self,"Info_Milten_OCDIEGO_15_01"); //Gdzie znajdÄ™ Diego?
+	AI_Output			(self,hero,"Info_Milten_OCDIEGO_02_02"); //Ukrywa siÄ™ po drugiej stronie Obozu, w pobliÅ¼u tylnej bramy.
+	AI_Output			(self,hero,"Info_Milten_OCDIEGO_02_03"); //Musisz z nim koniecznie porozmawiaÄ‡!
 
-	B_LogEntry			(CH4_Firemages,"Przed g³ówn¹ bram¹ Starego Obozu spotka³em Miltena, który opowiedzia³ mi o zawaleniu siê Starej Kopalni i wymordowaniu wszystkich Magów Ognia.");
-	B_LogEntry			(CH4_Firemages,"Diego ukrywa siê po przeciwnej stronie obozu. Mam z nim porozmawiaæ - ponoæ wie nieco wiêcej o tych straszliwych wydarzeniach.");
+	B_LogEntry			(CH4_Firemages,"Przed gÅ‚Ã³wnÄ… bramÄ… Starego Obozu spotkaÅ‚em Miltena, ktÃ³ry opowiedziaÅ‚ mi o zawaleniu siÄ™ Starej Kopalni i wymordowaniu wszystkich MagÃ³w Ognia.");
+	B_LogEntry			(CH4_Firemages,"Diego ukrywa siÄ™ po przeciwnej stronie obozu. Mam z nim porozmawiaÄ‡ - ponoÄ‡ wie nieco wiÄ™cej o tych straszliwych wydarzeniach.");
 };
 
 
@@ -1326,9 +1326,9 @@ func void Info_Milten_LOADSWORD_Info()
 {
 	AI_GotoNpc			(self, hero);
 
-	AI_Output			(self, hero,"Info_Milten_LOADSWORD_02_01"); //Witaj, przyjacielu! Dawno siê nie widzieliœmy.
-	AI_Output			(hero, self,"Info_Milten_LOADSWORD_15_02"); //Czeœæ, Milten! Wiele siê wydarzy³o od naszego ostatniego spotkania.
-	AI_Output			(hero, self,"Info_Milten_LOADSWORD_15_03"); //Chêtnie bym ci wszystko opowiedzia³, ale chwilowo nie mam czasu. Bardzo siê spieszê.
+	AI_Output			(self, hero,"Info_Milten_LOADSWORD_02_01"); //Witaj, przyjacielu! Dawno siÄ™ nie widzieliÅ›my.
+	AI_Output			(hero, self,"Info_Milten_LOADSWORD_15_02"); //CzeÅ›Ä‡, Milten! Wiele siÄ™ wydarzyÅ‚o od naszego ostatniego spotkania.
+	AI_Output			(hero, self,"Info_Milten_LOADSWORD_15_03"); //ChÄ™tnie bym ci wszystko opowiedziaÅ‚, ale chwilowo nie mam czasu. Bardzo siÄ™ spieszÄ™.
 };
 
 //---------------------------------------------------------------------
@@ -1341,7 +1341,7 @@ instance Info_Milten_LOADSWORD1 (C_INFO)
 	information		= Info_Milten_LOADSWORD1_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Potrzebujê twojej pomocy!"; 
+	description		= "PotrzebujÄ™ twojej pomocy!"; 
 };
 
 FUNC int Info_Milten_LOADSWORD1_Condition()
@@ -1354,10 +1354,10 @@ FUNC int Info_Milten_LOADSWORD1_Condition()
 
 func void Info_Milten_LOADSWORD1_Info()
 {
-	AI_Output			(hero, self,"Info_Milten_LOADSWORD1_15_01"); //Potrzebujê twojej pomocy!
-	AI_Output			(self, hero,"Info_Milten_LOADSWORD1_02_02"); //Co siê sta³o? Jak mogê ci pomóc?
-	AI_Output			(hero, self,"Info_Milten_LOADSWORD1_15_03"); //ChodŸmy w jakieœ ustronne miejsce, gdzie bêdziemy mogli spokojnie porozmawiaæ.
-	AI_Output			(self, hero,"Info_Milten_LOADSWORD1_02_04"); //Dobrze. ChodŸ za mn¹.
+	AI_Output			(hero, self,"Info_Milten_LOADSWORD1_15_01"); //PotrzebujÄ™ twojej pomocy!
+	AI_Output			(self, hero,"Info_Milten_LOADSWORD1_02_02"); //Co siÄ™ staÅ‚o? Jak mogÄ™ ci pomÃ³c?
+	AI_Output			(hero, self,"Info_Milten_LOADSWORD1_15_03"); //ChodÅºmy w jakieÅ› ustronne miejsce, gdzie bÄ™dziemy mogli spokojnie porozmawiaÄ‡.
+	AI_Output			(self, hero,"Info_Milten_LOADSWORD1_02_04"); //Dobrze. ChodÅº za mnÄ….
 
 	Npc_ExchangeRoutine	(self,	"LSAway");
 	AI_StopProcessInfos	(self);
@@ -1388,19 +1388,19 @@ func void Info_Milten_LSAWAY_Info()
 {
 	AI_GotoNpc			(self, hero);
 
-	AI_Output			(self, hero,"Info_Milten_LSAWAY_02_01"); //A teraz mów - co siê sta³o?
-	AI_Output			(hero, self,"Info_Milten_LSAWAY_15_02"); //Muszê wykorzystaæ magiczn¹ energiê kopca rudy, a wola³bym nie pytaæ Magów Wody o pozwolenie.
-	AI_Output			(self, hero,"Info_Milten_LSAWAY_02_03"); //¯artujesz sobie ze mnie!
-	AI_Output			(hero, self,"Info_Milten_LSAWAY_15_04"); //To nie pora na ¿arty. Mówiê powa¿nie.
-	AI_Output			(hero, self,"Info_Milten_LSAWAY_15_05"); //Spotka³em Xardasa, Nekromantê!
-	AI_Output			(hero, self,"Info_Milten_LSAWAY_15_06"); //Wype³niam jego polecenia!
-	AI_Output			(self, hero,"Info_Milten_LSAWAY_02_07"); //XARDAS?! Zaczynasz mnie przera¿aæ!
-	AI_Output			(self, hero,"Info_Milten_LSAWAY_02_08"); //Nikt z nim nie rozmawia³ odk¹d opuœci³ Stary Obóz.
-	AI_Output			(hero, self,"Info_Milten_LSAWAY_15_09"); //Ja rozmawia³em!
+	AI_Output			(self, hero,"Info_Milten_LSAWAY_02_01"); //A teraz mÃ³w - co siÄ™ staÅ‚o?
+	AI_Output			(hero, self,"Info_Milten_LSAWAY_15_02"); //MuszÄ™ wykorzystaÄ‡ magicznÄ… energiÄ™ kopca rudy, a wolaÅ‚bym nie pytaÄ‡ MagÃ³w Wody o pozwolenie.
+	AI_Output			(self, hero,"Info_Milten_LSAWAY_02_03"); //Å»artujesz sobie ze mnie!
+	AI_Output			(hero, self,"Info_Milten_LSAWAY_15_04"); //To nie pora na Å¼arty. MÃ³wiÄ™ powaÅ¼nie.
+	AI_Output			(hero, self,"Info_Milten_LSAWAY_15_05"); //SpotkaÅ‚em Xardasa, NekromantÄ™!
+	AI_Output			(hero, self,"Info_Milten_LSAWAY_15_06"); //WypeÅ‚niam jego polecenia!
+	AI_Output			(self, hero,"Info_Milten_LSAWAY_02_07"); //XARDAS?! Zaczynasz mnie przeraÅ¼aÄ‡!
+	AI_Output			(self, hero,"Info_Milten_LSAWAY_02_08"); //Nikt z nim nie rozmawiaÅ‚ odkÄ…d opuÅ›ciÅ‚ Stary ObÃ³z.
+	AI_Output			(hero, self,"Info_Milten_LSAWAY_15_09"); //Ja rozmawiaÅ‚em!
 	AI_Output			(self, hero,"Info_Milten_LSAWAY_02_10"); //Do czego potrzebna ci jest energia kopca rudy?
-	AI_Output			(hero, self,"Info_Milten_LSAWAY_15_11"); //Muszê j¹ skumulowaæ w tym oto mieczu.
-	AI_Output			(self, hero,"Info_Milten_LSAWAY_02_12"); //Có¿ za niesamowita broñ!
-	AI_Output			(hero, self,"Info_Milten_LSAWAY_15_13"); //Nazywa siê URIZIEL!
+	AI_Output			(hero, self,"Info_Milten_LSAWAY_15_11"); //MuszÄ™ jÄ… skumulowaÄ‡ w tym oto mieczu.
+	AI_Output			(self, hero,"Info_Milten_LSAWAY_02_12"); //CÃ³Å¼ za niesamowita broÅ„!
+	AI_Output			(hero, self,"Info_Milten_LSAWAY_15_13"); //Nazywa siÄ™ URIZIEL!
 };
 
 
@@ -1414,7 +1414,7 @@ instance Info_Milten_LOADSWORD4 (C_INFO)
 	information		= Info_Milten_LOADSWORD4_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Xardas da³ mi magiczne zaklêcie!"; 
+	description		= "Xardas daÅ‚ mi magiczne zaklÄ™cie!"; 
 };
 
 FUNC int Info_Milten_LOADSWORD4_Condition()
@@ -1427,11 +1427,11 @@ FUNC int Info_Milten_LOADSWORD4_Condition()
 
 func void Info_Milten_LOADSWORD4_Info()
 {
-	AI_Output			(hero, self,"Info_Milten_LOADSWORD4_15_01"); //Xardas da³ mi magiczne zaklêcie, które pozwoli mi przenieœæ energiê!
-	AI_Output			(hero, self,"Info_Milten_LOADSWORD4_15_02"); //Bêdziesz musia³ je odczytaæ, podczas gdy ja dotknê rudy mieczem!
+	AI_Output			(hero, self,"Info_Milten_LOADSWORD4_15_01"); //Xardas daÅ‚ mi magiczne zaklÄ™cie, ktÃ³re pozwoli mi przenieÅ›Ä‡ energiÄ™!
+	AI_Output			(hero, self,"Info_Milten_LOADSWORD4_15_02"); //BÄ™dziesz musiaÅ‚ je odczytaÄ‡, podczas gdy ja dotknÄ™ rudy mieczem!
 	B_UseFakeScroll		();
-	AI_Output			(self, hero,"Info_Milten_LOADSWORD4_02_03"); //Hmmm... Mówisz, ¿e trzeba je tylko odczytaæ?
-	AI_Output			(self, hero,"Info_Milten_LOADSWORD4_02_04"); //Ale Saturas i jego magowie nie puszcz¹ nam tego p³azem!
+	AI_Output			(self, hero,"Info_Milten_LOADSWORD4_02_03"); //Hmmm... MÃ³wisz, Å¼e trzeba je tylko odczytaÄ‡?
+	AI_Output			(self, hero,"Info_Milten_LOADSWORD4_02_04"); //Ale Saturas i jego magowie nie puszczÄ… nam tego pÅ‚azem!
 };
 
 
@@ -1450,7 +1450,7 @@ instance Info_Milten_LSRISK (C_INFO)
 	information		= Info_Milten_LSRISK_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Musimy zaryzykowaæ!"; 
+	description		= "Musimy zaryzykowaÄ‡!"; 
 };
 
 FUNC int Info_Milten_LSRISK_Condition()
@@ -1463,17 +1463,17 @@ FUNC int Info_Milten_LSRISK_Condition()
 
 func void Info_Milten_LSRISK_Info()
 {
-	AI_Output			(hero, self,"Info_Milten_LSRISK_15_01"); //Musimy zaryzykowaæ!
-	AI_Output			(hero, self,"Info_Milten_LSRISK_15_02"); //To bardzo, BARDZO wa¿ne!
-	AI_Output			(hero, self,"Info_Milten_LSRISK_15_03"); //Wa¿ne dla WSZYSTKICH mieszkañców kolonii...
+	AI_Output			(hero, self,"Info_Milten_LSRISK_15_01"); //Musimy zaryzykowaÄ‡!
+	AI_Output			(hero, self,"Info_Milten_LSRISK_15_02"); //To bardzo, BARDZO waÅ¼ne!
+	AI_Output			(hero, self,"Info_Milten_LSRISK_15_03"); //WaÅ¼ne dla WSZYSTKICH mieszkaÅ„cÃ³w kolonii...
 	AI_Output			(self, hero,"Info_Milten_LSRISK_02_04"); //Nic nie rozumiem.
-	AI_Output			(hero, self,"Info_Milten_LSRISK_15_05"); //Dziêki temu wydostaniemy siê na wolnoœæ! Musisz mi zaufaæ!
-	AI_Output			(self, hero,"Info_Milten_LSRISK_02_06"); //Dobrze! Po tym wszystkim, co dla nas zrobi³eœ, ufam ci bezgranicznie.
-	AI_Output			(self, hero,"Info_Milten_LSRISK_02_07"); //No i wygl¹da na to, ¿e nawet Xardas darzy ciê zaufaniem.
-	AI_Output			(self, hero,"Info_Milten_LSRISK_02_08"); //Spotkamy siê przy kopcu rudy. Tylko nikomu ani s³owa!
-	AI_Output			(hero, self,"Info_Milten_LSRISK_15_09"); //Dobrze, zatem spotkamy siê przy kopcu! Do zobaczenia!
+	AI_Output			(hero, self,"Info_Milten_LSRISK_15_05"); //DziÄ™ki temu wydostaniemy siÄ™ na wolnoÅ›Ä‡! Musisz mi zaufaÄ‡!
+	AI_Output			(self, hero,"Info_Milten_LSRISK_02_06"); //Dobrze! Po tym wszystkim, co dla nas zrobiÅ‚eÅ›, ufam ci bezgranicznie.
+	AI_Output			(self, hero,"Info_Milten_LSRISK_02_07"); //No i wyglÄ…da na to, Å¼e nawet Xardas darzy ciÄ™ zaufaniem.
+	AI_Output			(self, hero,"Info_Milten_LSRISK_02_08"); //Spotkamy siÄ™ przy kopcu rudy. Tylko nikomu ani sÅ‚owa!
+	AI_Output			(hero, self,"Info_Milten_LSRISK_15_09"); //Dobrze, zatem spotkamy siÄ™ przy kopcu! Do zobaczenia!
 	
-	B_LogEntry			(CH5_Uriziel,"Uda³o mi siê przekonaæ Miltena do pomocy w ponownym na³adowaniu Uriziela magi¹. Spotkamy siê u stóp kopca rudy.");
+	B_LogEntry			(CH5_Uriziel,"UdaÅ‚o mi siÄ™ przekonaÄ‡ Miltena do pomocy w ponownym naÅ‚adowaniu Uriziela magiÄ…. Spotkamy siÄ™ u stÃ³p kopca rudy.");
 	Npc_ExchangeRoutine	(self,	"LSOreHeap");
 	B_ExchangeRoutine	(Sld_726_Soeldner,	"loadsword");
 
@@ -1506,7 +1506,7 @@ func void Info_Milten_LSOREHEAP_Info()
 {
 	//AI_GotoNpc			(self, hero);
 
-	AI_Output			(self, hero,"Info_Milten_LSOREHEAP_02_01"); //Masz miecz i zaklêcie?
+	AI_Output			(self, hero,"Info_Milten_LSOREHEAP_02_01"); //Masz miecz i zaklÄ™cie?
 };
 	
 //***************************************************************************
@@ -1519,7 +1519,7 @@ instance Info_Milten_LSNOW (C_INFO)
 	information		= Info_Milten_LSNOW_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Proszê, oto ono!"; 
+	description		= "ProszÄ™, oto ono!"; 
 };
 
 FUNC int Info_Milten_LSNOW_Condition()
@@ -1535,10 +1535,10 @@ FUNC int Info_Milten_LSNOW_Condition()
 
 func void Info_Milten_LSNOW_Info()
 {
-	AI_Output			(hero, self,"Info_Milten_LSNOW_15_01"); //Proszê, oto ono!
-	AI_Output			(hero, self,"Info_Milten_LSNOW_15_02"); //Jesteœ gotów?
+	AI_Output			(hero, self,"Info_Milten_LSNOW_15_01"); //ProszÄ™, oto ono!
+	AI_Output			(hero, self,"Info_Milten_LSNOW_15_02"); //JesteÅ› gotÃ³w?
 	AI_Output			(self, hero,"Info_Milten_LSNOW_02_03"); //Nie, ale nie mamy wielkiego wyboru. Teraz albo nigdy!
-	AI_Output			(hero, self,"Info_Milten_LSNOW_15_04"); //Zatem do dzie³a!
+	AI_Output			(hero, self,"Info_Milten_LSNOW_15_04"); //Zatem do dzieÅ‚a!
 
 	B_GiveInvItems 	(hero, self, Scroll4Milten, 1);	
 	B_GiveInvItems 	(hero, self, Mythrilklinge01, 1);	
@@ -1600,18 +1600,18 @@ func void Info_Milten_LSDONE_Info()
 	//AI_GotoNpc				(self, hero);
 
 	AI_Output				(self, hero,"Info_Milten_LSDONE_02_01"); //Gotowe!
-	AI_Output				(hero, self,"Info_Milten_LSDONE_15_02"); //Niesamowite! Ten szary kryszta³ rozb³ysn¹³ piêknym b³êkitem!
+	AI_Output				(hero, self,"Info_Milten_LSDONE_15_02"); //Niesamowite! Ten szary krysztaÅ‚ rozbÅ‚ysnÄ…Å‚ piÄ™knym bÅ‚Ä™kitem!
 
 	AI_EquipBestMeleeWeapon	(hero);
 	AI_ReadyMeleeWeapon		(hero);
 	AI_PlayAni				(hero, "T_1HSINSPECT");
 	AI_RemoveWeapon			(hero);
 
-	AI_Output				(self, hero,"Info_Milten_LSDONE_02_03"); //To dobry znak! Wygl¹da na to, ¿e ca³a energia z kopca zosta³a przeniesiona na miecz!
-	AI_Output				(self, hero,"Info_Milten_LSDONE_02_04"); //Ale nasze dzia³ania zwróci³y uwagê stra¿ników!
-	AI_Output				(self, hero,"Info_Milten_LSDONE_02_05"); //Teleportuj siê st¹d, natychmiast!
-	AI_Output				(hero, self,"Info_Milten_LSDONE_15_06"); //A co z tob¹?
-	AI_Output				(self, hero,"Info_Milten_LSDONE_02_07"); //O mnie siê nie martw! Coœ wymyœlê! Uciekaj st¹d! Ju¿!
+	AI_Output				(self, hero,"Info_Milten_LSDONE_02_03"); //To dobry znak! WyglÄ…da na to, Å¼e caÅ‚a energia z kopca zostaÅ‚a przeniesiona na miecz!
+	AI_Output				(self, hero,"Info_Milten_LSDONE_02_04"); //Ale nasze dziaÅ‚ania zwrÃ³ciÅ‚y uwagÄ™ straÅ¼nikÃ³w!
+	AI_Output				(self, hero,"Info_Milten_LSDONE_02_05"); //Teleportuj siÄ™ stÄ…d, natychmiast!
+	AI_Output				(hero, self,"Info_Milten_LSDONE_15_06"); //A co z tobÄ…?
+	AI_Output				(self, hero,"Info_Milten_LSDONE_02_07"); //O mnie siÄ™ nie martw! CoÅ› wymyÅ›lÄ™! Uciekaj stÄ…d! JuÅ¼!
 
 	B_Story_UrizielLoaded	();
 	

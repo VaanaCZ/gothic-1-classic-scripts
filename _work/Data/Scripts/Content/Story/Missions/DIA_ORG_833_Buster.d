@@ -17,7 +17,7 @@ FUNC int DIA_ORG_833_Buster_Condition()
 
 func void DIA_ORG_833_Buster_Info()
 {
-	AI_Output (self, other,"DIA_ORG_833_Buster_02_01"); //Wiesz co, poruszasz siê tak jakoœ sztywno. Móg³bym ci pomóc.
+	AI_Output (self, other,"DIA_ORG_833_Buster_02_01"); //Wiesz co, poruszasz siÄ™ tak jakoÅ› sztywno. MÃ³gÅ‚bym ci pomÃ³c.
 };
 
 
@@ -54,7 +54,7 @@ INSTANCE DIA_ORG_833_Buster3 (C_INFO)
 	information		= DIA_ORG_833_Buster3_Info;
 	important		= 0;
 	permanent		= 1;
-	description		= "Jak mo¿esz mi pomóc?"; 
+	description		= "Jak moÅ¼esz mi pomÃ³c?"; 
 };
 
 FUNC INT DIA_ORG_833_Buster3_Condition()
@@ -64,14 +64,14 @@ FUNC INT DIA_ORG_833_Buster3_Condition()
 
 func VOID DIA_ORG_833_Buster3_Info()
 {
-	AI_Output (self, other,"DIA_ORG_833_Buster3_02_01"); //Mogê ci pokazaæ, jak nale¿y balansowaæ cia³em. Nauczê ciê AKROBATYKI.
+	AI_Output (self, other,"DIA_ORG_833_Buster3_02_01"); //MogÄ™ ci pokazaÄ‡, jak naleÅ¼y balansowaÄ‡ ciaÅ‚em. NauczÄ™ ciÄ™ AKROBATYKI.
 
 	Info_ClearChoices	( DIA_ORG_833_Buster3 );
 	Info_AddChoice		( DIA_ORG_833_Buster3, DIALOG_BACK													, DIA_ORG_833_Buster_Back );
 	Info_AddChoice		( DIA_ORG_833_Buster3, B_BuildLearnString(NAME_LearnAcrobat, LPCOST_TALENT_ACROBAT,0)	, DIA_ORG_833_Buster_Train1 );
 
 	Log_CreateTopic   	(GE_TeacherNC,	LOG_NOTE);
-	B_LogEntry			(GE_TeacherNC,"Szkodnik imieniem Buster mo¿e mnie nauczyæ akrobatyki.");
+	B_LogEntry			(GE_TeacherNC,"Szkodnik imieniem Buster moÅ¼e mnie nauczyÄ‡ akrobatyki.");
 };
 
 
@@ -82,9 +82,9 @@ FUNC void DIA_ORG_833_Buster_Train1()
 	
 	if (B_GiveSkill(other,NPC_TALENT_ACROBAT , 1, LPCOST_TALENT_ACROBAT))
 	{
-		AI_Output (self, other,"DIA_ORG_833_Buster3_02_02"); //Po kilku lekcjach nauczysz siê skakaæ na wiêksze odleg³oœci.
-		AI_Output (self, other,"DIA_ORG_833_Buster3_02_03"); //Poka¿ê ci w jaki sposób mo¿na z³agodziæ efekt upadku z du¿ej wysokoœci. Tylko nie myœl sobie, ¿e bêdziesz móg³ skakaæ bóg wie sk¹d!
-		AI_Output (self, other,"DIA_ORG_833_Buster3_02_04"); //Akrobatyka przyda ci siê równie¿ w trakcie walki. Poka¿ê ci jak bardzo szybko zmniejszyæ lub zwiêkszyæ odleg³oœæ dziel¹c¹ ciê od przeciwnika. Powodzenia!
+		AI_Output (self, other,"DIA_ORG_833_Buster3_02_02"); //Po kilku lekcjach nauczysz siÄ™ skakaÄ‡ na wiÄ™ksze odlegÅ‚oÅ›ci.
+		AI_Output (self, other,"DIA_ORG_833_Buster3_02_03"); //PokaÅ¼Ä™ ci w jaki sposÃ³b moÅ¼na zÅ‚agodziÄ‡ efekt upadku z duÅ¼ej wysokoÅ›ci. Tylko nie myÅ›l sobie, Å¼e bÄ™dziesz mÃ³gÅ‚ skakaÄ‡ bÃ³g wie skÄ…d!
+		AI_Output (self, other,"DIA_ORG_833_Buster3_02_04"); //Akrobatyka przyda ci siÄ™ rÃ³wnieÅ¼ w trakcie walki. PokaÅ¼Ä™ ci jak bardzo szybko zmniejszyÄ‡ lub zwiÄ™kszyÄ‡ odlegÅ‚oÅ›Ä‡ dzielÄ…cÄ… ciÄ™ od przeciwnika. Powodzenia!
 	};		
 };  
 

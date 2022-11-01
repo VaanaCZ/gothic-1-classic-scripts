@@ -1,10 +1,10 @@
 func void B_Story_CancelFindXardas()
 {
-	//-------- Tagebucheinträge --------
-	B_LogEntry			(CH4_FindXardas,"Postanowi³em nie wspominaæ Saturasowi, ¿e Xardas uwa¿a gromadzenie rudy za stratê czasu. Gdy tylko odkryjê inny sposób na prze³amanie Bariery, powiem mu ca³¹ prawdê. Póki co muszê jakoœ ¿yæ z wstydliw¹ œwiadomoœci¹ niewykonania powierzonego mi zadania."); 
+	//-------- TagebucheintrÃ¤ge --------
+	B_LogEntry			(CH4_FindXardas,"PostanowiÅ‚em nie wspominaÄ‡ Saturasowi, Å¼e Xardas uwaÅ¼a gromadzenie rudy za stratÄ™ czasu. Gdy tylko odkryjÄ™ inny sposÃ³b na przeÅ‚amanie Bariery, powiem mu caÅ‚Ä… prawdÄ™. PÃ³ki co muszÄ™ jakoÅ› Å¼yÄ‡ z wstydliwÄ… Å›wiadomoÅ›ciÄ… niewykonania powierzonego mi zadania."); 
 	Log_SetTopicStatus	(CH4_FindXardas,	LOG_FAILED);
 
-	//-------- Missionsgegenstände --------
+	//-------- MissionsgegenstÃ¤nde --------
 	
 	//-------- NSCs einsetzen --------
 	

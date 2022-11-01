@@ -7,11 +7,11 @@
 //	Uhrzeit:
 //
 //	Es passiert folgendes:
-//	1.	Nähert sich der Spieler dem Durchgang, so wird er in diesen
+//	1.	NÃ¤hert sich der Spieler dem Durchgang, so wird er in diesen
 //		Dialog gezwungen und einmal gewarnt
-//	2.	Nähert sich der SC trotzdem weiter, so wird er ein ZWEITES Mal
+//	2.	NÃ¤hert sich der SC trotzdem weiter, so wird er ein ZWEITES Mal
 //		gewarnt (aggressiver mit Waffe ziehen)
-//	3.	Nähert er sich trotzdem wieder, wird er angegriffen
+//	3.	NÃ¤hert er sich trotzdem wieder, wird er angegriffen
 //////////////////////////////////////////////////////////////////////////
 const string	TPL_1441_CHECKPOINT		= "PSI_TEMPLE_IN";
 
@@ -42,7 +42,7 @@ func void Info_TPL_1441_FirstWarn_Info()
 {
 	PrintGlobals	(PD_MISSION);
 
-	AI_Output 		(self, hero,"Info_TPL_1441_FirstWarn_13_01"); //STÓJ! Na œwi¹tynne wzgórze mo¿na wejœæ tylko za pozwoleniem któregoœ z Guru!
+	AI_Output 		(self, hero,"Info_TPL_1441_FirstWarn_13_01"); //STÃ“J! Na Å›wiÄ…tynne wzgÃ³rze moÅ¼na wejÅ›Ä‡ tylko za pozwoleniem ktÃ³regoÅ› z Guru!
 
 	hero.aivar[AIV_LASTDISTTOWP] 		= Npc_GetDistToWP(hero,TPL_1441_CHECKPOINT);
 	hero.aivar[AIV_GUARDPASSAGE_STATUS]	= AIV_GPS_FIRSTWARN;	
@@ -50,8 +50,8 @@ func void Info_TPL_1441_FirstWarn_Info()
 	if (Npc_KnowsInfo(hero, PC_Psionic_SEND))
 	{
 		Info_Clearchoices 	(Info_TPL_1441_FirstWarn);
-		Info_Addchoice 		(Info_TPL_1441_FirstWarn,"Sam Y'Berion udzieli³ mi pozwolenia.",	Info_TPL_1441_FirstWarn_Condition_YBERION);  
-		Info_Addchoice 		(Info_TPL_1441_FirstWarn,"Przysy³a mnie Nowicjusz Lester.",	Info_TPL_1441_FirstWarn_Condition_LESTER);  
+		Info_Addchoice 		(Info_TPL_1441_FirstWarn,"Sam Y'Berion udzieliÅ‚ mi pozwolenia.",	Info_TPL_1441_FirstWarn_Condition_YBERION);  
+		Info_Addchoice 		(Info_TPL_1441_FirstWarn,"PrzysyÅ‚a mnie Nowicjusz Lester.",	Info_TPL_1441_FirstWarn_Condition_LESTER);  
 	}
 	else
 	{
@@ -61,14 +61,14 @@ func void Info_TPL_1441_FirstWarn_Info()
 
 func void Info_TPL_1441_FirstWarn_Condition_YBERION ()
 {
-	AI_Output (hero, self,"Info_TPL_1441_FirstWarn_Condition_YBERION_15_01"); //Sam Y'Berion udzieli³ mi pozwolenia.
-	AI_Output (self, hero,"Info_TPL_1441_FirstWarn_Condition_YBERION_13_02"); //K³amcy ³atwo mog¹ straciæ jêzyk, wiêc uwa¿aj co mówisz.
+	AI_Output (hero, self,"Info_TPL_1441_FirstWarn_Condition_YBERION_15_01"); //Sam Y'Berion udzieliÅ‚ mi pozwolenia.
+	AI_Output (self, hero,"Info_TPL_1441_FirstWarn_Condition_YBERION_13_02"); //KÅ‚amcy Å‚atwo mogÄ… straciÄ‡ jÄ™zyk, wiÄ™c uwaÅ¼aj co mÃ³wisz.
 };
 
 func void Info_TPL_1441_FirstWarn_Condition_LESTER ()
 {
-	AI_Output (hero, self,"Info_TPL_1441_FirstWarn_Condition_LESTER_15_01"); //Przysy³a mnie Nowicjusz Lester. Chcia³bym ofiarowaæ moje us³ugi Y'Berionowi.
-	AI_Output (self, hero,"Info_TPL_1441_FirstWarn_Condition_LESTER_13_02"); //Znam Lestera. Mo¿na mu zaufaæ. Mo¿esz przejœæ.
+	AI_Output (hero, self,"Info_TPL_1441_FirstWarn_Condition_LESTER_15_01"); //PrzysyÅ‚a mnie Nowicjusz Lester. ChciaÅ‚bym ofiarowaÄ‡ moje usÅ‚ugi Y'Berionowi.
+	AI_Output (self, hero,"Info_TPL_1441_FirstWarn_Condition_LESTER_13_02"); //Znam Lestera. MoÅ¼na mu zaufaÄ‡. MoÅ¼esz przejÅ›Ä‡.
 	Info_Clearchoices 	(Info_TPL_1441_FirstWarn);
 
 	//---- beide Wachen auf passieren schalten ----
@@ -104,7 +104,7 @@ func int Info_TPL_1441_LastWarn_Condition()
 
 func int Info_TPL_1441_LastWarn_Info()
 {
-	AI_Output 		(self, hero,"Info_TPL_1441_LastWarn_13_01"); 		//Jeszcze jeden krok, a bêdzie po tobie.
+	AI_Output 		(self, hero,"Info_TPL_1441_LastWarn_13_01"); 		//Jeszcze jeden krok, a bÄ™dzie po tobie.
 
 	hero.aivar[AIV_LASTDISTTOWP] 		= Npc_GetDistToWP (hero,TPL_1441_CHECKPOINT);
 	hero.aivar[AIV_GUARDPASSAGE_STATUS]	= AIV_GPS_LASTWARN;	
@@ -143,7 +143,7 @@ func int Info_TPL_1441_Attack_Info()
 	hero.aivar[AIV_GUARDPASSAGE_STATUS]	= AIV_GPS_PUNISH;	
 	
 	B_FullStop			(self);	
-	AI_StopProcessInfos	(self);					// dem Spieler sofort wieder die Kontrolle zurückgeben
+	AI_StopProcessInfos	(self);					// dem Spieler sofort wieder die Kontrolle zurÃ¼ckgeben
 	B_IntruderAlert		(self,	other);
 	B_SetAttackReason	(self,	AIV_AR_INTRUDER);
 	Npc_SetTarget		(self,	hero);

@@ -37,7 +37,7 @@ INSTANCE Info_Bau_4_WichtigePersonen(C_INFO)
 	condition	= Info_Bau_4_WichtigePersonen_Condition;
 	information	= Info_Bau_4_WichtigePersonen_Info;
 	permanent	= 1;
-	description = "Macie jakiegoú przywÛdcÍ?";
+	description = "Macie jakiego≈õ przyw√≥dcƒô?";
 };                       
 
 FUNC INT Info_Bau_4_WichtigePersonen_Condition()
@@ -47,9 +47,9 @@ FUNC INT Info_Bau_4_WichtigePersonen_Condition()
 
 FUNC VOID Info_Bau_4_WichtigePersonen_Info()
 {
-	AI_Output(other,self,"Info_Bau_4_WichtigePersonen_15_00"); //Macie jakiegoú przywÛdcÍ?
-	AI_Output(self,other,"Info_Bau_4_WichtigePersonen_04_01"); //CÛø, teoretycznie naszym szefem jest Ryøowy Ksiπøe, ale wiÍkszoúÊ z nas pracuje dla niego tylko ze strachu przed jego siepaczami.
-	AI_Output(self,other,"Info_Bau_4_WichtigePersonen_04_02"); //Ja jestem wyjπtkiem. Jestem tu od kilku lat i zdπøy≥em juø parÍ razy oberwaÊ od SzkodnikÛw. Na polach ryøowych jest przynajmniej spokojnie.
+	AI_Output(other,self,"Info_Bau_4_WichtigePersonen_15_00"); //Macie jakiego≈õ przyw√≥dcƒô?
+	AI_Output(self,other,"Info_Bau_4_WichtigePersonen_04_01"); //C√≥≈º, teoretycznie naszym szefem jest Ry≈ºowy KsiƒÖ≈ºe, ale wiƒôkszo≈õƒá z nas pracuje dla niego tylko ze strachu przed jego siepaczami.
+	AI_Output(self,other,"Info_Bau_4_WichtigePersonen_04_02"); //Ja jestem wyjƒÖtkiem. Jestem tu od kilku lat i zdƒÖ≈ºy≈Çem ju≈º parƒô razy oberwaƒá od Szkodnik√≥w. Na polach ry≈ºowych jest przynajmniej spokojnie.
 	var C_NPC Ricelord;			Ricelord	= Hlp_GetNpc(Bau_900_Ricelord);
 	Ricelord.aivar[AIV_FINDABLE] = TRUE;	
 };
@@ -64,7 +64,7 @@ INSTANCE Info_Bau_4_DasLager(C_INFO)
 	condition	= Info_Bau_4_DasLager_Condition;
 	information	= Info_Bau_4_DasLager_Info;
 	permanent	= 1;
-	description = "Co powinienem wiedzieÊ o tym miejscu?";
+	description = "Co powinienem wiedzieƒá o tym miejscu?";
 };                       
 
 FUNC INT Info_Bau_4_DasLager_Condition()
@@ -74,8 +74,8 @@ FUNC INT Info_Bau_4_DasLager_Condition()
 
 FUNC VOID Info_Bau_4_DasLager_Info()
 {
-	AI_Output(other,self,"Info_Bau_4_DasLager_15_00"); //Co powinienem wiedzieÊ o tym miejscu?
-	AI_Output(self,other,"Info_Bau_4_DasLager_04_01"); //Uwaøaj na siebie, ch≥opcze! W Obozie roi siÍ od mordercÛw i rabusiÛw. Oni tylko czekajπ na przybycie kogoú takiego jak ty.
+	AI_Output(other,self,"Info_Bau_4_DasLager_15_00"); //Co powinienem wiedzieƒá o tym miejscu?
+	AI_Output(self,other,"Info_Bau_4_DasLager_04_01"); //Uwa≈ºaj na siebie, ch≈Çopcze! W Obozie roi siƒô od morderc√≥w i rabusi√≥w. Oni tylko czekajƒÖ na przybycie kogo≈õ takiego jak ty.
 };
 
 // *************************************************************************
@@ -88,7 +88,7 @@ INSTANCE Info_Bau_4_DieLage(C_INFO) // E1
 	condition	= Info_Bau_4_DieLage_Condition;
 	information	= Info_Bau_4_DieLage_Info;
 	permanent	= 1;
-	description = "Co s≥ychaÊ?";
+	description = "Co s≈Çychaƒá?";
 };                       
 
 FUNC INT Info_Bau_4_DieLage_Condition()
@@ -98,8 +98,8 @@ FUNC INT Info_Bau_4_DieLage_Condition()
 
 FUNC VOID Info_Bau_4_DieLage_Info()
 {
-	AI_Output(other,self,"Info_Bau_4_DieLage_15_00"); //Co s≥ychaÊ?
-	AI_Output(self,other,"Info_Bau_4_DieLage_04_01"); //Mamy mnÛstwo pracy. Do wykarmienia tylu ludzi potrzeba mnÛstwa ryøu.
+	AI_Output(other,self,"Info_Bau_4_DieLage_15_00"); //Co s≈Çychaƒá?
+	AI_Output(self,other,"Info_Bau_4_DieLage_04_01"); //Mamy mn√≥stwo pracy. Do wykarmienia tylu ludzi potrzeba mn√≥stwa ry≈ºu.
 };
 
 // *************************************************************************
@@ -112,7 +112,7 @@ INSTANCE Info_Bau_4_Wasser(C_INFO) // E1
 	condition	= Info_Bau_4_Wasser_Condition;
 	information	= Info_Bau_4_Wasser_Info;
 	permanent	= 1;
-	description = "Przysy≥a mnie Lewus. Przynios≥em ci wodÍ.";
+	description = "Przysy≈Ça mnie Lewus. Przynios≈Çem ci wodƒô.";
 };                       
 
 FUNC INT Info_Bau_4_Wasser_Condition()
@@ -126,7 +126,7 @@ FUNC INT Info_Bau_4_Wasser_Condition()
 
 FUNC VOID Info_Bau_4_Wasser_Info()
 {
-	AI_Output(other,self,"Info_Bau_4_Wasser_15_00"); //Przysy≥a mnie Lewus. Przynios≥em ci wodÍ.
+	AI_Output(other,self,"Info_Bau_4_Wasser_15_00"); //Przysy≈Ça mnie Lewus. Przynios≈Çem ci wodƒô.
 	if (Npc_HasItems(other, ItFo_Potion_Water_01)>=1)
 	{
 		B_GiveInvItems		(other, self,	ItFo_Potion_Water_01, 1);
@@ -137,7 +137,7 @@ FUNC VOID Info_Bau_4_Wasser_Info()
 		};
 		AI_UseItem			(self,	ItFo_Potion_Water_01);
 
-		AI_Output(self,other,"Info_Bau_4_Wasser_04_01"); //DziÍki, ch≥opcze. PiÍkne dziÍki.
+		AI_Output(self,other,"Info_Bau_4_Wasser_04_01"); //Dziƒôki, ch≈Çopcze. Piƒôkne dziƒôki.
 		
 		An_Bauern_verteilt = An_Bauern_verteilt+1;
 		if (An_Bauern_verteilt>=DurstigeBauern)
@@ -148,7 +148,7 @@ FUNC VOID Info_Bau_4_Wasser_Info()
 	}
 	else
 	{
-		AI_Output(self,other,"Info_Bau_4_Wasser_NOWATER_04_00"); //Ale nic ci nie zosta≥o! No trudno, poszukam u innych.
+		AI_Output(self,other,"Info_Bau_4_Wasser_NOWATER_04_00"); //Ale nic ci nie zosta≈Ço! No trudno, poszukam u innych.
 	};
 };
 

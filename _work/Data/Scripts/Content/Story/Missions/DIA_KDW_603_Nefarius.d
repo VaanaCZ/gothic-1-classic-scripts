@@ -33,7 +33,7 @@ instance  Info_Nefarius_Hallo (C_INFO)
 	condition	=	Info_Nefarius_Hallo_Condition;
 	information	=	Info_Nefarius_Hallo_Info;
 	permanent	=	0;
-	description =	"Kim jesteœ?";
+	description =	"Kim jesteÅ›?";
 };                       
 
 FUNC int  Info_Nefarius_Hallo_Condition()
@@ -43,8 +43,8 @@ FUNC int  Info_Nefarius_Hallo_Condition()
 
 FUNC VOID  Info_Nefarius_Hallo_Info()
 {
-	AI_Output (other, self,"Info_Nefarius_Hallo_15_00"); //Kim jesteœ?
-	AI_Output (self, other,"Info_Nefarius_Hallo_04_01"); //Nazywam siê Nefarius. Mag Krêgu Wody.
+	AI_Output (other, self,"Info_Nefarius_Hallo_15_00"); //Kim jesteÅ›?
+	AI_Output (self, other,"Info_Nefarius_Hallo_04_01"); //Nazywam siÄ™ Nefarius. Mag KrÄ™gu Wody.
 };
 
 // **************************** 
@@ -58,7 +58,7 @@ instance  Info_Nefarius_WoSaturas (C_INFO)
 	condition	=	Info_Nefarius_WoSaturas_Condition;
 	information	=	Info_Nefarius_WoSaturas_Info;
 	permanent	=	0;
-	description =	"Gdzie mogê znaleŸæ Saturasa?";
+	description =	"Gdzie mogÄ™ znaleÅºÄ‡ Saturasa?";
 };                       
 
 FUNC int  Info_Nefarius_WoSaturas_Condition()
@@ -68,8 +68,8 @@ FUNC int  Info_Nefarius_WoSaturas_Condition()
 
 FUNC VOID  Info_Nefarius_WoSaturas_Info()
 {
-	AI_Output (other, self,"Info_Nefarius_WoSaturas_15_00"); //Gdzie mogê znaleŸæ Saturasa?
-	AI_Output (self, other,"Info_Nefarius_WoSaturas_04_01"); //Poszukaj za t¹ wielk¹, okr¹g³¹ bram¹.
+	AI_Output (other, self,"Info_Nefarius_WoSaturas_15_00"); //Gdzie mogÄ™ znaleÅºÄ‡ Saturasa?
+	AI_Output (self, other,"Info_Nefarius_WoSaturas_04_01"); //Poszukaj za tÄ… wielkÄ…, okrÄ…gÅ‚Ä… bramÄ….
 };
 
 // **************************** 
@@ -83,7 +83,7 @@ instance  Info_Nefarius_WannaMage (C_INFO)
 	condition	=	Info_Nefarius_WannaMage_Condition;
 	information	=	Info_Nefarius_WannaMage_Info;
 	permanent	=	0;
-	description =	"Chcia³bym zostaæ Magiem Krêgu Wody.";
+	description =	"ChciaÅ‚bym zostaÄ‡ Magiem KrÄ™gu Wody.";
 };                       
 
 FUNC int  Info_Nefarius_WannaMage_Condition()
@@ -96,12 +96,12 @@ FUNC int  Info_Nefarius_WannaMage_Condition()
 
 FUNC VOID  Info_Nefarius_WannaMage_Info()
 {
-	AI_Output (other, self,"Info_Nefarius_WannaMage_15_00"); //Chcia³bym zostaæ Magiem Krêgu Wody.
-	AI_Output (self, other,"Info_Nefarius_WannaMage_04_01"); //Nie tak szybko, mój ch³opcze!
-	AI_Output (self, other,"Info_Nefarius_WannaMage_04_02"); //Nie przyjmujemy do naszego grona byle kogo. Najpierw musisz siê wykazaæ czymœ niezwyk³ym.
-	AI_Output (self, other,"Info_Nefarius_WannaMage_04_03"); //Potem czeka ciê okres próbny.
-	AI_Output (self, other,"Info_Nefarius_WannaMage_04_04"); //Je¿eli powa¿nie myœlisz o zostaniu Magiem Wody, do³¹cz najpierw do Najemników. W ten sposób bêdziesz móg³ nam udowodniæ swoj¹ wartoœæ.
-	AI_Output (self, other,"Info_Nefarius_WannaMage_04_05"); //Kto wie, mo¿e pewnego dnia uda ci siê nas przekonaæ...
+	AI_Output (other, self,"Info_Nefarius_WannaMage_15_00"); //ChciaÅ‚bym zostaÄ‡ Magiem KrÄ™gu Wody.
+	AI_Output (self, other,"Info_Nefarius_WannaMage_04_01"); //Nie tak szybko, mÃ³j chÅ‚opcze!
+	AI_Output (self, other,"Info_Nefarius_WannaMage_04_02"); //Nie przyjmujemy do naszego grona byle kogo. Najpierw musisz siÄ™ wykazaÄ‡ czymÅ› niezwykÅ‚ym.
+	AI_Output (self, other,"Info_Nefarius_WannaMage_04_03"); //Potem czeka ciÄ™ okres prÃ³bny.
+	AI_Output (self, other,"Info_Nefarius_WannaMage_04_04"); //JeÅ¼eli powaÅ¼nie myÅ›lisz o zostaniu Magiem Wody, doÅ‚Ä…cz najpierw do NajemnikÃ³w. W ten sposÃ³b bÄ™dziesz mÃ³gÅ‚ nam udowodniÄ‡ swojÄ… wartoÅ›Ä‡.
+	AI_Output (self, other,"Info_Nefarius_WannaMage_04_05"); //Kto wie, moÅ¼e pewnego dnia uda ci siÄ™ nas przekonaÄ‡...
 };
 
 // **************************** 
@@ -115,7 +115,7 @@ instance  Info_Nefarius_NowReady (C_INFO)
 	condition	=	Info_Nefarius_NowReady_Condition;
 	information	=	Info_Nefarius_NowReady_Info;
 	permanent	=	1;
-	description =	"Czy jestem ju¿ gotów, by zostaæ Magiem Wody?";
+	description =	"Czy jestem juÅ¼ gotÃ³w, by zostaÄ‡ Magiem Wody?";
 };                       
 
 FUNC int  Info_Nefarius_NowReady_Condition()
@@ -128,16 +128,16 @@ FUNC int  Info_Nefarius_NowReady_Condition()
 
 FUNC VOID  Info_Nefarius_NowReady_Info()
 {
-	AI_Output (other, self,"Info_Nefarius_NowReady_15_00"); //Czy jestem ju¿ gotów, by zostaæ Magiem Wody?
+	AI_Output (other, self,"Info_Nefarius_NowReady_15_00"); //Czy jestem juÅ¼ gotÃ³w, by zostaÄ‡ Magiem Wody?
 	
 	if (Npc_GetTrueGuild (hero) != GIL_SLD) 
 	{
-		AI_Output (self, other,"Info_Nefarius_NowReady_04_01"); //Najpierw zaci¹gnij siê do Najemników, potem - zobaczymy...
+		AI_Output (self, other,"Info_Nefarius_NowReady_04_01"); //Najpierw zaciÄ…gnij siÄ™ do NajemnikÃ³w, potem - zobaczymy...
 	}
 	else
 	{
-		AI_Output (self, other,"Info_Nefarius_NowReady_04_02"); //Jak widzê, zosta³eœ jednym z Najemników. Dobrze, bardzo dobrze!
-		AI_Output (self, other,"Info_Nefarius_NowReady_04_03"); //Czekaj teraz cierpliwie na swoj¹ szansê...
+		AI_Output (self, other,"Info_Nefarius_NowReady_04_02"); //Jak widzÄ™, zostaÅ‚eÅ› jednym z NajemnikÃ³w. Dobrze, bardzo dobrze!
+		AI_Output (self, other,"Info_Nefarius_NowReady_04_03"); //Czekaj teraz cierpliwie na swojÄ… szansÄ™...
 	};
 };
 
@@ -172,15 +172,15 @@ FUNC int  Info_Nefarius_OCNews_Condition()
 
 FUNC VOID  Info_Nefarius_OCNews_Info()
 {
-	AI_Output (self, other,"Info_Nefarius_OCNews_04_00"); //S¹ jakieœ wieœci od naszych przyjació³ ze Starego Obozu?
-	AI_Output (other, self,"Info_Nefarius_OCNews_15_01"); //Gomez kaza³ wymordowaæ wszystkich Magów Ognia!
-	AI_Output (self, other,"Info_Nefarius_OCNews_04_02"); //Nie! Durny barbarzyñca! Uprzedza³em Corristo - Gomezowi od pocz¹tku nie mo¿na by³o ufaæ! Musisz donieœæ o tym Saturasowi!
+	AI_Output (self, other,"Info_Nefarius_OCNews_04_00"); //SÄ… jakieÅ› wieÅ›ci od naszych przyjaciÃ³Å‚ ze Starego Obozu?
+	AI_Output (other, self,"Info_Nefarius_OCNews_15_01"); //Gomez kazaÅ‚ wymordowaÄ‡ wszystkich MagÃ³w Ognia!
+	AI_Output (self, other,"Info_Nefarius_OCNews_04_02"); //Nie! Durny barbarzyÅ„ca! UprzedzaÅ‚em Corristo - Gomezowi od poczÄ…tku nie moÅ¼na byÅ‚o ufaÄ‡! Musisz donieÅ›Ä‡ o tym Saturasowi!
 	if (Npc_GetTrueGuild(hero)==GIL_SLD)
 	{
 		AI_Output (self, other,"Info_Nefarius_OCNews_04_03"); //Czekaj!
-		AI_Output (self, other,"Info_Nefarius_OCNews_04_04"); //Narazi³eœ siê dla nas na nie lada niebezpieczeñstwa.
-		AI_Output (self, other,"Info_Nefarius_OCNews_04_05"); //Jesteœ ju¿ chyba godzien, by nosiæ szaty Maga Wody.
-		AI_Output (self, other,"Info_Nefarius_OCNews_04_06"); //A teraz spiesz do Saturasa! Nie traæ czasu!
+		AI_Output (self, other,"Info_Nefarius_OCNews_04_04"); //NaraziÅ‚eÅ› siÄ™ dla nas na nie lada niebezpieczeÅ„stwa.
+		AI_Output (self, other,"Info_Nefarius_OCNews_04_05"); //JesteÅ› juÅ¼ chyba godzien, by nosiÄ‡ szaty Maga Wody.
+		AI_Output (self, other,"Info_Nefarius_OCNews_04_06"); //A teraz spiesz do Saturasa! Nie traÄ‡ czasu!
 	};
 	AI_StopProcessInfos	(self);
 };

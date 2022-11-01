@@ -25,7 +25,7 @@ INSTANCE ItWrTemplemap(C_Item)
 	scemeName			=	"MAP";
 	on_state[0]			=	UseTemplemap;
 
-	description			= "Szkic œwi¹tyni";
+	description			= "Szkic Å›wiÄ…tyni";
 	TEXT[4]				= NAME_Value;					COUNT[4]	= value;
 };
 
@@ -46,7 +46,7 @@ INSTANCE ItWrTemplemap(C_Item)
 //---------------------------------------------------------------------
 INSTANCE ItMiAlarmhorn (C_Item)
 {
-	name 				=	"Róg";
+	name 				=	"RÃ³g";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags				=	ITEM_MISSION;
@@ -74,11 +74,11 @@ INSTANCE ItMiAlarmhorn (C_Item)
 };
 
 //---------------------------------------------------------------------
-//	Statuette für Tür zum Alten Tempel
+//	Statuette fÃ¼r TÃ¼r zum Alten Tempel
 //---------------------------------------------------------------------
 INSTANCE ItMi_Stuff_Idol_Sleeper_01 (C_Item)
 {
-	name 				=	"Pos¹¿ek";
+	name 				=	"PosÄ…Å¼ek";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MISSION;
@@ -89,17 +89,17 @@ INSTANCE ItMi_Stuff_Idol_Sleeper_01 (C_Item)
 	material 			=	MAT_CLAY;
 
 	description			=	name;
-	TEXT[0]				= "Pos¹¿ek przedstawia zniekszta³con¹";
-	TEXT[1]				= "postaæ w masce.";
-	TEXT[2]				= "Maskê otacza szeœæ ¿¹de³.";
+	TEXT[0]				= "PosÄ…Å¼ek przedstawia znieksztaÅ‚conÄ…";
+	TEXT[1]				= "postaÄ‡ w masce.";
+	TEXT[2]				= "MaskÄ™ otacza szeÅ›Ä‡ Å¼Ä…deÅ‚.";
 };
 
 //---------------------------------------------------------------------
-//	Schläferschwert 1
+//	SchlÃ¤ferschwert 1
 //---------------------------------------------------------------------
 INSTANCE Weltenspalter (C_Item) 
 {	
-	name 				=	"Rozcinacz œwiatów";
+	name 				=	"Rozcinacz Å›wiatÃ³w";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_2HD_SWD|ITEM_MISSION;
@@ -114,20 +114,20 @@ INSTANCE Weltenspalter (C_Item)
 	cond_value[2]  		= 	30;
 	visual 				=	"ItMi_SleeperKey_01.3DS";
 	description			= 	name;
-	TEXT[0]				=	"Ten miecz nale¿a³ do zamienionego w o¿ywieñca";
-	TEXT[1]				=	"kap³ana orków, Varrag-Hashora.";
+	TEXT[0]				=	"Ten miecz naleÅ¼aÅ‚ do zamienionego w oÅ¼ywieÅ„ca";
+	TEXT[1]				=	"kapÅ‚ana orkÃ³w, Varrag-Hashora.";
 	TEXT[2]				=	"Niestety, po tych wszystkich latach";
-	TEXT[3]				=	"nie nadaje siê ju¿ do u¿ytku!";
-	TEXT[4]				=	"Mo¿e da siê go wykorzystaæ";
-	TEXT[5]				=	"w inny sposób.";
+	TEXT[3]				=	"nie nadaje siÄ™ juÅ¼ do uÅ¼ytku!";
+	TEXT[4]				=	"MoÅ¼e da siÄ™ go wykorzystaÄ‡";
+	TEXT[5]				=	"w inny sposÃ³b.";
 };
 
 //---------------------------------------------------------------------
-//	Schläferschwert 2
+//	SchlÃ¤ferschwert 2
 //---------------------------------------------------------------------
 INSTANCE Lichtbringer (C_Item) 
 {	
-	name 				=	"Ostrze Œwiat³a";
+	name 				=	"Ostrze ÅšwiatÅ‚a";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_2HD_SWD|ITEM_MISSION;	
@@ -142,16 +142,16 @@ INSTANCE Lichtbringer (C_Item)
 	cond_value[2]  		= 	30;
 	visual 				=	"ItMi_SleeperKey_01.3DS";
 	description			= 	name;
-	TEXT[0]				=	"Ten miecz nale¿a³ do zamienionego w o¿ywieñca";
-	TEXT[1]				=	"kap³ana orków, Varrag-Kasorga.";
+	TEXT[0]				=	"Ten miecz naleÅ¼aÅ‚ do zamienionego w oÅ¼ywieÅ„ca";
+	TEXT[1]				=	"kapÅ‚ana orkÃ³w, Varrag-Kasorga.";
 	TEXT[2]				=	"Niestety, po tych wszystkich latach";
-	TEXT[3]				=	"nie nadaje siê ju¿ do u¿ytku!";
-	TEXT[4]				=	"Mo¿e da siê go wykorzystaæ";
-	TEXT[5]				=	"w inny sposób.";
+	TEXT[3]				=	"nie nadaje siÄ™ juÅ¼ do uÅ¼ytku!";
+	TEXT[4]				=	"MoÅ¼e da siÄ™ go wykorzystaÄ‡";
+	TEXT[5]				=	"w inny sposÃ³b.";
 };
 
 //---------------------------------------------------------------------
-//	Schläferschwert 3
+//	SchlÃ¤ferschwert 3
 //---------------------------------------------------------------------
 INSTANCE Zeitenklinge (C_Item) 
 {	
@@ -170,20 +170,20 @@ INSTANCE Zeitenklinge (C_Item)
 	cond_value[2]  		= 	30;
 	visual 				=	"ItMi_SleeperKey_01.3DS";
 	description			= 	name;
-	TEXT[0]				=	"Ten miecz nale¿a³ do zamienionego w o¿ywieñca";
-	TEXT[1]				=	"kap³ana orków, Varrag-Unhilqta.";
+	TEXT[0]				=	"Ten miecz naleÅ¼aÅ‚ do zamienionego w oÅ¼ywieÅ„ca";
+	TEXT[1]				=	"kapÅ‚ana orkÃ³w, Varrag-Unhilqta.";
 	TEXT[2]				=	"Niestety, po tych wszystkich latach";
-	TEXT[3]				=	"nie nadaje siê ju¿ do u¿ytku!";
-	TEXT[4]				=	"Mo¿e da siê go wykorzystaæ";
-	TEXT[5]				=	"w inny sposób.";
+	TEXT[3]				=	"nie nadaje siÄ™ juÅ¼ do uÅ¼ytku!";
+	TEXT[4]				=	"MoÅ¼e da siÄ™ go wykorzystaÄ‡";
+	TEXT[5]				=	"w inny sposÃ³b.";
 };
 
 //---------------------------------------------------------------------
-//	Schläferschwert 4
+//	SchlÃ¤ferschwert 4
 //---------------------------------------------------------------------
 INSTANCE Daemonenstreich (C_Item) 
 {	
-	name 				=	"Gniew Demonów";
+	name 				=	"Gniew DemonÃ³w";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_2HD_SWD|ITEM_MISSION;	
@@ -198,16 +198,16 @@ INSTANCE Daemonenstreich (C_Item)
 	cond_value[2]  		= 	30;
 	visual 				=	"ItMi_SleeperKey_01.3DS";
 	description			= 	name;
-	TEXT[0]				=	"Ten miecz nale¿a³ do zamienionego w o¿ywieñca";
-	TEXT[1]				=	"kap³ana orków, Varrag-Ruuushka.";
+	TEXT[0]				=	"Ten miecz naleÅ¼aÅ‚ do zamienionego w oÅ¼ywieÅ„ca";
+	TEXT[1]				=	"kapÅ‚ana orkÃ³w, Varrag-Ruuushka.";
 	TEXT[2]				=	"Niestety, po tych wszystkich latach";
-	TEXT[3]				=	"nie nadaje siê ju¿ do u¿ytku!";
-	TEXT[4]				=	"Mo¿e da siê go wykorzystaæ";
-	TEXT[5]				=	"w inny sposób.";
+	TEXT[3]				=	"nie nadaje siÄ™ juÅ¼ do uÅ¼ytku!";
+	TEXT[4]				=	"MoÅ¼e da siÄ™ go wykorzystaÄ‡";
+	TEXT[5]				=	"w inny sposÃ³b.";
 };
 
 //---------------------------------------------------------------------
-//	Schläferschwert 5
+//	SchlÃ¤ferschwert 5
 //---------------------------------------------------------------------
 INSTANCE Bannklinge (C_Item) 
 {	
@@ -226,16 +226,16 @@ INSTANCE Bannklinge (C_Item)
 	cond_value[2]  		= 	30;
 	visual 				=	"ItMi_SleeperKey_01.3DS";
 	description			= 	name;
-	TEXT[0]				=	"Ten miecz nale¿a³ do zamienionego w o¿ywieñca";
-	TEXT[1]				=	"kap³ana orków, Grash-Varrag-Arushata.";
+	TEXT[0]				=	"Ten miecz naleÅ¼aÅ‚ do zamienionego w oÅ¼ywieÅ„ca";
+	TEXT[1]				=	"kapÅ‚ana orkÃ³w, Grash-Varrag-Arushata.";
 	TEXT[2]				=	"Niestety, po tych wszystkich latach";
-	TEXT[3]				=	"nie nadaje siê ju¿ do u¿ytku!";
-	TEXT[4]				=	"Mo¿e da siê go wykorzystaæ";
-	TEXT[5]				=	"w inny sposób.";
+	TEXT[3]				=	"nie nadaje siÄ™ juÅ¼ do uÅ¼ytku!";
+	TEXT[4]				=	"MoÅ¼e da siÄ™ go wykorzystaÄ‡";
+	TEXT[5]				=	"w inny sposÃ³b.";
 };
 
 //---------------------------------------------------------------------
-//	Schwert für den Untoten Ork-Hohepriester (unidentifiziert)
+//	Schwert fÃ¼r den Untoten Ork-Hohepriester (unidentifiziert)
 //---------------------------------------------------------------------
 INSTANCE Mythrilklinge (C_Item) 
 {	
@@ -254,15 +254,15 @@ INSTANCE Mythrilklinge (C_Item)
 	cond_value[2]  		= 	30;
 	visual 				=	"ItMw_2H_Sword_Sleeper_01.3DS";
 	description			= 	name;
-	TEXT[0]				=	"Przepiêkny miecz.";
-	TEXT[1]				=	"Ostrze zdobi¹ prastare runy.";
-	TEXT[2]				=	"Mo¿e Xardasowi uda siê je odczytaæ!";
-	TEXT[3]				=	"Póki co, lepiej go nie u¿ywaæ.";
+	TEXT[0]				=	"PrzepiÄ™kny miecz.";
+	TEXT[1]				=	"Ostrze zdobiÄ… prastare runy.";
+	TEXT[2]				=	"MoÅ¼e Xardasowi uda siÄ™ je odczytaÄ‡!";
+	TEXT[3]				=	"PÃ³ki co, lepiej go nie uÅ¼ywaÄ‡.";
 	TEXT[4]				=	" ";
 };
 
 //---------------------------------------------------------------------
-//	Schwert für den Untoten Ork-Hohepriester (identifiziert)
+//	Schwert fÃ¼r den Untoten Ork-Hohepriester (identifiziert)
 //---------------------------------------------------------------------
 instance Mythrilklinge01 (C_Item) 
 {	
@@ -282,9 +282,9 @@ instance Mythrilklinge01 (C_Item)
 	visual 				=	"ItMw_2H_Sword_Sleeper_01.3DS";
 
 	description			= 	name;
-	TEXT[0]				=	"Xardas twierdzi, ¿e miecz nazywa siê URIZIEL.";
-	TEXT[1]				=	"Jest ponoæ bardzo stary i dysponowa³ niegdyœ";
-	TEXT[2]				=	"potê¿n¹ moc¹ magiczn¹, ale j¹ utraci³.";
+	TEXT[0]				=	"Xardas twierdzi, Å¼e miecz nazywa siÄ™ URIZIEL.";
+	TEXT[1]				=	"Jest ponoÄ‡ bardzo stary i dysponowaÅ‚ niegdyÅ›";
+	TEXT[2]				=	"potÄ™Å¼nÄ… mocÄ… magicznÄ…, ale jÄ… utraciÅ‚.";
 
 	TEXT[3]				=	NAME_Damage;				COUNT[3] =	damageTotal;
 	TEXT[4] 			=	NAME_Str_needed;			COUNT[4] =	cond_value[2];
@@ -292,7 +292,7 @@ instance Mythrilklinge01 (C_Item)
 };
 
 //---------------------------------------------------------------------
-//	Schwert für den Untoten Ork-Hohepriester (aufgeladen)
+//	Schwert fÃ¼r den Untoten Ork-Hohepriester (aufgeladen)
 //---------------------------------------------------------------------
 instance Mythrilklinge02 (C_Item) 
 {	
@@ -317,8 +317,8 @@ instance Mythrilklinge02 (C_Item)
 	cond_value[2]  		= 	30;
 	visual 				=	"ItMw_2H_Sword_Sleeper_02.3DS";
 	description			= 	name;
-	TEXT[0]				=	"To staro¿ytny miecz Uriziel.";
-	TEXT[1]				= 	"Uriziel zosta³ magicznie na³adowany.";
+	TEXT[0]				=	"To staroÅ¼ytny miecz Uriziel.";
+	TEXT[1]				= 	"Uriziel zostaÅ‚ magicznie naÅ‚adowany.";
 	TEXT[2]				=	NAME_Dam_Magic;			COUNT[2]	=	damage[DAM_INDEX_MAGIC];
 	TEXT[3]				=	NAME_Dam_Fire;			COUNT[3]	=	damage[DAM_INDEX_FIRE];
 	TEXT[4] 			=	NAME_Str_needed;		COUNT[4]	=	cond_value[2];
@@ -346,8 +346,8 @@ instance Mythrilklinge03 (C_Item)
 	visual 				=	"ItMw_2H_Sword_Sleeper_01.3DS";
 
 	description			= 	name;
-	TEXT[0]				=	"Magiczny kryszta³ zosta³ usuniêty z miecza.";
-	TEXT[1]				=	"Jest to wci¹¿ bardzo potê¿na broñ, choæ";
+	TEXT[0]				=	"Magiczny krysztaÅ‚ zostaÅ‚ usuniÄ™ty z miecza.";
+	TEXT[1]				=	"Jest to wciÄ…Å¼ bardzo potÄ™Å¼na broÅ„, choÄ‡";
 	TEXT[2]				=	"pozbawiona mocy magicznych.";
 	TEXT[3]				=	NAME_Damage;				COUNT[3] =	damageTotal;
 	TEXT[4] 			=	NAME_Str_needed;			COUNT[4] =	cond_value[2];
@@ -355,7 +355,7 @@ instance Mythrilklinge03 (C_Item)
 };
 
 //---------------------------------------------------------------------
-//	Schriftrolle, um Schwert für den untoten Ork-Hohepriester zu laden
+//	Schriftrolle, um Schwert fÃ¼r den untoten Ork-Hohepriester zu laden
 //---------------------------------------------------------------------
 INSTANCE Scroll4Milten (C_Item)
 {	
@@ -371,13 +371,13 @@ INSTANCE Scroll4Milten (C_Item)
 
 //	scemeName			=	"MAP";
 	description			= name;
-	TEXT[0]				= "Zaklêcie, które pozwoli na³adowaæ";
-	TEXT[1]				= "Uriziela magiczn¹ energi¹.";
- 	TEXT[2]				= "Nie mogê go wykorzystaæ.";
+	TEXT[0]				= "ZaklÄ™cie, ktÃ³re pozwoli naÅ‚adowaÄ‡";
+	TEXT[1]				= "Uriziela magicznÄ… energiÄ….";
+ 	TEXT[2]				= "Nie mogÄ™ go wykorzystaÄ‡.";
 };
 
 //---------------------------------------------------------------------
-//	Schlüssel zum Versunkenen Turm
+//	SchlÃ¼ssel zum Versunkenen Turm
 //---------------------------------------------------------------------
 INSTANCE ItKe_SunkenTower(C_Item)
 {
@@ -393,15 +393,15 @@ INSTANCE ItKe_SunkenTower(C_Item)
 
 	description			=	name;
 	TEXT[0]				=	"Otwiera drzwi w";
-	TEXT[1]				=	"zatopionej wie¿y.";
+	TEXT[1]				=	"zatopionej wieÅ¼y.";
 };
 
 //---------------------------------------------------------------------
-//	Kerkerschlüssel
+//	KerkerschlÃ¼ssel
 //---------------------------------------------------------------------
 INSTANCE DungeonKey(C_Item)
 {
-	name 				=	"Klucz do lochów";
+	name 				=	"Klucz do lochÃ³w";
 
 	mainflag 				=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MISSION;
@@ -422,7 +422,7 @@ INSTANCE DungeonKey(C_Item)
 //---------------------------------------------------------------------
 INSTANCE UrizielRune (C_Item)
 {
-	name 				=	"Fala œmierci Uriziela";
+	name 				=	"Fala Å›mierci Uriziela";
 
 	mainflag 			=	ITEM_KAT_RUNE;
 	flags 				=	ITEM_MISSION;
@@ -436,8 +436,8 @@ INSTANCE UrizielRune (C_Item)
 	mag_circle 			=	6;
 
 	description			=	name;
-	TEXT	[0]			=	"Ta potê¿na runa magiczna zawiera";
-	TEXT	[1]			=	"staro¿ytn¹ moc miecza Uriziela.";
+	TEXT	[0]			=	"Ta potÄ™Å¼na runa magiczna zawiera";
+	TEXT	[1]			=	"staroÅ¼ytnÄ… moc miecza Uriziela.";
 	TEXT	[2]			=	NAME_Mag_Circle;			COUNT	[2]		=	mag_circle;
 	TEXT	[3]			=	NAME_Manakosten;			COUNT	[3]		=	SPL_SENDCAST_MASSDEATH;
 	TEXT	[4]			=	NAME_Dam_Magic;				COUNT	[4]		=	SPL_DAMAGE_MASSDEATH;

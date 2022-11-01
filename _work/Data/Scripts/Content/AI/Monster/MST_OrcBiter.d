@@ -4,7 +4,7 @@
 
 PROTOTYPE Mst_Default_OrcBiter(C_Npc)			
 {
-	name							=	"K¹sacz";
+	name							=	"KÄ…sacz";
 	guild							=	GIL_ORCDOG;
 	aivar[AIV_MM_REAL_ID]			= 	ID_ORCBITER;
 	level							=	12;

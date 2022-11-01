@@ -33,7 +33,7 @@ INSTANCE Info_Thorus_EnterCastle(C_INFO) //E2
 	condition	= Info_Thorus_EnterCastle_Condition;
 	information	= Info_Thorus_EnterCastle_Info;
 	permanent	= 0;
-	description = "Pewnie nie bêdziesz chcia³ wpuœciæ mnie do zamku?";
+	description = "Pewnie nie bÄ™dziesz chciaÅ‚ wpuÅ›ciÄ‡ mnie do zamku?";
 };                       
 
 FUNC INT Info_Thorus_EnterCastle_Condition()
@@ -46,12 +46,12 @@ FUNC INT Info_Thorus_EnterCastle_Condition()
 };
 FUNC VOID Info_Thorus_EnterCastle_Info()
 {	
-	AI_Output (other, self,"Info_EnterCastle_15_00"); //Pewnie nie bêdziesz chcia³ wpuœciæ mnie do zamku?
-	AI_Output (self, other,"Info_EnterCastle_09_01"); //Tylko ludzie Gomeza maj¹ prawo wstêpu.
+	AI_Output (other, self,"Info_EnterCastle_15_00"); //Pewnie nie bÄ™dziesz chciaÅ‚ wpuÅ›ciÄ‡ mnie do zamku?
+	AI_Output (self, other,"Info_EnterCastle_09_01"); //Tylko ludzie Gomeza majÄ… prawo wstÄ™pu.
 };
 
 // ************************************************************
-// 					Ich will für Gomez arbeiten
+// 					Ich will fÃ¼r Gomez arbeiten
 // ************************************************************
 
 INSTANCE Info_Thorus_WorkForGomez(C_INFO) //E2
@@ -61,7 +61,7 @@ INSTANCE Info_Thorus_WorkForGomez(C_INFO) //E2
 	condition	= Info_Thorus_WorkForGomez_Condition;
 	information	= Info_Thorus_WorkForGomez_Info;
 	permanent	= 0;
-	description = "Chcê pracowaæ dla Gomeza.";
+	description = "ChcÄ™ pracowaÄ‡ dla Gomeza.";
 };                       
 
 FUNC INT Info_Thorus_WorkForGomez_Condition()
@@ -75,8 +75,8 @@ FUNC INT Info_Thorus_WorkForGomez_Condition()
 
 FUNC VOID Info_Thorus_WorkForGomez_Info()
 {	
-	AI_Output (other, self,"Info_WorkForGomez_15_00"); //Chcê pracowaæ dla Gomeza.
-	AI_Output (self, other,"Info_WorkForGomez_09_01"); //Czy¿by? A czemu myœlisz, ¿e Gomez chcia³by, ¿eby ktoœ taki jak ty dla niego pracowa³?
+	AI_Output (other, self,"Info_WorkForGomez_15_00"); //ChcÄ™ pracowaÄ‡ dla Gomeza.
+	AI_Output (self, other,"Info_WorkForGomez_09_01"); //CzyÅ¼by? A czemu myÅ›lisz, Å¼e Gomez chciaÅ‚by, Å¼eby ktoÅ› taki jak ty dla niego pracowaÅ‚?
 };
 
 // ************************************************************
@@ -90,7 +90,7 @@ INSTANCE Info_Thorus_DiegoSentMe(C_INFO) //E3
 	condition	= Info_Thorus_DiegoSentMe_Condition;
 	information	= Info_Thorus_DiegoSentMe_Info;
 	permanent	= 0;
-	description = "Diego mówi, ¿e to TY podejmujesz takie decyzje.";
+	description = "Diego mÃ³wi, Å¼e to TY podejmujesz takie decyzje.";
 };                       
 
 FUNC INT Info_Thorus_DiegoSentMe_Condition()
@@ -103,13 +103,13 @@ FUNC INT Info_Thorus_DiegoSentMe_Condition()
 
 FUNC VOID Info_Thorus_DiegoSentMe_Info()
 {	
-	AI_Output (other, self,"Info_Thorus_DiegoSentMe_15_00"); //Diego powiedzia³, ¿e to TY podejmujesz takie decyzje.
-	AI_Output (self, other,"Info_Thorus_DiegoSentMe_09_01"); //Huh... Jeœli Diego uwa¿a, ¿e jesteœ w porz¹dku, to czemu SAM siê tob¹ nie zajmie?
-	AI_Output (self, other,"Info_Thorus_DiegoSentMe_09_02"); //S³uchaj uwa¿nie: Diego podda ciê najpierw testowi. Jeœli ON uzna, ¿e siê nadajesz, ja wpuszczê ciê do zamku na spotkanie z Gomezem.
-	AI_Output (self, other,"Info_Thorus_DiegoSentMe_09_03"); //To, co bêdzie póŸniej, zale¿y ju¿ tylko od ciebie, jasne?
+	AI_Output (other, self,"Info_Thorus_DiegoSentMe_15_00"); //Diego powiedziaÅ‚, Å¼e to TY podejmujesz takie decyzje.
+	AI_Output (self, other,"Info_Thorus_DiegoSentMe_09_01"); //Huh... JeÅ›li Diego uwaÅ¼a, Å¼e jesteÅ› w porzÄ…dku, to czemu SAM siÄ™ tobÄ… nie zajmie?
+	AI_Output (self, other,"Info_Thorus_DiegoSentMe_09_02"); //SÅ‚uchaj uwaÅ¼nie: Diego podda ciÄ™ najpierw testowi. JeÅ›li ON uzna, Å¼e siÄ™ nadajesz, ja wpuszczÄ™ ciÄ™ do zamku na spotkanie z Gomezem.
+	AI_Output (self, other,"Info_Thorus_DiegoSentMe_09_03"); //To, co bÄ™dzie pÃ³Åºniej, zaleÅ¼y juÅ¼ tylko od ciebie, jasne?
 	AI_Output (other, self,"Info_Thorus_DiegoSentMe_15_04"); //Porozmawiam z Diego.
 	
-	B_LogEntry(CH1_JoinOC,"Thorus poradzi³ mi, bym porozmawia³ z Diego. To on oceni, czy nadajê siê na cz³onka Starego Obozu.");
+	B_LogEntry(CH1_JoinOC,"Thorus poradziÅ‚ mi, bym porozmawiaÅ‚ z Diego. To on oceni, czy nadajÄ™ siÄ™ na czÅ‚onka Starego Obozu.");
 };
 
 // ************************************************************
@@ -123,7 +123,7 @@ INSTANCE Info_Thorus_TryMe(C_INFO) //E3
 	condition	= Info_Thorus_TryMe_Condition;
 	information	= Info_Thorus_TryMe_Info;
 	permanent	= 0;
-	description = "Dlaczego sam nie poddasz mnie próbie?";
+	description = "Dlaczego sam nie poddasz mnie prÃ³bie?";
 };                       
 
 FUNC INT Info_Thorus_TryMe_Condition()
@@ -136,10 +136,10 @@ FUNC INT Info_Thorus_TryMe_Condition()
 
 FUNC VOID Info_Thorus_TryMe_Info()
 {	
-	AI_Output (other, self,"Info_Thorus_TryMe_15_00"); //Dlaczego sam nie poddasz mnie próbie?
-	AI_Output (self, other,"Info_Thorus_TryMe_09_01"); //To nie takie proste, ch³opcze. Nowy, który chce tu do czegoœ dojœæ, potrzebuje opiekuna.
-	AI_Output (self, other,"Info_Thorus_TryMe_09_02"); //Tym opiekunem musi byæ jeden z ludzi Gomeza. I to w³aœnie on podda ciê próbie.
-	AI_Output (self, other,"Info_Thorus_TryMe_09_03"); //A jeœli narobisz k³opotów to on poniesie za nie odpowiedzialnoœæ. Takie s¹ tutaj zasady.
+	AI_Output (other, self,"Info_Thorus_TryMe_15_00"); //Dlaczego sam nie poddasz mnie prÃ³bie?
+	AI_Output (self, other,"Info_Thorus_TryMe_09_01"); //To nie takie proste, chÅ‚opcze. Nowy, ktÃ³ry chce tu do czegoÅ› dojÅ›Ä‡, potrzebuje opiekuna.
+	AI_Output (self, other,"Info_Thorus_TryMe_09_02"); //Tym opiekunem musi byÄ‡ jeden z ludzi Gomeza. I to wÅ‚aÅ›nie on podda ciÄ™ prÃ³bie.
+	AI_Output (self, other,"Info_Thorus_TryMe_09_03"); //A jeÅ›li narobisz kÅ‚opotÃ³w to on poniesie za nie odpowiedzialnoÅ›Ä‡. Takie sÄ… tutaj zasady.
 };
 
 // ************************************************************
@@ -153,7 +153,7 @@ INSTANCE Info_Thorus_TryMeAgain(C_INFO) //E4
 	condition	= Info_Thorus_TryMeAgain_Condition;
 	information	= Info_Thorus_TryMeAgain_Info;
 	permanent	= 0;
-	description = "Na pewno znajdzie siê dla mnie jakieœ zadanie...";
+	description = "Na pewno znajdzie siÄ™ dla mnie jakieÅ› zadanie...";
 };                       
 
 FUNC INT Info_Thorus_TryMeAgain_Condition()
@@ -166,9 +166,9 @@ FUNC INT Info_Thorus_TryMeAgain_Condition()
 
 FUNC VOID Info_Thorus_TryMeAgain_Info()
 {	
-	AI_Output (other, self,"Info_Thorus_TryMeAgain_15_00"); //Na pewno znajdzie siê dla mnie jakieœ zadanie...
-	AI_Output (self, other,"Info_Thorus_TryMeAgain_09_01"); //Nie. Rzeczy, którymi zajmuj¹ siê Stra¿nicy przerastaj¹ twoje mo¿liwoœci, ch³opcze.
-	AI_Output (self, other,"Info_Thorus_TryMeAgain_09_02"); //Trzymaj siê poleceñ swojego opiekuna.
+	AI_Output (other, self,"Info_Thorus_TryMeAgain_15_00"); //Na pewno znajdzie siÄ™ dla mnie jakieÅ› zadanie...
+	AI_Output (self, other,"Info_Thorus_TryMeAgain_09_01"); //Nie. Rzeczy, ktÃ³rymi zajmujÄ… siÄ™ StraÅ¼nicy przerastajÄ… twoje moÅ¼liwoÅ›ci, chÅ‚opcze.
+	AI_Output (self, other,"Info_Thorus_TryMeAgain_09_02"); //Trzymaj siÄ™ poleceÅ„ swojego opiekuna.
 };
 
 // ************************************************************
@@ -182,7 +182,7 @@ INSTANCE Info_Thorus_TryMeICanDoIt(C_INFO) //E5
 	condition	= Info_Thorus_TryMeICanDoIt_Condition;
 	information	= Info_Thorus_TryMeICanDoIt_Info;
 	permanent	= 0;
-	description = "Potrafiê sprostaæ ka¿demu zadaniu, które mi powierzysz.";
+	description = "PotrafiÄ™ sprostaÄ‡ kaÅ¼demu zadaniu, ktÃ³re mi powierzysz.";
 };                       
 
 FUNC INT Info_Thorus_TryMeICanDoIt_Condition()
@@ -195,9 +195,9 @@ FUNC INT Info_Thorus_TryMeICanDoIt_Condition()
 
 FUNC VOID Info_Thorus_TryMeICanDoIt_Info()
 {	
-	AI_Output (other, self,"Info_Thorus_TryMeICanDoIt_15_00"); //Potrafiê sprostaæ ka¿demu zadaniu, które mi powierzysz.
-	AI_Output (self, other,"Info_Thorus_TryMeICanDoIt_09_01"); //Och? A¿ tak ci zale¿y na wpadce? Hmm. Jest jedna rzecz, któr¹ mo¿e siê zaj¹æ wy³¹cznie cz³owiek nie bêd¹cy w s³u¿bie Gomeza.
-	AI_Output (self, other,"Info_Thorus_TryMeICanDoIt_09_02"); //Ale uprzedzam ciê: jak to schrzanisz, bêdziesz mia³ nie lada k³opoty.
+	AI_Output (other, self,"Info_Thorus_TryMeICanDoIt_15_00"); //PotrafiÄ™ sprostaÄ‡ kaÅ¼demu zadaniu, ktÃ³re mi powierzysz.
+	AI_Output (self, other,"Info_Thorus_TryMeICanDoIt_09_01"); //Och? AÅ¼ tak ci zaleÅ¼y na wpadce? Hmm. Jest jedna rzecz, ktÃ³rÄ… moÅ¼e siÄ™ zajÄ…Ä‡ wyÅ‚Ä…cznie czÅ‚owiek nie bÄ™dÄ…cy w sÅ‚uÅ¼bie Gomeza.
+	AI_Output (self, other,"Info_Thorus_TryMeICanDoIt_09_02"); //Ale uprzedzam ciÄ™: jak to schrzanisz, bÄ™dziesz miaÅ‚ nie lada kÅ‚opoty.
 };
 
 // **************************************************************************
@@ -215,7 +215,7 @@ INSTANCE Info_Thorus_MordragKo_Offer (C_INFO) //E6
 	condition	= Info_Thorus_MordragKo_Offer_Condition;
 	information	= Info_Thorus_MordragKo_Offer_Info;
 	permanent	= 0;
-	description = "Jestem gotów.";
+	description = "Jestem gotÃ³w.";
 };                       
 
 FUNC INT Info_Thorus_MordragKo_Offer_Condition()
@@ -228,26 +228,26 @@ FUNC INT Info_Thorus_MordragKo_Offer_Condition()
 
 FUNC VOID Info_Thorus_MordragKo_Offer_Info()
 {
-	AI_Output (other, self,"Info_Thorus_MordragKo_Offer_15_00"); //Jestem gotów.
-	AI_Output (self, other,"Info_Thorus_MordragKo_Offer_09_01"); //To, co ci za chwilê powiem, musi pozostaæ miêdzy nami, rozumiemy siê?
+	AI_Output (other, self,"Info_Thorus_MordragKo_Offer_15_00"); //Jestem gotÃ³w.
+	AI_Output (self, other,"Info_Thorus_MordragKo_Offer_09_01"); //To, co ci za chwilÄ™ powiem, musi pozostaÄ‡ miÄ™dzy nami, rozumiemy siÄ™?
 	AI_Output (other, self,"Info_Thorus_MordragKo_Offer_15_02"); //Jasne.
-	AI_Output (self, other,"Info_Thorus_MordragKo_Offer_09_03"); //Pewien cz³owiek z Nowego Obozu sprawia nam problemy. Nazywa siê Mordrag i przyw³aszczy³ sobie kilka rzeczy nale¿¹cych do Magnatów.
-	AI_Output (self, other,"Info_Thorus_MordragKo_Offer_09_04"); //Oczywiœcie to samo mo¿na powiedzieæ o wielu Szkodnikach z Nowego Obozu, ale Mordrag ma czelnoœæ zjawiaæ siê w NASZYM obozie i odsprzedawaæ NASZE rzeczy NASZYM ch³opcom!
-	AI_Output (self, other,"Info_Thorus_MordragKo_Offer_09_05"); //A to ju¿ za wiele. Niestety, ³ajdak wie, ¿e nie mogê z tym nic zrobiæ.
+	AI_Output (self, other,"Info_Thorus_MordragKo_Offer_09_03"); //Pewien czÅ‚owiek z Nowego Obozu sprawia nam problemy. Nazywa siÄ™ Mordrag i przywÅ‚aszczyÅ‚ sobie kilka rzeczy naleÅ¼Ä…cych do MagnatÃ³w.
+	AI_Output (self, other,"Info_Thorus_MordragKo_Offer_09_04"); //OczywiÅ›cie to samo moÅ¼na powiedzieÄ‡ o wielu Szkodnikach z Nowego Obozu, ale Mordrag ma czelnoÅ›Ä‡ zjawiaÄ‡ siÄ™ w NASZYM obozie i odsprzedawaÄ‡ NASZE rzeczy NASZYM chÅ‚opcom!
+	AI_Output (self, other,"Info_Thorus_MordragKo_Offer_09_05"); //A to juÅ¼ za wiele. Niestety, Å‚ajdak wie, Å¼e nie mogÄ™ z tym nic zrobiÄ‡.
 	AI_Output (other, self,"Info_Thorus_MordragKo_Offer_15_06"); //Dlaczego?
-	AI_Output (self, other,"Info_Thorus_MordragKo_Offer_09_07"); //Bo jest pod opiek¹ Magów.
+	AI_Output (self, other,"Info_Thorus_MordragKo_Offer_09_07"); //Bo jest pod opiekÄ… MagÃ³w.
 
 	Info_ClearChoices(Info_Thorus_MordragKo_Offer);
-	Info_AddChoice   (Info_Thorus_MordragKo_Offer,"Zajmê siê tym.",Info_Thorus_MordragKo_OFFER_BACK);
-	Info_AddChoice	 (Info_Thorus_MordragKo_Offer,"Chcesz, ¿ebym go zabi³, tak?",Info_Thorus_MordragKo_KillHim);
-	Info_AddChoice	 (Info_Thorus_MordragKo_Offer,"Gdzie znajdê Mordraga?",Info_Thorus_MordragKo_Where);
-	Info_AddChoice	 (Info_Thorus_MordragKo_Offer,"Dlaczego Magowie broni¹ Mordraga?",Info_Thorus_MordragKo_MagesProtect);
-	Info_AddChoice	 (Info_Thorus_MordragKo_Offer,"Widzê, ¿e masz trochê problemów z Magami...",Info_Thorus_MordragKo_MageProblem);
+	Info_AddChoice   (Info_Thorus_MordragKo_Offer,"ZajmÄ™ siÄ™ tym.",Info_Thorus_MordragKo_OFFER_BACK);
+	Info_AddChoice	 (Info_Thorus_MordragKo_Offer,"Chcesz, Å¼ebym go zabiÅ‚, tak?",Info_Thorus_MordragKo_KillHim);
+	Info_AddChoice	 (Info_Thorus_MordragKo_Offer,"Gdzie znajdÄ™ Mordraga?",Info_Thorus_MordragKo_Where);
+	Info_AddChoice	 (Info_Thorus_MordragKo_Offer,"Dlaczego Magowie broniÄ… Mordraga?",Info_Thorus_MordragKo_MagesProtect);
+	Info_AddChoice	 (Info_Thorus_MordragKo_Offer,"WidzÄ™, Å¼e masz trochÄ™ problemÃ³w z Magami...",Info_Thorus_MordragKo_MageProblem);
 	
 	Thorus_MordragKo = LOG_RUNNING;
 	
 	Log_CreateTopic		(CH1_MordragKO, LOG_MISSION);
-	B_LogEntry			(CH1_MordragKO,"Thorus poprosi³ mnie, bym usun¹³ z obozu Szkodnika imieniem Mordrag. Nie interesuje go jak tego dokonam, byleby tylko nikt siê nie dowiedzia³, ¿e on macza³ w tym palce.");
+	B_LogEntry			(CH1_MordragKO,"Thorus poprosiÅ‚ mnie, bym usunÄ…Å‚ z obozu Szkodnika imieniem Mordrag. Nie interesuje go jak tego dokonam, byleby tylko nikt siÄ™ nie dowiedziaÅ‚, Å¼e on maczaÅ‚ w tym palce.");
 	Log_SetTopicStatus	(CH1_MordragKO, LOG_RUNNING);
 
 	var C_Npc Mordrag; 				
@@ -256,38 +256,38 @@ FUNC VOID Info_Thorus_MordragKo_Offer_Info()
 
 FUNC VOID Info_Thorus_MordragKo_OFFER_BACK()
 {
-	AI_Output (other, self,"Info_Thorus_MordragKo_OFFER_BACK_15_00"); //Zajmê siê tym.
+	AI_Output (other, self,"Info_Thorus_MordragKo_OFFER_BACK_15_00"); //ZajmÄ™ siÄ™ tym.
 	Info_ClearChoices(Info_Thorus_MordragKo_Offer);
 };
 
 FUNC VOID Info_Thorus_MordragKo_KillHim()
 {
-	AI_Output (other, self,"Info_Thorus_MordragKo_KillHim_15_00"); //Chcesz, ¿ebym go zabi³, tak?
-	AI_Output (self, other,"Info_Thorus_MordragKo_KillHim_09_01"); //Chcê mieæ pewnoœæ, ¿e ju¿ nigdy wiêcej siê tu nie pojawi. Jak to osi¹gniesz - to ju¿ twoja sprawa.
+	AI_Output (other, self,"Info_Thorus_MordragKo_KillHim_15_00"); //Chcesz, Å¼ebym go zabiÅ‚, tak?
+	AI_Output (self, other,"Info_Thorus_MordragKo_KillHim_09_01"); //ChcÄ™ mieÄ‡ pewnoÅ›Ä‡, Å¼e juÅ¼ nigdy wiÄ™cej siÄ™ tu nie pojawi. Jak to osiÄ…gniesz - to juÅ¼ twoja sprawa.
 };
 
 FUNC VOID Info_Thorus_MordragKo_Where()
 {
-	AI_Output (other, self,"Info_Thorus_MordragKo_Where_15_00"); //Gdzie znajdê Mordraga?
-	AI_Output (self, other,"Info_Thorus_MordragKo_Where_09_01"); //Krêci siê przy po³udniowej bramie, po przeciwnej stronie zamku, tu¿ za wejœciem. Sukinsyn boi siê pojawiaæ bli¿ej centrum.
-	B_LogEntry(CH1_MordragKO,"Mordrag urzêduje przy po³udniowej bramie, za zamkiem.");
+	AI_Output (other, self,"Info_Thorus_MordragKo_Where_15_00"); //Gdzie znajdÄ™ Mordraga?
+	AI_Output (self, other,"Info_Thorus_MordragKo_Where_09_01"); //KrÄ™ci siÄ™ przy poÅ‚udniowej bramie, po przeciwnej stronie zamku, tuÅ¼ za wejÅ›ciem. Sukinsyn boi siÄ™ pojawiaÄ‡ bliÅ¼ej centrum.
+	B_LogEntry(CH1_MordragKO,"Mordrag urzÄ™duje przy poÅ‚udniowej bramie, za zamkiem.");
 };
 
 FUNC VOID Info_Thorus_MordragKo_MagesProtect()
 {
-	AI_Output (other, self,"Info_Thorus_MordragKo_MagesProtect_15_00"); //Dlaczego Magowie broni¹ Mordraga?
-	AI_Output (self, other,"Info_Thorus_MordragKo_MagesProtect_09_01"); //Bo s³u¿y im za pos³añca. Nasi magowie utrzymuj¹ kontakty z czarodziejami z Nowego Obozu. Czêsto wymieniaj¹ informacje za poœrednictwem goñców.
-	AI_Output (self, other,"Info_Thorus_MordragKo_MagesProtect_09_02"); //Podejrzewam, ¿e nieŸle siê wkurz¹ na wieœæ, ¿e coœ przydarzy³o siê ich kurierowi.
-	AI_Output (other, self,"Info_Thorus_MordragKo_MagesProtect_15_03"); //A co ze mn¹? Co Magowie mog¹ mi zrobiæ?
-	AI_Output (self, other,"Info_Thorus_MordragKo_MagesProtect_09_04"); //Jesteœ tu nowy, nic ci nie bêdzie. Ale ja odpowiadam za wszystko, co robi¹ moi ludzie. Dlatego musisz trzymaæ jêzyk za zêbami.
+	AI_Output (other, self,"Info_Thorus_MordragKo_MagesProtect_15_00"); //Dlaczego Magowie broniÄ… Mordraga?
+	AI_Output (self, other,"Info_Thorus_MordragKo_MagesProtect_09_01"); //Bo sÅ‚uÅ¼y im za posÅ‚aÅ„ca. Nasi magowie utrzymujÄ… kontakty z czarodziejami z Nowego Obozu. CzÄ™sto wymieniajÄ… informacje za poÅ›rednictwem goÅ„cÃ³w.
+	AI_Output (self, other,"Info_Thorus_MordragKo_MagesProtect_09_02"); //Podejrzewam, Å¼e nieÅºle siÄ™ wkurzÄ… na wieÅ›Ä‡, Å¼e coÅ› przydarzyÅ‚o siÄ™ ich kurierowi.
+	AI_Output (other, self,"Info_Thorus_MordragKo_MagesProtect_15_03"); //A co ze mnÄ…? Co Magowie mogÄ… mi zrobiÄ‡?
+	AI_Output (self, other,"Info_Thorus_MordragKo_MagesProtect_09_04"); //JesteÅ› tu nowy, nic ci nie bÄ™dzie. Ale ja odpowiadam za wszystko, co robiÄ… moi ludzie. Dlatego musisz trzymaÄ‡ jÄ™zyk za zÄ™bami.
 	Thorus_MordragMageMessenger = TRUE;
 };
 
 FUNC VOID Info_Thorus_MordragKo_MageProblem()
 {
-	AI_Output (other, self,"Info_Thorus_MordragKo_MageProblem_15_00"); //Widzê, ¿e masz trochê problemów z Magami...
-	AI_Output (self, other,"Info_Thorus_MordragKo_MageProblem_09_01"); //Tak. I to problemów, które nie ³atwo rozwi¹zaæ. Kilka lat temu jeden z Cieni próbowa³ zasztyletowaæ we œnie Arcymistrza Magów Ognia.
-	AI_Output (self, other,"Info_Thorus_MordragKo_MageProblem_09_02"); //Faceta znaleziono potem w Zewnêtrznym Pierœcieniu. Jeœli chodzi o œcis³oœæ - rozsmarowanego PO CA£YM Zewnêtrznym Pierœcieniu.
+	AI_Output (other, self,"Info_Thorus_MordragKo_MageProblem_15_00"); //WidzÄ™, Å¼e masz trochÄ™ problemÃ³w z Magami...
+	AI_Output (self, other,"Info_Thorus_MordragKo_MageProblem_09_01"); //Tak. I to problemÃ³w, ktÃ³re nie Å‚atwo rozwiÄ…zaÄ‡. Kilka lat temu jeden z Cieni prÃ³bowaÅ‚ zasztyletowaÄ‡ we Å›nie Arcymistrza MagÃ³w Ognia.
+	AI_Output (self, other,"Info_Thorus_MordragKo_MageProblem_09_02"); //Faceta znaleziono potem w ZewnÄ™trznym PierÅ›cieniu. JeÅ›li chodzi o Å›cisÅ‚oÅ›Ä‡ - rozsmarowanego PO CAÅYM ZewnÄ™trznym PierÅ›cieniu.
 };
 
 // **************************************************************************
@@ -301,7 +301,7 @@ INSTANCE Info_Thorus_MordragKo_Analyze (C_INFO)
 	condition	= Info_Thorus_MordragKo_Analyze_Condition;
 	information	= Info_Thorus_MordragKo_Analyze_Info;
 	permanent	= 1;
-	description = "Wracaj¹c do Mordraga...";
+	description = "WracajÄ…c do Mordraga...";
 };                       
 
 FUNC INT Info_Thorus_MordragKo_Analyze_Condition()
@@ -315,33 +315,33 @@ FUNC INT Info_Thorus_MordragKo_Analyze_Condition()
 FUNC VOID Info_Thorus_MordragKo_Analyze_Info()
 {
 	Info_ClearChoices	(Info_Thorus_MordragKo_Analyze);
-	Info_AddChoice   	(Info_Thorus_MordragKo_Analyze,"Zajmê siê tym.",Info_Thorus_MordragKo_ANALYZE_BACK);
-	Info_AddChoice	 	(Info_Thorus_MordragKo_Analyze,"Gdzie znajdê Mordraga?",Info_Thorus_MordragKo_Where);	//SIEHE OBEN
+	Info_AddChoice   	(Info_Thorus_MordragKo_Analyze,"ZajmÄ™ siÄ™ tym.",Info_Thorus_MordragKo_ANALYZE_BACK);
+	Info_AddChoice	 	(Info_Thorus_MordragKo_Analyze,"Gdzie znajdÄ™ Mordraga?",Info_Thorus_MordragKo_Where);	//SIEHE OBEN
 	var C_NPC Mordrag; Mordrag = Hlp_GetNpc(Org_826_Mordrag);
 	if (Npc_IsDead(Mordrag))
 	{
-		Info_AddChoice	(Info_Thorus_MordragKo_Analyze,"Mordrag ju¿ nigdy nikogo nie okradnie!",Info_Thorus_MordragKo_MordragDead);
+		Info_AddChoice	(Info_Thorus_MordragKo_Analyze,"Mordrag juÅ¼ nigdy nikogo nie okradnie!",Info_Thorus_MordragKo_MordragDead);
 	}
 	else if ( (MordragKO_HauAb==TRUE) || (MordragKO_StayAtNC==TRUE) )
 	{ 
-		Info_AddChoice	(Info_Thorus_MordragKo_Analyze,"Facet ju¿ nigdy siê tu nie poka¿e!",Info_Thorus_MordragKo_MordragGone);
+		Info_AddChoice	(Info_Thorus_MordragKo_Analyze,"Facet juÅ¼ nigdy siÄ™ tu nie pokaÅ¼e!",Info_Thorus_MordragKo_MordragGone);
 	};
     
 };
 
 FUNC VOID Info_Thorus_MordragKo_ANALYZE_BACK()
 {
-	AI_Output (other, self,"Info_Thorus_MordragKo_ANALYZE_BACK_15_00"); //Zajmê siê tym.
+	AI_Output (other, self,"Info_Thorus_MordragKo_ANALYZE_BACK_15_00"); //ZajmÄ™ siÄ™ tym.
 	Info_ClearChoices(Info_Thorus_MordragKo_Analyze);
 };
 
 FUNC VOID Info_Thorus_MordragKo_MordragDead()
 {
-	AI_Output (other, self,"Info_Thorus_MordragKo_MordragDead_15_00"); //Mordrag ju¿ nigdy nikogo nie okradnie!
-	AI_Output (self, other,"Info_Thorus_MordragKo_MordragDead_09_01"); //Chcesz powiedzieæ, ¿e go pokona³eœ? NieŸle, ch³opcze.
+	AI_Output (other, self,"Info_Thorus_MordragKo_MordragDead_15_00"); //Mordrag juÅ¼ nigdy nikogo nie okradnie!
+	AI_Output (self, other,"Info_Thorus_MordragKo_MordragDead_09_01"); //Chcesz powiedzieÄ‡, Å¼e go pokonaÅ‚eÅ›? NieÅºle, chÅ‚opcze.
 	Thorus_MordragKo = LOG_SUCCESS;
 	Log_SetTopicStatus(CH1_MordragKO, LOG_SUCCESS);	
-	B_LogEntry (CH1_MordragKO,"Thorus jest mi wdziêczny za usuniêcie Mordraga. Zyska³em wp³ywowego przyjaciela.");
+	B_LogEntry (CH1_MordragKO,"Thorus jest mi wdziÄ™czny za usuniÄ™cie Mordraga. ZyskaÅ‚em wpÅ‚ywowego przyjaciela.");
 	B_GiveXP(XP_Thorusmordragdead);
 	Info_ClearChoices(Info_Thorus_MordragKo_Analyze);
 
@@ -349,11 +349,11 @@ FUNC VOID Info_Thorus_MordragKo_MordragDead()
 
 FUNC VOID Info_Thorus_MordragKo_MordragGone()
 {
-	AI_Output (other, self,"Info_Thorus_MordragKo_MordragGone_15_00"); //Facet ju¿ nigdy siê tu nie poka¿e!
-	AI_Output (self, other,"Info_Thorus_MordragKo_MordragGone_09_01"); //Wola³bym, ¿ebyœ go zabi³.
+	AI_Output (other, self,"Info_Thorus_MordragKo_MordragGone_15_00"); //Facet juÅ¼ nigdy siÄ™ tu nie pokaÅ¼e!
+	AI_Output (self, other,"Info_Thorus_MordragKo_MordragGone_09_01"); //WolaÅ‚bym, Å¼ebyÅ› go zabiÅ‚.
 	Thorus_MordragKo = LOG_SUCCESS;
 	Log_SetTopicStatus(CH1_MordragKO, LOG_SUCCESS);
-	B_LogEntry (CH1_MordragKO,"Thorus ucieszy³ siê, ¿e Mordraga nie ma ju¿ w obozie.");
+	B_LogEntry (CH1_MordragKO,"Thorus ucieszyÅ‚ siÄ™, Å¼e Mordraga nie ma juÅ¼ w obozie.");
 	B_GiveXP(XP_Thorusmordragko);
 	Info_ClearChoices(Info_Thorus_MordragKo_Analyze);
 };
@@ -382,13 +382,13 @@ FUNC INT Info_Thorus_MordragFailed_Condition()
 
 FUNC VOID Info_Thorus_MordragFailed_Info()
 {
-	AI_Output (self, other,"Info_Thorus_MordragFailed_09_00"); //Ty ofiaro! Kaza³em ci TRZYMAÆ JÊZYK ZA ZÊBAMI!!!
-	AI_Output (self, other,"Info_Thorus_MordragFailed_09_01"); //Spartaczy³eœ sprawê! Zapomnij o wszystkim, co ci powiedzia³em. Nie próbuj ju¿ nic wiêcej zdzia³aæ w tej sprawie!
+	AI_Output (self, other,"Info_Thorus_MordragFailed_09_00"); //Ty ofiaro! KazaÅ‚em ci TRZYMAÄ† JÄ˜ZYK ZA ZÄ˜BAMI!!!
+	AI_Output (self, other,"Info_Thorus_MordragFailed_09_01"); //SpartaczyÅ‚eÅ› sprawÄ™! Zapomnij o wszystkim, co ci powiedziaÅ‚em. Nie prÃ³buj juÅ¼ nic wiÄ™cej zdziaÅ‚aÄ‡ w tej sprawie!
 			
 	Thorus_MordragKo = LOG_FAILED;
 	
 	Log_SetTopicStatus(CH1_MordragKO, LOG_FAILED);
-	B_LogEntry (CH1_MordragKO,"Thorusowi nie spodoba³o siê, ¿e wspomnia³em o nim Mordragowi. Lepiej bêdzie nie pokazywaæ mu siê teraz na oczy.");
+	B_LogEntry (CH1_MordragKO,"Thorusowi nie spodobaÅ‚o siÄ™, Å¼e wspomniaÅ‚em o nim Mordragowi. Lepiej bÄ™dzie nie pokazywaÄ‡ mu siÄ™ teraz na oczy.");
 	AI_StopProcessInfos	(self);
 };
 
@@ -403,7 +403,7 @@ INSTANCE Info_Thorus_BribeGuard (C_INFO)
 	condition	= Info_Thorus_BribeGuard_Condition;
 	information	= Info_Thorus_BribeGuard_Info;
 	permanent	= 0;
-	description = "Czy za odpowiedni¹ sumkê móg³byœ mnie wpuœciæ do zamku?";
+	description = "Czy za odpowiedniÄ… sumkÄ™ mÃ³gÅ‚byÅ› mnie wpuÅ›ciÄ‡ do zamku?";
 };                       
 
 FUNC INT Info_Thorus_BribeGuard_Condition()
@@ -416,14 +416,14 @@ FUNC INT Info_Thorus_BribeGuard_Condition()
 
 FUNC VOID Info_Thorus_BribeGuard_Info()
 {
-	AI_Output (other, self,"Info_Thorus_BribeGuard_15_00"); //Czy za odpowiedni¹ sumkê móg³byœ mnie wpuœciæ do zamku?
-	AI_Output (self, other,"Info_Thorus_BribeGuard_09_01"); //Za odpowiedni¹ sumkê...
+	AI_Output (other, self,"Info_Thorus_BribeGuard_15_00"); //Czy za odpowiedniÄ… sumkÄ™ mÃ³gÅ‚byÅ› mnie wpuÅ›ciÄ‡ do zamku?
+	AI_Output (self, other,"Info_Thorus_BribeGuard_09_01"); //Za odpowiedniÄ… sumkÄ™...
 	AI_Output (other, self,"Info_Thorus_BribeGuard_15_02"); //Ile?
-	AI_Output (self, other,"Info_Thorus_BribeGuard_09_02"); //No có¿ - liczenie rudy musi potrwaæ odpowiednio d³ugo. Doœæ d³ugo, ¿eby ca³kowicie poch³on¹æ uwagê moj¹ i moich ch³opców. Korzystaj¹c z naszej nieuwagi, móg³byœ przemkn¹æ siê do œrodka...
+	AI_Output (self, other,"Info_Thorus_BribeGuard_09_02"); //No cÃ³Å¼ - liczenie rudy musi potrwaÄ‡ odpowiednio dÅ‚ugo. DoÅ›Ä‡ dÅ‚ugo, Å¼eby caÅ‚kowicie pochÅ‚onÄ…Ä‡ uwagÄ™ mojÄ… i moich chÅ‚opcÃ³w. KorzystajÄ…c z naszej nieuwagi, mÃ³gÅ‚byÅ› przemknÄ…Ä‡ siÄ™ do Å›rodka...
 	AI_Output (other, self,"Info_Thorus_BribeGuard_15_03"); //Czyli ile konkretnie?
-	AI_Output (self, other,"Info_Thorus_BribeGuard_09_03"); //Myœlê, ¿e przeliczenie 1000 bry³ek zajmie nam wystarczaj¹co du¿o czasu.
-	AI_Output (other, self,"Info_Thorus_BribeGuard_15_04"); //1000 bry³ek?!
-	AI_Output (self, other,"Info_Thorus_BribeGuard_09_04"); //Có¿, gdybyœ do³¹czy³ do Gomeza, móg³byœ wejœæ do zamku za darmo.
+	AI_Output (self, other,"Info_Thorus_BribeGuard_09_03"); //MyÅ›lÄ™, Å¼e przeliczenie 1000 bryÅ‚ek zajmie nam wystarczajÄ…co duÅ¼o czasu.
+	AI_Output (other, self,"Info_Thorus_BribeGuard_15_04"); //1000 bryÅ‚ek?!
+	AI_Output (self, other,"Info_Thorus_BribeGuard_09_04"); //CÃ³Å¼, gdybyÅ› doÅ‚Ä…czyÅ‚ do Gomeza, mÃ³gÅ‚byÅ› wejÅ›Ä‡ do zamku za darmo.
 };
 
 // ************************************************************
@@ -437,7 +437,7 @@ INSTANCE Info_Thorus_Give1000Ore (C_INFO)
 	condition	= Info_Thorus_Give1000Ore_Condition;
 	information	= Info_Thorus_Give1000Ore_Info;
 	permanent	= 1;
-	description = "Masz tu swoje 1000 bry³ek rudy, a teraz pozwól mi przejœæ.";
+	description = "Masz tu swoje 1000 bryÅ‚ek rudy, a teraz pozwÃ³l mi przejÅ›Ä‡.";
 };                       
 
 FUNC INT Info_Thorus_Give1000Ore_Condition()
@@ -450,12 +450,12 @@ FUNC INT Info_Thorus_Give1000Ore_Condition()
 
 FUNC VOID Info_Thorus_Give1000Ore_Info()
 {
-	AI_Output (other, self,"Info_Thorus_Give1000Ore_15_00"); //Masz tu swoje 1000 bry³ek rudy, a teraz pozwól mi przejœæ.
+	AI_Output (other, self,"Info_Thorus_Give1000Ore_15_00"); //Masz tu swoje 1000 bryÅ‚ek rudy, a teraz pozwÃ³l mi przejÅ›Ä‡.
 	
 	if (Npc_HasItems(other, ItMiNugget)>=1000)
 	{
 		B_GiveInvItems 	(other,self,ItMiNugget,1000);		
-		AI_Output (self, other,"Info_Thorus_Give1000Ore_09_01"); //W porz¹dku, idŸ. Tylko jak ju¿ bêdziesz w œrodku, nie wywiñ czegoœ g³upiego, dobra?
+		AI_Output (self, other,"Info_Thorus_Give1000Ore_09_01"); //W porzÄ…dku, idÅº. Tylko jak juÅ¼ bÄ™dziesz w Å›rodku, nie wywiÅ„ czegoÅ› gÅ‚upiego, dobra?
 		var C_NPC wache212; wache212 = Hlp_GetNpc(Grd_212_Torwache);
 		var C_NPC wache213; wache213 = Hlp_GetNpc(Grd_213_Torwache);
 		wache212.aivar[AIV_PASSGATE] = TRUE;
@@ -463,12 +463,12 @@ FUNC VOID Info_Thorus_Give1000Ore_Info()
 	}
 	else
 	{
-		AI_Output (self, other,"Info_Thorus_Give1000Ore_09_02"); //Próbujesz mnie okpiæ, ch³opcze? Nie masz 1000 bry³ek rudy!
+		AI_Output (self, other,"Info_Thorus_Give1000Ore_09_02"); //PrÃ³bujesz mnie okpiÄ‡, chÅ‚opcze? Nie masz 1000 bryÅ‚ek rudy!
 	};
 };
 		
 // ************************************************************
-// 					Brief für Magier
+// 					Brief fÃ¼r Magier
 // ************************************************************
 
 INSTANCE Info_Thorus_LetterForMages (C_INFO)
@@ -478,7 +478,7 @@ INSTANCE Info_Thorus_LetterForMages (C_INFO)
 	condition	= Info_Thorus_LetterForMages_Condition;
 	information	= Info_Thorus_LetterForMages_Info;
 	permanent	= 1;
-	description = "Muszê siê dostaæ do zamku. Mam list do Arcymistrza Magów Ognia.";
+	description = "MuszÄ™ siÄ™ dostaÄ‡ do zamku. Mam list do Arcymistrza MagÃ³w Ognia.";
 };                       
 
 FUNC INT Info_Thorus_LetterForMages_Condition()
@@ -492,16 +492,16 @@ FUNC INT Info_Thorus_LetterForMages_Condition()
 
 FUNC VOID Info_Thorus_LetterForMages_Info()
 {
-	AI_Output (other, self,"Info_Thorus_LetterForMages_15_00"); //Muszê siê dostaæ do zamku. Mam list do Arcymistrza Magów Ognia.
-	AI_Output (self, other,"Info_Thorus_LetterForMages_09_01"); //I myœlisz, ¿e wpuszczê ciê tak po prostu do œrodka, ¿ebyœ odda³ list i zgarn¹³ nagrodê?
+	AI_Output (other, self,"Info_Thorus_LetterForMages_15_00"); //MuszÄ™ siÄ™ dostaÄ‡ do zamku. Mam list do Arcymistrza MagÃ³w Ognia.
+	AI_Output (self, other,"Info_Thorus_LetterForMages_09_01"); //I myÅ›lisz, Å¼e wpuszczÄ™ ciÄ™ tak po prostu do Å›rodka, Å¼ebyÅ› oddaÅ‚ list i zgarnÄ…Å‚ nagrodÄ™?
 	AI_Output (other, self,"Info_Thorus_LetterForMages_15_02"); //Tak.
-	AI_Output (self, other,"Info_Thorus_LetterForMages_09_03"); //Dobra, poka¿ ten list.
+	AI_Output (self, other,"Info_Thorus_LetterForMages_09_03"); //Dobra, pokaÅ¼ ten list.
 	AI_Output (other, self,"Info_Thorus_LetterForMages_15_04"); //Nie ma mowy. Zapomnij o tym!
-	AI_Output (self, other,"Info_Thorus_LetterForMages_09_05"); //W porz¹dku. Ju¿ zapomnia³em.
+	AI_Output (self, other,"Info_Thorus_LetterForMages_09_05"); //W porzÄ…dku. JuÅ¼ zapomniaÅ‚em.
 };
 
 // ************************************************************
-// 					Bereit für Gomez !!!
+// 					Bereit fÃ¼r Gomez !!!
 // ************************************************************
 
 INSTANCE Info_Thorus_ReadyForGomez (C_INFO)
@@ -511,7 +511,7 @@ INSTANCE Info_Thorus_ReadyForGomez (C_INFO)
 	condition	= Info_Thorus_ReadyForGomez_Condition;
 	information	= Info_Thorus_ReadyForGomez_Info;
 	permanent	= 0;//1
-	description = "Diego powiedzia³, ¿e jestem ju¿ gotów, by spotkaæ siê z Gomezem.";
+	description = "Diego powiedziaÅ‚, Å¼e jestem juÅ¼ gotÃ³w, by spotkaÄ‡ siÄ™ z Gomezem.";
 };                       
 
 FUNC INT Info_Thorus_ReadyForGomez_Condition()
@@ -524,13 +524,13 @@ FUNC INT Info_Thorus_ReadyForGomez_Condition()
 
 FUNC VOID Info_Thorus_ReadyForGomez_Info()
 {
-	AI_Output (other, self,"Info_Thorus_ReadyForGomez_15_00"); //Diego powiedzia³, ¿e jestem ju¿ gotów, by spotkaæ siê z Gomezem.
-	AI_Output (self, other,"Info_Thorus_ReadyForGomez_09_01"); //To ja o tym zadecydujê!
-	AI_Output (other, self,"Info_Thorus_ReadyForGomez_15_02"); //I co zdecydowa³eœ?
+	AI_Output (other, self,"Info_Thorus_ReadyForGomez_15_00"); //Diego powiedziaÅ‚, Å¼e jestem juÅ¼ gotÃ³w, by spotkaÄ‡ siÄ™ z Gomezem.
+	AI_Output (self, other,"Info_Thorus_ReadyForGomez_09_01"); //To ja o tym zadecydujÄ™!
+	AI_Output (other, self,"Info_Thorus_ReadyForGomez_15_02"); //I co zdecydowaÅ‚eÅ›?
 	AI_Output (self, other,"Info_Thorus_ReadyForGomez_09_03"); //Hmmm...
-	AI_Output (self, other,"Info_Thorus_ReadyForGomez_09_04"); //Muszê przyznaæ, ¿e ca³kiem nieŸle sobie poradzi³eœ.
-	AI_Output (self, other,"Info_Thorus_ReadyForGomez_09_05"); //Niech bêdzie! Mo¿esz stan¹æ przed Gomezem. On podejmie ostateczn¹ decyzjê co do twojego przyjêcia.
-	AI_Output (self, other,"Info_Thorus_ReadyForGomez_09_06"); //Od tej pory musisz radziæ sobie sam, ch³opcze.
+	AI_Output (self, other,"Info_Thorus_ReadyForGomez_09_04"); //MuszÄ™ przyznaÄ‡, Å¼e caÅ‚kiem nieÅºle sobie poradziÅ‚eÅ›.
+	AI_Output (self, other,"Info_Thorus_ReadyForGomez_09_05"); //Niech bÄ™dzie! MoÅ¼esz stanÄ…Ä‡ przed Gomezem. On podejmie ostatecznÄ… decyzjÄ™ co do twojego przyjÄ™cia.
+	AI_Output (self, other,"Info_Thorus_ReadyForGomez_09_06"); //Od tej pory musisz radziÄ‡ sobie sam, chÅ‚opcze.
 				
 	var C_NPC wache212; wache212 = Hlp_GetNpc(Grd_212_Torwache);
 	var C_NPC wache213; wache213 = Hlp_GetNpc(Grd_213_Torwache);
@@ -551,7 +551,7 @@ INSTANCE Info_Thorus_Krautbote (C_INFO)
 	condition	= Info_Thorus_Krautbote_Condition;
 	information	= Info_Thorus_Krautbote_Info;
 	permanent	= 0;
-	description = "Mam tu partiê bagiennego ziela dla Gomeza, od Cor Kaloma.";
+	description = "Mam tu partiÄ™ bagiennego ziela dla Gomeza, od Cor Kaloma.";
 };                       
 
 FUNC INT Info_Thorus_Krautbote_Condition()
@@ -564,13 +564,13 @@ FUNC INT Info_Thorus_Krautbote_Condition()
 
 FUNC VOID Info_Thorus_Krautbote_Info()
 {
-	AI_Output (other, self,"Info_Thorus_Krautbote_15_00"); //Mam tu partiê bagiennego ziela dla Gomeza, od Cor Kaloma.
-	AI_Output (self, other,"Info_Thorus_Krautbote_09_01"); //Poka¿!
+	AI_Output (other, self,"Info_Thorus_Krautbote_15_00"); //Mam tu partiÄ™ bagiennego ziela dla Gomeza, od Cor Kaloma.
+	AI_Output (self, other,"Info_Thorus_Krautbote_09_01"); //PokaÅ¼!
 	
 	if (Npc_HasItems(other, itmijoint_3) >= 30)
 	{
 		AI_Output (self, other,"Info_Thorus_Krautbote_09_02"); //Hmmmmmm...
-		AI_Output (self, other,"Info_Thorus_Krautbote_09_03"); //W porz¹dku, mo¿esz iœæ. Udaj siê prosto do siedziby Magnatów i porozmawiaj z Bartholo.
+		AI_Output (self, other,"Info_Thorus_Krautbote_09_03"); //W porzÄ…dku, moÅ¼esz iÅ›Ä‡. Udaj siÄ™ prosto do siedziby MagnatÃ³w i porozmawiaj z Bartholo.
 		
 		var C_NPC wache212; wache212 = Hlp_GetNpc(Grd_212_Torwache);
 		var C_NPC wache213; wache213 = Hlp_GetNpc(Grd_213_Torwache);
@@ -581,7 +581,7 @@ FUNC VOID Info_Thorus_Krautbote_Info()
 	}
 	else
 	{
-		AI_Output (self, other,"Info_Thorus_Krautbote_09_04"); //Jak na pos³añca masz przy sobie trochê za ma³o ziela! Mam nadziejê, ¿e nie sprzeda³eœ go komuœ innemu! Wróæ, jak bêdziesz mia³ ca³¹ partiê.
+		AI_Output (self, other,"Info_Thorus_Krautbote_09_04"); //Jak na posÅ‚aÅ„ca masz przy sobie trochÄ™ za maÅ‚o ziela! Mam nadziejÄ™, Å¼e nie sprzedaÅ‚eÅ› go komuÅ› innemu! WrÃ³Ä‡, jak bÄ™dziesz miaÅ‚ caÅ‚Ä… partiÄ™.
 	};
 };
 
@@ -598,7 +598,7 @@ INSTANCE Info_Thorus_KdWSiegel (C_INFO)
 	condition	= Info_Thorus_KdWSiegel_Condition;
 	information	= Info_Thorus_KdWSiegel_Info;
 	permanent	= 1;
-	description = "Jestem pos³añcem Magów Wody. Muszê siê dostaæ do zamku.";
+	description = "Jestem posÅ‚aÅ„cem MagÃ³w Wody. MuszÄ™ siÄ™ dostaÄ‡ do zamku.";
 };                       
 
 FUNC INT Info_Thorus_KdWSiegel_Condition()
@@ -613,11 +613,11 @@ FUNC INT Info_Thorus_KdWSiegel_Condition()
 
 FUNC VOID Info_Thorus_KdWSiegel_Info()
 {
-	AI_Output (other, self,"Info_Thorus_KdWSiegel_15_00"); //Jestem pos³añcem Magów Wody. Muszê siê dostaæ do zamku.
+	AI_Output (other, self,"Info_Thorus_KdWSiegel_15_00"); //Jestem posÅ‚aÅ„cem MagÃ³w Wody. MuszÄ™ siÄ™ dostaÄ‡ do zamku.
 	if (Npc_HasItems(other,KdW_Amulett)>=1)
 	{
-		AI_Output (self, other,"Info_Thorus_KdWSiegel_09_01"); //Masz przy sobie amulet kuriera. Stra¿nicy nie bêd¹ ciê zatrzymywali.
-		AI_Output (self, other,"Info_Thorus_KdWSiegel_09_02"); //Nie chcê mieæ nic wspólnego z magami! Przestañ mi wreszcie zawracaæ g³owê, dobrze?
+		AI_Output (self, other,"Info_Thorus_KdWSiegel_09_01"); //Masz przy sobie amulet kuriera. StraÅ¼nicy nie bÄ™dÄ… ciÄ™ zatrzymywali.
+		AI_Output (self, other,"Info_Thorus_KdWSiegel_09_02"); //Nie chcÄ™ mieÄ‡ nic wspÃ³lnego z magami! PrzestaÅ„ mi wreszcie zawracaÄ‡ gÅ‚owÄ™, dobrze?
 		var C_NPC wache212; wache212 = Hlp_GetNpc(Grd_212_Torwache);
 		var C_NPC wache213; wache213 = Hlp_GetNpc(Grd_213_Torwache);
 		wache212.aivar[AIV_PASSGATE] = TRUE;
@@ -627,7 +627,7 @@ FUNC VOID Info_Thorus_KdWSiegel_Info()
 	}
 	else
 	{
-		AI_Output (self, other,"Info_Thorus_KdWSiegel_09_03"); //No jaaasne... A amulet pewnie zgubi³eœ, co? Albo ci ukradli, hê?
+		AI_Output (self, other,"Info_Thorus_KdWSiegel_09_03"); //No jaaasne... A amulet pewnie zgubiÅ‚eÅ›, co? Albo ci ukradli, hÄ™?
 	};
 };
 
@@ -642,7 +642,7 @@ INSTANCE Info_Thorus_SttGeschafft (C_INFO)
 	condition	= Info_Thorus_SttGeschafft_Condition;
 	information	= Info_Thorus_SttGeschafft_Info;
 	permanent	= 0;
-	description = "Uda³o mi siê. Zosta³em przyjêty do Obozu!";
+	description = "UdaÅ‚o mi siÄ™. ZostaÅ‚em przyjÄ™ty do Obozu!";
 };                       
 
 FUNC INT Info_Thorus_SttGeschafft_Condition()
@@ -655,9 +655,9 @@ FUNC INT Info_Thorus_SttGeschafft_Condition()
 
 FUNC VOID Info_Thorus_SttGeschafft_Info()
 {
-	AI_Output (other, self,"Info_Thorus_SttGeschafft_15_00"); //Uda³o mi siê. Zosta³em przyjêty do Obozu!
-	AI_Output (self, other,"Info_Thorus_SttGeschafft_09_01"); //Gratulujê, ch³opcze. Dobrze ci radzê, trzymaj siê blisko Diego.
-	AI_Output (self, other,"Info_Thorus_SttGeschafft_09_02"); //Do Gomeza lub Kruka idŸ, tylko jeœli masz coœ NAPRAWDÊ wa¿nego do powiedzenia.
+	AI_Output (other, self,"Info_Thorus_SttGeschafft_15_00"); //UdaÅ‚o mi siÄ™. ZostaÅ‚em przyjÄ™ty do Obozu!
+	AI_Output (self, other,"Info_Thorus_SttGeschafft_09_01"); //GratulujÄ™, chÅ‚opcze. Dobrze ci radzÄ™, trzymaj siÄ™ blisko Diego.
+	AI_Output (self, other,"Info_Thorus_SttGeschafft_09_02"); //Do Gomeza lub Kruka idÅº, tylko jeÅ›li masz coÅ› NAPRAWDÄ˜ waÅ¼nego do powiedzenia.
 };	
 
 //////////////////////////////////////////////////
@@ -677,7 +677,7 @@ INSTANCE Info_Thorus_PERM2 (C_INFO)
 	condition	= Info_Thorus_PERM2_Condition;
 	information	= Info_Thorus_PERM2_Info;
 	permanent	= 0;
-	description = "Jak siê masz?";
+	description = "Jak siÄ™ masz?";
 };                       
 
 FUNC INT Info_Thorus_PERM2_Condition()
@@ -690,8 +690,8 @@ FUNC INT Info_Thorus_PERM2_Condition()
 
 FUNC VOID Info_Thorus_PERM2_Info()
 {
-	AI_Output (other, self,"Info_Thorus_PERM2_15_00"); //Jak siê masz?
-	AI_Output (self, other,"Info_Thorus_PERM2_09_01"); //Nowy Obóz nie sprawia nam zbyt wielu k³opotów. Bardziej martwi¹ mnie te œwiry z Sekty.
+	AI_Output (other, self,"Info_Thorus_PERM2_15_00"); //Jak siÄ™ masz?
+	AI_Output (self, other,"Info_Thorus_PERM2_09_01"); //Nowy ObÃ³z nie sprawia nam zbyt wielu kÅ‚opotÃ³w. Bardziej martwiÄ… mnie te Å›wiry z Sekty.
 };	
 
 //////////////////////////////////////////////////
@@ -711,7 +711,7 @@ instance  GRD_200_Thorus_GARDIST (C_INFO)
 	information		= GRD_200_Thorus_GARDIST_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Chcia³eœ mi coœ powiedzieæ?"; 
+	description		= "ChciaÅ‚eÅ› mi coÅ› powiedzieÄ‡?"; 
 };
 
 FUNC int  GRD_200_Thorus_GARDIST_Condition()
@@ -731,18 +731,18 @@ FUNC void  GRD_200_Thorus_GARDIST_Info()
 	var C_Npc KDFWache; 				
 	KDFWache = Hlp_GetNpc(GRD_245_GARDIST);
 	KDFWache.aivar[AIV_PASSGATE] = TRUE;
-	AI_Output (other, self,"GRD_200_Thorus_GARDIST_Info_15_01"); //Chcia³eœ mi coœ powiedzieæ?
-	AI_Output (self, other,"GRD_200_Thorus_GARDIST_Info_09_02"); //Tak. To, co pokaza³eœ w kopalni, œwiadczy nie tylko o twojej odwadze, ale równie¿ o niepospolitej sile i umiejêtnoœciach.
-	AI_Output (self, other,"GRD_200_Thorus_GARDIST_Info_09_03"); //Chêtnie bym ciê widzia³ w szeregach stra¿y.
+	AI_Output (other, self,"GRD_200_Thorus_GARDIST_Info_15_01"); //ChciaÅ‚eÅ› mi coÅ› powiedzieÄ‡?
+	AI_Output (self, other,"GRD_200_Thorus_GARDIST_Info_09_02"); //Tak. To, co pokazaÅ‚eÅ› w kopalni, Å›wiadczy nie tylko o twojej odwadze, ale rÃ³wnieÅ¼ o niepospolitej sile i umiejÄ™tnoÅ›ciach.
+	AI_Output (self, other,"GRD_200_Thorus_GARDIST_Info_09_03"); //ChÄ™tnie bym ciÄ™ widziaÅ‚ w szeregach straÅ¼y.
 	if hero.level < 10
 	{
-		AI_Output (self, other,"GRD_200_Thorus_GARDIST_Info_09_04"); //Ale zanim to nast¹pi musisz jeszcze trochê popracowaæ nad swoimi umiejêtnoœciami. Tylko najlepsi mog¹ zostaæ stra¿nikami.
+		AI_Output (self, other,"GRD_200_Thorus_GARDIST_Info_09_04"); //Ale zanim to nastÄ…pi musisz jeszcze trochÄ™ popracowaÄ‡ nad swoimi umiejÄ™tnoÅ›ciami. Tylko najlepsi mogÄ… zostaÄ‡ straÅ¼nikami.
 	    AI_StopProcessInfos	(self);
 		B_PrintGuildCondition(10);
     }
     else if hero.level >= 10
     {
-	    AI_Output (self, other,"GRD_200_Thorus_GARDIST_Info_09_05"); //Dajê ci niepowtarzaln¹ szansê. Co ty na to?
+	    AI_Output (self, other,"GRD_200_Thorus_GARDIST_Info_09_05"); //DajÄ™ ci niepowtarzalnÄ… szansÄ™. Co ty na to?
 	};
 };
 //---------------------------------------------------------------
@@ -754,7 +754,7 @@ instance  GRD_200_Thorus_AUFNAHME (C_INFO)
 	condition		= GRD_200_Thorus_AUFNAHME_Condition;
 	information		= GRD_200_Thorus_AUFNAHME_Info;
 	permanent		= 0;
-	description		= "Chcê zostaæ stra¿nikiem."; 
+	description		= "ChcÄ™ zostaÄ‡ straÅ¼nikiem."; 
 };
 
 FUNC int  GRD_200_Thorus_AUFNAHME_Condition()
@@ -769,17 +769,17 @@ FUNC int  GRD_200_Thorus_AUFNAHME_Condition()
 };
 FUNC void  GRD_200_Thorus_AUFNAHME_Info()
 {
-	AI_Output (other, self,"GRD_200_Thorus_AUFNAHME_Info_15_01"); //Chcê zostaæ Stra¿nikiem!
-	AI_Output (self, other,"GRD_200_Thorus_AUFNAHME_Info_09_02"); //Mi³o mi to s³yszeæ, ale najpierw muszê ci powiedzieæ to, co mówiê wszystkim nowym rekrutom. S³uchaj uwa¿nie, bo nie bêdê siê powtarza³.
-	AI_Output (self, other,"GRD_200_Thorus_AUFNAHME_Info_09_03"); //Do tej pory ¿y³eœ na w³asny rachunek, ale to siê od dziœ zmieni. Moi ludzie trzymaj¹ siê razem. Do Stra¿ników nale¿y dbanie o bezpieczeñstwo Magnatów, rudy, obozu i kopalni.
-	AI_Output (self, other,"GRD_200_Thorus_AUFNAHME_Info_09_04"); //Ruda wydobywana jest przez Kopaczy, ale to my pilnujemy, ¿eby nie po¿ar³y ich pe³zacze. Pertraktacje z królem prowadz¹ Magnaci, ale to my dbamy o ich bezpieczeñstwo.
-	AI_Output (self, other,"GRD_200_Thorus_AUFNAHME_Info_09_05"); //Dniem i noc¹ strze¿emy korytarzy kopalni. Dniem i noc¹ pilnujemy bram Obozu i pozwalamy jego mieszkañcom wieœæ spokojne ¿ycie.
-	AI_Output (self, other,"GRD_200_Thorus_AUFNAHME_Info_09_06"); //Na pocz¹tku byliœmy tylko bez³adn¹ zgraj¹, ale staliœmy siê si³¹, z któr¹ ka¿dy musi siê liczyæ. Ciê¿ko pracowaliœmy, by zas³u¿yæ na tê reputacjê.
-	AI_Output (self, other,"GRD_200_Thorus_AUFNAHME_Info_09_07"); //Od moich ludzi oczekujê wiêc wy³¹cznie jednego: lojalnoœci. Tylko stoj¹c ramiê w ramiê bêdziemy w stanie obroniæ to, co nale¿y do nas...
-	AI_Output (self, other,"GRD_200_Thorus_AUFNAHME_Info_09_08"); //...i przetrwaæ.
-	AI_Output (self, other,"GRD_200_Thorus_AUFNAHME_Info_09_09"); //Pozosta³ych rzeczy dowiesz siê w swoim czasie. B¹dŸ gotów do pomocy ka¿demu, kto jej potrzebuje, niewa¿ne jak trudne i niebezpieczne to zadanie.
-	AI_Output (self, other,"GRD_200_Thorus_AUFNAHME_Info_09_10"); //IdŸ do Stone'a i poproœ go o zbrojê i miecz.
-	AI_Output (self, other,"GRD_200_Thorus_AUFNAHME_Info_09_11"); //Znajdziesz go w kuŸni, w Wewnêtrznym Pierœcieniu.
+	AI_Output (other, self,"GRD_200_Thorus_AUFNAHME_Info_15_01"); //ChcÄ™ zostaÄ‡ StraÅ¼nikiem!
+	AI_Output (self, other,"GRD_200_Thorus_AUFNAHME_Info_09_02"); //MiÅ‚o mi to sÅ‚yszeÄ‡, ale najpierw muszÄ™ ci powiedzieÄ‡ to, co mÃ³wiÄ™ wszystkim nowym rekrutom. SÅ‚uchaj uwaÅ¼nie, bo nie bÄ™dÄ™ siÄ™ powtarzaÅ‚.
+	AI_Output (self, other,"GRD_200_Thorus_AUFNAHME_Info_09_03"); //Do tej pory Å¼yÅ‚eÅ› na wÅ‚asny rachunek, ale to siÄ™ od dziÅ› zmieni. Moi ludzie trzymajÄ… siÄ™ razem. Do StraÅ¼nikÃ³w naleÅ¼y dbanie o bezpieczeÅ„stwo MagnatÃ³w, rudy, obozu i kopalni.
+	AI_Output (self, other,"GRD_200_Thorus_AUFNAHME_Info_09_04"); //Ruda wydobywana jest przez Kopaczy, ale to my pilnujemy, Å¼eby nie poÅ¼arÅ‚y ich peÅ‚zacze. Pertraktacje z krÃ³lem prowadzÄ… Magnaci, ale to my dbamy o ich bezpieczeÅ„stwo.
+	AI_Output (self, other,"GRD_200_Thorus_AUFNAHME_Info_09_05"); //Dniem i nocÄ… strzeÅ¼emy korytarzy kopalni. Dniem i nocÄ… pilnujemy bram Obozu i pozwalamy jego mieszkaÅ„com wieÅ›Ä‡ spokojne Å¼ycie.
+	AI_Output (self, other,"GRD_200_Thorus_AUFNAHME_Info_09_06"); //Na poczÄ…tku byliÅ›my tylko bezÅ‚adnÄ… zgrajÄ…, ale staliÅ›my siÄ™ siÅ‚Ä…, z ktÃ³rÄ… kaÅ¼dy musi siÄ™ liczyÄ‡. CiÄ™Å¼ko pracowaliÅ›my, by zasÅ‚uÅ¼yÄ‡ na tÄ™ reputacjÄ™.
+	AI_Output (self, other,"GRD_200_Thorus_AUFNAHME_Info_09_07"); //Od moich ludzi oczekujÄ™ wiÄ™c wyÅ‚Ä…cznie jednego: lojalnoÅ›ci. Tylko stojÄ…c ramiÄ™ w ramiÄ™ bÄ™dziemy w stanie obroniÄ‡ to, co naleÅ¼y do nas...
+	AI_Output (self, other,"GRD_200_Thorus_AUFNAHME_Info_09_08"); //...i przetrwaÄ‡.
+	AI_Output (self, other,"GRD_200_Thorus_AUFNAHME_Info_09_09"); //PozostaÅ‚ych rzeczy dowiesz siÄ™ w swoim czasie. BÄ…dÅº gotÃ³w do pomocy kaÅ¼demu, kto jej potrzebuje, niewaÅ¼ne jak trudne i niebezpieczne to zadanie.
+	AI_Output (self, other,"GRD_200_Thorus_AUFNAHME_Info_09_10"); //IdÅº do Stone'a i poproÅ› go o zbrojÄ™ i miecz.
+	AI_Output (self, other,"GRD_200_Thorus_AUFNAHME_Info_09_11"); //Znajdziesz go w kuÅºni, w WewnÄ™trznym PierÅ›cieniu.
 
 	var C_Npc KDFWache; 				
 	KDFWache = Hlp_GetNpc(GRD_245_GARDIST);
@@ -810,12 +810,12 @@ FUNC int  GRD_200_Thorus_NOCHWAS_Condition()
 };
 func void  GRD_200_Thorus_NOCHWAS_Info()
 {
-	AI_Output			(self, other,"GRD_200_Thorus_NOCHWAS_Info_09_01"); //A, i jeszcze coœ...
-	AI_Output			(self, other,"GRD_200_Thorus_NOCHWAS_Info_09_02"); //Witamy w Stra¿y...
+	AI_Output			(self, other,"GRD_200_Thorus_NOCHWAS_Info_09_01"); //A, i jeszcze coÅ›...
+	AI_Output			(self, other,"GRD_200_Thorus_NOCHWAS_Info_09_02"); //Witamy w StraÅ¼y...
 	AI_StopProcessInfos	(self);
 
 	Log_CreateTopic		(GE_BecomeGuard,	LOG_NOTE);
-	B_LogEntry			(GE_BecomeGuard,"Dziœ Thorus przyj¹³ mnie w poczet Stra¿ników. Mogê teraz odebraæ nale¿ny mi pancerz. Dostanê go od Smitha, w zamku.");
+	B_LogEntry			(GE_BecomeGuard,"DziÅ› Thorus przyjÄ…Å‚ mnie w poczet StraÅ¼nikÃ³w. MogÄ™ teraz odebraÄ‡ naleÅ¼ny mi pancerz. DostanÄ™ go od Smitha, w zamku.");
 	
 };
 
@@ -828,7 +828,7 @@ instance  GRD_200_Thorus_WANNABEMAGE (C_INFO)
 	condition		= GRD_200_Thorus_WANNABEMAGE_Condition;
 	information		= GRD_200_Thorus_WANNABEMAGE_Info;
 	permanent		= 0;
-	description		= "Interesuje mnie œcie¿ka magii..."; 
+	description		= "Interesuje mnie Å›cieÅ¼ka magii..."; 
 };
 //
 FUNC int  GRD_200_Thorus_WANNABEMAGE_Condition()
@@ -842,8 +842,8 @@ FUNC int  GRD_200_Thorus_WANNABEMAGE_Condition()
 };
 FUNC void  GRD_200_Thorus_WANNABEMAGE_Info()
 {
-	AI_Output (other, self,"GRD_200_Thorus_WANNABEMAGE_Info_15_01"); //Interesuje mnie œcie¿ka magii...
-	AI_Output (self, other,"GRD_200_Thorus_WANNABEMAGE_Info_09_02"); //W takim razie powinieneœ porozmawiaæ z Corristo. To on uczy³ Miltena. Chyba nie powinno byæ ¿adnych przeciwwskazañ.
+	AI_Output (other, self,"GRD_200_Thorus_WANNABEMAGE_Info_15_01"); //Interesuje mnie Å›cieÅ¼ka magii...
+	AI_Output (self, other,"GRD_200_Thorus_WANNABEMAGE_Info_09_02"); //W takim razie powinieneÅ› porozmawiaÄ‡ z Corristo. To on uczyÅ‚ Miltena. Chyba nie powinno byÄ‡ Å¼adnych przeciwwskazaÅ„.
 
 	var C_NPC Corristo;
 	Corristo = Hlp_GetNpc		(KDF_402_Corristo);
@@ -860,7 +860,7 @@ INSTANCE GRD_200_Thorus_Teach(C_INFO)
 	condition	= GRD_200_Thorus_Teach_Condition;
 	information	= GRD_200_Thorus_Teach_Info;
 	permanent	= 1;
-	description = "Mo¿esz mnie czegoœ nauczyæ?";
+	description = "MoÅ¼esz mnie czegoÅ› nauczyÄ‡?";
 };                       
 
 FUNC INT GRD_200_Thorus_Teach_Condition()
@@ -873,13 +873,13 @@ FUNC INT GRD_200_Thorus_Teach_Condition()
 
 FUNC VOID GRD_200_Thorus_Teach_Info()
 {
-	AI_Output(other,self,"GRD_200_Thorus_Teach_15_00"); //Mo¿esz mnie czegoœ nauczyæ?
-	AI_Output(self,other,"GRD_200_Thorus_Teach_09_01"); //Mogê ci pomóc w rozwiniêciu twoich umiejêtnoœci i si³y.
+	AI_Output(other,self,"GRD_200_Thorus_Teach_15_00"); //MoÅ¼esz mnie czegoÅ› nauczyÄ‡?
+	AI_Output(self,other,"GRD_200_Thorus_Teach_09_01"); //MogÄ™ ci pomÃ³c w rozwiniÄ™ciu twoich umiejÄ™tnoÅ›ci i siÅ‚y.
 	
 	if (log_thorustrain == FALSE)
 	{
 		Log_CreateTopic   	(GE_TeacherOC,LOG_NOTE);
-		B_LogEntry		(GE_TeacherOC,"Thorus pomo¿e mi popracowaæ nad moj¹ si³¹ i zrêcznoœci¹.");
+		B_LogEntry		(GE_TeacherOC,"Thorus pomoÅ¼e mi popracowaÄ‡ nad mojÄ… siÅ‚Ä… i zrÄ™cznoÅ›ciÄ….");
 		log_thorustrain = TRUE;
 	};
 	Info_ClearChoices	(GRD_200_Thorus_Teach);
@@ -967,20 +967,20 @@ FUNC void  GRD_200_Thorus_ZWEIHAND1_Info()
 	if (log_thorusfight == FALSE)
 	{
 		Log_CreateTopic   	(GE_TeacherOC,LOG_NOTE);
-		B_LogEntry			(GE_TeacherOC,"Thorus mo¿e mnie nauczyæ walki dwurêcznym orê¿em, gdy tylko poznam tajniki walki broni¹ jednorêczn¹.");
+		B_LogEntry			(GE_TeacherOC,"Thorus moÅ¼e mnie nauczyÄ‡ walki dwurÄ™cznym orÄ™Å¼em, gdy tylko poznam tajniki walki broniÄ… jednorÄ™cznÄ….");
 		log_thorusfight = TRUE;
 	};
-	AI_Output (other, self,"GRD_200_Thorus_ZWEIHAND1_Info_15_01"); //Chcia³bym nauczyæ siê pos³ugiwaæ dwurêcznym mieczem.
+	AI_Output (other, self,"GRD_200_Thorus_ZWEIHAND1_Info_15_01"); //ChciaÅ‚bym nauczyÄ‡ siÄ™ posÅ‚ugiwaÄ‡ dwurÄ™cznym mieczem.
 	
 	
 	if (B_GiveSkill(other,NPC_TALENT_2H , 1, LPCOST_TALENT_2H_1))
 	{
-		AI_Output (self, other,"GRD_200_Thorus_ZWEIHAND1_Info_09_02"); //Dobrze, najpierw zajmiemy siê podstawami.
-		AI_Output (self, other,"GRD_200_Thorus_ZWEIHAND1_Info_09_03"); //Wyci¹gnij miecz przed siebie. Aby zaatakowaæ wroga tak ciê¿k¹ broni¹, musisz mocniej siê zamachn¹æ.
-		AI_Output (self, other,"GRD_200_Thorus_ZWEIHAND1_Info_09_04"); //Unieœ ramiê i zdecydowanie opuœæ miecz. To powinno wystarczyæ, ¿eby powaliæ przeciwnika na ziemiê.
-		AI_Output (self, other,"GRD_200_Thorus_ZWEIHAND1_Info_09_05"); //Wykorzystaj bezw³adnoœæ broni, by unieœæ j¹ ponownie do góry.
-		AI_Output (self, other,"GRD_200_Thorus_ZWEIHAND1_Info_09_06"); //Dwurêczne miecze œwietnie sprawdzaj¹ siê przy zadawaniu ciosów z boku. W ten sposób mo¿esz trzymaæ przeciwnika na dystans.
-		AI_Output (self, other,"GRD_200_Thorus_ZWEIHAND1_Info_09_07"); //To ci powinno wystarczyæ na pocz¹tek. Teraz trochê poæwicz.
+		AI_Output (self, other,"GRD_200_Thorus_ZWEIHAND1_Info_09_02"); //Dobrze, najpierw zajmiemy siÄ™ podstawami.
+		AI_Output (self, other,"GRD_200_Thorus_ZWEIHAND1_Info_09_03"); //WyciÄ…gnij miecz przed siebie. Aby zaatakowaÄ‡ wroga tak ciÄ™Å¼kÄ… broniÄ…, musisz mocniej siÄ™ zamachnÄ…Ä‡.
+		AI_Output (self, other,"GRD_200_Thorus_ZWEIHAND1_Info_09_04"); //UnieÅ› ramiÄ™ i zdecydowanie opuÅ›Ä‡ miecz. To powinno wystarczyÄ‡, Å¼eby powaliÄ‡ przeciwnika na ziemiÄ™.
+		AI_Output (self, other,"GRD_200_Thorus_ZWEIHAND1_Info_09_05"); //Wykorzystaj bezwÅ‚adnoÅ›Ä‡ broni, by unieÅ›Ä‡ jÄ… ponownie do gÃ³ry.
+		AI_Output (self, other,"GRD_200_Thorus_ZWEIHAND1_Info_09_06"); //DwurÄ™czne miecze Å›wietnie sprawdzajÄ… siÄ™ przy zadawaniu ciosÃ³w z boku. W ten sposÃ³b moÅ¼esz trzymaÄ‡ przeciwnika na dystans.
+		AI_Output (self, other,"GRD_200_Thorus_ZWEIHAND1_Info_09_07"); //To ci powinno wystarczyÄ‡ na poczÄ…tek. Teraz trochÄ™ poÄ‡wicz.
 		GRD_200_Thorus_ZWEIHAND1.permanent = 0;
 	};
 };  
@@ -1008,18 +1008,18 @@ FUNC int  GRD_200_Thorus_ZWEIHAND2_Condition()
 };
 FUNC void  GRD_200_Thorus_ZWEIHAND2_Info()
 {
-	AI_Output (other, self,"GRD_200_Thorus_ZWEIHAND2_Info_15_01"); //Chcia³bym dowiedzieæ siê czegoœ wiêcej o walce dwurêcznym mieczem.
+	AI_Output (other, self,"GRD_200_Thorus_ZWEIHAND2_Info_15_01"); //ChciaÅ‚bym dowiedzieÄ‡ siÄ™ czegoÅ› wiÄ™cej o walce dwurÄ™cznym mieczem.
 	
 	if (B_GiveSkill(other,NPC_TALENT_2H , 2, LPCOST_TALENT_2H_2))
 	{
-		AI_Output (self, other,"GRD_200_Thorus_ZWEIHAND2_Info_09_02"); //Musisz siê nauczyæ p³ynnie przenosiæ œrodek ciê¿koœci. Trzymaj miecz pionowo. Obie d³onie mocno zaciœnij na jego rêkojeœci i przesuñ go nieco w bok.
-		AI_Output (self, other,"GRD_200_Thorus_ZWEIHAND2_Info_09_03"); //Teraz uderz szybko od góry, i pozwól klindze powêdrowaæ nad twoje ramiê. Teraz mo¿esz wyprowadziæ szybkie ciêcie na prawo.
-		AI_Output (self, other,"GRD_200_Thorus_ZWEIHAND2_Info_09_04"); //Twój przeciwnik nie bêdzie mia³ okazji podejœæ bli¿ej.
-		AI_Output (self, other,"GRD_200_Thorus_ZWEIHAND2_Info_09_05"); //Albo spróbuj wyprowadziæ z lewej strony cios do przodu, aby odrzuciæ od siebie rywala. 
-		AI_Output (self, other,"GRD_200_Thorus_ZWEIHAND2_Info_09_06"); //Teraz obrót, ¿eby kolejny cios nabra³ odpowiedniej mocy. Przy odrobinie szczêœcia wróg nie prze¿yje tego uderzenia.
-		AI_Output (self, other,"GRD_200_Thorus_ZWEIHAND2_Info_09_07"); //A jeœli i to nie wystarczy, wykorzystaj resztê si³y zamachowej, by ponownie unieœæ miecz do góry.
-		AI_Output (self, other,"GRD_200_Thorus_ZWEIHAND2_Info_09_08"); //Po skoñczonym ataku wykonaj zas³onê i wypatruj luki w obronie przeciwnika.
-		AI_Output (self, other,"GRD_200_Thorus_ZWEIHAND2_Info_09_09"); //Kluczem do sukcesu jest ci¹g³a zmiana pozycji i umiejêtne wykorzystanie bezw³adnoœci broni.
+		AI_Output (self, other,"GRD_200_Thorus_ZWEIHAND2_Info_09_02"); //Musisz siÄ™ nauczyÄ‡ pÅ‚ynnie przenosiÄ‡ Å›rodek ciÄ™Å¼koÅ›ci. Trzymaj miecz pionowo. Obie dÅ‚onie mocno zaciÅ›nij na jego rÄ™kojeÅ›ci i przesuÅ„ go nieco w bok.
+		AI_Output (self, other,"GRD_200_Thorus_ZWEIHAND2_Info_09_03"); //Teraz uderz szybko od gÃ³ry, i pozwÃ³l klindze powÄ™drowaÄ‡ nad twoje ramiÄ™. Teraz moÅ¼esz wyprowadziÄ‡ szybkie ciÄ™cie na prawo.
+		AI_Output (self, other,"GRD_200_Thorus_ZWEIHAND2_Info_09_04"); //TwÃ³j przeciwnik nie bÄ™dzie miaÅ‚ okazji podejÅ›Ä‡ bliÅ¼ej.
+		AI_Output (self, other,"GRD_200_Thorus_ZWEIHAND2_Info_09_05"); //Albo sprÃ³buj wyprowadziÄ‡ z lewej strony cios do przodu, aby odrzuciÄ‡ od siebie rywala. 
+		AI_Output (self, other,"GRD_200_Thorus_ZWEIHAND2_Info_09_06"); //Teraz obrÃ³t, Å¼eby kolejny cios nabraÅ‚ odpowiedniej mocy. Przy odrobinie szczÄ™Å›cia wrÃ³g nie przeÅ¼yje tego uderzenia.
+		AI_Output (self, other,"GRD_200_Thorus_ZWEIHAND2_Info_09_07"); //A jeÅ›li i to nie wystarczy, wykorzystaj resztÄ™ siÅ‚y zamachowej, by ponownie unieÅ›Ä‡ miecz do gÃ³ry.
+		AI_Output (self, other,"GRD_200_Thorus_ZWEIHAND2_Info_09_08"); //Po skoÅ„czonym ataku wykonaj zasÅ‚onÄ™ i wypatruj luki w obronie przeciwnika.
+		AI_Output (self, other,"GRD_200_Thorus_ZWEIHAND2_Info_09_09"); //Kluczem do sukcesu jest ciÄ…gÅ‚a zmiana pozycji i umiejÄ™tne wykorzystanie bezwÅ‚adnoÅ›ci broni.
 		GRD_200_Thorus_ZWEIHAND2.permanent = 0 ;
 	};
 };  

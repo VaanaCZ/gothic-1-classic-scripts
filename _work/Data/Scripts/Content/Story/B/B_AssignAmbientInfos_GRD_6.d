@@ -37,7 +37,7 @@ INSTANCE Info_Grd_6_EinerVonEuchWerden (C_INFO) // E1
 	condition	= Info_Grd_6_EinerVonEuchWerden_Condition;
 	information	= Info_Grd_6_EinerVonEuchWerden_Info;
 	permanent	= 1;
-	description = "Nie przyda³by siê wam dodatkowy cz³owiek?";
+	description = "Nie przydaÅ‚by siÄ™ wam dodatkowy czÅ‚owiek?";
 };                       
 
 FUNC INT Info_Grd_6_EinerVonEuchWerden_Condition()
@@ -53,9 +53,9 @@ FUNC INT Info_Grd_6_EinerVonEuchWerden_Condition()
 
 FUNC VOID Info_Grd_6_EinerVonEuchWerden_Info()
 {
-	AI_Output(other,self,"Info_Grd_6_EinerVonEuchWerden_15_00"); //Nie przyda³by siê wam dodatkowy cz³owiek?
-	AI_Output(self,other,"Info_Grd_6_EinerVonEuchWerden_06_01"); //Jesteœ tu nowy, co? Jeœli chcesz szybko do³¹czyæ do jakiegoœ Obozu, spróbuj u tych œwirów z sekty. Nie s¹ zbyt wybredni, jeœli chodzi o nowych cz³onków.
-	AI_Output(self,other,"Info_Grd_6_EinerVonEuchWerden_06_02"); //Nie przyjmujemy byle kogo. No, chyba ¿e chcesz pracowaæ w Starej Kopalni!
+	AI_Output(other,self,"Info_Grd_6_EinerVonEuchWerden_15_00"); //Nie przydaÅ‚by siÄ™ wam dodatkowy czÅ‚owiek?
+	AI_Output(self,other,"Info_Grd_6_EinerVonEuchWerden_06_01"); //JesteÅ› tu nowy, co? JeÅ›li chcesz szybko doÅ‚Ä…czyÄ‡ do jakiegoÅ› Obozu, sprÃ³buj u tych Å›wirÃ³w z sekty. Nie sÄ… zbyt wybredni, jeÅ›li chodzi o nowych czÅ‚onkÃ³w.
+	AI_Output(self,other,"Info_Grd_6_EinerVonEuchWerden_06_02"); //Nie przyjmujemy byle kogo. No, chyba Å¼e chcesz pracowaÄ‡ w Starej Kopalni!
 };
 
 // *************************************************************************
@@ -68,7 +68,7 @@ INSTANCE Info_Grd_6_WichtigePersonen(C_INFO)
 	condition	= Info_Grd_6_WichtigePersonen_Condition;
 	information	= Info_Grd_6_WichtigePersonen_Info;
 	permanent	= 1;
-	description = "Kto tu rz¹dzi?";
+	description = "Kto tu rzÄ…dzi?";
 };                       
 
 FUNC INT Info_Grd_6_WichtigePersonen_Condition()
@@ -78,8 +78,8 @@ FUNC INT Info_Grd_6_WichtigePersonen_Condition()
 
 FUNC VOID Info_Grd_6_WichtigePersonen_Info()
 {
-	AI_Output(other,self,"Info_Grd_6_WichtigePersonen_15_00"); //Kto tu rz¹dzi?
-	AI_Output(self,other,"Info_Grd_6_WichtigePersonen_06_01"); //Thorus dba tu o wzglêdny porz¹dek. Nad nim jest ju¿ tylko Gomez.
+	AI_Output(other,self,"Info_Grd_6_WichtigePersonen_15_00"); //Kto tu rzÄ…dzi?
+	AI_Output(self,other,"Info_Grd_6_WichtigePersonen_06_01"); //Thorus dba tu o wzglÄ™dny porzÄ…dek. Nad nim jest juÅ¼ tylko Gomez.
 	VAR C_NPC Thorus; Thorus = Hlp_GetNpc(GRD_200_THORUS);
 	Thorus.aivar[AIV_FINDABLE]=TRUE;
 };
@@ -94,7 +94,7 @@ INSTANCE Info_Grd_6_DasLager(C_INFO)
 	condition	= Info_Grd_6_DasLager_Condition;
 	information	= Info_Grd_6_DasLager_Info;
 	permanent	= 1;
-	description = "Jestem tu nowy. Co s³ychaæ?";
+	description = "Jestem tu nowy. Co sÅ‚ychaÄ‡?";
 };                       
 
 FUNC INT Info_Grd_6_DasLager_Condition()
@@ -109,12 +109,12 @@ FUNC INT Info_Grd_6_DasLager_Condition()
 FUNC VOID Info_Grd_6_DasLager_Info()
 {
 	AI_Output(other,self,"Info_Grd_6_DasLager_15_00"); //Jestem tu nowy.
-	AI_Output(self,other,"Info_Grd_6_DasLager_06_01"); //W³aœnie widzê.
-	AI_Output(other,self,"Info_Grd_6_DasLager_15_02"); //Co s³ychaæ?
-	AI_Output(self,other,"Info_Grd_6_DasLager_06_03"); //Jak bêdziesz sprawia³ k³opoty, dostaniesz w ucho.
+	AI_Output(self,other,"Info_Grd_6_DasLager_06_01"); //WÅ‚aÅ›nie widzÄ™.
+	AI_Output(other,self,"Info_Grd_6_DasLager_15_02"); //Co sÅ‚ychaÄ‡?
+	AI_Output(self,other,"Info_Grd_6_DasLager_06_03"); //Jak bÄ™dziesz sprawiaÅ‚ kÅ‚opoty, dostaniesz w ucho.
 	Info_ClearChoices(Info_Grd_6_DasLager);
 	Info_AddChoice(Info_Grd_6_DasLager,"Rozumiem.", Info_Grd_6_DasLager_Verstehe);
-	Info_AddChoice(Info_Grd_6_DasLager,"Co masz na myœli mówi¹c 'k³opoty'?", Info_Grd_6_DasLager_WasIstAerger);
+	Info_AddChoice(Info_Grd_6_DasLager,"Co masz na myÅ›li mÃ³wiÄ…c 'kÅ‚opoty'?", Info_Grd_6_DasLager_WasIstAerger);
 };
 
 FUNC VOID Info_Grd_6_DasLager_Verstehe()
@@ -125,11 +125,11 @@ FUNC VOID Info_Grd_6_DasLager_Verstehe()
 
 FUNC VOID Info_Grd_6_DasLager_WasIstAerger()
 {
-	AI_Output(other,self,"Info_Grd_6_DasLager_WasIstAerger_15_00"); //Co masz na myœli mówi¹c "k³opoty"?
-	AI_Output(self,other,"Info_Grd_6_DasLager_WasIstAerger_06_01"); //Wiêkszoœæ Kopaczy p³aci nam za ochronê.
-	AI_Output(self,other,"Info_Grd_6_DasLager_WasIstAerger_06_02"); //Jak zaczepisz któregoœ z nich, bêdziesz mia³ do czynienia z nami.
-	AI_Output(self,other,"Info_Grd_6_DasLager_WasIstAerger_06_03"); //Jeœli z³apiê ciê na grzebaniu w cudzych chatach...
-	AI_Output(other,self,"Info_Grd_6_DasLager_WasIstAerger_15_04"); //Dobrze, dobrze. Zrozumia³em aluzjê.
+	AI_Output(other,self,"Info_Grd_6_DasLager_WasIstAerger_15_00"); //Co masz na myÅ›li mÃ³wiÄ…c "kÅ‚opoty"?
+	AI_Output(self,other,"Info_Grd_6_DasLager_WasIstAerger_06_01"); //WiÄ™kszoÅ›Ä‡ Kopaczy pÅ‚aci nam za ochronÄ™.
+	AI_Output(self,other,"Info_Grd_6_DasLager_WasIstAerger_06_02"); //Jak zaczepisz ktÃ³regoÅ› z nich, bÄ™dziesz miaÅ‚ do czynienia z nami.
+	AI_Output(self,other,"Info_Grd_6_DasLager_WasIstAerger_06_03"); //JeÅ›li zÅ‚apiÄ™ ciÄ™ na grzebaniu w cudzych chatach...
+	AI_Output(other,self,"Info_Grd_6_DasLager_WasIstAerger_15_04"); //Dobrze, dobrze. ZrozumiaÅ‚em aluzjÄ™.
 	Info_ClearChoices(Info_Grd_6_DasLager);
 };
 
@@ -154,7 +154,7 @@ FUNC INT Info_Grd_6_DieLage_Condition()
 FUNC VOID Info_Grd_6_DieLage_Info()
 {
 	AI_Output(other,self,"Info_Grd_6_DieLage_15_00"); //Jak leci?
-	AI_Output(self,other,"Info_Grd_6_DieLage_06_01"); //Szukasz k³opotów?
+	AI_Output(self,other,"Info_Grd_6_DieLage_06_01"); //Szukasz kÅ‚opotÃ³w?
 };
 	
 // *************************************************************************

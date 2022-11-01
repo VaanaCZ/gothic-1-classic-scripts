@@ -198,7 +198,7 @@ INSTANCE MENU_ITEM_LEVEL_TITLE(C_MENU_ITEM_DEF)
 INSTANCE MENU_ITEM_EXP_TITLE(C_MENU_ITEM_DEF)
 {
 	posx = STAT_A_X1;	posy = STAT_PLY_Y + 2*STAT_DY;	
-	text[0]	= "Doœwiadczenie"; 
+	text[0]	= "DoÅ›wiadczenie"; 
 	fontName = STAT_FONT_DEFAULT;	
 	flags	= flags & ~IT_SELECTABLE;
 };
@@ -267,14 +267,14 @@ INSTANCE MENU_ITEM_ATTRIBUTE_HEADING(C_MENU_ITEM_DEF)
 INSTANCE MENU_ITEM_ATTRIBUTE_1_TITLE(C_MENU_ITEM_DEF)
 {
 	posx = STAT_A_X1;	posy = STAT_ATR_Y + 1*STAT_DY;
-	text[0]		= 	"Si³a";
+	text[0]		= 	"SiÅ‚a";
 	fontName	= 	STAT_FONT_DEFAULT;
 	flags		= 	flags & ~IT_SELECTABLE;
 };
 INSTANCE MENU_ITEM_ATTRIBUTE_2_TITLE(C_MENU_ITEM_DEF)
 {
 	posx = STAT_A_X1;	posy = STAT_ATR_Y + 2*STAT_DY;
-	text[0]		=	"Zrêcznoœæ";
+	text[0]		=	"ZrÄ™cznoÅ›Ä‡";
 	fontName	=	STAT_FONT_DEFAULT;
 	flags		=	flags & ~IT_SELECTABLE;
 };
@@ -288,7 +288,7 @@ INSTANCE MENU_ITEM_ATTRIBUTE_3_TITLE(C_MENU_ITEM_DEF)
 INSTANCE MENU_ITEM_ATTRIBUTE_4_TITLE(C_MENU_ITEM_DEF)
 {
 	posx = STAT_A_X1;	posy = STAT_ATR_Y + 4*STAT_DY;
-	text[0]		=	"P¯";
+	text[0]		=	"PÅ»";
 	fontName	=	STAT_FONT_DEFAULT;
 	flags		=	flags & ~IT_SELECTABLE;
 };
@@ -334,7 +334,7 @@ INSTANCE MENU_ITEM_ARMOR_HEADING(C_MENU_ITEM_DEF)
 
 INSTANCE MENU_ITEM_ARMOR_1_TITLE(C_MENU_ITEM_DEF)
 {
-	text[0]	= "przed broni¹";
+	text[0]	= "przed broniÄ…";
 	posx =  STAT_A_X1; posy = STAT_ARM_Y + 1*STAT_DY;	fontName = STAT_FONT_DEFAULT;
 	flags = flags & ~IT_SELECTABLE;
 };
@@ -356,7 +356,7 @@ INSTANCE MENU_ITEM_ARMOR_3_TITLE(C_MENU_ITEM_DEF)
 
 INSTANCE MENU_ITEM_ARMOR_4_TITLE(C_MENU_ITEM_DEF)
 {
-	text[0]	= "przed magi¹";
+	text[0]	= "przed magiÄ…";
 	posx =  STAT_A_X1; posy = STAT_ARM_Y + 4*STAT_DY;	fontName = STAT_FONT_DEFAULT;
 	flags = flags & ~IT_SELECTABLE;
 };
@@ -403,7 +403,7 @@ INSTANCE MENU_ITEM_TALENTS_WEAPON_HEADING(C_MENU_ITEM_DEF)
 
 INSTANCE MENU_ITEM_TALENTS_THIEF_HEADING(C_MENU_ITEM_DEF)
 {
-	text[0]	= "KRADZIE¯ / SZANSE PORA¯KI";
+	text[0]	= "KRADZIEÅ» / SZANSE PORAÅ»KI";
 	posx	= STAT_B_X1; posy = STAT_TAL_Y + STAT_DY*6;
 	fontName	=	STAT_FONT_TITLE;	
 	flags		=	flags & ~IT_SELECTABLE;

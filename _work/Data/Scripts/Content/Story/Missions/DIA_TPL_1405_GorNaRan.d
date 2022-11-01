@@ -44,9 +44,9 @@ FUNC int  DIA_GorNaRan_Wache_Condition()
 FUNC VOID  DIA_GorNaRan_Wache_Info()
 {
 	AI_Output (other, self,"DIA_GorNaRan_Wache_15_00"); //Co tu robisz?
-	AI_Output (self, other,"DIA_GorNaRan_Wache_13_01"); //Pilnujê, ¿eby b³otne wê¿e nie podp³ywa³y zbyt blisko Obozu.
-	AI_Output (self, other,"DIA_GorNaRan_Wache_13_02"); //Na twoim miejscu trzyma³bym siê od nich z dala. W walce z takim potworem nie masz najmniejszych szans!
-	AI_Output (self, other,"DIA_GorNaRan_Wache_13_03"); //A teraz idŸ ju¿ sobie. Muszê mieæ oczy szeroko otwarte.
+	AI_Output (self, other,"DIA_GorNaRan_Wache_13_01"); //PilnujÄ™, Å¼eby bÅ‚otne wÄ™Å¼e nie podpÅ‚ywaÅ‚y zbyt blisko Obozu.
+	AI_Output (self, other,"DIA_GorNaRan_Wache_13_02"); //Na twoim miejscu trzymaÅ‚bym siÄ™ od nich z dala. W walce z takim potworem nie masz najmniejszych szans!
+	AI_Output (self, other,"DIA_GorNaRan_Wache_13_03"); //A teraz idÅº juÅ¼ sobie. MuszÄ™ mieÄ‡ oczy szeroko otwarte.
 	AI_StopProcessInfos	( self );
 };
 
@@ -77,7 +77,7 @@ FUNC INT Info_TPL_1405_GorNaRan_Condition()
 
 FUNC VOID Info_TPL_1405_GorNaRan_Info()
 {
-	AI_Output (self, other,"Info_TPL_1405_GorNaRan_Info_13_01"); //A dok¹d to siê wybierasz? Nikt nie ma tu prawa wstêpu!
+	AI_Output (self, other,"Info_TPL_1405_GorNaRan_Info_13_01"); //A dokÄ…d to siÄ™ wybierasz? Nikt nie ma tu prawa wstÄ™pu!
 };
 
 
@@ -90,7 +90,7 @@ INSTANCE Info_TPL_1405_GorNaRan2 (C_INFO)
 	condition	= Info_TPL_1405_GorNaRan2_Condition;
 	information	= Info_TPL_1405_GorNaRan2_Info;
 	permanent	= 1;
-	description = "A co siê tu tak w ogóle dzieje?";
+	description = "A co siÄ™ tu tak w ogÃ³le dzieje?";
 };                       
 
 FUNC INT Info_TPL_1405_GorNaRan2_Condition()
@@ -102,8 +102,8 @@ FUNC INT Info_TPL_1405_GorNaRan2_Condition()
 
 FUNC VOID Info_TPL_1405_GorNaRan2_Info()
 {
-	AI_Output (other, self,"Info_TPL_1405_GorNaRan_Info_15_02"); //A co siê tu tak w ogóle dzieje?
-	AI_Output (self, other,"Info_TPL_1405_GorNaRan_Info_13_03"); //Pytasz, co siê tu dzieje? Padnij na kolana i b³agaj Œni¹cego o litoœæ nad tw¹ grzeszn¹ dusz¹! Oto bowiem nadszed³ moment jego wielkiego przebudzenia!
+	AI_Output (other, self,"Info_TPL_1405_GorNaRan_Info_15_02"); //A co siÄ™ tu tak w ogÃ³le dzieje?
+	AI_Output (self, other,"Info_TPL_1405_GorNaRan_Info_13_03"); //Pytasz, co siÄ™ tu dzieje? Padnij na kolana i bÅ‚agaj ÅšniÄ…cego o litoÅ›Ä‡ nad twÄ… grzesznÄ… duszÄ…! Oto bowiem nadszedÅ‚ moment jego wielkiego przebudzenia!
 };
 
 
@@ -116,7 +116,7 @@ INSTANCE Info_TPL_1405_GorNaRan3 (C_INFO)
 	condition	= Info_TPL_1405_GorNaRan3_Condition;
 	information	= Info_TPL_1405_GorNaRan3_Info;
 	permanent	= 1;
-	description = "Chcia³em siê tylko trochê rozejrzeæ.";
+	description = "ChciaÅ‚em siÄ™ tylko trochÄ™ rozejrzeÄ‡.";
 };                       
 
 FUNC INT Info_TPL_1405_GorNaRan3_Condition()
@@ -128,8 +128,8 @@ FUNC INT Info_TPL_1405_GorNaRan3_Condition()
 
 FUNC VOID Info_TPL_1405_GorNaRan3_Info()
 {	
-	AI_Output (other, self,"Info_TPL_1405_GorNaRan_Info_15_04"); //Chcia³em siê tylko trochê rozejrzeæ.
-	AI_Output (self, other,"Info_TPL_1405_GorNaRan_Info_13_05"); //Gnido! Tacy jak ty nie maj¹ tu czego szukaæ we wznios³ej chwili ostatecznego triumfu Œni¹cego! Widzê, ¿e muszê ci to wbiæ do g³owy!
+	AI_Output (other, self,"Info_TPL_1405_GorNaRan_Info_15_04"); //ChciaÅ‚em siÄ™ tylko trochÄ™ rozejrzeÄ‡.
+	AI_Output (self, other,"Info_TPL_1405_GorNaRan_Info_13_05"); //Gnido! Tacy jak ty nie majÄ… tu czego szukaÄ‡ we wzniosÅ‚ej chwili ostatecznego triumfu ÅšniÄ…cego! WidzÄ™, Å¼e muszÄ™ ci to wbiÄ‡ do gÅ‚owy!
 	
 	AI_StopProcessInfos	( self );
 	
@@ -159,7 +159,7 @@ FUNC INT Info_TPL_1405_GorNaRan4_Condition()
 FUNC VOID Info_TPL_1405_GorNaRan4_Info()
 {	
 	AI_Output (other, self,"Info_TPL_1405_GorNaRan_Info_15_06"); //Nie powstrzymasz mnie!
-	AI_Output (self, other,"Info_TPL_1405_GorNaRan_Info_13_07"); //Jak sobie ¿yczysz, ch³opcze, w imiê Œni¹cego!
+	AI_Output (self, other,"Info_TPL_1405_GorNaRan_Info_13_07"); //Jak sobie Å¼yczysz, chÅ‚opcze, w imiÄ™ ÅšniÄ…cego!
 
 	AI_StopProcessInfos	( self );
 

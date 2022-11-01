@@ -51,7 +51,7 @@ FUNC INT Info_Mine_Vlk_3_Mine_Condition()
 FUNC VOID Info_Mine_Vlk_3_Mine_Info()
 {
 	AI_Output(other,self,"Info_Mine_Vlk_3_Mine_15_00"); //Opowiedz mi o kopalni.
-	AI_Output(self,other,"Info_Mine_Vlk_3_Mine_01_01"); //Musimy pracowaæ bez koñca, nigdy nie ogl¹daj¹c œwiat³a dziennego. St¹d nie ma ucieczki innej ni¿ œmieræ.
+	AI_Output(self,other,"Info_Mine_Vlk_3_Mine_01_01"); //Musimy pracowaÄ‡ bez koÅ„ca, nigdy nie oglÄ…dajÄ…c Å›wiatÅ‚a dziennego. StÄ…d nie ma ucieczki innej niÅ¼ Å›mierÄ‡.
 	
 };
 
@@ -65,7 +65,7 @@ INSTANCE Info_Mine_Vlk_3_WichtigePersonen(C_INFO)
 	condition	= Info_Mine_Vlk_3_WichtigePersonen_Condition;
 	information	= Info_Mine_Vlk_3_WichtigePersonen_Info;
 	permanent	= 1;
-	description = "Kto tu rz¹dzi?";
+	description = "Kto tu rzÄ…dzi?";
 };                       
 
 FUNC INT Info_Mine_Vlk_3_WichtigePersonen_Condition()
@@ -78,8 +78,8 @@ FUNC INT Info_Mine_Vlk_3_WichtigePersonen_Condition()
 
 FUNC VOID Info_Mine_Vlk_3_WichtigePersonen_Info()
 {
-	AI_Output(other,self,"Info_Mine_Vlk_3_WichtigePersonen_15_00"); //Kto tu rz¹dzi?
-	AI_Output(self,other,"Info_Mine_Vlk_3_WichtigePersonen_01_01"); //Ian pilnuje kopalni a Asghan jest dowódc¹ stra¿ników.
+	AI_Output(other,self,"Info_Mine_Vlk_3_WichtigePersonen_15_00"); //Kto tu rzÄ…dzi?
+	AI_Output(self,other,"Info_Mine_Vlk_3_WichtigePersonen_01_01"); //Ian pilnuje kopalni a Asghan jest dowÃ³dcÄ… straÅ¼nikÃ³w.
 };
 
 // *************************************************************************
@@ -92,7 +92,7 @@ INSTANCE Info_Mine_Vlk_3_Minecrawler(C_INFO)
 	condition	= Info_Mine_Vlk_3_Minecrawler_Condition;
 	information	= Info_Mine_Vlk_3_Minecrawler_Info;
 	permanent	= 1;
-	description = "Co mo¿esz mi powiedzieæ o pe³zaczach?";
+	description = "Co moÅ¼esz mi powiedzieÄ‡ o peÅ‚zaczach?";
 };                       
 
 FUNC INT Info_Mine_Vlk_3_Minecrawler_Condition()
@@ -105,9 +105,9 @@ FUNC INT Info_Mine_Vlk_3_Minecrawler_Condition()
 
 FUNC VOID Info_Mine_Vlk_3_Minecrawler_Info()
 {
-	AI_Output(other,self,"Info_Mine_Vlk_3_Minecrawler_15_00"); //Co mo¿esz mi powiedzieæ o pe³zaczach?
-	AI_Output(self,other,"Info_Mine_Vlk_3_Minecrawler_01_01"); //Chcesz wiedzieæ, co robiæ w przypadku spotkania z pe³zaczem? Uciekaj. Uciekaj ile tylko si³ w nogach!
-	AI_Output(self,other,"Info_Mine_Vlk_3_Minecrawler_01_02"); //Jak zaginiesz, bêdziesz martwy. Tutaj nikt nie bêdzie po tobie p³aka³.
+	AI_Output(other,self,"Info_Mine_Vlk_3_Minecrawler_15_00"); //Co moÅ¼esz mi powiedzieÄ‡ o peÅ‚zaczach?
+	AI_Output(self,other,"Info_Mine_Vlk_3_Minecrawler_01_01"); //Chcesz wiedzieÄ‡, co robiÄ‡ w przypadku spotkania z peÅ‚zaczem? Uciekaj. Uciekaj ile tylko siÅ‚ w nogach!
+	AI_Output(self,other,"Info_Mine_Vlk_3_Minecrawler_01_02"); //Jak zaginiesz, bÄ™dziesz martwy. Tutaj nikt nie bÄ™dzie po tobie pÅ‚akaÅ‚.
 };
 
 // *************************************************************************
@@ -134,8 +134,8 @@ FUNC INT Info_Mine_Vlk_3_DieLage_Condition()
 FUNC VOID Info_Mine_Vlk_3_DieLage_Info()
 {
 	AI_Output(other,self,"Info_Mine_Vlk_3_DieLage_15_00"); //Jak leci?
-	AI_Output(self,other,"Info_Mine_Vlk_3_DieLage_01_01"); //Pomyœlmy: bol¹ mnie plecy, rêce mi odpadaj¹, jêzyk przysycha mi do podniebienia i padam z wyczerpania.
-	AI_Output(self,other,"Info_Mine_Vlk_3_DieLage_01_02"); //A od tego ci¹g³ego ³oskotu powoli dostajê œwira.
+	AI_Output(self,other,"Info_Mine_Vlk_3_DieLage_01_01"); //PomyÅ›lmy: bolÄ… mnie plecy, rÄ™ce mi odpadajÄ…, jÄ™zyk przysycha mi do podniebienia i padam z wyczerpania.
+	AI_Output(self,other,"Info_Mine_Vlk_3_DieLage_01_02"); //A od tego ciÄ…gÅ‚ego Å‚oskotu powoli dostajÄ™ Å›wira.
 };
 	
 // *************************************************************************

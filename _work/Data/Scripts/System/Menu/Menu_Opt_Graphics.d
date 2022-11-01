@@ -47,7 +47,7 @@ INSTANCE MENUITEM_GRA_TEXQUAL(C_MENU_ITEM_DEF)
 {
 	backpic		=	MENU_ITEM_BACK_PIC;
 	text[0]		=	"Tekstury";
-	text[1]		= 	"Szczegó³owoœæ tekstur."; // Kommentar
+	text[1]		= 	"SzczegÃ³Å‚owoÅ›Ä‡ tekstur."; // Kommentar
 	// Position und Dimension	
 	posx		=	1000;	posy		=	MENU_START_Y + MENU_DY*0;
 	dimx		=	3000;	dimy		=	750;
@@ -82,7 +82,7 @@ INSTANCE MENUITEM_GRA_MODEL_DETAIL(C_MENU_ITEM_DEF)
 {
 	backpic		=	MENU_ITEM_BACK_PIC;
 	text[0]		=	"Modele";
-	text[1]		= 	"Szczegó³owoœæ modeli 3D."; // Kommentar
+	text[1]		= 	"SzczegÃ³Å‚owoÅ›Ä‡ modeli 3D."; // Kommentar
 	// Position und Dimension	
 	posx		=	1000;	posy		=	MENU_START_Y + MENU_DY*1;
 	dimx		=	3000;	dimy		=	750;
@@ -119,7 +119,7 @@ instance MENUITEM_GRA_SIGHT(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
 	text[0]		= "Widok";
-	text[1]		= "Zasiêg generowania obrazu."; // Kommentar
+	text[1]		= "ZasiÄ™g generowania obrazu."; // Kommentar
 	// Position und Dimension	
 	posx		=	1000;	posy		=	MENU_START_Y + MENU_DY*2;
 	dimx		=	3000;	dimy		=	750;
@@ -173,7 +173,7 @@ instance MENUITEM_GRA_SKY_EFFECTS_CHOICE(C_MENU_ITEM_DEF)
 {
 	backPic		=	MENU_CHOICE_BACK_PIC;
 	type		=	MENU_ITEM_CHOICEBOX;		
-	text[0]		= 	"wy³.|w³.";
+	text[0]		= 	"wyÅ‚.|wÅ‚.";
 	fontName	=   MENU_FONT_SMALL;
 	// Position und Dimension	
 	posx		= 5000;		posy		=	MENU_START_Y + MENU_DY*3 + MENU_CHOICE_YPLUS;

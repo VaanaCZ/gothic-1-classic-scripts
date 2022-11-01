@@ -1,9 +1,9 @@
 func void B_Story_UrizielLoaded()
 {
-	//-------- Missionsgegenstände --------
+	//-------- MissionsgegenstÃ¤nde --------
 	
-	//-------- Tagebucheinträge --------
-	B_LogEntry			(CH5_Uriziel,"Zadanie wykonane! URIZIEL odzyska³ dawn¹ moc. Saturas i jego Magowie Wody maj¹ mnie chyba serdecznie doœæ. Chwilowo lepiej bêdzie trzymaæ siê od nich z dala. Tak czy inaczej, teraz czeka mnie przeprawa ze Œni¹cym!");
+	//-------- TagebucheintrÃ¤ge --------
+	B_LogEntry			(CH5_Uriziel,"Zadanie wykonane! URIZIEL odzyskaÅ‚ dawnÄ… moc. Saturas i jego Magowie Wody majÄ… mnie chyba serdecznie doÅ›Ä‡. Chwilowo lepiej bÄ™dzie trzymaÄ‡ siÄ™ od nich z dala. Tak czy inaczej, teraz czeka mnie przeprawa ze ÅšniÄ…cym!");
 	
 	if (Npc_GetTrueGuild(hero) != GIL_KDW)
 	{
@@ -11,7 +11,7 @@ func void B_Story_UrizielLoaded()
 	}
 	else
 	{
-		B_LogEntry		(CH5_Uriziel,"Podczas mojej ostatniej wizyty, Xardas wspomnia³ o mo¿liwoœci wykorzystania mocy Uriziela nawet przeze mnie - maga, jednak najpierw chce na niego rzuciæ okiem. Powinienem udaæ siê do siedziby Nekromanty.");
+		B_LogEntry		(CH5_Uriziel,"Podczas mojej ostatniej wizyty, Xardas wspomniaÅ‚ o moÅ¼liwoÅ›ci wykorzystania mocy Uriziela nawet przeze mnie - maga, jednak najpierw chce na niego rzuciÄ‡ okiem. Powinienem udaÄ‡ siÄ™ do siedziby Nekromanty.");
 	};
 	
 	//-------- Erfahrung --------

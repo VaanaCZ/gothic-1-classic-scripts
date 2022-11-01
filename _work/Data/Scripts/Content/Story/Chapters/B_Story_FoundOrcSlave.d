@@ -3,10 +3,10 @@
 //*****************************************************************************
 func void B_Story_FoundOrcSlave()
 {
-	//-------- Missionsgegenstände --------
+	//-------- MissionsgegenstÃ¤nde --------
 	
-	//-------- Tagebucheinträge --------
-	B_LogEntry			(CH4_UluMulu,"Znalaz³em przyjaciela Ur-Shaka w jednym z dolnych korytarzy Wolnej Kopalni. Nazywa siê Tarrok. Jeœli szybko nie dostarczê mu jego lekarstwa, umrze w wyniku zatrucia. Orkowe lekarstwo ma siê znajdowaæ na którymœ z ni¿szych poziomów. Muszê siê spieszyæ!");
+	//-------- TagebucheintrÃ¤ge --------
+	B_LogEntry			(CH4_UluMulu,"ZnalazÅ‚em przyjaciela Ur-Shaka w jednym z dolnych korytarzy Wolnej Kopalni. Nazywa siÄ™ Tarrok. JeÅ›li szybko nie dostarczÄ™ mu jego lekarstwa, umrze w wyniku zatrucia. Orkowe lekarstwo ma siÄ™ znajdowaÄ‡ na ktÃ³rymÅ› z niÅ¼szych poziomÃ³w. MuszÄ™ siÄ™ spieszyÄ‡!");
 
 	//-------- Erfahrung --------
 	B_GiveXP			(XP_FoundOrcSlave);

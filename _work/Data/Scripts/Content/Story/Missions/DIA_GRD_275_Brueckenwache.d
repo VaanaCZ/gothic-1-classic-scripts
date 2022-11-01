@@ -22,7 +22,7 @@ FUNC INT Info_GRD_275_PreExit_Condition()
 
 FUNC VOID Info_GRD_275_PreExit_Info()
 {
-	AI_Output(self,other,"Info_GRD_275_PreExit_06_01"); //IdŸ jak najszybciej do Starego Obozu! Tam ju¿ czekaj¹ na ciebie z nowiuteñkim kilofem. Hi hi hi!
+	AI_Output(self,other,"Info_GRD_275_PreExit_06_01"); //IdÅº jak najszybciej do Starego Obozu! Tam juÅ¼ czekajÄ… na ciebie z nowiuteÅ„kim kilofem. Hi hi hi!
 	AI_StopProcessInfos(self);
 };
 
@@ -62,7 +62,7 @@ INSTANCE Info_GRD_275_WasMachtIhrHier (C_INFO)
 	condition	= Info_GRD_275_WasMachtIhrHier_Condition;
 	information	= Info_GRD_275_WasMachtIhrHier_Info;
 	permanent	= 1;
-	description = "Czym siê tutaj zajmujecie?";
+	description = "Czym siÄ™ tutaj zajmujecie?";
 };                       
 
 FUNC INT Info_GRD_275_WasMachtIhrHier_Condition()
@@ -72,9 +72,9 @@ FUNC INT Info_GRD_275_WasMachtIhrHier_Condition()
 
 FUNC VOID Info_GRD_275_WasMachtIhrHier_Info()
 {
-	AI_Output (other,self,"Info_GRD_275_WasMachtIhrHier_15_00"); //Czym siê tutaj zajmujecie?
-	AI_Output (self,other,"Info_GRD_275_WasMachtIhrHier_06_01"); //A na co ci to wygl¹da? Pilnujemy mostu!
-	AI_Output (self,other,"Info_GRD_275_WasMachtIhrHier_06_02"); //Pilnujemy, ¿eby ¿adne paskudztwa nie przedosta³y siê na drug¹ stronê.
+	AI_Output (other,self,"Info_GRD_275_WasMachtIhrHier_15_00"); //Czym siÄ™ tutaj zajmujecie?
+	AI_Output (self,other,"Info_GRD_275_WasMachtIhrHier_06_01"); //A na co ci to wyglÄ…da? Pilnujemy mostu!
+	AI_Output (self,other,"Info_GRD_275_WasMachtIhrHier_06_02"); //Pilnujemy, Å¼eby Å¼adne paskudztwa nie przedostaÅ‚y siÄ™ na drugÄ… stronÄ™.
 };
 
 // *****************************************************************
@@ -88,7 +88,7 @@ INSTANCE Info_GRD_275_Tips(C_INFO)
 	condition	= Info_GRD_275_Tips_Condition;
 	information	= Info_GRD_275_Tips_Info;
 	permanent	= 1;
-	description = "Masz dla mnie jakieœ dobre rady?";
+	description = "Masz dla mnie jakieÅ› dobre rady?";
 };                       
 
 FUNC INT Info_GRD_275_Tips_Condition()
@@ -98,9 +98,9 @@ FUNC INT Info_GRD_275_Tips_Condition()
 
 FUNC VOID Info_GRD_275_Tips_Info()
 {
-	AI_Output (other,self,"Info_GRD_275_Tips_15_00"); //Masz dla mnie jakieœ dobre rady?
-	AI_Output (self,other,"Info_GRD_275_Tips_06_01"); //Tak. Nie zapuszczaj siê do lasu w pojedynkê.
-	AI_Output (self,other,"Info_GRD_275_Tips_06_02"); //Chyba, ¿e jesteœ wystarczaj¹co silny, ¿eby daæ sobie radê ze zwierzakami.
+	AI_Output (other,self,"Info_GRD_275_Tips_15_00"); //Masz dla mnie jakieÅ› dobre rady?
+	AI_Output (self,other,"Info_GRD_275_Tips_06_01"); //Tak. Nie zapuszczaj siÄ™ do lasu w pojedynkÄ™.
+	AI_Output (self,other,"Info_GRD_275_Tips_06_02"); //Chyba, Å¼e jesteÅ› wystarczajÄ…co silny, Å¼eby daÄ‡ sobie radÄ™ ze zwierzakami.
 };
 
 
@@ -110,8 +110,8 @@ FUNC VOID Info_GRD_275_Tips_Info()
 
 
 /*
-	AI_Output(other,self,"Info_GRD_275_PreExit_15_02"); //Ich werde bestimmt nicht in den Minen für euch schuften.
-	AI_Output(self,other,"Info_GRD_275_PreExit_06_03"); //In dem Fall bist du wohl unser zukünftiger Kollege? Dann sei schön lieb zu uns, wir sind nämlich morgen auch noch da, hehe.
-	AI_Output(other,self,"Info_GRD_275_PreExit_15_04"); //Ich habe gehört es gibt auch noch andere Lager...
-	AI_Output(self,other,"Info_GRD_275_PreExit_06_05"); //So wie du rumläufst schaffst Du es nicht mal bis dahin zu kommen. Und jetzt weg mit dir.
+	AI_Output(other,self,"Info_GRD_275_PreExit_15_02"); //Ich werde bestimmt nicht in den Minen fÃ¼r euch schuften.
+	AI_Output(self,other,"Info_GRD_275_PreExit_06_03"); //In dem Fall bist du wohl unser zukÃ¼nftiger Kollege? Dann sei schÃ¶n lieb zu uns, wir sind nÃ¤mlich morgen auch noch da, hehe.
+	AI_Output(other,self,"Info_GRD_275_PreExit_15_04"); //Ich habe gehÃ¶rt es gibt auch noch andere Lager...
+	AI_Output(self,other,"Info_GRD_275_PreExit_06_05"); //So wie du rumlÃ¤ufst schaffst Du es nicht mal bis dahin zu kommen. Und jetzt weg mit dir.
 */

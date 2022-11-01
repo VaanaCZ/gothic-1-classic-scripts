@@ -30,7 +30,7 @@ INSTANCE  Grd_260_Drake_Gefahr (C_INFO)	//E1
 	information		= Grd_260_Drake_Gefahr_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Na co powinienem uwa¿aæ w kopalni?";
+	description		= "Na co powinienem uwaÅ¼aÄ‡ w kopalni?";
 };
 
 FUNC INT  Grd_260_Drake_Gefahr_Condition()
@@ -41,12 +41,12 @@ FUNC INT  Grd_260_Drake_Gefahr_Condition()
 func VOID  Grd_260_Drake_Gefahr_Info()
 {
 
-	AI_Output			(other,self,"Grd_260_Drake_Gefahr_Info_15_01");//Na co powinienem uwa¿aæ w kopalni?
-	AI_Output			(self,other,"Grd_260_Drake_Gefahr_Info_11_02");//Przede wszystkim na pe³zacze. GroŸne bestie.
-	AI_Output			(self,other,"Grd_260_Drake_Gefahr_Info_11_03");//To przez nie musieliœmy zrezygnowaæ z wydobycia w paru jaskiniach. Niestety, po¿ar³y nam ju¿ spor¹ grupê Kopaczy.
-	AI_Output			(other,self,"Grd_260_Drake_Gefahr_Info_15_04");//Opowiedz mi o pe³zaczach.
-	AI_Output			(self,other,"Grd_260_Drake_Gefahr_Info_11_05");//Wiesz, zasch³o mi w ustach...
-	AI_Output			(self,other,"Grd_260_Drake_Gefahr_Info_11_06");//Przynieœ mi piwo, to ci opowiem o pe³zaczach.
+	AI_Output			(other,self,"Grd_260_Drake_Gefahr_Info_15_01");//Na co powinienem uwaÅ¼aÄ‡ w kopalni?
+	AI_Output			(self,other,"Grd_260_Drake_Gefahr_Info_11_02");//Przede wszystkim na peÅ‚zacze. GroÅºne bestie.
+	AI_Output			(self,other,"Grd_260_Drake_Gefahr_Info_11_03");//To przez nie musieliÅ›my zrezygnowaÄ‡ z wydobycia w paru jaskiniach. Niestety, poÅ¼arÅ‚y nam juÅ¼ sporÄ… grupÄ™ Kopaczy.
+	AI_Output			(other,self,"Grd_260_Drake_Gefahr_Info_15_04");//Opowiedz mi o peÅ‚zaczach.
+	AI_Output			(self,other,"Grd_260_Drake_Gefahr_Info_11_05");//Wiesz, zaschÅ‚o mi w ustach...
+	AI_Output			(self,other,"Grd_260_Drake_Gefahr_Info_11_06");//PrzynieÅ› mi piwo, to ci opowiem o peÅ‚zaczach.
 
 
 };
@@ -73,7 +73,7 @@ FUNC void Grd_260_Drake_Crawler_Okay_Info()
 {
 	if	( Npc_HasItems (hero,ItFobeer) )
 	{
-		AI_Output			(hero,self,"Grd_260_Drake_Crawler_Okay_15_01");//Proszê, wypij moje zdrowie!
+		AI_Output			(hero,self,"Grd_260_Drake_Crawler_Okay_15_01");//ProszÄ™, wypij moje zdrowie!
 
 		B_GiveInvItems		(hero, self, ItFoBeer, 1);
 		if ( C_BodystateContains(self, BS_SIT) )
@@ -83,15 +83,15 @@ FUNC void Grd_260_Drake_Crawler_Okay_Info()
 		};
 		AI_UseItem			(self,ItFobeer);
 
-		AI_Output			(self,hero,"Grd_260_Drake_Crawler_Okay_11_02");//Dziêki. A co do pe³zaczy - ¿yj¹ w du¿ych stadach, g³ównie w bocznych jaskiniach.
-		AI_Output			(self,hero,"Grd_260_Drake_Crawler_Okay_11_03");//Jeszcze nigdy nie widziano ich tutaj, w g³ównym szybie. Gdybyœ spotka³ kiedyœ pe³zacza, wiej ile si³ w nogach!
-		AI_Output			(self,hero,"Grd_260_Drake_Crawler_Okay_11_04");//Albo stañ plecami do œciany. W ten sposób bêdziesz mia³ jak¹œ szansê!
+		AI_Output			(self,hero,"Grd_260_Drake_Crawler_Okay_11_02");//DziÄ™ki. A co do peÅ‚zaczy - Å¼yjÄ… w duÅ¼ych stadach, gÅ‚Ã³wnie w bocznych jaskiniach.
+		AI_Output			(self,hero,"Grd_260_Drake_Crawler_Okay_11_03");//Jeszcze nigdy nie widziano ich tutaj, w gÅ‚Ã³wnym szybie. GdybyÅ› spotkaÅ‚ kiedyÅ› peÅ‚zacza, wiej ile siÅ‚ w nogach!
+		AI_Output			(self,hero,"Grd_260_Drake_Crawler_Okay_11_04");//Albo staÅ„ plecami do Å›ciany. W ten sposÃ³b bÄ™dziesz miaÅ‚ jakÄ…Å› szansÄ™!
 
 		//Grd_260_Drake_Crawler_Okay.permanent = 0;
 	}
 	else
 	{
-		AI_Output			(self,other,"Grd_260_Drake_Crawler_Okay_11_06");//¯artujesz sobie ze mnie? Wróæ, jak bêdziesz mia³ dla mnie piwo.
+		AI_Output			(self,other,"Grd_260_Drake_Crawler_Okay_11_06");//Å»artujesz sobie ze mnie? WrÃ³Ä‡, jak bÄ™dziesz miaÅ‚ dla mnie piwo.
    		Grd_260_Drake_Crawler_Okay.permanent = 1;
    };
 };
@@ -104,7 +104,7 @@ instance  Grd_260_Drake_Mine (C_INFO) //E1
 	information		= Grd_260_Drake_Mine_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Mo¿esz mi opowiedzieæ o tej kopalni?";
+	description		= "MoÅ¼esz mi opowiedzieÄ‡ o tej kopalni?";
 };
 
 FUNC int  Grd_260_Drake_Mine_Condition()
@@ -113,10 +113,10 @@ FUNC int  Grd_260_Drake_Mine_Condition()
 };
 func void Grd_260_Drake_Mine_Info ()
 {
-	AI_Output			(other,self,"Grd_260_Drake_Mine_Info_15_01");//Mo¿esz mi opowiedzieæ o tej kopalni?
-	AI_Output			(self,other,"Grd_260_Drake_Mine_Info_11_02");//Stoimy teraz w g³ównym szybie. Na dó³ mo¿na zejœæ po rusztowaniach.
-	AI_Output			(self,other,"Grd_260_Drake_Mine_Info_11_03");//Wszêdzie dooko³a Kopacze wydobywaj¹ rudê. Musisz bardzo uwa¿aæ na pe³zacze. One te¿ s¹ wszêdzie dooko³a!
-	AI_Output			(self,other,"Grd_260_Drake_Mine_Info_11_04");//Na samym dole, czêœæ wydobytej rudy przeznaczona do wykorzystania tutaj jest od razu przetapiana. 
+	AI_Output			(other,self,"Grd_260_Drake_Mine_Info_15_01");//MoÅ¼esz mi opowiedzieÄ‡ o tej kopalni?
+	AI_Output			(self,other,"Grd_260_Drake_Mine_Info_11_02");//Stoimy teraz w gÅ‚Ã³wnym szybie. Na dÃ³Å‚ moÅ¼na zejÅ›Ä‡ po rusztowaniach.
+	AI_Output			(self,other,"Grd_260_Drake_Mine_Info_11_03");//WszÄ™dzie dookoÅ‚a Kopacze wydobywajÄ… rudÄ™. Musisz bardzo uwaÅ¼aÄ‡ na peÅ‚zacze. One teÅ¼ sÄ… wszÄ™dzie dookoÅ‚a!
+	AI_Output			(self,other,"Grd_260_Drake_Mine_Info_11_04");//Na samym dole, czÄ™Å›Ä‡ wydobytej rudy przeznaczona do wykorzystania tutaj jest od razu przetapiana. 
 
 
 };
@@ -128,7 +128,7 @@ instance  Grd_260_Drake_Mine_Mehr (C_INFO) //E1
 	information		= Grd_260_Drake_Mine_Mehr_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Opowiedz mi o tym coœ wiêcej!";
+	description		= "Opowiedz mi o tym coÅ› wiÄ™cej!";
 };
 
 FUNC int  Grd_260_Drake_Mine_Mehr_Condition()
@@ -140,9 +140,9 @@ FUNC int  Grd_260_Drake_Mine_Mehr_Condition()
 };
 func void  Grd_260_Drake_Mine_Mehr_Info	()
 {
-	AI_Output			(other,self,"Grd_260_Drake_Mine_Mehr_Info_15_01");//Opowiedz mi o tym coœ wiêcej!
-	AI_Output			(self,other,"Grd_260_Drake_Mine_Mehr_Info_11_02");//Jeœli chcesz wiedzieæ wiêcej, pogadaj z Wê¿em. On zajmuje siê wytopem.
-	AI_Output			(self,other,"Grd_260_Drake_Mine_Mehr_Info_11_03");//Albo zapytaj Iana. On tu rz¹dzi. Odpowiada za organizacjê pracy w ca³ej kopalni.
+	AI_Output			(other,self,"Grd_260_Drake_Mine_Mehr_Info_15_01");//Opowiedz mi o tym coÅ› wiÄ™cej!
+	AI_Output			(self,other,"Grd_260_Drake_Mine_Mehr_Info_11_02");//JeÅ›li chcesz wiedzieÄ‡ wiÄ™cej, pogadaj z WÄ™Å¼em. On zajmuje siÄ™ wytopem.
+	AI_Output			(self,other,"Grd_260_Drake_Mine_Mehr_Info_11_03");//Albo zapytaj Iana. On tu rzÄ…dzi. Odpowiada za organizacjÄ™ pracy w caÅ‚ej kopalni.
 	
 };
 
@@ -154,7 +154,7 @@ instance  Grd_260_Drake_Ian	(C_INFO) //E1
 	information		= Grd_260_Drake_Ian_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Gdzie mogê znaleŸæ Iana?";
+	description		= "Gdzie mogÄ™ znaleÅºÄ‡ Iana?";
 };
 
 FUNC int  Grd_260_Drake_Ian_Condition()
@@ -167,10 +167,10 @@ FUNC int  Grd_260_Drake_Ian_Condition()
 };
 FUNC void  Grd_260_Drake_Ian_Info()
 {
-	AI_Output			(other,self,"Grd_260_Drake_Ian_Info_15_01");//Gdzie mogê znaleŸæ Iana?
-	AI_Output			(self,other,"Grd_260_Drake_Ian_Info_11_02");//Poszukaj go na œrodku g³ównego szybu, obok sk³adowiska.
-	AI_Output			(self,other,"Grd_260_Drake_Ian_Info_11_03");//Ach, i jeszcze coœ: znasz Thorusa, prawda? Zapomnij o nim!
-	AI_Output			(self,other,"Grd_260_Drake_Ian_Info_11_04");//W kopalni rz¹dzi tylko jedna osoba i jest ni¹ Ian. To nasz szef.
+	AI_Output			(other,self,"Grd_260_Drake_Ian_Info_15_01");//Gdzie mogÄ™ znaleÅºÄ‡ Iana?
+	AI_Output			(self,other,"Grd_260_Drake_Ian_Info_11_02");//Poszukaj go na Å›rodku gÅ‚Ã³wnego szybu, obok skÅ‚adowiska.
+	AI_Output			(self,other,"Grd_260_Drake_Ian_Info_11_03");//Ach, i jeszcze coÅ›: znasz Thorusa, prawda? Zapomnij o nim!
+	AI_Output			(self,other,"Grd_260_Drake_Ian_Info_11_04");//W kopalni rzÄ…dzi tylko jedna osoba i jest niÄ… Ian. To nasz szef.
 	AI_Output			(self,other,"Grd_260_Drake_Ian_Info_11_05");//Jak podpadniesz jemu - podpadniesz nam wszystkim. Zrozumiano?
 };	 
 
@@ -197,10 +197,10 @@ FUNC int  Grd_260_Drake_GARDEAUFNAHME_Condition()
 };
 func void  Grd_260_Drake_GARDEAUFNAHME_Info()
 {
-	AI_Output (self, other,"Grd_260_Drake_GARDEAUFNAHME_Info_11_01"); //Hej, nieŸle sobie poradzi³eœ z tymi pe³zaczami! Zas³u¿y³eœ sobie na przyjêcie w poczet Stra¿ników.
-	AI_Output (self, other,"Grd_260_Drake_GARDEAUFNAHME_Info_11_02"); //IdŸ do Starego Obozu i porozmawiaj z Thorusem!
+	AI_Output (self, other,"Grd_260_Drake_GARDEAUFNAHME_Info_11_01"); //Hej, nieÅºle sobie poradziÅ‚eÅ› z tymi peÅ‚zaczami! ZasÅ‚uÅ¼yÅ‚eÅ› sobie na przyjÄ™cie w poczet StraÅ¼nikÃ³w.
+	AI_Output (self, other,"Grd_260_Drake_GARDEAUFNAHME_Info_11_02"); //IdÅº do Starego Obozu i porozmawiaj z Thorusem!
 
 	Log_CreateTopic (GE_BecomeGuard,LOG_NOTE);
-	B_LogEntry (GE_BecomeGuard,"Jak tylko dostarczê te jaja powinienem porozmawiaæ z Thorusem. Mo¿e pozwoli mi do³¹czyæ do Stra¿y.");
+	B_LogEntry (GE_BecomeGuard,"Jak tylko dostarczÄ™ te jaja powinienem porozmawiaÄ‡ z Thorusem. MoÅ¼e pozwoli mi doÅ‚Ä…czyÄ‡ do StraÅ¼y.");
 };
 

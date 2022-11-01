@@ -19,7 +19,7 @@ FUNC int  VLK_586_Grimes_Exit_Condition()
 FUNC VOID  VLK_586_Grimes_Exit_Info()
 {
 	AI_Output (other, self,"VLK_586_Grimes_Exit_Info_15_01"); //Powodzenia!
-	AI_Output (self, other,"VLK_586_Grimes_Exit_Info_04_02"); //Nawzajem, ch³opcze. Nawzajem.
+	AI_Output (self, other,"VLK_586_Grimes_Exit_Info_04_02"); //Nawzajem, chÅ‚opcze. Nawzajem.
 	
 	AI_StopProcessInfos	( self );
 };
@@ -36,7 +36,7 @@ instance  VLK_586_Grimes_STORY (C_INFO)
 	information		= VLK_586_Grimes_STORY_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Od dawna tu jesteœ?"; 
+	description		= "Od dawna tu jesteÅ›?"; 
 };
 
 FUNC int  VLK_586_Grimes_STORY_Condition()
@@ -51,10 +51,10 @@ FUNC int  VLK_586_Grimes_STORY_Condition()
 
 FUNC void  VLK_586_Grimes_STORY_Info()
 {
-	AI_Output (other, self,"VLK_586_Grimes_STORY_Info_15_01"); //Od dawna tu jesteœ?
-	AI_Output (self, other,"VLK_586_Grimes_STORY_Info_04_02"); //Od ca³ych 10 lat. Uwierz mi, du¿o ju¿ tu widzia³em.
-	AI_Output (self, other,"VLK_586_Grimes_STORY_Info_04_03"); //Stawi³em czo³a wielu niebezpieczeñstwom, ale jakoœ uda³o mi siê z nich wybrn¹æ.
-	AI_Output (self, other,"VLK_586_Grimes_STORY_Info_04_04"); //Pamiêtam jak pracowaliœmy jeszcze w pierwszej kopalni, tej, która teraz stoi pusta. Pewnego dnia nie wytrzyma³y podpory...
+	AI_Output (other, self,"VLK_586_Grimes_STORY_Info_15_01"); //Od dawna tu jesteÅ›?
+	AI_Output (self, other,"VLK_586_Grimes_STORY_Info_04_02"); //Od caÅ‚ych 10 lat. Uwierz mi, duÅ¼o juÅ¼ tu widziaÅ‚em.
+	AI_Output (self, other,"VLK_586_Grimes_STORY_Info_04_03"); //StawiÅ‚em czoÅ‚a wielu niebezpieczeÅ„stwom, ale jakoÅ› udaÅ‚o mi siÄ™ z nich wybrnÄ…Ä‡.
+	AI_Output (self, other,"VLK_586_Grimes_STORY_Info_04_04"); //PamiÄ™tam jak pracowaliÅ›my jeszcze w pierwszej kopalni, tej, ktÃ³ra teraz stoi pusta. Pewnego dnia nie wytrzymaÅ‚y podpory...
 	AI_Output (self, other,"VLK_586_Grimes_STORY_Info_04_05"); //Ale to stare dzieje...
 };
 
@@ -65,7 +65,7 @@ instance  VLK_586_Grimes_KNOW (C_INFO)
 	information		= VLK_586_Grimes_KNOW_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Zapewne s³ysza³eœ te¿ o wielu planach ucieczki."; 
+	description		= "Zapewne sÅ‚yszaÅ‚eÅ› teÅ¼ o wielu planach ucieczki."; 
 };
 
 FUNC int  VLK_586_Grimes_KNOW_Condition()
@@ -78,13 +78,13 @@ FUNC int  VLK_586_Grimes_KNOW_Condition()
 };
 FUNC void  VLK_586_Grimes_KNOW_Info()
 {
-	AI_Output (other, self,"VLK_586_Grimes_KNOW_Info_15_01"); //Zapewne s³ysza³eœ te¿ o wielu planach ucieczki.
-	AI_Output (self, other,"VLK_586_Grimes_KNOW_Info_04_02"); //Pos³uchaj, ch³opcze. Wiem, ¿e chcia³byœ siê st¹d wydostaæ, ale zapomnij o tym.
-	AI_Output (self, other,"VLK_586_Grimes_KNOW_Info_04_03"); //St¹d nie ma ucieczki! Widzia³em twarze tych, którzy próbowali sforsowaæ Barierê.
-	AI_Output (self, other,"VLK_586_Grimes_KNOW_Info_04_04"); //Nie pope³niaj tego samego b³êdu. Bariera powstrzyma ka¿dego.
-	AI_Output (other, self,"VLK_586_Grimes_KNOW_Info_15_05"); //Nie chcê spêdziæ nastêpnych 10 lat mojego ¿ycia wydobywaj¹c rudê!
-	AI_Output (self, other,"VLK_586_Grimes_KNOW_Info_04_06"); //Wcale nie musisz. Mo¿e zostaniesz wielk¹ szych¹, kto wie?
-	AI_Output (self, other,"VLK_586_Grimes_KNOW_Info_04_07"); //Mo¿esz pi¹æ siê do góry, ale niewa¿ne jak wysokie stanowisko uda ci siê osi¹gn¹æ - Bariera wreszcie ciê zatrzyma.
+	AI_Output (other, self,"VLK_586_Grimes_KNOW_Info_15_01"); //Zapewne sÅ‚yszaÅ‚eÅ› teÅ¼ o wielu planach ucieczki.
+	AI_Output (self, other,"VLK_586_Grimes_KNOW_Info_04_02"); //PosÅ‚uchaj, chÅ‚opcze. Wiem, Å¼e chciaÅ‚byÅ› siÄ™ stÄ…d wydostaÄ‡, ale zapomnij o tym.
+	AI_Output (self, other,"VLK_586_Grimes_KNOW_Info_04_03"); //StÄ…d nie ma ucieczki! WidziaÅ‚em twarze tych, ktÃ³rzy prÃ³bowali sforsowaÄ‡ BarierÄ™.
+	AI_Output (self, other,"VLK_586_Grimes_KNOW_Info_04_04"); //Nie popeÅ‚niaj tego samego bÅ‚Ä™du. Bariera powstrzyma kaÅ¼dego.
+	AI_Output (other, self,"VLK_586_Grimes_KNOW_Info_15_05"); //Nie chcÄ™ spÄ™dziÄ‡ nastÄ™pnych 10 lat mojego Å¼ycia wydobywajÄ…c rudÄ™!
+	AI_Output (self, other,"VLK_586_Grimes_KNOW_Info_04_06"); //Wcale nie musisz. MoÅ¼e zostaniesz wielkÄ… szychÄ…, kto wie?
+	AI_Output (self, other,"VLK_586_Grimes_KNOW_Info_04_07"); //MoÅ¼esz piÄ…Ä‡ siÄ™ do gÃ³ry, ale niewaÅ¼ne jak wysokie stanowisko uda ci siÄ™ osiÄ…gnÄ…Ä‡ - Bariera wreszcie ciÄ™ zatrzyma.
 };
 
 instance VLK_586_Grimes_FIRST (C_INFO)
@@ -103,5 +103,5 @@ FUNC int  VLK_586_Grimes_FIRST_Condition()
 
 func void  VLK_586_Grimes_FIRST_Info()
 {
-	AI_Output (self, other,"VLK_586_Grimes_FIRST_Info_04_02"); //Oho! Nowa twarz! Pracowa³eœ kiedyœ jako górnik, ch³opcze?
+	AI_Output (self, other,"VLK_586_Grimes_FIRST_Info_04_02"); //Oho! Nowa twarz! PracowaÅ‚eÅ› kiedyÅ› jako gÃ³rnik, chÅ‚opcze?
 };  

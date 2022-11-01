@@ -2,7 +2,7 @@ instance BAU_900_Ricelord (Npc_Default)
 {
 	//-------- primary data --------
 	
-	name 		=	"Ry¿owy Ksi¹¿e";
+	name 		=	"RyÅ¼owy KsiÄ…Å¼e";
 	npctype 	=	NPCTYPE_GUARD;	
 	guild 		=	GIL_BAU;      
 	level 		=	10;

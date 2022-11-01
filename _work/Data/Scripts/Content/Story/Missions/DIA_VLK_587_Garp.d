@@ -41,9 +41,9 @@ FUNC int  Vlk_587_Garp_ORK_Condition()
 FUNC void  Vlk_587_Garp_ORK_Info()
 {
 	AI_Output (other, self,"Vlk_587_Garp_ORK_Info_15_01"); //To tu robi ten Ork?
-	AI_Output (self, other,"Vlk_587_Garp_ORK_Info_01_02"); //Z³apali go nasi stra¿nicy. Od tej pory pracuje dla nas.
-	AI_Output (other, self,"Vlk_587_Garp_ORK_Info_15_03"); //Przecie¿ nie jest nawet skuty ³añcuchami. Czemu po prostu nie ucieknie?
-	AI_Output (self, other,"Vlk_587_Garp_ORK_Info_01_04"); //Raz spróbowa³. Stra¿nicy tak go urz¹dzili, ¿e nie móg³ siê ruszyæ przez parê tygodni. Od tej pory nigdy wiêcej siê nie buntowa³.
+	AI_Output (self, other,"Vlk_587_Garp_ORK_Info_01_02"); //ZÅ‚apali go nasi straÅ¼nicy. Od tej pory pracuje dla nas.
+	AI_Output (other, self,"Vlk_587_Garp_ORK_Info_15_03"); //PrzecieÅ¼ nie jest nawet skuty Å‚aÅ„cuchami. Czemu po prostu nie ucieknie?
+	AI_Output (self, other,"Vlk_587_Garp_ORK_Info_01_04"); //Raz sprÃ³bowaÅ‚. StraÅ¼nicy tak go urzÄ…dzili, Å¼e nie mÃ³gÅ‚ siÄ™ ruszyÄ‡ przez parÄ™ tygodni. Od tej pory nigdy wiÄ™cej siÄ™ nie buntowaÅ‚.
 };  
 
 

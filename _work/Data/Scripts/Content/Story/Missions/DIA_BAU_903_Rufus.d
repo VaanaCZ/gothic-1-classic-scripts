@@ -33,7 +33,7 @@ INSTANCE Info_Rufus_Wasser(C_INFO) // E1
 	condition	= Info_Rufus_Wasser_Condition;
 	information	= Info_Rufus_Wasser_Info;
 	permanent	= 1;
-	description = "Przysy≥a mnie Lewus. PrzynoszÍ ci wodÍ.";
+	description = "Przysy≈Ça mnie Lewus. Przynoszƒô ci wodƒô.";
 };                       
 
 FUNC INT Info_Rufus_Wasser_Condition()
@@ -47,10 +47,10 @@ FUNC INT Info_Rufus_Wasser_Condition()
 
 FUNC VOID Info_Rufus_Wasser_Info()
 {
-	AI_Output(other,self,"Info_Rufus_Wasser_15_00"); //Przysy≥a mnie Lewus. PrzynoszÍ ci wodÍ.
+	AI_Output(other,self,"Info_Rufus_Wasser_15_00"); //Przysy≈Ça mnie Lewus. Przynoszƒô ci wodƒô.
 	if (Npc_HasItems(other, ItFo_Potion_Water_01)>=1)
 	{
-		AI_Output(self,other,"Info_Rufus_Wasser_02_01"); //DziÍki, stary. W gÍbie mi juø zasch≥o.
+		AI_Output(self,other,"Info_Rufus_Wasser_02_01"); //Dziƒôki, stary. W gƒôbie mi ju≈º zasch≈Ço.
 		B_GiveInvItems(other,self,ItFo_Potion_Water_01,1);
 		if ( C_BodystateContains(self, BS_SIT) )
 		{
@@ -67,7 +67,7 @@ FUNC VOID Info_Rufus_Wasser_Info()
 	}
 	else
 	{
-		AI_Output(self,other,"Info_Rufus_Wasser_NOWATER_02_00"); //Woda?! Hej, kolego! Nic ci juø nie zosta≥o. Tylko mi nie mÛw, øe znowu wszyscy zdπøyli siÍ napiÊ oprÛcz mnie!
+		AI_Output(self,other,"Info_Rufus_Wasser_NOWATER_02_00"); //Woda?! Hej, kolego! Nic ci ju≈º nie zosta≈Ço. Tylko mi nie m√≥w, ≈ºe znowu wszyscy zdƒÖ≈ºyli siƒô napiƒá opr√≥cz mnie!
 	};
 };
 
@@ -82,7 +82,7 @@ INSTANCE DIA_Rufus_Hello (C_INFO)
 	condition	= DIA_Rufus_Hello_Condition;
 	information	= DIA_Rufus_Hello_Info;
 	permanent	= 0;
-	description	= "CzeúÊ! Jestem tu nowy. Chcia≥bym siÍ dowiedzieÊ, co siÍ tu dzieje.";
+	description	= "Cze≈õƒá! Jestem tu nowy. Chcia≈Çbym siƒô dowiedzieƒá, co siƒô tu dzieje.";
 };                       
 
 FUNC INT DIA_Rufus_Hello_Condition()
@@ -92,9 +92,9 @@ FUNC INT DIA_Rufus_Hello_Condition()
 
 FUNC VOID DIA_Rufus_Hello_Info()
 {	
-	AI_Output (other, self,"DIA_Rufus_Hello_15_00"); //CzeúÊ! Jestem tu nowy. Chcia≥bym siÍ dowiedzieÊ, co siÍ tu dzieje.
-	AI_Output (self, other,"DIA_Rufus_Hello_02_01"); //Zapytaj kogoú innego, dobra? Ja tu tylko uprawiam ryø. Na innych rzeczach siÍ nie znam.
-	AI_Output (self, other,"DIA_Rufus_Hello_02_02"); //NajchÍtniej powiedzia≥bym Ryøowemu KsiÍciuniowi, øeby sam odwala≥ swojπ brudnπ robotÍ!
+	AI_Output (other, self,"DIA_Rufus_Hello_15_00"); //Cze≈õƒá! Jestem tu nowy. Chcia≈Çbym siƒô dowiedzieƒá, co siƒô tu dzieje.
+	AI_Output (self, other,"DIA_Rufus_Hello_02_01"); //Zapytaj kogo≈õ innego, dobra? Ja tu tylko uprawiam ry≈º. Na innych rzeczach siƒô nie znam.
+	AI_Output (self, other,"DIA_Rufus_Hello_02_02"); //Najchƒôtniej powiedzia≈Çbym Ry≈ºowemu Ksiƒôciuniowi, ≈ºeby sam odwala≈Ç swojƒÖ brudnƒÖ robotƒô!
 };
 
 // ************************************************************
@@ -122,14 +122,14 @@ FUNC INT DIA_Rufus_Why_Condition()
 FUNC VOID DIA_Rufus_Why_Info()
 {	
 	AI_Output (other, self,"DIA_Rufus_Why_15_00"); //Skoro tak ci to nie odpowiada, dlaczego tu pracujesz?
-	AI_Output (self, other,"DIA_Rufus_Why_02_01"); //To siÍ zdarzy≥o pierwszego dnia po moim przybyciu. Lewus, jeden z oprychÛw pracujπcych dla Ryøowego KsiÍcia, podszed≥ do mnie i spyta≥ czy nie mÛg≥bym im pomÛc na polu.
-	AI_Output (self, other,"DIA_Rufus_Why_02_02"); //Powiedzia≥em "jasne". W koÒcu by≥em tu nowy i zaleøa≥o mi na znalezieniu sobie przyjaciÛ≥.
-	AI_Output (self, other,"DIA_Rufus_Why_02_03"); //NastÍpnego dnia, kiedy ucina≥em sobie drzemkÍ, facet znowu siÍ zjawi≥.
-	AI_Output (self, other,"DIA_Rufus_Why_02_04"); //Powiedzia≥: "Chyba nie chcesz, øeby twoi koledzy odwalali za ciebie ca≥π robotÍ, co?".
-	AI_Output (self, other,"DIA_Rufus_Why_02_05"); //Powiedzia≥em mu, øe jestem wyczerpany wczorajszπ pracπ, i øe potrzebujÍ odpoczynku. Ale on mia≥ to gdzieú.
-	AI_Output (self, other,"DIA_Rufus_Why_02_06"); //Z≥apa≥ mnie za ko≥nierz i ZACI•GN•£ z powrotem na pole.
-	AI_Output (self, other,"DIA_Rufus_Why_02_07"); //Od tamtej pory codziennie czeka≥ na mnie na progu mojej chaty - dopÛki nie nauczy≥em siÍ sam wychodziÊ w pole. Nie chcia≥em, øeby mnie poturbowali.
-	AI_Output (self, other,"DIA_Rufus_Why_02_08"); //To banda mordercÛw. Lepiej trzymaj siÍ od nich z daleka.
+	AI_Output (self, other,"DIA_Rufus_Why_02_01"); //To siƒô zdarzy≈Ço pierwszego dnia po moim przybyciu. Lewus, jeden z oprych√≥w pracujƒÖcych dla Ry≈ºowego Ksiƒôcia, podszed≈Ç do mnie i spyta≈Ç czy nie m√≥g≈Çbym im pom√≥c na polu.
+	AI_Output (self, other,"DIA_Rufus_Why_02_02"); //Powiedzia≈Çem "jasne". W ko≈Ñcu by≈Çem tu nowy i zale≈ºa≈Ço mi na znalezieniu sobie przyjaci√≥≈Ç.
+	AI_Output (self, other,"DIA_Rufus_Why_02_03"); //Nastƒôpnego dnia, kiedy ucina≈Çem sobie drzemkƒô, facet znowu siƒô zjawi≈Ç.
+	AI_Output (self, other,"DIA_Rufus_Why_02_04"); //Powiedzia≈Ç: "Chyba nie chcesz, ≈ºeby twoi koledzy odwalali za ciebie ca≈ÇƒÖ robotƒô, co?".
+	AI_Output (self, other,"DIA_Rufus_Why_02_05"); //Powiedzia≈Çem mu, ≈ºe jestem wyczerpany wczorajszƒÖ pracƒÖ, i ≈ºe potrzebujƒô odpoczynku. Ale on mia≈Ç to gdzie≈õ.
+	AI_Output (self, other,"DIA_Rufus_Why_02_06"); //Z≈Çapa≈Ç mnie za ko≈Çnierz i ZACIƒÑGNƒÑ≈Å z powrotem na pole.
+	AI_Output (self, other,"DIA_Rufus_Why_02_07"); //Od tamtej pory codziennie czeka≈Ç na mnie na progu mojej chaty - dop√≥ki nie nauczy≈Çem siƒô sam wychodziƒá w pole. Nie chcia≈Çem, ≈ºeby mnie poturbowali.
+	AI_Output (self, other,"DIA_Rufus_Why_02_08"); //To banda morderc√≥w. Lepiej trzymaj siƒô od nich z daleka.
 	var C_NPC Ricelord;			Ricelord	= Hlp_GetNpc(Bau_900_Ricelord);
 	Ricelord.aivar[AIV_FINDABLE] = TRUE;	
 };
@@ -145,7 +145,7 @@ INSTANCE DIA_Rufus_Ricelord (C_INFO)
 	condition	= DIA_Rufus_Ricelord_Condition;
 	information	= DIA_Rufus_Ricelord_Info;
 	permanent	= 1;
-	description	= "Kim jest Ryøowy Ksiπøe?";
+	description	= "Kim jest Ry≈ºowy KsiƒÖ≈ºe?";
 };                       
 
 FUNC INT DIA_Rufus_Ricelord_Condition()
@@ -158,9 +158,9 @@ FUNC INT DIA_Rufus_Ricelord_Condition()
 
 FUNC VOID DIA_Rufus_Ricelord_Info()
 {	
-	AI_Output (other, self,"DIA_Rufus_Ricelord_15_00"); //Kim jest Ryøowy Ksiπøe?
-	AI_Output (self, other,"DIA_Rufus_Ricelord_02_01"); //By≥ jednym z pierwszych ludzi, ktÛrzy tutaj trafili. Pomaga≥ w zak≥adaniu Obozu i rozpoczπ≥ uprawÍ ryøu.
-	AI_Output (self, other,"DIA_Rufus_Ricelord_02_02"); //Dziú jedyne, co robi, to obnosi swoje brzuszysko po magazynie. T≥usty wieprz!
+	AI_Output (other, self,"DIA_Rufus_Ricelord_15_00"); //Kim jest Ry≈ºowy KsiƒÖ≈ºe?
+	AI_Output (self, other,"DIA_Rufus_Ricelord_02_01"); //By≈Ç jednym z pierwszych ludzi, kt√≥rzy tutaj trafili. Pomaga≈Ç w zak≈Çadaniu Obozu i rozpoczƒÖ≈Ç uprawƒô ry≈ºu.
+	AI_Output (self, other,"DIA_Rufus_Ricelord_02_02"); //Dzi≈õ jedyne, co robi, to obnosi swoje brzuszysko po magazynie. T≈Çusty wieprz!
 	var C_NPC Ricelord;			Ricelord	= Hlp_GetNpc(Bau_900_Ricelord);
 	Ricelord.aivar[AIV_FINDABLE] = TRUE;	
 };

@@ -37,7 +37,7 @@ INSTANCE Info_Mine_Org_6_Mine (C_INFO) // E1
 	condition	= Info_Mine_Org_6_Mine_Condition;
 	information	= Info_Mine_Org_6_Mine_Info;
 	permanent	= 1;
-	description = "Co siê dzieje w kopalni?";
+	description = "Co siÄ™ dzieje w kopalni?";
 };                       
 
 FUNC INT Info_Mine_Org_6_Mine_Condition()
@@ -47,9 +47,9 @@ FUNC INT Info_Mine_Org_6_Mine_Condition()
 
 FUNC VOID Info_Mine_Org_6_Mine_Info()
 {
-	AI_Output(other,self,"Info_Mine_Org_6_Mine_15_00"); //Co siê dzieje w kopalni?
-	AI_Output(self,other,"Info_Mine_Org_6_Mine_06_01"); //W kopalni? Kto tam siedzi - ju¿ nie wyjdzie. Kto nie siedzi - nie wejdzie.
-	AI_Output(self,other,"Info_Mine_Org_6_Mine_06_02"); //Ciesz siê, ¿e ciê tam nie ma.
+	AI_Output(other,self,"Info_Mine_Org_6_Mine_15_00"); //Co siÄ™ dzieje w kopalni?
+	AI_Output(self,other,"Info_Mine_Org_6_Mine_06_01"); //W kopalni? Kto tam siedzi - juÅ¼ nie wyjdzie. Kto nie siedzi - nie wejdzie.
+	AI_Output(self,other,"Info_Mine_Org_6_Mine_06_02"); //Ciesz siÄ™, Å¼e ciÄ™ tam nie ma.
 	
 };
 
@@ -74,9 +74,9 @@ FUNC INT Info_Mine_Org_6_WichtigePersonen_Condition()
 FUNC VOID Info_Mine_Org_6_WichtigePersonen_Info()
 {
 	AI_Output(other,self,"Info_Mine_Org_6_WichtigePersonen_15_00"); //Kto tu dowodzi?
-	AI_Output(self,other,"Info_Mine_Org_6_WichtigePersonen_06_01"); //Mi nikt nie rozkazuje, ale trzeba wiedzieæ, jak do tego dojœæ.
-	AI_Output(other,self,"Info_Mine_Org_6_WichtigePersonen_15_01"); //A ja ty to osi¹gn¹³eœ?
-	AI_Output(self,other,"Info_Mine_Org_6_WichtigePersonen_06_02"); //Tajemnica zawodowa. Ale miêdzy nami mówi¹c - dla Szkodnika to ¿aden problem.
+	AI_Output(self,other,"Info_Mine_Org_6_WichtigePersonen_06_01"); //Mi nikt nie rozkazuje, ale trzeba wiedzieÄ‡, jak do tego dojÅ›Ä‡.
+	AI_Output(other,self,"Info_Mine_Org_6_WichtigePersonen_15_01"); //A ja ty to osiÄ…gnÄ…Å‚eÅ›?
+	AI_Output(self,other,"Info_Mine_Org_6_WichtigePersonen_06_02"); //Tajemnica zawodowa. Ale miÄ™dzy nami mÃ³wiÄ…c - dla Szkodnika to Å¼aden problem.
 };
 
 
@@ -90,7 +90,7 @@ INSTANCE Info_Mine_Org_6_DieLage(C_INFO) // E1
 	condition	= Info_Mine_Org_6_DieLage_Condition;
 	information	= Info_Mine_Org_6_DieLage_Info;
 	permanent	= 1;
-	description = "Nie wygl¹dasz mi na kogoœ, kto by siê przepracowywa³.";
+	description = "Nie wyglÄ…dasz mi na kogoÅ›, kto by siÄ™ przepracowywaÅ‚.";
 };                       
 
 FUNC INT Info_Mine_Org_6_DieLage_Condition()
@@ -100,8 +100,8 @@ FUNC INT Info_Mine_Org_6_DieLage_Condition()
 
 FUNC VOID Info_Mine_Org_6_DieLage_Info()
 {
-	AI_Output(other,self,"Info_Mine_Org_6_DieLage_15_00"); //Nie wygl¹dasz mi na kogoœ, kto by siê przepracowywa³.
- 	AI_Output(self,other,"Info_Mine_Org_6_DieLage_06_01"); //Ja, pracowaæ? Jakby mi siê chcia³o pracowaæ, nie trafi³bym pod Barierê, kapujesz?
+	AI_Output(other,self,"Info_Mine_Org_6_DieLage_15_00"); //Nie wyglÄ…dasz mi na kogoÅ›, kto by siÄ™ przepracowywaÅ‚.
+ 	AI_Output(self,other,"Info_Mine_Org_6_DieLage_06_01"); //Ja, pracowaÄ‡? Jakby mi siÄ™ chciaÅ‚o pracowaÄ‡, nie trafiÅ‚bym pod BarierÄ™, kapujesz?
 };
 	
 // *************************************************************************
