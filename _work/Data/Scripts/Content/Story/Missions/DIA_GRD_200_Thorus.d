@@ -33,7 +33,7 @@ INSTANCE Info_Thorus_EnterCastle(C_INFO) //E2
 	condition	= Info_Thorus_EnterCastle_Condition;
 	information	= Info_Thorus_EnterCastle_Info;
 	permanent	= 0;
-	description = "Кажется, ты не пропускаешь в замок посторонних...";
+	description = "РљР°Р¶РµС‚СЃСЏ, С‚С‹ РЅРµ РїСЂРѕРїСѓСЃРєР°РµС€СЊ РІ Р·Р°РјРѕРє РїРѕСЃС‚РѕСЂРѕРЅРЅРёС…...";
 };                       
 
 FUNC INT Info_Thorus_EnterCastle_Condition()
@@ -46,12 +46,12 @@ FUNC INT Info_Thorus_EnterCastle_Condition()
 };
 FUNC VOID Info_Thorus_EnterCastle_Info()
 {	
-	AI_Output (other, self,"Info_EnterCastle_15_00"); //Кажется, ты не пропускаешь в замок посторонних...
-	AI_Output (self, other,"Info_EnterCastle_09_01"); //Только люди Гомеза могут заходить в замок.
+	AI_Output (other, self,"Info_EnterCastle_15_00"); //РљР°Р¶РµС‚СЃСЏ, С‚С‹ РЅРµ РїСЂРѕРїСѓСЃРєР°РµС€СЊ РІ Р·Р°РјРѕРє РїРѕСЃС‚РѕСЂРѕРЅРЅРёС…...
+	AI_Output (self, other,"Info_EnterCastle_09_01"); //РўРѕР»СЊРєРѕ Р»СЋРґРё Р“РѕРјРµР·Р° РјРѕРіСѓС‚ Р·Р°С…РѕРґРёС‚СЊ РІ Р·Р°РјРѕРє.
 };
 
 // ************************************************************
-// 					Ich will fьr Gomez arbeiten
+// 					Ich will fСЊr Gomez arbeiten
 // ************************************************************
 
 INSTANCE Info_Thorus_WorkForGomez(C_INFO) //E2
@@ -61,7 +61,7 @@ INSTANCE Info_Thorus_WorkForGomez(C_INFO) //E2
 	condition	= Info_Thorus_WorkForGomez_Condition;
 	information	= Info_Thorus_WorkForGomez_Info;
 	permanent	= 0;
-	description = "Я хочу стать одним из людей Гомеза.";
+	description = "РЇ С…РѕС‡Сѓ СЃС‚Р°С‚СЊ РѕРґРЅРёРј РёР· Р»СЋРґРµР№ Р“РѕРјРµР·Р°.";
 };                       
 
 FUNC INT Info_Thorus_WorkForGomez_Condition()
@@ -75,8 +75,8 @@ FUNC INT Info_Thorus_WorkForGomez_Condition()
 
 FUNC VOID Info_Thorus_WorkForGomez_Info()
 {	
-	AI_Output (other, self,"Info_WorkForGomez_15_00"); //Я хочу стать одним из людей Гомеза.
-	AI_Output (self, other,"Info_WorkForGomez_09_01"); //Да, что ты говоришь? И почему это ты думаешь, что можешь быть полезен Гомезу.
+	AI_Output (other, self,"Info_WorkForGomez_15_00"); //РЇ С…РѕС‡Сѓ СЃС‚Р°С‚СЊ РѕРґРЅРёРј РёР· Р»СЋРґРµР№ Р“РѕРјРµР·Р°.
+	AI_Output (self, other,"Info_WorkForGomez_09_01"); //Р”Р°, С‡С‚Рѕ С‚С‹ РіРѕРІРѕСЂРёС€СЊ? Р РїРѕС‡РµРјСѓ СЌС‚Рѕ С‚С‹ РґСѓРјР°РµС€СЊ, С‡С‚Рѕ РјРѕР¶РµС€СЊ Р±С‹С‚СЊ РїРѕР»РµР·РµРЅ Р“РѕРјРµР·Сѓ.
 };
 
 // ************************************************************
@@ -90,7 +90,7 @@ INSTANCE Info_Thorus_DiegoSentMe(C_INFO) //E3
 	condition	= Info_Thorus_DiegoSentMe_Condition;
 	information	= Info_Thorus_DiegoSentMe_Info;
 	permanent	= 0;
-	description = "Диего, сказал, что это от тебя зависит.";
+	description = "Р”РёРµРіРѕ, СЃРєР°Р·Р°Р», С‡С‚Рѕ СЌС‚Рѕ РѕС‚ С‚РµР±СЏ Р·Р°РІРёСЃРёС‚.";
 };                       
 
 FUNC INT Info_Thorus_DiegoSentMe_Condition()
@@ -103,13 +103,13 @@ FUNC INT Info_Thorus_DiegoSentMe_Condition()
 
 FUNC VOID Info_Thorus_DiegoSentMe_Info()
 {	
-	AI_Output (other, self,"Info_Thorus_DiegoSentMe_15_00"); //Диего сказал, что это от тебя зависит.
-	AI_Output (self, other,"Info_Thorus_DiegoSentMe_09_01"); //Хм... Если Диего думает, что ты можешь быть полезен, почему он сам не занимается тобой?
-	AI_Output (self, other,"Info_Thorus_DiegoSentMe_09_02"); //Послушай, Диего должен проверить, испытать тебя. И если он решит, что ты подходишь, я пропущу тебя в замок, и ты сможешь встретиться с Гомезом.
-	AI_Output (self, other,"Info_Thorus_DiegoSentMe_09_03"); //А там уже все зависит только от тебя, ясно?
-	AI_Output (other, self,"Info_Thorus_DiegoSentMe_15_04"); //Я поговорю с Диего.
+	AI_Output (other, self,"Info_Thorus_DiegoSentMe_15_00"); //Р”РёРµРіРѕ СЃРєР°Р·Р°Р», С‡С‚Рѕ СЌС‚Рѕ РѕС‚ С‚РµР±СЏ Р·Р°РІРёСЃРёС‚.
+	AI_Output (self, other,"Info_Thorus_DiegoSentMe_09_01"); //РҐРј... Р•СЃР»Рё Р”РёРµРіРѕ РґСѓРјР°РµС‚, С‡С‚Рѕ С‚С‹ РјРѕР¶РµС€СЊ Р±С‹С‚СЊ РїРѕР»РµР·РµРЅ, РїРѕС‡РµРјСѓ РѕРЅ СЃР°Рј РЅРµ Р·Р°РЅРёРјР°РµС‚СЃСЏ С‚РѕР±РѕР№?
+	AI_Output (self, other,"Info_Thorus_DiegoSentMe_09_02"); //РџРѕСЃР»СѓС€Р°Р№, Р”РёРµРіРѕ РґРѕР»Р¶РµРЅ РїСЂРѕРІРµСЂРёС‚СЊ, РёСЃРїС‹С‚Р°С‚СЊ С‚РµР±СЏ. Р РµСЃР»Рё РѕРЅ СЂРµС€РёС‚, С‡С‚Рѕ С‚С‹ РїРѕРґС…РѕРґРёС€СЊ, СЏ РїСЂРѕРїСѓС‰Сѓ С‚РµР±СЏ РІ Р·Р°РјРѕРє, Рё С‚С‹ СЃРјРѕР¶РµС€СЊ РІСЃС‚СЂРµС‚РёС‚СЊСЃСЏ СЃ Р“РѕРјРµР·РѕРј.
+	AI_Output (self, other,"Info_Thorus_DiegoSentMe_09_03"); //Рђ С‚Р°Рј СѓР¶Рµ РІСЃРµ Р·Р°РІРёСЃРёС‚ С‚РѕР»СЊРєРѕ РѕС‚ С‚РµР±СЏ, СЏСЃРЅРѕ?
+	AI_Output (other, self,"Info_Thorus_DiegoSentMe_15_04"); //РЇ РїРѕРіРѕРІРѕСЂСЋ СЃ Р”РёРµРіРѕ.
 	
-	B_LogEntry(CH1_JoinOC,"Торус сказал мне, что я должен поговорить с Диего, если я хочу, чтобы меня приняли в Старый лагерь. Диего даст мне задание.");
+	B_LogEntry(CH1_JoinOC,"РўРѕСЂСѓСЃ СЃРєР°Р·Р°Р» РјРЅРµ, С‡С‚Рѕ СЏ РґРѕР»Р¶РµРЅ РїРѕРіРѕРІРѕСЂРёС‚СЊ СЃ Р”РёРµРіРѕ, РµСЃР»Рё СЏ С…РѕС‡Сѓ, С‡С‚РѕР±С‹ РјРµРЅСЏ РїСЂРёРЅСЏР»Рё РІ РЎС‚Р°СЂС‹Р№ Р»Р°РіРµСЂСЊ. Р”РёРµРіРѕ РґР°СЃС‚ РјРЅРµ Р·Р°РґР°РЅРёРµ.");
 };
 
 // ************************************************************
@@ -123,7 +123,7 @@ INSTANCE Info_Thorus_TryMe(C_INFO) //E3
 	condition	= Info_Thorus_TryMe_Condition;
 	information	= Info_Thorus_TryMe_Info;
 	permanent	= 0;
-	description = "А почему ты сам не можешь меня испытать?";
+	description = "Рђ РїРѕС‡РµРјСѓ С‚С‹ СЃР°Рј РЅРµ РјРѕР¶РµС€СЊ РјРµРЅСЏ РёСЃРїС‹С‚Р°С‚СЊ?";
 };                       
 
 FUNC INT Info_Thorus_TryMe_Condition()
@@ -136,10 +136,10 @@ FUNC INT Info_Thorus_TryMe_Condition()
 
 FUNC VOID Info_Thorus_TryMe_Info()
 {	
-	AI_Output (other, self,"Info_Thorus_TryMe_15_00"); //А почему ты сам не можешь меня испытать?
-	AI_Output (self, other,"Info_Thorus_TryMe_09_01"); //Малыш, не все так просто! У каждого новичка, который хочет чего-то здесь добиться, должен быть покровитель.
-	AI_Output (self, other,"Info_Thorus_TryMe_09_02"); //Покровитель из людей Гомеза. И он сам тебя испытает.
-	AI_Output (self, other,"Info_Thorus_TryMe_09_03"); //Ведь он будет в ответе за тебя и за все, что ты натворишь. Таков закон.
+	AI_Output (other, self,"Info_Thorus_TryMe_15_00"); //Рђ РїРѕС‡РµРјСѓ С‚С‹ СЃР°Рј РЅРµ РјРѕР¶РµС€СЊ РјРµРЅСЏ РёСЃРїС‹С‚Р°С‚СЊ?
+	AI_Output (self, other,"Info_Thorus_TryMe_09_01"); //РњР°Р»С‹С€, РЅРµ РІСЃРµ С‚Р°Рє РїСЂРѕСЃС‚Рѕ! РЈ РєР°Р¶РґРѕРіРѕ РЅРѕРІРёС‡РєР°, РєРѕС‚РѕСЂС‹Р№ С…РѕС‡РµС‚ С‡РµРіРѕ-С‚Рѕ Р·РґРµСЃСЊ РґРѕР±РёС‚СЊСЃСЏ, РґРѕР»Р¶РµРЅ Р±С‹С‚СЊ РїРѕРєСЂРѕРІРёС‚РµР»СЊ.
+	AI_Output (self, other,"Info_Thorus_TryMe_09_02"); //РџРѕРєСЂРѕРІРёС‚РµР»СЊ РёР· Р»СЋРґРµР№ Р“РѕРјРµР·Р°. Р РѕРЅ СЃР°Рј С‚РµР±СЏ РёСЃРїС‹С‚Р°РµС‚.
+	AI_Output (self, other,"Info_Thorus_TryMe_09_03"); //Р’РµРґСЊ РѕРЅ Р±СѓРґРµС‚ РІ РѕС‚РІРµС‚Рµ Р·Р° С‚РµР±СЏ Рё Р·Р° РІСЃРµ, С‡С‚Рѕ С‚С‹ РЅР°С‚РІРѕСЂРёС€СЊ. РўР°РєРѕРІ Р·Р°РєРѕРЅ.
 };
 
 // ************************************************************
@@ -153,7 +153,7 @@ INSTANCE Info_Thorus_TryMeAgain(C_INFO) //E4
 	condition	= Info_Thorus_TryMeAgain_Condition;
 	information	= Info_Thorus_TryMeAgain_Info;
 	permanent	= 0;
-	description = "И я ничем не могу тебе помочь?";
+	description = "Р СЏ РЅРёС‡РµРј РЅРµ РјРѕРіСѓ С‚РµР±Рµ РїРѕРјРѕС‡СЊ?";
 };                       
 
 FUNC INT Info_Thorus_TryMeAgain_Condition()
@@ -166,9 +166,9 @@ FUNC INT Info_Thorus_TryMeAgain_Condition()
 
 FUNC VOID Info_Thorus_TryMeAgain_Info()
 {	
-	AI_Output (other, self,"Info_Thorus_TryMeAgain_15_00"); //И я ничем не могу тебе помочь?
-	AI_Output (self, other,"Info_Thorus_TryMeAgain_09_01"); //Нет. Ты, так сказать, немного маловат, чтобы быть нам чем-то полезен.
-	AI_Output (self, other,"Info_Thorus_TryMeAgain_09_02"); //Лучше делай то, что твой покровитель тебе доверит.
+	AI_Output (other, self,"Info_Thorus_TryMeAgain_15_00"); //Р СЏ РЅРёС‡РµРј РЅРµ РјРѕРіСѓ С‚РµР±Рµ РїРѕРјРѕС‡СЊ?
+	AI_Output (self, other,"Info_Thorus_TryMeAgain_09_01"); //РќРµС‚. РўС‹, С‚Р°Рє СЃРєР°Р·Р°С‚СЊ, РЅРµРјРЅРѕРіРѕ РјР°Р»РѕРІР°С‚, С‡С‚РѕР±С‹ Р±С‹С‚СЊ РЅР°Рј С‡РµРј-С‚Рѕ РїРѕР»РµР·РµРЅ.
+	AI_Output (self, other,"Info_Thorus_TryMeAgain_09_02"); //Р›СѓС‡С€Рµ РґРµР»Р°Р№ С‚Рѕ, С‡С‚Рѕ С‚РІРѕР№ РїРѕРєСЂРѕРІРёС‚РµР»СЊ С‚РµР±Рµ РґРѕРІРµСЂРёС‚.
 };
 
 // ************************************************************
@@ -182,7 +182,7 @@ INSTANCE Info_Thorus_TryMeICanDoIt(C_INFO) //E5
 	condition	= Info_Thorus_TryMeICanDoIt_Condition;
 	information	= Info_Thorus_TryMeICanDoIt_Info;
 	permanent	= 0;
-	description = "Но я смогу делать и то, что скажешь мне ты.";
+	description = "РќРѕ СЏ СЃРјРѕРіСѓ РґРµР»Р°С‚СЊ Рё С‚Рѕ, С‡С‚Рѕ СЃРєР°Р¶РµС€СЊ РјРЅРµ С‚С‹.";
 };                       
 
 FUNC INT Info_Thorus_TryMeICanDoIt_Condition()
@@ -195,9 +195,9 @@ FUNC INT Info_Thorus_TryMeICanDoIt_Condition()
 
 FUNC VOID Info_Thorus_TryMeICanDoIt_Info()
 {	
-	AI_Output (other, self,"Info_Thorus_TryMeICanDoIt_15_00"); //Но я смогу делать и то, что скажешь мне ты.
-	AI_Output (self, other,"Info_Thorus_TryMeICanDoIt_09_01"); //Да ну? Вижу, не терпится стать героем, да? Вообще-то есть одно дело - как раз для того, кто не засветился с Гомезом.
-	AI_Output (self, other,"Info_Thorus_TryMeICanDoIt_09_02"); //Но смотри, провалишь дело - получишь море неприятностей.
+	AI_Output (other, self,"Info_Thorus_TryMeICanDoIt_15_00"); //РќРѕ СЏ СЃРјРѕРіСѓ РґРµР»Р°С‚СЊ Рё С‚Рѕ, С‡С‚Рѕ СЃРєР°Р¶РµС€СЊ РјРЅРµ С‚С‹.
+	AI_Output (self, other,"Info_Thorus_TryMeICanDoIt_09_01"); //Р”Р° РЅСѓ? Р’РёР¶Сѓ, РЅРµ С‚РµСЂРїРёС‚СЃСЏ СЃС‚Р°С‚СЊ РіРµСЂРѕРµРј, РґР°? Р’РѕРѕР±С‰Рµ-С‚Рѕ РµСЃС‚СЊ РѕРґРЅРѕ РґРµР»Рѕ - РєР°Рє СЂР°Р· РґР»СЏ С‚РѕРіРѕ, РєС‚Рѕ РЅРµ Р·Р°СЃРІРµС‚РёР»СЃСЏ СЃ Р“РѕРјРµР·РѕРј.
+	AI_Output (self, other,"Info_Thorus_TryMeICanDoIt_09_02"); //РќРѕ СЃРјРѕС‚СЂРё, РїСЂРѕРІР°Р»РёС€СЊ РґРµР»Рѕ - РїРѕР»СѓС‡РёС€СЊ РјРѕСЂРµ РЅРµРїСЂРёСЏС‚РЅРѕСЃС‚РµР№.
 };
 
 // **************************************************************************
@@ -215,7 +215,7 @@ INSTANCE Info_Thorus_MordragKo_Offer (C_INFO) //E6
 	condition	= Info_Thorus_MordragKo_Offer_Condition;
 	information	= Info_Thorus_MordragKo_Offer_Info;
 	permanent	= 0;
-	description = "Я выполню твое задание.";
+	description = "РЇ РІС‹РїРѕР»РЅСЋ С‚РІРѕРµ Р·Р°РґР°РЅРёРµ.";
 };                       
 
 FUNC INT Info_Thorus_MordragKo_Offer_Condition()
@@ -228,26 +228,26 @@ FUNC INT Info_Thorus_MordragKo_Offer_Condition()
 
 FUNC VOID Info_Thorus_MordragKo_Offer_Info()
 {
-	AI_Output (other, self,"Info_Thorus_MordragKo_Offer_15_00"); //Я выполню твое задание.
-	AI_Output (self, other,"Info_Thorus_MordragKo_Offer_09_01"); //Все, что я тебе скажу, должно остаться между нами, ни слова другому. Понял?
-	AI_Output (other, self,"Info_Thorus_MordragKo_Offer_15_02"); //Да.
-	AI_Output (self, other,"Info_Thorus_MordragKo_Offer_09_03"); //У нас здесь есть один проблемный парень из Нового лагеря - Мордраг. Он крадет у Баронов.
-	AI_Output (self, other,"Info_Thorus_MordragKo_Offer_09_04"); //Конечно, они почти все такие в Новом лагере. Но этот ворюга совсем обнаглел: крадет у нас и нам же продает!
-	AI_Output (self, other,"Info_Thorus_MordragKo_Offer_09_05"); //Он слишком много себе позволяет, потому что знает, что я ему ничего сделать не могу.
-	AI_Output (other, self,"Info_Thorus_MordragKo_Offer_15_06"); //Почему?
-	AI_Output (self, other,"Info_Thorus_MordragKo_Offer_09_07"); //Да потому что сами Маги его защищают.
+	AI_Output (other, self,"Info_Thorus_MordragKo_Offer_15_00"); //РЇ РІС‹РїРѕР»РЅСЋ С‚РІРѕРµ Р·Р°РґР°РЅРёРµ.
+	AI_Output (self, other,"Info_Thorus_MordragKo_Offer_09_01"); //Р’СЃРµ, С‡С‚Рѕ СЏ С‚РµР±Рµ СЃРєР°Р¶Сѓ, РґРѕР»Р¶РЅРѕ РѕСЃС‚Р°С‚СЊСЃСЏ РјРµР¶РґСѓ РЅР°РјРё, РЅРё СЃР»РѕРІР° РґСЂСѓРіРѕРјСѓ. РџРѕРЅСЏР»?
+	AI_Output (other, self,"Info_Thorus_MordragKo_Offer_15_02"); //Р”Р°.
+	AI_Output (self, other,"Info_Thorus_MordragKo_Offer_09_03"); //РЈ РЅР°СЃ Р·РґРµСЃСЊ РµСЃС‚СЊ РѕРґРёРЅ РїСЂРѕР±Р»РµРјРЅС‹Р№ РїР°СЂРµРЅСЊ РёР· РќРѕРІРѕРіРѕ Р»Р°РіРµСЂСЏ - РњРѕСЂРґСЂР°Рі. РћРЅ РєСЂР°РґРµС‚ Сѓ Р‘Р°СЂРѕРЅРѕРІ.
+	AI_Output (self, other,"Info_Thorus_MordragKo_Offer_09_04"); //РљРѕРЅРµС‡РЅРѕ, РѕРЅРё РїРѕС‡С‚Рё РІСЃРµ С‚Р°РєРёРµ РІ РќРѕРІРѕРј Р»Р°РіРµСЂРµ. РќРѕ СЌС‚РѕС‚ РІРѕСЂСЋРіР° СЃРѕРІСЃРµРј РѕР±РЅР°РіР»РµР»: РєСЂР°РґРµС‚ Сѓ РЅР°СЃ Рё РЅР°Рј Р¶Рµ РїСЂРѕРґР°РµС‚!
+	AI_Output (self, other,"Info_Thorus_MordragKo_Offer_09_05"); //РћРЅ СЃР»РёС€РєРѕРј РјРЅРѕРіРѕ СЃРµР±Рµ РїРѕР·РІРѕР»СЏРµС‚, РїРѕС‚РѕРјСѓ С‡С‚Рѕ Р·РЅР°РµС‚, С‡С‚Рѕ СЏ РµРјСѓ РЅРёС‡РµРіРѕ СЃРґРµР»Р°С‚СЊ РЅРµ РјРѕРіСѓ.
+	AI_Output (other, self,"Info_Thorus_MordragKo_Offer_15_06"); //РџРѕС‡РµРјСѓ?
+	AI_Output (self, other,"Info_Thorus_MordragKo_Offer_09_07"); //Р”Р° РїРѕС‚РѕРјСѓ С‡С‚Рѕ СЃР°РјРё РњР°РіРё РµРіРѕ Р·Р°С‰РёС‰Р°СЋС‚.
 
 	Info_ClearChoices(Info_Thorus_MordragKo_Offer);
-	Info_AddChoice   (Info_Thorus_MordragKo_Offer, "Я займусь им." 							,Info_Thorus_MordragKo_OFFER_BACK);
-	Info_AddChoice	 (Info_Thorus_MordragKo_Offer, "Хочешь, чтобы я убил его?" 						,Info_Thorus_MordragKo_KillHim);
-	Info_AddChoice	 (Info_Thorus_MordragKo_Offer, "Где я могу найти Мордрага?" 								,Info_Thorus_MordragKo_Where);
-	Info_AddChoice	 (Info_Thorus_MordragKo_Offer, "А почему маги защищают Мордрага?"		,Info_Thorus_MordragKo_MagesProtect);
-	Info_AddChoice	 (Info_Thorus_MordragKo_Offer, "Кажется, что маги тоже доставляют тебе хлопот..."	,Info_Thorus_MordragKo_MageProblem);
+	Info_AddChoice   (Info_Thorus_MordragKo_Offer, "РЇ Р·Р°Р№РјСѓСЃСЊ РёРј." 							,Info_Thorus_MordragKo_OFFER_BACK);
+	Info_AddChoice	 (Info_Thorus_MordragKo_Offer, "РҐРѕС‡РµС€СЊ, С‡С‚РѕР±С‹ СЏ СѓР±РёР» РµРіРѕ?" 						,Info_Thorus_MordragKo_KillHim);
+	Info_AddChoice	 (Info_Thorus_MordragKo_Offer, "Р“РґРµ СЏ РјРѕРіСѓ РЅР°Р№С‚Рё РњРѕСЂРґСЂР°РіР°?" 								,Info_Thorus_MordragKo_Where);
+	Info_AddChoice	 (Info_Thorus_MordragKo_Offer, "Рђ РїРѕС‡РµРјСѓ РјР°РіРё Р·Р°С‰РёС‰Р°СЋС‚ РњРѕСЂРґСЂР°РіР°?"		,Info_Thorus_MordragKo_MagesProtect);
+	Info_AddChoice	 (Info_Thorus_MordragKo_Offer, "РљР°Р¶РµС‚СЃСЏ, С‡С‚Рѕ РјР°РіРё С‚РѕР¶Рµ РґРѕСЃС‚Р°РІР»СЏСЋС‚ С‚РµР±Рµ С…Р»РѕРїРѕС‚..."	,Info_Thorus_MordragKo_MageProblem);
 	
 	Thorus_MordragKo = LOG_RUNNING;
 	
 	Log_CreateTopic		(CH1_MordragKO, LOG_MISSION);
-	B_LogEntry			(CH1_MordragKO,"Торус хочет, чтобы я выгнал из лагеря вора Мордрага. Ему неважно, как я смогу это сделать. Никто не должен знать, что Торус поручил мне это дело.");
+	B_LogEntry			(CH1_MordragKO,"РўРѕСЂСѓСЃ С…РѕС‡РµС‚, С‡С‚РѕР±С‹ СЏ РІС‹РіРЅР°Р» РёР· Р»Р°РіРµСЂСЏ РІРѕСЂР° РњРѕСЂРґСЂР°РіР°. Р•РјСѓ РЅРµРІР°Р¶РЅРѕ, РєР°Рє СЏ СЃРјРѕРіСѓ СЌС‚Рѕ СЃРґРµР»Р°С‚СЊ. РќРёРєС‚Рѕ РЅРµ РґРѕР»Р¶РµРЅ Р·РЅР°С‚СЊ, С‡С‚Рѕ РўРѕСЂСѓСЃ РїРѕСЂСѓС‡РёР» РјРЅРµ СЌС‚Рѕ РґРµР»Рѕ.");
 	Log_SetTopicStatus	(CH1_MordragKO, LOG_RUNNING);
 
 	var C_Npc Mordrag; 				
@@ -256,38 +256,38 @@ FUNC VOID Info_Thorus_MordragKo_Offer_Info()
 
 FUNC VOID Info_Thorus_MordragKo_OFFER_BACK()
 {
-	AI_Output (other, self,"Info_Thorus_MordragKo_OFFER_BACK_15_00"); //Я займусь им.
+	AI_Output (other, self,"Info_Thorus_MordragKo_OFFER_BACK_15_00"); //РЇ Р·Р°Р№РјСѓСЃСЊ РёРј.
 	Info_ClearChoices(Info_Thorus_MordragKo_Offer);
 };
 
 FUNC VOID Info_Thorus_MordragKo_KillHim()
 {
-	AI_Output (other, self,"Info_Thorus_MordragKo_KillHim_15_00"); //Хочешь, чтобы я убил его?
-	AI_Output (self, other,"Info_Thorus_MordragKo_KillHim_09_01"); //Мне все равно. Главное сделай так, чтобы я его больше не видел.
+	AI_Output (other, self,"Info_Thorus_MordragKo_KillHim_15_00"); //РҐРѕС‡РµС€СЊ, С‡С‚РѕР±С‹ СЏ СѓР±РёР» РµРіРѕ?
+	AI_Output (self, other,"Info_Thorus_MordragKo_KillHim_09_01"); //РњРЅРµ РІСЃРµ СЂР°РІРЅРѕ. Р“Р»Р°РІРЅРѕРµ СЃРґРµР»Р°Р№ С‚Р°Рє, С‡С‚РѕР±С‹ СЏ РµРіРѕ Р±РѕР»СЊС€Рµ РЅРµ РІРёРґРµР».
 };
 
 FUNC VOID Info_Thorus_MordragKo_Where()
 {
-	AI_Output (other, self,"Info_Thorus_MordragKo_Where_15_00"); //Где я могу найти Мордрага?
-	AI_Output (self, other,"Info_Thorus_MordragKo_Where_09_01"); //На другой стороне замка, возле южных ворот. Не осмеливается совсем заходить в лагерь.  
-	B_LogEntry(CH1_MordragKO, "Мордрага я смогу найти у южных ворот, с противоположной стороны замка.");
+	AI_Output (other, self,"Info_Thorus_MordragKo_Where_15_00"); //Р“РґРµ СЏ РјРѕРіСѓ РЅР°Р№С‚Рё РњРѕСЂРґСЂР°РіР°?
+	AI_Output (self, other,"Info_Thorus_MordragKo_Where_09_01"); //РќР° РґСЂСѓРіРѕР№ СЃС‚РѕСЂРѕРЅРµ Р·Р°РјРєР°, РІРѕР·Р»Рµ СЋР¶РЅС‹С… РІРѕСЂРѕС‚. РќРµ РѕСЃРјРµР»РёРІР°РµС‚СЃСЏ СЃРѕРІСЃРµРј Р·Р°С…РѕРґРёС‚СЊ РІ Р»Р°РіРµСЂСЊ.  
+	B_LogEntry(CH1_MordragKO, "РњРѕСЂРґСЂР°РіР° СЏ СЃРјРѕРіСѓ РЅР°Р№С‚Рё Сѓ СЋР¶РЅС‹С… РІРѕСЂРѕС‚, СЃ РїСЂРѕС‚РёРІРѕРїРѕР»РѕР¶РЅРѕР№ СЃС‚РѕСЂРѕРЅС‹ Р·Р°РјРєР°.");
 };
 
 FUNC VOID Info_Thorus_MordragKo_MagesProtect()
 {
-	AI_Output (other, self,"Info_Thorus_MordragKo_MagesProtect_15_00"); //А почему маги защищают Мордрага?
-	AI_Output (self, other,"Info_Thorus_MordragKo_MagesProtect_09_01"); //Наши маги общаются с магами из Нового лагеря, и он их посыльный.
-	AI_Output (self, other,"Info_Thorus_MordragKo_MagesProtect_09_02"); //Думаю, если я убью или вышвырну из лагеря одного из их гонцов, они рады не будут.
-	AI_Output (other, self,"Info_Thorus_MordragKo_MagesProtect_15_03"); //А как же я? Что маги могут сделать со мной?
-	AI_Output (self, other,"Info_Thorus_MordragKo_MagesProtect_09_04"); //Ты новенький, и тебя они не тронут. А вот я отвечаю головой за действия своих парней, а потому важно, чтобы ты держал свой рот на замке.
+	AI_Output (other, self,"Info_Thorus_MordragKo_MagesProtect_15_00"); //Рђ РїРѕС‡РµРјСѓ РјР°РіРё Р·Р°С‰РёС‰Р°СЋС‚ РњРѕСЂРґСЂР°РіР°?
+	AI_Output (self, other,"Info_Thorus_MordragKo_MagesProtect_09_01"); //РќР°С€Рё РјР°РіРё РѕР±С‰Р°СЋС‚СЃСЏ СЃ РјР°РіР°РјРё РёР· РќРѕРІРѕРіРѕ Р»Р°РіРµСЂСЏ, Рё РѕРЅ РёС… РїРѕСЃС‹Р»СЊРЅС‹Р№.
+	AI_Output (self, other,"Info_Thorus_MordragKo_MagesProtect_09_02"); //Р”СѓРјР°СЋ, РµСЃР»Рё СЏ СѓР±СЊСЋ РёР»Рё РІС‹С€РІС‹СЂРЅСѓ РёР· Р»Р°РіРµСЂСЏ РѕРґРЅРѕРіРѕ РёР· РёС… РіРѕРЅС†РѕРІ, РѕРЅРё СЂР°РґС‹ РЅРµ Р±СѓРґСѓС‚.
+	AI_Output (other, self,"Info_Thorus_MordragKo_MagesProtect_15_03"); //Рђ РєР°Рє Р¶Рµ СЏ? Р§С‚Рѕ РјР°РіРё РјРѕРіСѓС‚ СЃРґРµР»Р°С‚СЊ СЃРѕ РјРЅРѕР№?
+	AI_Output (self, other,"Info_Thorus_MordragKo_MagesProtect_09_04"); //РўС‹ РЅРѕРІРµРЅСЊРєРёР№, Рё С‚РµР±СЏ РѕРЅРё РЅРµ С‚СЂРѕРЅСѓС‚. Рђ РІРѕС‚ СЏ РѕС‚РІРµС‡Р°СЋ РіРѕР»РѕРІРѕР№ Р·Р° РґРµР№СЃС‚РІРёСЏ СЃРІРѕРёС… РїР°СЂРЅРµР№, Р° РїРѕС‚РѕРјСѓ РІР°Р¶РЅРѕ, С‡С‚РѕР±С‹ С‚С‹ РґРµСЂР¶Р°Р» СЃРІРѕР№ СЂРѕС‚ РЅР° Р·Р°РјРєРµ.
 	Thorus_MordragMageMessenger = TRUE;
 };
 
 FUNC VOID Info_Thorus_MordragKo_MageProblem()
 {
-	AI_Output (other, self,"Info_Thorus_MordragKo_MageProblem_15_00"); //Кажется, что маги тоже доставляют тебе хлопот...
-	AI_Output (self, other,"Info_Thorus_MordragKo_MageProblem_09_01"); //Да, и с ними не так просто сладить. Пару лет назад один из Призраков попытался убить Верховного Мага Круга Огня, пока тот спал.
-	AI_Output (self, other,"Info_Thorus_MordragKo_MageProblem_09_02"); //Потом его нашли во Внешнем Кольце... вернее, его останки, разбросанные по всему Кольцу...
+	AI_Output (other, self,"Info_Thorus_MordragKo_MageProblem_15_00"); //РљР°Р¶РµС‚СЃСЏ, С‡С‚Рѕ РјР°РіРё С‚РѕР¶Рµ РґРѕСЃС‚Р°РІР»СЏСЋС‚ С‚РµР±Рµ С…Р»РѕРїРѕС‚...
+	AI_Output (self, other,"Info_Thorus_MordragKo_MageProblem_09_01"); //Р”Р°, Рё СЃ РЅРёРјРё РЅРµ С‚Р°Рє РїСЂРѕСЃС‚Рѕ СЃР»Р°РґРёС‚СЊ. РџР°СЂСѓ Р»РµС‚ РЅР°Р·Р°Рґ РѕРґРёРЅ РёР· РџСЂРёР·СЂР°РєРѕРІ РїРѕРїС‹С‚Р°Р»СЃСЏ СѓР±РёС‚СЊ Р’РµСЂС…РѕРІРЅРѕРіРѕ РњР°РіР° РљСЂСѓРіР° РћРіРЅСЏ, РїРѕРєР° С‚РѕС‚ СЃРїР°Р».
+	AI_Output (self, other,"Info_Thorus_MordragKo_MageProblem_09_02"); //РџРѕС‚РѕРј РµРіРѕ РЅР°С€Р»Рё РІРѕ Р’РЅРµС€РЅРµРј РљРѕР»СЊС†Рµ... РІРµСЂРЅРµРµ, РµРіРѕ РѕСЃС‚Р°РЅРєРё, СЂР°Р·Р±СЂРѕСЃР°РЅРЅС‹Рµ РїРѕ РІСЃРµРјСѓ РљРѕР»СЊС†Сѓ...
 };
 
 // **************************************************************************
@@ -301,7 +301,7 @@ INSTANCE Info_Thorus_MordragKo_Analyze (C_INFO)
 	condition	= Info_Thorus_MordragKo_Analyze_Condition;
 	information	= Info_Thorus_MordragKo_Analyze_Info;
 	permanent	= 1;
-	description = "Я по поводу Мордрага...";
+	description = "РЇ РїРѕ РїРѕРІРѕРґСѓ РњРѕСЂРґСЂР°РіР°...";
 };                       
 
 FUNC INT Info_Thorus_MordragKo_Analyze_Condition()
@@ -315,33 +315,33 @@ FUNC INT Info_Thorus_MordragKo_Analyze_Condition()
 FUNC VOID Info_Thorus_MordragKo_Analyze_Info()
 {
 	Info_ClearChoices	(Info_Thorus_MordragKo_Analyze);
-	Info_AddChoice   	(Info_Thorus_MordragKo_Analyze, "Я позабочусь об этом." 	,Info_Thorus_MordragKo_ANALYZE_BACK);
-	Info_AddChoice	 	(Info_Thorus_MordragKo_Analyze, "Где я могу найти Мордрага?" 	,Info_Thorus_MordragKo_Where);	//SIEHE OBEN
+	Info_AddChoice   	(Info_Thorus_MordragKo_Analyze, "РЇ РїРѕР·Р°Р±РѕС‡СѓСЃСЊ РѕР± СЌС‚РѕРј." 	,Info_Thorus_MordragKo_ANALYZE_BACK);
+	Info_AddChoice	 	(Info_Thorus_MordragKo_Analyze, "Р“РґРµ СЏ РјРѕРіСѓ РЅР°Р№С‚Рё РњРѕСЂРґСЂР°РіР°?" 	,Info_Thorus_MordragKo_Where);	//SIEHE OBEN
 	var C_NPC Mordrag; Mordrag = Hlp_GetNpc(Org_826_Mordrag);
 	if (Npc_IsDead(Mordrag))
 	{
-		Info_AddChoice	(Info_Thorus_MordragKo_Analyze, "Считай, что Мордраг совершил свою последнюю кражу!" ,Info_Thorus_MordragKo_MordragDead);
+		Info_AddChoice	(Info_Thorus_MordragKo_Analyze, "РЎС‡РёС‚Р°Р№, С‡С‚Рѕ РњРѕСЂРґСЂР°Рі СЃРѕРІРµСЂС€РёР» СЃРІРѕСЋ РїРѕСЃР»РµРґРЅСЋСЋ РєСЂР°Р¶Сѓ!" ,Info_Thorus_MordragKo_MordragDead);
 	}
 	else if ( (MordragKO_HauAb==TRUE) || (MordragKO_StayAtNC==TRUE) )
 	{ 
-		Info_AddChoice	(Info_Thorus_MordragKo_Analyze, "Больше он не сунет сюда свой нос!" ,Info_Thorus_MordragKo_MordragGone);
+		Info_AddChoice	(Info_Thorus_MordragKo_Analyze, "Р‘РѕР»СЊС€Рµ РѕРЅ РЅРµ СЃСѓРЅРµС‚ СЃСЋРґР° СЃРІРѕР№ РЅРѕСЃ!" ,Info_Thorus_MordragKo_MordragGone);
 	};
     
 };
 
 FUNC VOID Info_Thorus_MordragKo_ANALYZE_BACK()
 {
-	AI_Output (other, self,"Info_Thorus_MordragKo_ANALYZE_BACK_15_00"); //Я позабочусь об этом.
+	AI_Output (other, self,"Info_Thorus_MordragKo_ANALYZE_BACK_15_00"); //РЇ РїРѕР·Р°Р±РѕС‡СѓСЃСЊ РѕР± СЌС‚РѕРј.
 	Info_ClearChoices(Info_Thorus_MordragKo_Analyze);
 };
 
 FUNC VOID Info_Thorus_MordragKo_MordragDead()
 {
-	AI_Output (other, self,"Info_Thorus_MordragKo_MordragDead_15_00"); //Считай, что Мордраг совершил свою последнюю кражу!
-	AI_Output (self, other,"Info_Thorus_MordragKo_MordragDead_09_01"); //Хочешь сказать, ты победил его? Неплохо, малыш!
+	AI_Output (other, self,"Info_Thorus_MordragKo_MordragDead_15_00"); //РЎС‡РёС‚Р°Р№, С‡С‚Рѕ РњРѕСЂРґСЂР°Рі СЃРѕРІРµСЂС€РёР» СЃРІРѕСЋ РїРѕСЃР»РµРґРЅСЋСЋ РєСЂР°Р¶Сѓ!
+	AI_Output (self, other,"Info_Thorus_MordragKo_MordragDead_09_01"); //РҐРѕС‡РµС€СЊ СЃРєР°Р·Р°С‚СЊ, С‚С‹ РїРѕР±РµРґРёР» РµРіРѕ? РќРµРїР»РѕС…Рѕ, РјР°Р»С‹С€!
 	Thorus_MordragKo = LOG_SUCCESS;
 	Log_SetTopicStatus(CH1_MordragKO, LOG_SUCCESS);	
-	B_LogEntry (CH1_MordragKO, "Торус остался доволен тем, что Мордрага больше нет в Старом лагере.");
+	B_LogEntry (CH1_MordragKO, "РўРѕСЂСѓСЃ РѕСЃС‚Р°Р»СЃСЏ РґРѕРІРѕР»РµРЅ С‚РµРј, С‡С‚Рѕ РњРѕСЂРґСЂР°РіР° Р±РѕР»СЊС€Рµ РЅРµС‚ РІ РЎС‚Р°СЂРѕРј Р»Р°РіРµСЂРµ.");
 	B_GiveXP(XP_Thorusmordragdead);
 	Info_ClearChoices(Info_Thorus_MordragKo_Analyze);
 
@@ -349,11 +349,11 @@ FUNC VOID Info_Thorus_MordragKo_MordragDead()
 
 FUNC VOID Info_Thorus_MordragKo_MordragGone()
 {
-	AI_Output (other, self,"Info_Thorus_MordragKo_MordragGone_15_00"); //Больше он не сунет сюда свой нос!
-	AI_Output (self, other,"Info_Thorus_MordragKo_MordragGone_09_01"); //Было бы лучше, если бы ты убил его.
+	AI_Output (other, self,"Info_Thorus_MordragKo_MordragGone_15_00"); //Р‘РѕР»СЊС€Рµ РѕРЅ РЅРµ СЃСѓРЅРµС‚ СЃСЋРґР° СЃРІРѕР№ РЅРѕСЃ!
+	AI_Output (self, other,"Info_Thorus_MordragKo_MordragGone_09_01"); //Р‘С‹Р»Рѕ Р±С‹ Р»СѓС‡С€Рµ, РµСЃР»Рё Р±С‹ С‚С‹ СѓР±РёР» РµРіРѕ.
 	Thorus_MordragKo = LOG_SUCCESS;
 	Log_SetTopicStatus(CH1_MordragKO, LOG_SUCCESS);
-	B_LogEntry (CH1_MordragKO, "Торус остался доволен тем, что Мордрага больше нет в Старом лагере.");
+	B_LogEntry (CH1_MordragKO, "РўРѕСЂСѓСЃ РѕСЃС‚Р°Р»СЃСЏ РґРѕРІРѕР»РµРЅ С‚РµРј, С‡С‚Рѕ РњРѕСЂРґСЂР°РіР° Р±РѕР»СЊС€Рµ РЅРµС‚ РІ РЎС‚Р°СЂРѕРј Р»Р°РіРµСЂРµ.");
 	B_GiveXP(XP_Thorusmordragko);
 	Info_ClearChoices(Info_Thorus_MordragKo_Analyze);
 };
@@ -382,13 +382,13 @@ FUNC INT Info_Thorus_MordragFailed_Condition()
 
 FUNC VOID Info_Thorus_MordragFailed_Info()
 {
-	AI_Output (self, other,"Info_Thorus_MordragFailed_09_00"); //Ты все испортил! Я же предупреждал тебя: не называть моего имени!
-	AI_Output (self, other,"Info_Thorus_MordragFailed_09_01"); //Ты провалил все! Забудь все, что я тебе говорил и больше не смей лезть в это дело!
+	AI_Output (self, other,"Info_Thorus_MordragFailed_09_00"); //РўС‹ РІСЃРµ РёСЃРїРѕСЂС‚РёР»! РЇ Р¶Рµ РїСЂРµРґСѓРїСЂРµР¶РґР°Р» С‚РµР±СЏ: РЅРµ РЅР°Р·С‹РІР°С‚СЊ РјРѕРµРіРѕ РёРјРµРЅРё!
+	AI_Output (self, other,"Info_Thorus_MordragFailed_09_01"); //РўС‹ РїСЂРѕРІР°Р»РёР» РІСЃРµ! Р—Р°Р±СѓРґСЊ РІСЃРµ, С‡С‚Рѕ СЏ С‚РµР±Рµ РіРѕРІРѕСЂРёР» Рё Р±РѕР»СЊС€Рµ РЅРµ СЃРјРµР№ Р»РµР·С‚СЊ РІ СЌС‚Рѕ РґРµР»Рѕ!
 			
 	Thorus_MordragKo = LOG_FAILED;
 	
 	Log_SetTopicStatus(CH1_MordragKO, LOG_FAILED);
-	B_LogEntry (CH1_MordragKO, "Я сказал Мордрагу, кто захотел выгнать его. Торусу это совсем не понравилось. Теперь мне лучше не попадаться у него на пути.");
+	B_LogEntry (CH1_MordragKO, "РЇ СЃРєР°Р·Р°Р» РњРѕСЂРґСЂР°РіСѓ, РєС‚Рѕ Р·Р°С…РѕС‚РµР» РІС‹РіРЅР°С‚СЊ РµРіРѕ. РўРѕСЂСѓСЃСѓ СЌС‚Рѕ СЃРѕРІСЃРµРј РЅРµ РїРѕРЅСЂР°РІРёР»РѕСЃСЊ. РўРµРїРµСЂСЊ РјРЅРµ Р»СѓС‡С€Рµ РЅРµ РїРѕРїР°РґР°С‚СЊСЃСЏ Сѓ РЅРµРіРѕ РЅР° РїСѓС‚Рё.");
 	AI_StopProcessInfos	(self);
 };
 
@@ -403,7 +403,7 @@ INSTANCE Info_Thorus_BribeGuard (C_INFO)
 	condition	= Info_Thorus_BribeGuard_Condition;
 	information	= Info_Thorus_BribeGuard_Info;
 	permanent	= 0;
-	description = "Ты сможешь впустить в замок, если я поделюсь своим запасом руды?";
+	description = "РўС‹ СЃРјРѕР¶РµС€СЊ РІРїСѓСЃС‚РёС‚СЊ РІ Р·Р°РјРѕРє, РµСЃР»Рё СЏ РїРѕРґРµР»СЋСЃСЊ СЃРІРѕРёРј Р·Р°РїР°СЃРѕРј СЂСѓРґС‹?";
 };                       
 
 FUNC INT Info_Thorus_BribeGuard_Condition()
@@ -416,14 +416,14 @@ FUNC INT Info_Thorus_BribeGuard_Condition()
 
 FUNC VOID Info_Thorus_BribeGuard_Info()
 {
-	AI_Output (other, self,"Info_Thorus_BribeGuard_15_00"); //А ты сможешь впустить меня в замок, если я поделюсь с тобой своим запасом руды?
-	AI_Output (self, other,"Info_Thorus_BribeGuard_09_01"); //Своим запасом... 
-	AI_Output (other, self,"Info_Thorus_BribeGuard_15_02"); //Сколько?
-	AI_Output (self, other,"Info_Thorus_BribeGuard_09_02"); //Ну... Пересчет этой руды должен занять много времени. Мы с парнями должны считать достаточно долго, чтобы ты успел проскочить.
-	AI_Output (other, self,"Info_Thorus_BribeGuard_15_03"); //Ну, скажи сколько именно?
-	AI_Output (self, other,"Info_Thorus_BribeGuard_09_03"); //Думаю, тысячи кусков будет в самый раз.
-	AI_Output (other, self,"Info_Thorus_BribeGuard_15_04"); //Тысяча кусков?!
-	AI_Output (self, other,"Info_Thorus_BribeGuard_09_04"); //Ну, можешь пройти бесплатно, когда будешь одним из людей Гомеза.
+	AI_Output (other, self,"Info_Thorus_BribeGuard_15_00"); //Рђ С‚С‹ СЃРјРѕР¶РµС€СЊ РІРїСѓСЃС‚РёС‚СЊ РјРµРЅСЏ РІ Р·Р°РјРѕРє, РµСЃР»Рё СЏ РїРѕРґРµР»СЋСЃСЊ СЃ С‚РѕР±РѕР№ СЃРІРѕРёРј Р·Р°РїР°СЃРѕРј СЂСѓРґС‹?
+	AI_Output (self, other,"Info_Thorus_BribeGuard_09_01"); //РЎРІРѕРёРј Р·Р°РїР°СЃРѕРј... 
+	AI_Output (other, self,"Info_Thorus_BribeGuard_15_02"); //РЎРєРѕР»СЊРєРѕ?
+	AI_Output (self, other,"Info_Thorus_BribeGuard_09_02"); //РќСѓ... РџРµСЂРµСЃС‡РµС‚ СЌС‚РѕР№ СЂСѓРґС‹ РґРѕР»Р¶РµРЅ Р·Р°РЅСЏС‚СЊ РјРЅРѕРіРѕ РІСЂРµРјРµРЅРё. РњС‹ СЃ РїР°СЂРЅСЏРјРё РґРѕР»Р¶РЅС‹ СЃС‡РёС‚Р°С‚СЊ РґРѕСЃС‚Р°С‚РѕС‡РЅРѕ РґРѕР»РіРѕ, С‡С‚РѕР±С‹ С‚С‹ СѓСЃРїРµР» РїСЂРѕСЃРєРѕС‡РёС‚СЊ.
+	AI_Output (other, self,"Info_Thorus_BribeGuard_15_03"); //РќСѓ, СЃРєР°Р¶Рё СЃРєРѕР»СЊРєРѕ РёРјРµРЅРЅРѕ?
+	AI_Output (self, other,"Info_Thorus_BribeGuard_09_03"); //Р”СѓРјР°СЋ, С‚С‹СЃСЏС‡Рё РєСѓСЃРєРѕРІ Р±СѓРґРµС‚ РІ СЃР°РјС‹Р№ СЂР°Р·.
+	AI_Output (other, self,"Info_Thorus_BribeGuard_15_04"); //РўС‹СЃСЏС‡Р° РєСѓСЃРєРѕРІ?!
+	AI_Output (self, other,"Info_Thorus_BribeGuard_09_04"); //РќСѓ, РјРѕР¶РµС€СЊ РїСЂРѕР№С‚Рё Р±РµСЃРїР»Р°С‚РЅРѕ, РєРѕРіРґР° Р±СѓРґРµС€СЊ РѕРґРЅРёРј РёР· Р»СЋРґРµР№ Р“РѕРјРµР·Р°.
 };
 
 // ************************************************************
@@ -437,7 +437,7 @@ INSTANCE Info_Thorus_Give1000Ore (C_INFO)
 	condition	= Info_Thorus_Give1000Ore_Condition;
 	information	= Info_Thorus_Give1000Ore_Info;
 	permanent	= 1;
-	description = "У меня есть тысяча кусков руды. Пропусти меня!";
+	description = "РЈ РјРµРЅСЏ РµСЃС‚СЊ С‚С‹СЃСЏС‡Р° РєСѓСЃРєРѕРІ СЂСѓРґС‹. РџСЂРѕРїСѓСЃС‚Рё РјРµРЅСЏ!";
 };                       
 
 FUNC INT Info_Thorus_Give1000Ore_Condition()
@@ -450,12 +450,12 @@ FUNC INT Info_Thorus_Give1000Ore_Condition()
 
 FUNC VOID Info_Thorus_Give1000Ore_Info()
 {
-	AI_Output (other, self,"Info_Thorus_Give1000Ore_15_00"); //У меня есть тысяча кусков руды. Пропусти меня!
+	AI_Output (other, self,"Info_Thorus_Give1000Ore_15_00"); //РЈ РјРµРЅСЏ РµСЃС‚СЊ С‚С‹СЃСЏС‡Р° РєСѓСЃРєРѕРІ СЂСѓРґС‹. РџСЂРѕРїСѓСЃС‚Рё РјРµРЅСЏ!
 	
 	if (Npc_HasItems(other, ItMiNugget)>=1000)
 	{
 		B_GiveInvItems 	(other,self,ItMiNugget,1000);		
-		AI_Output (self, other,"Info_Thorus_Give1000Ore_09_01"); //Ладно, проходи. Но не натвори там глупостей, понял?
+		AI_Output (self, other,"Info_Thorus_Give1000Ore_09_01"); //Р›Р°РґРЅРѕ, РїСЂРѕС…РѕРґРё. РќРѕ РЅРµ РЅР°С‚РІРѕСЂРё С‚Р°Рј РіР»СѓРїРѕСЃС‚РµР№, РїРѕРЅСЏР»?
 		var C_NPC wache212; wache212 = Hlp_GetNpc(Grd_212_Torwache);
 		var C_NPC wache213; wache213 = Hlp_GetNpc(Grd_213_Torwache);
 		wache212.aivar[AIV_PASSGATE] = TRUE;
@@ -463,12 +463,12 @@ FUNC VOID Info_Thorus_Give1000Ore_Info()
 	}
 	else
 	{
-		AI_Output (self, other,"Info_Thorus_Give1000Ore_09_02"); //Не пытайся надуть меня, малыш! У тебя нет тысячи кусков!
+		AI_Output (self, other,"Info_Thorus_Give1000Ore_09_02"); //РќРµ РїС‹С‚Р°Р№СЃСЏ РЅР°РґСѓС‚СЊ РјРµРЅСЏ, РјР°Р»С‹С€! РЈ С‚РµР±СЏ РЅРµС‚ С‚С‹СЃСЏС‡Рё РєСѓСЃРєРѕРІ!
 	};
 };
 		
 // ************************************************************
-// 					Brief fьr Magier
+// 					Brief fСЊr Magier
 // ************************************************************
 
 INSTANCE Info_Thorus_LetterForMages (C_INFO)
@@ -478,7 +478,7 @@ INSTANCE Info_Thorus_LetterForMages (C_INFO)
 	condition	= Info_Thorus_LetterForMages_Condition;
 	information	= Info_Thorus_LetterForMages_Info;
 	permanent	= 1;
-	description = "Мне нужно попасть в замок. У меня есть письмо...";
+	description = "РњРЅРµ РЅСѓР¶РЅРѕ РїРѕРїР°СЃС‚СЊ РІ Р·Р°РјРѕРє. РЈ РјРµРЅСЏ РµСЃС‚СЊ РїРёСЃСЊРјРѕ...";
 };                       
 
 FUNC INT Info_Thorus_LetterForMages_Condition()
@@ -492,16 +492,16 @@ FUNC INT Info_Thorus_LetterForMages_Condition()
 
 FUNC VOID Info_Thorus_LetterForMages_Info()
 {
-	AI_Output (other, self,"Info_Thorus_LetterForMages_15_00"); //Мне нужно попасть в замок. У меня есть письмо для Верховного Мага Круга Огня.
-	AI_Output (self, other,"Info_Thorus_LetterForMages_09_01"); //И ты надеешься, что я просто пропущу тебя в замок, чтобы ты мог получить свою награду?
-	AI_Output (other, self,"Info_Thorus_LetterForMages_15_02"); //Да.  
-	AI_Output (self, other,"Info_Thorus_LetterForMages_09_03"); //Хорошо, покажи мне это письмо.
-	AI_Output (other, self,"Info_Thorus_LetterForMages_15_04"); //Думаешь, я позволю тебе прикарманить его! Забудь про него!
-	AI_Output (self, other,"Info_Thorus_LetterForMages_09_05"); //Хорошо, уже забыл.
+	AI_Output (other, self,"Info_Thorus_LetterForMages_15_00"); //РњРЅРµ РЅСѓР¶РЅРѕ РїРѕРїР°СЃС‚СЊ РІ Р·Р°РјРѕРє. РЈ РјРµРЅСЏ РµСЃС‚СЊ РїРёСЃСЊРјРѕ РґР»СЏ Р’РµСЂС…РѕРІРЅРѕРіРѕ РњР°РіР° РљСЂСѓРіР° РћРіРЅСЏ.
+	AI_Output (self, other,"Info_Thorus_LetterForMages_09_01"); //Р С‚С‹ РЅР°РґРµРµС€СЊСЃСЏ, С‡С‚Рѕ СЏ РїСЂРѕСЃС‚Рѕ РїСЂРѕРїСѓС‰Сѓ С‚РµР±СЏ РІ Р·Р°РјРѕРє, С‡С‚РѕР±С‹ С‚С‹ РјРѕРі РїРѕР»СѓС‡РёС‚СЊ СЃРІРѕСЋ РЅР°РіСЂР°РґСѓ?
+	AI_Output (other, self,"Info_Thorus_LetterForMages_15_02"); //Р”Р°.  
+	AI_Output (self, other,"Info_Thorus_LetterForMages_09_03"); //РҐРѕСЂРѕС€Рѕ, РїРѕРєР°Р¶Рё РјРЅРµ СЌС‚Рѕ РїРёСЃСЊРјРѕ.
+	AI_Output (other, self,"Info_Thorus_LetterForMages_15_04"); //Р”СѓРјР°РµС€СЊ, СЏ РїРѕР·РІРѕР»СЋ С‚РµР±Рµ РїСЂРёРєР°СЂРјР°РЅРёС‚СЊ РµРіРѕ! Р—Р°Р±СѓРґСЊ РїСЂРѕ РЅРµРіРѕ!
+	AI_Output (self, other,"Info_Thorus_LetterForMages_09_05"); //РҐРѕСЂРѕС€Рѕ, СѓР¶Рµ Р·Р°Р±С‹Р».
 };
 
 // ************************************************************
-// 					Bereit fьr Gomez !!!
+// 					Bereit fСЊr Gomez !!!
 // ************************************************************
 
 INSTANCE Info_Thorus_ReadyForGomez (C_INFO)
@@ -511,7 +511,7 @@ INSTANCE Info_Thorus_ReadyForGomez (C_INFO)
 	condition	= Info_Thorus_ReadyForGomez_Condition;
 	information	= Info_Thorus_ReadyForGomez_Info;
 	permanent	= 0;//1
-	description = "Диего сказал, что мне можно увидеть Гомеза!";
+	description = "Р”РёРµРіРѕ СЃРєР°Р·Р°Р», С‡С‚Рѕ РјРЅРµ РјРѕР¶РЅРѕ СѓРІРёРґРµС‚СЊ Р“РѕРјРµР·Р°!";
 };                       
 
 FUNC INT Info_Thorus_ReadyForGomez_Condition()
@@ -524,13 +524,13 @@ FUNC INT Info_Thorus_ReadyForGomez_Condition()
 
 FUNC VOID Info_Thorus_ReadyForGomez_Info()
 {
-	AI_Output (other, self,"Info_Thorus_ReadyForGomez_15_00"); //Диего сказал, что мне можно увидеть Гомеза!
-	AI_Output (self, other,"Info_Thorus_ReadyForGomez_09_01"); //Мне решать, что тебе можно!
-	AI_Output (other, self,"Info_Thorus_ReadyForGomez_15_02"); //И что ты решил?
-	AI_Output (self, other,"Info_Thorus_ReadyForGomez_09_03"); //Хм...
-	AI_Output (self, other,"Info_Thorus_ReadyForGomez_09_04"); //Должен согласиться, до сих пор ты делал все как надо.
-	AI_Output (self, other,"Info_Thorus_ReadyForGomez_09_05"); //Хорошо! Можешь встретиться с Гомезом. Ему одному решать - будешь ли ты один из нас или нет.
-	AI_Output (self, other,"Info_Thorus_ReadyForGomez_09_06"); //Теперь все зависит только от тебя самого.
+	AI_Output (other, self,"Info_Thorus_ReadyForGomez_15_00"); //Р”РёРµРіРѕ СЃРєР°Р·Р°Р», С‡С‚Рѕ РјРЅРµ РјРѕР¶РЅРѕ СѓРІРёРґРµС‚СЊ Р“РѕРјРµР·Р°!
+	AI_Output (self, other,"Info_Thorus_ReadyForGomez_09_01"); //РњРЅРµ СЂРµС€Р°С‚СЊ, С‡С‚Рѕ С‚РµР±Рµ РјРѕР¶РЅРѕ!
+	AI_Output (other, self,"Info_Thorus_ReadyForGomez_15_02"); //Р С‡С‚Рѕ С‚С‹ СЂРµС€РёР»?
+	AI_Output (self, other,"Info_Thorus_ReadyForGomez_09_03"); //РҐРј...
+	AI_Output (self, other,"Info_Thorus_ReadyForGomez_09_04"); //Р”РѕР»Р¶РµРЅ СЃРѕРіР»Р°СЃРёС‚СЊСЃСЏ, РґРѕ СЃРёС… РїРѕСЂ С‚С‹ РґРµР»Р°Р» РІСЃРµ РєР°Рє РЅР°РґРѕ.
+	AI_Output (self, other,"Info_Thorus_ReadyForGomez_09_05"); //РҐРѕСЂРѕС€Рѕ! РњРѕР¶РµС€СЊ РІСЃС‚СЂРµС‚РёС‚СЊСЃСЏ СЃ Р“РѕРјРµР·РѕРј. Р•РјСѓ РѕРґРЅРѕРјСѓ СЂРµС€Р°С‚СЊ - Р±СѓРґРµС€СЊ Р»Рё С‚С‹ РѕРґРёРЅ РёР· РЅР°СЃ РёР»Рё РЅРµС‚.
+	AI_Output (self, other,"Info_Thorus_ReadyForGomez_09_06"); //РўРµРїРµСЂСЊ РІСЃРµ Р·Р°РІРёСЃРёС‚ С‚РѕР»СЊРєРѕ РѕС‚ С‚РµР±СЏ СЃР°РјРѕРіРѕ.
 				
 	var C_NPC wache212; wache212 = Hlp_GetNpc(Grd_212_Torwache);
 	var C_NPC wache213; wache213 = Hlp_GetNpc(Grd_213_Torwache);
@@ -551,7 +551,7 @@ INSTANCE Info_Thorus_Krautbote (C_INFO)
 	condition	= Info_Thorus_Krautbote_Condition;
 	information	= Info_Thorus_Krautbote_Info;
 	permanent	= 0;
-	description = "Кор Галом передал Гомезу болотник.";
+	description = "РљРѕСЂ Р“Р°Р»РѕРј РїРµСЂРµРґР°Р» Р“РѕРјРµР·Сѓ Р±РѕР»РѕС‚РЅРёРє.";
 };                       
 
 FUNC INT Info_Thorus_Krautbote_Condition()
@@ -564,13 +564,13 @@ FUNC INT Info_Thorus_Krautbote_Condition()
 
 FUNC VOID Info_Thorus_Krautbote_Info()
 {
-	AI_Output (other, self,"Info_Thorus_Krautbote_15_00"); //Кор Галом передал Гомезу болотник.
-	AI_Output (self, other,"Info_Thorus_Krautbote_09_01"); //Покажи!
+	AI_Output (other, self,"Info_Thorus_Krautbote_15_00"); //РљРѕСЂ Р“Р°Р»РѕРј РїРµСЂРµРґР°Р» Р“РѕРјРµР·Сѓ Р±РѕР»РѕС‚РЅРёРє.
+	AI_Output (self, other,"Info_Thorus_Krautbote_09_01"); //РџРѕРєР°Р¶Рё!
 	
 	if (Npc_HasItems(other, itmijoint_3) >= 30)
 	{
-		AI_Output (self, other,"Info_Thorus_Krautbote_09_02"); //Хм...
-		AI_Output (self, other,"Info_Thorus_Krautbote_09_03"); //Хорошо! Проходи. Отправляйся к дому Баронов. Бартоло встретит тебя там.
+		AI_Output (self, other,"Info_Thorus_Krautbote_09_02"); //РҐРј...
+		AI_Output (self, other,"Info_Thorus_Krautbote_09_03"); //РҐРѕСЂРѕС€Рѕ! РџСЂРѕС…РѕРґРё. РћС‚РїСЂР°РІР»СЏР№СЃСЏ Рє РґРѕРјСѓ Р‘Р°СЂРѕРЅРѕРІ. Р‘Р°СЂС‚РѕР»Рѕ РІСЃС‚СЂРµС‚РёС‚ С‚РµР±СЏ С‚Р°Рј.
 		
 		var C_NPC wache212; wache212 = Hlp_GetNpc(Grd_212_Torwache);
 		var C_NPC wache213; wache213 = Hlp_GetNpc(Grd_213_Torwache);
@@ -581,7 +581,7 @@ FUNC VOID Info_Thorus_Krautbote_Info()
 	}
 	else
 	{
-		AI_Output (self, other,"Info_Thorus_Krautbote_09_04"); //У тебя слишком мало болотника! Надеюсь, ты не продал его на сторону. Будет нормальный запас, тогда и приходи.
+		AI_Output (self, other,"Info_Thorus_Krautbote_09_04"); //РЈ С‚РµР±СЏ СЃР»РёС€РєРѕРј РјР°Р»Рѕ Р±РѕР»РѕС‚РЅРёРєР°! РќР°РґРµСЋСЃСЊ, С‚С‹ РЅРµ РїСЂРѕРґР°Р» РµРіРѕ РЅР° СЃС‚РѕСЂРѕРЅСѓ. Р‘СѓРґРµС‚ РЅРѕСЂРјР°Р»СЊРЅС‹Р№ Р·Р°РїР°СЃ, С‚РѕРіРґР° Рё РїСЂРёС…РѕРґРё.
 	};
 };
 
@@ -598,7 +598,7 @@ INSTANCE Info_Thorus_KdWSiegel (C_INFO)
 	condition	= Info_Thorus_KdWSiegel_Condition;
 	information	= Info_Thorus_KdWSiegel_Info;
 	permanent	= 1;
-	description = "Меня прислали маги Воды. Мне нужно попасть в замок.";
+	description = "РњРµРЅСЏ РїСЂРёСЃР»Р°Р»Рё РјР°РіРё Р’РѕРґС‹. РњРЅРµ РЅСѓР¶РЅРѕ РїРѕРїР°СЃС‚СЊ РІ Р·Р°РјРѕРє.";
 };                       
 
 FUNC INT Info_Thorus_KdWSiegel_Condition()
@@ -613,11 +613,11 @@ FUNC INT Info_Thorus_KdWSiegel_Condition()
 
 FUNC VOID Info_Thorus_KdWSiegel_Info()
 {
-	AI_Output (other, self,"Info_Thorus_KdWSiegel_15_00"); //Меня прислали маги Воды. Мне нужно попасть в замок.
+	AI_Output (other, self,"Info_Thorus_KdWSiegel_15_00"); //РњРµРЅСЏ РїСЂРёСЃР»Р°Р»Рё РјР°РіРё Р’РѕРґС‹. РњРЅРµ РЅСѓР¶РЅРѕ РїРѕРїР°СЃС‚СЊ РІ Р·Р°РјРѕРє.
 	if (Npc_HasItems(other,KdW_Amulett)>=1)
 	{
-		AI_Output (self, other,"Info_Thorus_KdWSiegel_09_01"); //Ты можешь пройти мимо стражи, только если у тебя есть амулет.
-		AI_Output (self, other,"Info_Thorus_KdWSiegel_09_02"); //Мне ничего от магов не надо, так что перестань надоедать мне, хорошо?
+		AI_Output (self, other,"Info_Thorus_KdWSiegel_09_01"); //РўС‹ РјРѕР¶РµС€СЊ РїСЂРѕР№С‚Рё РјРёРјРѕ СЃС‚СЂР°Р¶Рё, С‚РѕР»СЊРєРѕ РµСЃР»Рё Сѓ С‚РµР±СЏ РµСЃС‚СЊ Р°РјСѓР»РµС‚.
+		AI_Output (self, other,"Info_Thorus_KdWSiegel_09_02"); //РњРЅРµ РЅРёС‡РµРіРѕ РѕС‚ РјР°РіРѕРІ РЅРµ РЅР°РґРѕ, С‚Р°Рє С‡С‚Рѕ РїРµСЂРµСЃС‚Р°РЅСЊ РЅР°РґРѕРµРґР°С‚СЊ РјРЅРµ, С…РѕСЂРѕС€Рѕ?
 		var C_NPC wache212; wache212 = Hlp_GetNpc(Grd_212_Torwache);
 		var C_NPC wache213; wache213 = Hlp_GetNpc(Grd_213_Torwache);
 		wache212.aivar[AIV_PASSGATE] = TRUE;
@@ -627,7 +627,7 @@ FUNC VOID Info_Thorus_KdWSiegel_Info()
 	}
 	else
 	{
-		AI_Output (self, other,"Info_Thorus_KdWSiegel_09_03"); //Конечно, конечно! А амулет у тебя для этого есть, а?
+		AI_Output (self, other,"Info_Thorus_KdWSiegel_09_03"); //РљРѕРЅРµС‡РЅРѕ, РєРѕРЅРµС‡РЅРѕ! Рђ Р°РјСѓР»РµС‚ Сѓ С‚РµР±СЏ РґР»СЏ СЌС‚РѕРіРѕ РµСЃС‚СЊ, Р°?
 	};
 };
 
@@ -642,7 +642,7 @@ INSTANCE Info_Thorus_SttGeschafft (C_INFO)
 	condition	= Info_Thorus_SttGeschafft_Condition;
 	information	= Info_Thorus_SttGeschafft_Info;
 	permanent	= 0;
-	description = "У меня все получилось. Наконец-то меня приняли в этот лагерь!";
+	description = "РЈ РјРµРЅСЏ РІСЃРµ РїРѕР»СѓС‡РёР»РѕСЃСЊ. РќР°РєРѕРЅРµС†-С‚Рѕ РјРµРЅСЏ РїСЂРёРЅСЏР»Рё РІ СЌС‚РѕС‚ Р»Р°РіРµСЂСЊ!";
 };                       
 
 FUNC INT Info_Thorus_SttGeschafft_Condition()
@@ -655,9 +655,9 @@ FUNC INT Info_Thorus_SttGeschafft_Condition()
 
 FUNC VOID Info_Thorus_SttGeschafft_Info()
 {
-	AI_Output (other, self,"Info_Thorus_SttGeschafft_15_00"); //У меня все получилось. Наконец-то меня приняли в этот лагерь!
-	AI_Output (self, other,"Info_Thorus_SttGeschafft_09_01"); //Мои поздравления, малыш! Совет на будущее - держись поближе к Диего.
-	AI_Output (self, other,"Info_Thorus_SttGeschafft_09_02"); //Ты можешь обращаться к Гомезу и Равену только по очень важным делам.
+	AI_Output (other, self,"Info_Thorus_SttGeschafft_15_00"); //РЈ РјРµРЅСЏ РІСЃРµ РїРѕР»СѓС‡РёР»РѕСЃСЊ. РќР°РєРѕРЅРµС†-С‚Рѕ РјРµРЅСЏ РїСЂРёРЅСЏР»Рё РІ СЌС‚РѕС‚ Р»Р°РіРµСЂСЊ!
+	AI_Output (self, other,"Info_Thorus_SttGeschafft_09_01"); //РњРѕРё РїРѕР·РґСЂР°РІР»РµРЅРёСЏ, РјР°Р»С‹С€! РЎРѕРІРµС‚ РЅР° Р±СѓРґСѓС‰РµРµ - РґРµСЂР¶РёСЃСЊ РїРѕР±Р»РёР¶Рµ Рє Р”РёРµРіРѕ.
+	AI_Output (self, other,"Info_Thorus_SttGeschafft_09_02"); //РўС‹ РјРѕР¶РµС€СЊ РѕР±СЂР°С‰Р°С‚СЊСЃСЏ Рє Р“РѕРјРµР·Сѓ Рё Р Р°РІРµРЅСѓ С‚РѕР»СЊРєРѕ РїРѕ РѕС‡РµРЅСЊ РІР°Р¶РЅС‹Рј РґРµР»Р°Рј.
 };	
 
 //////////////////////////////////////////////////
@@ -677,7 +677,7 @@ INSTANCE Info_Thorus_PERM2 (C_INFO)
 	condition	= Info_Thorus_PERM2_Condition;
 	information	= Info_Thorus_PERM2_Info;
 	permanent	= 0;
-	description = "Как дела?";
+	description = "РљР°Рє РґРµР»Р°?";
 };                       
 
 FUNC INT Info_Thorus_PERM2_Condition()
@@ -690,8 +690,8 @@ FUNC INT Info_Thorus_PERM2_Condition()
 
 FUNC VOID Info_Thorus_PERM2_Info()
 {
-	AI_Output (other, self,"Info_Thorus_PERM2_15_00"); //Как дела?
-	AI_Output (self, other,"Info_Thorus_PERM2_09_01"); //Неплохо. Новый лагерь нам не сильно мешает. А вот болотные придурки немного достают.
+	AI_Output (other, self,"Info_Thorus_PERM2_15_00"); //РљР°Рє РґРµР»Р°?
+	AI_Output (self, other,"Info_Thorus_PERM2_09_01"); //РќРµРїР»РѕС…Рѕ. РќРѕРІС‹Р№ Р»Р°РіРµСЂСЊ РЅР°Рј РЅРµ СЃРёР»СЊРЅРѕ РјРµС€Р°РµС‚. Рђ РІРѕС‚ Р±РѕР»РѕС‚РЅС‹Рµ РїСЂРёРґСѓСЂРєРё РЅРµРјРЅРѕРіРѕ РґРѕСЃС‚Р°СЋС‚.
 };	
 
 //////////////////////////////////////////////////
@@ -711,7 +711,7 @@ instance  GRD_200_Thorus_GARDIST (C_INFO)
 	information		= GRD_200_Thorus_GARDIST_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Ты хотел мне что-то сказать?"; 
+	description		= "РўС‹ С…РѕС‚РµР» РјРЅРµ С‡С‚Рѕ-С‚Рѕ СЃРєР°Р·Р°С‚СЊ?"; 
 };
 
 FUNC int  GRD_200_Thorus_GARDIST_Condition()
@@ -731,18 +731,18 @@ FUNC void  GRD_200_Thorus_GARDIST_Info()
 	var C_Npc KDFWache; 				
 	KDFWache = Hlp_GetNpc(GRD_245_GARDIST);
 	KDFWache.aivar[AIV_PASSGATE] = TRUE;
-	AI_Output (other, self,"GRD_200_Thorus_GARDIST_Info_15_01"); //Ты хотел мне что-то сказать?
-	AI_Output (self, other,"GRD_200_Thorus_GARDIST_Info_09_02"); //Да. То, что ты сделал в шахте, еще раз доказывает твою смелость, а также твою силу и умение драться.
-	AI_Output (self, other,"GRD_200_Thorus_GARDIST_Info_09_03"); //Я готов принять тебя в стражники.
+	AI_Output (other, self,"GRD_200_Thorus_GARDIST_Info_15_01"); //РўС‹ С…РѕС‚РµР» РјРЅРµ С‡С‚Рѕ-С‚Рѕ СЃРєР°Р·Р°С‚СЊ?
+	AI_Output (self, other,"GRD_200_Thorus_GARDIST_Info_09_02"); //Р”Р°. РўРѕ, С‡С‚Рѕ С‚С‹ СЃРґРµР»Р°Р» РІ С€Р°С…С‚Рµ, РµС‰Рµ СЂР°Р· РґРѕРєР°Р·С‹РІР°РµС‚ С‚РІРѕСЋ СЃРјРµР»РѕСЃС‚СЊ, Р° С‚Р°РєР¶Рµ С‚РІРѕСЋ СЃРёР»Сѓ Рё СѓРјРµРЅРёРµ РґСЂР°С‚СЊСЃСЏ.
+	AI_Output (self, other,"GRD_200_Thorus_GARDIST_Info_09_03"); //РЇ РіРѕС‚РѕРІ РїСЂРёРЅСЏС‚СЊ С‚РµР±СЏ РІ СЃС‚СЂР°Р¶РЅРёРєРё.
 	if hero.level < 10
 	{
-		AI_Output (self, other,"GRD_200_Thorus_GARDIST_Info_09_04"); //Но у тебя еще маловато для этого опыта. Подучись еще немного и приходи.
+		AI_Output (self, other,"GRD_200_Thorus_GARDIST_Info_09_04"); //РќРѕ Сѓ С‚РµР±СЏ РµС‰Рµ РјР°Р»РѕРІР°С‚Рѕ РґР»СЏ СЌС‚РѕРіРѕ РѕРїС‹С‚Р°. РџРѕРґСѓС‡РёСЃСЊ РµС‰Рµ РЅРµРјРЅРѕРіРѕ Рё РїСЂРёС…РѕРґРё.
 	    AI_StopProcessInfos	(self);
 		B_PrintGuildCondition(10);
     }
     else if hero.level >= 10
     {
-	    AI_Output (self, other,"GRD_200_Thorus_GARDIST_Info_09_05"); //Это твой шанс. Что скажешь?
+	    AI_Output (self, other,"GRD_200_Thorus_GARDIST_Info_09_05"); //Р­С‚Рѕ С‚РІРѕР№ С€Р°РЅСЃ. Р§С‚Рѕ СЃРєР°Р¶РµС€СЊ?
 	};
 };
 //---------------------------------------------------------------
@@ -754,7 +754,7 @@ instance  GRD_200_Thorus_AUFNAHME (C_INFO)
 	condition		= GRD_200_Thorus_AUFNAHME_Condition;
 	information		= GRD_200_Thorus_AUFNAHME_Info;
 	permanent		= 0;
-	description		= "Я хочу стать стражником."; 
+	description		= "РЇ С…РѕС‡Сѓ СЃС‚Р°С‚СЊ СЃС‚СЂР°Р¶РЅРёРєРѕРј."; 
 };
 
 FUNC int  GRD_200_Thorus_AUFNAHME_Condition()
@@ -769,17 +769,17 @@ FUNC int  GRD_200_Thorus_AUFNAHME_Condition()
 };
 FUNC void  GRD_200_Thorus_AUFNAHME_Info()
 {
-	AI_Output (other, self,"GRD_200_Thorus_AUFNAHME_Info_15_01"); //Я хочу стать стражником.
-	AI_Output (self, other,"GRD_200_Thorus_AUFNAHME_Info_09_02"); //Приятно слышать это. Но сначала послушай, что должен знать любой новичок. Слушай внимательно, второй раз повторять не буду.
-	AI_Output (self, other,"GRD_200_Thorus_AUFNAHME_Info_09_03"); //Раньше ты был сам по себе, теперь пришло время забыть об этом. Мои люди горой стоят за своего товарища. Мы, стражники, охраняем жизнь Баронов, руду, шахту и лагерь.
-	AI_Output (self, other,"GRD_200_Thorus_AUFNAHME_Info_09_04"); //Рудокопы добывают руду, а наша задача следить, чтобы их не сожрали ползуны. И хотя с королем переговоры ведут Бароны, многое тоже зависит от нас.
-	AI_Output (self, other,"GRD_200_Thorus_AUFNAHME_Info_09_05"); //Днем и ночью мы находимся в шахте. Днем и ночью мы стоим на страже у ворот лагеря и следим за тем, чтобы его обитатели могли спать спокойно.
-	AI_Output (self, other,"GRD_200_Thorus_AUFNAHME_Info_09_06"); //Раньше мы были неорганизованной шайкой бандитов, но сейчас мы - сила, и с нами нужно считаться. Ради этого нам приходится много работать.
-	AI_Output (self, other,"GRD_200_Thorus_AUFNAHME_Info_09_07"); //От своих парней мне нужно одно - сплоченности. Только вместе мы сможем справиться с любыми проблемами.
-	AI_Output (self, other,"GRD_200_Thorus_AUFNAHME_Info_09_08"); //И остаться в живых.
-	AI_Output (self, other,"GRD_200_Thorus_AUFNAHME_Info_09_09"); //Потихоньку ты всему научишься. Будь готов, что кому-то может понадобиться твоя помощь и тебе надо будет сделать все, что для этого потребуется.
-	AI_Output (self, other,"GRD_200_Thorus_AUFNAHME_Info_09_10"); //Иди к Стоуну. Он даст тебе доспехи и меч.
-	AI_Output (self, other,"GRD_200_Thorus_AUFNAHME_Info_09_11"); //Ты найдешь его в оружейной лавке во Внутреннем Кольце.
+	AI_Output (other, self,"GRD_200_Thorus_AUFNAHME_Info_15_01"); //РЇ С…РѕС‡Сѓ СЃС‚Р°С‚СЊ СЃС‚СЂР°Р¶РЅРёРєРѕРј.
+	AI_Output (self, other,"GRD_200_Thorus_AUFNAHME_Info_09_02"); //РџСЂРёСЏС‚РЅРѕ СЃР»С‹С€Р°С‚СЊ СЌС‚Рѕ. РќРѕ СЃРЅР°С‡Р°Р»Р° РїРѕСЃР»СѓС€Р°Р№, С‡С‚Рѕ РґРѕР»Р¶РµРЅ Р·РЅР°С‚СЊ Р»СЋР±РѕР№ РЅРѕРІРёС‡РѕРє. РЎР»СѓС€Р°Р№ РІРЅРёРјР°С‚РµР»СЊРЅРѕ, РІС‚РѕСЂРѕР№ СЂР°Р· РїРѕРІС‚РѕСЂСЏС‚СЊ РЅРµ Р±СѓРґСѓ.
+	AI_Output (self, other,"GRD_200_Thorus_AUFNAHME_Info_09_03"); //Р Р°РЅСЊС€Рµ С‚С‹ Р±С‹Р» СЃР°Рј РїРѕ СЃРµР±Рµ, С‚РµРїРµСЂСЊ РїСЂРёС€Р»Рѕ РІСЂРµРјСЏ Р·Р°Р±С‹С‚СЊ РѕР± СЌС‚РѕРј. РњРѕРё Р»СЋРґРё РіРѕСЂРѕР№ СЃС‚РѕСЏС‚ Р·Р° СЃРІРѕРµРіРѕ С‚РѕРІР°СЂРёС‰Р°. РњС‹, СЃС‚СЂР°Р¶РЅРёРєРё, РѕС…СЂР°РЅСЏРµРј Р¶РёР·РЅСЊ Р‘Р°СЂРѕРЅРѕРІ, СЂСѓРґСѓ, С€Р°С…С‚Сѓ Рё Р»Р°РіРµСЂСЊ.
+	AI_Output (self, other,"GRD_200_Thorus_AUFNAHME_Info_09_04"); //Р СѓРґРѕРєРѕРїС‹ РґРѕР±С‹РІР°СЋС‚ СЂСѓРґСѓ, Р° РЅР°С€Р° Р·Р°РґР°С‡Р° СЃР»РµРґРёС‚СЊ, С‡С‚РѕР±С‹ РёС… РЅРµ СЃРѕР¶СЂР°Р»Рё РїРѕР»Р·СѓРЅС‹. Р С…РѕС‚СЏ СЃ РєРѕСЂРѕР»РµРј РїРµСЂРµРіРѕРІРѕСЂС‹ РІРµРґСѓС‚ Р‘Р°СЂРѕРЅС‹, РјРЅРѕРіРѕРµ С‚РѕР¶Рµ Р·Р°РІРёСЃРёС‚ РѕС‚ РЅР°СЃ.
+	AI_Output (self, other,"GRD_200_Thorus_AUFNAHME_Info_09_05"); //Р”РЅРµРј Рё РЅРѕС‡СЊСЋ РјС‹ РЅР°С…РѕРґРёРјСЃСЏ РІ С€Р°С…С‚Рµ. Р”РЅРµРј Рё РЅРѕС‡СЊСЋ РјС‹ СЃС‚РѕРёРј РЅР° СЃС‚СЂР°Р¶Рµ Сѓ РІРѕСЂРѕС‚ Р»Р°РіРµСЂСЏ Рё СЃР»РµРґРёРј Р·Р° С‚РµРј, С‡С‚РѕР±С‹ РµРіРѕ РѕР±РёС‚Р°С‚РµР»Рё РјРѕРіР»Рё СЃРїР°С‚СЊ СЃРїРѕРєРѕР№РЅРѕ.
+	AI_Output (self, other,"GRD_200_Thorus_AUFNAHME_Info_09_06"); //Р Р°РЅСЊС€Рµ РјС‹ Р±С‹Р»Рё РЅРµРѕСЂРіР°РЅРёР·РѕРІР°РЅРЅРѕР№ С€Р°Р№РєРѕР№ Р±Р°РЅРґРёС‚РѕРІ, РЅРѕ СЃРµР№С‡Р°СЃ РјС‹ - СЃРёР»Р°, Рё СЃ РЅР°РјРё РЅСѓР¶РЅРѕ СЃС‡РёС‚Р°С‚СЊСЃСЏ. Р Р°РґРё СЌС‚РѕРіРѕ РЅР°Рј РїСЂРёС…РѕРґРёС‚СЃСЏ РјРЅРѕРіРѕ СЂР°Р±РѕС‚Р°С‚СЊ.
+	AI_Output (self, other,"GRD_200_Thorus_AUFNAHME_Info_09_07"); //РћС‚ СЃРІРѕРёС… РїР°СЂРЅРµР№ РјРЅРµ РЅСѓР¶РЅРѕ РѕРґРЅРѕ - СЃРїР»РѕС‡РµРЅРЅРѕСЃС‚Рё. РўРѕР»СЊРєРѕ РІРјРµСЃС‚Рµ РјС‹ СЃРјРѕР¶РµРј СЃРїСЂР°РІРёС‚СЊСЃСЏ СЃ Р»СЋР±С‹РјРё РїСЂРѕР±Р»РµРјР°РјРё.
+	AI_Output (self, other,"GRD_200_Thorus_AUFNAHME_Info_09_08"); //Р РѕСЃС‚Р°С‚СЊСЃСЏ РІ Р¶РёРІС‹С….
+	AI_Output (self, other,"GRD_200_Thorus_AUFNAHME_Info_09_09"); //РџРѕС‚РёС…РѕРЅСЊРєСѓ С‚С‹ РІСЃРµРјСѓ РЅР°СѓС‡РёС€СЊСЃСЏ. Р‘СѓРґСЊ РіРѕС‚РѕРІ, С‡С‚Рѕ РєРѕРјСѓ-С‚Рѕ РјРѕР¶РµС‚ РїРѕРЅР°РґРѕР±РёС‚СЊСЃСЏ С‚РІРѕСЏ РїРѕРјРѕС‰СЊ Рё С‚РµР±Рµ РЅР°РґРѕ Р±СѓРґРµС‚ СЃРґРµР»Р°С‚СЊ РІСЃРµ, С‡С‚Рѕ РґР»СЏ СЌС‚РѕРіРѕ РїРѕС‚СЂРµР±СѓРµС‚СЃСЏ.
+	AI_Output (self, other,"GRD_200_Thorus_AUFNAHME_Info_09_10"); //РРґРё Рє РЎС‚РѕСѓРЅСѓ. РћРЅ РґР°СЃС‚ С‚РµР±Рµ РґРѕСЃРїРµС…Рё Рё РјРµС‡.
+	AI_Output (self, other,"GRD_200_Thorus_AUFNAHME_Info_09_11"); //РўС‹ РЅР°Р№РґРµС€СЊ РµРіРѕ РІ РѕСЂСѓР¶РµР№РЅРѕР№ Р»Р°РІРєРµ РІРѕ Р’РЅСѓС‚СЂРµРЅРЅРµРј РљРѕР»СЊС†Рµ.
 
 	var C_Npc KDFWache; 				
 	KDFWache = Hlp_GetNpc(GRD_245_GARDIST);
@@ -810,12 +810,12 @@ FUNC int  GRD_200_Thorus_NOCHWAS_Condition()
 };
 func void  GRD_200_Thorus_NOCHWAS_Info()
 {
-	AI_Output			(self, other,"GRD_200_Thorus_NOCHWAS_Info_09_01"); //Да, и вот еще что...
-	AI_Output			(self, other,"GRD_200_Thorus_NOCHWAS_Info_09_02"); //Добро пожаловать в стражники!
+	AI_Output			(self, other,"GRD_200_Thorus_NOCHWAS_Info_09_01"); //Р”Р°, Рё РІРѕС‚ РµС‰Рµ С‡С‚Рѕ...
+	AI_Output			(self, other,"GRD_200_Thorus_NOCHWAS_Info_09_02"); //Р”РѕР±СЂРѕ РїРѕР¶Р°Р»РѕРІР°С‚СЊ РІ СЃС‚СЂР°Р¶РЅРёРєРё!
 	AI_StopProcessInfos	(self);
 
 	Log_CreateTopic		(GE_BecomeGuard,	LOG_NOTE);
-	B_LogEntry			(GE_BecomeGuard,	"Сегодня Торус зачислил меня в ряды стражников. Я могу взять себе новый доспех у кузнеца Стоуна в замке.");
+	B_LogEntry			(GE_BecomeGuard,	"РЎРµРіРѕРґРЅСЏ РўРѕСЂСѓСЃ Р·Р°С‡РёСЃР»РёР» РјРµРЅСЏ РІ СЂСЏРґС‹ СЃС‚СЂР°Р¶РЅРёРєРѕРІ. РЇ РјРѕРіСѓ РІР·СЏС‚СЊ СЃРµР±Рµ РЅРѕРІС‹Р№ РґРѕСЃРїРµС… Сѓ РєСѓР·РЅРµС†Р° РЎС‚РѕСѓРЅР° РІ Р·Р°РјРєРµ.");
 	
 };
 
@@ -828,7 +828,7 @@ instance  GRD_200_Thorus_WANNABEMAGE (C_INFO)
 	condition		= GRD_200_Thorus_WANNABEMAGE_Condition;
 	information		= GRD_200_Thorus_WANNABEMAGE_Info;
 	permanent		= 0;
-	description		= "Но мне по душе путь магии."; 
+	description		= "РќРѕ РјРЅРµ РїРѕ РґСѓС€Рµ РїСѓС‚СЊ РјР°РіРёРё."; 
 };
 //
 FUNC int  GRD_200_Thorus_WANNABEMAGE_Condition()
@@ -842,8 +842,8 @@ FUNC int  GRD_200_Thorus_WANNABEMAGE_Condition()
 };
 FUNC void  GRD_200_Thorus_WANNABEMAGE_Info()
 {
-	AI_Output (other, self,"GRD_200_Thorus_WANNABEMAGE_Info_15_01"); //Но мне по душе путь магии.
-	AI_Output (self, other,"GRD_200_Thorus_WANNABEMAGE_Info_09_02"); //Тогда тебе дорога к Корристо. Он учил Мильтена. Вижу, ты настроен серьезно.
+	AI_Output (other, self,"GRD_200_Thorus_WANNABEMAGE_Info_15_01"); //РќРѕ РјРЅРµ РїРѕ РґСѓС€Рµ РїСѓС‚СЊ РјР°РіРёРё.
+	AI_Output (self, other,"GRD_200_Thorus_WANNABEMAGE_Info_09_02"); //РўРѕРіРґР° С‚РµР±Рµ РґРѕСЂРѕРіР° Рє РљРѕСЂСЂРёСЃС‚Рѕ. РћРЅ СѓС‡РёР» РњРёР»СЊС‚РµРЅР°. Р’РёР¶Сѓ, С‚С‹ РЅР°СЃС‚СЂРѕРµРЅ СЃРµСЂСЊРµР·РЅРѕ.
 
 	var C_NPC Corristo;
 	Corristo = Hlp_GetNpc		(KDF_402_Corristo);
@@ -860,7 +860,7 @@ INSTANCE GRD_200_Thorus_Teach(C_INFO)
 	condition	= GRD_200_Thorus_Teach_Condition;
 	information	= GRD_200_Thorus_Teach_Info;
 	permanent	= 1;
-	description = "Ты можешь научить меня чему-нибудь?";
+	description = "РўС‹ РјРѕР¶РµС€СЊ РЅР°СѓС‡РёС‚СЊ РјРµРЅСЏ С‡РµРјСѓ-РЅРёР±СѓРґСЊ?";
 };                       
 
 FUNC INT GRD_200_Thorus_Teach_Condition()
@@ -873,13 +873,13 @@ FUNC INT GRD_200_Thorus_Teach_Condition()
 
 FUNC VOID GRD_200_Thorus_Teach_Info()
 {
-	AI_Output(other,self,"GRD_200_Thorus_Teach_15_00"); //Ты можешь научить меня чему-нибудь?
-	AI_Output(self,other,"GRD_200_Thorus_Teach_09_01"); //Я могу помочь тебе улучшить свои умения и стать сильнее.
+	AI_Output(other,self,"GRD_200_Thorus_Teach_15_00"); //РўС‹ РјРѕР¶РµС€СЊ РЅР°СѓС‡РёС‚СЊ РјРµРЅСЏ С‡РµРјСѓ-РЅРёР±СѓРґСЊ?
+	AI_Output(self,other,"GRD_200_Thorus_Teach_09_01"); //РЇ РјРѕРіСѓ РїРѕРјРѕС‡СЊ С‚РµР±Рµ СѓР»СѓС‡С€РёС‚СЊ СЃРІРѕРё СѓРјРµРЅРёСЏ Рё СЃС‚Р°С‚СЊ СЃРёР»СЊРЅРµРµ.
 	
 	if (log_thorustrain == FALSE)
 	{
 		Log_CreateTopic   	(GE_TeacherOC,LOG_NOTE);
-		B_LogEntry		(GE_TeacherOC,"Торус может помочь мне увеличить силу и ловкость.");
+		B_LogEntry		(GE_TeacherOC,"РўРѕСЂСѓСЃ РјРѕР¶РµС‚ РїРѕРјРѕС‡СЊ РјРЅРµ СѓРІРµР»РёС‡РёС‚СЊ СЃРёР»Сѓ Рё Р»РѕРІРєРѕСЃС‚СЊ.");
 		log_thorustrain = TRUE;
 	};
 	Info_ClearChoices	(GRD_200_Thorus_Teach);
@@ -967,20 +967,20 @@ FUNC void  GRD_200_Thorus_ZWEIHAND1_Info()
 	if (log_thorusfight == FALSE)
 	{
 		Log_CreateTopic   	(GE_TeacherOC,LOG_NOTE);
-		B_LogEntry			(GE_TeacherOC,"Торус может научить меня вести бой двуручным мечом, если я смогу обращаться с одноручным оружием.");
+		B_LogEntry			(GE_TeacherOC,"РўРѕСЂСѓСЃ РјРѕР¶РµС‚ РЅР°СѓС‡РёС‚СЊ РјРµРЅСЏ РІРµСЃС‚Рё Р±РѕР№ РґРІСѓСЂСѓС‡РЅС‹Рј РјРµС‡РѕРј, РµСЃР»Рё СЏ СЃРјРѕРіСѓ РѕР±СЂР°С‰Р°С‚СЊСЃСЏ СЃ РѕРґРЅРѕСЂСѓС‡РЅС‹Рј РѕСЂСѓР¶РёРµРј.");
 		log_thorusfight = TRUE;
 	};
-	AI_Output (other, self,"GRD_200_Thorus_ZWEIHAND1_Info_15_01"); //Научи меня владеть двуручным мечом.
+	AI_Output (other, self,"GRD_200_Thorus_ZWEIHAND1_Info_15_01"); //РќР°СѓС‡Рё РјРµРЅСЏ РІР»Р°РґРµС‚СЊ РґРІСѓСЂСѓС‡РЅС‹Рј РјРµС‡РѕРј.
 	
 	
 	if (B_GiveSkill(other,NPC_TALENT_2H , 1, LPCOST_TALENT_2H_1))
 	{
-		AI_Output (self, other,"GRD_200_Thorus_ZWEIHAND1_Info_09_02"); //Хорошо, тогда давай начнем с легкого.
-		AI_Output (self, other,"GRD_200_Thorus_ZWEIHAND1_Info_09_03"); //Меч нужно держать горизонтально. Тебе придется хорошо замахнуться, чтобы атаковать противника тяжелым оружием.
-		AI_Output (self, other,"GRD_200_Thorus_ZWEIHAND1_Info_09_04"); //Подними руку и бей вертикально вниз. Обычно этого достаточно, чтобы избавиться от врага.
-		AI_Output (self, other,"GRD_200_Thorus_ZWEIHAND1_Info_09_05"); //Используй инерцию движения, чтобы вернуться в исходную позицию.
-		AI_Output (self, other,"GRD_200_Thorus_ZWEIHAND1_Info_09_06"); //Двуручный меч - это идеальное оружие для боковых ударов, когда тебе надо держать врага на расстоянии.
-		AI_Output (self, other,"GRD_200_Thorus_ZWEIHAND1_Info_09_07"); //В общем, можешь начать тренироваться.
+		AI_Output (self, other,"GRD_200_Thorus_ZWEIHAND1_Info_09_02"); //РҐРѕСЂРѕС€Рѕ, С‚РѕРіРґР° РґР°РІР°Р№ РЅР°С‡РЅРµРј СЃ Р»РµРіРєРѕРіРѕ.
+		AI_Output (self, other,"GRD_200_Thorus_ZWEIHAND1_Info_09_03"); //РњРµС‡ РЅСѓР¶РЅРѕ РґРµСЂР¶Р°С‚СЊ РіРѕСЂРёР·РѕРЅС‚Р°Р»СЊРЅРѕ. РўРµР±Рµ РїСЂРёРґРµС‚СЃСЏ С…РѕСЂРѕС€Рѕ Р·Р°РјР°С…РЅСѓС‚СЊСЃСЏ, С‡С‚РѕР±С‹ Р°С‚Р°РєРѕРІР°С‚СЊ РїСЂРѕС‚РёРІРЅРёРєР° С‚СЏР¶РµР»С‹Рј РѕСЂСѓР¶РёРµРј.
+		AI_Output (self, other,"GRD_200_Thorus_ZWEIHAND1_Info_09_04"); //РџРѕРґРЅРёРјРё СЂСѓРєСѓ Рё Р±РµР№ РІРµСЂС‚РёРєР°Р»СЊРЅРѕ РІРЅРёР·. РћР±С‹С‡РЅРѕ СЌС‚РѕРіРѕ РґРѕСЃС‚Р°С‚РѕС‡РЅРѕ, С‡С‚РѕР±С‹ РёР·Р±Р°РІРёС‚СЊСЃСЏ РѕС‚ РІСЂР°РіР°.
+		AI_Output (self, other,"GRD_200_Thorus_ZWEIHAND1_Info_09_05"); //РСЃРїРѕР»СЊР·СѓР№ РёРЅРµСЂС†РёСЋ РґРІРёР¶РµРЅРёСЏ, С‡С‚РѕР±С‹ РІРµСЂРЅСѓС‚СЊСЃСЏ РІ РёСЃС…РѕРґРЅСѓСЋ РїРѕР·РёС†РёСЋ.
+		AI_Output (self, other,"GRD_200_Thorus_ZWEIHAND1_Info_09_06"); //Р”РІСѓСЂСѓС‡РЅС‹Р№ РјРµС‡ - СЌС‚Рѕ РёРґРµР°Р»СЊРЅРѕРµ РѕСЂСѓР¶РёРµ РґР»СЏ Р±РѕРєРѕРІС‹С… СѓРґР°СЂРѕРІ, РєРѕРіРґР° С‚РµР±Рµ РЅР°РґРѕ РґРµСЂР¶Р°С‚СЊ РІСЂР°РіР° РЅР° СЂР°СЃСЃС‚РѕСЏРЅРёРё.
+		AI_Output (self, other,"GRD_200_Thorus_ZWEIHAND1_Info_09_07"); //Р’ РѕР±С‰РµРј, РјРѕР¶РµС€СЊ РЅР°С‡Р°С‚СЊ С‚СЂРµРЅРёСЂРѕРІР°С‚СЊСЃСЏ.
 		GRD_200_Thorus_ZWEIHAND1.permanent = 0;
 	};
 };  
@@ -1008,18 +1008,18 @@ FUNC int  GRD_200_Thorus_ZWEIHAND2_Condition()
 };
 FUNC void  GRD_200_Thorus_ZWEIHAND2_Info()
 {
-	AI_Output (other, self,"GRD_200_Thorus_ZWEIHAND2_Info_15_01"); //Я хочу научиться лучше владеть двуручным мечом.
+	AI_Output (other, self,"GRD_200_Thorus_ZWEIHAND2_Info_15_01"); //РЇ С…РѕС‡Сѓ РЅР°СѓС‡РёС‚СЊСЃСЏ Р»СѓС‡С€Рµ РІР»Р°РґРµС‚СЊ РґРІСѓСЂСѓС‡РЅС‹Рј РјРµС‡РѕРј.
 	
 	if (B_GiveSkill(other,NPC_TALENT_2H , 2, LPCOST_TALENT_2H_2))
 	{
-		AI_Output (self, other,"GRD_200_Thorus_ZWEIHAND2_Info_09_02"); //Для начала тебе надо правильно встать. Держи меч вертикально, возьмись за рукоятку обеими руками и отведи его в сторону.
-		AI_Output (self, other,"GRD_200_Thorus_ZWEIHAND2_Info_09_03"); //Теперь руби вниз, вкладывай силу от самого плеча. И затем - резкий удар вправо!
-		AI_Output (self, other,"GRD_200_Thorus_ZWEIHAND2_Info_09_04"); //У противника не будет ни единого шанса к тебе подобраться.
-		AI_Output (self, other,"GRD_200_Thorus_ZWEIHAND2_Info_09_05"); //Из этого же положения можно нанести резкий колющий удар вперед, чтобы отогнать врага.
-		AI_Output (self, other,"GRD_200_Thorus_ZWEIHAND2_Info_09_06"); //Развернись, чтобы придать мечу должный разгон, - и еще один рубящий удар!
-		AI_Output (self, other,"GRD_200_Thorus_ZWEIHAND2_Info_09_07"); //Если этого окажется недостаточно, по инерции возвращайся в прежнее положение. 
-		AI_Output (self, other,"GRD_200_Thorus_ZWEIHAND2_Info_09_08"); //Когда закончишь серию, защищайся и жди момента, чтобы атаковать снова.
-		AI_Output (self, other,"GRD_200_Thorus_ZWEIHAND2_Info_09_09"); //Секрет успеха кроется в чередовании ударов и своевременной защите.
+		AI_Output (self, other,"GRD_200_Thorus_ZWEIHAND2_Info_09_02"); //Р”Р»СЏ РЅР°С‡Р°Р»Р° С‚РµР±Рµ РЅР°РґРѕ РїСЂР°РІРёР»СЊРЅРѕ РІСЃС‚Р°С‚СЊ. Р”РµСЂР¶Рё РјРµС‡ РІРµСЂС‚РёРєР°Р»СЊРЅРѕ, РІРѕР·СЊРјРёСЃСЊ Р·Р° СЂСѓРєРѕСЏС‚РєСѓ РѕР±РµРёРјРё СЂСѓРєР°РјРё Рё РѕС‚РІРµРґРё РµРіРѕ РІ СЃС‚РѕСЂРѕРЅСѓ.
+		AI_Output (self, other,"GRD_200_Thorus_ZWEIHAND2_Info_09_03"); //РўРµРїРµСЂСЊ СЂСѓР±Рё РІРЅРёР·, РІРєР»Р°РґС‹РІР°Р№ СЃРёР»Сѓ РѕС‚ СЃР°РјРѕРіРѕ РїР»РµС‡Р°. Р Р·Р°С‚РµРј - СЂРµР·РєРёР№ СѓРґР°СЂ РІРїСЂР°РІРѕ!
+		AI_Output (self, other,"GRD_200_Thorus_ZWEIHAND2_Info_09_04"); //РЈ РїСЂРѕС‚РёРІРЅРёРєР° РЅРµ Р±СѓРґРµС‚ РЅРё РµРґРёРЅРѕРіРѕ С€Р°РЅСЃР° Рє С‚РµР±Рµ РїРѕРґРѕР±СЂР°С‚СЊСЃСЏ.
+		AI_Output (self, other,"GRD_200_Thorus_ZWEIHAND2_Info_09_05"); //РР· СЌС‚РѕРіРѕ Р¶Рµ РїРѕР»РѕР¶РµРЅРёСЏ РјРѕР¶РЅРѕ РЅР°РЅРµСЃС‚Рё СЂРµР·РєРёР№ РєРѕР»СЋС‰РёР№ СѓРґР°СЂ РІРїРµСЂРµРґ, С‡С‚РѕР±С‹ РѕС‚РѕРіРЅР°С‚СЊ РІСЂР°РіР°.
+		AI_Output (self, other,"GRD_200_Thorus_ZWEIHAND2_Info_09_06"); //Р Р°Р·РІРµСЂРЅРёСЃСЊ, С‡С‚РѕР±С‹ РїСЂРёРґР°С‚СЊ РјРµС‡Сѓ РґРѕР»Р¶РЅС‹Р№ СЂР°Р·РіРѕРЅ, - Рё РµС‰Рµ РѕРґРёРЅ СЂСѓР±СЏС‰РёР№ СѓРґР°СЂ!
+		AI_Output (self, other,"GRD_200_Thorus_ZWEIHAND2_Info_09_07"); //Р•СЃР»Рё СЌС‚РѕРіРѕ РѕРєР°Р¶РµС‚СЃСЏ РЅРµРґРѕСЃС‚Р°С‚РѕС‡РЅРѕ, РїРѕ РёРЅРµСЂС†РёРё РІРѕР·РІСЂР°С‰Р°Р№СЃСЏ РІ РїСЂРµР¶РЅРµРµ РїРѕР»РѕР¶РµРЅРёРµ. 
+		AI_Output (self, other,"GRD_200_Thorus_ZWEIHAND2_Info_09_08"); //РљРѕРіРґР° Р·Р°РєРѕРЅС‡РёС€СЊ СЃРµСЂРёСЋ, Р·Р°С‰РёС‰Р°Р№СЃСЏ Рё Р¶РґРё РјРѕРјРµРЅС‚Р°, С‡С‚РѕР±С‹ Р°С‚Р°РєРѕРІР°С‚СЊ СЃРЅРѕРІР°.
+		AI_Output (self, other,"GRD_200_Thorus_ZWEIHAND2_Info_09_09"); //РЎРµРєСЂРµС‚ СѓСЃРїРµС…Р° РєСЂРѕРµС‚СЃСЏ РІ С‡РµСЂРµРґРѕРІР°РЅРёРё СѓРґР°СЂРѕРІ Рё СЃРІРѕРµРІСЂРµРјРµРЅРЅРѕР№ Р·Р°С‰РёС‚Рµ.
 		GRD_200_Thorus_ZWEIHAND2.permanent = 0 ;
 	};
 };  

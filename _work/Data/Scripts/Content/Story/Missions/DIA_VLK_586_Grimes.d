@@ -18,8 +18,8 @@ FUNC int  VLK_586_Grimes_Exit_Condition()
 
 FUNC VOID  VLK_586_Grimes_Exit_Info()
 {
-	AI_Output (other, self,"VLK_586_Grimes_Exit_Info_15_01"); //Желаю удачи!
-	AI_Output (self, other,"VLK_586_Grimes_Exit_Info_04_02"); //И тебе того же, паренек.
+	AI_Output (other, self,"VLK_586_Grimes_Exit_Info_15_01"); //Р–РµР»Р°СЋ СѓРґР°С‡Рё!
+	AI_Output (self, other,"VLK_586_Grimes_Exit_Info_04_02"); //Р С‚РµР±Рµ С‚РѕРіРѕ Р¶Рµ, РїР°СЂРµРЅРµРє.
 	
 	AI_StopProcessInfos	( self );
 };
@@ -36,7 +36,7 @@ instance  VLK_586_Grimes_STORY (C_INFO)
 	information		= VLK_586_Grimes_STORY_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Ты давно здесь живешь?"; 
+	description		= "РўС‹ РґР°РІРЅРѕ Р·РґРµСЃСЊ Р¶РёРІРµС€СЊ?"; 
 };
 
 FUNC int  VLK_586_Grimes_STORY_Condition()
@@ -51,11 +51,11 @@ FUNC int  VLK_586_Grimes_STORY_Condition()
 
 FUNC void  VLK_586_Grimes_STORY_Info()
 {
-	AI_Output (other, self,"VLK_586_Grimes_STORY_Info_15_01"); //Ты давно здесь живешь?
-	AI_Output (self, other,"VLK_586_Grimes_STORY_Info_04_02"); //Да, я уже лет 10 здесь живу. И знаешь, за это время я многому научился и многое испытал.
-	AI_Output (self, other,"VLK_586_Grimes_STORY_Info_04_03"); //В какие только неприятности я не попадал, но, как видишь, я все еще жив.
-	AI_Output (self, other,"VLK_586_Grimes_STORY_Info_04_04"); //Когда-то давным-давно мы работали на шахте... Теперь она заброшена, да и балки, наверное, уже давно обрушились...
-	AI_Output (self, other,"VLK_586_Grimes_STORY_Info_04_05"); //Но, это было давно...
+	AI_Output (other, self,"VLK_586_Grimes_STORY_Info_15_01"); //РўС‹ РґР°РІРЅРѕ Р·РґРµСЃСЊ Р¶РёРІРµС€СЊ?
+	AI_Output (self, other,"VLK_586_Grimes_STORY_Info_04_02"); //Р”Р°, СЏ СѓР¶Рµ Р»РµС‚ 10 Р·РґРµСЃСЊ Р¶РёРІСѓ. Р Р·РЅР°РµС€СЊ, Р·Р° СЌС‚Рѕ РІСЂРµРјСЏ СЏ РјРЅРѕРіРѕРјСѓ РЅР°СѓС‡РёР»СЃСЏ Рё РјРЅРѕРіРѕРµ РёСЃРїС‹С‚Р°Р».
+	AI_Output (self, other,"VLK_586_Grimes_STORY_Info_04_03"); //Р’ РєР°РєРёРµ С‚РѕР»СЊРєРѕ РЅРµРїСЂРёСЏС‚РЅРѕСЃС‚Рё СЏ РЅРµ РїРѕРїР°РґР°Р», РЅРѕ, РєР°Рє РІРёРґРёС€СЊ, СЏ РІСЃРµ РµС‰Рµ Р¶РёРІ.
+	AI_Output (self, other,"VLK_586_Grimes_STORY_Info_04_04"); //РљРѕРіРґР°-С‚Рѕ РґР°РІРЅС‹Рј-РґР°РІРЅРѕ РјС‹ СЂР°Р±РѕС‚Р°Р»Рё РЅР° С€Р°С…С‚Рµ... РўРµРїРµСЂСЊ РѕРЅР° Р·Р°Р±СЂРѕС€РµРЅР°, РґР° Рё Р±Р°Р»РєРё, РЅР°РІРµСЂРЅРѕРµ, СѓР¶Рµ РґР°РІРЅРѕ РѕР±СЂСѓС€РёР»РёСЃСЊ...
+	AI_Output (self, other,"VLK_586_Grimes_STORY_Info_04_05"); //РќРѕ, СЌС‚Рѕ Р±С‹Р»Рѕ РґР°РІРЅРѕ...
 };
 
 instance  VLK_586_Grimes_KNOW (C_INFO)
@@ -65,7 +65,7 @@ instance  VLK_586_Grimes_KNOW (C_INFO)
 	information		= VLK_586_Grimes_KNOW_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Должно быть, ты слышал немало о разных планах побега из колонии."; 
+	description		= "Р”РѕР»Р¶РЅРѕ Р±С‹С‚СЊ, С‚С‹ СЃР»С‹С€Р°Р» РЅРµРјР°Р»Рѕ Рѕ СЂР°Р·РЅС‹С… РїР»Р°РЅР°С… РїРѕР±РµРіР° РёР· РєРѕР»РѕРЅРёРё."; 
 };
 
 FUNC int  VLK_586_Grimes_KNOW_Condition()
@@ -78,13 +78,13 @@ FUNC int  VLK_586_Grimes_KNOW_Condition()
 };
 FUNC void  VLK_586_Grimes_KNOW_Info()
 {
-	AI_Output (other, self,"VLK_586_Grimes_KNOW_Info_15_01"); //Должно быть, ты уже немало слышал о разных планах побега из колонии.
-	AI_Output (self, other,"VLK_586_Grimes_KNOW_Info_04_02"); //Послушай, парень, я понимаю твое желание выбраться отсюда. Но мой совет - забудь об этом.
-	AI_Output (self, other,"VLK_586_Grimes_KNOW_Info_04_03"); //Лучше и не думай о побеге. Я видел тех, кто пытался пройти через Барьер.
-	AI_Output (self, other,"VLK_586_Grimes_KNOW_Info_04_04"); //Не повторяй их ошибок. Барьер никого не выпустит.
-	AI_Output (other, self,"VLK_586_Grimes_KNOW_Info_15_05"); //В мои планы не входит провести ближайшие десять лет в этой шахте!
-	AI_Output (self, other,"VLK_586_Grimes_KNOW_Info_04_06"); //Не хочешь - не надо. Возможно, когда-нибудь ты будешь большим человеком, кто знает.
-	AI_Output (self, other,"VLK_586_Grimes_KNOW_Info_04_07"); //Да, только Барьеру не важно кем ты будешь, он тебя все равно остановит.
+	AI_Output (other, self,"VLK_586_Grimes_KNOW_Info_15_01"); //Р”РѕР»Р¶РЅРѕ Р±С‹С‚СЊ, С‚С‹ СѓР¶Рµ РЅРµРјР°Р»Рѕ СЃР»С‹С€Р°Р» Рѕ СЂР°Р·РЅС‹С… РїР»Р°РЅР°С… РїРѕР±РµРіР° РёР· РєРѕР»РѕРЅРёРё.
+	AI_Output (self, other,"VLK_586_Grimes_KNOW_Info_04_02"); //РџРѕСЃР»СѓС€Р°Р№, РїР°СЂРµРЅСЊ, СЏ РїРѕРЅРёРјР°СЋ С‚РІРѕРµ Р¶РµР»Р°РЅРёРµ РІС‹Р±СЂР°С‚СЊСЃСЏ РѕС‚СЃСЋРґР°. РќРѕ РјРѕР№ СЃРѕРІРµС‚ - Р·Р°Р±СѓРґСЊ РѕР± СЌС‚РѕРј.
+	AI_Output (self, other,"VLK_586_Grimes_KNOW_Info_04_03"); //Р›СѓС‡С€Рµ Рё РЅРµ РґСѓРјР°Р№ Рѕ РїРѕР±РµРіРµ. РЇ РІРёРґРµР» С‚РµС…, РєС‚Рѕ РїС‹С‚Р°Р»СЃСЏ РїСЂРѕР№С‚Рё С‡РµСЂРµР· Р‘Р°СЂСЊРµСЂ.
+	AI_Output (self, other,"VLK_586_Grimes_KNOW_Info_04_04"); //РќРµ РїРѕРІС‚РѕСЂСЏР№ РёС… РѕС€РёР±РѕРє. Р‘Р°СЂСЊРµСЂ РЅРёРєРѕРіРѕ РЅРµ РІС‹РїСѓСЃС‚РёС‚.
+	AI_Output (other, self,"VLK_586_Grimes_KNOW_Info_15_05"); //Р’ РјРѕРё РїР»Р°РЅС‹ РЅРµ РІС…РѕРґРёС‚ РїСЂРѕРІРµСЃС‚Рё Р±Р»РёР¶Р°Р№С€РёРµ РґРµСЃСЏС‚СЊ Р»РµС‚ РІ СЌС‚РѕР№ С€Р°С…С‚Рµ!
+	AI_Output (self, other,"VLK_586_Grimes_KNOW_Info_04_06"); //РќРµ С…РѕС‡РµС€СЊ - РЅРµ РЅР°РґРѕ. Р’РѕР·РјРѕР¶РЅРѕ, РєРѕРіРґР°-РЅРёР±СѓРґСЊ С‚С‹ Р±СѓРґРµС€СЊ Р±РѕР»СЊС€РёРј С‡РµР»РѕРІРµРєРѕРј, РєС‚Рѕ Р·РЅР°РµС‚.
+	AI_Output (self, other,"VLK_586_Grimes_KNOW_Info_04_07"); //Р”Р°, С‚РѕР»СЊРєРѕ Р‘Р°СЂСЊРµСЂСѓ РЅРµ РІР°Р¶РЅРѕ РєРµРј С‚С‹ Р±СѓРґРµС€СЊ, РѕРЅ С‚РµР±СЏ РІСЃРµ СЂР°РІРЅРѕ РѕСЃС‚Р°РЅРѕРІРёС‚.
 };
 
 instance VLK_586_Grimes_FIRST (C_INFO)
@@ -103,5 +103,5 @@ FUNC int  VLK_586_Grimes_FIRST_Condition()
 
 func void  VLK_586_Grimes_FIRST_Info()
 {
-	AI_Output (self, other,"VLK_586_Grimes_FIRST_Info_04_02"); //Новенький! Ты руду добывал когда-нибудь?
+	AI_Output (self, other,"VLK_586_Grimes_FIRST_Info_04_02"); //РќРѕРІРµРЅСЊРєРёР№! РўС‹ СЂСѓРґСѓ РґРѕР±С‹РІР°Р» РєРѕРіРґР°-РЅРёР±СѓРґСЊ?
 };  

@@ -2,7 +2,7 @@ instance ORG_857_Calash (Npc_Default)
 {
 	//-------- primary data --------
 	
-	name =					"Калаш";
+	name =					"РљР°Р»Р°С€";
 	Npctype =				Npctype_Main;
 	guild =					GIL_ORG;      
 	level =					11;

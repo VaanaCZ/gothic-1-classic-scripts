@@ -2,7 +2,7 @@
 //##
 //##							KAPITEL 3
 //##							=========
-//##	Der Spieler kehrt vom Ork-Friedhof zurьck und berichtet
+//##	Der Spieler kehrt vom Ork-Friedhof zurСЊck und berichtet
 //##	von Baal-Lukor und den Ereignissen dort.
 //##
 //#####################################################################
@@ -10,6 +10,6 @@
 func void B_Story_BackFromOrcGraveyard()
 {
 	//-------- Tagebucheintrag --------
-	B_LogEntry			(CH3_OrcGraveyard,	"Я рассказал Кор-Ангару о том, что произошло на кладбище орков. Эти события расстроили его, и теперь он надеется только на выздоровление Юбериона.");
+	B_LogEntry			(CH3_OrcGraveyard,	"РЇ СЂР°СЃСЃРєР°Р·Р°Р» РљРѕСЂ-РђРЅРіР°СЂСѓ Рѕ С‚РѕРј, С‡С‚Рѕ РїСЂРѕРёР·РѕС€Р»Рѕ РЅР° РєР»Р°РґР±РёС‰Рµ РѕСЂРєРѕРІ. Р­С‚Рё СЃРѕР±С‹С‚РёСЏ СЂР°СЃСЃС‚СЂРѕРёР»Рё РµРіРѕ, Рё С‚РµРїРµСЂСЊ РѕРЅ РЅР°РґРµРµС‚СЃСЏ С‚РѕР»СЊРєРѕ РЅР° РІС‹Р·РґРѕСЂРѕРІР»РµРЅРёРµ Р®Р±РµСЂРёРѕРЅР°.");
 	Log_SetTopicStatus	(CH3_OrcGraveyard,	LOG_SUCCESS);
 };

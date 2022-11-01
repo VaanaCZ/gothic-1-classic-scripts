@@ -34,7 +34,7 @@ instance  DIA_Viran_What (C_INFO)
 	condition	= DIA_Viran_What_Condition;
 	information	= DIA_Viran_What_Info;
 	permanent	= 0;
-	description	= "Что у тебя за работа?";
+	description	= "Р§С‚Рѕ Сѓ С‚РµР±СЏ Р·Р° СЂР°Р±РѕС‚Р°?";
 };                       
 
 FUNC int  DIA_Viran_What_Condition()
@@ -44,12 +44,12 @@ FUNC int  DIA_Viran_What_Condition()
 
 FUNC VOID  DIA_Viran_What_Info()
 {
-	AI_Output (other, self,"DIA_Viran_What_15_00"); //Что у тебя за работа?
-	AI_Output (self, other,"DIA_Viran_What_07_01"); //Собираю болотник. Другие братья обработают его должным образом, и его можно будет курить.
-	AI_Output (self, other,"DIA_Viran_What_07_02"); //Болота очень опасны, здесь водятся твари, убивающие всех без разбора, но болотник растет только здесь. Но это только к лучшему.
-	AI_Output (other, self,"DIA_Viran_What_15_03"); //Почему?
-	AI_Output (self, other,"DIA_Viran_What_07_04"); //Потому что никто из двух других лагерей сюда не заглядывает. Из всех людей в колонии только мы можем добывать болотник.
-	AI_Output (self, other,"DIA_Viran_What_07_05"); //Мы продаем его другим лагерям, и сами назначаем цены.
+	AI_Output (other, self,"DIA_Viran_What_15_00"); //Р§С‚Рѕ Сѓ С‚РµР±СЏ Р·Р° СЂР°Р±РѕС‚Р°?
+	AI_Output (self, other,"DIA_Viran_What_07_01"); //РЎРѕР±РёСЂР°СЋ Р±РѕР»РѕС‚РЅРёРє. Р”СЂСѓРіРёРµ Р±СЂР°С‚СЊСЏ РѕР±СЂР°Р±РѕС‚Р°СЋС‚ РµРіРѕ РґРѕР»Р¶РЅС‹Рј РѕР±СЂР°Р·РѕРј, Рё РµРіРѕ РјРѕР¶РЅРѕ Р±СѓРґРµС‚ РєСѓСЂРёС‚СЊ.
+	AI_Output (self, other,"DIA_Viran_What_07_02"); //Р‘РѕР»РѕС‚Р° РѕС‡РµРЅСЊ РѕРїР°СЃРЅС‹, Р·РґРµСЃСЊ РІРѕРґСЏС‚СЃСЏ С‚РІР°СЂРё, СѓР±РёРІР°СЋС‰РёРµ РІСЃРµС… Р±РµР· СЂР°Р·Р±РѕСЂР°, РЅРѕ Р±РѕР»РѕС‚РЅРёРє СЂР°СЃС‚РµС‚ С‚РѕР»СЊРєРѕ Р·РґРµСЃСЊ. РќРѕ СЌС‚Рѕ С‚РѕР»СЊРєРѕ Рє Р»СѓС‡С€РµРјСѓ.
+	AI_Output (other, self,"DIA_Viran_What_15_03"); //РџРѕС‡РµРјСѓ?
+	AI_Output (self, other,"DIA_Viran_What_07_04"); //РџРѕС‚РѕРјСѓ С‡С‚Рѕ РЅРёРєС‚Рѕ РёР· РґРІСѓС… РґСЂСѓРіРёС… Р»Р°РіРµСЂРµР№ СЃСЋРґР° РЅРµ Р·Р°РіР»СЏРґС‹РІР°РµС‚. РР· РІСЃРµС… Р»СЋРґРµР№ РІ РєРѕР»РѕРЅРёРё С‚РѕР»СЊРєРѕ РјС‹ РјРѕР¶РµРј РґРѕР±С‹РІР°С‚СЊ Р±РѕР»РѕС‚РЅРёРє.
+	AI_Output (self, other,"DIA_Viran_What_07_05"); //РњС‹ РїСЂРѕРґР°РµРј РµРіРѕ РґСЂСѓРіРёРј Р»Р°РіРµСЂСЏРј, Рё СЃР°РјРё РЅР°Р·РЅР°С‡Р°РµРј С†РµРЅС‹.
 };
 
 // **************************************************
@@ -63,7 +63,7 @@ instance  DIA_Viran_FetchWeed (C_INFO)
 	condition	= DIA_Viran_FetchWeed_Condition;
 	information	= DIA_Viran_FetchWeed_Info;
 	permanent	= 0;
-	description	= "Я от Идола Орана. Я должен доставить Кор Галому урожай болотника.";
+	description	= "РЇ РѕС‚ РРґРѕР»Р° РћСЂР°РЅР°. РЇ РґРѕР»Р¶РµРЅ РґРѕСЃС‚Р°РІРёС‚СЊ РљРѕСЂ Р“Р°Р»РѕРјСѓ СѓСЂРѕР¶Р°Р№ Р±РѕР»РѕС‚РЅРёРєР°.";
 };                       
 
 FUNC int  DIA_Viran_FetchWeed_Condition()
@@ -76,25 +76,25 @@ FUNC int  DIA_Viran_FetchWeed_Condition()
 
 FUNC VOID  DIA_Viran_FetchWeed_Info()
 {
-	AI_Output (other, self,"DIA_Viran_FetchWeed_15_00"); //Меня прислал Идол Оран. Я должен доставить Кор Галому урожай болотника.
-	AI_Output (self, other,"DIA_Viran_FetchWeed_07_01"); //Ты думаешь, все так просто, да?
-	AI_Output (self, other,"DIA_Viran_FetchWeed_07_02"); //Так может любой прийти и сказать: 'Меня прислал Идол Оран', а потом не найдешь ни его, ни болотника.
+	AI_Output (other, self,"DIA_Viran_FetchWeed_15_00"); //РњРµРЅСЏ РїСЂРёСЃР»Р°Р» РРґРѕР» РћСЂР°РЅ. РЇ РґРѕР»Р¶РµРЅ РґРѕСЃС‚Р°РІРёС‚СЊ РљРѕСЂ Р“Р°Р»РѕРјСѓ СѓСЂРѕР¶Р°Р№ Р±РѕР»РѕС‚РЅРёРєР°.
+	AI_Output (self, other,"DIA_Viran_FetchWeed_07_01"); //РўС‹ РґСѓРјР°РµС€СЊ, РІСЃРµ С‚Р°Рє РїСЂРѕСЃС‚Рѕ, РґР°?
+	AI_Output (self, other,"DIA_Viran_FetchWeed_07_02"); //РўР°Рє РјРѕР¶РµС‚ Р»СЋР±РѕР№ РїСЂРёР№С‚Рё Рё СЃРєР°Р·Р°С‚СЊ: 'РњРµРЅСЏ РїСЂРёСЃР»Р°Р» РРґРѕР» РћСЂР°РЅ', Р° РїРѕС‚РѕРј РЅРµ РЅР°Р№РґРµС€СЊ РЅРё РµРіРѕ, РЅРё Р±РѕР»РѕС‚РЅРёРєР°.
 	
 	Info_ClearChoices 	(DIA_Viran_FetchWeed);
-	Info_Addchoice 		(DIA_Viran_FetchWeed,"Ну сходи и спроси у него сам, если мне не веришь!"	,DIA_Viran_FetchWeed_GotoHim);
-	Info_Addchoice 		(DIA_Viran_FetchWeed,"Но меня действительно послал Идол Оран!"					,DIA_Viran_FetchWeed_Really);
+	Info_Addchoice 		(DIA_Viran_FetchWeed,"РќСѓ СЃС…РѕРґРё Рё СЃРїСЂРѕСЃРё Сѓ РЅРµРіРѕ СЃР°Рј, РµСЃР»Рё РјРЅРµ РЅРµ РІРµСЂРёС€СЊ!"	,DIA_Viran_FetchWeed_GotoHim);
+	Info_Addchoice 		(DIA_Viran_FetchWeed,"РќРѕ РјРµРЅСЏ РґРµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ РїРѕСЃР»Р°Р» РРґРѕР» РћСЂР°РЅ!"					,DIA_Viran_FetchWeed_Really);
 };
 	
 func void DIA_Viran_FetchWeed_Really()
 {
-	AI_Output (other, self,"DIA_Viran_FetchWeed_Really_15_00"); //Но меня действительно послал Идол Оран!
-	AI_Output (self, other,"DIA_Viran_FetchWeed_Really_07_01"); //Ну, да, как же.
+	AI_Output (other, self,"DIA_Viran_FetchWeed_Really_15_00"); //РќРѕ РјРµРЅСЏ РґРµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ РїРѕСЃР»Р°Р» РРґРѕР» РћСЂР°РЅ!
+	AI_Output (self, other,"DIA_Viran_FetchWeed_Really_07_01"); //РќСѓ, РґР°, РєР°Рє Р¶Рµ.
 };
 
 func void DIA_Viran_FetchWeed_GotoHim()
 {
-	AI_Output (other, self,"DIA_Viran_FetchWeed_GotoHim_15_00"); //Ну сходи и спроси у него сам, если мне не веришь!
-	AI_Output (self, other,"DIA_Viran_FetchWeed_GotoHim_07_01"); //У меня есть идея получше. Ты докажешь, что работаешь на нас, если выполнишь одно маленькое задание!
+	AI_Output (other, self,"DIA_Viran_FetchWeed_GotoHim_15_00"); //РќСѓ СЃС…РѕРґРё Рё СЃРїСЂРѕСЃРё Сѓ РЅРµРіРѕ СЃР°Рј, РµСЃР»Рё РјРЅРµ РЅРµ РІРµСЂРёС€СЊ!
+	AI_Output (self, other,"DIA_Viran_FetchWeed_GotoHim_07_01"); //РЈ РјРµРЅСЏ РµСЃС‚СЊ РёРґРµСЏ РїРѕР»СѓС‡С€Рµ. РўС‹ РґРѕРєР°Р¶РµС€СЊ, С‡С‚Рѕ СЂР°Р±РѕС‚Р°РµС€СЊ РЅР° РЅР°СЃ, РµСЃР»Рё РІС‹РїРѕР»РЅРёС€СЊ РѕРґРЅРѕ РјР°Р»РµРЅСЊРєРѕРµ Р·Р°РґР°РЅРёРµ!
 	Info_ClearChoices 	(DIA_Viran_FetchWeed);
 };
 
@@ -111,7 +111,7 @@ instance  DIA_Viran_Bloodflies (C_INFO)
 	condition	= DIA_Viran_Bloodflies_Condition;
 	information	= DIA_Viran_Bloodflies_Info;
 	permanent	= 0;
-	description	= "И что я должен сделать?";
+	description	= "Р С‡С‚Рѕ СЏ РґРѕР»Р¶РµРЅ СЃРґРµР»Р°С‚СЊ?";
 };                       
 
 FUNC int  DIA_Viran_Bloodflies_Condition()
@@ -124,12 +124,12 @@ FUNC int  DIA_Viran_Bloodflies_Condition()
 
 FUNC VOID  DIA_Viran_Bloodflies_Info()
 {
-	AI_Output (other, self,"DIA_Viran_Bloodflies_15_00"); //И что я должен сделать?
-	AI_Output (self, other,"DIA_Viran_Bloodflies_07_01"); //Все очень просто. Как я уже говорил, здесь опасно работать. Но вот чертовы шершни нас совсем извели.
-	AI_Output (self, other,"DIA_Viran_Bloodflies_07_02"); //Без них нам было бы гораздо лучше! Теперь тебе все понятно?
+	AI_Output (other, self,"DIA_Viran_Bloodflies_15_00"); //Р С‡С‚Рѕ СЏ РґРѕР»Р¶РµРЅ СЃРґРµР»Р°С‚СЊ?
+	AI_Output (self, other,"DIA_Viran_Bloodflies_07_01"); //Р’СЃРµ РѕС‡РµРЅСЊ РїСЂРѕСЃС‚Рѕ. РљР°Рє СЏ СѓР¶Рµ РіРѕРІРѕСЂРёР», Р·РґРµСЃСЊ РѕРїР°СЃРЅРѕ СЂР°Р±РѕС‚Р°С‚СЊ. РќРѕ РІРѕС‚ С‡РµСЂС‚РѕРІС‹ С€РµСЂС€РЅРё РЅР°СЃ СЃРѕРІСЃРµРј РёР·РІРµР»Рё.
+	AI_Output (self, other,"DIA_Viran_Bloodflies_07_02"); //Р‘РµР· РЅРёС… РЅР°Рј Р±С‹Р»Рѕ Р±С‹ РіРѕСЂР°Р·РґРѕ Р»СѓС‡С€Рµ! РўРµРїРµСЂСЊ С‚РµР±Рµ РІСЃРµ РїРѕРЅСЏС‚РЅРѕ?
 	Viran_Bloodflies = LOG_RUNNING;
 
-	B_LogEntry			(CH1_DeliverWeed,	"Виран отдаст мне урожай болотника после того, как я убью всех шершней в округе.");
+	B_LogEntry			(CH1_DeliverWeed,	"Р’РёСЂР°РЅ РѕС‚РґР°СЃС‚ РјРЅРµ СѓСЂРѕР¶Р°Р№ Р±РѕР»РѕС‚РЅРёРєР° РїРѕСЃР»Рµ С‚РѕРіРѕ, РєР°Рє СЏ СѓР±СЊСЋ РІСЃРµС… С€РµСЂС€РЅРµР№ РІ РѕРєСЂСѓРіРµ.");
 };
 	
 // **************************************************
@@ -145,7 +145,7 @@ instance  DIA_Viran_Running (C_INFO)
 	condition	= DIA_Viran_Running_Condition;
 	information	= DIA_Viran_Running_Info;
 	permanent	= 1;
-	description	= "Но я не вижу здесь никаких шершней.";
+	description	= "РќРѕ СЏ РЅРµ РІРёР¶Сѓ Р·РґРµСЃСЊ РЅРёРєР°РєРёС… С€РµСЂС€РЅРµР№.";
 };                       
 
 FUNC int  DIA_Viran_Running_Condition()
@@ -158,31 +158,31 @@ FUNC int  DIA_Viran_Running_Condition()
 
 FUNC VOID  DIA_Viran_Running_Info()
 {
-	AI_Output (other, self,"DIA_Viran_Running_15_00"); //Но я не вижу здесь никаких шершней.
+	AI_Output (other, self,"DIA_Viran_Running_15_00"); //РќРѕ СЏ РЅРµ РІРёР¶Сѓ Р·РґРµСЃСЊ РЅРёРєР°РєРёС… С€РµСЂС€РЅРµР№.
 	Npc_PerceiveAll(self);
 	if ( Wld_DetectNpc(self,bloodfly,ZS_MM_Rtn_Wusel,-1) && (Npc_GetDistToNpc(self, other)<2000) ) //other = nearest Bloodfly (Instance/ZS/Guild)
-	//wenn keine Bloodfly in 40m, dann other noch unverдndert (= hero)
+	//wenn keine Bloodfly in 40m, dann other noch unverРґndert (= hero)
 	{
-		AI_Output (self, hero,"DIA_Viran_Running_07_00"); //Ну, они летают в десятке метров от нас. Сам посмотри!
-		AI_Output (self, hero,"DIA_Viran_Running_07_01"); //Просто так ты не отделаешься!
+		AI_Output (self, hero,"DIA_Viran_Running_07_00"); //РќСѓ, РѕРЅРё Р»РµС‚Р°СЋС‚ РІ РґРµСЃСЏС‚РєРµ РјРµС‚СЂРѕРІ РѕС‚ РЅР°СЃ. РЎР°Рј РїРѕСЃРјРѕС‚СЂРё!
+		AI_Output (self, hero,"DIA_Viran_Running_07_01"); //РџСЂРѕСЃС‚Рѕ С‚Р°Рє С‚С‹ РЅРµ РѕС‚РґРµР»Р°РµС€СЊСЃСЏ!
 	}
 	else
 	{
-		AI_Output (self, hero,"DIA_Viran_Running_07_02"); //О, шершней больше нигде не видно. Хорошая работа!
-		AI_Output (self, hero,"DIA_Viran_Running_07_03"); //Ее смог бы сделать либо полный идиот, либо один из нас.
-		AI_Output (self, hero,"DIA_Viran_Running_07_04"); //А идиоту не хватит ума, чтобы обмануть меня, я прав?
-		AI_Output (self, hero,"DIA_Viran_Running_07_05"); //Вот, возьми урожай и отнеси его Кор Галому.
-		AI_Output (self, hero,"DIA_Viran_Running_07_06"); //Если он скажет, что этого слишком мало, предложи ему самому попробовать поработать здесь, тогда-то он узнает, как нам достается болотник.
+		AI_Output (self, hero,"DIA_Viran_Running_07_02"); //Рћ, С€РµСЂС€РЅРµР№ Р±РѕР»СЊС€Рµ РЅРёРіРґРµ РЅРµ РІРёРґРЅРѕ. РҐРѕСЂРѕС€Р°СЏ СЂР°Р±РѕС‚Р°!
+		AI_Output (self, hero,"DIA_Viran_Running_07_03"); //Р•Рµ СЃРјРѕРі Р±С‹ СЃРґРµР»Р°С‚СЊ Р»РёР±Рѕ РїРѕР»РЅС‹Р№ РёРґРёРѕС‚, Р»РёР±Рѕ РѕРґРёРЅ РёР· РЅР°СЃ.
+		AI_Output (self, hero,"DIA_Viran_Running_07_04"); //Рђ РёРґРёРѕС‚Сѓ РЅРµ С…РІР°С‚РёС‚ СѓРјР°, С‡С‚РѕР±С‹ РѕР±РјР°РЅСѓС‚СЊ РјРµРЅСЏ, СЏ РїСЂР°РІ?
+		AI_Output (self, hero,"DIA_Viran_Running_07_05"); //Р’РѕС‚, РІРѕР·СЊРјРё СѓСЂРѕР¶Р°Р№ Рё РѕС‚РЅРµСЃРё РµРіРѕ РљРѕСЂ Р“Р°Р»РѕРјСѓ.
+		AI_Output (self, hero,"DIA_Viran_Running_07_06"); //Р•СЃР»Рё РѕРЅ СЃРєР°Р¶РµС‚, С‡С‚Рѕ СЌС‚РѕРіРѕ СЃР»РёС€РєРѕРј РјР°Р»Рѕ, РїСЂРµРґР»РѕР¶Рё РµРјСѓ СЃР°РјРѕРјСѓ РїРѕРїСЂРѕР±РѕРІР°С‚СЊ РїРѕСЂР°Р±РѕС‚Р°С‚СЊ Р·РґРµСЃСЊ, С‚РѕРіРґР°-С‚Рѕ РѕРЅ СѓР·РЅР°РµС‚, РєР°Рє РЅР°Рј РґРѕСЃС‚Р°РµС‚СЃСЏ Р±РѕР»РѕС‚РЅРёРє.
 		
 		B_GiveInvItems  (self, hero, ItMi_Plants_Swampherb_01, 50);
 
 		if	Npc_KnowsInfo(hero, DIA_Balor_FetchWeed)
 		{
-			B_LogEntry	(CH1_DeliverWeed,	"Виран отдал мне вторую половину урожая болотника. Посмотрим, что скажет на это Кор Галом.");
+			B_LogEntry	(CH1_DeliverWeed,	"Р’РёСЂР°РЅ РѕС‚РґР°Р» РјРЅРµ РІС‚РѕСЂСѓСЋ РїРѕР»РѕРІРёРЅСѓ СѓСЂРѕР¶Р°СЏ Р±РѕР»РѕС‚РЅРёРєР°. РџРѕСЃРјРѕС‚СЂРёРј, С‡С‚Рѕ СЃРєР°Р¶РµС‚ РЅР° СЌС‚Рѕ РљРѕСЂ Р“Р°Р»РѕРј.");
 		}
 		else
 		{
-			B_LogEntry	(CH1_DeliverWeed,	"Виран дал мне урожай болотника. Его оказалось слишком мало. Мне кажется, он дал мне только половину.");
+			B_LogEntry	(CH1_DeliverWeed,	"Р’РёСЂР°РЅ РґР°Р» РјРЅРµ СѓСЂРѕР¶Р°Р№ Р±РѕР»РѕС‚РЅРёРєР°. Р•РіРѕ РѕРєР°Р·Р°Р»РѕСЃСЊ СЃР»РёС€РєРѕРј РјР°Р»Рѕ. РњРЅРµ РєР°Р¶РµС‚СЃСЏ, РѕРЅ РґР°Р» РјРЅРµ С‚РѕР»СЊРєРѕ РїРѕР»РѕРІРёРЅСѓ.");
 		};
 		B_GiveXP		(XP_WeedFromViran);
 				
@@ -203,7 +203,7 @@ instance  DIA_Viran_Perm (C_INFO)
 	condition	= DIA_Viran_Perm_Condition;
 	information	= DIA_Viran_Perm_Info;
 	permanent	= 1;
-	description	= "Как идет сбор урожая?";
+	description	= "РљР°Рє РёРґРµС‚ СЃР±РѕСЂ СѓСЂРѕР¶Р°СЏ?";
 };                       
 
 FUNC int  DIA_Viran_Perm_Condition()
@@ -216,9 +216,9 @@ FUNC int  DIA_Viran_Perm_Condition()
 
 FUNC VOID  DIA_Viran_Perm_Info()
 {
-	AI_Output (other, self,"DIA_Viran_Perm_15_00"); //Как идет сбор урожая?
-	AI_Output (self, other,"DIA_Viran_Perm_07_01"); //Да, да, посмейся. Уверен, что Гуру поручают тебе работу получше, чем у нас.
-	AI_Output (self, other,"DIA_Viran_Perm_07_02"); //Ну, я-то все равно не сам здесь гну спину. Для этого есть 'пехота'.
+	AI_Output (other, self,"DIA_Viran_Perm_15_00"); //РљР°Рє РёРґРµС‚ СЃР±РѕСЂ СѓСЂРѕР¶Р°СЏ?
+	AI_Output (self, other,"DIA_Viran_Perm_07_01"); //Р”Р°, РґР°, РїРѕСЃРјРµР№СЃСЏ. РЈРІРµСЂРµРЅ, С‡С‚Рѕ Р“СѓСЂСѓ РїРѕСЂСѓС‡Р°СЋС‚ С‚РµР±Рµ СЂР°Р±РѕС‚Сѓ РїРѕР»СѓС‡С€Рµ, С‡РµРј Сѓ РЅР°СЃ.
+	AI_Output (self, other,"DIA_Viran_Perm_07_02"); //РќСѓ, СЏ-С‚Рѕ РІСЃРµ СЂР°РІРЅРѕ РЅРµ СЃР°Рј Р·РґРµСЃСЊ РіРЅСѓ СЃРїРёРЅСѓ. Р”Р»СЏ СЌС‚РѕРіРѕ РµСЃС‚СЊ 'РїРµС…РѕС‚Р°'.
 };
 
 // **************************************************
@@ -232,7 +232,7 @@ instance  DIA_Viran_RipOff (C_INFO)
 	condition	= DIA_Viran_RipOff_Condition;
 	information	= DIA_Viran_RipOff_Info;
 	permanent	= 0;
-	description	= "Я снова пришел за урожаем для Кор Галома.";
+	description	= "РЇ СЃРЅРѕРІР° РїСЂРёС€РµР» Р·Р° СѓСЂРѕР¶Р°РµРј РґР»СЏ РљРѕСЂ Р“Р°Р»РѕРјР°.";
 };                       
 
 FUNC int  DIA_Viran_RipOff_Condition()
@@ -245,10 +245,10 @@ FUNC int  DIA_Viran_RipOff_Condition()
 
 FUNC VOID  DIA_Viran_RipOff_Info()
 {
-	AI_Output (other, self,"DIA_Viran_RipOff_15_00"); //Я снова пришел за урожаем для Кор Галома.
-	AI_Output (self, other,"DIA_Viran_RipOff_07_01"); //Как, опять?
-	AI_Output (other, self,"DIA_Viran_RipOff_15_02"); //Только не говори мне, что теперь нужно поубивать всех болотожоров в округе, чтобы доказать тебе, что это правда. У меня нет времени.
-	AI_Output (self, other,"DIA_Viran_RipOff_07_03"); //Да, ладно! Забирай уж этот чертов болотник!
+	AI_Output (other, self,"DIA_Viran_RipOff_15_00"); //РЇ СЃРЅРѕРІР° РїСЂРёС€РµР» Р·Р° СѓСЂРѕР¶Р°РµРј РґР»СЏ РљРѕСЂ Р“Р°Р»РѕРјР°.
+	AI_Output (self, other,"DIA_Viran_RipOff_07_01"); //РљР°Рє, РѕРїСЏС‚СЊ?
+	AI_Output (other, self,"DIA_Viran_RipOff_15_02"); //РўРѕР»СЊРєРѕ РЅРµ РіРѕРІРѕСЂРё РјРЅРµ, С‡С‚Рѕ С‚РµРїРµСЂСЊ РЅСѓР¶РЅРѕ РїРѕСѓР±РёРІР°С‚СЊ РІСЃРµС… Р±РѕР»РѕС‚РѕР¶РѕСЂРѕРІ РІ РѕРєСЂСѓРіРµ, С‡С‚РѕР±С‹ РґРѕРєР°Р·Р°С‚СЊ С‚РµР±Рµ, С‡С‚Рѕ СЌС‚Рѕ РїСЂР°РІРґР°. РЈ РјРµРЅСЏ РЅРµС‚ РІСЂРµРјРµРЅРё.
+	AI_Output (self, other,"DIA_Viran_RipOff_07_03"); //Р”Р°, Р»Р°РґРЅРѕ! Р—Р°Р±РёСЂР°Р№ СѓР¶ СЌС‚РѕС‚ С‡РµСЂС‚РѕРІ Р±РѕР»РѕС‚РЅРёРє!
 	CreateInvItems (self, ItMi_Plants_Swampherb_01, 50);
 	B_GiveInvItems (self, hero, ItMi_Plants_Swampherb_01, 50);
 };

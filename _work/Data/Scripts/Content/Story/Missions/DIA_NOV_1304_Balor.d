@@ -36,7 +36,7 @@ instance  DIA_Balor_FetchWeed (C_INFO)
 	condition	= DIA_Balor_FetchWeed_Condition;
 	information	= DIA_Balor_FetchWeed_Info;
 	permanent	= 0;
-	description	= "Меня прислал Идол Оран за урожаем болотника.";
+	description	= "РњРµРЅСЏ РїСЂРёСЃР»Р°Р» РРґРѕР» РћСЂР°РЅ Р·Р° СѓСЂРѕР¶Р°РµРј Р±РѕР»РѕС‚РЅРёРєР°.";
 };                       
 
 FUNC int  DIA_Balor_FetchWeed_Condition()
@@ -49,27 +49,27 @@ FUNC int  DIA_Balor_FetchWeed_Condition()
 
 FUNC VOID  DIA_Balor_FetchWeed_Info()
 {
-	AI_Output (other, self,"DIA_Balor_FetchWeed_15_00"); //Меня прислал Идол Оран за урожаем болотника.
-	AI_Output (self, other,"DIA_Balor_FetchWeed_01_01"); //Хорошо. Мне не придется относить его самому. Вот, возьми его.
-	AI_Output (self, other,"DIA_Balor_FetchWeed_01_02"); //Не забудь заглянуть к Вайрану, на другую сторону болота, если ты у него еще не был.
-	AI_Output (self, other,"DIA_Balor_FetchWeed_01_03"); //Иначе наш дневной урожай кое-кому покажется слишком маленьким. Могут подумать, что ты половину присвоил.
+	AI_Output (other, self,"DIA_Balor_FetchWeed_15_00"); //РњРµРЅСЏ РїСЂРёСЃР»Р°Р» РРґРѕР» РћСЂР°РЅ Р·Р° СѓСЂРѕР¶Р°РµРј Р±РѕР»РѕС‚РЅРёРєР°.
+	AI_Output (self, other,"DIA_Balor_FetchWeed_01_01"); //РҐРѕСЂРѕС€Рѕ. РњРЅРµ РЅРµ РїСЂРёРґРµС‚СЃСЏ РѕС‚РЅРѕСЃРёС‚СЊ РµРіРѕ СЃР°РјРѕРјСѓ. Р’РѕС‚, РІРѕР·СЊРјРё РµРіРѕ.
+	AI_Output (self, other,"DIA_Balor_FetchWeed_01_02"); //РќРµ Р·Р°Р±СѓРґСЊ Р·Р°РіР»СЏРЅСѓС‚СЊ Рє Р’Р°Р№СЂР°РЅСѓ, РЅР° РґСЂСѓРіСѓСЋ СЃС‚РѕСЂРѕРЅСѓ Р±РѕР»РѕС‚Р°, РµСЃР»Рё С‚С‹ Сѓ РЅРµРіРѕ РµС‰Рµ РЅРµ Р±С‹Р».
+	AI_Output (self, other,"DIA_Balor_FetchWeed_01_03"); //РРЅР°С‡Рµ РЅР°С€ РґРЅРµРІРЅРѕР№ СѓСЂРѕР¶Р°Р№ РєРѕРµ-РєРѕРјСѓ РїРѕРєР°Р¶РµС‚СЃСЏ СЃР»РёС€РєРѕРј РјР°Р»РµРЅСЊРєРёРј. РњРѕРіСѓС‚ РїРѕРґСѓРјР°С‚СЊ, С‡С‚Рѕ С‚С‹ РїРѕР»РѕРІРёРЅСѓ РїСЂРёСЃРІРѕРёР».
 	
 	B_GiveInvItems 		(self, other, ItMi_Plants_Swampherb_01, 50);
 
-	B_LogEntry			(CH1_DeliverWeed,	"Балор передал мне дневной урожай болотника для Кор Галома.");
+	B_LogEntry			(CH1_DeliverWeed,	"Р‘Р°Р»РѕСЂ РїРµСЂРµРґР°Р» РјРЅРµ РґРЅРµРІРЅРѕР№ СѓСЂРѕР¶Р°Р№ Р±РѕР»РѕС‚РЅРёРєР° РґР»СЏ РљРѕСЂ Р“Р°Р»РѕРјР°.");
 	B_GiveXP			(XP_WeedFromBalor);
 
 	if	!Npc_KnowsInfo(hero, DIA_Viran_What)
 	&&	!Npc_KnowsInfo(hero, DIA_Viran_FetchWeed)
 	{
-		 B_LogEntry		(CH1_DeliverWeed,	"По словам Балора на другой стороне болота есть еще одна группа сборщиков болотника. Я не расспросил как следует Идола Орана. Теперь мне придется разыскивать эту группу и постараться не попасться на глаза болотожорам."); 
+		 B_LogEntry		(CH1_DeliverWeed,	"РџРѕ СЃР»РѕРІР°Рј Р‘Р°Р»РѕСЂР° РЅР° РґСЂСѓРіРѕР№ СЃС‚РѕСЂРѕРЅРµ Р±РѕР»РѕС‚Р° РµСЃС‚СЊ РµС‰Рµ РѕРґРЅР° РіСЂСѓРїРїР° СЃР±РѕСЂС‰РёРєРѕРІ Р±РѕР»РѕС‚РЅРёРєР°. РЇ РЅРµ СЂР°СЃСЃРїСЂРѕСЃРёР» РєР°Рє СЃР»РµРґСѓРµС‚ РРґРѕР»Р° РћСЂР°РЅР°. РўРµРїРµСЂСЊ РјРЅРµ РїСЂРёРґРµС‚СЃСЏ СЂР°Р·С‹СЃРєРёРІР°С‚СЊ СЌС‚Сѓ РіСЂСѓРїРїСѓ Рё РїРѕСЃС‚Р°СЂР°С‚СЊСЃСЏ РЅРµ РїРѕРїР°СЃС‚СЊСЃСЏ РЅР° РіР»Р°Р·Р° Р±РѕР»РѕС‚РѕР¶РѕСЂР°Рј."); 
 	};
 	
 	Balor_BotenDay = Wld_GetDay(); 
 };
 
 // **************************************************
-//				Wem verhцkern?
+//				Wem verhС†kern?
 // **************************************************
 	var int Balor_PlayerCheating;
 // **************************************************
@@ -81,7 +81,7 @@ instance  DIA_Balor_SellUnder (C_INFO)
 	condition	= DIA_Balor_SellUnder_Condition;
 	information	= DIA_Balor_SellUnder_Info;
 	permanent	= 0;
-	description	= "Да как я могу? И потом... куда мне его девать? Продать кому-то?";
+	description	= "Р”Р° РєР°Рє СЏ РјРѕРіСѓ? Р РїРѕС‚РѕРј... РєСѓРґР° РјРЅРµ РµРіРѕ РґРµРІР°С‚СЊ? РџСЂРѕРґР°С‚СЊ РєРѕРјСѓ-С‚Рѕ?";
 };                       
 
 FUNC int  DIA_Balor_SellUnder_Condition()
@@ -94,34 +94,34 @@ FUNC int  DIA_Balor_SellUnder_Condition()
 
 FUNC VOID  DIA_Balor_SellUnder_Info()
 {
-	AI_Output (other, self,"DIA_Balor_SellUnder_15_00"); //Да как я могу? И потом: куда мне его девать? Продать кому-то?
-	AI_Output (self, other,"DIA_Balor_SellUnder_01_01"); //А, я подсказал тебе хорошую идею, да?
+	AI_Output (other, self,"DIA_Balor_SellUnder_15_00"); //Р”Р° РєР°Рє СЏ РјРѕРіСѓ? Р РїРѕС‚РѕРј: РєСѓРґР° РјРЅРµ РµРіРѕ РґРµРІР°С‚СЊ? РџСЂРѕРґР°С‚СЊ РєРѕРјСѓ-С‚Рѕ?
+	AI_Output (self, other,"DIA_Balor_SellUnder_01_01"); //Рђ, СЏ РїРѕРґСЃРєР°Р·Р°Р» С‚РµР±Рµ С…РѕСЂРѕС€СѓСЋ РёРґРµСЋ, РґР°?
 	
 	Info_ClearChoices 	(DIA_Balor_SellUnder);
-	Info_AddChoice 		(DIA_Balor_SellUnder,"Забудь, это была просто шутка."									,DIA_Balor_SellUnder_ForgetIt);
-	Info_AddChoice 		(DIA_Balor_SellUnder,"Если бы ты знал того, кто мог его купить, мы поделили бы прибыль."	,DIA_Balor_SellUnder_HalfHalf);
-	Info_AddChoice 		(DIA_Balor_SellUnder,"Нет, просто скажи, кто он."											,DIA_Balor_SellUnder_ComeOn);
+	Info_AddChoice 		(DIA_Balor_SellUnder,"Р—Р°Р±СѓРґСЊ, СЌС‚Рѕ Р±С‹Р»Р° РїСЂРѕСЃС‚Рѕ С€СѓС‚РєР°."									,DIA_Balor_SellUnder_ForgetIt);
+	Info_AddChoice 		(DIA_Balor_SellUnder,"Р•СЃР»Рё Р±С‹ С‚С‹ Р·РЅР°Р» С‚РѕРіРѕ, РєС‚Рѕ РјРѕРі РµРіРѕ РєСѓРїРёС‚СЊ, РјС‹ РїРѕРґРµР»РёР»Рё Р±С‹ РїСЂРёР±С‹Р»СЊ."	,DIA_Balor_SellUnder_HalfHalf);
+	Info_AddChoice 		(DIA_Balor_SellUnder,"РќРµС‚, РїСЂРѕСЃС‚Рѕ СЃРєР°Р¶Рё, РєС‚Рѕ РѕРЅ."											,DIA_Balor_SellUnder_ComeOn);
 };
 
 func void DIA_Balor_SellUnder_ForgetIt()
 {
-	AI_Output (other, self,"DIA_Balor_SellUnder_ForgetIt_15_00"); //Забудь, это была просто шутка.
+	AI_Output (other, self,"DIA_Balor_SellUnder_ForgetIt_15_00"); //Р—Р°Р±СѓРґСЊ, СЌС‚Рѕ Р±С‹Р»Р° РїСЂРѕСЃС‚Рѕ С€СѓС‚РєР°.
 	Info_ClearChoices 	(DIA_Balor_SellUnder);
 };
 
 func void DIA_Balor_SellUnder_HalfHalf()
 {
-	AI_Output (other, self,"DIA_Balor_SellUnder_HalfHalf_15_00"); //Если бы ты знал того, кто мог бы его купить, мы могли бы поделить прибыль пополам.
-	AI_Output (self, other,"DIA_Balor_SellUnder_HalfHalf_01_01"); //Ну, есть в Новом лагере человек, которого мог бы заинтересовать груз болотника...
-	AI_Output (self, other,"DIA_Balor_SellUnder_HalfHalf_01_02"); //Но если Гуру узнают об этом, они скормят тебя болотожорам! Так что я ничего не знаю, ясно?!
+	AI_Output (other, self,"DIA_Balor_SellUnder_HalfHalf_15_00"); //Р•СЃР»Рё Р±С‹ С‚С‹ Р·РЅР°Р» С‚РѕРіРѕ, РєС‚Рѕ РјРѕРі Р±С‹ РµРіРѕ РєСѓРїРёС‚СЊ, РјС‹ РјРѕРіР»Рё Р±С‹ РїРѕРґРµР»РёС‚СЊ РїСЂРёР±С‹Р»СЊ РїРѕРїРѕР»Р°Рј.
+	AI_Output (self, other,"DIA_Balor_SellUnder_HalfHalf_01_01"); //РќСѓ, РµСЃС‚СЊ РІ РќРѕРІРѕРј Р»Р°РіРµСЂРµ С‡РµР»РѕРІРµРє, РєРѕС‚РѕСЂРѕРіРѕ РјРѕРі Р±С‹ Р·Р°РёРЅС‚РµСЂРµСЃРѕРІР°С‚СЊ РіСЂСѓР· Р±РѕР»РѕС‚РЅРёРєР°...
+	AI_Output (self, other,"DIA_Balor_SellUnder_HalfHalf_01_02"); //РќРѕ РµСЃР»Рё Р“СѓСЂСѓ СѓР·РЅР°СЋС‚ РѕР± СЌС‚РѕРј, РѕРЅРё СЃРєРѕСЂРјСЏС‚ С‚РµР±СЏ Р±РѕР»РѕС‚РѕР¶РѕСЂР°Рј! РўР°Рє С‡С‚Рѕ СЏ РЅРёС‡РµРіРѕ РЅРµ Р·РЅР°СЋ, СЏСЃРЅРѕ?!
 	Balor_PlayerCheating = TRUE;
 	Info_ClearChoices 	(DIA_Balor_SellUnder);
 };
 
 func void DIA_Balor_SellUnder_ComeOn()
 {
-	AI_Output (other, self,"DIA_Balor_SellUnder_ComeOn_15_00"); //Нет, просто скажи, кто он.
-	AI_Output (self, other,"DIA_Balor_SellUnder_ComeOn_01_01"); //Ишь, чего захотел! Ну, вот что я тебе скажу: если Кор Галом не получит траву, достанется нам обоим! С ним лучше не шутить.
+	AI_Output (other, self,"DIA_Balor_SellUnder_ComeOn_15_00"); //РќРµС‚, РїСЂРѕСЃС‚Рѕ СЃРєР°Р¶Рё, РєС‚Рѕ РѕРЅ.
+	AI_Output (self, other,"DIA_Balor_SellUnder_ComeOn_01_01"); //РС€СЊ, С‡РµРіРѕ Р·Р°С…РѕС‚РµР»! РќСѓ, РІРѕС‚ С‡С‚Рѕ СЏ С‚РµР±Рµ СЃРєР°Р¶Сѓ: РµСЃР»Рё РљРѕСЂ Р“Р°Р»РѕРј РЅРµ РїРѕР»СѓС‡РёС‚ С‚СЂР°РІСѓ, РґРѕСЃС‚Р°РЅРµС‚СЃСЏ РЅР°Рј РѕР±РѕРёРј! РЎ РЅРёРј Р»СѓС‡С€Рµ РЅРµ С€СѓС‚РёС‚СЊ.
 };
 
 // **************************************************
@@ -137,7 +137,7 @@ instance  DIA_Balor_TellDealer (C_INFO)
 	condition	= DIA_Balor_TellDealer_Condition;
 	information	= DIA_Balor_TellDealer_Info;
 	permanent	= 1;
-	description	= "Я учту. Так кому в Новом лагере можно продать болотник?";
+	description	= "РЇ СѓС‡С‚Сѓ. РўР°Рє РєРѕРјСѓ РІ РќРѕРІРѕРј Р»Р°РіРµСЂРµ РјРѕР¶РЅРѕ РїСЂРѕРґР°С‚СЊ Р±РѕР»РѕС‚РЅРёРє?";
 };                       
 
 FUNC int  DIA_Balor_TellDealer_Condition()
@@ -150,45 +150,45 @@ FUNC int  DIA_Balor_TellDealer_Condition()
 
 FUNC VOID  DIA_Balor_TellDealer_Info()
 {
-	AI_Output (other, self,"DIA_Balor_TellDealer_15_00"); //Я учту. Так кому в Новом лагере можно продать болотник?
-	AI_Output (self, other,"DIA_Balor_TellDealer_01_01"); //Конечно, я назову тебе этого человека, а ты сбежишь с нашей травой. Даже не надейся!
-	AI_Output (self, other,"DIA_Balor_TellDealer_01_02"); //Мне нужен задаток пятьдесят кусков руды. Тогда и поговорим.
+	AI_Output (other, self,"DIA_Balor_TellDealer_15_00"); //РЇ СѓС‡С‚Сѓ. РўР°Рє РєРѕРјСѓ РІ РќРѕРІРѕРј Р»Р°РіРµСЂРµ РјРѕР¶РЅРѕ РїСЂРѕРґР°С‚СЊ Р±РѕР»РѕС‚РЅРёРє?
+	AI_Output (self, other,"DIA_Balor_TellDealer_01_01"); //РљРѕРЅРµС‡РЅРѕ, СЏ РЅР°Р·РѕРІСѓ С‚РµР±Рµ СЌС‚РѕРіРѕ С‡РµР»РѕРІРµРєР°, Р° С‚С‹ СЃР±РµР¶РёС€СЊ СЃ РЅР°С€РµР№ С‚СЂР°РІРѕР№. Р”Р°Р¶Рµ РЅРµ РЅР°РґРµР№СЃСЏ!
+	AI_Output (self, other,"DIA_Balor_TellDealer_01_02"); //РњРЅРµ РЅСѓР¶РµРЅ Р·Р°РґР°С‚РѕРє РїСЏС‚СЊРґРµСЃСЏС‚ РєСѓСЃРєРѕРІ СЂСѓРґС‹. РўРѕРіРґР° Рё РїРѕРіРѕРІРѕСЂРёРј.
 	
 	Info_ClearChoices 	(DIA_Balor_TellDealer);
-	Info_Addchoice 		(DIA_Balor_TellDealer,"Забудь об этом."	,DIA_Balor_TellDealer_ForgetIt);
-	Info_Addchoice 		(DIA_Balor_TellDealer,"Пятьдесят кусков? Хорошо, держи."	,DIA_Balor_TellDealer_Pay);
+	Info_Addchoice 		(DIA_Balor_TellDealer,"Р—Р°Р±СѓРґСЊ РѕР± СЌС‚РѕРј."	,DIA_Balor_TellDealer_ForgetIt);
+	Info_Addchoice 		(DIA_Balor_TellDealer,"РџСЏС‚СЊРґРµСЃСЏС‚ РєСѓСЃРєРѕРІ? РҐРѕСЂРѕС€Рѕ, РґРµСЂР¶Рё."	,DIA_Balor_TellDealer_Pay);
 };
 
 func void DIA_Balor_TellDealer_Pay()
 {
-	AI_Output (other, self,"DIA_Balor_TellDealer_Pay_15_00"); //Пятьдесят кусков? Хорошо, держи.
+	AI_Output (other, self,"DIA_Balor_TellDealer_Pay_15_00"); //РџСЏС‚СЊРґРµСЃСЏС‚ РєСѓСЃРєРѕРІ? РҐРѕСЂРѕС€Рѕ, РґРµСЂР¶Рё.
 	if (Npc_HasItems(other, itminugget) >= 50)
 	{
-		AI_Output			(self, other,"DIA_Balor_TellDealer_Pay_01_01"); //Что ж... Слушай. Его зовут Сайфер. Он почти все время сидит в баре на озере.
-		AI_Output			(self, other,"DIA_Balor_TellDealer_Pay_01_02"); //Но будь с ним осторожен. Смотри, чтобы он тебя не обманул.
+		AI_Output			(self, other,"DIA_Balor_TellDealer_Pay_01_01"); //Р§С‚Рѕ Р¶... РЎР»СѓС€Р°Р№. Р•РіРѕ Р·РѕРІСѓС‚ РЎР°Р№С„РµСЂ. РћРЅ РїРѕС‡С‚Рё РІСЃРµ РІСЂРµРјСЏ СЃРёРґРёС‚ РІ Р±Р°СЂРµ РЅР° РѕР·РµСЂРµ.
+		AI_Output			(self, other,"DIA_Balor_TellDealer_Pay_01_02"); //РќРѕ Р±СѓРґСЊ СЃ РЅРёРј РѕСЃС‚РѕСЂРѕР¶РµРЅ. РЎРјРѕС‚СЂРё, С‡С‚РѕР±С‹ РѕРЅ С‚РµР±СЏ РЅРµ РѕР±РјР°РЅСѓР».
 		Info_ClearChoices 	(DIA_Balor_TellDealer);
 
 		B_GiveInvItems		(other, self,itminugget,50);
 		Balor_TellsNCDealer = TRUE;
 
-		B_LogEntry			(CH1_DeliverWeed,	"Балор назвал мне человека из Нового лагеря. Его зовут Сайфер. Я смогу найти его в баре на озере. Гуру будут очень недовольны, если я продам болотник на сторону.");
+		B_LogEntry			(CH1_DeliverWeed,	"Р‘Р°Р»РѕСЂ РЅР°Р·РІР°Р» РјРЅРµ С‡РµР»РѕРІРµРєР° РёР· РќРѕРІРѕРіРѕ Р»Р°РіРµСЂСЏ. Р•РіРѕ Р·РѕРІСѓС‚ РЎР°Р№С„РµСЂ. РЇ СЃРјРѕРіСѓ РЅР°Р№С‚Рё РµРіРѕ РІ Р±Р°СЂРµ РЅР° РѕР·РµСЂРµ. Р“СѓСЂСѓ Р±СѓРґСѓС‚ РѕС‡РµРЅСЊ РЅРµРґРѕРІРѕР»СЊРЅС‹, РµСЃР»Рё СЏ РїСЂРѕРґР°Рј Р±РѕР»РѕС‚РЅРёРє РЅР° СЃС‚РѕСЂРѕРЅСѓ.");
 		B_GiveXP			(XP_BalorNamedCipher);
 
 		Log_CreateTopic		(GE_TraderNC, LOG_NOTE);
-		B_LogEntry			(GE_TraderNC,	"Сайфер продает и покупает разные товары. Он интересуется крупными партиями болотника. Его можно найти в баре на озере.");
+		B_LogEntry			(GE_TraderNC,	"РЎР°Р№С„РµСЂ РїСЂРѕРґР°РµС‚ Рё РїРѕРєСѓРїР°РµС‚ СЂР°Р·РЅС‹Рµ С‚РѕРІР°СЂС‹. РћРЅ РёРЅС‚РµСЂРµСЃСѓРµС‚СЃСЏ РєСЂСѓРїРЅС‹РјРё РїР°СЂС‚РёСЏРјРё Р±РѕР»РѕС‚РЅРёРєР°. Р•РіРѕ РјРѕР¶РЅРѕ РЅР°Р№С‚Рё РІ Р±Р°СЂРµ РЅР° РѕР·РµСЂРµ.");
 	}
 	else
 	{
-		AI_Output (self, other,"DIA_Balor_TellDealer_Pay_NoOre_01_00"); //Я не вижу руду. Пятьдесят кусков и ни куском меньше, понял?
+		AI_Output (self, other,"DIA_Balor_TellDealer_Pay_NoOre_01_00"); //РЇ РЅРµ РІРёР¶Сѓ СЂСѓРґСѓ. РџСЏС‚СЊРґРµСЃСЏС‚ РєСѓСЃРєРѕРІ Рё РЅРё РєСѓСЃРєРѕРј РјРµРЅСЊС€Рµ, РїРѕРЅСЏР»?
 		Info_ClearChoices 	(DIA_Balor_TellDealer);
 	};
 };
 
 func void DIA_Balor_TellDealer_ForgetIt()
 {
-	AI_Output (other, self,"DIA_Balor_TellDealer_ForgetIt_15_00"); //Забудь об этом.
-	AI_Output (self, other,"DIA_Balor_TellDealer_ForgetIt_01_01"); //Не думай, что можно вот так просто заявиться в Новый лагерь и продать весь болотник первому встречному! Если не знаешь нужного человека, у тебя ничего не выйдет.
-	AI_Output (self, other,"DIA_Balor_TellDealer_ForgetIt_01_02"); //Ты можешь рассказать все не тому человеку, и у тебя все отберут.
+	AI_Output (other, self,"DIA_Balor_TellDealer_ForgetIt_15_00"); //Р—Р°Р±СѓРґСЊ РѕР± СЌС‚РѕРј.
+	AI_Output (self, other,"DIA_Balor_TellDealer_ForgetIt_01_01"); //РќРµ РґСѓРјР°Р№, С‡С‚Рѕ РјРѕР¶РЅРѕ РІРѕС‚ С‚Р°Рє РїСЂРѕСЃС‚Рѕ Р·Р°СЏРІРёС‚СЊСЃСЏ РІ РќРѕРІС‹Р№ Р»Р°РіРµСЂСЊ Рё РїСЂРѕРґР°С‚СЊ РІРµСЃСЊ Р±РѕР»РѕС‚РЅРёРє РїРµСЂРІРѕРјСѓ РІСЃС‚СЂРµС‡РЅРѕРјСѓ! Р•СЃР»Рё РЅРµ Р·РЅР°РµС€СЊ РЅСѓР¶РЅРѕРіРѕ С‡РµР»РѕРІРµРєР°, Сѓ С‚РµР±СЏ РЅРёС‡РµРіРѕ РЅРµ РІС‹Р№РґРµС‚.
+	AI_Output (self, other,"DIA_Balor_TellDealer_ForgetIt_01_02"); //РўС‹ РјРѕР¶РµС€СЊ СЂР°СЃСЃРєР°Р·Р°С‚СЊ РІСЃРµ РЅРµ С‚РѕРјСѓ С‡РµР»РѕРІРµРєСѓ, Рё Сѓ С‚РµР±СЏ РІСЃРµ РѕС‚Р±РµСЂСѓС‚.
 	Info_ClearChoices 	(DIA_Balor_TellDealer);
 };
 
@@ -203,7 +203,7 @@ instance  DIA_Balor_RipOff (C_INFO)
 	condition	= DIA_Balor_RipOff_Condition;
 	information	= DIA_Balor_RipOff_Info;
 	permanent	= 0;
-	description	= "Это снова я. Мне нужно забрать следующую партию.";
+	description	= "Р­С‚Рѕ СЃРЅРѕРІР° СЏ. РњРЅРµ РЅСѓР¶РЅРѕ Р·Р°Р±СЂР°С‚СЊ СЃР»РµРґСѓСЋС‰СѓСЋ РїР°СЂС‚РёСЋ.";
 };                       
 
 FUNC int  DIA_Balor_RipOff_Condition()
@@ -216,16 +216,16 @@ FUNC int  DIA_Balor_RipOff_Condition()
 
 FUNC VOID  DIA_Balor_RipOff_Info()
 {
-	AI_Output (other, self,"DIA_Balor_RipOff_15_00"); //Это снова я. Мне нужно забрать следующую партию.
+	AI_Output (other, self,"DIA_Balor_RipOff_15_00"); //Р­С‚Рѕ СЃРЅРѕРІР° СЏ. РњРЅРµ РЅСѓР¶РЅРѕ Р·Р°Р±СЂР°С‚СЊ СЃР»РµРґСѓСЋС‰СѓСЋ РїР°СЂС‚РёСЋ.
 	if (Balor_PlayerCheating == TRUE)
 	{
-		AI_Output (self, other,"DIA_Balor_RipOff_01_01"); //Еще бы! Чтобы снова отнести его в Новый лагерь.
-		AI_Output (self, other,"DIA_Balor_RipOff_01_02"); //Дай мне задаток пятьдесят кусков руды.
+		AI_Output (self, other,"DIA_Balor_RipOff_01_01"); //Р•С‰Рµ Р±С‹! Р§С‚РѕР±С‹ СЃРЅРѕРІР° РѕС‚РЅРµСЃС‚Рё РµРіРѕ РІ РќРѕРІС‹Р№ Р»Р°РіРµСЂСЊ.
+		AI_Output (self, other,"DIA_Balor_RipOff_01_02"); //Р”Р°Р№ РјРЅРµ Р·Р°РґР°С‚РѕРє РїСЏС‚СЊРґРµСЃСЏС‚ РєСѓСЃРєРѕРІ СЂСѓРґС‹.
 	}
 	else
 	{
-		AI_Output (self, other,"DIA_Balor_RipOff_01_03"); //А, это снова ты? Ладно, бери, но только не вздумай нас обмануть!
-		AI_Output (other, self,"DIA_Balor_RipOff_15_04"); //Да что ты, я и не собирался.
+		AI_Output (self, other,"DIA_Balor_RipOff_01_03"); //Рђ, СЌС‚Рѕ СЃРЅРѕРІР° С‚С‹? Р›Р°РґРЅРѕ, Р±РµСЂРё, РЅРѕ С‚РѕР»СЊРєРѕ РЅРµ РІР·РґСѓРјР°Р№ РЅР°СЃ РѕР±РјР°РЅСѓС‚СЊ!
+		AI_Output (other, self,"DIA_Balor_RipOff_15_04"); //Р”Р° С‡С‚Рѕ С‚С‹, СЏ Рё РЅРµ СЃРѕР±РёСЂР°Р»СЃСЏ.
 		CreateInvItems (self, ItMi_Plants_Swampherb_01, 50);
 		B_GiveInvItems (self, hero, ItMi_Plants_Swampherb_01, 50);
 	};
@@ -242,7 +242,7 @@ instance  DIA_Balor_Perm (C_INFO)
 	condition	= DIA_Balor_Perm_Condition;
 	information	= DIA_Balor_Perm_Info;
 	permanent	= 1;
-	description	= "Что ж, работай хорошо.";
+	description	= "Р§С‚Рѕ Р¶, СЂР°Р±РѕС‚Р°Р№ С…РѕСЂРѕС€Рѕ.";
 };                       
 
 FUNC int  DIA_Balor_Perm_Condition()
@@ -255,6 +255,6 @@ FUNC int  DIA_Balor_Perm_Condition()
 
 FUNC VOID  DIA_Balor_Perm_Info()
 {
-	AI_Output (other, self,"DIA_Balor_Perm_15_00"); //Что ж, работай хорошо.
-	AI_Output (self, other,"DIA_Balor_Perm_01_01"); //Конечно, а что еще, по-твоему, здесь делаю? Валяюсь в болоте?
+	AI_Output (other, self,"DIA_Balor_Perm_15_00"); //Р§С‚Рѕ Р¶, СЂР°Р±РѕС‚Р°Р№ С…РѕСЂРѕС€Рѕ.
+	AI_Output (self, other,"DIA_Balor_Perm_01_01"); //РљРѕРЅРµС‡РЅРѕ, Р° С‡С‚Рѕ РµС‰Рµ, РїРѕ-С‚РІРѕРµРјСѓ, Р·РґРµСЃСЊ РґРµР»Р°СЋ? Р’Р°Р»СЏСЋСЃСЊ РІ Р±РѕР»РѕС‚Рµ?
 };

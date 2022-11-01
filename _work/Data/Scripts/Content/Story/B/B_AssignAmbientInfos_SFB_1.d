@@ -14,7 +14,7 @@ INSTANCE Info_SFB_1_EXIT(C_INFO)
 	condition	= Info_SFB_1_EXIT_Condition;
 	information	= Info_SFB_1_EXIT_Info;
 	permanent	= 1;
-	description = "ЗАКОНЧИТЬ РАЗГОВОР";
+	description = "Р—РђРљРћРќР§РРўР¬ Р РђР—Р“РћР’РћР ";
 };                       
 
 FUNC INT Info_SFB_1_EXIT_Condition()
@@ -37,7 +37,7 @@ INSTANCE Info_SFB_1_EinerVonEuchWerden (C_INFO)
 	condition	= Info_SFB_1_EinerVonEuchWerden_Condition;
 	information	= Info_SFB_1_EinerVonEuchWerden_Info;
 	permanent	= 1;
-	description = "Я хочу быть рудокопом. Как мне присоединиться к вам?";
+	description = "РЇ С…РѕС‡Сѓ Р±С‹С‚СЊ СЂСѓРґРѕРєРѕРїРѕРј. РљР°Рє РјРЅРµ РїСЂРёСЃРѕРµРґРёРЅРёС‚СЊСЃСЏ Рє РІР°Рј?";
 };                       
 
 FUNC INT Info_SFB_1_EinerVonEuchWerden_Condition()
@@ -50,10 +50,10 @@ FUNC INT Info_SFB_1_EinerVonEuchWerden_Condition()
 
 FUNC VOID Info_SFB_1_EinerVonEuchWerden_Info()
 {
-	AI_Output(other,self,"Info_SFB_1_EinerVonEuchWerden_15_00"); //Я хочу быть рудокопом. Как мне присоединиться к вам?
-	AI_Output(self,other,"Info_SFB_1_EinerVonEuchWerden_01_01"); //Одним из нас? Только не думай, что если нас не заставляют, мы здесь не работаем.
-	AI_Output(self,other,"Info_SFB_1_EinerVonEuchWerden_01_02"); //Если ты надеешься бездельничать здесь, то ты сильно ошибаешься. Иди и займись чем-нибудь еще.
-	AI_Output(self,other,"Info_SFB_1_EinerVonEuchWerden_01_03"); //Если ты все еще думаешь, что сможешь справиться с этим делом, поговори с Суини. Это тот рудокоп, что весь день стоит в сторонке и курит.
+	AI_Output(other,self,"Info_SFB_1_EinerVonEuchWerden_15_00"); //РЇ С…РѕС‡Сѓ Р±С‹С‚СЊ СЂСѓРґРѕРєРѕРїРѕРј. РљР°Рє РјРЅРµ РїСЂРёСЃРѕРµРґРёРЅРёС‚СЊСЃСЏ Рє РІР°Рј?
+	AI_Output(self,other,"Info_SFB_1_EinerVonEuchWerden_01_01"); //РћРґРЅРёРј РёР· РЅР°СЃ? РўРѕР»СЊРєРѕ РЅРµ РґСѓРјР°Р№, С‡С‚Рѕ РµСЃР»Рё РЅР°СЃ РЅРµ Р·Р°СЃС‚Р°РІР»СЏСЋС‚, РјС‹ Р·РґРµСЃСЊ РЅРµ СЂР°Р±РѕС‚Р°РµРј.
+	AI_Output(self,other,"Info_SFB_1_EinerVonEuchWerden_01_02"); //Р•СЃР»Рё С‚С‹ РЅР°РґРµРµС€СЊСЃСЏ Р±РµР·РґРµР»СЊРЅРёС‡Р°С‚СЊ Р·РґРµСЃСЊ, С‚Рѕ С‚С‹ СЃРёР»СЊРЅРѕ РѕС€РёР±Р°РµС€СЊСЃСЏ. РРґРё Рё Р·Р°Р№РјРёСЃСЊ С‡РµРј-РЅРёР±СѓРґСЊ РµС‰Рµ.
+	AI_Output(self,other,"Info_SFB_1_EinerVonEuchWerden_01_03"); //Р•СЃР»Рё С‚С‹ РІСЃРµ РµС‰Рµ РґСѓРјР°РµС€СЊ, С‡С‚Рѕ СЃРјРѕР¶РµС€СЊ СЃРїСЂР°РІРёС‚СЊСЃСЏ СЃ СЌС‚РёРј РґРµР»РѕРј, РїРѕРіРѕРІРѕСЂРё СЃ РЎСѓРёРЅРё. Р­С‚Рѕ С‚РѕС‚ СЂСѓРґРѕРєРѕРї, С‡С‚Рѕ РІРµСЃСЊ РґРµРЅСЊ СЃС‚РѕРёС‚ РІ СЃС‚РѕСЂРѕРЅРєРµ Рё РєСѓСЂРёС‚.
 };
 
 // *************************************************************************
@@ -66,7 +66,7 @@ INSTANCE Info_SFB_1_WichtigePersonen(C_INFO)
 	condition	= Info_SFB_1_WichtigePersonen_Condition;
 	information	= Info_SFB_1_WichtigePersonen_Info;
 	permanent	= 1;
-	description = "Кто здесь командует?";
+	description = "РљС‚Рѕ Р·РґРµСЃСЊ РєРѕРјР°РЅРґСѓРµС‚?";
 };                       
 
 FUNC INT Info_SFB_1_WichtigePersonen_Condition()
@@ -76,8 +76,8 @@ FUNC INT Info_SFB_1_WichtigePersonen_Condition()
 
 FUNC VOID Info_SFB_1_WichtigePersonen_Info()
 {
-	AI_Output(other,self,"Info_SFB_1_WichtigePersonen_15_00"); //Кто здесь командует?
-	AI_Output(self,other,"Info_SFB_1_WichtigePersonen_01_01"); //Командует? А ты оглянись вокруг. Уж конечно не те, кто целыми днями машет киркой, чтобы добыть немного руды.
+	AI_Output(other,self,"Info_SFB_1_WichtigePersonen_15_00"); //РљС‚Рѕ Р·РґРµСЃСЊ РєРѕРјР°РЅРґСѓРµС‚?
+	AI_Output(self,other,"Info_SFB_1_WichtigePersonen_01_01"); //РљРѕРјР°РЅРґСѓРµС‚? Рђ С‚С‹ РѕРіР»СЏРЅРёСЃСЊ РІРѕРєСЂСѓРі. РЈР¶ РєРѕРЅРµС‡РЅРѕ РЅРµ С‚Рµ, РєС‚Рѕ С†РµР»С‹РјРё РґРЅСЏРјРё РјР°С€РµС‚ РєРёСЂРєРѕР№, С‡С‚РѕР±С‹ РґРѕР±С‹С‚СЊ РЅРµРјРЅРѕРіРѕ СЂСѓРґС‹.
 };
 
 // *************************************************************************
@@ -90,7 +90,7 @@ INSTANCE Info_SFB_1_DasLager(C_INFO)
 	condition	= Info_SFB_1_DasLager_Condition;
 	information	= Info_SFB_1_DasLager_Info;
 	permanent	= 1;
-	description = "Что это за место?";
+	description = "Р§С‚Рѕ СЌС‚Рѕ Р·Р° РјРµСЃС‚Рѕ?";
 };                       
 
 FUNC INT Info_SFB_1_DasLager_Condition()
@@ -100,9 +100,9 @@ FUNC INT Info_SFB_1_DasLager_Condition()
 
 FUNC VOID Info_SFB_1_DasLager_Info()
 {
-	AI_Output(other,self,"Info_SFB_1_DasLager_15_00"); //Что это за место?
-	AI_Output(self,other,"Info_SFB_1_DasLager_01_01"); //А на что оно, по-твоему, похоже? На королевский дворец?
-	AI_Output(self,other,"Info_SFB_1_DasLager_01_02"); //Если уж ты в самом деле захотел поработать в Свободной шахте, то сначала ты должен доказать, что сможешь принести нам хоть какую-то пользу.
+	AI_Output(other,self,"Info_SFB_1_DasLager_15_00"); //Р§С‚Рѕ СЌС‚Рѕ Р·Р° РјРµСЃС‚Рѕ?
+	AI_Output(self,other,"Info_SFB_1_DasLager_01_01"); //Рђ РЅР° С‡С‚Рѕ РѕРЅРѕ, РїРѕ-С‚РІРѕРµРјСѓ, РїРѕС…РѕР¶Рµ? РќР° РєРѕСЂРѕР»РµРІСЃРєРёР№ РґРІРѕСЂРµС†?
+	AI_Output(self,other,"Info_SFB_1_DasLager_01_02"); //Р•СЃР»Рё СѓР¶ С‚С‹ РІ СЃР°РјРѕРј РґРµР»Рµ Р·Р°С…РѕС‚РµР» РїРѕСЂР°Р±РѕС‚Р°С‚СЊ РІ РЎРІРѕР±РѕРґРЅРѕР№ С€Р°С…С‚Рµ, С‚Рѕ СЃРЅР°С‡Р°Р»Р° С‚С‹ РґРѕР»Р¶РµРЅ РґРѕРєР°Р·Р°С‚СЊ, С‡С‚Рѕ СЃРјРѕР¶РµС€СЊ РїСЂРёРЅРµСЃС‚Рё РЅР°Рј С…РѕС‚СЊ РєР°РєСѓСЋ-С‚Рѕ РїРѕР»СЊР·Сѓ.
 };
 
 // *************************************************************************
@@ -115,7 +115,7 @@ INSTANCE Info_SFB_1_DieLage(C_INFO)
 	condition	= Info_SFB_1_DieLage_Condition;
 	information	= Info_SFB_1_DieLage_Info;
 	permanent	= 1;
-	description = "Как жизнь?";
+	description = "РљР°Рє Р¶РёР·РЅСЊ?";
 };                       
 
 FUNC INT Info_SFB_1_DieLage_Condition()
@@ -125,9 +125,9 @@ FUNC INT Info_SFB_1_DieLage_Condition()
 
 FUNC VOID Info_SFB_1_DieLage_Info()
 {
-	AI_Output(other,self,"Info_SFB_1_DieLage_15_00"); //Как жизнь?
-	AI_Output(self,other,"Info_SFB_1_DieLage_01_01"); //А ты как думаешь? Хуже не бывает. Работаю как вол, а руды и на горсть риса не всегда хватает.
-	AI_Output(self,other,"Info_SFB_1_DieLage_01_02"); //Ты здесь можешь найти только одного довольного рудокопа - Суини. Окил назначил его главным среди нас. А теперь он слоняется по шахте и старается не набить себе мозоли ходьбой.
+	AI_Output(other,self,"Info_SFB_1_DieLage_15_00"); //РљР°Рє Р¶РёР·РЅСЊ?
+	AI_Output(self,other,"Info_SFB_1_DieLage_01_01"); //Рђ С‚С‹ РєР°Рє РґСѓРјР°РµС€СЊ? РҐСѓР¶Рµ РЅРµ Р±С‹РІР°РµС‚. Р Р°Р±РѕС‚Р°СЋ РєР°Рє РІРѕР», Р° СЂСѓРґС‹ Рё РЅР° РіРѕСЂСЃС‚СЊ СЂРёСЃР° РЅРµ РІСЃРµРіРґР° С…РІР°С‚Р°РµС‚.
+	AI_Output(self,other,"Info_SFB_1_DieLage_01_02"); //РўС‹ Р·РґРµСЃСЊ РјРѕР¶РµС€СЊ РЅР°Р№С‚Рё С‚РѕР»СЊРєРѕ РѕРґРЅРѕРіРѕ РґРѕРІРѕР»СЊРЅРѕРіРѕ СЂСѓРґРѕРєРѕРїР° - РЎСѓРёРЅРё. РћРєРёР» РЅР°Р·РЅР°С‡РёР» РµРіРѕ РіР»Р°РІРЅС‹Рј СЃСЂРµРґРё РЅР°СЃ. Рђ С‚РµРїРµСЂСЊ РѕРЅ СЃР»РѕРЅСЏРµС‚СЃСЏ РїРѕ С€Р°С…С‚Рµ Рё СЃС‚Р°СЂР°РµС‚СЃСЏ РЅРµ РЅР°Р±РёС‚СЊ СЃРµР±Рµ РјРѕР·РѕР»Рё С…РѕРґСЊР±РѕР№.
 };
 	
 // *************************************************************************

@@ -18,7 +18,7 @@ FUNC int  Tpl_1401_GorNaKosh_Exit_Condition()
 
 FUNC VOID  Tpl_1401_GorNaKosh_Exit_Info()
 {
-	AI_Output			(self, other,"Tpl_1401_GorNaKosh_Exit_Info_13_02"); //Да пробудится Спящий!
+	AI_Output			(self, other,"Tpl_1401_GorNaKosh_Exit_Info_13_02"); //Р”Р° РїСЂРѕР±СѓРґРёС‚СЃСЏ РЎРїСЏС‰РёР№!
 	AI_StopProcessInfos	( self );
 };
 
@@ -34,7 +34,7 @@ instance  Tpl_1401_GorNaKosh_SUGGEST (C_INFO)
 	information		= Tpl_1401_GorNaKosh_SUGGEST_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Я знаю, где находится логово ползунов..."; 
+	description		= "РЇ Р·РЅР°СЋ, РіРґРµ РЅР°С…РѕРґРёС‚СЃСЏ Р»РѕРіРѕРІРѕ РїРѕР»Р·СѓРЅРѕРІ..."; 
 };
 
 FUNC int  Tpl_1401_GorNaKosh_SUGGEST_Condition()
@@ -49,14 +49,14 @@ FUNC int  Tpl_1401_GorNaKosh_SUGGEST_Condition()
 
 FUNC void  Tpl_1401_GorNaKosh_SUGGEST_Info()
 {
-	AI_Output			(other, self,"Tpl_1401_GorNaKosh_SUGGEST_Info_15_01"); //Я знаю, где находится логово ползунов, и собираюсь пойти туда, чтобы добыть их слюну для зелья Кор Галома.
-	AI_Output			(self, other,"Tpl_1401_GorNaKosh_SUGGEST_Info_13_02"); //Мой меч к твоим услугам. Я пойду с тобой.
-	AI_Output			(other, self,"Tpl_1401_GorNaKosh_SUGGEST_Info_15_03"); //Хорошо. Встретимся у большого прохода.
+	AI_Output			(other, self,"Tpl_1401_GorNaKosh_SUGGEST_Info_15_01"); //РЇ Р·РЅР°СЋ, РіРґРµ РЅР°С…РѕРґРёС‚СЃСЏ Р»РѕРіРѕРІРѕ РїРѕР»Р·СѓРЅРѕРІ, Рё СЃРѕР±РёСЂР°СЋСЃСЊ РїРѕР№С‚Рё С‚СѓРґР°, С‡С‚РѕР±С‹ РґРѕР±С‹С‚СЊ РёС… СЃР»СЋРЅСѓ РґР»СЏ Р·РµР»СЊСЏ РљРѕСЂ Р“Р°Р»РѕРјР°.
+	AI_Output			(self, other,"Tpl_1401_GorNaKosh_SUGGEST_Info_13_02"); //РњРѕР№ РјРµС‡ Рє С‚РІРѕРёРј СѓСЃР»СѓРіР°Рј. РЇ РїРѕР№РґСѓ СЃ С‚РѕР±РѕР№.
+	AI_Output			(other, self,"Tpl_1401_GorNaKosh_SUGGEST_Info_15_03"); //РҐРѕСЂРѕС€Рѕ. Р’СЃС‚СЂРµС‚РёРјСЃСЏ Сѓ Р±РѕР»СЊС€РѕРіРѕ РїСЂРѕС…РѕРґР°.
 	
 	Npc_ExchangeRoutine (self,"GATE");
 	Npc_SetPermAttitude (self,ATT_FRIENDLY); 
 	B_GiveXP			(XP_HireGorNaKosh);
-	B_LogEntry		(CH2_MCEggs,	"Я смог уговорить Стража Гор На Коша защищать ворота вместе с Асгханом. Он будет ждать меня у ворот.");	
+	B_LogEntry		(CH2_MCEggs,	"РЇ СЃРјРѕРі СѓРіРѕРІРѕСЂРёС‚СЊ РЎС‚СЂР°Р¶Р° Р“РѕСЂ РќР° РљРѕС€Р° Р·Р°С‰РёС‰Р°С‚СЊ РІРѕСЂРѕС‚Р° РІРјРµСЃС‚Рµ СЃ РђСЃРіС…Р°РЅРѕРј. РћРЅ Р±СѓРґРµС‚ Р¶РґР°С‚СЊ РјРµРЅСЏ Сѓ РІРѕСЂРѕС‚.");	
 
 	AI_StopProcessInfos	(self);
 };
@@ -70,7 +70,7 @@ instance  Tpl_1401_GorNaKosh_INFO (C_INFO)
 	information		= Tpl_1401_GorNaKosh_INFO_Info;
 	important		= 0;
 	permanent		= 1;
-	description		= "Что ты здесь делаешь?"; 
+	description		= "Р§С‚Рѕ С‚С‹ Р·РґРµСЃСЊ РґРµР»Р°РµС€СЊ?"; 
 };
 
 FUNC int  Tpl_1401_GorNaKosh_INFO_Condition()
@@ -83,13 +83,13 @@ FUNC int  Tpl_1401_GorNaKosh_INFO_Condition()
 
 FUNC void  Tpl_1401_GorNaKosh_INFO_Info()
 {
-	AI_Output			(other, self,"Tpl_1401_GorNaKosh_INFO_Info_15_01"); //Что ты здесь делаешь?
-	AI_Output			(self, other,"Tpl_1401_GorNaKosh_INFO_Info_13_02"); //Я охочусь на ползунов.
-	AI_Output			(other, self,"Tpl_1401_GorNaKosh_INFO_Info_15_03"); //Ты можешь рассказать мне, как охотиться на ползунов?
-	AI_Output			(self, other,"Tpl_1401_GorNaKosh_INFO_Info_13_04"); //Что ж, здесь есть только одно правило. Когда ты видишь перед собой ползуна, атакуй его первым так быстро, как только сможешь. 
-	AI_Output			(self, other,"Tpl_1401_GorNaKosh_INFO_Info_13_05"); //Твое бесстрашие и отвага сослужат тебе хорошую службу.
+	AI_Output			(other, self,"Tpl_1401_GorNaKosh_INFO_Info_15_01"); //Р§С‚Рѕ С‚С‹ Р·РґРµСЃСЊ РґРµР»Р°РµС€СЊ?
+	AI_Output			(self, other,"Tpl_1401_GorNaKosh_INFO_Info_13_02"); //РЇ РѕС…РѕС‡СѓСЃСЊ РЅР° РїРѕР»Р·СѓРЅРѕРІ.
+	AI_Output			(other, self,"Tpl_1401_GorNaKosh_INFO_Info_15_03"); //РўС‹ РјРѕР¶РµС€СЊ СЂР°СЃСЃРєР°Р·Р°С‚СЊ РјРЅРµ, РєР°Рє РѕС…РѕС‚РёС‚СЊСЃСЏ РЅР° РїРѕР»Р·СѓРЅРѕРІ?
+	AI_Output			(self, other,"Tpl_1401_GorNaKosh_INFO_Info_13_04"); //Р§С‚Рѕ Р¶, Р·РґРµСЃСЊ РµСЃС‚СЊ С‚РѕР»СЊРєРѕ РѕРґРЅРѕ РїСЂР°РІРёР»Рѕ. РљРѕРіРґР° С‚С‹ РІРёРґРёС€СЊ РїРµСЂРµРґ СЃРѕР±РѕР№ РїРѕР»Р·СѓРЅР°, Р°С‚Р°РєСѓР№ РµРіРѕ РїРµСЂРІС‹Рј С‚Р°Рє Р±С‹СЃС‚СЂРѕ, РєР°Рє С‚РѕР»СЊРєРѕ СЃРјРѕР¶РµС€СЊ. 
+	AI_Output			(self, other,"Tpl_1401_GorNaKosh_INFO_Info_13_05"); //РўРІРѕРµ Р±РµСЃСЃС‚СЂР°С€РёРµ Рё РѕС‚РІР°РіР° СЃРѕСЃР»СѓР¶Р°С‚ С‚РµР±Рµ С…РѕСЂРѕС€СѓСЋ СЃР»СѓР¶Р±Сѓ.
 
-	AI_StopProcessInfos(self);		// SN:nur fьr die Vermeidung des Bugs, dass der letzte Satz in roter Schrift erscheint, und der InfoManager danach defekt ist
+	AI_StopProcessInfos(self);		// SN:nur fСЊr die Vermeidung des Bugs, dass der letzte Satz in roter Schrift erscheint, und der InfoManager danach defekt ist
 };
 
 // ***************** Infos *****************************
@@ -101,7 +101,7 @@ instance  Tpl_1401_GorNaKosh_CRAWLER (C_INFO)
 	information		= Tpl_1401_GorNaKosh_CRAWLER_Info;
 	important		= 0;
 	permanent		= 1;
-	description		= "Ты можешь рассказать о ползунах еще что-нибудь?"; 
+	description		= "РўС‹ РјРѕР¶РµС€СЊ СЂР°СЃСЃРєР°Р·Р°С‚СЊ Рѕ РїРѕР»Р·СѓРЅР°С… РµС‰Рµ С‡С‚Рѕ-РЅРёР±СѓРґСЊ?"; 
 };
 
 FUNC int  Tpl_1401_GorNaKosh_CRAWLER_Condition()
@@ -114,12 +114,12 @@ FUNC int  Tpl_1401_GorNaKosh_CRAWLER_Condition()
 
 FUNC void  Tpl_1401_GorNaKosh_CRAWLER_Info()
 {
-	AI_Output			(other, self,"Tpl_1401_GorNaKosh_CRAWLER_Info_15_01"); //Ты можешь рассказать о ползунах еще что-нибудь?
-	AI_Output			(self, other,"Tpl_1401_GorNaKosh_CRAWLER_Info_13_02"); //Их природа - убивать все! Все что движется, - все, что не похоже на них самих.
-	AI_Output			(self, other,"Tpl_1401_GorNaKosh_CRAWLER_Info_13_03"); //Запомни мои слова, они тебе еще пригодятся.
+	AI_Output			(other, self,"Tpl_1401_GorNaKosh_CRAWLER_Info_15_01"); //РўС‹ РјРѕР¶РµС€СЊ СЂР°СЃСЃРєР°Р·Р°С‚СЊ Рѕ РїРѕР»Р·СѓРЅР°С… РµС‰Рµ С‡С‚Рѕ-РЅРёР±СѓРґСЊ?
+	AI_Output			(self, other,"Tpl_1401_GorNaKosh_CRAWLER_Info_13_02"); //РС… РїСЂРёСЂРѕРґР° - СѓР±РёРІР°С‚СЊ РІСЃРµ! Р’СЃРµ С‡С‚Рѕ РґРІРёР¶РµС‚СЃСЏ, - РІСЃРµ, С‡С‚Рѕ РЅРµ РїРѕС…РѕР¶Рµ РЅР° РЅРёС… СЃР°РјРёС….
+	AI_Output			(self, other,"Tpl_1401_GorNaKosh_CRAWLER_Info_13_03"); //Р—Р°РїРѕРјРЅРё РјРѕРё СЃР»РѕРІР°, РѕРЅРё С‚РµР±Рµ РµС‰Рµ РїСЂРёРіРѕРґСЏС‚СЃСЏ.
 }; 
 
-// ***************************** Die Kцnigin ist tot, lang lebe die Kцnigin ****************************************//
+// ***************************** Die KС†nigin ist tot, lang lebe die KС†nigin ****************************************//
 
 instance  Tpl_1401_GorNaKosh_VICTORY (C_INFO)
 {
@@ -128,7 +128,7 @@ instance  Tpl_1401_GorNaKosh_VICTORY (C_INFO)
 	information		= Tpl_1401_GorNaKosh_VICTORY_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Я нашел логово ползунов!"; 
+	description		= "РЇ РЅР°С€РµР» Р»РѕРіРѕРІРѕ РїРѕР»Р·СѓРЅРѕРІ!"; 
 };
 
 FUNC int  Tpl_1401_GorNaKosh_VICTORY_Condition()
@@ -141,7 +141,7 @@ FUNC int  Tpl_1401_GorNaKosh_VICTORY_Condition()
 };
 FUNC void  Tpl_1401_GorNaKosh_VICTORY_Info()
 {
-	AI_Output			(other, self,"Tpl_1401_GorNaKosh_VICTORY_Info_15_01"); //Я нашел логово ползунов!
-	AI_Output			(self, other,"Tpl_1401_GorNaKosh_VICTORY_Info_13_02"); //Отлично! Теперь иди в лагерь и расскажи об окончании своей миссии. Кор Галом ждет тебя.
-	B_LogEntry			(CH2_MCEggs,	"Я должен отнести Кор Галому яйца ползунов. Он уже давно ждет моего возвращения.");
+	AI_Output			(other, self,"Tpl_1401_GorNaKosh_VICTORY_Info_15_01"); //РЇ РЅР°С€РµР» Р»РѕРіРѕРІРѕ РїРѕР»Р·СѓРЅРѕРІ!
+	AI_Output			(self, other,"Tpl_1401_GorNaKosh_VICTORY_Info_13_02"); //РћС‚Р»РёС‡РЅРѕ! РўРµРїРµСЂСЊ РёРґРё РІ Р»Р°РіРµСЂСЊ Рё СЂР°СЃСЃРєР°Р¶Рё РѕР± РѕРєРѕРЅС‡Р°РЅРёРё СЃРІРѕРµР№ РјРёСЃСЃРёРё. РљРѕСЂ Р“Р°Р»РѕРј Р¶РґРµС‚ С‚РµР±СЏ.
+	B_LogEntry			(CH2_MCEggs,	"РЇ РґРѕР»Р¶РµРЅ РѕС‚РЅРµСЃС‚Рё РљРѕСЂ Р“Р°Р»РѕРјСѓ СЏР№С†Р° РїРѕР»Р·СѓРЅРѕРІ. РћРЅ СѓР¶Рµ РґР°РІРЅРѕ Р¶РґРµС‚ РјРѕРµРіРѕ РІРѕР·РІСЂР°С‰РµРЅРёСЏ.");
 };  

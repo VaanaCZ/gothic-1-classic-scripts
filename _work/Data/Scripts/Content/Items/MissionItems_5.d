@@ -12,7 +12,7 @@
 
 INSTANCE ItWrTemplemap(C_Item)
 {
-	name 				=	"Карта";
+	name 				=	"РљР°СЂС‚Р°";
 
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION;
@@ -25,7 +25,7 @@ INSTANCE ItWrTemplemap(C_Item)
 	scemeName			=	"MAP";
 	on_state[0]			=	UseTemplemap;
 
-	description			= "Схема храма";
+	description			= "РЎС…РµРјР° С…СЂР°РјР°";
 	TEXT[4]				= NAME_Value;					COUNT[4]	= value;
 };
 
@@ -46,7 +46,7 @@ INSTANCE ItWrTemplemap(C_Item)
 //---------------------------------------------------------------------
 INSTANCE ItMiAlarmhorn (C_Item)
 {
-	name 				=	"Рог";
+	name 				=	"Р РѕРі";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags				=	ITEM_MISSION;
@@ -74,11 +74,11 @@ INSTANCE ItMiAlarmhorn (C_Item)
 };
 
 //---------------------------------------------------------------------
-//	Statuette fьr Tьr zum Alten Tempel
+//	Statuette fСЊr TСЊr zum Alten Tempel
 //---------------------------------------------------------------------
 INSTANCE ItMi_Stuff_Idol_Sleeper_01 (C_Item)
 {
-	name 				=	"Статуя";
+	name 				=	"РЎС‚Р°С‚СѓСЏ";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MISSION;
@@ -89,17 +89,17 @@ INSTANCE ItMi_Stuff_Idol_Sleeper_01 (C_Item)
 	material 			=	MAT_CLAY;
 
 	description			=	name;
-	TEXT[0]				= "Это фигурка какого-то бесформенного существа,";
-	TEXT[1]				= "которое носит маску.";
-	TEXT[2]				= "Маска окружена шестью большими шипами.";
+	TEXT[0]				= "Р­С‚Рѕ С„РёРіСѓСЂРєР° РєР°РєРѕРіРѕ-С‚Рѕ Р±РµСЃС„РѕСЂРјРµРЅРЅРѕРіРѕ СЃСѓС‰РµСЃС‚РІР°,";
+	TEXT[1]				= "РєРѕС‚РѕСЂРѕРµ РЅРѕСЃРёС‚ РјР°СЃРєСѓ.";
+	TEXT[2]				= "РњР°СЃРєР° РѕРєСЂСѓР¶РµРЅР° С€РµСЃС‚СЊСЋ Р±РѕР»СЊС€РёРјРё С€РёРїР°РјРё.";
 };
 
 //---------------------------------------------------------------------
-//	Schlдferschwert 1
+//	SchlРґferschwert 1
 //---------------------------------------------------------------------
 INSTANCE Weltenspalter (C_Item) 
 {	
-	name 				=	"Раскалывающий миры";
+	name 				=	"Р Р°СЃРєР°Р»С‹РІР°СЋС‰РёР№ РјРёСЂС‹";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_2HD_SWD|ITEM_MISSION;
@@ -114,20 +114,20 @@ INSTANCE Weltenspalter (C_Item)
 	cond_value[2]  		= 	30;
 	visual 				=	"ItMi_SleeperKey_01.3DS";
 	description			= 	name;
-	TEXT[0]				=	"Это меч бессмертного";
-	TEXT[1]				=	"орка-жреца Варраг-Хашора.";
-	TEXT[2]				=	"Меч был испорчен временем";
-	TEXT[3]				=	"и стал непригоден!";
-	TEXT[4]				=	"Быть может, его можно использовать";
-	TEXT[5]				=	"как-то иначе.";
+	TEXT[0]				=	"Р­С‚Рѕ РјРµС‡ Р±РµСЃСЃРјРµСЂС‚РЅРѕРіРѕ";
+	TEXT[1]				=	"РѕСЂРєР°-Р¶СЂРµС†Р° Р’Р°СЂСЂР°Рі-РҐР°С€РѕСЂР°.";
+	TEXT[2]				=	"РњРµС‡ Р±С‹Р» РёСЃРїРѕСЂС‡РµРЅ РІСЂРµРјРµРЅРµРј";
+	TEXT[3]				=	"Рё СЃС‚Р°Р» РЅРµРїСЂРёРіРѕРґРµРЅ!";
+	TEXT[4]				=	"Р‘С‹С‚СЊ РјРѕР¶РµС‚, РµРіРѕ РјРѕР¶РЅРѕ РёСЃРїРѕР»СЊР·РѕРІР°С‚СЊ";
+	TEXT[5]				=	"РєР°Рє-С‚Рѕ РёРЅР°С‡Рµ.";
 };
 
 //---------------------------------------------------------------------
-//	Schlдferschwert 2
+//	SchlРґferschwert 2
 //---------------------------------------------------------------------
 INSTANCE Lichtbringer (C_Item) 
 {	
-	name 				=	"Несущий свет";
+	name 				=	"РќРµСЃСѓС‰РёР№ СЃРІРµС‚";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_2HD_SWD|ITEM_MISSION;	
@@ -142,20 +142,20 @@ INSTANCE Lichtbringer (C_Item)
 	cond_value[2]  		= 	30;
 	visual 				=	"ItMi_SleeperKey_01.3DS";
 	description			= 	name;
-	TEXT[0]				=	"Это меч бессмертного";
-	TEXT[1]				=	"орка-жреца Варраг-Казорга.";
-	TEXT[2]				=	"Меч был испорчен временем";
-	TEXT[3]				=	"и стал непригоден!";
-	TEXT[4]				=	"Быть может, его можно использовать";
-	TEXT[5]				=	"как-то иначе.";
+	TEXT[0]				=	"Р­С‚Рѕ РјРµС‡ Р±РµСЃСЃРјРµСЂС‚РЅРѕРіРѕ";
+	TEXT[1]				=	"РѕСЂРєР°-Р¶СЂРµС†Р° Р’Р°СЂСЂР°Рі-РљР°Р·РѕСЂРіР°.";
+	TEXT[2]				=	"РњРµС‡ Р±С‹Р» РёСЃРїРѕСЂС‡РµРЅ РІСЂРµРјРµРЅРµРј";
+	TEXT[3]				=	"Рё СЃС‚Р°Р» РЅРµРїСЂРёРіРѕРґРµРЅ!";
+	TEXT[4]				=	"Р‘С‹С‚СЊ РјРѕР¶РµС‚, РµРіРѕ РјРѕР¶РЅРѕ РёСЃРїРѕР»СЊР·РѕРІР°С‚СЊ";
+	TEXT[5]				=	"РєР°Рє-С‚Рѕ РёРЅР°С‡Рµ.";
 };
 
 //---------------------------------------------------------------------
-//	Schlдferschwert 3
+//	SchlРґferschwert 3
 //---------------------------------------------------------------------
 INSTANCE Zeitenklinge (C_Item) 
 {	
-	name 				=	"Клинок времен";
+	name 				=	"РљР»РёРЅРѕРє РІСЂРµРјРµРЅ";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_2HD_SWD|ITEM_MISSION;	
@@ -170,20 +170,20 @@ INSTANCE Zeitenklinge (C_Item)
 	cond_value[2]  		= 	30;
 	visual 				=	"ItMi_SleeperKey_01.3DS";
 	description			= 	name;
-	TEXT[0]				=	"Это меч бессмертного";
-	TEXT[1]				=	"орка-жреца Варраг-Унхилькта.";
-	TEXT[2]				=	"Меч был испорчен временем";
-	TEXT[3]				=	"и стал непригоден!";
-	TEXT[4]				=	"Быть может, его можно использовать";
-	TEXT[5]				=	"как-то иначе.";
+	TEXT[0]				=	"Р­С‚Рѕ РјРµС‡ Р±РµСЃСЃРјРµСЂС‚РЅРѕРіРѕ";
+	TEXT[1]				=	"РѕСЂРєР°-Р¶СЂРµС†Р° Р’Р°СЂСЂР°Рі-РЈРЅС…РёР»СЊРєС‚Р°.";
+	TEXT[2]				=	"РњРµС‡ Р±С‹Р» РёСЃРїРѕСЂС‡РµРЅ РІСЂРµРјРµРЅРµРј";
+	TEXT[3]				=	"Рё СЃС‚Р°Р» РЅРµРїСЂРёРіРѕРґРµРЅ!";
+	TEXT[4]				=	"Р‘С‹С‚СЊ РјРѕР¶РµС‚, РµРіРѕ РјРѕР¶РЅРѕ РёСЃРїРѕР»СЊР·РѕРІР°С‚СЊ";
+	TEXT[5]				=	"РєР°Рє-С‚Рѕ РёРЅР°С‡Рµ.";
 };
 
 //---------------------------------------------------------------------
-//	Schlдferschwert 4
+//	SchlРґferschwert 4
 //---------------------------------------------------------------------
 INSTANCE Daemonenstreich (C_Item) 
 {	
-	name 				=	"Удар демона";
+	name 				=	"РЈРґР°СЂ РґРµРјРѕРЅР°";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_2HD_SWD|ITEM_MISSION;	
@@ -198,20 +198,20 @@ INSTANCE Daemonenstreich (C_Item)
 	cond_value[2]  		= 	30;
 	visual 				=	"ItMi_SleeperKey_01.3DS";
 	description			= 	name;
-	TEXT[0]				=	"Это меч бессмертного";
-	TEXT[1]				=	"орка-жреца Варраг-Руушка.";
-	TEXT[2]				=	"Меч был испорчен временем";
-	TEXT[3]				=	"и стал непригоден!";
-	TEXT[4]				=	"Быть может, его можно использовать";
-	TEXT[5]				=	"как-то иначе.";
+	TEXT[0]				=	"Р­С‚Рѕ РјРµС‡ Р±РµСЃСЃРјРµСЂС‚РЅРѕРіРѕ";
+	TEXT[1]				=	"РѕСЂРєР°-Р¶СЂРµС†Р° Р’Р°СЂСЂР°Рі-Р СѓСѓС€РєР°.";
+	TEXT[2]				=	"РњРµС‡ Р±С‹Р» РёСЃРїРѕСЂС‡РµРЅ РІСЂРµРјРµРЅРµРј";
+	TEXT[3]				=	"Рё СЃС‚Р°Р» РЅРµРїСЂРёРіРѕРґРµРЅ!";
+	TEXT[4]				=	"Р‘С‹С‚СЊ РјРѕР¶РµС‚, РµРіРѕ РјРѕР¶РЅРѕ РёСЃРїРѕР»СЊР·РѕРІР°С‚СЊ";
+	TEXT[5]				=	"РєР°Рє-С‚Рѕ РёРЅР°С‡Рµ.";
 };
 
 //---------------------------------------------------------------------
-//	Schlдferschwert 5
+//	SchlРґferschwert 5
 //---------------------------------------------------------------------
 INSTANCE Bannklinge (C_Item) 
 {	
-	name 				=	"Клинок проклятий";
+	name 				=	"РљР»РёРЅРѕРє РїСЂРѕРєР»СЏС‚РёР№";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_2HD_SWD|ITEM_MISSION;	
@@ -226,20 +226,20 @@ INSTANCE Bannklinge (C_Item)
 	cond_value[2]  		= 	30;
 	visual 				=	"ItMi_SleeperKey_01.3DS";
 	description			= 	name;
-	TEXT[0]				=	"Это меч бессмертного";
-	TEXT[1]				=	"орка-жреца Граш-Варраг-Арушата.";
-	TEXT[2]				=	"Меч был испорчен временем";
-	TEXT[3]				=	"и стал непригоден!";
-	TEXT[4]				=	"Быть может, его можно использовать";
-	TEXT[5]				=	"как-то иначе.";
+	TEXT[0]				=	"Р­С‚Рѕ РјРµС‡ Р±РµСЃСЃРјРµСЂС‚РЅРѕРіРѕ";
+	TEXT[1]				=	"РѕСЂРєР°-Р¶СЂРµС†Р° Р“СЂР°С€-Р’Р°СЂСЂР°Рі-РђСЂСѓС€Р°С‚Р°.";
+	TEXT[2]				=	"РњРµС‡ Р±С‹Р» РёСЃРїРѕСЂС‡РµРЅ РІСЂРµРјРµРЅРµРј";
+	TEXT[3]				=	"Рё СЃС‚Р°Р» РЅРµРїСЂРёРіРѕРґРµРЅ!";
+	TEXT[4]				=	"Р‘С‹С‚СЊ РјРѕР¶РµС‚, РµРіРѕ РјРѕР¶РЅРѕ РёСЃРїРѕР»СЊР·РѕРІР°С‚СЊ";
+	TEXT[5]				=	"РєР°Рє-С‚Рѕ РёРЅР°С‡Рµ.";
 };
 
 //---------------------------------------------------------------------
-//	Schwert fьr den Untoten Ork-Hohepriester (unidentifiziert)
+//	Schwert fСЊr den Untoten Ork-Hohepriester (unidentifiziert)
 //---------------------------------------------------------------------
 INSTANCE Mythrilklinge (C_Item) 
 {	
-	name 				=	"Необычный меч";
+	name 				=	"РќРµРѕР±С‹С‡РЅС‹Р№ РјРµС‡";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_2HD_SWD|ITEM_MISSION;	
@@ -254,19 +254,19 @@ INSTANCE Mythrilklinge (C_Item)
 	cond_value[2]  		= 	30;
 	visual 				=	"ItMw_2H_Sword_Sleeper_01.3DS";
 	description			= 	name;
-	TEXT[0]				=	"Очень красивый меч.";
-	TEXT[1]				=	"На клинке выгравированы древние руны.";
-	TEXT[2]				=	"Может быть, Ксардас сможет их прочитать!";
-	TEXT[3]				=	"Лучше я сначала узнаю, что это за оружие,";
-	TEXT[4]				=	"а пока буду носить его с собой.";
+	TEXT[0]				=	"РћС‡РµРЅСЊ РєСЂР°СЃРёРІС‹Р№ РјРµС‡.";
+	TEXT[1]				=	"РќР° РєР»РёРЅРєРµ РІС‹РіСЂР°РІРёСЂРѕРІР°РЅС‹ РґСЂРµРІРЅРёРµ СЂСѓРЅС‹.";
+	TEXT[2]				=	"РњРѕР¶РµС‚ Р±С‹С‚СЊ, РљСЃР°СЂРґР°СЃ СЃРјРѕР¶РµС‚ РёС… РїСЂРѕС‡РёС‚Р°С‚СЊ!";
+	TEXT[3]				=	"Р›СѓС‡С€Рµ СЏ СЃРЅР°С‡Р°Р»Р° СѓР·РЅР°СЋ, С‡С‚Рѕ СЌС‚Рѕ Р·Р° РѕСЂСѓР¶РёРµ,";
+	TEXT[4]				=	"Р° РїРѕРєР° Р±СѓРґСѓ РЅРѕСЃРёС‚СЊ РµРіРѕ СЃ СЃРѕР±РѕР№.";
 };
 
 //---------------------------------------------------------------------
-//	Schwert fьr den Untoten Ork-Hohepriester (identifiziert)
+//	Schwert fСЊr den Untoten Ork-Hohepriester (identifiziert)
 //---------------------------------------------------------------------
 instance Mythrilklinge01 (C_Item) 
 {	
-	name 				=	"УРИЗЕЛЬ";
+	name 				=	"РЈР РР—Р•Р›Р¬";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_SWD|ITEM_MISSION;	
@@ -282,9 +282,9 @@ instance Mythrilklinge01 (C_Item)
 	visual 				=	"ItMw_2H_Sword_Sleeper_01.3DS";
 
 	description			= 	name;
-	TEXT[0]				=	"Ксардас сказал, что это очень древний меч, который называется УРИЗЕЛЬ.";
-	TEXT[1]				=	"Раньше он обладал огромной силой,";
-	TEXT[2]				=	"но она была утеряна.";
+	TEXT[0]				=	"РљСЃР°СЂРґР°СЃ СЃРєР°Р·Р°Р», С‡С‚Рѕ СЌС‚Рѕ РѕС‡РµРЅСЊ РґСЂРµРІРЅРёР№ РјРµС‡, РєРѕС‚РѕСЂС‹Р№ РЅР°Р·С‹РІР°РµС‚СЃСЏ РЈР РР—Р•Р›Р¬.";
+	TEXT[1]				=	"Р Р°РЅСЊС€Рµ РѕРЅ РѕР±Р»Р°РґР°Р» РѕРіСЂРѕРјРЅРѕР№ СЃРёР»РѕР№,";
+	TEXT[2]				=	"РЅРѕ РѕРЅР° Р±С‹Р»Р° СѓС‚РµСЂСЏРЅР°.";
 
 	TEXT[3]				=	NAME_Damage;				COUNT[3] =	damageTotal;
 	TEXT[4] 			=	NAME_Str_needed;			COUNT[4] =	cond_value[2];
@@ -292,11 +292,11 @@ instance Mythrilklinge01 (C_Item)
 };
 
 //---------------------------------------------------------------------
-//	Schwert fьr den Untoten Ork-Hohepriester (aufgeladen)
+//	Schwert fСЊr den Untoten Ork-Hohepriester (aufgeladen)
 //---------------------------------------------------------------------
 instance Mythrilklinge02 (C_Item) 
 {	
-	name 				=	"УРИЗЕЛЬ";
+	name 				=	"РЈР РР—Р•Р›Р¬";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_SWD|ITEM_MISSION;	
@@ -317,8 +317,8 @@ instance Mythrilklinge02 (C_Item)
 	cond_value[2]  		= 	30;
 	visual 				=	"ItMw_2H_Sword_Sleeper_02.3DS";
 	description			= 	name;
-	TEXT[0]				=	"Это меч Уризель.";
-	TEXT[1]				= 	"Уризель заряжен магической энергией.";
+	TEXT[0]				=	"Р­С‚Рѕ РјРµС‡ РЈСЂРёР·РµР»СЊ.";
+	TEXT[1]				= 	"РЈСЂРёР·РµР»СЊ Р·Р°СЂСЏР¶РµРЅ РјР°РіРёС‡РµСЃРєРѕР№ СЌРЅРµСЂРіРёРµР№.";
 	TEXT[2]				=	NAME_Dam_Magic;			COUNT[2]	=	damage[DAM_INDEX_MAGIC];
 	TEXT[3]				=	NAME_Dam_Fire;			COUNT[3]	=	damage[DAM_INDEX_FIRE];
 	TEXT[4] 			=	NAME_Str_needed;		COUNT[4]	=	cond_value[2];
@@ -330,7 +330,7 @@ instance Mythrilklinge02 (C_Item)
 //---------------------------------------------------------------------
 instance Mythrilklinge03 (C_Item) 
 {	
-	name 				=	"УРИЗЕЛЬ";
+	name 				=	"РЈР РР—Р•Р›Р¬";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_SWD|ITEM_MISSION;	
@@ -346,20 +346,20 @@ instance Mythrilklinge03 (C_Item)
 	visual 				=	"ItMw_2H_Sword_Sleeper_01.3DS";
 
 	description			= 	name;
-	TEXT[0]				=	"Магический драгоценный камень был";
-	TEXT[1]				=	"изъят. Меч все еще очень хорош,";
-	TEXT[2]				=	"но теперь он не обладает магической силой.";
+	TEXT[0]				=	"РњР°РіРёС‡РµСЃРєРёР№ РґСЂР°РіРѕС†РµРЅРЅС‹Р№ РєР°РјРµРЅСЊ Р±С‹Р»";
+	TEXT[1]				=	"РёР·СЉСЏС‚. РњРµС‡ РІСЃРµ РµС‰Рµ РѕС‡РµРЅСЊ С…РѕСЂРѕС€,";
+	TEXT[2]				=	"РЅРѕ С‚РµРїРµСЂСЊ РѕРЅ РЅРµ РѕР±Р»Р°РґР°РµС‚ РјР°РіРёС‡РµСЃРєРѕР№ СЃРёР»РѕР№.";
 	TEXT[3]				=	NAME_Damage;				COUNT[3] =	damageTotal;
 	TEXT[4] 			=	NAME_Str_needed;			COUNT[4] =	cond_value[2];
 	TEXT[5]				=	NAME_Value;					COUNT[5] =	value;
 };
 
 //---------------------------------------------------------------------
-//	Schriftrolle, um Schwert fьr den untoten Ork-Hohepriester zu laden
+//	Schriftrolle, um Schwert fСЊr den untoten Ork-Hohepriester zu laden
 //---------------------------------------------------------------------
 INSTANCE Scroll4Milten (C_Item)
 {	
-	name 				=	"Перенос энергии";
+	name 				=	"РџРµСЂРµРЅРѕСЃ СЌРЅРµСЂРіРёРё";
 
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION;
@@ -371,17 +371,17 @@ INSTANCE Scroll4Milten (C_Item)
 
 //	scemeName			=	"MAP";
 	description			= name;
-	TEXT[0]				= "Заклинание переноса энергии";
-	TEXT[1]				= "на меч.";
- 	TEXT[2]				= "Я не могу его использовать.";
+	TEXT[0]				= "Р—Р°РєР»РёРЅР°РЅРёРµ РїРµСЂРµРЅРѕСЃР° СЌРЅРµСЂРіРёРё";
+	TEXT[1]				= "РЅР° РјРµС‡.";
+ 	TEXT[2]				= "РЇ РЅРµ РјРѕРіСѓ РµРіРѕ РёСЃРїРѕР»СЊР·РѕРІР°С‚СЊ.";
 };
 
 //---------------------------------------------------------------------
-//	Schlьssel zum Versunkenen Turm
+//	SchlСЊssel zum Versunkenen Turm
 //---------------------------------------------------------------------
 INSTANCE ItKe_SunkenTower(C_Item)
 {
-	name 				=	"Ключ";
+	name 				=	"РљР»СЋС‡";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MISSION;
@@ -392,16 +392,16 @@ INSTANCE ItKe_SunkenTower(C_Item)
 	material 			=	MAT_METAL;
 
 	description			=	name;
-	TEXT[0]				=	"Открывает двери";
-	TEXT[1]				=	"в затонувшей башне.";
+	TEXT[0]				=	"РћС‚РєСЂС‹РІР°РµС‚ РґРІРµСЂРё";
+	TEXT[1]				=	"РІ Р·Р°С‚РѕРЅСѓРІС€РµР№ Р±Р°С€РЅРµ.";
 };
 
 //---------------------------------------------------------------------
-//	Kerkerschlьssel
+//	KerkerschlСЊssel
 //---------------------------------------------------------------------
 INSTANCE DungeonKey(C_Item)
 {
-	name 				=	"Ключ от подземелья";
+	name 				=	"РљР»СЋС‡ РѕС‚ РїРѕРґР·РµРјРµР»СЊСЏ";
 
 	mainflag 				=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MISSION;
@@ -413,7 +413,7 @@ INSTANCE DungeonKey(C_Item)
 
 	description			= name;
 	TEXT[0]				= "";
-	TEXT[0]				= "Открывает подземелье в Старом лагере.";
+	TEXT[0]				= "РћС‚РєСЂС‹РІР°РµС‚ РїРѕРґР·РµРјРµР»СЊРµ РІ РЎС‚Р°СЂРѕРј Р»Р°РіРµСЂРµ.";
 };
 
 
@@ -422,7 +422,7 @@ INSTANCE DungeonKey(C_Item)
 //---------------------------------------------------------------------
 INSTANCE UrizielRune (C_Item)
 {
-	name 				=	"Волна смерти УРИЗЕЛЯ";
+	name 				=	"Р’РѕР»РЅР° СЃРјРµСЂС‚Рё РЈР РР—Р•Р›РЇ";
 
 	mainflag 			=	ITEM_KAT_RUNE;
 	flags 				=	ITEM_MISSION;
@@ -436,8 +436,8 @@ INSTANCE UrizielRune (C_Item)
 	mag_circle 			=	6;
 
 	description			=	name;
-	TEXT	[0]			=	"Эта магическая руна содержит";
-	TEXT	[1]			=	"древнюю силу меча УРИЗЕЛЬ.";
+	TEXT	[0]			=	"Р­С‚Р° РјР°РіРёС‡РµСЃРєР°СЏ СЂСѓРЅР° СЃРѕРґРµСЂР¶РёС‚";
+	TEXT	[1]			=	"РґСЂРµРІРЅСЋСЋ СЃРёР»Сѓ РјРµС‡Р° РЈР РР—Р•Р›Р¬.";
 	TEXT	[2]			=	NAME_Mag_Circle;			COUNT	[2]		=	mag_circle;
 	TEXT	[3]			=	NAME_Manakosten;			COUNT	[3]		=	SPL_SENDCAST_MASSDEATH;
 	TEXT	[4]			=	NAME_Dam_Magic;				COUNT	[4]		=	SPL_DAMAGE_MASSDEATH;

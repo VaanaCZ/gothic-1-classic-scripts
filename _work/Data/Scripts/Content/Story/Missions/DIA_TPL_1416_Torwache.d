@@ -33,7 +33,7 @@ INSTANCE DIA_Tpl_1416_Torwache_Life (C_INFO)
 	condition		= DIA_Tpl_1416_Torwache_Life_Condition;
 	information		= DIA_Tpl_1416_Torwache_Life_Info;
 	permanent		= 1;
-	description		= "Как здесь живется Стражам Братства?";
+	description		= "РљР°Рє Р·РґРµСЃСЊ Р¶РёРІРµС‚СЃСЏ РЎС‚СЂР°Р¶Р°Рј Р‘СЂР°С‚СЃС‚РІР°?";
 };
 
 FUNC INT DIA_Tpl_1416_Torwache_Life_Condition()
@@ -43,7 +43,7 @@ FUNC INT DIA_Tpl_1416_Torwache_Life_Condition()
 
 FUNC VOID DIA_Tpl_1416_Torwache_Life_Info()
 {
-	AI_Output (other, self,"DIA_Tpl_1416_Torwache_Life_15_00"); //Как здесь живется Стражам Братства?
-	AI_Output (self, other,"DIA_Tpl_1416_Torwache_Life_08_01"); //Мне поручено важное задание. Сам Просветленный и его ученики рассчитывают на меня.
-	AI_Output (self, other,"DIA_Tpl_1416_Torwache_Life_08_02");	//Моя прежняя жизнь осталась в прошлом. Я стал одним из Гор На - Стражем Спящего.
+	AI_Output (other, self,"DIA_Tpl_1416_Torwache_Life_15_00"); //РљР°Рє Р·РґРµСЃСЊ Р¶РёРІРµС‚СЃСЏ РЎС‚СЂР°Р¶Р°Рј Р‘СЂР°С‚СЃС‚РІР°?
+	AI_Output (self, other,"DIA_Tpl_1416_Torwache_Life_08_01"); //РњРЅРµ РїРѕСЂСѓС‡РµРЅРѕ РІР°Р¶РЅРѕРµ Р·Р°РґР°РЅРёРµ. РЎР°Рј РџСЂРѕСЃРІРµС‚Р»РµРЅРЅС‹Р№ Рё РµРіРѕ СѓС‡РµРЅРёРєРё СЂР°СЃСЃС‡РёС‚С‹РІР°СЋС‚ РЅР° РјРµРЅСЏ.
+	AI_Output (self, other,"DIA_Tpl_1416_Torwache_Life_08_02");	//РњРѕСЏ РїСЂРµР¶РЅСЏСЏ Р¶РёР·РЅСЊ РѕСЃС‚Р°Р»Р°СЃСЊ РІ РїСЂРѕС€Р»РѕРј. РЇ СЃС‚Р°Р» РѕРґРЅРёРј РёР· Р“РѕСЂ РќР° - РЎС‚СЂР°Р¶РµРј РЎРїСЏС‰РµРіРѕ.
 };

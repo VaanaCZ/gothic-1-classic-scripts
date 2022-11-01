@@ -1,7 +1,7 @@
 instance CS_Eskorte2 (Npc_Default)
 {
 	//-------- primary data --------
-	name =							"Эскорт2";
+	name =							"Р­СЃРєРѕСЂС‚2";
 	slot =							"guard";
 	guild =							GIL_GRD;
 	level =							5;

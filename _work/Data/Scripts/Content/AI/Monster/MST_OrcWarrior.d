@@ -4,7 +4,7 @@
 
 PROTOTYPE Mst_Default_OrcWarrior(C_Npc)			
 {
-	name							=	"Орк-солдат";
+	name							=	"РћСЂРє-СЃРѕР»РґР°С‚";
 	guild							=	GIL_ORCWARRIOR;
 	npctype							=	NPCTYPE_GUARD;
 	voice							=	17;
@@ -66,7 +66,7 @@ func void Set_OrcWarrior_Visuals()
 INSTANCE OrcWarrior1	(Mst_Default_OrcWarrior)
 {
 	//-------- general --------
-	name							=	"Орк-боец";
+	name							=	"РћСЂРє-Р±РѕРµС†";
 	level							=	25;
 
 	//-------- visual --------
@@ -93,7 +93,7 @@ INSTANCE OrcWarrior1	(Mst_Default_OrcWarrior)
 INSTANCE OrcWarrior2	(Mst_Default_OrcWarrior)
 {
 	//-------- general --------
-	name							=	"Орк-солдат";
+	name							=	"РћСЂРє-СЃРѕР»РґР°С‚";
 	level							=	30;
 
 	//-------- visual --------
@@ -120,7 +120,7 @@ INSTANCE OrcWarrior2	(Mst_Default_OrcWarrior)
 INSTANCE OrcWarrior3	(Mst_Default_OrcWarrior)
 {
 	//-------- general --------
-	name							=	"Орк-воин клана";
+	name							=	"РћСЂРє-РІРѕРёРЅ РєР»Р°РЅР°";
 	level							=	35;
 
 	//-------- visual --------
@@ -147,7 +147,7 @@ INSTANCE OrcWarrior3	(Mst_Default_OrcWarrior)
 INSTANCE OrcWarrior4	(Mst_Default_OrcWarrior)
 {
 	//-------- general --------
-	name							=	"Орк-страж";
+	name							=	"РћСЂРє-СЃС‚СЂР°Р¶";
 	level							=	40;
 
 	//-------- visual --------

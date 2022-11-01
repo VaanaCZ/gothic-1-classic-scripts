@@ -20,7 +20,7 @@ FUNC int DIA_SLD_752_OKYL_INTRO_CONDITION()
 
 func void DIA_SLD_752_OKYL_INTRO_INFO()
 {
-	AI_Output (self, other,"DIA_SLD_752_OKYL_INTRO_INFO_11_01"); //Эй, ты! Раньше я тебя не видел. Что ты здесь делаешь?
+	AI_Output (self, other,"DIA_SLD_752_OKYL_INTRO_INFO_11_01"); //Р­Р№, С‚С‹! Р Р°РЅСЊС€Рµ СЏ С‚РµР±СЏ РЅРµ РІРёРґРµР». Р§С‚Рѕ С‚С‹ Р·РґРµСЃСЊ РґРµР»Р°РµС€СЊ?
 };
 
 //-------------------- Exit -----------------------------
@@ -33,7 +33,7 @@ instance DIA_SLD_752_OKYL_EXIT (C_INFO)
 	information		= DIA_SLD_752_OKYL_EXIT_INFO;
 	important		= 0;
 	permanent		= 1;
-	description 	= "Я должен уходить!";
+	description 	= "РЇ РґРѕР»Р¶РµРЅ СѓС…РѕРґРёС‚СЊ!";
 };
 
 FUNC int DIA_SLD_752_OKYL_EXIT_CONDITION()
@@ -43,8 +43,8 @@ FUNC int DIA_SLD_752_OKYL_EXIT_CONDITION()
 
 func void DIA_SLD_752_OKYL_EXIT_INFO()
 {
-	AI_Output (other, self,"DIA_SLD_752_OKYL_EXIT_INFO_15_01"); //Я пойду, ладно?
-	AI_Output (self, other,"DIA_SLD_752_OKYL_EXIT_INFO_11_02");//Вот и правильно. Иди себе.
+	AI_Output (other, self,"DIA_SLD_752_OKYL_EXIT_INFO_15_01"); //РЇ РїРѕР№РґСѓ, Р»Р°РґРЅРѕ?
+	AI_Output (self, other,"DIA_SLD_752_OKYL_EXIT_INFO_11_02");//Р’РѕС‚ Рё РїСЂР°РІРёР»СЊРЅРѕ. РРґРё СЃРµР±Рµ.
 	AI_StopProcessInfos	( self );
 };
 
@@ -57,7 +57,7 @@ instance DIA_SLD_752_OKYL_UMSEHEN (C_INFO)
 	information		= DIA_SLD_752_OKYL_UMSEHEN_INFO;
 	important		= 0;
 	permanent		= 0;
-	description 	= "Я просто хочу немного оглядеться.";
+	description 	= "РЇ РїСЂРѕСЃС‚Рѕ С…РѕС‡Сѓ РЅРµРјРЅРѕРіРѕ РѕРіР»СЏРґРµС‚СЊСЃСЏ.";
 };
 
 FUNC int DIA_SLD_752_OKYL_UMSEHEN_CONDITION()
@@ -67,8 +67,8 @@ FUNC int DIA_SLD_752_OKYL_UMSEHEN_CONDITION()
 
 func void DIA_SLD_752_OKYL_UMSEHEN_INFO()
 {
-	AI_Output (other, self,"DIA_SLD_752_OKYL_UMSEHEN_INFO_15_01"); //Я просто хочу немного оглядеться.
-	AI_Output (self, other,"DIA_SLD_752_OKYL_UMSEHEN_INFO_11_02");//Тогда следи за тем, чтобы не влипнуть в неприятности, иначе ты окажешься в могиле раньше, чем успеешь пожалеть об этом. 
+	AI_Output (other, self,"DIA_SLD_752_OKYL_UMSEHEN_INFO_15_01"); //РЇ РїСЂРѕСЃС‚Рѕ С…РѕС‡Сѓ РЅРµРјРЅРѕРіРѕ РѕРіР»СЏРґРµС‚СЊСЃСЏ.
+	AI_Output (self, other,"DIA_SLD_752_OKYL_UMSEHEN_INFO_11_02");//РўРѕРіРґР° СЃР»РµРґРё Р·Р° С‚РµРј, С‡С‚РѕР±С‹ РЅРµ РІР»РёРїРЅСѓС‚СЊ РІ РЅРµРїСЂРёСЏС‚РЅРѕСЃС‚Рё, РёРЅР°С‡Рµ С‚С‹ РѕРєР°Р¶РµС€СЊСЃСЏ РІ РјРѕРіРёР»Рµ СЂР°РЅСЊС€Рµ, С‡РµРј СѓСЃРїРµРµС€СЊ РїРѕР¶Р°Р»РµС‚СЊ РѕР± СЌС‚РѕРј. 
 };
 
 //--------------------- Wer bist Du -----------------------------
@@ -80,7 +80,7 @@ instance DIA_SLD_752_OKYL_WERBISTDU (C_INFO)
 	information		= DIA_SLD_752_OKYL_WERBISTDU_INFO;
 	important		= 0;
 	permanent		= 0;
-	description 	= "Кто ты такой?";
+	description 	= "РљС‚Рѕ С‚С‹ С‚Р°РєРѕР№?";
 };
 
 FUNC int DIA_SLD_752_OKYL_WERBISTDU_CONDITION()
@@ -90,8 +90,8 @@ FUNC int DIA_SLD_752_OKYL_WERBISTDU_CONDITION()
 
 func void DIA_SLD_752_OKYL_WERBISTDU_INFO()
 {
-	AI_Output (other, self,"DIA_SLD_752_OKYL_WERBISTDU_INFO_15_01"); //Кто ты такой?
-	AI_Output (self, other,"DIA_SLD_752_OKYL_WERBISTDU_INFO_11_02");//Я Окил. Я здесь главный.
+	AI_Output (other, self,"DIA_SLD_752_OKYL_WERBISTDU_INFO_15_01"); //РљС‚Рѕ С‚С‹ С‚Р°РєРѕР№?
+	AI_Output (self, other,"DIA_SLD_752_OKYL_WERBISTDU_INFO_11_02");//РЇ РћРєРёР». РЇ Р·РґРµСЃСЊ РіР»Р°РІРЅС‹Р№.
 
 };
 
@@ -104,7 +104,7 @@ instance DIA_SLD_752_OKYL_INMINE (C_INFO)
 	information		= DIA_SLD_752_OKYL_INMINE_INFO;
 	important		= 0;
 	permanent		= 0;
-	description 	= "Я хотел просто посмотреть, что там у вас в шахте.";
+	description 	= "РЇ С…РѕС‚РµР» РїСЂРѕСЃС‚Рѕ РїРѕСЃРјРѕС‚СЂРµС‚СЊ, С‡С‚Рѕ С‚Р°Рј Сѓ РІР°СЃ РІ С€Р°С…С‚Рµ.";
 };
 
 FUNC int DIA_SLD_752_OKYL_INMINE_CONDITION()
@@ -114,10 +114,10 @@ FUNC int DIA_SLD_752_OKYL_INMINE_CONDITION()
 
 func void DIA_SLD_752_OKYL_INMINE_INFO()
 {
-	AI_Output (other, self,"DIA_SLD_752_OKYL_INMINE_INFO_15_01"); //Я хотел просто посмотреть, что там у вас в шахте.
-	AI_Output (self, other,"DIA_SLD_752_OKYL_INMINE_INFO_11_02");//А, просто заглянуть в шахту.
-	AI_Output (self, other,"DIA_SLD_752_OKYL_INMINE_INFO_11_03");//Похоже, ты совершенно ни в чем не разбираешься. Никто не может попасть в шахту без моего разрешения.
-	AI_Output (self, other,"DIA_SLD_752_OKYL_INMINE_INFO_11_04");//Заруби это себе на носу. Тот, кто попадет в шахту без моего согласия, долго не проживет!
+	AI_Output (other, self,"DIA_SLD_752_OKYL_INMINE_INFO_15_01"); //РЇ С…РѕС‚РµР» РїСЂРѕСЃС‚Рѕ РїРѕСЃРјРѕС‚СЂРµС‚СЊ, С‡С‚Рѕ С‚Р°Рј Сѓ РІР°СЃ РІ С€Р°С…С‚Рµ.
+	AI_Output (self, other,"DIA_SLD_752_OKYL_INMINE_INFO_11_02");//Рђ, РїСЂРѕСЃС‚Рѕ Р·Р°РіР»СЏРЅСѓС‚СЊ РІ С€Р°С…С‚Сѓ.
+	AI_Output (self, other,"DIA_SLD_752_OKYL_INMINE_INFO_11_03");//РџРѕС…РѕР¶Рµ, С‚С‹ СЃРѕРІРµСЂС€РµРЅРЅРѕ РЅРё РІ С‡РµРј РЅРµ СЂР°Р·Р±РёСЂР°РµС€СЊСЃСЏ. РќРёРєС‚Рѕ РЅРµ РјРѕР¶РµС‚ РїРѕРїР°СЃС‚СЊ РІ С€Р°С…С‚Сѓ Р±РµР· РјРѕРµРіРѕ СЂР°Р·СЂРµС€РµРЅРёСЏ.
+	AI_Output (self, other,"DIA_SLD_752_OKYL_INMINE_INFO_11_04");//Р—Р°СЂСѓР±Рё СЌС‚Рѕ СЃРµР±Рµ РЅР° РЅРѕСЃСѓ. РўРѕС‚, РєС‚Рѕ РїРѕРїР°РґРµС‚ РІ С€Р°С…С‚Сѓ Р±РµР· РјРѕРµРіРѕ СЃРѕРіР»Р°СЃРёСЏ, РґРѕР»РіРѕ РЅРµ РїСЂРѕР¶РёРІРµС‚!
 };
 
 //----------------------- Erlaubniss kriegen -------------------------
@@ -129,7 +129,7 @@ instance DIA_SLD_752_OKYL_PERMIT (C_INFO)
 	information		= DIA_SLD_752_OKYL_PERMIT_INFO;
 	important		= 0;
 	permanent		= 0;
-	description 	= "А ты можешь разрешить мне пойти туда?";
+	description 	= "Рђ С‚С‹ РјРѕР¶РµС€СЊ СЂР°Р·СЂРµС€РёС‚СЊ РјРЅРµ РїРѕР№С‚Рё С‚СѓРґР°?";
 };
 
 FUNC int DIA_SLD_752_OKYL_PERMIT_CONDITION()
@@ -142,8 +142,8 @@ FUNC int DIA_SLD_752_OKYL_PERMIT_CONDITION()
 
 func void DIA_SLD_752_OKYL_PERMIT_INFO()
 {
-	AI_Output (other, self,"DIA_SLD_752_OKYL_PERMIT_INFO_15_01");//А ты можешь разрешить мне пойти туда?
-	AI_Output (self, other,"DIA_SLD_752_OKYL_PERMIT_INFO_11_02");//А я даже не знаю, кто ты. Почему я должен давать тебе такое разрешение?
-	AI_Output (self, other,"DIA_SLD_752_OKYL_PERMIT_INFO_11_03");//И вообще, у меня много дел. Проваливай.
+	AI_Output (other, self,"DIA_SLD_752_OKYL_PERMIT_INFO_15_01");//Рђ С‚С‹ РјРѕР¶РµС€СЊ СЂР°Р·СЂРµС€РёС‚СЊ РјРЅРµ РїРѕР№С‚Рё С‚СѓРґР°?
+	AI_Output (self, other,"DIA_SLD_752_OKYL_PERMIT_INFO_11_02");//Рђ СЏ РґР°Р¶Рµ РЅРµ Р·РЅР°СЋ, РєС‚Рѕ С‚С‹. РџРѕС‡РµРјСѓ СЏ РґРѕР»Р¶РµРЅ РґР°РІР°С‚СЊ С‚РµР±Рµ С‚Р°РєРѕРµ СЂР°Р·СЂРµС€РµРЅРёРµ?
+	AI_Output (self, other,"DIA_SLD_752_OKYL_PERMIT_INFO_11_03");//Р РІРѕРѕР±С‰Рµ, Сѓ РјРµРЅСЏ РјРЅРѕРіРѕ РґРµР». РџСЂРѕРІР°Р»РёРІР°Р№.
 	AI_StopProcessInfos (self);
 };

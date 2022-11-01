@@ -4,7 +4,7 @@
 
 PROTOTYPE Mst_Default_OrcScout(C_Npc)			
 {
-	name							=	"Орк-охотник";
+	name							=	"РћСЂРє-РѕС…РѕС‚РЅРёРє";
 	guild							=	GIL_ORCSCOUT;
 	npctype							=	NPCTYPE_GUARD;
 	voice							=	17;
@@ -83,7 +83,7 @@ INSTANCE OrcPeasantEatAndDrink (Mst_Default_OrcScout)
 {
 	//-------- general data --------
 	guild			=	GIL_ORCSCOUT;
-	name			=	"Орк";
+	name			=	"РћСЂРє";
 
 	//-------- visuals --------
 	Set_OrcScout_Visuals();
@@ -104,10 +104,10 @@ INSTANCE OrcPeasantEatAndDrink (Mst_Default_OrcScout)
 
 INSTANCE OrcScoutGYD (Mst_Default_OrcScout)
 {
-	name						=	"Орк-копейщик";
+	name						=	"РћСЂРє-РєРѕРїРµР№С‰РёРє";
 	level						=	18;
 
-	attribute[ATR_STRENGTH]		=	30;	// SN: regulдre OrcScouts wдren an dieser Stelle noch zu heftig!
+	attribute[ATR_STRENGTH]		=	30;	// SN: regulРґre OrcScouts wРґren an dieser Stelle noch zu heftig!
 
 	aivar[AIV_MM_PercRange]		=	1500;
 	aivar[AIV_MM_DrohRange]		=	1200;

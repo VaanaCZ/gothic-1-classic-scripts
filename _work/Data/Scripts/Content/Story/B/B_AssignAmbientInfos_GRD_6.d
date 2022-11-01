@@ -37,7 +37,7 @@ INSTANCE Info_Grd_6_EinerVonEuchWerden (C_INFO) // E1
 	condition	= Info_Grd_6_EinerVonEuchWerden_Condition;
 	information	= Info_Grd_6_EinerVonEuchWerden_Info;
 	permanent	= 1;
-	description = "Вам нужны люди?";
+	description = "Р’Р°Рј РЅСѓР¶РЅС‹ Р»СЋРґРё?";
 };                       
 
 FUNC INT Info_Grd_6_EinerVonEuchWerden_Condition()
@@ -53,9 +53,9 @@ FUNC INT Info_Grd_6_EinerVonEuchWerden_Condition()
 
 FUNC VOID Info_Grd_6_EinerVonEuchWerden_Info()
 {
-	AI_Output(other,self,"Info_Grd_6_EinerVonEuchWerden_15_00"); //Вам нужны люди?
-	AI_Output(self,other,"Info_Grd_6_EinerVonEuchWerden_06_01"); //Ты недавно в колонии, да? Если ты ищешь лагерь, к которому хочешь присоединиться, поговори с сектантами. Они берут всех без разбора.
-	AI_Output(self,other,"Info_Grd_6_EinerVonEuchWerden_06_02"); //В наш лагерь не принимают кого попало... Конечно, если ты не хочешь пойти поработать в шахте!
+	AI_Output(other,self,"Info_Grd_6_EinerVonEuchWerden_15_00"); //Р’Р°Рј РЅСѓР¶РЅС‹ Р»СЋРґРё?
+	AI_Output(self,other,"Info_Grd_6_EinerVonEuchWerden_06_01"); //РўС‹ РЅРµРґР°РІРЅРѕ РІ РєРѕР»РѕРЅРёРё, РґР°? Р•СЃР»Рё С‚С‹ РёС‰РµС€СЊ Р»Р°РіРµСЂСЊ, Рє РєРѕС‚РѕСЂРѕРјСѓ С…РѕС‡РµС€СЊ РїСЂРёСЃРѕРµРґРёРЅРёС‚СЊСЃСЏ, РїРѕРіРѕРІРѕСЂРё СЃ СЃРµРєС‚Р°РЅС‚Р°РјРё. РћРЅРё Р±РµСЂСѓС‚ РІСЃРµС… Р±РµР· СЂР°Р·Р±РѕСЂР°.
+	AI_Output(self,other,"Info_Grd_6_EinerVonEuchWerden_06_02"); //Р’ РЅР°С€ Р»Р°РіРµСЂСЊ РЅРµ РїСЂРёРЅРёРјР°СЋС‚ РєРѕРіРѕ РїРѕРїР°Р»Рѕ... РљРѕРЅРµС‡РЅРѕ, РµСЃР»Рё С‚С‹ РЅРµ С…РѕС‡РµС€СЊ РїРѕР№С‚Рё РїРѕСЂР°Р±РѕС‚Р°С‚СЊ РІ С€Р°С…С‚Рµ!
 };
 
 // *************************************************************************
@@ -68,7 +68,7 @@ INSTANCE Info_Grd_6_WichtigePersonen(C_INFO)
 	condition	= Info_Grd_6_WichtigePersonen_Condition;
 	information	= Info_Grd_6_WichtigePersonen_Info;
 	permanent	= 1;
-	description = "Кто здесь командует?";
+	description = "РљС‚Рѕ Р·РґРµСЃСЊ РєРѕРјР°РЅРґСѓРµС‚?";
 };                       
 
 FUNC INT Info_Grd_6_WichtigePersonen_Condition()
@@ -78,8 +78,8 @@ FUNC INT Info_Grd_6_WichtigePersonen_Condition()
 
 FUNC VOID Info_Grd_6_WichtigePersonen_Info()
 {
-	AI_Output(other,self,"Info_Grd_6_WichtigePersonen_15_00"); //Кто здесь командует?
-	AI_Output(self,other,"Info_Grd_6_WichtigePersonen_06_01"); //Торус следит за порядком. Он подчиняется Гомезу.
+	AI_Output(other,self,"Info_Grd_6_WichtigePersonen_15_00"); //РљС‚Рѕ Р·РґРµСЃСЊ РєРѕРјР°РЅРґСѓРµС‚?
+	AI_Output(self,other,"Info_Grd_6_WichtigePersonen_06_01"); //РўРѕСЂСѓСЃ СЃР»РµРґРёС‚ Р·Р° РїРѕСЂСЏРґРєРѕРј. РћРЅ РїРѕРґС‡РёРЅСЏРµС‚СЃСЏ Р“РѕРјРµР·Сѓ.
 	VAR C_NPC Thorus; Thorus = Hlp_GetNpc(GRD_200_THORUS);
 	Thorus.aivar[AIV_FINDABLE]=TRUE;
 };
@@ -94,7 +94,7 @@ INSTANCE Info_Grd_6_DasLager(C_INFO)
 	condition	= Info_Grd_6_DasLager_Condition;
 	information	= Info_Grd_6_DasLager_Info;
 	permanent	= 1;
-	description = "Я новенький.";
+	description = "РЇ РЅРѕРІРµРЅСЊРєРёР№.";
 };                       
 
 FUNC INT Info_Grd_6_DasLager_Condition()
@@ -108,28 +108,28 @@ FUNC INT Info_Grd_6_DasLager_Condition()
 };
 FUNC VOID Info_Grd_6_DasLager_Info()
 {
-	AI_Output(other,self,"Info_Grd_6_DasLager_15_00"); //Я новенький.
-	AI_Output(self,other,"Info_Grd_6_DasLager_06_01"); //Да, я вижу.
-	AI_Output(other,self,"Info_Grd_6_DasLager_15_02"); //Каковы здешние порядки?
-	AI_Output(self,other,"Info_Grd_6_DasLager_06_03"); //Не создавай нам проблем, и тебя никто не тронет.
+	AI_Output(other,self,"Info_Grd_6_DasLager_15_00"); //РЇ РЅРѕРІРµРЅСЊРєРёР№.
+	AI_Output(self,other,"Info_Grd_6_DasLager_06_01"); //Р”Р°, СЏ РІРёР¶Сѓ.
+	AI_Output(other,self,"Info_Grd_6_DasLager_15_02"); //РљР°РєРѕРІС‹ Р·РґРµС€РЅРёРµ РїРѕСЂСЏРґРєРё?
+	AI_Output(self,other,"Info_Grd_6_DasLager_06_03"); //РќРµ СЃРѕР·РґР°РІР°Р№ РЅР°Рј РїСЂРѕР±Р»РµРј, Рё С‚РµР±СЏ РЅРёРєС‚Рѕ РЅРµ С‚СЂРѕРЅРµС‚.
 	Info_ClearChoices(Info_Grd_6_DasLager);
-	Info_AddChoice(Info_Grd_6_DasLager, "Ясно.", Info_Grd_6_DasLager_Verstehe);
-	Info_AddChoice(Info_Grd_6_DasLager, "А что ты имеешь в виду, говоря о проблемах?", Info_Grd_6_DasLager_WasIstAerger);
+	Info_AddChoice(Info_Grd_6_DasLager, "РЇСЃРЅРѕ.", Info_Grd_6_DasLager_Verstehe);
+	Info_AddChoice(Info_Grd_6_DasLager, "Рђ С‡С‚Рѕ С‚С‹ РёРјРµРµС€СЊ РІ РІРёРґСѓ, РіРѕРІРѕСЂСЏ Рѕ РїСЂРѕР±Р»РµРјР°С…?", Info_Grd_6_DasLager_WasIstAerger);
 };
 
 FUNC VOID Info_Grd_6_DasLager_Verstehe()
 {
-	AI_Output(other,self,"Info_Grd_6_DasLager_Verstehe_15_00"); //Ясно.
+	AI_Output(other,self,"Info_Grd_6_DasLager_Verstehe_15_00"); //РЇСЃРЅРѕ.
 	Info_ClearChoices(Info_Grd_6_DasLager);
 };
 
 FUNC VOID Info_Grd_6_DasLager_WasIstAerger()
 {
-	AI_Output(other,self,"Info_Grd_6_DasLager_WasIstAerger_15_00"); //А что ты имеешь в виду, говоря о проблемах?
-	AI_Output(self,other,"Info_Grd_6_DasLager_WasIstAerger_06_01"); //Большинство рудокопов платит нам, а мы их защищаем.
-	AI_Output(self,other,"Info_Grd_6_DasLager_WasIstAerger_06_02"); //Если ты обидишь кого-то из них, будешь иметь дело с нами.
-	AI_Output(self,other,"Info_Grd_6_DasLager_WasIstAerger_06_03"); //А если я замечу тебя в чужой хижине, то...
-	AI_Output(other,self,"Info_Grd_6_DasLager_WasIstAerger_15_04"); //Хорошо, хорошо. Я все понял.
+	AI_Output(other,self,"Info_Grd_6_DasLager_WasIstAerger_15_00"); //Рђ С‡С‚Рѕ С‚С‹ РёРјРµРµС€СЊ РІ РІРёРґСѓ, РіРѕРІРѕСЂСЏ Рѕ РїСЂРѕР±Р»РµРјР°С…?
+	AI_Output(self,other,"Info_Grd_6_DasLager_WasIstAerger_06_01"); //Р‘РѕР»СЊС€РёРЅСЃС‚РІРѕ СЂСѓРґРѕРєРѕРїРѕРІ РїР»Р°С‚РёС‚ РЅР°Рј, Р° РјС‹ РёС… Р·Р°С‰РёС‰Р°РµРј.
+	AI_Output(self,other,"Info_Grd_6_DasLager_WasIstAerger_06_02"); //Р•СЃР»Рё С‚С‹ РѕР±РёРґРёС€СЊ РєРѕРіРѕ-С‚Рѕ РёР· РЅРёС…, Р±СѓРґРµС€СЊ РёРјРµС‚СЊ РґРµР»Рѕ СЃ РЅР°РјРё.
+	AI_Output(self,other,"Info_Grd_6_DasLager_WasIstAerger_06_03"); //Рђ РµСЃР»Рё СЏ Р·Р°РјРµС‡Сѓ С‚РµР±СЏ РІ С‡СѓР¶РѕР№ С…РёР¶РёРЅРµ, С‚Рѕ...
+	AI_Output(other,self,"Info_Grd_6_DasLager_WasIstAerger_15_04"); //РҐРѕСЂРѕС€Рѕ, С…РѕСЂРѕС€Рѕ. РЇ РІСЃРµ РїРѕРЅСЏР».
 	Info_ClearChoices(Info_Grd_6_DasLager);
 };
 
@@ -143,7 +143,7 @@ INSTANCE Info_Grd_6_DieLage(C_INFO) // E1
 	condition	= Info_Grd_6_DieLage_Condition;
 	information	= Info_Grd_6_DieLage_Info;
 	permanent	= 1;
-	description = "Как дела?";
+	description = "РљР°Рє РґРµР»Р°?";
 };                       
 
 FUNC INT Info_Grd_6_DieLage_Condition()
@@ -153,8 +153,8 @@ FUNC INT Info_Grd_6_DieLage_Condition()
 
 FUNC VOID Info_Grd_6_DieLage_Info()
 {
-	AI_Output(other,self,"Info_Grd_6_DieLage_15_00"); //Как дела?
-	AI_Output(self,other,"Info_Grd_6_DieLage_06_01"); //Ищешь неприятностей? 
+	AI_Output(other,self,"Info_Grd_6_DieLage_15_00"); //РљР°Рє РґРµР»Р°?
+	AI_Output(self,other,"Info_Grd_6_DieLage_06_01"); //РС‰РµС€СЊ РЅРµРїСЂРёСЏС‚РЅРѕСЃС‚РµР№? 
 };
 	
 // *************************************************************************

@@ -2,7 +2,7 @@ instance ORG_801_Lares (Npc_Default)
 {
 	//-------- primary data --------
 	
-	name =					"Λΰπρ";
+	name =					"Π›Π°Ρ€Ρ";
 	Npctype =				Npctype_Main;
 	guild =					GIL_ORG;      
 	level =					15;

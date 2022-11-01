@@ -2,7 +2,7 @@ instance ORG_862_Jacko (Npc_Default)
 {
 	//-------- primary data --------
 	
-	name =					"Джеко";
+	name =					"Р”Р¶РµРєРѕ";
 	Npctype =				Npctype_Main;
 	guild =						GIL_ORG;      
 	level =						8;

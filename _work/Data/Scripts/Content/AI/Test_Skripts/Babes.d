@@ -1,6 +1,6 @@
 
-// Insgesamt gibt es 7 verschiedene Babegesichter und 6 verschiedene Körpertexturen
-// werden mehr als 7 Babes benötigt?
+// Insgesamt gibt es 7 verschiedene Babegesichter und 6 verschiedene KÑ†rpertexturen
+// werden mehr als 7 Babes benÑ†tigt?
 
 
 ///////////////////////////////////////////////////////
@@ -43,7 +43,7 @@ instance Babe (Npc_Default)
 
 
 ///////////////////////////////////////////////////////
-// Color 1: drei Körpertexturen, vier Kopftexturen
+// Color 1: drei KÑ†rpertexturen, vier Kopftexturen
 ///////////////////////////////////////////////////////
 
 instance Babe2 (Npc_Default)

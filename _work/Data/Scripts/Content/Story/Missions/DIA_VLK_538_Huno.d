@@ -33,7 +33,7 @@ INSTANCE DIA_Huno_YouKnowYourJob (C_INFO)
 	information		= DIA_Huno_YouKnowYourJob_Info;
 	permanent		= 0;
 	important		= 0;
-	description		= "А у тебя неплохо получается, как я вижу.";
+	description		= "Рђ Сѓ С‚РµР±СЏ РЅРµРїР»РѕС…Рѕ РїРѕР»СѓС‡Р°РµС‚СЃСЏ, РєР°Рє СЏ РІРёР¶Сѓ.";
 };
 
 FUNC INT DIA_Huno_YouKnowYourJob_Condition()
@@ -43,9 +43,9 @@ FUNC INT DIA_Huno_YouKnowYourJob_Condition()
 
 FUNC VOID DIA_Huno_YouKnowYourJob_Info()
 {
-	AI_Output (other,self,"DIA_Huno_YouKnowYourJob_15_00"); //А у тебя неплохо получается, как я вижу.
-	AI_Output (self,other,"DIA_Huno_YouKnowYourJob_09_01"); //Да уж, недовольных я еще не встречал.
-	AI_Output (self,other,"DIA_Huno_YouKnowYourJob_09_02"); //Но если таковые и найдутся, им же хуже. Здесь никто не хочет оставаться без оружия, а ковать хорошие мечи умею только я.
+	AI_Output (other,self,"DIA_Huno_YouKnowYourJob_15_00"); //Рђ Сѓ С‚РµР±СЏ РЅРµРїР»РѕС…Рѕ РїРѕР»СѓС‡Р°РµС‚СЃСЏ, РєР°Рє СЏ РІРёР¶Сѓ.
+	AI_Output (self,other,"DIA_Huno_YouKnowYourJob_09_01"); //Р”Р° СѓР¶, РЅРµРґРѕРІРѕР»СЊРЅС‹С… СЏ РµС‰Рµ РЅРµ РІСЃС‚СЂРµС‡Р°Р».
+	AI_Output (self,other,"DIA_Huno_YouKnowYourJob_09_02"); //РќРѕ РµСЃР»Рё С‚Р°РєРѕРІС‹Рµ Рё РЅР°Р№РґСѓС‚СЃСЏ, РёРј Р¶Рµ С…СѓР¶Рµ. Р—РґРµСЃСЊ РЅРёРєС‚Рѕ РЅРµ С…РѕС‡РµС‚ РѕСЃС‚Р°РІР°С‚СЊСЃСЏ Р±РµР· РѕСЂСѓР¶РёСЏ, Р° РєРѕРІР°С‚СЊ С…РѕСЂРѕС€РёРµ РјРµС‡Рё СѓРјРµСЋ С‚РѕР»СЊРєРѕ СЏ.
 };
 
 
@@ -60,7 +60,7 @@ INSTANCE DIA_Huno_HowLong (C_INFO)
 	information		= DIA_Huno_HowLong_Info;
 	permanent		= 0;
 	important		= 0;
-	description		= "Много времени уходит на один меч?";
+	description		= "РњРЅРѕРіРѕ РІСЂРµРјРµРЅРё СѓС…РѕРґРёС‚ РЅР° РѕРґРёРЅ РјРµС‡?";
 };
 
 FUNC INT DIA_Huno_HowLong_Condition()
@@ -73,14 +73,14 @@ FUNC INT DIA_Huno_HowLong_Condition()
 
 FUNC VOID DIA_Huno_HowLong_Info()
 {
-	AI_Output (other,self,"DIA_Huno_HowLong_15_00"); //Много времени уходит на один меч?
-	AI_Output (self,other,"DIA_Huno_HowLong_09_01"); //Все зависит от меча. Обычный меч я могу выковать очень быстро. Ты и глазом моргнуть не успеешь.
-	AI_Output (self,other,"DIA_Huno_HowLong_09_02"); //Если, конечно, моя работа будет достойно оплачена.
-	AI_Output (self,other,"DIA_Huno_HowLong_09_03"); //А вот таким, как Уистлер, приходится ждать дольше всех.
-	AI_Output (other,self,"DIA_Huno_HowLong_15_04"); //Почему? Платит слишком мало?
-	AI_Output (self,other,"DIA_Huno_HowLong_09_05"); //Да нет, как раз наоборот. За последний меч он заплатил мне 150 кусков руды.
-	AI_Output (self,other,"DIA_Huno_HowLong_09_06"); //Ему подавай не простой меч, а с завитушками и прочими бабьими штучками, а это стоит недешево.
-	AI_Output (self,other,"DIA_Huno_HowLong_09_07"); //Эй, мне кажется, ты меня не слушаешь!
+	AI_Output (other,self,"DIA_Huno_HowLong_15_00"); //РњРЅРѕРіРѕ РІСЂРµРјРµРЅРё СѓС…РѕРґРёС‚ РЅР° РѕРґРёРЅ РјРµС‡?
+	AI_Output (self,other,"DIA_Huno_HowLong_09_01"); //Р’СЃРµ Р·Р°РІРёСЃРёС‚ РѕС‚ РјРµС‡Р°. РћР±С‹С‡РЅС‹Р№ РјРµС‡ СЏ РјРѕРіСѓ РІС‹РєРѕРІР°С‚СЊ РѕС‡РµРЅСЊ Р±С‹СЃС‚СЂРѕ. РўС‹ Рё РіР»Р°Р·РѕРј РјРѕСЂРіРЅСѓС‚СЊ РЅРµ СѓСЃРїРµРµС€СЊ.
+	AI_Output (self,other,"DIA_Huno_HowLong_09_02"); //Р•СЃР»Рё, РєРѕРЅРµС‡РЅРѕ, РјРѕСЏ СЂР°Р±РѕС‚Р° Р±СѓРґРµС‚ РґРѕСЃС‚РѕР№РЅРѕ РѕРїР»Р°С‡РµРЅР°.
+	AI_Output (self,other,"DIA_Huno_HowLong_09_03"); //Рђ РІРѕС‚ С‚Р°РєРёРј, РєР°Рє РЈРёСЃС‚Р»РµСЂ, РїСЂРёС…РѕРґРёС‚СЃСЏ Р¶РґР°С‚СЊ РґРѕР»СЊС€Рµ РІСЃРµС….
+	AI_Output (other,self,"DIA_Huno_HowLong_15_04"); //РџРѕС‡РµРјСѓ? РџР»Р°С‚РёС‚ СЃР»РёС€РєРѕРј РјР°Р»Рѕ?
+	AI_Output (self,other,"DIA_Huno_HowLong_09_05"); //Р”Р° РЅРµС‚, РєР°Рє СЂР°Р· РЅР°РѕР±РѕСЂРѕС‚. Р—Р° РїРѕСЃР»РµРґРЅРёР№ РјРµС‡ РѕРЅ Р·Р°РїР»Р°С‚РёР» РјРЅРµ 150 РєСѓСЃРєРѕРІ СЂСѓРґС‹.
+	AI_Output (self,other,"DIA_Huno_HowLong_09_06"); //Р•РјСѓ РїРѕРґР°РІР°Р№ РЅРµ РїСЂРѕСЃС‚РѕР№ РјРµС‡, Р° СЃ Р·Р°РІРёС‚СѓС€РєР°РјРё Рё РїСЂРѕС‡РёРјРё Р±Р°Р±СЊРёРјРё С€С‚СѓС‡РєР°РјРё, Р° СЌС‚Рѕ СЃС‚РѕРёС‚ РЅРµРґРµС€РµРІРѕ.
+	AI_Output (self,other,"DIA_Huno_HowLong_09_07"); //Р­Р№, РјРЅРµ РєР°Р¶РµС‚СЃСЏ, С‚С‹ РјРµРЅСЏ РЅРµ СЃР»СѓС€Р°РµС€СЊ!
 };
 
 // **************************************************
@@ -94,7 +94,7 @@ INSTANCE DIA_Huno_HowsYourBusiness (C_INFO)
 	information		= DIA_Huno_HowsYourBusiness_Info;
 	permanent		= 1;
 	important		= 0;
-	description		= "Ну, кузнец, как дела?";
+	description		= "РќСѓ, РєСѓР·РЅРµС†, РєР°Рє РґРµР»Р°?";
 };
 
 FUNC INT DIA_Huno_HowsYourBusiness_Condition()
@@ -107,12 +107,12 @@ FUNC INT DIA_Huno_HowsYourBusiness_Condition()
 
 FUNC VOID DIA_Huno_HowsYourBusiness_Info()
 {
-	AI_Output (other,self,"DIA_Huno_HowsYourBusiness_15_00"); //Ну, кузнец, как дела?
-	AI_Output (self,other,"DIA_Huno_HowsYourBusiness_09_01"); //А зачем ты хочешь это знать?
-	AI_Output (other,self,"DIA_Huno_HowsYourBusiness_15_02"); //Может быть, я закажу тебе что-нибудь.
-	AI_Output (self,other,"DIA_Huno_HowsYourBusiness_09_03"); //Правда? И что же это?
-	AI_Output (other,self,"DIA_Huno_HowsYourBusiness_15_04"); //Я еще не решил.
-	AI_Output (self,other,"DIA_Huno_HowsYourBusiness_09_05"); //Приходи ко мне, когда тебе действительно что-нибудь понадобится, и не тревожь меня по пустякам.
+	AI_Output (other,self,"DIA_Huno_HowsYourBusiness_15_00"); //РќСѓ, РєСѓР·РЅРµС†, РєР°Рє РґРµР»Р°?
+	AI_Output (self,other,"DIA_Huno_HowsYourBusiness_09_01"); //Рђ Р·Р°С‡РµРј С‚С‹ С…РѕС‡РµС€СЊ СЌС‚Рѕ Р·РЅР°С‚СЊ?
+	AI_Output (other,self,"DIA_Huno_HowsYourBusiness_15_02"); //РњРѕР¶РµС‚ Р±С‹С‚СЊ, СЏ Р·Р°РєР°Р¶Сѓ С‚РµР±Рµ С‡С‚Рѕ-РЅРёР±СѓРґСЊ.
+	AI_Output (self,other,"DIA_Huno_HowsYourBusiness_09_03"); //РџСЂР°РІРґР°? Р С‡С‚Рѕ Р¶Рµ СЌС‚Рѕ?
+	AI_Output (other,self,"DIA_Huno_HowsYourBusiness_15_04"); //РЇ РµС‰Рµ РЅРµ СЂРµС€РёР».
+	AI_Output (self,other,"DIA_Huno_HowsYourBusiness_09_05"); //РџСЂРёС…РѕРґРё РєРѕ РјРЅРµ, РєРѕРіРґР° С‚РµР±Рµ РґРµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ С‡С‚Рѕ-РЅРёР±СѓРґСЊ РїРѕРЅР°РґРѕР±РёС‚СЃСЏ, Рё РЅРµ С‚СЂРµРІРѕР¶СЊ РјРµРЅСЏ РїРѕ РїСѓСЃС‚СЏРєР°Рј.
 };
 
 // **************************************************
@@ -129,7 +129,7 @@ INSTANCE DIA_Huno_LEARNSMITH (C_INFO)
 	information		= DIA_Huno_LEARNSMITH_Info;
 	permanent		= 1;
 	important		= 0;
-	description		= "Я хотел бы попробовать поработать у тебя в кузнице.";
+	description		= "РЇ С…РѕС‚РµР» Р±С‹ РїРѕРїСЂРѕР±РѕРІР°С‚СЊ РїРѕСЂР°Р±РѕС‚Р°С‚СЊ Сѓ С‚РµР±СЏ РІ РєСѓР·РЅРёС†Рµ.";
 };
 
 FUNC INT DIA_Huno_LEARNSMITH_Condition()
@@ -142,15 +142,15 @@ FUNC INT DIA_Huno_LEARNSMITH_Condition()
 
 FUNC VOID DIA_Huno_LEARNSMITH_Info()
 {
-	AI_Output (other,self,"DIA_Huno_LEARNSMITH_15_00"); //Я хотел бы попробовать поработать у тебя в кузнице.
-	AI_Output (self,other,"DIA_Huno_LEARNSMITH_09_01"); //Так, так... только с первого раза у тебя все равно не получится выковать хороший клинок!
-	AI_Output (other,self,"DIA_Huno_LEARNSMITH_15_02"); //Что мне нужно делать?
-	AI_Output (self,other,"DIA_Huno_LEARNSMITH_09_03"); //Что ж, возьми заготовку и подержи ее над огнем.
-	AI_Output (self,other,"DIA_Huno_LEARNSMITH_09_04"); //Раскаленную докрасна заготовку положи на наковальню и сформируй меч. 
-	AI_Output (self,other,"DIA_Huno_LEARNSMITH_09_05"); //Когда он будет готов, его нужно закалить, опустив в ведро с водой.
-	AI_Output (self,other,"DIA_Huno_LEARNSMITH_09_06"); //Потом охлажденный клинок нужно будет заточить на точильном камне.
-	AI_Output (other,self,"DIA_Huno_LEARNSMITH_15_07"); //Я все понял.
-	AI_Output (self,other,"DIA_Huno_LEARNSMITH_09_08"); //Но без материалов у тебя ничего не выйдет. Если хочешь, можешь купить их у меня. 
+	AI_Output (other,self,"DIA_Huno_LEARNSMITH_15_00"); //РЇ С…РѕС‚РµР» Р±С‹ РїРѕРїСЂРѕР±РѕРІР°С‚СЊ РїРѕСЂР°Р±РѕС‚Р°С‚СЊ Сѓ С‚РµР±СЏ РІ РєСѓР·РЅРёС†Рµ.
+	AI_Output (self,other,"DIA_Huno_LEARNSMITH_09_01"); //РўР°Рє, С‚Р°Рє... С‚РѕР»СЊРєРѕ СЃ РїРµСЂРІРѕРіРѕ СЂР°Р·Р° Сѓ С‚РµР±СЏ РІСЃРµ СЂР°РІРЅРѕ РЅРµ РїРѕР»СѓС‡РёС‚СЃСЏ РІС‹РєРѕРІР°С‚СЊ С…РѕСЂРѕС€РёР№ РєР»РёРЅРѕРє!
+	AI_Output (other,self,"DIA_Huno_LEARNSMITH_15_02"); //Р§С‚Рѕ РјРЅРµ РЅСѓР¶РЅРѕ РґРµР»Р°С‚СЊ?
+	AI_Output (self,other,"DIA_Huno_LEARNSMITH_09_03"); //Р§С‚Рѕ Р¶, РІРѕР·СЊРјРё Р·Р°РіРѕС‚РѕРІРєСѓ Рё РїРѕРґРµСЂР¶Рё РµРµ РЅР°Рґ РѕРіРЅРµРј.
+	AI_Output (self,other,"DIA_Huno_LEARNSMITH_09_04"); //Р Р°СЃРєР°Р»РµРЅРЅСѓСЋ РґРѕРєСЂР°СЃРЅР° Р·Р°РіРѕС‚РѕРІРєСѓ РїРѕР»РѕР¶Рё РЅР° РЅР°РєРѕРІР°Р»СЊРЅСЋ Рё СЃС„РѕСЂРјРёСЂСѓР№ РјРµС‡. 
+	AI_Output (self,other,"DIA_Huno_LEARNSMITH_09_05"); //РљРѕРіРґР° РѕРЅ Р±СѓРґРµС‚ РіРѕС‚РѕРІ, РµРіРѕ РЅСѓР¶РЅРѕ Р·Р°РєР°Р»РёС‚СЊ, РѕРїСѓСЃС‚РёРІ РІ РІРµРґСЂРѕ СЃ РІРѕРґРѕР№.
+	AI_Output (self,other,"DIA_Huno_LEARNSMITH_09_06"); //РџРѕС‚РѕРј РѕС…Р»Р°Р¶РґРµРЅРЅС‹Р№ РєР»РёРЅРѕРє РЅСѓР¶РЅРѕ Р±СѓРґРµС‚ Р·Р°С‚РѕС‡РёС‚СЊ РЅР° С‚РѕС‡РёР»СЊРЅРѕРј РєР°РјРЅРµ.
+	AI_Output (other,self,"DIA_Huno_LEARNSMITH_15_07"); //РЇ РІСЃРµ РїРѕРЅСЏР».
+	AI_Output (self,other,"DIA_Huno_LEARNSMITH_09_08"); //РќРѕ Р±РµР· РјР°С‚РµСЂРёР°Р»РѕРІ Сѓ С‚РµР±СЏ РЅРёС‡РµРіРѕ РЅРµ РІС‹Р№РґРµС‚. Р•СЃР»Рё С…РѕС‡РµС€СЊ, РјРѕР¶РµС€СЊ РєСѓРїРёС‚СЊ РёС… Сѓ РјРµРЅСЏ. 
 
 	Huno_LearnSmith = TRUE;
 };
@@ -166,7 +166,7 @@ INSTANCE DIA_Huno_BUYSMITH (C_INFO)
 	information		= DIA_Huno_BUYSMITH_Info;
 	permanent		= 1;
 	important		= 0;
-	description		= "Я хочу купить у тебя заготовки.";
+	description		= "РЇ С…РѕС‡Сѓ РєСѓРїРёС‚СЊ Сѓ С‚РµР±СЏ Р·Р°РіРѕС‚РѕРІРєРё.";
 	trade			= 1;
 };
 
@@ -180,7 +180,7 @@ FUNC INT DIA_Huno_BUYSMITH_Condition()
 
 FUNC VOID DIA_Huno_BUYSMITH_Info()
 {
-	AI_Output (other,self,"DIA_Huno_BUYSMITH_15_00"); //Я хочу купить у тебя заготовки.
+	AI_Output (other,self,"DIA_Huno_BUYSMITH_15_00"); //РЇ С…РѕС‡Сѓ РєСѓРїРёС‚СЊ Сѓ С‚РµР±СЏ Р·Р°РіРѕС‚РѕРІРєРё.
 
 	if	(Npc_HasItems(self,ItMiSwordRaw		) < 5)		{	CreateInvItems(self,ItMiSwordRaw,		5);	};
 	if	(Npc_HasItems(self,ItMiSwordRawHot	) < 5)		{	CreateInvItems(self,ItMiSwordRawHot,	5);	};

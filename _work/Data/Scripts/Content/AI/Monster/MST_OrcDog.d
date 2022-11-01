@@ -4,15 +4,15 @@
 
 PROTOTYPE Mst_Default_OrcDog(C_Npc)			
 {
-	name							=	"ŒÓ˜¸ˇ ÒÓ·‡Í‡";
+	name							=	"–û—Ä–æ—á—å—è —Å–æ–±–∞–∫–∞";
 	guild							=	GIL_ORCDOG;
 	aivar[AIV_MM_REAL_ID]			= 	ID_BLACKWOLF;
-	level							=	12;		//SN 11.01.01.: ge‰ndert, da zu schwach
+	level							=	12;		//SN 11.01.01.: ge–¥ndert, da zu schwach
 //---------------------------------------------------
-	attribute	[ATR_STRENGTH]		=	80;		//SN 11.01.01.: ge‰ndert, da zu schwach
+	attribute	[ATR_STRENGTH]		=	80;		//SN 11.01.01.: ge–¥ndert, da zu schwach
 	attribute	[ATR_DEXTERITY]		=	80;
 	
-	attribute	[ATR_HITPOINTS_MAX]	=	160;	//SN 11.01.01.: ge‰ndert, da zu schwach
+	attribute	[ATR_HITPOINTS_MAX]	=	160;	//SN 11.01.01.: ge–¥ndert, da zu schwach
 	attribute	[ATR_HITPOINTS]		=	160;
 
 	attribute	[ATR_MANA_MAX] 		=	0;

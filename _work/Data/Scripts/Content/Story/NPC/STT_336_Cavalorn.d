@@ -1,7 +1,7 @@
 instance STT_336_Cavalorn (Npc_Default)
 {
 	//-------- primary data --------
-	name 		=		"Кавалорн";
+	name 		=		"РљР°РІР°Р»РѕСЂРЅ";
 	npctype 	=		NPCTYPE_MAIN;
 	guild 		=		GIL_STT;
 	level 		=		5;

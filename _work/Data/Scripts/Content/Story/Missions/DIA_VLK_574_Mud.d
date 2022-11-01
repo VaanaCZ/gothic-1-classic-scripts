@@ -55,17 +55,17 @@ FUNC INT DIA_Mud_FirstEXIT_Condition()
 
 FUNC VOID DIA_Mud_FirstEXIT_Info()
 {
-	AI_Output (self, other,"DIA_Mud_FirstEXIT_07_00"); //Эй! Недавно здесь, а? Я тебя ни разу не видел.
-	AI_Output (self, other,"DIA_Mud_FirstEXIT_07_01"); //Ты не против, если я пройдусь с тобой немного? Тебе же сейчас нужен друг, да?
+	AI_Output (self, other,"DIA_Mud_FirstEXIT_07_00"); //Р­Р№! РќРµРґР°РІРЅРѕ Р·РґРµСЃСЊ, Р°? РЇ С‚РµР±СЏ РЅРё СЂР°Р·Сѓ РЅРµ РІРёРґРµР».
+	AI_Output (self, other,"DIA_Mud_FirstEXIT_07_01"); //РўС‹ РЅРµ РїСЂРѕС‚РёРІ, РµСЃР»Рё СЏ РїСЂРѕР№РґСѓСЃСЊ СЃ С‚РѕР±РѕР№ РЅРµРјРЅРѕРіРѕ? РўРµР±Рµ Р¶Рµ СЃРµР№С‡Р°СЃ РЅСѓР¶РµРЅ РґСЂСѓРі, РґР°?
 	Info_ClearChoices(DIA_Mud_FirstEXIT);
-	Info_AddChoice	 (DIA_Mud_FirstEXIT, "Не приставай ко мне!"			,DIA_Mud_FirstEXIT_Verpiss);
-	Info_AddChoice	 (DIA_Mud_FirstEXIT, "Как хочешь. Пойдем!"	,DIA_Mud_FirstEXIT_Komm);
+	Info_AddChoice	 (DIA_Mud_FirstEXIT, "РќРµ РїСЂРёСЃС‚Р°РІР°Р№ РєРѕ РјРЅРµ!"			,DIA_Mud_FirstEXIT_Verpiss);
+	Info_AddChoice	 (DIA_Mud_FirstEXIT, "РљР°Рє С…РѕС‡РµС€СЊ. РџРѕР№РґРµРј!"	,DIA_Mud_FirstEXIT_Komm);
 };
 
 func void DIA_Mud_FirstEXIT_Verpiss()
 {
-	AI_Output (other, self,"DIA_Mud_FirstEXIT_Verpiss_15_00"); //Не приставай ко мне!
-	AI_Output (self, other,"DIA_Mud_FirstEXIT_Verpiss_07_01"); //А, понимаю, ты сегодня не в духе. Но, думаю, будет лучше, если я пойду с тобой...
+	AI_Output (other, self,"DIA_Mud_FirstEXIT_Verpiss_15_00"); //РќРµ РїСЂРёСЃС‚Р°РІР°Р№ РєРѕ РјРЅРµ!
+	AI_Output (self, other,"DIA_Mud_FirstEXIT_Verpiss_07_01"); //Рђ, РїРѕРЅРёРјР°СЋ, С‚С‹ СЃРµРіРѕРґРЅСЏ РЅРµ РІ РґСѓС…Рµ. РќРѕ, РґСѓРјР°СЋ, Р±СѓРґРµС‚ Р»СѓС‡С€Рµ, РµСЃР»Рё СЏ РїРѕР№РґСѓ СЃ С‚РѕР±РѕР№...
 	Info_ClearChoices(DIA_Mud_FirstEXIT);
 	AI_StopProcessInfos	( self );
 	Npc_ExchangeRoutine (self,"FOLLOW");
@@ -73,8 +73,8 @@ func void DIA_Mud_FirstEXIT_Verpiss()
 
 func void DIA_Mud_FirstEXIT_Komm()
 {
-	AI_Output (other, self,"DIA_Mud_FirstEXIT_Komm_15_00"); //Как хочешь. Пойдем!
-	AI_Output (self, other,"DIA_Mud_FirstEXIT_Komm_07_01"); //Как хорошо! Мы сможем немного поговорить по дороге.
+	AI_Output (other, self,"DIA_Mud_FirstEXIT_Komm_15_00"); //РљР°Рє С…РѕС‡РµС€СЊ. РџРѕР№РґРµРј!
+	AI_Output (self, other,"DIA_Mud_FirstEXIT_Komm_07_01"); //РљР°Рє С…РѕСЂРѕС€Рѕ! РњС‹ СЃРјРѕР¶РµРј РЅРµРјРЅРѕРіРѕ РїРѕРіРѕРІРѕСЂРёС‚СЊ РїРѕ РґРѕСЂРѕРіРµ.
 	Info_ClearChoices(DIA_Mud_FirstEXIT);
 	AI_StopProcessInfos	( self );
 	Npc_ExchangeRoutine (self,"FOLLOW");
@@ -91,7 +91,7 @@ INSTANCE DIA_Mud_ShutUp (C_INFO)
 	condition	= DIA_Mud_ShutUp_Condition;
 	information	= DIA_Mud_ShutUp_Info;
 	permanent	= 1;
-	description	= "Ты можешь хоть немного помолчать?";
+	description	= "РўС‹ РјРѕР¶РµС€СЊ С…РѕС‚СЊ РЅРµРјРЅРѕРіРѕ РїРѕРјРѕР»С‡Р°С‚СЊ?";
 };                       
 
 FUNC INT DIA_Mud_ShutUp_Condition()
@@ -105,13 +105,13 @@ FUNC INT DIA_Mud_ShutUp_Condition()
 
 FUNC VOID DIA_Mud_ShutUp_Info()
 {
-	AI_Output (other, self,"DIA_Mud_ShutUp_15_00"); //Ты можешь хоть немного помолчать?
-	AI_Output (self, other,"DIA_Mud_ShutUp_07_01"); //Как скажешь.
+	AI_Output (other, self,"DIA_Mud_ShutUp_15_00"); //РўС‹ РјРѕР¶РµС€СЊ С…РѕС‚СЊ РЅРµРјРЅРѕРіРѕ РїРѕРјРѕР»С‡Р°С‚СЊ?
+	AI_Output (self, other,"DIA_Mud_ShutUp_07_01"); //РљР°Рє СЃРєР°Р¶РµС€СЊ.
 	Npc_SetRefuseTalk(self, 300);
 };
 
 // **************************************************
-// 					VerpiЯ dich
+// 					VerpiРЇ dich
 // **************************************************
 
 INSTANCE DIA_Mud_GetLost (C_INFO)
@@ -121,7 +121,7 @@ INSTANCE DIA_Mud_GetLost (C_INFO)
 	condition	= DIA_Mud_GetLost_Condition;
 	information	= DIA_Mud_GetLost_Info;
 	permanent	= 1;
-	description	= "Уйди от меня!";
+	description	= "РЈР№РґРё РѕС‚ РјРµРЅСЏ!";
 };                       
 
 FUNC INT DIA_Mud_GetLost_Condition()
@@ -131,8 +131,8 @@ FUNC INT DIA_Mud_GetLost_Condition()
 
 FUNC VOID DIA_Mud_GetLost_Info()
 {
-	AI_Output (other, self,"DIA_Mud_GetLost_15_00"); //Уйди от меня!
-	AI_Output (self, other,"DIA_Mud_GetLost_07_01"); //Хочешь побыть один? Понимаю... Ну, я буду где-нибудь поблизости, если что...
+	AI_Output (other, self,"DIA_Mud_GetLost_15_00"); //РЈР№РґРё РѕС‚ РјРµРЅСЏ!
+	AI_Output (self, other,"DIA_Mud_GetLost_07_01"); //РҐРѕС‡РµС€СЊ РїРѕР±С‹С‚СЊ РѕРґРёРЅ? РџРѕРЅРёРјР°СЋ... РќСѓ, СЏ Р±СѓРґСѓ РіРґРµ-РЅРёР±СѓРґСЊ РїРѕР±Р»РёР·РѕСЃС‚Рё, РµСЃР»Рё С‡С‚Рѕ...
 };
 
 // **************************************************
@@ -159,9 +159,9 @@ FUNC INT DIA_Mud_Defeated_Condition()
 
 FUNC VOID DIA_Mud_Defeated_Info()
 {
-	AI_Output (self, other,"DIA_Mud_GetLost_07_00"); //Эй, ты же ударил меня! За что?
-	AI_Output (other, self,"DIA_Mud_GetLost_15_01"); //Если ты от меня не отстанешь, я ударю тебя еще больнее!
-	AI_Output (self, other,"DIA_Mud_GetLost_07_02"); //Да ты ненормальный! Даже не подходи ко мне, я тебе больше не друг.
+	AI_Output (self, other,"DIA_Mud_GetLost_07_00"); //Р­Р№, С‚С‹ Р¶Рµ СѓРґР°СЂРёР» РјРµРЅСЏ! Р—Р° С‡С‚Рѕ?
+	AI_Output (other, self,"DIA_Mud_GetLost_15_01"); //Р•СЃР»Рё С‚С‹ РѕС‚ РјРµРЅСЏ РЅРµ РѕС‚СЃС‚Р°РЅРµС€СЊ, СЏ СѓРґР°СЂСЋ С‚РµР±СЏ РµС‰Рµ Р±РѕР»СЊРЅРµРµ!
+	AI_Output (self, other,"DIA_Mud_GetLost_07_02"); //Р”Р° С‚С‹ РЅРµРЅРѕСЂРјР°Р»СЊРЅС‹Р№! Р”Р°Р¶Рµ РЅРµ РїРѕРґС…РѕРґРё РєРѕ РјРЅРµ, СЏ С‚РµР±Рµ Р±РѕР»СЊС€Рµ РЅРµ РґСЂСѓРі.
 	
 	AI_StopProcessInfos	(self);
 	Npc_ExchangeRoutine(self,"START");
@@ -188,7 +188,7 @@ FUNC INT DIA_Mud_Nerve_0_Condition()
 
 FUNC VOID DIA_Mud_Nerve_0_Info()
 {
-	AI_Output (self, other,"DIA_Mud_Nerve_0_07_00"); //Скажи, куда мы идем? Или это сюрприз? Знаешь, я люблю сюрпризы.
+	AI_Output (self, other,"DIA_Mud_Nerve_0_07_00"); //РЎРєР°Р¶Рё, РєСѓРґР° РјС‹ РёРґРµРј? РР»Рё СЌС‚Рѕ СЃСЋСЂРїСЂРёР·? Р—РЅР°РµС€СЊ, СЏ Р»СЋР±Р»СЋ СЃСЋСЂРїСЂРёР·С‹.
 	Npc_SetRefuseTalk(self, NerveSec);
 	Mud_Nerve = 1;
 	AI_StopProcessInfos	( self );
@@ -215,7 +215,7 @@ FUNC INT DIA_Mud_Nerve_1_Condition()
 
 FUNC VOID DIA_Mud_Nerve_1_Info()
 {
-	AI_Output (self, other,"DIA_Mud_Nerve_1_07_00"); //Я не буду тебе мешать, не волнуйся. Я просто пройдусь с тобой немного.
+	AI_Output (self, other,"DIA_Mud_Nerve_1_07_00"); //РЇ РЅРµ Р±СѓРґСѓ С‚РµР±Рµ РјРµС€Р°С‚СЊ, РЅРµ РІРѕР»РЅСѓР№СЃСЏ. РЇ РїСЂРѕСЃС‚Рѕ РїСЂРѕР№РґСѓСЃСЊ СЃ С‚РѕР±РѕР№ РЅРµРјРЅРѕРіРѕ.
 	Npc_SetRefuseTalk(self, NerveSec);
 	Mud_Nerve = 2;
 	Mud_NerveRealized = TRUE;
@@ -243,7 +243,7 @@ FUNC INT DIA_Mud_Nerve_2_Condition()
 
 FUNC VOID DIA_Mud_Nerve_2_Info()
 {
-	AI_Output (self, other,"DIA_Mud_Nerve_2_07_00"); //Надеюсь, ты знаешь, куда мы идем. У тебя есть какой-то план, да?
+	AI_Output (self, other,"DIA_Mud_Nerve_2_07_00"); //РќР°РґРµСЋСЃСЊ, С‚С‹ Р·РЅР°РµС€СЊ, РєСѓРґР° РјС‹ РёРґРµРј. РЈ С‚РµР±СЏ РµСЃС‚СЊ РєР°РєРѕР№-С‚Рѕ РїР»Р°РЅ, РґР°?
 	Npc_SetRefuseTalk(self, NerveSec);
 	Mud_Nerve = 3;
 	AI_StopProcessInfos	( self );
@@ -270,7 +270,7 @@ FUNC INT DIA_Mud_Nerve_3_Condition()
 
 FUNC VOID DIA_Mud_Nerve_3_Info()
 {
-	AI_Output (self, other,"DIA_Mud_Nerve_3_07_00"); //Хочешь найти тихое местечко? Где мы сможем поговорить? Я прав?
+	AI_Output (self, other,"DIA_Mud_Nerve_3_07_00"); //РҐРѕС‡РµС€СЊ РЅР°Р№С‚Рё С‚РёС…РѕРµ РјРµСЃС‚РµС‡РєРѕ? Р“РґРµ РјС‹ СЃРјРѕР¶РµРј РїРѕРіРѕРІРѕСЂРёС‚СЊ? РЇ РїСЂР°РІ?
 	Npc_SetRefuseTalk(self, NerveSec);
 	Mud_Nerve = 4;
 	AI_StopProcessInfos	( self );
@@ -297,7 +297,7 @@ FUNC INT DIA_Mud_Nerve_4_Condition()
 
 FUNC VOID DIA_Mud_Nerve_4_Info()
 {
-	AI_Output (self, other,"DIA_Mud_Nerve_4_07_00"); //Тебе не кажется, что мы ходим кругами? Ты ведь так и не сказал, куда направляешься...
+	AI_Output (self, other,"DIA_Mud_Nerve_4_07_00"); //РўРµР±Рµ РЅРµ РєР°Р¶РµС‚СЃСЏ, С‡С‚Рѕ РјС‹ С…РѕРґРёРј РєСЂСѓРіР°РјРё? РўС‹ РІРµРґСЊ С‚Р°Рє Рё РЅРµ СЃРєР°Р·Р°Р», РєСѓРґР° РЅР°РїСЂР°РІР»СЏРµС€СЊСЃСЏ...
 	Npc_SetRefuseTalk(self, NerveSec);
 	Mud_Nerve = 5;
 	AI_StopProcessInfos	( self );
@@ -324,7 +324,7 @@ FUNC INT DIA_Mud_Nerve_5_Condition()
 
 FUNC VOID DIA_Mud_Nerve_5_Info()
 {
-	AI_Output (self, other,"DIA_Mud_Nerve_5_07_00"); //С тобой так интересно. Как хорошо, что ты взял меня с собой. Можем, нам стоит чаще ходить куда-нибудь вместе? 
+	AI_Output (self, other,"DIA_Mud_Nerve_5_07_00"); //РЎ С‚РѕР±РѕР№ С‚Р°Рє РёРЅС‚РµСЂРµСЃРЅРѕ. РљР°Рє С…РѕСЂРѕС€Рѕ, С‡С‚Рѕ С‚С‹ РІР·СЏР» РјРµРЅСЏ СЃ СЃРѕР±РѕР№. РњРѕР¶РµРј, РЅР°Рј СЃС‚РѕРёС‚ С‡Р°С‰Рµ С…РѕРґРёС‚СЊ РєСѓРґР°-РЅРёР±СѓРґСЊ РІРјРµСЃС‚Рµ? 
 	Npc_SetRefuseTalk(self, NerveSec);
 	Mud_Nerve = 6;
 	AI_StopProcessInfos	( self );
@@ -351,7 +351,7 @@ FUNC INT DIA_Mud_Nerve_6_Condition()
 
 FUNC VOID DIA_Mud_Nerve_6_Info()
 {
-	AI_Output (self, other,"DIA_Mud_Nerve_6_07_00"); //Я уже так привык к тебе. Мы ведь хорошие друзья, правда? Ты тоже так думаешь? А где ты ночуешь? Можешь оставаться у меня, я не против.
+	AI_Output (self, other,"DIA_Mud_Nerve_6_07_00"); //РЇ СѓР¶Рµ С‚Р°Рє РїСЂРёРІС‹Рє Рє С‚РµР±Рµ. РњС‹ РІРµРґСЊ С…РѕСЂРѕС€РёРµ РґСЂСѓР·СЊСЏ, РїСЂР°РІРґР°? РўС‹ С‚РѕР¶Рµ С‚Р°Рє РґСѓРјР°РµС€СЊ? Рђ РіРґРµ С‚С‹ РЅРѕС‡СѓРµС€СЊ? РњРѕР¶РµС€СЊ РѕСЃС‚Р°РІР°С‚СЊСЃСЏ Сѓ РјРµРЅСЏ, СЏ РЅРµ РїСЂРѕС‚РёРІ.
 	Npc_SetRefuseTalk(self, NerveSec);
 	Mud_Nerve = 7;
 	AI_StopProcessInfos	( self );
@@ -378,7 +378,7 @@ FUNC INT DIA_Mud_Nerve_7_Condition()
 
 FUNC VOID DIA_Mud_Nerve_7_Info()
 {
-	AI_Output (self, other,"DIA_Mud_Nerve_7_07_00"); //Скажи, а за что тебя сюда отправили? Тебе тоже нравятся животные? Да, не все их любят. Из-за этого я и попал сюда.
+	AI_Output (self, other,"DIA_Mud_Nerve_7_07_00"); //РЎРєР°Р¶Рё, Р° Р·Р° С‡С‚Рѕ С‚РµР±СЏ СЃСЋРґР° РѕС‚РїСЂР°РІРёР»Рё? РўРµР±Рµ С‚РѕР¶Рµ РЅСЂР°РІСЏС‚СЃСЏ Р¶РёРІРѕС‚РЅС‹Рµ? Р”Р°, РЅРµ РІСЃРµ РёС… Р»СЋР±СЏС‚. РР·-Р·Р° СЌС‚РѕРіРѕ СЏ Рё РїРѕРїР°Р» СЃСЋРґР°.
 	Npc_SetRefuseTalk(self, NerveSec);
 	Mud_Nerve = 8;
 	AI_StopProcessInfos	( self );
@@ -406,7 +406,7 @@ FUNC INT DIA_Mud_Nerve_8_Condition()
 
 FUNC VOID DIA_Mud_Nerve_8_Info()
 {
-	AI_Output (self, other,"DIA_Mud_Nerve_8_07_00"); //В колонии есть люди, которые всегда стараются меня избить. Это ужасные типы из Нового лагеря, настоящие варвары. В следующий раз я скажу им, что ты мой друг. Это их, конечно, напугает.
+	AI_Output (self, other,"DIA_Mud_Nerve_8_07_00"); //Р’ РєРѕР»РѕРЅРёРё РµСЃС‚СЊ Р»СЋРґРё, РєРѕС‚РѕСЂС‹Рµ РІСЃРµРіРґР° СЃС‚Р°СЂР°СЋС‚СЃСЏ РјРµРЅСЏ РёР·Р±РёС‚СЊ. Р­С‚Рѕ СѓР¶Р°СЃРЅС‹Рµ С‚РёРїС‹ РёР· РќРѕРІРѕРіРѕ Р»Р°РіРµСЂСЏ, РЅР°СЃС‚РѕСЏС‰РёРµ РІР°СЂРІР°СЂС‹. Р’ СЃР»РµРґСѓСЋС‰РёР№ СЂР°Р· СЏ СЃРєР°Р¶Сѓ РёРј, С‡С‚Рѕ С‚С‹ РјРѕР№ РґСЂСѓРі. Р­С‚Рѕ РёС…, РєРѕРЅРµС‡РЅРѕ, РЅР°РїСѓРіР°РµС‚.
 	Npc_SetRefuseTalk(self, NerveSec);
 	Mud_Nerve = 9;
 	AI_StopProcessInfos	( self );
@@ -433,7 +433,7 @@ FUNC INT DIA_Mud_Nerve_9_Condition()
 
 FUNC VOID DIA_Mud_Nerve_9_Info()
 {
-	AI_Output (self, other,"DIA_Mud_Nerve_9_07_00"); //Эти разбойники из Нового лагеря дар речи потеряют, если я скажу им, что теперь у меня есть защитник. Да они от страха наделают в штаны. Вот будет весело. Убийство для них дело обычное, но теперь они дважды подумают.
+	AI_Output (self, other,"DIA_Mud_Nerve_9_07_00"); //Р­С‚Рё СЂР°Р·Р±РѕР№РЅРёРєРё РёР· РќРѕРІРѕРіРѕ Р»Р°РіРµСЂСЏ РґР°СЂ СЂРµС‡Рё РїРѕС‚РµСЂСЏСЋС‚, РµСЃР»Рё СЏ СЃРєР°Р¶Сѓ РёРј, С‡С‚Рѕ С‚РµРїРµСЂСЊ Сѓ РјРµРЅСЏ РµСЃС‚СЊ Р·Р°С‰РёС‚РЅРёРє. Р”Р° РѕРЅРё РѕС‚ СЃС‚СЂР°С…Р° РЅР°РґРµР»Р°СЋС‚ РІ С€С‚Р°РЅС‹. Р’РѕС‚ Р±СѓРґРµС‚ РІРµСЃРµР»Рѕ. РЈР±РёР№СЃС‚РІРѕ РґР»СЏ РЅРёС… РґРµР»Рѕ РѕР±С‹С‡РЅРѕРµ, РЅРѕ С‚РµРїРµСЂСЊ РѕРЅРё РґРІР°Р¶РґС‹ РїРѕРґСѓРјР°СЋС‚.
 	Npc_SetRefuseTalk(self, NerveSec);
 	Mud_Nerve = 10;
 	AI_StopProcessInfos	( self );
@@ -460,7 +460,7 @@ FUNC INT DIA_Mud_Nerve_10_Condition()
 
 FUNC VOID DIA_Mud_Nerve_10_Info()
 {
-	AI_Output (self, other,"DIA_Mud_Nerve_10_07_00"); //Знаешь, что? Я помогу тебе. Я скажу, что тебе можно доверять. Тогда тебя примут в лагерь, и мы сможем видеться хоть каждый день.
+	AI_Output (self, other,"DIA_Mud_Nerve_10_07_00"); //Р—РЅР°РµС€СЊ, С‡С‚Рѕ? РЇ РїРѕРјРѕРіСѓ С‚РµР±Рµ. РЇ СЃРєР°Р¶Сѓ, С‡С‚Рѕ С‚РµР±Рµ РјРѕР¶РЅРѕ РґРѕРІРµСЂСЏС‚СЊ. РўРѕРіРґР° С‚РµР±СЏ РїСЂРёРјСѓС‚ РІ Р»Р°РіРµСЂСЊ, Рё РјС‹ СЃРјРѕР¶РµРј РІРёРґРµС‚СЊСЃСЏ С…РѕС‚СЊ РєР°Р¶РґС‹Р№ РґРµРЅСЊ.
 	Npc_SetRefuseTalk(self, NerveSec);
 	Mud_Nerve = 11;
 	AI_StopProcessInfos	( self );
@@ -487,7 +487,7 @@ FUNC INT DIA_Mud_Nerve_11_Condition()
 
 FUNC VOID DIA_Mud_Nerve_11_Info()
 {
-	AI_Output (self, other,"DIA_Mud_Nerve_11_07_00"); //Многие считают меня ненормальным. Но ведь такой, как ты, не стал бы разговаривать с ненормальным, верно? Они узнают, что ты мой друг, и поймут, что были неправы.
+	AI_Output (self, other,"DIA_Mud_Nerve_11_07_00"); //РњРЅРѕРіРёРµ СЃС‡РёС‚Р°СЋС‚ РјРµРЅСЏ РЅРµРЅРѕСЂРјР°Р»СЊРЅС‹Рј. РќРѕ РІРµРґСЊ С‚Р°РєРѕР№, РєР°Рє С‚С‹, РЅРµ СЃС‚Р°Р» Р±С‹ СЂР°Р·РіРѕРІР°СЂРёРІР°С‚СЊ СЃ РЅРµРЅРѕСЂРјР°Р»СЊРЅС‹Рј, РІРµСЂРЅРѕ? РћРЅРё СѓР·РЅР°СЋС‚, С‡С‚Рѕ С‚С‹ РјРѕР№ РґСЂСѓРі, Рё РїРѕР№РјСѓС‚, С‡С‚Рѕ Р±С‹Р»Рё РЅРµРїСЂР°РІС‹.
 	Npc_SetRefuseTalk(self, NerveSec);
 	Mud_Nerve = 12;
 	AI_StopProcessInfos	( self );
@@ -514,7 +514,7 @@ FUNC INT DIA_Mud_Nerve_12_Condition()
 
 FUNC VOID DIA_Mud_Nerve_12_Info()
 {
-	AI_Output (self, other,"DIA_Mud_Nerve_12_07_00"); //Ты мой лучший друг. До этого никто не хотел со мной разговаривать. Они прогоняли меня. Спасибо, что ты этого не делаешь.
+	AI_Output (self, other,"DIA_Mud_Nerve_12_07_00"); //РўС‹ РјРѕР№ Р»СѓС‡С€РёР№ РґСЂСѓРі. Р”Рѕ СЌС‚РѕРіРѕ РЅРёРєС‚Рѕ РЅРµ С…РѕС‚РµР» СЃРѕ РјРЅРѕР№ СЂР°Р·РіРѕРІР°СЂРёРІР°С‚СЊ. РћРЅРё РїСЂРѕРіРѕРЅСЏР»Рё РјРµРЅСЏ. РЎРїР°СЃРёР±Рѕ, С‡С‚Рѕ С‚С‹ СЌС‚РѕРіРѕ РЅРµ РґРµР»Р°РµС€СЊ.
 	Npc_SetRefuseTalk(self, NerveSec);
 	Mud_Nerve = 13;
 	AI_StopProcessInfos	( self );
@@ -541,7 +541,7 @@ FUNC INT DIA_Mud_Nerve_13_Condition()
 
 FUNC VOID DIA_Mud_Nerve_13_Info()
 {
-	AI_Output (self, other,"DIA_Mud_Nerve_13_07_00"); //Слушай, мы уже так долго ходим. Может лучше поискать какой-нибудь тихий уголок и немного отдохнуть?
+	AI_Output (self, other,"DIA_Mud_Nerve_13_07_00"); //РЎР»СѓС€Р°Р№, РјС‹ СѓР¶Рµ С‚Р°Рє РґРѕР»РіРѕ С…РѕРґРёРј. РњРѕР¶РµС‚ Р»СѓС‡С€Рµ РїРѕРёСЃРєР°С‚СЊ РєР°РєРѕР№-РЅРёР±СѓРґСЊ С‚РёС…РёР№ СѓРіРѕР»РѕРє Рё РЅРµРјРЅРѕРіРѕ РѕС‚РґРѕС…РЅСѓС‚СЊ?
 	Npc_SetRefuseTalk(self, NerveSec);
 	Mud_Nerve = 14;
 	AI_StopProcessInfos	( self );
@@ -568,8 +568,8 @@ FUNC INT DIA_Mud_Nerve_14_Condition()
 
 FUNC VOID DIA_Mud_Nerve_14_Info()
 {
-	AI_Output (self, other,"DIA_Mud_Nerve_14_07_00"); //Ты заменил мне старшего брата. У меня ведь никогда не было старшего брата. Да и младшего не было. Мои родители не хотели возиться с детьми. Я уверен, что им было тяжело со мной.
-	AI_Output (other, self,"DIA_Mud_Nerve_14_15_01"); //Думаю, ты прав.
+	AI_Output (self, other,"DIA_Mud_Nerve_14_07_00"); //РўС‹ Р·Р°РјРµРЅРёР» РјРЅРµ СЃС‚Р°СЂС€РµРіРѕ Р±СЂР°С‚Р°. РЈ РјРµРЅСЏ РІРµРґСЊ РЅРёРєРѕРіРґР° РЅРµ Р±С‹Р»Рѕ СЃС‚Р°СЂС€РµРіРѕ Р±СЂР°С‚Р°. Р”Р° Рё РјР»Р°РґС€РµРіРѕ РЅРµ Р±С‹Р»Рѕ. РњРѕРё СЂРѕРґРёС‚РµР»Рё РЅРµ С…РѕС‚РµР»Рё РІРѕР·РёС‚СЊСЃСЏ СЃ РґРµС‚СЊРјРё. РЇ СѓРІРµСЂРµРЅ, С‡С‚Рѕ РёРј Р±С‹Р»Рѕ С‚СЏР¶РµР»Рѕ СЃРѕ РјРЅРѕР№.
+	AI_Output (other, self,"DIA_Mud_Nerve_14_15_01"); //Р”СѓРјР°СЋ, С‚С‹ РїСЂР°РІ.
 	Npc_SetRefuseTalk(self, NerveSec);
 	Mud_Nerve = 15;
 	AI_StopProcessInfos	( self );
@@ -596,7 +596,7 @@ FUNC INT DIA_Mud_Nerve_15_Condition()
 
 FUNC VOID DIA_Mud_Nerve_15_Info()
 {
-	AI_Output (self, other,"DIA_Mud_Nerve_15_07_00"); //А где ты жил до этого? Наверное, тебе тоже всегда хотелось найти человека, который тебя понимает. Сам из Хориниса. Ты был там когда-нибудь? Впрочем, это не так важно.
+	AI_Output (self, other,"DIA_Mud_Nerve_15_07_00"); //Рђ РіРґРµ С‚С‹ Р¶РёР» РґРѕ СЌС‚РѕРіРѕ? РќР°РІРµСЂРЅРѕРµ, С‚РµР±Рµ С‚РѕР¶Рµ РІСЃРµРіРґР° С…РѕС‚РµР»РѕСЃСЊ РЅР°Р№С‚Рё С‡РµР»РѕРІРµРєР°, РєРѕС‚РѕСЂС‹Р№ С‚РµР±СЏ РїРѕРЅРёРјР°РµС‚. РЎР°Рј РёР· РҐРѕСЂРёРЅРёСЃР°. РўС‹ Р±С‹Р» С‚Р°Рј РєРѕРіРґР°-РЅРёР±СѓРґСЊ? Р’РїСЂРѕС‡РµРј, СЌС‚Рѕ РЅРµ С‚Р°Рє РІР°Р¶РЅРѕ.
 	Npc_SetRefuseTalk(self, NerveSec);
 	Mud_Nerve = 16;
 	AI_StopProcessInfos	( self );
@@ -623,7 +623,7 @@ FUNC INT DIA_Mud_Nerve_16_Condition()
 
 FUNC VOID DIA_Mud_Nerve_16_Info()
 {
-	AI_Output (self, other,"DIA_Mud_Nerve_16_07_00"); //Я уже проголодался. Я считаю себя твоим гостем в некотором роде, поэтому было бы просто замечательно, если бы ты меня угостил, как подобает хорошему хозяину. Это сказали мне мои друзья из Хориниса. Они хорошо относились ко мне.
+	AI_Output (self, other,"DIA_Mud_Nerve_16_07_00"); //РЇ СѓР¶Рµ РїСЂРѕРіРѕР»РѕРґР°Р»СЃСЏ. РЇ СЃС‡РёС‚Р°СЋ СЃРµР±СЏ С‚РІРѕРёРј РіРѕСЃС‚РµРј РІ РЅРµРєРѕС‚РѕСЂРѕРј СЂРѕРґРµ, РїРѕСЌС‚РѕРјСѓ Р±С‹Р»Рѕ Р±С‹ РїСЂРѕСЃС‚Рѕ Р·Р°РјРµС‡Р°С‚РµР»СЊРЅРѕ, РµСЃР»Рё Р±С‹ С‚С‹ РјРµРЅСЏ СѓРіРѕСЃС‚РёР», РєР°Рє РїРѕРґРѕР±Р°РµС‚ С…РѕСЂРѕС€РµРјСѓ С…РѕР·СЏРёРЅСѓ. Р­С‚Рѕ СЃРєР°Р·Р°Р»Рё РјРЅРµ РјРѕРё РґСЂСѓР·СЊСЏ РёР· РҐРѕСЂРёРЅРёСЃР°. РћРЅРё С…РѕСЂРѕС€Рѕ РѕС‚РЅРѕСЃРёР»РёСЃСЊ РєРѕ РјРЅРµ.
 	Npc_SetRefuseTalk(self, NerveSec);
 	Mud_Nerve = 17;
 	AI_StopProcessInfos	( self );
@@ -650,7 +650,7 @@ FUNC INT DIA_Mud_Nerve_17_Condition()
 
 FUNC VOID DIA_Mud_Nerve_17_Info()
 {
-	AI_Output (self, other,"DIA_Mud_Nerve_17_07_00"); //Интересно, хоть кто-нибудь из внешнего мира придет сюда просто так? Мне кажется, не придет, ведь потом он не сможет вернуться, да?
+	AI_Output (self, other,"DIA_Mud_Nerve_17_07_00"); //РРЅС‚РµСЂРµСЃРЅРѕ, С…РѕС‚СЊ РєС‚Рѕ-РЅРёР±СѓРґСЊ РёР· РІРЅРµС€РЅРµРіРѕ РјРёСЂР° РїСЂРёРґРµС‚ СЃСЋРґР° РїСЂРѕСЃС‚Рѕ С‚Р°Рє? РњРЅРµ РєР°Р¶РµС‚СЃСЏ, РЅРµ РїСЂРёРґРµС‚, РІРµРґСЊ РїРѕС‚РѕРј РѕРЅ РЅРµ СЃРјРѕР¶РµС‚ РІРµСЂРЅСѓС‚СЊСЃСЏ, РґР°?
 	Npc_SetRefuseTalk(self, NerveSec);
 	Mud_Nerve = 18;
 	AI_StopProcessInfos	( self );
@@ -677,7 +677,7 @@ FUNC INT DIA_Mud_Nerve_18_Condition()
 
 FUNC VOID DIA_Mud_Nerve_18_Info()
 {
-	AI_Output (self, other,"DIA_Mud_Nerve_18_07_00"); //Теперь, когда мы с тобой, мы покажем всяким невежам, как следует себя вести. Они уже несколько лет не дают мне покоя. Пусть только попробуют напасть на меня еще раз, я им...
+	AI_Output (self, other,"DIA_Mud_Nerve_18_07_00"); //РўРµРїРµСЂСЊ, РєРѕРіРґР° РјС‹ СЃ С‚РѕР±РѕР№, РјС‹ РїРѕРєР°Р¶РµРј РІСЃСЏРєРёРј РЅРµРІРµР¶Р°Рј, РєР°Рє СЃР»РµРґСѓРµС‚ СЃРµР±СЏ РІРµСЃС‚Рё. РћРЅРё СѓР¶Рµ РЅРµСЃРєРѕР»СЊРєРѕ Р»РµС‚ РЅРµ РґР°СЋС‚ РјРЅРµ РїРѕРєРѕСЏ. РџСѓСЃС‚СЊ С‚РѕР»СЊРєРѕ РїРѕРїСЂРѕР±СѓСЋС‚ РЅР°РїР°СЃС‚СЊ РЅР° РјРµРЅСЏ РµС‰Рµ СЂР°Р·, СЏ РёРј...
 	Npc_SetRefuseTalk(self, NerveSec);
 	Mud_Nerve = 19;
 	AI_StopProcessInfos	( self );
@@ -704,7 +704,7 @@ FUNC INT DIA_Mud_Nerve_19_Condition()
 
 FUNC VOID DIA_Mud_Nerve_19_Info()
 {
-	AI_Output (self, other,"DIA_Mud_Nerve_19_07_00"); //Вместе мы непобедимы. Мы сможем даже захватить Старый лагерь. Да мы вдвоем в два счета разделаемся с Баронами. А что, хорошая идея, ее стоит обдумать.
+	AI_Output (self, other,"DIA_Mud_Nerve_19_07_00"); //Р’РјРµСЃС‚Рµ РјС‹ РЅРµРїРѕР±РµРґРёРјС‹. РњС‹ СЃРјРѕР¶РµРј РґР°Р¶Рµ Р·Р°С…РІР°С‚РёС‚СЊ РЎС‚Р°СЂС‹Р№ Р»Р°РіРµСЂСЊ. Р”Р° РјС‹ РІРґРІРѕРµРј РІ РґРІР° СЃС‡РµС‚Р° СЂР°Р·РґРµР»Р°РµРјСЃСЏ СЃ Р‘Р°СЂРѕРЅР°РјРё. Рђ С‡С‚Рѕ, С…РѕСЂРѕС€Р°СЏ РёРґРµСЏ, РµРµ СЃС‚РѕРёС‚ РѕР±РґСѓРјР°С‚СЊ.
 	Npc_SetRefuseTalk(self, NerveSec);
 	Mud_Nerve = 0;
 	AI_StopProcessInfos	( self );

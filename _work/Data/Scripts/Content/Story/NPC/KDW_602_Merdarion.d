@@ -2,7 +2,7 @@ instance KDW_602_Merdarion (Npc_Default)
 {
 	//-------- primary data --------
 	
-	name 		=	"Мердарион";
+	name 		=	"РњРµСЂРґР°СЂРёРѕРЅ";
 	npctype		=	npctype_main;
 	guild 		=	GIL_KDW;      
 	level 		=	26;

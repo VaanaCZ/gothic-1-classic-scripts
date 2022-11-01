@@ -33,7 +33,7 @@ instance Info_Kharim_What(C_INFO)
 	condition		= Info_Kharim_What_Condition;
 	information		= Info_Kharim_What_Info;
 	permanent		= 0;
-	description 	= "Я здесь недавно. Скажи, кто ты?";
+	description 	= "РЇ Р·РґРµСЃСЊ РЅРµРґР°РІРЅРѕ. РЎРєР°Р¶Рё, РєС‚Рѕ С‚С‹?";
 };                       
 
 FUNC INT Info_Kharim_What_Condition()
@@ -43,9 +43,9 @@ FUNC INT Info_Kharim_What_Condition()
 
 func VOID Info_Kharim_What_Info()
 {
-	AI_Output (other, self,"Info_Kharim_What_15_00"); //Я здесь недавно. Скажи, кто ты?
-	AI_Output (self, other,"Info_Kharim_What_09_01"); //Я Карим. Наверное, ты прибыл сюда недавно, иначе ты бы уже знал меня.
-	AI_Output (self, other,"Info_Kharim_What_09_02"); //Я лучший боец из всех, кого забрасывали в этот лагерь.
+	AI_Output (other, self,"Info_Kharim_What_15_00"); //РЇ Р·РґРµСЃСЊ РЅРµРґР°РІРЅРѕ. РЎРєР°Р¶Рё, РєС‚Рѕ С‚С‹?
+	AI_Output (self, other,"Info_Kharim_What_09_01"); //РЇ РљР°СЂРёРј. РќР°РІРµСЂРЅРѕРµ, С‚С‹ РїСЂРёР±С‹Р» СЃСЋРґР° РЅРµРґР°РІРЅРѕ, РёРЅР°С‡Рµ С‚С‹ Р±С‹ СѓР¶Рµ Р·РЅР°Р» РјРµРЅСЏ.
+	AI_Output (self, other,"Info_Kharim_What_09_02"); //РЇ Р»СѓС‡С€РёР№ Р±РѕРµС† РёР· РІСЃРµС…, РєРѕРіРѕ Р·Р°Р±СЂР°СЃС‹РІР°Р»Рё РІ СЌС‚РѕС‚ Р»Р°РіРµСЂСЊ.
 };
 
 // **************************************
@@ -61,12 +61,12 @@ instance Info_Kharim_Charge(C_INFO)
 	condition		= Info_Kharim_Charge_Condition;
 	information		= Info_Kharim_Charge_Info;
 	permanent		= 1;
-	description 	= "Я вызываю тебя на бой! Пойдем, сразимся на арене!";
+	description 	= "РЇ РІС‹Р·С‹РІР°СЋ С‚РµР±СЏ РЅР° Р±РѕР№! РџРѕР№РґРµРј, СЃСЂР°Р·РёРјСЃСЏ РЅР° Р°СЂРµРЅРµ!";
 };                       
 
 FUNC INT Info_Kharim_Charge_Condition()
 {
-	if ( Npc_KnowsInfo (hero,DIA_Scatty_JoinOC) && Npc_KnowsInfo(hero,Info_Kharim_What) && (Kharim_Charged != TRUE) && (Kapitel <= 1) ) // Kapitelfix ***Bjцrn***
+	if ( Npc_KnowsInfo (hero,DIA_Scatty_JoinOC) && Npc_KnowsInfo(hero,Info_Kharim_What) && (Kharim_Charged != TRUE) && (Kapitel <= 1) ) // Kapitelfix ***BjС†rn***
 	{
 		return 1;
 	};
@@ -74,19 +74,19 @@ FUNC INT Info_Kharim_Charge_Condition()
 
 func VOID Info_Kharim_Charge_Info()
 {
-	AI_Output (other, self,"Info_Kharim_Charge_15_00"); //Я вызываю тебя на бой! Пойдем, сразимся на арене!
-	AI_Output (self, other,"Info_Kharim_Charge_09_01"); //Ты?! Да я от тебя мокрого места не оставлю!
-	AI_Output (self, other,"Info_Kharim_Charge_09_02"); //Лучше забудь об этом и уходи, пока я не передумал!
+	AI_Output (other, self,"Info_Kharim_Charge_15_00"); //РЇ РІС‹Р·С‹РІР°СЋ С‚РµР±СЏ РЅР° Р±РѕР№! РџРѕР№РґРµРј, СЃСЂР°Р·РёРјСЃСЏ РЅР° Р°СЂРµРЅРµ!
+	AI_Output (self, other,"Info_Kharim_Charge_09_01"); //РўС‹?! Р”Р° СЏ РѕС‚ С‚РµР±СЏ РјРѕРєСЂРѕРіРѕ РјРµСЃС‚Р° РЅРµ РѕСЃС‚Р°РІР»СЋ!
+	AI_Output (self, other,"Info_Kharim_Charge_09_02"); //Р›СѓС‡С€Рµ Р·Р°Р±СѓРґСЊ РѕР± СЌС‚РѕРј Рё СѓС…РѕРґРё, РїРѕРєР° СЏ РЅРµ РїРµСЂРµРґСѓРјР°Р»!
 
 	Info_ClearChoices	(Info_Kharim_Charge );
-	Info_AddChoice		(Info_Kharim_Charge,"Хорошо, хорошо, я уже почти все забыл."					,Info_Kharim_Charge_BACK);
-	Info_AddChoice		(Info_Kharim_Charge,"Так ты не принимаешь вызов, трус?!"	,Info_Kharim_Charge_Insult);
+	Info_AddChoice		(Info_Kharim_Charge,"РҐРѕСЂРѕС€Рѕ, С…РѕСЂРѕС€Рѕ, СЏ СѓР¶Рµ РїРѕС‡С‚Рё РІСЃРµ Р·Р°Р±С‹Р»."					,Info_Kharim_Charge_BACK);
+	Info_AddChoice		(Info_Kharim_Charge,"РўР°Рє С‚С‹ РЅРµ РїСЂРёРЅРёРјР°РµС€СЊ РІС‹Р·РѕРІ, С‚СЂСѓСЃ?!"	,Info_Kharim_Charge_Insult);
 
 };
 
 func void Info_Kharim_Charge_BACK()
 {
-	AI_Output (other, self,"Info_Kharim_Charge_BACK_15_00"); //Хорошо, хорошо, я уже почти все забыл.
+	AI_Output (other, self,"Info_Kharim_Charge_BACK_15_00"); //РҐРѕСЂРѕС€Рѕ, С…РѕСЂРѕС€Рѕ, СЏ СѓР¶Рµ РїРѕС‡С‚Рё РІСЃРµ Р·Р°Р±С‹Р».
 	
 	AI_StopProcessInfos (self);
 };
@@ -95,15 +95,15 @@ func void Info_Kharim_Charge_BACK()
 
 func void Info_Kharim_Charge_Insult()
 {
-	AI_Output (other, self,"Info_Kharim_Charge_Insult_15_00"); //Так ты не принимаешь вызов, трус?!
-	AI_Output (self, other,"Info_Kharim_Charge_Insult_09_01"); //Придумай что-нибудь получше!
+	AI_Output (other, self,"Info_Kharim_Charge_Insult_15_00"); //РўР°Рє С‚С‹ РЅРµ РїСЂРёРЅРёРјР°РµС€СЊ РІС‹Р·РѕРІ, С‚СЂСѓСЃ?!
+	AI_Output (self, other,"Info_Kharim_Charge_Insult_09_01"); //РџСЂРёРґСѓРјР°Р№ С‡С‚Рѕ-РЅРёР±СѓРґСЊ РїРѕР»СѓС‡С€Рµ!
 	
 	Info_ClearChoices	(Info_Kharim_Charge );
-	Info_AddChoice		(Info_Kharim_Charge,"Ты хочешь получить шанс выслужиться перед Гомезом!",Info_Kharim_Charge_Insult_GomezAss);
-	Info_AddChoice		(Info_Kharim_Charge,"Может вот это тебя проймет: твоя мать была похожа на козу..."									,Info_Kharim_Charge_Insult_Goats);
-	Info_AddChoice		(Info_Kharim_Charge,"Я не могу вспомнить ничего, что было бы доступно твоему умишку."				,Info_Kharim_Charge_Insult_Stupid);
-	Info_AddChoice		(Info_Kharim_Charge,"Твои худые ручки не идут ни в какое сравнение с твоей рожей."	,Info_Kharim_Charge_Insult_Face);
-	Info_AddChoice		(Info_Kharim_Charge,"Хорошо, хорошо, я уже почти все забыл."													,Info_Kharim_Charge_BACK);
+	Info_AddChoice		(Info_Kharim_Charge,"РўС‹ С…РѕС‡РµС€СЊ РїРѕР»СѓС‡РёС‚СЊ С€Р°РЅСЃ РІС‹СЃР»СѓР¶РёС‚СЊСЃСЏ РїРµСЂРµРґ Р“РѕРјРµР·РѕРј!",Info_Kharim_Charge_Insult_GomezAss);
+	Info_AddChoice		(Info_Kharim_Charge,"РњРѕР¶РµС‚ РІРѕС‚ СЌС‚Рѕ С‚РµР±СЏ РїСЂРѕР№РјРµС‚: С‚РІРѕСЏ РјР°С‚СЊ Р±С‹Р»Р° РїРѕС…РѕР¶Р° РЅР° РєРѕР·Сѓ..."									,Info_Kharim_Charge_Insult_Goats);
+	Info_AddChoice		(Info_Kharim_Charge,"РЇ РЅРµ РјРѕРіСѓ РІСЃРїРѕРјРЅРёС‚СЊ РЅРёС‡РµРіРѕ, С‡С‚Рѕ Р±С‹Р»Рѕ Р±С‹ РґРѕСЃС‚СѓРїРЅРѕ С‚РІРѕРµРјСѓ СѓРјРёС€РєСѓ."				,Info_Kharim_Charge_Insult_Stupid);
+	Info_AddChoice		(Info_Kharim_Charge,"РўРІРѕРё С…СѓРґС‹Рµ СЂСѓС‡РєРё РЅРµ РёРґСѓС‚ РЅРё РІ РєР°РєРѕРµ СЃСЂР°РІРЅРµРЅРёРµ СЃ С‚РІРѕРµР№ СЂРѕР¶РµР№."	,Info_Kharim_Charge_Insult_Face);
+	Info_AddChoice		(Info_Kharim_Charge,"РҐРѕСЂРѕС€Рѕ, С…РѕСЂРѕС€Рѕ, СЏ СѓР¶Рµ РїРѕС‡С‚Рё РІСЃРµ Р·Р°Р±С‹Р»."													,Info_Kharim_Charge_BACK);
 	
 };
 
@@ -111,16 +111,16 @@ func void Info_Kharim_Charge_Insult()
 
 func void Info_Kharim_Charge_Insult_Goats()
 {
-	AI_Output (other, self,"Info_Kharim_Charge_Insult_Goats_15_00"); //Может вот это тебя проймет: твоя мать была похожа на козу...
-	AI_Output (self, other,"Info_Kharim_Charge_Insult_Goats_09_01"); //Странно, но ты угадал...
+	AI_Output (other, self,"Info_Kharim_Charge_Insult_Goats_15_00"); //РњРѕР¶РµС‚ РІРѕС‚ СЌС‚Рѕ С‚РµР±СЏ РїСЂРѕР№РјРµС‚: С‚РІРѕСЏ РјР°С‚СЊ Р±С‹Р»Р° РїРѕС…РѕР¶Р° РЅР° РєРѕР·Сѓ...
+	AI_Output (self, other,"Info_Kharim_Charge_Insult_Goats_09_01"); //РЎС‚СЂР°РЅРЅРѕ, РЅРѕ С‚С‹ СѓРіР°РґР°Р»...
 };
 
 func void Info_Kharim_Charge_Insult_GomezAss()
 {
-	AI_Output (other, self,"Info_Kharim_Charge_Insult_GomezAss_15_00"); //Ты хочешь получить шанс выслужиться перед Гомезом!
-	AI_Output (self, other,"Info_Kharim_Charge_Insult_GomezAss_09_01"); //Что?! Ах ты, червяк! Да ты ничего о нас не знаешь! Новый Лагерь не подчиняется этому подонку!
-	AI_Output (self, other,"Info_Kharim_Charge_Insult_GomezAss_09_02"); //И, кроме того, я здесь по одной причине: мне приятно выбивать дурь из таких умников, как ты!
-	AI_Output (self, other,"Info_Kharim_Charge_Insult_GomezAss_09_03"); //С удовольствием окажу тебе эту услугу! Арена ждет нас!
+	AI_Output (other, self,"Info_Kharim_Charge_Insult_GomezAss_15_00"); //РўС‹ С…РѕС‡РµС€СЊ РїРѕР»СѓС‡РёС‚СЊ С€Р°РЅСЃ РІС‹СЃР»СѓР¶РёС‚СЊСЃСЏ РїРµСЂРµРґ Р“РѕРјРµР·РѕРј!
+	AI_Output (self, other,"Info_Kharim_Charge_Insult_GomezAss_09_01"); //Р§С‚Рѕ?! РђС… С‚С‹, С‡РµСЂРІСЏРє! Р”Р° С‚С‹ РЅРёС‡РµРіРѕ Рѕ РЅР°СЃ РЅРµ Р·РЅР°РµС€СЊ! РќРѕРІС‹Р№ Р›Р°РіРµСЂСЊ РЅРµ РїРѕРґС‡РёРЅСЏРµС‚СЃСЏ СЌС‚РѕРјСѓ РїРѕРґРѕРЅРєСѓ!
+	AI_Output (self, other,"Info_Kharim_Charge_Insult_GomezAss_09_02"); //Р, РєСЂРѕРјРµ С‚РѕРіРѕ, СЏ Р·РґРµСЃСЊ РїРѕ РѕРґРЅРѕР№ РїСЂРёС‡РёРЅРµ: РјРЅРµ РїСЂРёСЏС‚РЅРѕ РІС‹Р±РёРІР°С‚СЊ РґСѓСЂСЊ РёР· С‚Р°РєРёС… СѓРјРЅРёРєРѕРІ, РєР°Рє С‚С‹!
+	AI_Output (self, other,"Info_Kharim_Charge_Insult_GomezAss_09_03"); //РЎ СѓРґРѕРІРѕР»СЊСЃС‚РІРёРµРј РѕРєР°Р¶Сѓ С‚РµР±Рµ СЌС‚Сѓ СѓСЃР»СѓРіСѓ! РђСЂРµРЅР° Р¶РґРµС‚ РЅР°СЃ!
 	
 	Kharim_Charged = TRUE;
 	
@@ -132,14 +132,14 @@ func void Info_Kharim_Charge_Insult_GomezAss()
 
 func void Info_Kharim_Charge_Insult_Stupid()
 {
-	AI_Output (other, self,"Info_Kharim_Charge_Insult_Stupid_15_00"); //Подумать только: я не могу вспомнить ничего такого, что было бы доступно твоему умишку.
-	AI_Output (self, other,"Info_Kharim_Charge_Insult_Stupid_09_01"); //Может быть, тебе стоит попробовать еще раз?
+	AI_Output (other, self,"Info_Kharim_Charge_Insult_Stupid_15_00"); //РџРѕРґСѓРјР°С‚СЊ С‚РѕР»СЊРєРѕ: СЏ РЅРµ РјРѕРіСѓ РІСЃРїРѕРјРЅРёС‚СЊ РЅРёС‡РµРіРѕ С‚Р°РєРѕРіРѕ, С‡С‚Рѕ Р±С‹Р»Рѕ Р±С‹ РґРѕСЃС‚СѓРїРЅРѕ С‚РІРѕРµРјСѓ СѓРјРёС€РєСѓ.
+	AI_Output (self, other,"Info_Kharim_Charge_Insult_Stupid_09_01"); //РњРѕР¶РµС‚ Р±С‹С‚СЊ, С‚РµР±Рµ СЃС‚РѕРёС‚ РїРѕРїСЂРѕР±РѕРІР°С‚СЊ РµС‰Рµ СЂР°Р·?
 };
 
 func void Info_Kharim_Charge_Insult_Face()
 {
-	AI_Output (other, self,"Info_Kharim_Charge_Insult_Face_15_00"); //Ну, сначала я хотел обратить всеобщее внимание на твои худые ручки, но потом я увидел твою ужасную рожу.
-	AI_Output (self, other,"Info_Kharim_Charge_Insult_Face_09_01"); //Ладно, я даю тебе еще один шанс убраться отсюда как можно быстрее!
+	AI_Output (other, self,"Info_Kharim_Charge_Insult_Face_15_00"); //РќСѓ, СЃРЅР°С‡Р°Р»Р° СЏ С…РѕС‚РµР» РѕР±СЂР°С‚РёС‚СЊ РІСЃРµРѕР±С‰РµРµ РІРЅРёРјР°РЅРёРµ РЅР° С‚РІРѕРё С…СѓРґС‹Рµ СЂСѓС‡РєРё, РЅРѕ РїРѕС‚РѕРј СЏ СѓРІРёРґРµР» С‚РІРѕСЋ СѓР¶Р°СЃРЅСѓСЋ СЂРѕР¶Сѓ.
+	AI_Output (self, other,"Info_Kharim_Charge_Insult_Face_09_01"); //Р›Р°РґРЅРѕ, СЏ РґР°СЋ С‚РµР±Рµ РµС‰Рµ РѕРґРёРЅ С€Р°РЅСЃ СѓР±СЂР°С‚СЊСЃСЏ РѕС‚СЃСЋРґР° РєР°Рє РјРѕР¶РЅРѕ Р±С‹СЃС‚СЂРµРµ!
 };
 
 // **************************************
@@ -166,9 +166,9 @@ FUNC INT Info_Kharim_InArena_Condition()
 
 func VOID Info_Kharim_InArena_Info()
 {
-	if (Kapitel <= 1)				// Kapitelfix ***Bjцrn***
+	if (Kapitel <= 1)				// Kapitelfix ***BjС†rn***
 	{
-		AI_Output (self, other,"Info_Kharim_InArena_09_00"); //Боль - это испытание силы духа!
+		AI_Output (self, other,"Info_Kharim_InArena_09_00"); //Р‘РѕР»СЊ - СЌС‚Рѕ РёСЃРїС‹С‚Р°РЅРёРµ СЃРёР»С‹ РґСѓС…Р°!
 		
 		AI_StopProcessInfos	( self );
 		
@@ -179,7 +179,7 @@ func VOID Info_Kharim_InArena_Info()
 	}
 	else
 	{
-		AI_Output (self, other,"SVM_9_LetsForgetOurLittleFight"); //Может, стоит забыть об этом...	
+		AI_Output (self, other,"SVM_9_LetsForgetOurLittleFight"); //РњРѕР¶РµС‚, СЃС‚РѕРёС‚ Р·Р°Р±С‹С‚СЊ РѕР± СЌС‚РѕРј...	
 		AI_StopProcessInfos	( self );
 		Npc_ExchangeRoutine(self,"START");
 	};

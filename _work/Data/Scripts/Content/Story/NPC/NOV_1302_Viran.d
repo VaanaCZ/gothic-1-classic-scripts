@@ -1,7 +1,7 @@
 instance NOV_1302_Viran (Npc_Default)
 {
 	//-------- primary data --------
-	name 		=		"Виран";
+	name 		=		"Р’РёСЂР°РЅ";
 	Npctype	 	=		Npctype_Main;
 	guild 		=		GIL_NOV;
 	level 		=		15;

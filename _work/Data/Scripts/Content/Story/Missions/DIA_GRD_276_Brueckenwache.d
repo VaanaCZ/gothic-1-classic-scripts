@@ -33,7 +33,7 @@ INSTANCE Info_GRD_276_Tips(C_INFO)
 	condition	= Info_GRD_276_Tips_Condition;
 	information	= Info_GRD_276_Tips_Info;
 	permanent	= 0;
-	description = "Привет, я здесь недавно...";
+	description = "РџСЂРёРІРµС‚, СЏ Р·РґРµСЃСЊ РЅРµРґР°РІРЅРѕ...";
 };                       
 
 FUNC INT Info_GRD_276_Tips_Condition()
@@ -45,8 +45,8 @@ FUNC INT Info_GRD_276_Tips_Condition()
 };
 FUNC VOID Info_GRD_276_Tips_Info()
 {
-	AI_Output (other,self,"Info_GRD_276_Tips_15_00"); //Привет, я здесь недавно...
-	AI_Output (self,other,"Info_GRD_276_Tips_07_01"); //Рад за тебя.
+	AI_Output (other,self,"Info_GRD_276_Tips_15_00"); //РџСЂРёРІРµС‚, СЏ Р·РґРµСЃСЊ РЅРµРґР°РІРЅРѕ...
+	AI_Output (self,other,"Info_GRD_276_Tips_07_01"); //Р Р°Рґ Р·Р° С‚РµР±СЏ.
 };
 
 // *****************************************************************
@@ -60,7 +60,7 @@ INSTANCE Info_GRD_276_Bla(C_INFO)
 	condition	= Info_GRD_276_Bla_Condition;
 	information	= Info_GRD_276_Bla_Info;
 	permanent	= 1;
-	description = "Там, за тобой, Старый лагерь, да?";
+	description = "РўР°Рј, Р·Р° С‚РѕР±РѕР№, РЎС‚Р°СЂС‹Р№ Р»Р°РіРµСЂСЊ, РґР°?";
 };                       
 
 FUNC INT Info_GRD_276_Bla_Condition()
@@ -73,7 +73,7 @@ FUNC INT Info_GRD_276_Bla_Condition()
 
 FUNC VOID Info_GRD_276_Bla_Info()
 {
-	AI_Output (other,self,"Info_GRD_276_Bla_15_00"); //Там, за тобой, Старый лагерь, да?
-	AI_Output (self,other,"Info_GRD_276_Bla_07_01"); //Нет, там находится Новый лагерь. Старый лагерь дальше, за мостом.
+	AI_Output (other,self,"Info_GRD_276_Bla_15_00"); //РўР°Рј, Р·Р° С‚РѕР±РѕР№, РЎС‚Р°СЂС‹Р№ Р»Р°РіРµСЂСЊ, РґР°?
+	AI_Output (self,other,"Info_GRD_276_Bla_07_01"); //РќРµС‚, С‚Р°Рј РЅР°С…РѕРґРёС‚СЃСЏ РќРѕРІС‹Р№ Р»Р°РіРµСЂСЊ. РЎС‚Р°СЂС‹Р№ Р»Р°РіРµСЂСЊ РґР°Р»СЊС€Рµ, Р·Р° РјРѕСЃС‚РѕРј.
 	AI_StopProcessInfos(self);
 };

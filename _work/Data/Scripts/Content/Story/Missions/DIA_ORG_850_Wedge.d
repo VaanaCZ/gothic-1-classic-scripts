@@ -46,9 +46,9 @@ FUNC int  DIA_Wedge_Psst_Condition()
 };
 func void  DIA_Wedge_Psst_Info()
 {
-	AI_Output (self, other,"DIA_Wedge_Psst_05_00"); //Эй, ты!
-	AI_Output (other, self,"DIA_Wedge_Psst_15_01"); //Кто?.. Я?
-	AI_Output (self, other,"DIA_Wedge_Psst_05_02"); //Да, да, ты... Подойди-ка сюда!
+	AI_Output (self, other,"DIA_Wedge_Psst_05_00"); //Р­Р№, С‚С‹!
+	AI_Output (other, self,"DIA_Wedge_Psst_15_01"); //РљС‚Рѕ?.. РЇ?
+	AI_Output (self, other,"DIA_Wedge_Psst_05_02"); //Р”Р°, РґР°, С‚С‹... РџРѕРґРѕР№РґРё-РєР° СЃСЋРґР°!
 	AI_StopProcessInfos	(self);
 };
 
@@ -63,7 +63,7 @@ instance  DIA_Wedge_Hello (C_INFO)
 	information		= DIA_Wedge_Hello_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Что тебе от меня нужно?"; 
+	description		= "Р§С‚Рѕ С‚РµР±Рµ РѕС‚ РјРµРЅСЏ РЅСѓР¶РЅРѕ?"; 
 };
 
 FUNC int  DIA_Wedge_Hello_Condition()
@@ -76,10 +76,10 @@ FUNC int  DIA_Wedge_Hello_Condition()
 };
 FUNC void  DIA_Wedge_Hello_Info()
 {
-	AI_Output (other, self,"DIA_Wedge_Hello_15_00"); //Что тебе от меня нужно?
-	AI_Output (self, other,"DIA_Wedge_Hello_05_01"); //Ты ведь не так давно здесь, да? Я сразу это заметил.
-	AI_Output (self, other,"DIA_Wedge_Hello_05_02"); //Тебе нужно многое знать и уметь, чтобы выжить здесь. Я могу поучить тебя, если хочешь.
-	AI_Output (self, other,"DIA_Wedge_Hello_05_03"); //Прежде всего следи за тем, с кем ты разговариваешь. Например, Бутч - вон тот вор у костра, очень опасный тип. Держись от него подальше!
+	AI_Output (other, self,"DIA_Wedge_Hello_15_00"); //Р§С‚Рѕ С‚РµР±Рµ РѕС‚ РјРµРЅСЏ РЅСѓР¶РЅРѕ?
+	AI_Output (self, other,"DIA_Wedge_Hello_05_01"); //РўС‹ РІРµРґСЊ РЅРµ С‚Р°Рє РґР°РІРЅРѕ Р·РґРµСЃСЊ, РґР°? РЇ СЃСЂР°Р·Сѓ СЌС‚Рѕ Р·Р°РјРµС‚РёР».
+	AI_Output (self, other,"DIA_Wedge_Hello_05_02"); //РўРµР±Рµ РЅСѓР¶РЅРѕ РјРЅРѕРіРѕРµ Р·РЅР°С‚СЊ Рё СѓРјРµС‚СЊ, С‡С‚РѕР±С‹ РІС‹Р¶РёС‚СЊ Р·РґРµСЃСЊ. РЇ РјРѕРіСѓ РїРѕСѓС‡РёС‚СЊ С‚РµР±СЏ, РµСЃР»Рё С…РѕС‡РµС€СЊ.
+	AI_Output (self, other,"DIA_Wedge_Hello_05_03"); //РџСЂРµР¶РґРµ РІСЃРµРіРѕ СЃР»РµРґРё Р·Р° С‚РµРј, СЃ РєРµРј С‚С‹ СЂР°Р·РіРѕРІР°СЂРёРІР°РµС€СЊ. РќР°РїСЂРёРјРµСЂ, Р‘СѓС‚С‡ - РІРѕРЅ С‚РѕС‚ РІРѕСЂ Сѓ РєРѕСЃС‚СЂР°, РѕС‡РµРЅСЊ РѕРїР°СЃРЅС‹Р№ С‚РёРї. Р”РµСЂР¶РёСЃСЊ РѕС‚ РЅРµРіРѕ РїРѕРґР°Р»СЊС€Рµ!
 };  
 
 // ****************************************
@@ -93,7 +93,7 @@ instance  DIA_Wedge_WarnsOfButch (C_INFO)
 	information		= DIA_Wedge_WarnsOfButch_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Почему?"; 
+	description		= "РџРѕС‡РµРјСѓ?"; 
 };
 
 FUNC int  DIA_Wedge_WarnsOfButch_Condition()
@@ -106,8 +106,8 @@ FUNC int  DIA_Wedge_WarnsOfButch_Condition()
 };
 FUNC void  DIA_Wedge_WarnsOfButch_Info()
 {
-	AI_Output (other, self,"DIA_Wedge_WarnsOfButch_15_00"); //Почему?
-	AI_Output (self, other,"DIA_Wedge_WarnsOfButch_05_01"); //Есть у него одна нехорошая привычка - бить всех новичков. Так что постарайся не попадаться ему на глаза.
+	AI_Output (other, self,"DIA_Wedge_WarnsOfButch_15_00"); //РџРѕС‡РµРјСѓ?
+	AI_Output (self, other,"DIA_Wedge_WarnsOfButch_05_01"); //Р•СЃС‚СЊ Сѓ РЅРµРіРѕ РѕРґРЅР° РЅРµС…РѕСЂРѕС€Р°СЏ РїСЂРёРІС‹С‡РєР° - Р±РёС‚СЊ РІСЃРµС… РЅРѕРІРёС‡РєРѕРІ. РўР°Рє С‡С‚Рѕ РїРѕСЃС‚Р°СЂР°Р№СЃСЏ РЅРµ РїРѕРїР°РґР°С‚СЊСЃСЏ РµРјСѓ РЅР° РіР»Р°Р·Р°.
 	//AI_Output (self, other,"DIA_Wedge_WarnsOfButch_05_02"); //Also, geh ihm am besten aus dem Weg.//***Doppelt***
 };  
 
@@ -122,7 +122,7 @@ INSTANCE DIA_Wedge_Lehrer (C_INFO)
 	condition		= DIA_Wedge_Lehrer_Condition;
 	information		= DIA_Wedge_Lehrer_Info;
 	permanent		= 1;
-	description		= "Ты можешь научить меня чему-нибудь?"; 
+	description		= "РўС‹ РјРѕР¶РµС€СЊ РЅР°СѓС‡РёС‚СЊ РјРµРЅСЏ С‡РµРјСѓ-РЅРёР±СѓРґСЊ?"; 
 };
 
 FUNC INT DIA_Wedge_Lehrer_Condition()
@@ -138,11 +138,11 @@ FUNC VOID DIA_Wedge_Lehrer_Info()
 	if (log_wedgelearn == FALSE)
 	{
 		Log_CreateTopic   	(GE_TeacherNC,LOG_NOTE);
-		B_LogEntry			(GE_TeacherNC, "Вор Ведж может научить меня подкрадываться, воровать и вскрывать замки.");
+		B_LogEntry			(GE_TeacherNC, "Р’РѕСЂ Р’РµРґР¶ РјРѕР¶РµС‚ РЅР°СѓС‡РёС‚СЊ РјРµРЅСЏ РїРѕРґРєСЂР°РґС‹РІР°С‚СЊСЃСЏ, РІРѕСЂРѕРІР°С‚СЊ Рё РІСЃРєСЂС‹РІР°С‚СЊ Р·Р°РјРєРё.");
 		log_wedgelearn = TRUE ;
 	};
-	AI_Output (other, self,"DIA_Wedge_Lehrer_15_00"); //Ты можешь научить меня чему-нибудь?
-	AI_Output (self, other,"DIA_Wedge_Lehrer_05_01"); //Зависит от того, что ты хочешь узнать!
+	AI_Output (other, self,"DIA_Wedge_Lehrer_15_00"); //РўС‹ РјРѕР¶РµС€СЊ РЅР°СѓС‡РёС‚СЊ РјРµРЅСЏ С‡РµРјСѓ-РЅРёР±СѓРґСЊ?
+	AI_Output (self, other,"DIA_Wedge_Lehrer_05_01"); //Р—Р°РІРёСЃРёС‚ РѕС‚ С‚РѕРіРѕ, С‡С‚Рѕ С‚С‹ С…РѕС‡РµС€СЊ СѓР·РЅР°С‚СЊ!
 	
 
 	Info_ClearChoices	(DIA_Wedge_Lehrer );
@@ -172,66 +172,66 @@ FUNC VOID DIA_Wedge_Lehrer_Info()
 
 func void DIA_Wedge_Lehrer_Schleichen()
 {
-	AI_Output (other, self,"DIA_Wedge_Lehrer_Schleichen_15_00"); //Я хочу научиться подкрадываться.
+	AI_Output (other, self,"DIA_Wedge_Lehrer_Schleichen_15_00"); //РЇ С…РѕС‡Сѓ РЅР°СѓС‡РёС‚СЊСЃСЏ РїРѕРґРєСЂР°РґС‹РІР°С‚СЊСЃСЏ.
 	if (B_GiveSkill(other, NPC_TALENT_SNEAK, 1, LPCOST_TALENT_SNEAK))
 	{
-		AI_Output (self, other,"DIA_Wedge_Lehrer_Schleichen_05_01"); //Все решает твое умение сохранять равновесие. Так же немаловажно контролировать свое дыхание.
-		AI_Output (self, other,"DIA_Wedge_Lehrer_Schleichen_05_02"); //Существует особый способ движения, при котором никто не сможет услышать твоих шагов.
+		AI_Output (self, other,"DIA_Wedge_Lehrer_Schleichen_05_01"); //Р’СЃРµ СЂРµС€Р°РµС‚ С‚РІРѕРµ СѓРјРµРЅРёРµ СЃРѕС…СЂР°РЅСЏС‚СЊ СЂР°РІРЅРѕРІРµСЃРёРµ. РўР°Рє Р¶Рµ РЅРµРјР°Р»РѕРІР°Р¶РЅРѕ РєРѕРЅС‚СЂРѕР»РёСЂРѕРІР°С‚СЊ СЃРІРѕРµ РґС‹С…Р°РЅРёРµ.
+		AI_Output (self, other,"DIA_Wedge_Lehrer_Schleichen_05_02"); //РЎСѓС‰РµСЃС‚РІСѓРµС‚ РѕСЃРѕР±С‹Р№ СЃРїРѕСЃРѕР± РґРІРёР¶РµРЅРёСЏ, РїСЂРё РєРѕС‚РѕСЂРѕРј РЅРёРєС‚Рѕ РЅРµ СЃРјРѕР¶РµС‚ СѓСЃР»С‹С€Р°С‚СЊ С‚РІРѕРёС… С€Р°РіРѕРІ.
 	};
 };
 
 func void DIA_Wedge_Lehrer_Lockpick()
 {
-	AI_Output (other, self,"DIA_Wedge_Lehrer_Lockpick_15_00"); //Я хочу научиться виртуозно вскрывать замки.
+	AI_Output (other, self,"DIA_Wedge_Lehrer_Lockpick_15_00"); //РЇ С…РѕС‡Сѓ РЅР°СѓС‡РёС‚СЊСЃСЏ РІРёСЂС‚СѓРѕР·РЅРѕ РІСЃРєСЂС‹РІР°С‚СЊ Р·Р°РјРєРё.
 	
 	if (B_GiveSkill(other, NPC_TALENT_PICKLOCK, 1, LPCOST_TALENT_PICKLOCK_1))
 	{
-		AI_Output (self, other,"DIA_Wedge_Lehrer_Lockpick_05_01"); //Ты ведь хотел бы это узнать, да? Научиться этому не очень сложно.
-		AI_Output (self, other,"DIA_Wedge_Lehrer_Lockpick_05_02"); //Очень важно следить за тем, чтобы у тебя не сломалась отмычка.
-		AI_Output (self, other,"DIA_Wedge_Lehrer_Lockpick_05_03"); //Если ты будешь действовать очень осторожно, ты заметишь, что во многих случаях тебе не понадобится больше одной отмычки.
+		AI_Output (self, other,"DIA_Wedge_Lehrer_Lockpick_05_01"); //РўС‹ РІРµРґСЊ С…РѕС‚РµР» Р±С‹ СЌС‚Рѕ СѓР·РЅР°С‚СЊ, РґР°? РќР°СѓС‡РёС‚СЊСЃСЏ СЌС‚РѕРјСѓ РЅРµ РѕС‡РµРЅСЊ СЃР»РѕР¶РЅРѕ.
+		AI_Output (self, other,"DIA_Wedge_Lehrer_Lockpick_05_02"); //РћС‡РµРЅСЊ РІР°Р¶РЅРѕ СЃР»РµРґРёС‚СЊ Р·Р° С‚РµРј, С‡С‚РѕР±С‹ Сѓ С‚РµР±СЏ РЅРµ СЃР»РѕРјР°Р»Р°СЃСЊ РѕС‚РјС‹С‡РєР°.
+		AI_Output (self, other,"DIA_Wedge_Lehrer_Lockpick_05_03"); //Р•СЃР»Рё С‚С‹ Р±СѓРґРµС€СЊ РґРµР№СЃС‚РІРѕРІР°С‚СЊ РѕС‡РµРЅСЊ РѕСЃС‚РѕСЂРѕР¶РЅРѕ, С‚С‹ Р·Р°РјРµС‚РёС€СЊ, С‡С‚Рѕ РІРѕ РјРЅРѕРіРёС… СЃР»СѓС‡Р°СЏС… С‚РµР±Рµ РЅРµ РїРѕРЅР°РґРѕР±РёС‚СЃСЏ Р±РѕР»СЊС€Рµ РѕРґРЅРѕР№ РѕС‚РјС‹С‡РєРё.
 	};
 };
 
 func void DIA_Wedge_Lehrer_Lockpick2()
 {
-	AI_Output (other, self,"DIA_Wedge_Lehrer_Lockpick2_15_00"); //Я хочу стать мастером взлома замков.
+	AI_Output (other, self,"DIA_Wedge_Lehrer_Lockpick2_15_00"); //РЇ С…РѕС‡Сѓ СЃС‚Р°С‚СЊ РјР°СЃС‚РµСЂРѕРј РІР·Р»РѕРјР° Р·Р°РјРєРѕРІ.
 	
 	if (B_GiveSkill(other, NPC_TALENT_PICKLOCK, 2, LPCOST_TALENT_PICKLOCK_2))
 	{
-		AI_Output (self, other,"DIA_Wedge_Lehrer_Lockpick2_05_01"); //Стоит немного потренироваться, и ты уже с легкостью будешь распознавать момент, когда отмычка готова вот-вот сломаться. При этом ты услышишь особый звук.
-		AI_Output (self, other,"DIA_Wedge_Lehrer_Lockpick2_05_02"); //С опытом к тебе придет умение различать щелчки в замке при повороте отмычки. При этом ты будешь ломать их гораздо реже.
-		AI_Output (self, other,"DIA_Wedge_Lehrer_Lockpick2_05_03"); //Настоящему профессионалу часто удается открыть замок, не сломав ни одной отмычки.
+		AI_Output (self, other,"DIA_Wedge_Lehrer_Lockpick2_05_01"); //РЎС‚РѕРёС‚ РЅРµРјРЅРѕРіРѕ РїРѕС‚СЂРµРЅРёСЂРѕРІР°С‚СЊСЃСЏ, Рё С‚С‹ СѓР¶Рµ СЃ Р»РµРіРєРѕСЃС‚СЊСЋ Р±СѓРґРµС€СЊ СЂР°СЃРїРѕР·РЅР°РІР°С‚СЊ РјРѕРјРµРЅС‚, РєРѕРіРґР° РѕС‚РјС‹С‡РєР° РіРѕС‚РѕРІР° РІРѕС‚-РІРѕС‚ СЃР»РѕРјР°С‚СЊСЃСЏ. РџСЂРё СЌС‚РѕРј С‚С‹ СѓСЃР»С‹С€РёС€СЊ РѕСЃРѕР±С‹Р№ Р·РІСѓРє.
+		AI_Output (self, other,"DIA_Wedge_Lehrer_Lockpick2_05_02"); //РЎ РѕРїС‹С‚РѕРј Рє С‚РµР±Рµ РїСЂРёРґРµС‚ СѓРјРµРЅРёРµ СЂР°Р·Р»РёС‡Р°С‚СЊ С‰РµР»С‡РєРё РІ Р·Р°РјРєРµ РїСЂРё РїРѕРІРѕСЂРѕС‚Рµ РѕС‚РјС‹С‡РєРё. РџСЂРё СЌС‚РѕРј С‚С‹ Р±СѓРґРµС€СЊ Р»РѕРјР°С‚СЊ РёС… РіРѕСЂР°Р·РґРѕ СЂРµР¶Рµ.
+		AI_Output (self, other,"DIA_Wedge_Lehrer_Lockpick2_05_03"); //РќР°СЃС‚РѕСЏС‰РµРјСѓ РїСЂРѕС„РµСЃСЃРёРѕРЅР°Р»Сѓ С‡Р°СЃС‚Рѕ СѓРґР°РµС‚СЃСЏ РѕС‚РєСЂС‹С‚СЊ Р·Р°РјРѕРє, РЅРµ СЃР»РѕРјР°РІ РЅРё РѕРґРЅРѕР№ РѕС‚РјС‹С‡РєРё.
 	};
 };
 
 func void DIA_Wedge_Lehrer_Pickpocket()
 {
-	AI_Output (other, self,"DIA_Wedge_Lehrer_PICKPOCKET_15_00"); //Я хочу стать опытным карманником.
+	AI_Output (other, self,"DIA_Wedge_Lehrer_PICKPOCKET_15_00"); //РЇ С…РѕС‡Сѓ СЃС‚Р°С‚СЊ РѕРїС‹С‚РЅС‹Рј РєР°СЂРјР°РЅРЅРёРєРѕРј.
 	if (Npc_GetTalentSkill(other, NPC_TALENT_SNEAK) == 1)
 	{
 		if (B_GiveSkill(other, NPC_TALENT_PICKPOCKET, 1, LPCOST_TALENT_PICKPOCKET_1))
 		{
-			AI_Output (self, other,"DIA_Wedge_Lehrer_PICKPOCKET_05_01"); //Так ты хочешь облегчать кошельки местных богачей, да? Что ж.
-			AI_Output (self, other,"DIA_Wedge_Lehrer_PICKPOCKET_05_02"); //Я научу тебя этому, но у вора всегда есть небольшой шанс быть застигнутым на месте преступления.
-			AI_Output (self, other,"DIA_Wedge_Lehrer_PICKPOCKET_05_03"); //Риск будет оправдан только в том случае, если ты остаешься один на один со своей жертвой.
-			AI_Output (self, other,"DIA_Wedge_Lehrer_PICKPOCKET_05_04"); //Но только профессиональный вор может совершенно незаметно вытащить что-нибудь ценное из кармана зазевавшегося прохожего!
+			AI_Output (self, other,"DIA_Wedge_Lehrer_PICKPOCKET_05_01"); //РўР°Рє С‚С‹ С…РѕС‡РµС€СЊ РѕР±Р»РµРіС‡Р°С‚СЊ РєРѕС€РµР»СЊРєРё РјРµСЃС‚РЅС‹С… Р±РѕРіР°С‡РµР№, РґР°? Р§С‚Рѕ Р¶.
+			AI_Output (self, other,"DIA_Wedge_Lehrer_PICKPOCKET_05_02"); //РЇ РЅР°СѓС‡Сѓ С‚РµР±СЏ СЌС‚РѕРјСѓ, РЅРѕ Сѓ РІРѕСЂР° РІСЃРµРіРґР° РµСЃС‚СЊ РЅРµР±РѕР»СЊС€РѕР№ С€Р°РЅСЃ Р±С‹С‚СЊ Р·Р°СЃС‚РёРіРЅСѓС‚С‹Рј РЅР° РјРµСЃС‚Рµ РїСЂРµСЃС‚СѓРїР»РµРЅРёСЏ.
+			AI_Output (self, other,"DIA_Wedge_Lehrer_PICKPOCKET_05_03"); //Р РёСЃРє Р±СѓРґРµС‚ РѕРїСЂР°РІРґР°РЅ С‚РѕР»СЊРєРѕ РІ С‚РѕРј СЃР»СѓС‡Р°Рµ, РµСЃР»Рё С‚С‹ РѕСЃС‚Р°РµС€СЊСЃСЏ РѕРґРёРЅ РЅР° РѕРґРёРЅ СЃРѕ СЃРІРѕРµР№ Р¶РµСЂС‚РІРѕР№.
+			AI_Output (self, other,"DIA_Wedge_Lehrer_PICKPOCKET_05_04"); //РќРѕ С‚РѕР»СЊРєРѕ РїСЂРѕС„РµСЃСЃРёРѕРЅР°Р»СЊРЅС‹Р№ РІРѕСЂ РјРѕР¶РµС‚ СЃРѕРІРµСЂС€РµРЅРЅРѕ РЅРµР·Р°РјРµС‚РЅРѕ РІС‹С‚Р°С‰РёС‚СЊ С‡С‚Рѕ-РЅРёР±СѓРґСЊ С†РµРЅРЅРѕРµ РёР· РєР°СЂРјР°РЅР° Р·Р°Р·РµРІР°РІС€РµРіРѕСЃСЏ РїСЂРѕС…РѕР¶РµРіРѕ!
 		};
 	}
 	else
 	{
-		AI_Output (self, other,"DIA_Wedge_lehrer_Pickpocket_05_05"); //Даже не думай об этом! Тот, кто не умеет подкрадываться, никогда не станет вором.
+		AI_Output (self, other,"DIA_Wedge_lehrer_Pickpocket_05_05"); //Р”Р°Р¶Рµ РЅРµ РґСѓРјР°Р№ РѕР± СЌС‚РѕРј! РўРѕС‚, РєС‚Рѕ РЅРµ СѓРјРµРµС‚ РїРѕРґРєСЂР°РґС‹РІР°С‚СЊСЃСЏ, РЅРёРєРѕРіРґР° РЅРµ СЃС‚Р°РЅРµС‚ РІРѕСЂРѕРј.
 	};
 };
 
 func void DIA_Wedge_Lehrer_Pickpocket2()
 {
-	AI_Output (other, self,"DIA_Wedge_Lehrer_Pickpocket2_15_00"); //Я хочу стать мастером-карманником.
+	AI_Output (other, self,"DIA_Wedge_Lehrer_Pickpocket2_15_00"); //РЇ С…РѕС‡Сѓ СЃС‚Р°С‚СЊ РјР°СЃС‚РµСЂРѕРј-РєР°СЂРјР°РЅРЅРёРєРѕРј.
 	
 	if (B_GiveSkill(other, NPC_TALENT_PICKPOCKET, 2, LPCOST_TALENT_PICKPOCKET_2))
 	{		
-		AI_Output (self, other,"DIA_Wedge_Lehrer_Pickpocket2_05_01"); //Думаю, ты уже готов к тому, чтобы я посвятил тебя в секреты настоящего мастерства.
-		AI_Output (self, other,"DIA_Wedge_Lehrer_Pickpocket2_05_02"); //Но знай, что даже самого лучше вора могут застать на месте преступления.
-		AI_Output (self, other,"DIA_Wedge_Lehrer_Pickpocket2_05_03"); //Будь осторожен.
+		AI_Output (self, other,"DIA_Wedge_Lehrer_Pickpocket2_05_01"); //Р”СѓРјР°СЋ, С‚С‹ СѓР¶Рµ РіРѕС‚РѕРІ Рє С‚РѕРјСѓ, С‡С‚РѕР±С‹ СЏ РїРѕСЃРІСЏС‚РёР» С‚РµР±СЏ РІ СЃРµРєСЂРµС‚С‹ РЅР°СЃС‚РѕСЏС‰РµРіРѕ РјР°СЃС‚РµСЂСЃС‚РІР°.
+		AI_Output (self, other,"DIA_Wedge_Lehrer_Pickpocket2_05_02"); //РќРѕ Р·РЅР°Р№, С‡С‚Рѕ РґР°Р¶Рµ СЃР°РјРѕРіРѕ Р»СѓС‡С€Рµ РІРѕСЂР° РјРѕРіСѓС‚ Р·Р°СЃС‚Р°С‚СЊ РЅР° РјРµСЃС‚Рµ РїСЂРµСЃС‚СѓРїР»РµРЅРёСЏ.
+		AI_Output (self, other,"DIA_Wedge_Lehrer_Pickpocket2_05_03"); //Р‘СѓРґСЊ РѕСЃС‚РѕСЂРѕР¶РµРЅ.
 	};
 };
 

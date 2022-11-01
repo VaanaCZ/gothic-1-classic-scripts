@@ -2,7 +2,7 @@ instance VLK_585_Aleph (Npc_Default)
 {
 	//-------- primary data --------
 	
-	name =							"Aλετ";
+	name =							"AΠ»ΠµΡ„";
 	npctype =						npctype_main;
 	guild =							GIL_VLK;      
 	level =							5;

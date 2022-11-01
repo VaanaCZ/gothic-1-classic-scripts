@@ -6,15 +6,15 @@ func void ZS_Bathing_Babe ()
 	AI_SetWalkmode (self, NPC_WALK);
 
 
-	PrintDebug("Íàéäè âàííó!");
+	PrintDebug("ĞĞ°Ğ¹Ğ´Ğ¸ Ğ²Ğ°Ğ½Ğ½Ñƒ!");
 
 	// Suche Badewanne
 	if (Wld_IsMobAvailable ( self, "BATHTUB") )
 	{
-		PrintDebug ("Âàííà íàéäåíà! Èäè êóïàòüñÿ.");
-		// Lege Nacktmesh-Rüstung ins Inventory ...
+		PrintDebug ("Ğ’Ğ°Ğ½Ğ½Ğ° Ğ½Ğ°Ğ¹Ğ´ĞµĞ½Ğ°! Ğ˜Ğ´Ğ¸ ĞºÑƒĞ¿Ğ°Ñ‚ÑŒÑÑ.");
+		// Lege Nacktmesh-RÑŒstung ins Inventory ...
 		CreateInvItem (self, BAB_ARMOR_NUDE);
-		// Lege die Rüstung an, funzt nur wenn dies die beste Rüstung ist !!!! ACHTUNG !!!
+		// Lege die RÑŒstung an, funzt nur wenn dies die beste RÑŒstung ist !!!! ACHTUNG !!!
 		AI_EquipBestArmor (self);
 		// wenn vorhanden dann reinsteigen
 		AI_UseMob (self, "BATHTUB", 1);
@@ -43,9 +43,9 @@ func void ZS_Bathing_Babe_End ()
 	PrintDebug("Enter ZS_Bathing_Babe_End()");
 	// Aus der Wanne steigen
 	AI_UseMob (self, "BATHTUB", -1);
-	// Ziehe Nackrüstung aus
+	// Ziehe NackrÑŒstung aus
 	AI_UnequipArmor (self);
-	// Nackig-Rüstung wieder aus dem Inv entfernen
+	// Nackig-RÑŒstung wieder aus dem Inv entfernen
 	Npc_RemoveInvItem (self, BAB_ARMOR_NUDE);
 };
 
@@ -64,10 +64,10 @@ func void ZS_Bathing_Babe ()
 		// gehe zu Umziehen-FP
 		AI_GotoFP (self, "FP_UNDRESS_");
 
-		// Lege Nacktmesh-Rüstung ins Inventory ...
+		// Lege Nacktmesh-RÑŒstung ins Inventory ...
 		CreateInvItem (self, BAB_ARMOR_NUDE);
 
-		// Lege die Rüstung an, funzt nur wenn dies die beste Rüstung ist !!!! ACHTUNG !!!
+		// Lege die RÑŒstung an, funzt nur wenn dies die beste RÑŒstung ist !!!! ACHTUNG !!!
 		AI_EquipBestArmor (self);
 
 		// Warten
@@ -122,15 +122,15 @@ func void ZS_Bathing_Babe_End ()
 		// gehe zum Umkleide-FP
 		AI_GotoFP (self, "FP_UNDRESS_");
 
-		// Ziehe Nackrüstung aus
+		// Ziehe NackrÑŒstung aus
 		AI_UnequipArmor (self);
 	}
 	else
 	{
-		// Kein FP in der Nähe
+		// Kein FP in der NĞ´he
 		PrintDebug("No FP_UNDRESS_ found !");
 	};
-	// Nackig-Rüstung wieder aus dem Inv entfernen
+	// Nackig-RÑŒstung wieder aus dem Inv entfernen
 	Npc_RemoveInvItem (self, BAB_ARMOR_NUDE);
 };
 

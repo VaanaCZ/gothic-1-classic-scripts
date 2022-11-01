@@ -21,8 +21,8 @@ FUNC VOID Info_HighPriest5_Info()
 	
 	if ( Npc_HasItems ( hero, Mythrilklinge02 )) || ( Npc_HasItems ( hero, UrizielRune ))
 	{
-		AI_Output 			(self, other,"Info_HighPriest5_17_04"); //У ТЕБЯ ЕСТЬ ОРУЖИЕ!
-		AI_Output 			(self, other,"Info_HighPriest5_17_05"); //Я ОСТАНОВЛЮ ТЕБЯ!
+		AI_Output 			(self, other,"Info_HighPriest5_17_04"); //РЈ РўР•Р‘РЇ Р•РЎРўР¬ РћР РЈР–РР•!
+		AI_Output 			(self, other,"Info_HighPriest5_17_05"); //РЇ РћРЎРўРђРќРћР’Р›Р® РўР•Р‘РЇ!
 
 		AI_StopProcessInfos	(self);
 		self.npctype 		= NPCTYPE_MAIN;
@@ -32,9 +32,9 @@ FUNC VOID Info_HighPriest5_Info()
 	}
 	else
 	{
-		AI_Output 			(self, other,"Info_HighPriest5_17_01"); //УХОДИ ОТСЮДА!
-		AI_Output 			(self, other,"Info_HighPriest5_17_02"); //НИКТО НЕ СМЕЕТ ТРЕВОЖИТЬ СОН МОЕГО ПОВЕЛИТЕЛЯ!
-		AI_Output 			(other, self,"Info_HighPriest5_15_03"); //Ошибаешься, твой драгоценный Спящий скоро проснется!
+		AI_Output 			(self, other,"Info_HighPriest5_17_01"); //РЈРҐРћР”Р РћРўРЎР®Р”Рђ!
+		AI_Output 			(self, other,"Info_HighPriest5_17_02"); //РќРРљРўРћ РќР• РЎРњР•Р•Рў РўР Р•Р’РћР–РРўР¬ РЎРћРќ РњРћР•Р“Рћ РџРћР’Р•Р›РРўР•Р›РЇ!
+		AI_Output 			(other, self,"Info_HighPriest5_15_03"); //РћС€РёР±Р°РµС€СЊСЃСЏ, С‚РІРѕР№ РґСЂР°РіРѕС†РµРЅРЅС‹Р№ РЎРїСЏС‰РёР№ СЃРєРѕСЂРѕ РїСЂРѕСЃРЅРµС‚СЃСЏ!
 	
 		AI_StopProcessInfos	(self);
 	
@@ -65,9 +65,9 @@ FUNC INT Info_HighPriest5FAILED_Condition()
 
 FUNC VOID Info_HighPriest5FAILED_Info()
 {
-	AI_Output			(other, self,"Info_HighPriest5FAILED_15_01"); //Ничего себе! На нем ни царапины! Нужно какое-то другое средство...
-	AI_Output			(self, other,"Info_HighPriest5FAILED_17_02"); //ТЕПЕРЬ ТЫ УМРЕШЬ!
-	AI_Output			(other, self,"Info_HighPriest5FAILED_15_03"); //Пора уходить отсюда!
+	AI_Output			(other, self,"Info_HighPriest5FAILED_15_01"); //РќРёС‡РµРіРѕ СЃРµР±Рµ! РќР° РЅРµРј РЅРё С†Р°СЂР°РїРёРЅС‹! РќСѓР¶РЅРѕ РєР°РєРѕРµ-С‚Рѕ РґСЂСѓРіРѕРµ СЃСЂРµРґСЃС‚РІРѕ...
+	AI_Output			(self, other,"Info_HighPriest5FAILED_17_02"); //РўР•РџР•Р Р¬ РўР« РЈРњР Р•РЁР¬!
+	AI_Output			(other, self,"Info_HighPriest5FAILED_15_03"); //РџРѕСЂР° СѓС…РѕРґРёС‚СЊ РѕС‚СЃСЋРґР°!
 	AI_RemoveWeapon		(other);
 	AI_TurnAway			(other,	self);	
 	
@@ -75,7 +75,7 @@ FUNC VOID Info_HighPriest5FAILED_Info()
 	Npc_SetAttitude 	(self, ATT_HOSTILE);
 	Npc_SetTempAttitude (self, ATT_HOSTILE);	
 
-	B_LogEntry			(CH4_EnterTemple,	"Вот и Граш-Варраг-Арушт, и судя по всему, он не нежить, как остальные. Он гораздо сильнее их, а мое оружие не причинит ему вреда. Мне нужно другое оружие!");
+	B_LogEntry			(CH4_EnterTemple,	"Р’РѕС‚ Рё Р“СЂР°С€-Р’Р°СЂСЂР°Рі-РђСЂСѓС€С‚, Рё СЃСѓРґСЏ РїРѕ РІСЃРµРјСѓ, РѕРЅ РЅРµ РЅРµР¶РёС‚СЊ, РєР°Рє РѕСЃС‚Р°Р»СЊРЅС‹Рµ. РћРЅ РіРѕСЂР°Р·РґРѕ СЃРёР»СЊРЅРµРµ РёС…, Р° РјРѕРµ РѕСЂСѓР¶РёРµ РЅРµ РїСЂРёС‡РёРЅРёС‚ РµРјСѓ РІСЂРµРґР°. РњРЅРµ РЅСѓР¶РЅРѕ РґСЂСѓРіРѕРµ РѕСЂСѓР¶РёРµ!");
 	B_GiveXP			(XP_RetreatFromLastPriest);
 
 	AI_StopProcessInfos	(self);

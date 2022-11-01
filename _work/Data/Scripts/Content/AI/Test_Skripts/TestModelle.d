@@ -8,7 +8,7 @@
 prototype Npc_TestDefault (C_NPC)
 {
 	//-------- primary data --------
-	name =							"Прототип";
+	name =							"РџСЂРѕС‚РѕС‚РёРї";
 	guild =							GIL_NONE;
 	level =							1;
 	
@@ -216,7 +216,7 @@ instance DTestmodell (Npc_TestDefault)
 {
 	//-------- primary data --------
 	name =							"DTestmodell";
-	slot =							"Гуру";
+	slot =							"Р“СѓСЂСѓ";
 	guild =							GIL_GUR;
 	level =							6;
 	voice =							11;//120;
@@ -282,7 +282,7 @@ instance FTestmodell (Npc_TestDefault)
 {
 	//-------- primary data --------
 	name =							"FTestmodell";
-	slot =							"Стражник";
+	slot =							"РЎС‚СЂР°Р¶РЅРёРє";
 	guild =							GIL_GRD;
 	level =							5;
 	voice =							11;//11;
@@ -483,8 +483,8 @@ FUNC VOID Rtn_start_3009 ()
 	TA_SitAround	(04,00,06,00,"WP_REPAIR");//###Was macht sie da? Da steht Scar
 	TA_StandAround	(06,00,08,00,"WP_IDOL");
 	TA_WashSelf		(08,00,09,00,"WP_REPAIR");	//Bei Gomez
-	TA_Babe_Sweep	(09,00,20,00,"WP_LAB");		//Luftzufдcheln?
-	TA_SitAround	(20,00,23,00,"WP_IDOL");		//Spдter Tanz
+	TA_Babe_Sweep	(09,00,20,00,"WP_LAB");		//LuftzufРґcheln?
+	TA_SitAround	(20,00,23,00,"WP_IDOL");		//SpРґter Tanz
 };
 
 instance JTestmodell (Npc_TestDefault)
@@ -844,11 +844,11 @@ FUNC INT Testinfo_001_07_700_Condition()
 
 FUNC VOID TestInfo_001_07_700_Info()
 {
-	AI_Output(self,other,"Global_001_07_00"); //Эй, новичок!
-	AI_Output(self,other,"Global_001_07_01"); //Ну, если ты еще не понял... 
-	AI_Output(self,other,"Global_001_07_02"); //Здесь, в колонии, есть три больших лагеря. 
-	AI_Output(self,other,"Global_001_07_03"); //Старый лагерь, Новый лагерь и Лагерь сектантов.
-	AI_Output(self,other,"Global_001_07_05"); //Если не хочешь прислуживать Баронам в Старом лагере, приходи к нам.
+	AI_Output(self,other,"Global_001_07_00"); //Р­Р№, РЅРѕРІРёС‡РѕРє!
+	AI_Output(self,other,"Global_001_07_01"); //РќСѓ, РµСЃР»Рё С‚С‹ РµС‰Рµ РЅРµ РїРѕРЅСЏР»... 
+	AI_Output(self,other,"Global_001_07_02"); //Р—РґРµСЃСЊ, РІ РєРѕР»РѕРЅРёРё, РµСЃС‚СЊ С‚СЂРё Р±РѕР»СЊС€РёС… Р»Р°РіРµСЂСЏ. 
+	AI_Output(self,other,"Global_001_07_03"); //РЎС‚Р°СЂС‹Р№ Р»Р°РіРµСЂСЊ, РќРѕРІС‹Р№ Р»Р°РіРµСЂСЊ Рё Р›Р°РіРµСЂСЊ СЃРµРєС‚Р°РЅС‚РѕРІ.
+	AI_Output(self,other,"Global_001_07_05"); //Р•СЃР»Рё РЅРµ С…РѕС‡РµС€СЊ РїСЂРёСЃР»СѓР¶РёРІР°С‚СЊ Р‘Р°СЂРѕРЅР°Рј РІ РЎС‚Р°СЂРѕРј Р»Р°РіРµСЂРµ, РїСЂРёС…РѕРґРё Рє РЅР°Рј.
 };
 
 	
@@ -872,7 +872,7 @@ FUNC INT GRD1_Testmodell_Trade_01_Func ()
 {
 	if (GRD1_Testmodell_Trade_01.requested_amount == 1) 
 	{
-		Print ("Обмен удался.");
+		Print ("РћР±РјРµРЅ СѓРґР°Р»СЃСЏ.");
 		return 1;
 	};
 	return 0;
@@ -894,9 +894,9 @@ FUNC INT GRD1_Testmodell_Trade_01_Info_01_Condition()
 
 FUNC VOID GRD1_Testmodell_Trade_01_Info_01_Info()
 {
-	B_say(self,other,"BAU_900_Ricelord01_Trade_01_Info_01_Satz_01"); //Hey Freundchen hцr mal:
+	B_say(self,other,"BAU_900_Ricelord01_Trade_01_Info_01_Satz_01"); //Hey Freundchen hС†r mal:
 	Print ("Gardisten Info");
-	B_say(self,other,"BAU_900_Ricelord01_Trade_01_Info_01_Satz_02"); //Ich geb' Dir 10 Portionen Reis, wenn Du mir dafьr 'ne ordentliche Hammelkeule gibst..
+	B_say(self,other,"BAU_900_Ricelord01_Trade_01_Info_01_Satz_02"); //Ich geb' Dir 10 Portionen Reis, wenn Du mir dafСЊr 'ne ordentliche Hammelkeule gibst..
 	B_say(self,other,"BAU_900_Ricelord01_Trade_01_Info_01_Satz_03"); //Oder hast Du vielleicht 'n Bier dabei? Oder Wein?
 	
 };

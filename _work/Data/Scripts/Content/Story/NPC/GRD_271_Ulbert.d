@@ -2,7 +2,7 @@ instance GRD_271_Ulbert (Npc_Default)
 {
 	//-------- primary data --------
 	
-	name 		=	"Ульберт";
+	name 		=	"РЈР»СЊР±РµСЂС‚";
 	npctype		= 	npctype_main;
 	guild 		=	GIL_GRD;
 	level 		=	10;

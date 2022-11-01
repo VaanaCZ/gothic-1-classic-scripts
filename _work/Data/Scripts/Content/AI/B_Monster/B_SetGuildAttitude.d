@@ -1,8 +1,8 @@
 //////////////////////////////////////////////////////////////////////////
 //	B_SetGuildAttitude
 //	==================
-//	Setzt die Gilden-Attitüde von 'fromGuild' gegenüber 'toGuild' auf den
-//	Wert 'attitude'. Menschen und Orks können mit der Sammelbezeichnung
+//	Setzt die Gilden-AttitÑŒde von 'fromGuild' gegenÑŒber 'toGuild' auf den
+//	Wert 'attitude'. Menschen und Orks kÑ†nnen mit der Sammelbezeichnung
 //	GIL_SEPERATOR_HUM bzw. GIL_SEPERATOR_ORC angegeben werden
 //////////////////////////////////////////////////////////////////////////
 func void B_SetGuildAttitude (var int fromGuild, var int attitude, var int toGuild)

@@ -33,7 +33,7 @@ INSTANCE Info_ORG_829_Hello (C_INFO)
 	condition	= Info_ORG_829_Hello_Condition;
 	information	= Info_ORG_829_Hello_Info;
 	permanent	= 0;
-	description	= "Как дела?";
+	description	= "РљР°Рє РґРµР»Р°?";
 };                       
 
 FUNC INT Info_ORG_829_Hello_Condition()
@@ -43,8 +43,8 @@ FUNC INT Info_ORG_829_Hello_Condition()
 
 FUNC VOID Info_ORG_829_Hello_Info()
 {	
-	AI_Output (other, self,"Info_ORG_829_Hello_15_00"); //Как дела?
-	AI_Output (self, other,"Info_ORG_829_Hello_06_01"); //Так себе. У меня закончилось курево.
+	AI_Output (other, self,"Info_ORG_829_Hello_15_00"); //РљР°Рє РґРµР»Р°?
+	AI_Output (self, other,"Info_ORG_829_Hello_06_01"); //РўР°Рє СЃРµР±Рµ. РЈ РјРµРЅСЏ Р·Р°РєРѕРЅС‡РёР»РѕСЃСЊ РєСѓСЂРµРІРѕ.
 };
 
 // ************************************************************
@@ -60,7 +60,7 @@ INSTANCE Info_ORG_829_OfferJoint (C_INFO)
 	condition	= Info_ORG_829_OfferJoint_Condition;
 	information	= Info_ORG_829_OfferJoint_Info;
 	permanent	= 0;
-	description	= "У меня есть болотник. Будешь?";
+	description	= "РЈ РјРµРЅСЏ РµСЃС‚СЊ Р±РѕР»РѕС‚РЅРёРє. Р‘СѓРґРµС€СЊ?";
 };                       
 
 FUNC INT Info_ORG_829_OfferJoint_Condition()
@@ -73,7 +73,7 @@ FUNC INT Info_ORG_829_OfferJoint_Condition()
 
 FUNC VOID Info_ORG_829_OfferJoint_Info()
 {	
-	AI_Output (other, self,"Info_ORG_829_OfferJoint_15_00"); //У меня есть болотник. Будешь?
+	AI_Output (other, self,"Info_ORG_829_OfferJoint_15_00"); //РЈ РјРµРЅСЏ РµСЃС‚СЊ Р±РѕР»РѕС‚РЅРёРє. Р‘СѓРґРµС€СЊ?
 	
 	if ( (Npc_HasItems(other,ItMiJoint_1)>0) || (Npc_HasItems(other,ItMiJoint_2)>0) || (Npc_HasItems(other,ItMiJoint_3)>0) )
 	{
@@ -84,13 +84,13 @@ FUNC VOID Info_ORG_829_OfferJoint_Info()
 		else if (Npc_HasItems(other,ItMiJoint_3))
 		{	B_GiveInvItems (other,self,ItMiJoint_3,1);	 };
 		
-		AI_Output (self, other,"Info_ORG_829_OfferJoint_06_01"); //Еще бы! Ты ведь из Лагеря сектантов, да?
+		AI_Output (self, other,"Info_ORG_829_OfferJoint_06_01"); //Р•С‰Рµ Р±С‹! РўС‹ РІРµРґСЊ РёР· Р›Р°РіРµСЂСЏ СЃРµРєС‚Р°РЅС‚РѕРІ, РґР°?
 		
 		NC_Joints_verteilt = NC_Joints_verteilt + 1;
 	}
 	else
 	{
-		AI_Output (self, other,"Info_ORG_829_OfferJoint_No_Joint_06_00"); //Эй! Ты обмануть меня захотел, да? Мне это не нравится!
+		AI_Output (self, other,"Info_ORG_829_OfferJoint_No_Joint_06_00"); //Р­Р№! РўС‹ РѕР±РјР°РЅСѓС‚СЊ РјРµРЅСЏ Р·Р°С…РѕС‚РµР», РґР°? РњРЅРµ СЌС‚Рѕ РЅРµ РЅСЂР°РІРёС‚СЃСЏ!
 	};
 };
 
@@ -105,7 +105,7 @@ INSTANCE Info_ORG_829_SpecialInfo (C_INFO)
 	condition	= Info_ORG_829_SpecialInfo_Condition;
 	information	= Info_ORG_829_SpecialInfo_Info;
 	permanent	= 0;
-	description	= "Я здесь недавно. Можешь мне что-нибудь посоветовать?";
+	description	= "РЇ Р·РґРµСЃСЊ РЅРµРґР°РІРЅРѕ. РњРѕР¶РµС€СЊ РјРЅРµ С‡С‚Рѕ-РЅРёР±СѓРґСЊ РїРѕСЃРѕРІРµС‚РѕРІР°С‚СЊ?";
 };                       
 
 FUNC INT Info_ORG_829_SpecialInfo_Condition()
@@ -118,10 +118,10 @@ FUNC INT Info_ORG_829_SpecialInfo_Condition()
 
 FUNC VOID Info_ORG_829_SpecialInfo_Info()
 {	
-	AI_Output (other, self,"Info_ORG_829_SpecialInfo_15_00"); //Я здесь недавно. Можешь мне что-нибудь посоветовать?
-	AI_Output (self, other,"Info_ORG_829_SpecialInfo_06_01"); //Конечно! Когда придешь в лагерь, поговори с Горном. Он один из наемников, охраняет магов, но с ним можно иметь дело. Он был один из нас.
-	AI_Output (other, self,"Info_ORG_829_SpecialInfo_15_02"); //Один из вас?
-	AI_Output (self, other,"Info_ORG_829_SpecialInfo_06_03"); //Ну, из воров, знаешь? Таких, которым даже Бароны нипочем. Вот так. 
+	AI_Output (other, self,"Info_ORG_829_SpecialInfo_15_00"); //РЇ Р·РґРµСЃСЊ РЅРµРґР°РІРЅРѕ. РњРѕР¶РµС€СЊ РјРЅРµ С‡С‚Рѕ-РЅРёР±СѓРґСЊ РїРѕСЃРѕРІРµС‚РѕРІР°С‚СЊ?
+	AI_Output (self, other,"Info_ORG_829_SpecialInfo_06_01"); //РљРѕРЅРµС‡РЅРѕ! РљРѕРіРґР° РїСЂРёРґРµС€СЊ РІ Р»Р°РіРµСЂСЊ, РїРѕРіРѕРІРѕСЂРё СЃ Р“РѕСЂРЅРѕРј. РћРЅ РѕРґРёРЅ РёР· РЅР°РµРјРЅРёРєРѕРІ, РѕС…СЂР°РЅСЏРµС‚ РјР°РіРѕРІ, РЅРѕ СЃ РЅРёРј РјРѕР¶РЅРѕ РёРјРµС‚СЊ РґРµР»Рѕ. РћРЅ Р±С‹Р» РѕРґРёРЅ РёР· РЅР°СЃ.
+	AI_Output (other, self,"Info_ORG_829_SpecialInfo_15_02"); //РћРґРёРЅ РёР· РІР°СЃ?
+	AI_Output (self, other,"Info_ORG_829_SpecialInfo_06_03"); //РќСѓ, РёР· РІРѕСЂРѕРІ, Р·РЅР°РµС€СЊ? РўР°РєРёС…, РєРѕС‚РѕСЂС‹Рј РґР°Р¶Рµ Р‘Р°СЂРѕРЅС‹ РЅРёРїРѕС‡РµРј. Р’РѕС‚ С‚Р°Рє. 
 };
 
 // ************************************************************
@@ -135,7 +135,7 @@ INSTANCE Info_ORG_829_PERM (C_INFO)
 	condition	= Info_ORG_829_PERM_Condition;
 	information	= Info_ORG_829_PERM_Info;
 	permanent	= 1;
-	description	= "А ты можешь рассказать мне, что это за лагерь?";
+	description	= "Рђ С‚С‹ РјРѕР¶РµС€СЊ СЂР°СЃСЃРєР°Р·Р°С‚СЊ РјРЅРµ, С‡С‚Рѕ СЌС‚Рѕ Р·Р° Р»Р°РіРµСЂСЊ?";
 };                       
 
 FUNC INT Info_ORG_829_PERM_Condition()
@@ -148,6 +148,6 @@ FUNC INT Info_ORG_829_PERM_Condition()
 
 FUNC VOID Info_ORG_829_PERM_Info()
 {	
-	AI_Output (other, self,"Info_ORG_829_PERM_15_00"); //А ты можешь рассказать мне, что это за лагерь?
-	AI_Output (self, other,"Info_ORG_829_PERM_06_01"); //Просто пойди туда, и сам все увидишь.
+	AI_Output (other, self,"Info_ORG_829_PERM_15_00"); //Рђ С‚С‹ РјРѕР¶РµС€СЊ СЂР°СЃСЃРєР°Р·Р°С‚СЊ РјРЅРµ, С‡С‚Рѕ СЌС‚Рѕ Р·Р° Р»Р°РіРµСЂСЊ?
+	AI_Output (self, other,"Info_ORG_829_PERM_06_01"); //РџСЂРѕСЃС‚Рѕ РїРѕР№РґРё С‚СѓРґР°, Рё СЃР°Рј РІСЃРµ СѓРІРёРґРёС€СЊ.
 };

@@ -34,7 +34,7 @@ INSTANCE MENU_OPT_GAME(C_MENU_DEF)
 
 INSTANCE MENUITEM_GAME_HEADLINE(C_MENU_ITEM_DEF) 
 {
-	text[0]		=	"Настройки игры";
+	text[0]		=	"РќР°СЃС‚СЂРѕР№РєРё РёРіСЂС‹";
 	type		=	MENU_ITEM_TEXT;
 	// Position und Dimension	
 	posx		=	0;		posy		=	MENU_TITLE_Y;
@@ -52,8 +52,8 @@ INSTANCE MENUITEM_GAME_HEADLINE(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_GAME_SUB_TITLES(C_MENU_ITEM_DEF)
 {
 	backpic		=	MENU_ITEM_BACK_PIC;
-	text[0]		=	"Субтитры";
-	text[1]		= 	"Визуальная поддержка диалогов."; // Kommentar
+	text[0]		=	"РЎСѓР±С‚РёС‚СЂС‹";
+	text[1]		= 	"Р’РёР·СѓР°Р»СЊРЅР°СЏ РїРѕРґРґРµСЂР¶РєР° РґРёР°Р»РѕРіРѕРІ."; // Kommentar
 	// Position und Dimension	
 	posx		=	1000;	posy		=	MENU_START_Y + MENU_DY*0;
 	dimx		=	4000;	dimy		=	750;
@@ -67,7 +67,7 @@ instance MENUITEM_GAME_SUB_TITLES_CHOICE(C_MENU_ITEM_DEF)
 {
 	backPic		=	MENU_CHOICE_BACK_PIC;
 	type		=	MENU_ITEM_CHOICEBOX;		
-	text[0]		= 	"выкл.|вкл.";
+	text[0]		= 	"РІС‹РєР».|РІРєР».";
 	fontName	=   MENU_FONT_SMALL;
 	// Position und Dimension	
 	posx		= 5000;		posy		=	MENU_START_Y + MENU_DY*0 + MENU_CHOICE_YPLUS;
@@ -88,8 +88,8 @@ instance MENUITEM_GAME_SUB_TITLES_CHOICE(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_GAME_ANIMATE_WINDOWS(C_MENU_ITEM_DEF)
 {
 	backpic		=	MENU_ITEM_BACK_PIC;
-	text[0]		=	"Анимация окон";
-	text[1]		= 	"Анимированные окна диалогов."; // Kommentar
+	text[0]		=	"РђРЅРёРјР°С†РёСЏ РѕРєРѕРЅ";
+	text[1]		= 	"РђРЅРёРјРёСЂРѕРІР°РЅРЅС‹Рµ РѕРєРЅР° РґРёР°Р»РѕРіРѕРІ."; // Kommentar
 	// Position und Dimension	
 	posx		=	1000;	posy		=	MENU_START_Y + MENU_DY*1;
 	dimx		=	4000;	dimy		=	750;
@@ -103,7 +103,7 @@ instance MENUITEM_GAME_ANIMATE_WINDOWS_CHOICE(C_MENU_ITEM_DEF)
 {
 	backPic		=	MENU_CHOICE_BACK_PIC;
 	type		=	MENU_ITEM_CHOICEBOX;	
-	text[0]		= 	"выкл.|вкл.";
+	text[0]		= 	"РІС‹РєР».|РІРєР».";
 	fontName	=   MENU_FONT_SMALL;
 	// Position und Dimension	
 	posx		= 5000;		posy		= MENU_START_Y + MENU_DY*1 + MENU_CHOICE_YPLUS;
@@ -125,8 +125,8 @@ instance MENUITEM_GAME_ANIMATE_WINDOWS_CHOICE(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_GAME_LOOKAROUND_INVERSE(C_MENU_ITEM_DEF)
 {
 	backpic		=	MENU_ITEM_BACK_PIC;
-	text[0]		=	"Камера";
-	text[1]		= 	"Обратное управление камерой."; // Kommentar
+	text[0]		=	"РљР°РјРµСЂР°";
+	text[1]		= 	"РћР±СЂР°С‚РЅРѕРµ СѓРїСЂР°РІР»РµРЅРёРµ РєР°РјРµСЂРѕР№."; // Kommentar
 	// Position und Dimension	
 	posx		=	1000;	posy		=	MENU_START_Y + MENU_DY*2;
 	dimx		=	4000;	dimy		=	750;
@@ -140,7 +140,7 @@ instance MENUITEM_GAME_LOOKAROUND_INVERSE_CHOICE(C_MENU_ITEM_DEF)
 {
 	backPic		=	MENU_CHOICE_BACK_PIC;
 	type		=	MENU_ITEM_CHOICEBOX;		
-	text[0]		= 	"выкл.|вкл.";
+	text[0]		= 	"РІС‹РєР».|РІРєР».";
 	fontName	=   MENU_FONT_SMALL;
 	// Position und Dimension	
 	posx		= 5000;		posy		=	MENU_START_Y + MENU_DY*2 + MENU_CHOICE_YPLUS;
@@ -161,8 +161,8 @@ instance MENUITEM_GAME_LOOKAROUND_INVERSE_CHOICE(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_M(C_MENU_ITEM_DEF)
 {
 	backpic		=	MENU_ITEM_BACK_PIC;
-	text[0]		=	"Мышь";
-	text[1]		= 	"Управление при помощи мыши."; // Kommentar
+	text[0]		=	"РњС‹С€СЊ";
+	text[1]		= 	"РЈРїСЂР°РІР»РµРЅРёРµ РїСЂРё РїРѕРјРѕС‰Рё РјС‹С€Рё."; // Kommentar
 	// Position und Dimension	
 	posx		=	1000;	posy		=	MENU_START_Y + MENU_DY*3;
 	dimx		=	4000;	dimy		=	750;
@@ -176,7 +176,7 @@ instance MENUITEM_M_CHOICE(C_MENU_ITEM_DEF)
 {
 	backPic		=	MENU_CHOICE_BACK_PIC;
 	type		=	MENU_ITEM_CHOICEBOX;	
-	text[0]		= 	"выкл.|вкл.";
+	text[0]		= 	"РІС‹РєР».|РІРєР».";
 	fontName	=   MENU_FONT_SMALL;
 	// Position und Dimension	
 	posx		= 5000;		posy		= MENU_START_Y + MENU_DY*3 + MENU_CHOICE_YPLUS;
@@ -197,8 +197,8 @@ instance MENUITEM_M_CHOICE(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_MSENSITIVITY(C_MENU_ITEM_DEF)
 {
 	backpic		=	MENU_ITEM_BACK_PIC;
-	text[0]		=	"Скорость";
-	text[1]		= 	"Чувствительность мыши."; // Kommentar
+	text[0]		=	"РЎРєРѕСЂРѕСЃС‚СЊ";
+	text[1]		= 	"Р§СѓРІСЃС‚РІРёС‚РµР»СЊРЅРѕСЃС‚СЊ РјС‹С€Рё."; // Kommentar
 	// Position und Dimension	
 	posx		=	1000;	posy		=	MENU_START_Y + MENU_DY*4;
 	dimx		=	4000;	dimy		=	750;
@@ -236,8 +236,8 @@ instance MENUITEM_MSENSITIVITY_SLIDER(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_GAME_BLOOD(C_MENU_ITEM_DEF)
 {
 	backpic		=	MENU_ITEM_BACK_PIC;
-	text[0]		=	"Жестокость";
-	text[1]		= 	"Визуализация крови."; // Kommentar
+	text[0]		=	"Р–РµСЃС‚РѕРєРѕСЃС‚СЊ";
+	text[1]		= 	"Р’РёР·СѓР°Р»РёР·Р°С†РёСЏ РєСЂРѕРІРё."; // Kommentar
 	// Position und Dimension	
 	posx		=	1000;	posy		=	MENU_START_Y + MENU_DY*5;
 	dimx		=	4000;	dimy		=	750;
@@ -251,7 +251,7 @@ instance MENUITEM_GAME_BLOOD_CHOICE(C_MENU_ITEM_DEF)
 {
 	backPic		=	MENU_CHOICE_BACK_PIC;
 	type		=	MENU_ITEM_CHOICEBOX;	
-	text[0]		= 	"нет|немного|много|слишком много";
+	text[0]		= 	"РЅРµС‚|РЅРµРјРЅРѕРіРѕ|РјРЅРѕРіРѕ|СЃР»РёС€РєРѕРј РјРЅРѕРіРѕ";
 	fontName	=   MENU_FONT_SMALL;
 	// Position und Dimension	
 	posx		= 5000;		posy		= MENU_START_Y + MENU_DY*5 + MENU_CHOICE_YPLUS;
@@ -269,7 +269,7 @@ instance MENUITEM_GAME_BLOOD_CHOICE(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_GAME_BACK(C_MENU_ITEM_DEF)
 {
 	backpic		=	MENU_ITEM_BACK_PIC;
-	text[0]		=	"Назад";
+	text[0]		=	"РќР°Р·Р°Рґ";
 	// Position und Dimension	
 	posx		=	1000;		posy		=	MENU_BACK_Y;
 	dimx		=	6192;		dimy		=	MENU_DY;

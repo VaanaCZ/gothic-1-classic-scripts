@@ -23,7 +23,7 @@ FUNC VOID  DIA_BaalParvez_EXIT_Info()
 };
 
 // **************************************************
-//					Erste Begrьssung
+//					Erste BegrСЊssung
 // **************************************************
 
 instance  DIA_BaalParvez_Greet (C_INFO)
@@ -46,8 +46,8 @@ FUNC int  DIA_BaalParvez_Greet_Condition()
 
 FUNC VOID  DIA_BaalParvez_Greet_Info()
 {
-	AI_Output (self, other,"DIA_BaalParvez_Greet_10_00"); //Да пребудет с тобой Спящий, незнакомец!
-	AI_Output (self, other,"DIA_BaalParvez_Greet_10_01"); //Я здесь, чтобы наставить тебя на путь истинный.
+	AI_Output (self, other,"DIA_BaalParvez_Greet_10_00"); //Р”Р° РїСЂРµР±СѓРґРµС‚ СЃ С‚РѕР±РѕР№ РЎРїСЏС‰РёР№, РЅРµР·РЅР°РєРѕРјРµС†!
+	AI_Output (self, other,"DIA_BaalParvez_Greet_10_01"); //РЇ Р·РґРµСЃСЊ, С‡С‚РѕР±С‹ РЅР°СЃС‚Р°РІРёС‚СЊ С‚РµР±СЏ РЅР° РїСѓС‚СЊ РёСЃС‚РёРЅРЅС‹Р№.
 };
 
 // **************************************************
@@ -61,7 +61,7 @@ instance  DIA_BaalParvez_RightWay (C_INFO)
 	condition	= DIA_BaalParvez_RightWay_Condition;
 	information	= DIA_BaalParvez_RightWay_Info;
 	permanent	= 0;
-	description = "И каков этот истинный путь?";
+	description = "Р РєР°РєРѕРІ СЌС‚РѕС‚ РёСЃС‚РёРЅРЅС‹Р№ РїСѓС‚СЊ?";
 };                       
 
 FUNC int  DIA_BaalParvez_RightWay_Condition()
@@ -74,16 +74,16 @@ FUNC int  DIA_BaalParvez_RightWay_Condition()
 
 FUNC VOID  DIA_BaalParvez_RightWay_Info()
 {
-	AI_Output (other, self,"DIA_BaalParvez_RightWay_15_00"); //И каков этот истинный путь?
-	AI_Output (self, other,"DIA_BaalParvez_RightWay_10_01"); //Путь Спящего. Лишь в его силе освободить нас.
-	AI_Output (self, other,"DIA_BaalParvez_RightWay_10_02"); //Гуру хотят призвать Спящего, и поэтому сейчас в нашем лагере готовится Великая Церемония.
-	AI_Output (self, other,"DIA_BaalParvez_RightWay_10_03"); //До сих пор он говорил с нами только в видениях, но пришло время увидеть его воочию.
-	AI_Output (self, other,"DIA_BaalParvez_RightWay_10_04"); //Чтобы достичь этого, нам надо объединить всю нашу духовную силу. Для этого нам понадобится много последователей.
-	AI_Output (self, other,"DIA_BaalParvez_RightWay_10_05"); //Наш лагерь недалеко отсюда, на болоте. Хочешь, я могу проводить тебя туда.
+	AI_Output (other, self,"DIA_BaalParvez_RightWay_15_00"); //Р РєР°РєРѕРІ СЌС‚РѕС‚ РёСЃС‚РёРЅРЅС‹Р№ РїСѓС‚СЊ?
+	AI_Output (self, other,"DIA_BaalParvez_RightWay_10_01"); //РџСѓС‚СЊ РЎРїСЏС‰РµРіРѕ. Р›РёС€СЊ РІ РµРіРѕ СЃРёР»Рµ РѕСЃРІРѕР±РѕРґРёС‚СЊ РЅР°СЃ.
+	AI_Output (self, other,"DIA_BaalParvez_RightWay_10_02"); //Р“СѓСЂСѓ С…РѕС‚СЏС‚ РїСЂРёР·РІР°С‚СЊ РЎРїСЏС‰РµРіРѕ, Рё РїРѕСЌС‚РѕРјСѓ СЃРµР№С‡Р°СЃ РІ РЅР°С€РµРј Р»Р°РіРµСЂРµ РіРѕС‚РѕРІРёС‚СЃСЏ Р’РµР»РёРєР°СЏ Р¦РµСЂРµРјРѕРЅРёСЏ.
+	AI_Output (self, other,"DIA_BaalParvez_RightWay_10_03"); //Р”Рѕ СЃРёС… РїРѕСЂ РѕРЅ РіРѕРІРѕСЂРёР» СЃ РЅР°РјРё С‚РѕР»СЊРєРѕ РІ РІРёРґРµРЅРёСЏС…, РЅРѕ РїСЂРёС€Р»Рѕ РІСЂРµРјСЏ СѓРІРёРґРµС‚СЊ РµРіРѕ РІРѕРѕС‡РёСЋ.
+	AI_Output (self, other,"DIA_BaalParvez_RightWay_10_04"); //Р§С‚РѕР±С‹ РґРѕСЃС‚РёС‡СЊ СЌС‚РѕРіРѕ, РЅР°Рј РЅР°РґРѕ РѕР±СЉРµРґРёРЅРёС‚СЊ РІСЃСЋ РЅР°С€Сѓ РґСѓС…РѕРІРЅСѓСЋ СЃРёР»Сѓ. Р”Р»СЏ СЌС‚РѕРіРѕ РЅР°Рј РїРѕРЅР°РґРѕР±РёС‚СЃСЏ РјРЅРѕРіРѕ РїРѕСЃР»РµРґРѕРІР°С‚РµР»РµР№.
+	AI_Output (self, other,"DIA_BaalParvez_RightWay_10_05"); //РќР°С€ Р»Р°РіРµСЂСЊ РЅРµРґР°Р»РµРєРѕ РѕС‚СЃСЋРґР°, РЅР° Р±РѕР»РѕС‚Рµ. РҐРѕС‡РµС€СЊ, СЏ РјРѕРіСѓ РїСЂРѕРІРѕРґРёС‚СЊ С‚РµР±СЏ С‚СѓРґР°.
 };
 
 // **************************************************
-//					Vorteile fьr mich
+//					Vorteile fСЊr mich
 // **************************************************
 
 instance  DIA_BaalParvez_MyAdvantage (C_INFO)
@@ -93,7 +93,7 @@ instance  DIA_BaalParvez_MyAdvantage (C_INFO)
 	condition	= DIA_BaalParvez_MyAdvantage_Condition;
 	information	= DIA_BaalParvez_MyAdvantage_Info;
 	permanent	= 0;
-	description = "А какая мне польза от того, что я присоединюсь к вам?";
+	description = "Рђ РєР°РєР°СЏ РјРЅРµ РїРѕР»СЊР·Р° РѕС‚ С‚РѕРіРѕ, С‡С‚Рѕ СЏ РїСЂРёСЃРѕРµРґРёРЅСЋСЃСЊ Рє РІР°Рј?";
 };                       
 
 FUNC int  DIA_BaalParvez_MyAdvantage_Condition()
@@ -106,16 +106,16 @@ FUNC int  DIA_BaalParvez_MyAdvantage_Condition()
 
 FUNC VOID  DIA_BaalParvez_MyAdvantage_Info()
 {
-	AI_Output (other, self,"DIA_BaalParvez_MyAdvantage_15_00"); //А какая мне польза от того, что я присоединюсь к вам?
-	AI_Output (self, other,"DIA_BaalParvez_MyAdvantage_10_01"); //Возможно, ты станешь одним из избранных, кто получит от Спящего магический дар.
-	AI_Output (self, other,"DIA_BaalParvez_MyAdvantage_10_02"); //Или ты сможешь достичь больших высот и стать Стражем. Только лучшие из нас могут добиться этого.
-	AI_Output (self, other,"DIA_BaalParvez_MyAdvantage_10_03"); //Если будет на то воля Спящего, ты можешь даже совместить оба этих занятия.
-	AI_Output (self, other,"DIA_BaalParvez_MyAdvantage_10_04"); //Видишь, наше Братство многое может предложить тебе.
-	AI_Output (self, other,"DIA_BaalParvez_MyAdvantage_10_05"); //Серьезно подумай об этом, прежде чем решить присоединиться к какому-нибудь другому лагерю!
+	AI_Output (other, self,"DIA_BaalParvez_MyAdvantage_15_00"); //Рђ РєР°РєР°СЏ РјРЅРµ РїРѕР»СЊР·Р° РѕС‚ С‚РѕРіРѕ, С‡С‚Рѕ СЏ РїСЂРёСЃРѕРµРґРёРЅСЋСЃСЊ Рє РІР°Рј?
+	AI_Output (self, other,"DIA_BaalParvez_MyAdvantage_10_01"); //Р’РѕР·РјРѕР¶РЅРѕ, С‚С‹ СЃС‚Р°РЅРµС€СЊ РѕРґРЅРёРј РёР· РёР·Р±СЂР°РЅРЅС‹С…, РєС‚Рѕ РїРѕР»СѓС‡РёС‚ РѕС‚ РЎРїСЏС‰РµРіРѕ РјР°РіРёС‡РµСЃРєРёР№ РґР°СЂ.
+	AI_Output (self, other,"DIA_BaalParvez_MyAdvantage_10_02"); //РР»Рё С‚С‹ СЃРјРѕР¶РµС€СЊ РґРѕСЃС‚РёС‡СЊ Р±РѕР»СЊС€РёС… РІС‹СЃРѕС‚ Рё СЃС‚Р°С‚СЊ РЎС‚СЂР°Р¶РµРј. РўРѕР»СЊРєРѕ Р»СѓС‡С€РёРµ РёР· РЅР°СЃ РјРѕРіСѓС‚ РґРѕР±РёС‚СЊСЃСЏ СЌС‚РѕРіРѕ.
+	AI_Output (self, other,"DIA_BaalParvez_MyAdvantage_10_03"); //Р•СЃР»Рё Р±СѓРґРµС‚ РЅР° С‚Рѕ РІРѕР»СЏ РЎРїСЏС‰РµРіРѕ, С‚С‹ РјРѕР¶РµС€СЊ РґР°Р¶Рµ СЃРѕРІРјРµСЃС‚РёС‚СЊ РѕР±Р° СЌС‚РёС… Р·Р°РЅСЏС‚РёСЏ.
+	AI_Output (self, other,"DIA_BaalParvez_MyAdvantage_10_04"); //Р’РёРґРёС€СЊ, РЅР°С€Рµ Р‘СЂР°С‚СЃС‚РІРѕ РјРЅРѕРіРѕРµ РјРѕР¶РµС‚ РїСЂРµРґР»РѕР¶РёС‚СЊ С‚РµР±Рµ.
+	AI_Output (self, other,"DIA_BaalParvez_MyAdvantage_10_05"); //РЎРµСЂСЊРµР·РЅРѕ РїРѕРґСѓРјР°Р№ РѕР± СЌС‚РѕРј, РїСЂРµР¶РґРµ С‡РµРј СЂРµС€РёС‚СЊ РїСЂРёСЃРѕРµРґРёРЅРёС‚СЊСЃСЏ Рє РєР°РєРѕРјСѓ-РЅРёР±СѓРґСЊ РґСЂСѓРіРѕРјСѓ Р»Р°РіРµСЂСЋ!
 };
 
 // **************************************************
-//					Schlдfer
+//					SchlРґfer
 // **************************************************
 
 instance  DIA_BaalParvez_Sleeper (C_INFO)
@@ -125,7 +125,7 @@ instance  DIA_BaalParvez_Sleeper (C_INFO)
 	condition	= DIA_BaalParvez_Sleeper_Condition;
 	information	= DIA_BaalParvez_Sleeper_Info;
 	permanent	= 0;
-	description = "Ты знаешь, кто такой Спящий?";
+	description = "РўС‹ Р·РЅР°РµС€СЊ, РєС‚Рѕ С‚Р°РєРѕР№ РЎРїСЏС‰РёР№?";
 };                       
 
 FUNC int  DIA_BaalParvez_Sleeper_Condition()
@@ -138,16 +138,16 @@ FUNC int  DIA_BaalParvez_Sleeper_Condition()
 
 FUNC VOID  DIA_BaalParvez_Sleeper_Info()
 {
-	AI_Output (other, self,"DIA_BaalParvez_Sleeper_15_00"); //Ты знаешь, кто такой Спящий?
-	AI_Output (self, other,"DIA_BaalParvez_Sleeper_10_01"); //Спящий говорит с нами во снах и видениях.
-	AI_Output (self, other,"DIA_BaalParvez_Sleeper_10_02"); //Вот уже пять лет, он ведет нас за собой, с тех пор как Юберион впервые услышал его.
-	AI_Output (self, other,"DIA_BaalParvez_Sleeper_10_03"); //Все члены Братства отвергают трех богов и молятся о спасении лишь Спящему.
-	AI_Output (other, self,"DIA_BaalParvez_Sleeper_15_04"); //Спасении? От чего?
-	AI_Output (self, other,"DIA_BaalParvez_Sleeper_10_05"); //От этого проклятого места, конечно! Спящий укажет нам путь к свободе!
+	AI_Output (other, self,"DIA_BaalParvez_Sleeper_15_00"); //РўС‹ Р·РЅР°РµС€СЊ, РєС‚Рѕ С‚Р°РєРѕР№ РЎРїСЏС‰РёР№?
+	AI_Output (self, other,"DIA_BaalParvez_Sleeper_10_01"); //РЎРїСЏС‰РёР№ РіРѕРІРѕСЂРёС‚ СЃ РЅР°РјРё РІРѕ СЃРЅР°С… Рё РІРёРґРµРЅРёСЏС….
+	AI_Output (self, other,"DIA_BaalParvez_Sleeper_10_02"); //Р’РѕС‚ СѓР¶Рµ РїСЏС‚СЊ Р»РµС‚, РѕРЅ РІРµРґРµС‚ РЅР°СЃ Р·Р° СЃРѕР±РѕР№, СЃ С‚РµС… РїРѕСЂ РєР°Рє Р®Р±РµСЂРёРѕРЅ РІРїРµСЂРІС‹Рµ СѓСЃР»С‹С€Р°Р» РµРіРѕ.
+	AI_Output (self, other,"DIA_BaalParvez_Sleeper_10_03"); //Р’СЃРµ С‡Р»РµРЅС‹ Р‘СЂР°С‚СЃС‚РІР° РѕС‚РІРµСЂРіР°СЋС‚ С‚СЂРµС… Р±РѕРіРѕРІ Рё РјРѕР»СЏС‚СЃСЏ Рѕ СЃРїР°СЃРµРЅРёРё Р»РёС€СЊ РЎРїСЏС‰РµРјСѓ.
+	AI_Output (other, self,"DIA_BaalParvez_Sleeper_15_04"); //РЎРїР°СЃРµРЅРёРё? РћС‚ С‡РµРіРѕ?
+	AI_Output (self, other,"DIA_BaalParvez_Sleeper_10_05"); //РћС‚ СЌС‚РѕРіРѕ РїСЂРѕРєР»СЏС‚РѕРіРѕ РјРµСЃС‚Р°, РєРѕРЅРµС‡РЅРѕ! РЎРїСЏС‰РёР№ СѓРєР°Р¶РµС‚ РЅР°Рј РїСѓС‚СЊ Рє СЃРІРѕР±РѕРґРµ!
 };
 
 // **************************************************
-//			Was hat Schlдfer zu euch gesagt?
+//			Was hat SchlРґfer zu euch gesagt?
 // **************************************************
 
 instance  DIA_BaalParvez_SleeperSaid (C_INFO)
@@ -157,7 +157,7 @@ instance  DIA_BaalParvez_SleeperSaid (C_INFO)
 	condition	= DIA_BaalParvez_SleeperSaid_Condition;
 	information	= DIA_BaalParvez_SleeperSaid_Info;
 	permanent	= 0;
-	description = "И что сказал Спящий?";
+	description = "Р С‡С‚Рѕ СЃРєР°Р·Р°Р» РЎРїСЏС‰РёР№?";
 };                       
 
 FUNC int  DIA_BaalParvez_SleeperSaid_Condition()
@@ -170,15 +170,15 @@ FUNC int  DIA_BaalParvez_SleeperSaid_Condition()
 
 FUNC VOID  DIA_BaalParvez_SleeperSaid_Info()
 {
-	AI_Output (other, self,"DIA_BaalParvez_SleeperSaid_15_00"); //И что сказал Спящий?
-	AI_Output (self, other,"DIA_BaalParvez_SleeperSaid_10_01"); //Он привел нас к развалинам старого храма на болоте. Именно там мы построили свой лагерь.
-	AI_Output (self, other,"DIA_BaalParvez_SleeperSaid_10_02"); //Он даровал нам свободу действий - никто из нас не горбит спину на шахтах.
-	AI_Output (self, other,"DIA_BaalParvez_SleeperSaid_10_03"); //Он открыл нам силу болотника. Мы продаем его другим лагерям и взамен получаем все, что нам надо.
-	AI_Output (self, other,"DIA_BaalParvez_SleeperSaid_10_04"); //А избранных он одарил магическим даром. Его магия более могущественная и древняя, чем та, что используется остальными.
+	AI_Output (other, self,"DIA_BaalParvez_SleeperSaid_15_00"); //Р С‡С‚Рѕ СЃРєР°Р·Р°Р» РЎРїСЏС‰РёР№?
+	AI_Output (self, other,"DIA_BaalParvez_SleeperSaid_10_01"); //РћРЅ РїСЂРёРІРµР» РЅР°СЃ Рє СЂР°Р·РІР°Р»РёРЅР°Рј СЃС‚Р°СЂРѕРіРѕ С…СЂР°РјР° РЅР° Р±РѕР»РѕС‚Рµ. РРјРµРЅРЅРѕ С‚Р°Рј РјС‹ РїРѕСЃС‚СЂРѕРёР»Рё СЃРІРѕР№ Р»Р°РіРµСЂСЊ.
+	AI_Output (self, other,"DIA_BaalParvez_SleeperSaid_10_02"); //РћРЅ РґР°СЂРѕРІР°Р» РЅР°Рј СЃРІРѕР±РѕРґСѓ РґРµР№СЃС‚РІРёР№ - РЅРёРєС‚Рѕ РёР· РЅР°СЃ РЅРµ РіРѕСЂР±РёС‚ СЃРїРёРЅСѓ РЅР° С€Р°С…С‚Р°С….
+	AI_Output (self, other,"DIA_BaalParvez_SleeperSaid_10_03"); //РћРЅ РѕС‚РєСЂС‹Р» РЅР°Рј СЃРёР»Сѓ Р±РѕР»РѕС‚РЅРёРєР°. РњС‹ РїСЂРѕРґР°РµРј РµРіРѕ РґСЂСѓРіРёРј Р»Р°РіРµСЂСЏРј Рё РІР·Р°РјРµРЅ РїРѕР»СѓС‡Р°РµРј РІСЃРµ, С‡С‚Рѕ РЅР°Рј РЅР°РґРѕ.
+	AI_Output (self, other,"DIA_BaalParvez_SleeperSaid_10_04"); //Рђ РёР·Р±СЂР°РЅРЅС‹С… РѕРЅ РѕРґР°СЂРёР» РјР°РіРёС‡РµСЃРєРёРј РґР°СЂРѕРј. Р•РіРѕ РјР°РіРёСЏ Р±РѕР»РµРµ РјРѕРіСѓС‰РµСЃС‚РІРµРЅРЅР°СЏ Рё РґСЂРµРІРЅСЏСЏ, С‡РµРј С‚Р°, С‡С‚Рѕ РёСЃРїРѕР»СЊР·СѓРµС‚СЃСЏ РѕСЃС‚Р°Р»СЊРЅС‹РјРё.
 };
 
 // **************************************************
-//		Erzдhl mir von der MAgie des Schlдfers
+//		ErzРґhl mir von der MAgie des SchlРґfers
 // **************************************************
 
 instance  DIA_BaalParvez_PSIMagic (C_INFO)
@@ -188,7 +188,7 @@ instance  DIA_BaalParvez_PSIMagic (C_INFO)
 	condition	= DIA_BaalParvez_PSIMagic_Condition;
 	information	= DIA_BaalParvez_PSIMagic_Info;
 	permanent	= 0;
-	description = "Расскажи мне о магии Спящего.";
+	description = "Р Р°СЃСЃРєР°Р¶Рё РјРЅРµ Рѕ РјР°РіРёРё РЎРїСЏС‰РµРіРѕ.";
 };                       
 
 FUNC int  DIA_BaalParvez_PSIMagic_Condition()
@@ -201,9 +201,9 @@ FUNC int  DIA_BaalParvez_PSIMagic_Condition()
 
 FUNC VOID  DIA_BaalParvez_PSIMagic_Info()
 {
-	AI_Output (other, self,"DIA_BaalParvez_PSIMagic_15_00"); //Расскажи мне о магии Спящего.
-	AI_Output (self, other,"DIA_BaalParvez_PSIMagic_10_01"); //Этот дар позволяет человеку управлять силой своего разума.
-	AI_Output (self, other,"DIA_BaalParvez_PSIMagic_10_02"); //Только Гуру посвящены в таинство магии Спящего.
+	AI_Output (other, self,"DIA_BaalParvez_PSIMagic_15_00"); //Р Р°СЃСЃРєР°Р¶Рё РјРЅРµ Рѕ РјР°РіРёРё РЎРїСЏС‰РµРіРѕ.
+	AI_Output (self, other,"DIA_BaalParvez_PSIMagic_10_01"); //Р­С‚РѕС‚ РґР°СЂ РїРѕР·РІРѕР»СЏРµС‚ С‡РµР»РѕРІРµРєСѓ СѓРїСЂР°РІР»СЏС‚СЊ СЃРёР»РѕР№ СЃРІРѕРµРіРѕ СЂР°Р·СѓРјР°.
+	AI_Output (self, other,"DIA_BaalParvez_PSIMagic_10_02"); //РўРѕР»СЊРєРѕ Р“СѓСЂСѓ РїРѕСЃРІСЏС‰РµРЅС‹ РІ С‚Р°РёРЅСЃС‚РІРѕ РјР°РіРёРё РЎРїСЏС‰РµРіРѕ.
 };
 
 // **************************************************
@@ -219,7 +219,7 @@ instance  DIA_BaalParvez_GotoPSI (C_INFO)
 	condition	= DIA_BaalParvez_GotoPSI_Condition;
 	information	= DIA_BaalParvez_GotoPSI_Info;
 	permanent	= 1;
-	description = "Проводи меня в свой лагерь. Я хочу посмотреть на него!";
+	description = "РџСЂРѕРІРѕРґРё РјРµРЅСЏ РІ СЃРІРѕР№ Р»Р°РіРµСЂСЊ. РЇ С…РѕС‡Сѓ РїРѕСЃРјРѕС‚СЂРµС‚СЊ РЅР° РЅРµРіРѕ!";
 };                       
 
 FUNC int  DIA_BaalParvez_GotoPSI_Condition()
@@ -235,7 +235,7 @@ FUNC int  DIA_BaalParvez_GotoPSI_Condition()
 
 FUNC VOID  DIA_BaalParvez_GotoPSI_Info()
 {
-	AI_Output (other, self,"DIA_BaalParvez_GotoPSI_15_00"); //Проводи меня в свой лагерь. Я хочу посмотреть на него!
+	AI_Output (other, self,"DIA_BaalParvez_GotoPSI_15_00"); //РџСЂРѕРІРѕРґРё РјРµРЅСЏ РІ СЃРІРѕР№ Р»Р°РіРµСЂСЊ. РЇ С…РѕС‡Сѓ РїРѕСЃРјРѕС‚СЂРµС‚СЊ РЅР° РЅРµРіРѕ!
 	if (Psi_Walk == 0)
 	{
 		if (Npc_GetTrueGuild(hero) == GIL_NONE)
@@ -243,10 +243,10 @@ FUNC VOID  DIA_BaalParvez_GotoPSI_Info()
 			Log_CreateTopic		(CH1_JoinPsi,	LOG_MISSION);
 			Log_SetTopicStatus	(CH1_JoinPsi,	LOG_RUNNING);
 		};
-		B_LogEntry				(CH1_JoinPsi, "Идол Парвез, миссионер из Братства, ищет последователей веры в Спящего в Старом лагере. Он предложил проводить меня в Болотный лагерь.");
+		B_LogEntry				(CH1_JoinPsi, "РРґРѕР» РџР°СЂРІРµР·, РјРёСЃСЃРёРѕРЅРµСЂ РёР· Р‘СЂР°С‚СЃС‚РІР°, РёС‰РµС‚ РїРѕСЃР»РµРґРѕРІР°С‚РµР»РµР№ РІРµСЂС‹ РІ РЎРїСЏС‰РµРіРѕ РІ РЎС‚Р°СЂРѕРј Р»Р°РіРµСЂРµ. РћРЅ РїСЂРµРґР»РѕР¶РёР» РїСЂРѕРІРѕРґРёС‚СЊ РјРµРЅСЏ РІ Р‘РѕР»РѕС‚РЅС‹Р№ Р»Р°РіРµСЂСЊ.");
 		Psi_Walk	= 1;
 	};
-	AI_Output (self, other,"DIA_BaalParvez_GotoPSI_10_01"); //Очень хорошо! Я пойду впереди. Иди за мной!
+	AI_Output (self, other,"DIA_BaalParvez_GotoPSI_10_01"); //РћС‡РµРЅСЊ С…РѕСЂРѕС€Рѕ! РЇ РїРѕР№РґСѓ РІРїРµСЂРµРґРё. РРґРё Р·Р° РјРЅРѕР№!
 	
 	BaalParvez_GotoPSI_Day = Wld_GetDay();
 	self.aivar[AIV_PARTYMEMBER] = TRUE;
@@ -285,20 +285,20 @@ FUNC VOID  DIA_BaalParvez_AtPSI_Info()
 {
 	if (BaalParvez_GotoPSI_Day > (Wld_GetDay()-2))
 	{	
-		AI_Output (self, other,"DIA_BaalParvez_AtPSI_10_00"); //Вот, мы на месте. Дальше по дороге вниз находится лагерь Братства.
+		AI_Output (self, other,"DIA_BaalParvez_AtPSI_10_00"); //Р’РѕС‚, РјС‹ РЅР° РјРµСЃС‚Рµ. Р”Р°Р»СЊС€Рµ РїРѕ РґРѕСЂРѕРіРµ РІРЅРёР· РЅР°С…РѕРґРёС‚СЃСЏ Р»Р°РіРµСЂСЊ Р‘СЂР°С‚СЃС‚РІР°.
 	}
 	else
 	{
-		AI_Output (self, other,"DIA_BaalParvez_AtPSI_LATE_10_00"); //Видишь внизу? Это наш лагерь.
+		AI_Output (self, other,"DIA_BaalParvez_AtPSI_LATE_10_00"); //Р’РёРґРёС€СЊ РІРЅРёР·Сѓ? Р­С‚Рѕ РЅР°С€ Р»Р°РіРµСЂСЊ.
 	};
-	AI_Output 	(self, other,"DIA_BaalParvez_AtPSI_10_01"); //Заходи и поговори с моими братьями. Уверен, что, придя сюда, ты не потратил время зря.
-	AI_Output 	(self, other,"DIA_BaalParvez_AtPSI_10_02"); //Спроси Кор Галома. Он занимается учениками и их наставниками.
-	AI_Output 	(self, other,"DIA_BaalParvez_AtPSI_10_03"); //А я возвращаюсь в лагерь. Там еще многим нужно помочь найти путь истины.
-	AI_Output 	(other, self,"DIA_BaalParvez_AtPSI_15_04"); //Удачи!
+	AI_Output 	(self, other,"DIA_BaalParvez_AtPSI_10_01"); //Р—Р°С…РѕРґРё Рё РїРѕРіРѕРІРѕСЂРё СЃ РјРѕРёРјРё Р±СЂР°С‚СЊСЏРјРё. РЈРІРµСЂРµРЅ, С‡С‚Рѕ, РїСЂРёРґСЏ СЃСЋРґР°, С‚С‹ РЅРµ РїРѕС‚СЂР°С‚РёР» РІСЂРµРјСЏ Р·СЂСЏ.
+	AI_Output 	(self, other,"DIA_BaalParvez_AtPSI_10_02"); //РЎРїСЂРѕСЃРё РљРѕСЂ Р“Р°Р»РѕРјР°. РћРЅ Р·Р°РЅРёРјР°РµС‚СЃСЏ СѓС‡РµРЅРёРєР°РјРё Рё РёС… РЅР°СЃС‚Р°РІРЅРёРєР°РјРё.
+	AI_Output 	(self, other,"DIA_BaalParvez_AtPSI_10_03"); //Рђ СЏ РІРѕР·РІСЂР°С‰Р°СЋСЃСЊ РІ Р»Р°РіРµСЂСЊ. РўР°Рј РµС‰Рµ РјРЅРѕРіРёРј РЅСѓР¶РЅРѕ РїРѕРјРѕС‡СЊ РЅР°Р№С‚Рё РїСѓС‚СЊ РёСЃС‚РёРЅС‹.
+	AI_Output 	(other, self,"DIA_BaalParvez_AtPSI_15_04"); //РЈРґР°С‡Рё!
 
 	self.aivar[AIV_PARTYMEMBER] = FALSE;
 
-	B_LogEntry	(CH1_JoinPsi, "Передо мной Болотный лагерь. Мой проводник посоветовал мне поговорить с Гуру Кор Галомом. Он наблюдает за послушниками и наставниками.");
+	B_LogEntry	(CH1_JoinPsi, "РџРµСЂРµРґРѕ РјРЅРѕР№ Р‘РѕР»РѕС‚РЅС‹Р№ Р»Р°РіРµСЂСЊ. РњРѕР№ РїСЂРѕРІРѕРґРЅРёРє РїРѕСЃРѕРІРµС‚РѕРІР°Р» РјРЅРµ РїРѕРіРѕРІРѕСЂРёС‚СЊ СЃ Р“СѓСЂСѓ РљРѕСЂ Р“Р°Р»РѕРјРѕРј. РћРЅ РЅР°Р±Р»СЋРґР°РµС‚ Р·Р° РїРѕСЃР»СѓС€РЅРёРєР°РјРё Рё РЅР°СЃС‚Р°РІРЅРёРєР°РјРё.");
 	B_GiveXP	(XP_ArrivedAtPsiCamp);
 
 	var C_NPC Kalom; Kalom = Hlp_GetNpc(Gur_1201_CorKalom);

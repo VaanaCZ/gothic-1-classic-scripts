@@ -2,7 +2,7 @@ instance KDW_600_Saturas (Npc_Default)
 {
 	//-------- primary data --------
 	
-	name 		=	"Сатурас";
+	name 		=	"РЎР°С‚СѓСЂР°СЃ";
 	npctype		=	NPCTYPE_FRIEND;
 	guild 		=	GIL_KDW;      
 	level 		=	29;

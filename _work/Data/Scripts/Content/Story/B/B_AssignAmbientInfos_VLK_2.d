@@ -14,7 +14,7 @@ INSTANCE Info_Vlk_2_EXIT(C_INFO)
 	condition	= Info_Vlk_2_EXIT_Condition;
 	information	= Info_Vlk_2_EXIT_Info;
 	permanent	= 1;
-	description = "ЗАКОНЧИТЬ РАЗГОВОР";
+	description = "Р—РђРљРћРќР§РРўР¬ Р РђР—Р“РћР’РћР ";
 };                       
 
 FUNC INT Info_Vlk_2_EXIT_Condition()
@@ -37,7 +37,7 @@ INSTANCE Info_Vlk_2_EinerVonEuchWerden (C_INFO) // E1
 	condition	= Info_Vlk_2_EinerVonEuchWerden_Condition;
 	information	= Info_Vlk_2_EinerVonEuchWerden_Info;
 	permanent	= 1;
-	description = "Я хочу стать одним из вас.";
+	description = "РЇ С…РѕС‡Сѓ СЃС‚Р°С‚СЊ РѕРґРЅРёРј РёР· РІР°СЃ.";
 };                       
 
 FUNC INT Info_Vlk_2_EinerVonEuchWerden_Condition()
@@ -50,8 +50,8 @@ FUNC INT Info_Vlk_2_EinerVonEuchWerden_Condition()
 
 FUNC VOID Info_Vlk_2_EinerVonEuchWerden_Info()
 {
-	AI_Output(other,self,"Info_Vlk_2_EinerVonEuchWerden_15_00"); //Я хочу стать одним из вас.
-	AI_Output(self,other,"Info_Vlk_2_EinerVonEuchWerden_02_01"); //Не понимаю, зачем тебе добровольно соваться в шахту. Таким как ты дорога одна - в замок.
+	AI_Output(other,self,"Info_Vlk_2_EinerVonEuchWerden_15_00"); //РЇ С…РѕС‡Сѓ СЃС‚Р°С‚СЊ РѕРґРЅРёРј РёР· РІР°СЃ.
+	AI_Output(self,other,"Info_Vlk_2_EinerVonEuchWerden_02_01"); //РќРµ РїРѕРЅРёРјР°СЋ, Р·Р°С‡РµРј С‚РµР±Рµ РґРѕР±СЂРѕРІРѕР»СЊРЅРѕ СЃРѕРІР°С‚СЊСЃСЏ РІ С€Р°С…С‚Сѓ. РўР°РєРёРј РєР°Рє С‚С‹ РґРѕСЂРѕРіР° РѕРґРЅР° - РІ Р·Р°РјРѕРє.
 };
 
 // *************************************************************************
@@ -64,7 +64,7 @@ INSTANCE Info_Vlk_2_WichtigePersonen(C_INFO)
 	condition	= Info_Vlk_2_WichtigePersonen_Condition;
 	information	= Info_Vlk_2_WichtigePersonen_Info;
 	permanent	= 1;
-	description = "Кто здесь всем управляет?";
+	description = "РљС‚Рѕ Р·РґРµСЃСЊ РІСЃРµРј СѓРїСЂР°РІР»СЏРµС‚?";
 };                       
 
 FUNC INT Info_Vlk_2_WichtigePersonen_Condition()
@@ -74,9 +74,9 @@ FUNC INT Info_Vlk_2_WichtigePersonen_Condition()
 
 FUNC VOID Info_Vlk_2_WichtigePersonen_Info()
 {
-	AI_Output(other,self,"Info_Vlk_2_WichtigePersonen_15_00"); //Кто здесь всем управляет?
-	AI_Output(self,other,"Info_Vlk_2_WichtigePersonen_02_01"); //Здесь, во Внешнем Кольце, деньги за защиту собирают Флетчер, Бладвин и Шакал. У каждого из них есть свой район.
-	AI_Output(self,other,"Info_Vlk_2_WichtigePersonen_02_02"); //Если поладишь с ними, считай, все в порядке.
+	AI_Output(other,self,"Info_Vlk_2_WichtigePersonen_15_00"); //РљС‚Рѕ Р·РґРµСЃСЊ РІСЃРµРј СѓРїСЂР°РІР»СЏРµС‚?
+	AI_Output(self,other,"Info_Vlk_2_WichtigePersonen_02_01"); //Р—РґРµСЃСЊ, РІРѕ Р’РЅРµС€РЅРµРј РљРѕР»СЊС†Рµ, РґРµРЅСЊРіРё Р·Р° Р·Р°С‰РёС‚Сѓ СЃРѕР±РёСЂР°СЋС‚ Р¤Р»РµС‚С‡РµСЂ, Р‘Р»Р°РґРІРёРЅ Рё РЁР°РєР°Р». РЈ РєР°Р¶РґРѕРіРѕ РёР· РЅРёС… РµСЃС‚СЊ СЃРІРѕР№ СЂР°Р№РѕРЅ.
+	AI_Output(self,other,"Info_Vlk_2_WichtigePersonen_02_02"); //Р•СЃР»Рё РїРѕР»Р°РґРёС€СЊ СЃ РЅРёРјРё, СЃС‡РёС‚Р°Р№, РІСЃРµ РІ РїРѕСЂСЏРґРєРµ.
 };
 
 // *************************************************************************
@@ -89,7 +89,7 @@ INSTANCE Info_Vlk_2_DasLager(C_INFO)
 	condition	= Info_Vlk_2_DasLager_Condition;
 	information	= Info_Vlk_2_DasLager_Info;
 	permanent	= 1;
-	description = "Расскажи мне что-нибудь еще о лагере.";
+	description = "Р Р°СЃСЃРєР°Р¶Рё РјРЅРµ С‡С‚Рѕ-РЅРёР±СѓРґСЊ РµС‰Рµ Рѕ Р»Р°РіРµСЂРµ.";
 };                       
 
 FUNC INT Info_Vlk_2_DasLager_Condition()
@@ -99,8 +99,8 @@ FUNC INT Info_Vlk_2_DasLager_Condition()
 
 FUNC VOID Info_Vlk_2_DasLager_Info()
 {
-	AI_Output(other,self,"Info_Vlk_2_DasLager_15_00"); //Расскажи мне что-нибудь еще о лагере.
-	AI_Output(self,other,"Info_Vlk_2_DasLager_02_01"); //Тебе нужно поговорить с Призраками. Они знают обо всем, что тебе нужно. Но будь осторожен - большинству из них нельзя доверять.
+	AI_Output(other,self,"Info_Vlk_2_DasLager_15_00"); //Р Р°СЃСЃРєР°Р¶Рё РјРЅРµ С‡С‚Рѕ-РЅРёР±СѓРґСЊ РµС‰Рµ Рѕ Р»Р°РіРµСЂРµ.
+	AI_Output(self,other,"Info_Vlk_2_DasLager_02_01"); //РўРµР±Рµ РЅСѓР¶РЅРѕ РїРѕРіРѕРІРѕСЂРёС‚СЊ СЃ РџСЂРёР·СЂР°РєР°РјРё. РћРЅРё Р·РЅР°СЋС‚ РѕР±Рѕ РІСЃРµРј, С‡С‚Рѕ С‚РµР±Рµ РЅСѓР¶РЅРѕ. РќРѕ Р±СѓРґСЊ РѕСЃС‚РѕСЂРѕР¶РµРЅ - Р±РѕР»СЊС€РёРЅСЃС‚РІСѓ РёР· РЅРёС… РЅРµР»СЊР·СЏ РґРѕРІРµСЂСЏС‚СЊ.
 };
 
 // *************************************************************************
@@ -113,7 +113,7 @@ INSTANCE Info_Vlk_2_DieLage(C_INFO) // E1
 	condition	= Info_Vlk_2_DieLage_Condition;
 	information	= Info_Vlk_2_DieLage_Info;
 	permanent	= 1;
-	description = "Как здесь живется?";
+	description = "РљР°Рє Р·РґРµСЃСЊ Р¶РёРІРµС‚СЃСЏ?";
 };                       
 
 FUNC INT Info_Vlk_2_DieLage_Condition()
@@ -125,11 +125,11 @@ FUNC INT Info_Vlk_2_DieLage_Condition()
 };
 FUNC VOID Info_Vlk_2_DieLage_Info()
 {
-	AI_Output(other,self,"Info_Vlk_2_DieLage_15_00"); //Как здесь живется?
-	AI_Output(self,other,"Info_Vlk_2_DieLage_02_01"); //Если тебя прислали Бароны, скажи им, что я не хочу неприятностей. Я ни с кем не говорю об этом.
-	AI_Output(self,other,"Info_Vlk_2_DieLage_02_02"); //Я доволен тем, что они дают нам.
-	AI_Output(other,self,"Info_Vlk_2_DieLage_15_03"); //Никто меня не посылал. Я совсем недавно пришел сюда.
-	AI_Output(self,other,"Info_Vlk_2_DieLage_02_04"); //Новенький, а? Новички всегда быстро попадают в неприятности. А мне не нужны проблемы, понял?
+	AI_Output(other,self,"Info_Vlk_2_DieLage_15_00"); //РљР°Рє Р·РґРµСЃСЊ Р¶РёРІРµС‚СЃСЏ?
+	AI_Output(self,other,"Info_Vlk_2_DieLage_02_01"); //Р•СЃР»Рё С‚РµР±СЏ РїСЂРёСЃР»Р°Р»Рё Р‘Р°СЂРѕРЅС‹, СЃРєР°Р¶Рё РёРј, С‡С‚Рѕ СЏ РЅРµ С…РѕС‡Сѓ РЅРµРїСЂРёСЏС‚РЅРѕСЃС‚РµР№. РЇ РЅРё СЃ РєРµРј РЅРµ РіРѕРІРѕСЂСЋ РѕР± СЌС‚РѕРј.
+	AI_Output(self,other,"Info_Vlk_2_DieLage_02_02"); //РЇ РґРѕРІРѕР»РµРЅ С‚РµРј, С‡С‚Рѕ РѕРЅРё РґР°СЋС‚ РЅР°Рј.
+	AI_Output(other,self,"Info_Vlk_2_DieLage_15_03"); //РќРёРєС‚Рѕ РјРµРЅСЏ РЅРµ РїРѕСЃС‹Р»Р°Р». РЇ СЃРѕРІСЃРµРј РЅРµРґР°РІРЅРѕ РїСЂРёС€РµР» СЃСЋРґР°.
+	AI_Output(self,other,"Info_Vlk_2_DieLage_02_04"); //РќРѕРІРµРЅСЊРєРёР№, Р°? РќРѕРІРёС‡РєРё РІСЃРµРіРґР° Р±С‹СЃС‚СЂРѕ РїРѕРїР°РґР°СЋС‚ РІ РЅРµРїСЂРёСЏС‚РЅРѕСЃС‚Рё. Рђ РјРЅРµ РЅРµ РЅСѓР¶РЅС‹ РїСЂРѕР±Р»РµРјС‹, РїРѕРЅСЏР»?
 };	
 	
 // *************************************************************************

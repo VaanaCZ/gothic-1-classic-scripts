@@ -14,7 +14,7 @@ INSTANCE Info_Mine_Vlk_2_EXIT(C_INFO)
 	condition	= Info_Mine_Vlk_2_EXIT_Condition;
 	information	= Info_Mine_Vlk_2_EXIT_Info;
 	permanent	= 1;
-	description = "ЗАКОНЧИТЬ РАЗГОВОР";
+	description = "Р—РђРљРћРќР§РРўР¬ Р РђР—Р“РћР’РћР ";
 };                       
 
 FUNC INT Info_Mine_Vlk_2_EXIT_Condition()
@@ -37,7 +37,7 @@ INSTANCE Info_Mine_Vlk_2_Mine (C_INFO) // E1
 	condition	= Info_Mine_Vlk_2_Mine_Condition;
 	information	= Info_Mine_Vlk_2_Mine_Info;
 	permanent	= 1;
-	description = "Расскажи мне о шахте.";
+	description = "Р Р°СЃСЃРєР°Р¶Рё РјРЅРµ Рѕ С€Р°С…С‚Рµ.";
 };                       
 
 FUNC INT Info_Mine_Vlk_2_Mine_Condition()
@@ -50,9 +50,9 @@ FUNC INT Info_Mine_Vlk_2_Mine_Condition()
 
 FUNC VOID Info_Mine_Vlk_2_Mine_Info()
 {
-	AI_Output(other,self,"Info_Mine_Vlk_2_Mine_15_00"); //Расскажи мне о шахте.
-	AI_Output(self,other,"Info_Mine_Vlk_2_Mine_01_01"); //Там полно пещер, где еще осталась руда. Но из-за ползунов добычу пришлось прекратить.
-	AI_Output(self,other,"Info_Mine_Vlk_2_Mine_01_02"); //Слишком много атак, слишком большие потери.
+	AI_Output(other,self,"Info_Mine_Vlk_2_Mine_15_00"); //Р Р°СЃСЃРєР°Р¶Рё РјРЅРµ Рѕ С€Р°С…С‚Рµ.
+	AI_Output(self,other,"Info_Mine_Vlk_2_Mine_01_01"); //РўР°Рј РїРѕР»РЅРѕ РїРµС‰РµСЂ, РіРґРµ РµС‰Рµ РѕСЃС‚Р°Р»Р°СЃСЊ СЂСѓРґР°. РќРѕ РёР·-Р·Р° РїРѕР»Р·СѓРЅРѕРІ РґРѕР±С‹С‡Сѓ РїСЂРёС€Р»РѕСЃСЊ РїСЂРµРєСЂР°С‚РёС‚СЊ.
+	AI_Output(self,other,"Info_Mine_Vlk_2_Mine_01_02"); //РЎР»РёС€РєРѕРј РјРЅРѕРіРѕ Р°С‚Р°Рє, СЃР»РёС€РєРѕРј Р±РѕР»СЊС€РёРµ РїРѕС‚РµСЂРё.
 };
 
 // *************************************************************************
@@ -65,7 +65,7 @@ INSTANCE Info_Mine_Vlk_2_WichtigePersonen(C_INFO)
 	condition	= Info_Mine_Vlk_2_WichtigePersonen_Condition;
 	information	= Info_Mine_Vlk_2_WichtigePersonen_Info;
 	permanent	= 1;
-	description = "Кто еще может рассказать об этом месте?";
+	description = "РљС‚Рѕ РµС‰Рµ РјРѕР¶РµС‚ СЂР°СЃСЃРєР°Р·Р°С‚СЊ РѕР± СЌС‚РѕРј РјРµСЃС‚Рµ?";
 };                       
 
 FUNC INT Info_Mine_Vlk_2_WichtigePersonen_Condition()
@@ -78,8 +78,8 @@ FUNC INT Info_Mine_Vlk_2_WichtigePersonen_Condition()
 
 FUNC VOID Info_Mine_Vlk_2_WichtigePersonen_Info()
 {
-	AI_Output(other,self,"Info_Mine_Vlk_2_WichtigePersonen_15_00"); //Кто еще может рассказать об этом месте?
-	AI_Output(self,other,"Info_Mine_Vlk_2_WichtigePersonen_01_01"); //Вайпер плавильщик. Он знаток своего дела, не страшится жара, да и сам словно из стали. Изо дня в день он плавит руду.
+	AI_Output(other,self,"Info_Mine_Vlk_2_WichtigePersonen_15_00"); //РљС‚Рѕ РµС‰Рµ РјРѕР¶РµС‚ СЂР°СЃСЃРєР°Р·Р°С‚СЊ РѕР± СЌС‚РѕРј РјРµСЃС‚Рµ?
+	AI_Output(self,other,"Info_Mine_Vlk_2_WichtigePersonen_01_01"); //Р’Р°Р№РїРµСЂ РїР»Р°РІРёР»СЊС‰РёРє. РћРЅ Р·РЅР°С‚РѕРє СЃРІРѕРµРіРѕ РґРµР»Р°, РЅРµ СЃС‚СЂР°С€РёС‚СЃСЏ Р¶Р°СЂР°, РґР° Рё СЃР°Рј СЃР»РѕРІРЅРѕ РёР· СЃС‚Р°Р»Рё. РР·Рѕ РґРЅСЏ РІ РґРµРЅСЊ РѕРЅ РїР»Р°РІРёС‚ СЂСѓРґСѓ.
 };
 
 // *************************************************************************
@@ -92,7 +92,7 @@ INSTANCE Info_Mine_Vlk_2_Minecrawler(C_INFO)
 	condition	= Info_Mine_Vlk_2_Minecrawler_Condition;
 	information	= Info_Mine_Vlk_2_Minecrawler_Info;
 	permanent	= 1;
-	description = "Что ты знаешь о ползунах?";
+	description = "Р§С‚Рѕ С‚С‹ Р·РЅР°РµС€СЊ Рѕ РїРѕР»Р·СѓРЅР°С…?";
 };                       
 
 FUNC INT Info_Mine_Vlk_2_Minecrawler_Condition()
@@ -105,9 +105,9 @@ FUNC INT Info_Mine_Vlk_2_Minecrawler_Condition()
 
 FUNC VOID Info_Mine_Vlk_2_Minecrawler_Info()
 {
-	AI_Output(other,self,"Info_Mine_Vlk_2_Minecrawler_15_00"); //Что ты знаешь о ползунах?
-	AI_Output(self,other,"Info_Mine_Vlk_2_Minecrawler_01_01"); //Мы прекратили добычу руды, большой забой внизу закрыт. Там тьма этих тварей.
-	AI_Output(self,other,"Info_Mine_Vlk_2_Minecrawler_01_02"); //Ползуны там повсюду. Ты их слышишь? Я точно слышу.
+	AI_Output(other,self,"Info_Mine_Vlk_2_Minecrawler_15_00"); //Р§С‚Рѕ С‚С‹ Р·РЅР°РµС€СЊ Рѕ РїРѕР»Р·СѓРЅР°С…?
+	AI_Output(self,other,"Info_Mine_Vlk_2_Minecrawler_01_01"); //РњС‹ РїСЂРµРєСЂР°С‚РёР»Рё РґРѕР±С‹С‡Сѓ СЂСѓРґС‹, Р±РѕР»СЊС€РѕР№ Р·Р°Р±РѕР№ РІРЅРёР·Сѓ Р·Р°РєСЂС‹С‚. РўР°Рј С‚СЊРјР° СЌС‚РёС… С‚РІР°СЂРµР№.
+	AI_Output(self,other,"Info_Mine_Vlk_2_Minecrawler_01_02"); //РџРѕР»Р·СѓРЅС‹ С‚Р°Рј РїРѕРІСЃСЋРґСѓ. РўС‹ РёС… СЃР»С‹С€РёС€СЊ? РЇ С‚РѕС‡РЅРѕ СЃР»С‹С€Сѓ.
 };
 
 // *************************************************************************
@@ -120,7 +120,7 @@ INSTANCE Info_Mine_Vlk_2_DieLage(C_INFO) // E1
 	condition	= Info_Mine_Vlk_2_DieLage_Condition;
 	information	= Info_Mine_Vlk_2_DieLage_Info;
 	permanent	= 1;
-	description = "Как у тебя дела?";
+	description = "РљР°Рє Сѓ С‚РµР±СЏ РґРµР»Р°?";
 };                       
 
 FUNC INT Info_Mine_Vlk_2_DieLage_Condition()
@@ -133,8 +133,8 @@ FUNC INT Info_Mine_Vlk_2_DieLage_Condition()
 
 FUNC VOID Info_Mine_Vlk_2_DieLage_Info()
 {
-	AI_Output(other,self,"Info_Mine_Vlk_2_DieLage_15_00"); //Как у тебя дела?
-	AI_Output(self,other,"Info_Mine_Vlk_2_DieLage_01_01"); //Я должен работать. Если стражники увидят, что я бездельничаю, мне уменьшат паек.
+	AI_Output(other,self,"Info_Mine_Vlk_2_DieLage_15_00"); //РљР°Рє Сѓ С‚РµР±СЏ РґРµР»Р°?
+	AI_Output(self,other,"Info_Mine_Vlk_2_DieLage_01_01"); //РЇ РґРѕР»Р¶РµРЅ СЂР°Р±РѕС‚Р°С‚СЊ. Р•СЃР»Рё СЃС‚СЂР°Р¶РЅРёРєРё СѓРІРёРґСЏС‚, С‡С‚Рѕ СЏ Р±РµР·РґРµР»СЊРЅРёС‡Р°СЋ, РјРЅРµ СѓРјРµРЅСЊС€Р°С‚ РїР°РµРє.
 };
 	
 // *************************************************************************

@@ -1,5 +1,5 @@
 func void B_MoveMob ()
-// 5.5.00 Hier muß noch die Abfrage auf Türen rein, wenn sie fertig ist
+// 5.5.00 Hier muÐ¯ noch die Abfrage auf TÑŒren rein, wenn sie fertig ist
 {
 	PrintDebugNpc			(PD_ZS_FRAME, "B_MoveMob");
 
@@ -11,21 +11,21 @@ func void B_MoveMob ()
 
 
 
-	//-------- blockierendes MOB eine Türe --------
+	//-------- blockierendes MOB eine TÑŒre --------
 	if (Hlp_StrCmp			(door,	"DOOR"))
 	{
 		PrintDebugNpc		(PD_ZS_CHECK, "...mob is a door!");
 
-		if (self.aivar[AIV_MOVINGMOB] == 0)							// versucht der NSC bereits die Tür zu öffnen?
+		if (self.aivar[AIV_MOVINGMOB] == 0)							// versucht der NSC bereits die TÑŒr zu Ñ†ffnen?
 		{
-			PrintDebugNpc	(PD_ZS_CHECK, "...Türe wurde noch NICHT versucht zu öffnen!");
+			PrintDebugNpc	(PD_ZS_CHECK, "...TÑŒre wurde noch NICHT versucht zu Ñ†ffnen!");
 			self.aivar[AIV_MOVINGMOB] = 1;
 			Npc_ClearAIQueue(self);									// bleib stehen
-			AI_UseMob		(self,	door, 1);						// falls sie geschlossen ist -> öffnen		
+			AI_UseMob		(self,	door, 1);						// falls sie geschlossen ist -> Ñ†ffnen		
 		}
 		else
 		{
-			PrintDebugNpc	(PD_ZS_CHECK, "...Türe wird schon versucht zu öffnen -> geht wohl nicht!");
+			PrintDebugNpc	(PD_ZS_CHECK, "...TÑŒre wird schon versucht zu Ñ†ffnen -> geht wohl nicht!");
 			Npc_PercDisable	(self,	PERC_MOVEMOB);
 			self.aivar[AIV_MOVINGMOB] = 0;
 			AI_StartState	(self,	ZS_WaitForPassage ,0, "");

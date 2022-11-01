@@ -37,7 +37,7 @@ instance  DIA_Torrez_Hello (C_INFO)
 	condition	=  DIA_Torrez_Hello_Condition;
 	information	=  DIA_Torrez_Hello_Info;
 	permanent	=  0;
-	description =  "Я ищу Верховного Мага Круга Огня.";
+	description =  "РЇ РёС‰Сѓ Р’РµСЂС…РѕРІРЅРѕРіРѕ РњР°РіР° РљСЂСѓРіР° РћРіРЅСЏ.";
 };                       
 
 FUNC int  DIA_Torrez_Hello_Condition()
@@ -47,14 +47,14 @@ FUNC int  DIA_Torrez_Hello_Condition()
 
 FUNC VOID  DIA_Torrez_Hello_Info()
 {
-	AI_Output (other, self,"DIA_Torrez_Hello_15_00"); //Я ищу Верховного Мага Круга Огня.
-	AI_Output (self, other,"DIA_Torrez_Hello_04_01"); //Поговори об этом с Мильтеном! И не мешай мне!
+	AI_Output (other, self,"DIA_Torrez_Hello_15_00"); //РЇ РёС‰Сѓ Р’РµСЂС…РѕРІРЅРѕРіРѕ РњР°РіР° РљСЂСѓРіР° РћРіРЅСЏ.
+	AI_Output (self, other,"DIA_Torrez_Hello_04_01"); //РџРѕРіРѕРІРѕСЂРё РѕР± СЌС‚РѕРј СЃ РњРёР»СЊС‚РµРЅРѕРј! Р РЅРµ РјРµС€Р°Р№ РјРЅРµ!
 	
 	AI_StopProcessInfos	( self );
 };
 
 //***********************************************
-//					Belohnung WДHLEN	
+//					Belohnung WР”HLEN	
 //***********************************************
 
 instance  DIA_Torrez_Belohnung (C_INFO)
@@ -64,7 +64,7 @@ instance  DIA_Torrez_Belohnung (C_INFO)
 	condition	=  DIA_Torrez_Belohnung_Condition;
 	information	=  DIA_Torrez_Belohnung_Info;
 	permanent	=  0;
-	description =  "Меня прислал Корристо. Я передал ему письмо, и могу выбрать награду.";
+	description =  "РњРµРЅСЏ РїСЂРёСЃР»Р°Р» РљРѕСЂСЂРёСЃС‚Рѕ. РЇ РїРµСЂРµРґР°Р» РµРјСѓ РїРёСЃСЊРјРѕ, Рё РјРѕРіСѓ РІС‹Р±СЂР°С‚СЊ РЅР°РіСЂР°РґСѓ.";
 };                       
 
 FUNC int  DIA_Torrez_Belohnung_Condition()
@@ -77,20 +77,20 @@ FUNC int  DIA_Torrez_Belohnung_Condition()
 
 FUNC VOID  DIA_Torrez_Belohnung_Info()
 {
-	AI_Output (other, self,"DIA_Torrez_Belohnung_15_00"); //Меня прислал Корристо. Я передал ему письмо и теперь могу выбрать себе награду.
-	AI_Output (self, other,"DIA_Torrez_Belohnung_04_01"); //Ты оказал нам неоценимую услугу, и, конечно, можешь получить за нее награду. Выбирай.
+	AI_Output (other, self,"DIA_Torrez_Belohnung_15_00"); //РњРµРЅСЏ РїСЂРёСЃР»Р°Р» РљРѕСЂСЂРёСЃС‚Рѕ. РЇ РїРµСЂРµРґР°Р» РµРјСѓ РїРёСЃСЊРјРѕ Рё С‚РµРїРµСЂСЊ РјРѕРіСѓ РІС‹Р±СЂР°С‚СЊ СЃРµР±Рµ РЅР°РіСЂР°РґСѓ.
+	AI_Output (self, other,"DIA_Torrez_Belohnung_04_01"); //РўС‹ РѕРєР°Р·Р°Р» РЅР°Рј РЅРµРѕС†РµРЅРёРјСѓСЋ СѓСЃР»СѓРіСѓ, Рё, РєРѕРЅРµС‡РЅРѕ, РјРѕР¶РµС€СЊ РїРѕР»СѓС‡РёС‚СЊ Р·Р° РЅРµРµ РЅР°РіСЂР°РґСѓ. Р’С‹Р±РёСЂР°Р№.
 	
 	Info_ClearChoices	(DIA_Torrez_Belohnung);
-	Info_AddChoice		(DIA_Torrez_Belohnung,"Эссенция силы духа (Макс. маг. сила +5)" 	,DIA_Torrez_Belohnung_ManaMax);
-	Info_AddChoice		(DIA_Torrez_Belohnung,"3 свитка (Огненный шар, Молния и Превращение в падальщика)"	,DIA_Torrez_Belohnung_Scrolls);
-	Info_AddChoice		(DIA_Torrez_Belohnung,"Кольцо ловкости (+5)"	,DIA_Torrez_Belohnung_Dex);
-	Info_AddChoice		(DIA_Torrez_Belohnung,"Кольцо силы (+5)"	,DIA_Torrez_Belohnung_Str);
+	Info_AddChoice		(DIA_Torrez_Belohnung,"Р­СЃСЃРµРЅС†РёСЏ СЃРёР»С‹ РґСѓС…Р° (РњР°РєСЃ. РјР°Рі. СЃРёР»Р° +5)" 	,DIA_Torrez_Belohnung_ManaMax);
+	Info_AddChoice		(DIA_Torrez_Belohnung,"3 СЃРІРёС‚РєР° (РћРіРЅРµРЅРЅС‹Р№ С€Р°СЂ, РњРѕР»РЅРёСЏ Рё РџСЂРµРІСЂР°С‰РµРЅРёРµ РІ РїР°РґР°Р»СЊС‰РёРєР°)"	,DIA_Torrez_Belohnung_Scrolls);
+	Info_AddChoice		(DIA_Torrez_Belohnung,"РљРѕР»СЊС†Рѕ Р»РѕРІРєРѕСЃС‚Рё (+5)"	,DIA_Torrez_Belohnung_Dex);
+	Info_AddChoice		(DIA_Torrez_Belohnung,"РљРѕР»СЊС†Рѕ СЃРёР»С‹ (+5)"	,DIA_Torrez_Belohnung_Str);
 };
 
 func void DIA_Torrez_Belohnung_Str()
 {
-	AI_Output (other, self,"DIA_Torrez_Belohnung_Str_15_00"); //Я возьму Кольцо силы.
-	AI_Output (self, other,"DIA_Torrez_Belohnung_Str_04_01"); //Твой выбор не был неожиданным. Вот, возьми кольцо.
+	AI_Output (other, self,"DIA_Torrez_Belohnung_Str_15_00"); //РЇ РІРѕР·СЊРјСѓ РљРѕР»СЊС†Рѕ СЃРёР»С‹.
+	AI_Output (self, other,"DIA_Torrez_Belohnung_Str_04_01"); //РўРІРѕР№ РІС‹Р±РѕСЂ РЅРµ Р±С‹Р» РЅРµРѕР¶РёРґР°РЅРЅС‹Рј. Р’РѕС‚, РІРѕР·СЊРјРё РєРѕР»СЊС†Рѕ.
 	CreateInvItem(self, Staerkering);
 	B_GiveInvItems (self, hero, Staerkering, 1);
 	Info_ClearChoices	(DIA_Torrez_Belohnung);
@@ -98,8 +98,8 @@ func void DIA_Torrez_Belohnung_Str()
 
 func void DIA_Torrez_Belohnung_Dex()
 {
-	AI_Output (other, self,"DIA_Torrez_Belohnung_Dex_15_00"); //Я возьму Кольцо ловкости.
-	AI_Output (self, other,"DIA_Torrez_Belohnung_Dex_04_01"); //Ловкость побеждает силу. Я одобряю твой выбор.
+	AI_Output (other, self,"DIA_Torrez_Belohnung_Dex_15_00"); //РЇ РІРѕР·СЊРјСѓ РљРѕР»СЊС†Рѕ Р»РѕРІРєРѕСЃС‚Рё.
+	AI_Output (self, other,"DIA_Torrez_Belohnung_Dex_04_01"); //Р›РѕРІРєРѕСЃС‚СЊ РїРѕР±РµР¶РґР°РµС‚ СЃРёР»Сѓ. РЇ РѕРґРѕР±СЂСЏСЋ С‚РІРѕР№ РІС‹Р±РѕСЂ.
 	CreateInvItem(self, Ring_des_Geschicks);
 	B_GiveInvItems (self, hero, Ring_des_Geschicks, 1);
 	Info_ClearChoices	(DIA_Torrez_Belohnung);
@@ -107,8 +107,8 @@ func void DIA_Torrez_Belohnung_Dex()
 
 func void DIA_Torrez_Belohnung_Scrolls()
 {
-	AI_Output (other, self,"DIA_Torrez_Belohnung_Scrolls_15_00"); //Дай мне магические свитки.
-	AI_Output (self, other,"DIA_Torrez_Belohnung_Scrolls_04_01"); //Используй их с умом и помни, что ты можешь прочитать заклинание из свитка только один раз!
+	AI_Output (other, self,"DIA_Torrez_Belohnung_Scrolls_15_00"); //Р”Р°Р№ РјРЅРµ РјР°РіРёС‡РµСЃРєРёРµ СЃРІРёС‚РєРё.
+	AI_Output (self, other,"DIA_Torrez_Belohnung_Scrolls_04_01"); //РСЃРїРѕР»СЊР·СѓР№ РёС… СЃ СѓРјРѕРј Рё РїРѕРјРЅРё, С‡С‚Рѕ С‚С‹ РјРѕР¶РµС€СЊ РїСЂРѕС‡РёС‚Р°С‚СЊ Р·Р°РєР»РёРЅР°РЅРёРµ РёР· СЃРІРёС‚РєР° С‚РѕР»СЊРєРѕ РѕРґРёРЅ СЂР°Р·!
 	CreateInvItems(self, ItArScrollFireball, 3);
 	B_GiveInvItems (self, hero, ItArScrollFireball, 3);//Wegen Bildschirmausgabe, wird direkt angepasst
 	Npc_RemoveInvItems(other, ItArScrollFireball, 2);
@@ -119,8 +119,8 @@ func void DIA_Torrez_Belohnung_Scrolls()
 
 func void DIA_Torrez_Belohnung_ManaMax()
 {
-	AI_Output (other, self,"DIA_Torrez_Belohnung_ManaMax_15_00"); //Я возьму зелье!
-	AI_Output (self, other,"DIA_Torrez_Belohnung_ManaMax_04_01"); //Твой выбор говорит о твоей мудрости. Это самое ценное из того, что ты мог взять у меня. Выпей это зелье, и оно увеличит твою силу!
+	AI_Output (other, self,"DIA_Torrez_Belohnung_ManaMax_15_00"); //РЇ РІРѕР·СЊРјСѓ Р·РµР»СЊРµ!
+	AI_Output (self, other,"DIA_Torrez_Belohnung_ManaMax_04_01"); //РўРІРѕР№ РІС‹Р±РѕСЂ РіРѕРІРѕСЂРёС‚ Рѕ С‚РІРѕРµР№ РјСѓРґСЂРѕСЃС‚Рё. Р­С‚Рѕ СЃР°РјРѕРµ С†РµРЅРЅРѕРµ РёР· С‚РѕРіРѕ, С‡С‚Рѕ С‚С‹ РјРѕРі РІР·СЏС‚СЊ Сѓ РјРµРЅСЏ. Р’С‹РїРµР№ СЌС‚Рѕ Р·РµР»СЊРµ, Рё РѕРЅРѕ СѓРІРµР»РёС‡РёС‚ С‚РІРѕСЋ СЃРёР»Сѓ!
 	CreateInvItem(self, ItFo_Potion_Mana_Perma_01);
 	B_GiveInvItems (self, hero, ItFo_Potion_Mana_Perma_01, 1);
 	Info_ClearChoices	(DIA_Torrez_Belohnung);
@@ -137,7 +137,7 @@ instance  DIA_Torrez_BriefTausch (C_INFO)
 	condition	=  DIA_Torrez_BriefTausch_Condition;
 	information	=  DIA_Torrez_BriefTausch_Info;
 	permanent	=  0;
-	description =  "У меня есть для тебя письмо. Но сначала я хочу получить награду!";
+	description =  "РЈ РјРµРЅСЏ РµСЃС‚СЊ РґР»СЏ С‚РµР±СЏ РїРёСЃСЊРјРѕ. РќРѕ СЃРЅР°С‡Р°Р»Р° СЏ С…РѕС‡Сѓ РїРѕР»СѓС‡РёС‚СЊ РЅР°РіСЂР°РґСѓ!";
 };                       
 
 FUNC int  DIA_Torrez_BriefTausch_Condition()
@@ -150,16 +150,16 @@ FUNC int  DIA_Torrez_BriefTausch_Condition()
 
 FUNC VOID  DIA_Torrez_BriefTausch_Info()
 {
-	AI_Output (other, self,"DIA_Torrez_BriefTausch_15_00"); //У меня есть для тебя письмо. Но сначала я хочу получить за него награду!
-	AI_Output (self, other,"DIA_Torrez_BriefTausch_04_01"); //Почему бы тебе не поговорить с Мильтеном?
-	AI_Output (other, self,"DIA_Torrez_BriefTausch_15_02"); //Я уже поговорил с ним.
-	AI_Output (self, other,"DIA_Torrez_BriefTausch_04_03"); //Понятно. У меня есть для тебя награда. А теперь покажи мне письмо!
-	AI_Output (other, self,"DIA_Torrez_BriefTausch_15_04"); //Вот оно.
+	AI_Output (other, self,"DIA_Torrez_BriefTausch_15_00"); //РЈ РјРµРЅСЏ РµСЃС‚СЊ РґР»СЏ С‚РµР±СЏ РїРёСЃСЊРјРѕ. РќРѕ СЃРЅР°С‡Р°Р»Р° СЏ С…РѕС‡Сѓ РїРѕР»СѓС‡РёС‚СЊ Р·Р° РЅРµРіРѕ РЅР°РіСЂР°РґСѓ!
+	AI_Output (self, other,"DIA_Torrez_BriefTausch_04_01"); //РџРѕС‡РµРјСѓ Р±С‹ С‚РµР±Рµ РЅРµ РїРѕРіРѕРІРѕСЂРёС‚СЊ СЃ РњРёР»СЊС‚РµРЅРѕРј?
+	AI_Output (other, self,"DIA_Torrez_BriefTausch_15_02"); //РЇ СѓР¶Рµ РїРѕРіРѕРІРѕСЂРёР» СЃ РЅРёРј.
+	AI_Output (self, other,"DIA_Torrez_BriefTausch_04_03"); //РџРѕРЅСЏС‚РЅРѕ. РЈ РјРµРЅСЏ РµСЃС‚СЊ РґР»СЏ С‚РµР±СЏ РЅР°РіСЂР°РґР°. Рђ С‚РµРїРµСЂСЊ РїРѕРєР°Р¶Рё РјРЅРµ РїРёСЃСЊРјРѕ!
+	AI_Output (other, self,"DIA_Torrez_BriefTausch_15_04"); //Р’РѕС‚ РѕРЅРѕ.
 		
 	if (Npc_HasItems(other,ItWr_Fire_Letter_01)>=1) 
 	{
-		AI_Output (self, other,"DIA_Torrez_BriefTausch_04_05"); //Вот твоя награда - Кольцо силы. Редкий артефакт, к тому же очень полезный.
-		AI_Output (self, other,"DIA_Torrez_BriefTausch_04_06"); //А теперь иди!
+		AI_Output (self, other,"DIA_Torrez_BriefTausch_04_05"); //Р’РѕС‚ С‚РІРѕСЏ РЅР°РіСЂР°РґР° - РљРѕР»СЊС†Рѕ СЃРёР»С‹. Р РµРґРєРёР№ Р°СЂС‚РµС„Р°РєС‚, Рє С‚РѕРјСѓ Р¶Рµ РѕС‡РµРЅСЊ РїРѕР»РµР·РЅС‹Р№.
+		AI_Output (self, other,"DIA_Torrez_BriefTausch_04_06"); //Рђ С‚РµРїРµСЂСЊ РёРґРё!
 		B_GiveInvItems(other, self, ItWr_Fire_Letter_01, 1);
 		Npc_RemoveInvItems(self, ItWr_Fire_Letter_01, 1);
 		CreateInvItems(self, Staerkering, 1);
@@ -168,9 +168,9 @@ FUNC VOID  DIA_Torrez_BriefTausch_Info()
 	}
 	else if (Npc_HasItems(other,ItWr_Fire_Letter_02)>=1) 
 	{
-		AI_Output (self, other,"DIA_Torrez_BriefTausch_04_07"); //Печать сломана.
-		AI_Output (other, self,"DIA_Torrez_BriefTausch_15_08"); //Ну, это была простая случайность.
-		AI_Output (self, other,"DIA_Torrez_BriefTausch_04_09"); //Что ж, вот твоя награда - целебное зелье. Это тоже неплохо. Обычно гонец, принесший письмо без печати, не получает ничего.
+		AI_Output (self, other,"DIA_Torrez_BriefTausch_04_07"); //РџРµС‡Р°С‚СЊ СЃР»РѕРјР°РЅР°.
+		AI_Output (other, self,"DIA_Torrez_BriefTausch_15_08"); //РќСѓ, СЌС‚Рѕ Р±С‹Р»Р° РїСЂРѕСЃС‚Р°СЏ СЃР»СѓС‡Р°Р№РЅРѕСЃС‚СЊ.
+		AI_Output (self, other,"DIA_Torrez_BriefTausch_04_09"); //Р§С‚Рѕ Р¶, РІРѕС‚ С‚РІРѕСЏ РЅР°РіСЂР°РґР° - С†РµР»РµР±РЅРѕРµ Р·РµР»СЊРµ. Р­С‚Рѕ С‚РѕР¶Рµ РЅРµРїР»РѕС…Рѕ. РћР±С‹С‡РЅРѕ РіРѕРЅРµС†, РїСЂРёРЅРµСЃС€РёР№ РїРёСЃСЊРјРѕ Р±РµР· РїРµС‡Р°С‚Рё, РЅРµ РїРѕР»СѓС‡Р°РµС‚ РЅРёС‡РµРіРѕ.
 		B_GiveInvItems(other, self, ItWr_Fire_Letter_02, 1);
 		Npc_RemoveInvItems(self, ItWr_Fire_Letter_02, 1);
 		CreateInvItems(self, ItFo_Potion_Health_03, 1);
@@ -195,7 +195,7 @@ instance  DIA_Torrez_PERM (C_INFO)
 	condition	=  DIA_Torrez_PERM_Condition;
 	information	=  DIA_Torrez_PERM_Info;
 	permanent	=  1;
-	description =  "Как идет изучение магии?";
+	description =  "РљР°Рє РёРґРµС‚ РёР·СѓС‡РµРЅРёРµ РјР°РіРёРё?";
 };                       
 
 FUNC int  DIA_Torrez_PERM_Condition()
@@ -205,8 +205,8 @@ FUNC int  DIA_Torrez_PERM_Condition()
 
 FUNC VOID  DIA_Torrez_PERM_Info()
 {
-	AI_Output (other, self,"DIA_Torrez_PERM_15_00"); //Как идет изучение магии?
-	AI_Output (self, other,"DIA_Torrez_PERM_04_01"); //Тебя наши дела не касаются!
+	AI_Output (other, self,"DIA_Torrez_PERM_15_00"); //РљР°Рє РёРґРµС‚ РёР·СѓС‡РµРЅРёРµ РјР°РіРёРё?
+	AI_Output (self, other,"DIA_Torrez_PERM_04_01"); //РўРµР±СЏ РЅР°С€Рё РґРµР»Р° РЅРµ РєР°СЃР°СЋС‚СЃСЏ!
 	AI_StopProcessInfos	( self );
 };
 
@@ -226,7 +226,7 @@ FUNC VOID  DIA_Torrez_PERM_Info()
 ///////////////////////////////////////////
 
 //---------------------------------------------------------
-//					WДHREND DER AUFNAHME	
+//					WР”HREND DER AUFNAHME	
 //---------------------------------------------------------
 instance KDF_405_Torrez_BOOK (C_INFO)
 {
@@ -248,8 +248,8 @@ FUNC int  KDF_405_Torrez_BOOK_Condition()
 func void  KDF_405_Torrez_BOOK_Info()
 {
 	
-	AI_Output (self, other,"KDF_405_Torrez_BOOK_Info_04_01"); //Каждый Круг магии описан в специальной книге. Читай их и ты приобретешь знание. А в знании - сила!
-	AI_Output (self, other,"KDF_405_Torrez_BOOK_Info_04_02"); //Вот, возьми книгу Первого Круга. Она научит тебя понимать Огонь.
+	AI_Output (self, other,"KDF_405_Torrez_BOOK_Info_04_01"); //РљР°Р¶РґС‹Р№ РљСЂСѓРі РјР°РіРёРё РѕРїРёСЃР°РЅ РІ СЃРїРµС†РёР°Р»СЊРЅРѕР№ РєРЅРёРіРµ. Р§РёС‚Р°Р№ РёС… Рё С‚С‹ РїСЂРёРѕР±СЂРµС‚РµС€СЊ Р·РЅР°РЅРёРµ. Рђ РІ Р·РЅР°РЅРёРё - СЃРёР»Р°!
+	AI_Output (self, other,"KDF_405_Torrez_BOOK_Info_04_02"); //Р’РѕС‚, РІРѕР·СЊРјРё РєРЅРёРіСѓ РџРµСЂРІРѕРіРѕ РљСЂСѓРіР°. РћРЅР° РЅР°СѓС‡РёС‚ С‚РµР±СЏ РїРѕРЅРёРјР°С‚СЊ РћРіРѕРЅСЊ.
 	CreateInvItem (self,ItWr_Book_Circle_01);
 	B_GiveInvItems(self,hero,ItWr_Book_Circle_01, 1);
 	AI_StopProcessInfos	( self );
@@ -264,7 +264,7 @@ instance  KDF_405_Torrez_SELLBOOKS (C_INFO)
 	information		= KDF_405_Torrez_SELLBOOKS_Info;
 	important		= 0;
 	permanent		= 1;
-	description		= "Я хочу приобрести магические свитки."; 
+	description		= "РЇ С…РѕС‡Сѓ РїСЂРёРѕР±СЂРµСЃС‚Рё РјР°РіРёС‡РµСЃРєРёРµ СЃРІРёС‚РєРё."; 
 	trade 			= 1;
 };
 
@@ -278,10 +278,10 @@ FUNC int  KDF_405_Torrez_SELLBOOKS_Condition()
 	};
 FUNC void  KDF_405_Torrez_SELLBOOKS_Info()
 {
-	AI_Output (other, self,"KDF_405_Torrez_SELLBOOKS_Info_15_01"); //Я хочу приобрести магические свитки.
+	AI_Output (other, self,"KDF_405_Torrez_SELLBOOKS_Info_15_01"); //РЇ С…РѕС‡Сѓ РїСЂРёРѕР±СЂРµСЃС‚Рё РјР°РіРёС‡РµСЃРєРёРµ СЃРІРёС‚РєРё.
 };  
 /*------------------------------------------------------------------------
-						BEGRЬSSUNG						
+						BEGRР¬SSUNG						
 ------------------------------------------------------------------------*/
 
 instance  KDF_405_Torrez_GREET (C_INFO)
@@ -291,7 +291,7 @@ instance  KDF_405_Torrez_GREET (C_INFO)
 	information		= KDF_405_Torrez_GREET_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Приветствую тебя, маг!"; 
+	description		= "РџСЂРёРІРµС‚СЃС‚РІСѓСЋ С‚РµР±СЏ, РјР°Рі!"; 
 };
 
 FUNC int  KDF_405_Torrez_GREET_Condition()
@@ -302,14 +302,14 @@ FUNC int  KDF_405_Torrez_GREET_Condition()
 
 FUNC void  KDF_405_Torrez_GREET_Info()
 {
-	AI_Output (other, self,"KDF_405_Torrez_GREET_Info_15_01"); //Приветствую тебя, маг!
-	AI_Output (self, other,"KDF_405_Torrez_GREET_Info_04_02"); //Да пребудет с тобой Иннос! Я делюсь своими знаниями мира магии и могу учить магов увеличивать их магическую силу!
+	AI_Output (other, self,"KDF_405_Torrez_GREET_Info_15_01"); //РџСЂРёРІРµС‚СЃС‚РІСѓСЋ С‚РµР±СЏ, РјР°Рі!
+	AI_Output (self, other,"KDF_405_Torrez_GREET_Info_04_02"); //Р”Р° РїСЂРµР±СѓРґРµС‚ СЃ С‚РѕР±РѕР№ РРЅРЅРѕСЃ! РЇ РґРµР»СЋСЃСЊ СЃРІРѕРёРјРё Р·РЅР°РЅРёСЏРјРё РјРёСЂР° РјР°РіРёРё Рё РјРѕРіСѓ СѓС‡РёС‚СЊ РјР°РіРѕРІ СѓРІРµР»РёС‡РёРІР°С‚СЊ РёС… РјР°РіРёС‡РµСЃРєСѓСЋ СЃРёР»Сѓ!
 	
 	Log_CreateTopic (GE_TraderOC,LOG_NOTE);
-	B_LogEntry		(GE_TraderOC,"Торрез продает магические свитки и руны. Он находится во дворе замка.");
+	B_LogEntry		(GE_TraderOC,"РўРѕСЂСЂРµР· РїСЂРѕРґР°РµС‚ РјР°РіРёС‡РµСЃРєРёРµ СЃРІРёС‚РєРё Рё СЂСѓРЅС‹. РћРЅ РЅР°С…РѕРґРёС‚СЃСЏ РІРѕ РґРІРѕСЂРµ Р·Р°РјРєР°.");
 
 	Log_CreateTopic (GE_TeacherOC,LOG_NOTE);
-	B_LogEntry		(GE_TeacherOC,"Торрез может помочь мне увеличить мою магическую силу. Он все время проводит во дворе замка.");
+	B_LogEntry		(GE_TeacherOC,"РўРѕСЂСЂРµР· РјРѕР¶РµС‚ РїРѕРјРѕС‡СЊ РјРЅРµ СѓРІРµР»РёС‡РёС‚СЊ РјРѕСЋ РјР°РіРёС‡РµСЃРєСѓСЋ СЃРёР»Сѓ. РћРЅ РІСЃРµ РІСЂРµРјСЏ РїСЂРѕРІРѕРґРёС‚ РІРѕ РґРІРѕСЂРµ Р·Р°РјРєР°.");
 };
 // 
 instance  KDF_405_Torrez_MANA (C_INFO)
@@ -319,7 +319,7 @@ instance  KDF_405_Torrez_MANA (C_INFO)
 	information		= KDF_405_Torrez_MANA_Info;
 	important		= 0;
 	permanent		= 1;
-	description		= "Мне нужно увеличить магическую силу."; 
+	description		= "РњРЅРµ РЅСѓР¶РЅРѕ СѓРІРµР»РёС‡РёС‚СЊ РјР°РіРёС‡РµСЃРєСѓСЋ СЃРёР»Сѓ."; 
 };
 
 FUNC int  KDF_405_Torrez_MANA_Condition()
@@ -332,13 +332,13 @@ FUNC int  KDF_405_Torrez_MANA_Condition()
 };
 FUNC void  KDF_405_Torrez_MANA_Info()
 {
-	AI_Output (other, self,"KDF_405_Torrez_MANA_Info_15_01"); //Мне нужно увеличить магическую силу.
-	AI_Output (self, other,"KDF_405_Torrez_MANA_Info_04_02"); //Я могу помочь тебе. Как ты будешь ее использовать, зависит только от тебя.
+	AI_Output (other, self,"KDF_405_Torrez_MANA_Info_15_01"); //РњРЅРµ РЅСѓР¶РЅРѕ СѓРІРµР»РёС‡РёС‚СЊ РјР°РіРёС‡РµСЃРєСѓСЋ СЃРёР»Сѓ.
+	AI_Output (self, other,"KDF_405_Torrez_MANA_Info_04_02"); //РЇ РјРѕРіСѓ РїРѕРјРѕС‡СЊ С‚РµР±Рµ. РљР°Рє С‚С‹ Р±СѓРґРµС€СЊ РµРµ РёСЃРїРѕР»СЊР·РѕРІР°С‚СЊ, Р·Р°РІРёСЃРёС‚ С‚РѕР»СЊРєРѕ РѕС‚ С‚РµР±СЏ.
 	
 	Info_ClearChoices	(KDF_405_Torrez_MANA);
 	Info_AddChoice		(KDF_405_Torrez_MANA,DIALOG_BACK							,KDF_405_Torrez_MANA_BACK);
-	Info_AddChoice		(KDF_405_Torrez_MANA,"Маг. сила + 5 (5 очков обучения)"		,KDF_405_Torrez_MANA_MAN_5);
-	Info_AddChoice		(KDF_405_Torrez_MANA,"Маг. сила + 1 (1 очко обучения)"		,KDF_405_Torrez_MANA_MAN_1);
+	Info_AddChoice		(KDF_405_Torrez_MANA,"РњР°Рі. СЃРёР»Р° + 5 (5 РѕС‡РєРѕРІ РѕР±СѓС‡РµРЅРёСЏ)"		,KDF_405_Torrez_MANA_MAN_5);
+	Info_AddChoice		(KDF_405_Torrez_MANA,"РњР°Рі. СЃРёР»Р° + 1 (1 РѕС‡РєРѕ РѕР±СѓС‡РµРЅРёСЏ)"		,KDF_405_Torrez_MANA_MAN_1);
 };  
 func void KDF_405_Torrez_MANA_BACK()
 {
@@ -350,8 +350,8 @@ func void KDF_405_Torrez_MANA_MAN_1()
 	B_BuyAttributePoints (other, ATR_MANA_MAX, 1);
 	Info_ClearChoices	(KDF_405_Torrez_MANA);
 	Info_AddChoice		(KDF_405_Torrez_MANA,DIALOG_BACK								,KDF_405_Torrez_MANA_BACK);
-	Info_AddChoice		(KDF_405_Torrez_MANA,"Маг. сила + 5 (5 очков обучения)"		,KDF_405_Torrez_MANA_MAN_5);
-	Info_AddChoice		(KDF_405_Torrez_MANA,"Маг. сила + 1 (1 очко обучения)"		,KDF_405_Torrez_MANA_MAN_1);
+	Info_AddChoice		(KDF_405_Torrez_MANA,"РњР°Рі. СЃРёР»Р° + 5 (5 РѕС‡РєРѕРІ РѕР±СѓС‡РµРЅРёСЏ)"		,KDF_405_Torrez_MANA_MAN_5);
+	Info_AddChoice		(KDF_405_Torrez_MANA,"РњР°Рі. СЃРёР»Р° + 1 (1 РѕС‡РєРѕ РѕР±СѓС‡РµРЅРёСЏ)"		,KDF_405_Torrez_MANA_MAN_1);
 
 };
 
@@ -360,8 +360,8 @@ func void KDF_405_Torrez_MANA_MAN_5()
 	B_BuyAttributePoints (other, ATR_MANA_MAX, 5);
 	Info_ClearChoices	(KDF_405_Torrez_MANA);
 	Info_AddChoice		(KDF_405_Torrez_MANA,DIALOG_BACK								,KDF_405_Torrez_MANA_BACK);
-	Info_AddChoice		(KDF_405_Torrez_MANA,"Маг. сила + 5 (5 очков обучения)"		,KDF_405_Torrez_MANA_MAN_5);
-	Info_AddChoice		(KDF_405_Torrez_MANA,"Маг. сила + 1 (1 очко обучения)"		,KDF_405_Torrez_MANA_MAN_1);
+	Info_AddChoice		(KDF_405_Torrez_MANA,"РњР°Рі. СЃРёР»Р° + 5 (5 РѕС‡РєРѕРІ РѕР±СѓС‡РµРЅРёСЏ)"		,KDF_405_Torrez_MANA_MAN_5);
+	Info_AddChoice		(KDF_405_Torrez_MANA,"РњР°Рі. СЃРёР»Р° + 1 (1 РѕС‡РєРѕ РѕР±СѓС‡РµРЅРёСЏ)"		,KDF_405_Torrez_MANA_MAN_1);
 
 };
 /*------------------------------------------------------------------------
@@ -375,7 +375,7 @@ instance  KDF_405_Torrez_WANNABEMAGE (C_INFO)
 	information		= KDF_405_Torrez_WANNABEMAGE_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Что нужно сделать, чтобы стать магом?"; 
+	description		= "Р§С‚Рѕ РЅСѓР¶РЅРѕ СЃРґРµР»Р°С‚СЊ, С‡С‚РѕР±С‹ СЃС‚Р°С‚СЊ РјР°РіРѕРј?"; 
 };
 
 FUNC int  KDF_405_Torrez_WANNABEMAGE_Condition()
@@ -390,6 +390,6 @@ FUNC int  KDF_405_Torrez_WANNABEMAGE_Condition()
 };
 FUNC void  KDF_405_Torrez_WANNABEMAGE_Info()
 {
-	AI_Output (other, self,"KDF_405_Torrez_WANNABEMAGE_Info_15_01"); //Что нужно сделать, чтобы стать магом?
-	AI_Output (self, other,"KDF_405_Torrez_WANNABEMAGE_Info_04_02"); //Поговори об этом с Мастером Корристо, если у него найдется для тебя свободная минута.
+	AI_Output (other, self,"KDF_405_Torrez_WANNABEMAGE_Info_15_01"); //Р§С‚Рѕ РЅСѓР¶РЅРѕ СЃРґРµР»Р°С‚СЊ, С‡С‚РѕР±С‹ СЃС‚Р°С‚СЊ РјР°РіРѕРј?
+	AI_Output (self, other,"KDF_405_Torrez_WANNABEMAGE_Info_04_02"); //РџРѕРіРѕРІРѕСЂРё РѕР± СЌС‚РѕРј СЃ РњР°СЃС‚РµСЂРѕРј РљРѕСЂСЂРёСЃС‚Рѕ, РµСЃР»Рё Сѓ РЅРµРіРѕ РЅР°Р№РґРµС‚СЃСЏ РґР»СЏ С‚РµР±СЏ СЃРІРѕР±РѕРґРЅР°СЏ РјРёРЅСѓС‚Р°.
 };  

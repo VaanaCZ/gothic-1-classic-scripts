@@ -14,7 +14,7 @@ INSTANCE Info_Mine_Vlk_3_EXIT(C_INFO)
 	condition	= Info_Mine_Vlk_3_EXIT_Condition;
 	information	= Info_Mine_Vlk_3_EXIT_Info;
 	permanent	= 1;
-	description = "ЗАКОНЧИТЬ РАЗГОВОР";
+	description = "Р—РђРљРћРќР§РРўР¬ Р РђР—Р“РћР’РћР ";
 };                       
 
 FUNC INT Info_Mine_Vlk_3_EXIT_Condition()
@@ -37,7 +37,7 @@ INSTANCE Info_Mine_Vlk_3_Mine (C_INFO) // E1
 	condition	= Info_Mine_Vlk_3_Mine_Condition;
 	information	= Info_Mine_Vlk_3_Mine_Info;
 	permanent	= 1;
-	description = "Расскажи мне о шахте.";
+	description = "Р Р°СЃСЃРєР°Р¶Рё РјРЅРµ Рѕ С€Р°С…С‚Рµ.";
 };                       
 
 FUNC INT Info_Mine_Vlk_3_Mine_Condition()
@@ -50,8 +50,8 @@ FUNC INT Info_Mine_Vlk_3_Mine_Condition()
 
 FUNC VOID Info_Mine_Vlk_3_Mine_Info()
 {
-	AI_Output(other,self,"Info_Mine_Vlk_3_Mine_15_00"); //Расскажи мне о шахте.
-	AI_Output(self,other,"Info_Mine_Vlk_3_Mine_01_01"); //Все мы должны работать. Без отдыха, без солнца. У нас нет шансов выбраться отсюда. Только смерть прекратит наши мучения.
+	AI_Output(other,self,"Info_Mine_Vlk_3_Mine_15_00"); //Р Р°СЃСЃРєР°Р¶Рё РјРЅРµ Рѕ С€Р°С…С‚Рµ.
+	AI_Output(self,other,"Info_Mine_Vlk_3_Mine_01_01"); //Р’СЃРµ РјС‹ РґРѕР»Р¶РЅС‹ СЂР°Р±РѕС‚Р°С‚СЊ. Р‘РµР· РѕС‚РґС‹С…Р°, Р±РµР· СЃРѕР»РЅС†Р°. РЈ РЅР°СЃ РЅРµС‚ С€Р°РЅСЃРѕРІ РІС‹Р±СЂР°С‚СЊСЃСЏ РѕС‚СЃСЋРґР°. РўРѕР»СЊРєРѕ СЃРјРµСЂС‚СЊ РїСЂРµРєСЂР°С‚РёС‚ РЅР°С€Рё РјСѓС‡РµРЅРёСЏ.
 	
 };
 
@@ -65,7 +65,7 @@ INSTANCE Info_Mine_Vlk_3_WichtigePersonen(C_INFO)
 	condition	= Info_Mine_Vlk_3_WichtigePersonen_Condition;
 	information	= Info_Mine_Vlk_3_WichtigePersonen_Info;
 	permanent	= 1;
-	description = "Кто здесь главный?";
+	description = "РљС‚Рѕ Р·РґРµСЃСЊ РіР»Р°РІРЅС‹Р№?";
 };                       
 
 FUNC INT Info_Mine_Vlk_3_WichtigePersonen_Condition()
@@ -78,8 +78,8 @@ FUNC INT Info_Mine_Vlk_3_WichtigePersonen_Condition()
 
 FUNC VOID Info_Mine_Vlk_3_WichtigePersonen_Info()
 {
-	AI_Output(other,self,"Info_Mine_Vlk_3_WichtigePersonen_15_00"); //Кто здесь главный?
-	AI_Output(self,other,"Info_Mine_Vlk_3_WichtigePersonen_01_01"); //В шахте всем заправляет Ян. Во главе стражи стоит Асгхан.
+	AI_Output(other,self,"Info_Mine_Vlk_3_WichtigePersonen_15_00"); //РљС‚Рѕ Р·РґРµСЃСЊ РіР»Р°РІРЅС‹Р№?
+	AI_Output(self,other,"Info_Mine_Vlk_3_WichtigePersonen_01_01"); //Р’ С€Р°С…С‚Рµ РІСЃРµРј Р·Р°РїСЂР°РІР»СЏРµС‚ РЇРЅ. Р’Рѕ РіР»Р°РІРµ СЃС‚СЂР°Р¶Рё СЃС‚РѕРёС‚ РђСЃРіС…Р°РЅ.
 };
 
 // *************************************************************************
@@ -92,7 +92,7 @@ INSTANCE Info_Mine_Vlk_3_Minecrawler(C_INFO)
 	condition	= Info_Mine_Vlk_3_Minecrawler_Condition;
 	information	= Info_Mine_Vlk_3_Minecrawler_Info;
 	permanent	= 1;
-	description = "Что ты знаешь о ползунах?";
+	description = "Р§С‚Рѕ С‚С‹ Р·РЅР°РµС€СЊ Рѕ РїРѕР»Р·СѓРЅР°С…?";
 };                       
 
 FUNC INT Info_Mine_Vlk_3_Minecrawler_Condition()
@@ -105,9 +105,9 @@ FUNC INT Info_Mine_Vlk_3_Minecrawler_Condition()
 
 FUNC VOID Info_Mine_Vlk_3_Minecrawler_Info()
 {
-	AI_Output(other,self,"Info_Mine_Vlk_3_Minecrawler_15_00"); //Что ты знаешь о ползунах?
-	AI_Output(self,other,"Info_Mine_Vlk_3_Minecrawler_01_01"); //Как вести себя при встрече с ползунами? Бежать. Бежать изо всех сил. И тогда быть может, ты сможешь уцелеть.
-	AI_Output(self,other,"Info_Mine_Vlk_3_Minecrawler_01_02"); //Но если потеряешься, никто не придет к тебе на помощь, никто и не заметит твоего исчезновения.
+	AI_Output(other,self,"Info_Mine_Vlk_3_Minecrawler_15_00"); //Р§С‚Рѕ С‚С‹ Р·РЅР°РµС€СЊ Рѕ РїРѕР»Р·СѓРЅР°С…?
+	AI_Output(self,other,"Info_Mine_Vlk_3_Minecrawler_01_01"); //РљР°Рє РІРµСЃС‚Рё СЃРµР±СЏ РїСЂРё РІСЃС‚СЂРµС‡Рµ СЃ РїРѕР»Р·СѓРЅР°РјРё? Р‘РµР¶Р°С‚СЊ. Р‘РµР¶Р°С‚СЊ РёР·Рѕ РІСЃРµС… СЃРёР». Р С‚РѕРіРґР° Р±С‹С‚СЊ РјРѕР¶РµС‚, С‚С‹ СЃРјРѕР¶РµС€СЊ СѓС†РµР»РµС‚СЊ.
+	AI_Output(self,other,"Info_Mine_Vlk_3_Minecrawler_01_02"); //РќРѕ РµСЃР»Рё РїРѕС‚РµСЂСЏРµС€СЊСЃСЏ, РЅРёРєС‚Рѕ РЅРµ РїСЂРёРґРµС‚ Рє С‚РµР±Рµ РЅР° РїРѕРјРѕС‰СЊ, РЅРёРєС‚Рѕ Рё РЅРµ Р·Р°РјРµС‚РёС‚ С‚РІРѕРµРіРѕ РёСЃС‡РµР·РЅРѕРІРµРЅРёСЏ.
 };
 
 // *************************************************************************
@@ -120,7 +120,7 @@ INSTANCE Info_Mine_Vlk_3_DieLage(C_INFO) // E1
 	condition	= Info_Mine_Vlk_3_DieLage_Condition;
 	information	= Info_Mine_Vlk_3_DieLage_Info;
 	permanent	= 1;
-	description = "Как жизнь?";
+	description = "РљР°Рє Р¶РёР·РЅСЊ?";
 };                       
 
 FUNC INT Info_Mine_Vlk_3_DieLage_Condition()
@@ -133,9 +133,9 @@ FUNC INT Info_Mine_Vlk_3_DieLage_Condition()
 
 FUNC VOID Info_Mine_Vlk_3_DieLage_Info()
 {
-	AI_Output(other,self,"Info_Mine_Vlk_3_DieLage_15_00"); //Как жизнь?
-	AI_Output(self,other,"Info_Mine_Vlk_3_DieLage_01_01"); //Что ж, у меня болит спина, руки отваливаются, меня мучает жажда и вообще, я смертельно устал.
-	AI_Output(self,other,"Info_Mine_Vlk_3_DieLage_01_02"); //И еще эта монотонная работа, которая скоро сведет меня с ума.
+	AI_Output(other,self,"Info_Mine_Vlk_3_DieLage_15_00"); //РљР°Рє Р¶РёР·РЅСЊ?
+	AI_Output(self,other,"Info_Mine_Vlk_3_DieLage_01_01"); //Р§С‚Рѕ Р¶, Сѓ РјРµРЅСЏ Р±РѕР»РёС‚ СЃРїРёРЅР°, СЂСѓРєРё РѕС‚РІР°Р»РёРІР°СЋС‚СЃСЏ, РјРµРЅСЏ РјСѓС‡Р°РµС‚ Р¶Р°Р¶РґР° Рё РІРѕРѕР±С‰Рµ, СЏ СЃРјРµСЂС‚РµР»СЊРЅРѕ СѓСЃС‚Р°Р».
+	AI_Output(self,other,"Info_Mine_Vlk_3_DieLage_01_02"); //Р РµС‰Рµ СЌС‚Р° РјРѕРЅРѕС‚РѕРЅРЅР°СЏ СЂР°Р±РѕС‚Р°, РєРѕС‚РѕСЂР°СЏ СЃРєРѕСЂРѕ СЃРІРµРґРµС‚ РјРµРЅСЏ СЃ СѓРјР°.
 };
 	
 // *************************************************************************

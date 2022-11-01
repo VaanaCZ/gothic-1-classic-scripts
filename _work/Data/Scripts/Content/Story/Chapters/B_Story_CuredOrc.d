@@ -1,17 +1,17 @@
 func void B_Story_CuredOrc()
 {
-	//-------- Missionsgegenstдnde --------
+	//-------- MissionsgegenstРґnde --------
 	
-	//-------- Tagebucheintrдge --------
-	B_LogEntry			(CH4_UluMulu,	"Я отдал орку-рабу Тарроку лечебное зелье, и он сказал, что сможет мне помочь.");
+	//-------- TagebucheintrРґge --------
+	B_LogEntry			(CH4_UluMulu,	"РЇ РѕС‚РґР°Р» РѕСЂРєСѓ-СЂР°Р±Сѓ РўР°СЂСЂРѕРєСѓ Р»РµС‡РµР±РЅРѕРµ Р·РµР»СЊРµ, Рё РѕРЅ СЃРєР°Р·Р°Р», С‡С‚Рѕ СЃРјРѕР¶РµС‚ РјРЅРµ РїРѕРјРѕС‡СЊ.");
 
 	//-------- Erfahrung --------
 	B_GiveXP			(XP_CuredOrcSlave);
 
-	//-------- Tarroks Fokusnamen дndern --------
+	//-------- Tarroks Fokusnamen Рґndern --------
 	var C_NPC tarrok;
 	tarrok = Hlp_GetNpc(FreemineOrc);
-	tarrok.name =	"Таррок";
+	tarrok.name =	"РўР°СЂСЂРѕРє";
 	
 	//-------- globale Variable setzen --------
 	FreemineOrc_SuchePotion 	= LOG_SUCCESS;

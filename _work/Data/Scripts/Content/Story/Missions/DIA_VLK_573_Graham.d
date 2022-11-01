@@ -33,7 +33,7 @@ INSTANCE DIA_Graham_Hello (C_INFO)
 	condition	= DIA_Graham_Hello_Condition;
 	information	= DIA_Graham_Hello_Info;
 	permanent	= 0;
-	description = "Привет! Я здесь недавно.";
+	description = "РџСЂРёРІРµС‚! РЇ Р·РґРµСЃСЊ РЅРµРґР°РІРЅРѕ.";
 };                       
 
 FUNC INT DIA_Graham_Hello_Condition()
@@ -43,10 +43,10 @@ FUNC INT DIA_Graham_Hello_Condition()
 
 FUNC VOID DIA_Graham_Hello_Info()
 {	
-	AI_Output (other, self,"DIA_Graham_Hello_15_00"); //Привет! Я здесь недавно.
-	AI_Output (self, other,"DIA_Graham_Hello_02_01"); //Меня зовут Грехэм. Я рисую карты. Я тебя раньше не видел... Что тебе нужно?
+	AI_Output (other, self,"DIA_Graham_Hello_15_00"); //РџСЂРёРІРµС‚! РЇ Р·РґРµСЃСЊ РЅРµРґР°РІРЅРѕ.
+	AI_Output (self, other,"DIA_Graham_Hello_02_01"); //РњРµРЅСЏ Р·РѕРІСѓС‚ Р“СЂРµС…СЌРј. РЇ СЂРёСЃСѓСЋ РєР°СЂС‚С‹. РЇ С‚РµР±СЏ СЂР°РЅСЊС€Рµ РЅРµ РІРёРґРµР»... Р§С‚Рѕ С‚РµР±Рµ РЅСѓР¶РЅРѕ?
 	
-	B_LogEntry( GE_TraderOC, "Рудокоп Грехем продает карты. Его можно найти слева от главных ворот.");
+	B_LogEntry( GE_TraderOC, "Р СѓРґРѕРєРѕРї Р“СЂРµС…РµРј РїСЂРѕРґР°РµС‚ РєР°СЂС‚С‹. Р•РіРѕ РјРѕР¶РЅРѕ РЅР°Р№С‚Рё СЃР»РµРІР° РѕС‚ РіР»Р°РІРЅС‹С… РІРѕСЂРѕС‚.");
 };
 
 // ************************************************************
@@ -63,7 +63,7 @@ INSTANCE DIA_Graham_SellMap (C_INFO)
 	condition	= DIA_Graham_SellMap_Condition;
 	information	= DIA_Graham_SellMap_Info;
 	permanent	= 1;
-	description = "Диего сказал мне, что я могу взять у тебя карту...";
+	description = "Р”РёРµРіРѕ СЃРєР°Р·Р°Р» РјРЅРµ, С‡С‚Рѕ СЏ РјРѕРіСѓ РІР·СЏС‚СЊ Сѓ С‚РµР±СЏ РєР°СЂС‚Сѓ...";
 };                       
 
 FUNC INT DIA_Graham_SellMap_Condition()
@@ -76,27 +76,27 @@ FUNC INT DIA_Graham_SellMap_Condition()
 
 FUNC VOID DIA_Graham_SellMap_Info()
 {	
-	AI_Output (other, self,"DIA_Graham_SellMap_15_00"); //Диего сказал мне, что я могу взять у тебя карту, на которой обозначен путь к Старой шахте.
-	AI_Output (self, other,"DIA_Graham_SellMap_02_01"); //Никаких проблем. Только для тебя... 20 кусков руды.
+	AI_Output (other, self,"DIA_Graham_SellMap_15_00"); //Р”РёРµРіРѕ СЃРєР°Р·Р°Р» РјРЅРµ, С‡С‚Рѕ СЏ РјРѕРіСѓ РІР·СЏС‚СЊ Сѓ С‚РµР±СЏ РєР°СЂС‚Сѓ, РЅР° РєРѕС‚РѕСЂРѕР№ РѕР±РѕР·РЅР°С‡РµРЅ РїСѓС‚СЊ Рє РЎС‚Р°СЂРѕР№ С€Р°С…С‚Рµ.
+	AI_Output (self, other,"DIA_Graham_SellMap_02_01"); //РќРёРєР°РєРёС… РїСЂРѕР±Р»РµРј. РўРѕР»СЊРєРѕ РґР»СЏ С‚РµР±СЏ... 20 РєСѓСЃРєРѕРІ СЂСѓРґС‹.
 	Info_ClearChoices	(DIA_Graham_SellMap );
-	Info_AddChoice		(DIA_Graham_SellMap,"Еще увидимся!"							,DIA_Graham_SellMap_BACK);
-	Info_AddChoice		(DIA_Graham_SellMap,"Я куплю у тебя карту. Вот руда."	,DIA_Graham_SellMap_Pay);
-	Info_AddChoice		(DIA_Graham_SellMap,"Отдай карту, или я заберу ее сам!"								,DIA_Graham_SellMap_AufsMaul);
-	Info_AddChoice		(DIA_Graham_SellMap,"Погоди, Диего сказал мне, что ты дашь мне карту, а не продашь.",DIA_Graham_SellMap_GiveNotSell);
+	Info_AddChoice		(DIA_Graham_SellMap,"Р•С‰Рµ СѓРІРёРґРёРјСЃСЏ!"							,DIA_Graham_SellMap_BACK);
+	Info_AddChoice		(DIA_Graham_SellMap,"РЇ РєСѓРїР»СЋ Сѓ С‚РµР±СЏ РєР°СЂС‚Сѓ. Р’РѕС‚ СЂСѓРґР°."	,DIA_Graham_SellMap_Pay);
+	Info_AddChoice		(DIA_Graham_SellMap,"РћС‚РґР°Р№ РєР°СЂС‚Сѓ, РёР»Рё СЏ Р·Р°Р±РµСЂСѓ РµРµ СЃР°Рј!"								,DIA_Graham_SellMap_AufsMaul);
+	Info_AddChoice		(DIA_Graham_SellMap,"РџРѕРіРѕРґРё, Р”РёРµРіРѕ СЃРєР°Р·Р°Р» РјРЅРµ, С‡С‚Рѕ С‚С‹ РґР°С€СЊ РјРЅРµ РєР°СЂС‚Сѓ, Р° РЅРµ РїСЂРѕРґР°С€СЊ.",DIA_Graham_SellMap_GiveNotSell);
 };
 
 func void DIA_Graham_SellMap_BACK()
 {
-	AI_Output (other, self,"DIA_Graham_SellMap_BACK_15_00"); //Еще увидимся!
+	AI_Output (other, self,"DIA_Graham_SellMap_BACK_15_00"); //Р•С‰Рµ СѓРІРёРґРёРјСЃСЏ!
 	Info_ClearChoices	(DIA_Graham_SellMap );
 };
 
 func void DIA_Graham_SellMap_Pay()
 {
-	AI_Output (other, self,"DIA_Graham_SellMap_Pay_15_00"); //Я куплю у тебя карту. Вот руда.
+	AI_Output (other, self,"DIA_Graham_SellMap_Pay_15_00"); //РЇ РєСѓРїР»СЋ Сѓ С‚РµР±СЏ РєР°СЂС‚Сѓ. Р’РѕС‚ СЂСѓРґР°.
 	if (Npc_HasItems(other, itminugget)>=20)
 	{
-		AI_Output (self, other,"DIA_Graham_SellMap_Pay_02_01"); //Ладно. Поверь мне, парень, ты бы нигде не достал такую карту за эти деньги.
+		AI_Output (self, other,"DIA_Graham_SellMap_Pay_02_01"); //Р›Р°РґРЅРѕ. РџРѕРІРµСЂСЊ РјРЅРµ, РїР°СЂРµРЅСЊ, С‚С‹ Р±С‹ РЅРёРіРґРµ РЅРµ РґРѕСЃС‚Р°Р» С‚Р°РєСѓСЋ РєР°СЂС‚Сѓ Р·Р° СЌС‚Рё РґРµРЅСЊРіРё.
 		B_GiveInvItems (other, self, itminugget, 20);
 		B_GiveInvItems (self, other, ItWrOMmap, 1);
 		Graham_OMKarteVerkauft = TRUE;
@@ -104,14 +104,14 @@ func void DIA_Graham_SellMap_Pay()
 	}
 	else
 	{
-		AI_Output (self, other,"DIA_Graham_SellMap_Pay_NoOre_02_00"); //Прежде добудь руду. Поохоться или пособирай грибы, добычу можно продать у нас в лагере.
+		AI_Output (self, other,"DIA_Graham_SellMap_Pay_NoOre_02_00"); //РџСЂРµР¶РґРµ РґРѕР±СѓРґСЊ СЂСѓРґСѓ. РџРѕРѕС…РѕС‚СЊСЃСЏ РёР»Рё РїРѕСЃРѕР±РёСЂР°Р№ РіСЂРёР±С‹, РґРѕР±С‹С‡Сѓ РјРѕР¶РЅРѕ РїСЂРѕРґР°С‚СЊ Сѓ РЅР°СЃ РІ Р»Р°РіРµСЂРµ.
 	};
 };
 
 func void DIA_Graham_SellMap_AufsMaul()
 {
-	AI_Output (other, self,"DIA_Graham_SellMap_AufsMaul_15_00"); //Отдай карту, или я заберу ее сам!
-	AI_Output (self, other,"DIA_Graham_SellMap_AufsMaul_02_01"); //Эй, расслабься, дружище! Мне не нужны неприятности. Вот, возьми свою карту и оставь меня в покое.
+	AI_Output (other, self,"DIA_Graham_SellMap_AufsMaul_15_00"); //РћС‚РґР°Р№ РєР°СЂС‚Сѓ, РёР»Рё СЏ Р·Р°Р±РµСЂСѓ РµРµ СЃР°Рј!
+	AI_Output (self, other,"DIA_Graham_SellMap_AufsMaul_02_01"); //Р­Р№, СЂР°СЃСЃР»Р°Р±СЊСЃСЏ, РґСЂСѓР¶РёС‰Рµ! РњРЅРµ РЅРµ РЅСѓР¶РЅС‹ РЅРµРїСЂРёСЏС‚РЅРѕСЃС‚Рё. Р’РѕС‚, РІРѕР·СЊРјРё СЃРІРѕСЋ РєР°СЂС‚Сѓ Рё РѕСЃС‚Р°РІСЊ РјРµРЅСЏ РІ РїРѕРєРѕРµ.
 	B_GiveInvItems(self, other, ItWrOMmap, 1);
 	Info_ClearChoices	(DIA_Graham_SellMap );
 	Npc_SetPermAttitude(self,ATT_ANGRY);
@@ -121,9 +121,9 @@ func void DIA_Graham_SellMap_AufsMaul()
 
 func void DIA_Graham_SellMap_GiveNotSell()
 {
-	AI_Output (other, self,"DIA_Graham_SellMap_GiveNotSell_15_00"); //Погоди, Диего сказал мне, что ты дашь мне карту, а не продашь.
-	AI_Output (self, other,"DIA_Graham_SellMap_GiveNotSell_02_01"); //Да мне-то что с того?! Ты хоть представляешь себе, как сложно нарисовать такую карту?
-	AI_Output (self, other,"DIA_Graham_SellMap_GiveNotSell_02_02"); //20 - это моя специальная цена для друзей Диего. Обычно я беру 50.
+	AI_Output (other, self,"DIA_Graham_SellMap_GiveNotSell_15_00"); //РџРѕРіРѕРґРё, Р”РёРµРіРѕ СЃРєР°Р·Р°Р» РјРЅРµ, С‡С‚Рѕ С‚С‹ РґР°С€СЊ РјРЅРµ РєР°СЂС‚Сѓ, Р° РЅРµ РїСЂРѕРґР°С€СЊ.
+	AI_Output (self, other,"DIA_Graham_SellMap_GiveNotSell_02_01"); //Р”Р° РјРЅРµ-С‚Рѕ С‡С‚Рѕ СЃ С‚РѕРіРѕ?! РўС‹ С…РѕС‚СЊ РїСЂРµРґСЃС‚Р°РІР»СЏРµС€СЊ СЃРµР±Рµ, РєР°Рє СЃР»РѕР¶РЅРѕ РЅР°СЂРёСЃРѕРІР°С‚СЊ С‚Р°РєСѓСЋ РєР°СЂС‚Сѓ?
+	AI_Output (self, other,"DIA_Graham_SellMap_GiveNotSell_02_02"); //20 - СЌС‚Рѕ РјРѕСЏ СЃРїРµС†РёР°Р»СЊРЅР°СЏ С†РµРЅР° РґР»СЏ РґСЂСѓР·РµР№ Р”РёРµРіРѕ. РћР±С‹С‡РЅРѕ СЏ Р±РµСЂСѓ 50.
 };
 
 
@@ -134,7 +134,7 @@ INSTANCE DIA_Graham_BuyMaps (C_INFO)
 	condition	= DIA_Graham_BuyMaps_Condition;
 	information	= DIA_Graham_BuyMaps_Info;
 	permanent	= 1;
-	description = "Я хочу купить карту.";
+	description = "РЇ С…РѕС‡Сѓ РєСѓРїРёС‚СЊ РєР°СЂС‚Сѓ.";
 	Trade 		= 1;
 };                       
 
@@ -148,8 +148,8 @@ FUNC INT DIA_Graham_BuyMaps_Condition()
 
 FUNC VOID DIA_Graham_BuyMaps_Info()
 {	
-	AI_Output (other, self,"DIA_Graham_BuyMaps_15_00"); //Я хочу купить карту.
-	AI_Output (self, other,"DIA_Graham_BuyMaps_02_01"); //Конечно... Какая тебе нужна? Чем больше всего на ней изображено, тем дороже она стоит.
+	AI_Output (other, self,"DIA_Graham_BuyMaps_15_00"); //РЇ С…РѕС‡Сѓ РєСѓРїРёС‚СЊ РєР°СЂС‚Сѓ.
+	AI_Output (self, other,"DIA_Graham_BuyMaps_02_01"); //РљРѕРЅРµС‡РЅРѕ... РљР°РєР°СЏ С‚РµР±Рµ РЅСѓР¶РЅР°? Р§РµРј Р±РѕР»СЊС€Рµ РІСЃРµРіРѕ РЅР° РЅРµР№ РёР·РѕР±СЂР°Р¶РµРЅРѕ, С‚РµРј РґРѕСЂРѕР¶Рµ РѕРЅР° СЃС‚РѕРёС‚.
 };
 
 

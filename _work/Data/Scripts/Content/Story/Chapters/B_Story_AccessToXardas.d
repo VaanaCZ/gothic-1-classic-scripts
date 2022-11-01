@@ -1,15 +1,15 @@
 func void B_Story_AccessToXardas()
 {
-	//-------- Missionsgegenstдnde --------
+	//-------- MissionsgegenstРґnde --------
 	CreateInvItem	(hero, ItArRuneTeleport3);
 
-	//-------- Tagebucheintrдge --------
-	B_LogEntry		(CH4_FindXardas,	"Я нашел сердца всех трех големов и отдал их демону-охраннику. Взамен он дал мне Руну Телепортации. Посмотрим, куда она меня перенесет.");
+	//-------- TagebucheintrРґge --------
+	B_LogEntry		(CH4_FindXardas,	"РЇ РЅР°С€РµР» СЃРµСЂРґС†Р° РІСЃРµС… С‚СЂРµС… РіРѕР»РµРјРѕРІ Рё РѕС‚РґР°Р» РёС… РґРµРјРѕРЅСѓ-РѕС…СЂР°РЅРЅРёРєСѓ. Р’Р·Р°РјРµРЅ РѕРЅ РґР°Р» РјРЅРµ Р СѓРЅСѓ РўРµР»РµРїРѕСЂС‚Р°С†РёРё. РџРѕСЃРјРѕС‚СЂРёРј, РєСѓРґР° РѕРЅР° РјРµРЅСЏ РїРµСЂРµРЅРµСЃРµС‚.");
 
 	//-------- Erfahrung --------
 	B_GiveXP		(XP_DeliveredGolemhearts);
 
-	//-------- Tagesablдufe дndern --------
+	//-------- TagesablРґufe Рґndern --------
 	
 	//-------- globale Variable setzen --------
 	FindGolemHearts = 4;

@@ -2,7 +2,7 @@ instance SLD_704_Blade (Npc_Default)
 {
 	//-------- primary data --------
 	
-	name =					"Αλειδ";
+	name =					"Π‘Π»ΠµΠΉΠ΄";
 	Npctype =				NPCTYPE_AMBIENT;
 	guild =					GIL_SLD;       
 	level =					18;

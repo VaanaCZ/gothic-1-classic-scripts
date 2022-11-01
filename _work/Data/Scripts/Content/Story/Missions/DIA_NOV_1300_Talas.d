@@ -30,7 +30,7 @@ instance  Nov_1300_Talas_UR (C_INFO)
 	information		= Nov_1300_Talas_UR_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Ты Талас? Это тебя ограбили, да?"; 
+	description		= "РўС‹ РўР°Р»Р°СЃ? Р­С‚Рѕ С‚РµР±СЏ РѕРіСЂР°Р±РёР»Рё, РґР°?"; 
 };
 
 FUNC int  Nov_1300_Talas_UR_Condition()
@@ -44,8 +44,8 @@ FUNC int  Nov_1300_Talas_UR_Condition()
 };
 FUNC void  Nov_1300_Talas_UR_Info()
 {
-	AI_Output			(other, self,"Nov_1300_Talas_UR_Info_15_01"); //Ты Талас? Это тебя ограбили, да?
-	AI_Output			(self, other,"Nov_1300_Talas_UR_Info_02_02"); //Оставь меня в покое, я не хочу об этом говорить!
+	AI_Output			(other, self,"Nov_1300_Talas_UR_Info_15_01"); //РўС‹ РўР°Р»Р°СЃ? Р­С‚Рѕ С‚РµР±СЏ РѕРіСЂР°Р±РёР»Рё, РґР°?
+	AI_Output			(self, other,"Nov_1300_Talas_UR_Info_02_02"); //РћСЃС‚Р°РІСЊ РјРµРЅСЏ РІ РїРѕРєРѕРµ, СЏ РЅРµ С…РѕС‡Сѓ РѕР± СЌС‚РѕРј РіРѕРІРѕСЂРёС‚СЊ!
 };  
 // ***************************** INFOS ****************************************//
 
@@ -56,7 +56,7 @@ instance  Nov_1300_Talas_HELP (C_INFO)
 	information		= Nov_1300_Talas_HELP_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Я могу помочь тебе вернуть альманах."; 
+	description		= "РЇ РјРѕРіСѓ РїРѕРјРѕС‡СЊ С‚РµР±Рµ РІРµСЂРЅСѓС‚СЊ Р°Р»СЊРјР°РЅР°С…."; 
 };
 
 FUNC int  Nov_1300_Talas_HELP_Condition()
@@ -69,35 +69,35 @@ FUNC int  Nov_1300_Talas_HELP_Condition()
 };
 FUNC void  Nov_1300_Talas_HELP_Info()
 {
-	AI_Output			(other, self,"Nov_1300_Talas_HELP_Info_15_01"); //Я могу помочь тебе вернуть альманах.
-	AI_Output			(self, other,"Nov_1300_Talas_HELP_Info_02_02"); //Правда? Знаешь, на меня напали гоблины... и теперь я должен вернуться туда и добыть книгу. 
-	AI_Output			(self, other,"Nov_1300_Talas_HELP_Info_02_03"); //Послушай, у меня есть идея: давай я покажу тебе, где это находится, а ты заберешь альманах. 
+	AI_Output			(other, self,"Nov_1300_Talas_HELP_Info_15_01"); //РЇ РјРѕРіСѓ РїРѕРјРѕС‡СЊ С‚РµР±Рµ РІРµСЂРЅСѓС‚СЊ Р°Р»СЊРјР°РЅР°С….
+	AI_Output			(self, other,"Nov_1300_Talas_HELP_Info_02_02"); //РџСЂР°РІРґР°? Р—РЅР°РµС€СЊ, РЅР° РјРµРЅСЏ РЅР°РїР°Р»Рё РіРѕР±Р»РёРЅС‹... Рё С‚РµРїРµСЂСЊ СЏ РґРѕР»Р¶РµРЅ РІРµСЂРЅСѓС‚СЊСЃСЏ С‚СѓРґР° Рё РґРѕР±С‹С‚СЊ РєРЅРёРіСѓ. 
+	AI_Output			(self, other,"Nov_1300_Talas_HELP_Info_02_03"); //РџРѕСЃР»СѓС€Р°Р№, Сѓ РјРµРЅСЏ РµСЃС‚СЊ РёРґРµСЏ: РґР°РІР°Р№ СЏ РїРѕРєР°Р¶Сѓ С‚РµР±Рµ, РіРґРµ СЌС‚Рѕ РЅР°С…РѕРґРёС‚СЃСЏ, Р° С‚С‹ Р·Р°Р±РµСЂРµС€СЊ Р°Р»СЊРјР°РЅР°С…. 
 
 	Info_ClearChoices	(Nov_1300_Talas_HELP);
-	Info_AddChoice		(Nov_1300_Talas_HELP,"Хорошо.",Nov_1300_Talas_HELP_OK);
-	Info_AddChoice		(Nov_1300_Talas_HELP,"Это обойдется тебе в тридцать кусков руды.",Nov_1300_Talas_HELP_BRING);
-	Info_AddChoice		(Nov_1300_Talas_HELP,"Я сделаю это, но только за пятьдесят кусков.",Nov_1300_Talas_HELP_MORE);
+	Info_AddChoice		(Nov_1300_Talas_HELP,"РҐРѕСЂРѕС€Рѕ.",Nov_1300_Talas_HELP_OK);
+	Info_AddChoice		(Nov_1300_Talas_HELP,"Р­С‚Рѕ РѕР±РѕР№РґРµС‚СЃСЏ С‚РµР±Рµ РІ С‚СЂРёРґС†Р°С‚СЊ РєСѓСЃРєРѕРІ СЂСѓРґС‹.",Nov_1300_Talas_HELP_BRING);
+	Info_AddChoice		(Nov_1300_Talas_HELP,"РЇ СЃРґРµР»Р°СЋ СЌС‚Рѕ, РЅРѕ С‚РѕР»СЊРєРѕ Р·Р° РїСЏС‚СЊРґРµСЃСЏС‚ РєСѓСЃРєРѕРІ.",Nov_1300_Talas_HELP_MORE);
 	
 };  
 
 func void Nov_1300_Talas_HELP_OK ()
 {
-	AI_Output			(other, self,"Nov_1300_Talas_HELP_OK_15_01"); //Хорошо.
-	AI_Output			(self, other,"Nov_1300_Talas_HELP_OK_02_02"); //Тогда мы можем отправиться прямо сейчас.
+	AI_Output			(other, self,"Nov_1300_Talas_HELP_OK_15_01"); //РҐРѕСЂРѕС€Рѕ.
+	AI_Output			(self, other,"Nov_1300_Talas_HELP_OK_02_02"); //РўРѕРіРґР° РјС‹ РјРѕР¶РµРј РѕС‚РїСЂР°РІРёС‚СЊСЃСЏ РїСЂСЏРјРѕ СЃРµР№С‡Р°СЃ.
 	Info_ClearChoices	(Nov_1300_Talas_HELP);
 };
 func void Nov_1300_Talas_HELP_BRING ()
 {
-	AI_Output			(other, self,"Nov_1300_Talas_HELP_BRING_15_01"); //Это обойдется тебе в тридцать кусков руды.
-	AI_Output			(self, other,"Nov_1300_Talas_HELP_BRING_02_02"); //Ладно. Мы можем отправиться прямо сейчас.
+	AI_Output			(other, self,"Nov_1300_Talas_HELP_BRING_15_01"); //Р­С‚Рѕ РѕР±РѕР№РґРµС‚СЃСЏ С‚РµР±Рµ РІ С‚СЂРёРґС†Р°С‚СЊ РєСѓСЃРєРѕРІ СЂСѓРґС‹.
+	AI_Output			(self, other,"Nov_1300_Talas_HELP_BRING_02_02"); //Р›Р°РґРЅРѕ. РњС‹ РјРѕР¶РµРј РѕС‚РїСЂР°РІРёС‚СЊСЃСЏ РїСЂСЏРјРѕ СЃРµР№С‡Р°СЃ.
 	CreateInvItems		(self,ItMiNugget,30);
 	B_GiveInvItems      (self,hero,ItMiNugget,30);
 	Info_ClearChoices	(Nov_1300_Talas_HELP);
 };
 func void Nov_1300_Talas_HELP_MORE ()
 {
-	AI_Output			(other, self,"Nov_1300_Talas_HELP_MORE_15_01"); //Я сделаю это, но только за пятьдесят кусков.
-	AI_Output			(self, other,"Nov_1300_Talas_HELP_MORE_02_02"); //Что? Да это же грабеж! Ну хорошо... дай мне знать, когда будешь готов. 
+	AI_Output			(other, self,"Nov_1300_Talas_HELP_MORE_15_01"); //РЇ СЃРґРµР»Р°СЋ СЌС‚Рѕ, РЅРѕ С‚РѕР»СЊРєРѕ Р·Р° РїСЏС‚СЊРґРµСЃСЏС‚ РєСѓСЃРєРѕРІ.
+	AI_Output			(self, other,"Nov_1300_Talas_HELP_MORE_02_02"); //Р§С‚Рѕ? Р”Р° СЌС‚Рѕ Р¶Рµ РіСЂР°Р±РµР¶! РќСѓ С…РѕСЂРѕС€Рѕ... РґР°Р№ РјРЅРµ Р·РЅР°С‚СЊ, РєРѕРіРґР° Р±СѓРґРµС€СЊ РіРѕС‚РѕРІ. 
 	CreateInvItems		(self,ItMiNugget,50);
 	B_GiveInvItems      (self,hero,ItMiNugget,50);
 	Info_ClearChoices	(Nov_1300_Talas_HELP);
@@ -111,7 +111,7 @@ instance  Nov_1300_Talas_READY (C_INFO)
 	information		= Nov_1300_Talas_READY_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Я готов, мы можем идти."; 
+	description		= "РЇ РіРѕС‚РѕРІ, РјС‹ РјРѕР¶РµРј РёРґС‚Рё."; 
 };
 
 FUNC int  Nov_1300_Talas_READY_Condition()
@@ -125,10 +125,10 @@ FUNC int  Nov_1300_Talas_READY_Condition()
 };
 FUNC void  Nov_1300_Talas_READY_Info()
 {
-	AI_Output			(other, self,"Nov_1300_Talas_READY_Info_15_01"); //Я готов, мы можем идти.
-	AI_Output			(self, other,"Nov_1300_Talas_READY_Info_02_02"); //Иди за мной.
+	AI_Output			(other, self,"Nov_1300_Talas_READY_Info_15_01"); //РЇ РіРѕС‚РѕРІ, РјС‹ РјРѕР¶РµРј РёРґС‚Рё.
+	AI_Output			(self, other,"Nov_1300_Talas_READY_Info_02_02"); //РРґРё Р·Р° РјРЅРѕР№.
 	
-	B_LogEntry		(CH2_Book,	"Я предложил Таласу вместе вернуть альманах. Он отведет меня к тому месту, где находится книга."); 
+	B_LogEntry		(CH2_Book,	"РЇ РїСЂРµРґР»РѕР¶РёР» РўР°Р»Р°СЃСѓ РІРјРµСЃС‚Рµ РІРµСЂРЅСѓС‚СЊ Р°Р»СЊРјР°РЅР°С…. РћРЅ РѕС‚РІРµРґРµС‚ РјРµРЅСЏ Рє С‚РѕРјСѓ РјРµСЃС‚Сѓ, РіРґРµ РЅР°С…РѕРґРёС‚СЃСЏ РєРЅРёРіР°."); 
 	
 	self.aivar[AIV_PARTYMEMBER] = TRUE;
 	Npc_ExchangeRoutine	(self,"GOBBOCAVE");
@@ -136,7 +136,7 @@ FUNC void  Nov_1300_Talas_READY_Info()
 	
 };  
 
-// ***************************** AN DER BRЬCKE ****************************************//
+// ***************************** AN DER BRР¬CKE ****************************************//
 instance  Nov_1300_Talas_BRIDGE (C_INFO)
 {
 	npc				= Nov_1300_Talas;
@@ -157,14 +157,14 @@ FUNC int  Nov_1300_Talas_BRIDGE_Condition()
 };
 FUNC void  Nov_1300_Talas_BRIDGE_Info()
 {
-	AI_Output			(self, other,"Nov_1300_Talas_BRIDGE_Info_02_01"); //За мостом в пещере обитают эти чертовы твари. Будь осторожен.
-	AI_Output			(other, self,"Nov_1300_Talas_BRIDGE_Info_15_02"); //Ты со мной не пойдешь?
-	AI_Output			(self, other,"Nov_1300_Talas_BRIDGE_Info_02_03"); //Я подожду здесь... гм... буду прикрывать отход.
+	AI_Output			(self, other,"Nov_1300_Talas_BRIDGE_Info_02_01"); //Р—Р° РјРѕСЃС‚РѕРј РІ РїРµС‰РµСЂРµ РѕР±РёС‚Р°СЋС‚ СЌС‚Рё С‡РµСЂС‚РѕРІС‹ С‚РІР°СЂРё. Р‘СѓРґСЊ РѕСЃС‚РѕСЂРѕР¶РµРЅ.
+	AI_Output			(other, self,"Nov_1300_Talas_BRIDGE_Info_15_02"); //РўС‹ СЃРѕ РјРЅРѕР№ РЅРµ РїРѕР№РґРµС€СЊ?
+	AI_Output			(self, other,"Nov_1300_Talas_BRIDGE_Info_02_03"); //РЇ РїРѕРґРѕР¶РґСѓ Р·РґРµСЃСЊ... РіРј... Р±СѓРґСѓ РїСЂРёРєСЂС‹РІР°С‚СЊ РѕС‚С…РѕРґ.
 
-	B_LogEntry		(CH2_Book,	"Мы стоим у входа в пещеру гоблинов. Талас не будет сопровождать меня дальше. Мне придется все делать самому.");
+	B_LogEntry		(CH2_Book,	"РњС‹ СЃС‚РѕРёРј Сѓ РІС…РѕРґР° РІ РїРµС‰РµСЂСѓ РіРѕР±Р»РёРЅРѕРІ. РўР°Р»Р°СЃ РЅРµ Р±СѓРґРµС‚ СЃРѕРїСЂРѕРІРѕР¶РґР°С‚СЊ РјРµРЅСЏ РґР°Р»СЊС€Рµ. РњРЅРµ РїСЂРёРґРµС‚СЃСЏ РІСЃРµ РґРµР»Р°С‚СЊ СЃР°РјРѕРјСѓ.");
 };
 
-// ***************************** ZURЬCK INS LAGER ****************************************//
+// ***************************** ZURР¬CK INS LAGER ****************************************//
 instance  Nov_1300_Talas_BACK (C_INFO)
 {
 	npc				= Nov_1300_Talas;
@@ -185,15 +185,15 @@ FUNC int  Nov_1300_Talas_BACK_Condition()
 };
 FUNC void  Nov_1300_Talas_BACK_Info()
 {
-	AI_Output			(self, other,"Nov_1300_Talas_BACK_Info_02_01"); //Альманах у тебя! Здорово! Теперь мы можем вернуться в лагерь.
+	AI_Output			(self, other,"Nov_1300_Talas_BACK_Info_02_01"); //РђР»СЊРјР°РЅР°С… Сѓ С‚РµР±СЏ! Р—РґРѕСЂРѕРІРѕ! РўРµРїРµСЂСЊ РјС‹ РјРѕР¶РµРј РІРµСЂРЅСѓС‚СЊСЃСЏ РІ Р»Р°РіРµСЂСЊ.
 
-	B_LogEntry		(CH2_Book,	"Я нашел альманах. Вместе с Таласом мы отнесем его в Болотный лагерь.");
+	B_LogEntry		(CH2_Book,	"РЇ РЅР°С€РµР» Р°Р»СЊРјР°РЅР°С…. Р’РјРµСЃС‚Рµ СЃ РўР°Р»Р°СЃРѕРј РјС‹ РѕС‚РЅРµСЃРµРј РµРіРѕ РІ Р‘РѕР»РѕС‚РЅС‹Р№ Р»Р°РіРµСЂСЊ.");
 
 	Npc_ExchangeRoutine	(self,"RETURNTOCAMP");
 	AI_StopProcessInfos	(self);
 };
 
-// ***************************** Zurьck im Lager ****************************************//
+// ***************************** ZurСЊck im Lager ****************************************//
 instance  Nov_1300_Talas_RETURNED (C_INFO)
 {
 	npc				= Nov_1300_Talas;
@@ -216,11 +216,11 @@ FUNC int  Nov_1300_Talas_RETURNED_Condition()
 };
 FUNC void  Nov_1300_Talas_RETURNED_Info()
 {
-	AI_Output			(self, other,"Info_Talas_RETURNED_02_01"); //Вот мы и дома. Тебе лучше поскорее отдать альманах Кор Галому.
-	AI_Output			(other, self,"Info_Talas_RETURNED_15_02"); //Будь осторожен и не переживай за меня!
-	AI_Output			(self, other,"Info_Talas_RETURNED_02_03"); //Уж точно не буду! Не стоит даже и волноваться. 
+	AI_Output			(self, other,"Info_Talas_RETURNED_02_01"); //Р’РѕС‚ РјС‹ Рё РґРѕРјР°. РўРµР±Рµ Р»СѓС‡С€Рµ РїРѕСЃРєРѕСЂРµРµ РѕС‚РґР°С‚СЊ Р°Р»СЊРјР°РЅР°С… РљРѕСЂ Р“Р°Р»РѕРјСѓ.
+	AI_Output			(other, self,"Info_Talas_RETURNED_15_02"); //Р‘СѓРґСЊ РѕСЃС‚РѕСЂРѕР¶РµРЅ Рё РЅРµ РїРµСЂРµР¶РёРІР°Р№ Р·Р° РјРµРЅСЏ!
+	AI_Output			(self, other,"Info_Talas_RETURNED_02_03"); //РЈР¶ С‚РѕС‡РЅРѕ РЅРµ Р±СѓРґСѓ! РќРµ СЃС‚РѕРёС‚ РґР°Р¶Рµ Рё РІРѕР»РЅРѕРІР°С‚СЊСЃСЏ. 
 
-	B_LogEntry		(CH2_Book,	"Мы пришли в Болотный лагерь. Талас оказался тем еще трусом. Я сам отнесу альманах Кор Галому.");
+	B_LogEntry		(CH2_Book,	"РњС‹ РїСЂРёС€Р»Рё РІ Р‘РѕР»РѕС‚РЅС‹Р№ Р»Р°РіРµСЂСЊ. РўР°Р»Р°СЃ РѕРєР°Р·Р°Р»СЃСЏ С‚РµРј РµС‰Рµ С‚СЂСѓСЃРѕРј. РЇ СЃР°Рј РѕС‚РЅРµСЃСѓ Р°Р»СЊРјР°РЅР°С… РљРѕСЂ Р“Р°Р»РѕРјСѓ.");
 
 	self.aivar[AIV_PARTYMEMBER] = FALSE;
 	Npc_ExchangeRoutine	(self,"BackInCamp");
@@ -236,7 +236,7 @@ instance  Nov_1300_Talas_OGY (C_INFO)
 	information		= Nov_1300_Talas_OGY_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Меня прислал Кор Ангар."; 
+	description		= "РњРµРЅСЏ РїСЂРёСЃР»Р°Р» РљРѕСЂ РђРЅРіР°СЂ."; 
 };
 
 FUNC int  Nov_1300_Talas_OGY_Condition()
@@ -249,9 +249,9 @@ FUNC int  Nov_1300_Talas_OGY_Condition()
 };
 FUNC void  Nov_1300_Talas_OGY_Info()
 {
-	AI_Output			(other, self,"Nov_1300_Talas_OGY_15_01"); //Меня прислал Кор Ангар. Он сказал, что ты сможешь отвести меня к кладбищу орков. Мне нужно найти Идола Люкора и Стражей, которые ушли с ним.
-	AI_Output			(self, other,"Nov_1300_Talas_OGY_02_02"); //Так, я снова посыльный. Черт! Если бы я не потерял этот альманах...
-	AI_Output			(self, other,"Nov_1300_Talas_OGY_02_03"); //Ну хорошо, иди за мной.
+	AI_Output			(other, self,"Nov_1300_Talas_OGY_15_01"); //РњРµРЅСЏ РїСЂРёСЃР»Р°Р» РљРѕСЂ РђРЅРіР°СЂ. РћРЅ СЃРєР°Р·Р°Р», С‡С‚Рѕ С‚С‹ СЃРјРѕР¶РµС€СЊ РѕС‚РІРµСЃС‚Рё РјРµРЅСЏ Рє РєР»Р°РґР±РёС‰Сѓ РѕСЂРєРѕРІ. РњРЅРµ РЅСѓР¶РЅРѕ РЅР°Р№С‚Рё РРґРѕР»Р° Р›СЋРєРѕСЂР° Рё РЎС‚СЂР°Р¶РµР№, РєРѕС‚РѕСЂС‹Рµ СѓС€Р»Рё СЃ РЅРёРј.
+	AI_Output			(self, other,"Nov_1300_Talas_OGY_02_02"); //РўР°Рє, СЏ СЃРЅРѕРІР° РїРѕСЃС‹Р»СЊРЅС‹Р№. Р§РµСЂС‚! Р•СЃР»Рё Р±С‹ СЏ РЅРµ РїРѕС‚РµСЂСЏР» СЌС‚РѕС‚ Р°Р»СЊРјР°РЅР°С…...
+	AI_Output			(self, other,"Nov_1300_Talas_OGY_02_03"); //РќСѓ С…РѕСЂРѕС€Рѕ, РёРґРё Р·Р° РјРЅРѕР№.
 	
 	self.aivar[AIV_PARTYMEMBER] = TRUE;
 	AI_StopProcessInfos	(self);
@@ -278,9 +278,9 @@ FUNC int  Nov_1300_Talas_BACKAGAIN_Condition()
 
 FUNC void  Nov_1300_Talas_BACKAGAIN_Info()
 {
-	AI_Output			(self, other,"Nov_1300_Talas_BACKAGAIN_Info_02_01"); //Через мост я с тобой не пойду, жизнь еще мне дорога.
-	AI_Output			(self, other,"Nov_1300_Talas_BACKAGAIN_Info_02_02"); //Нужно быть ненормальным, чтобы соваться туда. Даже Люкор со своими Стражами - и тот не вернулся.
-	AI_Output			(other, self,"Nov_1300_Talas_BACKAGAIN_Info_15_03"); //Что ж, посмотрим, что там такое. Возвращайся в лагерь, а я приду туда позже.
+	AI_Output			(self, other,"Nov_1300_Talas_BACKAGAIN_Info_02_01"); //Р§РµСЂРµР· РјРѕСЃС‚ СЏ СЃ С‚РѕР±РѕР№ РЅРµ РїРѕР№РґСѓ, Р¶РёР·РЅСЊ РµС‰Рµ РјРЅРµ РґРѕСЂРѕРіР°.
+	AI_Output			(self, other,"Nov_1300_Talas_BACKAGAIN_Info_02_02"); //РќСѓР¶РЅРѕ Р±С‹С‚СЊ РЅРµРЅРѕСЂРјР°Р»СЊРЅС‹Рј, С‡С‚РѕР±С‹ СЃРѕРІР°С‚СЊСЃСЏ С‚СѓРґР°. Р”Р°Р¶Рµ Р›СЋРєРѕСЂ СЃРѕ СЃРІРѕРёРјРё РЎС‚СЂР°Р¶Р°РјРё - Рё С‚РѕС‚ РЅРµ РІРµСЂРЅСѓР»СЃСЏ.
+	AI_Output			(other, self,"Nov_1300_Talas_BACKAGAIN_Info_15_03"); //Р§С‚Рѕ Р¶, РїРѕСЃРјРѕС‚СЂРёРј, С‡С‚Рѕ С‚Р°Рј С‚Р°РєРѕРµ. Р’РѕР·РІСЂР°С‰Р°Р№СЃСЏ РІ Р»Р°РіРµСЂСЊ, Р° СЏ РїСЂРёРґСѓ С‚СѓРґР° РїРѕР·Р¶Рµ.
 
 	self.aivar[AIV_PARTYMEMBER] = FALSE;
 	AI_StopProcessInfos	(self);

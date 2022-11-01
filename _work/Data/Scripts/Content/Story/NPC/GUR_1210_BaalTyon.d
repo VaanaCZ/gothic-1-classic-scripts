@@ -1,7 +1,7 @@
 instance GUR_1210_BaalTyon (Npc_Default)
 {
 	//-------- primary data --------
-	name 		=		"Идол Тион";
+	name 		=		"РРґРѕР» РўРёРѕРЅ";
 	Npctype 	=		NPCTYPE_FRIEND;
 	guild 		=		GIL_GUR;
 	level 		=		28;

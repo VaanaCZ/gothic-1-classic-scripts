@@ -145,7 +145,7 @@ const int STAT_B_X3 = 7200;
 
 instance MENU_ITEM_PLAYERGUILD_TITLE(C_MENU_ITEM_DEF)
 {
-	text[0]	 = "√ËÎ¸‰Ëˇ";
+	text[0]	 = "–ì–∏–ª—å–¥–∏—è";
 	posx	 = STAT_A_X1;	posy = STAT_PLY_Y+STAT_DY*0;	
 	fontName	=	STAT_FONT_DEFAULT;
 	flags		=	flags & ~IT_SELECTABLE;
@@ -190,7 +190,7 @@ INSTANCE MENU_ITEM_PLAYERNAME(C_MENU_ITEM_DEF)
 INSTANCE MENU_ITEM_LEVEL_TITLE(C_MENU_ITEM_DEF)
 {
 	posx = STAT_A_X1;	posy = STAT_PLY_Y + 1*STAT_DY;
-	text[0]	= "”Ó‚ÂÌ¸";	
+	text[0]	= "–£—Ä–æ–≤–µ–Ω—å";	
 	fontName= STAT_FONT_DEFAULT;		
 	flags	= flags & ~IT_SELECTABLE;
 };
@@ -198,7 +198,7 @@ INSTANCE MENU_ITEM_LEVEL_TITLE(C_MENU_ITEM_DEF)
 INSTANCE MENU_ITEM_EXP_TITLE(C_MENU_ITEM_DEF)
 {
 	posx = STAT_A_X1;	posy = STAT_PLY_Y + 2*STAT_DY;	
-	text[0]	= "ŒÔ˚Ú"; 
+	text[0]	= "–û–ø—ã—Ç"; 
 	fontName = STAT_FONT_DEFAULT;	
 	flags	= flags & ~IT_SELECTABLE;
 };
@@ -206,7 +206,7 @@ INSTANCE MENU_ITEM_EXP_TITLE(C_MENU_ITEM_DEF)
 INSTANCE MENU_ITEM_LEVEL_NEXT_TITLE(C_MENU_ITEM_DEF)
 {
 	posx = STAT_A_X1;	posy = STAT_PLY_Y + 3*STAT_DY;	
-	text[0]	= "—ÎÂ‰Û˛˘ËÈ";
+	text[0]	= "–°–ª–µ–¥—É—é—â–∏–π";
 	fontName = STAT_FONT_DEFAULT;
 	flags	= flags & ~IT_SELECTABLE;
 };
@@ -214,7 +214,7 @@ INSTANCE MENU_ITEM_LEVEL_NEXT_TITLE(C_MENU_ITEM_DEF)
 INSTANCE MENU_ITEM_LEARN_TITLE(C_MENU_ITEM_DEF)
 {
 	posx = STAT_A_X1;	posy = STAT_PLY_Y + 4*STAT_DY;	
-	text[0]	= "Œ˜ÍË Ó·Û˜ÂÌËˇ";	
+	text[0]	= "–û—á–∫–∏ –æ–±—É—á–µ–Ω–∏—è";	
 	fontName = STAT_FONT_DEFAULT;
 	flags	= flags & ~IT_SELECTABLE;
 };
@@ -258,7 +258,7 @@ INSTANCE MENU_ITEM_LEARN(C_MENU_ITEM_DEF)
 INSTANCE MENU_ITEM_ATTRIBUTE_HEADING(C_MENU_ITEM_DEF)
 {
 	posx = STAT_A_X1;	posy = STAT_ATR_Y + 0*STAT_DY;
-	text[0]		=  "’¿–¿ “≈–»—“» »";	
+	text[0]		=  "–•–ê–†–ê–ö–¢–ï–†–ò–°–¢–ò–ö–ò";	
 	fontName	=	STAT_FONT_TITLE;
 	flags		= flags & ~IT_SELECTABLE;
 };
@@ -267,28 +267,28 @@ INSTANCE MENU_ITEM_ATTRIBUTE_HEADING(C_MENU_ITEM_DEF)
 INSTANCE MENU_ITEM_ATTRIBUTE_1_TITLE(C_MENU_ITEM_DEF)
 {
 	posx = STAT_A_X1;	posy = STAT_ATR_Y + 1*STAT_DY;
-	text[0]		= 	"—ËÎ‡";
+	text[0]		= 	"–°–∏–ª–∞";
 	fontName	= 	STAT_FONT_DEFAULT;
 	flags		= 	flags & ~IT_SELECTABLE;
 };
 INSTANCE MENU_ITEM_ATTRIBUTE_2_TITLE(C_MENU_ITEM_DEF)
 {
 	posx = STAT_A_X1;	posy = STAT_ATR_Y + 2*STAT_DY;
-	text[0]		=	"ÀÓ‚ÍÓÒÚ¸";
+	text[0]		=	"–õ–æ–≤–∫–æ—Å—Ç—å";
 	fontName	=	STAT_FONT_DEFAULT;
 	flags		=	flags & ~IT_SELECTABLE;
 };
 INSTANCE MENU_ITEM_ATTRIBUTE_3_TITLE(C_MENU_ITEM_DEF)
 {
 	posx = STAT_A_X1;	posy = STAT_ATR_Y + 3*STAT_DY;
-	text[0]		=	"Ã‡„Ë˜ÂÒÍ‡ˇ ÒËÎ‡";
+	text[0]		=	"–ú–∞–≥–∏—á–µ—Å–∫–∞—è —Å–∏–ª–∞";
 	fontName	=	STAT_FONT_DEFAULT;
 	flags		=	flags & ~IT_SELECTABLE;
 };
 INSTANCE MENU_ITEM_ATTRIBUTE_4_TITLE(C_MENU_ITEM_DEF)
 {
 	posx = STAT_A_X1;	posy = STAT_ATR_Y + 4*STAT_DY;
-	text[0]		=	"∆ËÁÌÂÌÌ‡ˇ ÒËÎ‡";
+	text[0]		=	"–ñ–∏–∑–Ω–µ–Ω–Ω–∞—è —Å–∏–ª–∞";
 	fontName	=	STAT_FONT_DEFAULT;
 	flags		=	flags & ~IT_SELECTABLE;
 };
@@ -326,7 +326,7 @@ INSTANCE MENU_ITEM_ATTRIBUTE_4(C_MENU_ITEM_DEF)
 
 INSTANCE MENU_ITEM_ARMOR_HEADING(C_MENU_ITEM_DEF)
 {
-	text[0]	= "«¿Ÿ»“¿";
+	text[0]	= "–ó–ê–©–ò–¢–ê";
 	fontName	=	STAT_FONT_TITLE;
 	posx =  STAT_A_X1; posy = STAT_ARM_Y + 0*STAT_DY;
 	flags = flags & ~IT_SELECTABLE;
@@ -334,21 +334,21 @@ INSTANCE MENU_ITEM_ARMOR_HEADING(C_MENU_ITEM_DEF)
 
 INSTANCE MENU_ITEM_ARMOR_1_TITLE(C_MENU_ITEM_DEF)
 {
-	text[0]	= "ÓÚ ÓÛÊËˇ";
+	text[0]	= "–æ—Ç –æ—Ä—É–∂–∏—è";
 	posx =  STAT_A_X1; posy = STAT_ARM_Y + 1*STAT_DY;	fontName = STAT_FONT_DEFAULT;
 	flags = flags & ~IT_SELECTABLE;
 };
 
 INSTANCE MENU_ITEM_ARMOR_2_TITLE(C_MENU_ITEM_DEF)
 {
-	text[0]	= "ÓÚ ÒÚÂÎ";
+	text[0]	= "–æ—Ç —Å—Ç—Ä–µ–ª";
 	posx =  STAT_A_X1; posy = STAT_ARM_Y + 2*STAT_DY;	fontName = STAT_FONT_DEFAULT;
 	flags = flags & ~IT_SELECTABLE;
 };
 
 INSTANCE MENU_ITEM_ARMOR_3_TITLE(C_MENU_ITEM_DEF)
 {
-	text[0]	= "ÓÚ Ó„Ìˇ";
+	text[0]	= "–æ—Ç –æ–≥–Ω—è";
 	posx =  STAT_A_X1; posy = STAT_ARM_Y + 3*STAT_DY;	fontName = STAT_FONT_DEFAULT;
 	flags = flags & ~IT_SELECTABLE;
 };
@@ -356,7 +356,7 @@ INSTANCE MENU_ITEM_ARMOR_3_TITLE(C_MENU_ITEM_DEF)
 
 INSTANCE MENU_ITEM_ARMOR_4_TITLE(C_MENU_ITEM_DEF)
 {
-	text[0]	= "ÓÚ Ï‡„ËË";
+	text[0]	= "–æ—Ç –º–∞–≥–∏–∏";
 	posx =  STAT_A_X1; posy = STAT_ARM_Y + 4*STAT_DY;	fontName = STAT_FONT_DEFAULT;
 	flags = flags & ~IT_SELECTABLE;
 };
@@ -395,7 +395,7 @@ INSTANCE MENU_ITEM_ARMOR_4(C_MENU_ITEM_DEF)
 // Headings
 INSTANCE MENU_ITEM_TALENTS_WEAPON_HEADING(C_MENU_ITEM_DEF)
 {
-	text[0]	= "¬À¿ƒ≈Õ»≈ Œ–”∆»≈Ã / Ã¿—“≈–—“¬Œ";
+	text[0]	= "–í–õ–ê–î–ï–ù–ò–ï –û–†–£–ñ–ò–ï–ú / –ú–ê–°–¢–ï–†–°–¢–í–û";
 	posx	= STAT_B_X1; posy = STAT_TAL_Y + STAT_DY*0;
 	fontName	=	STAT_FONT_TITLE;	
 	flags		=	flags & ~IT_SELECTABLE;
@@ -403,7 +403,7 @@ INSTANCE MENU_ITEM_TALENTS_WEAPON_HEADING(C_MENU_ITEM_DEF)
 
 INSTANCE MENU_ITEM_TALENTS_THIEF_HEADING(C_MENU_ITEM_DEF)
 {
-	text[0]	= "¬Œ–Œ¬— »≈ Õ¿¬€ » / ÿ¿Õ— Õ≈”ƒ¿◊»";
+	text[0]	= "–í–û–†–û–í–°–ö–ò–ï –ù–ê–í–´–ö–ò / –®–ê–ù–° –ù–ï–£–î–ê–ß–ò";
 	posx	= STAT_B_X1; posy = STAT_TAL_Y + STAT_DY*6;
 	fontName	=	STAT_FONT_TITLE;	
 	flags		=	flags & ~IT_SELECTABLE;
@@ -411,7 +411,7 @@ INSTANCE MENU_ITEM_TALENTS_THIEF_HEADING(C_MENU_ITEM_DEF)
 
 INSTANCE MENU_ITEM_TALENTS_SPECIAL_HEADING(C_MENU_ITEM_DEF)
 {
-	text[0]	= "Œ—Œ¡€≈ Õ¿¬€ »";
+	text[0]	= "–û–°–û–ë–´–ï –ù–ê–í–´–ö–ò";
 	posx	= STAT_B_X1; posy = STAT_TAL_Y + STAT_DY*14;
 	fontName	=	STAT_FONT_TITLE;
 	flags		=	flags & ~IT_SELECTABLE;

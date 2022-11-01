@@ -2,7 +2,7 @@ instance VLK_574_Mud (Npc_Default)
 {
 	//-------- primary data --------
 	
-	name =							"Ã‡‰";
+	name =							"–ú–∞–¥";
 	npctype =						npctype_Main;
 	guild =							GIL_NONE;      
 	level =							0;
@@ -36,7 +36,7 @@ instance VLK_574_Mud (Npc_Default)
 	fight_tactic	=	FAI_HUMAN_COWARD; 
 
 	//-------- Senses --------                                    
-	senses = SENSE_SEE|SENSE_HEAR|SENSE_SMELL;// f¸r DIREKTES ansprechen
+	senses = SENSE_SEE|SENSE_HEAR|SENSE_SMELL;// f—år DIREKTES ansprechen
 	
 	//-------- inventory --------                                    
 

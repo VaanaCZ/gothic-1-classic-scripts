@@ -2,7 +2,7 @@ instance VLK_538_Huno (Npc_Default)
 {
 	//-------- primary data --------
 	
-	name =							"’ÛÌÓ";
+	name =							"–•—É–Ω–æ";
 	npctype =						npctype_Main;
 	guild =							GIL_VLK;      
 	level =							12;

@@ -2,7 +2,7 @@ instance ORG_859_Aidan (Npc_Default)
 {
 	//-------- primary data --------
 	
-	name =					"¿È‰‡Ì";
+	name =					"–ê–π–¥–∞–Ω";
 	Npctype =				Npctype_Main;
 	guild =					GIL_ORG;      
 	level =					15;

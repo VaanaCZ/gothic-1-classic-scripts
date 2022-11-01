@@ -33,7 +33,7 @@ instance DIA_Nyras_Hallo (C_INFO)
 	condition		= DIA_Nyras_Hallo_Condition;
 	information		= DIA_Nyras_Hallo_Info;
 	permanent		= 0;
-	description		= "Привет! Я попал сюда недавно.";
+	description		= "РџСЂРёРІРµС‚! РЇ РїРѕРїР°Р» СЃСЋРґР° РЅРµРґР°РІРЅРѕ.";
 };
 
 FUNC int  DIA_Nyras_Hallo_Condition()
@@ -45,8 +45,8 @@ FUNC int  DIA_Nyras_Hallo_Condition()
 };
 func void  DIA_Nyras_Hallo_Info()
 {
-	AI_Output			(other, self,"DIA_Nyras_Hallo_15_00"); //Привет! Я попал сюда недавно.
-	AI_Output			(self, other,"DIA_Nyras_Hallo_03_01"); //Да пребудет с тобой Спящий, брат!
+	AI_Output			(other, self,"DIA_Nyras_Hallo_15_00"); //РџСЂРёРІРµС‚! РЇ РїРѕРїР°Р» СЃСЋРґР° РЅРµРґР°РІРЅРѕ.
+	AI_Output			(self, other,"DIA_Nyras_Hallo_03_01"); //Р”Р° РїСЂРµР±СѓРґРµС‚ СЃ С‚РѕР±РѕР№ РЎРїСЏС‰РёР№, Р±СЂР°С‚!
 };
 
 // **************************************************
@@ -60,7 +60,7 @@ instance DIA_Nyras_Ort (C_INFO)
 	condition		= DIA_Nyras_Ort_Condition;
 	information		= DIA_Nyras_Ort_Info;
 	permanent		= 0;
-	description		= "Что ты можешь рассказать мне об этом месте?";
+	description		= "Р§С‚Рѕ С‚С‹ РјРѕР¶РµС€СЊ СЂР°СЃСЃРєР°Р·Р°С‚СЊ РјРЅРµ РѕР± СЌС‚РѕРј РјРµСЃС‚Рµ?";
 };
 
 FUNC int  DIA_Nyras_Ort_Condition()
@@ -74,31 +74,31 @@ FUNC int  DIA_Nyras_Ort_Condition()
 
 func void  DIA_Nyras_Ort_Info()
 {
-	AI_Output			(other, self,"DIA_Nyras_Ort_15_00"); //Что ты можешь рассказать мне об этом месте?
-	AI_Output			(self, other,"DIA_Nyras_Ort_03_01"); //Ну, в нашем Братстве все дела ведут Гуру. Они несут в мир учение Спящего и рассказывают послушникам о видениях нашего Учителя.
-	AI_Output			(self, other,"DIA_Nyras_Ort_03_02"); //Конечно, сам Учитель слишком занят, чтобы говорить с каждым послушником лично.
-	AI_Output			(self, other,"DIA_Nyras_Ort_03_03"); //Но иногда он выходит к нам на площадь перед Храмом и раскрывает нам волю Спящего.
+	AI_Output			(other, self,"DIA_Nyras_Ort_15_00"); //Р§С‚Рѕ С‚С‹ РјРѕР¶РµС€СЊ СЂР°СЃСЃРєР°Р·Р°С‚СЊ РјРЅРµ РѕР± СЌС‚РѕРј РјРµСЃС‚Рµ?
+	AI_Output			(self, other,"DIA_Nyras_Ort_03_01"); //РќСѓ, РІ РЅР°С€РµРј Р‘СЂР°С‚СЃС‚РІРµ РІСЃРµ РґРµР»Р° РІРµРґСѓС‚ Р“СѓСЂСѓ. РћРЅРё РЅРµСЃСѓС‚ РІ РјРёСЂ СѓС‡РµРЅРёРµ РЎРїСЏС‰РµРіРѕ Рё СЂР°СЃСЃРєР°Р·С‹РІР°СЋС‚ РїРѕСЃР»СѓС€РЅРёРєР°Рј Рѕ РІРёРґРµРЅРёСЏС… РЅР°С€РµРіРѕ РЈС‡РёС‚РµР»СЏ.
+	AI_Output			(self, other,"DIA_Nyras_Ort_03_02"); //РљРѕРЅРµС‡РЅРѕ, СЃР°Рј РЈС‡РёС‚РµР»СЊ СЃР»РёС€РєРѕРј Р·Р°РЅСЏС‚, С‡С‚РѕР±С‹ РіРѕРІРѕСЂРёС‚СЊ СЃ РєР°Р¶РґС‹Рј РїРѕСЃР»СѓС€РЅРёРєРѕРј Р»РёС‡РЅРѕ.
+	AI_Output			(self, other,"DIA_Nyras_Ort_03_03"); //РќРѕ РёРЅРѕРіРґР° РѕРЅ РІС‹С…РѕРґРёС‚ Рє РЅР°Рј РЅР° РїР»РѕС‰Р°РґСЊ РїРµСЂРµРґ РҐСЂР°РјРѕРј Рё СЂР°СЃРєСЂС‹РІР°РµС‚ РЅР°Рј РІРѕР»СЋ РЎРїСЏС‰РµРіРѕ.
 	
 	Info_ClearChoices 	(DIA_Nyras_Ort);
-	Info_Addchoice 		(DIA_Nyras_Ort,"Расскажи мне о священных словах великого Спящего.",DIA_Nyras_Ort_Holy);
-	Info_Addchoice 		(DIA_Nyras_Ort,"И что говорит вам Спящий?",DIA_Nyras_Ort_Casual);
+	Info_Addchoice 		(DIA_Nyras_Ort,"Р Р°СЃСЃРєР°Р¶Рё РјРЅРµ Рѕ СЃРІСЏС‰РµРЅРЅС‹С… СЃР»РѕРІР°С… РІРµР»РёРєРѕРіРѕ РЎРїСЏС‰РµРіРѕ.",DIA_Nyras_Ort_Holy);
+	Info_Addchoice 		(DIA_Nyras_Ort,"Р С‡С‚Рѕ РіРѕРІРѕСЂРёС‚ РІР°Рј РЎРїСЏС‰РёР№?",DIA_Nyras_Ort_Casual);
 };
 
 func void DIA_Nyras_Ort_Casual()
 {
-	AI_Output			(other, self,"DIA_Nyras_Ort_Casual_15_00"); //И что говорит вам Спящий?
-	AI_Output			(self, other,"DIA_Nyras_Ort_Casual_03_01"); //Спящий являет свою волю в видениях, но неверный никогда не сможет этого понять!
+	AI_Output			(other, self,"DIA_Nyras_Ort_Casual_15_00"); //Р С‡С‚Рѕ РіРѕРІРѕСЂРёС‚ РІР°Рј РЎРїСЏС‰РёР№?
+	AI_Output			(self, other,"DIA_Nyras_Ort_Casual_03_01"); //РЎРїСЏС‰РёР№ СЏРІР»СЏРµС‚ СЃРІРѕСЋ РІРѕР»СЋ РІ РІРёРґРµРЅРёСЏС…, РЅРѕ РЅРµРІРµСЂРЅС‹Р№ РЅРёРєРѕРіРґР° РЅРµ СЃРјРѕР¶РµС‚ СЌС‚РѕРіРѕ РїРѕРЅСЏС‚СЊ!
 	Info_ClearChoices 	(DIA_Nyras_Ort);
 };
 
 func void DIA_Nyras_Ort_Holy()
 {
-	AI_Output			(other, self,"DIA_Nyras_Ort_Holy_15_00"); //Расскажи мне о священных словах великого Спящего.
-	AI_Output			(self, other,"DIA_Nyras_Ort_Holy_03_01"); //Он сам указывает нам, что делать, чтобы обрести свободу.
-	AI_Output			(self, other,"DIA_Nyras_Ort_Holy_03_02"); //Юберион говорит, что Спящий сможет открыться и нам, когда мы будем к этому готовы.
-	AI_Output			(self, other,"DIA_Nyras_Ort_Holy_03_03"); //Скоро он проведет великую Церемонию, дабы Спящий явился нам. В ней примут участие наши Гуру и лучшие послушники.
-	AI_Output			(self, other,"DIA_Nyras_Ort_Holy_03_04"); //Гуру Кор Галом помогает ему. Он алхимик и занимается приготовлением снадобья, с помощью которого мы войдем в транс.
-	AI_Output			(self, other,"DIA_Nyras_Ort_Holy_03_05"); //Только в этом состоянии или во сне мы сможем понять волю Спящего.
+	AI_Output			(other, self,"DIA_Nyras_Ort_Holy_15_00"); //Р Р°СЃСЃРєР°Р¶Рё РјРЅРµ Рѕ СЃРІСЏС‰РµРЅРЅС‹С… СЃР»РѕРІР°С… РІРµР»РёРєРѕРіРѕ РЎРїСЏС‰РµРіРѕ.
+	AI_Output			(self, other,"DIA_Nyras_Ort_Holy_03_01"); //РћРЅ СЃР°Рј СѓРєР°Р·С‹РІР°РµС‚ РЅР°Рј, С‡С‚Рѕ РґРµР»Р°С‚СЊ, С‡С‚РѕР±С‹ РѕР±СЂРµСЃС‚Рё СЃРІРѕР±РѕРґСѓ.
+	AI_Output			(self, other,"DIA_Nyras_Ort_Holy_03_02"); //Р®Р±РµСЂРёРѕРЅ РіРѕРІРѕСЂРёС‚, С‡С‚Рѕ РЎРїСЏС‰РёР№ СЃРјРѕР¶РµС‚ РѕС‚РєСЂС‹С‚СЊСЃСЏ Рё РЅР°Рј, РєРѕРіРґР° РјС‹ Р±СѓРґРµРј Рє СЌС‚РѕРјСѓ РіРѕС‚РѕРІС‹.
+	AI_Output			(self, other,"DIA_Nyras_Ort_Holy_03_03"); //РЎРєРѕСЂРѕ РѕРЅ РїСЂРѕРІРµРґРµС‚ РІРµР»РёРєСѓСЋ Р¦РµСЂРµРјРѕРЅРёСЋ, РґР°Р±С‹ РЎРїСЏС‰РёР№ СЏРІРёР»СЃСЏ РЅР°Рј. Р’ РЅРµР№ РїСЂРёРјСѓС‚ СѓС‡Р°СЃС‚РёРµ РЅР°С€Рё Р“СѓСЂСѓ Рё Р»СѓС‡С€РёРµ РїРѕСЃР»СѓС€РЅРёРєРё.
+	AI_Output			(self, other,"DIA_Nyras_Ort_Holy_03_04"); //Р“СѓСЂСѓ РљРѕСЂ Р“Р°Р»РѕРј РїРѕРјРѕРіР°РµС‚ РµРјСѓ. РћРЅ Р°Р»С…РёРјРёРє Рё Р·Р°РЅРёРјР°РµС‚СЃСЏ РїСЂРёРіРѕС‚РѕРІР»РµРЅРёРµРј СЃРЅР°РґРѕР±СЊСЏ, СЃ РїРѕРјРѕС‰СЊСЋ РєРѕС‚РѕСЂРѕРіРѕ РјС‹ РІРѕР№РґРµРј РІ С‚СЂР°РЅСЃ.
+	AI_Output			(self, other,"DIA_Nyras_Ort_Holy_03_05"); //РўРѕР»СЊРєРѕ РІ СЌС‚РѕРј СЃРѕСЃС‚РѕСЏРЅРёРё РёР»Рё РІРѕ СЃРЅРµ РјС‹ СЃРјРѕР¶РµРј РїРѕРЅСЏС‚СЊ РІРѕР»СЋ РЎРїСЏС‰РµРіРѕ.
 	Info_ClearChoices 	(DIA_Nyras_Ort);
 };
 
@@ -119,7 +119,7 @@ func void DIA_Nyras_Ort_Holy()
 ///////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////
 
-// ***************************** BEGRЬЯUNG ****************************************//
+// ***************************** BEGRР¬РЇUNG ****************************************//
 
 instance Nov_1303_Nyras_GREET (C_INFO)
 {
@@ -139,7 +139,7 @@ FUNC int  Nov_1303_Nyras_GREET_Condition()
 };
 func void  Nov_1303_Nyras_GREET_Info()
 {
-	AI_Output			(self,other ,"Nov_1303_Nyras_GREET_Info_03_00"); //Исчезни! Здесь тебе не место!
+	AI_Output			(self,other ,"Nov_1303_Nyras_GREET_Info_03_00"); //РСЃС‡РµР·РЅРё! Р—РґРµСЃСЊ С‚РµР±Рµ РЅРµ РјРµСЃС‚Рѕ!
 };
 // ***************************** INFOS ****************************************//
 
@@ -150,7 +150,7 @@ instance  Nov_1303_Nyras_LEAVE (C_INFO)
 	information		= Nov_1303_Nyras_LEAVE_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Я ищу камень-юнитор."; 
+	description		= "РЇ РёС‰Сѓ РєР°РјРµРЅСЊ-СЋРЅРёС‚РѕСЂ."; 
 };
 
 FUNC int  Nov_1303_Nyras_LEAVE_Condition()
@@ -162,15 +162,15 @@ FUNC int  Nov_1303_Nyras_LEAVE_Condition()
 };
 FUNC void  Nov_1303_Nyras_LEAVE_Info()
 {
-	AI_Output			(other, self,"Nov_1303_Nyras_LEAVE_Info_15_01"); //Я ищу камень-юнитор.
-	AI_Output			(self, other,"Nov_1303_Nyras_LEAVE_Info_03_02"); //Ты пришел слишком поздно. Я уже сам нашел его!
-	AI_Output			(self, other,"Nov_1303_Nyras_LEAVE_Info_03_03"); //И я решил оставить его себе!
-	AI_Output			(self, other,"Nov_1303_Nyras_LEAVE_Info_03_04"); //Ночью я слышал слова Спящего. Он сказал, что теперь я его единственный последователь!
-	AI_Output			(self, other,"Nov_1303_Nyras_LEAVE_Info_03_05"); //Теперь только я буду служить Спящему. Он больше не нуждается в Гуру и Стражах!
-	AI_Output			(self, other,"Nov_1303_Nyras_LEAVE_Info_03_06"); //Только я один!
-	AI_Output			(self, other,"Nov_1303_Nyras_LEAVE_Info_03_07"); //Умри!
+	AI_Output			(other, self,"Nov_1303_Nyras_LEAVE_Info_15_01"); //РЇ РёС‰Сѓ РєР°РјРµРЅСЊ-СЋРЅРёС‚РѕСЂ.
+	AI_Output			(self, other,"Nov_1303_Nyras_LEAVE_Info_03_02"); //РўС‹ РїСЂРёС€РµР» СЃР»РёС€РєРѕРј РїРѕР·РґРЅРѕ. РЇ СѓР¶Рµ СЃР°Рј РЅР°С€РµР» РµРіРѕ!
+	AI_Output			(self, other,"Nov_1303_Nyras_LEAVE_Info_03_03"); //Р СЏ СЂРµС€РёР» РѕСЃС‚Р°РІРёС‚СЊ РµРіРѕ СЃРµР±Рµ!
+	AI_Output			(self, other,"Nov_1303_Nyras_LEAVE_Info_03_04"); //РќРѕС‡СЊСЋ СЏ СЃР»С‹С€Р°Р» СЃР»РѕРІР° РЎРїСЏС‰РµРіРѕ. РћРЅ СЃРєР°Р·Р°Р», С‡С‚Рѕ С‚РµРїРµСЂСЊ СЏ РµРіРѕ РµРґРёРЅСЃС‚РІРµРЅРЅС‹Р№ РїРѕСЃР»РµРґРѕРІР°С‚РµР»СЊ!
+	AI_Output			(self, other,"Nov_1303_Nyras_LEAVE_Info_03_05"); //РўРµРїРµСЂСЊ С‚РѕР»СЊРєРѕ СЏ Р±СѓРґСѓ СЃР»СѓР¶РёС‚СЊ РЎРїСЏС‰РµРјСѓ. РћРЅ Р±РѕР»СЊС€Рµ РЅРµ РЅСѓР¶РґР°РµС‚СЃСЏ РІ Р“СѓСЂСѓ Рё РЎС‚СЂР°Р¶Р°С…!
+	AI_Output			(self, other,"Nov_1303_Nyras_LEAVE_Info_03_06"); //РўРѕР»СЊРєРѕ СЏ РѕРґРёРЅ!
+	AI_Output			(self, other,"Nov_1303_Nyras_LEAVE_Info_03_07"); //РЈРјСЂРё!
 
-	B_LogEntry		(CH2_Focus,	"Нирас сошел с ума. Он захотел оставить юнитор себе и напал на меня.");
+	B_LogEntry		(CH2_Focus,	"РќРёСЂР°СЃ СЃРѕС€РµР» СЃ СѓРјР°. РћРЅ Р·Р°С…РѕС‚РµР» РѕСЃС‚Р°РІРёС‚СЊ СЋРЅРёС‚РѕСЂ СЃРµР±Рµ Рё РЅР°РїР°Р» РЅР° РјРµРЅСЏ.");
 
 	Npc_SetPermAttitude (self,ATT_HOSTILE);
 	AI_StopProcessInfos	(self);

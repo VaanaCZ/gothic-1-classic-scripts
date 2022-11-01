@@ -2,7 +2,7 @@ instance GRD_203_Bullit (Npc_Default)
 {
 	//-------- primary data --------
 	
-	name 		=	"Буллит";
+	name 		=	"Р‘СѓР»Р»РёС‚";
 	npctype		=	npctype_main;
 	guild 		=	GIL_GRD;
 	level 		=	10;

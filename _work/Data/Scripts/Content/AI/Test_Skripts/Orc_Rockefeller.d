@@ -1,7 +1,7 @@
 INSTANCE Orc_Rockefeller (Mst_Default_OrcWarrior)
 {
 	//-------- primary data	--------
-	name						=		"Орк-рокфеллер";
+	name						=		"РћСЂРє-СЂРѕРєС„РµР»Р»РµСЂ";
 	Set_OrcWarrior_Visuals();
 	
 
@@ -111,7 +111,7 @@ INSTANCE Orc_Rockefeller (Mst_Default_OrcWarrior)
 INSTANCE Shaman_Rockefeller (Mst_Default_OrcWarrior)
 {
 	//-------- primary data	--------
-	name						=		"Шаман-рокфеллер";
+	name						=		"РЁР°РјР°РЅ-СЂРѕРєС„РµР»Р»РµСЂ";
 	attribute	[ATR_MANA_MAX] 		=	50;
 	attribute	[ATR_MANA] 			=	50;
 
@@ -225,7 +225,7 @@ INSTANCE Shaman_Rockefeller (Mst_Default_OrcWarrior)
 INSTANCE UdShaman_Rockefeller (Mst_Default_OrcWarrior)
 {
 	//-------- primary data	--------
-	name						=		"Бессмертный шаман-рокфеллер";
+	name						=		"Р‘РµСЃСЃРјРµСЂС‚РЅС‹Р№ С€Р°РјР°РЅ-СЂРѕРєС„РµР»Р»РµСЂ";
 	attribute	[ATR_MANA_MAX] 		=	50;
 	attribute	[ATR_MANA] 			=	50;
 

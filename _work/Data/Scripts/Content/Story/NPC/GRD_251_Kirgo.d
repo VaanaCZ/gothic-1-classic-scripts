@@ -2,7 +2,7 @@ instance GRD_251_Kirgo (Npc_Default)
 {
 	//-------- primary data --------
 	
-	name 		=	"Кирго";
+	name 		=	"РљРёСЂРіРѕ";
 	npctype		= 	npctype_main;
 	guild 		=	GIL_NONE;
 	level 		=	10;

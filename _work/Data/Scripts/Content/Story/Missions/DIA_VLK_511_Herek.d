@@ -46,11 +46,11 @@ FUNC INT DIA_Herek_Bully_Condition()
 
 FUNC VOID DIA_Herek_Bully_Info()
 {
-	AI_Output (self, other,"DIA_Herek_Bully_01_00"); //Эй, подожди! Я слышал, что ты разговаривал с Бладвином.
-	AI_Output (other, self,"DIA_Herek_Bully_15_01"); //Ну и что? 
-	AI_Output (self, other,"DIA_Herek_Bully_01_02"); //И как только у тебя смелости хватило отказаться платить ему деньги за защиту!
-	AI_Output (self, other,"DIA_Herek_Bully_01_03"); //Обычно за таких, как ты, должны расплачиваться простые рудокопы.
-	AI_Output (self, other,"DIA_Herek_Bully_01_04"); //Я постараюсь напомнить тебе об этом, когда ты встретишь его в следующий раз.
+	AI_Output (self, other,"DIA_Herek_Bully_01_00"); //Р­Р№, РїРѕРґРѕР¶РґРё! РЇ СЃР»С‹С€Р°Р», С‡С‚Рѕ С‚С‹ СЂР°Р·РіРѕРІР°СЂРёРІР°Р» СЃ Р‘Р»Р°РґРІРёРЅРѕРј.
+	AI_Output (other, self,"DIA_Herek_Bully_15_01"); //РќСѓ Рё С‡С‚Рѕ? 
+	AI_Output (self, other,"DIA_Herek_Bully_01_02"); //Р РєР°Рє С‚РѕР»СЊРєРѕ Сѓ С‚РµР±СЏ СЃРјРµР»РѕСЃС‚Рё С…РІР°С‚РёР»Рѕ РѕС‚РєР°Р·Р°С‚СЊСЃСЏ РїР»Р°С‚РёС‚СЊ РµРјСѓ РґРµРЅСЊРіРё Р·Р° Р·Р°С‰РёС‚Сѓ!
+	AI_Output (self, other,"DIA_Herek_Bully_01_03"); //РћР±С‹С‡РЅРѕ Р·Р° С‚Р°РєРёС…, РєР°Рє С‚С‹, РґРѕР»Р¶РЅС‹ СЂР°СЃРїР»Р°С‡РёРІР°С‚СЊСЃСЏ РїСЂРѕСЃС‚С‹Рµ СЂСѓРґРѕРєРѕРїС‹.
+	AI_Output (self, other,"DIA_Herek_Bully_01_04"); //РЇ РїРѕСЃС‚Р°СЂР°СЋСЃСЊ РЅР°РїРѕРјРЅРёС‚СЊ С‚РµР±Рµ РѕР± СЌС‚РѕРј, РєРѕРіРґР° С‚С‹ РІСЃС‚СЂРµС‚РёС€СЊ РµРіРѕ РІ СЃР»РµРґСѓСЋС‰РёР№ СЂР°Р·.
 	
 	Npc_SetPermAttitude (self,ATT_ANGRY);
 	
@@ -71,7 +71,7 @@ INSTANCE DIA_Herek_Motz (C_INFO)
 	condition		= DIA_Herek_Motz_Condition;
 	information		= DIA_Herek_Motz_Info;
 	permanent		= 0;
-	description		= "Как у тебя дела?";
+	description		= "РљР°Рє Сѓ С‚РµР±СЏ РґРµР»Р°?";
 };
 
 FUNC INT DIA_Herek_Motz_Condition()
@@ -84,11 +84,11 @@ FUNC INT DIA_Herek_Motz_Condition()
 
 FUNC VOID DIA_Herek_Motz_Info()
 {
-	AI_Output (other, self,"DIA_Herek_Motz_15_00"); //Как у тебя дела?
-	AI_Output (self, other,"DIA_Herek_Motz_01_01"); //В этом лагере может остаться только один из нас!
-	AI_Output (other, self,"DIA_Herek_Motz_15_02"); //Прости, я не понял.
-	AI_Output (self, other,"DIA_Herek_Motz_01_03"); //Если бы это зависело от меня, ты бы здесь долго не задержался!
-	AI_Output (self, other,"DIA_Herek_Motz_01_04"); //Ты знаешь, почему я здесь? Как-то за одну ночь я убил сразу дюжину человек. Вот так.
+	AI_Output (other, self,"DIA_Herek_Motz_15_00"); //РљР°Рє Сѓ С‚РµР±СЏ РґРµР»Р°?
+	AI_Output (self, other,"DIA_Herek_Motz_01_01"); //Р’ СЌС‚РѕРј Р»Р°РіРµСЂРµ РјРѕР¶РµС‚ РѕСЃС‚Р°С‚СЊСЃСЏ С‚РѕР»СЊРєРѕ РѕРґРёРЅ РёР· РЅР°СЃ!
+	AI_Output (other, self,"DIA_Herek_Motz_15_02"); //РџСЂРѕСЃС‚Рё, СЏ РЅРµ РїРѕРЅСЏР».
+	AI_Output (self, other,"DIA_Herek_Motz_01_03"); //Р•СЃР»Рё Р±С‹ СЌС‚Рѕ Р·Р°РІРёСЃРµР»Рѕ РѕС‚ РјРµРЅСЏ, С‚С‹ Р±С‹ Р·РґРµСЃСЊ РґРѕР»РіРѕ РЅРµ Р·Р°РґРµСЂР¶Р°Р»СЃСЏ!
+	AI_Output (self, other,"DIA_Herek_Motz_01_04"); //РўС‹ Р·РЅР°РµС€СЊ, РїРѕС‡РµРјСѓ СЏ Р·РґРµСЃСЊ? РљР°Рє-С‚Рѕ Р·Р° РѕРґРЅСѓ РЅРѕС‡СЊ СЏ СѓР±РёР» СЃСЂР°Р·Сѓ РґСЋР¶РёРЅСѓ С‡РµР»РѕРІРµРє. Р’РѕС‚ С‚Р°Рє.
 	
 	Npc_SetPermAttitude (self,ATT_ANGRY);
 		
@@ -106,7 +106,7 @@ INSTANCE DIA_Herek_Anlegen (C_INFO)
 	condition		= DIA_Herek_Anlegen_Condition;
 	information		= DIA_Herek_Anlegen_Info;
 	permanent		= 1;
-	description		= "Так ты считаешь себя сильнее всех? Может, сравним наши силы?";
+	description		= "РўР°Рє С‚С‹ СЃС‡РёС‚Р°РµС€СЊ СЃРµР±СЏ СЃРёР»СЊРЅРµРµ РІСЃРµС…? РњРѕР¶РµС‚, СЃСЂР°РІРЅРёРј РЅР°С€Рё СЃРёР»С‹?";
 };
 
 FUNC INT DIA_Herek_Anlegen_Condition()
@@ -119,8 +119,8 @@ FUNC INT DIA_Herek_Anlegen_Condition()
 
 FUNC VOID DIA_Herek_Anlegen_Info()
 {
-	AI_Output (other, self,"DIA_Herek_Anlegen_15_00"); //Так ты считаешь себя сильнее всех? Может, сравним наши силы?
-	AI_Output (self, other,"DIA_Herek_Anlegen_01_01"); //Хочешь покормить червей? Сейчас устрою!
+	AI_Output (other, self,"DIA_Herek_Anlegen_15_00"); //РўР°Рє С‚С‹ СЃС‡РёС‚Р°РµС€СЊ СЃРµР±СЏ СЃРёР»СЊРЅРµРµ РІСЃРµС…? РњРѕР¶РµС‚, СЃСЂР°РІРЅРёРј РЅР°С€Рё СЃРёР»С‹?
+	AI_Output (self, other,"DIA_Herek_Anlegen_01_01"); //РҐРѕС‡РµС€СЊ РїРѕРєРѕСЂРјРёС‚СЊ С‡РµСЂРІРµР№? РЎРµР№С‡Р°СЃ СѓСЃС‚СЂРѕСЋ!
 	
 	AI_StopProcessInfos	(self);
 	

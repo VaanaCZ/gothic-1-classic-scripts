@@ -18,7 +18,7 @@ FUNC int  Tpl_1400_GorNaBar_Exit_Condition()
 
 FUNC VOID  Tpl_1400_GorNaBar_Exit_Info()
 {
-	AI_Output			(self, other,"Tpl_1400_GorNaBar_Exit_Info_09_02"); //Да хранит тебя Спящий!
+	AI_Output			(self, other,"Tpl_1400_GorNaBar_Exit_Info_09_02"); //Р”Р° С…СЂР°РЅРёС‚ С‚РµР±СЏ РЎРїСЏС‰РёР№!
 	AI_StopProcessInfos	( self );
 };
 
@@ -34,7 +34,7 @@ instance  Tpl_1400_GorNaBar_SUGGEST (C_INFO)
 	information		= Tpl_1400_GorNaBar_SUGGEST_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Ты можешь мне помочь? "; 
+	description		= "РўС‹ РјРѕР¶РµС€СЊ РјРЅРµ РїРѕРјРѕС‡СЊ? "; 
 };
 
 FUNC int  Tpl_1400_GorNaBar_SUGGEST_Condition()
@@ -48,17 +48,17 @@ FUNC int  Tpl_1400_GorNaBar_SUGGEST_Condition()
 
 FUNC void  Tpl_1400_GorNaBar_SUGGEST_Info()
 {
-	AI_Output			(other, self,"Tpl_1400_GorNaBar_SUGGEST_Info_15_01"); //Ты можешь мне помочь?  
-	AI_Output			(other, self,"Tpl_1400_GorNaBar_SUGGEST_Info_15_02"); //Мне нужно добыть слюну ползунов для Кор Галома. Я знаю, где находится логово этих тварей.
-	AI_Output			(other, self,"Tpl_1400_GorNaBar_SUGGEST_Info_15_03"); //Сможешь ли ты прикрыть меня, когда я открою ворота?
-	AI_Output			(self, other,"Tpl_1400_GorNaBar_SUGGEST_Info_09_04"); //Логово ползунов! Наконец-то! Мой меч к твоим услугам!
+	AI_Output			(other, self,"Tpl_1400_GorNaBar_SUGGEST_Info_15_01"); //РўС‹ РјРѕР¶РµС€СЊ РјРЅРµ РїРѕРјРѕС‡СЊ?  
+	AI_Output			(other, self,"Tpl_1400_GorNaBar_SUGGEST_Info_15_02"); //РњРЅРµ РЅСѓР¶РЅРѕ РґРѕР±С‹С‚СЊ СЃР»СЋРЅСѓ РїРѕР»Р·СѓРЅРѕРІ РґР»СЏ РљРѕСЂ Р“Р°Р»РѕРјР°. РЇ Р·РЅР°СЋ, РіРґРµ РЅР°С…РѕРґРёС‚СЃСЏ Р»РѕРіРѕРІРѕ СЌС‚РёС… С‚РІР°СЂРµР№.
+	AI_Output			(other, self,"Tpl_1400_GorNaBar_SUGGEST_Info_15_03"); //РЎРјРѕР¶РµС€СЊ Р»Рё С‚С‹ РїСЂРёРєСЂС‹С‚СЊ РјРµРЅСЏ, РєРѕРіРґР° СЏ РѕС‚РєСЂРѕСЋ РІРѕСЂРѕС‚Р°?
+	AI_Output			(self, other,"Tpl_1400_GorNaBar_SUGGEST_Info_09_04"); //Р›РѕРіРѕРІРѕ РїРѕР»Р·СѓРЅРѕРІ! РќР°РєРѕРЅРµС†-С‚Рѕ! РњРѕР№ РјРµС‡ Рє С‚РІРѕРёРј СѓСЃР»СѓРіР°Рј!
 
 	AI_StopProcessInfos	(self);
 	Npc_ExchangeRoutine (self,"GATE"); 
 	Npc_SetPermAttitude (self,ATT_FRIENDLY); 
 	B_GiveXP			(XP_HireGorNaBar);
 
-	B_LogEntry		(CH2_MCEggs,	"Как только я упомянул гнездо ползунов, Страж Гор На Бар согласился помочь Асгхану охранять ворота. Я смогу найти его там.");
+	B_LogEntry		(CH2_MCEggs,	"РљР°Рє С‚РѕР»СЊРєРѕ СЏ СѓРїРѕРјСЏРЅСѓР» РіРЅРµР·РґРѕ РїРѕР»Р·СѓРЅРѕРІ, РЎС‚СЂР°Р¶ Р“РѕСЂ РќР° Р‘Р°СЂ СЃРѕРіР»Р°СЃРёР»СЃСЏ РїРѕРјРѕС‡СЊ РђСЃРіС…Р°РЅСѓ РѕС…СЂР°РЅСЏС‚СЊ РІРѕСЂРѕС‚Р°. РЇ СЃРјРѕРіСѓ РЅР°Р№С‚Рё РµРіРѕ С‚Р°Рј.");
 };
 
 // ***************** Infos *****************************
@@ -70,7 +70,7 @@ instance  Tpl_1400_GorNaBar_INFO (C_INFO)
 	information		= Tpl_1400_GorNaBar_INFO_Info;
 	important		= 0;
 	permanent		= 1;
-	description		= "Что ты знаешь о ползунах?";
+	description		= "Р§С‚Рѕ С‚С‹ Р·РЅР°РµС€СЊ Рѕ РїРѕР»Р·СѓРЅР°С…?";
 };
 
 FUNC int  Tpl_1400_GorNaBar_INFO_Condition()
@@ -83,8 +83,8 @@ FUNC int  Tpl_1400_GorNaBar_INFO_Condition()
 
 FUNC void  Tpl_1400_GorNaBar_INFO_Info()
 {
-	AI_Output			(other, self,"Tpl_1400_GorNaBar_INFO_Info_15_01"); //Что ты знаешь о ползунах?
-	AI_Output			(self, other,"Tpl_1400_GorNaBar_INFO_Info_09_02"); //Где-то в шахте у них есть логово. Если бы мы только узнали, где именно, мы смогли бы уничтожить их раз и навсегда.
+	AI_Output			(other, self,"Tpl_1400_GorNaBar_INFO_Info_15_01"); //Р§С‚Рѕ С‚С‹ Р·РЅР°РµС€СЊ Рѕ РїРѕР»Р·СѓРЅР°С…?
+	AI_Output			(self, other,"Tpl_1400_GorNaBar_INFO_Info_09_02"); //Р“РґРµ-С‚Рѕ РІ С€Р°С…С‚Рµ Сѓ РЅРёС… РµСЃС‚СЊ Р»РѕРіРѕРІРѕ. Р•СЃР»Рё Р±С‹ РјС‹ С‚РѕР»СЊРєРѕ СѓР·РЅР°Р»Рё, РіРґРµ РёРјРµРЅРЅРѕ, РјС‹ СЃРјРѕРіР»Рё Р±С‹ СѓРЅРёС‡С‚РѕР¶РёС‚СЊ РёС… СЂР°Р· Рё РЅР°РІСЃРµРіРґР°.
 };    
 
 
@@ -96,7 +96,7 @@ instance  Tpl_1400_GorNaBar_VICTORY (C_INFO)
 	information		= Tpl_1400_GorNaBar_VICTORY_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Я нашел логово королевы ползунов!"; 
+	description		= "РЇ РЅР°С€РµР» Р»РѕРіРѕРІРѕ РєРѕСЂРѕР»РµРІС‹ РїРѕР»Р·СѓРЅРѕРІ!"; 
 };
 
 FUNC int  Tpl_1400_GorNaBar_VICTORY_Condition()
@@ -109,9 +109,9 @@ FUNC int  Tpl_1400_GorNaBar_VICTORY_Condition()
 };
 FUNC void  Tpl_1400_GorNaBar_VICTORY_Info()
 {
-	AI_Output			(other, self,"Tpl_1400_GorNaBar_VICTORY_Info_15_01"); //Я нашел логово королевы ползунов!
-	AI_Output			(self, other,"Tpl_1400_GorNaBar_VICTORY_Info_09_02"); //Ты смел и силен духом, и ты сумел доказать это. Нам нужны такие люди, как ты!
+	AI_Output			(other, self,"Tpl_1400_GorNaBar_VICTORY_Info_15_01"); //РЇ РЅР°С€РµР» Р»РѕРіРѕРІРѕ РєРѕСЂРѕР»РµРІС‹ РїРѕР»Р·СѓРЅРѕРІ!
+	AI_Output			(self, other,"Tpl_1400_GorNaBar_VICTORY_Info_09_02"); //РўС‹ СЃРјРµР» Рё СЃРёР»РµРЅ РґСѓС…РѕРј, Рё С‚С‹ СЃСѓРјРµР» РґРѕРєР°Р·Р°С‚СЊ СЌС‚Рѕ. РќР°Рј РЅСѓР¶РЅС‹ С‚Р°РєРёРµ Р»СЋРґРё, РєР°Рє С‚С‹!
 	
 	Log_CreateTopic (GE_BecomeTemplar,LOG_NOTE);
-	B_LogEntry (GE_BecomeTemplar,"Как только я приду в Болотный лагерь, мне нужно будет поговорить с Кор Ангаром. может быть, он сделает меня одним из Стражей.");
+	B_LogEntry (GE_BecomeTemplar,"РљР°Рє С‚РѕР»СЊРєРѕ СЏ РїСЂРёРґСѓ РІ Р‘РѕР»РѕС‚РЅС‹Р№ Р»Р°РіРµСЂСЊ, РјРЅРµ РЅСѓР¶РЅРѕ Р±СѓРґРµС‚ РїРѕРіРѕРІРѕСЂРёС‚СЊ СЃ РљРѕСЂ РђРЅРіР°СЂРѕРј. РјРѕР¶РµС‚ Р±С‹С‚СЊ, РѕРЅ СЃРґРµР»Р°РµС‚ РјРµРЅСЏ РѕРґРЅРёРј РёР· РЎС‚СЂР°Р¶РµР№.");
 };  

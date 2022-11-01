@@ -4,7 +4,7 @@
 
 PROTOTYPE Mst_Default_Bloodfly(C_Npc)			
 {
-	name							=	"Ψεπψενό";
+	name							=	"Π¨ΠµΡ€ΡΠµΠ½Ρ";
 	guild							=	GIL_BLOODFLY;
 	aivar[AIV_MM_REAL_ID]			= 	ID_BLOODFLY;
 	level							=	7;
@@ -69,12 +69,12 @@ INSTANCE Bloodfly	(Mst_Default_Bloodfly)
 	Set_Bloodfly_Visuals();
 	Npc_SetToFistMode(self);
 	
-	CreateInvItems (self, ItAt_Bloodfly_01, 2);	// 2 Flόgel
+	CreateInvItems (self, ItAt_Bloodfly_01, 2);	// 2 FlΡgel
 };
 
 
 /*************************************************************************
-**	Bloodfly fόr Mission: Mis_1_Psi_HelpBrothers						**
+**	Bloodfly fΡr Mission: Mis_1_Psi_HelpBrothers						**
 *************************************************************************/
 
 INSTANCE HelpBrothers_Bloodfly (Mst_Default_Bloodfly)			
@@ -82,7 +82,7 @@ INSTANCE HelpBrothers_Bloodfly (Mst_Default_Bloodfly)
 	Set_Bloodfly_Visuals();
 	Npc_SetToFistMode(self);
 
-	CreateInvItems (self, ItAt_Bloodfly_01, 2);	// 2 Flόgel
+	CreateInvItems (self, ItAt_Bloodfly_01, 2);	// 2 FlΡgel
 		
-	name							=	"Ηλξανϋι ψεπψενό";
+	name							=	"Π—Π»ΠΎΠ±Π½Ρ‹ΠΉ ΡΠµΡ€ΡΠµΠ½Ρ";
 };

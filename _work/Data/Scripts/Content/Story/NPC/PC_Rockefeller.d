@@ -2,7 +2,7 @@ INSTANCE PC_Rockefeller(NPC_DEFAULT)
 // PlayerInstanz
 {
 	//-------- primary data --------
-	name 			= "Ðîêôåëëåð";
+	name 			= "Ð Ð¾ÐºÑ„ÐµÐ»Ð»ÐµÑ€";
 	Npctype			= Npctype_Main;
 	guild			= GIL_NONE;
 	level			= 30;
@@ -190,7 +190,7 @@ INSTANCE PC_Rockefeller(NPC_DEFAULT)
 
 	
 //----------------------------------------
-//MISC //Schlüssel
+//MISC //SchlÑŒssel
 //----------------------------------------
 	CreateInvItem(self,ItKeKey1);
 	CreateInvItem(self,ItKeKey2);
@@ -420,7 +420,7 @@ INSTANCE PC_Rockefeller(NPC_DEFAULT)
 	CreateInvItem(self,Amulett_der_Magie);
 	CreateInvItem(self,Amulett_der_Macht);
 	CreateInvItem(self,Amulett_der_Erleuchtung);
-	//CreateInvItem(self,Beschwörungsamulett);
+	//CreateInvItem(self,BeschwÑ†rungsamulett);
 
 //------------------------------------------------------------	
 //Ringe

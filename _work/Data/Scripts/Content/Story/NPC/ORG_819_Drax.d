@@ -2,7 +2,7 @@ instance ORG_819_Drax (Npc_Default)
 {
 	//-------- primary data --------
 	
-	name =							"Дракс";
+	name =							"Р”СЂР°РєСЃ";
 	Npctype =				Npctype_Main;
 	guild =							GIL_ORG;      
 	level =							3;

@@ -7,11 +7,11 @@
 //	Uhrzeit:	24h
 //
 //	Es passiert folgendes:
-//	1.	Nдhert sich der Spieler dem Durchgang, so wird er in diesen
+//	1.	NРґhert sich der Spieler dem Durchgang, so wird er in diesen
 //		Dialog gezwungen und einmal gewarnt
-//	2.	Nдhert sich der SC trotzdem weiter, so wird er ein ZWEITES Mal
+//	2.	NРґhert sich der SC trotzdem weiter, so wird er ein ZWEITES Mal
 //		gewarnt (aggressiver mit Waffe ziehen)
-//	3.	Nдhert er sich trotzdem wieder, wird er angegriffen
+//	3.	NРґhert er sich trotzdem wieder, wird er angegriffen
 //////////////////////////////////////////////////////////////////////////
 const string	Grd_213_CHECKPOINT		= "OCC_GATE_INSIDE";
 
@@ -43,9 +43,9 @@ func void Info_Grd_213_FirstWarn_Info()
 {
 	PrintGlobals	(PD_MISSION);
 
-	AI_Output (self, hero,"Info_Grd_213_FirstWarn_Info_07_01"); //Стоять!
-	AI_Output (hero, self,"Info_Grd_213_FirstWarn_Info_15_02"); //В чем дело?
-	AI_Output (self, hero,"Info_Grd_213_FirstWarn_Info_07_03"); //Тебе нельзя заходить в замок! Убирайся!
+	AI_Output (self, hero,"Info_Grd_213_FirstWarn_Info_07_01"); //РЎС‚РѕСЏС‚СЊ!
+	AI_Output (hero, self,"Info_Grd_213_FirstWarn_Info_15_02"); //Р’ С‡РµРј РґРµР»Рѕ?
+	AI_Output (self, hero,"Info_Grd_213_FirstWarn_Info_07_03"); //РўРµР±Рµ РЅРµР»СЊР·СЏ Р·Р°С…РѕРґРёС‚СЊ РІ Р·Р°РјРѕРє! РЈР±РёСЂР°Р№СЃСЏ!
 
 	hero.aivar[AIV_LASTDISTTOWP] 		= Npc_GetDistToWP(hero,Grd_213_CHECKPOINT);
 	hero.aivar[AIV_GUARDPASSAGE_STATUS]	= AIV_GPS_FIRSTWARN;	
@@ -80,7 +80,7 @@ func int Info_Grd_213_LastWarn_Condition()
 
 func int Info_Grd_213_LastWarn_Info()
 {
-	AI_Output (self, hero,"Info_Grd_213_LastWarn_07_01"); 		//Ты оглох? Еще шаг, и я превращу тебя в корм для червей!
+	AI_Output (self, hero,"Info_Grd_213_LastWarn_07_01"); 		//РўС‹ РѕРіР»РѕС…? Р•С‰Рµ С€Р°Рі, Рё СЏ РїСЂРµРІСЂР°С‰Сѓ С‚РµР±СЏ РІ РєРѕСЂРј РґР»СЏ С‡РµСЂРІРµР№!
 
 	hero.aivar[AIV_LASTDISTTOWP] 		= Npc_GetDistToWP (hero,Grd_213_CHECKPOINT);
 	hero.aivar[AIV_GUARDPASSAGE_STATUS]	= AIV_GPS_LASTWARN;	
@@ -120,7 +120,7 @@ func int Info_Grd_213_Attack_Info()
 	hero.aivar[AIV_GUARDPASSAGE_STATUS]	= AIV_GPS_PUNISH;	
 	
 	B_FullStop			(self);	
-	AI_StopProcessInfos	(self);					//dem Spieler sofort wieder die Kontrolle zurьckgeben
+	AI_StopProcessInfos	(self);					//dem Spieler sofort wieder die Kontrolle zurСЊckgeben
 	B_IntruderAlert		(self,	other);
 	B_SetAttackReason	(self,	AIV_AR_INTRUDER);
 	Npc_SetTarget		(self,	hero);
@@ -147,7 +147,7 @@ FUNC int  Grd_213_Torwache_WELCOME_Condition()
 };
 func void  Grd_213_Torwache_WELCOME_Info()
 {
-	AI_Output (self, other,"Grd_213_Torwache_WELCOME_Info_07_01"); //Я слышал, ты стал одним из нас. Неплохо для того, кто так мало времени провел в колонии.
+	AI_Output (self, other,"Grd_213_Torwache_WELCOME_Info_07_01"); //РЇ СЃР»С‹С€Р°Р», С‚С‹ СЃС‚Р°Р» РѕРґРЅРёРј РёР· РЅР°СЃ. РќРµРїР»РѕС…Рѕ РґР»СЏ С‚РѕРіРѕ, РєС‚Рѕ С‚Р°Рє РјР°Р»Рѕ РІСЂРµРјРµРЅРё РїСЂРѕРІРµР» РІ РєРѕР»РѕРЅРёРё.
 };
 
 // ************************************************************
@@ -185,7 +185,7 @@ INSTANCE Info_Grd_213_Abblitzen (C_INFO)
 	condition	= Info_Grd_213_Abblitzen_Condition;
 	information	= Info_Grd_213_Abblitzen_Info;
 	permanent	= 1;
-	description	= "Тебе следует менять вид деятельности. Может, пустишь в замок?";
+	description	= "РўРµР±Рµ СЃР»РµРґСѓРµС‚ РјРµРЅСЏС‚СЊ РІРёРґ РґРµСЏС‚РµР»СЊРЅРѕСЃС‚Рё. РњРѕР¶РµС‚, РїСѓСЃС‚РёС€СЊ РІ Р·Р°РјРѕРє?";
 };                       
 
 FUNC INT Info_Grd_213_Abblitzen_Condition()
@@ -198,8 +198,8 @@ FUNC INT Info_Grd_213_Abblitzen_Condition()
 
 FUNC VOID Info_Grd_213_Abblitzen_Info()
 {
-	AI_Output (other, self,"Info_Grd_213_Abblitzen_15_00"); //Тебе иногда следует менять вид деятельности, чтобы жизнь разнообразить. Может, пустишь меня в замок?
-	AI_Output (self, other,"Info_Grd_213_Abblitzen_07_01"); //Разнообразить, говоришь? А мне нравится эта идея. Мне уже так давно не удавалось хорошо проучить такого как ты.
+	AI_Output (other, self,"Info_Grd_213_Abblitzen_15_00"); //РўРµР±Рµ РёРЅРѕРіРґР° СЃР»РµРґСѓРµС‚ РјРµРЅСЏС‚СЊ РІРёРґ РґРµСЏС‚РµР»СЊРЅРѕСЃС‚Рё, С‡С‚РѕР±С‹ Р¶РёР·РЅСЊ СЂР°Р·РЅРѕРѕР±СЂР°Р·РёС‚СЊ. РњРѕР¶РµС‚, РїСѓСЃС‚РёС€СЊ РјРµРЅСЏ РІ Р·Р°РјРѕРє?
+	AI_Output (self, other,"Info_Grd_213_Abblitzen_07_01"); //Р Р°Р·РЅРѕРѕР±СЂР°Р·РёС‚СЊ, РіРѕРІРѕСЂРёС€СЊ? Рђ РјРЅРµ РЅСЂР°РІРёС‚СЃСЏ СЌС‚Р° РёРґРµСЏ. РњРЅРµ СѓР¶Рµ С‚Р°Рє РґР°РІРЅРѕ РЅРµ СѓРґР°РІР°Р»РѕСЃСЊ С…РѕСЂРѕС€Рѕ РїСЂРѕСѓС‡РёС‚СЊ С‚Р°РєРѕРіРѕ РєР°Рє С‚С‹.
 	AI_StopProcessInfos	(self);
 };
 
@@ -214,7 +214,7 @@ INSTANCE Info_Grd_213_Passgate (C_INFO)
 	condition	= Info_Grd_213_Passgate_Condition;
 	information	= Info_Grd_213_Passgate_Info;
 	permanent	= 1;
-	description	= "Ну, все в порядке?";
+	description	= "РќСѓ, РІСЃРµ РІ РїРѕСЂСЏРґРєРµ?";
 };                       
 
 FUNC INT Info_Grd_213_Passgate_Condition()
@@ -227,7 +227,7 @@ FUNC INT Info_Grd_213_Passgate_Condition()
 
 FUNC VOID Info_Grd_213_Passgate_Info()
 {
-	AI_Output (other, self,"Info_Grd_213_Passgate_15_00"); //Ну, все в порядке?
-	AI_Output (self, other,"Info_Grd_213_Passgate_07_01"); //Хватит стоять в воротах и мешать другим, проходи.
+	AI_Output (other, self,"Info_Grd_213_Passgate_15_00"); //РќСѓ, РІСЃРµ РІ РїРѕСЂСЏРґРєРµ?
+	AI_Output (self, other,"Info_Grd_213_Passgate_07_01"); //РҐРІР°С‚РёС‚ СЃС‚РѕСЏС‚СЊ РІ РІРѕСЂРѕС‚Р°С… Рё РјРµС€Р°С‚СЊ РґСЂСѓРіРёРј, РїСЂРѕС…РѕРґРё.
 	AI_StopProcessInfos	(self);
 };

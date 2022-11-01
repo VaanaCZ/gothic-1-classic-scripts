@@ -34,7 +34,7 @@ instance  Org_819_Drax_HuntHere (C_INFO)
 	condition	= Org_819_Drax_HuntHere_Condition;
 	information	= Org_819_Drax_HuntHere_Info;
 	permanent	= 0;
-	description = "Ты охотник, да?";
+	description = "РўС‹ РѕС…РѕС‚РЅРёРє, РґР°?";
 };                       
 
 FUNC int  Org_819_Drax_HuntHere_Condition()
@@ -44,12 +44,12 @@ FUNC int  Org_819_Drax_HuntHere_Condition()
 
 FUNC VOID  Org_819_Drax_HuntHere_Info()
 {
-	AI_Output (other, self,"Org_819_Drax_HuntHere_15_00"); //Ты охотник, да?
-	AI_Output (self, other,"Org_819_Drax_HuntHere_06_01"); //Кажется, да... а что тебе нужно?
-	AI_Output (other, self,"Org_819_Drax_HuntHere_15_02"); //Ты можешь подсказать мне, как лучше охотиться?
-	AI_Output (self, other,"Org_819_Drax_HuntHere_06_03"); //Я могу обучить тебя, но все имеет свою цену.
-	AI_Output (other, self,"Org_819_Drax_HuntHere_15_04"); //И какова эта цена?
-	AI_Output (self, other,"Org_819_Drax_HuntHere_06_05"); //Для начала бутылка пива, а там посмотрим.
+	AI_Output (other, self,"Org_819_Drax_HuntHere_15_00"); //РўС‹ РѕС…РѕС‚РЅРёРє, РґР°?
+	AI_Output (self, other,"Org_819_Drax_HuntHere_06_01"); //РљР°Р¶РµС‚СЃСЏ, РґР°... Р° С‡С‚Рѕ С‚РµР±Рµ РЅСѓР¶РЅРѕ?
+	AI_Output (other, self,"Org_819_Drax_HuntHere_15_02"); //РўС‹ РјРѕР¶РµС€СЊ РїРѕРґСЃРєР°Р·Р°С‚СЊ РјРЅРµ, РєР°Рє Р»СѓС‡С€Рµ РѕС…РѕС‚РёС‚СЊСЃСЏ?
+	AI_Output (self, other,"Org_819_Drax_HuntHere_06_03"); //РЇ РјРѕРіСѓ РѕР±СѓС‡РёС‚СЊ С‚РµР±СЏ, РЅРѕ РІСЃРµ РёРјРµРµС‚ СЃРІРѕСЋ С†РµРЅСѓ.
+	AI_Output (other, self,"Org_819_Drax_HuntHere_15_04"); //Р РєР°РєРѕРІР° СЌС‚Р° С†РµРЅР°?
+	AI_Output (self, other,"Org_819_Drax_HuntHere_06_05"); //Р”Р»СЏ РЅР°С‡Р°Р»Р° Р±СѓС‚С‹Р»РєР° РїРёРІР°, Р° С‚Р°Рј РїРѕСЃРјРѕС‚СЂРёРј.
 };
 
 // **************************************************
@@ -66,7 +66,7 @@ instance  Org_819_Drax_Scavenger (C_INFO)
 	condition	= Org_819_Drax_Scavenger_Condition;
 	information	= Org_819_Drax_Scavenger_Info;
 	permanent	= 1;
-	description = "Вот твое пиво. Так ты расскажешь мне об охоте?";
+	description = "Р’РѕС‚ С‚РІРѕРµ РїРёРІРѕ. РўР°Рє С‚С‹ СЂР°СЃСЃРєР°Р¶РµС€СЊ РјРЅРµ РѕР± РѕС…РѕС‚Рµ?";
 };                       
 
 FUNC int  Org_819_Drax_Scavenger_Condition()
@@ -83,29 +83,29 @@ FUNC VOID  Org_819_Drax_Scavenger_Info()
 	{
 		B_GiveInvItems	(other, self, itfobeer,1);
 	
-		AI_Output	(other, self,"Org_819_Drax_Scavenger_15_00"); //Вот твое пиво. Так ты расскажешь мне об охоте?
+		AI_Output	(other, self,"Org_819_Drax_Scavenger_15_00"); //Р’РѕС‚ С‚РІРѕРµ РїРёРІРѕ. РўР°Рє С‚С‹ СЂР°СЃСЃРєР°Р¶РµС€СЊ РјРЅРµ РѕР± РѕС…РѕС‚Рµ?
 		if ( C_BodystateContains(self, BS_SIT) )
 		{
 			AI_StandUp		(self);
 			AI_TurnToNpc	(self, hero);
 		};
 		AI_UseItem	(self,	ItFobeer);
-		AI_Output	(self, other,"Org_819_Drax_Scavenger_06_01"); // Эти места населены крупными птицами. Мы называем их падальщиками. Атаковать их нужно поодиночке. Выманить падальщика из стаи проще простого.
-		AI_Output	(self, other,"Org_819_Drax_Scavenger_06_02"); //Когда ты подойдешь ближе, птица забеспокоится, а потом стремительно бросится на тебя. Держи оружие наготове.
-		AI_Output	(self, other,"Org_819_Drax_Scavenger_06_03"); //Нанеси удар первым. Падальщик остановится, и у тебя будет тактическое преимущество. Тогда ты с легкостью его одолеешь.
-		AI_Output	(self, other,"Org_819_Drax_Scavenger_06_04"); //Ну, а если он ударит тебя первым, тогда... но этого лучше не допускать.
+		AI_Output	(self, other,"Org_819_Drax_Scavenger_06_01"); // Р­С‚Рё РјРµСЃС‚Р° РЅР°СЃРµР»РµРЅС‹ РєСЂСѓРїРЅС‹РјРё РїС‚РёС†Р°РјРё. РњС‹ РЅР°Р·С‹РІР°РµРј РёС… РїР°РґР°Р»СЊС‰РёРєР°РјРё. РђС‚Р°РєРѕРІР°С‚СЊ РёС… РЅСѓР¶РЅРѕ РїРѕРѕРґРёРЅРѕС‡РєРµ. Р’С‹РјР°РЅРёС‚СЊ РїР°РґР°Р»СЊС‰РёРєР° РёР· СЃС‚Р°Рё РїСЂРѕС‰Рµ РїСЂРѕСЃС‚РѕРіРѕ.
+		AI_Output	(self, other,"Org_819_Drax_Scavenger_06_02"); //РљРѕРіРґР° С‚С‹ РїРѕРґРѕР№РґРµС€СЊ Р±Р»РёР¶Рµ, РїС‚РёС†Р° Р·Р°Р±РµСЃРїРѕРєРѕРёС‚СЃСЏ, Р° РїРѕС‚РѕРј СЃС‚СЂРµРјРёС‚РµР»СЊРЅРѕ Р±СЂРѕСЃРёС‚СЃСЏ РЅР° С‚РµР±СЏ. Р”РµСЂР¶Рё РѕСЂСѓР¶РёРµ РЅР°РіРѕС‚РѕРІРµ.
+		AI_Output	(self, other,"Org_819_Drax_Scavenger_06_03"); //РќР°РЅРµСЃРё СѓРґР°СЂ РїРµСЂРІС‹Рј. РџР°РґР°Р»СЊС‰РёРє РѕСЃС‚Р°РЅРѕРІРёС‚СЃСЏ, Рё Сѓ С‚РµР±СЏ Р±СѓРґРµС‚ С‚Р°РєС‚РёС‡РµСЃРєРѕРµ РїСЂРµРёРјСѓС‰РµСЃС‚РІРѕ. РўРѕРіРґР° С‚С‹ СЃ Р»РµРіРєРѕСЃС‚СЊСЋ РµРіРѕ РѕРґРѕР»РµРµС€СЊ.
+		AI_Output	(self, other,"Org_819_Drax_Scavenger_06_04"); //РќСѓ, Р° РµСЃР»Рё РѕРЅ СѓРґР°СЂРёС‚ С‚РµР±СЏ РїРµСЂРІС‹Рј, С‚РѕРіРґР°... РЅРѕ СЌС‚РѕРіРѕ Р»СѓС‡С€Рµ РЅРµ РґРѕРїСѓСЃРєР°С‚СЊ.
 		drax_bierbekommen = TRUE;
 	}
 	else
 	{
-		AI_Output (other, self,"Org_819_Drax_Scavenger_KEIN_BIER_15_00"); //У меня нет пива.
-		AI_Output (self, other,"Org_819_Drax_Scavenger_KEIN_BIER_06_01"); //Так купи его. Это мой последний бесплатный совет на сегодня. А когда вернешься с пивом, прихвати немного руды.
-		AI_Output (self, other,"Org_819_Drax_Scavenger_KEIN_BIER_06_02"); //Я могу многому тебя научить, но не задаром же!
+		AI_Output (other, self,"Org_819_Drax_Scavenger_KEIN_BIER_15_00"); //РЈ РјРµРЅСЏ РЅРµС‚ РїРёРІР°.
+		AI_Output (self, other,"Org_819_Drax_Scavenger_KEIN_BIER_06_01"); //РўР°Рє РєСѓРїРё РµРіРѕ. Р­С‚Рѕ РјРѕР№ РїРѕСЃР»РµРґРЅРёР№ Р±РµСЃРїР»Р°С‚РЅС‹Р№ СЃРѕРІРµС‚ РЅР° СЃРµРіРѕРґРЅСЏ. Рђ РєРѕРіРґР° РІРµСЂРЅРµС€СЊСЃСЏ СЃ РїРёРІРѕРј, РїСЂРёС…РІР°С‚Рё РЅРµРјРЅРѕРіРѕ СЂСѓРґС‹.
+		AI_Output (self, other,"Org_819_Drax_Scavenger_KEIN_BIER_06_02"); //РЇ РјРѕРіСѓ РјРЅРѕРіРѕРјСѓ С‚РµР±СЏ РЅР°СѓС‡РёС‚СЊ, РЅРѕ РЅРµ Р·Р°РґР°СЂРѕРј Р¶Рµ!
 	};	
 	drax_Lehrer_frei = TRUE;
 	
 	Log_CreateTopic	(GE_TeacherOW, LOG_NOTE);
-	B_LogEntry		(GE_TeacherOW, "Вор Дракс предложил мне научиться разделывать добычу, если мне это будет по карману. Обычно он охотится между Старым лагерем и местом обмена.");
+	B_LogEntry		(GE_TeacherOW, "Р’РѕСЂ Р”СЂР°РєСЃ РїСЂРµРґР»РѕР¶РёР» РјРЅРµ РЅР°СѓС‡РёС‚СЊСЃСЏ СЂР°Р·РґРµР»С‹РІР°С‚СЊ РґРѕР±С‹С‡Сѓ, РµСЃР»Рё РјРЅРµ СЌС‚Рѕ Р±СѓРґРµС‚ РїРѕ РєР°СЂРјР°РЅСѓ. РћР±С‹С‡РЅРѕ РѕРЅ РѕС…РѕС‚РёС‚СЃСЏ РјРµР¶РґСѓ РЎС‚Р°СЂС‹Рј Р»Р°РіРµСЂРµРј Рё РјРµСЃС‚РѕРј РѕР±РјРµРЅР°.");
 };
 
 // **************************************************
@@ -119,7 +119,7 @@ instance  Org_819_Drax_Creatures (C_INFO)
 	condition	= Org_819_Drax_Creatures_Condition;
 	information	= Org_819_Drax_Creatures_Info;
 	permanent	= 1;
-	description = "Ты можешь научить меня правильно разделывать добычу?";
+	description = "РўС‹ РјРѕР¶РµС€СЊ РЅР°СѓС‡РёС‚СЊ РјРµРЅСЏ РїСЂР°РІРёР»СЊРЅРѕ СЂР°Р·РґРµР»С‹РІР°С‚СЊ РґРѕР±С‹С‡Сѓ?";
 };                       
 
 FUNC int  Org_819_Drax_Creatures_Condition()
@@ -133,37 +133,37 @@ FUNC int  Org_819_Drax_Creatures_Condition()
 
 FUNC VOID  Org_819_Drax_Creatures_Info()
 {
-	AI_Output (other, self,"Org_819_Drax_Creatures_15_00"); //Ты можешь научить меня правильно разделывать добычу?
+	AI_Output (other, self,"Org_819_Drax_Creatures_15_00"); //РўС‹ РјРѕР¶РµС€СЊ РЅР°СѓС‡РёС‚СЊ РјРµРЅСЏ РїСЂР°РІРёР»СЊРЅРѕ СЂР°Р·РґРµР»С‹РІР°С‚СЊ РґРѕР±С‹С‡Сѓ?
 	
 	if ( (Knows_GetTeeth == FALSE)||(Knows_GetFur == FALSE)||(Knows_GetClaws == FALSE)||(Knows_GetHide == FALSE) )
 	{
-		AI_Output (self, other,"Org_819_Drax_Creatures_06_01"); //Конечно, могу, но на этот раз ты пивом не отделаешься.
-		AI_Output (self, other,"Org_819_Drax_Creatures_06_02"); //В здешних краях можно добывать шкуры, клыки и когти, если знать, как это делается. Но за это знание придется заплатить.
-		AI_Output (self, other,"Org_819_Drax_Creatures_06_03"); //Охотничьи трофеи обычно высоко ценятся.
+		AI_Output (self, other,"Org_819_Drax_Creatures_06_01"); //РљРѕРЅРµС‡РЅРѕ, РјРѕРіСѓ, РЅРѕ РЅР° СЌС‚РѕС‚ СЂР°Р· С‚С‹ РїРёРІРѕРј РЅРµ РѕС‚РґРµР»Р°РµС€СЊСЃСЏ.
+		AI_Output (self, other,"Org_819_Drax_Creatures_06_02"); //Р’ Р·РґРµС€РЅРёС… РєСЂР°СЏС… РјРѕР¶РЅРѕ РґРѕР±С‹РІР°С‚СЊ С€РєСѓСЂС‹, РєР»С‹РєРё Рё РєРѕРіС‚Рё, РµСЃР»Рё Р·РЅР°С‚СЊ, РєР°Рє СЌС‚Рѕ РґРµР»Р°РµС‚СЃСЏ. РќРѕ Р·Р° СЌС‚Рѕ Р·РЅР°РЅРёРµ РїСЂРёРґРµС‚СЃСЏ Р·Р°РїР»Р°С‚РёС‚СЊ.
+		AI_Output (self, other,"Org_819_Drax_Creatures_06_03"); //РћС…РѕС‚РЅРёС‡СЊРё С‚СЂРѕС„РµРё РѕР±С‹С‡РЅРѕ РІС‹СЃРѕРєРѕ С†РµРЅСЏС‚СЃСЏ.
 		
 		Info_ClearChoices(Org_819_Drax_Creatures);
 		Info_AddChoice   (Org_819_Drax_Creatures, DIALOG_BACK 													,Org_819_Drax_Creatures_BACK);
-		Info_AddChoice   (Org_819_Drax_Creatures, "Ты просишь слишком много." 				,Org_819_Drax_Creatures_PrettyMuch);
+		Info_AddChoice   (Org_819_Drax_Creatures, "РўС‹ РїСЂРѕСЃРёС€СЊ СЃР»РёС€РєРѕРј РјРЅРѕРіРѕ." 				,Org_819_Drax_Creatures_PrettyMuch);
 		if (Knows_GetTeeth == FALSE)
 		{
-			Info_AddChoice   (Org_819_Drax_Creatures, "Добыча клыков (Цена: 1 очко обучения, 50 кусков руды)" 		,Org_819_Drax_Creatures_Zahn);
+			Info_AddChoice   (Org_819_Drax_Creatures, "Р”РѕР±С‹С‡Р° РєР»С‹РєРѕРІ (Р¦РµРЅР°: 1 РѕС‡РєРѕ РѕР±СѓС‡РµРЅРёСЏ, 50 РєСѓСЃРєРѕРІ СЂСѓРґС‹)" 		,Org_819_Drax_Creatures_Zahn);
 		};
 		if (Knows_GetFur == FALSE)
 		{
-			Info_AddChoice	 (Org_819_Drax_Creatures, "Добыча шкур (Цена: 1 очко обучения, 100 кусков руды)"		,Org_819_Drax_Creatures_Fell);
+			Info_AddChoice	 (Org_819_Drax_Creatures, "Р”РѕР±С‹С‡Р° С€РєСѓСЂ (Р¦РµРЅР°: 1 РѕС‡РєРѕ РѕР±СѓС‡РµРЅРёСЏ, 100 РєСѓСЃРєРѕРІ СЂСѓРґС‹)"		,Org_819_Drax_Creatures_Fell);
 		};
 		if (Knows_GetClaws == FALSE)
 		{
-			Info_AddChoice	 (Org_819_Drax_Creatures, "Добыча когтей (Цена: 1 очко обучения, 50 кусков руды)" 	,Org_819_Drax_Creatures_Kralle);
+			Info_AddChoice	 (Org_819_Drax_Creatures, "Р”РѕР±С‹С‡Р° РєРѕРіС‚РµР№ (Р¦РµРЅР°: 1 РѕС‡РєРѕ РѕР±СѓС‡РµРЅРёСЏ, 50 РєСѓСЃРєРѕРІ СЂСѓРґС‹)" 	,Org_819_Drax_Creatures_Kralle);
 		};
 		if (Knows_GetHide == FALSE)
 		{
-			Info_AddChoice	 (Org_819_Drax_Creatures, "Шкуры рептилий (Цена: 1 очко обучения, 100 кусков руды)"	,Org_819_Drax_Creatures_Haut);
+			Info_AddChoice	 (Org_819_Drax_Creatures, "РЁРєСѓСЂС‹ СЂРµРїС‚РёР»РёР№ (Р¦РµРЅР°: 1 РѕС‡РєРѕ РѕР±СѓС‡РµРЅРёСЏ, 100 РєСѓСЃРєРѕРІ СЂСѓРґС‹)"	,Org_819_Drax_Creatures_Haut);
 		};
 	}
 	else
 	{
-		AI_Output (self, other,"Org_819_Drax_Creatures_TaughtAll_06_00"); //Ну, вот, теперь я научил тебя всему, что знаю сам.
+		AI_Output (self, other,"Org_819_Drax_Creatures_TaughtAll_06_00"); //РќСѓ, РІРѕС‚, С‚РµРїРµСЂСЊ СЏ РЅР°СѓС‡РёР» С‚РµР±СЏ РІСЃРµРјСѓ, С‡С‚Рѕ Р·РЅР°СЋ СЃР°Рј.
 	};
 };
 
@@ -174,16 +174,16 @@ func void Org_819_Drax_Creatures_BACK()
 
 func void Org_819_Drax_Creatures_PrettyMuch()
 {
-	AI_Output (other, self,"Org_819_Drax_Creatures_PrettyMuch_15_00"); //Ты просишь слишком много.
-	AI_Output (self, other,"Org_819_Drax_Creatures_PrettyMuch_06_01"); //Конечно, ведь охота - хороший способ заработать руду.
-	AI_Output (self, other,"Org_819_Drax_Creatures_PrettyMuch_06_02"); //Если ты не знаешь, как правильно разделывать добычу, то все убитые тобой звери просто сгниют без пользы.
-	AI_Output (self, other,"Org_819_Drax_Creatures_PrettyMuch_06_03"); //А ты упустишь возможность заработать немного, продав их шкуры.
-	AI_Output (self, other,"Org_819_Drax_Creatures_PrettyMuch_06_04"); //На твоем месте я постарался бы научиться охотиться как можно быстрее.
+	AI_Output (other, self,"Org_819_Drax_Creatures_PrettyMuch_15_00"); //РўС‹ РїСЂРѕСЃРёС€СЊ СЃР»РёС€РєРѕРј РјРЅРѕРіРѕ.
+	AI_Output (self, other,"Org_819_Drax_Creatures_PrettyMuch_06_01"); //РљРѕРЅРµС‡РЅРѕ, РІРµРґСЊ РѕС…РѕС‚Р° - С…РѕСЂРѕС€РёР№ СЃРїРѕСЃРѕР± Р·Р°СЂР°Р±РѕС‚Р°С‚СЊ СЂСѓРґСѓ.
+	AI_Output (self, other,"Org_819_Drax_Creatures_PrettyMuch_06_02"); //Р•СЃР»Рё С‚С‹ РЅРµ Р·РЅР°РµС€СЊ, РєР°Рє РїСЂР°РІРёР»СЊРЅРѕ СЂР°Р·РґРµР»С‹РІР°С‚СЊ РґРѕР±С‹С‡Сѓ, С‚Рѕ РІСЃРµ СѓР±РёС‚С‹Рµ С‚РѕР±РѕР№ Р·РІРµСЂРё РїСЂРѕСЃС‚Рѕ СЃРіРЅРёСЋС‚ Р±РµР· РїРѕР»СЊР·С‹.
+	AI_Output (self, other,"Org_819_Drax_Creatures_PrettyMuch_06_03"); //Рђ С‚С‹ СѓРїСѓСЃС‚РёС€СЊ РІРѕР·РјРѕР¶РЅРѕСЃС‚СЊ Р·Р°СЂР°Р±РѕС‚Р°С‚СЊ РЅРµРјРЅРѕРіРѕ, РїСЂРѕРґР°РІ РёС… С€РєСѓСЂС‹.
+	AI_Output (self, other,"Org_819_Drax_Creatures_PrettyMuch_06_04"); //РќР° С‚РІРѕРµРј РјРµСЃС‚Рµ СЏ РїРѕСЃС‚Р°СЂР°Р»СЃСЏ Р±С‹ РЅР°СѓС‡РёС‚СЊСЃСЏ РѕС…РѕС‚РёС‚СЊСЃСЏ РєР°Рє РјРѕР¶РЅРѕ Р±С‹СЃС‚СЂРµРµ.
 };
 
 func void Org_819_Drax_Creatures_Zahn()
 {
-	AI_Output (other, self,"Org_819_Drax_Creatures_Zahn_15_00"); //Как добывать клыки?
+	AI_Output (other, self,"Org_819_Drax_Creatures_Zahn_15_00"); //РљР°Рє РґРѕР±С‹РІР°С‚СЊ РєР»С‹РєРё?
 	
 	if (Npc_HasItems(other,itminugget)>=50)
 	{
@@ -193,30 +193,30 @@ func void Org_819_Drax_Creatures_Zahn()
 			
 			B_GiveInvItems	(other, self,itminugget,50);
 			
-			PrintScreen	("Навык: добыча клыков", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
+			PrintScreen	("РќР°РІС‹Рє: РґРѕР±С‹С‡Р° РєР»С‹РєРѕРІ", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
 					
-			AI_Output (self, other,"Org_819_Drax_Creatures_Zahn_06_01"); //Ты должен следить за тем, чтобы клыки не сломались. Чтобы этого избежать, используй очень острый нож, как рычаг.
-			AI_Output (self, other,"Org_819_Drax_Creatures_Zahn_06_02"); //Клыки волков, глорхов и мракорисов ценятся выше всего.
+			AI_Output (self, other,"Org_819_Drax_Creatures_Zahn_06_01"); //РўС‹ РґРѕР»Р¶РµРЅ СЃР»РµРґРёС‚СЊ Р·Р° С‚РµРј, С‡С‚РѕР±С‹ РєР»С‹РєРё РЅРµ СЃР»РѕРјР°Р»РёСЃСЊ. Р§С‚РѕР±С‹ СЌС‚РѕРіРѕ РёР·Р±РµР¶Р°С‚СЊ, РёСЃРїРѕР»СЊР·СѓР№ РѕС‡РµРЅСЊ РѕСЃС‚СЂС‹Р№ РЅРѕР¶, РєР°Рє СЂС‹С‡Р°Рі.
+			AI_Output (self, other,"Org_819_Drax_Creatures_Zahn_06_02"); //РљР»С‹РєРё РІРѕР»РєРѕРІ, РіР»РѕСЂС…РѕРІ Рё РјСЂР°РєРѕСЂРёСЃРѕРІ С†РµРЅСЏС‚СЃСЏ РІС‹С€Рµ РІСЃРµРіРѕ.
 			
 			Knows_GetTeeth = TRUE;
 			Log_CreateTopic (GE_AnimalTrophies,LOG_NOTE);
-			B_LogEntry (GE_AnimalTrophies,"Навык добычи клыков: волк, орочья собака, глорх, жерх, пес-кровосос, мракорис.");
+			B_LogEntry (GE_AnimalTrophies,"РќР°РІС‹Рє РґРѕР±С‹С‡Рё РєР»С‹РєРѕРІ: РІРѕР»Рє, РѕСЂРѕС‡СЊСЏ СЃРѕР±Р°РєР°, РіР»РѕСЂС…, Р¶РµСЂС…, РїРµСЃ-РєСЂРѕРІРѕСЃРѕСЃ, РјСЂР°РєРѕСЂРёСЃ.");
 		}
 		else
 		{
-			AI_Output (self, other,"Org_819_Drax_Creatures_KEINE_LP_06_00"); //Ты должен набраться опыта, иначе ты ничему не сможешь научиться.
-			PrintScreen	("Недостаточно очков обучения!", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
+			AI_Output (self, other,"Org_819_Drax_Creatures_KEINE_LP_06_00"); //РўС‹ РґРѕР»Р¶РµРЅ РЅР°Р±СЂР°С‚СЊСЃСЏ РѕРїС‹С‚Р°, РёРЅР°С‡Рµ С‚С‹ РЅРёС‡РµРјСѓ РЅРµ СЃРјРѕР¶РµС€СЊ РЅР°СѓС‡РёС‚СЊСЃСЏ.
+			PrintScreen	("РќРµРґРѕСЃС‚Р°С‚РѕС‡РЅРѕ РѕС‡РєРѕРІ РѕР±СѓС‡РµРЅРёСЏ!", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
 		};
 	}
 	else
 	{
-		AI_Output (self, other,"Org_819_Drax_Creatures_KEIN_ERZ_06_00"); //У тебя нет руды. Как я уже сказал, здесь все имеет свою цену.
+		AI_Output (self, other,"Org_819_Drax_Creatures_KEIN_ERZ_06_00"); //РЈ С‚РµР±СЏ РЅРµС‚ СЂСѓРґС‹. РљР°Рє СЏ СѓР¶Рµ СЃРєР°Р·Р°Р», Р·РґРµСЃСЊ РІСЃРµ РёРјРµРµС‚ СЃРІРѕСЋ С†РµРЅСѓ.
 	};
 };
 
 func void Org_819_Drax_Creatures_Fell()
 {
-	AI_Output (other, self,"Org_819_Drax_Creatures_Fell_15_00"); //Как снимать шкуры? 
+	AI_Output (other, self,"Org_819_Drax_Creatures_Fell_15_00"); //РљР°Рє СЃРЅРёРјР°С‚СЊ С€РєСѓСЂС‹? 
 	
 	if (Npc_HasItems(other,itminugget)>=100)
 	{
@@ -226,24 +226,24 @@ func void Org_819_Drax_Creatures_Fell()
 			
 			B_GiveInvItems	(other, self, itminugget,100);
 			
-			PrintScreen	("Навык: добыча шкур", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
+			PrintScreen	("РќР°РІС‹Рє: РґРѕР±С‹С‡Р° С€РєСѓСЂ", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
 		
-			AI_Output (self, other,"Org_819_Drax_Creatures_Fell_06_01"); //Важно знать, что начинать разделывать тушу следует с головы. Шкуры здесь высоко ценятся, поэтому главное не повредить их при снятии.
-			AI_Output (self, other,"Org_819_Drax_Creatures_Fell_06_02"); //Из шкур волков и мракорисов шьют хорошую одежду. С практикой к тебе придет умение распознавать, годится та или иная шкура на одежду или нет.
+			AI_Output (self, other,"Org_819_Drax_Creatures_Fell_06_01"); //Р’Р°Р¶РЅРѕ Р·РЅР°С‚СЊ, С‡С‚Рѕ РЅР°С‡РёРЅР°С‚СЊ СЂР°Р·РґРµР»С‹РІР°С‚СЊ С‚СѓС€Сѓ СЃР»РµРґСѓРµС‚ СЃ РіРѕР»РѕРІС‹. РЁРєСѓСЂС‹ Р·РґРµСЃСЊ РІС‹СЃРѕРєРѕ С†РµРЅСЏС‚СЃСЏ, РїРѕСЌС‚РѕРјСѓ РіР»Р°РІРЅРѕРµ РЅРµ РїРѕРІСЂРµРґРёС‚СЊ РёС… РїСЂРё СЃРЅСЏС‚РёРё.
+			AI_Output (self, other,"Org_819_Drax_Creatures_Fell_06_02"); //РР· С€РєСѓСЂ РІРѕР»РєРѕРІ Рё РјСЂР°РєРѕСЂРёСЃРѕРІ С€СЊСЋС‚ С…РѕСЂРѕС€СѓСЋ РѕРґРµР¶РґСѓ. РЎ РїСЂР°РєС‚РёРєРѕР№ Рє С‚РµР±Рµ РїСЂРёРґРµС‚ СѓРјРµРЅРёРµ СЂР°СЃРїРѕР·РЅР°РІР°С‚СЊ, РіРѕРґРёС‚СЃСЏ С‚Р° РёР»Рё РёРЅР°СЏ С€РєСѓСЂР° РЅР° РѕРґРµР¶РґСѓ РёР»Рё РЅРµС‚.
 			
 			Knows_GetFur = TRUE;
 			Log_CreateTopic (GE_AnimalTrophies,LOG_NOTE);
-			B_LogEntry (GE_AnimalTrophies,"Навык добычи шкур: волк, орочья собака, маркорис, тролль.");
+			B_LogEntry (GE_AnimalTrophies,"РќР°РІС‹Рє РґРѕР±С‹С‡Рё С€РєСѓСЂ: РІРѕР»Рє, РѕСЂРѕС‡СЊСЏ СЃРѕР±Р°РєР°, РјР°СЂРєРѕСЂРёСЃ, С‚СЂРѕР»Р»СЊ.");
 		}
 		else
 		{
-			AI_Output (self, other,"Org_819_Drax_Creatures_KEINE_LP_06_01"); //Твоего опыта недостаточно, чтобы воспользоваться моим советом.
-			PrintScreen	("Недостаточно очков обучения!", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
+			AI_Output (self, other,"Org_819_Drax_Creatures_KEINE_LP_06_01"); //РўРІРѕРµРіРѕ РѕРїС‹С‚Р° РЅРµРґРѕСЃС‚Р°С‚РѕС‡РЅРѕ, С‡С‚РѕР±С‹ РІРѕСЃРїРѕР»СЊР·РѕРІР°С‚СЊСЃСЏ РјРѕРёРј СЃРѕРІРµС‚РѕРј.
+			PrintScreen	("РќРµРґРѕСЃС‚Р°С‚РѕС‡РЅРѕ РѕС‡РєРѕРІ РѕР±СѓС‡РµРЅРёСЏ!", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
 		};
 	}
 	else
 	{
-		AI_Output (self, other,"Org_819_Drax_Creatures_KEIN_ERZ_06_01"); //У тебя нет руды. Как я уже сказал, здесь все имеет свою цену.
+		AI_Output (self, other,"Org_819_Drax_Creatures_KEIN_ERZ_06_01"); //РЈ С‚РµР±СЏ РЅРµС‚ СЂСѓРґС‹. РљР°Рє СЏ СѓР¶Рµ СЃРєР°Р·Р°Р», Р·РґРµСЃСЊ РІСЃРµ РёРјРµРµС‚ СЃРІРѕСЋ С†РµРЅСѓ.
 	};
 };
 
@@ -257,25 +257,25 @@ func void Org_819_Drax_Creatures_Kralle()
 			
 			B_GiveInvItems	(other, self,itminugget,50);
 			
-			PrintScreen	("Навык: добыча когтей", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
+			PrintScreen	("РќР°РІС‹Рє: РґРѕР±С‹С‡Р° РєРѕРіС‚РµР№", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
 			
-			AI_Output (other, self,"Org_819_Drax_Creatures_Kralle_15_00"); //Научи меня добывать когти.  
-			AI_Output (self, other,"Org_819_Drax_Creatures_Kralle_06_01"); //Это проще, чем кажется на первый взгляд. Нужно отогнуть коготь вперед, но при этом не пытаться его выдернуть и не отгибать назад.
-			AI_Output (self, other,"Org_819_Drax_Creatures_Kralle_06_02"); //Конечно, пригодные когти можно добыть не у всякого зверя. Обычно в дело идут когти ящериц.
+			AI_Output (other, self,"Org_819_Drax_Creatures_Kralle_15_00"); //РќР°СѓС‡Рё РјРµРЅСЏ РґРѕР±С‹РІР°С‚СЊ РєРѕРіС‚Рё.  
+			AI_Output (self, other,"Org_819_Drax_Creatures_Kralle_06_01"); //Р­С‚Рѕ РїСЂРѕС‰Рµ, С‡РµРј РєР°Р¶РµС‚СЃСЏ РЅР° РїРµСЂРІС‹Р№ РІР·РіР»СЏРґ. РќСѓР¶РЅРѕ РѕС‚РѕРіРЅСѓС‚СЊ РєРѕРіРѕС‚СЊ РІРїРµСЂРµРґ, РЅРѕ РїСЂРё СЌС‚РѕРј РЅРµ РїС‹С‚Р°С‚СЊСЃСЏ РµРіРѕ РІС‹РґРµСЂРЅСѓС‚СЊ Рё РЅРµ РѕС‚РіРёР±Р°С‚СЊ РЅР°Р·Р°Рґ.
+			AI_Output (self, other,"Org_819_Drax_Creatures_Kralle_06_02"); //РљРѕРЅРµС‡РЅРѕ, РїСЂРёРіРѕРґРЅС‹Рµ РєРѕРіС‚Рё РјРѕР¶РЅРѕ РґРѕР±С‹С‚СЊ РЅРµ Сѓ РІСЃСЏРєРѕРіРѕ Р·РІРµСЂСЏ. РћР±С‹С‡РЅРѕ РІ РґРµР»Рѕ РёРґСѓС‚ РєРѕРіС‚Рё СЏС‰РµСЂРёС†.
 			
 			Knows_GetClaws = TRUE;
 			Log_CreateTopic (GE_AnimalTrophies,LOG_NOTE);
-			B_LogEntry (GE_AnimalTrophies,"Навык добычи когтей: ящерица, глорх, шныг, жерх, штек.");
+			B_LogEntry (GE_AnimalTrophies,"РќР°РІС‹Рє РґРѕР±С‹С‡Рё РєРѕРіС‚РµР№: СЏС‰РµСЂРёС†Р°, РіР»РѕСЂС…, С€РЅС‹Рі, Р¶РµСЂС…, С€С‚РµРє.");
 		}
 		else
 		{
-			AI_Output (self, other,"Org_819_Drax_Creatures_KEINE_LP_06_02"); //Твоего опыта недостаточно, чтобы воспользоваться моим советом.
-			PrintScreen	("Недостаточно очков обучения!", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
+			AI_Output (self, other,"Org_819_Drax_Creatures_KEINE_LP_06_02"); //РўРІРѕРµРіРѕ РѕРїС‹С‚Р° РЅРµРґРѕСЃС‚Р°С‚РѕС‡РЅРѕ, С‡С‚РѕР±С‹ РІРѕСЃРїРѕР»СЊР·РѕРІР°С‚СЊСЃСЏ РјРѕРёРј СЃРѕРІРµС‚РѕРј.
+			PrintScreen	("РќРµРґРѕСЃС‚Р°С‚РѕС‡РЅРѕ РѕС‡РєРѕРІ РѕР±СѓС‡РµРЅРёСЏ!", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
 		};
 	}
 	else
 	{
-		AI_Output (self, other,"Org_819_Drax_Creatures_KEIN_ERZ_06_02"); //У тебя нет руды. Как я уже сказал, здесь все имеет свою цену.
+		AI_Output (self, other,"Org_819_Drax_Creatures_KEIN_ERZ_06_02"); //РЈ С‚РµР±СЏ РЅРµС‚ СЂСѓРґС‹. РљР°Рє СЏ СѓР¶Рµ СЃРєР°Р·Р°Р», Р·РґРµСЃСЊ РІСЃРµ РёРјРµРµС‚ СЃРІРѕСЋ С†РµРЅСѓ.
 	};
 };
 
@@ -289,25 +289,25 @@ func void Org_819_Drax_Creatures_Haut()
 						
 			B_GiveInvItems	(other, self,itminugget,100);
 			
-			PrintScreen	("Навык: добыча шкур рептилий", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
+			PrintScreen	("РќР°РІС‹Рє: РґРѕР±С‹С‡Р° С€РєСѓСЂ СЂРµРїС‚РёР»РёР№", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
 				
-			AI_Output (other, self,"Org_819_Drax_Creatures_Haut_15_00"); //Что нужно делать, чтобы снимать шкуры с рептилий?
-			AI_Output (self, other,"Org_819_Drax_Creatures_Haut_06_01"); //Для этого подходят не все рептилии, а лишь шныги и болотожоры.
-			AI_Output (self, other,"Org_819_Drax_Creatures_Haut_06_02"); //Если ты подрежешь шкуру по краям, то ты сможешь легко ее снять. Теперь ты сможешь легко справляться с этой задачей.
+			AI_Output (other, self,"Org_819_Drax_Creatures_Haut_15_00"); //Р§С‚Рѕ РЅСѓР¶РЅРѕ РґРµР»Р°С‚СЊ, С‡С‚РѕР±С‹ СЃРЅРёРјР°С‚СЊ С€РєСѓСЂС‹ СЃ СЂРµРїС‚РёР»РёР№?
+			AI_Output (self, other,"Org_819_Drax_Creatures_Haut_06_01"); //Р”Р»СЏ СЌС‚РѕРіРѕ РїРѕРґС…РѕРґСЏС‚ РЅРµ РІСЃРµ СЂРµРїС‚РёР»РёРё, Р° Р»РёС€СЊ С€РЅС‹РіРё Рё Р±РѕР»РѕС‚РѕР¶РѕСЂС‹.
+			AI_Output (self, other,"Org_819_Drax_Creatures_Haut_06_02"); //Р•СЃР»Рё С‚С‹ РїРѕРґСЂРµР¶РµС€СЊ С€РєСѓСЂСѓ РїРѕ РєСЂР°СЏРј, С‚Рѕ С‚С‹ СЃРјРѕР¶РµС€СЊ Р»РµРіРєРѕ РµРµ СЃРЅСЏС‚СЊ. РўРµРїРµСЂСЊ С‚С‹ СЃРјРѕР¶РµС€СЊ Р»РµРіРєРѕ СЃРїСЂР°РІР»СЏС‚СЊСЃСЏ СЃ СЌС‚РѕР№ Р·Р°РґР°С‡РµР№.
 				
 			Knows_GetHide = TRUE;
 			
 			Log_CreateTopic (GE_AnimalTrophies,LOG_NOTE);
-			B_LogEntry (GE_AnimalTrophies,"Навык добычи шкур рептилий: шныг, болотожор.");
+			B_LogEntry (GE_AnimalTrophies,"РќР°РІС‹Рє РґРѕР±С‹С‡Рё С€РєСѓСЂ СЂРµРїС‚РёР»РёР№: С€РЅС‹Рі, Р±РѕР»РѕС‚РѕР¶РѕСЂ.");
 		}
 		else
 		{
-			AI_Output (self, other,"Org_819_Drax_Creatures_KEINE_LP_06_03"); //Ты должен получить больше опыта, прежде чем чему-то учиться у меня.
-			PrintScreen	("Недостаточно очков обучения!", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
+			AI_Output (self, other,"Org_819_Drax_Creatures_KEINE_LP_06_03"); //РўС‹ РґРѕР»Р¶РµРЅ РїРѕР»СѓС‡РёС‚СЊ Р±РѕР»СЊС€Рµ РѕРїС‹С‚Р°, РїСЂРµР¶РґРµ С‡РµРј С‡РµРјСѓ-С‚Рѕ СѓС‡РёС‚СЊСЃСЏ Сѓ РјРµРЅСЏ.
+			PrintScreen	("РќРµРґРѕСЃС‚Р°С‚РѕС‡РЅРѕ РѕС‡РєРѕРІ РѕР±СѓС‡РµРЅРёСЏ!", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
 		};
 	}
 	else
 	{
-		AI_Output (self, other,"Org_819_Drax_Creatures_KEIN_ERZ_06_03"); //Сначала заплати мне. Как говорится - всему своя цена.
+		AI_Output (self, other,"Org_819_Drax_Creatures_KEIN_ERZ_06_03"); //РЎРЅР°С‡Р°Р»Р° Р·Р°РїР»Р°С‚Рё РјРЅРµ. РљР°Рє РіРѕРІРѕСЂРёС‚СЃСЏ - РІСЃРµРјСѓ СЃРІРѕСЏ С†РµРЅР°.
 	};
 };

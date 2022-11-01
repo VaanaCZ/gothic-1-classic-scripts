@@ -33,7 +33,7 @@ instance DIA_845_Hello (C_INFO)
 	condition	= DIA_845_Hello_Condition;
 	information	= DIA_845_Hello_Info;
 	permanent	= 0;
-	description	= "Что ты делаешь?";
+	description	= "Р§С‚Рѕ С‚С‹ РґРµР»Р°РµС€СЊ?";
 };                       
 
 FUNC int DIA_845_Hello_Condition()
@@ -43,13 +43,13 @@ FUNC int DIA_845_Hello_Condition()
 
 FUNC VOID DIA_845_Hello_Info()
 {
-	AI_Output (other, self,"DIA_845_Hello_15_00"); //Что ты делаешь?
-	AI_Output (self, other,"DIA_845_Hello_13_01"); //Я работаю на Лорда.
+	AI_Output (other, self,"DIA_845_Hello_15_00"); //Р§С‚Рѕ С‚С‹ РґРµР»Р°РµС€СЊ?
+	AI_Output (self, other,"DIA_845_Hello_13_01"); //РЇ СЂР°Р±РѕС‚Р°СЋ РЅР° Р›РѕСЂРґР°.
 	
 	var C_NPC Lefty; Lefty = Hlp_GetNpc (Org_844_Lefty);
 	if (!Npc_IsDead(Lefty))
 	{
-		AI_Output (self, other,"DIA_845_Hello_13_02"); //Если тебе что-нибудь нужно, поговори с Лефти.
+		AI_Output (self, other,"DIA_845_Hello_13_02"); //Р•СЃР»Рё С‚РµР±Рµ С‡С‚Рѕ-РЅРёР±СѓРґСЊ РЅСѓР¶РЅРѕ, РїРѕРіРѕРІРѕСЂРё СЃ Р›РµС„С‚Рё.
 	};
 };
 

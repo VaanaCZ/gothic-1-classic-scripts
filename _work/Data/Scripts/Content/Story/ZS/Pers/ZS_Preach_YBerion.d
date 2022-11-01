@@ -1,7 +1,7 @@
 /****************************************************
 *               personalisierter TA                 *
-*   Y¥Berion sucht PREACH-FP: beginnt Ansprache     *
-*   ‹bernahme in Predigt-Sizuation von Y¥Berion?    *
+*   Y“ëBerion sucht PREACH-FP: beginnt Ansprache     *
+*   –¨bernahme in Predigt-Sizuation von Y“ëBerion?    *
 ****************************************************/
 
 
@@ -10,7 +10,7 @@ func void ZS_Preach_YBerion ()  //### Freepoint in der Welt fehlt noch
     PrintDebugNpc(PD_TA_FRAME,"ZS_Preach_YBerion");
     
 	B_SetPerception (self);    
-	AI_SetWalkmode (self,NPC_WALK);		// Walkmode f¸r den Zustand 
+	AI_SetWalkmode (self,NPC_WALK);		// Walkmode f—år den Zustand 
 	if !(Npc_IsOnFP(self,"PREACH"))
 	{
 		AI_GotoWP(self, self.wp);               // Gehe zum Tagesablaufstart
@@ -31,15 +31,15 @@ func void ZS_Preach_YBerion_Loop ()
 	preachtime = Hlp_Random (100);
 	if (preachtime <= 3)
 	{
-		AI_Output(self, NULL,"ZS_Preach_YBerion01");	//—Ôˇ˘ËÈ „Ó‚ÓËÎ ÒÓ ÏÌÓÈ!
+		AI_Output(self, NULL,"ZS_Preach_YBerion01");	//–°–ø—è—â–∏–π –≥–æ–≤–æ—Ä–∏–ª —Å–æ –º–Ω–æ–π!
 	} 
 	else if (preachtime >= 98)
 	{
-		AI_Output(self, NULL,"ZS_Preach_YBerion02");	//—Ôˇ˘ËÈ ÓÒ‚Ó·Ó‰ËÚ Ì‡Ò.
+		AI_Output(self, NULL,"ZS_Preach_YBerion02");	//–°–ø—è—â–∏–π –æ—Å–≤–æ–±–æ–¥–∏—Ç –Ω–∞—Å.
 	}
 	else if (preachtime >= 95)
 	{
-		AI_Output(self, NULL,"ZS_Preach_YBerion03");	//œÓ·Û‰ËÒ¸, Ó —Ôˇ˘ËÈ!
+		AI_Output(self, NULL,"ZS_Preach_YBerion03");	//–ü—Ä–æ–±—É–¥–∏—Å—å, –æ –°–ø—è—â–∏–π!
 	};
 	AI_Wait(self,1);
 };

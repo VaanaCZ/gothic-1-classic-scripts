@@ -20,7 +20,7 @@ FUNC INT DIA_Orry_PreExit_Condition()
 
 FUNC VOID DIA_Orry_PreExit_Info()
 {
-	AI_Output (self, other,"DIA_Orry_PreExit_06_00"); //Постарайся добраться до Старого лагеря живым!
+	AI_Output (self, other,"DIA_Orry_PreExit_06_00"); //РџРѕСЃС‚Р°СЂР°Р№СЃСЏ РґРѕР±СЂР°С‚СЊСЃСЏ РґРѕ РЎС‚Р°СЂРѕРіРѕ Р»Р°РіРµСЂСЏ Р¶РёРІС‹Рј!
 	AI_StopProcessInfos	( self );
 };
 
@@ -62,7 +62,7 @@ INSTANCE DIA_Orry_GuardGate (C_INFO)
 	condition		= DIA_Orry_GuardGate_Condition;
 	information		= DIA_Orry_GuardGate_Info;
 	permanent		= 0;
-	description		= "Что ты здесь делаешь?"; 
+	description		= "Р§С‚Рѕ С‚С‹ Р·РґРµСЃСЊ РґРµР»Р°РµС€СЊ?"; 
 };
 
 FUNC INT DIA_Orry_GuardGate_Condition()
@@ -75,30 +75,30 @@ FUNC INT DIA_Orry_GuardGate_Condition()
 
 FUNC VOID DIA_Orry_GuardGate_Info()
 {
-	AI_Output (other, self,"DIA_Orry_GuardGate_15_00"); //Что ты здесь делаешь?
-	AI_Output (self, other,"DIA_Orry_GuardGate_06_01"); //Контролирую, чтобы никто не подошел к месту обмена. В особенности эти головорезы из Нового лагеря.
-	AI_Output (self, other,"DIA_Orry_GuardGate_06_02"); //Ты новенький, не так ли? Тебя ведь только сегодня забросили к нам?
-	AI_Output (other, self,"DIA_Orry_GuardGate_15_03"); //Да, все так и есть.
-	AI_Output (self, other,"DIA_Orry_GuardGate_06_04"); //Держись подальше от парней из Нового лагеря!
-	AI_Output (self, other,"DIA_Orry_GuardGate_06_05"); //Я, да и все остальные, кого ты видел в месте обмена, работаем на Старый лагерь.
-	AI_Output (self, other,"DIA_Orry_GuardGate_06_06"); //С Диего... ты уже говорил с ним?
+	AI_Output (other, self,"DIA_Orry_GuardGate_15_00"); //Р§С‚Рѕ С‚С‹ Р·РґРµСЃСЊ РґРµР»Р°РµС€СЊ?
+	AI_Output (self, other,"DIA_Orry_GuardGate_06_01"); //РљРѕРЅС‚СЂРѕР»РёСЂСѓСЋ, С‡С‚РѕР±С‹ РЅРёРєС‚Рѕ РЅРµ РїРѕРґРѕС€РµР» Рє РјРµСЃС‚Сѓ РѕР±РјРµРЅР°. Р’ РѕСЃРѕР±РµРЅРЅРѕСЃС‚Рё СЌС‚Рё РіРѕР»РѕРІРѕСЂРµР·С‹ РёР· РќРѕРІРѕРіРѕ Р»Р°РіРµСЂСЏ.
+	AI_Output (self, other,"DIA_Orry_GuardGate_06_02"); //РўС‹ РЅРѕРІРµРЅСЊРєРёР№, РЅРµ С‚Р°Рє Р»Рё? РўРµР±СЏ РІРµРґСЊ С‚РѕР»СЊРєРѕ СЃРµРіРѕРґРЅСЏ Р·Р°Р±СЂРѕСЃРёР»Рё Рє РЅР°Рј?
+	AI_Output (other, self,"DIA_Orry_GuardGate_15_03"); //Р”Р°, РІСЃРµ С‚Р°Рє Рё РµСЃС‚СЊ.
+	AI_Output (self, other,"DIA_Orry_GuardGate_06_04"); //Р”РµСЂР¶РёСЃСЊ РїРѕРґР°Р»СЊС€Рµ РѕС‚ РїР°СЂРЅРµР№ РёР· РќРѕРІРѕРіРѕ Р»Р°РіРµСЂСЏ!
+	AI_Output (self, other,"DIA_Orry_GuardGate_06_05"); //РЇ, РґР° Рё РІСЃРµ РѕСЃС‚Р°Р»СЊРЅС‹Рµ, РєРѕРіРѕ С‚С‹ РІРёРґРµР» РІ РјРµСЃС‚Рµ РѕР±РјРµРЅР°, СЂР°Р±РѕС‚Р°РµРј РЅР° РЎС‚Р°СЂС‹Р№ Р»Р°РіРµСЂСЊ.
+	AI_Output (self, other,"DIA_Orry_GuardGate_06_06"); //РЎ Р”РёРµРіРѕ... С‚С‹ СѓР¶Рµ РіРѕРІРѕСЂРёР» СЃ РЅРёРј?
 	Info_ClearChoices	(DIA_Orry_GuardGate );
-	Info_AddChoice		(DIA_Orry_GuardGate,"Еще нет."	,DIA_Orry_GuardGate_No);
-	Info_AddChoice		(DIA_Orry_GuardGate,"Да, поговорил."	,DIA_Orry_GuardGate_Yes);
+	Info_AddChoice		(DIA_Orry_GuardGate,"Р•С‰Рµ РЅРµС‚."	,DIA_Orry_GuardGate_No);
+	Info_AddChoice		(DIA_Orry_GuardGate,"Р”Р°, РїРѕРіРѕРІРѕСЂРёР»."	,DIA_Orry_GuardGate_Yes);
 };
 
 func void DIA_Orry_GuardGate_No()
 {
-	AI_Output (other, self,"DIA_Orry_GuardGate_No_15_00"); //Еще нет.
-	AI_Output (self, other,"DIA_Orry_GuardGate_No_06_01"); //Тогда сделай это! Он у нас единственный, кто занимается новичками.
-	AI_Output (self, other,"DIA_Orry_GuardGate_No_06_02"); //Много знает о колонии, а это полезные знания для такого новичка, как ты.
+	AI_Output (other, self,"DIA_Orry_GuardGate_No_15_00"); //Р•С‰Рµ РЅРµС‚.
+	AI_Output (self, other,"DIA_Orry_GuardGate_No_06_01"); //РўРѕРіРґР° СЃРґРµР»Р°Р№ СЌС‚Рѕ! РћРЅ Сѓ РЅР°СЃ РµРґРёРЅСЃС‚РІРµРЅРЅС‹Р№, РєС‚Рѕ Р·Р°РЅРёРјР°РµС‚СЃСЏ РЅРѕРІРёС‡РєР°РјРё.
+	AI_Output (self, other,"DIA_Orry_GuardGate_No_06_02"); //РњРЅРѕРіРѕ Р·РЅР°РµС‚ Рѕ РєРѕР»РѕРЅРёРё, Р° СЌС‚Рѕ РїРѕР»РµР·РЅС‹Рµ Р·РЅР°РЅРёСЏ РґР»СЏ С‚Р°РєРѕРіРѕ РЅРѕРІРёС‡РєР°, РєР°Рє С‚С‹.
 	Info_ClearChoices	(DIA_Orry_GuardGate );
 };
 
 func void DIA_Orry_GuardGate_Yes()
 {
-	AI_Output (other, self,"DIA_Orry_GuardGate_Yes_15_00"); //Да, поговорил.
-	AI_Output (self, other,"DIA_Orry_GuardGate_Yes_06_01"); //Хорошо. Тогда ты уже знаешь, что здесь к чему.
+	AI_Output (other, self,"DIA_Orry_GuardGate_Yes_15_00"); //Р”Р°, РїРѕРіРѕРІРѕСЂРёР».
+	AI_Output (self, other,"DIA_Orry_GuardGate_Yes_06_01"); //РҐРѕСЂРѕС€Рѕ. РўРѕРіРґР° С‚С‹ СѓР¶Рµ Р·РЅР°РµС€СЊ, С‡С‚Рѕ Р·РґРµСЃСЊ Рє С‡РµРјСѓ.
 	Info_ClearChoices	(DIA_Orry_GuardGate );
 };
 
@@ -113,7 +113,7 @@ INSTANCE DIA_Orry_NewCamp (C_INFO)
 	condition		= DIA_Orry_NewCamp_Condition;
 	information		= DIA_Orry_NewCamp_Info;
 	permanent		= 0;
-	description		= "Почему ты советуешь держаться подальше от людей из Нового лагеря?"; 
+	description		= "РџРѕС‡РµРјСѓ С‚С‹ СЃРѕРІРµС‚СѓРµС€СЊ РґРµСЂР¶Р°С‚СЊСЃСЏ РїРѕРґР°Р»СЊС€Рµ РѕС‚ Р»СЋРґРµР№ РёР· РќРѕРІРѕРіРѕ Р»Р°РіРµСЂСЏ?"; 
 };
 
 FUNC INT DIA_Orry_NewCamp_Condition()
@@ -126,9 +126,9 @@ FUNC INT DIA_Orry_NewCamp_Condition()
 
 FUNC VOID DIA_Orry_NewCamp_Info()
 {
-	AI_Output (other, self,"DIA_Orry_NewCamp_15_00"); //Почему ты советуешь мне держаться подальше от людей из Нового лагеря?
-	AI_Output (self, other,"DIA_Orry_NewCamp_06_01"); //Новый лагерь - это тебе не Старый, где тихо и безопасно.
-	AI_Output (self, other,"DIA_Orry_NewCamp_06_02"); //Новый лагерь не получает товары из внешнего мира, поэтому все что им нужно, они просто крадут.
+	AI_Output (other, self,"DIA_Orry_NewCamp_15_00"); //РџРѕС‡РµРјСѓ С‚С‹ СЃРѕРІРµС‚СѓРµС€СЊ РјРЅРµ РґРµСЂР¶Р°С‚СЊСЃСЏ РїРѕРґР°Р»СЊС€Рµ РѕС‚ Р»СЋРґРµР№ РёР· РќРѕРІРѕРіРѕ Р»Р°РіРµСЂСЏ?
+	AI_Output (self, other,"DIA_Orry_NewCamp_06_01"); //РќРѕРІС‹Р№ Р»Р°РіРµСЂСЊ - СЌС‚Рѕ С‚РµР±Рµ РЅРµ РЎС‚Р°СЂС‹Р№, РіРґРµ С‚РёС…Рѕ Рё Р±РµР·РѕРїР°СЃРЅРѕ.
+	AI_Output (self, other,"DIA_Orry_NewCamp_06_02"); //РќРѕРІС‹Р№ Р»Р°РіРµСЂСЊ РЅРµ РїРѕР»СѓС‡Р°РµС‚ С‚РѕРІР°СЂС‹ РёР· РІРЅРµС€РЅРµРіРѕ РјРёСЂР°, РїРѕСЌС‚РѕРјСѓ РІСЃРµ С‡С‚Рѕ РёРј РЅСѓР¶РЅРѕ, РѕРЅРё РїСЂРѕСЃС‚Рѕ РєСЂР°РґСѓС‚.
 };
 
 // **************************************************
@@ -142,7 +142,7 @@ INSTANCE DIA_Orry_OldCamp (C_INFO)
 	condition		= DIA_Orry_OldCamp_Condition;
 	information		= DIA_Orry_OldCamp_Info;
 	permanent		= 0;
-	description		= "А Старый лагерь?"; 
+	description		= "Рђ РЎС‚Р°СЂС‹Р№ Р»Р°РіРµСЂСЊ?"; 
 };
 
 FUNC INT DIA_Orry_OldCamp_Condition()
@@ -155,9 +155,9 @@ FUNC INT DIA_Orry_OldCamp_Condition()
 
 FUNC VOID DIA_Orry_OldCamp_Info()
 {
-	AI_Output (other, self,"DIA_Orry_OldCamp_15_00"); //А Старый лагерь?
-	AI_Output (self, other,"DIA_Orry_OldCamp_06_01"); //Здесь всем заправляют Бароны. Следом за ними идет Стража и Призраки. Ну, а рудокопы в самом низу этой цепочки.
-	AI_Output (self, other,"DIA_Orry_OldCamp_06_02"); //Каждый, кто прибывает сюда, сначала работает рудокопом. Если хочет чего-то больше, то ему придется потрудиться, чтобы потом стать Призраком.
+	AI_Output (other, self,"DIA_Orry_OldCamp_15_00"); //Рђ РЎС‚Р°СЂС‹Р№ Р»Р°РіРµСЂСЊ?
+	AI_Output (self, other,"DIA_Orry_OldCamp_06_01"); //Р—РґРµСЃСЊ РІСЃРµРј Р·Р°РїСЂР°РІР»СЏСЋС‚ Р‘Р°СЂРѕРЅС‹. РЎР»РµРґРѕРј Р·Р° РЅРёРјРё РёРґРµС‚ РЎС‚СЂР°Р¶Р° Рё РџСЂРёР·СЂР°РєРё. РќСѓ, Р° СЂСѓРґРѕРєРѕРїС‹ РІ СЃР°РјРѕРј РЅРёР·Сѓ СЌС‚РѕР№ С†РµРїРѕС‡РєРё.
+	AI_Output (self, other,"DIA_Orry_OldCamp_06_02"); //РљР°Р¶РґС‹Р№, РєС‚Рѕ РїСЂРёР±С‹РІР°РµС‚ СЃСЋРґР°, СЃРЅР°С‡Р°Р»Р° СЂР°Р±РѕС‚Р°РµС‚ СЂСѓРґРѕРєРѕРїРѕРј. Р•СЃР»Рё С…РѕС‡РµС‚ С‡РµРіРѕ-С‚Рѕ Р±РѕР»СЊС€Рµ, С‚Рѕ РµРјСѓ РїСЂРёРґРµС‚СЃСЏ РїРѕС‚СЂСѓРґРёС‚СЊСЃСЏ, С‡С‚РѕР±С‹ РїРѕС‚РѕРј СЃС‚Р°С‚СЊ РџСЂРёР·СЂР°РєРѕРј.
 };
 
 // **************************************************
@@ -171,7 +171,7 @@ INSTANCE DIA_Orry_Shore (C_INFO)
 	condition		= DIA_Orry_Shore_Condition;
 	information		= DIA_Orry_Shore_Info;
 	permanent		= 0;
-	description		= "Когда я вышел на берег, один из типов встретил меня кулаком..."; 
+	description		= "РљРѕРіРґР° СЏ РІС‹С€РµР» РЅР° Р±РµСЂРµРі, РѕРґРёРЅ РёР· С‚РёРїРѕРІ РІСЃС‚СЂРµС‚РёР» РјРµРЅСЏ РєСѓР»Р°РєРѕРј..."; 
 };
 
 FUNC INT DIA_Orry_Shore_Condition()
@@ -184,10 +184,10 @@ FUNC INT DIA_Orry_Shore_Condition()
 
 FUNC VOID DIA_Orry_Shore_Info()
 {
-	AI_Output (other, self,"DIA_Orry_Shore_15_00"); //Когда я вышел на берег, один из типов встретил меня кулаком...
-	AI_Output (self, other,"DIA_Orry_Shore_06_01"); //Так со всеми новенькими, своего рода 'боевое крещение'.
-	AI_Output (other, self,"DIA_Orry_Shore_15_02"); //А в Старом лагере много еще таких людей?
-	AI_Output (self, other,"DIA_Orry_Shore_06_03"); //Конечно, всегда можно встретить какого-нибудь негодяя, но если ты платишь за свою защиту, тебя не тронут.
+	AI_Output (other, self,"DIA_Orry_Shore_15_00"); //РљРѕРіРґР° СЏ РІС‹С€РµР» РЅР° Р±РµСЂРµРі, РѕРґРёРЅ РёР· С‚РёРїРѕРІ РІСЃС‚СЂРµС‚РёР» РјРµРЅСЏ РєСѓР»Р°РєРѕРј...
+	AI_Output (self, other,"DIA_Orry_Shore_06_01"); //РўР°Рє СЃРѕ РІСЃРµРјРё РЅРѕРІРµРЅСЊРєРёРјРё, СЃРІРѕРµРіРѕ СЂРѕРґР° 'Р±РѕРµРІРѕРµ РєСЂРµС‰РµРЅРёРµ'.
+	AI_Output (other, self,"DIA_Orry_Shore_15_02"); //Рђ РІ РЎС‚Р°СЂРѕРј Р»Р°РіРµСЂРµ РјРЅРѕРіРѕ РµС‰Рµ С‚Р°РєРёС… Р»СЋРґРµР№?
+	AI_Output (self, other,"DIA_Orry_Shore_06_03"); //РљРѕРЅРµС‡РЅРѕ, РІСЃРµРіРґР° РјРѕР¶РЅРѕ РІСЃС‚СЂРµС‚РёС‚СЊ РєР°РєРѕРіРѕ-РЅРёР±СѓРґСЊ РЅРµРіРѕРґСЏСЏ, РЅРѕ РµСЃР»Рё С‚С‹ РїР»Р°С‚РёС€СЊ Р·Р° СЃРІРѕСЋ Р·Р°С‰РёС‚Сѓ, С‚РµР±СЏ РЅРµ С‚СЂРѕРЅСѓС‚.
 };
 
 // **************************************************
@@ -201,7 +201,7 @@ INSTANCE DIA_Orry_Woman (C_INFO)
 	condition		= DIA_Orry_Woman_Condition;
 	information		= DIA_Orry_Woman_Info;
 	permanent		= 0;
-	description		= "Я видел, как сюда вместе с товарами отправили какую-то женщину."; 
+	description		= "РЇ РІРёРґРµР», РєР°Рє СЃСЋРґР° РІРјРµСЃС‚Рµ СЃ С‚РѕРІР°СЂР°РјРё РѕС‚РїСЂР°РІРёР»Рё РєР°РєСѓСЋ-С‚Рѕ Р¶РµРЅС‰РёРЅСѓ."; 
 };
 
 FUNC INT DIA_Orry_Woman_Condition()
@@ -214,11 +214,11 @@ FUNC INT DIA_Orry_Woman_Condition()
 
 FUNC VOID DIA_Orry_Woman_Info()
 {
-	AI_Output (other, self,"DIA_Orry_Woman_15_00"); //Я видел, как сюда вместе с товарами отправили какую-то женщину.
-	AI_Output (self, other,"DIA_Orry_Woman_06_01"); //Да, Бароны получают все, что хотят.
-	AI_Output (other, self,"DIA_Orry_Woman_15_02"); //Ты хочешь сказать, что за руду король присылает сюда женщин?
-	AI_Output (self, other,"DIA_Orry_Woman_06_03"); //Они такие же преступницы, как и все мы здесь. Они нужны Гомезу, а потому не сидят в тюремных стенах там.
-	AI_Output (self, other,"DIA_Orry_Woman_06_04"); //Хотя, не знаю, что хуже...
+	AI_Output (other, self,"DIA_Orry_Woman_15_00"); //РЇ РІРёРґРµР», РєР°Рє СЃСЋРґР° РІРјРµСЃС‚Рµ СЃ С‚РѕРІР°СЂР°РјРё РѕС‚РїСЂР°РІРёР»Рё РєР°РєСѓСЋ-С‚Рѕ Р¶РµРЅС‰РёРЅСѓ.
+	AI_Output (self, other,"DIA_Orry_Woman_06_01"); //Р”Р°, Р‘Р°СЂРѕРЅС‹ РїРѕР»СѓС‡Р°СЋС‚ РІСЃРµ, С‡С‚Рѕ С…РѕС‚СЏС‚.
+	AI_Output (other, self,"DIA_Orry_Woman_15_02"); //РўС‹ С…РѕС‡РµС€СЊ СЃРєР°Р·Р°С‚СЊ, С‡С‚Рѕ Р·Р° СЂСѓРґСѓ РєРѕСЂРѕР»СЊ РїСЂРёСЃС‹Р»Р°РµС‚ СЃСЋРґР° Р¶РµРЅС‰РёРЅ?
+	AI_Output (self, other,"DIA_Orry_Woman_06_03"); //РћРЅРё С‚Р°РєРёРµ Р¶Рµ РїСЂРµСЃС‚СѓРїРЅРёС†С‹, РєР°Рє Рё РІСЃРµ РјС‹ Р·РґРµСЃСЊ. РћРЅРё РЅСѓР¶РЅС‹ Р“РѕРјРµР·Сѓ, Р° РїРѕС‚РѕРјСѓ РЅРµ СЃРёРґСЏС‚ РІ С‚СЋСЂРµРјРЅС‹С… СЃС‚РµРЅР°С… С‚Р°Рј.
+	AI_Output (self, other,"DIA_Orry_Woman_06_04"); //РҐРѕС‚СЏ, РЅРµ Р·РЅР°СЋ, С‡С‚Рѕ С…СѓР¶Рµ...
 };
 
 // **************************************************
@@ -232,7 +232,7 @@ INSTANCE DIA_Orry_Waffe (C_INFO)
 	condition		= DIA_Orry_Waffe_Condition;
 	information		= DIA_Orry_Waffe_Info;
 	permanent		= 0;
-	description		= "Где здесь можно найти оружие?"; 
+	description		= "Р“РґРµ Р·РґРµСЃСЊ РјРѕР¶РЅРѕ РЅР°Р№С‚Рё РѕСЂСѓР¶РёРµ?"; 
 };
 
 FUNC INT DIA_Orry_Waffe_Condition()
@@ -245,10 +245,10 @@ FUNC INT DIA_Orry_Waffe_Condition()
 
 FUNC VOID DIA_Orry_Waffe_Info()
 {
-	AI_Output (other, self,"DIA_Orry_Waffe_15_00"); //Где здесь можно найти оружие?
-	AI_Output (self, other,"DIA_Orry_Waffe_06_01"); //Возле Заброшенной шахты, может, что-нибудь найдешь, это немного дальше вниз по тропе.
-	AI_Output (self, other,"DIA_Orry_Waffe_06_02"); //Но лучше в драку не лезть с какой-нибудь ржавой киркой в руках. Такие вещи тяжелые и неудобные, да и оружием не назовешь.
-	AI_Output (self, other,"DIA_Orry_Waffe_06_03"); //Неопытному бойцу лучше таким оружием не драться, ну разве что в крайней необходимости.
+	AI_Output (other, self,"DIA_Orry_Waffe_15_00"); //Р“РґРµ Р·РґРµСЃСЊ РјРѕР¶РЅРѕ РЅР°Р№С‚Рё РѕСЂСѓР¶РёРµ?
+	AI_Output (self, other,"DIA_Orry_Waffe_06_01"); //Р’РѕР·Р»Рµ Р—Р°Р±СЂРѕС€РµРЅРЅРѕР№ С€Р°С…С‚С‹, РјРѕР¶РµС‚, С‡С‚Рѕ-РЅРёР±СѓРґСЊ РЅР°Р№РґРµС€СЊ, СЌС‚Рѕ РЅРµРјРЅРѕРіРѕ РґР°Р»СЊС€Рµ РІРЅРёР· РїРѕ С‚СЂРѕРїРµ.
+	AI_Output (self, other,"DIA_Orry_Waffe_06_02"); //РќРѕ Р»СѓС‡С€Рµ РІ РґСЂР°РєСѓ РЅРµ Р»РµР·С‚СЊ СЃ РєР°РєРѕР№-РЅРёР±СѓРґСЊ СЂР¶Р°РІРѕР№ РєРёСЂРєРѕР№ РІ СЂСѓРєР°С…. РўР°РєРёРµ РІРµС‰Рё С‚СЏР¶РµР»С‹Рµ Рё РЅРµСѓРґРѕР±РЅС‹Рµ, РґР° Рё РѕСЂСѓР¶РёРµРј РЅРµ РЅР°Р·РѕРІРµС€СЊ.
+	AI_Output (self, other,"DIA_Orry_Waffe_06_03"); //РќРµРѕРїС‹С‚РЅРѕРјСѓ Р±РѕР№С†Сѓ Р»СѓС‡С€Рµ С‚Р°РєРёРј РѕСЂСѓР¶РёРµРј РЅРµ РґСЂР°С‚СЊСЃСЏ, РЅСѓ СЂР°Р·РІРµ С‡С‚Рѕ РІ РєСЂР°Р№РЅРµР№ РЅРµРѕР±С…РѕРґРёРјРѕСЃС‚Рё.
 	
 };
 

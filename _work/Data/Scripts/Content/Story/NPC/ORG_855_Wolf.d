@@ -2,7 +2,7 @@ instance ORG_855_Wolf (Npc_Default)
 {
 	//-------- primary data --------
 	
-	name =					"Волк";
+	name =					"Р’РѕР»Рє";
 	Npctype =				Npctype_Main;
 	guild =					GIL_ORG;      
 	level =					11;

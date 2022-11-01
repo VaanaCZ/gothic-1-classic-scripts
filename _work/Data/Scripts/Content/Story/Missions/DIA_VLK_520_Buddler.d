@@ -33,7 +33,7 @@ INSTANCE DIA_Vlk_520_LeaveMe (C_INFO)
 	condition		= DIA_Vlk_520_LeaveMe_Condition;
 	information		= DIA_Vlk_520_LeaveMe_Info;
 	permanent		= 1;
-	description		= "Что ты здесь делаешь?";
+	description		= "Р§С‚Рѕ С‚С‹ Р·РґРµСЃСЊ РґРµР»Р°РµС€СЊ?";
 };
 
 FUNC int DIA_Vlk_520_LeaveMe_Condition()
@@ -43,8 +43,8 @@ FUNC int DIA_Vlk_520_LeaveMe_Condition()
 
 FUNC VOID DIA_Vlk_520_LeaveMe_Info()
 {
-	AI_Output (other, self,"DIA_Vlk_520_LeaveMe_15_00"); //Что ты здесь делаешь?
-	AI_Output (self, other,"DIA_Vlk_520_LeaveMe_01_01"); //Оставь меня в покое! Убирайся!
+	AI_Output (other, self,"DIA_Vlk_520_LeaveMe_15_00"); //Р§С‚Рѕ С‚С‹ Р·РґРµСЃСЊ РґРµР»Р°РµС€СЊ?
+	AI_Output (self, other,"DIA_Vlk_520_LeaveMe_01_01"); //РћСЃС‚Р°РІСЊ РјРµРЅСЏ РІ РїРѕРєРѕРµ! РЈР±РёСЂР°Р№СЃСЏ!
 
 	AI_StopProcessInfos	(self);
 };

@@ -1,7 +1,7 @@
 instance GUR_1211_BaalLukor (Npc_Default)
 {
 	//-------- primary data --------
-	name 		=		"Идол Люкор";
+	name 		=		"РРґРѕР» Р›СЋРєРѕСЂ";
 	Npctype 	=		NPCTYPE_FRIEND;
 	flags		=		NPC_FLAG_IMMORTAL;
 	guild 		=		GIL_GUR;

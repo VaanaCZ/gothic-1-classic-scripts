@@ -2,7 +2,7 @@ instance SFB_1037_Swiney(Npc_Default)
 {
 	//-------- primary data --------
 	
-	name =							"—ÛËÌË";
+	name =							"–°—É–∏–Ω–∏";
 	npctype = 						Npctype_Main;
 	guild =							GIL_SFB;      
 	level =							6;

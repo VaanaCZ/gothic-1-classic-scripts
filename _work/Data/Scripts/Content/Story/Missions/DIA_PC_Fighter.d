@@ -22,18 +22,18 @@ func VOID Info_Gorn_EXIT_Info()
 {
 	if	self.aivar[AIV_PARTYMEMBER]
 	{
-		AI_Output (self, other,"Info_Gorn_EXIT_09_01"); //Оружие к бою!
+		AI_Output (self, other,"Info_Gorn_EXIT_09_01"); //РћСЂСѓР¶РёРµ Рє Р±РѕСЋ!
 	}
 	else
 	{
-		AI_Output (self, other,"Info_Gorn_EXIT_09_02"); //Еще увидимся.
+		AI_Output (self, other,"Info_Gorn_EXIT_09_02"); //Р•С‰Рµ СѓРІРёРґРёРјСЃСЏ.
 	};
 	
 	AI_StopProcessInfos	( self );
 };
 
 //*************************************
-//			1. BegrьЯung
+//			1. BegrСЊРЇung
 //*************************************
 
 instance DIA_Gorn_First (C_INFO)
@@ -56,9 +56,9 @@ FUNC int DIA_Gorn_First_Condition()
 
 func void DIA_Gorn_First_Info()
 {
-	AI_Output (self, other,"DIA_Gorn_First_09_00"); //Эй, новые лица.
-	AI_Output (other, self,"DIA_Gorn_First_15_01"); //Кто ты?
-	AI_Output (self, other,"DIA_Gorn_First_09_02"); //Я Горн. Наемник магов.
+	AI_Output (self, other,"DIA_Gorn_First_09_00"); //Р­Р№, РЅРѕРІС‹Рµ Р»РёС†Р°.
+	AI_Output (other, self,"DIA_Gorn_First_15_01"); //РљС‚Рѕ С‚С‹?
+	AI_Output (self, other,"DIA_Gorn_First_09_02"); //РЇ Р“РѕСЂРЅ. РќР°РµРјРЅРёРє РјР°РіРѕРІ.
 };
 
 //*************************************
@@ -72,7 +72,7 @@ instance DIA_Gorn_Leben (C_INFO)
 	condition		= Dia_Gorn_Leben_Condition;
 	information		= Dia_Gorn_Leben_Info;
 	permanent		= 0;
-	description		= "А что должны делать наемники?";
+	description		= "Рђ С‡С‚Рѕ РґРѕР»Р¶РЅС‹ РґРµР»Р°С‚СЊ РЅР°РµРјРЅРёРєРё?";
 };
 
 FUNC int DIA_Gorn_Leben_Condition()
@@ -85,14 +85,14 @@ FUNC int DIA_Gorn_Leben_Condition()
 
 func void DIA_Gorn_Leben_Info()
 {
-	AI_Output (other, self,"DIA_Gorn_Leben_15_00"); //А что должны делать наемники?
-	AI_Output (self, other,"DIA_Gorn_Leben_09_01"); //Ли заключил с магами сделку. Он нанял всех лучших бойцов колонии, то есть нас.
-	AI_Output (self, other,"DIA_Gorn_Leben_09_02"); //Мы следим за тем, чтобы никто не мешал рудокопам добывать руду и охраняем магов.
-	AI_Output (self, other,"DIA_Gorn_Leben_09_03"); //А маги делают все, чтобы мы смогли освободиться отсюда. За наши услуги нам отдают часть добытой руды.
+	AI_Output (other, self,"DIA_Gorn_Leben_15_00"); //Рђ С‡С‚Рѕ РґРѕР»Р¶РЅС‹ РґРµР»Р°С‚СЊ РЅР°РµРјРЅРёРєРё?
+	AI_Output (self, other,"DIA_Gorn_Leben_09_01"); //Р›Рё Р·Р°РєР»СЋС‡РёР» СЃ РјР°РіР°РјРё СЃРґРµР»РєСѓ. РћРЅ РЅР°РЅСЏР» РІСЃРµС… Р»СѓС‡С€РёС… Р±РѕР№С†РѕРІ РєРѕР»РѕРЅРёРё, С‚Рѕ РµСЃС‚СЊ РЅР°СЃ.
+	AI_Output (self, other,"DIA_Gorn_Leben_09_02"); //РњС‹ СЃР»РµРґРёРј Р·Р° С‚РµРј, С‡С‚РѕР±С‹ РЅРёРєС‚Рѕ РЅРµ РјРµС€Р°Р» СЂСѓРґРѕРєРѕРїР°Рј РґРѕР±С‹РІР°С‚СЊ СЂСѓРґСѓ Рё РѕС…СЂР°РЅСЏРµРј РјР°РіРѕРІ.
+	AI_Output (self, other,"DIA_Gorn_Leben_09_03"); //Рђ РјР°РіРё РґРµР»Р°СЋС‚ РІСЃРµ, С‡С‚РѕР±С‹ РјС‹ СЃРјРѕРіР»Рё РѕСЃРІРѕР±РѕРґРёС‚СЊСЃСЏ РѕС‚СЃСЋРґР°. Р—Р° РЅР°С€Рё СѓСЃР»СѓРіРё РЅР°Рј РѕС‚РґР°СЋС‚ С‡Р°СЃС‚СЊ РґРѕР±С‹С‚РѕР№ СЂСѓРґС‹.
 };
 
 //*************************************
-//			Hьtte (Shrike)
+//			HСЊtte (Shrike)
 //*************************************
 	var int Gorn_ShrikesHut;
 //*************************************
@@ -104,7 +104,7 @@ instance DIA_Gorn_Hut (C_INFO)
 	condition		= Dia_Gorn_Hut_Condition;
 	information		= Dia_Gorn_Hut_Info;
 	permanent		= 0;
-	description		= "Могу я где-нибудь здесь остановиться?..";
+	description		= "РњРѕРіСѓ СЏ РіРґРµ-РЅРёР±СѓРґСЊ Р·РґРµСЃСЊ РѕСЃС‚Р°РЅРѕРІРёС‚СЊСЃСЏ?..";
 };
 
 FUNC int DIA_Gorn_Hut_Condition()
@@ -117,21 +117,21 @@ FUNC int DIA_Gorn_Hut_Condition()
 
 func void DIA_Gorn_Hut_Info()
 {
-	AI_Output (other, self,"DIA_Gorn_Hut_15_00"); //Могу я где-нибудь здесь остановиться, так чтобы не пришлось никого выгонять из дома?
-	AI_Output (self, other,"DIA_Gorn_Hut_09_01"); //Не думаю. Но если уж так хочется, поговори со Шрайком.
-	AI_Output (self, other,"DIA_Gorn_Hut_09_02"); //Он занял первый дом, прямо напротив входа в пещеру. Он пустовал, но вообще-то он принадлежит нам.
-	AI_Output (other, self,"DIA_Gorn_Hut_15_03"); //Нам?
-	AI_Output (self, other,"DIA_Gorn_Hut_09_04"); //Ну, да, наемникам. Мы живем отдельно от воров. И обычно никто из шайки Ларса не появляется на нашей половине пещеры.
-	AI_Output (self, other,"DIA_Gorn_Hut_09_05"); //Для нас это не так важно, но Шрайк никого не спрашивал. А ворам ничего нельзя спускать с рук, иначе они наглеют!
+	AI_Output (other, self,"DIA_Gorn_Hut_15_00"); //РњРѕРіСѓ СЏ РіРґРµ-РЅРёР±СѓРґСЊ Р·РґРµСЃСЊ РѕСЃС‚Р°РЅРѕРІРёС‚СЊСЃСЏ, С‚Р°Рє С‡С‚РѕР±С‹ РЅРµ РїСЂРёС€Р»РѕСЃСЊ РЅРёРєРѕРіРѕ РІС‹РіРѕРЅСЏС‚СЊ РёР· РґРѕРјР°?
+	AI_Output (self, other,"DIA_Gorn_Hut_09_01"); //РќРµ РґСѓРјР°СЋ. РќРѕ РµСЃР»Рё СѓР¶ С‚Р°Рє С…РѕС‡РµС‚СЃСЏ, РїРѕРіРѕРІРѕСЂРё СЃРѕ РЁСЂР°Р№РєРѕРј.
+	AI_Output (self, other,"DIA_Gorn_Hut_09_02"); //РћРЅ Р·Р°РЅСЏР» РїРµСЂРІС‹Р№ РґРѕРј, РїСЂСЏРјРѕ РЅР°РїСЂРѕС‚РёРІ РІС…РѕРґР° РІ РїРµС‰РµСЂСѓ. РћРЅ РїСѓСЃС‚РѕРІР°Р», РЅРѕ РІРѕРѕР±С‰Рµ-С‚Рѕ РѕРЅ РїСЂРёРЅР°РґР»РµР¶РёС‚ РЅР°Рј.
+	AI_Output (other, self,"DIA_Gorn_Hut_15_03"); //РќР°Рј?
+	AI_Output (self, other,"DIA_Gorn_Hut_09_04"); //РќСѓ, РґР°, РЅР°РµРјРЅРёРєР°Рј. РњС‹ Р¶РёРІРµРј РѕС‚РґРµР»СЊРЅРѕ РѕС‚ РІРѕСЂРѕРІ. Р РѕР±С‹С‡РЅРѕ РЅРёРєС‚Рѕ РёР· С€Р°Р№РєРё Р›Р°СЂСЃР° РЅРµ РїРѕСЏРІР»СЏРµС‚СЃСЏ РЅР° РЅР°С€РµР№ РїРѕР»РѕРІРёРЅРµ РїРµС‰РµСЂС‹.
+	AI_Output (self, other,"DIA_Gorn_Hut_09_05"); //Р”Р»СЏ РЅР°СЃ СЌС‚Рѕ РЅРµ С‚Р°Рє РІР°Р¶РЅРѕ, РЅРѕ РЁСЂР°Р№Рє РЅРёРєРѕРіРѕ РЅРµ СЃРїСЂР°С€РёРІР°Р». Рђ РІРѕСЂР°Рј РЅРёС‡РµРіРѕ РЅРµР»СЊР·СЏ СЃРїСѓСЃРєР°С‚СЊ СЃ СЂСѓРє, РёРЅР°С‡Рµ РѕРЅРё РЅР°РіР»РµСЋС‚!
 
 	Log_CreateTopic		(CH1_ShrikesHut,	LOG_MISSION);
 	Log_SetTopicStatus	(CH1_ShrikesHut,	LOG_RUNNING);
-	B_LogEntry			(CH1_ShrikesHut,	"Наемник Горн рассказал мне, что Шрайк без разрешения вселился в один из домов наемников. Так как я спросил разрешения у Горна, никто из наемников не помешает мне, если я попрошу Шрайка найти себе что-то другое.");
+	B_LogEntry			(CH1_ShrikesHut,	"РќР°РµРјРЅРёРє Р“РѕСЂРЅ СЂР°СЃСЃРєР°Р·Р°Р» РјРЅРµ, С‡С‚Рѕ РЁСЂР°Р№Рє Р±РµР· СЂР°Р·СЂРµС€РµРЅРёСЏ РІСЃРµР»РёР»СЃСЏ РІ РѕРґРёРЅ РёР· РґРѕРјРѕРІ РЅР°РµРјРЅРёРєРѕРІ. РўР°Рє РєР°Рє СЏ СЃРїСЂРѕСЃРёР» СЂР°Р·СЂРµС€РµРЅРёСЏ Сѓ Р“РѕСЂРЅР°, РЅРёРєС‚Рѕ РёР· РЅР°РµРјРЅРёРєРѕРІ РЅРµ РїРѕРјРµС€Р°РµС‚ РјРЅРµ, РµСЃР»Рё СЏ РїРѕРїСЂРѕС€Сѓ РЁСЂР°Р№РєР° РЅР°Р№С‚Рё СЃРµР±Рµ С‡С‚Рѕ-С‚Рѕ РґСЂСѓРіРѕРµ.");
 	Gorn_ShrikesHut = LOG_RUNNING;
 };
 
 //*************************************
-//			Hьtte LEER (Shrike)
+//			HСЊtte LEER (Shrike)
 //*************************************
 
 instance DIA_Gorn_HutFree (C_INFO)
@@ -141,7 +141,7 @@ instance DIA_Gorn_HutFree (C_INFO)
 	condition		= Dia_Gorn_HutFree_Condition;
 	information		= Dia_Gorn_HutFree_Info;
 	permanent		= 0;
-	description		= "Шрайк нашел себе другой дом.";
+	description		= "РЁСЂР°Р№Рє РЅР°С€РµР» СЃРµР±Рµ РґСЂСѓРіРѕР№ РґРѕРј.";
 };
 
 FUNC int DIA_Gorn_HutFree_Condition()
@@ -154,17 +154,17 @@ FUNC int DIA_Gorn_HutFree_Condition()
 
 func void DIA_Gorn_HutFree_Info()
 {
-	AI_Output			(other, self,"DIA_Gorn_HutFree_15_00"); //Шрайк нашел себе другой дом.
-	AI_Output			(self, other,"DIA_Gorn_HutFree_09_01"); //Хорошо. Только что со мной говорил Тарлоф. Он хочет сам переговорить с этим парнем.
+	AI_Output			(other, self,"DIA_Gorn_HutFree_15_00"); //РЁСЂР°Р№Рє РЅР°С€РµР» СЃРµР±Рµ РґСЂСѓРіРѕР№ РґРѕРј.
+	AI_Output			(self, other,"DIA_Gorn_HutFree_09_01"); //РҐРѕСЂРѕС€Рѕ. РўРѕР»СЊРєРѕ С‡С‚Рѕ СЃРѕ РјРЅРѕР№ РіРѕРІРѕСЂРёР» РўР°СЂР»РѕС„. РћРЅ С…РѕС‡РµС‚ СЃР°Рј РїРµСЂРµРіРѕРІРѕСЂРёС‚СЊ СЃ СЌС‚РёРј РїР°СЂРЅРµРј.
 
 	Gorn_ShrikesHut = LOG_SUCCESS;
 	Log_SetTopicStatus	(CH1_ShrikesHut,	LOG_SUCCESS);
-	B_LogEntry			(CH1_ShrikesHut,	"Горну понравилось, как я выкинул Шрайка из пустого дома. Думаю, ему можно доверять. Постараюсь в будущем держаться к нему поближе.");
+	B_LogEntry			(CH1_ShrikesHut,	"Р“РѕСЂРЅСѓ РїРѕРЅСЂР°РІРёР»РѕСЃСЊ, РєР°Рє СЏ РІС‹РєРёРЅСѓР» РЁСЂР°Р№РєР° РёР· РїСѓСЃС‚РѕРіРѕ РґРѕРјР°. Р”СѓРјР°СЋ, РµРјСѓ РјРѕР¶РЅРѕ РґРѕРІРµСЂСЏС‚СЊ. РџРѕСЃС‚Р°СЂР°СЋСЃСЊ РІ Р±СѓРґСѓС‰РµРј РґРµСЂР¶Р°С‚СЊСЃСЏ Рє РЅРµРјСѓ РїРѕР±Р»РёР¶Рµ.");
 	B_GiveXP			(XP_ReportedKickedShrike);
 };
 
 //*************************************
-//			Sцldner werden
+//			SС†ldner werden
 //*************************************
 
 instance DIA_Gorn_BecomeSLD (C_INFO)
@@ -174,7 +174,7 @@ instance DIA_Gorn_BecomeSLD (C_INFO)
 	condition		= Dia_Gorn_BecomeSLD_Condition;
 	information		= Dia_Gorn_BecomeSLD_Info;
 	permanent		= 0;
-	description		= "Что я должен сделать, чтобы меня приняли в Новый лагерь?";
+	description		= "Р§С‚Рѕ СЏ РґРѕР»Р¶РµРЅ СЃРґРµР»Р°С‚СЊ, С‡С‚РѕР±С‹ РјРµРЅСЏ РїСЂРёРЅСЏР»Рё РІ РќРѕРІС‹Р№ Р»Р°РіРµСЂСЊ?";
 };
 
 FUNC int DIA_Gorn_BecomeSLD_Condition()
@@ -188,10 +188,10 @@ FUNC int DIA_Gorn_BecomeSLD_Condition()
 
 func void DIA_Gorn_BecomeSLD_Info()
 {
-	AI_Output (other, self,"DIA_Gorn_BecomeSLD_15_00"); //Что я должен сделать, чтобы меня приняли в Новый лагерь?
-	AI_Output (self, other,"DIA_Gorn_BecomeSLD_09_01"); //Ты должен научиться хорошо владеть оружием, чтобы Ли взял тебя на службу. Неважно, какое оружие ты будешь использовать.
-	AI_Output (self, other,"DIA_Gorn_BecomeSLD_09_02"); //Еще ты должен знать наши законы и разбираться в жизни лагеря.
-	AI_Output (self, other,"DIA_Gorn_BecomeSLD_09_03"); //Если ты не собираешься присоединяться к другому лагерю, обратись к ворам, и только потом приходи к нам.
+	AI_Output (other, self,"DIA_Gorn_BecomeSLD_15_00"); //Р§С‚Рѕ СЏ РґРѕР»Р¶РµРЅ СЃРґРµР»Р°С‚СЊ, С‡С‚РѕР±С‹ РјРµРЅСЏ РїСЂРёРЅСЏР»Рё РІ РќРѕРІС‹Р№ Р»Р°РіРµСЂСЊ?
+	AI_Output (self, other,"DIA_Gorn_BecomeSLD_09_01"); //РўС‹ РґРѕР»Р¶РµРЅ РЅР°СѓС‡РёС‚СЊСЃСЏ С…РѕСЂРѕС€Рѕ РІР»Р°РґРµС‚СЊ РѕСЂСѓР¶РёРµРј, С‡С‚РѕР±С‹ Р›Рё РІР·СЏР» С‚РµР±СЏ РЅР° СЃР»СѓР¶Р±Сѓ. РќРµРІР°Р¶РЅРѕ, РєР°РєРѕРµ РѕСЂСѓР¶РёРµ С‚С‹ Р±СѓРґРµС€СЊ РёСЃРїРѕР»СЊР·РѕРІР°С‚СЊ.
+	AI_Output (self, other,"DIA_Gorn_BecomeSLD_09_02"); //Р•С‰Рµ С‚С‹ РґРѕР»Р¶РµРЅ Р·РЅР°С‚СЊ РЅР°С€Рё Р·Р°РєРѕРЅС‹ Рё СЂР°Р·Р±РёСЂР°С‚СЊСЃСЏ РІ Р¶РёР·РЅРё Р»Р°РіРµСЂСЏ.
+	AI_Output (self, other,"DIA_Gorn_BecomeSLD_09_03"); //Р•СЃР»Рё С‚С‹ РЅРµ СЃРѕР±РёСЂР°РµС€СЊСЃСЏ РїСЂРёСЃРѕРµРґРёРЅСЏС‚СЊСЃСЏ Рє РґСЂСѓРіРѕРјСѓ Р»Р°РіРµСЂСЋ, РѕР±СЂР°С‚РёСЃСЊ Рє РІРѕСЂР°Рј, Рё С‚РѕР»СЊРєРѕ РїРѕС‚РѕРј РїСЂРёС…РѕРґРё Рє РЅР°Рј.
 };
 
 /*
@@ -248,8 +248,8 @@ FUNC int DIA_Gorn_TRADE_Condition()
 
 func void DIA_Gorn_TRADE_Info()
 {
-	AI_Output (other, self,"DIA_Gorn_TRADE_15_00"); //А у тебя еще много таких вещей?
-	AI_Output (self, other,"DIA_Gorn_TRADE_09_01"); //Много. Хочешь купить?
+	AI_Output (other, self,"DIA_Gorn_TRADE_15_00"); //Рђ Сѓ С‚РµР±СЏ РµС‰Рµ РјРЅРѕРіРѕ С‚Р°РєРёС… РІРµС‰РµР№?
+	AI_Output (self, other,"DIA_Gorn_TRADE_09_01"); //РњРЅРѕРіРѕ. РҐРѕС‡РµС€СЊ РєСѓРїРёС‚СЊ?
 };
 
 //*************************************
@@ -263,7 +263,7 @@ instance DIA_Gorn_DuHehler (C_INFO)
 	condition		= Dia_Gorn_DuHehler_Condition;
 	information		= Dia_Gorn_DuHehler_Info;
 	permanent		= 0;
-	description		= "Почему ты участвовал в налете, который устроила шайка воров?";
+	description		= "РџРѕС‡РµРјСѓ С‚С‹ СѓС‡Р°СЃС‚РІРѕРІР°Р» РІ РЅР°Р»РµС‚Рµ, РєРѕС‚РѕСЂС‹Р№ СѓСЃС‚СЂРѕРёР»Р° С€Р°Р№РєР° РІРѕСЂРѕРІ?";
 };
 
 FUNC int DIA_Gorn_DuHehler_Condition()
@@ -276,16 +276,16 @@ FUNC int DIA_Gorn_DuHehler_Condition()
 
 func void DIA_Gorn_DuHehler_Info()
 {
-	AI_Output (other, self,"DIA_Gorn_DuHehler_15_00"); //Почему ты участвовал в налете, который устроила шайка воров?
-	AI_Output (self, other,"DIA_Gorn_DuHehler_09_01"); //А кто сказал, что я в нем участвовал?
-	AI_Output (other, self,"DIA_Gorn_DuHehler_15_02"); //Почему же у тебя так много товара?
-	AI_Output (self, other,"DIA_Gorn_DuHehler_09_03"); //Ну, разве можно было забрать все это за один раз?
-	AI_Output (other, self,"DIA_Gorn_DuHehler_15_04"); //Так ты постоянно участвуешь в налетах?
-	AI_Output (self, other,"DIA_Gorn_DuHehler_09_05"); //А если и так, я все равно ничего не буду тебе рассказывать. Ли не держит болтливых людей.
-	AI_Output (other, self,"DIA_Gorn_DuHehler_15_06"); //Понятно.
+	AI_Output (other, self,"DIA_Gorn_DuHehler_15_00"); //РџРѕС‡РµРјСѓ С‚С‹ СѓС‡Р°СЃС‚РІРѕРІР°Р» РІ РЅР°Р»РµС‚Рµ, РєРѕС‚РѕСЂС‹Р№ СѓСЃС‚СЂРѕРёР»Р° С€Р°Р№РєР° РІРѕСЂРѕРІ?
+	AI_Output (self, other,"DIA_Gorn_DuHehler_09_01"); //Рђ РєС‚Рѕ СЃРєР°Р·Р°Р», С‡С‚Рѕ СЏ РІ РЅРµРј СѓС‡Р°СЃС‚РІРѕРІР°Р»?
+	AI_Output (other, self,"DIA_Gorn_DuHehler_15_02"); //РџРѕС‡РµРјСѓ Р¶Рµ Сѓ С‚РµР±СЏ С‚Р°Рє РјРЅРѕРіРѕ С‚РѕРІР°СЂР°?
+	AI_Output (self, other,"DIA_Gorn_DuHehler_09_03"); //РќСѓ, СЂР°Р·РІРµ РјРѕР¶РЅРѕ Р±С‹Р»Рѕ Р·Р°Р±СЂР°С‚СЊ РІСЃРµ СЌС‚Рѕ Р·Р° РѕРґРёРЅ СЂР°Р·?
+	AI_Output (other, self,"DIA_Gorn_DuHehler_15_04"); //РўР°Рє С‚С‹ РїРѕСЃС‚РѕСЏРЅРЅРѕ СѓС‡Р°СЃС‚РІСѓРµС€СЊ РІ РЅР°Р»РµС‚Р°С…?
+	AI_Output (self, other,"DIA_Gorn_DuHehler_09_05"); //Рђ РµСЃР»Рё Рё С‚Р°Рє, СЏ РІСЃРµ СЂР°РІРЅРѕ РЅРёС‡РµРіРѕ РЅРµ Р±СѓРґСѓ С‚РµР±Рµ СЂР°СЃСЃРєР°Р·С‹РІР°С‚СЊ. Р›Рё РЅРµ РґРµСЂР¶РёС‚ Р±РѕР»С‚Р»РёРІС‹С… Р»СЋРґРµР№.
+	AI_Output (other, self,"DIA_Gorn_DuHehler_15_06"); //РџРѕРЅСЏС‚РЅРѕ.
 	
 	CreateInvItems(self, ItFoApple, 21);
-	B_GiveInvItems	(self,other, ItFoApple,21); //Notwendig fьr Screenausgabe
+	B_GiveInvItems	(self,other, ItFoApple,21); //Notwendig fСЊr Screenausgabe
 	Npc_RemoveInvItems (other, ItFoApple,21);
 	
 	CreateInvItems(other, ItMw_1H_LightGuardsSword_03, 1);
@@ -334,9 +334,9 @@ func VOID Info_Gorn_NCWAIT_Info()
 {
 	AI_GotoNpc	(self,	hero);
 
-	AI_Output (self, other,"Info_Gorn_NCWAIT_09_01"); //А, это ты! Лестер, мой друг из Болотного лагеря, рассказывал мне о том, что ты там сделал.
-	AI_Output (self, other,"Info_Gorn_NCWAIT_09_02"); //Неплохо для человека, который провел здесь так мало времени.
-	AI_Output (other, self,"Info_Gorn_NCWAIT_15_03"); //Да, если бы мне не так везло, я бы уже давно стал кормом для червей.
+	AI_Output (self, other,"Info_Gorn_NCWAIT_09_01"); //Рђ, СЌС‚Рѕ С‚С‹! Р›РµСЃС‚РµСЂ, РјРѕР№ РґСЂСѓРі РёР· Р‘РѕР»РѕС‚РЅРѕРіРѕ Р»Р°РіРµСЂСЏ, СЂР°СЃСЃРєР°Р·С‹РІР°Р» РјРЅРµ Рѕ С‚РѕРј, С‡С‚Рѕ С‚С‹ С‚Р°Рј СЃРґРµР»Р°Р».
+	AI_Output (self, other,"Info_Gorn_NCWAIT_09_02"); //РќРµРїР»РѕС…Рѕ РґР»СЏ С‡РµР»РѕРІРµРєР°, РєРѕС‚РѕСЂС‹Р№ РїСЂРѕРІРµР» Р·РґРµСЃСЊ С‚Р°Рє РјР°Р»Рѕ РІСЂРµРјРµРЅРё.
+	AI_Output (other, self,"Info_Gorn_NCWAIT_15_03"); //Р”Р°, РµСЃР»Рё Р±С‹ РјРЅРµ РЅРµ С‚Р°Рє РІРµР·Р»Рѕ, СЏ Р±С‹ СѓР¶Рµ РґР°РІРЅРѕ СЃС‚Р°Р» РєРѕСЂРјРѕРј РґР»СЏ С‡РµСЂРІРµР№.
 };
 
 //***************************************************************************
@@ -349,7 +349,7 @@ INSTANCE Info_Gorn_MAGES (C_INFO)
 	information	= Info_Gorn_MAGES_Info;
 	important	= 0;	
 	permanent	= 0;
-	description	= "У меня важное послание для магов Воды!";
+	description	= "РЈ РјРµРЅСЏ РІР°Р¶РЅРѕРµ РїРѕСЃР»Р°РЅРёРµ РґР»СЏ РјР°РіРѕРІ Р’РѕРґС‹!";
 };                       
 
 FUNC INT Info_Gorn_MAGES_Condition()
@@ -362,11 +362,11 @@ FUNC INT Info_Gorn_MAGES_Condition()
 
 func VOID Info_Gorn_MAGES_Info()
 {
-	AI_Output (other, self,"Info_Gorn_MAGES_15_01"); //У меня важное послание для магов Воды!
-	AI_Output (self, other,"Info_Gorn_MAGES_09_02"); //Поговори об этом с Сатурасом. Он среди них главный. Целыми днями он изучает какие-то свитки.
-	AI_Output (self, other,"Info_Gorn_MAGES_09_03"); //Вот только наемники, которые охраняют магов, не пропустят тебя к нему.
-	AI_Output (other, self,"Info_Gorn_MAGES_15_04"); //Ты можешь замолвить за меня словечко?
-	AI_Output (self, other,"Info_Gorn_MAGES_09_05"); //Я - нет. Но вот Кронос, хранитель руды, - он может дать тебе разрешение.
+	AI_Output (other, self,"Info_Gorn_MAGES_15_01"); //РЈ РјРµРЅСЏ РІР°Р¶РЅРѕРµ РїРѕСЃР»Р°РЅРёРµ РґР»СЏ РјР°РіРѕРІ Р’РѕРґС‹!
+	AI_Output (self, other,"Info_Gorn_MAGES_09_02"); //РџРѕРіРѕРІРѕСЂРё РѕР± СЌС‚РѕРј СЃ РЎР°С‚СѓСЂР°СЃРѕРј. РћРЅ СЃСЂРµРґРё РЅРёС… РіР»Р°РІРЅС‹Р№. Р¦РµР»С‹РјРё РґРЅСЏРјРё РѕРЅ РёР·СѓС‡Р°РµС‚ РєР°РєРёРµ-С‚Рѕ СЃРІРёС‚РєРё.
+	AI_Output (self, other,"Info_Gorn_MAGES_09_03"); //Р’РѕС‚ С‚РѕР»СЊРєРѕ РЅР°РµРјРЅРёРєРё, РєРѕС‚РѕСЂС‹Рµ РѕС…СЂР°РЅСЏСЋС‚ РјР°РіРѕРІ, РЅРµ РїСЂРѕРїСѓСЃС‚СЏС‚ С‚РµР±СЏ Рє РЅРµРјСѓ.
+	AI_Output (other, self,"Info_Gorn_MAGES_15_04"); //РўС‹ РјРѕР¶РµС€СЊ Р·Р°РјРѕР»РІРёС‚СЊ Р·Р° РјРµРЅСЏ СЃР»РѕРІРµС‡РєРѕ?
+	AI_Output (self, other,"Info_Gorn_MAGES_09_05"); //РЇ - РЅРµС‚. РќРѕ РІРѕС‚ РљСЂРѕРЅРѕСЃ, С…СЂР°РЅРёС‚РµР»СЊ СЂСѓРґС‹, - РѕРЅ РјРѕР¶РµС‚ РґР°С‚СЊ С‚РµР±Рµ СЂР°Р·СЂРµС€РµРЅРёРµ.
 };
 
 //***************************************************************************
@@ -379,7 +379,7 @@ INSTANCE Info_Gorn_CRONOS (C_INFO)
 	information	= Info_Gorn_CRONOS_Info;
 	important	= 0;	
 	permanent	= 0;
-	description	= "А где я смогу найти этого 'хранителя руды'?";
+	description	= "Рђ РіРґРµ СЏ СЃРјРѕРіСѓ РЅР°Р№С‚Рё СЌС‚РѕРіРѕ 'С…СЂР°РЅРёС‚РµР»СЏ СЂСѓРґС‹'?";
 };                       
 
 FUNC INT Info_Gorn_CRONOS_Condition()
@@ -392,16 +392,16 @@ FUNC INT Info_Gorn_CRONOS_Condition()
 
 func VOID Info_Gorn_CRONOS_Info()
 {
-	AI_Output			(other, self,"Info_Gorn_CRONOS_15_01"); //А где я смогу найти этого 'хранителя руды'?
-	AI_Output			(self, other,"Info_Gorn_CRONOS_09_01a");//Пройдешь дальше по дороге, и за дамбой увидишь большую пещеру.
-	AI_Output			(self, other,"Info_Gorn_CRONOS_09_02"); //В центре пещеры лежит руда. Там ты и найдешь его.
-	AI_Output			(self, other,"Info_Gorn_CRONOS_09_03"); //Одно плохо: Кронос слишком высокомерен. Ты должен будешь доказать ему, что твое послание очень важно.
+	AI_Output			(other, self,"Info_Gorn_CRONOS_15_01"); //Рђ РіРґРµ СЏ СЃРјРѕРіСѓ РЅР°Р№С‚Рё СЌС‚РѕРіРѕ 'С…СЂР°РЅРёС‚РµР»СЏ СЂСѓРґС‹'?
+	AI_Output			(self, other,"Info_Gorn_CRONOS_09_01a");//РџСЂРѕР№РґРµС€СЊ РґР°Р»СЊС€Рµ РїРѕ РґРѕСЂРѕРіРµ, Рё Р·Р° РґР°РјР±РѕР№ СѓРІРёРґРёС€СЊ Р±РѕР»СЊС€СѓСЋ РїРµС‰РµСЂСѓ.
+	AI_Output			(self, other,"Info_Gorn_CRONOS_09_02"); //Р’ С†РµРЅС‚СЂРµ РїРµС‰РµСЂС‹ Р»РµР¶РёС‚ СЂСѓРґР°. РўР°Рј С‚С‹ Рё РЅР°Р№РґРµС€СЊ РµРіРѕ.
+	AI_Output			(self, other,"Info_Gorn_CRONOS_09_03"); //РћРґРЅРѕ РїР»РѕС…Рѕ: РљСЂРѕРЅРѕСЃ СЃР»РёС€РєРѕРј РІС‹СЃРѕРєРѕРјРµСЂРµРЅ. РўС‹ РґРѕР»Р¶РµРЅ Р±СѓРґРµС€СЊ РґРѕРєР°Р·Р°С‚СЊ РµРјСѓ, С‡С‚Рѕ С‚РІРѕРµ РїРѕСЃР»Р°РЅРёРµ РѕС‡РµРЅСЊ РІР°Р¶РЅРѕ.
 
 	VAR C_NPC Cronos;
 	Cronos = Hlp_GetNpc(KdW_604_Cronos);
 	Cronos.aivar[AIV_FINDABLE] = TRUE;
 	
-	B_LogEntry		(CH3_EscapePlanNC,	"Горн посоветовал мне обратиться к верховному магу Круга Воды. Его зовут Сатурас. Кронос, хранитель руды, может дать мне разрешение на проход к магам. Я смогу найти его в центре пещеры, возле рудной горы."); 
+	B_LogEntry		(CH3_EscapePlanNC,	"Р“РѕСЂРЅ РїРѕСЃРѕРІРµС‚РѕРІР°Р» РјРЅРµ РѕР±СЂР°С‚РёС‚СЊСЃСЏ Рє РІРµСЂС…РѕРІРЅРѕРјСѓ РјР°РіСѓ РљСЂСѓРіР° Р’РѕРґС‹. Р•РіРѕ Р·РѕРІСѓС‚ РЎР°С‚СѓСЂР°СЃ. РљСЂРѕРЅРѕСЃ, С…СЂР°РЅРёС‚РµР»СЊ СЂСѓРґС‹, РјРѕР¶РµС‚ РґР°С‚СЊ РјРЅРµ СЂР°Р·СЂРµС€РµРЅРёРµ РЅР° РїСЂРѕС…РѕРґ Рє РјР°РіР°Рј. РЇ СЃРјРѕРіСѓ РЅР°Р№С‚Рё РµРіРѕ РІ С†РµРЅС‚СЂРµ РїРµС‰РµСЂС‹, РІРѕР·Р»Рµ СЂСѓРґРЅРѕР№ РіРѕСЂС‹."); 
 
 	Npc_ExchangeRoutine	(self, "start");
 };
@@ -431,8 +431,8 @@ func VOID Info_Gorn_RUINWAIT_Info()
 {
 	AI_GotoNpc	(self,	hero);
 
-	AI_Output	(self, other,"Info_Gorn_RUINWAIT_09_01"); //Привет! Как видишь, наша колония не так уж велика.
-	AI_Output	(self, other,"Info_Gorn_RUINWAIT_09_02"); //Все время натыкаешься на своих знакомых.
+	AI_Output	(self, other,"Info_Gorn_RUINWAIT_09_01"); //РџСЂРёРІРµС‚! РљР°Рє РІРёРґРёС€СЊ, РЅР°С€Р° РєРѕР»РѕРЅРёСЏ РЅРµ С‚Р°Рє СѓР¶ РІРµР»РёРєР°.
+	AI_Output	(self, other,"Info_Gorn_RUINWAIT_09_02"); //Р’СЃРµ РІСЂРµРјСЏ РЅР°С‚С‹РєР°РµС€СЊСЃСЏ РЅР° СЃРІРѕРёС… Р·РЅР°РєРѕРјС‹С….
 };
 
 //***************************************************************************
@@ -445,7 +445,7 @@ INSTANCE Info_Gorn_RUINWHAT (C_INFO)
 	information	= Info_Gorn_RUINWHAT_Info;
 	important	= 0;	
 	permanent	= 0;
-	description = "Что привело тебя сюда?";
+	description = "Р§С‚Рѕ РїСЂРёРІРµР»Рѕ С‚РµР±СЏ СЃСЋРґР°?";
 };                       
 
 FUNC INT Info_Gorn_RUINWHAT_Condition()
@@ -458,17 +458,17 @@ FUNC INT Info_Gorn_RUINWHAT_Condition()
 
 func VOID Info_Gorn_RUINWHAT_Info()
 {
-	AI_Output 		(other, self,"Info_Gorn_RUINWHAT_15_01"); //Что привело тебя сюда?
-	AI_Output		(self, other,"Info_Gorn_RUINWHAT_09_02"); //О, я хочу найти здесь следы одной легенды.
-	AI_Output		(other, self,"Info_Gorn_RUINWHAT_15_03"); //Легенды?
-	AI_Output 		(self, other,"Info_Gorn_RUINWHAT_09_04"); //Да. Мильтен, один из моих друзей в Старом лагере, рассказывал мне, что когда-то здесь жили монахи.
-	AI_Output 		(self, other,"Info_Gorn_RUINWHAT_09_05"); //Конечно, это было еще до появления Барьера.
-	AI_Output 		(self, other,"Info_Gorn_RUINWHAT_09_06"); //Они почитали бога, который награждал своих приверженцев даром превращения в животных.
-	AI_Output 		(self, other,"Info_Gorn_RUINWHAT_09_07"); //Я думаю, здесь должны были сохраниться некоторые из их сокровищ.
+	AI_Output 		(other, self,"Info_Gorn_RUINWHAT_15_01"); //Р§С‚Рѕ РїСЂРёРІРµР»Рѕ С‚РµР±СЏ СЃСЋРґР°?
+	AI_Output		(self, other,"Info_Gorn_RUINWHAT_09_02"); //Рћ, СЏ С…РѕС‡Сѓ РЅР°Р№С‚Рё Р·РґРµСЃСЊ СЃР»РµРґС‹ РѕРґРЅРѕР№ Р»РµРіРµРЅРґС‹.
+	AI_Output		(other, self,"Info_Gorn_RUINWHAT_15_03"); //Р›РµРіРµРЅРґС‹?
+	AI_Output 		(self, other,"Info_Gorn_RUINWHAT_09_04"); //Р”Р°. РњРёР»СЊС‚РµРЅ, РѕРґРёРЅ РёР· РјРѕРёС… РґСЂСѓР·РµР№ РІ РЎС‚Р°СЂРѕРј Р»Р°РіРµСЂРµ, СЂР°СЃСЃРєР°Р·С‹РІР°Р» РјРЅРµ, С‡С‚Рѕ РєРѕРіРґР°-С‚Рѕ Р·РґРµСЃСЊ Р¶РёР»Рё РјРѕРЅР°С…Рё.
+	AI_Output 		(self, other,"Info_Gorn_RUINWHAT_09_05"); //РљРѕРЅРµС‡РЅРѕ, СЌС‚Рѕ Р±С‹Р»Рѕ РµС‰Рµ РґРѕ РїРѕСЏРІР»РµРЅРёСЏ Р‘Р°СЂСЊРµСЂР°.
+	AI_Output 		(self, other,"Info_Gorn_RUINWHAT_09_06"); //РћРЅРё РїРѕС‡РёС‚Р°Р»Рё Р±РѕРіР°, РєРѕС‚РѕСЂС‹Р№ РЅР°РіСЂР°Р¶РґР°Р» СЃРІРѕРёС… РїСЂРёРІРµСЂР¶РµРЅС†РµРІ РґР°СЂРѕРј РїСЂРµРІСЂР°С‰РµРЅРёСЏ РІ Р¶РёРІРѕС‚РЅС‹С….
+	AI_Output 		(self, other,"Info_Gorn_RUINWHAT_09_07"); //РЇ РґСѓРјР°СЋ, Р·РґРµСЃСЊ РґРѕР»Р¶РЅС‹ Р±С‹Р»Рё СЃРѕС…СЂР°РЅРёС‚СЊСЃСЏ РЅРµРєРѕС‚РѕСЂС‹Рµ РёР· РёС… СЃРѕРєСЂРѕРІРёС‰.
 
 	if (!Npc_KnowsInfo(hero, Info_Gorn_RUINFOCUS))
 	{	
-		AI_Output	(self, other,"Info_Gorn_RUINWHAT_09_08"); //А что ты здесь ищешь?
+		AI_Output	(self, other,"Info_Gorn_RUINWHAT_09_08"); //Рђ С‡С‚Рѕ С‚С‹ Р·РґРµСЃСЊ РёС‰РµС€СЊ?
 	};
 };
 
@@ -482,7 +482,7 @@ INSTANCE Info_Gorn_RUINFOCUS (C_INFO)
 	information	= Info_Gorn_RUINFOCUS_Info;
 	important	= 0;	
 	permanent	= 0;
-	description = "Я ищу юнитор.";
+	description = "РЇ РёС‰Сѓ СЋРЅРёС‚РѕСЂ.";
 };                       
 
 FUNC INT Info_Gorn_RUINFOCUS_Condition()
@@ -495,9 +495,9 @@ FUNC INT Info_Gorn_RUINFOCUS_Condition()
 
 func VOID Info_Gorn_RUINFOCUS_Info()
 {
-	AI_Output (other, self,"Info_Gorn_RUINFOCUS_15_01"); //Я ищу юнитор.  
-	AI_Output (other, self,"Info_Gorn_RUINFOCUS_15_02"); //Он должен быть где-то здесь.
-	AI_Output (self, other,"Info_Gorn_RUINFOCUS_09_03"); //Наверное, эта штука находится в руинах старого монастыря по ту сторону ущелья.
+	AI_Output (other, self,"Info_Gorn_RUINFOCUS_15_01"); //РЇ РёС‰Сѓ СЋРЅРёС‚РѕСЂ.  
+	AI_Output (other, self,"Info_Gorn_RUINFOCUS_15_02"); //РћРЅ РґРѕР»Р¶РµРЅ Р±С‹С‚СЊ РіРґРµ-С‚Рѕ Р·РґРµСЃСЊ.
+	AI_Output (self, other,"Info_Gorn_RUINFOCUS_09_03"); //РќР°РІРµСЂРЅРѕРµ, СЌС‚Р° С€С‚СѓРєР° РЅР°С…РѕРґРёС‚СЃСЏ РІ СЂСѓРёРЅР°С… СЃС‚Р°СЂРѕРіРѕ РјРѕРЅР°СЃС‚С‹СЂСЏ РїРѕ С‚Сѓ СЃС‚РѕСЂРѕРЅСѓ СѓС‰РµР»СЊСЏ.
 };
 
 //***************************************************************************
@@ -510,7 +510,7 @@ INSTANCE Info_Gorn_RUINJOIN (C_INFO)
 	information	= Info_Gorn_RUINJOIN_Info;
 	important	= 0;	
 	permanent	= 0;
-	description = "Мы можем пойти туда вместе.";
+	description = "РњС‹ РјРѕР¶РµРј РїРѕР№С‚Рё С‚СѓРґР° РІРјРµСЃС‚Рµ.";
 };                       
 
 FUNC INT Info_Gorn_RUINJOIN_Condition()
@@ -523,18 +523,18 @@ FUNC INT Info_Gorn_RUINJOIN_Condition()
 
 func VOID Info_Gorn_RUINJOIN_Info()
 {
-	AI_Output (other, self,"Info_Gorn_RUINJOIN_15_01"); //Мы можем пойти туда вместе.
-	AI_Output (self, other,"Info_Gorn_RUINJOIN_09_02"); //Хорошая идея. Здесь же так много глорхов.
-	AI_Output (self, other,"Info_Gorn_RUINJOIN_09_03"); //Опытный охотник без труда справится с ними по одиночке, но обычно они охотятся стаями.
-	AI_Output (self, other,"Info_Gorn_RUINJOIN_09_04"); //А стая расправится с любым воином в два счета.
-	AI_Output (other, self,"Info_Gorn_RUINJOIN_15_05"); //Мы идем вместе?
-	AI_Output (self, other,"Info_Gorn_RUINJOIN_09_06"); //Да, но сначала я осмотрю ущелье, а уж потом перейду на другую сторону. Лучше всегда знать, что у тебя за спиной.
-	AI_Output (self, other,"Info_Gorn_RUINJOIN_09_07"); //Идем, я нашел дорогу.
+	AI_Output (other, self,"Info_Gorn_RUINJOIN_15_01"); //РњС‹ РјРѕР¶РµРј РїРѕР№С‚Рё С‚СѓРґР° РІРјРµСЃС‚Рµ.
+	AI_Output (self, other,"Info_Gorn_RUINJOIN_09_02"); //РҐРѕСЂРѕС€Р°СЏ РёРґРµСЏ. Р—РґРµСЃСЊ Р¶Рµ С‚Р°Рє РјРЅРѕРіРѕ РіР»РѕСЂС…РѕРІ.
+	AI_Output (self, other,"Info_Gorn_RUINJOIN_09_03"); //РћРїС‹С‚РЅС‹Р№ РѕС…РѕС‚РЅРёРє Р±РµР· С‚СЂСѓРґР° СЃРїСЂР°РІРёС‚СЃСЏ СЃ РЅРёРјРё РїРѕ РѕРґРёРЅРѕС‡РєРµ, РЅРѕ РѕР±С‹С‡РЅРѕ РѕРЅРё РѕС…РѕС‚СЏС‚СЃСЏ СЃС‚Р°СЏРјРё.
+	AI_Output (self, other,"Info_Gorn_RUINJOIN_09_04"); //Рђ СЃС‚Р°СЏ СЂР°СЃРїСЂР°РІРёС‚СЃСЏ СЃ Р»СЋР±С‹Рј РІРѕРёРЅРѕРј РІ РґРІР° СЃС‡РµС‚Р°.
+	AI_Output (other, self,"Info_Gorn_RUINJOIN_15_05"); //РњС‹ РёРґРµРј РІРјРµСЃС‚Рµ?
+	AI_Output (self, other,"Info_Gorn_RUINJOIN_09_06"); //Р”Р°, РЅРѕ СЃРЅР°С‡Р°Р»Р° СЏ РѕСЃРјРѕС‚СЂСЋ СѓС‰РµР»СЊРµ, Р° СѓР¶ РїРѕС‚РѕРј РїРµСЂРµР№РґСѓ РЅР° РґСЂСѓРіСѓСЋ СЃС‚РѕСЂРѕРЅСѓ. Р›СѓС‡С€Рµ РІСЃРµРіРґР° Р·РЅР°С‚СЊ, С‡С‚Рѕ Сѓ С‚РµР±СЏ Р·Р° СЃРїРёРЅРѕР№.
+	AI_Output (self, other,"Info_Gorn_RUINJOIN_09_07"); //РРґРµРј, СЏ РЅР°С€РµР» РґРѕСЂРѕРіСѓ.
 
 	Log_CreateTopic		(CH3_MonasteryRuin,	LOG_MISSION);
 	Log_SetTopicStatus	(CH3_MonasteryRuin,	LOG_RUNNING);
-	B_LogEntry			(CH3_MonasteryRuin,	"По дороге к развалинам монастыря я встретил наемника Горна. Его привело сюда желание найти древние сокровища.");
-	B_LogEntry			(CH3_MonasteryRuin,	"Мы решили вместе продолжить наши поиски. Горн сказал мне, что впереди нас ждет стая зверюг, которые гораздо сильнее глорхов.");
+	B_LogEntry			(CH3_MonasteryRuin,	"РџРѕ РґРѕСЂРѕРіРµ Рє СЂР°Р·РІР°Р»РёРЅР°Рј РјРѕРЅР°СЃС‚С‹СЂСЏ СЏ РІСЃС‚СЂРµС‚РёР» РЅР°РµРјРЅРёРєР° Р“РѕСЂРЅР°. Р•РіРѕ РїСЂРёРІРµР»Рѕ СЃСЋРґР° Р¶РµР»Р°РЅРёРµ РЅР°Р№С‚Рё РґСЂРµРІРЅРёРµ СЃРѕРєСЂРѕРІРёС‰Р°.");
+	B_LogEntry			(CH3_MonasteryRuin,	"РњС‹ СЂРµС€РёР»Рё РІРјРµСЃС‚Рµ РїСЂРѕРґРѕР»Р¶РёС‚СЊ РЅР°С€Рё РїРѕРёСЃРєРё. Р“РѕСЂРЅ СЃРєР°Р·Р°Р» РјРЅРµ, С‡С‚Рѕ РІРїРµСЂРµРґРё РЅР°СЃ Р¶РґРµС‚ СЃС‚Р°СЏ Р·РІРµСЂСЋРі, РєРѕС‚РѕСЂС‹Рµ РіРѕСЂР°Р·РґРѕ СЃРёР»СЊРЅРµРµ РіР»РѕСЂС…РѕРІ.");
 
 	self.aivar[AIV_PARTYMEMBER] = TRUE;
 	AI_StopProcessInfos(self);
@@ -565,10 +565,10 @@ func VOID Info_Gorn_RUINABYSS_Info()
 {
 	AI_GotoNpc			(self,	hero);
 
-	AI_Output			(self, other,"Info_Gorn_RUINABYSS_09_01"); //Вот это удача. Кажется, эта пещера раньше была складом.
-	AI_Output			(self, other,"Info_Gorn_RUINABYSS_09_02"); //Теперь ты иди вперед. А я хочу убедиться, что наш отход будет безопасным.
+	AI_Output			(self, other,"Info_Gorn_RUINABYSS_09_01"); //Р’РѕС‚ СЌС‚Рѕ СѓРґР°С‡Р°. РљР°Р¶РµС‚СЃСЏ, СЌС‚Р° РїРµС‰РµСЂР° СЂР°РЅСЊС€Рµ Р±С‹Р»Р° СЃРєР»Р°РґРѕРј.
+	AI_Output			(self, other,"Info_Gorn_RUINABYSS_09_02"); //РўРµРїРµСЂСЊ С‚С‹ РёРґРё РІРїРµСЂРµРґ. Рђ СЏ С…РѕС‡Сѓ СѓР±РµРґРёС‚СЊСЃСЏ, С‡С‚Рѕ РЅР°С€ РѕС‚С…РѕРґ Р±СѓРґРµС‚ Р±РµР·РѕРїР°СЃРЅС‹Рј.
 
-	B_LogEntry		(CH3_MonasteryRuin,	"Мы нашли пещеру, в которой раньше устраивали склад. Там я взял ключ и два свитка.");
+	B_LogEntry		(CH3_MonasteryRuin,	"РњС‹ РЅР°С€Р»Рё РїРµС‰РµСЂСѓ, РІ РєРѕС‚РѕСЂРѕР№ СЂР°РЅСЊС€Рµ СѓСЃС‚СЂР°РёРІР°Р»Рё СЃРєР»Р°Рґ. РўР°Рј СЏ РІР·СЏР» РєР»СЋС‡ Рё РґРІР° СЃРІРёС‚РєР°.");
 
 	AI_StopProcessInfos	(self);
 	Npc_ExchangeRoutine	(self,	"RuinFollow");
@@ -600,9 +600,9 @@ func VOID Info_Gorn_RUINLEAVE_Info()
 {
 	AI_GotoNpc	(self,	hero);
 
-	AI_Output (self, other,"Info_Gorn_RUINLEAVE_09_01"); //Мне кажется, руины тебе больше неинтересны.
-	AI_Output (self, other,"Info_Gorn_RUINLEAVE_09_02"); //Я пойду один.
-	AI_Output (self, other,"Info_Gorn_RUINLEAVE_09_03"); //Следуй за мной, если передумаешь.
+	AI_Output (self, other,"Info_Gorn_RUINLEAVE_09_01"); //РњРЅРµ РєР°Р¶РµС‚СЃСЏ, СЂСѓРёРЅС‹ С‚РµР±Рµ Р±РѕР»СЊС€Рµ РЅРµРёРЅС‚РµСЂРµСЃРЅС‹.
+	AI_Output (self, other,"Info_Gorn_RUINLEAVE_09_02"); //РЇ РїРѕР№РґСѓ РѕРґРёРЅ.
+	AI_Output (self, other,"Info_Gorn_RUINLEAVE_09_03"); //РЎР»РµРґСѓР№ Р·Р° РјРЅРѕР№, РµСЃР»Рё РїРµСЂРµРґСѓРјР°РµС€СЊ.
 
 	self.aivar[AIV_PARTYMEMBER] = FALSE;
 	Npc_ExchangeRoutine(self,	"RuinWall");
@@ -634,10 +634,10 @@ func VOID Info_Gorn_RUINWALL_Info()
 {
 	AI_GotoNpc			(self,	hero);
 
-	AI_Output			(self, other,"Info_Gorn_RUINWALL_09_01"); //Эти чертовы ворота! Мне говорили, что еще ни один человек не смог их открыть.
-	AI_Output			(self, other,"Info_Gorn_RUINWALL_09_02"); //Только эти мелкие твари проникли во внутренний двор монастыря.
+	AI_Output			(self, other,"Info_Gorn_RUINWALL_09_01"); //Р­С‚Рё С‡РµСЂС‚РѕРІС‹ РІРѕСЂРѕС‚Р°! РњРЅРµ РіРѕРІРѕСЂРёР»Рё, С‡С‚Рѕ РµС‰Рµ РЅРё РѕРґРёРЅ С‡РµР»РѕРІРµРє РЅРµ СЃРјРѕРі РёС… РѕС‚РєСЂС‹С‚СЊ.
+	AI_Output			(self, other,"Info_Gorn_RUINWALL_09_02"); //РўРѕР»СЊРєРѕ СЌС‚Рё РјРµР»РєРёРµ С‚РІР°СЂРё РїСЂРѕРЅРёРєР»Рё РІРѕ РІРЅСѓС‚СЂРµРЅРЅРёР№ РґРІРѕСЂ РјРѕРЅР°СЃС‚С‹СЂСЏ.
 
-	B_LogEntry		(CH3_MonasteryRuin,	"Мы стоим перед запертыми воротами. Кажется, мы не сможем открыть их снаружи.");
+	B_LogEntry		(CH3_MonasteryRuin,	"РњС‹ СЃС‚РѕРёРј РїРµСЂРµРґ Р·Р°РїРµСЂС‚С‹РјРё РІРѕСЂРѕС‚Р°РјРё. РљР°Р¶РµС‚СЃСЏ, РјС‹ РЅРµ СЃРјРѕР¶РµРј РѕС‚РєСЂС‹С‚СЊ РёС… СЃРЅР°СЂСѓР¶Рё.");
 
 	AI_StopProcessInfos	(self);
 	Npc_ExchangeRoutine	(self,	"RuinWall");
@@ -653,7 +653,7 @@ INSTANCE Info_Gorn_RUINWALLWHAT (C_INFO)
 	information	= Info_Gorn_RUINWALLWHAT_Info;
 	important	= 0;	
 	permanent	= 1;
-	description = "Что нам делать теперь?";
+	description = "Р§С‚Рѕ РЅР°Рј РґРµР»Р°С‚СЊ С‚РµРїРµСЂСЊ?";
 };                       
 
 FUNC INT Info_Gorn_RUINWALLWHAT_Condition()
@@ -667,8 +667,8 @@ FUNC INT Info_Gorn_RUINWALLWHAT_Condition()
 
 func VOID Info_Gorn_RUINWALLWHAT_Info()
 {
-	AI_Output (other, self,"Info_Gorn_RUINWALLWHAT_15_01"); //Что нам делать теперь?
-	AI_Output (self, other,"Info_Gorn_RUINWALLWHAT_09_02"); //Ты должен найти способ пробраться через эти ворота.
+	AI_Output (other, self,"Info_Gorn_RUINWALLWHAT_15_01"); //Р§С‚Рѕ РЅР°Рј РґРµР»Р°С‚СЊ С‚РµРїРµСЂСЊ?
+	AI_Output (self, other,"Info_Gorn_RUINWALLWHAT_09_02"); //РўС‹ РґРѕР»Р¶РµРЅ РЅР°Р№С‚Рё СЃРїРѕСЃРѕР± РїСЂРѕР±СЂР°С‚СЊСЃСЏ С‡РµСЂРµР· СЌС‚Рё РІРѕСЂРѕС‚Р°.
 };
 
 //***************************************************************************
@@ -697,8 +697,8 @@ func VOID Info_Gorn_RUINLEDGE_Info()
 {
 	AI_GotoNpc	(self,	hero);
 
-	AI_Output 	(self, other,"Info_Gorn_RUINLEDGE_09_01"); //Там, наверху, есть небольшая площадка. Но, кажется, она слишком высоко.
-	AI_Output 	(self, other,"Info_Gorn_RUINLEDGE_09_02"); //Придется поискать другой путь.
+	AI_Output 	(self, other,"Info_Gorn_RUINLEDGE_09_01"); //РўР°Рј, РЅР°РІРµСЂС…Сѓ, РµСЃС‚СЊ РЅРµР±РѕР»СЊС€Р°СЏ РїР»РѕС‰Р°РґРєР°. РќРѕ, РєР°Р¶РµС‚СЃСЏ, РѕРЅР° СЃР»РёС€РєРѕРј РІС‹СЃРѕРєРѕ.
+	AI_Output 	(self, other,"Info_Gorn_RUINLEDGE_09_02"); //РџСЂРёРґРµС‚СЃСЏ РїРѕРёСЃРєР°С‚СЊ РґСЂСѓРіРѕР№ РїСѓС‚СЊ.
 
 	AI_StopProcessInfos(self);
 };
@@ -729,8 +729,8 @@ func VOID Info_Gorn_RUINPLATFORM_Info()
 {
 	AI_GotoNpc	(self,	hero);
 
-	AI_Output 	(self, other,"Info_Gorn_RUINPLATFORM_09_01"); //Это похоже на какой-то пьедестал.
-	AI_Output 	(self, other,"Info_Gorn_RUINPLATFORM_09_02"); //Возможно, как раз здесь лежал тот предмет, который ты ищешь.
+	AI_Output 	(self, other,"Info_Gorn_RUINPLATFORM_09_01"); //Р­С‚Рѕ РїРѕС…РѕР¶Рµ РЅР° РєР°РєРѕР№-С‚Рѕ РїСЊРµРґРµСЃС‚Р°Р».
+	AI_Output 	(self, other,"Info_Gorn_RUINPLATFORM_09_02"); //Р’РѕР·РјРѕР¶РЅРѕ, РєР°Рє СЂР°Р· Р·РґРµСЃСЊ Р»РµР¶Р°Р» С‚РѕС‚ РїСЂРµРґРјРµС‚, РєРѕС‚РѕСЂС‹Р№ С‚С‹ РёС‰РµС€СЊ.
 
 	AI_StopProcessInfos(self);
 };
@@ -760,11 +760,11 @@ func VOID Info_Gorn_RUINGATE_Info()
 {
 	AI_GotoNpc			(self,	hero);
 
-	AI_Output			(self, other,"Info_Gorn_RUINGATE_09_01"); //Тебе удалось открыть ворота. Как вовремя ты использовал это заклинание!
-	AI_Output			(other, self,"Info_Gorn_RUINGATE_15_02"); //Нам нужно идти дальше.
+	AI_Output			(self, other,"Info_Gorn_RUINGATE_09_01"); //РўРµР±Рµ СѓРґР°Р»РѕСЃСЊ РѕС‚РєСЂС‹С‚СЊ РІРѕСЂРѕС‚Р°. РљР°Рє РІРѕРІСЂРµРјСЏ С‚С‹ РёСЃРїРѕР»СЊР·РѕРІР°Р» СЌС‚Рѕ Р·Р°РєР»РёРЅР°РЅРёРµ!
+	AI_Output			(other, self,"Info_Gorn_RUINGATE_15_02"); //РќР°Рј РЅСѓР¶РЅРѕ РёРґС‚Рё РґР°Р»СЊС€Рµ.
 
-	B_LogEntry		(CH3_MonasteryRuin,	"Я прочитал найденный на складе свиток и превратился в жука. Конечно же, мне удалось пролезть в узкую щель и попасть во внутренний двор.");
-	B_LogEntry		(CH3_MonasteryRuin,	"Теперь проход открыт.");
+	B_LogEntry		(CH3_MonasteryRuin,	"РЇ РїСЂРѕС‡РёС‚Р°Р» РЅР°Р№РґРµРЅРЅС‹Р№ РЅР° СЃРєР»Р°РґРµ СЃРІРёС‚РѕРє Рё РїСЂРµРІСЂР°С‚РёР»СЃСЏ РІ Р¶СѓРєР°. РљРѕРЅРµС‡РЅРѕ Р¶Рµ, РјРЅРµ СѓРґР°Р»РѕСЃСЊ РїСЂРѕР»РµР·С‚СЊ РІ СѓР·РєСѓСЋ С‰РµР»СЊ Рё РїРѕРїР°СЃС‚СЊ РІРѕ РІРЅСѓС‚СЂРµРЅРЅРёР№ РґРІРѕСЂ.");
+	B_LogEntry		(CH3_MonasteryRuin,	"РўРµРїРµСЂСЊ РїСЂРѕС…РѕРґ РѕС‚РєСЂС‹С‚.");
 
 	self.aivar[AIV_PARTYMEMBER] = TRUE;
 	Npc_ExchangeRoutine	(self,	"RuinFollowInside");
@@ -797,9 +797,9 @@ func VOID Info_Gorn_RUINLEAVEINSIDE_Info()
 {
 	AI_GotoNpc	(self,	hero);
 
-	AI_Output (self, other,"Info_Gorn_RUINLEAVEINSIDE_09_01"); //Мне кажется, руины тебе больше неинтересны.
-	AI_Output (self, other,"Info_Gorn_RUINLEAVEINSIDE_09_02"); //Я пойду один.
-	AI_Output (self, other,"Info_Gorn_RUINLEAVEINSIDE_09_03"); //Следуй за мной, если передумаешь.
+	AI_Output (self, other,"Info_Gorn_RUINLEAVEINSIDE_09_01"); //РњРЅРµ РєР°Р¶РµС‚СЃСЏ, СЂСѓРёРЅС‹ С‚РµР±Рµ Р±РѕР»СЊС€Рµ РЅРµРёРЅС‚РµСЂРµСЃРЅС‹.
+	AI_Output (self, other,"Info_Gorn_RUINLEAVEINSIDE_09_02"); //РЇ РїРѕР№РґСѓ РѕРґРёРЅ.
+	AI_Output (self, other,"Info_Gorn_RUINLEAVEINSIDE_09_03"); //РЎР»РµРґСѓР№ Р·Р° РјРЅРѕР№, РµСЃР»Рё РїРµСЂРµРґСѓРјР°РµС€СЊ.
 
 	self.aivar[AIV_PARTYMEMBER] = FALSE;
 	Npc_ExchangeRoutine(self,	"RuinStay");
@@ -831,11 +831,11 @@ func VOID Info_Gorn_RUINSUCCESS_Info()
 {
 	AI_GotoNpc			(self,	hero);
 
-	AI_Output 			(self, other,"Info_Gorn_RUINSUCCESS_09_01"); //Так ты нашел свой артефакт!
-	AI_Output 			(other, self,"Info_Gorn_RUINSUCCESS_15_02"); //Да. Я должен отнести его магам Воды.
-	AI_Output 			(self, other,"Info_Gorn_RUINSUCCESS_09_03"); //Я еще немного провожу тебя.
+	AI_Output 			(self, other,"Info_Gorn_RUINSUCCESS_09_01"); //РўР°Рє С‚С‹ РЅР°С€РµР» СЃРІРѕР№ Р°СЂС‚РµС„Р°РєС‚!
+	AI_Output 			(other, self,"Info_Gorn_RUINSUCCESS_15_02"); //Р”Р°. РЇ РґРѕР»Р¶РµРЅ РѕС‚РЅРµСЃС‚Рё РµРіРѕ РјР°РіР°Рј Р’РѕРґС‹.
+	AI_Output 			(self, other,"Info_Gorn_RUINSUCCESS_09_03"); //РЇ РµС‰Рµ РЅРµРјРЅРѕРіРѕ РїСЂРѕРІРѕР¶Сѓ С‚РµР±СЏ.
 
-	B_LogEntry		(CH3_MonasteryRuin,	"В помещении, похожем на учебный класс, я нашел один из юниторов. Горн решил сопровождать меня еще немного.");
+	B_LogEntry		(CH3_MonasteryRuin,	"Р’ РїРѕРјРµС‰РµРЅРёРё, РїРѕС…РѕР¶РµРј РЅР° СѓС‡РµР±РЅС‹Р№ РєР»Р°СЃСЃ, СЏ РЅР°С€РµР» РѕРґРёРЅ РёР· СЋРЅРёС‚РѕСЂРѕРІ. Р“РѕСЂРЅ СЂРµС€РёР» СЃРѕРїСЂРѕРІРѕР¶РґР°С‚СЊ РјРµРЅСЏ РµС‰Рµ РЅРµРјРЅРѕРіРѕ.");
 
 	AI_StopProcessInfos	(self);
 	Npc_ExchangeRoutine	(self,	"RuinYard");
@@ -868,10 +868,10 @@ func VOID Info_Gorn_RUINTROLL_Info()
 {
 	AI_GotoNpc			(self,	hero);
 
-	AI_Output 			(self, other,"Info_Gorn_RUINTROLL_09_01"); //О, черт! Что это за великан впереди?
-	AI_Output 			(other, self,"Info_Gorn_RUINTROLL_15_02"); //Откуда взялось это чудовище?
-	AI_Output 			(self, other,"Info_Gorn_RUINTROLL_09_03"); //Он похож на одного из неуязвимых троллей. Только он не такой большой.
-	AI_Output 			(self, other,"Info_Gorn_RUINTROLL_09_04"); //Вот как всегда, если хочешь куда-нибудь пройти, какая-то тварь преграждает дорогу.
+	AI_Output 			(self, other,"Info_Gorn_RUINTROLL_09_01"); //Рћ, С‡РµСЂС‚! Р§С‚Рѕ СЌС‚Рѕ Р·Р° РІРµР»РёРєР°РЅ РІРїРµСЂРµРґРё?
+	AI_Output 			(other, self,"Info_Gorn_RUINTROLL_15_02"); //РћС‚РєСѓРґР° РІР·СЏР»РѕСЃСЊ СЌС‚Рѕ С‡СѓРґРѕРІРёС‰Рµ?
+	AI_Output 			(self, other,"Info_Gorn_RUINTROLL_09_03"); //РћРЅ РїРѕС…РѕР¶ РЅР° РѕРґРЅРѕРіРѕ РёР· РЅРµСѓСЏР·РІРёРјС‹С… С‚СЂРѕР»Р»РµР№. РўРѕР»СЊРєРѕ РѕРЅ РЅРµ С‚Р°РєРѕР№ Р±РѕР»СЊС€РѕР№.
+	AI_Output 			(self, other,"Info_Gorn_RUINTROLL_09_04"); //Р’РѕС‚ РєР°Рє РІСЃРµРіРґР°, РµСЃР»Рё С…РѕС‡РµС€СЊ РєСѓРґР°-РЅРёР±СѓРґСЊ РїСЂРѕР№С‚Рё, РєР°РєР°СЏ-С‚Рѕ С‚РІР°СЂСЊ РїСЂРµРіСЂР°Р¶РґР°РµС‚ РґРѕСЂРѕРіСѓ.
 
 	AI_StopProcessInfos	(self);
 
@@ -908,15 +908,15 @@ func VOID Info_Gorn_RUINVICTORY_Info()
 {
 	AI_GotoNpc			(self,	hero);
 
-	AI_Output 			(self, other,"Info_Gorn_RUINVICTORY_09_01"); //Это было нелегко.
-	AI_Output 			(other, self,"Info_Gorn_RUINVICTORY_15_02"); //Вот это да! Мы победили это чудовище. Но это был еще молодой тролль...
-	AI_Output 			(self, other,"Info_Gorn_RUINVICTORY_09_03"); //... тогда нам лучше уйти отсюда побыстрее, иначе мы станем добычей его родителей.
-	AI_Output 			(other, self,"Info_Gorn_RUINVICTORY_15_04"); //Кажется, ты прав.
-	AI_Output 			(self, other,"Info_Gorn_RUINVICTORY_09_05"); //Здесь наши пути расходятся. Я хочу еще немного изучить это место.
-	AI_Output 			(self, other,"Info_Gorn_RUINVICTORY_09_06"); //Но мы еще увидимся, я уверен. До встречи, друг.
+	AI_Output 			(self, other,"Info_Gorn_RUINVICTORY_09_01"); //Р­С‚Рѕ Р±С‹Р»Рѕ РЅРµР»РµРіРєРѕ.
+	AI_Output 			(other, self,"Info_Gorn_RUINVICTORY_15_02"); //Р’РѕС‚ СЌС‚Рѕ РґР°! РњС‹ РїРѕР±РµРґРёР»Рё СЌС‚Рѕ С‡СѓРґРѕРІРёС‰Рµ. РќРѕ СЌС‚Рѕ Р±С‹Р» РµС‰Рµ РјРѕР»РѕРґРѕР№ С‚СЂРѕР»Р»СЊ...
+	AI_Output 			(self, other,"Info_Gorn_RUINVICTORY_09_03"); //... С‚РѕРіРґР° РЅР°Рј Р»СѓС‡С€Рµ СѓР№С‚Рё РѕС‚СЃСЋРґР° РїРѕР±С‹СЃС‚СЂРµРµ, РёРЅР°С‡Рµ РјС‹ СЃС‚Р°РЅРµРј РґРѕР±С‹С‡РµР№ РµРіРѕ СЂРѕРґРёС‚РµР»РµР№.
+	AI_Output 			(other, self,"Info_Gorn_RUINVICTORY_15_04"); //РљР°Р¶РµС‚СЃСЏ, С‚С‹ РїСЂР°РІ.
+	AI_Output 			(self, other,"Info_Gorn_RUINVICTORY_09_05"); //Р—РґРµСЃСЊ РЅР°С€Рё РїСѓС‚Рё СЂР°СЃС…РѕРґСЏС‚СЃСЏ. РЇ С…РѕС‡Сѓ РµС‰Рµ РЅРµРјРЅРѕРіРѕ РёР·СѓС‡РёС‚СЊ СЌС‚Рѕ РјРµСЃС‚Рѕ.
+	AI_Output 			(self, other,"Info_Gorn_RUINVICTORY_09_06"); //РќРѕ РјС‹ РµС‰Рµ СѓРІРёРґРёРјСЃСЏ, СЏ СѓРІРµСЂРµРЅ. Р”Рѕ РІСЃС‚СЂРµС‡Рё, РґСЂСѓРі.
 
-	B_LogEntry		(CH3_MonasteryRuin,	"Когда мы вернулись во двор монастыря, мы столкнулись с молодым троллем. Нам удалось победить его.");
-	B_LogEntry		(CH3_MonasteryRuin,	"Потом наши с Горном пути разошлись. Но мне кажется, что я его еще увижу.");
+	B_LogEntry		(CH3_MonasteryRuin,	"РљРѕРіРґР° РјС‹ РІРµСЂРЅСѓР»РёСЃСЊ РІРѕ РґРІРѕСЂ РјРѕРЅР°СЃС‚С‹СЂСЏ, РјС‹ СЃС‚РѕР»РєРЅСѓР»РёСЃСЊ СЃ РјРѕР»РѕРґС‹Рј С‚СЂРѕР»Р»РµРј. РќР°Рј СѓРґР°Р»РѕСЃСЊ РїРѕР±РµРґРёС‚СЊ РµРіРѕ.");
+	B_LogEntry		(CH3_MonasteryRuin,	"РџРѕС‚РѕРј РЅР°С€Рё СЃ Р“РѕСЂРЅРѕРј РїСѓС‚Рё СЂР°Р·РѕС€Р»РёСЃСЊ. РќРѕ РјРЅРµ РєР°Р¶РµС‚СЃСЏ, С‡С‚Рѕ СЏ РµРіРѕ РµС‰Рµ СѓРІРёР¶Сѓ.");
 
 	self.aivar[AIV_PARTYMEMBER] = FALSE;
 	Npc_ExchangeRoutine	(self,	"RuinStay");
@@ -945,7 +945,7 @@ INSTANCE Info_Gorn_DIEGOMILTEN (C_INFO)
 	information	= Info_Gorn_DIEGOMILTEN_Info;
 	important	= 0;	
 	permanent	= 0;
-	description = "Недалеко от Старого лагеря я встретил Диего и Мильтена.";
+	description = "РќРµРґР°Р»РµРєРѕ РѕС‚ РЎС‚Р°СЂРѕРіРѕ Р»Р°РіРµСЂСЏ СЏ РІСЃС‚СЂРµС‚РёР» Р”РёРµРіРѕ Рё РњРёР»СЊС‚РµРЅР°.";
 };                       
 
 FUNC INT Info_Gorn_DIEGOMILTEN_Condition()
@@ -958,11 +958,11 @@ FUNC INT Info_Gorn_DIEGOMILTEN_Condition()
 
 func VOID Info_Gorn_DIEGOMILTEN_Info()
 {
-	AI_Output 			(hero,self,"Info_Gorn_DIEGOMILTEN_15_01"); //Недалеко от Старого лагеря я встретил Диего и Мильтена.
-	AI_Output 			(self,hero,"Info_Gorn_DIEGOMILTEN_09_02"); //Это хорошая новость!
-	AI_Output 			(hero,self,"Info_Gorn_DIEGOMILTEN_15_03"); //Они хотят видеть тебя и Лестера. На вашем обычном месте.
-	AI_Output 			(self,hero,"Info_Gorn_DIEGOMILTEN_09_04"); //Спасибо. Дружба - самое ценное, что у нас осталось.
-	AI_Output 			(self,hero,"Info_Gorn_DIEGOMILTEN_09_05"); //Ты уже почти один из нас. Ты заслужил наше доверие.
+	AI_Output 			(hero,self,"Info_Gorn_DIEGOMILTEN_15_01"); //РќРµРґР°Р»РµРєРѕ РѕС‚ РЎС‚Р°СЂРѕРіРѕ Р»Р°РіРµСЂСЏ СЏ РІСЃС‚СЂРµС‚РёР» Р”РёРµРіРѕ Рё РњРёР»СЊС‚РµРЅР°.
+	AI_Output 			(self,hero,"Info_Gorn_DIEGOMILTEN_09_02"); //Р­С‚Рѕ С…РѕСЂРѕС€Р°СЏ РЅРѕРІРѕСЃС‚СЊ!
+	AI_Output 			(hero,self,"Info_Gorn_DIEGOMILTEN_15_03"); //РћРЅРё С…РѕС‚СЏС‚ РІРёРґРµС‚СЊ С‚РµР±СЏ Рё Р›РµСЃС‚РµСЂР°. РќР° РІР°С€РµРј РѕР±С‹С‡РЅРѕРј РјРµСЃС‚Рµ.
+	AI_Output 			(self,hero,"Info_Gorn_DIEGOMILTEN_09_04"); //РЎРїР°СЃРёР±Рѕ. Р”СЂСѓР¶Р±Р° - СЃР°РјРѕРµ С†РµРЅРЅРѕРµ, С‡С‚Рѕ Сѓ РЅР°СЃ РѕСЃС‚Р°Р»РѕСЃСЊ.
+	AI_Output 			(self,hero,"Info_Gorn_DIEGOMILTEN_09_05"); //РўС‹ СѓР¶Рµ РїРѕС‡С‚Рё РѕРґРёРЅ РёР· РЅР°СЃ. РўС‹ Р·Р°СЃР»СѓР¶РёР» РЅР°С€Рµ РґРѕРІРµСЂРёРµ.
 
 	B_GiveXP			(XP_MessageForGorn);
 	
@@ -972,7 +972,7 @@ func VOID Info_Gorn_DIEGOMILTEN_Info()
 	}
 	else 
 	{
-		B_LogEntry			(CH4_4Friends,		"Я рассказал Лестеру и Горну о том, что друзья хотят их видеть. Они сами знают, где именно состоится эта встреча."); 
+		B_LogEntry			(CH4_4Friends,		"РЇ СЂР°СЃСЃРєР°Р·Р°Р» Р›РµСЃС‚РµСЂСѓ Рё Р“РѕСЂРЅСѓ Рѕ С‚РѕРј, С‡С‚Рѕ РґСЂСѓР·СЊСЏ С…РѕС‚СЏС‚ РёС… РІРёРґРµС‚СЊ. РћРЅРё СЃР°РјРё Р·РЅР°СЋС‚, РіРґРµ РёРјРµРЅРЅРѕ СЃРѕСЃС‚РѕРёС‚СЃСЏ СЌС‚Р° РІСЃС‚СЂРµС‡Р°."); 
 		Log_SetTopicStatus	(CH4_4Friends,		LOG_SUCCESS);
 	};
 
@@ -988,7 +988,7 @@ INSTANCE Info_Gorn_FREEMINE (C_INFO)
 	information	= Info_Gorn_FREEMINE_Info;
 	important	= 0;	
 	permanent	= 0;
-	description = "Что ты видел в Свободной шахте?";
+	description = "Р§С‚Рѕ С‚С‹ РІРёРґРµР» РІ РЎРІРѕР±РѕРґРЅРѕР№ С€Р°С…С‚Рµ?";
 };                       
 
 FUNC INT Info_Gorn_FREEMINE_Condition()
@@ -1002,13 +1002,13 @@ FUNC INT Info_Gorn_FREEMINE_Condition()
 
 func VOID Info_Gorn_FREEMINE_Info()
 {
-	AI_Output 			(hero,self,"Info_Gorn_FREEMINE_15_01"); //Что ты видел в Свободной шахте?
-	AI_Output 			(self,hero,"Info_Gorn_FREEMINE_09_02"); //После осмотра руин я вернулся туда и захотел зайти к Окилу, хозяину Свободной шахты.
-	AI_Output 			(self,hero,"Info_Gorn_FREEMINE_09_03"); //Но там я увидел только трупы.
-	AI_Output 			(self,hero,"Info_Gorn_FREEMINE_09_04"); //Еще я заметил, как стражники строили укрепления у входа в шахту.
-	AI_Output 			(hero,self,"Info_Gorn_FREEMINE_15_05"); //А как две дюжины стражников справились с гарнизоном наемников?
-	AI_Output 			(self,hero,"Info_Gorn_FREEMINE_09_06"); //Мне показалось, что это было нападение из засады. Никто не ожидал, что стражники придут со стороны гор.
-	AI_Output 			(self,hero,"Info_Gorn_FREEMINE_09_07"); //А внезапность, как известно, является очень большим преимуществом.
+	AI_Output 			(hero,self,"Info_Gorn_FREEMINE_15_01"); //Р§С‚Рѕ С‚С‹ РІРёРґРµР» РІ РЎРІРѕР±РѕРґРЅРѕР№ С€Р°С…С‚Рµ?
+	AI_Output 			(self,hero,"Info_Gorn_FREEMINE_09_02"); //РџРѕСЃР»Рµ РѕСЃРјРѕС‚СЂР° СЂСѓРёРЅ СЏ РІРµСЂРЅСѓР»СЃСЏ С‚СѓРґР° Рё Р·Р°С…РѕС‚РµР» Р·Р°Р№С‚Рё Рє РћРєРёР»Сѓ, С…РѕР·СЏРёРЅСѓ РЎРІРѕР±РѕРґРЅРѕР№ С€Р°С…С‚С‹.
+	AI_Output 			(self,hero,"Info_Gorn_FREEMINE_09_03"); //РќРѕ С‚Р°Рј СЏ СѓРІРёРґРµР» С‚РѕР»СЊРєРѕ С‚СЂСѓРїС‹.
+	AI_Output 			(self,hero,"Info_Gorn_FREEMINE_09_04"); //Р•С‰Рµ СЏ Р·Р°РјРµС‚РёР», РєР°Рє СЃС‚СЂР°Р¶РЅРёРєРё СЃС‚СЂРѕРёР»Рё СѓРєСЂРµРїР»РµРЅРёСЏ Сѓ РІС…РѕРґР° РІ С€Р°С…С‚Сѓ.
+	AI_Output 			(hero,self,"Info_Gorn_FREEMINE_15_05"); //Рђ РєР°Рє РґРІРµ РґСЋР¶РёРЅС‹ СЃС‚СЂР°Р¶РЅРёРєРѕРІ СЃРїСЂР°РІРёР»РёСЃСЊ СЃ РіР°СЂРЅРёР·РѕРЅРѕРј РЅР°РµРјРЅРёРєРѕРІ?
+	AI_Output 			(self,hero,"Info_Gorn_FREEMINE_09_06"); //РњРЅРµ РїРѕРєР°Р·Р°Р»РѕСЃСЊ, С‡С‚Рѕ СЌС‚Рѕ Р±С‹Р»Рѕ РЅР°РїР°РґРµРЅРёРµ РёР· Р·Р°СЃР°РґС‹. РќРёРєС‚Рѕ РЅРµ РѕР¶РёРґР°Р», С‡С‚Рѕ СЃС‚СЂР°Р¶РЅРёРєРё РїСЂРёРґСѓС‚ СЃРѕ СЃС‚РѕСЂРѕРЅС‹ РіРѕСЂ.
+	AI_Output 			(self,hero,"Info_Gorn_FREEMINE_09_07"); //Рђ РІРЅРµР·Р°РїРЅРѕСЃС‚СЊ, РєР°Рє РёР·РІРµСЃС‚РЅРѕ, СЏРІР»СЏРµС‚СЃСЏ РѕС‡РµРЅСЊ Р±РѕР»СЊС€РёРј РїСЂРµРёРјСѓС‰РµСЃС‚РІРѕРј.
 };
 
 //---------------------------------------------------------------------
@@ -1021,7 +1021,7 @@ INSTANCE Info_Gorn_GUARDNC (C_INFO)
 	information	= Info_Gorn_GUARDNC_Info;
 	important	= 0;	
 	permanent	= 0;
-	description = "Что ты собираешься делать теперь?";
+	description = "Р§С‚Рѕ С‚С‹ СЃРѕР±РёСЂР°РµС€СЊСЃСЏ РґРµР»Р°С‚СЊ С‚РµРїРµСЂСЊ?";
 };                       
 
 FUNC INT Info_Gorn_GUARDNC_Condition()
@@ -1034,12 +1034,12 @@ FUNC INT Info_Gorn_GUARDNC_Condition()
 
 func VOID Info_Gorn_GUARDNC_Info()
 {
-	AI_Output 			(hero,self,"Info_Gorn_GUARDNC_15_01"); //Что ты собираешься делать теперь?
-	AI_Output 			(self,hero,"Info_Gorn_GUARDNC_09_02"); //Нужно заново организовать систему безопасности лагеря. А это займет много времени.
-	AI_Output 			(self,hero,"Info_Gorn_GUARDNC_09_03"); //До того как придет Ли со своими людьми, я присоединюсь к отряду Корда.
-	AI_Output 			(hero,self,"Info_Gorn_GUARDNC_15_04"); //А вы собираетесь нанести Гомезу ответный удар?
-	AI_Output 			(self,hero,"Info_Gorn_GUARDNC_09_05"); //Еще нет, но этот день не за горами.
-	AI_Output 			(self,hero,"Info_Gorn_GUARDNC_09_06"); //Если захочешь меня найти, иди в сторону шахты. Там и будет находиться мой пост.
+	AI_Output 			(hero,self,"Info_Gorn_GUARDNC_15_01"); //Р§С‚Рѕ С‚С‹ СЃРѕР±РёСЂР°РµС€СЊСЃСЏ РґРµР»Р°С‚СЊ С‚РµРїРµСЂСЊ?
+	AI_Output 			(self,hero,"Info_Gorn_GUARDNC_09_02"); //РќСѓР¶РЅРѕ Р·Р°РЅРѕРІРѕ РѕСЂРіР°РЅРёР·РѕРІР°С‚СЊ СЃРёСЃС‚РµРјСѓ Р±РµР·РѕРїР°СЃРЅРѕСЃС‚Рё Р»Р°РіРµСЂСЏ. Рђ СЌС‚Рѕ Р·Р°Р№РјРµС‚ РјРЅРѕРіРѕ РІСЂРµРјРµРЅРё.
+	AI_Output 			(self,hero,"Info_Gorn_GUARDNC_09_03"); //Р”Рѕ С‚РѕРіРѕ РєР°Рє РїСЂРёРґРµС‚ Р›Рё СЃРѕ СЃРІРѕРёРјРё Р»СЋРґСЊРјРё, СЏ РїСЂРёСЃРѕРµРґРёРЅСЋСЃСЊ Рє РѕС‚СЂСЏРґСѓ РљРѕСЂРґР°.
+	AI_Output 			(hero,self,"Info_Gorn_GUARDNC_15_04"); //Рђ РІС‹ СЃРѕР±РёСЂР°РµС‚РµСЃСЊ РЅР°РЅРµСЃС‚Рё Р“РѕРјРµР·Сѓ РѕС‚РІРµС‚РЅС‹Р№ СѓРґР°СЂ?
+	AI_Output 			(self,hero,"Info_Gorn_GUARDNC_09_05"); //Р•С‰Рµ РЅРµС‚, РЅРѕ СЌС‚РѕС‚ РґРµРЅСЊ РЅРµ Р·Р° РіРѕСЂР°РјРё.
+	AI_Output 			(self,hero,"Info_Gorn_GUARDNC_09_06"); //Р•СЃР»Рё Р·Р°С…РѕС‡РµС€СЊ РјРµРЅСЏ РЅР°Р№С‚Рё, РёРґРё РІ СЃС‚РѕСЂРѕРЅСѓ С€Р°С…С‚С‹. РўР°Рј Рё Р±СѓРґРµС‚ РЅР°С…РѕРґРёС‚СЊСЃСЏ РјРѕР№ РїРѕСЃС‚.
 
 	B_Story_CordsPost	();
 
@@ -1056,7 +1056,7 @@ INSTANCE Info_Gorn_GUARDNCRUNNING (C_INFO)
 	information	= Info_Gorn_GUARDNCRUNNING_Info;
 	important	= 0;	
 	permanent	= 1;
-	description = "Как дела?";
+	description = "РљР°Рє РґРµР»Р°?";
 };                       
 
 FUNC INT Info_Gorn_GUARDNCRUNNING_Condition()
@@ -1070,9 +1070,9 @@ FUNC INT Info_Gorn_GUARDNCRUNNING_Condition()
 
 func VOID Info_Gorn_GUARDNCRUNNING_Info()
 {
-	AI_Output 			(hero,self,"Info_Gorn_GUARDNCRUNNING_15_01"); //Как дела?
-	AI_Output 			(self,hero,"Info_Gorn_GUARDNCRUNNING_09_02"); //Кругом тихо, словно в Свободной шахте не осталось живых.
-	AI_Output 			(self,hero,"Info_Gorn_GUARDNCRUNNING_09_03"); //Ли все еще занят организацией обороны.
+	AI_Output 			(hero,self,"Info_Gorn_GUARDNCRUNNING_15_01"); //РљР°Рє РґРµР»Р°?
+	AI_Output 			(self,hero,"Info_Gorn_GUARDNCRUNNING_09_02"); //РљСЂСѓРіРѕРј С‚РёС…Рѕ, СЃР»РѕРІРЅРѕ РІ РЎРІРѕР±РѕРґРЅРѕР№ С€Р°С…С‚Рµ РЅРµ РѕСЃС‚Р°Р»РѕСЃСЊ Р¶РёРІС‹С….
+	AI_Output 			(self,hero,"Info_Gorn_GUARDNCRUNNING_09_03"); //Р›Рё РІСЃРµ РµС‰Рµ Р·Р°РЅСЏС‚ РѕСЂРіР°РЅРёР·Р°С†РёРµР№ РѕР±РѕСЂРѕРЅС‹.
 };
 
 //---------------------------------------------------------------------
@@ -1099,8 +1099,8 @@ func VOID Info_Gorn_POST_Info()
 {
 	AI_GotoNpc			(self, hero);
 
-	AI_Output 			(self, hero,"Info_Gorn_POST_09_01"); //Ты пришел вовремя. Мы готовимся нанести ответный удар.
-	AI_Output 			(self, hero,"Info_Gorn_POST_09_02"); //Сперва мы хотим отвоевать Свободную шахту.
+	AI_Output 			(self, hero,"Info_Gorn_POST_09_01"); //РўС‹ РїСЂРёС€РµР» РІРѕРІСЂРµРјСЏ. РњС‹ РіРѕС‚РѕРІРёРјСЃСЏ РЅР°РЅРµСЃС‚Рё РѕС‚РІРµС‚РЅС‹Р№ СѓРґР°СЂ.
+	AI_Output 			(self, hero,"Info_Gorn_POST_09_02"); //РЎРїРµСЂРІР° РјС‹ С…РѕС‚РёРј РѕС‚РІРѕРµРІР°С‚СЊ РЎРІРѕР±РѕРґРЅСѓСЋ С€Р°С…С‚Сѓ.
 };
 
 //---------------------------------------------------------------------
@@ -1113,7 +1113,7 @@ INSTANCE Info_Gorn_TAKEBACK (C_INFO)
 	information	= Info_Gorn_TAKEBACK_Info;
 	important	= 0;	
 	permanent	= 0;
-	description = "Отвоевать вчетвером? А остальные что делать будут?";
+	description = "РћС‚РІРѕРµРІР°С‚СЊ РІС‡РµС‚РІРµСЂРѕРј? Рђ РѕСЃС‚Р°Р»СЊРЅС‹Рµ С‡С‚Рѕ РґРµР»Р°С‚СЊ Р±СѓРґСѓС‚?";
 };                       
 
 FUNC INT Info_Gorn_TAKEBACK_Condition()
@@ -1126,31 +1126,31 @@ FUNC INT Info_Gorn_TAKEBACK_Condition()
 
 func VOID Info_Gorn_TAKEBACK_Info()
 {
-	AI_Output 			(hero, self,"Info_Gorn_TAKEBACK_15_01"); //Отвоевать вчетвером? А остальные что делать будут?
-	AI_Output 			(self, hero,"Info_Gorn_TAKEBACK_09_02"); //Лобовая атака ничего нам не даст. Люди Гомеза слишком хорошо подготовились к ней!
-	AI_Output 			(self, hero,"Info_Gorn_TAKEBACK_09_03"); //Мы хотим перебить их по одному, незаметно. Думаю, нам это удастся.
-	AI_Output 			(self, hero,"Info_Gorn_TAKEBACK_09_04"); //Ли просил меня передать тебе кое-что.
+	AI_Output 			(hero, self,"Info_Gorn_TAKEBACK_15_01"); //РћС‚РІРѕРµРІР°С‚СЊ РІС‡РµС‚РІРµСЂРѕРј? Рђ РѕСЃС‚Р°Р»СЊРЅС‹Рµ С‡С‚Рѕ РґРµР»Р°С‚СЊ Р±СѓРґСѓС‚?
+	AI_Output 			(self, hero,"Info_Gorn_TAKEBACK_09_02"); //Р›РѕР±РѕРІР°СЏ Р°С‚Р°РєР° РЅРёС‡РµРіРѕ РЅР°Рј РЅРµ РґР°СЃС‚. Р›СЋРґРё Р“РѕРјРµР·Р° СЃР»РёС€РєРѕРј С…РѕСЂРѕС€Рѕ РїРѕРґРіРѕС‚РѕРІРёР»РёСЃСЊ Рє РЅРµР№!
+	AI_Output 			(self, hero,"Info_Gorn_TAKEBACK_09_03"); //РњС‹ С…РѕС‚РёРј РїРµСЂРµР±РёС‚СЊ РёС… РїРѕ РѕРґРЅРѕРјСѓ, РЅРµР·Р°РјРµС‚РЅРѕ. Р”СѓРјР°СЋ, РЅР°Рј СЌС‚Рѕ СѓРґР°СЃС‚СЃСЏ.
+	AI_Output 			(self, hero,"Info_Gorn_TAKEBACK_09_04"); //Р›Рё РїСЂРѕСЃРёР» РјРµРЅСЏ РїРµСЂРµРґР°С‚СЊ С‚РµР±Рµ РєРѕРµ-С‡С‚Рѕ.
 
 	var int guild;
 	guild = Npc_GetTrueGuild(hero);
 	if 		(guild == GIL_SLD)
 	{
-		AI_Output 		(self, hero,"Info_Gorn_TAKEBACK_09_05"); //Возглавлять операцию он поручает тебе, ты ведь один из лучших наемников.
+		AI_Output 		(self, hero,"Info_Gorn_TAKEBACK_09_05"); //Р’РѕР·РіР»Р°РІР»СЏС‚СЊ РѕРїРµСЂР°С†РёСЋ РѕРЅ РїРѕСЂСѓС‡Р°РµС‚ С‚РµР±Рµ, С‚С‹ РІРµРґСЊ РѕРґРёРЅ РёР· Р»СѓС‡С€РёС… РЅР°РµРјРЅРёРєРѕРІ.
 	}
 	else if	(guild == GIL_KDW)
 	{
-		AI_Output 		(self, hero,"Info_Gorn_TAKEBACK_09_06"); //Тебе будет поручено провести эту операцию. Ты же один из сильнейших магов Воды и у тебя богатый опыт сражений.
+		AI_Output 		(self, hero,"Info_Gorn_TAKEBACK_09_06"); //РўРµР±Рµ Р±СѓРґРµС‚ РїРѕСЂСѓС‡РµРЅРѕ РїСЂРѕРІРµСЃС‚Рё СЌС‚Сѓ РѕРїРµСЂР°С†РёСЋ. РўС‹ Р¶Рµ РѕРґРёРЅ РёР· СЃРёР»СЊРЅРµР№С€РёС… РјР°РіРѕРІ Р’РѕРґС‹ Рё Сѓ С‚РµР±СЏ Р±РѕРіР°С‚С‹Р№ РѕРїС‹С‚ СЃСЂР°Р¶РµРЅРёР№.
 	}
 	else if (guild == GIL_ORG)
 	{
-		AI_Output 		(self, hero,"Info_Gorn_TAKEBACK_09_07"); //Он поручает тебе провести эту операцию, так как ты один из лучших воров лагеря.
+		AI_Output 		(self, hero,"Info_Gorn_TAKEBACK_09_07"); //РћРЅ РїРѕСЂСѓС‡Р°РµС‚ С‚РµР±Рµ РїСЂРѕРІРµСЃС‚Рё СЌС‚Сѓ РѕРїРµСЂР°С†РёСЋ, С‚Р°Рє РєР°Рє С‚С‹ РѕРґРёРЅ РёР· Р»СѓС‡С€РёС… РІРѕСЂРѕРІ Р»Р°РіРµСЂСЏ.
 	}
 	else
 	{
-		AI_Output 		(self, hero,"Info_Gorn_TAKEBACK_09_08"); //Ты не из нашего лагеря, но ты показал, что достоит нашего доверия.
-		AI_Output 		(self, hero,"Info_Gorn_TAKEBACK_09_09"); //Мы предлагаем тебе провести эту операцию.
+		AI_Output 		(self, hero,"Info_Gorn_TAKEBACK_09_08"); //РўС‹ РЅРµ РёР· РЅР°С€РµРіРѕ Р»Р°РіРµСЂСЏ, РЅРѕ С‚С‹ РїРѕРєР°Р·Р°Р», С‡С‚Рѕ РґРѕСЃС‚РѕРёС‚ РЅР°С€РµРіРѕ РґРѕРІРµСЂРёСЏ.
+		AI_Output 		(self, hero,"Info_Gorn_TAKEBACK_09_09"); //РњС‹ РїСЂРµРґР»Р°РіР°РµРј С‚РµР±Рµ РїСЂРѕРІРµСЃС‚Рё СЌС‚Сѓ РѕРїРµСЂР°С†РёСЋ.
 	};
-	AI_Output 			(self, hero,"Info_Gorn_TAKEBACK_09_10"); //Я пойду с тобой. Вместе мы справимся.
+	AI_Output 			(self, hero,"Info_Gorn_TAKEBACK_09_10"); //РЇ РїРѕР№РґСѓ СЃ С‚РѕР±РѕР№. Р’РјРµСЃС‚Рµ РјС‹ СЃРїСЂР°РІРёРјСЃСЏ.
 };
 
 //---------------------------------------------------------------------
@@ -1163,7 +1163,7 @@ INSTANCE Info_Gorn_SECOND (C_INFO)
 	information	= Info_Gorn_SECOND_Info;
 	important	= 0;	
 	permanent	= 0;
-	description = "Сперва шахта, а что потом?";
+	description = "РЎРїРµСЂРІР° С€Р°С…С‚Р°, Р° С‡С‚Рѕ РїРѕС‚РѕРј?";
 };                       
 
 FUNC INT Info_Gorn_SECOND_Condition()
@@ -1176,10 +1176,10 @@ FUNC INT Info_Gorn_SECOND_Condition()
 
 func VOID Info_Gorn_SECOND_Info()
 {
-	AI_Output 			(hero, self,"Info_Gorn_SECOND_15_01"); //Сперва шахта, а что потом?
-	AI_Output 			(self, hero,"Info_Gorn_SECOND_09_02"); //Как только мы захватим шахту, мы будем искать тот проход в горах, которым воспользовались люди Гомеза.
-	AI_Output 			(self, hero,"Info_Gorn_SECOND_09_03"); //Когда мы его перекроем, мы снова сможем контролировать ситуацию.
-	AI_Output 			(hero, self,"Info_Gorn_SECOND_15_04"); //Понятно.  
+	AI_Output 			(hero, self,"Info_Gorn_SECOND_15_01"); //РЎРїРµСЂРІР° С€Р°С…С‚Р°, Р° С‡С‚Рѕ РїРѕС‚РѕРј?
+	AI_Output 			(self, hero,"Info_Gorn_SECOND_09_02"); //РљР°Рє С‚РѕР»СЊРєРѕ РјС‹ Р·Р°С…РІР°С‚РёРј С€Р°С…С‚Сѓ, РјС‹ Р±СѓРґРµРј РёСЃРєР°С‚СЊ С‚РѕС‚ РїСЂРѕС…РѕРґ РІ РіРѕСЂР°С…, РєРѕС‚РѕСЂС‹Рј РІРѕСЃРїРѕР»СЊР·РѕРІР°Р»РёСЃСЊ Р»СЋРґРё Р“РѕРјРµР·Р°.
+	AI_Output 			(self, hero,"Info_Gorn_SECOND_09_03"); //РљРѕРіРґР° РјС‹ РµРіРѕ РїРµСЂРµРєСЂРѕРµРј, РјС‹ СЃРЅРѕРІР° СЃРјРѕР¶РµРј РєРѕРЅС‚СЂРѕР»РёСЂРѕРІР°С‚СЊ СЃРёС‚СѓР°С†РёСЋ.
+	AI_Output 			(hero, self,"Info_Gorn_SECOND_15_04"); //РџРѕРЅСЏС‚РЅРѕ.  
 };
 
 //---------------------------------------------------------------------
@@ -1192,7 +1192,7 @@ INSTANCE Info_Gorn_WHYME (C_INFO)
 	information	= Info_Gorn_WHYME_Info;
 	important	= 0;	
 	permanent	= 0;
-	description = "Но почему здесь понадобился именно я?";
+	description = "РќРѕ РїРѕС‡РµРјСѓ Р·РґРµСЃСЊ РїРѕРЅР°РґРѕР±РёР»СЃСЏ РёРјРµРЅРЅРѕ СЏ?";
 };                       
 
 FUNC INT Info_Gorn_WHYME_Condition()
@@ -1205,10 +1205,10 @@ FUNC INT Info_Gorn_WHYME_Condition()
 
 func VOID Info_Gorn_WHYME_Info()
 {
-	AI_Output 			(hero, self,"Info_Gorn_WHYME_15_01"); //Но почему здесь понадобился именно я?
-	AI_Output 			(self, hero,"Info_Gorn_WHYME_09_02"); //Ты уже много раз доказывал нам свою храбрость и способность мыслить.
-	AI_Output 			(self, hero,"Info_Gorn_WHYME_09_03"); //Кроме того, ты лучше всех знаешь Старый лагерь и его стражников.
-	AI_Output 			(self, hero,"Info_Gorn_WHYME_09_04"); //Думаю, только ты можешь справиться с этим ответственным заданием.
+	AI_Output 			(hero, self,"Info_Gorn_WHYME_15_01"); //РќРѕ РїРѕС‡РµРјСѓ Р·РґРµСЃСЊ РїРѕРЅР°РґРѕР±РёР»СЃСЏ РёРјРµРЅРЅРѕ СЏ?
+	AI_Output 			(self, hero,"Info_Gorn_WHYME_09_02"); //РўС‹ СѓР¶Рµ РјРЅРѕРіРѕ СЂР°Р· РґРѕРєР°Р·С‹РІР°Р» РЅР°Рј СЃРІРѕСЋ С…СЂР°Р±СЂРѕСЃС‚СЊ Рё СЃРїРѕСЃРѕР±РЅРѕСЃС‚СЊ РјС‹СЃР»РёС‚СЊ.
+	AI_Output 			(self, hero,"Info_Gorn_WHYME_09_03"); //РљСЂРѕРјРµ С‚РѕРіРѕ, С‚С‹ Р»СѓС‡С€Рµ РІСЃРµС… Р·РЅР°РµС€СЊ РЎС‚Р°СЂС‹Р№ Р»Р°РіРµСЂСЊ Рё РµРіРѕ СЃС‚СЂР°Р¶РЅРёРєРѕРІ.
+	AI_Output 			(self, hero,"Info_Gorn_WHYME_09_04"); //Р”СѓРјР°СЋ, С‚РѕР»СЊРєРѕ С‚С‹ РјРѕР¶РµС€СЊ СЃРїСЂР°РІРёС‚СЊСЃСЏ СЃ СЌС‚РёРј РѕС‚РІРµС‚СЃС‚РІРµРЅРЅС‹Рј Р·Р°РґР°РЅРёРµРј.
 };
 
 //---------------------------------------------------------------------
@@ -1221,7 +1221,7 @@ INSTANCE Info_Gorn_KICKBUTT (C_INFO)
 	information	= Info_Gorn_KICKBUTT_Info;
 	important	= 0;	
 	permanent	= 0;
-	description = "Ладно, пойдем, покажем этим непрошенным гостям...";
+	description = "Р›Р°РґРЅРѕ, РїРѕР№РґРµРј, РїРѕРєР°Р¶РµРј СЌС‚РёРј РЅРµРїСЂРѕС€РµРЅРЅС‹Рј РіРѕСЃС‚СЏРј...";
 };                       
 
 FUNC INT Info_Gorn_KICKBUTT_Condition()
@@ -1235,9 +1235,9 @@ FUNC INT Info_Gorn_KICKBUTT_Condition()
 
 func VOID Info_Gorn_KICKBUTT_Info()
 {
-	AI_Output 			(hero, self,"Info_Gorn_KICKBUTT_15_01"); //Ладно, пойдем, покажем этим непрошенным гостям, что значит зариться на чужое добро!
-	AI_Output 			(self, hero,"Info_Gorn_KICKBUTT_09_02"); //Я так и думал, что ты согласишься!
-	AI_Output 			(self, hero,"Info_Gorn_KICKBUTT_09_03"); //Вот, возьми этот ключ. Он открывает дверь в караульную у входа в шахту.
+	AI_Output 			(hero, self,"Info_Gorn_KICKBUTT_15_01"); //Р›Р°РґРЅРѕ, РїРѕР№РґРµРј, РїРѕРєР°Р¶РµРј СЌС‚РёРј РЅРµРїСЂРѕС€РµРЅРЅС‹Рј РіРѕСЃС‚СЏРј, С‡С‚Рѕ Р·РЅР°С‡РёС‚ Р·Р°СЂРёС‚СЊСЃСЏ РЅР° С‡СѓР¶РѕРµ РґРѕР±СЂРѕ!
+	AI_Output 			(self, hero,"Info_Gorn_KICKBUTT_09_02"); //РЇ С‚Р°Рє Рё РґСѓРјР°Р», С‡С‚Рѕ С‚С‹ СЃРѕРіР»Р°СЃРёС€СЊСЃСЏ!
+	AI_Output 			(self, hero,"Info_Gorn_KICKBUTT_09_03"); //Р’РѕС‚, РІРѕР·СЊРјРё СЌС‚РѕС‚ РєР»СЋС‡. РћРЅ РѕС‚РєСЂС‹РІР°РµС‚ РґРІРµСЂСЊ РІ РєР°СЂР°СѓР»СЊРЅСѓСЋ Сѓ РІС…РѕРґР° РІ С€Р°С…С‚Сѓ.
 
 	B_Story_GornJoins	();
 };
@@ -1252,7 +1252,7 @@ INSTANCE Info_Gorn_MYWAY (C_INFO)
 	information	= Info_Gorn_MYWAY_Info;
 	important	= 0;	
 	permanent	= 0;
-	description = "Почему бы и нет. Мне все равно нужно попасть в шахту!";
+	description = "РџРѕС‡РµРјСѓ Р±С‹ Рё РЅРµС‚. РњРЅРµ РІСЃРµ СЂР°РІРЅРѕ РЅСѓР¶РЅРѕ РїРѕРїР°СЃС‚СЊ РІ С€Р°С…С‚Сѓ!";
 };                       
 
 FUNC INT Info_Gorn_MYWAY_Condition()
@@ -1266,9 +1266,9 @@ FUNC INT Info_Gorn_MYWAY_Condition()
 
 func VOID Info_Gorn_MYWAY_Info()
 {
-	AI_Output 			(hero, self,"Info_Gorn_MYWAY_15_01"); //Почему бы и нет. Мне все равно нужно попасть в шахту!
-	AI_Output 			(self, hero,"Info_Gorn_MYWAY_09_02"); //Я так и думал, что ты согласишься!
-	AI_Output 			(self, hero,"Info_Gorn_MYWAY_09_03"); //Вот, возьми этот ключ. Он открывает дверь в караульную у входа в шахту.
+	AI_Output 			(hero, self,"Info_Gorn_MYWAY_15_01"); //РџРѕС‡РµРјСѓ Р±С‹ Рё РЅРµС‚. РњРЅРµ РІСЃРµ СЂР°РІРЅРѕ РЅСѓР¶РЅРѕ РїРѕРїР°СЃС‚СЊ РІ С€Р°С…С‚Сѓ!
+	AI_Output 			(self, hero,"Info_Gorn_MYWAY_09_02"); //РЇ С‚Р°Рє Рё РґСѓРјР°Р», С‡С‚Рѕ С‚С‹ СЃРѕРіР»Р°СЃРёС€СЊСЃСЏ!
+	AI_Output 			(self, hero,"Info_Gorn_MYWAY_09_03"); //Р’РѕС‚, РІРѕР·СЊРјРё СЌС‚РѕС‚ РєР»СЋС‡. РћРЅ РѕС‚РєСЂС‹РІР°РµС‚ РґРІРµСЂСЊ РІ РєР°СЂР°СѓР»СЊРЅСѓСЋ Сѓ РІС…РѕРґР° РІ С€Р°С…С‚Сѓ.
 
 	B_Story_GornJoins	();
 };
@@ -1298,28 +1298,28 @@ func VOID Info_Gorn_WOLF_Info()
 {
 	AI_GotoNpc			(self, hero);
 
-	AI_Output 			(self, hero,"Info_Gorn_WOLF_09_01"); //Да, чуть не забыл!
-	AI_Output 			(self, hero,"Info_Gorn_WOLF_09_02"); //Вор по имени Волк хотел встретиться с тобой перед тем, как мы пойдем в шахту.
+	AI_Output 			(self, hero,"Info_Gorn_WOLF_09_01"); //Р”Р°, С‡СѓС‚СЊ РЅРµ Р·Р°Р±С‹Р»!
+	AI_Output 			(self, hero,"Info_Gorn_WOLF_09_02"); //Р’РѕСЂ РїРѕ РёРјРµРЅРё Р’РѕР»Рє С…РѕС‚РµР» РІСЃС‚СЂРµС‚РёС‚СЊСЃСЏ СЃ С‚РѕР±РѕР№ РїРµСЂРµРґ С‚РµРј, РєР°Рє РјС‹ РїРѕР№РґРµРј РІ С€Р°С…С‚Сѓ.
 
 	Info_ClearChoices	(Info_Gorn_WOLF);
-	Info_AddChoice		(Info_Gorn_WOLF, "Он может подождать. Нам предстоят более важные дела.",	Info_Gorn_WOLF_FM);	
-	Info_AddChoice		(Info_Gorn_WOLF, "Что ж, пойду узнаю, что он хотел.",		Info_Gorn_WOLF_WOLF);	
+	Info_AddChoice		(Info_Gorn_WOLF, "РћРЅ РјРѕР¶РµС‚ РїРѕРґРѕР¶РґР°С‚СЊ. РќР°Рј РїСЂРµРґСЃС‚РѕСЏС‚ Р±РѕР»РµРµ РІР°Р¶РЅС‹Рµ РґРµР»Р°.",	Info_Gorn_WOLF_FM);	
+	Info_AddChoice		(Info_Gorn_WOLF, "Р§С‚Рѕ Р¶, РїРѕР№РґСѓ СѓР·РЅР°СЋ, С‡С‚Рѕ РѕРЅ С…РѕС‚РµР».",		Info_Gorn_WOLF_WOLF);	
 
-	B_LogEntry			(CH4_UluMulu,	"Волк, один из воров, хочет поговорить со мной, перед тем как мы спустимся в шахту. Мне нужно его увидеть.");
+	B_LogEntry			(CH4_UluMulu,	"Р’РѕР»Рє, РѕРґРёРЅ РёР· РІРѕСЂРѕРІ, С…РѕС‡РµС‚ РїРѕРіРѕРІРѕСЂРёС‚СЊ СЃРѕ РјРЅРѕР№, РїРµСЂРµРґ С‚РµРј РєР°Рє РјС‹ СЃРїСѓСЃС‚РёРјСЃСЏ РІ С€Р°С…С‚Сѓ. РњРЅРµ РЅСѓР¶РЅРѕ РµРіРѕ СѓРІРёРґРµС‚СЊ.");
 	Gorn_GotoWolf = TRUE;
 };
 
 func void Info_Gorn_WOLF_FM ()
 {
-	AI_Output 			(hero, self,"Info_Gorn_WOLF_15_04"); //Он может подождать. Нам предстоят более важные дела.
-	AI_Output 			(self, hero,"Info_Gorn_WOLF_09_05"); //Как хочешь!
+	AI_Output 			(hero, self,"Info_Gorn_WOLF_15_04"); //РћРЅ РјРѕР¶РµС‚ РїРѕРґРѕР¶РґР°С‚СЊ. РќР°Рј РїСЂРµРґСЃС‚РѕСЏС‚ Р±РѕР»РµРµ РІР°Р¶РЅС‹Рµ РґРµР»Р°.
+	AI_Output 			(self, hero,"Info_Gorn_WOLF_09_05"); //РљР°Рє С…РѕС‡РµС€СЊ!
 	AI_StopProcessInfos	(self);
 };
 
 func void Info_Gorn_WOLF_WOLF ()
 {
-	AI_Output 			(hero, self,"Info_Gorn_WOLF_15_06"); //Что ж, пойду узнаю, что он хотел.
-	AI_Output 			(self, hero,"Info_Gorn_WOLF_09_07"); //Хорошо. Я подожду тебя здесь.
+	AI_Output 			(hero, self,"Info_Gorn_WOLF_15_06"); //Р§С‚Рѕ Р¶, РїРѕР№РґСѓ СѓР·РЅР°СЋ, С‡С‚Рѕ РѕРЅ С…РѕС‚РµР».
+	AI_Output 			(self, hero,"Info_Gorn_WOLF_09_07"); //РҐРѕСЂРѕС€Рѕ. РЇ РїРѕРґРѕР¶РґСѓ С‚РµР±СЏ Р·РґРµСЃСЊ.
 
 	Gorn_JoinedForFM = FALSE;
 	self.aivar[AIV_PARTYMEMBER] = FALSE;
@@ -1356,13 +1356,13 @@ func VOID Info_Gorn_LEAVEFORPOST_Info()
 
 	if (Npc_KnowsInfo(hero,Info_Gorn_WOLF))
 	{
-		AI_Output		(self, hero,"Info_Gorn_LEAVEFORPOST_09_01"); //Мне кажется, ты хочешь поговорить с Волком!
+		AI_Output		(self, hero,"Info_Gorn_LEAVEFORPOST_09_01"); //РњРЅРµ РєР°Р¶РµС‚СЃСЏ, С‚С‹ С…РѕС‡РµС€СЊ РїРѕРіРѕРІРѕСЂРёС‚СЊ СЃ Р’РѕР»РєРѕРј!
 	}
 	else
 	{
-		AI_Output		(self, hero,"Info_Gorn_LEAVEFORPOST_09_02"); //Нет, нам не туда. Пойдем к шахте.
+		AI_Output		(self, hero,"Info_Gorn_LEAVEFORPOST_09_02"); //РќРµС‚, РЅР°Рј РЅРµ С‚СѓРґР°. РџРѕР№РґРµРј Рє С€Р°С…С‚Рµ.
 	};
-	AI_Output 			(self, hero,"Info_Gorn_LEAVEFORPOST_09_03"); //Я буду ждать тебя здесь.
+	AI_Output 			(self, hero,"Info_Gorn_LEAVEFORPOST_09_03"); //РЇ Р±СѓРґСѓ Р¶РґР°С‚СЊ С‚РµР±СЏ Р·РґРµСЃСЊ.
 
 	Gorn_JoinedForFM = FALSE;
 	self.aivar[AIV_PARTYMEMBER] = FALSE;
@@ -1380,7 +1380,7 @@ INSTANCE Info_Gorn_REJOINFORFM (C_INFO)
 	information	= Info_Gorn_REJOINFORFM_Info;
 	important	= 0;	
 	permanent	= 1;
-	description = "Пойдем в шахту!";
+	description = "РџРѕР№РґРµРј РІ С€Р°С…С‚Сѓ!";
 };                       
 
 FUNC INT Info_Gorn_REJOINFORFM_Condition()
@@ -1395,9 +1395,9 @@ FUNC INT Info_Gorn_REJOINFORFM_Condition()
 
 func VOID Info_Gorn_REJOINFORFM_Info()
 {
-	AI_Output 			(hero, self,"Info_Gorn_REJOINFORFM_15_01"); //Пойдем в шахту!
-	AI_Output 			(self, hero,"Info_Gorn_REJOINFORFM_09_02"); //Пришло время расправиться с этими стражниками.
-	AI_Output 			(self, hero,"Info_Gorn_REJOINFORFM_09_03"); //Иди вперед, а я пойду за тобой!
+	AI_Output 			(hero, self,"Info_Gorn_REJOINFORFM_15_01"); //РџРѕР№РґРµРј РІ С€Р°С…С‚Сѓ!
+	AI_Output 			(self, hero,"Info_Gorn_REJOINFORFM_09_02"); //РџСЂРёС€Р»Рѕ РІСЂРµРјСЏ СЂР°СЃРїСЂР°РІРёС‚СЊСЃСЏ СЃ СЌС‚РёРјРё СЃС‚СЂР°Р¶РЅРёРєР°РјРё.
+	AI_Output 			(self, hero,"Info_Gorn_REJOINFORFM_09_03"); //РРґРё РІРїРµСЂРµРґ, Р° СЏ РїРѕР№РґСѓ Р·Р° С‚РѕР±РѕР№!
 
 	Gorn_JoinedForFM = TRUE;
 	self.aivar[AIV_PARTYMEMBER] = TRUE;
@@ -1430,9 +1430,9 @@ func VOID Info_Gorn_RAZOR_Info()
 {
 	AI_GotoNpc			(self, hero);
 
-	AI_Output 			(self, hero,"Info_Gorn_RAZOR_09_01"); //Осторожно.
-	AI_Output 			(self, hero,"Info_Gorn_RAZOR_09_02"); //Они тоже охотятся стаями, как и глорхи, только они гораздо опаснее.
-	AI_Output 			(self, hero,"Info_Gorn_RAZOR_09_03"); //Мы должны убить их. Ты же знаешь, я не люблю, когда за спиной остаются враги.
+	AI_Output 			(self, hero,"Info_Gorn_RAZOR_09_01"); //РћСЃС‚РѕСЂРѕР¶РЅРѕ.
+	AI_Output 			(self, hero,"Info_Gorn_RAZOR_09_02"); //РћРЅРё С‚РѕР¶Рµ РѕС…РѕС‚СЏС‚СЃСЏ СЃС‚Р°СЏРјРё, РєР°Рє Рё РіР»РѕСЂС…Рё, С‚РѕР»СЊРєРѕ РѕРЅРё РіРѕСЂР°Р·РґРѕ РѕРїР°СЃРЅРµРµ.
+	AI_Output 			(self, hero,"Info_Gorn_RAZOR_09_03"); //РњС‹ РґРѕР»Р¶РЅС‹ СѓР±РёС‚СЊ РёС…. РўС‹ Р¶Рµ Р·РЅР°РµС€СЊ, СЏ РЅРµ Р»СЋР±Р»СЋ, РєРѕРіРґР° Р·Р° СЃРїРёРЅРѕР№ РѕСЃС‚Р°СЋС‚СЃСЏ РІСЂР°РіРё.
 
 	AI_StopProcessInfos	(self);
 };
@@ -1462,9 +1462,9 @@ func VOID Info_Gorn_FMCENTRANCE_Info()
 {
 	AI_GotoNpc			(self, hero);
 
-	AI_Output 			(self, hero,"Info_Gorn_FMCENTRANCE_09_01"); //Подожди-ка, видишь эти тела?
-	AI_Output 			(self, hero,"Info_Gorn_FMCENTRANCE_09_02"); //Иди к входу в шахту, а я буду тебя прикрывать. 
-	AI_Output 			(self, hero,"Info_Gorn_FMCENTRANCE_09_03"); //Когда ты спустишься, я пойду за тобой.
+	AI_Output 			(self, hero,"Info_Gorn_FMCENTRANCE_09_01"); //РџРѕРґРѕР¶РґРё-РєР°, РІРёРґРёС€СЊ СЌС‚Рё С‚РµР»Р°?
+	AI_Output 			(self, hero,"Info_Gorn_FMCENTRANCE_09_02"); //РРґРё Рє РІС…РѕРґСѓ РІ С€Р°С…С‚Сѓ, Р° СЏ Р±СѓРґСѓ С‚РµР±СЏ РїСЂРёРєСЂС‹РІР°С‚СЊ. 
+	AI_Output 			(self, hero,"Info_Gorn_FMCENTRANCE_09_03"); //РљРѕРіРґР° С‚С‹ СЃРїСѓСЃС‚РёС€СЊСЃСЏ, СЏ РїРѕР№РґСѓ Р·Р° С‚РѕР±РѕР№.
 
 	Npc_ExchangeRoutine	(self,	"WaitFMC");
 	AI_StopProcessInfos	(self);
@@ -1496,9 +1496,9 @@ func VOID Info_Gorn_FMGATE_Info()
 {
 	AI_GotoNpc			(self, hero);
 
-	AI_Output 			(self, hero,"Info_Gorn_FMGATE_09_01"); //Я слышал, как на тебя кто-то напал, и пришел на помощь.
-	AI_Output 			(hero, self,"Info_Gorn_FMGATE_15_02"); //А, это был один старый знакомый... Но с ним уже разобрались.
-	AI_Output 			(self, hero,"Info_Gorn_FMGATE_09_03"); //Хорошо. Открывай ворота, а я прослежу за ситуацией.
+	AI_Output 			(self, hero,"Info_Gorn_FMGATE_09_01"); //РЇ СЃР»С‹С€Р°Р», РєР°Рє РЅР° С‚РµР±СЏ РєС‚Рѕ-С‚Рѕ РЅР°РїР°Р», Рё РїСЂРёС€РµР» РЅР° РїРѕРјРѕС‰СЊ.
+	AI_Output 			(hero, self,"Info_Gorn_FMGATE_15_02"); //Рђ, СЌС‚Рѕ Р±С‹Р» РѕРґРёРЅ СЃС‚Р°СЂС‹Р№ Р·РЅР°РєРѕРјС‹Р№... РќРѕ СЃ РЅРёРј СѓР¶Рµ СЂР°Р·РѕР±СЂР°Р»РёСЃСЊ.
+	AI_Output 			(self, hero,"Info_Gorn_FMGATE_09_03"); //РҐРѕСЂРѕС€Рѕ. РћС‚РєСЂС‹РІР°Р№ РІРѕСЂРѕС‚Р°, Р° СЏ РїСЂРѕСЃР»РµР¶Сѓ Р·Р° СЃРёС‚СѓР°С†РёРµР№.
 
 	Npc_ExchangeRoutine	(self,	"WaitFM");
 	AI_StopProcessInfos	(self);
@@ -1528,14 +1528,14 @@ func VOID Info_Gorn_AFTERFM_Info()
 {
 	AI_GotoNpc			(self, hero);
 
-	AI_Output 			(self, hero,"Info_Gorn_AFTERFM_09_01"); //О, нелегко нам далась эта битва.
-	AI_Output 			(self, hero,"Info_Gorn_AFTERFM_09_02"); //Никогда бы не подумал, что люди Гомеза способны так обороняться.
-	AI_Output 			(hero, self,"Info_Gorn_AFTERFM_15_03"); //Главное, что мы смогли освободить от них нашу шахту.
-	AI_Output 			(self, hero,"Info_Gorn_AFTERFM_09_04"); //Я останусь здесь и буду следить за тем, чтобы никто чужой сюда не прошел.
+	AI_Output 			(self, hero,"Info_Gorn_AFTERFM_09_01"); //Рћ, РЅРµР»РµРіРєРѕ РЅР°Рј РґР°Р»Р°СЃСЊ СЌС‚Р° Р±РёС‚РІР°.
+	AI_Output 			(self, hero,"Info_Gorn_AFTERFM_09_02"); //РќРёРєРѕРіРґР° Р±С‹ РЅРµ РїРѕРґСѓРјР°Р», С‡С‚Рѕ Р»СЋРґРё Р“РѕРјРµР·Р° СЃРїРѕСЃРѕР±РЅС‹ С‚Р°Рє РѕР±РѕСЂРѕРЅСЏС‚СЊСЃСЏ.
+	AI_Output 			(hero, self,"Info_Gorn_AFTERFM_15_03"); //Р“Р»Р°РІРЅРѕРµ, С‡С‚Рѕ РјС‹ СЃРјРѕРіР»Рё РѕСЃРІРѕР±РѕРґРёС‚СЊ РѕС‚ РЅРёС… РЅР°С€Сѓ С€Р°С…С‚Сѓ.
+	AI_Output 			(self, hero,"Info_Gorn_AFTERFM_09_04"); //РЇ РѕСЃС‚Р°РЅСѓСЃСЊ Р·РґРµСЃСЊ Рё Р±СѓРґСѓ СЃР»РµРґРёС‚СЊ Р·Р° С‚РµРј, С‡С‚РѕР±С‹ РЅРёРєС‚Рѕ С‡СѓР¶РѕР№ СЃСЋРґР° РЅРµ РїСЂРѕС€РµР».
 
 	B_Story_LeftFM		();
 	
-	Lee_freeminereport = 1;  //jetzt kann der SC Lee ьber die befreite Mine informieren.     ***Bjцrn***
+	Lee_freeminereport = 1;  //jetzt kann der SC Lee СЊber die befreite Mine informieren.     ***BjС†rn***
 
 	AI_StopProcessInfos	(self);
 };
@@ -1550,7 +1550,7 @@ INSTANCE Info_Gorn_FMWATCH (C_INFO)
 	information	= Info_Gorn_FMWATCH_Info;
 	important	= 0;	
 	permanent	= 1;
-	description = "Как дела?";
+	description = "РљР°Рє РґРµР»Р°?";
 };                       
 
 FUNC INT Info_Gorn_FMWATCH_Condition()
@@ -1563,10 +1563,10 @@ FUNC INT Info_Gorn_FMWATCH_Condition()
 
 func VOID Info_Gorn_FMWATCH_Info()
 {
-	AI_Output 			(hero,self,"Info_Gorn_FMWATCH_15_01"); //Как дела?
-	AI_Output 			(self,hero,"Info_Gorn_FMWATCH_09_02"); //Кругом тихо, словно в Свободной шахте не осталось живых.
-	AI_Output 			(self,hero,"Info_Gorn_FMWATCH_09_03"); //Но если Ли не пришлет подкрепление, то эта тишина продлится недолго.
-	AI_Output 			(self,hero,"Info_Gorn_FMWATCH_09_04"); //Ну а я пока постараюсь расположиться поудобнее.
+	AI_Output 			(hero,self,"Info_Gorn_FMWATCH_15_01"); //РљР°Рє РґРµР»Р°?
+	AI_Output 			(self,hero,"Info_Gorn_FMWATCH_09_02"); //РљСЂСѓРіРѕРј С‚РёС…Рѕ, СЃР»РѕРІРЅРѕ РІ РЎРІРѕР±РѕРґРЅРѕР№ С€Р°С…С‚Рµ РЅРµ РѕСЃС‚Р°Р»РѕСЃСЊ Р¶РёРІС‹С….
+	AI_Output 			(self,hero,"Info_Gorn_FMWATCH_09_03"); //РќРѕ РµСЃР»Рё Р›Рё РЅРµ РїСЂРёС€Р»РµС‚ РїРѕРґРєСЂРµРїР»РµРЅРёРµ, С‚Рѕ СЌС‚Р° С‚РёС€РёРЅР° РїСЂРѕРґР»РёС‚СЃСЏ РЅРµРґРѕР»РіРѕ.
+	AI_Output 			(self,hero,"Info_Gorn_FMWATCH_09_04"); //РќСѓ Р° СЏ РїРѕРєР° РїРѕСЃС‚Р°СЂР°СЋСЃСЊ СЂР°СЃРїРѕР»РѕР¶РёС‚СЊСЃСЏ РїРѕСѓРґРѕР±РЅРµРµ.
 };
 
 
@@ -1594,10 +1594,10 @@ func VOID Info_Gorn_FOUNDULUMULU_Info()
 {
 	AI_GotoNpc			(self, hero);
 
-	AI_Output 			(self, hero,"Info_Gorn_FOUNDULUMULU_09_01"); //Какая странная у тебя штуковина на руке. Кажется, ее сделали орки.
-	AI_Output 			(self, hero,"Info_Gorn_FOUNDULUMULU_09_02"); //Неужели ты взял ее у тех орков, что были рабами на Старой шахте?
-	AI_Output 			(hero, self,"Info_Gorn_FOUNDULUMULU_15_03"); //У орков он считается знаком дружбы. Я хочу с ним зайти в город орков.
-	AI_Output 			(self, hero,"Info_Gorn_FOUNDULUMULU_09_04"); //Очень надеюсь, что орки не трогают тех, кто носит этот... предмет!
+	AI_Output 			(self, hero,"Info_Gorn_FOUNDULUMULU_09_01"); //РљР°РєР°СЏ СЃС‚СЂР°РЅРЅР°СЏ Сѓ С‚РµР±СЏ С€С‚СѓРєРѕРІРёРЅР° РЅР° СЂСѓРєРµ. РљР°Р¶РµС‚СЃСЏ, РµРµ СЃРґРµР»Р°Р»Рё РѕСЂРєРё.
+	AI_Output 			(self, hero,"Info_Gorn_FOUNDULUMULU_09_02"); //РќРµСѓР¶РµР»Рё С‚С‹ РІР·СЏР» РµРµ Сѓ С‚РµС… РѕСЂРєРѕРІ, С‡С‚Рѕ Р±С‹Р»Рё СЂР°Р±Р°РјРё РЅР° РЎС‚Р°СЂРѕР№ С€Р°С…С‚Рµ?
+	AI_Output 			(hero, self,"Info_Gorn_FOUNDULUMULU_15_03"); //РЈ РѕСЂРєРѕРІ РѕРЅ СЃС‡РёС‚Р°РµС‚СЃСЏ Р·РЅР°РєРѕРј РґСЂСѓР¶Р±С‹. РЇ С…РѕС‡Сѓ СЃ РЅРёРј Р·Р°Р№С‚Рё РІ РіРѕСЂРѕРґ РѕСЂРєРѕРІ.
+	AI_Output 			(self, hero,"Info_Gorn_FOUNDULUMULU_09_04"); //РћС‡РµРЅСЊ РЅР°РґРµСЋСЃСЊ, С‡С‚Рѕ РѕСЂРєРё РЅРµ С‚СЂРѕРіР°СЋС‚ С‚РµС…, РєС‚Рѕ РЅРѕСЃРёС‚ СЌС‚РѕС‚... РїСЂРµРґРјРµС‚!
 
 	B_Kapitelwechsel	(5);
 

@@ -40,7 +40,7 @@ const int MENU_SOUND_DY = 550;
 INSTANCE MENUITEM_AUDIO_HEADLINE(C_MENU_ITEM_DEF) 
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	text[0]		= "Звуковые настройки";
+	text[0]		= "Р—РІСѓРєРѕРІС‹Рµ РЅР°СЃС‚СЂРѕР№РєРё";
 	type		= MENU_ITEM_TEXT;
 	// Position und Dimension	
 	posx		= 0;		posy		= MENU_TITLE_Y;
@@ -58,8 +58,8 @@ INSTANCE MENUITEM_AUDIO_HEADLINE(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_AUDIO_SFXVOL(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	text[0]		= "Речь";
-	text[1]		= "Уровень громкости эффектов и речи."; // Kommentar
+	text[0]		= "Р РµС‡СЊ";
+	text[1]		= "РЈСЂРѕРІРµРЅСЊ РіСЂРѕРјРєРѕСЃС‚Рё СЌС„С„РµРєС‚РѕРІ Рё СЂРµС‡Рё."; // Kommentar
 	
 	// Position und Dimension	
 	posx		= 1000;		posy		= MENU_START_Y + MENU_SOUND_DY*0;
@@ -94,8 +94,8 @@ INSTANCE MENUITEM_AUDIO_SFXVOL_SLIDER(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_AUDIO_MUSICVOL(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	text[0]		= "Фон";
-	text[1]		= "Уровень громкости фоновой музыки."; // Kommentar
+	text[0]		= "Р¤РѕРЅ";
+	text[1]		= "РЈСЂРѕРІРµРЅСЊ РіСЂРѕРјРєРѕСЃС‚Рё С„РѕРЅРѕРІРѕР№ РјСѓР·С‹РєРё."; // Kommentar
 	
 	// Position und Dimension	
 	posx		= 1000;		posy		=	MENU_START_Y + MENU_SOUND_DY*1;
@@ -130,8 +130,8 @@ INSTANCE MENUITEM_AUDIO_MUSICVOL_SLIDER(C_MENU_ITEM_DEF)
 instance MENUITEM_AUDIO_MUSIC(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	text[0]		= "Музыка";
-	text[1]		= "Включение/выключение фоновой музыки."; // Kommentar
+	text[0]		= "РњСѓР·С‹РєР°";
+	text[1]		= "Р’РєР»СЋС‡РµРЅРёРµ/РІС‹РєР»СЋС‡РµРЅРёРµ С„РѕРЅРѕРІРѕР№ РјСѓР·С‹РєРё."; // Kommentar
 	
 	// Position und Dimension	
 	posx		=	1000;	posy		=	MENU_START_Y + MENU_SOUND_DY*2;
@@ -147,7 +147,7 @@ INSTANCE MENUITEM_AUDIO_MUSIC_CHOICE(C_MENU_ITEM_DEF)
 {
 	backPic		=	MENU_CHOICE_BACK_PIC;
 	type		=	MENU_ITEM_CHOICEBOX;	
-	text[0]		=   "выкл.|вкл.";
+	text[0]		=   "РІС‹РєР».|РІРєР».";
 	fontName	= 	MENU_FONT_SMALL;
 	// Position und Dimension	
 	posx		= 4300;		posy		=	MENU_START_Y + MENU_SOUND_DY*2 + MENU_CHOICE_YPLUS;
@@ -173,8 +173,8 @@ INSTANCE MENUITEM_AUDIO_MUSIC_CHOICE(C_MENU_ITEM_DEF)
 instance MENUITEM_AUDIO_PROVIDER(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	text[0]		= "Драйвер";
-	text[1]		= "Изменения вступят в силу после повторного запуска игры!"; // Kommentar
+	text[0]		= "Р”СЂР°Р№РІРµСЂ";
+	text[1]		= "РР·РјРµРЅРµРЅРёСЏ РІСЃС‚СѓРїСЏС‚ РІ СЃРёР»Сѓ РїРѕСЃР»Рµ РїРѕРІС‚РѕСЂРЅРѕРіРѕ Р·Р°РїСѓСЃРєР° РёРіСЂС‹!"; // Kommentar
 	
 	// Position und Dimension	
 	posx		=	1000;	posy		=	MENU_START_Y + MENU_SOUND_DY*3;
@@ -206,7 +206,7 @@ instance MENUITEM_AUDIO_PROVIDER_CHOICE(C_MENU_ITEM_DEF)
 instance MENUITEM_AUDIO_SPEEKER(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	text[0]		= "Тип звучания";
+	text[0]		= "РўРёРї Р·РІСѓС‡Р°РЅРёСЏ";
 	text[1]		= ""; // Kommentar
 	
 	// Position und Dimension	
@@ -222,7 +222,7 @@ instance MENUITEM_AUDIO_SPEEKER_CHOICE(C_MENU_ITEM_DEF)
 {
 	backPic		=	MENU_CHOICE_BACK_PIC;
 	type		=	MENU_ITEM_CHOICEBOX;	
-	text[0]		=   "2 колонки|Наушники|Объемное звучание|4 колонки";
+	text[0]		=   "2 РєРѕР»РѕРЅРєРё|РќР°СѓС€РЅРёРєРё|РћР±СЉРµРјРЅРѕРµ Р·РІСѓС‡Р°РЅРёРµ|4 РєРѕР»РѕРЅРєРё";
 	fontName	= 	MENU_FONT_SMALL;
 	// Position und Dimension	
 	posx		= 4300;		posy		=	MENU_START_Y + MENU_SOUND_DY*4 + MENU_CHOICE_YPLUS;
@@ -238,8 +238,8 @@ instance MENUITEM_AUDIO_SPEEKER_CHOICE(C_MENU_ITEM_DEF)
 instance MENUITEM_AUDIO_REVERB(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	text[0]		= "Эффект эхо";
-	text[1]		= "Включить эффект эхо в шахтах и пещерах."; // Kommentar
+	text[0]		= "Р­С„С„РµРєС‚ СЌС…Рѕ";
+	text[1]		= "Р’РєР»СЋС‡РёС‚СЊ СЌС„С„РµРєС‚ СЌС…Рѕ РІ С€Р°С…С‚Р°С… Рё РїРµС‰РµСЂР°С…."; // Kommentar
 	
 	// Position und Dimension	
 	posx		=	1000;	posy		=	MENU_START_Y + MENU_SOUND_DY*5;
@@ -254,7 +254,7 @@ instance MENUITEM_AUDIO_REVERB_CHOICE(C_MENU_ITEM_DEF)
 {
 	backPic		=	MENU_CHOICE_BACK_PIC;
 	type		=	MENU_ITEM_CHOICEBOX;	
-	text[0]		=   "выкл.|вкл.";
+	text[0]		=   "РІС‹РєР».|РІРєР».";
 	fontName	= 	MENU_FONT_SMALL;
 	// Position und Dimension	
 	posx		= 4300;		posy		=	MENU_START_Y + MENU_SOUND_DY*5 + MENU_CHOICE_YPLUS;
@@ -270,8 +270,8 @@ instance MENUITEM_AUDIO_REVERB_CHOICE(C_MENU_ITEM_DEF)
 instance MENUITEM_AUDIO_SAMPLERATE(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	text[0]		= "Частота";
-	text[1]		= "Изменения вступят в силу после повторного запуска игры!"; // Kommentar
+	text[0]		= "Р§Р°СЃС‚РѕС‚Р°";
+	text[1]		= "РР·РјРµРЅРµРЅРёСЏ РІСЃС‚СѓРїСЏС‚ РІ СЃРёР»Сѓ РїРѕСЃР»Рµ РїРѕРІС‚РѕСЂРЅРѕРіРѕ Р·Р°РїСѓСЃРєР° РёРіСЂС‹!"; // Kommentar
 	
 	// Position und Dimension	
 	posx		=	1000;	posy		=	MENU_START_Y + MENU_SOUND_DY*6;
@@ -286,7 +286,7 @@ instance MENUITEM_AUDIO_SAMPLERATE_CHOICE(C_MENU_ITEM_DEF)
 {
 	backPic		=	MENU_CHOICE_BACK_PIC;
 	type		=	MENU_ITEM_CHOICEBOX;	
-	text[0]		=   "22 кГц|44 кГц";
+	text[0]		=   "22 РєР“С†|44 РєР“С†";
 	fontName	= 	MENU_FONT_SMALL;
 	// Position und Dimension	
 	posx		= 4300;		posy		=	MENU_START_Y + MENU_SOUND_DY*6 + MENU_CHOICE_YPLUS;
@@ -302,7 +302,7 @@ instance MENUITEM_AUDIO_SAMPLERATE_CHOICE(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_AUDIO_BACK(C_MENU_ITEM_DEF)
 {
 	backpic		=	MENU_ITEM_BACK_PIC;
-	text[0]		=	"Назад";
+	text[0]		=	"РќР°Р·Р°Рґ";
 	// Position und Dimension	
 	posx		=	1000;		posy		=	MENU_BACK_Y;
 	dimx		=	6192;		dimy		=	MENU_SOUND_DY;

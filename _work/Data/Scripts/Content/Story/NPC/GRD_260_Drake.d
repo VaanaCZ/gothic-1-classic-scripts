@@ -2,7 +2,7 @@ instance GRD_260_Drake (Npc_Default)
 {
 	//-------- primary data --------
 	
-    name 		=	                "Δπεικ";
+    name 		=	                "Π”Ρ€ΠµΠΉΠΊ";
     npctype		=	                npctype_main;
     guild 		=	                GIL_GRD;
     level 		=	                4;

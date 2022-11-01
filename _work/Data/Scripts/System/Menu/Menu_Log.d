@@ -26,7 +26,7 @@ instance MENU_LOG(C_MENU_DEF)
 };
 
 //
-// Menьpunkte
+// MenСЊpunkte
 //
 
 const int LOG_ITEM_X1 	= 1200;
@@ -39,7 +39,7 @@ const int LOG_ITEM_LIST_WIDTH	= 4500;
 
 INSTANCE MENU_ITEM_SEL_MISSIONS_ACT(C_MENU_ITEM_DEF)
 {
-	text[0]		=	"Текущие задания";
+	text[0]		=	"РўРµРєСѓС‰РёРµ Р·Р°РґР°РЅРёСЏ";
 	posx		=	LOG_ITEM_X1;
 	posy		=   	1500;
 	dimx 		= 	LOG_ITEM_DX1;
@@ -53,7 +53,7 @@ INSTANCE MENU_ITEM_SEL_MISSIONS_ACT(C_MENU_ITEM_DEF)
 
 INSTANCE MENU_ITEM_SEL_MISSIONS_OLD(C_MENU_ITEM_DEF)
 {
-	text[0]		=	"Выполненные задания";
+	text[0]		=	"Р’С‹РїРѕР»РЅРµРЅРЅС‹Рµ Р·Р°РґР°РЅРёСЏ";
 	
 	posx		=	LOG_ITEM_X1;
 	posy		=   	2500;
@@ -69,7 +69,7 @@ INSTANCE MENU_ITEM_SEL_MISSIONS_OLD(C_MENU_ITEM_DEF)
 
 INSTANCE MENU_ITEM_SEL_MISSIONS_FAILED(C_MENU_ITEM_DEF)
 {
-	text[0]		=	"Проваленные задания";
+	text[0]		=	"РџСЂРѕРІР°Р»РµРЅРЅС‹Рµ Р·Р°РґР°РЅРёСЏ";
 	
 	posx		=	LOG_ITEM_X1;
 	posy		=   	3500;
@@ -85,7 +85,7 @@ INSTANCE MENU_ITEM_SEL_MISSIONS_FAILED(C_MENU_ITEM_DEF)
 
 INSTANCE MENU_ITEM_SEL_LOG(C_MENU_ITEM_DEF)
 {
-	text[0]		=	"Общая информация";
+	text[0]		=	"РћР±С‰Р°СЏ РёРЅС„РѕСЂРјР°С†РёСЏ";
 	
 	posx		=	LOG_ITEM_X1;
 	posy		=   	4500;
@@ -208,7 +208,7 @@ INSTANCE MENU_ITEM_CONTENT_VIEWER(C_MENU_ITEM_DEF)
 
 INSTANCE MENU_ITEM_DAY_TITLE(C_MENU_ITEM_DEF)
 {
-	text[0]		= 	"день";
+	text[0]		= 	"РґРµРЅСЊ";
 	posx 		= 	1800; // see dimx of MENU_ITEM_DAY!!
 	posy		= 	6000;
 	fontName	=	LOG_FONT_DATETIME;
@@ -217,7 +217,7 @@ INSTANCE MENU_ITEM_DAY_TITLE(C_MENU_ITEM_DEF)
 
 INSTANCE MENU_ITEM_TIME_TITLE(C_MENU_ITEM_DEF)
 {
-	text[0]		= 	"Время:";
+	text[0]		= 	"Р’СЂРµРјСЏ:";
 	posx 		= 	1500;
 	posy		= 	6300;
 	fontName	=	LOG_FONT_DATETIME;

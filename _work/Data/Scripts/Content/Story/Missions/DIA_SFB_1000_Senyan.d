@@ -33,7 +33,7 @@ INSTANCE DIA_Senyan_Hello(C_INFO)
 	condition	= DIA_Senyan_Hello_Condition;
 	information	= DIA_Senyan_Hello_Info;
 	permanent	= 0;
-	description = "Ты работаешь в Свободной шахте?";
+	description = "РўС‹ СЂР°Р±РѕС‚Р°РµС€СЊ РІ РЎРІРѕР±РѕРґРЅРѕР№ С€Р°С…С‚Рµ?";
 };                       
 
 FUNC INT DIA_Senyan_Hello_Condition()
@@ -43,8 +43,8 @@ FUNC INT DIA_Senyan_Hello_Condition()
 
 FUNC VOID DIA_Senyan_Hello_Info()
 {	
-	AI_Output (other, self,"DIA_Senyan_Hello_15_00"); //Ты работаешь в Свободной шахте?
-	AI_Output (self, other,"DIA_Senyan_Hello_01_01"); //Верно. А как ты это узнал?
+	AI_Output (other, self,"DIA_Senyan_Hello_15_00"); //РўС‹ СЂР°Р±РѕС‚Р°РµС€СЊ РІ РЎРІРѕР±РѕРґРЅРѕР№ С€Р°С…С‚Рµ?
+	AI_Output (self, other,"DIA_Senyan_Hello_01_01"); //Р’РµСЂРЅРѕ. Рђ РєР°Рє С‚С‹ СЌС‚Рѕ СѓР·РЅР°Р»?
 	AI_StopProcessInfos	(self);
 };
 
@@ -59,7 +59,7 @@ INSTANCE DIA_Senyan_JustTalk(C_INFO)
 	condition	= DIA_Senyan_JustTalk_Condition;
 	information	= DIA_Senyan_JustTalk_Info;
 	permanent	= 1;
-	description = "Я хотел поговорить с тобой.";
+	description = "РЇ С…РѕС‚РµР» РїРѕРіРѕРІРѕСЂРёС‚СЊ СЃ С‚РѕР±РѕР№.";
 };                       
 
 FUNC INT DIA_Senyan_JustTalk_Condition()
@@ -72,7 +72,7 @@ FUNC INT DIA_Senyan_JustTalk_Condition()
 
 FUNC VOID DIA_Senyan_JustTalk_Info()
 {	
-	AI_Output (other, self,"DIA_Senyan_JustTalk_15_00"); //Я хотел поговорить с тобой.
-	AI_Output (self, other,"DIA_Senyan_JustTalk_01_01"); //Мне некогда разговаривать.
+	AI_Output (other, self,"DIA_Senyan_JustTalk_15_00"); //РЇ С…РѕС‚РµР» РїРѕРіРѕРІРѕСЂРёС‚СЊ СЃ С‚РѕР±РѕР№.
+	AI_Output (self, other,"DIA_Senyan_JustTalk_01_01"); //РњРЅРµ РЅРµРєРѕРіРґР° СЂР°Р·РіРѕРІР°СЂРёРІР°С‚СЊ.
 	AI_StopProcessInfos	(self);
 };

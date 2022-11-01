@@ -1,8 +1,8 @@
-// gibt einen String zurück, der in die Info_AddChoice-Befehle eingespeist werden kann
+// gibt einen String zurÑŒck, der in die Info_AddChoice-Befehle eingespeist werden kann
 // Beispiel:
-//	- text: "schwere Templerrüstung"
+//	- text: "schwere TemplerrÑŒstung"
 //	- price: 1500
-//	- Rückgabestring: "schwere Templerrüstung (1500 Erz)"
+//	- RÑŒckgabestring: "schwere TemplerrÑŒstung (1500 Erz)"
 func string B_BuildBuyArmorString (var string text, var int price)
 {
 	var string msg;

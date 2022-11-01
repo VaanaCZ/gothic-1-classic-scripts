@@ -48,7 +48,7 @@ instance  StoryHelper_Exit (C_INFO)
 	information	=  StoryHelper_Exit_Info;
 	important	=  0;	
 	permanent	=  1;
-	description = "ЗАКОНЧИТЬ РАЗГОВОР";
+	description = "Р—РђРљРћРќР§РРўР¬ Р РђР—Р“РћР’РћР ";
 };                       
 
 FUNC int  StoryHelper_Exit_Condition()
@@ -77,7 +77,7 @@ INSTANCE StoryHelper_INFO2 (C_INFO)
 	information		= StoryHelper_INFO2_Info;
 	important		= 0;
 	permanent		= 1;
-	description		= "Глава 2"; 
+	description		= "Р“Р»Р°РІР° 2"; 
 };
 
 FUNC INT StoryHelper_INFO2_Condition()
@@ -90,12 +90,12 @@ func VOID StoryHelper_INFO2_Info()
 
 	Info_ClearChoices	( StoryHelper_INFO2 );
 	
-	Info_AddChoice		( StoryHelper_INFO2, "НАЗАД"			                			, StoryHelper_BACK2);
-	Info_AddChoice		( StoryHelper_INFO2, "II: Подготовка к вызову"		, StoryHelper_PrepareRitual );
-	Info_AddChoice		( StoryHelper_INFO2, "II: Альманах"						, StoryHelper_CorKalom_BringBook_RUNNING );
-	Info_AddChoice		( StoryHelper_INFO2, "II: Яйца ползунов"						, StoryHelper_CorKalom_BringMCQBalls_RUNNING );
-	Info_AddChoice		( StoryHelper_INFO2, "II: Юнитор для Кор Галома"				, StoryHelper_YBerion_BringFocus_SUCCESS );
-	Info_AddChoice		( StoryHelper_INFO2, "II: Начало главы"							, StoryHelper_Chapter2Start );
+	Info_AddChoice		( StoryHelper_INFO2, "РќРђР—РђР”"			                			, StoryHelper_BACK2);
+	Info_AddChoice		( StoryHelper_INFO2, "II: РџРѕРґРіРѕС‚РѕРІРєР° Рє РІС‹Р·РѕРІСѓ"		, StoryHelper_PrepareRitual );
+	Info_AddChoice		( StoryHelper_INFO2, "II: РђР»СЊРјР°РЅР°С…"						, StoryHelper_CorKalom_BringBook_RUNNING );
+	Info_AddChoice		( StoryHelper_INFO2, "II: РЇР№С†Р° РїРѕР»Р·СѓРЅРѕРІ"						, StoryHelper_CorKalom_BringMCQBalls_RUNNING );
+	Info_AddChoice		( StoryHelper_INFO2, "II: Р®РЅРёС‚РѕСЂ РґР»СЏ РљРѕСЂ Р“Р°Р»РѕРјР°"				, StoryHelper_YBerion_BringFocus_SUCCESS );
+	Info_AddChoice		( StoryHelper_INFO2, "II: РќР°С‡Р°Р»Рѕ РіР»Р°РІС‹"							, StoryHelper_Chapter2Start );
 };
 
 //---------------------------------------------------------------------
@@ -109,7 +109,7 @@ func void StoryHelper_Chapter2Start()
 	//-------- was neu geschieht --------	
 	B_Kapitelwechsel		(2);
 	
-	//-------- Menь --------	
+	//-------- MenСЊ --------	
 	Info_ClearChoices		(StoryHelper_INFO2);
 	AI_StopProcessInfos		(self);
 };
@@ -126,7 +126,7 @@ func void StoryHelper_YBerion_BringFocus_SUCCESS()
 	CreateInvItem			(hero, Focus_1);
 	YBerion_BringFocus 		= LOG_SUCCESS;
 
-	//-------- Menь --------	
+	//-------- MenСЊ --------	
 	Info_ClearChoices		(StoryHelper_INFO2 );
 	AI_StopProcessInfos		(self);
 };
@@ -144,7 +144,7 @@ func void StoryHelper_CorKalom_BringMCQBalls_RUNNING()
 	GUR_1201_CorKalom_WEG_ACCEPT();				// Log-Entry anlegen!
 	CorKalom_BringMCQBalls 	= LOG_RUNNING;
 
-	//-------- Menь --------	
+	//-------- MenСЊ --------	
 	Info_ClearChoices		(StoryHelper_INFO2);
 	AI_StopProcessInfos		(self);
 };  
@@ -162,13 +162,13 @@ func void StoryHelper_CorKalom_BringBook_RUNNING()
 	CorKalom_BringMCQBalls 	= LOG_SUCCESS;
 	CorKalom_BringBook 		= LOG_RUNNING;
 
-	//-------- Menь --------	
+	//-------- MenСЊ --------	
 	Info_ClearChoices		(StoryHelper_INFO2 );
 	AI_StopProcessInfos		(self);
 };  
 
 //---------------------------------------------------------------------
-//	Vorbereitung auf die groЯe Beschwцrung
+//	Vorbereitung auf die groРЇe BeschwС†rung
 //---------------------------------------------------------------------
 func void StoryHelper_PrepareRitual()
 {
@@ -181,12 +181,12 @@ func void StoryHelper_PrepareRitual()
 	CorKalom_BringBook 		= LOG_SUCCESS;
 	B_Story_PrepareRitual	();
 
-	//-------- Menь --------	
+	//-------- MenСЊ --------	
 	Info_ClearChoices		(StoryHelper_INFO2 );
 	AI_StopProcessInfos		(self);
 };  
 
-//-------- ZURЬCK ---------
+//-------- ZURР¬CK ---------
 func void StoryHelper_BACK2()
 {
 	Info_ClearChoices	( StoryHelper_INFO2 );
@@ -208,7 +208,7 @@ INSTANCE StoryHelper_INFO3 (C_INFO)
 	information		= StoryHelper_INFO3_Info;
 	important		= 0;
 	permanent		= 1;
-	description		= "Глава 3"; 
+	description		= "Р“Р»Р°РІР° 3"; 
 };
 
 FUNC INT StoryHelper_INFO3_Condition()
@@ -221,14 +221,14 @@ func void StoryHelper_INFO3_Info()
 	Info_ClearChoices	( StoryHelper_INFO3 );
 	
 	Info_AddChoice		( StoryHelper_INFO3, DIALOG_BACK						, StoryHelper_BACK3 );
-	Info_AddChoice		( StoryHelper_INFO3, "III: Сатурас - принести 4 юнитора"		, StoryHelper_SaturasBringFoci_RUNNING);
-	Info_AddChoice		( StoryHelper_INFO3, "III: Кор Ангар - сходить в Новый лагерь"		, StoryHelper_CorAngar_SendToNC);
-	Info_AddChoice		( StoryHelper_INFO3, "III: Идол Люкор - побежден"			, StoryHelper_BaalLukor_DEFEAT);
-	Info_AddChoice		( StoryHelper_INFO3, "III: Поход на кладбище орков"	, StoryHelper_OrcGraveyard);
+	Info_AddChoice		( StoryHelper_INFO3, "III: РЎР°С‚СѓСЂР°СЃ - РїСЂРёРЅРµСЃС‚Рё 4 СЋРЅРёС‚РѕСЂР°"		, StoryHelper_SaturasBringFoci_RUNNING);
+	Info_AddChoice		( StoryHelper_INFO3, "III: РљРѕСЂ РђРЅРіР°СЂ - СЃС…РѕРґРёС‚СЊ РІ РќРѕРІС‹Р№ Р»Р°РіРµСЂСЊ"		, StoryHelper_CorAngar_SendToNC);
+	Info_AddChoice		( StoryHelper_INFO3, "III: РРґРѕР» Р›СЋРєРѕСЂ - РїРѕР±РµР¶РґРµРЅ"			, StoryHelper_BaalLukor_DEFEAT);
+	Info_AddChoice		( StoryHelper_INFO3, "III: РџРѕС…РѕРґ РЅР° РєР»Р°РґР±РёС‰Рµ РѕСЂРєРѕРІ"	, StoryHelper_OrcGraveyard);
 };
 
 //---------------------------------------------------------------------
-//	Bereit fьr den Ork-Friedhof
+//	Bereit fСЊr den Ork-Friedhof
 //---------------------------------------------------------------------
 func void StoryHelper_OrcGraveyard()
 {
@@ -240,7 +240,7 @@ func void StoryHelper_OrcGraveyard()
 	B_Kapitelwechsel		(3);
 	B_Story_GotoOrcGraveyard();
 	
-	//-------- Menь --------	
+	//-------- MenСЊ --------	
 	Info_ClearChoices	(StoryHelper_INFO3);
 	AI_StopProcessInfos	(self);
 };
@@ -259,7 +259,7 @@ func void StoryHelper_BaalLukor_DEFEAT()
 	//-------- was neu geschieht --------	
 	BaalLukor_BringParchment = 4;
 	
-	//-------- Menь --------	
+	//-------- MenСЊ --------	
 	Info_ClearChoices	( StoryHelper_INFO3 );
 	AI_StopProcessInfos	(self);
 };
@@ -281,7 +281,7 @@ func void StoryHelper_CorAngar_SendToNC()
 	CreateInvItem			(hero,	ItWrFokusbuch);
 	B_Story_SentToNC		();
 	
-	//-------- Menь --------	
+	//-------- MenСЊ --------	
 	Info_ClearChoices	( StoryHelper_INFO3 );
 	AI_StopProcessInfos	(self);
 };
@@ -302,12 +302,12 @@ func void StoryHelper_SaturasBringFoci_RUNNING()
 	//-------- was neu geschieht --------	
 	B_Story_BringFoci			();
 
-	//-------- Menь --------	
+	//-------- MenСЊ --------	
 	Info_ClearChoices			(StoryHelper_INFO3);
 	AI_StopProcessInfos			(self);
 };
 
-//-------- ZURЬCK ---------
+//-------- ZURР¬CK ---------
 func void StoryHelper_BACK3()
 {
 	Info_ClearChoices			(StoryHelper_INFO3);
@@ -330,7 +330,7 @@ INSTANCE StoryHelper_INFO4 (C_INFO)
 	information		= StoryHelper_INFO4_Info;
 	important		= 0;
 	permanent		= 1;
-	description		= "Глава 4"; 
+	description		= "Р“Р»Р°РІР° 4"; 
 };
 
 FUNC INT StoryHelper_INFO4_Condition()
@@ -342,14 +342,14 @@ func void StoryHelper_INFO4_Info()
 {
 	Info_ClearChoices	( StoryHelper_INFO4 );
 	
-	Info_AddChoice		( StoryHelper_INFO4, "НАЗАД"										, StoryHelper_BACK4 );
-	Info_AddChoice		( StoryHelper_INFO4, "IV: Поиск частей Улу-Мулу"				, StoryHelper_SearchForUluMulu);
-	Info_AddChoice		( StoryHelper_INFO4, "IV: Подготовка к нападению на Свободную шахту"	, StoryHelper_AttackFreeMine);
-	Info_AddChoice		( StoryHelper_INFO4, "IV: Ксардас - найти орка-шамана"			, StoryHelper_XardasFindOrcShaman);
-	Info_AddChoice		( StoryHelper_INFO4, "IV: Ксардас - первая встреча"				, StoryHelper_XardasIntro);
-	Info_AddChoice		( StoryHelper_INFO4, "IV: Сатурас - найти Ксардаса"					, StoryHelper_SaturasFindXardas);
-	Info_AddChoice		( StoryHelper_INFO4, "IV: Диего - нападение на Свободную шахту"	, StoryHelper_FreeMineAmbush);
-	Info_AddChoice		( StoryHelper_INFO4, "IV: Сатурас - помощь магов Огня"				, StoryHelper_SaturasBringFoci_SUCCESS);
+	Info_AddChoice		( StoryHelper_INFO4, "РќРђР—РђР”"										, StoryHelper_BACK4 );
+	Info_AddChoice		( StoryHelper_INFO4, "IV: РџРѕРёСЃРє С‡Р°СЃС‚РµР№ РЈР»Сѓ-РњСѓР»Сѓ"				, StoryHelper_SearchForUluMulu);
+	Info_AddChoice		( StoryHelper_INFO4, "IV: РџРѕРґРіРѕС‚РѕРІРєР° Рє РЅР°РїР°РґРµРЅРёСЋ РЅР° РЎРІРѕР±РѕРґРЅСѓСЋ С€Р°С…С‚Сѓ"	, StoryHelper_AttackFreeMine);
+	Info_AddChoice		( StoryHelper_INFO4, "IV: РљСЃР°СЂРґР°СЃ - РЅР°Р№С‚Рё РѕСЂРєР°-С€Р°РјР°РЅР°"			, StoryHelper_XardasFindOrcShaman);
+	Info_AddChoice		( StoryHelper_INFO4, "IV: РљСЃР°СЂРґР°СЃ - РїРµСЂРІР°СЏ РІСЃС‚СЂРµС‡Р°"				, StoryHelper_XardasIntro);
+	Info_AddChoice		( StoryHelper_INFO4, "IV: РЎР°С‚СѓСЂР°СЃ - РЅР°Р№С‚Рё РљСЃР°СЂРґР°СЃР°"					, StoryHelper_SaturasFindXardas);
+	Info_AddChoice		( StoryHelper_INFO4, "IV: Р”РёРµРіРѕ - РЅР°РїР°РґРµРЅРёРµ РЅР° РЎРІРѕР±РѕРґРЅСѓСЋ С€Р°С…С‚Сѓ"	, StoryHelper_FreeMineAmbush);
+	Info_AddChoice		( StoryHelper_INFO4, "IV: РЎР°С‚СѓСЂР°СЃ - РїРѕРјРѕС‰СЊ РјР°РіРѕРІ РћРіРЅСЏ"				, StoryHelper_SaturasBringFoci_SUCCESS);
 };
 
 
@@ -371,13 +371,13 @@ func void StoryHelper_SaturasBringFoci_SUCCESS()
 	B_Story_BroughtFoci			();
 	B_KapitelWechsel			(4);
 
-	//-------- Menь --------	
+	//-------- MenСЊ --------	
 	Info_ClearChoices			(StoryHelper_INFO4);
 	AI_StopProcessInfos			(self);
 };
 
 //---------------------------------------------------------------------
-//	Diego - Freie Mine ьberfallen
+//	Diego - Freie Mine СЊberfallen
 //---------------------------------------------------------------------
 func void StoryHelper_FreeMineAmbush()
 {
@@ -395,7 +395,7 @@ func void StoryHelper_FreeMineAmbush()
 	//-------- was neu geschieht --------	
 	B_Story_FMTaken				();
 
-	//-------- Menь --------	
+	//-------- MenСЊ --------	
 	Info_ClearChoices			(StoryHelper_INFO4);
 	AI_StopProcessInfos			(self);
 };
@@ -421,7 +421,7 @@ func void StoryHelper_SaturasFindXardas()
 	B_Story_CordsPost			();
 	B_Story_FindXardas			();
 	
-	//-------- Menь --------	
+	//-------- MenСЊ --------	
 	Info_ClearChoices			(StoryHelper_INFO4);
 	AI_StopProcessInfos			(self);
 };
@@ -448,7 +448,7 @@ func void StoryHelper_XardasIntro()
 	//-------- was neu geschieht --------	
 	B_Story_AccessToXardas		();
 	
-	//-------- Menь --------	
+	//-------- MenСЊ --------	
 	Info_ClearChoices			(StoryHelper_INFO4);
 	AI_StopProcessInfos			(self);
 };
@@ -476,13 +476,13 @@ func void StoryHelper_XardasFindOrcShaman()
 	//-------- was neu geschieht --------	
 	B_Story_FindOrcShaman		();
 		
-	//-------- Menь --------	
+	//-------- MenСЊ --------	
 	Info_ClearChoices			(StoryHelper_INFO4);
 	AI_StopProcessInfos			(self);
 };
 
 //---------------------------------------------------------------------
-//	Bereit fьr Angriff auf die Freie Mine
+//	Bereit fСЊr Angriff auf die Freie Mine
 //---------------------------------------------------------------------
 func void StoryHelper_AttackFreeMine()
 {
@@ -507,13 +507,13 @@ func void StoryHelper_AttackFreeMine()
 	B_Story_FriendOfUrShak		();
 	B_Story_ReturnedFromUrShak		();
 			
-	//-------- Menь --------	
+	//-------- MenСЊ --------	
 	Info_ClearChoices			(StoryHelper_INFO4);
 	AI_StopProcessInfos			(self);
 };
 
 //---------------------------------------------------------------------
-//	Suche Teile fьr Ulu-Mulu
+//	Suche Teile fСЊr Ulu-Mulu
 //---------------------------------------------------------------------
 func void StoryHelper_SearchForUluMulu()
 {
@@ -545,12 +545,12 @@ func void StoryHelper_SearchForUluMulu()
 	B_Story_CuredOrc			();
 	B_Story_LeftFM				();
 				
-	//-------- Menь --------	
+	//-------- MenСЊ --------	
 	Info_ClearChoices			(StoryHelper_INFO4);
 	AI_StopProcessInfos			(self);
 };
 
-//-------- ZURЬCK ---------
+//-------- ZURР¬CK ---------
 func void StoryHelper_BACK4()
 {
 	Info_ClearChoices			(StoryHelper_INFO4);
@@ -572,7 +572,7 @@ INSTANCE StoryHelper_INFO5 (C_INFO)
 	information		= StoryHelper_INFO5_Info;
 	important		= 0;
 	permanent		= 1;
-	description		= "Глава 5"; 
+	description		= "Р“Р»Р°РІР° 5"; 
 };
 
 FUNC INT StoryHelper_INFO5_Condition()
@@ -584,16 +584,16 @@ func void StoryHelper_INFO5_Info()
 {
 	Info_ClearChoices	( StoryHelper_INFO5 );
 	
-	Info_AddChoice		( StoryHelper_INFO5, "НАЗАД"									, StoryHelper_BACK5 );
-	Info_AddChoice		( StoryHelper_INFO5, "V: УРИЗЕЛЬ заряжен"				, StoryHelper_UrizielLoaded);
-	Info_AddChoice		( StoryHelper_INFO5, "V: Подготовка к зарядке УРИЗЕЛЯ"		, StoryHelper_LoadUriziel);
-	Info_AddChoice		( StoryHelper_INFO5, "V: Исследование затонувшей башни"		, StoryHelper_ExploreSunkenTower);
-	Info_AddChoice		( StoryHelper_INFO5, "V: Нахождение УРИЗЕЛЯ"						, StoryHelper_FoundUriziel);
-	Info_AddChoice		( StoryHelper_INFO5, "V: Подготовка к походу в город орков"				, StoryHelper_ReadyForOrcCity);
+	Info_AddChoice		( StoryHelper_INFO5, "РќРђР—РђР”"									, StoryHelper_BACK5 );
+	Info_AddChoice		( StoryHelper_INFO5, "V: РЈР РР—Р•Р›Р¬ Р·Р°СЂСЏР¶РµРЅ"				, StoryHelper_UrizielLoaded);
+	Info_AddChoice		( StoryHelper_INFO5, "V: РџРѕРґРіРѕС‚РѕРІРєР° Рє Р·Р°СЂСЏРґРєРµ РЈР РР—Р•Р›РЇ"		, StoryHelper_LoadUriziel);
+	Info_AddChoice		( StoryHelper_INFO5, "V: РСЃСЃР»РµРґРѕРІР°РЅРёРµ Р·Р°С‚РѕРЅСѓРІС€РµР№ Р±Р°С€РЅРё"		, StoryHelper_ExploreSunkenTower);
+	Info_AddChoice		( StoryHelper_INFO5, "V: РќР°С…РѕР¶РґРµРЅРёРµ РЈР РР—Р•Р›РЇ"						, StoryHelper_FoundUriziel);
+	Info_AddChoice		( StoryHelper_INFO5, "V: РџРѕРґРіРѕС‚РѕРІРєР° Рє РїРѕС…РѕРґСѓ РІ РіРѕСЂРѕРґ РѕСЂРєРѕРІ"				, StoryHelper_ReadyForOrcCity);
 };
 
 //---------------------------------------------------------------------
-//	Bereit fьr die Ork-Stadt
+//	Bereit fСЊr die Ork-Stadt
 //---------------------------------------------------------------------
 func void StoryHelper_ReadyForOrcCity()
 {
@@ -628,7 +628,7 @@ func void StoryHelper_ReadyForOrcCity()
 	B_Kapitelwechsel				(5);
 	CreateInvItem					(hero, CRW_ARMOR_H);
 					
-	//-------- Menь --------	
+	//-------- MenСЊ --------	
 	Info_ClearChoices				(StoryHelper_INFO5);
 	AI_StopProcessInfos				(self);
 };
@@ -673,7 +673,7 @@ func void StoryHelper_FoundUriziel()
 	B_Story_EncounteredHighPriest	();
 	B_Story_ShowedUrizielToXardas	();
 						
-	//-------- Menь --------	
+	//-------- MenСЊ --------	
 	Info_ClearChoices				(StoryHelper_INFO5);
 	AI_StopProcessInfos				(self);
 };
@@ -719,13 +719,13 @@ func void StoryHelper_ExploreSunkenTower()
 	//-------- was neu geschieht --------	
 	B_Story_ExploreSunkenTower		();
 							
-	//-------- Menь --------	
+	//-------- MenСЊ --------	
 	Info_ClearChoices				(StoryHelper_INFO5);
 	AI_StopProcessInfos				(self);
 };
 
 //---------------------------------------------------------------------
-//	Bereit fьr das Laden von URIZIEL
+//	Bereit fСЊr das Laden von URIZIEL
 //---------------------------------------------------------------------
 func void StoryHelper_LoadUriziel()
 {
@@ -768,7 +768,7 @@ func void StoryHelper_LoadUriziel()
 	CreateInvItem					(hero, ItArRuneTeleport1);	// zu den Feuermagiern
 	B_Story_LoadSword				();
 								
-	//-------- Menь --------	
+	//-------- MenСЊ --------	
 	Info_ClearChoices				(StoryHelper_INFO5);
 	AI_StopProcessInfos				(self);
 };
@@ -818,7 +818,7 @@ func void StoryHelper_UrizielLoaded()
 	B_Kapitelwechsel				(6);
 	B_Story_UrizielLoaded			();
 								
-	//-------- Menь --------	
+	//-------- MenСЊ --------	
 	Info_ClearChoices				(StoryHelper_INFO5);
 	AI_StopProcessInfos				(self);
 };
@@ -832,7 +832,7 @@ func void StoryHelper_UrizielLoaded()
 
 
 
-//-------- ZURЬCK ---------
+//-------- ZURР¬CK ---------
 func void StoryHelper_BACK5()
 {
 	Info_ClearChoices		(StoryHelper_INFO5);

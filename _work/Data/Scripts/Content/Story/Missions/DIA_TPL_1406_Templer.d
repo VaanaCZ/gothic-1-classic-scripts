@@ -34,7 +34,7 @@ instance  DIA_KalomsGuard_PERM (C_INFO)
 	condition	= DIA_KalomsGuard_PERM_Condition;
 	information	= DIA_KalomsGuard_PERM_Info;
 	permanent	= 1;
-	description	= "Думаю, ты не будешь против, если я зайду?";
+	description	= "Р”СѓРјР°СЋ, С‚С‹ РЅРµ Р±СѓРґРµС€СЊ РїСЂРѕС‚РёРІ, РµСЃР»Рё СЏ Р·Р°Р№РґСѓ?";
 };                       
 
 FUNC int  DIA_KalomsGuard_PERM_Condition()
@@ -44,8 +44,8 @@ FUNC int  DIA_KalomsGuard_PERM_Condition()
 
 FUNC VOID  DIA_KalomsGuard_PERM_Info()
 {
-	AI_Output (other, self,"DIA_KalomsGuard_PERM_15_00"); //Думаю, ты не будешь против, если я зайду?
-	AI_Output (self, other,"DIA_KalomsGuard_PERM_13_01"); //Попробуй только проявить непочтение к моему господину, и я убью тебя.
+	AI_Output (other, self,"DIA_KalomsGuard_PERM_15_00"); //Р”СѓРјР°СЋ, С‚С‹ РЅРµ Р±СѓРґРµС€СЊ РїСЂРѕС‚РёРІ, РµСЃР»Рё СЏ Р·Р°Р№РґСѓ?
+	AI_Output (self, other,"DIA_KalomsGuard_PERM_13_01"); //РџРѕРїСЂРѕР±СѓР№ С‚РѕР»СЊРєРѕ РїСЂРѕСЏРІРёС‚СЊ РЅРµРїРѕС‡С‚РµРЅРёРµ Рє РјРѕРµРјСѓ РіРѕСЃРїРѕРґРёРЅСѓ, Рё СЏ СѓР±СЊСЋ С‚РµР±СЏ.
 	AI_StopProcessInfos	( self );
 };
 

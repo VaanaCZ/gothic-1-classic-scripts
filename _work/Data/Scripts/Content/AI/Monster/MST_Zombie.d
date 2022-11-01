@@ -4,7 +4,7 @@
 
 PROTOTYPE Mst_Default_Zombie(C_Npc)			
 {
-	name							=	"Зомби";
+	name							=	"Р—РѕРјР±Рё";
 	guild							=	GIL_ZOMBIE;
 	aivar[AIV_MM_REAL_ID]			= 	ID_ZOMBIE;
 	level							=	20;
@@ -132,8 +132,8 @@ INSTANCE Zombie4	(Mst_Default_Zombie)
 // SN: Endgegner vor Fokus 5 unter dem Steinkreis (Ende Kapitel 3)
 INSTANCE ZombieTheKeeper	(Mst_Default_Zombie)
 {
-	name	= "Стражник";
-	level	=	150;		// fьr XP!
+	name	= "РЎС‚СЂР°Р¶РЅРёРє";
+	level	=	150;		// fСЊr XP!
 	ID 		= MID_THEKEEPER;
 
 	Set_Zombie4_Visuals();

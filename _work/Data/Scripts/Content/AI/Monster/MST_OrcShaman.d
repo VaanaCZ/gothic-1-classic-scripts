@@ -4,7 +4,7 @@
 
 PROTOTYPE Mst_Default_OrcShaman(C_Npc)			
 {
-	name							=	"Орк-шаман";
+	name							=	"РћСЂРє-С€Р°РјР°РЅ";
 	guild							=	GIL_ORCSHAMAN;
 	npctype							=	NPCTYPE_GUARD;
 	level							=	50;
@@ -70,6 +70,6 @@ INSTANCE OrcShaman (Mst_Default_OrcShaman)
 {
 	Set_OrcShaman_Visuals();
 	CreateInvItem			(self,	ItArRuneFireball);
-	EquipItem				(self,	ItRwOrcstaff);		// fьr Magiemodus
+	EquipItem				(self,	ItRwOrcstaff);		// fСЊr Magiemodus
 
 };

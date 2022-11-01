@@ -2,7 +2,7 @@ instance BAU_935_Homer (Npc_Default)
 {
 	//-------- primary data --------
 	
-	name =							"Гомер";
+	name =							"Р“РѕРјРµСЂ";
 	npctype	 =						npctype_main;
 	guild =							GIL_BAU;      
 	level =							6;

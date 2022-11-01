@@ -2,7 +2,7 @@ instance EBR_105_Raven (Npc_Default)
 {
 	//-------- primary data --------
 	
-	name 		= 	"Πΰβεν";
+	name 		= 	"Π Π°Π²ΠµΠ½";
 	npctype 	= 	npctype_main;
    	guild 		=	GIL_EBR;      
 	level 		=	80;

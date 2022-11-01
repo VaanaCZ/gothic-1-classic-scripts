@@ -40,7 +40,7 @@ instance  KDW_604_Cronos_Greet (C_INFO)
 	condition	=  KDW_604_Cronos_Greet_Condition;
 	information	=  KDW_604_Cronos_Greet_Info;
 	permanent	=  0;
-	description = "Ich grьЯe dich, Magier.";
+	description = "Ich grСЊРЇe dich, Magier.";
 };                       
 
 FUNC int  KDW_604_Cronos_Greet_Condition()
@@ -50,8 +50,8 @@ FUNC int  KDW_604_Cronos_Greet_Condition()
 
 FUNC VOID  KDW_604_Cronos_Greet_Info()
 {
-	AI_Output (other, self,"DIA_Cronos_Greet_15_00"); //Приветствую тебя, маг!
-	AI_Output (self, other,"DIA_Cronos_Greet_08_01"); //Warum stцrst du den Hьter des Erzes?
+	AI_Output (other, self,"DIA_Cronos_Greet_15_00"); //РџСЂРёРІРµС‚СЃС‚РІСѓСЋ С‚РµР±СЏ, РјР°Рі!
+	AI_Output (self, other,"DIA_Cronos_Greet_08_01"); //Warum stС†rst du den HСЊter des Erzes?
 };
 */
 
@@ -66,7 +66,7 @@ instance  KDW_604_Cronos_Brief (C_INFO)
 	condition	=  KDW_604_Cronos_Brief_Condition;
 	information	=  KDW_604_Cronos_Brief_Info;
 	permanent	=  0;
-	description = "У меня есть послание к Верховному Магу Круга Огня.";
+	description = "РЈ РјРµРЅСЏ РµСЃС‚СЊ РїРѕСЃР»Р°РЅРёРµ Рє Р’РµСЂС…РѕРІРЅРѕРјСѓ РњР°РіСѓ РљСЂСѓРіР° РћРіРЅСЏ.";
 };                       
 
 FUNC int  KDW_604_Cronos_Brief_Condition()
@@ -82,11 +82,11 @@ FUNC int  KDW_604_Cronos_Brief_Condition()
 
 FUNC VOID  KDW_604_Cronos_Brief_Info()
 {
-	AI_Output (other, self,"DIA_Cronos_Brief_15_00"); //У меня есть послание к Верховному Магу Круга Огня.
-	AI_Output (self, other,"DIA_Cronos_Brief_08_01"); //Здесь живут только маги Круга Воды. Магов Круга Огня можно найти в Старом лагере.
-	AI_Output (other, self,"DIA_Cronos_Brief_15_02"); //Но мне нельзя в замок. Ты можешь помочь мне попасть туда?
-	AI_Output (self, other,"DIA_Cronos_Brief_08_03"); //Иногда мы посылаем гонцов к нашим братьям в Старом лагере...
-	AI_Output (self, other,"DIA_Cronos_Brief_08_04"); //Но мы доверяем свои послания только людям Ларса. Он заботится о сохранности наших посланий в течение многих лет.
+	AI_Output (other, self,"DIA_Cronos_Brief_15_00"); //РЈ РјРµРЅСЏ РµСЃС‚СЊ РїРѕСЃР»Р°РЅРёРµ Рє Р’РµСЂС…РѕРІРЅРѕРјСѓ РњР°РіСѓ РљСЂСѓРіР° РћРіРЅСЏ.
+	AI_Output (self, other,"DIA_Cronos_Brief_08_01"); //Р—РґРµСЃСЊ Р¶РёРІСѓС‚ С‚РѕР»СЊРєРѕ РјР°РіРё РљСЂСѓРіР° Р’РѕРґС‹. РњР°РіРѕРІ РљСЂСѓРіР° РћРіРЅСЏ РјРѕР¶РЅРѕ РЅР°Р№С‚Рё РІ РЎС‚Р°СЂРѕРј Р»Р°РіРµСЂРµ.
+	AI_Output (other, self,"DIA_Cronos_Brief_15_02"); //РќРѕ РјРЅРµ РЅРµР»СЊР·СЏ РІ Р·Р°РјРѕРє. РўС‹ РјРѕР¶РµС€СЊ РїРѕРјРѕС‡СЊ РјРЅРµ РїРѕРїР°СЃС‚СЊ С‚СѓРґР°?
+	AI_Output (self, other,"DIA_Cronos_Brief_08_03"); //РРЅРѕРіРґР° РјС‹ РїРѕСЃС‹Р»Р°РµРј РіРѕРЅС†РѕРІ Рє РЅР°С€РёРј Р±СЂР°С‚СЊСЏРј РІ РЎС‚Р°СЂРѕРј Р»Р°РіРµСЂРµ...
+	AI_Output (self, other,"DIA_Cronos_Brief_08_04"); //РќРѕ РјС‹ РґРѕРІРµСЂСЏРµРј СЃРІРѕРё РїРѕСЃР»Р°РЅРёСЏ С‚РѕР»СЊРєРѕ Р»СЋРґСЏРј Р›Р°СЂСЃР°. РћРЅ Р·Р°Р±РѕС‚РёС‚СЃСЏ Рѕ СЃРѕС…СЂР°РЅРЅРѕСЃС‚Рё РЅР°С€РёС… РїРѕСЃР»Р°РЅРёР№ РІ С‚РµС‡РµРЅРёРµ РјРЅРѕРіРёС… Р»РµС‚.
 };
 
 // *****************************************
@@ -100,7 +100,7 @@ instance  KDW_604_Cronos_Barrier (C_INFO)
 	condition	=  KDW_604_Cronos_Barrier_Condition;
 	information	=  KDW_604_Cronos_Barrier_Info;
 	permanent	=  0;
-	description = "Вы хотите разрушить Барьер? А как это можно сделать?";
+	description = "Р’С‹ С…РѕС‚РёС‚Рµ СЂР°Р·СЂСѓС€РёС‚СЊ Р‘Р°СЂСЊРµСЂ? Рђ РєР°Рє СЌС‚Рѕ РјРѕР¶РЅРѕ СЃРґРµР»Р°С‚СЊ?";
 };                       
 
 FUNC int  KDW_604_Cronos_Barrier_Condition()
@@ -113,11 +113,11 @@ FUNC int  KDW_604_Cronos_Barrier_Condition()
 
 FUNC VOID  KDW_604_Cronos_Barrier_Info()
 {
-	AI_Output (other, self,"DIA_Cronos_Barrier_15_00"); //Вы хотите разрушить Барьер? А как это можно сделать?
-	AI_Output (self, other,"DIA_Cronos_Barrier_08_01"); //Для этого нам нужно очень много руды. 
-	AI_Output (self, other,"DIA_Cronos_Barrier_08_02"); //Во время особой церемонии мы направим всю силу собранной руды на Барьер и уничтожим его.
-	AI_Output (self, other,"DIA_Cronos_Barrier_08_03"); //Конечно, эта руда привлекает многих, кто любит брать все, что плохо лежит.
-	AI_Output (self, other,"DIA_Cronos_Barrier_08_04"); //Поэтому у нас каждый защитник нашего плана на счету.
+	AI_Output (other, self,"DIA_Cronos_Barrier_15_00"); //Р’С‹ С…РѕС‚РёС‚Рµ СЂР°Р·СЂСѓС€РёС‚СЊ Р‘Р°СЂСЊРµСЂ? Рђ РєР°Рє СЌС‚Рѕ РјРѕР¶РЅРѕ СЃРґРµР»Р°С‚СЊ?
+	AI_Output (self, other,"DIA_Cronos_Barrier_08_01"); //Р”Р»СЏ СЌС‚РѕРіРѕ РЅР°Рј РЅСѓР¶РЅРѕ РѕС‡РµРЅСЊ РјРЅРѕРіРѕ СЂСѓРґС‹. 
+	AI_Output (self, other,"DIA_Cronos_Barrier_08_02"); //Р’Рѕ РІСЂРµРјСЏ РѕСЃРѕР±РѕР№ С†РµСЂРµРјРѕРЅРёРё РјС‹ РЅР°РїСЂР°РІРёРј РІСЃСЋ СЃРёР»Сѓ СЃРѕР±СЂР°РЅРЅРѕР№ СЂСѓРґС‹ РЅР° Р‘Р°СЂСЊРµСЂ Рё СѓРЅРёС‡С‚РѕР¶РёРј РµРіРѕ.
+	AI_Output (self, other,"DIA_Cronos_Barrier_08_03"); //РљРѕРЅРµС‡РЅРѕ, СЌС‚Р° СЂСѓРґР° РїСЂРёРІР»РµРєР°РµС‚ РјРЅРѕРіРёС…, РєС‚Рѕ Р»СЋР±РёС‚ Р±СЂР°С‚СЊ РІСЃРµ, С‡С‚Рѕ РїР»РѕС…Рѕ Р»РµР¶РёС‚.
+	AI_Output (self, other,"DIA_Cronos_Barrier_08_04"); //РџРѕСЌС‚РѕРјСѓ Сѓ РЅР°СЃ РєР°Р¶РґС‹Р№ Р·Р°С‰РёС‚РЅРёРє РЅР°С€РµРіРѕ РїР»Р°РЅР° РЅР° СЃС‡РµС‚Сѓ.
 };
 
 // *****************************************
@@ -131,7 +131,7 @@ instance  KDW_604_Cronos_WannaJoin (C_INFO)
 	condition	=  KDW_604_Cronos_WannaJoin_Condition;
 	information	=  KDW_604_Cronos_WannaJoin_Info;
 	permanent	=  0;
-	description = "Я хочу присоединиться к этому лагерю.  ";
+	description = "РЇ С…РѕС‡Сѓ РїСЂРёСЃРѕРµРґРёРЅРёС‚СЊСЃСЏ Рє СЌС‚РѕРјСѓ Р»Р°РіРµСЂСЋ.  ";
 };                       
 
 FUNC int  KDW_604_Cronos_WannaJoin_Condition()
@@ -144,8 +144,8 @@ FUNC int  KDW_604_Cronos_WannaJoin_Condition()
 
 FUNC VOID  KDW_604_Cronos_WannaJoin_Info()
 {
-	AI_Output (other, self,"DIA_Cronos_WannaJoin_15_00"); //Я хочу присоединиться к этому лагерю.  
-	AI_Output (self, other,"DIA_Cronos_WannaJoin_08_01"); //Если ты хочешь присоединиться к этому лагерю, поговори с Ли или с Ларсом. 
+	AI_Output (other, self,"DIA_Cronos_WannaJoin_15_00"); //РЇ С…РѕС‡Сѓ РїСЂРёСЃРѕРµРґРёРЅРёС‚СЊСЃСЏ Рє СЌС‚РѕРјСѓ Р»Р°РіРµСЂСЋ.  
+	AI_Output (self, other,"DIA_Cronos_WannaJoin_08_01"); //Р•СЃР»Рё С‚С‹ С…РѕС‡РµС€СЊ РїСЂРёСЃРѕРµРґРёРЅРёС‚СЊСЃСЏ Рє СЌС‚РѕРјСѓ Р»Р°РіРµСЂСЋ, РїРѕРіРѕРІРѕСЂРё СЃ Р›Рё РёР»Рё СЃ Р›Р°СЂСЃРѕРј. 
 };
 
 // *****************************************
@@ -159,7 +159,7 @@ instance  KDW_604_Cronos_WannaMage (C_INFO)
 	condition	=  KDW_604_Cronos_WannaMage_Condition;
 	information	=  KDW_604_Cronos_WannaMage_Info;
 	permanent	=  0;
-	description = "Я хочу стать магом!";
+	description = "РЇ С…РѕС‡Сѓ СЃС‚Р°С‚СЊ РјР°РіРѕРј!";
 };                       
 
 FUNC int  KDW_604_Cronos_WannaMage_Condition()
@@ -172,9 +172,9 @@ FUNC int  KDW_604_Cronos_WannaMage_Condition()
 
 FUNC VOID  KDW_604_Cronos_WannaMage_Info()
 {
-	AI_Output (other, self,"DIA_Cronos_WannaMage_15_00"); //Я хочу стать магом!
-	AI_Output (self, other,"DIA_Cronos_WannaMage_08_01"); //Мы не можем раскрывать наше тайное знание своим врагам. 
-	AI_Output (self, other,"DIA_Cronos_WannaMage_08_02"); //Только когда ты докажешь нам, что ты верен нашему делу, мы сможем приступить к твоему обучению.
+	AI_Output (other, self,"DIA_Cronos_WannaMage_15_00"); //РЇ С…РѕС‡Сѓ СЃС‚Р°С‚СЊ РјР°РіРѕРј!
+	AI_Output (self, other,"DIA_Cronos_WannaMage_08_01"); //РњС‹ РЅРµ РјРѕР¶РµРј СЂР°СЃРєСЂС‹РІР°С‚СЊ РЅР°С€Рµ С‚Р°Р№РЅРѕРµ Р·РЅР°РЅРёРµ СЃРІРѕРёРј РІСЂР°РіР°Рј. 
+	AI_Output (self, other,"DIA_Cronos_WannaMage_08_02"); //РўРѕР»СЊРєРѕ РєРѕРіРґР° С‚С‹ РґРѕРєР°Р¶РµС€СЊ РЅР°Рј, С‡С‚Рѕ С‚С‹ РІРµСЂРµРЅ РЅР°С€РµРјСѓ РґРµР»Сѓ, РјС‹ СЃРјРѕР¶РµРј РїСЂРёСЃС‚СѓРїРёС‚СЊ Рє С‚РІРѕРµРјСѓ РѕР±СѓС‡РµРЅРёСЋ.
 };
 
 ///////////////////////////////////////////////////
@@ -194,7 +194,7 @@ instance  KDW_604_Cronos_Bandit (C_INFO)
 	condition	=  KDW_604_Cronos_Bandit_Condition;
 	information	=  KDW_604_Cronos_Bandit_Info;
 	permanent	=  0;
-	description = "Я стал одним из людей Ларса... У тебя есть для меня что-нибудь?";
+	description = "РЇ СЃС‚Р°Р» РѕРґРЅРёРј РёР· Р»СЋРґРµР№ Р›Р°СЂСЃР°... РЈ С‚РµР±СЏ РµСЃС‚СЊ РґР»СЏ РјРµРЅСЏ С‡С‚Рѕ-РЅРёР±СѓРґСЊ?";
 };                       
 
 FUNC int  KDW_604_Cronos_Bandit_Condition()
@@ -207,9 +207,9 @@ FUNC int  KDW_604_Cronos_Bandit_Condition()
 
 FUNC VOID  KDW_604_Cronos_Bandit_Info()
 {
-	AI_Output (other, self,"DIA_Cronos_Bandit_15_00"); //Я стал одним из людей Ларса. Теперь я могу носить послания магам Огня. У тебя есть для меня что-нибудь?
-	AI_Output (self, other,"DIA_Cronos_Bandit_08_01"); //Да, есть. Но тебе нужен знак нашего посланника, иначе люди Гомеза не пропустят тебя в замок.
-	AI_Output (self, other,"DIA_Cronos_Bandit_08_02"); //Вот, возьми это письмо и знак. А теперь тебе нужно спешить!
+	AI_Output (other, self,"DIA_Cronos_Bandit_15_00"); //РЇ СЃС‚Р°Р» РѕРґРЅРёРј РёР· Р»СЋРґРµР№ Р›Р°СЂСЃР°. РўРµРїРµСЂСЊ СЏ РјРѕРіСѓ РЅРѕСЃРёС‚СЊ РїРѕСЃР»Р°РЅРёСЏ РјР°РіР°Рј РћРіРЅСЏ. РЈ С‚РµР±СЏ РµСЃС‚СЊ РґР»СЏ РјРµРЅСЏ С‡С‚Рѕ-РЅРёР±СѓРґСЊ?
+	AI_Output (self, other,"DIA_Cronos_Bandit_08_01"); //Р”Р°, РµСЃС‚СЊ. РќРѕ С‚РµР±Рµ РЅСѓР¶РµРЅ Р·РЅР°Рє РЅР°С€РµРіРѕ РїРѕСЃР»Р°РЅРЅРёРєР°, РёРЅР°С‡Рµ Р»СЋРґРё Р“РѕРјРµР·Р° РЅРµ РїСЂРѕРїСѓСЃС‚СЏС‚ С‚РµР±СЏ РІ Р·Р°РјРѕРє.
+	AI_Output (self, other,"DIA_Cronos_Bandit_08_02"); //Р’РѕС‚, РІРѕР·СЊРјРё СЌС‚Рѕ РїРёСЃСЊРјРѕ Рё Р·РЅР°Рє. Рђ С‚РµРїРµСЂСЊ С‚РµР±Рµ РЅСѓР¶РЅРѕ СЃРїРµС€РёС‚СЊ!
 	
 	CreateInvItem (other,KdW_Amulett);
 	CreateInvItem (other,Cronos_Brief);
@@ -228,7 +228,7 @@ instance  KDW_604_Cronos_BriefBack (C_INFO)
 	condition	=  KDW_604_Cronos_BriefBack_Condition;
 	information	=  KDW_604_Cronos_BriefBack_Info;
 	permanent	=  0;
-	description = "Я передал послание!";
+	description = "РЇ РїРµСЂРµРґР°Р» РїРѕСЃР»Р°РЅРёРµ!";
 };                       
 
 FUNC int  KDW_604_Cronos_BriefBack_Condition()
@@ -241,8 +241,8 @@ FUNC int  KDW_604_Cronos_BriefBack_Condition()
 
 FUNC VOID  KDW_604_Cronos_BriefBack_Info()
 {
-	AI_Output (other, self,"DIA_Cronos_BriefBack_15_00"); //Я передал послание!
-	AI_Output (self, other,"DIA_Cronos_BriefBack_08_01"); //А, хорошо! Возьми это в награду за твои труды...
+	AI_Output (other, self,"DIA_Cronos_BriefBack_15_00"); //РЇ РїРµСЂРµРґР°Р» РїРѕСЃР»Р°РЅРёРµ!
+	AI_Output (self, other,"DIA_Cronos_BriefBack_08_01"); //Рђ, С…РѕСЂРѕС€Рѕ! Р’РѕР·СЊРјРё СЌС‚Рѕ РІ РЅР°РіСЂР°РґСѓ Р·Р° С‚РІРѕРё С‚СЂСѓРґС‹...
 	
 	CreateInvItems (self,itminugget, 200);
 	B_GiveInvItems (self, other, itminugget, 200);
@@ -267,7 +267,7 @@ instance Info_Cronos_NEWS (C_INFO)
 	information	= Info_Cronos_NEWS_Info;
 	permanent	= 0;
 	important 	= 0;
-	description = "Я хочу сообщить Сатурасу нечто важное.";
+	description = "РЇ С…РѕС‡Сѓ СЃРѕРѕР±С‰РёС‚СЊ РЎР°С‚СѓСЂР°СЃСѓ РЅРµС‡С‚Рѕ РІР°Р¶РЅРѕРµ.";
 };
 
 FUNC INT Info_Cronos_NEWS_Condition()
@@ -281,8 +281,8 @@ FUNC INT Info_Cronos_NEWS_Condition()
 
 FUNC VOID Info_Cronos_NEWS_Info()
 {
-	AI_Output			(other, self,"Info_Cronos_NEWS_15_01"); //Я хочу сообщить Сатурасу нечто важное.
-	AI_Output			(self, other,"Info_Cronos_NEWS_08_02"); //Разве это послание так важно, чтобы отвлекать нашего духовного лидера от его важной работы?
+	AI_Output			(other, self,"Info_Cronos_NEWS_15_01"); //РЇ С…РѕС‡Сѓ СЃРѕРѕР±С‰РёС‚СЊ РЎР°С‚СѓСЂР°СЃСѓ РЅРµС‡С‚Рѕ РІР°Р¶РЅРѕРµ.
+	AI_Output			(self, other,"Info_Cronos_NEWS_08_02"); //Р Р°Р·РІРµ СЌС‚Рѕ РїРѕСЃР»Р°РЅРёРµ С‚Р°Рє РІР°Р¶РЅРѕ, С‡С‚РѕР±С‹ РѕС‚РІР»РµРєР°С‚СЊ РЅР°С€РµРіРѕ РґСѓС…РѕРІРЅРѕРіРѕ Р»РёРґРµСЂР° РѕС‚ РµРіРѕ РІР°Р¶РЅРѕР№ СЂР°Р±РѕС‚С‹?
 };
 
 //***************************************************************************
@@ -296,7 +296,7 @@ instance Info_Cronos_KALOM (C_INFO)
 	information	= Info_Cronos_KALOM_Info;
 	permanent	= 0;
 	important 	= 0;
-	description = "Кор Галом с несколькими фанатиками Стражами ушли из Братства!";
+	description = "РљРѕСЂ Р“Р°Р»РѕРј СЃ РЅРµСЃРєРѕР»СЊРєРёРјРё С„Р°РЅР°С‚РёРєР°РјРё РЎС‚СЂР°Р¶Р°РјРё СѓС€Р»Рё РёР· Р‘СЂР°С‚СЃС‚РІР°!";
 };
 
 FUNC INT Info_Cronos_KALOM_Condition()
@@ -309,11 +309,11 @@ FUNC INT Info_Cronos_KALOM_Condition()
 
 FUNC VOID Info_Cronos_KALOM_Info()
 {
-	AI_Output			(other, self,"Info_Cronos_KALOM_15_01"); //Кор Галом с несколькими фанатиками Стражами ушли из Братства!
-	AI_Output			(other, self,"Info_Cronos_KALOM_15_02"); //Они сами хотят найти Спящего и прервать его тысячелетний сон.
-	AI_Output			(self, other,"Info_Cronos_KALOM_08_03"); //Я никогда ему не доверял. Не важно, какое место он занимает, важно то, что его ослепила жажда власти. Он способен на все. 
-	AI_Output			(self, other,"Info_Cronos_KALOM_08_04"); //Думаю, без него в Братстве будет гораздо лучше!
-	AI_Output			(self, other,"Info_Cronos_KALOM_08_05"); //Я сообщу об этом Сатурасу, как только у меня будет возможность. А теперь иди!
+	AI_Output			(other, self,"Info_Cronos_KALOM_15_01"); //РљРѕСЂ Р“Р°Р»РѕРј СЃ РЅРµСЃРєРѕР»СЊРєРёРјРё С„Р°РЅР°С‚РёРєР°РјРё РЎС‚СЂР°Р¶Р°РјРё СѓС€Р»Рё РёР· Р‘СЂР°С‚СЃС‚РІР°!
+	AI_Output			(other, self,"Info_Cronos_KALOM_15_02"); //РћРЅРё СЃР°РјРё С…РѕС‚СЏС‚ РЅР°Р№С‚Рё РЎРїСЏС‰РµРіРѕ Рё РїСЂРµСЂРІР°С‚СЊ РµРіРѕ С‚С‹СЃСЏС‡РµР»РµС‚РЅРёР№ СЃРѕРЅ.
+	AI_Output			(self, other,"Info_Cronos_KALOM_08_03"); //РЇ РЅРёРєРѕРіРґР° РµРјСѓ РЅРµ РґРѕРІРµСЂСЏР». РќРµ РІР°Р¶РЅРѕ, РєР°РєРѕРµ РјРµСЃС‚Рѕ РѕРЅ Р·Р°РЅРёРјР°РµС‚, РІР°Р¶РЅРѕ С‚Рѕ, С‡С‚Рѕ РµРіРѕ РѕСЃР»РµРїРёР»Р° Р¶Р°Р¶РґР° РІР»Р°СЃС‚Рё. РћРЅ СЃРїРѕСЃРѕР±РµРЅ РЅР° РІСЃРµ. 
+	AI_Output			(self, other,"Info_Cronos_KALOM_08_04"); //Р”СѓРјР°СЋ, Р±РµР· РЅРµРіРѕ РІ Р‘СЂР°С‚СЃС‚РІРµ Р±СѓРґРµС‚ РіРѕСЂР°Р·РґРѕ Р»СѓС‡С€Рµ!
+	AI_Output			(self, other,"Info_Cronos_KALOM_08_05"); //РЇ СЃРѕРѕР±С‰Сѓ РѕР± СЌС‚РѕРј РЎР°С‚СѓСЂР°СЃСѓ, РєР°Рє С‚РѕР»СЊРєРѕ Сѓ РјРµРЅСЏ Р±СѓРґРµС‚ РІРѕР·РјРѕР¶РЅРѕСЃС‚СЊ. Рђ С‚РµРїРµСЂСЊ РёРґРё!
 
 	AI_StopProcessInfos	(self);
 };
@@ -329,7 +329,7 @@ instance Info_Cronos_YBERION (C_INFO)
 	information	= Info_Cronos_YBERION_Info;
 	permanent	= 0;
 	important 	= 0;
-	description = "Юберион, лидер сектантов болотного лагеря, умер!";
+	description = "Р®Р±РµСЂРёРѕРЅ, Р»РёРґРµСЂ СЃРµРєС‚Р°РЅС‚РѕРІ Р±РѕР»РѕС‚РЅРѕРіРѕ Р»Р°РіРµСЂСЏ, СѓРјРµСЂ!";
 };
 
 FUNC INT Info_Cronos_YBERION_Condition()
@@ -342,12 +342,12 @@ FUNC INT Info_Cronos_YBERION_Condition()
 
 FUNC VOID Info_Cronos_YBERION_Info()
 {
-	AI_Output			(other, self,"Info_Cronos_YBERION_15_01"); //Юберион, лидер сектантов Болотного лагеря, умер!
-	AI_Output			(self, other,"Info_Cronos_YBERION_08_02"); //Что? Как это могло произойти?
-	AI_Output			(other, self,"Info_Cronos_YBERION_15_03"); //Гуру Братства провели одну церемонию. Они вызывали Спящего.
-	AI_Output			(other, self,"Info_Cronos_YBERION_15_04"); //Но умственное напряжение плохо сказалось на Юберионе. Он этого не выдержал.
-	AI_Output			(self, other,"Info_Cronos_YBERION_08_05"); //Это очень печальная новость. Юберион был одним из наших союзников.
-	AI_Output			(self, other,"Info_Cronos_YBERION_08_06"); //Но не стоит из-за этого отвлекать Сатураса от исследований.
+	AI_Output			(other, self,"Info_Cronos_YBERION_15_01"); //Р®Р±РµСЂРёРѕРЅ, Р»РёРґРµСЂ СЃРµРєС‚Р°РЅС‚РѕРІ Р‘РѕР»РѕС‚РЅРѕРіРѕ Р»Р°РіРµСЂСЏ, СѓРјРµСЂ!
+	AI_Output			(self, other,"Info_Cronos_YBERION_08_02"); //Р§С‚Рѕ? РљР°Рє СЌС‚Рѕ РјРѕРіР»Рѕ РїСЂРѕРёР·РѕР№С‚Рё?
+	AI_Output			(other, self,"Info_Cronos_YBERION_15_03"); //Р“СѓСЂСѓ Р‘СЂР°С‚СЃС‚РІР° РїСЂРѕРІРµР»Рё РѕРґРЅСѓ С†РµСЂРµРјРѕРЅРёСЋ. РћРЅРё РІС‹Р·С‹РІР°Р»Рё РЎРїСЏС‰РµРіРѕ.
+	AI_Output			(other, self,"Info_Cronos_YBERION_15_04"); //РќРѕ СѓРјСЃС‚РІРµРЅРЅРѕРµ РЅР°РїСЂСЏР¶РµРЅРёРµ РїР»РѕС…Рѕ СЃРєР°Р·Р°Р»РѕСЃСЊ РЅР° Р®Р±РµСЂРёРѕРЅРµ. РћРЅ СЌС‚РѕРіРѕ РЅРµ РІС‹РґРµСЂР¶Р°Р».
+	AI_Output			(self, other,"Info_Cronos_YBERION_08_05"); //Р­С‚Рѕ РѕС‡РµРЅСЊ РїРµС‡Р°Р»СЊРЅР°СЏ РЅРѕРІРѕСЃС‚СЊ. Р®Р±РµСЂРёРѕРЅ Р±С‹Р» РѕРґРЅРёРј РёР· РЅР°С€РёС… СЃРѕСЋР·РЅРёРєРѕРІ.
+	AI_Output			(self, other,"Info_Cronos_YBERION_08_06"); //РќРѕ РЅРµ СЃС‚РѕРёС‚ РёР·-Р·Р° СЌС‚РѕРіРѕ РѕС‚РІР»РµРєР°С‚СЊ РЎР°С‚СѓСЂР°СЃР° РѕС‚ РёСЃСЃР»РµРґРѕРІР°РЅРёР№.
 
 	AI_StopProcessInfos	(self);
 };
@@ -363,7 +363,7 @@ instance Info_Cronos_SLEEPER (C_INFO)
 	information	= Info_Cronos_SLEEPER_Info;
 	permanent	= 0;
 	important 	= 0;
-	description = "Гуру узнали, что их бог Спящий на самом деле - злой демон!";
+	description = "Р“СѓСЂСѓ СѓР·РЅР°Р»Рё, С‡С‚Рѕ РёС… Р±РѕРі РЎРїСЏС‰РёР№ РЅР° СЃР°РјРѕРј РґРµР»Рµ - Р·Р»РѕР№ РґРµРјРѕРЅ!";
 };
 
 FUNC INT Info_Cronos_SLEEPER_Condition()
@@ -376,18 +376,18 @@ FUNC INT Info_Cronos_SLEEPER_Condition()
 
 FUNC VOID Info_Cronos_SLEEPER_Info()
 {
-	AI_Output			(other, self,"Info_Cronos_SLEEPER_15_01"); //Гуру узнали, что их бог Спящий на самом деле - настоящий злой демон!
-	AI_Output			(self, other,"Info_Cronos_SLEEPER_08_02"); //Теперь они считают Спящего одним из демонов?
-	AI_Output			(self, other,"Info_Cronos_SLEEPER_08_03"); //Это очень похоже на очередную безумную идею братьев, но...
-	AI_Output			(self, other,"Info_Cronos_SLEEPER_08_04"); //... Что если они правы... тогда вся наша колония находится в опасности.
-	AI_Output			(self, other,"Info_Cronos_SLEEPER_08_05"); //Ты должен сообщить об этом Сатурасу. Он сможет решить, что делать дальше.
-	AI_Output			(other, self,"Info_Cronos_SLEEPER_15_06"); //Где найти Сатураса?
-	AI_Output			(self, other,"Info_Cronos_SLEEPER_08_07"); //Поднимись на верхний уровень. Скажи охранникам, что ты получил мое разрешение.
-	AI_Output			(self, other,"Info_Cronos_SLEEPER_08_08"); //Пароль входа - Тетриандох.
-	AI_Output			(self, other,"Info_Cronos_SLEEPER_08_09"); //Сатурас обычно стоит у большой пентаграммы.
-	AI_Output			(self, other,"Info_Cronos_SLEEPER_08_10"); //Там он проводит свои исследования, пытается вычислить, как лучше всего взорвать гору руды.
+	AI_Output			(other, self,"Info_Cronos_SLEEPER_15_01"); //Р“СѓСЂСѓ СѓР·РЅР°Р»Рё, С‡С‚Рѕ РёС… Р±РѕРі РЎРїСЏС‰РёР№ РЅР° СЃР°РјРѕРј РґРµР»Рµ - РЅР°СЃС‚РѕСЏС‰РёР№ Р·Р»РѕР№ РґРµРјРѕРЅ!
+	AI_Output			(self, other,"Info_Cronos_SLEEPER_08_02"); //РўРµРїРµСЂСЊ РѕРЅРё СЃС‡РёС‚Р°СЋС‚ РЎРїСЏС‰РµРіРѕ РѕРґРЅРёРј РёР· РґРµРјРѕРЅРѕРІ?
+	AI_Output			(self, other,"Info_Cronos_SLEEPER_08_03"); //Р­С‚Рѕ РѕС‡РµРЅСЊ РїРѕС…РѕР¶Рµ РЅР° РѕС‡РµСЂРµРґРЅСѓСЋ Р±РµР·СѓРјРЅСѓСЋ РёРґРµСЋ Р±СЂР°С‚СЊРµРІ, РЅРѕ...
+	AI_Output			(self, other,"Info_Cronos_SLEEPER_08_04"); //... Р§С‚Рѕ РµСЃР»Рё РѕРЅРё РїСЂР°РІС‹... С‚РѕРіРґР° РІСЃСЏ РЅР°С€Р° РєРѕР»РѕРЅРёСЏ РЅР°С…РѕРґРёС‚СЃСЏ РІ РѕРїР°СЃРЅРѕСЃС‚Рё.
+	AI_Output			(self, other,"Info_Cronos_SLEEPER_08_05"); //РўС‹ РґРѕР»Р¶РµРЅ СЃРѕРѕР±С‰РёС‚СЊ РѕР± СЌС‚РѕРј РЎР°С‚СѓСЂР°СЃСѓ. РћРЅ СЃРјРѕР¶РµС‚ СЂРµС€РёС‚СЊ, С‡С‚Рѕ РґРµР»Р°С‚СЊ РґР°Р»СЊС€Рµ.
+	AI_Output			(other, self,"Info_Cronos_SLEEPER_15_06"); //Р“РґРµ РЅР°Р№С‚Рё РЎР°С‚СѓСЂР°СЃР°?
+	AI_Output			(self, other,"Info_Cronos_SLEEPER_08_07"); //РџРѕРґРЅРёРјРёСЃСЊ РЅР° РІРµСЂС…РЅРёР№ СѓСЂРѕРІРµРЅСЊ. РЎРєР°Р¶Рё РѕС…СЂР°РЅРЅРёРєР°Рј, С‡С‚Рѕ С‚С‹ РїРѕР»СѓС‡РёР» РјРѕРµ СЂР°Р·СЂРµС€РµРЅРёРµ.
+	AI_Output			(self, other,"Info_Cronos_SLEEPER_08_08"); //РџР°СЂРѕР»СЊ РІС…РѕРґР° - РўРµС‚СЂРёР°РЅРґРѕС….
+	AI_Output			(self, other,"Info_Cronos_SLEEPER_08_09"); //РЎР°С‚СѓСЂР°СЃ РѕР±С‹С‡РЅРѕ СЃС‚РѕРёС‚ Сѓ Р±РѕР»СЊС€РѕР№ РїРµРЅС‚Р°РіСЂР°РјРјС‹.
+	AI_Output			(self, other,"Info_Cronos_SLEEPER_08_10"); //РўР°Рј РѕРЅ РїСЂРѕРІРѕРґРёС‚ СЃРІРѕРё РёСЃСЃР»РµРґРѕРІР°РЅРёСЏ, РїС‹С‚Р°РµС‚СЃСЏ РІС‹С‡РёСЃР»РёС‚СЊ, РєР°Рє Р»СѓС‡С€Рµ РІСЃРµРіРѕ РІР·РѕСЂРІР°С‚СЊ РіРѕСЂСѓ СЂСѓРґС‹.
 
-	B_LogEntry			(CH3_EscapePlanNC,	"Кронос дал мне разрешение на разговор с Сатурасом. Обычно верховного мага можно найти у пентаграммы. Нужно сказать стражникам пароль... Вот черт, неужели я его забыл?!");
+	B_LogEntry			(CH3_EscapePlanNC,	"РљСЂРѕРЅРѕСЃ РґР°Р» РјРЅРµ СЂР°Р·СЂРµС€РµРЅРёРµ РЅР° СЂР°Р·РіРѕРІРѕСЂ СЃ РЎР°С‚СѓСЂР°СЃРѕРј. РћР±С‹С‡РЅРѕ РІРµСЂС…РѕРІРЅРѕРіРѕ РјР°РіР° РјРѕР¶РЅРѕ РЅР°Р№С‚Рё Сѓ РїРµРЅС‚Р°РіСЂР°РјРјС‹. РќСѓР¶РЅРѕ СЃРєР°Р·Р°С‚СЊ СЃС‚СЂР°Р¶РЅРёРєР°Рј РїР°СЂРѕР»СЊ... Р’РѕС‚ С‡РµСЂС‚, РЅРµСѓР¶РµР»Рё СЏ РµРіРѕ Р·Р°Р±С‹Р»?!");
 
 	B_GiveXP			(XP_GetCronosPermission);
 
@@ -405,7 +405,7 @@ instance Info_Cronos_PAROLE (C_INFO)
 	information	= Info_Cronos_PAROLE_Info;
 	permanent	= 0;
 	important 	= 0;
-	description = "Скажи мне пароль, я не смог его запомнить.";
+	description = "РЎРєР°Р¶Рё РјРЅРµ РїР°СЂРѕР»СЊ, СЏ РЅРµ СЃРјРѕРі РµРіРѕ Р·Р°РїРѕРјРЅРёС‚СЊ.";
 };
 
 FUNC INT Info_Cronos_PAROLE_Condition()
@@ -418,8 +418,8 @@ FUNC INT Info_Cronos_PAROLE_Condition()
 
 FUNC VOID Info_Cronos_PAROLE_Info()
 {
-	AI_Output			(other, self,"Info_Cronos_PAROLE_15_01"); //Скажи мне пароль, я не смог его запомнить.
-	AI_Output			(self, other,"Info_Cronos_PAROLE_08_02"); //Да, памяти у тебя нет. Запомни, пароль Тетриандох.
+	AI_Output			(other, self,"Info_Cronos_PAROLE_15_01"); //РЎРєР°Р¶Рё РјРЅРµ РїР°СЂРѕР»СЊ, СЏ РЅРµ СЃРјРѕРі РµРіРѕ Р·Р°РїРѕРјРЅРёС‚СЊ.
+	AI_Output			(self, other,"Info_Cronos_PAROLE_08_02"); //Р”Р°, РїР°РјСЏС‚Рё Сѓ С‚РµР±СЏ РЅРµС‚. Р—Р°РїРѕРјРЅРё, РїР°СЂРѕР»СЊ РўРµС‚СЂРёР°РЅРґРѕС….
 };
 
 //***************************************************************************
@@ -433,7 +433,7 @@ instance Info_Cronos_REWARD (C_INFO)
 	information	= Info_Cronos_REWARD_Info;
 	permanent	= 0;
 	important 	= 0;
-	description = "Сатурас сказал, что у тебя есть для меня награда.";
+	description = "РЎР°С‚СѓСЂР°СЃ СЃРєР°Р·Р°Р», С‡С‚Рѕ Сѓ С‚РµР±СЏ РµСЃС‚СЊ РґР»СЏ РјРµРЅСЏ РЅР°РіСЂР°РґР°.";
 };
 
 FUNC INT Info_Cronos_REWARD_Condition()
@@ -446,11 +446,11 @@ FUNC INT Info_Cronos_REWARD_Condition()
 
 FUNC VOID Info_Cronos_REWARD_Info()
 {
-	AI_Output			(other, self,"Info_Cronos_REWARD_15_01"); //Сатурас сказал, что у тебя есть для меня награда.
-	AI_Output			(self, other,"Info_Cronos_REWARD_08_02"); //Как хранитель руды я дам тебе небольшую часть наших запасов, как награду за твои труды.
-	AI_Output			(self, other,"Info_Cronos_REWARD_08_03"); //Надеюсь, ты сможешь разумно использовать ее.
+	AI_Output			(other, self,"Info_Cronos_REWARD_15_01"); //РЎР°С‚СѓСЂР°СЃ СЃРєР°Р·Р°Р», С‡С‚Рѕ Сѓ С‚РµР±СЏ РµСЃС‚СЊ РґР»СЏ РјРµРЅСЏ РЅР°РіСЂР°РґР°.
+	AI_Output			(self, other,"Info_Cronos_REWARD_08_02"); //РљР°Рє С…СЂР°РЅРёС‚РµР»СЊ СЂСѓРґС‹ СЏ РґР°Рј С‚РµР±Рµ РЅРµР±РѕР»СЊС€СѓСЋ С‡Р°СЃС‚СЊ РЅР°С€РёС… Р·Р°РїР°СЃРѕРІ, РєР°Рє РЅР°РіСЂР°РґСѓ Р·Р° С‚РІРѕРё С‚СЂСѓРґС‹.
+	AI_Output			(self, other,"Info_Cronos_REWARD_08_03"); //РќР°РґРµСЋСЃСЊ, С‚С‹ СЃРјРѕР¶РµС€СЊ СЂР°Р·СѓРјРЅРѕ РёСЃРїРѕР»СЊР·РѕРІР°С‚СЊ РµРµ.
 
-	B_LogEntry		(CH3_BringFoci,	"Кронос дал мне достаточно много руды, но от этого рудная гора нисколько не уменьшилась.");
+	B_LogEntry		(CH3_BringFoci,	"РљСЂРѕРЅРѕСЃ РґР°Р» РјРЅРµ РґРѕСЃС‚Р°С‚РѕС‡РЅРѕ РјРЅРѕРіРѕ СЂСѓРґС‹, РЅРѕ РѕС‚ СЌС‚РѕРіРѕ СЂСѓРґРЅР°СЏ РіРѕСЂР° РЅРёСЃРєРѕР»СЊРєРѕ РЅРµ СѓРјРµРЅСЊС€РёР»Р°СЃСЊ.");
 	if	Npc_KnowsInfo(hero, Info_Riordian_REWARD)
 	{
 		Log_SetTopicStatus	(CH3_BringFoci,	LOG_SUCCESS);
@@ -480,7 +480,7 @@ FUNC int  KDW_604_Cronos_WELCOME_Condition()
 };
 func void  KDW_604_Cronos_WELCOME_Info()
 {
-	AI_Output			(self, other,"KDW_604_Cronos_WELCOME_Info_08_01"); //Ты принял правильное решение. Теперь ты один из магов Воды. Добро пожаловать, брат!
+	AI_Output			(self, other,"KDW_604_Cronos_WELCOME_Info_08_01"); //РўС‹ РїСЂРёРЅСЏР» РїСЂР°РІРёР»СЊРЅРѕРµ СЂРµС€РµРЅРёРµ. РўРµРїРµСЂСЊ С‚С‹ РѕРґРёРЅ РёР· РјР°РіРѕРІ Р’РѕРґС‹. Р”РѕР±СЂРѕ РїРѕР¶Р°Р»РѕРІР°С‚СЊ, Р±СЂР°С‚!
 	AI_StopProcessInfos	( self );  
 };
 //--------------------------------------------------------------------------
@@ -496,7 +496,7 @@ instance  KDW_604_Cronos_MANA (C_INFO)
 	information		= KDW_604_Cronos_MANA_Info;
 	important		= 0;
 	permanent		= 1;
-	description		= "Я хочу увеличить свою магическую силу."; 
+	description		= "РЇ С…РѕС‡Сѓ СѓРІРµР»РёС‡РёС‚СЊ СЃРІРѕСЋ РјР°РіРёС‡РµСЃРєСѓСЋ СЃРёР»Сѓ."; 
 };
 
 FUNC int  KDW_604_Cronos_MANA_Condition()
@@ -510,8 +510,8 @@ FUNC int  KDW_604_Cronos_MANA_Condition()
 };
 FUNC void  KDW_604_Cronos_MANA_Info()
 {
-	AI_Output			(other, self,"KDW_604_Cronos_MANA_Info_15_01"); //Я хочу увеличить свою магическую силу.
-	AI_Output			(self, other,"KDW_604_Cronos_MANA_Info_08_02"); //Я могу помочь тебе в этом. Используй свою силу с умом.
+	AI_Output			(other, self,"KDW_604_Cronos_MANA_Info_15_01"); //РЇ С…РѕС‡Сѓ СѓРІРµР»РёС‡РёС‚СЊ СЃРІРѕСЋ РјР°РіРёС‡РµСЃРєСѓСЋ СЃРёР»Сѓ.
+	AI_Output			(self, other,"KDW_604_Cronos_MANA_Info_08_02"); //РЇ РјРѕРіСѓ РїРѕРјРѕС‡СЊ С‚РµР±Рµ РІ СЌС‚РѕРј. РСЃРїРѕР»СЊР·СѓР№ СЃРІРѕСЋ СЃРёР»Сѓ СЃ СѓРјРѕРј.
 	
 	Info_ClearChoices	(KDW_604_Cronos_MANA);
 	Info_AddChoice		(KDW_604_Cronos_MANA,DIALOG_BACK									,KDW_604_Cronos_MANA_BACK);
@@ -568,11 +568,11 @@ FUNC int  KDW_604_Cronos_SELLSTUFF_Condition()
 };
 FUNC void  KDW_604_Cronos_SELLSTUFF_Info()
 {
-	AI_Output (other, self,"KDW_604_Cronos_SELLSTUFF_Info_15_01"); //Я хочу приобрести магические свитки.
+	AI_Output (other, self,"KDW_604_Cronos_SELLSTUFF_Info_15_01"); //РЇ С…РѕС‡Сѓ РїСЂРёРѕР±СЂРµСЃС‚Рё РјР°РіРёС‡РµСЃРєРёРµ СЃРІРёС‚РєРё.
 	
 };  
 /*------------------------------------------------------------------------
-						BEGRЬSSUNG						
+						BEGRР¬SSUNG						
 ------------------------------------------------------------------------*/
 
 instance  KDW_604_Cronos_GREET (C_INFO)
@@ -582,7 +582,7 @@ instance  KDW_604_Cronos_GREET (C_INFO)
 	information		= KDW_604_Cronos_GREET_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Приветствую тебя, маг!"; 
+	description		= "РџСЂРёРІРµС‚СЃС‚РІСѓСЋ С‚РµР±СЏ, РјР°Рі!"; 
 };
 
 FUNC int  KDW_604_Cronos_GREET_Condition()
@@ -593,11 +593,11 @@ FUNC int  KDW_604_Cronos_GREET_Condition()
 
 FUNC void  KDW_604_Cronos_GREET_Info()
 {
-	AI_Output (other, self,"KDW_604_Cronos_GREET_Info_15_01"); //Приветствую тебя, маг!
-	AI_Output (self, other,"KDW_604_Cronos_GREET_Info_08_02"); //Да прибудет с тобой благословение Аданоса! Я могу помочь твоему духу стать сильнее или дать тебе что-то полезное.
-	AI_Output (self, other,"KDW_604_Cronos_GREET_Info_08_03"); //Что я могу сделать для тебя?
+	AI_Output (other, self,"KDW_604_Cronos_GREET_Info_15_01"); //РџСЂРёРІРµС‚СЃС‚РІСѓСЋ С‚РµР±СЏ, РјР°Рі!
+	AI_Output (self, other,"KDW_604_Cronos_GREET_Info_08_02"); //Р”Р° РїСЂРёР±СѓРґРµС‚ СЃ С‚РѕР±РѕР№ Р±Р»Р°РіРѕСЃР»РѕРІРµРЅРёРµ РђРґР°РЅРѕСЃР°! РЇ РјРѕРіСѓ РїРѕРјРѕС‡СЊ С‚РІРѕРµРјСѓ РґСѓС…Сѓ СЃС‚Р°С‚СЊ СЃРёР»СЊРЅРµРµ РёР»Рё РґР°С‚СЊ С‚РµР±Рµ С‡С‚Рѕ-С‚Рѕ РїРѕР»РµР·РЅРѕРµ.
+	AI_Output (self, other,"KDW_604_Cronos_GREET_Info_08_03"); //Р§С‚Рѕ СЏ РјРѕРіСѓ СЃРґРµР»Р°С‚СЊ РґР»СЏ С‚РµР±СЏ?
 	Log_CreateTopic (GE_TraderNC,LOG_NOTE);
-	B_LogEntry (GE_TraderNC,"Кронос продает руны, свитки и кольца. Целыми днями он стоит у решетки, закрывающей рудную гору."); 
+	B_LogEntry (GE_TraderNC,"РљСЂРѕРЅРѕСЃ РїСЂРѕРґР°РµС‚ СЂСѓРЅС‹, СЃРІРёС‚РєРё Рё РєРѕР»СЊС†Р°. Р¦РµР»С‹РјРё РґРЅСЏРјРё РѕРЅ СЃС‚РѕРёС‚ Сѓ СЂРµС€РµС‚РєРё, Р·Р°РєСЂС‹РІР°СЋС‰РµР№ СЂСѓРґРЅСѓСЋ РіРѕСЂСѓ."); 
 	Log_CreateTopic (GE_TeacherNC,LOG_NOTE);
-	B_LogEntry (GE_TeacherNC,"Кронос может помочь мне повысить мою магическую силу. Его можно найти у рудной горы.");
+	B_LogEntry (GE_TeacherNC,"РљСЂРѕРЅРѕСЃ РјРѕР¶РµС‚ РїРѕРјРѕС‡СЊ РјРЅРµ РїРѕРІС‹СЃРёС‚СЊ РјРѕСЋ РјР°РіРёС‡РµСЃРєСѓСЋ СЃРёР»Сѓ. Р•РіРѕ РјРѕР¶РЅРѕ РЅР°Р№С‚Рё Сѓ СЂСѓРґРЅРѕР№ РіРѕСЂС‹.");
 };

@@ -54,7 +54,7 @@ instance OverlayHuman (C_NPC)
 instance OverlayOrc (C_NPC)
 {   
 	//-------- primary data	--------
-	name[0]						=		"Орк-рокфеллер";
+	name[0]						=		"РћСЂРє-СЂРѕРєС„РµР»Р»РµСЂ";
 	guild						=		GIL_ORCWARRIOR;
 	level						=		4;
 
@@ -87,7 +87,7 @@ instance Babe_Rockefeller (Npc_Default)
 {
 	//-------- primary data --------
 
-	name =							"Леди-Рокфеллер";
+	name =							"Р›РµРґРё-Р РѕРєС„РµР»Р»РµСЂ";
 	guild =							GIL_BAB;
 	level =							1;
 	flags =							0;
@@ -541,12 +541,12 @@ INSTANCE L25(NPC_DEFAULT)
 
 
 /*************************************************************************
-**	junge Molerat   (fьr Spielstart) 									**
+**	junge Molerat   (fСЊr Spielstart) 									**
 *************************************************************************/
 
 INSTANCE Testratte	(Mst_Default_Molerat)
 {
-	name							=	"Молодой кротокрыс";
+	name							=	"РњРѕР»РѕРґРѕР№ РєСЂРѕС‚РѕРєСЂС‹СЃ";
 
 	attribute	[ATR_STRENGTH]		=	5;
 	attribute	[ATR_DEXTERITY]		=	5;

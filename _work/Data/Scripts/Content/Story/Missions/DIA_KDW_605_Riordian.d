@@ -38,7 +38,7 @@ FUNC VOID  Info_Riordian_EXIT_Info()
 
 //***************************************************************************
 //	Info NEWS
-//***************************************************************************//Bist du der Wassermagier, der die Trдnke braut?
+//***************************************************************************//Bist du der Wassermagier, der die TrРґnke braut?
 instance Info_Riordian_NEWS (C_INFO)
 {
 	npc			= KDW_605_Riordian;
@@ -46,7 +46,7 @@ instance Info_Riordian_NEWS (C_INFO)
 	information	= Info_Riordian_NEWS_Info;
 	permanent	= 0;
 	important 	= 0;
-	description = "Меня прислал Сатурас.";
+	description = "РњРµРЅСЏ РїСЂРёСЃР»Р°Р» РЎР°С‚СѓСЂР°СЃ.";
 };
 
 FUNC INT Info_Riordian_NEWS_Condition()
@@ -59,13 +59,13 @@ FUNC INT Info_Riordian_NEWS_Condition()
 
 FUNC VOID Info_Riordian_NEWS_Info()
 {
-	AI_Output (other, self,"Info_Riordian_NEWS_15_01"); //Меня прислал Сатурас.
-	AI_Output (self, other,"Info_Riordian_NEWS_14_02"); //Заходи. Мне уже доложили о тебе.
-	AI_Output (self, other,"Info_Riordian_NEWS_14_03"); //Вот, возьми эти эликсиры. Здесь все, что тебе может пригодиться.
-	AI_Output (self, other,"Info_Riordian_NEWS_14_04"); //Теперь можешь идти. Эти камни наша последняя надежда - отыщи их!
+	AI_Output (other, self,"Info_Riordian_NEWS_15_01"); //РњРµРЅСЏ РїСЂРёСЃР»Р°Р» РЎР°С‚СѓСЂР°СЃ.
+	AI_Output (self, other,"Info_Riordian_NEWS_14_02"); //Р—Р°С…РѕРґРё. РњРЅРµ СѓР¶Рµ РґРѕР»РѕР¶РёР»Рё Рѕ С‚РµР±Рµ.
+	AI_Output (self, other,"Info_Riordian_NEWS_14_03"); //Р’РѕС‚, РІРѕР·СЊРјРё СЌС‚Рё СЌР»РёРєСЃРёСЂС‹. Р—РґРµСЃСЊ РІСЃРµ, С‡С‚Рѕ С‚РµР±Рµ РјРѕР¶РµС‚ РїСЂРёРіРѕРґРёС‚СЊСЃСЏ.
+	AI_Output (self, other,"Info_Riordian_NEWS_14_04"); //РўРµРїРµСЂСЊ РјРѕР¶РµС€СЊ РёРґС‚Рё. Р­С‚Рё РєР°РјРЅРё РЅР°С€Р° РїРѕСЃР»РµРґРЅСЏСЏ РЅР°РґРµР¶РґР° - РѕС‚С‹С‰Рё РёС…!
 
 	CreateInvItems (self, ItFo_Potion_Health_01,	20); 
-	B_GiveInvItems (self,hero, ItFo_Potion_Health_01,	20); //Notwendig fьr die Ausschrift "20 Items ьbergeben", wird sofort ausgeglichen
+	B_GiveInvItems (self,hero, ItFo_Potion_Health_01,	20); //Notwendig fСЊr die Ausschrift "20 Items СЊbergeben", wird sofort ausgeglichen
 	Npc_RemoveInvItems(hero, ItFo_Potion_Health_01,	15);
 
 	CreateInvItems (hero, ItFo_Potion_Mana_01,		5);
@@ -88,7 +88,7 @@ instance Info_Riordian_REWARD (C_INFO)
 	information	= Info_Riordian_REWARD_Info;
 	permanent	= 0;
 	important 	= 0;
-	description = "Сатурас сказал, что у тебя есть для меня награда.";
+	description = "РЎР°С‚СѓСЂР°СЃ СЃРєР°Р·Р°Р», С‡С‚Рѕ Сѓ С‚РµР±СЏ РµСЃС‚СЊ РґР»СЏ РјРµРЅСЏ РЅР°РіСЂР°РґР°.";
 };
 
 FUNC INT Info_Riordian_REWARD_Condition()
@@ -101,14 +101,14 @@ FUNC INT Info_Riordian_REWARD_Condition()
 
 FUNC VOID Info_Riordian_REWARD_Info()
 {
-	AI_Output			(other, self,"Info_Riordian_REWARD_15_01"); //Сатурас сказал, что у тебя есть для меня награда.
-	AI_Output			(self, other,"Info_Riordian_REWARD_14_02"); //А, ну проходи, проходи.
-	AI_Output			(self, other,"Info_Riordian_REWARD_14_03"); //Наш духовный наставник рассказал о твоих геройских поступках.
-	AI_Output			(self, other,"Info_Riordian_REWARD_14_04"); //Все жители лагеря - да что там, всей колонии - в глубоком долгу перед тобой.
-	AI_Output			(self, other,"Info_Riordian_REWARD_14_05"); //Прими от нас эту скромную награду в знак нашей благодарности.
+	AI_Output			(other, self,"Info_Riordian_REWARD_15_01"); //РЎР°С‚СѓСЂР°СЃ СЃРєР°Р·Р°Р», С‡С‚Рѕ Сѓ С‚РµР±СЏ РµСЃС‚СЊ РґР»СЏ РјРµРЅСЏ РЅР°РіСЂР°РґР°.
+	AI_Output			(self, other,"Info_Riordian_REWARD_14_02"); //Рђ, РЅСѓ РїСЂРѕС…РѕРґРё, РїСЂРѕС…РѕРґРё.
+	AI_Output			(self, other,"Info_Riordian_REWARD_14_03"); //РќР°С€ РґСѓС…РѕРІРЅС‹Р№ РЅР°СЃС‚Р°РІРЅРёРє СЂР°СЃСЃРєР°Р·Р°Р» Рѕ С‚РІРѕРёС… РіРµСЂРѕР№СЃРєРёС… РїРѕСЃС‚СѓРїРєР°С….
+	AI_Output			(self, other,"Info_Riordian_REWARD_14_04"); //Р’СЃРµ Р¶РёС‚РµР»Рё Р»Р°РіРµСЂСЏ - РґР° С‡С‚Рѕ С‚Р°Рј, РІСЃРµР№ РєРѕР»РѕРЅРёРё - РІ РіР»СѓР±РѕРєРѕРј РґРѕР»РіСѓ РїРµСЂРµРґ С‚РѕР±РѕР№.
+	AI_Output			(self, other,"Info_Riordian_REWARD_14_05"); //РџСЂРёРјРё РѕС‚ РЅР°СЃ СЌС‚Сѓ СЃРєСЂРѕРјРЅСѓСЋ РЅР°РіСЂР°РґСѓ РІ Р·РЅР°Рє РЅР°С€РµР№ Р±Р»Р°РіРѕРґР°СЂРЅРѕСЃС‚Рё.
 
 	CreateInvItems		(self, ItFo_Potion_Health_02,		20);
-	B_GiveInvItems      (self, hero, ItFo_Potion_Health_02, 20);//Notwenidg fьr Ausschrift "20 Items ьbergeben", wird sofort ausgeglichen
+	B_GiveInvItems      (self, hero, ItFo_Potion_Health_02, 20);//Notwenidg fСЊr Ausschrift "20 Items СЊbergeben", wird sofort ausgeglichen
 	Npc_RemoveInvItems  (hero, ItFo_Potion_Health_02, 		15);
 
 	CreateInvItems		(hero, ItFo_Potion_Mana_02,			5);
@@ -119,7 +119,7 @@ FUNC VOID Info_Riordian_REWARD_Info()
 	CreateInvItems		(hero, ItFo_Potion_Health_Perma_02,	1);
 	CreateInvItems		(hero, ItFo_Potion_Mana_Perma_02,	1);
 
-	B_LogEntry			(CH3_BringFoci,	"Риоридан дал мне несколько зелий, которые мне могут пригодиться в ближайшее время.");
+	B_LogEntry			(CH3_BringFoci,	"Р РёРѕСЂРёРґР°РЅ РґР°Р» РјРЅРµ РЅРµСЃРєРѕР»СЊРєРѕ Р·РµР»РёР№, РєРѕС‚РѕСЂС‹Рµ РјРЅРµ РјРѕРіСѓС‚ РїСЂРёРіРѕРґРёС‚СЊСЃСЏ РІ Р±Р»РёР¶Р°Р№С€РµРµ РІСЂРµРјСЏ.");
 	if	Npc_KnowsInfo(hero, Info_Cronos_REWARD)
 	{
 		Log_SetTopicStatus(CH3_BringFoci,	LOG_SUCCESS);
@@ -159,7 +159,7 @@ FUNC INT Info_Riordian_MESSAGE_Condition()
 
 FUNC VOID Info_Riordian_MESSAGE_Info()
 {
-	AI_Output (self, hero,"Info_Riordian_MESSAGE_14_01"); //Рад, что ты пришел! Я ждал тебя!
+	AI_Output (self, hero,"Info_Riordian_MESSAGE_14_01"); //Р Р°Рґ, С‡С‚Рѕ С‚С‹ РїСЂРёС€РµР»! РЇ Р¶РґР°Р» С‚РµР±СЏ!
 };
 
 //---------------------------------------------------------------------
@@ -172,7 +172,7 @@ instance Info_Riordian_MESSAGEWHY (C_INFO)
 	information	= Info_Riordian_MESSAGEWHY_Info;
 	permanent	= 0;
 	important 	= 0;
-	description = "Ты ждал меня? Зачем?";
+	description = "РўС‹ Р¶РґР°Р» РјРµРЅСЏ? Р—Р°С‡РµРј?";
 };
 
 FUNC INT Info_Riordian_MESSAGEWHY_Condition()
@@ -185,12 +185,12 @@ FUNC INT Info_Riordian_MESSAGEWHY_Condition()
 
 FUNC VOID Info_Riordian_MESSAGEWHY_Info()
 {
-	AI_Output (hero, self,"Info_Riordian_MESSAGEWHY_15_01"); //Ты ждал меня? Зачем?
-	AI_Output (self, hero,"Info_Riordian_MESSAGEWHY_14_02"); //Горн просил отправить тебя к нему, как только ты объявишься!
-	AI_Output (hero, self,"Info_Riordian_MESSAGEWHY_15_03"); //А в чем дело?
-	AI_Output (self, hero,"Info_Riordian_MESSAGEWHY_14_04"); //У него есть план, как освободить захваченную шахту.
-	AI_Output (hero, self,"Info_Riordian_MESSAGEWHY_15_05"); //Он все еще охраняет вход в шахту?
-	AI_Output (self, hero,"Info_Riordian_MESSAGEWHY_14_06"); //Да! И, пожалуйста, отправляйся к нему, как можно быстрее.
+	AI_Output (hero, self,"Info_Riordian_MESSAGEWHY_15_01"); //РўС‹ Р¶РґР°Р» РјРµРЅСЏ? Р—Р°С‡РµРј?
+	AI_Output (self, hero,"Info_Riordian_MESSAGEWHY_14_02"); //Р“РѕСЂРЅ РїСЂРѕСЃРёР» РѕС‚РїСЂР°РІРёС‚СЊ С‚РµР±СЏ Рє РЅРµРјСѓ, РєР°Рє С‚РѕР»СЊРєРѕ С‚С‹ РѕР±СЉСЏРІРёС€СЊСЃСЏ!
+	AI_Output (hero, self,"Info_Riordian_MESSAGEWHY_15_03"); //Рђ РІ С‡РµРј РґРµР»Рѕ?
+	AI_Output (self, hero,"Info_Riordian_MESSAGEWHY_14_04"); //РЈ РЅРµРіРѕ РµСЃС‚СЊ РїР»Р°РЅ, РєР°Рє РѕСЃРІРѕР±РѕРґРёС‚СЊ Р·Р°С…РІР°С‡РµРЅРЅСѓСЋ С€Р°С…С‚Сѓ.
+	AI_Output (hero, self,"Info_Riordian_MESSAGEWHY_15_05"); //РћРЅ РІСЃРµ РµС‰Рµ РѕС…СЂР°РЅСЏРµС‚ РІС…РѕРґ РІ С€Р°С…С‚Сѓ?
+	AI_Output (self, hero,"Info_Riordian_MESSAGEWHY_14_06"); //Р”Р°! Р, РїРѕР¶Р°Р»СѓР№СЃС‚Р°, РѕС‚РїСЂР°РІР»СЏР№СЃСЏ Рє РЅРµРјСѓ, РєР°Рє РјРѕР¶РЅРѕ Р±С‹СЃС‚СЂРµРµ.
 };
 /*------------------------------------------------------------------------
 //							WELCOME							//
@@ -214,7 +214,7 @@ FUNC int  KDW_605_Riordian_WELCOME_Condition()
 };
 func void  KDW_605_Riordian_WELCOME_Info()
 {
-	AI_Output (self, other,"KDW_605_Riordian_WELCOME_Info_14_01"); //Я рад, что ты теперь с нами.
+	AI_Output (self, other,"KDW_605_Riordian_WELCOME_Info_14_01"); //РЇ СЂР°Рґ, С‡С‚Рѕ С‚С‹ С‚РµРїРµСЂСЊ СЃ РЅР°РјРё.
 };
 //-----------------------------------------------------------
 instance KDW_605_Riordian_HEAL (C_INFO)
@@ -236,7 +236,7 @@ FUNC int  KDW_605_Riordian_HEAL_Condition()
 };
 func void  KDW_605_Riordian_HEAL_Info()
 {
-	AI_Output (self, other,"KDW_605_Riordian_HEAL_Info_14_01"); //Если ты ранен, я могу вылечить тебя.
+	AI_Output (self, other,"KDW_605_Riordian_HEAL_Info_14_01"); //Р•СЃР»Рё С‚С‹ СЂР°РЅРµРЅ, СЏ РјРѕРіСѓ РІС‹Р»РµС‡РёС‚СЊ С‚РµР±СЏ.
 };
 // ***************************** INFOS ****************************************//
 
@@ -248,7 +248,7 @@ instance  KDW_605_Riordian_HEALINFO (C_INFO)
 	information		= KDW_605_Riordian_HEALINFO_Info;
 	important		= 0;
 	permanent		= 1;
-	description		= "Я ранен. Ты можешь вылечить меня?"; 
+	description		= "РЇ СЂР°РЅРµРЅ. РўС‹ РјРѕР¶РµС€СЊ РІС‹Р»РµС‡РёС‚СЊ РјРµРЅСЏ?"; 
 };
 
 FUNC int  KDW_605_Riordian_HEALINFO_Condition()
@@ -262,8 +262,8 @@ FUNC int  KDW_605_Riordian_HEALINFO_Condition()
 };
 FUNC void  KDW_605_Riordian_HEALINFO_Info()
 {
-	AI_Output (other, self,"KDW_605_Riordian_HEALINFO_Info_15_01"); //Я ранен. Ты можешь вылечить меня?
-	AI_Output (self, other,"KDW_605_Riordian_HEALINFO_Info_14_02"); //Да подарят слова мои здоровье и силу тебе!
+	AI_Output (other, self,"KDW_605_Riordian_HEALINFO_Info_15_01"); //РЇ СЂР°РЅРµРЅ. РўС‹ РјРѕР¶РµС€СЊ РІС‹Р»РµС‡РёС‚СЊ РјРµРЅСЏ?
+	AI_Output (self, other,"KDW_605_Riordian_HEALINFO_Info_14_02"); //Р”Р° РїРѕРґР°СЂСЏС‚ СЃР»РѕРІР° РјРѕРё Р·РґРѕСЂРѕРІСЊРµ Рё СЃРёР»Сѓ С‚РµР±Рµ!
 	 
 	hero.attribute [ATR_HITPOINTS] = hero.attribute [ATR_HITPOINTS_MAX];
 	Snd_Play  ("MFX_Heal_Cast");
@@ -279,7 +279,7 @@ instance  KDW_605_Riordian_GREET (C_INFO)
 	information		= KDW_605_Riordian_GREET_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Приветствую тебя, маг!"; 
+	description		= "РџСЂРёРІРµС‚СЃС‚РІСѓСЋ С‚РµР±СЏ, РјР°Рі!"; 
 };
 
 FUNC int  KDW_605_Riordian_GREET_Condition()
@@ -290,10 +290,10 @@ FUNC int  KDW_605_Riordian_GREET_Condition()
 
 FUNC void  KDW_605_Riordian_GREET_Info()
 {
-	AI_Output 		(other, self,"KDW_605_Riordian_GREET_Info_15_01"); //Приветствую тебя, маг!
-	AI_Output 		(self, other,"KDW_605_Riordian_GREET_Info_14_02"); //Я Риордан, алхимик. Полагаю, тебе нужен эликсир?
+	AI_Output 		(other, self,"KDW_605_Riordian_GREET_Info_15_01"); //РџСЂРёРІРµС‚СЃС‚РІСѓСЋ С‚РµР±СЏ, РјР°Рі!
+	AI_Output 		(self, other,"KDW_605_Riordian_GREET_Info_14_02"); //РЇ Р РёРѕСЂРґР°РЅ, Р°Р»С…РёРјРёРє. РџРѕР»Р°РіР°СЋ, С‚РµР±Рµ РЅСѓР¶РµРЅ СЌР»РёРєСЃРёСЂ?
 	Log_CreateTopic (GE_TraderNC,LOG_NOTE);
-	B_LogEntry 		(GE_TraderNC,"Маг Круга Воды Риордан продает магические зелья. Я могу найти его в лаборатории на втором уровне пещеры.");
+	B_LogEntry 		(GE_TraderNC,"РњР°Рі РљСЂСѓРіР° Р’РѕРґС‹ Р РёРѕСЂРґР°РЅ РїСЂРѕРґР°РµС‚ РјР°РіРёС‡РµСЃРєРёРµ Р·РµР»СЊСЏ. РЇ РјРѕРіСѓ РЅР°Р№С‚Рё РµРіРѕ РІ Р»Р°Р±РѕСЂР°С‚РѕСЂРёРё РЅР° РІС‚РѕСЂРѕРј СѓСЂРѕРІРЅРµ РїРµС‰РµСЂС‹.");
 	
 };  
 /*------------------------------------------------------------------------
@@ -307,7 +307,7 @@ instance  KDW_605_Riordian_TRADE (C_INFO)
 	information		= KDW_605_Riordian_TRADE_Info;
 	important		= 0;
 	permanent		= 1;
-	description		= "Покажи мне свои товары."; 
+	description		= "РџРѕРєР°Р¶Рё РјРЅРµ СЃРІРѕРё С‚РѕРІР°СЂС‹."; 
 	trade			= 1;
 };
 
@@ -321,6 +321,6 @@ FUNC int  KDW_605_Riordian_TRADE_Condition()
 };
 FUNC void  KDW_605_Riordian_TRADE_Info()
 {
-	AI_Output (other, self,"KDW_605_Riordian_TRADE_Info_15_01"); //Покажи мне свои товары.
+	AI_Output (other, self,"KDW_605_Riordian_TRADE_Info_15_01"); //РџРѕРєР°Р¶Рё РјРЅРµ СЃРІРѕРё С‚РѕРІР°СЂС‹.
 	
 };  

@@ -22,11 +22,11 @@ FUNC VOID Info_HighPriest4_Info()
 	AI_SetWalkmode		(self, NPC_WALK);
 	AI_GotoNpc			(self, other);
 	
-	AI_Output			(self, other,"Info_HighPriest4_17_01"); //ТВОЯ СМЕРТЬ ЖДЕТ ТЕБЯ!
-	AI_Output			(self, other,"Info_HighPriest4_17_02"); //ТЫ СГОРИШЬ В ОГНЕ! 
-	AI_Output			(other, self,"Info_HighPriest4_15_03"); //Мне кажется, что это не самая лучшая идея!
+	AI_Output			(self, other,"Info_HighPriest4_17_01"); //РўР’РћРЇ РЎРњР•Р РўР¬ Р–Р”Р•Рў РўР•Р‘РЇ!
+	AI_Output			(self, other,"Info_HighPriest4_17_02"); //РўР« РЎР“РћР РРЁР¬ Р’ РћР“РќР•! 
+	AI_Output			(other, self,"Info_HighPriest4_15_03"); //РњРЅРµ РєР°Р¶РµС‚СЃСЏ, С‡С‚Рѕ СЌС‚Рѕ РЅРµ СЃР°РјР°СЏ Р»СѓС‡С€Р°СЏ РёРґРµСЏ!
 	
-	B_LogEntry			(CH4_EnterTemple,	"Передо мной Варраг-Руушк, один из бессмертных шаманов, служитель Спящего. Он не сможет остановить меня!");
+	B_LogEntry			(CH4_EnterTemple,	"РџРµСЂРµРґРѕ РјРЅРѕР№ Р’Р°СЂСЂР°Рі-Р СѓСѓС€Рє, РѕРґРёРЅ РёР· Р±РµСЃСЃРјРµСЂС‚РЅС‹С… С€Р°РјР°РЅРѕРІ, СЃР»СѓР¶РёС‚РµР»СЊ РЎРїСЏС‰РµРіРѕ. РћРЅ РЅРµ СЃРјРѕР¶РµС‚ РѕСЃС‚Р°РЅРѕРІРёС‚СЊ РјРµРЅСЏ!");
 	AI_StopProcessInfos	(self);
 
 	Npc_SetAttitude 	(self, ATT_HOSTILE);

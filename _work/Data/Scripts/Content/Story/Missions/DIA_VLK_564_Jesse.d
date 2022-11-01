@@ -33,7 +33,7 @@ INSTANCE DIA_Jesse_Hallo (C_INFO)
 	condition		= DIA_Jesse_Hallo_Condition;
 	information		= DIA_Jesse_Hallo_Info;
 	permanent		= 0;
-	description		= "Как дела?";
+	description		= "РљР°Рє РґРµР»Р°?";
 };
 
 FUNC INT DIA_Jesse_Hallo_Condition()
@@ -46,9 +46,9 @@ FUNC INT DIA_Jesse_Hallo_Condition()
 
 FUNC VOID DIA_Jesse_Hallo_Info()
 {
-	AI_Output (other, self,"DIA_Jesse_Hallo_15_00"); //Как дела?
-	AI_Output (self, other,"DIA_Jesse_Hallo_03_01"); //Ты здесь недавно? Запомни сразу: со стражниками лучше не ссорится.
-	AI_Output (self, other,"DIA_Jesse_Hallo_03_02"); //Если они потребуют от тебя плату за защиту, лучше им заплатить, иначе половина лагеря будет настроено против тебя.
+	AI_Output (other, self,"DIA_Jesse_Hallo_15_00"); //РљР°Рє РґРµР»Р°?
+	AI_Output (self, other,"DIA_Jesse_Hallo_03_01"); //РўС‹ Р·РґРµСЃСЊ РЅРµРґР°РІРЅРѕ? Р—Р°РїРѕРјРЅРё СЃСЂР°Р·Сѓ: СЃРѕ СЃС‚СЂР°Р¶РЅРёРєР°РјРё Р»СѓС‡С€Рµ РЅРµ СЃСЃРѕСЂРёС‚СЃСЏ.
+	AI_Output (self, other,"DIA_Jesse_Hallo_03_02"); //Р•СЃР»Рё РѕРЅРё РїРѕС‚СЂРµР±СѓСЋС‚ РѕС‚ С‚РµР±СЏ РїР»Р°С‚Сѓ Р·Р° Р·Р°С‰РёС‚Сѓ, Р»СѓС‡С€Рµ РёРј Р·Р°РїР»Р°С‚РёС‚СЊ, РёРЅР°С‡Рµ РїРѕР»РѕРІРёРЅР° Р»Р°РіРµСЂСЏ Р±СѓРґРµС‚ РЅР°СЃС‚СЂРѕРµРЅРѕ РїСЂРѕС‚РёРІ С‚РµР±СЏ.
 };
 
 // **************************************************
@@ -75,12 +75,12 @@ FUNC INT DIA_Jesse_Warn_Condition()
 
 FUNC VOID DIA_Jesse_Warn_Info()
 {
-	AI_Output (self, other,"DIA_Jesse_Warn_03_00"); //Эй, ты! Ты отказался платить Бладвину за защиту, да?
-	AI_Output (other, self,"DIA_Jesse_Warn_15_01"); //Ну и что?
-	AI_Output (self, other,"DIA_Jesse_Warn_03_02"); //Я подумал, что лучше предупредить тебя. Он нанял местных головорезов, чтобы отомстить тебе.
-	AI_Output (self, other,"DIA_Jesse_Warn_03_03"); //Ну, я слышал его разговор с Хереком. Быть может, он нанял и кого-нибудь еще.
-	AI_Output (other, self,"DIA_Jesse_Warn_15_04"); //Твое предупреждение о Хереке немного запоздало.
-	AI_Output (self, other,"DIA_Jesse_Warn_03_05"); //Возможно, он подговорил сразу нескольких человек. Будь осторожен.
+	AI_Output (self, other,"DIA_Jesse_Warn_03_00"); //Р­Р№, С‚С‹! РўС‹ РѕС‚РєР°Р·Р°Р»СЃСЏ РїР»Р°С‚РёС‚СЊ Р‘Р»Р°РґРІРёРЅСѓ Р·Р° Р·Р°С‰РёС‚Сѓ, РґР°?
+	AI_Output (other, self,"DIA_Jesse_Warn_15_01"); //РќСѓ Рё С‡С‚Рѕ?
+	AI_Output (self, other,"DIA_Jesse_Warn_03_02"); //РЇ РїРѕРґСѓРјР°Р», С‡С‚Рѕ Р»СѓС‡С€Рµ РїСЂРµРґСѓРїСЂРµРґРёС‚СЊ С‚РµР±СЏ. РћРЅ РЅР°РЅСЏР» РјРµСЃС‚РЅС‹С… РіРѕР»РѕРІРѕСЂРµР·РѕРІ, С‡С‚РѕР±С‹ РѕС‚РѕРјСЃС‚РёС‚СЊ С‚РµР±Рµ.
+	AI_Output (self, other,"DIA_Jesse_Warn_03_03"); //РќСѓ, СЏ СЃР»С‹С€Р°Р» РµРіРѕ СЂР°Р·РіРѕРІРѕСЂ СЃ РҐРµСЂРµРєРѕРј. Р‘С‹С‚СЊ РјРѕР¶РµС‚, РѕРЅ РЅР°РЅСЏР» Рё РєРѕРіРѕ-РЅРёР±СѓРґСЊ РµС‰Рµ.
+	AI_Output (other, self,"DIA_Jesse_Warn_15_04"); //РўРІРѕРµ РїСЂРµРґСѓРїСЂРµР¶РґРµРЅРёРµ Рѕ РҐРµСЂРµРєРµ РЅРµРјРЅРѕРіРѕ Р·Р°РїРѕР·РґР°Р»Рѕ.
+	AI_Output (self, other,"DIA_Jesse_Warn_03_05"); //Р’РѕР·РјРѕР¶РЅРѕ, РѕРЅ РїРѕРґРіРѕРІРѕСЂРёР» СЃСЂР°Р·Сѓ РЅРµСЃРєРѕР»СЊРєРёС… С‡РµР»РѕРІРµРє. Р‘СѓРґСЊ РѕСЃС‚РѕСЂРѕР¶РµРЅ.
 };
 
 // **************************************************
@@ -96,7 +96,7 @@ INSTANCE DIA_Jesse_Mission (C_INFO)
 	condition		= DIA_Jesse_Mission_Condition;
 	information		= DIA_Jesse_Mission_Info;
 	permanent		= 0;
-	description		= "Почему ты рассказал мне о Бладвине?";
+	description		= "РџРѕС‡РµРјСѓ С‚С‹ СЂР°СЃСЃРєР°Р·Р°Р» РјРЅРµ Рѕ Р‘Р»Р°РґРІРёРЅРµ?";
 };
 
 FUNC INT DIA_Jesse_Mission_Condition()
@@ -109,19 +109,19 @@ FUNC INT DIA_Jesse_Mission_Condition()
 
 FUNC VOID DIA_Jesse_Mission_Info()
 {
-	AI_Output (other, self,"DIA_Jesse_Mission_15_00"); //Почему ты рассказал мне о Бладвине?
-	AI_Output (self, other,"DIA_Jesse_Mission_03_01"); //Потому что просто так ничего не бывает. Мне показалось, что тебе не нужно будет это объяснять.
-	AI_Output (self, other,"DIA_Jesse_Mission_03_02"); //А так как я помог тебе, я дам тебе возможность помочь мне.
+	AI_Output (other, self,"DIA_Jesse_Mission_15_00"); //РџРѕС‡РµРјСѓ С‚С‹ СЂР°СЃСЃРєР°Р·Р°Р» РјРЅРµ Рѕ Р‘Р»Р°РґРІРёРЅРµ?
+	AI_Output (self, other,"DIA_Jesse_Mission_03_01"); //РџРѕС‚РѕРјСѓ С‡С‚Рѕ РїСЂРѕСЃС‚Рѕ С‚Р°Рє РЅРёС‡РµРіРѕ РЅРµ Р±С‹РІР°РµС‚. РњРЅРµ РїРѕРєР°Р·Р°Р»РѕСЃСЊ, С‡С‚Рѕ С‚РµР±Рµ РЅРµ РЅСѓР¶РЅРѕ Р±СѓРґРµС‚ СЌС‚Рѕ РѕР±СЉСЏСЃРЅСЏС‚СЊ.
+	AI_Output (self, other,"DIA_Jesse_Mission_03_02"); //Рђ С‚Р°Рє РєР°Рє СЏ РїРѕРјРѕРі С‚РµР±Рµ, СЏ РґР°Рј С‚РµР±Рµ РІРѕР·РјРѕР¶РЅРѕСЃС‚СЊ РїРѕРјРѕС‡СЊ РјРЅРµ.
 	
 	Info_ClearChoices	(DIA_Jesse_Mission );
-	Info_AddChoice		(DIA_Jesse_Mission,"Я тебе ничего не должен!",DIA_Jesse_Mission_ForgetIt);
-	Info_AddChoice		(DIA_Jesse_Mission,"И что же ты от меня хочешь?",DIA_Jesse_Mission_What);
+	Info_AddChoice		(DIA_Jesse_Mission,"РЇ С‚РµР±Рµ РЅРёС‡РµРіРѕ РЅРµ РґРѕР»Р¶РµРЅ!",DIA_Jesse_Mission_ForgetIt);
+	Info_AddChoice		(DIA_Jesse_Mission,"Р С‡С‚Рѕ Р¶Рµ С‚С‹ РѕС‚ РјРµРЅСЏ С…РѕС‡РµС€СЊ?",DIA_Jesse_Mission_What);
 };
 
 func void DIA_Jesse_Mission_ForgetIt()
 {
-	AI_Output (other, self,"DIA_Jesse_Mission_ForgetIt_15_00"); //Я тебе ничего не должен!
-	AI_Output (self, other,"DIA_Jesse_Mission_ForgetIt_03_01"); // Тогда забудь об этом и убирайся!
+	AI_Output (other, self,"DIA_Jesse_Mission_ForgetIt_15_00"); //РЇ С‚РµР±Рµ РЅРёС‡РµРіРѕ РЅРµ РґРѕР»Р¶РµРЅ!
+	AI_Output (self, other,"DIA_Jesse_Mission_ForgetIt_03_01"); // РўРѕРіРґР° Р·Р°Р±СѓРґСЊ РѕР± СЌС‚РѕРј Рё СѓР±РёСЂР°Р№СЃСЏ!
 	Npc_SetPermAttitude(self,ATT_ANGRY);
 	Info_ClearChoices	(DIA_Jesse_Mission );
 	AI_StopProcessInfos	(self);
@@ -129,19 +129,19 @@ func void DIA_Jesse_Mission_ForgetIt()
 
 func void DIA_Jesse_Mission_What()
 {
-	AI_Output (other, self,"DIA_Jesse_Mission_What_15_00"); //И что же ты от меня хочешь?
-	AI_Output (self, other,"DIA_Jesse_Mission_What_03_01"); //У меня совсем не осталось руды. Бладвин забрал у меня все до последнего кусочка.
-	AI_Output (self, other,"DIA_Jesse_Mission_What_03_02"); //И ему все равно не хватило. Я должен ему 10 кусков. Ты можешь отдать ему руду и сказать, что она от меня.
+	AI_Output (other, self,"DIA_Jesse_Mission_What_15_00"); //Р С‡С‚Рѕ Р¶Рµ С‚С‹ РѕС‚ РјРµРЅСЏ С…РѕС‡РµС€СЊ?
+	AI_Output (self, other,"DIA_Jesse_Mission_What_03_01"); //РЈ РјРµРЅСЏ СЃРѕРІСЃРµРј РЅРµ РѕСЃС‚Р°Р»РѕСЃСЊ СЂСѓРґС‹. Р‘Р»Р°РґРІРёРЅ Р·Р°Р±СЂР°Р» Сѓ РјРµРЅСЏ РІСЃРµ РґРѕ РїРѕСЃР»РµРґРЅРµРіРѕ РєСѓСЃРѕС‡РєР°.
+	AI_Output (self, other,"DIA_Jesse_Mission_What_03_02"); //Р РµРјСѓ РІСЃРµ СЂР°РІРЅРѕ РЅРµ С…РІР°С‚РёР»Рѕ. РЇ РґРѕР»Р¶РµРЅ РµРјСѓ 10 РєСѓСЃРєРѕРІ. РўС‹ РјРѕР¶РµС€СЊ РѕС‚РґР°С‚СЊ РµРјСѓ СЂСѓРґСѓ Рё СЃРєР°Р·Р°С‚СЊ, С‡С‚Рѕ РѕРЅР° РѕС‚ РјРµРЅСЏ.
 	Npc_SetTrueGuild(self,GIL_NONE); //KEIN Schutzgeld
 	
-	Info_AddChoice		(DIA_Jesse_Mission,"Платить за тебя? Я не стану этого делать!",DIA_Jesse_Mission_NO);
-	Info_AddChoice		(DIA_Jesse_Mission,"Я посмотрю, что тут можно сделать...",DIA_Jesse_Mission_YES);
+	Info_AddChoice		(DIA_Jesse_Mission,"РџР»Р°С‚РёС‚СЊ Р·Р° С‚РµР±СЏ? РЇ РЅРµ СЃС‚Р°РЅСѓ СЌС‚РѕРіРѕ РґРµР»Р°С‚СЊ!",DIA_Jesse_Mission_NO);
+	Info_AddChoice		(DIA_Jesse_Mission,"РЇ РїРѕСЃРјРѕС‚СЂСЋ, С‡С‚Рѕ С‚СѓС‚ РјРѕР¶РЅРѕ СЃРґРµР»Р°С‚СЊ...",DIA_Jesse_Mission_YES);
 };
 //-------------------------------
 func void DIA_Jesse_Mission_YES()
 {
-	AI_Output (other, self,"DIA_Jesse_Mission_YES_15_00"); //Я посмотрю, что тут можно сделать...
-	AI_Output (self, other,"DIA_Jesse_Mission_YES_03_01"); //Спасибо! Ты спасаешь меня! Скажешь, когда эта проблема будет решена, хорошо?
+	AI_Output (other, self,"DIA_Jesse_Mission_YES_15_00"); //РЇ РїРѕСЃРјРѕС‚СЂСЋ, С‡С‚Рѕ С‚СѓС‚ РјРѕР¶РЅРѕ СЃРґРµР»Р°С‚СЊ...
+	AI_Output (self, other,"DIA_Jesse_Mission_YES_03_01"); //РЎРїР°СЃРёР±Рѕ! РўС‹ СЃРїР°СЃР°РµС€СЊ РјРµРЅСЏ! РЎРєР°Р¶РµС€СЊ, РєРѕРіРґР° СЌС‚Р° РїСЂРѕР±Р»РµРјР° Р±СѓРґРµС‚ СЂРµС€РµРЅР°, С…РѕСЂРѕС€Рѕ?
 	Jesse_PayForMe = LOG_RUNNING;
 	
 	Info_ClearChoices	(DIA_Jesse_Mission );
@@ -149,8 +149,8 @@ func void DIA_Jesse_Mission_YES()
 
 func void DIA_Jesse_Mission_NO()
 {
-	AI_Output (other, self,"DIA_Jesse_Mission_NO_15_00"); //Платить за тебя? Я не стану этого делать!
-	AI_Output (self, other,"DIA_Jesse_Mission_NO_03_01"); //Как я так мог ошибиться в тебе. Больше на мою помощь не рассчитывай.
+	AI_Output (other, self,"DIA_Jesse_Mission_NO_15_00"); //РџР»Р°С‚РёС‚СЊ Р·Р° С‚РµР±СЏ? РЇ РЅРµ СЃС‚Р°РЅСѓ СЌС‚РѕРіРѕ РґРµР»Р°С‚СЊ!
+	AI_Output (self, other,"DIA_Jesse_Mission_NO_03_01"); //РљР°Рє СЏ С‚Р°Рє РјРѕРі РѕС€РёР±РёС‚СЊСЃСЏ РІ С‚РµР±Рµ. Р‘РѕР»СЊС€Рµ РЅР° РјРѕСЋ РїРѕРјРѕС‰СЊ РЅРµ СЂР°СЃСЃС‡РёС‚С‹РІР°Р№.
 	//MUSS SO - Mike
 	Npc_SetPermAttitude(self,ATT_ANGRY);
 	Info_ClearChoices	(DIA_Jesse_Mission );
@@ -168,7 +168,7 @@ INSTANCE DIA_Jesse_MisSuccess (C_INFO)
 	condition		= DIA_Jesse_MisSuccess_Condition;
 	information		= DIA_Jesse_MisSuccess_Info;
 	permanent		= 0;
-	description		= "Я отдал руду Бладвину!";
+	description		= "РЇ РѕС‚РґР°Р» СЂСѓРґСѓ Р‘Р»Р°РґРІРёРЅСѓ!";
 };
 
 FUNC INT DIA_Jesse_MisSuccess_Condition()
@@ -181,24 +181,24 @@ FUNC INT DIA_Jesse_MisSuccess_Condition()
 
 FUNC VOID DIA_Jesse_MisSuccess_Info()
 {
-	AI_Output (other, self,"DIA_Jesse_MisSuccess_15_00"); //Я отдал руду Бладвину!
-	AI_Output (self, other,"DIA_Jesse_MisSuccess_03_01"); //Да? Отлично! Теперь мы в расчете.
+	AI_Output (other, self,"DIA_Jesse_MisSuccess_15_00"); //РЇ РѕС‚РґР°Р» СЂСѓРґСѓ Р‘Р»Р°РґРІРёРЅСѓ!
+	AI_Output (self, other,"DIA_Jesse_MisSuccess_03_01"); //Р”Р°? РћС‚Р»РёС‡РЅРѕ! РўРµРїРµСЂСЊ РјС‹ РІ СЂР°СЃС‡РµС‚Рµ.
 	Npc_SetTrueGuild(self,GIL_VLK); //Schutzgeld GEZAHLT
 	
 	Info_ClearChoices	(DIA_Jesse_MisSuccess );
-	Info_AddChoice		(DIA_Jesse_MisSuccess,"Что? И ради этого я заплатил десять кусков?",DIA_Jesse_MisSuccess_Waaas);
-	Info_AddChoice		(DIA_Jesse_MisSuccess,"Да. Ты мне - я тебе. Как всегда.",DIA_Jesse_MisSuccess_Ok);
+	Info_AddChoice		(DIA_Jesse_MisSuccess,"Р§С‚Рѕ? Р СЂР°РґРё СЌС‚РѕРіРѕ СЏ Р·Р°РїР»Р°С‚РёР» РґРµСЃСЏС‚СЊ РєСѓСЃРєРѕРІ?",DIA_Jesse_MisSuccess_Waaas);
+	Info_AddChoice		(DIA_Jesse_MisSuccess,"Р”Р°. РўС‹ РјРЅРµ - СЏ С‚РµР±Рµ. РљР°Рє РІСЃРµРіРґР°.",DIA_Jesse_MisSuccess_Ok);
 };
 
 func void DIA_Jesse_MisSuccess_Waaas()
 {
-	AI_Output (other, self,"DIA_Jesse_MisSuccess_Waaas_15_00"); //Что? И ради этого я заплатил десять кусков?
-	AI_Output (self, other,"DIA_Jesse_MisSuccess_Waaas_03_01"); //Кажется, да.
+	AI_Output (other, self,"DIA_Jesse_MisSuccess_Waaas_15_00"); //Р§С‚Рѕ? Р СЂР°РґРё СЌС‚РѕРіРѕ СЏ Р·Р°РїР»Р°С‚РёР» РґРµСЃСЏС‚СЊ РєСѓСЃРєРѕРІ?
+	AI_Output (self, other,"DIA_Jesse_MisSuccess_Waaas_03_01"); //РљР°Р¶РµС‚СЃСЏ, РґР°.
 };
 
 func void DIA_Jesse_MisSuccess_Ok()
 {
-	AI_Output (other, self,"DIA_Jesse_MisSuccess_Ok_15_00"); //Да. Ты мне - я тебе. Как всегда.
+	AI_Output (other, self,"DIA_Jesse_MisSuccess_Ok_15_00"); //Р”Р°. РўС‹ РјРЅРµ - СЏ С‚РµР±Рµ. РљР°Рє РІСЃРµРіРґР°.
 };
 
 //a) <Herek tot>

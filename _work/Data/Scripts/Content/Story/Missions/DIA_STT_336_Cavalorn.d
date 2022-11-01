@@ -23,7 +23,7 @@ FUNC VOID DIA_Cavalorn_Exit_Info()
 };
 
 // **************************************************
-// 					Ich Jдger
+// 					Ich JРґger
 // **************************************************
 
 INSTANCE DIA_cavalorn_Hunter (C_INFO)
@@ -33,7 +33,7 @@ INSTANCE DIA_cavalorn_Hunter (C_INFO)
 	condition		= DIA_cavalorn_Hunter_Condition;
 	information		= DIA_cavalorn_Hunter_Info;
 	permanent		= 0;
-	description		= "Чем ты занимаешься?"; 
+	description		= "Р§РµРј С‚С‹ Р·Р°РЅРёРјР°РµС€СЊСЃСЏ?"; 
 };
 
 FUNC INT DIA_cavalorn_Hunter_Condition()
@@ -43,8 +43,8 @@ FUNC INT DIA_cavalorn_Hunter_Condition()
 
 FUNC VOID DIA_cavalorn_Hunter_Info()
 {
-	AI_Output (other, self,"DIA_cavalorn_Hunter_15_00"); //Чем ты занимаешься?
-	AI_Output (self, other,"DIA_cavalorn_Hunter_12_01"); //Я охотник. Здесь я охочусь на падальщиков.
+	AI_Output (other, self,"DIA_cavalorn_Hunter_15_00"); //Р§РµРј С‚С‹ Р·Р°РЅРёРјР°РµС€СЊСЃСЏ?
+	AI_Output (self, other,"DIA_cavalorn_Hunter_12_01"); //РЇ РѕС…РѕС‚РЅРёРє. Р—РґРµСЃСЊ СЏ РѕС…РѕС‡СѓСЃСЊ РЅР° РїР°РґР°Р»СЊС‰РёРєРѕРІ.
 	
 };
 
@@ -59,7 +59,7 @@ INSTANCE DIA_cavalorn_Lehrer (C_INFO)
 	condition		= DIA_cavalorn_Lehrer_Condition;
 	information		= DIA_cavalorn_Lehrer_Info;
 	permanent		= 1;
-	description		= "Ты можешь научить меня чему-нибудь?"; 
+	description		= "РўС‹ РјРѕР¶РµС€СЊ РЅР°СѓС‡РёС‚СЊ РјРµРЅСЏ С‡РµРјСѓ-РЅРёР±СѓРґСЊ?"; 
 };
 
 FUNC INT DIA_cavalorn_Lehrer_Condition()
@@ -75,11 +75,11 @@ FUNC VOID DIA_cavalorn_Lehrer_Info()
 	if (log_cavalorntrain == FALSE)
 	{
 		Log_CreateTopic (GE_TeacherOW,LOG_NOTE);
-		B_LogEntry		(GE_TeacherOW,"Кавалорн - охотник. Я могу научиться у него подкрадываться и стрелять из лука. Он живет в доме между Старым и Новым лагерями.");
+		B_LogEntry		(GE_TeacherOW,"РљР°РІР°Р»РѕСЂРЅ - РѕС…РѕС‚РЅРёРє. РЇ РјРѕРіСѓ РЅР°СѓС‡РёС‚СЊСЃСЏ Сѓ РЅРµРіРѕ РїРѕРґРєСЂР°РґС‹РІР°С‚СЊСЃСЏ Рё СЃС‚СЂРµР»СЏС‚СЊ РёР· Р»СѓРєР°. РћРЅ Р¶РёРІРµС‚ РІ РґРѕРјРµ РјРµР¶РґСѓ РЎС‚Р°СЂС‹Рј Рё РќРѕРІС‹Рј Р»Р°РіРµСЂСЏРјРё.");
 		log_cavalorntrain = TRUE;
 	};
-	AI_Output (other, self,"DIA_cavalorn_Lehrer_15_00"); //Ты можешь научить меня чему-нибудь?
-	AI_Output (self, other,"DIA_cavalorn_Lehrer_12_01"); //А чему бы ты хотел научиться?
+	AI_Output (other, self,"DIA_cavalorn_Lehrer_15_00"); //РўС‹ РјРѕР¶РµС€СЊ РЅР°СѓС‡РёС‚СЊ РјРµРЅСЏ С‡РµРјСѓ-РЅРёР±СѓРґСЊ?
+	AI_Output (self, other,"DIA_cavalorn_Lehrer_12_01"); //Рђ С‡РµРјСѓ Р±С‹ С‚С‹ С…РѕС‚РµР» РЅР°СѓС‡РёС‚СЊСЃСЏ?
 	
 	Info_ClearChoices	(DIA_cavalorn_Lehrer );
 	Info_AddChoice		(DIA_cavalorn_Lehrer,DIALOG_BACK															,DIA_cavalorn_Lehrer_BACK);
@@ -109,11 +109,11 @@ func void DIA_Cavalorn_Lehrer_Bow()
 {
 	if (B_GiveSkill(other, NPC_TALENT_BOW, 1, LPCOST_TALENT_BOW_1))
 	{		
-		AI_Output (other, self,"DIA_cavalorn_Lehrer_Bow_15_00"); //Научи меня стрелять из лука.
-		AI_Output (self, other,"DIA_cavalorn_Lehrer_Bow_12_01"); //Начинающему воину нетрудно совершенствовать свое мастерство. Главное здесь - положение тела.
-		AI_Output (self, other,"DIA_cavalorn_Lehrer_Bow_12_02"); //Ноги должны быть широко расставлены, руки на одной линии, вдох и - выстрел!
-		AI_Output (self, other,"DIA_cavalorn_Lehrer_Bow_12_03"); //Иногда, чтобы убить жертву, достаточно направить стрелу в уязвимое место на теле. У новичка не так уж много шансов найти эти места. 
-		AI_Output (self, other,"DIA_cavalorn_Lehrer_Bow_12_04"); //Но если ты будешь следовать моим советам, твои выстрелы будут более точными.
+		AI_Output (other, self,"DIA_cavalorn_Lehrer_Bow_15_00"); //РќР°СѓС‡Рё РјРµРЅСЏ СЃС‚СЂРµР»СЏС‚СЊ РёР· Р»СѓРєР°.
+		AI_Output (self, other,"DIA_cavalorn_Lehrer_Bow_12_01"); //РќР°С‡РёРЅР°СЋС‰РµРјСѓ РІРѕРёРЅСѓ РЅРµС‚СЂСѓРґРЅРѕ СЃРѕРІРµСЂС€РµРЅСЃС‚РІРѕРІР°С‚СЊ СЃРІРѕРµ РјР°СЃС‚РµСЂСЃС‚РІРѕ. Р“Р»Р°РІРЅРѕРµ Р·РґРµСЃСЊ - РїРѕР»РѕР¶РµРЅРёРµ С‚РµР»Р°.
+		AI_Output (self, other,"DIA_cavalorn_Lehrer_Bow_12_02"); //РќРѕРіРё РґРѕР»Р¶РЅС‹ Р±С‹С‚СЊ С€РёСЂРѕРєРѕ СЂР°СЃСЃС‚Р°РІР»РµРЅС‹, СЂСѓРєРё РЅР° РѕРґРЅРѕР№ Р»РёРЅРёРё, РІРґРѕС… Рё - РІС‹СЃС‚СЂРµР»!
+		AI_Output (self, other,"DIA_cavalorn_Lehrer_Bow_12_03"); //РРЅРѕРіРґР°, С‡С‚РѕР±С‹ СѓР±РёС‚СЊ Р¶РµСЂС‚РІСѓ, РґРѕСЃС‚Р°С‚РѕС‡РЅРѕ РЅР°РїСЂР°РІРёС‚СЊ СЃС‚СЂРµР»Сѓ РІ СѓСЏР·РІРёРјРѕРµ РјРµСЃС‚Рѕ РЅР° С‚РµР»Рµ. РЈ РЅРѕРІРёС‡РєР° РЅРµ С‚Р°Рє СѓР¶ РјРЅРѕРіРѕ С€Р°РЅСЃРѕРІ РЅР°Р№С‚Рё СЌС‚Рё РјРµСЃС‚Р°. 
+		AI_Output (self, other,"DIA_cavalorn_Lehrer_Bow_12_04"); //РќРѕ РµСЃР»Рё С‚С‹ Р±СѓРґРµС€СЊ СЃР»РµРґРѕРІР°С‚СЊ РјРѕРёРј СЃРѕРІРµС‚Р°Рј, С‚РІРѕРё РІС‹СЃС‚СЂРµР»С‹ Р±СѓРґСѓС‚ Р±РѕР»РµРµ С‚РѕС‡РЅС‹РјРё.
 	};
 };
 
@@ -121,21 +121,21 @@ func void DIA_Cavalorn_Lehrer_Schleichen()
 {
 	if (B_GiveSkill(other, NPC_TALENT_SNEAK, 1, LPCOST_TALENT_SNEAK))
 	{		
-		AI_Output (other, self,"DIA_cavalorn_Lehrer_Schleichen_15_00"); //Я хочу научиться подкрадываться.
-		AI_Output (self, other,"DIA_cavalorn_Lehrer_Schleichen_12_01"); //Хороший выбор. Это умение пригодится тому, кто хочет незаметно пробраться в чужой дом и застать хозяина врасплох.
-		AI_Output (self, other,"DIA_cavalorn_Lehrer_Schleichen_12_02"); //Если ты немного присядешь, тебе будет легче контролировать тело и видеть, куда ступают твои ноги.
-		AI_Output (self, other,"DIA_cavalorn_Lehrer_Schleichen_12_03"); //Нужно тебя предупредить: когда ты крадешься, это привлекает много внимания. Постарайся, чтобы тебя не заметили.
-		AI_Output (self, other,"DIA_cavalorn_Lehrer_Schleichen_12_04"); //Запомни это и никогда не попадайся.
+		AI_Output (other, self,"DIA_cavalorn_Lehrer_Schleichen_15_00"); //РЇ С…РѕС‡Сѓ РЅР°СѓС‡РёС‚СЊСЃСЏ РїРѕРґРєСЂР°РґС‹РІР°С‚СЊСЃСЏ.
+		AI_Output (self, other,"DIA_cavalorn_Lehrer_Schleichen_12_01"); //РҐРѕСЂРѕС€РёР№ РІС‹Р±РѕСЂ. Р­С‚Рѕ СѓРјРµРЅРёРµ РїСЂРёРіРѕРґРёС‚СЃСЏ С‚РѕРјСѓ, РєС‚Рѕ С…РѕС‡РµС‚ РЅРµР·Р°РјРµС‚РЅРѕ РїСЂРѕР±СЂР°С‚СЊСЃСЏ РІ С‡СѓР¶РѕР№ РґРѕРј Рё Р·Р°СЃС‚Р°С‚СЊ С…РѕР·СЏРёРЅР° РІСЂР°СЃРїР»РѕС….
+		AI_Output (self, other,"DIA_cavalorn_Lehrer_Schleichen_12_02"); //Р•СЃР»Рё С‚С‹ РЅРµРјРЅРѕРіРѕ РїСЂРёСЃСЏРґРµС€СЊ, С‚РµР±Рµ Р±СѓРґРµС‚ Р»РµРіС‡Рµ РєРѕРЅС‚СЂРѕР»РёСЂРѕРІР°С‚СЊ С‚РµР»Рѕ Рё РІРёРґРµС‚СЊ, РєСѓРґР° СЃС‚СѓРїР°СЋС‚ С‚РІРѕРё РЅРѕРіРё.
+		AI_Output (self, other,"DIA_cavalorn_Lehrer_Schleichen_12_03"); //РќСѓР¶РЅРѕ С‚РµР±СЏ РїСЂРµРґСѓРїСЂРµРґРёС‚СЊ: РєРѕРіРґР° С‚С‹ РєСЂР°РґРµС€СЊСЃСЏ, СЌС‚Рѕ РїСЂРёРІР»РµРєР°РµС‚ РјРЅРѕРіРѕ РІРЅРёРјР°РЅРёСЏ. РџРѕСЃС‚Р°СЂР°Р№СЃСЏ, С‡С‚РѕР±С‹ С‚РµР±СЏ РЅРµ Р·Р°РјРµС‚РёР»Рё.
+		AI_Output (self, other,"DIA_cavalorn_Lehrer_Schleichen_12_04"); //Р—Р°РїРѕРјРЅРё СЌС‚Рѕ Рё РЅРёРєРѕРіРґР° РЅРµ РїРѕРїР°РґР°Р№СЃСЏ.
 	};
 };
 func void DIA_Cavalorn_Lehrer_Bow_2()
 {
 	if (B_GiveSkill(other, NPC_TALENT_BOW, 2, LPCOST_TALENT_BOW_2))
 	{		
-			AI_Output (self, other,"DIA_Cavalorn_Lehrer_Bow_2_Info_12_02"); //Ты уже стал хорошим охотником. Теперь ты можешь узнать самое главное.
-			AI_Output (self, other,"DIA_Cavalorn_Lehrer_Bow_2_Info_12_03"); //Ты должен научиться двигаться бессознательно, не раздумывая над тем, что делать в следующий момент.
-			AI_Output (self, other,"DIA_Cavalorn_Lehrer_Bow_2_Info_12_04"); //Запомни закон стрельбы: рассчитываешь расстояние до цели, скорость полета, силу натяжения тетивы - и стрела летит в цель. Будь всегда внимателен.
-			AI_Output (self, other,"DIA_Cavalorn_Lehrer_Bow_2_Info_12_05"); //Технику ты очень хорошо освоил. Теперь настало время применить свои знания на практике.
+			AI_Output (self, other,"DIA_Cavalorn_Lehrer_Bow_2_Info_12_02"); //РўС‹ СѓР¶Рµ СЃС‚Р°Р» С…РѕСЂРѕС€РёРј РѕС…РѕС‚РЅРёРєРѕРј. РўРµРїРµСЂСЊ С‚С‹ РјРѕР¶РµС€СЊ СѓР·РЅР°С‚СЊ СЃР°РјРѕРµ РіР»Р°РІРЅРѕРµ.
+			AI_Output (self, other,"DIA_Cavalorn_Lehrer_Bow_2_Info_12_03"); //РўС‹ РґРѕР»Р¶РµРЅ РЅР°СѓС‡РёС‚СЊСЃСЏ РґРІРёРіР°С‚СЊСЃСЏ Р±РµСЃСЃРѕР·РЅР°С‚РµР»СЊРЅРѕ, РЅРµ СЂР°Р·РґСѓРјС‹РІР°СЏ РЅР°Рґ С‚РµРј, С‡С‚Рѕ РґРµР»Р°С‚СЊ РІ СЃР»РµРґСѓСЋС‰РёР№ РјРѕРјРµРЅС‚.
+			AI_Output (self, other,"DIA_Cavalorn_Lehrer_Bow_2_Info_12_04"); //Р—Р°РїРѕРјРЅРё Р·Р°РєРѕРЅ СЃС‚СЂРµР»СЊР±С‹: СЂР°СЃСЃС‡РёС‚С‹РІР°РµС€СЊ СЂР°СЃСЃС‚РѕСЏРЅРёРµ РґРѕ С†РµР»Рё, СЃРєРѕСЂРѕСЃС‚СЊ РїРѕР»РµС‚Р°, СЃРёР»Сѓ РЅР°С‚СЏР¶РµРЅРёСЏ С‚РµС‚РёРІС‹ - Рё СЃС‚СЂРµР»Р° Р»РµС‚РёС‚ РІ С†РµР»СЊ. Р‘СѓРґСЊ РІСЃРµРіРґР° РІРЅРёРјР°С‚РµР»РµРЅ.
+			AI_Output (self, other,"DIA_Cavalorn_Lehrer_Bow_2_Info_12_05"); //РўРµС…РЅРёРєСѓ С‚С‹ РѕС‡РµРЅСЊ С…РѕСЂРѕС€Рѕ РѕСЃРІРѕРёР». РўРµРїРµСЂСЊ РЅР°СЃС‚Р°Р»Рѕ РІСЂРµРјСЏ РїСЂРёРјРµРЅРёС‚СЊ СЃРІРѕРё Р·РЅР°РЅРёСЏ РЅР° РїСЂР°РєС‚РёРєРµ.
 	};
 };
 /*------------------------------------------------------------------------
@@ -149,7 +149,7 @@ instance  STT_336_cavalorn_SELLBOW (C_INFO)
 	information		= STT_336_cavalorn_SELLBOW_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "У кого я могу купить хороший лук?"; 
+	description		= "РЈ РєРѕРіРѕ СЏ РјРѕРіСѓ РєСѓРїРёС‚СЊ С…РѕСЂРѕС€РёР№ Р»СѓРє?"; 
 };
 
 FUNC int  STT_336_cavalorn_SELLBOW_Condition()
@@ -162,10 +162,10 @@ FUNC int  STT_336_cavalorn_SELLBOW_Condition()
 };
 FUNC void  STT_336_cavalorn_SELLBOW_Info()
 {
-	AI_Output (other, self,"STT_336_cavalorn_SELLBOW_Info_15_01"); //У кого я могу купить хороший лук?
-	AI_Output (self, other,"STT_336_cavalorn_SELLBOW_Info_12_02"); //У меня. Лучших луков ты в Старом лагере ни у кого не найдешь.
+	AI_Output (other, self,"STT_336_cavalorn_SELLBOW_Info_15_01"); //РЈ РєРѕРіРѕ СЏ РјРѕРіСѓ РєСѓРїРёС‚СЊ С…РѕСЂРѕС€РёР№ Р»СѓРє?
+	AI_Output (self, other,"STT_336_cavalorn_SELLBOW_Info_12_02"); //РЈ РјРµРЅСЏ. Р›СѓС‡С€РёС… Р»СѓРєРѕРІ С‚С‹ РІ РЎС‚Р°СЂРѕРј Р»Р°РіРµСЂРµ РЅРё Сѓ РєРѕРіРѕ РЅРµ РЅР°Р№РґРµС€СЊ.
 	Log_CreateTopic (GE_TraderOC,LOG_NOTE);
-	B_LogEntry (GE_TraderOC,"Кавалорн продает луки и стрелы. Он живет в неглубоком ущелье между Старым и Новым лагерями.");
+	B_LogEntry (GE_TraderOC,"РљР°РІР°Р»РѕСЂРЅ РїСЂРѕРґР°РµС‚ Р»СѓРєРё Рё СЃС‚СЂРµР»С‹. РћРЅ Р¶РёРІРµС‚ РІ РЅРµРіР»СѓР±РѕРєРѕРј СѓС‰РµР»СЊРµ РјРµР¶РґСѓ РЎС‚Р°СЂС‹Рј Рё РќРѕРІС‹Рј Р»Р°РіРµСЂСЏРјРё.");
 };  
 
 /*------------------------------------------------------------------------
@@ -179,7 +179,7 @@ instance  STT_336_cavalorn_TRADE (C_INFO)
 	information		= STT_336_cavalorn_TRADE_Info;
 	important		= 0;
 	permanent		= 1;
-	description		= "Покажи мне свои товары."; 
+	description		= "РџРѕРєР°Р¶Рё РјРЅРµ СЃРІРѕРё С‚РѕРІР°СЂС‹."; 
 	trade 			= 1;
 };
 
@@ -193,7 +193,7 @@ FUNC int  STT_336_cavalorn_TRADE_Condition()
 };
 FUNC void  STT_336_cavalorn_TRADE_Info()
 {
-	AI_Output (other, self,"STT_336_cavalorn_TRADE_Info_15_01"); //Покажи мне твои товары.
+	AI_Output (other, self,"STT_336_cavalorn_TRADE_Info_15_01"); //РџРѕРєР°Р¶Рё РјРЅРµ С‚РІРѕРё С‚РѕРІР°СЂС‹.
 	
 };  
 

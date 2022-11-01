@@ -2,7 +2,7 @@ instance KDF_405_Torrez (Npc_Default)
 {
 	//-------- primary data --------
 	
-	name 		=	"Òîððåç";
+	name 		=	"Ð¢Ð¾Ñ€Ñ€ÐµÐ·";
 	npctype		=	npctype_main;
 	guild 		=	GIL_KDF;      
 	level 		=	26;
@@ -39,7 +39,7 @@ instance KDF_405_Torrez (Npc_Default)
 	EquipItem (self, ItArRuneFireball);
 	CreateInvItem	(self,ItMi_Stuff_OldCoin_02);	
 	
-	//-------- inventory --------        // HÄNDLER FÜR KDF                             
+	//-------- inventory --------        // HÐ”NDLER FÐ¬R KDF                             
 	B_Give_TorrezChapter1Runes ();
 
 	//-------------Daily Routine-------------

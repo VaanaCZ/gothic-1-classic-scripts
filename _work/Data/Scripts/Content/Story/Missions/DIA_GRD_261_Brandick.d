@@ -33,7 +33,7 @@ instance  GRD_261_Brandick_ALEPH (C_INFO)
 	information		= GRD_261_Brandick_ALEPH_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "(выдать Алефа)"; 
+	description		= "(РІС‹РґР°С‚СЊ РђР»РµС„Р°)"; 
 };
 
 FUNC int  GRD_261_Brandick_ALEPH_Condition()
@@ -46,9 +46,9 @@ FUNC int  GRD_261_Brandick_ALEPH_Condition()
 };
 FUNC void  GRD_261_Brandick_ALEPH_Info()
 {
-	AI_Output			(other, self,"GRD_261_Brandick_ALEPH_Info_15_01"); //Слушай, этот Алеф бездельничает, когда ты за ним не наблюдаешь.
-	AI_Output			(self, other,"GRD_261_Brandick_ALEPH_Info_06_02"); //Правда?
-	AI_Output			(self, other,"GRD_261_Brandick_ALEPH_Info_06_03"); //Ты знаешь, кого я не люблю больше, чем лоботрясов? Предателей. Так что убирайся отсюда! 
+	AI_Output			(other, self,"GRD_261_Brandick_ALEPH_Info_15_01"); //РЎР»СѓС€Р°Р№, СЌС‚РѕС‚ РђР»РµС„ Р±РµР·РґРµР»СЊРЅРёС‡Р°РµС‚, РєРѕРіРґР° С‚С‹ Р·Р° РЅРёРј РЅРµ РЅР°Р±Р»СЋРґР°РµС€СЊ.
+	AI_Output			(self, other,"GRD_261_Brandick_ALEPH_Info_06_02"); //РџСЂР°РІРґР°?
+	AI_Output			(self, other,"GRD_261_Brandick_ALEPH_Info_06_03"); //РўС‹ Р·РЅР°РµС€СЊ, РєРѕРіРѕ СЏ РЅРµ Р»СЋР±Р»СЋ Р±РѕР»СЊС€Рµ, С‡РµРј Р»РѕР±РѕС‚СЂСЏСЃРѕРІ? РџСЂРµРґР°С‚РµР»РµР№. РўР°Рє С‡С‚Рѕ СѓР±РёСЂР°Р№СЃСЏ РѕС‚СЃСЋРґР°! 
 	
 	AI_StopProcessInfos	(self);
 };  

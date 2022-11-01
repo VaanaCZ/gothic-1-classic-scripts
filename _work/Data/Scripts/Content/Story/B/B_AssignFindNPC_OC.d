@@ -8,7 +8,7 @@ INSTANCE Info_FindNPC_OC(C_INFO)
 	condition	= Info_FindNPC_OC_Condition;
 	information	= Info_FindNPC_OC_Info;
 	permanent	= 1;
-	description = "Где находится...";
+	description = "Р“РґРµ РЅР°С…РѕРґРёС‚СЃСЏ...";
 };                       
 
 FUNC INT Info_FindNPC_OC_Condition()
@@ -24,13 +24,13 @@ FUNC VOID Info_FindNPC_OC_Info()
 	VAR C_NPC Diego;		Diego	= Hlp_GetNpc(PC_THIEF);
 	if (Diego.aivar[AIV_FINDABLE] == TRUE)
 	{
-		Info_AddChoice(Info_FindNPC_OC, "...Диего?", Info_FindNPC_OC_Diego);
+		Info_AddChoice(Info_FindNPC_OC, "...Р”РёРµРіРѕ?", Info_FindNPC_OC_Diego);
 	};
 	
 	VAR C_NPC Thorus;		Thorus 	= Hlp_GetNpc(GRD_200_Thorus);
 	if (Thorus.aivar[AIV_FINDABLE] == TRUE)
 	{
-		Info_AddChoice(Info_FindNPC_OC, "...Торус?", Info_FindNPC_OC_Thorus);
+		Info_AddChoice(Info_FindNPC_OC, "...РўРѕСЂСѓСЃ?", Info_FindNPC_OC_Thorus);
 	};
 };
 
@@ -45,7 +45,7 @@ FUNC VOID Info_FindNPC_OC_BACK()
 
 FUNC VOID Info_FindNPC_OC_Diego()
 {
-	AI_Output(other,self,"Info_FindNPC_Diego_15_00"); //Где я могу найти Диего?
+	AI_Output(other,self,"Info_FindNPC_Diego_15_00"); //Р“РґРµ СЏ РјРѕРіСѓ РЅР°Р№С‚Рё Р”РёРµРіРѕ?
 
 	VAR C_NPC Diego;		Diego	= Hlp_GetNpc(PC_THIEF);
 	
@@ -59,45 +59,45 @@ FUNC VOID Info_FindNPC_OC_Diego()
 		{
 			if (self.voice == 1)
 			{
-				AI_Output(self,other,"Info_FindNPC_OC_Diego_01_01"); //Ты сможешь найти его у входа в замок. Он любит разговаривать с Торусом.
+				AI_Output(self,other,"Info_FindNPC_OC_Diego_01_01"); //РўС‹ СЃРјРѕР¶РµС€СЊ РЅР°Р№С‚Рё РµРіРѕ Сѓ РІС…РѕРґР° РІ Р·Р°РјРѕРє. РћРЅ Р»СЋР±РёС‚ СЂР°Р·РіРѕРІР°СЂРёРІР°С‚СЊ СЃ РўРѕСЂСѓСЃРѕРј.
 			}
 			else if (self.voice == 2)
 			{
-				AI_Output(self,other,"Info_FindNPC_OC_Diego_02_01"); //Обычно он проводит день у входа в замок вместе с Торусом.
+				AI_Output(self,other,"Info_FindNPC_OC_Diego_02_01"); //РћР±С‹С‡РЅРѕ РѕРЅ РїСЂРѕРІРѕРґРёС‚ РґРµРЅСЊ Сѓ РІС…РѕРґР° РІ Р·Р°РјРѕРє РІРјРµСЃС‚Рµ СЃ РўРѕСЂСѓСЃРѕРј.
 			}
 			else if (self.voice == 3)
 			{
-				AI_Output(self,other,"Info_FindNPC_OC_Diego_03_01"); //Он стоит у ворот в замок. Он любит разговаривать с Торусом.
+				AI_Output(self,other,"Info_FindNPC_OC_Diego_03_01"); //РћРЅ СЃС‚РѕРёС‚ Сѓ РІРѕСЂРѕС‚ РІ Р·Р°РјРѕРє. РћРЅ Р»СЋР±РёС‚ СЂР°Р·РіРѕРІР°СЂРёРІР°С‚СЊ СЃ РўРѕСЂСѓСЃРѕРј.
 			}
 			else if (self.voice == 4)
 			{
-				AI_Output(self,other,"Info_FindNPC_OC_Diego_04_01"); //Ты сможешь найти его у входа в замок. Он любит разговаривать с Торусом.
+				AI_Output(self,other,"Info_FindNPC_OC_Diego_04_01"); //РўС‹ СЃРјРѕР¶РµС€СЊ РЅР°Р№С‚Рё РµРіРѕ Сѓ РІС…РѕРґР° РІ Р·Р°РјРѕРє. РћРЅ Р»СЋР±РёС‚ СЂР°Р·РіРѕРІР°СЂРёРІР°С‚СЊ СЃ РўРѕСЂСѓСЃРѕРј.
 			};
 		}
 		else if (self.guild == GIL_GRD) 
 		{
 			if (self.voice == 6)
 			{
-				AI_Output(self,other,"Info_FindNPC_OC_Diego_06_01"); //Ты сможешь найти его у входа в замок. Он любит разговаривать с Торусом.
+				AI_Output(self,other,"Info_FindNPC_OC_Diego_06_01"); //РўС‹ СЃРјРѕР¶РµС€СЊ РЅР°Р№С‚Рё РµРіРѕ Сѓ РІС…РѕРґР° РІ Р·Р°РјРѕРє. РћРЅ Р»СЋР±РёС‚ СЂР°Р·РіРѕРІР°СЂРёРІР°С‚СЊ СЃ РўРѕСЂСѓСЃРѕРј.
 			}
 			else if (self.voice == 7)
 			{
-				AI_Output(self,other,"Info_FindNPC_OC_Diego_07_01"); //Он стоит у ворот в замок. Он любит разговаривать с Торусом.
+				AI_Output(self,other,"Info_FindNPC_OC_Diego_07_01"); //РћРЅ СЃС‚РѕРёС‚ Сѓ РІРѕСЂРѕС‚ РІ Р·Р°РјРѕРє. РћРЅ Р»СЋР±РёС‚ СЂР°Р·РіРѕРІР°СЂРёРІР°С‚СЊ СЃ РўРѕСЂСѓСЃРѕРј.
 			}
 			else if (self.voice == 13)
 			{
-				AI_Output(self,other,"Info_FindNPC_OC_Diego_13_01"); //Ты сможешь найти его у входа в замок. Он любит разговаривать с Торусом.
+				AI_Output(self,other,"Info_FindNPC_OC_Diego_13_01"); //РўС‹ СЃРјРѕР¶РµС€СЊ РЅР°Р№С‚Рё РµРіРѕ Сѓ РІС…РѕРґР° РІ Р·Р°РјРѕРє. РћРЅ Р»СЋР±РёС‚ СЂР°Р·РіРѕРІР°СЂРёРІР°С‚СЊ СЃ РўРѕСЂСѓСЃРѕРј.
 			};
 		}
 		else if (self.guild == GIL_STT) 
 		{
 			if (self.voice == 10)
 			{
-				AI_Output(self,other,"Info_FindNPC_OC_Diego_10_01"); //Ты сможешь найти его у входа в замок. Он любит разговаривать с Торусом.
+				AI_Output(self,other,"Info_FindNPC_OC_Diego_10_01"); //РўС‹ СЃРјРѕР¶РµС€СЊ РЅР°Р№С‚Рё РµРіРѕ Сѓ РІС…РѕРґР° РІ Р·Р°РјРѕРє. РћРЅ Р»СЋР±РёС‚ СЂР°Р·РіРѕРІР°СЂРёРІР°С‚СЊ СЃ РўРѕСЂСѓСЃРѕРј.
 			}
 			else if (self.voice == 12)
 			{
-				AI_Output(self,other,"Info_FindNPC_OC_Diego_12_01"); //Ты сможешь найти его у входа в замок. Он любит разговаривать с Торусом.
+				AI_Output(self,other,"Info_FindNPC_OC_Diego_12_01"); //РўС‹ СЃРјРѕР¶РµС€СЊ РЅР°Р№С‚Рё РµРіРѕ Сѓ РІС…РѕРґР° РІ Р·Р°РјРѕРє. РћРЅ Р»СЋР±РёС‚ СЂР°Р·РіРѕРІР°СЂРёРІР°С‚СЊ СЃ РўРѕСЂСѓСЃРѕРј.
 			};
 		};
 	};
@@ -111,7 +111,7 @@ FUNC VOID Info_FindNPC_OC_Diego()
 
 FUNC VOID Info_FindNPC_OC_Thorus()
 {
-	AI_Output(other,self,"Info_FindNPC_OC_Thorus_15_00"); //Где я могу найти Торуса?
+	AI_Output(other,self,"Info_FindNPC_OC_Thorus_15_00"); //Р“РґРµ СЏ РјРѕРіСѓ РЅР°Р№С‚Рё РўРѕСЂСѓСЃР°?
 	
 	VAR C_NPC Thorus;		Thorus 	= Hlp_GetNpc(GRD_200_Thorus);
 	
@@ -125,45 +125,45 @@ FUNC VOID Info_FindNPC_OC_Thorus()
 		{
 			if (self.voice == 1)
 			{
-				AI_Output(self,other,"Info_FindNPC_OC_Thorus_01_01"); //Днем он всегда стоит у ворот замка.
+				AI_Output(self,other,"Info_FindNPC_OC_Thorus_01_01"); //Р”РЅРµРј РѕРЅ РІСЃРµРіРґР° СЃС‚РѕРёС‚ Сѓ РІРѕСЂРѕС‚ Р·Р°РјРєР°.
 			}
 			else if (self.voice == 2)
 			{
-				AI_Output(self,other,"Info_FindNPC_OC_Thorus_02_01"); //Обычно он стоит у входа в замок.
+				AI_Output(self,other,"Info_FindNPC_OC_Thorus_02_01"); //РћР±С‹С‡РЅРѕ РѕРЅ СЃС‚РѕРёС‚ Сѓ РІС…РѕРґР° РІ Р·Р°РјРѕРє.
 			}
 			else if (self.voice == 3)
 			{
-				AI_Output(self,other,"Info_FindNPC_OC_Thorus_03_01"); //Обычно его можно найти у ворот в замок.
+				AI_Output(self,other,"Info_FindNPC_OC_Thorus_03_01"); //РћР±С‹С‡РЅРѕ РµРіРѕ РјРѕР¶РЅРѕ РЅР°Р№С‚Рё Сѓ РІРѕСЂРѕС‚ РІ Р·Р°РјРѕРє.
 			}
 			else if (self.voice == 4)
 			{
-				AI_Output(self,other,"Info_FindNPC_OC_Thorus_04_01"); //Днем он всегда стоит у ворот замка.
+				AI_Output(self,other,"Info_FindNPC_OC_Thorus_04_01"); //Р”РЅРµРј РѕРЅ РІСЃРµРіРґР° СЃС‚РѕРёС‚ Сѓ РІРѕСЂРѕС‚ Р·Р°РјРєР°.
 			};
 		}
 		else if (self.guild == GIL_GRD) 
 		{
 			if (self.voice == 6)
 			{
-				AI_Output(self,other,"Info_FindNPC_OC_Thorus_06_01"); //Днем он всегда стоит у ворот замка.
+				AI_Output(self,other,"Info_FindNPC_OC_Thorus_06_01"); //Р”РЅРµРј РѕРЅ РІСЃРµРіРґР° СЃС‚РѕРёС‚ Сѓ РІРѕСЂРѕС‚ Р·Р°РјРєР°.
 			}
 			else if (self.voice == 7)
 			{
-				AI_Output(self,other,"Info_FindNPC_OC_Thorus_07_01"); //Обычно его можно найти у ворот в замок.
+				AI_Output(self,other,"Info_FindNPC_OC_Thorus_07_01"); //РћР±С‹С‡РЅРѕ РµРіРѕ РјРѕР¶РЅРѕ РЅР°Р№С‚Рё Сѓ РІРѕСЂРѕС‚ РІ Р·Р°РјРѕРє.
 			}
 			else if (self.voice == 13)
 			{
-				AI_Output(self,other,"Info_FindNPC_OC_Thorus_13_01"); //Днем он всегда стоит у ворот замка.
+				AI_Output(self,other,"Info_FindNPC_OC_Thorus_13_01"); //Р”РЅРµРј РѕРЅ РІСЃРµРіРґР° СЃС‚РѕРёС‚ Сѓ РІРѕСЂРѕС‚ Р·Р°РјРєР°.
 			};
 		}
 		else if (self.guild == GIL_STT) 
 		{
 			if (self.voice == 10)
 			{
-				AI_Output(self,other,"Info_FindNPC_OC_Thorus_10_01"); //Днем он всегда стоит у ворот замка.
+				AI_Output(self,other,"Info_FindNPC_OC_Thorus_10_01"); //Р”РЅРµРј РѕРЅ РІСЃРµРіРґР° СЃС‚РѕРёС‚ Сѓ РІРѕСЂРѕС‚ Р·Р°РјРєР°.
 			}
 			else if (self.voice == 12)
 			{
-				AI_Output(self,other,"Info_FindNPC_OC_Thorus_12_01"); //Днем он всегда стоит у ворот замка.
+				AI_Output(self,other,"Info_FindNPC_OC_Thorus_12_01"); //Р”РЅРµРј РѕРЅ РІСЃРµРіРґР° СЃС‚РѕРёС‚ Сѓ РІРѕСЂРѕС‚ Р·Р°РјРєР°.
 			};
 		};
 	};

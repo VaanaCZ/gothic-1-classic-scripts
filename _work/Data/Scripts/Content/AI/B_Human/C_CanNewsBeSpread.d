@@ -1,9 +1,9 @@
 func int C_CanNewsBeSpread ()
 /*
-B_SpreadNews <Erzähler-NSC> <InfoQuelle> <Täter-SC> <Ereignis ID> <Opfer> 
-Für jeden NSC jeder Gilde, die zur Gilde des <Erzähler-NSCs> befreundet ist
-	Wenn NSC =|= Erzähler-NSC, dann 	UND NICHT WITNESS!!!
-B_AssessAndMemorize <NSC> <GOSSIP> <Täter-SC> <Ereignis ID> <Opfer/Besitzer> 
+B_SpreadNews <ErzÐ´hler-NSC> <InfoQuelle> <TÐ´ter-SC> <Ereignis ID> <Opfer> 
+FÑŒr jeden NSC jeder Gilde, die zur Gilde des <ErzÐ´hler-NSCs> befreundet ist
+	Wenn NSC =|= ErzÐ´hler-NSC, dann 	UND NICHT WITNESS!!!
+B_AssessAndMemorize <NSC> <GOSSIP> <TÐ´ter-SC> <Ereignis ID> <Opfer/Besitzer> 
 */
 {
 	PrintDebugNpc 	(PD_ZS_CHECK, "C_CanNewsBeSpread");
@@ -47,7 +47,7 @@ B_AssessAndMemorize <NSC> <GOSSIP> <Täter-SC> <Ereignis ID> <Opfer/Besitzer>
 				PrintDebugNpc 	(PD_ZS_CHECK, "... gleiches Opfer");
 				if (B_CompareNpcInstance (murder_news_offender,defeat_news_offender))
 				{
-					PrintDebugNpc 	(PD_ZS_CHECK, "...und gleicher Täter");
+					PrintDebugNpc 	(PD_ZS_CHECK, "...und gleicher TÐ´ter");
 					Npc_DeleteNews	(self,defeat_news);
 				};
 			};

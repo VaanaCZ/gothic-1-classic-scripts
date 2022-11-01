@@ -2,7 +2,7 @@ instance GUR_1202_CorAngar (Npc_Default)
 {
 	//-------- primary data --------
 	
-	name 			=		"Кор Ангар";
+	name 			=		"РљРѕСЂ РђРЅРіР°СЂ";
 	npctype 		= 		NPCTYPE_FRIEND;
 	guild 			=		GIL_TPL;
 	level 			=		30;

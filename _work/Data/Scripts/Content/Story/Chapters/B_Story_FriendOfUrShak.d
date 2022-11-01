@@ -3,13 +3,13 @@
 //*****************************************************************************
 func void B_Story_FriendOfUrShak()
 {
-	//-------- Missionsgegenst‰nde --------
+	//-------- Missionsgegenst–¥nde --------
 	CreateInvItem	(hero, ItMi_OrcTalisman);
 	
 	//-------- NSCs --------
 	var C_NPC urshak;
 	urshak = Hlp_GetNpc(ORC_2200_Shaman);
-	urshak.name = "”-ÿ‡Í";
+	urshak.name = "–£—Ä-–®–∞–∫";
 	
 	//-------- globale Variable setzen --------
 	FriendOfUrShak = TRUE;

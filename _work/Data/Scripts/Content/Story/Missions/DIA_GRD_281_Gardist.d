@@ -33,7 +33,7 @@ INSTANCE DIA_Grd_281_GuardGate (C_INFO)
 	condition		= DIA_Grd_281_GuardGate_Condition;
 	information		= DIA_Grd_281_GuardGate_Info;
 	permanent		= 1;
-	description		= "Как дела?"; 
+	description		= "РљР°Рє РґРµР»Р°?"; 
 };
 
 FUNC INT DIA_Grd_281_GuardGate_Condition()
@@ -45,7 +45,7 @@ FUNC INT DIA_Grd_281_GuardGate_Condition()
 };
 FUNC VOID DIA_Grd_281_GuardGate_Info()
 {
-	AI_Output (other, self,"DIA_Grd_281_GuardGate_15_00"); //Как дела?
-	AI_Output (self, other,"DIA_Grd_281_GuardGate_07_01"); //Хорошо! Воры из Нового лагеря сюда не заглядывают, значит, все в порядке.
+	AI_Output (other, self,"DIA_Grd_281_GuardGate_15_00"); //РљР°Рє РґРµР»Р°?
+	AI_Output (self, other,"DIA_Grd_281_GuardGate_07_01"); //РҐРѕСЂРѕС€Рѕ! Р’РѕСЂС‹ РёР· РќРѕРІРѕРіРѕ Р»Р°РіРµСЂСЏ СЃСЋРґР° РЅРµ Р·Р°РіР»СЏРґС‹РІР°СЋС‚, Р·РЅР°С‡РёС‚, РІСЃРµ РІ РїРѕСЂСЏРґРєРµ.
 	AI_StopProcessInfos	( self );
 };

@@ -14,7 +14,7 @@ INSTANCE Info_Vlk_3_EXIT(C_INFO)
 	condition	= Info_Vlk_3_EXIT_Condition;
 	information	= Info_Vlk_3_EXIT_Info;
 	permanent	= 1;
-	description = "ЗАКОНЧИТЬ РАЗГОВОР";
+	description = "Р—РђРљРћРќР§РРўР¬ Р РђР—Р“РћР’РћР ";
 };                       
 
 FUNC INT Info_Vlk_3_EXIT_Condition()
@@ -37,7 +37,7 @@ INSTANCE Info_Vlk_3_EinerVonEuchWerden (C_INFO) // E1
 	condition	= Info_Vlk_3_EinerVonEuchWerden_Condition;
 	information	= Info_Vlk_3_EinerVonEuchWerden_Info;
 	permanent	= 1;
-	description = "Что надо, чтобы присоединиться к этому лагерю?";
+	description = "Р§С‚Рѕ РЅР°РґРѕ, С‡С‚РѕР±С‹ РїСЂРёСЃРѕРµРґРёРЅРёС‚СЊСЃСЏ Рє СЌС‚РѕРјСѓ Р»Р°РіРµСЂСЋ?";
 };                       
 
 FUNC INT Info_Vlk_3_EinerVonEuchWerden_Condition()
@@ -50,8 +50,8 @@ FUNC INT Info_Vlk_3_EinerVonEuchWerden_Condition()
 
 FUNC VOID Info_Vlk_3_EinerVonEuchWerden_Info()
 {
-	AI_Output(other,self,"Info_Vlk_3_EinerVonEuchWerden_15_00"); //Что надо, чтобы присоединиться к этому лагерю?
-	AI_Output(self,other,"Info_Vlk_3_EinerVonEuchWerden_03_01"); //Я простой рудокоп и не так уж много могу рассказать тебе. Поговори лучше с Призраками или стражниками.
+	AI_Output(other,self,"Info_Vlk_3_EinerVonEuchWerden_15_00"); //Р§С‚Рѕ РЅР°РґРѕ, С‡С‚РѕР±С‹ РїСЂРёСЃРѕРµРґРёРЅРёС‚СЊСЃСЏ Рє СЌС‚РѕРјСѓ Р»Р°РіРµСЂСЋ?
+	AI_Output(self,other,"Info_Vlk_3_EinerVonEuchWerden_03_01"); //РЇ РїСЂРѕСЃС‚РѕР№ СЂСѓРґРѕРєРѕРї Рё РЅРµ С‚Р°Рє СѓР¶ РјРЅРѕРіРѕ РјРѕРіСѓ СЂР°СЃСЃРєР°Р·Р°С‚СЊ С‚РµР±Рµ. РџРѕРіРѕРІРѕСЂРё Р»СѓС‡С€Рµ СЃ РџСЂРёР·СЂР°РєР°РјРё РёР»Рё СЃС‚СЂР°Р¶РЅРёРєР°РјРё.
 };
 
 // *************************************************************************
@@ -64,7 +64,7 @@ INSTANCE Info_Vlk_3_WichtigePersonen(C_INFO)
 	condition	= Info_Vlk_3_WichtigePersonen_Condition;
 	information	= Info_Vlk_3_WichtigePersonen_Info;
 	permanent	= 1;
-	description = "Кто здесь главный?";
+	description = "РљС‚Рѕ Р·РґРµСЃСЊ РіР»Р°РІРЅС‹Р№?";
 };                       
 
 FUNC INT Info_Vlk_3_WichtigePersonen_Condition()
@@ -76,9 +76,9 @@ FUNC INT Info_Vlk_3_WichtigePersonen_Condition()
 };
 FUNC VOID Info_Vlk_3_WichtigePersonen_Info()
 {
-	AI_Output(other,self,"Info_Vlk_3_WichtigePersonen_15_00"); //Кто здесь главный?
-	AI_Output(self,other,"Info_Vlk_3_WichtigePersonen_03_01"); //Гомез. Он живет в замке. Но мы видим только его стражников, которые выполняют его приказы.
-	AI_Output(self,other,"Info_Vlk_3_WichtigePersonen_03_02"); //Лучше всего, если они тебя вообще не будут замечать. Если ты встанешь у них на пути, у тебя будут проблемы.
+	AI_Output(other,self,"Info_Vlk_3_WichtigePersonen_15_00"); //РљС‚Рѕ Р·РґРµСЃСЊ РіР»Р°РІРЅС‹Р№?
+	AI_Output(self,other,"Info_Vlk_3_WichtigePersonen_03_01"); //Р“РѕРјРµР·. РћРЅ Р¶РёРІРµС‚ РІ Р·Р°РјРєРµ. РќРѕ РјС‹ РІРёРґРёРј С‚РѕР»СЊРєРѕ РµРіРѕ СЃС‚СЂР°Р¶РЅРёРєРѕРІ, РєРѕС‚РѕСЂС‹Рµ РІС‹РїРѕР»РЅСЏСЋС‚ РµРіРѕ РїСЂРёРєР°Р·С‹.
+	AI_Output(self,other,"Info_Vlk_3_WichtigePersonen_03_02"); //Р›СѓС‡С€Рµ РІСЃРµРіРѕ, РµСЃР»Рё РѕРЅРё С‚РµР±СЏ РІРѕРѕР±С‰Рµ РЅРµ Р±СѓРґСѓС‚ Р·Р°РјРµС‡Р°С‚СЊ. Р•СЃР»Рё С‚С‹ РІСЃС‚Р°РЅРµС€СЊ Сѓ РЅРёС… РЅР° РїСѓС‚Рё, Сѓ С‚РµР±СЏ Р±СѓРґСѓС‚ РїСЂРѕР±Р»РµРјС‹.
 };
 
 // *************************************************************************
@@ -91,7 +91,7 @@ INSTANCE Info_Vlk_3_DasLager(C_INFO)
 	condition	= Info_Vlk_3_DasLager_Condition;
 	information	= Info_Vlk_3_DasLager_Info;
 	permanent	= 1;
-	description = "Что интересного есть в этом лагере?";
+	description = "Р§С‚Рѕ РёРЅС‚РµСЂРµСЃРЅРѕРіРѕ РµСЃС‚СЊ РІ СЌС‚РѕРј Р»Р°РіРµСЂРµ?";
 };                       
 
 FUNC INT Info_Vlk_3_DasLager_Condition()
@@ -101,9 +101,9 @@ FUNC INT Info_Vlk_3_DasLager_Condition()
 
 FUNC VOID Info_Vlk_3_DasLager_Info()
 {
-	AI_Output(other,self,"Info_Vlk_3_DasLager_15_00"); //Что интересного есть в этом лагере?
-	AI_Output(self,other,"Info_Vlk_3_DasLager_03_01"); //Если тебя привлекают азартные игры, приходи вечером к арене. А если хочешь купить что-нибудь, то сходи на рынок.
-	AI_Output(self,other,"Info_Vlk_3_DasLager_03_02"); //У местных торговцев есть почти все. Разве только карт нет. Но их ты можешь найти у Грехэма. Он живет в доме напротив ворот замка.
+	AI_Output(other,self,"Info_Vlk_3_DasLager_15_00"); //Р§С‚Рѕ РёРЅС‚РµСЂРµСЃРЅРѕРіРѕ РµСЃС‚СЊ РІ СЌС‚РѕРј Р»Р°РіРµСЂРµ?
+	AI_Output(self,other,"Info_Vlk_3_DasLager_03_01"); //Р•СЃР»Рё С‚РµР±СЏ РїСЂРёРІР»РµРєР°СЋС‚ Р°Р·Р°СЂС‚РЅС‹Рµ РёРіСЂС‹, РїСЂРёС…РѕРґРё РІРµС‡РµСЂРѕРј Рє Р°СЂРµРЅРµ. Рђ РµСЃР»Рё С…РѕС‡РµС€СЊ РєСѓРїРёС‚СЊ С‡С‚Рѕ-РЅРёР±СѓРґСЊ, С‚Рѕ СЃС…РѕРґРё РЅР° СЂС‹РЅРѕРє.
+	AI_Output(self,other,"Info_Vlk_3_DasLager_03_02"); //РЈ РјРµСЃС‚РЅС‹С… С‚РѕСЂРіРѕРІС†РµРІ РµСЃС‚СЊ РїРѕС‡С‚Рё РІСЃРµ. Р Р°Р·РІРµ С‚РѕР»СЊРєРѕ РєР°СЂС‚ РЅРµС‚. РќРѕ РёС… С‚С‹ РјРѕР¶РµС€СЊ РЅР°Р№С‚Рё Сѓ Р“СЂРµС…СЌРјР°. РћРЅ Р¶РёРІРµС‚ РІ РґРѕРјРµ РЅР°РїСЂРѕС‚РёРІ РІРѕСЂРѕС‚ Р·Р°РјРєР°.
 };
 
 // *************************************************************************
@@ -116,7 +116,7 @@ INSTANCE Info_Vlk_3_DieLage(C_INFO) // E1
 	condition	= Info_Vlk_3_DieLage_Condition;
 	information	= Info_Vlk_3_DieLage_Info;
 	permanent	= 1;
-	description = "Как здесь живется?";
+	description = "РљР°Рє Р·РґРµСЃСЊ Р¶РёРІРµС‚СЃСЏ?";
 };                       
 
 FUNC INT Info_Vlk_3_DieLage_Condition()
@@ -126,9 +126,9 @@ FUNC INT Info_Vlk_3_DieLage_Condition()
 
 FUNC VOID Info_Vlk_3_DieLage_Info()
 {
-	AI_Output(other,self,"Info_Vlk_3_DieLage_15_00"); //Как здесь живется?
-	AI_Output(self,other,"Info_Vlk_3_DieLage_03_01"); //Очень скоро ты ознакомишься со здешними порядками. Будь всегда начеку. Особенно по ночам.
-	AI_Output(self,other,"Info_Vlk_3_DieLage_03_02"); //Солдаты заставляют нас работать в две смены. Мне уже так долго не удается выспаться как следует.
+	AI_Output(other,self,"Info_Vlk_3_DieLage_15_00"); //РљР°Рє Р·РґРµСЃСЊ Р¶РёРІРµС‚СЃСЏ?
+	AI_Output(self,other,"Info_Vlk_3_DieLage_03_01"); //РћС‡РµРЅСЊ СЃРєРѕСЂРѕ С‚С‹ РѕР·РЅР°РєРѕРјРёС€СЊСЃСЏ СЃРѕ Р·РґРµС€РЅРёРјРё РїРѕСЂСЏРґРєР°РјРё. Р‘СѓРґСЊ РІСЃРµРіРґР° РЅР°С‡РµРєСѓ. РћСЃРѕР±РµРЅРЅРѕ РїРѕ РЅРѕС‡Р°Рј.
+	AI_Output(self,other,"Info_Vlk_3_DieLage_03_02"); //РЎРѕР»РґР°С‚С‹ Р·Р°СЃС‚Р°РІР»СЏСЋС‚ РЅР°СЃ СЂР°Р±РѕС‚Р°С‚СЊ РІ РґРІРµ СЃРјРµРЅС‹. РњРЅРµ СѓР¶Рµ С‚Р°Рє РґРѕР»РіРѕ РЅРµ СѓРґР°РµС‚СЃСЏ РІС‹СЃРїР°С‚СЊСЃСЏ РєР°Рє СЃР»РµРґСѓРµС‚.
 };
 	
 // *************************************************************************

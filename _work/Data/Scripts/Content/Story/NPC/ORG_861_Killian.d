@@ -2,7 +2,7 @@ instance ORG_861_Killian (Npc_Default)
 {
 	//-------- primary data --------
 	
-	name =					"Рабочий";
+	name =					"Р Р°Р±РѕС‡РёР№";
 	Npctype =				Npctype_Main;
 	guild =					GIL_ORG;      
 	level =					8;

@@ -30,7 +30,7 @@ instance  Grd_263_Asghan_NEST (C_INFO)
 	information		= Grd_263_Asghan_NEST_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Где-то здесь должно быть логово ползунов."; 
+	description		= "Р“РґРµ-С‚Рѕ Р·РґРµСЃСЊ РґРѕР»Р¶РЅРѕ Р±С‹С‚СЊ Р»РѕРіРѕРІРѕ РїРѕР»Р·СѓРЅРѕРІ."; 
 };
 
 FUNC int  Grd_263_Asghan_NEST_Condition()
@@ -43,14 +43,14 @@ FUNC int  Grd_263_Asghan_NEST_Condition()
 };
 FUNC void  Grd_263_Asghan_NEST_Info()
 {
-	AI_Output			(other, self,"Grd_263_Asghan_NEST_Info_15_01"); //Где-то здесь должно быть логово ползунов.
-	AI_Output			(self, other,"Grd_263_Asghan_NEST_Info_06_02"); //Да, эта гора и есть одно большое логово ползунов!
-	AI_Output			(other, self,"Grd_263_Asghan_NEST_Info_15_03"); //Почему эта шахта перекрыта?
-	AI_Output			(self, other,"Grd_263_Asghan_NEST_Info_06_04"); //Ползунов развелось слишком много, сколько бы мы их не били.
-	AI_Output			(other, self,"Grd_263_Asghan_NEST_Info_15_05"); //Кажется, логово должно быть где-то недалеко. Открой для меня эти ворота!
-	AI_Output			(self, other,"Grd_263_Asghan_NEST_Info_06_06"); //Нет! Их можно открыть только с разрешения Яна! Без его приказа я даже с места не сдвинусь. 
+	AI_Output			(other, self,"Grd_263_Asghan_NEST_Info_15_01"); //Р“РґРµ-С‚Рѕ Р·РґРµСЃСЊ РґРѕР»Р¶РЅРѕ Р±С‹С‚СЊ Р»РѕРіРѕРІРѕ РїРѕР»Р·СѓРЅРѕРІ.
+	AI_Output			(self, other,"Grd_263_Asghan_NEST_Info_06_02"); //Р”Р°, СЌС‚Р° РіРѕСЂР° Рё РµСЃС‚СЊ РѕРґРЅРѕ Р±РѕР»СЊС€РѕРµ Р»РѕРіРѕРІРѕ РїРѕР»Р·СѓРЅРѕРІ!
+	AI_Output			(other, self,"Grd_263_Asghan_NEST_Info_15_03"); //РџРѕС‡РµРјСѓ СЌС‚Р° С€Р°С…С‚Р° РїРµСЂРµРєСЂС‹С‚Р°?
+	AI_Output			(self, other,"Grd_263_Asghan_NEST_Info_06_04"); //РџРѕР»Р·СѓРЅРѕРІ СЂР°Р·РІРµР»РѕСЃСЊ СЃР»РёС€РєРѕРј РјРЅРѕРіРѕ, СЃРєРѕР»СЊРєРѕ Р±С‹ РјС‹ РёС… РЅРµ Р±РёР»Рё.
+	AI_Output			(other, self,"Grd_263_Asghan_NEST_Info_15_05"); //РљР°Р¶РµС‚СЃСЏ, Р»РѕРіРѕРІРѕ РґРѕР»Р¶РЅРѕ Р±С‹С‚СЊ РіРґРµ-С‚Рѕ РЅРµРґР°Р»РµРєРѕ. РћС‚РєСЂРѕР№ РґР»СЏ РјРµРЅСЏ СЌС‚Рё РІРѕСЂРѕС‚Р°!
+	AI_Output			(self, other,"Grd_263_Asghan_NEST_Info_06_06"); //РќРµС‚! РС… РјРѕР¶РЅРѕ РѕС‚РєСЂС‹С‚СЊ С‚РѕР»СЊРєРѕ СЃ СЂР°Р·СЂРµС€РµРЅРёСЏ РЇРЅР°! Р‘РµР· РµРіРѕ РїСЂРёРєР°Р·Р° СЏ РґР°Р¶Рµ СЃ РјРµСЃС‚Р° РЅРµ СЃРґРІРёРЅСѓСЃСЊ. 
 	
-	B_LogEntry		(CH2_MCEggs,	"Асгхан, глава стражников шахты, отказывается открывать мне ворота. Он хочет, чтобы я спросил у Яна разрешение на это.");
+	B_LogEntry		(CH2_MCEggs,	"РђСЃРіС…Р°РЅ, РіР»Р°РІР° СЃС‚СЂР°Р¶РЅРёРєРѕРІ С€Р°С…С‚С‹, РѕС‚РєР°Р·С‹РІР°РµС‚СЃСЏ РѕС‚РєСЂС‹РІР°С‚СЊ РјРЅРµ РІРѕСЂРѕС‚Р°. РћРЅ С…РѕС‡РµС‚, С‡С‚РѕР±С‹ СЏ СЃРїСЂРѕСЃРёР» Сѓ РЇРЅР° СЂР°Р·СЂРµС€РµРЅРёРµ РЅР° СЌС‚Рѕ.");
 
 };
 /*------------------------------------------------------------------------
@@ -64,7 +64,7 @@ instance  Grd_263_Asghan_OPEN (C_INFO)
 	information		= Grd_263_Asghan_OPEN_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Эй, Асгхан, ты можешь открыть ворота!"; 
+	description		= "Р­Р№, РђСЃРіС…Р°РЅ, С‚С‹ РјРѕР¶РµС€СЊ РѕС‚РєСЂС‹С‚СЊ РІРѕСЂРѕС‚Р°!"; 
 };
 
 FUNC int  Grd_263_Asghan_OPEN_Condition()
@@ -78,14 +78,14 @@ FUNC int  Grd_263_Asghan_OPEN_Condition()
 
 FUNC void  Grd_263_Asghan_OPEN_Info()
 {
-	AI_Output (other, self,"Grd_263_Asghan_OPEN_Info_15_01"); //Эй, Асгхан, ты можешь открыть ворота!
-	AI_Output (self, other,"Grd_263_Asghan_OPEN_Info_06_02"); //Я уже сказал: только с разрешения Яна...
-	AI_Output (other, self,"Grd_263_Asghan_OPEN_Info_15_03"); //Асгхан... Все будет в порядке... и привет тебе от Яна.
-	AI_Output (self, other,"Grd_263_Asghan_OPEN_Info_06_04"); //Ну, если Ян согласен за это отвечать... Но есть одно условие!
-	AI_Output (other, self,"Grd_263_Asghan_OPEN_Info_15_05"); //И что это за условие?
-	AI_Output (self, other,"Grd_263_Asghan_OPEN_Info_06_06"); //Мне нужна помощь. Двух-трех стражей будет достаточно. А то не хочется приветствовать всех этих ползунов в одиночестве!
+	AI_Output (other, self,"Grd_263_Asghan_OPEN_Info_15_01"); //Р­Р№, РђСЃРіС…Р°РЅ, С‚С‹ РјРѕР¶РµС€СЊ РѕС‚РєСЂС‹С‚СЊ РІРѕСЂРѕС‚Р°!
+	AI_Output (self, other,"Grd_263_Asghan_OPEN_Info_06_02"); //РЇ СѓР¶Рµ СЃРєР°Р·Р°Р»: С‚РѕР»СЊРєРѕ СЃ СЂР°Р·СЂРµС€РµРЅРёСЏ РЇРЅР°...
+	AI_Output (other, self,"Grd_263_Asghan_OPEN_Info_15_03"); //РђСЃРіС…Р°РЅ... Р’СЃРµ Р±СѓРґРµС‚ РІ РїРѕСЂСЏРґРєРµ... Рё РїСЂРёРІРµС‚ С‚РµР±Рµ РѕС‚ РЇРЅР°.
+	AI_Output (self, other,"Grd_263_Asghan_OPEN_Info_06_04"); //РќСѓ, РµСЃР»Рё РЇРЅ СЃРѕРіР»Р°СЃРµРЅ Р·Р° СЌС‚Рѕ РѕС‚РІРµС‡Р°С‚СЊ... РќРѕ РµСЃС‚СЊ РѕРґРЅРѕ СѓСЃР»РѕРІРёРµ!
+	AI_Output (other, self,"Grd_263_Asghan_OPEN_Info_15_05"); //Р С‡С‚Рѕ СЌС‚Рѕ Р·Р° СѓСЃР»РѕРІРёРµ?
+	AI_Output (self, other,"Grd_263_Asghan_OPEN_Info_06_06"); //РњРЅРµ РЅСѓР¶РЅР° РїРѕРјРѕС‰СЊ. Р”РІСѓС…-С‚СЂРµС… СЃС‚СЂР°Р¶РµР№ Р±СѓРґРµС‚ РґРѕСЃС‚Р°С‚РѕС‡РЅРѕ. Рђ С‚Рѕ РЅРµ С…РѕС‡РµС‚СЃСЏ РїСЂРёРІРµС‚СЃС‚РІРѕРІР°С‚СЊ РІСЃРµС… СЌС‚РёС… РїРѕР»Р·СѓРЅРѕРІ РІ РѕРґРёРЅРѕС‡РµСЃС‚РІРµ!
 	
-	B_LogEntry		(CH2_MCEggs,	"Ян разрешил мне зайти в Заброшенную шахту. Но мне нужно еще заручиться поддержкой нескольких Стражей. Тогда Асгхан откроет мне ворота.");
+	B_LogEntry		(CH2_MCEggs,	"РЇРЅ СЂР°Р·СЂРµС€РёР» РјРЅРµ Р·Р°Р№С‚Рё РІ Р—Р°Р±СЂРѕС€РµРЅРЅСѓСЋ С€Р°С…С‚Сѓ. РќРѕ РјРЅРµ РЅСѓР¶РЅРѕ РµС‰Рµ Р·Р°СЂСѓС‡РёС‚СЊСЃСЏ РїРѕРґРґРµСЂР¶РєРѕР№ РЅРµСЃРєРѕР»СЊРєРёС… РЎС‚СЂР°Р¶РµР№. РўРѕРіРґР° РђСЃРіС…Р°РЅ РѕС‚РєСЂРѕРµС‚ РјРЅРµ РІРѕСЂРѕС‚Р°.");
 
 	AI_StopProcessInfos	( self );
 };  
@@ -99,7 +99,7 @@ instance  Grd_263_Asghan_OPEN_NOW (C_INFO)
 	information		= Grd_263_Asghan_OPEN_NOW_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Теперь все готово. Можно открыть ворота!"; 
+	description		= "РўРµРїРµСЂСЊ РІСЃРµ РіРѕС‚РѕРІРѕ. РњРѕР¶РЅРѕ РѕС‚РєСЂС‹С‚СЊ РІРѕСЂРѕС‚Р°!"; 
 };
 
 FUNC int  Grd_263_Asghan_OPEN_NOW_Condition()
@@ -114,14 +114,14 @@ FUNC int  Grd_263_Asghan_OPEN_NOW_Condition()
 };
 FUNC void  Grd_263_Asghan_OPEN_NOW_Info()
 {
-	AI_Output			(other, self,"Grd_263_Asghan_OPEN_NOW_Info_15_01"); //Теперь все готово. Можно открыть ворота!
-	AI_Output			(self, other,"Grd_263_Asghan_OPEN_NOW_Info_06_02"); //Давай, открывай. Представление начинается!
+	AI_Output			(other, self,"Grd_263_Asghan_OPEN_NOW_Info_15_01"); //РўРµРїРµСЂСЊ РІСЃРµ РіРѕС‚РѕРІРѕ. РњРѕР¶РЅРѕ РѕС‚РєСЂС‹С‚СЊ РІРѕСЂРѕС‚Р°!
+	AI_Output			(self, other,"Grd_263_Asghan_OPEN_NOW_Info_06_02"); //Р”Р°РІР°Р№, РѕС‚РєСЂС‹РІР°Р№. РџСЂРµРґСЃС‚Р°РІР»РµРЅРёРµ РЅР°С‡РёРЅР°РµС‚СЃСЏ!
 	
 	Npc_SetPermAttitude (self,ATT_FRIENDLY);
 	Npc_ExchangeRoutine	(self,"opengate");
 	
 	B_GiveXP			(XP_OpenAsghansGate);
-	B_LogEntry			(CH2_MCEggs,	"Я собрал нескольких Стражей у ворот в Заброшенную шахту. Что ждет нас впереди?");
+	B_LogEntry			(CH2_MCEggs,	"РЇ СЃРѕР±СЂР°Р» РЅРµСЃРєРѕР»СЊРєРёС… РЎС‚СЂР°Р¶РµР№ Сѓ РІРѕСЂРѕС‚ РІ Р—Р°Р±СЂРѕС€РµРЅРЅСѓСЋ С€Р°С…С‚Сѓ. Р§С‚Рѕ Р¶РґРµС‚ РЅР°СЃ РІРїРµСЂРµРґРё?");
 		
 	AI_StopProcessInfos	(self);
 };    
@@ -134,7 +134,7 @@ instance  Grd_263_Asghan_LAIRFOUND (C_INFO)
 	information		= Grd_263_Asghan_LAIRFOUND_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Ползуны больше не будут угрожать рудокопам!"; 
+	description		= "РџРѕР»Р·СѓРЅС‹ Р±РѕР»СЊС€Рµ РЅРµ Р±СѓРґСѓС‚ СѓРіСЂРѕР¶Р°С‚СЊ СЂСѓРґРѕРєРѕРїР°Рј!"; 
 };
 
 FUNC int  Grd_263_Asghan_LAIRFOUND_Condition()
@@ -148,14 +148,14 @@ FUNC int  Grd_263_Asghan_LAIRFOUND_Condition()
 };
 FUNC void  Grd_263_Asghan_LAIRFOUND_Info()
 {
-	AI_Output			(other, self,"Grd_263_Asghan_LAIRFOUND_Info_15_01"); //Ползуны больше не будут угрожать рудокопам!
-	AI_Output			(self, other,"Grd_263_Asghan_LAIRFOUND_Info_06_02"); //Отличная новость. Надо сообщит это Торусу!
+	AI_Output			(other, self,"Grd_263_Asghan_LAIRFOUND_Info_15_01"); //РџРѕР»Р·СѓРЅС‹ Р±РѕР»СЊС€Рµ РЅРµ Р±СѓРґСѓС‚ СѓРіСЂРѕР¶Р°С‚СЊ СЂСѓРґРѕРєРѕРїР°Рј!
+	AI_Output			(self, other,"Grd_263_Asghan_LAIRFOUND_Info_06_02"); //РћС‚Р»РёС‡РЅР°СЏ РЅРѕРІРѕСЃС‚СЊ. РќР°РґРѕ СЃРѕРѕР±С‰РёС‚ СЌС‚Рѕ РўРѕСЂСѓСЃСѓ!
 
 	AI_StopProcessInfos	(self);
 };    
 
 /*------------------------------------------------------------------------
-						MCQ Hatz lдuft noch nicht 						
+						MCQ Hatz lРґuft noch nicht 						
 ------------------------------------------------------------------------*/
 
 instance  Grd_263_Asghan_SMALLTALK (C_INFO)
@@ -165,7 +165,7 @@ instance  Grd_263_Asghan_SMALLTALK (C_INFO)
 	information		= Grd_263_Asghan_SMALLTALK_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Эй, как дела?"; 
+	description		= "Р­Р№, РєР°Рє РґРµР»Р°?"; 
 };
 
 FUNC int  Grd_263_Asghan_SMALLTALK_Condition()
@@ -178,10 +178,10 @@ FUNC int  Grd_263_Asghan_SMALLTALK_Condition()
 
 FUNC void  Grd_263_Asghan_SMALLTALK_Info()
 {
-	AI_Output (other, self,"Grd_263_Asghan_SMALLTALK_Info_15_01"); //Эй, как дела?
-	AI_Output (self, other,"Grd_263_Asghan_SMALLTALK_Info_06_02"); //Хорошо... пока никто не стремится выпустить ползунов и мне не надо никого калечить.
-	AI_Output (other, self,"Grd_263_Asghan_SMALLTALK_Info_15_03"); //А что же скрывается за этими воротами?
-	AI_Output (self, other,"Grd_263_Asghan_SMALLTALK_Info_06_04"); //Ползуны. Здоровые, мерзкие хищники. И их здесь очень, очень много.
+	AI_Output (other, self,"Grd_263_Asghan_SMALLTALK_Info_15_01"); //Р­Р№, РєР°Рє РґРµР»Р°?
+	AI_Output (self, other,"Grd_263_Asghan_SMALLTALK_Info_06_02"); //РҐРѕСЂРѕС€Рѕ... РїРѕРєР° РЅРёРєС‚Рѕ РЅРµ СЃС‚СЂРµРјРёС‚СЃСЏ РІС‹РїСѓСЃС‚РёС‚СЊ РїРѕР»Р·СѓРЅРѕРІ Рё РјРЅРµ РЅРµ РЅР°РґРѕ РЅРёРєРѕРіРѕ РєР°Р»РµС‡РёС‚СЊ.
+	AI_Output (other, self,"Grd_263_Asghan_SMALLTALK_Info_15_03"); //Рђ С‡С‚Рѕ Р¶Рµ СЃРєСЂС‹РІР°РµС‚СЃСЏ Р·Р° СЌС‚РёРјРё РІРѕСЂРѕС‚Р°РјРё?
+	AI_Output (self, other,"Grd_263_Asghan_SMALLTALK_Info_06_04"); //РџРѕР»Р·СѓРЅС‹. Р—РґРѕСЂРѕРІС‹Рµ, РјРµСЂР·РєРёРµ С…РёС‰РЅРёРєРё. Р РёС… Р·РґРµСЃСЊ РѕС‡РµРЅСЊ, РѕС‡РµРЅСЊ РјРЅРѕРіРѕ.
 };  
 
 
