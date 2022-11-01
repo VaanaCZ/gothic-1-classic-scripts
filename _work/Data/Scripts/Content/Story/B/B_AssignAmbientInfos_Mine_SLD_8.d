@@ -105,7 +105,7 @@ FUNC VOID Info_Mine_Sld_8_DasLager_Info()
 {
 	AI_Output(other,self,"Info_Mine_Sld_8_DasLager_15_00"); //Was gibt es hier im Camp?
 	AI_Output(self,other,"Info_Mine_Sld_8_DasLager_08_01"); //Wir bewachen hier den Eingang zur Mine.
-	AI_Output(other,self,"Info_Mine_Sld_8_DasLager_08_02"); //Niemand auﬂer unseren Leuten darf dort hinein.
+	AI_Output(other,self,"Info_Mine_Sld_8_DasLager_08_02"); //Niemand au√üer unseren Leuten darf dort hinein.
 };
 
 // *************************************************************************

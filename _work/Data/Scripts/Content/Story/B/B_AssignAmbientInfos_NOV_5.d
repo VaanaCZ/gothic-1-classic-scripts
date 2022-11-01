@@ -76,7 +76,7 @@ FUNC INT Info_Nov_5_WichtigePersonen_Condition()
 FUNC VOID Info_Nov_5_WichtigePersonen_Info()
 {
 	AI_Output(other,self,"Info_Nov_5_WichtigePersonen_15_00"); //Wer hat hier das Sagen?
-	AI_Output(self,other,"Info_Nov_5_WichtigePersonen_05_01"); //Die Gurus haben alles unter Kontrolle. Aber wenn man nicht auff‰llt, lassen sie einen in Ruhe.
+	AI_Output(self,other,"Info_Nov_5_WichtigePersonen_05_01"); //Die Gurus haben alles unter Kontrolle. Aber wenn man nicht auff√§llt, lassen sie einen in Ruhe.
 };
 
 // *************************************************************************
@@ -89,7 +89,7 @@ INSTANCE Info_Nov_5_DasLager(C_INFO)
 	condition	= Info_Nov_5_DasLager_Condition;
 	information	= Info_Nov_5_DasLager_Info;
 	permanent	= 1;
-	description = "Was kannst du mit ¸ber dieses Lager erz‰hlen?";
+	description = "Was kannst du mit √ºber dieses Lager erz√§hlen?";
 };                       
 
 FUNC INT Info_Nov_5_DasLager_Condition()
@@ -99,11 +99,11 @@ FUNC INT Info_Nov_5_DasLager_Condition()
 
 FUNC VOID Info_Nov_5_DasLager_Info()
 {
-	AI_Output(other,self,"Info_Nov_5_DasLager_15_00"); //Was kannst du mir ¸ber dieses Lager erz‰hlen?
+	AI_Output(other,self,"Info_Nov_5_DasLager_15_00"); //Was kannst du mir √ºber dieses Lager erz√§hlen?
 	AI_Output(self,other,"Info_Nov_5_DasLager_05_01"); //Es ist der beste Ort, an dem du in dieser gottverdammten Kolonie sein kannst.
-	AI_Output(self,other,"Info_Nov_5_DasLager_05_02"); //Selbst wenn du nicht an die Lehren des Schl‰fers glaubst, bekommst du deine t‰gliche Ration Essen und Sumpfkraut. Du brauchst nur zu Fortuno zu gehen.
+	AI_Output(self,other,"Info_Nov_5_DasLager_05_02"); //Selbst wenn du nicht an die Lehren des Schl√§fers glaubst, bekommst du deine t√§gliche Ration Essen und Sumpfkraut. Du brauchst nur zu Fortuno zu gehen.
 	AI_Output(other,self,"Info_Nov_5_DasLager_15_03"); //Und wo finde ich den?
-	AI_Output(self,other,"Info_Nov_5_DasLager_05_04"); //Unten an Cor Kaloms Labor. In der N‰he des groﬂen Tempelplatzes.
+	AI_Output(self,other,"Info_Nov_5_DasLager_05_04"); //Unten an Cor Kaloms Labor. In der N√§he des gro√üen Tempelplatzes.
 	
 	var C_NPC CorKalom;		CorKalom = Hlp_GetNpc(Gur_1201_CorKalom);
 	CorKalom.aivar[AIV_FINDABLE] = TRUE;

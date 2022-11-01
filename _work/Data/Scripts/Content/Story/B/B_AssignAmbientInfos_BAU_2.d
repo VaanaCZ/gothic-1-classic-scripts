@@ -48,7 +48,7 @@ FUNC INT Info_Bau_2_WichtigePersonen_Condition()
 FUNC VOID Info_Bau_2_WichtigePersonen_Info()
 {
 	AI_Output(other,self,"Info_Bau_2_WichtigePersonen_15_00"); //Arbeitest du freiwillig auf den Reisfeldern?
-	AI_Output(self,other,"Info_Bau_2_WichtigePersonen_02_01"); //Ja. Ja das tue ich. Ist nämlich besser freiwillig zu arbeiten, als von den Schlägern vom Reislord abgeholt zu werden.
+	AI_Output(self,other,"Info_Bau_2_WichtigePersonen_02_01"); //Ja. Ja das tue ich. Ist nÃ¤mlich besser freiwillig zu arbeiten, als von den SchlÃ¤gern vom Reislord abgeholt zu werden.
 	AI_Output(other,self,"Info_Bau_2_WichtigePersonen_15_02"); //So so ...
 	var C_NPC Ricelord;			Ricelord	= Hlp_GetNpc(Bau_900_Ricelord);
 	Ricelord.aivar[AIV_FINDABLE] = TRUE;	
@@ -64,7 +64,7 @@ INSTANCE Info_Bau_2_DasLager(C_INFO)
 	condition	= Info_Bau_2_DasLager_Condition;
 	information	= Info_Bau_2_DasLager_Info;
 	permanent	= 1;
-	description = "Was kannst du mir über das Lager erzählen?";
+	description = "Was kannst du mir Ã¼ber das Lager erzÃ¤hlen?";
 };                       
 
 FUNC INT Info_Bau_2_DasLager_Condition()
@@ -74,8 +74,8 @@ FUNC INT Info_Bau_2_DasLager_Condition()
 
 FUNC VOID Info_Bau_2_DasLager_Info()
 {
-	AI_Output(other,self,"Info_Bau_2_DasLager_15_00"); //Was kannst du mir über das Lager erzählen?
-	AI_Output(self,other,"Info_Bau_2_DasLager_02_01"); //Es ist gefährlich, da hinzugehen. Lee's Söldner und die Magier sind ja ganz in Ordnung, aber auf die Banditen passt du besser auf!
+	AI_Output(other,self,"Info_Bau_2_DasLager_15_00"); //Was kannst du mir Ã¼ber das Lager erzÃ¤hlen?
+	AI_Output(self,other,"Info_Bau_2_DasLager_02_01"); //Es ist gefÃ¤hrlich, da hinzugehen. Lee's SÃ¶ldner und die Magier sind ja ganz in Ordnung, aber auf die Banditen passt du besser auf!
 	var C_NPC Lee;			Lee		= Hlp_GetNpc(Sld_700_Lee);
 	Lee.aivar[AIV_FINDABLE] = TRUE;	
 	var C_NPC Cronos;		Cronos  = Hlp_GetNpc(KdW_604_Cronos);
@@ -119,7 +119,7 @@ INSTANCE Info_Bau_2_Wasser(C_INFO) // E1
 	condition	= Info_Bau_2_Wasser_Condition;
 	information	= Info_Bau_2_Wasser_Info;
 	permanent	= 1;
-	description = "Lefty schickt mich. Ich hab Wasser für dich.";
+	description = "Lefty schickt mich. Ich hab Wasser fÃ¼r dich.";
 };                       
 
 FUNC INT Info_Bau_2_Wasser_Condition()
@@ -133,7 +133,7 @@ FUNC INT Info_Bau_2_Wasser_Condition()
 
 FUNC VOID Info_Bau_2_Wasser_Info()
 {
-	AI_Output(other,self,"Info_Bau_2_Wasser_15_00"); //Lefty schickt mich. Ich hab' Wasser für dich.
+	AI_Output(other,self,"Info_Bau_2_Wasser_15_00"); //Lefty schickt mich. Ich hab' Wasser fÃ¼r dich.
 	if (Npc_HasItems(other, ItFo_Potion_Water_01)>=1)
 	{
 		AI_Output			(self,other,"Info_Bau_2_Wasser_02_01"); //Danke, Mann. Ich sterbe vor Durst.

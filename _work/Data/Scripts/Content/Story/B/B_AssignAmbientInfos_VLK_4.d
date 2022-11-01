@@ -39,7 +39,7 @@ INSTANCE Info_Vlk_4_EinerVonEuchWerden (C_INFO) // E1
 	condition	= Info_Vlk_4_EinerVonEuchWerden_Condition;
 	information	= Info_Vlk_4_EinerVonEuchWerden_Info;
 	permanent	= 1;
-	description = "Was muß ich tun, um in diesem Lager aufgenommen zu werden?";
+	description = "Was muÃŸ ich tun, um in diesem Lager aufgenommen zu werden?";
 };                       
 
 FUNC INT Info_Vlk_4_EinerVonEuchWerden_Condition()
@@ -53,9 +53,9 @@ FUNC INT Info_Vlk_4_EinerVonEuchWerden_Condition()
 FUNC VOID Info_Vlk_4_EinerVonEuchWerden_Info()
 {
 	AI_Output(other,self,"Info_Vlk_4_EinerVonEuchWerden_15_01"); //Was muss ich tun, um in diesem Lager aufgenommen zu werden?
-	AI_Output(self,other,"Info_Vlk_4_EinerVonEuchWerden_04_04"); //Als Schatten oder Gardist meinst du? Das wird nicht leicht, Junge. Du wirst einige Prüfungen bestehen müssen, bevor der alte Thorus dich Gomez vorstellt.
-	AI_Output(self,other,"Info_Vlk_4_EinerVonEuchWerden_04_02"); //Und du musst dich mit den Leuten hier gut stellen. Aber solange du keinem Lager angehörst, nimmt dich keiner ernst.
-	AI_Output(self,other,"Info_Vlk_4_EinerVonEuchWerden_04_03"); //Wenn ich du wäre, würde ich mich bei den Schatten umhören. Unter ihnen findest du noch am ehesten einen, der dir hilft. Natürlich nur für eine Gegenleistung.
+	AI_Output(self,other,"Info_Vlk_4_EinerVonEuchWerden_04_04"); //Als Schatten oder Gardist meinst du? Das wird nicht leicht, Junge. Du wirst einige PrÃ¼fungen bestehen mÃ¼ssen, bevor der alte Thorus dich Gomez vorstellt.
+	AI_Output(self,other,"Info_Vlk_4_EinerVonEuchWerden_04_02"); //Und du musst dich mit den Leuten hier gut stellen. Aber solange du keinem Lager angehÃ¶rst, nimmt dich keiner ernst.
+	AI_Output(self,other,"Info_Vlk_4_EinerVonEuchWerden_04_03"); //Wenn ich du wÃ¤re, wÃ¼rde ich mich bei den Schatten umhÃ¶ren. Unter ihnen findest du noch am ehesten einen, der dir hilft. NatÃ¼rlich nur fÃ¼r eine Gegenleistung.
 	
 	var C_NPC Thorus;		Thorus 	= Hlp_GetNpc(GRD_200_Thorus);
 	Thorus.aivar[AIV_FINDABLE] = TRUE;
@@ -96,7 +96,7 @@ INSTANCE Info_Vlk_4_DasLager(C_INFO)
 	condition	= Info_Vlk_4_DasLager_Condition;
 	information	= Info_Vlk_4_DasLager_Info;
 	permanent	= 1;
-	description = "Was gibt es hier für wichtige Orte?";
+	description = "Was gibt es hier fÃ¼r wichtige Orte?";
 };                       
 
 FUNC INT Info_Vlk_4_DasLager_Condition()
@@ -108,12 +108,12 @@ FUNC INT Info_Vlk_4_DasLager_Condition()
 };
 FUNC VOID Info_Vlk_4_DasLager_Info()
 {
-	AI_Output(other,self,"Info_Vlk_4_DasLager_15_00"); //Was gibt es hier für wichtige Orte?
+	AI_Output(other,self,"Info_Vlk_4_DasLager_15_00"); //Was gibt es hier fÃ¼r wichtige Orte?
 	AI_Output(self,other,"Info_Vlk_4_DasLager_04_01"); //Wenn du keine Lust hast, in den Minen zu schuften, solltest du dich am Eingangsplatz zwischen Nordtor und Burgtor rumtreiben.
-	AI_Output(self,other,"Info_Vlk_4_DasLager_04_02"); //Wenn du Glück hast, gibt Thorus oder Diego dir 'ne Aufgabe - dann kannst du dich bewähren. Ist bestimmt nicht schlecht, zu Gomez' Leuten zu gehören.
-	AI_Output(self,other,"Info_Vlk_4_DasLager_04_03"); //Oder du hast das Glück einen Magier zu treffen. Sie wollen manchmal, dass du einen Botengang für sie erledigst. Sie zahlen immer gut.
+	AI_Output(self,other,"Info_Vlk_4_DasLager_04_02"); //Wenn du GlÃ¼ck hast, gibt Thorus oder Diego dir 'ne Aufgabe - dann kannst du dich bewÃ¤hren. Ist bestimmt nicht schlecht, zu Gomez' Leuten zu gehÃ¶ren.
+	AI_Output(self,other,"Info_Vlk_4_DasLager_04_03"); //Oder du hast das GlÃ¼ck einen Magier zu treffen. Sie wollen manchmal, dass du einen Botengang fÃ¼r sie erledigst. Sie zahlen immer gut.
 	AI_Output(other,self,"Info_Vlk_4_DasLager_15_04"); //Die Magier kommen aus der Burg raus? Wann?
-	AI_Output(self,other,"Info_Vlk_4_DasLager_04_05"); //Was weiß ich. Frag die Leute, die da wohnen.
+	AI_Output(self,other,"Info_Vlk_4_DasLager_04_05"); //Was weiÃŸ ich. Frag die Leute, die da wohnen.
 };
 
 // *************************************************************************
@@ -137,7 +137,7 @@ FUNC INT Info_Vlk_4_DieLage_Condition()
 FUNC VOID Info_Vlk_4_DieLage_Info()
 {
 	AI_Output(other,self,"Info_Vlk_4_DieLage_15_00"); //Alles klar?
-	AI_Output(self,other,"Info_Vlk_4_DieLage_04_01"); //So klar wie vor 20 Jahren. Und seitdem hat sich hier nicht viel verändert.
+	AI_Output(self,other,"Info_Vlk_4_DieLage_04_01"); //So klar wie vor 20 Jahren. Und seitdem hat sich hier nicht viel verÃ¤ndert.
 };
 	
 // *************************************************************************

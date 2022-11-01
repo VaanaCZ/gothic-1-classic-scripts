@@ -37,7 +37,7 @@ INSTANCE Info_Mine_Vlk_4_Mine (C_INFO) // E1
 	condition	= Info_Mine_Vlk_4_Mine_Condition;
 	information	= Info_Mine_Vlk_4_Mine_Info;
 	permanent	= 1;
-	description = "Erz‰hl mir was von der Mine";
+	description = "Erz√§hl mir was von der Mine";
 };                       
 
 FUNC INT Info_Mine_Vlk_4_Mine_Condition()
@@ -50,9 +50,9 @@ FUNC INT Info_Mine_Vlk_4_Mine_Condition()
 
 FUNC VOID Info_Mine_Vlk_4_Mine_Info()
 {
-	AI_Output(other,self,"Info_Mine_Vlk_4_Mine_15_00"); //Erz‰hl mir was von der Mine
-	AI_Output(self,other,"Info_Mine_Vlk_4_Mine_04_01"); //Eine Spitzhacke und Schweiﬂ. Das brauchst du hier drin. Du kommst hier rein und du gehst auch wieder.
-	AI_Output(self,other,"Info_Mine_Vlk_4_Mine_04_02"); //Aber, wenn du l‰ngst weg bist, werde ich hier immer noch das Erz aus dem Berg schlagen. Das ist meine Aufgabe. Das ist mein Leben.
+	AI_Output(other,self,"Info_Mine_Vlk_4_Mine_15_00"); //Erz√§hl mir was von der Mine
+	AI_Output(self,other,"Info_Mine_Vlk_4_Mine_04_01"); //Eine Spitzhacke und Schwei√ü. Das brauchst du hier drin. Du kommst hier rein und du gehst auch wieder.
+	AI_Output(self,other,"Info_Mine_Vlk_4_Mine_04_02"); //Aber, wenn du l√§ngst weg bist, werde ich hier immer noch das Erz aus dem Berg schlagen. Das ist meine Aufgabe. Das ist mein Leben.
 };
 
 // *************************************************************************
@@ -79,7 +79,7 @@ FUNC INT Info_Mine_Vlk_4_WichtigePersonen_Condition()
 FUNC VOID Info_Mine_Vlk_4_WichtigePersonen_Info()
 {
 	AI_Output(other,self,"Info_Mine_Vlk_4_WichtigePersonen_15_00"); //Wer hat hier was zu sagen?
-	AI_Output(self,other,"Info_Mine_Vlk_4_WichtigePersonen_04_01"); //Santino und Alberto tauschen Waren gegen das Erz, das wir sch¸rfen. Von ihnen bekommen wir unsere t‰glichen Rationen.
+	AI_Output(self,other,"Info_Mine_Vlk_4_WichtigePersonen_04_01"); //Santino und Alberto tauschen Waren gegen das Erz, das wir sch√ºrfen. Von ihnen bekommen wir unsere t√§glichen Rationen.
 };
 
 // *************************************************************************
@@ -92,7 +92,7 @@ INSTANCE Info_Mine_Vlk_4_Minecrawler(C_INFO)
 	condition	= Info_Mine_Vlk_4_Minecrawler_Condition;
 	information	= Info_Mine_Vlk_4_Minecrawler_Info;
 	permanent	= 1;
-	description = "Was weiﬂt Du ¸ber Minecrawler?";
+	description = "Was wei√üt Du √ºber Minecrawler?";
 };                       
 
 FUNC INT Info_Mine_Vlk_4_Minecrawler_Condition()
@@ -105,7 +105,7 @@ FUNC INT Info_Mine_Vlk_4_Minecrawler_Condition()
 
 FUNC VOID Info_Mine_Vlk_4_Minecrawler_Info()
 {
-	AI_Output(other,self,"Info_Mine_Vlk_4_Minecrawler_15_00"); //Was weiﬂt du ¸ber Minecrawler?
+	AI_Output(other,self,"Info_Mine_Vlk_4_Minecrawler_15_00"); //Was wei√üt du √ºber Minecrawler?
 	AI_Output(self,other,"Info_Mine_Vlk_4_Minecrawler_04_01"); //Wenn eins von den Crawlerviechern ankommt, dann schlag es mit der Spitze zwischen die Augen. Aber du musst beim ersten Mal treffen, eine zweite Chance gibt es nicht.
 	
 };
@@ -134,7 +134,7 @@ FUNC INT Info_Mine_Vlk_4_DieLage_Condition()
 FUNC VOID Info_Mine_Vlk_4_DieLage_Info()
 {
 	AI_Output(other,self,"Info_Mine_Vlk_4_DieLage_15_00"); //Wie sieht's aus?
-	AI_Output(self,other,"Info_Mine_Vlk_4_DieLage_04_01"); //Fr¸her war alles besser.
+	AI_Output(self,other,"Info_Mine_Vlk_4_DieLage_04_01"); //Fr√ºher war alles besser.
 };
 	
 // *************************************************************************

@@ -6,7 +6,7 @@ CONST STRING MOBNAME_BACKPACK_1		= "";
 CONST STRING MOBNAME_CRATE			= "Kiste";
 CONST STRING MOBNAME_CHEST			= "Truhe";
 CONST STRING MOBNAME_BED			= "Bett";
-CONST STRING MOBNAME_DOOR			= "Tür";
+CONST STRING MOBNAME_DOOR			= "TÃ¼r";
 CONST STRING MOBNAME_CAMP			= "";
 CONST STRING MOBNAME_TORCH			= "";
 CONST STRING MOBNAME_TORCHHOLDER	= "";
@@ -35,7 +35,7 @@ CONST STRING MOBNAME_STOMPER		= "";
 CONST STRING MOBNAME_BELLOW			= "Blasebalg";
 CONST STRING MOBNAME_STONEMILL		= "";
 CONST STRING MOBNAME_ORC_MUMMY		= "Mumie";
-CONST STRING MOBNAME_PILLAR			= "Säule";
+CONST STRING MOBNAME_PILLAR			= "SÃ¤ule";
 CONST STRING MOBNAME_BASKET_RICE	= "";
 CONST STRING MOBNAME_DRUM			= "";
 CONST STRING MOBNAME_GROUND_SLOT	= "n/a";
@@ -62,14 +62,14 @@ CONST STRING TXT_GUILDS	[GIL_MAX] =	{
 	"Feuermagier",
 	"Buddler",
 	"Wassermagier",
-	"Söldner",
+	"SÃ¶ldner",
 	"Bandit",
 	"Bauer",
-	"Schürfer",			// 10
+	"SchÃ¼rfer",			// 10
 	"Guru",
 	"Novize",
 	"Templer",
-	"Dämonenbeschw.",
+	"DÃ¤monenbeschw.",
 	"Babe",
 	"",
 	"Waran",			// 17
@@ -80,9 +80,9 @@ CONST STRING TXT_GUILDS	[GIL_MAX] =	{
 	"Minecrawler",
 	"Fleischwanze",
 	"Scavenger",
-	"Dämon",
+	"DÃ¤mon",
 	"Wolf",
-	"Schattenläufer",
+	"SchattenlÃ¤ufer",
 	"Bloodfly",
 	"Sumpfhai",			// 30
 	"Zombie",
@@ -95,7 +95,7 @@ CONST STRING TXT_GUILDS	[GIL_MAX] =	{
 	"",				// 38
 	"Orc Schamane",
 	"Orc Krieger",
-	"Orc Späher",
+	"Orc SpÃ¤her",
 	"Orc Sklave"
 };
 
@@ -103,7 +103,7 @@ CONST STRING TXT_GUILDS	[GIL_MAX] =	{
 // *****************************************************************************************
 // Attribut-Beschreibungen
 // *****************************************************************************************
-/* SN: wird laut Bert nicht mehr benötigt. Ich kommentier es erst mal eine Version lang aus
+/* SN: wird laut Bert nicht mehr benÃ¶tigt. Ich kommentier es erst mal eine Version lang aus
 const string TXT_ATTRIBUTE_DESC	[ATR_INDEX_MAX]	= {
 
 	"HitpointDesc",
@@ -116,16 +116,16 @@ const string TXT_ATTRIBUTE_DESC	[ATR_INDEX_MAX]	= {
 	""
 };
 
-"TXT_ATTRIBUTE_DESC" - Beschreibung	der	Attribute für CharScreen.
+"TXT_ATTRIBUTE_DESC" - Beschreibung	der	Attribute fÃ¼r CharScreen.
 "TXT_FIGHT_TALENTS"	- Namen	der	Kampftalente
-"TXT_FIGHT_TALENTS_DESC" - Beschreibung	der	Kampftalente für CharScreen.
+"TXT_FIGHT_TALENTS_DESC" - Beschreibung	der	Kampftalente fÃ¼r CharScreen.
 "TXT_TALENTS" -	Namen der sonstigen	Talente
-"TXT_TALENTS_DESC" - Beschreibung der Talente für CharScreen
-"TXT_SPELLS_DESC" -	Beschreibung der Spells	für	CharScreen
+"TXT_TALENTS_DESC" - Beschreibung der Talente fÃ¼r CharScreen
+"TXT_SPELLS_DESC" -	Beschreibung der Spells	fÃ¼r	CharScreen
 
-Die	Reihenfolge	der	jeweiligen Texte könnt ihr der Konstantenreihenfolge aus
+Die	Reihenfolge	der	jeweiligen Texte kÃ¶nnt ihr der Konstantenreihenfolge aus
 der	"constants.d" entnehmen, die hier auch mit dranhaengt und fuer
-fehlerfreies (Test-)parsen benötigt	wird.
+fehlerfreies (Test-)parsen benÃ¶tigt	wird.
 */
 
 // *****************************************************************************************
@@ -139,8 +139,8 @@ CONST STRING TXT_SPELLS	[MAX_SPELL]	= {
 	"Angst",					// SPL_FEAR			=	3;
 	"Heilung",					// SPL_HEAL			=	4;
 	"n/a",						// SPL_LIGHTNING	=	5;
-	"Dämon beschwören",			// SPL_SUMMONDEMON	=	6;
-	"Skelette beschwören",		// SPL_SUMMONSKELETON=	7;
+	"DÃ¤mon beschwÃ¶ren",			// SPL_SUMMONDEMON	=	6;
+	"Skelette beschwÃ¶ren",		// SPL_SUMMONSKELETON=	7;
 	"n/a",						// SPL_FORGET		=	8;
 	"Windfaust",				// SPL_WINDFIST		=	9;
 	"Telekinese",				// SPL_TELEKINESIS	=	10;
@@ -156,7 +156,7 @@ CONST STRING TXT_SPELLS	[MAX_SPELL]	= {
 	"n/a",						// SPL_SPEED		=	20;
 	"Teleport Feuermagier",		// SPL_TELEPORT1	=	21;
 	"Teleport Wassermagier",	// SPL_TELEPORT2	=	22;
-	"Teleport Dämonenbeschwörer",	// SPL_TELEPORT3	=	23;
+	"Teleport DÃ¤monenbeschwÃ¶rer",	// SPL_TELEPORT3	=	23;
 	"orkischer Teleport",		// SPL_TELEPORT4	=	24;
 	"Teleport Sumpflager",		// SPL_TELEPORT5	=	25;
 	"Verwandlung Blutfliege",	// SPL_TRF_BLOODFLY	=	26;
@@ -169,7 +169,7 @@ CONST STRING TXT_SPELLS	[MAX_SPELL]	= {
 	"n/a",						// SPL_TRF_RAZOR	=	33;
 	"Verwandlung Scavenger",	// SPL_TRF_SCAVENGER=	34;
 	"n/a",						// SPL_TRF_SCAVENGER2=	35;
-	"Verwandlung Schattenläufer",	// SPL_TRF_SHADOWBEAST=	36;
+	"Verwandlung SchattenlÃ¤ufer",	// SPL_TRF_SHADOWBEAST=	36;
 	"Verwandlung Snapper",		// SPL_TRF_SNAPPER	=	37;
 	"Verwandlung Waran",		// SPL_TRF_WARAN	=	38;
 	"Verwandlung Wolf",			// SPL_TRF_WOLF		=	39;
@@ -178,7 +178,7 @@ CONST STRING TXT_SPELLS	[MAX_SPELL]	= {
 	"Kugelblitz",				// SPL_THUNDERBALL	=	42;
 	"Eisblock",					// SPL_ICECUBE		=	43;
 	"Eiswelle",					// SPL_ICEWAVE		=	44;
-	"Golem beschwören",			// SPL_SUMMONGOLEM	=	45;
+	"Golem beschwÃ¶ren",			// SPL_SUMMONGOLEM	=	45;
 	"Armee der Finsternis",		// SPL_ARMYOFDARKNESS=	46;
 	"Sturmfaust",				// SPL_STORMFIST	=	47;
 	"n/a",						// SPL_TELEKINESIS2	=	48;
@@ -194,7 +194,7 @@ CONST STRING TXT_SPELLS	[MAX_SPELL]	= {
 	"New5"						// SPL_NEW5			=	21;
  };
 
-/* SN: wird laut Bert nicht mehr benötigt. Ich kommentier es erst mal eine Version lang aus
+/* SN: wird laut Bert nicht mehr benÃ¶tigt. Ich kommentier es erst mal eine Version lang aus
 CONST STRING TXT_SPELLS_DESC [MAX_SPELL] = {
 // FIXME: wo werden die benutzt?
 	"LichtDescr",						// SPL_LIGHT		=	0;
@@ -203,7 +203,7 @@ CONST STRING TXT_SPELLS_DESC [MAX_SPELL] = {
 	"FearDescr",						// SPL_FEAR			=	3;
 	"HeilenDescr",						// SPL_HEAL			=	4;
 	"BlitzDescr",						// SPL_LIGHTNING	=	5;
-	"Dämon beschw.Descr",				// SPL_SUMMONDEMON	=	6;
+	"DÃ¤mon beschw.Descr",				// SPL_SUMMONDEMON	=	6;
 	"Skelette beschw.Descr",			// SPL_SUMMONSKELETON=	7;
 	"VergessenDescr",					// SPL_FORGET		=	8;
 	"WindfaustDescr",					// SPL_WINDFIST		=	9;
@@ -267,11 +267,11 @@ CONST STRING TXT_SPELLS_DESC [MAX_SPELL] = {
 CONST STRING TXT_TALENTS [NPC_TALENT_MAX] =	
 {
 	"",	
-	"Einhänder",
-	"Zweihänder",
+	"EinhÃ¤nder",
+	"ZweihÃ¤nder",
 	"Bogen",
 	"Armbrust",
-	"Schlösser öffnen",
+	"SchlÃ¶sser Ã¶ffnen",
 	"Taschendiebstahl",
 	"Magie",
 	"Schleichen",
@@ -280,7 +280,7 @@ CONST STRING TXT_TALENTS [NPC_TALENT_MAX] =
 	"Akrobatik"
 };
 
-/* SN: wird laut Bert nicht mehr benötigt. Ich kommentier es erst mal eine Version lang aus
+/* SN: wird laut Bert nicht mehr benÃ¶tigt. Ich kommentier es erst mal eine Version lang aus
 CONST STRING TXT_TALENTS_DESC [NPC_TALENT_MAX] = 
 // FIXME: wo werden die benutzt?
 {
@@ -302,12 +302,12 @@ CONST STRING TXT_TALENTS_DESC [NPC_TALENT_MAX] =
 CONST STRING TXT_TALENTS_SKILLS [NPC_TALENT_MAX] = 
 {
 	"",	
-	"ungeübt|ausgebildet|gemeistert",						//NPC_TALENT_1H          
-	"ungeübt|ausgebildet|gemeistert",                       //NPC_TALENT_2H           
-	"ungeübt|ausgebildet|gemeistert",                       //NPC_TALENT_BOW         
-	"ungeübt|ausgebildet|gemeistert",                       //NPC_TALENT_CROSSBOW    
-	"ungeübt|ausgebildet|gemeistert",                       //NPC_TALENT_PICKLOCK   
-	"ungeübt|ausgebildet|gemeistert",                       //NPC_TALENT_PICKPOCKET
+	"ungeÃ¼bt|ausgebildet|gemeistert",						//NPC_TALENT_1H          
+	"ungeÃ¼bt|ausgebildet|gemeistert",                       //NPC_TALENT_2H           
+	"ungeÃ¼bt|ausgebildet|gemeistert",                       //NPC_TALENT_BOW         
+	"ungeÃ¼bt|ausgebildet|gemeistert",                       //NPC_TALENT_CROSSBOW    
+	"ungeÃ¼bt|ausgebildet|gemeistert",                       //NPC_TALENT_PICKLOCK   
+	"ungeÃ¼bt|ausgebildet|gemeistert",                       //NPC_TALENT_PICKPOCKET
 	"nein|1.Kreis|2.Kreis|3.Kreis|4.Kreis|5.Kreis|6.Kreis", //NPC_TALENT_MAGE         
 	"nein|ja",                                              //NPC_TALENT_SNEAK       
 	"|",                                      		        //NPC_TALENT_REGENERATE 
@@ -322,11 +322,11 @@ CONST STRING TXT_TALENTS_SKILLS [NPC_TALENT_MAX] =
 CONST STRING TXT_INV_CAT [INV_CAT_MAX] = {
 	"",
 	"Waffen",
-	"Rüstungen",
+	"RÃ¼stungen",
 	"Magie",
 	"Artefakte",
 	"Nahrung",
-	"Tränke",
+	"TrÃ¤nke",
 	"Schriften",
 	"Verschiedenes"
 };
@@ -338,19 +338,19 @@ CONST STRING TXT_INV_CAT [INV_CAT_MAX] = {
 
 CONST STRING NAME_Buddler		= "Buddler";
 CONST STRING NAME_Schatten		= "Schatten";
-CONST STRING NAME_ConvoiTraeger	= "Konvoi Träger";
+CONST STRING NAME_ConvoiTraeger	= "Konvoi TrÃ¤ger";
 CONST STRING NAME_ConvoiWache	= "Konvoi Wache";
 CONST STRING NAME_Torwache		= "Torwache";
-CONST STRING NAME_Brueckenwache	= "Brückenwache";
+CONST STRING NAME_Brueckenwache	= "BrÃ¼ckenwache";
 CONST STRING NAME_Gardist		= "Gardist";
 CONST STRING NAME_Bauer			= "Bauer";
-CONST STRING NAME_Schlaeger		= "Schläger";
-CONST STRING NAME_Schuerfer		= "Schürfer";
+CONST STRING NAME_Schlaeger		= "SchlÃ¤ger";
+CONST STRING NAME_Schuerfer		= "SchÃ¼rfer";
 CONST STRING NAME_Organisator	= "Bandit";
-CONST STRING NAME_Soeldner		= "Söldner";
+CONST STRING NAME_Soeldner		= "SÃ¶ldner";
 CONST STRING NAME_Novize		= "Novize";
 CONST STRING NAME_Templer		= "Templer";
-CONST STRING NAME_Raeuber		= "Räuber";
+CONST STRING NAME_Raeuber		= "RÃ¤uber";
 CONST STRING NAME_Tuersteher	= "Rausschmeisser";
 
 const string NAME_MadNovice		=	"Bessessener Novize";
@@ -363,7 +363,7 @@ const string NAME_MadTemplar2	=	"Apokalyptischer Templer";
 // *************************************************************
 
 CONST STRING DIALOG_ENDE		= "ENDE";
-CONST STRING DIALOG_BACK		= "ZURÜCK";
+CONST STRING DIALOG_BACK		= "ZURÃœCK";
 const string DIALOG_TRADE		= "(Tauschen)";
 
 // *************************************************************
@@ -378,7 +378,7 @@ const string NAME_Spruchrolle	= "Spruchrolle";
 
 
 // *************************************************************
-// TEXTE FÜR ITEM-BESCHREIBUNGEN IM INV.
+// TEXTE FÃœR ITEM-BESCHREIBUNGEN IM INV.
 // *************************************************************
 
 const string NAME_Value			= "Wert:";
@@ -389,9 +389,9 @@ const string NAME_ManakostenMax	= "Manakosten (max.):";
 const string NAME_ManaPerSec	= "Mana pro Sec.";
 const string NAME_Duration		= "Dauer (Minuten)";
 
-const string NAME_Mana_needed	= "benötigtes Mana:";
-const string NAME_Str_needed	= "benötigte Stärke:";
-const string NAME_Dex_needed	= "benötigte Geschicklichkeit:";
+const string NAME_Mana_needed	= "benÃ¶tigtes Mana:";
+const string NAME_Str_needed	= "benÃ¶tigte StÃ¤rke:";
+const string NAME_Dex_needed	= "benÃ¶tigte Geschicklichkeit:";
 
 const string NAME_Spell_Load	= "Aufladbarer Zauber";
 const string NAME_Spell_Invest	= "Aufrechterhaltungs-Zauber";
@@ -414,20 +414,20 @@ const string NAME_Prot_Magic	= "Schutz vor Magie:";
 const string NAME_Bonus_HP		= "Lebensenergie-Bonus:";
 const string NAME_Bonus_Mana	= "Mana-Bonus:";
 
-const string NAME_Bonus_HpMax	= "Bonus für maximale Lebensenergie:";
-const string NAME_Bonus_ManaMax	= "Bonus für maximales Mana:";
+const string NAME_Bonus_HpMax	= "Bonus fÃ¼r maximale Lebensenergie:";
+const string NAME_Bonus_ManaMax	= "Bonus fÃ¼r maximales Mana:";
 
 const string NAME_Bonus_Dex		= "Geschicklichkeits-Bonus:";
-const string NAME_Bonus_Str		= "Stärke-Bonus:";
+const string NAME_Bonus_Str		= "StÃ¤rke-Bonus:";
 
 const string NAME_OneHanded		= "Einhandwaffe";
 const string NAME_TwoHanded		= "Zweihandwaffe:";
 
-//----------------- MH: zusätzlich wegen FlexTranslate ---------------------
+//----------------- MH: zusÃ¤tzlich wegen FlexTranslate ---------------------
 
 const string NAME_HealingPerMana = "Heilung pro Mana"; 
 
-const string NAME_BuyAttributeSTR = "Stärke + ";
+const string NAME_BuyAttributeSTR = "StÃ¤rke + ";
 const string NAME_BuyAttributeDEX = "Geschicklichkeit + ";
 const string NAME_BuyAttributeMAN = "Mana + ";
 
@@ -451,24 +451,24 @@ const string _STR_ATTRIBUTE_HITPOINTS		= "Lebens-"											;
 const string _STR_ATTRIBUTE_HITPOINTS_MAX	= "maximale Lebens-"								;
 const string _STR_ATTRIBUTE_MANA			= "Mana-"											;
 const string _STR_ATTRIBUTE_MANA_MAX		= "maximale Mana-"									;
-const string _STR_ATTRIBUTE_STRENGTH		= "Stärke-"											;
+const string _STR_ATTRIBUTE_STRENGTH		= "StÃ¤rke-"											;
 const string _STR_ATTRIBUTE_DEXTERITY		= "Geschicklichkeits-"								;
 const string _STR_ATTRIBUTE_MAGIC_CIRCLE	= "magische Zauber-"								;
 
-// Bildschirmausgabe, falls der Spieler eine Waffe anlegen will, für die ihm Attributspunkte fehlen
+// Bildschirmausgabe, falls der Spieler eine Waffe anlegen will, fÃ¼r die ihm Attributspunkte fehlen
 const string _STR_CANNOTUSE_PRE_PLAYER		= "es fehlen "										;
 const string _STR_CANNOTUSE_POINTS			= "Punkte"											;
 const string _STR_CANNOTUSE_LEVELS		    = "Stufen"											;
 const string _STR_CANNOTUSE_POST			= ", um diesen Gegenstand anzulegen"				;
 
-// Bildschirmausgabe, falls ein NSC zu wenig Attributspunkte, für das Anlegen von Waffen hat (nur Debugzwecke!)
+// Bildschirmausgabe, falls ein NSC zu wenig Attributspunkte, fÃ¼r das Anlegen von Waffen hat (nur Debugzwecke!)
 const string _STR_CANNOTUSE_PRE_NPC			= " ("												;
 const string _STR_CANNOTUSE_POST_NPC		= ") fehlen "										;
 
-// Bidschrimausgabe zum Thema Schloß öffnen/knacken
-const string _STR_MESSAGE_INTERACT_NO_KEY	= "kein Dietrich oder passender Schlüssel";
-const string _STR_MESSAGE_PICKLOCK_SUCCESS	= "das hörte sich gut an";
-const string _STR_MESSAGE_PICKLOCK_UNLOCK	= "das Schloß ist geknackt";
+// Bidschrimausgabe zum Thema SchloÃŸ Ã¶ffnen/knacken
+const string _STR_MESSAGE_INTERACT_NO_KEY	= "kein Dietrich oder passender SchlÃ¼ssel";
+const string _STR_MESSAGE_PICKLOCK_SUCCESS	= "das hÃ¶rte sich gut an";
+const string _STR_MESSAGE_PICKLOCK_UNLOCK	= "das SchloÃŸ ist geknackt";
 const string _STR_MESSAGE_PICKLOCK_FAILURE	= "Mist.. wieder von vorne";
 const string _STR_MESSAGE_PICKLOCK_BROKEN	= "der Dietrich ist abgebrochen";
 
@@ -479,23 +479,23 @@ const string _STR_MESSAGE_WHEEL_STUCKS		= "die Winde klemmt"					;
 
 // Bidschrimausgabe beim storybedingten Transfer von Items
 const string _STR_MESSAGE_ITEM_GIVEN		= " Gegenstand gegeben"								;	//SPACE davor wichtig, weil Trennzeichen
-const string _STR_MESSAGE_ITEMS_GIVEN		= " Gegenstände gegeben"							;
+const string _STR_MESSAGE_ITEMS_GIVEN		= " GegenstÃ¤nde gegeben"							;
 const string _STR_MESSAGE_ORE_GIVEN			= " Erz gegeben"									;
 const string _STR_MESSAGE_ITEM_TAKEN		= " Gegenstand erhalten"							;
-const string _STR_MESSAGE_ITEMS_TAKEN		= " Gegenstände erhalten"							;
+const string _STR_MESSAGE_ITEMS_TAKEN		= " GegenstÃ¤nde erhalten"							;
 const string _STR_MESSAGE_ORE_TAKEN			= " Erz erhalten"									;
 
-// Bidschrimausgabe fürs Tausch-Fenster
+// Bidschrimausgabe fÃ¼rs Tausch-Fenster
 const string _STR_MESSAGE_TRADE_FAILURE		= "der Wert deiner Tauschware ist nicht hoch genug"	;
 
-// GILDENAUFNAHMEBEDINGUNG (für die Funktion "B_PrintGuildCondition()" )
-const string _STR_MESSAGE_Joincamp			=	"Voraussetzung für die Aufnahme: Stufe "; 
+// GILDENAUFNAHMEBEDINGUNG (fÃ¼r die Funktion "B_PrintGuildCondition()" )
+const string _STR_MESSAGE_Joincamp			=	"Voraussetzung fÃ¼r die Aufnahme: Stufe "; 
 
 // nicht beklaubare NSCs
 const string _STR_MESSAGE_CANNOTSTEAL		=	"kann nicht beklaut werden";
 
 // ***************************************************************************************
-// Relative Y-Koordinaten für die Bildschirmausgabe (in % der aktuellen Bildhöhe)
+// Relative Y-Koordinaten fÃ¼r die Bildschirmausgabe (in % der aktuellen BildhÃ¶he)
 // ***************************************************************************************
 const int	_YPOS_MESSAGE_GIVEN				=	37;
 const int	_YPOS_MESSAGE_TAKEN				=	40;
@@ -534,10 +534,10 @@ const string NAME_LearnMidfix		=	" Erz, ";
 const string NAME_LearnPostfixS		=	" Lernpunkt)";	
 const string NAME_LearnPostfixP		=	" Lernpunkte)";	
 
-const string NAME_LearnStrength_1	=	"Stärke +1";
-const string NAME_LearnStrength_5	=	"Stärke +5";
-const string NAME_LearnStrength_10	=	"Stärke +10";
-const string NAME_LearnStrength_20	=	"Stärke +20";
+const string NAME_LearnStrength_1	=	"StÃ¤rke +1";
+const string NAME_LearnStrength_5	=	"StÃ¤rke +5";
+const string NAME_LearnStrength_10	=	"StÃ¤rke +10";
+const string NAME_LearnStrength_20	=	"StÃ¤rke +20";
 
 const string NAME_LearnDexterity_1	=	"Geschick +1";
 const string NAME_LearnDexterity_5	=	"Geschick +5";
@@ -549,10 +549,10 @@ const string NAME_LearnMana_5		=	"Mana +5";
 const string NAME_LearnMana_10		=	"Mana +10";
 const string NAME_LearnMana_20		=	"Mana +20";
 
-const string NAME_Learn1h_1			=	"Einhänder Stufe 1";
-const string NAME_Learn1h_2			=	"Einhänder Stufe 2";
-const string NAME_Learn2h_1			=	"Zweihänder Stufe 1";
-const string NAME_Learn2h_2			=	"Zweihänder Stufe 2";
+const string NAME_Learn1h_1			=	"EinhÃ¤nder Stufe 1";
+const string NAME_Learn1h_2			=	"EinhÃ¤nder Stufe 2";
+const string NAME_Learn2h_1			=	"ZweihÃ¤nder Stufe 1";
+const string NAME_Learn2h_2			=	"ZweihÃ¤nder Stufe 2";
 
 const string NAME_LearnBow_1		=	"Bogen Stufe 1";
 const string NAME_LearnBow_2		=	"Bogen Stufe 2";
@@ -568,33 +568,33 @@ const string NAME_LearnMage_6		=	"6. Kreis der Magie";
 
 const string NAME_LearnPickpocket_1	=	"Taschendiebstahl Stufe 1";
 const string NAME_LearnPickpocket_2	=	"Taschendiebstahl Stufe 2";
-const string NAME_LearnPicklock_1	=	"Schlösser öffnen Stufe 1";
-const string NAME_LearnPicklock_2	=	"Schlösser öffnen Stufe 2";
+const string NAME_LearnPicklock_1	=	"SchlÃ¶sser Ã¶ffnen Stufe 1";
+const string NAME_LearnPicklock_2	=	"SchlÃ¶sser Ã¶ffnen Stufe 2";
 
 const string NAME_LearnAcrobat		=	"Akrobatik";
 const string NAME_LearnSneak		=	"Schleichen";
 
-const string NAME_RaiseStrength		=	"Stärke +";
+const string NAME_RaiseStrength		=	"StÃ¤rke +";
 const string NAME_RaiseDexterity	=	"Geschick +";
-const string NAME_RaiseStrDex		=	"Stärke und Geschick +";
+const string NAME_RaiseStrDex		=	"StÃ¤rke und Geschick +";
 const string NAME_RaiseManaMax		=	"maximale Mana +";
 const string NAME_RaiseHealthMax	=	"maximale Lebensenergie +";
 
-//---------------- MH: für B_BuildBuyArmorString ----------------------------
+//---------------- MH: fÃ¼r B_BuildBuyArmorString ----------------------------
 
-const string NAME_CorristoHighRobe	= 	"Meister, ich möchte die hohe Robe des Feuers tragen.";
+const string NAME_CorristoHighRobe	= 	"Meister, ich mÃ¶chte die hohe Robe des Feuers tragen.";
 const string NAME_SaturasHighRobe	= 	"Hohe Robe";
-const string NAME_DiegoHeavyShadows	=	"Schwere Schattenrüstung. Schutz: Waffen 40, Pfeile 5, Feuer 20";
-const string NAME_StoneHeavyGuards	= 	"Schwere Garderüstung. Schutz: Waffen 70, Pfeile 10, Feuer 35";
-const string NAME_StoneGuards		= 	"Garderüstung. Schutz: Waffen 55, Pfeile 10, Feuer 25";
-const string NAME_WolfBandits		= 	"Banditenrüstung. Schutz: Waffen 35, Pfeile 5, Feuer 15"; 
-const string NAME_WolfHeavyBandits	= 	"Schwere Banditenrüstung. Schutz: Waffen 40, Pfeile 5, Feuer 20";
-const string NAME_LeeMercs			= 	"Söldnerrüstung. Schutz: Waffen 55, Pfeile 10, Feuer 25";
-const string NAME_LeeHeavyMercs		= 	"Schwere Söldnerrüstung. Schutz: Waffen 70, Pfeile 10, Feuer 35";
+const string NAME_DiegoHeavyShadows	=	"Schwere SchattenrÃ¼stung. Schutz: Waffen 40, Pfeile 5, Feuer 20";
+const string NAME_StoneHeavyGuards	= 	"Schwere GarderÃ¼stung. Schutz: Waffen 70, Pfeile 10, Feuer 35";
+const string NAME_StoneGuards		= 	"GarderÃ¼stung. Schutz: Waffen 55, Pfeile 10, Feuer 25";
+const string NAME_WolfBandits		= 	"BanditenrÃ¼stung. Schutz: Waffen 35, Pfeile 5, Feuer 15"; 
+const string NAME_WolfHeavyBandits	= 	"Schwere BanditenrÃ¼stung. Schutz: Waffen 40, Pfeile 5, Feuer 20";
+const string NAME_LeeMercs			= 	"SÃ¶ldnerrÃ¼stung. Schutz: Waffen 55, Pfeile 10, Feuer 25";
+const string NAME_LeeHeavyMercs		= 	"Schwere SÃ¶ldnerrÃ¼stung. Schutz: Waffen 70, Pfeile 10, Feuer 35";
 const string NAME_FiskLightDiggers	= 	"Leichte Buddlerhosen. Schutz: Waffen 10, Feuer 5";
 const string NAME_FiskDiggers		= 	"Buddlerhosen. Schutz: Waffen 15, Feuer 5";
-const string NAME_GorNaTothHeavyTpl = 	"Schwere Templerrüstung. Schutz: Waffen 70, Pfeile 10, Feuer 35";
-const string NAME_GorNaTothTpl 		=	"Templerrüstung. Schutz: Waffen 55, Pfeile 10, Feuer 25";
+const string NAME_GorNaTothHeavyTpl = 	"Schwere TemplerrÃ¼stung. Schutz: Waffen 70, Pfeile 10, Feuer 35";
+const string NAME_GorNaTothTpl 		=	"TemplerrÃ¼stung. Schutz: Waffen 55, Pfeile 10, Feuer 25";
 const string NAME_TorwachenPsiRock	=	"Rock. Schutz: Waffen 15, Feuer 10";
 
 
@@ -616,7 +616,7 @@ const string MENU_TEXT_NEEDS_RESTART	= "Einige Einstellungen werden erst nach ei
 //
 const string STR_INFO_TRADE_ACCEPT						= "Annehmen"			;
 const string STR_INFO_TRADE_RESET						= "Ablehnen"			;
-const string STR_INFO_TRADE_EXIT						= "Zurück"				;
+const string STR_INFO_TRADE_EXIT						= "ZurÃ¼ck"				;
 
 const string STR_BADENIXE = "Badenixe";
 
@@ -633,6 +633,6 @@ const string KapWechsel_3_Text		= "Artefakte von uralter Macht"	;
 const string KapWechsel_4			= "Kapitel 4"					;
 const string KapWechsel_4_Text		= "Xardas"						;
 const string KapWechsel_5			= "Kapitel 5"					;
-const string KapWechsel_5_Text		= "Die Hüter des Portals"		;
+const string KapWechsel_5_Text		= "Die HÃ¼ter des Portals"		;
 const string KapWechsel_6			= "Kapitel 6"					;
-const string KapWechsel_6_Text		= "Die Hallen des Schläfers"	;
+const string KapWechsel_6_Text		= "Die Hallen des SchlÃ¤fers"	;

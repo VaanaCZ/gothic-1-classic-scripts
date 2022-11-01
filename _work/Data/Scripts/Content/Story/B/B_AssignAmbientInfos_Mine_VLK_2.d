@@ -37,7 +37,7 @@ INSTANCE Info_Mine_Vlk_2_Mine (C_INFO) // E1
 	condition	= Info_Mine_Vlk_2_Mine_Condition;
 	information	= Info_Mine_Vlk_2_Mine_Info;
 	permanent	= 1;
-	description = "Erzähl mir was von der Mine";
+	description = "ErzÃ¤hl mir was von der Mine";
 };                       
 
 FUNC INT Info_Mine_Vlk_2_Mine_Condition()
@@ -50,8 +50,8 @@ FUNC INT Info_Mine_Vlk_2_Mine_Condition()
 
 FUNC VOID Info_Mine_Vlk_2_Mine_Info()
 {
-	AI_Output(other,self,"Info_Mine_Vlk_2_Mine_15_00"); //Erzähl mir was von der Mine
-	AI_Output(self,other,"Info_Mine_Vlk_2_Mine_02_01"); //Es gibt einen ganzen Haufen Höhlen, in denen auch noch Erz zu holen ist. Aber die Crawler, machen die Arbeit darin unmöglich.
+	AI_Output(other,self,"Info_Mine_Vlk_2_Mine_15_00"); //ErzÃ¤hl mir was von der Mine
+	AI_Output(self,other,"Info_Mine_Vlk_2_Mine_02_01"); //Es gibt einen ganzen Haufen HÃ¶hlen, in denen auch noch Erz zu holen ist. Aber die Crawler, machen die Arbeit darin unmÃ¶glich.
 	AI_Output(self,other,"Info_Mine_Vlk_2_Mine_02_02"); //Zu viele Angriffe, zu viele Verluste.
 };
 
@@ -79,7 +79,7 @@ FUNC INT Info_Mine_Vlk_2_WichtigePersonen_Condition()
 FUNC VOID Info_Mine_Vlk_2_WichtigePersonen_Info()
 {
 	AI_Output(other,self,"Info_Mine_Vlk_2_WichtigePersonen_15_00"); //Wer hat hier was zu sagen?
-	AI_Output(self,other,"Info_Mine_Vlk_2_WichtigePersonen_02_01"); //Viper ist der Schmelzer. Er kennt sich mit dem Ofen aus. Er hat einen Körper aus Stahl. Ihm macht die Hitze nichts aus. Den ganzen Tag schmilzt er das Erz ein.
+	AI_Output(self,other,"Info_Mine_Vlk_2_WichtigePersonen_02_01"); //Viper ist der Schmelzer. Er kennt sich mit dem Ofen aus. Er hat einen KÃ¶rper aus Stahl. Ihm macht die Hitze nichts aus. Den ganzen Tag schmilzt er das Erz ein.
 };
 
 // *************************************************************************
@@ -92,7 +92,7 @@ INSTANCE Info_Mine_Vlk_2_Minecrawler(C_INFO)
 	condition	= Info_Mine_Vlk_2_Minecrawler_Condition;
 	information	= Info_Mine_Vlk_2_Minecrawler_Info;
 	permanent	= 1;
-	description = "Was weißt Du über Minecrawler?";
+	description = "Was weiÃŸt Du Ã¼ber Minecrawler?";
 };                       
 
 FUNC INT Info_Mine_Vlk_2_Minecrawler_Condition()
@@ -105,9 +105,9 @@ FUNC INT Info_Mine_Vlk_2_Minecrawler_Condition()
 
 FUNC VOID Info_Mine_Vlk_2_Minecrawler_Info()
 {
-	AI_Output(other,self,"Info_Mine_Vlk_2_Minecrawler_15_00"); //Was weißt du über Minecrawler?
-	AI_Output(self,other,"Info_Mine_Vlk_2_Minecrawler_02_01"); //Wir haben den großen Schacht ganz unten zugemacht. Da gibt's zu viele Minecrawler.
-	AI_Output(self,other,"Info_Mine_Vlk_2_Minecrawler_02_02"); //Hier gibt's überall Minecrawler. Hörst du sie? Ich kann sie hören!
+	AI_Output(other,self,"Info_Mine_Vlk_2_Minecrawler_15_00"); //Was weiÃŸt du Ã¼ber Minecrawler?
+	AI_Output(self,other,"Info_Mine_Vlk_2_Minecrawler_02_01"); //Wir haben den groÃŸen Schacht ganz unten zugemacht. Da gibt's zu viele Minecrawler.
+	AI_Output(self,other,"Info_Mine_Vlk_2_Minecrawler_02_02"); //Hier gibt's Ã¼berall Minecrawler. HÃ¶rst du sie? Ich kann sie hÃ¶ren!
 };
 
 // *************************************************************************
@@ -134,7 +134,7 @@ FUNC INT Info_Mine_Vlk_2_DieLage_Condition()
 FUNC VOID Info_Mine_Vlk_2_DieLage_Info()
 {
 	AI_Output(other,self,"Info_Mine_Vlk_2_DieLage_15_00"); //Wie sieht's aus?
-	AI_Output(self,other,"Info_Mine_Vlk_2_DieLage_02_01"); //Ich muss arbeiten. Wenn die Gardisten sehen, dass ich rede, dann kürzen sie meine Ration.
+	AI_Output(self,other,"Info_Mine_Vlk_2_DieLage_02_01"); //Ich muss arbeiten. Wenn die Gardisten sehen, dass ich rede, dann kÃ¼rzen sie meine Ration.
 };
 	
 // *************************************************************************

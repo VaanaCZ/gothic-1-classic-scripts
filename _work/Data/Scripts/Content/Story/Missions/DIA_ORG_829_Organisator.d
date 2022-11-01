@@ -105,7 +105,7 @@ INSTANCE Info_ORG_829_SpecialInfo (C_INFO)
 	condition	= Info_ORG_829_SpecialInfo_Condition;
 	information	= Info_ORG_829_SpecialInfo_Info;
 	permanent	= 0;
-	description	= "Ich bin neu hier - hast du irgendwelche Tipps für mich?";
+	description	= "Ich bin neu hier - hast du irgendwelche Tipps fÃ¼r mich?";
 };                       
 
 FUNC INT Info_ORG_829_SpecialInfo_Condition()
@@ -118,8 +118,8 @@ FUNC INT Info_ORG_829_SpecialInfo_Condition()
 
 FUNC VOID Info_ORG_829_SpecialInfo_Info()
 {	
-	AI_Output (other, self,"Info_ORG_829_SpecialInfo_15_00"); //Ich bin neu hier - hast du irgendwelche Tipps für mich?
-	AI_Output (self, other,"Info_ORG_829_SpecialInfo_06_01"); //Klar! Wenn du ins Lager kommst, geh zu Gorn. Er ist zwar einer der Söldner der Magier, aber er ist in Ordnung. War mal einer von uns.
+	AI_Output (other, self,"Info_ORG_829_SpecialInfo_15_00"); //Ich bin neu hier - hast du irgendwelche Tipps fÃ¼r mich?
+	AI_Output (self, other,"Info_ORG_829_SpecialInfo_06_01"); //Klar! Wenn du ins Lager kommst, geh zu Gorn. Er ist zwar einer der SÃ¶ldner der Magier, aber er ist in Ordnung. War mal einer von uns.
 	AI_Output (other, self,"Info_ORG_829_SpecialInfo_15_02"); //Von 'uns'?
 	AI_Output (self, other,"Info_ORG_829_SpecialInfo_06_03"); //Na, ein Bandit eben. Ein Wir-treten-den-Erzbaronen-in-den-Arsch-Bandit! 
 };

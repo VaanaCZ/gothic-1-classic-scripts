@@ -96,7 +96,7 @@ FUNC INT Info_Stt_10_WichtigePersonen_Condition()
 FUNC VOID Info_Stt_10_WichtigePersonen_Info()
 {
 	AI_Output(other,self,"Info_Stt_10_WichtigePersonen_15_00"); //Wen von den Leuten hier sollte ich kennen?
-	AI_Output(self,other,"Info_Stt_10_WichtigePersonen_10_01"); //Wenn du mal Probleme mit den Gardisten hast, geh zu Gravo. Du findest ihn am Waschplatz beim Burgtor. Er kümmert sich um Leute, die Ärger haben. Besonders bei Neuen passiert das hier schneller, als du denkst.
+	AI_Output(self,other,"Info_Stt_10_WichtigePersonen_10_01"); //Wenn du mal Probleme mit den Gardisten hast, geh zu Gravo. Du findest ihn am Waschplatz beim Burgtor. Er kÃ¼mmert sich um Leute, die Ã„rger haben. Besonders bei Neuen passiert das hier schneller, als du denkst.
 };
 
 // *************************************************************************
@@ -109,7 +109,7 @@ INSTANCE Info_Stt_10_DasLager(C_INFO)
 	condition	= Info_Stt_10_DasLager_Condition;
 	information	= Info_Stt_10_DasLager_Info;
 	permanent	= 1;
-	description = "Was kannst du mir über das Lager sagen?";
+	description = "Was kannst du mir Ã¼ber das Lager sagen?";
 };                       
 
 FUNC INT Info_Stt_10_DasLager_Condition()
@@ -119,9 +119,9 @@ FUNC INT Info_Stt_10_DasLager_Condition()
 
 FUNC VOID Info_Stt_10_DasLager_Info()
 {
-	AI_Output(other,self,"Info_Stt_10_DasLager_15_00"); //Was kannst du mir über das Lager sagen?
+	AI_Output(other,self,"Info_Stt_10_DasLager_15_00"); //Was kannst du mir Ã¼ber das Lager sagen?
 	AI_Output(self,other,"Info_Stt_10_DasLager_10_01"); //Am interessantesten hier ist wohl der Marktplatz. Wenn du mal was Bestimmtes suchst - da kriegst du fast alles.
-	AI_Output(self,other,"Info_Stt_10_DasLager_10_02"); //Es ist der Platz unter dem großen Dach im Süden des äußeren Rings.
+	AI_Output(self,other,"Info_Stt_10_DasLager_10_02"); //Es ist der Platz unter dem groÃŸen Dach im SÃ¼den des Ã¤uÃŸeren Rings.
 };
 
 // *************************************************************************

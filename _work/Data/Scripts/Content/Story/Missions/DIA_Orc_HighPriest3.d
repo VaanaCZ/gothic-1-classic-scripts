@@ -25,7 +25,7 @@ FUNC VOID Info_HighPriest3_Info()
 	AI_Output			(self, other,"Info_HighPriest3_17_02"); //DEINEEEEEE REISEEEEE EEEENDET HIIEEER BEI MIIIIR!!
 	AI_Output 			(other, self,"Info_HighPriest3_15_03"); //Erst mal schicke ich dich auf eine neue Reise, verfaultes Madenparadies!
 
-	B_LogEntry			(CH4_EnterTemple,	"Varrag-Unhilqt, einer der fünf Ork-Schamanen des Schläfers, steht vor mir. Nur einer von uns wird diese Kammer verlassen!");
+	B_LogEntry			(CH4_EnterTemple,	"Varrag-Unhilqt, einer der fÃ¼nf Ork-Schamanen des SchlÃ¤fers, steht vor mir. Nur einer von uns wird diese Kammer verlassen!");
 
 	AI_StopProcessInfos	(self);
 	

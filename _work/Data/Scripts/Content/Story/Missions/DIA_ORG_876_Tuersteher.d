@@ -23,7 +23,7 @@ FUNC VOID DIA_Org_876_EXIT_Info()
 };
 
 // ************************************************************
-// 						Bin Schürfer
+// 						Bin SchÃ¼rfer
 // ************************************************************
 
 INSTANCE DIA_Org_876_AmSfb (C_INFO)
@@ -33,7 +33,7 @@ INSTANCE DIA_Org_876_AmSfb (C_INFO)
 	condition	= DIA_Org_876_AmSfb_Condition;
 	information	= DIA_Org_876_AmSfb_Info;
 	permanent	= 1;
-	description = "Ich bin Schürfer! Und ich habe Durst!";
+	description = "Ich bin SchÃ¼rfer! Und ich habe Durst!";
 };                       
 
 FUNC INT DIA_Org_876_AmSfb_Condition()
@@ -47,7 +47,7 @@ FUNC INT DIA_Org_876_AmSfb_Condition()
 
 FUNC VOID DIA_Org_876_AmSfb_Info()
 {	
-	AI_Output (other, self,"DIA_Org_876_AmSfb_15_00"); //Ich bin Schürfer! Und ich habe Durst!
+	AI_Output (other, self,"DIA_Org_876_AmSfb_15_00"); //Ich bin SchÃ¼rfer! Und ich habe Durst!
 	
 	var C_ITEM myarmor;
 	
@@ -61,7 +61,7 @@ FUNC VOID DIA_Org_876_AmSfb_Info()
 	}
 	else
 	{
-		AI_Output (self, other,"DIA_Org_876_AmSfb_NOSFB_06_00"); //Du siehst nicht aus wie ein Schürfer. So kommst du hier nicht rein, Junge.
+		AI_Output (self, other,"DIA_Org_876_AmSfb_NOSFB_06_00"); //Du siehst nicht aus wie ein SchÃ¼rfer. So kommst du hier nicht rein, Junge.
 	};
 };
 
@@ -76,7 +76,7 @@ INSTANCE DIA_Org_876_Bribe (C_INFO)
 	condition	= DIA_Org_876_Bribe_Condition;
 	information	= DIA_Org_876_Bribe_Info;
 	permanent	= 1;
-	description = "Was hältst du von etwas Erz als Eintrittsgeld?";
+	description = "Was hÃ¤ltst du von etwas Erz als Eintrittsgeld?";
 };                       
 
 FUNC INT DIA_Org_876_Bribe_Condition()
@@ -90,12 +90,12 @@ FUNC INT DIA_Org_876_Bribe_Condition()
 
 FUNC VOID DIA_Org_876_Bribe_Info()
 {	
-	AI_Output (other, self,"DIA_Org_876_Bribe_15_00"); //Was hältst du von etwas Erz als Eintrittsgeld?
+	AI_Output (other, self,"DIA_Org_876_Bribe_15_00"); //Was hÃ¤ltst du von etwas Erz als Eintrittsgeld?
 	AI_Output (self, other,"DIA_Org_876_Bribe_06_01"); //Wie viel Erz ist denn 'etwas Erz'?
 	
 	Info_ClearChoices	(DIA_Org_876_Bribe );
 	Info_AddChoice		(DIA_Org_876_Bribe,"Hundert Erzbrocken sollten reichen."	,DIA_Org_876_Bribe_100Erz);
-	Info_AddChoice		(DIA_Org_876_Bribe,"Was denkst du über 50 Erz?"	,DIA_Org_876_Bribe_50Erz);
+	Info_AddChoice		(DIA_Org_876_Bribe,"Was denkst du Ã¼ber 50 Erz?"	,DIA_Org_876_Bribe_50Erz);
 	Info_AddChoice		(DIA_Org_876_Bribe,"Ich habe 10 Erz - hier."	,DIA_Org_876_Bribe_10Erz);
 };
 
@@ -104,7 +104,7 @@ func void DIA_Org_876_Bribe_10Erz()
 	AI_Output (other, self,"DIA_Org_876_Bribe_10Erz_15_00"); //Ich habe 10 Erz - hier.
 	if (Npc_HasItems (other, itminugget) >= 10)
 	{
-		AI_Output (self, other,"DIA_Org_876_Bribe_10Erz_06_01"); //10 Erz?  Dafür werde ich dir erlauben, es noch mal zu versuchen.
+		AI_Output (self, other,"DIA_Org_876_Bribe_10Erz_06_01"); //10 Erz?  DafÃ¼r werde ich dir erlauben, es noch mal zu versuchen.
 	}
 	else
 	{
@@ -116,10 +116,10 @@ func void DIA_Org_876_Bribe_10Erz()
 
 func void DIA_Org_876_Bribe_50Erz()
 {
-	AI_Output (other, self,"DIA_Org_876_Bribe_50Erz_15_00"); //Was denkst du über 50 Erz?
+	AI_Output (other, self,"DIA_Org_876_Bribe_50Erz_15_00"); //Was denkst du Ã¼ber 50 Erz?
 	if (Npc_HasItems (other, itminugget) >= 50)
 	{
-		AI_Output (self, other,"DIA_Org_876_Bribe_50Erz_06_01"); //Das ist ziemlich genau die Hälfte von dem, was ich als 'etwas Erz' bezeichnen würde.
+		AI_Output (self, other,"DIA_Org_876_Bribe_50Erz_06_01"); //Das ist ziemlich genau die HÃ¤lfte von dem, was ich als 'etwas Erz' bezeichnen wÃ¼rde.
 	}
 	else
 	{
@@ -157,7 +157,7 @@ INSTANCE DIA_Org_876_PERM (C_INFO)
 	condition	= DIA_Org_876_PERM_Condition;
 	information	= DIA_Org_876_PERM_Info;
 	permanent	= 1;
-	description = "Wie läuft das Schnapsgeschäft?";
+	description = "Wie lÃ¤uft das SchnapsgeschÃ¤ft?";
 };                       
 
 FUNC INT DIA_Org_876_PERM_Condition()
@@ -171,8 +171,8 @@ FUNC INT DIA_Org_876_PERM_Condition()
 
 FUNC VOID DIA_Org_876_PERM_Info()
 {	
-	AI_Output (other, self,"DIA_Org_876_PERM_15_00"); //Wie läuft das Schnapsgeschäft?
-	AI_Output (self, other,"DIA_Org_876_PERM_06_01"); //Geh rein und frag Silas. WIR können uns nicht beklagen.
+	AI_Output (other, self,"DIA_Org_876_PERM_15_00"); //Wie lÃ¤uft das SchnapsgeschÃ¤ft?
+	AI_Output (self, other,"DIA_Org_876_PERM_06_01"); //Geh rein und frag Silas. WIR kÃ¶nnen uns nicht beklagen.
 };
 
 // ************************************************************
@@ -199,7 +199,7 @@ FUNC INT DIA_Org_876_ScSld_Condition()
 
 FUNC VOID DIA_Org_876_ScSld_Info()
 {	
-	AI_Output (self, other,"DIA_Org_876_ScSld_06_00"); //Halt! Du kennst die Regeln. Nur Schürfer und Banditen!
+	AI_Output (self, other,"DIA_Org_876_ScSld_06_00"); //Halt! Du kennst die Regeln. Nur SchÃ¼rfer und Banditen!
 	AI_Output (other, self,"DIA_Org_876_ScSld_15_01"); //Willst du mich aufhalten?
 	AI_Output (self, other,"DIA_Org_876_ScSld_06_02"); //Nein ... Geh nur ...
 	self.aivar[AIV_PASSGATE] = TRUE;
@@ -276,8 +276,8 @@ FUNC VOID DIA_Org_876_GibKraut_Info()
 	}
 	else
 	{
-		AI_Output (other, self,"DIA_Org_876_GibKraut_KEIN_15_00"); //Äh ... Warte mal. Hab' doch nichts. 
-		AI_Output (self, other,"DIA_Org_876_GibKraut_KEIN_06_00"); //Na toll. Denk beim nächsten Mal an mich.
+		AI_Output (other, self,"DIA_Org_876_GibKraut_KEIN_15_00"); //Ã„h ... Warte mal. Hab' doch nichts. 
+		AI_Output (self, other,"DIA_Org_876_GibKraut_KEIN_06_00"); //Na toll. Denk beim nÃ¤chsten Mal an mich.
 		self.aivar[AIV_PASSGATE] = TRUE;
 	};
 };
@@ -291,11 +291,11 @@ FUNC VOID DIA_Org_876_GibKraut_Info()
 //	Uhrzeit:	24h
 //
 //	Es passiert folgendes:
-//	1.	Nähert sich der Spieler dem Durchgang, so wird er in diesen
+//	1.	NÃ¤hert sich der Spieler dem Durchgang, so wird er in diesen
 //		Dialog gezwungen und einmal gewarnt
-//	2.	Nähert sich der SC trotzdem weiter, so wird er ein ZWEITES Mal
+//	2.	NÃ¤hert sich der SC trotzdem weiter, so wird er ein ZWEITES Mal
 //		gewarnt (aggressiver mit Waffe ziehen)
-//	3.	Nähert er sich trotzdem wieder, wird er angegriffen
+//	3.	NÃ¤hert er sich trotzdem wieder, wird er angegriffen
 //////////////////////////////////////////////////////////////////////////
 
 // **********************************************
@@ -331,7 +331,7 @@ func void Info_Org_876_FirstWarn_Info()
 
 	AI_Output (self, hero,"Info_Org_876_FirstWarn_Info_06_00"); //Wo willst DU denn hin?
 	AI_Output (hero, self,"Info_Org_876_FirstWarn_Info_15_01"); //Na, da rein.
-	AI_Output (self, hero,"Info_Org_876_FirstWarn_Info_06_02"); //Vergiss es! Silas will in seiner Kneipe nur Schürfer und Banditen sehen .
+	AI_Output (self, hero,"Info_Org_876_FirstWarn_Info_06_02"); //Vergiss es! Silas will in seiner Kneipe nur SchÃ¼rfer und Banditen sehen .
 
 	hero.aivar[AIV_LASTDISTTOWP] 		= Npc_GetDistToWP(hero,Org_876_CHECKPOINT);
 	hero.aivar[AIV_GUARDPASSAGE_STATUS]	= AIV_GPS_FIRSTWARN;	
@@ -364,7 +364,7 @@ func int Info_Org_876_LastWarn_Condition()
 
 func int Info_Org_876_LastWarn_Info()
 {
-	AI_Output (self, hero,"Info_Org_876_LastWarn_06_00"); //Du hörst wohl schlecht, Bürschchen!
+	AI_Output (self, hero,"Info_Org_876_LastWarn_06_00"); //Du hÃ¶rst wohl schlecht, BÃ¼rschchen!
 
 	hero.aivar[AIV_LASTDISTTOWP] 		= Npc_GetDistToWP (hero,Org_876_CHECKPOINT);
 	hero.aivar[AIV_GUARDPASSAGE_STATUS]	= AIV_GPS_LASTWARN;	
@@ -404,7 +404,7 @@ func int Info_Org_876_Attack_Info()
 	hero.aivar[AIV_GUARDPASSAGE_STATUS]	= AIV_GPS_PUNISH;	
 	
 	B_FullStop			(self);	
-	AI_StopProcessInfos	(self);					// dem Spieler sofort wieder die Kontrolle zurückgeben
+	AI_StopProcessInfos	(self);					// dem Spieler sofort wieder die Kontrolle zurÃ¼ckgeben
 	B_IntruderAlert		(self,	other);
 	B_SetAttackReason	(self,	AIV_AR_INTRUDER);
 	Npc_SetTarget		(self,	hero);

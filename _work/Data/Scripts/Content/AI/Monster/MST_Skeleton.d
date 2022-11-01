@@ -100,7 +100,7 @@ INSTANCE Skeleton			(Mst_Default_Skeleton)
 };
 
 /*************************************************************************
-**	SkeletonSH - für die Gruft unter den Stonehenge (SH) 														**
+**	SkeletonSH - fÃ¼r die Gruft unter den Stonehenge (SH) 														**
 *************************************************************************/
 
 INSTANCE SkeletonSH			(Mst_Default_Skeleton)
@@ -133,7 +133,7 @@ INSTANCE SkeletonSH			(Mst_Default_Skeleton)
 
 INSTANCE SkeletonScout		(Mst_Default_Skeleton)
 {
-	name							=	"Skelett Späher";
+	name							=	"Skelett SpÃ¤her";
 	aivar[AIV_MM_REAL_ID]			= 	ID_SKELETONSCOUT;
 	Set_SkeletonScout_Visuals();
 	Npc_SetToFightMode		(self, ItMw_1H_Scythe_01);
@@ -168,7 +168,7 @@ INSTANCE SkeletonMage		(Mst_Default_Skeleton)
 	aivar[AIV_MM_REAL_ID]	= 	ID_SKELETONMAGE;
 	Set_SkeletonMage_Visuals();
 	name					=	"Skelett Magier";
-	guild					=	GIL_DEMON;	// "fliegende" Gilde nötig, damit es nicht Watet/Schwimmt/... !
+	guild					=	GIL_DEMON;	// "fliegende" Gilde nÃ¶tig, damit es nicht Watet/Schwimmt/... !
 	level					=	50;
 	
 	protection	[PROT_BLUNT]		=	50;
@@ -196,7 +196,7 @@ INSTANCE SkeletonMage_fogtower		(Mst_Default_Skeleton)
 	aivar[AIV_MM_REAL_ID]	= 	ID_SKELETONMAGE;
 	Set_SkeletonMage_Visuals();
 	name					=	"Skelett Magier des Nebelturms";
-	guild					=	GIL_DEMON;	// "fliegende" Gilde nötig, damit es nicht Watet/Schwimmt/... !
+	guild					=	GIL_DEMON;	// "fliegende" Gilde nÃ¶tig, damit es nicht Watet/Schwimmt/... !
 	level					=	50;
 	
 	protection	[PROT_BLUNT]		=	50;

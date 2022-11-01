@@ -70,13 +70,13 @@ FUNC int  Org_818_Ratford_WhatGame_Condition()
 FUNC VOID  Org_818_Ratford_WhatGame_Info()
 {
 	AI_Output (other, self,"Org_818_Ratford_WhatGame_15_00"); //Was jagt ihr denn so?
-	AI_Output (self, other,"Org_818_Ratford_WhatGame_07_01"); //Meistens Scavenger. Sie geben 'ne Menge Fleisch ab. Außerdem sind sie nicht so schwer zur Strecke zu bringen - wenn man weiß, wie.
+	AI_Output (self, other,"Org_818_Ratford_WhatGame_07_01"); //Meistens Scavenger. Sie geben 'ne Menge Fleisch ab. AuÃŸerdem sind sie nicht so schwer zur Strecke zu bringen - wenn man weiÃŸ, wie.
 	AI_Output (other, self,"Org_818_Ratford_WhatGame_15_02"); //So? Und wie?
-	AI_Output (self, other,"Org_818_Ratford_WhatGame_07_03"); //Frag meinen Freund Drax hier - der weiß über solche Sachen besser Bescheid als ich.
+	AI_Output (self, other,"Org_818_Ratford_WhatGame_07_03"); //Frag meinen Freund Drax hier - der weiÃŸ Ã¼ber solche Sachen besser Bescheid als ich.
 };
 
 // **************************************************
-//					Warum gefährlich
+//					Warum gefÃ¤hrlich
 // **************************************************
 
 instance  Org_818_Ratford_WhyDangerous (C_INFO)
@@ -86,7 +86,7 @@ instance  Org_818_Ratford_WhyDangerous (C_INFO)
 	condition	= Org_818_Ratford_WhyDangerous_Condition;
 	information	= Org_818_Ratford_WhyDangerous_Info;
 	permanent	= 0;
-	description = "Was ist an diesem Gebiet so gefährlich?";
+	description = "Was ist an diesem Gebiet so gefÃ¤hrlich?";
 };                       
 
 FUNC int  Org_818_Ratford_WhyDangerous_Condition()
@@ -96,14 +96,14 @@ FUNC int  Org_818_Ratford_WhyDangerous_Condition()
 
 FUNC VOID  Org_818_Ratford_WhyDangerous_Info()
 {
-	AI_Output (other, self,"Org_818_Ratford_WhyDangerous_15_00"); //Was ist an diesem Gebiet so gefährlich?
-	AI_Output (self, other,"Org_818_Ratford_WhyDangerous_07_01"); //Du bist gerade angekommen, was? In der Kolonie gibt es unterschiedlich gefährliche Gebiete.
-	AI_Output (self, other,"Org_818_Ratford_WhyDangerous_07_02"); //Auf den Wegen zwischen den Lagern ist es einigermaßen sicher. Aber auch dort kannst du ein paar Wölfen begegnen, die dich als leichte Beute sehen werden.
-	AI_Output (self, other,"Org_818_Ratford_WhyDangerous_07_03"); //Und genau das bist du auch, bis du geeignete Waffen und Rüstung hast.
+	AI_Output (other, self,"Org_818_Ratford_WhyDangerous_15_00"); //Was ist an diesem Gebiet so gefÃ¤hrlich?
+	AI_Output (self, other,"Org_818_Ratford_WhyDangerous_07_01"); //Du bist gerade angekommen, was? In der Kolonie gibt es unterschiedlich gefÃ¤hrliche Gebiete.
+	AI_Output (self, other,"Org_818_Ratford_WhyDangerous_07_02"); //Auf den Wegen zwischen den Lagern ist es einigermaÃŸen sicher. Aber auch dort kannst du ein paar WÃ¶lfen begegnen, die dich als leichte Beute sehen werden.
+	AI_Output (self, other,"Org_818_Ratford_WhyDangerous_07_03"); //Und genau das bist du auch, bis du geeignete Waffen und RÃ¼stung hast.
 };
 
 // **************************************************
-//					Wo Ausrüstung
+//					Wo AusrÃ¼stung
 // **************************************************
 
 instance  Org_818_Ratford_WoEquipment (C_INFO)
@@ -113,7 +113,7 @@ instance  Org_818_Ratford_WoEquipment (C_INFO)
 	condition	= Org_818_Ratford_WoEquipment_Condition;
 	information	= Org_818_Ratford_WoEquipment_Info;
 	permanent	= 0;
-	description = "Wo kriege ich bessere Ausrüstung her?";
+	description = "Wo kriege ich bessere AusrÃ¼stung her?";
 };                       
 
 FUNC int  Org_818_Ratford_WoEquipment_Condition()
@@ -126,13 +126,13 @@ FUNC int  Org_818_Ratford_WoEquipment_Condition()
 
 FUNC VOID  Org_818_Ratford_WoEquipment_Info()
 {
-	AI_Output (other, self,"Org_818_Ratford_WoEquipment_15_00"); //Wo kriege ich bessere Ausrüstung her?
-	AI_Output (self, other,"Org_818_Ratford_WoEquipment_07_01"); //Der nächste Ort ist das Alte Lager. Du musst nur dem Weg folgen, den du gekommen bist.
+	AI_Output (other, self,"Org_818_Ratford_WoEquipment_15_00"); //Wo kriege ich bessere AusrÃ¼stung her?
+	AI_Output (self, other,"Org_818_Ratford_WoEquipment_07_01"); //Der nÃ¤chste Ort ist das Alte Lager. Du musst nur dem Weg folgen, den du gekommen bist.
 	AI_Output (self, other,"Org_818_Ratford_WoEquipment_07_02"); //Aber bei uns im Neuen Lager bekommst du die Sachen billiger - wenn du die richtigen Leute kennst.
-	AI_Output (self, other,"Org_818_Ratford_WoEquipment_07_03"); //Wenn du ins alte Lager gehst, frag nach Mordrag. Er ist einer von uns. Er verkauft gute Ware für wenig Erz.
+	AI_Output (self, other,"Org_818_Ratford_WoEquipment_07_03"); //Wenn du ins alte Lager gehst, frag nach Mordrag. Er ist einer von uns. Er verkauft gute Ware fÃ¼r wenig Erz.
 	
 	Log_CreateTopic	(GE_TraderOC, LOG_NOTE);
-	B_LogEntry		(GE_TraderOC, "Der Bandit Mordrag verkauft im Alten Lager Waren aller Art zu günstigen Preisen.");
+	B_LogEntry		(GE_TraderOC, "Der Bandit Mordrag verkauft im Alten Lager Waren aller Art zu gÃ¼nstigen Preisen.");
 };
 
 // **************************************************
@@ -146,7 +146,7 @@ instance  Org_818_Ratford_MoreLocations (C_INFO)
 	condition	= Org_818_Ratford_MoreLocations_Condition;
 	information	= Org_818_Ratford_MoreLocations_Info;
 	permanent	= 0;
-	description = "Erzähl mir mehr über die Gebiete der Kolonie.";
+	description = "ErzÃ¤hl mir mehr Ã¼ber die Gebiete der Kolonie.";
 };                       
 
 FUNC int  Org_818_Ratford_MoreLocations_Condition()
@@ -159,11 +159,11 @@ FUNC int  Org_818_Ratford_MoreLocations_Condition()
 
 FUNC VOID  Org_818_Ratford_MoreLocations_Info()
 {
-	AI_Output (other, self,"Org_818_Ratford_MoreLocations_15_00"); //Erzähl mir mehr über die Gebiete der Kolonie.
+	AI_Output (other, self,"Org_818_Ratford_MoreLocations_15_00"); //ErzÃ¤hl mir mehr Ã¼ber die Gebiete der Kolonie.
 	AI_Output (self, other,"Org_818_Ratford_MoreLocations_07_01"); //Wenn du zwischen den Lagern reist, solltest du eine Karte haben. So kannst du die Verbindungswege von den Sackgassen unterscheiden.
-	AI_Output (self, other,"Org_818_Ratford_MoreLocations_07_02"); //Die Sackgassen führen dich oft in gefährliche Schluchten, in denen du Kreaturen begegnen wirst, denen du am Anfang besser aus dem Weg gehst.
+	AI_Output (self, other,"Org_818_Ratford_MoreLocations_07_02"); //Die Sackgassen fÃ¼hren dich oft in gefÃ¤hrliche Schluchten, in denen du Kreaturen begegnen wirst, denen du am Anfang besser aus dem Weg gehst.
 	AI_Output (self, other,"Org_818_Ratford_MoreLocations_07_03"); //Meide alte Ruinen, die Gegend hier ist voll davon. Die meisten sind alte Befestigungen aus dem ersten Ork-Krieg oder verlassene Ork-Behausungen.
-	AI_Output (self, other,"Org_818_Ratford_MoreLocations_07_04"); //In diesen Ruinen treiben sich oft Orks herum - oder Schlimmeres. Vor allem nachts würde ich diese Plätze meiden.
+	AI_Output (self, other,"Org_818_Ratford_MoreLocations_07_04"); //In diesen Ruinen treiben sich oft Orks herum - oder Schlimmeres. Vor allem nachts wÃ¼rde ich diese PlÃ¤tze meiden.
 	AI_Output (self, other,"Org_818_Ratford_MoreLocations_07_05"); //Und wenn du noch einen letzten Tipp willst - geh nicht in den Wald!
 };
 
@@ -203,7 +203,7 @@ FUNC void Org_818_Ratford_WoKarte_Info()
 func void Org_818_Ratford_WoKarte_Stehlen()
 {
 	AI_Output (other, self,"Org_818_Ratford_WoKarte_Stehlen_15_00"); //Wenn ich rankomme, ohne zu bezahlen, bringe ich mit, so viel ich tragen kann!
-	AI_Output (self, other,"Org_818_Ratford_WoKarte_Stehlen_07_01"); //Du gefällst mir! Du solltest dir überlegen, zu uns ins Neue Lager zu kommen! Wenn du mal da bist, frag nach Lares. Er kümmert sich um die Neuen. Er hat bestimmt was zu tun für dich!
+	AI_Output (self, other,"Org_818_Ratford_WoKarte_Stehlen_07_01"); //Du gefÃ¤llst mir! Du solltest dir Ã¼berlegen, zu uns ins Neue Lager zu kommen! Wenn du mal da bist, frag nach Lares. Er kÃ¼mmert sich um die Neuen. Er hat bestimmt was zu tun fÃ¼r dich!
 	
 	VAR C_NPC Lares; Lares = Hlp_GetNpc(ORG_801_LARES);
 	Lares.aivar[AIV_FINDABLE]=TRUE;
@@ -229,7 +229,7 @@ instance  Org_818_Ratford_Thanks (C_INFO)
 	condition	= Org_818_Ratford_Thanks_Condition;
 	information	= Org_818_Ratford_Thanks_Info;
 	permanent	= 0;
-	description = "Danke für die Hilfe.";
+	description = "Danke fÃ¼r die Hilfe.";
 };                       
 
 FUNC int  Org_818_Ratford_Thanks_Condition()
@@ -239,9 +239,9 @@ FUNC int  Org_818_Ratford_Thanks_Condition()
 
 FUNC VOID  Org_818_Ratford_Thanks_Info()
 {
-	AI_Output (other, self,"Org_818_Ratford_Thanks_15_00"); //Danke für die Hilfe.
-	AI_Output (self, other,"Org_818_Ratford_Thanks_07_01"); //Glaub bloß nicht, dass hier alle so nett zu dir sind, Kleiner!
-	AI_Output (self, other,"Org_818_Ratford_Thanks_07_02"); //Ist zwar nicht viel zu holen bei einem Neuen, aber einige hier würden dir sogar für eine alte Spitzhacke die Seele aus dem Leib prügeln.
+	AI_Output (other, self,"Org_818_Ratford_Thanks_15_00"); //Danke fÃ¼r die Hilfe.
+	AI_Output (self, other,"Org_818_Ratford_Thanks_07_01"); //Glaub bloÃŸ nicht, dass hier alle so nett zu dir sind, Kleiner!
+	AI_Output (self, other,"Org_818_Ratford_Thanks_07_02"); //Ist zwar nicht viel zu holen bei einem Neuen, aber einige hier wÃ¼rden dir sogar fÃ¼r eine alte Spitzhacke die Seele aus dem Leib prÃ¼geln.
 	AI_Output (other, self,"Org_818_Ratford_Thanks_15_04"); //Werd's mir merken.
 };
 

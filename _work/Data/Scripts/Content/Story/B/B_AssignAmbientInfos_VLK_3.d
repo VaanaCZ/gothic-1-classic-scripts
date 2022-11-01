@@ -50,7 +50,7 @@ FUNC INT Info_Vlk_3_EinerVonEuchWerden_Condition()
 
 FUNC VOID Info_Vlk_3_EinerVonEuchWerden_Info()
 {
-	AI_Output(other,self,"Info_Vlk_3_EinerVonEuchWerden_15_00"); //Wie kann ich mich diesem Lager anschlieﬂen?
+	AI_Output(other,self,"Info_Vlk_3_EinerVonEuchWerden_15_00"); //Wie kann ich mich diesem Lager anschlie√üen?
 	AI_Output(self,other,"Info_Vlk_3_EinerVonEuchWerden_03_01"); //Ich bin nur ein Buddler. Wir haben hier gar nichts zu sagen. Du solltest mit den Gardisten oder mit den Schatten reden.
 };
 
@@ -78,7 +78,7 @@ FUNC VOID Info_Vlk_3_WichtigePersonen_Info()
 {
 	AI_Output(other,self,"Info_Vlk_3_WichtigePersonen_15_00"); //Wer ist hier der Boss?
 	AI_Output(self,other,"Info_Vlk_3_WichtigePersonen_03_01"); //Gomez. Er lebt in der Burg. Aber wir Buddler haben immer nur mit seinen Gardisten zu tun.
-	AI_Output(self,other,"Info_Vlk_3_WichtigePersonen_03_02"); //Am besten ist es, wenn sie dich gar nicht bemerken. Sobald du hier auff‰llst, hast du ein Problem.
+	AI_Output(self,other,"Info_Vlk_3_WichtigePersonen_03_02"); //Am besten ist es, wenn sie dich gar nicht bemerken. Sobald du hier auff√§llst, hast du ein Problem.
 };
 
 // *************************************************************************
@@ -91,7 +91,7 @@ INSTANCE Info_Vlk_3_DasLager(C_INFO)
 	condition	= Info_Vlk_3_DasLager_Condition;
 	information	= Info_Vlk_3_DasLager_Info;
 	permanent	= 1;
-	description = "Was gibt es hier f¸r wichtige Orte?";
+	description = "Was gibt es hier f√ºr wichtige Orte?";
 };                       
 
 FUNC INT Info_Vlk_3_DasLager_Condition()
@@ -101,9 +101,9 @@ FUNC INT Info_Vlk_3_DasLager_Condition()
 
 FUNC VOID Info_Vlk_3_DasLager_Info()
 {
-	AI_Output(other,self,"Info_Vlk_3_DasLager_15_00"); //Was gibt es hier f¸r wichtige Orte?
+	AI_Output(other,self,"Info_Vlk_3_DasLager_15_00"); //Was gibt es hier f√ºr wichtige Orte?
 	AI_Output(self,other,"Info_Vlk_3_DasLager_03_01"); //Nun, wenn du wetten willst, geh abends in die Arena. Wenn du Sachen kaufen willst, gehst du am besten zum Marktplatz.
-	AI_Output(self,other,"Info_Vlk_3_DasLager_03_02"); //Da kriegt du fast alles. Auﬂer Karten. Wenn du Karten kaufen willst, geh zu Graham. Seine H¸tte ist schr‰g gegen¸ber dem Burgtor.
+	AI_Output(self,other,"Info_Vlk_3_DasLager_03_02"); //Da kriegt du fast alles. Au√üer Karten. Wenn du Karten kaufen willst, geh zu Graham. Seine H√ºtte ist schr√§g gegen√ºber dem Burgtor.
 };
 
 // *************************************************************************
@@ -128,7 +128,7 @@ FUNC VOID Info_Vlk_3_DieLage_Info()
 {
 	AI_Output(other,self,"Info_Vlk_3_DieLage_15_00"); //Wie steht's?
 	AI_Output(self,other,"Info_Vlk_3_DieLage_03_01"); //Du wirst es auch noch lernen. Immer wachsam bleiben. Selbst nachts.
-	AI_Output(self,other,"Info_Vlk_3_DieLage_03_02"); //Ich habe schon seit Tagen nicht mehr richtig geschlafen. Und wer hier in der Kolonie nicht schl‰ft, sitzt die doppelte Zeit ab!
+	AI_Output(self,other,"Info_Vlk_3_DieLage_03_02"); //Ich habe schon seit Tagen nicht mehr richtig geschlafen. Und wer hier in der Kolonie nicht schl√§ft, sitzt die doppelte Zeit ab!
 };
 	
 // *************************************************************************

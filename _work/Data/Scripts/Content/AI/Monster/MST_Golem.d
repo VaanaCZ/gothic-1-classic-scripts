@@ -152,7 +152,7 @@ INSTANCE FireGolem	(Mst_Default_Golem)
 	//-------- attributes --------
 	attribute	[ATR_STRENGTH]		=	50;	// da Feuerschaden
 	protection	[PROT_MAGIC]		=	0;	// betrifft im wesentlichen die Blitz- und Eiszauber
-	attribute	[ATR_HITPOINTS_MAX]	=	150;// da er nur durch Blitz- und Eiszauber verwundbar ist, muß dieser Wert hier sehr viel niedriger sein 
+	attribute	[ATR_HITPOINTS_MAX]	=	150;// da er nur durch Blitz- und Eiszauber verwundbar ist, muÃŸ dieser Wert hier sehr viel niedriger sein 
 	attribute	[ATR_HITPOINTS]		=	150;
 	damagetype 						=	DAM_FIRE;
 
@@ -195,12 +195,12 @@ INSTANCE IceGolem	(Mst_Default_Golem)
 /*************************************************************************
 **	Bridge Golem   														**
 *************************************************************************/
-// bewacht die Brücke zur Bergfestung
+// bewacht die BrÃ¼cke zur Bergfestung
 // Hinweis im Spiel: sollte mit Keulenwaffen bezwungen werden!
 INSTANCE BridgeGolem	(Mst_Default_Golem)
 {
 	//-------- general --------
-	name	=	"Brücken Golem";
+	name	=	"BrÃ¼cken Golem";
 	level	=	50;
 
 	//-------- visuals --------

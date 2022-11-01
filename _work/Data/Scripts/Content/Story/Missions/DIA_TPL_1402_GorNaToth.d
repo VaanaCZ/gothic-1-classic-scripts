@@ -47,7 +47,7 @@ FUNC int DIA_GorNaToth_Abweisend_Condition()
 FUNC VOID DIA_GorNaToth_Abweisend_Info()
 {
 	AI_Output			(other, self,"DIA_GorNaToth_AngarTalked_15_00"); //Kannst du mich trainieren?
-	AI_Output			(self, other,"DIA_GorNaToth_AngarTalked_11_01"); //Geh mir aus den Augen, Unwürdiger. Ich trainiere nur die Templer des Schläfers.
+	AI_Output			(self, other,"DIA_GorNaToth_AngarTalked_11_01"); //Geh mir aus den Augen, UnwÃ¼rdiger. Ich trainiere nur die Templer des SchlÃ¤fers.
 	AI_StopProcessInfos	(self);
 };
 
@@ -77,8 +77,8 @@ FUNC VOID DIA_GorNaToth_AngarTalked_Info()
 {
 	AI_Output (self, other,"DIA_GorNaToth_AngarTalked_11_00"); //Cor Angar hat mit dir geredet? Was hat er gesagt?
 	Info_ClearChoices		(DIA_GorNaToth_AngarTalked);
-	Info_AddChoice			(DIA_GorNaToth_AngarTalked,	"Er hat gesagt, du seist unwürdig, die Rüstung eines Templers zu tragen.",DIA_GorNaToth_AngarTalked_Unworthy);	
-	Info_AddChoice			(DIA_GorNaToth_AngarTalked,	"Er sagte, die Sumpfhaie habe er noch nie leiden können.",DIA_GorNaToth_AngarTalked_Shark);	
+	Info_AddChoice			(DIA_GorNaToth_AngarTalked,	"Er hat gesagt, du seist unwÃ¼rdig, die RÃ¼stung eines Templers zu tragen.",DIA_GorNaToth_AngarTalked_Unworthy);	
+	Info_AddChoice			(DIA_GorNaToth_AngarTalked,	"Er sagte, die Sumpfhaie habe er noch nie leiden kÃ¶nnen.",DIA_GorNaToth_AngarTalked_Shark);	
 	Info_AddChoice			(DIA_GorNaToth_AngarTalked,	"Er hat gesagt, ich soll wiederkommen, wenn ich Templer bin.",DIA_GorNaToth_AngarTalked_Normal);	
 };
 
@@ -86,13 +86,13 @@ func void DIA_GorNaToth_AngarTalked_Normal()
 {
 	AI_Output (other, self,"DIA_GorNaToth_AngarTalked_Normal_15_00"); //Er hat gesagt, ich soll wiederkommen, wenn ich Templer bin.
 	AI_Output (self, other,"DIA_GorNaToth_AngarTalked_Normal_11_01"); //Er scheint sehr viel von dir zu halten. Er redet so gut wie nie mit jemandem.
-	AI_Output (self, other,"DIA_GorNaToth_AngarTalked_Normal_11_02"); //Es ist eine große Ehre für dich, dass er dich überhaupt bemerkt hat. Mit MIR hat er das letzte Mal vor zwei Monaten geredet.
+	AI_Output (self, other,"DIA_GorNaToth_AngarTalked_Normal_11_02"); //Es ist eine groÃŸe Ehre fÃ¼r dich, dass er dich Ã¼berhaupt bemerkt hat. Mit MIR hat er das letzte Mal vor zwei Monaten geredet.
 	Info_ClearChoices		(DIA_GorNaToth_AngarTalked);
 };
 
 func void DIA_GorNaToth_AngarTalked_Shark()
 {
-	AI_Output (other, self,"DIA_GorNaToth_AngarTalked_Shark_15_00"); //Er sagte, die Sumpfhaie habe er noch nie leiden können.
+	AI_Output (other, self,"DIA_GorNaToth_AngarTalked_Shark_15_00"); //Er sagte, die Sumpfhaie habe er noch nie leiden kÃ¶nnen.
 	AI_Output (self, other,"DIA_GorNaToth_AngarTalked_Shark_11_01"); //Was ...? (bestimmt) Eine heilige Aufgabe erwartet mich!
 	AI_Output (self, other,"DIA_GorNaToth_AngarTalked_Shark_11_02"); //Der Wunsch meines Meisters ist mir Befehl.
 	Info_ClearChoices		(DIA_GorNaToth_AngarTalked);
@@ -100,8 +100,8 @@ func void DIA_GorNaToth_AngarTalked_Shark()
 
 func void DIA_GorNaToth_AngarTalked_Unworthy()
 {
-	AI_Output (other, self,"DIA_GorNaToth_AngarTalked_Unworthy_15_00"); //Er hat gesagt, du seiest unwürdig, die Rüstung eines Templers zu tragen.
-	AI_Output (self, other,"DIA_GorNaToth_AngarTalked_Unworthy_11_01"); //Niemals! Das hat er nicht gesagt! Nicht über MICH!
+	AI_Output (other, self,"DIA_GorNaToth_AngarTalked_Unworthy_15_00"); //Er hat gesagt, du seiest unwÃ¼rdig, die RÃ¼stung eines Templers zu tragen.
+	AI_Output (self, other,"DIA_GorNaToth_AngarTalked_Unworthy_11_01"); //Niemals! Das hat er nicht gesagt! Nicht Ã¼ber MICH!
 	Info_ClearChoices		(DIA_GorNaToth_AngarTalked);
 	AI_StopProcessInfos	( self );
 	Npc_SetTarget(self,other);
@@ -118,7 +118,7 @@ instance  TPL_1402_GorNaToth_GETSTUFF (C_INFO)
 	information		= TPL_1402_GorNaToth_GETSTUFF_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Ich möchte meine Templer-Rüstung abholen."; 
+	description		= "Ich mÃ¶chte meine Templer-RÃ¼stung abholen."; 
 };
 
 FUNC int  TPL_1402_GorNaToth_GETSTUFF_Condition()
@@ -132,14 +132,14 @@ FUNC int  TPL_1402_GorNaToth_GETSTUFF_Condition()
 };
 FUNC void  TPL_1402_GorNaToth_GETSTUFF_Info()
 {
-	AI_Output			(other, self,"TPL_1402_GorNaToth_GETSTUFF_Info_15_01"); //Ich möchte meine Templer-Rüstung abholen.
-	AI_Output			(self, other,"TPL_1402_GorNaToth_GETSTUFF_Info_11_02"); //Es ist mir eine Freude, dem Mann eine von unseren Rüstungen zu überreichen, der die Eier der Minecrawler gefunden hat.
-	AI_Output			(self, other,"TPL_1402_GorNaToth_GETSTUFF_Info_11_03"); //Diese Rüstung soll dich schützen, so wie der Schläfer die Bruderschaft schützt!
+	AI_Output			(other, self,"TPL_1402_GorNaToth_GETSTUFF_Info_15_01"); //Ich mÃ¶chte meine Templer-RÃ¼stung abholen.
+	AI_Output			(self, other,"TPL_1402_GorNaToth_GETSTUFF_Info_11_02"); //Es ist mir eine Freude, dem Mann eine von unseren RÃ¼stungen zu Ã¼berreichen, der die Eier der Minecrawler gefunden hat.
+	AI_Output			(self, other,"TPL_1402_GorNaToth_GETSTUFF_Info_11_03"); //Diese RÃ¼stung soll dich schÃ¼tzen, so wie der SchlÃ¤fer die Bruderschaft schÃ¼tzt!
 	
-	B_LogEntry			(GE_BecomeTemplar,	"Gor Na Toth überreichte mir meine erste Templer-Rüstung. Nun bin ich ein vollwertiges Mitglied dieser Kriegergemeinschaft!");
+	B_LogEntry			(GE_BecomeTemplar,	"Gor Na Toth Ã¼berreichte mir meine erste Templer-RÃ¼stung. Nun bin ich ein vollwertiges Mitglied dieser Kriegergemeinschaft!");
 
 	Log_CreateTopic		(GE_TraderPSI,		LOG_NOTE);
-	B_LogEntry			(GE_TraderPSI,		"Gor Na Toth verteilt bessere Templer-RÜSTUNGEN. Dafür erwarteter allerdings eine großzügige Spende an die Bruderschaft. Er ist tagsüber auf dem Übungsplatz der Templer zu finden.");
+	B_LogEntry			(GE_TraderPSI,		"Gor Na Toth verteilt bessere Templer-RÃœSTUNGEN. DafÃ¼r erwarteter allerdings eine groÃŸzÃ¼gige Spende an die Bruderschaft. Er ist tagsÃ¼ber auf dem Ãœbungsplatz der Templer zu finden.");
 	
 	CreateInvItem		(hero, TPL_ARMOR_L);
 	
@@ -160,7 +160,7 @@ instance  TPL_1402_GorNaToth_ARMOR (C_INFO)
 	information		= TPL_1402_GorNaToth_ARMOR_Info;
 	important		= 0;
 	permanent		= 1;
-	description		= "Ich brauche eine bessere Rüstung."; 
+	description		= "Ich brauche eine bessere RÃ¼stung."; 
 };
 
 FUNC int  TPL_1402_GorNaToth_ARMOR_Condition()
@@ -173,8 +173,8 @@ FUNC int  TPL_1402_GorNaToth_ARMOR_Condition()
 };
 FUNC void  TPL_1402_GorNaToth_ARMOR_Info()
 {
-	AI_Output				(other, self,"Info_GorNaToth_ARMOR_15_01"); //Ich brauche eine bessere Rüstung.
-	AI_Output				(self, other,"Info_GorNaToth_ARMOR_11_02"); //Ich könnte dir eine bessere Rüstung zuteilen, doch dafür musst du einen großzügigen Beitrag an die Bruderschaft spenden!
+	AI_Output				(other, self,"Info_GorNaToth_ARMOR_15_01"); //Ich brauche eine bessere RÃ¼stung.
+	AI_Output				(self, other,"Info_GorNaToth_ARMOR_11_02"); //Ich kÃ¶nnte dir eine bessere RÃ¼stung zuteilen, doch dafÃ¼r musst du einen groÃŸzÃ¼gigen Beitrag an die Bruderschaft spenden!
 
 	Info_ClearChoices		(TPL_1402_GorNaToth_ARMOR);
 	Info_AddChoice			(TPL_1402_GorNaToth_ARMOR,	DIALOG_BACK	,	TPL_1402_GorNaToth_ARMOR_BACK);	
@@ -186,19 +186,19 @@ FUNC void  TPL_1402_GorNaToth_ARMOR_Info()
 
 func void TPL_1402_GorNaToth_ARMOR_M ()
 {
-	AI_Output				(hero, self,"Info_GorNaToth_ARMOR_M_15_01"); //Ich möchte eine mittelschwere Templer-Rüstung haben.
+	AI_Output				(hero, self,"Info_GorNaToth_ARMOR_M_15_01"); //Ich mÃ¶chte eine mittelschwere Templer-RÃ¼stung haben.
 
 	if (Kapitel < 3)
 	{
-		AI_Output			(self, hero,"Info_GorNaToth_ARMOR_M_11_02"); //Du bist noch nicht so weit! Bewähre dich erst als Templer, dann wirst dir auch das Recht zuteil, eine bessere Rüstung zu tragen.
+		AI_Output			(self, hero,"Info_GorNaToth_ARMOR_M_11_02"); //Du bist noch nicht so weit! BewÃ¤hre dich erst als Templer, dann wirst dir auch das Recht zuteil, eine bessere RÃ¼stung zu tragen.
 	}
 	else if (Npc_HasItems(hero, ItMiNugget)<VALUE_TPL_ARMOR_M)
 	{
-		AI_Output			(self, hero,"Info_GorNaToth_ARMOR_M_11_03"); //Sobald du in der Lage bist, eine ausreichend große Spende an unsere Gemeinschaft zu leisten, steht dir eine bessere Rüstung zur Verfügung!
+		AI_Output			(self, hero,"Info_GorNaToth_ARMOR_M_11_03"); //Sobald du in der Lage bist, eine ausreichend groÃŸe Spende an unsere Gemeinschaft zu leisten, steht dir eine bessere RÃ¼stung zur VerfÃ¼gung!
 	}
 	else
 	{
-		AI_Output			(self, hero,"Info_GorNaToth_ARMOR_M_11_04"); //Nun, da du in der Lage bist, die erforderliche Spende zu leisten, sollst du fortan von einer neuen Rüstung geschützt werden.
+		AI_Output			(self, hero,"Info_GorNaToth_ARMOR_M_11_04"); //Nun, da du in der Lage bist, die erforderliche Spende zu leisten, sollst du fortan von einer neuen RÃ¼stung geschÃ¼tzt werden.
 		B_GiveInvItems	    (hero, self, ItMiNugget,	VALUE_TPL_ARMOR_M);
 		
 		CreateInvItem		(hero, TPL_ARMOR_M);
@@ -215,11 +215,11 @@ func void TPL_1402_GorNaToth_ARMOR_M ()
 
 func void TPL_1402_GorNaToth_ARMOR_H ()
 {
-	AI_Output				(hero, self,"Info_GorNaToth_ARMOR_H_15_01"); //Ich möchte eine schwere Templer-Rüstung haben.
+	AI_Output				(hero, self,"Info_GorNaToth_ARMOR_H_15_01"); //Ich mÃ¶chte eine schwere Templer-RÃ¼stung haben.
 
 	if (Kapitel < 4)
 	{
-		AI_Output			(self, hero,"Info_GorNaToth_ARMOR_H_11_02"); //Du bist noch nicht so weit! Bewähre dich erst noch weiter für unsere Gemeinschaft, dann wirst dir auch das Recht zuteil, solch eine erlesene Rüstung zu tragen.
+		AI_Output			(self, hero,"Info_GorNaToth_ARMOR_H_11_02"); //Du bist noch nicht so weit! BewÃ¤hre dich erst noch weiter fÃ¼r unsere Gemeinschaft, dann wirst dir auch das Recht zuteil, solch eine erlesene RÃ¼stung zu tragen.
 	}
 	else if (Npc_HasItems(hero, ItMiNugget)<VALUE_TPL_ARMOR_H)
 	{
@@ -227,11 +227,11 @@ func void TPL_1402_GorNaToth_ARMOR_H ()
 	}
 	else
 	{
-		AI_Output			(self, hero,"Info_GorNaToth_ARMOR_H_11_04"); //Trage diese Rüstung fortan als Zeichen der höchsten Ehre!
+		AI_Output			(self, hero,"Info_GorNaToth_ARMOR_H_11_04"); //Trage diese RÃ¼stung fortan als Zeichen der hÃ¶chsten Ehre!
 
 		B_GiveInvItems  	(hero, self, ItMiNugget,VALUE_TPL_ARMOR_H);
 
-		CreateInvItem		(self, ItAmArrow);				//SN: Kronkelgegenstand, damit die Bildschrimausgabe "1 Gegenstand erhalten" stimmt (Rüstung geht nicht, da dann immer Gor Na Toth seine eigene erst auszieht, und eine Sekunde nackt dasteht)
+		CreateInvItem		(self, ItAmArrow);				//SN: Kronkelgegenstand, damit die Bildschrimausgabe "1 Gegenstand erhalten" stimmt (RÃ¼stung geht nicht, da dann immer Gor Na Toth seine eigene erst auszieht, und eine Sekunde nackt dasteht)
 		B_GiveInvItems  	(self, hero, ItAmArrow, 1);
 		Npc_RemoveInvItem	(hero,	ItAmArrow);
 
@@ -244,8 +244,8 @@ func void TPL_1402_GorNaToth_ARMOR_H ()
 
 func void TPL_1402_GorNaToth_ARMOR_BACK ()
 {
-	AI_Output				(hero, self,"Info_GorNaToth_ARMOR_BACK_15_01"); //Ich hab' es mir anders überlegt!
-	AI_Output				(self, hero,"Info_GorNaToth_ARMOR_BACK_11_02"); //Wie du meinst. Du weißt, wo du mich findest!
+	AI_Output				(hero, self,"Info_GorNaToth_ARMOR_BACK_15_01"); //Ich hab' es mir anders Ã¼berlegt!
+	AI_Output				(self, hero,"Info_GorNaToth_ARMOR_BACK_11_02"); //Wie du meinst. Du weiÃŸt, wo du mich findest!
 
 	Info_ClearChoices		(TPL_1402_GorNaToth_ARMOR);
 };
@@ -275,7 +275,7 @@ FUNC INT TPL_1402_GorNaToth_Teach_Condition()
 FUNC VOID TPL_1402_GorNaToth_Teach_Info()
 {
 	AI_Output			(other,self,"TPL_1402_GorNaToth_Teach_15_00"); //Kannst du mich trainieren?
-	AI_Output			(self,other,"TPL_1402_GorNaToth_Teach_11_01"); //Stärke und Geschicklichkeit sind ebenso wichtig wie geistige Kraft.
+	AI_Output			(self,other,"TPL_1402_GorNaToth_Teach_11_01"); //StÃ¤rke und Geschicklichkeit sind ebenso wichtig wie geistige Kraft.
 	
 	Info_ClearChoices	(TPL_1402_GorNaToth_Teach);
 	Info_AddChoice		(TPL_1402_GorNaToth_Teach,DIALOG_BACK									,TPL_1402_GorNaToth_Teach_BACK);
@@ -289,7 +289,7 @@ FUNC VOID TPL_1402_GorNaToth_Teach_Info()
 	if (log_gornatothtrain == FALSE)
 	{
 		Log_CreateTopic   	(GE_TeacherPSI,LOG_NOTE);
-		B_LogEntry			(GE_TeacherPSI,"Der Templer Gor Na Toth kann mir helfen, meine STÄRKE, mein GESCHICK und mein MANA zu verbessern.");
+		B_LogEntry			(GE_TeacherPSI,"Der Templer Gor Na Toth kann mir helfen, meine STÃ„RKE, mein GESCHICK und mein MANA zu verbessern.");
 		log_gornatothtrain = TRUE;
 	};
 };
@@ -404,20 +404,20 @@ FUNC void  TPL_1402_GorNaToth_TRAIN_Info()
 	if	(log_gornatothfight == FALSE) 
 	{
 		Log_CreateTopic   	(GE_TeacherPSI,LOG_NOTE);
-		B_LogEntry			(GE_TeacherPSI,"Der Templer Gor Na Toth kann mir den Kampf mit EINHÄNDIGEN Waffen beibringen.");
+		B_LogEntry			(GE_TeacherPSI,"Der Templer Gor Na Toth kann mir den Kampf mit EINHÃ„NDIGEN Waffen beibringen.");
 		log_gornatothfight = TRUE;
 	};
-	AI_Output (other, self,"TPL_1402_GorNaToth_TRAIN_Info_15_00"); //Ich will besser mit Einhandwaffen umgehen können.
+	AI_Output (other, self,"TPL_1402_GorNaToth_TRAIN_Info_15_00"); //Ich will besser mit Einhandwaffen umgehen kÃ¶nnen.
 	
 	if B_GiveSkill(hero,NPC_TALENT_1H,1,LPCOST_TALENT_1H_1)
 	{
 		AI_Output			(self,other,"TPL_1402_GorNaToth_TRAIN_11_01"); //Gute Entscheidung! Um deine Technik zu verbessern, musst du erst einmal lernen, deine Waffe richtig zu halten.
-		AI_Output			(self,other,"TPL_1402_GorNaToth_TRAIN_11_02"); //Anfänger neigen dazu, Einhandwaffen mit beiden Händen zu halten. Mit so was fängst du am besten gar nicht erst an, das behindert dich nur.
-		AI_Output			(self,other,"TPL_1402_GorNaToth_TRAIN_11_03"); //Halt die Waffe mit einer Hand, Klinge nach oben, und dann immer schön schwingen lassen.
+		AI_Output			(self,other,"TPL_1402_GorNaToth_TRAIN_11_02"); //AnfÃ¤nger neigen dazu, Einhandwaffen mit beiden HÃ¤nden zu halten. Mit so was fÃ¤ngst du am besten gar nicht erst an, das behindert dich nur.
+		AI_Output			(self,other,"TPL_1402_GorNaToth_TRAIN_11_03"); //Halt die Waffe mit einer Hand, Klinge nach oben, und dann immer schÃ¶n schwingen lassen.
 		AI_Output			(self,other,"TPL_1402_GorNaToth_TRAIN_11_04"); //Du musst lernen, den Schwung deiner Waffe mit deinen Bewegungen in Einklang zu bringen, dann kannst du schneller zuschlagen.
-		AI_Output			(self,other,"TPL_1402_GorNaToth_TRAIN_11_05"); //Wenn du dich an meine Anweisungen hältst, wirst du in Zukunft eleganter und vor allem schneller kämpfen.
-		AI_Output			(self,other,"TPL_1402_GorNaToth_TRAIN_11_06"); //Ach, und noch was: Manche Treffer richten mehr Schaden an als andere! Als Anfänger hast du nur eine geringe Chance, solche kritischen Treffer zu landen.
-		AI_Output			(self,other,"TPL_1402_GorNaToth_TRAIN_11_07"); //Aber je weiter du fortschreitest, desto besser wird diese Fähigkeit.
+		AI_Output			(self,other,"TPL_1402_GorNaToth_TRAIN_11_05"); //Wenn du dich an meine Anweisungen hÃ¤ltst, wirst du in Zukunft eleganter und vor allem schneller kÃ¤mpfen.
+		AI_Output			(self,other,"TPL_1402_GorNaToth_TRAIN_11_06"); //Ach, und noch was: Manche Treffer richten mehr Schaden an als andere! Als AnfÃ¤nger hast du nur eine geringe Chance, solche kritischen Treffer zu landen.
+		AI_Output			(self,other,"TPL_1402_GorNaToth_TRAIN_11_07"); //Aber je weiter du fortschreitest, desto besser wird diese FÃ¤higkeit.
 		TPL_1402_GorNaToth_TRAIN.permanent = 0;
 
 		AI_StopProcessInfos	(self);
@@ -452,10 +452,10 @@ FUNC void  TPL_1402_GorNaToth_TRAINAGAIN_Info()
 	AI_Output (other, self,"TPL_1402_GorNaToth_TRAINAGAIN_Info_15_01"); //Zeige mir, wie ich im Umgang mit Waffen noch besser werden kann.
 	if B_GiveSkill(hero,NPC_TALENT_1H,2,LPCOST_TALENT_1H_2)
 	{
-		AI_Output (self, other,"TPL_1402_GorNaToth_TRAINAGAIN_Info_11_02"); //Na gut, die Grundkenntnisse hast du ja schon. Wenn du die Waffe gesenkt hältst, dann kannst du direkt mehr Wucht in deinen ersten Schlag legen.
-		AI_Output (self, other,"TPL_1402_GorNaToth_TRAINAGAIN_Info_11_03"); //Nutze den Schwung, weißt du noch? Gut, der nächste Schritt ist, dass du deinen Körper mehr einsetzt. Wenn du zweimal geschlagen hast, drehe dich um die eigene Achse, damit überraschst du den Gegner und bist in einer optimalen Position.
+		AI_Output (self, other,"TPL_1402_GorNaToth_TRAINAGAIN_Info_11_02"); //Na gut, die Grundkenntnisse hast du ja schon. Wenn du die Waffe gesenkt hÃ¤ltst, dann kannst du direkt mehr Wucht in deinen ersten Schlag legen.
+		AI_Output (self, other,"TPL_1402_GorNaToth_TRAINAGAIN_Info_11_03"); //Nutze den Schwung, weiÃŸt du noch? Gut, der nÃ¤chste Schritt ist, dass du deinen KÃ¶rper mehr einsetzt. Wenn du zweimal geschlagen hast, drehe dich um die eigene Achse, damit Ã¼berraschst du den Gegner und bist in einer optimalen Position.
 		AI_Output (self, other,"TPL_1402_GorNaToth_TRAINAGAIN_Info_11_04"); //Dann ziehst du deine Klinge noch einmal quer von rechts nach links .
-		AI_Output (self, other,"TPL_1402_GorNaToth_TRAINAGAIN_Info_11_05"); //Und wieder von vorne. Vergiss nicht, Übung macht den Meister. Also, geh jetzt und werde ein wahrer Meister des einhändigen Kampfes.
+		AI_Output (self, other,"TPL_1402_GorNaToth_TRAINAGAIN_Info_11_05"); //Und wieder von vorne. Vergiss nicht, Ãœbung macht den Meister. Also, geh jetzt und werde ein wahrer Meister des einhÃ¤ndigen Kampfes.
 		TPL_1402_GorNaToth_TRAINAGAIN.permanent = 0;
 
 		AI_StopProcessInfos	(self);

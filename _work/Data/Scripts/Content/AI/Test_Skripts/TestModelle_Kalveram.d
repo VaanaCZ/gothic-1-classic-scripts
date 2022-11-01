@@ -1,4 +1,4 @@
-//Savegame Bugfixbooks   ****Björn****
+//Savegame Bugfixbooks   ****BjÃ¶rn****
 
 
 INSTANCE Lukor_Bugfixbook(C_Item)
@@ -38,7 +38,7 @@ INSTANCE Lukor_Bugfixbook(C_Item)
 		Doc_PrintLine	( nDocID,  0, "");
 
 		//2.Seite
-		Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1);  //  0 -> margins are in pixels (Position des Textes von den Ränder des TGAs aus, links,oben,rechts,unten)
+		Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1);  //  0 -> margins are in pixels (Position des Textes von den RÃ¤nder des TGAs aus, links,oben,rechts,unten)
 		Doc_PrintLine	( nDocID,  1, "");
 		Doc_PrintLine	( nDocID,  1, "");
 		Doc_PrintLines	( nDocID,  1, "");
@@ -91,7 +91,7 @@ INSTANCE Lester_Bugfixbook(C_Item)
 		Doc_PrintLine	( nDocID,  0, "");
 
 		//2.Seite
-		Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1);  //  0 -> margins are in pixels (Position des Textes von den Ränder des TGAs aus, links,oben,rechts,unten)
+		Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1);  //  0 -> margins are in pixels (Position des Textes von den RÃ¤nder des TGAs aus, links,oben,rechts,unten)
 		Doc_PrintLine	( nDocID,  1, "");
 		Doc_PrintLine	( nDocID,  1, "");
 		Doc_PrintLines	( nDocID,  1, "");
@@ -124,9 +124,9 @@ Wld_InsertNpc				( SLD_754_Soeldner, "FMC_ENTRANCE" );//Guard	(am Eingang)	(evtl
 Wld_InsertNpc				( SLD_756_Soeldner, "FMC_ENTRANCE" );//Guard
 //Wld_InsertNpc				( SLD_757_Soeldner, "FMC_ENTRANCE" );//GuardPalisade
 //Wld_InsertNpc				( SLD_758_Soeldner, "FMC_ENTRANCE" );//GuardPalisade
-Wld_InsertNpc				( SLD_759_Soeldner, "FMC_ENTRANCE" );//Guard(Tür zum Drehradhaus)		(evtl Pers)
+Wld_InsertNpc				( SLD_759_Soeldner, "FMC_ENTRANCE" );//Guard(TÃ¼r zum Drehradhaus)		(evtl Pers)
 
-Wld_InsertNpc				( SLD_760_Soeldner, "FMC_ENTRANCE" );//Guard(Tür zum Drehradhaus)		(evtl Pers)
+Wld_InsertNpc				( SLD_760_Soeldner, "FMC_ENTRANCE" );//Guard(TÃ¼r zum Drehradhaus)		(evtl Pers)
 Wld_InsertNpc				( SLD_761_Soeldner, "FMC_ENTRANCE" );//Guard(Mineneingang)			(gleiche wie Tor zum OCC)
 Wld_InsertNpc				( SLD_762_Soeldner, "FMC_ENTRANCE" );//Guard(Mineneingang				(gleiche wie Tor zum OCC)
 Wld_InsertNpc				( SLD_763_Soeldner, "FMC_ENTRANCE" );//Guard

@@ -45,8 +45,8 @@ FUNC VOID  DIA_Torlof_Hallo_Info()
 {
 	AI_Output (other, self,"DIA_Torlof_Hallo_15_00"); //Wer bist du?
 	AI_Output (self, other,"DIA_Torlof_Hallo_04_01"); //Ich bin Torlof.
-	AI_Output (self, other,"DIA_Torlof_Hallo_04_02"); //Hab als Maat auf einem der königlichen Kriegsschiffe bei ner Meuterei mitgemacht. 
-	AI_Output (self, other,"DIA_Torlof_Hallo_04_03"); //Kam nicht so gut an. Der größte Teil der Mannschaft war auf der Seite des Käptn's.
+	AI_Output (self, other,"DIA_Torlof_Hallo_04_02"); //Hab als Maat auf einem der kÃ¶niglichen Kriegsschiffe bei ner Meuterei mitgemacht. 
+	AI_Output (self, other,"DIA_Torlof_Hallo_04_03"); //Kam nicht so gut an. Der grÃ¶ÃŸte Teil der Mannschaft war auf der Seite des KÃ¤ptn's.
 	AI_Output (self, other,"DIA_Torlof_Hallo_04_04"); //Seitdem bin ich hier.
 };
 
@@ -81,7 +81,7 @@ FUNC VOID  DIA_Torlof_Mitmachen_Info()
 	AI_Output (self, other,"DIA_Torlof_Mitmachen_04_03"); //Wenn du nen Tipp willst, Junge: Klau was wichtiges aus dem Alten Lager oder der Alten Mine.
 	AI_Output (self, other,"DIA_Torlof_Mitmachen_04_04"); //Wenn die Jungs hier merken, dass du gegen Gomez bist, hast du hier keine Probleme mehr.
 	AI_Output (other, self,"DIA_Torlof_Mitmachen_15_05"); //Und wie stelle ich das an?
-	AI_Output (self, other,"DIA_Torlof_Mitmachen_04_06"); //Du mußt ihr VERTRAUEN gewinnen - und dann haust du sie über's Ohr!
+	AI_Output (self, other,"DIA_Torlof_Mitmachen_04_06"); //Du muÃŸt ihr VERTRAUEN gewinnen - und dann haust du sie Ã¼ber's Ohr!
 };
 
 /*
@@ -97,7 +97,7 @@ instance DIA_Torlof_PERM (C_INFO)
 	condition	= DIA_Torlof_PERM_Condition;
 	information	= DIA_Torlof_PERM_Info;
 	permanent	= 1;
-	description = "Was kannst du mir über dieses Lager sagen?";
+	description = "Was kannst du mir Ã¼ber dieses Lager sagen?";
 };                       
 
 FUNC int DIA_Torlof_PERM_Condition()
@@ -107,9 +107,9 @@ FUNC int DIA_Torlof_PERM_Condition()
 
 FUNC VOID  DIA_Torlof_PERM_Info()
 {
-	AI_Output (other, self,"DIA_Torlof_PERM_15_00"); //Was kannst du mir über dieses Lager sagen?
+	AI_Output (other, self,"DIA_Torlof_PERM_15_00"); //Was kannst du mir Ã¼ber dieses Lager sagen?
 	AI_Output (self, other,"DIA_Torlof_PERM_04_01"); //Ist wie auf'm Piratenschiff, Junge. Solange ab und zu ein fetter Fischzug gegen Gomez drin ist, sind die Banditen zufrieden.
-	AI_Output (self, other,"DIA_Torlof_PERM_04_02"); //Wenn sie kein Erz mehr haben, um sich in der Kneipe vollaufen zu lassen, gibt's ne Menge Schlägereien.
+	AI_Output (self, other,"DIA_Torlof_PERM_04_02"); //Wenn sie kein Erz mehr haben, um sich in der Kneipe vollaufen zu lassen, gibt's ne Menge SchlÃ¤gereien.
 };
 
 */

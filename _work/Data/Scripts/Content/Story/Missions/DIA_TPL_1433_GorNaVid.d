@@ -18,7 +18,7 @@ FUNC int  Tpl_1433_GorNaVid_Exit_Condition()
 
 FUNC VOID  Tpl_1433_GorNaVid_Exit_Info()
 {
-	AI_Output (self, other,"Tpl_1433_GorNaVid_Exit_Info_13_02"); //Der Schläfer erwache.
+	AI_Output (self, other,"Tpl_1433_GorNaVid_Exit_Info_13_02"); //Der SchlÃ¤fer erwache.
 	AI_StopProcessInfos	( self );
 };
 
@@ -46,8 +46,8 @@ FUNC int  Tpl_1433_GorNaVid_HEALTH_Condition()
 FUNC void  Tpl_1433_GorNaVid_HEALTH_Info()
 {
 	AI_Output (other, self,"Tpl_1433_GorNaVid_HEALTH_Info_15_01"); //Ich brauche deine Hilfe
-	AI_Output (other, self,"Tpl_1433_GorNaVid_HEALTH_Info_15_02"); //Ich bin auf der Suche nach Sekret für Kalom und weiß, wo sich das Nest der Crawler befindet.
-	AI_Output (other, self,"Tpl_1433_GorNaVid_HEALTH_Info_15_03"); //Wenn der Durchgang geöffnet wird, bist du dabei?
+	AI_Output (other, self,"Tpl_1433_GorNaVid_HEALTH_Info_15_02"); //Ich bin auf der Suche nach Sekret fÃ¼r Kalom und weiÃŸ, wo sich das Nest der Crawler befindet.
+	AI_Output (other, self,"Tpl_1433_GorNaVid_HEALTH_Info_15_03"); //Wenn der Durchgang geÃ¶ffnet wird, bist du dabei?
 	AI_Output (self, other,"Tpl_1433_GorNaVid_HEALTH_Info_13_04"); //Der Kampf gegen Crawler kostet Blut. Wenn du mir einen Heiltrank bringst, bin ich dabei.
 
 };  
@@ -75,7 +75,7 @@ FUNC int  Tpl_1433_GorNaVid_IAN_Condition()
 FUNC void  Tpl_1433_GorNaVid_IAN_Info()
 {
 	AI_Output (other, self,"Tpl_1433_GorNaVid_IAN_Info_15_01"); //Ich suche das Nest der Minecrawler
-	AI_Output (self, other,"Tpl_1433_GorNaVid_IAN_Info_13_02"); //Hier in der Mine gibt es viele Höhlen neben dem Hauptschacht, aber dort haben wir noch kein Nest gefunden.
+	AI_Output (self, other,"Tpl_1433_GorNaVid_IAN_Info_13_02"); //Hier in der Mine gibt es viele HÃ¶hlen neben dem Hauptschacht, aber dort haben wir noch kein Nest gefunden.
 };  
 
 // ***************** Infos *****************************
@@ -103,7 +103,7 @@ FUNC int  Tpl_1433_GorNaVid_HEALTH_SUC_Condition()
 FUNC void  Tpl_1433_GorNaVid_HEALTH_SUC_Info()
 {
 	AI_Output (other, self,"Tpl_1433_GorNaVid_HEALTH_SUC_Info_15_01"); //Hier, vielleicht hilft dir das.
-	AI_Output (self, other,"Tpl_1433_GorNaVid_HEALTH_SUC_Info_13_02"); //Danke. Du kannst auf meine Stärke zählen. Wir treffen uns unten bei Ashgan.
+	AI_Output (self, other,"Tpl_1433_GorNaVid_HEALTH_SUC_Info_13_02"); //Danke. Du kannst auf meine StÃ¤rke zÃ¤hlen. Wir treffen uns unten bei Ashgan.
 	AI_Output (other, self,"Tpl_1433_GorNaVid_HEALTH_SUC_Info_15_03"); //Ich werde dort sein.
 	
 	if Npc_HasItems (hero,Itfo_Potion_Health_01)
@@ -120,13 +120,13 @@ FUNC void  Tpl_1433_GorNaVid_HEALTH_SUC_Info()
 	}
 	else 
 	{
-		PrintDebugNpc (PD_MISSION, "KEINE POTION= UNMÖGLICH");
+		PrintDebugNpc (PD_MISSION, "KEINE POTION= UNMÃ–GLICH");
 	};
 
 	Npc_ExchangeRoutine (self,"GATE"); 
 	Npc_SetPermAttitude	(self,ATT_FRIENDLY); 
 	B_GiveXP			(XP_HireGorNaVid);
-	B_LogEntry		(CH2_MCEggs,	"Ich mußte Gor Na Vid erst einen Heiltrank geben, bevor er sich als Verstärkung bei Asghans Tor zur Verfügung stellte.");	
+	B_LogEntry		(CH2_MCEggs,	"Ich muÃŸte Gor Na Vid erst einen Heiltrank geben, bevor er sich als VerstÃ¤rkung bei Asghans Tor zur VerfÃ¼gung stellte.");	
 
 	AI_StopProcessInfos	(self);
 };
@@ -139,7 +139,7 @@ instance  Tpl_1433_GorNavid_VICTORY (C_INFO)
 	information		= Tpl_1433_GorNavid_VICTORY_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Ich habe das Nest der Königin gefunden!"; 
+	description		= "Ich habe das Nest der KÃ¶nigin gefunden!"; 
 };
 
 FUNC int  Tpl_1433_GorNavid_VICTORY_Condition()
@@ -152,8 +152,8 @@ FUNC int  Tpl_1433_GorNavid_VICTORY_Condition()
 };
 FUNC void  Tpl_1433_GorNavid_VICTORY_Info()
 {
-	AI_Output (other, self,"Tpl_1433_GorNavid_VICTORY_Info_15_01"); //Ich habe das Nest der Königin gefunden!
-	AI_Output (self, other,"Tpl_1433_GorNavid_VICTORY_Info_13_02"); //Im Namen der gesamten Bruderschaft danke ich dir dafür!
-	AI_Output (self, other,"Tpl_1433_GorNavid_VICTORY_Info_13_03"); //Möge der Schläfer auch weiterhin seine schützende Hand über dich halten!
+	AI_Output (other, self,"Tpl_1433_GorNavid_VICTORY_Info_15_01"); //Ich habe das Nest der KÃ¶nigin gefunden!
+	AI_Output (self, other,"Tpl_1433_GorNavid_VICTORY_Info_13_02"); //Im Namen der gesamten Bruderschaft danke ich dir dafÃ¼r!
+	AI_Output (self, other,"Tpl_1433_GorNavid_VICTORY_Info_13_03"); //MÃ¶ge der SchlÃ¤fer auch weiterhin seine schÃ¼tzende Hand Ã¼ber dich halten!
 };     
  

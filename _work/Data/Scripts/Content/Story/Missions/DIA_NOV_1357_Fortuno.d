@@ -23,7 +23,7 @@ FUNC VOID  DIA_Fortuno_EXIT_Info()
 };
 
 // **************************************************
-//					Erste Begr¸ssung
+//					Erste Begr√ºssung
 // **************************************************
 
 instance  DIA_Fortuno_Greet (C_INFO)
@@ -46,7 +46,7 @@ FUNC int  DIA_Fortuno_Greet_Condition()
 
 FUNC VOID  DIA_Fortuno_Greet_Info()
 {
-	AI_Output (self, other,"DIA_Fortuno_Greet_05_00"); //Tritt n‰her! Hier gibt es ein Willkommensgeschenk f¸r jeden Neuen!
+	AI_Output (self, other,"DIA_Fortuno_Greet_05_00"); //Tritt n√§her! Hier gibt es ein Willkommensgeschenk f√ºr jeden Neuen!
 };
 
 // **************************************************
@@ -62,7 +62,7 @@ instance  DIA_Fortuno_GetGeschenk (C_INFO)
 	condition	= DIA_Fortuno_GetGeschenk_Condition;
 	information	= DIA_Fortuno_GetGeschenk_Info;
 	permanent	= 0;
-	description = "Was hast du f¸r mich?";
+	description = "Was hast du f√ºr mich?";
 };                       
 
 FUNC int  DIA_Fortuno_GetGeschenk_Condition()
@@ -72,21 +72,21 @@ FUNC int  DIA_Fortuno_GetGeschenk_Condition()
 
 FUNC VOID  DIA_Fortuno_GetGeschenk_Info()
 {
-	AI_Output (other, self,"DIA_Fortuno_GetGeschenk_15_00"); //Was hast du f¸r mich?
+	AI_Output (other, self,"DIA_Fortuno_GetGeschenk_15_00"); //Was hast du f√ºr mich?
 	AI_Output (self, other,"DIA_Fortuno_GetGeschenk_05_01"); //Hier, nimm drei Rollen Sumpfkraut. Es ist Schwarzer Weiser. Gutes Zeug.
-	AI_Output (self, other,"DIA_Fortuno_GetGeschenk_05_02"); //Du kannst jeden Tag mehr davon haben, aber wenn du mehr als deine t‰gliche Ration willst, musst du zahlen.
-	AI_Output (self, other,"DIA_Fortuno_GetGeschenk_05_03"); //Falls du auf deinem Weg zwischen den Lagern Kr‰uter und Beeren findest, bring sie zu mir. Ich werde sie dir abkaufen.
+	AI_Output (self, other,"DIA_Fortuno_GetGeschenk_05_02"); //Du kannst jeden Tag mehr davon haben, aber wenn du mehr als deine t√§gliche Ration willst, musst du zahlen.
+	AI_Output (self, other,"DIA_Fortuno_GetGeschenk_05_03"); //Falls du auf deinem Weg zwischen den Lagern Kr√§uter und Beeren findest, bring sie zu mir. Ich werde sie dir abkaufen.
 
 	CreateInvItems(self, itmijoint_2, 3);
 	B_GiveInvItems(self, other, itmijoint_2, 3);
 	Fortuno_RationDay = Wld_GetDay();
 	
 	Log_CreateTopic	(GE_TraderPSI,	LOG_NOTE);
-	B_LogEntry		(GE_TraderPSI,	"Fortuno handelt unter dem Alchemielabor mit Kr‰utern");
+	B_LogEntry		(GE_TraderPSI,	"Fortuno handelt unter dem Alchemielabor mit Kr√§utern");
 };
 
 // **************************************************
-//				T‰gliche Ration
+//				T√§gliche Ration
 // **************************************************
 
 instance  DIA_Fortuno_DailyRation (C_INFO)
@@ -96,7 +96,7 @@ instance  DIA_Fortuno_DailyRation (C_INFO)
 	condition	= DIA_Fortuno_DailyRation_Condition;
 	information	= DIA_Fortuno_DailyRation_Info;
 	permanent	= 1;
-	description = "Ich will mir meine t‰gliche Ration abholen.";
+	description = "Ich will mir meine t√§gliche Ration abholen.";
 };                       
 
 FUNC int  DIA_Fortuno_DailyRation_Condition()
@@ -109,7 +109,7 @@ FUNC int  DIA_Fortuno_DailyRation_Condition()
 
 FUNC VOID  DIA_Fortuno_DailyRation_Info()
 {
-	AI_Output (other, self,"DIA_Fortuno_DailyRation_15_00"); //Ich will mir meine t‰gliche Ration abholen.
+	AI_Output (other, self,"DIA_Fortuno_DailyRation_15_00"); //Ich will mir meine t√§gliche Ration abholen.
 	if (Fortuno_RationDay!=Wld_GetDay())
  	{
  		AI_Output (self, other,"DIA_Fortuno_DailyRation_05_01"); //Hier nimm. 3 Schwarzer Weiser - aber nicht alle auf einmal rauchen.

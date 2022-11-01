@@ -68,7 +68,7 @@ func void DIA_Fingers_BecomeShadow_BACK()
 func void DIA_Fingers_BecomeShadow_AnyTips()
 {
 	AI_Output (other, self,"DIA_Fingers_BecomeShadow_AnyTips_15_00"); //Kannst du mir dabei helfen?
-	AI_Output (self, other,"DIA_Fingers_BecomeShadow_AnyTips_05_01"); //Ich wüsste nicht, wie ...
+	AI_Output (self, other,"DIA_Fingers_BecomeShadow_AnyTips_05_01"); //Ich wÃ¼sste nicht, wie ...
 };
 
 func void DIA_Fingers_BecomeShadow_TeachMe()
@@ -77,13 +77,13 @@ func void DIA_Fingers_BecomeShadow_TeachMe()
 	AI_Output (self, other,"DIA_Fingers_BecomeShadow_TeachMe_05_01"); //Wie kommst du auf mich?
 	AI_Output (other, self,"DIA_Fingers_BecomeShadow_TeachMe_15_02"); //Diego schickt mich.
 	AI_Output (self, other,"DIA_Fingers_BecomeShadow_TeachMe_05_03"); //Sag das doch gleich.
-	AI_Output (self, other,"DIA_Fingers_BecomeShadow_TeachMe_05_04"); //Wenn du im Lager aufgenommen werden willst, hilft es, wenn du ein geschickter Kämpfer oder Dieb bist.
-	AI_Output (self, other,"DIA_Fingers_BecomeShadow_TeachMe_05_05"); //Wenn die einflussreichen Schatten in diesem Lager dich auf die Probe stellen, werden sie dir Aufträge geben, bei denen du dich besser nicht erwischen lässt.
-	AI_Output (self, other,"DIA_Fingers_BecomeShadow_TeachMe_05_06"); //Deswegen ist für den Anfang der Weg des Diebes für dich vielversprechender.
+	AI_Output (self, other,"DIA_Fingers_BecomeShadow_TeachMe_05_04"); //Wenn du im Lager aufgenommen werden willst, hilft es, wenn du ein geschickter KÃ¤mpfer oder Dieb bist.
+	AI_Output (self, other,"DIA_Fingers_BecomeShadow_TeachMe_05_05"); //Wenn die einflussreichen Schatten in diesem Lager dich auf die Probe stellen, werden sie dir AuftrÃ¤ge geben, bei denen du dich besser nicht erwischen lÃ¤sst.
+	AI_Output (self, other,"DIA_Fingers_BecomeShadow_TeachMe_05_06"); //Deswegen ist fÃ¼r den Anfang der Weg des Diebes fÃ¼r dich vielversprechender.
 	AI_Output (self, other,"DIA_Fingers_BecomeShadow_TeachMe_05_07"); //Wie es der Zufall so will, bin ich der beste Dieb im ganzen Alten Lager.
 	Fingers_CanTeach = TRUE;
 	Log_CreateTopic   	(GE_TeacherOC,LOG_NOTE);
-	B_LogEntry			(GE_TeacherOC,"Fingers kann mir die Talente der TASCHENDIEBSTAHL und SCHLÖSSER ÖFFNEN beibringen");
+	B_LogEntry			(GE_TeacherOC,"Fingers kann mir die Talente der TASCHENDIEBSTAHL und SCHLÃ–SSER Ã–FFNEN beibringen");
 	Info_ClearChoices	(DIA_Fingers_BecomeShadow );
 };
 
@@ -131,17 +131,17 @@ func void DIA_Fingers_Lehrer_Schleichen()
 {
 	AI_Output (other, self,"DIA_Fingers_Lehrer_Schleichen_15_00"); //Ich will lernen, mich lautlos zu bewegen.
 	AI_Output (self, other,"DIA_Fingers_Lehrer_Schleichen_05_01"); //Ich glaube - ohne falsche Bescheidenheit - ich bin einer der besten Diebe, die sie in die Kolonie geworfen haben.
-	AI_Output (self, other,"DIA_Fingers_Lehrer_Schleichen_05_02"); //Aber wenn es darum geht, zu lernen, wie man sich leise bewegt, ist Cavalorn der bessere Mann für dich!
+	AI_Output (self, other,"DIA_Fingers_Lehrer_Schleichen_05_02"); //Aber wenn es darum geht, zu lernen, wie man sich leise bewegt, ist Cavalorn der bessere Mann fÃ¼r dich!
 	Fingers_Wherecavalorn = TRUE;
 };
 
 func void DIA_Fingers_Lehrer_Lockpick()
 {
-	AI_Output (other, self,"DIA_Fingers_Lehrer_Lockpick_15_00"); //Wie werde ich besser im Knacken von Schlössern?
+	AI_Output (other, self,"DIA_Fingers_Lehrer_Lockpick_15_00"); //Wie werde ich besser im Knacken von SchlÃ¶ssern?
 	
 	if (B_GiveSkill(other, NPC_TALENT_PICKLOCK, 1, LPCOST_TALENT_PICKLOCK_1))
 	{
-		AI_Output (self, other,"DIA_Fingers_Lehrer_Lockpick_05_01"); //Das willst du gerne wissen, hm? Ist für den Anfang nicht so schwer.
+		AI_Output (self, other,"DIA_Fingers_Lehrer_Lockpick_05_01"); //Das willst du gerne wissen, hm? Ist fÃ¼r den Anfang nicht so schwer.
 		AI_Output (self, other,"DIA_Fingers_Lehrer_Lockpick_05_02"); //Du musst vor allem darauf achten, dass dir dein Dietrich nicht abbricht.
 		AI_Output (self, other,"DIA_Fingers_Lehrer_Lockpick_05_03"); //Wenn du in Zukunft mit weniger Gewalt an die Sache rangehst, wirst du merken, dass du weniger Dietriche verbrauchst!
 	};
@@ -149,13 +149,13 @@ func void DIA_Fingers_Lehrer_Lockpick()
 
 func void DIA_Fingers_Lehrer_Lockpick2()
 {
-	AI_Output (other, self,"DIA_Fingers_Lehrer_Lockpick2_15_00"); //Wie werde ich Meister im Öffnen von Schlössern?
+	AI_Output (other, self,"DIA_Fingers_Lehrer_Lockpick2_15_00"); //Wie werde ich Meister im Ã–ffnen von SchlÃ¶ssern?
 	
 	if (B_GiveSkill(other, NPC_TALENT_PICKLOCK, 2, LPCOST_TALENT_PICKLOCK_2))
 	{
-		AI_Output (self, other,"DIA_Fingers_Lehrer_Lockpick2_05_01"); //Nur wer schon einige Übung hat, merkt genau, wann ihm ein Dietrich abbricht und wann nicht. Du erkennst es am Geräusch!
+		AI_Output (self, other,"DIA_Fingers_Lehrer_Lockpick2_05_01"); //Nur wer schon einige Ãœbung hat, merkt genau, wann ihm ein Dietrich abbricht und wann nicht. Du erkennst es am GerÃ¤usch!
 		AI_Output (self, other,"DIA_Fingers_Lehrer_Lockpick2_05_02"); //Ich denke, du bist jetzt so weit - lerne, auf das leise Klicken des Schlosses zu achten, und du wirst nur noch selten das Pech haben, einen Dietrich zu verlieren.
-		AI_Output (self, other,"DIA_Fingers_Lehrer_Lockpick2_05_03"); //Ein Meister des Fachs hat eine gute Chance, eine Truhe zu öffnen, ohne dass sein Dietrich überhaupt abbricht.
+		AI_Output (self, other,"DIA_Fingers_Lehrer_Lockpick2_05_03"); //Ein Meister des Fachs hat eine gute Chance, eine Truhe zu Ã¶ffnen, ohne dass sein Dietrich Ã¼berhaupt abbricht.
 	};
 };
 
@@ -168,7 +168,7 @@ func void DIA_Fingers_Lehrer_Pickpocket()
 		{
 			AI_Output (self, other,"DIA_Fingers_Lehrer_PICKPOCKET_05_01"); //So, du willst also ein paar Leute um ihre Sachen erleichtern? Nun gut.
 			AI_Output (self, other,"DIA_Fingers_Lehrer_PICKPOCKET_05_02"); //Ich werde dir beibringen, wie du besser wirst, aber es besteht immer noch eine Chance, dass du erwischt wirst.
-			AI_Output (self, other,"DIA_Fingers_Lehrer_PICKPOCKET_05_03"); //Das Risiko solltest du nur eingehen, wenn außer deinem Opfer niemand sonst da ist.
+			AI_Output (self, other,"DIA_Fingers_Lehrer_PICKPOCKET_05_03"); //Das Risiko solltest du nur eingehen, wenn auÃŸer deinem Opfer niemand sonst da ist.
 			AI_Output (self, other,"DIA_Fingers_Lehrer_PICKPOCKET_05_04"); //Erst als Meister wirst du in der Lage sein, jemandem etwas aus der Tasche zu ziehen, ohne dass er es merkt!
 		};
 	}
@@ -221,9 +221,9 @@ FUNC VOID DIA_Fingers_WhereCavalorn_Info()
 {
 	AI_Output (other, self,"DIA_Fingers_WhereCavalorn_15_00"); //Wo finde ich Cavalorn?
 	AI_Output (self, other,"DIA_Fingers_WhereCavalorn_05_01"); //Er jagt in der Wildnis. Du findest ihn auf dem Weg zum Neuen Lager. Westlich des Alten Lagers beginnt eine breite Schlucht.
-	AI_Output (self, other,"DIA_Fingers_WhereCavalorn_05_02"); //In dieser Schlucht steht eine alte Holzfällerhütte. Dort findest du ihn.
+	AI_Output (self, other,"DIA_Fingers_WhereCavalorn_05_02"); //In dieser Schlucht steht eine alte HolzfÃ¤llerhÃ¼tte. Dort findest du ihn.
 	
-	B_LogEntry( GE_TeacherOW, "Cavalorn kann mir Schleichen beibringen. Seine Hütte steht in einer Schlucht westlich des Alten Lagers, auf dem Weg zum Neuen Lager.");
+	B_LogEntry( GE_TeacherOW, "Cavalorn kann mir Schleichen beibringen. Seine HÃ¼tte steht in einer Schlucht westlich des Alten Lagers, auf dem Weg zum Neuen Lager.");
 };
 
 // **************************************************
@@ -239,7 +239,7 @@ INSTANCE DIA_Fingers_Learnt (C_INFO)
 	condition		= DIA_Fingers_Learnt_Condition;
 	information		= DIA_Fingers_Learnt_Info;
 	permanent		= 1;
-	description		= "Du würdest nicht zufällig bei Diego ein gutes Wort für mich einlegen?"; 
+	description		= "Du wÃ¼rdest nicht zufÃ¤llig bei Diego ein gutes Wort fÃ¼r mich einlegen?"; 
 };
 
 FUNC INT DIA_Fingers_Learnt_Condition()
@@ -253,12 +253,12 @@ FUNC INT DIA_Fingers_Learnt_Condition()
 
 FUNC VOID DIA_Fingers_Learnt_Info()
 {
-	AI_Output (other, self,"DIA_Fingers_Learnt_15_00"); //Du würdest nicht zufällig bei Diego ein gutes Wort für mich einlegen?
+	AI_Output (other, self,"DIA_Fingers_Learnt_15_00"); //Du wÃ¼rdest nicht zufÃ¤llig bei Diego ein gutes Wort fÃ¼r mich einlegen?
 
 	if ( Npc_GetTalentSkill(other, NPC_TALENT_PICKLOCK)+Npc_GetTalentSkill(other, NPC_TALENT_PICKPOCKET)+Npc_GetTalentSkill(other, NPC_TALENT_SNEAK)	> 0)
 	{
-		AI_Output (self, other,"DIA_Fingers_Learnt_05_01"); //Ja. Du hast was gelernt, was dich wertvoll für uns macht.
-		AI_Output (self, other,"DIA_Fingers_Learnt_05_02"); //Geschickte Diebe können wir hier im Lager brauchen. Meine Stimme ist dir sicher.
+		AI_Output (self, other,"DIA_Fingers_Learnt_05_01"); //Ja. Du hast was gelernt, was dich wertvoll fÃ¼r uns macht.
+		AI_Output (self, other,"DIA_Fingers_Learnt_05_02"); //Geschickte Diebe kÃ¶nnen wir hier im Lager brauchen. Meine Stimme ist dir sicher.
 		Fingers_Learnt = LOG_SUCCESS;
 		
 		B_GiveXP (XP_Fingerstrain);
@@ -267,12 +267,12 @@ FUNC VOID DIA_Fingers_Learnt_Info()
 	else
 	{
 		AI_Output (self, other,"DIA_Fingers_Learnt_05_03"); //Kommt drauf an ...
-		AI_Output (self, other,"DIA_Fingers_Learnt_05_04"); //Wenn du zeigst, dass du als Dieb was gelernt hast, könnten wir dich schon brauchen!
+		AI_Output (self, other,"DIA_Fingers_Learnt_05_04"); //Wenn du zeigst, dass du als Dieb was gelernt hast, kÃ¶nnten wir dich schon brauchen!
 		AI_Output (other, self,"DIA_Fingers_Learnt_15_05"); //Wie soll ich das machen?
-		AI_Output (self, other,"DIA_Fingers_Learnt_05_06"); //Lerne ein Diebestalent! Werde geschickter im Schleichen, im Taschendiebstahl oder im Öffnen von Schlössern. Dann werde ich dich dir meine Stimme geben.
+		AI_Output (self, other,"DIA_Fingers_Learnt_05_06"); //Lerne ein Diebestalent! Werde geschickter im Schleichen, im Taschendiebstahl oder im Ã–ffnen von SchlÃ¶ssern. Dann werde ich dich dir meine Stimme geben.
 		Fingers_Learnt = LOG_RUNNING;
 		
-		B_LogEntry( CH1_JoinOC, "Fingers wird ein gutes Wort für mich einlegen, wenn ich ein Diebestalent lerne.");
+		B_LogEntry( CH1_JoinOC, "Fingers wird ein gutes Wort fÃ¼r mich einlegen, wenn ich ein Diebestalent lerne.");
 	};
 };
 

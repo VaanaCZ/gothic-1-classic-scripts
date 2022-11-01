@@ -23,10 +23,10 @@ FUNC VOID Info_HighPriest4_Info()
 	AI_GotoNpc			(self, other);
 	
 	AI_Output			(self, other,"Info_HighPriest4_17_01"); //ZUEEEENDEEEE IST DEEEIN LANGER WEEEG!!!
-	AI_Output			(self, other,"Info_HighPriest4_17_02"); //BREEENNEEEN SOLL DEINEEEE STEEEERBLICHEEEE HÜLLEEEE!!! 
-	AI_Output			(other, self,"Info_HighPriest4_15_03"); //Das wollen wir doch mal schön bleiben lassen!
+	AI_Output			(self, other,"Info_HighPriest4_17_02"); //BREEENNEEEN SOLL DEINEEEE STEEEERBLICHEEEE HÃœLLEEEE!!! 
+	AI_Output			(other, self,"Info_HighPriest4_15_03"); //Das wollen wir doch mal schÃ¶n bleiben lassen!
 	
-	B_LogEntry			(CH4_EnterTemple,	"Varrag-Ruuushk, einer der untoten Schamanen der Schläfer-Herbeirufung kreuzt nun meinen Weg. Er wird mich nicht aufhalten, dafür sorge ich!");
+	B_LogEntry			(CH4_EnterTemple,	"Varrag-Ruuushk, einer der untoten Schamanen der SchlÃ¤fer-Herbeirufung kreuzt nun meinen Weg. Er wird mich nicht aufhalten, dafÃ¼r sorge ich!");
 	AI_StopProcessInfos	(self);
 
 	Npc_SetAttitude 	(self, ATT_HOSTILE);

@@ -4,7 +4,7 @@
 
 
 // *************************************************************************
-// 									Vor Gespräch
+// 									Vor GesprÃ¤ch
 // *************************************************************************
 
 INSTANCE Info_SFB_5_Pre(C_INFO)
@@ -74,10 +74,10 @@ FUNC INT Info_SFB_5_EinerVonEuchWerden_Condition()
 FUNC VOID Info_SFB_5_EinerVonEuchWerden_Info()
 {
 	AI_Output(other,self,"Info_SFB_5_EinerVonEuchWerden_15_00"); //Was ist, wenn ich hier mitmachen will?
-	AI_Output(self,other,"Info_SFB_5_EinerVonEuchWerden_05_01"); //Hier mitmachen? Als was, Wasserträger?
-	AI_Output(other,self,"Info_SFB_5_EinerVonEuchWerden_15_02"); //Nein, als Schürfer?
-	AI_Output(self,other,"Info_SFB_5_EinerVonEuchWerden_05_03"); //Pass mal auf, lass dir eins gesagt sein: Niemand wird FREIWILLIG Schürfer.
-	AI_Output(self,other,"Info_SFB_5_EinerVonEuchWerden_05_04"); //Aber bitte, wenn du unbedingt willst. Geh mal zu Swiney, der hat bestimmt 'ne Spitzhacke übrig, die er dir gerne zur Verfügung stellt.
+	AI_Output(self,other,"Info_SFB_5_EinerVonEuchWerden_05_01"); //Hier mitmachen? Als was, WassertrÃ¤ger?
+	AI_Output(other,self,"Info_SFB_5_EinerVonEuchWerden_15_02"); //Nein, als SchÃ¼rfer?
+	AI_Output(self,other,"Info_SFB_5_EinerVonEuchWerden_05_03"); //Pass mal auf, lass dir eins gesagt sein: Niemand wird FREIWILLIG SchÃ¼rfer.
+	AI_Output(self,other,"Info_SFB_5_EinerVonEuchWerden_05_04"); //Aber bitte, wenn du unbedingt willst. Geh mal zu Swiney, der hat bestimmt 'ne Spitzhacke Ã¼brig, die er dir gerne zur VerfÃ¼gung stellt.
 };
 
 // *************************************************************************
@@ -103,7 +103,7 @@ FUNC VOID Info_SFB_5_WichtigePersonen_Info()
 	AI_Output(other,self,"Info_SFB_5_WichtigePersonen_15_00"); //Wer ist hier wichtig?
 	AI_Output(self,other,"Info_SFB_5_WichtigePersonen_05_01"); //Wer hier wichtig ist? -Ich!
 	AI_Output(self,other,"Info_SFB_5_WichtigePersonen_05_02"); //Aber ich glaube, du willst wissen, wer hier das Sagen hat.
-	AI_Output(self,other,"Info_SFB_5_WichtigePersonen_05_03"); //Also, ich denke, du solltest dich an die Söldner oder an die Banditen wenden. An die Wassermagier wirst du nicht rankommen.
+	AI_Output(self,other,"Info_SFB_5_WichtigePersonen_05_03"); //Also, ich denke, du solltest dich an die SÃ¶ldner oder an die Banditen wenden. An die Wassermagier wirst du nicht rankommen.
 	AI_Output(self,other,"Info_SFB_5_WichtigePersonen_05_04"); //Der aufgeblasene Swiney tut wichtiger, als er wirklich ist. Er verteilt nur die Spitzhacken und gehorcht ansonsten nur Okyls Befehlen.
 };
 
@@ -128,7 +128,7 @@ FUNC INT Info_SFB_5_DasLager_Condition()
 FUNC VOID Info_SFB_5_DasLager_Info()
 {
 	AI_Output(other,self,"Info_SFB_5_DasLager_15_00"); //Was gibt es hier im Lager?
-	AI_Output(self,other,"Info_SFB_5_DasLager_05_01"); //Kommt drauf an was man draus macht. Für einige nur viel Arbeit, für andere gibt's auch 'ne ganze Menge Spaß.
+	AI_Output(self,other,"Info_SFB_5_DasLager_05_01"); //Kommt drauf an was man draus macht. FÃ¼r einige nur viel Arbeit, fÃ¼r andere gibt's auch 'ne ganze Menge SpaÃŸ.
 };
 
 // *************************************************************************
@@ -153,7 +153,7 @@ FUNC VOID Info_SFB_5_DieLage_Info()
 {
 	AI_Output(other,self,"Info_SFB_5_DieLage_15_00"); //Wie ist das Leben hier?
 	AI_Output(self,other,"Info_SFB_5_DieLage_05_01"); //Toll!
-	AI_Output(self,other,"Info_SFB_5_DieLage_05_02"); //Und weil es uns so gut geht, versuchen wir möglichst schnell von hier abzuhauen.
+	AI_Output(self,other,"Info_SFB_5_DieLage_05_02"); //Und weil es uns so gut geht, versuchen wir mÃ¶glichst schnell von hier abzuhauen.
 	AI_Output(self,other,"Info_SFB_5_DieLage_05_03"); //Was glaubst du wo wir sind? Wir sind im Knast und niemand ist gerne im Knast.
 	
 };	

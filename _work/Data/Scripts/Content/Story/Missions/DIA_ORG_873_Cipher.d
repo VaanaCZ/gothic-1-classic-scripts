@@ -49,8 +49,8 @@ FUNC VOID  Org_873_Cipher_Hello_Info()
 {
 	AI_Output (other, self,"DIA_Cipher_Hello_15_00"); //Wie sieht's aus?
 	AI_Output (self, other,"DIA_Cipher_Hello_12_01"); //Wir haben Gomez mal wieder ins Essen gespuckt.
-	AI_Output (self, other,"DIA_Cipher_Hello_12_02"); //Drei tote Gardisten und 'ne ganze Menge Zeug zum Verhökern. Darauf trink ich!
-	AI_Output (other, self,"DIA_Cipher_Hello_15_03"); //Du bist einer von den Jungs, die ständig das alte Lager überfallen?
+	AI_Output (self, other,"DIA_Cipher_Hello_12_02"); //Drei tote Gardisten und 'ne ganze Menge Zeug zum VerhÃ¶kern. Darauf trink ich!
+	AI_Output (other, self,"DIA_Cipher_Hello_15_03"); //Du bist einer von den Jungs, die stÃ¤ndig das alte Lager Ã¼berfallen?
 	AI_Output (self, other,"DIA_Cipher_Hello_12_04"); //Nein. Nur wenn sich 'ne lohnende Gelegenheit bietet.
 };
 
@@ -80,7 +80,7 @@ FUNC VOID  Org_873_Cipher_Fisk_Info()
 {
 	AI_Output (other, self,"DIA_Cipher_Fisk_15_00"); //Fisk aus dem Alten Lager ist auf der Suche nach einem Handelspartner.
 	AI_Output (self, other,"DIA_Cipher_Fisk_12_01"); //Kein Interesse.
-	AI_Output (self, other,"DIA_Cipher_Fisk_12_02"); //Aber Sharky könnte sich dafür interessieren. Wenn du ihn findest, frag ihn.
+	AI_Output (self, other,"DIA_Cipher_Fisk_12_02"); //Aber Sharky kÃ¶nnte sich dafÃ¼r interessieren. Wenn du ihn findest, frag ihn.
 };
 
 // ******************************
@@ -110,10 +110,10 @@ FUNC int  Org_873_Cipher_FromBalor_Condition()
 FUNC VOID  Org_873_Cipher_FromBalor_Info()
 {
 	AI_Output (other, self,"DIA_Cipher_FromBalor_15_00"); //Was hast du anzubieten?
-	AI_Output (self, other,"DIA_Cipher_FromBalor_12_01"); //Die Frage ist doch, was hast DU anzubieten. Ich bin nur an größeren Lieferungen interessiert.
+	AI_Output (self, other,"DIA_Cipher_FromBalor_12_01"); //Die Frage ist doch, was hast DU anzubieten. Ich bin nur an grÃ¶ÃŸeren Lieferungen interessiert.
 	if (Balor_TellsNCDealer == TRUE)
 	{
-		AI_Output (other, self,"DIA_Cipher_FromBalor_15_02"); //Balor sagt, du hättest Interesse an etwas Sumpfkraut.
+		AI_Output (other, self,"DIA_Cipher_FromBalor_15_02"); //Balor sagt, du hÃ¤ttest Interesse an etwas Sumpfkraut.
 		AI_Output (self, other,"DIA_Cipher_FromBalor_12_03"); //Hmmm. Du willst also handeln?
 		Cipher_Trade = TRUE;
 	}

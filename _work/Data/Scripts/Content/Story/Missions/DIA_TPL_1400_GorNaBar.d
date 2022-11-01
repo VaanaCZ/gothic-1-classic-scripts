@@ -18,7 +18,7 @@ FUNC int  Tpl_1400_GorNaBar_Exit_Condition()
 
 FUNC VOID  Tpl_1400_GorNaBar_Exit_Info()
 {
-	AI_Output			(self, other,"Tpl_1400_GorNaBar_Exit_Info_09_02"); //Möge der Schläfer dich schützen!
+	AI_Output			(self, other,"Tpl_1400_GorNaBar_Exit_Info_09_02"); //MÃ¶ge der SchlÃ¤fer dich schÃ¼tzen!
 	AI_StopProcessInfos	( self );
 };
 
@@ -49,16 +49,16 @@ FUNC int  Tpl_1400_GorNaBar_SUGGEST_Condition()
 FUNC void  Tpl_1400_GorNaBar_SUGGEST_Info()
 {
 	AI_Output			(other, self,"Tpl_1400_GorNaBar_SUGGEST_Info_15_01"); //Ich brauche deine Hilfe
-	AI_Output			(other, self,"Tpl_1400_GorNaBar_SUGGEST_Info_15_02"); //Ich bin auf der Suche nach Sekret für Kalom und glaube zu wissen, wo das Nest der Crawler ist.
-	AI_Output			(other, self,"Tpl_1400_GorNaBar_SUGGEST_Info_15_03"); //Wenn der Durchgang geöffnet wird, bist du dabei?
-	AI_Output			(self, other,"Tpl_1400_GorNaBar_SUGGEST_Info_09_04"); //Das Nest der Crawler! Endlich. Mein Schwert kämpft für dich!
+	AI_Output			(other, self,"Tpl_1400_GorNaBar_SUGGEST_Info_15_02"); //Ich bin auf der Suche nach Sekret fÃ¼r Kalom und glaube zu wissen, wo das Nest der Crawler ist.
+	AI_Output			(other, self,"Tpl_1400_GorNaBar_SUGGEST_Info_15_03"); //Wenn der Durchgang geÃ¶ffnet wird, bist du dabei?
+	AI_Output			(self, other,"Tpl_1400_GorNaBar_SUGGEST_Info_09_04"); //Das Nest der Crawler! Endlich. Mein Schwert kÃ¤mpft fÃ¼r dich!
 
 	AI_StopProcessInfos	(self);
 	Npc_ExchangeRoutine (self,"GATE"); 
 	Npc_SetPermAttitude (self,ATT_FRIENDLY); 
 	B_GiveXP			(XP_HireGorNaBar);
 
-	B_LogEntry		(CH2_MCEggs,	"Als ich das Nest der Minecrawler erwähnte, schloß sich der Templer Gor Na Bar sofort meiner Verstärkung bei Asghans Tor an. Ich werde ihn dort finden.");
+	B_LogEntry		(CH2_MCEggs,	"Als ich das Nest der Minecrawler erwÃ¤hnte, schloÃŸ sich der Templer Gor Na Bar sofort meiner VerstÃ¤rkung bei Asghans Tor an. Ich werde ihn dort finden.");
 };
 
 // ***************** Infos *****************************
@@ -70,7 +70,7 @@ instance  Tpl_1400_GorNaBar_INFO (C_INFO)
 	information		= Tpl_1400_GorNaBar_INFO_Info;
 	important		= 0;
 	permanent		= 1;
-	description		= "Was weißt du über die Minecrawler?";
+	description		= "Was weiÃŸt du Ã¼ber die Minecrawler?";
 };
 
 FUNC int  Tpl_1400_GorNaBar_INFO_Condition()
@@ -83,8 +83,8 @@ FUNC int  Tpl_1400_GorNaBar_INFO_Condition()
 
 FUNC void  Tpl_1400_GorNaBar_INFO_Info()
 {
-	AI_Output			(other, self,"Tpl_1400_GorNaBar_INFO_Info_15_01"); //Was weißt du über die Minecrawler?
-	AI_Output			(self, other,"Tpl_1400_GorNaBar_INFO_Info_09_02"); //Die Crawler müssen irgendwo ein Nest haben. Wenn wir nur wüssten, wo es ist, dann würden wir die ganze Brut ausrotten!
+	AI_Output			(other, self,"Tpl_1400_GorNaBar_INFO_Info_15_01"); //Was weiÃŸt du Ã¼ber die Minecrawler?
+	AI_Output			(self, other,"Tpl_1400_GorNaBar_INFO_Info_09_02"); //Die Crawler mÃ¼ssen irgendwo ein Nest haben. Wenn wir nur wÃ¼ssten, wo es ist, dann wÃ¼rden wir die ganze Brut ausrotten!
 };    
 
 
@@ -96,7 +96,7 @@ instance  Tpl_1400_GorNaBar_VICTORY (C_INFO)
 	information		= Tpl_1400_GorNaBar_VICTORY_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Ich habe das Nest der Königin gefunden!"; 
+	description		= "Ich habe das Nest der KÃ¶nigin gefunden!"; 
 };
 
 FUNC int  Tpl_1400_GorNaBar_VICTORY_Condition()
@@ -109,9 +109,9 @@ FUNC int  Tpl_1400_GorNaBar_VICTORY_Condition()
 };
 FUNC void  Tpl_1400_GorNaBar_VICTORY_Info()
 {
-	AI_Output			(other, self,"Tpl_1400_GorNaBar_VICTORY_Info_15_01"); //Ich habe das Nest der Königin gefunden!
-	AI_Output			(self, other,"Tpl_1400_GorNaBar_VICTORY_Info_09_02"); //Du hast Mut und Kampfgeist bewiesen. Solche Leute können wir gebrauchen!
+	AI_Output			(other, self,"Tpl_1400_GorNaBar_VICTORY_Info_15_01"); //Ich habe das Nest der KÃ¶nigin gefunden!
+	AI_Output			(self, other,"Tpl_1400_GorNaBar_VICTORY_Info_09_02"); //Du hast Mut und Kampfgeist bewiesen. Solche Leute kÃ¶nnen wir gebrauchen!
 	
 	Log_CreateTopic (GE_BecomeTemplar,LOG_NOTE);
-	B_LogEntry (GE_BecomeTemplar,"Wenn ich die Eier zurückgebracht habe, sollte ich mal mit Cor Angar reden. Vielleicht nimmt er mich in die Reihen der Templer auf.");
+	B_LogEntry (GE_BecomeTemplar,"Wenn ich die Eier zurÃ¼ckgebracht habe, sollte ich mal mit Cor Angar reden. Vielleicht nimmt er mich in die Reihen der Templer auf.");
 };  

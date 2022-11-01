@@ -4,7 +4,7 @@
 
 PROTOTYPE Mst_Default_Shadowbeast(C_Npc)			
 {
-	name							=	"Schattenl‰ufer";
+	name							=	"Schattenl√§ufer";
 	guild							=	GIL_SHADOWBEAST;
 	aivar[AIV_MM_REAL_ID]			= 	ID_SHADOWBEAST;
 	level							=	40;

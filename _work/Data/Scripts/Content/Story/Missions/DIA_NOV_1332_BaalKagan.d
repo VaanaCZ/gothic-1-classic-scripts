@@ -45,7 +45,7 @@ FUNC VOID DIA_BaalKagan_Hello_Info()
 {	
 	AI_Output			(other, self,"DIA_BaalKagan_Hello_15_00"); //Du bist aus dem Lager der Sekte, richtig?
 	AI_Output			(self, other,"DIA_BaalKagan_Hello_13_01"); //Wir nennen es die Bruderschaft.
-	AI_Output			(self, other,"DIA_BaalKagan_Hello_13_02"); //Ich bin Baal Kagan. Der Schläfer sei mit dir.
+	AI_Output			(self, other,"DIA_BaalKagan_Hello_13_02"); //Ich bin Baal Kagan. Der SchlÃ¤fer sei mit dir.
 };
 
 // ************************************************************
@@ -73,12 +73,12 @@ FUNC INT DIA_BaalKagan_WhyHere_Condition()
 FUNC VOID DIA_BaalKagan_WhyHere_Info()
 {	
 	AI_Output			(other, self,"DIA_BaalKagan_WhyHere_15_00"); //Was machst du hier?
-	AI_Output			(self, other,"DIA_BaalKagan_WhyHere_13_01"); //Ursprünglich bin ich hierhin entsandt worden, um für unsere Gemeinschaft zu werben.
-	AI_Output			(self, other,"DIA_BaalKagan_WhyHere_13_02"); //Aber diese Barbaren wollen nichts wissen von geistiger Erleuchtung. So beschränke ich mich auf den Verkauf von Sumpfkraut.
+	AI_Output			(self, other,"DIA_BaalKagan_WhyHere_13_01"); //UrsprÃ¼nglich bin ich hierhin entsandt worden, um fÃ¼r unsere Gemeinschaft zu werben.
+	AI_Output			(self, other,"DIA_BaalKagan_WhyHere_13_02"); //Aber diese Barbaren wollen nichts wissen von geistiger Erleuchtung. So beschrÃ¤nke ich mich auf den Verkauf von Sumpfkraut.
 	AI_Output			(self, other,"DIA_BaalKagan_WhyHere_13_03"); //Dies wiederum wird hier sehr gerne gesehen. Zu gerne. Ich kann allein kaum alle meine Kunden beliefern.
 
 	Log_CreateTopic	(GE_TraderNC,	LOG_NOTE);
-	B_LogEntry		(GE_TraderNC,	"Baal Kagan verkauft Krautstengel an die Banditen und Söldner im Neuen Lager.");
+	B_LogEntry		(GE_TraderNC,	"Baal Kagan verkauft Krautstengel an die Banditen und SÃ¶ldner im Neuen Lager.");
 };
 
 // ************************************************************
@@ -107,7 +107,7 @@ FUNC INT DIA_BaalKagan_TRADE_Condition()
 FUNC VOID DIA_BaalKagan_TRADE_Info()
 {	
 	AI_Output			(other, self,"DIA_BaalKagan_TRADE_15_00"); //Zeig mir deine Waren.
-	AI_Output			(self, other,"DIA_BaalKagan_TRADE_13_01"); //Wie du wünschst.
+	AI_Output			(self, other,"DIA_BaalKagan_TRADE_13_01"); //Wie du wÃ¼nschst.
 };
 
 // ************************************************************
@@ -135,19 +135,19 @@ FUNC INT DIA_BaalKagan_OrderHelp_Condition()
 FUNC VOID DIA_BaalKagan_OrderHelp_Info()
 {	
 	AI_Output			(other, self,"DIA_BaalKagan_OrderHelp_15_00"); //Warum schicken sie nicht einen weiteren Mann?
-	AI_Output			(self, other,"DIA_BaalKagan_OrderHelp_13_01"); //Baal Isidro sollte mich unterstützen, aber er sitzt den ganzen Tag in der Kneipe auf dem See und tauscht sein Kraut gegen Reisschnaps ein.
-	AI_Output			(self, other,"DIA_BaalKagan_OrderHelp_13_02"); //Er ist dem Schnaps verfallen. Ich fürchte, von ihm ist keine Hilfe zu erwarten.
+	AI_Output			(self, other,"DIA_BaalKagan_OrderHelp_13_01"); //Baal Isidro sollte mich unterstÃ¼tzen, aber er sitzt den ganzen Tag in der Kneipe auf dem See und tauscht sein Kraut gegen Reisschnaps ein.
+	AI_Output			(self, other,"DIA_BaalKagan_OrderHelp_13_02"); //Er ist dem Schnaps verfallen. Ich fÃ¼rchte, von ihm ist keine Hilfe zu erwarten.
 	
 	if (Lares_Get400Ore == LOG_RUNNING)
 	{
 		Log_CreateTopic		(CH1_DealerJob,	LOG_MISSION);
 		Log_SetTopicStatus	(CH1_DealerJob,	LOG_RUNNING);
-	    B_LogEntry			(CH1_DealerJob,	"Baal Isidro sitzt den ganzen Tag in der Kneipe auf dem See und säuft.");	
+	    B_LogEntry			(CH1_DealerJob,	"Baal Isidro sitzt den ganzen Tag in der Kneipe auf dem See und sÃ¤uft.");	
 	};
 };
 
 // ************************************************************
-// 					Ich könnte dir helfen
+// 					Ich kÃ¶nnte dir helfen
 // ************************************************************
 
 INSTANCE DIA_BaalKagan_WannaHelp(C_INFO)
@@ -157,7 +157,7 @@ INSTANCE DIA_BaalKagan_WannaHelp(C_INFO)
 	condition	= DIA_BaalKagan_WannaHelp_Condition;
 	information	= DIA_BaalKagan_WannaHelp_Info;
 	permanent	= 0;
-	description = "Ich könnte dir helfen, dein Kraut unter die Leute zu bringen.";
+	description = "Ich kÃ¶nnte dir helfen, dein Kraut unter die Leute zu bringen.";
 };                       
 
 FUNC INT DIA_BaalKagan_WannaHelp_Condition()
@@ -170,12 +170,12 @@ FUNC INT DIA_BaalKagan_WannaHelp_Condition()
 
 FUNC VOID DIA_BaalKagan_WannaHelp_Info()
 {	
-	AI_Output			(other, self,"DIA_BaalKagan_WannaHelp_15_00"); //Ich könnte dir helfen, dein Kraut unter die Leute zu bringen.
-	AI_Output			(self, other,"DIA_BaalKagan_WannaHelp_13_01"); //Eine so große Menge Kraut kann ich dir nur anvertrauen, wenn du ein Mitglied der Bruderschaft bist.
-	AI_Output			(self, other,"DIA_BaalKagan_WannaHelp_13_02"); //Aber du könntest mir helfen, Geschenke zu verteilen.
+	AI_Output			(other, self,"DIA_BaalKagan_WannaHelp_15_00"); //Ich kÃ¶nnte dir helfen, dein Kraut unter die Leute zu bringen.
+	AI_Output			(self, other,"DIA_BaalKagan_WannaHelp_13_01"); //Eine so groÃŸe Menge Kraut kann ich dir nur anvertrauen, wenn du ein Mitglied der Bruderschaft bist.
+	AI_Output			(self, other,"DIA_BaalKagan_WannaHelp_13_02"); //Aber du kÃ¶nntest mir helfen, Geschenke zu verteilen.
 	AI_Output			(self, other,"DIA_BaalKagan_WannaHelp_13_03"); //Es sind noch nicht alle hier auf den Geschmack gekommen. Wenn sie erst einmal unser Kraut gekostet haben, werden sie mehr verlangen und ich kann mehr verkaufen.
-	AI_Output			(other, self,"DIA_BaalKagan_WannaHelp_15_04"); //Ich denke, du schaffst es JETZT schon kaum, deine Aufgabe zu erfüllen.
-	AI_Output			(self, other,"DIA_BaalKagan_WannaHelp_13_05"); //Für Baal Isidro wird bald gesorgt. Ich habe schon eine Nachricht an Cor Kalom geschickt.
+	AI_Output			(other, self,"DIA_BaalKagan_WannaHelp_15_04"); //Ich denke, du schaffst es JETZT schon kaum, deine Aufgabe zu erfÃ¼llen.
+	AI_Output			(self, other,"DIA_BaalKagan_WannaHelp_13_05"); //FÃ¼r Baal Isidro wird bald gesorgt. Ich habe schon eine Nachricht an Cor Kalom geschickt.
 };
 
 // ************************************************************
@@ -189,7 +189,7 @@ INSTANCE DIA_BaalKagan_WasDrin(C_INFO)
 	condition	= DIA_BaalKagan_WasDrin_Condition;
 	information	= DIA_BaalKagan_WasDrin_Info;
 	permanent	= 0;
-	description = "Wenn ich das Kraut für dich verteile - was ist für mich drin?";
+	description = "Wenn ich das Kraut fÃ¼r dich verteile - was ist fÃ¼r mich drin?";
 };                       
 
 FUNC INT DIA_BaalKagan_WasDrin_Condition()
@@ -202,15 +202,15 @@ FUNC INT DIA_BaalKagan_WasDrin_Condition()
 
 FUNC VOID DIA_BaalKagan_WasDrin_Info()
 {	
-	AI_Output			(other, self,"DIA_BaalKagan_WasDrin_15_00"); //Wenn ich das Kraut für dich verteile - was ist für mich drin?
+	AI_Output			(other, self,"DIA_BaalKagan_WasDrin_15_00"); //Wenn ich das Kraut fÃ¼r dich verteile - was ist fÃ¼r mich drin?
 	AI_Output			(self, other,"DIA_BaalKagan_WasDrin_13_01"); //Ich kann dich auf viele Arten entlohnen.
-	AI_Output			(self, other,"DIA_BaalKagan_WasDrin_13_02"); //Du kannst von mir magische Spruchrollen erhalten, die mit mächtiger Magie des Schläfers belegt sind.
+	AI_Output			(self, other,"DIA_BaalKagan_WasDrin_13_02"); //Du kannst von mir magische Spruchrollen erhalten, die mit mÃ¤chtiger Magie des SchlÃ¤fers belegt sind.
 	if (Npc_GetTrueGuild(hero) == GIL_NONE)
 	{
-		AI_Output		(self, other,"DIA_BaalKagan_WasDrin_13_03"); //Ich kann dir aber auch helfen, leichter in unsere Gemeinschaft aufgenommen zu werden, wenn du das wünschst. Ich habe sehr gute Kontakte zu Cor Kalom und Baal Tyon.
+		AI_Output		(self, other,"DIA_BaalKagan_WasDrin_13_03"); //Ich kann dir aber auch helfen, leichter in unsere Gemeinschaft aufgenommen zu werden, wenn du das wÃ¼nschst. Ich habe sehr gute Kontakte zu Cor Kalom und Baal Tyon.
 		AI_Output		(self, other,"DIA_BaalKagan_WasDrin_13_04"); //Beide stehen Y'Berion, unserem Meister, sehr nahe.
 	};
-	AI_Output			(self, other,"DIA_BaalKagan_WasDrin_13_05"); //Ich kann dich aber auch mit schnödem Erz bezahlen, wenn das dein Wunsch ist. 100 Brocken sollten für deine Mühe genügen.
+	AI_Output			(self, other,"DIA_BaalKagan_WasDrin_13_05"); //Ich kann dich aber auch mit schnÃ¶dem Erz bezahlen, wenn das dein Wunsch ist. 100 Brocken sollten fÃ¼r deine MÃ¼he genÃ¼gen.
 };
 
 // ************************************************************
@@ -241,13 +241,13 @@ FUNC VOID DIA_BaalKagan_GimmeKraut_Info()
 {	
 	AI_Output			(other, self,"DIA_BaalKagan_GimmeKraut_15_00"); //Okay, gib her das Kraut. An wen soll ich es verteilen?
 	AI_Output			(self, other,"DIA_BaalKagan_GimmeKraut_13_01"); //Du findest sicher leicht Abnehmer. Rede mit den Leuten. Aber gib jedem nur EINEN Stengel.
-	AI_Output			(self, other,"DIA_BaalKagan_GimmeKraut_13_02"); //Noch was: Wenn du dir das Kraut abnehmen lässt oder es selber rauchst, gilt unsere Abmachung nicht mehr.
+	AI_Output			(self, other,"DIA_BaalKagan_GimmeKraut_13_02"); //Noch was: Wenn du dir das Kraut abnehmen lÃ¤sst oder es selber rauchst, gilt unsere Abmachung nicht mehr.
 	AI_Output			(other, self,"DIA_BaalKagan_GimmeKraut_15_03"); //Sicher.
 	BaalKagan_VerteilKraut = LOG_RUNNING;
 	
 	Log_CreateTopic		(CH1_SpreadJoints, LOG_MISSION);
 	Log_SetTopicStatus	(CH1_SpreadJoints, LOG_RUNNING);
-	B_LogEntry			(CH1_SpreadJoints, "Der Novize Baal Kagan hat mir 10 Stengel Sumpfkraut Grüner Novize gegeben, die ich im Neuen Lager verteilen soll.");		
+	B_LogEntry			(CH1_SpreadJoints, "Der Novize Baal Kagan hat mir 10 Stengel Sumpfkraut GrÃ¼ner Novize gegeben, die ich im Neuen Lager verteilen soll.");		
 	
 	CreateInvItems		(self, itmijoint_1, 10);
 	B_GiveInvItems      (self, hero, itmijoint_1, 10);
@@ -289,7 +289,7 @@ FUNC VOID DIA_BaalKagan_SUCCESS_Info()
 		{
 			Info_AddChoice(DIA_BaalKagan_SUCCESS, "Hilf mir, in der Bruderschaft aufgenommen zu werden."	,DIA_BaalKagan_SUCCESS_Join);
 		};
-		Info_AddChoice	 (DIA_BaalKagan_SUCCESS, "Die Spruchrollen interessieren mich - was sind das für Sprüche?"	,DIA_BaalKagan_SUCCESS_WhatSpells);
+		Info_AddChoice	 (DIA_BaalKagan_SUCCESS, "Die Spruchrollen interessieren mich - was sind das fÃ¼r SprÃ¼che?"	,DIA_BaalKagan_SUCCESS_WhatSpells);
 		
 		BaalKagan_VerteilKraut = LOG_SUCCESS;
 		Log_SetTopicStatus	(CH1_SpreadJoints, LOG_SUCCESS);
@@ -304,8 +304,8 @@ FUNC VOID DIA_BaalKagan_SUCCESS_Info()
 
 func void DIA_BaalKagan_SUCCESS_WhatSpells()
 {
-	AI_Output			(other, self,"DIA_BaalKagan_SUCCESS_WhatSpells_15_00"); //Die Spruchrollen interessieren mich - was sind das für Sprüche?
-	AI_Output			(self, other,"DIA_BaalKagan_SUCCESS_WhatSpells_13_01"); //Windfaust, Charme, Telekinese, Pyrokinese und Schlaf. Von diesen Sprüchen darfst du drei wählen.
+	AI_Output			(other, self,"DIA_BaalKagan_SUCCESS_WhatSpells_15_00"); //Die Spruchrollen interessieren mich - was sind das fÃ¼r SprÃ¼che?
+	AI_Output			(self, other,"DIA_BaalKagan_SUCCESS_WhatSpells_13_01"); //Windfaust, Charme, Telekinese, Pyrokinese und Schlaf. Von diesen SprÃ¼chen darfst du drei wÃ¤hlen.
 	Info_AddChoice   (DIA_BaalKagan_SUCCESS, "Ich nehme die drei Spruchrollen."	,DIA_BaalKagan_SUCCESS_TakeScrolls);
 };
 
@@ -313,16 +313,16 @@ func void DIA_BaalKagan_SUCCESS_Join()
 {
 	Info_ClearChoices(DIA_BaalKagan_SUCCESS);
 	AI_Output			(other, self,"DIA_BaalKagan_SUCCESS_Join_15_00"); //Hilf mir, in der Bruderschaft aufgenommen zu werden.
-	AI_Output			(self, other,"DIA_BaalKagan_SUCCESS_Join_13_01"); //Deine Bitte ist bescheiden. Ich werde dir helfen, hör gut zu. Baal Tyon ist einer der niederen Gurus - so wie ich.
+	AI_Output			(self, other,"DIA_BaalKagan_SUCCESS_Join_13_01"); //Deine Bitte ist bescheiden. Ich werde dir helfen, hÃ¶r gut zu. Baal Tyon ist einer der niederen Gurus - so wie ich.
 	AI_Output			(self, other,"DIA_BaalKagan_SUCCESS_Join_13_02"); //Y'Berion hat ihn zu einem seiner Berater gemacht. Das ist ihm nicht bekommen.
-	AI_Output			(self, other,"DIA_BaalKagan_SUCCESS_Join_13_03"); //Er hält sich jetzt für so wichtig, dass er mit niemanden außer seinen Schülern mehr redet.
-	AI_Output			(self, other,"DIA_BaalKagan_SUCCESS_Join_13_04"); //Wenn du ihm das hier gibst, wird sich seine Zunge lösen.
+	AI_Output			(self, other,"DIA_BaalKagan_SUCCESS_Join_13_03"); //Er hÃ¤lt sich jetzt fÃ¼r so wichtig, dass er mit niemanden auÃŸer seinen SchÃ¼lern mehr redet.
+	AI_Output			(self, other,"DIA_BaalKagan_SUCCESS_Join_13_04"); //Wenn du ihm das hier gibst, wird sich seine Zunge lÃ¶sen.
 	CreateInvItem       (self, SpecialJoint);
 	B_GiveInvItems		(self, other, SpecialJoint, 1);
 
 	Log_CreateTopic		(CH1_JoinPsi,	LOG_MISSION);
 	Log_SetTopicStatus	(CH1_JoinPsi,	LOG_RUNNING);
-	B_LogEntry			(CH1_JoinPsi,	"Baal Kagan hat mir einen speziell präparierten TRAUMRUF für Baal Tyon gegeben. Es wird mir helfen in die Bruderschaft der Sekte aufgenommen zu werden.");
+	B_LogEntry			(CH1_JoinPsi,	"Baal Kagan hat mir einen speziell prÃ¤parierten TRAUMRUF fÃ¼r Baal Tyon gegeben. Es wird mir helfen in die Bruderschaft der Sekte aufgenommen zu werden.");
 };
 
 func void DIA_BaalKagan_SUCCESS_Erz()
@@ -339,7 +339,7 @@ func void DIA_BaalKagan_SUCCESS_Erz()
 func void DIA_BaalKagan_SUCCESS_TakeScrolls()
 {
 	AI_Output			(other, self,"DIA_BaalKagan_SUCCESS_TakeScrolls_15_00"); //Ich nehme die Spruchrollen.
-	AI_Output			(self, other,"DIA_BaalKagan_SUCCESS_TakeScrolls_13_01"); //Eine gute Entscheidung. Wähle drei aus.
+	AI_Output			(self, other,"DIA_BaalKagan_SUCCESS_TakeScrolls_13_01"); //Eine gute Entscheidung. WÃ¤hle drei aus.
 	Info_ClearChoices(DIA_BaalKagan_SUCCESS);
 	Info_AddChoice   (DIA_BaalKagan_SUCCESS, "Windfaust"	,DIA_BaalKagan_SUCCESS_TakeScrolls_Windfaust);
 	Info_AddChoice   (DIA_BaalKagan_SUCCESS, "Telekinese"	,DIA_BaalKagan_SUCCESS_TakeScrolls_Telekinese);

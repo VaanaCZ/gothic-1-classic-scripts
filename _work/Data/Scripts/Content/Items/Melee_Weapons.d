@@ -9,7 +9,7 @@ const int	Value_1H_Sword_01	=	100;		//SN: WICHTIG, da diese Instanz das Produkt 
 // VLK
 INSTANCE ItMw_1H_Club_01 (C_Item)
 {	
-	name 				=	"Knüppel";  
+	name 				=	"KnÃ¼ppel";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_AXE;	
@@ -36,7 +36,7 @@ INSTANCE ItMw_1H_Club_01 (C_Item)
 // keine NPCs
 INSTANCE ItMw_1H_Poker_01 (C_Item)
 {	
-	name 				=	"Schürhaken";
+	name 				=	"SchÃ¼rhaken";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -87,7 +87,7 @@ INSTANCE ItMw_1H_Sickle_01 (C_Item)
 };
 
 /******************************************************************************************/
-// Auch für Mobsi-Benutzung (PickOre)
+// Auch fÃ¼r Mobsi-Benutzung (PickOre)
 // VLK, SFB
 INSTANCE ItMwPickaxe (C_Item)
 {
@@ -115,7 +115,7 @@ INSTANCE ItMwPickaxe (C_Item)
 };
 
 /********************************************************************************/
-// Auch für Mobsi-Benutzung (Schmieden)
+// Auch fÃ¼r Mobsi-Benutzung (Schmieden)
 INSTANCE ItMw_1H_Sledgehammer_01 (C_Item)
 {	
 	name 				=	"Schmiedehammer";
@@ -310,7 +310,7 @@ INSTANCE ItMw_1H_Sword_Short_02 (C_Item)
 // STT
 INSTANCE ItMw_1H_Sword_Short_03 (C_Item)
 {	
-	name 				=	"Lurkerbiß";
+	name 				=	"LurkerbiÃŸ";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -1106,7 +1106,7 @@ INSTANCE ItMw_1H_Warhammer_02 (C_Item)
 // keine NPCs
 INSTANCE ItMw_1H_Warhammer_03 (C_Item)
 {	
-	name 				=	"Götterhammer";
+	name 				=	"GÃ¶tterhammer";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_AXE;	
@@ -1131,7 +1131,7 @@ INSTANCE ItMw_1H_Warhammer_03 (C_Item)
 
 
 /*********************************************************************************
-** Äxte										**
+** Ã„xte										**
 *********************************************************************************/
 // keine NPCs
 INSTANCE ItMw_1H_Axe_01 (C_Item)
@@ -1163,7 +1163,7 @@ INSTANCE ItMw_1H_Axe_01 (C_Item)
 // keine NPCs
 INSTANCE ItMw_1H_Axe_02 (C_Item)
 {	
-	name 				=	"Schädelspalter"; 
+	name 				=	"SchÃ¤delspalter"; 
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_AXE;	
@@ -1273,7 +1273,7 @@ INSTANCE ItMw_1H_Sword_Broad_02 (C_Item)
 // keine NPCs
 INSTANCE ItMw_1H_Sword_Broad_03 (C_Item) 
 {	
-	name 				=	"Sturmgeflüster";
+	name 				=	"SturmgeflÃ¼ster";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -1324,12 +1324,12 @@ INSTANCE ItMw_1H_Sword_Broad_04 (C_Item)
 };
 
 /*********************************************************************************
-** Alte Zweihänder								**
+** Alte ZweihÃ¤nder								**
 *********************************************************************************/
 // keine NPCs
 INSTANCE ItMw_2H_Sword_Old_01 (C_Item) 
 {	
-	name 				=	"Rostiger Zweihänder";
+	name 				=	"Rostiger ZweihÃ¤nder";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_SWD;	
@@ -1463,7 +1463,7 @@ INSTANCE ItMw_1H_Sword_Bastard_04 (C_Item)
 };
 
 /*********************************************************************************
-** Alte Streitäxte								**
+** Alte StreitÃ¤xte								**
 *********************************************************************************/
 // keine NPCs
 INSTANCE ItMw_2H_Axe_Old_01 (C_Item)
@@ -1546,12 +1546,12 @@ INSTANCE ItMw_2H_Axe_Old_03 (C_Item)
 };
 
 /*********************************************************************************
-** Leichte Zweihänder								**
+** Leichte ZweihÃ¤nder								**
 *********************************************************************************/
 // TPL
 INSTANCE ItMw_2H_Sword_Light_01 (C_Item) 
 {	
-	name 				=	"Leichter Zweihänder";
+	name 				=	"Leichter ZweihÃ¤nder";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_SWD;	
@@ -1578,7 +1578,7 @@ INSTANCE ItMw_2H_Sword_Light_01 (C_Item)
 // TPL
 INSTANCE ItMw_2H_Sword_Light_02 (C_Item) 
 {	
-	name 				=	"Hüterklinge";
+	name 				=	"HÃ¼terklinge";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_SWD;	
@@ -1605,7 +1605,7 @@ INSTANCE ItMw_2H_Sword_Light_02 (C_Item)
 // keine NPCs
 INSTANCE ItMw_2H_Sword_Light_03 (C_Item) 
 {	
-	name 				=	"Söldnerklinge";
+	name 				=	"SÃ¶ldnerklinge";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_SWD;	
@@ -1632,7 +1632,7 @@ INSTANCE ItMw_2H_Sword_Light_03 (C_Item)
 // TPL_1402_GorNaToth, TPL_1439_GorNaDrak
 INSTANCE ItMw_2H_Sword_Light_04 (C_Item) 
 {	
-	name 				=	"Königsklinge";
+	name 				=	"KÃ¶nigsklinge";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_SWD;	
@@ -1659,7 +1659,7 @@ INSTANCE ItMw_2H_Sword_Light_04 (C_Item)
 // keine NPCS
 INSTANCE ItMw_2H_Sword_Light_05 (C_Item) 
 {	
-	name 				=	"Dämonenklinge";
+	name 				=	"DÃ¤monenklinge";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_SWD;	
@@ -1766,12 +1766,12 @@ INSTANCE ItMw_2H_Axe_light_03 (C_Item)
 };
 
 /*********************************************************************************
-** Zweihänder									**
+** ZweihÃ¤nder									**
 *********************************************************************************/
 // keine NPCs
 INSTANCE ItMw_2H_Sword_01 (C_Item) 
 {	
-	name 				=	"Zweihänder";
+	name 				=	"ZweihÃ¤nder";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_SWD;	
@@ -1849,12 +1849,12 @@ INSTANCE ItMw_2H_Sword_03 (C_Item)
 };
 
 /*********************************************************************************
-** Schwere Zweihänder								**
+** Schwere ZweihÃ¤nder								**
 *********************************************************************************/
 // keine NPCs
 INSTANCE ItMw_2H_Sword_Heavy_01 (C_Item) 
 {	
-	name 				=	"Schwerer Zweihänder";
+	name 				=	"Schwerer ZweihÃ¤nder";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_SWD;	
@@ -1958,7 +1958,7 @@ INSTANCE ItMw_2H_Sword_Heavy_04 (C_Item)
 };
 
 /*********************************************************************************
-** Streitäxte									**
+** StreitÃ¤xte									**
 *********************************************************************************/
 // keine NPCs
 INSTANCE ItMw_2H_Axe_Heavy_01 (C_Item)

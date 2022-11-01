@@ -1,5 +1,5 @@
 // ************************************************************************************************
-// Wirkung und Kosten von Tränken
+// Wirkung und Kosten von TrÃ¤nken
 // ************************************************************************************************
 
 // Heilung
@@ -16,8 +16,8 @@ const int	Value_ManaElixier		=	65;		const int	Mana_Elixier		=	70;
 const int	Value_Elixier1			=	95;		const int	Mana_Elixier1		=	100;
 
 // Permanente Attribut-Steigerungen
-// FIXME: sind die zu kaufen (müüsen dann teuer sein) oder zu fnden (dann evtl. billiger)
-// FIXME: Textanzeige der Attribut-Änderung bei Benutzung möglich?
+// FIXME: sind die zu kaufen (mÃ¼Ã¼sen dann teuer sein) oder zu fnden (dann evtl. billiger)
+// FIXME: Textanzeige der Attribut-Ã„nderung bei Benutzung mÃ¶glich?
 const int	Value_ElixierEgg		=	1;		const int	ManaMax_ElixierEgg	=	10;	// FIXME: was wenn der SC das selbst benutzt??
 
 const int	Value_StrEssenz			=	300;	const int	STR_Essenz			=	3;
@@ -48,7 +48,7 @@ const int	Value_Haste3			=	200;	const int	Time_Haste3			=	300000;	// 5 min.
 
 
 /******************************************************************************************/
-//	MANATRÄNKE																			//
+//	MANATRÃ„NKE																			//
 /******************************************************************************************/
 INSTANCE ItFo_Potion_Mana_01(C_Item)
 {
@@ -159,7 +159,7 @@ INSTANCE ItFo_Potion_Elixier(C_Item)
 
 
 /******************************************************************************************/
-//	HEILTRÄNKE																			//
+//	HEILTRÃ„NKE																			//
 /******************************************************************************************/
 INSTANCE ItFo_Potion_Health_01(C_Item)
 {
@@ -241,7 +241,7 @@ INSTANCE ItFo_Potion_Health_03(C_Item)
 
 
 /******************************************************************************************/
-// TRÄNKE FÜR PERMANENTE ATTRIBUT-ÄNDERUNGEN!
+// TRÃ„NKE FÃœR PERMANENTE ATTRIBUT-Ã„NDERUNGEN!
 /******************************************************************************************/
 
 /******************************************************************************************/
@@ -260,7 +260,7 @@ INSTANCE ItFo_Potion_Elixier_Egg(C_Item)
 	scemeName		=	"POTIONFAST";
 
 	description			= "Crawler Elixier";
-	TEXT[0]				= "ermöglicht Kontakt zum Schläfer";
+	TEXT[0]				= "ermÃ¶glicht Kontakt zum SchlÃ¤fer";
 	TEXT[1]				= NAME_Bonus_ManaMax;			COUNT[1]	= ManaMax_ElixierEgg;
 	TEXT[5]				= NAME_Value;					COUNT[5]	= Value_ElixierEgg;
 };
@@ -288,7 +288,7 @@ INSTANCE ItFo_Potion_Strength_01(C_Item)
 	on_state[0]		=	UseStrengthPotion;
 	scemeName		=	"POTIONFAST";
 
-	description			= "Essenz der Stärke";
+	description			= "Essenz der StÃ¤rke";
 	TEXT[1]				= NAME_Bonus_Str;				COUNT[1]	= STR_Essenz;
 	TEXT[5]				= NAME_Value;					COUNT[5]	= Value_StrEssenz;
 };
@@ -313,7 +313,7 @@ INSTANCE ItFo_Potion_Strength_02(C_Item)
 	on_state[0]		=	UseStrength2Potion;
 	scemeName		=	"POTIONFAST";
 
-	description			= "Extrakt der Stärke";
+	description			= "Extrakt der StÃ¤rke";
 	TEXT[1]				= NAME_Bonus_Str;				COUNT[1]	= STR_Extrakt;
 	TEXT[5]				= NAME_Value;					COUNT[5]	= Value_StrExtrakt;
 };
@@ -338,7 +338,7 @@ INSTANCE ItFo_Potion_Strength_03(C_Item)
 	on_state[0]		=	UseStrength3Potion;
 	scemeName		=	"POTIONFAST";
 
-	description			= "Elixier der Stärke";
+	description			= "Elixier der StÃ¤rke";
 	TEXT[1]				= NAME_Bonus_Str;				COUNT[1]	= STR_Elixier;
 	TEXT[5]				= NAME_Value;					COUNT[5]	= Value_StrElixier;
 };
@@ -672,7 +672,7 @@ INSTANCE ItFo_Potion_Haste_01(C_Item)
 	scemeName		=	"POTIONFAST";
 
 	description		= "Trank der Geschwindigkeit";
-	TEXT[1]			= "Ermöglicht kurzzeitiges Sprinten ";
+	TEXT[1]			= "ErmÃ¶glicht kurzzeitiges Sprinten ";
 	TEXT[3]			= NAME_Duration;				COUNT[3]	= Time_Haste1/60000;
 	TEXT[5]			= NAME_Value;					COUNT[5]	= value;
 };
@@ -699,7 +699,7 @@ INSTANCE ItFo_Potion_Haste_02(C_Item)
 	scemeName		=	"POTIONFAST";
 
 	description		= "Trank der Schnelligkeit";
-	TEXT[1]			= "Ermöglicht Sprinten ";
+	TEXT[1]			= "ErmÃ¶glicht Sprinten ";
 	TEXT[3]			= NAME_Duration;				COUNT[3]	= Time_Haste2/60000;
 	TEXT[5]			= NAME_Value;					COUNT[5]	= value;
 };
@@ -726,7 +726,7 @@ INSTANCE ItFo_Potion_Haste_03(C_Item)
 	scemeName		=	"POTIONFAST";
 
 	description		= "Trank der Eile";
-	TEXT[1]			= "Ermöglicht längeres Sprinten ";
+	TEXT[1]			= "ErmÃ¶glicht lÃ¤ngeres Sprinten ";
 	TEXT[3]			= NAME_Duration;				COUNT[3]	= Time_Haste3/60000;
 	TEXT[5]			= NAME_Value;					COUNT[5]	= value;
 };

@@ -49,11 +49,11 @@ func void  DIA_Fletcher_First_Info()
 {
 	AI_Output (self, other,"DIA_Fletcher_First_06_00"); //Hey, du!
 	AI_Output (other, self,"DIA_Fletcher_First_15_01"); //Wer? Ich?
-	AI_Output (self, other,"DIA_Fletcher_First_06_02"); //Du weißt genau, mit wem ich rede, Bürschchen!
-	AI_Output (self, other,"DIA_Fletcher_First_06_03"); //Ich will dir mal was sagen: Das hier ist MEIN Viertel. Und ich will hier keinen Ärger!
-	AI_Output (self, other,"DIA_Fletcher_First_06_04"); //Aber neue Typen wie du bedeuten immer Ärger. Vor allem, wenn sie hier mitten in der Nacht rumlaufen.
-	AI_Output (self, other,"DIA_Fletcher_First_06_05"); //Also, warum sorgst du nicht dafür, dass ich dich hier nicht mehr sehe. Die Hütte gegenüber der Arena mit dem Vordach ist frei. Leg dich 'ne Runde ins Bett.
-	AI_Output (self, other,"DIA_Fletcher_First_06_06"); //Wenn ich dich in einer der anderen Hütten erwische, zieh ich dir das Fell über die Ohren.
+	AI_Output (self, other,"DIA_Fletcher_First_06_02"); //Du weiÃŸt genau, mit wem ich rede, BÃ¼rschchen!
+	AI_Output (self, other,"DIA_Fletcher_First_06_03"); //Ich will dir mal was sagen: Das hier ist MEIN Viertel. Und ich will hier keinen Ã„rger!
+	AI_Output (self, other,"DIA_Fletcher_First_06_04"); //Aber neue Typen wie du bedeuten immer Ã„rger. Vor allem, wenn sie hier mitten in der Nacht rumlaufen.
+	AI_Output (self, other,"DIA_Fletcher_First_06_05"); //Also, warum sorgst du nicht dafÃ¼r, dass ich dich hier nicht mehr sehe. Die HÃ¼tte gegenÃ¼ber der Arena mit dem Vordach ist frei. Leg dich 'ne Runde ins Bett.
+	AI_Output (self, other,"DIA_Fletcher_First_06_06"); //Wenn ich dich in einer der anderen HÃ¼tten erwische, zieh ich dir das Fell Ã¼ber die Ohren.
 	
 	AI_StopProcessInfos	(self);
 };
@@ -98,13 +98,13 @@ func void  DIA_Fletcher_Hello_Info()
 func void DIA_Fletcher_Hello_WhereElse()
 {
 	AI_Output (other, self,"DIA_Fletcher_Hello_WhereElse_15_00"); //Wo bist du denn?
-	AI_Output (self, other,"DIA_Fletcher_Hello_WhereElse_06_01"); //Eigentlich bin ich in der Burg, am großen Lagerfeuer, und trinke ein Bier.
+	AI_Output (self, other,"DIA_Fletcher_Hello_WhereElse_06_01"); //Eigentlich bin ich in der Burg, am groÃŸen Lagerfeuer, und trinke ein Bier.
 };
 
 func void DIA_Fletcher_Hello_WhyTalk()
 {
 	AI_Output (other, self,"DIA_Fletcher_Hello_WhyTalk_15_00"); //Wie kommt es dann, dass wir beide uns unterhalten?
-	AI_Output (self, other,"DIA_Fletcher_Hello_WhyTalk_06_01"); //Nek ist verschwunden. Er ist normalerweise für dieses Viertel verantwortlich.
+	AI_Output (self, other,"DIA_Fletcher_Hello_WhyTalk_06_01"); //Nek ist verschwunden. Er ist normalerweise fÃ¼r dieses Viertel verantwortlich.
 	AI_Output (self, other,"DIA_Fletcher_Hello_WhyTalk_06_02"); //Bis er wieder da ist, hat Thorus MICH hier eingesetzt.
 	fletcher_whytalk = TRUE;
 	Info_ClearChoices	(DIA_Fletcher_Hello);
@@ -127,7 +127,7 @@ instance DIA_Fletcher_WoNek (C_INFO)
 	condition		= DIA_Fletcher_WoNek_Condition;
 	information		= DIA_Fletcher_WoNek_Info;
 	permanent		= 0;
-	description		= "Weißt du, wo Nek geblieben ist?";
+	description		= "WeiÃŸt du, wo Nek geblieben ist?";
 };
 
 func int DIA_Fletcher_WoNek_Condition()
@@ -140,10 +140,10 @@ func int DIA_Fletcher_WoNek_Condition()
 
 func void  DIA_Fletcher_WoNek_Info()
 {
-	AI_Output (other, self,"DIA_Fletcher_WoNek_15_00"); //Weißt du, wo Nek geblieben ist?
+	AI_Output (other, self,"DIA_Fletcher_WoNek_15_00"); //WeiÃŸt du, wo Nek geblieben ist?
 	AI_Output (self, other,"DIA_Fletcher_WoNek_06_01"); //Nein, und ich werde es auch nicht rausfinden.
-	AI_Output (self, other,"DIA_Fletcher_WoNek_06_02"); //Wenn einer was weiß, dann die Buddler aus diesem Viertel. Aber die Buddler reden nicht mit Gardisten.
-	AI_Output (self, other,"DIA_Fletcher_WoNek_06_03"); //Vor allem nicht jetzt, denn sie wissen, dass ich diese Drecksarbeit hier verabscheue, und insgeheim lachen sie sich über mich tot!
+	AI_Output (self, other,"DIA_Fletcher_WoNek_06_02"); //Wenn einer was weiÃŸ, dann die Buddler aus diesem Viertel. Aber die Buddler reden nicht mit Gardisten.
+	AI_Output (self, other,"DIA_Fletcher_WoNek_06_03"); //Vor allem nicht jetzt, denn sie wissen, dass ich diese Drecksarbeit hier verabscheue, und insgeheim lachen sie sich Ã¼ber mich tot!
 	
 	Log_CreateTopic		(CH1_LostNek,	LOG_MISSION);
 	Log_SetTopicStatus	(CH1_LostNek,	LOG_RUNNING);
@@ -175,7 +175,7 @@ FUNC int  DIA_Fletcher_TroSchu_Condition()
 func void  DIA_Fletcher_TroSchu_Info()
 {
 	AI_Output (other, self,"DIA_Fletcher_TroSchu_15_00"); //Warum sammelst du nicht trotzdem Schutzgeld?
-	AI_Output (self, other,"DIA_Fletcher_TroSchu_06_01"); //Kurz bevor er verschwunden ist, hat Nek noch einmal alle kräftig zur Kasse gebeten. Da ist nicht mehr viel zu holen.
+	AI_Output (self, other,"DIA_Fletcher_TroSchu_06_01"); //Kurz bevor er verschwunden ist, hat Nek noch einmal alle krÃ¤ftig zur Kasse gebeten. Da ist nicht mehr viel zu holen.
 };
 
 // ************************************************************
@@ -213,8 +213,8 @@ func void  DIA_Fletcher_WegenNek_Info()
 	{
 		AI_Output (other, self,"DIA_Fletcher_WegenNek_15_02"); //Ich glaub', ich hab' ihn gefunden.
 		AI_Output (self, other,"DIA_Fletcher_WegenNek_06_03"); //Was? Wo ist er?
-		AI_Output (other, self,"DIA_Fletcher_WegenNek_15_04"); //Er ist Futter für die Ratten.
-		AI_Output (self, other,"DIA_Fletcher_WegenNek_06_05"); //Nein! Verdammt! Dann muss ICH jetzt den Laden hier schmeißen. Ich hatte gehofft, er kommt wieder.
+		AI_Output (other, self,"DIA_Fletcher_WegenNek_15_04"); //Er ist Futter fÃ¼r die Ratten.
+		AI_Output (self, other,"DIA_Fletcher_WegenNek_06_05"); //Nein! Verdammt! Dann muss ICH jetzt den Laden hier schmeiÃŸen. Ich hatte gehofft, er kommt wieder.
 		AI_Output (self, other,"DIA_Fletcher_WegenNek_06_06"); //Jetzt hab' ich ein Problem ...
 		fletcher_foundNek = TRUE;
 	}
@@ -250,7 +250,7 @@ FUNC int  DIA_Fletcher_Problem_Condition()
 func void  DIA_Fletcher_Problem_Info()
 {
 	AI_Output (other, self,"DIA_Fletcher_Problem_15_00"); //Was ist dein Problem?
-	AI_Output (self, other,"DIA_Fletcher_Problem_06_01"); //Ich habe Schulden bei Scatty. 'Ne Menge Schulden. Jetzt, wo er weiß, dass ich Neks Job mache, wird er jeden Tag bei mir auf der Matte stehen ...
+	AI_Output (self, other,"DIA_Fletcher_Problem_06_01"); //Ich habe Schulden bei Scatty. 'Ne Menge Schulden. Jetzt, wo er weiÃŸ, dass ich Neks Job mache, wird er jeden Tag bei mir auf der Matte stehen ...
 };	
 
 
@@ -294,7 +294,7 @@ FUNC int  Grd_255_Fletcher_WELCOME_Condition()
 };
 func void  Grd_255_Fletcher_WELCOME_Info()
 {
-	AI_Output (self, other,"Grd_255_Fletcher_WELCOME_Info_06_01"); //Du hast ziemlich schnell kapiert, wie es hier läuft. Willkommen bei der Garde!
+	AI_Output (self, other,"Grd_255_Fletcher_WELCOME_Info_06_01"); //Du hast ziemlich schnell kapiert, wie es hier lÃ¤uft. Willkommen bei der Garde!
 };
 
 //#####################################################################
@@ -335,34 +335,34 @@ FUNC VOID Info_Fletcher_DIE_Info()
 	{
 		if (oldHeroGuild == GIL_GRD)
 		{
-			AI_Output	(self,hero,"Info_Fletcher_DIE_06_01"); //Du Verräter! Na dich haben wir mal zum Gardisten gemacht. PAH!
+			AI_Output	(self,hero,"Info_Fletcher_DIE_06_01"); //Du VerrÃ¤ter! Na dich haben wir mal zum Gardisten gemacht. PAH!
 		}
 		else if (oldHeroGuild == GIL_KDF)
 		{
-			AI_Output	(self,hero,"Info_Fletcher_DIE_06_02"); //Da ist noch einer von diesen verräterischen Feuermagiern! PAH!
+			AI_Output	(self,hero,"Info_Fletcher_DIE_06_02"); //Da ist noch einer von diesen verrÃ¤terischen Feuermagiern! PAH!
 		}
 		else
 		{
-			AI_Output	(self,hero,"Info_Fletcher_DIE_06_03"); //Hallo Verräter! Auch dein früherer Status als einer von Gomez' Schatten wird dir jetzt nichts mehr helfen!
+			AI_Output	(self,hero,"Info_Fletcher_DIE_06_03"); //Hallo VerrÃ¤ter! Auch dein frÃ¼herer Status als einer von Gomez' Schatten wird dir jetzt nichts mehr helfen!
 		};			
 
 		AI_Output		(hero,self,"Info_Fletcher_DIE_15_04"); //Moment. Wovon redest du, Fletcher?
-		AI_Output		(self,hero,"Info_Fletcher_DIE_06_05"); //Steckst mit diesem abtrünnigen Abschaum aus dem Neuen Lager unter einer Decke, was?
+		AI_Output		(self,hero,"Info_Fletcher_DIE_06_05"); //Steckst mit diesem abtrÃ¼nnigen Abschaum aus dem Neuen Lager unter einer Decke, was?
 		AI_Output		(hero,self,"Info_Fletcher_DIE_15_06"); //Warte mal ...
-		AI_Output		(self,hero,"Info_Fletcher_DIE_06_07"); //Hattest wohl gedacht, wir würden nicht dahinter kommen, wie?
+		AI_Output		(self,hero,"Info_Fletcher_DIE_06_07"); //Hattest wohl gedacht, wir wÃ¼rden nicht dahinter kommen, wie?
 		AI_Output		(hero,self,"Info_Fletcher_DIE_15_08"); //Jetzt aber mal halblang ...
-		AI_Output		(self,hero,"Info_Fletcher_DIE_06_09"); //Wir werden DICH halblang machen. Oder genauer gesagt, einen Kopf kürzer.
-		AI_Output		(self,hero,"Info_Fletcher_DIE_06_10"); //STIRB, VERRÄTER!!!
+		AI_Output		(self,hero,"Info_Fletcher_DIE_06_09"); //Wir werden DICH halblang machen. Oder genauer gesagt, einen Kopf kÃ¼rzer.
+		AI_Output		(self,hero,"Info_Fletcher_DIE_06_10"); //STIRB, VERRÃ„TER!!!
 
 		if	Npc_KnowsInfo(hero, Info_Bloodwyn_DIE)
 		{
-			B_LogEntry			(CH4_BannedFromOC,	"Bloodwyn, hat sich am hinteren Tor verschanzt. Er reagierte ähnlich wie Fletcher am Haupttor. Mir ist nicht klar warum, aber es muss etwas mit meiner Fokussuche für das Neue Lager zu tun haben.");
+			B_LogEntry			(CH4_BannedFromOC,	"Bloodwyn, hat sich am hinteren Tor verschanzt. Er reagierte Ã¤hnlich wie Fletcher am Haupttor. Mir ist nicht klar warum, aber es muss etwas mit meiner Fokussuche fÃ¼r das Neue Lager zu tun haben.");
 		}
 		else if	(Npc_GetTrueGuild(hero) == GIL_NONE)
 		{
 			Log_CreateTopic		(CH4_BannedFromOC,	LOG_MISSION);
 			Log_SetTopicStatus	(CH4_BannedFromOC,	LOG_RUNNING);
-			B_LogEntry			(CH4_BannedFromOC,	"Fletcher, der nun mit einer Gruppe Gardisten am Haupttor des Alten Lagers Wache hält, bezeichnete mich als Verräter und Abtrünniger. Er lies sich auf keine Diskussion ein und griff mich sofort an!");
+			B_LogEntry			(CH4_BannedFromOC,	"Fletcher, der nun mit einer Gruppe Gardisten am Haupttor des Alten Lagers Wache hÃ¤lt, bezeichnete mich als VerrÃ¤ter und AbtrÃ¼nniger. Er lies sich auf keine Diskussion ein und griff mich sofort an!");
 			B_LogEntry			(CH4_BannedFromOC,	"Es sieht so aus, als ob ich nun aus dem alten Lager verbannt wurde!");
 		};
 	}
@@ -378,21 +378,21 @@ FUNC VOID Info_Fletcher_DIE_Info()
 		};
 
 		AI_Output		(hero,self,"Info_Fletcher_DIE_15_13"); //Ja, und? Was geht dich das an?
-		AI_Output		(self,hero,"Info_Fletcher_DIE_06_14"); //Bald wird auch eure Mine zu uns gehören.
-		AI_Output		(hero,self,"Info_Fletcher_DIE_15_15"); //Davon träumst du doch nur!
-		AI_Output		(self,hero,"Info_Fletcher_DIE_06_16"); //Leider können wir es nicht zulassen, dass du das irgendwo herumerzählst!
+		AI_Output		(self,hero,"Info_Fletcher_DIE_06_14"); //Bald wird auch eure Mine zu uns gehÃ¶ren.
+		AI_Output		(hero,self,"Info_Fletcher_DIE_15_15"); //Davon trÃ¤umst du doch nur!
+		AI_Output		(self,hero,"Info_Fletcher_DIE_06_16"); //Leider kÃ¶nnen wir es nicht zulassen, dass du das irgendwo herumerzÃ¤hlst!
 		AI_Output		(hero,self,"Info_Fletcher_DIE_15_17"); //Warte mal, ich bin nicht auf Streit aus ...
-		AI_Output		(self,hero,"Info_Fletcher_DIE_06_18"); //Das hättest du dir überlegen sollen, bevor du hier aufkreuzt!
+		AI_Output		(self,hero,"Info_Fletcher_DIE_06_18"); //Das hÃ¤ttest du dir Ã¼berlegen sollen, bevor du hier aufkreuzt!
 		AI_Output		(hero,self,"Info_Fletcher_DIE_15_19"); //He, was soll der Unfug ...
 		AI_Output		(self,hero,"Info_Fletcher_DIE_06_20"); //Auf ihn Jungs, den schnappen wir uns!
 	};
 
-	Npc_ExchangeRoutine	(self,	"FMTaken2");				// Verstärkung vor das Haupttor (Anführer)
-	B_ExchangeRoutine	(GRD_252_Gardist,	"FMTaken2");	// Verstärkung vor das Haupttor
-	B_ExchangeRoutine	(GRD_253_Gardist,	"FMTaken2");	// Verstärkung vor das Haupttor
-	B_ExchangeRoutine	(GRD_244_Gardist,	"FMTaken2");	// Verstärkung vor das Haupttor (Fernkämpfer)
-	B_ExchangeRoutine	(GRD_214_Torwache,	"FMTaken2");	// reguläre Wache am Haupttor
-	B_ExchangeRoutine	(GRD_215_Torwache,	"FMTaken2");	// reguläre Wache am Haupttor
+	Npc_ExchangeRoutine	(self,	"FMTaken2");				// VerstÃ¤rkung vor das Haupttor (AnfÃ¼hrer)
+	B_ExchangeRoutine	(GRD_252_Gardist,	"FMTaken2");	// VerstÃ¤rkung vor das Haupttor
+	B_ExchangeRoutine	(GRD_253_Gardist,	"FMTaken2");	// VerstÃ¤rkung vor das Haupttor
+	B_ExchangeRoutine	(GRD_244_Gardist,	"FMTaken2");	// VerstÃ¤rkung vor das Haupttor (FernkÃ¤mpfer)
+	B_ExchangeRoutine	(GRD_214_Torwache,	"FMTaken2");	// regulÃ¤re Wache am Haupttor
+	B_ExchangeRoutine	(GRD_215_Torwache,	"FMTaken2");	// regulÃ¤re Wache am Haupttor
 
 	B_SetPermAttitude	(GRD_255_Fletcher,	ATT_HOSTILE);
 	B_SetPermAttitude	(GRD_252_Gardist,	ATT_HOSTILE);

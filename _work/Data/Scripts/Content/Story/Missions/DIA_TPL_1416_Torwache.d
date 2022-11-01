@@ -33,7 +33,7 @@ INSTANCE DIA_Tpl_1416_Torwache_Life (C_INFO)
 	condition		= DIA_Tpl_1416_Torwache_Life_Condition;
 	information		= DIA_Tpl_1416_Torwache_Life_Info;
 	permanent		= 1;
-	description		= "Wie ist das Leben hier als Wächter der Bruderschaft?";
+	description		= "Wie ist das Leben hier als WÃ¤chter der Bruderschaft?";
 };
 
 FUNC INT DIA_Tpl_1416_Torwache_Life_Condition()
@@ -43,7 +43,7 @@ FUNC INT DIA_Tpl_1416_Torwache_Life_Condition()
 
 FUNC VOID DIA_Tpl_1416_Torwache_Life_Info()
 {
-	AI_Output (other, self,"DIA_Tpl_1416_Torwache_Life_15_00"); //Wie ist das Leben hier als Wächter der Bruderschaft?
-	AI_Output (self, other,"DIA_Tpl_1416_Torwache_Life_08_01"); //Ich habe eine wichtige Aufgabe bekommen. Der Erleuchtete und seine Jünger verlassen sich auf mich.
-	AI_Output (self, other,"DIA_Tpl_1416_Torwache_Life_08_02");	//Mein vorheriges Leben gehört der Vergangenheit an. Ab jetzt bin ich ein GOR NA - ein Templer des Schläfers.
+	AI_Output (other, self,"DIA_Tpl_1416_Torwache_Life_15_00"); //Wie ist das Leben hier als WÃ¤chter der Bruderschaft?
+	AI_Output (self, other,"DIA_Tpl_1416_Torwache_Life_08_01"); //Ich habe eine wichtige Aufgabe bekommen. Der Erleuchtete und seine JÃ¼nger verlassen sich auf mich.
+	AI_Output (self, other,"DIA_Tpl_1416_Torwache_Life_08_02");	//Mein vorheriges Leben gehÃ¶rt der Vergangenheit an. Ab jetzt bin ich ein GOR NA - ein Templer des SchlÃ¤fers.
 };

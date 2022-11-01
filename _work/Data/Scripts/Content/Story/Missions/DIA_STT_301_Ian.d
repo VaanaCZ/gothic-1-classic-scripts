@@ -20,7 +20,7 @@ FUNC int  STT_301_IAN_Exit_Condition()
 FUNC VOID  STT_301_IAN_Exit_Info()
 {
 	AI_Output			(other, self,"STT_301_IAN_Exit_Info_15_01"); //Ich schau' mich mal um.
-	AI_Output			(self, other,"STT_301_IAN_Exit_Info_13_02"); //Mach keinen Ärger.
+	AI_Output			(self, other,"STT_301_IAN_Exit_Info_13_02"); //Mach keinen Ã„rger.
 	
 	AI_StopProcessInfos	( self );
 };
@@ -70,7 +70,7 @@ FUNC int  STT_301_IAN_GOMEZ_Condition()
 FUNC void  STT_301_IAN_GOMEZ_Info()
 {
 	AI_Output			(other, self,"STT_301_IAN_GOMEZ_Info_15_01"); //Ist das nicht Gomez' Mine?
-	AI_Output			(self, other,"STT_301_IAN_GOMEZ_Info_13_02"); //Ja, natürlich ist das die Mine des Alten Lagers. Aber hier drin gibt's nur einen Chef - und das bin ich.
+	AI_Output			(self, other,"STT_301_IAN_GOMEZ_Info_13_02"); //Ja, natÃ¼rlich ist das die Mine des Alten Lagers. Aber hier drin gibt's nur einen Chef - und das bin ich.
 }; 
 // ***************** Infos *****************************
 instance  STT_301_IAN_ORE (C_INFO)
@@ -80,7 +80,7 @@ instance  STT_301_IAN_ORE (C_INFO)
 	information		= STT_301_IAN_ORE_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Kannst du mir ein paar Takte zur Erzförderung erzählen?"; 
+	description		= "Kannst du mir ein paar Takte zur ErzfÃ¶rderung erzÃ¤hlen?"; 
 };
 
 FUNC int  STT_301_IAN_ORE_Condition()
@@ -93,9 +93,9 @@ FUNC int  STT_301_IAN_ORE_Condition()
 };
 FUNC void  STT_301_IAN_ORE_Info()
 {
-	AI_Output			(other, self,"STT_301_IAN_ORE_Info_15_01"); //Kannst du mir ein paar Takte zur Erzförderung erzählen?
-	AI_Output			(self, other,"STT_301_IAN_ORE_Info_13_02"); //Wir fördern hier rund um die Uhr Erz. Im Monat sind das über 200 Säcke Erz, die gelagert werden und noch mal 20 Säcke, die eingeschmolzen werden. 
-	AI_Output			(self, other,"STT_301_IAN_ORE_Info_13_03"); //Mit dem Erz, das wir dem König liefern, können hunderte von Klingen hergestellt werden.
+	AI_Output			(other, self,"STT_301_IAN_ORE_Info_15_01"); //Kannst du mir ein paar Takte zur ErzfÃ¶rderung erzÃ¤hlen?
+	AI_Output			(self, other,"STT_301_IAN_ORE_Info_13_02"); //Wir fÃ¶rdern hier rund um die Uhr Erz. Im Monat sind das Ã¼ber 200 SÃ¤cke Erz, die gelagert werden und noch mal 20 SÃ¤cke, die eingeschmolzen werden. 
+	AI_Output			(self, other,"STT_301_IAN_ORE_Info_13_03"); //Mit dem Erz, das wir dem KÃ¶nig liefern, kÃ¶nnen hunderte von Klingen hergestellt werden.
 	
 }; 
 // ***************** Infos *****************************   
@@ -106,7 +106,7 @@ instance  STT_301_IAN_MORE (C_INFO)
 	information		= STT_301_IAN_MORE_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Ich habe gehört, das Erz ist magisch. Erzähl mir davon."; 
+	description		= "Ich habe gehÃ¶rt, das Erz ist magisch. ErzÃ¤hl mir davon."; 
 };
 
 FUNC int  STT_301_IAN_MORE_Condition()
@@ -117,8 +117,8 @@ FUNC int  STT_301_IAN_MORE_Condition()
 
 FUNC void  STT_301_IAN_MORE_Info()
 {
-	AI_Output			(other, self,"STT_301_IAN_MORE_Info_15_01"); //Ich habe gehört, das Erz ist magisch. Erzähl mir davon.
-	AI_Output			(self, other,"STT_301_IAN_MORE_Info_13_02"); //Das magische Erz besitzt besondere Qualitäten. Es macht die Waffen unzerbrechlich und die Klingen sind schärfer als gewöhnliche. 
+	AI_Output			(other, self,"STT_301_IAN_MORE_Info_15_01"); //Ich habe gehÃ¶rt, das Erz ist magisch. ErzÃ¤hl mir davon.
+	AI_Output			(self, other,"STT_301_IAN_MORE_Info_13_02"); //Das magische Erz besitzt besondere QualitÃ¤ten. Es macht die Waffen unzerbrechlich und die Klingen sind schÃ¤rfer als gewÃ¶hnliche. 
 	AI_Output			(self, other,"STT_301_IAN_MORE_Info_13_03"); //Eine Armee, die mit solchen Waffen ausgestattet ist, hat einen entscheidenden Vorteil in jeder Schlacht.
 	
 };   
@@ -130,7 +130,7 @@ instance  STT_301_IAN_MAGIC (C_INFO)
 	information		= STT_301_IAN_MAGIC_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Erzähl mir mehr vom Erz"; 
+	description		= "ErzÃ¤hl mir mehr vom Erz"; 
 };
 
 FUNC int  STT_301_IAN_MAGIC_Condition()
@@ -141,9 +141,9 @@ FUNC int  STT_301_IAN_MAGIC_Condition()
 
 FUNC void  STT_301_IAN_MAGIC_Info()
 {
-	AI_Output			(other, self,"STT_301_IAN_MAGIC_Info_15_01"); //Erzähl mir mehr vom Erz.
-	AI_Output			(self, other,"STT_301_IAN_MAGIC_Info_13_02"); //Leider geht die magische Wirkung des Erzes beim Schmelzen verloren. In den Hochöfen von Nordmar, da kennen sie die richtige Schmelztechnik. 
-	AI_Output			(self, other,"STT_301_IAN_MAGIC_Info_13_03"); //Aber selbst ohne die magische Wirkung sind Waffen aus diesem Erz extrem widerstandsfähig und richten mehr Schaden an als gewöhnliche Waffen.  
+	AI_Output			(other, self,"STT_301_IAN_MAGIC_Info_15_01"); //ErzÃ¤hl mir mehr vom Erz.
+	AI_Output			(self, other,"STT_301_IAN_MAGIC_Info_13_02"); //Leider geht die magische Wirkung des Erzes beim Schmelzen verloren. In den HochÃ¶fen von Nordmar, da kennen sie die richtige Schmelztechnik. 
+	AI_Output			(self, other,"STT_301_IAN_MAGIC_Info_13_03"); //Aber selbst ohne die magische Wirkung sind Waffen aus diesem Erz extrem widerstandsfÃ¤hig und richten mehr Schaden an als gewÃ¶hnliche Waffen.  
 	
 };   
 // ***************** Infos *****************************   
@@ -154,7 +154,7 @@ instance  STT_301_IAN_MINE (C_INFO)
 	information		= STT_301_IAN_MINE_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Erzähl mir von der Mine."; 
+	description		= "ErzÃ¤hl mir von der Mine."; 
 };
 
 FUNC int  STT_301_IAN_MINE_Condition()
@@ -168,9 +168,9 @@ FUNC int  STT_301_IAN_MINE_Condition()
 };
 func void  STT_301_IAN_MINE_Info()
 {
-	AI_Output			(other, self,"STT_301_IAN_MINE_Info_15_01"); //Erzähl mir von der Mine.
-	AI_Output			(self, other,"STT_301_IAN_MINE_Info_13_02"); //Wenn du dich hier weiter umsehen willst, sei vorsichtig. In den Höhlen sind Minecrawler. Am besten du bleibst in diesem Hauptschacht.
-	AI_Output			(self, other,"STT_301_IAN_MINE_Info_13_03"); //Und lass die Templer in Ruhe. Sie lungern zwar die meiste Zeit nur rum, aber wenn die Crawler kommen,gibt es keinen besseren Kämpfer an deiner Seite.  
+	AI_Output			(other, self,"STT_301_IAN_MINE_Info_15_01"); //ErzÃ¤hl mir von der Mine.
+	AI_Output			(self, other,"STT_301_IAN_MINE_Info_13_02"); //Wenn du dich hier weiter umsehen willst, sei vorsichtig. In den HÃ¶hlen sind Minecrawler. Am besten du bleibst in diesem Hauptschacht.
+	AI_Output			(self, other,"STT_301_IAN_MINE_Info_13_03"); //Und lass die Templer in Ruhe. Sie lungern zwar die meiste Zeit nur rum, aber wenn die Crawler kommen,gibt es keinen besseren KÃ¤mpfer an deiner Seite.  
 	AI_Output			(other, self,"STT_301_IAN_MINE_Info_15_04"); //Ich werd's mir merken.
 	AI_Output			(self, other,"STT_301_IAN_MINE_Info_13_05"); //Ich hab' noch zu tun. Und halte meine Jungs nicht von der Arbeit ab.
 	AI_Output			(other, self,"STT_301_IAN_MINE_Info_15_06"); //Ich sehe mich nur mal um.   
@@ -186,7 +186,7 @@ instance  STT_301_IAN_WANTLIST (C_INFO)
 	information		= STT_301_IAN_WANTLIST_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Ich wollte die Liste fürs Lager abholen."; 
+	description		= "Ich wollte die Liste fÃ¼rs Lager abholen."; 
 };
 
 FUNC int  STT_301_IAN_WANTLIST_Condition()
@@ -200,8 +200,8 @@ FUNC int  STT_301_IAN_WANTLIST_Condition()
 };
 FUNC void  STT_301_IAN_WANTLIST_Info()
 {
-	AI_Output			(other, self,"STT_301_IAN_WANTLIST_Info_15_01"); //Ich wollte die Liste fürs Lager abholen.
-	AI_Output			(self, other,"STT_301_IAN_WANTLIST_Info_13_02"); //Da könnte ja jeder kommen. Verpiss dich.
+	AI_Output			(other, self,"STT_301_IAN_WANTLIST_Info_15_01"); //Ich wollte die Liste fÃ¼rs Lager abholen.
+	AI_Output			(self, other,"STT_301_IAN_WANTLIST_Info_13_02"); //Da kÃ¶nnte ja jeder kommen. Verpiss dich.
 	 
 };  
 /*------------------------------------------------------------------------
@@ -231,7 +231,7 @@ FUNC void  STT_301_IAN_GETLIST_Info()
 {
 	AI_Output			(other, self,"STT_301_IAN_GETLIST_Info_15_01"); //Diego schickt mich. Ich soll die Liste abholen.
 	AI_Output			(self, other,"STT_301_IAN_GETLIST_Info_13_02"); //Alle klar, hier ist die Liste. Sie sollen sich mit dem Liefern beeilen.
-	B_LogEntry  (CH1_BringList,"Ian hat mir die Liste ohne Probleme übergeben.");
+	B_LogEntry  (CH1_BringList,"Ian hat mir die Liste ohne Probleme Ã¼bergeben.");
 	B_GiveInvItems	(self,hero,TheList,1);
 };  
 // **************************************************************************
@@ -260,12 +260,12 @@ FUNC VOID  STT_301_IAN_NEST_Info()
 {
 	AI_Output			(other, self,"STT_301_IAN_NEST_Info_15_01"); //Es muss hier irgendwo ein Nest der Minecrawler geben.
 	AI_Output			(self, other,"STT_301_IAN_NEST_Info_13_02"); //Hier gibt's wahrscheinlich Dutzende von Nestern.
-	AI_Output			(other, self,"STT_301_IAN_NEST_Info_15_03"); //Hör zu, ich muss zu diesem Nest...
-	AI_Output			(self, other,"STT_301_IAN_NEST_Info_13_04"); //Ich habe jetzt keine Zeit, mich darum zu kümmern. Unser Stampfer ist kaputt. Vor ein paar Stunden ist das Zahnrad gebrochen. 
+	AI_Output			(other, self,"STT_301_IAN_NEST_Info_15_03"); //HÃ¶r zu, ich muss zu diesem Nest...
+	AI_Output			(self, other,"STT_301_IAN_NEST_Info_13_04"); //Ich habe jetzt keine Zeit, mich darum zu kÃ¼mmern. Unser Stampfer ist kaputt. Vor ein paar Stunden ist das Zahnrad gebrochen. 
 	AI_Output			(self, other,"STT_301_IAN_NEST_Info_13_05"); //Ich hab' noch keine Idee, wo ich ein neues herbekommen kann.
-	AI_Output			(self, other,"STT_301_IAN_NEST_Info_13_06"); //Besorg mir doch einfach eins, dann kümmere ich mich um dein Problem.
+	AI_Output			(self, other,"STT_301_IAN_NEST_Info_13_06"); //Besorg mir doch einfach eins, dann kÃ¼mmere ich mich um dein Problem.
 
-	B_LogEntry		(CH2_MCEggs,	"Ian der Minenboss will mir nicht helfen das Nest zufinden Ich soll ihm erst ein neues Zahnrad für ihren kaputten Erzstampfer besorgen. Er erwähnte einen verlassenen Nebenstollen, in dem sich noch ein alter Stampfer befinden soll.");
+	B_LogEntry		(CH2_MCEggs,	"Ian der Minenboss will mir nicht helfen das Nest zufinden Ich soll ihm erst ein neues Zahnrad fÃ¼r ihren kaputten Erzstampfer besorgen. Er erwÃ¤hnte einen verlassenen Nebenstollen, in dem sich noch ein alter Stampfer befinden soll.");
 
 	Ian_gearwheel = LOG_RUNNING;
 };
@@ -294,7 +294,7 @@ FUNC VOID  STT_301_IAN_GEAR_RUN_Info()
 {
 	AI_Output			(other, self,"STT_301_IAN_GEAR_RUN_Info_15_01"); //Ein Zahnrad? Wo soll ich das herkriegen?
 	AI_Output			(self, other,"STT_301_IAN_GEAR_RUN_Info_13_02"); //Keine Ahnung. Ich bin so ratlos wie du!
-	AI_Output			(self, other,"STT_301_IAN_GEAR_RUN_Info_13_03"); //Aber es gibt in einem Nebenschacht noch einen alten, kaputten Stampfer. Vielleicht hast du ja dort Glück.
+	AI_Output			(self, other,"STT_301_IAN_GEAR_RUN_Info_13_03"); //Aber es gibt in einem Nebenschacht noch einen alten, kaputten Stampfer. Vielleicht hast du ja dort GlÃ¼ck.
 };
 
 // ******************************MISSION SUCCESS********************************************  
@@ -330,10 +330,10 @@ FUNC VOID  STT_301_IAN_GEAR_SUC_Info()
 
 	AI_Output			(other, self,"STT_301_IAN_GEAR_SUC_Info_15_01"); //Ich habe das Zahnrad.
 	AI_Output			(self, other,"STT_301_IAN_GEAR_SUC_Info_13_02"); //Hey, gut gemacht. Ich denke, das wird klappen. Nun zu dir, du suchst das Nest der Minecrawler...hm...
-	AI_Output			(self, other,"STT_301_IAN_GEAR_SUC_Info_13_03"); //Geh mal zu Asghan, er soll das Tor öffnen, damit du die dunklen Schächte durchsuchen kannst.
+	AI_Output			(self, other,"STT_301_IAN_GEAR_SUC_Info_13_03"); //Geh mal zu Asghan, er soll das Tor Ã¶ffnen, damit du die dunklen SchÃ¤chte durchsuchen kannst.
 	AI_Output			(self, other,"STT_301_IAN_GEAR_SUC_Info_13_04"); //Sag ihm einfach, "Alles wird gut". Dann wird er wissen, das ich die Erlaubnis gegeben habe.
 
-	B_LogEntry		(CH2_MCEggs,	"Ich habe Ian das Zahnrad des verlassenen Erzstampfers gebracht.Ian sagte mir,wenn ich Asgahn die Worte ALLES WIRD GUT sagen, dann wird er das Tor zu den dunklen Schächten öffnen.");
+	B_LogEntry		(CH2_MCEggs,	"Ich habe Ian das Zahnrad des verlassenen Erzstampfers gebracht.Ian sagte mir,wenn ich Asgahn die Worte ALLES WIRD GUT sagen, dann wird er das Tor zu den dunklen SchÃ¤chten Ã¶ffnen.");
 };
 
 // ******************************GOTO ASGHAN********************************************  
@@ -358,7 +358,7 @@ FUNC int  STT_301_IAN_GOTOASGHAN_Condition()
 FUNC VOID  STT_301_IAN_GOTOASGHAN_Info()
 {
 	AI_Output			(other, self,"STT_301_IAN_GOTOASGHAN_Info_15_01"); //Ich suche immer noch das Nest der Crawler.
-	AI_Output			(self, other,"STT_301_IAN_GOTOASGHAN_Info_13_02"); //Ich sagte doch, geh zu Asghan. Er ist der Anführer der Gardisten. Du findest in irgendwo auf der untersten Ebene.
+	AI_Output			(self, other,"STT_301_IAN_GOTOASGHAN_Info_13_02"); //Ich sagte doch, geh zu Asghan. Er ist der AnfÃ¼hrer der Gardisten. Du findest in irgendwo auf der untersten Ebene.
 
 	B_LogEntry		(CH2_MCEggs,	"Wenn ich das Minecrawlernest finden will, sollte ich mit Asghan reden.");
 };
@@ -385,8 +385,8 @@ FUNC VOID  STT_301_IAN_AFTERALL_Info()
 {
 	AI_Output			(other, self,"STT_301_IAN_AFTERALL_Info_15_01"); //Ich habe das Nest gefunden!
 	AI_Output			(self, other,"STT_301_IAN_AFTERALL_Info_13_02"); //Dann kehrt jetzt hier endlich wieder Ruhe ein. Hahaha!
-	AI_Output			(self, other,"STT_301_IAN_AFTERALL_Info_13_03"); //Nichts für ungut. Gute Arbeit, Kleiner! 
-	AI_Output			(self, other,"STT_301_IAN_AFTERALL_Info_13_04"); //Hier, nimm diese Kiste Bier für deine Mühen.
+	AI_Output			(self, other,"STT_301_IAN_AFTERALL_Info_13_03"); //Nichts fÃ¼r ungut. Gute Arbeit, Kleiner! 
+	AI_Output			(self, other,"STT_301_IAN_AFTERALL_Info_13_04"); //Hier, nimm diese Kiste Bier fÃ¼r deine MÃ¼hen.
 	CreateInvItems		(self, ItFo_OM_Beer_01,6);
 	B_GiveInvItems      (self, hero, ItFo_OM_Beer_01,6);
 };
@@ -399,7 +399,7 @@ instance  STT_301_IAN_NOTENOUGH (C_INFO)
 	information	=  STT_301_IAN_NOTENOUGH_Info;
 	important	= 0;	
 	permanent	= 0;
-	description = "Ich habe das Nest gefunden! Und Eier von der Minecrawler-Königin!";
+	description = "Ich habe das Nest gefunden! Und Eier von der Minecrawler-KÃ¶nigin!";
 };                       
 
 FUNC int  STT_301_IAN_NOTENOUGH_Condition()
@@ -412,6 +412,6 @@ FUNC int  STT_301_IAN_NOTENOUGH_Condition()
 };
 FUNC VOID  STT_301_IAN_NOTENOUGH_Info()
 {
-	AI_Output			(other, self,"STT_301_IAN_NOTENOUGH_Info_15_01"); //Ich habe das Nest gefunden! Und Eier von der Minecrawler-Königin!
-	AI_Output			(self, other,"STT_301_IAN_NOTENOUGH_Info_13_02"); //Wie? Nur so wenig Eier? Na, was soll's. Du hast bewiesen, dass du kämpfen kannst.
+	AI_Output			(other, self,"STT_301_IAN_NOTENOUGH_Info_15_01"); //Ich habe das Nest gefunden! Und Eier von der Minecrawler-KÃ¶nigin!
+	AI_Output			(self, other,"STT_301_IAN_NOTENOUGH_Info_13_02"); //Wie? Nur so wenig Eier? Na, was soll's. Du hast bewiesen, dass du kÃ¤mpfen kannst.
 };

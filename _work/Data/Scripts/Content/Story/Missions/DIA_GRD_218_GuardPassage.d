@@ -51,7 +51,7 @@ FUNC VOID DIA_Grd_218_FirstIn_Info()
 	AI_Output (self, other,"DIA_Grd_218_FirstIn_07_02"); //Machst du Witze?
 	AI_Output (other, self,"DIA_Grd_218_FirstIn_15_03"); //Frag das doch mal Thorus.
 	AI_Output (self, other,"DIA_Grd_218_FirstIn_07_04"); //Werde ich. Wenn du gelogen hast, bist du tot!
-	AI_Output (other, self,"DIA_Grd_218_FirstIn_15_05"); //Soll das heißen, ich kann jetzt reingehen.
+	AI_Output (other, self,"DIA_Grd_218_FirstIn_15_05"); //Soll das heiÃŸen, ich kann jetzt reingehen.
 	AI_Output (self, other,"DIA_Grd_218_FirstIn_07_06"); //Ja. Geh schon!
 	AI_StopProcessInfos	(self);
 };
@@ -68,9 +68,9 @@ FUNC VOID DIA_Grd_218_FirstIn_Info()
 //	Uhrzeit:	24h
 //
 //	Es passiert folgendes:
-//	1.	Nähert sich der Spieler dem Durchgang, so wird er in diesen
+//	1.	NÃ¤hert sich der Spieler dem Durchgang, so wird er in diesen
 //		Dialog gezwungen und einmal gewarnt
-//	2.	Nähert er sich trotzdem wieder, wird er angegriffen
+//	2.	NÃ¤hert er sich trotzdem wieder, wird er angegriffen
 //////////////////////////////////////////////////////////////////////////
 const string	Grd_218_CHECKPOINT		= "OCC_BARONS_HALLWAY_FRONT";
 
@@ -104,7 +104,7 @@ func void Info_Grd_218_FirstWarn_Info()
 
 	AI_Output (self, hero,"Info_Grd_218_FirstWarn_Info_07_01"); //HALT! Keinen Schritt weiter!
 	AI_Output (hero, self,"Info_Grd_218_FirstWarn_Info_15_02"); //Warum?
-	AI_Output (self, hero,"Info_Grd_218_FirstWarn_Info_07_03"); //Das Haus der Erzbarone ist tabu für Abschaum wie dich!
+	AI_Output (self, hero,"Info_Grd_218_FirstWarn_Info_07_03"); //Das Haus der Erzbarone ist tabu fÃ¼r Abschaum wie dich!
 
 	hero.aivar[AIV_LASTDISTTOWP] 		= Npc_GetDistToWP(hero,Grd_218_CHECKPOINT);
 	hero.aivar[AIV_GUARDPASSAGE_STATUS]	= AIV_GPS_FIRSTWARN;	
@@ -144,7 +144,7 @@ func int Info_Grd_218_Attack_Info()
 	hero.aivar[AIV_GUARDPASSAGE_STATUS]	= AIV_GPS_PUNISH;	
 	
 	B_FullStop			(self);	
-	AI_StopProcessInfos	(self);					// dem Spieler sofort wieder die Kontrolle zurückgeben
+	AI_StopProcessInfos	(self);					// dem Spieler sofort wieder die Kontrolle zurÃ¼ckgeben
 	B_IntruderAlert		(self,	other);
 	B_SetAttackReason	(self,	AIV_AR_INTRUDER);
 	Npc_SetTarget		(self,	hero);

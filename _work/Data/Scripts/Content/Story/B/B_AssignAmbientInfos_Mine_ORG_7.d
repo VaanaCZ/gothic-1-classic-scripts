@@ -37,7 +37,7 @@ INSTANCE Info_Mine_Org_7_Mine (C_INFO) // E1
 	condition	= Info_Mine_Org_7_Mine_Condition;
 	information	= Info_Mine_Org_7_Mine_Info;
 	permanent	= 1;
-	description = "Erzähl mir mal was über das Camp hier.";
+	description = "ErzÃ¤hl mir mal was Ã¼ber das Camp hier.";
 };                       
 
 FUNC INT Info_Mine_Org_7_Mine_Condition()
@@ -47,8 +47,8 @@ FUNC INT Info_Mine_Org_7_Mine_Condition()
 
 FUNC VOID Info_Mine_Org_7_Mine_Info()
 {
-	AI_Output(other,self,"Info_Mine_Org_7_Mine_15_00"); //Erzähl mir mal was über das Camp hier.
-	AI_Output(self,other,"Info_Mine_Org_7_Mine_07_01"); //Das Camp? Du meinst den Kessel. Ist nicht so schlecht hier. Die Schürfer bauen Erz ab, die Söldner passen auf, und wir Banditen behalten hier die Übersicht 
+	AI_Output(other,self,"Info_Mine_Org_7_Mine_15_00"); //ErzÃ¤hl mir mal was Ã¼ber das Camp hier.
+	AI_Output(self,other,"Info_Mine_Org_7_Mine_07_01"); //Das Camp? Du meinst den Kessel. Ist nicht so schlecht hier. Die SchÃ¼rfer bauen Erz ab, die SÃ¶ldner passen auf, und wir Banditen behalten hier die Ãœbersicht 
 	
 };
 
@@ -73,8 +73,8 @@ FUNC INT Info_Mine_Org_7_WichtigePersonen_Condition()
 FUNC VOID Info_Mine_Org_7_WichtigePersonen_Info()
 {
 	AI_Output(other,self,"Info_Mine_Org_7_WichtigePersonen_15_00"); //Wer hat den hier das Kommando?
-	AI_Output(self,other,"Info_Mine_Org_7_WichtigePersonen_07_01"); //Das kommt drauf an, von wem du dir was sagen lässt.
-	AI_Output(self,other,"Info_Mine_Org_7_WichtigePersonen_07_02"); //Wenn Okyl etwas von dir will, solltest du allerdings nicht widersprechen. Er kann nämlich ziemlich ungemütlich werden.
+	AI_Output(self,other,"Info_Mine_Org_7_WichtigePersonen_07_01"); //Das kommt drauf an, von wem du dir was sagen lÃ¤sst.
+	AI_Output(self,other,"Info_Mine_Org_7_WichtigePersonen_07_02"); //Wenn Okyl etwas von dir will, solltest du allerdings nicht widersprechen. Er kann nÃ¤mlich ziemlich ungemÃ¼tlich werden.
 	
 };
 

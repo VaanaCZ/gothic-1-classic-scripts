@@ -23,7 +23,7 @@ FUNC VOID  DIA_GorNaDrak_EXIT_Info()
 };
 
 // **************************************************
-//					Erste Begr¸ssung
+//					Erste Begr√ºssung
 // **************************************************
 
 instance  DIA_GorNaDrak_Greet (C_INFO)
@@ -44,8 +44,8 @@ FUNC int  DIA_GorNaDrak_Greet_Condition()
 FUNC VOID  DIA_GorNaDrak_Greet_Info()
 {
 	AI_Output (other, self,"DIA_GorNaDrak_Greet_15_00"); //Hi! Wohin soll's denn gehen?
-	AI_Output (self, other,"DIA_GorNaDrak_Greet_09_01"); //Wir bringen das Sekret der Minecrawler, das unsere Br¸der in der Alten Mine gewinnen, zu Cor Kalom.
-	AI_Output (self, other,"DIA_GorNaDrak_Greet_09_02"); //Einmal t‰glich gehen wir zur Alten Mine, um es abzuholen.
+	AI_Output (self, other,"DIA_GorNaDrak_Greet_09_01"); //Wir bringen das Sekret der Minecrawler, das unsere Br√ºder in der Alten Mine gewinnen, zu Cor Kalom.
+	AI_Output (self, other,"DIA_GorNaDrak_Greet_09_02"); //Einmal t√§glich gehen wir zur Alten Mine, um es abzuholen.
 };
 
 // **************************************************
@@ -59,7 +59,7 @@ instance  DIA_GorNaDrak_WasSekret (C_INFO)
 	condition	= DIA_GorNaDrak_WasSekret_Condition;
 	information	= DIA_GorNaDrak_WasSekret_Info;
 	permanent	= 0;
-	description  = "Was ist das f¸r ein Sekret?";
+	description  = "Was ist das f√ºr ein Sekret?";
 };                       
 
 FUNC int  DIA_GorNaDrak_WasSekret_Condition()
@@ -72,8 +72,8 @@ FUNC int  DIA_GorNaDrak_WasSekret_Condition()
 
 FUNC VOID  DIA_GorNaDrak_WasSekret_Info()
 {
-	AI_Output (other, self,"DIA_GorNaDrak_WasSekret_15_00"); //Was ist das f¸r ein Sekret?
-	AI_Output (self, other,"DIA_GorNaDrak_WasSekret_09_01"); //Wir gewinnen es aus den Zangen der Minecrawler. Wenn man weiﬂ wie, kann man sie herausnehmen, ohne dass das Sekret verloren geht.
+	AI_Output (other, self,"DIA_GorNaDrak_WasSekret_15_00"); //Was ist das f√ºr ein Sekret?
+	AI_Output (self, other,"DIA_GorNaDrak_WasSekret_09_01"); //Wir gewinnen es aus den Zangen der Minecrawler. Wenn man wei√ü wie, kann man sie herausnehmen, ohne dass das Sekret verloren geht.
 };
 
 // **************************************************
@@ -101,16 +101,16 @@ FUNC int  DIA_GorNaDrak_TeachMandibles_Condition()
 FUNC VOID  DIA_GorNaDrak_TeachMandibles_Info()
 {
 	AI_Output (other, self,"DIA_GorNaDrak_TeachMandibles_15_00"); //Kannst du mir sagen, wie ich an das Sekret eines Minecrawlers herankomme?
-	AI_Output (self, other,"DIA_GorNaDrak_TeachMandibles_09_01"); //Klar, nachdem du das Vieh getˆtet hast, packst du es an den Beiﬂzangen und reiﬂt sie gerade heraus. Dann kommt die Sekretdr¸se mit raus, ohne zu zerreiﬂen.
+	AI_Output (self, other,"DIA_GorNaDrak_TeachMandibles_09_01"); //Klar, nachdem du das Vieh get√∂tet hast, packst du es an den Bei√üzangen und rei√üt sie gerade heraus. Dann kommt die Sekretdr√ºse mit raus, ohne zu zerrei√üen.
 	
 	PrintScreen	("Lerne: Minecrawlerzangen nehmen", -1,-1,"FONT_OLD_20_WHITE.TGA",3);
 	Knows_GetMCMandibles = TRUE;
 	Log_CreateTopic (GE_AnimalTrophies,LOG_NOTE);
-	B_LogEntry (GE_AnimalTrophies,"Wissen ¸ber Zangen rausschneiden - Minecrawler");
+	B_LogEntry (GE_AnimalTrophies,"Wissen √ºber Zangen rausschneiden - Minecrawler");
 };
 
 // **************************************************
-//			 	Wof¸r ist Sekret da?
+//			 	Wof√ºr ist Sekret da?
 // **************************************************
 
 instance  DIA_GorNaDrak_WhatFor (C_INFO)
@@ -120,7 +120,7 @@ instance  DIA_GorNaDrak_WhatFor (C_INFO)
 	condition	= DIA_GorNaDrak_WhatFor_Condition;
 	information	= DIA_GorNaDrak_WhatFor_Info;
 	permanent	= 0;
-	description  = "Wof¸r braucht Cor Kalom das Sekret?";
+	description  = "Wof√ºr braucht Cor Kalom das Sekret?";
 };                       
 
 FUNC int  DIA_GorNaDrak_WhatFor_Condition()
@@ -133,10 +133,10 @@ FUNC int  DIA_GorNaDrak_WhatFor_Condition()
 
 FUNC VOID  DIA_GorNaDrak_WhatFor_Info()
 {
-	AI_Output (other, self,"DIA_GorNaDrak_WhatFor_15_00"); //Wof¸r braucht Cor Kalom das Sekret?
-	AI_Output (self, other,"DIA_GorNaDrak_WhatFor_09_01"); //Soweit ich weiﬂ, gewinnt er daraus ein Elixier, das die magische Kraft eines Novizen steigert.
-	AI_Output (self, other,"DIA_GorNaDrak_WhatFor_09_02"); //Seit wir uns auf die groﬂe Anrufung vorbereiten, kann er gar nicht genug von dem Zeug bekommen.
-	AI_Output (self, other,"DIA_GorNaDrak_WhatFor_09_03"); //Mit Hilfe des Elixiers will er die Novizen auf den groﬂen Tag vorbereiten.
+	AI_Output (other, self,"DIA_GorNaDrak_WhatFor_15_00"); //Wof√ºr braucht Cor Kalom das Sekret?
+	AI_Output (self, other,"DIA_GorNaDrak_WhatFor_09_01"); //Soweit ich wei√ü, gewinnt er daraus ein Elixier, das die magische Kraft eines Novizen steigert.
+	AI_Output (self, other,"DIA_GorNaDrak_WhatFor_09_02"); //Seit wir uns auf die gro√üe Anrufung vorbereiten, kann er gar nicht genug von dem Zeug bekommen.
+	AI_Output (self, other,"DIA_GorNaDrak_WhatFor_09_03"); //Mit Hilfe des Elixiers will er die Novizen auf den gro√üen Tag vorbereiten.
 };
 
 // **************************************************
@@ -150,7 +150,7 @@ instance  DIA_GorNaDrak_Permanent (C_INFO)
 	condition	= DIA_GorNaDrak_Permanent_Condition;
 	information	= DIA_GorNaDrak_Permanent_Info;
 	permanent	= 1;
-	description  = "Habt ihr schon genug Elixier f¸r die groﬂe Anrufung des Schl‰fers?";
+	description  = "Habt ihr schon genug Elixier f√ºr die gro√üe Anrufung des Schl√§fers?";
 };                       
 
 FUNC int  DIA_GorNaDrak_Permanent_Condition()
@@ -163,8 +163,8 @@ FUNC int  DIA_GorNaDrak_Permanent_Condition()
 
 FUNC VOID  DIA_GorNaDrak_Permanent_Info()
 {
-	AI_Output (other, self,"DIA_GorNaDrak_Permanent_15_00"); //Habt ihr schon genug Elixier f¸r die groﬂe Anrufung des Schl‰fers?
-	AI_Output (self, other,"DIA_GorNaDrak_Permanent_09_01"); //Nein - Wir m¸ssen noch 'ne Menge sammeln - in der Alten Mine sind unsere Minecrawler-Jagdtrupps Tag und Nacht im Einsatz.
+	AI_Output (other, self,"DIA_GorNaDrak_Permanent_15_00"); //Habt ihr schon genug Elixier f√ºr die gro√üe Anrufung des Schl√§fers?
+	AI_Output (self, other,"DIA_GorNaDrak_Permanent_09_01"); //Nein - Wir m√ºssen noch 'ne Menge sammeln - in der Alten Mine sind unsere Minecrawler-Jagdtrupps Tag und Nacht im Einsatz.
 };
 
 

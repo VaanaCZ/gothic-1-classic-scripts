@@ -51,8 +51,8 @@ FUNC INT Info_Nov_2_EinerVonEuchWerden_Condition()
 FUNC VOID Info_Nov_2_EinerVonEuchWerden_Info()
 {
 	AI_Output(other,self,"Info_Nov_2_EinerVonEuchWerden_15_00"); //Ich will bei euch mitmachen.
-	AI_Output(self,other,"Info_Nov_2_EinerVonEuchWerden_02_01"); //Du hast dich entschieden, dem Schläfer zu dienen? Vor dir liegt ein Weg voller Freude und Glück.
-	AI_Output(self,other,"Info_Nov_2_EinerVonEuchWerden_02_02"); //Gehe zu Cor Kalom, er entscheidet, für welche Aufgabe du am besten geeignet bist.
+	AI_Output(self,other,"Info_Nov_2_EinerVonEuchWerden_02_01"); //Du hast dich entschieden, dem SchlÃ¤fer zu dienen? Vor dir liegt ein Weg voller Freude und GlÃ¼ck.
+	AI_Output(self,other,"Info_Nov_2_EinerVonEuchWerden_02_02"); //Gehe zu Cor Kalom, er entscheidet, fÃ¼r welche Aufgabe du am besten geeignet bist.
 	
 	var C_NPC CorKalom;		CorKalom= Hlp_GetNpc(Gur_1201_CorKalom);
 	CorKalom.aivar[AIV_FINDABLE] = TRUE;
@@ -68,7 +68,7 @@ INSTANCE Info_Nov_2_WichtigePersonen(C_INFO)
 	condition	= Info_Nov_2_WichtigePersonen_Condition;
 	information	= Info_Nov_2_WichtigePersonen_Info;
 	permanent	= 1;
-	description = "Wer sind eure Anführer?";
+	description = "Wer sind eure AnfÃ¼hrer?";
 };                       
 
 FUNC INT Info_Nov_2_WichtigePersonen_Condition()
@@ -78,9 +78,9 @@ FUNC INT Info_Nov_2_WichtigePersonen_Condition()
 
 FUNC VOID Info_Nov_2_WichtigePersonen_Info()
 {
-	AI_Output(other,self,"Info_Nov_2_WichtigePersonen_15_00"); //Wer sind eure Anführer?
-	AI_Output(self,other,"Info_Nov_2_WichtigePersonen_02_01"); //Y'Berion, Cor Kalom und Cor Angar sind unsere geistigen Väter.
-	AI_Output(self,other,"Info_Nov_2_WichtigePersonen_02_02"); //Sie stellen unsere Verbindung zum Schläfer dar. Wenn wir an den Anrufungen teilnehmen, sind sie es, die den Kontakt zum Schläfer herstellen.
+	AI_Output(other,self,"Info_Nov_2_WichtigePersonen_15_00"); //Wer sind eure AnfÃ¼hrer?
+	AI_Output(self,other,"Info_Nov_2_WichtigePersonen_02_01"); //Y'Berion, Cor Kalom und Cor Angar sind unsere geistigen VÃ¤ter.
+	AI_Output(self,other,"Info_Nov_2_WichtigePersonen_02_02"); //Sie stellen unsere Verbindung zum SchlÃ¤fer dar. Wenn wir an den Anrufungen teilnehmen, sind sie es, die den Kontakt zum SchlÃ¤fer herstellen.
 	
 	var C_NPC YBerion;		YBerion	= Hlp_GetNpc(Gur_1200_Yberion);
 	var C_NPC CorKalom;		CorKalom= Hlp_GetNpc(Gur_1201_CorKalom);
@@ -100,7 +100,7 @@ INSTANCE Info_Nov_2_DasLager(C_INFO)
 	condition	= Info_Nov_2_DasLager_Condition;
 	information	= Info_Nov_2_DasLager_Info;
 	permanent	= 1;
-	description = "Was gibt es wichtiges über diesen Ort zu wissen?";
+	description = "Was gibt es wichtiges Ã¼ber diesen Ort zu wissen?";
 };                       
 
 FUNC INT Info_Nov_2_DasLager_Condition()
@@ -110,8 +110,8 @@ FUNC INT Info_Nov_2_DasLager_Condition()
 
 FUNC VOID Info_Nov_2_DasLager_Info()
 {
-	AI_Output(other,self,"Info_Nov_2_DasLager_15_00"); //Was gibt es wichtiges über diesen Ort zu wissen?
-	AI_Output(self,other,"Info_Nov_2_DasLager_02_01"); //Es ist ein Ort des Glaubens, Bruder. Wir haben nicht viel, aber was wir haben, teilen wir gerne mit denen, die sich die Lehren des Schläfers anhören wollen.
+	AI_Output(other,self,"Info_Nov_2_DasLager_15_00"); //Was gibt es wichtiges Ã¼ber diesen Ort zu wissen?
+	AI_Output(self,other,"Info_Nov_2_DasLager_02_01"); //Es ist ein Ort des Glaubens, Bruder. Wir haben nicht viel, aber was wir haben, teilen wir gerne mit denen, die sich die Lehren des SchlÃ¤fers anhÃ¶ren wollen.
 	AI_Output(self,other,"Info_Nov_2_DasLager_02_02"); //Suche einen der Gurus auf, und lass deine Seele bereichern.
 };
 
@@ -136,7 +136,7 @@ FUNC INT Info_Nov_2_DieLage_Condition()
 FUNC VOID Info_Nov_2_DieLage_Info()
 {
 	AI_Output(other,self,"Info_Nov_2_DieLage_15_00"); //Wie sieht's aus?
-	AI_Output(self,other,"Info_Nov_2_DieLage_02_01"); //Ich habe wenig Zeit - muss mich um meine Aufgaben kümmern.
+	AI_Output(self,other,"Info_Nov_2_DieLage_02_01"); //Ich habe wenig Zeit - muss mich um meine Aufgaben kÃ¼mmern.
 };
 	
 // *************************************************************************

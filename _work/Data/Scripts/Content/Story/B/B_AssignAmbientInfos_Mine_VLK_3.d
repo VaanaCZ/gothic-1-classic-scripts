@@ -37,7 +37,7 @@ INSTANCE Info_Mine_Vlk_3_Mine (C_INFO) // E1
 	condition	= Info_Mine_Vlk_3_Mine_Condition;
 	information	= Info_Mine_Vlk_3_Mine_Info;
 	permanent	= 1;
-	description = "Erz‰hl mir was von der Mine";
+	description = "Erz√§hl mir was von der Mine";
 };                       
 
 FUNC INT Info_Mine_Vlk_3_Mine_Condition()
@@ -50,8 +50,8 @@ FUNC INT Info_Mine_Vlk_3_Mine_Condition()
 
 FUNC VOID Info_Mine_Vlk_3_Mine_Info()
 {
-	AI_Output(other,self,"Info_Mine_Vlk_3_Mine_15_00"); //Erz‰hl mir was von der Mine
-	AI_Output(self,other,"Info_Mine_Vlk_3_Mine_03_01"); //Wir m¸ssen alle arbeiten. Wochenlang ohne Tageslicht. Es gibt kein Entkommen. Die einzige Freiheit ist der Tod.
+	AI_Output(other,self,"Info_Mine_Vlk_3_Mine_15_00"); //Erz√§hl mir was von der Mine
+	AI_Output(self,other,"Info_Mine_Vlk_3_Mine_03_01"); //Wir m√ºssen alle arbeiten. Wochenlang ohne Tageslicht. Es gibt kein Entkommen. Die einzige Freiheit ist der Tod.
 	
 };
 
@@ -92,7 +92,7 @@ INSTANCE Info_Mine_Vlk_3_Minecrawler(C_INFO)
 	condition	= Info_Mine_Vlk_3_Minecrawler_Condition;
 	information	= Info_Mine_Vlk_3_Minecrawler_Info;
 	permanent	= 1;
-	description = "Was weiﬂt Du ¸ber Minecrawler?";
+	description = "Was wei√üt Du √ºber Minecrawler?";
 };                       
 
 FUNC INT Info_Mine_Vlk_3_Minecrawler_Condition()
@@ -105,9 +105,9 @@ FUNC INT Info_Mine_Vlk_3_Minecrawler_Condition()
 
 FUNC VOID Info_Mine_Vlk_3_Minecrawler_Info()
 {
-	AI_Output(other,self,"Info_Mine_Vlk_3_Minecrawler_15_00"); //Was weiﬂt du ¸ber Minecrawler?
+	AI_Output(other,self,"Info_Mine_Vlk_3_Minecrawler_15_00"); //Was wei√üt du √ºber Minecrawler?
 	AI_Output(self,other,"Info_Mine_Vlk_3_Minecrawler_03_01"); //Die beste Art mit den Crawlern fertig zu werden? Lauf. Lauf, so schnell deine Beine dich tragen.
-	AI_Output(self,other,"Info_Mine_Vlk_3_Minecrawler_03_02"); //Wenn du vermisst wirst, ist es eh zu sp‰t. Aber dich wird sowieso keiner vermissen.
+	AI_Output(self,other,"Info_Mine_Vlk_3_Minecrawler_03_02"); //Wenn du vermisst wirst, ist es eh zu sp√§t. Aber dich wird sowieso keiner vermissen.
 };
 
 // *************************************************************************
@@ -134,8 +134,8 @@ FUNC INT Info_Mine_Vlk_3_DieLage_Condition()
 FUNC VOID Info_Mine_Vlk_3_DieLage_Info()
 {
 	AI_Output(other,self,"Info_Mine_Vlk_3_DieLage_15_00"); //Wie sieht's aus?
-	AI_Output(self,other,"Info_Mine_Vlk_3_DieLage_03_01"); //Tja, also mein R¸cken schmerzt, meine Arme fallen mir ab, meine Kehle ist trocken und ich bin m¸de.
-	AI_Output(self,other,"Info_Mine_Vlk_3_DieLage_03_02"); //Und das st‰ndige Ger‰usch der Spitzhacken. Ich werde noch wahnsinnig.
+	AI_Output(self,other,"Info_Mine_Vlk_3_DieLage_03_01"); //Tja, also mein R√ºcken schmerzt, meine Arme fallen mir ab, meine Kehle ist trocken und ich bin m√ºde.
+	AI_Output(self,other,"Info_Mine_Vlk_3_DieLage_03_02"); //Und das st√§ndige Ger√§usch der Spitzhacken. Ich werde noch wahnsinnig.
 };
 	
 // *************************************************************************

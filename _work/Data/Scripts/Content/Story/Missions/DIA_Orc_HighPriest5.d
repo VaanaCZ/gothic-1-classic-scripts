@@ -21,7 +21,7 @@ FUNC VOID Info_HighPriest5_Info()
 	
 	if ( Npc_HasItems ( hero, Mythrilklinge02 )) || ( Npc_HasItems ( hero, UrizielRune ))
 	{
-		AI_Output 			(self, other,"Info_HighPriest5_17_04"); //DU HASSST EINE MÄCHTIGEEE WAFFFEE!!!
+		AI_Output 			(self, other,"Info_HighPriest5_17_04"); //DU HASSST EINE MÃ„CHTIGEEE WAFFFEE!!!
 		AI_Output 			(self, other,"Info_HighPriest5_17_05"); //ICCH WERDDDEEEE DIIICH AUFFHALTEEEEEN!!!
 
 		AI_StopProcessInfos	(self);
@@ -33,8 +33,8 @@ FUNC VOID Info_HighPriest5_Info()
 	else
 	{
 		AI_Output 			(self, other,"Info_HighPriest5_17_01"); //UMKEEEHREN MUSST DU HIEEER!!!
-		AI_Output 			(self, other,"Info_HighPriest5_17_02"); //NIEEEMAND DARF DIE RUHEEE MEINEEES MEEEISTERS STÖÖÖÖREN!!!
-		AI_Output 			(other, self,"Info_HighPriest5_15_03"); //Irrtum, dein SCHLÄFER wird schon bald hellwach sein!
+		AI_Output 			(self, other,"Info_HighPriest5_17_02"); //NIEEEMAND DARF DIE RUHEEE MEINEEES MEEEISTERS STÃ–Ã–Ã–Ã–REN!!!
+		AI_Output 			(other, self,"Info_HighPriest5_15_03"); //Irrtum, dein SCHLÃ„FER wird schon bald hellwach sein!
 	
 		AI_StopProcessInfos	(self);
 	
@@ -75,7 +75,7 @@ FUNC VOID Info_HighPriest5FAILED_Info()
 	Npc_SetAttitude 	(self, ATT_HOSTILE);
 	Npc_SetTempAttitude (self, ATT_HOSTILE);	
 
-	B_LogEntry			(CH4_EnterTemple,	"Grash-Varrag-Arushat schient kein untoter Orkschamane wie die anderen zu sein. Es ist weitaus mächtiger und meine Waffen richteten nicht den geringsten Schaden an. Ich brauche eine Waffe, die mächtiger als alles andere ist!");
+	B_LogEntry			(CH4_EnterTemple,	"Grash-Varrag-Arushat schient kein untoter Orkschamane wie die anderen zu sein. Es ist weitaus mÃ¤chtiger und meine Waffen richteten nicht den geringsten Schaden an. Ich brauche eine Waffe, die mÃ¤chtiger als alles andere ist!");
 	B_GiveXP			(XP_RetreatFromLastPriest);
 
 	AI_StopProcessInfos	(self);

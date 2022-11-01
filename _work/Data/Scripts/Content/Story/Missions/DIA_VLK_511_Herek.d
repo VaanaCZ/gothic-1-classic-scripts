@@ -46,11 +46,11 @@ FUNC INT DIA_Herek_Bully_Condition()
 
 FUNC VOID DIA_Herek_Bully_Info()
 {
-	AI_Output (self, other,"DIA_Herek_Bully_01_00"); //Warte doch mal! Ich hab' gehˆrt, du hast dich mit Bloodwyn unterhalten?
+	AI_Output (self, other,"DIA_Herek_Bully_01_00"); //Warte doch mal! Ich hab' geh√∂rt, du hast dich mit Bloodwyn unterhalten?
 	AI_Output (other, self,"DIA_Herek_Bully_15_01"); //Warum? Was willst du?
 	AI_Output (self, other,"DIA_Herek_Bully_01_02"); //Fand ich echt gut von dir, dass du dich geweigert hast, ihm Schutzgeld zu zahlen!
-	AI_Output (self, other,"DIA_Herek_Bully_01_03"); //Das heiﬂt, wir anderen m¸ssen deinen Teil mitbezahlen!
-	AI_Output (self, other,"DIA_Herek_Bully_01_04"); //Ich werde daf¸r sorgen, dass du dich daran erinnerst, wenn er dich das n‰chste Mal fragt ...
+	AI_Output (self, other,"DIA_Herek_Bully_01_03"); //Das hei√üt, wir anderen m√ºssen deinen Teil mitbezahlen!
+	AI_Output (self, other,"DIA_Herek_Bully_01_04"); //Ich werde daf√ºr sorgen, dass du dich daran erinnerst, wenn er dich das n√§chste Mal fragt ...
 	
 	Npc_SetPermAttitude (self,ATT_ANGRY);
 	
@@ -85,10 +85,10 @@ FUNC INT DIA_Herek_Motz_Condition()
 FUNC VOID DIA_Herek_Motz_Info()
 {
 	AI_Output (other, self,"DIA_Herek_Motz_15_00"); //Na, wie sieht's aus?
-	AI_Output (self, other,"DIA_Herek_Motz_01_01"); //In diesem Lager ist nicht genug Platz f¸r uns beide!
+	AI_Output (self, other,"DIA_Herek_Motz_01_01"); //In diesem Lager ist nicht genug Platz f√ºr uns beide!
 	AI_Output (other, self,"DIA_Herek_Motz_15_02"); //Bitte was?
-	AI_Output (self, other,"DIA_Herek_Motz_01_03"); //Wenn es nach mir ginge, w¸rdest du hier nicht alt!
-	AI_Output (self, other,"DIA_Herek_Motz_01_04"); //Weiﬂt du, warum ich hier bin? In einer Nacht habe ich ein Dutzend Leute umgebracht. Einfach nur so ... h‰ h‰ h‰!
+	AI_Output (self, other,"DIA_Herek_Motz_01_03"); //Wenn es nach mir ginge, w√ºrdest du hier nicht alt!
+	AI_Output (self, other,"DIA_Herek_Motz_01_04"); //Wei√üt du, warum ich hier bin? In einer Nacht habe ich ein Dutzend Leute umgebracht. Einfach nur so ... h√§ h√§ h√§!
 	
 	Npc_SetPermAttitude (self,ATT_ANGRY);
 		

@@ -7,7 +7,7 @@
 //#####################################################################
 
 //---------------------------------------------------------------------
-//	Karte für 1. Fokus
+//	Karte fÃ¼r 1. Fokus
 //---------------------------------------------------------------------
 INSTANCE ItWrFocusmapPsi(C_Item)
 {	
@@ -27,7 +27,7 @@ INSTANCE ItWrFocusmapPsi(C_Item)
 	description		= name;
 	TEXT[1]			= "Auf dieser Karte ist der Weg zum";
 	TEXT[2]			= "Fokusstein eingezeichnet, den Y'Berion";
-	TEXT[3]			= "für seine Schläfer-Beschwörung benötigt";
+	TEXT[3]			= "fÃ¼r seine SchlÃ¤fer-BeschwÃ¶rung benÃ¶tigt";
 };
 
 	FUNC VOID UseFocusmapPsi()
@@ -60,12 +60,12 @@ INSTANCE Focus_1(C_Item)
 	material 			=	MAT_STONE;
 
 	description			=	name;
-	TEXT[1]				=	"Einer der fünf Foki, die zur Erschaffung";
+	TEXT[1]				=	"Einer der fÃ¼nf Foki, die zur Erschaffung";
 	TEXT[2]				=	"der magischen Barriere benutzt wurden.";
 };
 
 //---------------------------------------------------------------------
-//	Zahnrad für Ian
+//	Zahnrad fÃ¼r Ian
 //---------------------------------------------------------------------
 INSTANCE ItMi_Stuff_Gearwheel_01(C_Item)
 {	
@@ -101,8 +101,8 @@ INSTANCE ItAt_Crawlerqueen(C_Item)
 
 	description				=	name;
 	TEXT[0]					=	"Diese Eier wurden von einer";
-	TEXT[1]					=	"Minecrawler-Königin gelegt.";
-	TEXT[2]					=	"Sie enthalten ein viel stärkeres Sekret";
+	TEXT[1]					=	"Minecrawler-KÃ¶nigin gelegt.";
+	TEXT[2]					=	"Sie enthalten ein viel stÃ¤rkeres Sekret";
 	TEXT[3]					=	"als die Zangen der normalen Minecrawler.";
 	TEXT[5]					=	NAME_Value;					COUNT[5]	= value;
 };
@@ -125,7 +125,7 @@ INSTANCE ItWrFokusbuch(C_Item)
 	scemeName				=	"MAP";
 	on_state[0]				= 	UseItWrFokusbuch;
 	description				=	name;
-	TEXT[0]					=	"Dieses uralte Zauberbuch enthält eine Reihe";
+	TEXT[0]					=	"Dieses uralte Zauberbuch enthÃ¤lt eine Reihe";
 	TEXT[1]					=	"magischer Formeln, die sich alle auf die ";
 	TEXT[2]					=	"Verwendung sogenannter Fokus-Steine beziehen.";
 };
@@ -153,20 +153,20 @@ INSTANCE ItWrFokusbuch(C_Item)
 					Doc_PrintLine	( nDocID,  0, "Kapitel 23"			);
 					Doc_PrintLine	( nDocID,  0, "");
 					Doc_SetFont 	( nDocID, -1, "font_10_book.TGA"	   			); 	// -1 -> all pages 
-					Doc_PrintLine	( nDocID,  0, "Die gebündelte Macht");
+					Doc_PrintLine	( nDocID,  0, "Die gebÃ¼ndelte Macht");
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLines	( nDocID,  0, "Die im Inneren des Steins ruhende und ständige wachsende Kraft wird durch die Worte des Magiers freigesetzt. Beständig oder auf einen Schlag, das liegt alleine im seinem Ermessen. ");
+					Doc_PrintLines	( nDocID,  0, "Die im Inneren des Steins ruhende und stÃ¤ndige wachsende Kraft wird durch die Worte des Magiers freigesetzt. BestÃ¤ndig oder auf einen Schlag, das liegt alleine im seinem Ermessen. ");
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLines	( nDocID,  0, "Zugleich wird der Fokus jedoch frei von der Macht, er ist nunmehr eine leere Hülle.");
+					Doc_PrintLines	( nDocID,  0, "Zugleich wird der Fokus jedoch frei von der Macht, er ist nunmehr eine leere HÃ¼lle.");
 
 					//2.Seite
-					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den Ränder des TGAs aus, links,oben,rechts,unten)
+					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den RÃ¤nder des TGAs aus, links,oben,rechts,unten)
 					Doc_PrintLine	( nDocID,  1,  "");
-					Doc_PrintLines	( nDocID,  1, "Die Worte der Macht, um  die in einem Fokus aufbewahrte Energie freizulassen sind vielen Künstlern der arkanen Kraft zugänglich. Auch einen neues Artefakt mit Energie zu füllen ist mehr magische Gepflogenheit geworden denn ein Geheimnis der Wissenden. ");
+					Doc_PrintLines	( nDocID,  1, "Die Worte der Macht, um  die in einem Fokus aufbewahrte Energie freizulassen sind vielen KÃ¼nstlern der arkanen Kraft zugÃ¤nglich. Auch einen neues Artefakt mit Energie zu fÃ¼llen ist mehr magische Gepflogenheit geworden denn ein Geheimnis der Wissenden. ");
 					Doc_PrintLine	( nDocID,  1,  "");
-					Doc_PrintLines	( nDocID,  1,  "Doch einen gebrauchten Fokusstein wieder erneut aufzuladen, verstehen nur Auserwählte.Diese Formel aus uralten Tagen dient als Zeichen der hohen Gabe." );
+					Doc_PrintLines	( nDocID,  1,  "Doch einen gebrauchten Fokusstein wieder erneut aufzuladen, verstehen nur AuserwÃ¤hlte.Diese Formel aus uralten Tagen dient als Zeichen der hohen Gabe." );
 					Doc_PrintLine	( nDocID,  1, "");
-					Doc_PrintLines	( nDocID,  1, "So dann Wissender öffne deinen Geist für die Worte alter Macht  ");
+					Doc_PrintLines	( nDocID,  1, "So dann Wissender Ã¶ffne deinen Geist fÃ¼r die Worte alter Macht  ");
 					
 					Doc_Show		( nDocID );
 	};

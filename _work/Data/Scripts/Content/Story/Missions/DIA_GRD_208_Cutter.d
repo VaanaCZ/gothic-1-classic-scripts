@@ -33,7 +33,7 @@ instance  DIA_Cutter_Hello (C_INFO)
 	condition	= DIA_Cutter_Hello_Condition;
 	information	= DIA_Cutter_Hello_Info;
 	permanent	= 0;
-	description = "Ihr habt ganz schˆn viel Platz hier in der Burg.";
+	description = "Ihr habt ganz sch√∂n viel Platz hier in der Burg.";
 };                       
 
 FUNC int  DIA_Cutter_Hello_Condition()
@@ -45,7 +45,7 @@ FUNC int  DIA_Cutter_Hello_Condition()
 };
 FUNC VOID  DIA_Cutter_Hello_Info()
 {
-	AI_Output (other, self,"DIA_Cutter_Hello_15_00"); //Ihr habt ganz schˆn viel Platz hier in der Burg.
+	AI_Output (other, self,"DIA_Cutter_Hello_15_00"); //Ihr habt ganz sch√∂n viel Platz hier in der Burg.
 	AI_Output (self, other,"DIA_Cutter_Hello_08_01"); //Ich habe dich hier noch nie gesehen. Wer bist du?
 	AI_Output (other, self,"DIA_Cutter_Hello_15_02"); //Ich bin neu hier. Wollte mich mal ein bisschen umsehen.
 };
@@ -61,7 +61,7 @@ instance  DIA_Cutter_Burg (C_INFO)
 	condition	= DIA_Cutter_Burg_Condition;
 	information	= DIA_Cutter_Burg_Info;
 	permanent	= 10;
-	description = "Was kannst du mir ¸ber die Burg sagen?";
+	description = "Was kannst du mir √ºber die Burg sagen?";
 };                       
 
 FUNC int  DIA_Cutter_Burg_Condition()
@@ -74,12 +74,12 @@ FUNC int  DIA_Cutter_Burg_Condition()
 
 FUNC VOID  DIA_Cutter_Burg_Info()
 {
-	AI_Output (other, self,"DIA_Cutter_Burg_15_00"); //Was kannst du mir ¸ber die Burg sagen?
-	AI_Output (self, other,"DIA_Cutter_Burg_08_01"); //Nach dem groﬂen Aufstand haben sich Gomez und seine Jungs die Burg unter den Nagel gerissen.
-	AI_Output (self, other,"DIA_Cutter_Burg_08_02"); //Ich hab' damals schnell gemerkt, dass es besser ist, sich ihm anzuschlieﬂen.
+	AI_Output (other, self,"DIA_Cutter_Burg_15_00"); //Was kannst du mir √ºber die Burg sagen?
+	AI_Output (self, other,"DIA_Cutter_Burg_08_01"); //Nach dem gro√üen Aufstand haben sich Gomez und seine Jungs die Burg unter den Nagel gerissen.
+	AI_Output (self, other,"DIA_Cutter_Burg_08_02"); //Ich hab' damals schnell gemerkt, dass es besser ist, sich ihm anzuschlie√üen.
 	AI_Output (self, other,"DIA_Cutter_Burg_08_03"); //Schon als wir damals noch alle im Kerker eingepfercht waren, und in den Minen schuften mussten hatte er unter den Gefangenen am meisten zu sagen.
 	AI_Output (other, self,"DIA_Cutter_Burg_15_04"); //Es gibt Kerker unter der Burg?
-	AI_Output (self, other,"DIA_Cutter_Burg_08_05"); //Ja, aber sie sind heute leer. Seit dem groﬂen Aufstand will da niemand mehr rein.
+	AI_Output (self, other,"DIA_Cutter_Burg_08_05"); //Ja, aber sie sind heute leer. Seit dem gro√üen Aufstand will da niemand mehr rein.
 };
 
 //******************************************
@@ -107,7 +107,7 @@ FUNC int  DIA_Cutter_PERM_Condition()
 FUNC VOID  DIA_Cutter_PERM_Info()
 {
 	AI_Output (other, self,"DIA_Cutter_PERM_15_00"); //Wie ist das Leben als Gardist?
-	AI_Output (self, other,"DIA_Cutter_PERM_08_01"); //Ruhig. Wir sind das grˆﬂte und st‰rkste Lager in der Kolonie - mit uns legt sich keiner an.
+	AI_Output (self, other,"DIA_Cutter_PERM_08_01"); //Ruhig. Wir sind das gr√∂√üte und st√§rkste Lager in der Kolonie - mit uns legt sich keiner an.
 	AI_Output (other, self,"DIA_Cutter_PERM_15_02"); //Verstehe.
 	AI_StopProcessInfos	(self);
 };

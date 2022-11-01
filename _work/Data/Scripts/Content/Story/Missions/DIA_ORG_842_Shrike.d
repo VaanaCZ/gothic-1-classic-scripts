@@ -48,7 +48,7 @@ func void  DIA_Shrike_Hello_Info()
 	AI_Output (self, other,"DIA_Shrike_Hello_07_01"); //Verpiss dich!
 	
 	
-	//FMTaken = TRUE; 			//******* TEST - Helper für Sld-KdW Aufnahme!!! *********************  
+	//FMTaken = TRUE; 			//******* TEST - Helper fÃ¼r Sld-KdW Aufnahme!!! *********************  
 	//Kapitel = 4;
 
 	
@@ -85,7 +85,7 @@ func void  DIA_Shrike_GetLost_Info()
 
 	Log_CreateTopic		(CH1_ShrikesHut,	LOG_MISSION);
 	Log_SetTopicStatus	(CH1_ShrikesHut,	LOG_RUNNING);
-	B_LogEntry			(CH1_ShrikesHut,	"Ich konnte Shrike davon 'überzeugen' sich eine andere Hütte zu suchen. Mal gespannt, was Gorn dazu sagt.");
+	B_LogEntry			(CH1_ShrikesHut,	"Ich konnte Shrike davon 'Ã¼berzeugen' sich eine andere HÃ¼tte zu suchen. Mal gespannt, was Gorn dazu sagt.");
 	B_GiveXP			(XP_KickedShrike);
 
 	AI_StopProcessInfos	(self);	

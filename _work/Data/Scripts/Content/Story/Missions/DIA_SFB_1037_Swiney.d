@@ -45,11 +45,11 @@ FUNC VOID Info_Swiney_Hello_Info()
 {	
 	AI_Output (other, self,"Info_Swiney_Hello_15_00"); //Wer bist du?
 	AI_Output (self, other,"Info_Swiney_Hello_09_01"); //Ich bin der beste Bergbauer, den diese verdammte Kolonie jemals gesehen hat, mein Junge.
-	AI_Output (self, other,"Info_Swiney_Hello_09_02"); //Ich passe auf, dass nicht die H‰lfte unserer Jungs von Steinen erschlagen werden, weil sie zu dumm sind, an der richtigen Stelle zu sch¸rfen.
+	AI_Output (self, other,"Info_Swiney_Hello_09_02"); //Ich passe auf, dass nicht die H√§lfte unserer Jungs von Steinen erschlagen werden, weil sie zu dumm sind, an der richtigen Stelle zu sch√ºrfen.
 };
 
 // ************************************************************
-// 						Sch¸rfer
+// 						Sch√ºrfer
 // ************************************************************
 
 INSTANCE Info_Swiney_Schuerfer(C_INFO)
@@ -59,7 +59,7 @@ INSTANCE Info_Swiney_Schuerfer(C_INFO)
 	condition	= Info_Swiney_Schuerfer_Condition;
 	information	= Info_Swiney_Schuerfer_Info;
 	permanent	= 0;
-	description = "Ich will bei euch als Sch¸rfer mitmachen!";
+	description = "Ich will bei euch als Sch√ºrfer mitmachen!";
 };                       
 
 FUNC INT Info_Swiney_Schuerfer_Condition()
@@ -72,10 +72,10 @@ FUNC INT Info_Swiney_Schuerfer_Condition()
 
 FUNC VOID Info_Swiney_Schuerfer_Info()
 {	
-	AI_Output (other, self,"Info_Swiney_Schuerfer_15_00"); //Ich will bei euch als Sch¸rfer mitmachen!
-	AI_Output (self, other,"Info_Swiney_Schuerfer_09_01"); //So? Denk bloﬂ nicht, du kannst hier viel erwarten. Jeden Tag gibt's 3 Portionen Reis und f¸r den Rest musst du selber sorgen.
-	AI_Output (self, other,"Info_Swiney_Schuerfer_09_02"); //Du weiﬂt, warum wir das hier machen? Wir machen die Arbeit, damit alle hier eines Tages wieder rausspazieren kˆnnen.
-	AI_Output (self, other,"Info_Swiney_Schuerfer_09_03"); //Das heiﬂt, alles Erz wird abgegeben und kommt auf den groﬂen Haufen. Und einmal im Monat kriegt jeder, der hier hart gearbeitet hat, 50 Brocken Erz zum Versaufen.
+	AI_Output (other, self,"Info_Swiney_Schuerfer_15_00"); //Ich will bei euch als Sch√ºrfer mitmachen!
+	AI_Output (self, other,"Info_Swiney_Schuerfer_09_01"); //So? Denk blo√ü nicht, du kannst hier viel erwarten. Jeden Tag gibt's 3 Portionen Reis und f√ºr den Rest musst du selber sorgen.
+	AI_Output (self, other,"Info_Swiney_Schuerfer_09_02"); //Du wei√üt, warum wir das hier machen? Wir machen die Arbeit, damit alle hier eines Tages wieder rausspazieren k√∂nnen.
+	AI_Output (self, other,"Info_Swiney_Schuerfer_09_03"); //Das hei√üt, alles Erz wird abgegeben und kommt auf den gro√üen Haufen. Und einmal im Monat kriegt jeder, der hier hart gearbeitet hat, 50 Brocken Erz zum Versaufen.
 	AI_Output (self, other,"Info_Swiney_Schuerfer_09_04"); //Das waren auch schon die wichtigsten Sachen, die du wissen musst.
 	AI_Output (self, other,"Info_Swiney_Schuerfer_09_05"); //Kennst du dich wenigstens mit der Arbeit aus?
 	
@@ -87,7 +87,7 @@ FUNC VOID Info_Swiney_Schuerfer_Info()
 func void Info_Swiney_Schuerfer_Ja()
 {
 	AI_Output (other, self,"Info_Swiney_Schuerfer_Ja_15_00"); //Ja.
-	AI_Output (self, other,"Info_Swiney_Schuerfer_Ja_09_01"); //Gut! Dann weiﬂt du ja, worauf du zu achten hast. Hier ist Schutzkleidung. 'Ne Spitzhacke musst du dir suchen. Viel Spaﬂ.
+	AI_Output (self, other,"Info_Swiney_Schuerfer_Ja_09_01"); //Gut! Dann wei√üt du ja, worauf du zu achten hast. Hier ist Schutzkleidung. 'Ne Spitzhacke musst du dir suchen. Viel Spa√ü.
 	CreateInvItem (self, SFB_ARMOR_L);
 	B_GiveInvItems(self, hero, SFB_ARMOR_L, 1);
 	
@@ -97,8 +97,8 @@ func void Info_Swiney_Schuerfer_Ja()
 func void Info_Swiney_Schuerfer_Nein()
 {
 	AI_Output (other, self,"Info_Swiney_Schuerfer_Nein_15_00"); //Nein.
-	AI_Output (self, other,"Info_Swiney_Schuerfer_Nein_09_01"); //Nat¸rlich nicht! Warum immer ich? Gut. Pass auf. Du nimmst jetzt diese Klamotten und ziehst sie dir an - hier.
-	AI_Output (self, other,"Info_Swiney_Schuerfer_Nein_09_02"); //Wenn dir ein Erzbrocken auf den Fuﬂ f‰llt und du keine Schutzkleidung tr‰gst, bist du ein Kr¸ppel und nur noch die H‰lfte f¸r uns wert.
+	AI_Output (self, other,"Info_Swiney_Schuerfer_Nein_09_01"); //Nat√ºrlich nicht! Warum immer ich? Gut. Pass auf. Du nimmst jetzt diese Klamotten und ziehst sie dir an - hier.
+	AI_Output (self, other,"Info_Swiney_Schuerfer_Nein_09_02"); //Wenn dir ein Erzbrocken auf den Fu√ü f√§llt und du keine Schutzkleidung tr√§gst, bist du ein Kr√ºppel und nur noch die H√§lfte f√ºr uns wert.
 	AI_Output (self, other,"Info_Swiney_Schuerfer_Nein_09_03"); //'Ne Spitzhacke liegt hier bestimmt irgendwo noch rum.
 	AI_Output (self, other,"Info_Swiney_Schuerfer_Nein_09_04"); //Aber viel anfangen kannst du damit sowieso nicht - na ja - was soll's ...
 	

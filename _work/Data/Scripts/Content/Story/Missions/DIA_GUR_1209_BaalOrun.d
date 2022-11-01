@@ -24,7 +24,7 @@ FUNC VOID  DIA_BaalOrun_Exit_Info()
 };
 
 // ************************************************************
-// 					NICHT ansprechbar (Ungl‰ubiger) 
+// 					NICHT ansprechbar (Ungl√§ubiger) 
 // ************************************************************
 	var int BaalOrun_Ansprechbar;
 	var int BaalOrun_Sakrileg;
@@ -53,28 +53,28 @@ FUNC VOID DIA_BaalOrun_NoTalk_Info()
 	Info_ClearChoices 	(DIA_BaalOrun_NoTalk);
 	Info_Addchoice 		(DIA_BaalOrun_NoTalk,DIALOG_ENDE					,DIA_BaalOrun_NoTalk_ENDE);
 	Info_Addchoice 		(DIA_BaalOrun_NoTalk,"Alles, klar, Alter?"			,DIA_BaalOrun_NoTalk_Imp);
-	Info_Addchoice 		(DIA_BaalOrun_NoTalk,"Der Schl‰fer sei mit dir!"	,DIA_BaalOrun_NoTalk_Sleeper);
+	Info_Addchoice 		(DIA_BaalOrun_NoTalk,"Der Schl√§fer sei mit dir!"	,DIA_BaalOrun_NoTalk_Sleeper);
 	Info_Addchoice 		(DIA_BaalOrun_NoTalk,"Hi! Ich bin neu hier!"		,DIA_BaalOrun_NoTalk_Hi);
 };
 
 func void DIA_BaalOrun_NoTalk_Hi()
 {
 	AI_Output (other, self,"DIA_BaalOrun_NoTalk_Hi_15_00"); //Hi! Ich bin neu hier!
-	AI_Output (self, other,"DIA_BaalOrun_NoTalk_Hi_12_01"); //(ver‰rgertes Schnauben)
+	AI_Output (self, other,"DIA_BaalOrun_NoTalk_Hi_12_01"); //(ver√§rgertes Schnauben)
 	BaalOrun_Sakrileg = TRUE;
 };
 
 func void DIA_BaalOrun_NoTalk_Sleeper()
 {
-	AI_Output (other, self,"DIA_BaalOrun_NoTalk_Sleeper_15_00"); //Der Schl‰fer sei mit dir!
-	AI_Output (self, other,"DIA_BaalOrun_NoTalk_Sleeper_12_01"); //(ver‰rgertes Schnauben)
+	AI_Output (other, self,"DIA_BaalOrun_NoTalk_Sleeper_15_00"); //Der Schl√§fer sei mit dir!
+	AI_Output (self, other,"DIA_BaalOrun_NoTalk_Sleeper_12_01"); //(ver√§rgertes Schnauben)
 	BaalOrun_Sakrileg = TRUE;
 };
 
 func void DIA_BaalOrun_NoTalk_Imp()
 {
 	AI_Output (other, self,"DIA_BaalOrun_NoTalk_Imp_15_00"); //Alles klar, Alter? 
-	AI_Output (self, other,"DIA_BaalOrun_NoTalk_Imp_12_01"); //(ver‰rgertes Schnauben)
+	AI_Output (self, other,"DIA_BaalOrun_NoTalk_Imp_12_01"); //(ver√§rgertes Schnauben)
 	BaalOrun_Sakrileg = TRUE;
 };
 
@@ -107,18 +107,18 @@ FUNC int  DIA_BaalOrun_FirstTalk_Condition()
 
 FUNC VOID  DIA_BaalOrun_FirstTalk_Info()
 {
-	AI_Output (self, other,"DIA_BaalOrun_FirstTalk_12_00"); //Ich habe mit Ghorim gesprochen. Du hast dich f¸r einen unserer Br¸der eingesetzt - und deine Sache war gerecht.
-	AI_Output (self, other,"DIA_BaalOrun_FirstTalk_12_01"); //Darum habe ich dich f¸r eine besondere Aufgabe erw‰hlt.
-	AI_Output (self, other,"DIA_BaalOrun_FirstTalk_12_02"); //Cor Kalom braucht dringend neues Sumpfkraut f¸r seine Experimente.
+	AI_Output (self, other,"DIA_BaalOrun_FirstTalk_12_00"); //Ich habe mit Ghorim gesprochen. Du hast dich f√ºr einen unserer Br√ºder eingesetzt - und deine Sache war gerecht.
+	AI_Output (self, other,"DIA_BaalOrun_FirstTalk_12_01"); //Darum habe ich dich f√ºr eine besondere Aufgabe erw√§hlt.
+	AI_Output (self, other,"DIA_BaalOrun_FirstTalk_12_02"); //Cor Kalom braucht dringend neues Sumpfkraut f√ºr seine Experimente.
 	AI_Output (self, other,"DIA_BaalOrun_FirstTalk_12_03"); //Unsere Sammler im Sumpf arbeiten Tag und Nacht. Gehe zu ihnen und bring ihre gesamte Ernte zu Kalom ins Alchemielabor.
 	
 	B_GiveXP			(XP_BaalOrunTalks);
-	B_LogEntry			(CH1_GhorimsRelief,	"Ghorim wurde tats‰chlich von Harlok abgelˆst. Es geschehen noch Zeichen und Wunder.");
+	B_LogEntry			(CH1_GhorimsRelief,	"Ghorim wurde tats√§chlich von Harlok abgel√∂st. Es geschehen noch Zeichen und Wunder.");
 	Log_SetTopicStatus	(CH1_GhorimsRelief,	LOG_SUCCESS);
 
 	Log_CreateTopic		(CH1_DeliverWeed,	LOG_MISSION);
 	Log_SetTopicStatus	(CH1_DeliverWeed,	LOG_RUNNING);
-	B_LogEntry			(CH1_DeliverWeed,	"Meine ‹berredungsk¸nste bei Harlok, scheinen den Guru Baal Orun beeindruckt zu haben. Ich haben nun die 'Ehre' das gesammelte Kraut der Novizen im Sumpf zu Cor Kalom zu bringen.");
+	B_LogEntry			(CH1_DeliverWeed,	"Meine √úberredungsk√ºnste bei Harlok, scheinen den Guru Baal Orun beeindruckt zu haben. Ich haben nun die 'Ehre' das gesammelte Kraut der Novizen im Sumpf zu Cor Kalom zu bringen.");
 	BaalOrun_FetchWeed = LOG_RUNNING;
 	
 	Info_ClearChoices 	(DIA_BaalOrun_FirstTalk);
@@ -130,7 +130,7 @@ func void DIA_BaalOrun_FirstTalk_Where()
 {
 	AI_Output (other, self,"DIA_BaalOrun_FirstTalk_Where_15_00"); //Wo genau kann ich die Sammler finden?
 	AI_Output (self, other,"DIA_BaalOrun_FirstTalk_Where_12_01"); //Ich habe dir noch nicht gestattet, mich anzusprechen!
-	AI_Output (self, other,"DIA_BaalOrun_FirstTalk_Where_12_02"); //Bete zum Schl‰fer um Vergebung f¸r dieses Sakrileg! Und nun geh. Deine Mission ist von ‰uﬂerster Dringlichkeit.
+	AI_Output (self, other,"DIA_BaalOrun_FirstTalk_Where_12_02"); //Bete zum Schl√§fer um Vergebung f√ºr dieses Sakrileg! Und nun geh. Deine Mission ist von √§u√üerster Dringlichkeit.
 	
 	Info_ClearChoices 	(DIA_BaalOrun_FirstTalk);
 	AI_StopProcessInfos	(self);
@@ -169,7 +169,7 @@ FUNC int  DIA_BaalOrun_GotWeed_Condition()
 FUNC VOID  DIA_BaalOrun_GotWeed_Info()
 {
 	AI_Output (self, other,"DIA_BaalOrun_GotWeed_12_00"); //Du hast unsere Sammler verteidigt ...
-	AI_Output (self, other,"DIA_BaalOrun_GotWeed_12_01"); //Damit hast du nicht nur bewiesen, dass du auf unserer Seite stehst - du hast dich auch als w¸rdiger Diener des Schl‰fers erwiesen.
+	AI_Output (self, other,"DIA_BaalOrun_GotWeed_12_01"); //Damit hast du nicht nur bewiesen, dass du auf unserer Seite stehst - du hast dich auch als w√ºrdiger Diener des Schl√§fers erwiesen.
 	AI_Output (self, other,"DIA_BaalOrun_GotWeed_12_02"); //Du bist meiner Meinung nach bereit, die Robe eines Novizen zu tragen.
 	BaalOrun_Ansprechbar = TRUE;
 
@@ -178,7 +178,7 @@ FUNC VOID  DIA_BaalOrun_GotWeed_Info()
 	{
 		Log_SetTopicStatus	(CH1_JoinPsi,	LOG_RUNNING);
 	};
-	B_LogEntry			(CH1_JoinPsi,	"Baal Orun bezeichnete mich als w¸rdigen Diener des Schl‰fers, da ich f¸r die anderen Novizen im Sumpf gegen die Blutfliegen gek‰mpft habe.");
+	B_LogEntry			(CH1_JoinPsi,	"Baal Orun bezeichnete mich als w√ºrdigen Diener des Schl√§fers, da ich f√ºr die anderen Novizen im Sumpf gegen die Blutfliegen gek√§mpft habe.");
 	B_GiveXP			(XP_ImpressedBaalOrun);
 };
 
@@ -207,7 +207,7 @@ FUNC int  DIA_BaalOrun_WeedAtKaloms_Condition()
 FUNC VOID  DIA_BaalOrun_WeedAtKaloms_Info()
 {
 	AI_Output		(other, self,"DIA_BaalOrun_WeedAtKaloms_15_00"); //Ich habe Cor Kalom das Sumpfkraut gebracht.
-	AI_Output		(self, other,"DIA_BaalOrun_WeedAtKaloms_12_01"); //Daran hast du gut getan. Ich habe eine kleine Belohnung f¸r deine M¸hen. Hier, nimm es.
+	AI_Output		(self, other,"DIA_BaalOrun_WeedAtKaloms_12_01"); //Daran hast du gut getan. Ich habe eine kleine Belohnung f√ºr deine M√ºhen. Hier, nimm es.
 	AI_Output		(self, other,"DIA_BaalOrun_WeedAtKaloms_12_02"); //Es ist ein magischer Schlafzauber. Du kannst ihn nur einmal verwenden, aber er wird dir hoffentlich gute Dienste leisten.
 	
 	BaalOrun_Ansprechbar = TRUE; //damit NoTalk-info nicht kommt
@@ -228,7 +228,7 @@ instance  DIA_BaalOrun_Perm (C_INFO)
 	condition	= DIA_BaalOrun_Perm_Condition;
 	information	= DIA_BaalOrun_Perm_Info;
 	permanent	= 1;
-	description = "Wie l‰uft die Krautproduktion?";
+	description = "Wie l√§uft die Krautproduktion?";
 };                       
 
 FUNC int  DIA_BaalOrun_Perm_Condition()
@@ -241,9 +241,9 @@ FUNC int  DIA_BaalOrun_Perm_Condition()
 
 FUNC VOID  DIA_BaalOrun_Perm_Info()
 {
-	AI_Output (other, self,"DIA_BaalOrun_Perm_15_00"); //Wie l‰uft die Krautproduktion?
-	AI_Output (self, other,"DIA_BaalOrun_Perm_12_01"); //Wir belasten jeden Mann bis ans ƒuﬂerste, um genug f¸r uns UND den Handel mit den anderen Lagern herzustellen.
-	AI_Output (self, other,"DIA_BaalOrun_Perm_12_02"); //Aber es ist ein Opfer f¸r den Schl‰fer, und so bringen es die Novizen gerne.
+	AI_Output (other, self,"DIA_BaalOrun_Perm_15_00"); //Wie l√§uft die Krautproduktion?
+	AI_Output (self, other,"DIA_BaalOrun_Perm_12_01"); //Wir belasten jeden Mann bis ans √Ñu√üerste, um genug f√ºr uns UND den Handel mit den anderen Lagern herzustellen.
+	AI_Output (self, other,"DIA_BaalOrun_Perm_12_02"); //Aber es ist ein Opfer f√ºr den Schl√§fer, und so bringen es die Novizen gerne.
 };
 
 

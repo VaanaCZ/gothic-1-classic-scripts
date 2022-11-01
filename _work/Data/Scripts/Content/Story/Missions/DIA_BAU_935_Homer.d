@@ -33,7 +33,7 @@ INSTANCE DIA_Homer_Hello (C_INFO)
 	condition	= DIA_Homer_Hello_Condition;
 	information	= DIA_Homer_Hello_Info;
 	permanent	= 0;
-	description = "Hältst du nach irgendwas Ausschau?";
+	description = "HÃ¤ltst du nach irgendwas Ausschau?";
 };                       
 
 FUNC INT DIA_Homer_Hello_Condition()
@@ -43,9 +43,9 @@ FUNC INT DIA_Homer_Hello_Condition()
 
 FUNC VOID DIA_Homer_Hello_Info()
 {	
-	AI_Output (other, self,"DIA_Homer_Hello_15_00"); //Hältst du nach irgendwas Ausschau?
+	AI_Output (other, self,"DIA_Homer_Hello_15_00"); //HÃ¤ltst du nach irgendwas Ausschau?
 	AI_Output (self, other,"DIA_Homer_Hello_02_01"); //Ich suche undichte Stellen im Damm. Ich habe den Verdacht, dass ein Lurker am Fundament des Damms nagt.
-	AI_Output (self, other,"DIA_Homer_Hello_02_02"); //Das Vieh wetzt seine Zähne und Krallen an den Steinen und Holzbalken unter Wasser.
+	AI_Output (self, other,"DIA_Homer_Hello_02_02"); //Das Vieh wetzt seine ZÃ¤hne und Krallen an den Steinen und Holzbalken unter Wasser.
 	AI_Output (self, other,"DIA_Homer_Hello_02_03"); //Auf diese Weise ist bald der gesamte Damm untergraben.
 };
 
@@ -74,8 +74,8 @@ FUNC INT DIA_Homer_BuiltDam_Condition()
 FUNC VOID DIA_Homer_BuiltDam_Info()
 {	
 	AI_Output (other, self,"DIA_Homer_BuiltDam_15_00"); //Hast DU den Damm gebaut?
-	AI_Output (self, other,"DIA_Homer_BuiltDam_02_01"); //Ja. Als wir damals das neue Lager gegründet haben, habe ich den Damm errichtet.
-	AI_Output (self, other,"DIA_Homer_BuiltDam_02_02"); //Natürlich haben alle mitgeholfen, aber ich war der Baumeister.
+	AI_Output (self, other,"DIA_Homer_BuiltDam_02_01"); //Ja. Als wir damals das neue Lager gegrÃ¼ndet haben, habe ich den Damm errichtet.
+	AI_Output (self, other,"DIA_Homer_BuiltDam_02_02"); //NatÃ¼rlich haben alle mitgeholfen, aber ich war der Baumeister.
 };
 
 // ************************************************************
@@ -111,7 +111,7 @@ FUNC VOID DIA_Homer_WannaHelp_Info()
 	
 	Log_CreateTopic		(CH1_DamLurker, LOG_MISSION);
 	Log_SetTopicStatus	(CH1_DamLurker, LOG_RUNNING);
-	B_LogEntry			(CH1_DamLurker, "Homer erzählte mir, dass ein Lurker am Damm nagt. Wenn ich ihn aufhalten kann, wäre der Damm wieder zu reparieren.");
+	B_LogEntry			(CH1_DamLurker, "Homer erzÃ¤hlte mir, dass ein Lurker am Damm nagt. Wenn ich ihn aufhalten kann, wÃ¤re der Damm wieder zu reparieren.");
 
 };
 
@@ -140,7 +140,7 @@ FUNC INT DIA_Homer_Running_Condition()
 FUNC VOID DIA_Homer_Running_Info()
 {	
 	AI_Output (other, self,"DIA_Homer_Running_15_00"); //Wo finde ich das Biest?
-	AI_Output (self, other,"DIA_Homer_Running_02_01"); //Ich würde auf der anderen Seite des Sees suchen. Keiner von den Leuten hier geht da hin. Wahrscheinlich hat es da seine Höhle.
+	AI_Output (self, other,"DIA_Homer_Running_02_01"); //Ich wÃ¼rde auf der anderen Seite des Sees suchen. Keiner von den Leuten hier geht da hin. Wahrscheinlich hat es da seine HÃ¶hle.
 	
 	Homer_DamLurker = LOG_RUNNING;
 	B_LogEntry	(CH1_DamLurker, "Der Lurker muss seinen Ruheplatz irgendwo auf der abgelegenen Seite des Stausees haben.");
@@ -177,7 +177,7 @@ FUNC INT DIA_Homer_Success_Condition()
 FUNC VOID DIA_Homer_Success_Info()
 {	
 	AI_Output			(other, self,"DIA_Homer_Success_15_00"); //Ich hab' das Biest erledigt!
-	AI_Output			(self, other,"DIA_Homer_Success_02_01"); //Gut! Ich habe schon zusammen mit einigen von Reislords Leuten die Schäden behoben, die es bisher angerichtet hat.
+	AI_Output			(self, other,"DIA_Homer_Success_02_01"); //Gut! Ich habe schon zusammen mit einigen von Reislords Leuten die SchÃ¤den behoben, die es bisher angerichtet hat.
 	AI_Output			(self, other,"DIA_Homer_Success_02_02"); //Jetzt kann ich mich endlich mal wieder in Ruhe schlafen legen.
 		
 	Homer_DamLurker = 	LOG_SUCCESS;

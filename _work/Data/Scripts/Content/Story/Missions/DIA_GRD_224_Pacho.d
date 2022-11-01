@@ -51,8 +51,8 @@ func void Info_Pacho_STOP_Info()
 {
 	AI_Output			(self, hero,"Info_Pacho_STOP_13_01"); //Hey, du!
 	AI_Output			(hero, self,"Info_Pacho_STOP_15_02"); //Wer? Ich?
-	AI_Output			(self, hero,"Info_Pacho_STOP_13_03"); //Nein, ich mein deine Groﬂmutter ... Nat¸rlich mein ich dich!
-	AI_Output			(self, hero,"Info_Pacho_STOP_13_04"); //Wenn ich du w‰re, dann w¸rde ich diesen Weg hier nicht weitergehen!
+	AI_Output			(self, hero,"Info_Pacho_STOP_13_03"); //Nein, ich mein deine Gro√ümutter ... Nat√ºrlich mein ich dich!
+	AI_Output			(self, hero,"Info_Pacho_STOP_13_04"); //Wenn ich du w√§re, dann w√ºrde ich diesen Weg hier nicht weitergehen!
 	AI_Output			(hero, self,"Info_Pacho_STOP_15_05"); //Warum nicht?
 	AI_Output			(self, hero,"Info_Pacho_STOP_13_06"); //Du scheinst wirklich neu hier zu sein!
 	AI_Output			(self, hero,"Info_Pacho_STOP_13_07"); //Mann, hier geht es ins Orkgebiet!

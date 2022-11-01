@@ -79,7 +79,7 @@ FUNC INT Info_Mine_Sld_11_WichtigePersonen_Condition()
 FUNC VOID Info_Mine_Sld_11_WichtigePersonen_Info()
 {
 	AI_Output(other,self,"Info_Mine_Sld_11_WichtigePersonen_15_00"); //Wer erteilt hier die Befehle?
-	AI_Output(self,other,"Info_Mine_Sld_11_WichtigePersonen_011_01"); //Hier im Kessel läuft alles über Okyl. Er steht mit den wichtigen Leuten im Lager im Kontakt.
+	AI_Output(self,other,"Info_Mine_Sld_11_WichtigePersonen_011_01"); //Hier im Kessel lÃ¤uft alles Ã¼ber Okyl. Er steht mit den wichtigen Leuten im Lager im Kontakt.
 	AI_Output(self,other,"Info_Mine_Sld_11_WichtigePersonen_011_02"); //Also wenn du hier Mist baust, werden auch die Wassermagier im Neuen Lager davon erfahren.
 };
 
@@ -93,7 +93,7 @@ INSTANCE Info_Mine_Sld_11_DasLager(C_INFO)
 	condition	= Info_Mine_Sld_11_DasLager_Condition;
 	information	= Info_Mine_Sld_11_DasLager_Info;
 	permanent	= 1;
-	description = "Gibt´s hier irgendwas besonderes?";
+	description = "GibtÂ´s hier irgendwas besonderes?";
 };                       
 
 FUNC INT Info_Mine_Sld_11_DasLager_Condition()
@@ -104,8 +104,8 @@ FUNC INT Info_Mine_Sld_11_DasLager_Condition()
 FUNC VOID Info_Mine_Sld_11_DasLager_Info()
 {
 	AI_Output(other,self,"Info_Mine_Sld_11_DasLager_15_00"); //Gibt's hier irgendwas besonderes?
-	AI_Output(self,other,"Info_Mine_Sld_11_DasLager_011_01"); //Hier gibt's nichts außer ´ne ganze Menge Ärger, wenn man uns dumm kommt.
-	AI_Output(self,other,"Info_Mine_Sld_11_DasLager_011_02"); //Ach ja, wer versucht ohne Genehmigung in die Mine oder ins Torhaus zu kommen, bekommt auch Ärger.
+	AI_Output(self,other,"Info_Mine_Sld_11_DasLager_011_01"); //Hier gibt's nichts auÃŸer Â´ne ganze Menge Ã„rger, wenn man uns dumm kommt.
+	AI_Output(self,other,"Info_Mine_Sld_11_DasLager_011_02"); //Ach ja, wer versucht ohne Genehmigung in die Mine oder ins Torhaus zu kommen, bekommt auch Ã„rger.
 };
 
 // *************************************************************************
@@ -118,7 +118,7 @@ INSTANCE Info_Mine_Sld_11_DieLage(C_INFO) // E1
 	condition	= Info_Mine_Sld_11_DieLage_Condition;
 	information	= Info_Mine_Sld_11_DieLage_Info;
 	permanent	= 1;
-	description = "Wie sieht´s aus?";
+	description = "Wie siehtÂ´s aus?";
 };                       
 
 FUNC INT Info_Mine_Sld_11_DieLage_Condition()
@@ -129,7 +129,7 @@ FUNC INT Info_Mine_Sld_11_DieLage_Condition()
 FUNC VOID Info_Mine_Sld_11_DieLage_Info()
 {
 	AI_Output(other,self,"Info_Mine_Sld_11_DieLage_15_00"); //Wie sieht's aus?
-	AI_Output(self,other,"Info_Mine_Sld_11_DieLage_011_01"); //Ruhig, für meinen Geschmack etwas zu ruhig.
+	AI_Output(self,other,"Info_Mine_Sld_11_DieLage_011_01"); //Ruhig, fÃ¼r meinen Geschmack etwas zu ruhig.
 };
 	
 // *************************************************************************

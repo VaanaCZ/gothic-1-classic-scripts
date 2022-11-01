@@ -73,7 +73,7 @@ FUNC VOID DIA_SCAR_What_Info()
 {	
 	AI_Output (other, self,"DIA_SCAR_What_15_00"); //Was ist deine Aufgabe hier?
 	AI_Output (self, other,"DIA_SCAR_What_08_01"); //Ich und Arto passen auf, dass Gomez niemand zu nahe kommt, der hier nicht eingeladen wurde,
-	AI_Output (self, other,"DIA_SCAR_What_08_02"); //Außerdem kümmere ich mich darum, dass die Frauen hier nicht zu kurz kommen .
+	AI_Output (self, other,"DIA_SCAR_What_08_02"); //AuÃŸerdem kÃ¼mmere ich mich darum, dass die Frauen hier nicht zu kurz kommen .
 };
 
 // ************************************************************
@@ -103,9 +103,9 @@ FUNC VOID DIA_SCAR_Frau_Info()
 	AI_Output (other, self,"DIA_SCAR_Frau_15_00"); //Als sie mich reingeworfen haben, habe ich gesehen, wie eine Frau zusammen mit den Waren heruntergefahren wurde.
 	AI_Output (self, other,"DIA_SCAR_Frau_08_01"); //Und?
 	AI_Output (other, self,"DIA_SCAR_Frau_15_02"); //Ist sie hier?
-	AI_Output (self, other,"DIA_SCAR_Frau_08_03"); //Wenn du dich für sie interessierst, geb' ich dir einen guten Rat: Vergiss sie.
+	AI_Output (self, other,"DIA_SCAR_Frau_08_03"); //Wenn du dich fÃ¼r sie interessierst, geb' ich dir einen guten Rat: Vergiss sie.
 	AI_Output (self, other,"DIA_SCAR_Frau_08_04"); //Sie ist gerade angekommen und Gomez hat sie bei sich auf dem Zimmer eingesperrt.
-	AI_Output (self, other,"DIA_SCAR_Frau_08_05"); //Wenn er sie 'ne Zeit lang gehabt hat, schickt er sie vielleicht runter. Aber jetzt gehört sie IHM - also verschwende besser keinen Gedanken an sie.
+	AI_Output (self, other,"DIA_SCAR_Frau_08_05"); //Wenn er sie 'ne Zeit lang gehabt hat, schickt er sie vielleicht runter. Aber jetzt gehÃ¶rt sie IHM - also verschwende besser keinen Gedanken an sie.
 };
 
 // ************************************************************
@@ -119,7 +119,7 @@ INSTANCE DIA_SCAR_PERM (C_INFO)
 	condition	= DIA_SCAR_PERM_Condition;
 	information	= DIA_SCAR_PERM_Info;
 	permanent	= 1;
-	description = "Kannst du mir etwas über Gomez erzählen?";
+	description = "Kannst du mir etwas Ã¼ber Gomez erzÃ¤hlen?";
 };                       
 
 FUNC INT DIA_SCAR_PERM_Condition()
@@ -132,8 +132,8 @@ FUNC INT DIA_SCAR_PERM_Condition()
 
 FUNC VOID DIA_SCAR_PERM_Info()
 {	
-	AI_Output (other, self,"DIA_SCAR_PERM_15_00"); //Kannst du mir etwas über Gomez erzählen?
-	AI_Output (self, other,"DIA_SCAR_PERM_08_01"); //Über ihn musst du nur wissen, dass er der mächtigste Mann der Kolonie ist.
+	AI_Output (other, self,"DIA_SCAR_PERM_15_00"); //Kannst du mir etwas Ã¼ber Gomez erzÃ¤hlen?
+	AI_Output (self, other,"DIA_SCAR_PERM_08_01"); //Ãœber ihn musst du nur wissen, dass er der mÃ¤chtigste Mann der Kolonie ist.
 	AI_Output (self, other,"DIA_SCAR_PERM_08_02"); //Er kann alles haben, was er will, aber das einzige, was ihn WIRKLICH interessiert, ist Einfluss.
 };
 

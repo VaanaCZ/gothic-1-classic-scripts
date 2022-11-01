@@ -87,23 +87,23 @@ FUNC VOID DIA_Gomez_Hello_Info()
 	
 	Info_ClearChoices	(DIA_Gomez_Hello);																			
 	Info_AddChoice		(DIA_Gomez_Hello,"Ich hoffe ich muss dir nicht erst den Kopf abhacken, um mich zu beweisen." ,DIA_Gomez_Hello_KopfAb);
-	Info_AddChoice		(DIA_Gomez_Hello,"Weil hier nur Schwachkˆpfe rumrennen."									,DIA_Gomez_Hello_Spinner);
+	Info_AddChoice		(DIA_Gomez_Hello,"Weil hier nur Schwachk√∂pfe rumrennen."									,DIA_Gomez_Hello_Spinner);
 	Info_AddChoice		(DIA_Gomez_Hello,"Ich bin viel rumgekommen und habe gute Kontakte in allen Lagern."			,DIA_Gomez_Hello_Kontakte);
-	Info_AddChoice		(DIA_Gomez_Hello,"Ich habe die Pr¸fung des Vertrauens bestanden."							,DIA_Gomez_Hello_ThorusSays);
+	Info_AddChoice		(DIA_Gomez_Hello,"Ich habe die Pr√ºfung des Vertrauens bestanden."							,DIA_Gomez_Hello_ThorusSays);
 	
 };
 
 func void DIA_Gomez_Hello_ThorusSays()
 {
-	AI_Output (other, self,"DIA_Gomez_Hello_ThorusSays_15_00"); //Ich habe die Pr¸fung des Vertrauens bestanden und Thorus sagt, ich bin ein guter Mann.
-	AI_Output (self, other,"DIA_Gomez_Hello_ThorusSays_11_01"); //Du w‰rst hier nicht lebend reingekommen, wenn das nicht so w‰re. Ich hoffe, das war nicht schon alles.
+	AI_Output (other, self,"DIA_Gomez_Hello_ThorusSays_15_00"); //Ich habe die Pr√ºfung des Vertrauens bestanden und Thorus sagt, ich bin ein guter Mann.
+	AI_Output (self, other,"DIA_Gomez_Hello_ThorusSays_11_01"); //Du w√§rst hier nicht lebend reingekommen, wenn das nicht so w√§re. Ich hoffe, das war nicht schon alles.
 };
 
 func void DIA_Gomez_Hello_Kontakte()
 {
 	gomez_kontakte = 0;
 	AI_Output (other, self,"DIA_Gomez_Hello_Kontakte_15_00"); //Ich bin viel in der Kolonie rumgekommen und habe gute Kontakte in allen Lagern.
-	AI_Output (self, other,"DIA_Gomez_Hello_Kontakte_11_01"); //Das ist tats‰chlich ein guter Grund. Zu wem hast du Kontakte?
+	AI_Output (self, other,"DIA_Gomez_Hello_Kontakte_11_01"); //Das ist tats√§chlich ein guter Grund. Zu wem hast du Kontakte?
 	Info_ClearChoices	(DIA_Gomez_Hello);
 	Info_AddChoice		(DIA_Gomez_Hello,"Das waren alle wichtigen." ,DIA_Gomez_Hello_Kontakte_ThatsAll);
 	Info_AddChoice		(DIA_Gomez_Hello,"Zu einigen Hehlern im Neuen Lager."	,DIA_Gomez_Hello_Kontakte_NLHehler);
@@ -120,7 +120,7 @@ func void DIA_Gomez_Hello_Kontakte()
 
 func void DIA_Gomez_Hello_Spinner()
 {
-	AI_Output (other, self,"DIA_Gomez_Hello_Spinner_15_00"); //Weil hier nur Schwachkˆpfe rumrennen, die ihre Aufgaben lieber an Neulinge weitergeben, statt sie selber zu erledigen.
+	AI_Output (other, self,"DIA_Gomez_Hello_Spinner_15_00"); //Weil hier nur Schwachk√∂pfe rumrennen, die ihre Aufgaben lieber an Neulinge weitergeben, statt sie selber zu erledigen.
 	AI_Output (self, other,"DIA_Gomez_Hello_Spinner_11_01"); //Das ist zwar bis auf wenige Ausnahmen richtig, aber kein Grund einen weiteren Schwachkopf anzuheuern.
 };
 
@@ -142,9 +142,9 @@ func void DIA_Gomez_Hello_Kontakte_YBerion()
 {
 	AI_Output (other, self,"DIA_Gomez_Hello_Kontakte_YBerion_15_00"); //Zu Y'Berion.
 	AI_Output (self, other,"DIA_Gomez_Hello_Kontakte_YBerion_11_01"); //Y'Berion gibt sich nicht mit Burschen wie dir ab.
-	AI_Output (self, other,"DIA_Gomez_Hello_Kontakte_YBerion_11_02"); //Dass du l¸gst, zeigt mir, dass du mich f¸r dumm h‰ltst.
-	AI_Output (self, other,"DIA_Gomez_Hello_Kontakte_YBerion_11_03"); //Dass du mich f¸r DUMM h‰ltst, entt‰uscht mich.
-	AI_Output (self, other,"DIA_Gomez_Hello_Kontakte_YBerion_11_04"); //Ich hasse es, entt‰uscht zu werden.
+	AI_Output (self, other,"DIA_Gomez_Hello_Kontakte_YBerion_11_02"); //Dass du l√ºgst, zeigt mir, dass du mich f√ºr dumm h√§ltst.
+	AI_Output (self, other,"DIA_Gomez_Hello_Kontakte_YBerion_11_03"); //Dass du mich f√ºr DUMM h√§ltst, entt√§uscht mich.
+	AI_Output (self, other,"DIA_Gomez_Hello_Kontakte_YBerion_11_04"); //Ich hasse es, entt√§uscht zu werden.
 	AI_StopProcessInfos	(self);
 	Npc_SetPermAttitude	(self, ATT_HOSTILE);
 	Npc_SetTarget (self,other);
@@ -170,7 +170,7 @@ func void DIA_Gomez_Hello_Kontakte_Lee()
 {
 	AI_Output (other, self,"DIA_Gomez_Hello_Kontakte_Lee_15_00"); //Zu Lee.
 	AI_Output (self, other,"DIA_Gomez_Hello_Kontakte_Lee_11_01"); //Lee ist also ein guter Freund von dir, ja?
-	AI_Output (self, other,"DIA_Gomez_Hello_Kontakte_Lee_11_02"); //Dann sieht die Sache nat¸rlich ANDERS AUS (zornig am ENDE)
+	AI_Output (self, other,"DIA_Gomez_Hello_Kontakte_Lee_11_02"); //Dann sieht die Sache nat√ºrlich ANDERS AUS (zornig am ENDE)
 
 	AI_StopProcessInfos	(self);
 	Npc_SetPermAttitude	(self, ATT_HOSTILE);
@@ -197,7 +197,7 @@ func void DIA_Gomez_Hello_Kontakte_ThatsAll()
 	AI_Output (other, self,"DIA_Gomez_Hello_Kontakte_ThatsAll_15_00"); //Das waren alle wichtigen.
 	if (gomez_kontakte >= 4)	
 	{
-		AI_Output (self, other,"DIA_Gomez_Hello_Kontakte_ThatsAll_11_01"); //Beachtlich - f¸r einen Neuling wie dich ...
+		AI_Output (self, other,"DIA_Gomez_Hello_Kontakte_ThatsAll_11_01"); //Beachtlich - f√ºr einen Neuling wie dich ...
 		AI_Output (self, other,"DIA_Gomez_Hello_Kontakte_ThatsAll_11_02"); //Du sollst deine Chance kriegen.
 		Info_ClearChoices	(DIA_Gomez_Hello);
 	}
@@ -219,7 +219,7 @@ instance DIA_Gomez_Dabei (C_INFO)
 	condition	= DIA_Gomez_Dabei_Condition;
 	information	= DIA_Gomez_Dabei_Info;
 	permanent	= 0;
-	description	= "Heiﬂt das, ich bin dabei?";
+	description	= "Hei√üt das, ich bin dabei?";
 };                       
 
 FUNC int DIA_Gomez_Dabei_Condition()
@@ -233,24 +233,24 @@ FUNC int DIA_Gomez_Dabei_Condition()
 
 FUNC VOID DIA_Gomez_Dabei_Info()
 {
-	AI_Output (other, self,"DIA_Gomez_Dabei_15_00"); //Heiﬂt das, ich bin dabei?
-	AI_Output (self, other,"DIA_Gomez_Dabei_11_01"); //Genau das heiﬂt es. Du bist jetzt einer von uns, Kleiner.
-	AI_Output (self, other,"DIA_Gomez_Dabei_11_02"); //Alles Weitere wird dir Raven erz‰hlen.
+	AI_Output (other, self,"DIA_Gomez_Dabei_15_00"); //Hei√üt das, ich bin dabei?
+	AI_Output (self, other,"DIA_Gomez_Dabei_11_01"); //Genau das hei√üt es. Du bist jetzt einer von uns, Kleiner.
+	AI_Output (self, other,"DIA_Gomez_Dabei_11_02"); //Alles Weitere wird dir Raven erz√§hlen.
 	
 	Npc_SetTrueGuild (hero,GIL_STT );
 	hero.guild = GIL_STT;
 	B_GiveXP (XP_BecomeShadow);
-	B_LogEntry			(CH1_JoinOC,	"Von heute an arbeite ich f¸r Gomez und das Alte Lager. Raven wird mir alles weitere erz‰hlen!");
+	B_LogEntry			(CH1_JoinOC,	"Von heute an arbeite ich f√ºr Gomez und das Alte Lager. Raven wird mir alles weitere erz√§hlen!");
 	Log_SetTopicStatus	(CH1_JoinOC,	LOG_SUCCESS);
 
 	// Canceln der anderen Aufnahmen
 	Log_CreateTopic		(CH1_JoinNC,	LOG_MISSION);
 	Log_SetTopicStatus	(CH1_JoinNC,	LOG_FAILED);
-	B_LogEntry			(CH1_JoinNC,	"Als einer von Gomez' Leuten ist eine Aufnahme in Lares' Bande unmˆglich geworden!");
+	B_LogEntry			(CH1_JoinNC,	"Als einer von Gomez' Leuten ist eine Aufnahme in Lares' Bande unm√∂glich geworden!");
 	
 	Log_CreateTopic		(CH1_JoinPsi,	LOG_MISSION);
 	Log_SetTopicStatus	(CH1_JoinPsi,	LOG_FAILED);
-	B_LogEntry			(CH1_JoinPsi,	"Von nun an ist das Alte Lager mein neues Zuhause. Die Bruderschaft des Schl‰fers wird ohne mich auskommen m¸ssen.");
+	B_LogEntry			(CH1_JoinPsi,	"Von nun an ist das Alte Lager mein neues Zuhause. Die Bruderschaft des Schl√§fers wird ohne mich auskommen m√ºssen.");
 	
 	AI_StopProcessInfos	(self);
 };
@@ -315,9 +315,9 @@ FUNC void  DIA_EBR_100_Gomez_Wait4SC_Info()
 {
 	AI_Output (self, other,"DIA_EBR_100_Gomez_Wait4SC_11_01"); //Wie bist du denn hier rein gekommen?
 	AI_Output (self, other,"DIA_EBR_100_Gomez_Wait4SC_11_02"); //Moment! Bist du nicht diese Pestzecke gewesen, die unsere Leute in der Freien Mine kalt gemacht hat?
-	AI_Output (other, self,"DIA_EBR_100_Gomez_Wait4SC_15_03"); //Deine Leute hatten kein Recht, dort einzufallen. Ich habe diesen Anflug von Grˆﬂenwahnsinn nur wieder korrigiert!
+	AI_Output (other, self,"DIA_EBR_100_Gomez_Wait4SC_15_03"); //Deine Leute hatten kein Recht, dort einzufallen. Ich habe diesen Anflug von Gr√∂√üenwahnsinn nur wieder korrigiert!
 	AI_Output (self, other,"DIA_EBR_100_Gomez_Wait4SC_11_04"); //Du hast Mut, so mit mir - GOMEZ - zu sprechen, aber es war ziemlich dumm von dir, hier einfach aufzutauchen.
-	AI_Output (self, other,"DIA_EBR_100_Gomez_Wait4SC_11_05"); //Ich werde persˆnlich sicherstellen, dass du mir nie wieder in die Suppe spucken wirst.
+	AI_Output (self, other,"DIA_EBR_100_Gomez_Wait4SC_11_05"); //Ich werde pers√∂nlich sicherstellen, dass du mir nie wieder in die Suppe spucken wirst.
 	
 	AI_StopProcessInfos	( self );
 

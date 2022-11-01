@@ -7,11 +7,11 @@
 //	Uhrzeit:	24h
 //
 //	Es passiert folgendes:
-//	1.	Nähert sich der Spieler dem Durchgang, so wird er in diesen
+//	1.	NÃ¤hert sich der Spieler dem Durchgang, so wird er in diesen
 //		Dialog gezwungen und einmal gewarnt
-//	2.	Nähert sich der SC trotzdem weiter, so wird er ein ZWEITES Mal
+//	2.	NÃ¤hert sich der SC trotzdem weiter, so wird er ein ZWEITES Mal
 //		gewarnt (aggressiver mit Waffe ziehen)
-//	3.	Nähert er sich trotzdem wieder, wird er angegriffen
+//	3.	NÃ¤hert er sich trotzdem wieder, wird er angegriffen
 //////////////////////////////////////////////////////////////////////////
 CONST STRING	Grd_212_CHECKPOINT		= "OCC_GATE_INSIDE";
 
@@ -80,7 +80,7 @@ FUNC INT Info_Grd_212_LastWarn_Condition()
 
 func int Info_Grd_212_LastWarn_Info()
 {
-	AI_Output (self, hero,"Info_Grd_212_LastWarn_13_01"); 		//Bist du taub? Noch ein Schritt und du bist Futter für die Würmer!
+	AI_Output (self, hero,"Info_Grd_212_LastWarn_13_01"); 		//Bist du taub? Noch ein Schritt und du bist Futter fÃ¼r die WÃ¼rmer!
 
 	hero.aivar[AIV_LASTDISTTOWP] 		= Npc_GetDistToWP (hero,Grd_212_CHECKPOINT);
 	hero.aivar[AIV_GUARDPASSAGE_STATUS]	= AIV_GPS_LASTWARN;	
@@ -120,7 +120,7 @@ func int Info_Grd_212_Attack_Info()
 	hero.aivar[AIV_GUARDPASSAGE_STATUS]	= AIV_GPS_PUNISH;	
 	
 	B_FullStop			(self);	
-	AI_StopProcessInfos	(self);					//dem Spieler sofort wieder die Kontrolle zurückgeben
+	AI_StopProcessInfos	(self);					//dem Spieler sofort wieder die Kontrolle zurÃ¼ckgeben
 	B_IntruderAlert		(self,	other);
 	B_SetAttackReason	(self,	AIV_AR_INTRUDER);
 	Npc_SetTarget		(self,	hero);
@@ -177,8 +177,8 @@ FUNC VOID Info_Grd_212_Abblitzen_Info()
 {
 	AI_Output (other, self,"Info_Grd_212_Abblitzen_15_00"); //Ich will in die Burg!
 	AI_Output (self, other,"Info_Grd_212_Abblitzen_13_01"); //Das ist ja interessant! ICH will raus aus der verdammten Kolonie!
-	AI_Output (self, other,"Info_Grd_212_Abblitzen_13_02"); //Kann mir nämlich was Besseres vorstellen, als Pennern wie dir den Eintritt zu verbieten.
-	AI_Output (other, self,"Info_Grd_212_Abblitzen_15_03"); //Du könntest mich auch reinlassen.
+	AI_Output (self, other,"Info_Grd_212_Abblitzen_13_02"); //Kann mir nÃ¤mlich was Besseres vorstellen, als Pennern wie dir den Eintritt zu verbieten.
+	AI_Output (other, self,"Info_Grd_212_Abblitzen_15_03"); //Du kÃ¶nntest mich auch reinlassen.
 	AI_Output (self, other,"Info_Grd_212_Abblitzen_13_04"); //Kann ich nicht! Thorus kann das.
 	AI_StopProcessInfos	(self);
 };
@@ -209,7 +209,7 @@ FUNC VOID Info_Grd_212_FirstIn_Info()
 {
 	AI_Output (self, other,"Info_Grd_212_FirstIn_13_00"); //Halt!
 	AI_Output (other, self,"Info_Grd_212_FirstIn_15_01"); //Entspann dich! Ich hab' mit Thorus geredet. Ich kann rein.
-	AI_Output (self, other,"Info_Grd_212_FirstIn_13_02"); //Ich werd' mir deine Visage merken. Wenn du Ärger machst, bist du dran!
+	AI_Output (self, other,"Info_Grd_212_FirstIn_13_02"); //Ich werd' mir deine Visage merken. Wenn du Ã„rger machst, bist du dran!
 	AI_StopProcessInfos	(self);
 };
 
@@ -238,6 +238,6 @@ FUNC INT Info_Grd_212_Passgate_Condition()
 FUNC VOID Info_Grd_212_Passgate_Info()
 {
 	AI_Output (other, self,"Info_Grd_212_Passgate_15_00"); //Kann ich immer noch rein?
-	AI_Output (self, other,"Info_Grd_212_Passgate_13_01"); //Wenn du noch mal so dämlich fragst, nicht mehr.
+	AI_Output (self, other,"Info_Grd_212_Passgate_13_01"); //Wenn du noch mal so dÃ¤mlich fragst, nicht mehr.
 	AI_StopProcessInfos	(self);
 };

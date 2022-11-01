@@ -21,7 +21,7 @@ FUNC int DIA_SLD_760_Soeldner_INTRO_CONDITION()
 
 func void DIA_SLD_760_Soeldner_INTRO_INFO()
 {
-	AI_Output (self, other,"DIA_SLD_760_Soeldner_INTRO_INFO_13_01"); //Was scharwenzelst du hier rum? Ich sag dir eins: Finger weg von der Tür.
+	AI_Output (self, other,"DIA_SLD_760_Soeldner_INTRO_INFO_13_01"); //Was scharwenzelst du hier rum? Ich sag dir eins: Finger weg von der TÃ¼r.
 };
 
 //-------------------- Exit 1 -----------------------------
@@ -121,7 +121,7 @@ FUNC int DIA_SLD_760_Soeldner_INMINE_CONDITION()
 func void DIA_SLD_760_Soeldner_INMINE_INFO()
 {
 	AI_Output (other, self,"DIA_SLD_760_Soeldner_INMINE_INFO_15_01"); //Ich will in die Mine.
-	AI_Output (self, other,"DIA_SLD_760_Soeldner_INMINE_INFO_13_02");//In die Mine? Ich lass' hier gar keinen rein ohne die ausdrückliche Erlaubnis von Okyl.
+	AI_Output (self, other,"DIA_SLD_760_Soeldner_INMINE_INFO_13_02");//In die Mine? Ich lass' hier gar keinen rein ohne die ausdrÃ¼ckliche Erlaubnis von Okyl.
 
 	if	(!Npc_KnowsInfo	(hero, DIA_SLD_752_OKYL_WERBISTDU))
 	{
@@ -129,12 +129,12 @@ func void DIA_SLD_760_Soeldner_INMINE_INFO()
 	}
 	else
 	{
-		AI_Output (other, self,"DIA_SLD_760_Soeldner_INMINE_INFO_15_08");//Okyl, ist das nicht dieser Typ mit der dicken Axt und der schweren Rüstung?
+		AI_Output (other, self,"DIA_SLD_760_Soeldner_INMINE_INFO_15_08");//Okyl, ist das nicht dieser Typ mit der dicken Axt und der schweren RÃ¼stung?
 	};
-	AI_Output (self, other,"DIA_SLD_760_Soeldner_INMINE_INFO_13_04");//Pass auf, was du sagst und wie du von unserem Anführer sprichst.
-	AI_Output (self, other,"DIA_SLD_760_Soeldner_INMINE_INFO_13_05");//Ich werde dir mal was über Okyl erzählen, er ist der härteste Hund, den wir hier haben. Er ist soger mal in die Burg des Alten Lagers geschlichen und hat den Erzbaronen eine Ladung Erz unterm Hintern weggeklaut.
+	AI_Output (self, other,"DIA_SLD_760_Soeldner_INMINE_INFO_13_04");//Pass auf, was du sagst und wie du von unserem AnfÃ¼hrer sprichst.
+	AI_Output (self, other,"DIA_SLD_760_Soeldner_INMINE_INFO_13_05");//Ich werde dir mal was Ã¼ber Okyl erzÃ¤hlen, er ist der hÃ¤rteste Hund, den wir hier haben. Er ist soger mal in die Burg des Alten Lagers geschlichen und hat den Erzbaronen eine Ladung Erz unterm Hintern weggeklaut.
 	AI_Output (self, other,"DIA_SLD_760_Soeldner_INMINE_INFO_13_06");//Also ein wenig mehr Respekt, wenn ich bitten darf.
-	AI_Output (self, other,"DIA_SLD_760_Soeldner_INMINE_INFO_13_07");//Ich weiß zwar nicht, wo er gerade ist, aber wenn du ihm begegnest. solltest du das immer im Hinterkopf haben.
+	AI_Output (self, other,"DIA_SLD_760_Soeldner_INMINE_INFO_13_07");//Ich weiÃŸ zwar nicht, wo er gerade ist, aber wenn du ihm begegnest. solltest du das immer im Hinterkopf haben.
 };
 
 

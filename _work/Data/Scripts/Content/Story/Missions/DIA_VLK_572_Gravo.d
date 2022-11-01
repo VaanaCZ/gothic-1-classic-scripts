@@ -44,10 +44,10 @@ FUNC INT DIA_Gravo_Hallo_Condition()
 func VOID DIA_Gravo_Hallo_Info()
 {
 	AI_Output (other, self,"DIA_Gravo_Hallo_15_00"); //Wie steht's denn so?
-	AI_Output (self, other,"DIA_Gravo_Hallo_04_01"); //Seit ich aufgehört habe, in der Mine zu arbeiten, lässt sich's hier richtig gut leben.
+	AI_Output (self, other,"DIA_Gravo_Hallo_04_01"); //Seit ich aufgehÃ¶rt habe, in der Mine zu arbeiten, lÃ¤sst sich's hier richtig gut leben.
 	AI_Output (other, self,"DIA_Gravo_Hallo_15_02"); //Und woher kriegst du dein Erz?
 	AI_Output (self, other,"DIA_Gravo_Hallo_04_03"); //Ich helfe Leuten, die Probleme haben.
-	AI_Output (self, other,"DIA_Gravo_Hallo_04_04"); //Wenn du hier Ärger mit einflussreichen Leuten hast, kann ich dafür sorgen, dass die Sache wieder ins Lot kommt.
+	AI_Output (self, other,"DIA_Gravo_Hallo_04_04"); //Wenn du hier Ã„rger mit einflussreichen Leuten hast, kann ich dafÃ¼r sorgen, dass die Sache wieder ins Lot kommt.
 };
 
 // **************************************************
@@ -61,7 +61,7 @@ instance DIA_Gravo_HelpHow(C_INFO)
 	condition		= DIA_Gravo_HelpHow_Condition;
 	information		= DIA_Gravo_HelpHow_Info;
 	permanent		= 0;
-	description 	= "Wenn ich hier Ärger habe, kannst DU mir also helfen? Wie?";
+	description 	= "Wenn ich hier Ã„rger habe, kannst DU mir also helfen? Wie?";
 };                       
 
 FUNC INT DIA_Gravo_HelpHow_Condition()
@@ -74,12 +74,12 @@ FUNC INT DIA_Gravo_HelpHow_Condition()
 
 func VOID DIA_Gravo_HelpHow_Info()
 {
-	AI_Output (other, self,"DIA_Gravo_HelpHow_15_00"); //Wenn ich hier Ärger habe, kannst DU mir also helfen? Wie?
-	AI_Output (self, other,"DIA_Gravo_HelpHow_04_01"); //Nun - sagen wir mal, du hast Ärger mit Thorus. Du solltest es besser nie dazu kommen lassen, aber man weiß ja nie, was passiert.
+	AI_Output (other, self,"DIA_Gravo_HelpHow_15_00"); //Wenn ich hier Ã„rger habe, kannst DU mir also helfen? Wie?
+	AI_Output (self, other,"DIA_Gravo_HelpHow_04_01"); //Nun - sagen wir mal, du hast Ã„rger mit Thorus. Du solltest es besser nie dazu kommen lassen, aber man weiÃŸ ja nie, was passiert.
 	AI_Output (self, other,"DIA_Gravo_HelpHow_04_02"); //Thorus kann ziemlich stur sein - wenn du's dir einmal mit ihm verscherzt hast, redet er nicht mehr mit dir. Das ist schlecht.
 	AI_Output (self, other,"DIA_Gravo_HelpHow_04_03"); //Denn als Neuer bist du auf ihn angewiesen. Also kommst du zu mir. Ich kenne 'ne Menge Leute hier, die Einfluss auf Thorus haben.
-	AI_Output (self, other,"DIA_Gravo_HelpHow_04_04"); //Die legen ein gutes Wort für dich ein und Thorus ist wieder auf deiner Seite. Natürlich wollen die Jungs dafür Erz sehen. Dein Erz.
-	AI_Output (self, other,"DIA_Gravo_HelpHow_04_05"); //Und ICH kümmere mich darum, dass dein Erz die richtigen Leute erreicht ...
+	AI_Output (self, other,"DIA_Gravo_HelpHow_04_04"); //Die legen ein gutes Wort fÃ¼r dich ein und Thorus ist wieder auf deiner Seite. NatÃ¼rlich wollen die Jungs dafÃ¼r Erz sehen. Dein Erz.
+	AI_Output (self, other,"DIA_Gravo_HelpHow_04_05"); //Und ICH kÃ¼mmere mich darum, dass dein Erz die richtigen Leute erreicht ...
 
 	B_LogEntry(GE_TraderOC,	"Der Buddler Gravo verkauft eine Dienstleistung besonderer Art. Wenn ich es mir bei wichtigen Leuten im Alten Lager verscherzt habe, kann ich ihn bezahlen, um den Streit beizulegen.");
 };
@@ -98,37 +98,37 @@ func void B_Gravo_HelpAttitude(var C_NPC prob)
 		if (Npc_HasItems(other,itminugget)>=100)
 		{
 			AI_Output (self, other,"B_Gravo_HelpAttitude_ANGRY_04_02"); //Lass sehen, wie viel du hast ... Ah! Das sollte reichen. Betrachte die Sache als erledigt.
-			AI_Output (self, other,"B_Gravo_HelpAttitude_ANGRY_04_03"); //Und sprich mit keinem darüber. Tu einfach so, als wär' nichts passiert.
+			AI_Output (self, other,"B_Gravo_HelpAttitude_ANGRY_04_03"); //Und sprich mit keinem darÃ¼ber. Tu einfach so, als wÃ¤r' nichts passiert.
 			B_GiveInvItems (hero, self, itminugget, 100);
 			Npc_SetPermAttitude(prob,ATT_NEUTRAL);
 		}
 		else
 		{
 			AI_Output (other, self,"B_Gravo_HelpAttitude_NoOre_15_01"); //So viel hab' ich nicht.
-			AI_Output (self, other,"B_Gravo_HelpAttitude_NoOre_04_02"); //Dann kann ich nichts für dich tun - tut mir Leid, Junge.
+			AI_Output (self, other,"B_Gravo_HelpAttitude_NoOre_04_02"); //Dann kann ich nichts fÃ¼r dich tun - tut mir Leid, Junge.
 		};
 		
 	}
 	else if (Npc_GetPermAttitude(prob, other)==ATT_HOSTILE)
 	{
-		AI_Output (self, other,"B_Gravo_HelpAttitude_HOSTILE_04_00"); //Ärger ist gar kein Ausdruck, Junge. Er würde dir am liebsten den Kopf abreißen.
-		AI_Output (self, other,"B_Gravo_HelpAttitude_HOSTILE_04_01"); //Wenn ich ein paar Jungs davon überzeugen soll, ihn wieder gut zu stimmen, wird das nicht billig. 500 Erz musst du schon hinlegen.
+		AI_Output (self, other,"B_Gravo_HelpAttitude_HOSTILE_04_00"); //Ã„rger ist gar kein Ausdruck, Junge. Er wÃ¼rde dir am liebsten den Kopf abreiÃŸen.
+		AI_Output (self, other,"B_Gravo_HelpAttitude_HOSTILE_04_01"); //Wenn ich ein paar Jungs davon Ã¼berzeugen soll, ihn wieder gut zu stimmen, wird das nicht billig. 500 Erz musst du schon hinlegen.
 		if (Npc_HasItems(other,itminugget)>=500)
 		{
-			AI_Output (self, other,"B_Gravo_HelpAttitude_HOSTILE_04_02"); //Lass sehen, wie viel du hast ... Du scheinst ein reicher Bursche zu sein. Ich nehme die 500 und kümmere mich drum.
-			AI_Output (self, other,"B_Gravo_HelpAttitude_HOSTILE_04_03"); //Und noch was: Er darf nie erfahren, dass ICH die Sache für dich geregelt habe - also rede mit KEINEM darüber!
+			AI_Output (self, other,"B_Gravo_HelpAttitude_HOSTILE_04_02"); //Lass sehen, wie viel du hast ... Du scheinst ein reicher Bursche zu sein. Ich nehme die 500 und kÃ¼mmere mich drum.
+			AI_Output (self, other,"B_Gravo_HelpAttitude_HOSTILE_04_03"); //Und noch was: Er darf nie erfahren, dass ICH die Sache fÃ¼r dich geregelt habe - also rede mit KEINEM darÃ¼ber!
 			B_GiveInvItems (hero, self, itminugget, 500);
 			Npc_SetPermAttitude(prob,ATT_NEUTRAL);
 		}
 		else
 		{
 			AI_Output (other, self,"B_Gravo_HelpAttitude_NoOre_15_01"); //Soviel hab' ich nicht.
-			AI_Output (self, other,"B_Gravo_HelpAttitude_NoOre_04_02"); //Dann kann ich nichts für dich tun - tut mit leid, Junge.
+			AI_Output (self, other,"B_Gravo_HelpAttitude_NoOre_04_02"); //Dann kann ich nichts fÃ¼r dich tun - tut mit leid, Junge.
 		};
 	}
 	else
 	{
-		AI_Output (self, other,"B_Gravo_HelpAttitude_NoProb_04_00"); //Soweit ich weiß, hat er kein Problem mit dir - mach dir keine Sorgen.
+		AI_Output (self, other,"B_Gravo_HelpAttitude_NoProb_04_00"); //Soweit ich weiÃŸ, hat er kein Problem mit dir - mach dir keine Sorgen.
 	};
 };
 
@@ -141,7 +141,7 @@ instance DIA_Gravo_HelpAngryNow(C_INFO)
 	condition		= DIA_Gravo_HelpAngryNow_Condition;
 	information		= DIA_Gravo_HelpAngryNow_Info;
 	permanent		= 1;
-	description 	= "Kannst du mir helfen - ich glaub, ich hab' Ärger.";
+	description 	= "Kannst du mir helfen - ich glaub, ich hab' Ã„rger.";
 };                       
 
 FUNC INT DIA_Gravo_HelpAngryNow_Condition()
@@ -154,7 +154,7 @@ FUNC INT DIA_Gravo_HelpAngryNow_Condition()
 
 func VOID DIA_Gravo_HelpAngryNow_Info()
 {
-	AI_Output (other, self,"DIA_Gravo_HelpAngryNow_15_00"); //Kannst du mir helfen - ich glaub, ich hab' Ärger.
+	AI_Output (other, self,"DIA_Gravo_HelpAngryNow_15_00"); //Kannst du mir helfen - ich glaub, ich hab' Ã„rger.
 	AI_Output (self, other,"DIA_Gravo_HelpAngryNow_04_01"); //Ich denke schon, aber ich warne dich, die Sache kann dich zwischen 100 und 500 Erz kosten.
 	
 	Info_ClearChoices(DIA_Gravo_HelpAngryNow );
@@ -207,7 +207,7 @@ instance DIA_Gravo_Influence(C_INFO)
 	condition		= DIA_Gravo_Influence_Condition;
 	information		= DIA_Gravo_Influence_Info;
 	permanent		= 1;
-	description 	= "Kannst du mir sagen, wer hier zu den einflussreichen Leuten gehört?";
+	description 	= "Kannst du mir sagen, wer hier zu den einflussreichen Leuten gehÃ¶rt?";
 };                       
 
 FUNC INT DIA_Gravo_Influence_Condition()
@@ -220,11 +220,11 @@ FUNC INT DIA_Gravo_Influence_Condition()
 
 func VOID DIA_Gravo_Influence_Info()
 {
-	AI_Output (other, self,"DIA_Gravo_Influence_15_00"); //Kannst du mir sagen, wer von den Schatten hier zu den einflussreichen Leuten gehört?
+	AI_Output (other, self,"DIA_Gravo_Influence_15_00"); //Kannst du mir sagen, wer von den Schatten hier zu den einflussreichen Leuten gehÃ¶rt?
 	AI_Output (self, other,"DIA_Gravo_Influence_04_01"); //Du willst die richtigen Leute beeindrucken, he?
-	AI_Output (self, other,"DIA_Gravo_Influence_04_02"); //Diego hat von allen Schatten am meisten zu melden. Zu seinen Vertrauten zählen Fingers, Whistler und Sly.
+	AI_Output (self, other,"DIA_Gravo_Influence_04_02"); //Diego hat von allen Schatten am meisten zu melden. Zu seinen Vertrauten zÃ¤hlen Fingers, Whistler und Sly.
 	AI_Output (self, other,"DIA_Gravo_Influence_04_03"); //Dexter und Fisk verscherbeln ihre Sachen auf dem Marktplatz. Sie haben viele Kunden, selbst unter den Gardisten und sind dementsprechend einflussreich.
-	AI_Output (self, other,"DIA_Gravo_Influence_04_04"); //Und dann wäre da noch Scatty, er leitet die Arena, bestimmt wer kämpft und so. Es gibt viele hier, die ihm noch Erz schulden - auch an ihn kannst du dich halten.
+	AI_Output (self, other,"DIA_Gravo_Influence_04_04"); //Und dann wÃ¤re da noch Scatty, er leitet die Arena, bestimmt wer kÃ¤mpft und so. Es gibt viele hier, die ihm noch Erz schulden - auch an ihn kannst du dich halten.
 	
 	Log_CreateTopic (GE_TraderOC, LOG_NOTE);
 	B_LogEntry (GE_TraderOC,"Dexter und Fisk handeln mit verschiedenen Waren am Marktplatz.");

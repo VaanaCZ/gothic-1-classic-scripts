@@ -1,10 +1,10 @@
-// Nur für Kap.6 benutzen
+// Nur fÃ¼r Kap.6 benutzen
 
 instance GUR_1212_MadCorKalom (Npc_Default)
 {
 	//-------- primary data --------
 	
-	name 		=	"verrückter Cor Kalom";
+	name 		=	"verrÃ¼ckter Cor Kalom";
 	npctype 	= 	npctype_main;
 	guild 		=	GIL_GUR;
 	level 		=	1000;

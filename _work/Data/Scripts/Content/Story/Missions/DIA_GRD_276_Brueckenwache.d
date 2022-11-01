@@ -46,7 +46,7 @@ FUNC INT Info_GRD_276_Tips_Condition()
 FUNC VOID Info_GRD_276_Tips_Info()
 {
 	AI_Output (other,self,"Info_GRD_276_Tips_15_00"); //Hi! Ich bin neu hier.
-	AI_Output (self,other,"Info_GRD_276_Tips_07_01"); //Schön für dich.
+	AI_Output (self,other,"Info_GRD_276_Tips_07_01"); //SchÃ¶n fÃ¼r dich.
 };
 
 // *****************************************************************
@@ -74,6 +74,6 @@ FUNC INT Info_GRD_276_Bla_Condition()
 FUNC VOID Info_GRD_276_Bla_Info()
 {
 	AI_Output (other,self,"Info_GRD_276_Bla_15_00"); //Ist das da hinten das Alte Lager?
-	AI_Output (self,other,"Info_GRD_276_Bla_07_01"); //Nein, das ist das Neue Lager. Das Alte Lager liegt unter der Brücke.
+	AI_Output (self,other,"Info_GRD_276_Bla_07_01"); //Nein, das ist das Neue Lager. Das Alte Lager liegt unter der BrÃ¼cke.
 	AI_StopProcessInfos(self);
 };

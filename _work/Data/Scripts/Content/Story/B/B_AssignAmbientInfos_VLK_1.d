@@ -51,8 +51,8 @@ FUNC INT Info_Vlk_1_EinerVonEuchWerden_Condition()
 FUNC VOID Info_Vlk_1_EinerVonEuchWerden_Info()
 {
 	AI_Output(other,self,"Info_Vlk_1_EinerVonEuchWerden_15_00"); //Wie werde ich in diesem Lager aufgenommen?
-	AI_Output(self,other,"Info_Vlk_1_EinerVonEuchWerden_01_01"); //Ganz einfach. Du schnappst dir eine Spitzhacke und gehst in die Mine. Etwa die Hälfte von deinem Erz geht für Schutzgeld drauf, von der anderen kann man gerade so leben.
-	AI_Output(self,other,"Info_Vlk_1_EinerVonEuchWerden_01_02"); //Die Preise, die Gomez für seine Vorräte nimmt, sind Wucher. Ist aber immer noch besser als den ganzen Tag Reis zu fressen wie im Neuen Lager.
+	AI_Output(self,other,"Info_Vlk_1_EinerVonEuchWerden_01_01"); //Ganz einfach. Du schnappst dir eine Spitzhacke und gehst in die Mine. Etwa die HÃ¤lfte von deinem Erz geht fÃ¼r Schutzgeld drauf, von der anderen kann man gerade so leben.
+	AI_Output(self,other,"Info_Vlk_1_EinerVonEuchWerden_01_02"); //Die Preise, die Gomez fÃ¼r seine VorrÃ¤te nimmt, sind Wucher. Ist aber immer noch besser als den ganzen Tag Reis zu fressen wie im Neuen Lager.
 };
 
 // *************************************************************************
@@ -76,7 +76,7 @@ FUNC INT Info_Vlk_1_WichtigePersonen_Condition()
 FUNC VOID Info_Vlk_1_WichtigePersonen_Info()
 {
 	AI_Output(other,self,"Info_Vlk_1_WichtigePersonen_15_00"); //Wer hat hier das Sagen?
-	AI_Output(self,other,"Info_Vlk_1_WichtigePersonen_01_01"); //Die Erzbarone. Sie organisieren den Erzaustausch mit dem König. Je höher du stehst, desto mehr bekommst du.
+	AI_Output(self,other,"Info_Vlk_1_WichtigePersonen_01_01"); //Die Erzbarone. Sie organisieren den Erzaustausch mit dem KÃ¶nig. Je hÃ¶her du stehst, desto mehr bekommst du.
 };
 
 // *************************************************************************
@@ -89,7 +89,7 @@ INSTANCE Info_Vlk_1_DasLager(C_INFO)
 	condition	= Info_Vlk_1_DasLager_Condition;
 	information	= Info_Vlk_1_DasLager_Info;
 	permanent	= 1;
-	description = "Gibt es hier noch was interessanteres als Hütten?";
+	description = "Gibt es hier noch was interessanteres als HÃ¼tten?";
 };                       
 
 FUNC INT Info_Vlk_1_DasLager_Condition()
@@ -99,7 +99,7 @@ FUNC INT Info_Vlk_1_DasLager_Condition()
 
 FUNC VOID Info_Vlk_1_DasLager_Info()
 {
-	AI_Output(other,self,"Info_Vlk_1_DasLager_15_00"); //Gibt es hier noch irgendwas interessanteres als Hütten?
+	AI_Output(other,self,"Info_Vlk_1_DasLager_15_00"); //Gibt es hier noch irgendwas interessanteres als HÃ¼tten?
 	AI_Output(self,other,"Info_Vlk_1_DasLager_01_01"); //Abends kannst du dir in der Arena ansehen, wie sich die Gardisten gegenseitig die Fresse polieren.
 	AI_Output(self,other,"Info_Vlk_1_DasLager_01_02"); //Das ist den Eintritt glatt wert.
 };

@@ -23,7 +23,7 @@ FUNC VOID DIA_BaalCadar_Exit_Info()
 };
 
 // ************************************************************
-// 					NICHT ansprechbar (Ungläubiger) 
+// 					NICHT ansprechbar (UnglÃ¤ubiger) 
 // ************************************************************
 	var int BaalCadar_Ansprechbar;
 	var int BaalCadar_Sakrileg;
@@ -55,28 +55,28 @@ FUNC VOID DIA_BaalCadar_NoTalk_Info()
 	Info_ClearChoices 	(DIA_BaalCadar_NoTalk);
 	Info_Addchoice 		(DIA_BaalCadar_NoTalk,DIALOG_ENDE					,DIA_BaalCadar_NoTalk_ENDE);
 	Info_Addchoice 		(DIA_BaalCadar_NoTalk,"Alles, klar, Alter?"			,DIA_BaalCadar_NoTalk_Imp);
-	Info_Addchoice 		(DIA_BaalCadar_NoTalk,"Der Schläfer sei mit dir!"	,DIA_BaalCadar_NoTalk_Sleeper);
+	Info_Addchoice 		(DIA_BaalCadar_NoTalk,"Der SchlÃ¤fer sei mit dir!"	,DIA_BaalCadar_NoTalk_Sleeper);
 	Info_Addchoice 		(DIA_BaalCadar_NoTalk,"Hi! Ich bin neu hier!"		,DIA_BaalCadar_NoTalk_Hi);
 };
 
 func void DIA_BaalCadar_NoTalk_Hi()
 {
 	AI_Output (other, self,"DIA_BaalCadar_NoTalk_Hi_15_00"); //Hi! Ich bin neu hier!
-	AI_Output (self, other,"DIA_BaalCadar_NoTalk_Hi_02_01"); //(verärgertes Schnauben)
+	AI_Output (self, other,"DIA_BaalCadar_NoTalk_Hi_02_01"); //(verÃ¤rgertes Schnauben)
 	BaalCadar_Sakrileg = TRUE;
 };
 
 func void DIA_BaalCadar_NoTalk_Sleeper()
 {
-	AI_Output (other, self,"DIA_BaalCadar_NoTalk_Sleeper_15_00"); //Der Schläfer sei mit dir!
-	AI_Output (self, other,"DIA_BaalCadar_NoTalk_Sleeper_02_01"); //(verärgertes Schnauben)
+	AI_Output (other, self,"DIA_BaalCadar_NoTalk_Sleeper_15_00"); //Der SchlÃ¤fer sei mit dir!
+	AI_Output (self, other,"DIA_BaalCadar_NoTalk_Sleeper_02_01"); //(verÃ¤rgertes Schnauben)
 	BaalCadar_Sakrileg = TRUE;
 };
 
 func void DIA_BaalCadar_NoTalk_Imp()
 {
 	AI_Output (other, self,"DIA_BaalCadar_NoTalk_Imp_15_00"); //Alles klar, Alter? 
-	AI_Output (self, other,"DIA_BaalCadar_NoTalk_Imp_02_01"); //(verärgertes Schnauben)
+	AI_Output (self, other,"DIA_BaalCadar_NoTalk_Imp_02_01"); //(verÃ¤rgertes Schnauben)
 	BaalCadar_Sakrileg = TRUE;
 };
 
@@ -88,13 +88,13 @@ func void DIA_BaalCadar_NoTalk_ENDE()
 /*
 
 
-	AI_Output (self, other,"Sit_1_PSI_BaalCadar_HypnoticTeacher_2FuncNo_02_01"); //Du solltest deinen Weg mit Bedacht wählen und nach reiflicher Überlegung. 
+	AI_Output (self, other,"Sit_1_PSI_BaalCadar_HypnoticTeacher_2FuncNo_02_01"); //Du solltest deinen Weg mit Bedacht wÃ¤hlen und nach reiflicher Ãœberlegung. 
 	AI_Output (self, other,"Sit_1_PSI_BaalCadar_HypnoticTeacher_2FuncNo_02_02"); //Bedenke wie du entscheidest. In den anderen Lagern bekommst zwar Schutz und Nahrung, aber ist es das, was du willst?
-	AI_Output (self, other,"Sit_1_PSI_BaalCadar_HypnoticTeacher_2FuncNo_15_03"); //Was erwartet mich, was es wert wäre, zu euch zu kommen?
-	AI_Output (self, other,"Sit_1_PSI_BaalCadar_HypnoticTeacher_2FuncNo_02_04"); //Ich könnte dir jetzt erzählen, das die Templer einen unbezwinglichen Willen haben,das die magische Macht der Gurus, die Vorstellungskraft von Feuer- und Wassermagiern bei weitem übersteigt.
+	AI_Output (self, other,"Sit_1_PSI_BaalCadar_HypnoticTeacher_2FuncNo_15_03"); //Was erwartet mich, was es wert wÃ¤re, zu euch zu kommen?
+	AI_Output (self, other,"Sit_1_PSI_BaalCadar_HypnoticTeacher_2FuncNo_02_04"); //Ich kÃ¶nnte dir jetzt erzÃ¤hlen, das die Templer einen unbezwinglichen Willen haben,das die magische Macht der Gurus, die Vorstellungskraft von Feuer- und Wassermagiern bei weitem Ã¼bersteigt.
 	AI_Output (self, other,"Sit_1_PSI_BaalCadar_HypnoticTeacher_2FuncNo_02_05"); //Das unsere Nahrung auch satt macht. Aber das ist es nicht, was diese Gemeinschaft ausmacht.
 	AI_Output (self, other,"Sit_1_PSI_BaalCadar_HypnoticTeacher_2FuncNo_02_06"); //Was dich hier erwartet, ist die Gabe. Du wirst einen Weg beschreiten, der dir sehr viel abverlangt.
-	AI_Output (self, other,"Sit_1_PSI_BaalCadar_HypnoticTeacher_2FuncNo_02_07"); //Aber das was du erreichen wirst ist eine Größe, eine Macht die dir Erleuchtung schenkt. Eine Macht, die dich zur Freiheit führt.
+	AI_Output (self, other,"Sit_1_PSI_BaalCadar_HypnoticTeacher_2FuncNo_02_07"); //Aber das was du erreichen wirst ist eine GrÃ¶ÃŸe, eine Macht die dir Erleuchtung schenkt. Eine Macht, die dich zur Freiheit fÃ¼hrt.
 	AI_Output (self, other,"Sit_1_PSI_BaalCadar_HypnoticTeacher_2FuncNo_02_08"); //Ist es nicht das, was du willst?... Freiheit?
 	AI_Output (self, other,"Sit_1_PSI_BaalCadar_HypnoticTeacher_2FuncNo_02_09"); //Also solltest du nicht die Frage stellen, warum du her kommen solltest, die Frage ist viel mehr, warum solltest du nicht?
 	Log_CreateTopic (GE_TeacherPSI,LOG_NOTE);
@@ -129,10 +129,10 @@ FUNC INT DIA_BaalCadar_SleepSpell_Condition()
 
 FUNC VOID DIA_BaalCadar_SleepSpell_Info()
 {
-	AI_Output (self, other,"DIA_BaalCadar_SleepSpell_02_00"); //Was tust du? Ich versuche hier gerade mit meinen Schülern zu meditieren.
-	AI_Output (self, other,"DIA_BaalCadar_SleepSpell_02_01"); //Wer hat dir beigebracht, die Magie des Schläfers zu wirken?
+	AI_Output (self, other,"DIA_BaalCadar_SleepSpell_02_00"); //Was tust du? Ich versuche hier gerade mit meinen SchÃ¼lern zu meditieren.
+	AI_Output (self, other,"DIA_BaalCadar_SleepSpell_02_01"); //Wer hat dir beigebracht, die Magie des SchlÃ¤fers zu wirken?
 	AI_Output (other, self,"DIA_BaalCadar_SleepSpell_15_02"); //Niemand. Es war ganz leicht.
-	AI_Output (self, other,"DIA_BaalCadar_SleepSpell_02_03"); //Du scheinst ein sehr gelehriger Schüler zu sein. Ich werde dich unterrichten.
+	AI_Output (self, other,"DIA_BaalCadar_SleepSpell_02_03"); //Du scheinst ein sehr gelehriger SchÃ¼ler zu sein. Ich werde dich unterrichten.
 
 	BaalCadar_Ansprechbar = TRUE;
 	if	(Npc_GetTrueGuild(hero) == GIL_NONE)
@@ -140,7 +140,7 @@ FUNC VOID DIA_BaalCadar_SleepSpell_Info()
 		Log_CreateTopic		(CH1_JoinPsi,	LOG_MISSION);
 		Log_SetTopicStatus	(CH1_JoinPsi,	LOG_RUNNING);
 	};
-	B_LogEntry		(CH1_JoinPsi,	"Baal Cadar hält mich für einen gelehrigen Schüler!");
+	B_LogEntry		(CH1_JoinPsi,	"Baal Cadar hÃ¤lt mich fÃ¼r einen gelehrigen SchÃ¼ler!");
 	B_GiveXP		(XP_ImpressBaalCadar);
 };
 
@@ -168,7 +168,7 @@ FUNC int  Gur_1208_BaalCadar_Teach_Condition()
 FUNC void  Gur_1208_BaalCadar_Teach_Info()
 {
 	AI_Output (other, self,"Gur_1208_BaalCadar_Teach_Info_15_01"); //Ich will lernen, die Kraft meiner Magie zu steigern.
-	AI_Output (self, other,"Gur_1208_BaalCadar_Teach_Info_02_02"); //Die Kraft deines Geistes ist der Schlüssel dazu.
+	AI_Output (self, other,"Gur_1208_BaalCadar_Teach_Info_02_02"); //Die Kraft deines Geistes ist der SchlÃ¼ssel dazu.
 	
 	if (log_baalcadartrain == FALSE) 
 	{
@@ -230,7 +230,7 @@ FUNC int  Gur_1208_BaalCadar_FIRSTTEST_Condition()
 FUNC void  Gur_1208_BaalCadar_FIRSTTEST_Info()
 {
 	AI_Output (other, self,"Gur_1208_BaalCadar_FIRSTTEST_Info_15_01"); //Lehre mich die Magie der Runen.
-	AI_Output (self, other,"Gur_1208_BaalCadar_FIRSTTEST_Info_02_02"); //Die Sprache der Runen zu lernen, vermögen viele, doch nur wenige verstehen ihre Magie.
+	AI_Output (self, other,"Gur_1208_BaalCadar_FIRSTTEST_Info_02_02"); //Die Sprache der Runen zu lernen, vermÃ¶gen viele, doch nur wenige verstehen ihre Magie.
 	AI_Output (self, other,"Gur_1208_BaalCadar_FIRSTTEST_Info_02_03"); //Ich werde es mit dir versuchen.
 	
 	Log_CreateTopic (GE_TeacherPSI,LOG_NOTE);
@@ -249,7 +249,7 @@ instance  Gur_1208_BaalCadar_KREIS1 (C_INFO)
 	information		= Gur_1208_BaalCadar_KREIS1_Info;
 	important		= 0;
 	permanent		= 1;
-	description		= "Ich bin bereit für den ersten Kreis"; 
+	description		= "Ich bin bereit fÃ¼r den ersten Kreis"; 
 };
 
 FUNC int  Gur_1208_BaalCadar_KREIS1_Condition()
@@ -264,14 +264,14 @@ FUNC int  Gur_1208_BaalCadar_KREIS1_Condition()
 };
 FUNC void  Gur_1208_BaalCadar_KREIS1_Info()
 {
-	AI_Output (other, self,"Gur_1208_BaalCadar_KREIS1_Info_15_01"); //Ich bin bereit für den ersten Kreis.
+	AI_Output (other, self,"Gur_1208_BaalCadar_KREIS1_Info_15_01"); //Ich bin bereit fÃ¼r den ersten Kreis.
 	if (B_GiveSkill(other,NPC_TALENT_MAGE , 1, LPCOST_TALENT_MAGE_1))
 	{
-		AI_Output (self, other,"Gur_1208_BaalCadar_KREIS1_Info_02_02"); //Höre meine Worte:
-		AI_Output (self, other,"Gur_1208_BaalCadar_KREIS1_Info_02_03"); //Der Schläfer erschien vor langer Zeit und gab den Menschen eine Vision.
+		AI_Output (self, other,"Gur_1208_BaalCadar_KREIS1_Info_02_02"); //HÃ¶re meine Worte:
+		AI_Output (self, other,"Gur_1208_BaalCadar_KREIS1_Info_02_03"); //Der SchlÃ¤fer erschien vor langer Zeit und gab den Menschen eine Vision.
 		AI_Output (self, other,"Gur_1208_BaalCadar_KREIS1_Info_02_04"); //Viele wollten seine Zeichen jedoch nicht sehen, weil sie von der Gier nach Erz geblendet waren.
-		AI_Output (self, other,"Gur_1208_BaalCadar_KREIS1_Info_02_05"); //Nur Y'Berion und eine Hand voll anderer machten sich auf und gründeten die Bruderschaft.
-		AI_Output (self, other,"Gur_1208_BaalCadar_KREIS1_Info_02_06"); //In dem Augenblick, als sie dem Ruf des Schläfers folgten, entstand der erste Kreis. Die Magie der Runen offenbart sich demjenigen, der dem Schläfer folgt.
+		AI_Output (self, other,"Gur_1208_BaalCadar_KREIS1_Info_02_05"); //Nur Y'Berion und eine Hand voll anderer machten sich auf und grÃ¼ndeten die Bruderschaft.
+		AI_Output (self, other,"Gur_1208_BaalCadar_KREIS1_Info_02_06"); //In dem Augenblick, als sie dem Ruf des SchlÃ¤fers folgten, entstand der erste Kreis. Die Magie der Runen offenbart sich demjenigen, der dem SchlÃ¤fer folgt.
 		Gur_1208_BaalCadar_KREIS1.permanent = 0;
 	};
 	AI_StopProcessInfos	( self );
@@ -288,7 +288,7 @@ instance  Gur_1208_BaalCadar_KREIS2 (C_INFO)
 	information		= Gur_1208_BaalCadar_KREIS2_Info;
 	important		= 0;
 	permanent		= 1;
-	description		= "Ich bin bereit für den zweiten Kreis"; 
+	description		= "Ich bin bereit fÃ¼r den zweiten Kreis"; 
 };
 
 FUNC int  Gur_1208_BaalCadar_KREIS2_Condition()
@@ -302,13 +302,13 @@ FUNC int  Gur_1208_BaalCadar_KREIS2_Condition()
 };
 FUNC void  Gur_1208_BaalCadar_KREIS2_Info()
 {
-	AI_Output (other, self,"Gur_1208_BaalCadar_KREIS2_Info_15_01"); //Ich bin bereit für den zweiten Kreis.
+	AI_Output (other, self,"Gur_1208_BaalCadar_KREIS2_Info_15_01"); //Ich bin bereit fÃ¼r den zweiten Kreis.
 	if (B_GiveSkill(other,NPC_TALENT_MAGE , 2,LPCOST_TALENT_MAGE_2))
 	{
-		AI_Output (self, other,"Gur_1208_BaalCadar_KREIS2_Info_02_02"); //Dann höre und begreife:
-		AI_Output (self, other,"Gur_1208_BaalCadar_KREIS2_Info_02_03"); //Der Schläfer führte Y'Berion und seine getreuen Anhänger an diesen Ort. Hier ließen sie sich nieder.
-		AI_Output (self, other,"Gur_1208_BaalCadar_KREIS2_Info_02_04"); //Sie arbeiteten ohne Unterlass, Tage, Wochen Monate. Und das Lager wuchs heran. Mehr Männer kamen dazu, die dem Ruf des Schläfers gefolgt waren.
-		AI_Output (self, other,"Gur_1208_BaalCadar_KREIS2_Info_02_05"); //Und zusammen versuchten sie, durch Gebet und Meditation den Schläfer auf spiritueller Ebene zu treffen.
+		AI_Output (self, other,"Gur_1208_BaalCadar_KREIS2_Info_02_02"); //Dann hÃ¶re und begreife:
+		AI_Output (self, other,"Gur_1208_BaalCadar_KREIS2_Info_02_03"); //Der SchlÃ¤fer fÃ¼hrte Y'Berion und seine getreuen AnhÃ¤nger an diesen Ort. Hier lieÃŸen sie sich nieder.
+		AI_Output (self, other,"Gur_1208_BaalCadar_KREIS2_Info_02_04"); //Sie arbeiteten ohne Unterlass, Tage, Wochen Monate. Und das Lager wuchs heran. Mehr MÃ¤nner kamen dazu, die dem Ruf des SchlÃ¤fers gefolgt waren.
+		AI_Output (self, other,"Gur_1208_BaalCadar_KREIS2_Info_02_05"); //Und zusammen versuchten sie, durch Gebet und Meditation den SchlÃ¤fer auf spiritueller Ebene zu treffen.
 		AI_Output (self, other,"Gur_1208_BaalCadar_KREIS2_Info_02_06"); //Das war die Geburtsstunde des zweiten Kreises.
 		Gur_1208_BaalCadar_KREIS2.permanent = 0;
 	};
@@ -325,7 +325,7 @@ instance  Gur_1208_BaalCadar_KREIS3 (C_INFO)
 	information		= Gur_1208_BaalCadar_KREIS3_Info;
 	important		= 0;
 	permanent		= 1;
-	description		= "Ich bin bereit für den dritten Kreis"; 
+	description		= "Ich bin bereit fÃ¼r den dritten Kreis"; 
 };
 
 FUNC int  Gur_1208_BaalCadar_KREIS3_Condition()
@@ -339,13 +339,13 @@ FUNC int  Gur_1208_BaalCadar_KREIS3_Condition()
 };
 FUNC void  Gur_1208_BaalCadar_KREIS3_Info()
 {
-	AI_Output (other, self,"Gur_1208_BaalCadar_KREIS3_Info_15_01"); //Ich bin bereit für den dritten Kreis.
+	AI_Output (other, self,"Gur_1208_BaalCadar_KREIS3_Info_15_01"); //Ich bin bereit fÃ¼r den dritten Kreis.
 	if (B_GiveSkill(other,NPC_TALENT_MAGE , 3, LPCOST_TALENT_MAGE_3))
 	{
 		AI_Output (self, other,"Gur_1208_BaalCadar_KREIS3_Info_02_02"); //Achte das Wort:
-		AI_Output (self, other,"Gur_1208_BaalCadar_KREIS3_Info_02_03"); //Die Visionen wurden deutlicher, jedoch war die geistige Kraft der Brüder nicht ausreichend für einen Kontakt.
-		AI_Output (self, other,"Gur_1208_BaalCadar_KREIS3_Info_02_04"); //Einer der Gurus, ein Alchemist, fand einen Weg. Mit Hilfe eines Elixiers aus dem Sekret der Minecrawler, das die Brüder vor dem Gebet einnahmen, wurde es erstmalig möglich, die geistigen Kräfte zu vereinen.
-		AI_Output (self, other,"Gur_1208_BaalCadar_KREIS3_Info_02_05"); //Zur gleichen Zeit machten sich die Novizen auf in die Lager, die Worte des Schläfers zu predigen, um mehr Ungläubige von der Wahrheit zu überzeugen.
+		AI_Output (self, other,"Gur_1208_BaalCadar_KREIS3_Info_02_03"); //Die Visionen wurden deutlicher, jedoch war die geistige Kraft der BrÃ¼der nicht ausreichend fÃ¼r einen Kontakt.
+		AI_Output (self, other,"Gur_1208_BaalCadar_KREIS3_Info_02_04"); //Einer der Gurus, ein Alchemist, fand einen Weg. Mit Hilfe eines Elixiers aus dem Sekret der Minecrawler, das die BrÃ¼der vor dem Gebet einnahmen, wurde es erstmalig mÃ¶glich, die geistigen KrÃ¤fte zu vereinen.
+		AI_Output (self, other,"Gur_1208_BaalCadar_KREIS3_Info_02_05"); //Zur gleichen Zeit machten sich die Novizen auf in die Lager, die Worte des SchlÃ¤fers zu predigen, um mehr UnglÃ¤ubige von der Wahrheit zu Ã¼berzeugen.
 		AI_Output (self, other,"Gur_1208_BaalCadar_KREIS3_Info_02_06"); //Dadurch wurde der dritte Kreis vollendet.
 	};
 	AI_StopProcessInfos	( self );
@@ -361,7 +361,7 @@ instance  Gur_1208_BaalCadar_KREIS4 (C_INFO)
 	information		= Gur_1208_BaalCadar_KREIS4_Info;
 	important		= 0;
 	permanent		= 1;
-	description		= "Ich bin bereit für den vierten Kreis"; 
+	description		= "Ich bin bereit fÃ¼r den vierten Kreis"; 
 };
 
 FUNC int  Gur_1208_BaalCadar_KREIS4_Condition()
@@ -375,14 +375,14 @@ FUNC int  Gur_1208_BaalCadar_KREIS4_Condition()
 };
 FUNC void  Gur_1208_BaalCadar_KREIS4_Info()
 {
-	AI_Output (other, self,"Gur_1208_BaalCadar_KREIS4_Info_15_01"); //Ich bin bereit für den vierten Kreis.
+	AI_Output (other, self,"Gur_1208_BaalCadar_KREIS4_Info_15_01"); //Ich bin bereit fÃ¼r den vierten Kreis.
 	if (B_GiveSkill(other,NPC_TALENT_MAGE , 4, LPCOST_TALENT_MAGE_4))
 	{
-		AI_Output (self, other,"Gur_1208_BaalCadar_KREIS4_Info_02_02"); //Seit der Gründung des Lagers ist viel Zeit vergangen. Viel hat sich geändert.
+		AI_Output (self, other,"Gur_1208_BaalCadar_KREIS4_Info_02_02"); //Seit der GrÃ¼ndung des Lagers ist viel Zeit vergangen. Viel hat sich geÃ¤ndert.
 		AI_Output (self, other,"Gur_1208_BaalCadar_KREIS4_Info_02_03"); //Der Glaube ist gewachsen, hat sich gefestigt und wurde weitergetragen.
-		AI_Output (self, other,"Gur_1208_BaalCadar_KREIS4_Info_02_04"); //Und wir haben unser Ziel nie aus den Augen verloren, haben nicht aufgegeben, den Schläfer zu rufen.
-		AI_Output (self, other,"Gur_1208_BaalCadar_KREIS4_Info_02_05"); //Die Beständigkeit und Festigung des Glaubens, das ist der vierte Kreis.
-		AI_Output (self, other,"Gur_1208_BaalCadar_KREIS4_Info_02_06"); //Du weißt nun alles, was ein Bruder über Magie wissen muss. Du warst ein gelehriger Schüler.
+		AI_Output (self, other,"Gur_1208_BaalCadar_KREIS4_Info_02_04"); //Und wir haben unser Ziel nie aus den Augen verloren, haben nicht aufgegeben, den SchlÃ¤fer zu rufen.
+		AI_Output (self, other,"Gur_1208_BaalCadar_KREIS4_Info_02_05"); //Die BestÃ¤ndigkeit und Festigung des Glaubens, das ist der vierte Kreis.
+		AI_Output (self, other,"Gur_1208_BaalCadar_KREIS4_Info_02_06"); //Du weiÃŸt nun alles, was ein Bruder Ã¼ber Magie wissen muss. Du warst ein gelehriger SchÃ¼ler.
 		Gur_1208_BaalCadar_KREIS4.permanent = 0;
 	};
 
@@ -414,10 +414,10 @@ FUNC void  Gur_1208_BaalCadar_SELLSTUFF_Info()
 	if  (log_baalcadarsell == FALSE)
 	{
 		Log_CreateTopic   	(GE_TraderPSI,LOG_NOTE);
-		B_LogEntry			(GE_TraderPSI,"Der Guru Baal Cadar verkauft RUNEN, SPRUCHROLLEN, TRÄNKE, AMULETTE und RINGE.");
+		B_LogEntry			(GE_TraderPSI,"Der Guru Baal Cadar verkauft RUNEN, SPRUCHROLLEN, TRÃ„NKE, AMULETTE und RINGE.");
 		log_baalcadarsell = TRUE;
 	};	
-	AI_Output (other, self,"Gur_1208_BaalCadar_SELLSTUFF_Info_15_01"); //Ich möchte Schriften über Magie erwerben.
+	AI_Output (other, self,"Gur_1208_BaalCadar_SELLSTUFF_Info_15_01"); //Ich mÃ¶chte Schriften Ã¼ber Magie erwerben.
 
 };  
 

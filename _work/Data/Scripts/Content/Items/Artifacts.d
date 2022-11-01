@@ -274,7 +274,7 @@ INSTANCE ItArRuneTeleport1 (C_Item)
 	material			=	MAT_STONE;
 
 	spell				= 	SPL_TELEPORT1;
-//mag_circle 			= 	4;   //SN: Teleport-Spells müssen auch ohne Circle sprechbar sein!
+//mag_circle 			= 	4;   //SN: Teleport-Spells mÃ¼ssen auch ohne Circle sprechbar sein!
 
 	description			= 	"Teleport zu den Feuermagiern";
 	TEXT	[0]			=	NAME_Mag_Circle;			COUNT	[0]		=	mag_circle;
@@ -314,7 +314,7 @@ INSTANCE ItArRuneTeleport2 (C_Item)
 	material			=	MAT_STONE;
 
 	spell				= 	SPL_TELEPORT2;
-//mag_circle 			= 	4;   //SN: Teleport-Spells müssen auch ohne Circle sprechbar sein!
+//mag_circle 			= 	4;   //SN: Teleport-Spells mÃ¼ssen auch ohne Circle sprechbar sein!
 
 	description			= 	"Teleport zu den Wassermagiern";
 	TEXT	[0]			=	NAME_Mag_Circle;			COUNT	[0]		=	mag_circle;
@@ -354,9 +354,9 @@ INSTANCE ItArRuneTeleport3 (C_Item)
 	material			=	MAT_STONE;
 
 	spell				= 	SPL_TELEPORT3;
-	//mag_circle 			= 	4;   //SN: Teleport-Spells müssen auch ohne Circle sprechbar sein!
+	//mag_circle 			= 	4;   //SN: Teleport-Spells mÃ¼ssen auch ohne Circle sprechbar sein!
 
-	description			=	"Teleport zum Dämonenbeschwörer";	//blaue Rune
+	description			=	"Teleport zum DÃ¤monenbeschwÃ¶rer";	//blaue Rune
 	TEXT	[0]			=	NAME_Mag_Circle;			COUNT	[0]		=	mag_circle;
 	TEXT	[1]			=	NAME_Manakosten;			COUNT	[1]		=	SPL_SENDCAST_TELEPORT;
 };
@@ -375,7 +375,7 @@ INSTANCE ItArScrollTeleport3 (C_Item)
 	cond_atr[2]   		= 	ATR_MANA_MAX;
 	cond_value[2]  		= 	SPL_SENDCAST_TELEPORT;
 
-	description			=	"Teleport zum Dämonenbeschwörer";
+	description			=	"Teleport zum DÃ¤monenbeschwÃ¶rer";
 	//TEXT	[0]			=	NAME_Mag_Circle;			COUNT	[0]		=	mag_circle;
 	TEXT	[1]			=	NAME_Manakosten;			COUNT	[1]		=	SPL_SENDCAST_TELEPORT;
 };
@@ -414,11 +414,11 @@ INSTANCE ItArRuneTeleport5 (C_Item)
 	mainflag 			=	ITEM_KAT_RUNE;
 	flags 				=	0;
 
-	visual				=	"ItAr_Rune_39.3ds";	//grüne Rune
+	visual				=	"ItAr_Rune_39.3ds";	//grÃ¼ne Rune
 	material			=	MAT_STONE;
 
 	spell				= 	SPL_TELEPORT5;
-//mag_circle 			= 	4;   //SN: Teleport-Spells müssen auch ohne Circle sprechbar sein!
+//mag_circle 			= 	4;   //SN: Teleport-Spells mÃ¼ssen auch ohne Circle sprechbar sein!
 
 	description			=	"Teleport zum Sumpflager";	//lila Rune
 	TEXT	[0]			=	NAME_Mag_Circle;			COUNT	[0]		=	mag_circle;
@@ -697,7 +697,7 @@ INSTANCE ItArScrollTrfShadowbeast (C_Item)
 	cond_atr[2]   		=	ATR_MANA_MAX;
 	cond_value[2]  		=	SPL_SENDCAST_TRF_SHADOWBEAST;
 
-	description			=	"Verwandlung Schattenläufer";
+	description			=	"Verwandlung SchattenlÃ¤ufer";
 	//TEXT	[0]			=	NAME_Mag_Circle;			COUNT	[0]		=	mag_circle;
 	TEXT	[1]			=	NAME_Manakosten;			COUNT	[1]		=	SPL_SENDCAST_TRF_SHADOWBEAST;
 	//TEXT	[2]			=	"";							COUNT	[2]		=	;
@@ -852,7 +852,7 @@ INSTANCE ItArRuneThunderbolt (C_Item)
 	spell				= 	SPL_THUNDERBOLT;
 	mag_circle 			=	1;
 
-// FIXME: kann man die DAMAGE_PER_LEVEL-Werte der Spells aus der Spells_Params hier für Manakosten einsetzen??
+// FIXME: kann man die DAMAGE_PER_LEVEL-Werte der Spells aus der Spells_Params hier fÃ¼r Manakosten einsetzen??
 	description			=	"Eispfeil";
 	TEXT	[0]			=	NAME_Mag_Circle;			COUNT	[0]		=	mag_circle;
 	TEXT	[1]			=	NAME_Manakosten;			COUNT	[1]		=	SPL_SENDCAST_THUNDERBOLT;
@@ -904,7 +904,7 @@ INSTANCE ItArRuneThunderball (C_Item)
 	material			=	MAT_STONE;
 
 	spell				= 	SPL_THUNDERBALL;
-	mag_circle 			=	3;		//SN: von 4 auf 3 geändert!
+	mag_circle 			=	3;		//SN: von 4 auf 3 geÃ¤ndert!
 
 	description			=	"Kugelblitz";
 	TEXT	[0]			=	NAME_Mag_Circle;							COUNT	[0]		=	mag_circle;
@@ -1048,7 +1048,7 @@ INSTANCE ItArScrollIceWave (C_Item)
 
 
 /*******************************************************************************************
-**  Dämonenbeschwörer	 (Runensteine  und Scrolls)										  **
+**  DÃ¤monenbeschwÃ¶rer	 (Runensteine  und Scrolls)										  **
 *******************************************************************************************/
 
 // Summon Demon (Scrolls)
@@ -1069,7 +1069,7 @@ INSTANCE ItArScrollSummonDemon (C_Item)
 	cond_atr[2]   		=	ATR_MANA_MAX;
 	cond_value[2]  		=	SPL_SENDCAST_SUMMONDEMON;
 
-	description			=	"Dämon beschwören";
+	description			=	"DÃ¤mon beschwÃ¶ren";
 	//TEXT	[0]			=	NAME_Mag_Circle;			COUNT	[0]		=	mag_circle;
 	TEXT	[1]			=	NAME_Manakosten;			COUNT	[1]		=	SPL_SENDCAST_SUMMONDEMON;
 	//TEXT	[2]			=	"";							COUNT	[2]		=	;
@@ -1097,7 +1097,7 @@ INSTANCE ItArScrollSummonSkeletons (C_Item)
 	cond_atr[2]   		=	ATR_MANA_MAX;
 	cond_value[2]  		=	SPL_SENDCAST_SUMMONSKELETON;
 
-	description			=	"Skelette beschwören";
+	description			=	"Skelette beschwÃ¶ren";
 	//TEXT	[0]			=	NAME_Mag_Circle;			COUNT	[0]		=	mag_circle;
 	TEXT	[1]			=	NAME_Manakosten;			COUNT	[1]		=	SPL_SENDCAST_SUMMONSKELETON;
 	//TEXT	[2]			=	"";							COUNT	[2]		=	;
@@ -1125,7 +1125,7 @@ INSTANCE ItArScrollSummonGolem (C_Item)
 	cond_atr[2]   		=	ATR_MANA_MAX;
 	cond_value[2]  		=	SPL_SENDCAST_SUMMONGOLEM;
 
-	description			=	"Golem beschwören";
+	description			=	"Golem beschwÃ¶ren";
 	//TEXT	[0]			=	NAME_Mag_Circle;			COUNT	[0]		=	mag_circle;
 	TEXT	[1]			=	NAME_Manakosten;			COUNT	[1]		=	SPL_SENDCAST_SUMMONGOLEM;
 	//TEXT	[2]			=	"";							COUNT	[2]		=	;
@@ -1216,7 +1216,7 @@ INSTANCE ItArScrollDestroyUndead (C_Item)
 
 
 /*******************************************************************************************
-**  PSI-Sprüche		(Runen und Scrolls)													  **
+**  PSI-SprÃ¼che		(Runen und Scrolls)													  **
 *******************************************************************************************/
 
 // Windfist (Scrolls und Runen)

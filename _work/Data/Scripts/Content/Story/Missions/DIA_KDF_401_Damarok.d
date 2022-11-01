@@ -21,7 +21,7 @@ func void  KDF_401_Damarok_WELCOME_Info()
 {
 
 	AI_GotoNpc (self,hero);
-	AI_Output (self, other,"KDF_401_Damarok_WELCOME_Info_14_01"); //Möge das Feuer dich allzeit beschützen!
+	AI_Output (self, other,"KDF_401_Damarok_WELCOME_Info_14_01"); //MÃ¶ge das Feuer dich allzeit beschÃ¼tzen!
 	
 	Corristo_KDFAufnahme = 6;
 	B_Story_Feueraufnahme();
@@ -97,7 +97,7 @@ FUNC int  KDF_401_Damarok_HEALINFO_Condition()
 FUNC void  KDF_401_Damarok_HEALINFO_Info()
 {
 	AI_Output (other, self,"KDF_401_Damarok_HEALINFO_Info_15_01"); //Ich bin verletzt. Kannst du mich heilen?
-	AI_Output (self, other,"KDF_401_Damarok_HEALINFO_Info_14_02"); //Der Körper gesundet, der Geist wird klar.
+	AI_Output (self, other,"KDF_401_Damarok_HEALINFO_Info_14_02"); //Der KÃ¶rper gesundet, der Geist wird klar.
 	Snd_Play  ("MFX_Heal_Cast"); 
 	hero.attribute [ATR_HITPOINTS] = hero.attribute [ATR_HITPOINTS_MAX];
 };  

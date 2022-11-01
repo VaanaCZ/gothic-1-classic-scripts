@@ -75,7 +75,7 @@ FUNC INT Info_Vlk_2_WichtigePersonen_Condition()
 FUNC VOID Info_Vlk_2_WichtigePersonen_Info()
 {
 	AI_Output(other,self,"Info_Vlk_2_WichtigePersonen_15_00"); //Wer hat hier das Sagen?
-	AI_Output(self,other,"Info_Vlk_2_WichtigePersonen_02_01"); //Hier im äußeren Ring treiben Fletcher, Bloodwyn und Jackal das Schutzgeld ein. Jedem gehört ein Viertel.
+	AI_Output(self,other,"Info_Vlk_2_WichtigePersonen_02_01"); //Hier im Ã¤uÃŸeren Ring treiben Fletcher, Bloodwyn und Jackal das Schutzgeld ein. Jedem gehÃ¶rt ein Viertel.
 	AI_Output(self,other,"Info_Vlk_2_WichtigePersonen_02_02"); //Wenn du dich mit ihnen gut stellst, kann dir nichts passieren.
 };
 
@@ -89,7 +89,7 @@ INSTANCE Info_Vlk_2_DasLager(C_INFO)
 	condition	= Info_Vlk_2_DasLager_Condition;
 	information	= Info_Vlk_2_DasLager_Info;
 	permanent	= 1;
-	description = "Ich will mehr über dieses Lager erfahren.";
+	description = "Ich will mehr Ã¼ber dieses Lager erfahren.";
 };                       
 
 FUNC INT Info_Vlk_2_DasLager_Condition()
@@ -99,8 +99,8 @@ FUNC INT Info_Vlk_2_DasLager_Condition()
 
 FUNC VOID Info_Vlk_2_DasLager_Info()
 {
-	AI_Output(other,self,"Info_Vlk_2_DasLager_15_00"); //Ich will mehr über dieses Lager erfahren.
-	AI_Output(self,other,"Info_Vlk_2_DasLager_02_01"); //Dann solltest du mit den Schatten reden, sie können dir noch am ehesten sagen, was du wissen willst. Aber sei vorsichtig. Den meisten von ihnen kannst du nicht trauen.
+	AI_Output(other,self,"Info_Vlk_2_DasLager_15_00"); //Ich will mehr Ã¼ber dieses Lager erfahren.
+	AI_Output(self,other,"Info_Vlk_2_DasLager_02_01"); //Dann solltest du mit den Schatten reden, sie kÃ¶nnen dir noch am ehesten sagen, was du wissen willst. Aber sei vorsichtig. Den meisten von ihnen kannst du nicht trauen.
 };
 
 // *************************************************************************
@@ -126,10 +126,10 @@ FUNC INT Info_Vlk_2_DieLage_Condition()
 FUNC VOID Info_Vlk_2_DieLage_Info()
 {
 	AI_Output(other,self,"Info_Vlk_2_DieLage_15_00"); //Wie ist das Leben hier?
-	AI_Output(self,other,"Info_Vlk_2_DieLage_02_01"); //Wenn die Erzbarone dich schicken, sag ihnen, ich will keinen Ärger. Von mir bekommt keiner was zu hören.
+	AI_Output(self,other,"Info_Vlk_2_DieLage_02_01"); //Wenn die Erzbarone dich schicken, sag ihnen, ich will keinen Ã„rger. Von mir bekommt keiner was zu hÃ¶ren.
 	AI_Output(self,other,"Info_Vlk_2_DieLage_02_02"); //Ich bin zufrieden mit dem, was sie uns geben.
 	AI_Output(other,self,"Info_Vlk_2_DieLage_15_03"); //Niemand schickt mich. Ich bin neu hier.
-	AI_Output(self,other,"Info_Vlk_2_DieLage_02_04"); //Ein Neuer ... Neue kriegen hier immer schnell Ärger. Ich will in nichts reingezogen werden, klar?
+	AI_Output(self,other,"Info_Vlk_2_DieLage_02_04"); //Ein Neuer ... Neue kriegen hier immer schnell Ã„rger. Ich will in nichts reingezogen werden, klar?
 };	
 	
 // *************************************************************************

@@ -37,7 +37,7 @@ INSTANCE Info_Org_7_EinerVonEuchWerden (C_INFO) // E1
 	condition	= Info_Org_7_EinerVonEuchWerden_Condition;
 	information	= Info_Org_7_EinerVonEuchWerden_Info;
 	permanent	= 1;
-	description = "Was muﬂ ich tun, wenn ich mich dem Lager anschlieﬂen will?";
+	description = "Was mu√ü ich tun, wenn ich mich dem Lager anschlie√üen will?";
 };                       
 
 FUNC INT Info_Org_7_EinerVonEuchWerden_Condition()
@@ -50,10 +50,10 @@ FUNC INT Info_Org_7_EinerVonEuchWerden_Condition()
 
 FUNC VOID Info_Org_7_EinerVonEuchWerden_Info()
 {
-	AI_Output(other,self,"Info_Org_7_EinerVonEuchWerden_15_00"); //Was muss ich tun, wenn ich mich dem Lager anschlieﬂen will?
-	AI_Output(self,other,"Info_Org_7_EinerVonEuchWerden_07_01"); //Du kannst dich unserer Bande anschlieﬂen. Aber dazu musst du beweisen, dass du gegen Gomez bist.
+	AI_Output(other,self,"Info_Org_7_EinerVonEuchWerden_15_00"); //Was muss ich tun, wenn ich mich dem Lager anschlie√üen will?
+	AI_Output(self,other,"Info_Org_7_EinerVonEuchWerden_07_01"); //Du kannst dich unserer Bande anschlie√üen. Aber dazu musst du beweisen, dass du gegen Gomez bist.
 	AI_Output(other,self,"Info_Org_7_EinerVonEuchWerden_15_02"); //Und wie soll ich das machen?
-	AI_Output(self,other,"Info_Org_7_EinerVonEuchWerden_07_03"); //Wenn ich du w‰re, w¸rde ich Lares irgendwas Wichtiges aus dem Alten Lager oder der Alten Mine bringen.
+	AI_Output(self,other,"Info_Org_7_EinerVonEuchWerden_07_03"); //Wenn ich du w√§re, w√ºrde ich Lares irgendwas Wichtiges aus dem Alten Lager oder der Alten Mine bringen.
 	var C_NPC Lares;		Lares	= Hlp_GetNpc(Org_801_Lares);
 	Lares.aivar[AIV_FINDABLE] = TRUE;
 };
@@ -68,7 +68,7 @@ INSTANCE Info_Org_7_WichtigePersonen(C_INFO)
 	condition	= Info_Org_7_WichtigePersonen_Condition;
 	information	= Info_Org_7_WichtigePersonen_Info;
 	permanent	= 1;
-	description = "Wer ist euer Anf¸hrer?";
+	description = "Wer ist euer Anf√ºhrer?";
 };                       
 
 FUNC INT Info_Org_7_WichtigePersonen_Condition()
@@ -78,7 +78,7 @@ FUNC INT Info_Org_7_WichtigePersonen_Condition()
 
 FUNC VOID Info_Org_7_WichtigePersonen_Info()
 {
-	AI_Output(other,self,"Info_Org_7_WichtigePersonen_15_00"); //Wer ist euer Anf¸hrer?
+	AI_Output(other,self,"Info_Org_7_WichtigePersonen_15_00"); //Wer ist euer Anf√ºhrer?
 	AI_Output(self,other,"Info_Org_7_WichtigePersonen_07_01"); //Lares ist das Oberhaupt der Bande. Die meisten akzeptieren ihn.
 	AI_Output(self,other,"Info_Org_7_WichtigePersonen_07_02"); //Aber er sagt uns nicht, was wir machen sollen.
 	var C_NPC Lares;		Lares	= Hlp_GetNpc(Org_801_Lares);
@@ -95,7 +95,7 @@ INSTANCE Info_Org_7_DasLager(C_INFO)
 	condition	= Info_Org_7_DasLager_Condition;
 	information	= Info_Org_7_DasLager_Info;
 	permanent	= 1;
-	description = "Was kannst du mir ¸ber dieses Lager sagen?";
+	description = "Was kannst du mir √ºber dieses Lager sagen?";
 };                       
 
 FUNC INT Info_Org_7_DasLager_Condition()
@@ -105,9 +105,9 @@ FUNC INT Info_Org_7_DasLager_Condition()
 
 FUNC VOID Info_Org_7_DasLager_Info()
 {
-	AI_Output(other,self,"Info_Org_7_DasLager_15_00"); //Was kannst du mir ¸ber dieses Lager sagen?
+	AI_Output(other,self,"Info_Org_7_DasLager_15_00"); //Was kannst du mir √ºber dieses Lager sagen?
 	AI_Output(self,other,"Info_Org_7_DasLager_07_01"); //Es ist 'ne Art Zweckgemeinschaft, die wir hier haben. Jeder macht im Grunde, was er will, aber wir sind so viele, dass Gomez uns nicht einfach ausrotten kann.
-	AI_Output(self,other,"Info_Org_7_DasLager_07_02"); //Obwohl er das sicher am liebsten tun w¸rde.
+	AI_Output(self,other,"Info_Org_7_DasLager_07_02"); //Obwohl er das sicher am liebsten tun w√ºrde.
 	AI_Output(other,self,"Info_Org_7_DasLager_15_03"); //Was habt ihr mit Gomez zu schaffen?
 	AI_Output(self,other,"Info_Org_7_DasLager_07_04"); //Wir stehlen ihm sein Zeug!
 };
@@ -122,7 +122,7 @@ INSTANCE Info_Org_7_DieLage(C_INFO) // E1
 	condition	= Info_Org_7_DieLage_Condition;
 	information	= Info_Org_7_DieLage_Info;
 	permanent	= 1;
-	description = "Was l‰uft denn so?";
+	description = "Was l√§uft denn so?";
 };                       
 
 FUNC INT Info_Org_7_DieLage_Condition()
@@ -132,10 +132,10 @@ FUNC INT Info_Org_7_DieLage_Condition()
 
 FUNC VOID Info_Org_7_DieLage_Info()
 {
-	AI_Output(other,self,"Info_Org_7_DieLage_15_00"); //Was l‰uft denn so?
+	AI_Output(other,self,"Info_Org_7_DieLage_15_00"); //Was l√§uft denn so?
 	AI_Output(self,other,"Info_Org_7_DieLage_07_01"); //Du bist wohl noch nicht lange hier, was?
-	AI_Output(self,other,"Info_Org_7_DieLage_07_02"); //Die Magier bereiten sich schon seit Jahren auf die Sprengung des Erzhaufens vor. Es heiﬂt, der groﬂe Tag ist nicht mehr weit entfernt.
-	AI_Output(self,other,"Info_Org_7_DieLage_07_03"); //Zumindest sollte man das annehmen, wenn man sich den Riesenhaufen ansieht, den die Sch¸rfer bis jetzt zusammengekratzt haben.
+	AI_Output(self,other,"Info_Org_7_DieLage_07_02"); //Die Magier bereiten sich schon seit Jahren auf die Sprengung des Erzhaufens vor. Es hei√üt, der gro√üe Tag ist nicht mehr weit entfernt.
+	AI_Output(self,other,"Info_Org_7_DieLage_07_03"); //Zumindest sollte man das annehmen, wenn man sich den Riesenhaufen ansieht, den die Sch√ºrfer bis jetzt zusammengekratzt haben.
 };
 
 // *************************************************************************
@@ -173,7 +173,7 @@ FUNC VOID Info_Org_7_Krautprobe_Info()
 		else if (Npc_HasItems(other,ItMiJoint_3))
 		{	B_GiveInvItems(other,self,ItMiJoint_3,1);	 };
 		
-		AI_Output(self,other,"Info_Org_7_Krautprobe_07_01"); //Ich geb dir 10 Erz daf¸r - hier.
+		AI_Output(self,other,"Info_Org_7_Krautprobe_07_01"); //Ich geb dir 10 Erz daf√ºr - hier.
 		AI_Output(self,other,"Info_Org_7_Krautprobe_07_02"); //Wenn du mal wieder was loswerden willst, komm zu mir.
 		
 		CreateInvItems(self,itminugget,10);

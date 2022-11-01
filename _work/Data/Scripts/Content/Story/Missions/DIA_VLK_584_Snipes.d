@@ -44,7 +44,7 @@ FUNC int  VLK_584_Snipes_DEAL_Condition()
 FUNC void  VLK_584_Snipes_DEAL_Info()
 {
 	AI_Output			(other, self,"VLK_584_Snipes_DEAL_Info_15_01");//Wie sieht's aus?
-	AI_Output			(self, other,"VLK_584_Snipes_DEAL_Info_07_02"); //Ich schlage dir ein Geschäft vor.
+	AI_Output			(self, other,"VLK_584_Snipes_DEAL_Info_07_02"); //Ich schlage dir ein GeschÃ¤ft vor.
 	AI_Output			(self, other,"VLK_584_Snipes_DEAL_Info_07_03"); //Wenn du Aaron dazu kriegst, dass er von der Truhe abhaut, dann gebe ich dir 10 Erz!
 	Snipes_Deal = LOG_RUNNING;
 
@@ -75,14 +75,14 @@ FUNC void  VLK_584_Snipes_DEAL_RUN_Info()
 {
 	AI_Output			(other, self,"VLK_584_Snipes_DEAL_RUN_Info_15_01"); //Du schuldest mir 10 Erz
 	AI_Output			(self, other,"VLK_584_Snipes_DEAL_RUN_Info_07_02"); //Hier, die 10 Erz hast du dir verdient.
-	AI_Output			(self, other,"VLK_584_Snipes_DEAL_RUN_Info_07_03"); //Ach noch was, den Schlüssel für seine Truhe hab' ich auch. Für dich nur 30 Erz!
+	AI_Output			(self, other,"VLK_584_Snipes_DEAL_RUN_Info_07_03"); //Ach noch was, den SchlÃ¼ssel fÃ¼r seine Truhe hab' ich auch. FÃ¼r dich nur 30 Erz!
 	CreateInvItems		(self,ItMinugget,10);
 	B_GiveInvItems      (self, other, ItMinugget,10);
 	CreateInvItem 		(self,ItKe_OM_02);
 
 	B_GiveXP			(XP_LureAaronAway);
 	
-	B_LogEntry		(CH2_SnipesDeal,	"Snipes hat mir für weitere 30 Erz den Schlüssel zu Aarons Truhe angeboten."); 
+	B_LogEntry		(CH2_SnipesDeal,	"Snipes hat mir fÃ¼r weitere 30 Erz den SchlÃ¼ssel zu Aarons Truhe angeboten."); 
 };  
 // ***************** Infos *****************************
 instance  VLK_584_Snipes_DEAL_2 (C_INFO)
@@ -92,7 +92,7 @@ instance  VLK_584_Snipes_DEAL_2 (C_INFO)
 	information		= VLK_584_Snipes_DEAL_2_Info;
 	important		= 0;
 	permanent		= 1;
-	description		= "(Schlüssel kaufen)"; 
+	description		= "(SchlÃ¼ssel kaufen)"; 
 };
 
 FUNC int  VLK_584_Snipes_DEAL_2_Condition()
@@ -110,8 +110,8 @@ FUNC void  VLK_584_Snipes_DEAL_2_Info()
 	
 	if ( Npc_HasItems (hero, ItMinugget)  >= 30 ) 
 	{
-		AI_Output			(other, self,"VLK_584_Snipes_DEAL_2_Info_15_01");//Gib mir den Schlüssel.
-		AI_Output			(self, other,"VLK_584_Snipes_DEAL_2_Info_07_02");//Du hast ein gutes Geschäft gemacht!
+		AI_Output			(other, self,"VLK_584_Snipes_DEAL_2_Info_15_01");//Gib mir den SchlÃ¼ssel.
+		AI_Output			(self, other,"VLK_584_Snipes_DEAL_2_Info_07_02");//Du hast ein gutes GeschÃ¤ft gemacht!
 		AI_Output			(other, self,"VLK_584_Snipes_DEAL_2_Info_15_03");//Ich frage mich, was dein Gewinn an der Sache ist.
 		AI_Output			(self, other,"VLK_584_Snipes_DEAL_2_Info_07_04");//Ich freue mich immer, wenn ich den Gardisten eins auswischen kann. Und wenn die den Inhalt der Truhe bei mir finden, bin ich dran!
 		
@@ -119,10 +119,10 @@ FUNC void  VLK_584_Snipes_DEAL_2_Info()
 		B_GiveInvItems 	(self, hero, ItKe_OM_02, 1);
 		VLK_584_Snipes_DEAL_2.permanent = 0;
 	
-		B_LogEntry		(CH2_SnipesDeal,	"Ich habe Snipes den Truhenschlüssel abgekauft! Wie Aaron wohl darauf reagieren wird, wenn ich ihm davon erzähle?"); 
+		B_LogEntry		(CH2_SnipesDeal,	"Ich habe Snipes den TruhenschlÃ¼ssel abgekauft! Wie Aaron wohl darauf reagieren wird, wenn ich ihm davon erzÃ¤hle?"); 
 	}
 	else
 	{
-		AI_Output			(self, other,"VLK_584_Snipes_DEAL_2_Info_07_05"); //Ich sagte 30 Erz! Gib mir das Erz und ich gebe dir den Schlüssel!
+		AI_Output			(self, other,"VLK_584_Snipes_DEAL_2_Info_07_05"); //Ich sagte 30 Erz! Gib mir das Erz und ich gebe dir den SchlÃ¼ssel!
 	};
 };  

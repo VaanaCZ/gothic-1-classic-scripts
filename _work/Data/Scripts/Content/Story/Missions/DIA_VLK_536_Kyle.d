@@ -47,7 +47,7 @@ FUNC INT DIA_Kyle_HutRage_Condition()
 
 FUNC VOID DIA_Kyle_HutRage_Info()
 {
-	AI_Output (self, other,"DIA_Kyle_HutRage_10_00"); //Wie oft hab' ich euch Pennern gesagt, rennt nicht durch meine Hütte.
+	AI_Output (self, other,"DIA_Kyle_HutRage_10_00"); //Wie oft hab' ich euch Pennern gesagt, rennt nicht durch meine HÃ¼tte.
 };
 
 // **************************************************
@@ -72,13 +72,13 @@ FUNC INT DIA_Kyle_Problem_Condition()
 FUNC VOID DIA_Kyle_Problem_Info()
 {
 	AI_Output (other, self,"DIA_Kyle_Problem_15_00"); //Was ist dein Problem?
-	AI_Output (self, other,"DIA_Kyle_Problem_10_01"); //Mann, lass mich bloß in Ruhe! Jeder hier hat ein Problem mit mir!
-	AI_Output (self, other,"DIA_Kyle_Problem_10_02"); //Es fing alles damit an, dass ich meine Hütte gebaut hab'.
-	AI_Output (self, other,"DIA_Kyle_Problem_10_03"); //Bau deine Hütte nicht an den Graben, haben sie gesagt.
+	AI_Output (self, other,"DIA_Kyle_Problem_10_01"); //Mann, lass mich bloÃŸ in Ruhe! Jeder hier hat ein Problem mit mir!
+	AI_Output (self, other,"DIA_Kyle_Problem_10_02"); //Es fing alles damit an, dass ich meine HÃ¼tte gebaut hab'.
+	AI_Output (self, other,"DIA_Kyle_Problem_10_03"); //Bau deine HÃ¼tte nicht an den Graben, haben sie gesagt.
 	AI_Output (self, other,"DIA_Kyle_Problem_10_04"); //Aber keiner von den Pennern hat mir gesagt, was passiert, wenn ich es doch tue.
-	AI_Output (self, other,"DIA_Kyle_Problem_10_05"); //Als ich vor ein paar Tagen aus der Mine wiederkam, hatte ich  'ne zweite Tür.
+	AI_Output (self, other,"DIA_Kyle_Problem_10_05"); //Als ich vor ein paar Tagen aus der Mine wiederkam, hatte ich  'ne zweite TÃ¼r.
 	AI_Output (self, other,"DIA_Kyle_Problem_10_06"); //Diese Schweine. Ich hasse sie. Ich kann dir gar nicht sagen, wie ich sie hasse!
-	AI_Output (self, other,"DIA_Kyle_Problem_10_07"); //Jetzt rennt jeder durch meine Hütte. Jeder Arsch.
+	AI_Output (self, other,"DIA_Kyle_Problem_10_07"); //Jetzt rennt jeder durch meine HÃ¼tte. Jeder Arsch.
 };
 
 	

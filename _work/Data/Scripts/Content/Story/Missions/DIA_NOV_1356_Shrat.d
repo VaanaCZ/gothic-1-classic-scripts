@@ -46,9 +46,9 @@ FUNC VOID  DIA_Shrat_WhyHere_Info()
 {
 	AI_Output (other, self,"DIA_Shrat_WhyHere_15_00"); //Was machst du denn hier?
 	AI_Output (self, other,"DIA_Shrat_WhyHere_02_01"); //Habe ich dir erlaubt, mich anzusprechen?
-	AI_Output (self, other,"DIA_Shrat_WhyHere_02_02"); //War nur'n Witz! Diese verdammten Spinner gehen mir gehörig auf den Sack, deswegen bin ich hier!
-	AI_Output (self, other,"DIA_Shrat_WhyHere_02_03"); //'Sprich mich nicht an!' - 'Bitte den Schläfer um Vergebung!' - 'Deine Mission ist von äußerster Dringlichkeit!'
-	AI_Output (self, other,"DIA_Shrat_WhyHere_02_04"); //Das hält man ja im Kopf nicht aus - kein Wunder, dass die hier alle gaga sind.
+	AI_Output (self, other,"DIA_Shrat_WhyHere_02_02"); //War nur'n Witz! Diese verdammten Spinner gehen mir gehÃ¶rig auf den Sack, deswegen bin ich hier!
+	AI_Output (self, other,"DIA_Shrat_WhyHere_02_03"); //'Sprich mich nicht an!' - 'Bitte den SchlÃ¤fer um Vergebung!' - 'Deine Mission ist von Ã¤uÃŸerster Dringlichkeit!'
+	AI_Output (self, other,"DIA_Shrat_WhyHere_02_04"); //Das hÃ¤lt man ja im Kopf nicht aus - kein Wunder, dass die hier alle gaga sind.
 	AI_Output (self, other,"DIA_Shrat_WhyHere_02_05"); //Ich bin Shrat. Novize ersten Ranges - und das werde ich auch bleiben!
 };
 
@@ -77,8 +77,8 @@ FUNC int DIA_Shrat_JoinPSI_Condition()
 FUNC void DIA_Shrat_JoinPSI_Info()
 {
 	AI_Output (other, self,"DIA_Shrat_JoinPSI_15_00"); //Ich will der Bruderschaft beitreten - kannst du mir helfen?
-	AI_Output (self, other,"DIA_Shrat_JoinPSI_02_01"); //Du willst bei dem Laden hier mitmachen? Ich überleg gerade, wie ich hier wegkomme.
-	AI_Output (self, other,"DIA_Shrat_JoinPSI_02_02"); //Wir könnten ein bisschen durch die Kolonie ziehen. Ein paar Einfaltspinsel ausplündern, ein bisschen Erz sammeln - was denkst du?
+	AI_Output (self, other,"DIA_Shrat_JoinPSI_02_01"); //Du willst bei dem Laden hier mitmachen? Ich Ã¼berleg gerade, wie ich hier wegkomme.
+	AI_Output (self, other,"DIA_Shrat_JoinPSI_02_02"); //Wir kÃ¶nnten ein bisschen durch die Kolonie ziehen. Ein paar Einfaltspinsel ausplÃ¼ndern, ein bisschen Erz sammeln - was denkst du?
 };
 
 // **************************************************
@@ -137,7 +137,7 @@ FUNC int DIA_Shrat_LeaveMe_Condition()
 FUNC void DIA_Shrat_LeaveMe_Info()
 {
 	AI_Output (other, self,"DIA_Shrat_LeaveMe_15_00"); //Hier trennen sich unsere Wege - ich werde von hier aus alleine weiterziehen.
-	AI_Output (self, other,"DIA_Shrat_LeaveMe_02_01"); //Na gut. Ich werd' zurück in mein Versteck im Sumpf gehen. Pass gut auf dich auf!
+	AI_Output (self, other,"DIA_Shrat_LeaveMe_02_01"); //Na gut. Ich werd' zurÃ¼ck in mein Versteck im Sumpf gehen. Pass gut auf dich auf!
 
 	Npc_ExchangeRoutine (self, "START");
 	self.aivar[AIV_PARTYMEMBER] = FALSE;

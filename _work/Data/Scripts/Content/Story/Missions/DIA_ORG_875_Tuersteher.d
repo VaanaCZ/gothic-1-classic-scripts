@@ -33,7 +33,7 @@ INSTANCE DIA_Org_875_PERM (C_INFO)
 	condition	= DIA_Org_875_PERM_Condition;
 	information	= DIA_Org_875_PERM_Info;
 	permanent	= 1;
-	description = "Ihr lasst hier nur Banditen und Schürfer rein?";
+	description = "Ihr lasst hier nur Banditen und SchÃ¼rfer rein?";
 };                       
 
 FUNC INT DIA_Org_875_PERM_Condition()
@@ -43,7 +43,7 @@ FUNC INT DIA_Org_875_PERM_Condition()
 
 FUNC VOID DIA_Org_875_PERM_Info()
 {	
-	AI_Output (other, self,"DIA_Org_875_PERM_15_00"); //Ihr lasst hier nur Banditen und Schürfer rein?
-	AI_Output (self, other,"DIA_Org_875_PERM_13_01"); //Gegen die Brüder aus der Sekte haben wir auch nichts.
+	AI_Output (other, self,"DIA_Org_875_PERM_15_00"); //Ihr lasst hier nur Banditen und SchÃ¼rfer rein?
+	AI_Output (self, other,"DIA_Org_875_PERM_13_01"); //Gegen die BrÃ¼der aus der Sekte haben wir auch nichts.
 	AI_Output (self, other,"DIA_Org_875_PERM_13_02"); //Aber sonst kommt uns hier keiner rein.
 };

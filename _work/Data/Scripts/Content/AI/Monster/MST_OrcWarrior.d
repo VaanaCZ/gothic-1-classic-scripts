@@ -66,7 +66,7 @@ func void Set_OrcWarrior_Visuals()
 INSTANCE OrcWarrior1	(Mst_Default_OrcWarrior)
 {
 	//-------- general --------
-	name							=	"Ork Kämpfer";
+	name							=	"Ork KÃ¤mpfer";
 	level							=	25;
 
 	//-------- visual --------

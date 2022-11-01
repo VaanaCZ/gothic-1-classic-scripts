@@ -44,7 +44,7 @@ FUNC INT DIA_Senyan_Hello_Condition()
 FUNC VOID DIA_Senyan_Hello_Info()
 {	
 	AI_Output (other, self,"DIA_Senyan_Hello_15_00"); //Du kommst aus der Freien Mine, richtig?
-	AI_Output (self, other,"DIA_Senyan_Hello_01_01"); //Richtig. Wie hast du das bloﬂ rausgefunden?
+	AI_Output (self, other,"DIA_Senyan_Hello_01_01"); //Richtig. Wie hast du das blo√ü rausgefunden?
 	AI_StopProcessInfos	(self);
 };
 

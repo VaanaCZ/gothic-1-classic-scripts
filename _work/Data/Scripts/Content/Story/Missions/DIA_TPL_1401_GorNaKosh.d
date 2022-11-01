@@ -18,7 +18,7 @@ FUNC int  Tpl_1401_GorNaKosh_Exit_Condition()
 
 FUNC VOID  Tpl_1401_GorNaKosh_Exit_Info()
 {
-	AI_Output			(self, other,"Tpl_1401_GorNaKosh_Exit_Info_13_02"); //Der Schläfer erwache!
+	AI_Output			(self, other,"Tpl_1401_GorNaKosh_Exit_Info_13_02"); //Der SchlÃ¤fer erwache!
 	AI_StopProcessInfos	( self );
 };
 
@@ -34,7 +34,7 @@ instance  Tpl_1401_GorNaKosh_SUGGEST (C_INFO)
 	information		= Tpl_1401_GorNaKosh_SUGGEST_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Ich weiß, wo das Nest der Crawler ist..."; 
+	description		= "Ich weiÃŸ, wo das Nest der Crawler ist..."; 
 };
 
 FUNC int  Tpl_1401_GorNaKosh_SUGGEST_Condition()
@@ -49,14 +49,14 @@ FUNC int  Tpl_1401_GorNaKosh_SUGGEST_Condition()
 
 FUNC void  Tpl_1401_GorNaKosh_SUGGEST_Info()
 {
-	AI_Output			(other, self,"Tpl_1401_GorNaKosh_SUGGEST_Info_15_01"); //Ich weiß, wo das Nest der Crawler ist und werde hineingehen und etwas suchen, aus dem Kalom ein stärkeres Elixier brauen kann.
+	AI_Output			(other, self,"Tpl_1401_GorNaKosh_SUGGEST_Info_15_01"); //Ich weiÃŸ, wo das Nest der Crawler ist und werde hineingehen und etwas suchen, aus dem Kalom ein stÃ¤rkeres Elixier brauen kann.
 	AI_Output			(self, other,"Tpl_1401_GorNaKosh_SUGGEST_Info_13_02"); //Dann wirst du meine Klinge brauchen. Ich bin dabei.
-	AI_Output			(other, self,"Tpl_1401_GorNaKosh_SUGGEST_Info_15_03"); //Gut. Wir treffen uns beim großen Durchgang.
+	AI_Output			(other, self,"Tpl_1401_GorNaKosh_SUGGEST_Info_15_03"); //Gut. Wir treffen uns beim groÃŸen Durchgang.
 	
 	Npc_ExchangeRoutine (self,"GATE");
 	Npc_SetPermAttitude (self,ATT_FRIENDLY); 
 	B_GiveXP			(XP_HireGorNaKosh);
-	B_LogEntry		(CH2_MCEggs,	"Ich konnte den Templer Gor Na Kosh als Verstärkung für Asghans Tor gewinnen. Er wartet dort auf mich.");	
+	B_LogEntry		(CH2_MCEggs,	"Ich konnte den Templer Gor Na Kosh als VerstÃ¤rkung fÃ¼r Asghans Tor gewinnen. Er wartet dort auf mich.");	
 
 	AI_StopProcessInfos	(self);
 };
@@ -85,11 +85,11 @@ FUNC void  Tpl_1401_GorNaKosh_INFO_Info()
 {
 	AI_Output			(other, self,"Tpl_1401_GorNaKosh_INFO_Info_15_01"); //Was machst du hier?
 	AI_Output			(self, other,"Tpl_1401_GorNaKosh_INFO_Info_13_02"); //Ich jage Minecrawler.
-	AI_Output			(other, self,"Tpl_1401_GorNaKosh_INFO_Info_15_03"); //Kannst du mir was über die Crawlerjagd erzählen?
-	AI_Output			(self, other,"Tpl_1401_GorNaKosh_INFO_Info_13_04"); //Beim Crawlerjagen gibt's nur eine Regel. Wenn du sie siehst, lauf auf sie zu und töte sie, so schnell du kannst.
-	AI_Output			(self, other,"Tpl_1401_GorNaKosh_INFO_Info_13_05"); //Kämpfe ohne Furcht und töte ohne Gnade.
+	AI_Output			(other, self,"Tpl_1401_GorNaKosh_INFO_Info_15_03"); //Kannst du mir was Ã¼ber die Crawlerjagd erzÃ¤hlen?
+	AI_Output			(self, other,"Tpl_1401_GorNaKosh_INFO_Info_13_04"); //Beim Crawlerjagen gibt's nur eine Regel. Wenn du sie siehst, lauf auf sie zu und tÃ¶te sie, so schnell du kannst.
+	AI_Output			(self, other,"Tpl_1401_GorNaKosh_INFO_Info_13_05"); //KÃ¤mpfe ohne Furcht und tÃ¶te ohne Gnade.
 
-	AI_StopProcessInfos(self);		// SN:nur für die Vermeidung des Bugs, dass der letzte Satz in roter Schrift erscheint, und der InfoManager danach defekt ist
+	AI_StopProcessInfos(self);		// SN:nur fÃ¼r die Vermeidung des Bugs, dass der letzte Satz in roter Schrift erscheint, und der InfoManager danach defekt ist
 };
 
 // ***************** Infos *****************************
@@ -101,7 +101,7 @@ instance  Tpl_1401_GorNaKosh_CRAWLER (C_INFO)
 	information		= Tpl_1401_GorNaKosh_CRAWLER_Info;
 	important		= 0;
 	permanent		= 1;
-	description		= "Kannst du mir mehr von den Crawlern erzählen?"; 
+	description		= "Kannst du mir mehr von den Crawlern erzÃ¤hlen?"; 
 };
 
 FUNC int  Tpl_1401_GorNaKosh_CRAWLER_Condition()
@@ -114,12 +114,12 @@ FUNC int  Tpl_1401_GorNaKosh_CRAWLER_Condition()
 
 FUNC void  Tpl_1401_GorNaKosh_CRAWLER_Info()
 {
-	AI_Output			(other, self,"Tpl_1401_GorNaKosh_CRAWLER_Info_15_01"); //Kannst du mir mehr von den Crawlern erzählen?
-	AI_Output			(self, other,"Tpl_1401_GorNaKosh_CRAWLER_Info_13_02"); //Sie handeln nach ihrem Instinkt. Alles, was kein Crawler ist, wird getötet.
-	AI_Output			(self, other,"Tpl_1401_GorNaKosh_CRAWLER_Info_13_03"); //Wenn du gegen sie kämpfst, mach dir dieses Wissen zu Nutze.
+	AI_Output			(other, self,"Tpl_1401_GorNaKosh_CRAWLER_Info_15_01"); //Kannst du mir mehr von den Crawlern erzÃ¤hlen?
+	AI_Output			(self, other,"Tpl_1401_GorNaKosh_CRAWLER_Info_13_02"); //Sie handeln nach ihrem Instinkt. Alles, was kein Crawler ist, wird getÃ¶tet.
+	AI_Output			(self, other,"Tpl_1401_GorNaKosh_CRAWLER_Info_13_03"); //Wenn du gegen sie kÃ¤mpfst, mach dir dieses Wissen zu Nutze.
 }; 
 
-// ***************************** Die Königin ist tot, lang lebe die Königin ****************************************//
+// ***************************** Die KÃ¶nigin ist tot, lang lebe die KÃ¶nigin ****************************************//
 
 instance  Tpl_1401_GorNaKosh_VICTORY (C_INFO)
 {
@@ -142,6 +142,6 @@ FUNC int  Tpl_1401_GorNaKosh_VICTORY_Condition()
 FUNC void  Tpl_1401_GorNaKosh_VICTORY_Info()
 {
 	AI_Output			(other, self,"Tpl_1401_GorNaKosh_VICTORY_Info_15_01"); //Ich habe das Nest der Crawler gefunden!
-	AI_Output			(self, other,"Tpl_1401_GorNaKosh_VICTORY_Info_13_02"); //Wunderbar! Gehe nun zurück ins Lager und beende deine Mission. Cor Kalom erwartet dich bestimmt schon!
-	B_LogEntry			(CH2_MCEggs,	"Ich sollte die Eier zu Cor-Kalom bringen, er wird sie schon sehnsüchtig erwarten.");
+	AI_Output			(self, other,"Tpl_1401_GorNaKosh_VICTORY_Info_13_02"); //Wunderbar! Gehe nun zurÃ¼ck ins Lager und beende deine Mission. Cor Kalom erwartet dich bestimmt schon!
+	B_LogEntry			(CH2_MCEggs,	"Ich sollte die Eier zu Cor-Kalom bringen, er wird sie schon sehnsÃ¼chtig erwarten.");
 };  

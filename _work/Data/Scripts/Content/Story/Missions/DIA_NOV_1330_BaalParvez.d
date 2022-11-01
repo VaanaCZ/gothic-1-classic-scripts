@@ -23,7 +23,7 @@ FUNC VOID  DIA_BaalParvez_EXIT_Info()
 };
 
 // **************************************************
-//					Erste Begr¸ssung
+//					Erste Begr√ºssung
 // **************************************************
 
 instance  DIA_BaalParvez_Greet (C_INFO)
@@ -46,8 +46,8 @@ FUNC int  DIA_BaalParvez_Greet_Condition()
 
 FUNC VOID  DIA_BaalParvez_Greet_Info()
 {
-	AI_Output (self, other,"DIA_BaalParvez_Greet_10_00"); //Der Schl‰fer sei mit dir, Fremder!
-	AI_Output (self, other,"DIA_BaalParvez_Greet_10_01"); //Ich bin hier, um dich auf den rechten Weg zu f¸hren.
+	AI_Output (self, other,"DIA_BaalParvez_Greet_10_00"); //Der Schl√§fer sei mit dir, Fremder!
+	AI_Output (self, other,"DIA_BaalParvez_Greet_10_01"); //Ich bin hier, um dich auf den rechten Weg zu f√ºhren.
 };
 
 // **************************************************
@@ -75,15 +75,15 @@ FUNC int  DIA_BaalParvez_RightWay_Condition()
 FUNC VOID  DIA_BaalParvez_RightWay_Info()
 {
 	AI_Output (other, self,"DIA_BaalParvez_RightWay_15_00"); //Und was ist der rechte Weg?
-	AI_Output (self, other,"DIA_BaalParvez_RightWay_10_01"); //Der Weg des Schl‰fers. Er allein hat die Macht, uns von hier zu befreien.
-	AI_Output (self, other,"DIA_BaalParvez_RightWay_10_02"); //Im unserem Lager bereiten die Gurus eine groﬂe Beschwˆrung vor - sie wollen mit dem Schl‰fer in Kontakt treten.
+	AI_Output (self, other,"DIA_BaalParvez_RightWay_10_01"); //Der Weg des Schl√§fers. Er allein hat die Macht, uns von hier zu befreien.
+	AI_Output (self, other,"DIA_BaalParvez_RightWay_10_02"); //Im unserem Lager bereiten die Gurus eine gro√üe Beschw√∂rung vor - sie wollen mit dem Schl√§fer in Kontakt treten.
 	AI_Output (self, other,"DIA_BaalParvez_RightWay_10_03"); //Bisher hat er nur durch Visionen zu uns gesprochen - aber jetzt ist die Zeit gekommen, mit ihm Kontakt aufzunehmen.
-	AI_Output (self, other,"DIA_BaalParvez_RightWay_10_04"); //Wir brauchen dazu so viele Anh‰nger wie mˆglich. Durch unsere geb¸ndelte geistige Kraft werden wir zu ihm durchdringen.
-	AI_Output (self, other,"DIA_BaalParvez_RightWay_10_05"); //Unser Lager liegt etwas weiter entfernt in den S¸mpfen - Ich kann dich aber hinbringen, falls du es w¸nschst.
+	AI_Output (self, other,"DIA_BaalParvez_RightWay_10_04"); //Wir brauchen dazu so viele Anh√§nger wie m√∂glich. Durch unsere geb√ºndelte geistige Kraft werden wir zu ihm durchdringen.
+	AI_Output (self, other,"DIA_BaalParvez_RightWay_10_05"); //Unser Lager liegt etwas weiter entfernt in den S√ºmpfen - Ich kann dich aber hinbringen, falls du es w√ºnschst.
 };
 
 // **************************************************
-//					Vorteile f¸r mich
+//					Vorteile f√ºr mich
 // **************************************************
 
 instance  DIA_BaalParvez_MyAdvantage (C_INFO)
@@ -93,7 +93,7 @@ instance  DIA_BaalParvez_MyAdvantage (C_INFO)
 	condition	= DIA_BaalParvez_MyAdvantage_Condition;
 	information	= DIA_BaalParvez_MyAdvantage_Info;
 	permanent	= 0;
-	description = "Was h‰tte ich davon, mich euch anzuschlieﬂen?";
+	description = "Was h√§tte ich davon, mich euch anzuschlie√üen?";
 };                       
 
 FUNC int  DIA_BaalParvez_MyAdvantage_Condition()
@@ -106,16 +106,16 @@ FUNC int  DIA_BaalParvez_MyAdvantage_Condition()
 
 FUNC VOID  DIA_BaalParvez_MyAdvantage_Info()
 {
-	AI_Output (other, self,"DIA_BaalParvez_MyAdvantage_15_00"); //Was h‰tte ich davon, mich euch anzuschlieﬂen?
-	AI_Output (self, other,"DIA_BaalParvez_MyAdvantage_10_01"); //Vielleicht bist du einer der Auserw‰hlten, denen der Schl‰fer die Gabe der Magie verleiht.
-	AI_Output (self, other,"DIA_BaalParvez_MyAdvantage_10_02"); //Oder du erreichst die hˆchsten Ehren und wirst zum Templer berufen. Nur die besten K‰mpfer unter uns d¸rfen diese Position bekleiden.
-	AI_Output (self, other,"DIA_BaalParvez_MyAdvantage_10_03"); //Wenn der Schl‰fer mit dir ist, kannst du sogar beides kombinieren - die besten unter den Templern haben n‰mlich auch die Gabe der Magie.
-	AI_Output (self, other,"DIA_BaalParvez_MyAdvantage_10_04"); //Du siehst, in unserer Bruderschaft gibt es viele Mˆglichkeiten f¸r dich.
-	AI_Output (self, other,"DIA_BaalParvez_MyAdvantage_10_05"); //‹berzeuge dich selbst davon, bevor du dich vorschnell f¸r ein anderes Lager entscheidest!
+	AI_Output (other, self,"DIA_BaalParvez_MyAdvantage_15_00"); //Was h√§tte ich davon, mich euch anzuschlie√üen?
+	AI_Output (self, other,"DIA_BaalParvez_MyAdvantage_10_01"); //Vielleicht bist du einer der Auserw√§hlten, denen der Schl√§fer die Gabe der Magie verleiht.
+	AI_Output (self, other,"DIA_BaalParvez_MyAdvantage_10_02"); //Oder du erreichst die h√∂chsten Ehren und wirst zum Templer berufen. Nur die besten K√§mpfer unter uns d√ºrfen diese Position bekleiden.
+	AI_Output (self, other,"DIA_BaalParvez_MyAdvantage_10_03"); //Wenn der Schl√§fer mit dir ist, kannst du sogar beides kombinieren - die besten unter den Templern haben n√§mlich auch die Gabe der Magie.
+	AI_Output (self, other,"DIA_BaalParvez_MyAdvantage_10_04"); //Du siehst, in unserer Bruderschaft gibt es viele M√∂glichkeiten f√ºr dich.
+	AI_Output (self, other,"DIA_BaalParvez_MyAdvantage_10_05"); //√úberzeuge dich selbst davon, bevor du dich vorschnell f√ºr ein anderes Lager entscheidest!
 };
 
 // **************************************************
-//					Schl‰fer
+//					Schl√§fer
 // **************************************************
 
 instance  DIA_BaalParvez_Sleeper (C_INFO)
@@ -125,7 +125,7 @@ instance  DIA_BaalParvez_Sleeper (C_INFO)
 	condition	= DIA_BaalParvez_Sleeper_Condition;
 	information	= DIA_BaalParvez_Sleeper_Info;
 	permanent	= 0;
-	description = "Wer ist der Schl‰fer?";
+	description = "Wer ist der Schl√§fer?";
 };                       
 
 FUNC int  DIA_BaalParvez_Sleeper_Condition()
@@ -138,16 +138,16 @@ FUNC int  DIA_BaalParvez_Sleeper_Condition()
 
 FUNC VOID  DIA_BaalParvez_Sleeper_Info()
 {
-	AI_Output (other, self,"DIA_BaalParvez_Sleeper_15_00"); //Wer ist der Schl‰fer?
-	AI_Output (self, other,"DIA_BaalParvez_Sleeper_10_01"); //Der Schl‰fer spricht zu uns durch unsere Tr‰ume und Visionen.
-	AI_Output (self, other,"DIA_BaalParvez_Sleeper_10_02"); //Seit er vor f¸nf Jahren das erste Mal mit Y'Berion in Kontakt trat, hat er uns geleitet.
-	AI_Output (self, other,"DIA_BaalParvez_Sleeper_10_03"); //Alle Anh‰nger der Bruderschaft haben dem Glauben an die drei Gˆtter abgeschworen. Wir bitten nur noch den Schl‰fer um Erlˆsung.
-	AI_Output (other, self,"DIA_BaalParvez_Sleeper_15_04"); //Erlˆsung wovon?
-	AI_Output (self, other,"DIA_BaalParvez_Sleeper_10_05"); //Na, von diesem gottverdammten Ort hier! Der Schl‰fer wird uns den Weg in die Freiheit weisen!
+	AI_Output (other, self,"DIA_BaalParvez_Sleeper_15_00"); //Wer ist der Schl√§fer?
+	AI_Output (self, other,"DIA_BaalParvez_Sleeper_10_01"); //Der Schl√§fer spricht zu uns durch unsere Tr√§ume und Visionen.
+	AI_Output (self, other,"DIA_BaalParvez_Sleeper_10_02"); //Seit er vor f√ºnf Jahren das erste Mal mit Y'Berion in Kontakt trat, hat er uns geleitet.
+	AI_Output (self, other,"DIA_BaalParvez_Sleeper_10_03"); //Alle Anh√§nger der Bruderschaft haben dem Glauben an die drei G√∂tter abgeschworen. Wir bitten nur noch den Schl√§fer um Erl√∂sung.
+	AI_Output (other, self,"DIA_BaalParvez_Sleeper_15_04"); //Erl√∂sung wovon?
+	AI_Output (self, other,"DIA_BaalParvez_Sleeper_10_05"); //Na, von diesem gottverdammten Ort hier! Der Schl√§fer wird uns den Weg in die Freiheit weisen!
 };
 
 // **************************************************
-//			Was hat Schl‰fer zu euch gesagt?
+//			Was hat Schl√§fer zu euch gesagt?
 // **************************************************
 
 instance  DIA_BaalParvez_SleeperSaid (C_INFO)
@@ -157,7 +157,7 @@ instance  DIA_BaalParvez_SleeperSaid (C_INFO)
 	condition	= DIA_BaalParvez_SleeperSaid_Condition;
 	information	= DIA_BaalParvez_SleeperSaid_Info;
 	permanent	= 0;
-	description = "Was hat euch der Schl‰fer gesagt?";
+	description = "Was hat euch der Schl√§fer gesagt?";
 };                       
 
 FUNC int  DIA_BaalParvez_SleeperSaid_Condition()
@@ -170,15 +170,15 @@ FUNC int  DIA_BaalParvez_SleeperSaid_Condition()
 
 FUNC VOID  DIA_BaalParvez_SleeperSaid_Info()
 {
-	AI_Output (other, self,"DIA_BaalParvez_SleeperSaid_15_00"); //Was hat euch der Schl‰fer gesagt?
-	AI_Output (self, other,"DIA_BaalParvez_SleeperSaid_10_01"); //Er hat uns in den Sumpf gef¸hrt, zu den alten Tempelruinen. Dort haben wir unser Lager errichtet.
-	AI_Output (self, other,"DIA_BaalParvez_SleeperSaid_10_02"); //Er hat uns die Unabh‰ngigkeit gegeben - keiner von uns muss mehr in den Minen schuften.
-	AI_Output (self, other,"DIA_BaalParvez_SleeperSaid_10_03"); //Er hat uns die Wirkung des Sumpfkrauts gezeigt. Wir verkaufen es an die anderen Lager und bekommen daf¸r alles, was wir brauchen.
-	AI_Output (self, other,"DIA_BaalParvez_SleeperSaid_10_04"); //Und er gab einigen von uns die Gabe der Magie. Einer alten, m‰chtigen Magie, verschieden von der, die die Magier des Reiches anwenden.
+	AI_Output (other, self,"DIA_BaalParvez_SleeperSaid_15_00"); //Was hat euch der Schl√§fer gesagt?
+	AI_Output (self, other,"DIA_BaalParvez_SleeperSaid_10_01"); //Er hat uns in den Sumpf gef√ºhrt, zu den alten Tempelruinen. Dort haben wir unser Lager errichtet.
+	AI_Output (self, other,"DIA_BaalParvez_SleeperSaid_10_02"); //Er hat uns die Unabh√§ngigkeit gegeben - keiner von uns muss mehr in den Minen schuften.
+	AI_Output (self, other,"DIA_BaalParvez_SleeperSaid_10_03"); //Er hat uns die Wirkung des Sumpfkrauts gezeigt. Wir verkaufen es an die anderen Lager und bekommen daf√ºr alles, was wir brauchen.
+	AI_Output (self, other,"DIA_BaalParvez_SleeperSaid_10_04"); //Und er gab einigen von uns die Gabe der Magie. Einer alten, m√§chtigen Magie, verschieden von der, die die Magier des Reiches anwenden.
 };
 
 // **************************************************
-//		Erz‰hl mir von der MAgie des Schl‰fers
+//		Erz√§hl mir von der MAgie des Schl√§fers
 // **************************************************
 
 instance  DIA_BaalParvez_PSIMagic (C_INFO)
@@ -188,7 +188,7 @@ instance  DIA_BaalParvez_PSIMagic (C_INFO)
 	condition	= DIA_BaalParvez_PSIMagic_Condition;
 	information	= DIA_BaalParvez_PSIMagic_Info;
 	permanent	= 0;
-	description = "Erz‰hl mir von der Magie des Schl‰fers.";
+	description = "Erz√§hl mir von der Magie des Schl√§fers.";
 };                       
 
 FUNC int  DIA_BaalParvez_PSIMagic_Condition()
@@ -201,8 +201,8 @@ FUNC int  DIA_BaalParvez_PSIMagic_Condition()
 
 FUNC VOID  DIA_BaalParvez_PSIMagic_Info()
 {
-	AI_Output (other, self,"DIA_BaalParvez_PSIMagic_15_00"); //Erz‰hl mir von der Magie des Schl‰fers.
-	AI_Output (self, other,"DIA_BaalParvez_PSIMagic_10_01"); //Diese Gabe verleiht die F‰higkeit, Dinge mit der Kraft deines Willens zu kontrollieren.
+	AI_Output (other, self,"DIA_BaalParvez_PSIMagic_15_00"); //Erz√§hl mir von der Magie des Schl√§fers.
+	AI_Output (self, other,"DIA_BaalParvez_PSIMagic_10_01"); //Diese Gabe verleiht die F√§higkeit, Dinge mit der Kraft deines Willens zu kontrollieren.
 	AI_Output (self, other,"DIA_BaalParvez_PSIMagic_10_02"); //Nur die Gurus unserer Bruderschaft sind in die Geheimnisse dieser Magie eingeweiht.
 };
 
@@ -243,7 +243,7 @@ FUNC VOID  DIA_BaalParvez_GotoPSI_Info()
 			Log_CreateTopic		(CH1_JoinPsi,	LOG_MISSION);
 			Log_SetTopicStatus	(CH1_JoinPsi,	LOG_RUNNING);
 		};
-		B_LogEntry				(CH1_JoinPsi, "Baal Parvez, ein Missionar der Bruderschaft sucht im Alten Lager nach neuen Anh‰ngern f¸r ihren Glauben an den SCHLƒFER! Er bot mir an, mich zum Sumpflager, der Heimat der Bruderschaft zu geleiten.");
+		B_LogEntry				(CH1_JoinPsi, "Baal Parvez, ein Missionar der Bruderschaft sucht im Alten Lager nach neuen Anh√§ngern f√ºr ihren Glauben an den SCHL√ÑFER! Er bot mir an, mich zum Sumpflager, der Heimat der Bruderschaft zu geleiten.");
 		Psi_Walk	= 1;
 	};
 	AI_Output (self, other,"DIA_BaalParvez_GotoPSI_10_01"); //Sehr gut! Ich werde vorangehen. Folge mir!
@@ -291,14 +291,14 @@ FUNC VOID  DIA_BaalParvez_AtPSI_Info()
 	{
 		AI_Output (self, other,"DIA_BaalParvez_AtPSI_LATE_10_00"); //Du hast dir viel Zeit gelassen, Bruder! Da unten siehst du das Lager.
 	};
-	AI_Output 	(self, other,"DIA_BaalParvez_AtPSI_10_01"); //Geh durch das Tor und rede mit meinen Br¸dern. Ich bin sicher, dass du den Weg nicht umsonst gemacht hast.
-	AI_Output 	(self, other,"DIA_BaalParvez_AtPSI_10_02"); //Frag nach Cor Kalom. Er hat die Aufsicht ¸ber die Novizen und die Lehrer.
-	AI_Output 	(self, other,"DIA_BaalParvez_AtPSI_10_03"); //Ich gehe zur¸ck ins alte Lager - es gibt noch viele Unwissende, die auf den richtigen Weg gebracht werden m¸ssen.
-	AI_Output 	(other, self,"DIA_BaalParvez_AtPSI_15_04"); //Viel Gl¸ck.
+	AI_Output 	(self, other,"DIA_BaalParvez_AtPSI_10_01"); //Geh durch das Tor und rede mit meinen Br√ºdern. Ich bin sicher, dass du den Weg nicht umsonst gemacht hast.
+	AI_Output 	(self, other,"DIA_BaalParvez_AtPSI_10_02"); //Frag nach Cor Kalom. Er hat die Aufsicht √ºber die Novizen und die Lehrer.
+	AI_Output 	(self, other,"DIA_BaalParvez_AtPSI_10_03"); //Ich gehe zur√ºck ins alte Lager - es gibt noch viele Unwissende, die auf den richtigen Weg gebracht werden m√ºssen.
+	AI_Output 	(other, self,"DIA_BaalParvez_AtPSI_15_04"); //Viel Gl√ºck.
 
 	self.aivar[AIV_PARTYMEMBER] = FALSE;
 
-	B_LogEntry	(CH1_JoinPsi, "Das Sumpflager erstreckt sich unter mir. Mein Wegbegleiter empfahl mir, mit dem Guru Cor Kalom zu sprechen. Er ist der Aufseher ¸ber die Novizen und Lehrer.");
+	B_LogEntry	(CH1_JoinPsi, "Das Sumpflager erstreckt sich unter mir. Mein Wegbegleiter empfahl mir, mit dem Guru Cor Kalom zu sprechen. Er ist der Aufseher √ºber die Novizen und Lehrer.");
 	B_GiveXP	(XP_ArrivedAtPsiCamp);
 
 	var C_NPC Kalom; Kalom = Hlp_GetNpc(Gur_1201_CorKalom);

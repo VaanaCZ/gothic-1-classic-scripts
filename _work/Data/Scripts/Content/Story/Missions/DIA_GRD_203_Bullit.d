@@ -43,7 +43,7 @@ FUNC int  DIA_Bullit_First_Condition()
 
 FUNC VOID  DIA_Bullit_First_Info()
 {
-	AI_Output (self, other,"DIA_Bullit_First_06_00"); //Wen haben wir denn da? Du bist doch der Typ, den ich getauft habe? Was willst du? Noch mehr Schl‰ge? 
+	AI_Output (self, other,"DIA_Bullit_First_06_00"); //Wen haben wir denn da? Du bist doch der Typ, den ich getauft habe? Was willst du? Noch mehr Schl√§ge? 
 };
 
 //******************************************
@@ -57,7 +57,7 @@ instance  DIA_Bullit_AufsMAul (C_INFO)
 	condition	= DIA_Bullit_AufsMAul_Condition;
 	information	= DIA_Bullit_AufsMAul_Info;
 	permanent	= 0;
-	description = "Ich bin gekommen, um dir dein groﬂes Maul zu stopfen.";
+	description = "Ich bin gekommen, um dir dein gro√ües Maul zu stopfen.";
 };                       
 
 FUNC int  DIA_Bullit_AufsMAul_Condition()
@@ -67,8 +67,8 @@ FUNC int  DIA_Bullit_AufsMAul_Condition()
 
 FUNC VOID  DIA_Bullit_AufsMAul_Info()
 {
-	AI_Output (other, self,"DIA_Bullit_AufsMAul_15_00"); //Ich bin gekommen, um dir dein groﬂes Maul zu stopfen.
-	AI_Output (self, other,"DIA_Bullit_AufsMAul_06_01"); //Ja, dann komm mal her, B¸rschchen!
+	AI_Output (other, self,"DIA_Bullit_AufsMAul_15_00"); //Ich bin gekommen, um dir dein gro√ües Maul zu stopfen.
+	AI_Output (self, other,"DIA_Bullit_AufsMAul_06_01"); //Ja, dann komm mal her, B√ºrschchen!
 	
 	Npc_SetAttitude 		( self, ATT_HOSTILE );
 	Npc_SetTempAttitude 	( self, ATT_HOSTILE );
@@ -102,7 +102,7 @@ FUNC int  DIA_GRD_203_Bullit_Wait4SC_Condition()
 
 func void  DIA_GRD_203_Bullit_Wait4SC_Info()
 {
-	AI_Output (self, other,"DIA_GRD_203_Bullit_Wait4SC_06_01"); //Du schon wieder. Ich h‰tte dich schon am ersten Tag im See versenken sollen!
+	AI_Output (self, other,"DIA_GRD_203_Bullit_Wait4SC_06_01"); //Du schon wieder. Ich h√§tte dich schon am ersten Tag im See versenken sollen!
 	AI_Output (other, self,"DIA_GRD_203_Bullit_Wait4SC_15_02"); //Damals hatte ich keine Chance - jetzt ist genau das Gegenteil der Fall.
 	AI_Output (self, other,"DIA_GRD_203_Bullit_Wait4SC_06_03"); //Du Wurm! Ich hoffe, dass du es mir nicht so einfach machst, wie beim ersten Mal!
 		

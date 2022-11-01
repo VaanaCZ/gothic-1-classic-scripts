@@ -37,7 +37,7 @@ INSTANCE Info_Mine_Vlk_1_Mine (C_INFO) // E1
 	condition	= Info_Mine_Vlk_1_Mine_Condition;
 	information	= Info_Mine_Vlk_1_Mine_Info;
 	permanent	= 1;
-	description = "Erz‰hl mir was von der Mine";
+	description = "Erz√§hl mir was von der Mine";
 };                       
 
 FUNC INT Info_Mine_Vlk_1_Mine_Condition()
@@ -50,9 +50,9 @@ FUNC INT Info_Mine_Vlk_1_Mine_Condition()
 
 FUNC VOID Info_Mine_Vlk_1_Mine_Info()
 {
-	AI_Output(other,self,"Info_Mine_Vlk_1_Mine_15_00"); //Erz‰hl mir was von der Mine
-	AI_Output(self,other,"Info_Mine_Vlk_1_Mine_01_01"); //In Hˆhlen wachsen Pilze und Kraut. Das Zeug ist ganz gut vertr‰glich. Macht aber nicht so satt wie ein anst‰ndiges St¸ck Fleisch.
-	AI_Output(self,other,"Info_Mine_Vlk_1_Mine_01_02"); //Die Crawler sind auch ungenieﬂbar. Was f¸r ein Mist.
+	AI_Output(other,self,"Info_Mine_Vlk_1_Mine_15_00"); //Erz√§hl mir was von der Mine
+	AI_Output(self,other,"Info_Mine_Vlk_1_Mine_01_01"); //In H√∂hlen wachsen Pilze und Kraut. Das Zeug ist ganz gut vertr√§glich. Macht aber nicht so satt wie ein anst√§ndiges St√ºck Fleisch.
+	AI_Output(self,other,"Info_Mine_Vlk_1_Mine_01_02"); //Die Crawler sind auch ungenie√übar. Was f√ºr ein Mist.
 };
 
 // *************************************************************************
@@ -92,7 +92,7 @@ INSTANCE Info_Mine_Vlk_1_Minecrawler(C_INFO)
 	condition	= Info_Mine_Vlk_1_Minecrawler_Condition;
 	information	= Info_Mine_Vlk_1_Minecrawler_Info;
 	permanent	= 1;
-	description = "Was weiﬂt Du ¸ber Minecrawler?";
+	description = "Was wei√üt Du √ºber Minecrawler?";
 };                       
 
 FUNC INT Info_Mine_Vlk_1_Minecrawler_Condition()
@@ -105,8 +105,8 @@ FUNC INT Info_Mine_Vlk_1_Minecrawler_Condition()
 
 FUNC VOID Info_Mine_Vlk_1_Minecrawler_Info()
 {
-	AI_Output(other,self,"Info_Mine_Vlk_1_Minecrawler_15_00"); //Was weiﬂt du ¸ber Minecrawler?
-	AI_Output(self,other,"Info_Mine_Vlk_1_Minecrawler_01_01"); //Die Templer haben ein Gesch‰ft mit Gomez gemacht. Sie tˆten die Crawler und daf¸r kriegen sie die Zangen der Viecher.
+	AI_Output(other,self,"Info_Mine_Vlk_1_Minecrawler_15_00"); //Was wei√üt du √ºber Minecrawler?
+	AI_Output(self,other,"Info_Mine_Vlk_1_Minecrawler_01_01"); //Die Templer haben ein Gesch√§ft mit Gomez gemacht. Sie t√∂ten die Crawler und daf√ºr kriegen sie die Zangen der Viecher.
 	
 };
 

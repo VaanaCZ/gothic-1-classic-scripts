@@ -45,7 +45,7 @@ FUNC int  DIA_Caine_Hallo_Condition()
 FUNC VOID  DIA_Caine_Hallo_Info()
 {
 	AI_Output (other, self,"DIA_Caine_Hallo_15_00"); //Hi! Ich bin neu hier!
-	AI_Output (self, other,"DIA_Caine_Hallo_13_01"); //Ich bin Caine. Schüler von Cor Kalom. Du hast sicher schon von ihm gehört, richtig?
+	AI_Output (self, other,"DIA_Caine_Hallo_13_01"); //Ich bin Caine. SchÃ¼ler von Cor Kalom. Du hast sicher schon von ihm gehÃ¶rt, richtig?
 			
 	Info_ClearChoices	(DIA_Caine_Hallo );
 	Info_AddChoice		(DIA_Caine_Hallo,"Nein."	,DIA_Caine_Hallo_Nein);
@@ -55,7 +55,7 @@ FUNC VOID  DIA_Caine_Hallo_Info()
 func void DIA_Caine_Hallo_Ja()
 {
 	AI_Output (other, self,"DIA_Caine_Hallo_Ja_15_00"); //Ja.
-	AI_Output (self, other,"DIA_Caine_Hallo_Ja_13_01"); //Dann weißt du ja, dass er hier der zweitwichtigste Mann nach Y'Berion ist.
+	AI_Output (self, other,"DIA_Caine_Hallo_Ja_13_01"); //Dann weiÃŸt du ja, dass er hier der zweitwichtigste Mann nach Y'Berion ist.
 	Info_ClearChoices	(DIA_Caine_Hallo );
 };
 
@@ -79,7 +79,7 @@ instance  DIA_Caine_WaysToKalom (C_INFO)
 	condition	= DIA_Caine_WaysToKalom_Condition;
 	information	= DIA_Caine_WaysToKalom_Info;
 	permanent	= 0;
-	description	= "Ich würde gerne mit Cor Kalom reden - kannst du mir dabei helfen?";
+	description	= "Ich wÃ¼rde gerne mit Cor Kalom reden - kannst du mir dabei helfen?";
 };                       
 
 FUNC int  DIA_Caine_WaysToKalom_Condition()
@@ -92,8 +92,8 @@ FUNC int  DIA_Caine_WaysToKalom_Condition()
 
 FUNC VOID  DIA_Caine_WaysToKalom_Info()
 {
-	AI_Output (other, self,"DIA_Caine_WaysToKalom_15_00"); //Ich würde gerne mit Cor Kalom reden - kannst du mir dabei helfen?
-	AI_Output (self, other,"DIA_Caine_WaysToKalom_13_01"); //Wenn du zu Cor Kalom willst, mußt du einen guten Grund haben.
+	AI_Output (other, self,"DIA_Caine_WaysToKalom_15_00"); //Ich wÃ¼rde gerne mit Cor Kalom reden - kannst du mir dabei helfen?
+	AI_Output (self, other,"DIA_Caine_WaysToKalom_13_01"); //Wenn du zu Cor Kalom willst, muÃŸt du einen guten Grund haben.
 	AI_Output (self, other,"DIA_Caine_WaysToKalom_13_02"); //Die Wache hat Anweisung, nur die vorzulassen, die Alchimistische Substanzen bringen oder von einen der Gurus geschickt wurden.
 };
 
@@ -108,7 +108,7 @@ instance  DIA_Caine_Alchemies (C_INFO)
 	condition	= DIA_Caine_Alchemies_Condition;
 	information	= DIA_Caine_Alchemies_Info;
 	permanent	= 0;
-	description	= "Was für alchimistische Substanzen kann ich Kalom bringen?";
+	description	= "Was fÃ¼r alchimistische Substanzen kann ich Kalom bringen?";
 };                       
 
 FUNC int  DIA_Caine_Alchemies_Condition()
@@ -121,8 +121,8 @@ FUNC int  DIA_Caine_Alchemies_Condition()
 
 FUNC VOID  DIA_Caine_Alchemies_Info()
 {
-	AI_Output (other, self,"DIA_Caine_Alchemies_15_00"); //Was für alchimistische Substanzen kann ich Kalom bringen?
-	AI_Output (self, other,"DIA_Caine_Alchemies_13_01"); //Kalom benötigt vor allem das Sekret der Minecrawler. Wenn du ihm genug davon beschaffst, wird dich die Wache sicher vorlassen.
+	AI_Output (other, self,"DIA_Caine_Alchemies_15_00"); //Was fÃ¼r alchimistische Substanzen kann ich Kalom bringen?
+	AI_Output (self, other,"DIA_Caine_Alchemies_13_01"); //Kalom benÃ¶tigt vor allem das Sekret der Minecrawler. Wenn du ihm genug davon beschaffst, wird dich die Wache sicher vorlassen.
 	AI_Output (self, other,"DIA_Caine_Alchemies_13_02"); //Er braucht zwar auch Pflanzen und Beeren, die man zwischen den Lagern findet, aber die nimmt Fortuno unten an.
 };
 
@@ -198,7 +198,7 @@ instance  DIA_Caine_AddInfoKalom (C_INFO)
 	condition	= DIA_Caine_AddInfoKalom_Condition;
 	information	= DIA_Caine_AddInfoKalom_Info;
 	permanent	= 0;
-	description	= "Was kannst du mir noch über deinen Meister erzählen?";
+	description	= "Was kannst du mir noch Ã¼ber deinen Meister erzÃ¤hlen?";
 };                       
 
 FUNC int  DIA_Caine_AddInfoKalom_Condition()
@@ -211,7 +211,7 @@ FUNC int  DIA_Caine_AddInfoKalom_Condition()
 
 FUNC VOID  DIA_Caine_AddInfoKalom_Info()
 {
-	AI_Output (other, self,"DIA_Caine_AddInfoKalom_15_00"); //Was kannst du mir noch über deinen Meister erzählen?
+	AI_Output (other, self,"DIA_Caine_AddInfoKalom_15_00"); //Was kannst du mir noch Ã¼ber deinen Meister erzÃ¤hlen?
 	AI_Output (self, other,"DIA_Caine_AddInfoKalom_13_01"); //Er ist nicht wie die anderen Gurus. Er getattet jedem, ihn anzusprechen, aber NIEMANDEM seine kostbare Zeit zu verschwenden.
 };
 
@@ -242,8 +242,8 @@ FUNC int  DIA_Caine_WieGuruSend_Condition()
 FUNC VOID  DIA_Caine_WieGuruSend_Info()
 {
 	AI_Output (other, self,"DIA_Caine_WieGuruSend_15_00"); //Wie bringe ich einen Guru dazu, dass er mich zu Kalom schickt.
-	AI_Output (self, other,"DIA_Caine_WieGuruSend_13_01"); //Darüber kann die Lester mehr erzählen.
-	AI_Output (self, other,"DIA_Caine_WieGuruSend_13_02"); //Bis vor kurzen hat er noch für Cor Kalom gearbeitet, jetzt kümmert er sich zusammen mit den Gurus um die Neuen.
+	AI_Output (self, other,"DIA_Caine_WieGuruSend_13_01"); //DarÃ¼ber kann die Lester mehr erzÃ¤hlen.
+	AI_Output (self, other,"DIA_Caine_WieGuruSend_13_02"); //Bis vor kurzen hat er noch fÃ¼r Cor Kalom gearbeitet, jetzt kÃ¼mmert er sich zusammen mit den Gurus um die Neuen.
 };
 */
 
@@ -272,5 +272,5 @@ FUNC int  Nov_1301_Caine_CHEST_Condition()
 FUNC void  Nov_1301_Caine_CHEST_Info()
 {
 	AI_Output (other, self,"Nov_1301_Caine_CHEST_Info_15_01"); //Wie komme ich an das Rezept von Kalom?
-	AI_Output (self, other,"Nov_1301_Caine_CHEST_Info_13_02"); //Gar nicht. Er hält es in seiner Truhe verschlossen. Das rückt er niemals raus.
+	AI_Output (self, other,"Nov_1301_Caine_CHEST_Info_13_02"); //Gar nicht. Er hÃ¤lt es in seiner Truhe verschlossen. Das rÃ¼ckt er niemals raus.
 };  

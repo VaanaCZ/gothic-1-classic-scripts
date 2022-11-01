@@ -64,7 +64,7 @@ FUNC VOID Info_XardasDemon_INTRO_Info()
 	AI_Output		(hero, self,"Info_XardasDemon_INTRO_15_02"); //DUUUU sprichst zu mir ??? Wie ... wie kommst du in meinen Kopf?
 	AI_Output (self, other,"DIA_BaalCadar_NoTalk_Hi_02_01"); //
 	AI_Output		(hero, self,"Info_XardasDemon_INTRO_15_03"); //Du bist was? ... der Diener deines Herren?
-	AI_Output		(hero, self,"Info_XardasDemon_INTRO_15_04"); //Du erscheinst mir eher wie eine Kreatur der Hölle!
+	AI_Output		(hero, self,"Info_XardasDemon_INTRO_15_04"); //Du erscheinst mir eher wie eine Kreatur der HÃ¶lle!
 	AI_Output (self, other,"DIA_BaalCadar_NoTalk_Hi_02_01"); //
 	AI_Output		(hero, self,"Info_XardasDemon_INTRO_15_05"); //Ich soll schweigen?
 };
@@ -79,7 +79,7 @@ instance Info_XardasDemon_MASTERWHO (C_INFO)
 	information	= Info_XardasDemon_MASTERWHO_Info;
 	permanent	= 0;
 	important 	= 0;
-	description = "Heißt Dein Herr und Meister zufällig Xardas?";
+	description = "HeiÃŸt Dein Herr und Meister zufÃ¤llig Xardas?";
 };
 
 FUNC INT Info_XardasDemon_MASTERWHO_Condition()
@@ -92,7 +92,7 @@ FUNC INT Info_XardasDemon_MASTERWHO_Condition()
 
 FUNC VOID Info_XardasDemon_MASTERWHO_Info()
 {
-	AI_Output		(hero, self,"Info_XardasDemon_MASTERWHO_15_01"); //Heißt dein Herr und Meister zufällig Xardas?
+	AI_Output		(hero, self,"Info_XardasDemon_MASTERWHO_15_01"); //HeiÃŸt dein Herr und Meister zufÃ¤llig Xardas?
 	AI_Output (self, other,"DIA_BaalCadar_NoTalk_Hi_02_01"); //
 	AI_Output		(hero, self,"Info_XardasDemon_MASTERWHO_15_02"); //Aha ... Namen sind also unwichtig ... Okay.
 	AI_Output		(hero, self,"Info_XardasDemon_MASTERWHO_15_03"); //Ich gehe einfach mal davon aus, dass das hier der Turm von Xardas ist.
@@ -123,15 +123,15 @@ FUNC VOID Info_XardasDemon_MASTERHOW_Info()
 {
 	AI_Output		(hero, self,"Info_XardasDemon_MASTERHOW_15_01"); //Ich muss mit deinem Meister sprechen!
 	AI_Output (self, other,"DIA_BaalCadar_NoTalk_Hi_02_01"); //
-	AI_Output		(hero, self,"Info_XardasDemon_MASTERHOW_15_02"); //... Ich? ... unwürdig?? ... Was für ein Test???
+	AI_Output		(hero, self,"Info_XardasDemon_MASTERHOW_15_02"); //... Ich? ... unwÃ¼rdig?? ... Was fÃ¼r ein Test???
 	AI_Output (self, other,"DIA_BaalCadar_NoTalk_Hi_02_01"); //
-	AI_Output		(hero, self,"Info_XardasDemon_MASTERHOW_15_03"); //... Aaahhhh ... Ich verstehe ... wer deinen Meister sprechen will, muss sich würdig erweisen!
-	AI_Output		(hero, self,"Info_XardasDemon_MASTERHOW_15_04"); //... Moment, wie war das? ... Der Beweis? ... Sieg über was? ... Sieg über die Elemente?
+	AI_Output		(hero, self,"Info_XardasDemon_MASTERHOW_15_03"); //... Aaahhhh ... Ich verstehe ... wer deinen Meister sprechen will, muss sich wÃ¼rdig erweisen!
+	AI_Output		(hero, self,"Info_XardasDemon_MASTERHOW_15_04"); //... Moment, wie war das? ... Der Beweis? ... Sieg Ã¼ber was? ... Sieg Ã¼ber die Elemente?
 	AI_Output		(hero, self,"Info_XardasDemon_MASTERHOW_15_05"); //... Stein? ... Eis? ... Feuer?
 
 	FindGolemHearts = 1;		// Auftrag vergeben
 
-	B_LogEntry		(CH4_FindXardas,	"Im Inneren von Xardas' Turm begegnete ich einem Dämon, der in meinen Gedanken zu mir sprach. Er will drei Beweise für den Sieg über die Elemente Feuer, Eis und Stein, bevor er mich zu seinem Meister vorläßt.");
+	B_LogEntry		(CH4_FindXardas,	"Im Inneren von Xardas' Turm begegnete ich einem DÃ¤mon, der in meinen Gedanken zu mir sprach. Er will drei Beweise fÃ¼r den Sieg Ã¼ber die Elemente Feuer, Eis und Stein, bevor er mich zu seinem Meister vorlÃ¤ÃŸt.");
 };
 
 //***************************************************************************
@@ -144,7 +144,7 @@ instance Info_XardasDemon_NOHEART (C_INFO)
 	information	= Info_XardasDemon_NOHEART_Info;
 	permanent	= 1;
 	important 	= 0;
-	description = "Du sprichst in Rätseln!";
+	description = "Du sprichst in RÃ¤tseln!";
 };
 
 FUNC INT Info_XardasDemon_NOHEART_Condition()
@@ -161,10 +161,10 @@ FUNC INT Info_XardasDemon_NOHEART_Condition()
 
 FUNC VOID Info_XardasDemon_NOHEART_Info()
 {
-	AI_Output		(hero, self,"Info_XardasDemon_NOHEART_15_01"); //Du sprichst in Rätseln!
+	AI_Output		(hero, self,"Info_XardasDemon_NOHEART_15_01"); //Du sprichst in RÃ¤tseln!
 	AI_Output (self, other,"DIA_BaalCadar_NoTalk_Hi_02_01"); //
 	AI_Output		(hero, self,"Info_XardasDemon_NOHEART_15_02"); //... Das hast du schon mal gesagt, du wiederholst dich!
-	AI_Output		(hero, self,"Info_XardasDemon_NOHEART_15_03"); //... Du willst Beweise für den Sieg über die Elemente Feuer, Eis und Stein!
+	AI_Output		(hero, self,"Info_XardasDemon_NOHEART_15_03"); //... Du willst Beweise fÃ¼r den Sieg Ã¼ber die Elemente Feuer, Eis und Stein!
 };
 
 //***************************************************************************
@@ -175,24 +175,24 @@ func void B_XardasDemon_GiveHeart()
 	if 		(FindGolemHearts == 1)
 	{
 		AI_Output (self, other,"DIA_BaalCadar_NoTalk_Hi_02_01"); //
-		AI_Output	(hero, self,"Info_XardasDemon_GIVEHEART_15_01"); //... Was? ... Aha! ... Ein würdiger Beweis!
+		AI_Output	(hero, self,"Info_XardasDemon_GIVEHEART_15_01"); //... Was? ... Aha! ... Ein wÃ¼rdiger Beweis!
 		AI_Output	(hero, self,"Info_XardasDemon_GIVEHEART_15_02"); //... Fehlen? ... Zwei fehlen noch?
 		FindGolemHearts = 2;
 	}
 	else if (FindGolemHearts == 2)
 	{
 		AI_Output (self, other,"DIA_BaalCadar_NoTalk_Hi_02_01"); //
-		AI_Output	(hero, self,"Info_XardasDemon_GIVEHEART_15_03"); //... Die Dualität? ... Der zweite Beweis?
+		AI_Output	(hero, self,"Info_XardasDemon_GIVEHEART_15_03"); //... Die DualitÃ¤t? ... Der zweite Beweis?
 		AI_Output	(hero, self,"Info_XardasDemon_GIVEHEART_15_04"); //... Einer bleibt noch?
 		FindGolemHearts = 3;
 	}
 	else if (FindGolemHearts == 3)
 	{
 		AI_Output (self, other,"DIA_BaalCadar_NoTalk_Hi_02_01"); //
-		AI_Output	(hero, self,"Info_XardasDemon_GIVEHEART_15_05"); //... Vollkommenheit? ... Ich bin würdig?
-		AI_Output	(hero, self,"Info_XardasDemon_GIVEHEART_15_06"); //Wenn das so ist, dann wünsche ich jetzt, deinen Meister zu sprechen!
-		AI_Output	(hero, self,"Info_XardasDemon_GIVEHEART_15_07"); //... Gegenbeweis? ... Was für einen Gegenbeweis? ... Eine Rune? ... Eine Rune für mich?
-		AI_Output	(hero, self,"Info_XardasDemon_GIVEHEART_15_08"); //Nun, dann nehme ich die Rune der Teleportation als Zeichen der Würde an mich!
+		AI_Output	(hero, self,"Info_XardasDemon_GIVEHEART_15_05"); //... Vollkommenheit? ... Ich bin wÃ¼rdig?
+		AI_Output	(hero, self,"Info_XardasDemon_GIVEHEART_15_06"); //Wenn das so ist, dann wÃ¼nsche ich jetzt, deinen Meister zu sprechen!
+		AI_Output	(hero, self,"Info_XardasDemon_GIVEHEART_15_07"); //... Gegenbeweis? ... Was fÃ¼r einen Gegenbeweis? ... Eine Rune? ... Eine Rune fÃ¼r mich?
+		AI_Output	(hero, self,"Info_XardasDemon_GIVEHEART_15_08"); //Nun, dann nehme ich die Rune der Teleportation als Zeichen der WÃ¼rde an mich!
 
 		B_Story_AccessToXardas();
 	};

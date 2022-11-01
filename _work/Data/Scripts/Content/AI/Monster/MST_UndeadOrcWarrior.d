@@ -4,7 +4,7 @@
 
 PROTOTYPE Mst_Default_UndeadOrcWarrior (C_Npc)			
 {
-	name							=	"Tempelw‰chter";
+	name							=	"Tempelw√§chter";
 	guild							=	GIL_UNDEADORC;
 	aivar[AIV_MM_REAL_ID]			= 	ID_UNDEADORCWARRIOR;
 	level							=	25;
@@ -75,7 +75,7 @@ INSTANCE UndeadOrcWarrior (Mst_Default_UndeadOrcWarrior)
 
 INSTANCE UndeadOWH (Mst_Default_UndeadOrcWarrior)
 {
-	name							=	"Hoher Tempelw‰chter";
+	name							=	"Hoher Tempelw√§chter";
 	level							=	40;
 
 	attribute	[ATR_STRENGTH]		=	120;

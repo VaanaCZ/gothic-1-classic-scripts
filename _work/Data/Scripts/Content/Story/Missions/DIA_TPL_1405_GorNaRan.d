@@ -44,9 +44,9 @@ FUNC int  DIA_GorNaRan_Wache_Condition()
 FUNC VOID  DIA_GorNaRan_Wache_Info()
 {
 	AI_Output (other, self,"DIA_GorNaRan_Wache_15_00"); //Was machst du hier?
-	AI_Output (self, other,"DIA_GorNaRan_Wache_13_01"); //Ich passe auf, das kein Sumpfhai zu nah ans Lager ger‰t.
-	AI_Output (self, other,"DIA_GorNaRan_Wache_13_02"); //Wenn ich du w‰re, w¸rde ich 'nen weiten Bogen um die Viecher machen. Du hast keine Chance gegen sie.
-	AI_Output (self, other,"DIA_GorNaRan_Wache_13_03"); //Jetzt stˆr' mich nicht weiter, ich muss die Augen aufhalten.
+	AI_Output (self, other,"DIA_GorNaRan_Wache_13_01"); //Ich passe auf, das kein Sumpfhai zu nah ans Lager ger√§t.
+	AI_Output (self, other,"DIA_GorNaRan_Wache_13_02"); //Wenn ich du w√§re, w√ºrde ich 'nen weiten Bogen um die Viecher machen. Du hast keine Chance gegen sie.
+	AI_Output (self, other,"DIA_GorNaRan_Wache_13_03"); //Jetzt st√∂r' mich nicht weiter, ich muss die Augen aufhalten.
 	AI_StopProcessInfos	( self );
 };
 
@@ -103,7 +103,7 @@ FUNC INT Info_TPL_1405_GorNaRan2_Condition()
 FUNC VOID Info_TPL_1405_GorNaRan2_Info()
 {
 	AI_Output (other, self,"Info_TPL_1405_GorNaRan_Info_15_02"); //Was ist hier eigentlich los?
-	AI_Output (self, other,"Info_TPL_1405_GorNaRan_Info_13_03"); //Du fragst mich, was hier los ist? Wirf dich in den Staub und huldige dem Schl‰fer, denn just in diesem Moment erwacht er und wird alle Ungl‰ubigen vom Antlitz dieser Welt verbannen.
+	AI_Output (self, other,"Info_TPL_1405_GorNaRan_Info_13_03"); //Du fragst mich, was hier los ist? Wirf dich in den Staub und huldige dem Schl√§fer, denn just in diesem Moment erwacht er und wird alle Ungl√§ubigen vom Antlitz dieser Welt verbannen.
 };
 
 
@@ -129,7 +129,7 @@ FUNC INT Info_TPL_1405_GorNaRan3_Condition()
 FUNC VOID Info_TPL_1405_GorNaRan3_Info()
 {	
 	AI_Output (other, self,"Info_TPL_1405_GorNaRan_Info_15_04"); //Wollte mich nur umsehen.
-	AI_Output (self, other,"Info_TPL_1405_GorNaRan_Info_13_05"); //Du Wurm, du und deinesgleichen haben hier nichts zu suchen, wenn der Schl‰fer erwacht! Ich werde dich aus dem Weg r‰umen m¸ssen.
+	AI_Output (self, other,"Info_TPL_1405_GorNaRan_Info_13_05"); //Du Wurm, du und deinesgleichen haben hier nichts zu suchen, wenn der Schl√§fer erwacht! Ich werde dich aus dem Weg r√§umen m√ºssen.
 	
 	AI_StopProcessInfos	( self );
 	
@@ -159,7 +159,7 @@ FUNC INT Info_TPL_1405_GorNaRan4_Condition()
 FUNC VOID Info_TPL_1405_GorNaRan4_Info()
 {	
 	AI_Output (other, self,"Info_TPL_1405_GorNaRan_Info_15_06"); //Du kannst mich nicht aufhalten!
-	AI_Output (self, other,"Info_TPL_1405_GorNaRan_Info_13_07"); //Wie du meinst, Junge, f¸r den Schl‰fer!
+	AI_Output (self, other,"Info_TPL_1405_GorNaRan_Info_13_07"); //Wie du meinst, Junge, f√ºr den Schl√§fer!
 
 	AI_StopProcessInfos	( self );
 

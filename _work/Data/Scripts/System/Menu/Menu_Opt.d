@@ -79,7 +79,7 @@ instance MENUITEM_OPT_VIDEO(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
 	text[0]		=	"Video";
-	text[1]		=	"Grafikkarte, Auflˆsung und Helligkeit.";  // Kommentar
+	text[1]		=	"Grafikkarte, Aufl√∂sung und Helligkeit.";  // Kommentar
 	
 	// Position und Dimension	
 	posx		= 0;		posy		= MENU_OPT_START_Y + MENU_OPT_DY*2;
@@ -132,8 +132,8 @@ INSTANCE MENUITEM_OPT_CONTROLS(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_PERF(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	text[0]		= "Performance/Qualit‰t";
-	text[1]		= "Optimierung von Performance und Qualit‰t.";  // Kommentar
+	text[0]		= "Performance/Qualit√§t";
+	text[1]		= "Optimierung von Performance und Qualit√§t.";  // Kommentar
 	
 	// Position und Dimension	
 	posx		= 0;		posy		= MENU_OPT_START_Y + MENU_OPT_DY*5;
@@ -149,7 +149,7 @@ INSTANCE MENUITEM_PERF(C_MENU_ITEM_DEF)
 instance MENUITEM_PERF_CHOICE(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_CHOICE_BACK_PIC;
-	text[0]		= "benutzerdefiniert#hohe Performance|mittlere Qualit‰t|hohe Qualit‰t";	// # trennt die UnDef-Option von der auswaehlbaren Optionen
+	text[0]		= "benutzerdefiniert#hohe Performance|mittlere Qualit√§t|hohe Qualit√§t";	// # trennt die UnDef-Option von der auswaehlbaren Optionen
 	type		= MENU_ITEM_CHOICEBOX;
 	fontName	= MENU_FONT_SMALL;
 	// Position und Dimension	
@@ -167,7 +167,7 @@ instance MENUITEM_PERF_CHOICE(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_OPT_BACK(C_MENU_ITEM_DEF)
 {
 	backpic		=	MENU_ITEM_BACK_PIC;
-	text[0]		=	"Zur¸ck";
+	text[0]		=	"Zur√ºck";
 	// Position und Dimension	
 	posx		=	1000;			posy		=	MENU_BACK_Y;
 	dimx		=	6192;		dimy		=	MENU_OPT_DY;

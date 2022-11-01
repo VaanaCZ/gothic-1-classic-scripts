@@ -4,7 +4,7 @@
 
 PROTOTYPE Mst_Default_Demon(C_Npc)			
 {
-	name							=	"Flammend‰mon";
+	name							=	"Flammend√§mon";
 	guild							=	GIL_DEMON;
 	aivar[AIV_MM_REAL_ID]			= 	ID_DEMON;
 	level							=	50;
@@ -100,7 +100,7 @@ INSTANCE SummonedByNPC_Demon (Mst_Default_Demon)
 
 
 /*************************************************************************
-**	Xardas' zahmer D‰mon    															**
+**	Xardas' zahmer D√§mon    															**
 *************************************************************************/
 
 INSTANCE XardasDemon (Mst_Default_Demon)
@@ -124,7 +124,7 @@ INSTANCE XardasDemon (Mst_Default_Demon)
 
 INSTANCE OTDemon (Mst_Default_Demon)
 {
-	name							=	"niederer D‰mon";
+	name							=	"niederer D√§mon";
 	guild							=	GIL_DEMON;
 	level							=	60;
 //--------------------------------------------------------	

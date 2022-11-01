@@ -7,11 +7,11 @@
 //	Uhrzeit:
 //
 //	Es passiert folgendes:
-//	1.	Nähert sich der Spieler dem Durchgang, so wird er in diesen
+//	1.	NÃ¤hert sich der Spieler dem Durchgang, so wird er in diesen
 //		Dialog gezwungen und einmal gewarnt
-//	2.	Nähert sich der SC trotzdem weiter, so wird er ein ZWEITES Mal
+//	2.	NÃ¤hert sich der SC trotzdem weiter, so wird er ein ZWEITES Mal
 //		gewarnt (aggressiver mit Waffe ziehen)
-//	3.	Nähert er sich trotzdem wieder, wird er angegriffen
+//	3.	NÃ¤hert er sich trotzdem wieder, wird er angegriffen
 //////////////////////////////////////////////////////////////////////////
 const string	SLD_732_CHECKPOINT		= "NC_PLACE02";
 
@@ -65,14 +65,14 @@ func void Info_SLD_732_FirstWarn_Info()
 func void Info_SLD_732_Parole_CRONOS ()
 {
 	AI_Output 			(hero, self,"Info_SLD_732_Parole_CRONOS_15_01"); //Cronos hat mir die Erlaubnis gegeben!
-	AI_Output 			(self, hero,"Info_SLD_732_Parole_CRONOS_08_02"); //Wenn das so wäre, hätte er dir die Parole genannt. Verzieh dich, du Lügner!
+	AI_Output 			(self, hero,"Info_SLD_732_Parole_CRONOS_08_02"); //Wenn das so wÃ¤re, hÃ¤tte er dir die Parole genannt. Verzieh dich, du LÃ¼gner!
 	AI_StopProcessInfos	(self);
 };
 
 func void Info_SLD_732_Parole_FORGOT ()
 {
 	AI_Output 			(hero, self,"Info_SLD_732_Parole_FORGOT_15_01"); //Keine Ahnung, hab' sie vergessen!
-	AI_Output 			(self, hero,"Info_SLD_732_Parole_FORGOT_08_02"); //Dann komm wieder, wenn sie dir wieder eingefallen ist und stiehl mir nicht länger meine Zeit!
+	AI_Output 			(self, hero,"Info_SLD_732_Parole_FORGOT_08_02"); //Dann komm wieder, wenn sie dir wieder eingefallen ist und stiehl mir nicht lÃ¤nger meine Zeit!
 	AI_StopProcessInfos	(self);
 };
 
@@ -171,7 +171,7 @@ func int Info_SLD_732_Attack_Info()
 	hero.aivar[AIV_GUARDPASSAGE_STATUS]	= AIV_GPS_PUNISH;	
 	
 	B_FullStop			(self);	
-	AI_StopProcessInfos	(self);					// dem Spieler sofort wieder die Kontrolle zurückgeben
+	AI_StopProcessInfos	(self);					// dem Spieler sofort wieder die Kontrolle zurÃ¼ckgeben
 	B_IntruderAlert		(self,	other);
 	B_SetAttackReason	(self,	AIV_AR_INTRUDER);
 	Npc_SetTarget		(self,	hero);

@@ -17,7 +17,7 @@ FUNC int  Tpl_1438_Templer_Exit_Condition()
 FUNC VOID  Tpl_1438_Templer_Exit_Info()
 {
 	AI_Output			(other, self,"Tpl_1438_Templer_Exit_Info_15_01"); //Bis dann.
-	AI_Output			(self, other,"Tpl_1438_Templer_Exit_Info_13_02"); //Mˆge der Schl‰fer erwachen!
+	AI_Output			(self, other,"Tpl_1438_Templer_Exit_Info_13_02"); //M√∂ge der Schl√§fer erwachen!
 	
 	AI_StopProcessInfos	( self );
 };
@@ -45,7 +45,7 @@ FUNC int  Tpl_1438_Templer_INFO_Condition()
 FUNC void  Tpl_1438_Templer_INFO_Info()
 {
 	AI_Output			(other, self,"Tpl_1438_Templer_INFO_Info_15_01"); //Was macht ihr Templer hier in der Mine? 
-	AI_Output			(self, other,"Tpl_1438_Templer_INFO_Info_13_02"); //Wir jagen die Minecrawler. Geh lieber zur¸ck ins Lager, da bist du sicher.
+	AI_Output			(self, other,"Tpl_1438_Templer_INFO_Info_13_02"); //Wir jagen die Minecrawler. Geh lieber zur√ºck ins Lager, da bist du sicher.
 }; 
 
 // ***************** SEKRET *****************************
@@ -72,8 +72,8 @@ FUNC void  Tpl_1438_Templer_WHY_Info()
 {
 	AI_Output			(other, self,"Tpl_1438_Templer_WHY_Info_15_01"); //Warum jagt ihr die Crawler? 
 	AI_Output			(self, other,"Tpl_1438_Templer_WHY_Info_13_02"); //Wegen ihren Zangen. Sie enthalten ein wertvolles Sekret.
-	AI_Output			(other, self,"Tpl_1438_Templer_WHY_Info_15_03"); //Was f¸r ein Sekret?
-	AI_Output			(self, other,"Tpl_1438_Templer_WHY_Info_13_04"); //Ein Gift. Nur unser Guru Cor Kalom weiﬂ, wie man daraus Tr‰nke brauen kann.
+	AI_Output			(other, self,"Tpl_1438_Templer_WHY_Info_15_03"); //Was f√ºr ein Sekret?
+	AI_Output			(self, other,"Tpl_1438_Templer_WHY_Info_13_04"); //Ein Gift. Nur unser Guru Cor Kalom wei√ü, wie man daraus Tr√§nke brauen kann.
 };
 // ***************** KALOM *****************************
 
@@ -99,11 +99,11 @@ FUNC int  Tpl_1438_Templer_KALOM_Condition()
 FUNC void  Tpl_1438_Templer_KALOM_Info()
 {
 	AI_Output			(other, self,"Tpl_1438_Templer_KALOM_Info_15_01"); //Wer ist Cor Kalom?
-	AI_Output			(self, other,"Tpl_1438_Templer_KALOM_Info_13_02"); //Er ist einer der m‰chtigsten M‰nner in der Bruderschaft. Er kennt viele Geheimnisse und kann die Gedanken anderer kontrollieren!
-	AI_Output			(self, other,"Tpl_1438_Templer_KALOM_Info_13_03"); //Zudem ist er der Alchemist. Er braut Tr‰nke, damit wir geistigen Kontakt zum Schl‰fer herstellen kˆnnen. Geh doch einfach mal ins Lager. Wir suchen immer gute Leute!
-	AI_Output			(other, self,"Tpl_1438_Templer_KALOM_Info_15_04"); //Ich werde mal dar¸ber nachdenken.
+	AI_Output			(self, other,"Tpl_1438_Templer_KALOM_Info_13_02"); //Er ist einer der m√§chtigsten M√§nner in der Bruderschaft. Er kennt viele Geheimnisse und kann die Gedanken anderer kontrollieren!
+	AI_Output			(self, other,"Tpl_1438_Templer_KALOM_Info_13_03"); //Zudem ist er der Alchemist. Er braut Tr√§nke, damit wir geistigen Kontakt zum Schl√§fer herstellen k√∂nnen. Geh doch einfach mal ins Lager. Wir suchen immer gute Leute!
+	AI_Output			(other, self,"Tpl_1438_Templer_KALOM_Info_15_04"); //Ich werde mal dar√ºber nachdenken.
 };  
-//---------------------WENN DIE EIERSUCHE LƒUFT-------------------------------  
+//---------------------WENN DIE EIERSUCHE L√ÑUFT-------------------------------  
 instance  Tpl_1438_Templer_EGGSEARCH (C_INFO)
 {
 	npc				= Tpl_1438_Templer;
@@ -188,13 +188,13 @@ FUNC void  Tpl_1438_Templer_TEACHZANGEN_Info()
 	if (hero.lp >= 1)
 	{
 		hero.lp = hero.lp - 1;
-		AI_Output		(self, other,"Tpl_1438_Templer_TEACHZANGEN_Info_13_01"); //Du musst erst einen tiefen Schnitt in das Fleisch machen. Sei vorsichtig, dass du nicht die Zangendr¸se erwischst. Triffst du sie, spritzt das Sekret raus.
+		AI_Output		(self, other,"Tpl_1438_Templer_TEACHZANGEN_Info_13_01"); //Du musst erst einen tiefen Schnitt in das Fleisch machen. Sei vorsichtig, dass du nicht die Zangendr√ºse erwischst. Triffst du sie, spritzt das Sekret raus.
 		AI_Output		(other, self,"Tpl_1438_Templer_TEACHZANGEN_Info_15_02"); //Das ist bestimmt ziemlich schmerzhaft. 
-		AI_Output		(self, other,"Tpl_1438_Templer_TEACHZANGEN_Info_13_03"); //Und wie! Hast du eigentlich noch Drei-Finger-Korgur, den Crawlerj‰ger, kennengelernt? Ach nein, das war vor deiner Zeit. Nun, also weiter...  
-		AI_Output		(self, other,"Tpl_1438_Templer_TEACHZANGEN_Info_13_04"); //Schneide groﬂfl‰chig um die Dr¸sen herum und entferne dann das Fleisch zusammen mit der Zange. Wenn du dich daran h‰ltst, wirst du keine Probleme mit dem Rausschneiden der Zangen haben.  
+		AI_Output		(self, other,"Tpl_1438_Templer_TEACHZANGEN_Info_13_03"); //Und wie! Hast du eigentlich noch Drei-Finger-Korgur, den Crawlerj√§ger, kennengelernt? Ach nein, das war vor deiner Zeit. Nun, also weiter...  
+		AI_Output		(self, other,"Tpl_1438_Templer_TEACHZANGEN_Info_13_04"); //Schneide gro√üfl√§chig um die Dr√ºsen herum und entferne dann das Fleisch zusammen mit der Zange. Wenn du dich daran h√§ltst, wirst du keine Probleme mit dem Rausschneiden der Zangen haben.  
 		Knows_GetMCMandibles = TRUE;
 		Log_CreateTopic (GE_AnimalTrophies,LOG_NOTE);
-		B_LogEntry		(GE_AnimalTrophies,"Wissen ¸ber Zangen rausschneiden - Minecrawler");
+		B_LogEntry		(GE_AnimalTrophies,"Wissen √ºber Zangen rausschneiden - Minecrawler");
 		Tpl_1438_Templer_TEACHZANGEN.permanent		= 0;
 		PrintScreen		("Lerne: Minecrawlerzangen rausschneiden", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
 	}

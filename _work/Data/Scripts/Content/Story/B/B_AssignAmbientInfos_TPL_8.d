@@ -37,7 +37,7 @@ INSTANCE Info_Tpl_8_EinerVonEuchWerden (C_INFO) // E1
 	condition	= Info_Tpl_8_EinerVonEuchWerden_Condition;
 	information	= Info_Tpl_8_EinerVonEuchWerden_Info;
 	permanent	= 1;
-	description = "Könnt ihr noch einen guten Mann brauchen?";
+	description = "KÃ¶nnt ihr noch einen guten Mann brauchen?";
 };                       
 
 FUNC INT Info_Tpl_8_EinerVonEuchWerden_Condition()
@@ -52,9 +52,9 @@ FUNC INT Info_Tpl_8_EinerVonEuchWerden_Condition()
 
 FUNC VOID Info_Tpl_8_EinerVonEuchWerden_Info()
 {
-	AI_Output(other,self,"Info_Tpl_8_EinerVonEuchWerden_15_00"); //Könnt ihr noch einen guten Mann brauchen?
-	AI_Output(self,other,"Info_Tpl_8_EinerVonEuchWerden_08_01"); //Gute Leute suchen wir immer. Aber du wirst hart an dir arbeiten müssen. Erst ein fortgeschrittener Novize kann zum Templer befördert werden.
-	AI_Output(self,other,"Info_Tpl_8_EinerVonEuchWerden_08_02"); //Es ist die höchste Ehre für einen Anhänger der Bruderschaft des Schläfers.
+	AI_Output(other,self,"Info_Tpl_8_EinerVonEuchWerden_15_00"); //KÃ¶nnt ihr noch einen guten Mann brauchen?
+	AI_Output(self,other,"Info_Tpl_8_EinerVonEuchWerden_08_01"); //Gute Leute suchen wir immer. Aber du wirst hart an dir arbeiten mÃ¼ssen. Erst ein fortgeschrittener Novize kann zum Templer befÃ¶rdert werden.
+	AI_Output(self,other,"Info_Tpl_8_EinerVonEuchWerden_08_02"); //Es ist die hÃ¶chste Ehre fÃ¼r einen AnhÃ¤nger der Bruderschaft des SchlÃ¤fers.
 };
 
 // *************************************************************************
@@ -99,7 +99,7 @@ INSTANCE Info_Tpl_8_DasLager(C_INFO)
 	condition	= Info_Tpl_8_DasLager_Condition;
 	information	= Info_Tpl_8_DasLager_Info;
 	permanent	= 1;
-	description = "Was kannst du mir über dieses Lager erzählen?";
+	description = "Was kannst du mir Ã¼ber dieses Lager erzÃ¤hlen?";
 };                       
 
 FUNC INT Info_Tpl_8_DasLager_Condition()
@@ -112,9 +112,9 @@ FUNC INT Info_Tpl_8_DasLager_Condition()
 
 FUNC VOID Info_Tpl_8_DasLager_Info()
 {
-	AI_Output(other,self,"Info_Tpl_8_DasLager_15_00"); //Was kannst du mir über dieses Lager erzählen?
-	AI_Output(self,other,"Info_Tpl_8_DasLager_08_01"); //Als Neuling darfst du dich fast überall aufhalten. Aber es ist Ungläubigen untersagt, den Tempel des Schläfers zu betreten.
-	AI_Output(self,other,"Info_Tpl_8_DasLager_08_02"); //Also halt dich nur da auf, wo es dir gestattet ist. Und störe nicht unsere Meister bei der Meditation.
+	AI_Output(other,self,"Info_Tpl_8_DasLager_15_00"); //Was kannst du mir Ã¼ber dieses Lager erzÃ¤hlen?
+	AI_Output(self,other,"Info_Tpl_8_DasLager_08_01"); //Als Neuling darfst du dich fast Ã¼berall aufhalten. Aber es ist UnglÃ¤ubigen untersagt, den Tempel des SchlÃ¤fers zu betreten.
+	AI_Output(self,other,"Info_Tpl_8_DasLager_08_02"); //Also halt dich nur da auf, wo es dir gestattet ist. Und stÃ¶re nicht unsere Meister bei der Meditation.
 };
 
 // *************************************************************************
@@ -141,7 +141,7 @@ FUNC INT Info_Tpl_8_DieLage_Condition()
 FUNC VOID Info_Tpl_8_DieLage_Info()
 {
 	AI_Output(other,self,"Info_Tpl_8_DieLage_15_00"); //Wie sieht's aus?
-	AI_Output(self,other,"Info_Tpl_8_DieLage_08_01"); //Ich warne dich. Sei nicht respektlos. Du redest mit einem Auserwählten Beschützer der Propheten.
+	AI_Output(self,other,"Info_Tpl_8_DieLage_08_01"); //Ich warne dich. Sei nicht respektlos. Du redest mit einem AuserwÃ¤hlten BeschÃ¼tzer der Propheten.
 };
 	
 // *************************************************************************

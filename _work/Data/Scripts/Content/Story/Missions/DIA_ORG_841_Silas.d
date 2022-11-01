@@ -33,7 +33,7 @@ INSTANCE DIA_Silas_Hehler(C_Info)
 	condition	= DIA_Silas_Hehler_Condition;
 	information	= DIA_Silas_Hehler_Info;
 	permanent	= 0;
-	description = "Wie l‰uft's denn so?";
+	description = "Wie l√§uft's denn so?";
 };                       
 
 FUNC INT DIA_Silas_Hehler_Condition()
@@ -43,8 +43,8 @@ FUNC INT DIA_Silas_Hehler_Condition()
 
 FUNC VOID DIA_Silas_Hehler_Info()
 {	
-	AI_Output (other, self,"DIA_Silas_Hehler_15_00"); //Wie l‰uft's denn so?
-	AI_Output (self, other,"DIA_Silas_Hehler_06_01"); //Gut! Wir verkaufen hier unseren selbstgebrannten Reisschnaps f¸r gutes Erz.
+	AI_Output (other, self,"DIA_Silas_Hehler_15_00"); //Wie l√§uft's denn so?
+	AI_Output (self, other,"DIA_Silas_Hehler_06_01"); //Gut! Wir verkaufen hier unseren selbstgebrannten Reisschnaps f√ºr gutes Erz.
 	AI_Output (self, other,"DIA_Silas_Hehler_06_02"); //Kommt ja auch genug rein.  Wo sollen die Jungs ihr Erz auch sonst hinbringen?
 };
 

@@ -58,7 +58,7 @@ FUNC VOID DIA_Grd_216_First_Info()
 {
 	AI_Output (self, other,"DIA_Grd_216_First_13_00"); //Hey, du! Dich hab' ich hier noch nie gesehen!
 	AI_Output (other, self,"DIA_Grd_216_First_15_01"); //Das ist kein Wunder. Ich bin auch erst seit kurzem da.
-	AI_Output (self, other,"DIA_Grd_216_First_13_02"); //Dann pass gut auf dich auf! Die Welt da draußen ist ziemlich gefährlich. Nur im Lager bist du sicher.
+	AI_Output (self, other,"DIA_Grd_216_First_13_02"); //Dann pass gut auf dich auf! Die Welt da drauÃŸen ist ziemlich gefÃ¤hrlich. Nur im Lager bist du sicher.
 };
 
 // **************************************************
@@ -108,7 +108,7 @@ func void DIA_Grd_216_DustyZoll_PissOff()
 	B_ExchangeRoutine	(Vlk_524_Dusty,"start");
 	var C_NPC dusty;	dusty = Hlp_GetNpc(Vlk_524_Dusty);
 	dusty.aivar[AIV_PARTYMEMBER] = FALSE;
-	dusty.flags = 0;	// Immortal löschen
+	dusty.flags = 0;	// Immortal lÃ¶schen
 };
 
 func void DIA_Grd_216_DustyZoll_ToPSI()
@@ -122,7 +122,7 @@ func void DIA_Grd_216_DustyZoll_ToPSI()
 	B_ExchangeRoutine	(Vlk_524_Dusty,"start");
 	var C_NPC dusty;	dusty = Hlp_GetNpc(Vlk_524_Dusty);
 	dusty.aivar[AIV_PARTYMEMBER] = FALSE;
-	dusty.flags = 0;	// Immortal löschen
+	dusty.flags = 0;	// Immortal lÃ¶schen
 };
 
 func void DIA_Grd_216_DustyZoll_LittleWalk()
@@ -134,7 +134,7 @@ func void DIA_Grd_216_DustyZoll_LittleWalk()
 
 		B_GiveInvItems	(hero, self, ItMiNugget, 100);
 		DIA_Grd_216_DustyZoll.permanent = 0;
-		B_LogEntry			(CH1_RecruitDusty,	"Die Wache am hinteren Südtor hat sich tatsächlich bestechen lassen. Es hat einfach jeder seinen Preis!");
+		B_LogEntry			(CH1_RecruitDusty,	"Die Wache am hinteren SÃ¼dtor hat sich tatsÃ¤chlich bestechen lassen. Es hat einfach jeder seinen Preis!");
 		B_GiveXP			(XP_BribedDustyGuard);
 		
 		AI_StopProcessInfos	(self);
@@ -149,7 +149,7 @@ func void DIA_Grd_216_DustyZoll_LittleWalk()
 		B_ExchangeRoutine	(Vlk_524_Dusty,"start");
 		var C_NPC dusty;	dusty = Hlp_GetNpc(Vlk_524_Dusty);
 		dusty.aivar[AIV_PARTYMEMBER] = FALSE;
-		dusty.flags = 0;	// Immortal löschen
+		dusty.flags = 0;	// Immortal lÃ¶schen
 	};
 };
 

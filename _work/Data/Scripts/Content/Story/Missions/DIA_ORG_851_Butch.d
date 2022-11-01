@@ -45,7 +45,7 @@ FUNC int  DIA_Butch_Hello_Condition()
 func void  DIA_Butch_Hello_Info()
 {
 	AI_Output (other, self,"DIA_Butch_Hello_15_00"); //Hi. Wer bist du?
-	AI_Output (self, other,"DIA_Butch_Hello_13_01"); //Das geht dich einen Dreck an! Deine Fresse gef‰llt mir nicht!
+	AI_Output (self, other,"DIA_Butch_Hello_13_01"); //Das geht dich einen Dreck an! Deine Fresse gef√§llt mir nicht!
 	AI_StopProcessInfos	( self );
 };
 

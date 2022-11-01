@@ -82,7 +82,7 @@ FUNC VOID Info_Org_6_WichtigePersonen_Info()
 	AI_Output(other,self,"Info_Org_6_WichtigePersonen_15_00"); //Wer ist hier der Boss?
 	AI_Output(self,other,"Info_Org_6_WichtigePersonen_06_01"); //Kommst wohl gerade aus dem Alten Lager, was?
 	AI_Output(self,other,"Info_Org_6_WichtigePersonen_06_02"); //Hier ist niemand der Boss. Der verdammte Lee versucht zwar immer, uns an der Leine zu halten, aber wir machen, was wir wollen.
-	AI_Output(self,other,"Info_Org_6_WichtigePersonen_06_03"); //Wenn es so was wie einen Anführer unter uns gibt, dann ist das Lares. Aber der ist schlau genug, niemandem in seine Sache reinzuquatschen!
+	AI_Output(self,other,"Info_Org_6_WichtigePersonen_06_03"); //Wenn es so was wie einen AnfÃ¼hrer unter uns gibt, dann ist das Lares. Aber der ist schlau genug, niemandem in seine Sache reinzuquatschen!
 	var C_NPC Lee;			Lee		= Hlp_GetNpc(Sld_700_Lee);
 	Lee.aivar[AIV_FINDABLE] = TRUE;
 	var C_NPC Lares;		Lares	= Hlp_GetNpc(Org_801_Lares);
@@ -99,7 +99,7 @@ INSTANCE Info_Org_6_DasLager(C_INFO)
 	condition	= Info_Org_6_DasLager_Condition;
 	information	= Info_Org_6_DasLager_Info;
 	permanent	= 1;
-	description = "Was muß ich über diesen Ort wissen?";
+	description = "Was muÃŸ ich Ã¼ber diesen Ort wissen?";
 };                       
 
 FUNC INT Info_Org_6_DasLager_Condition()
@@ -109,9 +109,9 @@ FUNC INT Info_Org_6_DasLager_Condition()
 
 FUNC VOID Info_Org_6_DasLager_Info()
 {
-	AI_Output(other,self,"Info_Org_6_DasLager_15_00"); //Was muss ich über diesen Ort wissen?
-	AI_Output(self,other,"Info_Org_6_DasLager_06_01"); //Im Zentrum der Höhle ist ein riesiges Loch voll Erz. Wenn du darüber nachdenkst, wie du da rankommen kannst - vergiss es!
-	AI_Output(self,other,"Info_Org_6_DasLager_06_02"); //Ich hab's selber mal probiert, aber die Söldner passen Tag und Nacht auf.
+	AI_Output(other,self,"Info_Org_6_DasLager_15_00"); //Was muss ich Ã¼ber diesen Ort wissen?
+	AI_Output(self,other,"Info_Org_6_DasLager_06_01"); //Im Zentrum der HÃ¶hle ist ein riesiges Loch voll Erz. Wenn du darÃ¼ber nachdenkst, wie du da rankommen kannst - vergiss es!
+	AI_Output(self,other,"Info_Org_6_DasLager_06_02"); //Ich hab's selber mal probiert, aber die SÃ¶ldner passen Tag und Nacht auf.
 };
 
 // *************************************************************************
@@ -149,7 +149,7 @@ INSTANCE Info_Org_6_Krautprobe (C_INFO) // E1
 	condition	= Info_Org_6_Krautprobe_Condition;
 	information	= Info_Org_6_Krautprobe_Info;
 	permanent	= 1;
-	description = "Ich hab ein bißchen Sumpfkraut dabei. Willst du was?";
+	description = "Ich hab ein biÃŸchen Sumpfkraut dabei. Willst du was?";
 };                       
 
 FUNC INT Info_Org_6_Krautprobe_Condition()
@@ -163,7 +163,7 @@ FUNC INT Info_Org_6_Krautprobe_Condition()
 
 FUNC VOID Info_Org_6_Krautprobe_Info()
 {
-	AI_Output(other,self,"Info_Org_6_Krautprobe_15_00"); //Ich hab ein bißchen Sumpfkraut dabei. Willst du was?
+	AI_Output(other,self,"Info_Org_6_Krautprobe_15_00"); //Ich hab ein biÃŸchen Sumpfkraut dabei. Willst du was?
 	
 	if ( (Npc_HasItems(other,ItMiJoint_1)>0) || (Npc_HasItems(other,ItMiJoint_2)>0) || (Npc_HasItems(other,ItMiJoint_3)>0) )
 	{
