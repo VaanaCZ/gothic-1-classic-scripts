@@ -7,11 +7,11 @@
 //#####################################################################
 
 //---------------------------------------------------------------------
-//	1. Pergamenthälfte der Ork-Schriftrolle
+//	1. PergamenthÃ¤lfte der Ork-Schriftrolle
 //---------------------------------------------------------------------
 INSTANCE OrkParchmentOne(C_Item)
 {	
-	name 				=	"Metà di una pergamena";
+	name 				=	"MetÃ  di una pergamena";
 
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION;	
@@ -27,17 +27,17 @@ INSTANCE OrkParchmentOne(C_Item)
 	scemeName			=	"MAP";	
 	description			= name;
 	TEXT[0]				= "Parte di un'antica pergamena.";
-	TEXT[1]				= "La parte inferiore è stata strappata.";
+	TEXT[1]				= "La parte inferiore Ã¨ stata strappata.";
 	TEXT[2]				= "La scritta ricorda le rune incise";
 	TEXT[3] 			= "sulle pareti della caverna.";
 };
 
 //---------------------------------------------------------------------
-//	2. Pergamenthälfte der Ork-Schriftrolle
+//	2. PergamenthÃ¤lfte der Ork-Schriftrolle
 //---------------------------------------------------------------------
 INSTANCE OrkParchmentTwo(C_Item)
 {	
-	name 				=	"Metà di una pergamena";
+	name 				=	"MetÃ  di una pergamena";
 
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION;	
@@ -53,13 +53,13 @@ INSTANCE OrkParchmentTwo(C_Item)
 	scemeName			=	"MAP";	
 	description			= name;
 	TEXT[0]				= "Parte di un'antica pergamena.";
-	TEXT[1]				= "La parte superiore è stata strappata.";
+	TEXT[1]				= "La parte superiore Ã¨ stata strappata.";
 	TEXT[2]				= "La scritta ricorda le rune incise";
 	TEXT[3] 			= "sulle pareti della caverna.";
 };
 
 //---------------------------------------------------------------------
-//	Schlüssel zu Kaloms Truhe
+//	SchlÃ¼ssel zu Kaloms Truhe
 //---------------------------------------------------------------------
 INSTANCE ITKE_PSI_KALOM_01(C_Item)
 {	
@@ -102,7 +102,7 @@ INSTANCE ItWrFocimap(C_Item)
 	TEXT[0]					= "Le punte del pentacolo";
 	TEXT[1]					= "rivelano la posizione di tutte e cinque";
 	TEXT[2]					= "le pietre focalizzatrici, usate per";
-	TEXT[3]					= "creare la Barriera magica. La mappa è vecchia";
+	TEXT[3]					= "creare la Barriera magica. La mappa Ã¨ vecchia";
 	TEXT[4]					= "e, nel frattempo, le pietre potrebbero essere";
 	TEXT[5]					= "state spostate da qualche altra parte.";
 };
@@ -157,11 +157,11 @@ FUNC VOID UseTroll()
 				Doc_SetFont 	(nDocID, -1, "font_10_book.tga");
 				Doc_PrintLine	(nDocID,  0, "");
 				Doc_PrintLine	(nDocID,  0, "");
-				Doc_PrintLines	(nDocID,  0,"Oggi ci riuscirò, ne sono certo. Gli dèi mi aiuteranno. Ho provato a uccidere un troll in ogni maniera: L'acciaio più forte non ha effetto, le frecce rimbalzano sulla loro pelle, che sembra fatta di roccia.");
+				Doc_PrintLines	(nDocID,  0,"Oggi ci riuscirÃ², ne sono certo. Gli dÃ¨i mi aiuteranno. Ho provato a uccidere un troll in ogni maniera: L'acciaio piÃ¹ forte non ha effetto, le frecce rimbalzano sulla loro pelle, che sembra fatta di roccia.");
 				Doc_PrintLine	(nDocID,  0, "");
-				Doc_PrintLines	(nDocID,  0,"Stavolta userò l'incantesimo che mi ha venduto il mercante di Khorinis. Mi è costato 50 pezzi d'argento, ma i profitti che otterrò dal trofeo mi renderanno immensamente ricco.");
+				Doc_PrintLines	(nDocID,  0,"Stavolta userÃ² l'incantesimo che mi ha venduto il mercante di Khorinis. Mi Ã¨ costato 50 pezzi d'argento, ma i profitti che otterrÃ² dal trofeo mi renderanno immensamente ricco.");
 				Doc_PrintLine	(nDocID,  0, "");
-				Doc_PrintLines	(nDocID,  0,"Oggi ucciderò un troll.");
+				Doc_PrintLines	(nDocID,  0,"Oggi ucciderÃ² un troll.");
 				Doc_Show		(nDocID);
 };
 
@@ -189,7 +189,7 @@ INSTANCE Focus_2(C_Item)
 };
 
 //---------------------------------------------------------------------
-//	Truhenschlüssel in der Bergfestung
+//	TruhenschlÃ¼ssel in der Bergfestung
 //---------------------------------------------------------------------
 INSTANCE ItKe_BERG_01(C_Item)
 {	
@@ -300,7 +300,7 @@ INSTANCE Focus_3(C_Item)
 };
 
 //---------------------------------------------------------------------
-//	Schlüssel zum Bonusraum in der Klosterruine
+//	SchlÃ¼ssel zum Bonusraum in der Klosterruine
 //---------------------------------------------------------------------
 INSTANCE ItKe_Focus4(C_Item)
 {
@@ -381,7 +381,7 @@ FUNC VOID UnEquip_OrcTalisman()
 
 
 //---------------------------------------------------------------------
-//	Schlüssel unter dem Steinkreis
+//	SchlÃ¼ssel unter dem Steinkreis
 //---------------------------------------------------------------------
 INSTANCE ItKe_Focus5(C_Item)
 {

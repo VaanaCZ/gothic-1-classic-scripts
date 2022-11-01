@@ -119,12 +119,12 @@ FUNC int DIA_Scorpio_REFUSETRAIN_Condition()
 FUNC VOID DIA_Scorpio_REFUSETRAIN_Info()
 {
 	AI_Output (other, self,"DIA_Scorpio_REFUSETRAIN_15_00"); //Puoi insegnarmi a combattere?
-	AI_Output (self, other,"DIA_Scorpio_REFUSETRAIN_13_01"); //Io addestro solo le guardie. Finché Thorus non ti accetterà fra di noi, dovrai chiedere a qualcun altro.
+	AI_Output (self, other,"DIA_Scorpio_REFUSETRAIN_13_01"); //Io addestro solo le guardie. FinchÃ© Thorus non ti accetterÃ  fra di noi, dovrai chiedere a qualcun altro.
 	
 };
 
 //*******************************
-//*********°°°°°°°°°°°***********
+//*********Â°Â°Â°Â°Â°Â°Â°Â°Â°Â°Â°***********
 //********* KAPITEL 3 ***********
 //*********...........***********
 //*******************************
@@ -152,7 +152,7 @@ FUNC int  GRD_205_Scorpio_WELCOME_Condition()
 func void  GRD_205_Scorpio_WELCOME_Info()
 {
 	
-	AI_Output (self, other,"GRD_205_Scorpio_WELCOME_Info_13_01"); //Unirti a noi è stata la scelta più saggia che tu abbia mai fatto!
+	AI_Output (self, other,"GRD_205_Scorpio_WELCOME_Info_13_01"); //Unirti a noi Ã¨ stata la scelta piÃ¹ saggia che tu abbia mai fatto!
 	AI_StopProcessInfos	( self );
 };
 
@@ -183,19 +183,19 @@ FUNC int  GRD_205_Scorpio_CROSSBOW_Condition()
 FUNC void  GRD_205_Scorpio_CROSSBOW_Info()
 {
 	AI_Output (other, self,"GRD_205_Scorpio_CROSSBOW_Info_15_01"); //Mi addestrerai?
-	AI_Output (self, other,"GRD_205_Scorpio_CROSSBOW_Info_13_02"); //Se hai abbastanza metallo, ti insegnerò a usare una balestra. Ti costerà 200 pezzi.
+	AI_Output (self, other,"GRD_205_Scorpio_CROSSBOW_Info_13_02"); //Se hai abbastanza metallo, ti insegnerÃ² a usare una balestra. Ti costerÃ  200 pezzi.
 	if (log_scorpiocrossbow == FALSE)
 	&& (Kapitel <= 4)
 	{
 		Log_CreateTopic   	(GE_TeacherOC,LOG_NOTE);
-		B_LogEntry			(GE_TeacherOC,"Scorpio può insegnarmi a usare una BALESTRA.");
+		B_LogEntry			(GE_TeacherOC,"Scorpio puÃ² insegnarmi a usare una BALESTRA.");
 		log_scorpiocrossbow = TRUE;
 	}
 	else if (log_scorpiocrossbow == FALSE)
 	&& (Kapitel > 4)
 	{
 		Log_CreateTopic   	(GE_TeacherOW,LOG_NOTE);
-		B_LogEntry			(GE_TeacherOW,"Scorpio può insegnarmi a usare una BALESTRA.");
+		B_LogEntry			(GE_TeacherOW,"Scorpio puÃ² insegnarmi a usare una BALESTRA.");
 		log_scorpiocrossbow = TRUE;
 	};
 	Info_ClearChoices (GRD_205_Scorpio_CROSSBOW);
@@ -216,10 +216,10 @@ func void GRD_205_Scorpio_CROSSBOW_OK()
 		if (B_GiveSkill(other,NPC_TALENT_CROSSBOW , 1, LPCOST_TALENT_CROSSBOW_1))
 		{
 			AI_Output (self, other,"GRD_205_Scorpio_CROSSBOW_OK_13_02"); //Va bene, cominciamo.
-			AI_Output (self, other,"GRD_205_Scorpio_CROSSBOW_OK_13_03"); //Afferra il manico e tienilo premuto contro la spalla. In questo modo, la tua mira non sarà traballante.
-			AI_Output (self, other,"GRD_205_Scorpio_CROSSBOW_OK_13_04"); //I primi giorni ti sembrerà che la spalla ti debba cadere da un momento all'altro.
+			AI_Output (self, other,"GRD_205_Scorpio_CROSSBOW_OK_13_03"); //Afferra il manico e tienilo premuto contro la spalla. In questo modo, la tua mira non sarÃ  traballante.
+			AI_Output (self, other,"GRD_205_Scorpio_CROSSBOW_OK_13_04"); //I primi giorni ti sembrerÃ  che la spalla ti debba cadere da un momento all'altro.
 			AI_Output (self, other,"GRD_205_Scorpio_CROSSBOW_OK_13_05"); //Ma dopo una sola settimana, avrai una spalla di ferro!
-			AI_Output (self, other,"GRD_205_Scorpio_CROSSBOW_OK_13_06"); //Punta il bersaglio e tira indietro il dardo. Questo richiede più forza rispetto a tirare una freccia con l'arco, ma causa più danni!
+			AI_Output (self, other,"GRD_205_Scorpio_CROSSBOW_OK_13_06"); //Punta il bersaglio e tira indietro il dardo. Questo richiede piÃ¹ forza rispetto a tirare una freccia con l'arco, ma causa piÃ¹ danni!
 			B_GiveInvItems (hero,other,ItMiNugget,200);
 			GRD_205_Scorpio_CROSSBOW.permanent = 0;
 		};
@@ -241,7 +241,7 @@ instance  GRD_205_Scorpio_CROSSBOW2 (C_INFO)
 	information		= GRD_205_Scorpio_CROSSBOW2_Info;
 	important		= 0;
 	permanent		= 1;
-	description		= "Mostrami di più sull'uso della balestra."; 
+	description		= "Mostrami di piÃ¹ sull'uso della balestra."; 
 };
 
 FUNC int  GRD_205_Scorpio_CROSSBOW2_Condition()
@@ -254,8 +254,8 @@ FUNC int  GRD_205_Scorpio_CROSSBOW2_Condition()
 };
 FUNC void  GRD_205_Scorpio_CROSSBOW2_Info()
 {
-	AI_Output (other, self,"GRD_205_Scorpio_CROSSBOW2_Info_15_01"); //Mostrami di più sull'uso della balestra.
-	AI_Output (self, other,"GRD_205_Scorpio_CROSSBOW2_Info_13_02"); //Ti costerà 300 pezzi di metallo.
+	AI_Output (other, self,"GRD_205_Scorpio_CROSSBOW2_Info_15_01"); //Mostrami di piÃ¹ sull'uso della balestra.
+	AI_Output (self, other,"GRD_205_Scorpio_CROSSBOW2_Info_13_02"); //Ti costerÃ  300 pezzi di metallo.
   
 	Info_ClearChoices (GRD_205_Scorpio_CROSSBOW2);
 	Info_Addchoice 	(GRD_205_Scorpio_CROSSBOW2,B_BuildLearnString(NAME_LearnCrossbow_2,	LPCOST_TALENT_CROSSBOW_2,300),GRD_205_Scorpio_CROSSBOW2_OK);
@@ -275,11 +275,11 @@ func void GRD_205_Scorpio_CROSSBOW2_OK()
 	{
 		if (B_GiveSkill(other,NPC_TALENT_CROSSBOW , 2, LPCOST_TALENT_CROSSBOW_2))
 		{
-		AI_Output (self, other,"GRD_205_Scorpio_CROSSBOW2_OK_13_02"); //Bene. I tuoi tiri saranno più precisi, se piegherai le ginocchia mentre scocchi il dardo.
-		AI_Output (self, other,"GRD_205_Scorpio_CROSSBOW2_OK_13_03"); //Dovrai imparare a intuire la velocità di movimento del bersaglio.
+		AI_Output (self, other,"GRD_205_Scorpio_CROSSBOW2_OK_13_02"); //Bene. I tuoi tiri saranno piÃ¹ precisi, se piegherai le ginocchia mentre scocchi il dardo.
+		AI_Output (self, other,"GRD_205_Scorpio_CROSSBOW2_OK_13_03"); //Dovrai imparare a intuire la velocitÃ  di movimento del bersaglio.
 		AI_Output (self, other,"GRD_205_Scorpio_CROSSBOW2_OK_13_04"); //Tira il colpo sulla traiettoria del bersaglio, per colpirlo e rallentarlo.
-		AI_Output (self, other,"GRD_205_Scorpio_CROSSBOW2_OK_13_05"); //Se hai più d'un bersaglio, non perdere tempo. Abbattili uno dopo l'altro.
-		AI_Output (self, other,"GRD_205_Scorpio_CROSSBOW2_OK_13_06"); //Ecco fatto, ti ho insegnato tutto ciò che so.
+		AI_Output (self, other,"GRD_205_Scorpio_CROSSBOW2_OK_13_05"); //Se hai piÃ¹ d'un bersaglio, non perdere tempo. Abbattili uno dopo l'altro.
+		AI_Output (self, other,"GRD_205_Scorpio_CROSSBOW2_OK_13_06"); //Ecco fatto, ti ho insegnato tutto ciÃ² che so.
 		B_GiveInvItems (hero,other,ItMiNugget,300);
 		GRD_205_Scorpio_CROSSBOW2.permanent = 0;
 		};
@@ -362,7 +362,7 @@ instance  GRD_205_Scorpio_TRADE (C_INFO)
 	information		= GRD_205_Scorpio_TRADE_Info;
 	important		= 0;
 	permanent		= 1;
-	description		= "Mostrami ciò che hai."; 
+	description		= "Mostrami ciÃ² che hai."; 
 	trade			= 1;
 };
 
@@ -376,6 +376,6 @@ FUNC int  GRD_205_Scorpio_TRADE_Condition()
 };
 FUNC void  GRD_205_Scorpio_TRADE_Info()
 {
-	AI_Output (other, self,"GRD_205_Scorpio_TRADE_Info_15_01"); //Mostrami ciò che hai.
+	AI_Output (other, self,"GRD_205_Scorpio_TRADE_Info_15_01"); //Mostrami ciÃ² che hai.
 	
 };  

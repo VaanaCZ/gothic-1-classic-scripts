@@ -9,7 +9,7 @@
 
 func void B_Story_SentToNC()
 {
-	//-------- Cor-Angar zurück zum Übungsplatz schicken --------
+	//-------- Cor-Angar zurÃ¼ck zum Ãœbungsplatz schicken --------
 	var C_NPC	angar;
 	angar = Hlp_GetNpc	(Gur_1202_CorAngar);
 	Npc_ExchangeRoutine	(angar, "start");
@@ -26,11 +26,11 @@ func void B_Story_SentToNC()
 	Npc_ExchangeRoutine	(gorn, "NCWAIT");
 	AI_ContinueRoutine	(gorn);
 
-	//-------- Tagebucheinträge --------
+	//-------- TagebucheintrÃ¤ge --------
 	Log_CreateTopic		(CH3_EscapePlanNC,	LOG_MISSION);
 	Log_SetTopicStatus	(CH3_EscapePlanNC,	LOG_RUNNING);
-	B_LogEntry			(CH3_EscapePlanNC,"Y'Berion, la guida spirituale della Fratellanza, è morto! Che la sua anima possa riposare in pace. Nelle sue ultime parole, ha riposto tutte le speranze di fuga nei maghi del Circolo dell'Acqua.");
-	B_LogEntry			(CH3_EscapePlanNC,"Ho cambiato idea. Tornerò a Campo Nuovo e aiuterò i Maghi dell'Acqua nel loro piano di fuga. Cor Angar mi ha dato le chiave di uno scrigno, che si trova nel laboratorio alchemico di Cor Kalom. Lì dovrebbero trovarsi la pietra focalizzatrice e l'almanacco, che avevo recuperato nella missione precedente. Cor Angar ritiene che i maghi di Campo Nuovo abbiano bisogno di questi due manufatti per portare a termine il piano.");
+	B_LogEntry			(CH3_EscapePlanNC,"Y'Berion, la guida spirituale della Fratellanza, Ã¨ morto! Che la sua anima possa riposare in pace. Nelle sue ultime parole, ha riposto tutte le speranze di fuga nei maghi del Circolo dell'Acqua.");
+	B_LogEntry			(CH3_EscapePlanNC,"Ho cambiato idea. TornerÃ² a Campo Nuovo e aiuterÃ² i Maghi dell'Acqua nel loro piano di fuga. Cor Angar mi ha dato le chiave di uno scrigno, che si trova nel laboratorio alchemico di Cor Kalom. LÃ¬ dovrebbero trovarsi la pietra focalizzatrice e l'almanacco, che avevo recuperato nella missione precedente. Cor Angar ritiene che i maghi di Campo Nuovo abbiano bisogno di questi due manufatti per portare a termine il piano.");
 
 	//-------- Missionitem --------
 	CreateInvItem		(self,			ItArRuneTeleport5);

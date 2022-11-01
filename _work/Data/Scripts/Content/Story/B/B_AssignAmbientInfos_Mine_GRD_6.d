@@ -79,7 +79,7 @@ FUNC INT Info_Mine_Grd_6_WichtigePersonen_Condition()
 FUNC VOID Info_Mine_Grd_6_WichtigePersonen_Info()
 {
 	AI_Output(other,self,"Info_Mine_Grd_6_WichtigePersonen_15_00"); //Chi comanda qui?
-	AI_Output(self,other,"Info_Mine_Grd_6_WichtigePersonen_06_01"); //Il nostro capo è Asghan, ma è Ian che si occupa del metallo e dei minatori.
+	AI_Output(self,other,"Info_Mine_Grd_6_WichtigePersonen_06_01"); //Il nostro capo Ã¨ Asghan, ma Ã¨ Ian che si occupa del metallo e dei minatori.
 	
 };
 
@@ -107,7 +107,7 @@ FUNC INT Info_Mine_Grd_6_Minecrawler_Condition()
 FUNC VOID Info_Mine_Grd_6_Minecrawler_Info()
 {
 	AI_Output(other,self,"Info_Mine_Grd_6_Minecrawler_15_00"); //Parlami dei pidocchi di miniera.
-	AI_Output(self,other,"Info_Mine_Grd_6_Minecrawler_06_01"); //Quelle bestiacce causano solo guai. Non so se ci danno più grattacapi loro o i minatori!
+	AI_Output(self,other,"Info_Mine_Grd_6_Minecrawler_06_01"); //Quelle bestiacce causano solo guai. Non so se ci danno piÃ¹ grattacapi loro o i minatori!
 	
 };	
 

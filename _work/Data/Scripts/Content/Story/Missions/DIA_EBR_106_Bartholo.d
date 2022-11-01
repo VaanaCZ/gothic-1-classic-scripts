@@ -44,9 +44,9 @@ FUNC INT Info_Bartholo_HAllo_Condition()
 FUNC VOID Info_Bartholo_HAllo_Info()
 {
 	AI_Output (other, self,"Info_Bartholo_HAllo_15_00"); //Chi sei?
-	AI_Output (self, other,"Info_Bartholo_HAllo_12_01"); //Il mio nome è Bartholo e faccio in modo che i baroni delle miniere ricevano i loro rifornimenti.
+	AI_Output (self, other,"Info_Bartholo_HAllo_12_01"); //Il mio nome Ã¨ Bartholo e faccio in modo che i baroni delle miniere ricevano i loro rifornimenti.
 	AI_Output (self, other,"Info_Bartholo_HAllo_12_02"); //Mi occupo di tutto: dalle scorte d'erba al cibo e forniture per le donne.
-	AI_Output (self, other,"Info_Bartholo_HAllo_12_03"); //Inoltre, è compito mio assicurarmi che questi cuochi idioti facciano bene il proprio lavoro.
+	AI_Output (self, other,"Info_Bartholo_HAllo_12_03"); //Inoltre, Ã¨ compito mio assicurarmi che questi cuochi idioti facciano bene il proprio lavoro.
 	AI_Output (self, other,"Info_Bartholo_HAllo_12_04"); //Dovrebbero ringraziarmi. Gomez non ammette un solo errore. Gli ultimi due cuochi li ha dati in pasto agli imboscatori del fiume.
 };
 
@@ -67,7 +67,7 @@ INSTANCE Info_Bartholo_PERM (C_INFO)
 
 FUNC INT Info_Bartholo_PERM_Condition()
 {	
-//SN: Problematisch, da Bartholo auch einen wichtigen Schlüssel hat!
+//SN: Problematisch, da Bartholo auch einen wichtigen SchlÃ¼ssel hat!
 //	if (Npc_KnowsInfo(hero, Info_Bartholo_Hallo))
 //	{
 //		return 1;
@@ -127,7 +127,7 @@ FUNC VOID Info_Bartholo_Krautbote_Info()
 	}
 	else
 	{
-		AI_Output			(self, other,"Info_Bartholo_Krautbote_NoKraut_12_00"); //Non hai abbastanza erba, per essere un fattorino! Spero per te che tu non abbia rivenduto parte della merce! Torna quando avrai la quantità giusta.
+		AI_Output			(self, other,"Info_Bartholo_Krautbote_NoKraut_12_00"); //Non hai abbastanza erba, per essere un fattorino! Spero per te che tu non abbia rivenduto parte della merce! Torna quando avrai la quantitÃ  giusta.
 	};
 };
 
@@ -156,7 +156,7 @@ FUNC void  DIA_EBR_106_Bartholo_Wait4SC_Info()
 	AI_SetWalkmode		(self, NPC_WALK);
 	AI_GotoNpc			(self, other);
 	AI_Output			(self, other,"Info_Bartholo_12_01");	//Sapevo che qualcuno avrebbe tentato di raggiungerci attraverso il pentacolo!
-	AI_Output			(self, other,"Info_Bartholo_12_02");	//A differenza di quel fabbro traditore di Stone, non abbiamo più bisogno di te!
+	AI_Output			(self, other,"Info_Bartholo_12_02");	//A differenza di quel fabbro traditore di Stone, non abbiamo piÃ¹ bisogno di te!
 	AI_Output			(other, self,"Info_Bartholo_15_03");	//Dove si trova Stone?
 	AI_Output			(self, other,"Info_Bartholo_12_04");	//Dietro le sbarre! Tu, invece, fra un minuto ti ritroverai sottoterra!
 	AI_Output			(self, other,"Info_Bartholo_12_05");	//Fatelo a fette, ragazzi!

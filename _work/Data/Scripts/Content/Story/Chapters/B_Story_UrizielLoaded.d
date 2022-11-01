@@ -1,9 +1,9 @@
 func void B_Story_UrizielLoaded()
 {
-	//-------- Missionsgegenst‰nde --------
+	//-------- Missionsgegenst√§nde --------
 	
-	//-------- Tagebucheintr‰ge --------
-	B_LogEntry			(CH5_Uriziel,"Tutto Ë a posto. Uriziel ha di nuovo i suoi poteri. Saturas e i suoi Maghi dell'Acqua sono in collera con me e farÚ meglio a non incontrarli, per ora. Non importa: il Dormiente mi attende!");
+	//-------- Tagebucheintr√§ge --------
+	B_LogEntry			(CH5_Uriziel,"Tutto √® a posto. Uriziel ha di nuovo i suoi poteri. Saturas e i suoi Maghi dell'Acqua sono in collera con me e far√≤ meglio a non incontrarli, per ora. Non importa: il Dormiente mi attende!");
 	
 	if (Npc_GetTrueGuild(hero) != GIL_KDW)
 	{
@@ -11,7 +11,7 @@ func void B_Story_UrizielLoaded()
 	}
 	else
 	{
-		B_LogEntry		(CH5_Uriziel,"Durante il nostro ultimo incontro, Xardas mi ha accennato a un modo per utilizzare i poteri di URIZIEL, anche se sono un mago. Prima, perÚ, vuole dare un'occhiata alla spada. Sar‡ meglio che mi rechi da lui.");
+		B_LogEntry		(CH5_Uriziel,"Durante il nostro ultimo incontro, Xardas mi ha accennato a un modo per utilizzare i poteri di URIZIEL, anche se sono un mago. Prima, per√≤, vuole dare un'occhiata alla spada. Sar√† meglio che mi rechi da lui.");
 	};
 	
 	//-------- Erfahrung --------

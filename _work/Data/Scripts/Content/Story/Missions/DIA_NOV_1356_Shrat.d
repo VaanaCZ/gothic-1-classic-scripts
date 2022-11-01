@@ -46,8 +46,8 @@ FUNC VOID  DIA_Shrat_WhyHere_Info()
 {
 	AI_Output (other, self,"DIA_Shrat_WhyHere_15_00"); //Cosa stai facendo?
 	AI_Output (self, other,"DIA_Shrat_WhyHere_02_01"); //TI ho forse accordato il permesso di rivolgermi la parola?
-	AI_Output (self, other,"DIA_Shrat_WhyHere_02_02"); //Scherzavo! Quei maledetti pazzi mi stanno facendo ammattire, ecco perché sono qui!
-	AI_Output (self, other,"DIA_Shrat_WhyHere_02_03"); //Non rivolgermi la parola!', 'Prega il Dormiente, affinché ti perdoni!', 'La tua missione è di eccezionale importanza!'
+	AI_Output (self, other,"DIA_Shrat_WhyHere_02_02"); //Scherzavo! Quei maledetti pazzi mi stanno facendo ammattire, ecco perchÃ© sono qui!
+	AI_Output (self, other,"DIA_Shrat_WhyHere_02_03"); //Non rivolgermi la parola!', 'Prega il Dormiente, affinchÃ© ti perdoni!', 'La tua missione Ã¨ di eccezionale importanza!'
 	AI_Output (self, other,"DIA_Shrat_WhyHere_02_04"); //Basta e avanza per fare impazzire chiunque! Non mi meraviglia che qui siano tutti matti.
 	AI_Output (self, other,"DIA_Shrat_WhyHere_02_05"); //Sono Shrat, novizio di primo livello... per sempre!
 };
@@ -123,7 +123,7 @@ instance DIA_Shrat_LeaveMe (C_INFO)
 	condition	= DIA_Shrat_LeaveMe_Condition;
 	information	= DIA_Shrat_LeaveMe_Info;
 	permanent	= 1;
-	description	= "Le nostre strade si separano qui: continuerò da solo.";
+	description	= "Le nostre strade si separano qui: continuerÃ² da solo.";
 };                       
 
 FUNC int DIA_Shrat_LeaveMe_Condition()
@@ -136,8 +136,8 @@ FUNC int DIA_Shrat_LeaveMe_Condition()
 
 FUNC void DIA_Shrat_LeaveMe_Info()
 {
-	AI_Output (other, self,"DIA_Shrat_LeaveMe_15_00"); //Le nostre strade si separano qui: continuerò da solo.
-	AI_Output (self, other,"DIA_Shrat_LeaveMe_02_01"); //Va bene. Tornerò al mio nascondiglio nella palude. Abbi cura di te!
+	AI_Output (other, self,"DIA_Shrat_LeaveMe_15_00"); //Le nostre strade si separano qui: continuerÃ² da solo.
+	AI_Output (self, other,"DIA_Shrat_LeaveMe_02_01"); //Va bene. TornerÃ² al mio nascondiglio nella palude. Abbi cura di te!
 
 	Npc_ExchangeRoutine (self, "START");
 	self.aivar[AIV_PARTYMEMBER] = FALSE;

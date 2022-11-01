@@ -59,45 +59,45 @@ FUNC VOID Info_FindNPC_OC_Diego()
 		{
 			if (self.voice == 1)
 			{
-				AI_Output(self,other,"Info_FindNPC_OC_Diego_01_01"); //Durante il giorno, di solito, è all'entrata del castello con Thorus.
+				AI_Output(self,other,"Info_FindNPC_OC_Diego_01_01"); //Durante il giorno, di solito, Ã¨ all'entrata del castello con Thorus.
 			}
 			else if (self.voice == 2)
 			{
-				AI_Output(self,other,"Info_FindNPC_OC_Diego_02_01"); //Durante il giorno, di solito, è all'entrata del castello con Thorus.
+				AI_Output(self,other,"Info_FindNPC_OC_Diego_02_01"); //Durante il giorno, di solito, Ã¨ all'entrata del castello con Thorus.
 			}
 			else if (self.voice == 3)
 			{
-				AI_Output(self,other,"Info_FindNPC_OC_Diego_03_01"); //Durante il giorno, di solito, è all'entrata del castello con Thorus.
+				AI_Output(self,other,"Info_FindNPC_OC_Diego_03_01"); //Durante il giorno, di solito, Ã¨ all'entrata del castello con Thorus.
 			}
 			else if (self.voice == 4)
 			{
-				AI_Output(self,other,"Info_FindNPC_OC_Diego_04_01"); //Durante il giorno, di solito, è all'entrata del castello con Thorus.
+				AI_Output(self,other,"Info_FindNPC_OC_Diego_04_01"); //Durante il giorno, di solito, Ã¨ all'entrata del castello con Thorus.
 			};
 		}
 		else if (self.guild == GIL_GRD) 
 		{
 			if (self.voice == 6)
 			{
-				AI_Output(self,other,"Info_FindNPC_OC_Diego_06_01"); //Durante il giorno, di solito, è all'entrata del castello con Thorus.
+				AI_Output(self,other,"Info_FindNPC_OC_Diego_06_01"); //Durante il giorno, di solito, Ã¨ all'entrata del castello con Thorus.
 			}
 			else if (self.voice == 7)
 			{
-				AI_Output(self,other,"Info_FindNPC_OC_Diego_07_01"); //Durante il giorno, di solito, è all'entrata del castello con Thorus.
+				AI_Output(self,other,"Info_FindNPC_OC_Diego_07_01"); //Durante il giorno, di solito, Ã¨ all'entrata del castello con Thorus.
 			}
 			else if (self.voice == 13)
 			{
-				AI_Output(self,other,"Info_FindNPC_OC_Diego_13_01"); //Durante il giorno, di solito, è all'entrata del castello con Thorus.
+				AI_Output(self,other,"Info_FindNPC_OC_Diego_13_01"); //Durante il giorno, di solito, Ã¨ all'entrata del castello con Thorus.
 			};
 		}
 		else if (self.guild == GIL_STT) 
 		{
 			if (self.voice == 10)
 			{
-				AI_Output(self,other,"Info_FindNPC_OC_Diego_10_01"); //Durante il giorno, di solito, è all'entrata del castello con Thorus.
+				AI_Output(self,other,"Info_FindNPC_OC_Diego_10_01"); //Durante il giorno, di solito, Ã¨ all'entrata del castello con Thorus.
 			}
 			else if (self.voice == 12)
 			{
-				AI_Output(self,other,"Info_FindNPC_OC_Diego_12_01"); //Durante il giorno, di solito, è all'entrata del castello con Thorus.
+				AI_Output(self,other,"Info_FindNPC_OC_Diego_12_01"); //Durante il giorno, di solito, Ã¨ all'entrata del castello con Thorus.
 			};
 		};
 	};
@@ -125,45 +125,45 @@ FUNC VOID Info_FindNPC_OC_Thorus()
 		{
 			if (self.voice == 1)
 			{
-				AI_Output(self,other,"Info_FindNPC_OC_Thorus_01_01"); //Di solito è all'entrata del castello.
+				AI_Output(self,other,"Info_FindNPC_OC_Thorus_01_01"); //Di solito Ã¨ all'entrata del castello.
 			}
 			else if (self.voice == 2)
 			{
-				AI_Output(self,other,"Info_FindNPC_OC_Thorus_02_01"); //Di solito è all'entrata del castello.
+				AI_Output(self,other,"Info_FindNPC_OC_Thorus_02_01"); //Di solito Ã¨ all'entrata del castello.
 			}
 			else if (self.voice == 3)
 			{
-				AI_Output(self,other,"Info_FindNPC_OC_Thorus_03_01"); //Di solito è all'entrata del castello.
+				AI_Output(self,other,"Info_FindNPC_OC_Thorus_03_01"); //Di solito Ã¨ all'entrata del castello.
 			}
 			else if (self.voice == 4)
 			{
-				AI_Output(self,other,"Info_FindNPC_OC_Thorus_04_01"); //Di solito è all'entrata del castello.
+				AI_Output(self,other,"Info_FindNPC_OC_Thorus_04_01"); //Di solito Ã¨ all'entrata del castello.
 			};
 		}
 		else if (self.guild == GIL_GRD) 
 		{
 			if (self.voice == 6)
 			{
-				AI_Output(self,other,"Info_FindNPC_OC_Thorus_06_01"); //Di solito è all'entrata del castello.
+				AI_Output(self,other,"Info_FindNPC_OC_Thorus_06_01"); //Di solito Ã¨ all'entrata del castello.
 			}
 			else if (self.voice == 7)
 			{
-				AI_Output(self,other,"Info_FindNPC_OC_Thorus_07_01"); //Di solito è all'entrata del castello.
+				AI_Output(self,other,"Info_FindNPC_OC_Thorus_07_01"); //Di solito Ã¨ all'entrata del castello.
 			}
 			else if (self.voice == 13)
 			{
-				AI_Output(self,other,"Info_FindNPC_OC_Thorus_13_01"); //Di solito è all'entrata del castello.
+				AI_Output(self,other,"Info_FindNPC_OC_Thorus_13_01"); //Di solito Ã¨ all'entrata del castello.
 			};
 		}
 		else if (self.guild == GIL_STT) 
 		{
 			if (self.voice == 10)
 			{
-				AI_Output(self,other,"Info_FindNPC_OC_Thorus_10_01"); //Di solito è all'entrata del castello.
+				AI_Output(self,other,"Info_FindNPC_OC_Thorus_10_01"); //Di solito Ã¨ all'entrata del castello.
 			}
 			else if (self.voice == 12)
 			{
-				AI_Output(self,other,"Info_FindNPC_OC_Thorus_12_01"); //Di solito è all'entrata del castello.
+				AI_Output(self,other,"Info_FindNPC_OC_Thorus_12_01"); //Di solito Ã¨ all'entrata del castello.
 			};
 		};
 	};

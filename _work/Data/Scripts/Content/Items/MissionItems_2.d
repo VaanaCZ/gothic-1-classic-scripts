@@ -7,7 +7,7 @@
 //#####################################################################
 
 //---------------------------------------------------------------------
-//	Karte für 1. Fokus
+//	Karte fÃ¼r 1. Fokus
 //---------------------------------------------------------------------
 INSTANCE ItWrFocusmapPsi(C_Item)
 {	
@@ -65,7 +65,7 @@ INSTANCE Focus_1(C_Item)
 };
 
 //---------------------------------------------------------------------
-//	Zahnrad für Ian
+//	Zahnrad fÃ¼r Ian
 //---------------------------------------------------------------------
 INSTANCE ItMi_Stuff_Gearwheel_01(C_Item)
 {	
@@ -102,7 +102,7 @@ INSTANCE ItAt_Crawlerqueen(C_Item)
 	description				=	name;
 	TEXT[0]					=	"Queste uova vengono depositate da una";
 	TEXT[1]					=	"regina dei pidocchi di miniera.";
-	TEXT[2]					=	"Contengono una secrezione più potente di";
+	TEXT[2]					=	"Contengono una secrezione piÃ¹ potente di";
 	TEXT[3]					=	"quella fornita dalle mascelle di pidocchio.";
 	TEXT[5]					=	NAME_Value;					COUNT[5]	= value;
 };
@@ -155,14 +155,14 @@ INSTANCE ItWrFokusbuch(C_Item)
 					Doc_SetFont 	( nDocID, -1, "font_10_book.TGA"	   			); 	// -1 -> all pages 
 					Doc_PrintLine	( nDocID,  0,"Focalizzare il potere");
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLines	( nDocID,  0,"Il potere contenuto nelle pietre aumenta continuamente, finché non viene sprigionato dalle parole del mago. Sta a lui decidere se conservarlo o utilizzarlo tutto in un colpo solo.");
+					Doc_PrintLines	( nDocID,  0,"Il potere contenuto nelle pietre aumenta continuamente, finchÃ© non viene sprigionato dalle parole del mago. Sta a lui decidere se conservarlo o utilizzarlo tutto in un colpo solo.");
 					Doc_PrintLine	( nDocID,  0, "");
 					Doc_PrintLines	( nDocID,  0,"Una volta rilasciato il potere, della pietra non rimane altro che un guscio vuoto.");
 
 					//2.Seite
-					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den Ränder des TGAs aus, links,oben,rechts,unten)
+					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den RÃ¤nder des TGAs aus, links,oben,rechts,unten)
 					Doc_PrintLine	( nDocID,  1,  "");
-					Doc_PrintLines	( nDocID,  1,"Le parole necessarie a sprigionare il potere di una pietra focalizzatrice sono conosciute da molti artisti del potere arcano. Anche la conoscenza necessaria per infondere la magia nei nuovi manufatti è, oramai più un’usanza magica che un segreto.");
+					Doc_PrintLines	( nDocID,  1,"Le parole necessarie a sprigionare il potere di una pietra focalizzatrice sono conosciute da molti artisti del potere arcano. Anche la conoscenza necessaria per infondere la magia nei nuovi manufatti Ã¨, oramai piÃ¹ unâ€™usanza magica che un segreto.");
 					Doc_PrintLine	( nDocID,  1,  "");
 					Doc_PrintLines	( nDocID,  1,"Ciononostante, pochi sono coloro in grado di ricaricare una pietra focalizzatrice. Questa formula rappresenta tutt'oggi un gran dono.");
 					Doc_PrintLine	( nDocID,  1, "");

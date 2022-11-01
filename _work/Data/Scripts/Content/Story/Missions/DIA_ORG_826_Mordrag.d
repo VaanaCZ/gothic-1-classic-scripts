@@ -30,7 +30,7 @@ FUNC VOID  Org_826_Mordrag_Exit_Info()
 };
 
 // **************************************************
-//					Erste Begrüssung
+//					Erste BegrÃ¼ssung
 // **************************************************
 
 instance  Org_826_Mordrag_Greet (C_INFO)
@@ -91,7 +91,7 @@ FUNC VOID  Org_826_Mordrag_Trade_Info()
 };
 
 // **************************************************
-//					KURIER FÜR MAGIER
+//					KURIER FÃœR MAGIER
 // **************************************************
 
 instance  Org_826_Mordrag_Courier (C_INFO)
@@ -115,7 +115,7 @@ FUNC int  Org_826_Mordrag_Courier_Condition()
 FUNC VOID  Org_826_Mordrag_Courier_Info()
 {
 	AI_Output (other, self,"Org_826_Mordrag_Courier_15_00"); //Sei davvero il corriere del mago?
-	AI_Output (self, other,"Org_826_Mordrag_Courier_11_01"); //Se così fosse?
+	AI_Output (self, other,"Org_826_Mordrag_Courier_11_01"); //Se cosÃ¬ fosse?
 	AI_Output (other, self,"Org_826_Mordrag_Courier_15_02"); //Vorrei parlare con lui. Devo entrare nel castello.
 	AI_Output (self, other,"Org_826_Mordrag_Courier_11_03"); //Tutti i corrieri del mago possiedono un sigillo, che permette loro di entrare nel castello. Se fossi uno di noi, potresti averne uno...
 };
@@ -147,9 +147,9 @@ FUNC VOID  Org_826_Mordrag_Problem_Info()
 	AI_Output (other, self,"Org_826_Mordrag_Problem_15_00"); //Hai un problema.
 	AI_Output (self, other,"Org_826_Mordrag_Problem_11_01"); //Davvero? Quale?
 	AI_Output (other, self,"Org_826_Mordrag_Problem_15_02"); //Ci sono delle persone che vogliono sbarazzarsi di te.
-	AI_Output (self, other,"Org_826_Mordrag_Problem_11_03"); //Davvero? Dì loro che mandino qualcuno a realizzare questo sogno.
+	AI_Output (self, other,"Org_826_Mordrag_Problem_11_03"); //Davvero? DÃ¬ loro che mandino qualcuno a realizzare questo sogno.
 	AI_Output (other, self,"Org_826_Mordrag_Problem_15_04"); //Come sai che non sono proprio io?
-	AI_Output (self, other,"Org_826_Mordrag_Problem_11_05"); //Perché credo tu sia un ragazzo intelligente. Capirai presto che esistono lavori migliori di quelli che offre Gomez.
+	AI_Output (self, other,"Org_826_Mordrag_Problem_11_05"); //PerchÃ© credo tu sia un ragazzo intelligente. Capirai presto che esistono lavori migliori di quelli che offre Gomez.
 	AI_Output (self, other,"Org_826_Mordrag_Problem_11_06"); //Anche noi di Campo Nuovo abbiamo bisogno di gente valorosa. Inoltre, nessuno ti dice cosa devi fare.
 };
 
@@ -178,11 +178,11 @@ FUNC int  Org_826_Mordrag_NCInfo_Condition()
 FUNC VOID  Org_826_Mordrag_NCInfo_Info()
 {
 	AI_Output (other, self,"Org_826_Mordrag_NCInfo_15_00"); //Parlami ancora di Campo Nuovo.
-	AI_Output (self, other,"Org_826_Mordrag_NCInfo_11_01"); //È la parte di colonia in cui c'è più libertà. Nessun barone delle miniere o guru che ci comandi.
+	AI_Output (self, other,"Org_826_Mordrag_NCInfo_11_01"); //Ãˆ la parte di colonia in cui c'Ã¨ piÃ¹ libertÃ . Nessun barone delle miniere o guru che ci comandi.
 	AI_Output (self, other,"Org_826_Mordrag_NCInfo_11_02"); //Abbiamo la nostra miniera, ma il metallo non finisce nelle tasche del maledetto sovrano!
 	AI_Output (other, self,"Org_826_Mordrag_NCInfo_15_03"); //E come lo usate?
 	AI_Output (self, other,"Org_826_Mordrag_NCInfo_11_04"); //I nostri maghi stanno lavorando a un piano per scappare da qui. Tutto il metallo viene raccolto a questo scopo.
-	AI_Output (self, other,"Org_826_Mordrag_NCInfo_11_05"); //Mentre Gomez e la sua gente stanno con le mani in mano, noi lavoriamo per la libertà: ecco come vanno le cose.
+	AI_Output (self, other,"Org_826_Mordrag_NCInfo_11_05"); //Mentre Gomez e la sua gente stanno con le mani in mano, noi lavoriamo per la libertÃ : ecco come vanno le cose.
 };
 
 // **************************************************
@@ -196,7 +196,7 @@ instance  Org_826_Mordrag_JoinNewcamp(C_INFO)
 	condition	= Org_826_Mordrag_JoinNewcamp_Condition;
 	information	= Org_826_Mordrag_JoinNewcamp_Info;
 	permanent	= 0;
-	description = "E se volessi unirmi a Campo Nuovo...";//könntest du mir dabei helfen... ZU LANG
+	description = "E se volessi unirmi a Campo Nuovo...";//kÃ¶nntest du mir dabei helfen... ZU LANG
 };                       
 
 FUNC int  Org_826_Mordrag_JoinNewcamp_Condition()
@@ -210,7 +210,7 @@ FUNC int  Org_826_Mordrag_JoinNewcamp_Condition()
 FUNC VOID  Org_826_Mordrag_JoinNewcamp_Info()
 {
 	AI_Output (other, self,"Org_826_Mordrag_JoinNewcamp_15_00"); //E se volessi entrare a far parte di Campo Nuovo... potresti aiutarmi?
-	AI_Output (self, other,"Org_826_Mordrag_JoinNewcamp_11_01"); //Se hai intenzioni serie, possiamo partire anche subito! Ti condurrò da Lares, il nostro capo.
+	AI_Output (self, other,"Org_826_Mordrag_JoinNewcamp_11_01"); //Se hai intenzioni serie, possiamo partire anche subito! Ti condurrÃ² da Lares, il nostro capo.
 	AI_Output (self, other,"Org_826_Mordrag_JoinNewcamp_11_02"); //Se invece preferisci cacciarmi da questo campo... Beh, provaci pure!
 };
 
@@ -289,9 +289,9 @@ FUNC VOID  Org_826_Mordrag_AtNewcamp_Info()
 	{
 		AI_Output (self, other,"Org_826_Mordrag_AtNewcamp_LATE_11_00"); //Pensavo non saresti mai arrivato! Lascia stare, ormai ci siamo!
 	};
-	AI_Output (self, other,"Org_826_Mordrag_AtNewcamp_11_01"); //Attraversa il cancello e arriverai a Campo Nuovo. Parla con Lares, ti aiuterà. Dagli questo: è un anello prezioso.
-	AI_Output (self, other,"Org_826_Mordrag_AtNewcamp_11_02"); //È il tuo biglietto per parlare con Lares. TI serve una buona ragione, per avere il permesso d'incontrarlo.
-	AI_Output (self, other,"Org_826_Mordrag_AtNewcamp_11_03"); //Pensandoci bene, credo che resterò qui per un po'. Ho guadagnato abbastanza e la situazione a Campo Vecchio inizia a scottare.
+	AI_Output (self, other,"Org_826_Mordrag_AtNewcamp_11_01"); //Attraversa il cancello e arriverai a Campo Nuovo. Parla con Lares, ti aiuterÃ . Dagli questo: Ã¨ un anello prezioso.
+	AI_Output (self, other,"Org_826_Mordrag_AtNewcamp_11_02"); //Ãˆ il tuo biglietto per parlare con Lares. TI serve una buona ragione, per avere il permesso d'incontrarlo.
+	AI_Output (self, other,"Org_826_Mordrag_AtNewcamp_11_03"); //Pensandoci bene, credo che resterÃ² qui per un po'. Ho guadagnato abbastanza e la situazione a Campo Vecchio inizia a scottare.
 	AI_Output (self, other,"Org_826_Mordrag_AtNewcamp_11_04"); //Se vuoi, puoi trovarmi alla taverna sul lago. Abbi cura di te!
 	AI_Output (other, self,"Org_826_Mordrag_AtNewcamp_15_05"); //Ci vediamo.
 	
@@ -322,7 +322,7 @@ instance  Org_826_Mordrag_Fight (C_INFO)
 	condition	= Org_826_Mordrag_Fight_Condition;
 	information	= Org_826_Mordrag_Fight_Info;
 	permanent	= 0;
-	description = "In questo campo non c'è abbastanza spazio per tutti e due!";
+	description = "In questo campo non c'Ã¨ abbastanza spazio per tutti e due!";
 };                       
 
 FUNC int  Org_826_Mordrag_Fight_Condition()
@@ -335,19 +335,19 @@ FUNC int  Org_826_Mordrag_Fight_Condition()
 
 FUNC VOID  Org_826_Mordrag_Fight_Info()
 {
-	AI_Output (other, self,"Org_826_Mordrag_Fight_15_00"); //Questo campo non è abbastanza grande per tutti e due!
+	AI_Output (other, self,"Org_826_Mordrag_Fight_15_00"); //Questo campo non Ã¨ abbastanza grande per tutti e due!
 	AI_Output (self, other,"Org_826_Mordrag_Fight_11_01"); //Prego?
 	
 	Info_ClearChoices(Org_826_Mordrag_Fight);
 	Info_AddChoice   (Org_826_Mordrag_Fight,"Sparisci da questo campo!",Info_Mordrag_Fight_GetAway);
-	Info_AddChoice	 (Org_826_Mordrag_Fight,"Qui non c'è posto per chi deruba i baroni delle miniere!",Info_Mordrag_Fight_OreBarons);
+	Info_AddChoice	 (Org_826_Mordrag_Fight,"Qui non c'Ã¨ posto per chi deruba i baroni delle miniere!",Info_Mordrag_Fight_OreBarons);
 	Info_AddChoice	 (Org_826_Mordrag_Fight,"Mi manda Thorus. Vuole che mi sbarazzi di te una volta per tutte.",Info_Mordrag_Fight_Thorus);
 };
 
 FUNC VOID Info_Mordrag_Fight_GetAway()
 {
 	AI_Output (other, self,"Info_Mordrag_Fight_GetAway_15_00"); //Sparisci da questo campo!
-	AI_Output (self, other,"Info_Mordrag_Fight_GetAway_11_01"); //Che parole grosse da una bocca così piccola...
+	AI_Output (self, other,"Info_Mordrag_Fight_GetAway_11_01"); //Che parole grosse da una bocca cosÃ¬ piccola...
 	
 	AI_StopProcessInfos(self);
 	Npc_SetTarget(self, other);
@@ -356,8 +356,8 @@ FUNC VOID Info_Mordrag_Fight_GetAway()
 
 FUNC VOID Info_Mordrag_Fight_OreBarons()
 {
-	AI_Output (other, self,"Info_Mordrag_Fight_OreBarons_15_00"); //Qui non c'è posto per chi deruba i baroni delle miniere!
-	AI_Output (self, other,"Info_Mordrag_Fight_OreBarons_11_01"); //Ah, è questo che intendi! Perché non l'hai detto e basta...
+	AI_Output (other, self,"Info_Mordrag_Fight_OreBarons_15_00"); //Qui non c'Ã¨ posto per chi deruba i baroni delle miniere!
+	AI_Output (self, other,"Info_Mordrag_Fight_OreBarons_11_01"); //Ah, Ã¨ questo che intendi! PerchÃ© non l'hai detto e basta...
 	
 	MordragKO_PlayerChoseOreBarons = TRUE;
 	
@@ -411,7 +411,7 @@ FUNC VOID  Org_826_Mordrag_HauAb_Info()
 	
 	MordragKO_HauAb = TRUE;
 	
-	B_LogEntry    (CH1_MordragKO,"Ho sconfitto Mordrag e gli ho ordinato di non farsi più vedere a Campo Vecchio.");
+	B_LogEntry    (CH1_MordragKO,"Ho sconfitto Mordrag e gli ho ordinato di non farsi piÃ¹ vedere a Campo Vecchio.");
 
 	Npc_ExchangeRoutine	(self, "Start");
 };
@@ -444,7 +444,7 @@ FUNC VOID  Org_826_Mordrag_GotoKalom_Info()
 	AI_Output (other, self,"Org_826_Mordrag_GotoKalom_15_00"); //Ho un messaggio di Lares per te.
 	AI_Output (self, other,"Org_826_Mordrag_GotoKalom_11_01"); //Dimmi tutto.
 	AI_Output (other, self,"Org_826_Mordrag_GotoKalom_15_02"); //Vuole che tu scopra cosa sta accadendo nella Setta.
-	AI_Output (self, other,"Org_826_Mordrag_GotoKalom_11_03"); //Ho il presentimento che questo problema si risolverà da solo...
+	AI_Output (self, other,"Org_826_Mordrag_GotoKalom_11_03"); //Ho il presentimento che questo problema si risolverÃ  da solo...
 
 	B_LogEntry	(CH1_JoinNC,"Ho riferito a Mordrag il messaggio di Lares: ha borbottato qualcosa sugli oggetti che hanno cura di se stessi. Non ho capito assolutamente nulla!");
 };
@@ -479,32 +479,32 @@ FUNC VOID  Org_826_Mordrag_GotoKalomNOW_Info()
 	AI_Output			(other, self,"Org_826_Mordrag_GotoKalomNOW_15_00"); //Lares mi ha detto di aiutarti con la storia della Setta.
 	AI_Output			(self, other,"Org_826_Mordrag_GotoKalomNOW_11_01"); //Lo vedi... Sapevo che non sarebbe toccata a me.
 	AI_Output			(other, self,"Org_826_Mordrag_GotoKalomNOW_15_02"); //Vuoi che mi occupi io di tutta la faccenda?
-	AI_Output			(self, other,"Org_826_Mordrag_GotoKalomNOW_11_03"); //Sono sicuro che ce la farai. Ascolta: è importante scoprire la verità su questa storia dell'evocazione.
-	AI_Output			(self, other,"Org_826_Mordrag_GotoKalomNOW_11_04"); //So che quei pazzi della Setta stanno organizzando una grande cerimonia. Personalmente, non credo nel Dormiente, ma una cosa è certa:
-	AI_Output			(self, other,"Org_826_Mordrag_GotoKalomNOW_11_05"); //I guru possiedono una magia molto potente, quindi è meglio scoprire cosa sta succedendo. Hai capito tutto, finora?
+	AI_Output			(self, other,"Org_826_Mordrag_GotoKalomNOW_11_03"); //Sono sicuro che ce la farai. Ascolta: Ã¨ importante scoprire la veritÃ  su questa storia dell'evocazione.
+	AI_Output			(self, other,"Org_826_Mordrag_GotoKalomNOW_11_04"); //So che quei pazzi della Setta stanno organizzando una grande cerimonia. Personalmente, non credo nel Dormiente, ma una cosa Ã¨ certa:
+	AI_Output			(self, other,"Org_826_Mordrag_GotoKalomNOW_11_05"); //I guru possiedono una magia molto potente, quindi Ã¨ meglio scoprire cosa sta succedendo. Hai capito tutto, finora?
 
-	B_LogEntry			(CH1_GotoPsiCamp,"Mordrag mi ha passato il compito di spiare Campo Palude. Sembra che i guru stiano preparando una grande evocazione, ma devo scoprire di più.");
+	B_LogEntry			(CH1_GotoPsiCamp,"Mordrag mi ha passato il compito di spiare Campo Palude. Sembra che i guru stiano preparando una grande evocazione, ma devo scoprire di piÃ¹.");
 	B_GiveXP			(XP_AssistMordrag);	
 	
 	Lares_InformMordrag = LOG_SUCCESS;
 	Mordrag_GotoKalom = LOG_RUNNING;
 	
 	Info_ClearChoices	(Org_826_Mordrag_GotoKalomNOW);
-	Info_AddChoice		(Org_826_Mordrag_GotoKalomNOW,"Puoi darmi istruzioni più specifiche?",Org_826_Mordrag_GotoKalomNOW_Precise);
-	Info_AddChoice		(Org_826_Mordrag_GotoKalomNOW,"Vedrò cosa posso fare.",Org_826_Mordrag_GotoKalomNOW_DoIt);
+	Info_AddChoice		(Org_826_Mordrag_GotoKalomNOW,"Puoi darmi istruzioni piÃ¹ specifiche?",Org_826_Mordrag_GotoKalomNOW_Precise);
+	Info_AddChoice		(Org_826_Mordrag_GotoKalomNOW,"VedrÃ² cosa posso fare.",Org_826_Mordrag_GotoKalomNOW_DoIt);
 
 };
 
 func void Org_826_Mordrag_GotoKalomNOW_Precise()
 {
-	AI_Output (other, self,"Org_826_Mordrag_GotoKalomNOW_Precise_15_00"); //Puoi darmi istruzioni più specifiche?
-	AI_Output (self, other,"Org_826_Mordrag_GotoKalomNOW_Precise_11_01"); //Parla con Lester. Tempo addietro ho passato un lungo periodo nella Setta e lui mi ha aiutato. È un bravo ragazzo.
-	B_LogEntry(CH1_GotoPsiCamp,"Devo parlare a un novizio di nome Lester, nel campo della Fratellanza. Pare sia un tipo fidato, che ha già aiutato Mordrag in precedenza.");
+	AI_Output (other, self,"Org_826_Mordrag_GotoKalomNOW_Precise_15_00"); //Puoi darmi istruzioni piÃ¹ specifiche?
+	AI_Output (self, other,"Org_826_Mordrag_GotoKalomNOW_Precise_11_01"); //Parla con Lester. Tempo addietro ho passato un lungo periodo nella Setta e lui mi ha aiutato. Ãˆ un bravo ragazzo.
+	B_LogEntry(CH1_GotoPsiCamp,"Devo parlare a un novizio di nome Lester, nel campo della Fratellanza. Pare sia un tipo fidato, che ha giÃ  aiutato Mordrag in precedenza.");
 };
 
 func void Org_826_Mordrag_GotoKalomNOW_DoIt()
 {
-	AI_Output (other, self,"Org_826_Mordrag_GotoKalomNOW_DoIt_15_00"); //Vedrò cosa posso fare.
+	AI_Output (other, self,"Org_826_Mordrag_GotoKalomNOW_DoIt_15_00"); //VedrÃ² cosa posso fare.
 	AI_Output (self, other,"Org_826_Mordrag_GotoKalomNOW_DoIt_11_01"); //Appena scopri i loro piani, torna a fare rapporto.
 	Info_ClearChoices	(Org_826_Mordrag_GotoKalomNOW);
 	AI_StopProcessInfos	(self);
@@ -555,7 +555,7 @@ FUNC VOID  Org_826_Mordrag_RUNNING_Info()
 		Mordrag_GotoKalom = LOG_SUCCESS;
 		B_GiveXP			(XP_ReportToMordrag);
 		Log_SetTopicStatus	(CH1_GotoPsiCamp,	LOG_SUCCESS);
-		B_LogEntry			(CH1_GotoPsiCamp,"Mordrag quasi moriva dalle risate, quando gli ho parlato delle uova di pidocchio di miniera. Non sembra più molto interessato a spiare i guru. Deve pensare che il problema sia risolto!");
+		B_LogEntry			(CH1_GotoPsiCamp,"Mordrag quasi moriva dalle risate, quando gli ho parlato delle uova di pidocchio di miniera. Non sembra piÃ¹ molto interessato a spiare i guru. Deve pensare che il problema sia risolto!");
 	}
 	else
 	{
@@ -567,7 +567,7 @@ FUNC VOID  Org_826_Mordrag_RUNNING_Info()
 	//SN: Werde nicht gebraucht, da sie nicht zur Kapitel 2-6-Story passen!!!
 		AI_Output		(other, self,"Org_826_Mordrag_RUNNING_15_08"); //Ich hab' die Eier bei mir.
 		
-		AI_Output		(self, other,"Org_826_Mordrag_RUNNING_11_05"); //(sarkastisch) Hab' ich auch gemerkt. Diese verdammten Sektenspinner haben Gomez die alte Mine gekostet. Wird nicht mehr lange dauern, dann stehen seine Gardisten bei UNS vor der Tür, um sich ihr Erz abzuholen...
+		AI_Output		(self, other,"Org_826_Mordrag_RUNNING_11_05"); //(sarkastisch) Hab' ich auch gemerkt. Diese verdammten Sektenspinner haben Gomez die alte Mine gekostet. Wird nicht mehr lange dauern, dann stehen seine Gardisten bei UNS vor der TÃ¼r, um sich ihr Erz abzuholen...
 */
 };
 	

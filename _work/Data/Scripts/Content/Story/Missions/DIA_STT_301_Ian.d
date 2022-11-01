@@ -19,7 +19,7 @@ FUNC int  STT_301_IAN_Exit_Condition()
 
 FUNC VOID  STT_301_IAN_Exit_Info()
 {
-	AI_Output			(other, self,"STT_301_IAN_Exit_Info_15_01"); //DarÚ solo un'occhiata.
+	AI_Output			(other, self,"STT_301_IAN_Exit_Info_15_01"); //Dar√≤ solo un'occhiata.
 	AI_Output			(self, other,"STT_301_IAN_Exit_Info_13_02"); //Non creare problemi.
 	
 	AI_StopProcessInfos	( self );
@@ -46,7 +46,7 @@ FUNC int  STT_301_IAN_HI_Condition()
 FUNC void  STT_301_IAN_HI_Info()
 {
 	AI_Output			(other, self,"STT_301_IAN_HI_Info_15_01"); //Sei Ian, il capo della miniera?
-	AI_Output			(self, other,"STT_301_IAN_HI_Info_13_02"); //SÏ, sono Ian e questa Ë la mia miniera. Quindi non toccare o rompere nulla.
+	AI_Output			(self, other,"STT_301_IAN_HI_Info_13_02"); //S√¨, sono Ian e questa √® la mia miniera. Quindi non toccare o rompere nulla.
 }; 
 // ***************** Infos *****************************
 instance STT_301_IAN_GOMEZ  (C_INFO)
@@ -56,7 +56,7 @@ instance STT_301_IAN_GOMEZ  (C_INFO)
 	information		= STT_301_IAN_GOMEZ_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Non Ë la miniera di Gomez?"; 
+	description		= "Non √® la miniera di Gomez?"; 
 };
 
 FUNC int  STT_301_IAN_GOMEZ_Condition()
@@ -69,8 +69,8 @@ FUNC int  STT_301_IAN_GOMEZ_Condition()
 };
 FUNC void  STT_301_IAN_GOMEZ_Info()
 {
-	AI_Output			(other, self,"STT_301_IAN_GOMEZ_Info_15_01"); //Non Ë la miniera di Gomez?
-	AI_Output			(self, other,"STT_301_IAN_GOMEZ_Info_13_02"); //Certo. Ovviamente Ë la miniera di Campo Vecchio. Ma qui c'Ë un solo capo, e sono io.
+	AI_Output			(other, self,"STT_301_IAN_GOMEZ_Info_15_01"); //Non √® la miniera di Gomez?
+	AI_Output			(self, other,"STT_301_IAN_GOMEZ_Info_13_02"); //Certo. Ovviamente √® la miniera di Campo Vecchio. Ma qui c'√® un solo capo, e sono io.
 }; 
 // ***************** Infos *****************************
 instance  STT_301_IAN_ORE (C_INFO)
@@ -106,7 +106,7 @@ instance  STT_301_IAN_MORE (C_INFO)
 	information		= STT_301_IAN_MORE_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Ho sentito dire che il metallo ha propriet‡ magiche. Tu che mi dici?"; 
+	description		= "Ho sentito dire che il metallo ha propriet√† magiche. Tu che mi dici?"; 
 };
 
 FUNC int  STT_301_IAN_MORE_Condition()
@@ -117,8 +117,8 @@ FUNC int  STT_301_IAN_MORE_Condition()
 
 FUNC void  STT_301_IAN_MORE_Info()
 {
-	AI_Output			(other, self,"STT_301_IAN_MORE_Info_15_01"); //Ho sentito dire che il metallo ha propriet‡ magiche. Tu che mi dici?
-	AI_Output			(self, other,"STT_301_IAN_MORE_Info_13_02"); //Il metallo magico ha delle caratteristiche speciali. Le armi forgiate con esso non si rompono e le lame sono pi˘ affilate delle altre.
+	AI_Output			(other, self,"STT_301_IAN_MORE_Info_15_01"); //Ho sentito dire che il metallo ha propriet√† magiche. Tu che mi dici?
+	AI_Output			(self, other,"STT_301_IAN_MORE_Info_13_02"); //Il metallo magico ha delle caratteristiche speciali. Le armi forgiate con esso non si rompono e le lame sono pi√π affilate delle altre.
 	AI_Output			(self, other,"STT_301_IAN_MORE_Info_13_03"); //In battaglia, un esercito equipaggiato con queste armi ha un decisivo vantaggio.
 	
 };   
@@ -143,7 +143,7 @@ FUNC void  STT_301_IAN_MAGIC_Info()
 {
 	AI_Output			(other, self,"STT_301_IAN_MAGIC_Info_15_01"); //Parlami ancora del metallo.
 	AI_Output			(self, other,"STT_301_IAN_MAGIC_Info_13_02"); //Sfortunatamente, i poteri magici del metallo svaniscono durante la fusione. Solo nelle fornaci di Nordmar conoscono la tecnica giusta.
-	AI_Output			(self, other,"STT_301_IAN_MAGIC_Info_13_03"); //Ma, anche senza poteri magici, le armi create con questo metallo sono estremamente resistenti e causano pi˘ danni di quelle normali.
+	AI_Output			(self, other,"STT_301_IAN_MAGIC_Info_13_03"); //Ma, anche senza poteri magici, le armi create con questo metallo sono estremamente resistenti e causano pi√π danni di quelle normali.
 	
 };   
 // ***************** Infos *****************************   
@@ -171,9 +171,9 @@ func void  STT_301_IAN_MINE_Info()
 	AI_Output			(other, self,"STT_301_IAN_MINE_Info_15_01"); //Parlami della miniera.
 	AI_Output			(self, other,"STT_301_IAN_MINE_Info_13_02"); //Se vuoi dare un'occhiata intorno, devi stare attento. Le caverne sono piene di pidocchi di miniera. Farai meglio a restare nel condotto principale.
 	AI_Output			(self, other,"STT_301_IAN_MINE_Info_13_03"); //E lascia in pace i templari. Anche se passano la maggior parte del tempo a passeggiare, sono i migliori combattenti che tu possa trovare per aiutarti a sconfiggere i pidocchi di miniera!
-	AI_Output			(other, self,"STT_301_IAN_MINE_Info_15_04"); //Lo terrÚ a mente.
+	AI_Output			(other, self,"STT_301_IAN_MINE_Info_15_04"); //Lo terr√≤ a mente.
 	AI_Output			(self, other,"STT_301_IAN_MINE_Info_13_05"); //Ho del lavoro da sbrigare. Ah! Non distrarre i miei ragazzi dalla loro occupazione!
-	AI_Output			(other, self,"STT_301_IAN_MINE_Info_15_06"); //DarÚ solo un'occhiata qua attorno.
+	AI_Output			(other, self,"STT_301_IAN_MINE_Info_15_06"); //Dar√≤ solo un'occhiata qua attorno.
 };
 /*------------------------------------------------------------------------
 					BRING LIST									
@@ -201,7 +201,7 @@ FUNC int  STT_301_IAN_WANTLIST_Condition()
 FUNC void  STT_301_IAN_WANTLIST_Info()
 {
 	AI_Output			(other, self,"STT_301_IAN_WANTLIST_Info_15_01"); //Sono venuto a prendere la lista per il campo.
-	AI_Output			(self, other,"STT_301_IAN_WANTLIST_Info_13_02"); //Questo puÚ dirlo chiunque. Sparisci!
+	AI_Output			(self, other,"STT_301_IAN_WANTLIST_Info_13_02"); //Questo pu√≤ dirlo chiunque. Sparisci!
 	 
 };  
 /*------------------------------------------------------------------------
@@ -230,7 +230,7 @@ FUNC int  STT_301_IAN_GETLIST_Condition()
 FUNC void  STT_301_IAN_GETLIST_Info()
 {
 	AI_Output			(other, self,"STT_301_IAN_GETLIST_Info_15_01"); //Diego mi ha mandato a prendere la lista.
-	AI_Output			(self, other,"STT_301_IAN_GETLIST_Info_13_02"); //D'accordo, eccola. DÏ loro di sbrigarsi con le consegne.
+	AI_Output			(self, other,"STT_301_IAN_GETLIST_Info_13_02"); //D'accordo, eccola. D√¨ loro di sbrigarsi con le consegne.
 	B_LogEntry  (CH1_BringList,"Ian mi ha consegnato la lista senza fare storie.");
 	B_GiveInvItems	(self,hero,TheList,1);
 };  
@@ -261,11 +261,11 @@ FUNC VOID  STT_301_IAN_NEST_Info()
 	AI_Output			(other, self,"STT_301_IAN_NEST_Info_15_01"); //Deve esserci un nido di pidocchi di miniera, da queste parti.
 	AI_Output			(self, other,"STT_301_IAN_NEST_Info_13_02"); //Probabilmente ce ne sono a decine!
 	AI_Output			(other, self,"STT_301_IAN_NEST_Info_15_03"); //Ascolta, devo subito trovare questo nido...
-	AI_Output			(self, other,"STT_301_IAN_NEST_Info_13_04"); //Ora non ho tempo. La nostra schiacciatrice non funziona pi˘. La ruota dentata si Ë rotta alcune ore fa.
+	AI_Output			(self, other,"STT_301_IAN_NEST_Info_13_04"); //Ora non ho tempo. La nostra schiacciatrice non funziona pi√π. La ruota dentata si √® rotta alcune ore fa.
 	AI_Output			(self, other,"STT_301_IAN_NEST_Info_13_05"); //Non ho idea di dove trovarne un'altra.
-	AI_Output			(self, other,"STT_301_IAN_NEST_Info_13_06"); //Portami una ruota dentata e vedrÚ di aiutarti.
+	AI_Output			(self, other,"STT_301_IAN_NEST_Info_13_06"); //Portami una ruota dentata e vedr√≤ di aiutarti.
 
-	B_LogEntry		(CH2_MCEggs,"Ian, il capo della miniera, non mi aiuter‡ a trovare il nido. Devo portargli una nuova ruota dentata per la schiacciatrice. Mi ha parlato di un tunnel laterale, in cui potrei trovare uno di questi macchinari in disuso.");
+	B_LogEntry		(CH2_MCEggs,"Ian, il capo della miniera, non mi aiuter√† a trovare il nido. Devo portargli una nuova ruota dentata per la schiacciatrice. Mi ha parlato di un tunnel laterale, in cui potrei trovare uno di questi macchinari in disuso.");
 
 	Ian_gearwheel = LOG_RUNNING;
 };
@@ -294,7 +294,7 @@ FUNC VOID  STT_301_IAN_GEAR_RUN_Info()
 {
 	AI_Output			(other, self,"STT_301_IAN_GEAR_RUN_Info_15_01"); //Una ruota dentata? E dove la trovo?
 	AI_Output			(self, other,"STT_301_IAN_GEAR_RUN_Info_13_02"); //Non ne ho idea! Siamo sulla stessa barca!
-	AI_Output			(self, other,"STT_301_IAN_GEAR_RUN_Info_13_03"); //PerÚ so che c'Ë una vecchia schiacciatrice in un condotto laterale. Forse sarai fortunato.
+	AI_Output			(self, other,"STT_301_IAN_GEAR_RUN_Info_13_03"); //Per√≤ so che c'√® una vecchia schiacciatrice in un condotto laterale. Forse sarai fortunato.
 };
 
 // ******************************MISSION SUCCESS********************************************  
@@ -329,11 +329,11 @@ FUNC VOID  STT_301_IAN_GEAR_SUC_Info()
 	Npc_ExchangeRoutine (Sklave,"Stomper");
 
 	AI_Output			(other, self,"STT_301_IAN_GEAR_SUC_Info_15_01"); //Ho la ruota dentata!
-	AI_Output			(self, other,"STT_301_IAN_GEAR_SUC_Info_13_02"); //Ehi, ottimo lavoro. Penso che funzioner‡. Per quanto riguarda te... Sei in cerca del nido dei pidocchi di miniera... Hmm...
-	AI_Output			(self, other,"STT_301_IAN_GEAR_SUC_Info_13_03"); //Vai da Asghan e digli di aprirti il cancello, cosÏ potrai cercare nei condotti bui.
-	AI_Output			(self, other,"STT_301_IAN_GEAR_SUC_Info_13_04"); //Digli solo 'Andr‡ tutto bene', cosÏ sapr‡ che hai il mio permesso.
+	AI_Output			(self, other,"STT_301_IAN_GEAR_SUC_Info_13_02"); //Ehi, ottimo lavoro. Penso che funzioner√†. Per quanto riguarda te... Sei in cerca del nido dei pidocchi di miniera... Hmm...
+	AI_Output			(self, other,"STT_301_IAN_GEAR_SUC_Info_13_03"); //Vai da Asghan e digli di aprirti il cancello, cos√¨ potrai cercare nei condotti bui.
+	AI_Output			(self, other,"STT_301_IAN_GEAR_SUC_Info_13_04"); //Digli solo 'Andr√† tutto bene', cos√¨ sapr√† che hai il mio permesso.
 
-	B_LogEntry		(CH2_MCEggs,"Ho consegnato a Ian la ruota dentata della schiacciatrice abbandonata. Mi ha detto di ripetere ad Asghan la frase ANDR¿ TUTTO BENE. In questo modo, dovrei riuscire a farmi aprire il cancello per i condotti oscuri.");
+	B_LogEntry		(CH2_MCEggs,"Ho consegnato a Ian la ruota dentata della schiacciatrice abbandonata. Mi ha detto di ripetere ad Asghan la frase ANDR√Ä TUTTO BENE. In questo modo, dovrei riuscire a farmi aprire il cancello per i condotti oscuri.");
 };
 
 // ******************************GOTO ASGHAN********************************************  
@@ -358,7 +358,7 @@ FUNC int  STT_301_IAN_GOTOASGHAN_Condition()
 FUNC VOID  STT_301_IAN_GOTOASGHAN_Info()
 {
 	AI_Output			(other, self,"STT_301_IAN_GOTOASGHAN_Info_15_01"); //Sto ancora cercando il nido dei pidocchi di miniera.
-	AI_Output			(self, other,"STT_301_IAN_GOTOASGHAN_Info_13_02"); //Te l'ho gi‡ detto: vai da Asghan, il capo delle guardie. Lo troverai da qualche parte al livello inferiore.
+	AI_Output			(self, other,"STT_301_IAN_GOTOASGHAN_Info_13_02"); //Te l'ho gi√† detto: vai da Asghan, il capo delle guardie. Lo troverai da qualche parte al livello inferiore.
 
 	B_LogEntry		(CH2_MCEggs,"Devo parlare con Asghan, se voglio trovare il nido dei pidocchi di miniera.");
 };

@@ -393,7 +393,7 @@
 	on_equip				=	Equip_Schutzring_Magie2_Fire2;
 	on_unequip				=	UnEquip_Schutzring_Magie2_Fire2;
 
-	description		= "Anello dell'invulnerabilit‡";
+	description		= "Anello dell'invulnerabilit√†";
 	//TEXT[0]			= "";
 	//TEXT[1]			= "";
 	////COUNT[1]		= ;
@@ -526,7 +526,7 @@
 	on_equip				=  	Equip_Schutzring_Total1;
 	on_unequip				= 	UnEquip_Schutzring_Total1;
 
-	description		= "Anello minore dell'invulnerabilit‡";
+	description		= "Anello minore dell'invulnerabilit√†";
 	//TEXT[0]			= "";
 	TEXT[1]			= NAME_Prot_Magic;
 	COUNT[1]		= 1;
@@ -575,7 +575,7 @@
 	on_equip				=  	Equip_Schutzring_Total2;
 	on_unequip				= 	UnEquip_Schutzring_Total2;
 
-	description		= "Anello maggiore dell'invulnerabilit‡";
+	description		= "Anello maggiore dell'invulnerabilit√†";
 	//TEXT[0]			= "";
 	TEXT[1]			= NAME_Prot_Magic;
 	COUNT[1]		= 3;

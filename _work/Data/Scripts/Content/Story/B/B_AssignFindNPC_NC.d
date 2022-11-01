@@ -212,26 +212,26 @@ FUNC VOID Info_FindNPC_NC_Mage()
 		{
 			if (self.voice == 6)
 			{
-				AI_Output(self,other,"Info_FindNPC_NC_Cronos_06_01"); //Solitamente vivono nella zona superiore proibita della caverna. A volte, però, puoi trovarli presso il cumulo di metallo al centro della stessa.
+				AI_Output(self,other,"Info_FindNPC_NC_Cronos_06_01"); //Solitamente vivono nella zona superiore proibita della caverna. A volte, perÃ², puoi trovarli presso il cumulo di metallo al centro della stessa.
 			}
 			else if (self.voice == 7)
 			{
-				AI_Output(self,other,"Info_FindNPC_NC_Cronos_07_01"); //Solitamente vivono nella zona superiore proibita della caverna. A volte, però, puoi trovarli presso il cumulo di metallo al centro della stessa.
+				AI_Output(self,other,"Info_FindNPC_NC_Cronos_07_01"); //Solitamente vivono nella zona superiore proibita della caverna. A volte, perÃ², puoi trovarli presso il cumulo di metallo al centro della stessa.
 			}
 			else if (self.voice == 13)
 			{
-				AI_Output(self,other,"Info_FindNPC_NC_Cronos_13_01"); //Solitamente vivono nella zona superiore proibita della caverna. A volte, però, puoi trovarli presso il cumulo di metallo al centro della stessa.
+				AI_Output(self,other,"Info_FindNPC_NC_Cronos_13_01"); //Solitamente vivono nella zona superiore proibita della caverna. A volte, perÃ², puoi trovarli presso il cumulo di metallo al centro della stessa.
 			};
 		}
 		else if (self.guild == GIL_SLD) 
 		{
 			if (self.voice == 8)
 			{
-				AI_Output(self,other,"Info_FindNPC_NC_Cronos_08_01"); //Solitamente vivono nella zona superiore proibita della caverna. A volte, però, puoi trovarli presso il cumulo di metallo al centro della stessa.
+				AI_Output(self,other,"Info_FindNPC_NC_Cronos_08_01"); //Solitamente vivono nella zona superiore proibita della caverna. A volte, perÃ², puoi trovarli presso il cumulo di metallo al centro della stessa.
 			}
 			else if (self.voice == 11)
 			{
-				AI_Output(self,other,"Info_FindNPC_NC_Cronos_11_01"); //Solitamente vivono nella zona superiore proibita della caverna. A volte, però, puoi trovarli presso il cumulo di metallo al centro della stessa.
+				AI_Output(self,other,"Info_FindNPC_NC_Cronos_11_01"); //Solitamente vivono nella zona superiore proibita della caverna. A volte, perÃ², puoi trovarli presso il cumulo di metallo al centro della stessa.
 			};
 		};
 	};

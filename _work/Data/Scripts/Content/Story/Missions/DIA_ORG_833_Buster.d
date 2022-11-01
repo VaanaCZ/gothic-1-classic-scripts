@@ -64,7 +64,7 @@ FUNC INT DIA_ORG_833_Buster3_Condition()
 
 func VOID DIA_ORG_833_Buster3_Info()
 {
-	AI_Output (self, other,"DIA_ORG_833_Buster3_02_01"); //Ti mostrerò come controllare il tuo corpo, grazie all'arte dell'ACROBAZIA.
+	AI_Output (self, other,"DIA_ORG_833_Buster3_02_01"); //Ti mostrerÃ² come controllare il tuo corpo, grazie all'arte dell'ACROBAZIA.
 
 	Info_ClearChoices	( DIA_ORG_833_Buster3 );
 	Info_AddChoice		( DIA_ORG_833_Buster3, DIALOG_BACK													, DIA_ORG_833_Buster_Back );
@@ -82,7 +82,7 @@ FUNC void DIA_ORG_833_Buster_Train1()
 	
 	if (B_GiveSkill(other,NPC_TALENT_ACROBAT , 1, LPCOST_TALENT_ACROBAT))
 	{
-		AI_Output (self, other,"DIA_ORG_833_Buster3_02_02"); //Quando avrai imparato, potrai saltare molto più lontano.
+		AI_Output (self, other,"DIA_ORG_833_Buster3_02_02"); //Quando avrai imparato, potrai saltare molto piÃ¹ lontano.
 		AI_Output (self, other,"DIA_ORG_833_Buster3_02_03"); //Imparerai a rotolare e ad atterrare dopo una caduta. Ma ricorda che non sei immortale!
 		AI_Output (self, other,"DIA_ORG_833_Buster3_02_04"); //Le acrobazie sono molto utili in battaglia. Potrai cambiare in un attimo la distanza fra te e il tuo nemico. Buona fortuna!
 	};		

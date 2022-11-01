@@ -57,7 +57,7 @@ FUNC INT DIA_Tpl_1415_Torwache_First_Condition()
 FUNC VOID DIA_Tpl_1415_Torwache_First_Info()
 {
 	AI_Output (self, other,"DIA_Tpl_1415_Torwache_First_13_00"); //Salve, straniero!
-	AI_Output (self, other,"DIA_Tpl_1415_Torwache_First_13_01"); //Stai pestando un suolo sacro. Questa è la Fratellanza del Dormiente.
+	AI_Output (self, other,"DIA_Tpl_1415_Torwache_First_13_01"); //Stai pestando un suolo sacro. Questa Ã¨ la Fratellanza del Dormiente.
 	AI_Output (self, other,"DIA_Tpl_1415_Torwache_First_13_02"); //Cosa ti porta qui?
 	
 	Info_ClearChoices	(DIA_Tpl_1415_Torwache_First);
@@ -82,7 +82,7 @@ func void DIA_Tpl_1415_Torwache_First_JustLooking()
 {
 	AI_Output (other, self,"DIA_Tpl_1415_Torwache_First_JustLooking_15_00"); //Sono nuovo di qui e vorrei dare un'occhiata al vostro campo.
 	AI_Output (self, other,"DIA_Tpl_1415_Torwache_First_JustLooking_13_01"); //Gli stranieri sono sempre i benvenuti.
-	AI_Output (self, other,"DIA_Tpl_1415_Torwache_First_JustLooking_13_02"); //Ma è importante conoscere e seguire le nostre regole. Ci sono alcune zone alle quali non puoi accedere.
+	AI_Output (self, other,"DIA_Tpl_1415_Torwache_First_JustLooking_13_02"); //Ma Ã¨ importante conoscere e seguire le nostre regole. Ci sono alcune zone alle quali non puoi accedere.
 	Info_ClearChoices	(DIA_Tpl_1415_Torwache_First);
 };
 
@@ -135,16 +135,16 @@ FUNC int  Tpl_1415_Torwache_TEMPLERAUFNAHME_Condition()
 func void  Tpl_1415_Torwache_TEMPLERAUFNAHME_Info()
 {
 	AI_GotoNpc (hero,self); 
-	AI_Output (self, other,"Tpl_1415_Torwache_IMPORTANT_Info_13_01"); //Ehi! Ho sentito quello che è successo alla miniera. Hai fatto un ottimo lavoro. Meriti di essere ammesso fra i templari!
+	AI_Output (self, other,"Tpl_1415_Torwache_IMPORTANT_Info_13_01"); //Ehi! Ho sentito quello che Ã¨ successo alla miniera. Hai fatto un ottimo lavoro. Meriti di essere ammesso fra i templari!
 	AI_Output (self, other,"Tpl_1415_Torwache_IMPORTANT_Info_13_02"); //Parlane con Cor Angar!
 
 	Log_CreateTopic (GE_BecomeTemplar,LOG_NOTE);
-	B_LogEntry (GE_BecomeTemplar,"Devo parlare con Cor Angar. Forse mi permetterà d'unirmi ai templari.");
+	B_LogEntry (GE_BecomeTemplar,"Devo parlare con Cor Angar. Forse mi permetterÃ  d'unirmi ai templari.");
 };
 
 
 /*------------------------------------------------------------------------
-						Novizenröckchen							
+						NovizenrÃ¶ckchen							
 ------------------------------------------------------------------------*/
 
 instance  Tpl_1415_Templer_ROCK (C_INFO)
@@ -168,7 +168,7 @@ FUNC int  Tpl_1415_Templer_ROCK_Condition()
 FUNC void  Tpl_1415_Templer_ROCK_Info()
 {
 	AI_Output (other, self,"Tpl_1415_Templer_ROCK_Info_15_01"); //Ho bisogno di un'armatura.
-	AI_Output (self, other,"Tpl_1415_Templer_ROCK_Info_13_02"); //L'armatura da templare che indosso deve essere meritata. Però puoi avere la fascia da novizio.
+	AI_Output (self, other,"Tpl_1415_Templer_ROCK_Info_13_02"); //L'armatura da templare che indosso deve essere meritata. PerÃ² puoi avere la fascia da novizio.
 	AI_Output (other, self,"Tpl_1415_Templer_ROCK_Info_15_03"); //Meglio di niente...
 	AI_Output (self, other,"Tpl_1415_Templer_ROCK_Info_13_04"); //Anche se non lo avrai gratis!
 
@@ -191,7 +191,7 @@ func void Tpl_1415_Templer_ROCK_BUY()
 	}
 	else
 	{
-		AI_Output (self, other,"Tpl_1415_Templer_ROCK_BUY_13_03"); //Questo capo d'abbigliamento può salvarti la vita.
+		AI_Output (self, other,"Tpl_1415_Templer_ROCK_BUY_13_03"); //Questo capo d'abbigliamento puÃ² salvarti la vita.
 		B_GiveInvItems (hero, self, ItMinugget, VALUE_NOV_ARMOR_L);
 		CreateInvItem (self, NOV_ARMOR_L);
 		B_GiveInvItems (self, hero, NOV_ARMOR_L, 1);

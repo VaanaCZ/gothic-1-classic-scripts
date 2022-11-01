@@ -22,7 +22,7 @@ FUNC VOID Info_HighPriest5_Info()
 	if ( Npc_HasItems ( hero, Mythrilklinge02 )) || ( Npc_HasItems ( hero, UrizielRune ))
 	{
 		AI_Output 			(self, other,"Info_HighPriest5_17_04"); //TUUUU hai UN'AAARMA POTEEENTE!
-		AI_Output 			(self, other,"Info_HighPriest5_17_05"); //TI FEEERMEEERÒ!!!
+		AI_Output 			(self, other,"Info_HighPriest5_17_05"); //TI FEEERMEEERÃ’!!!
 
 		AI_StopProcessInfos	(self);
 		self.npctype 		= NPCTYPE_MAIN;
@@ -34,7 +34,7 @@ FUNC VOID Info_HighPriest5_Info()
 	{
 		AI_Output 			(self, other,"Info_HighPriest5_17_01"); //TOOOORNAAAA QUIIII!!!
 		AI_Output 			(self, other,"Info_HighPriest5_17_02"); //NESSUUUNO DISTURBA IL SOOONNO DEL MIIIO MAEEEESTRO!
-		AI_Output 			(other, self,"Info_HighPriest5_15_03"); //Sbagliato! Il tuo DORMIENTE si sveglierà presto!
+		AI_Output 			(other, self,"Info_HighPriest5_15_03"); //Sbagliato! Il tuo DORMIENTE si sveglierÃ  presto!
 	
 		AI_StopProcessInfos	(self);
 	
@@ -75,7 +75,7 @@ FUNC VOID Info_HighPriest5FAILED_Info()
 	Npc_SetAttitude 	(self, ATT_HOSTILE);
 	Npc_SetTempAttitude (self, ATT_HOSTILE);	
 
-	B_LogEntry			(CH4_EnterTemple,"Grash-Varrag-Arushat non sembra uno degli orchi sciamani non-morti. È molto più potente degli altri e i miei colpi non gli fanno nulla. Ho bisogno di un'arma più potente!");
+	B_LogEntry			(CH4_EnterTemple,"Grash-Varrag-Arushat non sembra uno degli orchi sciamani non-morti. Ãˆ molto piÃ¹ potente degli altri e i miei colpi non gli fanno nulla. Ho bisogno di un'arma piÃ¹ potente!");
 	B_GiveXP			(XP_RetreatFromLastPriest);
 
 	AI_StopProcessInfos	(self);

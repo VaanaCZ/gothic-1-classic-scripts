@@ -44,7 +44,7 @@ FUNC INT DIA_Ricelord_Hello_Condition()
 FUNC VOID DIA_Ricelord_Hello_Info()
 {	
 	AI_Output (other, self,"DIA_Ricelord_Hello_15_00"); //Voi vi prendete cura delle risaie, vero?
-	AI_Output (self, other,"DIA_Ricelord_Hello_12_01"); //Perché, cerchi lavoro?
+	AI_Output (self, other,"DIA_Ricelord_Hello_12_01"); //PerchÃ©, cerchi lavoro?
 };
 
 // ************************************************************
@@ -166,7 +166,7 @@ FUNC VOID DIA_Ricelord_GetWater_Info()
 	if(Lefty_WorkDay == Wld_GetDay())
 	{
 		AI_Output			(self, other,"DIA_Ricelord_GetWater_12_01"); //Bene. Ecco una dozzina di fiaschi.
-		AI_Output			(self, other,"DIA_Ricelord_GetWater_12_02"); //Ce n'è circa il doppio di quella che serve ai contadini, quindi assicurati di distribuirla equamente.
+		AI_Output			(self, other,"DIA_Ricelord_GetWater_12_02"); //Ce n'Ã¨ circa il doppio di quella che serve ai contadini, quindi assicurati di distribuirla equamente.
 
 		CreateInvItems		(self, ItFo_Potion_Water_01, 12);
 		B_GiveInvItems		(self, other, ItFo_Potion_Water_01, 12);
@@ -183,7 +183,7 @@ FUNC VOID DIA_Ricelord_GetWater_Info()
 	}
 	else
 	{
-		AI_Output (self, other,"DIA_Ricelord_GetWater_TooLate_12_01"); //È stato giorni fa, amico! Farai meglio ad andare da lui: ha qualcosa da dirti.
+		AI_Output (self, other,"DIA_Ricelord_GetWater_TooLate_12_01"); //Ãˆ stato giorni fa, amico! Farai meglio ad andare da lui: ha qualcosa da dirti.
 		AI_StopProcessInfos	(self);
 	};
 };

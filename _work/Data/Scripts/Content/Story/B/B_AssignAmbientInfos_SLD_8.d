@@ -81,8 +81,8 @@ FUNC VOID Info_Sld_8_WichtigePersonen_Info()
 	AI_Output(other,self,"Info_Sld_8_WichtigePersonen_15_00"); //Chi comanda qui?
 	AI_Output(self,other,"Info_Sld_8_WichtigePersonen_08_01"); //Noi mercenari seguiamo Lee. Ha fatto un patto coi maghi: noi li proteggiamo e loro ci tirano fuori di qui.
 	AI_Output(other,self,"Info_Sld_8_WichtigePersonen_15_02"); //Quindi i veri comandanti sono i maghi?
-	AI_Output(self,other,"Info_Sld_8_WichtigePersonen_08_03"); //No. Nessuno comanda nel campo. La maggior parte delle persone è composta di gente che non poteva (o voleva) restare a Campo Vecchio.
-	AI_Output(self,other,"Info_Sld_8_WichtigePersonen_08_04"); //Qui ognuno fa ciò che vuole. Siamo tutti d'accordo su un solo punto: meglio accumulare il metallo e bruciarlo, che inviarlo al maledetto sovrano!
+	AI_Output(self,other,"Info_Sld_8_WichtigePersonen_08_03"); //No. Nessuno comanda nel campo. La maggior parte delle persone Ã¨ composta di gente che non poteva (o voleva) restare a Campo Vecchio.
+	AI_Output(self,other,"Info_Sld_8_WichtigePersonen_08_04"); //Qui ognuno fa ciÃ² che vuole. Siamo tutti d'accordo su un solo punto: meglio accumulare il metallo e bruciarlo, che inviarlo al maledetto sovrano!
 	var C_NPC Lee;			Lee		= Hlp_GetNpc(Sld_700_Lee);
 	Lee.aivar[AIV_FINDABLE] = TRUE;
 	var C_NPC Cronos;		Cronos  = Hlp_GetNpc(KdW_604_Cronos);
@@ -115,7 +115,7 @@ FUNC VOID Info_Sld_8_DasLager_Info()
 	AI_Output(self,other,"Info_Sld_8_DasLager_08_01"); //Tieni gli occhi aperti! Ci sono un sacco di tagliagole in giro!
 	AI_Output(self,other,"Info_Sld_8_DasLager_08_02"); //Qui ci sono diverse leggi non scritte. Primo: solo i mercenari possono accedere alle zone in cui si trovano i maghi.
 	AI_Output(self,other,"Info_Sld_8_DasLager_08_03"); //Secondo: se ti avvicini al cumulo di metallo, sei morto. Terzo: non andare alla taverna sul lago.
-	AI_Output(self,other,"Info_Sld_8_DasLager_08_04"); //È la taverna dei ladri e non vogliono dei novellini come te fra i piedi.
+	AI_Output(self,other,"Info_Sld_8_DasLager_08_04"); //Ãˆ la taverna dei ladri e non vogliono dei novellini come te fra i piedi.
 	var C_NPC Cronos;		Cronos  = Hlp_GetNpc(KdW_604_Cronos);
 	Cronos.aivar[AIV_FINDABLE] = TRUE;
 };
@@ -181,7 +181,7 @@ FUNC VOID Info_Sld_8_Krautprobe_Info()
 		else if (Npc_HasItems(other,ItMiJoint_3))
 		{	B_GiveInvItems(other,self,ItMiJoint_3,1);	 };
 		
-		AI_Output(self,other,"Info_Sld_8_Krautprobe_08_01"); //Perché no? TI darò 10 pezzi d'oro.
+		AI_Output(self,other,"Info_Sld_8_Krautprobe_08_01"); //PerchÃ© no? TI darÃ² 10 pezzi d'oro.
 		AI_Output(self,other,"Info_Sld_8_Krautprobe_08_02"); //Vai a chiedere anche agli altri, sicuramente ne vogliono.
 		
 		CreateInvItems(self,itminugget,10);

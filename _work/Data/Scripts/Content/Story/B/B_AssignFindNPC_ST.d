@@ -65,26 +65,26 @@ FUNC VOID Info_FindNPC_ST_CorAngar()
 		{
 			if (self.voice == 2)
 			{
-				AI_Output(self,other,"Info_FindNPC_ST_CorAngar_02_01"); //Il campo d'addestramento dei templari è al secondo livello. Durante il giorno, di solito, lo puoi trovare lì.
+				AI_Output(self,other,"Info_FindNPC_ST_CorAngar_02_01"); //Il campo d'addestramento dei templari Ã¨ al secondo livello. Durante il giorno, di solito, lo puoi trovare lÃ¬.
 			}
 			else if (self.voice == 3)
 			{
-				AI_Output(self,other,"Info_FindNPC_ST_CorAngar_03_01"); //Il campo d'addestramento dei templari è al secondo livello. Durante il giorno, di solito, lo puoi trovare lì.
+				AI_Output(self,other,"Info_FindNPC_ST_CorAngar_03_01"); //Il campo d'addestramento dei templari Ã¨ al secondo livello. Durante il giorno, di solito, lo puoi trovare lÃ¬.
 			}
 			else if (self.voice == 5)
 			{
-				AI_Output(self,other,"Info_FindNPC_ST_CorAngar_05_01"); //Il campo d'addestramento dei templari è al secondo livello. Durante il giorno, di solito, lo puoi trovare lì.
+				AI_Output(self,other,"Info_FindNPC_ST_CorAngar_05_01"); //Il campo d'addestramento dei templari Ã¨ al secondo livello. Durante il giorno, di solito, lo puoi trovare lÃ¬.
 			};
 		}
 		else if (self.guild == GIL_TPL) 
 		{
 			if (self.voice == 8)
 			{
-				AI_Output(self,other,"Info_FindNPC_ST_CorAngar_08_01"); //Il campo d'addestramento dei templari è al secondo livello. Durante il giorno, di solito, lo puoi trovare lì.
+				AI_Output(self,other,"Info_FindNPC_ST_CorAngar_08_01"); //Il campo d'addestramento dei templari Ã¨ al secondo livello. Durante il giorno, di solito, lo puoi trovare lÃ¬.
 			}
 			else if (self.voice == 13)
 			{
-				AI_Output(self,other,"Info_FindNPC_ST_CorAngar_13_01"); //Il campo d'addestramento dei templari è al secondo livello. Durante il giorno, di solito, lo puoi trovare lì.
+				AI_Output(self,other,"Info_FindNPC_ST_CorAngar_13_01"); //Il campo d'addestramento dei templari Ã¨ al secondo livello. Durante il giorno, di solito, lo puoi trovare lÃ¬.
 			};
 		};
 	};
@@ -112,26 +112,26 @@ FUNC VOID Info_FindNPC_ST_CorKalom()
 		{
 			if (self.voice == 2)
 			{
-				AI_Output(self,other,"Info_FindNPC_ST_CorKalom_02_01"); //Il laboratorio alchemico si trova al secondo livello, vicino alla collina del tempio. Lui lavora lì giorno e notte.
+				AI_Output(self,other,"Info_FindNPC_ST_CorKalom_02_01"); //Il laboratorio alchemico si trova al secondo livello, vicino alla collina del tempio. Lui lavora lÃ¬ giorno e notte.
 			}
 			else if (self.voice == 3)
 			{
-				AI_Output(self,other,"Info_FindNPC_ST_CorKalom_03_01"); //Il laboratorio alchemico si trova al secondo livello, vicino alla collina del tempio. Lui lavora lì giorno e notte.
+				AI_Output(self,other,"Info_FindNPC_ST_CorKalom_03_01"); //Il laboratorio alchemico si trova al secondo livello, vicino alla collina del tempio. Lui lavora lÃ¬ giorno e notte.
 			}
 			else if (self.voice == 5)
 			{
-				AI_Output(self,other,"Info_FindNPC_ST_CorKalom_05_01"); //Il laboratorio alchemico si trova al secondo livello, vicino alla collina del tempio. Lui lavora lì giorno e notte.
+				AI_Output(self,other,"Info_FindNPC_ST_CorKalom_05_01"); //Il laboratorio alchemico si trova al secondo livello, vicino alla collina del tempio. Lui lavora lÃ¬ giorno e notte.
 			};
 		}
 		else if (self.guild == GIL_TPL) 
 		{
 			if (self.voice == 8)
 			{
-				AI_Output(self,other,"Info_FindNPC_ST_CorKalom_08_01"); //Il laboratorio alchemico si trova al secondo livello, vicino alla collina del tempio. Lui lavora lì giorno e notte.
+				AI_Output(self,other,"Info_FindNPC_ST_CorKalom_08_01"); //Il laboratorio alchemico si trova al secondo livello, vicino alla collina del tempio. Lui lavora lÃ¬ giorno e notte.
 			}
 			else if (self.voice == 13)
 			{
-				AI_Output(self,other,"Info_FindNPC_ST_CorKalom_13_01"); //Il laboratorio alchemico si trova al secondo livello, vicino alla collina del tempio. Lui lavora lì giorno e notte.
+				AI_Output(self,other,"Info_FindNPC_ST_CorKalom_13_01"); //Il laboratorio alchemico si trova al secondo livello, vicino alla collina del tempio. Lui lavora lÃ¬ giorno e notte.
 			};
 		};
 	};

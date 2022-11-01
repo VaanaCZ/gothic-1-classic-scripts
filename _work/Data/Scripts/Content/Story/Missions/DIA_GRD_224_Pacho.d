@@ -53,12 +53,12 @@ func void Info_Pacho_STOP_Info()
 	AI_Output			(hero, self,"Info_Pacho_STOP_15_02"); //Chi, io?
 	AI_Output			(self, hero,"Info_Pacho_STOP_13_03"); //No, tuo nonno... Ci sei solo tu, qui!
 	AI_Output			(self, hero,"Info_Pacho_STOP_13_04"); //Io non andrei da quella parte, se fossi in te!
-	AI_Output			(hero, self,"Info_Pacho_STOP_15_05"); //Perché?
+	AI_Output			(hero, self,"Info_Pacho_STOP_15_05"); //PerchÃ©?
 	AI_Output			(self, hero,"Info_Pacho_STOP_13_06"); //Devi essere nuovo di queste parti!
-	AI_Output			(self, hero,"Info_Pacho_STOP_13_07"); //Amico, quella è la strada che porta alla terra degli orchi...
+	AI_Output			(self, hero,"Info_Pacho_STOP_13_07"); //Amico, quella Ã¨ la strada che porta alla terra degli orchi...
 	AI_Output			(self, hero,"Info_Pacho_STOP_13_08"); //Ti ridurranno in polpette!
 	AI_Output			(hero, self,"Info_Pacho_STOP_15_09"); //Oh.
-	AI_Output			(self, hero,"Info_Pacho_STOP_13_10"); //Prego, non c'è di che!
+	AI_Output			(self, hero,"Info_Pacho_STOP_13_10"); //Prego, non c'Ã¨ di che!
 
 	AI_StopProcessInfos	(self);
 };

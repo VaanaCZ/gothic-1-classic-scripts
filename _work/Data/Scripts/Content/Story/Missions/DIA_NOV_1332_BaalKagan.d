@@ -75,7 +75,7 @@ FUNC VOID DIA_BaalKagan_WhyHere_Info()
 	AI_Output			(other, self,"DIA_BaalKagan_WhyHere_15_00"); //Cosa stai facendo?
 	AI_Output			(self, other,"DIA_BaalKagan_WhyHere_13_01"); //All'inizio ero venuto qui per convincere la gente a unirsi alla Fratellanza.
 	AI_Output			(self, other,"DIA_BaalKagan_WhyHere_13_02"); //Ma questi barbari non sono interessati alla salvezza dello spirito, quindi mi limito a vendere erba di palude.
-	AI_Output			(self, other,"DIA_BaalKagan_WhyHere_13_03"); //» un lavoro molto popolare da queste parti. Anche troppo. Riesco a malapena a soddisfare le richieste.
+	AI_Output			(self, other,"DIA_BaalKagan_WhyHere_13_03"); //√à un lavoro molto popolare da queste parti. Anche troppo. Riesco a malapena a soddisfare le richieste.
 
 	Log_CreateTopic	(GE_TraderNC,	LOG_NOTE);
 	B_LogEntry		(GE_TraderNC,"Baal Kagan vende erba ai ladri e ai mercenari di Campo Nuovo.");
@@ -121,7 +121,7 @@ INSTANCE DIA_BaalKagan_OrderHelp(C_INFO)
 	condition	= DIA_BaalKagan_OrderHelp_Condition;
 	information	= DIA_BaalKagan_OrderHelp_Info;
 	permanent	= 0;
-	description = "PerchÈ non mandano qualcuno ad aiutarti?";
+	description = "Perch√© non mandano qualcuno ad aiutarti?";
 };                       
 
 FUNC INT DIA_BaalKagan_OrderHelp_Condition()
@@ -134,9 +134,9 @@ FUNC INT DIA_BaalKagan_OrderHelp_Condition()
 
 FUNC VOID DIA_BaalKagan_OrderHelp_Info()
 {	
-	AI_Output			(other, self,"DIA_BaalKagan_OrderHelp_15_00"); //PerchÈ non mandano qualcuno ad aiutarti?
+	AI_Output			(other, self,"DIA_BaalKagan_OrderHelp_15_00"); //Perch√© non mandano qualcuno ad aiutarti?
 	AI_Output			(self, other,"DIA_BaalKagan_OrderHelp_13_01"); //Doveva pensarci Baal Isidro, ma passa tutto il giorno alla taverna sul lago, scambiando la sua erba con grappa di riso.
-	AI_Output			(self, other,"DIA_BaalKagan_OrderHelp_13_02"); //» un alcolizzato: non mi aspetto alcun aiuto da parte sua.
+	AI_Output			(self, other,"DIA_BaalKagan_OrderHelp_13_02"); //√à un alcolizzato: non mi aspetto alcun aiuto da parte sua.
 	
 	if (Lares_Get400Ore == LOG_RUNNING)
 	{
@@ -147,7 +147,7 @@ FUNC VOID DIA_BaalKagan_OrderHelp_Info()
 };
 
 // ************************************************************
-// 					Ich kˆnnte dir helfen
+// 					Ich k√∂nnte dir helfen
 // ************************************************************
 
 INSTANCE DIA_BaalKagan_WannaHelp(C_INFO)
@@ -173,9 +173,9 @@ FUNC VOID DIA_BaalKagan_WannaHelp_Info()
 	AI_Output			(other, self,"DIA_BaalKagan_WannaHelp_15_00"); //Posso aiutarti a vendere l'erba alla gente.
 	AI_Output			(self, other,"DIA_BaalKagan_WannaHelp_13_01"); //Posso fidarmi solo degli appartenenti alla Fratellanza.
 	AI_Output			(self, other,"DIA_BaalKagan_WannaHelp_13_02"); //Ma potresti aiutarmi a consegnare dei campioni omaggio.
-	AI_Output			(self, other,"DIA_BaalKagan_WannaHelp_13_03"); //Non tutti hanno provato la mia merce e, quando l'avranno fatto, ne vorranno ancora. Questo significa che ne venderÚ di pi˘.
+	AI_Output			(self, other,"DIA_BaalKagan_WannaHelp_13_03"); //Non tutti hanno provato la mia merce e, quando l'avranno fatto, ne vorranno ancora. Questo significa che ne vender√≤ di pi√π.
 	AI_Output			(other, self,"DIA_BaalKagan_WannaHelp_15_04"); //Pensavo che riuscissi a malapena a gestire la clientela.
-	AI_Output			(self, other,"DIA_BaalKagan_WannaHelp_13_05"); //Presto Baal Isidro sar‡ messo in riga. Ho gi‡ inviato un messaggio a Cor Kalom.
+	AI_Output			(self, other,"DIA_BaalKagan_WannaHelp_13_05"); //Presto Baal Isidro sar√† messo in riga. Ho gi√† inviato un messaggio a Cor Kalom.
 };
 
 // ************************************************************
@@ -189,7 +189,7 @@ INSTANCE DIA_BaalKagan_WasDrin(C_INFO)
 	condition	= DIA_BaalKagan_WasDrin_Condition;
 	information	= DIA_BaalKagan_WasDrin_Info;
 	permanent	= 0;
-	description = "Cosa otterrÚ, aiutandoti a smerciare l'erba?";
+	description = "Cosa otterr√≤, aiutandoti a smerciare l'erba?";
 };                       
 
 FUNC INT DIA_BaalKagan_WasDrin_Condition()
@@ -202,12 +202,12 @@ FUNC INT DIA_BaalKagan_WasDrin_Condition()
 
 FUNC VOID DIA_BaalKagan_WasDrin_Info()
 {	
-	AI_Output			(other, self,"DIA_BaalKagan_WasDrin_15_00"); //Cosa otterrÚ aiutandoti a smerciare l'erba?
+	AI_Output			(other, self,"DIA_BaalKagan_WasDrin_15_00"); //Cosa otterr√≤ aiutandoti a smerciare l'erba?
 	AI_Output			(self, other,"DIA_BaalKagan_WasDrin_13_01"); //Posso ricompensarti in molti modi.
-	AI_Output			(self, other,"DIA_BaalKagan_WasDrin_13_02"); //Puoi avere degli incantesimi nei quali Ë contenuta la potente magia del Dormiente.
+	AI_Output			(self, other,"DIA_BaalKagan_WasDrin_13_02"); //Puoi avere degli incantesimi nei quali √® contenuta la potente magia del Dormiente.
 	if (Npc_GetTrueGuild(hero) == GIL_NONE)
 	{
-		AI_Output		(self, other,"DIA_BaalKagan_WasDrin_13_03"); //Oppure posso aiutarti a entrare a far parte della nostra comunit‡, se Ë ciÚ che desideri. Sono in ottimi rapporti con Cor Kalom e Baal Tyon.
+		AI_Output		(self, other,"DIA_BaalKagan_WasDrin_13_03"); //Oppure posso aiutarti a entrare a far parte della nostra comunit√†, se √® ci√≤ che desideri. Sono in ottimi rapporti con Cor Kalom e Baal Tyon.
 		AI_Output		(self, other,"DIA_BaalKagan_WasDrin_13_04"); //Entrambi sono molto vicini a Y'Berion, il nostro capo.
 	};
 	AI_Output			(self, other,"DIA_BaalKagan_WasDrin_13_05"); //Se preferisci, posso pagarti in metallo. 100 pezzi saranno sufficienti come ricompensa per il tuo lavoro.
@@ -240,8 +240,8 @@ FUNC INT DIA_BaalKagan_GimmeKraut_Condition()
 FUNC VOID DIA_BaalKagan_GimmeKraut_Info()
 {	
 	AI_Output			(other, self,"DIA_BaalKagan_GimmeKraut_15_00"); //D'accordo, dammi l'erba. A chi devo consegnarla?
-	AI_Output			(self, other,"DIA_BaalKagan_GimmeKraut_13_01"); //Troverai di certo qualcuno che la vorr‡. Parla con la gente. Ricorda: UNA SOLA pianta per ogni persona.
-	AI_Output			(self, other,"DIA_BaalKagan_GimmeKraut_13_02"); //Ancora una cosa: se ti fai derubare o ne fai uso personale, il nostro accordo cesser‡ immediatamente.
+	AI_Output			(self, other,"DIA_BaalKagan_GimmeKraut_13_01"); //Troverai di certo qualcuno che la vorr√†. Parla con la gente. Ricorda: UNA SOLA pianta per ogni persona.
+	AI_Output			(self, other,"DIA_BaalKagan_GimmeKraut_13_02"); //Ancora una cosa: se ti fai derubare o ne fai uso personale, il nostro accordo cesser√† immediatamente.
 	AI_Output			(other, self,"DIA_BaalKagan_GimmeKraut_15_03"); //Va bene.
 	BaalKagan_VerteilKraut = LOG_RUNNING;
 	
@@ -280,11 +280,11 @@ FUNC VOID DIA_BaalKagan_SUCCESS_Info()
 	AI_Output			(other, self,"DIA_BaalKagan_SUCCESS_15_00"); //Ho distribuito l'erba.
 	if (NC_Joints_verteilt >= 8)
 	{
-		AI_Output			(self, other,"DIA_BaalKagan_SUCCESS_13_01"); //I primi clienti nuovi sono gi‡ venuti da me. Hai fatto un buon lavoro.
+		AI_Output			(self, other,"DIA_BaalKagan_SUCCESS_13_01"); //I primi clienti nuovi sono gi√† venuti da me. Hai fatto un buon lavoro.
 		AI_Output			(self, other,"DIA_BaalKagan_SUCCESS_13_02"); //Cosa desideri come ricompensa?
 		
 		Info_ClearChoices(DIA_BaalKagan_SUCCESS);
-		Info_AddChoice   (DIA_BaalKagan_SUCCESS,"PrenderÚ il metallo.",DIA_BaalKagan_SUCCESS_Erz);
+		Info_AddChoice   (DIA_BaalKagan_SUCCESS,"Prender√≤ il metallo.",DIA_BaalKagan_SUCCESS_Erz);
 		if (Npc_GetTrueGuild(hero) == GIL_NONE)
 		{
 			Info_AddChoice(DIA_BaalKagan_SUCCESS,"Aiutami a entrare nella Fratellanza.",DIA_BaalKagan_SUCCESS_Join);
@@ -306,28 +306,28 @@ func void DIA_BaalKagan_SUCCESS_WhatSpells()
 {
 	AI_Output			(other, self,"DIA_BaalKagan_SUCCESS_WhatSpells_15_00"); //Questi incantesimi sono molto interessanti: di che tipo sono?
 	AI_Output			(self, other,"DIA_BaalKagan_SUCCESS_WhatSpells_13_01"); //Colpo di vento, Carisma, Telecinesi, Pirocinesi e Sonno. Puoi prenderne tre.
-	Info_AddChoice   (DIA_BaalKagan_SUCCESS,"PrenderÚ i tre incantesimi.",DIA_BaalKagan_SUCCESS_TakeScrolls);
+	Info_AddChoice   (DIA_BaalKagan_SUCCESS,"Prender√≤ i tre incantesimi.",DIA_BaalKagan_SUCCESS_TakeScrolls);
 };
 
 func void DIA_BaalKagan_SUCCESS_Join()
 {
 	Info_ClearChoices(DIA_BaalKagan_SUCCESS);
 	AI_Output			(other, self,"DIA_BaalKagan_SUCCESS_Join_15_00"); //Aiutami a entrare nella Fratellanza.
-	AI_Output			(self, other,"DIA_BaalKagan_SUCCESS_Join_13_01"); //Non chiedi molto, ti aiuterÚ. Ascolta: Baal Tyon Ë uno dei guru meno potenti, come me.
-	AI_Output			(self, other,"DIA_BaalKagan_SUCCESS_Join_13_02"); //Y'Berion l'ha eletto suo consigliere, ma Ë stato un errore.
-	AI_Output			(self, other,"DIA_BaalKagan_SUCCESS_Join_13_03"); //Ora crede di essere cosÏ importante che parla solo coi suoi discepoli.
-	AI_Output			(self, other,"DIA_BaalKagan_SUCCESS_Join_13_04"); //Se gli darai questo, gli si scioglier‡ la lingua.
+	AI_Output			(self, other,"DIA_BaalKagan_SUCCESS_Join_13_01"); //Non chiedi molto, ti aiuter√≤. Ascolta: Baal Tyon √® uno dei guru meno potenti, come me.
+	AI_Output			(self, other,"DIA_BaalKagan_SUCCESS_Join_13_02"); //Y'Berion l'ha eletto suo consigliere, ma √® stato un errore.
+	AI_Output			(self, other,"DIA_BaalKagan_SUCCESS_Join_13_03"); //Ora crede di essere cos√¨ importante che parla solo coi suoi discepoli.
+	AI_Output			(self, other,"DIA_BaalKagan_SUCCESS_Join_13_04"); //Se gli darai questo, gli si scioglier√† la lingua.
 	CreateInvItem       (self, SpecialJoint);
 	B_GiveInvItems		(self, other, SpecialJoint, 1);
 
 	Log_CreateTopic		(CH1_JoinPsi,	LOG_MISSION);
 	Log_SetTopicStatus	(CH1_JoinPsi,	LOG_RUNNING);
-	B_LogEntry			(CH1_JoinPsi,"Baal Kagan mi ha consegnato della speciale 'EVOCASOGNI' per Baal Tyon. Mi aiuter‡ a entrare nella Fratellanza.");
+	B_LogEntry			(CH1_JoinPsi,"Baal Kagan mi ha consegnato della speciale 'EVOCASOGNI' per Baal Tyon. Mi aiuter√† a entrare nella Fratellanza.");
 };
 
 func void DIA_BaalKagan_SUCCESS_Erz()
 {
-	AI_Output			(other, self,"DIA_BaalKagan_SUCCESS_Erz_15_00"); //PrenderÚ i 100 pezzi di metallo.
+	AI_Output			(other, self,"DIA_BaalKagan_SUCCESS_Erz_15_00"); //Prender√≤ i 100 pezzi di metallo.
 	AI_Output			(self, other,"DIA_BaalKagan_SUCCESS_Erz_13_01"); //Molto bene. Eccoli...
 	
 	CreateInvItems		(self, itminugget, 100);
@@ -338,7 +338,7 @@ func void DIA_BaalKagan_SUCCESS_Erz()
 //-----------------------------------------------------------------------
 func void DIA_BaalKagan_SUCCESS_TakeScrolls()
 {
-	AI_Output			(other, self,"DIA_BaalKagan_SUCCESS_TakeScrolls_15_00"); //PrenderÚ gli incantesimi.
+	AI_Output			(other, self,"DIA_BaalKagan_SUCCESS_TakeScrolls_15_00"); //Prender√≤ gli incantesimi.
 	AI_Output			(self, other,"DIA_BaalKagan_SUCCESS_TakeScrolls_13_01"); //Saggia decisione. Scegline tre.
 	Info_ClearChoices(DIA_BaalKagan_SUCCESS);
 	Info_AddChoice   (DIA_BaalKagan_SUCCESS,"Pugno di Vento",DIA_BaalKagan_SUCCESS_TakeScrolls_Windfaust);

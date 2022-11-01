@@ -48,7 +48,7 @@ FUNC void  GRD_261_Brandick_ALEPH_Info()
 {
 	AI_Output			(other, self,"GRD_261_Brandick_ALEPH_Info_15_01"); //Ascolta. Quando non ci sei, Aleph passa tutto il tempo seduto a far niente.
 	AI_Output			(self, other,"GRD_261_Brandick_ALEPH_Info_06_02"); //Davvero?
-	AI_Output			(self, other,"GRD_261_Brandick_ALEPH_Info_06_03"); //Sai cosa mi fa più schifo dei perdigiorno? Le spie! Sparisci!
+	AI_Output			(self, other,"GRD_261_Brandick_ALEPH_Info_06_03"); //Sai cosa mi fa piÃ¹ schifo dei perdigiorno? Le spie! Sparisci!
 	
 	AI_StopProcessInfos	(self);
 };  

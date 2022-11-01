@@ -52,7 +52,7 @@ FUNC VOID Info_Mine_Vlk_4_Mine_Info()
 {
 	AI_Output(other,self,"Info_Mine_Vlk_4_Mine_15_00"); //Parlami della miniera.
 	AI_Output(self,other,"Info_Mine_Vlk_4_Mine_01_01"); //Picconi e sudore, ecco cosa ti aspetta. Tutto qui.
-	AI_Output(self,other,"Info_Mine_Vlk_4_Mine_01_02"); //E quando te ne sarai andato da molto tempo, io sarÚ ancora qui a estrarre il metallo: Ë il mio lavoro... e la mia vita.
+	AI_Output(self,other,"Info_Mine_Vlk_4_Mine_01_02"); //E quando te ne sarai andato da molto tempo, io sar√≤ ancora qui a estrarre il metallo: √® il mio lavoro... e la mia vita.
 };
 
 // *************************************************************************
@@ -65,7 +65,7 @@ INSTANCE Info_Mine_Vlk_4_WichtigePersonen(C_INFO)
 	condition	= Info_Mine_Vlk_4_WichtigePersonen_Condition;
 	information	= Info_Mine_Vlk_4_WichtigePersonen_Info;
 	permanent	= 1;
-	description = "Chi Ë il capo, qui?";
+	description = "Chi √® il capo, qui?";
 };                       
 
 FUNC INT Info_Mine_Vlk_4_WichtigePersonen_Condition()
@@ -78,7 +78,7 @@ FUNC INT Info_Mine_Vlk_4_WichtigePersonen_Condition()
 
 FUNC VOID Info_Mine_Vlk_4_WichtigePersonen_Info()
 {
-	AI_Output(other,self,"Info_Mine_Vlk_4_WichtigePersonen_15_00"); //Chi Ë il capo, qui?
+	AI_Output(other,self,"Info_Mine_Vlk_4_WichtigePersonen_15_00"); //Chi √® il capo, qui?
 	AI_Output(self,other,"Info_Mine_Vlk_4_WichtigePersonen_01_01"); //Santino e Alberto scambiano il metallo che noi estraiamo con merci di vario tipo e ci forniscono le razioni quotidiane.
 };
 
@@ -106,7 +106,7 @@ FUNC INT Info_Mine_Vlk_4_Minecrawler_Condition()
 FUNC VOID Info_Mine_Vlk_4_Minecrawler_Info()
 {
 	AI_Output(other,self,"Info_Mine_Vlk_4_Minecrawler_15_00"); //Cosa mi dici dei pidocchi di miniera?
-	AI_Output(self,other,"Info_Mine_Vlk_4_Minecrawler_01_01"); //Se vedi uno di quei mostri, colpiscilo forte in mezzo agli occhi col piccone. PerÚ devi mirare bene, perchÈ non avrai una seconda possibilit‡.
+	AI_Output(self,other,"Info_Mine_Vlk_4_Minecrawler_01_01"); //Se vedi uno di quei mostri, colpiscilo forte in mezzo agli occhi col piccone. Per√≤ devi mirare bene, perch√© non avrai una seconda possibilit√†.
 	
 };
 

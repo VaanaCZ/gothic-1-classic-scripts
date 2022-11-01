@@ -81,7 +81,7 @@ FUNC INT DIA_Snaf_Zutaten_Condition()
 FUNC VOID DIA_Snaf_Zutaten_Info()
 {
 	AI_Output (other, self,"DIA_Snaf_Zutaten_15_00"); //Cosa posso fare per te?
-	AI_Output (self, other,"DIA_Snaf_Zutaten_01_01"); //Devi essere una buona forchetta. Ho inventato una nuova ricetta: ragù di scarafaggio 'à la Snaf', con riso e funghi.
+	AI_Output (self, other,"DIA_Snaf_Zutaten_01_01"); //Devi essere una buona forchetta. Ho inventato una nuova ricetta: ragÃ¹ di scarafaggio 'Ã  la Snaf', con riso e funghi.
 	AI_Output (self, other,"DIA_Snaf_Zutaten_01_02"); //Puoi averne quanto ne vuoi, ma ho bisogno di altri 3 scarafaggi e alcuni funghi del demonio: 5 possono bastare.
 	
 	Info_ClearChoices(DIA_Snaf_Zutaten);
@@ -92,8 +92,8 @@ FUNC VOID DIA_Snaf_Zutaten_Info()
 func void DIA_Snaf_Zutaten_KOTZ()
 {
 	AI_Output (other, self,"DIA_Snaf_Zutaten_KOTZ_15_00"); //Vuoi farmi vomitare?
-	AI_Output (self, other,"DIA_Snaf_Zutaten_KOTZ_01_01"); //Non devi per forza mangiarlo, però potresti provarci! Se ti capita di avere in mano ciò che ti ho chiesto, pensa a me.
-	AI_Output (self, other,"DIA_Snaf_Zutaten_KOTZ_01_02"); //Ho già mandato qualcuno, ma non è mai tornato: deve essere passato a Campo Nuovo.
+	AI_Output (self, other,"DIA_Snaf_Zutaten_KOTZ_01_01"); //Non devi per forza mangiarlo, perÃ² potresti provarci! Se ti capita di avere in mano ciÃ² che ti ho chiesto, pensa a me.
+	AI_Output (self, other,"DIA_Snaf_Zutaten_KOTZ_01_02"); //Ho giÃ  mandato qualcuno, ma non Ã¨ mai tornato: deve essere passato a Campo Nuovo.
 	Snaf_Zutaten = LOG_RUNNING;
 	
 	Log_CreateTopic(CH1_SnafsRecipe, LOG_MISSION);
@@ -107,13 +107,13 @@ func void DIA_Snaf_Zutaten_DoIt()
 {
 	AI_Output (other, self,"DIA_Snaf_Zutaten_DoIt_15_00"); //Suona bene.
 	AI_Output (self, other,"DIA_Snaf_Zutaten_DoIt_01_01"); //Allora vai a cercarmi le cose che ti ho chiesto.
-	AI_Output (self, other,"DIA_Snaf_Zutaten_DoIt_01_02"); //L'ultimo che ho mandato non è mai tornato: deve essere passato a Campo Nuovo.
+	AI_Output (self, other,"DIA_Snaf_Zutaten_DoIt_01_02"); //L'ultimo che ho mandato non Ã¨ mai tornato: deve essere passato a Campo Nuovo.
 	Snaf_Zutaten = LOG_RUNNING;
 	Snaf_FreeMBRagout = TRUE;
 		
     Log_CreateTopic(CH1_SnafsRecipe, LOG_MISSION);
 	Log_SetTopicStatus(CH1_SnafsRecipe, LOG_RUNNING);
-	B_LogEntry( CH1_SnafsRecipe,"Snaf, il cuoco che vive nell'anello esterno di Campo Vecchio, mi ha inviato a cercare 3 scarafaggi e 5 funghi del demonio per una nuova ricetta. Quando sarà pronta, potrò averne un po'.");		
+	B_LogEntry( CH1_SnafsRecipe,"Snaf, il cuoco che vive nell'anello esterno di Campo Vecchio, mi ha inviato a cercare 3 scarafaggi e 5 funghi del demonio per una nuova ricetta. Quando sarÃ  pronta, potrÃ² averne un po'.");		
 			
 	Info_ClearChoices(DIA_Snaf_Zutaten);	
 };
@@ -143,10 +143,10 @@ FUNC INT DIA_Snaf_ZutatenSuccess_Condition()
 FUNC VOID DIA_Snaf_ZutatenSuccess_Info()
 {
 	AI_Output (other, self,"DIA_Snaf_ZutatenSuccess_15_00"); //Ho le cose che mi hai chiesto!
-	AI_Output (self, other,"DIA_Snaf_ZutatenSuccess_01_01"); //Ottimo! Ora devo solo aggiungerle e il bollito sarà pronto... Aspetta...
+	AI_Output (self, other,"DIA_Snaf_ZutatenSuccess_01_01"); //Ottimo! Ora devo solo aggiungerle e il bollito sarÃ  pronto... Aspetta...
 	
 	CreateInvItems(other, ItFo_Plants_Mushroom_01, 3);
-	B_GiveInvItems(other,self,ItFo_Plants_Mushroom_01,8);//Notwendig zur Anzeige 8 Items übergeben, wird sofort angepasst
+	B_GiveInvItems(other,self,ItFo_Plants_Mushroom_01,8);//Notwendig zur Anzeige 8 Items Ã¼bergeben, wird sofort angepasst
 	
 	Npc_RemoveInvItems(self, ItFo_Plants_Mushroom_01, 8);//Alle Zutaten weg
 	Npc_RemoveInvItems(other, ItAt_MeatBug_01, 3);
@@ -161,7 +161,7 @@ FUNC VOID DIA_Snaf_ZutatenSuccess_Info()
 	
 	if Snaf_FreeMBRagout==TRUE
 	{
-	    B_LogEntry( CH1_SnafsRecipe,"D'ora in poi, potrò avere del ragù di scarafaggio tutti i giorni.");
+	    B_LogEntry( CH1_SnafsRecipe,"D'ora in poi, potrÃ² avere del ragÃ¹ di scarafaggio tutti i giorni.");
 	};
 	
 	B_GiveXP(100);
@@ -199,14 +199,14 @@ FUNC VOID DIA_Snaf_AfterSuccess_Info()
  	
  	if (Snaf_RagoutDay!=Wld_GetDay())
  	{
- 		AI_Output (self, other,"DIA_Snaf_AfterSuccess_01_01"); //È vero. Ecco, prendine 3 porzioni.
+ 		AI_Output (self, other,"DIA_Snaf_AfterSuccess_01_01"); //Ãˆ vero. Ecco, prendine 3 porzioni.
 		CreateInvItems(self, ItFoMeatbugragout,3);
 		B_GiveInvItems(self, other,ItFoMeatbugragout,3);
 		Snaf_RagoutDay = Wld_GetDay();
 	}
 	else
 	{
-		AI_Output (self, other,"DIA_Snaf_AfterSuccess_01_02"); //Certo! Ma oggi non ce n'è più. Torna domani!
+		AI_Output (self, other,"DIA_Snaf_AfterSuccess_01_02"); //Certo! Ma oggi non ce n'Ã¨ piÃ¹. Torna domani!
 	};
 };
 
@@ -266,7 +266,7 @@ FUNC INT DIA_Snaf_WhereMushrooms_Condition()
 FUNC VOID DIA_Snaf_WhereMushrooms_Info()
 {
 	AI_Output (other, self,"DIA_Snaf_WhereMushrooms_15_00"); //Dove trovo i funghi del demonio?
-	AI_Output (self, other,"DIA_Snaf_WhereMushrooms_01_01"); //Esci dal cancello sud, la torre crollata. Vedrai una pianura di fronte a te. Lì crescono i funghi.
+	AI_Output (self, other,"DIA_Snaf_WhereMushrooms_01_01"); //Esci dal cancello sud, la torre crollata. Vedrai una pianura di fronte a te. LÃ¬ crescono i funghi.
 	
 	B_LogEntry( CH1_SnafsRecipe,"I funghi del demonio si trovano nella pianura, di fronte alla torre crollata del cancello sud.");			
 };
@@ -297,7 +297,7 @@ FUNC VOID DIA_Snaf_WhereNek_Info()
 {
 	AI_Output (other, self,"DIA_Snaf_WhereNek_15_00"); //Chi era il tizio che hai mandato prima di me?
 	AI_Output (self, other,"DIA_Snaf_WhereNek_01_01"); //Si chiamava Nek. Non era felice di stare qui, credo sia passato a Campo Nuovo.
-	AI_Output (self, other,"DIA_Snaf_WhereNek_01_02"); //L'ho mandato a raccogliere funghi, ma non è più tornato...
+	AI_Output (self, other,"DIA_Snaf_WhereNek_01_02"); //L'ho mandato a raccogliere funghi, ma non Ã¨ piÃ¹ tornato...
 	
 	if	(Sly_LostNek != LOG_SUCCESS)
 	&&	(Npc_GetTrueGuild(hero) == GIL_NONE)
@@ -305,7 +305,7 @@ FUNC VOID DIA_Snaf_WhereNek_Info()
 		Log_CreateTopic		(CH1_LostNek,	LOG_MISSION);
 		Log_SetTopicStatus	(CH1_LostNek,	LOG_RUNNING);
 	};
-	B_LogEntry			(CH1_LostNek,"Snaf il cuoco è stato l'ultimo ad aver visto Nek: l'ha inviato in cerca di funghi.");
+	B_LogEntry			(CH1_LostNek,"Snaf il cuoco Ã¨ stato l'ultimo ad aver visto Nek: l'ha inviato in cerca di funghi.");
 };
 
 

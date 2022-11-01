@@ -23,7 +23,7 @@ FUNC VOID  DIA_GorNaDrak_EXIT_Info()
 };
 
 // **************************************************
-//					Erste Begrüssung
+//					Erste BegrÃ¼ssung
 // **************************************************
 
 instance  DIA_GorNaDrak_Greet (C_INFO)
@@ -110,7 +110,7 @@ FUNC VOID  DIA_GorNaDrak_TeachMandibles_Info()
 };
 
 // **************************************************
-//			 	Wofür ist Sekret da?
+//			 	WofÃ¼r ist Sekret da?
 // **************************************************
 
 instance  DIA_GorNaDrak_WhatFor (C_INFO)
@@ -136,7 +136,7 @@ FUNC VOID  DIA_GorNaDrak_WhatFor_Info()
 	AI_Output (other, self,"DIA_GorNaDrak_WhatFor_15_00"); //Cosa ci fa Cor Kalom con la secrezione?
 	AI_Output (self, other,"DIA_GorNaDrak_WhatFor_09_01"); //Da quel che so, la trasforma in una pozione che aumenta i poteri magici dei novizi.
 	AI_Output (self, other,"DIA_GorNaDrak_WhatFor_09_02"); //Da quando stiamo preparando la grande evocazione, non ne ha mai a sufficienza.
-	AI_Output (self, other,"DIA_GorNaDrak_WhatFor_09_03"); //Con l'aiuto della pozione, preparerà i novizi per il gran giorno.
+	AI_Output (self, other,"DIA_GorNaDrak_WhatFor_09_03"); //Con l'aiuto della pozione, preparerÃ  i novizi per il gran giorno.
 };
 
 // **************************************************

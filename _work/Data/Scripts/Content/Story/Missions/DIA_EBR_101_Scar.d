@@ -58,7 +58,7 @@ INSTANCE DIA_SCAR_What (C_INFO)
 	condition	= DIA_SCAR_What_Condition;
 	information	= DIA_SCAR_What_Info;
 	permanent	= 0;
-	description = "Qual Ë il tuo compito?";
+	description = "Qual √® il tuo compito?";
 };                       
 
 FUNC INT DIA_SCAR_What_Condition()
@@ -102,10 +102,10 @@ FUNC VOID DIA_SCAR_Frau_Info()
 {	
 	AI_Output (other, self,"DIA_SCAR_Frau_15_00"); //Quando mi hanno gettato qui, ho visto una donna che veniva fatta scendere insieme alle merci.
 	AI_Output (self, other,"DIA_SCAR_Frau_08_01"); //E allora?
-	AI_Output (other, self,"DIA_SCAR_Frau_15_02"); //» qui?
+	AI_Output (other, self,"DIA_SCAR_Frau_15_02"); //√à qui?
 	AI_Output (self, other,"DIA_SCAR_Frau_08_03"); //Se sei interessato a lei, lascia che ti dia un consiglio: dimenticala.
-	AI_Output (self, other,"DIA_SCAR_Frau_08_04"); //Appena Ë arrivata, Gomez l'ha chiusa a chiave nella sua camera da letto.
-	AI_Output (self, other,"DIA_SCAR_Frau_08_05"); //Quando avr‡ finito con lei, forse la rimander‡ indietro. In ogni caso, per ora Ë SUA, quindi farai meglio a non pensarci.
+	AI_Output (self, other,"DIA_SCAR_Frau_08_04"); //Appena √® arrivata, Gomez l'ha chiusa a chiave nella sua camera da letto.
+	AI_Output (self, other,"DIA_SCAR_Frau_08_05"); //Quando avr√† finito con lei, forse la rimander√† indietro. In ogni caso, per ora √® SUA, quindi farai meglio a non pensarci.
 };
 
 // ************************************************************
@@ -133,7 +133,7 @@ FUNC INT DIA_SCAR_PERM_Condition()
 FUNC VOID DIA_SCAR_PERM_Info()
 {	
 	AI_Output (other, self,"DIA_SCAR_PERM_15_00"); //Puoi dirmi qualcosa su Gomez?
-	AI_Output (self, other,"DIA_SCAR_PERM_08_01"); //Tutto ciÚ che devi sapere Ë che si tratta dell'uomo pi˘ potente della colonia.
-	AI_Output (self, other,"DIA_SCAR_PERM_08_02"); //Prende quello che vuole, ma tutto ciÚ che desidera veramente Ë il potere.
+	AI_Output (self, other,"DIA_SCAR_PERM_08_01"); //Tutto ci√≤ che devi sapere √® che si tratta dell'uomo pi√π potente della colonia.
+	AI_Output (self, other,"DIA_SCAR_PERM_08_02"); //Prende quello che vuole, ma tutto ci√≤ che desidera veramente √® il potere.
 };
 

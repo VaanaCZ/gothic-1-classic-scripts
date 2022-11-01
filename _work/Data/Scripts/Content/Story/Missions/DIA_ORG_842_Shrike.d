@@ -48,7 +48,7 @@ func void  DIA_Shrike_Hello_Info()
 	AI_Output (self, other,"DIA_Shrike_Hello_07_01"); //Sparisci!
 	
 	
-	//FMTaken = TRUE; 			//******* TEST - Helper für Sld-KdW Aufnahme!!! *********************  
+	//FMTaken = TRUE; 			//******* TEST - Helper fÃ¼r Sld-KdW Aufnahme!!! *********************  
 	//Kapitel = 4;
 
 	
@@ -81,7 +81,7 @@ FUNC int  DIA_Shrike_GetLost_Condition()
 func void  DIA_Shrike_GetLost_Info()
 {
 	AI_Output (other, self,"DIA_Shrike_GetLost_15_00"); //Sparisco.
-	AI_Output (self, other,"DIA_Shrike_GetLost_07_01"); //Ti parlerò più tardi.
+	AI_Output (self, other,"DIA_Shrike_GetLost_07_01"); //Ti parlerÃ² piÃ¹ tardi.
 
 	Log_CreateTopic		(CH1_ShrikesHut,	LOG_MISSION);
 	Log_SetTopicStatus	(CH1_ShrikesHut,	LOG_RUNNING);

@@ -23,7 +23,7 @@ FUNC VOID DIA_BaalCadar_Exit_Info()
 };
 
 // ************************************************************
-// 					NICHT ansprechbar (Ungläubiger) 
+// 					NICHT ansprechbar (UnglÃ¤ubiger) 
 // ************************************************************
 	var int BaalCadar_Ansprechbar;
 	var int BaalCadar_Sakrileg;
@@ -88,13 +88,13 @@ func void DIA_BaalCadar_NoTalk_ENDE()
 /*
 
 
-	AI_Output (self, other,"Sit_1_PSI_BaalCadar_HypnoticTeacher_2FuncNo_02_01"); //Du solltest deinen Weg mit Bedacht wählen und nach reiflicher Überlegung. 
+	AI_Output (self, other,"Sit_1_PSI_BaalCadar_HypnoticTeacher_2FuncNo_02_01"); //Du solltest deinen Weg mit Bedacht wÃ¤hlen und nach reiflicher Ãœberlegung. 
 	AI_Output (self, other,"Sit_1_PSI_BaalCadar_HypnoticTeacher_2FuncNo_02_02"); //Bedenke wie du entscheidest. In den anderen Lagern bekommst zwar Schutz und Nahrung, aber ist es das, was du willst?
-	AI_Output (self, other,"Sit_1_PSI_BaalCadar_HypnoticTeacher_2FuncNo_15_03"); //Was erwartet mich, was es wert wäre, zu euch zu kommen?
-	AI_Output (self, other,"Sit_1_PSI_BaalCadar_HypnoticTeacher_2FuncNo_02_04"); //Ich könnte dir jetzt erzählen, das die Templer einen unbezwinglichen Willen haben,das die magische Macht der Gurus, die Vorstellungskraft von Feuer- und Wassermagiern bei weitem übersteigt.
+	AI_Output (self, other,"Sit_1_PSI_BaalCadar_HypnoticTeacher_2FuncNo_15_03"); //Was erwartet mich, was es wert wÃ¤re, zu euch zu kommen?
+	AI_Output (self, other,"Sit_1_PSI_BaalCadar_HypnoticTeacher_2FuncNo_02_04"); //Ich kÃ¶nnte dir jetzt erzÃ¤hlen, das die Templer einen unbezwinglichen Willen haben,das die magische Macht der Gurus, die Vorstellungskraft von Feuer- und Wassermagiern bei weitem Ã¼bersteigt.
 	AI_Output (self, other,"Sit_1_PSI_BaalCadar_HypnoticTeacher_2FuncNo_02_05"); //Das unsere Nahrung auch satt macht. Aber das ist es nicht, was diese Gemeinschaft ausmacht.
 	AI_Output (self, other,"Sit_1_PSI_BaalCadar_HypnoticTeacher_2FuncNo_02_06"); //Was dich hier erwartet, ist die Gabe. Du wirst einen Weg beschreiten, der dir sehr viel abverlangt.
-	AI_Output (self, other,"Sit_1_PSI_BaalCadar_HypnoticTeacher_2FuncNo_02_07"); //Aber das was du erreichen wirst ist eine Größe, eine Macht die dir Erleuchtung schenkt. Eine Macht, die dich zur Freiheit führt.
+	AI_Output (self, other,"Sit_1_PSI_BaalCadar_HypnoticTeacher_2FuncNo_02_07"); //Aber das was du erreichen wirst ist eine GrÃ¶ÃŸe, eine Macht die dir Erleuchtung schenkt. Eine Macht, die dich zur Freiheit fÃ¼hrt.
 	AI_Output (self, other,"Sit_1_PSI_BaalCadar_HypnoticTeacher_2FuncNo_02_08"); //Ist es nicht das, was du willst?... Freiheit?
 	AI_Output (self, other,"Sit_1_PSI_BaalCadar_HypnoticTeacher_2FuncNo_02_09"); //Also solltest du nicht die Frage stellen, warum du her kommen solltest, die Frage ist viel mehr, warum solltest du nicht?
 	Log_CreateTopic (GE_TeacherPSI,LOG_NOTE);
@@ -131,8 +131,8 @@ FUNC VOID DIA_BaalCadar_SleepSpell_Info()
 {
 	AI_Output (self, other,"DIA_BaalCadar_SleepSpell_02_00"); //Cosa vuoi? Sto cercando di meditare coi miei discepoli!
 	AI_Output (self, other,"DIA_BaalCadar_SleepSpell_02_01"); //Chi ti ha insegnato a usare i poteri magici del Dormiente?
-	AI_Output (other, self,"DIA_BaalCadar_SleepSpell_15_02"); //Nessuno. È stato facile.
-	AI_Output (self, other,"DIA_BaalCadar_SleepSpell_02_03"); //Sembri uno studente in gamba: ti insegnerò.
+	AI_Output (other, self,"DIA_BaalCadar_SleepSpell_15_02"); //Nessuno. Ãˆ stato facile.
+	AI_Output (self, other,"DIA_BaalCadar_SleepSpell_02_03"); //Sembri uno studente in gamba: ti insegnerÃ².
 
 	BaalCadar_Ansprechbar = TRUE;
 	if	(Npc_GetTrueGuild(hero) == GIL_NONE)
@@ -173,7 +173,7 @@ FUNC void  Gur_1208_BaalCadar_Teach_Info()
 	if (log_baalcadartrain == FALSE) 
 	{
 		Log_CreateTopic   	(GE_TeacherPSI,LOG_NOTE);
-		B_LogEntry			(GE_TeacherPSI,"Il guru Baal Cadar può insegnarmi ad aumentare il mio MANA.");
+		B_LogEntry			(GE_TeacherPSI,"Il guru Baal Cadar puÃ² insegnarmi ad aumentare il mio MANA.");
 		log_baalcadartrain = TRUE;
 	};
 	Info_ClearChoices	(Gur_1208_BaalCadar_Teach);
@@ -231,10 +231,10 @@ FUNC void  Gur_1208_BaalCadar_FIRSTTEST_Info()
 {
 	AI_Output (other, self,"Gur_1208_BaalCadar_FIRSTTEST_Info_15_01"); //Insegnami la magia delle rune.
 	AI_Output (self, other,"Gur_1208_BaalCadar_FIRSTTEST_Info_02_02"); //Molti hanno imparato la lingua delle rune, ma solo pochi ne comprendono la magia.
-	AI_Output (self, other,"Gur_1208_BaalCadar_FIRSTTEST_Info_02_03"); //Cercherò d'insegnarti.
+	AI_Output (self, other,"Gur_1208_BaalCadar_FIRSTTEST_Info_02_03"); //CercherÃ² d'insegnarti.
 	
 	Log_CreateTopic (GE_TeacherPSI,LOG_NOTE);
-	B_LogEntry    	(GE_TeacherPSI,"Baal Cadar può spiegarmi i CERCHI magici.");
+	B_LogEntry    	(GE_TeacherPSI,"Baal Cadar puÃ² spiegarmi i CERCHI magici.");
 		
 };
 
@@ -268,10 +268,10 @@ FUNC void  Gur_1208_BaalCadar_KREIS1_Info()
 	if (B_GiveSkill(other,NPC_TALENT_MAGE , 1, LPCOST_TALENT_MAGE_1))
 	{
 		AI_Output (self, other,"Gur_1208_BaalCadar_KREIS1_Info_02_02"); //Ascolta le mie parole:
-		AI_Output (self, other,"Gur_1208_BaalCadar_KREIS1_Info_02_03"); //Molto tempo fa, il Dormiente apparve per inviare una visione all'umanità.
-		AI_Output (self, other,"Gur_1208_BaalCadar_KREIS1_Info_02_04"); //Molta gente rifiutò di vedere il suo segno, accecata dalla sete di metallo.
+		AI_Output (self, other,"Gur_1208_BaalCadar_KREIS1_Info_02_03"); //Molto tempo fa, il Dormiente apparve per inviare una visione all'umanitÃ .
+		AI_Output (self, other,"Gur_1208_BaalCadar_KREIS1_Info_02_04"); //Molta gente rifiutÃ² di vedere il suo segno, accecata dalla sete di metallo.
 		AI_Output (self, other,"Gur_1208_BaalCadar_KREIS1_Info_02_05"); //Solo Y'Berion e pochi altri capirono... e fondarono la Fratellanza.
-		AI_Output (self, other,"Gur_1208_BaalCadar_KREIS1_Info_02_06"); //Quando risposero alla chiamata del Dormiente, il Primo Cerchio fu creato. La magia delle rune può essere compresa da chiunque segua il Dormiente.
+		AI_Output (self, other,"Gur_1208_BaalCadar_KREIS1_Info_02_06"); //Quando risposero alla chiamata del Dormiente, il Primo Cerchio fu creato. La magia delle rune puÃ² essere compresa da chiunque segua il Dormiente.
 		Gur_1208_BaalCadar_KREIS1.permanent = 0;
 	};
 	AI_StopProcessInfos	( self );
@@ -306,8 +306,8 @@ FUNC void  Gur_1208_BaalCadar_KREIS2_Info()
 	if (B_GiveSkill(other,NPC_TALENT_MAGE , 2,LPCOST_TALENT_MAGE_2))
 	{
 		AI_Output (self, other,"Gur_1208_BaalCadar_KREIS2_Info_02_02"); //Allora ascolta attentamente:
-		AI_Output (self, other,"Gur_1208_BaalCadar_KREIS2_Info_02_03"); //Il Dormiente guidò Y'Berion e i suoi fedeli discepoli in questo posto, dove si sistemarono.
-		AI_Output (self, other,"Gur_1208_BaalCadar_KREIS2_Info_02_04"); //Lavorarono senza sosta per giorni, settimane, mesi... Il campo si ampliò e sempre più uomini si unirono a esso, rispondendo alla chiamata del Dormiente.
+		AI_Output (self, other,"Gur_1208_BaalCadar_KREIS2_Info_02_03"); //Il Dormiente guidÃ² Y'Berion e i suoi fedeli discepoli in questo posto, dove si sistemarono.
+		AI_Output (self, other,"Gur_1208_BaalCadar_KREIS2_Info_02_04"); //Lavorarono senza sosta per giorni, settimane, mesi... Il campo si ampliÃ² e sempre piÃ¹ uomini si unirono a esso, rispondendo alla chiamata del Dormiente.
 		AI_Output (self, other,"Gur_1208_BaalCadar_KREIS2_Info_02_05"); //Insieme, cercarono di contattare il Dormiente sul piano spirituale.
 		AI_Output (self, other,"Gur_1208_BaalCadar_KREIS2_Info_02_06"); //Il Secondo Cerchio era nato.
 		Gur_1208_BaalCadar_KREIS2.permanent = 0;
@@ -343,8 +343,8 @@ FUNC void  Gur_1208_BaalCadar_KREIS3_Info()
 	if (B_GiveSkill(other,NPC_TALENT_MAGE , 3, LPCOST_TALENT_MAGE_3))
 	{
 		AI_Output (self, other,"Gur_1208_BaalCadar_KREIS3_Info_02_02"); //Ricorda:
-		AI_Output (self, other,"Gur_1208_BaalCadar_KREIS3_Info_02_03"); //Le visioni si fecero più chiare, ma il potere spirituale della Fratellanza non era sufficiente a stabilire il contatto.
-		AI_Output (self, other,"Gur_1208_BaalCadar_KREIS3_Info_02_04"); //Uno dei guru, un alchimista, risolse il problema. Creò una pozione con le secrezioni dei pidocchi di miniera. I fratelli la assunsero prima di pregare e, per la prima volta, i loro poteri spirituali si unirono.
+		AI_Output (self, other,"Gur_1208_BaalCadar_KREIS3_Info_02_03"); //Le visioni si fecero piÃ¹ chiare, ma il potere spirituale della Fratellanza non era sufficiente a stabilire il contatto.
+		AI_Output (self, other,"Gur_1208_BaalCadar_KREIS3_Info_02_04"); //Uno dei guru, un alchimista, risolse il problema. CreÃ² una pozione con le secrezioni dei pidocchi di miniera. I fratelli la assunsero prima di pregare e, per la prima volta, i loro poteri spirituali si unirono.
 		AI_Output (self, other,"Gur_1208_BaalCadar_KREIS3_Info_02_05"); //Allo stesso tempo, i novizi si sparsero per i campi per portare la parola del Dormiente e convincere gli infedeli.
 		AI_Output (self, other,"Gur_1208_BaalCadar_KREIS3_Info_02_06"); //Il Terzo Cerchio era completo.
 	};
@@ -382,7 +382,7 @@ FUNC void  Gur_1208_BaalCadar_KREIS4_Info()
 		AI_Output (self, other,"Gur_1208_BaalCadar_KREIS4_Info_02_03"); //La fede era cresciuta, rafforzandosi ed espandendosi.
 		AI_Output (self, other,"Gur_1208_BaalCadar_KREIS4_Info_02_04"); //Non abbiamo dimenticato il nostro scopo: tentare d'evocare il Dormiente.
 		AI_Output (self, other,"Gur_1208_BaalCadar_KREIS4_Info_02_05"); //La perseveranza e la fermezza della fede rappresentano il Quarto Cerchio.
-		AI_Output (self, other,"Gur_1208_BaalCadar_KREIS4_Info_02_06"); //Ora sai tutto ciò che ti serve per far parte della Fratellanza. Sei stato un ottimo studente.
+		AI_Output (self, other,"Gur_1208_BaalCadar_KREIS4_Info_02_06"); //Ora sai tutto ciÃ² che ti serve per far parte della Fratellanza. Sei stato un ottimo studente.
 		Gur_1208_BaalCadar_KREIS4.permanent = 0;
 	};
 

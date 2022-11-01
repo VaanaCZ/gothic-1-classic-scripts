@@ -74,7 +74,7 @@ func void DIA_Grd_215_Torwache_First_Trouble()
 func void DIA_Grd_215_Torwache_First_JustLooking()
 {
 	AI_Output (other, self,"DIA_Grd_215_Torwache_First_JustLooking_15_00"); //Voglio solo dare un'occhiata in giro.
-	AI_Output (self, other,"DIA_Grd_215_Torwache_First_JustLooking_06_01"); //Ti coster‡ 10 pezzi di metallo.
+	AI_Output (self, other,"DIA_Grd_215_Torwache_First_JustLooking_06_01"); //Ti coster√† 10 pezzi di metallo.
 	
 	Info_ClearChoices	(DIA_Grd_215_Torwache_First );
 	Info_AddChoice		(DIA_Grd_215_Torwache_First,"Scordatelo.",DIA_Grd_215_Torwache_First_NoPay);
@@ -105,8 +105,8 @@ func void DIA_Grd_215_Torwache_First_Pay()
 	}
 	else
 	{
-		AI_Output (other, self,"DIA_Grd_215_Torwache_First_Pay_NoOre_15_00"); //Non ne ho cosÏ tanti con me.
-		AI_Output (self, other,"DIA_Grd_215_Torwache_First_Pay_NoOre_06_01"); //Siccome sei nuovo, solo per questa volta farÚ un'eccezione.
+		AI_Output (other, self,"DIA_Grd_215_Torwache_First_Pay_NoOre_15_00"); //Non ne ho cos√¨ tanti con me.
+		AI_Output (self, other,"DIA_Grd_215_Torwache_First_Pay_NoOre_06_01"); //Siccome sei nuovo, solo per questa volta far√≤ un'eccezione.
 		
 	};
 		
@@ -125,7 +125,7 @@ INSTANCE DIA_Grd_215_Torwache_PERM (C_INFO)
 	condition	= DIA_Grd_215_Torwache_PERM_Condition;
 	information	= DIA_Grd_215_Torwache_PERM_Info;
 	permanent	= 1;
-	description = "Qualche novit‡?";
+	description = "Qualche novit√†?";
 };                       
 
 FUNC INT DIA_Grd_215_Torwache_PERM_Condition()
@@ -135,6 +135,6 @@ FUNC INT DIA_Grd_215_Torwache_PERM_Condition()
 
 FUNC VOID DIA_Grd_215_Torwache_PERM_Info()
 {
-	AI_Output (other, self,"DIA_Grd_215_Torwache_PERM_15_00"); //Qualche novit‡?
+	AI_Output (other, self,"DIA_Grd_215_Torwache_PERM_15_00"); //Qualche novit√†?
 	AI_Output (self, other,"DIA_Grd_215_Torwache_PERM_06_01"); //No. Tutto va come al solito.
 };

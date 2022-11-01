@@ -64,7 +64,7 @@ INSTANCE Info_Vlk_3_WichtigePersonen(C_INFO)
 	condition	= Info_Vlk_3_WichtigePersonen_Condition;
 	information	= Info_Vlk_3_WichtigePersonen_Info;
 	permanent	= 1;
-	description = "Chi è il capo, qui?";
+	description = "Chi Ã¨ il capo, qui?";
 };                       
 
 FUNC INT Info_Vlk_3_WichtigePersonen_Condition()
@@ -76,8 +76,8 @@ FUNC INT Info_Vlk_3_WichtigePersonen_Condition()
 };
 FUNC VOID Info_Vlk_3_WichtigePersonen_Info()
 {
-	AI_Output(other,self,"Info_Vlk_3_WichtigePersonen_15_00"); //Chi è il capo, qui?
-	AI_Output(self,other,"Info_Vlk_3_WichtigePersonen_03_01"); //Gomez. Vive nel castello. Noi minatori abbiamo già abbastanza guai con le guardie.
+	AI_Output(other,self,"Info_Vlk_3_WichtigePersonen_15_00"); //Chi Ã¨ il capo, qui?
+	AI_Output(self,other,"Info_Vlk_3_WichtigePersonen_03_01"); //Gomez. Vive nel castello. Noi minatori abbiamo giÃ  abbastanza guai con le guardie.
 	AI_Output(self,other,"Info_Vlk_3_WichtigePersonen_03_02"); //Meglio se ti tieni lontano da loro, o ti metterai nei guai.
 };
 
@@ -101,9 +101,9 @@ FUNC INT Info_Vlk_3_DasLager_Condition()
 
 FUNC VOID Info_Vlk_3_DasLager_Info()
 {
-	AI_Output(other,self,"Info_Vlk_3_DasLager_15_00"); //Quali sono i luoghi più importanti, da queste parti?
-	AI_Output(self,other,"Info_Vlk_3_DasLager_03_01"); //Se ti piace scommettere, recati all'arena nel pomeriggio. Se vuoi comprare qualcosa, c'è la piazza del mercato.
-	AI_Output(self,other,"Info_Vlk_3_DasLager_03_02"); //Vendono praticamente di tutto, tranne le mappe. Se ne vuoi una, vai da Graham. La sua capanna è di fronte all'entrata del castello.
+	AI_Output(other,self,"Info_Vlk_3_DasLager_15_00"); //Quali sono i luoghi piÃ¹ importanti, da queste parti?
+	AI_Output(self,other,"Info_Vlk_3_DasLager_03_01"); //Se ti piace scommettere, recati all'arena nel pomeriggio. Se vuoi comprare qualcosa, c'Ã¨ la piazza del mercato.
+	AI_Output(self,other,"Info_Vlk_3_DasLager_03_02"); //Vendono praticamente di tutto, tranne le mappe. Se ne vuoi una, vai da Graham. La sua capanna Ã¨ di fronte all'entrata del castello.
 };
 
 // *************************************************************************

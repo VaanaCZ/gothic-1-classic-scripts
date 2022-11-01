@@ -24,9 +24,9 @@ FUNC VOID Info_HighPriest1_Info()
 	AI_Output 			(self, other,"Info_HighPriest1_17_01"); //MOOOOOOORTAAAAAAAALEEEEEE!
 	AI_Output 			(self, other,"Info_HighPriest1_17_02"); //HAI OSAAAAAATO DISTURBARE LA MIA PAAAAAACE!
 	AI_Output 			(self, other,"Info_HighPriest1_17_03"); //PREPAAAAAARATI A MORIIIIIRE!!!
-	AI_Output 			(other, self,"Info_HighPriest1_15_04"); //Bisogna vedere di chi sar‡ la fine, polpetta per vermi!
+	AI_Output 			(other, self,"Info_HighPriest1_15_04"); //Bisogna vedere di chi sar√† la fine, polpetta per vermi!
 	
-	B_LogEntry			(CH4_EnterTemple,"Ho davanti a me Varrag-Hashor, uno dei cinque orchi sciamani che hanno portato il Dormiente in questo mondo. MetterÚ fine alla sua non-esistenza.");
+	B_LogEntry			(CH4_EnterTemple,"Ho davanti a me Varrag-Hashor, uno dei cinque orchi sciamani che hanno portato il Dormiente in questo mondo. Metter√≤ fine alla sua non-esistenza.");
 
 	AI_StopProcessInfos	(self);
 

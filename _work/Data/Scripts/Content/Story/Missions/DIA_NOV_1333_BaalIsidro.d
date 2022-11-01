@@ -47,7 +47,7 @@ FUNC VOID DIA_BaalIsidro_Hello_Info()
 	AI_Output (self, other,"DIA_BaalIsidro_Hello_03_01"); //Infatti!
 	AI_Output (self, other,"DIA_BaalIsidro_Hello_03_02"); //Devo sbarazzarmi di un mucchio d'erba.
 	AI_Output (other, self,"DIA_BaalIsidro_Hello_15_03"); //Sei qui per vendere merci della Setta?
-	AI_Output (self, other,"DIA_BaalIsidro_Hello_03_04"); //Sì, ma non voglio essere disturbato.
+	AI_Output (self, other,"DIA_BaalIsidro_Hello_03_04"); //SÃ¬, ma non voglio essere disturbato.
 };
 
 // ************************************************************
@@ -80,7 +80,7 @@ FUNC VOID DIA_BaalIsidro_TRADE_Info()
 };
 
 // ************************************************************
-// 					 Ich verkaufe für dich
+// 					 Ich verkaufe fÃ¼r dich
 // ************************************************************
 
 INSTANCE DIA_BaalIsidro_GimmeKraut(C_INFO) 
@@ -104,11 +104,11 @@ FUNC INT DIA_BaalIsidro_GimmeKraut_Condition()
 FUNC VOID DIA_BaalIsidro_GimmeKraut_Info()
 {	
 	AI_Output			(other, self,"DIA_BaalIsidro_GimmeKraut_15_00"); //Posso vendere l'erba al posto tuo. In cambio di una ricompensa, ovviamente.
-	AI_Output			(self, other,"DIA_BaalIsidro_GimmeKraut_03_01"); //Scordatelo: non sono così ubriaco! Scapperesti con la merce.
+	AI_Output			(self, other,"DIA_BaalIsidro_GimmeKraut_03_01"); //Scordatelo: non sono cosÃ¬ ubriaco! Scapperesti con la merce.
 
 	Log_CreateTopic		(CH1_DealerJob, LOG_MISSION);
     Log_SetTopicStatus	(CH1_DealerJob, LOG_RUNNING);
-    B_LogEntry			(CH1_DealerJob,"Baal Isidro il novizio si aggira sempre dalle parti del bar sul lago ed è perennemente sbronzo. Dovrebbe vendere le sue piante d'erba, ma non è in grado di farlo. Forse posso convincerlo ad affidarmi la vendita della merce, ma come?"); 
+    B_LogEntry			(CH1_DealerJob,"Baal Isidro il novizio si aggira sempre dalle parti del bar sul lago ed Ã¨ perennemente sbronzo. Dovrebbe vendere le sue piante d'erba, ma non Ã¨ in grado di farlo. Forse posso convincerlo ad affidarmi la vendita della merce, ma come?"); 
 };
 
 // ************************************************************
@@ -122,7 +122,7 @@ INSTANCE DIA_BaalIsidro_Problem(C_INFO)
 	condition	= DIA_BaalIsidro_Problem_Condition;
 	information	= DIA_BaalIsidro_Problem_Info;
 	permanent	= 0;
-	description = "Ti dico una cosa. Hai un grosso problema: Baal Kagan ti farà sostituire.";
+	description = "Ti dico una cosa. Hai un grosso problema: Baal Kagan ti farÃ  sostituire.";
 };                       
 
 FUNC INT DIA_BaalIsidro_Problem_Condition()
@@ -135,16 +135,16 @@ FUNC INT DIA_BaalIsidro_Problem_Condition()
 
 FUNC VOID DIA_BaalIsidro_Problem_Info()
 {	
-	AI_Output			(other, self,"DIA_BaalIsidro_Problem_15_00"); //Ti dico una cosa. Hai un grosso problema: Baal Kagan ti farà sostituire.
-	AI_Output			(self, other,"DIA_BaalIsidro_Problem_03_01"); //Cosa? Che il Dormiente abbia pietà di me! Devo sbarazzarmi della merce...
+	AI_Output			(other, self,"DIA_BaalIsidro_Problem_15_00"); //Ti dico una cosa. Hai un grosso problema: Baal Kagan ti farÃ  sostituire.
+	AI_Output			(self, other,"DIA_BaalIsidro_Problem_03_01"); //Cosa? Che il Dormiente abbia pietÃ  di me! Devo sbarazzarmi della merce...
 	
 	if (BaalIsidro_GotDrink == FALSE)
 	{
-	    B_LogEntry		(CH1_DealerJob,"Baal Isidro è rimasto ovviamente sconvolto quando gli ho proposto di sostituirlo, ma non mi ha accordato il permesso.");
+	    B_LogEntry		(CH1_DealerJob,"Baal Isidro Ã¨ rimasto ovviamente sconvolto quando gli ho proposto di sostituirlo, ma non mi ha accordato il permesso.");
 	}
 	else
 	{
-	    B_LogEntry		(CH1_DealerJob,"Il piano di Baal Kagan ha funzionato: Baal Isidro è al tappeto. Ora credo che accetterà la mia offerta.");
+	    B_LogEntry		(CH1_DealerJob,"Il piano di Baal Kagan ha funzionato: Baal Isidro Ã¨ al tappeto. Ora credo che accetterÃ  la mia offerta.");
 	};	
 };
 
@@ -215,7 +215,7 @@ FUNC VOID DIA_BaalIsidro_Drink_Info()
 
 		if	Npc_KnowsInfo(hero,DIA_BaalIsidro_Problem)
 		{
-		    B_LogEntry	(CH1_DealerJob,"L'ultimo sorso della mia generosa offerta ha abbattuto la resistenza di Baal Isidro. Ora credo che accetterà la mia proposta.");
+		    B_LogEntry	(CH1_DealerJob,"L'ultimo sorso della mia generosa offerta ha abbattuto la resistenza di Baal Isidro. Ora credo che accetterÃ  la mia proposta.");
 		}
 		else
 		{
@@ -229,7 +229,7 @@ FUNC VOID DIA_BaalIsidro_Drink_Info()
 };
 
 // ************************************************************
-// 					 Übrleg's dir!
+// 					 Ãœbrleg's dir!
 // ************************************************************
 	var int BaalIsidro_DealerJob;
 // ************************************************************
@@ -266,11 +266,11 @@ FUNC VOID DIA_BaalIsidro_ThinkAgain_Info()
 		AI_Output (self, other,"DIA_BaalIsidro_ThinkAgain_03_06"); //Ora mi sento molto meglio.
 		
 		BaalIsidro_DealerJob = LOG_RUNNING;
-	    B_LogEntry			(CH1_DealerJob,"Baal Isidro mi ha dato un mucchio di piante d'erba. Se riuscirò a venderle, potrò tenermi la metà dei profitti: 200 pezzi di metallo.");	
+	    B_LogEntry			(CH1_DealerJob,"Baal Isidro mi ha dato un mucchio di piante d'erba. Se riuscirÃ² a venderle, potrÃ² tenermi la metÃ  dei profitti: 200 pezzi di metallo.");	
 	
-		//Itemübergabe
+		//ItemÃ¼bergabe
 		CreateInvItems		(self,			itmijoint_1, 40);
-		B_GiveInvItems  	(self, other,	itmijoint_1, 50);//Notwendig zur Textausgabe "50 Items übergeben", wird sofort ausgeglichen
+		B_GiveInvItems  	(self, other,	itmijoint_1, 50);//Notwendig zur Textausgabe "50 Items Ã¼bergeben", wird sofort ausgeglichen
 		Npc_RemoveInvItems	(self,			itmijoint_2, 20);
 		Npc_RemoveInvItems	(self,			itmijoint_3, 20);
 		Npc_RemoveInvItems	(other,			itmijoint_1, 40);
@@ -281,7 +281,7 @@ FUNC VOID DIA_BaalIsidro_ThinkAgain_Info()
 	}
 	else
 	{
-		AI_Output (self, other,"DIA_BaalIsidro_REFUSE_ThinkAgain_03_00"); //Niente da fare, amico. Ci penserò da solo...
+		AI_Output (self, other,"DIA_BaalIsidro_REFUSE_ThinkAgain_03_00"); //Niente da fare, amico. Ci penserÃ² da solo...
 	};
 };
 
@@ -315,14 +315,14 @@ FUNC VOID DIA_BaalIsidro_RUNNING_Info()
 	if (Npc_HasItems(other,itminugget)>=200)
 	{
 		AI_Output			(other, self,"DIA_BaalIsidro_RUNNING_15_02"); //Eccoli.
-		AI_Output			(self, other,"DIA_BaalIsidro_RUNNING_03_03"); //Bene! Ora Baal Kagan può andare a farsi fottere! (risata cattiva)
+		AI_Output			(self, other,"DIA_BaalIsidro_RUNNING_03_03"); //Bene! Ora Baal Kagan puÃ² andare a farsi fottere! (risata cattiva)
 		AI_Output			(self, other,"DIA_BaalIsidro_RUNNING_03_04"); //Ho fatto bene a mettermi in affari con te.
 
 		B_GiveInvItems		(hero, self, ItMiNugget, 200);
 		BaalIsidro_DealerJob = LOG_SUCCESS;
 		
 		Log_SetTopicStatus	(CH1_DealerJob, LOG_SUCCESS);
-	    B_LogEntry			(CH1_DealerJob,"Baal Isidro è stato molto felice di ricevere i suoi 200 pezzi di metallo.");	
+	    B_LogEntry			(CH1_DealerJob,"Baal Isidro Ã¨ stato molto felice di ricevere i suoi 200 pezzi di metallo.");	
 	    B_GiveXP			(XP_BaalIsidroPayShare);
 	}
 	else

@@ -86,7 +86,7 @@ func void DIA_GorNaToth_AngarTalked_Normal()
 {
 	AI_Output (other, self,"DIA_GorNaToth_AngarTalked_Normal_15_00"); //Ha detto di tornare non appena fossi diventato un templare.
 	AI_Output (self, other,"DIA_GorNaToth_AngarTalked_Normal_11_01"); //Sembra avere una grossa opinione di te. Non parla mai con nessuno.
-	AI_Output (self, other,"DIA_GorNaToth_AngarTalked_Normal_11_02"); //È un onore persino essere solo notati da lui. L'ultima volta che ha parlato con ME è stato circa due mesi fa.
+	AI_Output (self, other,"DIA_GorNaToth_AngarTalked_Normal_11_02"); //Ãˆ un onore persino essere solo notati da lui. L'ultima volta che ha parlato con ME Ã¨ stato circa due mesi fa.
 	Info_ClearChoices		(DIA_GorNaToth_AngarTalked);
 };
 
@@ -94,14 +94,14 @@ func void DIA_GorNaToth_AngarTalked_Shark()
 {
 	AI_Output (other, self,"DIA_GorNaToth_AngarTalked_Shark_15_00"); //Ha detto che non gli sono mai piaciuti gli squali di palude.
 	AI_Output (self, other,"DIA_GorNaToth_AngarTalked_Shark_11_01"); //Cosa?... (risoluto) Mi attende un compito sacro!
-	AI_Output (self, other,"DIA_GorNaToth_AngarTalked_Shark_11_02"); //Ogni desiderio del mio maestro è un ordine, per me.
+	AI_Output (self, other,"DIA_GorNaToth_AngarTalked_Shark_11_02"); //Ogni desiderio del mio maestro Ã¨ un ordine, per me.
 	Info_ClearChoices		(DIA_GorNaToth_AngarTalked);
 };
 
 func void DIA_GorNaToth_AngarTalked_Unworthy()
 {
 	AI_Output (other, self,"DIA_GorNaToth_AngarTalked_Unworthy_15_00"); //Dice che non sarai degno d'indossare l'armatura da templare.
-	AI_Output (self, other,"DIA_GorNaToth_AngarTalked_Unworthy_11_01"); //No! Non può averlo detto! Non di ME!
+	AI_Output (self, other,"DIA_GorNaToth_AngarTalked_Unworthy_11_01"); //No! Non puÃ² averlo detto! Non di ME!
 	Info_ClearChoices		(DIA_GorNaToth_AngarTalked);
 	AI_StopProcessInfos	( self );
 	Npc_SetTarget(self,other);
@@ -194,7 +194,7 @@ func void TPL_1402_GorNaToth_ARMOR_M ()
 	}
 	else if (Npc_HasItems(hero, ItMiNugget)<VALUE_TPL_ARMOR_M)
 	{
-		AI_Output			(self, hero,"Info_GorNaToth_ARMOR_M_11_03"); //Quando sarai in grado di effettuare una donazione sufficiente alla nostra comunità, potrai avere un'armatura migliore!
+		AI_Output			(self, hero,"Info_GorNaToth_ARMOR_M_11_03"); //Quando sarai in grado di effettuare una donazione sufficiente alla nostra comunitÃ , potrai avere un'armatura migliore!
 	}
 	else
 	{
@@ -223,15 +223,15 @@ func void TPL_1402_GorNaToth_ARMOR_H ()
 	}
 	else if (Npc_HasItems(hero, ItMiNugget)<VALUE_TPL_ARMOR_H)
 	{
-		AI_Output			(self, hero,"Info_GorNaToth_ARMOR_H_11_03"); //Hai guadagnato il diritto a indossare tale armatura, ma non sei in grado di effettuare una donazione sufficiente alla nostra comunità!
+		AI_Output			(self, hero,"Info_GorNaToth_ARMOR_H_11_03"); //Hai guadagnato il diritto a indossare tale armatura, ma non sei in grado di effettuare una donazione sufficiente alla nostra comunitÃ !
 	}
 	else
 	{
-		AI_Output			(self, hero,"Info_GorNaToth_ARMOR_H_11_04"); //D'ora in poi, indosserai quest'armatura come simbolo del più alto onore!
+		AI_Output			(self, hero,"Info_GorNaToth_ARMOR_H_11_04"); //D'ora in poi, indosserai quest'armatura come simbolo del piÃ¹ alto onore!
 
 		B_GiveInvItems  	(hero, self, ItMiNugget,VALUE_TPL_ARMOR_H);
 
-		CreateInvItem		(self, ItAmArrow);				//SN: Kronkelgegenstand, damit die Bildschrimausgabe "1 Gegenstand erhalten" stimmt (Rüstung geht nicht, da dann immer Gor Na Toth seine eigene erst auszieht, und eine Sekunde nackt dasteht)
+		CreateInvItem		(self, ItAmArrow);				//SN: Kronkelgegenstand, damit die Bildschrimausgabe "1 Gegenstand erhalten" stimmt (RÃ¼stung geht nicht, da dann immer Gor Na Toth seine eigene erst auszieht, und eine Sekunde nackt dasteht)
 		B_GiveInvItems  	(self, hero, ItAmArrow, 1);
 		Npc_RemoveInvItem	(hero,	ItAmArrow);
 
@@ -289,7 +289,7 @@ FUNC VOID TPL_1402_GorNaToth_Teach_Info()
 	if (log_gornatothtrain == FALSE)
 	{
 		Log_CreateTopic   	(GE_TeacherPSI,LOG_NOTE);
-		B_LogEntry			(GE_TeacherPSI,"Gor Na Toth il templare può insegnarmi a migliorare FORZA, DESTREZZA e MANA.");
+		B_LogEntry			(GE_TeacherPSI,"Gor Na Toth il templare puÃ² insegnarmi a migliorare FORZA, DESTREZZA e MANA.");
 		log_gornatothtrain = TRUE;
 	};
 };
@@ -404,20 +404,20 @@ FUNC void  TPL_1402_GorNaToth_TRAIN_Info()
 	if	(log_gornatothfight == FALSE) 
 	{
 		Log_CreateTopic   	(GE_TeacherPSI,LOG_NOTE);
-		B_LogEntry			(GE_TeacherPSI,"Gor Na Toth il templare può insegnarmi a combattere con le ARMI A UNA MANO.");
+		B_LogEntry			(GE_TeacherPSI,"Gor Na Toth il templare puÃ² insegnarmi a combattere con le ARMI A UNA MANO.");
 		log_gornatothfight = TRUE;
 	};
-	AI_Output (other, self,"TPL_1402_GorNaToth_TRAIN_Info_15_00"); //Voglio migliorare la mia abilità con le armi a una sola mano.
+	AI_Output (other, self,"TPL_1402_GorNaToth_TRAIN_Info_15_00"); //Voglio migliorare la mia abilitÃ  con le armi a una sola mano.
 	
 	if B_GiveSkill(hero,NPC_TALENT_1H,1,LPCOST_TALENT_1H_1)
 	{
 		AI_Output			(self,other,"TPL_1402_GorNaToth_TRAIN_11_01"); //Ottima decisione! Prima di migliorare la tecnica, devi imparare a tenere l'arma.
-		AI_Output			(self,other,"TPL_1402_GorNaToth_TRAIN_11_02"); //Spesso i principianti tendono a tenere queste armi con entrambe le mani. Non prendere quest'abitudine, non ti aiuterà.
+		AI_Output			(self,other,"TPL_1402_GorNaToth_TRAIN_11_02"); //Spesso i principianti tendono a tenere queste armi con entrambe le mani. Non prendere quest'abitudine, non ti aiuterÃ .
 		AI_Output			(self,other,"TPL_1402_GorNaToth_TRAIN_11_03"); //Afferra l'arma con una mano, con la lama rivolta verso l'alto, e falla oscillare.
-		AI_Output			(self,other,"TPL_1402_GorNaToth_TRAIN_11_04"); //Devi imparare a coordinare il movimento dell'arma con quello del corpo, per colpire più velocemente.
-		AI_Output			(self,other,"TPL_1402_GorNaToth_TRAIN_11_05"); //Tieni a mente ciò che ti ho insegnato e i tuoi combattimenti saranno più veloci ed eleganti.
-		AI_Output			(self,other,"TPL_1402_GorNaToth_TRAIN_11_06"); //Ah, già! Ancora una cosa: alcuni colpi causano più danni di altri! Come principiante, non hai molte possibilità di sferrare un colpo mortale.
-		AI_Output			(self,other,"TPL_1402_GorNaToth_TRAIN_11_07"); //Comunque, man mano che progredirai, ti sarà più facile.
+		AI_Output			(self,other,"TPL_1402_GorNaToth_TRAIN_11_04"); //Devi imparare a coordinare il movimento dell'arma con quello del corpo, per colpire piÃ¹ velocemente.
+		AI_Output			(self,other,"TPL_1402_GorNaToth_TRAIN_11_05"); //Tieni a mente ciÃ² che ti ho insegnato e i tuoi combattimenti saranno piÃ¹ veloci ed eleganti.
+		AI_Output			(self,other,"TPL_1402_GorNaToth_TRAIN_11_06"); //Ah, giÃ ! Ancora una cosa: alcuni colpi causano piÃ¹ danni di altri! Come principiante, non hai molte possibilitÃ  di sferrare un colpo mortale.
+		AI_Output			(self,other,"TPL_1402_GorNaToth_TRAIN_11_07"); //Comunque, man mano che progredirai, ti sarÃ  piÃ¹ facile.
 		TPL_1402_GorNaToth_TRAIN.permanent = 0;
 
 		AI_StopProcessInfos	(self);
@@ -452,8 +452,8 @@ FUNC void  TPL_1402_GorNaToth_TRAINAGAIN_Info()
 	AI_Output (other, self,"TPL_1402_GorNaToth_TRAINAGAIN_Info_15_01"); //Insegnami a maneggiare meglio le armi a una mano.
 	if B_GiveSkill(hero,NPC_TALENT_1H,2,LPCOST_TALENT_1H_2)
 	{
-		AI_Output (self, other,"TPL_1402_GorNaToth_TRAINAGAIN_Info_11_02"); //Bene. Le basi le conosci già. Tenendo bassa l'arma, il tuo primo colpo sarà più potente.
-		AI_Output (self, other,"TPL_1402_GorNaToth_TRAINAGAIN_Info_11_03"); //Ricordi? Sfrutta l'oscillazione! Bene, ora devi usare di più il corpo. Quando hai colpito due volte, gira su te stesso. Ciò confonderà l'avversario e ti metterà in una posizione privilegiata.
+		AI_Output (self, other,"TPL_1402_GorNaToth_TRAINAGAIN_Info_11_02"); //Bene. Le basi le conosci giÃ . Tenendo bassa l'arma, il tuo primo colpo sarÃ  piÃ¹ potente.
+		AI_Output (self, other,"TPL_1402_GorNaToth_TRAINAGAIN_Info_11_03"); //Ricordi? Sfrutta l'oscillazione! Bene, ora devi usare di piÃ¹ il corpo. Quando hai colpito due volte, gira su te stesso. CiÃ² confonderÃ  l'avversario e ti metterÃ  in una posizione privilegiata.
 		AI_Output (self, other,"TPL_1402_GorNaToth_TRAINAGAIN_Info_11_04"); //A questo punto, porta nuovamente la lama da destra a sinistra.
 		AI_Output (self, other,"TPL_1402_GorNaToth_TRAINAGAIN_Info_11_05"); //E di nuovo davanti. Non dimenticare: l'esercizio rende perfetti. Quindi continua a fare pratica con le armi a una mano.
 		TPL_1402_GorNaToth_TRAINAGAIN.permanent = 0;

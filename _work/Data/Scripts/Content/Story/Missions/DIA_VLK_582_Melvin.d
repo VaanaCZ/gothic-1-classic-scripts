@@ -44,11 +44,11 @@ FUNC INT DIA_Melvin_Hello_Condition()
 FUNC VOID DIA_Melvin_Hello_Info()
 {
 	AI_Output (other, self,"DIA_Melvin_Hello_15_00"); //Salve! Sei di questo campo, vero?
-	AI_Output (self, other,"DIA_Melvin_Hello_03_01"); //Ora sÏ! Ho lasciato Campo Vecchio una settimana fa. Ho chiesto al mio amico Dusty di venire con me, ma ha preferito aspettare.
+	AI_Output (self, other,"DIA_Melvin_Hello_03_01"); //Ora s√¨! Ho lasciato Campo Vecchio una settimana fa. Ho chiesto al mio amico Dusty di venire con me, ma ha preferito aspettare.
 
 	Log_CreateTopic		(CH1_RecruitDusty,	LOG_MISSION);
 	Log_SetTopicStatus	(CH1_RecruitDusty,	LOG_RUNNING);
-	B_LogEntry			(CH1_RecruitDusty,"Melvin il minatore si Ë unito alla Fratellanza. Il suo amico Dusty Ë ancora a Campo Vecchio, ma ha intenzione d'andarsene.");
+	B_LogEntry			(CH1_RecruitDusty,"Melvin il minatore si √® unito alla Fratellanza. Il suo amico Dusty √® ancora a Campo Vecchio, ma ha intenzione d'andarsene.");
 };
 
 // **************************************************
@@ -76,8 +76,8 @@ FUNC INT DIA_Melvin_MetDusty_Condition()
 FUNC VOID DIA_Melvin_MetDusty_Info()
 {
 	AI_Output (other, self,"DIA_Melvin_MetDusty_15_00"); //Conosco Dusty. Ho scambiato due parole con lui.
-	AI_Output (self, other,"DIA_Melvin_MetDusty_03_01"); //Se lo dovessi incontrare ancora, digli che Ë stato uno stupido a restarsene l‡. Qui Ë dieci volte meglio che essere maltrattati dalle guardie di Campo Vecchio.
-	AI_Output (other, self,"DIA_Melvin_MetDusty_15_02"); //Glielo farÚ sapere, se dovessi rivederlo.
+	AI_Output (self, other,"DIA_Melvin_MetDusty_03_01"); //Se lo dovessi incontrare ancora, digli che √® stato uno stupido a restarsene l√†. Qui √® dieci volte meglio che essere maltrattati dalle guardie di Campo Vecchio.
+	AI_Output (other, self,"DIA_Melvin_MetDusty_15_02"); //Glielo far√≤ sapere, se dovessi rivederlo.
 };
 
 

@@ -67,7 +67,7 @@ FUNC VOID Info_Horatio_Wasser_Info()
 	}
 	else
 	{
-		AI_Output(self,other,"Info_Horatio_Wasser_NOWATER_09_00"); //Non ne hai più. La chiederò agli altri.
+		AI_Output(self,other,"Info_Horatio_Wasser_NOWATER_09_00"); //Non ne hai piÃ¹. La chiederÃ² agli altri.
 	};
 };
 
@@ -113,7 +113,7 @@ func void DIA_Horatio_Hello_BeCool()
 func void DIA_Horatio_Hello_PissOff()
 {
 	AI_Output (other, self,"DIA_Horatio_Hello_PissOff_15_00"); //Guai? Con chi? Con un contadino?
-	AI_Output (self, other,"DIA_Horatio_Hello_PissOff_09_01"); //Solo perché lavoro nei campi, non significa che non sappia difendermi dai tipi come te.
+	AI_Output (self, other,"DIA_Horatio_Hello_PissOff_09_01"); //Solo perchÃ© lavoro nei campi, non significa che non sappia difendermi dai tipi come te.
 	AI_Output (self, other,"DIA_Horatio_Hello_PissOff_09_02"); //Fatti sotto, se cerchi guai!
 	horatio_trouble = TRUE;
 	
@@ -174,9 +174,9 @@ FUNC INT DIA_Horatio_Story_Condition()
 FUNC VOID DIA_Horatio_Story_Info()
 {	
 	AI_Output (other, self,"DIA_Horatio_Story_15_00"); //Cosa ci fa un uomo come te insieme ai contadini?
-	AI_Output (self, other,"DIA_Horatio_Story_09_01"); //Me l'ha chiesto Lee. Io non combatto più, se non per difendermi.
-	AI_Output (self, other,"DIA_Horatio_Story_09_02"); //Una volta ho ucciso un uomo, ed è stato abbastanza. Ecco perché mi hanno sbattuto in questa fottuta colonia: come segno di giustizia.
-	AI_Output (other, self,"DIA_Horatio_Story_15_03"); //Come è accaduto?
+	AI_Output (self, other,"DIA_Horatio_Story_09_01"); //Me l'ha chiesto Lee. Io non combatto piÃ¹, se non per difendermi.
+	AI_Output (self, other,"DIA_Horatio_Story_09_02"); //Una volta ho ucciso un uomo, ed Ã¨ stato abbastanza. Ecco perchÃ© mi hanno sbattuto in questa fottuta colonia: come segno di giustizia.
+	AI_Output (other, self,"DIA_Horatio_Story_15_03"); //Come Ã¨ accaduto?
 	AI_Output (self, other,"DIA_Horatio_Story_09_04"); //Durante una rissa in una taverna. Non volevo ucciderlo... Devo averlo colpito troppo forte.
 	AI_Output (self, other,"DIA_Horatio_Story_09_05"); //Ero un fabbro, non mi rendevo conto della mia forza...
 };
@@ -192,7 +192,7 @@ INSTANCE DIA_Horatio_WhyHere (C_INFO)
 	condition	= DIA_Horatio_WhyHere_Condition;
 	information	= DIA_Horatio_WhyHere_Info;
 	permanent	= 0;
-	description = "Perché ti sei unito a QUESTO campo?";
+	description = "PerchÃ© ti sei unito a QUESTO campo?";
 };                       
 
 FUNC INT DIA_Horatio_WhyHere_Condition()
@@ -205,8 +205,8 @@ FUNC INT DIA_Horatio_WhyHere_Condition()
 
 FUNC VOID DIA_Horatio_WhyHere_Info()
 {	
-	AI_Output (other, self,"DIA_Horatio_WhyHere_15_00"); //Perché ti sei unito a QUESTO campo?
-	AI_Output (self, other,"DIA_Horatio_WhyHere_09_01"); //Ti dirò: l'unica alternativa era unirmi a quei pazzi della Setta e non volevo che i guru giocassero col mio cervello.
+	AI_Output (other, self,"DIA_Horatio_WhyHere_15_00"); //PerchÃ© ti sei unito a QUESTO campo?
+	AI_Output (self, other,"DIA_Horatio_WhyHere_09_01"); //Ti dirÃ²: l'unica alternativa era unirmi a quei pazzi della Setta e non volevo che i guru giocassero col mio cervello.
 	AI_Output (self, other,"DIA_Horatio_WhyHere_09_02"); //A Campo Vecchio avrei avuto troppi problemi con le guardie, invece mercenari e ladri mostrano un certo rispetto.
 	AI_Output (other, self,"DIA_Horatio_WhyHere_15_03"); //Hanno paura di te...
 	AI_Output (self, other,"DIA_Horatio_WhyHere_09_04"); //Forse. In ogni caso, qui ho trovato la pace e tu dovresti fare lo stesso.
@@ -248,32 +248,32 @@ FUNC VOID DIA_Horatio_PleaseTeachSTR_Info()
 	}
 	else
 	{
-		Info_AddChoice	 (DIA_Horatio_PleaseTeachSTR,"Bella domanda. Ci penserò su...",DIA_Horatio_PleaseTeachSTR_BACK);
+		Info_AddChoice	 (DIA_Horatio_PleaseTeachSTR,"Bella domanda. Ci penserÃ² su...",DIA_Horatio_PleaseTeachSTR_BACK);
 	};
 	Info_AddChoice	 (DIA_Horatio_PleaseTeachSTR,"Autodifesa!",DIA_Horatio_PleaseTeachSTR_Defend);
 	Info_AddChoice	 (DIA_Horatio_PleaseTeachSTR,"Per insegnare a questi bastardi a rivolgersi a me come si deve!",DIA_Horatio_PleaseTeachSTR_Attack);
 
 	Log_CreateTopic		(CH1_HoratiosTeachings,	LOG_MISSION);
 	Log_SetTopicStatus	(CH1_HoratiosTeachings, LOG_RUNNING);
-	B_LogEntry			(CH1_HoratiosTeachings,"Horatio, un contadino della risaia di Campo Nuovo, può insegnarmi ad attaccare con maggior forza. Ma ancora non ho trovato la risposta esatta alla sua domanda.");
+	B_LogEntry			(CH1_HoratiosTeachings,"Horatio, un contadino della risaia di Campo Nuovo, puÃ² insegnarmi ad attaccare con maggior forza. Ma ancora non ho trovato la risposta esatta alla sua domanda.");
 };
 
 func void DIA_Horatio_PleaseTeachSTR_Attack()
 {
 	AI_Output (other, self,"DIA_Horatio_PleaseTeachSTR_Attack_15_00"); //Per insegnare a questi bastardi a parlarmi come si deve!
-	AI_Output (self, other,"DIA_Horatio_PleaseTeachSTR_Attack_09_01"); //E prima ancora di accorgertene, diventeresti un bastardo come loro... Nossignore, non ti addestrerò a questo scopo.
+	AI_Output (self, other,"DIA_Horatio_PleaseTeachSTR_Attack_09_01"); //E prima ancora di accorgertene, diventeresti un bastardo come loro... Nossignore, non ti addestrerÃ² a questo scopo.
 	Info_ClearChoices(DIA_Horatio_PleaseTeachSTR );
 };
 
 func void DIA_Horatio_PleaseTeachSTR_Defend()
 {
 	AI_Output (other, self,"DIA_Horatio_PleaseTeachSTR_Defend_15_00"); //Autodifesa!
-	AI_Output (self, other,"DIA_Horatio_PleaseTeachSTR_Defend_09_01"); //Ciò richiede velocità, non forza. Pensi davvero che spaccare le teste sia meglio che trovare la pace?
+	AI_Output (self, other,"DIA_Horatio_PleaseTeachSTR_Defend_09_01"); //CiÃ² richiede velocitÃ , non forza. Pensi davvero che spaccare le teste sia meglio che trovare la pace?
 };
 
 func void DIA_Horatio_PleaseTeachSTR_BACK()
 {
-	AI_Output (other, self,"DIA_Horatio_PleaseTeachSTR_BACK_15_00"); //Bella domanda. Ci penserò su...
+	AI_Output (other, self,"DIA_Horatio_PleaseTeachSTR_BACK_15_00"); //Bella domanda. Ci penserÃ² su...
 	Info_ClearChoices(DIA_Horatio_PleaseTeachSTR );
 };
 
@@ -318,7 +318,7 @@ FUNC VOID DIA_Horatio_ThoughtSTR_Info()
 	var C_NPC ricelord; ricelord = Hlp_GetNpc(Bau_900_Ricelord);
 	if	Npc_KnowsInfo(hero,DIA_Jeremiah_Horatio)
 	{
-		Info_AddChoice	 (DIA_Horatio_ThoughtSTR,"Sì. Voglio affrontare il Signore del Riso e i suoi scagnozzi!",DIA_Horatio_ThoughtSTR_Ricelord);
+		Info_AddChoice	 (DIA_Horatio_ThoughtSTR,"SÃ¬. Voglio affrontare il Signore del Riso e i suoi scagnozzi!",DIA_Horatio_ThoughtSTR_Ricelord);
 	};
 };
 
@@ -331,7 +331,7 @@ func void DIA_Horatio_ThoughtSTR_NoIdea()
 
 func void DIA_Horatio_ThoughtSTR_Ricelord()
 {
-	AI_Output (other, self,"DIA_Horatio_ThoughtSTR_Ricelord_15_00"); //Sì. Voglio affrontare il Signore del Riso e i suoi scagnozzi!
+	AI_Output (other, self,"DIA_Horatio_ThoughtSTR_Ricelord_15_00"); //SÃ¬. Voglio affrontare il Signore del Riso e i suoi scagnozzi!
 	AI_Output (self, other,"DIA_Horatio_ThoughtSTR_Ricelord_09_01"); //Uhmm... Non saresti il primo a provarci.
 	horatio_StrFree = TRUE;
 	
@@ -339,7 +339,7 @@ func void DIA_Horatio_ThoughtSTR_Ricelord()
 };
 
 // ************************************************************
-//					Will Ricelord köpfen
+//					Will Ricelord kÃ¶pfen
 // ************************************************************
 
 func void DIA_Horatio_HelpSTR_LEARN_NOW()
@@ -355,9 +355,9 @@ func void DIA_Horatio_HelpSTR_LEARN_NOW()
 		PrintScreen	("Forza: 100", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
 	};
 				
-	AI_Output (self, other,"DIA_Horatio_HelpSTR_LEARN_NOW_09_00"); //Se vuoi colpire con forza, devi conoscere le tattiche giuste. Questa è la prima cosa che si impara per diventare fabbri.
+	AI_Output (self, other,"DIA_Horatio_HelpSTR_LEARN_NOW_09_00"); //Se vuoi colpire con forza, devi conoscere le tattiche giuste. Questa Ã¨ la prima cosa che si impara per diventare fabbri.
 	AI_Output (self, other,"DIA_Horatio_HelpSTR_LEARN_NOW_09_01"); //Spingi tutto il braccio, dalla spalla fino al polso.
-	AI_Output (self, other,"DIA_Horatio_HelpSTR_LEARN_NOW_09_02"); //Più ci riuscirai, più potente sarà il colpo. Imparerai in fretta.
+	AI_Output (self, other,"DIA_Horatio_HelpSTR_LEARN_NOW_09_02"); //PiÃ¹ ci riuscirai, piÃ¹ potente sarÃ  il colpo. Imparerai in fretta.
 };
 
 //--------------------------------------------------------------
@@ -369,7 +369,7 @@ INSTANCE DIA_Horatio_HelpSTR (C_INFO)
 	condition	= DIA_Horatio_HelpSTR_Condition;
 	information	= DIA_Horatio_HelpSTR_Info;
 	permanent	= 0;
-	description = "Io sconfiggerò il Signore del Riso e i suoi scagnozzi, se mi aiuterai!";
+	description = "Io sconfiggerÃ² il Signore del Riso e i suoi scagnozzi, se mi aiuterai!";
 };                       
 
 FUNC INT DIA_Horatio_HelpSTR_Condition()
@@ -382,13 +382,13 @@ FUNC INT DIA_Horatio_HelpSTR_Condition()
 
 FUNC VOID DIA_Horatio_HelpSTR_Info()
 {	
-	AI_Output (other, self,"DIA_Horatio_HelpSTR_15_00"); //Io sconfiggerò il Signore del Riso e i suoi scagnozzi, se mi aiuterai!
-	AI_Output (self, other,"DIA_Horatio_HelpSTR_09_01"); //Bene! Ho giurato che non avrei mai più attaccato qualcuno, ma non ho mai detto che non avrei insegnato a qualcun altro come si fa.
+	AI_Output (other, self,"DIA_Horatio_HelpSTR_15_00"); //Io sconfiggerÃ² il Signore del Riso e i suoi scagnozzi, se mi aiuterai!
+	AI_Output (self, other,"DIA_Horatio_HelpSTR_09_01"); //Bene! Ho giurato che non avrei mai piÃ¹ attaccato qualcuno, ma non ho mai detto che non avrei insegnato a qualcun altro come si fa.
 	AI_Output (other, self,"DIA_Horatio_HelpSTR_15_02"); //Sono tutto orecchi!
 	DIA_Horatio_HelpSTR_LEARN_NOW();
 
 	Log_SetTopicStatus	(CH1_HoratiosTeachings, LOG_SUCCESS);
-	B_LogEntry			(CH1_HoratiosTeachings,"Horatio mi ha insegnato a usare maggior forza in battaglia, per sferrare attacchi più efficaci. Possiede veramente uno spirito nobile.");
+	B_LogEntry			(CH1_HoratiosTeachings,"Horatio mi ha insegnato a usare maggior forza in battaglia, per sferrare attacchi piÃ¹ efficaci. Possiede veramente uno spirito nobile.");
 };
 
 // ************************************************************

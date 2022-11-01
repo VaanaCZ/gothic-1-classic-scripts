@@ -73,11 +73,11 @@ func VOID Info_GorHanis_Arena_Info()
 {
 	AI_Output (other, self,"Info_GorHanis_Arena_15_00"); //Combatti nell'arena?
 	AI_Output (self, other,"Info_GorHanis_Arena_08_01"); //I miei maestri mi hanno mandato qui dalla palude, per combattere nel nome del Dormiente.
-	AI_Output (self, other,"Info_GorHanis_Arena_08_02"); //Mi batterÚ per la sua gloria, tutti gli infedeli vedranno quanto mi abbia reso forte il suo potere!
+	AI_Output (self, other,"Info_GorHanis_Arena_08_02"); //Mi batter√≤ per la sua gloria, tutti gli infedeli vedranno quanto mi abbia reso forte il suo potere!
 };
 
 // **************************************************
-//					Schl‰fer
+//					Schl√§fer
 // **************************************************
 
 instance Info_GorHanis_Sleeper(C_INFO)
@@ -87,7 +87,7 @@ instance Info_GorHanis_Sleeper(C_INFO)
 	condition		= Info_GorHanis_Sleeper_Condition;
 	information		= Info_GorHanis_Sleeper_Info;
 	permanent		= 0;
-	description 	= "Cos'Ë il Dormiente?";
+	description 	= "Cos'√® il Dormiente?";
 };                       
 
 FUNC INT Info_GorHanis_Sleeper_Condition()
@@ -100,15 +100,15 @@ FUNC INT Info_GorHanis_Sleeper_Condition()
 
 func VOID Info_GorHanis_Sleeper_Info()
 {
-	AI_Output (other, self,"Info_GorHanis_Sleeper_15_00"); //Cos'Ë il Dormiente?
+	AI_Output (other, self,"Info_GorHanis_Sleeper_15_00"); //Cos'√® il Dormiente?
 	AI_Output (self, other,"Info_GorHanis_Sleeper_08_01"); //Nel nostro campo, troverai dei sacerdoti che sapranno risponderti meglio di me.
-	AI_Output (self, other,"Info_GorHanis_Sleeper_08_02"); //Ti dico solo una cosa: il Dormiente Ë il nostro redentore, ci ha portati in questo posto e ci far‡ uscire da qui.
+	AI_Output (self, other,"Info_GorHanis_Sleeper_08_02"); //Ti dico solo una cosa: il Dormiente √® il nostro redentore, ci ha portati in questo posto e ci far√† uscire da qui.
 	AI_Output (other, self,"Info_GorHanis_Sleeper_15_03"); //Vuoi dire che aspettate che il vostro dio vi liberi?
-	AI_Output (self, other,"Info_GorHanis_Sleeper_08_04"); //SÏ! L'attesa Ë quasi terminata. Si sta preparando una grande evocazione.
+	AI_Output (self, other,"Info_GorHanis_Sleeper_08_04"); //S√¨! L'attesa √® quasi terminata. Si sta preparando una grande evocazione.
 };
 
 // **************************************************
-//					Groﬂe Anrufung
+//					Gro√üe Anrufung
 // **************************************************
 
 instance Info_GorHanis_Summoning (C_INFO)
@@ -132,8 +132,8 @@ FUNC INT Info_GorHanis_Summoning_Condition()
 func VOID Info_GorHanis_Summoning_Info()
 {
 	AI_Output (other, self,"Info_GorHanis_Summoning_15_00"); //Che tipo di evocazione state preparando?
-	AI_Output (self, other,"Info_GorHanis_Summoning_08_01"); //I nostri profeti affermano che l'evocazione collettiva del Dormiente Ë la chiave per la libert‡!
-	AI_Output (self, other,"Info_GorHanis_Summoning_08_02"); //Se vuoi saperne di pi˘, vai al nostro campo.
+	AI_Output (self, other,"Info_GorHanis_Summoning_08_01"); //I nostri profeti affermano che l'evocazione collettiva del Dormiente √® la chiave per la libert√†!
+	AI_Output (self, other,"Info_GorHanis_Summoning_08_02"); //Se vuoi saperne di pi√π, vai al nostro campo.
 };
 
 // **************************************************
@@ -190,8 +190,8 @@ func VOID Info_GorHanis_Charge_Info()
 {
 	AI_Output (other, self,"Info_GorHanis_Charge_15_00"); //Ti sfido a duello nell'arena!
 	AI_Output (self, other,"Info_GorHanis_Charge_08_01"); //Non servirei alla gloria del Dormiente, se sbriciolassi un vagabondo qualsiasi di fronte al pubblico.
-	AI_Output (self, other,"Info_GorHanis_Charge_08_02"); //Mi batterÚ con te, solo quando sarai diventato un avversario capace.
-	AI_Output (self, other,"Info_GorHanis_Charge_08_03"); //Ma sono certo che non tutti i combattenti di Campo Vecchio e Campo Nuovo sono uomini di principio...Ö
+	AI_Output (self, other,"Info_GorHanis_Charge_08_02"); //Mi batter√≤ con te, solo quando sarai diventato un avversario capace.
+	AI_Output (self, other,"Info_GorHanis_Charge_08_03"); //Ma sono certo che non tutti i combattenti di Campo Vecchio e Campo Nuovo sono uomini di principio...‚Ä¶
 };
 
 // **************************************************
@@ -276,7 +276,7 @@ instance Info_TPL_1422_GorHanis1 (C_INFO)
 	information		= Info_TPL_1422_GorHanis1_Info;
 	important			= 0;
 	permanent		= 0;
-	description		= "Ich will helfen den Schl‰fer zu erwecken."; 
+	description		= "Ich will helfen den Schl√§fer zu erwecken."; 
 };
 
 FUNC int Info_TPL_1422_GorHanis1_Condition()
@@ -288,8 +288,8 @@ FUNC int Info_TPL_1422_GorHanis1_Condition()
 
 func void Info_TPL_1422_GorHanis1_Info()
 {
-	AI_Output (other, self,"Info_TPL_1422_GorHanis1_15_01"); //Ich will helfen den Schl‰fer zu erwecken.
-	AI_Output (self, other,"Info_TPL_1422_GorHanis1_08_02"); //Hmm, siehst gar nicht so aus, als wolltest Du wirklich helfen wollen. Geh aber ruhig weiter, ich halte dich nicht auf, falls du l¸gst, wird der Hohenpriester dir schon eine Lektion erteilen.
+	AI_Output (other, self,"Info_TPL_1422_GorHanis1_15_01"); //Ich will helfen den Schl√§fer zu erwecken.
+	AI_Output (self, other,"Info_TPL_1422_GorHanis1_08_02"); //Hmm, siehst gar nicht so aus, als wolltest Du wirklich helfen wollen. Geh aber ruhig weiter, ich halte dich nicht auf, falls du l√ºgst, wird der Hohenpriester dir schon eine Lektion erteilen.
 };
 
 
@@ -338,7 +338,7 @@ FUNC int Info_TPL_1422_GorHanis3_Condition()
 func void Info_TPL_1422_GorHanis3_Info()
 {
 	AI_Output (other, self,"Info_TPL_1422_GorHanis3_15_01"); //Wie seit ihr an dem Priester vorbei gekommen?
-	AI_Output (self, other,"Info_TPL_1422_GorHanis3_08_02"); //Ich sage es dir, es wird dir eh nicht nutzen. Der Priester hat uns nur passieren lassen, weil Meister Kalom mit im gesprochen hat, dass Gl¸ck wirst du nicht haben. Geh nur (lacht).
+	AI_Output (self, other,"Info_TPL_1422_GorHanis3_08_02"); //Ich sage es dir, es wird dir eh nicht nutzen. Der Priester hat uns nur passieren lassen, weil Meister Kalom mit im gesprochen hat, dass Gl√ºck wirst du nicht haben. Geh nur (lacht).
 };
 
 */

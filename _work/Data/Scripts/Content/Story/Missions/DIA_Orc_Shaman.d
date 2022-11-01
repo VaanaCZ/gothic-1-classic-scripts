@@ -154,7 +154,7 @@ instance  Info_OrcShaman_WHY (C_INFO)
 	information	= Info_OrcShaman_WHY_Info;
 	important	= 0;
 	permanent	= 0;
-	description = "PerchÈ i tuoi fratelli ti attaccano?";
+	description = "Perch√© i tuoi fratelli ti attaccano?";
 };
 
 FUNC int  Info_OrcShaman_WHY_Condition()
@@ -168,7 +168,7 @@ FUNC int  Info_OrcShaman_WHY_Condition()
 
 FUNC void  Info_OrcShaman_WHY_Info()
 {
-	AI_Output 		(hero, self,"Info_OrcShaman_WHY_15_01"); //PerchÈ i tuoi fratelli ti attaccano?
+	AI_Output 		(hero, self,"Info_OrcShaman_WHY_15_01"); //Perch√© i tuoi fratelli ti attaccano?
 	AI_Output 		(self, hero,"Info_OrcShaman_WHY_17_02"); //Ur-Shak malvoluto.
 	AI_Output 		(self, hero,"Info_OrcShaman_WHY_17_03"); //Infangato nome di KRUSHAK.
 	AI_Output 		(self, hero,"Info_OrcShaman_WHY_17_04"); //Crede KRUSHAK demone cattivo.
@@ -201,7 +201,7 @@ FUNC void  Info_OrcShaman_KRUSHAK_Info()
 	AI_Output 		(hero, self,"Info_OrcShaman_KRUSHAK_15_01"); //Cosa significa KRUSHAK?
 	AI_Output 		(self, hero,"Info_OrcShaman_KRUSHAK_17_02"); //Umani chiama DORME.
 	AI_Output 		(hero, self,"Info_OrcShaman_KRUSHAK_15_03"); //Vuoi dire 'Dormiente'?
-	AI_Output 		(self, hero,"Info_OrcShaman_KRUSHAK_17_04"); //SÏ! Umani dice DORMIENTE!
+	AI_Output 		(self, hero,"Info_OrcShaman_KRUSHAK_17_04"); //S√¨! Umani dice DORMIENTE!
 }; 
 
 //---------------------------------------------------------------------
@@ -235,7 +235,7 @@ FUNC void  Info_OrcShaman_SLEEPER_Info()
 	AI_Output 		(self, hero,"Info_OrcShaman_SLEEPER_17_05"); //Chiamato KRUSHAK!
 	AI_Output 		(self, hero,"Info_OrcShaman_SLEEPER_17_06"); //Voleva sconfiggere clan di nemici!
 	AI_Output 		(self, hero,"Info_OrcShaman_SLEEPER_17_07"); //Allora cinque fratelli costruisce tempio sottoterra per KRUSHAK!
-	AI_Output 		(hero, self,"Info_OrcShaman_SLEEPER_15_08"); //Un tempio sotterraneo per il Dormiente! Ecco cosa intendeva Xardas, affermando che l'ingresso si trova 'nella citt‡ degli orchi'!
+	AI_Output 		(hero, self,"Info_OrcShaman_SLEEPER_15_08"); //Un tempio sotterraneo per il Dormiente! Ecco cosa intendeva Xardas, affermando che l'ingresso si trova 'nella citt√† degli orchi'!
 }; 
 
 //---------------------------------------------------------------------
@@ -248,7 +248,7 @@ instance  Info_OrcShaman_CURSE (C_INFO)
 	information	= Info_OrcShaman_CURSE_Info;
 	important	= 0;
 	permanent	= 0;
-	description = "Cosa Ë successo nel tempio sotterraneo?";
+	description = "Cosa √® successo nel tempio sotterraneo?";
 };
 
 FUNC int  Info_OrcShaman_CURSE_Condition()
@@ -262,12 +262,12 @@ FUNC int  Info_OrcShaman_CURSE_Condition()
 
 FUNC void  Info_OrcShaman_CURSE_Info()
 {
-	AI_Output 		(hero, self,"Info_OrcShaman_CURSE_15_01"); //Cosa Ë successo nel tempio sotterraneo?
+	AI_Output 		(hero, self,"Info_OrcShaman_CURSE_15_01"); //Cosa √® successo nel tempio sotterraneo?
 	AI_Output 		(self, hero,"Info_OrcShaman_CURSE_17_02"); //Fratelli dato cuore a KRUSHAK.
 	AI_Output 		(self, hero,"Info_OrcShaman_CURSE_17_03"); //Ma KRUSHAK cattivo. Maledetto tutti costruttori di tempio.
 	AI_Output 		(self, hero,"Info_OrcShaman_CURSE_17_04"); //Fratelli non avere cuore, essere morti e vivi. Insieme.
-	AI_Output 		(self, hero,"Info_OrcShaman_CURSE_17_05"); //KRUSHAK ora avere cuore di fratelli. Cuore Ë potere per KRUSHAK.
-	AI_Output 		(hero, self,"Info_OrcShaman_CURSE_15_06"); //Cosa Ë successo ai lavoratori che hanno costruito il tempio?
+	AI_Output 		(self, hero,"Info_OrcShaman_CURSE_17_05"); //KRUSHAK ora avere cuore di fratelli. Cuore √® potere per KRUSHAK.
+	AI_Output 		(hero, self,"Info_OrcShaman_CURSE_15_06"); //Cosa √® successo ai lavoratori che hanno costruito il tempio?
 	AI_Output 		(self, hero,"Info_OrcShaman_CURSE_17_07"); //KRUSHAK maledetto tutti. Anche lavoratori. Tutti morti e vivi allo stesso tempo.
 }; 
 
@@ -296,8 +296,8 @@ FUNC void  Info_OrcShaman_OUTSIDE_Info()
 {
 	AI_Output 		(hero, self,"Info_OrcShaman_OUTSIDE_15_01"); //E gli orchi in superficie non hanno fatto nulla?
 	AI_Output 		(self, hero,"Info_OrcShaman_OUTSIDE_17_02"); //Loro sigillato tempio. Oggi fratelli adorare KRUSHAK.
-	AI_Output 		(self, hero,"Info_OrcShaman_OUTSIDE_17_03"); //KRUSHAK vuole sacrificio, cosÏ no diventa cattivo.
-	AI_Output 		(self, hero,"Info_OrcShaman_OUTSIDE_17_04"); //Ur-Shak crede che sacrificio Ë cosa cattiva. Detto che KRUSHAK cattivo.
+	AI_Output 		(self, hero,"Info_OrcShaman_OUTSIDE_17_03"); //KRUSHAK vuole sacrificio, cos√¨ no diventa cattivo.
+	AI_Output 		(self, hero,"Info_OrcShaman_OUTSIDE_17_04"); //Ur-Shak crede che sacrificio √® cosa cattiva. Detto che KRUSHAK cattivo.
 	AI_Output 		(self, hero,"Info_OrcShaman_OUTSIDE_17_05"); //Fratelli no vuole ascoltare. Fratelli dice Ur-Shak andare via. Fratelli colpisce Ur-Shak.
 }; 
 
@@ -311,7 +311,7 @@ instance  Info_OrcShaman_INTEMPLE (C_INFO)
 	information	= Info_OrcShaman_INTEMPLE_Info;
 	important	= 0;
 	permanent	= 0;
-	description = "Devo entrare nel tempio sotterraneo. Puoi condurmi l‡?";
+	description = "Devo entrare nel tempio sotterraneo. Puoi condurmi l√†?";
 };
 
 FUNC int  Info_OrcShaman_INTEMPLE_Condition()
@@ -324,10 +324,10 @@ FUNC int  Info_OrcShaman_INTEMPLE_Condition()
 
 FUNC void  Info_OrcShaman_INTEMPLE_Info()
 {
-	AI_Output 		(hero, self,"Info_OrcShaman_INTEMPLE_15_01"); //Devo entrare nel tempio sotterraneo. Puoi condurmi l‡?
+	AI_Output 		(hero, self,"Info_OrcShaman_INTEMPLE_15_01"); //Devo entrare nel tempio sotterraneo. Puoi condurmi l√†?
 	AI_Output 		(self, hero,"Info_OrcShaman_INTEMPLE_17_02"); //Ur-Shak dice grazie a straniero. Straniero salvato Ur-Shak.
-	AI_Output 		(self, hero,"Info_OrcShaman_INTEMPLE_17_03"); //Ma entrata di tempio essere patria. Ur-Shak non puÚ andare patria.
-	AI_Output 		(hero, self,"Info_OrcShaman_INTEMPLE_15_04"); //Capisco. Vuoi dire che non ti lasciano rientrare nella citt‡ degli orchi.
+	AI_Output 		(self, hero,"Info_OrcShaman_INTEMPLE_17_03"); //Ma entrata di tempio essere patria. Ur-Shak non pu√≤ andare patria.
+	AI_Output 		(hero, self,"Info_OrcShaman_INTEMPLE_15_04"); //Capisco. Vuoi dire che non ti lasciano rientrare nella citt√† degli orchi.
 };
 
 //---------------------------------------------------------------------
@@ -340,7 +340,7 @@ instance  Info_OrcShaman_MAP (C_INFO)
 	information	= Info_OrcShaman_MAP_Info;
 	important	= 0;
 	permanent	= 0;
-	description = "Puoi mostrarmi la citt‡ sulla mia mappa?";
+	description = "Puoi mostrarmi la citt√† sulla mia mappa?";
 };
 
 FUNC int  Info_OrcShaman_MAP_Condition()
@@ -355,7 +355,7 @@ FUNC int  Info_OrcShaman_MAP_Condition()
 
 FUNC void  Info_OrcShaman_MAP_Info()
 {
-	AI_Output 		(hero, self,"Info_OrcShaman_MAP_15_01"); //Puoi mostrarmi la citt‡ sulla mia mappa?
+	AI_Output 		(hero, self,"Info_OrcShaman_MAP_15_01"); //Puoi mostrarmi la citt√† sulla mia mappa?
 	AI_Output 		(self, hero,"Info_OrcShaman_MAP_17_02"); //Patria di Ur-Shak essere dove mappa vuota.
 	AI_Output 		(self, hero,"Info_OrcShaman_MAP_17_03"); //Straniero dare mappa, Ur-Shak completare!
 	AI_Output 		(self, hero,"Info_OrcShaman_MAP_17_04"); //(disegna sulla mappa)
@@ -377,7 +377,7 @@ instance  Info_OrcShaman_FIGHT (C_INFO)
 	information	= Info_OrcShaman_FIGHT_Info;
 	important	= 0;
 	permanent	= 0;
-	description = "Sembra che dovrÚ farmi strada combattendo!";
+	description = "Sembra che dovr√≤ farmi strada combattendo!";
 };
 
 FUNC int  Info_OrcShaman_FIGHT_Condition()
@@ -390,7 +390,7 @@ FUNC int  Info_OrcShaman_FIGHT_Condition()
 
 FUNC void  Info_OrcShaman_FIGHT_Info()
 {
-	AI_Output 		(hero, self,"Info_OrcShaman_FIGHT_15_01"); //Sembra che dovrÚ farmi strada combattendo!
+	AI_Output 		(hero, self,"Info_OrcShaman_FIGHT_15_01"); //Sembra che dovr√≤ farmi strada combattendo!
 	AI_Output 		(self, hero,"Info_OrcShaman_FIGHT_17_02"); //Patria di fratelli molto forte! Fratelli essere molto tantiiissimi!
 	AI_Output 		(self, hero,"Info_OrcShaman_FIGHT_17_03"); //Straniero no va. Molti guerrieri! Straniero muore!
 	AI_Output 		(self, hero,"Info_OrcShaman_FIGHT_17_04"); //Altri figli di spirito in patria. Straniero fa fuoco, allora straniero muore!
@@ -452,7 +452,7 @@ FUNC void  Info_OrcShaman_ULUMULU_Info()
 	AI_Output 		(hero, self,"Info_OrcShaman_ULUMULU_15_01"); //Dove trovo questo ULU-MULU?
 	AI_Output 		(self, hero,"Info_OrcShaman_ULUMULU_17_02"); //Straniero va e trova amico di Ur-Shak!
 	AI_Output 		(self, hero,"Info_OrcShaman_ULUMULU_17_03"); //Amico di Ur-Shak dare ULU-MULU! Straniero indossa ULU-MULU, straniero no muore!
-	AI_Output 		(hero, self,"Info_OrcShaman_ULUMULU_15_04"); //SÏ, sÏ, ho capito che 'no muore', ma dove trovo il tuo amico?
+	AI_Output 		(hero, self,"Info_OrcShaman_ULUMULU_15_04"); //S√¨, s√¨, ho capito che 'no muore', ma dove trovo il tuo amico?
 	AI_Output 		(self, hero,"Info_OrcShaman_ULUMULU_17_05"); //Amico di Ur-Shak in miniera di umani. Amico no scappato via con Ur-Shak. Amico ammalato.
 
 	B_Story_FoundUrShak	();
@@ -479,7 +479,7 @@ func void Info_OrcShaman_ULUMULU_FM ()
 {
 	AI_Output 		(hero, self,"Info_OrcShaman_ULUMULU_15_12"); //Eravate tenuti nella miniera libera?
 	AI_Output 		(self, hero,"Info_OrcShaman_ULUMULU_17_13"); //Ur-Shak prigioniero sotto villaggio in Buca.
-	AI_Output 		(self, hero,"Info_OrcShaman_ULUMULU_17_14"); //Ur-Shak crede che gente chiama cosÏ!
+	AI_Output 		(self, hero,"Info_OrcShaman_ULUMULU_17_14"); //Ur-Shak crede che gente chiama cos√¨!
 
 	Info_ClearChoices	(Info_OrcShaman_ULUMULU);
 };
@@ -596,7 +596,7 @@ FUNC void  Info_OrcShaman_ORCCITY_Info()
 	else
 	{	
 		AI_Output 	(self, hero,"Info_OrcShaman_ORCCITY_17_04"); //Amico no ha ULU-MULU! No bene!
-		AI_Output 	(self, hero,"Info_OrcShaman_ORCCITY_17_05"); //Amico no va su ponte, sennÚ muore!
+		AI_Output 	(self, hero,"Info_OrcShaman_ORCCITY_17_05"); //Amico no va su ponte, senn√≤ muore!
 	};
 }; 
 
@@ -610,7 +610,7 @@ instance  Info_OrcShaman_YOUHERE (C_INFO)
 	information	= Info_OrcShaman_YOUHERE_Info;
 	important	= 0;
 	permanent	= 0;
-	description = "Cosa ci fai cosÏ vicino alla citt‡?";
+	description = "Cosa ci fai cos√¨ vicino alla citt√†?";
 };
 
 FUNC int  Info_OrcShaman_YOUHERE_Condition()
@@ -623,12 +623,12 @@ FUNC int  Info_OrcShaman_YOUHERE_Condition()
 };
 FUNC void  Info_OrcShaman_YOUHERE_Info()
 {
-	AI_Output 		(hero, self,"Info_OrcShaman_YOUHERE_15_01"); //Cosa ci fai cosÏ vicino alla citt‡?
+	AI_Output 		(hero, self,"Info_OrcShaman_YOUHERE_15_01"); //Cosa ci fai cos√¨ vicino alla citt√†?
 	AI_Output 		(self, hero,"Info_OrcShaman_YOUHERE_17_02"); //Ur-Shak guarda fratelli in patria!
 	AI_Output 		(self, hero,"Info_OrcShaman_YOUHERE_17_03"); //Ur-Shak crede KRUSHAK svegliare presto!
 	AI_Output 		(self, hero,"Info_OrcShaman_YOUHERE_17_04"); //Ur-Shak aspetta qui e combatte KRUSHAK quando sveglia!
-	AI_Output 		(hero, self,"Info_OrcShaman_YOUHERE_15_05"); //Il Dormiente si sveglier‡ presto? Spero che ti sbagli!
-	AI_Output 		(hero, self,"Info_OrcShaman_YOUHERE_15_06"); //Considerando tutto ciÚ che ho sentito su di lui, preferirei che continuasse a dormire!
+	AI_Output 		(hero, self,"Info_OrcShaman_YOUHERE_15_05"); //Il Dormiente si sveglier√† presto? Spero che ti sbagli!
+	AI_Output 		(hero, self,"Info_OrcShaman_YOUHERE_15_06"); //Considerando tutto ci√≤ che ho sentito su di lui, preferirei che continuasse a dormire!
 }; 
 
 //---------------------------------------------------------------------
@@ -688,7 +688,7 @@ FUNC void  Info_OrcShaman_SCROLL_Info()
 	AI_Output 		(self, hero,"Info_OrcShaman_SCROLL_17_03"); //Ma amico stare attento quando usa magia!
 	AI_Output 		(self, hero,"Info_OrcShaman_SCROLL_17_04"); //Fratelli di Ur-Shak no piace! ULU-MULU no aiuta se amico usa magia!
 
-	B_LogEntry		(CH4_EnterTemple,"Ho incontrato nuovamente lo sciamano Ur-Shak, davanti alla citt‡ degli orchi, e mi ha detto che solo un incantesimo degli orchi mi permetter‡ di accedere al vestibolo del tempio sotterraneo. Gli altri orchi sciamani conservano questo tipo d'incantesimi nelle loro caverne.");
+	B_LogEntry		(CH4_EnterTemple,"Ho incontrato nuovamente lo sciamano Ur-Shak, davanti alla citt√† degli orchi, e mi ha detto che solo un incantesimo degli orchi mi permetter√† di accedere al vestibolo del tempio sotterraneo. Gli altri orchi sciamani conservano questo tipo d'incantesimi nelle loro caverne.");
 }; 
 
 //---------------------------------------------------------------------
@@ -701,7 +701,7 @@ instance  Info_OrcShaman_IDOL (C_INFO)
 	information	= Info_OrcShaman_IDOL_Info;
 	important	= 0;
 	permanent	= 0;
-	description = "C'Ë un altro modo per entrare nel tempio?";
+	description = "C'√® un altro modo per entrare nel tempio?";
 };
 
 FUNC int  Info_OrcShaman_IDOL_Condition()
@@ -716,22 +716,22 @@ FUNC int  Info_OrcShaman_IDOL_Condition()
 FUNC void  Info_OrcShaman_IDOL_Info()
 {
 	//SN: fliegt raus, da der Hinweis jetzt sofort nach dem Hinweis mit der Scroll gegeben wird.
-	//AI_Output 	(hero, self,"Info_OrcShaman_IDOL_15_01"); //Ich habe den Teleportzauber verbraucht und das Gitter zur Tempelvorhalle l‰sst sich nicht ˆffnen!
+	//AI_Output 	(hero, self,"Info_OrcShaman_IDOL_15_01"); //Ich habe den Teleportzauber verbraucht und das Gitter zur Tempelvorhalle l√§sst sich nicht √∂ffnen!
 	//AI_Output 	(hero, self,"Info_OrcShaman_IDOL_15_02"); //Wie komme ich jetzt wieder in den Tempel?
 
 	if	Npc_HasItems(hero,ItMi_Stuff_Idol_Sleeper_01) 
 	{
 		AI_Output 	(self, hero,"Info_OrcShaman_IDOL_17_03"); //Amico trovato figura su colonna!
-		AI_Output 	(self, hero,"Info_OrcShaman_IDOL_17_04"); //Amico ora puÚ apre cancello per sala di tempio!
+		AI_Output 	(self, hero,"Info_OrcShaman_IDOL_17_04"); //Amico ora pu√≤ apre cancello per sala di tempio!
 
-		B_LogEntry	(CH4_EnterTemple,"C'Ë un altro modo per accedere al tempio. Devo usare la statuina del Dormiente, che si trova sulla sacra colonna degli orchi sciamani. Essa apre la porta del tempio.");
+		B_LogEntry	(CH4_EnterTemple,"C'√® un altro modo per accedere al tempio. Devo usare la statuina del Dormiente, che si trova sulla sacra colonna degli orchi sciamani. Essa apre la porta del tempio.");
 	}
 	else
 	{
 		AI_Output 	(self, hero,"Info_OrcShaman_IDOL_17_05"); //Amico ora deve prendere figura da colonna!
 		AI_Output 	(self, hero,"Info_OrcShaman_IDOL_17_06"); //Figura apre porta per sala di tempio!
 
-		B_LogEntry	(CH4_EnterTemple,"C'Ë un altro modo per accedere al tempio. Sulla sacra colonna degli orchi sciamani, c'Ë una statuina del Dormiente che puÚ aprire la porta del tempio. I fratelli di Ur-Shak non saranno contenti, quando scopriranno che sto usando la loro icona sacra.");
+		B_LogEntry	(CH4_EnterTemple,"C'√® un altro modo per accedere al tempio. Sulla sacra colonna degli orchi sciamani, c'√® una statuina del Dormiente che pu√≤ aprire la porta del tempio. I fratelli di Ur-Shak non saranno contenti, quando scopriranno che sto usando la loro icona sacra.");
 	};
 }; 
 

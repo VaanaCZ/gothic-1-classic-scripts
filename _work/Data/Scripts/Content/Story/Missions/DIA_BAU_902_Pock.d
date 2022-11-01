@@ -70,7 +70,7 @@ FUNC VOID Info_Pock_Wasser_Info()
 	}
 	else
 	{
-		AI_Output(self,other,"Info_Pock_Wasser_NOWATER_04_00"); //Ma non ne hai pi˘! Non fa nulla, amico. ChiederÚ a qualcun altro.
+		AI_Output(self,other,"Info_Pock_Wasser_NOWATER_04_00"); //Ma non ne hai pi√π! Non fa nulla, amico. Chieder√≤ a qualcun altro.
 	};
 };
 
@@ -99,13 +99,13 @@ FUNC INT DIA_Pock_Hello_Condition()
 FUNC VOID DIA_Pock_Hello_Info()
 {	
 	AI_Output (other, self,"DIA_Pock_Hello_15_00"); //Salve! Sono nuovo di qui.
-	AI_Output (self, other,"DIA_Pock_Hello_04_01"); //» bello vedere un volto nuovo.
+	AI_Output (self, other,"DIA_Pock_Hello_04_01"); //√à bello vedere un volto nuovo.
 	AI_Output (other, self,"DIA_Pock_Hello_15_02"); //Devi essere qui da parecchio, vero?
 	AI_Output (self, other,"DIA_Pock_Hello_04_03"); //Hai maledettamente ragione, ragazzo. Io sono stato uno dei primi.
 };
 
 // ************************************************************
-// 						Weiﬂt ne Menge
+// 						Wei√üt ne Menge
 // ************************************************************
 
 INSTANCE DIA_Pock_KnowMuch (C_INFO)
@@ -130,7 +130,7 @@ FUNC VOID DIA_Pock_KnowMuch_Info()
 {	
 	AI_Output (other, self,"DIA_Pock_KnowMuch_15_00"); //Quindi saprai molte cose su questo posto!
 	AI_Output (self, other,"DIA_Pock_KnowMuch_04_01"); //Insomma... Passo la maggior parte del tempo qui, a raccogliere riso.
-	AI_Output (self, other,"DIA_Pock_KnowMuch_04_02"); //Ecco perchÈ sono invecchiato cosÏ tanto. Tutto quello che riceviamo Ë un po' di riso e un goccio di grappa ogni tanto. Non Ë molto, ma ci accontentiamo.
+	AI_Output (self, other,"DIA_Pock_KnowMuch_04_02"); //Ecco perch√© sono invecchiato cos√¨ tanto. Tutto quello che riceviamo √® un po' di riso e un goccio di grappa ogni tanto. Non √® molto, ma ci accontentiamo.
 };
 
 // ************************************************************
@@ -144,7 +144,7 @@ INSTANCE DIA_Pock_WhyJail (C_INFO)
 	condition	= DIA_Pock_WhyJail_Condition;
 	information	= DIA_Pock_WhyJail_Info;
 	permanent	= 0;
-	description	= "PerchÈ sei qui?";
+	description	= "Perch√© sei qui?";
 };                       
 
 FUNC INT DIA_Pock_WhyJail_Condition()
@@ -157,9 +157,9 @@ FUNC INT DIA_Pock_WhyJail_Condition()
 
 FUNC VOID DIA_Pock_WhyJail_Info()
 {	
-	AI_Output (other, self,"DIA_Pock_WhyJail_15_00"); //PerchÈ sei qui?
+	AI_Output (other, self,"DIA_Pock_WhyJail_15_00"); //Perch√© sei qui?
 	AI_Output (self, other,"DIA_Pock_WhyJail_04_01"); //Tasse, ragazzo, tasse! Il mio silos era vuoto come il mio stomaco e non potevo pagare.
-	AI_Output (self, other,"DIA_Pock_WhyJail_04_02"); //Un giorno sono venuti i soldati e mi hanno portato qui. In ogni caso, non Ë poi cosÏ peggio che fuori. Almeno non morirÚ di fame!
+	AI_Output (self, other,"DIA_Pock_WhyJail_04_02"); //Un giorno sono venuti i soldati e mi hanno portato qui. In ogni caso, non √® poi cos√¨ peggio che fuori. Almeno non morir√≤ di fame!
 	AI_Output (self, other,"DIA_Pock_WhyJail_04_03"); //Avevo sempre pagato regolarmente per tutta la vita. Ma questo non era sufficiente per quel figlio di puttana con la corona!
 };
 
@@ -188,9 +188,9 @@ FUNC INT DIA_Pock_ForgotAll_Condition()
 FUNC VOID DIA_Pock_ForgotAll_Info()
 {	
 	AI_Output (other, self,"DIA_Pock_ForgotAll_15_00"); //Tutto a posto?
-	AI_Output (self, other,"DIA_Pock_ForgotAll_04_01"); //» bello vedere un volto nuovo.
-	AI_Output (other, self,"DIA_Pock_ForgotAll_15_02"); //Aspetta un attimo! Abbiamo gi‡ parlato.
-	AI_Output (self, other,"DIA_Pock_ForgotAll_04_03"); //No, non Ë possibile. Non ti ho mai visto prima.
+	AI_Output (self, other,"DIA_Pock_ForgotAll_04_01"); //√à bello vedere un volto nuovo.
+	AI_Output (other, self,"DIA_Pock_ForgotAll_15_02"); //Aspetta un attimo! Abbiamo gi√† parlato.
+	AI_Output (self, other,"DIA_Pock_ForgotAll_04_03"); //No, non √® possibile. Non ti ho mai visto prima.
 	AI_Output (other, self,"DIA_Pock_ForgotAll_15_04"); //Certo...
 };
 

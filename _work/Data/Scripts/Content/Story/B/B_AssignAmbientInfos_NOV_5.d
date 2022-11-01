@@ -51,8 +51,8 @@ FUNC INT Info_Nov_5_EinerVonEuchWerden_Condition()
 FUNC VOID Info_Nov_5_EinerVonEuchWerden_Info()
 {
 	AI_Output(other,self,"Info_Nov_5_EinerVonEuchWerden_15_00"); //Come posso unirmi a questo campo?
-	AI_Output(self,other,"Info_Nov_5_EinerVonEuchWerden_05_01"); //Niente di più semplice. Parla con un paio di giovani guru e ti aiuteranno.
-	AI_Output(self,other,"Info_Nov_5_EinerVonEuchWerden_05_02"); //Ti piacerà questo posto, vedrai!
+	AI_Output(self,other,"Info_Nov_5_EinerVonEuchWerden_05_01"); //Niente di piÃ¹ semplice. Parla con un paio di giovani guru e ti aiuteranno.
+	AI_Output(self,other,"Info_Nov_5_EinerVonEuchWerden_05_02"); //Ti piacerÃ  questo posto, vedrai!
 };
 
 // *************************************************************************
@@ -100,7 +100,7 @@ FUNC INT Info_Nov_5_DasLager_Condition()
 FUNC VOID Info_Nov_5_DasLager_Info()
 {
 	AI_Output(other,self,"Info_Nov_5_DasLager_15_00"); //Cosa mi dici di questo campo?
-	AI_Output(self,other,"Info_Nov_5_DasLager_05_01"); //È il miglior posto di tutta la fottuta colonia.
+	AI_Output(self,other,"Info_Nov_5_DasLager_05_01"); //Ãˆ il miglior posto di tutta la fottuta colonia.
 	AI_Output(self,other,"Info_Nov_5_DasLager_05_02"); //Anche se non credi ai precetti del Dormiente, almeno qui puoi ricevere una dose quotidiana di cibo ed erba di palude. Basta solo parlare con Fortuno.
 	AI_Output(other,self,"Info_Nov_5_DasLager_15_03"); //Dove lo trovo?
 	AI_Output(self,other,"Info_Nov_5_DasLager_05_04"); //Al laboratorio di Cor Kalom, vicino al cortile del tempio grande.

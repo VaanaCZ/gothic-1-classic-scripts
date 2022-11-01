@@ -73,7 +73,7 @@ FUNC int  Sld_700_Lee_Define_Condition()
 FUNC VOID  Sld_700_Lee_Define_Info()
 {
 	AI_Output (other, self,"DIA_Lee_Define_15_00"); //Quali sono i compiti dei mercenari dei maghi?
-	AI_Output (self, other,"DIA_Lee_Define_08_01"); //È molto semplice: proteggere il metallo e i maghi.
+	AI_Output (self, other,"DIA_Lee_Define_08_01"); //Ãˆ molto semplice: proteggere il metallo e i maghi.
 	AI_Output (self, other,"DIA_Lee_Define_08_02"); //A volte, i maghi hanno un compito speciale per uno di noi.
 };
 
@@ -105,7 +105,7 @@ FUNC VOID  Sld_700_Lee_Mitmachen_Info()
 {
 	AI_Output (other, self,"DIA_Lee_Mitmachen_15_00"); //Voglio unirmi a voi!
 	AI_Output (self, other,"DIA_Lee_Mitmachen_08_01"); //Hai coraggio! Pensi davvero che io accetti tutti quelli che me lo chiedono?
-	AI_Output (self, other,"DIA_Lee_Mitmachen_08_02"); //Potrai diventare uno di noi solo dopo aver passato un po' di tempo nel campo. Ti terrò d'occhio!
+	AI_Output (self, other,"DIA_Lee_Mitmachen_08_02"); //Potrai diventare uno di noi solo dopo aver passato un po' di tempo nel campo. Ti terrÃ² d'occhio!
 };
 
 //*********************************************************
@@ -158,19 +158,19 @@ FUNC VOID  Sld_700_Lee_NowReady_Info()
 	{	
 		if hero.level < 10
 		{
-			AI_Output (self, other,"DIA_Lee_NowReady_08_01"); //Non hai abbastanza esperienza. Devi migliorare le tue abilità.
+			AI_Output (self, other,"DIA_Lee_NowReady_08_01"); //Non hai abbastanza esperienza. Devi migliorare le tue abilitÃ .
 			B_PrintGuildCondition(10);
 	    }
 	    else if hero.level >= 10
 	    {
-	    	AI_Output			(self, other,"Sld_700_Lee_BECOMESLD_Info_08_04"); //Ti darò una possibilità. Che ne dici?
+	    	AI_Output			(self, other,"Sld_700_Lee_BECOMESLD_Info_08_04"); //Ti darÃ² una possibilitÃ . Che ne dici?
 	    	Lee_SldPossible = TRUE;
 		};
 	};
 };
 
 /*------------------------------------------------------------------------
-							SÖLDNER WERDEN	2									
+							SÃ–LDNER WERDEN	2									
 ------------------------------------------------------------------------*/
 
 instance  Sld_700_Lee_BECOMESLDNOW (C_INFO)
@@ -196,21 +196,21 @@ FUNC void  Sld_700_Lee_BECOMESLDNOW_Info()
 {
 	AI_Output			(other, self,"Sld_700_Lee_BECOMESLDNOW_Info_15_01"); //Voglio diventare un mercenario.
 	AI_Output			(self, other,"Sld_700_Lee_BECOMESLDNOW_Info_08_02"); //Saggia decisione. Non te ne pentirai.
-	AI_Output			(self, other,"Sld_700_Lee_BECOMESLDNOW_Info_08_03"); //Dimmi solo una cosa: perché? Perché ti sei unito a noi e non a Campo vecchio o alla Fratellanza?
+	AI_Output			(self, other,"Sld_700_Lee_BECOMESLDNOW_Info_08_03"); //Dimmi solo una cosa: perchÃ©? PerchÃ© ti sei unito a noi e non a Campo vecchio o alla Fratellanza?
 
 	Log_CreateTopic		(GE_BecomeMercenary,LOG_NOTE);
 	B_LogEntry			(GE_BecomeMercenary,"Lee mi ha accettato fra i mercenari.");
 	
 	Info_ClearChoices	(Sld_700_Lee_BECOMESLDNOW);
 	Info_AddChoice		(Sld_700_Lee_BECOMESLDNOW,"Gli altri campi non ne valgono la pena.",Sld_700_Lee_BECOMESLDNOW_NOOTHER);
-	Info_AddChoice		(Sld_700_Lee_BECOMESLDNOW,"Ho inseguito la libertà sin dall'inizio.",Sld_700_Lee_BECOMESLDNOW_FREEDOM);
-	Info_AddChoice		(Sld_700_Lee_BECOMESLDNOW,"È stato un caso.",Sld_700_Lee_BECOMESLDNOW_JUSTBECAUSE);
+	Info_AddChoice		(Sld_700_Lee_BECOMESLDNOW,"Ho inseguito la libertÃ  sin dall'inizio.",Sld_700_Lee_BECOMESLDNOW_FREEDOM);
+	Info_AddChoice		(Sld_700_Lee_BECOMESLDNOW,"Ãˆ stato un caso.",Sld_700_Lee_BECOMESLDNOW_JUSTBECAUSE);
 };
   
 FUNC void  Sld_700_Lee_BECOMESLDNOW_NOOTHER()
 {
 	AI_Output			(other, self,"Sld_700_Lee_BECOMESLDNOW_NOOTHER_15_01"); //Gli altri campi non ne valgono la pena.
-	AI_Output			(self, other,"Sld_700_Lee_BECOMESLDNOW_NOOTHER_08_02"); //L'unica cosa che valga la pena, qui dentro, è la speranza di tornare in libertà. Benvenuto, MERCENARIO!
+	AI_Output			(self, other,"Sld_700_Lee_BECOMESLDNOW_NOOTHER_08_02"); //L'unica cosa che valga la pena, qui dentro, Ã¨ la speranza di tornare in libertÃ . Benvenuto, MERCENARIO!
 	CreateInvItem		(self,SLD_ARMOR_L);
 	B_GiveInvItems      (self, hero, SLD_ARMOR_L, 1);
 	AI_EquipBestArmor	(hero);
@@ -221,7 +221,7 @@ FUNC void  Sld_700_Lee_BECOMESLDNOW_NOOTHER()
 
 FUNC void  Sld_700_Lee_BECOMESLDNOW_FREEDOM()
 {
-	AI_Output			(other, self,"Sld_700_Lee_BECOMESLDNOW_FREEDOM_15_01"); //Ho inseguito la libertà sin dall'inizio.
+	AI_Output			(other, self,"Sld_700_Lee_BECOMESLDNOW_FREEDOM_15_01"); //Ho inseguito la libertÃ  sin dall'inizio.
 	AI_Output			(self, other,"Sld_700_Lee_BECOMESLDNOW_FREEDOM_08_02"); //Torneremo a essere liberi. Benvenuto, MERCENARIO!
 	CreateInvItem		(self,SLD_ARMOR_L);
 	B_GiveInvItems      (self, hero, SLD_ARMOR_L, 1);
@@ -233,7 +233,7 @@ FUNC void  Sld_700_Lee_BECOMESLDNOW_FREEDOM()
 
 FUNC void  Sld_700_Lee_BECOMESLDNOW_JUSTBECAUSE()
 {
-	AI_Output			(other, self,"Sld_700_Lee_BECOMESLDNOW_JUSTBECAUSE_15_01"); //È stato un caso.
+	AI_Output			(other, self,"Sld_700_Lee_BECOMESLDNOW_JUSTBECAUSE_15_01"); //Ãˆ stato un caso.
 	AI_Output			(self, other,"Sld_700_Lee_BECOMESLDNOW_JUSTBECAUSE_08_02"); //Spero che per caso noi non si resti intrappolati qui per sempre. Benvenuto, MERCENARIO!
 	CreateInvItem		(self,SLD_ARMOR_L);
 	B_GiveInvItems      (self, hero, SLD_ARMOR_L, 1);
@@ -277,15 +277,15 @@ func void  Sld_700_Lee_DAMNPAST_Info()
 	AI_Output			(self, other,"Sld_700_Lee_DAMNPAST_Info_08_01"); //Un tempo, conducevo una vita molto diversa.
 	AI_Output			(self, other,"Sld_700_Lee_DAMNPAST_Info_08_02"); //Ero uno dei migliori generali di questa nazione.
 	AI_Output			(self, other,"Sld_700_Lee_DAMNPAST_Info_08_03"); //Ho passato tutta la vita a combattere per la patria.
-	AI_Output			(self, other,"Sld_700_Lee_DAMNPAST_Info_08_04"); //Ma non piacevo ai nobili perché il Re ascoltava i mie consigli. Sapevano che costituivo una minaccia per i loro loschi affari.
+	AI_Output			(self, other,"Sld_700_Lee_DAMNPAST_Info_08_04"); //Ma non piacevo ai nobili perchÃ© il Re ascoltava i mie consigli. Sapevano che costituivo una minaccia per i loro loschi affari.
 	AI_Output			(self, other,"Sld_700_Lee_DAMNPAST_Info_08_05"); //Ho sottovalutato la loro perfidia. Hanno usato la moglie del Re per incastrarmi.
 	AI_Output			(self, other,"Sld_700_Lee_DAMNPAST_Info_08_06"); //Sono stato incolpato per il suo omicidio. Re Rhobar non ha avuto scelta.
-	AI_Output			(self, other,"Sld_700_Lee_DAMNPAST_Info_08_07"); //I servizi resi alla patria mi hanno salvato dalla forca, ma non sono bastati a garantirmi la libertà.
-	AI_Output			(self, other,"Sld_700_Lee_DAMNPAST_Info_08_08"); //Un giorno sarò di nuovo libero. Allora tornerò per vendicarmi.
+	AI_Output			(self, other,"Sld_700_Lee_DAMNPAST_Info_08_07"); //I servizi resi alla patria mi hanno salvato dalla forca, ma non sono bastati a garantirmi la libertÃ .
+	AI_Output			(self, other,"Sld_700_Lee_DAMNPAST_Info_08_08"); //Un giorno sarÃ² di nuovo libero. Allora tornerÃ² per vendicarmi.
 	
 	AI_AlignToWP		(self);
 	
-	AI_Output			(self, other,"Sld_700_Lee_DAMNPAST_Info_08_09"); //Avrò la mia vendetta.
+	AI_Output			(self, other,"Sld_700_Lee_DAMNPAST_Info_08_09"); //AvrÃ² la mia vendetta.
 	
 	Npc_ExchangeRoutine (self,"START");
 	
@@ -321,7 +321,7 @@ FUNC VOID  Sld_700_Lee_FMTaken_Info()
 {
 	AI_Output (other, self,"DIA_Lee_FMTaken_15_00"); //Cosa ne pensi della miniera?
 	
-	if (Lee_freeminereport == 0) 					//SC hat jetzt die Möglichkeit, Lee über die freie Mine zu informieren! ***Björn***
+	if (Lee_freeminereport == 0) 					//SC hat jetzt die MÃ¶glichkeit, Lee Ã¼ber die freie Mine zu informieren! ***BjÃ¶rn***
 	{
 	
 		AI_Output (self, other,"DIA_Lee_FMTaken_08_01"); //Si sono spinti troppo oltre e se ne pentiranno.
@@ -329,7 +329,7 @@ FUNC VOID  Sld_700_Lee_FMTaken_Info()
 	}
 	else
 	{
-		AI_Output			(hero, self,"Info_Lee_now_freeminefree_15_01"); 	//Ora non sono più una minaccia!
+		AI_Output			(hero, self,"Info_Lee_now_freeminefree_15_01"); 	//Ora non sono piÃ¹ una minaccia!
 		AI_Output			(self, hero,"Sld_700_Lee_CHANGESIDE_Info_08_02"); 	//Hai fatto molto per il nostro campo. Ho bisogno di uomini come te.
 		AI_Output			(hero, self,"Info_FreemineOrc_EXIT_15_03"); 		//Grazie. Ora riprendo la mia strada.
 		AI_Output			(self, hero,"Info_CorAngar_TELEPORT_08_01"); 		//Un momento!
@@ -389,7 +389,7 @@ FUNC void  Sld_700_Lee_CHANGESIDE_Info()
 	B_LogEntry			(CH4_BannedFromOC,"Ho cambiato squadra. Dopo essere stato bandito da Campo Vecchio, mi sono unito ai mercenari. Ora torniamo da Saturas!");
 
 	Log_CreateTopic 	(GE_TeacherNC,LOG_NOTE);
-	B_LogEntry			(GE_TeacherNC,"Lee può insegnarmi a combattere con le ARMI A DUE MANI. Inoltre, può aiutarmi a migliorare FORZA e DESTREZZA.");
+	B_LogEntry			(GE_TeacherNC,"Lee puÃ² insegnarmi a combattere con le ARMI A DUE MANI. Inoltre, puÃ² aiutarmi a migliorare FORZA e DESTREZZA.");
 };  
 
 /*------------------------------------------------------------------------
@@ -440,7 +440,7 @@ func void Sld_700_Lee_ARMOR_M()
 	}
 	else 
 	{
-		AI_Output			(self, other,"Sld_700_Lee_ARMOR_M_Info_08_04"); //Quest'armatura è resistente e ti proteggerà bene.
+		AI_Output			(self, other,"Sld_700_Lee_ARMOR_M_Info_08_04"); //Quest'armatura Ã¨ resistente e ti proteggerÃ  bene.
 		B_GiveInvItems  	(hero, self, ItMinugget,VALUE_SLD_ARMOR_M);
 		CreateInvItem		(hero,SLD_ARMOR_M);
 		
@@ -462,7 +462,7 @@ func void Sld_700_Lee_ARMOR_H()
 	}
 	else 
 	{
-		AI_Output			(self, other,"Sld_700_Lee_ARMOR_H_Info_08_04"); //Quest'armatura è il pezzo migliore che tu possa avere. Credimi, vale il suo prezzo.
+		AI_Output			(self, other,"Sld_700_Lee_ARMOR_H_Info_08_04"); //Quest'armatura Ã¨ il pezzo migliore che tu possa avere. Credimi, vale il suo prezzo.
 		B_GiveInvItems  	(hero, self, ItMinugget,VALUE_SLD_ARMOR_H);
 
 		CreateInvItem		(hero,SLD_ARMOR_H);	//SN: ohne B_GiveInvItem, weil sonst Lee nackt dasteht!
@@ -577,7 +577,7 @@ FUNC int  Sld_700_Lee_ZWEIHAND1_Condition()
 {	
 	if 	( 
 			(Npc_GetTalentSkill  (hero,NPC_TALENT_2H) < 1)
-			&& ((Npc_GetTrueGuild    (hero) == GIL_SLD) || ((Npc_GetTrueGuild(hero)==GIL_KDW) && (Kapitel >= 4))  )	//jetzt auch als Wassermagier im 4. Kapitel möglich ***BJÖRN***
+			&& ((Npc_GetTrueGuild    (hero) == GIL_SLD) || ((Npc_GetTrueGuild(hero)==GIL_KDW) && (Kapitel >= 4))  )	//jetzt auch als Wassermagier im 4. Kapitel mÃ¶glich ***BJÃ–RN***
 		)
 	{
 		return TRUE;
@@ -591,9 +591,9 @@ FUNC void  Sld_700_Lee_ZWEIHAND1_Info()
 	if (B_GiveSkill(other,NPC_TALENT_2H , 1, LPCOST_TALENT_2H_1))
 	{
 		AI_Output			(self, other,"Sld_700_Lee_ZWEIHAND1_Info_08_02"); //Va bene, partiamo dalle basi.
-		AI_Output			(self, other,"Sld_700_Lee_ZWEIHAND1_Info_08_03"); //Tieni la spada in posizione orizzontale. Avrai bisogno di più forza per colpire un avversario con un'arma così pesante.
-		AI_Output			(self, other,"Sld_700_Lee_ZWEIHAND1_Info_08_04"); //Alza il braccio e abbassalo davanti a te. Di solito, questo è sufficiente per colpire il nemico.
-		AI_Output			(self, other,"Sld_700_Lee_ZWEIHAND1_Info_08_05"); //Riporta in alto l'arma, sfruttando la velocità acquisita.
+		AI_Output			(self, other,"Sld_700_Lee_ZWEIHAND1_Info_08_03"); //Tieni la spada in posizione orizzontale. Avrai bisogno di piÃ¹ forza per colpire un avversario con un'arma cosÃ¬ pesante.
+		AI_Output			(self, other,"Sld_700_Lee_ZWEIHAND1_Info_08_04"); //Alza il braccio e abbassalo davanti a te. Di solito, questo Ã¨ sufficiente per colpire il nemico.
+		AI_Output			(self, other,"Sld_700_Lee_ZWEIHAND1_Info_08_05"); //Riporta in alto l'arma, sfruttando la velocitÃ  acquisita.
 		AI_Output			(self, other,"Sld_700_Lee_ZWEIHAND1_Info_08_06"); //Le spade a due mani sono particolarmente indicate per coordinare dei colpi laterali per tenere a distanza gli avversari.
 		AI_Output			(self, other,"Sld_700_Lee_ZWEIHAND1_Info_08_07"); //Questo dovrebbe bastare, per iniziare. Fai un po' di pratica.
 	
@@ -618,7 +618,7 @@ FUNC int  Sld_700_Lee_ZWEIHAND2_Condition()
 	if
 		( 
 			(Npc_GetTalentSkill  (hero,NPC_TALENT_2H) == 1)
-			&& ( (Npc_GetTrueGuild    (hero) == GIL_SLD) ||  ((Npc_GetTrueGuild(hero)==GIL_KDW) && (Kapitel >= 4))  )	//jetzt auch als Wassermagier im 4. Kapitel möglich ***BJÖRN***
+			&& ( (Npc_GetTrueGuild    (hero) == GIL_SLD) ||  ((Npc_GetTrueGuild(hero)==GIL_KDW) && (Kapitel >= 4))  )	//jetzt auch als Wassermagier im 4. Kapitel mÃ¶glich ***BJÃ–RN***
 		)
 	{
 		return TRUE;
@@ -627,18 +627,18 @@ FUNC int  Sld_700_Lee_ZWEIHAND2_Condition()
 };
 FUNC void  Sld_700_Lee_ZWEIHAND2_Info()
 {
-	AI_Output			(other, self,"Sld_700_Lee_ZWEIHAND2_Info_15_01"); //Voglio imparare di più sulle spade a due mani.
+	AI_Output			(other, self,"Sld_700_Lee_ZWEIHAND2_Info_15_01"); //Voglio imparare di piÃ¹ sulle spade a due mani.
 	
 	if (B_GiveSkill(other,NPC_TALENT_2H , 2, LPCOST_TALENT_2H_2))
 	{
 		AI_Output			(self, other,"Sld_700_Lee_ZWEIHAND2_Info_08_02"); //Prima di tutto, devi cambiare la posizione iniziale. Tieni la spada in posizione verticale lungo il fianco, afferrando saldamente l'elsa con entrambe le mani.
 		AI_Output			(self, other,"Sld_700_Lee_ZWEIHAND2_Info_08_03"); //Abbassala velocemente e fai oscillare la lama sopra la spalla. Ora puoi sferrare un colpo rapido a destra.
-		AI_Output			(self, other,"Sld_700_Lee_ZWEIHAND2_Info_08_04"); //Il tuo avversario non avrà il tempo d'avvicinarsi.
+		AI_Output			(self, other,"Sld_700_Lee_ZWEIHAND2_Info_08_04"); //Il tuo avversario non avrÃ  il tempo d'avvicinarsi.
 		AI_Output			(self, other,"Sld_700_Lee_ZWEIHAND2_Info_08_05"); //Oppure abbassa la spada, partendo dall'angolo in alto a sinistra e spingendola in avanti per far indietreggiare l'avversario.
-		AI_Output			(self, other,"Sld_700_Lee_ZWEIHAND2_Info_08_06"); //Ruota su te stesso per imprimere la giusta velocità al prossimo colpo.
-		AI_Output			(self, other,"Sld_700_Lee_ZWEIHAND2_Info_08_07"); //Se non è sufficiente, usa l'oscillazione rimanente per brandire nuovamente la spada.
+		AI_Output			(self, other,"Sld_700_Lee_ZWEIHAND2_Info_08_06"); //Ruota su te stesso per imprimere la giusta velocitÃ  al prossimo colpo.
+		AI_Output			(self, other,"Sld_700_Lee_ZWEIHAND2_Info_08_07"); //Se non Ã¨ sufficiente, usa l'oscillazione rimanente per brandire nuovamente la spada.
 		AI_Output			(self, other,"Sld_700_Lee_ZWEIHAND2_Info_08_08"); //Quando hai completato l'attacco, blocca il tuo avversario e attendi un'apertura nella sua difesa per colpire ancora.
-		AI_Output			(self, other,"Sld_700_Lee_ZWEIHAND2_Info_08_09"); //Il segreto per un attacco di successo è variare i colpi e cambiare posizione.
+		AI_Output			(self, other,"Sld_700_Lee_ZWEIHAND2_Info_08_09"); //Il segreto per un attacco di successo Ã¨ variare i colpi e cambiare posizione.
 	
 		Sld_700_Lee_ZWEIHAND2.permanent = 0;
 	};

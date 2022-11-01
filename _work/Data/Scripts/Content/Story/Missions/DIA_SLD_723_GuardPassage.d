@@ -7,11 +7,11 @@
 //	Uhrzeit:
 //
 //	Es passiert folgendes:
-//	1.	Nähert sich der Spieler dem Durchgang, so wird er in diesen
+//	1.	NÃ¤hert sich der Spieler dem Durchgang, so wird er in diesen
 //		Dialog gezwungen und einmal gewarnt
-//	2.	Nähert sich der SC trotzdem weiter, so wird er ein ZWEITES Mal
+//	2.	NÃ¤hert sich der SC trotzdem weiter, so wird er ein ZWEITES Mal
 //		gewarnt (aggressiver mit Waffe ziehen)
-//	3.	Nähert er sich trotzdem wieder, wird er angegriffen
+//	3.	NÃ¤hert er sich trotzdem wieder, wird er angegriffen
 //////////////////////////////////////////////////////////////////////////
 const string	SLD_723_CHECKPOINT		= "NC_PLACE02";
 
@@ -42,7 +42,7 @@ func void Info_SLD_723_FirstWarn_Info()
 {
 	PrintGlobals	(PD_MISSION);
 
-	AI_Output 		(self, hero,"Info_SLD_723_FirstWarn_11_01"); //FERMO! Nessuno può passare se non conosce la parola d'ordine!
+	AI_Output 		(self, hero,"Info_SLD_723_FirstWarn_11_01"); //FERMO! Nessuno puÃ² passare se non conosce la parola d'ordine!
 
 	hero.aivar[AIV_LASTDISTTOWP] 		= Npc_GetDistToWP(hero,SLD_723_CHECKPOINT);
 	hero.aivar[AIV_GUARDPASSAGE_STATUS]	= AIV_GPS_FIRSTWARN;	
@@ -52,9 +52,9 @@ func void Info_SLD_723_FirstWarn_Info()
 		Info_Clearchoices 	(Info_SLD_723_FirstWarn);
 		Info_Addchoice 		(Info_SLD_723_FirstWarn,"Ho il permesso di Cronos!",	Info_SLD_723_Parole_CRONOS);  
 		Info_Addchoice 		(Info_SLD_723_FirstWarn,"L'ho dimenticata!",	Info_SLD_723_Parole_FORGOT);  
-		Info_Addchoice 		(Info_SLD_723_FirstWarn,"La parola d'ordine è TERIANTROCH.",	Info_SLD_723_Parole_FALSE2);  
-		Info_Addchoice 		(Info_SLD_723_FirstWarn,"La parola d'ordine è TETRIANDOCH.",	Info_SLD_723_Parole_TRUE);  
-		Info_Addchoice 		(Info_SLD_723_FirstWarn,"La parola d'ordine è TETRIDANOCH.",	Info_SLD_723_Parole_FALSE1);  
+		Info_Addchoice 		(Info_SLD_723_FirstWarn,"La parola d'ordine Ã¨ TERIANTROCH.",	Info_SLD_723_Parole_FALSE2);  
+		Info_Addchoice 		(Info_SLD_723_FirstWarn,"La parola d'ordine Ã¨ TETRIANDOCH.",	Info_SLD_723_Parole_TRUE);  
+		Info_Addchoice 		(Info_SLD_723_FirstWarn,"La parola d'ordine Ã¨ TETRIDANOCH.",	Info_SLD_723_Parole_FALSE1);  
 	}
 	else
 	{
@@ -65,7 +65,7 @@ func void Info_SLD_723_FirstWarn_Info()
 func void Info_SLD_723_Parole_CRONOS ()
 {
 	AI_Output 			(hero, self,"Info_SLD_723_Parole_CRONOS_15_01"); //Ho il permesso di Cronos!
-	AI_Output 			(self, hero,"Info_SLD_723_Parole_CRONOS_11_02"); //Se è vero, devi anche sapere la parola d'ordine. Sparisci, bugiardo!
+	AI_Output 			(self, hero,"Info_SLD_723_Parole_CRONOS_11_02"); //Se Ã¨ vero, devi anche sapere la parola d'ordine. Sparisci, bugiardo!
 	AI_StopProcessInfos	(self);
 };
 
@@ -78,21 +78,21 @@ func void Info_SLD_723_Parole_FORGOT ()
 
 func void Info_SLD_723_Parole_FALSE1 ()
 {
-	AI_Output 			(hero, self,"Info_SLD_723_Parole_FALSE1_15_01"); //La parola d'ordine è TETRIDANOCH.
+	AI_Output 			(hero, self,"Info_SLD_723_Parole_FALSE1_15_01"); //La parola d'ordine Ã¨ TETRIDANOCH.
 	AI_Output 			(self, hero,"Info_SLD_723_Parole_FALSE1_11_02"); //SBAGLIATO!
 	AI_StopProcessInfos	(self);
 };
 
 func void Info_SLD_723_Parole_FALSE2 ()
 {
-	AI_Output 			(hero, self,"Info_SLD_723_Parole_FALSE2_15_01"); //La parola d'ordine è TERIANTROCH.
+	AI_Output 			(hero, self,"Info_SLD_723_Parole_FALSE2_15_01"); //La parola d'ordine Ã¨ TERIANTROCH.
 	AI_Output 			(self, hero,"Info_SLD_723_Parole_FALSE2_11_02"); //SBAGLIATO!
 	AI_StopProcessInfos	(self);
 };
 
 func void Info_SLD_723_Parole_TRUE ()
 {
-	AI_Output 			(hero, self,"Info_SLD_723_Parole_TRUE_15_01"); //La parola d'ordine è TETRIANDOCH.
+	AI_Output 			(hero, self,"Info_SLD_723_Parole_TRUE_15_01"); //La parola d'ordine Ã¨ TETRIANDOCH.
 	AI_Output 			(self, hero,"Info_SLD_723_Parole_TRUE_11_02"); //Esatto! Puoi passare!
 	AI_StopProcessInfos	(self);
 
@@ -132,7 +132,7 @@ func int Info_SLD_723_LastWarn_Condition()
 
 func int Info_SLD_723_LastWarn_Info()
 {
-	AI_Output 		(self, hero,"Info_SLD_723_LastWarn_11_01"); 		//Non te lo ripeto più. NON FARE UN ALTRO PASSO!
+	AI_Output 		(self, hero,"Info_SLD_723_LastWarn_11_01"); 		//Non te lo ripeto piÃ¹. NON FARE UN ALTRO PASSO!
 
 	hero.aivar[AIV_LASTDISTTOWP] 		= Npc_GetDistToWP(hero,SLD_723_CHECKPOINT);
 	hero.aivar[AIV_GUARDPASSAGE_STATUS]	= AIV_GPS_LASTWARN;
@@ -171,7 +171,7 @@ func int Info_SLD_723_Attack_Info()
 	hero.aivar[AIV_GUARDPASSAGE_STATUS]	= AIV_GPS_PUNISH;	
 	
 	B_FullStop			(self);	
-	AI_StopProcessInfos	(self);					// dem Spieler sofort wieder die Kontrolle zurückgeben
+	AI_StopProcessInfos	(self);					// dem Spieler sofort wieder die Kontrolle zurÃ¼ckgeben
 	B_IntruderAlert		(self,	other);
 	B_SetAttackReason	(self,	AIV_AR_INTRUDER);
 	Npc_SetTarget		(self,	hero);
@@ -206,7 +206,7 @@ func int Info_SLD_723_PAROLE_Info()
 	Info_ClearChoices 	(Info_SLD_723_PAROLE);
 	Info_AddChoice 		(Info_SLD_723_PAROLE,"Ho il permesso di Cronos!",	Info_SLD_723_Parole_CRONOS);  
 	Info_AddChoice 		(Info_SLD_723_PAROLE,"L'ho dimenticata!",	Info_SLD_723_Parole_FORGOT);  
-	Info_AddChoice 		(Info_SLD_723_PAROLE,"La parola d'ordine è TERIANTROCH.",	Info_SLD_723_Parole_FALSE2);  
-	Info_AddChoice 		(Info_SLD_723_PAROLE,"La parola d'ordine è TETRIANDOCH.",	Info_SLD_723_Parole_TRUE);  
-	Info_AddChoice 		(Info_SLD_723_PAROLE,"La parola d'ordine è TETRIDANOCH.",	Info_SLD_723_Parole_FALSE1);  
+	Info_AddChoice 		(Info_SLD_723_PAROLE,"La parola d'ordine Ã¨ TERIANTROCH.",	Info_SLD_723_Parole_FALSE2);  
+	Info_AddChoice 		(Info_SLD_723_PAROLE,"La parola d'ordine Ã¨ TETRIANDOCH.",	Info_SLD_723_Parole_TRUE);  
+	Info_AddChoice 		(Info_SLD_723_PAROLE,"La parola d'ordine Ã¨ TETRIDANOCH.",	Info_SLD_723_Parole_FALSE1);  
 };

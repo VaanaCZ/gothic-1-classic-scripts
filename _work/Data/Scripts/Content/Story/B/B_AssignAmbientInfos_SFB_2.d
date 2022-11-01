@@ -4,7 +4,7 @@
 
 
 // *************************************************************************
-// 									Vor Gespräch
+// 									Vor GesprÃ¤ch
 // *************************************************************************
 
 INSTANCE Info_SFB_2_Pre(C_INFO)
@@ -87,7 +87,7 @@ INSTANCE Info_SFB_2_WichtigePersonen(C_INFO)
 	condition	= Info_SFB_2_WichtigePersonen_Condition;
 	information	= Info_SFB_2_WichtigePersonen_Info;
 	permanent	= 1;
-	description = "Chi è il capo, qui?";
+	description = "Chi Ã¨ il capo, qui?";
 };                       
 
 FUNC INT Info_SFB_2_WichtigePersonen_Condition()
@@ -97,7 +97,7 @@ FUNC INT Info_SFB_2_WichtigePersonen_Condition()
 
 FUNC VOID Info_SFB_2_WichtigePersonen_Info()
 {
-	AI_Output(other,self,"Info_SFB_2_WichtigePersonen_15_00"); //Chi è il capo, qui?
+	AI_Output(other,self,"Info_SFB_2_WichtigePersonen_15_00"); //Chi Ã¨ il capo, qui?
 	AI_Output(self,other,"Info_SFB_2_WichtigePersonen_02_01"); //I mercenari comandano la Buca, ma non Campo Nuovo.
 	AI_Output(self,other,"Info_SFB_2_WichtigePersonen_02_02"); //Stai attento a non cacciarti nei guai.
 };
@@ -112,7 +112,7 @@ INSTANCE Info_SFB_2_DasLager(C_INFO)
 	condition	= Info_SFB_2_DasLager_Condition;
 	information	= Info_SFB_2_DasLager_Info;
 	permanent	= 1;
-	description = "Voglio saperne di più sul campo.";
+	description = "Voglio saperne di piÃ¹ sul campo.";
 };                       
 
 FUNC INT Info_SFB_2_DasLager_Condition()
@@ -122,7 +122,7 @@ FUNC INT Info_SFB_2_DasLager_Condition()
 
 FUNC VOID Info_SFB_2_DasLager_Info()
 {
-	AI_Output(other,self,"Info_SFB_2_DasLager_15_00"); //Voglio saperne di più sul campo.
+	AI_Output(other,self,"Info_SFB_2_DasLager_15_00"); //Voglio saperne di piÃ¹ sul campo.
 	AI_Output(self,other,"Info_SFB_2_DasLager_02_01"); //Non posso aiutarti. Farai meglio a rivolgerti a Swiney o ai mercenari.
 };
 
@@ -148,9 +148,9 @@ FUNC VOID Info_SFB_2_DieLage_Info()
 {
 	AI_Output(other,self,"Info_SFB_2_DieLage_15_00"); //Come va la vita?
 	AI_Output(self,other,"Info_SFB_2_DieLage_02_01"); //Non mi lamento. Ognuno fa la sua parte.
-	AI_Output(self,other,"Info_SFB_2_DieLage_02_02"); //In fin dei conti, è meglio lavorare qui che a Campo Vecchio.
+	AI_Output(self,other,"Info_SFB_2_DieLage_02_02"); //In fin dei conti, Ã¨ meglio lavorare qui che a Campo Vecchio.
 	AI_Output(self,other,"Info_SFB_2_DieLage_02_03"); //Vieni da Campo Vecchio?
-	AI_Output(self,other,"Info_SFB_2_DieLage_02_04"); //Se vieni da lì, ricorda che non voglio guai.
+	AI_Output(self,other,"Info_SFB_2_DieLage_02_04"); //Se vieni da lÃ¬, ricorda che non voglio guai.
 	AI_StopProcessInfos	(self);
 };	
 	

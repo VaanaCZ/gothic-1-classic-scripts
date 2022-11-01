@@ -46,11 +46,11 @@ FUNC INT DIA_Herek_Bully_Condition()
 
 FUNC VOID DIA_Herek_Bully_Info()
 {
-	AI_Output (self, other,"DIA_Herek_Bully_01_00"); //Aspetta! È vero che hai parlato con Bloodwyn?
-	AI_Output (other, self,"DIA_Herek_Bully_15_01"); //Perché? Cosa vuoi?
+	AI_Output (self, other,"DIA_Herek_Bully_01_00"); //Aspetta! Ãˆ vero che hai parlato con Bloodwyn?
+	AI_Output (other, self,"DIA_Herek_Bully_15_01"); //PerchÃ©? Cosa vuoi?
 	AI_Output (self, other,"DIA_Herek_Bully_01_02"); //Sei stato davvero carino a rifiutare di dargli i soldi per la protezione!
 	AI_Output (self, other,"DIA_Herek_Bully_01_03"); //Significa che tutti noi dovremo pagare anche per te!
-	AI_Output (self, other,"DIA_Herek_Bully_01_04"); //Farò in modo che la prossima volta ti ricordi ciò che devi fare.
+	AI_Output (self, other,"DIA_Herek_Bully_01_04"); //FarÃ² in modo che la prossima volta ti ricordi ciÃ² che devi fare.
 	
 	Npc_SetPermAttitude (self,ATT_ANGRY);
 	
@@ -85,10 +85,10 @@ FUNC INT DIA_Herek_Motz_Condition()
 FUNC VOID DIA_Herek_Motz_Info()
 {
 	AI_Output (other, self,"DIA_Herek_Motz_15_00"); //Come vanno le cose?
-	AI_Output (self, other,"DIA_Herek_Motz_01_01"); //In questo campo non c'è abbastanza spazio per tutti e due!
+	AI_Output (self, other,"DIA_Herek_Motz_01_01"); //In questo campo non c'Ã¨ abbastanza spazio per tutti e due!
 	AI_Output (other, self,"DIA_Herek_Motz_15_02"); //Prego?
 	AI_Output (self, other,"DIA_Herek_Motz_01_03"); //Se fosse per me, non dureresti a lungo!
-	AI_Output (self, other,"DIA_Herek_Motz_01_04"); //Sai perché sono qui? Ho ucciso una decina di uomini in una sola notte, così! He he he!
+	AI_Output (self, other,"DIA_Herek_Motz_01_04"); //Sai perchÃ© sono qui? Ho ucciso una decina di uomini in una sola notte, cosÃ¬! He he he!
 	
 	Npc_SetPermAttitude (self,ATT_ANGRY);
 		
@@ -119,8 +119,8 @@ FUNC INT DIA_Herek_Anlegen_Condition()
 
 FUNC VOID DIA_Herek_Anlegen_Info()
 {
-	AI_Output (other, self,"DIA_Herek_Anlegen_15_00"); //Pensi di essere un tipo pericoloso, vero? Perché non ci provi con me...
-	AI_Output (self, other,"DIA_Herek_Anlegen_01_01"); //Sei stanco di vivere? D'accordo, se è questo che vuoi!
+	AI_Output (other, self,"DIA_Herek_Anlegen_15_00"); //Pensi di essere un tipo pericoloso, vero? PerchÃ© non ci provi con me...
+	AI_Output (self, other,"DIA_Herek_Anlegen_01_01"); //Sei stanco di vivere? D'accordo, se Ã¨ questo che vuoi!
 	
 	AI_StopProcessInfos	(self);
 	

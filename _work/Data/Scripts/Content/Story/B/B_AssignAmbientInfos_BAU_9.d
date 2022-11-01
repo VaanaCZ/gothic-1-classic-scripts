@@ -48,7 +48,7 @@ FUNC INT Info_Bau_9_WichtigePersonen_Condition()
 FUNC VOID Info_Bau_9_WichtigePersonen_Info()
 {
 	AI_Output(other,self,"Info_Bau_9_WichtigePersonen_15_00"); //Chi si occupa che tutto proceda nella maniera giusta?
-	AI_Output(self,other,"Info_Bau_9_WichtigePersonen_09_01"); //Tutti! Il Signore del Riso dovrebbe controllare il lavoro, però, se vuoi la mia opinione, passa tutto il tempo seduto nel bunker a contare i sacchi.
+	AI_Output(self,other,"Info_Bau_9_WichtigePersonen_09_01"); //Tutti! Il Signore del Riso dovrebbe controllare il lavoro, perÃ², se vuoi la mia opinione, passa tutto il tempo seduto nel bunker a contare i sacchi.
 	AI_Output(self,other,"Info_Bau_9_WichtigePersonen_09_02"); //Beh, lui e Homer hanno messo in piedi tutto questo...
 	var C_NPC Ricelord;			Ricelord	= Hlp_GetNpc(Bau_900_Ricelord);
 	Ricelord.aivar[AIV_FINDABLE] = TRUE;	
@@ -75,7 +75,7 @@ FUNC INT Info_Bau_9_DasLager_Condition()
 FUNC VOID Info_Bau_9_DasLager_Info()
 {
 	AI_Output(other,self,"Info_Bau_9_DasLager_15_00"); //Parlami del campo.
-	AI_Output(self,other,"Info_Bau_9_DasLager_09_01"); //È pieno zeppo di bastardi. Se fosse per me, ordinerei ai mercenari di sbattere fuori tutti i ladri!
+	AI_Output(self,other,"Info_Bau_9_DasLager_09_01"); //Ãˆ pieno zeppo di bastardi. Se fosse per me, ordinerei ai mercenari di sbattere fuori tutti i ladri!
 	AI_Output(self,other,"Info_Bau_9_DasLager_09_02"); //Non fanno la loro parte e causano solo guai!
 };
 
@@ -149,7 +149,7 @@ FUNC VOID Info_Bau_9_Wasser_Info()
 	}
 	else
 	{
-		AI_Output(self,other,"Info_Bau_9_Wasser_NOWATER_09_00"); //Non ne hai più. La chiederò agli altri.
+		AI_Output(self,other,"Info_Bau_9_Wasser_NOWATER_09_00"); //Non ne hai piÃ¹. La chiederÃ² agli altri.
 	};
 };
 	

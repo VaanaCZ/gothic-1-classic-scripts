@@ -51,7 +51,7 @@ FUNC INT Info_Nov_3_EinerVonEuchWerden_Condition()
 FUNC VOID Info_Nov_3_EinerVonEuchWerden_Info()
 {
 	AI_Output(other,self,"Info_Nov_3_EinerVonEuchWerden_15_00"); //Come faccio a unirmi a questo campo?
-	AI_Output(self,other,"Info_Nov_3_EinerVonEuchWerden_03_01"); //È semplice. Fallo e basta.
+	AI_Output(self,other,"Info_Nov_3_EinerVonEuchWerden_03_01"); //Ãˆ semplice. Fallo e basta.
 	AI_Output(self,other,"Info_Nov_3_EinerVonEuchWerden_03_02"); //Parla coi guru, ti faranno da guida!
 };
 
@@ -65,7 +65,7 @@ INSTANCE Info_Nov_3_WichtigePersonen(C_INFO)
 	condition	= Info_Nov_3_WichtigePersonen_Condition;
 	information	= Info_Nov_3_WichtigePersonen_Info;
 	permanent	= 1;
-	description = "Chi è il capo, qui?";
+	description = "Chi Ã¨ il capo, qui?";
 };                       
 
 FUNC INT Info_Nov_3_WichtigePersonen_Condition()
@@ -75,9 +75,9 @@ FUNC INT Info_Nov_3_WichtigePersonen_Condition()
 
 FUNC VOID Info_Nov_3_WichtigePersonen_Info()
 {
-	AI_Output(other,self,"Info_Nov_3_WichtigePersonen_15_00"); //Chi è il capo, qui?
+	AI_Output(other,self,"Info_Nov_3_WichtigePersonen_15_00"); //Chi Ã¨ il capo, qui?
 	AI_Output(self,other,"Info_Nov_3_WichtigePersonen_03_01"); //Y'Berion, che il Dormiente sia lodato, ci ha condotti in questo luogo sacro.
-	AI_Output(self,other,"Info_Nov_3_WichtigePersonen_03_02"); //Tutto questo è stato creato dalle sue visioni.
+	AI_Output(self,other,"Info_Nov_3_WichtigePersonen_03_02"); //Tutto questo Ã¨ stato creato dalle sue visioni.
 };
 
 // *************************************************************************
@@ -100,7 +100,7 @@ FUNC INT Info_Nov_3_DasLager_Condition()
 
 FUNC VOID Info_Nov_3_DasLager_Info()
 {
-	AI_Output(other,self,"Info_Nov_3_DasLager_15_00"); //C'è un luogo importante che devo visitare?
+	AI_Output(other,self,"Info_Nov_3_DasLager_15_00"); //C'Ã¨ un luogo importante che devo visitare?
 	AI_Output(self,other,"Info_Nov_3_DasLager_03_01"); //Vai da Fortuno. Fornisce l'erba di palude a tutti i seguaci della Setta.
 	AI_Output(self,other,"Info_Nov_3_DasLager_03_02"); //Lo troverai sotto il laboratorio alchemico di Cor Kalom.
 	

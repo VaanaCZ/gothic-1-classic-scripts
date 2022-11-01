@@ -26,14 +26,14 @@ FUNC VOID Info_Erpresser_Info()
 	AI_Output (self, other,"Info_Erpresser_Info_13_01"); //Ehi, ragazzo! Se vuoi passare devi pagare 10 pezzi di metallo. Capito?
 	
 	Info_ClearChoices( Info_Erpresser );
-	Info_AddChoice	 ( Info_Erpresser,"Perché non vieni a prenderti il tuo metallo?", Info_Erpresser_Choice_AufsMaul );
-	Info_AddChoice	 ( Info_Erpresser,"Tre pezzi di metallo? Non è molto...", Info_Erpresser_Choice_Zahlen );
+	Info_AddChoice	 ( Info_Erpresser,"PerchÃ© non vieni a prenderti il tuo metallo?", Info_Erpresser_Choice_AufsMaul );
+	Info_AddChoice	 ( Info_Erpresser,"Tre pezzi di metallo? Non Ã¨ molto...", Info_Erpresser_Choice_Zahlen );
 };
 
 FUNC VOID Info_Erpresser_Choice_AufsMaul()
 {
-	AI_Output (other, self,"Info_Erpresser_Choice_AufsMaul_15_01"); //Perché non vieni a prenderti il tuo metallo?
-	AI_Output (self, other,"Info_Erpresser_Choice_AufsMaul_13_02"); //Grazie, amico! La giornata è stata proficua.
+	AI_Output (other, self,"Info_Erpresser_Choice_AufsMaul_15_01"); //PerchÃ© non vieni a prenderti il tuo metallo?
+	AI_Output (self, other,"Info_Erpresser_Choice_AufsMaul_13_02"); //Grazie, amico! La giornata Ã¨ stata proficua.
 	
 	self.aivar[AIV_HAS_ERPRESSED] = 2;
 	
@@ -66,7 +66,7 @@ FUNC VOID Info_Erpresser_Choice_Zahlen()
 	AI_StopProcessInfos	(self);
 };
 
-// ****************** für HAS_ERPRESSED == 1 (gezahlt) *********************
+// ****************** fÃ¼r HAS_ERPRESSED == 1 (gezahlt) *********************
 
 INSTANCE Info_BereitsErpresst (C_INFO)
 {
@@ -91,7 +91,7 @@ FUNC VOID Info_BereitsErpresst_Info()
 	AI_Output (self, other,"Info_BereitsErpresst_Info_13_02"); //Hai pagato, quindi puoi passare. Fai in fretta, prima che cambi idea.
 };
 
-// ****************** für HAS_ERPRESSED == 2 (Aufs Maul) *********************
+// ****************** fÃ¼r HAS_ERPRESSED == 2 (Aufs Maul) *********************
 
 INSTANCE Info_BereitsAufsMaul (C_INFO)
 {

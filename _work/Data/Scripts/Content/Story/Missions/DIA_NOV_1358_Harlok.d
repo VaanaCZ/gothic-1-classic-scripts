@@ -58,7 +58,7 @@ FUNC VOID  DIA_Harlok_FetchHarlok_Info()
 func int DIA_Harlok_FetchHarlok_Please()
 {
 	AI_Output (other, self,"DIA_Harlok_FetchHarlok_Please_15_00"); //Sono qui per ricordarti che devi dargli il cambio.
-	AI_Output (self, other,"DIA_Harlok_FetchHarlok_Please_01_01"); //Molto carino, da parte tua. Ricordamelo di nuovo quando mi sarò svegliato, d'accordo?
+	AI_Output (self, other,"DIA_Harlok_FetchHarlok_Please_01_01"); //Molto carino, da parte tua. Ricordamelo di nuovo quando mi sarÃ² svegliato, d'accordo?
 };
 
 func int DIA_Harlok_FetchHarlok_OrElse()
@@ -77,7 +77,7 @@ func int DIA_Harlok_FetchHarlok_BACK()
 
 
 // **************************************************
-//				Harlok NOCHMAL überzeugen
+//				Harlok NOCHMAL Ã¼berzeugen
 // **************************************************
 
 instance  DIA_Harlok_HarlokAgain (C_INFO)
@@ -132,11 +132,11 @@ FUNC int  DIA_Harlok_SendHarlok_Condition()
 FUNC VOID  DIA_Harlok_SendHarlok_Info()
 {
 	AI_Output	(other, self,"DIA_Harlok_SendHarlok_15_00"); //Cosa ne pensi di far riposare il tuo amico, ora?
-	AI_Output	(self, other,"DIA_Harlok_SendHarlok_01_01"); //Che rottura di palle! Perché t'impicci degli affari miei?
+	AI_Output	(self, other,"DIA_Harlok_SendHarlok_01_01"); //Che rottura di palle! PerchÃ© t'impicci degli affari miei?
 	AI_Output	(other, self,"DIA_Harlok_SendHarlok_15_02"); //Voglio vederti mietere.
 	AI_Output	(self, other,"DIA_Harlok_SendHarlok_01_03"); //Va bene, va bene! Vado... stronzo!
 
-	B_LogEntry	(CH1_GhorimsRelief,"Finalmente, Harlok ha recepito il messaggio. Ora darà il cambio a Ghorim.");
+	B_LogEntry	(CH1_GhorimsRelief,"Finalmente, Harlok ha recepito il messaggio. Ora darÃ  il cambio a Ghorim.");
 	B_GiveXP	(XP_SentHarlok);
 	
 	Npc_ExchangeRoutine(self,"START");

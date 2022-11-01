@@ -23,9 +23,9 @@ FUNC VOID Info_HighPriest3_Info()
 	
 	AI_Output			(self, other,"Info_HighPriest3_17_01"); //MOOOORTAAAALEEEEEE!!!
 	AI_Output			(self, other,"Info_HighPriest3_17_02"); //I TUOI VIAAAAGGI FINISCONO QUIIIIII!!!
-	AI_Output 			(other, self,"Info_HighPriest3_15_03"); //Prima manderÚ TE in viaggio, vecchio verme!
+	AI_Output 			(other, self,"Info_HighPriest3_15_03"); //Prima mander√≤ TE in viaggio, vecchio verme!
 
-	B_LogEntry			(CH4_EnterTemple,"Varrag-Unhilqt, uno dei cinque orchi sciamani del Dormiente, Ë proprio di fronte a me. Solo uno di noi uscir‡ vivo da questa stanza.");
+	B_LogEntry			(CH4_EnterTemple,"Varrag-Unhilqt, uno dei cinque orchi sciamani del Dormiente, √® proprio di fronte a me. Solo uno di noi uscir√† vivo da questa stanza.");
 
 	AI_StopProcessInfos	(self);
 	

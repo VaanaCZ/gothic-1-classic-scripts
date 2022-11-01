@@ -78,7 +78,7 @@ FUNC INT Info_grd_13_WichtigePersonen_Condition()
 FUNC VOID Info_grd_13_WichtigePersonen_Info()
 {
 	AI_Output(other,self,"Info_grd_13_WichtigePersonen_15_00"); //Chi comanda, qui?
-	AI_Output(self,other,"Info_grd_13_WichtigePersonen_13_01"); //Io. Farai meglio a stare attento a ciò che dici!
+	AI_Output(self,other,"Info_grd_13_WichtigePersonen_13_01"); //Io. Farai meglio a stare attento a ciÃ² che dici!
 };
 
 // *************************************************************************
@@ -105,7 +105,7 @@ FUNC INT Info_grd_13_DasLager_Condition()
 FUNC VOID Info_grd_13_DasLager_Info()
 {
 	AI_Output(other,self,"Info_grd_13_DasLager_15_00"); //Come arrivo al castello?
-	AI_Output(self,other,"Info_grd_13_DasLager_13_01"); //Non ci arrivi. Solo la gente di Gomez è autorizzata ad accedervi.
+	AI_Output(self,other,"Info_grd_13_DasLager_13_01"); //Non ci arrivi. Solo la gente di Gomez Ã¨ autorizzata ad accedervi.
 	Info_ClearChoices(Info_grd_13_DasLager);
 	Info_AddChoice(Info_grd_13_DasLager,"Capisco.", Info_grd_13_DasLager_Verstehe);
 	Info_AddChoice(Info_grd_13_DasLager,"Posso corrompere le guardie?", Info_grd_13_DasLager_WachenBestechen);
@@ -123,7 +123,7 @@ FUNC VOID Info_grd_13_DasLager_WachenBestechen()
 	AI_Output(other,self,"Info_grd_13_DasLager_WachenBestechen_15_00"); //Posso corrompere le guardie?
 	AI_Output(self,other,"Info_grd_13_DasLager_WachenBestechen_13_01"); //Hai sangue freddo, ragazzo. Forse puoi persuaderle a guardare dall'altra parte per un minuto, se possiedi metallo a sufficienza.
 	AI_Output(self,other,"Info_grd_13_DasLager_WachenBestechen_13_02"); //Ma se Gomez si accorge che ti hanno fatto passare, li getta nelle segrete!
-	AI_Output(self,other,"Info_grd_13_DasLager_WachenBestechen_13_03"); //Per questo motivo, chiudono un occhio solo per i più coraggiosi.
+	AI_Output(self,other,"Info_grd_13_DasLager_WachenBestechen_13_03"); //Per questo motivo, chiudono un occhio solo per i piÃ¹ coraggiosi.
 	AI_Output(self,other,"Info_grd_13_DasLager_WachenBestechen_13_04"); //Ma una volta dentro cosa pensi di fare? Tutti gli edifici sono strettamente sorvegliati!
 	AI_Output(other,self,"Info_grd_13_DasLager_WachenBestechen_15_05"); //Sono solo curioso. Tutto qui.
 };

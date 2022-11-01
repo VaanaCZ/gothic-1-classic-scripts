@@ -101,7 +101,7 @@ FUNC INT Info_ORG_830_Aufhalten_Condition()
 FUNC VOID Info_ORG_830_Aufhalten_Info()
 {	
 	AI_Output (other, self,"Info_ORG_830_Aufhalten_15_00"); //Non hai intenzione di fermarmi o farmi delle domande?
-	AI_Output (self, other,"Info_ORG_830_Aufhalten_13_01"); //No, troppa fatica. Inoltre, uno come te non può fare troppi danni.
+	AI_Output (self, other,"Info_ORG_830_Aufhalten_13_01"); //No, troppa fatica. Inoltre, uno come te non puÃ² fare troppi danni.
 };
 
 // ************************************************************

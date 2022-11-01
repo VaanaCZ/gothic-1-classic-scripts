@@ -66,10 +66,10 @@ FUNC int  Stt_302_Viper_MELT_Condition()
 FUNC void  Stt_302_Viper_MELT_Info()
 {
 	AI_Output (other, self,"Stt_302_Viper_MELT_Info_15_01"); //Dicono che fondi solo una parte del metallo.
-	AI_Output (self, other,"Stt_302_Viper_MELT_Info_11_02"); //Tempo addietro, mi occupavo di tutto il carico, però Gomez e i maghi non erano molto contenti.
+	AI_Output (self, other,"Stt_302_Viper_MELT_Info_11_02"); //Tempo addietro, mi occupavo di tutto il carico, perÃ² Gomez e i maghi non erano molto contenti.
 	AI_Output (self, other,"Stt_302_Viper_MELT_Info_11_03"); //Sono rimasti qui settimane intere per esaminare il metallo e tutto il resto.
-	AI_Output (self, other,"Stt_302_Viper_MELT_Info_11_04"); //Armeggiavano e infilavano i nobili nasi in faccende di cui non avevano la più pallida idea.
-	AI_Output (self, other,"Stt_302_Viper_MELT_Info_11_05"); //Alla fine, abbiamo iniziato a fondere solo parte del metallo. I maghi non sono più tornati.
+	AI_Output (self, other,"Stt_302_Viper_MELT_Info_11_04"); //Armeggiavano e infilavano i nobili nasi in faccende di cui non avevano la piÃ¹ pallida idea.
+	AI_Output (self, other,"Stt_302_Viper_MELT_Info_11_05"); //Alla fine, abbiamo iniziato a fondere solo parte del metallo. I maghi non sono piÃ¹ tornati.
 };
 // *****************************  ****************************************//
 instance  Stt_302_Viper_BUY (C_INFO)

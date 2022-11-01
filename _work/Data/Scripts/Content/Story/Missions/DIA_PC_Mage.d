@@ -116,7 +116,7 @@ func VOID DIA_Milten_GotoCorristo_Info()
 		AI_Output (other, self,"DIA_Milten_Hello_15_00"); //Non puoi entrare senza il permesso di Corristo.
 		AI_Output (self, other,"DIA_Milten_Hello_02_01"); //Sto cercando il Gran Mago del Circolo di Fuoco.
 		AI_Output (other, self,"DIA_Milten_Letter_15_00"); //Ho una lettera per il Gran Mago del Circolo di Fuoco.
-		//AI_Output (self, other,"DIA_Milten_Letter_02_01"); //Bist du ein Bote aus der Auﬂenwelt?
+		//AI_Output (self, other,"DIA_Milten_Letter_02_01"); //Bist du ein Bote aus der Au√üenwelt?
 		//AI_Output (other, self,"DIA_Milten_Letter_15_02"); //Ja. Ein Magier gab mir den Brief, kurz bevor sie mich in die Kolonie geworfen haben.
 		AI_Output (self, other,"DIA_Milten_Letter_02_03"); //Fammela vedere.
 		AI_Output (other, self,"DIA_Milten_Letter_Give_15_00"); //Eccola.
@@ -130,11 +130,11 @@ func VOID DIA_Milten_GotoCorristo_Info()
 			B_GiveInvItems(other, self, ItWr_Fire_Letter_02, 1);
 		};
 		AI_Output (other, self,"GUR_1200_Yberion_EARN_Info_15_01"); //Cosa ne dici di una ricompensa?
-		AI_Output (self,hero,"Info_Milten_SHSEAL_02_05"); //Non ce ne sar‡ bisogno.
+		AI_Output (self,hero,"Info_Milten_SHSEAL_02_05"); //Non ce ne sar√† bisogno.
 		//***kopierte AI_outputs ENDE***
 	};
 	
-	AI_Output (self, other,"DIA_Milten_GotoCorristo_02_01"); //Abbiamo saputo ciÚ che hai fatto nella vecchia miniera. Senza i pidocchi, il lavoro Ë molto pi˘ sicuro.
+	AI_Output (self, other,"DIA_Milten_GotoCorristo_02_01"); //Abbiamo saputo ci√≤ che hai fatto nella vecchia miniera. Senza i pidocchi, il lavoro √® molto pi√π sicuro.
 	AI_Output (self, other,"DIA_Milten_GotoCorristo_02_02"); //Anche Corristo conosce le tue imprese e vuole parlarti. Vai da lui.
 };
 
@@ -167,7 +167,7 @@ func VOID DIA_Milten_Letter_Info()
 {
 	AI_Output			(other, self,"DIA_Milten_Letter_15_00"); //Ho una lettera per il Gran Mago del Circolo di Fuoco.
 	AI_Output			(self, other,"DIA_Milten_Letter_02_01"); //Sei un messaggero del mondo esterno?
-	AI_Output			(other, self,"DIA_Milten_Letter_15_02"); //SÏ. Un mago mi ha consegnato questa lettera, poco prima di gettarmi nella colonia.
+	AI_Output			(other, self,"DIA_Milten_Letter_15_02"); //S√¨. Un mago mi ha consegnato questa lettera, poco prima di gettarmi nella colonia.
 	AI_Output			(self, other,"DIA_Milten_Letter_02_03"); //Fammela vedere.
 	Info_ClearChoices	(DIA_Milten_Letter);
 	Info_AddChoice		(DIA_Milten_Letter,"Prima voglio la mia ricompensa.",DIA_Milten_Letter_NO);
@@ -180,10 +180,10 @@ func void DIA_Milten_Letter_Give()
 	B_UseFakeScroll();
 	
 	B_GiveXP(XP_XardasLetter);
-	AI_Output (self, other,"DIA_Milten_Letter_Give_02_03"); //Questa lettera Ë indirizzata a Xardas!
-	AI_Output (other, self,"DIA_Milten_Letter_Give_15_04"); //Cosa c'Ë di tanto strano?
-	AI_Output (self, other,"DIA_Milten_Letter_Give_02_05"); //Xardas non Ë pi˘ un seguace di Innos da molto tempo. Ci ha abbandonati e si Ë votato alla magia nera.
-	AI_Output (self, other,"DIA_Milten_Letter_Give_02_06"); //Ora vive in una torre in mezzo alla citt‡ degli orchi, immerso nei suoi studi.
+	AI_Output (self, other,"DIA_Milten_Letter_Give_02_03"); //Questa lettera √® indirizzata a Xardas!
+	AI_Output (other, self,"DIA_Milten_Letter_Give_15_04"); //Cosa c'√® di tanto strano?
+	AI_Output (self, other,"DIA_Milten_Letter_Give_02_05"); //Xardas non √® pi√π un seguace di Innos da molto tempo. Ci ha abbandonati e si √® votato alla magia nera.
+	AI_Output (self, other,"DIA_Milten_Letter_Give_02_06"); //Ora vive in una torre in mezzo alla citt√† degli orchi, immerso nei suoi studi.
 	AI_Output (self, other,"DIA_Milten_Letter_Give_02_07"); //Ha detto che voleva starsene per conto suo, per scoprire cosa non aveva funzionato con la Barriera.
 	
 	AI_Output (self, other,"DIA_Milten_Letter_Give_02_08"); //Aspettami qui, torno subito.
@@ -206,7 +206,7 @@ func void DIA_Milten_Letter_Give()
 func void DIA_Milten_Letter_NO()
 {
 	AI_Output (other, self,"DIA_Milten_Letter_NO_15_00"); //Prima voglio la mia ricompensa.
-	AI_Output (self, other,"DIA_Milten_Letter_NO_02_01"); //Corristo ordiner‡ a Torrez di consegnartela, non appena avr‡ in mano la lettera.
+	AI_Output (self, other,"DIA_Milten_Letter_NO_02_01"); //Corristo ordiner√† a Torrez di consegnartela, non appena avr√† in mano la lettera.
 	AI_Output (self, other,"DIA_Milten_Letter_NO_02_02"); //Io sono un servo di Innos e non mento mai. Ora dammi la lettera.
 	Info_ClearChoices	(DIA_Milten_Letter);
 	Info_AddChoice		(DIA_Milten_Letter,"Preferirei consegnarla a Torrez di persona.",DIA_Milten_Letter_NO_AGAIN);
@@ -216,9 +216,9 @@ func void DIA_Milten_Letter_NO()
 func void DIA_Milten_Letter_NO_AGAIN()
 {
 	AI_Output (other, self,"DIA_Milten_Letter_NO_AGAIN_15_00"); //Preferirei consegnarla a Torrez di persona.
-	AI_Output (self, other,"DIA_Milten_Letter_NO_AGAIN_02_01"); //Non riuscirÚ a convincerti, vero?
+	AI_Output (self, other,"DIA_Milten_Letter_NO_AGAIN_02_01"); //Non riuscir√≤ a convincerti, vero?
 	AI_Output (other, self,"DIA_Milten_Letter_NO_AGAIN_15_02"); //No. Prima voglio vedere la mia ricompensa.
-	AI_Output (self, other,"DIA_Milten_Letter_NO_AGAIN_02_03"); //Va bene. Se Ë questo ciÚ che vuoi, aspettami qui.
+	AI_Output (self, other,"DIA_Milten_Letter_NO_AGAIN_02_03"); //Va bene. Se √® questo ci√≤ che vuoi, aspettami qui.
 
 	Info_ClearChoices	(DIA_Milten_Letter);
 	AI_StopProcessInfos	(self);
@@ -255,12 +255,12 @@ func VOID DIA_Milten_ComesBack_Info()
 {
 	if (milten_HasLetter==FALSE)
 	{
-		AI_Output (self, other,"DIA_Milten_ComesBack_02_00"); //Corristo non Ë stato felice di sapere che hai cosÏ poca fiducia nei servi di Innos.
+		AI_Output (self, other,"DIA_Milten_ComesBack_02_00"); //Corristo non √® stato felice di sapere che hai cos√¨ poca fiducia nei servi di Innos.
 		AI_Output (self, other,"DIA_Milten_ComesBack_02_01"); //Comunque ha detto che puoi andare da Torrez e farti consegnare la solita ricompensa.
 	}
 	else
 	{
-		AI_Output (self, other,"DIA_Milten_ComesBack_02_02"); //Corristo era fuori di sÈ dalla gioia. Ha detto che puoi andare da Torrez e scegliere la ricompensa che desideri.
+		AI_Output (self, other,"DIA_Milten_ComesBack_02_02"); //Corristo era fuori di s√© dalla gioia. Ha detto che puoi andare da Torrez e scegliere la ricompensa che desideri.
 	};
 };
 
@@ -318,7 +318,7 @@ FUNC INT DIA_Milten_NochEinBrief_Condition()
 func VOID DIA_Milten_NochEinBrief_Info()
 {
 	AI_Output (other, self,"DIA_Milten_NochEinBrief_15_00"); //Ho una lettera da parte dei Maghi dell'Acqua.
-	AI_Output (self, other,"DIA_Milten_NochEinBrief_02_01"); //Ah! Molto bene! La darÚ a Corristo!
+	AI_Output (self, other,"DIA_Milten_NochEinBrief_02_01"); //Ah! Molto bene! La dar√≤ a Corristo!
 	AI_Output (self, other,"DIA_Milten_NochEinBrief_02_02"); //Quando tornerai a Campo Nuovo, i Maghi dell'Acqua ti ricompenseranno di sicuro.
 	
 	Cronos_Messenger = LOG_SUCCESS;
@@ -350,7 +350,7 @@ FUNC INT DIA_Milten_PERM_Condition()
 func VOID DIA_Milten_PERM_Info()
 {
 	AI_Output (other, self,"DIA_Milten_PERM_15_00"); //Parlami dei Maghi del Fuoco.
-	AI_Output (self, other,"DIA_Milten_PERM_02_01"); //Il Circolo di Fuoco riceve il potere dalla grazia di Innos. Il dio della luce, verit‡ e giustizia veglia su noi.
+	AI_Output (self, other,"DIA_Milten_PERM_02_01"); //Il Circolo di Fuoco riceve il potere dalla grazia di Innos. Il dio della luce, verit√† e giustizia veglia su noi.
 	AI_Output (self, other,"DIA_Milten_PERM_02_02"); //I maghi si considerano dei prescelti e trattano gli altri di conseguenza.
 	AI_Output (self, other,"DIA_Milten_PERM_02_03"); //Io sono fortunato a essere stato ammesso. Corristo mi ha eletto suo apprendista. Probabilmente voleva divertirsi.
 	AI_Output (self, other,"DIA_Milten_PERM_02_04"); //Da allora, ho provato a migliorarmi nelle arti magiche ogni singolo giorno per essere ammesso al Cerchio successivo.
@@ -381,8 +381,8 @@ FUNC INT DIA_Milten_WannaMage_Condition()
 func VOID DIA_Milten_WannaMage_Info()
 {
 	AI_Output (other, self,"DIA_Milten_WannaMage_15_00"); //Voglio diventare anch'io un apprendista mago come te!
-	AI_Output (self, other,"DIA_Milten_WannaMage_02_01"); //Corristo mi ha scelto perchÈ ho fatto un favore speciale ai baroni delle miniere.
-	AI_Output (self, other,"DIA_Milten_WannaMage_02_02"); //A meno che tu non compia un gesto davvero straordinario, non ti prender‡ mai in considerazione.
+	AI_Output (self, other,"DIA_Milten_WannaMage_02_01"); //Corristo mi ha scelto perch√© ho fatto un favore speciale ai baroni delle miniere.
+	AI_Output (self, other,"DIA_Milten_WannaMage_02_02"); //A meno che tu non compia un gesto davvero straordinario, non ti prender√† mai in considerazione.
 	AI_Output (self, other,"DIA_Milten_WannaMage_02_03"); //Inoltre devi far parte di Campo Vecchio. Dubito che Corristo prenderebbe come apprendista una persona proveniente da un altro campo.
 };
 
@@ -434,7 +434,7 @@ func void Info_Milten_SHWAIT_Info()
 	AI_Output		(self,hero,"Info_Milten_SHWAIT_02_01"); //Salve! Il mio amico Lester di Campo Palude mi ha narrato le tue grandi imprese!
 	AI_Output		(self,hero,"Info_Milten_SHWAIT_02_02"); //Sono colpito. Sei diventato molto forte.
 	AI_Output		(hero,self,"Info_Milten_SHWAIT_15_03"); //Faccio del mio meglio.
-	AI_Output		(self,hero,"Info_Milten_SHWAIT_02_04"); //Ah. Gi‡. Sempre modesto, vero?
+	AI_Output		(self,hero,"Info_Milten_SHWAIT_02_04"); //Ah. Gi√†. Sempre modesto, vero?
 };
 
 //***************************************************************************
@@ -463,7 +463,7 @@ func void Info_Milten_SHGORN_Info()
 	AI_Output		(hero,self,"Info_Milten_SHGORN_15_01"); //Ho visto Gorn.
 	AI_Output		(self,hero,"Info_Milten_SHGORN_02_02"); //Davvero? Dove?
 	AI_Output		(hero,self,"Info_Milten_SHGORN_15_03"); //Presso le rovine del vecchio monastero, vicino al mare. Eravamo entrambi in cerca di tesori.
-	AI_Output		(self,hero,"Info_Milten_SHGORN_02_04"); //Sono certo che mi dir‡ tutto, quando c'incontreremo di nuovo.
+	AI_Output		(self,hero,"Info_Milten_SHGORN_02_04"); //Sono certo che mi dir√† tutto, quando c'incontreremo di nuovo.
 };
 
 //***************************************************************************
@@ -492,7 +492,7 @@ func void Info_Milten_SHLESTER_Info()
 	AI_Output		(hero,self,"Info_Milten_SHLESTER_15_01"); //Io e Lester abbiamo conquistato il forte sulla montagna.
 	AI_Output		(self,hero,"Info_Milten_SHLESTER_02_02"); //Me l'ha detto. Sembra ci si possa fidare di te.
 	AI_Output		(hero,self,"Info_Milten_SHLESTER_15_03"); //Dove vi siete incontrati, voi quattro?
-	AI_Output		(self,hero,"Info_Milten_SHLESTER_02_04"); //Oh, qua e l‡. Ci si vede in molti posti differenti.
+	AI_Output		(self,hero,"Info_Milten_SHLESTER_02_04"); //Oh, qua e l√†. Ci si vede in molti posti differenti.
 };
 
 //***************************************************************************
@@ -519,10 +519,10 @@ FUNC int Info_Milten_SHYOU_Condition()
 func void Info_Milten_SHYOU_Info()
 {
 	AI_Output		(hero,self,"Info_Milten_SHYOU_15_01"); //Cosa stai facendo?
-	AI_Output		(self,hero,"Info_Milten_SHYOU_02_02"); //Non lontano da qui, si trova un antico anello di pietra. Nel mezzo c'Ë l'entrata per una cripta.
+	AI_Output		(self,hero,"Info_Milten_SHYOU_02_02"); //Non lontano da qui, si trova un antico anello di pietra. Nel mezzo c'√® l'entrata per una cripta.
 	AI_Output		(hero,self,"Info_Milten_SHYOU_15_03"); //Una specie di tomba?
-	AI_Output		(self,hero,"Info_Milten_SHYOU_02_04"); //SÏ, qualcosa del genere.
-	AI_Output		(self,hero,"Info_Milten_SHYOU_02_05"); //In quella tomba c'Ë una cosa che desidero avere.
+	AI_Output		(self,hero,"Info_Milten_SHYOU_02_04"); //S√¨, qualcosa del genere.
+	AI_Output		(self,hero,"Info_Milten_SHYOU_02_05"); //In quella tomba c'√® una cosa che desidero avere.
 };
 
 //***************************************************************************
@@ -563,7 +563,7 @@ instance Info_Milten_SHPROBLEM (C_INFO)
 	information	= Info_Milten_SHPROBLEM_Info;
 	important	= 0;
 	permanent	= 0;
-	description	= "PerchÈ non entri nella tomba e prendi ciÚ che ti serve?";
+	description	= "Perch√© non entri nella tomba e prendi ci√≤ che ti serve?";
 };
 
 FUNC int Info_Milten_SHPROBLEM_Condition()
@@ -576,11 +576,11 @@ FUNC int Info_Milten_SHPROBLEM_Condition()
 
 func void Info_Milten_SHPROBLEM_Info()
 {
-	AI_Output			(hero,self,"Info_Milten_SHPROBLEM_15_01"); //PerchÈ non entri nella tomba e prendi ciÚ che ti serve?
-	AI_Output			(self,hero,"Info_Milten_SHPROBLEM_02_02"); //» una lunga storia. Dovrei tornare molto indietro per raccontartela tutta.
+	AI_Output			(hero,self,"Info_Milten_SHPROBLEM_15_01"); //Perch√© non entri nella tomba e prendi ci√≤ che ti serve?
+	AI_Output			(self,hero,"Info_Milten_SHPROBLEM_02_02"); //√à una lunga storia. Dovrei tornare molto indietro per raccontartela tutta.
 	AI_Output			(hero,self,"Info_Milten_SHPROBLEM_15_03"); //Fai pure, non ho alcuna fretta.
 	AI_Output			(self,hero,"Info_Milten_SHPROBLEM_02_04"); //D'accordo! Dopo la creazione della Barriera che ci ha imprigionati...
-	AI_Output			(self,hero,"Info_Milten_SHPROBLEM_02_05"); //...uno dei maghi nascose quaggi˘ un manufatto magico.
+	AI_Output			(self,hero,"Info_Milten_SHPROBLEM_02_05"); //...uno dei maghi nascose quaggi√π un manufatto magico.
 };
 
 //***************************************************************************
@@ -607,7 +607,7 @@ FUNC int Info_Milten_SHFOCUS_Condition()
 func void Info_Milten_SHFOCUS_Info()
 {
 	AI_Output			(hero,self,"Info_Milten_SHFOCUS_15_01"); //Si tratta di una delle cinque pietre focalizzatrici?
-	AI_Output			(self,hero,"Info_Milten_SHFOCUS_02_02"); //Esattamente! Allora sai gi‡ la storia delle cinque pietre?
+	AI_Output			(self,hero,"Info_Milten_SHFOCUS_02_02"); //Esattamente! Allora sai gi√† la storia delle cinque pietre?
 	AI_Output			(hero,self,"Info_Milten_SHFOCUS_15_03"); //Non dirmi che anche tu cerchi la pietra!
 	AI_Output			(self,hero,"Info_Milten_SHFOCUS_02_04"); //No, non m'interessa. Io cerco il talismano degli orchi.
 };
@@ -622,7 +622,7 @@ instance Info_Milten_SHSEAL (C_INFO)
 	information	= Info_Milten_SHSEAL_Info;
 	important	= 0;
 	permanent	= 0;
-	description	= "Il manufatto Ë stato sigillato?";
+	description	= "Il manufatto √® stato sigillato?";
 };
 
 FUNC int Info_Milten_SHSEAL_Condition()
@@ -635,13 +635,13 @@ FUNC int Info_Milten_SHSEAL_Condition()
 
 func void Info_Milten_SHSEAL_Info()
 {
-	AI_Output			(hero,self,"Info_Milten_SHSEAL_15_01"); //Il manufatto Ë stato sigillato?
-	AI_Output			(self,hero,"Info_Milten_SHSEAL_02_02"); //Esatto. Un potente incantesimo lo protegge. La prima persona che tenter‡ di rubare la pietra focalizzatrice...
-	AI_Output			(self,hero,"Info_Milten_SHSEAL_02_03"); //...sar‡ maledetta e costretta a un esistenza da morto vivente, proteggendo la tomba dagli altri ladri.
+	AI_Output			(hero,self,"Info_Milten_SHSEAL_15_01"); //Il manufatto √® stato sigillato?
+	AI_Output			(self,hero,"Info_Milten_SHSEAL_02_02"); //Esatto. Un potente incantesimo lo protegge. La prima persona che tenter√† di rubare la pietra focalizzatrice...
+	AI_Output			(self,hero,"Info_Milten_SHSEAL_02_03"); //...sar√† maledetta e costretta a un esistenza da morto vivente, proteggendo la tomba dagli altri ladri.
 	AI_Output			(hero,self,"Info_Milten_SHSEAL_15_04"); //Come farai a superare la maledizione?
-	AI_Output			(self,hero,"Info_Milten_SHSEAL_02_05"); //Non ce ne sar‡ bisogno.
-	AI_Output			(self,hero,"Info_Milten_SHSEAL_02_06"); //Alcuni anni or sono, un barone delle miniere a caccia di orchi Ë stato talmente incauto da entrare nella tomba.
-	AI_Output			(self,hero,"Info_Milten_SHSEAL_02_07"); //Ora Ë LUI il guardiano dei tesori.
+	AI_Output			(self,hero,"Info_Milten_SHSEAL_02_05"); //Non ce ne sar√† bisogno.
+	AI_Output			(self,hero,"Info_Milten_SHSEAL_02_06"); //Alcuni anni or sono, un barone delle miniere a caccia di orchi √® stato talmente incauto da entrare nella tomba.
+	AI_Output			(self,hero,"Info_Milten_SHSEAL_02_07"); //Ora √® LUI il guardiano dei tesori.
 };
 
 //***************************************************************************
@@ -697,13 +697,13 @@ FUNC int Info_Milten_SHOFFER_Condition()
 func void Info_Milten_SHOFFER_Info()
 {
 	AI_Output			(hero,self,"Info_Milten_SHOFFER_15_01"); //Dovremmo ispezionare la tomba assieme! Tu prendi il talismano e io la pietra focalizzatrice.
-	AI_Output			(self,hero,"Info_Milten_SHOFFER_02_02"); //Va bene, ma c'Ë un piccolo problema...
+	AI_Output			(self,hero,"Info_Milten_SHOFFER_02_02"); //Va bene, ma c'√® un piccolo problema...
 	AI_Output			(hero,self,"Info_Milten_SHOFFER_15_03"); //Un problema?
-	AI_Output			(self,hero,"Info_Milten_SHOFFER_02_04"); //Gi‡. Il guardiano nella tomba...
+	AI_Output			(self,hero,"Info_Milten_SHOFFER_02_04"); //Gi√†. Il guardiano nella tomba...
 	AI_Output			(hero,self,"Info_Milten_SHOFFER_15_05"); //Non possiamo farlo a pezzettini?
-	AI_Output			(self,hero,"Info_Milten_SHOFFER_02_06"); //Non sar‡ cosÏ semplice. Sembra molto resistente contro le armi normali.
+	AI_Output			(self,hero,"Info_Milten_SHOFFER_02_06"); //Non sar√† cos√¨ semplice. Sembra molto resistente contro le armi normali.
 	AI_Output			(hero,self,"Info_Milten_SHOFFER_15_07"); //Fammi indovinare: hai un piano, giusto?
-	AI_Output			(self,hero,"Info_Milten_SHOFFER_02_08"); //Uhm... Beh... SÏ, ma non posso farcela da solo.
+	AI_Output			(self,hero,"Info_Milten_SHOFFER_02_08"); //Uhm... Beh... S√¨, ma non posso farcela da solo.
 };
 
 //***************************************************************************
@@ -731,11 +731,11 @@ func void Info_Milten_SHOFFER2_Info()
 {
 	AI_Output			(hero,self,"Info_Milten_SHOFFER2_15_01"); //Dimmi!
 	AI_Output			(self,hero,"Info_Milten_SHOFFER2_02_02"); //Ho la pergamena di un potentissimo incantesimo.
-	AI_Output			(self,hero,"Info_Milten_SHOFFER2_02_03"); //PuÚ distruggere qualsiasi morto vivente.
-	AI_Output			(hero,self,"Info_Milten_SHOFFER2_15_04"); //Allora conquistare la tomba sar‡ un gioco da ragazzi.
-	AI_Output			(self,hero,"Info_Milten_SHOFFER2_02_05"); //Mhhh... Beh... Non proprio! Il guardiano non Ë pi˘ solo.
+	AI_Output			(self,hero,"Info_Milten_SHOFFER2_02_03"); //Pu√≤ distruggere qualsiasi morto vivente.
+	AI_Output			(hero,self,"Info_Milten_SHOFFER2_15_04"); //Allora conquistare la tomba sar√† un gioco da ragazzi.
+	AI_Output			(self,hero,"Info_Milten_SHOFFER2_02_05"); //Mhhh... Beh... Non proprio! Il guardiano non √® pi√π solo.
 	AI_Output			(self,hero,"Info_Milten_SHOFFER2_02_06"); //Probabilmente si tratta di altri ladri, sfortunati quanto lui.
-	AI_Output			(self,hero,"Info_Milten_SHOFFER2_02_07"); //Sono gi‡ sceso una volta e mi hanno quasi ucciso. Una persona sola non puÚ fare molto, laggi˘.
+	AI_Output			(self,hero,"Info_Milten_SHOFFER2_02_07"); //Sono gi√† sceso una volta e mi hanno quasi ucciso. Una persona sola non pu√≤ fare molto, laggi√π.
 };
 
 //***************************************************************************
@@ -763,7 +763,7 @@ func void Info_Milten_SHACCEPT_Info()
 {
 	AI_Output			(hero,self,"Info_Milten_SHACCEPT_15_01"); //Dammi l'incantesimo e lo faremo assieme!
 	AI_Output			(self,hero,"Info_Milten_SHACCEPT_02_02"); //Molto bene! Speravo che l'avresti detto!
-	AI_Output			(self,hero,"Info_Milten_SHACCEPT_02_03"); //PerÚ abbiamo solo una pergamena. Usala con il guardiano!
+	AI_Output			(self,hero,"Info_Milten_SHACCEPT_02_03"); //Per√≤ abbiamo solo una pergamena. Usala con il guardiano!
 	AI_Output			(self,hero,"Info_Milten_SHACCEPT_02_04"); //Gli altri non-morti possono essere sconfitti in normali combattimenti.
 	AI_Output			(hero,self,"Info_Milten_SHACCEPT_15_05"); //Ho capito. Bene, da che parte per l'anello di pietra?
 	AI_Output			(self,hero,"Info_Milten_SHACCEPT_02_06"); //Seguimi.
@@ -864,7 +864,7 @@ instance Info_Milten_SHRUNNING (C_INFO)
 	information	= Info_Milten_SHRUNNING_Info;
 	important	= 0;
 	permanent	= 1;
-	description	= "Il guardiano Ë ancora vivo!";
+	description	= "Il guardiano √® ancora vivo!";
 };
 
 FUNC int Info_Milten_SHRUNNING_Condition()
@@ -874,7 +874,7 @@ FUNC int Info_Milten_SHRUNNING_Condition()
 	keeperFound = Wld_DetectNpc(self, ZombieTheKeeper, NOFUNC, -1);
 
 	if	Npc_KnowsInfo(hero,Info_Milten_SHACCEPT)
-	&&	(keeperFound && !Npc_IsDead(other))							// W‰chter noch nicht besiegt...
+	&&	(keeperFound && !Npc_IsDead(other))							// W√§chter noch nicht besiegt...
 	{
 		return TRUE;
 	};	
@@ -882,7 +882,7 @@ FUNC int Info_Milten_SHRUNNING_Condition()
 
 func void Info_Milten_SHRUNNING_Info()
 {
-	AI_Output			(hero,self,"Info_Milten_SHRUNNING_15_01"); 	//Il guardiano Ë ancora vivo!
+	AI_Output			(hero,self,"Info_Milten_SHRUNNING_15_01"); 	//Il guardiano √® ancora vivo!
 	AI_Output			(self,hero,"Info_Milten_SHRUNNING_02_02"); 	//Distruggilo con l'incantesimo.
 };
 
@@ -904,7 +904,7 @@ FUNC int Info_Milten_SHSCROLL_Condition()
 	var int keeperFound;
 	Npc_PerceiveAll(self);
 	keeperFound = Wld_DetectNpc(self, ZombieTheKeeper, NOFUNC, -1);
-	if (	(keeperFound && !Npc_IsDead(other))							// W‰chter noch nicht besiegt...
+	if (	(keeperFound && !Npc_IsDead(other))							// W√§chter noch nicht besiegt...
 	&&		Npc_KnowsInfo(hero, Info_Milten_SHACCEPT)
 	&&		(Npc_HasItems(hero, ItArScrollDestroyUndead)==0)	
 	&&		(Npc_HasItems(hero, ItArRuneDestroyUndead)==0)	)
@@ -915,10 +915,10 @@ FUNC int Info_Milten_SHSCROLL_Condition()
 
 func void Info_Milten_SHSCROLL_Info()
 {
-	AI_Output			(hero,self,"Info_Milten_SHSCROLL_15_01"); //L'ho gi‡ usato, ma non sul guardiano!
+	AI_Output			(hero,self,"Info_Milten_SHSCROLL_15_01"); //L'ho gi√† usato, ma non sul guardiano!
 	AI_Output			(self,hero,"Info_Milten_SHSCROLL_02_02"); //Che catastrofe! Allora dovrai trovare un altro modo per farlo fuori!
 	AI_Output			(self,hero,"Info_Milten_SHSCROLL_02_03"); //Forse puoi comprare un altro incantesimo o una runa in un campo.
-	AI_Output			(self,hero,"Info_Milten_SHSCROLL_02_04"); //Ti aspetterÚ laggi˘.
+	AI_Output			(self,hero,"Info_Milten_SHSCROLL_02_04"); //Ti aspetter√≤ laggi√π.
 
   	self.aivar[AIV_PARTYMEMBER] =	FALSE;
 
@@ -987,7 +987,7 @@ func void Info_Milten_SHLEAVE_Info()
 {
 	AI_GotoNpc			(self,hero);
 
-	AI_Output			(self,hero,"Info_Milten_SHLEAVE_02_01"); 	//Non sembri pi˘ tanto interessato alla tomba.
+	AI_Output			(self,hero,"Info_Milten_SHLEAVE_02_01"); 	//Non sembri pi√π tanto interessato alla tomba.
 	AI_Output			(self,hero,"Info_Milten_SHLEAVE_02_02"); 	//Se cambi idea, mi trovi dove ci siamo incontrati prima
 
   	self.aivar[AIV_PARTYMEMBER] =	FALSE;
@@ -1058,12 +1058,12 @@ func void Info_Milten_SHSUCCESS_Info()
 	AI_Output			(self,hero,"Info_Milten_SHSUCCESS_02_01"); //Bene, hai il talismano.
 	AI_Output			(hero,self,"Info_Milten_SHSUCCESS_15_02"); //Ecco, prendilo. Eravamo d'accordo!
 	AI_Output			(self,hero,"Info_Milten_SHSUCCESS_02_03"); //Grazie, amico mio. Non dimentico mai chi mi aiuta.
-	AI_Output			(self,hero,"Info_Milten_SHSUCCESS_02_04"); //Torno a Campo Vecchio. Forse c'incontreremo lÏ.
+	AI_Output			(self,hero,"Info_Milten_SHSUCCESS_02_04"); //Torno a Campo Vecchio. Forse c'incontreremo l√¨.
 	
 	B_GiveInvItems	(hero,self,	ItMi_OrcTalisman, 1);
 	
-	B_LogEntry		(CH3_Stonehenge,"Insieme, siamo riusciti a sconfiggere il GUARDIANO sotto l'anello di pietra. Milten ha preso la sua parte di bottino ed Ë tornato a Campo Vecchio.");
-	B_LogEntry		(CH3_Stonehenge,"Saturas sar‡ felice: ho trovato una pietra focalizzatrice!");
+	B_LogEntry		(CH3_Stonehenge,"Insieme, siamo riusciti a sconfiggere il GUARDIANO sotto l'anello di pietra. Milten ha preso la sua parte di bottino ed √® tornato a Campo Vecchio.");
+	B_LogEntry		(CH3_Stonehenge,"Saturas sar√† felice: ho trovato una pietra focalizzatrice!");
 	
   	self.aivar[AIV_PARTYMEMBER] =	FALSE;
 	Npc_ExchangeRoutine	(self, "ReturnToOC");
@@ -1111,7 +1111,7 @@ func void Info_Milten_OCWARN_Info()
 	if (Npc_KnowsInfo(hero, Info_Diego_OCRETREAT))
 	{
 		AI_Output		(hero,self,"Info_Milten_OCWARN_15_02"); //Calmati, Milten. Ho incontrato Diego dall'altra parte del campo.
-		AI_Output		(self,hero,"Info_Milten_OCWARN_02_03"); //Allora sai gi‡ tutto. Cosa ha detto Diego?
+		AI_Output		(self,hero,"Info_Milten_OCWARN_02_03"); //Allora sai gi√† tutto. Cosa ha detto Diego?
 		AI_Output		(hero,self,"Info_Milten_OCWARN_15_04"); //Se riesco a trovare Gorn e Lester, li avviso e li mando da te.
 		AI_Output		(self,hero,"Info_Milten_OCWARN_02_05"); //Buona fortuna e stai attento!
 		B_LogEntry		(CH4_Firemages,"Milten si nasconde vicino a Campo Vecchio, proprio come Diego. A distanza di sicurezza dal cancello principale, il Mago del Fuoco avverte coloro che sopraggiungono, per non farli cadere nelle grinfie delle guardie.");
@@ -1119,13 +1119,13 @@ func void Info_Milten_OCWARN_Info()
 	}
 	else
 	{
-		AI_Output		(hero,self,"Info_Milten_OCWARN_15_06"); //Calmati, Milten! Cosa Ë successo?
+		AI_Output		(hero,self,"Info_Milten_OCWARN_15_06"); //Calmati, Milten! Cosa √® successo?
 		AI_Output		(self,hero,"Info_Milten_OCWARN_02_07"); //Hanno ucciso i Maghi del Fuoco. TUTTI tranne me! Anch'io ci sono andato vicino.
 		AI_Output		(hero,self,"Info_Milten_OCWARN_15_08"); //Riordina le idee e raccontami tutto dall'inizio,
 		AI_Output		(self,hero,"Info_Milten_OCWARN_02_09"); //D'accordo. Calmati, Milten, calmati...
-		AI_Output		(self,hero,"Info_Milten_OCWARN_02_10"); //Tutto Ë iniziato col crollo della vecchia miniera...
-		AI_Output		(hero,self,"Info_Milten_OCWARN_15_11"); //La vecchia miniera Ë SPROFONDATA???
-		AI_Output		(self,hero,"Info_Milten_OCWARN_02_12"); //SÏ. » successo in fretta. Tutti quelli che si trovavano all'interno sono morti.
+		AI_Output		(self,hero,"Info_Milten_OCWARN_02_10"); //Tutto √® iniziato col crollo della vecchia miniera...
+		AI_Output		(hero,self,"Info_Milten_OCWARN_15_11"); //La vecchia miniera √® SPROFONDATA???
+		AI_Output		(self,hero,"Info_Milten_OCWARN_02_12"); //S√¨. √à successo in fretta. Tutti quelli che si trovavano all'interno sono morti.
 		AI_Output		(self,hero,"Info_Milten_OCWARN_02_13"); //Le guardie hanno bloccato l'ingresso alla miniera.
 	};
 };
@@ -1155,8 +1155,8 @@ func void Info_Milten_OCMINE_Info()
 {
 	AI_Output			(hero,self,"Info_Milten_OCMINE_15_01"); //Come ha fatto la miniera a sprofondare?
 	AI_Output			(self,hero,"Info_Milten_OCMINE_02_02"); //Non ne ho idea. Alcuni minatori, che attendevano di fronte all'entrata, hanno parlato di un enorme terremoto e una grande nuvola di polvere proveniente dal tunnel.
-	AI_Output			(hero,self,"Info_Milten_OCMINE_15_03"); //Tu eri lÏ?
-	AI_Output			(self,hero,"Info_Milten_OCMINE_02_04"); //SÏ. CosÏ ho appreso del crollo.
+	AI_Output			(hero,self,"Info_Milten_OCMINE_15_03"); //Tu eri l√¨?
+	AI_Output			(self,hero,"Info_Milten_OCMINE_02_04"); //S√¨. Cos√¨ ho appreso del crollo.
 };
 
 //***************************************************************************
@@ -1198,7 +1198,7 @@ instance Info_Milten_OCWHY (C_INFO)
 	information	= Info_Milten_OCWHY_Info;
 	important	= 0;
 	permanent	= 0;
-	description = "PerchÈ i baroni delle miniere hanno ucciso i maghi? Non ha senso...";
+	description = "Perch√© i baroni delle miniere hanno ucciso i maghi? Non ha senso...";
 };
 
 FUNC int Info_Milten_OCWHY_Condition()
@@ -1211,9 +1211,9 @@ FUNC int Info_Milten_OCWHY_Condition()
 
 func void Info_Milten_OCWHY_Info()
 {
-	AI_Output			(hero,self,"Info_Milten_OCWHY_15_01"); //PerchÈ i baroni delle miniere hanno ucciso i maghi? Non ha senso...
+	AI_Output			(hero,self,"Info_Milten_OCWHY_15_01"); //Perch√© i baroni delle miniere hanno ucciso i maghi? Non ha senso...
 	AI_Output			(self,hero,"Info_Milten_OCWHY_02_02"); //Esatto. Le guardie non mi hanno permesso di fare domande: hanno subito impugnato le spade.
-	AI_Output			(self,hero,"Info_Milten_OCWHY_02_03"); //Forse Diego ne sa di pi˘. Era nel campo, quando la situazione Ë precipitata.
+	AI_Output			(self,hero,"Info_Milten_OCWHY_02_03"); //Forse Diego ne sa di pi√π. Era nel campo, quando la situazione √® precipitata.
 };
 
 //***************************************************************************
@@ -1282,7 +1282,7 @@ func void Info_Milten_OCDIEGO_Info()
 	AI_Output			(self,hero,"Info_Milten_OCDIEGO_02_03"); //Per favore, parlagli!
 
 	B_LogEntry			(CH4_Firemages,"Milten mi ha sorpreso di fronte a Campo Vecchio e mi ha raccontato del crollo della miniera e dell'assassinio dei Maghi del Fuoco.");
-	B_LogEntry			(CH4_Firemages,"Diego si trova dall'altra parte di Campo Vecchio, vicino al cancello posteriore. Devo parlare con lui: conosce i dettagli di ciÚ che Ë accaduto.");
+	B_LogEntry			(CH4_Firemages,"Diego si trova dall'altra parte di Campo Vecchio, vicino al cancello posteriore. Devo parlare con lui: conosce i dettagli di ci√≤ che √® accaduto.");
 };
 
 
@@ -1396,7 +1396,7 @@ func void Info_Milten_LSAWAY_Info()
 	AI_Output			(hero, self,"Info_Milten_LSAWAY_15_06"); //Lavoro per lui, ora!
 	AI_Output			(self, hero,"Info_Milten_LSAWAY_02_07"); //XARDAS??? Cominci a farmi paura!
 	AI_Output			(self, hero,"Info_Milten_LSAWAY_02_08"); //Nessuno gli ha parlato, da quando ha lasciato Campo Vecchio.
-	AI_Output			(hero, self,"Info_Milten_LSAWAY_15_09"); //Io sÏ!
+	AI_Output			(hero, self,"Info_Milten_LSAWAY_15_09"); //Io s√¨!
 	AI_Output			(self, hero,"Info_Milten_LSAWAY_02_10"); //A cosa ti servono i poteri del cumulo di metallo?
 	AI_Output			(hero, self,"Info_Milten_LSAWAY_15_11"); //Li voglio trasferire in questa spada.
 	AI_Output			(self, hero,"Info_Milten_LSAWAY_02_12"); //Wow, che arma!
@@ -1464,14 +1464,14 @@ FUNC int Info_Milten_LSRISK_Condition()
 func void Info_Milten_LSRISK_Info()
 {
 	AI_Output			(hero, self,"Info_Milten_LSRISK_15_01"); //Dobbiamo correre il rischio!
-	AI_Output			(hero, self,"Info_Milten_LSRISK_15_02"); //» davvero MOLTO, MOLTO importante!
+	AI_Output			(hero, self,"Info_Milten_LSRISK_15_02"); //√à davvero MOLTO, MOLTO importante!
 	AI_Output			(hero, self,"Info_Milten_LSRISK_15_03"); //Per TUTTI gli abitanti della colonia.
 	AI_Output			(self, hero,"Info_Milten_LSRISK_02_04"); //Non capisco...
-	AI_Output			(hero, self,"Info_Milten_LSRISK_15_05"); //Ci far‡ uscire da qui! Fidati di me!
+	AI_Output			(hero, self,"Info_Milten_LSRISK_15_05"); //Ci far√† uscire da qui! Fidati di me!
 	AI_Output			(self, hero,"Info_Milten_LSRISK_02_06"); //D'accordo! Dopo tutto quello che hai fatto per noi, mi fido completamente di te.
 	AI_Output			(self, hero,"Info_Milten_LSRISK_02_07"); //Inoltre, sembra che anche Xardas si fidi.
 	AI_Output			(self, hero,"Info_Milten_LSRISK_02_08"); //Ci vediamo al cumulo di metallo e... Non parlarne con nessuno!
-	AI_Output			(hero, self,"Info_Milten_LSRISK_15_09"); //Bene, al cumulo di metallo! Ci vediamo l‡!
+	AI_Output			(hero, self,"Info_Milten_LSRISK_15_09"); //Bene, al cumulo di metallo! Ci vediamo l√†!
 	
 	B_LogEntry			(CH5_Uriziel,"Potrei convincere il mio amico Milten ad aiutarmi a trasferire l'energia alla spada. Ci incontreremo alla base del cumulo di metallo dei Maghi dell'Acqua.");
 	Npc_ExchangeRoutine	(self,	"LSOreHeap");
@@ -1537,7 +1537,7 @@ func void Info_Milten_LSNOW_Info()
 {
 	AI_Output			(hero, self,"Info_Milten_LSNOW_15_01"); //Ecco, prendi la pergamena!
 	AI_Output			(hero, self,"Info_Milten_LSNOW_15_02"); //Sei pronto?
-	AI_Output			(self, hero,"Info_Milten_LSNOW_02_03"); //Il pi˘ possibile per questo piano folle.
+	AI_Output			(self, hero,"Info_Milten_LSNOW_02_03"); //Il pi√π possibile per questo piano folle.
 	AI_Output			(hero, self,"Info_Milten_LSNOW_15_04"); //Allora iniziamo!
 
 	B_GiveInvItems 	(hero, self, Scroll4Milten, 1);	
@@ -1611,7 +1611,7 @@ func void Info_Milten_LSDONE_Info()
 	AI_Output				(self, hero,"Info_Milten_LSDONE_02_04"); //Ma il nostro giochetto sembra aver attirato l'attenzione di qualcuno.
 	AI_Output				(self, hero,"Info_Milten_LSDONE_02_05"); //Teletrasportati immediatamente via da qui!
 	AI_Output				(hero, self,"Info_Milten_LSDONE_15_06"); //Tu cosa farai?
-	AI_Output				(self, hero,"Info_Milten_LSDONE_02_07"); //Non preoccuparti per me, penserÚ a qualcosa! Ora vai!
+	AI_Output				(self, hero,"Info_Milten_LSDONE_02_07"); //Non preoccuparti per me, penser√≤ a qualcosa! Ora vai!
 
 	B_Story_UrizielLoaded	();
 	

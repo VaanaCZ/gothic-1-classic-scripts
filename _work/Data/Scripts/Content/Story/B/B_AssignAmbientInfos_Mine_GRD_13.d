@@ -51,7 +51,7 @@ FUNC INT Info_Mine_Grd_13_Mine_Condition()
 FUNC VOID Info_Mine_Grd_13_Mine_Info()
 {
 	AI_Output(other,self,"Info_Mine_Grd_13_Mine_15_00"); //Cosa succede nella miniera?
-	AI_Output(self,other,"Info_Mine_Grd_13_Mine_13_01"); //La miniera è il cuore di Campo Vecchio. Niente miniera, niente metallo. Niente metallo, niente merci. Chiaro?
+	AI_Output(self,other,"Info_Mine_Grd_13_Mine_13_01"); //La miniera Ã¨ il cuore di Campo Vecchio. Niente miniera, niente metallo. Niente metallo, niente merci. Chiaro?
 };
 
 // *************************************************************************
@@ -78,7 +78,7 @@ FUNC INT Info_Mine_Grd_13_WichtigePersonen_Condition()
 FUNC VOID Info_Mine_Grd_13_WichtigePersonen_Info()
 {
 	AI_Output(other,self,"Info_Mine_Grd_13_WichtigePersonen_15_00"); //Chi comanda qui?
-	AI_Output(self,other,"Info_Mine_Grd_13_WichtigePersonen_13_01"); //Il nostro capo è Asghan, ma farai meglio a non disturbarlo. Ian si occupa di quelli come te.
+	AI_Output(self,other,"Info_Mine_Grd_13_WichtigePersonen_13_01"); //Il nostro capo Ã¨ Asghan, ma farai meglio a non disturbarlo. Ian si occupa di quelli come te.
 };
 
 // *************************************************************************
@@ -105,7 +105,7 @@ FUNC INT Info_Mine_Grd_13_DasLager_Condition()
 FUNC VOID Info_Mine_Grd_13_DasLager_Info()
 {
 	AI_Output(other,self,"Info_Mine_Grd_13_DasLager_15_00"); //Parlami dei pidocchi di miniera.
-	AI_Output(self,other,"Info_Mine_Grd_13_DasLager_13_01"); //La Fratellanza paga Campo Vecchio con l'erba di palude, così ha il permesso di cacciarli nella miniera.
+	AI_Output(self,other,"Info_Mine_Grd_13_DasLager_13_01"); //La Fratellanza paga Campo Vecchio con l'erba di palude, cosÃ¬ ha il permesso di cacciarli nella miniera.
 	
 };
 

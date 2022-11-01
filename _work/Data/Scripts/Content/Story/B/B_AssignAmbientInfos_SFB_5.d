@@ -4,7 +4,7 @@
 
 
 // *************************************************************************
-// 									Vor Gespr‰ch
+// 									Vor Gespr√§ch
 // *************************************************************************
 
 INSTANCE Info_SFB_5_Pre(C_INFO)
@@ -90,7 +90,7 @@ INSTANCE Info_SFB_5_WichtigePersonen(C_INFO)
 	condition	= Info_SFB_5_WichtigePersonen_Condition;
 	information	= Info_SFB_5_WichtigePersonen_Info;
 	permanent	= 1;
-	description = "Chi Ë il pezzo grosso, qui?";
+	description = "Chi √® il pezzo grosso, qui?";
 };                       
 
 FUNC INT Info_SFB_5_WichtigePersonen_Condition()
@@ -100,11 +100,11 @@ FUNC INT Info_SFB_5_WichtigePersonen_Condition()
 
 FUNC VOID Info_SFB_5_WichtigePersonen_Info()
 {
-	AI_Output(other,self,"Info_SFB_5_WichtigePersonen_15_00"); //Chi Ë il pezzo grosso, qui?
+	AI_Output(other,self,"Info_SFB_5_WichtigePersonen_15_00"); //Chi √® il pezzo grosso, qui?
 	AI_Output(self,other,"Info_SFB_5_WichtigePersonen_02_01"); //Il pezzo grosso? Io, ovviamente!
 	AI_Output(self,other,"Info_SFB_5_WichtigePersonen_02_02"); //Ma immagino che tu voglia sapere chi comanda.
 	AI_Output(self,other,"Info_SFB_5_WichtigePersonen_02_03"); //Beh, penso farai meglio a parlare coi mercenari o i ladri. Non avvicinarti neppure ai Maghi dell'Acqua.
-	AI_Output(self,other,"Info_SFB_5_WichtigePersonen_02_04"); //Quel culone di Swiney si crede pi˘ importante di quanto non sia in realt‡: il suo lavoro consiste nel consegnare i picconi ed eseguire gli ordini di Okyl.
+	AI_Output(self,other,"Info_SFB_5_WichtigePersonen_02_04"); //Quel culone di Swiney si crede pi√π importante di quanto non sia in realt√†: il suo lavoro consiste nel consegnare i picconi ed eseguire gli ordini di Okyl.
 };
 
 // *************************************************************************
@@ -151,10 +151,10 @@ FUNC INT Info_SFB_5_DieLage_Condition()
 
 FUNC VOID Info_SFB_5_DieLage_Info()
 {
-	AI_Output(other,self,"Info_SFB_5_DieLage_15_00"); //Com'Ë la vita, qui?
+	AI_Output(other,self,"Info_SFB_5_DieLage_15_00"); //Com'√® la vita, qui?
 	AI_Output(self,other,"Info_SFB_5_DieLage_02_01"); //Ottima!
 	AI_Output(self,other,"Info_SFB_5_DieLage_02_02"); //E siccome siamo tanto felici di stare qui, cerchiamo in ogni modo di andarcene!
-	AI_Output(self,other,"Info_SFB_5_DieLage_02_03"); //Come pensi che possa essere? » una prigione! E a nessuno piace vivere in prigione.
+	AI_Output(self,other,"Info_SFB_5_DieLage_02_03"); //Come pensi che possa essere? √à una prigione! E a nessuno piace vivere in prigione.
 	
 };	
 // *************************************************************************

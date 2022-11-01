@@ -61,7 +61,7 @@ INSTANCE DIA_Kyle_Problem (C_INFO)
 	condition		= DIA_Kyle_Problem_Condition;
 	information		= DIA_Kyle_Problem_Info;
 	permanent		= 1;
-	description		= "Qual è il problema?";
+	description		= "Qual Ã¨ il problema?";
 };
 
 FUNC INT DIA_Kyle_Problem_Condition()
@@ -71,9 +71,9 @@ FUNC INT DIA_Kyle_Problem_Condition()
 
 FUNC VOID DIA_Kyle_Problem_Info()
 {
-	AI_Output (other, self,"DIA_Kyle_Problem_15_00"); //Qual è il problema?
-	AI_Output (self, other,"DIA_Kyle_Problem_10_01"); //Lasciami in pace! Chiunque è un problema per ME!
-	AI_Output (self, other,"DIA_Kyle_Problem_10_02"); //È iniziato tutto quando ho costruito la mia capanna.
+	AI_Output (other, self,"DIA_Kyle_Problem_15_00"); //Qual Ã¨ il problema?
+	AI_Output (self, other,"DIA_Kyle_Problem_10_01"); //Lasciami in pace! Chiunque Ã¨ un problema per ME!
+	AI_Output (self, other,"DIA_Kyle_Problem_10_02"); //Ãˆ iniziato tutto quando ho costruito la mia capanna.
 	AI_Output (self, other,"DIA_Kyle_Problem_10_03"); //Non costruire vicino al fosso', mi avvisavano.
 	AI_Output (self, other,"DIA_Kyle_Problem_10_04"); //Ma nessuno di quei bastardi mi ha detto cosa sarebbe successo se l'avessi fatto!
 	AI_Output (self, other,"DIA_Kyle_Problem_10_05"); //Quando sono tornato dalla miniera, alcuni giorni fa, avevo una seconda porta!

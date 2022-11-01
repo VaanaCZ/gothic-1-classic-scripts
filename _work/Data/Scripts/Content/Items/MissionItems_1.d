@@ -65,7 +65,7 @@ INSTANCE SpecialJoint(C_Item)
 	on_state[0]			=	UseSpecialJoint;
 
 	TEXT[0]		    	= "Erba di palude con un effetto";
-	TEXT[1]             = "più potente rispetto a quella normale.";
+	TEXT[1]             = "piÃ¹ potente rispetto a quella normale.";
 	TEXT[3]             = "Per il guru Baal-Tyon!";
 	TEXT[5]				= NAME_Value;					COUNT[4]	= Value_Joint3*10;
 };
@@ -138,7 +138,7 @@ INSTANCE ItWrOMMap(C_Item)
 
 
 /************************************************
-**  Missionsitems für Introparcours in der VM  **
+**  Missionsitems fÃ¼r Introparcours in der VM  **
 ************************************************/
 
 INSTANCE AltesSchwertVM (C_Item)
@@ -293,14 +293,14 @@ func void UseCronosBrief ()
 					Doc_PrintLine	( nDocID,  0,"Venerabile maestro Corristo,");
 					Doc_PrintLine	( nDocID,  0, ""					);
 					Doc_SetFont 	( nDocID, -1, "font_10_book.TGA"	   			); 	// -1 -> all pages 
-					Doc_PrintLines	( nDocID,  0,"Saturas, onorato maestro dei maghi del Circolo dell'Acqua, ti prega di aiutarci a mantenere la tensione fra Campo Vecchio e Campo Nuovo all'interno di limiti gestibili da entrambi. Essendo responsabile della spedizione mensile di metallo, è certamente tuo interesse reprimere le attività illecite dei ladri di Campo Nuovo. Inoltre, desideriamo che Campo Vecchio smetta d'intralciare i nostri tentativi di riaprire la Barriera magica che ci tiene tutti imprigionati.");
+					Doc_PrintLines	( nDocID,  0,"Saturas, onorato maestro dei maghi del Circolo dell'Acqua, ti prega di aiutarci a mantenere la tensione fra Campo Vecchio e Campo Nuovo all'interno di limiti gestibili da entrambi. Essendo responsabile della spedizione mensile di metallo, Ã¨ certamente tuo interesse reprimere le attivitÃ  illecite dei ladri di Campo Nuovo. Inoltre, desideriamo che Campo Vecchio smetta d'intralciare i nostri tentativi di riaprire la Barriera magica che ci tiene tutti imprigionati.");
 					Doc_PrintLine	( nDocID,  0, ""					);
 					Doc_PrintLine	( nDocID,  0,"In attesa della tua pronta replica,");
 					Doc_PrintLine	( nDocID,  0, ""					);
 					Doc_PrintLine	( nDocID,  0,"        Cronos, custode del metallo");
 					Doc_PrintLine	( nDocID,  0, ""					);
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_SetMargins	( nDocID, -1, 200, 50, 50, 50, 1   		);  //  0 -> margins are in pixels (Position des Textes von den Ränder des TGAs aus
+					Doc_SetMargins	( nDocID, -1, 200, 50, 50, 50, 1   		);  //  0 -> margins are in pixels (Position des Textes von den RÃ¤nder des TGAs aus
 				
 					Doc_Show		( nDocID );
 		
@@ -327,7 +327,7 @@ instance  Neks_Amulett(C_Item)
 	on_unequip		=	UnEquip_Schutzamulett_Nek;
 
 	description		= "Amuleto della guardia morta"; //Nek's Amulett
-	TEXT[1]			= "C'è scritto NEK sul retro.";
+	TEXT[1]			= "C'Ã¨ scritto NEK sul retro.";
 	TEXT[2]			= NAME_Prot_Edge;
 	COUNT[2]		= 5;
 	//TEXT[3] 		= "";
@@ -350,7 +350,7 @@ instance  Neks_Amulett(C_Item)
 	};
 
 /*************************************************
-**	Missionsitems für Mis_1_Psi_RecruitBuddler  **
+**	Missionsitems fÃ¼r Mis_1_Psi_RecruitBuddler  **
 *************************************************/
 INSTANCE RecruitJoint(C_Item)
 {	
@@ -384,7 +384,7 @@ INSTANCE RecruitJoint(C_Item)
 };
 
 /**************************************************
-**    Missionsitems für Mis_3_Psi_BringMedicine  **
+**    Missionsitems fÃ¼r Mis_3_Psi_BringMedicine  **
 **************************************************/
 
 INSTANCE HealthWater(C_Item)
@@ -422,7 +422,7 @@ INSTANCE HealthWater(C_Item)
 };
 
 /************************************************
-**    Missionsitems für Mis_1_OC_BringList     **
+**    Missionsitems fÃ¼r Mis_1_OC_BringList     **
 ************************************************/
 INSTANCE TheList(C_Item)
 {	
@@ -463,13 +463,13 @@ func void UseTheList ()
 					Doc_PrintLine	( nDocID,  0,"1 cucchiaione");
 					Doc_PrintLine	( nDocID,  0,"1 spazzola");
 					Doc_PrintLine	( nDocID,  0,"5 picconi + 3 martelli");
-					Doc_PrintLines	( nDocID,  0,"E una grande quantità d'erba di palude.");
+					Doc_PrintLines	( nDocID,  0,"E una grande quantitÃ  d'erba di palude.");
 					Doc_PrintLine	( nDocID,  0,"Aspettiamo la consegna per dopodomani.");
 					Doc_PrintLine	( nDocID,  0, ""					);
 					Doc_PrintLine	( nDocID,  0, ""					);
 					Doc_PrintLine	( nDocID,  0,"IAN");
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_SetMargins	( nDocID, -1, 200, 50, 50, 50, 1   		);  //  0 -> margins are in pixels (Position des Textes von den Ränder des TGAs aus
+					Doc_SetMargins	( nDocID, -1, 200, 50, 50, 50, 1   		);  //  0 -> margins are in pixels (Position des Textes von den RÃ¤nder des TGAs aus
 				
 					Doc_Show		( nDocID );
 		
@@ -516,7 +516,7 @@ func void UseTheListNC ()
 					Doc_PrintLine	( nDocID,  0,"1 cucchiaione");
 					Doc_PrintLine	( nDocID,  0,"1 spazzola");
 					Doc_PrintLine	( nDocID,  0,"5 picconi + 3 martelli");
-					Doc_PrintLines	( nDocID,  0,"E una grande quantità d'erba di palude.");
+					Doc_PrintLines	( nDocID,  0,"E una grande quantitÃ  d'erba di palude.");
 					Doc_PrintLine	( nDocID,  0,"Aspettiamo la consegna per dopodomani.");
 					Doc_PrintLine	( nDocID,  0, ""					);
 					Doc_PrintLine	( nDocID,  0, ""					);
@@ -527,7 +527,7 @@ func void UseTheListNC ()
 					Doc_PrintLine	( nDocID,  0,"5 fiaschi di vino");
 					Doc_PrintLine	( nDocID,  0,"25 cosce di saprofago");
 					Doc_PrintLine	( nDocID,  0,"Mezza dozzina d'armi");
-					Doc_SetMargins	( nDocID, -1, 200, 50, 50, 50, 1   		);  //  0 -> margins are in pixels (Position des Textes von den Ränder des TGAs aus
+					Doc_SetMargins	( nDocID, -1, 200, 50, 50, 50, 1   		);  //  0 -> margins are in pixels (Position des Textes von den RÃ¤nder des TGAs aus
 				
 					Doc_Show		( nDocID );
 		
@@ -535,7 +535,7 @@ func void UseTheListNC ()
 
 
 /*********************************************
-**   Missionsitems für Lares Find Ring    **
+**   Missionsitems fÃ¼r Lares Find Ring    **
 *********************************************/
 
 INSTANCE Lares_Ring(C_Item)
@@ -580,7 +580,7 @@ INSTANCE Lares_Ring(C_Item)
 		Npc_ChangeAttribute(self,ATR_STRENGTH,-3 );
 	};
 /*********************************************
-**   Missionsitems für Lares Get Potion   **
+**   Missionsitems fÃ¼r Lares Get Potion   **
 *********************************************/
 INSTANCE  Heiltrank(C_Item)
 {
@@ -614,7 +614,7 @@ FUNC VOID UseHeiltrank()
 };
 
 /*********************************************
-**   Missionsitems für Mordrag    **
+**   Missionsitems fÃ¼r Mordrag    **
 *********************************************/
 
 INSTANCE SpecialWater(C_Item)
@@ -650,7 +650,7 @@ INSTANCE SpecialWater(C_Item)
 };
 
 /*********************************************
-**   Missionsitems für Dexter / Kalom	    **
+**   Missionsitems fÃ¼r Dexter / Kalom	    **
 *********************************************/
 INSTANCE KalomsRecipe(C_Item)
 {
@@ -702,10 +702,10 @@ func VOID Use_KalomsRecipe()
 				
 				//2.Seite
 
-				Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den Ränder des TGAs aus, links,oben,rechts,unten)
+				Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den RÃ¤nder des TGAs aus, links,oben,rechts,unten)
 				Doc_PrintLine	( nDocID,  1, ""					);	
 				Doc_PrintLine	( nDocID,  1, ""					);					
-				Doc_PrintLines	( nDocID,  1,"Sembra più chiaro, se letto al contrario.");
+				Doc_PrintLines	( nDocID,  1,"Sembra piÃ¹ chiaro, se letto al contrario.");
 				Doc_PrintLine	( nDocID,  1, ""					);	
 				Doc_PrintLine	( nDocID,  1,"          - Kalom");	
 				
@@ -717,7 +717,7 @@ func VOID Use_KalomsRecipe()
 
 
 /*********************************************
-** Missionsitems für Mis_1_PSI_DrugMonopol  **
+** Missionsitems fÃ¼r Mis_1_PSI_DrugMonopol  **
 *********************************************/
 /*
 INSTANCE SalmAmulett (C_Item)
@@ -776,11 +776,11 @@ INSTANCE ItWrWorldmap(C_Item)
 					Doc_SetPage 	( nDocID, 0, "Map_World.tga", 	1	);  //  1 -> DO NOT SCALE 
 
 /*  				Doc_SetFont 	( nDocID, 0, "font_15_book.TGA"		); 	// -1 -> all pages 
-					Doc_SetMargins	( nDocID, 0, 120, 80, 10, 10, 	1	);  //  0 -> Textrahmen (von den Ränder des TGAs aus, links-oben,rechts-unten)
+					Doc_SetMargins	( nDocID, 0, 120, 80, 10, 10, 	1	);  //  0 -> Textrahmen (von den RÃ¤nder des TGAs aus, links-oben,rechts-unten)
 					Doc_PrintLine	( nDocID, 0, "Karte der"	);
 					Doc_PrintLine	( nDocID, 0, "Kolonie"	);
 
-// FIXME: mehrere Texte an verschiedenen Stellen für Location-Beschriftung funzen nicht.
+// FIXME: mehrere Texte an verschiedenen Stellen fÃ¼r Location-Beschriftung funzen nicht.
  					Doc_SetFont 	( nDocID, 0, "font_10_book.TGA"			); 
 					Doc_SetMargins	( nDocID, 0, 110, 300, 10, 10, 1	);
 					Doc_PrintLine	( nDocID, 0, "Neues Lager");
@@ -789,7 +789,7 @@ INSTANCE ItWrWorldmap(C_Item)
 					Doc_PrintLine	( nDocID, 0, "Altes Lager");
 
 					Doc_SetMargins	( nDocID, 0, 200, 420, 10, 10, 1	);
-					Doc_PrintLine	( nDocID, 0, "Dämonenbeschwörer");
+					Doc_PrintLine	( nDocID, 0, "DÃ¤monenbeschwÃ¶rer");
 					
 					Doc_SetMargins	( nDocID, 0, 510, 340, 10, 10, 1	);
 					Doc_PrintLine	( nDocID, 0, "Sekten-Lager");
@@ -827,7 +827,7 @@ INSTANCE ItWrOCmap(C_Item)
 		var int nDocID;
 		
 		nDocID = 	Doc_CreateMap	()			  ;							// DocManager 
-//					Doc_SetLevel	( nDocID,	"WORLD.ZEN" ); Kein Positionsanzeiger möglich!
+//					Doc_SetLevel	( nDocID,	"WORLD.ZEN" ); Kein Positionsanzeiger mÃ¶glich!
 					Doc_SetPages	( nDocID, 1 );                         
 					Doc_SetPage 	( nDocID, 0, "Map_OldCamp.tga", 	1	);  //  1 -> DO NOT SCALE 
 					Doc_Show		( nDocID 	);
@@ -862,7 +862,7 @@ INSTANCE ItWrNCmap(C_Item)
 		var int nDocID;
 		
 		nDocID = 	Doc_CreateMap	()			  ;							// DocManager 
-//					Doc_SetLevel	( nDocID,	"WORLD.ZEN" ); Kein Positionsanzeiger möglich!
+//					Doc_SetLevel	( nDocID,	"WORLD.ZEN" ); Kein Positionsanzeiger mÃ¶glich!
 					Doc_SetPages	( nDocID, 1 );                         
 					Doc_SetPage 	( nDocID, 0, "Map_NewCamp.tga", 	1	);  //  1 -> DO NOT SCALE 
 					Doc_Show		( nDocID 	);
@@ -897,7 +897,7 @@ INSTANCE ItWrPSImap(C_Item)
 		var int nDocID;
 		
 		nDocID = 	Doc_CreateMap	()			  ;							// DocManager 
-//					Doc_SetLevel	( nDocID,	"WORLD.ZEN" ); Kein Positionsanzeiger möglich!
+//					Doc_SetLevel	( nDocID,	"WORLD.ZEN" ); Kein Positionsanzeiger mÃ¶glich!
 					Doc_SetPages	( nDocID, 1 );                         
 					Doc_SetPage 	( nDocID, 0, "Map_PSICamp.tga", 	1	);  //  1 -> DO NOT SCALE 
 					Doc_Show		( nDocID 	);
@@ -932,7 +932,7 @@ INSTANCE ItWrPinup(C_Item)
 		var int nDocID;
 		
 		nDocID = 	Doc_CreateMap	()			  ;							// DocManager 
-//					Doc_SetLevel	( nDocID,	"WORLD.ZEN" ); Kein Positionsanzeiger möglich!
+//					Doc_SetLevel	( nDocID,	"WORLD.ZEN" ); Kein Positionsanzeiger mÃ¶glich!
 					Doc_SetPages	( nDocID, 1 );                         
 					Doc_SetPage 	( nDocID, 0, "Map_PinUp.tga", 	1	);  //  1 -> DO NOT SCALE 
 					Doc_Show		( nDocID 	);
@@ -1014,15 +1014,15 @@ func void Usefireletter ()
 					Doc_PrintLine	( nDocID,  0,"Venerabile maestro,");
 					Doc_PrintLine	( nDocID,  0, ""					);
 					Doc_SetFont 	( nDocID, -1, "font_10_book.TGA"	   			); 	// -1 -> all pages 
-					Doc_PrintLines	( nDocID,  0, "La tua ultima missiva ci ha gettato in uno stato di grande agitazione. Abbiamo conferito a lungo sulla questione e te ne rendiamo conto in questa lettera. La Fratellanza è una minaccia. Essa mette in pericolo il perdurare dei nostri commerci, il Re, l'integrità del reame e la tua stessa vita. Di conseguenza, dovresti inviare degli esploratori a investigare da quali dèi e conoscenze derivino i loro poteri magici. Una volta scoperte queste cose, informeremo immediatamente i sacerdoti e speriamo che i nostri sforzi congiunti riescano a debellare tale minaccia. In questo stesso istante, gli studenti stanno esaminando gli antichi libri. Appena avremo trovato qualcosa, t'informeremo per mezzo del nostro usuale sistema di comunicazione."	);
+					Doc_PrintLines	( nDocID,  0, "La tua ultima missiva ci ha gettato in uno stato di grande agitazione. Abbiamo conferito a lungo sulla questione e te ne rendiamo conto in questa lettera. La Fratellanza Ã¨ una minaccia. Essa mette in pericolo il perdurare dei nostri commerci, il Re, l'integritÃ  del reame e la tua stessa vita. Di conseguenza, dovresti inviare degli esploratori a investigare da quali dÃ¨i e conoscenze derivino i loro poteri magici. Una volta scoperte queste cose, informeremo immediatamente i sacerdoti e speriamo che i nostri sforzi congiunti riescano a debellare tale minaccia. In questo stesso istante, gli studenti stanno esaminando gli antichi libri. Appena avremo trovato qualcosa, t'informeremo per mezzo del nostro usuale sistema di comunicazione."	);
 					Doc_PrintLine	( nDocID,  0, ""					);
 					Doc_PrintLine	( nDocID,  0,"Innos ci protegga tutti");
 					Doc_PrintLine	( nDocID,  0, ""					);
 					Doc_PrintLine	( nDocID,  0, ""					);
 					Doc_PrintLine	( nDocID,  0, ""					);
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_SetMargins	( nDocID, -1, 200, 50, 50, 50, 1   		);  //  0 -> margins are in pixels (Position des Textes von den Ränder des TGAs aus
-					//Doc_PrintLine	( nDocID,  0, "Rigaldo Marschall des Königs"					);
+					Doc_SetMargins	( nDocID, -1, 200, 50, 50, 50, 1   		);  //  0 -> margins are in pixels (Position des Textes von den RÃ¤nder des TGAs aus
+					//Doc_PrintLine	( nDocID,  0, "Rigaldo Marschall des KÃ¶nigs"					);
 					Doc_Show		( nDocID );
 		
 		
@@ -1069,23 +1069,23 @@ func void Usefireletter2 ()
 					Doc_PrintLine	( nDocID,  0,"Venerabile maestro Xardas,");
 					Doc_PrintLine	( nDocID,  0, ""					);
 					Doc_SetFont 	( nDocID, -1, "font_10_book.TGA"	   			); 	// -1 -> all pages 
-					Doc_PrintLines	( nDocID,  0, "La tua ultima missiva ci ha gettato in uno stato di grande agitazione. Abbiamo conferito a lungo sulla questione e te ne rendiamo conto in questa lettera. La Fratellanza è una minaccia. Essa mette in pericolo il perdurare dei nostri commerci, il Re, l'integrità del reame e la tua stessa vita. Di conseguenza, dovresti inviare degli esploratori a investigare da quali dèi e conoscenze derivino i loro poteri magici. È nostro compito eliminare la Setta e ottenerne la conoscenza per evitare che, in futuro, sia usata da qualcun altro a scopi malvagi. Appena ci avrai fornito queste informazioni, ne renderemo immediatamente partecipi i sacerdoti d’Innos. In questo stesso istante, gli studenti stanno esaminando gli antichi libri. Appena avremo trovato qualcosa, t'informeremo per mezzo del nostro usuale sistema di comunicazione."	);
+					Doc_PrintLines	( nDocID,  0, "La tua ultima missiva ci ha gettato in uno stato di grande agitazione. Abbiamo conferito a lungo sulla questione e te ne rendiamo conto in questa lettera. La Fratellanza Ã¨ una minaccia. Essa mette in pericolo il perdurare dei nostri commerci, il Re, l'integritÃ  del reame e la tua stessa vita. Di conseguenza, dovresti inviare degli esploratori a investigare da quali dÃ¨i e conoscenze derivino i loro poteri magici. Ãˆ nostro compito eliminare la Setta e ottenerne la conoscenza per evitare che, in futuro, sia usata da qualcun altro a scopi malvagi. Appena ci avrai fornito queste informazioni, ne renderemo immediatamente partecipi i sacerdoti dâ€™Innos. In questo stesso istante, gli studenti stanno esaminando gli antichi libri. Appena avremo trovato qualcosa, t'informeremo per mezzo del nostro usuale sistema di comunicazione."	);
 					Doc_PrintLine	( nDocID,  0, ""					);
 					Doc_PrintLine	( nDocID,  0,"Innos ci protegga tutti");
 					Doc_PrintLine	( nDocID,  0, ""					);
-					//Doc_PrintLine	( nDocID,  0, "            Rigaldo, Marschall des Königs");
+					//Doc_PrintLine	( nDocID,  0, "            Rigaldo, Marschall des KÃ¶nigs");
 					Doc_PrintLine	( nDocID,  0, ""					);
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_SetMargins	( nDocID, -1, 200, 50, 50, 50, 1   		);  //  0 -> margins are in pixels (Position des Textes von den Ränder des TGAs aus
+					Doc_SetMargins	( nDocID, -1, 200, 50, 50, 50, 1   		);  //  0 -> margins are in pixels (Position des Textes von den RÃ¤nder des TGAs aus
 				
 					Doc_Show		( nDocID );
 		
 };
 
 /********************************************************************************/
-//SCHLÜSSEL 
+//SCHLÃœSSEL 
 /*********************************************************************************/
-//GOMEZ SCHLÜSSEL
+//GOMEZ SCHLÃœSSEL
 INSTANCE ItKe_Gomez_01(C_Item)
 {	
 	name 					=	"Chiave di Gomez";
@@ -1113,7 +1113,7 @@ INSTANCE ItKe_Gomez_01(C_Item)
 };
 
 /*********************************************************************************/
-//RICELORDS SCHLÜSSEL
+//RICELORDS SCHLÃœSSEL
 INSTANCE ItKey_RB_01(C_Item)
 {	
 	name 				=	"Chiave del Signore del Riso";
@@ -1129,7 +1129,7 @@ INSTANCE ItKey_RB_01(C_Item)
 	TEXT[0]				=	"Apre lo scrigno del Signore del Riso.";
 };
 /*********************************************************************************/
-//SCHMIEDESCHLÜSSEL ERZBARONE
+//SCHMIEDESCHLÃœSSEL ERZBARONE
 INSTANCE ItKe_OB_Smith_01(C_Item)
 {	
 	name 					=	"Chiave di ferro";
@@ -1184,7 +1184,7 @@ INSTANCE ItKe_Storage_01(C_Item)
 };
 
 /********************************************************/
-//			SCHLÜSSEL IN DER ALTEN MINE
+//			SCHLÃœSSEL IN DER ALTEN MINE
 /********************************************************/
 
 /********************************************************/
@@ -1217,7 +1217,7 @@ INSTANCE ItKe_OM_02(C_Item)
 	visual 				=	"ItKe_Key_02.3ds";
 	material 			=	MAT_METAL;
 	description			= name;
-	TEXT[0]				= "apre lo scrigno d’Aaron";
+	TEXT[0]				= "apre lo scrigno dâ€™Aaron";
 	TEXT[1]				= "nella vecchia miniera.";
 };
 
@@ -1251,7 +1251,7 @@ INSTANCE ItKe_OM_04(C_Item)
 	visual 				=	"ItKe_Key_04.3ds";
 	material 			=	MAT_METAL;
 	description			= name;
-	TEXT[0]				= "Magazzino d’Alberto.";
+	TEXT[0]				= "Magazzino dâ€™Alberto.";
 	TEXT[1]				= "Piazza del mercato inferiore.";
 };
 
@@ -1293,7 +1293,7 @@ INSTANCE ItFo_OM_Beer_01(C_Item)
 
 
 //***********************************************************************************************************
-//**								Das Rätsel des Nebelturms			Björn							   **
+//**								Das RÃ¤tsel des Nebelturms			BjÃ¶rn							   **
 //***********************************************************************************************************
 
 //*******Effekt nur beim ersten benutzen des Buches
@@ -1342,12 +1342,12 @@ INSTANCE theriddle1(C_Item)
 					Doc_PrintLine	( nDocID,  0, "-----------");
 					Doc_SetFont 	( nDocID, -1, "font_10_book.TGA"	   			); 	// -1 -> all pages 
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLines	( nDocID,  0, "Colui che intende rinunciare alla depravazione per seguire la strada della virtù, deve sapere dove giace la sorgente del mio potere. Così, egli potrà utilizzarla per rompere le catene di questo mondo e dimostrare d'essere degno di ricevere Chromanin.");
+					Doc_PrintLines	( nDocID,  0, "Colui che intende rinunciare alla depravazione per seguire la strada della virtÃ¹, deve sapere dove giace la sorgente del mio potere. CosÃ¬, egli potrÃ  utilizzarla per rompere le catene di questo mondo e dimostrare d'essere degno di ricevere Chromanin.");
 					
 				
 
 					//2.Seite
-					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den Ränder des TGAs aus, links,oben,rechts,unten)
+					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den RÃ¤nder des TGAs aus, links,oben,rechts,unten)
 					Doc_PrintLine	( nDocID,  1, "");
 					Doc_PrintLine	( nDocID,  1, "");
 					Doc_PrintLine	( nDocID,  1, "");
@@ -1364,7 +1364,7 @@ INSTANCE theriddle1(C_Item)
 					{
 						Log_CreateTopic		(theriddle_log,		LOG_MISSION);
 						Log_SetTopicStatus	(theriddle_log,		LOG_RUNNING);
-						B_LogEntry			(theriddle_log,		"Ho preso un libro molto strano, dallo scheletro mago nella torre della nebbia. Chromanin! Sembra si tratti di un enigma, che uno straniero misterioso ha inserito in questo mondo: ...Il Saggio cerca una panoramica generale, prima di dedicarsi alla missione successiva... Mmmh! Forse un giorno riuscirò a capire queste parole."); 
+						B_LogEntry			(theriddle_log,		"Ho preso un libro molto strano, dallo scheletro mago nella torre della nebbia. Chromanin! Sembra si tratti di un enigma, che uno straniero misterioso ha inserito in questo mondo: ...Il Saggio cerca una panoramica generale, prima di dedicarsi alla missione successiva... Mmmh! Forse un giorno riuscirÃ² a capire queste parole."); 
 						Wld_InsertItem			(theriddle2,"CASTLE_TOWER_TOP");
 					
 						riddle1 = TRUE;
@@ -1415,7 +1415,7 @@ INSTANCE theriddle2(C_Item)
 				
 
 					//2.Seite
-					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den Ränder des TGAs aus, links,oben,rechts,unten)
+					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den RÃ¤nder des TGAs aus, links,oben,rechts,unten)
 					Doc_PrintLine	( nDocID,  1, "");
 					Doc_PrintLine	( nDocID,  1, "");
 					Doc_PrintLine	( nDocID,  1, "");
@@ -1425,13 +1425,13 @@ INSTANCE theriddle2(C_Item)
 					Doc_PrintLine	( nDocID,  1, "");
 					Doc_PrintLine	( nDocID,  1, "");
 					Doc_PrintLine	( nDocID,  1, "");
-					Doc_PrintLines	( nDocID,  1, "Ciò che è diviso tornerà a unirsi, dopo essere stato separato per poco tempo.");
+					Doc_PrintLines	( nDocID,  1, "CiÃ² che Ã¨ diviso tornerÃ  a unirsi, dopo essere stato separato per poco tempo.");
 					Doc_Show		( nDocID );
 					
 					if (riddle2 == FALSE)
 					{					
 						B_GiveXP (300);
-						B_LogEntry			(theriddle_log,		"Ho trovato un secondo libro intitolato Chromanin. Ancora una volta, mi propone un indovinello...Ciò che è diviso tornerà a unirsi, dopo essere stato separato per poco tempo..."); 
+						B_LogEntry			(theriddle_log,		"Ho trovato un secondo libro intitolato Chromanin. Ancora una volta, mi propone un indovinello...CiÃ² che Ã¨ diviso tornerÃ  a unirsi, dopo essere stato separato per poco tempo..."); 
 						Snd_Play 		("FoundRiddlersBook");
 						Wld_InsertItem			(theriddle3,"FP_SLEEP_OW_BLOODFLY_01_02");
 					
@@ -1478,12 +1478,12 @@ INSTANCE theriddle3(C_Item)
 					Doc_PrintLine	( nDocID,  0, "-----------");
 					Doc_SetFont 	( nDocID, -1, "font_10_book.TGA"	   			); 	// -1 -> all pages 
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLines	( nDocID,  0, "Dèi antichi! Com’è possibile che un uomo semplice e indegno come me possa ricevere una tale eredità? Ho un gran timore di perdere tutto nuovamente, a causa delle mie parole o delle mie azioni.");
+					Doc_PrintLines	( nDocID,  0, "DÃ¨i antichi! Comâ€™Ã¨ possibile che un uomo semplice e indegno come me possa ricevere una tale ereditÃ ? Ho un gran timore di perdere tutto nuovamente, a causa delle mie parole o delle mie azioni.");
 					
 				
 
 					//2.Seite
-					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den Ränder des TGAs aus, links,oben,rechts,unten)
+					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den RÃ¤nder des TGAs aus, links,oben,rechts,unten)
 					Doc_PrintLine	( nDocID,  1, "");
 					Doc_PrintLine	( nDocID,  1, "");
 					Doc_PrintLine	( nDocID,  1, "");
@@ -1551,12 +1551,12 @@ INSTANCE theriddle4(C_Item)
 					Doc_PrintLine	( nDocID,  0, "-----------");
 					Doc_SetFont 	( nDocID, -1, "font_10_book.TGA"	   			); 	// -1 -> all pages 
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLines	( nDocID,  0, "Non oso sperare di trovarmi, un giorno, in presenza di Chromanin. Sono finiti i giorni perduti nel pianto. La perfezione è così facile da raggiungere, e io le sono vicino!");
+					Doc_PrintLines	( nDocID,  0, "Non oso sperare di trovarmi, un giorno, in presenza di Chromanin. Sono finiti i giorni perduti nel pianto. La perfezione Ã¨ cosÃ¬ facile da raggiungere, e io le sono vicino!");
 					
 				
 
 					//2.Seite
-					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den Ränder des TGAs aus, links,oben,rechts,unten)
+					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den RÃ¤nder des TGAs aus, links,oben,rechts,unten)
 					Doc_PrintLine	( nDocID,  1, "");
 					Doc_PrintLine	( nDocID,  1, "");
 					Doc_PrintLine	( nDocID,  1, "");
@@ -1624,12 +1624,12 @@ INSTANCE theriddle5(C_Item)
 					Doc_PrintLine	( nDocID,  0, "-----------");
 					Doc_SetFont 	( nDocID, -1, "font_10_book.TGA"	   			); 	// -1 -> all pages 
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLines	( nDocID,  0, "Non camminerò da solo. Quest'onore è mio. Devo accettare di condividere il potere che ho dentro con gli uomini valorosi che verranno a cercarmi. Spero arrivino presto...");
+					Doc_PrintLines	( nDocID,  0, "Non camminerÃ² da solo. Quest'onore Ã¨ mio. Devo accettare di condividere il potere che ho dentro con gli uomini valorosi che verranno a cercarmi. Spero arrivino presto...");
 					
 				
 
 					//2.Seite
-					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den Ränder des TGAs aus, links,oben,rechts,unten)
+					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den RÃ¤nder des TGAs aus, links,oben,rechts,unten)
 					Doc_PrintLine	( nDocID,  1, "");
 					Doc_PrintLine	( nDocID,  1, "");
 					Doc_PrintLine	( nDocID,  1, "");
@@ -1702,7 +1702,7 @@ INSTANCE theriddle6(C_Item)
 				
 
 					//2.Seite
-					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den Ränder des TGAs aus, links,oben,rechts,unten)
+					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den RÃ¤nder des TGAs aus, links,oben,rechts,unten)
 					Doc_PrintLine	( nDocID,  1, "");
 					Doc_PrintLine	( nDocID,  1, "");
 					Doc_PrintLine	( nDocID,  1, "");
@@ -1720,7 +1720,7 @@ INSTANCE theriddle6(C_Item)
 					{
 
 						B_GiveXP (1000);
-						B_LogEntry			(theriddle_log,		"Il misterioso straniero è morto, ucciso da quei demoni. Sembra esserci un legame fra lui e quelle creature infernali. D'altra parte, non sarebbe dovuto tornare qui. Ha portato nella tomba il segreto che sembrava voler condividere."); 
+						B_LogEntry			(theriddle_log,		"Il misterioso straniero Ã¨ morto, ucciso da quei demoni. Sembra esserci un legame fra lui e quelle creature infernali. D'altra parte, non sarebbe dovuto tornare qui. Ha portato nella tomba il segreto che sembrava voler condividere."); 
 						Log_SetTopicStatus	(theriddle_log,		LOG_SUCCESS);
 						Snd_Play 		("FoundRiddler");					
 						Wld_InsertNpc	(SkeletonMage,		"OW_FOGDUNGEON_36_MOVEMENT");

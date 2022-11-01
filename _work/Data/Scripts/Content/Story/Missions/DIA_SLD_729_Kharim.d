@@ -66,7 +66,7 @@ instance Info_Kharim_Charge(C_INFO)
 
 FUNC INT Info_Kharim_Charge_Condition()
 {
-	if ( Npc_KnowsInfo (hero,DIA_Scatty_JoinOC) && Npc_KnowsInfo(hero,Info_Kharim_What) && (Kharim_Charged != TRUE) && (Kapitel <= 1) ) // Kapitelfix ***Björn***
+	if ( Npc_KnowsInfo (hero,DIA_Scatty_JoinOC) && Npc_KnowsInfo(hero,Info_Kharim_What) && (Kharim_Charged != TRUE) && (Kapitel <= 1) ) // Kapitelfix ***BjÃ¶rn***
 	{
 		return 1;
 	};
@@ -75,7 +75,7 @@ FUNC INT Info_Kharim_Charge_Condition()
 func VOID Info_Kharim_Charge_Info()
 {
 	AI_Output (other, self,"Info_Kharim_Charge_15_00"); //Ti sfido! Andiamo all'arena!
-	AI_Output (self, other,"Info_Kharim_Charge_09_01"); //TU??? Ti mangerò per colazione, ragazzo!
+	AI_Output (self, other,"Info_Kharim_Charge_09_01"); //TU??? Ti mangerÃ² per colazione, ragazzo!
 	AI_Output (self, other,"Info_Kharim_Charge_09_02"); //Fatti un favore e sparisci!
 
 	Info_ClearChoices	(Info_Kharim_Charge );
@@ -99,7 +99,7 @@ func void Info_Kharim_Charge_Insult()
 	AI_Output (self, other,"Info_Kharim_Charge_Insult_09_01"); //Non hai altro da fare, ragazzo?
 	
 	Info_ClearChoices	(Info_Kharim_Charge );
-	Info_AddChoice		(Info_Kharim_Charge,"Sei qui solo perché sei un lecchino di Gomez!",Info_Kharim_Charge_Insult_GomezAss);
+	Info_AddChoice		(Info_Kharim_Charge,"Sei qui solo perchÃ© sei un lecchino di Gomez!",Info_Kharim_Charge_Insult_GomezAss);
 	Info_AddChoice		(Info_Kharim_Charge,"Tua madre si fa i pastori!",Info_Kharim_Charge_Insult_Goats);
 	Info_AddChoice		(Info_Kharim_Charge,"No, non riesco a pensare a nulla che tu possa comprendere.",Info_Kharim_Charge_Insult_Stupid);
 	Info_AddChoice		(Info_Kharim_Charge,"Hai le braccia sottili, ma poi ho visto il tuo brutto muso.",Info_Kharim_Charge_Insult_Face);
@@ -112,15 +112,15 @@ func void Info_Kharim_Charge_Insult()
 func void Info_Kharim_Charge_Insult_Goats()
 {
 	AI_Output (other, self,"Info_Kharim_Charge_Insult_Goats_15_00"); //Tua madre se la intende coi pastori!
-	AI_Output (self, other,"Info_Kharim_Charge_Insult_Goats_09_01"); //Sì, lo penso anch'io...
+	AI_Output (self, other,"Info_Kharim_Charge_Insult_Goats_09_01"); //SÃ¬, lo penso anch'io...
 };
 
 func void Info_Kharim_Charge_Insult_GomezAss()
 {
-	AI_Output (other, self,"Info_Kharim_Charge_Insult_GomezAss_15_00"); //Sei qui solo perché sei un lecchino di Gomez!
-	AI_Output (self, other,"Info_Kharim_Charge_Insult_GomezAss_09_01"); //COSA? Brutto verme! Non sai nulla di noi! Campo Nuovo è INDIPENDENTE da tutta quella merda!
-	AI_Output (self, other,"Info_Kharim_Charge_Insult_GomezAss_09_02"); //A parte questo, c'è un solo motivo per cui mi trovo qui. Per rompere la testa dei furboni come te!
-	AI_Output (self, other,"Info_Kharim_Charge_Insult_GomezAss_09_03"); //E sarà mio piacere fare lo stesso con TE! Il tuo destino ti attende nell'arena!
+	AI_Output (other, self,"Info_Kharim_Charge_Insult_GomezAss_15_00"); //Sei qui solo perchÃ© sei un lecchino di Gomez!
+	AI_Output (self, other,"Info_Kharim_Charge_Insult_GomezAss_09_01"); //COSA? Brutto verme! Non sai nulla di noi! Campo Nuovo Ã¨ INDIPENDENTE da tutta quella merda!
+	AI_Output (self, other,"Info_Kharim_Charge_Insult_GomezAss_09_02"); //A parte questo, c'Ã¨ un solo motivo per cui mi trovo qui. Per rompere la testa dei furboni come te!
+	AI_Output (self, other,"Info_Kharim_Charge_Insult_GomezAss_09_03"); //E sarÃ  mio piacere fare lo stesso con TE! Il tuo destino ti attende nell'arena!
 	
 	Kharim_Charged = TRUE;
 	
@@ -139,7 +139,7 @@ func void Info_Kharim_Charge_Insult_Stupid()
 func void Info_Kharim_Charge_Insult_Face()
 {
 	AI_Output (other, self,"Info_Kharim_Charge_Insult_Face_15_00"); //Da principio volevo dire qualcosa sulle tue braccia sottili, ma poi ho visto il tuo brutto muso.
-	AI_Output (self, other,"Info_Kharim_Charge_Insult_Face_09_01"); //Questa è la tua ultima possibilità per SPARIRE!
+	AI_Output (self, other,"Info_Kharim_Charge_Insult_Face_09_01"); //Questa Ã¨ la tua ultima possibilitÃ  per SPARIRE!
 };
 
 // **************************************
@@ -166,9 +166,9 @@ FUNC INT Info_Kharim_InArena_Condition()
 
 func VOID Info_Kharim_InArena_Info()
 {
-	if (Kapitel <= 1)				// Kapitelfix ***Björn***
+	if (Kapitel <= 1)				// Kapitelfix ***BjÃ¶rn***
 	{
-		AI_Output (self, other,"Info_Kharim_InArena_09_00"); //Il dolore dipende dalla forza di volontà!
+		AI_Output (self, other,"Info_Kharim_InArena_09_00"); //Il dolore dipende dalla forza di volontÃ !
 		
 		AI_StopProcessInfos	( self );
 		

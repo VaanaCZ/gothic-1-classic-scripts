@@ -45,5 +45,5 @@ FUNC VOID DIA_Org_875_PERM_Info()
 {	
 	AI_Output (other, self,"DIA_Org_875_PERM_15_00"); //Fai entrare solo ladri e minatori?
 	AI_Output (self, other,"DIA_Org_875_PERM_13_01"); //E i fratelli della Setta.
-	AI_Output (self, other,"DIA_Org_875_PERM_13_02"); //Ma, a parte loro, nessun altro può entrare.
+	AI_Output (self, other,"DIA_Org_875_PERM_13_02"); //Ma, a parte loro, nessun altro puÃ² entrare.
 };

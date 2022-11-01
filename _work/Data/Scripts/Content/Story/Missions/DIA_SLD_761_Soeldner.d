@@ -72,7 +72,7 @@ FUNC int DIA_SLD_761_Soeldner_EXIT_2_CONDITION()
 
 func void DIA_SLD_761_Soeldner_EXIT_2_INFO()
 {
-	AI_Output (other, self,"DIA_SLD_761_Soeldner_EXIT_2_INFO_15_01"); //Farò meglio ad andare.
+	AI_Output (other, self,"DIA_SLD_761_Soeldner_EXIT_2_INFO_15_01"); //FarÃ² meglio ad andare.
 	AI_Output (self, other,"DIA_SLD_761_Soeldner_EXIT_2_INFO_03_02");//Va bene.
 	AI_StopProcessInfos	( self );
 };
@@ -97,7 +97,7 @@ FUNC int DIA_SLD_761_Soeldner_UMSEHEN_CONDITION()
 func void DIA_SLD_761_Soeldner_UMSEHEN_INFO()
 {  
 	AI_Output (other, self,"DIA_SLD_761_Soeldner_UMSEHEN_INFO_15_01"); //Volevo solo dare un'occhiata al campo.
-	AI_Output (self, other,"DIA_SLD_761_Soeldner_UMSEHEN_INFO_03_02");//Allora sei nel posto sbagliato. Questo è l'ingresso della miniera e tu non hai il permesso di entrare.
+	AI_Output (self, other,"DIA_SLD_761_Soeldner_UMSEHEN_INFO_03_02");//Allora sei nel posto sbagliato. Questo Ã¨ l'ingresso della miniera e tu non hai il permesso di entrare.
 };
 
 
@@ -121,7 +121,7 @@ FUNC int DIA_SLD_761_Soeldner_INMINE_CONDITION()
 func void DIA_SLD_761_Soeldner_INMINE_INFO()
 {
 	AI_Output (other, self,"DIA_SLD_761_Soeldner_INMINE_INFO_15_01");//Volevo solo vedere la miniera.
-	AI_Output (self, other,"DIA_SLD_761_Soeldner_INMINE_INFO_03_02");//Lo capisci da solo che è chiusa, quindi non c'è nulla da vedere.
+	AI_Output (self, other,"DIA_SLD_761_Soeldner_INMINE_INFO_03_02");//Lo capisci da solo che Ã¨ chiusa, quindi non c'Ã¨ nulla da vedere.
 
 };
 
@@ -151,7 +151,7 @@ func void DIA_SLD_761_Soeldner_Bribe_INFO()
 	AI_Output (self, other,"DIA_SLD_761_Soeldner_Bribe_INFO_03_02");//Cosa ci sarebbe da fare?
 	AI_Output (self, other,"DIA_SLD_761_Soeldner_Bribe_INFO_03_03");//Un attimo. Se stai cercando di corrompermi, hai scelto l'uomo sbagliato.
 	AI_Output (other, self,"DIA_SLD_761_Soeldner_Bribe_INFO_15_04");//Non cercavo di corrompere nessuno, volevo solo...
-	AI_Output (other, self,"DIA_SLD_761_Soeldner_Bribe_INFO_15_05");//Farò meglio ad andare.
+	AI_Output (other, self,"DIA_SLD_761_Soeldner_Bribe_INFO_15_05");//FarÃ² meglio ad andare.
 	AI_StopProcessInfos	(self); 
 };
 

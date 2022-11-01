@@ -51,7 +51,7 @@ FUNC INT Info_Mine_Vlk_3_Mine_Condition()
 FUNC VOID Info_Mine_Vlk_3_Mine_Info()
 {
 	AI_Output(other,self,"Info_Mine_Vlk_3_Mine_15_00"); //Parlami della miniera.
-	AI_Output(self,other,"Info_Mine_Vlk_3_Mine_01_01"); //Lavoriamo duramente per settimane intere, senza mai vedere la luce del sole. Non c'Ë altra via d'uscita che la morte.
+	AI_Output(self,other,"Info_Mine_Vlk_3_Mine_01_01"); //Lavoriamo duramente per settimane intere, senza mai vedere la luce del sole. Non c'√® altra via d'uscita che la morte.
 	
 };
 
@@ -65,7 +65,7 @@ INSTANCE Info_Mine_Vlk_3_WichtigePersonen(C_INFO)
 	condition	= Info_Mine_Vlk_3_WichtigePersonen_Condition;
 	information	= Info_Mine_Vlk_3_WichtigePersonen_Info;
 	permanent	= 1;
-	description = "Chi Ë il capo, qui?";
+	description = "Chi √® il capo, qui?";
 };                       
 
 FUNC INT Info_Mine_Vlk_3_WichtigePersonen_Condition()
@@ -79,7 +79,7 @@ FUNC INT Info_Mine_Vlk_3_WichtigePersonen_Condition()
 FUNC VOID Info_Mine_Vlk_3_WichtigePersonen_Info()
 {
 	AI_Output(other,self,"Info_Mine_Vlk_3_WichtigePersonen_15_00"); //Chi comanda qui?
-	AI_Output(self,other,"Info_Mine_Vlk_3_WichtigePersonen_01_01"); //Ian Ë il capo della miniera e Asghan comanda le guardie.
+	AI_Output(self,other,"Info_Mine_Vlk_3_WichtigePersonen_01_01"); //Ian √® il capo della miniera e Asghan comanda le guardie.
 };
 
 // *************************************************************************
@@ -106,8 +106,8 @@ FUNC INT Info_Mine_Vlk_3_Minecrawler_Condition()
 FUNC VOID Info_Mine_Vlk_3_Minecrawler_Info()
 {
 	AI_Output(other,self,"Info_Mine_Vlk_3_Minecrawler_15_00"); //Cosa mi dici dei pidocchi di miniera?
-	AI_Output(self,other,"Info_Mine_Vlk_3_Minecrawler_01_01"); //Vuoi sapere come sbarazzarsi di loro? Corri! Corri pi˘ che puoi!
-	AI_Output(self,other,"Info_Mine_Vlk_3_Minecrawler_01_02"); //Se sei dato per disperso, Ë gi‡ troppo tardi. Comunque, nessuno sentir‡ la tua mancanza.
+	AI_Output(self,other,"Info_Mine_Vlk_3_Minecrawler_01_01"); //Vuoi sapere come sbarazzarsi di loro? Corri! Corri pi√π che puoi!
+	AI_Output(self,other,"Info_Mine_Vlk_3_Minecrawler_01_02"); //Se sei dato per disperso, √® gi√† troppo tardi. Comunque, nessuno sentir√† la tua mancanza.
 };
 
 // *************************************************************************

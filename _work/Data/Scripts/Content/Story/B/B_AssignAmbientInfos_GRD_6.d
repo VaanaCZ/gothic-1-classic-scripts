@@ -53,7 +53,7 @@ FUNC INT Info_Grd_6_EinerVonEuchWerden_Condition()
 
 FUNC VOID Info_Grd_6_EinerVonEuchWerden_Info()
 {
-	AI_Output(other,self,"Info_Grd_6_EinerVonEuchWerden_15_00"); //C'è bisogno di un uomo in più?
+	AI_Output(other,self,"Info_Grd_6_EinerVonEuchWerden_15_00"); //C'Ã¨ bisogno di un uomo in piÃ¹?
 	AI_Output(self,other,"Info_Grd_6_EinerVonEuchWerden_06_01"); //Tu devi essere uno dei nuovi, vero? Se stai cercando un campo, prova con i pazzi della Setta. Loro non vanno troppo per il sottile.
 	AI_Output(self,other,"Info_Grd_6_EinerVonEuchWerden_06_02"); //Non noi accettiamo chiunque, a meno che tu non voglia lavorare nella vecchia miniera!
 };
@@ -79,7 +79,7 @@ FUNC INT Info_Grd_6_WichtigePersonen_Condition()
 FUNC VOID Info_Grd_6_WichtigePersonen_Info()
 {
 	AI_Output(other,self,"Info_Grd_6_WichtigePersonen_15_00"); //Chi comanda qui?
-	AI_Output(self,other,"Info_Grd_6_WichtigePersonen_06_01"); //Thorus si occupa di far andare avanti la baracca: è il braccio destro di Gomez.
+	AI_Output(self,other,"Info_Grd_6_WichtigePersonen_06_01"); //Thorus si occupa di far andare avanti la baracca: Ã¨ il braccio destro di Gomez.
 	VAR C_NPC Thorus; Thorus = Hlp_GetNpc(GRD_200_THORUS);
 	Thorus.aivar[AIV_FINDABLE]=TRUE;
 };

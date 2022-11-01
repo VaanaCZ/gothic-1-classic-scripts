@@ -7,11 +7,11 @@
 //	Uhrzeit:	24h
 //
 //	Es passiert folgendes:
-//	1.	Nähert sich der Spieler dem Durchgang, so wird er in diesen
+//	1.	NÃ¤hert sich der Spieler dem Durchgang, so wird er in diesen
 //		Dialog gezwungen und einmal gewarnt
-//	2.	Nähert sich der SC trotzdem weiter, so wird er ein ZWEITES Mal
+//	2.	NÃ¤hert sich der SC trotzdem weiter, so wird er ein ZWEITES Mal
 //		gewarnt (aggressiver mit Waffe ziehen)
-//	3.	Nähert er sich trotzdem wieder, wird er angegriffen
+//	3.	NÃ¤hert er sich trotzdem wieder, wird er angegriffen
 //////////////////////////////////////////////////////////////////////////
 const string	Grd_213_CHECKPOINT		= "OCC_GATE_INSIDE";
 
@@ -120,7 +120,7 @@ func int Info_Grd_213_Attack_Info()
 	hero.aivar[AIV_GUARDPASSAGE_STATUS]	= AIV_GPS_PUNISH;	
 	
 	B_FullStop			(self);	
-	AI_StopProcessInfos	(self);					//dem Spieler sofort wieder die Kontrolle zurückgeben
+	AI_StopProcessInfos	(self);					//dem Spieler sofort wieder die Kontrolle zurÃ¼ckgeben
 	B_IntruderAlert		(self,	other);
 	B_SetAttackReason	(self,	AIV_AR_INTRUDER);
 	Npc_SetTarget		(self,	hero);
@@ -147,7 +147,7 @@ FUNC int  Grd_213_Torwache_WELCOME_Condition()
 };
 func void  Grd_213_Torwache_WELCOME_Info()
 {
-	AI_Output (self, other,"Grd_213_Torwache_WELCOME_Info_07_01"); //Ho sentito dire che ora sei uno di noi. Non male, per uno che è qui da così poco tempo.
+	AI_Output (self, other,"Grd_213_Torwache_WELCOME_Info_07_01"); //Ho sentito dire che ora sei uno di noi. Non male, per uno che Ã¨ qui da cosÃ¬ poco tempo.
 };
 
 // ************************************************************
@@ -185,7 +185,7 @@ INSTANCE Info_Grd_213_Abblitzen (C_INFO)
 	condition	= Info_Grd_213_Abblitzen_Condition;
 	information	= Info_Grd_213_Abblitzen_Info;
 	permanent	= 1;
-	description	= "Dovresti svagarti di più! Per esempio, permettendo a qualcuno di entrare...";
+	description	= "Dovresti svagarti di piÃ¹! Per esempio, permettendo a qualcuno di entrare...";
 };                       
 
 FUNC INT Info_Grd_213_Abblitzen_Condition()
@@ -198,8 +198,8 @@ FUNC INT Info_Grd_213_Abblitzen_Condition()
 
 FUNC VOID Info_Grd_213_Abblitzen_Info()
 {
-	AI_Output (other, self,"Info_Grd_213_Abblitzen_15_00"); //Sai, dovresti svagarti un po' di più. Per esempio permettendo a qualcuno di entrare nel castello!
-	AI_Output (self, other,"Info_Grd_213_Abblitzen_07_01"); //Svago? Non è una cattiva idea... Erano secoli che non picchiavo uno come te!
+	AI_Output (other, self,"Info_Grd_213_Abblitzen_15_00"); //Sai, dovresti svagarti un po' di piÃ¹. Per esempio permettendo a qualcuno di entrare nel castello!
+	AI_Output (self, other,"Info_Grd_213_Abblitzen_07_01"); //Svago? Non Ã¨ una cattiva idea... Erano secoli che non picchiavo uno come te!
 	AI_StopProcessInfos	(self);
 };
 

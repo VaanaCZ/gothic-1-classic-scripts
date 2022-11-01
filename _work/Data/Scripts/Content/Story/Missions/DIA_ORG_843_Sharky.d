@@ -47,9 +47,9 @@ FUNC int  Org_843_Sharky_Fisk_Condition()
 FUNC void  Org_843_Sharky_Fisk_Info()
 {
 	AI_Output (other, self,"Org_843_Sharky_Fisk_Info_15_00"); //Fisk di Campo Vecchio sta cercando un nuovo socio in affari.
-	AI_Output (self, other,"Org_843_Sharky_Fisk_Info_10_01"); //E perché lo dici a me?
+	AI_Output (self, other,"Org_843_Sharky_Fisk_Info_10_01"); //E perchÃ© lo dici a me?
 	AI_Output (other, self,"Org_843_Sharky_Fisk_Info_15_02"); //Pensavo t'interessasse guadagnare un po' di metallo.
-	AI_Output (self, other,"Org_843_Sharky_Fisk_Info_10_03"); //Perché no... dì a Fisk che può contare su di me, nei prossimi giorni.
+	AI_Output (self, other,"Org_843_Sharky_Fisk_Info_10_03"); //PerchÃ© no... dÃ¬ a Fisk che puÃ² contare su di me, nei prossimi giorni.
 };  
 
 
@@ -82,7 +82,7 @@ FUNC void  Org_843_Sharky_TRADE_Info()
 };  
 
 /*------------------------------------------------------------------------
-							TRADE BEGRÜßUNG 								
+							TRADE BEGRÃœÃŸUNG 								
 ------------------------------------------------------------------------*/
 
 instance  Org_843_Sharky_GREET (C_INFO) 

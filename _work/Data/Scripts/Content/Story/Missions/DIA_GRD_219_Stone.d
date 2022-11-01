@@ -71,7 +71,7 @@ func void  DIA_Stone_NotSelling_Info()
 
 
 //-----------------------------------------------------
-// RÜSTUNG UND SCHWERT ABHOLEN WENN DER SPIELER GARDIST IST
+// RÃœSTUNG UND SCHWERT ABHOLEN WENN DER SPIELER GARDIST IST
 //-----------------------------------------------------
 instance  GRD_219_Stone_GETSTUFF (C_INFO)
 {
@@ -94,7 +94,7 @@ FUNC int  GRD_219_Stone_GETSTUFF_Condition()
 FUNC void  GRD_219_Stone_GETSTUFF_Info()
 {
 	AI_Output (other, self,"GRD_219_Stone_GETSTUFF_Info_15_01"); //Ho bisogno di un'armatura.
-	AI_Output (self, other,"GRD_219_Stone_GETSTUFF_Info_06_02"); //Così Thorus ti ha accettato, eh? Congratulazioni!
+	AI_Output (self, other,"GRD_219_Stone_GETSTUFF_Info_06_02"); //CosÃ¬ Thorus ti ha accettato, eh? Congratulazioni!
 	AI_Output (self, other,"GRD_219_Stone_GETSTUFF_Info_06_03"); //Eccone un altro desideroso di perdere la testa per Gomez. Oh, beh! Cavoli tuoi!
 	AI_Output (self, other,"GRD_219_Stone_GETSTUFF_Info_06_04"); //Ecco, prendi spada e armatura. Benvenuto fra le guardie.
 
@@ -111,7 +111,7 @@ FUNC void  GRD_219_Stone_GETSTUFF_Info()
 };  
 
 //-----------------------------------------------------
-// BESSERE RÜSTUNG
+// BESSERE RÃœSTUNG
 //-----------------------------------------------------
 instance  GRD_219_Stone_BETTERARMOR (C_INFO)
 {
@@ -169,7 +169,7 @@ func void GRD_219_Stone_BETTERARMOR_M ()
 func void GRD_219_Stone_BETTERARMOR_H ()
 {
 	AI_Output				(hero, self,"GRD_219_Stone_BETTERARMOR_Info_H_15_01"); //Voglio un'armatura pesante.
-	AI_Output				(self, hero,"GRD_219_Stone_BETTERARMOR_Info_H_06_02"); //Solo le guardie di classe superiore possono indossarne una. Temo che passerà molto tempo, prima che tu possa farlo.
+	AI_Output				(self, hero,"GRD_219_Stone_BETTERARMOR_Info_H_06_02"); //Solo le guardie di classe superiore possono indossarne una. Temo che passerÃ  molto tempo, prima che tu possa farlo.
 	Info_ClearChoices		(GRD_219_Stone_BETTERARMOR);
 };
 
@@ -244,7 +244,7 @@ func VOID DIA_GRD_219_Stone_Exit_Info()
 //#####################################################################
 
 //---------------------------------------------------------------------
-//	Begrüßung
+//	BegrÃ¼ÃŸung
 //---------------------------------------------------------------------
 instance DIA_GRD_219_Stone (C_INFO)
 {
@@ -296,11 +296,11 @@ func void DIA_GRD_219_Stone1_Info()
 	AI_Output (other, self, "DIA_GRD_219_Stone1_15_03"); //Me le ha date.
 	AI_Output (self, other, "DIA_GRD_219_Stone1_06_04"); //Vuoi farmi credere che TU sei il tizio che ha spazzato via Gomez?
 	AI_Output (other, self, "DIA_GRD_219_Stone1_15_05"); //In carne e ossa.
-	AI_Output (self, other, "DIA_GRD_219_Stone1_06_06"); //Ragazzo, non ti avrei dato un soldo! Sono contento che il vecchio tagliagole abbia finalmente avuto ciò che si meritava.
-	AI_Output (self, other, "DIA_GRD_219_Stone1_06_07"); //Ma perché mi liberi?
+	AI_Output (self, other, "DIA_GRD_219_Stone1_06_06"); //Ragazzo, non ti avrei dato un soldo! Sono contento che il vecchio tagliagole abbia finalmente avuto ciÃ² che si meritava.
+	AI_Output (self, other, "DIA_GRD_219_Stone1_06_07"); //Ma perchÃ© mi liberi?
 	AI_Output (other, self, "DIA_GRD_219_Stone1_15_08"); //Ho sentito dire che eri stato rinchiuso e ho pensato che avevo l'occasione per mettere fuori gioco Gomez e liberarti.
 	AI_Output (self, other, "DIA_GRD_219_Stone1_06_09"); //Beh, grazie...
-	AI_Output (self, other, "DIA_GRD_219_Stone1_06_10"); //...ti devo molto. Vieni a trovarmi alla fucina. Lì potremo parlare.
+	AI_Output (self, other, "DIA_GRD_219_Stone1_06_10"); //...ti devo molto. Vieni a trovarmi alla fucina. LÃ¬ potremo parlare.
 
 	Npc_ExchangeRoutine(self, "OTNEW");
 };
@@ -328,7 +328,7 @@ FUNC int DIA_GRD_219_Stone3_Condition()
 func void DIA_GRD_219_Stone3_Info()
 {
 		AI_Output (self, other, "DIA_GRD_219_Stone3_06_01"); //Eccoti! Ti devo un favore. Grazie per avermi liberato da quella trappola per topi!
-		AI_Output (self, other, "DIA_GRD_219_Stone3_06_02"); //Stavo pensando: non ho molto da darti, quindi forgerò qualcosa apposta per te!
+		AI_Output (self, other, "DIA_GRD_219_Stone3_06_02"); //Stavo pensando: non ho molto da darti, quindi forgerÃ² qualcosa apposta per te!
 		AI_Output (self, other, "DIA_GRD_219_Stone3_06_03"); //Un anello o qualcosa del genere...
 };
 
@@ -343,7 +343,7 @@ instance DIA_GRD_219_Stone2 (C_INFO)
 	information		= DIA_GRD_219_Stone2_Info;
 	important		= 0;
 	permanent		= 0;
-	description 	= "Perché ti hanno rinchiuso nelle segrete?";
+	description 	= "PerchÃ© ti hanno rinchiuso nelle segrete?";
 };
 
 FUNC int DIA_GRD_219_Stone2_Condition()
@@ -356,9 +356,9 @@ FUNC int DIA_GRD_219_Stone2_Condition()
 
 func void DIA_GRD_219_Stone2_Info()
 {
-	AI_Output (other, self, "DIA_GRD_219_Stone2_15_01"); //Perché ti hanno rinchiuso nelle segrete?
-	AI_Output (self, other, "DIA_GRD_219_Stone2_06_02"); //È stato Gomez! Quel bastardo ha detto che ero in combutta con i Maghi del Fuoco. L'unico motivo per cui non mi ha ucciso è che sono il miglior fabbro di Campo Vecchio.
-	AI_Output (self, other, "DIA_GRD_219_Stone2_06_03"); //Così mi ha gettato in questa fossa per topi, permettendomi di uscirne solo quando gli serviva qualcosa.
+	AI_Output (other, self, "DIA_GRD_219_Stone2_15_01"); //PerchÃ© ti hanno rinchiuso nelle segrete?
+	AI_Output (self, other, "DIA_GRD_219_Stone2_06_02"); //Ãˆ stato Gomez! Quel bastardo ha detto che ero in combutta con i Maghi del Fuoco. L'unico motivo per cui non mi ha ucciso Ã¨ che sono il miglior fabbro di Campo Vecchio.
+	AI_Output (self, other, "DIA_GRD_219_Stone2_06_03"); //CosÃ¬ mi ha gettato in questa fossa per topi, permettendomi di uscirne solo quando gli serviva qualcosa.
 };
 
 
@@ -366,7 +366,7 @@ func void DIA_GRD_219_Stone2_Info()
 //---------------------------------------------------------------------
 //	Info Stone4
 //---------------------------------------------------------------------
-// Rüstung verbessern lassen
+// RÃ¼stung verbessern lassen
 instance DIA_GRD_219_Stone4 (C_INFO)
 {
 	npc				= GRD_219_Stone;
@@ -433,7 +433,7 @@ FUNC int DIA_GRD_219_Stone5_Condition()
 func void DIA_GRD_219_Stone5_Info()
 {
 		AI_Output (other, self, "DIA_GRD_219_Stone5_15_01"); //Avrei bisogno di un anello per aumentare la mia energia vitale.
-		AI_Output (self, other, "DIA_GRD_219_Stone5_06_02"); //Niente di più semplice. Aspetta un attimo.
+		AI_Output (self, other, "DIA_GRD_219_Stone5_06_02"); //Niente di piÃ¹ semplice. Aspetta un attimo.
 	
 		B_StartUseMob	( self,	"BSFIRE" );	
 		AI_Wait			( self,	1);
@@ -445,7 +445,7 @@ func void DIA_GRD_219_Stone5_Info()
 		AI_Wait			( self,	1);
 		AI_GotoNpc 		( self, hero );
 		
-		AI_Output (self, other, "DIA_GRD_219_Stone5_06_03"); //Questo anello aumenterà la tua energia vitale. Penso che possa bastare per ripagare il mio debito.
+		AI_Output (self, other, "DIA_GRD_219_Stone5_06_03"); //Questo anello aumenterÃ  la tua energia vitale. Penso che possa bastare per ripagare il mio debito.
 
 		CreateInvItem	  ( self, Ring_des_Lebens2 );	
 		B_GiveInvItems	  ( self, other, Ring_des_Lebens2, 1);	
@@ -475,7 +475,7 @@ FUNC int DIA_GRD_219_Stone6_Condition()
 func void DIA_GRD_219_Stone6_Info()
 {
 		AI_Output (other, self, "DIA_GRD_219_Stone6_15_01"); //Vorrei che forgiassi un anello di protezione per me.
-		AI_Output (self, other, "DIA_GRD_219_Stone6_06_02"); //Un anello di protezione? Va bene, mi metto subito al lavoro. Ci metterò un attimo. 
+		AI_Output (self, other, "DIA_GRD_219_Stone6_06_02"); //Un anello di protezione? Va bene, mi metto subito al lavoro. Ci metterÃ² un attimo. 
 		
 		B_StartUseMob	( self,	"BSFIRE" );	
 		AI_Wait			( self,	1);
@@ -516,7 +516,7 @@ FUNC int DIA_GRD_219_Stone7_Condition()
 func void DIA_GRD_219_Stone7_Info()
 {
 		AI_Output (other, self, "DIA_GRD_219_Stone7_15_01"); //Forgia qualcosa che aumenti i miei poteri magici.
-		AI_Output (self, other, "DIA_GRD_219_Stone7_06_02"); //...qualcosa che aumenti i poteri magici, hai detto?... Un amuleto! Sì, forgerò un amuleto per te! Non ci vorrà molto.
+		AI_Output (self, other, "DIA_GRD_219_Stone7_06_02"); //...qualcosa che aumenti i poteri magici, hai detto?... Un amuleto! SÃ¬, forgerÃ² un amuleto per te! Non ci vorrÃ  molto.
 	
 		B_StartUseMob	( self,	"BSFIRE" );	
 		AI_Wait			( self,	1);

@@ -124,8 +124,8 @@ INSTANCE MENUITEM_VID_RESOLUTION_CHOICE(C_MENU_ITEM_DEF)
 instance MENUITEM_VID_BRIGHTNESS(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	text[0]		= "Luminosit‡";
-	text[1]		= "Luminosit‡"; // Kommentar
+	text[0]		= "Luminosit√†";
+	text[1]		= "Luminosit√†"; // Kommentar
 	
 	// Position und Dimension	
 	posx		=	1000;	posy		=	MENU_START_Y + MENU_DY*3;

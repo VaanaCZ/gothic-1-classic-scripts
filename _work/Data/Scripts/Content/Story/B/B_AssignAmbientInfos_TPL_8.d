@@ -53,7 +53,7 @@ FUNC INT Info_Tpl_8_EinerVonEuchWerden_Condition()
 FUNC VOID Info_Tpl_8_EinerVonEuchWerden_Info()
 {
 	AI_Output(other,self,"Info_Tpl_8_EinerVonEuchWerden_15_00"); //Avete bisogno di un altro tipo in gamba?
-	AI_Output(self,other,"Info_Tpl_8_EinerVonEuchWerden_08_01"); //Siamo sempre in cerca di uomini valorosi, ma dovrai lavorare sodo per migliorarti. Solo i novizi più esperti possono diventare templari.
+	AI_Output(self,other,"Info_Tpl_8_EinerVonEuchWerden_08_01"); //Siamo sempre in cerca di uomini valorosi, ma dovrai lavorare sodo per migliorarti. Solo i novizi piÃ¹ esperti possono diventare templari.
 	AI_Output(self,other,"Info_Tpl_8_EinerVonEuchWerden_08_02"); //Si tratta del massimo onore per qualsiasi seguace delle Fratellanza del Dormiente.
 };
 
@@ -78,9 +78,9 @@ FUNC INT Info_Tpl_8_WichtigePersonen_Condition()
 FUNC VOID Info_Tpl_8_WichtigePersonen_Info()
 {
 	AI_Output(other,self,"Info_Tpl_8_WichtigePersonen_15_00"); //Chi comanda qui?
-	AI_Output(self,other,"Info_Tpl_8_WichtigePersonen_08_01"); //Eseguiamo gli ordini dei guru, è il nostro compito.
+	AI_Output(self,other,"Info_Tpl_8_WichtigePersonen_08_01"); //Eseguiamo gli ordini dei guru, Ã¨ il nostro compito.
 	AI_Output(other,self,"Info_Tpl_8_WichtigePersonen_15_02"); //Chi sono questi guru?
-	AI_Output(self,other,"Info_Tpl_8_WichtigePersonen_08_03"); //Y'Berion l'Illuminato è il loro capo. I suoi assistenti sono Cor Kalom, Cor Angar e pochi altri.
+	AI_Output(self,other,"Info_Tpl_8_WichtigePersonen_08_03"); //Y'Berion l'Illuminato Ã¨ il loro capo. I suoi assistenti sono Cor Kalom, Cor Angar e pochi altri.
 	var C_NPC YBerion;		YBerion	= Hlp_GetNpc(Gur_1200_Yberion);
 	var C_NPC CorKalom;		CorKalom= Hlp_GetNpc(Gur_1201_CorKalom);
 	var C_NPC CorAngar;		CorAngar= Hlp_GetNpc(Gur_1202_CorAngar);
@@ -114,7 +114,7 @@ FUNC VOID Info_Tpl_8_DasLager_Info()
 {
 	AI_Output(other,self,"Info_Tpl_8_DasLager_15_00"); //Cosa mi dici di questo campo?
 	AI_Output(self,other,"Info_Tpl_8_DasLager_08_01"); //Siccome sei appena arrivato puoi andare dove vuoi, a parte nel tempio del Dormiente.
-	AI_Output(self,other,"Info_Tpl_8_DasLager_08_02"); //Quindi vai solo dove ti è permesso e non disturbare la meditazione dei nostri padroni.
+	AI_Output(self,other,"Info_Tpl_8_DasLager_08_02"); //Quindi vai solo dove ti Ã¨ permesso e non disturbare la meditazione dei nostri padroni.
 };
 
 // *************************************************************************

@@ -46,7 +46,7 @@ func VOID  Grd_260_Drake_Gefahr_Info()
 	AI_Output			(self,other,"Grd_260_Drake_Gefahr_Info_11_03");//Abbiamo dovuto abbandonare alcune cave, a causa loro. Hanno anche divorato alcuni minatori.
 	AI_Output			(other,self,"Grd_260_Drake_Gefahr_Info_15_04");//Parlami dei pidocchi di miniera.
 	AI_Output			(self,other,"Grd_260_Drake_Gefahr_Info_11_05");//Ho la gola talmente secca...
-	AI_Output			(self,other,"Grd_260_Drake_Gefahr_Info_11_06");//Portami una birra e ti dirÚ qualcosa sui pidocchi di miniera.
+	AI_Output			(self,other,"Grd_260_Drake_Gefahr_Info_11_06");//Portami una birra e ti dir√≤ qualcosa sui pidocchi di miniera.
 
 
 };
@@ -85,7 +85,7 @@ FUNC void Grd_260_Drake_Crawler_Okay_Info()
 
 		AI_Output			(self,hero,"Grd_260_Drake_Crawler_Okay_11_02");//Grazie. Allora: i pidocchi di miniera vivono in branchi numerosi, soprattutto nelle cave laterali.
 		AI_Output			(self,hero,"Grd_260_Drake_Crawler_Okay_11_03");//Finora, non ci hanno mai attaccati qui nel condotto principale. Se ne incontri uno, corri!
-		AI_Output			(self,hero,"Grd_260_Drake_Crawler_Okay_11_04");//Oppure mettiti con la schiena contro la parete. In questo modo potresti avere una possibilit‡ di farcela.
+		AI_Output			(self,hero,"Grd_260_Drake_Crawler_Okay_11_04");//Oppure mettiti con la schiena contro la parete. In questo modo potresti avere una possibilit√† di farcela.
 
 		//Grd_260_Drake_Crawler_Okay.permanent = 0;
 	}
@@ -115,8 +115,8 @@ func void Grd_260_Drake_Mine_Info ()
 {
 	AI_Output			(other,self,"Grd_260_Drake_Mine_Info_15_01");//Puoi dirmi qualcosa sulla miniera?
 	AI_Output			(self,other,"Grd_260_Drake_Mine_Info_11_02");//Allora... Noi ci troviamo nel condotto principale. Puoi raggiungere il fondo attraverso un sistema di passerelle.
-	AI_Output			(self,other,"Grd_260_Drake_Mine_Info_11_03");//Ovunque si estrae il metallo. Stai attento: Ë pieno di pidocchi di miniera!
-	AI_Output			(self,other,"Grd_260_Drake_Mine_Info_11_04");//In fondo c'Ë la fucina, dove fondiamo direttamente parte del metallo che estraiamo.
+	AI_Output			(self,other,"Grd_260_Drake_Mine_Info_11_03");//Ovunque si estrae il metallo. Stai attento: √® pieno di pidocchi di miniera!
+	AI_Output			(self,other,"Grd_260_Drake_Mine_Info_11_04");//In fondo c'√® la fucina, dove fondiamo direttamente parte del metallo che estraiamo.
 
 
 };
@@ -141,8 +141,8 @@ FUNC int  Grd_260_Drake_Mine_Mehr_Condition()
 func void  Grd_260_Drake_Mine_Mehr_Info	()
 {
 	AI_Output			(other,self,"Grd_260_Drake_Mine_Mehr_Info_15_01");//Parlamene ancora!
-	AI_Output			(self,other,"Grd_260_Drake_Mine_Mehr_Info_11_02");//Se vuoi saperne di pi˘, vai da Viper. » lui il fonditore.
-	AI_Output			(self,other,"Grd_260_Drake_Mine_Mehr_Info_11_03");//Oppure vai da Ian. Lui Ë il capo e organizza tutto ciÚ che ha a che fare con la miniera.
+	AI_Output			(self,other,"Grd_260_Drake_Mine_Mehr_Info_11_02");//Se vuoi saperne di pi√π, vai da Viper. √à lui il fonditore.
+	AI_Output			(self,other,"Grd_260_Drake_Mine_Mehr_Info_11_03");//Oppure vai da Ian. Lui √® il capo e organizza tutto ci√≤ che ha a che fare con la miniera.
 	
 };
 
@@ -170,7 +170,7 @@ FUNC void  Grd_260_Drake_Ian_Info()
 	AI_Output			(other,self,"Grd_260_Drake_Ian_Info_15_01");//Dove si trova Ian?
 	AI_Output			(self,other,"Grd_260_Drake_Ian_Info_11_02");//Nel centro del condotto principale, vicino al magazzino.
 	AI_Output			(self,other,"Grd_260_Drake_Ian_Info_11_03");//Ah, un'ultima cosa: conosci Thorus, vero? Beh, dimenticalo!
-	AI_Output			(self,other,"Grd_260_Drake_Ian_Info_11_04");//Qui comanda una sola persona ed Ë Ian. » lui il capo.
+	AI_Output			(self,other,"Grd_260_Drake_Ian_Info_11_04");//Qui comanda una sola persona ed √® Ian. √à lui il capo.
 	AI_Output			(self,other,"Grd_260_Drake_Ian_Info_11_05");//Se ti metti nei guai con lui, sei nei guai con tutti noi. Chiaro?
 };	 
 
@@ -201,6 +201,6 @@ func void  Grd_260_Drake_GARDEAUFNAHME_Info()
 	AI_Output (self, other,"Grd_260_Drake_GARDEAUFNAHME_Info_11_02"); //Vai a Campo Vecchio e parlane con Thorus!
 
 	Log_CreateTopic (GE_BecomeGuard,LOG_NOTE);
-	B_LogEntry (GE_BecomeGuard,"Non appena avrÚ riportato le uova, dovrÚ parlare con Thorus. Forse mi permetter‡ di unirmi alle guardie.");
+	B_LogEntry (GE_BecomeGuard,"Non appena avr√≤ riportato le uova, dovr√≤ parlare con Thorus. Forse mi permetter√† di unirmi alle guardie.");
 };
 

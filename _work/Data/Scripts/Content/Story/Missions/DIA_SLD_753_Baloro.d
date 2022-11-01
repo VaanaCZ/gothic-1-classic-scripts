@@ -1,5 +1,5 @@
 //****************************************************
-//	Typ der den SC an der Nase herum führt!
+//	Typ der den SC an der Nase herum fÃ¼hrt!
 //****************************************************
 
 //Variablen:
@@ -53,7 +53,7 @@ FUNC VOID DIA_SLD_753_Baloro_Wasmeinstdu_Info()
 {
 	AI_Output (other, self,"DIA_SLD_753_Baloro_Wasmeinstdu_Info_15_01"); //Salve!
 	AI_Output (self, other,"DIA_SLD_753_Baloro_Wasmeinstdu_Info_08_02"); //Cammini come se stessi cercando qualcosa!
-	AI_Output (other, self,"DIA_SLD_753_Baloro_Wasmeinstdu_Info_15_03"); //Davvero? Mmh... Forse hai ragione. Perché?
+	AI_Output (other, self,"DIA_SLD_753_Baloro_Wasmeinstdu_Info_15_03"); //Davvero? Mmh... Forse hai ragione. PerchÃ©?
 	AI_Output (self, other,"DIA_SLD_753_Baloro_Wasmeinstdu_Info_08_04"); //Ottimo! Chiedi a me, forse posso aiutarti!
 
 
@@ -85,9 +85,9 @@ FUNC VOID DIA_SLD_753_Baloro_Worumgehts_Info()
 	AI_Output (other, self,"DIA_SLD_753_Baloro_Worumgehts_Info_15_01"); //Cosa hai in mente?
 	AI_Output (self, other,"DIA_SLD_753_Baloro_Worumgehts_Info_08_01"); //Cosa ti serve?
 	AI_Output (other, self,"DIA_SLD_753_Baloro_Worumgehts_Info_15_02"); //Che ne dici di una buona spada, un armatura spessa o l'accesso alla miniera?
-	AI_Output (self, other,"DIA_SLD_753_Baloro_Worumgehts_Info_08_02"); //Questo è niente!
-	AI_Output (self, other,"DIA_SLD_753_Baloro_Worumgehts_Info_08_03"); //Posso darti una cosa che ti farà schizzare gli occhi fuori dalle orbite! Una spada che ti permetterà di sconfiggere qualsiasi nemico!
-	AI_Output (self, other,"DIA_SLD_753_Baloro_Worumgehts_Info_08_04"); //Devi solo farmi un piccolo favore e sarà tua! Che ne dici?
+	AI_Output (self, other,"DIA_SLD_753_Baloro_Worumgehts_Info_08_02"); //Questo Ã¨ niente!
+	AI_Output (self, other,"DIA_SLD_753_Baloro_Worumgehts_Info_08_03"); //Posso darti una cosa che ti farÃ  schizzare gli occhi fuori dalle orbite! Una spada che ti permetterÃ  di sconfiggere qualsiasi nemico!
+	AI_Output (self, other,"DIA_SLD_753_Baloro_Worumgehts_Info_08_04"); //Devi solo farmi un piccolo favore e sarÃ  tua! Che ne dici?
 
 	Info_ClearChoices	(DIA_SLD_753_Baloro_Worumgehts); // alte choices loeschen
 	Info_AddChoice		(DIA_SLD_753_Baloro_Worumgehts,"Devo averlo.",DIA_SLD_753_Baloro_Worumgehts_ja);
@@ -98,7 +98,7 @@ FUNC VOID DIA_SLD_753_Baloro_Worumgehts_Info()
 FUNC VOID DIA_SLD_753_Baloro_Worumgehts_ja()
 {
 	AI_Output (other, self,"DIA_SLD_753_Baloro_Worumgehts_ja_15_05"); //Cosa dovrei fare?
-	AI_Output (self, other,"DIA_SLD_753_Baloro_Worumgehts_ja_08_03"); //È molto semplice.
+	AI_Output (self, other,"DIA_SLD_753_Baloro_Worumgehts_ja_08_03"); //Ãˆ molto semplice.
 	AI_Output (self, other,"DIA_SLD_753_Baloro_Worumgehts_ja_08_04"); //Portami 5 mele, 2 fiaschi di grappa di riso, 5 fiaschi di birra, 3 pagnotte, 2 pezzi di formaggio e 2 grappoli d'uva!
 	AI_Output (self, other,"DIA_SLD_753_Baloro_Worumgehts_ja_08_05"); //Credimi, non te ne pentirai. Come ho detto, potrai sconfiggere qualunque nemico!
 	
@@ -109,7 +109,7 @@ FUNC VOID DIA_SLD_753_Baloro_Worumgehts_ja()
 	
 FUNC VOID DIA_SLD_753_Baloro_Worumgehts_jaklar()
 {
-	AI_Output (other, self,"DIA_SLD_753_Baloro_Worumgehts_ja_15_06"); //D'accordo, vedrò cosa posso fare!
+	AI_Output (other, self,"DIA_SLD_753_Baloro_Worumgehts_ja_15_06"); //D'accordo, vedrÃ² cosa posso fare!
 	AI_Output (self, other,"DIA_SLD_753_Baloro_Worumgehts_ja_08_06"); //Molto bene, ma sbrigati!
 	AI_Output (self, other,"DIA_SLD_753_Baloro_Worumgehts_ja_08_07"); //Non dimenticare: 5 mele, 2 fiaschi di grappa di riso, 5 fiaschi di birra, 3 pagnotte, 2 pezzi di formaggio e 2 grappoli d'uva! Capito?
 	AI_Output (other, self,"DIA_SLD_753_Baloro_Worumgehts_ja_15_07"); //Certo!
@@ -132,7 +132,7 @@ FUNC VOID DIA_SLD_753_Baloro_Worumgehts_jaklar()
 
 
 
-// ********************** Ich hab´s noch nicht dabei *****************	
+// ********************** Ich habÂ´s noch nicht dabei *****************	
 
 
 instance DIA_SLD_753_Baloro_habsnichtdabei (C_INFO)
@@ -156,7 +156,7 @@ FUNC int DIA_SLD_753_Baloro_habsnichtdabei_Condition()
 
 FUNC VOID DIA_SLD_753_Baloro_habsnichtdabei_Info()
 {
-	AI_Output (other, self,"DIA_SLD_753_Baloro_habsnichtdabei_Info_15_01"); //Non ho ancora trovato la tua roba! Di che si trattava? Erano così tante cose!
+	AI_Output (other, self,"DIA_SLD_753_Baloro_habsnichtdabei_Info_15_01"); //Non ho ancora trovato la tua roba! Di che si trattava? Erano cosÃ¬ tante cose!
 	AI_Output (self, other,"DIA_SLD_753_Baloro_habsnichtdabei_Info_08_01"); //Va bene, te lo ripeto lentamente. Devi portarmi...
 	AI_Output (self, other,"DIA_SLD_753_Baloro_habsnichtdabei_Info_08_02"); //5 mele, 2 fiaschi di grappa di riso, 5 fiaschi di birra, 3 pagnotte, 2 pezzi di formaggio e 2 grappoli d'uva! Tutto chiaro, stavolta?
 	AI_Output (other, self,"DIA_SLD_753_Baloro_habsnichtdabei_Info_15_02"); //Certo! Faccio in un attimo!
@@ -165,7 +165,7 @@ FUNC VOID DIA_SLD_753_Baloro_habsnichtdabei_Info()
 };
 
 
-// ********************** Ich hab´s  dabei *****************	
+// ********************** Ich habÂ´s  dabei *****************	
 
 instance DIA_SLD_753_Baloro_habsdabei (C_INFO)
 {
@@ -201,7 +201,7 @@ FUNC VOID DIA_SLD_753_Baloro_habsdabei_Info()
 	
 	CreateInvItems(other, ItFoApple, 14);
 	
-	B_GiveInvItems(other, self, ItFoApple, 19); //Nötig für die Ausschrift "19 Itmes abgegeben", wird sofort angeglichen.
+	B_GiveInvItems(other, self, ItFoApple, 19); //NÃ¶tig fÃ¼r die Ausschrift "19 Itmes abgegeben", wird sofort angeglichen.
 	
 	Npc_RemoveInvItems ( other,ItFoBooze,2);
 	Npc_RemoveInvItems ( other,ItFoBeer,5);
@@ -222,8 +222,8 @@ FUNC VOID DIA_SLD_753_Baloro_habsdabei_Info()
 	AI_Output (other, self,"DIA_SLD_753_Baloro_habsdabei_Info_15_03"); //Ora dammi la spada!
 	AI_Output (self, other,"DIA_SLD_753_Baloro_habsdabei_Info_08_03"); //Scordatela!
 	AI_Output (other, self,"DIA_SLD_753_Baloro_habsdabei_Info_15_04"); //Cosa?
-	AI_Output (self, other,"DIA_SLD_753_Baloro_habsdabei_Info_08_04"); //Davvero pensavi che te l'avrei data per queste cose? Voglio dire: se sei così stupido da crederlo, non te le meriti!
-	AI_Output (self, other,"DIA_SLD_753_Baloro_habsdabei_Info_08_05"); //Sono stupito che tu sia ancora vivo! Se credi a tutto ciò che ti dicono, non sopravvivrai a lungo!
+	AI_Output (self, other,"DIA_SLD_753_Baloro_habsdabei_Info_08_04"); //Davvero pensavi che te l'avrei data per queste cose? Voglio dire: se sei cosÃ¬ stupido da crederlo, non te le meriti!
+	AI_Output (self, other,"DIA_SLD_753_Baloro_habsdabei_Info_08_05"); //Sono stupito che tu sia ancora vivo! Se credi a tutto ciÃ² che ti dicono, non sopravvivrai a lungo!
 	AI_Output (self, other,"DIA_SLD_753_Baloro_habsdabei_Info_08_06"); //Ma non importa! Ora abbiamo cibo a sufficienza per una festa! Grazie mille! Forse c'incontreremo di nuovo! He he he!
 	
 	SLD_753_Baloro_SC_besorgt_den_Kram = LOG_SUCCESS ;
@@ -272,7 +272,7 @@ FUNC VOID DIA_SLD_753_Baloro_letztes_Wort_Info()
 
 
 
-// **********************	EXIT\ Spieler will´s wissen	*****************	
+// **********************	EXIT\ Spieler willÂ´s wissen	*****************	
 
 instance DIA_SLD_753_Baloro_SC_wills_wissen (C_INFO)
 {
@@ -347,7 +347,7 @@ FUNC VOID DIA_SLD_753_Baloro_Exit_Info()
 				if ( (Npc_KnowsInfo(hero,DIA_SLD_753_Baloro_Wasmeinstdu))  &&   (SLD_753_Baloro_SC_choice == 0)	)  
 					{
 						AI_Output (other, self,"DIA_SLD_753_Baloro_Exit_Info_15_01"); //No, no! Lascia stare! Non m'interessa!
-						AI_Output (self, other,"DIA_SLD_753_Baloro_Exit_Info_08_02"); //Molto bene. Come desideri! Hai avuto una possibilità!
+						AI_Output (self, other,"DIA_SLD_753_Baloro_Exit_Info_08_02"); //Molto bene. Come desideri! Hai avuto una possibilitÃ !
 						
 						SLD_753_Baloro_SC_choice = 1 ;
 					}
@@ -388,7 +388,7 @@ FUNC VOID DIA_SLD_753_Baloro_Angebotdochannehmen_Info()
 
 	 	{
 			AI_Output (other, self,"DIA_SLD_753_Baloro_Angebotdochannehmen_Info_15_01"); //Ci ho ripensato e vorrei accettare la tua offerta.
-			AI_Output (self, other,"DIA_SLD_753_Baloro_Angebotdochannehmen_Info_08_01"); //Troppo tardi! Hai avuto una possibilità e l'hai sprecata!
+			AI_Output (self, other,"DIA_SLD_753_Baloro_Angebotdochannehmen_Info_08_01"); //Troppo tardi! Hai avuto una possibilitÃ  e l'hai sprecata!
 		
 			
 			AI_StopProcessInfos	(self);	

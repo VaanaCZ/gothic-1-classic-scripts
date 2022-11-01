@@ -76,12 +76,12 @@ func VOID DIA_Gravo_HelpHow_Info()
 {
 	AI_Output (other, self,"DIA_Gravo_HelpHow_15_00"); //Se mi trovassi nei guai, TU potresti aiutarmi? E come?
 	AI_Output (self, other,"DIA_Gravo_HelpHow_04_01"); //Facciamo finta che ti trovi nei guai con Thorus. Faresti meglio a evitare una situazione del genere, ma non si sa mai.
-	AI_Output (self, other,"DIA_Gravo_HelpHow_04_02"); //Thorus Ë molto ostinato. Se lo fai incazzare anche una sola volta, non ti rivolge pi˘ la parola. Questo non Ë bene.
+	AI_Output (self, other,"DIA_Gravo_HelpHow_04_02"); //Thorus √® molto ostinato. Se lo fai incazzare anche una sola volta, non ti rivolge pi√π la parola. Questo non √® bene.
 	AI_Output (self, other,"DIA_Gravo_HelpHow_04_03"); //Dato che sei un novellino, dipendi da lui. Allora vieni da me. Conosco un sacco di gente di cui Thorus si fida.
-	AI_Output (self, other,"DIA_Gravo_HelpHow_04_04"); //Loro metteranno una buona parola per te e Thorus torner‡ a essere tuo amico. Ovviamente, i ragazzi vogliono del metallo in cambio. Il tuo metallo.
+	AI_Output (self, other,"DIA_Gravo_HelpHow_04_04"); //Loro metteranno una buona parola per te e Thorus torner√† a essere tuo amico. Ovviamente, i ragazzi vogliono del metallo in cambio. Il tuo metallo.
 	AI_Output (self, other,"DIA_Gravo_HelpHow_04_05"); //Io faccio in modo che il tuo metallo arrivi alle persone giuste...
 
-	B_LogEntry(GE_TraderOC,"Gravo il minatore offre un particolare tipo di servizio: se mi metto nei guai con la gente importante del campo, posso pagarlo affinchÈ sistemi le cose.");
+	B_LogEntry(GE_TraderOC,"Gravo il minatore offre un particolare tipo di servizio: se mi metto nei guai con la gente importante del campo, posso pagarlo affinch√© sistemi le cose.");
 };
 
 // **************************************************
@@ -94,7 +94,7 @@ func void B_Gravo_HelpAttitude(var C_NPC prob)
 	if (Npc_GetPermAttitude(prob, other)==ATT_ANGRY)
 	{
 		AI_Output (self, other,"B_Gravo_HelpAttitude_ANGRY_04_00"); //Esatto, sei sulla sua lista nera.
-		AI_Output (self, other,"B_Gravo_HelpAttitude_ANGRY_04_01"); //Conosco qualcuno che puÚ parlargli. Dammi 10 pezzi di metallo e il problema sar‡ risolto.
+		AI_Output (self, other,"B_Gravo_HelpAttitude_ANGRY_04_01"); //Conosco qualcuno che pu√≤ parlargli. Dammi 10 pezzi di metallo e il problema sar√† risolto.
 		if (Npc_HasItems(other,itminugget)>=100)
 		{
 			AI_Output (self, other,"B_Gravo_HelpAttitude_ANGRY_04_02"); //Vediamo quanto metallo hai... Ah! Dovrebbe bastare. Puoi considerare sistemata la questione.
@@ -111,12 +111,12 @@ func void B_Gravo_HelpAttitude(var C_NPC prob)
 	}
 	else if (Npc_GetPermAttitude(prob, other)==ATT_HOSTILE)
 	{
-		AI_Output (self, other,"B_Gravo_HelpAttitude_HOSTILE_04_00"); //Questo lo chiami un problema? » molto peggio, amico! Credo che lui voglia farti a pezzettini!
-		AI_Output (self, other,"B_Gravo_HelpAttitude_HOSTILE_04_01"); //Non riuscirÚ a convincere qualcuno a calmarlo per meno di 500 pezzi di metallo.
+		AI_Output (self, other,"B_Gravo_HelpAttitude_HOSTILE_04_00"); //Questo lo chiami un problema? √à molto peggio, amico! Credo che lui voglia farti a pezzettini!
+		AI_Output (self, other,"B_Gravo_HelpAttitude_HOSTILE_04_01"); //Non riuscir√≤ a convincere qualcuno a calmarlo per meno di 500 pezzi di metallo.
 		if (Npc_HasItems(other,itminugget)>=500)
 		{
-			AI_Output (self, other,"B_Gravo_HelpAttitude_HOSTILE_04_02"); //Vediamo cosa hai qui... Sei ricco, ragazzo. PrenderÚ i 500 pezzi e sistemerÚ la faccenda.
-			AI_Output (self, other,"B_Gravo_HelpAttitude_HOSTILE_04_03"); //E ricorda. Non dovr‡ mai sapere che sono stato io a mettere a posto le cose, quindi non parlarne con nessuno. Capito?
+			AI_Output (self, other,"B_Gravo_HelpAttitude_HOSTILE_04_02"); //Vediamo cosa hai qui... Sei ricco, ragazzo. Prender√≤ i 500 pezzi e sistemer√≤ la faccenda.
+			AI_Output (self, other,"B_Gravo_HelpAttitude_HOSTILE_04_03"); //E ricorda. Non dovr√† mai sapere che sono stato io a mettere a posto le cose, quindi non parlarne con nessuno. Capito?
 			B_GiveInvItems (hero, self, itminugget, 500);
 			Npc_SetPermAttitude(prob,ATT_NEUTRAL);
 		}
@@ -155,7 +155,7 @@ FUNC INT DIA_Gravo_HelpAngryNow_Condition()
 func VOID DIA_Gravo_HelpAngryNow_Info()
 {
 	AI_Output (other, self,"DIA_Gravo_HelpAngryNow_15_00"); //Puoi aiutarmi? Credo di avere un problema.
-	AI_Output (self, other,"DIA_Gravo_HelpAngryNow_04_01"); //Lo penso anch'io. Ti avverto: il mio aiuto ti coster‡ fra i 100 e i 500 pezzi di metallo.
+	AI_Output (self, other,"DIA_Gravo_HelpAngryNow_04_01"); //Lo penso anch'io. Ti avverto: il mio aiuto ti coster√† fra i 100 e i 500 pezzi di metallo.
 	
 	Info_ClearChoices(DIA_Gravo_HelpAngryNow );
 	Info_AddChoice	 (DIA_Gravo_HelpAngryNow, DIALOG_BACK			,DIA_Gravo_HelpAngryNow_BACK);
@@ -222,9 +222,9 @@ func VOID DIA_Gravo_Influence_Info()
 {
 	AI_Output (other, self,"DIA_Gravo_Influence_15_00"); //Puoi dirmi quali sono le Ombre importanti?
 	AI_Output (self, other,"DIA_Gravo_Influence_04_01"); //Vuoi fare colpo sulla gente giusta, vero?
-	AI_Output (self, other,"DIA_Gravo_Influence_04_02"); //Diego Ë l'Ombra pi˘ potente. I suoi aiutanti sono Fingers, Whistler e Sly.
+	AI_Output (self, other,"DIA_Gravo_Influence_04_02"); //Diego √® l'Ombra pi√π potente. I suoi aiutanti sono Fingers, Whistler e Sly.
 	AI_Output (self, other,"DIA_Gravo_Influence_04_03"); //Dexter e Fisk vendono la propria merce alla piazza del mercato. Hanno molti clienti, anche fra le guardie, e questo li rende molto influenti.
-	AI_Output (self, other,"DIA_Gravo_Influence_04_04"); //Poi c'Ë Scatty. Gestisce l'arena e decide chi far combattere. Molta gente gli deve del metallo, quindi anche lui Ë importante.
+	AI_Output (self, other,"DIA_Gravo_Influence_04_04"); //Poi c'√® Scatty. Gestisce l'arena e decide chi far combattere. Molta gente gli deve del metallo, quindi anche lui √® importante.
 	
 	Log_CreateTopic (GE_TraderOC, LOG_NOTE);
 	B_LogEntry (GE_TraderOC,"Dexter e Fisk commerciano in molti tipi di merce, alla piazza del mercato.");

@@ -117,7 +117,7 @@ func void DIA_SLD_752_OKYL_INMINE_INFO()
 	AI_Output (other, self,"DIA_SLD_752_OKYL_INMINE_INFO_15_01"); //Volevo solo dare un'occhiata alla miniera.
 	AI_Output (self, other,"DIA_SLD_752_OKYL_INMINE_INFO_11_02");//Oh, quindi volevi solo fare quattro passi all'interno...
 	AI_Output (self, other,"DIA_SLD_752_OKYL_INMINE_INFO_11_03");//Non penso tu abbia idea di come vanno le cose, qui. Nessuno mette piede nella miniera senza il mio permesso.
-	AI_Output (self, other,"DIA_SLD_752_OKYL_INMINE_INFO_11_04");//Ricorda. Chiunque entri nella miniera o nella portineria senza la mia autorizzazione è un uomo morto!
+	AI_Output (self, other,"DIA_SLD_752_OKYL_INMINE_INFO_11_04");//Ricorda. Chiunque entri nella miniera o nella portineria senza la mia autorizzazione Ã¨ un uomo morto!
 };
 
 //----------------------- Erlaubniss kriegen -------------------------
@@ -143,7 +143,7 @@ FUNC int DIA_SLD_752_OKYL_PERMIT_CONDITION()
 func void DIA_SLD_752_OKYL_PERMIT_INFO()
 {
 	AI_Output (other, self,"DIA_SLD_752_OKYL_PERMIT_INFO_15_01");//Posso entrare?
-	AI_Output (self, other,"DIA_SLD_752_OKYL_PERMIT_INFO_11_02");//Non ti conosco nemmeno! Perché dovrei permetterti d'entrare?
+	AI_Output (self, other,"DIA_SLD_752_OKYL_PERMIT_INFO_11_02");//Non ti conosco nemmeno! PerchÃ© dovrei permetterti d'entrare?
 	AI_Output (self, other,"DIA_SLD_752_OKYL_PERMIT_INFO_11_03");//Ora sparisci, ho altro cui pensare.
 	AI_StopProcessInfos (self);
 };

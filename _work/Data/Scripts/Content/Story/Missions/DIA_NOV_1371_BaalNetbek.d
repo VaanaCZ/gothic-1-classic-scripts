@@ -23,7 +23,7 @@ FUNC VOID  Nov_1371_BaalNetbek_Exit_Info()
 	AI_StopProcessInfos	( self );
 };
 /*------------------------------------------------------------------------
-							GÄRTNER								
+							GÃ„RTNER								
 ------------------------------------------------------------------------*/
 
 instance  Nov_1371_BaalNetbek_CRAZY (C_INFO)
@@ -48,11 +48,11 @@ FUNC void  Nov_1371_BaalNetbek_CRAZY_Info()
 	AI_Output (self, other,"Nov_1371_BaalNetbek_CRAZY_Info_03_02"); //Sono il guru della palude. I miei servi mi chiamano Baal Netbek.
 	AI_Output (other, self,"Nov_1371_BaalNetbek_CRAZY_Info_15_03"); //Servi? Non ne vedo!
 	AI_Output (self, other,"Nov_1371_BaalNetbek_CRAZY_Info_03_04"); //Sono ovunque. Gli alberi! Camminano, saltano, danzano...
-	AI_Output (other, self,"Nov_1371_BaalNetbek_CRAZY_Info_15_05"); //...oh, capisco. Beh, si è fatto tardi e dovrei...
+	AI_Output (other, self,"Nov_1371_BaalNetbek_CRAZY_Info_15_05"); //...oh, capisco. Beh, si Ã¨ fatto tardi e dovrei...
 	AI_Output (self, other,"Nov_1371_BaalNetbek_CRAZY_Info_03_06"); //Fermo! Aiutami a convertire questa palude in un grande prato fiorito!
 	AI_Output (other, self,"Nov_1371_BaalNetbek_CRAZY_Info_15_07"); //D'accordo! Inizia tu, torno fra un attimo.
 	AI_TurnAway (hero,self);
-	AI_Output (other, self,"Nov_1371_BaalNetbek_CRAZY_Info_15_08"); //Non mi farà andare da nessuna parte...
+	AI_Output (other, self,"Nov_1371_BaalNetbek_CRAZY_Info_15_08"); //Non mi farÃ  andare da nessuna parte...
 	AI_StopProcessInfos	( self );
 };  
 /*------------------------------------------------------------------------

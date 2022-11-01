@@ -22,7 +22,7 @@ FUNC INT Info_GRD_275_PreExit_Condition()
 
 FUNC VOID Info_GRD_275_PreExit_Info()
 {
-	AI_Output(self,other,"Info_GRD_275_PreExit_06_01"); //Vai a Campo Vecchio, c'è un piccone che ti aspetta! He he!
+	AI_Output(self,other,"Info_GRD_275_PreExit_06_01"); //Vai a Campo Vecchio, c'Ã¨ un piccone che ti aspetta! He he!
 	AI_StopProcessInfos(self);
 };
 
@@ -99,7 +99,7 @@ FUNC INT Info_GRD_275_Tips_Condition()
 FUNC VOID Info_GRD_275_Tips_Info()
 {
 	AI_Output (other,self,"Info_GRD_275_Tips_15_00"); //Avete qualche consiglio da darmi?
-	AI_Output (self,other,"Info_GRD_275_Tips_06_01"); //Sì. Non andare nella foresta da solo.
+	AI_Output (self,other,"Info_GRD_275_Tips_06_01"); //SÃ¬. Non andare nella foresta da solo.
 	AI_Output (self,other,"Info_GRD_275_Tips_06_02"); //A meno che tu non sia abbastanza forte da far fuori tutti gli animali.
 };
 
@@ -110,8 +110,8 @@ FUNC VOID Info_GRD_275_Tips_Info()
 
 
 /*
-	AI_Output(other,self,"Info_GRD_275_PreExit_15_02"); //Ich werde bestimmt nicht in den Minen für euch schuften.
-	AI_Output(self,other,"Info_GRD_275_PreExit_06_03"); //In dem Fall bist du wohl unser zukünftiger Kollege? Dann sei schön lieb zu uns, wir sind nämlich morgen auch noch da, hehe.
-	AI_Output(other,self,"Info_GRD_275_PreExit_15_04"); //Ich habe gehört es gibt auch noch andere Lager...
-	AI_Output(self,other,"Info_GRD_275_PreExit_06_05"); //So wie du rumläufst schaffst Du es nicht mal bis dahin zu kommen. Und jetzt weg mit dir.
+	AI_Output(other,self,"Info_GRD_275_PreExit_15_02"); //Ich werde bestimmt nicht in den Minen fÃ¼r euch schuften.
+	AI_Output(self,other,"Info_GRD_275_PreExit_06_03"); //In dem Fall bist du wohl unser zukÃ¼nftiger Kollege? Dann sei schÃ¶n lieb zu uns, wir sind nÃ¤mlich morgen auch noch da, hehe.
+	AI_Output(other,self,"Info_GRD_275_PreExit_15_04"); //Ich habe gehÃ¶rt es gibt auch noch andere Lager...
+	AI_Output(self,other,"Info_GRD_275_PreExit_06_05"); //So wie du rumlÃ¤ufst schaffst Du es nicht mal bis dahin zu kommen. Und jetzt weg mit dir.
 */

@@ -51,7 +51,7 @@ FUNC INT Info_Vlk_1_EinerVonEuchWerden_Condition()
 FUNC VOID Info_Vlk_1_EinerVonEuchWerden_Info()
 {
 	AI_Output(other,self,"Info_Vlk_1_EinerVonEuchWerden_15_00"); //Come posso unirmi a questo campo?
-	AI_Output(self,other,"Info_Vlk_1_EinerVonEuchWerden_01_01"); //È semplice. Afferra un piccone e vai in miniera. Metà del metallo che estrarrai sarà speso per la protezione, il resto ti basterà appena per sopravvivere.
+	AI_Output(self,other,"Info_Vlk_1_EinerVonEuchWerden_01_01"); //Ãˆ semplice. Afferra un piccone e vai in miniera. MetÃ  del metallo che estrarrai sarÃ  speso per la protezione, il resto ti basterÃ  appena per sopravvivere.
 	AI_Output(self,other,"Info_Vlk_1_EinerVonEuchWerden_01_02"); //I prezzi richiesti da Gomez per i suoi rifornimenti sono da strozzino! In ogni caso, sempre meglio che mangiare riso tutto il giorno come fanno a Campo Nuovo.
 };
 
@@ -89,7 +89,7 @@ INSTANCE Info_Vlk_1_DasLager(C_INFO)
 	condition	= Info_Vlk_1_DasLager_Condition;
 	information	= Info_Vlk_1_DasLager_Info;
 	permanent	= 1;
-	description = "Non c'è nulla di più interessante delle capanne?";
+	description = "Non c'Ã¨ nulla di piÃ¹ interessante delle capanne?";
 };                       
 
 FUNC INT Info_Vlk_1_DasLager_Condition()
@@ -99,9 +99,9 @@ FUNC INT Info_Vlk_1_DasLager_Condition()
 
 FUNC VOID Info_Vlk_1_DasLager_Info()
 {
-	AI_Output(other,self,"Info_Vlk_1_DasLager_15_00"); //Non c'è nulla di più interessante delle capanne?
+	AI_Output(other,self,"Info_Vlk_1_DasLager_15_00"); //Non c'Ã¨ nulla di piÃ¹ interessante delle capanne?
 	AI_Output(self,other,"Info_Vlk_1_DasLager_01_01"); //Beh, nel pomeriggio puoi recarti all'arena e assistere ai combattimenti delle guardie.
-	AI_Output(self,other,"Info_Vlk_1_DasLager_01_02"); //È uno spettacolo che vale il prezzo del biglietto.
+	AI_Output(self,other,"Info_Vlk_1_DasLager_01_02"); //Ãˆ uno spettacolo che vale il prezzo del biglietto.
 };
 
 // *************************************************************************
@@ -125,7 +125,7 @@ FUNC INT Info_Vlk_1_DieLage_Condition()
 FUNC VOID Info_Vlk_1_DieLage_Info()
 {
 	AI_Output(other,self,"Info_Vlk_1_DieLage_15_00"); //Come va?
-	AI_Output(self,other,"Info_Vlk_1_DieLage_01_01"); //Ho trascorso le due ultime settimane a lavorare nella miniera. Tutto ciò che voglio è un po’ di pace, quindi sparisci dalla mia vista.
+	AI_Output(self,other,"Info_Vlk_1_DieLage_01_01"); //Ho trascorso le due ultime settimane a lavorare nella miniera. Tutto ciÃ² che voglio Ã¨ un poâ€™ di pace, quindi sparisci dalla mia vista.
 };
 	
 // *************************************************************************

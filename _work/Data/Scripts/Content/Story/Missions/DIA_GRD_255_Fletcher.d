@@ -50,10 +50,10 @@ func void  DIA_Fletcher_First_Info()
 	AI_Output (self, other,"DIA_Fletcher_First_06_00"); //Ehi, tu!
 	AI_Output (other, self,"DIA_Fletcher_First_15_01"); //Chi, io?
 	AI_Output (self, other,"DIA_Fletcher_First_06_02"); //Lo sai benissimo, figliolo!
-	AI_Output (self, other,"DIA_Fletcher_First_06_03"); //Lascia che ti dica una cosa: questo Ë il MIO distretto e non voglio guai!
+	AI_Output (self, other,"DIA_Fletcher_First_06_03"); //Lascia che ti dica una cosa: questo √® il MIO distretto e non voglio guai!
 	AI_Output (self, other,"DIA_Fletcher_First_06_04"); //I nuovi arrivati come te ne causano sempre, specialmente quando gironzolano intorno la notte.
-	AI_Output (self, other,"DIA_Fletcher_First_06_05"); //Quindi perchÈ non te ne torni a casa e non ti fai pi˘ rivedere? C'Ë una capanna vuota di fronte all'arena, quella con il patio. Vai a riposare.
-	AI_Output (self, other,"DIA_Fletcher_First_06_06"); //Se ti becco in un'altra capanna, te ne farÚ pentire amaramente!
+	AI_Output (self, other,"DIA_Fletcher_First_06_05"); //Quindi perch√© non te ne torni a casa e non ti fai pi√π rivedere? C'√® una capanna vuota di fronte all'arena, quella con il patio. Vai a riposare.
+	AI_Output (self, other,"DIA_Fletcher_First_06_06"); //Se ti becco in un'altra capanna, te ne far√≤ pentire amaramente!
 	
 	AI_StopProcessInfos	(self);
 };
@@ -86,8 +86,8 @@ func void  DIA_Fletcher_Hello_Info()
 {
 	AI_Output (other, self,"DIA_Fletcher_Hello_15_00"); //Ehi, tu!
 	AI_Output (self, other,"DIA_Fletcher_Hello_06_01"); //Se vuoi pagare la tassa di protezione, hai scelto il giorno sbagliato.
-	AI_Output (other, self,"DIA_Fletcher_Hello_15_02"); //Ah sÏ? E perchÈ?
-	AI_Output (self, other,"DIA_Fletcher_Hello_06_03"); //PerchÈ io non sono qui.
+	AI_Output (other, self,"DIA_Fletcher_Hello_15_02"); //Ah s√¨? E perch√©?
+	AI_Output (self, other,"DIA_Fletcher_Hello_06_03"); //Perch√© io non sono qui.
 	
 	Info_ClearChoices	(DIA_Fletcher_Hello);
 	Info_AddChoice		(DIA_Fletcher_Hello,"Capisco.",DIA_Fletcher_Hello_ISee);
@@ -98,14 +98,14 @@ func void  DIA_Fletcher_Hello_Info()
 func void DIA_Fletcher_Hello_WhereElse()
 {
 	AI_Output (other, self,"DIA_Fletcher_Hello_WhereElse_15_00"); //Oh! Allora dove sei?
-	AI_Output (self, other,"DIA_Fletcher_Hello_WhereElse_06_01"); //Dentro al castello, seduto vicino al grande falÚ a bere birra.
+	AI_Output (self, other,"DIA_Fletcher_Hello_WhereElse_06_01"); //Dentro al castello, seduto vicino al grande fal√≤ a bere birra.
 };
 
 func void DIA_Fletcher_Hello_WhyTalk()
 {
 	AI_Output (other, self,"DIA_Fletcher_Hello_WhyTalk_15_00"); //E come mai ti sto parlando?
-	AI_Output (self, other,"DIA_Fletcher_Hello_WhyTalk_06_01"); //Nek Ë sparito. Questo distretto Ë sotto la sua responsabilit‡.
-	AI_Output (self, other,"DIA_Fletcher_Hello_WhyTalk_06_02"); //E finchÈ non riappare, Thorus ha ordinato a ME di prendere il suo posto.
+	AI_Output (self, other,"DIA_Fletcher_Hello_WhyTalk_06_01"); //Nek √® sparito. Questo distretto √® sotto la sua responsabilit√†.
+	AI_Output (self, other,"DIA_Fletcher_Hello_WhyTalk_06_02"); //E finch√© non riappare, Thorus ha ordinato a ME di prendere il suo posto.
 	fletcher_whytalk = TRUE;
 	Info_ClearChoices	(DIA_Fletcher_Hello);
 };
@@ -127,7 +127,7 @@ instance DIA_Fletcher_WoNek (C_INFO)
 	condition		= DIA_Fletcher_WoNek_Condition;
 	information		= DIA_Fletcher_WoNek_Info;
 	permanent		= 0;
-	description		= "Sai dove si Ë cacciato Nek?";
+	description		= "Sai dove si √® cacciato Nek?";
 };
 
 func int DIA_Fletcher_WoNek_Condition()
@@ -140,14 +140,14 @@ func int DIA_Fletcher_WoNek_Condition()
 
 func void  DIA_Fletcher_WoNek_Info()
 {
-	AI_Output (other, self,"DIA_Fletcher_WoNek_15_00"); //Sai dove si Ë cacciato Nek?
-	AI_Output (self, other,"DIA_Fletcher_WoNek_06_01"); //No, e non credo che lo scoprirÚ.
+	AI_Output (other, self,"DIA_Fletcher_WoNek_15_00"); //Sai dove si √® cacciato Nek?
+	AI_Output (self, other,"DIA_Fletcher_WoNek_06_01"); //No, e non credo che lo scoprir√≤.
 	AI_Output (self, other,"DIA_Fletcher_WoNek_06_02"); //Forse i minatori di questo distretto sanno qualcosa, ma non parlano con le guardie.
 	AI_Output (self, other,"DIA_Fletcher_WoNek_06_03"); //Specialmente sapendo quanto odio questo maledetto lavoro. Scommetto che ridono alle mie spalle!
 	
 	Log_CreateTopic		(CH1_LostNek,	LOG_MISSION);
 	Log_SetTopicStatus	(CH1_LostNek,	LOG_RUNNING);
-	B_LogEntry			(CH1_LostNek,"Forse i minatori del distretto dell'arena sanno dov'Ë finito Nek.");
+	B_LogEntry			(CH1_LostNek,"Forse i minatori del distretto dell'arena sanno dov'√® finito Nek.");
 };
 
 // ************************************************************
@@ -161,7 +161,7 @@ instance DIA_Fletcher_TroSchu (C_INFO)
 	condition		= DIA_Fletcher_TroSchu_Condition;
 	information		= DIA_Fletcher_TroSchu_Info;
 	permanent		= 0;
-	description		= "PerchÈ non raccogli altre tasse di protezione?";
+	description		= "Perch√© non raccogli altre tasse di protezione?";
 };
 
 FUNC int  DIA_Fletcher_TroSchu_Condition()
@@ -174,8 +174,8 @@ FUNC int  DIA_Fletcher_TroSchu_Condition()
 
 func void  DIA_Fletcher_TroSchu_Info()
 {
-	AI_Output (other, self,"DIA_Fletcher_TroSchu_15_00"); //PerchÈ non raccogli altre tasse di protezione?
-	AI_Output (self, other,"DIA_Fletcher_TroSchu_06_01"); //Nek ha fatto il suo giro prima di sparire. Non Ë rimasto molto da raccogliere.
+	AI_Output (other, self,"DIA_Fletcher_TroSchu_15_00"); //Perch√© non raccogli altre tasse di protezione?
+	AI_Output (self, other,"DIA_Fletcher_TroSchu_06_01"); //Nek ha fatto il suo giro prima di sparire. Non √® rimasto molto da raccogliere.
 };
 
 // ************************************************************
@@ -205,16 +205,16 @@ FUNC int  DIA_Fletcher_WegenNek_Condition()
 func void  DIA_Fletcher_WegenNek_Info()
 {
 	AI_Output (other, self,"DIA_Fletcher_WegenNek_15_00"); //A proposito di Nek...
-	AI_Output (self, other,"DIA_Fletcher_WegenNek_06_01"); //SÏ?
+	AI_Output (self, other,"DIA_Fletcher_WegenNek_06_01"); //S√¨?
 	
 	var C_NPC Nek; Nek = Hlp_GetNpc(Grd_282_Nek);
 	
 	if ( (Sly_LostNek == LOG_SUCCESS) || (!Hlp_IsValidNpc(Nek)) )
 	{
 		AI_Output (other, self,"DIA_Fletcher_WegenNek_15_02"); //Credo di averlo trovato.
-		AI_Output (self, other,"DIA_Fletcher_WegenNek_06_03"); //Cosa? Dov'Ë?
+		AI_Output (self, other,"DIA_Fletcher_WegenNek_06_03"); //Cosa? Dov'√®?
 		AI_Output (other, self,"DIA_Fletcher_WegenNek_15_04"); //A nutrire i topi.
-		AI_Output (self, other,"DIA_Fletcher_WegenNek_06_05"); //Oh, no! Maledizione! Questo significa che ora dovrÚ occuparmi io di tutto! Speravo che sarebbe tornato!
+		AI_Output (self, other,"DIA_Fletcher_WegenNek_06_05"); //Oh, no! Maledizione! Questo significa che ora dovr√≤ occuparmi io di tutto! Speravo che sarebbe tornato!
 		AI_Output (self, other,"DIA_Fletcher_WegenNek_06_06"); //Ora ho un problema.
 		fletcher_foundNek = TRUE;
 	}
@@ -236,7 +236,7 @@ instance DIA_Fletcher_Problem (C_INFO)
 	condition		= DIA_Fletcher_Problem_Condition;
 	information		= DIA_Fletcher_Problem_Info;
 	permanent		= 0;
-	description		= "Qual Ë il problema?";
+	description		= "Qual √® il problema?";
 };
 
 FUNC int  DIA_Fletcher_Problem_Condition()
@@ -249,8 +249,8 @@ FUNC int  DIA_Fletcher_Problem_Condition()
 
 func void  DIA_Fletcher_Problem_Info()
 {
-	AI_Output (other, self,"DIA_Fletcher_Problem_15_00"); //Qual Ë il problema?
-	AI_Output (self, other,"DIA_Fletcher_Problem_06_01"); //Sono indebitato fino al collo con Scatty. Ora che sa che ho preso il posto di Nek, si far‡ vivo ogni giorno...
+	AI_Output (other, self,"DIA_Fletcher_Problem_15_00"); //Qual √® il problema?
+	AI_Output (self, other,"DIA_Fletcher_Problem_06_01"); //Sono indebitato fino al collo con Scatty. Ora che sa che ho preso il posto di Nek, si far√† vivo ogni giorno...
 };	
 
 
@@ -339,11 +339,11 @@ FUNC VOID Info_Fletcher_DIE_Info()
 		}
 		else if (oldHeroGuild == GIL_KDF)
 		{
-			AI_Output	(self,hero,"Info_Fletcher_DIE_06_02"); //» uno di quei Maghi del Fuoco traditori! Bah!
+			AI_Output	(self,hero,"Info_Fletcher_DIE_06_02"); //√à uno di quei Maghi del Fuoco traditori! Bah!
 		}
 		else
 		{
-			AI_Output	(self,hero,"Info_Fletcher_DIE_06_03"); //Ciao, traditore! Essere stato una delle Ombre di Gomez non ti aiuter‡, ora.
+			AI_Output	(self,hero,"Info_Fletcher_DIE_06_03"); //Ciao, traditore! Essere stato una delle Ombre di Gomez non ti aiuter√†, ora.
 		};			
 
 		AI_Output		(hero,self,"Info_Fletcher_DIE_15_04"); //Ehi! Di cosa parli, Fletcher?
@@ -356,13 +356,13 @@ FUNC VOID Info_Fletcher_DIE_Info()
 
 		if	Npc_KnowsInfo(hero, Info_Bloodwyn_DIE)
 		{
-			B_LogEntry			(CH4_BannedFromOC,"Bloodwyn si Ë trincerato al cancello posteriore e ha reagito allo stesso modo di Fletcher. Non so come, ma tutto ciÚ deve essere in qualche modo collegato alla mia ricerca delle pietre focalizzatrici.");
+			B_LogEntry			(CH4_BannedFromOC,"Bloodwyn si √® trincerato al cancello posteriore e ha reagito allo stesso modo di Fletcher. Non so come, ma tutto ci√≤ deve essere in qualche modo collegato alla mia ricerca delle pietre focalizzatrici.");
 		}
 		else if	(Npc_GetTrueGuild(hero) == GIL_NONE)
 		{
 			Log_CreateTopic		(CH4_BannedFromOC,	LOG_MISSION);
 			Log_SetTopicStatus	(CH4_BannedFromOC,	LOG_RUNNING);
-			B_LogEntry			(CH4_BannedFromOC,"Fletcher, il guardiano dell'ingresso principale di Campo Vecchio, mi ha chiamato traditore e rinnegato. Non ha voluto ascoltarmi e mi si Ë scagliato contro!");
+			B_LogEntry			(CH4_BannedFromOC,"Fletcher, il guardiano dell'ingresso principale di Campo Vecchio, mi ha chiamato traditore e rinnegato. Non ha voluto ascoltarmi e mi si √® scagliato contro!");
 			B_LogEntry			(CH4_BannedFromOC,"Sembra che io sia stato bandito da Campo Vecchio!");
 		};
 	}
@@ -378,7 +378,7 @@ FUNC VOID Info_Fletcher_DIE_Info()
 		};
 
 		AI_Output		(hero,self,"Info_Fletcher_DIE_15_13"); //E allora? Non sono affari vostri!
-		AI_Output		(self,hero,"Info_Fletcher_DIE_06_14"); //Presto la tua miniera sar‡ nostra.
+		AI_Output		(self,hero,"Info_Fletcher_DIE_06_14"); //Presto la tua miniera sar√† nostra.
 		AI_Output		(hero,self,"Info_Fletcher_DIE_15_15"); //Davvero? Sogna pure, bello!
 		AI_Output		(self,hero,"Info_Fletcher_DIE_06_16"); //Non posso permettere che tu vada a spifferarlo in giro!
 		AI_Output		(hero,self,"Info_Fletcher_DIE_15_17"); //Aspetta! Io non voglio problemi.
@@ -387,12 +387,12 @@ FUNC VOID Info_Fletcher_DIE_Info()
 		AI_Output		(self,hero,"Info_Fletcher_DIE_06_20"); //Coraggio, ragazzi: prendiamolo!
 	};
 
-	Npc_ExchangeRoutine	(self,	"FMTaken2");				// Verst‰rkung vor das Haupttor (Anf¸hrer)
-	B_ExchangeRoutine	(GRD_252_Gardist,	"FMTaken2");	// Verst‰rkung vor das Haupttor
-	B_ExchangeRoutine	(GRD_253_Gardist,	"FMTaken2");	// Verst‰rkung vor das Haupttor
-	B_ExchangeRoutine	(GRD_244_Gardist,	"FMTaken2");	// Verst‰rkung vor das Haupttor (Fernk‰mpfer)
-	B_ExchangeRoutine	(GRD_214_Torwache,	"FMTaken2");	// regul‰re Wache am Haupttor
-	B_ExchangeRoutine	(GRD_215_Torwache,	"FMTaken2");	// regul‰re Wache am Haupttor
+	Npc_ExchangeRoutine	(self,	"FMTaken2");				// Verst√§rkung vor das Haupttor (Anf√ºhrer)
+	B_ExchangeRoutine	(GRD_252_Gardist,	"FMTaken2");	// Verst√§rkung vor das Haupttor
+	B_ExchangeRoutine	(GRD_253_Gardist,	"FMTaken2");	// Verst√§rkung vor das Haupttor
+	B_ExchangeRoutine	(GRD_244_Gardist,	"FMTaken2");	// Verst√§rkung vor das Haupttor (Fernk√§mpfer)
+	B_ExchangeRoutine	(GRD_214_Torwache,	"FMTaken2");	// regul√§re Wache am Haupttor
+	B_ExchangeRoutine	(GRD_215_Torwache,	"FMTaken2");	// regul√§re Wache am Haupttor
 
 	B_SetPermAttitude	(GRD_255_Fletcher,	ATT_HOSTILE);
 	B_SetPermAttitude	(GRD_252_Gardist,	ATT_HOSTILE);

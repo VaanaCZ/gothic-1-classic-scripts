@@ -54,7 +54,7 @@ FUNC int  DIA_Lester_Sakrileg_Condition()
 
 FUNC VOID  DIA_Lester_Sakrileg_Info()
 {
-	AI_Output (self, other,"DIA_Lester_Sakrileg_05_00"); //Hai rivolto la parola a un guru! Non farlo mai più, è un sacrilegio! Se un maestro lo desidera, sarà LUI a chiamare TE.
+	AI_Output (self, other,"DIA_Lester_Sakrileg_05_00"); //Hai rivolto la parola a un guru! Non farlo mai piÃ¹, Ã¨ un sacrilegio! Se un maestro lo desidera, sarÃ  LUI a chiamare TE.
 };
 
 // **************************************************
@@ -85,7 +85,7 @@ FUNC VOID  DIA_Lester_Hallo_Info()
 	AI_Output (self, other,"DIA_Lester_Hallo_05_01"); //Sono Lester. Mi occupo degli stranieri.
 	if (BaalNamib_Sakrileg == FALSE)
 	{
-		AI_Output (self, other,"DIA_Lester_Hallo_05_02"); //Sei stato fortunato a non parlare con Baal Namib. Agli stranieri non è permesso rivolgere la parola ai guru.
+		AI_Output (self, other,"DIA_Lester_Hallo_05_02"); //Sei stato fortunato a non parlare con Baal Namib. Agli stranieri non Ã¨ permesso rivolgere la parola ai guru.
 	};
 };
 
@@ -160,15 +160,15 @@ func void DIA_Lester_CampInfo_BACK()
 func void DIA_Lester_CampInfo_GIL()
 {
 	AI_Output (other, self,"DIA_Lester_CampInfo_GIL_15_00"); //Parlami delle gilde.
-	AI_Output (self, other,"DIA_Lester_CampInfo_GIL_05_01"); //I guru costituiscono la gilda più elevata. Grazie ai loro immensi poteri, sono lo spirito del campo. I templari usano il proprio potere spirituale in battaglia.
-	AI_Output (self, other,"DIA_Lester_CampInfo_GIL_05_02"); //Possiedono una volontà indomabile: non devi MAI metterti nei guai con loro. Per quanto riguarda me, sono un novizio. Preghiamo il Dormiente e svolgiamo tutto il lavoro.
+	AI_Output (self, other,"DIA_Lester_CampInfo_GIL_05_01"); //I guru costituiscono la gilda piÃ¹ elevata. Grazie ai loro immensi poteri, sono lo spirito del campo. I templari usano il proprio potere spirituale in battaglia.
+	AI_Output (self, other,"DIA_Lester_CampInfo_GIL_05_02"); //Possiedono una volontÃ  indomabile: non devi MAI metterti nei guai con loro. Per quanto riguarda me, sono un novizio. Preghiamo il Dormiente e svolgiamo tutto il lavoro.
 	AI_Output (self, other,"DIA_Lester_CampInfo_GIL_05_03"); //Alcuni novizi possono diventare guru, ma devono studiare per moltissimi anni.
 };
 func void DIA_Lester_CampInfo_SLEEPER()
 {
 	AI_Output (other, self,"DIA_Lester_CampInfo_SLEEPER_15_00"); //Che mi dici del Dormiente?
-	AI_Output (self, other,"DIA_Lester_CampInfo_SLEEPER_05_01"); //Il Dormiente è una creatura divina. Egli provoca le visioni, perlomeno ai guru.
-	AI_Output (self, other,"DIA_Lester_CampInfo_SLEEPER_05_02"); //Noi lo preghiamo affinché ci liberi.
+	AI_Output (self, other,"DIA_Lester_CampInfo_SLEEPER_05_01"); //Il Dormiente Ã¨ una creatura divina. Egli provoca le visioni, perlomeno ai guru.
+	AI_Output (self, other,"DIA_Lester_CampInfo_SLEEPER_05_02"); //Noi lo preghiamo affinchÃ© ci liberi.
 	AI_Output (other, self,"DIA_Lester_CampInfo_SLEEPER_15_03"); //E tu ci credi?
 	AI_Output (self, other,"DIA_Lester_CampInfo_SLEEPER_05_04"); //Ehi! Mi trovo all'interno della Barriera da due anni. Hai idea di quanto possano essere LUNGHI?
 	AI_Output (self, other,"DIA_Lester_CampInfo_SLEEPER_05_05"); //Non hai idea di cosa sia disposto a fare e a credere, pur di andarmene da qui!
@@ -176,7 +176,7 @@ func void DIA_Lester_CampInfo_SLEEPER()
 func void DIA_Lester_CampInfo_HERB()
 {
 	AI_Output (other, self,"DIA_Lester_CampInfo_HERB_15_00"); //Cosa mi dici dell'erba?
-	AI_Output (self, other,"DIA_Lester_CampInfo_HERB_05_01"); //Cresce nella palude. Ovviamente deve essere lavorata, prima che la si possa fumare. Questo è compito dei novizi.
+	AI_Output (self, other,"DIA_Lester_CampInfo_HERB_05_01"); //Cresce nella palude. Ovviamente deve essere lavorata, prima che la si possa fumare. Questo Ã¨ compito dei novizi.
 	AI_Output (self, other,"DIA_Lester_CampInfo_HERB_05_02"); //L'erba ha un effetto tranquillizzante e rilassante. Ti aiuta a concentrarti sulle cose essenziali e amplia il tuo stato di coscienza.
 	AI_Output (self, other,"DIA_Lester_CampInfo_HERB_05_03"); //La utilizziamo come merce di scambio con Campo Vecchio e per reclutare nuovi adepti.
 	AI_Output (self, other,"DIA_Lester_CampInfo_HERB_05_04"); //Come risultato, ovviamente molta gente si unisce a noi solo per l'erba. Beh, perlomeno danno una mano col lavoro!
@@ -209,8 +209,8 @@ FUNC VOID  DIA_Lester_WannaJoin_Info()
 {
 	AI_Output (other, self,"DIA_Lester_WannaJoin_15_00"); //Voglio diventare un membro della Fratellanza!
 	AI_Output (self, other,"DIA_Lester_WannaJoin_05_01"); //La decisione spetta a Cor Kalom.
-	AI_Output (self, other,"DIA_Lester_WannaJoin_05_02"); //Comunque, lui si fida molto dell'opinione degli altri guru. Baal Namib, laggiù, è uno di questi.
-	AI_Output (self, other,"DIA_Lester_WannaJoin_05_03"); //Come prima cosa, devi dimostrare di essere un tipo valoroso, allora un guru ti manderà da Cor Kalom.
+	AI_Output (self, other,"DIA_Lester_WannaJoin_05_02"); //Comunque, lui si fida molto dell'opinione degli altri guru. Baal Namib, laggiÃ¹, Ã¨ uno di questi.
+	AI_Output (self, other,"DIA_Lester_WannaJoin_05_03"); //Come prima cosa, devi dimostrare di essere un tipo valoroso, allora un guru ti manderÃ  da Cor Kalom.
 };
 
 // **************************************************
@@ -239,13 +239,13 @@ FUNC int  DIA_Lester_HowProofWorthy_Condition()
 FUNC VOID  DIA_Lester_HowProofWorthy_Info()
 {
 	AI_Output (other, self,"DIA_Lester_HowProofWorthy_15_00"); //Come faccio, visto che nessun guru mi rivolge la parola?
-	AI_Output (self, other,"DIA_Lester_HowProofWorthy_05_01"); //Non sembra, ma i guru controllano tutto ciò che fai nel campo.
-	AI_Output (self, other,"DIA_Lester_HowProofWorthy_05_02"); //Se riterranno che meriti di diventare un membro della comunità, ti parleranno.
+	AI_Output (self, other,"DIA_Lester_HowProofWorthy_05_01"); //Non sembra, ma i guru controllano tutto ciÃ² che fai nel campo.
+	AI_Output (self, other,"DIA_Lester_HowProofWorthy_05_02"); //Se riterranno che meriti di diventare un membro della comunitÃ , ti parleranno.
 	AI_Output (self, other,"DIA_Lester_HowProofWorthy_05_03"); //Nel campo avrai molte occasioni di dimostrare il tuo valore.
 
 	Log_CreateTopic		(CH1_JoinPsi,	LOG_MISSION);
 	Log_SetTopicStatus	(CH1_JoinPsi,	LOG_RUNNING);
-	B_LogEntry			(CH1_JoinPsi,"Se voglio far parte della Fratellanza di Campo Palude, devo fare buona impressione sui guru. Sfortunatamente, non rivolgono la parola alla gente nuova. Ciononostante, Lester il novizio mi ha rivelato che mi osservano costantemente. Devo dimostrare loro il mio valore, ma non ho la più pallida idea su cosa fare! Meglio dare un'occhiata in giro per Campo Palude.");
+	B_LogEntry			(CH1_JoinPsi,"Se voglio far parte della Fratellanza di Campo Palude, devo fare buona impressione sui guru. Sfortunatamente, non rivolgono la parola alla gente nuova. Ciononostante, Lester il novizio mi ha rivelato che mi osservano costantemente. Devo dimostrare loro il mio valore, ma non ho la piÃ¹ pallida idea su cosa fare! Meglio dare un'occhiata in giro per Campo Palude.");
 
 };
 
@@ -282,13 +282,13 @@ FUNC VOID  DIA_Lester_WeitWeg_Info()
 	AI_Output (self, other,"DIA_Lester_WeitWeg_05_01"); //Devi sapere cosa vuole ascoltare.
 	AI_Output (other, self,"DIA_Lester_WeitWeg_15_02"); //E sarebbe?
 	AI_Output (self, other,"DIA_Lester_WeitWeg_05_03"); //Ascolta: la prossima volta che ci vedremo qui con lui, rivolgimi la parola.
-	AI_Output (self, other,"DIA_Lester_WeitWeg_05_04"); //Baal Namib è preoccupato perché molti novizi pregano anche le proprie divinità precedenti, oltre al Dormiente.
-	AI_Output (self, other,"DIA_Lester_WeitWeg_05_05"); //Tu mi dirai che hai rinunciato ai vecchi dèi e che, in futuro, pregherai solo il Dormiente.
-	AI_Output (self, other,"DIA_Lester_WeitWeg_05_06"); //Allora ti chiederò il motivo della tua scelta e mi risponderai che hai avuto una visione, in cui il Dormiente ti chiamava a sé.
-	AI_Output (self, other,"DIA_Lester_WeitWeg_05_07"); //Così catturerai la sua intenzione. Pensi di farcela?
-	AI_Output (other, self,"DIA_Lester_WeitWeg_15_08"); //Non c'è problema.
+	AI_Output (self, other,"DIA_Lester_WeitWeg_05_04"); //Baal Namib Ã¨ preoccupato perchÃ© molti novizi pregano anche le proprie divinitÃ  precedenti, oltre al Dormiente.
+	AI_Output (self, other,"DIA_Lester_WeitWeg_05_05"); //Tu mi dirai che hai rinunciato ai vecchi dÃ¨i e che, in futuro, pregherai solo il Dormiente.
+	AI_Output (self, other,"DIA_Lester_WeitWeg_05_06"); //Allora ti chiederÃ² il motivo della tua scelta e mi risponderai che hai avuto una visione, in cui il Dormiente ti chiamava a sÃ©.
+	AI_Output (self, other,"DIA_Lester_WeitWeg_05_07"); //CosÃ¬ catturerai la sua intenzione. Pensi di farcela?
+	AI_Output (other, self,"DIA_Lester_WeitWeg_15_08"); //Non c'Ã¨ problema.
 	
-	B_LogEntry	(CH1_JoinPsi,"Per fare colpo su Baal Namib, devo rivolgere la parola a Lester quando il guru è vicino e parlare dei vecchi dèi e del Dormiente.");
+	B_LogEntry	(CH1_JoinPsi,"Per fare colpo su Baal Namib, devo rivolgere la parola a Lester quando il guru Ã¨ vicino e parlare dei vecchi dÃ¨i e del Dormiente.");
 
 	Lester_Show = TRUE;
 };
@@ -335,7 +335,7 @@ instance  DIA_Lester_Show (C_INFO) //E2
 	condition	= DIA_Lester_Show_Condition;
 	information	= DIA_Lester_Show_Info;
 	permanent	= 0;
-	description	= "Ho rinunciato ai vecchi dèi.";
+	description	= "Ho rinunciato ai vecchi dÃ¨i.";
 };                       
 
 FUNC int  DIA_Lester_Show_Condition()
@@ -349,8 +349,8 @@ FUNC int  DIA_Lester_Show_Condition()
 
 FUNC VOID  DIA_Lester_Show_Info()
 {
-	AI_Output (other, self,"DIA_Lester_Show_15_00"); //HO RINUNCIATO AI VECCHI DÈI.
-	AI_Output (self, other,"DIA_Lester_Show_05_01"); //DAVVERO? E PERCHÉ?
+	AI_Output (other, self,"DIA_Lester_Show_15_00"); //HO RINUNCIATO AI VECCHI DÃˆI.
+	AI_Output (self, other,"DIA_Lester_Show_05_01"); //DAVVERO? E PERCHÃ‰?
 	AI_Output (other, self,"DIA_Lester_Show_15_02"); //HO AVUTO UNA VISIONE: IL DORMIENTE MI HA PARLATO.
 	AI_Output (self, other,"DIA_Lester_Show_05_03"); //E COSA TI HA DETTO?
 	AI_Output (other, self,"DIA_Lester_Show_15_04"); //HA DETTO: VAI AL CAMPO NELLA PALUDE ED ENTRA NELLA FRATELLANZA.
@@ -391,7 +391,7 @@ FUNC VOID  DIA_Lester_GuideOffer_Info()
 };
 
 // **************************************************
-//				FÜHRUNG DURCHS PSI-CAMP
+//				FÃœHRUNG DURCHS PSI-CAMP
 // **************************************************
 
 
@@ -418,10 +418,10 @@ FUNC int  PC_Psionic_SOON_Condition()
 FUNC VOID  PC_Psionic_SOON_Info()
 {
 	AI_Output (other, self,"PC_Psionic_SOON_Info_15_01"); //Siamo arrivati?
-	AI_Output (self, other,"PC_Psionic_SOON_Info_05_02"); //Se la smettessi di chiedermelo, faremmo molto più in fretta.
+	AI_Output (self, other,"PC_Psionic_SOON_Info_05_02"); //Se la smettessi di chiedermelo, faremmo molto piÃ¹ in fretta.
 	AI_StopProcessInfos	( self );
 };
-//------ UNTERWEGS IM SUMPFLAGER UND ROUTE ÄNDERN ----------------
+//------ UNTERWEGS IM SUMPFLAGER UND ROUTE Ã„NDERN ----------------
 instance  PC_Psionic_CHANGE (C_INFO)
 {
 	npc			=  PC_Psionic;
@@ -451,7 +451,7 @@ FUNC VOID  PC_Psionic_CHANGE_Info()
 
 };
 
-//------------------FÜHRUNG DURCH DAS LAGER
+//------------------FÃœHRUNG DURCH DAS LAGER
 instance  PC_Psionic_GUIDEFIRST (C_INFO)
 {
 	npc				= PC_Psionic;
@@ -562,10 +562,10 @@ FUNC int  PC_Psionic_TRAIN_Condition()
 
 FUNC void  PC_Psionic_TRAIN_Info()
 {
-	AI_Output (self, other,"PC_Psionic_TRAIN_Info_05_01"); //Laggiù troverai Baal Cadar, l'insegnante dei novizi.
+	AI_Output (self, other,"PC_Psionic_TRAIN_Info_05_01"); //LaggiÃ¹ troverai Baal Cadar, l'insegnante dei novizi.
 	AI_PointAt(self,"PSI_PATH_9_14");
 	AI_StopPointAt (self);
-	AI_Output (self, other,"PC_Psionic_TRAIN_Info_05_02"); //Salendo su questa scala, arriverai al campo d'addestramento dei templari. Io ti aspetterò qui. Se ci metterai molto, mi troverai all'entrata del campo con Baal Namib.
+	AI_Output (self, other,"PC_Psionic_TRAIN_Info_05_02"); //Salendo su questa scala, arriverai al campo d'addestramento dei templari. Io ti aspetterÃ² qui. Se ci metterai molto, mi troverai all'entrata del campo con Baal Namib.
 
 	LesterGuide = 0;
 	Npc_ExchangeRoutine (self,"START");
@@ -596,7 +596,7 @@ FUNC int  PC_Psionic_TEMPEL_Condition()
 
 FUNC void  PC_Psionic_TEMPEL_Info()
 {
-	AI_Output (self, other,"PC_Psionic_TEMPEL_Info_05_01"); //Ecco il tempio! Ti aspetterò, se non ci metterai molto. Altrimenti tornerò da Baal Namib.
+	AI_Output (self, other,"PC_Psionic_TEMPEL_Info_05_01"); //Ecco il tempio! Ti aspetterÃ², se non ci metterai molto. Altrimenti tornerÃ² da Baal Namib.
 
 	LesterGuide = 0;
 	
@@ -629,7 +629,7 @@ FUNC int  PC_Psionic_SMITH_Condition()
 
 FUNC void  PC_Psionic_SMITH_Info()
 {
-	AI_Output (self, other,"PC_Psionic_SMITH_Info_05_01"); //Ecco il fabbro! Dai un'occhiata intorno. Io aspetterò per circa un'ora, poi me ne andrò.
+	AI_Output (self, other,"PC_Psionic_SMITH_Info_05_01"); //Ecco il fabbro! Dai un'occhiata intorno. Io aspetterÃ² per circa un'ora, poi me ne andrÃ².
 	LesterGuide = 0;
 	
 	
@@ -641,7 +641,7 @@ FUNC void  PC_Psionic_SMITH_Info()
 	
 	
 };   
-// ***************************** Beim Krauthändler ****************************************// 
+// ***************************** Beim KrauthÃ¤ndler ****************************************// 
 instance  PC_Psionic_HERB (C_INFO)
 {
 	npc				= PC_Psionic;                       
@@ -661,8 +661,8 @@ FUNC int  PC_Psionic_HERB_Condition()
 };
 FUNC void  PC_Psionic_HERB_Info()
 {
-	AI_Output      (self, other,"PC_Psionic_HERB_Info_05_01"); //Salendo su questa scala, incontrerai Kalom l'alchimista. Quaggiù c'è Fortuno, il mercante d'erba.
-	AI_Output      (self, other,"PC_Psionic_HERB_Info_05_02"); //Io ti aspetto qui, ma fai in fretta, o me ne tornerò indietro.
+	AI_Output      (self, other,"PC_Psionic_HERB_Info_05_01"); //Salendo su questa scala, incontrerai Kalom l'alchimista. QuaggiÃ¹ c'Ã¨ Fortuno, il mercante d'erba.
+	AI_Output      (self, other,"PC_Psionic_HERB_Info_05_02"); //Io ti aspetto qui, ma fai in fretta, o me ne tornerÃ² indietro.
 	
 	LesterGuide = 0;
 	
@@ -701,7 +701,7 @@ instance  PC_Psionic_SEND (C_INFO)// PC muss im ersten Kapitel schon mal mit Les
 
 FUNC int  PC_Psionic_SEND_Condition()
 {
-	//SN: NICHT auf Kapitel 2 abfragen, Kapitelwechel geschieht erst unten zentral für alle SC-Gilden!!!
+	//SN: NICHT auf Kapitel 2 abfragen, Kapitelwechel geschieht erst unten zentral fÃ¼r alle SC-Gilden!!!
 	if	(Npc_GetTrueGuild(hero) != GIL_NONE)
 	&&	(YBerion_BringFocus != LOG_RUNNING)
 	&&	(YBerion_BringFocus != LOG_SUCCESS)
@@ -751,9 +751,9 @@ FUNC int  PC_Psionic_BROTHERHOOD_TODO_Condition()
 FUNC void  PC_Psionic_BROTHERHOOD_TODO_Info()
 {
 	AI_Output			(other, self,"PC_Psionic_BROTHERHOOD_TODO_15_01"); //Io che c'entro con questa storia?
-	AI_Output			(self, other,"PC_Psionic_BROTHERHOOD_TODO_05_02"); //Parla con Y'Berion. Questa è la tua occasione per conquistare il favore dell'uomo più potente della zona.
+	AI_Output			(self, other,"PC_Psionic_BROTHERHOOD_TODO_05_02"); //Parla con Y'Berion. Questa Ã¨ la tua occasione per conquistare il favore dell'uomo piÃ¹ potente della zona.
 	AI_Output			(other, self,"PC_Psionic_BROTHERHOOD_TODO_15_03"); //Dove si trova?
-	AI_Output			(self, other,"PC_Psionic_BROTHERHOOD_TODO_05_04"); //Raramente s'allontana dal tempio. Probabilmente, in quelle fredde rovine, si sente più vicino al Dormiente.
+	AI_Output			(self, other,"PC_Psionic_BROTHERHOOD_TODO_05_04"); //Raramente s'allontana dal tempio. Probabilmente, in quelle fredde rovine, si sente piÃ¹ vicino al Dormiente.
 
 	Log_CreateTopic		(CH2_Focus,	LOG_MISSION);
 	Log_SetTopicStatus	(CH2_Focus,	LOG_RUNNING);
@@ -802,11 +802,11 @@ func void  PC_Psionic_FOLLOWME_Info()
 	AI_Output (self, other,"PC_Psionic_FOLLOWME_Info_05_01"); //Cosa stai facendo?
 	AI_Output (other, self,"PC_Psionic_FOLLOWME_Info_15_02"); //Vengo per ordine dei Maghi dell'Acqua. Sono in cerca di alcuni manufatti magici, chiamati pietre focalizzatrici.
 	AI_Output (self, other,"PC_Psionic_FOLLOWME_Info_05_03"); //Cerchi le pietre focalizzatrici? Hai molto coraggio!
-	AI_Output (other, self,"PC_Psionic_FOLLOWME_Info_15_04"); //Saturas e gli altri maghi di Campo Nuovo vogliono usarle per far esplodere la Barriera, così saremo liberi da questa prigione.
-	AI_Output (self, other,"PC_Psionic_FOLLOWME_Info_05_05"); //Ci crederò quando lo vedrò con i miei occhi.
-	AI_Output (other, self,"PC_Psionic_FOLLOWME_Info_15_06"); //Anch'io. Dimmi: perché sei qui?
+	AI_Output (other, self,"PC_Psionic_FOLLOWME_Info_15_04"); //Saturas e gli altri maghi di Campo Nuovo vogliono usarle per far esplodere la Barriera, cosÃ¬ saremo liberi da questa prigione.
+	AI_Output (self, other,"PC_Psionic_FOLLOWME_Info_05_05"); //Ci crederÃ² quando lo vedrÃ² con i miei occhi.
+	AI_Output (other, self,"PC_Psionic_FOLLOWME_Info_15_06"); //Anch'io. Dimmi: perchÃ© sei qui?
 	AI_Output (self, other,"PC_Psionic_FOLLOWME_Info_05_07"); //Sto valutando se valga la pena fare una visita al forte sulla montagna.
-	AI_Output (self, other,"PC_Psionic_FOLLOWME_Info_05_08"); //Sai... lì c'è un documento che vorrei avere. D'altro canto, è molto pericoloso tentare d'arrivarci.
+	AI_Output (self, other,"PC_Psionic_FOLLOWME_Info_05_08"); //Sai... lÃ¬ c'Ã¨ un documento che vorrei avere. D'altro canto, Ã¨ molto pericoloso tentare d'arrivarci.
 };
 
 // ***************************** INFOS ****************************************//
@@ -843,7 +843,7 @@ instance  PC_Psionic_STORY (C_INFO)
 	information		= PC_Psionic_STORY_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Il documento che cerchi... cos'è?"; 
+	description		= "Il documento che cerchi... cos'Ã¨?"; 
 };
 
 FUNC int  PC_Psionic_STORY_Condition()
@@ -857,11 +857,11 @@ FUNC int  PC_Psionic_STORY_Condition()
 };
 FUNC void  PC_Psionic_STORY_Info()
 {
-	AI_Output (other, self,"PC_Psionic_STORY_Info_15_01"); //Il documento che cerchi... cos'è?
+	AI_Output (other, self,"PC_Psionic_STORY_Info_15_01"); //Il documento che cerchi... cos'Ã¨?
 	AI_Output (self, other,"PC_Psionic_STORY_Info_05_02"); //Molti anni fa, il signore di questa zona viveva nel forte. Egli controllava la terra e le miniere.
 	AI_Output (self, other,"PC_Psionic_STORY_Info_05_03"); //Come ogni aristocratico, sicuramente teneva un attestato dei suoi possedimenti. Ecco cosa cerco.
-	AI_Output (other, self,"PC_Psionic_STORY_Info_15_04"); //Ma finché saremo rinchiusi all'interno della Barriera, non ti servirà a nulla.
-	AI_Output (self, other,"PC_Psionic_STORY_Info_05_05"); //Hai ragione. Se però i Maghi dell'Acqua riusciranno a distruggerla, l'attestato tornerà a valere molto.
+	AI_Output (other, self,"PC_Psionic_STORY_Info_15_04"); //Ma finchÃ© saremo rinchiusi all'interno della Barriera, non ti servirÃ  a nulla.
+	AI_Output (self, other,"PC_Psionic_STORY_Info_05_05"); //Hai ragione. Se perÃ² i Maghi dell'Acqua riusciranno a distruggerla, l'attestato tornerÃ  a valere molto.
 };  
 
 // ***************************** INFOS ****************************************//
@@ -891,7 +891,7 @@ FUNC void  PC_Psionic_COMEWITHME_Info()
 
 	Log_CreateTopic		(CH3_Fortress,	LOG_MISSION);
 	Log_SetTopicStatus	(CH3_Fortress,	LOG_RUNNING);
-	B_LogEntry		(CH3_Fortress,"Ho incontrato Lester, il novizio di Campo Palude, di fronte a una grande fortezza costruita nella montagna. È a caccia di un documento e ha deciso di accompagnarmi nella mia ricerca della pietra focalizzatrice.");
+	B_LogEntry		(CH3_Fortress,"Ho incontrato Lester, il novizio di Campo Palude, di fronte a una grande fortezza costruita nella montagna. Ãˆ a caccia di un documento e ha deciso di accompagnarmi nella mia ricerca della pietra focalizzatrice.");
 
   	self.aivar[AIV_PARTYMEMBER] =	TRUE;
 	Npc_ExchangeRoutine (self,"FORTRESSFOLLOW");
@@ -919,8 +919,8 @@ func void  PC_Psionic_FOKUSPLACE_Info()
 {
 	AI_GotoNpc(self,hero);
 	//AI_PointAt(FOKUSWP)
-	AI_Output (self, other,"PC_Psionic_FOKUSPLACE_Info_05_01"); //Guarda! Sembra che la pietra focalizzatrice che cerchi sia lassù.
-	AI_Output (other, self,"PC_Psionic_FOKUSPLACE_Info_15_02"); //Già! Sembra una piattaforma focalizzatrice. Uhm... Non è facile da raggiungere...
+	AI_Output (self, other,"PC_Psionic_FOKUSPLACE_Info_05_01"); //Guarda! Sembra che la pietra focalizzatrice che cerchi sia lassÃ¹.
+	AI_Output (other, self,"PC_Psionic_FOKUSPLACE_Info_15_02"); //GiÃ ! Sembra una piattaforma focalizzatrice. Uhm... Non Ã¨ facile da raggiungere...
 	AI_StopProcessInfos(self);
 
 	B_LogEntry		(CH3_Fortress,"La pietra che cerco si trova su un piedistallo troppo alto per essere raggiunta. Devo trovare un altro modo per prenderla.");	
@@ -930,7 +930,7 @@ func void  PC_Psionic_FOKUSPLACE_Info()
 	Wld_InsertNpc		(Harpie,"LOCATION_19_03_ENTRANCE_HARPYE3");
 };
 
-// ---------SPIELER WILL ÜBER DIE BRÜCKE OHNE DEN AUFTRAG ERFÜLLT ZU HABEN--------
+// ---------SPIELER WILL ÃœBER DIE BRÃœCKE OHNE DEN AUFTRAG ERFÃœLLT ZU HABEN--------
 instance PC_Psionic_COMEBACK (C_INFO)
 {
 	npc				= PC_Psionic;
@@ -988,7 +988,7 @@ FUNC void  PC_Psionic_IAMHURT_Info()
 	B_GiveInvItems 	(self, hero,ItFo_Potion_Health_02, 1);
 };  
 
-//------------- SPIELER HAT DIE URKUNDE FÜR LESTER GEFUNDEN-----------------------
+//------------- SPIELER HAT DIE URKUNDE FÃœR LESTER GEFUNDEN-----------------------
 instance  PC_Psionic_URKUNDE (C_INFO)
 {
 	npc				= PC_Psionic;
@@ -1012,7 +1012,7 @@ FUNC void  PC_Psionic_URKUNDE_Info()
 {
 	AI_Output			(other, self,"PC_Psionic_URKUNDE_Info_15_01"); //Ho trovato l'attestato.
 	AI_Output			(self, other,"PC_Psionic_URKUNDE_Info_05_02"); //Ehi, ben fatto! Prendi questi incantesimi come ricompensa. Grazie a essi, ora potrai raggiungere la pietra focalizzatrice.
-	AI_Output			(self, other,"PC_Psionic_URKUNDE_Info_05_03"); //Io ti aspetterò vicino alla piattaforma.
+	AI_Output			(self, other,"PC_Psionic_URKUNDE_Info_05_03"); //Io ti aspetterÃ² vicino alla piattaforma.
 
 	B_LogEntry		(CH3_Fortress,"L'attestato nobiliare, che Lester stava cercando, era in uno scrigno. In cambio, egli mi ha donato quattro incantesimi di telecinesi, che mi permetteranno di prendere la pietra focalizzatrice.");
 	
@@ -1073,7 +1073,7 @@ FUNC int  PC_Psionic_LEAVE_Condition()
 func void  PC_Psionic_LEAVE_Info()
 {
 	AI_GotoNpc(self,hero);
-	AI_Output (self, other,"PC_Psionic_LEAVE_Info_05_01"); //Resterò qui per cercare l'attestato.
+	AI_Output (self, other,"PC_Psionic_LEAVE_Info_05_01"); //ResterÃ² qui per cercare l'attestato.
 	
   	self.aivar[AIV_PARTYMEMBER] =	FALSE;
 
@@ -1103,7 +1103,7 @@ FUNC int  PC_Psionic_BALKON_Condition()
 func void  PC_Psionic_BALKON_Info()
 {
 	AI_GotoNpc(self,hero);
-	AI_Output (self, other,"PC_Psionic_BALKON_Info_05_01"); //Io andrò a dare un'occhiata lassù.
+	AI_Output (self, other,"PC_Psionic_BALKON_Info_05_01"); //Io andrÃ² a dare un'occhiata lassÃ¹.
 	
 	AI_StopProcessInfos(self);
 	Npc_ExchangeRoutine (self,"BALKON");
@@ -1129,10 +1129,10 @@ FUNC int  PC_Psionic_FINISH_Condition()
 };
 func void  PC_Psionic_FINISH_Info()
 {
-	AI_Output (self, other,"PC_Psionic_FINISH_Info_05_01"); //Ora abbiamo entrambi ciò che cercavamo. Resterò qui a leggere questi antichi volumi.
+	AI_Output (self, other,"PC_Psionic_FINISH_Info_05_01"); //Ora abbiamo entrambi ciÃ² che cercavamo. ResterÃ² qui a leggere questi antichi volumi.
 	AI_Output (other, self,"PC_Psionic_FINISH_Info_15_02"); //Ci rivedremo.
 
-	B_LogEntry		(CH3_Fortress,"Ho recuperato la pietra. Lester ha deciso di restare, per dare un'occhiata alla biblioteca della fortezza. Mi chiedo se lo rivedrò ancora.");
+	B_LogEntry		(CH3_Fortress,"Ho recuperato la pietra. Lester ha deciso di restare, per dare un'occhiata alla biblioteca della fortezza. Mi chiedo se lo rivedrÃ² ancora.");
 
  	self.aivar[AIV_PARTYMEMBER] = FALSE;
 	Npc_ExchangeRoutine (self,"BOOK");
@@ -1164,8 +1164,8 @@ FUNC int  PC_Psionic_CHESTCLOSED_Condition()
 FUNC void  PC_Psionic_CHESTCLOSED_Info()
 {
 	AI_Output (other, self,"PC_Psionic_CHESTCLOSED_Info_15_01"); //Hai trovato qualcosa?
-	AI_Output (self, other,"PC_Psionic_CHESTCLOSED_Info_05_02"); //Quello scrigno è chiuso. Forse possiamo trovare la chiave, da qualche parte.
-	AI_Output (self, other,"PC_Psionic_CHESTCLOSED_Info_05_03"); //Hai già trovato l'attestato?
+	AI_Output (self, other,"PC_Psionic_CHESTCLOSED_Info_05_02"); //Quello scrigno Ã¨ chiuso. Forse possiamo trovare la chiave, da qualche parte.
+	AI_Output (self, other,"PC_Psionic_CHESTCLOSED_Info_05_03"); //Hai giÃ  trovato l'attestato?
 	AI_Output (other, self,"PC_Psionic_CHESTCLOSED_Info_15_04"); //No, non ancora...
 	AI_Output (self, other,"PC_Psionic_CHESTCLOSED_Info_05_05"); //Hai cercato nella biblioteca?
 	AI_StopProcessInfos(self);
@@ -1205,7 +1205,7 @@ FUNC void  PC_Psionic_COMEAGAIN_Info()
 };  
 
 //---------------------------------------------------------------------
-//	Info DIEGOMILTEN      ******Björn****** Patch2
+//	Info DIEGOMILTEN      ******BjÃ¶rn****** Patch2
 //---------------------------------------------------------------------
 INSTANCE Info_Lester_DIEGOMILTEN (C_INFO)
 {
@@ -1230,11 +1230,11 @@ func VOID Info_Lester_DIEGOMILTEN_Info()
 	
 	AI_Output	(hero,self,"Info_SFB_1_DieLage_15_00"); 				//Come va?
 	AI_Output 	(self, hero,"PC_Psionic_FOLLOWME_Info_05_01"); 			//Cosa stai facendo?
-	AI_Output	(hero,self,"Info_Saturas_COLLAPSE_15_01"); 				//La vecchia miniera è crollata a causa delle infiltrazioni d'acqua!
+	AI_Output	(hero,self,"Info_Saturas_COLLAPSE_15_01"); 				//La vecchia miniera Ã¨ crollata a causa delle infiltrazioni d'acqua!
 	AI_Output 	(self, hero,"DIA_Fingers_BecomeShadow_05_01"); 			//E allora?
 	AI_Output 	(hero, self,"Info_Xardas_KDW_15_01"); 					//Tutti i Maghi del Fuoco sono morti!
 	AI_Output 	(hero, self,"Info_Xardas_KDW_15_02"); 					//Gomez li ha fatti uccidere.
-	AI_Output 	(self, hero,"SVM_5_GetThingsRight"); 					//Non sarà facile rimettere a posto le cose!
+	AI_Output 	(self, hero,"SVM_5_GetThingsRight"); 					//Non sarÃ  facile rimettere a posto le cose!
 	AI_Output 	(hero,self,"Info_Gorn_DIEGOMILTEN_15_01"); 				//Ho incontrato Diego e Milten di fronte a Campo Vecchio!
 	AI_Output 	(hero, self,"Info_lester_DIEGOMILTEN_15_01"); 			//Vogliono incontrarti al solito posto.
 	AI_Output 	(self, hero,"SVM_5_YeahWellDone"); 						//Era ora!
@@ -1255,7 +1255,7 @@ func VOID Info_Lester_DIEGOMILTEN_Info()
 	}
 	else
 	{
-		B_LogEntry			(CH4_4Friends,		"Ho informato Lester e Gorn della riunione coi loro amici. Questa faccenda non è più affare mio: loro sanno cosa fare..."); 
+		B_LogEntry			(CH4_4Friends,		"Ho informato Lester e Gorn della riunione coi loro amici. Questa faccenda non Ã¨ piÃ¹ affare mio: loro sanno cosa fare..."); 
 		Log_SetTopicStatus	(CH4_4Friends,		LOG_SUCCESS);
 	};
 

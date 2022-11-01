@@ -63,7 +63,7 @@ INSTANCE Info_Mine_Org_6_WichtigePersonen(C_INFO)
 	condition	= Info_Mine_Org_6_WichtigePersonen_Condition;
 	information	= Info_Mine_Org_6_WichtigePersonen_Info;
 	permanent	= 1;
-	description = "Chi d‡ gli ordini, qui?";
+	description = "Chi d√† gli ordini, qui?";
 };                       
 
 FUNC INT Info_Mine_Org_6_WichtigePersonen_Condition()
@@ -73,10 +73,10 @@ FUNC INT Info_Mine_Org_6_WichtigePersonen_Condition()
 
 FUNC VOID Info_Mine_Org_6_WichtigePersonen_Info()
 {
-	AI_Output(other,self,"Info_Mine_Org_6_WichtigePersonen_15_00"); //Chi d‡ gli ordini, qui?
-	AI_Output(self,other,"Info_Mine_Org_6_WichtigePersonen_06_01"); //Nessuno d‡ ordini a ME, ma bisogna guadagnarsi questa posizione privilegiata.
+	AI_Output(other,self,"Info_Mine_Org_6_WichtigePersonen_15_00"); //Chi d√† gli ordini, qui?
+	AI_Output(self,other,"Info_Mine_Org_6_WichtigePersonen_06_01"); //Nessuno d√† ordini a ME, ma bisogna guadagnarsi questa posizione privilegiata.
 	AI_Output(other,self,"Info_Mine_Org_6_WichtigePersonen_15_01"); //E tu come hai fatto?
-	AI_Output(self,other,"Info_Mine_Org_6_WichtigePersonen_06_02"); //Questo Ë un segreto! Ma detto fra noi... Non Ë poi cosÏ difficile per un ladro.
+	AI_Output(self,other,"Info_Mine_Org_6_WichtigePersonen_06_02"); //Questo √® un segreto! Ma detto fra noi... Non √® poi cos√¨ difficile per un ladro.
 };
 
 

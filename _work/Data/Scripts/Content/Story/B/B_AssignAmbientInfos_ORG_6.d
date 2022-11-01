@@ -51,7 +51,7 @@ FUNC INT Info_Org_6_EinerVonEuchWerden_Condition()
 FUNC VOID Info_Org_6_EinerVonEuchWerden_Info()
 {
 	AI_Output(other,self,"Info_Org_6_EinerVonEuchWerden_15_00"); //Voglio unirmi a voi.
-	AI_Output(self,other,"Info_Org_6_EinerVonEuchWerden_06_01"); //Lares decide chi può entrare nel gruppo.
+	AI_Output(self,other,"Info_Org_6_EinerVonEuchWerden_06_01"); //Lares decide chi puÃ² entrare nel gruppo.
 	AI_Output(self,other,"Info_Org_6_EinerVonEuchWerden_06_02"); //Ma hai bisogno di una buona ragione per incontrarlo.
 	AI_Output(other,self,"Info_Org_6_EinerVonEuchWerden_15_03"); //Tipo?
 	AI_Output(self,other,"Info_Org_6_EinerVonEuchWerden_06_04"); //Tipo qualcuno che ti manda da lui.
@@ -69,7 +69,7 @@ INSTANCE Info_Org_6_WichtigePersonen(C_INFO)
 	condition	= Info_Org_6_WichtigePersonen_Condition;
 	information	= Info_Org_6_WichtigePersonen_Info;
 	permanent	= 1;
-	description = "Chi è il capo, qui?";
+	description = "Chi Ã¨ il capo, qui?";
 };                       
 
 FUNC INT Info_Org_6_WichtigePersonen_Condition()
@@ -79,10 +79,10 @@ FUNC INT Info_Org_6_WichtigePersonen_Condition()
 
 FUNC VOID Info_Org_6_WichtigePersonen_Info()
 {
-	AI_Output(other,self,"Info_Org_6_WichtigePersonen_15_00"); //Chi è il capo?
+	AI_Output(other,self,"Info_Org_6_WichtigePersonen_15_00"); //Chi Ã¨ il capo?
 	AI_Output(self,other,"Info_Org_6_WichtigePersonen_06_01"); //Sei appena arrivato da Campo Vecchio, vero?
 	AI_Output(self,other,"Info_Org_6_WichtigePersonen_06_02"); //Qui nessuno comanda. Quel maledetto Lee prova a tenerci al guinzaglio, ma noi facciamo come ci pare.
-	AI_Output(self,other,"Info_Org_6_WichtigePersonen_06_03"); //Se avessimo un capo, sarebbe Lares. Ma lui è troppo intelligente per andarsi a impicciare degli affari altrui!
+	AI_Output(self,other,"Info_Org_6_WichtigePersonen_06_03"); //Se avessimo un capo, sarebbe Lares. Ma lui Ã¨ troppo intelligente per andarsi a impicciare degli affari altrui!
 	var C_NPC Lee;			Lee		= Hlp_GetNpc(Sld_700_Lee);
 	Lee.aivar[AIV_FINDABLE] = TRUE;
 	var C_NPC Lares;		Lares	= Hlp_GetNpc(Org_801_Lares);
@@ -99,7 +99,7 @@ INSTANCE Info_Org_6_DasLager(C_INFO)
 	condition	= Info_Org_6_DasLager_Condition;
 	information	= Info_Org_6_DasLager_Info;
 	permanent	= 1;
-	description = "C'è qualcosa che devo ancora sapere su questo posto?";
+	description = "C'Ã¨ qualcosa che devo ancora sapere su questo posto?";
 };                       
 
 FUNC INT Info_Org_6_DasLager_Condition()
@@ -109,8 +109,8 @@ FUNC INT Info_Org_6_DasLager_Condition()
 
 FUNC VOID Info_Org_6_DasLager_Info()
 {
-	AI_Output(other,self,"Info_Org_6_DasLager_15_00"); //C'è qualcosa che devo ancora sapere su questo posto?
-	AI_Output(self,other,"Info_Org_6_DasLager_06_01"); //Nel centro della caverna c'è un grosso buco pieno di metallo. Se hai intenzione di metterci le mani sopra... Beh, dimenticatelo!
+	AI_Output(other,self,"Info_Org_6_DasLager_15_00"); //C'Ã¨ qualcosa che devo ancora sapere su questo posto?
+	AI_Output(self,other,"Info_Org_6_DasLager_06_01"); //Nel centro della caverna c'Ã¨ un grosso buco pieno di metallo. Se hai intenzione di metterci le mani sopra... Beh, dimenticatelo!
 	AI_Output(self,other,"Info_Org_6_DasLager_06_02"); //Io stesso ci ho provato una volta, ma quei dannati mercenari stanno di guardia giorno e notte.
 };
 
@@ -184,7 +184,7 @@ FUNC VOID Info_Org_6_Krautprobe_Info()
 	}
 	else
 	{
-		AI_Output (self, other,"Info_Org_6_Krautprobe_No_Joint_06_00"); //Dov'è? Non ne vedo!
+		AI_Output (self, other,"Info_Org_6_Krautprobe_No_Joint_06_00"); //Dov'Ã¨? Non ne vedo!
 	};
 };
 	

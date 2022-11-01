@@ -44,7 +44,7 @@ FUNC INT DIA_Grd_214_Torwache_job_Condition()
 FUNC VOID DIA_Grd_214_Torwache_job_Info()
 {
 	AI_Output (other, self,"DIA_Grd_214_Torwache_job_15_00"); //Cosa fai tutto il giorno?
-	AI_Output (self, other,"DIA_Grd_214_Torwache_job_07_01"); //Mi assicuro che nessuno entri, se non è autorizzato da Gomez.
+	AI_Output (self, other,"DIA_Grd_214_Torwache_job_07_01"); //Mi assicuro che nessuno entri, se non Ã¨ autorizzato da Gomez.
 	AI_Output (self, other,"DIA_Grd_214_Torwache_job_07_02"); //Quindi non creare problemi quando sarai dentro o non andrai da nessuna parte.
 };
 
@@ -74,7 +74,7 @@ func void  Grd_214_Torwache_SEETHORUS_Info()
 {
 	AI_Output (self, other,"Grd_214_Torwache_SEETHORUS_Info_07_01"); //Ehi! Sono contento di vederti. Thorus ti vuole parlare.
 	AI_Output (other, self,"Grd_214_Torwache_SEETHORUS_Info_15_02"); //Cosa vuole?
-	AI_Output (self, other,"Grd_214_Torwache_SEETHORUS_Info_07_03"); //Sono sicuro che te lo dirà molto presto.
+	AI_Output (self, other,"Grd_214_Torwache_SEETHORUS_Info_07_03"); //Sono sicuro che te lo dirÃ  molto presto.
 };
 
 //-----------------------------------------------------------------
@@ -102,7 +102,7 @@ func void  Grd_214_Torwache_NODUSTY_Info()
 {
 	AI_Output			(self, other,"Grd_214_Torwache_NODUSTY_Info_07_01"); //EHI, TU!!! Non vorrai portare via di nascosto Dusty, vero?
 	AI_Output			(other, self,"Grd_214_Torwache_NODUSTY_Info_15_02"); //Volevamo solo...
-	AI_Output			(self, other,"Grd_214_Torwache_NODUSTY_Info_07_03"); //Presto non vorrai più nulla!
+	AI_Output			(self, other,"Grd_214_Torwache_NODUSTY_Info_07_03"); //Presto non vorrai piÃ¹ nulla!
 
 	AI_StopProcessInfos	(self);
 	Npc_SetTarget		(self,other);
@@ -111,6 +111,6 @@ func void  Grd_214_Torwache_NODUSTY_Info()
 	B_ExchangeRoutine	(Vlk_524_Dusty,"start");
 	var C_NPC dusty;	dusty = Hlp_GetNpc(Vlk_524_Dusty);
 	dusty.aivar[AIV_PARTYMEMBER] = FALSE;
-	dusty.flags = 0;	// Immortal löschen
+	dusty.flags = 0;	// Immortal lÃ¶schen
 };
 

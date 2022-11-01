@@ -52,8 +52,8 @@ FUNC VOID Info_Stt_12_EinerVonEuchWerden_Info()
 {
 	AI_Output(other,self,"Info_Stt_12_EinerVonEuchWerden_15_00"); //Voglio diventare un'Ombra.
 	AI_Output(self,other,"Info_Stt_12_EinerVonEuchWerden_12_01"); //Oh. Allora devi sapere che Gomez non ammette errori. Se vuoi essere uno di noi, devi essere pronto a gettarti fra le fiamme per lui!
-	AI_Output(self,other,"Info_Stt_12_EinerVonEuchWerden_12_02"); //Solo la met‡ di coloro che hanno provato sono stati accettati.
-	AI_Output(other,self,"Info_Stt_12_EinerVonEuchWerden_15_03"); //Cosa Ë successo agli altri?
+	AI_Output(self,other,"Info_Stt_12_EinerVonEuchWerden_12_02"); //Solo la met√† di coloro che hanno provato sono stati accettati.
+	AI_Output(other,self,"Info_Stt_12_EinerVonEuchWerden_15_03"); //Cosa √® successo agli altri?
 	AI_Output(self,other,"Info_Stt_12_EinerVonEuchWerden_12_04"); //Probabilmente sono a Campo Nuovo a mangiare riso. He he he.
 };
 
@@ -67,7 +67,7 @@ INSTANCE Info_Stt_12_WichtigePersonen(C_INFO)
 	condition	= Info_Stt_12_WichtigePersonen_Condition;
 	information	= Info_Stt_12_WichtigePersonen_Info;
 	permanent	= 1;
-	description = "Chi Ë il capo, qui?";
+	description = "Chi √® il capo, qui?";
 };                       
 
 FUNC INT Info_Stt_12_WichtigePersonen_Condition()
@@ -77,8 +77,8 @@ FUNC INT Info_Stt_12_WichtigePersonen_Condition()
 
 FUNC VOID Info_Stt_12_WichtigePersonen_Info()
 {
-	AI_Output(other,self,"Info_Stt_12_WichtigePersonen_15_00"); //Chi Ë il capo, qui?
-	AI_Output(self,other,"Info_Stt_12_WichtigePersonen_12_01"); //Diego Ë alla testa delle Ombre, ma Ë Thorus che decide chi puÚ incontrare Gomez.
+	AI_Output(other,self,"Info_Stt_12_WichtigePersonen_15_00"); //Chi √® il capo, qui?
+	AI_Output(self,other,"Info_Stt_12_WichtigePersonen_12_01"); //Diego √® alla testa delle Ombre, ma √® Thorus che decide chi pu√≤ incontrare Gomez.
 	
 	var C_NPC Diego;		Diego 	= Hlp_GetNpc(PC_Thief);
 	Diego.aivar[AIV_FINDABLE] = TRUE;

@@ -24,7 +24,7 @@ FUNC VOID  DIA_BaalTyon_Exit_Info()
 };
 
 // ************************************************************
-// 					NICHT ansprechbar (Ungl‰ubiger) 
+// 					NICHT ansprechbar (Ungl√§ubiger) 
 // ************************************************************
 	var int BaalTyon_Ansprechbar;
 	var int BaalTyon_Sakrileg;
@@ -104,7 +104,7 @@ func void DIA_BaalTyon_SpecialJoint()
 
 	BaalTyon_Ansprechbar = TRUE;
 	Npc_SetRefuseTalk	(self,5);
-	hero.aivar[AIV_INVINCIBLE] = FALSE; //SN: Workaround, da in diese Situation das INVINCIBLE-Flag nicht automatisch gelˆscht wird!
+	hero.aivar[AIV_INVINCIBLE] = FALSE; //SN: Workaround, da in diese Situation das INVINCIBLE-Flag nicht automatisch gel√∂scht wird!
 };
 
 // **************************************************
@@ -132,11 +132,11 @@ FUNC int  DIA_BaalTyon_Vision_Condition()
 FUNC VOID  DIA_BaalTyon_Vision_Info()
 {
 	AI_Output			(self, other,"DIA_BaalTyon_Vision_11_00"); //Per la gloria del Dormiente! Ho avuto una visione!
-	AI_Output			(self, other,"DIA_BaalTyon_Vision_11_01"); //» stato incredibile! Ho visto un nuovo fratello, diverso da tutti quelli incontrati finora.
-	AI_Output			(self, other,"DIA_BaalTyon_Vision_11_02"); //Faceva qualcosa per noi... Aveva una spada in mano e scendeva una lunga rampa di scale. Poi la visione Ë terminata.
+	AI_Output			(self, other,"DIA_BaalTyon_Vision_11_01"); //√à stato incredibile! Ho visto un nuovo fratello, diverso da tutti quelli incontrati finora.
+	AI_Output			(self, other,"DIA_BaalTyon_Vision_11_02"); //Faceva qualcosa per noi... Aveva una spada in mano e scendeva una lunga rampa di scale. Poi la visione √® terminata.
 	AI_Output			(self, other,"DIA_BaalTyon_Vision_11_03"); //Somigliava molto a TE. Chi sei? Cosa vuoi?
 	AI_Output			(other, self,"DIA_BaalTyon_Vision_15_04"); //Sono solo un umile servo del Dormiente...
-	AI_Output			(self, other,"DIA_BaalTyon_Vision_11_05"); //Vai da Cor Kalom, si occuper‡ di te.
+	AI_Output			(self, other,"DIA_BaalTyon_Vision_11_05"); //Vai da Cor Kalom, si occuper√† di te.
 	
 	self.npctype 	=	NPCTYPE_MAIN;
 	self.flags 		=	0;

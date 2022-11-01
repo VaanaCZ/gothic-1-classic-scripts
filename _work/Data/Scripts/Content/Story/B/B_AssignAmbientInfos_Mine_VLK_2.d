@@ -51,7 +51,7 @@ FUNC INT Info_Mine_Vlk_2_Mine_Condition()
 FUNC VOID Info_Mine_Vlk_2_Mine_Info()
 {
 	AI_Output(other,self,"Info_Mine_Vlk_2_Mine_15_00"); //Parlami della miniera.
-	AI_Output(self,other,"Info_Mine_Vlk_2_Mine_01_01"); //Ci sono un sacco di caverne in cui c'è ancora del metallo, ma sono infestate dai pidocchi e non è possibile lavorarci.
+	AI_Output(self,other,"Info_Mine_Vlk_2_Mine_01_01"); //Ci sono un sacco di caverne in cui c'Ã¨ ancora del metallo, ma sono infestate dai pidocchi e non Ã¨ possibile lavorarci.
 	AI_Output(self,other,"Info_Mine_Vlk_2_Mine_01_02"); //Troppi attacchi, troppe perdite.
 };
 
@@ -65,7 +65,7 @@ INSTANCE Info_Mine_Vlk_2_WichtigePersonen(C_INFO)
 	condition	= Info_Mine_Vlk_2_WichtigePersonen_Condition;
 	information	= Info_Mine_Vlk_2_WichtigePersonen_Info;
 	permanent	= 1;
-	description = "Chi è il capo, qui?";
+	description = "Chi Ã¨ il capo, qui?";
 };                       
 
 FUNC INT Info_Mine_Vlk_2_WichtigePersonen_Condition()
@@ -78,7 +78,7 @@ FUNC INT Info_Mine_Vlk_2_WichtigePersonen_Condition()
 
 FUNC VOID Info_Mine_Vlk_2_WichtigePersonen_Info()
 {
-	AI_Output(other,self,"Info_Mine_Vlk_2_WichtigePersonen_15_00"); //Chi è che comanda, qui?
+	AI_Output(other,self,"Info_Mine_Vlk_2_WichtigePersonen_15_00"); //Chi Ã¨ che comanda, qui?
 	AI_Output(self,other,"Info_Mine_Vlk_2_WichtigePersonen_01_01"); //Viper il fonditore. Sa tutto sul forno e ha un corpo d'acciaio che non soffre il caldo, quindi passa tutto il suo tempo a fondere il metallo.
 };
 
@@ -107,7 +107,7 @@ FUNC VOID Info_Mine_Vlk_2_Minecrawler_Info()
 {
 	AI_Output(other,self,"Info_Mine_Vlk_2_Minecrawler_15_00"); //Cosa mi dici dei pidocchi di miniera?
 	AI_Output(self,other,"Info_Mine_Vlk_2_Minecrawler_01_01"); //Per colpa loro, abbiamo dovuto sigillare il fondo della cava grande.
-	AI_Output(self,other,"Info_Mine_Vlk_2_Minecrawler_01_02"); //Ce ne sono dappertutto. Non li senti? Io sì!
+	AI_Output(self,other,"Info_Mine_Vlk_2_Minecrawler_01_02"); //Ce ne sono dappertutto. Non li senti? Io sÃ¬!
 };
 
 // *************************************************************************

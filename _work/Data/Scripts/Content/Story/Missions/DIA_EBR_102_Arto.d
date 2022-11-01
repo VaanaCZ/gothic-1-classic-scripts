@@ -58,7 +58,7 @@ INSTANCE DIA_ARTO_What (C_INFO)
 	condition	= DIA_ARTO_What_Condition;
 	information	= DIA_ARTO_What_Info;
 	permanent	= 0;
-	description = "PerchÈ giri qui intorno?";
+	description = "Perch√© giri qui intorno?";
 };                       
 
 FUNC INT DIA_ARTO_What_Condition()
@@ -71,7 +71,7 @@ FUNC INT DIA_ARTO_What_Condition()
 
 FUNC VOID DIA_ARTO_What_Info()
 {	
-	AI_Output (other, self,"DIA_ARTO_What_15_00"); //PerchÈ ti aggiri qua intorno?
+	AI_Output (other, self,"DIA_ARTO_What_15_00"); //Perch√© ti aggiri qua intorno?
 	AI_Output (self, other,"DIA_ARTO_What_13_01"); //Sono la guardia del corpo di Gomez.
 };
 
@@ -100,6 +100,6 @@ FUNC INT DIA_ARTO_PERM_Condition()
 FUNC VOID DIA_ARTO_PERM_Info()
 {	
 	AI_Output (other, self,"DIA_ARTO_PERM_15_00"); //Non parli molto, vero?
-	AI_Output (self, other,"DIA_ARTO_PERM_13_01"); //Gi‡.
+	AI_Output (self, other,"DIA_ARTO_PERM_13_01"); //Gi√†.
 };
 

@@ -7,11 +7,11 @@
 //	Uhrzeit:
 //
 //	Es passiert folgendes:
-//	1.	Nähert sich der Spieler dem Durchgang, so wird er in diesen
+//	1.	NÃ¤hert sich der Spieler dem Durchgang, so wird er in diesen
 //		Dialog gezwungen und einmal gewarnt
-//	2.	Nähert sich der SC trotzdem weiter, so wird er ein ZWEITES Mal
+//	2.	NÃ¤hert sich der SC trotzdem weiter, so wird er ein ZWEITES Mal
 //		gewarnt (aggressiver mit Waffe ziehen)
-//	3.	Nähert er sich trotzdem wieder, wird er angegriffen
+//	3.	NÃ¤hert er sich trotzdem wieder, wird er angegriffen
 //////////////////////////////////////////////////////////////////////////
 const string	TPL_1442_CHECKPOINT		= "PSI_TEMPLE_IN";
 
@@ -62,13 +62,13 @@ func void Info_TPL_1442_FirstWarn_Info()
 func void Info_TPL_1442_FirstWarn_Condition_YBERION ()
 {
 	AI_Output (hero, self,"Info_TPL_1442_FirstWarn_Condition_YBERION_15_01"); //Ho l'autorizzazione di Y'Berion in persona.
-	AI_Output (self, hero,"Info_TPL_1442_FirstWarn_Condition_YBERION_13_02"); //Da queste parti i bugiardi perdono facilmente la lingua. Attento a ciò che dici!
+	AI_Output (self, hero,"Info_TPL_1442_FirstWarn_Condition_YBERION_13_02"); //Da queste parti i bugiardi perdono facilmente la lingua. Attento a ciÃ² che dici!
 };
 
 func void Info_TPL_1442_FirstWarn_Condition_LESTER ()
 {
 	AI_Output (hero, self,"Info_TPL_1442_FirstWarn_Condition_LESTER_15_01"); //Mi manda Lester il novizio, per offrire i miei servizi a Y'Berion.
-	AI_Output (self, hero,"Info_TPL_1442_FirstWarn_Condition_LESTER_13_02"); //Lester è affidabile, lo conosco. Puoi passare.
+	AI_Output (self, hero,"Info_TPL_1442_FirstWarn_Condition_LESTER_13_02"); //Lester Ã¨ affidabile, lo conosco. Puoi passare.
 	Info_Clearchoices 	(Info_TPL_1442_FirstWarn);
 
 	//---- beide Wachen auf passieren schalten ----
@@ -144,7 +144,7 @@ func int Info_TPL_1442_Attack_Info()
 	hero.aivar[AIV_GUARDPASSAGE_STATUS]	= AIV_GPS_PUNISH;	
 	
 	B_FullStop			(self);	
-	AI_StopProcessInfos	(self);					// dem Spieler sofort wieder die Kontrolle zurückgeben
+	AI_StopProcessInfos	(self);					// dem Spieler sofort wieder die Kontrolle zurÃ¼ckgeben
 	B_IntruderAlert		(self,	other);
 	B_SetAttackReason	(self,	AIV_AR_INTRUDER);
 	Npc_SetTarget		(self,	hero);

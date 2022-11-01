@@ -60,7 +60,7 @@ INSTANCE Info_GRD_276_Bla(C_INFO)
 	condition	= Info_GRD_276_Bla_Condition;
 	information	= Info_GRD_276_Bla_Info;
 	permanent	= 1;
-	description = "È quello Campo Vecchio?";
+	description = "Ãˆ quello Campo Vecchio?";
 };                       
 
 FUNC INT Info_GRD_276_Bla_Condition()
@@ -73,7 +73,7 @@ FUNC INT Info_GRD_276_Bla_Condition()
 
 FUNC VOID Info_GRD_276_Bla_Info()
 {
-	AI_Output (other,self,"Info_GRD_276_Bla_15_00"); //È quello Campo Vecchio?
-	AI_Output (self,other,"Info_GRD_276_Bla_07_01"); //No, quello è Campo Nuovo. Campo Vecchio è sotto il ponte.
+	AI_Output (other,self,"Info_GRD_276_Bla_15_00"); //Ãˆ quello Campo Vecchio?
+	AI_Output (self,other,"Info_GRD_276_Bla_07_01"); //No, quello Ã¨ Campo Nuovo. Campo Vecchio Ã¨ sotto il ponte.
 	AI_StopProcessInfos(self);
 };

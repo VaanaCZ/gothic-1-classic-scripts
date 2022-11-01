@@ -43,7 +43,7 @@ FUNC INT DIA_Scatty_WhatDoYouDo_Condition()
 
 FUNC VOID DIA_Scatty_WhatDoYouDo_Info()
 {
-	AI_Output (other,self,"DIA_Scatty_WhatDoYouDo_15_00"); //Qual Ë il tuo compito?
+	AI_Output (other,self,"DIA_Scatty_WhatDoYouDo_15_00"); //Qual √® il tuo compito?
 	AI_Output (self,other,"DIA_Scatty_WhatDoYouDo_01_01"); //Sono responsabile dell'arena. Organizzo le scommesse, ingaggio i nuovi combattenti...
 };
 
@@ -77,7 +77,7 @@ FUNC VOID DIA_Scatty_JoinOC_Info()
 	AI_Output (other,self,"DIA_Scatty_JoinOC_15_00"); //Voglio unirmi al campo. Puoi aiutarmi?
 	AI_Output (self,other,"DIA_Scatty_JoinOC_01_01"); //Potrei, se tu riuscissi a farmi una buona impressione.
 	AI_Output (self,other,"DIA_Scatty_JoinOC_01_02"); //Alcuni fra i migliori combattenti di tutti e tre i campi vengono qui per sfidarsi.
-	AI_Output (self,other,"DIA_Scatty_JoinOC_01_03"); //Sfidane uno. Io guarderÚ e, se sarai in gamba, forse ci penserÚ su.
+	AI_Output (self,other,"DIA_Scatty_JoinOC_01_03"); //Sfidane uno. Io guarder√≤ e, se sarai in gamba, forse ci penser√≤ su.
 	
 	Scatty_ChargeKirgo = LOG_RUNNING;
 	Scatty_ChargeKharim = LOG_RUNNING;
@@ -86,7 +86,7 @@ FUNC VOID DIA_Scatty_JoinOC_Info()
 	var C_NPC Kharim;	Kharim = Hlp_GetNpc(Sld_729_Kharim);		Kharim.aivar[AIV_WASDEFEATEDBYSC] = FALSE;		Kharim.aivar[AIV_HASDEFEATEDSC] = FALSE;
 	var C_NPC GorHanis;	GorHanis = Hlp_GetNpc(Tpl_1422_GorHanis);	GorHanis.aivar[AIV_WASDEFEATEDBYSC] = FALSE;	GorHanis.aivar[AIV_HASDEFEATEDSC] = FALSE;
 	
-	B_LogEntry( CH1_JoinOC,"Scatty, il gestore dell'arena, rimarr‡ molto colpito se sfiderÚ uno dei suoi combattenti.");
+	B_LogEntry( CH1_JoinOC,"Scatty, il gestore dell'arena, rimarr√† molto colpito se sfider√≤ uno dei suoi combattenti.");
 };
 
 // **************************************************
@@ -124,14 +124,14 @@ FUNC VOID DIA_Scatty_KirgoSuccess_Info()
 		AI_Output (self,other,"DIA_Scatty_KirgoSuccess_01_02"); //Ovviamente non crederai di avermi impressionato...
 		Scatty_ChargeKirgo = LOG_FAILED;
 		
-		B_LogEntry( CH1_JoinOC,"Scatty non Ë rimasto molto colpito dalla mia sconfitta contro Kirgo.");
+		B_LogEntry( CH1_JoinOC,"Scatty non √® rimasto molto colpito dalla mia sconfitta contro Kirgo.");
 	}
 	else if (Kirgo.aivar[AIV_WASDEFEATEDBYSC] == TRUE)
 	{
 		AI_Output (self,other,"DIA_Scatty_KirgoSuccess_01_03"); //E l'hai sconfitto! Non male, per un principiante!
 		Scatty_ChargeKirgo = LOG_SUCCESS;
 		
-		B_LogEntry( CH1_JoinOC,"Scatty Ë rimasto colpito dal mio combattimento con Kirgo.");
+		B_LogEntry( CH1_JoinOC,"Scatty √® rimasto colpito dal mio combattimento con Kirgo.");
 		B_GiveXP (XP_kirgovictory);
 	};
 };
@@ -180,18 +180,18 @@ FUNC VOID DIA_Scatty_KHARIMSuccess_Info()
 	}
 	else if (KHARIM.aivar[AIV_WASDEFEATEDBYSC] == TRUE)
 	{
-		AI_Output (self,other,"DIA_Scatty_KHARIMSuccess_01_04"); //E l'hai sconfitto! Devo ammetterlo: te la sei cavata bene! » sempre stato uno dei combattenti pi˘ forti.
+		AI_Output (self,other,"DIA_Scatty_KHARIMSuccess_01_04"); //E l'hai sconfitto! Devo ammetterlo: te la sei cavata bene! √à sempre stato uno dei combattenti pi√π forti.
 		AI_Output (self,other,"DIA_Scatty_KHARIMSuccess_01_05"); //Sono davvero colpito!
 		Scatty_ChargeKHARIM = LOG_SUCCESS;
 		
-		B_LogEntry( CH1_JoinOC,"Ho battuto Kharim! Scatty Ë rimasto molto colpito.");
+		B_LogEntry( CH1_JoinOC,"Ho battuto Kharim! Scatty √® rimasto molto colpito.");
 		B_GiveXP(XP_kharimvictory);
 	};
 };
 
 
 // **************************************************
-// 				 Warum andere Lager K‰mpfer
+// 				 Warum andere Lager K√§mpfer
 // **************************************************
 
 INSTANCE DIA_Scatty_OtherCamps (C_INFO)
@@ -201,7 +201,7 @@ INSTANCE DIA_Scatty_OtherCamps (C_INFO)
 	condition	= DIA_Scatty_OtherCamps_Condition;
 	information	= DIA_Scatty_OtherCamps_Info;
 	permanent	= 0;
-	description = "PerchÈ permetti alla gente di altri campi di combattere qui?";
+	description = "Perch√© permetti alla gente di altri campi di combattere qui?";
 };                       
 
 FUNC INT DIA_Scatty_OtherCamps_Condition()
@@ -214,10 +214,10 @@ FUNC INT DIA_Scatty_OtherCamps_Condition()
 
 FUNC VOID DIA_Scatty_OtherCamps_Info()
 {
-	AI_Output (other,self,"DIA_Scatty_OtherCamps_15_00"); //Pensavo che Campo Vecchio e Campo Nuovo non fossero in gamba. PerchÈ permetti alla loro gente di combattere qui?
-	AI_Output (self,other,"DIA_Scatty_OtherCamps_01_01"); //» semplice: si combatte una volta alla settimana, ai minatori piace vedere un ladro di Campo Nuovo che viene fatto a pezzi.
-	AI_Output (self,other,"DIA_Scatty_OtherCamps_01_02"); //Se uno di loro combatte, le scommesse aumentano, e questo Ë ottimo per il mio lavoro!
-	AI_Output (self,other,"DIA_Scatty_OtherCamps_01_03"); //Personalmente, detesto quei porci di Campo Nuovo. Ma il lavoro Ë lavoro...
+	AI_Output (other,self,"DIA_Scatty_OtherCamps_15_00"); //Pensavo che Campo Vecchio e Campo Nuovo non fossero in gamba. Perch√© permetti alla loro gente di combattere qui?
+	AI_Output (self,other,"DIA_Scatty_OtherCamps_01_01"); //√à semplice: si combatte una volta alla settimana, ai minatori piace vedere un ladro di Campo Nuovo che viene fatto a pezzi.
+	AI_Output (self,other,"DIA_Scatty_OtherCamps_01_02"); //Se uno di loro combatte, le scommesse aumentano, e questo √® ottimo per il mio lavoro!
+	AI_Output (self,other,"DIA_Scatty_OtherCamps_01_03"); //Personalmente, detesto quei porci di Campo Nuovo. Ma il lavoro √® lavoro...
 };
 
 // **************************************************
@@ -246,12 +246,12 @@ FUNC VOID DIA_Scatty_WannaBet_Info()
 {
 	AI_Output (other,self,"DIA_Scatty_WannaBet_15_00"); //Voglio scommettere.
 	AI_Output (self,other,"DIA_Scatty_WannaBet_01_01"); //Ma non ci sono combattimenti.
-	AI_Output (self,other,"DIA_Scatty_WannaBet_01_02"); //Il prossimo avr‡ luogo fra un paio di giorni. FarÚ un annuncio pubblico.
+	AI_Output (self,other,"DIA_Scatty_WannaBet_01_02"); //Il prossimo avr√† luogo fra un paio di giorni. Far√≤ un annuncio pubblico.
 	
 };
 
 // **************************************************
-// 					Will K‰mpfen
+// 					Will K√§mpfen
 // **************************************************
 
 INSTANCE DIA_Scatty_WannaFight (C_INFO)
@@ -275,7 +275,7 @@ FUNC INT DIA_Scatty_WannaFight_Condition()
 FUNC VOID DIA_Scatty_WannaFight_Info()
 {
 	AI_Output (other,self,"DIA_Scatty_WannaFight_15_00"); //Voglio combattere nell'arena!
-	AI_Output (self,other,"DIA_Scatty_WannaFight_01_01"); //Non posso permetterlo, finchÈ non ti sarai unito a uno dei campi.
+	AI_Output (self,other,"DIA_Scatty_WannaFight_01_01"); //Non posso permetterlo, finch√© non ti sarai unito a uno dei campi.
 	AI_Output (self,other,"DIA_Scatty_WannaFight_01_02"); //A nessuno interessa un combattente indipendente!
 };
 
@@ -306,11 +306,11 @@ FUNC VOID DIA_Scatty_TRAIN_Info()
 	if( log_scattytrain == FALSE)
 	{
 	Log_CreateTopic   	(GE_TeacherOC,LOG_NOTE);
-    B_LogEntry(GE_TeacherOC,"Scatty, il gestore dell'arena, puÚ insegnarmi a combattere con le ARMI A UNA MANO.");
+    B_LogEntry(GE_TeacherOC,"Scatty, il gestore dell'arena, pu√≤ insegnarmi a combattere con le ARMI A UNA MANO.");
     log_scattytrain = TRUE;
     };
 	AI_Output (other,self,"DIA_Scatty_TRAIN_15_00"); //Tu addestri i combattenti?
-	AI_Output (self,other,"DIA_Scatty_TRAIN_01_01"); //SÏ, ma non per divertimento. Se desideri che ti addestri, devi pagare.
+	AI_Output (self,other,"DIA_Scatty_TRAIN_01_01"); //S√¨, ma non per divertimento. Se desideri che ti addestri, devi pagare.
 
 
 	Info_ClearChoices	(DIA_Scatty_TRAIN );
@@ -332,19 +332,19 @@ func void DIA_Scatty_TRAIN_BACK()
 
 func void DIA_Scatty_TRAIN_1h()
 {
-	AI_Output (other,self,"DIA_Scatty_TRAIN_1h_15_00"); //Voglio migliorare la mia abilit‡ con le armi a una sola mano.
+	AI_Output (other,self,"DIA_Scatty_TRAIN_1h_15_00"); //Voglio migliorare la mia abilit√† con le armi a una sola mano.
 	
 	if (Npc_HasItems(other,itminugget) >= 50)
 	{
 		if (B_GiveSkill(other, NPC_TALENT_1H, 1, LPCOST_TALENT_1H_1))
 		{
 			AI_Output (self,other,"DIA_Scatty_TRAIN_1h_01_01"); //Ottima decisione! Prima di migliorare la tecnica, devi imparare a tenere l'arma.
-			AI_Output (self,other,"DIA_Scatty_TRAIN_1h_01_02"); //Spesso i principianti tendono a tenere queste armi con entrambe le mani. Non prendere quest'abitudine, non ti aiuter‡.
+			AI_Output (self,other,"DIA_Scatty_TRAIN_1h_01_02"); //Spesso i principianti tendono a tenere queste armi con entrambe le mani. Non prendere quest'abitudine, non ti aiuter√†.
 			AI_Output (self,other,"DIA_Scatty_TRAIN_1h_01_03"); //Afferra l'arma con una mano, con la lama rivolta verso l'alto, e falla oscillare.
-			AI_Output (self,other,"DIA_Scatty_TRAIN_1h_01_04"); //Devi imparare a coordinare il movimento dell'arma con quello del corpo, per colpire pi˘ velocemente.
-			AI_Output (self,other,"DIA_Scatty_TRAIN_1h_01_05"); //Tieni a mente ciÚ che ti ho insegnato e i tuoi combattimenti saranno pi˘ veloci ed eleganti.
-			AI_Output (self,other,"DIA_Scatty_TRAIN_1h_01_06"); //Ah, gi‡! Ancora una cosa: alcuni colpi causano pi˘ danni di altri! Come principiante, non hai molte possibilit‡ di sferrare un colpo mortale.
-			AI_Output (self,other,"DIA_Scatty_TRAIN_1h_01_07"); //Comunque, man mano che progredirai, ti sar‡ pi˘ facile.
+			AI_Output (self,other,"DIA_Scatty_TRAIN_1h_01_04"); //Devi imparare a coordinare il movimento dell'arma con quello del corpo, per colpire pi√π velocemente.
+			AI_Output (self,other,"DIA_Scatty_TRAIN_1h_01_05"); //Tieni a mente ci√≤ che ti ho insegnato e i tuoi combattimenti saranno pi√π veloci ed eleganti.
+			AI_Output (self,other,"DIA_Scatty_TRAIN_1h_01_06"); //Ah, gi√†! Ancora una cosa: alcuni colpi causano pi√π danni di altri! Come principiante, non hai molte possibilit√† di sferrare un colpo mortale.
+			AI_Output (self,other,"DIA_Scatty_TRAIN_1h_01_07"); //Comunque, man mano che progredirai, ti sar√† pi√π facile.
 			B_GiveInvItems(other,self,itminugget,50);
 		};
 	}
@@ -362,8 +362,8 @@ func void DIA_Scatty_TRAIN_2h()
 	{
 		if (B_GiveSkill(other, NPC_TALENT_1H, 2, LPCOST_TALENT_1H_2))
 		{
-			AI_Output (self, other,"DIA_Scatty_TRAIN_2h_Info_01_02"); //Bene. Le basi le conosci gi‡. Tenendo bassa l'arma, il tuo primo colpo sar‡ pi˘ potente.
-			AI_Output (self, other,"DIA_Scatty_TRAIN_2h_Info_01_03"); //Ricordi? Sfrutta l'oscillazione! Bene, ora devi usare di pi˘ il corpo. Quando hai colpito due volte, gira su te stesso. CiÚ confonder‡ l'avversario e ti metter‡ in una posizione privilegiata.
+			AI_Output (self, other,"DIA_Scatty_TRAIN_2h_Info_01_02"); //Bene. Le basi le conosci gi√†. Tenendo bassa l'arma, il tuo primo colpo sar√† pi√π potente.
+			AI_Output (self, other,"DIA_Scatty_TRAIN_2h_Info_01_03"); //Ricordi? Sfrutta l'oscillazione! Bene, ora devi usare di pi√π il corpo. Quando hai colpito due volte, gira su te stesso. Ci√≤ confonder√† l'avversario e ti metter√† in una posizione privilegiata.
 			AI_Output (self, other,"DIA_Scatty_TRAIN_2h_Info_01_04"); //A questo punto, porta nuovamente la lama da destra a sinistra.
 			AI_Output (self, other,"DIA_Scatty_TRAIN_2h_Info_01_05"); //E di nuovo davanti. Non dimenticare: l'esercizio rende perfetti. Quindi continua a fare pratica con le armi a una mano.
 			B_GiveInvItems(other,self,itminugget,150);

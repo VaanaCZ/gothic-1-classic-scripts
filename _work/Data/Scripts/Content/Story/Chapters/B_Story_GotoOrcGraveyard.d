@@ -11,8 +11,8 @@ func void B_Story_GotoOrcGraveyard()
 	//-------- Tagebucheintrag --------
 	Log_CreateTopic		(CH3_OrcGraveyard,	LOG_MISSION);
 	Log_SetTopicStatus	(CH3_OrcGraveyard,	LOG_RUNNING);
-	B_LogEntry			(CH3_OrcGraveyard,"La grande evocazione del Dormiente non è stata all'altezza delle aspettative. Si è risolto tutto con qualche vaga immagine di orchi nelle loro caverne. Y'Berion, capo spirituale della Fratellanza, ha perso conoscenza per il troppo sforzo!"); 
-	B_LogEntry			(CH3_OrcGraveyard,"Cor Angar, capo dei templari, mi ha chiesto di recarmi al cimitero degli orchi, un sistema di caverne vicino a Campo Palude. Il guru Baal Lukor è già lì con alcuni templari per cercare alcune tracce che gli permettano di capire meglio la visione degli orchi.");
+	B_LogEntry			(CH3_OrcGraveyard,"La grande evocazione del Dormiente non Ã¨ stata all'altezza delle aspettative. Si Ã¨ risolto tutto con qualche vaga immagine di orchi nelle loro caverne. Y'Berion, capo spirituale della Fratellanza, ha perso conoscenza per il troppo sforzo!"); 
+	B_LogEntry			(CH3_OrcGraveyard,"Cor Angar, capo dei templari, mi ha chiesto di recarmi al cimitero degli orchi, un sistema di caverne vicino a Campo Palude. Il guru Baal Lukor Ã¨ giÃ  lÃ¬ con alcuni templari per cercare alcune tracce che gli permettano di capire meglio la visione degli orchi.");
 	
 	//-------- Templer und Orks vor Ork-Friedhof setzen --------
 	// mitten auf dem Vorplatz 
@@ -21,7 +21,7 @@ func void B_Story_GotoOrcGraveyard()
 	Wld_InsertNpc		(OrcBiter,			"OW_PATH_198_ORCGRAVEYARD4");
 	Wld_InsertNpc		(OrcBiter,			"OW_PATH_198_ORCGRAVEYARD4");
 
-	// vor dem Höhleneingang 
+	// vor dem HÃ¶hleneingang 
 	Wld_InsertNpc		(OrcScout,			"OW_PATH_198_ORCGRAVEYARD5");
 	Wld_InsertNpc		(OrcScout,			"OW_PATH_198_ORCGRAVEYARD6");
 	Wld_InsertNpc		(OrcScout,			"OW_PATH_198_ORCGRAVEYARD7");

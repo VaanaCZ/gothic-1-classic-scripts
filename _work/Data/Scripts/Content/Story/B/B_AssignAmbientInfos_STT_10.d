@@ -37,7 +37,7 @@ INSTANCE Info_Stt_10_EinerVonEuchWerden (C_INFO) // E1
 	condition	= Info_Stt_10_EinerVonEuchWerden_Condition;
 	information	= Info_Stt_10_EinerVonEuchWerden_Info;
 	permanent	= 1;
-	description = "Voglio diventare un’Ombra.";
+	description = "Voglio diventare unâ€™Ombra.";
 };                       
 
 FUNC INT Info_Stt_10_EinerVonEuchWerden_Condition()
@@ -51,14 +51,14 @@ FUNC INT Info_Stt_10_EinerVonEuchWerden_Condition()
 FUNC VOID Info_Stt_10_EinerVonEuchWerden_Info()
 {
 	AI_Output(other,self,"Info_Stt_10_EinerVonEuchWerden_15_00"); //Voglio diventare un Ombra.
-	AI_Output(self,other,"Info_Stt_10_EinerVonEuchWerden_10_01"); //Davvero? Hai già parlato con Diego?
+	AI_Output(self,other,"Info_Stt_10_EinerVonEuchWerden_10_01"); //Davvero? Hai giÃ  parlato con Diego?
 	
 	var C_NPC Diego;		Diego 	= Hlp_GetNpc(PC_Thief);
 	Diego.aivar[AIV_FINDABLE] = TRUE;
 	
 	Info_ClearChoices(Info_Stt_10_EinerVonEuchWerden);
 	Info_AddChoice(Info_Stt_10_EinerVonEuchWerden,"No.", Info_Stt_10_EinerVonEuchWerden_Nein);
-	Info_AddChoice(Info_Stt_10_EinerVonEuchWerden,"Sì.", Info_Stt_10_EinerVonEuchWerden_Ja);
+	Info_AddChoice(Info_Stt_10_EinerVonEuchWerden,"SÃ¬.", Info_Stt_10_EinerVonEuchWerden_Ja);
 };
 
 FUNC VOID Info_Stt_10_EinerVonEuchWerden_Nein()
@@ -70,8 +70,8 @@ FUNC VOID Info_Stt_10_EinerVonEuchWerden_Nein()
 
 FUNC VOID Info_Stt_10_EinerVonEuchWerden_Ja()
 {
-	AI_Output(other,self,"Info_Stt_10_EinerVonEuchWerden_Ja_15_00"); //Sì, l'ho fatto.
-	AI_Output(self,other,"Info_Stt_10_EinerVonEuchWerden_Ja_10_01"); //Bene. Allora fai come dice, Non mi farà alcun male. Beh, almeno non troppo.
+	AI_Output(other,self,"Info_Stt_10_EinerVonEuchWerden_Ja_15_00"); //SÃ¬, l'ho fatto.
+	AI_Output(self,other,"Info_Stt_10_EinerVonEuchWerden_Ja_10_01"); //Bene. Allora fai come dice, Non mi farÃ  alcun male. Beh, almeno non troppo.
 	Info_ClearChoices(Info_Stt_10_EinerVonEuchWerden);
 };
 
@@ -96,7 +96,7 @@ FUNC INT Info_Stt_10_WichtigePersonen_Condition()
 FUNC VOID Info_Stt_10_WichtigePersonen_Info()
 {
 	AI_Output(other,self,"Info_Stt_10_WichtigePersonen_15_00"); //Chi devo incontrare?
-	AI_Output(self,other,"Info_Stt_10_WichtigePersonen_10_01"); //Se hai problemi con le guardie, vai a parlare con Gravo. Lo troverai alle terme, vicino all'entrata del castello. Si occupa delle persone che si mettono nei guai. Succede più facilmente di quanto pensi, specialmente ai novellini.
+	AI_Output(self,other,"Info_Stt_10_WichtigePersonen_10_01"); //Se hai problemi con le guardie, vai a parlare con Gravo. Lo troverai alle terme, vicino all'entrata del castello. Si occupa delle persone che si mettono nei guai. Succede piÃ¹ facilmente di quanto pensi, specialmente ai novellini.
 };
 
 // *************************************************************************
@@ -120,8 +120,8 @@ FUNC INT Info_Stt_10_DasLager_Condition()
 FUNC VOID Info_Stt_10_DasLager_Info()
 {
 	AI_Output(other,self,"Info_Stt_10_DasLager_15_00"); //Cosa mi dici del campo?
-	AI_Output(self,other,"Info_Stt_10_DasLager_10_01"); //Credo che il posto più interessante sia la piazza del mercato. Se cerchi qualcosa, quello è il posto in cui andare.
-	AI_Output(self,other,"Info_Stt_10_DasLager_10_02"); //È la piazza sotto la grande volta, a sud dell'Anello Esterno.
+	AI_Output(self,other,"Info_Stt_10_DasLager_10_01"); //Credo che il posto piÃ¹ interessante sia la piazza del mercato. Se cerchi qualcosa, quello Ã¨ il posto in cui andare.
+	AI_Output(self,other,"Info_Stt_10_DasLager_10_02"); //Ãˆ la piazza sotto la grande volta, a sud dell'Anello Esterno.
 };
 
 // *************************************************************************
