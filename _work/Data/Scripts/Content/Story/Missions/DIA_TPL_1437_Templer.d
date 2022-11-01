@@ -30,7 +30,7 @@ instance  Tpl_1437_Templer_NERV (C_INFO)
 	information		= Tpl_1437_Templer_NERV_Info;
 	important		= 0;
 	permanent		= 1;
-	description		= "Co s³ychaæ?"; 
+	description		= "Co sÅ‚ychaÄ‡?"; 
 };
 
 FUNC int  Tpl_1437_Templer_NERV_Condition()
@@ -41,8 +41,8 @@ FUNC int  Tpl_1437_Templer_NERV_Condition()
 
 FUNC void  Tpl_1437_Templer_NERV_Info()
 {
-	AI_Output (other, self,"Tpl_1437_Templer_NERV_Info_15_01"); //Co s³ychaæ?
-	AI_Output (self, other,"Tpl_1437_Templer_NERV_Info_13_02"); //S³uchaj, móg³byœ przestaæ zawracaæ nam g³owê?
+	AI_Output (other, self,"Tpl_1437_Templer_NERV_Info_15_01"); //Co sÅ‚ychaÄ‡?
+	AI_Output (self, other,"Tpl_1437_Templer_NERV_Info_13_02"); //SÅ‚uchaj, mÃ³gÅ‚byÅ› przestaÄ‡ zawracaÄ‡ nam gÅ‚owÄ™?
 	AI_StopProcessInfos	( self );
 };  
 // ERNEUTES ANSPRECHEN ------------------------------------
@@ -53,7 +53,7 @@ instance  Tpl_1437_Templer_LEAVE (C_INFO)
 	information		= Tpl_1437_Templer_LEAVE_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Wszystko w porz¹dku?"; 
+	description		= "Wszystko w porzÄ…dku?"; 
 };
 
 FUNC int  Tpl_1437_Templer_LEAVE_Condition()
@@ -66,8 +66,8 @@ FUNC int  Tpl_1437_Templer_LEAVE_Condition()
 };
 FUNC void  Tpl_1437_Templer_LEAVE_Info()
 {
-	AI_Output (other, self,"Tpl_1437_Templer_LEAVE_Info_15_01"); //Wszystko w porz¹dku?
-	AI_Output (self, other,"Tpl_1437_Templer_LEAVE_Info_13_02"); //Potrzebujê chwili spokoju, jasne? IdŸ st¹d i zajmij siê czymœ po¿ytecznym!
+	AI_Output (other, self,"Tpl_1437_Templer_LEAVE_Info_15_01"); //Wszystko w porzÄ…dku?
+	AI_Output (self, other,"Tpl_1437_Templer_LEAVE_Info_13_02"); //PotrzebujÄ™ chwili spokoju, jasne? IdÅº stÄ…d i zajmij siÄ™ czymÅ› poÅ¼ytecznym!
 	AI_StopProcessInfos	( self );
 };
 // ERNEUTES ANSPRECHEN ------------------------------------
@@ -92,12 +92,12 @@ FUNC int  Tpl_1437_Templer_LEAVENOW_Condition()
 FUNC void  Tpl_1437_Templer_LEAVENOW_Info()
 {
 	AI_Output (other, self,"Tpl_1437_Templer_LEAVENOW_Info_15_01"); //Nie rozumiem!
-	AI_Output (self, other,"Tpl_1437_Templer_LEAVENOW_Info_13_02"); //No to spróbujê wyra¿aæ siê jaœniej.
+	AI_Output (self, other,"Tpl_1437_Templer_LEAVENOW_Info_13_02"); //No to sprÃ³bujÄ™ wyraÅ¼aÄ‡ siÄ™ jaÅ›niej.
 	AI_Output (self, other,"Tpl_1437_Templer_LEAVENOW_Info_13_03"); //SPADAJ!
-	AI_Output (self, other,"Tpl_1437_Templer_LEAVENOW_Info_13_04"); //Opuœæ tê kopalniê!
-	AI_Output (self, other,"Tpl_1437_Templer_LEAVENOW_Info_13_05"); //NIGDY WIÊCEJ SIÊ DO MNIE NIE ODZYWAJ!
-	AI_Output (self, other,"Tpl_1437_Templer_LEAVENOW_Info_13_06"); //IdŸ sobie! Zostaw mnie w spokoju.
-	AI_Output (self, other,"Tpl_1437_Templer_LEAVENOW_Info_13_07"); //SPADAJ ST¥D!
+	AI_Output (self, other,"Tpl_1437_Templer_LEAVENOW_Info_13_04"); //OpuÅ›Ä‡ tÄ™ kopalniÄ™!
+	AI_Output (self, other,"Tpl_1437_Templer_LEAVENOW_Info_13_05"); //NIGDY WIÄ˜CEJ SIÄ˜ DO MNIE NIE ODZYWAJ!
+	AI_Output (self, other,"Tpl_1437_Templer_LEAVENOW_Info_13_06"); //IdÅº sobie! Zostaw mnie w spokoju.
+	AI_Output (self, other,"Tpl_1437_Templer_LEAVENOW_Info_13_07"); //SPADAJ STÄ„D!
 	AI_StopProcessInfos	( self );
 };
 

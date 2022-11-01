@@ -46,8 +46,8 @@ FUNC int DIA_Gilbert_First_Condition()
 
 FUNC VOID  DIA_Gilbert_First_Info()
 {
-	AI_Output (self, other,"DIA_Gilbert_First_04_00"); //Co tu robisz? Nie miewam tu zbyt czêsto goœci, he he!
-	AI_Output (self, other,"DIA_Gilbert_First_04_01"); //Widzê, ¿e niez³y cwaniak z ciebie. Tak znaleŸæ moj¹ kryjówkê, no no!
+	AI_Output (self, other,"DIA_Gilbert_First_04_00"); //Co tu robisz? Nie miewam tu zbyt czÄ™sto goÅ›ci, he he!
+	AI_Output (self, other,"DIA_Gilbert_First_04_01"); //WidzÄ™, Å¼e niezÅ‚y cwaniak z ciebie. Tak znaleÅºÄ‡ mojÄ… kryjÃ³wkÄ™, no no!
 	
 	B_GiveXP(XP_GilbertFound);
 };
@@ -74,8 +74,8 @@ FUNC int DIA_Gilbert_Hallo_Condition()
 FUNC VOID  DIA_Gilbert_Hallo_Info()
 {
 	AI_Output (other, self,"DIA_Gilbert_Hallo_15_00"); //Co tu robisz?
-	AI_Output (self, other,"DIA_Gilbert_Hallo_04_01"); //Mia³em ju¿ doœæ Starego Obozu. Podpad³em paru ludziom Gomeza. To by³o dawno temu.
-	AI_Output (self, other,"DIA_Gilbert_Hallo_04_02"); //Teraz pewnie nikt ju¿ o mnie nie pamiêta, ale ja siê st¹d nie ruszam. Jak na mój gust - w Starym Obozie wci¹¿ jest za du¿o têpych osi³ków.
+	AI_Output (self, other,"DIA_Gilbert_Hallo_04_01"); //MiaÅ‚em juÅ¼ doÅ›Ä‡ Starego Obozu. PodpadÅ‚em paru ludziom Gomeza. To byÅ‚o dawno temu.
+	AI_Output (self, other,"DIA_Gilbert_Hallo_04_02"); //Teraz pewnie nikt juÅ¼ o mnie nie pamiÄ™ta, ale ja siÄ™ stÄ…d nie ruszam. Jak na mÃ³j gust - w Starym Obozie wciÄ…Å¼ jest za duÅ¼o tÄ™pych osiÅ‚kÃ³w.
 };
 
 

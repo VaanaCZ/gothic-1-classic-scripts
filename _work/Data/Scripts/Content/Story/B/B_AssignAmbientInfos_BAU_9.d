@@ -37,7 +37,7 @@ INSTANCE Info_Bau_9_WichtigePersonen(C_INFO)
 	condition	= Info_Bau_9_WichtigePersonen_Condition;
 	information	= Info_Bau_9_WichtigePersonen_Info;
 	permanent	= 1;
-	description = "Kto pilnuje, by praca w polu przebiega³a bez przeszkód?";
+	description = "Kto pilnuje, by praca w polu przebiegaÅ‚a bez przeszkÃ³d?";
 };                       
 
 FUNC INT Info_Bau_9_WichtigePersonen_Condition()
@@ -47,9 +47,9 @@ FUNC INT Info_Bau_9_WichtigePersonen_Condition()
 
 FUNC VOID Info_Bau_9_WichtigePersonen_Info()
 {
-	AI_Output(other,self,"Info_Bau_9_WichtigePersonen_15_00"); //Kto pilnuje, by praca w polu przebiega³a bez przeszkód?
-	AI_Output(self,other,"Info_Bau_9_WichtigePersonen_09_01"); //Wszyscy! W zasadzie powinien siê tym zajmowaæ Ry¿owy Ksi¹¿e, ale moim zdaniem ten cz³owiek umie tylko siedzieæ w swojej norze i liczyæ worki.
-	AI_Output(self,other,"Info_Bau_9_WichtigePersonen_09_02"); //W ka¿dym razie to on i Homer zapocz¹tkowali to wszystko...
+	AI_Output(other,self,"Info_Bau_9_WichtigePersonen_15_00"); //Kto pilnuje, by praca w polu przebiegaÅ‚a bez przeszkÃ³d?
+	AI_Output(self,other,"Info_Bau_9_WichtigePersonen_09_01"); //Wszyscy! W zasadzie powinien siÄ™ tym zajmowaÄ‡ RyÅ¼owy KsiÄ…Å¼e, ale moim zdaniem ten czÅ‚owiek umie tylko siedzieÄ‡ w swojej norze i liczyÄ‡ worki.
+	AI_Output(self,other,"Info_Bau_9_WichtigePersonen_09_02"); //W kaÅ¼dym razie to on i Homer zapoczÄ…tkowali to wszystko...
 	var C_NPC Ricelord;			Ricelord	= Hlp_GetNpc(Bau_900_Ricelord);
 	Ricelord.aivar[AIV_FINDABLE] = TRUE;	
 };
@@ -75,8 +75,8 @@ FUNC INT Info_Bau_9_DasLager_Condition()
 FUNC VOID Info_Bau_9_DasLager_Info()
 {
 	AI_Output(other,self,"Info_Bau_9_DasLager_15_00"); //Opowiedz mi o tym obozie.
-	AI_Output(self,other,"Info_Bau_9_DasLager_09_01"); //Obóz? Jest wype³niony po brzegi najgorszymi szumowinami. Moim zdaniem Najemnicy powinni ju¿ dawno oczyœciæ to miejsce ze Szkodników.
-	AI_Output(self,other,"Info_Bau_9_DasLager_09_02"); //Nie ma z nich ¿adnego po¿ytku, tylko same k³opoty.
+	AI_Output(self,other,"Info_Bau_9_DasLager_09_01"); //ObÃ³z? Jest wypeÅ‚niony po brzegi najgorszymi szumowinami. Moim zdaniem Najemnicy powinni juÅ¼ dawno oczyÅ›ciÄ‡ to miejsce ze SzkodnikÃ³w.
+	AI_Output(self,other,"Info_Bau_9_DasLager_09_02"); //Nie ma z nich Å¼adnego poÅ¼ytku, tylko same kÅ‚opoty.
 };
 
 // *************************************************************************
@@ -89,7 +89,7 @@ INSTANCE Info_Bau_9_DieLage(C_INFO) // E1
 	condition	= Info_Bau_9_DieLage_Condition;
 	information	= Info_Bau_9_DieLage_Info;
 	permanent	= 1;
-	description = "Jak siê masz?";
+	description = "Jak siÄ™ masz?";
 };                       
 
 FUNC INT Info_Bau_9_DieLage_Condition()
@@ -99,8 +99,8 @@ FUNC INT Info_Bau_9_DieLage_Condition()
 
 FUNC VOID Info_Bau_9_DieLage_Info()
 {
-	AI_Output(other,self,"Info_Bau_9_DieLage_15_00"); //Jak siê masz?
-	AI_Output(self,other,"Info_Bau_9_DieLage_09_01"); //Harujemy tu do upad³ego, ¿eby reszta mia³a co w³o¿yæ do garnka.
+	AI_Output(other,self,"Info_Bau_9_DieLage_15_00"); //Jak siÄ™ masz?
+	AI_Output(self,other,"Info_Bau_9_DieLage_09_01"); //Harujemy tu do upadÅ‚ego, Å¼eby reszta miaÅ‚a co wÅ‚oÅ¼yÄ‡ do garnka.
 };
 
 // *************************************************************************
@@ -113,7 +113,7 @@ INSTANCE Info_Bau_9_Wasser(C_INFO) // E1
 	condition	= Info_Bau_9_Wasser_Condition;
 	information	= Info_Bau_9_Wasser_Info;
 	permanent	= 1;
-	description = "Przysy³a mnie Lewus. Przynios³em ci wodê.";
+	description = "PrzysyÅ‚a mnie Lewus. PrzyniosÅ‚em ci wodÄ™.";
 };                       
 
 FUNC INT Info_Bau_9_Wasser_Condition()
@@ -127,7 +127,7 @@ FUNC INT Info_Bau_9_Wasser_Condition()
 
 FUNC VOID Info_Bau_9_Wasser_Info()
 {
-	AI_Output(other,self,"Info_Bau_9_Wasser_15_00"); //Przysy³a mnie Lewus. Przynios³em ci wodê.
+	AI_Output(other,self,"Info_Bau_9_Wasser_15_00"); //PrzysyÅ‚a mnie Lewus. PrzyniosÅ‚em ci wodÄ™.
 	if (Npc_HasItems(other, ItFo_Potion_Water_01)>=1)
 	{
 		B_GiveInvItems		(other, self,	ItFo_Potion_Water_01, 1);
@@ -138,7 +138,7 @@ FUNC VOID Info_Bau_9_Wasser_Info()
 		};
 		AI_UseItem			(self,	ItFo_Potion_Water_01);
 
-		AI_Output			(self,other,"Info_Bau_9_Wasser_09_01"); //Piêkne dziêki! Jeszcze trochê, a zacz¹³bym piæ z ka³u¿y.
+		AI_Output			(self,other,"Info_Bau_9_Wasser_09_01"); //PiÄ™kne dziÄ™ki! Jeszcze trochÄ™, a zaczÄ…Å‚bym piÄ‡ z kaÅ‚uÅ¼y.
 		
 		An_Bauern_verteilt = An_Bauern_verteilt+1;
 		if (An_Bauern_verteilt>=DurstigeBauern)
@@ -149,7 +149,7 @@ FUNC VOID Info_Bau_9_Wasser_Info()
 	}
 	else
 	{
-		AI_Output(self,other,"Info_Bau_9_Wasser_NOWATER_09_00"); //Chyba ci siê skoñczy³a. Trudno, wezmê trochê od innych.
+		AI_Output(self,other,"Info_Bau_9_Wasser_NOWATER_09_00"); //Chyba ci siÄ™ skoÅ„czyÅ‚a. Trudno, wezmÄ™ trochÄ™ od innych.
 	};
 };
 	

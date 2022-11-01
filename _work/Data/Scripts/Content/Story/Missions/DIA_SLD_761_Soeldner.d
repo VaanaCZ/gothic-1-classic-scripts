@@ -34,7 +34,7 @@ instance DIA_SLD_761_Soeldner_EXIT_1 (C_INFO)
 	information		= DIA_SLD_761_Soeldner_EXIT_1_INFO;
 	important		= 0;
 	permanent		= 0;
-	description 	= "Mam jeszcze kilka rzeczy do za³atwienia.";
+	description 	= "Mam jeszcze kilka rzeczy do zaÅ‚atwienia.";
 };
 
 FUNC int DIA_SLD_761_Soeldner_EXIT_1_CONDITION()
@@ -44,8 +44,8 @@ FUNC int DIA_SLD_761_Soeldner_EXIT_1_CONDITION()
 
 func void DIA_SLD_761_Soeldner_EXIT_1_INFO()
 {
-	AI_Output (other, self,"DIA_SLD_761_Soeldner_EXIT_1_INFO_15_01"); //Mam jeszcze kilka rzeczy do za³atwienia.
-	AI_Output (self, other,"DIA_SLD_761_Soeldner_EXIT_1_INFO_03_02");//Tak te¿ myœla³em.
+	AI_Output (other, self,"DIA_SLD_761_Soeldner_EXIT_1_INFO_15_01"); //Mam jeszcze kilka rzeczy do zaÅ‚atwienia.
+	AI_Output (self, other,"DIA_SLD_761_Soeldner_EXIT_1_INFO_03_02");//Tak teÅ¼ myÅ›laÅ‚em.
 	AI_StopProcessInfos	( self );
 };
 
@@ -59,7 +59,7 @@ instance DIA_SLD_761_Soeldner_EXIT_2 (C_INFO)
 	information		= DIA_SLD_761_Soeldner_EXIT_2_INFO;
 	important		= 0;
 	permanent		= 1;
-	description 	= "Najlepiej bêdzie, jak ju¿ sobie pójdê.";
+	description 	= "Najlepiej bÄ™dzie, jak juÅ¼ sobie pÃ³jdÄ™.";
 };
 
 FUNC int DIA_SLD_761_Soeldner_EXIT_2_CONDITION()
@@ -72,8 +72,8 @@ FUNC int DIA_SLD_761_Soeldner_EXIT_2_CONDITION()
 
 func void DIA_SLD_761_Soeldner_EXIT_2_INFO()
 {
-	AI_Output (other, self,"DIA_SLD_761_Soeldner_EXIT_2_INFO_15_01"); //Najlepiej bêdzie, jak ju¿ sobie pójdê.
-	AI_Output (self, other,"DIA_SLD_761_Soeldner_EXIT_2_INFO_03_02");//W porz¹dku.
+	AI_Output (other, self,"DIA_SLD_761_Soeldner_EXIT_2_INFO_15_01"); //Najlepiej bÄ™dzie, jak juÅ¼ sobie pÃ³jdÄ™.
+	AI_Output (self, other,"DIA_SLD_761_Soeldner_EXIT_2_INFO_03_02");//W porzÄ…dku.
 	AI_StopProcessInfos	( self );
 };
 
@@ -86,7 +86,7 @@ instance DIA_SLD_761_Soeldner_UMSEHEN (C_INFO)
 	information		= DIA_SLD_761_Soeldner_UMSEHEN_INFO;
 	important		= 0;
 	permanent		= 0;
-	description 	= "Chcia³em siê trochê rozejrzeæ po Obozie.";
+	description 	= "ChciaÅ‚em siÄ™ trochÄ™ rozejrzeÄ‡ po Obozie.";
 };
 
 FUNC int DIA_SLD_761_Soeldner_UMSEHEN_CONDITION()
@@ -96,8 +96,8 @@ FUNC int DIA_SLD_761_Soeldner_UMSEHEN_CONDITION()
 
 func void DIA_SLD_761_Soeldner_UMSEHEN_INFO()
 {  
-	AI_Output (other, self,"DIA_SLD_761_Soeldner_UMSEHEN_INFO_15_01"); //Chcia³em siê trochê rozejrzeæ po Obozie.
-	AI_Output (self, other,"DIA_SLD_761_Soeldner_UMSEHEN_INFO_03_02");//To trafi³eœ w niew³aœciwe miejsce. To jest wejœcie do kopalni. Nie mo¿esz siê tutaj krêciæ.
+	AI_Output (other, self,"DIA_SLD_761_Soeldner_UMSEHEN_INFO_15_01"); //ChciaÅ‚em siÄ™ trochÄ™ rozejrzeÄ‡ po Obozie.
+	AI_Output (self, other,"DIA_SLD_761_Soeldner_UMSEHEN_INFO_03_02");//To trafiÅ‚eÅ› w niewÅ‚aÅ›ciwe miejsce. To jest wejÅ›cie do kopalni. Nie moÅ¼esz siÄ™ tutaj krÄ™ciÄ‡.
 };
 
 
@@ -110,7 +110,7 @@ instance DIA_SLD_761_Soeldner_INMINE (C_INFO)
 	information		= DIA_SLD_761_Soeldner_INMINE_INFO;
 	important		= 0;
 	permanent		= 0;
-	description 	= "Chcia³em tylko obejrzeæ kopalniê.";
+	description 	= "ChciaÅ‚em tylko obejrzeÄ‡ kopalniÄ™.";
 };
 
 FUNC int DIA_SLD_761_Soeldner_INMINE_CONDITION()
@@ -120,8 +120,8 @@ FUNC int DIA_SLD_761_Soeldner_INMINE_CONDITION()
 
 func void DIA_SLD_761_Soeldner_INMINE_INFO()
 {
-	AI_Output (other, self,"DIA_SLD_761_Soeldner_INMINE_INFO_15_01");//Chcia³em tylko obejrzeæ kopalniê.
-	AI_Output (self, other,"DIA_SLD_761_Soeldner_INMINE_INFO_03_02");//Jak widzisz, kopalnia jest zamkniêta. Nie ma tu nic ciekawego do ogl¹dania.
+	AI_Output (other, self,"DIA_SLD_761_Soeldner_INMINE_INFO_15_01");//ChciaÅ‚em tylko obejrzeÄ‡ kopalniÄ™.
+	AI_Output (self, other,"DIA_SLD_761_Soeldner_INMINE_INFO_03_02");//Jak widzisz, kopalnia jest zamkniÄ™ta. Nie ma tu nic ciekawego do oglÄ…dania.
 
 };
 
@@ -134,7 +134,7 @@ instance DIA_SLD_761_Soeldner_Bribe (C_INFO)
 	information		= DIA_SLD_761_Soeldner_Bribe_INFO;
 	important		= 0;
 	permanent		= 0;
-	description 	= "Mo¿e siê jakoœ dogadamy?";
+	description 	= "MoÅ¼e siÄ™ jakoÅ› dogadamy?";
 };
 
 FUNC int DIA_SLD_761_Soeldner_Bribe_CONDITION()
@@ -147,11 +147,11 @@ FUNC int DIA_SLD_761_Soeldner_Bribe_CONDITION()
 
 func void DIA_SLD_761_Soeldner_Bribe_INFO()
 {  
-	AI_Output (other, self,"DIA_SLD_761_Soeldner_Bribe_INFO_15_01");//Mo¿e siê jakoœ dogadamy?
-	AI_Output (self, other,"DIA_SLD_761_Soeldner_Bribe_INFO_03_02");//A o czym tu niby gadaæ?
-	AI_Output (self, other,"DIA_SLD_761_Soeldner_Bribe_INFO_03_03");//Sekundê, jeœli próbujesz mnie przekupiæ, to trafi³eœ na niew³aœciwego cz³owieka.
-	AI_Output (other, self,"DIA_SLD_761_Soeldner_Bribe_INFO_15_04");//Nie próbujê nikogo przekupiæ. Pomyœla³em tylko...
-	AI_Output (other, self,"DIA_SLD_761_Soeldner_Bribe_INFO_15_05");//Lepiej ju¿ sobie pójdê.
+	AI_Output (other, self,"DIA_SLD_761_Soeldner_Bribe_INFO_15_01");//MoÅ¼e siÄ™ jakoÅ› dogadamy?
+	AI_Output (self, other,"DIA_SLD_761_Soeldner_Bribe_INFO_03_02");//A o czym tu niby gadaÄ‡?
+	AI_Output (self, other,"DIA_SLD_761_Soeldner_Bribe_INFO_03_03");//SekundÄ™, jeÅ›li prÃ³bujesz mnie przekupiÄ‡, to trafiÅ‚eÅ› na niewÅ‚aÅ›ciwego czÅ‚owieka.
+	AI_Output (other, self,"DIA_SLD_761_Soeldner_Bribe_INFO_15_04");//Nie prÃ³bujÄ™ nikogo przekupiÄ‡. PomyÅ›laÅ‚em tylko...
+	AI_Output (other, self,"DIA_SLD_761_Soeldner_Bribe_INFO_15_05");//Lepiej juÅ¼ sobie pÃ³jdÄ™.
 	AI_StopProcessInfos	(self); 
 };
 

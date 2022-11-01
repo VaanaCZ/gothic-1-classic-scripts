@@ -48,7 +48,7 @@ FUNC INT Info_Mine_Org_7_Mine_Condition()
 FUNC VOID Info_Mine_Org_7_Mine_Info()
 {
 	AI_Output(other,self,"Info_Mine_Org_7_Mine_15_00"); //Opowiedz mi o tym obozie.
-	AI_Output(self,other,"Info_Mine_Org_7_Mine_07_01"); //Obóz? Masz na myœli Kocio³? Nie jest tu tak Ÿle jak mówi¹. Krety wydobywaj¹ rudê, Najemnicy ich pilnuj¹ a my - Szkodniki - patrzymy im wszystkim na rêce.
+	AI_Output(self,other,"Info_Mine_Org_7_Mine_07_01"); //ObÃ³z? Masz na myÅ›li KocioÅ‚? Nie jest tu tak Åºle jak mÃ³wiÄ…. Krety wydobywajÄ… rudÄ™, Najemnicy ich pilnujÄ… a my - Szkodniki - patrzymy im wszystkim na rÄ™ce.
 	
 };
 
@@ -62,7 +62,7 @@ INSTANCE Info_Mine_Org_7_WichtigePersonen(C_INFO)
 	condition	= Info_Mine_Org_7_WichtigePersonen_Condition;
 	information	= Info_Mine_Org_7_WichtigePersonen_Info;
 	permanent	= 1;
-	description = "W takim razie kto tu rz¹dzi.";
+	description = "W takim razie kto tu rzÄ…dzi.";
 };                       
 
 FUNC INT Info_Mine_Org_7_WichtigePersonen_Condition()
@@ -72,9 +72,9 @@ FUNC INT Info_Mine_Org_7_WichtigePersonen_Condition()
 
 FUNC VOID Info_Mine_Org_7_WichtigePersonen_Info()
 {
-	AI_Output(other,self,"Info_Mine_Org_7_WichtigePersonen_15_00"); //W takim razie kto tu rz¹dzi?
-	AI_Output(self,other,"Info_Mine_Org_7_WichtigePersonen_07_01"); //To zale¿y, od kogo przyjmujesz rozkazy.
-	AI_Output(self,other,"Info_Mine_Org_7_WichtigePersonen_07_02"); //W ka¿dym razie jak Okyl sobie czegoœ za¿yczy, lepiej mu nie odmawiaæ. Gdy siê wkurzy, potrafi byæ bardzo nieprzyjemny.
+	AI_Output(other,self,"Info_Mine_Org_7_WichtigePersonen_15_00"); //W takim razie kto tu rzÄ…dzi?
+	AI_Output(self,other,"Info_Mine_Org_7_WichtigePersonen_07_01"); //To zaleÅ¼y, od kogo przyjmujesz rozkazy.
+	AI_Output(self,other,"Info_Mine_Org_7_WichtigePersonen_07_02"); //W kaÅ¼dym razie jak Okyl sobie czegoÅ› zaÅ¼yczy, lepiej mu nie odmawiaÄ‡. Gdy siÄ™ wkurzy, potrafi byÄ‡ bardzo nieprzyjemny.
 	
 };
 
@@ -88,7 +88,7 @@ INSTANCE Info_Mine_Org_7_DieLage(C_INFO) // E1
 	condition	= Info_Mine_Org_7_DieLage_Condition;
 	information	= Info_Mine_Org_7_DieLage_Info;
 	permanent	= 1;
-	description = "Co s³ychaæ?";
+	description = "Co sÅ‚ychaÄ‡?";
 };                       
 
 FUNC INT Info_Mine_Org_7_DieLage_Condition()
@@ -98,8 +98,8 @@ FUNC INT Info_Mine_Org_7_DieLage_Condition()
 
 FUNC VOID Info_Mine_Org_7_DieLage_Info()
 {
-	AI_Output(other,self,"Info_Mine_Org_7_DieLage_15_00"); //Co s³ychaæ?
-	AI_Output(self,other,"Info_Mine_Org_7_DieLage_07_01"); //Zaczynasz mnie denerwowaæ, ch³opcze.
+	AI_Output(other,self,"Info_Mine_Org_7_DieLage_15_00"); //Co sÅ‚ychaÄ‡?
+	AI_Output(self,other,"Info_Mine_Org_7_DieLage_07_01"); //Zaczynasz mnie denerwowaÄ‡, chÅ‚opcze.
 };
 	
 // *************************************************************************

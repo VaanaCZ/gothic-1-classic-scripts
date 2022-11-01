@@ -21,7 +21,7 @@ func void  KDF_401_Damarok_WELCOME_Info()
 {
 
 	AI_GotoNpc (self,hero);
-	AI_Output (self, other,"KDF_401_Damarok_WELCOME_Info_14_01"); //Niech OgieÒ rozúwietla twe øycie.
+	AI_Output (self, other,"KDF_401_Damarok_WELCOME_Info_14_01"); //Niech Ogie≈Ñ roz≈õwietla twe ≈ºycie.
 	
 	Corristo_KDFAufnahme = 6;
 	B_Story_Feueraufnahme();
@@ -69,7 +69,7 @@ FUNC int  KDF_401_Damarok_HEAL_Condition()
 };
 func void  KDF_401_Damarok_HEAL_Info()
 {
-	AI_Output (self, other,"KDF_401_Damarok_HEAL_Info_14_01"); //Gdybyú zosta≥ ranny, uzdrowiÍ ciÍ.
+	AI_Output (self, other,"KDF_401_Damarok_HEAL_Info_14_01"); //Gdyby≈õ zosta≈Ç ranny, uzdrowiƒô ciƒô.
 	AI_StopProcessInfos	( self );
 };
 // ***************************** INFOS ****************************************//
@@ -82,7 +82,7 @@ instance  KDF_401_Damarok_HEALINFO (C_INFO)
 	information		= KDF_401_Damarok_HEALINFO_Info;
 	important		= 0;
 	permanent		= 1;
-	description		= "Jestem ranny. Moøesz mi pomÛc?"; 
+	description		= "Jestem ranny. Mo≈ºesz mi pom√≥c?"; 
 };
 
 FUNC int  KDF_401_Damarok_HEALINFO_Condition()
@@ -96,7 +96,7 @@ FUNC int  KDF_401_Damarok_HEALINFO_Condition()
 };
 FUNC void  KDF_401_Damarok_HEALINFO_Info()
 {
-	AI_Output (other, self,"KDF_401_Damarok_HEALINFO_Info_15_01"); //Jestem ranny. Moøesz mi pomÛc?
+	AI_Output (other, self,"KDF_401_Damarok_HEALINFO_Info_15_01"); //Jestem ranny. Mo≈ºesz mi pom√≥c?
 	AI_Output (self, other,"KDF_401_Damarok_HEALINFO_Info_14_02"); //W zdrowym ciele - zdrowy duch.
 	Snd_Play  ("MFX_Heal_Cast"); 
 	hero.attribute [ATR_HITPOINTS] = hero.attribute [ATR_HITPOINTS_MAX];

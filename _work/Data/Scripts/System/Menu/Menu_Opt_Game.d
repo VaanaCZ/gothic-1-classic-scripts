@@ -53,7 +53,7 @@ INSTANCE MENUITEM_GAME_SUB_TITLES(C_MENU_ITEM_DEF)
 {
 	backpic		=	MENU_ITEM_BACK_PIC;
 	text[0]		=	"Podpisy";
-	text[1]		= 	"Wyœwietlanie tekstów dialogów."; // Kommentar
+	text[1]		= 	"WyÅ›wietlanie tekstÃ³w dialogÃ³w."; // Kommentar
 	// Position und Dimension	
 	posx		=	1000;	posy		=	MENU_START_Y + MENU_DY*0;
 	dimx		=	4000;	dimy		=	750;
@@ -125,8 +125,8 @@ instance MENUITEM_GAME_ANIMATE_WINDOWS_CHOICE(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_GAME_LOOKAROUND_INVERSE(C_MENU_ITEM_DEF)
 {
 	backpic		=	MENU_ITEM_BACK_PIC;
-	text[0]		=	"Odwrócona kamera";
-	text[1]		= 	"Odwrócone sterowanie kamer¹."; // Kommentar
+	text[0]		=	"OdwrÃ³cona kamera";
+	text[1]		= 	"OdwrÃ³cone sterowanie kamerÄ…."; // Kommentar
 	// Position und Dimension	
 	posx		=	1000;	posy		=	MENU_START_Y + MENU_DY*2;
 	dimx		=	4000;	dimy		=	750;
@@ -162,7 +162,7 @@ INSTANCE MENUITEM_M(C_MENU_ITEM_DEF)
 {
 	backpic		=	MENU_ITEM_BACK_PIC;
 	text[0]		=	"Mysz";
-	text[1]		= 	"Prze³¹cza sterowanie kamer¹ za pomoc¹ myszy."; // Kommentar
+	text[1]		= 	"PrzeÅ‚Ä…cza sterowanie kamerÄ… za pomocÄ… myszy."; // Kommentar
 	// Position und Dimension	
 	posx		=	1000;	posy		=	MENU_START_Y + MENU_DY*3;
 	dimx		=	4000;	dimy		=	750;
@@ -176,7 +176,7 @@ instance MENUITEM_M_CHOICE(C_MENU_ITEM_DEF)
 {
 	backPic		=	MENU_CHOICE_BACK_PIC;
 	type		=	MENU_ITEM_CHOICEBOX;	
-	text[0]		= 	"wy³.|w³.";
+	text[0]		= 	"wyÅ‚.|wÅ‚.";
 	fontName	=   MENU_FONT_SMALL;
 	// Position und Dimension	
 	posx		= 5000;		posy		= MENU_START_Y + MENU_DY*3 + MENU_CHOICE_YPLUS;
@@ -197,7 +197,7 @@ instance MENUITEM_M_CHOICE(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_MSENSITIVITY(C_MENU_ITEM_DEF)
 {
 	backpic		=	MENU_ITEM_BACK_PIC;
-	text[0]		=	"Czu³oœæ myszy";
+	text[0]		=	"CzuÅ‚oÅ›Ä‡ myszy";
 	text[1]		= 	""; // Kommentar
 	// Position und Dimension	
 	posx		=	1000;	posy		=	MENU_START_Y + MENU_DY*4;
@@ -251,7 +251,7 @@ instance MENUITEM_GAME_BLOOD_CHOICE(C_MENU_ITEM_DEF)
 {
 	backPic		=	MENU_CHOICE_BACK_PIC;
 	type		=	MENU_ITEM_CHOICEBOX;	
-	text[0]		= 	"brak|ma³o|wiêcej|du¿o";
+	text[0]		= 	"brak|maÅ‚o|wiÄ™cej|duÅ¼o";
 	fontName	=   MENU_FONT_SMALL;
 	// Position und Dimension	
 	posx		= 5000;		posy		= MENU_START_Y + MENU_DY*5 + MENU_CHOICE_YPLUS;

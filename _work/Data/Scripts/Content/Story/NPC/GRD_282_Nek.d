@@ -2,7 +2,7 @@ instance GRD_282_Nek (Npc_Default)
 {
 	//-------- primary data --------
 	
-	name 		=	"Martwy Straønik";  //Nek
+	name 		=	"Martwy Stra≈ºnik";  //Nek
 	npctype		= 	npctype_main;
 	guild 		=	GIL_GRD;
 	level 		=	10;

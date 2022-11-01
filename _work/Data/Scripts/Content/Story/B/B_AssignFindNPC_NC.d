@@ -8,7 +8,7 @@ INSTANCE Info_FindNPC_NC(C_INFO)
 	condition	= Info_FindNPC_NC_Condition;
 	information	= Info_FindNPC_NC_Info;
 	permanent	= 1;
-	description = "Gdzie mogê znaleŸæ...";
+	description = "Gdzie mogÄ™ znaleÅºÄ‡...";
 };                       
 
 FUNC INT Info_FindNPC_NC_Condition()
@@ -24,7 +24,7 @@ FUNC VOID Info_FindNPC_NC_Info()
 	VAR C_NPC Cronos;		Cronos = Hlp_GetNpc(KdW_604_Cronos);
 	if (Cronos.aivar[AIV_FINDABLE] == TRUE)
 	{
-		Info_AddChoice(Info_FindNPC_NC,"...jednego z magów?", Info_FindNPC_NC_Mage);
+		Info_AddChoice(Info_FindNPC_NC,"...jednego z magÃ³w?", Info_FindNPC_NC_Mage);
 	};
 	
 	VAR C_NPC Gorn;		Gorn = Hlp_GetNpc(PC_Fighter);
@@ -57,7 +57,7 @@ FUNC VOID Info_FindNPC_NC_BACK()
 
 FUNC VOID Info_FindNPC_NC_Gorn()
 {
-	AI_Output(other,self,"Info_FindNPC_NC_Gorn_15_00"); //Gdzie mogê znaleŸæ Gorna?
+	AI_Output(other,self,"Info_FindNPC_NC_Gorn_15_00"); //Gdzie mogÄ™ znaleÅºÄ‡ Gorna?
 
 	VAR C_NPC Gorn;		Gorn = Hlp_GetNpc(PC_Fighter);
 	
@@ -71,26 +71,26 @@ FUNC VOID Info_FindNPC_NC_Gorn()
 		{
 			if (self.voice == 6)
 			{
-				AI_Output(self,other,"Info_FindNPC_NC_Gorn_06_01"); //Po wejœciu do jaskini trzymaj siê prawej œciany. Znajdziesz tam kilka chat. Gorn mieszka w jednej z nich.
+				AI_Output(self,other,"Info_FindNPC_NC_Gorn_06_01"); //Po wejÅ›ciu do jaskini trzymaj siÄ™ prawej Å›ciany. Znajdziesz tam kilka chat. Gorn mieszka w jednej z nich.
 			}
 			else if (self.voice == 7)
 			{
-				AI_Output(self,other,"Info_FindNPC_NC_Gorn_07_01"); //Po wejœciu do jaskini trzymaj siê prawej œciany. Znajdziesz tam kilka chat. Gorn mieszka w jednej z nich.
+				AI_Output(self,other,"Info_FindNPC_NC_Gorn_07_01"); //Po wejÅ›ciu do jaskini trzymaj siÄ™ prawej Å›ciany. Znajdziesz tam kilka chat. Gorn mieszka w jednej z nich.
 			}
 			else if (self.voice == 13)
 			{
-				AI_Output(self,other,"Info_FindNPC_NC_Gorn_13_01"); //Po wejœciu do jaskini trzymaj siê prawej œciany. Znajdziesz tam kilka chat. Gorn mieszka w jednej z nich.
+				AI_Output(self,other,"Info_FindNPC_NC_Gorn_13_01"); //Po wejÅ›ciu do jaskini trzymaj siÄ™ prawej Å›ciany. Znajdziesz tam kilka chat. Gorn mieszka w jednej z nich.
 			};
 		}
 		else if (self.guild == GIL_SLD) 
 		{
 			if (self.voice == 8)
 			{
-				AI_Output(self,other,"Info_FindNPC_NC_Gorn_08_01"); //Po wejœciu do jaskini trzymaj siê prawej œciany. Znajdziesz tam kilka chat. Gorn mieszka w jednej z nich.
+				AI_Output(self,other,"Info_FindNPC_NC_Gorn_08_01"); //Po wejÅ›ciu do jaskini trzymaj siÄ™ prawej Å›ciany. Znajdziesz tam kilka chat. Gorn mieszka w jednej z nich.
 			}
 			else if (self.voice == 11)
 			{
-				AI_Output(self,other,"Info_FindNPC_NC_Gorn_11_01"); //Po wejœciu do jaskini trzymaj siê prawej œciany. Znajdziesz tam kilka chat. Gorn mieszka w jednej z nich.
+				AI_Output(self,other,"Info_FindNPC_NC_Gorn_11_01"); //Po wejÅ›ciu do jaskini trzymaj siÄ™ prawej Å›ciany. Znajdziesz tam kilka chat. Gorn mieszka w jednej z nich.
 			};
 		};
 	};
@@ -104,7 +104,7 @@ FUNC VOID Info_FindNPC_NC_Gorn()
 
 FUNC VOID Info_FindNPC_NC_Lares()
 {
-	AI_Output(other,self,"Info_FindNPC_NC_Lares_15_00"); //Gdzie mogê znaleŸæ Laresa?
+	AI_Output(other,self,"Info_FindNPC_NC_Lares_15_00"); //Gdzie mogÄ™ znaleÅºÄ‡ Laresa?
 
 	VAR C_NPC Lares;		Lares = Hlp_GetNpc(Org_801_Lares);
 	
@@ -118,26 +118,26 @@ FUNC VOID Info_FindNPC_NC_Lares()
 		{
 			if (self.voice == 6)
 			{
-				AI_Output(self,other,"Info_FindNPC_NC_Lares_06_01"); //Na samym koñcu jaskini, po lewej. Na pewno trafisz. Jak zatrzymaj¹ ciê jego ch³opcy, bêdziesz wiedzia³, ¿e jesteœ na miejscu.
+				AI_Output(self,other,"Info_FindNPC_NC_Lares_06_01"); //Na samym koÅ„cu jaskini, po lewej. Na pewno trafisz. Jak zatrzymajÄ… ciÄ™ jego chÅ‚opcy, bÄ™dziesz wiedziaÅ‚, Å¼e jesteÅ› na miejscu.
 			}
 			else if (self.voice == 7)
 			{
-				AI_Output(self,other,"Info_FindNPC_NC_Lares_07_01"); //Na samym koñcu jaskini, po lewej. Na pewno trafisz. Jak zatrzymaj¹ ciê jego ch³opcy, bêdziesz wiedzia³, ¿e jesteœ na miejscu.
+				AI_Output(self,other,"Info_FindNPC_NC_Lares_07_01"); //Na samym koÅ„cu jaskini, po lewej. Na pewno trafisz. Jak zatrzymajÄ… ciÄ™ jego chÅ‚opcy, bÄ™dziesz wiedziaÅ‚, Å¼e jesteÅ› na miejscu.
 			}
 			else if (self.voice == 13)
 			{
-				AI_Output(self,other,"Info_FindNPC_NC_Lares_13_01"); //Na samym koñcu jaskini, po lewej. Na pewno trafisz. Jak zatrzymaj¹ ciê jego ch³opcy, bêdziesz wiedzia³, ¿e jesteœ na miejscu.
+				AI_Output(self,other,"Info_FindNPC_NC_Lares_13_01"); //Na samym koÅ„cu jaskini, po lewej. Na pewno trafisz. Jak zatrzymajÄ… ciÄ™ jego chÅ‚opcy, bÄ™dziesz wiedziaÅ‚, Å¼e jesteÅ› na miejscu.
 			};
 		}
 		else if (self.guild == GIL_SLD) 
 		{
 			if (self.voice == 8)
 			{
-				AI_Output(self,other,"Info_FindNPC_NC_Lares_08_01"); //Na samym koñcu jaskini, po lewej. Na pewno trafisz. Jak zatrzymaj¹ ciê jego ch³opcy, bêdziesz wiedzia³, ¿e jesteœ na miejscu.
+				AI_Output(self,other,"Info_FindNPC_NC_Lares_08_01"); //Na samym koÅ„cu jaskini, po lewej. Na pewno trafisz. Jak zatrzymajÄ… ciÄ™ jego chÅ‚opcy, bÄ™dziesz wiedziaÅ‚, Å¼e jesteÅ› na miejscu.
 			}
 			else if (self.voice == 11)
 			{
-				AI_Output(self,other,"Info_FindNPC_NC_Lares_11_01"); //Na samym koñcu jaskini, po lewej. Na pewno trafisz. Jak zatrzymaj¹ ciê jego ch³opcy, bêdziesz wiedzia³, ¿e jesteœ na miejscu.
+				AI_Output(self,other,"Info_FindNPC_NC_Lares_11_01"); //Na samym koÅ„cu jaskini, po lewej. Na pewno trafisz. Jak zatrzymajÄ… ciÄ™ jego chÅ‚opcy, bÄ™dziesz wiedziaÅ‚, Å¼e jesteÅ› na miejscu.
 			};
 		};
 	};
@@ -151,7 +151,7 @@ FUNC VOID Info_FindNPC_NC_Lares()
 
 FUNC VOID Info_FindNPC_NC_Lee()
 {
-	AI_Output(other,self,"Info_FindNPC_NC_Lee_15_00"); //Gdzie mogê znaleŸæ Lee?
+	AI_Output(other,self,"Info_FindNPC_NC_Lee_15_00"); //Gdzie mogÄ™ znaleÅºÄ‡ Lee?
 
 	VAR C_NPC Lee;		Lee = Hlp_GetNpc(Sld_700_Lee);
 	
@@ -165,26 +165,26 @@ FUNC VOID Info_FindNPC_NC_Lee()
 		{
 			if (self.voice == 6)
 			{
-				AI_Output(self,other,"Info_FindNPC_NC_Lee_06_01"); //WejdŸ do wielkiej jaskini, trzymaj siê prawej strony i wyjdŸ na sam¹ górê.
+				AI_Output(self,other,"Info_FindNPC_NC_Lee_06_01"); //WejdÅº do wielkiej jaskini, trzymaj siÄ™ prawej strony i wyjdÅº na samÄ… gÃ³rÄ™.
 			}
 			else if (self.voice == 7)
 			{
-				AI_Output(self,other,"Info_FindNPC_NC_Lee_07_01"); //WejdŸ do wielkiej jaskini, trzymaj siê prawej strony i wyjdŸ na sam¹ górê.
+				AI_Output(self,other,"Info_FindNPC_NC_Lee_07_01"); //WejdÅº do wielkiej jaskini, trzymaj siÄ™ prawej strony i wyjdÅº na samÄ… gÃ³rÄ™.
 			}
 			else if (self.voice == 13)
 			{
-				AI_Output(self,other,"Info_FindNPC_NC_Lee_13_01"); //WejdŸ do wielkiej jaskini, trzymaj siê prawej strony i wyjdŸ na sam¹ górê.
+				AI_Output(self,other,"Info_FindNPC_NC_Lee_13_01"); //WejdÅº do wielkiej jaskini, trzymaj siÄ™ prawej strony i wyjdÅº na samÄ… gÃ³rÄ™.
 			};
 		}
 		else if (self.guild == GIL_SLD) 
 		{
 			if (self.voice == 8)
 			{
-				AI_Output(self,other,"Info_FindNPC_NC_Lee_08_01"); //WejdŸ do wielkiej jaskini, trzymaj siê prawej strony i wyjdŸ na sam¹ górê.
+				AI_Output(self,other,"Info_FindNPC_NC_Lee_08_01"); //WejdÅº do wielkiej jaskini, trzymaj siÄ™ prawej strony i wyjdÅº na samÄ… gÃ³rÄ™.
 			}
 			else if (self.voice == 11)
 			{
-				AI_Output(self,other,"Info_FindNPC_NC_Lee_11_01"); //WejdŸ do wielkiej jaskini, trzymaj siê prawej strony i wyjdŸ na sam¹ górê.
+				AI_Output(self,other,"Info_FindNPC_NC_Lee_11_01"); //WejdÅº do wielkiej jaskini, trzymaj siÄ™ prawej strony i wyjdÅº na samÄ… gÃ³rÄ™.
 			};
 		};
 	};
@@ -198,7 +198,7 @@ FUNC VOID Info_FindNPC_NC_Lee()
 
 FUNC VOID Info_FindNPC_NC_Mage()
 {
-	AI_Output(other,self,"Info_FindNPC_NC_Cronos_15_00"); //Gdzie mogê znaleŸæ jakiegoœ maga?
+	AI_Output(other,self,"Info_FindNPC_NC_Cronos_15_00"); //Gdzie mogÄ™ znaleÅºÄ‡ jakiegoÅ› maga?
 
 	VAR C_NPC Cronos;		Cronos = Hlp_GetNpc(KdW_604_Cronos);
 	
@@ -212,26 +212,26 @@ FUNC VOID Info_FindNPC_NC_Mage()
 		{
 			if (self.voice == 6)
 			{
-				AI_Output(self,other,"Info_FindNPC_NC_Cronos_06_01"); //Zwykle przebywaj¹ w zamkniêtej, górnej czêœci jaskini, ale czasami mo¿na jakiegoœ spotkaæ przy kopcu rudy, w centrum.
+				AI_Output(self,other,"Info_FindNPC_NC_Cronos_06_01"); //Zwykle przebywajÄ… w zamkniÄ™tej, gÃ³rnej czÄ™Å›ci jaskini, ale czasami moÅ¼na jakiegoÅ› spotkaÄ‡ przy kopcu rudy, w centrum.
 			}
 			else if (self.voice == 7)
 			{
-				AI_Output(self,other,"Info_FindNPC_NC_Cronos_07_01"); //Zwykle przebywaj¹ w zamkniêtej, górnej czêœci jaskini, ale czasami mo¿na jakiegoœ spotkaæ przy kopcu rudy, w centrum.
+				AI_Output(self,other,"Info_FindNPC_NC_Cronos_07_01"); //Zwykle przebywajÄ… w zamkniÄ™tej, gÃ³rnej czÄ™Å›ci jaskini, ale czasami moÅ¼na jakiegoÅ› spotkaÄ‡ przy kopcu rudy, w centrum.
 			}
 			else if (self.voice == 13)
 			{
-				AI_Output(self,other,"Info_FindNPC_NC_Cronos_13_01"); //Zwykle przebywaj¹ w zamkniêtej, górnej czêœci jaskini, ale czasami mo¿na jakiegoœ spotkaæ przy kopcu rudy, w centrum.
+				AI_Output(self,other,"Info_FindNPC_NC_Cronos_13_01"); //Zwykle przebywajÄ… w zamkniÄ™tej, gÃ³rnej czÄ™Å›ci jaskini, ale czasami moÅ¼na jakiegoÅ› spotkaÄ‡ przy kopcu rudy, w centrum.
 			};
 		}
 		else if (self.guild == GIL_SLD) 
 		{
 			if (self.voice == 8)
 			{
-				AI_Output(self,other,"Info_FindNPC_NC_Cronos_08_01"); //Zwykle przebywaj¹ w zamkniêtej, górnej czêœci jaskini, ale czasami mo¿na jakiegoœ spotkaæ przy kopcu rudy, w centrum.
+				AI_Output(self,other,"Info_FindNPC_NC_Cronos_08_01"); //Zwykle przebywajÄ… w zamkniÄ™tej, gÃ³rnej czÄ™Å›ci jaskini, ale czasami moÅ¼na jakiegoÅ› spotkaÄ‡ przy kopcu rudy, w centrum.
 			}
 			else if (self.voice == 11)
 			{
-				AI_Output(self,other,"Info_FindNPC_NC_Cronos_11_01"); //Zwykle przebywaj¹ w zamkniêtej, górnej czêœci jaskini, ale czasami mo¿na jakiegoœ spotkaæ przy kopcu rudy, w centrum.
+				AI_Output(self,other,"Info_FindNPC_NC_Cronos_11_01"); //Zwykle przebywajÄ… w zamkniÄ™tej, gÃ³rnej czÄ™Å›ci jaskini, ale czasami moÅ¼na jakiegoÅ› spotkaÄ‡ przy kopcu rudy, w centrum.
 			};
 		};
 	};

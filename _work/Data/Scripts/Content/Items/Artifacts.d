@@ -18,7 +18,7 @@ INSTANCE ItArRuneLight (C_Item)
 	spell				= 	SPL_LIGHT;
 	mag_circle 			= 	1;
 
-	description			=	"Œwiat³o";
+	description			=	"ÅšwiatÅ‚o";
 	TEXT	[0]			=	NAME_Mag_Circle;		COUNT	[0]		=	mag_circle;
 	TEXT	[1]			=	NAME_Manakosten;		COUNT	[1]		=	SPL_SENDCAST_LIGHT;
 	//TEXT	[2]			=	"";						COUNT	[2]		=	;
@@ -43,7 +43,7 @@ INSTANCE ItArScrollLight (C_Item)
 	cond_atr[2]   		= 	ATR_MANA_MAX;
 	cond_value[2]  		= 	SPL_SENDCAST_LIGHT;
 
-	description			=	"Œwiat³o";
+	description			=	"ÅšwiatÅ‚o";
 	//TEXT	[0]			=	NAME_Mag_Circle;			COUNT	[0]		=	mag_circle;
 	TEXT	[1]			=	NAME_Manakosten;		COUNT	[1]		=	SPL_SENDCAST_LIGHT;
 	//TEXT	[2]			=	"";						COUNT	[2]		=	;
@@ -274,9 +274,9 @@ INSTANCE ItArRuneTeleport1 (C_Item)
 	material			=	MAT_STONE;
 
 	spell				= 	SPL_TELEPORT1;
-//mag_circle 			= 	4;   //SN: Teleport-Spells müssen auch ohne Circle sprechbar sein!
+//mag_circle 			= 	4;   //SN: Teleport-Spells mÃ¼ssen auch ohne Circle sprechbar sein!
 
-	description			= 	"Teleportacja do Magów Ognia";
+	description			= 	"Teleportacja do MagÃ³w Ognia";
 	TEXT	[0]			=	NAME_Mag_Circle;			COUNT	[0]		=	mag_circle;
 	TEXT	[1]			=	NAME_Manakosten;			COUNT	[1]		=	SPL_SENDCAST_TELEPORT;
 };
@@ -295,7 +295,7 @@ INSTANCE ItArScrollTeleport1 (C_Item)
 	cond_atr[2]   		= 	ATR_MANA_MAX;
 	cond_value[2]  		= 	SPL_SENDCAST_TELEPORT;
 
-	description			= 	"Teleportacja do Magów Ognia";
+	description			= 	"Teleportacja do MagÃ³w Ognia";
 	//TEXT	[0]			=	NAME_Mag_Circle;			COUNT	[0]		=	mag_circle;
 	TEXT	[1]			=	NAME_Manakosten;			COUNT	[1]		=	SPL_SENDCAST_TELEPORT;
 };
@@ -314,9 +314,9 @@ INSTANCE ItArRuneTeleport2 (C_Item)
 	material			=	MAT_STONE;
 
 	spell				= 	SPL_TELEPORT2;
-//mag_circle 			= 	4;   //SN: Teleport-Spells müssen auch ohne Circle sprechbar sein!
+//mag_circle 			= 	4;   //SN: Teleport-Spells mÃ¼ssen auch ohne Circle sprechbar sein!
 
-	description			= 	"Teleportacja do Magów Wody";
+	description			= 	"Teleportacja do MagÃ³w Wody";
 	TEXT	[0]			=	NAME_Mag_Circle;			COUNT	[0]		=	mag_circle;
 	TEXT	[1]			=	NAME_Manakosten;			COUNT	[1]		=	SPL_SENDCAST_TELEPORT;
 };
@@ -335,7 +335,7 @@ INSTANCE ItArScrollTeleport2 (C_Item)
 	cond_atr[2]   		= 	ATR_MANA_MAX;
 	cond_value[2]  		= 	SPL_SENDCAST_TELEPORT;
 
-	description			= 	"Teleportacja do Magów Wody";
+	description			= 	"Teleportacja do MagÃ³w Wody";
 	//TEXT	[0]			=	NAME_Mag_Circle;			COUNT	[0]		=	mag_circle;
 	TEXT	[1]			=	NAME_Manakosten;			COUNT	[1]		=	SPL_SENDCAST_TELEPORT;
 };
@@ -354,7 +354,7 @@ INSTANCE ItArRuneTeleport3 (C_Item)
 	material			=	MAT_STONE;
 
 	spell				= 	SPL_TELEPORT3;
-	//mag_circle 			= 	4;   //SN: Teleport-Spells müssen auch ohne Circle sprechbar sein!
+	//mag_circle 			= 	4;   //SN: Teleport-Spells mÃ¼ssen auch ohne Circle sprechbar sein!
 
 	description			=	"Teleportacja do Nekromanty";	//blaue Rune
 	TEXT	[0]			=	NAME_Mag_Circle;			COUNT	[0]		=	mag_circle;
@@ -398,7 +398,7 @@ INSTANCE ItArScrollTeleport4 (C_Item)
 	cond_atr[2]   		= 	ATR_MANA_MAX;
 	cond_value[2]  		= 	SPL_SENDCAST_TELEPORT;
 
-	description			= 	"Orkowe zaklêcie teleportacji";
+	description			= 	"Orkowe zaklÄ™cie teleportacji";
 	//TEXT	[0]			=	NAME_Mag_Circle;			COUNT	[0]		=	0;
 	TEXT	[1]			=	NAME_Manakosten;			COUNT	[1]		=	SPL_SENDCAST_TELEPORT;
 };
@@ -414,11 +414,11 @@ INSTANCE ItArRuneTeleport5 (C_Item)
 	mainflag 			=	ITEM_KAT_RUNE;
 	flags 				=	0;
 
-	visual				=	"ItAr_Rune_39.3ds";	//grüne Rune
+	visual				=	"ItAr_Rune_39.3ds";	//grÃ¼ne Rune
 	material			=	MAT_STONE;
 
 	spell				= 	SPL_TELEPORT5;
-//mag_circle 			= 	4;   //SN: Teleport-Spells müssen auch ohne Circle sprechbar sein!
+//mag_circle 			= 	4;   //SN: Teleport-Spells mÃ¼ssen auch ohne Circle sprechbar sein!
 
 	description			=	"Teleportacja do obozu na bagnie";	//lila Rune
 	TEXT	[0]			=	NAME_Mag_Circle;			COUNT	[0]		=	mag_circle;
@@ -522,7 +522,7 @@ INSTANCE ItArScrollTrfBloodfly (C_Item)
 	cond_atr[2]   		= 	ATR_MANA_MAX;
 	cond_value[2]  		= 	SPL_SENDCAST_TRF_BLOODFLY;
 
-	description			=	"Przemiana w krwiopijcê";
+	description			=	"Przemiana w krwiopijcÄ™";
 	//TEXT	[0]			=	NAME_Mag_Circle;			COUNT	[0]		=	mag_circle;
 	TEXT	[1]			=	NAME_Manakosten;			COUNT	[1]		=	SPL_SENDCAST_TRF_BLOODFLY;
 	//TEXT	[2]			=	"";							COUNT	[2]		=	;
@@ -547,7 +547,7 @@ INSTANCE ItArScrollTrfCrawler (C_Item)
 	cond_atr[2]   		=	ATR_MANA_MAX;
 	cond_value[2]  		=	SPL_SENDCAST_TRF_CRAWLER;
 
-	description			=	"Przemiana w pe³zacza";
+	description			=	"Przemiana w peÅ‚zacza";
 	//TEXT	[0]			=	NAME_Mag_Circle;			COUNT	[0]		=	mag_circle;
 	TEXT	[1]			=	NAME_Manakosten;			COUNT	[1]		=	SPL_SENDCAST_TRF_CRAWLER;
 	//TEXT	[2]			=	"";							COUNT	[2]		=	;
@@ -597,7 +597,7 @@ INSTANCE ItArScrollTrfMeatbug (C_Item)
 	cond_atr[2]   		=	ATR_MANA_MAX;
 	cond_value[2]  		=	SPL_SENDCAST_TRF_MEATBUG;
 
-	description			=	"Przemiana w chrz¹szcza";
+	description			=	"Przemiana w chrzÄ…szcza";
 	//TEXT	[0]			=	NAME_Mag_Circle;			COUNT	[0]		=	mag_circle;
 	TEXT	[1]			=	NAME_Manakosten;			COUNT	[1]		=	SPL_SENDCAST_TRF_MEATBUG;
 	//TEXT	[2]			=	"";							COUNT	[2]		=	;
@@ -672,7 +672,7 @@ INSTANCE ItArScrollTrfScavenger (C_Item)
 	cond_atr[2]   		=	ATR_MANA_MAX;
 	cond_value[2]  		=	SPL_SENDCAST_TRF_SCAVENGER;
 
-	description			=	"Przemiana w œcierwojada";
+	description			=	"Przemiana w Å›cierwojada";
 	//TEXT	[0]			=	NAME_Mag_Circle;			COUNT	[0]		=	mag_circle;
 	TEXT	[1]			=	NAME_Manakosten;			COUNT	[1]		=	SPL_SENDCAST_TRF_SCAVENGER;
 	//TEXT	[2]			=	"";							COUNT	[2]		=	;
@@ -722,7 +722,7 @@ INSTANCE ItArScrollTrfSnapper (C_Item)
 	cond_atr[2]   		=	ATR_MANA_MAX;
 	cond_value[2]  		=	SPL_SENDCAST_TRF_SNAPPER;
 
-	description			=	"Przemiana w zêbacza";
+	description			=	"Przemiana w zÄ™bacza";
 	//TEXT	[0]			=	NAME_Mag_Circle;			COUNT	[0]		=	mag_circle;
 	TEXT	[1]			=	NAME_Manakosten;			COUNT	[1]		=	SPL_SENDCAST_TRF_SNAPPER;
 	//TEXT	[2]			=	"";							COUNT	[2]		=	;
@@ -852,7 +852,7 @@ INSTANCE ItArRuneThunderbolt (C_Item)
 	spell				= 	SPL_THUNDERBOLT;
 	mag_circle 			=	1;
 
-// FIXME: kann man die DAMAGE_PER_LEVEL-Werte der Spells aus der Spells_Params hier für Manakosten einsetzen??
+// FIXME: kann man die DAMAGE_PER_LEVEL-Werte der Spells aus der Spells_Params hier fÃ¼r Manakosten einsetzen??
 	description			=	"Sopel lodu";
 	TEXT	[0]			=	NAME_Mag_Circle;			COUNT	[0]		=	mag_circle;
 	TEXT	[1]			=	NAME_Manakosten;			COUNT	[1]		=	SPL_SENDCAST_THUNDERBOLT;
@@ -904,7 +904,7 @@ INSTANCE ItArRuneThunderball (C_Item)
 	material			=	MAT_STONE;
 
 	spell				= 	SPL_THUNDERBALL;
-	mag_circle 			=	3;		//SN: von 4 auf 3 geändert!
+	mag_circle 			=	3;		//SN: von 4 auf 3 geÃ¤ndert!
 
 	description			=	"Piorun kulisty";
 	TEXT	[0]			=	NAME_Mag_Circle;							COUNT	[0]		=	mag_circle;
@@ -959,7 +959,7 @@ INSTANCE ItArRuneIceCube (C_Item)
 	spell				= 	SPL_ICECUBE;
 	mag_circle 			=	3;
 
-	description			=	"Bry³a lodu";
+	description			=	"BryÅ‚a lodu";
 	TEXT	[0]			=	NAME_Mag_Circle;			COUNT	[0]		=	mag_circle;
 	TEXT	[1]			=	NAME_Manakosten;			COUNT	[1]		=	SPL_SENDCAST_ICECUBE;
 	TEXT	[2]			=	NAME_Damage;				COUNT	[2]		=	SPL_FREEZE_DAMAGE;
@@ -984,7 +984,7 @@ INSTANCE ItArScrollIceCube (C_Item)
 	cond_atr[2]   		=	ATR_MANA_MAX;
 	cond_value[2]  		=	SPL_SENDCAST_ICECUBE;
 
-	description			=	"Bry³a lodu";
+	description			=	"BryÅ‚a lodu";
 	//TEXT	[0]			=	NAME_Mag_Circle;			COUNT	[0]		=	mag_circle;
 	TEXT	[1]			=	NAME_Manakosten;			COUNT	[1]		=	SPL_SENDCAST_ICECUBE;
 	TEXT	[2]			=	NAME_Damage;				COUNT	[2]		=	SPL_FREEZE_DAMAGE;
@@ -1048,7 +1048,7 @@ INSTANCE ItArScrollIceWave (C_Item)
 
 
 /*******************************************************************************************
-**  Dämonenbeschwörer	 (Runensteine  und Scrolls)										  **
+**  DÃ¤monenbeschwÃ¶rer	 (Runensteine  und Scrolls)										  **
 *******************************************************************************************/
 
 // Summon Demon (Scrolls)
@@ -1097,7 +1097,7 @@ INSTANCE ItArScrollSummonSkeletons (C_Item)
 	cond_atr[2]   		=	ATR_MANA_MAX;
 	cond_value[2]  		=	SPL_SENDCAST_SUMMONSKELETON;
 
-	description			=	"Przyzwanie szkieletów";
+	description			=	"Przyzwanie szkieletÃ³w";
 	//TEXT	[0]			=	NAME_Mag_Circle;			COUNT	[0]		=	mag_circle;
 	TEXT	[1]			=	NAME_Manakosten;			COUNT	[1]		=	SPL_SENDCAST_SUMMONSKELETON;
 	//TEXT	[2]			=	"";							COUNT	[2]		=	;
@@ -1153,7 +1153,7 @@ INSTANCE ItArScrollArmyOfDarkness (C_Item)
 	cond_atr[2]   		=	ATR_MANA_MAX;
 	cond_value[2]  		=	SPL_SENDCAST_ARMYOFDARKNESS;
 
-	description			=	"Armia Ciemnoœci";
+	description			=	"Armia CiemnoÅ›ci";
 	//TEXT	[0]			=	NAME_Mag_Circle;			COUNT	[0]		=	mag_circle;
 	TEXT	[1]			=	NAME_Manakosten;			COUNT	[1]		=	SPL_SENDCAST_ARMYOFDARKNESS;
 	//TEXT	[2]			=	"";							COUNT	[2]		=	;
@@ -1180,7 +1180,7 @@ INSTANCE ItArRuneDestroyUndead (C_Item)
 	spell				= 	SPL_DESTROYUNDEAD;
 	mag_circle 			=	4;
 
-	description			=	"Œmieræ o¿ywieñcom";
+	description			=	"ÅšmierÄ‡ oÅ¼ywieÅ„com";
 	TEXT	[0]			=	NAME_Mag_Circle;			COUNT	[0]		=	mag_circle;
 	TEXT	[1]			=	NAME_Manakosten;			COUNT	[1]		=	SPL_SENDCAST_DESTROYUNDEAD;
 	TEXT	[2]			=	NAME_Dam_Magic;				COUNT	[2]		=	SPL_DAMAGE_DESTROYUNDEAD;
@@ -1205,7 +1205,7 @@ INSTANCE ItArScrollDestroyUndead (C_Item)
 	cond_atr[2]   		=	ATR_MANA_MAX;
 	cond_value[2]  		=	SPL_SENDCAST_DESTROYUNDEAD;
 
-	description			=	"Œmieræ o¿ywieñcom";
+	description			=	"ÅšmierÄ‡ oÅ¼ywieÅ„com";
 	TEXT	[0]			=	NAME_Mag_Circle;			COUNT	[0]		=	mag_circle;
 	TEXT	[1]			=	NAME_Manakosten;			COUNT	[1]		=	SPL_SENDCAST_DESTROYUNDEAD;
 	TEXT	[2]			=	NAME_Dam_Magic;				COUNT	[2]		=	SPL_DAMAGE_DESTROYUNDEAD;
@@ -1216,7 +1216,7 @@ INSTANCE ItArScrollDestroyUndead (C_Item)
 
 
 /*******************************************************************************************
-**  PSI-Sprüche		(Runen und Scrolls)													  **
+**  PSI-SprÃ¼che		(Runen und Scrolls)													  **
 *******************************************************************************************/
 
 // Windfist (Scrolls und Runen)
@@ -1658,7 +1658,7 @@ INSTANCE ItArRuneBreathOfDeath (C_Item)
 	spell				= 	SPL_BREATHOFDEATH;
 	mag_circle 			=	6;
 
-	description			=	"Tchnienie œmierci";
+	description			=	"Tchnienie Å›mierci";
 	TEXT	[0]			=	NAME_Mag_Circle;			COUNT	[0]		=	mag_circle;
 	TEXT	[1]			=	NAME_Manakosten;			COUNT	[1]		=	SPL_SENDCAST_BREATHOFDEATH;
 	TEXT	[2]			=	NAME_Dam_Magic;				COUNT	[2]		=	SPL_DAMAGE_BREATHOFDEATH;

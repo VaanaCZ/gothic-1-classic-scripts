@@ -50,30 +50,30 @@ FUNC VOID Info_Jackal_Hello_Info()
 {	
 	AI_Output (self, other,"Info_Jackal_Hello_07_00"); //Ach! Nowa twarz!
 	AI_Output (other, self,"Info_Jackal_Hello_15_01"); //Czego chcesz?
-	AI_Output (self, other,"Info_Jackal_Hello_07_02"); //Chcê ci zaoferowaæ pomoc. Jesteœ tu nowy, a nowi zawsze pakuj¹ siê w k³opoty... Mo¿esz sobie zaoszczêdziæ nieprzyjemnoœci ofiaruj¹c mi... drobny datek.
-	AI_Output (self, other,"Info_Jackal_Hello_07_03"); //Marne 10 bry³ek rudy. To¿ to grosze...
+	AI_Output (self, other,"Info_Jackal_Hello_07_02"); //ChcÄ™ ci zaoferowaÄ‡ pomoc. JesteÅ› tu nowy, a nowi zawsze pakujÄ… siÄ™ w kÅ‚opoty... MoÅ¼esz sobie zaoszczÄ™dziÄ‡ nieprzyjemnoÅ›ci ofiarujÄ…c mi... drobny datek.
+	AI_Output (self, other,"Info_Jackal_Hello_07_03"); //Marne 10 bryÅ‚ek rudy. ToÅ¼ to grosze...
 	
 	Info_ClearChoices	(Info_Jackal_Hello);
-	Info_AddChoice		(Info_Jackal_Hello,"A jeœli nie zap³acê?",Info_Jackal_Hello_WhatIf);
-	Info_AddChoice		(Info_Jackal_Hello,"A co bêdê z tego mia³?",Info_Jackal_Hello_WhatDoIGet);
-	Info_AddChoice		(Info_Jackal_Hello,"Masz tu 10 bry³ek. Ale pomo¿esz mi, w razie potrzeby?",Info_Jackal_Hello_Pay);
+	Info_AddChoice		(Info_Jackal_Hello,"A jeÅ›li nie zapÅ‚acÄ™?",Info_Jackal_Hello_WhatIf);
+	Info_AddChoice		(Info_Jackal_Hello,"A co bÄ™dÄ™ z tego miaÅ‚?",Info_Jackal_Hello_WhatDoIGet);
+	Info_AddChoice		(Info_Jackal_Hello,"Masz tu 10 bryÅ‚ek. Ale pomoÅ¼esz mi, w razie potrzeby?",Info_Jackal_Hello_Pay);
 };
 
 func void Info_Jackal_Hello_Pay()
 {
-	AI_Output (other, self,"Info_Jackal_Hello_Pay_15_00"); //Masz tu 10 bry³ek. Ale pomo¿esz mi, w razie potrzeby?
+	AI_Output (other, self,"Info_Jackal_Hello_Pay_15_00"); //Masz tu 10 bryÅ‚ek. Ale pomoÅ¼esz mi, w razie potrzeby?
 	
 	if (Npc_HasItems(other,itminugget)>=10)
 	{
-		AI_Output (self, other,"Info_Jackal_Hello_Pay_07_01"); //Jeœli tylko bêdê w pobli¿u, mo¿esz na mnie liczyæ. Znajdziesz mnie pomiêdzy targowiskiem a po³udniow¹ bram¹.
-		AI_Output (self, other,"Info_Jackal_Hello_Pay_07_02"); //Resztê obozu obstawiaj¹ Fletcher i Bloodwyn.
+		AI_Output (self, other,"Info_Jackal_Hello_Pay_07_01"); //JeÅ›li tylko bÄ™dÄ™ w pobliÅ¼u, moÅ¼esz na mnie liczyÄ‡. Znajdziesz mnie pomiÄ™dzy targowiskiem a poÅ‚udniowÄ… bramÄ….
+		AI_Output (self, other,"Info_Jackal_Hello_Pay_07_02"); //ResztÄ™ obozu obstawiajÄ… Fletcher i Bloodwyn.
 		Jackal_ProtectionPaid = TRUE;
 		Npc_SetPermAttitude(self,ATT_FRIENDLY);
 		Jackal_PayDay = B_SetDayTolerance();
 	}
 	else
 	{
-		AI_Output (self, other,"Info_Jackal_Schutz_NoOre_07_00"); //Hej, masz mnie za idiotê?! Wróæ, jak bêdziesz mia³ doœæ rudy!
+		AI_Output (self, other,"Info_Jackal_Schutz_NoOre_07_00"); //Hej, masz mnie za idiotÄ™?! WrÃ³Ä‡, jak bÄ™dziesz miaÅ‚ doÅ›Ä‡ rudy!
 	};
 
 	Info_ClearChoices	(Info_Jackal_Hello);
@@ -81,19 +81,19 @@ func void Info_Jackal_Hello_Pay()
 
 func void Info_Jackal_Hello_WhatDoIGet()
 {
-	AI_Output (other, self,"Info_Jackal_Hello_WhatDoIGet_15_00"); //A co bêdê z tego mia³?
-	AI_Output (self, other,"Info_Jackal_Hello_WhatDoIGet_07_01"); //Dopilnujê, ¿eby nic z³ego ci siê nie przydarzy³o na moim terenie.
-	AI_Output (self, other,"Info_Jackal_Hello_WhatDoIGet_07_02"); //Jak goœcie z Nowego Obozu nadepn¹ ci na odcisk albo wkurzy ciê jakiœ œwir z Sekty, mo¿esz na mnie liczyæ.
-	AI_Output (self, other,"Info_Jackal_Hello_WhatDoIGet_07_03"); //Jeœli weŸmiesz siê za ³by z jakimœ Kopaczem, pomo¿emy temu z was, który zap³aci³ podatek - proste, nie?
-	AI_Output (other, self,"Info_Jackal_Hello_WhatDoIGet_15_04"); //A jeœli oka¿e siê, ¿e obydwaj zap³aciliœmy?
-	AI_Output (self, other,"Info_Jackal_Hello_WhatDoIGet_07_05"); //Wtedy bêdziemy spokojnie patrzeæ, jak siê zarzynacie. Ale to siê nie zdarza zbyt czêsto.
+	AI_Output (other, self,"Info_Jackal_Hello_WhatDoIGet_15_00"); //A co bÄ™dÄ™ z tego miaÅ‚?
+	AI_Output (self, other,"Info_Jackal_Hello_WhatDoIGet_07_01"); //DopilnujÄ™, Å¼eby nic zÅ‚ego ci siÄ™ nie przydarzyÅ‚o na moim terenie.
+	AI_Output (self, other,"Info_Jackal_Hello_WhatDoIGet_07_02"); //Jak goÅ›cie z Nowego Obozu nadepnÄ… ci na odcisk albo wkurzy ciÄ™ jakiÅ› Å›wir z Sekty, moÅ¼esz na mnie liczyÄ‡.
+	AI_Output (self, other,"Info_Jackal_Hello_WhatDoIGet_07_03"); //JeÅ›li weÅºmiesz siÄ™ za Å‚by z jakimÅ› Kopaczem, pomoÅ¼emy temu z was, ktÃ³ry zapÅ‚aciÅ‚ podatek - proste, nie?
+	AI_Output (other, self,"Info_Jackal_Hello_WhatDoIGet_15_04"); //A jeÅ›li okaÅ¼e siÄ™, Å¼e obydwaj zapÅ‚aciliÅ›my?
+	AI_Output (self, other,"Info_Jackal_Hello_WhatDoIGet_07_05"); //Wtedy bÄ™dziemy spokojnie patrzeÄ‡, jak siÄ™ zarzynacie. Ale to siÄ™ nie zdarza zbyt czÄ™sto.
 };
 
 func void Info_Jackal_Hello_WhatIf()
 {
-	AI_Output (other, self,"Info_Jackal_Hello_WhatIf_15_00"); //A jeœli nie zap³acê?
-	AI_Output (self, other,"Info_Jackal_Hello_WhatIf_07_01"); //Cz³owieku, nie nara¿aj siê na niepotrzebny stres! Jesteœ tu nowy - rozejrzyj siê dooko³a. Zbierz trochê rudy, a jak bêdziesz mia³ ju¿ doœæ - zap³aæ. Tak jest bezpieczniej.
-	AI_Output (self, other,"Info_Jackal_Hello_WhatIf_07_02"); //Mo¿esz to zrobiæ teraz, albo póŸniej. Tylko nie licz na moj¹ pomoc, dopóki nie dostanê rudy. Mam nadziejê, ¿e siê rozumiemy?
+	AI_Output (other, self,"Info_Jackal_Hello_WhatIf_15_00"); //A jeÅ›li nie zapÅ‚acÄ™?
+	AI_Output (self, other,"Info_Jackal_Hello_WhatIf_07_01"); //CzÅ‚owieku, nie naraÅ¼aj siÄ™ na niepotrzebny stres! JesteÅ› tu nowy - rozejrzyj siÄ™ dookoÅ‚a. Zbierz trochÄ™ rudy, a jak bÄ™dziesz miaÅ‚ juÅ¼ doÅ›Ä‡ - zapÅ‚aÄ‡. Tak jest bezpieczniej.
+	AI_Output (self, other,"Info_Jackal_Hello_WhatIf_07_02"); //MoÅ¼esz to zrobiÄ‡ teraz, albo pÃ³Åºniej. Tylko nie licz na mojÄ… pomoc, dopÃ³ki nie dostanÄ™ rudy. Mam nadziejÄ™, Å¼e siÄ™ rozumiemy?
 	Info_AddChoice		(Info_Jackal_Hello,"Do zobaczenia.",Info_Jackal_Hello_Later);
 };
 
@@ -120,7 +120,7 @@ INSTANCE Info_Jackal_Schutz (C_INFO)
 	condition	= Info_Jackal_Schutz_Condition;
 	information	= Info_Jackal_Schutz_Info;
 	permanent	= 0;
-	description = "Przemyœla³em sobie to, co powiedzia³eœ. Oto 10 bry³ek rudy.";
+	description = "PrzemyÅ›laÅ‚em sobie to, co powiedziaÅ‚eÅ›. Oto 10 bryÅ‚ek rudy.";
 };                       
 
 FUNC INT Info_Jackal_Schutz_Condition()
@@ -135,15 +135,15 @@ FUNC VOID Info_Jackal_Schutz_Info()
 {	
 	if (Npc_HasItems(other,itminugget)>=10)
 	{
-		AI_Output (other, self,"Info_Jackal_Schutz_15_00"); //Przemyœla³em sobie to, co powiedzia³eœ. Oto 10 bry³ek rudy.
-		AI_Output (self, other,"Info_Jackal_Schutz_07_01"); //M¹dra decyzja, kolego. Od tej pory mo¿esz liczyæ na moj¹ pomoc.
+		AI_Output (other, self,"Info_Jackal_Schutz_15_00"); //PrzemyÅ›laÅ‚em sobie to, co powiedziaÅ‚eÅ›. Oto 10 bryÅ‚ek rudy.
+		AI_Output (self, other,"Info_Jackal_Schutz_07_01"); //MÄ…dra decyzja, kolego. Od tej pory moÅ¼esz liczyÄ‡ na mojÄ… pomoc.
 		Jackal_ProtectionPaid = TRUE;
 		Npc_SetPermAttitude(self,ATT_FRIENDLY);
 		Jackal_PayDay = B_SetDayTolerance();
 	}
 	else
 	{
-		AI_Output (self, other,"Info_Jackal_Schutz_07_02"); //Nie widzê u ciebie ¿adnych 10 bry³ek. Wróæ, jak bêdziesz mia³ ca³¹ kwotê.
+		AI_Output (self, other,"Info_Jackal_Schutz_07_02"); //Nie widzÄ™ u ciebie Å¼adnych 10 bryÅ‚ek. WrÃ³Ä‡, jak bÄ™dziesz miaÅ‚ caÅ‚Ä… kwotÄ™.
 	};
 };
 
@@ -173,7 +173,7 @@ FUNC INT Info_Jackal_PermPaid_Condition()
 FUNC VOID Info_Jackal_PermPaid_Info()
 {	
 	AI_Output (other, self,"Info_Jackal_PermPaid_15_00"); //No i, jak leci?
-	AI_Output (self, other,"Info_Jackal_PermPaid_07_01"); //Mo¿esz na mnie liczyæ, ch³opcze!
+	AI_Output (self, other,"Info_Jackal_PermPaid_07_01"); //MoÅ¼esz na mnie liczyÄ‡, chÅ‚opcze!
 };
 
 /*------------------------------------------------------------------------
@@ -198,7 +198,7 @@ FUNC int  GRD_201_Jackal_WELCOME_Condition()
 };
 func void  GRD_201_Jackal_WELCOME_Info()
 {
-	AI_Output (self, other,"GRD_201_Jackal_WELCOME_Info_07_01"); //Widzê, ¿e szybko pniesz siê do góry. Dobra robota, stary!
+	AI_Output (self, other,"GRD_201_Jackal_WELCOME_Info_07_01"); //WidzÄ™, Å¼e szybko pniesz siÄ™ do gÃ³ry. Dobra robota, stary!
 };
 
 
@@ -238,33 +238,33 @@ FUNC VOID Info_Jackal_PAYDAY_Info()
 		||	(oldHeroGuild == GIL_KDF)
 		||	(oldHeroGuild == GIL_STT)
 		{
-			AI_Output		(self, other,"Info_Jackal_PAYDAY_07_01"); //Patrzcie pañstwo. To¿ to nasz arcy-zdrajca!
-			AI_Output		(self, other,"Info_Jackal_PAYDAY_07_02"); //Gdybyœ nie zadawa³ siê z tymi fajt³apami, móg³byœ nadal byæ jednym z nas!
+			AI_Output		(self, other,"Info_Jackal_PAYDAY_07_01"); //Patrzcie paÅ„stwo. ToÅ¼ to nasz arcy-zdrajca!
+			AI_Output		(self, other,"Info_Jackal_PAYDAY_07_02"); //GdybyÅ› nie zadawaÅ‚ siÄ™ z tymi fajtÅ‚apami, mÃ³gÅ‚byÅ› nadal byÄ‡ jednym z nas!
 		}
 		else
 		{
-			AI_Output		(self, other,"Info_Jackal_PAYDAY_07_03"); //Hej, patrzcie! To ten facet z Nowego Obozu, przez którego mamy tyle k³opotów.
-			AI_Output		(self, other,"Info_Jackal_PAYDAY_07_04"); //Gdybyœ wykaza³ wtedy choæ odrobinê rozs¹dku, móg³byœ teraz byæ po stronie zwyciêzców... po NASZEJ stronie!
+			AI_Output		(self, other,"Info_Jackal_PAYDAY_07_03"); //Hej, patrzcie! To ten facet z Nowego Obozu, przez ktÃ³rego mamy tyle kÅ‚opotÃ³w.
+			AI_Output		(self, other,"Info_Jackal_PAYDAY_07_04"); //GdybyÅ› wykazaÅ‚ wtedy choÄ‡ odrobinÄ™ rozsÄ…dku, mÃ³gÅ‚byÅ› teraz byÄ‡ po stronie zwyciÄ™zcÃ³w... po NASZEJ stronie!
 		};
 	}
 	else
 	{
-		AI_Output		(self, other,"Info_Jackal_PAYDAY_07_05"); //Patrzcie no! To ten goœæ z obozu na bagnie.
-		AI_Output		(self, other,"Info_Jackal_PAYDAY_07_06"); //Za d³ugo zadawa³eœ siê z tymi œwirami z Sekty. Zd¹¿yli ci zrobiæ wodê z mózgu.
+		AI_Output		(self, other,"Info_Jackal_PAYDAY_07_05"); //Patrzcie no! To ten goÅ›Ä‡ z obozu na bagnie.
+		AI_Output		(self, other,"Info_Jackal_PAYDAY_07_06"); //Za dÅ‚ugo zadawaÅ‚eÅ› siÄ™ z tymi Å›wirami z Sekty. ZdÄ…Å¼yli ci zrobiÄ‡ wodÄ™ z mÃ³zgu.
 	};
 	
 	if 	Jackal_ProtectionPaid
 	{
-		AI_Output		(self, other,"Info_Jackal_PAYDAY_07_07"); //Teraz nie uratuj¹ ciê nawet pieni¹dze, które zap³aci³eœ mi za ochronê!
+		AI_Output		(self, other,"Info_Jackal_PAYDAY_07_07"); //Teraz nie uratujÄ… ciÄ™ nawet pieniÄ…dze, ktÃ³re zapÅ‚aciÅ‚eÅ› mi za ochronÄ™!
 	}
 	else
 	{
-		AI_Output		(self, other,"Info_Jackal_PAYDAY_07_08"); //Trzeba mi by³o zap³aciæ kiedy mia³eœ okazjê.
+		AI_Output		(self, other,"Info_Jackal_PAYDAY_07_08"); //Trzeba mi byÅ‚o zapÅ‚aciÄ‡ kiedy miaÅ‚eÅ› okazjÄ™.
 	};
 			
-	AI_Output			(other, self,"Info_Jackal_PAYDAY_15_09"); //Posunêliœcie siê za daleko. Atak na kopalniê by³ powa¿nym b³êdem.
-	AI_Output			(self, other,"Info_Jackal_PAYDAY_07_10"); //Ale wygl¹da na to, ¿e siê uda³o. A tobie ju¿ nic do tego!
-	AI_Output			(self, other,"Info_Jackal_PAYDAY_07_11"); //DALEJ, CH£OPCY! WYKOÑCZMY GO!!!
+	AI_Output			(other, self,"Info_Jackal_PAYDAY_15_09"); //PosunÄ™liÅ›cie siÄ™ za daleko. Atak na kopalniÄ™ byÅ‚ powaÅ¼nym bÅ‚Ä™dem.
+	AI_Output			(self, other,"Info_Jackal_PAYDAY_07_10"); //Ale wyglÄ…da na to, Å¼e siÄ™ udaÅ‚o. A tobie juÅ¼ nic do tego!
+	AI_Output			(self, other,"Info_Jackal_PAYDAY_07_11"); //DALEJ, CHÅOPCY! WYKOÅƒCZMY GO!!!
 	
 	AI_StopProcessInfos	(self);
 	

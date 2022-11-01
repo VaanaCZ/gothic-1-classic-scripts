@@ -32,7 +32,7 @@ instance  SLD_709_Cord_TRAINOFFER (C_INFO)
 	information		= SLD_709_Cord_TRAINOFFER_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Chcia³bym nauczyæ siê walki jednorêcznym orê¿em."; 
+	description		= "ChciaÅ‚bym nauczyÄ‡ siÄ™ walki jednorÄ™cznym orÄ™Å¼em."; 
 };
 
 FUNC int  SLD_709_Cord_TRAINOFFER_Condition()
@@ -45,11 +45,11 @@ FUNC int  SLD_709_Cord_TRAINOFFER_Condition()
 };
 FUNC void  SLD_709_Cord_TRAINOFFER_Info()
 {
-	AI_Output (other, self,"SLD_709_Cord_TRAINOFFER_Info_15_01"); //Chcia³bym nauczyæ siê walki jednorêcznym orê¿em.
-	AI_Output (self, other,"SLD_709_Cord_TRAINOFFER_Info_14_02"); //Nie ma sprawy. Ale to ciê bêdzie kosztowa³o 30 bry³ek rudy. Mo¿e byæ?
+	AI_Output (other, self,"SLD_709_Cord_TRAINOFFER_Info_15_01"); //ChciaÅ‚bym nauczyÄ‡ siÄ™ walki jednorÄ™cznym orÄ™Å¼em.
+	AI_Output (self, other,"SLD_709_Cord_TRAINOFFER_Info_14_02"); //Nie ma sprawy. Ale to ciÄ™ bÄ™dzie kosztowaÅ‚o 30 bryÅ‚ek rudy. MoÅ¼e byÄ‡?
 
 	Log_CreateTopic	(GE_TeacherNC,	LOG_NOTE);
-	B_LogEntry		(GE_TeacherNC,"Najemnik Cord mo¿e mnie nauczyæ walki jednorêcznym orê¿em. Za dnia mo¿na go znaleŸæ na kamienistej równinie, przy jeziorze.");
+	B_LogEntry		(GE_TeacherNC,"Najemnik Cord moÅ¼e mnie nauczyÄ‡ walki jednorÄ™cznym orÄ™Å¼em. Za dnia moÅ¼na go znaleÅºÄ‡ na kamienistej rÃ³wninie, przy jeziorze.");
 };  
 /*------------------------------------------------------------------------
 						EINHANDKAMPF	DIE ERSTE LEHRSTUNDE							
@@ -75,27 +75,27 @@ FUNC int  SLD_709_Cord_TRAIN_Condition()
 };
 FUNC void  SLD_709_Cord_TRAIN_Info()
 {
-	AI_Output (other, self,"SLD_709_Cord_TRAIN_Info_15_00"); //Chcia³bym nauczyæ siê walki jednorêcznym orê¿em.
+	AI_Output (other, self,"SLD_709_Cord_TRAIN_Info_15_00"); //ChciaÅ‚bym nauczyÄ‡ siÄ™ walki jednorÄ™cznym orÄ™Å¼em.
 
 	if (Npc_HasItems (hero,ItMiNugget) >= 30)
 	{
 		if B_GiveSkill(hero,NPC_TALENT_1H,1,LPCOST_TALENT_1H_1)
 		{
-			AI_Output			(self,other,"SLD_709_Cord_TRAIN_14_01"); //M¹dra decyzja. Jednak zanim poznasz bardziej zaawansowane techniki, powinieneœ nauczyæ siê prawid³owo trzymaæ orê¿ w rêku.
-			AI_Output			(self,other,"SLD_709_Cord_TRAIN_14_02"); //Pocz¹tkuj¹cy czêsto ³api¹ zwyk³y miecz obydwoma rêkami. Radzi³bym ci siê do tego nie przyzwyczajaæ, to fatalny nawyk. 
-			AI_Output			(self,other,"SLD_709_Cord_TRAIN_14_03"); //Trzymaj broñ jedn¹ rêk¹, ostrzem do góry, i zacznij ni¹ machaæ.
-			AI_Output			(self,other,"SLD_709_Cord_TRAIN_14_04"); //Musisz siê nauczyæ, jak zgraæ twoje ruchy z bezw³adnoœci¹ orê¿a. Dziêki temu twoje ataki bêd¹ szybsze i bardziej zaskakuj¹ce.
-			AI_Output			(self,other,"SLD_709_Cord_TRAIN_14_05"); //Zapamiêtaj sobie dobrze, co ci powiedzia³em, a twój styl walki stanie siê o wiele bardziej elegancki i skuteczny.
+			AI_Output			(self,other,"SLD_709_Cord_TRAIN_14_01"); //MÄ…dra decyzja. Jednak zanim poznasz bardziej zaawansowane techniki, powinieneÅ› nauczyÄ‡ siÄ™ prawidÅ‚owo trzymaÄ‡ orÄ™Å¼ w rÄ™ku.
+			AI_Output			(self,other,"SLD_709_Cord_TRAIN_14_02"); //PoczÄ…tkujÄ…cy czÄ™sto Å‚apiÄ… zwykÅ‚y miecz obydwoma rÄ™kami. RadziÅ‚bym ci siÄ™ do tego nie przyzwyczajaÄ‡, to fatalny nawyk. 
+			AI_Output			(self,other,"SLD_709_Cord_TRAIN_14_03"); //Trzymaj broÅ„ jednÄ… rÄ™kÄ…, ostrzem do gÃ³ry, i zacznij niÄ… machaÄ‡.
+			AI_Output			(self,other,"SLD_709_Cord_TRAIN_14_04"); //Musisz siÄ™ nauczyÄ‡, jak zgraÄ‡ twoje ruchy z bezwÅ‚adnoÅ›ciÄ… orÄ™Å¼a. DziÄ™ki temu twoje ataki bÄ™dÄ… szybsze i bardziej zaskakujÄ…ce.
+			AI_Output			(self,other,"SLD_709_Cord_TRAIN_14_05"); //ZapamiÄ™taj sobie dobrze, co ci powiedziaÅ‚em, a twÃ³j styl walki stanie siÄ™ o wiele bardziej elegancki i skuteczny.
 			B_PracticeCombat	("NC_WATERFALL_TOP01");
-			AI_Output			(self,other,"SLD_709_Cord_TRAIN_14_06"); //A, i jeszcze coœ! Niektóre ciosy powoduj¹ wiêksze obra¿enia ni¿ zwykle. Oczywiœcie, jako pocz¹tkuj¹cy masz raczej niewielkie szanse na zadanie krytycznego uderzenia.
-			AI_Output			(self,other,"SLD_709_Cord_TRAIN_14_07"); //Ale to siê zmieni w miarê czynienia przez ciebie postêpów.
+			AI_Output			(self,other,"SLD_709_Cord_TRAIN_14_06"); //A, i jeszcze coÅ›! NiektÃ³re ciosy powodujÄ… wiÄ™ksze obraÅ¼enia niÅ¼ zwykle. OczywiÅ›cie, jako poczÄ…tkujÄ…cy masz raczej niewielkie szanse na zadanie krytycznego uderzenia.
+			AI_Output			(self,other,"SLD_709_Cord_TRAIN_14_07"); //Ale to siÄ™ zmieni w miarÄ™ czynienia przez ciebie postÄ™pÃ³w.
 			B_GiveInvItems (hero, self,ItMiNugget,30);
 			SLD_709_Cord_TRAIN.permanent = 0;
 		};
 	}
 	else
 	{
-		AI_Output (self, other,"KDF_402_Corristo_HEAVYARMOR_Info_14_03"); //Nie masz wystarczaj¹cej iloœci rudy!
+		AI_Output (self, other,"KDF_402_Corristo_HEAVYARMOR_Info_14_03"); //Nie masz wystarczajÄ…cej iloÅ›ci rudy!
 	};
 };  
 /*------------------------------------------------------------------------
@@ -123,23 +123,23 @@ FUNC int  SLD_709_Cord_TRAINAGAIN_Condition()
 };
 FUNC void  SLD_709_Cord_TRAINAGAIN_Info()
 {
-	AI_Output			(other, self,"SLD_709_Cord_TRAINAGAIN_Info_15_01"); //Naucz mnie, jak sprawniej pos³ugiwaæ siê jednorêczn¹ broni¹.
+	AI_Output			(other, self,"SLD_709_Cord_TRAINAGAIN_Info_15_01"); //Naucz mnie, jak sprawniej posÅ‚ugiwaÄ‡ siÄ™ jednorÄ™cznÄ… broniÄ….
 
 	if (Npc_HasItems (hero,ItMiNugget) >= 50)
 	{
 		if B_GiveSkill(hero,NPC_TALENT_1H,2,LPCOST_TALENT_1H_2)
 		{
-			AI_Output		(self, other,"SLD_709_Cord_TRAINAGAIN_Info_14_02"); //Dobrze, podstawy ju¿ znasz. Nieznaczne opuszczenie broni zwiêkszy si³ê twojego pierwszego ciosu.
-			AI_Output		(self, other,"SLD_709_Cord_TRAINAGAIN_Info_14_03"); //Musisz wykorzystaæ si³ê bezw³adnoœci, pamiêtasz? Œwietnie. Teraz nauczysz siê lepiej balansowaæ cia³em. Po zadaniu dwóch ciosów wykonaj obrót. To powinno zmyliæ twojego przeciwnika i pozwoliæ ci wyjœæ na dobr¹ pozycjê do nastêpnego ataku.
-			AI_Output		(self, other,"SLD_709_Cord_TRAINAGAIN_Info_14_04"); //Wtedy wyprowadŸ nastêpne ciêcie z prawej strony...
+			AI_Output		(self, other,"SLD_709_Cord_TRAINAGAIN_Info_14_02"); //Dobrze, podstawy juÅ¼ znasz. Nieznaczne opuszczenie broni zwiÄ™kszy siÅ‚Ä™ twojego pierwszego ciosu.
+			AI_Output		(self, other,"SLD_709_Cord_TRAINAGAIN_Info_14_03"); //Musisz wykorzystaÄ‡ siÅ‚Ä™ bezwÅ‚adnoÅ›ci, pamiÄ™tasz? Åšwietnie. Teraz nauczysz siÄ™ lepiej balansowaÄ‡ ciaÅ‚em. Po zadaniu dwÃ³ch ciosÃ³w wykonaj obrÃ³t. To powinno zmyliÄ‡ twojego przeciwnika i pozwoliÄ‡ ci wyjÅ›Ä‡ na dobrÄ… pozycjÄ™ do nastÄ™pnego ataku.
+			AI_Output		(self, other,"SLD_709_Cord_TRAINAGAIN_Info_14_04"); //Wtedy wyprowadÅº nastÄ™pne ciÄ™cie z prawej strony...
 			B_PracticeCombat("NC_WATERFALL_TOP01");
-			AI_Output		(self, other,"SLD_709_Cord_TRAINAGAIN_Info_14_05"); //I znowu do przodu. Pamiêtaj - trening czyni mistrza, wiêc najlepiej weŸ siê od razu do roboty!
+			AI_Output		(self, other,"SLD_709_Cord_TRAINAGAIN_Info_14_05"); //I znowu do przodu. PamiÄ™taj - trening czyni mistrza, wiÄ™c najlepiej weÅº siÄ™ od razu do roboty!
 			B_GiveInvItems	(hero, self, ItMiNugget, 50);
 			SLD_709_Cord_TRAINAGAIN.permanent = 0;
 		};
 	}
 	else
 	{
-		AI_Output (self, other,"KDF_402_Corristo_HEAVYARMOR_Info_14_03"); //Nie masz wystarczaj¹cej iloœci rudy!
+		AI_Output (self, other,"KDF_402_Corristo_HEAVYARMOR_Info_14_03"); //Nie masz wystarczajÄ…cej iloÅ›ci rudy!
 	};
 }; 

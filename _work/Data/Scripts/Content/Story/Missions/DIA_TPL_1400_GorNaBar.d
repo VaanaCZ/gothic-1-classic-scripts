@@ -18,7 +18,7 @@ FUNC int  Tpl_1400_GorNaBar_Exit_Condition()
 
 FUNC VOID  Tpl_1400_GorNaBar_Exit_Info()
 {
-	AI_Output			(self, other,"Tpl_1400_GorNaBar_Exit_Info_09_02"); //Niech Œni¹cy zawsze bêdzie z tob¹!
+	AI_Output			(self, other,"Tpl_1400_GorNaBar_Exit_Info_09_02"); //Niech ÅšniÄ…cy zawsze bÄ™dzie z tobÄ…!
 	AI_StopProcessInfos	( self );
 };
 
@@ -34,7 +34,7 @@ instance  Tpl_1400_GorNaBar_SUGGEST (C_INFO)
 	information		= Tpl_1400_GorNaBar_SUGGEST_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Potrzebujê twojej pomocy."; 
+	description		= "PotrzebujÄ™ twojej pomocy."; 
 };
 
 FUNC int  Tpl_1400_GorNaBar_SUGGEST_Condition()
@@ -48,17 +48,17 @@ FUNC int  Tpl_1400_GorNaBar_SUGGEST_Condition()
 
 FUNC void  Tpl_1400_GorNaBar_SUGGEST_Info()
 {
-	AI_Output			(other, self,"Tpl_1400_GorNaBar_SUGGEST_Info_15_01"); //Potrzebujê twojej pomocy.
-	AI_Output			(other, self,"Tpl_1400_GorNaBar_SUGGEST_Info_15_02"); //Szukam wydzieliny pe³zaczy dla Kaloma i chyba wiem ju¿, gdzie znajduje siê gniazdo tych drapie¿ców.
-	AI_Output			(other, self,"Tpl_1400_GorNaBar_SUGGEST_Info_15_03"); //Mo¿emy na ciebie liczyæ, kiedy ju¿ odblokujemy prowadz¹ce do niego przejœcie?
-	AI_Output			(self, other,"Tpl_1400_GorNaBar_SUGGEST_Info_09_04"); //Gniazdo pe³zaczy! Nareszcie! Mój miecz jest na twoje us³ugi.
+	AI_Output			(other, self,"Tpl_1400_GorNaBar_SUGGEST_Info_15_01"); //PotrzebujÄ™ twojej pomocy.
+	AI_Output			(other, self,"Tpl_1400_GorNaBar_SUGGEST_Info_15_02"); //Szukam wydzieliny peÅ‚zaczy dla Kaloma i chyba wiem juÅ¼, gdzie znajduje siÄ™ gniazdo tych drapieÅ¼cÃ³w.
+	AI_Output			(other, self,"Tpl_1400_GorNaBar_SUGGEST_Info_15_03"); //MoÅ¼emy na ciebie liczyÄ‡, kiedy juÅ¼ odblokujemy prowadzÄ…ce do niego przejÅ›cie?
+	AI_Output			(self, other,"Tpl_1400_GorNaBar_SUGGEST_Info_09_04"); //Gniazdo peÅ‚zaczy! Nareszcie! MÃ³j miecz jest na twoje usÅ‚ugi.
 
 	AI_StopProcessInfos	(self);
 	Npc_ExchangeRoutine (self,"GATE"); 
 	Npc_SetPermAttitude (self,ATT_FRIENDLY); 
 	B_GiveXP			(XP_HireGorNaBar);
 
-	B_LogEntry		(CH2_MCEggs,"Na wzmiankê o gnieŸdzie pe³zaczy, Gor Na Bar zgodzi³ siê do³¹czyæ do oddzia³u przy bramie Asghana.");
+	B_LogEntry		(CH2_MCEggs,"Na wzmiankÄ™ o gnieÅºdzie peÅ‚zaczy, Gor Na Bar zgodziÅ‚ siÄ™ doÅ‚Ä…czyÄ‡ do oddziaÅ‚u przy bramie Asghana.");
 };
 
 // ***************** Infos *****************************
@@ -70,7 +70,7 @@ instance  Tpl_1400_GorNaBar_INFO (C_INFO)
 	information		= Tpl_1400_GorNaBar_INFO_Info;
 	important		= 0;
 	permanent		= 1;
-	description		= "Co mo¿esz mi powiedzieæ o pe³zaczach?";
+	description		= "Co moÅ¼esz mi powiedzieÄ‡ o peÅ‚zaczach?";
 };
 
 FUNC int  Tpl_1400_GorNaBar_INFO_Condition()
@@ -83,8 +83,8 @@ FUNC int  Tpl_1400_GorNaBar_INFO_Condition()
 
 FUNC void  Tpl_1400_GorNaBar_INFO_Info()
 {
-	AI_Output			(other, self,"Tpl_1400_GorNaBar_INFO_Info_15_01"); //Co mo¿esz mi powiedzieæ o pe³zaczach?
-	AI_Output			(self, other,"Tpl_1400_GorNaBar_INFO_Info_09_02"); //Te bestie musz¹ mieæ gdzieœ tutaj swoje gniazdo. Gdyby uda³o siê je znaleŸæ, moglibyœmy wytêpiæ je za jednym zamachem!
+	AI_Output			(other, self,"Tpl_1400_GorNaBar_INFO_Info_15_01"); //Co moÅ¼esz mi powiedzieÄ‡ o peÅ‚zaczach?
+	AI_Output			(self, other,"Tpl_1400_GorNaBar_INFO_Info_09_02"); //Te bestie muszÄ… mieÄ‡ gdzieÅ› tutaj swoje gniazdo. Gdyby udaÅ‚o siÄ™ je znaleÅºÄ‡, moglibyÅ›my wytÄ™piÄ‡ je za jednym zamachem!
 };    
 
 
@@ -96,7 +96,7 @@ instance  Tpl_1400_GorNaBar_VICTORY (C_INFO)
 	information		= Tpl_1400_GorNaBar_VICTORY_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Znalaz³em gniazdo królowej!"; 
+	description		= "ZnalazÅ‚em gniazdo krÃ³lowej!"; 
 };
 
 FUNC int  Tpl_1400_GorNaBar_VICTORY_Condition()
@@ -109,9 +109,9 @@ FUNC int  Tpl_1400_GorNaBar_VICTORY_Condition()
 };
 FUNC void  Tpl_1400_GorNaBar_VICTORY_Info()
 {
-	AI_Output			(other, self,"Tpl_1400_GorNaBar_VICTORY_Info_15_01"); //Znalaz³em gniazdo królowej!
-	AI_Output			(self, other,"Tpl_1400_GorNaBar_VICTORY_Info_09_02"); //Wykaza³eœ siê odwag¹ i hartem ducha. Potrzebujemy ludzi takich jak ty!
+	AI_Output			(other, self,"Tpl_1400_GorNaBar_VICTORY_Info_15_01"); //ZnalazÅ‚em gniazdo krÃ³lowej!
+	AI_Output			(self, other,"Tpl_1400_GorNaBar_VICTORY_Info_09_02"); //WykazaÅ‚eÅ› siÄ™ odwagÄ… i hartem ducha. Potrzebujemy ludzi takich jak ty!
 	
 	Log_CreateTopic (GE_BecomeTemplar,LOG_NOTE);
-	B_LogEntry (GE_BecomeTemplar,"Po dostarczeniu jaj powinienem porozmawiaæ z Cor Angarem. Mo¿e pozwoli mi do³¹czyæ do Stra¿y Œwi¹tynnej...");
+	B_LogEntry (GE_BecomeTemplar,"Po dostarczeniu jaj powinienem porozmawiaÄ‡ z Cor Angarem. MoÅ¼e pozwoli mi doÅ‚Ä…czyÄ‡ do StraÅ¼y ÅšwiÄ…tynnej...");
 };  

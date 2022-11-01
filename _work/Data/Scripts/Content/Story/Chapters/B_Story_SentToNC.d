@@ -9,7 +9,7 @@
 
 func void B_Story_SentToNC()
 {
-	//-------- Cor-Angar zurück zum Übungsplatz schicken --------
+	//-------- Cor-Angar zurÃ¼ck zum Ãœbungsplatz schicken --------
 	var C_NPC	angar;
 	angar = Hlp_GetNpc	(Gur_1202_CorAngar);
 	Npc_ExchangeRoutine	(angar, "start");
@@ -26,11 +26,11 @@ func void B_Story_SentToNC()
 	Npc_ExchangeRoutine	(gorn, "NCWAIT");
 	AI_ContinueRoutine	(gorn);
 
-	//-------- Tagebucheinträge --------
+	//-------- TagebucheintrÃ¤ge --------
 	Log_CreateTopic		(CH3_EscapePlanNC,	LOG_MISSION);
 	Log_SetTopicStatus	(CH3_EscapePlanNC,	LOG_RUNNING);
-	B_LogEntry			(CH3_EscapePlanNC,"Y'Berion nie ¿yje, niech jego dusza spoczywa w spokoju! W swych ostatnich s³owach duchowy przywódca Bractwa ca³¹ nadziejê na ocalenie kolonii pok³ada³ w magach z Krêgu Wody.");
-	B_LogEntry			(CH3_EscapePlanNC,"Podj¹³em decyzjê. Udam siê do Nowego Obozu, by wesprzeæ Magów Wody. Cor Angar da³ mi klucze do skrzyni w laboratorium Cor Kaloma. Tam ma siê znajdowaæ znaleziony przeze mnie kamieñ ogniskuj¹cy wraz ze staro¿ytnym almanachem. Cor Angar uwa¿a, ¿e przy ich pomocy magowie z Nowego Obozu maj¹ szansê osi¹gn¹æ swój cel.");
+	B_LogEntry			(CH3_EscapePlanNC,"Y'Berion nie Å¼yje, niech jego dusza spoczywa w spokoju! W swych ostatnich sÅ‚owach duchowy przywÃ³dca Bractwa caÅ‚Ä… nadziejÄ™ na ocalenie kolonii pokÅ‚adaÅ‚ w magach z KrÄ™gu Wody.");
+	B_LogEntry			(CH3_EscapePlanNC,"PodjÄ…Å‚em decyzjÄ™. Udam siÄ™ do Nowego Obozu, by wesprzeÄ‡ MagÃ³w Wody. Cor Angar daÅ‚ mi klucze do skrzyni w laboratorium Cor Kaloma. Tam ma siÄ™ znajdowaÄ‡ znaleziony przeze mnie kamieÅ„ ogniskujÄ…cy wraz ze staroÅ¼ytnym almanachem. Cor Angar uwaÅ¼a, Å¼e przy ich pomocy magowie z Nowego Obozu majÄ… szansÄ™ osiÄ…gnÄ…Ä‡ swÃ³j cel.");
 
 	//-------- Missionitem --------
 	CreateInvItem		(self,			ItArRuneTeleport5);

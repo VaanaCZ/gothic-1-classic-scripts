@@ -4,7 +4,7 @@
 
 PROTOTYPE Mst_Default_UndeadOrcWarrior (C_Npc)			
 {
-	name							=	"Opiekun œwi¹tyni";
+	name							=	"Opiekun Å›wiÄ…tyni";
 	guild							=	GIL_UNDEADORC;
 	aivar[AIV_MM_REAL_ID]			= 	ID_UNDEADORCWARRIOR;
 	level							=	25;
@@ -75,7 +75,7 @@ INSTANCE UndeadOrcWarrior (Mst_Default_UndeadOrcWarrior)
 
 INSTANCE UndeadOWH (Mst_Default_UndeadOrcWarrior)
 {
-	name							=	"Starszy opiekun œwi¹tyni";
+	name							=	"Starszy opiekun Å›wiÄ…tyni";
 	level							=	40;
 
 	attribute	[ATR_STRENGTH]		=	120;

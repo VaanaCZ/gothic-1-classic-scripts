@@ -33,7 +33,7 @@ INSTANCE Info_ORG_829_Hello (C_INFO)
 	condition	= Info_ORG_829_Hello_Condition;
 	information	= Info_ORG_829_Hello_Info;
 	permanent	= 0;
-	description	= "Co s³ychaæ?";
+	description	= "Co sÅ‚ychaÄ‡?";
 };                       
 
 FUNC INT Info_ORG_829_Hello_Condition()
@@ -43,8 +43,8 @@ FUNC INT Info_ORG_829_Hello_Condition()
 
 FUNC VOID Info_ORG_829_Hello_Info()
 {	
-	AI_Output (other, self,"Info_ORG_829_Hello_15_00"); //Co s³ychaæ?
-	AI_Output (self, other,"Info_ORG_829_Hello_06_01"); //Nie najgorzej, ale nie mam ju¿ nic do palenia.
+	AI_Output (other, self,"Info_ORG_829_Hello_15_00"); //Co sÅ‚ychaÄ‡?
+	AI_Output (self, other,"Info_ORG_829_Hello_06_01"); //Nie najgorzej, ale nie mam juÅ¼ nic do palenia.
 };
 
 // ************************************************************
@@ -60,7 +60,7 @@ INSTANCE Info_ORG_829_OfferJoint (C_INFO)
 	condition	= Info_ORG_829_OfferJoint_Condition;
 	information	= Info_ORG_829_OfferJoint_Info;
 	permanent	= 0;
-	description	= "Mam przy sobie trochê ziela - chcesz?";
+	description	= "Mam przy sobie trochÄ™ ziela - chcesz?";
 };                       
 
 FUNC INT Info_ORG_829_OfferJoint_Condition()
@@ -73,7 +73,7 @@ FUNC INT Info_ORG_829_OfferJoint_Condition()
 
 FUNC VOID Info_ORG_829_OfferJoint_Info()
 {	
-	AI_Output (other, self,"Info_ORG_829_OfferJoint_15_00"); //Mam przy sobie trochê ziela - chcesz?
+	AI_Output (other, self,"Info_ORG_829_OfferJoint_15_00"); //Mam przy sobie trochÄ™ ziela - chcesz?
 	
 	if ( (Npc_HasItems(other,ItMiJoint_1)>0) || (Npc_HasItems(other,ItMiJoint_2)>0) || (Npc_HasItems(other,ItMiJoint_3)>0) )
 	{
@@ -90,7 +90,7 @@ FUNC VOID Info_ORG_829_OfferJoint_Info()
 	}
 	else
 	{
-		AI_Output (self, other,"Info_ORG_829_OfferJoint_No_Joint_06_00"); //Hej, koleœ! Nie próbuj mnie wykiwaæ! Bardzo tego nie lubiê!
+		AI_Output (self, other,"Info_ORG_829_OfferJoint_No_Joint_06_00"); //Hej, koleÅ›! Nie prÃ³buj mnie wykiwaÄ‡! Bardzo tego nie lubiÄ™!
 	};
 };
 
@@ -105,7 +105,7 @@ INSTANCE Info_ORG_829_SpecialInfo (C_INFO)
 	condition	= Info_ORG_829_SpecialInfo_Condition;
 	information	= Info_ORG_829_SpecialInfo_Info;
 	permanent	= 0;
-	description	= "Jestem tu nowy. Masz mo¿e dla mnie jakieœ wskazówki?";
+	description	= "Jestem tu nowy. Masz moÅ¼e dla mnie jakieÅ› wskazÃ³wki?";
 };                       
 
 FUNC INT Info_ORG_829_SpecialInfo_Condition()
@@ -118,10 +118,10 @@ FUNC INT Info_ORG_829_SpecialInfo_Condition()
 
 FUNC VOID Info_ORG_829_SpecialInfo_Info()
 {	
-	AI_Output (other, self,"Info_ORG_829_SpecialInfo_15_00"); //Jestem tu nowy. Masz mo¿e dla mnie jakieœ wskazówki?
-	AI_Output (self, other,"Info_ORG_829_SpecialInfo_06_01"); //Jasne! Po dotarciu do Obozu idŸ do Gorna. Wprawdzie to jeden z najemników w s³u¿bie Magów, ale jest w porz¹dku. Kiedyœ by³ jednym z nas.
-	AI_Output (other, self,"Info_ORG_829_SpecialInfo_15_02"); //Co masz na myœli mówi¹c "jednym z nas"?
-	AI_Output (self, other,"Info_ORG_829_SpecialInfo_06_03"); //No, Szkodnikiem, rzecz jasna. Postrachem Magnatów, ot co!
+	AI_Output (other, self,"Info_ORG_829_SpecialInfo_15_00"); //Jestem tu nowy. Masz moÅ¼e dla mnie jakieÅ› wskazÃ³wki?
+	AI_Output (self, other,"Info_ORG_829_SpecialInfo_06_01"); //Jasne! Po dotarciu do Obozu idÅº do Gorna. Wprawdzie to jeden z najemnikÃ³w w sÅ‚uÅ¼bie MagÃ³w, ale jest w porzÄ…dku. KiedyÅ› byÅ‚ jednym z nas.
+	AI_Output (other, self,"Info_ORG_829_SpecialInfo_15_02"); //Co masz na myÅ›li mÃ³wiÄ…c "jednym z nas"?
+	AI_Output (self, other,"Info_ORG_829_SpecialInfo_06_03"); //No, Szkodnikiem, rzecz jasna. Postrachem MagnatÃ³w, ot co!
 };
 
 // ************************************************************
@@ -135,7 +135,7 @@ INSTANCE Info_ORG_829_PERM (C_INFO)
 	condition	= Info_ORG_829_PERM_Condition;
 	information	= Info_ORG_829_PERM_Info;
 	permanent	= 1;
-	description	= "Czego mogê siê spodziewaæ w Obozie?";
+	description	= "Czego mogÄ™ siÄ™ spodziewaÄ‡ w Obozie?";
 };                       
 
 FUNC INT Info_ORG_829_PERM_Condition()
@@ -148,6 +148,6 @@ FUNC INT Info_ORG_829_PERM_Condition()
 
 FUNC VOID Info_ORG_829_PERM_Info()
 {	
-	AI_Output (other, self,"Info_ORG_829_PERM_15_00"); //Czego mogê siê spodziewaæ w Obozie?
-	AI_Output (self, other,"Info_ORG_829_PERM_06_01"); //Najlepiej idŸ i sam siê przekonaj.
+	AI_Output (other, self,"Info_ORG_829_PERM_15_00"); //Czego mogÄ™ siÄ™ spodziewaÄ‡ w Obozie?
+	AI_Output (self, other,"Info_ORG_829_PERM_06_01"); //Najlepiej idÅº i sam siÄ™ przekonaj.
 };

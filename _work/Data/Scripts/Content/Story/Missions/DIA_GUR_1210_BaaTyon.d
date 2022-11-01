@@ -24,7 +24,7 @@ FUNC VOID  DIA_BaalTyon_Exit_Info()
 };
 
 // ************************************************************
-// 					NICHT ansprechbar (Ungläubiger) 
+// 					NICHT ansprechbar (UnglÃ¤ubiger) 
 // ************************************************************
 	var int BaalTyon_Ansprechbar;
 	var int BaalTyon_Sakrileg;
@@ -56,28 +56,28 @@ FUNC VOID DIA_BaalTyon_NoTalk_Info()
 	{
 		info_AddChoice	(DIA_BaalTyon_NoTalk,"(zaoferuj przygotowany zew nocy)",DIA_BaalTyon_SpecialJoint);
 	};
-	Info_Addchoice 		(DIA_BaalTyon_NoTalk,"Wszystko w porz¹dku, kolego?",DIA_BaalTyon_NoTalk_Imp);
-	Info_Addchoice 		(DIA_BaalTyon_NoTalk,"Niech Œni¹cy bêdzie z tob¹!",DIA_BaalTyon_NoTalk_Sleeper);
-	Info_Addchoice 		(DIA_BaalTyon_NoTalk,"Czeœæ! Jestem tu nowy!",DIA_BaalTyon_NoTalk_Hi);
+	Info_Addchoice 		(DIA_BaalTyon_NoTalk,"Wszystko w porzÄ…dku, kolego?",DIA_BaalTyon_NoTalk_Imp);
+	Info_Addchoice 		(DIA_BaalTyon_NoTalk,"Niech ÅšniÄ…cy bÄ™dzie z tobÄ…!",DIA_BaalTyon_NoTalk_Sleeper);
+	Info_Addchoice 		(DIA_BaalTyon_NoTalk,"CzeÅ›Ä‡! Jestem tu nowy!",DIA_BaalTyon_NoTalk_Hi);
 };
 
 func void DIA_BaalTyon_NoTalk_Hi()
 {
-	AI_Output			(other, self,"DIA_BaalTyon_NoTalk_Hi_15_00"); //Czeœæ! Jestem tu nowy!
+	AI_Output			(other, self,"DIA_BaalTyon_NoTalk_Hi_15_00"); //CzeÅ›Ä‡! Jestem tu nowy!
 	AI_Output			(self, other,"DIA_BaalTyon_NoTalk_Hi_11_01"); //(Wzdycha)
 	BaalTyon_Sakrileg = TRUE;
 };
 
 func void DIA_BaalTyon_NoTalk_Sleeper()
 {
-	AI_Output			(other, self,"DIA_BaalTyon_NoTalk_Sleeper_15_00"); //Niech Œni¹cy bêdzie z tob¹!
+	AI_Output			(other, self,"DIA_BaalTyon_NoTalk_Sleeper_15_00"); //Niech ÅšniÄ…cy bÄ™dzie z tobÄ…!
 	AI_Output			(self, other,"DIA_BaalTyon_NoTalk_Sleeper_11_01"); //(Wzdycha)
 	BaalTyon_Sakrileg = TRUE;
 };
 
 func void DIA_BaalTyon_NoTalk_Imp()
 {
-	AI_Output			(other, self,"DIA_BaalTyon_NoTalk_Imp_15_00"); //Wszystko w porz¹dku, kolego?
+	AI_Output			(other, self,"DIA_BaalTyon_NoTalk_Imp_15_00"); //Wszystko w porzÄ…dku, kolego?
 	AI_Output			(self, other,"DIA_BaalTyon_NoTalk_Imp_11_01"); //(Wzdycha)
 	BaalTyon_Sakrileg = TRUE;
 };
@@ -89,7 +89,7 @@ func void DIA_BaalTyon_NoTalk_ENDE()
 
 func void DIA_BaalTyon_SpecialJoint()
 {
-	AI_Output			(other, self,"DIA_BaalTyon_SpecialJoint_15_00"); //Proszê, Mistrzu! Oto skromny prezent od twojego ucznia...
+	AI_Output			(other, self,"DIA_BaalTyon_SpecialJoint_15_00"); //ProszÄ™, Mistrzu! Oto skromny prezent od twojego ucznia...
 	AI_StopProcessInfos	(self);
 
 	B_GiveInvItems	(hero, self, SpecialJoint, 1);
@@ -104,7 +104,7 @@ func void DIA_BaalTyon_SpecialJoint()
 
 	BaalTyon_Ansprechbar = TRUE;
 	Npc_SetRefuseTalk	(self,5);
-	hero.aivar[AIV_INVINCIBLE] = FALSE; //SN: Workaround, da in diese Situation das INVINCIBLE-Flag nicht automatisch gelöscht wird!
+	hero.aivar[AIV_INVINCIBLE] = FALSE; //SN: Workaround, da in diese Situation das INVINCIBLE-Flag nicht automatisch gelÃ¶scht wird!
 };
 
 // **************************************************
@@ -131,18 +131,18 @@ FUNC int  DIA_BaalTyon_Vision_Condition()
 
 FUNC VOID  DIA_BaalTyon_Vision_Info()
 {
-	AI_Output			(self, other,"DIA_BaalTyon_Vision_11_00"); //Na chwa³ê Œni¹cego! Mia³em wizjê!
-	AI_Output			(self, other,"DIA_BaalTyon_Vision_11_01"); //To by³o niesamowite! Zobaczy³em, ¿e wkrótce zyskamy nowego brata, który bêdzie inny ni¿ wszyscy przed nim.
-	AI_Output			(self, other,"DIA_BaalTyon_Vision_11_02"); //To mia³o coœ wspólnego ze mn¹. W jego rêku lœni³ miecz. On sam zaœ zbiega³ w dó³ po szerokich stopniach. Tutaj wizja siê skoñczy³a.
-	AI_Output			(self, other,"DIA_BaalTyon_Vision_11_03"); //Wygl¹da³ zupe³nie jak TY! Kim jesteœ? Czego tu szukasz?
-	AI_Output			(other, self,"DIA_BaalTyon_Vision_15_04"); //Jestem tylko skromnym s³ug¹ Œni¹cego...
-	AI_Output			(self, other,"DIA_BaalTyon_Vision_11_05"); //IdŸ do Cor Kaloma. On siê tob¹ zajmie.
+	AI_Output			(self, other,"DIA_BaalTyon_Vision_11_00"); //Na chwaÅ‚Ä™ ÅšniÄ…cego! MiaÅ‚em wizjÄ™!
+	AI_Output			(self, other,"DIA_BaalTyon_Vision_11_01"); //To byÅ‚o niesamowite! ZobaczyÅ‚em, Å¼e wkrÃ³tce zyskamy nowego brata, ktÃ³ry bÄ™dzie inny niÅ¼ wszyscy przed nim.
+	AI_Output			(self, other,"DIA_BaalTyon_Vision_11_02"); //To miaÅ‚o coÅ› wspÃ³lnego ze mnÄ…. W jego rÄ™ku lÅ›niÅ‚ miecz. On sam zaÅ› zbiegaÅ‚ w dÃ³Å‚ po szerokich stopniach. Tutaj wizja siÄ™ skoÅ„czyÅ‚a.
+	AI_Output			(self, other,"DIA_BaalTyon_Vision_11_03"); //WyglÄ…daÅ‚ zupeÅ‚nie jak TY! Kim jesteÅ›? Czego tu szukasz?
+	AI_Output			(other, self,"DIA_BaalTyon_Vision_15_04"); //Jestem tylko skromnym sÅ‚ugÄ… ÅšniÄ…cego...
+	AI_Output			(self, other,"DIA_BaalTyon_Vision_11_05"); //IdÅº do Cor Kaloma. On siÄ™ tobÄ… zajmie.
 	
 	self.npctype 	=	NPCTYPE_MAIN;
 	self.flags 		=	0;
 
 	BaalTyon_Ansprechbar = FALSE;
-	B_LogEntry			(CH1_JoinPsi,"Dziêki mojemu specjalnemu prezentowi, Baal Tyon mia³ objawienie! Wys³a³ mnie teraz do Cor Kaloma!");
+	B_LogEntry			(CH1_JoinPsi,"DziÄ™ki mojemu specjalnemu prezentowi, Baal Tyon miaÅ‚ objawienie! WysÅ‚aÅ‚ mnie teraz do Cor Kaloma!");
 	B_GiveXP			(XP_ImpressedBaalTyon);
 	
 	AI_StopProcessInfos	(self);

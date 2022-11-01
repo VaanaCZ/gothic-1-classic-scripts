@@ -37,7 +37,7 @@ INSTANCE Info_Sld_11_EinerVonEuchWerden (C_INFO) // E1
 	condition	= Info_Sld_11_EinerVonEuchWerden_Condition;
 	information	= Info_Sld_11_EinerVonEuchWerden_Info;
 	permanent	= 1;
-	description = "Chcia≥bym zostaÊ Najemnikiem i pracowaÊ dla MagÛw.";
+	description = "Chcia≈Çbym zostaƒá Najemnikiem i pracowaƒá dla Mag√≥w.";
 };                       
 
 FUNC INT Info_Sld_11_EinerVonEuchWerden_Condition()
@@ -53,12 +53,12 @@ FUNC INT Info_Sld_11_EinerVonEuchWerden_Condition()
 
 FUNC VOID Info_Sld_11_EinerVonEuchWerden_Info()
 {
-	AI_Output(other,self,"Info_Sld_11_EinerVonEuchWerden_15_00"); //Chcia≥bym zostaÊ Najemnikiem i pracowaÊ dla MagÛw.
-	AI_Output(self,other,"Info_Sld_11_EinerVonEuchWerden_11_01"); //To nie takie trudne. Jeúli jesteú gotÛw do walki za naszπ sprawÍ, Lee na pewno ciÍ przyjmie.
-	AI_Output(self,other,"Info_Sld_11_EinerVonEuchWerden_11_02"); //Ale szanse na zostanie Najemnikiem majπ tylko ludzie biegli w pos≥ugiwaniu siÍ mieczem. Jak z tym u ciebie?
-	AI_Output(other,self,"Info_Sld_11_EinerVonEuchWerden_15_03"); //CÛø...
-	AI_Output(self,other,"Info_Sld_11_EinerVonEuchWerden_11_04"); //Tak w≥aúnie myúla≥em. Jeúli myúlisz o tym powaønie, porozmawiaj z Gornem. On kiedyú szkoli≥ nowoprzyby≥ych.
-	AI_Output(self,other,"Info_Sld_11_EinerVonEuchWerden_11_05"); //Moøe ci siÍ poszczÍúci, i Gorn zechce ciÍ uczyÊ.
+	AI_Output(other,self,"Info_Sld_11_EinerVonEuchWerden_15_00"); //Chcia≈Çbym zostaƒá Najemnikiem i pracowaƒá dla Mag√≥w.
+	AI_Output(self,other,"Info_Sld_11_EinerVonEuchWerden_11_01"); //To nie takie trudne. Je≈õli jeste≈õ got√≥w do walki za naszƒÖ sprawƒô, Lee na pewno ciƒô przyjmie.
+	AI_Output(self,other,"Info_Sld_11_EinerVonEuchWerden_11_02"); //Ale szanse na zostanie Najemnikiem majƒÖ tylko ludzie biegli w pos≈Çugiwaniu siƒô mieczem. Jak z tym u ciebie?
+	AI_Output(other,self,"Info_Sld_11_EinerVonEuchWerden_15_03"); //C√≥≈º...
+	AI_Output(self,other,"Info_Sld_11_EinerVonEuchWerden_11_04"); //Tak w≈Ça≈õnie my≈õla≈Çem. Je≈õli my≈õlisz o tym powa≈ºnie, porozmawiaj z Gornem. On kiedy≈õ szkoli≈Ç nowoprzyby≈Çych.
+	AI_Output(self,other,"Info_Sld_11_EinerVonEuchWerden_11_05"); //Mo≈ºe ci siƒô poszczƒô≈õci, i Gorn zechce ciƒô uczyƒá.
 	var C_NPC Gorn;			Gorn	= Hlp_GetNpc(PC_Fighter);
 	Gorn.aivar[AIV_FINDABLE] = TRUE;
 };
@@ -73,7 +73,7 @@ INSTANCE Info_Sld_11_WichtigePersonen(C_INFO)
 	condition	= Info_Sld_11_WichtigePersonen_Condition;
 	information	= Info_Sld_11_WichtigePersonen_Info;
 	permanent	= 1;
-	description = "Kto tu rzπdzi?";
+	description = "Kto tu rzƒÖdzi?";
 };                       
 
 FUNC INT Info_Sld_11_WichtigePersonen_Condition()
@@ -83,9 +83,9 @@ FUNC INT Info_Sld_11_WichtigePersonen_Condition()
 
 FUNC VOID Info_Sld_11_WichtigePersonen_Info()
 {
-	AI_Output(other,self,"Info_Sld_11_WichtigePersonen_15_00"); //Kto tu rzπdzi?
-	AI_Output(self,other,"Info_Sld_11_WichtigePersonen_11_01"); //Wype≥niamy polecenia magÛw, choÊ ci rzadko majπ jakieú konkretne øπdania. Siedzπ tylko przy kopcu rudy i czytajπ te swoje ksiÍgi.
-	AI_Output(self,other,"Info_Sld_11_WichtigePersonen_11_02"); //W sumie rzπdzi tu Lee. To nasz szef.
+	AI_Output(other,self,"Info_Sld_11_WichtigePersonen_15_00"); //Kto tu rzƒÖdzi?
+	AI_Output(self,other,"Info_Sld_11_WichtigePersonen_11_01"); //Wype≈Çniamy polecenia mag√≥w, choƒá ci rzadko majƒÖ jakie≈õ konkretne ≈ºƒÖdania. SiedzƒÖ tylko przy kopcu rudy i czytajƒÖ te swoje ksiƒôgi.
+	AI_Output(self,other,"Info_Sld_11_WichtigePersonen_11_02"); //W sumie rzƒÖdzi tu Lee. To nasz szef.
 	var C_NPC Lee;			Lee		= Hlp_GetNpc(Sld_700_Lee);
 	Lee.aivar[AIV_FINDABLE] = TRUE;
 	var C_NPC Cronos;		Cronos  = Hlp_GetNpc(KdW_604_Cronos);
@@ -102,7 +102,7 @@ INSTANCE Info_Sld_11_DasLager(C_INFO)
 	condition	= Info_Sld_11_DasLager_Condition;
 	information	= Info_Sld_11_DasLager_Info;
 	permanent	= 1;
-	description = "Czy w obozie dochodzi do jakichú spiÍÊ?";
+	description = "Czy w obozie dochodzi do jakich≈õ spiƒôƒá?";
 };                       
 
 FUNC INT Info_Sld_11_DasLager_Condition()
@@ -112,8 +112,8 @@ FUNC INT Info_Sld_11_DasLager_Condition()
 
 FUNC VOID Info_Sld_11_DasLager_Info()
 {
-	AI_Output(other,self,"Info_Sld_11_DasLager_15_00"); //Czy w obozie dochodzi do jakichú spiÍÊ?
-	AI_Output(self,other,"Info_Sld_11_DasLager_11_01"); //Ch≥opie, co chwila sπ jakieú problemy! Szkodniki robiπ co siÍ im øywnie podoba, a my musimy pilnowaÊ MagÛw i ca≥ego Obozu.
+	AI_Output(other,self,"Info_Sld_11_DasLager_15_00"); //Czy w obozie dochodzi do jakich≈õ spiƒôƒá?
+	AI_Output(self,other,"Info_Sld_11_DasLager_11_01"); //Ch≈Çopie, co chwila sƒÖ jakie≈õ problemy! Szkodniki robiƒÖ co siƒô im ≈ºywnie podoba, a my musimy pilnowaƒá Mag√≥w i ca≈Çego Obozu.
 };
 
 // *************************************************************************
@@ -126,7 +126,7 @@ INSTANCE Info_Sld_11_DieLage(C_INFO) // E1
 	condition	= Info_Sld_11_DieLage_Condition;
 	information	= Info_Sld_11_DieLage_Info;
 	permanent	= 1;
-	description = "Wszystko w porzπdku?";
+	description = "Wszystko w porzƒÖdku?";
 };                       
 
 FUNC INT Info_Sld_11_DieLage_Condition()
@@ -136,11 +136,11 @@ FUNC INT Info_Sld_11_DieLage_Condition()
 
 FUNC VOID Info_Sld_11_DieLage_Info()
 {
-	AI_Output(other,self,"Info_Sld_11_DieLage_15_00"); //Wszystko w porzπdku?
+	AI_Output(other,self,"Info_Sld_11_DieLage_15_00"); //Wszystko w porzƒÖdku?
 	AI_Output(self,other,"Info_Sld_11_DieLage_11_01"); //Jeszcze jest cicho...
 	AI_Output(other,self,"Info_Sld_11_DieLage_15_02"); //Jeszcze?
-	AI_Output(self,other,"Info_Sld_11_DieLage_11_03"); //Jeúli Szkodniki nie przestanπ atakowaÊ konwojÛw ze Starego Obozu, Gomez w koÒcu siÍ wúcieknie i zapuka do naszych bram.
-	AI_Output(self,other,"Info_Sld_11_DieLage_11_04"); //I bÍdzie niez≥a zabawa!
+	AI_Output(self,other,"Info_Sld_11_DieLage_11_03"); //Je≈õli Szkodniki nie przestanƒÖ atakowaƒá konwoj√≥w ze Starego Obozu, Gomez w ko≈Ñcu siƒô w≈õcieknie i zapuka do naszych bram.
+	AI_Output(self,other,"Info_Sld_11_DieLage_11_04"); //I bƒôdzie niez≈Ça zabawa!
 };
 
 // *************************************************************************
@@ -153,7 +153,7 @@ INSTANCE Info_Sld_11_Krautprobe (C_INFO) // E1
 	condition	= Info_Sld_11_Krautprobe_Condition;
 	information	= Info_Sld_11_Krautprobe_Info;
 	permanent	= 1;
-	description = "Chcesz trochÍ bagiennego ziela?";
+	description = "Chcesz trochƒô bagiennego ziela?";
 };                       
 
 FUNC INT Info_Sld_11_Krautprobe_Condition()
@@ -167,7 +167,7 @@ FUNC INT Info_Sld_11_Krautprobe_Condition()
 
 FUNC VOID Info_Sld_11_Krautprobe_Info()
 {
-	AI_Output(other,self,"Info_Sld_11_Krautprobe_15_00"); //Chcesz trochÍ bagiennego ziela?
+	AI_Output(other,self,"Info_Sld_11_Krautprobe_15_00"); //Chcesz trochƒô bagiennego ziela?
 	
 	if ( (Npc_HasItems(other,ItMiJoint_1)>0) || (Npc_HasItems(other,ItMiJoint_2)>0) || (Npc_HasItems(other,ItMiJoint_3)>0) )
 	{
@@ -178,8 +178,8 @@ FUNC VOID Info_Sld_11_Krautprobe_Info()
 		else if (Npc_HasItems(other,ItMiJoint_3))
 		{	B_GiveInvItems(other,self,ItMiJoint_3,1);	 };
 		
-		AI_Output(self,other,"Info_Sld_11_Krautprobe_11_01"); //Jasne. Masz tu 10 bry≥ek rudy.
-		AI_Output(self,other,"Info_Sld_11_Krautprobe_11_02"); //Jakbyú mia≥ jeszcze kiedyú trochÍ ziela, no wiesz...
+		AI_Output(self,other,"Info_Sld_11_Krautprobe_11_01"); //Jasne. Masz tu 10 bry≈Çek rudy.
+		AI_Output(self,other,"Info_Sld_11_Krautprobe_11_02"); //Jakby≈õ mia≈Ç jeszcze kiedy≈õ trochƒô ziela, no wiesz...
 		
 		CreateInvItems(self,itminugget,10);
 		B_GiveInvItems(self,other,itminugget,10);
@@ -188,7 +188,7 @@ FUNC VOID Info_Sld_11_Krautprobe_Info()
 	}
 	else
 	{
-		AI_Output (self, other,"Info_Sld_11_Krautprobe_No_Joint_11_00"); //Najpierw je przynieú, wtedy pogadamy.
+		AI_Output (self, other,"Info_Sld_11_Krautprobe_No_Joint_11_00"); //Najpierw je przynie≈õ, wtedy pogadamy.
 	};
 };
 	

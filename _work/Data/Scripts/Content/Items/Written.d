@@ -2,7 +2,7 @@
 /******************************************************************************************/
 INSTANCE ItWr_Book_Circle_01(C_Item)
 {	
-	name 					=	"Pierwszy Kr¹g";
+	name 					=	"Pierwszy KrÄ…g";
 	
 	mainflag 				=	ITEM_KAT_DOCS;
 	flags 					=	0;
@@ -13,7 +13,7 @@ INSTANCE ItWr_Book_Circle_01(C_Item)
 	material 				=	MAT_LEATHER;
 
 	scemeName				=	"MAP";	
-	description			= "Pierwszy Kr¹g Magii";
+	description			= "Pierwszy KrÄ…g Magii";
 	
 	TEXT[5]				= NAME_Value;
 	COUNT[5]			= value;
@@ -39,20 +39,20 @@ INSTANCE ItWr_Book_Circle_01(C_Item)
   					
   					Doc_SetFont 	( nDocID, -1, "font_15_book.tga"	   			); 	// -1 -> all pages 
   					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   		);  //  0 -> margins are in pixels
-					Doc_PrintLine	( nDocID,  0,"Pierwszy Kr¹g");
+					Doc_PrintLine	( nDocID,  0,"Pierwszy KrÄ…g");
 					Doc_PrintLine	( nDocID,  0,"---------------");
 					Doc_SetFont 	( nDocID, -1, "font_10_book.TGA"	   			); 	// -1 -> all pages 
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLines	( nDocID,  0,"Gdy bogowie obdarzyli ludzkoœæ magicznymi mocami, nauczyli ich równie¿ sporz¹dzaæ runy. Wierni wyznawcy przejêli zatem od swych panów zaszczytne zadanie wytwarzania tych œwiêtych artefaktów i zaczêli je wykorzystywaæ. Kr¹g, do którego nale¿y mag, okreœla, jak zaawansowanymi zaklêciami mo¿e siê on pos³ugiwaæ.");
+					Doc_PrintLines	( nDocID,  0,"Gdy bogowie obdarzyli ludzkoÅ›Ä‡ magicznymi mocami, nauczyli ich rÃ³wnieÅ¼ sporzÄ…dzaÄ‡ runy. Wierni wyznawcy przejÄ™li zatem od swych panÃ³w zaszczytne zadanie wytwarzania tych Å›wiÄ™tych artefaktÃ³w i zaczÄ™li je wykorzystywaÄ‡. KrÄ…g, do ktÃ³rego naleÅ¼y mag, okreÅ›la, jak zaawansowanymi zaklÄ™ciami moÅ¼e siÄ™ on posÅ‚ugiwaÄ‡.");
 					
 				
 
 					//2.Seite
-					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den Ränder des TGAs aus, links,oben,rechts,unten)
+					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den RÃ¤nder des TGAs aus, links,oben,rechts,unten)
 					Doc_PrintLine	( nDocID,  1, "");
-					Doc_PrintLine	( nDocID,  1,"Œwiat³o");
+					Doc_PrintLine	( nDocID,  1,"ÅšwiatÅ‚o");
 					Doc_PrintLine	( nDocID,  1,"---------------");
-					Doc_PrintLines	( nDocID,  1,"Pierwszy dar Innosa dla ludzkoœci. Lœni¹ca kula rozœwietla bezpoœrednie otoczenie maga.");
+					Doc_PrintLines	( nDocID,  1,"Pierwszy dar Innosa dla ludzkoÅ›ci. LÅ›niÄ…ca kula rozÅ›wietla bezpoÅ›rednie otoczenie maga.");
 					Doc_PrintLine	( nDocID,  1,  Text);
 					Doc_PrintLine	( nDocID,  1,  "" );
 					Doc_PrintLine	( nDocID,  1,"Sopel lodu");
@@ -71,7 +71,7 @@ INSTANCE ItWr_Book_Circle_01(C_Item)
 
 INSTANCE ItWr_Book_Circle_02(C_Item)
 {	
-	name 					=	"Drugi Kr¹g";
+	name 					=	"Drugi KrÄ…g";
 	
 	mainflag 				=	ITEM_KAT_DOCS;
 	flags 					=	0;
@@ -82,7 +82,7 @@ INSTANCE ItWr_Book_Circle_02(C_Item)
 	material 				=	MAT_LEATHER;
 
 	scemeName				=	"MAP";	
-	description			= "Drugi Kr¹g Magii";
+	description			= "Drugi KrÄ…g Magii";
 	
 	TEXT[5]				= NAME_Value;
 	COUNT[5]			= value;
@@ -107,29 +107,29 @@ INSTANCE ItWr_Book_Circle_02(C_Item)
   					
   					Doc_SetFont 	( nDocID, -1, "font_15_book.tga"	   			); 	// -1 -> all pages 
   					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   		);  //  0 -> margins are in pixels
-					Doc_PrintLine	( nDocID,  0,"Drugi Kr¹g");
+					Doc_PrintLine	( nDocID,  0,"Drugi KrÄ…g");
 					Doc_PrintLine	( nDocID,  0,"---------------");
 					Doc_SetFont 	( nDocID, -1, "font_10_book.TGA"	   			); 	// -1 -> all pages 
 					Doc_PrintLine	( nDocID,  0, "");
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLines	( nDocID,  0,"Wszelka magia czerpie z magicznych zdolnoœci jej u¿ytkownika, zwanego odpowiednio MAGIEM.");
+					Doc_PrintLines	( nDocID,  0,"Wszelka magia czerpie z magicznych zdolnoÅ›ci jej uÅ¼ytkownika, zwanego odpowiednio MAGIEM.");
 					Doc_PrintLine	( nDocID,  0, "");
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLines	( nDocID,  0,"Ka¿de wykorzystanie magicznego zaklêcia kosztuje maga czêœæ jego mocy. Ich zapas nazywany bywa czasem iloœci¹ mana.");
+					Doc_PrintLines	( nDocID,  0,"KaÅ¼de wykorzystanie magicznego zaklÄ™cia kosztuje maga czÄ™Å›Ä‡ jego mocy. Ich zapas nazywany bywa czasem iloÅ›ciÄ… mana.");
 					Doc_PrintLine	( nDocID,  0, "");
 					Doc_PrintLine	( nDocID,  0, "");
 					
 					
 					//2.Seite
-					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den Ränder des TGAs aus, links,oben,rechts,unten)
+					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den RÃ¤nder des TGAs aus, links,oben,rechts,unten)
 					Doc_PrintLine	( nDocID,  1, "");
 					Doc_PrintLine	( nDocID,  1,"Uzdrowienie");
 					Doc_PrintLine	( nDocID,  1,"---------------");
-					Doc_PrintLines	( nDocID,  1,"Adanos ujrza³, ¿e ludzie s¹ œmiertelni i wiedzia³, ¿e jest to wol¹ Beliara. I rzek³: Nie sprzeciwiê siê woli Beliara, ale dam za to ludziom dar uzdrawiania."); 
+					Doc_PrintLines	( nDocID,  1,"Adanos ujrzaÅ‚, Å¼e ludzie sÄ… Å›miertelni i wiedziaÅ‚, Å¼e jest to wolÄ… Beliara. I rzekÅ‚: Nie sprzeciwiÄ™ siÄ™ woli Beliara, ale dam za to ludziom dar uzdrawiania."); 
 					Doc_PrintLine	( nDocID,  1, "");
 					Doc_PrintLine	( nDocID,  1, "");
-					Doc_PrintLines	( nDocID,  1,"To zaklêcie uzdrawia maga.");
-					Doc_PrintLine	( nDocID,  1,"Zaklêcia czerpi¹ce");
+					Doc_PrintLines	( nDocID,  1,"To zaklÄ™cie uzdrawia maga.");
+					Doc_PrintLine	( nDocID,  1,"ZaklÄ™cia czerpiÄ…ce");
 					Doc_PrintLine	( nDocID,  1,  Text_1);
 					Doc_PrintLine	( nDocID,  1, "");
 					Doc_PrintLine	( nDocID,  1, "");
@@ -140,7 +140,7 @@ INSTANCE ItWr_Book_Circle_02(C_Item)
 /******************************************************************************************/
 INSTANCE ItWr_Book_Circle_03 (C_Item)
 {	
-	name 					=	"Trzeci Kr¹g";
+	name 					=	"Trzeci KrÄ…g";
 
 	mainflag 				=	ITEM_KAT_DOCS;
 	flags 					=	0;
@@ -151,7 +151,7 @@ INSTANCE ItWr_Book_Circle_03 (C_Item)
 	material 				=	MAT_LEATHER;
 
 	scemeName				=	"MAP";
-	description			= "Trzeci Kr¹g Magii";
+	description			= "Trzeci KrÄ…g Magii";
 	
 	TEXT[5]				= NAME_Value;
 	COUNT[5]			= value;
@@ -179,34 +179,34 @@ INSTANCE ItWr_Book_Circle_03 (C_Item)
   					
   					Doc_SetFont 	( nDocID, -1, "font_15_book.tga"	   			); 	// -1 -> all pages 
   					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   		);  //  0 -> margins are in pixels
-					Doc_PrintLine	( nDocID,  0,"Trzeci Kr¹g");
+					Doc_PrintLine	( nDocID,  0,"Trzeci KrÄ…g");
 					Doc_PrintLine	( nDocID,  0,"---------------");
 					Doc_SetFont 	( nDocID, -1, "font_10_book.TGA"	   			); 	// -1 -> all pages 
 					Doc_PrintLine	( nDocID,  0, "");
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLines	( nDocID,  0,"Niektóre zaklêcia mo¿na na³adowaæ pewn¹ dawk¹ energii magicznej. Nazywamy je zaklêciami odnawialnymi.");
+					Doc_PrintLines	( nDocID,  0,"NiektÃ³re zaklÄ™cia moÅ¼na naÅ‚adowaÄ‡ pewnÄ… dawkÄ… energii magicznej. Nazywamy je zaklÄ™ciami odnawialnymi.");
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLines	( nDocID,  0,"Inne zaklêcia dzia³aj¹ tak d³ugo, jak mag udziela im swojej energii mana. Te z kolei nazywane s¹ zaklêciami inwestycyjnymi.");
+					Doc_PrintLines	( nDocID,  0,"Inne zaklÄ™cia dziaÅ‚ajÄ… tak dÅ‚ugo, jak mag udziela im swojej energii mana. Te z kolei nazywane sÄ… zaklÄ™ciami inwestycyjnymi.");
 
 
 					//2.Seite
-					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den Ränder des TGAs aus, links,oben,rechts,unten)
+					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den RÃ¤nder des TGAs aus, links,oben,rechts,unten)
 					Doc_PrintLine	( nDocID,  1, "");
 					Doc_PrintLine	( nDocID,  1,"Kula ognia");
 					Doc_PrintLine	( nDocID,  1,"---------------");
-					Doc_PrintLines	( nDocID,  1,"Drugi dar Innosa dla dzieci Ognia. Potê¿ny, magiczny pocisk, spopielaj¹cy ofiary.");
-					Doc_PrintLine	( nDocID,  1,"Zaklêcie odnawialne");
+					Doc_PrintLines	( nDocID,  1,"Drugi dar Innosa dla dzieci Ognia. PotÄ™Å¼ny, magiczny pocisk, spopielajÄ…cy ofiary.");
+					Doc_PrintLine	( nDocID,  1,"ZaklÄ™cie odnawialne");
 					Doc_PrintLine	( nDocID,  1, Text);
 					Doc_PrintLine	( nDocID,  1, "");
-					Doc_PrintLine	( nDocID,  1,"Bry³a lodu");
+					Doc_PrintLine	( nDocID,  1,"BryÅ‚a lodu");
 					Doc_PrintLine	( nDocID,  1,"---------------");
-					Doc_PrintLines	( nDocID,  1,"Ofiara otoczona zostaje bry³¹ lodu. Zaklêcie pochodzi z Krêgu Magów Wody.");
+					Doc_PrintLines	( nDocID,  1,"Ofiara otoczona zostaje bryÅ‚Ä… lodu. ZaklÄ™cie pochodzi z KrÄ™gu MagÃ³w Wody.");
 					Doc_PrintLine	( nDocID,  1, "");
 					Doc_PrintLine	( nDocID,  1, Text_1);
 					Doc_PrintLine	( nDocID,  1, "");
 					Doc_PrintLine	( nDocID,  1,"Piorun kulisty");
 					Doc_PrintLine	( nDocID,  1,"---------------");
-					Doc_PrintLines	( nDocID,  1,"Potê¿ny pocisk magiczny.");
+					Doc_PrintLines	( nDocID,  1,"PotÄ™Å¼ny pocisk magiczny.");
 					Doc_PrintLine	( nDocID,  1,  Text_2);
 					Doc_Show		( nDocID );
 	};
@@ -216,7 +216,7 @@ INSTANCE ItWr_Book_Circle_03 (C_Item)
 /******************************************************************************************/
 INSTANCE ItWr_Book_Circle_04 (C_Item)
 {	
-	name 					=	"Czwarty Kr¹g";
+	name 					=	"Czwarty KrÄ…g";
 
 	mainflag 				=	ITEM_KAT_DOCS;
 	flags 					=	0;
@@ -227,7 +227,7 @@ INSTANCE ItWr_Book_Circle_04 (C_Item)
 	material 				=	MAT_LEATHER;
 
 	scemeName				=	"MAP";
-	description			= "Czwarty Kr¹g Magii";
+	description			= "Czwarty KrÄ…g Magii";
 	
 	TEXT[5]				= NAME_Value;
 	COUNT[5]			= value;
@@ -254,7 +254,7 @@ INSTANCE ItWr_Book_Circle_04 (C_Item)
   					
   					Doc_SetFont 	( nDocID, -1, "font_15_book.tga"	   			); 	// -1 -> all pages 
   					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   		);  //  0 -> margins are in pixels
-					Doc_PrintLine	( nDocID,  0,"Czwarty Kr¹g");
+					Doc_PrintLine	( nDocID,  0,"Czwarty KrÄ…g");
 					Doc_PrintLine	( nDocID,  0,"---------------");
 					Doc_SetFont 	( nDocID, -1, "font_10_book.TGA"	   			); 	// -1 -> all pages 
 					Doc_PrintLine	( nDocID,  0, "");
@@ -263,27 +263,27 @@ INSTANCE ItWr_Book_Circle_04 (C_Item)
 					Doc_PrintLine	( nDocID,  0,"---------------");
 					Doc_PrintLine	( nDocID,  0, "");
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLines	( nDocID,  0,"Szczególna natura tych zaklêæ le¿y w tym, i¿ choæ zawarte s¹ w runach, korzystaæ z nich mo¿e ka¿da osoba obdarzona moc¹ magiczn¹. Magiczne formu³y zostaj¹ wyzwolone w sposób natychmiastowy, zaœ samo zaklêcie teleportacji nie jest w ¿aden sposób ograniczone.");
+					Doc_PrintLines	( nDocID,  0,"SzczegÃ³lna natura tych zaklÄ™Ä‡ leÅ¼y w tym, iÅ¼ choÄ‡ zawarte sÄ… w runach, korzystaÄ‡ z nich moÅ¼e kaÅ¼da osoba obdarzona mocÄ… magicznÄ…. Magiczne formuÅ‚y zostajÄ… wyzwolone w sposÃ³b natychmiastowy, zaÅ› samo zaklÄ™cie teleportacji nie jest w Å¼aden sposÃ³b ograniczone.");
 					
 
 					//2.Seite
-					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den Ränder des TGAs aus, links,oben,rechts,unten)
+					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den RÃ¤nder des TGAs aus, links,oben,rechts,unten)
 					
 					
 					Doc_PrintLine	( nDocID,  1,"Ognista burza");
 					Doc_PrintLine	( nDocID,  1,"---------------");
-					Doc_PrintLines	( nDocID,  1,"Podobnie jak w Kuli ognia, energia tego zaklêcia kierowana jest przeciwko kolejnym ofiarom.");
-					Doc_PrintLine	( nDocID,  1,"Zaklêcie odnawialne");
+					Doc_PrintLines	( nDocID,  1,"Podobnie jak w Kuli ognia, energia tego zaklÄ™cia kierowana jest przeciwko kolejnym ofiarom.");
+					Doc_PrintLine	( nDocID,  1,"ZaklÄ™cie odnawialne");
 					Doc_PrintLine	( nDocID,  1, "");
 					Doc_PrintLine	( nDocID,  1, Text);
 					Doc_PrintLine	( nDocID,  1,"Grom");
 					Doc_PrintLine	( nDocID,  1,"---------------");
-					Doc_PrintLines	( nDocID,  1,"Magiczna energia przeskakuje od jednej ofiary do drugiej. Zdarza siê, ¿e nawet mag mo¿e paœæ ofiar¹ tego zaklêcia!");
+					Doc_PrintLines	( nDocID,  1,"Magiczna energia przeskakuje od jednej ofiary do drugiej. Zdarza siÄ™, Å¼e nawet mag moÅ¼e paÅ›Ä‡ ofiarÄ… tego zaklÄ™cia!");
 					Doc_PrintLine	( nDocID,  1,  Text_1);
 					Doc_PrintLine	( nDocID,  1, "");	
-					Doc_PrintLine	( nDocID,  1,"Œmieræ o¿ywieñcom");
+					Doc_PrintLine	( nDocID,  1,"ÅšmierÄ‡ oÅ¼ywieÅ„com");
 					Doc_PrintLine	( nDocID,  1,"---------------");
-					Doc_PrintLines	( nDocID,  1,"To zaklêcie przeznaczone jest do walki z piekielnymi zastêpami o¿ywieñców.");	
+					Doc_PrintLines	( nDocID,  1,"To zaklÄ™cie przeznaczone jest do walki z piekielnymi zastÄ™pami oÅ¼ywieÅ„cÃ³w.");	
 					Doc_PrintLine	( nDocID,  1, Text_2);
 					
 					Doc_Show		( nDocID );
@@ -292,7 +292,7 @@ INSTANCE ItWr_Book_Circle_04 (C_Item)
 /******************************************************************************************/
 INSTANCE  ItWr_Book_Circle_05(C_Item)
 {	
-	name 					=	"Pi¹ty Kr¹g";
+	name 					=	"PiÄ…ty KrÄ…g";
 
 	mainflag 				=	ITEM_KAT_DOCS;
 	flags 					=	0;
@@ -303,7 +303,7 @@ INSTANCE  ItWr_Book_Circle_05(C_Item)
 	material 				=	MAT_LEATHER;
 
 	scemeName				=	"MAP";
-	description				= "Pi¹ty Kr¹g Magii";
+	description				= "PiÄ…ty KrÄ…g Magii";
 	
 	TEXT[5]				= NAME_Value;
 	COUNT[5]			= value;
@@ -328,31 +328,31 @@ INSTANCE  ItWr_Book_Circle_05(C_Item)
   					
   					Doc_SetFont 	( nDocID, -1, "font_15_book.tga"	   			); 	// -1 -> all pages 
   					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   		);  //  0 -> margins are in pixels
-					Doc_PrintLine	( nDocID,  0,"Pi¹ty Kr¹g");
+					Doc_PrintLine	( nDocID,  0,"PiÄ…ty KrÄ…g");
 					Doc_PrintLine	( nDocID,  0,"---------------");
 					Doc_SetFont 	( nDocID, -1, "font_10_book.TGA"	   			); 	// -1 -> all pages 
 					Doc_PrintLine	( nDocID,  0, "");
 					Doc_PrintLine	( nDocID,  0, "");
 					Doc_PrintLine	( nDocID,  0,"Deszcz ognia");
 					Doc_PrintLine	( nDocID,  0,"---------------");
-					Doc_PrintLines	( nDocID,  0,"Œwiêty Ogieñ niesie zag³adê wszystkim istotom znajduj¹cym siê w pobli¿u maga.");
+					Doc_PrintLines	( nDocID,  0,"ÅšwiÄ™ty OgieÅ„ niesie zagÅ‚adÄ™ wszystkim istotom znajdujÄ…cym siÄ™ w pobliÅ¼u maga.");
 					Doc_PrintLine	( nDocID,  0, Text_1);					
 					
 					
 					//2.Seite
-					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den Ränder des TGAs aus, links,oben,rechts,unten)
+					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den RÃ¤nder des TGAs aus, links,oben,rechts,unten)
 					Doc_PrintLine	( nDocID,  1, "");
 					Doc_PrintLine	( nDocID,  1,"Lodowa fala");
 					Doc_PrintLine	( nDocID,  1,"---------------");
-					Doc_PrintLines	( nDocID,  1,"Magiczna fala lodu zamra¿a grupê nieprzyjació³ na krótki okres czasu, uniemo¿liwiaj¹c im ruch i zadaj¹c obra¿enia.");
-					Doc_PrintLines	( nDocID,  1,"Zaklêcie z Krêgu Magów Wody.");
+					Doc_PrintLines	( nDocID,  1,"Magiczna fala lodu zamraÅ¼a grupÄ™ nieprzyjaciÃ³Å‚ na krÃ³tki okres czasu, uniemoÅ¼liwiajÄ…c im ruch i zadajÄ…c obraÅ¼enia.");
+					Doc_PrintLines	( nDocID,  1,"ZaklÄ™cie z KrÄ™gu MagÃ³w Wody.");
 					Doc_PrintLine	( nDocID,  1, Text_2);
 					Doc_Show		( nDocID );
 };
 
 INSTANCE  ItWr_Book_Circle_06(C_Item)
 {	
-	name 					=	"Szósty Kr¹g";
+	name 					=	"SzÃ³sty KrÄ…g";
 
 	mainflag 				=	ITEM_KAT_DOCS;
 	flags 					=	0;
@@ -363,7 +363,7 @@ INSTANCE  ItWr_Book_Circle_06(C_Item)
 	material 				=	MAT_LEATHER;
 
 	scemeName				=	"MAP";
-	description			= "Szósty Kr¹g Magii";
+	description			= "SzÃ³sty KrÄ…g Magii";
 	
 	TEXT[5]				= NAME_Value;
 	COUNT[5]			= value;
@@ -388,27 +388,27 @@ INSTANCE  ItWr_Book_Circle_06(C_Item)
   					
   					Doc_SetFont 	( nDocID, -1, "font_15_book.tga"	   			); 	// -1 -> all pages 
   					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   		);  //  0 -> margins are in pixels
-					Doc_PrintLine	( nDocID,  0,"Szósty Kr¹g");
+					Doc_PrintLine	( nDocID,  0,"SzÃ³sty KrÄ…g");
 					Doc_PrintLine	( nDocID,  0,"---------------");
 					Doc_SetFont 	( nDocID, -1, "font_10_book.TGA"	   			); 	// -1 -> all pages 
 					Doc_PrintLine	( nDocID,  0, "");
 					Doc_PrintLine	( nDocID,  0, "");
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLine	( nDocID,  0,"Tchnienie œmierci");
+					Doc_PrintLine	( nDocID,  0,"Tchnienie Å›mierci");
 					Doc_PrintLine	( nDocID,  0,"---------------");
-					Doc_PrintLines	( nDocID,  0,"Oddech Beliara. Zaklêcie to potrafi natychmiast powaliæ nawet najpotê¿niejsze istoty.");
+					Doc_PrintLines	( nDocID,  0,"Oddech Beliara. ZaklÄ™cie to potrafi natychmiast powaliÄ‡ nawet najpotÄ™Å¼niejsze istoty.");
 					Doc_PrintLine	( nDocID,  0, "");
 					Doc_PrintLine	( nDocID,  0, Text);					
 					
 					
 					//2.Seite
-					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den Ränder des TGAs aus, links,oben,rechts,unten)
+					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den RÃ¤nder des TGAs aus, links,oben,rechts,unten)
 					Doc_PrintLine	( nDocID,  1, "");
 					Doc_PrintLine	( nDocID,  1, "");
-					Doc_PrintLine	( nDocID,  1,"Pierœcieñ œmierci");
+					Doc_PrintLine	( nDocID,  1,"PierÅ›cieÅ„ Å›mierci");
 					Doc_PrintLine	( nDocID,  1,"---------------");
-					Doc_PrintLines	( nDocID,  1,"Nie zachowa³y siê prawie ¿adne zapiski o runie zawieraj¹cej magiczn¹ moc URIZIELA.");	
-					Doc_PrintLines	( nDocID,  1,"Wiadomo tylko, ¿e pochodzi ona wprost od Beliara.");
+					Doc_PrintLines	( nDocID,  1,"Nie zachowaÅ‚y siÄ™ prawie Å¼adne zapiski o runie zawierajÄ…cej magicznÄ… moc URIZIELA.");	
+					Doc_PrintLines	( nDocID,  1,"Wiadomo tylko, Å¼e pochodzi ona wprost od Beliara.");
 					Doc_PrintLine	( nDocID,  1, "");
 				
 					
@@ -420,7 +420,7 @@ INSTANCE  ItWr_Book_Circle_06(C_Item)
 
 INSTANCE Goettergabe(C_Item)
 {	
-	name 					=	"Dar od bogów";
+	name 					=	"Dar od bogÃ³w";
 	
 	mainflag 				=	ITEM_KAT_DOCS;
 	flags 					=	0;
@@ -431,7 +431,7 @@ INSTANCE Goettergabe(C_Item)
 	material 				=	MAT_LEATHER;
 
 	scemeName				=	"MAP";	
-	description			= "Dar od bogów";
+	description			= "Dar od bogÃ³w";
 	//TEXT[0]				= "Dritter Kreis";
 	////COUNT[0]			= ;
 	//TEXT[1]				= "";
@@ -465,18 +465,18 @@ INSTANCE Goettergabe(C_Item)
 					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   		);  //  0 -> margins are in pixels
 					Doc_PrintLine	( nDocID,  0," ");
 					Doc_SetFont 	( nDocID, -1, "font_10_book.TGA"	   			); 	// -1 -> all pages 
-					Doc_PrintLine	( nDocID,  0,"Dar od bogów");
+					Doc_PrintLine	( nDocID,  0,"Dar od bogÃ³w");
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLines	( nDocID,  0,"Z dawien dawna cz³ek próbowa³ zg³êbiæ naturê i genezê sztuk magicznych. Jeno gdzie rozpocz¹æ takie poszukiwania? Czy magiê mo¿na w ogóle opisaæ? Pró¿no szukaæ równie niespójnego zjawiska we œwiecie: wszak magia jednako leczy i zabija, tworzy i niszczy.");
+					Doc_PrintLines	( nDocID,  0,"Z dawien dawna czÅ‚ek prÃ³bowaÅ‚ zgÅ‚Ä™biÄ‡ naturÄ™ i genezÄ™ sztuk magicznych. Jeno gdzie rozpoczÄ…Ä‡ takie poszukiwania? Czy magiÄ™ moÅ¼na w ogÃ³le opisaÄ‡? PrÃ³Å¼no szukaÄ‡ rÃ³wnie niespÃ³jnego zjawiska we Å›wiecie: wszak magia jednako leczy i zabija, tworzy i niszczy.");
 					
 
 					//2.Seite
-					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den Ränder des TGAs aus, links,oben,rechts,unten)
+					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den RÃ¤nder des TGAs aus, links,oben,rechts,unten)
 					Doc_PrintLine	( nDocID,  1, "");
 					Doc_PrintLine	( nDocID,  1, "");
 					Doc_PrintLine	( nDocID,  1, "");
 					Doc_PrintLine	( nDocID,  1, "");
-					Doc_PrintLines	( nDocID,  1,"Gdzie zatem szukaæ tej nieopisanej potêgi? Magia jest tym, czym jest - najpotê¿niejszym i najwspanialszym darem, jaki cz³owiek otrzyma³ od bogów. Baczcie jeno, by dar ów rych³o nie sta³ siê przekleñstwem, gdy¿ nieliczni bêd¹ w stanie zrozumieæ magiê i wykorzystaæ j¹ do w³asnych celów. Inni sami zostan¹ wykorzystani.");	
+					Doc_PrintLines	( nDocID,  1,"Gdzie zatem szukaÄ‡ tej nieopisanej potÄ™gi? Magia jest tym, czym jest - najpotÄ™Å¼niejszym i najwspanialszym darem, jaki czÅ‚owiek otrzymaÅ‚ od bogÃ³w. Baczcie jeno, by dar Ã³w rychÅ‚o nie staÅ‚ siÄ™ przekleÅ„stwem, gdyÅ¼ nieliczni bÄ™dÄ… w stanie zrozumieÄ‡ magiÄ™ i wykorzystaÄ‡ jÄ… do wÅ‚asnych celÃ³w. Inni sami zostanÄ… wykorzystani.");	
 					Doc_PrintLine	( nDocID,  1, "");
 					Doc_PrintLine	( nDocID,  1,"Barthos z Laran");
 					Doc_Show		( nDocID );
@@ -531,15 +531,15 @@ INSTANCE Geheimnisse_der_Zauberei(C_Item)
 					Doc_PrintLine	( nDocID,  0,"Tajniki Magii");
 					
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLines	( nDocID,  0,"Magia nie zamieszkuje w ciele samego magusa. Jest on raczej jako zmyœlny rzemieœlnik, a ona jako narzêdzie jego. Tako¿ pocz¹tkuj¹cy magus uczy siê jak on¹ moc okie³znaæ i kierowaæ ni¹ wedle swojej woli.");
+					Doc_PrintLines	( nDocID,  0,"Magia nie zamieszkuje w ciele samego magusa. Jest on raczej jako zmyÅ›lny rzemieÅ›lnik, a ona jako narzÄ™dzie jego. TakoÅ¼ poczÄ…tkujÄ…cy magus uczy siÄ™ jak onÄ… moc okieÅ‚znaÄ‡ i kierowaÄ‡ niÄ… wedle swojej woli.");
 					
 					//2.Seite
-					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1);  //  0 -> margins are in pixels (Position des Textes von den Ränder des TGAs aus, links,oben,rechts,unten)
+					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1);  //  0 -> margins are in pixels (Position des Textes von den RÃ¤nder des TGAs aus, links,oben,rechts,unten)
 					Doc_PrintLine	( nDocID,  1, "");
 					Doc_PrintLine	( nDocID,  1, "");
 					Doc_PrintLine	( nDocID,  1, "");
 					Doc_PrintLine	( nDocID,  1, "");
-					Doc_PrintLines	( nDocID,  1,"Jego duch nadaje owej mocy po¿¹dany kszta³t, ogniskuje j¹ i wreszcie uwalnia. W takich chwilach dusza magusa wznosi siê ponad nasz œwiat i spoziera na Drug¹ Stronê, gdzie stoi pa³ac potêgi, któr¹ on kszta³tuje i przekazuje.");
+					Doc_PrintLines	( nDocID,  1,"Jego duch nadaje owej mocy poÅ¼Ä…dany ksztaÅ‚t, ogniskuje jÄ… i wreszcie uwalnia. W takich chwilach dusza magusa wznosi siÄ™ ponad nasz Å›wiat i spoziera na DrugÄ… StronÄ™, gdzie stoi paÅ‚ac potÄ™gi, ktÃ³rÄ… on ksztaÅ‚tuje i przekazuje.");
 					Doc_PrintLine	( nDocID,  1, "");
 					Doc_PrintLine	( nDocID,  1, "");
 					Doc_PrintLine	( nDocID,  1,"Barthos z Laran");
@@ -549,7 +549,7 @@ INSTANCE Geheimnisse_der_Zauberei(C_Item)
 /******************************************************************************************/
 INSTANCE Machtvolle_Kunst (C_Item)
 {	
-	name 					=	"Wszechpotê¿na Sztuka";
+	name 					=	"WszechpotÄ™Å¼na Sztuka";
 
 	mainflag 				=	ITEM_KAT_DOCS;
 	flags 					=	0;
@@ -560,7 +560,7 @@ INSTANCE Machtvolle_Kunst (C_Item)
 	material 				=	MAT_LEATHER;
 
 	scemeName				=	"MAP";
-	description			= "Wszechpotê¿na Sztuka";
+	description			= "WszechpotÄ™Å¼na Sztuka";
 	//TEXT[0]				= "Dritter Kreis";
 	////COUNT[0]			= ;
 	//TEXT[1]				= "";
@@ -592,30 +592,30 @@ INSTANCE Machtvolle_Kunst (C_Item)
   					Doc_SetFont 	( nDocID, -1, "font_15_book.tga"); 	// -1 -> all pages 
 					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1);  //  0 -> margins are in pixels
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLine	( nDocID,  0,"Wszechpotê¿na");
+					Doc_PrintLine	( nDocID,  0,"WszechpotÄ™Å¼na");
 					Doc_PrintLine	( nDocID,  0, "Sztuka");
 					Doc_SetFont 	( nDocID, -1, "font_10_book.tga");
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLines	( nDocID,  0,"Ksiêga dla tych, co w sztukach magicznych uczeni s¹.");
+					Doc_PrintLines	( nDocID,  0,"KsiÄ™ga dla tych, co w sztukach magicznych uczeni sÄ….");
 					Doc_PrintLine	( nDocID,  0, "");
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLines	( nDocID,  0,"Umiejêtnoœci magusa wzrastaj¹ z czasem. Najpierw jest jako ziarno zbo¿a, które trzeba chroniæ, by nie zmarnia³o. Lecz wkrótce ziarno wypuszcza kie³ki, staj¹c siê piêkn¹ roœlin¹.");
+					Doc_PrintLines	( nDocID,  0,"UmiejÄ™tnoÅ›ci magusa wzrastajÄ… z czasem. Najpierw jest jako ziarno zboÅ¼a, ktÃ³re trzeba chroniÄ‡, by nie zmarniaÅ‚o. Lecz wkrÃ³tce ziarno wypuszcza kieÅ‚ki, stajÄ…c siÄ™ piÄ™knÄ… roÅ›linÄ….");
 					
 					
 					//2.Seite
-					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1);  //  0 -> margins are in pixels (Position des Textes von den Ränder des TGAs aus, links,oben,rechts,unten)
+					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1);  //  0 -> margins are in pixels (Position des Textes von den RÃ¤nder des TGAs aus, links,oben,rechts,unten)
 					Doc_PrintLine	( nDocID,  1, "");
 					Doc_PrintLine	( nDocID,  1, "");
 					Doc_PrintLine	( nDocID,  1, "");
 					Doc_PrintLine	( nDocID,  1, "");
-					Doc_PrintLines	( nDocID,  1,"Z ka¿dym nowym dniem roœlina staje siê wiêksza i silniejsza. Tak samo jest z magusem. Na pocz¹tku nauki jego si³y s¹ w¹t³e, lecz z czasem okrzepnie, staj¹c siê potê¿niejszym. Ci¹g³e d¹¿enie do absolutnej perfekcji powinno byæ nadrzêdnym celem ka¿dego adepta magii. Ziarno potêgi dane im przez bogów jest bowiem najcenniejszym darem, jakie œmiertelnik mo¿e otrzymaæ.");
+					Doc_PrintLines	( nDocID,  1,"Z kaÅ¼dym nowym dniem roÅ›lina staje siÄ™ wiÄ™ksza i silniejsza. Tak samo jest z magusem. Na poczÄ…tku nauki jego siÅ‚y sÄ… wÄ…tÅ‚e, lecz z czasem okrzepnie, stajÄ…c siÄ™ potÄ™Å¼niejszym. CiÄ…gÅ‚e dÄ…Å¼enie do absolutnej perfekcji powinno byÄ‡ nadrzÄ™dnym celem kaÅ¼dego adepta magii. Ziarno potÄ™gi dane im przez bogÃ³w jest bowiem najcenniejszym darem, jakie Å›miertelnik moÅ¼e otrzymaÄ‡.");
 					Doc_Show		( nDocID );
 	};
 
 /******************************************************************************************/
 INSTANCE Elementare_Arcanei (C_Item)
 {	
-	name 					=	"Arcanum ¯ywio³ów";
+	name 					=	"Arcanum Å»ywioÅ‚Ã³w";
 
 	mainflag 				=	ITEM_KAT_DOCS;
 	flags 					=	0;
@@ -626,7 +626,7 @@ INSTANCE Elementare_Arcanei (C_Item)
 	material 				=	MAT_LEATHER;
 
 	scemeName				=	"MAP";
-	description			= "Arcanum ¯ywio³ów";
+	description			= "Arcanum Å»ywioÅ‚Ã³w";
 	//TEXT[0]				= "Vierter Kreis";
 	////COUNT[0]			= ;
 	//TEXT[1]				= "";
@@ -659,24 +659,24 @@ INSTANCE Elementare_Arcanei (C_Item)
 					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1);  //  0 -> margins are in pixels
 					Doc_PrintLine	( nDocID,  0, "");
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLine	( nDocID,  0,"Arcanum ¯ywio³ów");
+					Doc_PrintLine	( nDocID,  0,"Arcanum Å»ywioÅ‚Ã³w");
 					Doc_PrintLine	( nDocID,  0, "");
 					Doc_SetFont 	( nDocID, -1, "font_10_book.tga");
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLines	( nDocID,  0,"Miejsce Magii w ziemskim porz¹dku");
+					Doc_PrintLines	( nDocID,  0,"Miejsce Magii w ziemskim porzÄ…dku");
 					Doc_PrintLine	( nDocID,  0, "");
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLines	( nDocID,  0,"Wiele badañ przeprowadzono, g³owi¹c siê nad zale¿noœci¹ magii od wszelakich ¿ywio³ów. W rezultacie przyjêto, i¿ jest ona - magia - ostatecznym, najpotê¿niejszym ¿ywio³em ze wszystkich. Wszak to dziêki niej magus mo¿e kszta³towaæ pozosta³e si³y natury wedle w³asnego upodobania.");
+					Doc_PrintLines	( nDocID,  0,"Wiele badaÅ„ przeprowadzono, gÅ‚owiÄ…c siÄ™ nad zaleÅ¼noÅ›ciÄ… magii od wszelakich Å¼ywioÅ‚Ã³w. W rezultacie przyjÄ™to, iÅ¼ jest ona - magia - ostatecznym, najpotÄ™Å¼niejszym Å¼ywioÅ‚em ze wszystkich. Wszak to dziÄ™ki niej magus moÅ¼e ksztaÅ‚towaÄ‡ pozostaÅ‚e siÅ‚y natury wedle wÅ‚asnego upodobania.");
 					
 					
 					//2.Seite
-					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1);  //  0 -> margins are in pixels (Position des Textes von den Ränder des TGAs aus, links,oben,rechts,unten)
+					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1);  //  0 -> margins are in pixels (Position des Textes von den RÃ¤nder des TGAs aus, links,oben,rechts,unten)
 					Doc_PrintLine	( nDocID,  1, "");
 					Doc_PrintLine	( nDocID,  1, "");	
 					Doc_PrintLine	( nDocID,  1, "");
 					Doc_PrintLine	( nDocID,  1, "");
 					Doc_PrintLine	( nDocID,  1, "");
-					Doc_PrintLines	( nDocID,  1,"Ka¿dy ¿ywio³, w swej najczystszej formie, ujawnia powi¹zania z magi¹. Oczywiœcie, naturalne manifestacje takich powi¹zañ nale¿¹ do rzadkoœci i s¹ skrzêtnie poszukiwane. Zdolnoœæ magusa do kontrolowania potêgi ¿ywio³ów stanowi ostateczny dowód, i¿ magia jest najczystszym i najwspanialszym dobrem obecnym w naszej egzystencji.");
+					Doc_PrintLines	( nDocID,  1,"KaÅ¼dy Å¼ywioÅ‚, w swej najczystszej formie, ujawnia powiÄ…zania z magiÄ…. OczywiÅ›cie, naturalne manifestacje takich powiÄ…zaÅ„ naleÅ¼Ä… do rzadkoÅ›ci i sÄ… skrzÄ™tnie poszukiwane. ZdolnoÅ›Ä‡ magusa do kontrolowania potÄ™gi Å¼ywioÅ‚Ã³w stanowi ostateczny dowÃ³d, iÅ¼ magia jest najczystszym i najwspanialszym dobrem obecnym w naszej egzystencji.");
 					Doc_Show		( nDocID );
 	};
 
@@ -695,7 +695,7 @@ INSTANCE  Wahre_Macht(C_Item)
 
 	scemeName				=	"MAP";
 	description			= "Prawdziwa Moc";
-	//TEXT[0]				= "Fünfter Kreis";
+	//TEXT[0]				= "FÃ¼nfter Kreis";
 	////COUNT[0]			= ;
 	//TEXT[1]				= "";
 	////COUNT[1]			= ;
@@ -731,21 +731,21 @@ INSTANCE  Wahre_Macht(C_Item)
 					Doc_SetFont 	( nDocID, -1, "font_10_book.tga");
 					Doc_PrintLine	( nDocID,  0, "");
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLines	( nDocID,  0,"Œwiêta powinnoœæ Mêdrca");
+					Doc_PrintLines	( nDocID,  0,"ÅšwiÄ™ta powinnoÅ›Ä‡ MÄ™drca");
 					Doc_PrintLine	( nDocID,  0, "");
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLines	( nDocID,  0,"To potêga odró¿nia magusa od zwyk³ego œmiertelnika. W³adny wykorzystywaæ bosk¹ moc, magus wyjêty jest spod tych wszystkich praw natury, które dotycz¹ ludzi prostych i królów jednako.");
+					Doc_PrintLines	( nDocID,  0,"To potÄ™ga odrÃ³Å¼nia magusa od zwykÅ‚ego Å›miertelnika. WÅ‚adny wykorzystywaÄ‡ boskÄ… moc, magus wyjÄ™ty jest spod tych wszystkich praw natury, ktÃ³re dotyczÄ… ludzi prostych i krÃ³lÃ³w jednako.");
 					
 					
 					//2.Seite
-					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1);  //  0 -> margins are in pixels (Position des Textes von den Ränder des TGAs aus, links,oben,rechts,unten)
+					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1);  //  0 -> margins are in pixels (Position des Textes von den RÃ¤nder des TGAs aus, links,oben,rechts,unten)
 					Doc_PrintLine	( nDocID,  1, "");
 					Doc_PrintLine	( nDocID,  1, "");	
 					Doc_PrintLine	( nDocID,  1, "");
 					Doc_PrintLine	( nDocID,  1, "");
 					Doc_PrintLine	( nDocID,  1, "");
 					Doc_PrintLine	( nDocID,  1, "");
-					Doc_PrintLines	( nDocID,  1,"Gdy magus osi¹gnie poziom, który pozwoli mu wykroczyæ poza granice ludzkiej egzystencji, wstêpuje do œwiata niedostêpnego zwyk³ym œmiertelnikom. Mo¿e prze³amywaæ bariery czasu i przestrzeni, i nawet Œmieræ - ostateczna bariera - nie jest mu straszna.");
+					Doc_PrintLines	( nDocID,  1,"Gdy magus osiÄ…gnie poziom, ktÃ³ry pozwoli mu wykroczyÄ‡ poza granice ludzkiej egzystencji, wstÄ™puje do Å›wiata niedostÄ™pnego zwykÅ‚ym Å›miertelnikom. MoÅ¼e przeÅ‚amywaÄ‡ bariery czasu i przestrzeni, i nawet ÅšmierÄ‡ - ostateczna bariera - nie jest mu straszna.");
 					Doc_Show		( nDocID );
 };
 
@@ -800,14 +800,14 @@ INSTANCE  Das_magische_Erz(C_Item)
 					Doc_PrintLine	( nDocID,  0,"");
 					Doc_SetFont 	( nDocID, -1, "font_10_book.tga");
 					Doc_PrintLine	( nDocID,  0,"");
-					Doc_PrintLines	( nDocID,  0,"Najlepsz¹ rudê do wyrobu wszelkiego rodzaju orê¿a znaleŸæ mo¿na w kopalniach w dolinie Khorinis. Wykut¹ z niej broñ cechuje niebywa³a wytrzyma³oœæ. Pok³ady rudy wystêpuj¹ zwykle g³êboko pod ziemi¹, lecz g³upcem ten, kto nie podejmie trudu wydobycia jej na œwiat³o dzienne. Niewiele jest takich skarbów na œwiecie...");
+					Doc_PrintLines	( nDocID,  0,"NajlepszÄ… rudÄ™ do wyrobu wszelkiego rodzaju orÄ™Å¼a znaleÅºÄ‡ moÅ¼na w kopalniach w dolinie Khorinis. WykutÄ… z niej broÅ„ cechuje niebywaÅ‚a wytrzymaÅ‚oÅ›Ä‡. PokÅ‚ady rudy wystÄ™pujÄ… zwykle gÅ‚Ä™boko pod ziemiÄ…, lecz gÅ‚upcem ten, kto nie podejmie trudu wydobycia jej na Å›wiatÅ‚o dzienne. Niewiele jest takich skarbÃ³w na Å›wiecie...");
 					
 					
 					//2.Seite
-					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1);  //  0 -> margins are in pixels (Position des Textes von den Ränder des TGAs aus, links,oben,rechts,unten)
+					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1);  //  0 -> margins are in pixels (Position des Textes von den RÃ¤nder des TGAs aus, links,oben,rechts,unten)
 					Doc_PrintLine	( nDocID,  1,"");
 					Doc_PrintLine	( nDocID,  1,"");	
-					Doc_PrintLines	( nDocID,  1,"Magiczna broñ przebije ka¿dy pancerz i pogruchocze ka¿d¹ tarczê. Zaiste, królewski to orê¿ i królewsk¹ cenê trzeba zap³aciæ za choæby sztylet wykuty z tego szlachetnego kruszcu. Tako¿ surow¹ cenê p³ac¹ górnicy pracuj¹cy w kopalniach. Rudê nie³atwo oddzieliæ od skalnych pok³adów, tak jakby z ca³ych si³ walczy³a, by pozostaæ w ³onie matki Ziemi.");
+					Doc_PrintLines	( nDocID,  1,"Magiczna broÅ„ przebije kaÅ¼dy pancerz i pogruchocze kaÅ¼dÄ… tarczÄ™. Zaiste, krÃ³lewski to orÄ™Å¼ i krÃ³lewskÄ… cenÄ™ trzeba zapÅ‚aciÄ‡ za choÄ‡by sztylet wykuty z tego szlachetnego kruszcu. TakoÅ¼ surowÄ… cenÄ™ pÅ‚acÄ… gÃ³rnicy pracujÄ…cy w kopalniach. RudÄ™ nieÅ‚atwo oddzieliÄ‡ od skalnych pokÅ‚adÃ³w, tak jakby z caÅ‚ych siÅ‚ walczyÅ‚a, by pozostaÄ‡ w Å‚onie matki Ziemi.");
 					Doc_Show		( nDocID );
 	};
 
@@ -861,15 +861,15 @@ INSTANCE Schlacht_um_Varant1(C_Item)
 					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   		);  //  0 -> margins are in pixels
 					Doc_SetFont 	( nDocID, -1, "font_10_book.tga"	   			); 	// -1 -> all pages 
 					Doc_PrintLine	( nDocID,  0,""); 					
-					Doc_PrintLines	( nDocID,  0,"...ale sprytny Rhobar postanowi³ zaatakowaæ. Zebra³ swoje si³y i kaza³ im nêkaæ s³absz¹, praw¹ flankê nieprzyjaciela. Nie trac¹c chwili, król pchn¹³ najlepsze swe oddzia³y na wroga, i przebi³ siê przezeñ niczym miecz przecinaj¹cy mê¿a. Wojska królewskie par³y zatem bez wytchnienia w stronê Varant. Rhobar wiedzia³ wszak, ¿e jedyna szansa ocalenia le¿y w rozbiciu armii nieprzyjaciela i niedopuszczeniu do po³¹czenia si³ Gellona i Lukkora.");
+					Doc_PrintLines	( nDocID,  0,"...ale sprytny Rhobar postanowiÅ‚ zaatakowaÄ‡. ZebraÅ‚ swoje siÅ‚y i kazaÅ‚ im nÄ™kaÄ‡ sÅ‚abszÄ…, prawÄ… flankÄ™ nieprzyjaciela. Nie tracÄ…c chwili, krÃ³l pchnÄ…Å‚ najlepsze swe oddziaÅ‚y na wroga, i przebiÅ‚ siÄ™ przezeÅ„ niczym miecz przecinajÄ…cy mÄ™Å¼a. Wojska krÃ³lewskie parÅ‚y zatem bez wytchnienia w stronÄ™ Varant. Rhobar wiedziaÅ‚ wszak, Å¼e jedyna szansa ocalenia leÅ¼y w rozbiciu armii nieprzyjaciela i niedopuszczeniu do poÅ‚Ä…czenia siÅ‚ Gellona i Lukkora.");
 					
 					//2.Seite
 
-					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den Ränder des TGAs aus, links,oben,rechts,unten)
+					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den RÃ¤nder des TGAs aus, links,oben,rechts,unten)
 					Doc_PrintLine	( nDocID,  1,"");					
-					Doc_PrintLines	( nDocID,  1,"Najpierw jednak postanowi³ przeci¹æ ich linie zaopatrzenia...");
+					Doc_PrintLines	( nDocID,  1,"Najpierw jednak postanowiÅ‚ przeciÄ…Ä‡ ich linie zaopatrzenia...");
 					Doc_PrintLine	( nDocID,  1,"");
-					Doc_PrintLines	( nDocID,  1,"...Gellon poleg³ a jego armia posz³a w rozsypkê. Ale Rhobar nie zamierza³ daæ przeciwnikowi chwili wytchnienia i rzuci³ swe si³y na pozosta³e oddzia³y wroga. Tu jednak Lukkor rzuci³ siê na królewskich znienacka i zada³ straszliwy cios wyczerpanym wojskom Rhobara...");
+					Doc_PrintLines	( nDocID,  1,"...Gellon polegÅ‚ a jego armia poszÅ‚a w rozsypkÄ™. Ale Rhobar nie zamierzaÅ‚ daÄ‡ przeciwnikowi chwili wytchnienia i rzuciÅ‚ swe siÅ‚y na pozostaÅ‚e oddziaÅ‚y wroga. Tu jednak Lukkor rzuciÅ‚ siÄ™ na krÃ³lewskich znienacka i zadaÅ‚ straszliwy cios wyczerpanym wojskom Rhobara...");
 					
 					Doc_Show		( nDocID );
 	};
@@ -919,13 +919,13 @@ INSTANCE Schlacht_um_Varant2(C_Item)
 					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   		);  //  0 -> margins are in pixels
 					Doc_SetFont 	( nDocID, -1, "font_10_book.tga"	   			); 	// -1 -> all pages 
 					Doc_PrintLine	( nDocID,  0,""); 					
-					Doc_PrintLines	( nDocID,  0,"Wojna by³a skoñczona. Varant straci³o swe morskie porty, tak potrzebne dla zaopatrywania armii. Król Rhobar nie traci³ wiêcej czasu na polu bitwy, lecz zostawi³ swych genera³ów, by ci rozprawili siê z niedobitkami nieprzyjaciela. Varrantczycy posiadali ju¿ tylko jedno ognisko oporu, zgromadzone wokó³ Lukkora, najpotê¿niejszego genera³a ca³ego narodu, który umiejêtnie zamieni³ pora¿kê w zwyciêstwo.");
+					Doc_PrintLines	( nDocID,  0,"Wojna byÅ‚a skoÅ„czona. Varant straciÅ‚o swe morskie porty, tak potrzebne dla zaopatrywania armii. KrÃ³l Rhobar nie traciÅ‚ wiÄ™cej czasu na polu bitwy, lecz zostawiÅ‚ swych generaÅ‚Ã³w, by ci rozprawili siÄ™ z niedobitkami nieprzyjaciela. Varrantczycy posiadali juÅ¼ tylko jedno ognisko oporu, zgromadzone wokÃ³Å‚ Lukkora, najpotÄ™Å¼niejszego generaÅ‚a caÅ‚ego narodu, ktÃ³ry umiejÄ™tnie zamieniÅ‚ poraÅ¼kÄ™ w zwyciÄ™stwo.");
 					
 					//2.Seite
 
-					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den Ränder des TGAs aus, links,oben,rechts,unten)
+					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den RÃ¤nder des TGAs aus, links,oben,rechts,unten)
 					Doc_PrintLine	( nDocID,  1,"");					
-					Doc_PrintLines	( nDocID,  1,"Ale teraz jego armia znalaz³a siê w potrzasku. Sytuacja zda³a siê byæ beznadziejna, choæ jego wojska przewy¿sza³y si³y królewskie liczb¹ i wyposa¿eniem. Oto jeden z Myrtañskich bohaterów, mê¿ny genera³ imieniem Lee, zwabi³ przeciwnika w pu³apkê. Na podmok³ej, bagnistej ziemi ciê¿ka kawaleria Lukkora nie mia³a szans w starciu ze zwinnymi ¿o³nierzami Lee. Zdziesi¹tkowane oddzia³y Varantu wkrótce musia³y uznaæ wy¿szoœæ przeciwnika. Lukkor zosta³ pokonany.");
+					Doc_PrintLines	( nDocID,  1,"Ale teraz jego armia znalazÅ‚a siÄ™ w potrzasku. Sytuacja zdaÅ‚a siÄ™ byÄ‡ beznadziejna, choÄ‡ jego wojska przewyÅ¼szaÅ‚y siÅ‚y krÃ³lewskie liczbÄ… i wyposaÅ¼eniem. Oto jeden z MyrtaÅ„skich bohaterÃ³w, mÄ™Å¼ny generaÅ‚ imieniem Lee, zwabiÅ‚ przeciwnika w puÅ‚apkÄ™. Na podmokÅ‚ej, bagnistej ziemi ciÄ™Å¼ka kawaleria Lukkora nie miaÅ‚a szans w starciu ze zwinnymi Å¼oÅ‚nierzami Lee. ZdziesiÄ…tkowane oddziaÅ‚y Varantu wkrÃ³tce musiaÅ‚y uznaÄ‡ wyÅ¼szoÅ›Ä‡ przeciwnika. Lukkor zostaÅ‚ pokonany.");
 					
 					Doc_Show		( nDocID );
 	};
@@ -933,7 +933,7 @@ INSTANCE Schlacht_um_Varant2(C_Item)
 /******************************************************************************************/
 INSTANCE Myrtanas_Lyrik(C_Item)
 {	
-	name 					=	"Poezja Myrtañska";
+	name 					=	"Poezja MyrtaÅ„ska";
 
 	mainflag 				=	ITEM_KAT_DOCS;
 	flags 					=	0;
@@ -944,7 +944,7 @@ INSTANCE Myrtanas_Lyrik(C_Item)
 	material 				=	MAT_LEATHER;
 
 	scemeName				=	"MAP";
-	description			= "Poezja Myrtañska";
+	description			= "Poezja MyrtaÅ„ska";
 
 	TEXT[5]				= NAME_Value;
 	COUNT[5]			= value;
@@ -969,7 +969,7 @@ INSTANCE Myrtanas_Lyrik(C_Item)
 					Doc_PrintLine	( nDocID,  0,"");
 					Doc_PrintLine	( nDocID,  0,"");
 					Doc_PrintLine	( nDocID,  0,"");
-					Doc_PrintLine	( nDocID,  0,"    Pieœñ");
+					Doc_PrintLine	( nDocID,  0,"    PieÅ›Å„");
 					Doc_PrintLine	( nDocID,  0,"");
 					Doc_PrintLine	( nDocID,  0,"        Skruchy");
 					Doc_PrintLine	( nDocID,  0,"");
@@ -986,30 +986,30 @@ INSTANCE Myrtanas_Lyrik(C_Item)
 		
 					//2.Seite
 
-					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den Ränder des TGAs aus, links,oben,rechts,unten)
+					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den RÃ¤nder des TGAs aus, links,oben,rechts,unten)
 					Doc_PrintLine	( nDocID,  1,"");					
-					Doc_PrintLines	( nDocID,  1,"Na pocz¹tku by³a moc, jak jasny œnieg bia³a,");				
+					Doc_PrintLines	( nDocID,  1,"Na poczÄ…tku byÅ‚a moc, jak jasny Å›nieg biaÅ‚a,");				
 					Doc_PrintLine	( nDocID,  1,"");				
-					Doc_PrintLines	( nDocID,  1,"Dziœ niewielka cz¹stka dawnej chwa³y pozosta³a.");				
+					Doc_PrintLines	( nDocID,  1,"DziÅ› niewielka czÄ…stka dawnej chwaÅ‚y pozostaÅ‚a.");				
 					Doc_PrintLine	( nDocID,  1,"");				
-					Doc_PrintLines	( nDocID,  1,"Przypomina o jednoœci z dawnych lat,");				
+					Doc_PrintLines	( nDocID,  1,"Przypomina o jednoÅ›ci z dawnych lat,");				
 					Doc_PrintLine	( nDocID,  1,"");				
-					Doc_PrintLines	( nDocID,  1,"jak¿e ró¿nej od chciwoœci, któr¹ œwiat");				
+					Doc_PrintLines	( nDocID,  1,"jakÅ¼e rÃ³Å¼nej od chciwoÅ›ci, ktÃ³rÄ… Å›wiat");				
 					Doc_PrintLine	( nDocID,  1,"");				
-					Doc_PrintLines	( nDocID,  1,"nasz zdepta³ i odrzuci³ po wsze czasy.");				
+					Doc_PrintLines	( nDocID,  1,"nasz zdeptaÅ‚ i odrzuciÅ‚ po wsze czasy.");				
 					Doc_PrintLine	( nDocID,  1,"");				
-					Doc_PrintLines	( nDocID,  1,"Nasz duch nie zdzier¿y³ ostatecznej próby,");				
+					Doc_PrintLines	( nDocID,  1,"Nasz duch nie zdzierÅ¼yÅ‚ ostatecznej prÃ³by,");				
 					Doc_PrintLine	( nDocID,  1,"");				
-					Doc_PrintLines	( nDocID,  1,"a po¿¹danie bêdzie Ÿród³em naszej zguby.");				
+					Doc_PrintLines	( nDocID,  1,"a poÅ¼Ä…danie bÄ™dzie ÅºrÃ³dÅ‚em naszej zguby.");				
 					Doc_PrintLine	( nDocID,  1,"");				
-					Doc_PrintLines	( nDocID,  1,"Bo nie masz ju¿ jednoœci na tym œwiecie.");				
+					Doc_PrintLines	( nDocID,  1,"Bo nie masz juÅ¼ jednoÅ›ci na tym Å›wiecie.");				
 					Doc_PrintLines	( nDocID,  1,"");
 					Doc_Show		( nDocID );
 	};
 /******************************************************************************************/
 INSTANCE Lehren_der_Goetter1 (C_ITEM)
 {	
-	name 					=	"M¹droœæ Bogów, tom 1";
+	name 					=	"MÄ…droÅ›Ä‡ BogÃ³w, tom 1";
 
 	mainflag 				=	ITEM_KAT_DOCS;
 	flags 					=	0;
@@ -1020,7 +1020,7 @@ INSTANCE Lehren_der_Goetter1 (C_ITEM)
 	material 				=	MAT_LEATHER;
 
 	scemeName				=	"MAP";
-	description			= "M¹droœæ Bogów";
+	description			= "MÄ…droÅ›Ä‡ BogÃ³w";
 	TEXT[0]				= "Tom 1";
 	TEXT[5]				= NAME_Value;
 	COUNT[5]			= value;
@@ -1042,25 +1042,25 @@ INSTANCE Lehren_der_Goetter1 (C_ITEM)
  					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   		);  //  0 -> margins are in pixels 					
 					Doc_SetFont 	( nDocID, -1, "font_10_book.tga"	   			); 	// -1 -> all pages 
  					Doc_PrintLine	( nDocID,  0,"");										
-					Doc_PrintLines	( nDocID,  0,"Wys³uchajcie s³ów bo¿ych, bo pragn¹ oni, byœcie ich wys³uchali. Przestrzegajcie praw bo¿ych, bo chc¹ oni, byœcie ich przestrzegali. Czcijcie kap³anów bo¿ych, bo oni s¹ wybrañcami ³aski...");
+					Doc_PrintLines	( nDocID,  0,"WysÅ‚uchajcie sÅ‚Ã³w boÅ¼ych, bo pragnÄ… oni, byÅ›cie ich wysÅ‚uchali. Przestrzegajcie praw boÅ¼ych, bo chcÄ… oni, byÅ›cie ich przestrzegali. Czcijcie kapÅ‚anÃ³w boÅ¼ych, bo oni sÄ… wybraÅ„cami Å‚aski...");
 					Doc_PrintLine	( nDocID,  0,"");
 					//Absatz
-					Doc_PrintLines	( nDocID,  0,"S³owa Innosa: A gdybyœcie nie mogli ich poj¹æ, nie odrzucajcie s³ów kap³anów, bo g³osz¹ oni moj¹ m¹droœæ. Gdy¿ ja jestem S³oñcem na niebie, œwiat³em i ¿yciem na Ziemi. A wszystko, co wrogiem jest S³oñca, jest i moim wrogiem, i zostanie wygnane do krainy wiecznej ciemnoœci.");
+					Doc_PrintLines	( nDocID,  0,"SÅ‚owa Innosa: A gdybyÅ›cie nie mogli ich pojÄ…Ä‡, nie odrzucajcie sÅ‚Ã³w kapÅ‚anÃ³w, bo gÅ‚oszÄ… oni mojÄ… mÄ…droÅ›Ä‡. GdyÅ¼ ja jestem SÅ‚oÅ„cem na niebie, Å›wiatÅ‚em i Å¼yciem na Ziemi. A wszystko, co wrogiem jest SÅ‚oÅ„ca, jest i moim wrogiem, i zostanie wygnane do krainy wiecznej ciemnoÅ›ci.");
 
 					//2.Seite
-					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den Ränder des TGAs aus, links,oben,rechts,unten)
+					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den RÃ¤nder des TGAs aus, links,oben,rechts,unten)
 					Doc_PrintLine	( nDocID,  1,"");
-					Doc_PrintLines	( nDocID,  1,"S³owa Adanosa: ¯yjcie i pracujcie, bo dzieñ stworzono po to, by m¹¿ móg³ ¿yæ i pracowaæ. Szukajcie wiedzy, byœcie mogli przekazaæ j¹ synom swoim, gdy¿ taka jest wola moja. Ale strze¿cie siê, bo cz³ek g³upi i leniwy zostanie wygnany do krainy wiecznej ciemnoœci.");
+					Doc_PrintLines	( nDocID,  1,"SÅ‚owa Adanosa: Å»yjcie i pracujcie, bo dzieÅ„ stworzono po to, by mÄ…Å¼ mÃ³gÅ‚ Å¼yÄ‡ i pracowaÄ‡. Szukajcie wiedzy, byÅ›cie mogli przekazaÄ‡ jÄ… synom swoim, gdyÅ¼ taka jest wola moja. Ale strzeÅ¼cie siÄ™, bo czÅ‚ek gÅ‚upi i leniwy zostanie wygnany do krainy wiecznej ciemnoÅ›ci.");
 					Doc_PrintLine	( nDocID,  1,"");
 					//Absatz
-					Doc_PrintLines	( nDocID,  1,"S³owa Beliara: A ktokolwiek wyst¹pi przeciw woli bo¿ej, ze mn¹ bêdzie mia³ do czynienia. Na jego cia³o ból zeœlê okrutny, a jego duch pójdzie ze mn¹ do krainy wiecznej ciemnoœci.");
+					Doc_PrintLines	( nDocID,  1,"SÅ‚owa Beliara: A ktokolwiek wystÄ…pi przeciw woli boÅ¼ej, ze mnÄ… bÄ™dzie miaÅ‚ do czynienia. Na jego ciaÅ‚o bÃ³l zeÅ›lÄ™ okrutny, a jego duch pÃ³jdzie ze mnÄ… do krainy wiecznej ciemnoÅ›ci.");
 					Doc_Show		( nDocID );
 	};
 
 /******************************************************************************************/
 INSTANCE Lehren_der_Goetter2 (C_ITEM)
 {	
-	name 					=	"M¹droœæ Bogów, tom 2";
+	name 					=	"MÄ…droÅ›Ä‡ BogÃ³w, tom 2";
 
 	mainflag 				=	ITEM_KAT_DOCS;
 	flags 					=	0;
@@ -1071,7 +1071,7 @@ INSTANCE Lehren_der_Goetter2 (C_ITEM)
 	material 				=	MAT_LEATHER;
 
 	scemeName				=	"MAP";
-	description			= "M¹droœæ Bogów";
+	description			= "MÄ…droÅ›Ä‡ BogÃ³w";
 	TEXT[0]				= "Tom 2";
 	TEXT[5]				= NAME_Value;
 	COUNT[5]			= value;
@@ -1093,20 +1093,20 @@ INSTANCE Lehren_der_Goetter2 (C_ITEM)
 					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   		);  //  0 -> margins are in pixels
 					Doc_SetFont 	( nDocID, -1, "font_10_book.tga"	   			); 	// -1 -> all pages 
 					Doc_PrintLine	( nDocID,  0,""); 					
-					Doc_PrintLines	( nDocID,  0,"O zaraniu dziejów: Na pocz¹tku nie by³o dnia ani nocy, i ¿adne ¿ywe stworzenie nie przemierza³o œwiata. Wtedy pojawi³ siê Innos, a jego blask pada³ na Ziemiê. Innos obdarzy³ œwiat darem ¿ycia. Ale ¿adne stworzenie nie œmia³o spojrzeæ w twarz Innosa, wiêc dobry bóg stworzy³ S³oñce. Lecz mimo to, jasnoœæ by³a zbyt wielka, tote¿ Innos podzieli³ siê na dwoje i tak powsta³ Beliar. Beliar stworzy³ noc. Teraz cz³owiek móg³ wreszcie ¿yæ, lecz nie wiedzia³ jak. Dlatego Innos podzieli³ siê po raz wtóry i tak powsta³ Adanos. Adanos przyniós³ ludziom pomys³owoœæ i m¹droœæ, której tak bardzo potrzebowali.");
+					Doc_PrintLines	( nDocID,  0,"O zaraniu dziejÃ³w: Na poczÄ…tku nie byÅ‚o dnia ani nocy, i Å¼adne Å¼ywe stworzenie nie przemierzaÅ‚o Å›wiata. Wtedy pojawiÅ‚ siÄ™ Innos, a jego blask padaÅ‚ na ZiemiÄ™. Innos obdarzyÅ‚ Å›wiat darem Å¼ycia. Ale Å¼adne stworzenie nie Å›miaÅ‚o spojrzeÄ‡ w twarz Innosa, wiÄ™c dobry bÃ³g stworzyÅ‚ SÅ‚oÅ„ce. Lecz mimo to, jasnoÅ›Ä‡ byÅ‚a zbyt wielka, toteÅ¼ Innos podzieliÅ‚ siÄ™ na dwoje i tak powstaÅ‚ Beliar. Beliar stworzyÅ‚ noc. Teraz czÅ‚owiek mÃ³gÅ‚ wreszcie Å¼yÄ‡, lecz nie wiedziaÅ‚ jak. Dlatego Innos podzieliÅ‚ siÄ™ po raz wtÃ³ry i tak powstaÅ‚ Adanos. Adanos przyniÃ³sÅ‚ ludziom pomysÅ‚owoÅ›Ä‡ i mÄ…droÅ›Ä‡, ktÃ³rej tak bardzo potrzebowali.");
 					
 					//2.Seite
 
-					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den Ränder des TGAs aus, links,oben,rechts,unten)
+					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den RÃ¤nder des TGAs aus, links,oben,rechts,unten)
 					Doc_PrintLine	( nDocID,  1,"");					
-					Doc_PrintLines	( nDocID,  1,"Dlatego Innos postanowi³ zostawiæ ludzkoœæ pod opiek¹ Adanosa i uda³ siê na spoczynek. Lecz Beliar p³on¹³ z zazdroœci, gdy¿ ludzie bali siê go i nie oddawali mu czci. Tedy postanowi³ Beliar stworzyæ cz³owieka, który modli³by siê tylko do niego. Ale cz³owiek ów by³ jako wszyscy inni, i ba³ siê Beliara i nie oddawa³ mu czci. Bóg nocy rozz³oœci³ siê i zabi³ cz³owieka krzycz¹c: Dobrze! Bójcie siê mnie zatem, ale czeœæ oddacie mi, choæby po œmierci. Tymi s³owy ustanowi³ Beliar Œmieræ - kres ¿ywota ludzkiego.");
+					Doc_PrintLines	( nDocID,  1,"Dlatego Innos postanowiÅ‚ zostawiÄ‡ ludzkoÅ›Ä‡ pod opiekÄ… Adanosa i udaÅ‚ siÄ™ na spoczynek. Lecz Beliar pÅ‚onÄ…Å‚ z zazdroÅ›ci, gdyÅ¼ ludzie bali siÄ™ go i nie oddawali mu czci. Tedy postanowiÅ‚ Beliar stworzyÄ‡ czÅ‚owieka, ktÃ³ry modliÅ‚by siÄ™ tylko do niego. Ale czÅ‚owiek Ã³w byÅ‚ jako wszyscy inni, i baÅ‚ siÄ™ Beliara i nie oddawaÅ‚ mu czci. BÃ³g nocy rozzÅ‚oÅ›ciÅ‚ siÄ™ i zabiÅ‚ czÅ‚owieka krzyczÄ…c: Dobrze! BÃ³jcie siÄ™ mnie zatem, ale czeÅ›Ä‡ oddacie mi, choÄ‡by po Å›mierci. Tymi sÅ‚owy ustanowiÅ‚ Beliar ÅšmierÄ‡ - kres Å¼ywota ludzkiego.");
 					Doc_Show		( nDocID );
 	};
 
 /******************************************************************************************/
 INSTANCE Lehren_der_Goetter3 (C_ITEM)
 {	
-	name 					=	"M¹droœæ Bogów, tom 3";
+	name 					=	"MÄ…droÅ›Ä‡ BogÃ³w, tom 3";
 
 	mainflag 				=	ITEM_KAT_DOCS;
 	flags 					=	0;
@@ -1117,7 +1117,7 @@ INSTANCE Lehren_der_Goetter3 (C_ITEM)
 	material 				=	MAT_LEATHER;
 
 	scemeName				=	"MAP";
-	description			= "M¹droœæ Bogów";
+	description			= "MÄ…droÅ›Ä‡ BogÃ³w";
 	TEXT[0]				= "Tom 3";
 
 	TEXT[5]				= NAME_Value;
@@ -1140,18 +1140,18 @@ INSTANCE Lehren_der_Goetter3 (C_ITEM)
 					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   		);  //  0 -> margins are in pixels
    					Doc_SetFont 	( nDocID, -1, "font_10_book.tga"	   			); 	// -1 -> all pages 
    					Doc_PrintLine	( nDocID,  0,"");			
-					Doc_PrintLines	( nDocID,  0,"Innos pozwoli³, by ludzie mogli go us³yszeæ i przemawiaæ do niego. Pozwoli³ im równie¿ czyniæ cuda i nazwa³ je magi¹. Dziêki magii, ludzie zaczêli zmieniaæ œwiat wedle swego upodobania, jedni m¹drze, inni g³upio. Widz¹c to, Innos zabra³ dar magii ludziom g³upim i pozostawi³ go w rêkach ludzi œwiat³ych. Obdarzy³ ich równie¿ innymi ³askami, czyni¹c swoimi kap³anami i nadaj¹c im miano magów.");
+					Doc_PrintLines	( nDocID,  0,"Innos pozwoliÅ‚, by ludzie mogli go usÅ‚yszeÄ‡ i przemawiaÄ‡ do niego. PozwoliÅ‚ im rÃ³wnieÅ¼ czyniÄ‡ cuda i nazwaÅ‚ je magiÄ…. DziÄ™ki magii, ludzie zaczÄ™li zmieniaÄ‡ Å›wiat wedle swego upodobania, jedni mÄ…drze, inni gÅ‚upio. WidzÄ…c to, Innos zabraÅ‚ dar magii ludziom gÅ‚upim i pozostawiÅ‚ go w rÄ™kach ludzi Å›wiatÅ‚ych. ObdarzyÅ‚ ich rÃ³wnieÅ¼ innymi Å‚askami, czyniÄ…c swoimi kapÅ‚anami i nadajÄ…c im miano magÃ³w.");
 					
 					//2.Seite
-					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den Ränder des TGAs aus, links,oben,rechts,unten)
+					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den RÃ¤nder des TGAs aus, links,oben,rechts,unten)
  					Doc_PrintLine	( nDocID,  1,"");					
-					Doc_PrintLines	( nDocID,  1,"Ludzie czcili kap³anów Innosa i oddawali im czeœæ, ale wielu magów odwróci³o siê od Innosa i uciek³o siê pod opiekê jego boskiego brata - Adanosa. Kasta magów uleg³a rozbiciu. Ci, którzy pod¹¿ali za bogiem m¹droœci nazwali siebie magami Krêgu Wody. Wyznawcy Innosa nazywani zaœ byli Magami Ognia.");
+					Doc_PrintLines	( nDocID,  1,"Ludzie czcili kapÅ‚anÃ³w Innosa i oddawali im czeÅ›Ä‡, ale wielu magÃ³w odwrÃ³ciÅ‚o siÄ™ od Innosa i uciekÅ‚o siÄ™ pod opiekÄ™ jego boskiego brata - Adanosa. Kasta magÃ³w ulegÅ‚a rozbiciu. Ci, ktÃ³rzy podÄ…Å¼ali za bogiem mÄ…droÅ›ci nazwali siebie magami KrÄ™gu Wody. Wyznawcy Innosa nazywani zaÅ› byli Magami Ognia.");
 					Doc_Show		( nDocID );
 	};
 /******************************************************************************************/
 INSTANCE Jagd_und_Beute (C_ITEM)
 {	
-	name 					=	"£owy i zwierzyna";
+	name 					=	"Åowy i zwierzyna";
 	mainflag 				=	ITEM_KAT_DOCS;			
 									
 	flags 					=	0;
@@ -1162,7 +1162,7 @@ INSTANCE Jagd_und_Beute (C_ITEM)
 	material 				=	MAT_LEATHER;
 
 	scemeName				=	"MAP";
-	description			= "£owy i zwierzyna";
+	description			= "Åowy i zwierzyna";
 	//TEXT[0]				= "";
 	////COUNT[0]			= ;
 	//TEXT[1]				= "";
@@ -1193,13 +1193,13 @@ INSTANCE Jagd_und_Beute (C_ITEM)
 					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   		);  //  0 -> margins are in pixels
 					Doc_SetFont 	( nDocID, -1, "font_10_book.tga"	   			); 	// -1 -> all pages 
 					Doc_PrintLine	( nDocID,  0,""); 					
-					Doc_PrintLines	( nDocID,  0,"Jego zapiski przetrwa³y ca³e wieki i po dziœ dzieñ uznawane s¹ za najznakomitsze kompendium wiedzy o polowaniu. Po d³ugich latach staræ na pó³nocnym pograniczu, niemal ka¿dy obywatel potrafi pos³ugiwaæ siê ³ukiem. Jednak sztuka polowania daleko wykracza poza podstawowe zasady strzelania z ³uku! Zwierzyna jest wszak p³ocha i nieprzewidywalna!");
+					Doc_PrintLines	( nDocID,  0,"Jego zapiski przetrwaÅ‚y caÅ‚e wieki i po dziÅ› dzieÅ„ uznawane sÄ… za najznakomitsze kompendium wiedzy o polowaniu. Po dÅ‚ugich latach starÄ‡ na pÃ³Å‚nocnym pograniczu, niemal kaÅ¼dy obywatel potrafi posÅ‚ugiwaÄ‡ siÄ™ Å‚ukiem. Jednak sztuka polowania daleko wykracza poza podstawowe zasady strzelania z Å‚uku! Zwierzyna jest wszak pÅ‚ocha i nieprzewidywalna!");
 					
 					//2.Seite
 
-					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den Ränder des TGAs aus, links,oben,rechts,unten)
+					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den RÃ¤nder des TGAs aus, links,oben,rechts,unten)
 					Doc_PrintLine	( nDocID,  1,"");					
-					Doc_PrintLines	( nDocID,  1,"Polowanie z ³ukiem ma swe pocz¹tki w czasach staro¿ytnych. W ci¹gu ca³ych tysi¹cleci nie zasz³y w technikach ³owieckich wiêksze zmiany i tak ju¿ najprawdopodobniej pozostanie. Jakie czynniki wp³ywaj¹ tak naprawdê na skutecznoœæ pos³ugiwania siê ³ukiem? To w³aœnie rozpoznanie tych czynników czyni prawdziwego mistrza ³ucznictwa.");
+					Doc_PrintLines	( nDocID,  1,"Polowanie z Å‚ukiem ma swe poczÄ…tki w czasach staroÅ¼ytnych. W ciÄ…gu caÅ‚ych tysiÄ…cleci nie zaszÅ‚y w technikach Å‚owieckich wiÄ™ksze zmiany i tak juÅ¼ najprawdopodobniej pozostanie. Jakie czynniki wpÅ‚ywajÄ… tak naprawdÄ™ na skutecznoÅ›Ä‡ posÅ‚ugiwania siÄ™ Å‚ukiem? To wÅ‚aÅ›nie rozpoznanie tych czynnikÃ³w czyni prawdziwego mistrza Å‚ucznictwa.");
 					Doc_Show		( nDocID );
 	};
 /******************************************************************************************/
@@ -1249,20 +1249,20 @@ INSTANCE Kampfkunst (C_ITEM)
   					Doc_PrintLine	( nDocID,  0,"");					
   					Doc_PrintLine	( nDocID,  0,"");					
   					Doc_PrintLine	( nDocID,  0,"");					
-					Doc_PrintLines	( nDocID,  0,"Od 2000 lat nauki mistrzów kszta³tuj¹ rozwój sztuki walki.");
+					Doc_PrintLines	( nDocID,  0,"Od 2000 lat nauki mistrzÃ³w ksztaÅ‚tujÄ… rozwÃ³j sztuki walki.");
   					Doc_PrintLine	( nDocID,  0,"");					
   					Doc_PrintLine	( nDocID,  0,"");					
-   					Doc_PrintLines	( nDocID,  0,"Zrêcznoœæ, opanowanie, szybkoœæ, zdolnoœæ obserwacji i b³yskawicznego podejmowania decyzji - wszystkie te umiejêtnoœci nale¿y bezustannie doskonaliæ. Jedynie doskona³a koordynacja ruchów i zachowanie w³aœciwej postawy pozwol¹ na prawid³owy rozwój twych umiejêtnoœci.");			
+   					Doc_PrintLines	( nDocID,  0,"ZrÄ™cznoÅ›Ä‡, opanowanie, szybkoÅ›Ä‡, zdolnoÅ›Ä‡ obserwacji i bÅ‚yskawicznego podejmowania decyzji - wszystkie te umiejÄ™tnoÅ›ci naleÅ¼y bezustannie doskonaliÄ‡. Jedynie doskonaÅ‚a koordynacja ruchÃ³w i zachowanie wÅ‚aÅ›ciwej postawy pozwolÄ… na prawidÅ‚owy rozwÃ³j twych umiejÄ™tnoÅ›ci.");			
 					
 					//2.Seite
-					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den Ränder des TGAs aus, links,oben,rechts,unten)
+					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den RÃ¤nder des TGAs aus, links,oben,rechts,unten)
   					Doc_PrintLine	( nDocID,  1,"");					
   					Doc_PrintLine	( nDocID,  1,"");					
   					Doc_PrintLine	( nDocID,  1,"");					
-					Doc_PrintLines	( nDocID,  1,"Przes³anie duchowych i cielesnych nauk Mistrza przetrwa³o wiele lat.");
+					Doc_PrintLines	( nDocID,  1,"PrzesÅ‚anie duchowych i cielesnych nauk Mistrza przetrwaÅ‚o wiele lat.");
   					Doc_PrintLine	( nDocID,  1,"");					
   					Doc_PrintLine	( nDocID,  1,"");					
- 					Doc_PrintLines	( nDocID,  1,"Jego niepospolity sukces by³ natchnieniem dla kolejnych pokoleñ. Œwiat zmienia³ siê bez przerwy, ale idealna harmonia si³ duchowych i sprawnoœci cia³a pozosta³a niezmienn¹.");					
+ 					Doc_PrintLines	( nDocID,  1,"Jego niepospolity sukces byÅ‚ natchnieniem dla kolejnych pokoleÅ„. Åšwiat zmieniaÅ‚ siÄ™ bez przerwy, ale idealna harmonia siÅ‚ duchowych i sprawnoÅ›ci ciaÅ‚a pozostaÅ‚a niezmiennÄ….");					
 					Doc_Show		( nDocID );
 	};
 
@@ -1333,18 +1333,18 @@ INSTANCE Astronomie (C_ITEM)
  					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   		);  //  0 -> margins are in pixels 					
 					Doc_SetFont 	( nDocID, -1, "font_10_book.tga"	   			); 	// -1 -> all pages 
  					Doc_PrintLine	( nDocID,  0,"");										
-					Doc_PrintLines	( nDocID,  0,"W centrum wszechœwiata znajduje siê Morgrad, co zawiera cztery ¿ywio³y - ziemiê, wodê, ogieñ i wiatr. Morgrad, co jest wiecznie niespokojnym sercem Beliara. A nad nim rozci¹ga siê sfera niebios.");
+					Doc_PrintLines	( nDocID,  0,"W centrum wszechÅ›wiata znajduje siÄ™ Morgrad, co zawiera cztery Å¼ywioÅ‚y - ziemiÄ™, wodÄ™, ogieÅ„ i wiatr. Morgrad, co jest wiecznie niespokojnym sercem Beliara. A nad nim rozciÄ…ga siÄ™ sfera niebios.");
 					Doc_PrintLine	( nDocID,  0,"");
 					//Absatz
-					Doc_PrintLines	( nDocID,  0,"W odwiecznej hierarchii kosmosu cz³owiek stoi poœrodku. Jego dusza pozwala mu doœwiadczaæ ³ask niebiañskich, ale jego cia³o stworzone jest z substancji Morgradu. Jest wiêc cz³owiek odzwierciedleniem ca³ego œwiata.");
+					Doc_PrintLines	( nDocID,  0,"W odwiecznej hierarchii kosmosu czÅ‚owiek stoi poÅ›rodku. Jego dusza pozwala mu doÅ›wiadczaÄ‡ Å‚ask niebiaÅ„skich, ale jego ciaÅ‚o stworzone jest z substancji Morgradu. Jest wiÄ™c czÅ‚owiek odzwierciedleniem caÅ‚ego Å›wiata.");
 
 					//2.Seite
-					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den Ränder des TGAs aus, links,oben,rechts,unten)
+					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den RÃ¤nder des TGAs aus, links,oben,rechts,unten)
 					Doc_PrintLine	( nDocID,  1,"");
-					Doc_PrintLines	( nDocID,  1,"Orbity wszystkich planet, czyli drogi, jakie pokonuj¹ okr¹¿aj¹c Morgrad, zmieniaj¹ siê nieznacznie z up³ywem lat. Pewnym jest zatem, i¿ ca³y wszechœwiat zmierza powoli do jakiegoœ celu.");
+					Doc_PrintLines	( nDocID,  1,"Orbity wszystkich planet, czyli drogi, jakie pokonujÄ… okrÄ…Å¼ajÄ…c Morgrad, zmieniajÄ… siÄ™ nieznacznie z upÅ‚ywem lat. Pewnym jest zatem, iÅ¼ caÅ‚y wszechÅ›wiat zmierza powoli do jakiegoÅ› celu.");
 					Doc_PrintLine	( nDocID,  1,"");
 					//Absatz
-					Doc_PrintLines	( nDocID,  1,"Obserwuj¹c ruch ksiê¿yca na nocnym niebie ustaliliœmy d³ugoœæ roku i stworzyliœmy pierwszy kalendarz.");
+					Doc_PrintLines	( nDocID,  1,"ObserwujÄ…c ruch ksiÄ™Å¼yca na nocnym niebie ustaliliÅ›my dÅ‚ugoÅ›Ä‡ roku i stworzyliÅ›my pierwszy kalendarz.");
 					Doc_Show		( nDocID );
 	};
 /******************************************************************************************/
@@ -1397,15 +1397,15 @@ INSTANCE Rezepturen (C_ITEM)
 					Doc_PrintLines	( nDocID,  0,"Balsam widzenia:");
 					Doc_PrintLine	( nDocID,  0,"----------------");
 					Doc_PrintLine	( nDocID,  0,"");		
-					Doc_PrintLines	( nDocID,  0,"Polejcie oczy pacjenta ¿r¹c¹ ¿ó³ci¹. ¯ó³æ zada mu ból okrutny, przez który ca³kiem zm¹drzeje i nauczy siê widzieæ to czego wczeœniej nie widzia³ i cieszyæ z tego, co mia³ do tej pory!");
+					Doc_PrintLines	( nDocID,  0,"Polejcie oczy pacjenta Å¼rÄ…cÄ… Å¼Ã³Å‚ciÄ…. Å»Ã³Å‚Ä‡ zada mu bÃ³l okrutny, przez ktÃ³ry caÅ‚kiem zmÄ…drzeje i nauczy siÄ™ widzieÄ‡ to czego wczeÅ›niej nie widziaÅ‚ i cieszyÄ‡ z tego, co miaÅ‚ do tej pory!");
 
 					//2.Seite
-					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den Ränder des TGAs aus, links,oben,rechts,unten)
+					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den RÃ¤nder des TGAs aus, links,oben,rechts,unten)
 					Doc_PrintLine	( nDocID,  1,"");
 					Doc_PrintLines	( nDocID,  1,"");
 					Doc_PrintLine	( nDocID,  1,"");
 					//Absatz
-					Doc_PrintLines	( nDocID,  1,"¯ó³æ i wiedza nie id¹ w parze i s¹ jako ogieñ i woda. Dlatego mêdrzec potrafi nad ¿ó³ci¹ panowaæ, by nie prowadzi³a go do awanturnictwa i inszych ekscesów. Tylko ten, co w pe³ni doceni boski dar ¿ycia, w pe³ni to ¿ycie wykorzysta.");
+					Doc_PrintLines	( nDocID,  1,"Å»Ã³Å‚Ä‡ i wiedza nie idÄ… w parze i sÄ… jako ogieÅ„ i woda. Dlatego mÄ™drzec potrafi nad Å¼Ã³Å‚ciÄ… panowaÄ‡, by nie prowadziÅ‚a go do awanturnictwa i inszych ekscesÃ³w. Tylko ten, co w peÅ‚ni doceni boski dar Å¼ycia, w peÅ‚ni to Å¼ycie wykorzysta.");
 					Doc_Show		( nDocID );
 	};
 /******************************************************************************************/
@@ -1456,16 +1456,16 @@ INSTANCE Rezepturen2 (C_ITEM)
 					Doc_PrintLines	( nDocID,  0,"Wino zapomnienia");
 					Doc_PrintLine	( nDocID,  0,"--------------------");
 						Doc_PrintLine	( nDocID,  0,"");			
-					Doc_PrintLines	( nDocID,  0,"Najzacniejsze winogrona najdziecie na wysokich zboczach Archolos. Sztuka dojrzewania winnych kiœci le¿y w niezak³ócaniu ich spokoju. Teraz dodaæ jeno w³aœciwych zió³ i czekaæ na efekty.");
+					Doc_PrintLines	( nDocID,  0,"Najzacniejsze winogrona najdziecie na wysokich zboczach Archolos. Sztuka dojrzewania winnych kiÅ›ci leÅ¼y w niezakÅ‚Ã³caniu ich spokoju. Teraz dodaÄ‡ jeno wÅ‚aÅ›ciwych ziÃ³Å‚ i czekaÄ‡ na efekty.");
 
 					//2.Seite
-					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den Ränder des TGAs aus, links,oben,rechts,unten)
+					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den RÃ¤nder des TGAs aus, links,oben,rechts,unten)
 					Doc_PrintLine	( nDocID,  1,"");
 					Doc_PrintLines	( nDocID,  1,"");
 					Doc_PrintLine	( nDocID,  1,"");
 					Doc_PrintLine	( nDocID,  1,"");
 					//Absatz
-					Doc_PrintLines	( nDocID,  1,"Tak oto prawdziwy mistrz zamienia wodê ze studni w zacne wino. Ludzie raduj¹ siê, chwal¹ jego dzie³o. A mistrz dalej dzia³a w zgodzie z Natur¹, czerpi¹c z tego, co ona mu hojn¹ rêk¹ udziela.");
+					Doc_PrintLines	( nDocID,  1,"Tak oto prawdziwy mistrz zamienia wodÄ™ ze studni w zacne wino. Ludzie radujÄ… siÄ™, chwalÄ… jego dzieÅ‚o. A mistrz dalej dziaÅ‚a w zgodzie z NaturÄ…, czerpiÄ…c z tego, co ona mu hojnÄ… rÄ™kÄ… udziela.");
 					Doc_Show		( nDocID );
 	};
 /******************************************************************************************/
@@ -1485,7 +1485,7 @@ INSTANCE TagebuchOT (C_Item)
 
 	scemeName				=	"MAP";
 	description			= "Dziennik";
-	TEXT[0]				= "Stara, zniszczona ksiêga.";
+	TEXT[0]				= "Stara, zniszczona ksiÄ™ga.";
 	////COUNT[0]			= ;
 	TEXT[1]				= "Brakuje kilku kartek.";
 	////COUNT[1]			= ;
@@ -1514,34 +1514,34 @@ INSTANCE TagebuchOT (C_Item)
 					//1.Seite	
   					Doc_SetFont 		( nDocID, -1, "font_15_book.tga"); 	// -1 -> all pages 
 					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1);  //  0 -> margins are in pixels
-					Doc_PrintLine		( nDocID,  0,"Dzieñ 23");
+					Doc_PrintLine		( nDocID,  0,"DzieÅ„ 23");
 					Doc_SetFont 		( nDocID, -1, "font_10_book.tga");
-					Doc_PrintLines	( nDocID,  0,"Zatraci³em ju¿ poczucie czasu.");
-					Doc_PrintLines	( nDocID,  0,"Zdaje siê, ¿e minê³y co najmniej 23 dni od chwili, gdy zostaliœmy schwytani przez orków i zmuszeni do pracy.");
-					Doc_PrintLines	( nDocID,  0,"Te pod³e istoty nie znaj¹ litoœci! S³absi z nas po prostu padaj¹ na ziemiê i ju¿ siê nie podnosz¹!");
-					Doc_PrintLines	( nDocID,  0,"Ucieknê st¹d, niewa¿ne jak!");
+					Doc_PrintLines	( nDocID,  0,"ZatraciÅ‚em juÅ¼ poczucie czasu.");
+					Doc_PrintLines	( nDocID,  0,"Zdaje siÄ™, Å¼e minÄ™Å‚y co najmniej 23 dni od chwili, gdy zostaliÅ›my schwytani przez orkÃ³w i zmuszeni do pracy.");
+					Doc_PrintLines	( nDocID,  0,"Te podÅ‚e istoty nie znajÄ… litoÅ›ci! SÅ‚absi z nas po prostu padajÄ… na ziemiÄ™ i juÅ¼ siÄ™ nie podnoszÄ…!");
+					Doc_PrintLines	( nDocID,  0,"UcieknÄ™ stÄ…d, niewaÅ¼ne jak!");
 					Doc_PrintLine		( nDocID,  0,"");
 					Doc_SetFont 		( nDocID, -1, "font_15_book.tga"); 	// -1 -> all pages 
 					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1);  //  0 -> margins are in pixels
-					Doc_PrintLine		( nDocID,  0,"Dzieñ 28");
+					Doc_PrintLine		( nDocID,  0,"DzieÅ„ 28");
 					Doc_SetFont 		( nDocID, -1, "font_10_book.tga");
-					Doc_PrintLines	( nDocID,  0,"Kazali nam kopaæ jeszcze dalej, w g³¹b góry.");
-					Doc_PrintLines	( nDocID,  0,"Przednia czêœæ jest ju¿ gigantyczna. Ciekawe, czemu to wszystko ma s³u¿yæ?");
+					Doc_PrintLines	( nDocID,  0,"Kazali nam kopaÄ‡ jeszcze dalej, w gÅ‚Ä…b gÃ³ry.");
+					Doc_PrintLines	( nDocID,  0,"Przednia czÄ™Å›Ä‡ jest juÅ¼ gigantyczna. Ciekawe, czemu to wszystko ma sÅ‚uÅ¼yÄ‡?");
 
 					//1.Seite	
   					Doc_SetFont 		( nDocID, -1, "font_15_book.tga"); 	// -1 -> all pages 
 					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1); //  0 -> margins are in pixels
-					Doc_PrintLine		( nDocID,  1,"Dzieñ 67");
+					Doc_PrintLine		( nDocID,  1,"DzieÅ„ 67");
 					Doc_SetFont 		( nDocID, -1, "font_10_book.tga");
-					Doc_PrintLines	( nDocID,  1,"Podobno ci orkowi kap³ani nie maj¹ serc. Jeœli to prawda, jakim cudem nadal siê poruszaj¹?");
-					Doc_PrintLines	( nDocID,  1,"Widzia³em miecz, którego tak bardzo siê boj¹. Gdyby uda³o mi siê go zdobyæ, ju¿ ja bym im pokaza³...");
+					Doc_PrintLines	( nDocID,  1,"Podobno ci orkowi kapÅ‚ani nie majÄ… serc. JeÅ›li to prawda, jakim cudem nadal siÄ™ poruszajÄ…?");
+					Doc_PrintLines	( nDocID,  1,"WidziaÅ‚em miecz, ktÃ³rego tak bardzo siÄ™ bojÄ…. Gdyby udaÅ‚o mi siÄ™ go zdobyÄ‡, juÅ¼ ja bym im pokazaÅ‚...");
 					Doc_PrintLine		( nDocID,  1,"");
 					Doc_SetFont 		( nDocID, -1, "font_15_book.tga"); 	// -1 -> all pages 
 					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1);   //  0 -> margins are in pixels
-					Doc_PrintLine		( nDocID,  1,"Dzieñ 78");
+					Doc_PrintLine		( nDocID,  1,"DzieÅ„ 78");
 					Doc_SetFont 		( nDocID, -1, "font_10_book.tga");
-					Doc_PrintLines	( nDocID,  1,"Miecz spoczywa w przedniej komorze œwi¹tyni, ale bezustannie strze¿e go jeden z kap³anów.");
-					Doc_PrintLines	( nDocID,  1,"Zamierzam st¹d uciec. Zostawiê tu mój pamiêtnik, mo¿e komuœ siê jeszcze przyda.");
+					Doc_PrintLines	( nDocID,  1,"Miecz spoczywa w przedniej komorze Å›wiÄ…tyni, ale bezustannie strzeÅ¼e go jeden z kapÅ‚anÃ³w.");
+					Doc_PrintLines	( nDocID,  1,"Zamierzam stÄ…d uciec. ZostawiÄ™ tu mÃ³j pamiÄ™tnik, moÅ¼e komuÅ› siÄ™ jeszcze przyda.");
 					Doc_Show		( nDocID );
 };
 
@@ -1586,17 +1586,17 @@ INSTANCE ItWr_Bloodfly_01(C_Item)
 					Doc_SetFont 	( nDocID, -1, "font_10_book.TGA"	   			); 	// -1 -> all pages 
 					Doc_PrintLine	( nDocID,  0,"O krwiopijcach");
 					Doc_PrintLine	( nDocID,  0,"");
-					Doc_PrintLines	( nDocID,  0,"Ale w miejscu, gdzie grunt jest podmok³y a powietrze wilgotne, krwiopijcy zbieraj¹ siê stadami, zwabione zapachem potu ¿ywych istot. Swoimi ¿¹d³ami uœmiercaj¹ ofiary i ucztuj¹ na ich krwi.");
+					Doc_PrintLines	( nDocID,  0,"Ale w miejscu, gdzie grunt jest podmokÅ‚y a powietrze wilgotne, krwiopijcy zbierajÄ… siÄ™ stadami, zwabione zapachem potu Å¼ywych istot. Swoimi Å¼Ä…dÅ‚ami uÅ›miercajÄ… ofiary i ucztujÄ… na ich krwi.");
 					Doc_PrintLine	( nDocID,  0,"");
 					
 
 					//2.Seite
-					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den Ränder des TGAs aus, links,oben,rechts,unten)
+					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den RÃ¤nder des TGAs aus, links,oben,rechts,unten)
 					Doc_PrintLine	( nDocID,  1,"");
 					Doc_PrintLine	( nDocID,  1,"");
 					Doc_PrintLine	( nDocID,  1,"");
 					Doc_PrintLine	( nDocID,  1,"");
-					Doc_PrintLines	( nDocID,  1,"Myœliwi z bagien nauczyli siê pozyskiwaæ ¿¹d³a tych drapie¿ców. W tym celu nacinaj¹ wnêtrznoœci krwiopijców i usuwaj¹ ostro¿nie ¿¹d³o wraz z otaczaj¹c¹ je tkank¹. Nastêpnie zeskrobuj¹ niejadalne miêso...");	
+					Doc_PrintLines	( nDocID,  1,"MyÅ›liwi z bagien nauczyli siÄ™ pozyskiwaÄ‡ Å¼Ä…dÅ‚a tych drapieÅ¼cÃ³w. W tym celu nacinajÄ… wnÄ™trznoÅ›ci krwiopijcÃ³w i usuwajÄ… ostroÅ¼nie Å¼Ä…dÅ‚o wraz z otaczajÄ…cÄ… je tkankÄ…. NastÄ™pnie zeskrobujÄ… niejadalne miÄ™so...");	
 					Doc_PrintLine	( nDocID,  1,"");
 					Doc_PrintLine	( nDocID,  1,"");
 					Doc_Show		( nDocID );
@@ -1605,7 +1605,7 @@ INSTANCE ItWr_Bloodfly_01(C_Item)
 					{
 					Knows_GetBFSting = TRUE;
 					Log_CreateTopic (GE_AnimalTrophies,LOG_NOTE);
-					B_LogEntry (GE_AnimalTrophies,"Usuwanie ¿¹de³ krwiopijców");	
-					PrintScreen	("Nowa umiejêtnoœæ: Usuwanie ¿¹de³ krwiopijców", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
+					B_LogEntry (GE_AnimalTrophies,"Usuwanie Å¼Ä…deÅ‚ krwiopijcÃ³w");	
+					PrintScreen	("Nowa umiejÄ™tnoÅ›Ä‡: Usuwanie Å¼Ä…deÅ‚ krwiopijcÃ³w", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
 					};
 	};

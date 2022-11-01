@@ -7,7 +7,7 @@
 //#####################################################################
 
 //---------------------------------------------------------------------
-//	Buch über Golems
+//	Buch Ã¼ber Golems
 //---------------------------------------------------------------------
 INSTANCE ItWr_GolemBook1(C_Item)
 {	
@@ -40,18 +40,18 @@ INSTANCE ItWr_GolemBook1(C_Item)
 		Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1);  //  0 -> margins are in pixels
 		Doc_PrintLine	( nDocID,  0,"ARCANUM GOLUM - Tom I");
 		Doc_PrintLine	( nDocID,  0, "=====================");
-		Doc_PrintLines	( nDocID,  0,"(Magia Golemów)");
+		Doc_PrintLines	( nDocID,  0,"(Magia GolemÃ³w)");
 		Doc_PrintLine	( nDocID,  0, "");
-		Doc_PrintLines	( nDocID,  0,"Tylko ktoœ, kto choæ raz stawi³ czo³a ucieleœnieniu ¿ywio³ów, jakim jest Golem, zrozumie lêk i respekt, jaki istoty te budz¹ wœród najmê¿niejszych nawet podró¿ników.");
+		Doc_PrintLines	( nDocID,  0,"Tylko ktoÅ›, kto choÄ‡ raz stawiÅ‚ czoÅ‚a ucieleÅ›nieniu Å¼ywioÅ‚Ã³w, jakim jest Golem, zrozumie lÄ™k i respekt, jaki istoty te budzÄ… wÅ›rÃ³d najmÄ™Å¼niejszych nawet podrÃ³Å¼nikÃ³w.");
 		Doc_PrintLine	( nDocID,  0, "");
 
 		//2.Seite
-		Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1);  //  0 -> margins are in pixels (Position des Textes von den Ränder des TGAs aus, links,oben,rechts,unten)
+		Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1);  //  0 -> margins are in pixels (Position des Textes von den RÃ¤nder des TGAs aus, links,oben,rechts,unten)
 		Doc_PrintLine	( nDocID,  1,"Kamienny Golem");
 		Doc_PrintLine	( nDocID,  1,"--------------");
-		Doc_PrintLines	( nDocID,  1,"Te kamienne kolosy s¹ niemal niezniszczalne. ¯aden miecz, topór czy ³uk nie jest w stanie wyrz¹dziæ im powa¿niejszej krzywdy.");
+		Doc_PrintLines	( nDocID,  1,"Te kamienne kolosy sÄ… niemal niezniszczalne. Å»aden miecz, topÃ³r czy Å‚uk nie jest w stanie wyrzÄ…dziÄ‡ im powaÅ¼niejszej krzywdy.");
 		Doc_PrintLine	( nDocID,  1, "");
-		Doc_PrintLines	( nDocID,  1,"Jedyne doniesienia o zwyciêskiej walce stoczonej z Golemem pochodz¹ z zapisków bezimiennego najemnika. Opisa³ on jak potê¿nymi ciosami wojennego m³ota uda³o mu siê rozbiæ potê¿nego nieprzyjaciela w drobny py³.");
+		Doc_PrintLines	( nDocID,  1,"Jedyne doniesienia o zwyciÄ™skiej walce stoczonej z Golemem pochodzÄ… z zapiskÃ³w bezimiennego najemnika. OpisaÅ‚ on jak potÄ™Å¼nymi ciosami wojennego mÅ‚ota udaÅ‚o mu siÄ™ rozbiÄ‡ potÄ™Å¼nego nieprzyjaciela w drobny pyÅ‚.");
 
 		Doc_Show		( nDocID );
 	};
@@ -91,17 +91,17 @@ INSTANCE ItWr_GolemBook2(C_Item)
 		Doc_PrintLine	( nDocID,  0, "");
 		Doc_PrintLine	( nDocID,  0,"Lodowy Golem");
 		Doc_PrintLine	( nDocID,  0,"---------");
-		Doc_PrintLines	( nDocID,  0,"Lodowe Golemy przypominaj¹ trochê swych kamiennych krewniaków i s¹ równie niebezpieczne. Zwyczajna broñ zeœlizguje siê po ich lodowej powierzchni, nie wyrz¹dzaj¹c im najmniejszych szkód.");
-		Doc_PrintLines	( nDocID,  0,"Podró¿nik, który stanie oko w oko z takow¹ besti¹ musi baczyæ na lodowaty dech stwora, jeœli nie chce zostaæ zamienionym w sopel lodu.");
+		Doc_PrintLines	( nDocID,  0,"Lodowe Golemy przypominajÄ… trochÄ™ swych kamiennych krewniakÃ³w i sÄ… rÃ³wnie niebezpieczne. Zwyczajna broÅ„ zeÅ›lizguje siÄ™ po ich lodowej powierzchni, nie wyrzÄ…dzajÄ…c im najmniejszych szkÃ³d.");
+		Doc_PrintLines	( nDocID,  0,"PodrÃ³Å¼nik, ktÃ³ry stanie oko w oko z takowÄ… bestiÄ… musi baczyÄ‡ na lodowaty dech stwora, jeÅ›li nie chce zostaÄ‡ zamienionym w sopel lodu.");
 
 		//2.Seite
-		Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1);  //  0 -> margins are in pixels (Position des Textes von den Ränder des TGAs aus, links,oben,rechts,unten)
-		Doc_PrintLines	( nDocID,  1,"Powszechnie znany jest dokument, w którym jeden z Magów Ognia opisuje swoj¹ potyczkê z lodowym Golemem. Co ciekawe, zdaniem maga, walka nie nastrêcza³a mu zbytnich trudnoœci.");
+		Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1);  //  0 -> margins are in pixels (Position des Textes von den RÃ¤nder des TGAs aus, links,oben,rechts,unten)
+		Doc_PrintLines	( nDocID,  1,"Powszechnie znany jest dokument, w ktÃ³rym jeden z MagÃ³w Ognia opisuje swojÄ… potyczkÄ™ z lodowym Golemem. Co ciekawe, zdaniem maga, walka nie nastrÄ™czaÅ‚a mu zbytnich trudnoÅ›ci.");
 		Doc_PrintLine	( nDocID,  1, "");
 		Doc_PrintLine	( nDocID,  1,"Ognisty Golem");
 		Doc_PrintLine	( nDocID,  1,"-------------");
-		Doc_PrintLines	( nDocID,  1,"Wed³ug dawnych doniesieñ, golemy ognia obdarzone s¹ parz¹cym dotykiem o niszczycielskiej sile.");
-		Doc_PrintLines	( nDocID,  1,"Kilka lat temu grupa myœliwych stawi³a czo³a jednemu z owych potworów, i choæ wynik starcia pozostaje nieznany, mówi siê, ¿e ogniste golemy podatne s¹ na zaklêcia b³yskawic i zimna.");
+		Doc_PrintLines	( nDocID,  1,"WedÅ‚ug dawnych doniesieÅ„, golemy ognia obdarzone sÄ… parzÄ…cym dotykiem o niszczycielskiej sile.");
+		Doc_PrintLines	( nDocID,  1,"Kilka lat temu grupa myÅ›liwych stawiÅ‚a czoÅ‚a jednemu z owych potworÃ³w, i choÄ‡ wynik starcia pozostaje nieznany, mÃ³wi siÄ™, Å¼e ogniste golemy podatne sÄ… na zaklÄ™cia bÅ‚yskawic i zimna.");
 		Doc_Show		( nDocID );
 	};
 
@@ -123,9 +123,9 @@ INSTANCE ItWrWorldmap_Orc(C_Item)
 	scemeName				=	"MAP";	
 	on_state[0]				=	UseWorldmap_Orc;
 
-	description				= "Mapa kolonii (uzupe³niona)";
-	TEXT[0]					= "Szaman Ur-Shak uzupe³ni³ mapê";
-	TEXT[1]					= "o terytoria nale¿¹ce do orków!";
+	description				= "Mapa kolonii (uzupeÅ‚niona)";
+	TEXT[0]					= "Szaman Ur-Shak uzupeÅ‚niÅ‚ mapÄ™";
+	TEXT[1]					= "o terytoria naleÅ¼Ä…ce do orkÃ³w!";
 	TEXT[5]					= NAME_Value;
 	COUNT[5]				= value;
 };
@@ -141,7 +141,7 @@ INSTANCE ItWrWorldmap_Orc(C_Item)
 					Doc_Show		( nDocID 	);
 	};
 //---------------------------------------------------------------------
-//	Schlüssel zur Freien Mine
+//	SchlÃ¼ssel zur Freien Mine
 //---------------------------------------------------------------------
 INSTANCE ItKe_Freemine(C_Item)
 {	
@@ -170,11 +170,11 @@ INSTANCE ItKe_Freemine(C_Item)
 };
 
 //---------------------------------------------------------------------
-//	Medizin für den verwundeten Orc in der Freien Mine
+//	Medizin fÃ¼r den verwundeten Orc in der Freien Mine
 //---------------------------------------------------------------------
 INSTANCE	OrcMedicine(C_ITEM)
 {
-	name 				= "Lekarstwo orków";
+	name 				= "Lekarstwo orkÃ³w";
 
 	mainflag 			= ITEM_KAT_POTIONS;
 	flags 				= ITEM_MISSION;
@@ -226,9 +226,9 @@ INSTANCE UluMulu(C_Item)
 	material 		=	MAT_METAL;
 	
 	description		=	name;
-	TEXT[0]			=	"Ulu-Mulu œwiadczy o wielkiej sile i odwadze";
-	TEXT[1]			=	"posiadacza. Wojownik, który nosi ten amulet";
-	TEXT[2]			=	"nie musi siê obawiaæ ataku ze strony orków!";
+	TEXT[0]			=	"Ulu-Mulu Å›wiadczy o wielkiej sile i odwadze";
+	TEXT[1]			=	"posiadacza. Wojownik, ktÃ³ry nosi ten amulet";
+	TEXT[2]			=	"nie musi siÄ™ obawiaÄ‡ ataku ze strony orkÃ³w!";
 	TEXT[3]			=	NAME_Damage;			COUNT[3]	= damageTotal;
 	TEXT[4] 		=	NAME_Str_needed;		COUNT[4]	= cond_value[2];
 	TEXT[5]			=	NAME_Value; 			COUNT[5]	= value;

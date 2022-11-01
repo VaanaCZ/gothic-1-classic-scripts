@@ -23,7 +23,7 @@ FUNC VOID  DIA_Rodriguez_Exit_Info()
 };
 
 //***********************************************
-//				Hallo und tschüß
+//				Hallo und tschÃ¼ÃŸ
 //***********************************************
 
 instance  DIA_Rodriguez_Hello (C_INFO)
@@ -33,7 +33,7 @@ instance  DIA_Rodriguez_Hello (C_INFO)
 	condition	=  DIA_Rodriguez_Hello_Condition;
 	information	=  DIA_Rodriguez_Hello_Info;
 	permanent	=  1;
-	description =  "Szukam Arcymistrza Magów Ognia!";
+	description =  "Szukam Arcymistrza MagÃ³w Ognia!";
 };                       
 
 FUNC int  DIA_Rodriguez_Hello_Condition()
@@ -46,7 +46,7 @@ FUNC int  DIA_Rodriguez_Hello_Condition()
 
 FUNC VOID  DIA_Rodriguez_Hello_Info()
 {
-	AI_Output (other, self,"DIA_Rodriguez_Hello_15_00"); //Szukam Arcymistrza Magów Ognia!
-	AI_Output (self, other,"DIA_Rodriguez_Hello_12_01"); //Zg³oœ siê do Miltena. On siê zajmuje kurierami.
+	AI_Output (other, self,"DIA_Rodriguez_Hello_15_00"); //Szukam Arcymistrza MagÃ³w Ognia!
+	AI_Output (self, other,"DIA_Rodriguez_Hello_12_01"); //ZgÅ‚oÅ› siÄ™ do Miltena. On siÄ™ zajmuje kurierami.
 	AI_StopProcessInfos	( self );
 };

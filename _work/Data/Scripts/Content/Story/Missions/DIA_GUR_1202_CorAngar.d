@@ -29,7 +29,7 @@ FUNC VOID DIA_GUR_1202_CorAngar_Exit_Info()
 };
 
 // ************************	
-//		Später Trainer 
+//		SpÃ¤ter Trainer 
 // ************************
 
 instance DIA_CorAngar_LaterTrainer (C_INFO)
@@ -39,7 +39,7 @@ instance DIA_CorAngar_LaterTrainer (C_INFO)
 	condition	= DIA_CorAngar_LaterTrainer_Condition;
 	information	= DIA_CorAngar_LaterTrainer_Info;
 	permanent	= 0;
-	description = "Mo¿esz mnie czegoœ nauczyæ?";
+	description = "MoÅ¼esz mnie czegoÅ› nauczyÄ‡?";
 };                       
 
 FUNC int DIA_CorAngar_LaterTrainer_Condition()
@@ -49,10 +49,10 @@ FUNC int DIA_CorAngar_LaterTrainer_Condition()
 
 FUNC VOID DIA_CorAngar_LaterTrainer_Info()
 {
-	AI_Output(other,self,"GUR_1202_CorAngar_LaterTrainer_15_00"); //Mo¿esz mnie czegoœ nauczyæ?
-	AI_Output(self,other,"GUR_1202_CorAngar_LaterTrainer_08_01"); //Chcesz zostaæ silnym wojownikiem, wiêc szukasz mistrza, który wska¿e ci drogê.
-	AI_Output(self,other,"GUR_1202_CorAngar_LaterTrainer_08_02"); //To chwalebne, ale ja nie mogê ci pomóc.
-	AI_Output(self,other,"GUR_1202_CorAngar_LaterTrainer_08_03"); //Poœwiêcam mój czas tylko cz³onkom Wielkiego Krêgu Stra¿y Œwi¹tynnej.
+	AI_Output(other,self,"GUR_1202_CorAngar_LaterTrainer_15_00"); //MoÅ¼esz mnie czegoÅ› nauczyÄ‡?
+	AI_Output(self,other,"GUR_1202_CorAngar_LaterTrainer_08_01"); //Chcesz zostaÄ‡ silnym wojownikiem, wiÄ™c szukasz mistrza, ktÃ³ry wskaÅ¼e ci drogÄ™.
+	AI_Output(self,other,"GUR_1202_CorAngar_LaterTrainer_08_02"); //To chwalebne, ale ja nie mogÄ™ ci pomÃ³c.
+	AI_Output(self,other,"GUR_1202_CorAngar_LaterTrainer_08_03"); //PoÅ›wiÄ™cam mÃ³j czas tylko czÅ‚onkom Wielkiego KrÄ™gu StraÅ¼y ÅšwiÄ…tynnej.
 };
 
 // ************************	
@@ -66,7 +66,7 @@ instance DIA_CorAngar_WieTempler (C_INFO)
 	condition	= DIA_CorAngar_WieTempler_Condition;
 	information	= DIA_CorAngar_WieTempler_Info;
 	permanent	= 1;
-	description = "Co mam zrobiæ, ¿eby zostaæ Œwi¹tynnym Stra¿nikiem?";
+	description = "Co mam zrobiÄ‡, Å¼eby zostaÄ‡ ÅšwiÄ…tynnym StraÅ¼nikiem?";
 };                       
 
 FUNC int DIA_CorAngar_WieTempler_Condition()
@@ -79,9 +79,9 @@ FUNC int DIA_CorAngar_WieTempler_Condition()
 
 FUNC VOID DIA_CorAngar_WieTempler_Info()
 {
-	AI_Output(other,self,"GUR_1202_CorAngar_WieTempler_15_00"); //Co mam zrobiæ, ¿eby zostaæ Œwi¹tynnym Stra¿nikiem?
-	AI_Output(self,other,"GUR_1202_CorAngar_WieTempler_08_01"); //Najpierw musisz ods³u¿yæ swoje jako Nowicjusz, dopóki nie przekonamy siê, ¿e jesteœ oddanym s³ug¹ Œni¹cego.
-	AI_Output(self,other,"GUR_1202_CorAngar_WieTempler_08_02"); //Dopiero wtedy mo¿esz do mnie wróciæ, a ja udzielê ci lekcji.
+	AI_Output(other,self,"GUR_1202_CorAngar_WieTempler_15_00"); //Co mam zrobiÄ‡, Å¼eby zostaÄ‡ ÅšwiÄ…tynnym StraÅ¼nikiem?
+	AI_Output(self,other,"GUR_1202_CorAngar_WieTempler_08_01"); //Najpierw musisz odsÅ‚uÅ¼yÄ‡ swoje jako Nowicjusz, dopÃ³ki nie przekonamy siÄ™, Å¼e jesteÅ› oddanym sÅ‚ugÄ… ÅšniÄ…cego.
+	AI_Output(self,other,"GUR_1202_CorAngar_WieTempler_08_02"); //Dopiero wtedy moÅ¼esz do mnie wrÃ³ciÄ‡, a ja udzielÄ™ ci lekcji.
 	AI_StopProcessInfos	( self );
 };
 
@@ -92,7 +92,7 @@ FUNC VOID DIA_CorAngar_WieTempler_Info()
 /////////////////////////////////
 
 //-------------------------------------------------------------------------
-//							STÄRKE UND DEX STEIGERN
+//							STÃ„RKE UND DEX STEIGERN
 //-------------------------------------------------------------------------
 INSTANCE GUR_1202_CorAngar_Teach(C_INFO)
 {
@@ -101,7 +101,7 @@ INSTANCE GUR_1202_CorAngar_Teach(C_INFO)
 	condition	= GUR_1202_CorAngar_Teach_Condition;
 	information	= GUR_1202_CorAngar_Teach_Info;
 	permanent	= 1;
-	description = "Poka¿esz mi, jak poprawiæ moj¹ si³ê i zrêcznoœæ?";
+	description = "PokaÅ¼esz mi, jak poprawiÄ‡ mojÄ… siÅ‚Ä™ i zrÄ™cznoÅ›Ä‡?";
 };                       
 
 FUNC INT GUR_1202_CorAngar_Teach_Condition()
@@ -114,8 +114,8 @@ FUNC INT GUR_1202_CorAngar_Teach_Condition()
 
 FUNC VOID GUR_1202_CorAngar_Teach_Info()
 {
-	AI_Output(other,self,"GUR_1202_CorAngar_Teach_15_00"); //Poka¿esz mi, jak poprawiæ moj¹ si³ê i zrêcznoœæ?
-	AI_Output(self,other,"GUR_1202_CorAngar_Teach_08_01"); //Si³a i zrêcznoœæ to cechy wielkiego wojownika.
+	AI_Output(other,self,"GUR_1202_CorAngar_Teach_15_00"); //PokaÅ¼esz mi, jak poprawiÄ‡ mojÄ… siÅ‚Ä™ i zrÄ™cznoÅ›Ä‡?
+	AI_Output(self,other,"GUR_1202_CorAngar_Teach_08_01"); //SiÅ‚a i zrÄ™cznoÅ›Ä‡ to cechy wielkiego wojownika.
 	
 	Info_ClearChoices	(GUR_1202_CorAngar_Teach);
 	Info_AddChoice		(GUR_1202_CorAngar_Teach,DIALOG_BACK									,GUR_1202_CorAngar_Teach_BACK);
@@ -184,7 +184,7 @@ instance  GUR_1202_CorAngar_WANNABETPL (C_INFO)
 	information		= GUR_1202_CorAngar_WANNABETPL_Info;
 	important		= 0;
 	permanent		= 1;
-	description		= "Chcê zostaæ Œwi¹tynnym Stra¿nikiem!"; 
+	description		= "ChcÄ™ zostaÄ‡ ÅšwiÄ…tynnym StraÅ¼nikiem!"; 
 };
 
 FUNC int  GUR_1202_CorAngar_WANNABETPL_Condition()
@@ -198,29 +198,29 @@ FUNC int  GUR_1202_CorAngar_WANNABETPL_Condition()
 };
 FUNC void  GUR_1202_CorAngar_WANNABETPL_Info()
 {
-	AI_Output			(other, self,"GUR_1202_CorAngar_WANNABETPL_Info_15_01"); //Chcê zostaæ Œwi¹tynnym Stra¿nikiem!
+	AI_Output			(other, self,"GUR_1202_CorAngar_WANNABETPL_Info_15_01"); //ChcÄ™ zostaÄ‡ ÅšwiÄ…tynnym StraÅ¼nikiem!
 	
 	if	(hero.level < 10)
 	{ 
-		AI_Output		(self, other,"GUR_1202_CorAngar_WANNABETPL_Info_08_02"); //Nie jesteœ jeszcze gotowy. Mo¿esz do nas do³¹czyæ, kiedy zdobêdziesz nieco wiêcej doœwiadczenia.
+		AI_Output		(self, other,"GUR_1202_CorAngar_WANNABETPL_Info_08_02"); //Nie jesteÅ› jeszcze gotowy. MoÅ¼esz do nas doÅ‚Ä…czyÄ‡, kiedy zdobÄ™dziesz nieco wiÄ™cej doÅ›wiadczenia.
 	    GUR_1202_CorAngar_WANNABETPL.permanent = 1;
     }
     else if	(hero.level >= 10)
     {
-	    AI_Output		(self, other,"GUR_1202_CorAngar_WANNABETPL_Info_08_03"); //Nadszed³ dzieñ, w którym dane ci bêdzie do nas do³¹czyæ.
-		AI_Output		(self, other,"GUR_1202_CorAngar_WANNABETPL_Info_08_04"); //Pamiêtaj, ¿e Œwi¹tynny Stra¿nik to coœ wiêcej ni¿ wojownik strzeg¹cy obozu Bractwa. Jesteœmy wybranymi stra¿nikami wyznawców Œni¹cego. Bronimy duchowej aury tego miejsca.
-		AI_Output		(self, other,"GUR_1202_CorAngar_WANNABETPL_Info_08_05"); //Wykorzystujemy zarówno nasz¹ si³ê fizyczn¹ jak i duchow¹. Prawdziwym Stra¿nikiem Œwi¹tynnym mo¿e zostaæ tylko ten, którego cia³o i duch funkcjonuj¹ w idealnej harmonii.
-		AI_Output		(self, other,"GUR_1202_CorAngar_WANNABETPL_Info_08_06"); //Cieszê siê, ¿e uda³o ci siê osi¹gn¹æ tak wiele w tak krótkim czasie.
-		AI_Output		(self, other,"GUR_1202_CorAngar_WANNABETPL_Info_08_07"); //Pamiêtaj: Duchowa koncentracja i zdrowe cia³o sprostaj¹ ka¿demu wyzwaniu.
-		AI_Output		(self, other,"GUR_1202_CorAngar_WANNABETPL_Info_08_08"); //IdŸ teraz do Gor Na Totha. Znajdziesz go na placu treningowym. On da ci nowy pancerz.
+	    AI_Output		(self, other,"GUR_1202_CorAngar_WANNABETPL_Info_08_03"); //NadszedÅ‚ dzieÅ„, w ktÃ³rym dane ci bÄ™dzie do nas doÅ‚Ä…czyÄ‡.
+		AI_Output		(self, other,"GUR_1202_CorAngar_WANNABETPL_Info_08_04"); //PamiÄ™taj, Å¼e ÅšwiÄ…tynny StraÅ¼nik to coÅ› wiÄ™cej niÅ¼ wojownik strzegÄ…cy obozu Bractwa. JesteÅ›my wybranymi straÅ¼nikami wyznawcÃ³w ÅšniÄ…cego. Bronimy duchowej aury tego miejsca.
+		AI_Output		(self, other,"GUR_1202_CorAngar_WANNABETPL_Info_08_05"); //Wykorzystujemy zarÃ³wno naszÄ… siÅ‚Ä™ fizycznÄ… jak i duchowÄ…. Prawdziwym StraÅ¼nikiem ÅšwiÄ…tynnym moÅ¼e zostaÄ‡ tylko ten, ktÃ³rego ciaÅ‚o i duch funkcjonujÄ… w idealnej harmonii.
+		AI_Output		(self, other,"GUR_1202_CorAngar_WANNABETPL_Info_08_06"); //CieszÄ™ siÄ™, Å¼e udaÅ‚o ci siÄ™ osiÄ…gnÄ…Ä‡ tak wiele w tak krÃ³tkim czasie.
+		AI_Output		(self, other,"GUR_1202_CorAngar_WANNABETPL_Info_08_07"); //PamiÄ™taj: Duchowa koncentracja i zdrowe ciaÅ‚o sprostajÄ… kaÅ¼demu wyzwaniu.
+		AI_Output		(self, other,"GUR_1202_CorAngar_WANNABETPL_Info_08_08"); //IdÅº teraz do Gor Na Totha. Znajdziesz go na placu treningowym. On da ci nowy pancerz.
 		GUR_1202_CorAngar_WANNABETPL.permanent = 0;
 		Npc_SetTrueGuild(hero, GIL_TPL);
 		hero.guild = GIL_TPL;
 
 		Log_CreateTopic	(GE_BecomeTemplar,	LOG_NOTE);
-		B_LogEntry		(GE_BecomeTemplar,"Dziœ Cor Angar przyj¹³ mnie w poczet Stra¿y Œwi¹tynnej. Gor Na Toth ma mi wrêczyæ moj¹ now¹ zbrojê. Znajdê go przy placu treningowym.");
+		B_LogEntry		(GE_BecomeTemplar,"DziÅ› Cor Angar przyjÄ…Å‚ mnie w poczet StraÅ¼y ÅšwiÄ…tynnej. Gor Na Toth ma mi wrÄ™czyÄ‡ mojÄ… nowÄ… zbrojÄ™. ZnajdÄ™ go przy placu treningowym.");
 		Log_CreateTopic	(GE_TeacherPSI,		LOG_NOTE);
-		B_LogEntry		(GE_TeacherPSI,"Cor Angar pomo¿e mi rozwin¹æ moj¹ si³ê, zrêcznoœæ i walkê dwurêcznym orê¿em - to ostatnie dopiero, gdy nauczê siê pos³ugiwaæ broni¹ jednorêczn¹. Zwykle przebywa na placu treningowym Œwi¹tynnej Stra¿y, na górnym poziomie obozu.");
+		B_LogEntry		(GE_TeacherPSI,"Cor Angar pomoÅ¼e mi rozwinÄ…Ä‡ mojÄ… siÅ‚Ä™, zrÄ™cznoÅ›Ä‡ i walkÄ™ dwurÄ™cznym orÄ™Å¼em - to ostatnie dopiero, gdy nauczÄ™ siÄ™ posÅ‚ugiwaÄ‡ broniÄ… jednorÄ™cznÄ…. Zwykle przebywa na placu treningowym ÅšwiÄ…tynnej StraÅ¼y, na gÃ³rnym poziomie obozu.");
 	};
 
 };
@@ -250,14 +250,14 @@ FUNC int  GUR_1202_CorAngar_ZWEIHAND1_Condition()
 };
 FUNC void  GUR_1202_CorAngar_ZWEIHAND1_Info()
 {
-	AI_Output			(other, self,"GUR_1202_CorAngar_ZWEIHAND1_Info_15_01"); //Chcia³bym potrafiæ pos³ugiwaæ siê dwurêcznym mieczem.
+	AI_Output			(other, self,"GUR_1202_CorAngar_ZWEIHAND1_Info_15_01"); //ChciaÅ‚bym potrafiÄ‡ posÅ‚ugiwaÄ‡ siÄ™ dwurÄ™cznym mieczem.
 	
 	if (B_GiveSkill(other,NPC_TALENT_2H , 1, LPCOST_TALENT_2H_1))
 	{
-		AI_Output			(self, other,"GUR_1202_CorAngar_ZWEIHAND1_Info_08_02"); //Walka dwurêcznym orê¿em stanowi powa¿ne wyzwanie dla twojej si³y i zrêcznoœci.
-		AI_Output			(self, other,"GUR_1202_CorAngar_ZWEIHAND1_Info_08_03"); //Aby móc sprawnie pos³ugiwaæ siê dwurêczna broni¹ musisz nie tylko rozwijaæ swoje cia³o, ale równie¿ i umys³.
-		AI_Output			(self, other,"GUR_1202_CorAngar_ZWEIHAND1_Info_08_04"); //Tylko pe³na kontrola nad cia³em i umys³em pozwoli ci rozwijaæ swoje umiejêtnoœci.
-		AI_Output			(self, other,"GUR_1202_CorAngar_ZWEIHAND1_Info_08_05"); //Koncentracja to podstawa. To ona jednoczy cia³o i umys³.
+		AI_Output			(self, other,"GUR_1202_CorAngar_ZWEIHAND1_Info_08_02"); //Walka dwurÄ™cznym orÄ™Å¼em stanowi powaÅ¼ne wyzwanie dla twojej siÅ‚y i zrÄ™cznoÅ›ci.
+		AI_Output			(self, other,"GUR_1202_CorAngar_ZWEIHAND1_Info_08_03"); //Aby mÃ³c sprawnie posÅ‚ugiwaÄ‡ siÄ™ dwurÄ™czna broniÄ… musisz nie tylko rozwijaÄ‡ swoje ciaÅ‚o, ale rÃ³wnieÅ¼ i umysÅ‚.
+		AI_Output			(self, other,"GUR_1202_CorAngar_ZWEIHAND1_Info_08_04"); //Tylko peÅ‚na kontrola nad ciaÅ‚em i umysÅ‚em pozwoli ci rozwijaÄ‡ swoje umiejÄ™tnoÅ›ci.
+		AI_Output			(self, other,"GUR_1202_CorAngar_ZWEIHAND1_Info_08_05"); //Koncentracja to podstawa. To ona jednoczy ciaÅ‚o i umysÅ‚.
 
 		GUR_1202_CorAngar_ZWEIHAND1.permanent		= 0;
 
@@ -289,17 +289,17 @@ FUNC int  GUR_1202_CorAngar_ZWEIHAND2_Condition()
 };
 FUNC void  GUR_1202_CorAngar_ZWEIHAND2_Info()
 {
-	AI_Output			(other, self,"GUR_1202_CorAngar_ZWEIHAND2_Info_15_01");		//Chcia³bym dowiedzieæ siê czegoœ wiêcej o walce dwurêcznym orê¿em.
+	AI_Output			(other, self,"GUR_1202_CorAngar_ZWEIHAND2_Info_15_01");		//ChciaÅ‚bym dowiedzieÄ‡ siÄ™ czegoÅ› wiÄ™cej o walce dwurÄ™cznym orÄ™Å¼em.
 	
 	if (B_GiveSkill(other,NPC_TALENT_2H , 2, LPCOST_TALENT_2H_2))
 	{
-		AI_Output			(self, other,"GUR_1202_CorAngar_ZWEIHAND2_Info_08_02"); //Wiesz ju¿ jak zmusiæ ostrze swego miecza do tañca œmierci. Teraz poka¿ê ci jak wykorzystaæ twoje umiejêtnoœci w walce.
-		AI_Output			(self, other,"GUR_1202_CorAngar_ZWEIHAND2_Info_08_03"); //Oczyma duszy spróbuj przewidzieæ nastêpny ruch twojego przeciwnika.
-		AI_Output			(self, other,"GUR_1202_CorAngar_ZWEIHAND2_Info_08_04"); //Poznanie sposobu walki nieprzyjaciela to ju¿ po³owa sukcesu.
-		AI_Output			(self, other,"GUR_1202_CorAngar_ZWEIHAND2_Info_08_05"); //B¹dŸ szybki, twoja ruchliwoœæ i p³ynnoœæ twoich ruchów powinny iœæ w parze z si³¹ i precyzj¹ twoich ciosów.
-		AI_Output			(self, other,"GUR_1202_CorAngar_ZWEIHAND2_Info_08_06"); //Naucz siê ignorowaæ ból. To twoja si³a ducha zadecyduje o ostatecznym wyniku starcia.
-		AI_Output			(self, other,"GUR_1202_CorAngar_ZWEIHAND2_Info_08_07"); //Zachowaj spokój. Zachowanie czystoœci umys³u i niezachwianej koncentracji przypieczêtuje twoje zwyciêstwo.
-		AI_Output			(self, other,"GUR_1202_CorAngar_ZWEIHAND2_Info_08_08"); //Rozs¹dnie wykorzystuj swoje umiejêtnoœci, i pamiêtaj: kto prowokuje walkê - ginie w walce. 
+		AI_Output			(self, other,"GUR_1202_CorAngar_ZWEIHAND2_Info_08_02"); //Wiesz juÅ¼ jak zmusiÄ‡ ostrze swego miecza do taÅ„ca Å›mierci. Teraz pokaÅ¼Ä™ ci jak wykorzystaÄ‡ twoje umiejÄ™tnoÅ›ci w walce.
+		AI_Output			(self, other,"GUR_1202_CorAngar_ZWEIHAND2_Info_08_03"); //Oczyma duszy sprÃ³buj przewidzieÄ‡ nastÄ™pny ruch twojego przeciwnika.
+		AI_Output			(self, other,"GUR_1202_CorAngar_ZWEIHAND2_Info_08_04"); //Poznanie sposobu walki nieprzyjaciela to juÅ¼ poÅ‚owa sukcesu.
+		AI_Output			(self, other,"GUR_1202_CorAngar_ZWEIHAND2_Info_08_05"); //BÄ…dÅº szybki, twoja ruchliwoÅ›Ä‡ i pÅ‚ynnoÅ›Ä‡ twoich ruchÃ³w powinny iÅ›Ä‡ w parze z siÅ‚Ä… i precyzjÄ… twoich ciosÃ³w.
+		AI_Output			(self, other,"GUR_1202_CorAngar_ZWEIHAND2_Info_08_06"); //Naucz siÄ™ ignorowaÄ‡ bÃ³l. To twoja siÅ‚a ducha zadecyduje o ostatecznym wyniku starcia.
+		AI_Output			(self, other,"GUR_1202_CorAngar_ZWEIHAND2_Info_08_07"); //Zachowaj spokÃ³j. Zachowanie czystoÅ›ci umysÅ‚u i niezachwianej koncentracji przypieczÄ™tuje twoje zwyciÄ™stwo.
+		AI_Output			(self, other,"GUR_1202_CorAngar_ZWEIHAND2_Info_08_08"); //RozsÄ…dnie wykorzystuj swoje umiejÄ™tnoÅ›ci, i pamiÄ™taj: kto prowokuje walkÄ™ - ginie w walce. 
 
 		GUR_1202_CorAngar_ZWEIHAND2.permanent = 0;
 
@@ -321,7 +321,7 @@ FUNC void  GUR_1202_CorAngar_ZWEIHAND2_Info()
 //#####################################################################
  
 // **************************************************************************
-// 				nach der großen Beschwörung
+// 				nach der groÃŸen BeschwÃ¶rung
 // **************************************************************************
 instance  GUR_1202_CorAngar_SENDS (C_INFO)
 {
@@ -330,7 +330,7 @@ instance  GUR_1202_CorAngar_SENDS (C_INFO)
 	information		= GUR_1202_CorAngar_SENDS_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Co siê stanie teraz?"; 
+	description		= "Co siÄ™ stanie teraz?"; 
 };
 
 FUNC int  GUR_1202_CorAngar_SENDS_Condition()
@@ -344,33 +344,33 @@ FUNC int  GUR_1202_CorAngar_SENDS_Condition()
 };
 FUNC void  GUR_1202_CorAngar_SENDS_Info()
 {
-	AI_Output			(other, self,"GUR_1202_CorAngar_SENDS_Info_15_01"); //Co siê stanie teraz?
-	AI_Output			(self, other,"GUR_1202_CorAngar_SENDS_Info_08_02"); //Wizja by³a bardzo mglista. Zamiast odpowiedzi da³a nam jeszcze wiêcej pytañ.
-	AI_Output			(self, other,"GUR_1202_CorAngar_SENDS_Info_08_03"); //Ale jedna rzecz nie ulega w¹tpliwoœci: widzia³em Orka w jaskini. W pobli¿u znajduje siê opuszczone miejsce orkowego kultu.
-	AI_Output			(self, other,"GUR_1202_CorAngar_SENDS_Info_08_04"); //Orkowie chowali tam swoich zmar³ych, dlatego nazywamy ten labirynt jaskiñ Cmentarzyskiem Orków.
-	AI_Output			(self, other,"GUR_1202_CorAngar_SENDS_Info_08_05"); //Nasz Guru, Baal Lukor uda³ siê tam z oddzia³em Stra¿ników Œwi¹tynnych. Mo¿e znajd¹ coœ, co pozwoli nam wyjaœniæ znaczenie wizji.
-	AI_Output			(self, other,"GUR_1202_CorAngar_SENDS_Info_08_06"); //Przyda³by mi siê ktoœ, kto rozejrzy siê tam trochê i zda mi raport z sytuacji.
-	AI_Output			(other, self,"GUR_1202_CorAngar_SENDS_Info_15_07"); //Dlaczego nie pójdziesz tam sam? W koñcu jesteœ przywódc¹ Stra¿y Œwi¹tynnej!
-	AI_Output			(self, other,"GUR_1202_CorAngar_SENDS_Info_08_08"); //Moim zadaniem jest ochrona Jaœnie Oœwieconego. Muszê zostaæ na miejscu, ¿eby strzec Y'Beriona.
-	AI_Output			(self, other,"GUR_1202_CorAngar_SENDS_Info_08_09"); //Odda³eœ Obozowi nieocenione us³ugi. Tylko na tobie mogê polegaæ.
-	AI_Output			(self, other,"GUR_1202_CorAngar_SENDS_Info_08_10"); //Proszê, udaj siê na Cmentarzysko Orków i dostarcz mi informacji na temat odkryæ poczynionych przez Stra¿ników.
+	AI_Output			(other, self,"GUR_1202_CorAngar_SENDS_Info_15_01"); //Co siÄ™ stanie teraz?
+	AI_Output			(self, other,"GUR_1202_CorAngar_SENDS_Info_08_02"); //Wizja byÅ‚a bardzo mglista. Zamiast odpowiedzi daÅ‚a nam jeszcze wiÄ™cej pytaÅ„.
+	AI_Output			(self, other,"GUR_1202_CorAngar_SENDS_Info_08_03"); //Ale jedna rzecz nie ulega wÄ…tpliwoÅ›ci: widziaÅ‚em Orka w jaskini. W pobliÅ¼u znajduje siÄ™ opuszczone miejsce orkowego kultu.
+	AI_Output			(self, other,"GUR_1202_CorAngar_SENDS_Info_08_04"); //Orkowie chowali tam swoich zmarÅ‚ych, dlatego nazywamy ten labirynt jaskiÅ„ Cmentarzyskiem OrkÃ³w.
+	AI_Output			(self, other,"GUR_1202_CorAngar_SENDS_Info_08_05"); //Nasz Guru, Baal Lukor udaÅ‚ siÄ™ tam z oddziaÅ‚em StraÅ¼nikÃ³w ÅšwiÄ…tynnych. MoÅ¼e znajdÄ… coÅ›, co pozwoli nam wyjaÅ›niÄ‡ znaczenie wizji.
+	AI_Output			(self, other,"GUR_1202_CorAngar_SENDS_Info_08_06"); //PrzydaÅ‚by mi siÄ™ ktoÅ›, kto rozejrzy siÄ™ tam trochÄ™ i zda mi raport z sytuacji.
+	AI_Output			(other, self,"GUR_1202_CorAngar_SENDS_Info_15_07"); //Dlaczego nie pÃ³jdziesz tam sam? W koÅ„cu jesteÅ› przywÃ³dcÄ… StraÅ¼y ÅšwiÄ…tynnej!
+	AI_Output			(self, other,"GUR_1202_CorAngar_SENDS_Info_08_08"); //Moim zadaniem jest ochrona JaÅ›nie OÅ›wieconego. MuszÄ™ zostaÄ‡ na miejscu, Å¼eby strzec Y'Beriona.
+	AI_Output			(self, other,"GUR_1202_CorAngar_SENDS_Info_08_09"); //OddaÅ‚eÅ› Obozowi nieocenione usÅ‚ugi. Tylko na tobie mogÄ™ polegaÄ‡.
+	AI_Output			(self, other,"GUR_1202_CorAngar_SENDS_Info_08_10"); //ProszÄ™, udaj siÄ™ na Cmentarzysko OrkÃ³w i dostarcz mi informacji na temat odkryÄ‡ poczynionych przez StraÅ¼nikÃ³w.
 	
 	Info_ClearChoices	(GUR_1202_CorAngar_SENDS);
-	Info_AddChoice		(GUR_1202_CorAngar_SENDS,"A co dostanê w zamian?",	GUR_1202_CorAngar_SENDS_EARN);
-	Info_AddChoice		(GUR_1202_CorAngar_SENDS,"Natychmiast ruszê w drogê!",	GUR_1202_CorAngar_SENDS_KNOW);
+	Info_AddChoice		(GUR_1202_CorAngar_SENDS,"A co dostanÄ™ w zamian?",	GUR_1202_CorAngar_SENDS_EARN);
+	Info_AddChoice		(GUR_1202_CorAngar_SENDS,"Natychmiast ruszÄ™ w drogÄ™!",	GUR_1202_CorAngar_SENDS_KNOW);
 };  
 func void GUR_1202_CorAngar_SENDS_EARN()
 {
-	AI_Output			(other, self,"GUR_1202_CorAngar_SENDS_EARN_Info_15_01"); //A co dostanê w zamian?
-	AI_Output			(self, other,"GUR_1202_CorAngar_SENDS_EARN_Info_08_02"); //Chcesz rudy? Chyba jednak Ÿle ciê oceni³em. Ale potrzebujê twojej pomocy. Proszê, oto 100 bry³ek rudy. Wiêcej ode mnie nie dostaniesz!
+	AI_Output			(other, self,"GUR_1202_CorAngar_SENDS_EARN_Info_15_01"); //A co dostanÄ™ w zamian?
+	AI_Output			(self, other,"GUR_1202_CorAngar_SENDS_EARN_Info_08_02"); //Chcesz rudy? Chyba jednak Åºle ciÄ™ oceniÅ‚em. Ale potrzebujÄ™ twojej pomocy. ProszÄ™, oto 100 bryÅ‚ek rudy. WiÄ™cej ode mnie nie dostaniesz!
 	CreateInvItems		(self,ItMiNugget,100);
 	B_GiveInvItems      (self, hero, ItMiNugget,100);
 };
 
 func void GUR_1202_CorAngar_SENDS_KNOW()
 {
-	AI_Output			(other, self,"GUR_1202_CorAngar_SENDS_KNOW_Info_15_01"); //Natychmiast ruszê w drogê!
-	AI_Output			(self, other,"GUR_1202_CorAngar_SENDS_KNOW_Info_08_02"); //Zanim pójdziesz, weŸ ten pierœcieñ. Niech ciê chroni w walce.
+	AI_Output			(other, self,"GUR_1202_CorAngar_SENDS_KNOW_Info_15_01"); //Natychmiast ruszÄ™ w drogÄ™!
+	AI_Output			(self, other,"GUR_1202_CorAngar_SENDS_KNOW_Info_08_02"); //Zanim pÃ³jdziesz, weÅº ten pierÅ›cieÅ„. Niech ciÄ™ chroni w walce.
 	
 	B_Story_GotoOrcGraveyard();
 
@@ -386,7 +386,7 @@ instance  GUR_1202_CorAngar_WHERE (C_INFO)
 	information		= GUR_1202_CorAngar_WHERE_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Gdzie jest to Cmentarzysko Orków?"; 
+	description		= "Gdzie jest to Cmentarzysko OrkÃ³w?"; 
 };
 
 FUNC int  GUR_1202_CorAngar_WHERE_Condition()
@@ -399,10 +399,10 @@ FUNC int  GUR_1202_CorAngar_WHERE_Condition()
 };
 FUNC void  GUR_1202_CorAngar_WHERE_Info()
 {
-	AI_Output			(other, self,"GUR_1202_CorAngar_WHERE_Info_15_01"); //Gdzie jest to Cmentarzysko Orków?
-	AI_Output			(self, other,"GUR_1202_CorAngar_WHERE_Info_08_02"); //Niedaleko st¹d. Nowicjusz Talas wska¿e ci drogê. Znajdziesz go na œwi¹tynnym dziedziñcu. On bêdzie twoim przewodnikiem.
+	AI_Output			(other, self,"GUR_1202_CorAngar_WHERE_Info_15_01"); //Gdzie jest to Cmentarzysko OrkÃ³w?
+	AI_Output			(self, other,"GUR_1202_CorAngar_WHERE_Info_08_02"); //Niedaleko stÄ…d. Nowicjusz Talas wskaÅ¼e ci drogÄ™. Znajdziesz go na Å›wiÄ…tynnym dziedziÅ„cu. On bÄ™dzie twoim przewodnikiem.
 
-	B_LogEntry		(CH3_OrcGraveyard,"Nowicjusz Talas wska¿e mi drogê do cmentarzyska orków. Czeka na mnie na œwi¹tynnym dziedziñcu.");
+	B_LogEntry		(CH3_OrcGraveyard,"Nowicjusz Talas wskaÅ¼e mi drogÄ™ do cmentarzyska orkÃ³w. Czeka na mnie na Å›wiÄ…tynnym dziedziÅ„cu.");
 };  
 
 // **************************************************************************
@@ -415,7 +415,7 @@ instance  GUR_1202_CorAngar_AFTER (C_INFO)
 	information		= GUR_1202_CorAngar_AFTER_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "By³em na Cmentarzysku Orków."; 
+	description		= "ByÅ‚em na Cmentarzysku OrkÃ³w."; 
 };
 
 FUNC int  GUR_1202_CorAngar_AFTER_Condition()
@@ -430,18 +430,18 @@ FUNC int  GUR_1202_CorAngar_AFTER_Condition()
 FUNC void  GUR_1202_CorAngar_AFTER_Info()
 {
 	
-	AI_Output			(other, self,"GUR_1202_CorAngar_AFTER_Info_15_01"); //By³em na Cmentarzysku Orków. Tam NIC NIE MA. Ani Œni¹cego, ani znaku... Nic!
-	AI_Output			(self, other,"GUR_1202_CorAngar_AFTER_Info_08_02"); //A co z Baalem Lukorem i Stra¿nikami?
-	AI_Output			(other, self,"GUR_1202_CorAngar_AFTER_Info_15_03"); //Wszyscy zginêli.
-	AI_Output			(self, other,"GUR_1202_CorAngar_AFTER_Info_08_04"); //Zginêli? Ale dlaczego, co siê sta³o?
-	AI_Output			(other, self,"GUR_1202_CorAngar_AFTER_Info_15_05"); //W jaskiniach a¿ roi³o siê od Orków. Wybili Stra¿ Œwi¹tynn¹ do nogi.
-	AI_Output			(other, self,"GUR_1202_CorAngar_AFTER_Info_15_06"); //Tylko ja i Baal Lukor wyszliœmy z tego ca³o, ale nagle Baal postrada³ zmys³y.
-	AI_Output			(other, self,"GUR_1202_CorAngar_AFTER_Info_15_07"); //Wrzeszcza³, ¿e Œni¹cy kaza³ mu mnie zabiæ i zamierza³ wykonaæ to polecenie.
-	AI_Output			(self, other,"GUR_1202_CorAngar_AFTER_Info_08_08"); //NajwyraŸniej nie móg³ siê pogodziæ z niepowodzeniem swojej misji.
-	AI_Output			(self, other,"GUR_1202_CorAngar_AFTER_Info_08_09"); //Nie wierzê, ¿eby b³ogos³awiony wp³yw Œni¹cego móg³ go popchn¹æ do tak brutalnego dzia³ania.
-	AI_Output			(self, other,"GUR_1202_CorAngar_AFTER_Info_08_10"); //To nie mo¿e... Nie mo¿e... NIEWA¯NE!!!
-	AI_Output			(self, other,"GUR_1202_CorAngar_AFTER_Info_08_11"); //Najwa¿niejsze, ¿e zamiar Baala Lukora siê nie powiód³.
-	AI_Output			(self, other,"GUR_1202_CorAngar_AFTER_Info_08_12"); //Teraz nasz¹ jedyn¹ nadziej¹ jest Y'Berion.
+	AI_Output			(other, self,"GUR_1202_CorAngar_AFTER_Info_15_01"); //ByÅ‚em na Cmentarzysku OrkÃ³w. Tam NIC NIE MA. Ani ÅšniÄ…cego, ani znaku... Nic!
+	AI_Output			(self, other,"GUR_1202_CorAngar_AFTER_Info_08_02"); //A co z Baalem Lukorem i StraÅ¼nikami?
+	AI_Output			(other, self,"GUR_1202_CorAngar_AFTER_Info_15_03"); //Wszyscy zginÄ™li.
+	AI_Output			(self, other,"GUR_1202_CorAngar_AFTER_Info_08_04"); //ZginÄ™li? Ale dlaczego, co siÄ™ staÅ‚o?
+	AI_Output			(other, self,"GUR_1202_CorAngar_AFTER_Info_15_05"); //W jaskiniach aÅ¼ roiÅ‚o siÄ™ od OrkÃ³w. Wybili StraÅ¼ ÅšwiÄ…tynnÄ… do nogi.
+	AI_Output			(other, self,"GUR_1202_CorAngar_AFTER_Info_15_06"); //Tylko ja i Baal Lukor wyszliÅ›my z tego caÅ‚o, ale nagle Baal postradaÅ‚ zmysÅ‚y.
+	AI_Output			(other, self,"GUR_1202_CorAngar_AFTER_Info_15_07"); //WrzeszczaÅ‚, Å¼e ÅšniÄ…cy kazaÅ‚ mu mnie zabiÄ‡ i zamierzaÅ‚ wykonaÄ‡ to polecenie.
+	AI_Output			(self, other,"GUR_1202_CorAngar_AFTER_Info_08_08"); //NajwyraÅºniej nie mÃ³gÅ‚ siÄ™ pogodziÄ‡ z niepowodzeniem swojej misji.
+	AI_Output			(self, other,"GUR_1202_CorAngar_AFTER_Info_08_09"); //Nie wierzÄ™, Å¼eby bÅ‚ogosÅ‚awiony wpÅ‚yw ÅšniÄ…cego mÃ³gÅ‚ go popchnÄ…Ä‡ do tak brutalnego dziaÅ‚ania.
+	AI_Output			(self, other,"GUR_1202_CorAngar_AFTER_Info_08_10"); //To nie moÅ¼e... Nie moÅ¼e... NIEWAÅ»NE!!!
+	AI_Output			(self, other,"GUR_1202_CorAngar_AFTER_Info_08_11"); //NajwaÅ¼niejsze, Å¼e zamiar Baala Lukora siÄ™ nie powiÃ³dÅ‚.
+	AI_Output			(self, other,"GUR_1202_CorAngar_AFTER_Info_08_12"); //Teraz naszÄ… jedynÄ… nadziejÄ… jest Y'Berion.
 	 
 
 	B_GiveXP			(XP_ReportToCorAngar);
@@ -458,7 +458,7 @@ INSTANCE Info_CorAngar_FindHerb (C_INFO)
 	information	= Info_CorAngar_FindHerb_Info;
 	permanent	= 0;
 	important 	= 0;
-	description = "Co s³ychaæ u Jaœnie Oœwieconego?";
+	description = "Co sÅ‚ychaÄ‡ u JaÅ›nie OÅ›wieconego?";
 };
 
 func INT Info_CorAngar_FindHerb_Condition()
@@ -472,17 +472,17 @@ func INT Info_CorAngar_FindHerb_Condition()
 
 FUNC VOID Info_CorAngar_FindHerb_Info()
 {
-	AI_Output			(other, self,"Mis_3_NC_CorAngar_FindHerb_15_01"); //Co s³ychaæ u Jaœnie Oœwieconego?
-	AI_Output			(self, other,"Mis_3_NC_CorAngar_FindHerb_08_02"); //Nie budzi siê. I z godziny na godzinê jest co raz s³abszy. Wiem, jak mo¿na go zbudziæ, ale potrzebujê twojej pomocy.
-	AI_Output			(other, self,"Mis_3_NC_CorAngar_FindHerb_15_03"); //Co mam zrobiæ?
-	AI_Output			(self, other,"Mis_3_NC_CorAngar_FindHerb_08_04"); //Przynieœ mi piêæ najmocniejszych zió³ uzdrawiaj¹cych jakie mo¿na znaleŸæ na bagnach!
-	AI_Output			(self, other,"Mis_3_NC_CorAngar_FindHerb_08_05"); //Spiesz siê!
+	AI_Output			(other, self,"Mis_3_NC_CorAngar_FindHerb_15_01"); //Co sÅ‚ychaÄ‡ u JaÅ›nie OÅ›wieconego?
+	AI_Output			(self, other,"Mis_3_NC_CorAngar_FindHerb_08_02"); //Nie budzi siÄ™. I z godziny na godzinÄ™ jest co raz sÅ‚abszy. Wiem, jak moÅ¼na go zbudziÄ‡, ale potrzebujÄ™ twojej pomocy.
+	AI_Output			(other, self,"Mis_3_NC_CorAngar_FindHerb_15_03"); //Co mam zrobiÄ‡?
+	AI_Output			(self, other,"Mis_3_NC_CorAngar_FindHerb_08_04"); //PrzynieÅ› mi piÄ™Ä‡ najmocniejszych ziÃ³Å‚ uzdrawiajÄ…cych jakie moÅ¼na znaleÅºÄ‡ na bagnach!
+	AI_Output			(self, other,"Mis_3_NC_CorAngar_FindHerb_08_05"); //Spiesz siÄ™!
 	AI_StopProcessInfos	(self);
 	CorAngar_FindHerb = LOG_RUNNING;
 	
 	Log_CreateTopic		(CH3_FindHerbs,	LOG_MISSION);
 	Log_SetTopicStatus	(CH3_FindHerbs,	LOG_RUNNING);
-	B_LogEntry		(CH3_FindHerbs,"Y'Berion nadal nie odzyska³ przytomnoœci. Cor Angar nakaza³ mi znaleŸæ piêæ leczniczych zió³ o silnym dzia³aniu.");
+	B_LogEntry		(CH3_FindHerbs,"Y'Berion nadal nie odzyskaÅ‚ przytomnoÅ›ci. Cor Angar nakazaÅ‚ mi znaleÅºÄ‡ piÄ™Ä‡ leczniczych ziÃ³Å‚ o silnym dziaÅ‚aniu.");
 };
 
 // ---------------------------- FindHerb - WHERE ---------------------------------------
@@ -494,7 +494,7 @@ INSTANCE Info_CorAngar_FindHerb_WHERE (C_INFO)
 	information	= Info_CorAngar_FindHerb_WHERE_Info;
 	permanent	= 0;
 	important	= 0; 
-	description = "Gdzie mogê znaleŸæ te zio³a?";
+	description = "Gdzie mogÄ™ znaleÅºÄ‡ te zioÅ‚a?";
 };                       
 
 FUNC INT Info_CorAngar_FindHerb_WHERE_Condition()
@@ -507,12 +507,12 @@ FUNC INT Info_CorAngar_FindHerb_WHERE_Condition()
 
 FUNC VOID Info_CorAngar_FindHerb_WHERE_Info()
 {
-	AI_Output			(other, self,"Info_CorAngar_FindHerb_WHERE_15_01"); //Gdzie mogê znaleŸæ te zio³a?
-	AI_Output			(self, other,"Info_CorAngar_FindHerb_WHERE_08_02"); //Poszukaj na bagnach za Obozem. Musisz siê zapuœciæ doœæ daleko, wiêc uwa¿aj na b³otne wê¿e!
-	AI_Output			(self, other,"Info_CorAngar_FindHerb_WHERE_08_03"); //I nie traæ ani chwili. IdŸ ju¿!
+	AI_Output			(other, self,"Info_CorAngar_FindHerb_WHERE_15_01"); //Gdzie mogÄ™ znaleÅºÄ‡ te zioÅ‚a?
+	AI_Output			(self, other,"Info_CorAngar_FindHerb_WHERE_08_02"); //Poszukaj na bagnach za Obozem. Musisz siÄ™ zapuÅ›ciÄ‡ doÅ›Ä‡ daleko, wiÄ™c uwaÅ¼aj na bÅ‚otne wÄ™Å¼e!
+	AI_Output			(self, other,"Info_CorAngar_FindHerb_WHERE_08_03"); //I nie traÄ‡ ani chwili. IdÅº juÅ¼!
 	AI_StopProcessInfos	(self);
 
-	B_LogEntry		(CH3_FindHerbs,"Potrzebne Angarowi zio³a rosn¹ daleko na bagnach, za obozem Bractwa. Muszê mieæ oczy szeroko otwarte - tamta okolica roi siê od b³otnych wê¿y.");
+	B_LogEntry		(CH3_FindHerbs,"Potrzebne Angarowi zioÅ‚a rosnÄ… daleko na bagnach, za obozem Bractwa. MuszÄ™ mieÄ‡ oczy szeroko otwarte - tamta okolica roi siÄ™ od bÅ‚otnych wÄ™Å¼y.");
 };
 
 // ---------------------------- FindHerb - LOOK ---------------------------------------
@@ -524,7 +524,7 @@ INSTANCE Info_CorAngar_FindHerb_LOOK (C_INFO)
 	information	= Info_CorAngar_FindHerb_LOOK_Info;
 	permanent	= 0;
 	important	= 0; 
-	description = "Jak rozpoznam te zio³a?";
+	description = "Jak rozpoznam te zioÅ‚a?";
 };                       
 
 FUNC INT Info_CorAngar_FindHerb_LOOK_Condition()
@@ -537,12 +537,12 @@ FUNC INT Info_CorAngar_FindHerb_LOOK_Condition()
 
 FUNC VOID Info_CorAngar_FindHerb_LOOK_Info()
 {
-	AI_Output			(other, self,"Info_CorAngar_FindHerb_LOOK_15_01"); //Jak rozpoznam te zio³a?
-	AI_Output			(self, other,"Info_CorAngar_FindHerb_LOOK_08_02"); //Przypominaj¹ gwiazdê z oœmioma zielonymi i pomarañczowymi liœæmi.
-	AI_Output			(self, other,"Info_CorAngar_FindHerb_LOOK_08_03"); //Ruszaj w drogê.
+	AI_Output			(other, self,"Info_CorAngar_FindHerb_LOOK_15_01"); //Jak rozpoznam te zioÅ‚a?
+	AI_Output			(self, other,"Info_CorAngar_FindHerb_LOOK_08_02"); //PrzypominajÄ… gwiazdÄ™ z oÅ›mioma zielonymi i pomaraÅ„czowymi liÅ›Ä‡mi.
+	AI_Output			(self, other,"Info_CorAngar_FindHerb_LOOK_08_03"); //Ruszaj w drogÄ™.
 	AI_StopProcessInfos	(self);
 
-	B_LogEntry		(CH3_FindHerbs,"Lecznicze zio³a przypominaj¹ gwiazdy. Maj¹ cztery zielone i cztery pomarañczowe liœcie.");
+	B_LogEntry		(CH3_FindHerbs,"Lecznicze zioÅ‚a przypominajÄ… gwiazdy. MajÄ… cztery zielone i cztery pomaraÅ„czowe liÅ›cie.");
 };
 
 
@@ -556,7 +556,7 @@ INSTANCE Info_CorAngar_FindHerb_Running (C_INFO)
 	information	= Info_CorAngar_FindHerb_Running_Info;
 	permanent	= 1;
 	important	= 0; 
-	description = "Nie znalaz³em jeszcze potrzebnej iloœci zió³.";
+	description = "Nie znalazÅ‚em jeszcze potrzebnej iloÅ›ci ziÃ³Å‚.";
 };                       
 
 FUNC INT Info_CorAngar_FindHerb_Running_Condition()
@@ -572,12 +572,12 @@ FUNC INT Info_CorAngar_FindHerb_Running_Condition()
 
 FUNC VOID Info_CorAngar_FindHerb_Running_Info()
 {
-	AI_Output			(other, self,"Info_CorAngar_FindHerb_Running_15_01");//Nie znalaz³em jeszcze potrzebnej iloœci zió³.
-	AI_Output			(self, other,"Info_CorAngar_FindHerb_Running_08_02");//Mo¿e Fortuno, handlarz zio³ami, ma trochê w swoich zapasach.
-	AI_Output			(self, other,"Info_CorAngar_FindHerb_Running_08_03");//Pospiesz siê. Potrzebujê piêciu zió³. Y'Berionowi nie zosta³o ju¿ zbyt wiele czasu.
+	AI_Output			(other, self,"Info_CorAngar_FindHerb_Running_15_01");//Nie znalazÅ‚em jeszcze potrzebnej iloÅ›ci ziÃ³Å‚.
+	AI_Output			(self, other,"Info_CorAngar_FindHerb_Running_08_02");//MoÅ¼e Fortuno, handlarz zioÅ‚ami, ma trochÄ™ w swoich zapasach.
+	AI_Output			(self, other,"Info_CorAngar_FindHerb_Running_08_03");//Pospiesz siÄ™. PotrzebujÄ™ piÄ™ciu ziÃ³Å‚. Y'Berionowi nie zostaÅ‚o juÅ¼ zbyt wiele czasu.
 	AI_StopProcessInfos	(self);
 
-	//-------- Fortuno die Kräuter "unterschieben" --------
+	//-------- Fortuno die KrÃ¤uter "unterschieben" --------
 	if	!Fortuno_HasYBerionHerbs
 	{
 		var C_NPC	fortuno;
@@ -585,7 +585,7 @@ FUNC VOID Info_CorAngar_FindHerb_Running_Info()
 		CreateInvItems		(fortuno,	ItFo_Plants_Herb_03,	5);	
 
 		Fortuno_HasYBerionHerbs = TRUE;
-		B_LogEntry		(CH3_FindHerbs,"Fortuno, handlarz zielem, mo¿e mieæ takie zio³a na sk³adzie.");
+		B_LogEntry		(CH3_FindHerbs,"Fortuno, handlarz zielem, moÅ¼e mieÄ‡ takie zioÅ‚a na skÅ‚adzie.");
 	};
 };
 
@@ -596,7 +596,7 @@ INSTANCE Info_CorAngar_FindHerb_Success (C_INFO)
 	condition	= Info_CorAngar_FindHerb_Success_Condition;
 	information	= Info_CorAngar_FindHerb_Success_Info;
 	permanent	= 0;
-	description	= "Mam ju¿ wszystkie uzdrawiaj¹ce zio³a dla Y'Beriona.";
+	description	= "Mam juÅ¼ wszystkie uzdrawiajÄ…ce zioÅ‚a dla Y'Beriona.";
 };                       
 
 FUNC INT Info_CorAngar_FindHerb_Success_Condition()
@@ -609,11 +609,11 @@ FUNC INT Info_CorAngar_FindHerb_Success_Condition()
 
 FUNC VOID Info_CorAngar_FindHerb_Success_Info()
 {	
-	AI_Output			(other, self,"Info_CorAngar_FindHerb_Success_15_01"); //Mam ju¿ wszystkie uzdrawiaj¹ce zio³a dla Y'Beriona.
-	AI_Output			(self, other,"Info_CorAngar_FindHerb_Success_08_02"); //Dobra robota. Y'Berion zbudzi³ siê na chwilê tu¿ przed twoim przybyciem.
-	AI_Output			(other, self,"Info_CorAngar_FindHerb_Success_15_03"); //Powiedzia³ coœ?
-	AI_Output			(self, other,"Info_CorAngar_FindHerb_Success_08_04"); //Tak. Powiedzia³, ¿e Œni¹cy nie jest tym, za co go uwa¿amy. Pod ¿adnym pozorem nie wolno nam go zbudziæ. 
-	AI_Output			(self, other,"Info_CorAngar_FindHerb_Success_08_05"); //Pozostaje nam tylko mieæ nadziejê, ¿e dla biednego Y'Beriona nie jest jeszcze za póŸno.
+	AI_Output			(other, self,"Info_CorAngar_FindHerb_Success_15_01"); //Mam juÅ¼ wszystkie uzdrawiajÄ…ce zioÅ‚a dla Y'Beriona.
+	AI_Output			(self, other,"Info_CorAngar_FindHerb_Success_08_02"); //Dobra robota. Y'Berion zbudziÅ‚ siÄ™ na chwilÄ™ tuÅ¼ przed twoim przybyciem.
+	AI_Output			(other, self,"Info_CorAngar_FindHerb_Success_15_03"); //PowiedziaÅ‚ coÅ›?
+	AI_Output			(self, other,"Info_CorAngar_FindHerb_Success_08_04"); //Tak. PowiedziaÅ‚, Å¼e ÅšniÄ…cy nie jest tym, za co go uwaÅ¼amy. Pod Å¼adnym pozorem nie wolno nam go zbudziÄ‡. 
+	AI_Output			(self, other,"Info_CorAngar_FindHerb_Success_08_05"); //Pozostaje nam tylko mieÄ‡ nadziejÄ™, Å¼e dla biednego Y'Beriona nie jest jeszcze za pÃ³Åºno.
 	Yberion_dead = LOG_RUNNING;
 
 	B_GiveInvItems	(other, self, ItFo_Plants_Herb_03, 5 );
@@ -622,7 +622,7 @@ FUNC VOID Info_CorAngar_FindHerb_Success_Info()
 
 	CorAngar_FindHerb = LOG_SUCCESS;
 	
-	B_LogEntry		(CH3_FindHerbs,"Da³em Cor Angarowi odpowiednie zio³a. Miejmy tylko nadziejê, ¿e nie jest jeszcze za póŸno...");
+	B_LogEntry		(CH3_FindHerbs,"DaÅ‚em Cor Angarowi odpowiednie zioÅ‚a. Miejmy tylko nadziejÄ™, Å¼e nie jest jeszcze za pÃ³Åºno...");
 	Log_SetTopicStatus	(CH3_FindHerbs,	LOG_SUCCESS);
 
 	//-------- Versuch YBerion zu heilen... --------
@@ -636,17 +636,17 @@ FUNC VOID Info_CorAngar_FindHerb_Success_Info()
 	//AI_StartState		(YBerion,	ZS_Dead,	0,	"");
 
 	//-------- ...scheitert. YBerion ist tot --------
-	AI_Output			(self, other,"GUR_1202_CorAngar_DEATH_Info_08_00"); //Y'BERION NIE ¯YJE. Nasz duchowy przywódca odszed³ w zaœwiaty!
+	AI_Output			(self, other,"GUR_1202_CorAngar_DEATH_Info_08_00"); //Y'BERION NIE Å»YJE. Nasz duchowy przywÃ³dca odszedÅ‚ w zaÅ›wiaty!
 	AI_TurnToNpc		(self, other);
-	AI_Output			(self, other,"GUR_1202_CorAngar_DEATH_Info_08_01"); //Nawet twoja b³yskawiczna pomoc nie mog³a zapobiec jego œmierci.
-	AI_Output			(other, self,"GUR_1202_CorAngar_DEATH_Info_15_02"); //I co teraz bêdzie?
-	AI_Output			(self, other,"GUR_1202_CorAngar_DEATH_Info_08_03"); //Zawsze ufa³em Y'Berionowi. Tu¿ przed œmierci¹ kaza³ nam upatrywaæ nadziei ocalenia w planie ucieczki opracowanym przez Magów Wody.
-	AI_Output			(other, self,"GUR_1202_CorAngar_DEATH_Info_15_04"); //Dlatego powinniœmy wesprzeæ Magów Wody w ich d¹¿eniach.
-	AI_Output			(self, other,"GUR_1202_CorAngar_DEATH_Info_08_05"); //Przyda siê im kamieñ ogniskuj¹cy i almanach. Ale te s¹ wci¹¿ w rêkach Cor Kaloma.
+	AI_Output			(self, other,"GUR_1202_CorAngar_DEATH_Info_08_01"); //Nawet twoja bÅ‚yskawiczna pomoc nie mogÅ‚a zapobiec jego Å›mierci.
+	AI_Output			(other, self,"GUR_1202_CorAngar_DEATH_Info_15_02"); //I co teraz bÄ™dzie?
+	AI_Output			(self, other,"GUR_1202_CorAngar_DEATH_Info_08_03"); //Zawsze ufaÅ‚em Y'Berionowi. TuÅ¼ przed Å›mierciÄ… kazaÅ‚ nam upatrywaÄ‡ nadziei ocalenia w planie ucieczki opracowanym przez MagÃ³w Wody.
+	AI_Output			(other, self,"GUR_1202_CorAngar_DEATH_Info_15_04"); //Dlatego powinniÅ›my wesprzeÄ‡ MagÃ³w Wody w ich dÄ…Å¼eniach.
+	AI_Output			(self, other,"GUR_1202_CorAngar_DEATH_Info_08_05"); //Przyda siÄ™ im kamieÅ„ ogniskujÄ…cy i almanach. Ale te sÄ… wciÄ…Å¼ w rÄ™kach Cor Kaloma.
 	AI_Output			(other, self,"GUR_1202_CorAngar_DEATH_Info_15_06"); //A gdzie jest Cor Kalom?
-	AI_Output			(self, other,"GUR_1202_CorAngar_DEATH_Info_08_07"); //W gniewie zebra³ oddzia³ Stra¿ników Œwi¹tynnych i wyruszy³ na poszukiwanie Œni¹cego.
-	AI_Output			(other, self,"GUR_1202_CorAngar_DEATH_Info_15_08"); //Niech to szlag! I jak teraz odzyskamy kamieñ ogniskuj¹cy?
-	AI_Output			(self, other,"GUR_1202_CorAngar_DEATH_Info_08_09"); //Zdajê siê, ¿e kamieñ i ksiêga s¹ wci¹¿ w jego laboratorium. Masz tu klucz do skrzyni.
+	AI_Output			(self, other,"GUR_1202_CorAngar_DEATH_Info_08_07"); //W gniewie zebraÅ‚ oddziaÅ‚ StraÅ¼nikÃ³w ÅšwiÄ…tynnych i wyruszyÅ‚ na poszukiwanie ÅšniÄ…cego.
+	AI_Output			(other, self,"GUR_1202_CorAngar_DEATH_Info_15_08"); //Niech to szlag! I jak teraz odzyskamy kamieÅ„ ogniskujÄ…cy?
+	AI_Output			(self, other,"GUR_1202_CorAngar_DEATH_Info_08_09"); //ZdajÄ™ siÄ™, Å¼e kamieÅ„ i ksiÄ™ga sÄ… wciÄ…Å¼ w jego laboratorium. Masz tu klucz do skrzyni.
 
 	CreateInvItem		(self,			ITKE_PSI_KALOM_01); 
 	B_GiveInvItems		(self,	other,	ITKE_PSI_KALOM_01,	1);
@@ -673,11 +673,11 @@ FUNC INT Info_CorAngar_TELEPORT_Condition()
 FUNC VOID Info_CorAngar_TELEPORT_Info()
 {	
 	AI_GotoNpc			(self, hero);
-	AI_Output			(self, hero,"Info_CorAngar_TELEPORT_08_01"); //Jeszcze coœ!
+	AI_Output			(self, hero,"Info_CorAngar_TELEPORT_08_01"); //Jeszcze coÅ›!
 	AI_Output			(hero, self,"Info_CorAngar_TELEPORT_15_02"); //Tak?
-	AI_Output			(self, hero,"Info_CorAngar_TELEPORT_08_03"); //WeŸ tê magiczn¹ runê jako symbol naszej wdziêcznoœci za twoje dokonania.
-	AI_Output			(self, hero,"Info_CorAngar_TELEPORT_08_04"); //Pozwoli ci ona w dogodnej chwili przeteleportowaæ siê na œwi¹tynny dziedziniec.
-	AI_Output			(hero, self,"Info_CorAngar_TELEPORT_15_05"); //Dziêkujê!
+	AI_Output			(self, hero,"Info_CorAngar_TELEPORT_08_03"); //WeÅº tÄ™ magicznÄ… runÄ™ jako symbol naszej wdziÄ™cznoÅ›ci za twoje dokonania.
+	AI_Output			(self, hero,"Info_CorAngar_TELEPORT_08_04"); //Pozwoli ci ona w dogodnej chwili przeteleportowaÄ‡ siÄ™ na Å›wiÄ…tynny dziedziniec.
+	AI_Output			(hero, self,"Info_CorAngar_TELEPORT_15_05"); //DziÄ™kujÄ™!
 
 	//-------- Spieler wird losgeschickt --------
 	B_Story_SentToNC	();

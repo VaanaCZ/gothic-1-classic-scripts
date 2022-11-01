@@ -57,32 +57,32 @@ FUNC INT DIA_Tpl_1415_Torwache_First_Condition()
 FUNC VOID DIA_Tpl_1415_Torwache_First_Info()
 {
 	AI_Output (self, other,"DIA_Tpl_1415_Torwache_First_13_00"); //Witaj, nieznajomy!
-	AI_Output (self, other,"DIA_Tpl_1415_Torwache_First_13_01"); //St¹pasz po œwiêtej ziemi. Jesteœ w obozie Bractwa Œni¹cego!
-	AI_Output (self, other,"DIA_Tpl_1415_Torwache_First_13_02"); //Co ciê tu sprowadza?
+	AI_Output (self, other,"DIA_Tpl_1415_Torwache_First_13_01"); //StÄ…pasz po Å›wiÄ™tej ziemi. JesteÅ› w obozie Bractwa ÅšniÄ…cego!
+	AI_Output (self, other,"DIA_Tpl_1415_Torwache_First_13_02"); //Co ciÄ™ tu sprowadza?
 	
 	Info_ClearChoices	(DIA_Tpl_1415_Torwache_First);
-	Info_AddChoice		(DIA_Tpl_1415_Torwache_First,"Jestem tu nowy. Chcia³bym rozejrzeæ siê trochê po waszym obozie.",DIA_Tpl_1415_Torwache_First_JustLooking);
+	Info_AddChoice		(DIA_Tpl_1415_Torwache_First,"Jestem tu nowy. ChciaÅ‚bym rozejrzeÄ‡ siÄ™ trochÄ™ po waszym obozie.",DIA_Tpl_1415_Torwache_First_JustLooking);
 	
 	if (Npc_GetTrueGuild (hero) == GIL_NONE)
 	{
-		Info_AddChoice		(DIA_Tpl_1415_Torwache_First,"Chcê do was do³¹czyæ.",DIA_Tpl_1415_Torwache_First_Join);
+		Info_AddChoice		(DIA_Tpl_1415_Torwache_First,"ChcÄ™ do was doÅ‚Ä…czyÄ‡.",DIA_Tpl_1415_Torwache_First_Join);
 	};
 };
 
 func void DIA_Tpl_1415_Torwache_First_Join()
 {
-	AI_Output (other, self,"DIA_Tpl_1415_Torwache_First_Join_15_00"); //S³ysza³em, ¿e szukacie nowych cz³onków. Chcia³bym do was do³¹czyæ.
-	AI_Output (self, other,"DIA_Tpl_1415_Torwache_First_Join_13_01"); //Zatem b¹dŸ pozdrowiony. Bractwo Œni¹cego chêtnie wita wszystkich, którzy wyrzekli siê drogi z³a i chc¹ ¿yæ wedle nauk Œni¹cego.
-	AI_Output (self, other,"DIA_Tpl_1415_Torwache_First_Join_13_02"); //Jeœli naprawdê chcesz zostaæ jednym z nas, spróbuj zwróciæ na siebie uwagê Baal Namiba. Znajdziesz go na placu, tu¿ za bram¹.
-	AI_Output (self, other,"DIA_Tpl_1415_Torwache_First_Join_13_04"); //Ale nie wolno ci odezwaæ siê do niego. Zaczekaj, a¿ on zwróci siê do ciebie.
+	AI_Output (other, self,"DIA_Tpl_1415_Torwache_First_Join_15_00"); //SÅ‚yszaÅ‚em, Å¼e szukacie nowych czÅ‚onkÃ³w. ChciaÅ‚bym do was doÅ‚Ä…czyÄ‡.
+	AI_Output (self, other,"DIA_Tpl_1415_Torwache_First_Join_13_01"); //Zatem bÄ…dÅº pozdrowiony. Bractwo ÅšniÄ…cego chÄ™tnie wita wszystkich, ktÃ³rzy wyrzekli siÄ™ drogi zÅ‚a i chcÄ… Å¼yÄ‡ wedle nauk ÅšniÄ…cego.
+	AI_Output (self, other,"DIA_Tpl_1415_Torwache_First_Join_13_02"); //JeÅ›li naprawdÄ™ chcesz zostaÄ‡ jednym z nas, sprÃ³buj zwrÃ³ciÄ‡ na siebie uwagÄ™ Baal Namiba. Znajdziesz go na placu, tuÅ¼ za bramÄ….
+	AI_Output (self, other,"DIA_Tpl_1415_Torwache_First_Join_13_04"); //Ale nie wolno ci odezwaÄ‡ siÄ™ do niego. Zaczekaj, aÅ¼ on zwrÃ³ci siÄ™ do ciebie.
 	Info_ClearChoices	(DIA_Tpl_1415_Torwache_First);
 };
 
 func void DIA_Tpl_1415_Torwache_First_JustLooking()
 {
-	AI_Output (other, self,"DIA_Tpl_1415_Torwache_First_JustLooking_15_00"); //Jestem tu nowy. Chcia³bym rozejrzeæ siê trochê po waszym obozie.
-	AI_Output (self, other,"DIA_Tpl_1415_Torwache_First_JustLooking_13_01"); //Zatem wejdŸ. Bêdziesz tu mile widzianym goœciem.
-	AI_Output (self, other,"DIA_Tpl_1415_Torwache_First_JustLooking_13_02"); //Tylko staraj siê przestrzegaæ naszych zasad. W Obozie s¹ miejsca, do których obcy nie maj¹ wstêpu.
+	AI_Output (other, self,"DIA_Tpl_1415_Torwache_First_JustLooking_15_00"); //Jestem tu nowy. ChciaÅ‚bym rozejrzeÄ‡ siÄ™ trochÄ™ po waszym obozie.
+	AI_Output (self, other,"DIA_Tpl_1415_Torwache_First_JustLooking_13_01"); //Zatem wejdÅº. BÄ™dziesz tu mile widzianym goÅ›ciem.
+	AI_Output (self, other,"DIA_Tpl_1415_Torwache_First_JustLooking_13_02"); //Tylko staraj siÄ™ przestrzegaÄ‡ naszych zasad. W Obozie sÄ… miejsca, do ktÃ³rych obcy nie majÄ… wstÄ™pu.
 	Info_ClearChoices	(DIA_Tpl_1415_Torwache_First);
 };
 
@@ -97,7 +97,7 @@ INSTANCE DIA_Tpl_1415_Torwache_Sit (C_INFO)
 	condition		= DIA_Tpl_1415_Torwache_Sit_Condition;
 	information		= DIA_Tpl_1415_Torwache_Sit_Info;
 	permanent		= 1;
-	description		= "Co s³ychaæ w Obozie?";
+	description		= "Co sÅ‚ychaÄ‡ w Obozie?";
 };
 
 FUNC INT DIA_Tpl_1415_Torwache_Sit_Condition()
@@ -107,8 +107,8 @@ FUNC INT DIA_Tpl_1415_Torwache_Sit_Condition()
 
 FUNC VOID DIA_Tpl_1415_Torwache_Sit_Info()
 {
-	AI_Output (other, self,"DIA_Tpl_1415_Torwache_Sit_15_00"); //Co s³ychaæ w Obozie?
-	AI_Output (self, other,"DIA_Tpl_1415_Torwache_Sit_13_01"); //Wszystko w porz¹dku. Mo¿esz œmia³o wejœæ do œrodka.
+	AI_Output (other, self,"DIA_Tpl_1415_Torwache_Sit_15_00"); //Co sÅ‚ychaÄ‡ w Obozie?
+	AI_Output (self, other,"DIA_Tpl_1415_Torwache_Sit_13_01"); //Wszystko w porzÄ…dku. MoÅ¼esz Å›miaÅ‚o wejÅ›Ä‡ do Å›rodka.
 };
 /*------------------------------------------------------------------------
 //						TEMPLERAUFNAHME							//
@@ -135,16 +135,16 @@ FUNC int  Tpl_1415_Torwache_TEMPLERAUFNAHME_Condition()
 func void  Tpl_1415_Torwache_TEMPLERAUFNAHME_Info()
 {
 	AI_GotoNpc (hero,self); 
-	AI_Output (self, other,"Tpl_1415_Torwache_IMPORTANT_Info_13_01"); //S³ysza³em, co siê wydarzy³o w kopalni. Dobra robota. Zas³u¿y³eœ na przyjêcie w poczet Œwi¹tynnej Stra¿y!
+	AI_Output (self, other,"Tpl_1415_Torwache_IMPORTANT_Info_13_01"); //SÅ‚yszaÅ‚em, co siÄ™ wydarzyÅ‚o w kopalni. Dobra robota. ZasÅ‚uÅ¼yÅ‚eÅ› na przyjÄ™cie w poczet ÅšwiÄ…tynnej StraÅ¼y!
 	AI_Output (self, other,"Tpl_1415_Torwache_IMPORTANT_Info_13_02"); //Porozmawiaj koniecznie z Cor Angarem!
 
 	Log_CreateTopic (GE_BecomeTemplar,LOG_NOTE);
-	B_LogEntry (GE_BecomeTemplar,"Powinienem porozmawiaæ z Cor Angarem. Mo¿e pozwoli mi zostaæ Œwi¹tynnym Stra¿nikiem.");
+	B_LogEntry (GE_BecomeTemplar,"Powinienem porozmawiaÄ‡ z Cor Angarem. MoÅ¼e pozwoli mi zostaÄ‡ ÅšwiÄ…tynnym StraÅ¼nikiem.");
 };
 
 
 /*------------------------------------------------------------------------
-						Novizenröckchen							
+						NovizenrÃ¶ckchen							
 ------------------------------------------------------------------------*/
 
 instance  Tpl_1415_Templer_ROCK (C_INFO)
@@ -154,7 +154,7 @@ instance  Tpl_1415_Templer_ROCK (C_INFO)
 	information		= Tpl_1415_Templer_ROCK_Info;
 	important		= 0;
 	permanent		= 1;
-	description		= "Potrzebujê jakiegoœ pancerza."; 
+	description		= "PotrzebujÄ™ jakiegoÅ› pancerza."; 
 };
 
 FUNC int  Tpl_1415_Templer_ROCK_Condition()
@@ -167,10 +167,10 @@ FUNC int  Tpl_1415_Templer_ROCK_Condition()
 };
 FUNC void  Tpl_1415_Templer_ROCK_Info()
 {
-	AI_Output (other, self,"Tpl_1415_Templer_ROCK_Info_15_01"); //Potrzebujê jakiegoœ pancerza.
-	AI_Output (self, other,"Tpl_1415_Templer_ROCK_Info_13_02"); //Musia³byœ zas³u¿yæ sobie na zbrojê Œwi¹tynnej Stra¿y, tak¹ jak ta, któr¹ noszê. Ale na pocz¹tek wystarczy ci szata Nowicjusza.
-	AI_Output (other, self,"Tpl_1415_Templer_ROCK_Info_15_03"); //Lepszy rydz ni¿ nic...
-	AI_Output (self, other,"Tpl_1415_Templer_ROCK_Info_13_04"); //Oczywiœcie nie otrzymasz jej za darmo!
+	AI_Output (other, self,"Tpl_1415_Templer_ROCK_Info_15_01"); //PotrzebujÄ™ jakiegoÅ› pancerza.
+	AI_Output (self, other,"Tpl_1415_Templer_ROCK_Info_13_02"); //MusiaÅ‚byÅ› zasÅ‚uÅ¼yÄ‡ sobie na zbrojÄ™ ÅšwiÄ…tynnej StraÅ¼y, takÄ… jak ta, ktÃ³rÄ… noszÄ™. Ale na poczÄ…tek wystarczy ci szata Nowicjusza.
+	AI_Output (other, self,"Tpl_1415_Templer_ROCK_Info_15_03"); //Lepszy rydz niÅ¼ nic...
+	AI_Output (self, other,"Tpl_1415_Templer_ROCK_Info_13_04"); //OczywiÅ›cie nie otrzymasz jej za darmo!
 
 	Info_ClearChoices (Tpl_1415_Templer_ROCK);
 	Info_Addchoice (Tpl_1415_Templer_ROCK,DIALOG_BACK,Tpl_1415_Templer_ROCK_BACK);
@@ -184,14 +184,14 @@ func void Tpl_1415_Templer_ROCK_BACK()
 
 func void Tpl_1415_Templer_ROCK_BUY()
 {
-	AI_Output (other, self,"Tpl_1415_Templer_ROCK_BUY_15_01"); //Niech bêdzie, wezmê tê szatê.
+	AI_Output (other, self,"Tpl_1415_Templer_ROCK_BUY_15_01"); //Niech bÄ™dzie, wezmÄ™ tÄ™ szatÄ™.
 	if (Npc_HasItems (hero,ItMiNugget) <  VALUE_NOV_ARMOR_L)
 	{
-		AI_Output (self, other,"Tpl_1415_Templer_ROCK_BUY_13_02"); //Wróæ, gdy bêdziesz mia³ wystarczaj¹co du¿o rudy.
+		AI_Output (self, other,"Tpl_1415_Templer_ROCK_BUY_13_02"); //WrÃ³Ä‡, gdy bÄ™dziesz miaÅ‚ wystarczajÄ…co duÅ¼o rudy.
 	}
 	else
 	{
-		AI_Output (self, other,"Tpl_1415_Templer_ROCK_BUY_13_03"); //Ta szata mo¿e ocaliæ ci ¿ycie!
+		AI_Output (self, other,"Tpl_1415_Templer_ROCK_BUY_13_03"); //Ta szata moÅ¼e ocaliÄ‡ ci Å¼ycie!
 		B_GiveInvItems (hero, self, ItMinugget, VALUE_NOV_ARMOR_L);
 		CreateInvItem (self, NOV_ARMOR_L);
 		B_GiveInvItems (self, hero, NOV_ARMOR_L, 1);

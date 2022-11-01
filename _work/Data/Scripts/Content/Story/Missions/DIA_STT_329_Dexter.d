@@ -23,7 +23,7 @@ FUNC VOID DIA_Dexter_Exit_Info()
 };
 
 // **************************************************
-// 					Erste Begrüssung
+// 					Erste BegrÃ¼ssung
 // **************************************************
 
 INSTANCE DIA_Dexter_First (C_INFO)
@@ -46,7 +46,7 @@ FUNC INT DIA_Dexter_First_Condition()
 
 FUNC VOID DIA_Dexter_First_Info()
 {
-	AI_Output (self,other,"DIA_Dexter_IAmNew_10_00"); //Hej, ty! Sprzedajê bagienne ziele i ró¿ne wywary z obozu na bagnach. Mo¿e czegoœ potrzebujesz?
+	AI_Output (self,other,"DIA_Dexter_IAmNew_10_00"); //Hej, ty! SprzedajÄ™ bagienne ziele i rÃ³Å¼ne wywary z obozu na bagnach. MoÅ¼e czegoÅ› potrzebujesz?
 };
 
 // **************************************************
@@ -71,7 +71,7 @@ FUNC INT DIA_Dexter_Kraut_Condition()
 FUNC VOID DIA_Dexter_Kraut_Info()
 {
 	AI_Output (other,self,"DIA_Dexter_Kraut_15_00"); //Co to jest "bagienne ziele"?
-	AI_Output (self,other,"DIA_Dexter_Kraut_10_01"); //Jesteœ tu nowy, co? Bagienne ziele mo¿na paliæ. To bardzo odprê¿aj¹ce.
+	AI_Output (self,other,"DIA_Dexter_Kraut_10_01"); //JesteÅ› tu nowy, co? Bagienne ziele moÅ¼na paliÄ‡. To bardzo odprÄ™Å¼ajÄ…ce.
 };
 
 // **************************************************
@@ -87,7 +87,7 @@ INSTANCE DIA_Dexter_Trade (C_INFO)
 	condition	= DIA_Dexter_Trade_Condition;
 	information	= DIA_Dexter_Trade_Info;
 	permanent	= 1;
-	description	= "Poka¿ mi swoje towary.";
+	description	= "PokaÅ¼ mi swoje towary.";
 	Trade		= 1;
 };                       
 
@@ -98,13 +98,13 @@ FUNC INT DIA_Dexter_Trade_Condition()
 
 FUNC VOID DIA_Dexter_Trade_Info()
 {
-	AI_Output (other,self,"DIA_Dexter_Trade_15_00"); //Poka¿ mi swoje towary.
-	AI_Output (self,other,"DIA_Dexter_Trade_10_01"); //Mam tu tylko towar najwy¿szej jakoœci...
+	AI_Output (other,self,"DIA_Dexter_Trade_15_00"); //PokaÅ¼ mi swoje towary.
+	AI_Output (self,other,"DIA_Dexter_Trade_10_01"); //Mam tu tylko towar najwyÅ¼szej jakoÅ›ci...
 	
 	if	(Dexter_Traded == FALSE)
 	{
 		Log_CreateTopic(GE_TraderOC, LOG_NOTE);
-		B_LogEntry(GE_TraderOC,"Cieñ o imieniu Dexter handluje bagiennym zielem i napojami z obozu Bractwa.");
+		B_LogEntry(GE_TraderOC,"CieÅ„ o imieniu Dexter handluje bagiennym zielem i napojami z obozu Bractwa.");
 	
 		Dexter_Traded = TRUE;
 	};
@@ -123,7 +123,7 @@ INSTANCE DIA_Dexter_JoinOC (C_INFO)
 	condition	= DIA_Dexter_JoinOC_Condition;
 	information	= DIA_Dexter_JoinOC_Info;
 	permanent	= 0;
-	description	= "Chcia³bym do³¹czyæ do Obozu. Chcê zostaæ Cieniem.";
+	description	= "ChciaÅ‚bym doÅ‚Ä…czyÄ‡ do Obozu. ChcÄ™ zostaÄ‡ Cieniem.";
 };                       
 
 FUNC INT DIA_Dexter_JoinOC_Condition()
@@ -135,48 +135,48 @@ FUNC INT DIA_Dexter_JoinOC_Condition()
 };
 FUNC VOID DIA_Dexter_JoinOC_Info()
 {
-	AI_Output (other,self,"DIA_Dexter_JoinOC_15_00"); //Chcia³bym do³¹czyæ do Obozu. Chcê zostaæ Cieniem.
-	AI_Output (self,other,"DIA_Dexter_JoinOC_10_01"); //O, i szukasz pewnie okazji, ¿eby pokazaæ, na co ciê staæ, tak?
-	AI_Output (self,other,"DIA_Dexter_JoinOC_10_02"); //Dobra - mo¿esz wyœwiadczyæ mi pewn¹ przys³ugê. Jeœli dobrze siê spiszesz, wstawiê siê za tob¹ u Diego.
+	AI_Output (other,self,"DIA_Dexter_JoinOC_15_00"); //ChciaÅ‚bym doÅ‚Ä…czyÄ‡ do Obozu. ChcÄ™ zostaÄ‡ Cieniem.
+	AI_Output (self,other,"DIA_Dexter_JoinOC_10_01"); //O, i szukasz pewnie okazji, Å¼eby pokazaÄ‡, na co ciÄ™ staÄ‡, tak?
+	AI_Output (self,other,"DIA_Dexter_JoinOC_10_02"); //Dobra - moÅ¼esz wyÅ›wiadczyÄ‡ mi pewnÄ… przysÅ‚ugÄ™. JeÅ›li dobrze siÄ™ spiszesz, wstawiÄ™ siÄ™ za tobÄ… u Diego.
 	AI_Output (other,self,"DIA_Dexter_JoinOC_15_03"); //O co chodzi?
-	AI_Output (self,other,"DIA_Dexter_JoinOC_10_04"); //W obozie Sekty mieszka mê¿czyzna imieniem Kalom. To wielka szycha - jeden z Guru ca³ej tej pomylonej zgrai.
-	AI_Output (self,other,"DIA_Dexter_JoinOC_10_05"); //Kalom jest alchemikiem. Posiada przepis na niezwykle skuteczny napój uzdrawiaj¹cy.
-	AI_Output (self,other,"DIA_Dexter_JoinOC_10_06"); //Chcia³bym go od niego odkupiæ, wtedy sam móg³bym zacz¹æ produkcjê tego napoju.
-	AI_Output (self,other,"DIA_Dexter_JoinOC_10_07"); //Ale do Kaloma trudno siê zbli¿yæ, zw³aszcza ludziom z zewn¹trz.
+	AI_Output (self,other,"DIA_Dexter_JoinOC_10_04"); //W obozie Sekty mieszka mÄ™Å¼czyzna imieniem Kalom. To wielka szycha - jeden z Guru caÅ‚ej tej pomylonej zgrai.
+	AI_Output (self,other,"DIA_Dexter_JoinOC_10_05"); //Kalom jest alchemikiem. Posiada przepis na niezwykle skuteczny napÃ³j uzdrawiajÄ…cy.
+	AI_Output (self,other,"DIA_Dexter_JoinOC_10_06"); //ChciaÅ‚bym go od niego odkupiÄ‡, wtedy sam mÃ³gÅ‚bym zaczÄ…Ä‡ produkcjÄ™ tego napoju.
+	AI_Output (self,other,"DIA_Dexter_JoinOC_10_07"); //Ale do Kaloma trudno siÄ™ zbliÅ¼yÄ‡, zwÅ‚aszcza ludziom z zewnÄ…trz.
 	AI_Output (other,self,"DIA_Dexter_JoinOC_15_08"); //A czego oczekujesz ode mnie?
-	AI_Output (self,other,"DIA_Dexter_JoinOC_10_09"); //Te œwiry z sekty bez przerwy szukaj¹ nowych ludzi. Jesteœ tu nowy, nikt ciê nie zna. Udawaj, ¿e chcesz do nich do³¹czyæ.
-	AI_Output (self,other,"DIA_Dexter_JoinOC_10_10"); //Kalom jest jednym z Guru, wiêc to on sprawdza nowych kandydatów. Jeœli uda ci siê z nim spotkaæ, spróbuj zdobyæ dla mnie tê recepturê.
-	AI_Output (self,other,"DIA_Dexter_JoinOC_10_11"); //Czy za ni¹ zap³acisz, czy nie - to ju¿ nie moja sprawa.
+	AI_Output (self,other,"DIA_Dexter_JoinOC_10_09"); //Te Å›wiry z sekty bez przerwy szukajÄ… nowych ludzi. JesteÅ› tu nowy, nikt ciÄ™ nie zna. Udawaj, Å¼e chcesz do nich doÅ‚Ä…czyÄ‡.
+	AI_Output (self,other,"DIA_Dexter_JoinOC_10_10"); //Kalom jest jednym z Guru, wiÄ™c to on sprawdza nowych kandydatÃ³w. JeÅ›li uda ci siÄ™ z nim spotkaÄ‡, sprÃ³buj zdobyÄ‡ dla mnie tÄ™ recepturÄ™.
+	AI_Output (self,other,"DIA_Dexter_JoinOC_10_11"); //Czy za niÄ… zapÅ‚acisz, czy nie - to juÅ¼ nie moja sprawa.
 
 	Info_ClearChoices(DIA_Dexter_JoinOC);
-	Info_AddChoice	 (DIA_Dexter_JoinOC,"Dobrze, zobaczê co siê da zrobiæ.",DIA_Dexter_JoinOC_Ok);
-	Info_AddChoice	 (DIA_Dexter_JoinOC,"To nie bêdzie ³atwe. Co bêdê z tego mia³?",DIA_Dexter_JoinOC_HowMuch);
+	Info_AddChoice	 (DIA_Dexter_JoinOC,"Dobrze, zobaczÄ™ co siÄ™ da zrobiÄ‡.",DIA_Dexter_JoinOC_Ok);
+	Info_AddChoice	 (DIA_Dexter_JoinOC,"To nie bÄ™dzie Å‚atwe. Co bÄ™dÄ™ z tego miaÅ‚?",DIA_Dexter_JoinOC_HowMuch);
 };
 
 func void DIA_Dexter_JoinOC_Ok()
 {
-	AI_Output (other,self,"DIA_Dexter_JoinOC_Ok_15_00"); //Dobrze, zobaczê co siê da zrobiæ.
+	AI_Output (other,self,"DIA_Dexter_JoinOC_Ok_15_00"); //Dobrze, zobaczÄ™ co siÄ™ da zrobiÄ‡.
 	Dexter_GetKalomsRecipe = LOG_RUNNING;
 	
 	Log_CreateTopic (CH1_KalomsRecipe,LOG_MISSION);
 	Log_SetTopicStatus (CH1_KalomsRecipe,LOG_RUNNING);
-	B_LogEntry    (CH1_KalomsRecipe,"Dexter, Cieñ z targowiska, kaza³ mi odwiedziæ Guru Kaloma w obozie sekty i zdobyæ pewn¹ recepturê.");
-	B_LogEntry    (CH1_KalomsRecipe,"Dexter poradzi³ mi, ¿ebym udawa³ sympatyka Sekty Œni¹cego.");
+	B_LogEntry    (CH1_KalomsRecipe,"Dexter, CieÅ„ z targowiska, kazaÅ‚ mi odwiedziÄ‡ Guru Kaloma w obozie sekty i zdobyÄ‡ pewnÄ… recepturÄ™.");
+	B_LogEntry    (CH1_KalomsRecipe,"Dexter poradziÅ‚ mi, Å¼ebym udawaÅ‚ sympatyka Sekty ÅšniÄ…cego.");
 	
 	Info_ClearChoices(DIA_Dexter_JoinOC);
 };
 
 func void DIA_Dexter_JoinOC_HowMuch()	
 {
-	AI_Output (other,self,"DIA_Dexter_JoinOC_HowMuch_15_00"); //To nie bêdzie ³atwe. Co bêdê z tego mia³?
-	AI_Output (self,other,"DIA_Dexter_JoinOC_HowMuch_10_01"); //Prêdzej czy póŸniej Diego zapyta mnie co o tobie s¹dzê. Zgadnij od czego bêdzie zale¿a³a moja odpowiedŸ.
+	AI_Output (other,self,"DIA_Dexter_JoinOC_HowMuch_15_00"); //To nie bÄ™dzie Å‚atwe. Co bÄ™dÄ™ z tego miaÅ‚?
+	AI_Output (self,other,"DIA_Dexter_JoinOC_HowMuch_10_01"); //PrÄ™dzej czy pÃ³Åºniej Diego zapyta mnie co o tobie sÄ…dzÄ™. Zgadnij od czego bÄ™dzie zaleÅ¼aÅ‚a moja odpowiedÅº.
 	
-	Info_AddChoice	 (DIA_Dexter_JoinOC,"Mo¿e bêdê mu musia³ zap³aciæ za tê recepturê. Potrzebujê 50 bry³ek rudy.",DIA_Dexter_JoinOC_Advance);
+	Info_AddChoice	 (DIA_Dexter_JoinOC,"MoÅ¼e bÄ™dÄ™ mu musiaÅ‚ zapÅ‚aciÄ‡ za tÄ™ recepturÄ™. PotrzebujÄ™ 50 bryÅ‚ek rudy.",DIA_Dexter_JoinOC_Advance);
 };
 
 func void DIA_Dexter_JoinOC_Advance()
 {
-	AI_Output (other,self,"DIA_Dexter_JoinOC_Advance_15_00"); //Mo¿e bêdê mu musia³ zap³aciæ za tê recepturê. Potrzebujê 50 bry³ek rudy jako zaliczkê.
+	AI_Output (other,self,"DIA_Dexter_JoinOC_Advance_15_00"); //MoÅ¼e bÄ™dÄ™ mu musiaÅ‚ zapÅ‚aciÄ‡ za tÄ™ recepturÄ™. PotrzebujÄ™ 50 bryÅ‚ek rudy jako zaliczkÄ™.
 	AI_Output (self,other,"DIA_Dexter_JoinOC_Advance_10_01"); //Nie ma mowy.
 	
 	Info_AddChoice	 (DIA_Dexter_JoinOC,"Nie ma rudy - nie ma receptury!",DIA_Dexter_JoinOC_Threat);
@@ -185,32 +185,32 @@ func void DIA_Dexter_JoinOC_Advance()
 func void DIA_Dexter_JoinOC_Threat()
 {
 	AI_Output (other,self,"DIA_Dexter_JoinOC_Threat_15_00"); //Nie ma rudy - nie ma receptury!
-	AI_Output (self,other,"DIA_Dexter_JoinOC_Threat_10_01"); //No dobra, ale o rudzie porozmawiamy jak bêdziesz mia³ recepturê w rêku.
+	AI_Output (self,other,"DIA_Dexter_JoinOC_Threat_10_01"); //No dobra, ale o rudzie porozmawiamy jak bÄ™dziesz miaÅ‚ recepturÄ™ w rÄ™ku.
 	
-	Info_AddChoice	 (DIA_Dexter_JoinOC,"Nie! Albo zap³acisz mi z góry, albo sam sobie idŸ do obozu na bagnie.",DIA_Dexter_JoinOC_OreNowOrElse);
+	Info_AddChoice	 (DIA_Dexter_JoinOC,"Nie! Albo zapÅ‚acisz mi z gÃ³ry, albo sam sobie idÅº do obozu na bagnie.",DIA_Dexter_JoinOC_OreNowOrElse);
 };
 
 func void DIA_Dexter_JoinOC_OreNowOrElse()
 {
-	AI_Output (other,self,"DIA_Dexter_JoinOC_OreNowOrElse_15_00"); //Nie! Albo zap³acisz mi z góry, albo sam sobie idŸ do obozu na bagnie.
-	AI_Output (self,other,"DIA_Dexter_JoinOC_OreNowOrElse_10_01"); //Jest tu wielu ¿ó³todziobów. Chyba jednak zlecê to zadanie komuœ innemu...
+	AI_Output (other,self,"DIA_Dexter_JoinOC_OreNowOrElse_15_00"); //Nie! Albo zapÅ‚acisz mi z gÃ³ry, albo sam sobie idÅº do obozu na bagnie.
+	AI_Output (self,other,"DIA_Dexter_JoinOC_OreNowOrElse_10_01"); //Jest tu wielu Å¼Ã³Å‚todziobÃ³w. Chyba jednak zlecÄ™ to zadanie komuÅ› innemu...
 	
-	Info_AddChoice	 (DIA_Dexter_JoinOC,"Œwietnie! Zapomnijmy o ca³ej sprawie.",DIA_Dexter_JoinOC_ForgetIt);
+	Info_AddChoice	 (DIA_Dexter_JoinOC,"Åšwietnie! Zapomnijmy o caÅ‚ej sprawie.",DIA_Dexter_JoinOC_ForgetIt);
 };
 
 func void DIA_Dexter_JoinOC_ForgetIt()
 {
-	AI_Output (other,self,"DIA_Dexter_JoinOC_ForgetIt_15_00"); //Œwietnie! Zapomnijmy o ca³ej sprawie.
-	AI_Output (self,other,"DIA_Dexter_JoinOC_ForgetIt_10_01"); //Zaraz, powoli! Chcia³em tylko zobaczyæ, jak daleko siê posuniesz... 50 bry³ek to trochê du¿o jak na ¿ó³todzioba, nie s¹dzisz?
-	AI_Output (other,self,"DIA_Dexter_JoinOC_ForgetIt_15_02"); //To ju¿ lepiej...
-	AI_Output (self,other,"DIA_Dexter_JoinOC_ForgetIt_10_03"); //A niech ciê szlag! Masz tu swoje 50 bry³ek! Tylko nie próbuj mnie wykiwaæ, ma³y!
+	AI_Output (other,self,"DIA_Dexter_JoinOC_ForgetIt_15_00"); //Åšwietnie! Zapomnijmy o caÅ‚ej sprawie.
+	AI_Output (self,other,"DIA_Dexter_JoinOC_ForgetIt_10_01"); //Zaraz, powoli! ChciaÅ‚em tylko zobaczyÄ‡, jak daleko siÄ™ posuniesz... 50 bryÅ‚ek to trochÄ™ duÅ¼o jak na Å¼Ã³Å‚todzioba, nie sÄ…dzisz?
+	AI_Output (other,self,"DIA_Dexter_JoinOC_ForgetIt_15_02"); //To juÅ¼ lepiej...
+	AI_Output (self,other,"DIA_Dexter_JoinOC_ForgetIt_10_03"); //A niech ciÄ™ szlag! Masz tu swoje 50 bryÅ‚ek! Tylko nie prÃ³buj mnie wykiwaÄ‡, maÅ‚y!
 	
 	Dexter_GetKalomsRecipe = LOG_RUNNING;
 	
 	Log_CreateTopic (CH1_KalomsRecipe,LOG_MISSION);
 	Log_SetTopicStatus (CH1_KalomsRecipe,LOG_RUNNING);
-	B_LogEntry    (CH1_KalomsRecipe,"Dexter, Cieñ z targowiska, kaza³ mi odwiedziæ Guru Kaloma w obozie sekty i zdobyæ pewn¹ recepturê.");
-	B_LogEntry    (CH1_KalomsRecipe,"Dexter poradzi³ mi, ¿ebym udawa³ sympatyka Sekty Œni¹cego.");
+	B_LogEntry    (CH1_KalomsRecipe,"Dexter, CieÅ„ z targowiska, kazaÅ‚ mi odwiedziÄ‡ Guru Kaloma w obozie sekty i zdobyÄ‡ pewnÄ… recepturÄ™.");
+	B_LogEntry    (CH1_KalomsRecipe,"Dexter poradziÅ‚ mi, Å¼ebym udawaÅ‚ sympatyka Sekty ÅšniÄ…cego.");
 	
 	CreateInvItems(self, itminugget, 50);
 	B_GiveInvItems(self, other, itminugget, 50);
@@ -231,7 +231,7 @@ INSTANCE DIA_Dexter_WhereST (C_INFO)
 	condition	= DIA_Dexter_WhereST_Condition;
 	information	= DIA_Dexter_WhereST_Info;
 	permanent	= 1;
-	description	= "Gdzie jest ten ca³y obóz na bagnie?";
+	description	= "Gdzie jest ten caÅ‚y obÃ³z na bagnie?";
 };                       
 
 FUNC INT DIA_Dexter_WhereST_Condition()
@@ -244,20 +244,20 @@ FUNC INT DIA_Dexter_WhereST_Condition()
 
 FUNC VOID DIA_Dexter_WhereST_Info()
 {
-	AI_Output (other,self,"DIA_Dexter_WhereST_15_00"); //Gdzie jest ten ca³y obóz na bagnie?
-	AI_Output (self,other,"DIA_Dexter_WhereST_10_01"); //WyjdŸ z Zewnêtrznego Pierœcienia przez po³udniow¹ bramê, potem skieruj siê na wschód. Najlepiej bêdzie, jak weŸmiesz mapê...
+	AI_Output (other,self,"DIA_Dexter_WhereST_15_00"); //Gdzie jest ten caÅ‚y obÃ³z na bagnie?
+	AI_Output (self,other,"DIA_Dexter_WhereST_10_01"); //WyjdÅº z ZewnÄ™trznego PierÅ›cienia przez poÅ‚udniowÄ… bramÄ™, potem skieruj siÄ™ na wschÃ³d. Najlepiej bÄ™dzie, jak weÅºmiesz mapÄ™...
 	
-	if (Npc_HasItems(self,ItWrWorldmap) >0)														//Björn
-		{																						//Björn
-			AI_Output (self,other,"DIA_Dexter_WhereST_10_02"); //Mam tu jedn¹. Kosztuje 50 bry³ek...
-		};																						//Björn
+	if (Npc_HasItems(self,ItWrWorldmap) >0)														//BjÃ¶rn
+		{																						//BjÃ¶rn
+			AI_Output (self,other,"DIA_Dexter_WhereST_10_02"); //Mam tu jednÄ…. Kosztuje 50 bryÅ‚ek...
+		};																						//BjÃ¶rn
 	
-	AI_Output (other,self,"DIA_Dexter_WhereST_15_02"); //Po³udniowa brama to ta przy zawalonej wie¿y, tak?
-	AI_Output (self,other,"DIA_Dexter_WhereST_10_03"); //Dok³adnie.
+	AI_Output (other,self,"DIA_Dexter_WhereST_15_02"); //PoÅ‚udniowa brama to ta przy zawalonej wieÅ¼y, tak?
+	AI_Output (self,other,"DIA_Dexter_WhereST_10_03"); //DokÅ‚adnie.
 	
 	if	!Dexter_PsiCamp
 	{
-		B_LogEntry    (CH1_KalomsRecipe,"Obóz sekty le¿y na wschód od Starego Obozu.");
+		B_LogEntry    (CH1_KalomsRecipe,"ObÃ³z sekty leÅ¼y na wschÃ³d od Starego Obozu.");
 		Dexter_PsiCamp = TRUE;
 	};
 };
@@ -273,7 +273,7 @@ INSTANCE DIA_Dexter_KalomsRecipeSuccess (C_INFO)
 	condition	= DIA_Dexter_KalomsRecipeSuccess_Condition;
 	information	= DIA_Dexter_KalomsRecipeSuccess_Info;
 	permanent	= 1;
-	description	= "Mam dla ciebie recepturê, o któr¹ prosi³eœ!";
+	description	= "Mam dla ciebie recepturÄ™, o ktÃ³rÄ… prosiÅ‚eÅ›!";
 };                       
 
 FUNC INT DIA_Dexter_KalomsRecipeSuccess_Condition()
@@ -286,14 +286,14 @@ FUNC INT DIA_Dexter_KalomsRecipeSuccess_Condition()
 
 FUNC VOID DIA_Dexter_KalomsRecipeSuccess_Info()
 {
-	AI_Output (other,self,"DIA_Dexter_KalomsRecipeSuccess_15_00"); //Mam dla ciebie recepturê, o któr¹ prosi³eœ!
-	AI_Output (self,other,"DIA_Dexter_KalomsRecipeSuccess_10_01"); //To œwietnie! Poka¿ j¹!
+	AI_Output (other,self,"DIA_Dexter_KalomsRecipeSuccess_15_00"); //Mam dla ciebie recepturÄ™, o ktÃ³rÄ… prosiÅ‚eÅ›!
+	AI_Output (self,other,"DIA_Dexter_KalomsRecipeSuccess_10_01"); //To Å›wietnie! PokaÅ¼ jÄ…!
 	
 	B_UseFakeScroll();
 	
-	AI_Output (self,other,"DIA_Dexter_KalomsRecipeSuccess_10_02"); //Znakomicie! Teraz sam bêdê móg³ wytwarzaæ napój uzdrawiaj¹cy.
-	AI_Output (self,other,"DIA_Dexter_KalomsRecipeSuccess_10_03"); //Równy z ciebie ch³op! Wspomnê o tobie Diego.
-	AI_Output (self,other,"DIA_Dexter_KalomsRecipeSuccess_10_04"); //WeŸ to. To w nagrodê...
+	AI_Output (self,other,"DIA_Dexter_KalomsRecipeSuccess_10_02"); //Znakomicie! Teraz sam bÄ™dÄ™ mÃ³gÅ‚ wytwarzaÄ‡ napÃ³j uzdrawiajÄ…cy.
+	AI_Output (self,other,"DIA_Dexter_KalomsRecipeSuccess_10_03"); //RÃ³wny z ciebie chÅ‚op! WspomnÄ™ o tobie Diego.
+	AI_Output (self,other,"DIA_Dexter_KalomsRecipeSuccess_10_04"); //WeÅº to. To w nagrodÄ™...
 	
 	CreateInvItems (other,itminugget,50);
 	
@@ -304,12 +304,12 @@ FUNC VOID DIA_Dexter_KalomsRecipeSuccess_Info()
 	if (Npc_GetTrueGuild (hero) == GIL_NONE)
 	{
 		Log_SetTopicStatus(CH1_KalomsRecipe, LOG_SUCCESS);
-		B_LogEntry    (CH1_KalomsRecipe,"Dexter by³ pod wra¿eniem. Na pewno wspomni Diego o moich dokonaniach.");
+		B_LogEntry    (CH1_KalomsRecipe,"Dexter byÅ‚ pod wraÅ¼eniem. Na pewno wspomni Diego o moich dokonaniach.");
 	}
 	else
 	{
 		Log_SetTopicStatus(CH1_KalomsRecipe, LOG_SUCCESS);
-		B_LogEntry    (CH1_KalomsRecipe,"Dexter by³ pod wra¿eniem, ale co z tego? I tak nie mogê ju¿ zostaæ Cieniem.");
+		B_LogEntry    (CH1_KalomsRecipe,"Dexter byÅ‚ pod wraÅ¼eniem, ale co z tego? I tak nie mogÄ™ juÅ¼ zostaÄ‡ Cieniem.");
 	};
 	B_GiveXP (XP_DexterKalom);
 };

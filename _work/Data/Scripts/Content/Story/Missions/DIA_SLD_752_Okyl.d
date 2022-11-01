@@ -20,7 +20,7 @@ FUNC int DIA_SLD_752_OKYL_INTRO_CONDITION()
 
 func void DIA_SLD_752_OKYL_INTRO_INFO()
 {
-	AI_Output (self, other,"DIA_SLD_752_OKYL_INTRO_INFO_11_01"); //Hej, ty! Nie jesteœ jednym z moich ludzi! Czego tu szukasz?!
+	AI_Output (self, other,"DIA_SLD_752_OKYL_INTRO_INFO_11_01"); //Hej, ty! Nie jesteÅ› jednym z moich ludzi! Czego tu szukasz?!
 };
 
 //-------------------- Exit -----------------------------
@@ -33,7 +33,7 @@ instance DIA_SLD_752_OKYL_EXIT (C_INFO)
 	information		= DIA_SLD_752_OKYL_EXIT_INFO;
 	important		= 0;
 	permanent		= 1;
-	description 	= "Muszê ju¿ iœæ.";
+	description 	= "MuszÄ™ juÅ¼ iÅ›Ä‡.";
 };
 
 FUNC int DIA_SLD_752_OKYL_EXIT_CONDITION()
@@ -43,8 +43,8 @@ FUNC int DIA_SLD_752_OKYL_EXIT_CONDITION()
 
 func void DIA_SLD_752_OKYL_EXIT_INFO()
 {
-	AI_Output (other, self,"DIA_SLD_752_OKYL_EXIT_INFO_15_01"); //Muszê ju¿ iœæ.
-	AI_Output (self, other,"DIA_SLD_752_OKYL_EXIT_INFO_11_02");//To nie zawracaj mi g³owy!
+	AI_Output (other, self,"DIA_SLD_752_OKYL_EXIT_INFO_15_01"); //MuszÄ™ juÅ¼ iÅ›Ä‡.
+	AI_Output (self, other,"DIA_SLD_752_OKYL_EXIT_INFO_11_02");//To nie zawracaj mi gÅ‚owy!
 	AI_StopProcessInfos	( self );
 };
 
@@ -57,7 +57,7 @@ instance DIA_SLD_752_OKYL_UMSEHEN (C_INFO)
 	information		= DIA_SLD_752_OKYL_UMSEHEN_INFO;
 	important		= 0;
 	permanent		= 0;
-	description 	= "Tylko siê tu trochê rozejrzê.";
+	description 	= "Tylko siÄ™ tu trochÄ™ rozejrzÄ™.";
 };
 
 FUNC int DIA_SLD_752_OKYL_UMSEHEN_CONDITION()
@@ -67,8 +67,8 @@ FUNC int DIA_SLD_752_OKYL_UMSEHEN_CONDITION()
 
 func void DIA_SLD_752_OKYL_UMSEHEN_INFO()
 {
-	AI_Output (other, self,"DIA_SLD_752_OKYL_UMSEHEN_INFO_15_01"); //Tylko siê tu trochê rozejrzê.
-	AI_Output (self, other,"DIA_SLD_752_OKYL_UMSEHEN_INFO_11_02");//Tylko nie próbuj rozrabiaæ w Kotle, bo trafisz do piachu szybciej ni¿ myœlisz.
+	AI_Output (other, self,"DIA_SLD_752_OKYL_UMSEHEN_INFO_15_01"); //Tylko siÄ™ tu trochÄ™ rozejrzÄ™.
+	AI_Output (self, other,"DIA_SLD_752_OKYL_UMSEHEN_INFO_11_02");//Tylko nie prÃ³buj rozrabiaÄ‡ w Kotle, bo trafisz do piachu szybciej niÅ¼ myÅ›lisz.
 };
 
 //--------------------- Wer bist Du -----------------------------
@@ -80,7 +80,7 @@ instance DIA_SLD_752_OKYL_WERBISTDU (C_INFO)
 	information		= DIA_SLD_752_OKYL_WERBISTDU_INFO;
 	important		= 0;
 	permanent		= 0;
-	description 	= "Kim jesteœ?";
+	description 	= "Kim jesteÅ›?";
 };
 
 FUNC int DIA_SLD_752_OKYL_WERBISTDU_CONDITION()
@@ -90,8 +90,8 @@ FUNC int DIA_SLD_752_OKYL_WERBISTDU_CONDITION()
 
 func void DIA_SLD_752_OKYL_WERBISTDU_INFO()
 {
-	AI_Output (other, self,"DIA_SLD_752_OKYL_WERBISTDU_INFO_15_01"); //Kim jesteœ?
-	AI_Output (self, other,"DIA_SLD_752_OKYL_WERBISTDU_INFO_11_02");//Jestem Okyl. To ja rozkazujê w Kotle.
+	AI_Output (other, self,"DIA_SLD_752_OKYL_WERBISTDU_INFO_15_01"); //Kim jesteÅ›?
+	AI_Output (self, other,"DIA_SLD_752_OKYL_WERBISTDU_INFO_11_02");//Jestem Okyl. To ja rozkazujÄ™ w Kotle.
 
 };
 
@@ -104,7 +104,7 @@ instance DIA_SLD_752_OKYL_INMINE (C_INFO)
 	information		= DIA_SLD_752_OKYL_INMINE_INFO;
 	important		= 0;
 	permanent		= 0;
-	description 	= "Chcia³em rzuciæ okiem na kopalniê.";
+	description 	= "ChciaÅ‚em rzuciÄ‡ okiem na kopalniÄ™.";
 };
 
 FUNC int DIA_SLD_752_OKYL_INMINE_CONDITION()
@@ -114,10 +114,10 @@ FUNC int DIA_SLD_752_OKYL_INMINE_CONDITION()
 
 func void DIA_SLD_752_OKYL_INMINE_INFO()
 {
-	AI_Output (other, self,"DIA_SLD_752_OKYL_INMINE_INFO_15_01"); //Chcia³em rzuciæ okiem na kopalniê.
-	AI_Output (self, other,"DIA_SLD_752_OKYL_INMINE_INFO_11_02");//Och, chcia³eœ sobie zrobiæ ma³y spacer po kopalni, co?
-	AI_Output (self, other,"DIA_SLD_752_OKYL_INMINE_INFO_11_03");//Widzê, ¿e nie masz pojêcia co siê tutaj dzieje. Nikt nie mo¿e wejœæ do kopalni bez mojego pozwolenia.
-	AI_Output (self, other,"DIA_SLD_752_OKYL_INMINE_INFO_11_04");//I zapamiêtaj sobie: ktokolwiek wejdzie do stró¿ówki bez mojej zgody, bêdzie martwym cz³owiekiem.
+	AI_Output (other, self,"DIA_SLD_752_OKYL_INMINE_INFO_15_01"); //ChciaÅ‚em rzuciÄ‡ okiem na kopalniÄ™.
+	AI_Output (self, other,"DIA_SLD_752_OKYL_INMINE_INFO_11_02");//Och, chciaÅ‚eÅ› sobie zrobiÄ‡ maÅ‚y spacer po kopalni, co?
+	AI_Output (self, other,"DIA_SLD_752_OKYL_INMINE_INFO_11_03");//WidzÄ™, Å¼e nie masz pojÄ™cia co siÄ™ tutaj dzieje. Nikt nie moÅ¼e wejÅ›Ä‡ do kopalni bez mojego pozwolenia.
+	AI_Output (self, other,"DIA_SLD_752_OKYL_INMINE_INFO_11_04");//I zapamiÄ™taj sobie: ktokolwiek wejdzie do strÃ³Å¼Ã³wki bez mojej zgody, bÄ™dzie martwym czÅ‚owiekiem.
 };
 
 //----------------------- Erlaubniss kriegen -------------------------
@@ -143,7 +143,7 @@ FUNC int DIA_SLD_752_OKYL_PERMIT_CONDITION()
 func void DIA_SLD_752_OKYL_PERMIT_INFO()
 {
 	AI_Output (other, self,"DIA_SLD_752_OKYL_PERMIT_INFO_15_01");//Udzielisz mi powodzenia?
-	AI_Output (self, other,"DIA_SLD_752_OKYL_PERMIT_INFO_11_02");//Nawet ciê nie znam. Dlaczego mia³bym ciê wpuœciæ do kopalni?
-	AI_Output (self, other,"DIA_SLD_752_OKYL_PERMIT_INFO_11_03");//A teraz spadaj st¹d, mam du¿o roboty.
+	AI_Output (self, other,"DIA_SLD_752_OKYL_PERMIT_INFO_11_02");//Nawet ciÄ™ nie znam. Dlaczego miaÅ‚bym ciÄ™ wpuÅ›ciÄ‡ do kopalni?
+	AI_Output (self, other,"DIA_SLD_752_OKYL_PERMIT_INFO_11_03");//A teraz spadaj stÄ…d, mam duÅ¼o roboty.
 	AI_StopProcessInfos (self);
 };

@@ -23,7 +23,7 @@ FUNC VOID  DIA_GorNaDrak_EXIT_Info()
 };
 
 // **************************************************
-//					Erste Begrüssung
+//					Erste BegrÃ¼ssung
 // **************************************************
 
 instance  DIA_GorNaDrak_Greet (C_INFO)
@@ -33,7 +33,7 @@ instance  DIA_GorNaDrak_Greet (C_INFO)
 	condition	= DIA_GorNaDrak_Greet_Condition;
 	information	= DIA_GorNaDrak_Greet_Info;
 	permanent	= 0;
-	description  = "Czeœæ! Dok¹d siê wybieracie?";
+	description  = "CzeÅ›Ä‡! DokÄ…d siÄ™ wybieracie?";
 };                       
 
 FUNC int  DIA_GorNaDrak_Greet_Condition()
@@ -43,9 +43,9 @@ FUNC int  DIA_GorNaDrak_Greet_Condition()
 
 FUNC VOID  DIA_GorNaDrak_Greet_Info()
 {
-	AI_Output (other, self,"DIA_GorNaDrak_Greet_15_00"); //Czeœæ! Dok¹d siê wybieracie?
-	AI_Output (self, other,"DIA_GorNaDrak_Greet_09_01"); //Zabieramy wydzielinê pe³zaczy zdobyt¹ przez naszych braci w Starej Kopalni do Cor Kaloma.
-	AI_Output (self, other,"DIA_GorNaDrak_Greet_09_02"); //Codziennie udajemy siê do kopalni po now¹ porcjê wydzieliny.
+	AI_Output (other, self,"DIA_GorNaDrak_Greet_15_00"); //CzeÅ›Ä‡! DokÄ…d siÄ™ wybieracie?
+	AI_Output (self, other,"DIA_GorNaDrak_Greet_09_01"); //Zabieramy wydzielinÄ™ peÅ‚zaczy zdobytÄ… przez naszych braci w Starej Kopalni do Cor Kaloma.
+	AI_Output (self, other,"DIA_GorNaDrak_Greet_09_02"); //Codziennie udajemy siÄ™ do kopalni po nowÄ… porcjÄ™ wydzieliny.
 };
 
 // **************************************************
@@ -73,7 +73,7 @@ FUNC int  DIA_GorNaDrak_WasSekret_Condition()
 FUNC VOID  DIA_GorNaDrak_WasSekret_Info()
 {
 	AI_Output (other, self,"DIA_GorNaDrak_WasSekret_15_00"); //Co to za wydzielina?
-	AI_Output (self, other,"DIA_GorNaDrak_WasSekret_09_01"); //Pozyskujemy j¹ z wnêtrznoœci pe³zaczy. Przy odrobinie ostro¿noœci mo¿na wyci¹æ ich gruczo³y jadowe.
+	AI_Output (self, other,"DIA_GorNaDrak_WasSekret_09_01"); //Pozyskujemy jÄ… z wnÄ™trznoÅ›ci peÅ‚zaczy. Przy odrobinie ostroÅ¼noÅ›ci moÅ¼na wyciÄ…Ä‡ ich gruczoÅ‚y jadowe.
 };
 
 // **************************************************
@@ -87,7 +87,7 @@ instance  DIA_GorNaDrak_TeachMandibles (C_INFO)
 	condition	= DIA_GorNaDrak_TeachMandibles_Condition;
 	information	= DIA_GorNaDrak_TeachMandibles_Info;
 	permanent	= 0;
-	description  = "Mo¿esz mnie nauczyæ pozyskiwaæ wydzielinê pe³zaczy?";
+	description  = "MoÅ¼esz mnie nauczyÄ‡ pozyskiwaÄ‡ wydzielinÄ™ peÅ‚zaczy?";
 };                       
 
 FUNC int  DIA_GorNaDrak_TeachMandibles_Condition()
@@ -100,17 +100,17 @@ FUNC int  DIA_GorNaDrak_TeachMandibles_Condition()
 
 FUNC VOID  DIA_GorNaDrak_TeachMandibles_Info()
 {
-	AI_Output (other, self,"DIA_GorNaDrak_TeachMandibles_15_00"); //Mo¿esz mnie nauczyæ pozyskiwaæ wydzielinê pe³zaczy?
-	AI_Output (self, other,"DIA_GorNaDrak_TeachMandibles_09_01"); //Oczywiœcie! Natychmiast po zabiciu potwora wytnij jego gruczo³y jadowe. Tylko pod ¿adnym pozorem nie wolno ci ich uszkodziæ!
+	AI_Output (other, self,"DIA_GorNaDrak_TeachMandibles_15_00"); //MoÅ¼esz mnie nauczyÄ‡ pozyskiwaÄ‡ wydzielinÄ™ peÅ‚zaczy?
+	AI_Output (self, other,"DIA_GorNaDrak_TeachMandibles_09_01"); //OczywiÅ›cie! Natychmiast po zabiciu potwora wytnij jego gruczoÅ‚y jadowe. Tylko pod Å¼adnym pozorem nie wolno ci ich uszkodziÄ‡!
 	
-	PrintScreen	("Nowa umiejêtnoœæ: Wycinanie wnêtrznoœci pe³zaczy", -1,-1,"FONT_OLD_20_WHITE.TGA",3);
+	PrintScreen	("Nowa umiejÄ™tnoÅ›Ä‡: Wycinanie wnÄ™trznoÅ›ci peÅ‚zaczy", -1,-1,"FONT_OLD_20_WHITE.TGA",3);
 	Knows_GetMCMandibles = TRUE;
 	Log_CreateTopic (GE_AnimalTrophies,LOG_NOTE);
-	B_LogEntry (GE_AnimalTrophies,"Jak usuwaæ wnêtrznoœci pe³zaczy.");
+	B_LogEntry (GE_AnimalTrophies,"Jak usuwaÄ‡ wnÄ™trznoÅ›ci peÅ‚zaczy.");
 };
 
 // **************************************************
-//			 	Wofür ist Sekret da?
+//			 	WofÃ¼r ist Sekret da?
 // **************************************************
 
 instance  DIA_GorNaDrak_WhatFor (C_INFO)
@@ -134,9 +134,9 @@ FUNC int  DIA_GorNaDrak_WhatFor_Condition()
 FUNC VOID  DIA_GorNaDrak_WhatFor_Info()
 {
 	AI_Output (other, self,"DIA_GorNaDrak_WhatFor_15_00"); //Po co Cor Kalomowi ta wydzielina?
-	AI_Output (self, other,"DIA_GorNaDrak_WhatFor_09_01"); //Z tego co wiem, przyrz¹dza z nich napój, który zwiêksza magiczne zdolnoœci Nowicjuszy.
-	AI_Output (self, other,"DIA_GorNaDrak_WhatFor_09_02"); //Przygotowujemy siê teraz do wielkiego przyzwania, wiêc potrzebujemy jak najwiêcej tej wydzieliny.
-	AI_Output (self, other,"DIA_GorNaDrak_WhatFor_09_03"); //Przy pomocy tego napoju Nowicjusze przywo³aj¹ Œni¹cego.
+	AI_Output (self, other,"DIA_GorNaDrak_WhatFor_09_01"); //Z tego co wiem, przyrzÄ…dza z nich napÃ³j, ktÃ³ry zwiÄ™ksza magiczne zdolnoÅ›ci Nowicjuszy.
+	AI_Output (self, other,"DIA_GorNaDrak_WhatFor_09_02"); //Przygotowujemy siÄ™ teraz do wielkiego przyzwania, wiÄ™c potrzebujemy jak najwiÄ™cej tej wydzieliny.
+	AI_Output (self, other,"DIA_GorNaDrak_WhatFor_09_03"); //Przy pomocy tego napoju Nowicjusze przywoÅ‚ajÄ… ÅšniÄ…cego.
 };
 
 // **************************************************
@@ -150,7 +150,7 @@ instance  DIA_GorNaDrak_Permanent (C_INFO)
 	condition	= DIA_GorNaDrak_Permanent_Condition;
 	information	= DIA_GorNaDrak_Permanent_Info;
 	permanent	= 1;
-	description  = "Czy macie ju¿ wystarczaj¹co du¿o napoju, by przywo³aæ Œni¹cego?";
+	description  = "Czy macie juÅ¼ wystarczajÄ…co duÅ¼o napoju, by przywoÅ‚aÄ‡ ÅšniÄ…cego?";
 };                       
 
 FUNC int  DIA_GorNaDrak_Permanent_Condition()
@@ -163,8 +163,8 @@ FUNC int  DIA_GorNaDrak_Permanent_Condition()
 
 FUNC VOID  DIA_GorNaDrak_Permanent_Info()
 {
-	AI_Output (other, self,"DIA_GorNaDrak_Permanent_15_00"); //Czy macie ju¿ wystarczaj¹co du¿o napoju, by przywo³aæ Œni¹cego?
-	AI_Output (self, other,"DIA_GorNaDrak_Permanent_09_01"); //Niestety! Nasi myœliwi poluj¹ na pe³zacze dniem i noc¹, ale wci¹¿ nie mamy doœæ wydzieliny.
+	AI_Output (other, self,"DIA_GorNaDrak_Permanent_15_00"); //Czy macie juÅ¼ wystarczajÄ…co duÅ¼o napoju, by przywoÅ‚aÄ‡ ÅšniÄ…cego?
+	AI_Output (self, other,"DIA_GorNaDrak_Permanent_09_01"); //Niestety! Nasi myÅ›liwi polujÄ… na peÅ‚zacze dniem i nocÄ…, ale wciÄ…Å¼ nie mamy doÅ›Ä‡ wydzieliny.
 };
 
 

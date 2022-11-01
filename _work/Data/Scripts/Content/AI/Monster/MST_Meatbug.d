@@ -4,7 +4,7 @@
 
 PROTOTYPE Mst_Default_Meatbug(C_Npc)			
 {
-	name							=	"Chrz¹szcz";
+	name							=	"ChrzÄ…szcz";
 	guild							=	GIL_MEATBUG;
 	aivar[AIV_MM_REAL_ID]			= 	ID_MEATBUG;
 	level							=	1;
@@ -27,7 +27,7 @@ PROTOTYPE Mst_Default_Meatbug(C_Npc)
 //-------------------------------------------------------
 	damagetype 						= 	DAM_EDGE;
 //-------------------------------------------------------
-//	fight_tactic					= ;		// kämpfen nicht!
+//	fight_tactic					= ;		// kÃ¤mpfen nicht!
 //-------------------------------------------------------
 	senses							= SENSE_SMELL;
 	senses_range					= 500;		// 5m
@@ -55,7 +55,7 @@ func void Set_Meatbug_Visuals()
 INSTANCE Meatbug	(Mst_Default_Meatbug)
 {
 	Set_Meatbug_Visuals();
-	//Npc_SetToFistMode(self);  //SN: damit der Kleine keine unnötigen PERC_ASSESSFIGHTER auslöst!
+	//Npc_SetToFistMode(self);  //SN: damit der Kleine keine unnÃ¶tigen PERC_ASSESSFIGHTER auslÃ¶st!
 	
 	CreateInvItems (self, ItAt_Meatbug_01, 1);
 };

@@ -25,72 +25,72 @@ func int B_GiveSkill(var C_NPC typ, var int TAL, var int NEW_Wert, var int LP_Co
 			{	
 				Npc_SetTalentSkill(typ, NPC_TALENT_1H, NEW_Wert);
 				Npc_SetTalentValue(typ, NPC_TALENT_1H, Npc_GetTalentValue(typ, NPC_TALENT_1H)+5);
-				PrintScreen	("Nowa umiejêtnoœæ: Walka jednorêcznym orê¿em", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
+				PrintScreen	("Nowa umiejÄ™tnoÅ›Ä‡: Walka jednorÄ™cznym orÄ™Å¼em", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
 				return 1;
 			}
 			else if (tal == NPC_TALENT_2H)
 			{
 				Npc_SetTalentSkill(typ, NPC_TALENT_2H, NEW_Wert);
 				Npc_SetTalentValue(typ, NPC_TALENT_2H, Npc_GetTalentValue(typ, NPC_TALENT_2H)+5);
-				PrintScreen	("Nowa umiejêtnoœæ: Walka dwurêcznym orê¿em", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
+				PrintScreen	("Nowa umiejÄ™tnoÅ›Ä‡: Walka dwurÄ™cznym orÄ™Å¼em", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
 				return 1;
 			}
 			else if (tal == NPC_TALENT_BOW)
 			{
 				Npc_SetTalentSkill(typ, NPC_TALENT_BOW, NEW_Wert);
 				Npc_SetTalentValue(typ, NPC_TALENT_BOW, Npc_GetTalentValue(typ, NPC_TALENT_BOW)+15);
-				PrintScreen	("Nowa umiejêtnoœæ: Strzelanie z ³uku", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
+				PrintScreen	("Nowa umiejÄ™tnoÅ›Ä‡: Strzelanie z Å‚uku", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
 				return 1;
 			}
 			else if (tal == NPC_TALENT_CROSSBOW)
 			{
 				Npc_SetTalentSkill(typ, NPC_TALENT_CROSSBOW, NEW_Wert);
 				Npc_SetTalentValue(typ, NPC_TALENT_CROSSBOW, Npc_GetTalentValue(typ, NPC_TALENT_CROSSBOW)+20);
-				PrintScreen	("Nowa umiejêtnoœæ: Strzelanie z kuszy", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
+				PrintScreen	("Nowa umiejÄ™tnoÅ›Ä‡: Strzelanie z kuszy", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
 				return 1;
 			}
 			else if (tal == NPC_TALENT_PICKLOCK)
 			{
 				Npc_SetTalentSkill(typ, NPC_TALENT_PICKLOCK, NEW_Wert);
 				Npc_SetTalentValue(typ, NPC_TALENT_PICKLOCK, Npc_GetTalentValue(typ, NPC_TALENT_PICKLOCK)-40);
-				PrintScreen	("Nowa umiejêtnoœæ: Otwieranie zamków", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
+				PrintScreen	("Nowa umiejÄ™tnoÅ›Ä‡: Otwieranie zamkÃ³w", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
 				return 1;
 			}
 			else if (tal == NPC_TALENT_PICKPOCKET)
 			{
 				Npc_SetTalentSkill(typ, NPC_TALENT_PICKPOCKET, NEW_Wert);
 				Npc_SetTalentValue(typ, NPC_TALENT_PICKPOCKET, Npc_GetTalentValue(typ, NPC_TALENT_PICKPOCKET)-40);
-				PrintScreen	("Nowa umiejêtnoœæ: Kradzie¿ kieszonkowa", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
+				PrintScreen	("Nowa umiejÄ™tnoÅ›Ä‡: KradzieÅ¼ kieszonkowa", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
 				return 1;
 			}
 			else if (tal == NPC_TALENT_MAGE)
 			{
 				Npc_SetTalentSkill(typ, NPC_TALENT_MAGE, NEW_Wert);
-				PrintScreen	("Nowa umiejêtnoœæ: Kolejny kr¹g magii", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
+				PrintScreen	("Nowa umiejÄ™tnoÅ›Ä‡: Kolejny krÄ…g magii", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
 				return 1;
 			}
 			else if (tal == NPC_TALENT_SNEAK)
 			{
 				Npc_SetTalentSkill(typ, NPC_TALENT_SNEAK, NEW_Wert);
-				PrintScreen	("Nowa umiejêtnoœæ: Skradanie siê", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
+				PrintScreen	("Nowa umiejÄ™tnoÅ›Ä‡: Skradanie siÄ™", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
 				return 1;
 			}
 			else if (tal == NPC_TALENT_REGENERATE)
 			{
 				Npc_SetTalentSkill(typ, NPC_TALENT_REGENERATE, NEW_Wert);
-				PrintScreen	("Zwiêkszone tempo regeneracji", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
+				PrintScreen	("ZwiÄ™kszone tempo regeneracji", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
 				return 1;
 			}
 			else if (tal == NPC_TALENT_FIREMASTER)
 			{
 				Npc_SetTalentSkill(typ, NPC_TALENT_FIREMASTER, NEW_Wert);
-				PrintScreen	("Nowa umiejêtnoœæ: Mistrz Ognia", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
+				PrintScreen	("Nowa umiejÄ™tnoÅ›Ä‡: Mistrz Ognia", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
 				return 1;
 			}
 			else if (tal == NPC_TALENT_ACROBAT)
 			{
 				Npc_SetTalentSkill(typ, NPC_TALENT_ACROBAT, NEW_Wert);
-				PrintScreen	("Nowa umiejêtnoœæ: Akrobatyka", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
+				PrintScreen	("Nowa umiejÄ™tnoÅ›Ä‡: Akrobatyka", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
 				return 1;
 			}
 			else
@@ -100,7 +100,7 @@ func int B_GiveSkill(var C_NPC typ, var int TAL, var int NEW_Wert, var int LP_Co
 		}
 		else 
 		{
-			PrintScreen	("Za ma³o punktów umiejêtnoœci!", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
+			PrintScreen	("Za maÅ‚o punktÃ³w umiejÄ™tnoÅ›ci!", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
 			B_Say (self, other, "$NOLEARNNOPOINTS");
 			return 0;
 		};
@@ -112,9 +112,9 @@ func int B_GiveSkill(var C_NPC typ, var int TAL, var int NEW_Wert, var int LP_Co
 			B_Say (self, other, "$NOLEARNYOUREBETTER"); //Du bist jetzt schon besser!
 			return 0;
 		}
-		else if ((TAL_Wert+1) < NEW_Wert) //d.h. i.d.R. TAL_Wert=2 und NEW_Wert=0, außer bei TALENT_MAGE
+		else if ((TAL_Wert+1) < NEW_Wert) //d.h. i.d.R. TAL_Wert=2 und NEW_Wert=0, auÃŸer bei TALENT_MAGE
 		{
-			B_Say (self, other, "$NOLEARNYOUALREADYKNOW"); //Du mußt erst Fortgeschritten sein, bevor du ein Meister werden kannst!
+			B_Say (self, other, "$NOLEARNYOUALREADYKNOW"); //Du muÃŸt erst Fortgeschritten sein, bevor du ein Meister werden kannst!
 			return 0;
 		};
 	};	

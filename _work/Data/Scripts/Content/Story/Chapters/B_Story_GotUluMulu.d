@@ -1,10 +1,10 @@
 func void B_Story_GotUluMulu()
 {
-	//-------- Missionsgegenstände --------
+	//-------- MissionsgegenstÃ¤nde --------
 	CreateInvItem		(hero, UluMulu);
 	
-	//-------- Tagebucheinträge --------
-	B_LogEntry			(CH4_UluMulu,"Zadanie skoñczone. Tarrok otrzyma³ wszystkie elementy potrzebne do stworzenia Ulu-Mulu. Mam tylko nadziejê, ¿e orkowie strzeg¹cy œwi¹tyni Œni¹cego uszanuj¹ amulet.");
+	//-------- TagebucheintrÃ¤ge --------
+	B_LogEntry			(CH4_UluMulu,"Zadanie skoÅ„czone. Tarrok otrzymaÅ‚ wszystkie elementy potrzebne do stworzenia Ulu-Mulu. Mam tylko nadziejÄ™, Å¼e orkowie strzegÄ…cy Å›wiÄ…tyni ÅšniÄ…cego uszanujÄ… amulet.");
 	Log_SetTopicStatus	(CH4_UluMulu,	LOG_SUCCESS);
 	
 	//-------- Erfahrung --------

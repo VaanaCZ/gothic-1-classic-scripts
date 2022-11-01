@@ -33,7 +33,7 @@ INSTANCE DIA_Huno_YouKnowYourJob (C_INFO)
 	information		= DIA_Huno_YouKnowYourJob_Info;
 	permanent		= 0;
 	important		= 0;
-	description		= "Widzê, ¿e znasz siê na swoim fachu.";
+	description		= "WidzÄ™, Å¼e znasz siÄ™ na swoim fachu.";
 };
 
 FUNC INT DIA_Huno_YouKnowYourJob_Condition()
@@ -43,9 +43,9 @@ FUNC INT DIA_Huno_YouKnowYourJob_Condition()
 
 FUNC VOID DIA_Huno_YouKnowYourJob_Info()
 {
-	AI_Output (other,self,"DIA_Huno_YouKnowYourJob_15_00"); //Widzê, ¿e znasz siê na swoim fachu.
-	AI_Output (self,other,"DIA_Huno_YouKnowYourJob_09_01"); //Jeszcze nikt nie mia³ powodu do narzekania.
-	AI_Output (self,other,"DIA_Huno_YouKnowYourJob_09_02"); //I lepiej, ¿eby nikt tego nie robi³! Ka¿dy dureñ potrzebuje miecza, i to w³aœnie ode mnie dostaj¹!
+	AI_Output (other,self,"DIA_Huno_YouKnowYourJob_15_00"); //WidzÄ™, Å¼e znasz siÄ™ na swoim fachu.
+	AI_Output (self,other,"DIA_Huno_YouKnowYourJob_09_01"); //Jeszcze nikt nie miaÅ‚ powodu do narzekania.
+	AI_Output (self,other,"DIA_Huno_YouKnowYourJob_09_02"); //I lepiej, Å¼eby nikt tego nie robiÅ‚! KaÅ¼dy dureÅ„ potrzebuje miecza, i to wÅ‚aÅ›nie ode mnie dostajÄ…!
 };
 
 
@@ -60,7 +60,7 @@ INSTANCE DIA_Huno_HowLong (C_INFO)
 	information		= DIA_Huno_HowLong_Info;
 	permanent		= 0;
 	important		= 0;
-	description		= "Jak d³ugo zajmuje wykucie jednego miecza?";
+	description		= "Jak dÅ‚ugo zajmuje wykucie jednego miecza?";
 };
 
 FUNC INT DIA_Huno_HowLong_Condition()
@@ -73,13 +73,13 @@ FUNC INT DIA_Huno_HowLong_Condition()
 
 FUNC VOID DIA_Huno_HowLong_Info()
 {
-	AI_Output (other,self,"DIA_Huno_HowLong_15_00"); //Jak d³ugo zajmuje wykucie jednego miecza?
-	AI_Output (self,other,"DIA_Huno_HowLong_09_01"); //To zale¿y. Jeœli chodzi o najprostsze ostrza, wystarczy kilka minut.
-	AI_Output (self,other,"DIA_Huno_HowLong_09_02"); //Oczywiœcie pod warunkiem, ¿e jestem odpowiednio zmotywowany... Finansowo.
-	AI_Output (self,other,"DIA_Huno_HowLong_09_03"); //Oczywiœcie œwiry pokroju Œwistaka musz¹ czekaæ na swoje cacka nieco d³u¿ej.
-	AI_Output (other,self,"DIA_Huno_HowLong_15_04"); //Dlaczego? Czy¿by Œwistak za ma³o ci zap³aci³?
-	AI_Output (self,other,"DIA_Huno_HowLong_09_05"); //Nie, wrêcz przeciwnie. Za swój ostatni miecz da³ mi 150 bry³ek rudy.
-	AI_Output (self,other,"DIA_Huno_HowLong_09_06"); //Ale facet lubi bogate zdobienia i takie tam babskie fanaberie, a to oczywiœcie kosztuje!
+	AI_Output (other,self,"DIA_Huno_HowLong_15_00"); //Jak dÅ‚ugo zajmuje wykucie jednego miecza?
+	AI_Output (self,other,"DIA_Huno_HowLong_09_01"); //To zaleÅ¼y. JeÅ›li chodzi o najprostsze ostrza, wystarczy kilka minut.
+	AI_Output (self,other,"DIA_Huno_HowLong_09_02"); //OczywiÅ›cie pod warunkiem, Å¼e jestem odpowiednio zmotywowany... Finansowo.
+	AI_Output (self,other,"DIA_Huno_HowLong_09_03"); //OczywiÅ›cie Å›wiry pokroju Åšwistaka muszÄ… czekaÄ‡ na swoje cacka nieco dÅ‚uÅ¼ej.
+	AI_Output (other,self,"DIA_Huno_HowLong_15_04"); //Dlaczego? CzyÅ¼by Åšwistak za maÅ‚o ci zapÅ‚aciÅ‚?
+	AI_Output (self,other,"DIA_Huno_HowLong_09_05"); //Nie, wrÄ™cz przeciwnie. Za swÃ³j ostatni miecz daÅ‚ mi 150 bryÅ‚ek rudy.
+	AI_Output (self,other,"DIA_Huno_HowLong_09_06"); //Ale facet lubi bogate zdobienia i takie tam babskie fanaberie, a to oczywiÅ›cie kosztuje!
 	AI_Output (self,other,"DIA_Huno_HowLong_09_07"); //Hej, ciekawski z ciebie facet, kolego!
 };
 
@@ -94,7 +94,7 @@ INSTANCE DIA_Huno_HowsYourBusiness (C_INFO)
 	information		= DIA_Huno_HowsYourBusiness_Info;
 	permanent		= 1;
 	important		= 0;
-	description		= "Jak stoisz z prac¹, kowalu?";
+	description		= "Jak stoisz z pracÄ…, kowalu?";
 };
 
 FUNC INT DIA_Huno_HowsYourBusiness_Condition()
@@ -107,12 +107,12 @@ FUNC INT DIA_Huno_HowsYourBusiness_Condition()
 
 FUNC VOID DIA_Huno_HowsYourBusiness_Info()
 {
-	AI_Output (other,self,"DIA_Huno_HowsYourBusiness_15_00"); //Jak stoisz z prac¹, kowalu?
-	AI_Output (self,other,"DIA_Huno_HowsYourBusiness_09_01"); //A co ciê to obchodzi?
-	AI_Output (other,self,"DIA_Huno_HowsYourBusiness_15_02"); //Byæ mo¿e mam dla ciebie zamówienie.
-	AI_Output (self,other,"DIA_Huno_HowsYourBusiness_09_03"); //Czy¿by? A có¿ takiego, jeœli wolno spytaæ?
-	AI_Output (other,self,"DIA_Huno_HowsYourBusiness_15_04"); //Jeszcze siê zastanowiê.
-	AI_Output (self,other,"DIA_Huno_HowsYourBusiness_09_05"); //Wróæ, jak naprawdê bêdziesz czegoœ potrzebowa³. Póki co - nie zawracaj mi g³owy.
+	AI_Output (other,self,"DIA_Huno_HowsYourBusiness_15_00"); //Jak stoisz z pracÄ…, kowalu?
+	AI_Output (self,other,"DIA_Huno_HowsYourBusiness_09_01"); //A co ciÄ™ to obchodzi?
+	AI_Output (other,self,"DIA_Huno_HowsYourBusiness_15_02"); //ByÄ‡ moÅ¼e mam dla ciebie zamÃ³wienie.
+	AI_Output (self,other,"DIA_Huno_HowsYourBusiness_09_03"); //CzyÅ¼by? A cÃ³Å¼ takiego, jeÅ›li wolno spytaÄ‡?
+	AI_Output (other,self,"DIA_Huno_HowsYourBusiness_15_04"); //Jeszcze siÄ™ zastanowiÄ™.
+	AI_Output (self,other,"DIA_Huno_HowsYourBusiness_09_05"); //WrÃ³Ä‡, jak naprawdÄ™ bÄ™dziesz czegoÅ› potrzebowaÅ‚. PÃ³ki co - nie zawracaj mi gÅ‚owy.
 };
 
 // **************************************************
@@ -129,7 +129,7 @@ INSTANCE DIA_Huno_LEARNSMITH (C_INFO)
 	information		= DIA_Huno_LEARNSMITH_Info;
 	permanent		= 1;
 	important		= 0;
-	description		= "Chêtnie spróbowa³bym si³ jako kowal.";
+	description		= "ChÄ™tnie sprÃ³bowaÅ‚bym siÅ‚ jako kowal.";
 };
 
 FUNC INT DIA_Huno_LEARNSMITH_Condition()
@@ -142,15 +142,15 @@ FUNC INT DIA_Huno_LEARNSMITH_Condition()
 
 FUNC VOID DIA_Huno_LEARNSMITH_Info()
 {
-	AI_Output (other,self,"DIA_Huno_LEARNSMITH_15_00"); //Chêtnie spróbowa³bym si³ jako kowal.
-	AI_Output (self,other,"DIA_Huno_LEARNSMITH_09_01"); //Tylko nie wyobra¿aj sobie, ¿e tak ³atwo jest wykuæ solidny miecz!
-	AI_Output (other,self,"DIA_Huno_LEARNSMITH_15_02"); //Co powinienem zrobiæ?
-	AI_Output (self,other,"DIA_Huno_LEARNSMITH_09_03"); //Dobra, weŸ stal i rozgrzej j¹ nad ogniem.
-	AI_Output (self,other,"DIA_Huno_LEARNSMITH_09_04"); //Potem rozbij j¹ na kowadle.
-	AI_Output (self,other,"DIA_Huno_LEARNSMITH_09_05"); //Jak skoñczysz, w³ó¿ rozgrzane ostrze do wody, ¿eby je zahartowaæ.
-	AI_Output (self,other,"DIA_Huno_LEARNSMITH_09_06"); //Na koniec trzeba je jeszcze naostrzyæ na kamieniu szlifierskim.
+	AI_Output (other,self,"DIA_Huno_LEARNSMITH_15_00"); //ChÄ™tnie sprÃ³bowaÅ‚bym siÅ‚ jako kowal.
+	AI_Output (self,other,"DIA_Huno_LEARNSMITH_09_01"); //Tylko nie wyobraÅ¼aj sobie, Å¼e tak Å‚atwo jest wykuÄ‡ solidny miecz!
+	AI_Output (other,self,"DIA_Huno_LEARNSMITH_15_02"); //Co powinienem zrobiÄ‡?
+	AI_Output (self,other,"DIA_Huno_LEARNSMITH_09_03"); //Dobra, weÅº stal i rozgrzej jÄ… nad ogniem.
+	AI_Output (self,other,"DIA_Huno_LEARNSMITH_09_04"); //Potem rozbij jÄ… na kowadle.
+	AI_Output (self,other,"DIA_Huno_LEARNSMITH_09_05"); //Jak skoÅ„czysz, wÅ‚Ã³Å¼ rozgrzane ostrze do wody, Å¼eby je zahartowaÄ‡.
+	AI_Output (self,other,"DIA_Huno_LEARNSMITH_09_06"); //Na koniec trzeba je jeszcze naostrzyÄ‡ na kamieniu szlifierskim.
 	AI_Output (other,self,"DIA_Huno_LEARNSMITH_15_07"); //Rozumiem.
-	AI_Output (self,other,"DIA_Huno_LEARNSMITH_09_08"); //Oczywiœcie do tego wszystkiego potrzeba odpowiedniego wyposa¿enia. Móg³bym ci je sprzedaæ, jeœli chcesz.
+	AI_Output (self,other,"DIA_Huno_LEARNSMITH_09_08"); //OczywiÅ›cie do tego wszystkiego potrzeba odpowiedniego wyposaÅ¼enia. MÃ³gÅ‚bym ci je sprzedaÄ‡, jeÅ›li chcesz.
 
 	Huno_LearnSmith = TRUE;
 };
@@ -166,7 +166,7 @@ INSTANCE DIA_Huno_BUYSMITH (C_INFO)
 	information		= DIA_Huno_BUYSMITH_Info;
 	permanent		= 1;
 	important		= 0;
-	description		= "Chcia³bym kupiæ narzêdzia kowalskie!";
+	description		= "ChciaÅ‚bym kupiÄ‡ narzÄ™dzia kowalskie!";
 	trade			= 1;
 };
 
@@ -180,7 +180,7 @@ FUNC INT DIA_Huno_BUYSMITH_Condition()
 
 FUNC VOID DIA_Huno_BUYSMITH_Info()
 {
-	AI_Output (other,self,"DIA_Huno_BUYSMITH_15_00"); //Chcia³bym kupiæ narzêdzia kowalskie!
+	AI_Output (other,self,"DIA_Huno_BUYSMITH_15_00"); //ChciaÅ‚bym kupiÄ‡ narzÄ™dzia kowalskie!
 
 	if	(Npc_HasItems(self,ItMiSwordRaw		) < 5)		{	CreateInvItems(self,ItMiSwordRaw,		5);	};
 	if	(Npc_HasItems(self,ItMiSwordRawHot	) < 5)		{	CreateInvItems(self,ItMiSwordRawHot,	5);	};

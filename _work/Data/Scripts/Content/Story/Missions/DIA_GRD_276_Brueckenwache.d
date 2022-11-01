@@ -33,7 +33,7 @@ INSTANCE Info_GRD_276_Tips(C_INFO)
 	condition	= Info_GRD_276_Tips_Condition;
 	information	= Info_GRD_276_Tips_Info;
 	permanent	= 0;
-	description = "Czeœæ, jestem tu nowy.";
+	description = "CzeÅ›Ä‡, jestem tu nowy.";
 };                       
 
 FUNC INT Info_GRD_276_Tips_Condition()
@@ -45,8 +45,8 @@ FUNC INT Info_GRD_276_Tips_Condition()
 };
 FUNC VOID Info_GRD_276_Tips_Info()
 {
-	AI_Output (other,self,"Info_GRD_276_Tips_15_00"); //Czeœæ, jestem tu nowy.
-	AI_Output (self,other,"Info_GRD_276_Tips_07_01"); //To œwietnie.
+	AI_Output (other,self,"Info_GRD_276_Tips_15_00"); //CzeÅ›Ä‡, jestem tu nowy.
+	AI_Output (self,other,"Info_GRD_276_Tips_07_01"); //To Å›wietnie.
 };
 
 // *****************************************************************
@@ -60,7 +60,7 @@ INSTANCE Info_GRD_276_Bla(C_INFO)
 	condition	= Info_GRD_276_Bla_Condition;
 	information	= Info_GRD_276_Bla_Info;
 	permanent	= 1;
-	description = "Czy to jest Stary Obóz?";
+	description = "Czy to jest Stary ObÃ³z?";
 };                       
 
 FUNC INT Info_GRD_276_Bla_Condition()
@@ -73,7 +73,7 @@ FUNC INT Info_GRD_276_Bla_Condition()
 
 FUNC VOID Info_GRD_276_Bla_Info()
 {
-	AI_Output (other,self,"Info_GRD_276_Bla_15_00"); //Czy to jest Stary Obóz?
-	AI_Output (self,other,"Info_GRD_276_Bla_07_01"); //Nie, Nowy! Stary Obóz le¿y pod mostem.
+	AI_Output (other,self,"Info_GRD_276_Bla_15_00"); //Czy to jest Stary ObÃ³z?
+	AI_Output (self,other,"Info_GRD_276_Bla_07_01"); //Nie, Nowy! Stary ObÃ³z leÅ¼y pod mostem.
 	AI_StopProcessInfos(self);
 };

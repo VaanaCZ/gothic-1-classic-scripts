@@ -33,7 +33,7 @@ INSTANCE DIA_Sfb_1001_Hello(C_INFO)
 	condition	= DIA_Sfb_1001_Hello_Condition;
 	information	= DIA_Sfb_1001_Hello_Info;
 	permanent	= 1;
-	description = "Co s³ychaæ w kopalni?";
+	description = "Co sÅ‚ychaÄ‡ w kopalni?";
 };                       
 
 FUNC INT DIA_Sfb_1001_Hello_Condition()
@@ -43,7 +43,7 @@ FUNC INT DIA_Sfb_1001_Hello_Condition()
 
 FUNC VOID DIA_Sfb_1001_Hello_Info()
 {	
-	AI_Output (other, self,"DIA_Sfb_1001_Hello_15_00"); //Co s³ychaæ w kopalni?
-	AI_Output (self, other,"DIA_Sfb_1001_Hello_02_01"); //Wiêkszoœæ roboty mamy ju¿ za sob¹. Jeszcze tylko kilka tygodni i bêdziemy mieli doœæ.
+	AI_Output (other, self,"DIA_Sfb_1001_Hello_15_00"); //Co sÅ‚ychaÄ‡ w kopalni?
+	AI_Output (self, other,"DIA_Sfb_1001_Hello_02_01"); //WiÄ™kszoÅ›Ä‡ roboty mamy juÅ¼ za sobÄ…. Jeszcze tylko kilka tygodni i bÄ™dziemy mieli doÅ›Ä‡.
 	AI_StopProcessInfos	(self);
 };

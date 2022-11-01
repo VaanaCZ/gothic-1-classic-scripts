@@ -4,7 +4,7 @@
 
 PROTOTYPE Mst_Default_OrcScout(C_Npc)			
 {
-	name							=	"Ork-myúliwy";
+	name							=	"Ork-my≈õliwy";
 	guild							=	GIL_ORCSCOUT;
 	npctype							=	NPCTYPE_GUARD;
 	voice							=	17;
@@ -107,7 +107,7 @@ INSTANCE OrcScoutGYD (Mst_Default_OrcScout)
 	name						=	"Ork-zwiadowca";
 	level						=	18;
 
-	attribute[ATR_STRENGTH]		=	30;	// SN: regul‰re OrcScouts w‰ren an dieser Stelle noch zu heftig!
+	attribute[ATR_STRENGTH]		=	30;	// SN: regul√§re OrcScouts w√§ren an dieser Stelle noch zu heftig!
 
 	aivar[AIV_MM_PercRange]		=	1500;
 	aivar[AIV_MM_DrohRange]		=	1200;

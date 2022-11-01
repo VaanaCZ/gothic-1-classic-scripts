@@ -18,7 +18,7 @@ FUNC int  Tpl_1433_GorNaVid_Exit_Condition()
 
 FUNC VOID  Tpl_1433_GorNaVid_Exit_Info()
 {
-	AI_Output (self, other,"Tpl_1433_GorNaVid_Exit_Info_13_02"); //Niech nadejdzie przebudzenie Œni¹cego.
+	AI_Output (self, other,"Tpl_1433_GorNaVid_Exit_Info_13_02"); //Niech nadejdzie przebudzenie ÅšniÄ…cego.
 	AI_StopProcessInfos	( self );
 };
 
@@ -31,7 +31,7 @@ instance  Tpl_1433_GorNaVid_HEALTH (C_INFO)
 	information		= Tpl_1433_GorNaVid_HEALTH_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Potrzebujê twojej pomocy."; 
+	description		= "PotrzebujÄ™ twojej pomocy."; 
 };
 
 FUNC int  Tpl_1433_GorNaVid_HEALTH_Condition()
@@ -45,10 +45,10 @@ FUNC int  Tpl_1433_GorNaVid_HEALTH_Condition()
 
 FUNC void  Tpl_1433_GorNaVid_HEALTH_Info()
 {
-	AI_Output (other, self,"Tpl_1433_GorNaVid_HEALTH_Info_15_01"); //Potrzebujê twojej pomocy.
-	AI_Output (other, self,"Tpl_1433_GorNaVid_HEALTH_Info_15_02"); //Szukam wydzieliny pe³zaczy dla Kaloma, i chyba wiem ju¿, gdzie znajduje siê gniazdo tych drapie¿ców.
-	AI_Output (other, self,"Tpl_1433_GorNaVid_HEALTH_Info_15_03"); //Pomo¿esz mi po otwarciu przejœcia?
-	AI_Output (self, other,"Tpl_1433_GorNaVid_HEALTH_Info_13_04"); //Walka z pe³zaczami to niebezpieczne zadanie. Przynieœ mi napój uzdrawiaj¹cy, wtedy ci pomogê.
+	AI_Output (other, self,"Tpl_1433_GorNaVid_HEALTH_Info_15_01"); //PotrzebujÄ™ twojej pomocy.
+	AI_Output (other, self,"Tpl_1433_GorNaVid_HEALTH_Info_15_02"); //Szukam wydzieliny peÅ‚zaczy dla Kaloma, i chyba wiem juÅ¼, gdzie znajduje siÄ™ gniazdo tych drapieÅ¼cÃ³w.
+	AI_Output (other, self,"Tpl_1433_GorNaVid_HEALTH_Info_15_03"); //PomoÅ¼esz mi po otwarciu przejÅ›cia?
+	AI_Output (self, other,"Tpl_1433_GorNaVid_HEALTH_Info_13_04"); //Walka z peÅ‚zaczami to niebezpieczne zadanie. PrzynieÅ› mi napÃ³j uzdrawiajÄ…cy, wtedy ci pomogÄ™.
 
 };  
 // ***************** Infos *****************************
@@ -60,7 +60,7 @@ instance  Tpl_1433_GorNaVid_IAN (C_INFO)
 	information		= Tpl_1433_GorNaVid_IAN_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Szukam gniazda pe³zaczy."; 
+	description		= "Szukam gniazda peÅ‚zaczy."; 
 };
 
 FUNC int  Tpl_1433_GorNaVid_IAN_Condition()
@@ -74,8 +74,8 @@ FUNC int  Tpl_1433_GorNaVid_IAN_Condition()
 
 FUNC void  Tpl_1433_GorNaVid_IAN_Info()
 {
-	AI_Output (other, self,"Tpl_1433_GorNaVid_IAN_Info_15_01"); //Szukam gniazda pe³zaczy.
-	AI_Output (self, other,"Tpl_1433_GorNaVid_IAN_Info_13_02"); //W pobli¿u g³ównego szybu znajduje siê wiele jaskiñ, ale nie uda³o siê nam jeszcze odnaleŸæ gniazda.
+	AI_Output (other, self,"Tpl_1433_GorNaVid_IAN_Info_15_01"); //Szukam gniazda peÅ‚zaczy.
+	AI_Output (self, other,"Tpl_1433_GorNaVid_IAN_Info_13_02"); //W pobliÅ¼u gÅ‚Ã³wnego szybu znajduje siÄ™ wiele jaskiÅ„, ale nie udaÅ‚o siÄ™ nam jeszcze odnaleÅºÄ‡ gniazda.
 };  
 
 // ***************** Infos *****************************
@@ -86,7 +86,7 @@ instance  Tpl_1433_GorNaVid_HEALTH_SUC (C_INFO)
 	information		= Tpl_1433_GorNaVid_HEALTH_SUC_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "(daj napój uzdrawiaj¹cy)"; 
+	description		= "(daj napÃ³j uzdrawiajÄ…cy)"; 
 };
 
 FUNC int  Tpl_1433_GorNaVid_HEALTH_SUC_Condition()
@@ -102,9 +102,9 @@ FUNC int  Tpl_1433_GorNaVid_HEALTH_SUC_Condition()
 };
 FUNC void  Tpl_1433_GorNaVid_HEALTH_SUC_Info()
 {
-	AI_Output (other, self,"Tpl_1433_GorNaVid_HEALTH_SUC_Info_15_01"); //Proszê, mo¿e to ci pomo¿e.
-	AI_Output (self, other,"Tpl_1433_GorNaVid_HEALTH_SUC_Info_13_02"); //Dziêki. Mo¿esz na mnie liczyæ. Spotkamy siê na dole, u Asghana.
-	AI_Output (other, self,"Tpl_1433_GorNaVid_HEALTH_SUC_Info_15_03"); //Bêdê czeka³.
+	AI_Output (other, self,"Tpl_1433_GorNaVid_HEALTH_SUC_Info_15_01"); //ProszÄ™, moÅ¼e to ci pomoÅ¼e.
+	AI_Output (self, other,"Tpl_1433_GorNaVid_HEALTH_SUC_Info_13_02"); //DziÄ™ki. MoÅ¼esz na mnie liczyÄ‡. Spotkamy siÄ™ na dole, u Asghana.
+	AI_Output (other, self,"Tpl_1433_GorNaVid_HEALTH_SUC_Info_15_03"); //BÄ™dÄ™ czekaÅ‚.
 	
 	if Npc_HasItems (hero,Itfo_Potion_Health_01)
 	{
@@ -120,13 +120,13 @@ FUNC void  Tpl_1433_GorNaVid_HEALTH_SUC_Info()
 	}
 	else 
 	{
-		PrintDebugNpc (PD_MISSION, "KEINE POTION= UNMÖGLICH");
+		PrintDebugNpc (PD_MISSION, "KEINE POTION= UNMÃ–GLICH");
 	};
 
 	Npc_ExchangeRoutine (self,"GATE"); 
 	Npc_SetPermAttitude	(self,ATT_FRIENDLY); 
 	B_GiveXP			(XP_HireGorNaVid);
-	B_LogEntry		(CH2_MCEggs,"Musia³em daæ Gor Na Vidowi napój uzdrawiaj¹cy, zanim zgodzi³ siê do³¹czyæ do oddzia³u przy bramie Asghana.");	
+	B_LogEntry		(CH2_MCEggs,"MusiaÅ‚em daÄ‡ Gor Na Vidowi napÃ³j uzdrawiajÄ…cy, zanim zgodziÅ‚ siÄ™ doÅ‚Ä…czyÄ‡ do oddziaÅ‚u przy bramie Asghana.");	
 
 	AI_StopProcessInfos	(self);
 };
@@ -139,7 +139,7 @@ instance  Tpl_1433_GorNavid_VICTORY (C_INFO)
 	information		= Tpl_1433_GorNavid_VICTORY_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Znalaz³em gniazdo królowej!"; 
+	description		= "ZnalazÅ‚em gniazdo krÃ³lowej!"; 
 };
 
 FUNC int  Tpl_1433_GorNavid_VICTORY_Condition()
@@ -152,8 +152,8 @@ FUNC int  Tpl_1433_GorNavid_VICTORY_Condition()
 };
 FUNC void  Tpl_1433_GorNavid_VICTORY_Info()
 {
-	AI_Output (other, self,"Tpl_1433_GorNavid_VICTORY_Info_15_01"); //Znalaz³em gniazdo królowej!
-	AI_Output (self, other,"Tpl_1433_GorNavid_VICTORY_Info_13_02"); //Dziêkujê ci w imieniu ca³ego Bractwa!
-	AI_Output (self, other,"Tpl_1433_GorNavid_VICTORY_Info_13_03"); //Oby Œni¹cy nigdy nie odwróci³ od ciebie swego przychylnego spojrzenia.
+	AI_Output (other, self,"Tpl_1433_GorNavid_VICTORY_Info_15_01"); //ZnalazÅ‚em gniazdo krÃ³lowej!
+	AI_Output (self, other,"Tpl_1433_GorNavid_VICTORY_Info_13_02"); //DziÄ™kujÄ™ ci w imieniu caÅ‚ego Bractwa!
+	AI_Output (self, other,"Tpl_1433_GorNavid_VICTORY_Info_13_03"); //Oby ÅšniÄ…cy nigdy nie odwrÃ³ciÅ‚ od ciebie swego przychylnego spojrzenia.
 };     
  

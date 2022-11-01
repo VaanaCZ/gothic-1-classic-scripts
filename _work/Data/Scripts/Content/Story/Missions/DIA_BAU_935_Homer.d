@@ -33,7 +33,7 @@ INSTANCE DIA_Homer_Hello (C_INFO)
 	condition	= DIA_Homer_Hello_Condition;
 	information	= DIA_Homer_Hello_Info;
 	permanent	= 0;
-	description = "Szukasz czegoœ?";
+	description = "Szukasz czegoÅ›?";
 };                       
 
 FUNC INT DIA_Homer_Hello_Condition()
@@ -43,10 +43,10 @@ FUNC INT DIA_Homer_Hello_Condition()
 
 FUNC VOID DIA_Homer_Hello_Info()
 {	
-	AI_Output (other, self,"DIA_Homer_Hello_15_00"); //Szukasz czegoœ?
-	AI_Output (self, other,"DIA_Homer_Hello_02_01"); //Szukam pêkniêæ w tamie. Chyba jakiœ topielec podgryza jej fundamenty.
-	AI_Output (self, other,"DIA_Homer_Hello_02_02"); //Paskuda uszkadza zêbami i pazurami kamienie i drewniane pale pod wod¹.
-	AI_Output (self, other,"DIA_Homer_Hello_02_03"); //Jeœli nie przestanie, ca³¹ tamê trafi szlag!
+	AI_Output (other, self,"DIA_Homer_Hello_15_00"); //Szukasz czegoÅ›?
+	AI_Output (self, other,"DIA_Homer_Hello_02_01"); //Szukam pÄ™kniÄ™Ä‡ w tamie. Chyba jakiÅ› topielec podgryza jej fundamenty.
+	AI_Output (self, other,"DIA_Homer_Hello_02_02"); //Paskuda uszkadza zÄ™bami i pazurami kamienie i drewniane pale pod wodÄ….
+	AI_Output (self, other,"DIA_Homer_Hello_02_03"); //JeÅ›li nie przestanie, caÅ‚Ä… tamÄ™ trafi szlag!
 };
 
 // ************************************************************
@@ -60,7 +60,7 @@ INSTANCE DIA_Homer_BuiltDam (C_INFO)
 	condition	= DIA_Homer_BuiltDam_Condition;
 	information	= DIA_Homer_BuiltDam_Info;
 	permanent	= 0;
-	description = "Czy to TY zbudowa³eœ tê tamê?";
+	description = "Czy to TY zbudowaÅ‚eÅ› tÄ™ tamÄ™?";
 };                       
 
 FUNC INT DIA_Homer_BuiltDam_Condition()
@@ -73,9 +73,9 @@ FUNC INT DIA_Homer_BuiltDam_Condition()
 
 FUNC VOID DIA_Homer_BuiltDam_Info()
 {	
-	AI_Output (other, self,"DIA_Homer_BuiltDam_15_00"); //Czy to TY zbudowa³eœ tê tamê?
-	AI_Output (self, other,"DIA_Homer_BuiltDam_02_01"); //Tak. Zbudowa³em j¹ dawno temu, gdy Nowy Obóz dopiero powstawa³.
-	AI_Output (self, other,"DIA_Homer_BuiltDam_02_02"); //Oczywiœcie wszyscy pomagali, ale to ja nadzorowa³em budowê.
+	AI_Output (other, self,"DIA_Homer_BuiltDam_15_00"); //Czy to TY zbudowaÅ‚eÅ› tÄ™ tamÄ™?
+	AI_Output (self, other,"DIA_Homer_BuiltDam_02_01"); //Tak. ZbudowaÅ‚em jÄ… dawno temu, gdy Nowy ObÃ³z dopiero powstawaÅ‚.
+	AI_Output (self, other,"DIA_Homer_BuiltDam_02_02"); //OczywiÅ›cie wszyscy pomagali, ale to ja nadzorowaÅ‚em budowÄ™.
 };
 
 // ************************************************************
@@ -91,7 +91,7 @@ INSTANCE DIA_Homer_WannaHelp (C_INFO)
 	condition	= DIA_Homer_WannaHelp_Condition;
 	information	= DIA_Homer_WannaHelp_Info;
 	permanent	= 0;
-	description = "Mo¿e mogê ci jakoœ pomóc?";
+	description = "MoÅ¼e mogÄ™ ci jakoÅ› pomÃ³c?";
 };                       
 
 FUNC INT DIA_Homer_WannaHelp_Condition()
@@ -104,14 +104,14 @@ FUNC INT DIA_Homer_WannaHelp_Condition()
 
 FUNC VOID DIA_Homer_WannaHelp_Info()
 {	
-	AI_Output (other, self,"DIA_Homer_WannaHelp_15_00"); //Mo¿e mogê ci jakoœ pomóc?
-	AI_Output (self, other,"DIA_Homer_WannaHelp_02_01"); //Jasne. Spraw, ¿eby ta bestia przesta³a pod¿eraæ moj¹ tamê.
+	AI_Output (other, self,"DIA_Homer_WannaHelp_15_00"); //MoÅ¼e mogÄ™ ci jakoÅ› pomÃ³c?
+	AI_Output (self, other,"DIA_Homer_WannaHelp_02_01"); //Jasne. Spraw, Å¼eby ta bestia przestaÅ‚a podÅ¼eraÄ‡ mojÄ… tamÄ™.
 	
 	Homer_DamLurker = LOG_RUNNING;
 	
 	Log_CreateTopic		(CH1_DamLurker, LOG_MISSION);
 	Log_SetTopicStatus	(CH1_DamLurker, LOG_RUNNING);
-	B_LogEntry			(CH1_DamLurker,"Homer opowiedzia³ mi o topielcu, który podkopuje jego tamê. Jeœli uda mi siê powstrzymaæ potwora, tamê z pewnoœci¹ uda siê naprawiæ.");
+	B_LogEntry			(CH1_DamLurker,"Homer opowiedziaÅ‚ mi o topielcu, ktÃ³ry podkopuje jego tamÄ™. JeÅ›li uda mi siÄ™ powstrzymaÄ‡ potwora, tamÄ™ z pewnoÅ›ciÄ… uda siÄ™ naprawiÄ‡.");
 
 };
 
@@ -126,7 +126,7 @@ INSTANCE DIA_Homer_Running (C_INFO)
 	condition	= DIA_Homer_Running_Condition;
 	information	= DIA_Homer_Running_Info;
 	permanent	= 0;
-	description = "Gdzie mogê j¹ znaleŸæ?";
+	description = "Gdzie mogÄ™ jÄ… znaleÅºÄ‡?";
 };                       
 
 FUNC INT DIA_Homer_Running_Condition()
@@ -139,11 +139,11 @@ FUNC INT DIA_Homer_Running_Condition()
 
 FUNC VOID DIA_Homer_Running_Info()
 {	
-	AI_Output (other, self,"DIA_Homer_Running_15_00"); //Gdzie mogê j¹ znaleŸæ?
-	AI_Output (self, other,"DIA_Homer_Running_02_01"); //Rozejrzyj siê po drugiej stronie jeziora. Nikt tam nigdy nie zagl¹da. Za³o¿ê siê, ¿e tam ma swoje le¿e!
+	AI_Output (other, self,"DIA_Homer_Running_15_00"); //Gdzie mogÄ™ jÄ… znaleÅºÄ‡?
+	AI_Output (self, other,"DIA_Homer_Running_02_01"); //Rozejrzyj siÄ™ po drugiej stronie jeziora. Nikt tam nigdy nie zaglÄ…da. ZaÅ‚oÅ¼Ä™ siÄ™, Å¼e tam ma swoje leÅ¼e!
 	
 	Homer_DamLurker = LOG_RUNNING;
-	B_LogEntry	(CH1_DamLurker,"Topielec musi mieæ swoje le¿e w nieuczêszczanej czêœci zbiornika.");
+	B_LogEntry	(CH1_DamLurker,"Topielec musi mieÄ‡ swoje leÅ¼e w nieuczÄ™szczanej czÄ™Å›ci zbiornika.");
 	
 };
 
@@ -158,7 +158,7 @@ INSTANCE DIA_Homer_Success (C_INFO)
 	condition	= DIA_Homer_Success_Condition;
 	information	= DIA_Homer_Success_Info;
 	permanent	= 0;
-	description = "Zabi³em bestiê!";
+	description = "ZabiÅ‚em bestiÄ™!";
 };                       
 
 FUNC INT DIA_Homer_Success_Condition()
@@ -176,13 +176,13 @@ FUNC INT DIA_Homer_Success_Condition()
 
 FUNC VOID DIA_Homer_Success_Info()
 {	
-	AI_Output			(other, self,"DIA_Homer_Success_15_00"); //Zabi³em bestiê!
-	AI_Output			(self, other,"DIA_Homer_Success_02_01"); //Œwietnie! Œci¹gn¹³em tu kilku ludzi Ry¿owego Ksiêcia, którzy pomogli mi naprawiæ uszkodzenia.
-	AI_Output			(self, other,"DIA_Homer_Success_02_02"); //Nareszcie mogê siê porz¹dnie wyspaæ.
+	AI_Output			(other, self,"DIA_Homer_Success_15_00"); //ZabiÅ‚em bestiÄ™!
+	AI_Output			(self, other,"DIA_Homer_Success_02_01"); //Åšwietnie! ÅšciÄ…gnÄ…Å‚em tu kilku ludzi RyÅ¼owego KsiÄ™cia, ktÃ³rzy pomogli mi naprawiÄ‡ uszkodzenia.
+	AI_Output			(self, other,"DIA_Homer_Success_02_02"); //Nareszcie mogÄ™ siÄ™ porzÄ…dnie wyspaÄ‡.
 		
 	Homer_DamLurker = 	LOG_SUCCESS;
 	Log_SetTopicStatus	(CH1_DamLurker,	LOG_SUCCESS);
-	B_LogEntry			(CH1_DamLurker,"Topielec nie ¿yje. Homer mo¿e ju¿ spaæ spokojnie.");
+	B_LogEntry			(CH1_DamLurker,"Topielec nie Å¼yje. Homer moÅ¼e juÅ¼ spaÄ‡ spokojnie.");
 	B_GiveXP			(XP_ReportDeadDamLurker);
 	
 	AI_StopProcessInfos	(self);
@@ -200,7 +200,7 @@ INSTANCE DIA_Homer_PERM (C_INFO)
 	condition	= DIA_Homer_PERM_Condition;
 	information	= DIA_Homer_PERM_Info;
 	permanent	= 1;
-	description = "Z tam¹ wszystko w porz¹dku?";
+	description = "Z tamÄ… wszystko w porzÄ…dku?";
 };                       
 
 FUNC INT DIA_Homer_PERM_Condition()
@@ -213,7 +213,7 @@ FUNC INT DIA_Homer_PERM_Condition()
 
 FUNC VOID DIA_Homer_PERM_Info()
 {	
-	AI_Output (other, self,"DIA_Homer_PERM_15_00"); //Z tam¹ wszystko w porz¹dku?
-	AI_Output (self, other,"DIA_Homer_PERM_02_01"); //Mocna jak ska³a. Nic jej nie zaszkodzi!
+	AI_Output (other, self,"DIA_Homer_PERM_15_00"); //Z tamÄ… wszystko w porzÄ…dku?
+	AI_Output (self, other,"DIA_Homer_PERM_02_01"); //Mocna jak skaÅ‚a. Nic jej nie zaszkodzi!
 };
 

@@ -8,7 +8,7 @@ INSTANCE Info_FindNPC_OC(C_INFO)
 	condition	= Info_FindNPC_OC_Condition;
 	information	= Info_FindNPC_OC_Info;
 	permanent	= 1;
-	description = "Gdzie mogê znaleŸæ...";
+	description = "Gdzie mogÄ™ znaleÅºÄ‡...";
 };                       
 
 FUNC INT Info_FindNPC_OC_Condition()
@@ -45,7 +45,7 @@ FUNC VOID Info_FindNPC_OC_BACK()
 
 FUNC VOID Info_FindNPC_OC_Diego()
 {
-	AI_Output(other,self,"Info_FindNPC_Diego_15_00"); //Gdzie znajdê Diego?
+	AI_Output(other,self,"Info_FindNPC_Diego_15_00"); //Gdzie znajdÄ™ Diego?
 
 	VAR C_NPC Diego;		Diego	= Hlp_GetNpc(PC_THIEF);
 	
@@ -59,45 +59,45 @@ FUNC VOID Info_FindNPC_OC_Diego()
 		{
 			if (self.voice == 1)
 			{
-				AI_Output(self,other,"Info_FindNPC_OC_Diego_01_01"); //W ci¹gu dnia przesiaduje zwykle z Thorusem przed wejœciem do zamku.
+				AI_Output(self,other,"Info_FindNPC_OC_Diego_01_01"); //W ciÄ…gu dnia przesiaduje zwykle z Thorusem przed wejÅ›ciem do zamku.
 			}
 			else if (self.voice == 2)
 			{
-				AI_Output(self,other,"Info_FindNPC_OC_Diego_02_01"); //W ci¹gu dnia przesiaduje zwykle z Thorusem przed wejœciem do zamku.
+				AI_Output(self,other,"Info_FindNPC_OC_Diego_02_01"); //W ciÄ…gu dnia przesiaduje zwykle z Thorusem przed wejÅ›ciem do zamku.
 			}
 			else if (self.voice == 3)
 			{
-				AI_Output(self,other,"Info_FindNPC_OC_Diego_03_01"); //W ci¹gu dnia przesiaduje zwykle z Thorusem przed wejœciem do zamku.
+				AI_Output(self,other,"Info_FindNPC_OC_Diego_03_01"); //W ciÄ…gu dnia przesiaduje zwykle z Thorusem przed wejÅ›ciem do zamku.
 			}
 			else if (self.voice == 4)
 			{
-				AI_Output(self,other,"Info_FindNPC_OC_Diego_04_01"); //W ci¹gu dnia przesiaduje zwykle z Thorusem przed wejœciem do zamku.
+				AI_Output(self,other,"Info_FindNPC_OC_Diego_04_01"); //W ciÄ…gu dnia przesiaduje zwykle z Thorusem przed wejÅ›ciem do zamku.
 			};
 		}
 		else if (self.guild == GIL_GRD) 
 		{
 			if (self.voice == 6)
 			{
-				AI_Output(self,other,"Info_FindNPC_OC_Diego_06_01"); //W ci¹gu dnia przesiaduje zwykle z Thorusem przed wejœciem do zamku.
+				AI_Output(self,other,"Info_FindNPC_OC_Diego_06_01"); //W ciÄ…gu dnia przesiaduje zwykle z Thorusem przed wejÅ›ciem do zamku.
 			}
 			else if (self.voice == 7)
 			{
-				AI_Output(self,other,"Info_FindNPC_OC_Diego_07_01"); //W ci¹gu dnia przesiaduje zwykle z Thorusem przed wejœciem do zamku.
+				AI_Output(self,other,"Info_FindNPC_OC_Diego_07_01"); //W ciÄ…gu dnia przesiaduje zwykle z Thorusem przed wejÅ›ciem do zamku.
 			}
 			else if (self.voice == 13)
 			{
-				AI_Output(self,other,"Info_FindNPC_OC_Diego_13_01"); //W ci¹gu dnia przesiaduje zwykle z Thorusem przed wejœciem do zamku.
+				AI_Output(self,other,"Info_FindNPC_OC_Diego_13_01"); //W ciÄ…gu dnia przesiaduje zwykle z Thorusem przed wejÅ›ciem do zamku.
 			};
 		}
 		else if (self.guild == GIL_STT) 
 		{
 			if (self.voice == 10)
 			{
-				AI_Output(self,other,"Info_FindNPC_OC_Diego_10_01"); //W ci¹gu dnia przesiaduje zwykle z Thorusem przed wejœciem do zamku.
+				AI_Output(self,other,"Info_FindNPC_OC_Diego_10_01"); //W ciÄ…gu dnia przesiaduje zwykle z Thorusem przed wejÅ›ciem do zamku.
 			}
 			else if (self.voice == 12)
 			{
-				AI_Output(self,other,"Info_FindNPC_OC_Diego_12_01"); //W ci¹gu dnia przesiaduje zwykle z Thorusem przed wejœciem do zamku.
+				AI_Output(self,other,"Info_FindNPC_OC_Diego_12_01"); //W ciÄ…gu dnia przesiaduje zwykle z Thorusem przed wejÅ›ciem do zamku.
 			};
 		};
 	};
@@ -111,7 +111,7 @@ FUNC VOID Info_FindNPC_OC_Diego()
 
 FUNC VOID Info_FindNPC_OC_Thorus()
 {
-	AI_Output(other,self,"Info_FindNPC_OC_Thorus_15_00"); //Gdzie znajdê Thorusa?
+	AI_Output(other,self,"Info_FindNPC_OC_Thorus_15_00"); //Gdzie znajdÄ™ Thorusa?
 	
 	VAR C_NPC Thorus;		Thorus 	= Hlp_GetNpc(GRD_200_Thorus);
 	
@@ -125,45 +125,45 @@ FUNC VOID Info_FindNPC_OC_Thorus()
 		{
 			if (self.voice == 1)
 			{
-				AI_Output(self,other,"Info_FindNPC_OC_Thorus_01_01"); //Zwykle krêci siê przy wejœciu do zamku.
+				AI_Output(self,other,"Info_FindNPC_OC_Thorus_01_01"); //Zwykle krÄ™ci siÄ™ przy wejÅ›ciu do zamku.
 			}
 			else if (self.voice == 2)
 			{
-				AI_Output(self,other,"Info_FindNPC_OC_Thorus_02_01"); //Zwykle krêci siê przy wejœciu do zamku.
+				AI_Output(self,other,"Info_FindNPC_OC_Thorus_02_01"); //Zwykle krÄ™ci siÄ™ przy wejÅ›ciu do zamku.
 			}
 			else if (self.voice == 3)
 			{
-				AI_Output(self,other,"Info_FindNPC_OC_Thorus_03_01"); //Zwykle krêci siê przy wejœciu do zamku.
+				AI_Output(self,other,"Info_FindNPC_OC_Thorus_03_01"); //Zwykle krÄ™ci siÄ™ przy wejÅ›ciu do zamku.
 			}
 			else if (self.voice == 4)
 			{
-				AI_Output(self,other,"Info_FindNPC_OC_Thorus_04_01"); //Zwykle krêci siê przy wejœciu do zamku.
+				AI_Output(self,other,"Info_FindNPC_OC_Thorus_04_01"); //Zwykle krÄ™ci siÄ™ przy wejÅ›ciu do zamku.
 			};
 		}
 		else if (self.guild == GIL_GRD) 
 		{
 			if (self.voice == 6)
 			{
-				AI_Output(self,other,"Info_FindNPC_OC_Thorus_06_01"); //Zwykle krêci siê przy wejœciu do zamku.
+				AI_Output(self,other,"Info_FindNPC_OC_Thorus_06_01"); //Zwykle krÄ™ci siÄ™ przy wejÅ›ciu do zamku.
 			}
 			else if (self.voice == 7)
 			{
-				AI_Output(self,other,"Info_FindNPC_OC_Thorus_07_01"); //Zwykle krêci siê przy wejœciu do zamku.
+				AI_Output(self,other,"Info_FindNPC_OC_Thorus_07_01"); //Zwykle krÄ™ci siÄ™ przy wejÅ›ciu do zamku.
 			}
 			else if (self.voice == 13)
 			{
-				AI_Output(self,other,"Info_FindNPC_OC_Thorus_13_01"); //Zwykle krêci siê przy wejœciu do zamku.
+				AI_Output(self,other,"Info_FindNPC_OC_Thorus_13_01"); //Zwykle krÄ™ci siÄ™ przy wejÅ›ciu do zamku.
 			};
 		}
 		else if (self.guild == GIL_STT) 
 		{
 			if (self.voice == 10)
 			{
-				AI_Output(self,other,"Info_FindNPC_OC_Thorus_10_01"); //Zwykle krêci siê przy wejœciu do zamku.
+				AI_Output(self,other,"Info_FindNPC_OC_Thorus_10_01"); //Zwykle krÄ™ci siÄ™ przy wejÅ›ciu do zamku.
 			}
 			else if (self.voice == 12)
 			{
-				AI_Output(self,other,"Info_FindNPC_OC_Thorus_12_01"); //Zwykle krêci siê przy wejœciu do zamku.
+				AI_Output(self,other,"Info_FindNPC_OC_Thorus_12_01"); //Zwykle krÄ™ci siÄ™ przy wejÅ›ciu do zamku.
 			};
 		};
 	};

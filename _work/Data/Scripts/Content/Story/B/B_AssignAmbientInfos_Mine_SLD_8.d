@@ -37,7 +37,7 @@ INSTANCE Info_Mine_Sld_8_EinerVonEuchWerden (C_INFO) // E1
 	condition	= Info_Mine_Sld_8_EinerVonEuchWerden_Condition;
 	information	= Info_Mine_Sld_8_EinerVonEuchWerden_Info;
 	permanent	= 1;
-	description = "Co mam zrobiæ, ¿eby do was do³¹czyæ?";
+	description = "Co mam zrobiÄ‡, Å¼eby do was doÅ‚Ä…czyÄ‡?";
 };                       
 
 FUNC INT Info_Mine_Sld_8_EinerVonEuchWerden_Condition()
@@ -53,9 +53,9 @@ FUNC INT Info_Mine_Sld_8_EinerVonEuchWerden_Condition()
 
 FUNC VOID Info_Mine_Sld_8_EinerVonEuchWerden_Info()
 {
-	AI_Output(other,self,"Info_Mine_Sld_8_EinerVonEuchWerden_15_00"); //Co mam zrobiæ, ¿eby do was do³¹czyæ?
-	AI_Output(self,other,"Info_Mine_Sld_8_EinerVonEuchWerden_08_01"); //Jeœli chcesz pracowaæ w Kotle musisz najpierw wyrobiæ sobie znajomoœci w Nowym Obozie.
-	AI_Output(self,other,"Info_Mine_Sld_8_EinerVonEuchWerden_08_02"); //Po prostu idŸ tam i pogadaj z ludŸmi.
+	AI_Output(other,self,"Info_Mine_Sld_8_EinerVonEuchWerden_15_00"); //Co mam zrobiÄ‡, Å¼eby do was doÅ‚Ä…czyÄ‡?
+	AI_Output(self,other,"Info_Mine_Sld_8_EinerVonEuchWerden_08_01"); //JeÅ›li chcesz pracowaÄ‡ w Kotle musisz najpierw wyrobiÄ‡ sobie znajomoÅ›ci w Nowym Obozie.
+	AI_Output(self,other,"Info_Mine_Sld_8_EinerVonEuchWerden_08_02"); //Po prostu idÅº tam i pogadaj z ludÅºmi.
 };
 
 // *************************************************************************
@@ -68,7 +68,7 @@ INSTANCE Info_Mine_Sld_8_WichtigePersonen(C_INFO)
 	condition	= Info_Mine_Sld_8_WichtigePersonen_Condition;
 	information	= Info_Mine_Sld_8_WichtigePersonen_Info;
 	permanent	= 1;
-	description = "Kto tu rz¹dzi?";
+	description = "Kto tu rzÄ…dzi?";
 };                       
 
 FUNC INT Info_Mine_Sld_8_WichtigePersonen_Condition()
@@ -78,8 +78,8 @@ FUNC INT Info_Mine_Sld_8_WichtigePersonen_Condition()
 
 FUNC VOID Info_Mine_Sld_8_WichtigePersonen_Info()
 {
-	AI_Output(other,self,"Info_Mine_Sld_8_WichtigePersonen_15_00"); //Kto tu rz¹dzi?
-	AI_Output(self,other,"Info_Mine_Sld_8_WichtigePersonen_08_01"); //Okyl rozkazuje w Kotle, Lee rz¹dzi w Obozie.
+	AI_Output(other,self,"Info_Mine_Sld_8_WichtigePersonen_15_00"); //Kto tu rzÄ…dzi?
+	AI_Output(self,other,"Info_Mine_Sld_8_WichtigePersonen_08_01"); //Okyl rozkazuje w Kotle, Lee rzÄ…dzi w Obozie.
 	AI_Output(self,other,"Info_Mine_Sld_8_WichtigePersonen_08_02"); //Najlepiej porozmawiaj z obydwoma.
 };
 
@@ -93,7 +93,7 @@ INSTANCE Info_Mine_Sld_8_DasLager(C_INFO)
 	condition	= Info_Mine_Sld_8_DasLager_Condition;
 	information	= Info_Mine_Sld_8_DasLager_Info;
 	permanent	= 1;
-	description = "Co s³ychaæ w obozie?";
+	description = "Co sÅ‚ychaÄ‡ w obozie?";
 };                       
 
 FUNC INT Info_Mine_Sld_8_DasLager_Condition()
@@ -103,9 +103,9 @@ FUNC INT Info_Mine_Sld_8_DasLager_Condition()
 
 FUNC VOID Info_Mine_Sld_8_DasLager_Info()
 {
-	AI_Output(other,self,"Info_Mine_Sld_8_DasLager_15_00"); //Co s³ychaæ w obozie?
-	AI_Output(self,other,"Info_Mine_Sld_8_DasLager_08_01"); //Pilnujemy wejœcia do kopalni.
-	AI_Output(other,self,"Info_Mine_Sld_8_DasLager_08_02"); //Tylko nasi ludzie mog¹ wejœæ do œrodka.
+	AI_Output(other,self,"Info_Mine_Sld_8_DasLager_15_00"); //Co sÅ‚ychaÄ‡ w obozie?
+	AI_Output(self,other,"Info_Mine_Sld_8_DasLager_08_01"); //Pilnujemy wejÅ›cia do kopalni.
+	AI_Output(other,self,"Info_Mine_Sld_8_DasLager_08_02"); //Tylko nasi ludzie mogÄ… wejÅ›Ä‡ do Å›rodka.
 };
 
 // *************************************************************************
@@ -118,7 +118,7 @@ INSTANCE Info_Mine_Sld_8_DieLage(C_INFO) // E1
 	condition	= Info_Mine_Sld_8_DieLage_Condition;
 	information	= Info_Mine_Sld_8_DieLage_Info;
 	permanent	= 1;
-	description = "Wszystko w porz¹dku?";
+	description = "Wszystko w porzÄ…dku?";
 };                       
 
 FUNC INT Info_Mine_Sld_8_DieLage_Condition()
@@ -128,8 +128,8 @@ FUNC INT Info_Mine_Sld_8_DieLage_Condition()
 
 FUNC VOID Info_Mine_Sld_8_DieLage_Info()
 {
-	AI_Output(other,self,"Info_Mine_Sld_8_DieLage_15_00"); //Wszystko w porz¹dku?
-	AI_Output(self,other,"Info_Mine_Sld_8_DieLage_08_01"); //Co siê g³upio pytasz? Wszystko pod kontrol¹.
+	AI_Output(other,self,"Info_Mine_Sld_8_DieLage_15_00"); //Wszystko w porzÄ…dku?
+	AI_Output(self,other,"Info_Mine_Sld_8_DieLage_08_01"); //Co siÄ™ gÅ‚upio pytasz? Wszystko pod kontrolÄ….
 };
 	
 // *************************************************************************

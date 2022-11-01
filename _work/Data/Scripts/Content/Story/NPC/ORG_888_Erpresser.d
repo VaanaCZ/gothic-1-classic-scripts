@@ -2,7 +2,7 @@ instance ORG_888_Erpresser (Npc_Default)
 {
 	//-------- primary data --------
 	
-	name =					"Szantaøysta";
+	name =					"Szanta≈ºysta";
 	Npctype =				Npctype_Main;
 	guild =					GIL_ORG;      
 	level =					15;

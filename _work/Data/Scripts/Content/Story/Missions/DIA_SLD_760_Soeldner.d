@@ -21,7 +21,7 @@ FUNC int DIA_SLD_760_Soeldner_INTRO_CONDITION()
 
 func void DIA_SLD_760_Soeldner_INTRO_INFO()
 {
-	AI_Output (self, other,"DIA_SLD_760_Soeldner_INTRO_INFO_13_01"); //Co siê tak krêcisz? Dobrze ci radzê: ³apy z dala od tych drzwi!
+	AI_Output (self, other,"DIA_SLD_760_Soeldner_INTRO_INFO_13_01"); //Co siÄ™ tak krÄ™cisz? Dobrze ci radzÄ™: Å‚apy z dala od tych drzwi!
 };
 
 //-------------------- Exit 1 -----------------------------
@@ -34,7 +34,7 @@ instance DIA_SLD_760_Soeldner_EXIT_1 (C_INFO)
 	information		= DIA_SLD_760_Soeldner_EXIT_1_INFO;
 	important		= 0;
 	permanent		= 0;
-	description 	= "Lepiej ju¿ sobie pójdê.";
+	description 	= "Lepiej juÅ¼ sobie pÃ³jdÄ™.";
 };
 
 FUNC int DIA_SLD_760_Soeldner_EXIT_1_CONDITION()
@@ -44,8 +44,8 @@ FUNC int DIA_SLD_760_Soeldner_EXIT_1_CONDITION()
 
 func void DIA_SLD_760_Soeldner_EXIT_1_INFO()
 {
-	AI_Output (other, self,"DIA_SLD_760_Soeldner_EXIT_1_INFO_15_01"); //Lepiej ju¿ sobie pójdê.
-	AI_Output (self, other,"DIA_SLD_760_Soeldner_EXIT_1_INFO_13_02");//Mam nadziejê, ¿e siê rozumiemy.
+	AI_Output (other, self,"DIA_SLD_760_Soeldner_EXIT_1_INFO_15_01"); //Lepiej juÅ¼ sobie pÃ³jdÄ™.
+	AI_Output (self, other,"DIA_SLD_760_Soeldner_EXIT_1_INFO_13_02");//Mam nadziejÄ™, Å¼e siÄ™ rozumiemy.
 	AI_StopProcessInfos	( self );
 };
 
@@ -59,7 +59,7 @@ instance DIA_SLD_760_Soeldner_EXIT_2 (C_INFO)
 	information		= DIA_SLD_760_Soeldner_EXIT_2_INFO;
 	important		= 0;
 	permanent		= 1;
-	description 	= "Muszê ju¿ iœæ.";
+	description 	= "MuszÄ™ juÅ¼ iÅ›Ä‡.";
 };
 
 FUNC int DIA_SLD_760_Soeldner_EXIT_2_CONDITION()
@@ -72,8 +72,8 @@ FUNC int DIA_SLD_760_Soeldner_EXIT_2_CONDITION()
 
 func void DIA_SLD_760_Soeldner_EXIT_2_INFO()
 {
-	AI_Output (other, self,"DIA_SLD_760_Soeldner_EXIT_2_INFO_15_01"); //Muszê ju¿ iœæ.
-	AI_Output (self, other,"DIA_SLD_760_Soeldner_EXIT_2_INFO_13_02");//No to idŸ!
+	AI_Output (other, self,"DIA_SLD_760_Soeldner_EXIT_2_INFO_15_01"); //MuszÄ™ juÅ¼ iÅ›Ä‡.
+	AI_Output (self, other,"DIA_SLD_760_Soeldner_EXIT_2_INFO_13_02");//No to idÅº!
 	AI_StopProcessInfos	( self );
 };
 
@@ -86,7 +86,7 @@ instance DIA_SLD_760_Soeldner_UMSEHEN (C_INFO)
 	information		= DIA_SLD_760_Soeldner_UMSEHEN_INFO;
 	important		= 0;
 	permanent		= 0;
-	description 	= "Chcia³bym siê tutaj trochê rozejrzeæ.";
+	description 	= "ChciaÅ‚bym siÄ™ tutaj trochÄ™ rozejrzeÄ‡.";
 };
 
 FUNC int DIA_SLD_760_Soeldner_UMSEHEN_CONDITION()
@@ -96,8 +96,8 @@ FUNC int DIA_SLD_760_Soeldner_UMSEHEN_CONDITION()
 
 func void DIA_SLD_760_Soeldner_UMSEHEN_INFO()
 {
-	AI_Output (other, self,"DIA_SLD_760_Soeldner_UMSEHEN_INFO_15_01"); //Chcia³bym siê tutaj trochê rozejrzeæ.
-	AI_Output (self, other,"DIA_SLD_760_Soeldner_UMSEHEN_INFO_13_02");//Tylko trzymaj ³apy przy sobie, albo ci je odr¹biê.
+	AI_Output (other, self,"DIA_SLD_760_Soeldner_UMSEHEN_INFO_15_01"); //ChciaÅ‚bym siÄ™ tutaj trochÄ™ rozejrzeÄ‡.
+	AI_Output (self, other,"DIA_SLD_760_Soeldner_UMSEHEN_INFO_13_02");//Tylko trzymaj Å‚apy przy sobie, albo ci je odrÄ…biÄ™.
 };
 
 
@@ -110,7 +110,7 @@ instance DIA_SLD_760_Soeldner_INMINE (C_INFO)
 	information		= DIA_SLD_760_Soeldner_INMINE_INFO;
 	important		= 0;
 	permanent		= 0;
-	description 	= "Chcia³bym siê dostaæ do kopalni.";
+	description 	= "ChciaÅ‚bym siÄ™ dostaÄ‡ do kopalni.";
 };
 
 FUNC int DIA_SLD_760_Soeldner_INMINE_CONDITION()
@@ -120,8 +120,8 @@ FUNC int DIA_SLD_760_Soeldner_INMINE_CONDITION()
 
 func void DIA_SLD_760_Soeldner_INMINE_INFO()
 {
-	AI_Output (other, self,"DIA_SLD_760_Soeldner_INMINE_INFO_15_01"); //Chcia³bym siê dostaæ do kopalni.
-	AI_Output (self, other,"DIA_SLD_760_Soeldner_INMINE_INFO_13_02");//Do kopalni? Nie wpuszczê nikogo, kto nie otrzyma³ upowa¿nienia od Okyla.
+	AI_Output (other, self,"DIA_SLD_760_Soeldner_INMINE_INFO_15_01"); //ChciaÅ‚bym siÄ™ dostaÄ‡ do kopalni.
+	AI_Output (self, other,"DIA_SLD_760_Soeldner_INMINE_INFO_13_02");//Do kopalni? Nie wpuszczÄ™ nikogo, kto nie otrzymaÅ‚ upowaÅ¼nienia od Okyla.
 
 	if	(!Npc_KnowsInfo	(hero, DIA_SLD_752_OKYL_WERBISTDU))
 	{
@@ -129,12 +129,12 @@ func void DIA_SLD_760_Soeldner_INMINE_INFO()
 	}
 	else
 	{
-		AI_Output (other, self,"DIA_SLD_760_Soeldner_INMINE_INFO_15_08");//Okyl? Czy to nie ten goœæ w ciê¿kiej zbroi i z wielkim toporem?
+		AI_Output (other, self,"DIA_SLD_760_Soeldner_INMINE_INFO_15_08");//Okyl? Czy to nie ten goÅ›Ä‡ w ciÄ™Å¼kiej zbroi i z wielkim toporem?
 	};
-	AI_Output (self, other,"DIA_SLD_760_Soeldner_INMINE_INFO_13_04");//Uwa¿aj co mówisz o naszym szefie!
-	AI_Output (self, other,"DIA_SLD_760_Soeldner_INMINE_INFO_13_05");//Powiem ci coœ o Okylu: to najtwardszy goœæ w ca³ym Obozie. Kiedyœ nawet wœlizn¹³ siê do zamku w Starym Obozie i podwêdzi³ Magnatom spory ³adunek rudy.
-	AI_Output (self, other,"DIA_SLD_760_Soeldner_INMINE_INFO_13_06");//Wiêc na przysz³oœæ radzê ci okazywaæ mu trochê wiêcej szacunku.
-	AI_Output (self, other,"DIA_SLD_760_Soeldner_INMINE_INFO_13_07");//Nie wiem, gdzie jest teraz, ale jakbyœ go spotka³, lepiej pamiêtaj o tym, co ci dziœ powiedzia³em.
+	AI_Output (self, other,"DIA_SLD_760_Soeldner_INMINE_INFO_13_04");//UwaÅ¼aj co mÃ³wisz o naszym szefie!
+	AI_Output (self, other,"DIA_SLD_760_Soeldner_INMINE_INFO_13_05");//Powiem ci coÅ› o Okylu: to najtwardszy goÅ›Ä‡ w caÅ‚ym Obozie. KiedyÅ› nawet wÅ›liznÄ…Å‚ siÄ™ do zamku w Starym Obozie i podwÄ™dziÅ‚ Magnatom spory Å‚adunek rudy.
+	AI_Output (self, other,"DIA_SLD_760_Soeldner_INMINE_INFO_13_06");//WiÄ™c na przyszÅ‚oÅ›Ä‡ radzÄ™ ci okazywaÄ‡ mu trochÄ™ wiÄ™cej szacunku.
+	AI_Output (self, other,"DIA_SLD_760_Soeldner_INMINE_INFO_13_07");//Nie wiem, gdzie jest teraz, ale jakbyÅ› go spotkaÅ‚, lepiej pamiÄ™taj o tym, co ci dziÅ› powiedziaÅ‚em.
 };
 
 

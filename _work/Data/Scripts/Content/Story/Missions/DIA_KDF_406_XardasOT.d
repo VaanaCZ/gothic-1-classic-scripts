@@ -24,26 +24,26 @@ FUNC int  Info_Xardas_OT_Condition()
 
 FUNC void  Info_Xardas_OT_Info()
 {
-	AI_Output			(self, other,"Info_Xardas_OT_14_01"); //Nie mamy wiele czasu, wiêc s³uchaj uwa¿nie.
-	AI_Output			(other, self,"Info_Xardas_OT_15_02"); //Jak siê tu...
-	AI_Output			(self, other,"Info_Xardas_OT_14_03"); //Œni¹cy jest ju¿ blisko. Wykorzysta³em ca³¹ swoj¹ moc, ¿eby siê tu dostaæ.
-	AI_Output			(self, other,"Info_Xardas_OT_14_04"); //Przet³umaczy³em staro¿ytne przepowiednie Orków i odkry³em o co chodzi z piêcioma sercami.
-	AI_Output			(self, other,"Info_Xardas_OT_14_05"); //Piêæ serc nale¿¹cych do kap³anów, których pokona³eœ, z³o¿ono w piêciu kapliczkach.
-	AI_Output			(self, other,"Info_Xardas_OT_14_06"); //Kapliczki mo¿na otworzyæ, ale tylko staro¿ytne sztylety kap³anów s¹ w stanie je zniszczyæ.
-	AI_Output			(self, other,"Info_Xardas_OT_14_07"); //Musisz przebiæ serca kap³anów piêcioma sztyletami. Tylko w ten sposób uda ci siê wygnaæ Œni¹cego z tego œwiata.
+	AI_Output			(self, other,"Info_Xardas_OT_14_01"); //Nie mamy wiele czasu, wiÄ™c sÅ‚uchaj uwaÅ¼nie.
+	AI_Output			(other, self,"Info_Xardas_OT_15_02"); //Jak siÄ™ tu...
+	AI_Output			(self, other,"Info_Xardas_OT_14_03"); //ÅšniÄ…cy jest juÅ¼ blisko. WykorzystaÅ‚em caÅ‚Ä… swojÄ… moc, Å¼eby siÄ™ tu dostaÄ‡.
+	AI_Output			(self, other,"Info_Xardas_OT_14_04"); //PrzetÅ‚umaczyÅ‚em staroÅ¼ytne przepowiednie OrkÃ³w i odkryÅ‚em o co chodzi z piÄ™cioma sercami.
+	AI_Output			(self, other,"Info_Xardas_OT_14_05"); //PiÄ™Ä‡ serc naleÅ¼Ä…cych do kapÅ‚anÃ³w, ktÃ³rych pokonaÅ‚eÅ›, zÅ‚oÅ¼ono w piÄ™ciu kapliczkach.
+	AI_Output			(self, other,"Info_Xardas_OT_14_06"); //Kapliczki moÅ¼na otworzyÄ‡, ale tylko staroÅ¼ytne sztylety kapÅ‚anÃ³w sÄ… w stanie je zniszczyÄ‡.
+	AI_Output			(self, other,"Info_Xardas_OT_14_07"); //Musisz przebiÄ‡ serca kapÅ‚anÃ³w piÄ™cioma sztyletami. Tylko w ten sposÃ³b uda ci siÄ™ wygnaÄ‡ ÅšniÄ…cego z tego Å›wiata.
 	AI_Output			(other, self,"Info_Xardas_OT_15_08"); //Rozumiem!
-	AI_Output			(self, other,"Info_Xardas_OT_14_09"); //Spiesz siê. Przebudzenie demona odbêdzie siê ju¿ wkrótce. Szalony Cor Kalom i jego poplecznicy s¹ ju¿ tutaj.
-	AI_Output			(self, other,"Info_Xardas_OT_14_10"); //Zebrali siê w krypcie Œni¹cego.
-	AI_Output			(other, self,"Info_Xardas_OT_15_11"); //Przela³em ju¿ zbyt du¿o krwi! Nie pozwolê, by ktoœ mnie teraz powstrzyma³.
-	AI_Output			(self, other,"Info_Xardas_OT_14_12"); //Œni¹cy staje siê potê¿niejszy z ka¿d¹ minut¹, nie mogê...
-	AI_Output			(other, self,"Info_Xardas_OT_15_13"); //Co siê z tob¹ dzieje?
-	AI_Output			(self, other,"Info_Xardas_OT_14_14"); //Ja... muszê...
+	AI_Output			(self, other,"Info_Xardas_OT_14_09"); //Spiesz siÄ™. Przebudzenie demona odbÄ™dzie siÄ™ juÅ¼ wkrÃ³tce. Szalony Cor Kalom i jego poplecznicy sÄ… juÅ¼ tutaj.
+	AI_Output			(self, other,"Info_Xardas_OT_14_10"); //Zebrali siÄ™ w krypcie ÅšniÄ…cego.
+	AI_Output			(other, self,"Info_Xardas_OT_15_11"); //PrzelaÅ‚em juÅ¼ zbyt duÅ¼o krwi! Nie pozwolÄ™, by ktoÅ› mnie teraz powstrzymaÅ‚.
+	AI_Output			(self, other,"Info_Xardas_OT_14_12"); //ÅšniÄ…cy staje siÄ™ potÄ™Å¼niejszy z kaÅ¼dÄ… minutÄ…, nie mogÄ™...
+	AI_Output			(other, self,"Info_Xardas_OT_15_13"); //Co siÄ™ z tobÄ… dzieje?
+	AI_Output			(self, other,"Info_Xardas_OT_14_14"); //Ja... muszÄ™...
 
 	Npc_ExchangeRoutine	(self,	"DRAINED"); 
 	
 	Log_CreateTopic		(CH6_Sleeper,	LOG_MISSION);
 	Log_SetTopicStatus	(CH6_Sleeper,	LOG_RUNNING);
-	B_LogEntry			(CH6_Sleeper,"Zbli¿a siê ostateczne rozstrzygniêcie. Jestem ju¿ bardzo blisko le¿a Œni¹cego. Xardas pojawi³ siê niespodziewanie, udzielaj¹c mi rad przez zbli¿aj¹c¹ siê walk¹. Muszê przebiæ serca piêciu orkowych kap³anów piêcioma mieczami, które mam ze sob¹. To jedyny sposób na pokonanie Œni¹cego. Brzmi podejrzanie ³atwo...");
+	B_LogEntry			(CH6_Sleeper,"ZbliÅ¼a siÄ™ ostateczne rozstrzygniÄ™cie. Jestem juÅ¼ bardzo blisko leÅ¼a ÅšniÄ…cego. Xardas pojawiÅ‚ siÄ™ niespodziewanie, udzielajÄ…c mi rad przez zbliÅ¼ajÄ…cÄ… siÄ™ walkÄ…. MuszÄ™ przebiÄ‡ serca piÄ™ciu orkowych kapÅ‚anÃ³w piÄ™cioma mieczami, ktÃ³re mam ze sobÄ…. To jedyny sposÃ³b na pokonanie ÅšniÄ…cego. Brzmi podejrzanie Å‚atwo...");
 	
 	AI_StopProcessInfos	(self);
 };		

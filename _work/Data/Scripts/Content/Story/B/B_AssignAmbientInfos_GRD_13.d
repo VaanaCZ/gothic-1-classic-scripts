@@ -37,7 +37,7 @@ INSTANCE Info_grd_13_EinerVonEuchWerden (C_INFO) // E1
 	condition	= Info_grd_13_EinerVonEuchWerden_Condition;
 	information	= Info_grd_13_EinerVonEuchWerden_Info;
 	permanent	= 1;
-	description = "Chcia³bym zostaæ stra¿nikiem.";
+	description = "ChciaÅ‚bym zostaÄ‡ straÅ¼nikiem.";
 };                       
 
 FUNC INT Info_grd_13_EinerVonEuchWerden_Condition()
@@ -53,8 +53,8 @@ FUNC INT Info_grd_13_EinerVonEuchWerden_Condition()
 
 FUNC VOID Info_grd_13_EinerVonEuchWerden_Info()
 {
-	AI_Output(other,self,"Info_grd_13_EinerVonEuchWerden_15_00"); //Chcia³bym zostaæ stra¿nikiem.
-	AI_Output(self,other,"Info_grd_13_EinerVonEuchWerden_13_01"); //Zatem d³uga droga przed tob¹, ch³opcze!
+	AI_Output(other,self,"Info_grd_13_EinerVonEuchWerden_15_00"); //ChciaÅ‚bym zostaÄ‡ straÅ¼nikiem.
+	AI_Output(self,other,"Info_grd_13_EinerVonEuchWerden_13_01"); //Zatem dÅ‚uga droga przed tobÄ…, chÅ‚opcze!
 };
 
 // *************************************************************************
@@ -67,7 +67,7 @@ INSTANCE Info_grd_13_WichtigePersonen(C_INFO)
 	condition	= Info_grd_13_WichtigePersonen_Condition;
 	information	= Info_grd_13_WichtigePersonen_Info;
 	permanent	= 1;
-	description = "Kto tu rz¹dzi?";
+	description = "Kto tu rzÄ…dzi?";
 };                       
 
 FUNC INT Info_grd_13_WichtigePersonen_Condition()
@@ -77,8 +77,8 @@ FUNC INT Info_grd_13_WichtigePersonen_Condition()
 
 FUNC VOID Info_grd_13_WichtigePersonen_Info()
 {
-	AI_Output(other,self,"Info_grd_13_WichtigePersonen_15_00"); //Kto tu rz¹dzi?
-	AI_Output(self,other,"Info_grd_13_WichtigePersonen_13_01"); //Ja. I dobrze ci radzê: uwa¿aj na to, co mówisz, ch³opcze!
+	AI_Output(other,self,"Info_grd_13_WichtigePersonen_15_00"); //Kto tu rzÄ…dzi?
+	AI_Output(self,other,"Info_grd_13_WichtigePersonen_13_01"); //Ja. I dobrze ci radzÄ™: uwaÅ¼aj na to, co mÃ³wisz, chÅ‚opcze!
 };
 
 // *************************************************************************
@@ -91,7 +91,7 @@ INSTANCE Info_grd_13_DasLager(C_INFO)
 	condition	= Info_grd_13_DasLager_Condition;
 	information	= Info_grd_13_DasLager_Info;
 	permanent	= 1;
-	description = "Jak mogê siê dostaæ do zamku?";
+	description = "Jak mogÄ™ siÄ™ dostaÄ‡ do zamku?";
 };                       
 
 FUNC INT Info_grd_13_DasLager_Condition()
@@ -104,12 +104,12 @@ FUNC INT Info_grd_13_DasLager_Condition()
 
 FUNC VOID Info_grd_13_DasLager_Info()
 {
-	AI_Output(other,self,"Info_grd_13_DasLager_15_00"); //Jak mogê siê dostaæ do zamku?
-	AI_Output(self,other,"Info_grd_13_DasLager_13_01"); //Nie mo¿esz. Prawo wstêpu maj¹ tylko ludzie Gomeza.
+	AI_Output(other,self,"Info_grd_13_DasLager_15_00"); //Jak mogÄ™ siÄ™ dostaÄ‡ do zamku?
+	AI_Output(self,other,"Info_grd_13_DasLager_13_01"); //Nie moÅ¼esz. Prawo wstÄ™pu majÄ… tylko ludzie Gomeza.
 	Info_ClearChoices(Info_grd_13_DasLager);
 	Info_AddChoice(Info_grd_13_DasLager,"Rozumiem.", Info_grd_13_DasLager_Verstehe);
-	Info_AddChoice(Info_grd_13_DasLager,"A gdybym tak... przekupi³ stra¿ników?", Info_grd_13_DasLager_WachenBestechen);
-	Info_AddChoice(Info_grd_13_DasLager,"Co muszê zrobiæ, ¿eby porozmawiaæ z Gomezem?", Info_grd_13_DasLager_GomezSprechen);
+	Info_AddChoice(Info_grd_13_DasLager,"A gdybym tak... przekupiÅ‚ straÅ¼nikÃ³w?", Info_grd_13_DasLager_WachenBestechen);
+	Info_AddChoice(Info_grd_13_DasLager,"Co muszÄ™ zrobiÄ‡, Å¼eby porozmawiaÄ‡ z Gomezem?", Info_grd_13_DasLager_GomezSprechen);
 };
 
 FUNC VOID Info_grd_13_DasLager_Verstehe()
@@ -120,19 +120,19 @@ FUNC VOID Info_grd_13_DasLager_Verstehe()
 
 FUNC VOID Info_grd_13_DasLager_WachenBestechen()
 {
-	AI_Output(other,self,"Info_grd_13_DasLager_WachenBestechen_15_00"); //A gdybym tak... przekupi³ stra¿ników?
-	AI_Output(self,other,"Info_grd_13_DasLager_WachenBestechen_13_01"); //Masz tupet, ch³opcze! Có¿, myœlê, ¿e za odpowiedni¹ iloœæ rudy móg³byœ ich przekonaæ by przez chwilê... patrzyli w inn¹ stronê.
-	AI_Output(self,other,"Info_grd_13_DasLager_WachenBestechen_13_02"); //Ale jeœli Gomez dowie siê, ¿e ktoœ taki jak ty dosta³ siê za mury, ka¿e ich migiem wtr¹ciæ do lochu.
-	AI_Output(self,other,"Info_grd_13_DasLager_WachenBestechen_13_03"); //A to oczywiœcie podnosi cenê...
-	AI_Output(self,other,"Info_grd_13_DasLager_WachenBestechen_13_04"); //Zreszt¹, nawet gdybyœ dosta³ siê do œrodka, co byœ tam robi³? Wszystkie budynki s¹ pilnie strze¿one.
+	AI_Output(other,self,"Info_grd_13_DasLager_WachenBestechen_15_00"); //A gdybym tak... przekupiÅ‚ straÅ¼nikÃ³w?
+	AI_Output(self,other,"Info_grd_13_DasLager_WachenBestechen_13_01"); //Masz tupet, chÅ‚opcze! CÃ³Å¼, myÅ›lÄ™, Å¼e za odpowiedniÄ… iloÅ›Ä‡ rudy mÃ³gÅ‚byÅ› ich przekonaÄ‡ by przez chwilÄ™... patrzyli w innÄ… stronÄ™.
+	AI_Output(self,other,"Info_grd_13_DasLager_WachenBestechen_13_02"); //Ale jeÅ›li Gomez dowie siÄ™, Å¼e ktoÅ› taki jak ty dostaÅ‚ siÄ™ za mury, kaÅ¼e ich migiem wtrÄ…ciÄ‡ do lochu.
+	AI_Output(self,other,"Info_grd_13_DasLager_WachenBestechen_13_03"); //A to oczywiÅ›cie podnosi cenÄ™...
+	AI_Output(self,other,"Info_grd_13_DasLager_WachenBestechen_13_04"); //ZresztÄ…, nawet gdybyÅ› dostaÅ‚ siÄ™ do Å›rodka, co byÅ› tam robiÅ‚? Wszystkie budynki sÄ… pilnie strzeÅ¼one.
 	AI_Output(other,self,"Info_grd_13_DasLager_WachenBestechen_15_05"); //Tak tylko pytam...
 };
 
 FUNC VOID Info_grd_13_DasLager_GomezSprechen()
 {
-	AI_Output(other,self,"Info_grd_13_DasLager_GomezSprechen_15_00"); //Co muszê zrobiæ, ¿eby porozmawiaæ z Gomezem?
-	AI_Output(self,other,"Info_grd_13_DasLager_GomezSprechen_13_01"); //Gomez nie zwraca uwagi na nowych. Musisz siê najpierw czymœ wykazaæ.
-	AI_Output(self,other,"Info_grd_13_DasLager_GomezSprechen_13_02"); //Jeœli myœlisz o tym powa¿nie, zamieñ s³owo z Thorusem.
+	AI_Output(other,self,"Info_grd_13_DasLager_GomezSprechen_15_00"); //Co muszÄ™ zrobiÄ‡, Å¼eby porozmawiaÄ‡ z Gomezem?
+	AI_Output(self,other,"Info_grd_13_DasLager_GomezSprechen_13_01"); //Gomez nie zwraca uwagi na nowych. Musisz siÄ™ najpierw czymÅ› wykazaÄ‡.
+	AI_Output(self,other,"Info_grd_13_DasLager_GomezSprechen_13_02"); //JeÅ›li myÅ›lisz o tym powaÅ¼nie, zamieÅ„ sÅ‚owo z Thorusem.
 
 	var C_NPC Thorus;		Thorus 	= Hlp_GetNpc(GRD_200_Thorus);
 	Thorus.aivar[AIV_FINDABLE] = TRUE;
@@ -162,8 +162,8 @@ FUNC INT Info_grd_13_DieLage_Condition()
 FUNC VOID Info_grd_13_DieLage_Info()
 {
 	AI_Output(other,self,"Info_grd_13_DieLage_15_00"); //Jak leci?
-	AI_Output(self,other,"Info_grd_13_DieLage_13_01"); //Cisza i spokój. Od czasu do czasu jakaœ rozróba z Nowym Obozem albo paru œwirów z Sekty, ot i wszystko!
-	AI_Output(self,other,"Info_grd_13_DieLage_13_02"); //Tak d³ugo, jak jesteœ tu nowy, to nie ma znaczenia. Ale jak ju¿ zdecydujesz, do którego obozu chcesz nale¿eæ, utkwisz w tym po szyjê!
+	AI_Output(self,other,"Info_grd_13_DieLage_13_01"); //Cisza i spokÃ³j. Od czasu do czasu jakaÅ› rozrÃ³ba z Nowym Obozem albo paru Å›wirÃ³w z Sekty, ot i wszystko!
+	AI_Output(self,other,"Info_grd_13_DieLage_13_02"); //Tak dÅ‚ugo, jak jesteÅ› tu nowy, to nie ma znaczenia. Ale jak juÅ¼ zdecydujesz, do ktÃ³rego obozu chcesz naleÅ¼eÄ‡, utkwisz w tym po szyjÄ™!
 };
 	
 // *************************************************************************

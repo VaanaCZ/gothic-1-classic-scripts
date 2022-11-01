@@ -8,7 +8,7 @@
 //#####################################################################
 func void B_Story_BringFoci()
 {
-	//-------- Ausrüstung für Spieler --------
+	//-------- AusrÃ¼stung fÃ¼r Spieler --------
 	CreateInvItems		(self,			ItWrFocimap,	2);		// 2, damit die Bildschirmausgabe stimmt!
 	B_GiveInvItems		(self,	hero,	ItWrFocimap,	2);	
 	Npc_RemoveInvItem	(hero,			ItWrFocimap);
@@ -59,15 +59,15 @@ func void B_Story_BringFoci()
 	var C_NPC sld723;		sld723 = Hlp_GetNpc	(SLD_723_Soeldner);		sld723.aivar[AIV_PASSGATE] = TRUE;
 	var C_NPC sld732;		sld732 = Hlp_GetNpc	(SLD_732_Soeldner);		sld732.aivar[AIV_PASSGATE] = TRUE;
 
-	//-------- Tagebucheinträge --------
-	B_LogEntry			(CH3_EscapePlanNC,"Zaoferowa³em Saturasowi pomoc w wykonaniu jego planu ucieczki. Teraz muszê odnaleŸæ pozosta³e cztery kamienie ogniskuj¹ce.");
+	//-------- TagebucheintrÃ¤ge --------
+	B_LogEntry			(CH3_EscapePlanNC,"ZaoferowaÅ‚em Saturasowi pomoc w wykonaniu jego planu ucieczki. Teraz muszÄ™ odnaleÅºÄ‡ pozostaÅ‚e cztery kamienie ogniskujÄ…ce.");
 	Log_SetTopicStatus	(CH3_EscapePlanNC,	LOG_SUCCESS);
 	
 	Log_CreateTopic		(CH3_BringFoci,		LOG_MISSION);
 	Log_SetTopicStatus	(CH3_BringFoci,		LOG_RUNNING);
-	B_LogEntry			(CH3_BringFoci,"Odda³em Saturasowi kamieñ ogniskuj¹cy i almanach z obozu na bagnie. Teraz muszê odnaleŸæ pozosta³e cztery kamienie, których potrzebuj¹ Magowie Wody.");
-	B_LogEntry			(CH3_BringFoci,"Saturas da³ mi mapê, na której zaznaczono ostatnie znane po³o¿enie kamieni ogniskuj¹cych oraz magiczny zwój, który przeteleportuje mnie bezpoœrednio do siedziby Magów Wody.");
-	B_LogEntry			(CH3_BringFoci,"Riordian, jeden z Magów Wody, przygotowa³ dla mnie kilka magicznych wywarów. Mam je odebraæ w jego laboratorium alchemicznym na górnym poziomie Nowego Obozu.");
+	B_LogEntry			(CH3_BringFoci,"OddaÅ‚em Saturasowi kamieÅ„ ogniskujÄ…cy i almanach z obozu na bagnie. Teraz muszÄ™ odnaleÅºÄ‡ pozostaÅ‚e cztery kamienie, ktÃ³rych potrzebujÄ… Magowie Wody.");
+	B_LogEntry			(CH3_BringFoci,"Saturas daÅ‚ mi mapÄ™, na ktÃ³rej zaznaczono ostatnie znane poÅ‚oÅ¼enie kamieni ogniskujÄ…cych oraz magiczny zwÃ³j, ktÃ³ry przeteleportuje mnie bezpoÅ›rednio do siedziby MagÃ³w Wody.");
+	B_LogEntry			(CH3_BringFoci,"Riordian, jeden z MagÃ³w Wody, przygotowaÅ‚ dla mnie kilka magicznych wywarÃ³w. Mam je odebraÄ‡ w jego laboratorium alchemicznym na gÃ³rnym poziomie Nowego Obozu.");
 
 	//-------- Mission auf RUNNING setzen --------
 	Saturas_BringFoci = 1;

@@ -47,23 +47,23 @@ FUNC INT DIA_Grd_215_Torwache_First_Condition()
 
 FUNC VOID DIA_Grd_215_Torwache_First_Info()
 {
-	AI_Output (self, other,"DIA_Grd_215_Torwache_First_06_00"); //A ty dok¹d siê wybierasz?
+	AI_Output (self, other,"DIA_Grd_215_Torwache_First_06_00"); //A ty dokÄ…d siÄ™ wybierasz?
 	AI_Output (other, self,"DIA_Grd_215_Torwache_First_15_01"); //To Obozu.
-	AI_Output (self, other,"DIA_Grd_215_Torwache_First_06_02"); //Chyba nie przyszed³eœ tu, ¿eby sprawiaæ k³opoty, co?
+	AI_Output (self, other,"DIA_Grd_215_Torwache_First_06_02"); //Chyba nie przyszedÅ‚eÅ› tu, Å¼eby sprawiaÄ‡ kÅ‚opoty, co?
 	
 	Info_ClearChoices	(DIA_Grd_215_Torwache_First );
-	Info_AddChoice		(DIA_Grd_215_Torwache_First,"Jasne, zamierzam przej¹æ kontrolê nad ca³ym obozem!",DIA_Grd_215_Torwache_First_Trouble);
-	Info_AddChoice		(DIA_Grd_215_Torwache_First,"Chcia³em siê tylko trochê rozejrzeæ.",DIA_Grd_215_Torwache_First_JustLooking);
+	Info_AddChoice		(DIA_Grd_215_Torwache_First,"Jasne, zamierzam przejÄ…Ä‡ kontrolÄ™ nad caÅ‚ym obozem!",DIA_Grd_215_Torwache_First_Trouble);
+	Info_AddChoice		(DIA_Grd_215_Torwache_First,"ChciaÅ‚em siÄ™ tylko trochÄ™ rozejrzeÄ‡.",DIA_Grd_215_Torwache_First_JustLooking);
 	if (Npc_KnowsInfo(hero,Info_Diego_Kolonie))
 	{
-		Info_AddChoice		(DIA_Grd_215_Torwache_First,"Diego powiedzia³, ¿e mam siê z nim spotkaæ w obozie.",DIA_Grd_215_Torwache_First_Diego);
+		Info_AddChoice		(DIA_Grd_215_Torwache_First,"Diego powiedziaÅ‚, Å¼e mam siÄ™ z nim spotkaÄ‡ w obozie.",DIA_Grd_215_Torwache_First_Diego);
 	};
 };
 
 func void DIA_Grd_215_Torwache_First_Trouble()
 {
-	AI_Output (other, self,"DIA_Grd_215_Torwache_First_Trouble_15_00"); //Jasne, zamierzam przej¹æ kontrolê nad ca³ym obozem!
-	AI_Output (self, other,"DIA_Grd_215_Torwache_First_Trouble_06_01"); //Hej, facet jest ca³kiem zabawny... Nie lubiê zabawnych facetów.
+	AI_Output (other, self,"DIA_Grd_215_Torwache_First_Trouble_15_00"); //Jasne, zamierzam przejÄ…Ä‡ kontrolÄ™ nad caÅ‚ym obozem!
+	AI_Output (self, other,"DIA_Grd_215_Torwache_First_Trouble_06_01"); //Hej, facet jest caÅ‚kiem zabawny... Nie lubiÄ™ zabawnych facetÃ³w.
 	Info_ClearChoices	(DIA_Grd_215_Torwache_First );
 	
 	AI_StopProcessInfos	( self );
@@ -73,24 +73,24 @@ func void DIA_Grd_215_Torwache_First_Trouble()
 
 func void DIA_Grd_215_Torwache_First_JustLooking()
 {
-	AI_Output (other, self,"DIA_Grd_215_Torwache_First_JustLooking_15_00"); //Chcia³em siê tylko trochê rozejrzeæ.
-	AI_Output (self, other,"DIA_Grd_215_Torwache_First_JustLooking_06_01"); //To ciê bêdzie kosztowaæ 10 bry³ek rudy.
+	AI_Output (other, self,"DIA_Grd_215_Torwache_First_JustLooking_15_00"); //ChciaÅ‚em siÄ™ tylko trochÄ™ rozejrzeÄ‡.
+	AI_Output (self, other,"DIA_Grd_215_Torwache_First_JustLooking_06_01"); //To ciÄ™ bÄ™dzie kosztowaÄ‡ 10 bryÅ‚ek rudy.
 	
 	Info_ClearChoices	(DIA_Grd_215_Torwache_First );
-	Info_AddChoice		(DIA_Grd_215_Torwache_First,"Niewa¿ne.",DIA_Grd_215_Torwache_First_NoPay);
-	Info_AddChoice		(DIA_Grd_215_Torwache_First,"Dobrze, masz tu swoje 10 bry³ek.",DIA_Grd_215_Torwache_First_Pay);
+	Info_AddChoice		(DIA_Grd_215_Torwache_First,"NiewaÅ¼ne.",DIA_Grd_215_Torwache_First_NoPay);
+	Info_AddChoice		(DIA_Grd_215_Torwache_First,"Dobrze, masz tu swoje 10 bryÅ‚ek.",DIA_Grd_215_Torwache_First_Pay);
 };
 
 func void DIA_Grd_215_Torwache_First_Diego()
 {
-	AI_Output (other, self,"DIA_Grd_215_Torwache_First_Diego_15_00"); //Diego powiedzia³, ¿e mam siê z nim spotkaæ w obozie.
-	AI_Output (self, other,"DIA_Grd_215_Torwache_First_Diego_06_01"); //W takim razie - w³aŸ.
+	AI_Output (other, self,"DIA_Grd_215_Torwache_First_Diego_15_00"); //Diego powiedziaÅ‚, Å¼e mam siÄ™ z nim spotkaÄ‡ w obozie.
+	AI_Output (self, other,"DIA_Grd_215_Torwache_First_Diego_06_01"); //W takim razie - wÅ‚aÅº.
 	Info_ClearChoices	(DIA_Grd_215_Torwache_First );
 };
 
 func void DIA_Grd_215_Torwache_First_NoPay()
 {
-	AI_Output (other, self,"DIA_Grd_215_Torwache_First_NoPay_15_00"); //Niewa¿ne.
+	AI_Output (other, self,"DIA_Grd_215_Torwache_First_NoPay_15_00"); //NiewaÅ¼ne.
 	AI_Output (self, other,"DIA_Grd_215_Torwache_First_NoPay_06_01"); //W takim razie - spadaj.
 	Info_ClearChoices	(DIA_Grd_215_Torwache_First );
 };
@@ -99,14 +99,14 @@ func void DIA_Grd_215_Torwache_First_Pay()
 {
 	if (Npc_HasItems(other, itminugget) >= 10)
 	{
-		AI_Output (other, self,"DIA_Grd_215_Torwache_First_Pay_15_00"); //Dobrze, masz tu swoje 10 bry³ek.
-		AI_Output (self, other,"DIA_Grd_215_Torwache_First_Pay_06_01"); //Dobra. Zapraszam do œrodka.
+		AI_Output (other, self,"DIA_Grd_215_Torwache_First_Pay_15_00"); //Dobrze, masz tu swoje 10 bryÅ‚ek.
+		AI_Output (self, other,"DIA_Grd_215_Torwache_First_Pay_06_01"); //Dobra. Zapraszam do Å›rodka.
 		B_GiveInvItems 	(other,self, itminugget,10);CreateInvItems 		(self,  itminugget,10);
 	}
 	else
 	{
 		AI_Output (other, self,"DIA_Grd_215_Torwache_First_Pay_NoOre_15_00"); //Nie mam tyle przy sobie.
-		AI_Output (self, other,"DIA_Grd_215_Torwache_First_Pay_NoOre_06_01"); //Có¿. Tym razem zrobiê wyj¹tek, bo jesteœ tu nowy.
+		AI_Output (self, other,"DIA_Grd_215_Torwache_First_Pay_NoOre_06_01"); //CÃ³Å¼. Tym razem zrobiÄ™ wyjÄ…tek, bo jesteÅ› tu nowy.
 		
 	};
 		
@@ -125,7 +125,7 @@ INSTANCE DIA_Grd_215_Torwache_PERM (C_INFO)
 	condition	= DIA_Grd_215_Torwache_PERM_Condition;
 	information	= DIA_Grd_215_Torwache_PERM_Info;
 	permanent	= 1;
-	description = "Coœ nowego?";
+	description = "CoÅ› nowego?";
 };                       
 
 FUNC INT DIA_Grd_215_Torwache_PERM_Condition()
@@ -135,6 +135,6 @@ FUNC INT DIA_Grd_215_Torwache_PERM_Condition()
 
 FUNC VOID DIA_Grd_215_Torwache_PERM_Info()
 {
-	AI_Output (other, self,"DIA_Grd_215_Torwache_PERM_15_00"); //Coœ nowego?
+	AI_Output (other, self,"DIA_Grd_215_Torwache_PERM_15_00"); //CoÅ› nowego?
 	AI_Output (self, other,"DIA_Grd_215_Torwache_PERM_06_01"); //Nie. Wszystko po staremu.
 };

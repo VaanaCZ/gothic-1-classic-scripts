@@ -37,7 +37,7 @@ INSTANCE PC_Hero(NPC_DEFAULT)
 
 
 // ***************************************************************************
-// PlayerInstanz ANFANG LEVEL2!!! Mit Buddlerr¸stung +10, Waffe +13, Waffe +20
+// PlayerInstanz ANFANG LEVEL2!!! Mit Buddlerr√ºstung +10, Waffe +13, Waffe +20
 // ***************************************************************************
 
 INSTANCE PC_Hero_L2(NPC_DEFAULT)
@@ -387,7 +387,7 @@ INSTANCE HeroBow13 (C_Item)
 
 
 
-// *********** NICHT L÷SCHEN - SONST STERBEN **************
+// *********** NICHT L√ñSCHEN - SONST STERBEN **************
 
 
 INSTANCE XP_Map(C_Item)
@@ -411,10 +411,10 @@ FUNC VOID Use_XP_Map()
 	CreateInvItems(self,ItMiNugget,1000);
 	hero.lp = hero.lp + 20;
 	
-	PrintScreen("a·‡‚A¡¿¬", -1,40,"font_10_book.tga",10);
-	PrintScreen("a·‡‚A¡¿¬", -1,50,"font_15_book.tga",10);
-	PrintScreen("a·‡‚A¡¿¬", -1,60,"font_15_white.tga",10);
-	PrintScreen("a·‡‚A¡¿¬", -1,70,"font_default.tga",10);
-	PrintScreen("a·‡‚A¡¿¬", -1,80,"font_old_10_white.tga",10);
-	PrintScreen("a·‡‚A¡¿¬", -1,90,"font_old_20_white.tga",10);
+	PrintScreen("a√°≈ï√¢A√Å≈î√Ç", -1,40,"font_10_book.tga",10);
+	PrintScreen("a√°≈ï√¢A√Å≈î√Ç", -1,50,"font_15_book.tga",10);
+	PrintScreen("a√°≈ï√¢A√Å≈î√Ç", -1,60,"font_15_white.tga",10);
+	PrintScreen("a√°≈ï√¢A√Å≈î√Ç", -1,70,"font_default.tga",10);
+	PrintScreen("a√°≈ï√¢A√Å≈î√Ç", -1,80,"font_old_10_white.tga",10);
+	PrintScreen("a√°≈ï√¢A√Å≈î√Ç", -1,90,"font_old_20_white.tga",10);
 };

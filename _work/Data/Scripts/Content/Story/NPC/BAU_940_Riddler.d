@@ -1,11 +1,11 @@
 
-//******************Der tote Riddler****************************Björn****
+//******************Der tote Riddler****************************BjÃ¶rn****
 
 instance Bau_940_Riddler (Npc_Default)
 {
 	//-------- primary data --------
 	
-	name 		=	"Zw³oki";  
+	name 		=	"ZwÅ‚oki";  
 	npctype		= 	npctype_main;
 	guild 		=	GIL_BAU;
 	level 		=	10;

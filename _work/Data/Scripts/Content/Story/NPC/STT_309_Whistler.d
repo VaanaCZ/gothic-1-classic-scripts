@@ -1,7 +1,7 @@
 instance Stt_309_Whistler (Npc_Default)
 {
 	//-------- primary data --------
-	name 		=		"Œwistak";
+	name 		=		"Åšwistak";
 	npctype 		=		NPCTYPE_MAIN;
 	guild 		=		GIL_STT;
 	level 		=		5;

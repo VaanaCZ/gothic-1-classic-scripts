@@ -45,7 +45,7 @@ FUNC VOID  Org_818_Ratford_WrongWay_Info()
 {
 	AI_Output (self, other,"Org_818_Ratford_WrongWay_07_00"); //Hej, ty!
 	AI_Output (other, self,"Org_818_Ratford_WrongWay_15_01"); //Czego chcesz?
-	AI_Output (self, other,"Org_818_Ratford_WrongWay_07_02"); //Chcê ciê ostrzec. Id¹c dalej wejdziesz na nasze tereny ³owieckie.
+	AI_Output (self, other,"Org_818_Ratford_WrongWay_07_02"); //ChcÄ™ ciÄ™ ostrzec. IdÄ…c dalej wejdziesz na nasze tereny Å‚owieckie.
 };
 
 // **************************************************
@@ -70,13 +70,13 @@ FUNC int  Org_818_Ratford_WhatGame_Condition()
 FUNC VOID  Org_818_Ratford_WhatGame_Info()
 {
 	AI_Output (other, self,"Org_818_Ratford_WhatGame_15_00"); //Na co polujecie?
-	AI_Output (self, other,"Org_818_Ratford_WhatGame_07_01"); //G³ównie na œcierwojady. Da siê je zjeœæ, no i nietrudno je zabiæ... Jeœli wie siê jak to zrobiæ.
-	AI_Output (other, self,"Org_818_Ratford_WhatGame_15_02"); //Naprawdê? Macie jak¹œ specjaln¹ metodê?
-	AI_Output (self, other,"Org_818_Ratford_WhatGame_07_03"); //Zapytaj mojego kumpla, Draxa. Nikt nie wie wiêcej o œcierwojadach ni¿ on.
+	AI_Output (self, other,"Org_818_Ratford_WhatGame_07_01"); //GÅ‚Ã³wnie na Å›cierwojady. Da siÄ™ je zjeÅ›Ä‡, no i nietrudno je zabiÄ‡... JeÅ›li wie siÄ™ jak to zrobiÄ‡.
+	AI_Output (other, self,"Org_818_Ratford_WhatGame_15_02"); //NaprawdÄ™? Macie jakÄ…Å› specjalnÄ… metodÄ™?
+	AI_Output (self, other,"Org_818_Ratford_WhatGame_07_03"); //Zapytaj mojego kumpla, Draxa. Nikt nie wie wiÄ™cej o Å›cierwojadach niÅ¼ on.
 };
 
 // **************************************************
-//					Warum gefährlich
+//					Warum gefÃ¤hrlich
 // **************************************************
 
 instance  Org_818_Ratford_WhyDangerous (C_INFO)
@@ -97,13 +97,13 @@ FUNC int  Org_818_Ratford_WhyDangerous_Condition()
 FUNC VOID  Org_818_Ratford_WhyDangerous_Info()
 {
 	AI_Output (other, self,"Org_818_Ratford_WhyDangerous_15_00"); //Dlaczego ten teren jest tak niebezpieczny?
-	AI_Output (self, other,"Org_818_Ratford_WhyDangerous_07_01"); //Jesteœ tu nowy, co? W ca³ej kolonii jest mnóstwo mniej lub bardziej niebezpiecznych miejsc.
-	AI_Output (self, other,"Org_818_Ratford_WhyDangerous_07_02"); //Œcie¿ki pomiêdzy obozami s¹ doœæ bezpieczne, ale nawet tam mo¿na natkn¹æ siê na stado wilków, które bêd¹ chcia³y zjeœæ ciê na kolacjê.
-	AI_Output (self, other,"Org_818_Ratford_WhyDangerous_07_03"); //Dlatego lepiej nie ruszaæ siê nigdzie bez odpowiedniego orê¿a i zbroi.
+	AI_Output (self, other,"Org_818_Ratford_WhyDangerous_07_01"); //JesteÅ› tu nowy, co? W caÅ‚ej kolonii jest mnÃ³stwo mniej lub bardziej niebezpiecznych miejsc.
+	AI_Output (self, other,"Org_818_Ratford_WhyDangerous_07_02"); //ÅšcieÅ¼ki pomiÄ™dzy obozami sÄ… doÅ›Ä‡ bezpieczne, ale nawet tam moÅ¼na natknÄ…Ä‡ siÄ™ na stado wilkÃ³w, ktÃ³re bÄ™dÄ… chciaÅ‚y zjeÅ›Ä‡ ciÄ™ na kolacjÄ™.
+	AI_Output (self, other,"Org_818_Ratford_WhyDangerous_07_03"); //Dlatego lepiej nie ruszaÄ‡ siÄ™ nigdzie bez odpowiedniego orÄ™Å¼a i zbroi.
 };
 
 // **************************************************
-//					Wo Ausrüstung
+//					Wo AusrÃ¼stung
 // **************************************************
 
 instance  Org_818_Ratford_WoEquipment (C_INFO)
@@ -113,7 +113,7 @@ instance  Org_818_Ratford_WoEquipment (C_INFO)
 	condition	= Org_818_Ratford_WoEquipment_Condition;
 	information	= Org_818_Ratford_WoEquipment_Info;
 	permanent	= 0;
-	description = "Sk¹d mogê wzi¹æ lepsze wyposa¿enie?";
+	description = "SkÄ…d mogÄ™ wziÄ…Ä‡ lepsze wyposaÅ¼enie?";
 };                       
 
 FUNC int  Org_818_Ratford_WoEquipment_Condition()
@@ -126,13 +126,13 @@ FUNC int  Org_818_Ratford_WoEquipment_Condition()
 
 FUNC VOID  Org_818_Ratford_WoEquipment_Info()
 {
-	AI_Output (other, self,"Org_818_Ratford_WoEquipment_15_00"); //Sk¹d mogê wzi¹æ lepsze wyposa¿enie?
-	AI_Output (self, other,"Org_818_Ratford_WoEquipment_07_01"); //Najbli¿ej bêdzie pewnie Stary Obóz. IdŸ dalej t¹ sam¹ œcie¿k¹, na pewno trafisz.
-	AI_Output (self, other,"Org_818_Ratford_WoEquipment_07_02"); //Ale lepsze ceny znajdziesz u nas - w Nowym Obozie. Oczywiœcie pod warunkiem, ¿e znasz w³aœciwych ludzi.
-	AI_Output (self, other,"Org_818_Ratford_WoEquipment_07_03"); //Kiedy trafisz do Starego Obozu, poszukaj mê¿czyzny imieniem Mordrag. To jeden z naszych. Za kilka bry³ek rudy mo¿na u niego kupiæ wiele wartoœciowych rzeczy.
+	AI_Output (other, self,"Org_818_Ratford_WoEquipment_15_00"); //SkÄ…d mogÄ™ wziÄ…Ä‡ lepsze wyposaÅ¼enie?
+	AI_Output (self, other,"Org_818_Ratford_WoEquipment_07_01"); //NajbliÅ¼ej bÄ™dzie pewnie Stary ObÃ³z. IdÅº dalej tÄ… samÄ… Å›cieÅ¼kÄ…, na pewno trafisz.
+	AI_Output (self, other,"Org_818_Ratford_WoEquipment_07_02"); //Ale lepsze ceny znajdziesz u nas - w Nowym Obozie. OczywiÅ›cie pod warunkiem, Å¼e znasz wÅ‚aÅ›ciwych ludzi.
+	AI_Output (self, other,"Org_818_Ratford_WoEquipment_07_03"); //Kiedy trafisz do Starego Obozu, poszukaj mÄ™Å¼czyzny imieniem Mordrag. To jeden z naszych. Za kilka bryÅ‚ek rudy moÅ¼na u niego kupiÄ‡ wiele wartoÅ›ciowych rzeczy.
 	
 	Log_CreateTopic	(GE_TraderOC, LOG_NOTE);
-	B_LogEntry		(GE_TraderOC,"Szkodnik Mordrag handluje w Starym Obozie ró¿nymi towarami. Ponoæ ma bardzo przystêpne ceny.");
+	B_LogEntry		(GE_TraderOC,"Szkodnik Mordrag handluje w Starym Obozie rÃ³Å¼nymi towarami. PonoÄ‡ ma bardzo przystÄ™pne ceny.");
 };
 
 // **************************************************
@@ -160,11 +160,11 @@ FUNC int  Org_818_Ratford_MoreLocations_Condition()
 FUNC VOID  Org_818_Ratford_MoreLocations_Info()
 {
 	AI_Output (other, self,"Org_818_Ratford_MoreLocations_15_00"); //Opowiedz mi jeszcze o kolonii.
-	AI_Output (self, other,"Org_818_Ratford_MoreLocations_07_01"); //Jeœli zamierzasz podró¿owaæ miêdzy obozami, przyda ci siê mapa z wszystkimi œcie¿kami i œlepymi zau³kami.
-	AI_Output (self, other,"Org_818_Ratford_MoreLocations_07_02"); //Niektóre œcie¿ki prowadz¹ do niebezpiecznych kanionów, gdzie mo¿na wpaœæ na istoty, na które... lepiej nie wpadaæ.
-	AI_Output (self, other,"Org_818_Ratford_MoreLocations_07_03"); //Pod ¿adnym pozorem nie w³ócz siê w pobli¿u starych ruin. Wiêkszoœæ z nich pamiêta jeszcze pierwsz¹ wojnê z Orkami. Niektóre s¹ nawet pozosta³oœciami po ich osiedlach.
-	AI_Output (self, other,"Org_818_Ratford_MoreLocations_07_04"); //Czêsto krêc¹ siê tam Orkowie albo jeszcze gorsze poczwary. Na twoim miejscu unika³bym takich miejsc jak ognia. Zw³aszcza noc¹.
-	AI_Output (self, other,"Org_818_Ratford_MoreLocations_07_05"); //I jeszcze jedna rada - nie wchodŸ do lasu!
+	AI_Output (self, other,"Org_818_Ratford_MoreLocations_07_01"); //JeÅ›li zamierzasz podrÃ³Å¼owaÄ‡ miÄ™dzy obozami, przyda ci siÄ™ mapa z wszystkimi Å›cieÅ¼kami i Å›lepymi zauÅ‚kami.
+	AI_Output (self, other,"Org_818_Ratford_MoreLocations_07_02"); //NiektÃ³re Å›cieÅ¼ki prowadzÄ… do niebezpiecznych kanionÃ³w, gdzie moÅ¼na wpaÅ›Ä‡ na istoty, na ktÃ³re... lepiej nie wpadaÄ‡.
+	AI_Output (self, other,"Org_818_Ratford_MoreLocations_07_03"); //Pod Å¼adnym pozorem nie wÅ‚Ã³cz siÄ™ w pobliÅ¼u starych ruin. WiÄ™kszoÅ›Ä‡ z nich pamiÄ™ta jeszcze pierwszÄ… wojnÄ™ z Orkami. NiektÃ³re sÄ… nawet pozostaÅ‚oÅ›ciami po ich osiedlach.
+	AI_Output (self, other,"Org_818_Ratford_MoreLocations_07_04"); //CzÄ™sto krÄ™cÄ… siÄ™ tam Orkowie albo jeszcze gorsze poczwary. Na twoim miejscu unikaÅ‚bym takich miejsc jak ognia. ZwÅ‚aszcza nocÄ….
+	AI_Output (self, other,"Org_818_Ratford_MoreLocations_07_05"); //I jeszcze jedna rada - nie wchodÅº do lasu!
 };
 
 // **************************************************
@@ -178,7 +178,7 @@ instance Org_818_Ratford_WoKarte (C_INFO)
 	condition	= Org_818_Ratford_WoKarte_Condition;
 	information	= Org_818_Ratford_WoKarte_Info;
 	permanent	= 0;
-	description = "Gdzie mogê zdobyæ jak¹œ mapê?";
+	description = "Gdzie mogÄ™ zdobyÄ‡ jakÄ…Å› mapÄ™?";
 };                       
 
 FUNC int Org_818_Ratford_WoKarte_Condition()
@@ -191,19 +191,19 @@ FUNC int Org_818_Ratford_WoKarte_Condition()
 
 FUNC void Org_818_Ratford_WoKarte_Info()
 {
-	AI_Output (other, self,"Org_818_Ratford_WoKarte_15_00"); //Gdzie mogê zdobyæ jak¹œ mapê?
+	AI_Output (other, self,"Org_818_Ratford_WoKarte_15_00"); //Gdzie mogÄ™ zdobyÄ‡ jakÄ…Å› mapÄ™?
 	AI_Output (self, other,"Org_818_Ratford_WoKarte_07_01"); //Popytaj ludzi w Starym Obozie. Mieszka tam jeden kartograf. 
-	AI_Output (self, other,"Org_818_Ratford_WoKarte_07_02"); //Mo¿e uda ci siê gwizdn¹æ mu jak¹œ mapê. Przy okazji móg³byœ zwin¹æ tak¿e jedn¹ dla mnie!
+	AI_Output (self, other,"Org_818_Ratford_WoKarte_07_02"); //MoÅ¼e uda ci siÄ™ gwizdnÄ…Ä‡ mu jakÄ…Å› mapÄ™. Przy okazji mÃ³gÅ‚byÅ› zwinÄ…Ä‡ takÅ¼e jednÄ… dla mnie!
 	
 	Info_ClearChoices(Org_818_Ratford_WoKarte);
-	Info_AddChoice   (Org_818_Ratford_WoKarte,"Jeœli uda mi siê zdobyæ je bez p³acenia, wezmê ile tylko dam radê udŸwign¹æ!",Org_818_Ratford_WoKarte_Stehlen);
-	Info_AddChoice	 (Org_818_Ratford_WoKarte,"Dlaczego? Jego mapy nie s¹ na sprzeda¿?",Org_818_Ratford_WoKarte_Kaufen);
+	Info_AddChoice   (Org_818_Ratford_WoKarte,"JeÅ›li uda mi siÄ™ zdobyÄ‡ je bez pÅ‚acenia, wezmÄ™ ile tylko dam radÄ™ udÅºwignÄ…Ä‡!",Org_818_Ratford_WoKarte_Stehlen);
+	Info_AddChoice	 (Org_818_Ratford_WoKarte,"Dlaczego? Jego mapy nie sÄ… na sprzedaÅ¼?",Org_818_Ratford_WoKarte_Kaufen);
 };
 
 func void Org_818_Ratford_WoKarte_Stehlen()
 {
-	AI_Output (other, self,"Org_818_Ratford_WoKarte_Stehlen_15_00"); //Jeœli uda mi siê zdobyæ je bez p³acenia, wezmê ile tylko dam radê udŸwign¹æ!
-	AI_Output (self, other,"Org_818_Ratford_WoKarte_Stehlen_07_01"); //Równy z ciebie goœæ! Powinieneœ pomyœleæ o do³¹czeniu do Nowego Obozu. Gdybyœ kiedyœ tam trafi³, pytaj o Laresa. To on zajmuje siê nowymi. Na pewno znajdzie dla ciebie jakieœ zajêcie!
+	AI_Output (other, self,"Org_818_Ratford_WoKarte_Stehlen_15_00"); //JeÅ›li uda mi siÄ™ zdobyÄ‡ je bez pÅ‚acenia, wezmÄ™ ile tylko dam radÄ™ udÅºwignÄ…Ä‡!
+	AI_Output (self, other,"Org_818_Ratford_WoKarte_Stehlen_07_01"); //RÃ³wny z ciebie goÅ›Ä‡! PowinieneÅ› pomyÅ›leÄ‡ o doÅ‚Ä…czeniu do Nowego Obozu. GdybyÅ› kiedyÅ› tam trafiÅ‚, pytaj o Laresa. To on zajmuje siÄ™ nowymi. Na pewno znajdzie dla ciebie jakieÅ› zajÄ™cie!
 	
 	VAR C_NPC Lares; Lares = Hlp_GetNpc(ORG_801_LARES);
 	Lares.aivar[AIV_FINDABLE]=TRUE;
@@ -213,8 +213,8 @@ func void Org_818_Ratford_WoKarte_Stehlen()
 
 func void Org_818_Ratford_WoKarte_Kaufen()
 {
-	AI_Output (other, self,"Org_818_Ratford_WoKarte_Kaufen_15_00"); //Dlaczego? Jego mapy nie s¹ na sprzeda¿? 
-	AI_Output (self, other,"Org_818_Ratford_WoKarte_Kaufen_07_01"); //Jeœli staæ ciê na tak ogromny wydatek...
+	AI_Output (other, self,"Org_818_Ratford_WoKarte_Kaufen_15_00"); //Dlaczego? Jego mapy nie sÄ… na sprzedaÅ¼? 
+	AI_Output (self, other,"Org_818_Ratford_WoKarte_Kaufen_07_01"); //JeÅ›li staÄ‡ ciÄ™ na tak ogromny wydatek...
 	Info_ClearChoices(Org_818_Ratford_WoKarte);
 };
 
@@ -229,7 +229,7 @@ instance  Org_818_Ratford_Thanks (C_INFO)
 	condition	= Org_818_Ratford_Thanks_Condition;
 	information	= Org_818_Ratford_Thanks_Info;
 	permanent	= 0;
-	description = "Dziêki za pomoc.";
+	description = "DziÄ™ki za pomoc.";
 };                       
 
 FUNC int  Org_818_Ratford_Thanks_Condition()
@@ -239,10 +239,10 @@ FUNC int  Org_818_Ratford_Thanks_Condition()
 
 FUNC VOID  Org_818_Ratford_Thanks_Info()
 {
-	AI_Output (other, self,"Org_818_Ratford_Thanks_15_00"); //Dziêki za pomoc.
-	AI_Output (self, other,"Org_818_Ratford_Thanks_07_01"); //Tylko nie myœl, ¿e wszyscy tutaj s¹ tacy mili!
-	AI_Output (self, other,"Org_818_Ratford_Thanks_07_02"); //Niewiele mo¿na znaleŸæ w kieszeniach Nowego, ale w kolonii s¹ ludzie, którzy roz³upaliby ci czaszkê za stary kilof.
-	AI_Output (other, self,"Org_818_Ratford_Thanks_15_04"); //Bêdê o tym pamiêta³.
+	AI_Output (other, self,"Org_818_Ratford_Thanks_15_00"); //DziÄ™ki za pomoc.
+	AI_Output (self, other,"Org_818_Ratford_Thanks_07_01"); //Tylko nie myÅ›l, Å¼e wszyscy tutaj sÄ… tacy mili!
+	AI_Output (self, other,"Org_818_Ratford_Thanks_07_02"); //Niewiele moÅ¼na znaleÅºÄ‡ w kieszeniach Nowego, ale w kolonii sÄ… ludzie, ktÃ³rzy rozÅ‚upaliby ci czaszkÄ™ za stary kilof.
+	AI_Output (other, self,"Org_818_Ratford_Thanks_15_04"); //BÄ™dÄ™ o tym pamiÄ™taÅ‚.
 };
 
 

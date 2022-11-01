@@ -37,7 +37,7 @@ INSTANCE Info_Vlk_2_EinerVonEuchWerden (C_INFO) // E1
 	condition	= Info_Vlk_2_EinerVonEuchWerden_Condition;
 	information	= Info_Vlk_2_EinerVonEuchWerden_Info;
 	permanent	= 1;
-	description = "Chcê do was do³¹czyæ.";
+	description = "ChcÄ™ do was doÅ‚Ä…czyÄ‡.";
 };                       
 
 FUNC INT Info_Vlk_2_EinerVonEuchWerden_Condition()
@@ -50,8 +50,8 @@ FUNC INT Info_Vlk_2_EinerVonEuchWerden_Condition()
 
 FUNC VOID Info_Vlk_2_EinerVonEuchWerden_Info()
 {
-	AI_Output(other,self,"Info_Vlk_2_EinerVonEuchWerden_15_00"); //Chcê do was do³¹czyæ.
-	AI_Output(self,other,"Info_Vlk_2_EinerVonEuchWerden_02_01"); //Nie bardzo wiem, czemu mia³byœ chcieæ na ochotnika pracowaæ w kopalni. Ludzi takich jak ty spodziewa³bym siê raczej w zamkowej stra¿y.
+	AI_Output(other,self,"Info_Vlk_2_EinerVonEuchWerden_15_00"); //ChcÄ™ do was doÅ‚Ä…czyÄ‡.
+	AI_Output(self,other,"Info_Vlk_2_EinerVonEuchWerden_02_01"); //Nie bardzo wiem, czemu miaÅ‚byÅ› chcieÄ‡ na ochotnika pracowaÄ‡ w kopalni. Ludzi takich jak ty spodziewaÅ‚bym siÄ™ raczej w zamkowej straÅ¼y.
 };
 
 // *************************************************************************
@@ -64,7 +64,7 @@ INSTANCE Info_Vlk_2_WichtigePersonen(C_INFO)
 	condition	= Info_Vlk_2_WichtigePersonen_Condition;
 	information	= Info_Vlk_2_WichtigePersonen_Info;
 	permanent	= 1;
-	description = "Kto tu rz¹dzi?";
+	description = "Kto tu rzÄ…dzi?";
 };                       
 
 FUNC INT Info_Vlk_2_WichtigePersonen_Condition()
@@ -74,9 +74,9 @@ FUNC INT Info_Vlk_2_WichtigePersonen_Condition()
 
 FUNC VOID Info_Vlk_2_WichtigePersonen_Info()
 {
-	AI_Output(other,self,"Info_Vlk_2_WichtigePersonen_15_00"); //Kto tu rz¹dzi?
-	AI_Output(self,other,"Info_Vlk_2_WichtigePersonen_02_01"); //Fletcher, Bloodwyn i Szakal zbieraj¹ w Zewnêtrznym Pierœcieniu pieni¹dze za ochronê. Ka¿dy z nich ma swój rewir.
-	AI_Output(self,other,"Info_Vlk_2_WichtigePersonen_02_02"); //Tak d³ugo jak s¹ po twojej stronie - jesteœ bezpieczny.
+	AI_Output(other,self,"Info_Vlk_2_WichtigePersonen_15_00"); //Kto tu rzÄ…dzi?
+	AI_Output(self,other,"Info_Vlk_2_WichtigePersonen_02_01"); //Fletcher, Bloodwyn i Szakal zbierajÄ… w ZewnÄ™trznym PierÅ›cieniu pieniÄ…dze za ochronÄ™. KaÅ¼dy z nich ma swÃ³j rewir.
+	AI_Output(self,other,"Info_Vlk_2_WichtigePersonen_02_02"); //Tak dÅ‚ugo jak sÄ… po twojej stronie - jesteÅ› bezpieczny.
 };
 
 // *************************************************************************
@@ -89,7 +89,7 @@ INSTANCE Info_Vlk_2_DasLager(C_INFO)
 	condition	= Info_Vlk_2_DasLager_Condition;
 	information	= Info_Vlk_2_DasLager_Info;
 	permanent	= 1;
-	description = "Chcia³bym dowiedzieæ siê wiêcej o waszym Obozie.";
+	description = "ChciaÅ‚bym dowiedzieÄ‡ siÄ™ wiÄ™cej o waszym Obozie.";
 };                       
 
 FUNC INT Info_Vlk_2_DasLager_Condition()
@@ -99,8 +99,8 @@ FUNC INT Info_Vlk_2_DasLager_Condition()
 
 FUNC VOID Info_Vlk_2_DasLager_Info()
 {
-	AI_Output(other,self,"Info_Vlk_2_DasLager_15_00"); //Chcia³bym dowiedzieæ siê czegoœ wiêcej o waszym Obozie.
-	AI_Output(self,other,"Info_Vlk_2_DasLager_02_01"); //Powinieneœ pogadaæ z Cieniami. Oni bêd¹ mogli powiedzieæ ci wiêcej ni¿ ja. Tylko uwa¿aj na siebie. Wiêkszoœci z nich nie mo¿na ufaæ do koñca.
+	AI_Output(other,self,"Info_Vlk_2_DasLager_15_00"); //ChciaÅ‚bym dowiedzieÄ‡ siÄ™ czegoÅ› wiÄ™cej o waszym Obozie.
+	AI_Output(self,other,"Info_Vlk_2_DasLager_02_01"); //PowinieneÅ› pogadaÄ‡ z Cieniami. Oni bÄ™dÄ… mogli powiedzieÄ‡ ci wiÄ™cej niÅ¼ ja. Tylko uwaÅ¼aj na siebie. WiÄ™kszoÅ›ci z nich nie moÅ¼na ufaÄ‡ do koÅ„ca.
 };
 
 // *************************************************************************
@@ -113,7 +113,7 @@ INSTANCE Info_Vlk_2_DieLage(C_INFO) // E1
 	condition	= Info_Vlk_2_DieLage_Condition;
 	information	= Info_Vlk_2_DieLage_Info;
 	permanent	= 1;
-	description = "Jak wygl¹da ¿ycie tutaj?";
+	description = "Jak wyglÄ…da Å¼ycie tutaj?";
 };                       
 
 FUNC INT Info_Vlk_2_DieLage_Condition()
@@ -125,11 +125,11 @@ FUNC INT Info_Vlk_2_DieLage_Condition()
 };
 FUNC VOID Info_Vlk_2_DieLage_Info()
 {
-	AI_Output(other,self,"Info_Vlk_2_DieLage_15_00"); //Jak wygl¹da ¿ycie tutaj?
-	AI_Output(self,other,"Info_Vlk_2_DieLage_02_01"); //Jeœli przys³ali ciê Magnaci, powiedz im, ¿e nie szukam k³opotów. Ode mnie nikt siê niczego nie dowie.
-	AI_Output(self,other,"Info_Vlk_2_DieLage_02_02"); //Wystarcza mi to, co nam daj¹.
-	AI_Output(other,self,"Info_Vlk_2_DieLage_15_03"); //Nikt mnie nie przysy³a! Dopiero co tu przyby³em!
-	AI_Output(self,other,"Info_Vlk_2_DieLage_02_04"); //¯ó³todziób, tak? Nowi zawsze pakuj¹ siê w jakieœ paskudne k³opoty. Nie chcê mieæ z tob¹ nic wspólnego, jasne?
+	AI_Output(other,self,"Info_Vlk_2_DieLage_15_00"); //Jak wyglÄ…da Å¼ycie tutaj?
+	AI_Output(self,other,"Info_Vlk_2_DieLage_02_01"); //JeÅ›li przysÅ‚ali ciÄ™ Magnaci, powiedz im, Å¼e nie szukam kÅ‚opotÃ³w. Ode mnie nikt siÄ™ niczego nie dowie.
+	AI_Output(self,other,"Info_Vlk_2_DieLage_02_02"); //Wystarcza mi to, co nam dajÄ….
+	AI_Output(other,self,"Info_Vlk_2_DieLage_15_03"); //Nikt mnie nie przysyÅ‚a! Dopiero co tu przybyÅ‚em!
+	AI_Output(self,other,"Info_Vlk_2_DieLage_02_04"); //Å»Ã³Å‚todziÃ³b, tak? Nowi zawsze pakujÄ… siÄ™ w jakieÅ› paskudne kÅ‚opoty. Nie chcÄ™ mieÄ‡ z tobÄ… nic wspÃ³lnego, jasne?
 };	
 	
 // *************************************************************************

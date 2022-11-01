@@ -38,7 +38,7 @@ FUNC VOID  Info_Riordian_EXIT_Info()
 
 //***************************************************************************
 //	Info NEWS
-//***************************************************************************//Bist du der Wassermagier, der die Tränke braut?
+//***************************************************************************//Bist du der Wassermagier, der die TrÃ¤nke braut?
 instance Info_Riordian_NEWS (C_INFO)
 {
 	npc			= KDW_605_Riordian;
@@ -46,7 +46,7 @@ instance Info_Riordian_NEWS (C_INFO)
 	information	= Info_Riordian_NEWS_Info;
 	permanent	= 0;
 	important 	= 0;
-	description = "Przysy³a mnie Saturas.";
+	description = "PrzysyÅ‚a mnie Saturas.";
 };
 
 FUNC INT Info_Riordian_NEWS_Condition()
@@ -59,13 +59,13 @@ FUNC INT Info_Riordian_NEWS_Condition()
 
 FUNC VOID Info_Riordian_NEWS_Info()
 {
-	AI_Output (other, self,"Info_Riordian_NEWS_15_01"); //Przysy³a mnie Saturas.
-	AI_Output (self, other,"Info_Riordian_NEWS_14_02"); //Ach, chodŸ bli¿ej. Ju¿ mi o wszystkim doniesiono.
-	AI_Output (self, other,"Info_Riordian_NEWS_14_03"); //Proszê, weŸ to. Znajdziesz tu najró¿niejsze wywary.
-	AI_Output (self, other,"Info_Riordian_NEWS_14_04"); //Teraz mo¿esz ju¿ ruszaæ na poszukiwanie kamieni ogniskuj¹cych. Jesteœ nasz¹ jedyn¹ nadziej¹.
+	AI_Output (other, self,"Info_Riordian_NEWS_15_01"); //PrzysyÅ‚a mnie Saturas.
+	AI_Output (self, other,"Info_Riordian_NEWS_14_02"); //Ach, chodÅº bliÅ¼ej. JuÅ¼ mi o wszystkim doniesiono.
+	AI_Output (self, other,"Info_Riordian_NEWS_14_03"); //ProszÄ™, weÅº to. Znajdziesz tu najrÃ³Å¼niejsze wywary.
+	AI_Output (self, other,"Info_Riordian_NEWS_14_04"); //Teraz moÅ¼esz juÅ¼ ruszaÄ‡ na poszukiwanie kamieni ogniskujÄ…cych. JesteÅ› naszÄ… jedynÄ… nadziejÄ….
 
 	CreateInvItems (self, ItFo_Potion_Health_01,	20); 
-	B_GiveInvItems (self,hero, ItFo_Potion_Health_01,	20); //Notwendig für die Ausschrift "20 Items übergeben", wird sofort ausgeglichen
+	B_GiveInvItems (self,hero, ItFo_Potion_Health_01,	20); //Notwendig fÃ¼r die Ausschrift "20 Items Ã¼bergeben", wird sofort ausgeglichen
 	Npc_RemoveInvItems(hero, ItFo_Potion_Health_01,	15);
 
 	CreateInvItems (hero, ItFo_Potion_Mana_01,		5);
@@ -88,7 +88,7 @@ instance Info_Riordian_REWARD (C_INFO)
 	information	= Info_Riordian_REWARD_Info;
 	permanent	= 0;
 	important 	= 0;
-	description = "Saturas powiedzia³, ¿e masz dla mnie nagrodê.";
+	description = "Saturas powiedziaÅ‚, Å¼e masz dla mnie nagrodÄ™.";
 };
 
 FUNC INT Info_Riordian_REWARD_Condition()
@@ -101,14 +101,14 @@ FUNC INT Info_Riordian_REWARD_Condition()
 
 FUNC VOID Info_Riordian_REWARD_Info()
 {
-	AI_Output			(other, self,"Info_Riordian_REWARD_15_01"); //Saturas powiedzia³, ¿e masz dla mnie nagrodê.
-	AI_Output			(self, other,"Info_Riordian_REWARD_14_02"); //Ach, chodŸ, chodŸ! 
-	AI_Output			(self, other,"Info_Riordian_REWARD_14_03"); //Nasz przywódca opowiedzia³ mi o twoich bohaterskich czynach.
-	AI_Output			(self, other,"Info_Riordian_REWARD_14_04"); //Ca³y nasz obóz... Ach, co ja mówiê - ca³a KOLONIA powinna ci byæ dozgonnie wdziêczna.
-	AI_Output			(self, other,"Info_Riordian_REWARD_14_05"); //Przyjmij tê skromn¹ nagrodê w uznaniu twoich zas³ug.
+	AI_Output			(other, self,"Info_Riordian_REWARD_15_01"); //Saturas powiedziaÅ‚, Å¼e masz dla mnie nagrodÄ™.
+	AI_Output			(self, other,"Info_Riordian_REWARD_14_02"); //Ach, chodÅº, chodÅº! 
+	AI_Output			(self, other,"Info_Riordian_REWARD_14_03"); //Nasz przywÃ³dca opowiedziaÅ‚ mi o twoich bohaterskich czynach.
+	AI_Output			(self, other,"Info_Riordian_REWARD_14_04"); //CaÅ‚y nasz obÃ³z... Ach, co ja mÃ³wiÄ™ - caÅ‚a KOLONIA powinna ci byÄ‡ dozgonnie wdziÄ™czna.
+	AI_Output			(self, other,"Info_Riordian_REWARD_14_05"); //Przyjmij tÄ™ skromnÄ… nagrodÄ™ w uznaniu twoich zasÅ‚ug.
 
 	CreateInvItems		(self, ItFo_Potion_Health_02,		20);
-	B_GiveInvItems      (self, hero, ItFo_Potion_Health_02, 20);//Notwenidg für Ausschrift "20 Items übergeben", wird sofort ausgeglichen
+	B_GiveInvItems      (self, hero, ItFo_Potion_Health_02, 20);//Notwenidg fÃ¼r Ausschrift "20 Items Ã¼bergeben", wird sofort ausgeglichen
 	Npc_RemoveInvItems  (hero, ItFo_Potion_Health_02, 		15);
 
 	CreateInvItems		(hero, ItFo_Potion_Mana_02,			5);
@@ -119,7 +119,7 @@ FUNC VOID Info_Riordian_REWARD_Info()
 	CreateInvItems		(hero, ItFo_Potion_Health_Perma_02,	1);
 	CreateInvItems		(hero, ItFo_Potion_Mana_Perma_02,	1);
 
-	B_LogEntry			(CH3_BringFoci,"Riordian by³ jak zwykle uprzejmy. Otrzyma³em od niego zapas magicznych wywarów. To niezwykle cenny i przydatny dar.");
+	B_LogEntry			(CH3_BringFoci,"Riordian byÅ‚ jak zwykle uprzejmy. OtrzymaÅ‚em od niego zapas magicznych wywarÃ³w. To niezwykle cenny i przydatny dar.");
 	if	Npc_KnowsInfo(hero, Info_Cronos_REWARD)
 	{
 		Log_SetTopicStatus(CH3_BringFoci,	LOG_SUCCESS);
@@ -159,7 +159,7 @@ FUNC INT Info_Riordian_MESSAGE_Condition()
 
 FUNC VOID Info_Riordian_MESSAGE_Info()
 {
-	AI_Output (self, hero,"Info_Riordian_MESSAGE_14_01"); //Cieszê siê, ¿e ju¿ jesteœ. Czeka³em na ciebie!
+	AI_Output (self, hero,"Info_Riordian_MESSAGE_14_01"); //CieszÄ™ siÄ™, Å¼e juÅ¼ jesteÅ›. CzekaÅ‚em na ciebie!
 };
 
 //---------------------------------------------------------------------
@@ -172,7 +172,7 @@ instance Info_Riordian_MESSAGEWHY (C_INFO)
 	information	= Info_Riordian_MESSAGEWHY_Info;
 	permanent	= 0;
 	important 	= 0;
-	description = "Czeka³eœ? Jak to?";
+	description = "CzekaÅ‚eÅ›? Jak to?";
 };
 
 FUNC INT Info_Riordian_MESSAGEWHY_Condition()
@@ -185,12 +185,12 @@ FUNC INT Info_Riordian_MESSAGEWHY_Condition()
 
 FUNC VOID Info_Riordian_MESSAGEWHY_Info()
 {
-	AI_Output (hero, self,"Info_Riordian_MESSAGEWHY_15_01"); //Czeka³eœ? Jak to?
-	AI_Output (self, hero,"Info_Riordian_MESSAGEWHY_14_02"); //Gorn prosi³ mnie, ¿ebym ciê do niego przys³a³, gdy tylko siê zjawisz.
+	AI_Output (hero, self,"Info_Riordian_MESSAGEWHY_15_01"); //CzekaÅ‚eÅ›? Jak to?
+	AI_Output (self, hero,"Info_Riordian_MESSAGEWHY_14_02"); //Gorn prosiÅ‚ mnie, Å¼ebym ciÄ™ do niego przysÅ‚aÅ‚, gdy tylko siÄ™ zjawisz.
 	AI_Output (hero, self,"Info_Riordian_MESSAGEWHY_15_03"); //O co chodzi?
-	AI_Output (self, hero,"Info_Riordian_MESSAGEWHY_14_04"); //Ma plan, jak odzyskaæ zajêt¹ kopalniê.
-	AI_Output (hero, self,"Info_Riordian_MESSAGEWHY_15_05"); //Czy wci¹¿ pilnuje wejœcia do kopalni?
-	AI_Output (self, hero,"Info_Riordian_MESSAGEWHY_14_06"); //Tak! Proszê, zajrzyj do niego mo¿liwie jak najszybciej!
+	AI_Output (self, hero,"Info_Riordian_MESSAGEWHY_14_04"); //Ma plan, jak odzyskaÄ‡ zajÄ™tÄ… kopalniÄ™.
+	AI_Output (hero, self,"Info_Riordian_MESSAGEWHY_15_05"); //Czy wciÄ…Å¼ pilnuje wejÅ›cia do kopalni?
+	AI_Output (self, hero,"Info_Riordian_MESSAGEWHY_14_06"); //Tak! ProszÄ™, zajrzyj do niego moÅ¼liwie jak najszybciej!
 };
 /*------------------------------------------------------------------------
 //							WELCOME							//
@@ -214,7 +214,7 @@ FUNC int  KDW_605_Riordian_WELCOME_Condition()
 };
 func void  KDW_605_Riordian_WELCOME_Info()
 {
-	AI_Output (self, other,"KDW_605_Riordian_WELCOME_Info_14_01"); //Cieszê siê, ¿e do nas do³¹czy³eœ.
+	AI_Output (self, other,"KDW_605_Riordian_WELCOME_Info_14_01"); //CieszÄ™ siÄ™, Å¼e do nas doÅ‚Ä…czyÅ‚eÅ›.
 };
 //-----------------------------------------------------------
 instance KDW_605_Riordian_HEAL (C_INFO)
@@ -236,7 +236,7 @@ FUNC int  KDW_605_Riordian_HEAL_Condition()
 };
 func void  KDW_605_Riordian_HEAL_Info()
 {
-	AI_Output (self, other,"KDW_605_Riordian_HEAL_Info_14_01"); //Jeœli jesteœ ranny, mogê ci pomóc.
+	AI_Output (self, other,"KDW_605_Riordian_HEAL_Info_14_01"); //JeÅ›li jesteÅ› ranny, mogÄ™ ci pomÃ³c.
 };
 // ***************************** INFOS ****************************************//
 
@@ -248,7 +248,7 @@ instance  KDW_605_Riordian_HEALINFO (C_INFO)
 	information		= KDW_605_Riordian_HEALINFO_Info;
 	important		= 0;
 	permanent		= 1;
-	description		= "Jestem ranny. Mo¿esz coœ na to poradziæ?"; 
+	description		= "Jestem ranny. MoÅ¼esz coÅ› na to poradziÄ‡?"; 
 };
 
 FUNC int  KDW_605_Riordian_HEALINFO_Condition()
@@ -262,8 +262,8 @@ FUNC int  KDW_605_Riordian_HEALINFO_Condition()
 };
 FUNC void  KDW_605_Riordian_HEALINFO_Info()
 {
-	AI_Output (other, self,"KDW_605_Riordian_HEALINFO_Info_15_01"); //Jestem ranny. Mo¿esz coœ na to poradziæ?
-	AI_Output (self, other,"KDW_605_Riordian_HEALINFO_Info_14_02"); //Tymi s³owy przywo³ujê uzdrawiaj¹c¹ si³ê! Niech twe cia³o i duch znów zaznaj¹ spokoju!
+	AI_Output (other, self,"KDW_605_Riordian_HEALINFO_Info_15_01"); //Jestem ranny. MoÅ¼esz coÅ› na to poradziÄ‡?
+	AI_Output (self, other,"KDW_605_Riordian_HEALINFO_Info_14_02"); //Tymi sÅ‚owy przywoÅ‚ujÄ™ uzdrawiajÄ…cÄ… siÅ‚Ä™! Niech twe ciaÅ‚o i duch znÃ³w zaznajÄ… spokoju!
 	 
 	hero.attribute [ATR_HITPOINTS] = hero.attribute [ATR_HITPOINTS_MAX];
 	Snd_Play  ("MFX_Heal_Cast");
@@ -291,9 +291,9 @@ FUNC int  KDW_605_Riordian_GREET_Condition()
 FUNC void  KDW_605_Riordian_GREET_Info()
 {
 	AI_Output 		(other, self,"KDW_605_Riordian_GREET_Info_15_01"); //Witaj, magu!
-	AI_Output 		(self, other,"KDW_605_Riordian_GREET_Info_14_02"); //Jestem Riordian, alchemik. Zgadujê, ¿e szukasz magicznego napoju?
+	AI_Output 		(self, other,"KDW_605_Riordian_GREET_Info_14_02"); //Jestem Riordian, alchemik. ZgadujÄ™, Å¼e szukasz magicznego napoju?
 	Log_CreateTopic (GE_TraderNC,LOG_NOTE);
-	B_LogEntry 		(GE_TraderNC,"Riordian, jeden z Magów Wody, sprzedaje magiczne wywary. Znajdê go w laboratorium alchemicznym, na górnym poziomie.");
+	B_LogEntry 		(GE_TraderNC,"Riordian, jeden z MagÃ³w Wody, sprzedaje magiczne wywary. ZnajdÄ™ go w laboratorium alchemicznym, na gÃ³rnym poziomie.");
 	
 };  
 /*------------------------------------------------------------------------
@@ -307,7 +307,7 @@ instance  KDW_605_Riordian_TRADE (C_INFO)
 	information		= KDW_605_Riordian_TRADE_Info;
 	important		= 0;
 	permanent		= 1;
-	description		= "Poka¿ mi, co masz do zaoferowania."; 
+	description		= "PokaÅ¼ mi, co masz do zaoferowania."; 
 	trade			= 1;
 };
 
@@ -321,6 +321,6 @@ FUNC int  KDW_605_Riordian_TRADE_Condition()
 };
 FUNC void  KDW_605_Riordian_TRADE_Info()
 {
-	AI_Output (other, self,"KDW_605_Riordian_TRADE_Info_15_01"); //Poka¿ mi co masz do zaoferowania.
+	AI_Output (other, self,"KDW_605_Riordian_TRADE_Info_15_01"); //PokaÅ¼ mi co masz do zaoferowania.
 	
 };  

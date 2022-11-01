@@ -47,12 +47,12 @@ FUNC int DIA_Grd_218_FirstIn_Condition()
 FUNC VOID DIA_Grd_218_FirstIn_Info()
 {
 	AI_Output (self, other,"DIA_Grd_218_FirstIn_07_00"); //Czekaj! Czego tu szukasz?
-	AI_Output (other, self,"DIA_Grd_218_FirstIn_15_01"); //Chcê wejœæ do œrodka.
+	AI_Output (other, self,"DIA_Grd_218_FirstIn_15_01"); //ChcÄ™ wejÅ›Ä‡ do Å›rodka.
 	AI_Output (self, other,"DIA_Grd_218_FirstIn_07_02"); //Kpisz sobie ze mnie, czy co?
-	AI_Output (other, self,"DIA_Grd_218_FirstIn_15_03"); //Mo¿e zapytasz Thorusa?
-	AI_Output (self, other,"DIA_Grd_218_FirstIn_07_04"); //Zapytam. Jeœli ³¿esz, ju¿ po tobie!
-	AI_Output (other, self,"DIA_Grd_218_FirstIn_15_05"); //Czy to znaczy, ¿e mogê wejœæ?
-	AI_Output (self, other,"DIA_Grd_218_FirstIn_07_06"); //Tak! Rusz siê wreszcie!
+	AI_Output (other, self,"DIA_Grd_218_FirstIn_15_03"); //MoÅ¼e zapytasz Thorusa?
+	AI_Output (self, other,"DIA_Grd_218_FirstIn_07_04"); //Zapytam. JeÅ›li Å‚Å¼esz, juÅ¼ po tobie!
+	AI_Output (other, self,"DIA_Grd_218_FirstIn_15_05"); //Czy to znaczy, Å¼e mogÄ™ wejÅ›Ä‡?
+	AI_Output (self, other,"DIA_Grd_218_FirstIn_07_06"); //Tak! Rusz siÄ™ wreszcie!
 	AI_StopProcessInfos	(self);
 };
 
@@ -68,9 +68,9 @@ FUNC VOID DIA_Grd_218_FirstIn_Info()
 //	Uhrzeit:	24h
 //
 //	Es passiert folgendes:
-//	1.	Nähert sich der Spieler dem Durchgang, so wird er in diesen
+//	1.	NÃ¤hert sich der Spieler dem Durchgang, so wird er in diesen
 //		Dialog gezwungen und einmal gewarnt
-//	2.	Nähert er sich trotzdem wieder, wird er angegriffen
+//	2.	NÃ¤hert er sich trotzdem wieder, wird er angegriffen
 //////////////////////////////////////////////////////////////////////////
 const string	Grd_218_CHECKPOINT		= "OCC_BARONS_HALLWAY_FRONT";
 
@@ -102,9 +102,9 @@ func void Info_Grd_218_FirstWarn_Info()
 {
 	PrintGlobals	(PD_MISSION);
 
-	AI_Output (self, hero,"Info_Grd_218_FirstWarn_Info_07_01"); //STÓJ! Ani kroku dalej!
+	AI_Output (self, hero,"Info_Grd_218_FirstWarn_Info_07_01"); //STÃ“J! Ani kroku dalej!
 	AI_Output (hero, self,"Info_Grd_218_FirstWarn_Info_15_02"); //Dlaczego?
-	AI_Output (self, hero,"Info_Grd_218_FirstWarn_Info_07_03"); //Takie ³achudry jak ty nie maj¹ wstêpu do siedziby Magnatów!
+	AI_Output (self, hero,"Info_Grd_218_FirstWarn_Info_07_03"); //Takie Å‚achudry jak ty nie majÄ… wstÄ™pu do siedziby MagnatÃ³w!
 
 	hero.aivar[AIV_LASTDISTTOWP] 		= Npc_GetDistToWP(hero,Grd_218_CHECKPOINT);
 	hero.aivar[AIV_GUARDPASSAGE_STATUS]	= AIV_GPS_FIRSTWARN;	
@@ -144,7 +144,7 @@ func int Info_Grd_218_Attack_Info()
 	hero.aivar[AIV_GUARDPASSAGE_STATUS]	= AIV_GPS_PUNISH;	
 	
 	B_FullStop			(self);	
-	AI_StopProcessInfos	(self);					// dem Spieler sofort wieder die Kontrolle zurückgeben
+	AI_StopProcessInfos	(self);					// dem Spieler sofort wieder die Kontrolle zurÃ¼ckgeben
 	B_IntruderAlert		(self,	other);
 	B_SetAttackReason	(self,	AIV_AR_INTRUDER);
 	Npc_SetTarget		(self,	hero);

@@ -1,15 +1,15 @@
 func void B_Story_AccessToXardas()
 {
-	//-------- Missionsgegenst‰nde --------
+	//-------- Missionsgegenst√§nde --------
 	CreateInvItem	(hero, ItArRuneTeleport3);
 
-	//-------- Tagebucheintr‰ge --------
-	B_LogEntry		(CH4_FindXardas,"Przekaza≥em trzy serca golemÛw demonowi, ktÛry w zamian podarowa≥ mi magicznπ runÍ teleportacji. Ciekawe, dokπd mnie przeniesie?");
+	//-------- Tagebucheintr√§ge --------
+	B_LogEntry		(CH4_FindXardas,"Przekaza≈Çem trzy serca golem√≥w demonowi, kt√≥ry w zamian podarowa≈Ç mi magicznƒÖ runƒô teleportacji. Ciekawe, dokƒÖd mnie przeniesie?");
 
 	//-------- Erfahrung --------
 	B_GiveXP		(XP_DeliveredGolemhearts);
 
-	//-------- Tagesabl‰ufe ‰ndern --------
+	//-------- Tagesabl√§ufe √§ndern --------
 	
 	//-------- globale Variable setzen --------
 	FindGolemHearts = 4;

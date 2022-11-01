@@ -7,7 +7,7 @@
 //#####################################################################
 
 //---------------------------------------------------------------------
-//	Karte für 1. Fokus
+//	Karte fÃ¼r 1. Fokus
 //---------------------------------------------------------------------
 INSTANCE ItWrFocusmapPsi(C_Item)
 {	
@@ -25,9 +25,9 @@ INSTANCE ItWrFocusmapPsi(C_Item)
 	on_state[0]		=	UseFocusmapPsi;
 
 	description		= name;
-	TEXT[1]			= "Ta mapa wskazuje po³o¿enie kamienia";
-	TEXT[2]			= "ogniskuj¹cego, który pozwoli";
-	TEXT[3]			= "Y'Berionowi wezwaæ Œni¹cego.";
+	TEXT[1]			= "Ta mapa wskazuje poÅ‚oÅ¼enie kamienia";
+	TEXT[2]			= "ogniskujÄ…cego, ktÃ³ry pozwoli";
+	TEXT[3]			= "Y'Berionowi wezwaÄ‡ ÅšniÄ…cego.";
 };
 
 	FUNC VOID UseFocusmapPsi()
@@ -47,7 +47,7 @@ INSTANCE ItWrFocusmapPsi(C_Item)
 //---------------------------------------------------------------------
 INSTANCE Focus_1(C_Item)
 {	
-	name 				=	"Kamieñ z morskiego klifu";
+	name 				=	"KamieÅ„ z morskiego klifu";
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MISSION;	
 
@@ -60,16 +60,16 @@ INSTANCE Focus_1(C_Item)
 	material 			=	MAT_STONE;
 
 	description			=	name;
-	TEXT[1]				=	"Jeden z piêciu artefaktów u¿ytych";
+	TEXT[1]				=	"Jeden z piÄ™ciu artefaktÃ³w uÅ¼ytych";
 	TEXT[2]				=	"przy tworzeniu Bariery.";
 };
 
 //---------------------------------------------------------------------
-//	Zahnrad für Ian
+//	Zahnrad fÃ¼r Ian
 //---------------------------------------------------------------------
 INSTANCE ItMi_Stuff_Gearwheel_01(C_Item)
 {	
-	name 				=	"Ko³o zêbate";
+	name 				=	"KoÅ‚o zÄ™bate";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MISSION;	
@@ -89,7 +89,7 @@ INSTANCE ItMi_Stuff_Gearwheel_01(C_Item)
 //---------------------------------------------------------------------
 INSTANCE ItAt_Crawlerqueen(C_Item)
 {	
-	name 					=	"Jajo pe³zacza";
+	name 					=	"Jajo peÅ‚zacza";
 	
 	mainflag 				=	ITEM_KAT_NONE;
 	flags 					=	ITEM_MISSION|ITEM_MULTI;	
@@ -100,10 +100,10 @@ INSTANCE ItAt_Crawlerqueen(C_Item)
 	material 				=	MAT_LEATHER;
 
 	description				=	name;
-	TEXT[0]					=	"Te jaja zosta³y z³o¿one przez";
-	TEXT[1]					=	"królow¹ pe³zaczy.";
-	TEXT[2]					=	"Zawieraj¹ o wiele silniejsz¹ wydzielinê,";
-	TEXT[3]					=	"ni¿ wnêtrznoœci doros³ych osobników.";
+	TEXT[0]					=	"Te jaja zostaÅ‚y zÅ‚oÅ¼one przez";
+	TEXT[1]					=	"krÃ³lowÄ… peÅ‚zaczy.";
+	TEXT[2]					=	"ZawierajÄ… o wiele silniejszÄ… wydzielinÄ™,";
+	TEXT[3]					=	"niÅ¼ wnÄ™trznoÅ›ci dorosÅ‚ych osobnikÃ³w.";
 	TEXT[5]					=	NAME_Value;					COUNT[5]	= value;
 };
 
@@ -125,9 +125,9 @@ INSTANCE ItWrFokusbuch(C_Item)
 	scemeName				=	"MAP";
 	on_state[0]				= 	UseItWrFokusbuch;
 	description				=	name;
-	TEXT[0]					=	"Ta staro¿ytna, magiczna ksiêga zawiera";
-	TEXT[1]					=	"fragmenty traktuj¹ce o wykorzystaniu";
-	TEXT[2]					=	"mocy kamieni ogniskuj¹cych.";
+	TEXT[0]					=	"Ta staroÅ¼ytna, magiczna ksiÄ™ga zawiera";
+	TEXT[1]					=	"fragmenty traktujÄ…ce o wykorzystaniu";
+	TEXT[2]					=	"mocy kamieni ogniskujÄ…cych.";
 };
 	FUNC VOID UseItWrFokusbuch()
 	{   
@@ -150,23 +150,23 @@ INSTANCE ItWrFokusbuch(C_Item)
   					
   					Doc_SetFont 	( nDocID, -1, "font_15_book.tga"	   			); 	// -1 -> all pages 
   					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   		);  //  0 -> margins are in pixels
-					Doc_PrintLine	( nDocID,  0,"Rozdzia³ 23");
+					Doc_PrintLine	( nDocID,  0,"RozdziaÅ‚ 23");
 					Doc_PrintLine	( nDocID,  0, "");
 					Doc_SetFont 	( nDocID, -1, "font_10_book.TGA"	   			); 	// -1 -> all pages 
 					Doc_PrintLine	( nDocID,  0,"Ogniskowanie mocy");
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLines	( nDocID,  0,"Magia skumulowana w kamieniu ulega wielokrotnemu wzmocnieniu zanim wyzwol¹ j¹ s³owa zaklêcia. To, czy efekt bêdzie trwa³y czy tylko chwilowy, zale¿y wy³¹cznie od maga.");
+					Doc_PrintLines	( nDocID,  0,"Magia skumulowana w kamieniu ulega wielokrotnemu wzmocnieniu zanim wyzwolÄ… jÄ… sÅ‚owa zaklÄ™cia. To, czy efekt bÄ™dzie trwaÅ‚y czy tylko chwilowy, zaleÅ¼y wyÅ‚Ä…cznie od maga.");
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLines	( nDocID,  0,"Tym samym, po wyzwoleniu energii, kamieñ staje siê jeno pust¹, pozbawion¹ mocy skorup¹.");
+					Doc_PrintLines	( nDocID,  0,"Tym samym, po wyzwoleniu energii, kamieÅ„ staje siÄ™ jeno pustÄ…, pozbawionÄ… mocy skorupÄ….");
 
 					//2.Seite
-					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den Ränder des TGAs aus, links,oben,rechts,unten)
+					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den RÃ¤nder des TGAs aus, links,oben,rechts,unten)
 					Doc_PrintLine	( nDocID,  1,  "");
-					Doc_PrintLines	( nDocID,  1,"S³owa, które nale¿y wypowiedzieæ, aby uwolniæ moc kamienia, nie powinny byæ zagadk¹ dla wiêkszoœci adeptów sztuk magicznych. W dzisiejszych czasach, nawet formu³y pozwalaj¹ce tchn¹æ magiê w nowy artefakt spowszednia³y.");
+					Doc_PrintLines	( nDocID,  1,"SÅ‚owa, ktÃ³re naleÅ¼y wypowiedzieÄ‡, aby uwolniÄ‡ moc kamienia, nie powinny byÄ‡ zagadkÄ… dla wiÄ™kszoÅ›ci adeptÃ³w sztuk magicznych. W dzisiejszych czasach, nawet formuÅ‚y pozwalajÄ…ce tchnÄ…Ä‡ magiÄ™ w nowy artefakt spowszedniaÅ‚y.");
 					Doc_PrintLine	( nDocID,  1,  "");
-					Doc_PrintLines	( nDocID,  1,"Ale tylko nieliczni maj¹ umiejêtnoœci potrzebne do ponownego na³adowania kamienia. Te prastare formu³y s¹ pilnie strze¿onym sekretem arcymistrzów magii.");
+					Doc_PrintLines	( nDocID,  1,"Ale tylko nieliczni majÄ… umiejÄ™tnoÅ›ci potrzebne do ponownego naÅ‚adowania kamienia. Te prastare formuÅ‚y sÄ… pilnie strzeÅ¼onym sekretem arcymistrzÃ³w magii.");
 					Doc_PrintLine	( nDocID,  1, "");
-					Doc_PrintLines	( nDocID,  1,"Zatem, Mêdrcze - otwórz sw¹ duszê na s³owa staro¿ytnej potêgi.");
+					Doc_PrintLines	( nDocID,  1,"Zatem, MÄ™drcze - otwÃ³rz swÄ… duszÄ™ na sÅ‚owa staroÅ¼ytnej potÄ™gi.");
 					
 					Doc_Show		( nDocID );
 	};

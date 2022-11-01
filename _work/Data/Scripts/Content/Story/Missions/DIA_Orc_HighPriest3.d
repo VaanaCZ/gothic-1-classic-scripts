@@ -21,11 +21,11 @@ FUNC VOID Info_HighPriest3_Info()
 	AI_SetWalkmode		(self, NPC_WALK);
 	AI_GotoNpc			(self, other);
 	
-	AI_Output			(self, other,"Info_HighPriest3_17_01"); //åMIERTELNY!
-	AI_Output			(self, other,"Info_HighPriest3_17_02"); //TW”J CZAS W£AåNIE DOBIEG£ KO—CA!
-	AI_Output 			(other, self,"Info_HighPriest3_15_03"); //Aleø skπd, kobiety i gnijπce mumie przodem!
+	AI_Output			(self, other,"Info_HighPriest3_17_01"); //≈öMIERTELNY!
+	AI_Output			(self, other,"Info_HighPriest3_17_02"); //TW√ìJ CZAS W≈ÅA≈öNIE DOBIEG≈Å KO≈ÉCA!
+	AI_Output 			(other, self,"Info_HighPriest3_15_03"); //Ale≈º skƒÖd, kobiety i gnijƒÖce mumie przodem!
 
-	B_LogEntry			(CH4_EnterTemple,"Varrag-Unhilqt, jeden z piÍciu orkowych szamanÛw, stoi tuø przede mnπ. Tylko jeden z nas doøyje jutra!");
+	B_LogEntry			(CH4_EnterTemple,"Varrag-Unhilqt, jeden z piƒôciu orkowych szaman√≥w, stoi tu≈º przede mnƒÖ. Tylko jeden z nas do≈ºyje jutra!");
 
 	AI_StopProcessInfos	(self);
 	

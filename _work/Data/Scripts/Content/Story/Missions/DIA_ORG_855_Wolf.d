@@ -34,7 +34,7 @@ INSTANCE DIA_Wolf_Hello (C_INFO)
 	condition	= DIA_Wolf_Hello_Condition;
 	information	= DIA_Wolf_Hello_Info;
 	permanent	= 0;
-	description = "Kim jesteú?";
+	description = "Kim jeste≈õ?";
 };                       
 
 FUNC INT DIA_Wolf_Hello_Condition()
@@ -44,10 +44,10 @@ FUNC INT DIA_Wolf_Hello_Condition()
 
 FUNC VOID DIA_Wolf_Hello_Info()
 {
-	AI_Output			(other, self,"DIA_Wolf_Hello_15_00"); //Kim jesteú?
-	AI_Output			(self, other,"DIA_Wolf_Hello_09_01"); //Jestem p≥atnerzem. MÛwiπ na mnie Wilk.
+	AI_Output			(other, self,"DIA_Wolf_Hello_15_00"); //Kim jeste≈õ?
+	AI_Output			(self, other,"DIA_Wolf_Hello_09_01"); //Jestem p≈Çatnerzem. M√≥wiƒÖ na mnie Wilk.
 
-	B_LogEntry			(GE_TraderNC,"Wilk zaopatruje Szkodniki w zbroje. Zwykle przesiaduje przed swojπ chatπ, w wielkiej jaskini.");
+	B_LogEntry			(GE_TraderNC,"Wilk zaopatruje Szkodniki w zbroje. Zwykle przesiaduje przed swojƒÖ chatƒÖ, w wielkiej jaskini.");
 };
 
 //****************************************
@@ -74,7 +74,7 @@ FUNC INT DIA_Wolf_GreetORG_Condition()
 
 FUNC VOID DIA_Wolf_GreetORG_Info()
 {
-	AI_Output (self, other,"DIA_Wolf_GreetORG_09_00"); //Hej, teraz jesteú jednym z nas!
+	AI_Output (self, other,"DIA_Wolf_GreetORG_09_00"); //Hej, teraz jeste≈õ jednym z nas!
 };
 
 //****************************************
@@ -99,14 +99,14 @@ FUNC int  Org_855_Wolf_TRADE_Condition()
 
 FUNC void  Org_855_Wolf_TRADE_Info()
 {
-	AI_Output (other, self,"Org_855_Wolf_TRADE_15_00"); //Zajmujesz siÍ czymú jeszcze?
-	AI_Output (self, other,"Org_855_Wolf_TRADE_09_01"); //SkupujÍ skÛry i futra od myúliwych. Gdybyú mia≥ kiedyú taki towar na zbyciu - zg≥oú siÍ do mnie.
+	AI_Output (other, self,"Org_855_Wolf_TRADE_15_00"); //Zajmujesz siƒô czym≈õ jeszcze?
+	AI_Output (self, other,"Org_855_Wolf_TRADE_09_01"); //Skupujƒô sk√≥ry i futra od my≈õliwych. Gdyby≈õ mia≈Ç kiedy≈õ taki towar na zbyciu - zg≈Ço≈õ siƒô do mnie.
 	
 
 };
 
 //****************************************
-//				Wo J‰ger
+//				Wo J√§ger
 //****************************************
 
 instance  Org_855_Wolf_WhereHunter (C_INFO)
@@ -116,7 +116,7 @@ instance  Org_855_Wolf_WhereHunter (C_INFO)
 	condition		= Org_855_Wolf_WhereHunter_Condition;
 	information		= Org_855_Wolf_WhereHunter_Info;
 	permanent		= 1;
-	description		= "Jak mogÍ zdobyÊ futra albo skÛry?"; 
+	description		= "Jak mogƒô zdobyƒá futra albo sk√≥ry?"; 
 };
 
 FUNC int  Org_855_Wolf_WhereHunter_Condition()
@@ -126,9 +126,9 @@ FUNC int  Org_855_Wolf_WhereHunter_Condition()
 
 FUNC void  Org_855_Wolf_WhereHunter_Info()
 {
-	AI_Output (other, self,"Org_855_Wolf_WhereHunter_15_00"); //Jak mogÍ zdobyÊ futra albo skÛry?
-	AI_Output (self, other,"Org_855_Wolf_WhereHunter_09_01"); //Przy drodze do Nowego Obozu krÍci siÍ Aidan. On moøe ciÍ nauczyÊ, jak úciπgaÊ skÛrÍ ze zwierzπt.
-	AI_Output (self, other,"Org_855_Wolf_WhereHunter_09_02"); //Ratford i Drax polujπ zwykle na pÛ≥noc od Starego Obozu, na drodze do miejsca wymiany.
+	AI_Output (other, self,"Org_855_Wolf_WhereHunter_15_00"); //Jak mogƒô zdobyƒá futra albo sk√≥ry?
+	AI_Output (self, other,"Org_855_Wolf_WhereHunter_09_01"); //Przy drodze do Nowego Obozu krƒôci siƒô Aidan. On mo≈ºe ciƒô nauczyƒá, jak ≈õciƒÖgaƒá sk√≥rƒô ze zwierzƒÖt.
+	AI_Output (self, other,"Org_855_Wolf_WhereHunter_09_02"); //Ratford i Drax polujƒÖ zwykle na p√≥≈Çnoc od Starego Obozu, na drodze do miejsca wymiany.
 };
 
 //****************************************
@@ -142,7 +142,7 @@ INSTANCE DIA_Wolf_SellArmor (C_INFO)
 	condition	= DIA_Wolf_SellArmor_Condition;
 	information	= DIA_Wolf_SellArmor_Info;
 	permanent	= 1;
-	description = "PotrzebujÍ lepszej zbroi.";
+	description = "Potrzebujƒô lepszej zbroi.";
 };                       
 
 FUNC INT DIA_Wolf_SellArmor_Condition()
@@ -156,11 +156,11 @@ FUNC INT DIA_Wolf_SellArmor_Condition()
 
 FUNC VOID DIA_Wolf_SellArmor_Info()
 {
-	AI_Output (other, self,"DIA_Wolf_SellArmor_15_00"); //PotrzebujÍ lepszej zbroi.
+	AI_Output (other, self,"DIA_Wolf_SellArmor_15_00"); //Potrzebujƒô lepszej zbroi.
 	
 	if ( (Npc_GetTrueGuild(other)==GIL_ORG) || (Npc_GetTrueGuild(other)==GIL_SLD) )
 	{
-		AI_Output (self, other,"DIA_Wolf_SellArmor_09_01"); //Teraz, kiedy jesteú jednym z nas, mogÍ ci jakπú sprzedaÊ.
+		AI_Output (self, other,"DIA_Wolf_SellArmor_09_01"); //Teraz, kiedy jeste≈õ jednym z nas, mogƒô ci jakƒÖ≈õ sprzedaƒá.
 
 		Info_ClearChoices 	(DIA_Wolf_SellArmor);
 		Info_Addchoice 		(DIA_Wolf_SellArmor,DIALOG_BACK														,DIA_Wolf_SellArmor_BACK);
@@ -169,7 +169,7 @@ FUNC VOID DIA_Wolf_SellArmor_Info()
 	}
 	else
 	{
-		AI_Output (self, other,"DIA_Wolf_SellArmor_WRONGGUILD_09_00"); //Nie mogÍ ci nic sprzedaÊ. Lares zabi≥by mnie, gdyby dowiedzia≥ siÍ, øe sprzedajÍ zbroje obcym.
+		AI_Output (self, other,"DIA_Wolf_SellArmor_WRONGGUILD_09_00"); //Nie mogƒô ci nic sprzedaƒá. Lares zabi≈Çby mnie, gdyby dowiedzia≈Ç siƒô, ≈ºe sprzedajƒô zbroje obcym.
 	};
 };
 
@@ -180,7 +180,7 @@ func void DIA_Wolf_SellArmor_BACK()
 
 func void DIA_Wolf_SellArmor_M()
 {
-	AI_Output (other, self,"DIA_Wolf_SellArmor_M_15_01"); //PotrzebujÍ wzmocnionego pancerza.
+	AI_Output (other, self,"DIA_Wolf_SellArmor_M_15_01"); //Potrzebujƒô wzmocnionego pancerza.
 	
 	if (Npc_HasItems (hero,ItMinugget)< VALUE_ORG_ARMOR_M)
 	{
@@ -188,7 +188,7 @@ func void DIA_Wolf_SellArmor_M()
 	}
 	else 
 	{
-		AI_Output			(self, other,"DIA_Wolf_SellArmor_M_09_03"); //To solidny pancerz. Oczywiúcie nie tak dobry jak ten, ktÛry mam na sobie, ale zapewnia niez≥π ochronÍ.
+		AI_Output			(self, other,"DIA_Wolf_SellArmor_M_09_03"); //To solidny pancerz. Oczywi≈õcie nie tak dobry jak ten, kt√≥ry mam na sobie, ale zapewnia niez≈ÇƒÖ ochronƒô.
 
 		B_GiveInvItems		(hero, self,ItMinugget,VALUE_ORG_ARMOR_M);
 		
@@ -202,7 +202,7 @@ func void DIA_Wolf_SellArmor_M()
 
 func void DIA_Wolf_SellArmor_H()
 {
-	AI_Output (other,self,"DIA_Wolf_SellArmor_H_15_01"); //Moøesz mi sprzedaÊ ciÍøki pancerz?
+	AI_Output (other,self,"DIA_Wolf_SellArmor_H_15_01"); //Mo≈ºesz mi sprzedaƒá ciƒô≈ºki pancerz?
 
 	if (Npc_HasItems (hero,ItMinugget) < VALUE_ORG_ARMOR_H) 
 	{
@@ -210,7 +210,7 @@ func void DIA_Wolf_SellArmor_H()
 	}
 	else 
 	{
-		AI_Output			(self, other,"DIA_Wolf_SellArmor_H_09_03"); //Ta zbroja uchroni ciÍ przed kaødym zagroøeniem. Sam takπ noszÍ, i jak dotπd nie zosta≥em nawet draúniÍty. To bardzo solidny pancerz.
+		AI_Output			(self, other,"DIA_Wolf_SellArmor_H_09_03"); //Ta zbroja uchroni ciƒô przed ka≈ºdym zagro≈ºeniem. Sam takƒÖ noszƒô, i jak dotƒÖd nie zosta≈Çem nawet dra≈õniƒôty. To bardzo solidny pancerz.
 
 		B_GiveInvItems		(hero, self, ItMinugget,VALUE_ORG_ARMOR_H);
 		
@@ -234,7 +234,7 @@ instance  ORG_855_Wolf_TRAINOFFER (C_INFO)
 	information		= ORG_855_Wolf_TRAINOFFER_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Chcia≥bym nauczyÊ siÍ strzelaÊ z ≥uku."; 
+	description		= "Chcia≈Çbym nauczyƒá siƒô strzelaƒá z ≈Çuku."; 
 };
 
 FUNC int  ORG_855_Wolf_TRAINOFFER_Condition()
@@ -247,13 +247,13 @@ FUNC int  ORG_855_Wolf_TRAINOFFER_Condition()
 
 FUNC void  ORG_855_Wolf_TRAINOFFER_Info()
 {
-	AI_Output (other, self,"ORG_855_Wolf_TRAINOFFER_Info_15_01"); //Chcia≥bym nauczyÊ siÍ strzelaÊ z ≥uku.
-	AI_Output (self, other,"ORG_855_Wolf_TRAINOFFER_Info_09_02"); //CÛø, mÛg≥bym ciÍ nauczyÊ, ale to bÍdzie kosztowaÊ. Ja teø muszÍ jeúÊ, no nie?
+	AI_Output (other, self,"ORG_855_Wolf_TRAINOFFER_Info_15_01"); //Chcia≈Çbym nauczyƒá siƒô strzelaƒá z ≈Çuku.
+	AI_Output (self, other,"ORG_855_Wolf_TRAINOFFER_Info_09_02"); //C√≥≈º, m√≥g≈Çbym ciƒô nauczyƒá, ale to bƒôdzie kosztowaƒá. Ja te≈º muszƒô je≈õƒá, no nie?
 	AI_Output (other, self,"ORG_855_Wolf_TRAINOFFER_Info_15_03"); //Ile?
-	AI_Output (self, other,"ORG_855_Wolf_TRAINOFFER_Info_09_04"); //50 bry≥ek, bez targowania.
+	AI_Output (self, other,"ORG_855_Wolf_TRAINOFFER_Info_09_04"); //50 bry≈Çek, bez targowania.
 	
 	Log_CreateTopic   	(GE_TeacherNC,	LOG_NOTE);
-	B_LogEntry			(GE_TeacherNC,"Szkodnik imieniem Wilk moøe mnie nauczyÊ strzelania z ≥uku.");
+	B_LogEntry			(GE_TeacherNC,"Szkodnik imieniem Wilk mo≈ºe mnie nauczyƒá strzelania z ≈Çuku.");
 	
 };  
 /*------------------------------------------------------------------------
@@ -282,13 +282,13 @@ FUNC int  ORG_855_Wolf_TRAIN_Condition()
 };
 FUNC void  ORG_855_Wolf_TRAIN_Info()
 {
-	AI_Output (other, self,"ORG_855_Wolf_TRAIN_Info_15_01"); //Naucz mnie strzelaÊ z ≥uku.
+	AI_Output (other, self,"ORG_855_Wolf_TRAIN_Info_15_01"); //Naucz mnie strzelaƒá z ≈Çuku.
 	if (Npc_HasItems (hero,ItMiNugget) >= 50) 
 	{
 		if B_GiveSkill(hero,NPC_TALENT_BOW,1,LPCOST_TALENT_BOW_1)
 		{
-			AI_Output (self, other,"ORG_855_Wolf_TRAIN_Info_09_02"); //Twoja celnoúÊ zaleøy g≥Ûwnie od twojej zrÍcznoúci. Im bardziej zwinnie bÍdπ twoje ruchy, tym pewniej twoje strza≥y bÍdπ trafia≥y w cel.
-			AI_Output (self, other,"ORG_855_Wolf_TRAIN_Info_09_03"); //Twoje umiejÍtnoúci wp≥ynπ na odleg≥oúÊ z jakiej bÍdziesz mÛg≥ skutecznie raziÊ wrogÛw. Jeúli chcesz kiedyú zostaÊ strzelcem wyborowym, musisz systematycznie rozwijaÊ zarÛwno zrÍcznoúÊ jak i umiejÍtnoúci.
+			AI_Output (self, other,"ORG_855_Wolf_TRAIN_Info_09_02"); //Twoja celno≈õƒá zale≈ºy g≈Ç√≥wnie od twojej zrƒôczno≈õci. Im bardziej zwinnie bƒôdƒÖ twoje ruchy, tym pewniej twoje strza≈Çy bƒôdƒÖ trafia≈Çy w cel.
+			AI_Output (self, other,"ORG_855_Wolf_TRAIN_Info_09_03"); //Twoje umiejƒôtno≈õci wp≈ÇynƒÖ na odleg≈Ço≈õƒá z jakiej bƒôdziesz m√≥g≈Ç skutecznie raziƒá wrog√≥w. Je≈õli chcesz kiedy≈õ zostaƒá strzelcem wyborowym, musisz systematycznie rozwijaƒá zar√≥wno zrƒôczno≈õƒá jak i umiejƒôtno≈õci.
 			B_GiveInvItems (hero, self, ItMiNugget,50);
 		};
 	};
@@ -319,15 +319,15 @@ FUNC int  ORG_855_Wolf_TRAINAGAIN_Condition()
 };
 FUNC void  ORG_855_Wolf_TRAINAGAIN_Info()
 {
-	AI_Output (other, self,"ORG_855_Wolf_TRAINAGAIN_Info_15_01"); //Chcia≥bym sprawniej pos≥ugiwaÊ siÍ ≥ukiem.
+	AI_Output (other, self,"ORG_855_Wolf_TRAINAGAIN_Info_15_01"); //Chcia≈Çbym sprawniej pos≈Çugiwaƒá siƒô ≈Çukiem.
 	if (Npc_HasItems (hero,ItMiNugget) >= 50) 
 	{
 		if B_GiveSkill(hero,NPC_TALENT_BOW,2,LPCOST_TALENT_BOW_2)
 		{
-			AI_Output (self, other,"ORG_855_Wolf_TRAINAGAIN_Info_09_02"); //Jesteú juø ca≥kiem niez≥ym myúliwym. Teraz pora abyú pozna≥ resztÍ najwaøniejszych informacji.
-			AI_Output (self, other,"ORG_855_Wolf_TRAINAGAIN_Info_09_03"); //Dobry ≥ucznik bierze pod uwagÍ wiele czynnikÛw zewnÍtrznych, ale robi to odruchowo, nieúwiadomie.
-			AI_Output (self, other,"ORG_855_Wolf_TRAINAGAIN_Info_09_04"); //Odkryj tajniki funkcjonowania twojego oka, pamiÍtaj o sile naciπgu i wyobraøaj sobie trajektoriÍ lotu strza≥y, ale przede wszystkim - zawsze bπdü czujny!
-			AI_Output (self, other,"ORG_855_Wolf_TRAINAGAIN_Info_09_05"); //Opanowa≥eú juø wiÍkszoúÊ tajnikÛw strzelania z ≥uku. Teraz pozosta≥o ci tylko rozwijaÊ twoje umiejÍtnoúci podczas polowania i walki.
+			AI_Output (self, other,"ORG_855_Wolf_TRAINAGAIN_Info_09_02"); //Jeste≈õ ju≈º ca≈Çkiem niez≈Çym my≈õliwym. Teraz pora aby≈õ pozna≈Ç resztƒô najwa≈ºniejszych informacji.
+			AI_Output (self, other,"ORG_855_Wolf_TRAINAGAIN_Info_09_03"); //Dobry ≈Çucznik bierze pod uwagƒô wiele czynnik√≥w zewnƒôtrznych, ale robi to odruchowo, nie≈õwiadomie.
+			AI_Output (self, other,"ORG_855_Wolf_TRAINAGAIN_Info_09_04"); //Odkryj tajniki funkcjonowania twojego oka, pamiƒôtaj o sile naciƒÖgu i wyobra≈ºaj sobie trajektoriƒô lotu strza≈Çy, ale przede wszystkim - zawsze bƒÖd≈∫ czujny!
+			AI_Output (self, other,"ORG_855_Wolf_TRAINAGAIN_Info_09_05"); //Opanowa≈Çe≈õ ju≈º wiƒôkszo≈õƒá tajnik√≥w strzelania z ≈Çuku. Teraz pozosta≈Ço ci tylko rozwijaƒá twoje umiejƒôtno≈õci podczas polowania i walki.
 			
 			B_GiveInvItems (hero, self, ItMiNugget,50);
 		};
@@ -343,7 +343,7 @@ INSTANCE ORG_855_Wolf_Teach(C_INFO)
 	condition	= ORG_855_Wolf_Teach_Condition;
 	information	= ORG_855_Wolf_Teach_Info;
 	permanent	= 1;
-	description = "Moøesz mnie czegoú nauczyÊ?";
+	description = "Mo≈ºesz mnie czego≈õ nauczyƒá?";
 };                       
 
 FUNC INT ORG_855_Wolf_Teach_Condition()
@@ -356,13 +356,13 @@ FUNC INT ORG_855_Wolf_Teach_Condition()
 
 FUNC VOID ORG_855_Wolf_Teach_Info()
 {
-	AI_Output(other,self,"ORG_855_Wolf_Teach_15_00"); //Moøesz mnie czegoú nauczyÊ?
-	AI_Output(self,other,"ORG_855_Wolf_Teach_09_01"); //Powodzenie podczas polowania zaleøy przede wszystkim od twojej zrÍcznoúci.
+	AI_Output(other,self,"ORG_855_Wolf_Teach_15_00"); //Mo≈ºesz mnie czego≈õ nauczyƒá?
+	AI_Output(self,other,"ORG_855_Wolf_Teach_09_01"); //Powodzenie podczas polowania zale≈ºy przede wszystkim od twojej zrƒôczno≈õci.
 	
 	if (log_wolftrain == FALSE)
 	{
 	Log_CreateTopic   	(GE_TeacherNC,LOG_NOTE);
-	B_LogEntry			(GE_TeacherNC,"Szkodnik imieniem Wilk moøe pomÛc mi zwiÍkszyÊ mojπ zwinnoúÊ.");
+	B_LogEntry			(GE_TeacherNC,"Szkodnik imieniem Wilk mo≈ºe pom√≥c mi zwiƒôkszyƒá mojƒÖ zwinno≈õƒá.");
 	log_wolftrain = TRUE;
 	};
 	
@@ -417,7 +417,7 @@ INSTANCE Info_Wolf_GOOD (C_INFO)
 	information	= Info_Wolf_GOOD_Info;
 	important	= 0;	
 	permanent	= 0;
-	description = "Gorn powiedzia≥, øe chcesz ze mnπ pilnie porozmawiaÊ.";
+	description = "Gorn powiedzia≈Ç, ≈ºe chcesz ze mnƒÖ pilnie porozmawiaƒá.";
 };                       
 
 FUNC INT Info_Wolf_GOOD_Condition()
@@ -430,12 +430,12 @@ FUNC INT Info_Wolf_GOOD_Condition()
 
 func VOID Info_Wolf_GOOD_Info()
 {
-	AI_Output 			(hero,self,"Info_Wolf_GOOD_15_01"); //Gorn powiedzia≥, øe chcesz ze mnπ pilnie porozmawiaÊ?
-	AI_Output 			(self,hero,"Info_Wolf_GOOD_09_02"); //Dobrze, øe zdπøy≥eú zajrzeÊ do mnie przed wymarszem!
+	AI_Output 			(hero,self,"Info_Wolf_GOOD_15_01"); //Gorn powiedzia≈Ç, ≈ºe chcesz ze mnƒÖ pilnie porozmawiaƒá?
+	AI_Output 			(self,hero,"Info_Wolf_GOOD_09_02"); //Dobrze, ≈ºe zdƒÖ≈ºy≈Çe≈õ zajrzeƒá do mnie przed wymarszem!
 	if (!Npc_KnowsInfo(hero,Info_Gorn_FMCENTRANCE))
 	{
 		AI_Output 			(hero,self,"Info_Wolf_GOOD_15_03"); //Przed jakim wymarszem?
-		AI_Output 			(self,hero,"Info_Wolf_GOOD_09_04"); //Przed waszym wymarszem do Niezupe≥nie-Wolnej-Kopalni.
+		AI_Output 			(self,hero,"Info_Wolf_GOOD_09_04"); //Przed waszym wymarszem do Niezupe≈Çnie-Wolnej-Kopalni.
 	};
 };
 
@@ -463,13 +463,13 @@ FUNC INT Info_Wolf_SPEAK_Condition()
 func VOID Info_Wolf_SPEAK_Info()
 {
 	AI_Output 			(hero,self,"Info_Wolf_SPEAK_15_01"); //O co chodzi?
-	AI_Output 			(self,hero,"Info_Wolf_SPEAK_09_02"); //Mam pomys≥ na zupe≥nie nowy rodzaj pancerza.
-	AI_Output 			(hero,self,"Info_Wolf_SPEAK_15_03"); //Czyøby? A cÛø to za pomys≥?
-	AI_Output 			(self,hero,"Info_Wolf_SPEAK_09_04"); //Pancerze pe≥zaczy sπ niezwykle twarde. Znacznie trwalsze niø choÊby stal.
-	AI_Output 			(self,hero,"Info_Wolf_SPEAK_09_05"); //Oczywiúcie nie mam tu na myúli tych wychudzonych osobnikÛw, ktÛre nawiedza≥y zawalonπ kopalniÍ Gomeza...
-	AI_Output 			(self,hero,"Info_Wolf_SPEAK_09_06"); //... O nie, one nie wystarczπ. W NASZEJ kopalni øyjπ PRAWDZIWE PE£ZACZE. WiÍksze, silniejsze i jeszcze bardziej wredne.
+	AI_Output 			(self,hero,"Info_Wolf_SPEAK_09_02"); //Mam pomys≈Ç na zupe≈Çnie nowy rodzaj pancerza.
+	AI_Output 			(hero,self,"Info_Wolf_SPEAK_15_03"); //Czy≈ºby? A c√≥≈º to za pomys≈Ç?
+	AI_Output 			(self,hero,"Info_Wolf_SPEAK_09_04"); //Pancerze pe≈Çzaczy sƒÖ niezwykle twarde. Znacznie trwalsze ni≈º choƒáby stal.
+	AI_Output 			(self,hero,"Info_Wolf_SPEAK_09_05"); //Oczywi≈õcie nie mam tu na my≈õli tych wychudzonych osobnik√≥w, kt√≥re nawiedza≈Çy zawalonƒÖ kopalniƒô Gomeza...
+	AI_Output 			(self,hero,"Info_Wolf_SPEAK_09_06"); //... O nie, one nie wystarczƒÖ. W NASZEJ kopalni ≈ºyjƒÖ PRAWDZIWE PE≈ÅZACZE. Wiƒôksze, silniejsze i jeszcze bardziej wredne.
 	AI_Output 			(self,hero,"Info_Wolf_SPEAK_09_07"); //Pancerz tych bestii jest niemal nie do przebicia!
-	AI_Output 			(self,hero,"Info_Wolf_SPEAK_09_08"); //Gdybyú mÛg≥ mi przynieúÊ kilka p≥ytek z ich pancerzy, mÛg≥bym z nich posk≥adaÊ nie lada zbrojÍ!
+	AI_Output 			(self,hero,"Info_Wolf_SPEAK_09_08"); //Gdyby≈õ m√≥g≈Ç mi przynie≈õƒá kilka p≈Çytek z ich pancerzy, m√≥g≈Çbym z nich posk≈Çadaƒá nie lada zbrojƒô!
 };
 
 //---------------------------------------------------------------------
@@ -482,7 +482,7 @@ INSTANCE Info_Wolf_SKIN (C_INFO)
 	information	= Info_Wolf_SKIN_Info;
 	important	= 0;	
 	permanent	= 0;
-	description = "W jaki sposÛb mam oddzieliÊ te p≥ytki od zw≥ok pe≥zaczy?";
+	description = "W jaki spos√≥b mam oddzieliƒá te p≈Çytki od zw≈Çok pe≈Çzaczy?";
 };                       
 
 FUNC INT Info_Wolf_SKIN_Condition()
@@ -495,20 +495,20 @@ FUNC INT Info_Wolf_SKIN_Condition()
 
 func VOID Info_Wolf_SKIN_Info()
 {
-	AI_Output 			(hero,self,"Info_Wolf_SKIN_15_01"); //W jaki sposÛb mam oddzieliÊ te p≥ytki od zw≥ok pe≥zaczy?
-	AI_Output 			(self,hero,"Info_Wolf_SKIN_09_02"); //To proste. P≥ytki na grzbiecie przymocowane sπ tylko przy krawÍdziach.
-	AI_Output 			(self,hero,"Info_Wolf_SKIN_09_03"); //Wystarczy wziπÊ ostry nÛø i "ciπÊ wzd≥uø przerywanej linii".
-	AI_Output 			(hero,self,"Info_Wolf_SKIN_15_04"); //W porzπdku. Postaram siÍ przynieúÊ ci kilka p≥ytek z pancerzy pe≥zaczy.
+	AI_Output 			(hero,self,"Info_Wolf_SKIN_15_01"); //W jaki spos√≥b mam oddzieliƒá te p≈Çytki od zw≈Çok pe≈Çzaczy?
+	AI_Output 			(self,hero,"Info_Wolf_SKIN_09_02"); //To proste. P≈Çytki na grzbiecie przymocowane sƒÖ tylko przy krawƒôdziach.
+	AI_Output 			(self,hero,"Info_Wolf_SKIN_09_03"); //Wystarczy wziƒÖƒá ostry n√≥≈º i "ciƒÖƒá wzd≈Çu≈º przerywanej linii".
+	AI_Output 			(hero,self,"Info_Wolf_SKIN_15_04"); //W porzƒÖdku. Postaram siƒô przynie≈õƒá ci kilka p≈Çytek z pancerzy pe≈Çzaczy.
 
 	Knows_GetMCPlates = TRUE;
-	PrintScreen	("Nowa umiejÍtnoúÊ: Wycinanie p≥ytek pancerza", -1,-1,"FONT_OLD_20_WHITE.TGA",3);
+	PrintScreen	("Nowa umiejƒôtno≈õƒá: Wycinanie p≈Çytek pancerza", -1,-1,"FONT_OLD_20_WHITE.TGA",3);
 	
 	Log_CreateTopic		(CH4_MCPlateArmor,	LOG_MISSION);
 	Log_SetTopicStatus	(CH4_MCPlateArmor,	LOG_RUNNING);
-	B_LogEntry			(CH4_MCPlateArmor,"Wilk, Szkodnik z Nowego Obozu, zaproponowa≥ mi wykonanie zbroi z pancerzy pe≥zaczy. Pokaza≥ mi jak naleøy je usuwaÊ z martwych potworÛw."); 
+	B_LogEntry			(CH4_MCPlateArmor,"Wilk, Szkodnik z Nowego Obozu, zaproponowa≈Ç mi wykonanie zbroi z pancerzy pe≈Çzaczy. Pokaza≈Ç mi jak nale≈ºy je usuwaƒá z martwych potwor√≥w."); 
 	
 	Log_CreateTopic (GE_AnimalTrophies,LOG_NOTE);
-	B_LogEntry (GE_AnimalTrophies,"UmiejÍtnoúÊ usuwania pancerzy z martwych pe≥zaczy-wojownikÛw.");
+	B_LogEntry (GE_AnimalTrophies,"Umiejƒôtno≈õƒá usuwania pancerzy z martwych pe≈Çzaczy-wojownik√≥w.");
 
 	AI_StopProcessInfos	(self);
 };
@@ -523,7 +523,7 @@ INSTANCE Info_Wolf_PROFIT (C_INFO)
 	information	= Info_Wolf_PROFIT_Info;
 	important	= 0;	
 	permanent	= 0;
-	description = "I mÛwisz mi to wszystko nie øπdajπc niczego w zamian?";
+	description = "I m√≥wisz mi to wszystko nie ≈ºƒÖdajƒÖc niczego w zamian?";
 };                       
 
 FUNC INT Info_Wolf_PROFIT_Condition()
@@ -536,8 +536,8 @@ FUNC INT Info_Wolf_PROFIT_Condition()
 
 func VOID Info_Wolf_PROFIT_Info()
 {
-	AI_Output 			(hero,self,"Info_Wolf_PROFIT_15_01"); //I mÛwisz mi to wszystko nie øπdajπc niczego w zamian?
-	AI_Output 			(self,hero,"Info_Wolf_PROFIT_09_02"); //No niezupe≥nie... Jeúli uda mi siÍ skleciÊ z tych p≥ytek porzπdnπ zbrojÍ, bÍdÍ... bardzo szybko... bardzo duøo... Ach, niewaøne!
+	AI_Output 			(hero,self,"Info_Wolf_PROFIT_15_01"); //I m√≥wisz mi to wszystko nie ≈ºƒÖdajƒÖc niczego w zamian?
+	AI_Output 			(self,hero,"Info_Wolf_PROFIT_09_02"); //No niezupe≈Çnie... Je≈õli uda mi siƒô skleciƒá z tych p≈Çytek porzƒÖdnƒÖ zbrojƒô, bƒôdƒô... bardzo szybko... bardzo du≈ºo... Ach, niewa≈ºne!
 };
 
 //---------------------------------------------------------------------
@@ -550,7 +550,7 @@ INSTANCE Info_Wolf_MCPLATESFEW (C_INFO)
 	information	= Info_Wolf_MCPLATESFEW_Info;
 	important	= 0;	
 	permanent	= 0;
-	description = "Przynios≥em ci kilka tych p≥ytek, o ktÛre prosi≥eú!";
+	description = "Przynios≈Çem ci kilka tych p≈Çytek, o kt√≥re prosi≈Çe≈õ!";
 };                       
 
 FUNC INT Info_Wolf_MCPLATESFEW_Condition()
@@ -565,9 +565,9 @@ FUNC INT Info_Wolf_MCPLATESFEW_Condition()
 
 func VOID Info_Wolf_MCPLATESFEW_Info()
 {
-	AI_Output 			(hero,self,"Info_Wolf_MCPLATESFEW_15_01"); //Przynios≥em ci kilka tych p≥ytek, o ktÛre prosi≥eú!
-	AI_Output 			(self,hero,"Info_Wolf_MCPLATESFEW_09_02"); //To za ma≥o! Nie starczy na ca≥π zbrojÍ!
-	AI_Output 			(self,hero,"Info_Wolf_MCPLATESFEW_09_03"); //Przynieú mi wiÍcej p≥ytek!
+	AI_Output 			(hero,self,"Info_Wolf_MCPLATESFEW_15_01"); //Przynios≈Çem ci kilka tych p≈Çytek, o kt√≥re prosi≈Çe≈õ!
+	AI_Output 			(self,hero,"Info_Wolf_MCPLATESFEW_09_02"); //To za ma≈Ço! Nie starczy na ca≈ÇƒÖ zbrojƒô!
+	AI_Output 			(self,hero,"Info_Wolf_MCPLATESFEW_09_03"); //Przynie≈õ mi wiƒôcej p≈Çytek!
 };
 
 //---------------------------------------------------------------------
@@ -580,7 +580,7 @@ INSTANCE Info_Wolf_MCPLATESENOUGH (C_INFO)
 	information	= Info_Wolf_MCPLATESENOUGH_Info;
 	important	= 0;	
 	permanent	= 0;
-	description = "Zebra≥em mnÛstwo p≥ytek z pancerzy pe≥zaczy!";
+	description = "Zebra≈Çem mn√≥stwo p≈Çytek z pancerzy pe≈Çzaczy!";
 };                       
 
 FUNC INT Info_Wolf_MCPLATESENOUGH_Condition()
@@ -594,15 +594,15 @@ FUNC INT Info_Wolf_MCPLATESENOUGH_Condition()
 
 func VOID Info_Wolf_MCPLATESENOUGH_Info()
 {
-	AI_Output 			(hero,self,"Info_Wolf_MCPLATESENOUGH_15_01"); //Zebra≥em mnÛstwo p≥ytek z pancerzy pe≥zaczy!
-	AI_Output 			(self,hero,"Info_Wolf_MCPLATESENOUGH_09_02"); //Fantastycznie! Natychmiast zabieram siÍ do roboty!
-	AI_Output 			(hero,self,"Info_Wolf_MCPLATESENOUGH_15_03"); //Jak d≥ugo to zajmie?
-	AI_Output 			(self,hero,"Info_Wolf_MCPLATESENOUGH_09_04"); //Nie mam pojÍcia. To coú zupe≥nie nowego. Jeszcze nigdy czegoú takiego nie robi≥em!
-	AI_Output 			(self,hero,"Info_Wolf_MCPLATESENOUGH_09_05"); //BÍdziesz musia≥ zaglπdaÊ do mnie od czasu do czasu.
+	AI_Output 			(hero,self,"Info_Wolf_MCPLATESENOUGH_15_01"); //Zebra≈Çem mn√≥stwo p≈Çytek z pancerzy pe≈Çzaczy!
+	AI_Output 			(self,hero,"Info_Wolf_MCPLATESENOUGH_09_02"); //Fantastycznie! Natychmiast zabieram siƒô do roboty!
+	AI_Output 			(hero,self,"Info_Wolf_MCPLATESENOUGH_15_03"); //Jak d≈Çugo to zajmie?
+	AI_Output 			(self,hero,"Info_Wolf_MCPLATESENOUGH_09_04"); //Nie mam pojƒôcia. To co≈õ zupe≈Çnie nowego. Jeszcze nigdy czego≈õ takiego nie robi≈Çem!
+	AI_Output 			(self,hero,"Info_Wolf_MCPLATESENOUGH_09_05"); //Bƒôdziesz musia≈Ç zaglƒÖdaƒá do mnie od czasu do czasu.
 
 	MCPlatesDelivered = TRUE;
 
-	B_LogEntry			(CH4_MCPlateArmor,"Da≥em Wilkowi 15 tych p≥ytek z pancerzy. Teraz potrzebuje trochÍ czasu, øeby sporzπdziÊ z nich dla mnie nowπ zbrojÍ.");
+	B_LogEntry			(CH4_MCPlateArmor,"Da≈Çem Wilkowi 15 tych p≈Çytek z pancerzy. Teraz potrzebuje trochƒô czasu, ≈ºeby sporzƒÖdziƒá z nich dla mnie nowƒÖ zbrojƒô.");
 	B_GiveXP			(XP_DeliveredMCPlates);
 	
 	B_GiveInvItems	(hero, self, ItAt_Crawler_02,	15);
@@ -619,7 +619,7 @@ INSTANCE Info_Wolf_ARMORINWORK (C_INFO)
 	information	= Info_Wolf_ARMORINWORK_Info;
 	important	= 0;	
 	permanent	= 1;
-	description = "Jak postÍpujπ prace nad nowym pancerzem?";
+	description = "Jak postƒôpujƒÖ prace nad nowym pancerzem?";
 };                       
 
 FUNC INT Info_Wolf_ARMORINWORK_Condition()
@@ -633,9 +633,9 @@ FUNC INT Info_Wolf_ARMORINWORK_Condition()
 
 func VOID Info_Wolf_ARMORINWORK_Info()
 {
-	AI_Output 			(hero,self,"Info_Wolf_ARMORINWORK_15_01"); //Jak postÍpujπ prace nad nowym pancerzem?
-	AI_Output 			(self,hero,"Info_Wolf_ARMORINWORK_09_02"); //To zajmie d≥uøej niø myúla≥em! Te p≥ytki sπ niezwykle twarde. Nie bardzo wiem jak mam je ze sobπ po≥πczyÊ!
-	AI_Output 			(self,hero,"Info_Wolf_ARMORINWORK_09_03"); //Daj mi jeszcze trochÍ czasu! Dam radÍ, zaufaj mi!
+	AI_Output 			(hero,self,"Info_Wolf_ARMORINWORK_15_01"); //Jak postƒôpujƒÖ prace nad nowym pancerzem?
+	AI_Output 			(self,hero,"Info_Wolf_ARMORINWORK_09_02"); //To zajmie d≈Çu≈ºej ni≈º my≈õla≈Çem! Te p≈Çytki sƒÖ niezwykle twarde. Nie bardzo wiem jak mam je ze sobƒÖ po≈ÇƒÖczyƒá!
+	AI_Output 			(self,hero,"Info_Wolf_ARMORINWORK_09_03"); //Daj mi jeszcze trochƒô czasu! Dam radƒô, zaufaj mi!
 	AI_StopProcessInfos	(self);
 };
 
@@ -649,7 +649,7 @@ INSTANCE Info_Wolf_ARMORFINISHED (C_INFO)
 	information	= Info_Wolf_ARMORFINISHED_Info;
 	important	= 0;	
 	permanent	= 0;
-	description = "Jak postÍpujπ prace nad nowym pancerzem?";
+	description = "Jak postƒôpujƒÖ prace nad nowym pancerzem?";
 };                       
 
 FUNC INT Info_Wolf_ARMORFINISHED_Condition()
@@ -663,14 +663,14 @@ FUNC INT Info_Wolf_ARMORFINISHED_Condition()
 
 func VOID Info_Wolf_ARMORFINISHED_Info()
 {
-	AI_Output 			(hero,self,"Info_Wolf_ARMORFINISHED_15_01"); //Jak postÍpujπ prace nad nowym pancerzem?
-	AI_Output 			(self,hero,"Info_Wolf_ARMORFINISHED_09_02"); //Uda≥o mi siÍ wreszcie znaleüÊ sposÛb na po≥πczenie p≥ytek ze sobπ!
-	AI_Output 			(hero,self,"Info_Wolf_ARMORFINISHED_15_03"); //Czy to znaczy, øe zbroja jest juø gotowa!
-	AI_Output 			(self,hero,"Info_Wolf_ARMORFINISHED_09_04"); //Dok≥adnie! Oto i ona! Jest twardsza niø jakikolwiek pancerz jaki widzia≥em na oczy!
-	AI_Output 			(hero,self,"Info_Wolf_ARMORFINISHED_15_05"); //DziÍki, jestem twoim d≥uønikiem!
-	AI_Output 			(self,hero,"Info_Wolf_ARMORFINISHED_09_06"); //Nie ma o czym mÛwiÊ! Na pewno na tym nie stracÍ! Co to, to nie! Ha Ha!
+	AI_Output 			(hero,self,"Info_Wolf_ARMORFINISHED_15_01"); //Jak postƒôpujƒÖ prace nad nowym pancerzem?
+	AI_Output 			(self,hero,"Info_Wolf_ARMORFINISHED_09_02"); //Uda≈Ço mi siƒô wreszcie znale≈∫ƒá spos√≥b na po≈ÇƒÖczenie p≈Çytek ze sobƒÖ!
+	AI_Output 			(hero,self,"Info_Wolf_ARMORFINISHED_15_03"); //Czy to znaczy, ≈ºe zbroja jest ju≈º gotowa!
+	AI_Output 			(self,hero,"Info_Wolf_ARMORFINISHED_09_04"); //Dok≈Çadnie! Oto i ona! Jest twardsza ni≈º jakikolwiek pancerz jaki widzia≈Çem na oczy!
+	AI_Output 			(hero,self,"Info_Wolf_ARMORFINISHED_15_05"); //Dziƒôki, jestem twoim d≈Çu≈ºnikiem!
+	AI_Output 			(self,hero,"Info_Wolf_ARMORFINISHED_09_06"); //Nie ma o czym m√≥wiƒá! Na pewno na tym nie stracƒô! Co to, to nie! Ha Ha!
 
-	B_LogEntry			(CH4_MCPlateArmor,"Wilk skoÒczy≥ juø mojπ nowπ zbrojÍ. To najlepszy pancerz, jaki w øyciu widzia≥em!");
+	B_LogEntry			(CH4_MCPlateArmor,"Wilk sko≈Ñczy≈Ç ju≈º mojƒÖ nowƒÖ zbrojƒô. To najlepszy pancerz, jaki w ≈ºyciu widzia≈Çem!");
 	Log_SetTopicStatus	(CH4_MCPlateArmor,	LOG_SUCCESS);
 
 	B_GiveXP			(XP_GorMCPlateArmor);
@@ -690,7 +690,7 @@ instance  Org_855_Wolf_SELLBOW (C_INFO)
 	information		= Org_855_Wolf_SELLBOW_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Gdzie mogÍ kupiÊ jakiú ≥uk?"; 
+	description		= "Gdzie mogƒô kupiƒá jaki≈õ ≈Çuk?"; 
 };
 
 FUNC int  Org_855_Wolf_SELLBOW_Condition()
@@ -699,10 +699,10 @@ FUNC int  Org_855_Wolf_SELLBOW_Condition()
 };
 FUNC void  Org_855_Wolf_SELLBOW_Info()
 {
-	AI_Output (other, self,"Org_855_Wolf_SELLBOW_Info_15_01"); //Gdzie mogÍ kupiÊ jakiú ≥uk?
-	AI_Output (self, other,"Org_855_Wolf_SELLBOW_Info_09_02"); //Trafi≥eú pod w≥aúciwy adres. Mam tu dobry towar za bardzo przystÍpne ceny.
+	AI_Output (other, self,"Org_855_Wolf_SELLBOW_Info_15_01"); //Gdzie mogƒô kupiƒá jaki≈õ ≈Çuk?
+	AI_Output (self, other,"Org_855_Wolf_SELLBOW_Info_09_02"); //Trafi≈Çe≈õ pod w≈Ça≈õciwy adres. Mam tu dobry towar za bardzo przystƒôpne ceny.
 	Log_CreateTopic   	(GE_TraderNC,LOG_NOTE);
-	B_LogEntry			(GE_TraderNC,"Szkodnik imieniem Wilk sprzedaje ≥uki.");
+	B_LogEntry			(GE_TraderNC,"Szkodnik imieniem Wilk sprzedaje ≈Çuki.");
 
 };  
 

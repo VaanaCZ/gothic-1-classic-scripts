@@ -44,8 +44,8 @@ FUNC int DIA_Jeremiah_Hallo_Condition()
 FUNC VOID  DIA_Jeremiah_Hallo_Info()
 {
 	AI_Output (other, self,"DIA_Jeremiah_Hallo_15_00"); //Co robisz?
-	AI_Output (self, other,"DIA_Jeremiah_Hallo_04_01"); //Przygotowujê ry¿ówkê, ch³opcze.
-	AI_Output (self, other,"DIA_Jeremiah_Hallo_04_02"); //Proszê - weŸ sobie jedn¹ butelkê. Tylko nie mów Silasowi.
+	AI_Output (self, other,"DIA_Jeremiah_Hallo_04_01"); //PrzygotowujÄ™ ryÅ¼Ã³wkÄ™, chÅ‚opcze.
+	AI_Output (self, other,"DIA_Jeremiah_Hallo_04_02"); //ProszÄ™ - weÅº sobie jednÄ… butelkÄ™. Tylko nie mÃ³w Silasowi.
 	
 	CreateInvItems	(self, ItFoBooze, 1);
 	B_GiveInvItems	(self, other, ItFoBooze, 1);
@@ -75,8 +75,8 @@ FUNC int DIA_Jeremiah_PERM_Condition()
 FUNC VOID  DIA_Jeremiah_PERM_Info()
 {
 	AI_Output (other, self,"DIA_Jeremiah_PERM_15_00"); //Jak idzie destylacja?
-	AI_Output (self, other,"DIA_Jeremiah_PERM_04_01"); //Przy tych facetach ledwie nad¹¿am z zamówieniami. Ci to potrafi¹ wypiæ!
-	AI_Output (self, other,"DIA_Jeremiah_PERM_04_02"); //I nawet mi to na rêkê. Przynajmniej psy Ry¿owego Ksiêcia zostawiaj¹ mnie w spokoju.
+	AI_Output (self, other,"DIA_Jeremiah_PERM_04_01"); //Przy tych facetach ledwie nadÄ…Å¼am z zamÃ³wieniami. Ci to potrafiÄ… wypiÄ‡!
+	AI_Output (self, other,"DIA_Jeremiah_PERM_04_02"); //I nawet mi to na rÄ™kÄ™. Przynajmniej psy RyÅ¼owego KsiÄ™cia zostawiajÄ… mnie w spokoju.
 	
 	Jeremiah_Bauer = TRUE;
 };
@@ -92,7 +92,7 @@ instance DIA_Jeremiah_Horatio (C_INFO)
 	condition	= DIA_Jeremiah_Horatio_Condition;
 	information	= DIA_Jeremiah_Horatio_Info;
 	permanent	= 0;
-	description = "Co mo¿esz mi powiedzieæ o Ry¿owym Ksiêciu?";
+	description = "Co moÅ¼esz mi powiedzieÄ‡ o RyÅ¼owym KsiÄ™ciu?";
 };                       
 
 FUNC int DIA_Jeremiah_Horatio_Condition()
@@ -105,10 +105,10 @@ FUNC int DIA_Jeremiah_Horatio_Condition()
 
 FUNC VOID  DIA_Jeremiah_Horatio_Info()
 {
-	AI_Output (other, self,"DIA_Jeremiah_Horatio_15_00"); //Co mo¿esz mi powiedzieæ o Ry¿owym Ksiêciu?
-	AI_Output (self, other,"DIA_Jeremiah_Horatio_04_01"); //To zapchlony wieprz! Jego siepacze zmuszaj¹ s³abszych do pracy na polach.
-	AI_Output (self, other,"DIA_Jeremiah_Horatio_04_02"); //Jedyna osoba, która mog³aby siê mu przeciwstawiæ to Horacy. Ale on nie lubi przemocy.
-	AI_Output (self, other,"DIA_Jeremiah_Horatio_04_03"); //S³ysza³em, jak kiedyœ powiedzia³, ¿e ma ochotê pogruchotaæ Ksiêciu koœci, ale tak naprawdê nigdy by tego nie zrobi³.
-	AI_Output (self, other,"DIA_Jeremiah_Horatio_04_04"); //To by by³o wbrew jego zasadom.
+	AI_Output (other, self,"DIA_Jeremiah_Horatio_15_00"); //Co moÅ¼esz mi powiedzieÄ‡ o RyÅ¼owym KsiÄ™ciu?
+	AI_Output (self, other,"DIA_Jeremiah_Horatio_04_01"); //To zapchlony wieprz! Jego siepacze zmuszajÄ… sÅ‚abszych do pracy na polach.
+	AI_Output (self, other,"DIA_Jeremiah_Horatio_04_02"); //Jedyna osoba, ktÃ³ra mogÅ‚aby siÄ™ mu przeciwstawiÄ‡ to Horacy. Ale on nie lubi przemocy.
+	AI_Output (self, other,"DIA_Jeremiah_Horatio_04_03"); //SÅ‚yszaÅ‚em, jak kiedyÅ› powiedziaÅ‚, Å¼e ma ochotÄ™ pogruchotaÄ‡ KsiÄ™ciu koÅ›ci, ale tak naprawdÄ™ nigdy by tego nie zrobiÅ‚.
+	AI_Output (self, other,"DIA_Jeremiah_Horatio_04_04"); //To by byÅ‚o wbrew jego zasadom.
 };
 

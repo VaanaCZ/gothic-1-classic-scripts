@@ -44,6 +44,6 @@ FUNC int DIA_GRD_245_Hello_Condition()
 FUNC VOID DIA_GRD_245_Hello_Info()
 {
 	AI_Output (other, self,"DIA_GRD_245_Hello_15_00"); //Co to za dom?
-	AI_Output (self, other,"DIA_GRD_245_Hello_13_01"); //To siedziba Magnatów. Jeœli chcesz tam wejœæ, radzê ci nale¿ycie siê zachowywaæ!
+	AI_Output (self, other,"DIA_GRD_245_Hello_13_01"); //To siedziba MagnatÃ³w. JeÅ›li chcesz tam wejÅ›Ä‡, radzÄ™ ci naleÅ¼ycie siÄ™ zachowywaÄ‡!
 };
 

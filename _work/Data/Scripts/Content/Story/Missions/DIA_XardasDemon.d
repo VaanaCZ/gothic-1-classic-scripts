@@ -19,7 +19,7 @@ FUNC int  Info_XardasDemon_EXIT_Condition()
 FUNC VOID  Info_XardasDemon_EXIT_Info()
 {
 	AI_Output (self, other,"DIA_BaalCadar_NoTalk_Hi_02_01"); //
-	AI_Output (hero, self,"Info_Saturas_EXIT_15_01"); //Œmiertelny?... Kto, ja?... Dobrze, ju¿ idê!
+	AI_Output (hero, self,"Info_Saturas_EXIT_15_01"); //Åšmiertelny?... Kto, ja?... Dobrze, juÅ¼ idÄ™!
 
 	AI_StopProcessInfos	(self);
 };
@@ -59,14 +59,14 @@ FUNC INT Info_XardasDemon_INTRO_Condition()
 FUNC VOID Info_XardasDemon_INTRO_Info()
 {
 	AI_TurnAway		(hero, self);
-	AI_Output		(hero, self,"Info_XardasDemon_INTRO_15_01"); //Zaraz... Kto... Kto to powiedzia³?
+	AI_Output		(hero, self,"Info_XardasDemon_INTRO_15_01"); //Zaraz... Kto... Kto to powiedziaÅ‚?
 	AI_WhirlAround	(hero, self);	//KEIN B_Whirlaround()!!!
-	AI_Output		(hero, self,"Info_XardasDemon_INTRO_15_02"); //To TY?! Jak... Jak siê dosta³eœ do mojej g³owy?
+	AI_Output		(hero, self,"Info_XardasDemon_INTRO_15_02"); //To TY?! Jak... Jak siÄ™ dostaÅ‚eÅ› do mojej gÅ‚owy?
 	AI_Output (self, other,"DIA_BaalCadar_NoTalk_Hi_02_01"); //
-	AI_Output		(hero, self,"Info_XardasDemon_INTRO_15_03"); //CZYM jesteœ? S³ug¹ swego pana?
-	AI_Output		(hero, self,"Info_XardasDemon_INTRO_15_04"); //Wygl¹dasz mi raczej na stwora z piek³a rodem!
+	AI_Output		(hero, self,"Info_XardasDemon_INTRO_15_03"); //CZYM jesteÅ›? SÅ‚ugÄ… swego pana?
+	AI_Output		(hero, self,"Info_XardasDemon_INTRO_15_04"); //WyglÄ…dasz mi raczej na stwora z piekÅ‚a rodem!
 	AI_Output (self, other,"DIA_BaalCadar_NoTalk_Hi_02_01"); //
-	AI_Output		(hero, self,"Info_XardasDemon_INTRO_15_05"); //Mam byæ cicho?
+	AI_Output		(hero, self,"Info_XardasDemon_INTRO_15_05"); //Mam byÄ‡ cicho?
 };
 
 //***************************************************************************
@@ -79,7 +79,7 @@ instance Info_XardasDemon_MASTERWHO (C_INFO)
 	information	= Info_XardasDemon_MASTERWHO_Info;
 	permanent	= 0;
 	important 	= 0;
-	description = "Czy imiê twego pana nie brzmi przypadkiem XARDAS?";
+	description = "Czy imiÄ™ twego pana nie brzmi przypadkiem XARDAS?";
 };
 
 FUNC INT Info_XardasDemon_MASTERWHO_Condition()
@@ -92,10 +92,10 @@ FUNC INT Info_XardasDemon_MASTERWHO_Condition()
 
 FUNC VOID Info_XardasDemon_MASTERWHO_Info()
 {
-	AI_Output		(hero, self,"Info_XardasDemon_MASTERWHO_15_01"); //Czy imiê twego pana nie brzmi przypadkiem XARDAS?
+	AI_Output		(hero, self,"Info_XardasDemon_MASTERWHO_15_01"); //Czy imiÄ™ twego pana nie brzmi przypadkiem XARDAS?
 	AI_Output (self, other,"DIA_BaalCadar_NoTalk_Hi_02_01"); //
-	AI_Output		(hero, self,"Info_XardasDemon_MASTERWHO_15_02"); //Aha... Wiêc imiona nie s¹ istotne... W porz¹dku.
-	AI_Output		(hero, self,"Info_XardasDemon_MASTERWHO_15_03"); //Za³ó¿my, ¿e to JEST wie¿a Xardasa.
+	AI_Output		(hero, self,"Info_XardasDemon_MASTERWHO_15_02"); //Aha... WiÄ™c imiona nie sÄ… istotne... W porzÄ…dku.
+	AI_Output		(hero, self,"Info_XardasDemon_MASTERWHO_15_03"); //ZaÅ‚Ã³Å¼my, Å¼e to JEST wieÅ¼a Xardasa.
 };
 
 //***************************************************************************
@@ -108,7 +108,7 @@ instance Info_XardasDemon_MASTERHOW (C_INFO)
 	information	= Info_XardasDemon_MASTERHOW_Info;
 	permanent	= 0;
 	important 	= 0;
-	description = "Domagam siê widzenia z twoim panem!";
+	description = "Domagam siÄ™ widzenia z twoim panem!";
 };
 
 FUNC INT Info_XardasDemon_MASTERHOW_Condition()
@@ -121,17 +121,17 @@ FUNC INT Info_XardasDemon_MASTERHOW_Condition()
 
 FUNC VOID Info_XardasDemon_MASTERHOW_Info()
 {
-	AI_Output		(hero, self,"Info_XardasDemon_MASTERHOW_15_01"); //Domagam siê widzenia z twoim panem!
+	AI_Output		(hero, self,"Info_XardasDemon_MASTERHOW_15_01"); //Domagam siÄ™ widzenia z twoim panem!
 	AI_Output (self, other,"DIA_BaalCadar_NoTalk_Hi_02_01"); //
 	AI_Output		(hero, self,"Info_XardasDemon_MASTERHOW_15_02"); //...Ja? Niegodny?? ...Jaki znowu sprawdzian?
 	AI_Output (self, other,"DIA_BaalCadar_NoTalk_Hi_02_01"); //
-	AI_Output		(hero, self,"Info_XardasDemon_MASTERHOW_15_03"); //Ach! Rozumiem... Ktokolwiek zechce rozmawiaæ z twoim panem, musi najpierw udowodniæ, ¿e jest tego godzien!
-	AI_Output		(hero, self,"Info_XardasDemon_MASTERHOW_15_04"); //...Zaraz, co mówi³eœ? Dowód? Zwyciêstwa nad czym?... Zwyciêstwa nad ¿ywio³ami?
-	AI_Output		(hero, self,"Info_XardasDemon_MASTERHOW_15_05"); //...Kamieñ? ...Lód? ...Ogieñ?
+	AI_Output		(hero, self,"Info_XardasDemon_MASTERHOW_15_03"); //Ach! Rozumiem... Ktokolwiek zechce rozmawiaÄ‡ z twoim panem, musi najpierw udowodniÄ‡, Å¼e jest tego godzien!
+	AI_Output		(hero, self,"Info_XardasDemon_MASTERHOW_15_04"); //...Zaraz, co mÃ³wiÅ‚eÅ›? DowÃ³d? ZwyciÄ™stwa nad czym?... ZwyciÄ™stwa nad Å¼ywioÅ‚ami?
+	AI_Output		(hero, self,"Info_XardasDemon_MASTERHOW_15_05"); //...KamieÅ„? ...LÃ³d? ...OgieÅ„?
 
 	FindGolemHearts = 1;		// Auftrag vergeben
 
-	B_LogEntry		(CH4_FindXardas,"W wie¿y Xardasa spotka³em demona, który przemówi³ do mnie telepatycznie. Zanim pozwoli mi spotkaæ siê ze swoim panem, mam mu z³o¿yæ trzy dowody mojego zwyciêstwa nad ¿ywio³ami ognia, lodu i ziemi.");
+	B_LogEntry		(CH4_FindXardas,"W wieÅ¼y Xardasa spotkaÅ‚em demona, ktÃ³ry przemÃ³wiÅ‚ do mnie telepatycznie. Zanim pozwoli mi spotkaÄ‡ siÄ™ ze swoim panem, mam mu zÅ‚oÅ¼yÄ‡ trzy dowody mojego zwyciÄ™stwa nad Å¼ywioÅ‚ami ognia, lodu i ziemi.");
 };
 
 //***************************************************************************
@@ -144,7 +144,7 @@ instance Info_XardasDemon_NOHEART (C_INFO)
 	information	= Info_XardasDemon_NOHEART_Info;
 	permanent	= 1;
 	important 	= 0;
-	description = "Mówisz zagadkami!";
+	description = "MÃ³wisz zagadkami!";
 };
 
 FUNC INT Info_XardasDemon_NOHEART_Condition()
@@ -161,10 +161,10 @@ FUNC INT Info_XardasDemon_NOHEART_Condition()
 
 FUNC VOID Info_XardasDemon_NOHEART_Info()
 {
-	AI_Output		(hero, self,"Info_XardasDemon_NOHEART_15_01"); //Mówisz zagadkami!
+	AI_Output		(hero, self,"Info_XardasDemon_NOHEART_15_01"); //MÃ³wisz zagadkami!
 	AI_Output (self, other,"DIA_BaalCadar_NoTalk_Hi_02_01"); //
-	AI_Output		(hero, self,"Info_XardasDemon_NOHEART_15_02"); //... Ju¿ to s³ysza³em. Powtarzasz siê!
-	AI_Output		(hero, self,"Info_XardasDemon_NOHEART_15_03"); //... Domagasz siê dowodu mojego zwyciêstwa nad ¿ywio³ami ognia, lodu i ziemi!
+	AI_Output		(hero, self,"Info_XardasDemon_NOHEART_15_02"); //... JuÅ¼ to sÅ‚yszaÅ‚em. Powtarzasz siÄ™!
+	AI_Output		(hero, self,"Info_XardasDemon_NOHEART_15_03"); //... Domagasz siÄ™ dowodu mojego zwyciÄ™stwa nad Å¼ywioÅ‚ami ognia, lodu i ziemi!
 };
 
 //***************************************************************************
@@ -176,13 +176,13 @@ func void B_XardasDemon_GiveHeart()
 	{
 		AI_Output (self, other,"DIA_BaalCadar_NoTalk_Hi_02_01"); //
 		AI_Output	(hero, self,"Info_XardasDemon_GIVEHEART_15_01"); //Co? A, tak!... Godnego dowodu!
-		AI_Output	(hero, self,"Info_XardasDemon_GIVEHEART_15_02"); //... Brakuje? Brakuje jeszcze dwóch?
+		AI_Output	(hero, self,"Info_XardasDemon_GIVEHEART_15_02"); //... Brakuje? Brakuje jeszcze dwÃ³ch?
 		FindGolemHearts = 2;
 	}
 	else if (FindGolemHearts == 2)
 	{
 		AI_Output (self, other,"DIA_BaalCadar_NoTalk_Hi_02_01"); //
-		AI_Output	(hero, self,"Info_XardasDemon_GIVEHEART_15_03"); //... Podwójny? ... Drugi dowód?
+		AI_Output	(hero, self,"Info_XardasDemon_GIVEHEART_15_03"); //... PodwÃ³jny? ... Drugi dowÃ³d?
 		AI_Output	(hero, self,"Info_XardasDemon_GIVEHEART_15_04"); //... Potrzeba jeszcze jednego?
 		FindGolemHearts = 3;
 	}
@@ -190,9 +190,9 @@ func void B_XardasDemon_GiveHeart()
 	{
 		AI_Output (self, other,"DIA_BaalCadar_NoTalk_Hi_02_01"); //
 		AI_Output	(hero, self,"Info_XardasDemon_GIVEHEART_15_05"); //...Perfekcja?... Jestem godny?
-		AI_Output	(hero, self,"Info_XardasDemon_GIVEHEART_15_06"); //W takim razie domagam siê widzenia z twoim panem!
-		AI_Output	(hero, self,"Info_XardasDemon_GIVEHEART_15_07"); //...Kolejny dowód?... Jaki znowu dowód?... Runa?... Runa DLA mnie?
-		AI_Output	(hero, self,"Info_XardasDemon_GIVEHEART_15_08"); //Có¿, w takim razie przyjmujê tê runê teleportacji, jako dowód tego, ¿e okaza³em siê godny!
+		AI_Output	(hero, self,"Info_XardasDemon_GIVEHEART_15_06"); //W takim razie domagam siÄ™ widzenia z twoim panem!
+		AI_Output	(hero, self,"Info_XardasDemon_GIVEHEART_15_07"); //...Kolejny dowÃ³d?... Jaki znowu dowÃ³d?... Runa?... Runa DLA mnie?
+		AI_Output	(hero, self,"Info_XardasDemon_GIVEHEART_15_08"); //CÃ³Å¼, w takim razie przyjmujÄ™ tÄ™ runÄ™ teleportacji, jako dowÃ³d tego, Å¼e okazaÅ‚em siÄ™ godny!
 
 		B_Story_AccessToXardas();
 	};
@@ -241,7 +241,7 @@ instance Info_XardasDemon_ICEHEART (C_INFO)
 	information	= Info_XardasDemon_ICEHEART_Info;
 	permanent	= 0;
 	important 	= 0;
-	description = "Czy to serce lodowego golema jest wystarczaj¹cym dowodem?";
+	description = "Czy to serce lodowego golema jest wystarczajÄ…cym dowodem?";
 };
 
 FUNC INT Info_XardasDemon_ICEHEART_Condition()
@@ -255,7 +255,7 @@ FUNC INT Info_XardasDemon_ICEHEART_Condition()
 
 FUNC VOID Info_XardasDemon_ICEHEART_Info()
 {
-	AI_Output		(hero, self,"Info_XardasDemon_ICEHEART_15_01"); //Czy to serce lodowego golema jest wystarczaj¹cym dowodem?
+	AI_Output		(hero, self,"Info_XardasDemon_ICEHEART_15_01"); //Czy to serce lodowego golema jest wystarczajÄ…cym dowodem?
 
 	B_GiveInvItems  (hero, self, ItAt_IceGolem_01, 1);
 
@@ -272,7 +272,7 @@ instance Info_XardasDemon_FIREHEART (C_INFO)
 	information	= Info_XardasDemon_FIREHEART_Info;
 	permanent	= 0;
 	important 	= 0;
-	description = "Mo¿e byæ to serce ognistego golema?";
+	description = "MoÅ¼e byÄ‡ to serce ognistego golema?";
 };
 
 FUNC INT Info_XardasDemon_FIREHEART_Condition()
@@ -286,7 +286,7 @@ FUNC INT Info_XardasDemon_FIREHEART_Condition()
 
 FUNC VOID Info_XardasDemon_FIREHEART_Info()
 {
-	AI_Output		(hero, self,"Info_XardasDemon_FIREHEART_15_01"); //Mo¿e byæ to serce ognistego golema?
+	AI_Output		(hero, self,"Info_XardasDemon_FIREHEART_15_01"); //MoÅ¼e byÄ‡ to serce ognistego golema?
 
 	B_GiveInvItems  (hero, self, ItAt_FireGolem_01, 1);
 

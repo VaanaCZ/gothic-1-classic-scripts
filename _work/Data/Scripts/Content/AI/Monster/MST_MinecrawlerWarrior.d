@@ -4,7 +4,7 @@
 
 PROTOTYPE Mst_Default_MinecrawlerWarrior(C_Npc)			
 {
-	name							=	"Pe≥zacz-Wojownik";
+	name							=	"Pe≈Çzacz-Wojownik";
 	guild							=	GIL_MINECRAWLER;
 	aivar[AIV_MM_REAL_ID]			= 	ID_MINECRAWLERWARRIOR;
 	level							=	22;
@@ -76,7 +76,7 @@ INSTANCE MinecrawlerWarrior	(Mst_Default_MinecrawlerWarrior)
 *************************************************************************/
 instance OTMinecrawler(Mst_Default_MinecrawlerWarrior)			
 {
-	name							=	"åwiπtynny pe≥zacz";
+	name							=	"≈öwiƒÖtynny pe≈Çzacz";
 	level							=	25;
 
 	Set_MinecrawlerWarrior_Visuals();

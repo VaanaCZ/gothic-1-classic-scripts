@@ -45,10 +45,10 @@ FUNC int  Grd_264_Gardist_GARDEAUFNAHME_Condition()
 };
 func void  Grd_264_Gardist_GARDEAUFNAHME_Info()
 {
-	AI_Output (self, other,"Grd_264_Gardist_GARDEAUFNAHME_Info_07_01"); //Hej, nieüle sobie poradzi≥eú z tymi pe≥zaczami! Zas≥uøy≥eú na przyjÍcie w poczet StraønikÛw.
-	AI_Output (self, other,"Grd_264_Gardist_GARDEAUFNAHME_Info_07_02"); //Idü do Starego Obozu i porozmawiaj z Thorusem!
+	AI_Output (self, other,"Grd_264_Gardist_GARDEAUFNAHME_Info_07_01"); //Hej, nie≈∫le sobie poradzi≈Çe≈õ z tymi pe≈Çzaczami! Zas≈Çu≈ºy≈Çe≈õ na przyjƒôcie w poczet Stra≈ºnik√≥w.
+	AI_Output (self, other,"Grd_264_Gardist_GARDEAUFNAHME_Info_07_02"); //Id≈∫ do Starego Obozu i porozmawiaj z Thorusem!
 	
 	Log_CreateTopic (GE_BecomeGuard,LOG_NOTE);
-	B_LogEntry (GE_BecomeGuard,"Jak tylko dostarczÍ te jaja powinienem porozmawiaÊ z Thorusem. Moøe pozwoli mi do≥πczyÊ do Straøy.");
+	B_LogEntry (GE_BecomeGuard,"Jak tylko dostarczƒô te jaja powinienem porozmawiaƒá z Thorusem. Mo≈ºe pozwoli mi do≈ÇƒÖczyƒá do Stra≈ºy.");
 
 };

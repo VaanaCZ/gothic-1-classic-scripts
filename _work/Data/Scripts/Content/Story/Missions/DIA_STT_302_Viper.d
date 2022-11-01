@@ -30,7 +30,7 @@ instance  Stt_302_Viper_GREET (C_INFO)
 	information		= Stt_302_Viper_GREET_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Podobno jesteœ hutnikiem."; 
+	description		= "Podobno jesteÅ› hutnikiem."; 
 };
 
 FUNC int  Stt_302_Viper_GREET_Condition()
@@ -41,8 +41,8 @@ FUNC int  Stt_302_Viper_GREET_Condition()
 
 FUNC void  Stt_302_Viper_GREET_Info()
 {
-	AI_Output (other, self,"Stt_302_Viper_GREET_Info_15_01"); //Podobno jesteœ hutnikiem.
-	AI_Output (self, other,"Stt_302_Viper_GREET_Info_11_02"); //Widzê, ¿e bystry z ciebie ch³opak.
+	AI_Output (other, self,"Stt_302_Viper_GREET_Info_15_01"); //Podobno jesteÅ› hutnikiem.
+	AI_Output (self, other,"Stt_302_Viper_GREET_Info_11_02"); //WidzÄ™, Å¼e bystry z ciebie chÅ‚opak.
 };  
 // ***************************** SCHMELZGESCHICHTE ****************************************//
 instance  Stt_302_Viper_MELT (C_INFO)
@@ -52,7 +52,7 @@ instance  Stt_302_Viper_MELT (C_INFO)
 	information		= Stt_302_Viper_MELT_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Podobno przetapiasz tutaj czêœæ wydobytej rudy."; 
+	description		= "Podobno przetapiasz tutaj czÄ™Å›Ä‡ wydobytej rudy."; 
 };
 
 FUNC int  Stt_302_Viper_MELT_Condition()
@@ -65,11 +65,11 @@ FUNC int  Stt_302_Viper_MELT_Condition()
 };
 FUNC void  Stt_302_Viper_MELT_Info()
 {
-	AI_Output (other, self,"Stt_302_Viper_MELT_Info_15_01"); //Podobno przetapiasz tutaj czêœæ wydobytej rudy.
-	AI_Output (self, other,"Stt_302_Viper_MELT_Info_11_02"); //Kiedyœ przetapialiœmy tutaj ca³y urobek. Ale Gomezowi i Magom nie bardzo siê to podoba³o.
-	AI_Output (self, other,"Stt_302_Viper_MELT_Info_11_03"); //Siedzieli tu tygodniami, badaj¹c rudê i wszystko dooko³a.
-	AI_Output (self, other,"Stt_302_Viper_MELT_Info_11_04"); //Wêszyli wszêdzie i wtykali swoje szlachetne nochale w rzeczy, o których nie mieli pojêcia.
-	AI_Output (self, other,"Stt_302_Viper_MELT_Info_11_05"); //W koñcu poprzestaliœmy na przetapianiu czêœci urobku. Magowie wiêcej siê tu nie pojawili.
+	AI_Output (other, self,"Stt_302_Viper_MELT_Info_15_01"); //Podobno przetapiasz tutaj czÄ™Å›Ä‡ wydobytej rudy.
+	AI_Output (self, other,"Stt_302_Viper_MELT_Info_11_02"); //KiedyÅ› przetapialiÅ›my tutaj caÅ‚y urobek. Ale Gomezowi i Magom nie bardzo siÄ™ to podobaÅ‚o.
+	AI_Output (self, other,"Stt_302_Viper_MELT_Info_11_03"); //Siedzieli tu tygodniami, badajÄ…c rudÄ™ i wszystko dookoÅ‚a.
+	AI_Output (self, other,"Stt_302_Viper_MELT_Info_11_04"); //WÄ™szyli wszÄ™dzie i wtykali swoje szlachetne nochale w rzeczy, o ktÃ³rych nie mieli pojÄ™cia.
+	AI_Output (self, other,"Stt_302_Viper_MELT_Info_11_05"); //W koÅ„cu poprzestaliÅ›my na przetapianiu czÄ™Å›ci urobku. Magowie wiÄ™cej siÄ™ tu nie pojawili.
 };
 // *****************************  ****************************************//
 instance  Stt_302_Viper_BUY (C_INFO)
@@ -79,7 +79,7 @@ instance  Stt_302_Viper_BUY (C_INFO)
 	information		= Stt_302_Viper_BUY_Info;
 	important		= 0;
 	permanent		= 1;
-	description		= "Mo¿esz mi daæ trochê rudy?"; 
+	description		= "MoÅ¼esz mi daÄ‡ trochÄ™ rudy?"; 
 	trade           = 1;
 };
 
@@ -93,7 +93,7 @@ FUNC int  Stt_302_Viper_BUY_Condition()
 };
 FUNC void  Stt_302_Viper_BUY_Info()
 {
-	AI_Output (other, self,"Stt_302_Viper_BUY_Info_15_01"); //Mo¿esz mi daæ trochê rudy?
-	AI_Output (self, other,"Stt_302_Viper_BUY_Info_11_02"); //Jeœli dasz mi coœ w zamian.
+	AI_Output (other, self,"Stt_302_Viper_BUY_Info_15_01"); //MoÅ¼esz mi daÄ‡ trochÄ™ rudy?
+	AI_Output (self, other,"Stt_302_Viper_BUY_Info_11_02"); //JeÅ›li dasz mi coÅ› w zamian.
 };
 

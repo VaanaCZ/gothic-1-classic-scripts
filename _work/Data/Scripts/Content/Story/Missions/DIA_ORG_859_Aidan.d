@@ -33,7 +33,7 @@ instance DIA_Aidan_Hello (C_INFO)
 	condition		= DIA_Aidan_Hello_Condition;
 	information		= DIA_Aidan_Hello_Info;
 	permanent		= 0;
-	description		= "Czym siê tutaj zajmujesz?";
+	description		= "Czym siÄ™ tutaj zajmujesz?";
 };
 
 FUNC int  DIA_Aidan_Hello_Condition()
@@ -44,12 +44,12 @@ FUNC int  DIA_Aidan_Hello_Condition()
 func void  DIA_Aidan_Hello_Info()
 {
 	AI_Output (other, self,"DIA_Aidan_Hello_15_00"); //Co tu robisz?
-	AI_Output (self, other,"DIA_Aidan_Hello_13_01"); //Jestem myœliwym. Utrzymujê siê ze sprzeda¿y skór i k³ów zabitych zwierz¹t.
-	AI_Output (other, self,"DIA_Aidan_Hello_15_02"); //Da siê z tego wy¿yæ?
-	AI_Output (self, other,"DIA_Aidan_Hello_13_03"); //Jeœli potrafi siê zrêcznie oporz¹dzaæ zwierzynê - tak, i to ca³kiem nieŸle!
+	AI_Output (self, other,"DIA_Aidan_Hello_13_01"); //Jestem myÅ›liwym. UtrzymujÄ™ siÄ™ ze sprzedaÅ¼y skÃ³r i kÅ‚Ã³w zabitych zwierzÄ…t.
+	AI_Output (other, self,"DIA_Aidan_Hello_15_02"); //Da siÄ™ z tego wyÅ¼yÄ‡?
+	AI_Output (self, other,"DIA_Aidan_Hello_13_03"); //JeÅ›li potrafi siÄ™ zrÄ™cznie oporzÄ…dzaÄ‡ zwierzynÄ™ - tak, i to caÅ‚kiem nieÅºle!
 
 	Log_CreateTopic	(GE_TeacherOW,	LOG_NOTE);
-	B_LogEntry		(GE_TeacherOW,"Aidan, myœliwy mieszkaj¹cy na drodze pomiêdzy Starym a Nowym Obozem, mo¿e mnie nauczyæ, jak patroszyæ upolowan¹ zwierzynê.");
+	B_LogEntry		(GE_TeacherOW,"Aidan, myÅ›liwy mieszkajÄ…cy na drodze pomiÄ™dzy Starym a Nowym Obozem, moÅ¼e mnie nauczyÄ‡, jak patroszyÄ‡ upolowanÄ… zwierzynÄ™.");
 };
 
 // **************************************************
@@ -63,7 +63,7 @@ instance  Org_859_Aidan_Creatures (C_INFO)
 	condition	= Org_859_Aidan_Creatures_Condition;
 	information	= Org_859_Aidan_Creatures_Info;
 	permanent	= 1;
-	description = "Chcia³bym siê nauczyæ oprawiaæ zwierzynê.";
+	description = "ChciaÅ‚bym siÄ™ nauczyÄ‡ oprawiaÄ‡ zwierzynÄ™.";
 };                       
 
 FUNC int  Org_859_Aidan_Creatures_Condition()
@@ -77,35 +77,35 @@ FUNC int  Org_859_Aidan_Creatures_Condition()
 
 FUNC VOID  Org_859_Aidan_Creatures_Info()
 {
-	AI_Output (other, self,"Org_859_Aidan_Creatures_15_00"); //Chcia³bym siê nauczyæ oprawiaæ zwierzynê.
+	AI_Output (other, self,"Org_859_Aidan_Creatures_15_00"); //ChciaÅ‚bym siÄ™ nauczyÄ‡ oprawiaÄ‡ zwierzynÄ™.
 	
 	if ( (Knows_GetTeeth == FALSE)||(Knows_GetFur == FALSE)||(Knows_GetClaws == FALSE)||(Knows_GetHide == FALSE) )
 	{
-		AI_Output (self, other,"Org_859_Aidan_Creatures_13_01"); //A co chcesz wiedzieæ?
+		AI_Output (self, other,"Org_859_Aidan_Creatures_13_01"); //A co chcesz wiedzieÄ‡?
 		
 		Info_ClearChoices(Org_859_Aidan_Creatures);
 		Info_AddChoice   (Org_859_Aidan_Creatures, DIALOG_BACK 											,Org_859_Aidan_Creatures_BACK);
 
 		if (Knows_GetTeeth == FALSE)
 		{
-			Info_AddChoice   (Org_859_Aidan_Creatures,"Usuwanie k³ów (koszt: 1 punkt umiejêtnoœci, 50 bry³ek rudy)",Org_859_Aidan_Creatures_Zahn);
+			Info_AddChoice   (Org_859_Aidan_Creatures,"Usuwanie kÅ‚Ã³w (koszt: 1 punkt umiejÄ™tnoÅ›ci, 50 bryÅ‚ek rudy)",Org_859_Aidan_Creatures_Zahn);
 		};
 		if (Knows_GetFur == FALSE)
 		{
-			Info_AddChoice	 (Org_859_Aidan_Creatures,"Œci¹ganie futer (koszt: 1 punkt umiejêtnoœci, 100 bry³ek rudy)",Org_859_Aidan_Creatures_Fell);
+			Info_AddChoice	 (Org_859_Aidan_Creatures,"ÅšciÄ…ganie futer (koszt: 1 punkt umiejÄ™tnoÅ›ci, 100 bryÅ‚ek rudy)",Org_859_Aidan_Creatures_Fell);
 		};
 		if (Knows_GetClaws == FALSE)
 		{
-			Info_AddChoice	 (Org_859_Aidan_Creatures,"Usuwanie pazurów (koszt: 1 punkt umiejêtnoœci, 50 bry³ek rudy)",Org_859_Aidan_Creatures_Kralle);
+			Info_AddChoice	 (Org_859_Aidan_Creatures,"Usuwanie pazurÃ³w (koszt: 1 punkt umiejÄ™tnoÅ›ci, 50 bryÅ‚ek rudy)",Org_859_Aidan_Creatures_Kralle);
 		};
 		if (Knows_GetHide == FALSE)
 		{
-			Info_AddChoice	 (Org_859_Aidan_Creatures,"Skórowanie gadów (koszt: 1 punkt umiejêtnoœci, 100 bry³ek rudy)",Org_859_Aidan_Creatures_Haut);
+			Info_AddChoice	 (Org_859_Aidan_Creatures,"SkÃ³rowanie gadÃ³w (koszt: 1 punkt umiejÄ™tnoÅ›ci, 100 bryÅ‚ek rudy)",Org_859_Aidan_Creatures_Haut);
 		};
 	}
 	else
 	{
-		AI_Output (self, other,"Org_859_Aidan_Creatures_TaughtAll_13_00"); //Nauczy³em ciê ju¿ wszystkiego co sam wiem.
+		AI_Output (self, other,"Org_859_Aidan_Creatures_TaughtAll_13_00"); //NauczyÅ‚em ciÄ™ juÅ¼ wszystkiego co sam wiem.
 	};
 };
 
@@ -116,7 +116,7 @@ func void Org_859_Aidan_Creatures_BACK()
 
 func void Org_859_Aidan_Creatures_Zahn()
 {
-	AI_Output (other, self,"Org_859_Aidan_Creatures_Zahn_15_00"); //Jak mogê zdobyæ k³y upolowanej zwierzyny?
+	AI_Output (other, self,"Org_859_Aidan_Creatures_Zahn_15_00"); //Jak mogÄ™ zdobyÄ‡ kÅ‚y upolowanej zwierzyny?
 	
 	if (Npc_HasItems(other,itminugget)>=50)
 	{
@@ -126,30 +126,30 @@ func void Org_859_Aidan_Creatures_Zahn()
 			
 			B_GiveInvItems	(other, self,itminugget,50);
 			
-			PrintScreen	("Nowa umiejêtnoœæ: Zdobywanie k³ów", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
+			PrintScreen	("Nowa umiejÄ™tnoÅ›Ä‡: Zdobywanie kÅ‚Ã³w", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
 					
-			AI_Output (self, other,"Org_859_Aidan_Creatures_Zahn_13_01"); //Przede wszystkim musisz uwa¿aæ, ¿eby k³y nie popêka³y podczas wyci¹gania. W tym celu wbij nó¿ w pobli¿u œrodka zêba i delikatnie go podwa¿aj.
-			AI_Output (self, other,"Org_859_Aidan_Creatures_Zahn_13_02"); //Warto zabieraæ k³y wilków, cieniostworów i zêbaczy
+			AI_Output (self, other,"Org_859_Aidan_Creatures_Zahn_13_01"); //Przede wszystkim musisz uwaÅ¼aÄ‡, Å¼eby kÅ‚y nie popÄ™kaÅ‚y podczas wyciÄ…gania. W tym celu wbij nÃ³Å¼ w pobliÅ¼u Å›rodka zÄ™ba i delikatnie go podwaÅ¼aj.
+			AI_Output (self, other,"Org_859_Aidan_Creatures_Zahn_13_02"); //Warto zabieraÄ‡ kÅ‚y wilkÃ³w, cieniostworÃ³w i zÄ™baczy
 			
 			Knows_GetTeeth = TRUE;
 			Log_CreateTopic (GE_AnimalTrophies,LOG_NOTE);
-			B_LogEntry (GE_AnimalTrophies,"Umiejêtnoœæ zdobywania k³ów wilków, orkowych psów, zêbaczy, k¹saczy, ogarów i cieniostworów.");
+			B_LogEntry (GE_AnimalTrophies,"UmiejÄ™tnoÅ›Ä‡ zdobywania kÅ‚Ã³w wilkÃ³w, orkowych psÃ³w, zÄ™baczy, kÄ…saczy, ogarÃ³w i cieniostworÃ³w.");
 		}
 		else
 		{
-			AI_Output (self, other,"Org_859_Aidan_Creatures_KEINE_LP_13_00"); //Musisz najpierw zdobyæ trochê wiêcej doœwiadczenia. Inaczej moja wiedza bêdzie bezu¿yteczna.
-			PrintScreen	("Za ma³o punktów umiejêtnoœci!", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
+			AI_Output (self, other,"Org_859_Aidan_Creatures_KEINE_LP_13_00"); //Musisz najpierw zdobyÄ‡ trochÄ™ wiÄ™cej doÅ›wiadczenia. Inaczej moja wiedza bÄ™dzie bezuÅ¼yteczna.
+			PrintScreen	("Za maÅ‚o punktÃ³w umiejÄ™tnoÅ›ci!", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
 		};
 	}
 	else
 	{
-		AI_Output (self, other,"Org_859_Aidan_Creatures_KEIN_ERZ_13_00"); //Najpierw chcê zobaczyæ trochê rudy. W tej kolonii nic nie ma za darmo!
+		AI_Output (self, other,"Org_859_Aidan_Creatures_KEIN_ERZ_13_00"); //Najpierw chcÄ™ zobaczyÄ‡ trochÄ™ rudy. W tej kolonii nic nie ma za darmo!
 	};
 };
 
 func void Org_859_Aidan_Creatures_Fell()
 {
-	AI_Output (other, self,"Org_859_Aidan_Creatures_Fell_15_00"); //Jak mogê zdobyæ skóry upolowanej zwierzyny?
+	AI_Output (other, self,"Org_859_Aidan_Creatures_Fell_15_00"); //Jak mogÄ™ zdobyÄ‡ skÃ³ry upolowanej zwierzyny?
 	
 	if (Npc_HasItems(other,itminugget)>=100)
 	{
@@ -159,24 +159,24 @@ func void Org_859_Aidan_Creatures_Fell()
 			
 			B_GiveInvItems	(other, self,itminugget,100);
 			
-			PrintScreen	("Nowa umiejêtnoœæ: Œci¹ganie futer", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
+			PrintScreen	("Nowa umiejÄ™tnoÅ›Ä‡: ÅšciÄ…ganie futer", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
 		
-			AI_Output (self, other,"Org_859_Aidan_Creatures_Fell_13_01"); //Zaczynaj skórowanie od zadu, przesuwaj¹c siê stopniowo ku g³owie. Spróbuj kilka razy. To nie jest takie trudne, a futra potrafi¹ byæ bardzo cenne!
-			AI_Output (self, other,"Org_859_Aidan_Creatures_Fell_13_02"); //Futra wilków i cieniostworów mo¿na wykorzystaæ do szycia odzie¿y. Badaj¹c futro zabitego zwierza ³atwo ocenisz, czy nadaje siê do dalszego wykorzystania. 
+			AI_Output (self, other,"Org_859_Aidan_Creatures_Fell_13_01"); //Zaczynaj skÃ³rowanie od zadu, przesuwajÄ…c siÄ™ stopniowo ku gÅ‚owie. SprÃ³buj kilka razy. To nie jest takie trudne, a futra potrafiÄ… byÄ‡ bardzo cenne!
+			AI_Output (self, other,"Org_859_Aidan_Creatures_Fell_13_02"); //Futra wilkÃ³w i cieniostworÃ³w moÅ¼na wykorzystaÄ‡ do szycia odzieÅ¼y. BadajÄ…c futro zabitego zwierza Å‚atwo ocenisz, czy nadaje siÄ™ do dalszego wykorzystania. 
 			
 			Knows_GetFur = TRUE;
 			Log_CreateTopic (GE_AnimalTrophies,LOG_NOTE);
-			B_LogEntry (GE_AnimalTrophies,"Umiejêtnoœæ œci¹gania futer z wilków, orkowych psów, cieniostworów i trolli");
+			B_LogEntry (GE_AnimalTrophies,"UmiejÄ™tnoÅ›Ä‡ Å›ciÄ…gania futer z wilkÃ³w, orkowych psÃ³w, cieniostworÃ³w i trolli");
 		}
 		else
 		{
-			AI_Output (self, other,"Org_859_Aidan_Creatures_KEINE_LP_13_00"); //Musisz najpierw zdobyæ trochê wiêcej doœwiadczenia. Inaczej moja wiedza bêdzie bezu¿yteczna.
-			PrintScreen	("Za ma³o punktów umiejêtnoœci!", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
+			AI_Output (self, other,"Org_859_Aidan_Creatures_KEINE_LP_13_00"); //Musisz najpierw zdobyÄ‡ trochÄ™ wiÄ™cej doÅ›wiadczenia. Inaczej moja wiedza bÄ™dzie bezuÅ¼yteczna.
+			PrintScreen	("Za maÅ‚o punktÃ³w umiejÄ™tnoÅ›ci!", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
 		};
 	}
 	else
 	{
-		AI_Output (self, other,"Org_859_Aidan_Creatures_KEIN_ERZ_13_00"); //Najpierw chcê zobaczyæ trochê rudy. W tej kolonii nic nie ma za darmo!
+		AI_Output (self, other,"Org_859_Aidan_Creatures_KEIN_ERZ_13_00"); //Najpierw chcÄ™ zobaczyÄ‡ trochÄ™ rudy. W tej kolonii nic nie ma za darmo!
 	};
 };
 
@@ -190,25 +190,25 @@ func void Org_859_Aidan_Creatures_Kralle()
 			
 			B_GiveInvItems	(other, self,itminugget,50);
 			
-			PrintScreen	("Nowa umiejêtnoœæ: Zdobywanie pazurów", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
+			PrintScreen	("Nowa umiejÄ™tnoÅ›Ä‡: Zdobywanie pazurÃ³w", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
 			
-			AI_Output (other, self,"Org_859_Aidan_Creatures_Kralle_15_00"); //Poka¿ mi jak zdobyæ pazury upolowanej zwierzyny.
-			AI_Output (self, other,"Org_859_Aidan_Creatures_Kralle_13_01"); //Prawdê mówi¹c to dziecinnie proste, trzeba tylko znaæ odpowiedni¹ metodê. Wygnij pazury do przodu - nigdy do ty³u! I pod ¿adnym pozorem nie próbuj ich wyci¹gaæ!
-			AI_Output (self, other,"Org_859_Aidan_Creatures_Kralle_13_02"); //Najlepiej pozyskiwaæ pazury jaszczurów. Od tej pory bêdziesz wiedzia³, które zwierzêta dostarczaj¹ dobrych pazurów.
+			AI_Output (other, self,"Org_859_Aidan_Creatures_Kralle_15_00"); //PokaÅ¼ mi jak zdobyÄ‡ pazury upolowanej zwierzyny.
+			AI_Output (self, other,"Org_859_Aidan_Creatures_Kralle_13_01"); //PrawdÄ™ mÃ³wiÄ…c to dziecinnie proste, trzeba tylko znaÄ‡ odpowiedniÄ… metodÄ™. Wygnij pazury do przodu - nigdy do tyÅ‚u! I pod Å¼adnym pozorem nie prÃ³buj ich wyciÄ…gaÄ‡!
+			AI_Output (self, other,"Org_859_Aidan_Creatures_Kralle_13_02"); //Najlepiej pozyskiwaÄ‡ pazury jaszczurÃ³w. Od tej pory bÄ™dziesz wiedziaÅ‚, ktÃ³re zwierzÄ™ta dostarczajÄ… dobrych pazurÃ³w.
 			
 			Knows_GetClaws = TRUE;
 			Log_CreateTopic (GE_AnimalTrophies,LOG_NOTE);
-			B_LogEntry (GE_AnimalTrophies,"Umiejêtnoœæ wyci¹gania pazurów jaszczurów, zêbaczy, topielców, k¹saczy i brzytew");
+			B_LogEntry (GE_AnimalTrophies,"UmiejÄ™tnoÅ›Ä‡ wyciÄ…gania pazurÃ³w jaszczurÃ³w, zÄ™baczy, topielcÃ³w, kÄ…saczy i brzytew");
 		}
 		else
 		{
-			AI_Output (self, other,"Org_859_Aidan_Creatures_KEINE_LP_13_00"); //Musisz najpierw zdobyæ trochê wiêcej doœwiadczenia. Inaczej moja wiedza bêdzie bezu¿yteczna.
-			PrintScreen	("Za ma³o punktów umiejêtnoœci!", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
+			AI_Output (self, other,"Org_859_Aidan_Creatures_KEINE_LP_13_00"); //Musisz najpierw zdobyÄ‡ trochÄ™ wiÄ™cej doÅ›wiadczenia. Inaczej moja wiedza bÄ™dzie bezuÅ¼yteczna.
+			PrintScreen	("Za maÅ‚o punktÃ³w umiejÄ™tnoÅ›ci!", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
 		};
 	}
 	else
 	{
-		AI_Output (self, other,"Org_859_Aidan_Creatures_KEIN_ERZ_13_00"); //Najpierw chcê zobaczyæ trochê rudy. W tej kolonii nic nie ma za darmo!
+		AI_Output (self, other,"Org_859_Aidan_Creatures_KEIN_ERZ_13_00"); //Najpierw chcÄ™ zobaczyÄ‡ trochÄ™ rudy. W tej kolonii nic nie ma za darmo!
 	};
 };
 
@@ -222,24 +222,24 @@ func void Org_859_Aidan_Creatures_Haut()
 						
 			B_GiveInvItems	(other, self,itminugget,100);
 			
-			PrintScreen	("Nowa umiejêtnoœæ: Skórowanie jaszczurów", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
+			PrintScreen	("Nowa umiejÄ™tnoÅ›Ä‡: SkÃ³rowanie jaszczurÃ³w", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
 				
-			AI_Output (other, self,"Org_859_Aidan_Creatures_Haut_15_00"); //Na co powinienem zwracaæ uwagê zdzieraj¹c skórê z gadów?
-			AI_Output (self, other,"Org_859_Aidan_Creatures_Haut_13_01"); //Skóry topielców i bagiennych wê¿y s¹ szczególnie cenne.
-			AI_Output (self, other,"Org_859_Aidan_Creatures_Haut_13_02"); //Jeœli przetniesz skórê na bokach, powinna sama odejœæ od miêsa. Myœlê, ¿e od tej pory poradzisz ju¿ sobie ze skórowaniem gadów.
+			AI_Output (other, self,"Org_859_Aidan_Creatures_Haut_15_00"); //Na co powinienem zwracaÄ‡ uwagÄ™ zdzierajÄ…c skÃ³rÄ™ z gadÃ³w?
+			AI_Output (self, other,"Org_859_Aidan_Creatures_Haut_13_01"); //SkÃ³ry topielcÃ³w i bagiennych wÄ™Å¼y sÄ… szczegÃ³lnie cenne.
+			AI_Output (self, other,"Org_859_Aidan_Creatures_Haut_13_02"); //JeÅ›li przetniesz skÃ³rÄ™ na bokach, powinna sama odejÅ›Ä‡ od miÄ™sa. MyÅ›lÄ™, Å¼e od tej pory poradzisz juÅ¼ sobie ze skÃ³rowaniem gadÃ³w.
 				
 			Knows_GetHide = TRUE;
 			Log_CreateTopic (GE_AnimalTrophies,LOG_NOTE);
-			B_LogEntry (GE_AnimalTrophies,"Umiejêtnoœæ skórowania jaszczurów i b³otnych wê¿y");
+			B_LogEntry (GE_AnimalTrophies,"UmiejÄ™tnoÅ›Ä‡ skÃ³rowania jaszczurÃ³w i bÅ‚otnych wÄ™Å¼y");
 		}
 		else
 		{
-			AI_Output (self, other,"Org_859_Aidan_Creatures_KEINE_LP_13_00"); //Musisz najpierw zdobyæ trochê wiêcej doœwiadczenia. Inaczej moja wiedza bêdzie bezu¿yteczna.
-			PrintScreen	("Za ma³o punktów umiejêtnoœci!", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
+			AI_Output (self, other,"Org_859_Aidan_Creatures_KEINE_LP_13_00"); //Musisz najpierw zdobyÄ‡ trochÄ™ wiÄ™cej doÅ›wiadczenia. Inaczej moja wiedza bÄ™dzie bezuÅ¼yteczna.
+			PrintScreen	("Za maÅ‚o punktÃ³w umiejÄ™tnoÅ›ci!", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
 		};
 	}
 	else
 	{
-		AI_Output (self, other,"Org_859_Aidan_Creatures_KEIN_ERZ_13_00"); //Najpierw chcê zobaczyæ trochê rudy. W tej kolonii nic nie ma za darmo!
+		AI_Output (self, other,"Org_859_Aidan_Creatures_KEIN_ERZ_13_00"); //Najpierw chcÄ™ zobaczyÄ‡ trochÄ™ rudy. W tej kolonii nic nie ma za darmo!
 	};
 };

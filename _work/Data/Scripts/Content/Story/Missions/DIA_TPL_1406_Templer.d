@@ -34,7 +34,7 @@ instance  DIA_KalomsGuard_PERM (C_INFO)
 	condition	= DIA_KalomsGuard_PERM_Condition;
 	information	= DIA_KalomsGuard_PERM_Info;
 	permanent	= 1;
-	description	= "Chyba nie bêdziesz mia³ nic przeciwko, jeœli tam wejdê?";
+	description	= "Chyba nie bÄ™dziesz miaÅ‚ nic przeciwko, jeÅ›li tam wejdÄ™?";
 };                       
 
 FUNC int  DIA_KalomsGuard_PERM_Condition()
@@ -44,8 +44,8 @@ FUNC int  DIA_KalomsGuard_PERM_Condition()
 
 FUNC VOID  DIA_KalomsGuard_PERM_Info()
 {
-	AI_Output (other, self,"DIA_KalomsGuard_PERM_15_00"); //Chyba nie bêdziesz mia³ nic przeciwko, jeœli tam wejdê?
-	AI_Output (self, other,"DIA_KalomsGuard_PERM_13_01"); //Okazuj mojemu mistrzowi nale¿yty szacunek, albo nie po¿yjesz d³ugo!
+	AI_Output (other, self,"DIA_KalomsGuard_PERM_15_00"); //Chyba nie bÄ™dziesz miaÅ‚ nic przeciwko, jeÅ›li tam wejdÄ™?
+	AI_Output (self, other,"DIA_KalomsGuard_PERM_13_01"); //Okazuj mojemu mistrzowi naleÅ¼yty szacunek, albo nie poÅ¼yjesz dÅ‚ugo!
 	AI_StopProcessInfos	( self );
 };
 

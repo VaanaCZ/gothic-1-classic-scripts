@@ -1,5 +1,5 @@
 //------------------------------------------------------------------
-//PERS÷NLICHE WAFFEN
+//PERS√ñNLICHE WAFFEN
 /***********************************************************/
 //ALTES LAGER
 /***********************************************************/
@@ -158,7 +158,7 @@ INSTANCE Rabenrecht (C_Item)
 //-----------------------------------------------------------
 INSTANCE Prankenhieb (C_Item)
 {
-	name 				=	"Cios ≥apπ";
+	name 				=	"Cios ≈ÇapƒÖ";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;
@@ -188,7 +188,7 @@ INSTANCE Prankenhieb (C_Item)
 //-----------------------------------------------------------
 INSTANCE Diegos_Bogen (C_Item)
 {
-	name 				= "£uk Diego";
+	name 				= "≈Åuk Diego";
 
 	mainflag 			= ITEM_KAT_FF;
 	flags 				= ITEM_BOW;
@@ -217,7 +217,7 @@ INSTANCE Diegos_Bogen (C_Item)
 //-----------------------------------------------------------
 INSTANCE Whistlers_Schwert (C_Item)
 {
-	name 				=	"Miecz åwistaka";
+	name 				=	"Miecz ≈öwistaka";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;
@@ -250,7 +250,7 @@ INSTANCE Whistlers_Schwert (C_Item)
 //-----------------------------------------------------------
 INSTANCE Stab_des_Lichts (C_Item)
 {
-	name 				=	"Kostur åwiat≥a";
+	name 				=	"Kostur ≈öwiat≈Ça";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_AXE;
@@ -370,7 +370,7 @@ INSTANCE Roter_Wind (C_Item)
 //-----------------------------------------------------------
 INSTANCE Namibs_Keule (C_Item)
 {
-	name 				=	"Pa≥ka Namiba";
+	name 				=	"Pa≈Çka Namiba";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_AXE;
@@ -400,7 +400,7 @@ INSTANCE Namibs_Keule (C_Item)
 //-----------------------------------------------------------
 INSTANCE Oruns_Keule (C_Item)
 {
-	name 				=	"Pa≥ka Oruna";
+	name 				=	"Pa≈Çka Oruna";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_AXE;
@@ -430,7 +430,7 @@ INSTANCE Oruns_Keule (C_Item)
 //-----------------------------------------------------------
 INSTANCE Fortunos_Keule (C_Item)
 {
-	name 				=	"Pa≥ka Fortuno";
+	name 				=	"Pa≈Çka Fortuno";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_AXE;
@@ -463,7 +463,7 @@ INSTANCE Fortunos_Keule (C_Item)
 //-----------------------------------------------------------
 INSTANCE Lees_Axt (C_Item)
 {
-	name 				=	"TopÛr Lee";
+	name 				=	"Top√≥r Lee";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_AXE;
@@ -493,7 +493,7 @@ INSTANCE Lees_Axt (C_Item)
 //-----------------------------------------------------------
 INSTANCE Oriks_Axt (C_Item)
 {
-	name 				=	"TopÛr Orika";
+	name 				=	"Top√≥r Orika";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_AXE;
@@ -523,7 +523,7 @@ INSTANCE Oriks_Axt (C_Item)
 //-----------------------------------------------------------
 INSTANCE Torlofs_Axt (C_Item)
 {
-	name 				=	"TopÛr Torlofa";
+	name 				=	"Top√≥r Torlofa";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_AXE;
@@ -613,7 +613,7 @@ INSTANCE Gorns_Rache (C_Item)
 //-----------------------------------------------------------
 INSTANCE Lares_Axt (C_Item)
 {
-	name 				=	"TopÛr Laresa";
+	name 				=	"Top√≥r Laresa";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_AXE;
@@ -643,7 +643,7 @@ INSTANCE Lares_Axt (C_Item)
 //-----------------------------------------------------------
 INSTANCE Wolfs_Bogen (C_Item)
 {
-	name 				=	"£uk Wilka";
+	name 				=	"≈Åuk Wilka";
 
 	mainflag 			=	ITEM_KAT_FF;
 	flags 				=	ITEM_BOW;
@@ -672,7 +672,7 @@ INSTANCE Wolfs_Bogen (C_Item)
 //-----------------------------------------------------------
 INSTANCE Silas_Axt (C_Item)
 {
-	name 				=	"TopÛr Silasa";
+	name 				=	"Top√≥r Silasa";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_AXE;
@@ -702,7 +702,7 @@ INSTANCE Silas_Axt (C_Item)
 //-----------------------------------------------------------
 INSTANCE Heerscherstab (C_Item)
 {
-	name 				=	"Ber≥o";
+	name 				=	"Ber≈Ço";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_AXE;

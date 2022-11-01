@@ -34,7 +34,7 @@ instance DIA_Shrike_Hello (C_INFO)
 	condition		= DIA_Shrike_Hello_Condition;
 	information		= DIA_Shrike_Hello_Info;
 	important		= 0;
-	description		= "Co s³ychaæ?";
+	description		= "Co sÅ‚ychaÄ‡?";
 };
 
 FUNC int  DIA_Shrike_Hello_Condition()
@@ -44,11 +44,11 @@ FUNC int  DIA_Shrike_Hello_Condition()
 
 func void  DIA_Shrike_Hello_Info()
 {
-	AI_Output (other, self,"DIA_Shrike_Hello_15_00"); //Co s³ychaæ?
+	AI_Output (other, self,"DIA_Shrike_Hello_15_00"); //Co sÅ‚ychaÄ‡?
 	AI_Output (self, other,"DIA_Shrike_Hello_07_01"); //Spadaj!
 	
 	
-	//FMTaken = TRUE; 			//******* TEST - Helper für Sld-KdW Aufnahme!!! *********************  
+	//FMTaken = TRUE; 			//******* TEST - Helper fÃ¼r Sld-KdW Aufnahme!!! *********************  
 	//Kapitel = 4;
 
 	
@@ -67,7 +67,7 @@ instance DIA_Shrike_GetLost (C_INFO)
 	condition		= DIA_Shrike_GetLost_Condition;
 	information		= DIA_Shrike_GetLost_Info;
 	important		= 0;
-	description		= "ZejdŸ mi z oczu.";
+	description		= "ZejdÅº mi z oczu.";
 };
 
 FUNC int  DIA_Shrike_GetLost_Condition()
@@ -80,12 +80,12 @@ FUNC int  DIA_Shrike_GetLost_Condition()
 
 func void  DIA_Shrike_GetLost_Info()
 {
-	AI_Output (other, self,"DIA_Shrike_GetLost_15_00"); //ZejdŸ mi z oczu.
+	AI_Output (other, self,"DIA_Shrike_GetLost_15_00"); //ZejdÅº mi z oczu.
 	AI_Output (self, other,"DIA_Shrike_GetLost_07_01"); //Porozmawiamy innym razem!
 
 	Log_CreateTopic		(CH1_ShrikesHut,	LOG_MISSION);
 	Log_SetTopicStatus	(CH1_ShrikesHut,	LOG_RUNNING);
-	B_LogEntry			(CH1_ShrikesHut,"Uda³o mi siê przekonaæ Krzykacza, ¿eby poszuka³ sobie innej chaty. Ciekawe, co teraz powie mi Gorn.");
+	B_LogEntry			(CH1_ShrikesHut,"UdaÅ‚o mi siÄ™ przekonaÄ‡ Krzykacza, Å¼eby poszukaÅ‚ sobie innej chaty. Ciekawe, co teraz powie mi Gorn.");
 	B_GiveXP			(XP_KickedShrike);
 
 	AI_StopProcessInfos	(self);	

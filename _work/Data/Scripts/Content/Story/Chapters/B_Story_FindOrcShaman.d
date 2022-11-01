@@ -3,14 +3,14 @@
 //*****************************************************************************
 func void B_Story_FindOrcShaman()
 {
-	//-------- Missionsgegenstände --------
+	//-------- MissionsgegenstÃ¤nde --------
 	
-	//-------- Tagebucheinträge --------
-	B_LogEntry			(CH4_FindXardas,"Nareszcie spotka³em Xardasa Nekromantê! Nasza rozmowa okaza³a siê niezwykle interesuj¹ca - Xardas wyra¿a siê sceptycznie o szansach powodzenia przedsiêwziêcia Nowego Obozu. Za to opowiedzia³ mi pierwsz¹ czêœæ historii zwi¹zanej ze Œni¹cym. Nie bardzo wiem, co mam powiedzieæ Saturasowi...");
+	//-------- TagebucheintrÃ¤ge --------
+	B_LogEntry			(CH4_FindXardas,"Nareszcie spotkaÅ‚em Xardasa NekromantÄ™! Nasza rozmowa okazaÅ‚a siÄ™ niezwykle interesujÄ…ca - Xardas wyraÅ¼a siÄ™ sceptycznie o szansach powodzenia przedsiÄ™wziÄ™cia Nowego Obozu. Za to opowiedziaÅ‚ mi pierwszÄ… czÄ™Å›Ä‡ historii zwiÄ…zanej ze ÅšniÄ…cym. Nie bardzo wiem, co mam powiedzieÄ‡ Saturasowi...");
 
 	Log_CreateTopic		(CH4_FindOrcShaman,	LOG_MISSION);
 	Log_SetTopicStatus	(CH4_FindOrcShaman,	LOG_RUNNING);
-	B_LogEntry			(CH4_FindOrcShaman,"Xardas postanowi³ jeszcze raz mnie wypróbowaæ. Aby poznaæ drug¹ czêœæ dziejów Œni¹cego, mam odnaleŸæ wypêdzonego szamana orków, ukrywaj¹cego siê w ruinach zamku, tu¿ obok szczytu, na którym wznosi siê wie¿a Nekromanty. Nie wiem tylko, jak mogê sk³oniæ potê¿nego nieprzyjaciela do rozmowy. Mo¿e wymyœlê coœ po drodze.");
+	B_LogEntry			(CH4_FindOrcShaman,"Xardas postanowiÅ‚ jeszcze raz mnie wyprÃ³bowaÄ‡. Aby poznaÄ‡ drugÄ… czÄ™Å›Ä‡ dziejÃ³w ÅšniÄ…cego, mam odnaleÅºÄ‡ wypÄ™dzonego szamana orkÃ³w, ukrywajÄ…cego siÄ™ w ruinach zamku, tuÅ¼ obok szczytu, na ktÃ³rym wznosi siÄ™ wieÅ¼a Nekromanty. Nie wiem tylko, jak mogÄ™ skÅ‚oniÄ‡ potÄ™Å¼nego nieprzyjaciela do rozmowy. MoÅ¼e wymyÅ›lÄ™ coÅ› po drodze.");
 	
 		
 	//-------- NSCs einsetzen --------

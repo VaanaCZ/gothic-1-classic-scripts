@@ -1,5 +1,5 @@
 /*******************************************************************************************
-**	Rüstungswert-Multiplikator	                                         				  **
+**	RÃ¼stungswert-Multiplikator	                                         				  **
 *******************************************************************************************/
 const int	ARMOR_VALUE_MULTIPLIER	= 30;	// wird mit Schutzwert gegen EDGE-Schaden multipliziert
 
@@ -114,7 +114,7 @@ INSTANCE VLK_ARMOR_M(C_Item)
 
 INSTANCE STT_ARMOR_M(C_Item)
 {
-	name 					=	"Strój Cienia";
+	name 					=	"StrÃ³j Cienia";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -180,7 +180,7 @@ INSTANCE STT_ARMOR_H(C_Item)
 
 INSTANCE GRD_ARMOR_L(C_Item)
 {
-	name 					=	"Lekka zbroja Stra¿nika";
+	name 					=	"Lekka zbroja StraÅ¼nika";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -212,7 +212,7 @@ INSTANCE GRD_ARMOR_L(C_Item)
 /******************************************************************************************/
 INSTANCE GRD_ARMOR_M(C_Item)
 {
-	name 					=	"Zbroja Stra¿nika";
+	name 					=	"Zbroja StraÅ¼nika";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -244,7 +244,7 @@ INSTANCE GRD_ARMOR_M(C_Item)
 /******************************************************************************************/
 INSTANCE GRD_ARMOR_H(C_Item)
 {
-	name 					=	"Ciê¿ka zbroja Stra¿nika";
+	name 					=	"CiÄ™Å¼ka zbroja StraÅ¼nika";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -347,7 +347,7 @@ INSTANCE EBR_ARMOR_H(C_Item)
 /******************************************************************************************/
 INSTANCE EBR_ARMOR_H2(C_Item)
 {
-	name 					=	"Ciê¿ki pancerz Magnata";
+	name 					=	"CiÄ™Å¼ki pancerz Magnata";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -383,11 +383,11 @@ INSTANCE EBR_ARMOR_H2(C_Item)
 *******************************************************************************************/
 
 /******************************************************************************************/
-// Schürferbund
+// SchÃ¼rferbund
 
 instance SFB_ARMOR_L(C_Item)
 {
-	name 					=	"Strój Kopacza";
+	name 					=	"StrÃ³j Kopacza";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -421,7 +421,7 @@ instance SFB_ARMOR_L(C_Item)
 
 INSTANCE ORG_ARMOR_L(C_Item)
 {
-	name 					=	"Lekki strój Szkodnika";
+	name 					=	"Lekki strÃ³j Szkodnika";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -453,7 +453,7 @@ INSTANCE ORG_ARMOR_L(C_Item)
 /******************************************************************************************/
 INSTANCE ORG_ARMOR_M(C_Item)
 {
-	name 					=	"Strój Szkodnika";
+	name 					=	"StrÃ³j Szkodnika";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -485,7 +485,7 @@ INSTANCE ORG_ARMOR_M(C_Item)
 /******************************************************************************************/
 INSTANCE ORG_ARMOR_H(C_Item)
 {
-	name 					=	"Ciê¿ki strój Szkodnika";
+	name 					=	"CiÄ™Å¼ki strÃ³j Szkodnika";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -581,7 +581,7 @@ instance SLD_ARMOR_M(C_Item)
 /******************************************************************************************/
 INSTANCE SLD_ARMOR_H(C_Item)
 {
-	name 					=	"Ciê¿ka zbroja Najemnika";
+	name 					=	"CiÄ™Å¼ka zbroja Najemnika";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -718,7 +718,7 @@ INSTANCE NOV_ARMOR_H(C_Item)
 
 INSTANCE TPL_ARMOR_L(C_Item)
 {
-	name 					=	"Lekka zbroja Œwi¹tynna";
+	name 					=	"Lekka zbroja ÅšwiÄ…tynna";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -750,7 +750,7 @@ INSTANCE TPL_ARMOR_L(C_Item)
 /******************************************************************************************/
 INSTANCE TPL_ARMOR_M(C_Item)
 {
-	name 					=	"Zbroja Œwi¹tynna";
+	name 					=	"Zbroja ÅšwiÄ…tynna";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -782,7 +782,7 @@ INSTANCE TPL_ARMOR_M(C_Item)
 /******************************************************************************************/
 INSTANCE TPL_ARMOR_H(C_Item)
 {
-	name 					=	"Ciê¿ka zbroja Œwi¹tynna";
+	name 					=	"CiÄ™Å¼ka zbroja ÅšwiÄ…tynna";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -1013,7 +1013,7 @@ INSTANCE KDW_ARMOR_H(C_Item)
 };
 
 /******************************************************************************************/
-// Dämonenbeschwörer
+// DÃ¤monenbeschwÃ¶rer
 
 INSTANCE DMB_ARMOR_M(C_Item)
 {
@@ -1051,15 +1051,15 @@ INSTANCE DMB_ARMOR_M(C_Item)
 
 
 /*******************************************************************************************
-**	Spezial-Rüstungen                                                                     **
+**	Spezial-RÃ¼stungen                                                                     **
 *******************************************************************************************/
 
-// FIXME: hier fehlen noch die Visuals für die Erz-Rüstungen und das INV-Item für die CRAWLERPLATTEN-RÜSTUNG 
+// FIXME: hier fehlen noch die Visuals fÃ¼r die Erz-RÃ¼stungen und das INV-Item fÃ¼r die CRAWLERPLATTEN-RÃœSTUNG 
 
-// Crawler-Plattenrüstung
+// Crawler-PlattenrÃ¼stung
 INSTANCE CRW_ARMOR_H(C_Item)
 {
-	name 					=	"Zbroja z pancerzy pe³zaczy";
+	name 					=	"Zbroja z pancerzy peÅ‚zaczy";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -1090,10 +1090,10 @@ INSTANCE CRW_ARMOR_H(C_Item)
 
 
 /******************************************************************************************/
-// Erz-Rüstungen
+// Erz-RÃ¼stungen
 INSTANCE ORE_ARMOR_M(C_Item)
 {
-	name 					=	"Staro¿ytna zbroja magiczna";
+	name 					=	"StaroÅ¼ytna zbroja magiczna";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -1114,7 +1114,7 @@ INSTANCE ORE_ARMOR_M(C_Item)
 	material 				=	MAT_WOOD;
 
 	description				=	name;
-	TEXT[0]					=	"Tê staro¿ytn¹ zbrojê wykonano z magicznej rudy.";
+	TEXT[0]					=	"TÄ™ staroÅ¼ytnÄ… zbrojÄ™ wykonano z magicznej rudy.";
 	TEXT[1]					=	NAME_Prot_Edge;			COUNT[1]	= protection	[PROT_EDGE];
 	TEXT[2]					=	NAME_Prot_Point;		COUNT[2]	= protection	[PROT_POINT];
 	TEXT[3] 				=	NAME_Prot_Fire;			COUNT[3]	= protection	[PROT_FIRE];
@@ -1145,7 +1145,7 @@ INSTANCE ORE_ARMOR_H(C_Item)
 	material 				=	MAT_WOOD;
 
 	description				=	name;
-	TEXT[0]					=	"Kowal Stone jeszcze j¹ ulepszy³!";
+	TEXT[0]					=	"Kowal Stone jeszcze jÄ… ulepszyÅ‚!";
 	TEXT[1]					=	NAME_Prot_Edge;			COUNT[1]	= protection	[PROT_EDGE];
 	TEXT[2]					=	NAME_Prot_Point;		COUNT[2]	= protection	[PROT_POINT];
 	TEXT[3] 				=	NAME_Prot_Fire;			COUNT[3]	= protection	[PROT_FIRE];
@@ -1161,7 +1161,7 @@ INSTANCE ORE_ARMOR_H(C_Item)
 *******************************************************************************************/
 INSTANCE LAW_ARMOR (C_Item)
 {
-	name 					=	"Szata sêdziego";
+	name 					=	"Szata sÄ™dziego";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -1197,11 +1197,11 @@ INSTANCE LAW_ARMOR (C_Item)
 
 
 /*******************************************************************************************
-**	Wache für Intro-Cutscene                                                          **
+**	Wache fÃ¼r Intro-Cutscene                                                          **
 *******************************************************************************************/
 INSTANCE GRD_ARMOR_I(C_Item)
 {
-	name 					=	"Pancerz Stra¿y Królewskiej";
+	name 					=	"Pancerz StraÅ¼y KrÃ³lewskiej";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -1238,7 +1238,7 @@ INSTANCE GRD_ARMOR_I(C_Item)
 *******************************************************************************************/
 INSTANCE BAB_ARMOR_NUDE (C_Item)
 {
-	name 					=	"Go³a babka";
+	name 					=	"GoÅ‚a babka";
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
 	value 					=	1;

@@ -33,7 +33,7 @@ instance   VLK_583_Glen_INFO(C_INFO)
 	information		= VLK_583_Glen_INFO_Info;
 	important		= 0;
 	permanent		= 1;
-	description		= "O czym powinienem pamiêtaæ, bêd¹c w kopalni?"; 
+	description		= "O czym powinienem pamiÄ™taÄ‡, bÄ™dÄ…c w kopalni?"; 
 };
 
 FUNC int  VLK_583_Glen_INFO_Condition()
@@ -44,11 +44,11 @@ FUNC int  VLK_583_Glen_INFO_Condition()
 
 FUNC void  VLK_583_Glen_INFO_Info()
 {
-	AI_Output (other, self,"VLK_583_Glen_INFO_Info_15_01"); //O czym powinienem pamiêtaæ, bêd¹c w kopalni?
-	AI_Output (self, other,"VLK_583_Glen_INFO_Info_02_02"); //Uwa¿aj na pe³zacze.
-	AI_Output (self, other,"VLK_583_Glen_INFO_Info_02_03"); //Im ni¿ej zejdziesz, tym czêœciej mo¿esz na nie wpaœæ. Te przeklête stwory przychodz¹ chyba wprost z królestwa samego Beliara!
-	AI_Output (self, other,"VLK_583_Glen_INFO_Info_02_04"); //Bez przerwy s³ychaæ, jak grzebi¹ i kopi¹. Siedz¹ w ciemnoœci i czekaj¹ na jakiegoœ biednego górnika, z którego zrobi¹ sobie obiad.
-	AI_Output (self, other,"VLK_583_Glen_INFO_Info_02_05"); //S¹ bezlitosne i bardzo szybkie. Jeœli ci ¿ycie mi³e, uciekaj st¹d ile si³ w nogach. Prêdzej czy póŸniej padnie i na ciebie.
+	AI_Output (other, self,"VLK_583_Glen_INFO_Info_15_01"); //O czym powinienem pamiÄ™taÄ‡, bÄ™dÄ…c w kopalni?
+	AI_Output (self, other,"VLK_583_Glen_INFO_Info_02_02"); //UwaÅ¼aj na peÅ‚zacze.
+	AI_Output (self, other,"VLK_583_Glen_INFO_Info_02_03"); //Im niÅ¼ej zejdziesz, tym czÄ™Å›ciej moÅ¼esz na nie wpaÅ›Ä‡. Te przeklÄ™te stwory przychodzÄ… chyba wprost z krÃ³lestwa samego Beliara!
+	AI_Output (self, other,"VLK_583_Glen_INFO_Info_02_04"); //Bez przerwy sÅ‚ychaÄ‡, jak grzebiÄ… i kopiÄ…. SiedzÄ… w ciemnoÅ›ci i czekajÄ… na jakiegoÅ› biednego gÃ³rnika, z ktÃ³rego zrobiÄ… sobie obiad.
+	AI_Output (self, other,"VLK_583_Glen_INFO_Info_02_05"); //SÄ… bezlitosne i bardzo szybkie. JeÅ›li ci Å¼ycie miÅ‚e, uciekaj stÄ…d ile siÅ‚ w nogach. PrÄ™dzej czy pÃ³Åºniej padnie i na ciebie.
 };  
 // ***************** Infos *****************************
 
@@ -59,7 +59,7 @@ instance  VLK_583_Glen_LOCKPICK (C_INFO)
 	information	=  VLK_583_Glen_LOCKPICK_Info;
 	important	= 0;	
 	permanent	= 0;
-	description = "S³ysza³em, ¿e mo¿na tu kupiæ wytrychy?";
+	description = "SÅ‚yszaÅ‚em, Å¼e moÅ¼na tu kupiÄ‡ wytrychy?";
 };                       
 
 FUNC int  VLK_583_Glen_LOCKPICK_Condition()
@@ -72,8 +72,8 @@ FUNC int  VLK_583_Glen_LOCKPICK_Condition()
 
 FUNC VOID  VLK_583_Glen_LOCKPICK_Info()
 {
-	AI_Output (other, self,"VLK_583_Glen_LOCKPICK_15_01"); //S³ysza³em, ¿e mo¿na tu kupiæ wytrychy?
-	AI_Output (self, other,"VLK_583_Glen_LOCKPICK_02_02"); //Skoro okaza³eœ siê na tyle sprytny, ¿eby do mnie dotrzeæ, mo¿esz kilka kupiæ. To bêdzie 10 bry³ek rudy za sztukê.
+	AI_Output (other, self,"VLK_583_Glen_LOCKPICK_15_01"); //SÅ‚yszaÅ‚em, Å¼e moÅ¼na tu kupiÄ‡ wytrychy?
+	AI_Output (self, other,"VLK_583_Glen_LOCKPICK_02_02"); //Skoro okazaÅ‚eÅ› siÄ™ na tyle sprytny, Å¼eby do mnie dotrzeÄ‡, moÅ¼esz kilka kupiÄ‡. To bÄ™dzie 10 bryÅ‚ek rudy za sztukÄ™.
 	
 	
 };
@@ -99,7 +99,7 @@ FUNC int  VLK_583_Glen_BUY_Condition()
 };
 FUNC VOID  VLK_583_Glen_BUY_Info()
 {
-	AI_Output (other, self,"VLK_583_Glen_BUY_Info_15_01"); //Chcê kupiæ kilka wytrychów.
+	AI_Output (other, self,"VLK_583_Glen_BUY_Info_15_01"); //ChcÄ™ kupiÄ‡ kilka wytrychÃ³w.
 	
 	
 	

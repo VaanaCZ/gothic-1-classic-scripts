@@ -44,8 +44,8 @@ FUNC INT DIA_Vlk_534_LeaveMe_Condition()
 FUNC VOID DIA_Vlk_534_LeaveMe_Info()
 {
 	AI_Output (other, self,"DIA_Vlk_534_LeaveMe_15_00"); //Dlaczego siedzisz tutaj, a nie w Obozie?
-	AI_Output (self, other,"DIA_Vlk_534_LeaveMe_02_01"); //Czekam, a¿ mój przyjaciel wróci z kopalni. Jest mi winien parê bry³ek rudy.
-	AI_Output (self, other,"DIA_Vlk_534_LeaveMe_02_02"); //Nie mogê siê pokazaæ w Obozie bez rudy - nie staæ mnie na zap³acenie za ochronê, a wolê nie ryzykowaæ ¿yciem.
+	AI_Output (self, other,"DIA_Vlk_534_LeaveMe_02_01"); //Czekam, aÅ¼ mÃ³j przyjaciel wrÃ³ci z kopalni. Jest mi winien parÄ™ bryÅ‚ek rudy.
+	AI_Output (self, other,"DIA_Vlk_534_LeaveMe_02_02"); //Nie mogÄ™ siÄ™ pokazaÄ‡ w Obozie bez rudy - nie staÄ‡ mnie na zapÅ‚acenie za ochronÄ™, a wolÄ™ nie ryzykowaÄ‡ Å¼yciem.
 
 	AI_StopProcessInfos	(self);
 };

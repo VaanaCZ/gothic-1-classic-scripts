@@ -26,7 +26,7 @@ instance MENU_LOG(C_MENU_DEF)
 };
 
 //
-// Menüpunkte
+// MenÃ¼punkte
 //
 
 const int LOG_ITEM_X1 	= 1200;
@@ -39,7 +39,7 @@ const int LOG_ITEM_LIST_WIDTH	= 4500;
 
 INSTANCE MENU_ITEM_SEL_MISSIONS_ACT(C_MENU_ITEM_DEF)
 {
-	text[0]		=	"Bie¿¹ce\nMisje";
+	text[0]		=	"BieÅ¼Ä…ce\nMisje";
 	posx		=	LOG_ITEM_X1;
 	posy		=   	1500;
 	dimx 		= 	LOG_ITEM_DX1;
@@ -53,7 +53,7 @@ INSTANCE MENU_ITEM_SEL_MISSIONS_ACT(C_MENU_ITEM_DEF)
 
 INSTANCE MENU_ITEM_SEL_MISSIONS_OLD(C_MENU_ITEM_DEF)
 {
-	text[0]		=	"Zakoñczone\nMisje";
+	text[0]		=	"ZakoÅ„czone\nMisje";
 	
 	posx		=	LOG_ITEM_X1;
 	posy		=   	2500;
@@ -85,7 +85,7 @@ INSTANCE MENU_ITEM_SEL_MISSIONS_FAILED(C_MENU_ITEM_DEF)
 
 INSTANCE MENU_ITEM_SEL_LOG(C_MENU_ITEM_DEF)
 {
-	text[0]		=	"Informacje\nOgólne";
+	text[0]		=	"Informacje\nOgÃ³lne";
 	
 	posx		=	LOG_ITEM_X1;
 	posy		=   	4500;
@@ -106,7 +106,7 @@ INSTANCE MENU_ITEM_SEL_LOG(C_MENU_ITEM_DEF)
 instance MENU_ITEM_LIST_MISSIONS_ACT(C_MENU_ITEM_DEF)
 {
 	type		= 	MENU_ITEM_LISTBOX;	
-	text[0]		= 	"Bie¿¹ce misje";
+	text[0]		= 	"BieÅ¼Ä…ce misje";
 	
 	posx		=	LOG_ITEM_LIST_X;
 	posy		=   LOG_ITEM_LIST_Y;
@@ -189,7 +189,7 @@ instance MENU_ITEM_LIST_LOG(C_MENU_ITEM_DEF)
 
 INSTANCE MENU_ITEM_CONTENT_VIEWER(C_MENU_ITEM_DEF)
 {
-	text[0]		=	"brak zawartoœci";
+	text[0]		=	"brak zawartoÅ›ci";
 	
 	posx		=	0;
 	posy		=   0;	
@@ -208,7 +208,7 @@ INSTANCE MENU_ITEM_CONTENT_VIEWER(C_MENU_ITEM_DEF)
 
 INSTANCE MENU_ITEM_DAY_TITLE(C_MENU_ITEM_DEF)
 {
-	text[0]		= 	"Dzieñ";
+	text[0]		= 	"DzieÅ„";
 	posx 		= 	1800; // see dimx of MENU_ITEM_DAY!!
 	posy		= 	6000;
 	fontName	=	LOG_FONT_DATETIME;

@@ -43,7 +43,7 @@ FUNC int  DIA_Bullit_First_Condition()
 
 FUNC VOID  DIA_Bullit_First_Info()
 {
-	AI_Output (self, other,"DIA_Bullit_First_06_00"); //Kogo my tu mamy? Czy to nie ta ofiara, któr¹ ochrzci³em wczeœniej? Czego chcesz? Przyszed³eœ po repetê?
+	AI_Output (self, other,"DIA_Bullit_First_06_00"); //Kogo my tu mamy? Czy to nie ta ofiara, ktÃ³rÄ… ochrzciÅ‚em wczeÅ›niej? Czego chcesz? PrzyszedÅ‚eÅ› po repetÄ™?
 };
 
 //******************************************
@@ -57,7 +57,7 @@ instance  DIA_Bullit_AufsMAul (C_INFO)
 	condition	= DIA_Bullit_AufsMAul_Condition;
 	information	= DIA_Bullit_AufsMAul_Info;
 	permanent	= 0;
-	description = "Przyszed³em pogruchotaæ ci szczêkê.";
+	description = "PrzyszedÅ‚em pogruchotaÄ‡ ci szczÄ™kÄ™.";
 };                       
 
 FUNC int  DIA_Bullit_AufsMAul_Condition()
@@ -67,8 +67,8 @@ FUNC int  DIA_Bullit_AufsMAul_Condition()
 
 FUNC VOID  DIA_Bullit_AufsMAul_Info()
 {
-	AI_Output (other, self,"DIA_Bullit_AufsMAul_15_00"); //Przyszed³em pogruchotaæ ci szczêkê.
-	AI_Output (self, other,"DIA_Bullit_AufsMAul_06_01"); //Ha! No to chodŸ tutaj i spróbuj szczêœcia, synku!
+	AI_Output (other, self,"DIA_Bullit_AufsMAul_15_00"); //PrzyszedÅ‚em pogruchotaÄ‡ ci szczÄ™kÄ™.
+	AI_Output (self, other,"DIA_Bullit_AufsMAul_06_01"); //Ha! No to chodÅº tutaj i sprÃ³buj szczÄ™Å›cia, synku!
 	
 	Npc_SetAttitude 		( self, ATT_HOSTILE );
 	Npc_SetTempAttitude 	( self, ATT_HOSTILE );
@@ -102,9 +102,9 @@ FUNC int  DIA_GRD_203_Bullit_Wait4SC_Condition()
 
 func void  DIA_GRD_203_Bullit_Wait4SC_Info()
 {
-	AI_Output (self, other,"DIA_GRD_203_Bullit_Wait4SC_06_01"); //Znowu ty?! Powinienem ciê utopiæ w jeziorze podczas naszego pierwszego spotkania!
-	AI_Output (other, self,"DIA_GRD_203_Bullit_Wait4SC_15_02"); //Wtedy nie mia³em szans - teraz karta siê odwróci³a.
-	AI_Output (self, other,"DIA_GRD_203_Bullit_Wait4SC_06_03"); //Ty gnido! Mam tylko nadziejê, ¿e bêdziesz trudniejszym przeciwnikiem ni¿ ostatnio!
+	AI_Output (self, other,"DIA_GRD_203_Bullit_Wait4SC_06_01"); //Znowu ty?! Powinienem ciÄ™ utopiÄ‡ w jeziorze podczas naszego pierwszego spotkania!
+	AI_Output (other, self,"DIA_GRD_203_Bullit_Wait4SC_15_02"); //Wtedy nie miaÅ‚em szans - teraz karta siÄ™ odwrÃ³ciÅ‚a.
+	AI_Output (self, other,"DIA_GRD_203_Bullit_Wait4SC_06_03"); //Ty gnido! Mam tylko nadziejÄ™, Å¼e bÄ™dziesz trudniejszym przeciwnikiem niÅ¼ ostatnio!
 		
 	AI_StopProcessInfos	( self );
 

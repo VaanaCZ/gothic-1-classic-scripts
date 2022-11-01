@@ -25,10 +25,10 @@ FUNC INT Info_Diego_Gamestart_Condition()
 
 FUNC VOID Info_Diego_Gamestart_Info()
 {
-	AI_Output(self,hero,"Info_Diego_Gamestart_11_00"); //Nazywam siê Diego.
+	AI_Output(self,hero,"Info_Diego_Gamestart_11_00"); //Nazywam siÄ™ Diego.
 	AI_Output(hero,self,"Info_Diego_Gamestart_15_01"); //Jestem...
-	AI_Output(self,hero,"Info_Diego_Gamestart_11_02"); //Nie interesuje mnie kim jesteœ. Jesteœ tu nowy - a do mnie nale¿y dbanie o nowych. Na razie to tyle...
-	AI_Output(self,hero,"Info_Diego_Gamestart_11_03"); //Jeœli chcesz jeszcze trochê po¿yæ, s³uchaj siê mnie, ale oczywiœcie nie bêdê ci przeszkadza³ w ewentualnej próbie samobójstwa. To jak bêdzie?
+	AI_Output(self,hero,"Info_Diego_Gamestart_11_02"); //Nie interesuje mnie kim jesteÅ›. JesteÅ› tu nowy - a do mnie naleÅ¼y dbanie o nowych. Na razie to tyle...
+	AI_Output(self,hero,"Info_Diego_Gamestart_11_03"); //JeÅ›li chcesz jeszcze trochÄ™ poÅ¼yÄ‡, sÅ‚uchaj siÄ™ mnie, ale oczywiÅ›cie nie bÄ™dÄ™ ci przeszkadzaÅ‚ w ewentualnej prÃ³bie samobÃ³jstwa. To jak bÄ™dzie?
 	
 	B_Kapitelwechsel(1); //WICHTIG!!!
 };
@@ -54,15 +54,15 @@ FUNC INT Info_Diego_EXIT_Gamestart_Condition()
 
 FUNC VOID Info_Diego_EXIT_Gamestart_Info()
 {
-	AI_Output(hero,self,"Info_Diego_EXIT_Gamestart_15_00"); //Dziêki za pomoc.
+	AI_Output(hero,self,"Info_Diego_EXIT_Gamestart_15_00"); //DziÄ™ki za pomoc.
 	
 	if (!Npc_KnowsInfo (hero, Info_Diego_Kolonie)) 
 	{
-		AI_Output(self,hero,"Info_Diego_EXIT_Gamestart_11_01"); //Jak sobie chcesz. Mi³o by³o ciê poznaæ.
+		AI_Output(self,hero,"Info_Diego_EXIT_Gamestart_11_01"); //Jak sobie chcesz. MiÅ‚o byÅ‚o ciÄ™ poznaÄ‡.
 	}
 	else
 	{
-		AI_Output(self,hero,"Info_Diego_EXIT_Gamestart_11_02"); //Spotkamy siê w Starym Obozie.
+		AI_Output(self,hero,"Info_Diego_EXIT_Gamestart_11_02"); //Spotkamy siÄ™ w Starym Obozie.
 	};
 
 	AI_StopProcessInfos	(self);
@@ -98,11 +98,11 @@ FUNC VOID Info_Diego_EXIT_Later_Info()
 {	
 	if (self.aivar[AIV_PARTYMEMBER])
 	{
-		AI_Output 	(self, hero,"Info_Diego_EXIT_11_01"); //ChodŸmy.
+		AI_Output 	(self, hero,"Info_Diego_EXIT_11_01"); //ChodÅºmy.
 	}
 	else
 	{
-	 	AI_Output	(hero,self,"Info_Diego_EXIT_15_00"); //Trzymaj siê.
+	 	AI_Output	(hero,self,"Info_Diego_EXIT_15_00"); //Trzymaj siÄ™.
 	};
 	
 	AI_StopProcessInfos	(self);
@@ -119,7 +119,7 @@ INSTANCE Info_Diego_Brief (C_INFO) // E1
 	condition	= Info_Diego_Brief_Condition;
 	information	= Info_Diego_Brief_Info;
 	permanent	= 0;
-	description = "Mam list do przywódcy Magów Ognia.";
+	description = "Mam list do przywÃ³dcy MagÃ³w Ognia.";
 };                       
 
 FUNC INT Info_Diego_Brief_Condition()
@@ -132,14 +132,14 @@ FUNC INT Info_Diego_Brief_Condition()
 
 FUNC VOID Info_Diego_Brief_Info()
 {
-	AI_Output(hero,self,"Info_Diego_Brief_15_00"); //Mam list do Arcymistrza Magów Ognia.
-	AI_Output(self,hero,"Info_Diego_Brief_11_01"); //Czy¿by...?
-	AI_Output(hero,self,"Info_Diego_Brief_15_02"); //Jakiœ mag da³ mi go zanim mnie tu wrzucono.
-	AI_Output(self,hero,"Info_Diego_Brief_11_03"); //Twoje szczêœcie, ¿e nie mogê siê wiêcej pokazywaæ u magów. Ktoœ inny móg³by ci poder¿n¹æ gard³o za taki list.
-	AI_Output(self,hero,"Info_Diego_Brief_11_04"); //A to dlatego, ¿e magowie hojnie op³acaj¹ swoich kurierów, a wiêkszoœæ z tutejszych ludzi nic nie posiada.
-	AI_Output(self,hero,"Info_Diego_Brief_11_05"); //Na twoim miejscu trzyma³bym jêzyk za zêbami a¿ do chwili, gdy spotkasz któregoœ z magów. Chocia¿ w¹tpiê, ¿eby ci siê uda³o.
+	AI_Output(hero,self,"Info_Diego_Brief_15_00"); //Mam list do Arcymistrza MagÃ³w Ognia.
+	AI_Output(self,hero,"Info_Diego_Brief_11_01"); //CzyÅ¼by...?
+	AI_Output(hero,self,"Info_Diego_Brief_15_02"); //JakiÅ› mag daÅ‚ mi go zanim mnie tu wrzucono.
+	AI_Output(self,hero,"Info_Diego_Brief_11_03"); //Twoje szczÄ™Å›cie, Å¼e nie mogÄ™ siÄ™ wiÄ™cej pokazywaÄ‡ u magÃ³w. KtoÅ› inny mÃ³gÅ‚by ci poderÅ¼nÄ…Ä‡ gardÅ‚o za taki list.
+	AI_Output(self,hero,"Info_Diego_Brief_11_04"); //A to dlatego, Å¼e magowie hojnie opÅ‚acajÄ… swoich kurierÃ³w, a wiÄ™kszoÅ›Ä‡ z tutejszych ludzi nic nie posiada.
+	AI_Output(self,hero,"Info_Diego_Brief_11_05"); //Na twoim miejscu trzymaÅ‚bym jÄ™zyk za zÄ™bami aÅ¼ do chwili, gdy spotkasz ktÃ³regoÅ› z magÃ³w. ChociaÅ¼ wÄ…tpiÄ™, Å¼eby ci siÄ™ udaÅ‚o.
 	AI_Output(hero,self,"Info_Diego_Brief_15_06");	//Dlaczego?
-	AI_Output(self,hero,"Info_Diego_Brief_11_07"); //Magowie mieszkaj¹ w zamku, w Starym Obozie. Tylko ludzie Gomeza maj¹ tam wstêp.
+	AI_Output(self,hero,"Info_Diego_Brief_11_07"); //Magowie mieszkajÄ… w zamku, w Starym Obozie. Tylko ludzie Gomeza majÄ… tam wstÄ™p.
 };
 
 // **********************************************************
@@ -153,7 +153,7 @@ INSTANCE Info_Diego_WarumGeholfen (C_INFO) // E1
 	condition	= Info_Diego_WarumGeholfen_Condition;
 	information	= Info_Diego_WarumGeholfen_Info;
 	permanent	= 0;
-	description = "Dlaczego mi pomog³eœ?";
+	description = "Dlaczego mi pomogÅ‚eÅ›?";
 };                       
 
 FUNC INT Info_Diego_WarumGeholfen_Condition()
@@ -167,13 +167,13 @@ FUNC INT Info_Diego_WarumGeholfen_Condition()
 
 FUNC VOID Info_Diego_WarumGeholfen_Info()
 {
-	AI_Output(hero,self,"Info_Diego_WarumGeholfen_15_00"); //Dlaczego mi pomog³eœ?
-	AI_Output(self,hero,"Info_Diego_WarumGeholfen_11_01"); //Bo potrzebowa³eœ pomocy. Gdyby nie ja, Bullit i jego ch³opcy mogliby ciê wykoñczyæ.
-	AI_Output(self,hero,"Info_Diego_WarumGeholfen_11_02"); //A ja jestem zbyt mi³y, ¿eby siê temu spokojnie przygl¹daæ. W koñcu przeby³em ca³¹ tê drogê po to, by z³o¿yæ ci propozycjê.
-	AI_Output(hero,self,"Info_Diego_WarumGeholfen_15_03"); //Propozycjê...
-	AI_Output(self,hero,"Info_Diego_WarumGeholfen_11_04"); //Tak. Po tym zajœciu z Bullitem i jego ludŸmi powinieneœ siê domyœliæ, ¿e przyda ci siê ochrona.
-	AI_Output(self,hero,"Info_Diego_WarumGeholfen_11_05"); //Ka¿dy, kto tu trafia ma wybór. W kolonii s¹ trzy obozy i w koñcu bêdziesz musia³ do któregoœ do³¹czyæ. 
-	AI_Output(self,hero,"Info_Diego_WarumGeholfen_11_06"); //Jestem tu, by udowodniæ wszystkim nowym, ¿e najlepszym miejscem dla nich bêdzie Stary Obóz.
+	AI_Output(hero,self,"Info_Diego_WarumGeholfen_15_00"); //Dlaczego mi pomogÅ‚eÅ›?
+	AI_Output(self,hero,"Info_Diego_WarumGeholfen_11_01"); //Bo potrzebowaÅ‚eÅ› pomocy. Gdyby nie ja, Bullit i jego chÅ‚opcy mogliby ciÄ™ wykoÅ„czyÄ‡.
+	AI_Output(self,hero,"Info_Diego_WarumGeholfen_11_02"); //A ja jestem zbyt miÅ‚y, Å¼eby siÄ™ temu spokojnie przyglÄ…daÄ‡. W koÅ„cu przebyÅ‚em caÅ‚Ä… tÄ™ drogÄ™ po to, by zÅ‚oÅ¼yÄ‡ ci propozycjÄ™.
+	AI_Output(hero,self,"Info_Diego_WarumGeholfen_15_03"); //PropozycjÄ™...
+	AI_Output(self,hero,"Info_Diego_WarumGeholfen_11_04"); //Tak. Po tym zajÅ›ciu z Bullitem i jego ludÅºmi powinieneÅ› siÄ™ domyÅ›liÄ‡, Å¼e przyda ci siÄ™ ochrona.
+	AI_Output(self,hero,"Info_Diego_WarumGeholfen_11_05"); //KaÅ¼dy, kto tu trafia ma wybÃ³r. W kolonii sÄ… trzy obozy i w koÅ„cu bÄ™dziesz musiaÅ‚ do ktÃ³regoÅ› doÅ‚Ä…czyÄ‡. 
+	AI_Output(self,hero,"Info_Diego_WarumGeholfen_11_06"); //Jestem tu, by udowodniÄ‡ wszystkim nowym, Å¼e najlepszym miejscem dla nich bÄ™dzie Stary ObÃ³z.
 };
 
 // -------------------------------------------------------------
@@ -199,8 +199,8 @@ FUNC INT Info_Diego_Bullit_Condition()
 FUNC VOID Info_Diego_Bullit_Info()
 {
 	AI_Output(hero,self,"Info_Diego_Bullit_15_02"); //A gdzie jest teraz Bullit?
-	AI_Output(self,hero,"Info_Diego_Bullit_11_03"); //On i pozostali przenosz¹ towary z zewn¹trz do Obozu. Tam go znajdziesz.
-	AI_Output(self,hero,"Info_Diego_Bullit_11_04"); //Ale jeœli chcesz z nim walczyæ, radzê ci uwa¿aæ. To doœwiadczony wojownik.
+	AI_Output(self,hero,"Info_Diego_Bullit_11_03"); //On i pozostali przenoszÄ… towary z zewnÄ…trz do Obozu. Tam go znajdziesz.
+	AI_Output(self,hero,"Info_Diego_Bullit_11_04"); //Ale jeÅ›li chcesz z nim walczyÄ‡, radzÄ™ ci uwaÅ¼aÄ‡. To doÅ›wiadczony wojownik.
 };
 
 
@@ -215,7 +215,7 @@ INSTANCE Info_Diego_Kolonie (C_INFO)
 	condition	= Info_Diego_Kolonie_Condition;
 	information	= Info_Diego_Kolonie_Info;
 	permanent	= 0;
-	description = "Dobra, co powinienem wiedzieæ o tym miejscu?";
+	description = "Dobra, co powinienem wiedzieÄ‡ o tym miejscu?";
 };                       
 
 FUNC INT Info_Diego_Kolonie_Condition()
@@ -228,10 +228,10 @@ FUNC INT Info_Diego_Kolonie_Condition()
 
 FUNC VOID Info_Diego_Kolonie_Info()
 {
-	AI_Output(hero,self,"Info_Diego_Kolonie_15_00"); //Dobra, co powinienem wiedzieæ o tym miejscu?
-	AI_Output(self,hero,"Info_Diego_Kolonie_11_01"); //Nazywamy je koloni¹. Wiesz ju¿, ¿e wydobywamy rudê dla króla. 
-	AI_Output(self,hero,"Info_Diego_Kolonie_11_02"); //Có¿, w ka¿dym razie tak robi¹ ludzie ze Starego Obozu.
-	AI_Output(self,hero,"Info_Diego_Kolonie_11_03"); //Wewn¹trz Bariery powsta³y trzy obozy. Najwiêkszy i najstarszy jest tak zwany Stary Obóz.
+	AI_Output(hero,self,"Info_Diego_Kolonie_15_00"); //Dobra, co powinienem wiedzieÄ‡ o tym miejscu?
+	AI_Output(self,hero,"Info_Diego_Kolonie_11_01"); //Nazywamy je koloniÄ…. Wiesz juÅ¼, Å¼e wydobywamy rudÄ™ dla krÃ³la. 
+	AI_Output(self,hero,"Info_Diego_Kolonie_11_02"); //CÃ³Å¼, w kaÅ¼dym razie tak robiÄ… ludzie ze Starego Obozu.
+	AI_Output(self,hero,"Info_Diego_Kolonie_11_03"); //WewnÄ…trz Bariery powstaÅ‚y trzy obozy. NajwiÄ™kszy i najstarszy jest tak zwany Stary ObÃ³z.
 };
 
 // -----------------------------------------------------------------------
@@ -257,11 +257,11 @@ FUNC INT Info_Diego_Barriere_Condition()
 FUNC VOID Info_Diego_Barriere_Info()
 {
 	AI_Output(hero,self,"Info_Diego_Barriere_15_00"); //Opowiedz mi jeszcze o Barierze.
-	AI_Output(self,hero,"Info_Diego_Barriere_11_01"); //Nie ma za bardzo o czym mówiæ. Jest nie do sforsowania.
-	AI_Output(hero,self,"Info_Diego_Barriere_15_02"); //A co siê stanie, jeœli po prostu spróbujê st¹d wyjœæ?
-	AI_Output(self,hero,"Info_Diego_Barriere_11_03"); //Ostatni, który tego spróbowa³ dotar³ na drug¹ stronê jako trup. Przez to przeklête magiczne pole mo¿na wejœæ, ale ju¿ nigdy siê st¹d nie wydostaniesz.
-	AI_Output(hero,self,"Info_Diego_Barriere_15_04"); //Jeœli jest st¹d jakieœ wyjœcie - znajdê je.
-	AI_Output(self,hero,"Info_Diego_Barriere_11_05"); //Tak ci spieszno, ¿eby siê st¹d wyrwaæ? Dopiero co tu trafi³eœ!
+	AI_Output(self,hero,"Info_Diego_Barriere_11_01"); //Nie ma za bardzo o czym mÃ³wiÄ‡. Jest nie do sforsowania.
+	AI_Output(hero,self,"Info_Diego_Barriere_15_02"); //A co siÄ™ stanie, jeÅ›li po prostu sprÃ³bujÄ™ stÄ…d wyjÅ›Ä‡?
+	AI_Output(self,hero,"Info_Diego_Barriere_11_03"); //Ostatni, ktÃ³ry tego sprÃ³bowaÅ‚ dotarÅ‚ na drugÄ… stronÄ™ jako trup. Przez to przeklÄ™te magiczne pole moÅ¼na wejÅ›Ä‡, ale juÅ¼ nigdy siÄ™ stÄ…d nie wydostaniesz.
+	AI_Output(hero,self,"Info_Diego_Barriere_15_04"); //JeÅ›li jest stÄ…d jakieÅ› wyjÅ›cie - znajdÄ™ je.
+	AI_Output(self,hero,"Info_Diego_Barriere_11_05"); //Tak ci spieszno, Å¼eby siÄ™ stÄ…d wyrwaÄ‡? Dopiero co tu trafiÅ‚eÅ›!
 };
 
 // -----------------------------------------------------------------------
@@ -273,7 +273,7 @@ INSTANCE Info_Diego_OtherCamps (C_INFO) // E2
 	condition	= Info_Diego_OtherCamps_Condition;
 	information	= Info_Diego_OtherCamps_Info;
 	permanent	= 0;
-	description = "A co z pozosta³ymi obozami?";
+	description = "A co z pozostaÅ‚ymi obozami?";
 };                       
 
 FUNC INT Info_Diego_OtherCamps_Condition()
@@ -287,12 +287,12 @@ FUNC INT Info_Diego_OtherCamps_Condition()
 
 FUNC VOID Info_Diego_OtherCamps_Info()
 {
-	AI_Output(hero,self,"Info_Diego_OtherCamps_15_00"); //A co z pozosta³ymi obozami?
-	AI_Output(self,hero,"Info_Diego_OtherCamps_11_01"); //Te dwa obozy zamieszkuj¹ szaleñcy, którzy próbuj¹ siê st¹d wydostaæ za wszelk¹ cenê.
-	AI_Output(self,hero,"Info_Diego_OtherCamps_11_02"); //W zachodniej czêœci kolonii znajduje siê Nowy Obóz. Rezyduj¹ tam magowie, którzy myœl¹, ¿e uda siê im wysadziæ Barierê, jak tylko zbior¹ dostatecznie du¿o rudy.
-	AI_Output(self,hero,"Info_Diego_OtherCamps_11_03"); //No i s¹ jeszcze œwiry z Sekty, na wschodzie. Ich obóz znajduje siê na œrodku bagna. Oni z kolei czekaj¹ a¿ ich bóstwo pomo¿e im siê st¹d wydostaæ.
-	AI_Output(self,hero,"Info_Diego_OtherCamps_11_04"); //Wygl¹da na to, ¿e jeszcze trochê poczekaj¹.
-	AI_Output(self,hero,"Info_Diego_OtherCamps_11_05"); //Na twoim miejscu nie traci³bym czasu na zadawanie siê z szaleñcami.
+	AI_Output(hero,self,"Info_Diego_OtherCamps_15_00"); //A co z pozostaÅ‚ymi obozami?
+	AI_Output(self,hero,"Info_Diego_OtherCamps_11_01"); //Te dwa obozy zamieszkujÄ… szaleÅ„cy, ktÃ³rzy prÃ³bujÄ… siÄ™ stÄ…d wydostaÄ‡ za wszelkÄ… cenÄ™.
+	AI_Output(self,hero,"Info_Diego_OtherCamps_11_02"); //W zachodniej czÄ™Å›ci kolonii znajduje siÄ™ Nowy ObÃ³z. RezydujÄ… tam magowie, ktÃ³rzy myÅ›lÄ…, Å¼e uda siÄ™ im wysadziÄ‡ BarierÄ™, jak tylko zbiorÄ… dostatecznie duÅ¼o rudy.
+	AI_Output(self,hero,"Info_Diego_OtherCamps_11_03"); //No i sÄ… jeszcze Å›wiry z Sekty, na wschodzie. Ich obÃ³z znajduje siÄ™ na Å›rodku bagna. Oni z kolei czekajÄ… aÅ¼ ich bÃ³stwo pomoÅ¼e im siÄ™ stÄ…d wydostaÄ‡.
+	AI_Output(self,hero,"Info_Diego_OtherCamps_11_04"); //WyglÄ…da na to, Å¼e jeszcze trochÄ™ poczekajÄ….
+	AI_Output(self,hero,"Info_Diego_OtherCamps_11_05"); //Na twoim miejscu nie traciÅ‚bym czasu na zadawanie siÄ™ z szaleÅ„cami.
 };
 
 // -----------------------------------------------------------------------
@@ -318,13 +318,13 @@ FUNC INT Info_Diego_OldCamp_Condition()
 FUNC VOID Info_Diego_OldCamp_Info()
 {
 	AI_Output(hero,self,"Info_Diego_OldCamp_15_00"); //Opowiedz mi o Starym Obozie.
-	AI_Output(self,hero,"Info_Diego_OldCamp_11_01"); //To najwiêkszy i najpotê¿niejszy z trzech obozów. Gomez i jego ludzie kontroluj¹ kopalniê, a tym samym - ca³y handel ze œwiatem zewnêtrznym.
-	AI_Output(self,hero,"Info_Diego_OldCamp_11_02"); //Raz w miesi¹cu król przysy³a nam wszystko, czego potrzebujemy. Mamy staruszka w garœci, kapujesz?
-	AI_Output(self,hero,"Info_Diego_OldCamp_11_03"); //Przysy³a nam broñ, chleb, miêso... wszystko.
+	AI_Output(self,hero,"Info_Diego_OldCamp_11_01"); //To najwiÄ™kszy i najpotÄ™Å¼niejszy z trzech obozÃ³w. Gomez i jego ludzie kontrolujÄ… kopalniÄ™, a tym samym - caÅ‚y handel ze Å›wiatem zewnÄ™trznym.
+	AI_Output(self,hero,"Info_Diego_OldCamp_11_02"); //Raz w miesiÄ…cu krÃ³l przysyÅ‚a nam wszystko, czego potrzebujemy. Mamy staruszka w garÅ›ci, kapujesz?
+	AI_Output(self,hero,"Info_Diego_OldCamp_11_03"); //PrzysyÅ‚a nam broÅ„, chleb, miÄ™so... wszystko.
 	
 	if (Npc_GetTrueGuild (hero) == GIL_NONE)
 	{ 
-	AI_Output(self,hero,"Info_Diego_OldCamp_11_04"); //Ty te¿ mo¿esz mieæ w tym udzia³. Musisz tylko do³¹czyæ do ludzi Gomeza.
+	AI_Output(self,hero,"Info_Diego_OldCamp_11_04"); //Ty teÅ¼ moÅ¼esz mieÄ‡ w tym udziaÅ‚. Musisz tylko doÅ‚Ä…czyÄ‡ do ludzi Gomeza.
 	};
 };
 
@@ -353,7 +353,7 @@ FUNC INT Info_Diego_WhosGomez_Condition()
 FUNC VOID Info_Diego_WhosGomez_Info()
 {
 	AI_Output(hero,self,"Info_Diego_WhosGomez_15_00"); //Kim jest Gomez?
-	AI_Output(self,hero,"Info_Diego_WhosGomez_11_01"); //Gomez jest najpotê¿niejszym z Magnatów kieruj¹cych handlem rud¹. To on rz¹dzi w Starym Obozie i ma najwiêcej do powiedzenia w ca³ej kolonii.
+	AI_Output(self,hero,"Info_Diego_WhosGomez_11_01"); //Gomez jest najpotÄ™Å¼niejszym z MagnatÃ³w kierujÄ…cych handlem rudÄ…. To on rzÄ…dzi w Starym Obozie i ma najwiÄ™cej do powiedzenia w caÅ‚ej kolonii.
 };	
 
 // ************************************************************
@@ -367,7 +367,7 @@ INSTANCE Info_Diego_JoinOldcamp (C_INFO) // E2/E3
 	condition	= Info_Diego_JoinOldcamp_Condition;
 	information	= Info_Diego_JoinOldcamp_Info;
 	permanent	= 0;
-	description = "Za³ó¿my, ¿e chcia³bym do³¹czyæ do jego ludzi. Co powinienem zrobiæ?";
+	description = "ZaÅ‚Ã³Å¼my, Å¼e chciaÅ‚bym doÅ‚Ä…czyÄ‡ do jego ludzi. Co powinienem zrobiÄ‡?";
 };                       
 
 FUNC INT Info_Diego_JoinOldcamp_Condition()
@@ -382,14 +382,14 @@ FUNC INT Info_Diego_JoinOldcamp_Condition()
 
 FUNC VOID Info_Diego_JoinOldcamp_Info()
 {
-	AI_Output(hero,self,"Info_Diego_JoinOldcamp_15_00"); //Za³ó¿my, ¿e chcia³bym do³¹czyæ do jego ludzi. Co powinienem zrobiæ?
-	AI_Output(self,hero,"Info_Diego_JoinOldcamp_11_01"); //Przy bramie do zamku znajdziesz cz³owieka imieniem Thorus. Powiedz mu, ¿e Diego ciê przys³a³.
+	AI_Output(hero,self,"Info_Diego_JoinOldcamp_15_00"); //ZaÅ‚Ã³Å¼my, Å¼e chciaÅ‚bym doÅ‚Ä…czyÄ‡ do jego ludzi. Co powinienem zrobiÄ‡?
+	AI_Output(self,hero,"Info_Diego_JoinOldcamp_11_01"); //Przy bramie do zamku znajdziesz czÅ‚owieka imieniem Thorus. Powiedz mu, Å¼e Diego ciÄ™ przysÅ‚aÅ‚.
 	VAR C_NPC Thorus; Thorus = Hlp_GetNpc(GRD_200_THORUS);
 	Thorus.aivar[AIV_FINDABLE]=TRUE;
 	
 	Log_CreateTopic(CH1_JoinOC, LOG_MISSION);
 	Log_SetTopicStatus(CH1_JoinOC, LOG_RUNNING);
-	B_LogEntry( CH1_JoinOC,"Aby zostaæ przyjêtym w poczet ludzi Gomeza, muszê najpierw porozmawiaæ z Thorusem.");
+	B_LogEntry( CH1_JoinOC,"Aby zostaÄ‡ przyjÄ™tym w poczet ludzi Gomeza, muszÄ™ najpierw porozmawiaÄ‡ z Thorusem.");
 };	
 
 // ************************************************************
@@ -403,7 +403,7 @@ INSTANCE Info_Diego_WayToOldcamp (C_INFO) // E2/E3
 	condition	= Info_Diego_WayToOldcamp_Condition;
 	information	= Info_Diego_WayToOldcamp_Info;
 	permanent	= 0;
-	description = "Jak dostanê siê do Starego Obozu?";
+	description = "Jak dostanÄ™ siÄ™ do Starego Obozu?";
 };                       
 
 FUNC INT Info_Diego_WayToOldcamp_Condition()
@@ -416,9 +416,9 @@ FUNC INT Info_Diego_WayToOldcamp_Condition()
 
 FUNC VOID Info_Diego_WayToOldcamp_Info()
 {
-	AI_Output(hero,self,"Info_Diego_WayToOldcamp_15_00"); //Jak dostanê siê do Starego Obozu?
-	AI_Output(self,hero,"Info_Diego_WayToOldcamp_11_01"); //Pod¹¿aj t¹ œcie¿k¹. Stary Obóz to najbli¿sze, mniej wiêcej bezpieczne miejsce jakie napotkasz po drodze.
-	AI_Output(self,hero,"Info_Diego_WayToOldcamp_11_02"); //Pomiêdzy obozami krêci siê wiele groŸnych zwierz¹t. Radzi³bym ci postaraæ siê o jak¹œ broñ.
+	AI_Output(hero,self,"Info_Diego_WayToOldcamp_15_00"); //Jak dostanÄ™ siÄ™ do Starego Obozu?
+	AI_Output(self,hero,"Info_Diego_WayToOldcamp_11_01"); //PodÄ…Å¼aj tÄ… Å›cieÅ¼kÄ…. Stary ObÃ³z to najbliÅ¼sze, mniej wiÄ™cej bezpieczne miejsce jakie napotkasz po drodze.
+	AI_Output(self,hero,"Info_Diego_WayToOldcamp_11_02"); //PomiÄ™dzy obozami krÄ™ci siÄ™ wiele groÅºnych zwierzÄ…t. RadziÅ‚bym ci postaraÄ‡ siÄ™ o jakÄ…Å› broÅ„.
 };
 	
 // ************************************************************
@@ -432,7 +432,7 @@ INSTANCE Info_Diego_WoWaffe (C_INFO) // E2/E3
 	condition	= Info_Diego_WoWaffe_Condition;
 	information	= Info_Diego_WoWaffe_Info;
 	permanent	= 0;
-	description = "Gdzie mogê znaleŸæ orê¿?";
+	description = "Gdzie mogÄ™ znaleÅºÄ‡ orÄ™Å¼?";
 };                       
 
 FUNC INT Info_Diego_WoWaffe_Condition()
@@ -445,9 +445,9 @@ FUNC INT Info_Diego_WoWaffe_Condition()
 
 FUNC VOID Info_Diego_WoWaffe_Info()
 {
-	AI_Output(hero,self,"Info_Diego_WoWaffe_15_00"); //Gdzie mogê znaleŸæ orê¿?
-	AI_Output(self,hero,"Info_Diego_WoWaffe_11_01"); //Rozejrzyj siê trochê w pobli¿u Opuszczonej Kopalni. Na pewno znajdziesz tam coœ przydatnego.
-	AI_Output(self,hero,"Info_Diego_WoWaffe_11_02"); //Kopalniê nie trudno znaleŸæ. Le¿y parê metrów w dó³ kanionu. 
+	AI_Output(hero,self,"Info_Diego_WoWaffe_15_00"); //Gdzie mogÄ™ znaleÅºÄ‡ orÄ™Å¼?
+	AI_Output(self,hero,"Info_Diego_WoWaffe_11_01"); //Rozejrzyj siÄ™ trochÄ™ w pobliÅ¼u Opuszczonej Kopalni. Na pewno znajdziesz tam coÅ› przydatnego.
+	AI_Output(self,hero,"Info_Diego_WoWaffe_11_02"); //KopalniÄ™ nie trudno znaleÅºÄ‡. LeÅ¼y parÄ™ metrÃ³w w dÃ³Å‚ kanionu. 
 };
 
 // ************************************************************
@@ -461,7 +461,7 @@ INSTANCE Info_Diego_ThorusSays(C_INFO) // E2/E3
 	condition	= Info_Diego_ThorusSays_Condition;
 	information	= Info_Diego_ThorusSays_Info;
 	permanent	= 0;
-	description = "Rozmawia³em z Thorusem.";
+	description = "RozmawiaÅ‚em z Thorusem.";
 };                       
 
 FUNC INT Info_Diego_ThorusSays_Condition()
@@ -474,12 +474,12 @@ FUNC INT Info_Diego_ThorusSays_Condition()
 
 FUNC VOID Info_Diego_ThorusSays_Info()
 {
-	AI_Output(hero,self,"Info_Diego_ThorusSays_15_00"); //Rozmawia³em z Thorusem.
-	AI_Output(self,hero,"Info_Diego_ThorusSays_11_01"); //I co ci powiedzia³?
-	AI_Output(hero,self,"Info_Diego_ThorusSays_15_02"); //Mówi, ¿e bêdê móg³ do³¹czyæ do Starego Obozu, jeœli TY uznasz, ¿e siê nadajê.
-	AI_Output(self,hero,"Info_Diego_ThorusSays_11_03"); //Widzê, ¿e czeka mnie dodatkowa robota.
+	AI_Output(hero,self,"Info_Diego_ThorusSays_15_00"); //RozmawiaÅ‚em z Thorusem.
+	AI_Output(self,hero,"Info_Diego_ThorusSays_11_01"); //I co ci powiedziaÅ‚?
+	AI_Output(hero,self,"Info_Diego_ThorusSays_15_02"); //MÃ³wi, Å¼e bÄ™dÄ™ mÃ³gÅ‚ doÅ‚Ä…czyÄ‡ do Starego Obozu, jeÅ›li TY uznasz, Å¼e siÄ™ nadajÄ™.
+	AI_Output(self,hero,"Info_Diego_ThorusSays_11_03"); //WidzÄ™, Å¼e czeka mnie dodatkowa robota.
 	AI_Output(hero,self,"Info_Diego_ThorusSays_15_04"); //Zaczynamy od razu?
-	AI_Output(self,hero,"Info_Diego_ThorusSays_11_05"); //Najpierw powinieneœ dowiedzieæ siê kilku rzeczy.
+	AI_Output(self,hero,"Info_Diego_ThorusSays_11_05"); //Najpierw powinieneÅ› dowiedzieÄ‡ siÄ™ kilku rzeczy.
 };
 
 // ************************************************************
@@ -493,7 +493,7 @@ INSTANCE Info_Diego_Rules(C_INFO) // E2/E3
 	condition	= Info_Diego_Rules_Condition;
 	information	= Info_Diego_Rules_Info;
 	permanent	= 0;
-	description = "Co powinienem wiedzieæ, ¿eby mnie przyjêto do Starego Obozu?";
+	description = "Co powinienem wiedzieÄ‡, Å¼eby mnie przyjÄ™to do Starego Obozu?";
 };                       
 
 FUNC INT Info_Diego_Rules_Condition()
@@ -506,13 +506,13 @@ FUNC INT Info_Diego_Rules_Condition()
 
 FUNC VOID Info_Diego_Rules_Info()
 {
-	AI_Output(hero,self,"Info_Diego_Rules_15_00"); //Co powinienem wiedzieæ, zanim zostanê przyjêty do Starego Obozu?
-	AI_Output(self,hero,"Info_Diego_Rules_11_01"); //Jeœli chcesz do nas nale¿eæ, musisz najpierw zaplusowaæ u kilku ludzi.
-	AI_Output(self,hero,"Info_Diego_Rules_11_02"); //W Zewnêtrznym Pierœcieniu mo¿esz spotkaæ paru wp³ywowych ludzi, g³ównie Cieni. Jeœli uda ci siê ich do siebie przekonaæ, twoje szanse wzrosn¹.
-	AI_Output(self,hero,"Info_Diego_Rules_11_03"); //PóŸniej czeka ciê test zaufania.
-	AI_Output(self,hero,"Info_Diego_Rules_11_04"); //Oprócz tego musisz siê jeszcze wiele nauczyæ. Im wiêcej nowych umiejêtnoœci zdobêdziesz, tym cenniejszy bêdziesz dla nas.
+	AI_Output(hero,self,"Info_Diego_Rules_15_00"); //Co powinienem wiedzieÄ‡, zanim zostanÄ™ przyjÄ™ty do Starego Obozu?
+	AI_Output(self,hero,"Info_Diego_Rules_11_01"); //JeÅ›li chcesz do nas naleÅ¼eÄ‡, musisz najpierw zaplusowaÄ‡ u kilku ludzi.
+	AI_Output(self,hero,"Info_Diego_Rules_11_02"); //W ZewnÄ™trznym PierÅ›cieniu moÅ¼esz spotkaÄ‡ paru wpÅ‚ywowych ludzi, gÅ‚Ã³wnie Cieni. JeÅ›li uda ci siÄ™ ich do siebie przekonaÄ‡, twoje szanse wzrosnÄ….
+	AI_Output(self,hero,"Info_Diego_Rules_11_03"); //PÃ³Åºniej czeka ciÄ™ test zaufania.
+	AI_Output(self,hero,"Info_Diego_Rules_11_04"); //OprÃ³cz tego musisz siÄ™ jeszcze wiele nauczyÄ‡. Im wiÄ™cej nowych umiejÄ™tnoÅ›ci zdobÄ™dziesz, tym cenniejszy bÄ™dziesz dla nas.
 	
-	B_LogEntry( CH1_JoinOC,"Zanim zostanê przyjêty, muszê zjednaæ sobie kilku wp³ywowych ludzi z Zewnêtrznego Pierœcienia i przejœæ test zaufania.");
+	B_LogEntry( CH1_JoinOC,"Zanim zostanÄ™ przyjÄ™ty, muszÄ™ zjednaÄ‡ sobie kilku wpÅ‚ywowych ludzi z ZewnÄ™trznego PierÅ›cienia i przejÅ›Ä‡ test zaufania.");
 };
 
 // ************************************************************
@@ -526,7 +526,7 @@ INSTANCE Info_Diego_Celebs(C_INFO) // E2/E3
 	condition	= Info_Diego_Celebs_Condition;
 	information	= Info_Diego_Celebs_Info;
 	permanent	= 0;
-	description = "Gdzie znajdê te wa¿ne osoby?";
+	description = "Gdzie znajdÄ™ te waÅ¼ne osoby?";
 };                       
 
 FUNC INT Info_Diego_Celebs_Condition()
@@ -539,10 +539,10 @@ FUNC INT Info_Diego_Celebs_Condition()
 
 FUNC VOID Info_Diego_Celebs_Info()
 {
-	AI_Output(hero,self,"Info_Diego_Celebs_15_00"); //Gdzie znajdê te wa¿ne osoby?
-	AI_Output(self,hero,"Info_Diego_Celebs_11_01"); //Có¿, na jednego z nich w³aœnie patrzysz. Poza tym, jest jeszcze Thorus, jego ju¿ znasz.
-	AI_Output(self,hero,"Info_Diego_Celebs_11_02"); //Co do pozosta³ych... sam musisz ich rozpoznaæ. Jeœli nie jesteœ w stanie tego zrobiæ, to i tak nie masz tu czego szukaæ.
-	AI_Output(self,hero,"Info_Diego_Celebs_11_03"); //Najlepiej przejdŸ siê po Zewnêtrznym Pierœcieniu i porozmawiaj z ludŸmi.
+	AI_Output(hero,self,"Info_Diego_Celebs_15_00"); //Gdzie znajdÄ™ te waÅ¼ne osoby?
+	AI_Output(self,hero,"Info_Diego_Celebs_11_01"); //CÃ³Å¼, na jednego z nich wÅ‚aÅ›nie patrzysz. Poza tym, jest jeszcze Thorus, jego juÅ¼ znasz.
+	AI_Output(self,hero,"Info_Diego_Celebs_11_02"); //Co do pozostaÅ‚ych... sam musisz ich rozpoznaÄ‡. JeÅ›li nie jesteÅ› w stanie tego zrobiÄ‡, to i tak nie masz tu czego szukaÄ‡.
+	AI_Output(self,hero,"Info_Diego_Celebs_11_03"); //Najlepiej przejdÅº siÄ™ po ZewnÄ™trznym PierÅ›cieniu i porozmawiaj z ludÅºmi.
 };
 
 // ************************************************************
@@ -556,7 +556,7 @@ INSTANCE Info_Diego_Teachers(C_INFO) // E2/E3
 	condition	= Info_Diego_Teachers_Condition;
 	information	= Info_Diego_Teachers_Info;
 	permanent	= 0;
-	description = "Kto mo¿e mnie czegoœ nauczyæ?";
+	description = "Kto moÅ¼e mnie czegoÅ› nauczyÄ‡?";
 };                       
 
 FUNC INT Info_Diego_Teachers_Condition()
@@ -569,17 +569,17 @@ FUNC INT Info_Diego_Teachers_Condition()
 
 FUNC VOID Info_Diego_Teachers_Info()
 {
-	AI_Output		(hero,self,"Info_Diego_Teachers_15_00"); //Kto mo¿e mnie czegoœ nauczyæ?
-	AI_Output		(self,hero,"Info_Diego_Teachers_11_01"); //Zacznij od R¹czki. To najzrêczniejszy cz³owiek w Obozie.
-	AI_Output		(self,hero,"Info_Diego_Teachers_11_02"); //Miej oczy szeroko otwarte, a na pewno znajdziesz wielu ludzi, którzy zechc¹ ciê czegoœ nauczyæ.
-	AI_Output		(hero,self,"Info_Diego_Teachers_15_03"); //Gdzie znajdê R¹czkê?
-	AI_Output		(self,hero,"Info_Diego_Teachers_11_04"); //Jego chata stoi nieco na uboczu, zaraz przy murach zamku. Id¹c st¹d udaj siê w stronê areny.
-	AI_Output		(self,hero,"Info_Diego_Teachers_11_05"); //Przy zamkowej bramie pójdŸ w lewo. To w³aœnie droga do areny.
+	AI_Output		(hero,self,"Info_Diego_Teachers_15_00"); //Kto moÅ¼e mnie czegoÅ› nauczyÄ‡?
+	AI_Output		(self,hero,"Info_Diego_Teachers_11_01"); //Zacznij od RÄ…czki. To najzrÄ™czniejszy czÅ‚owiek w Obozie.
+	AI_Output		(self,hero,"Info_Diego_Teachers_11_02"); //Miej oczy szeroko otwarte, a na pewno znajdziesz wielu ludzi, ktÃ³rzy zechcÄ… ciÄ™ czegoÅ› nauczyÄ‡.
+	AI_Output		(hero,self,"Info_Diego_Teachers_15_03"); //Gdzie znajdÄ™ RÄ…czkÄ™?
+	AI_Output		(self,hero,"Info_Diego_Teachers_11_04"); //Jego chata stoi nieco na uboczu, zaraz przy murach zamku. IdÄ…c stÄ…d udaj siÄ™ w stronÄ™ areny.
+	AI_Output		(self,hero,"Info_Diego_Teachers_11_05"); //Przy zamkowej bramie pÃ³jdÅº w lewo. To wÅ‚aÅ›nie droga do areny.
 
 	if	(Fingers_CanTeach == FALSE)
 	{
 		Log_CreateTopic (GE_TeacherOC,	LOG_NOTE);
-		B_LogEntry		(GE_TeacherOC,"R¹czka mo¿e mnie nauczyæ otwierania zamków i kradzie¿y kieszonkowej. Jego chata znajduje siê nieco na uboczu, niedaleko areny.");
+		B_LogEntry		(GE_TeacherOC,"RÄ…czka moÅ¼e mnie nauczyÄ‡ otwierania zamkÃ³w i kradzieÅ¼y kieszonkowej. Jego chata znajduje siÄ™ nieco na uboczu, niedaleko areny.");
 	};
 };
 
@@ -597,7 +597,7 @@ INSTANCE Info_Diego_Teach(C_INFO)
 	condition	= Info_Diego_Teach_Condition;
 	information	= Info_Diego_Teach_Info;
 	permanent	= 1;
-	description = "Mo¿esz mnie czegoœ nauczyæ?";
+	description = "MoÅ¼esz mnie czegoÅ› nauczyÄ‡?";
 };                       
 
 FUNC INT Info_Diego_Teach_Condition()
@@ -613,11 +613,11 @@ FUNC VOID Info_Diego_Teach_Info()
 	if	(log_diegotrain == FALSE)
 	{	
 		Log_CreateTopic (GE_TeacherOC,LOG_NOTE);
-		B_LogEntry		(GE_TeacherOC,"Diego mo¿e mi pomóc w zwiêkszeniu mojej zwinnoœci i si³y.");
+		B_LogEntry		(GE_TeacherOC,"Diego moÅ¼e mi pomÃ³c w zwiÄ™kszeniu mojej zwinnoÅ›ci i siÅ‚y.");
 		log_diegotrain	= TRUE;
 	};
-	AI_Output(hero,self,"Info_Diego_Teach_15_00"); //Mo¿esz mnie czegoœ nauczyæ?
-	AI_Output(self,hero,"Info_Diego_Teach_11_01"); //Tak. Mogê ci pokazaæ, jak zwiêkszyæ swoj¹ si³ê lub zrêcznoœæ.
+	AI_Output(hero,self,"Info_Diego_Teach_15_00"); //MoÅ¼esz mnie czegoÅ› nauczyÄ‡?
+	AI_Output(self,hero,"Info_Diego_Teach_11_01"); //Tak. MogÄ™ ci pokazaÄ‡, jak zwiÄ™kszyÄ‡ swojÄ… siÅ‚Ä™ lub zrÄ™cznoÅ›Ä‡.
 	
 	Diego_Merke_STR = hero.attribute[ATR_STRENGTH];
 	Diego_Merke_DEX = hero.attribute[ATR_DEXTERITY];
@@ -636,13 +636,13 @@ func void Info_Diego_Teach_BACK()
 {
 	if (Diego_Merke_STR < hero.attribute[ATR_STRENGTH])
 	{
-		AI_Output(self,hero,"Info_Diego_Teach_BACK_11_00"); //Jesteœ teraz o wiele silniejszy.
+		AI_Output(self,hero,"Info_Diego_Teach_BACK_11_00"); //JesteÅ› teraz o wiele silniejszy.
 	};
 	if (Diego_Merke_DEX < hero.attribute[ATR_DEXTERITY])
 	{
-		AI_Output(self,hero,"Info_Diego_Teach_BACK_11_01"); //Umiesz teraz sprawniej pos³ugiwaæ siê ³ukiem i kusz¹.
+		AI_Output(self,hero,"Info_Diego_Teach_BACK_11_01"); //Umiesz teraz sprawniej posÅ‚ugiwaÄ‡ siÄ™ Å‚ukiem i kuszÄ….
 	};
-	AI_Output(self,hero,"Info_Diego_Teach_BACK_11_02"); //Wróæ nied³ugo. Musisz siê jeszcze wiele nauczyæ.
+	AI_Output(self,hero,"Info_Diego_Teach_BACK_11_02"); //WrÃ³Ä‡ niedÅ‚ugo. Musisz siÄ™ jeszcze wiele nauczyÄ‡.
 	Info_ClearChoices	(Info_Diego_Teach);
 };
 
@@ -719,18 +719,18 @@ FUNC INT Info_Diego_BringList_Offer_Condition()
 FUNC VOID Info_Diego_BringList_Offer_Info()
 {
 	AI_Output (hero, self,"Info_Diego_BringList_Offer_15_00"); //Na czym polega test zaufania?
-	AI_Output (self, hero,"Info_Diego_BringList_Offer_11_01"); //Bêdziesz siê musia³ wybraæ do Starej Kopalni. Tam znajdziesz faceta imieniem Ian. Od niego dostaniesz listê.
-	AI_Output (self, hero,"Info_Diego_BringList_Offer_11_02"); //To bardzo wa¿ny dokument. Zawiera spis wszystkich rzeczy, których potrzebuj¹ od nas ludzie z kopalni.
-	AI_Output (self, hero,"Info_Diego_BringList_Offer_11_03"); //Postaramy siê, ¿eby dostarczono je z nastêpnym konwojem.
-	AI_Output (hero, self,"Info_Diego_BringList_Offer_15_04"); //¯aden problem!
-	AI_Output (self, hero,"Info_Diego_BringList_Offer_11_05"); //W³aœnie ¿e jest problem. Ta lista nie mo¿e wpaœæ w rêce ludzi z Nowego Obozu!
-	AI_Output (self, hero,"Info_Diego_BringList_Offer_11_06"); //Jak ju¿ powiedzia³em: to bardzo wa¿na lista. Jeœli nie zawalisz - daleko tu zajdziesz.
+	AI_Output (self, hero,"Info_Diego_BringList_Offer_11_01"); //BÄ™dziesz siÄ™ musiaÅ‚ wybraÄ‡ do Starej Kopalni. Tam znajdziesz faceta imieniem Ian. Od niego dostaniesz listÄ™.
+	AI_Output (self, hero,"Info_Diego_BringList_Offer_11_02"); //To bardzo waÅ¼ny dokument. Zawiera spis wszystkich rzeczy, ktÃ³rych potrzebujÄ… od nas ludzie z kopalni.
+	AI_Output (self, hero,"Info_Diego_BringList_Offer_11_03"); //Postaramy siÄ™, Å¼eby dostarczono je z nastÄ™pnym konwojem.
+	AI_Output (hero, self,"Info_Diego_BringList_Offer_15_04"); //Å»aden problem!
+	AI_Output (self, hero,"Info_Diego_BringList_Offer_11_05"); //WÅ‚aÅ›nie Å¼e jest problem. Ta lista nie moÅ¼e wpaÅ›Ä‡ w rÄ™ce ludzi z Nowego Obozu!
+	AI_Output (self, hero,"Info_Diego_BringList_Offer_11_06"); //Jak juÅ¼ powiedziaÅ‚em: to bardzo waÅ¼na lista. JeÅ›li nie zawalisz - daleko tu zajdziesz.
 	
 	Diego_BringList = LOG_RUNNING;
     
     Log_CreateTopic (CH1_BringList,LOG_MISSION);
     Log_SetTopicStatus(CH1_BringList,LOG_RUNNING);
-    B_LogEntry    (CH1_BringList,"Diego wys³a³ mnie do Starej Kopalni. Tam, od cz³owieka imieniem Ian, dostanê bardzo wa¿n¹ listê, która pod ¿adnym pozorem nie mo¿e wpaœæ w ³apy ludzi z Nowego Obozu.");
+    B_LogEntry    (CH1_BringList,"Diego wysÅ‚aÅ‚ mnie do Starej Kopalni. Tam, od czÅ‚owieka imieniem Ian, dostanÄ™ bardzo waÅ¼nÄ… listÄ™, ktÃ³ra pod Å¼adnym pozorem nie moÅ¼e wpaÅ›Ä‡ w Å‚apy ludzi z Nowego Obozu.");
     
 	VAR C_NPC Ian; Ian = Hlp_GetNpc (STT_301_IAN);	
 	CreateInvItem (STT_301_IAN, TheList);
@@ -745,7 +745,7 @@ INSTANCE Info_Diego_IanPassword (C_INFO)
 	condition	= Info_Diego_IanPassword_Condition;
 	information	= Info_Diego_IanPassword_Info;
 	permanent	= 0;
-	description = "Skoro ta lista jest taka wa¿na, myœlisz, ¿e Ian wyda j¹ komuœ takiemu jak JA?";
+	description = "Skoro ta lista jest taka waÅ¼na, myÅ›lisz, Å¼e Ian wyda jÄ… komuÅ› takiemu jak JA?";
 };                       
 
 FUNC INT Info_Diego_IanPassword_Condition()
@@ -758,11 +758,11 @@ FUNC INT Info_Diego_IanPassword_Condition()
 
 FUNC VOID Info_Diego_IanPassword_Info()
 {
-	AI_Output (hero, self,"Info_Diego_IanPassword_Info_15_01"); //Skoro ta lista jest taka wa¿na, sk¹d pewnoœæ, ¿e Ian wyda j¹ komuœ takiemu jak JA?
-	AI_Output (self, hero,"Info_Diego_IanPassword_Info_11_02"); //Bo powiesz mu, ¿e przys³a³ ciê Diego.
-	AI_Output (hero, self,"Info_Diego_IanPassword_Info_15_03"); //Tak zrobiê.
+	AI_Output (hero, self,"Info_Diego_IanPassword_Info_15_01"); //Skoro ta lista jest taka waÅ¼na, skÄ…d pewnoÅ›Ä‡, Å¼e Ian wyda jÄ… komuÅ› takiemu jak JA?
+	AI_Output (self, hero,"Info_Diego_IanPassword_Info_11_02"); //Bo powiesz mu, Å¼e przysÅ‚aÅ‚ ciÄ™ Diego.
+	AI_Output (hero, self,"Info_Diego_IanPassword_Info_15_03"); //Tak zrobiÄ™.
 	
-	B_LogEntry    (CH1_BringList,"Ian da mi listê, jeœli powiem mu, ¿e przysy³a mnie Diego.");
+	B_LogEntry    (CH1_BringList,"Ian da mi listÄ™, jeÅ›li powiem mu, Å¼e przysyÅ‚a mnie Diego.");
 };
 
 // ----------------------------------------------------------------------------------
@@ -774,7 +774,7 @@ INSTANCE Info_Diego_MapToOldMine (C_INFO)
 	condition	= Info_Diego_MapToOldMine_Condition;
 	information	= Info_Diego_MapToOldMine_Info;
 	permanent	= 0;
-	description = "Gdzie znajdê Star¹ Kopalniê?";
+	description = "Gdzie znajdÄ™ StarÄ… KopalniÄ™?";
 };                       
 
 FUNC INT Info_Diego_MapToOldMine_Condition()
@@ -787,11 +787,11 @@ FUNC INT Info_Diego_MapToOldMine_Condition()
 
 FUNC VOID Info_Diego_MapToOldMine_Info()
 {
-	AI_Output (hero, self,"Info_Diego_MapToOldMine_Info_15_00"); //Gdzie znajdê Star¹ Kopalniê?
-	AI_Output (self, hero,"Info_Diego_MapToOldMine_Info_11_01"); //Porozmawiaj z Grahamem, to nasz kartograf. Powiedz mu, ¿e ja ciê przysy³am, i ¿e potrzebujesz mapy. Z niej dowiesz siê, gdzie le¿y kopalnia.
-	AI_Output (self, hero,"Info_Diego_MapToOldMine_Info_11_02"); //Graham mieszka na lewo od pó³nocnej bramy.
+	AI_Output (hero, self,"Info_Diego_MapToOldMine_Info_15_00"); //Gdzie znajdÄ™ StarÄ… KopalniÄ™?
+	AI_Output (self, hero,"Info_Diego_MapToOldMine_Info_11_01"); //Porozmawiaj z Grahamem, to nasz kartograf. Powiedz mu, Å¼e ja ciÄ™ przysyÅ‚am, i Å¼e potrzebujesz mapy. Z niej dowiesz siÄ™, gdzie leÅ¼y kopalnia.
+	AI_Output (self, hero,"Info_Diego_MapToOldMine_Info_11_02"); //Graham mieszka na lewo od pÃ³Å‚nocnej bramy.
 	
-	B_LogEntry    (CH1_BringList,"Od Grahama dostanê mapê. Znajdê go na lewo od pó³nocnej bramy.");
+	B_LogEntry    (CH1_BringList,"Od Grahama dostanÄ™ mapÄ™. ZnajdÄ™ go na lewo od pÃ³Å‚nocnej bramy.");
 };
 
 // ------------------------------ SUCCESS ----------------------------------
@@ -803,7 +803,7 @@ INSTANCE Info_Diego_BringList_Success (C_INFO)
 	condition	= Info_Diego_BringList_Success_Condition;
 	information	= Info_Diego_BringList_Success_Info;
 	permanent	= 0;
-	description = "Mam listê od Iana.";
+	description = "Mam listÄ™ od Iana.";
 };                       
 
 FUNC INT Info_Diego_BringList_Success_Condition()
@@ -816,21 +816,21 @@ FUNC INT Info_Diego_BringList_Success_Condition()
 
 FUNC VOID Info_Diego_BringList_Success_Info()
 {
-	AI_Output (hero, self,"Info_Diego_BringList_Success_15_00"); //Mam listê od Iana.
+	AI_Output (hero, self,"Info_Diego_BringList_Success_15_00"); //Mam listÄ™ od Iana.
 		
 	if	Npc_HasItems(hero,TheList)
 	{
 		B_GiveInvItems	(hero, self, TheList, 1);
-		B_LogEntry    	(CH1_BringList,"Diego bardzo siê ucieszy³, gdy wrêczy³em mu listê Iana.");
+		B_LogEntry    	(CH1_BringList,"Diego bardzo siÄ™ ucieszyÅ‚, gdy wrÄ™czyÅ‚em mu listÄ™ Iana.");
 	}
 	else if	Npc_HasItems(hero,TheListNC)
 	{
 		B_GiveInvItems	(hero, self, TheListNC, 1);
-		B_LogEntry    	(CH1_BringList,"Diego ucieszy³ siê, gdy wrêczy³em mu listê od Iana. Chyba nie zauwa¿y³, ¿e Lares doda³ kilka rzeczy od siebie. A mo¿e rzeczywiœcie widzia³em dziwny b³ysk w jego oku?");
+		B_LogEntry    	(CH1_BringList,"Diego ucieszyÅ‚ siÄ™, gdy wrÄ™czyÅ‚em mu listÄ™ od Iana. Chyba nie zauwaÅ¼yÅ‚, Å¼e Lares dodaÅ‚ kilka rzeczy od siebie. A moÅ¼e rzeczywiÅ›cie widziaÅ‚em dziwny bÅ‚ysk w jego oku?");
 	};
 	B_UseFakeScroll();
 	
-	AI_Output (self, hero,"Info_Diego_BringList_Success_11_01"); //Dobra robota! Zaczynasz mi siê naprawdê podobaæ!
+	AI_Output (self, hero,"Info_Diego_BringList_Success_11_01"); //Dobra robota! Zaczynasz mi siÄ™ naprawdÄ™ podobaÄ‡!
 
 	Diego_BringList = LOG_SUCCESS;
 	B_GiveXP(XP_DiegoBringlist);
@@ -853,7 +853,7 @@ INSTANCE Info_Diego_JoinAnalyze(C_INFO)
 	condition	= Info_Diego_JoinAnalyze_Condition;
 	information	= Info_Diego_JoinAnalyze_Info;
 	permanent	= 1;
-	description = "Jak tam z moj¹ opini¹ w Obozie?";
+	description = "Jak tam z mojÄ… opiniÄ… w Obozie?";
 };                       
 
 FUNC INT Info_Diego_JoinAnalyze_Condition()
@@ -868,132 +868,132 @@ FUNC INT Info_Diego_JoinAnalyze_Condition()
 
 FUNC VOID Info_Diego_JoinAnalyze_Info()
 {	
-	AI_Output(hero, self,"Info_Diego_JoinAnalyze_15_00"); //Jak tam z moj¹ opini¹ w Obozie?
-	AI_Output(self, hero,"Info_Diego_JoinAnalyze_11_01"); //Rozmawia³em z kilkoma ludŸmi...
+	AI_Output(hero, self,"Info_Diego_JoinAnalyze_15_00"); //Jak tam z mojÄ… opiniÄ… w Obozie?
+	AI_Output(self, hero,"Info_Diego_JoinAnalyze_11_01"); //RozmawiaÅ‚em z kilkoma ludÅºmi...
 	AI_Output(hero, self,"Info_Diego_JoinAnalyze_15_02"); //I?
 	// -----------------------------------------------------------
 	Points_OC = 0;
 	// -----------------------------------------------------------
 	if (Scatty_ChargeKirgo == LOG_SUCCESS)
 	{
-		AI_Output(self,hero,"Info_Diego_JoinAnalyze_Scatty_11_01"); //Scatty powiedzia³ mi, ¿e pokona³eœ Kirgo.
+		AI_Output(self,hero,"Info_Diego_JoinAnalyze_Scatty_11_01"); //Scatty powiedziaÅ‚ mi, Å¼e pokonaÅ‚eÅ› Kirgo.
 		Points_OC = Points_OC + 2;
 	}
 	else if (Scatty_ChargeKirgo == LOG_FAILED)
 	{
-		AI_Output(self,hero,"Info_Diego_JoinAnalyze_Scatty_11_02"); //Scatty powiedzia³ mi, ¿e pozwoli³eœ Kirgo spuœciæ sobie baty. Chyba nie jest tob¹ zachwycony.
+		AI_Output(self,hero,"Info_Diego_JoinAnalyze_Scatty_11_02"); //Scatty powiedziaÅ‚ mi, Å¼e pozwoliÅ‚eÅ› Kirgo spuÅ›ciÄ‡ sobie baty. Chyba nie jest tobÄ… zachwycony.
 		Points_OC = Points_OC - 1;
 	}
 	else if (Scatty_ChargeKirgo == LOG_RUNNING)
 	{
-		AI_Output(self,hero,"Info_Diego_JoinAnalyze_Scatty_11_03"); //Scatty powiedzia³ mi, ¿e nie mo¿e siê doczekaæ na twoj¹ walkê z Kirgo.
+		AI_Output(self,hero,"Info_Diego_JoinAnalyze_Scatty_11_03"); //Scatty powiedziaÅ‚ mi, Å¼e nie moÅ¼e siÄ™ doczekaÄ‡ na twojÄ… walkÄ™ z Kirgo.
 	};
 	
 	if (Scatty_ChargeKharim == LOG_FAILED)
 	{
-		AI_Output(self,hero,"Info_Diego_JoinAnalyze_Scatty_11_04"); //Ale by³ pod wra¿eniem twojej œmia³oœci. Nie ka¿dy mia³by odwagê, ¿eby wyzwaæ Kharima. Choæby nawet z nim przegra³.
+		AI_Output(self,hero,"Info_Diego_JoinAnalyze_Scatty_11_04"); //Ale byÅ‚ pod wraÅ¼eniem twojej Å›miaÅ‚oÅ›ci. Nie kaÅ¼dy miaÅ‚by odwagÄ™, Å¼eby wyzwaÄ‡ Kharima. ChoÄ‡by nawet z nim przegraÅ‚.
 		Points_OC = Points_OC + 2;
 	}
 	else if (Scatty_ChargeKharim == LOG_SUCCESS)
 	{
-		AI_Output(self,hero,"Info_Diego_JoinAnalyze_Scatty_11_05"); //Ale by³ pod wielkim wra¿eniem twojej walki z Kharimem. Bez przerwy opowiada jaki to z ciebie wojownik. 
+		AI_Output(self,hero,"Info_Diego_JoinAnalyze_Scatty_11_05"); //Ale byÅ‚ pod wielkim wraÅ¼eniem twojej walki z Kharimem. Bez przerwy opowiada jaki to z ciebie wojownik. 
 		Points_OC = Points_OC + 5;
 	}
 	else if (Scatty_ChargeKharim == LOG_RUNNING)
 	{
-		AI_Output(self,hero,"Info_Diego_JoinAnalyze_Scatty_11_06"); //I nie mo¿e siê doczekaæ, kiedy staniesz do walki z Kharimem.
+		AI_Output(self,hero,"Info_Diego_JoinAnalyze_Scatty_11_06"); //I nie moÅ¼e siÄ™ doczekaÄ‡, kiedy staniesz do walki z Kharimem.
 	};
 	// -----------------------------------------------------------
 	if (Whistler_BuyMySword == LOG_SUCCESS)
 	{
-		AI_Output(self,hero,"Info_Diego_JoinAnalyze_Whistler_11_01"); //Œwistak opowiedzia³ mi o tej historii z Fiskiem... Có¿, na twoim miejscu wzi¹³bym tê rudê i da³ nogê, ale tak, czy inaczej - Œwistak chyba bardzo ciê polubi³.
+		AI_Output(self,hero,"Info_Diego_JoinAnalyze_Whistler_11_01"); //Åšwistak opowiedziaÅ‚ mi o tej historii z Fiskiem... CÃ³Å¼, na twoim miejscu wziÄ…Å‚bym tÄ™ rudÄ™ i daÅ‚ nogÄ™, ale tak, czy inaczej - Åšwistak chyba bardzo ciÄ™ polubiÅ‚.
 		Points_OC = Points_OC + 3;
 	}
 	else if ( (Whistler_BuyMySword == LOG_FAILED) || ( (Whistler_BuyMySword==LOG_RUNNING)&&(Whistler_BuyMySword_Day<=(Wld_GetDay()-2)) ) )
 	{
-		AI_Output(self,hero,"Info_Diego_JoinAnalyze_Whistler_11_02"); //Rozmawia³em ze Œwistakiem. Zwia³eœ z jego rud¹, cwaniaku! Muszê przyznaæ, ¿e œmia³oœci ci nie brakuje!
+		AI_Output(self,hero,"Info_Diego_JoinAnalyze_Whistler_11_02"); //RozmawiaÅ‚em ze Åšwistakiem. ZwiaÅ‚eÅ› z jego rudÄ…, cwaniaku! MuszÄ™ przyznaÄ‡, Å¼e Å›miaÅ‚oÅ›ci ci nie brakuje!
 		Points_OC = Points_OC + 2;
 	}
 	else if (Whistler_BuyMySword == LOG_RUNNING)
 	{
-		AI_Output(self,hero,"Info_Diego_JoinAnalyze_Whistler_11_03"); //Œwistak czeka na swój miecz. Zdecyduj siê wreszcie czy zamierzasz mu go daæ, czy nie. W przeciwnym wypadku mo¿e pomyœleæ, ¿e zwia³eœ z jego rud¹!
+		AI_Output(self,hero,"Info_Diego_JoinAnalyze_Whistler_11_03"); //Åšwistak czeka na swÃ³j miecz. Zdecyduj siÄ™ wreszcie czy zamierzasz mu go daÄ‡, czy nie. W przeciwnym wypadku moÅ¼e pomyÅ›leÄ‡, Å¼e zwiaÅ‚eÅ› z jego rudÄ…!
 		
 	};
 	// -----------------------------------------------------------
 	if (Sly_LostNek == LOG_SUCCESS)			
 	{
-		AI_Output(self,hero,"Info_Diego_JoinAnalyze_Sly_11_01"); //Z³y powiedzia³ mi, ¿e znalaz³eœ Neka. Wydawa³ siê byæ bardzo zadowolony.
+		AI_Output(self,hero,"Info_Diego_JoinAnalyze_Sly_11_01"); //ZÅ‚y powiedziaÅ‚ mi, Å¼e znalazÅ‚eÅ› Neka. WydawaÅ‚ siÄ™ byÄ‡ bardzo zadowolony.
 		Points_OC = Points_OC + 4;
 	}
 	else if (Sly_LostNek == LOG_RUNNING)					
 	{
-		AI_Output(self,hero,"Info_Diego_JoinAnalyze_Sly_11_02"); //Moim zdaniem Z³y myli siê co do Neka. By³ uci¹¿liwy, to fakt, ale nie wierzê, ¿eby zdezerterowa³ do Nowego Obozu.
+		AI_Output(self,hero,"Info_Diego_JoinAnalyze_Sly_11_02"); //Moim zdaniem ZÅ‚y myli siÄ™ co do Neka. ByÅ‚ uciÄ…Å¼liwy, to fakt, ale nie wierzÄ™, Å¼eby zdezerterowaÅ‚ do Nowego Obozu.
 	};
 	// -----------------------------------------------------------
 	if (Fingers_Learnt == LOG_RUNNING)
 	{
-		AI_Output(self,hero,"Info_Diego_JoinAnalyze_Fingers_11_01"); //Mówi³em ci ju¿ o R¹czce! On mo¿e ciê wiele nauczyæ!
+		AI_Output(self,hero,"Info_Diego_JoinAnalyze_Fingers_11_01"); //MÃ³wiÅ‚em ci juÅ¼ o RÄ…czce! On moÅ¼e ciÄ™ wiele nauczyÄ‡!
 	}
 	else if (Fingers_Learnt == LOG_SUCCESS)
 	{
-		AI_Output(self,hero,"Info_Diego_JoinAnalyze_Fingers_11_02"); //R¹czka powiedzia³ mi, ¿e trochê siê ju¿ nauczy³eœ, ale uwa¿a, ¿e móg³byœ byæ jeszcze lepszy.
+		AI_Output(self,hero,"Info_Diego_JoinAnalyze_Fingers_11_02"); //RÄ…czka powiedziaÅ‚ mi, Å¼e trochÄ™ siÄ™ juÅ¼ nauczyÅ‚eÅ›, ale uwaÅ¼a, Å¼e mÃ³gÅ‚byÅ› byÄ‡ jeszcze lepszy.
 		Points_OC = Points_OC + 3;
 	};
 	// -----------------------------------------------------------
 	if (Dexter_GetKalomsRecipe == LOG_RUNNING)
 	{
-		AI_Output(self,hero,"Info_Diego_JoinAnalyze_Dexter_11_01"); //Muszê powa¿nie porozmawiaæ z Dexterem. Wykorzystuje ciê do za³atwiania w³asnych porachunków.
-		AI_Output(self,hero,"Info_Diego_JoinAnalyze_Dexter_11_02"); //Ale jeœli chodzi o nasz test - nie ma ¿adnych przepisów. Jeœli uda ci siê dokonaæ czegoœ TAKIEGO, to bêdzie wielki krok do przodu.
+		AI_Output(self,hero,"Info_Diego_JoinAnalyze_Dexter_11_01"); //MuszÄ™ powaÅ¼nie porozmawiaÄ‡ z Dexterem. Wykorzystuje ciÄ™ do zaÅ‚atwiania wÅ‚asnych porachunkÃ³w.
+		AI_Output(self,hero,"Info_Diego_JoinAnalyze_Dexter_11_02"); //Ale jeÅ›li chodzi o nasz test - nie ma Å¼adnych przepisÃ³w. JeÅ›li uda ci siÄ™ dokonaÄ‡ czegoÅ› TAKIEGO, to bÄ™dzie wielki krok do przodu.
 		
 	}
 	else if (Dexter_GetKalomsRecipe == LOG_SUCCESS)
 	{
-		AI_Output(self,hero,"Info_Diego_JoinAnalyze_Dexter_11_03"); //Naprawdê uda³o ci siê zdobyæ przepis Kaloma. Dexter jest pod wra¿eniem. Ja zreszt¹ te¿!
+		AI_Output(self,hero,"Info_Diego_JoinAnalyze_Dexter_11_03"); //NaprawdÄ™ udaÅ‚o ci siÄ™ zdobyÄ‡ przepis Kaloma. Dexter jest pod wraÅ¼eniem. Ja zresztÄ… teÅ¼!
 		Points_OC = Points_OC + 5;
 	};
 	// -----------------------------------------------------------
 	if (Thorus_MordragKo == LOG_RUNNING)
 	{
-		AI_Output(self,hero,"Info_Diego_JoinAnalyze_Thorus_11_01"); //Ta sprawa z Mordragiem to nie lada wyzwanie. Niez³y z niego wojownik. Musisz porz¹dnie poæwiczyæ, jeœli chcesz go pokonaæ.
+		AI_Output(self,hero,"Info_Diego_JoinAnalyze_Thorus_11_01"); //Ta sprawa z Mordragiem to nie lada wyzwanie. NiezÅ‚y z niego wojownik. Musisz porzÄ…dnie poÄ‡wiczyÄ‡, jeÅ›li chcesz go pokonaÄ‡.
 	}
 	else if (Thorus_MordragKo == LOG_SUCCESS)
 	{
-		AI_Output(self,hero,"Info_Diego_JoinAnalyze_Thorus_11_02"); //Thorus uwa¿a, ¿e przyda siê nam ktoœ taki jak ty - to dla ciebie niezwykle korzystne.
+		AI_Output(self,hero,"Info_Diego_JoinAnalyze_Thorus_11_02"); //Thorus uwaÅ¼a, Å¼e przyda siÄ™ nam ktoÅ› taki jak ty - to dla ciebie niezwykle korzystne.
 		Points_OC = Points_OC + 5;
 	}
 	else if (Thorus_MordragKo == LOG_FAILED)
 	{
-		AI_Output(self,hero,"Info_Diego_JoinAnalyze_Thorus_11_03"); //Thorus dosta³ ataku apopleksji. Zreszt¹ wcale mu siê nie dziwiê. Jak mo¿na A¯ TAK schrzaniæ robotê?
+		AI_Output(self,hero,"Info_Diego_JoinAnalyze_Thorus_11_03"); //Thorus dostaÅ‚ ataku apopleksji. ZresztÄ… wcale mu siÄ™ nie dziwiÄ™. Jak moÅ¼na AÅ» TAK schrzaniÄ‡ robotÄ™?
 		Points_OC = Points_OC - 5;						
 	}
 	// ----WEITER-------------------------------------------------------
 	if (Fisk_GetNewHehler == LOG_SUCCESS)
 	{
-		AI_Output(self,hero,"Info_Diego_JoinAnalyze_Fisk_11_01"); //Fisk powiedzia³ mi, ze go zaskoczy³eœ. W ka¿dym razie bêdzie po twojej stronie.
+		AI_Output(self,hero,"Info_Diego_JoinAnalyze_Fisk_11_01"); //Fisk powiedziaÅ‚ mi, ze go zaskoczyÅ‚eÅ›. W kaÅ¼dym razie bÄ™dzie po twojej stronie.
 		Points_OC = Points_OC + 5;
 	}
 	else if ( (MordragKO_HauAb==TRUE) || (MordragKO_StayAtNC==TRUE) )
 	{
-		AI_Output(self,hero,"Info_Diego_JoinAnalyze_Fisk_11_02"); //Fisk bardzo siê na ciebie wkurzy³. Na twoim miejscu znalaz³bym kogoœ na miejsce Mordraga.
+		AI_Output(self,hero,"Info_Diego_JoinAnalyze_Fisk_11_02"); //Fisk bardzo siÄ™ na ciebie wkurzyÅ‚. Na twoim miejscu znalazÅ‚bym kogoÅ› na miejsce Mordraga.
 	};
 	// -----------------------------------------------------------
 	if (points_oc > 15)// runtergesetzt!! // Bei 20 + BringList = Aufnahme
 	{
-		AI_Output (self, hero,"Info_Diego_Points_11_00"); //Uda³o ci siê zjednaæ wystarczaj¹co wiele osób.
+		AI_Output (self, hero,"Info_Diego_Points_11_00"); //UdaÅ‚o ci siÄ™ zjednaÄ‡ wystarczajÄ…co wiele osÃ³b.
 		
 		if hero.level >= 5
 		{
 			if (Diego_BringList == LOG_SUCCESS)
 			{
-				AI_Output (self, hero,"Info_Diego_Points_11_01"); //Przeszed³eœ równie¿ test zaufania. IdŸ do Thorusa. Ju¿ go o wszystkim powiadomi³em. Pozwoli ci siê spotkaæ z Gomezem.
+				AI_Output (self, hero,"Info_Diego_Points_11_01"); //PrzeszedÅ‚eÅ› rÃ³wnieÅ¼ test zaufania. IdÅº do Thorusa. JuÅ¼ go o wszystkim powiadomiÅ‚em. Pozwoli ci siÄ™ spotkaÄ‡ z Gomezem.
 				Diego_GomezAudience = TRUE;
 				
 				Log_SetTopicStatus(CH1_JoinOC, LOG_SUCCESS);
-				B_LogEntry(CH1_JoinOC,"Diego za³atwi³ mi audiencjê u Gomeza. Teraz muszê jeszcze zamieniæ s³owo z Thorusem. Wkrótce bêdê jednym z ludzi Gomeza!");
+				B_LogEntry(CH1_JoinOC,"Diego zaÅ‚atwiÅ‚ mi audiencjÄ™ u Gomeza. Teraz muszÄ™ jeszcze zamieniÄ‡ sÅ‚owo z Thorusem. WkrÃ³tce bÄ™dÄ™ jednym z ludzi Gomeza!");
 			}
 			else
 			{
-				AI_Output (self, hero,"Info_Diego_Points_11_02"); //Ale musisz jeszcze przejœæ test zaufania.
+				AI_Output (self, hero,"Info_Diego_Points_11_02"); //Ale musisz jeszcze przejÅ›Ä‡ test zaufania.
 			};
 		}
 		else
@@ -1003,11 +1003,11 @@ FUNC VOID Info_Diego_JoinAnalyze_Info()
 	}
 	else if (points_oc > 10)
 	{
-		AI_Output (self, hero,"Info_Diego_Points_11_10"); //W sumie - ca³kiem nieŸle jak na ¿ó³todzioba.
+		AI_Output (self, hero,"Info_Diego_Points_11_10"); //W sumie - caÅ‚kiem nieÅºle jak na Å¼Ã³Å‚todzioba.
 	}
 	else if points_oc >= 0
 	{
-		AI_Output (self, hero,"Info_Diego_Points_11_20"); //Bierz siê do roboty. Przed tob¹ jeszcze daleka droga, jeœli chcesz do czegoœ dojœæ w tym obozie.
+		AI_Output (self, hero,"Info_Diego_Points_11_20"); //Bierz siÄ™ do roboty. Przed tobÄ… jeszcze daleka droga, jeÅ›li chcesz do czegoÅ› dojÅ›Ä‡ w tym obozie.
 	};
 	/*else
 	{
@@ -1053,7 +1053,7 @@ INSTANCE Info_Diego_WhatToSayToGomez (C_INFO)
 	condition	= Info_Diego_WhatToSayToGomez_Condition;
 	information	= Info_Diego_WhatToSayToGomez_Info;
 	permanent	= 0;
-	description = "Co mam zrobiæ, kiedy stanê przed Gomezem?";
+	description = "Co mam zrobiÄ‡, kiedy stanÄ™ przed Gomezem?";
 };                       
 
 FUNC INT Info_Diego_WhatToSayToGomez_Condition()
@@ -1066,9 +1066,9 @@ FUNC INT Info_Diego_WhatToSayToGomez_Condition()
 
 FUNC VOID Info_Diego_WhatToSayToGomez_Info()
 {
-	AI_Output (hero, self,"Info_Diego_WhatToSayToGomez_Info_15_00"); //Co mam zrobiæ, kiedy stanê przed Gomezem?
-	AI_Output (self, hero,"Info_Diego_WhatToSayToGomez_Info_11_01"); //Gomez podejmuje decyzje na podstawie instynktu. Jeœli spodoba mu siê twoja gêba - pozwoli ci zostaæ.
-	AI_Output (self, hero,"Info_Diego_WhatToSayToGomez_Info_11_02"); //Od tej pory musisz sobie radziæ sam - postaraj siê! Powodzenia!
+	AI_Output (hero, self,"Info_Diego_WhatToSayToGomez_Info_15_00"); //Co mam zrobiÄ‡, kiedy stanÄ™ przed Gomezem?
+	AI_Output (self, hero,"Info_Diego_WhatToSayToGomez_Info_11_01"); //Gomez podejmuje decyzje na podstawie instynktu. JeÅ›li spodoba mu siÄ™ twoja gÄ™ba - pozwoli ci zostaÄ‡.
+	AI_Output (self, hero,"Info_Diego_WhatToSayToGomez_Info_11_02"); //Od tej pory musisz sobie radziÄ‡ sam - postaraj siÄ™! Powodzenia!
 };
 
 
@@ -1109,20 +1109,20 @@ FUNC void  PC_Thief_ARMOR_Info()
 	
 	if (Npc_HasItems (hero,ItMinugget) >= VALUE_STT_ARMOR_H)
 	{
-		AI_Output			(hero, self,"PC_Thief_ARMOR_Info_15_01"); //Mogê dostaæ tak¹ zbrojê jak twoja?
-		AI_Output			(self, hero,"PC_Thief_ARMOR_Info_11_02"); //A masz doœæ rudy?
+		AI_Output			(hero, self,"PC_Thief_ARMOR_Info_15_01"); //MogÄ™ dostaÄ‡ takÄ… zbrojÄ™ jak twoja?
+		AI_Output			(self, hero,"PC_Thief_ARMOR_Info_11_02"); //A masz doÅ›Ä‡ rudy?
 
 		CreateInvItem 		(hero,			STT_ARMOR_H);
 		B_GiveInvItems		(hero, self,	ItMinugget,	VALUE_STT_ARMOR_H);
 		
-		//hier nur ein Text für die Bildschirmausgabe
+		//hier nur ein Text fÃ¼r die Bildschirmausgabe
 		CreateInvItem		(self, 			ItAmArrow);
 		B_GiveInvItems		(self, hero,	ItAmArrow,	1);
 		Npc_RemoveInvItem	(hero,			ItAmArrow);
 	}
 	else
 	{
-		AI_Output (self, hero,"PC_Thief_ARMOR_Info_11_03"); //Zdob¹dŸ rudê, to dostaniesz zbrojê.
+		AI_Output (self, hero,"PC_Thief_ARMOR_Info_11_03"); //ZdobÄ…dÅº rudÄ™, to dostaniesz zbrojÄ™.
 	};
 };  
 
@@ -1161,26 +1161,26 @@ FUNC int  PC_Thief_MEETAGAIN_Condition()
 func void  PC_Thief_MEETAGAIN_Info()
 {
 	AI_GotoNpc(self,hero);
-	AI_Output (self, hero,"PC_Thief_MEETAGAIN_Info_11_00"); //Hej! Myœla³em, ¿e ju¿ nie ¿yjesz!
-	AI_Output (hero, self,"PC_Thief_MEETAGAIN_Info_15_01"); //Parê razy te¿ mi siê tak wydawa³o.
-	AI_Output (self, hero,"PC_Thief_MEETAGAIN_Info_11_02"); //Wiele siê wydarzy³o od naszego ostatniego spotkania. S³ysza³em, ¿e mia³eœ swój wk³ad w wielkie przywo³anie!
-	AI_Output (hero, self,"PC_Thief_MEETAGAIN_Info_15_03"); //Widzê, ¿e jesteœ œwietnie poinformowany.
-	AI_Output (self, hero,"PC_Thief_MEETAGAIN_Info_11_04"); //Lepiej ni¿ myœlisz... Teraz szukasz kamienia ogniskuj¹cego?
-	AI_Output (hero, self,"PC_Thief_MEETAGAIN_Info_15_05"); //Tak. Powinien byæ gdzieœ w pobli¿u.
-	AI_Output (self, hero,"PC_Thief_MEETAGAIN_Info_11_06"); //Wiem, gdzie go mo¿na znaleŸæ. Jest tylko jeden problem.
+	AI_Output (self, hero,"PC_Thief_MEETAGAIN_Info_11_00"); //Hej! MyÅ›laÅ‚em, Å¼e juÅ¼ nie Å¼yjesz!
+	AI_Output (hero, self,"PC_Thief_MEETAGAIN_Info_15_01"); //ParÄ™ razy teÅ¼ mi siÄ™ tak wydawaÅ‚o.
+	AI_Output (self, hero,"PC_Thief_MEETAGAIN_Info_11_02"); //Wiele siÄ™ wydarzyÅ‚o od naszego ostatniego spotkania. SÅ‚yszaÅ‚em, Å¼e miaÅ‚eÅ› swÃ³j wkÅ‚ad w wielkie przywoÅ‚anie!
+	AI_Output (hero, self,"PC_Thief_MEETAGAIN_Info_15_03"); //WidzÄ™, Å¼e jesteÅ› Å›wietnie poinformowany.
+	AI_Output (self, hero,"PC_Thief_MEETAGAIN_Info_11_04"); //Lepiej niÅ¼ myÅ›lisz... Teraz szukasz kamienia ogniskujÄ…cego?
+	AI_Output (hero, self,"PC_Thief_MEETAGAIN_Info_15_05"); //Tak. Powinien byÄ‡ gdzieÅ› w pobliÅ¼u.
+	AI_Output (self, hero,"PC_Thief_MEETAGAIN_Info_11_06"); //Wiem, gdzie go moÅ¼na znaleÅºÄ‡. Jest tylko jeden problem.
 	AI_Output (hero, self,"PC_Thief_MEETAGAIN_Info_15_07"); //Rozumiem. Czego chcesz?
-	AI_Output (self, hero,"PC_Thief_MEETAGAIN_Info_11_08"); //Widzê, ¿e szybko siê uczysz, ale nie o to mi chodzi³o.
-	AI_Output (hero, self,"PC_Thief_MEETAGAIN_Info_15_09"); //Nie? Wiêc có¿ to za problem?
-	AI_Output (self, hero,"PC_Thief_MEETAGAIN_Info_11_10"); //O, to ca³e trzy tony problemów!
-	AI_Output (self, hero,"PC_Thief_MEETAGAIN_Info_11_11"); //ChodŸmy. Za chwilê sam zobaczysz.
+	AI_Output (self, hero,"PC_Thief_MEETAGAIN_Info_11_08"); //WidzÄ™, Å¼e szybko siÄ™ uczysz, ale nie o to mi chodziÅ‚o.
+	AI_Output (hero, self,"PC_Thief_MEETAGAIN_Info_15_09"); //Nie? WiÄ™c cÃ³Å¼ to za problem?
+	AI_Output (self, hero,"PC_Thief_MEETAGAIN_Info_11_10"); //O, to caÅ‚e trzy tony problemÃ³w!
+	AI_Output (self, hero,"PC_Thief_MEETAGAIN_Info_11_11"); //ChodÅºmy. Za chwilÄ™ sam zobaczysz.
 
  	self.aivar[AIV_PARTYMEMBER] = TRUE;
 	Npc_ExchangeRoutine (self,"GuideTroll");
 
 	Log_CreateTopic		(CH3_TrollCanyon,	LOG_MISSION);
 	Log_SetTopicStatus	(CH3_TrollCanyon,	LOG_RUNNING);
-	B_LogEntry		(CH3_TrollCanyon,"W pobli¿u pó³nocnego kamienia ogniskuj¹cego, niespodziewanie natkn¹³em siê na Diego. Ostrzeg³ mnie, ¿e coœ 'wielkiego' czeka na mnie na koñcu tego kanionu.");
-	B_LogEntry		(CH3_TrollCanyon,"Jakimœ cudem dowiedzia³ siê o moich dzia³aniach w obozie Bractwa oraz o poszukiwaniach kamienia. Dalej pójdziemy razem.");
+	B_LogEntry		(CH3_TrollCanyon,"W pobliÅ¼u pÃ³Å‚nocnego kamienia ogniskujÄ…cego, niespodziewanie natknÄ…Å‚em siÄ™ na Diego. OstrzegÅ‚ mnie, Å¼e coÅ› 'wielkiego' czeka na mnie na koÅ„cu tego kanionu.");
+	B_LogEntry		(CH3_TrollCanyon,"JakimÅ› cudem dowiedziaÅ‚ siÄ™ o moich dziaÅ‚aniach w obozie Bractwa oraz o poszukiwaniach kamienia. Dalej pÃ³jdziemy razem.");
 
 	AI_StopProcessInfos	(self);
 };
@@ -1211,12 +1211,12 @@ func void  PC_Thief_SHOWFOCUS_Info()
 	//AI_PointAt (self, );
 	//AI_StopPointAt (self);
 	
-	AI_Output (self, hero,"PC_Thief_SHOWFOCUS_Info_11_01"); //Po lewej stronie tego kanionu znajdziesz wejœcie do jaskini, która prowadzi do kamienia.
-	AI_Output (hero, self,"PC_Thief_SHOWFOCUS_Info_15_02"); //Wszystko jasne. Jednak najpierw musimy siê jakoœ pozbyæ tamtego bydlaka.
-	AI_Output (self, hero,"PC_Thief_SHOWFOCUS_Info_11_03"); //Spróbuj znaleŸæ jakiœ jego s³aby punkt albo inny sposób na pokonanie tego Trolla.
-	AI_Output (self, hero,"PC_Thief_SHOWFOCUS_Info_11_04"); //Œci¹gnê na siebie jego uwagê.
+	AI_Output (self, hero,"PC_Thief_SHOWFOCUS_Info_11_01"); //Po lewej stronie tego kanionu znajdziesz wejÅ›cie do jaskini, ktÃ³ra prowadzi do kamienia.
+	AI_Output (hero, self,"PC_Thief_SHOWFOCUS_Info_15_02"); //Wszystko jasne. Jednak najpierw musimy siÄ™ jakoÅ› pozbyÄ‡ tamtego bydlaka.
+	AI_Output (self, hero,"PC_Thief_SHOWFOCUS_Info_11_03"); //SprÃ³buj znaleÅºÄ‡ jakiÅ› jego sÅ‚aby punkt albo inny sposÃ³b na pokonanie tego Trolla.
+	AI_Output (self, hero,"PC_Thief_SHOWFOCUS_Info_11_04"); //ÅšciÄ…gnÄ™ na siebie jego uwagÄ™.
 
-	B_LogEntry		(CH3_TrollCanyon,"Na naszej drodze stan¹³ ogromny troll. Diego zamierza œci¹gn¹æ na siebie jego uwagê a ja mam znaleŸæ jakiœ s³aby punkt.");
+	B_LogEntry		(CH3_TrollCanyon,"Na naszej drodze stanÄ…Å‚ ogromny troll. Diego zamierza Å›ciÄ…gnÄ…Ä‡ na siebie jego uwagÄ™ a ja mam znaleÅºÄ‡ jakiÅ› sÅ‚aby punkt.");
 
 	Npc_ExchangeRoutine	(self,	"WaitAtWheel");
 
@@ -1252,10 +1252,10 @@ FUNC int  PC_Thief_AFTERTROLL_Condition()
 func void  PC_Thief_AFTERTROLL_Info()
 {
 	AI_GotoNpc			(self, hero);
-	AI_Output			(self, hero,"PC_Thief_AFTERTROLL_Info_11_01"); //To by³o niesamowite. Niez³y jesteœ. Teraz mo¿esz iœæ po kamieñ ogniskuj¹cy.
-	AI_Output			(self, hero,"PC_Thief_AFTERTROLL_Info_11_02"); //Ja dopilnujê, ¿ebyœmy nie mieli ju¿ wiêcej niemi³ych niespodzianek.
+	AI_Output			(self, hero,"PC_Thief_AFTERTROLL_Info_11_01"); //To byÅ‚o niesamowite. NiezÅ‚y jesteÅ›. Teraz moÅ¼esz iÅ›Ä‡ po kamieÅ„ ogniskujÄ…cy.
+	AI_Output			(self, hero,"PC_Thief_AFTERTROLL_Info_11_02"); //Ja dopilnujÄ™, Å¼ebyÅ›my nie mieli juÅ¼ wiÄ™cej niemiÅ‚ych niespodzianek.
 
-	B_LogEntry		(CH3_TrollCanyon,"Pokonaliœmy trolla! Teraz mogê zaj¹æ siê ko³owrotem podnosz¹cym kratê przed platform¹ z kamieniem ogniskuj¹cym.");
+	B_LogEntry		(CH3_TrollCanyon,"PokonaliÅ›my trolla! Teraz mogÄ™ zajÄ…Ä‡ siÄ™ koÅ‚owrotem podnoszÄ…cym kratÄ™ przed platformÄ… z kamieniem ogniskujÄ…cym.");
 
 	AI_StopProcessInfos	(self);
 };
@@ -1282,8 +1282,8 @@ FUNC int  PC_Thief_WHEEL_Condition()
 };
 FUNC void  PC_Thief_WHEEL_Info()
 {
-	AI_Output 			(self, hero,"PC_Thief_WHEEL_Info_11_01"); //Ko³owrót chyba siê zaci¹³!
-	AI_Output 			(self, hero,"PC_Thief_WHEEL_Info_11_02"); //Czekaj, mo¿e uda mi siê go naprawiæ!
+	AI_Output 			(self, hero,"PC_Thief_WHEEL_Info_11_01"); //KoÅ‚owrÃ³t chyba siÄ™ zaciÄ…Å‚!
+	AI_Output 			(self, hero,"PC_Thief_WHEEL_Info_11_02"); //Czekaj, moÅ¼e uda mi siÄ™ go naprawiÄ‡!
 
 	AI_StopProcessInfos	(self);
 	AI_GotoWP 			(self,	"LOCATION_12_14_WHEEL");
@@ -1312,10 +1312,10 @@ FUNC int  PC_Thief_FIXWHEEL_Condition()
 };
 func void  PC_Thief_FIXWHEEL_Info()
 {
-	AI_Output 			(self, hero,"PC_Thief_FIXWHEEL_Info_11_01"); //No, teraz powinno dzia³aæ!
+	AI_Output 			(self, hero,"PC_Thief_FIXWHEEL_Info_11_01"); //No, teraz powinno dziaÅ‚aÄ‡!
 	Troll_Wheel = 2;	// Winde repariert!
 
-	B_LogEntry		(CH3_TrollCanyon,"Diego naprawi³ ko³owrót. Teraz nic ju¿ nie stanie mi na drodze.");
+	B_LogEntry		(CH3_TrollCanyon,"Diego naprawiÅ‚ koÅ‚owrÃ³t. Teraz nic juÅ¼ nie stanie mi na drodze.");
 
 	Npc_ExchangeRoutine (self, "WaitAtFocus");
 
@@ -1346,7 +1346,7 @@ func void  PC_Thief_WAITATFOCUS_Info()
 {
 	AI_GotoNpc			(self, hero);
 
-	AI_Output 			(self, hero,"PC_Thief_WAITATFOCUS_Info_11_01"); //IdŸ po kamieñ. Zaczekam na ciebie tutaj!
+	AI_Output 			(self, hero,"PC_Thief_WAITATFOCUS_Info_11_01"); //IdÅº po kamieÅ„. Zaczekam na ciebie tutaj!
 
 	AI_StopProcessInfos	(self);
 };
@@ -1376,13 +1376,13 @@ FUNC void  PC_Thief_GOTIT_Info()
 {
 	AI_GotoNpc			(self, hero);
 
-	AI_Output			(self, hero,"PC_Thief_GOTIT_Info_11_01"); //Widzê, ¿e znalaz³eœ kamieñ! Œwietnie.
-	AI_Output			(self, hero,"PC_Thief_GOTIT_Info_11_02"); //Chyba powinienem znowu zajrzeæ do Starego Obozu. Powodzenia!
-	AI_Output			(hero, self,"PC_Thief_GOTIT_Info_15_03"); //Nie daj siê zabiæ!
-	AI_Output			(self, hero,"PC_Thief_GOTIT_Info_11_04"); //Jeszcze siê zobaczymy.
+	AI_Output			(self, hero,"PC_Thief_GOTIT_Info_11_01"); //WidzÄ™, Å¼e znalazÅ‚eÅ› kamieÅ„! Åšwietnie.
+	AI_Output			(self, hero,"PC_Thief_GOTIT_Info_11_02"); //Chyba powinienem znowu zajrzeÄ‡ do Starego Obozu. Powodzenia!
+	AI_Output			(hero, self,"PC_Thief_GOTIT_Info_15_03"); //Nie daj siÄ™ zabiÄ‡!
+	AI_Output			(self, hero,"PC_Thief_GOTIT_Info_11_04"); //Jeszcze siÄ™ zobaczymy.
 
-	B_LogEntry		(CH3_TrollCanyon,"Mam ju¿ kamieñ ogniskuj¹cy. Teraz pozosta³o tylko przekonaæ parê harpii, ¿e nie zamierzam go prêdko oddawaæ.");
-	B_LogEntry		(CH3_TrollCanyon,"Diego wraca do Starego Obozu. Pewnie siê jeszcze spotkamy...");
+	B_LogEntry		(CH3_TrollCanyon,"Mam juÅ¼ kamieÅ„ ogniskujÄ…cy. Teraz pozostaÅ‚o tylko przekonaÄ‡ parÄ™ harpii, Å¼e nie zamierzam go prÄ™dko oddawaÄ‡.");
+	B_LogEntry		(CH3_TrollCanyon,"Diego wraca do Starego Obozu. Pewnie siÄ™ jeszcze spotkamy...");
 
  	self.aivar[AIV_PARTYMEMBER] = FALSE;
 
@@ -1431,20 +1431,20 @@ func void Info_Diego_OCWARN_Info()
 {
 	AI_GotoNpc			(self,hero);
 
-	AI_Output			(self,hero,"Info_Diego_OCWARN_11_01"); //Hej... Ciii... B¹dŸ cicho!
+	AI_Output			(self,hero,"Info_Diego_OCWARN_11_01"); //Hej... Ciii... BÄ…dÅº cicho!
 	if (Npc_KnowsInfo(hero, Info_Milten_OCWARN))
 	{
-		AI_Output		(hero,self,"Info_Diego_OCWARN_15_02"); //Czeœæ, Diego. Rozmawia³em ju¿ z Miltenem po przeciwnej stronie obozu.
-		AI_Output		(self,hero,"Info_Diego_OCWARN_11_03"); //Dobrze, zatem wiesz ju¿, co siê sta³o.
-		AI_Output		(self,hero,"Info_Diego_OCWARN_11_04"); //A s³ysza³eœ o planowanym ataku na Woln¹ Kopalniê?
+		AI_Output		(hero,self,"Info_Diego_OCWARN_15_02"); //CzeÅ›Ä‡, Diego. RozmawiaÅ‚em juÅ¼ z Miltenem po przeciwnej stronie obozu.
+		AI_Output		(self,hero,"Info_Diego_OCWARN_11_03"); //Dobrze, zatem wiesz juÅ¼, co siÄ™ staÅ‚o.
+		AI_Output		(self,hero,"Info_Diego_OCWARN_11_04"); //A sÅ‚yszaÅ‚eÅ› o planowanym ataku na WolnÄ… KopalniÄ™?
 	}
 	else
 	{
-		AI_Output		(hero,self,"Info_Diego_OCWARN_15_05"); //Czeœæ, Diego. Co ma znaczyæ ta ca³a zabawa w chowanego?
-		AI_Output		(self,hero,"Info_Diego_OCWARN_11_06"); //Nic nie s³ysza³eœ?
+		AI_Output		(hero,self,"Info_Diego_OCWARN_15_05"); //CzeÅ›Ä‡, Diego. Co ma znaczyÄ‡ ta caÅ‚a zabawa w chowanego?
+		AI_Output		(self,hero,"Info_Diego_OCWARN_11_06"); //Nic nie sÅ‚yszaÅ‚eÅ›?
 		AI_Output		(hero,self,"Info_Diego_OCWARN_15_07"); //O czym?
-		AI_Output		(self,hero,"Info_Diego_OCWARN_11_08"); //O zawaleniu siê Starej Kopalni, zamordowaniu Magów Ognia i planach ataku na Woln¹ Kopalniê.
-		AI_Output		(hero,self,"Info_Diego_OCWARN_15_09"); //CO?! O czym ty mówisz?!
+		AI_Output		(self,hero,"Info_Diego_OCWARN_11_08"); //O zawaleniu siÄ™ Starej Kopalni, zamordowaniu MagÃ³w Ognia i planach ataku na WolnÄ… KopalniÄ™.
+		AI_Output		(hero,self,"Info_Diego_OCWARN_15_09"); //CO?! O czym ty mÃ³wisz?!
 	};
 };
 
@@ -1458,7 +1458,7 @@ instance Info_Diego_OCMINE (C_INFO)
 	information	= Info_Diego_OCMINE_Info;
 	important	= 0;
 	permanent	= 0;
-	description = "Jak mog³o dojœæ do zawalenia siê Starej Kopalni?";
+	description = "Jak mogÅ‚o dojÅ›Ä‡ do zawalenia siÄ™ Starej Kopalni?";
 };
 
 FUNC int Info_Diego_OCMINE_Condition()
@@ -1471,10 +1471,10 @@ FUNC int Info_Diego_OCMINE_Condition()
 
 func void Info_Diego_OCMINE_Info()
 {
-	AI_Output		(hero,self,"Info_Diego_OCMINE_15_01"); //Jak mog³o dojœæ do zawalenia siê kopalni?
-	AI_Output		(self,hero,"Info_Diego_OCMINE_11_02"); //Jeden z Kopaczy, któremu uda³o siê uratowaæ, powiedzia³, ¿e kopi¹c na najni¿szym poziomie trafili na podziemn¹ rzekê.
-	AI_Output		(self,hero,"Info_Diego_OCMINE_11_03"); //Kiedy woda wdar³a siê do szybów, popêka³y podpory i runê³a ca³a górna czêœæ.
-	AI_Output		(self,hero,"Info_Diego_OCMINE_11_04"); //Tylko garstce ludzi uda³o siê wydostaæ na powierzchniê.
+	AI_Output		(hero,self,"Info_Diego_OCMINE_15_01"); //Jak mogÅ‚o dojÅ›Ä‡ do zawalenia siÄ™ kopalni?
+	AI_Output		(self,hero,"Info_Diego_OCMINE_11_02"); //Jeden z Kopaczy, ktÃ³remu udaÅ‚o siÄ™ uratowaÄ‡, powiedziaÅ‚, Å¼e kopiÄ…c na najniÅ¼szym poziomie trafili na podziemnÄ… rzekÄ™.
+	AI_Output		(self,hero,"Info_Diego_OCMINE_11_03"); //Kiedy woda wdarÅ‚a siÄ™ do szybÃ³w, popÄ™kaÅ‚y podpory i runÄ™Å‚a caÅ‚a gÃ³rna czÄ™Å›Ä‡.
+	AI_Output		(self,hero,"Info_Diego_OCMINE_11_04"); //Tylko garstce ludzi udaÅ‚o siÄ™ wydostaÄ‡ na powierzchniÄ™.
 };
 
 //***************************************************************************
@@ -1487,7 +1487,7 @@ instance Info_Diego_OCKDF (C_INFO)
 	information	= Info_Diego_OCKDF_Info;
 	important	= 0;
 	permanent	= 0;
-	description = "Co siê sta³o z Magami Ognia?";
+	description = "Co siÄ™ staÅ‚o z Magami Ognia?";
 };
 
 FUNC int Info_Diego_OCKDF_Condition()
@@ -1500,8 +1500,8 @@ FUNC int Info_Diego_OCKDF_Condition()
 
 func void Info_Diego_OCKDF_Info()
 {
-	AI_Output		(hero,self,"Info_Diego_OCKDF_15_01"); //Co siê sta³o z Magami Ognia?
-	AI_Output		(self,hero,"Info_Diego_OCKDF_11_02"); //To d³uga historia.
+	AI_Output		(hero,self,"Info_Diego_OCKDF_15_01"); //Co siÄ™ staÅ‚o z Magami Ognia?
+	AI_Output		(self,hero,"Info_Diego_OCKDF_11_02"); //To dÅ‚uga historia.
 };
 
 //***************************************************************************
@@ -1514,7 +1514,7 @@ instance Info_Diego_OCFM (C_INFO)
 	information	= Info_Diego_OCFM_Info;
 	important	= 0;
 	permanent	= 0;
-	description = "Napad na Woln¹ Kopalniê?";
+	description = "Napad na WolnÄ… KopalniÄ™?";
 };
 
 FUNC int Info_Diego_OCFM_Condition()
@@ -1527,8 +1527,8 @@ FUNC int Info_Diego_OCFM_Condition()
 
 func void Info_Diego_OCFM_Info()
 {
-	AI_Output		(hero,self,"Info_Diego_OCFM_15_01"); //Napad na Woln¹ Kopalniê?
-	AI_Output		(self,hero,"Info_Diego_OCFM_11_02"); //To d³uga historia.
+	AI_Output		(hero,self,"Info_Diego_OCFM_15_01"); //Napad na WolnÄ… KopalniÄ™?
+	AI_Output		(self,hero,"Info_Diego_OCFM_11_02"); //To dÅ‚uga historia.
 };
 
 //***************************************************************************
@@ -1554,15 +1554,15 @@ FUNC int Info_Diego_OCSTORY_Condition()
 
 func void Info_Diego_OCSTORY_Info()
 {
-	AI_Output		(hero,self,"Info_Diego_OCSTORY_15_01"); //Opowiadaj, to nie pierwsza d³uga historia, której musia³em wys³uchaæ.
-	AI_Output		(self,hero,"Info_Diego_OCSTORY_11_02"); //No dobra. Na szczêœcie by³em w³aœnie w siedzibie Magnatów, kiedy dotar³y do nich wieœci o zawaleniu siê kopalni.
-	AI_Output		(self,hero,"Info_Diego_OCSTORY_11_03"); //Kiedy Gomez dowiedzia³ siê o wypadku, oszala³ z wœciek³oœci. Wcale mu siê nie dziwiê - jego autorytet móg³ run¹æ w ka¿dej chwili, razem z kopalni¹.
-	AI_Output		(hero,self,"Info_Diego_OCSTORY_15_04"); //Jasne. Kto kontroluje rudê, kontroluje ca³¹ koloniê!
-	AI_Output		(self,hero,"Info_Diego_OCSTORY_11_05"); //No w³aœnie. Przecie¿ bez sta³ego nap³ywu rudy, handel ze œwiatem zewnêtrznym padnie raz - dwa.
-	AI_Output		(self,hero,"Info_Diego_OCSTORY_11_06"); //Jeœli Gomez nie znajdzie szybko nowego Ÿród³a dochodu, ludzie przestan¹ go s³uchaæ.
-	AI_Output		(hero,self,"Info_Diego_OCSTORY_15_07"); //I dlatego postanowi³ najechaæ Woln¹ Kopalniê?
-	AI_Output		(self,hero,"Info_Diego_OCSTORY_11_08"); //Có¿, obiektywnie rzecz bior¹c, to jedyna szansa Gomeza na zachowanie w³adzy.
-	AI_Output		(self,hero,"Info_Diego_OCSTORY_11_09"); //Dwie godziny temu dwa tuziny stra¿ników wyruszy³y w kierunku Wolnej Kopalni.
+	AI_Output		(hero,self,"Info_Diego_OCSTORY_15_01"); //Opowiadaj, to nie pierwsza dÅ‚uga historia, ktÃ³rej musiaÅ‚em wysÅ‚uchaÄ‡.
+	AI_Output		(self,hero,"Info_Diego_OCSTORY_11_02"); //No dobra. Na szczÄ™Å›cie byÅ‚em wÅ‚aÅ›nie w siedzibie MagnatÃ³w, kiedy dotarÅ‚y do nich wieÅ›ci o zawaleniu siÄ™ kopalni.
+	AI_Output		(self,hero,"Info_Diego_OCSTORY_11_03"); //Kiedy Gomez dowiedziaÅ‚ siÄ™ o wypadku, oszalaÅ‚ z wÅ›ciekÅ‚oÅ›ci. Wcale mu siÄ™ nie dziwiÄ™ - jego autorytet mÃ³gÅ‚ runÄ…Ä‡ w kaÅ¼dej chwili, razem z kopalniÄ….
+	AI_Output		(hero,self,"Info_Diego_OCSTORY_15_04"); //Jasne. Kto kontroluje rudÄ™, kontroluje caÅ‚Ä… koloniÄ™!
+	AI_Output		(self,hero,"Info_Diego_OCSTORY_11_05"); //No wÅ‚aÅ›nie. PrzecieÅ¼ bez staÅ‚ego napÅ‚ywu rudy, handel ze Å›wiatem zewnÄ™trznym padnie raz - dwa.
+	AI_Output		(self,hero,"Info_Diego_OCSTORY_11_06"); //JeÅ›li Gomez nie znajdzie szybko nowego ÅºrÃ³dÅ‚a dochodu, ludzie przestanÄ… go sÅ‚uchaÄ‡.
+	AI_Output		(hero,self,"Info_Diego_OCSTORY_15_07"); //I dlatego postanowiÅ‚ najechaÄ‡ WolnÄ… KopalniÄ™?
+	AI_Output		(self,hero,"Info_Diego_OCSTORY_11_08"); //CÃ³Å¼, obiektywnie rzecz biorÄ…c, to jedyna szansa Gomeza na zachowanie wÅ‚adzy.
+	AI_Output		(self,hero,"Info_Diego_OCSTORY_11_09"); //Dwie godziny temu dwa tuziny straÅ¼nikÃ³w wyruszyÅ‚y w kierunku Wolnej Kopalni.
 
 	B_Story_FMTaken	();
 };
@@ -1577,7 +1577,7 @@ instance Info_Diego_OCWARNNC (C_INFO)
 	information	= Info_Diego_OCWARNNC_Info;
 	important	= 0;
 	permanent	= 0;
-	description = "To szaleñstwo! Muszê uprzedziæ Nowy Obóz.";
+	description = "To szaleÅ„stwo! MuszÄ™ uprzedziÄ‡ Nowy ObÃ³z.";
 };
 
 FUNC int Info_Diego_OCWARNNC_Condition()
@@ -1590,10 +1590,10 @@ FUNC int Info_Diego_OCWARNNC_Condition()
 
 func void Info_Diego_OCWARNNC_Info()
 {
-	AI_Output		(hero,self,"Info_Diego_OCWARNNC_15_01"); //To szaleñstwo! Muszê uprzedziæ Nowy Obóz.
-	AI_Output		(self,hero,"Info_Diego_OCWARNNC_11_02"); //W takim razie lepiej siê pospiesz! Stra¿nicy s¹ ju¿ pewnie niedaleko Wolnej Kopalni.
-	AI_Output		(hero,self,"Info_Diego_OCWARNNC_15_03"); //Ale przecie¿ nie przedr¹ siê tak ³atwo przez obronne fortyfikacje Nowego Obozu!
-	AI_Output		(self,hero,"Info_Diego_OCWARNNC_11_04"); //Wcale nie musz¹ siê przez nie przedzieraæ. Kilka miesiêcy temu znaleŸliœmy œcie¿kê, która prowadzi przez góry wprost do Wolnej Kopalni. Nikt inny nie wie o jej istnieniu.
+	AI_Output		(hero,self,"Info_Diego_OCWARNNC_15_01"); //To szaleÅ„stwo! MuszÄ™ uprzedziÄ‡ Nowy ObÃ³z.
+	AI_Output		(self,hero,"Info_Diego_OCWARNNC_11_02"); //W takim razie lepiej siÄ™ pospiesz! StraÅ¼nicy sÄ… juÅ¼ pewnie niedaleko Wolnej Kopalni.
+	AI_Output		(hero,self,"Info_Diego_OCWARNNC_15_03"); //Ale przecieÅ¼ nie przedrÄ… siÄ™ tak Å‚atwo przez obronne fortyfikacje Nowego Obozu!
+	AI_Output		(self,hero,"Info_Diego_OCWARNNC_11_04"); //Wcale nie muszÄ… siÄ™ przez nie przedzieraÄ‡. Kilka miesiÄ™cy temu znaleÅºliÅ›my Å›cieÅ¼kÄ™, ktÃ³ra prowadzi przez gÃ³ry wprost do Wolnej Kopalni. Nikt inny nie wie o jej istnieniu.
 };
 
 //***************************************************************************
@@ -1606,7 +1606,7 @@ instance Info_Diego_OCGUARDS (C_INFO)
 	information	= Info_Diego_OCGUARDS_Info;
 	important	= 0;
 	permanent	= 0;
-	description = "Widzia³em Stra¿ników pilnuj¹cych zamkniêtych bram.";
+	description = "WidziaÅ‚em StraÅ¼nikÃ³w pilnujÄ…cych zamkniÄ™tych bram.";
 };
 
 FUNC int Info_Diego_OCGUARDS_Condition()
@@ -1619,9 +1619,9 @@ FUNC int Info_Diego_OCGUARDS_Condition()
 
 func void Info_Diego_OCGUARDS_Info()
 {
-	AI_Output		(hero,self,"Info_Diego_OCGUARDS_15_01"); //Widzia³em Stra¿ników pilnuj¹cych zamkniêtych bram.
-	AI_Output		(self,hero,"Info_Diego_OCGUARDS_11_02"); //Trzymaj siê z dala od nich. Zaatakuj¹ ka¿dego, kto spróbuje dostaæ siê do Obozu.
-	AI_Output		(self,hero,"Info_Diego_OCGUARDS_11_03"); //Obawiaj¹ siê odwetu za napad na Woln¹ Kopalniê.
+	AI_Output		(hero,self,"Info_Diego_OCGUARDS_15_01"); //WidziaÅ‚em StraÅ¼nikÃ³w pilnujÄ…cych zamkniÄ™tych bram.
+	AI_Output		(self,hero,"Info_Diego_OCGUARDS_11_02"); //Trzymaj siÄ™ z dala od nich. ZaatakujÄ… kaÅ¼dego, kto sprÃ³buje dostaÄ‡ siÄ™ do Obozu.
+	AI_Output		(self,hero,"Info_Diego_OCGUARDS_11_03"); //ObawiajÄ… siÄ™ odwetu za napad na WolnÄ… KopalniÄ™.
 };
 
 //***************************************************************************
@@ -1634,7 +1634,7 @@ instance Info_Diego_OCMURDER (C_INFO)
 	information	= Info_Diego_OCMURDER_Info;
 	important	= 0;
 	permanent	= 0;
-	description = "Ale co sta³o siê z Magami Ognia?";
+	description = "Ale co staÅ‚o siÄ™ z Magami Ognia?";
 };
 
 FUNC int Info_Diego_OCMURDER_Condition()
@@ -1647,11 +1647,11 @@ FUNC int Info_Diego_OCMURDER_Condition()
 
 func void Info_Diego_OCMURDER_Info()
 {
-	AI_Output		(hero,self,"Info_Diego_OCMURDER_15_01"); //Ale co sta³o siê z Magami Ognia?
-	AI_Output		(self,hero,"Info_Diego_OCMURDER_11_02"); //Corristo i jego towarzysze byli jedynymi ludŸmi w obozie, którzy zachowali zimn¹ krew.
-	AI_Output		(self,hero,"Info_Diego_OCMURDER_11_03"); //Zabronili przeprowadzenia ataku i domagali siê pertraktacji z pozosta³ymi obozami.
-	AI_Output		(hero,self,"Info_Diego_OCMURDER_15_04"); //ZABRONILI Gomezowi przeprowadzenia ataku na Woln¹ Kopalniê?
-	AI_Output		(self,hero,"Info_Diego_OCMURDER_11_05"); //No w³aœnie. Corristo i jego ludzie byli zbyt zadufani w sobie. Gomez przesta³ im ufaæ i kaza³ ich zdradziecko zamordowaæ.
+	AI_Output		(hero,self,"Info_Diego_OCMURDER_15_01"); //Ale co staÅ‚o siÄ™ z Magami Ognia?
+	AI_Output		(self,hero,"Info_Diego_OCMURDER_11_02"); //Corristo i jego towarzysze byli jedynymi ludÅºmi w obozie, ktÃ³rzy zachowali zimnÄ… krew.
+	AI_Output		(self,hero,"Info_Diego_OCMURDER_11_03"); //Zabronili przeprowadzenia ataku i domagali siÄ™ pertraktacji z pozostaÅ‚ymi obozami.
+	AI_Output		(hero,self,"Info_Diego_OCMURDER_15_04"); //ZABRONILI Gomezowi przeprowadzenia ataku na WolnÄ… KopalniÄ™?
+	AI_Output		(self,hero,"Info_Diego_OCMURDER_11_05"); //No wÅ‚aÅ›nie. Corristo i jego ludzie byli zbyt zadufani w sobie. Gomez przestaÅ‚ im ufaÄ‡ i kazaÅ‚ ich zdradziecko zamordowaÄ‡.
 };
 
 //***************************************************************************
@@ -1664,7 +1664,7 @@ instance Info_Diego_OCRETREAT (C_INFO)
 	information	= Info_Diego_OCRETREAT_Info;
 	important	= 0;
 	permanent	= 0;
-	description = "I co teraz zamierzacie zrobiæ? To znaczy - ty i Milten?";
+	description = "I co teraz zamierzacie zrobiÄ‡? To znaczy - ty i Milten?";
 };
 
 FUNC int Info_Diego_OCRETREAT_Condition()
@@ -1677,9 +1677,9 @@ FUNC int Info_Diego_OCRETREAT_Condition()
 
 func void Info_Diego_OCRETREAT_Info()
 {
-	AI_Output		(hero,self,"Info_Diego_OCRETREAT_15_01"); //I co teraz zamierzacie zrobiæ? To znaczy - ty i Milten?
-	AI_Output		(self,hero,"Info_Diego_OCRETREAT_11_02"); //Zostaniemy tu jeszcze przez jakiœ czas. Bêdziemy ostrzegali innych przyjació³, ¿eby nie wpadli w ³apy Stra¿ników.
-	AI_Output		(self,hero,"Info_Diego_OCRETREAT_11_03"); //Ale móg³byœ coœ dla nas zrobiæ.
+	AI_Output		(hero,self,"Info_Diego_OCRETREAT_15_01"); //I co teraz zamierzacie zrobiÄ‡? To znaczy - ty i Milten?
+	AI_Output		(self,hero,"Info_Diego_OCRETREAT_11_02"); //Zostaniemy tu jeszcze przez jakiÅ› czas. BÄ™dziemy ostrzegali innych przyjaciÃ³Å‚, Å¼eby nie wpadli w Å‚apy StraÅ¼nikÃ³w.
+	AI_Output		(self,hero,"Info_Diego_OCRETREAT_11_03"); //Ale mÃ³gÅ‚byÅ› coÅ› dla nas zrobiÄ‡.
 };
 
 //***************************************************************************
@@ -1706,14 +1706,14 @@ FUNC int Info_Diego_OCFAVOR_Condition()
 func void Info_Diego_OCFAVOR_Info()
 {
 	AI_Output		(hero,self,"Info_Diego_OCFAVOR_15_01"); //Nie ma sprawy. O co chodzi?
-	AI_Output		(self,hero,"Info_Diego_OCFAVOR_11_02"); //ZnajdŸ Lestera i Gorna. Musz¹ siê dowiedzieæ o tym, co siê tutaj wydarzy³o.
-	AI_Output		(self,hero,"Info_Diego_OCFAVOR_11_03"); //Powiedz im, ¿e spotkamy siê we czwórkê tam gdzie zwykle.
-	AI_Output		(hero,self,"Info_Diego_OCFAVOR_15_04"); //Jeœli znajdê ich przed tob¹, przeka¿ê im ostrze¿enie i wezwanie na spotkanie.
-	AI_Output		(self,hero,"Info_Diego_OCFAVOR_11_05"); //Dziêki, przyjacielu. Widzê, ¿e równy z ciebie goœæ. IdŸ ju¿. Jeszcze siê kiedyœ spotkamy.
+	AI_Output		(self,hero,"Info_Diego_OCFAVOR_11_02"); //ZnajdÅº Lestera i Gorna. MuszÄ… siÄ™ dowiedzieÄ‡ o tym, co siÄ™ tutaj wydarzyÅ‚o.
+	AI_Output		(self,hero,"Info_Diego_OCFAVOR_11_03"); //Powiedz im, Å¼e spotkamy siÄ™ we czwÃ³rkÄ™ tam gdzie zwykle.
+	AI_Output		(hero,self,"Info_Diego_OCFAVOR_15_04"); //JeÅ›li znajdÄ™ ich przed tobÄ…, przekaÅ¼Ä™ im ostrzeÅ¼enie i wezwanie na spotkanie.
+	AI_Output		(self,hero,"Info_Diego_OCFAVOR_11_05"); //DziÄ™ki, przyjacielu. WidzÄ™, Å¼e rÃ³wny z ciebie goÅ›Ä‡. IdÅº juÅ¼. Jeszcze siÄ™ kiedyÅ› spotkamy.
 				
 	Log_CreateTopic		(CH4_4Friends,		LOG_MISSION);
 	Log_SetTopicStatus	(CH4_4Friends,		LOG_RUNNING);
-	B_LogEntry			(CH4_4Friends,		"Wszyscy Magowie Ognia zginêli. Sytuacja wymyka siê spod kontroli. Diego kaza³ mi powiadomiæ Lestera i Gorna, ¿e maj¹ siê spotkaæ z nim i z Miltenem w tajemnym miejscu. Chyba nie robi¹ tego pierwszy raz!"); 
+	B_LogEntry			(CH4_4Friends,		"Wszyscy Magowie Ognia zginÄ™li. Sytuacja wymyka siÄ™ spod kontroli. Diego kazaÅ‚ mi powiadomiÄ‡ Lestera i Gorna, Å¼e majÄ… siÄ™ spotkaÄ‡ z nim i z Miltenem w tajemnym miejscu. Chyba nie robiÄ… tego pierwszy raz!"); 
 };
 
 
@@ -1765,8 +1765,8 @@ func void Info_Diego_OCFAVOR_Info()
 	AI_Output(self,hero,"Info_Diego_Gamestart_11_01"); //Warum haben sie dich hier reingeworfen?
 	
 	Info_ClearChoices(Info_Diego_Gamestart );
-	Info_AddChoice	 (Info_Diego_Gamestart, "Gewitzter Überfall            (+3 Geschicklichkeit)"	,Info_Diego_Gamestart_Choice_Dex);
-	Info_AddChoice	 (Info_Diego_Gamestart, "Schlägerei mit Folgen         (+3 Stärke)"				,Info_Diego_Gamestart_Choice_Str);
+	Info_AddChoice	 (Info_Diego_Gamestart, "Gewitzter Ãœberfall            (+3 Geschicklichkeit)"	,Info_Diego_Gamestart_Choice_Dex);
+	Info_AddChoice	 (Info_Diego_Gamestart, "SchlÃ¤gerei mit Folgen         (+3 StÃ¤rke)"				,Info_Diego_Gamestart_Choice_Str);
 	Info_AddChoice	 (Info_Diego_Gamestart, "Wahre Worte zum falschen Mann (+3 Mana)"				,Info_Diego_Gamestart_Choice_Man);
 	Info_AddChoice	 (Info_Diego_Gamestart, "Unschuldig                    (+1 auf alle Attribute)"	,Info_Diego_Gamestart_Choice_All);
 };
@@ -1774,7 +1774,7 @@ func void Info_Diego_OCFAVOR_Info()
 FUNC VOID Info_Diego_Gamestart_Choice_Dex()
 {
 	AI_Output(hero,self,"Info_Diego_Gamestart_Choice_Dex_15_00"); //Ich habe ne Ladung Erz verschwinden lassen.
-	AI_Output(hero,self,"Info_Diego_Gamestart_Choice_Dex_15_01"); //Dummerweise hat der Typ bei dem ich sie versteckt habe, lieber die Belohnung für mich kassiert, anstatt mit mir das Erz zu teilen.
+	AI_Output(hero,self,"Info_Diego_Gamestart_Choice_Dex_15_01"); //Dummerweise hat der Typ bei dem ich sie versteckt habe, lieber die Belohnung fÃ¼r mich kassiert, anstatt mit mir das Erz zu teilen.
 	PrintScreen	("Geschicklichkeit +3", -1,-1,"FONT_OLD_20_WHITE.TGA",3);
 	hero.attribute[ATR_DEXTERITY] = hero.attribute[ATR_DEXTERITY]+3;
 	Info_ClearChoices(Info_Diego_Gamestart );
@@ -1782,17 +1782,17 @@ FUNC VOID Info_Diego_Gamestart_Choice_Dex()
 
 FUNC VOID Info_Diego_Gamestart_Choice_Str()
 {
-	AI_Output(hero,self,"Info_Diego_Gamestart_Choice_Str_15_00"); //Eine Herausforderung konnte ich noch nie abschlagen. Auch nicht von des Königs Gardisten. dummerweise hat der König viele Gardisten.
+	AI_Output(hero,self,"Info_Diego_Gamestart_Choice_Str_15_00"); //Eine Herausforderung konnte ich noch nie abschlagen. Auch nicht von des KÃ¶nigs Gardisten. dummerweise hat der KÃ¶nig viele Gardisten.
 	AI_Output(hero,self,"Info_Diego_Gamestart_Choice_Str_15_01"); //Zu viele.	
-	PrintScreen	("Stärke +3", -1,-1,"FONT_OLD_20_WHITE.TGA",3);
+	PrintScreen	("StÃ¤rke +3", -1,-1,"FONT_OLD_20_WHITE.TGA",3);
 	hero.attribute[ATR_STRENGTH] = hero.attribute[ATR_STRENGTH]+3;
 	Info_ClearChoices(Info_Diego_Gamestart );
 };
 
 FUNC VOID Info_Diego_Gamestart_Choice_Man()
 {
-	AI_Output(hero,self,"Info_Diego_Gamestart_Choice_Man_15_00"); //Ich saß in der Kneipe und habe meine Meinung über König, Krieg und Steuern gesagt. 
-	AI_Output(hero,self,"Info_Diego_Gamestart_Choice_Man_15_01"); //Ich hab' mich nur zu spät daran erinnert, dass der, der die Wahrheit spricht, ein schnelles Pferd braucht.
+	AI_Output(hero,self,"Info_Diego_Gamestart_Choice_Man_15_00"); //Ich saÃŸ in der Kneipe und habe meine Meinung Ã¼ber KÃ¶nig, Krieg und Steuern gesagt. 
+	AI_Output(hero,self,"Info_Diego_Gamestart_Choice_Man_15_01"); //Ich hab' mich nur zu spÃ¤t daran erinnert, dass der, der die Wahrheit spricht, ein schnelles Pferd braucht.
 	PrintScreen	("Mana +3", -1,-1,"FONT_OLD_20_WHITE.TGA",3);
 	hero.attribute[ATR_MANA] 		= hero.attribute[ATR_MANA]+3;
 	hero.attribute[ATR_MANA_MAX] 	= hero.attribute[ATR_MANA_MAX]+3;
@@ -1803,10 +1803,10 @@ FUNC VOID Info_Diego_Gamestart_Choice_All()
 {
 	AI_Output(hero,self,"Info_Diego_Gamestart_Choice_All_15_00"); //Ich bin unschuldig!
 	AI_Output(self,hero,"Info_Diego_Gamestart_Choice_All_11_01"); //Du solltest eins wissen: Hier drin ist niemand unschuldig. 
-	AI_Output(self,hero,"Info_Diego_Gamestart_Choice_All_11_02"); //Hier findest du Männer die so ziemlich jedes mögliche Verbrechen begangen haben. Und einen unschuldigen nehmen die nur zu gerne auseinander. 
+	AI_Output(self,hero,"Info_Diego_Gamestart_Choice_All_11_02"); //Hier findest du MÃ¤nner die so ziemlich jedes mÃ¶gliche Verbrechen begangen haben. Und einen unschuldigen nehmen die nur zu gerne auseinander. 
 	AI_Output(self,hero,"Info_Diego_Gamestart_Choice_All_11_03"); //Ich gebe dir nen Tipp, und der ist ganz umsonst. 
 	AI_Output(self,hero,"Info_Diego_Gamestart_Choice_All_11_04"); //Wenn dich jemand fragt, warum du hier bist, sag ihm, du hast einen Typen gekillt, der dich gefragt hat, warum du hier bist. 
-	PrintScreen	("Stärke, Geschick und Mana +1", -1,-1,"FONT_OLD_20_WHITE.TGA",3);
+	PrintScreen	("StÃ¤rke, Geschick und Mana +1", -1,-1,"FONT_OLD_20_WHITE.TGA",3);
 	hero.attribute[ATR_DEXTERITY] 	= hero.attribute[ATR_DEXTERITY]+1;
 	hero.attribute[ATR_STRENGTH] 	= hero.attribute[ATR_STRENGTH]	+1;
 	hero.attribute[ATR_MANA] 		= hero.attribute[ATR_MANA]		+1;

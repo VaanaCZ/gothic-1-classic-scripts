@@ -65,10 +65,10 @@ FUNC int  Info_Xardas_DISTURB_Condition()
 FUNC void  Info_Xardas_DISTURB_Info()
 {
 	B_WhirlAround	(self, hero);
-	AI_Output 		(self, hero,"Info_Xardas_DISTURB_14_01"); //KTO ŒMIE PRZESZKADZAÆ MI W MOICH STUDIACH?
-	AI_Output 		(hero, self,"Info_Xardas_DISTURB_15_02"); //Nazywam siê...
-	AI_Output 		(self, hero,"Info_Xardas_DISTURB_14_03"); //Nie interesuje mnie twoje imiê. To nieistotne.
-	AI_Output 		(self, hero,"Info_Xardas_DISTURB_14_04"); //Liczy siê tylko to, ¿e jesteœ pierwsz¹ osob¹ od wielu lat, której uda³o siê rozwi¹zaæ zagadkê Golemów.
+	AI_Output 		(self, hero,"Info_Xardas_DISTURB_14_01"); //KTO ÅšMIE PRZESZKADZAÄ† MI W MOICH STUDIACH?
+	AI_Output 		(hero, self,"Info_Xardas_DISTURB_15_02"); //Nazywam siÄ™...
+	AI_Output 		(self, hero,"Info_Xardas_DISTURB_14_03"); //Nie interesuje mnie twoje imiÄ™. To nieistotne.
+	AI_Output 		(self, hero,"Info_Xardas_DISTURB_14_04"); //Liczy siÄ™ tylko to, Å¼e jesteÅ› pierwszÄ… osobÄ… od wielu lat, ktÃ³rej udaÅ‚o siÄ™ rozwiÄ…zaÄ‡ zagadkÄ™ GolemÃ³w.
 }; 
 
 //---------------------------------------------------------------------
@@ -81,7 +81,7 @@ instance  Info_Xardas_OTHERS (C_INFO)
 	information	= Info_Xardas_OTHERS_Info;
 	important	= 0;
 	permanent	= 0;
-	description = "Czy ktoœ jeszcze tu zagl¹da³?";
+	description = "Czy ktoÅ› jeszcze tu zaglÄ…daÅ‚?";
 };
 
 FUNC int  Info_Xardas_OTHERS_Condition()
@@ -94,9 +94,9 @@ FUNC int  Info_Xardas_OTHERS_Condition()
 };
 FUNC void  Info_Xardas_OTHERS_Info()
 {
-	AI_Output 		(hero, self,"Info_Xardas_OTHERS_15_01"); //Czy ktoœ jeszcze tu zagl¹da³?
-	AI_Output 		(self, hero,"Info_Xardas_OTHERS_14_02"); //Bardzo rzadko. Zwykle szybko zaczynali mnie irytowaæ i nasy³a³em na nich któr¹œ z moich magicznych istot.
-	AI_Output 		(hero, self,"Info_Xardas_OTHERS_15_03"); //Wolisz wieœæ ¿ywot samotnika, czy¿ nie?
+	AI_Output 		(hero, self,"Info_Xardas_OTHERS_15_01"); //Czy ktoÅ› jeszcze tu zaglÄ…daÅ‚?
+	AI_Output 		(self, hero,"Info_Xardas_OTHERS_14_02"); //Bardzo rzadko. Zwykle szybko zaczynali mnie irytowaÄ‡ i nasyÅ‚aÅ‚em na nich ktÃ³rÄ…Å› z moich magicznych istot.
+	AI_Output 		(hero, self,"Info_Xardas_OTHERS_15_03"); //Wolisz wieÅ›Ä‡ Å¼ywot samotnika, czyÅ¼ nie?
 }; 
 
 //---------------------------------------------------------------------
@@ -109,7 +109,7 @@ instance  Info_Xardas_SATURAS (C_INFO)
 	information	= Info_Xardas_SATURAS_Info;
 	important	= 0;
 	permanent	= 0;
-	description = "Przysy³a mnie Saturas. Potrzebujemy twojej pomocy!";
+	description = "PrzysyÅ‚a mnie Saturas. Potrzebujemy twojej pomocy!";
 };
 
 FUNC int  Info_Xardas_SATURAS_Condition()
@@ -122,9 +122,9 @@ FUNC int  Info_Xardas_SATURAS_Condition()
 };
 FUNC void  Info_Xardas_SATURAS_Info()
 {
-	AI_Output 		(hero, self,"Info_Xardas_SATURAS_15_01"); //Przysy³a mnie Saturas. Potrzebujemy twojej pomocy!
-	AI_Output 		(hero, self,"Info_Xardas_SATURAS_15_02"); //Magowie Wody zamierzaj¹ zrobiæ u¿ytek ze swojego kopca rudy.
-	AI_Output 		(self, hero,"Info_Xardas_SATURAS_14_03"); //Detonacja wielkiej góry nie jest ¿adnym rozwi¹zaniem!
+	AI_Output 		(hero, self,"Info_Xardas_SATURAS_15_01"); //PrzysyÅ‚a mnie Saturas. Potrzebujemy twojej pomocy!
+	AI_Output 		(hero, self,"Info_Xardas_SATURAS_15_02"); //Magowie Wody zamierzajÄ… zrobiÄ‡ uÅ¼ytek ze swojego kopca rudy.
+	AI_Output 		(self, hero,"Info_Xardas_SATURAS_14_03"); //Detonacja wielkiej gÃ³ry nie jest Å¼adnym rozwiÄ…zaniem!
 	AI_Output 		(hero, self,"Info_Xardas_SATURAS_15_04"); //Nie jest?
 	AI_Output 		(self, hero,"Info_Xardas_SATURAS_14_05"); //NIE!
 }; 
@@ -139,7 +139,7 @@ instance  Info_Xardas_KDW (C_INFO)
 	information	= Info_Xardas_KDW_Info;
 	important	= 0;
 	permanent	= 0;
-	description = "Wszyscy Magowie Ognia zginêli!";
+	description = "Wszyscy Magowie Ognia zginÄ™li!";
 };
 
 FUNC int  Info_Xardas_KDW_Condition()
@@ -152,10 +152,10 @@ FUNC int  Info_Xardas_KDW_Condition()
 
 FUNC void  Info_Xardas_KDW_Info()
 {
-	AI_Output 		(hero, self,"Info_Xardas_KDW_15_01"); //Wszyscy Magowie Ognia zginêli!
-	AI_Output 		(hero, self,"Info_Xardas_KDW_15_02"); //Gomez kaza³ ich zamordowaæ.
-	AI_Output 		(self, hero,"Info_Xardas_KDW_14_03"); //Nie powiem, ¿ebym by³ szczególnie zaskoczony. Tym durnym barbarzyñcom z zamku - z Gomezem na czele - nigdy nie mo¿na by³o ufaæ.
-	AI_Output 		(self, hero,"Info_Xardas_KDW_14_04"); //Pomagaj¹c Gomezowi w objêciu w³adzy, Corristo i inni sami kopali sobie grób.
+	AI_Output 		(hero, self,"Info_Xardas_KDW_15_01"); //Wszyscy Magowie Ognia zginÄ™li!
+	AI_Output 		(hero, self,"Info_Xardas_KDW_15_02"); //Gomez kazaÅ‚ ich zamordowaÄ‡.
+	AI_Output 		(self, hero,"Info_Xardas_KDW_14_03"); //Nie powiem, Å¼ebym byÅ‚ szczegÃ³lnie zaskoczony. Tym durnym barbarzyÅ„com z zamku - z Gomezem na czele - nigdy nie moÅ¼na byÅ‚o ufaÄ‡.
+	AI_Output 		(self, hero,"Info_Xardas_KDW_14_04"); //PomagajÄ…c Gomezowi w objÄ™ciu wÅ‚adzy, Corristo i inni sami kopali sobie grÃ³b.
 }; 
 
 //---------------------------------------------------------------------
@@ -168,7 +168,7 @@ instance  Info_Xardas_SLEEPER (C_INFO)
 	information	= Info_Xardas_SLEEPER_Info;
 	important	= 0;
 	permanent	= 0;
-	description = "Tak zwany 'Œni¹cy' okaza³ siê ponoæ potê¿nym demonem zag³ady.";
+	description = "Tak zwany 'ÅšniÄ…cy' okazaÅ‚ siÄ™ ponoÄ‡ potÄ™Å¼nym demonem zagÅ‚ady.";
 };
 
 FUNC int  Info_Xardas_SLEEPER_Condition()
@@ -181,10 +181,10 @@ FUNC int  Info_Xardas_SLEEPER_Condition()
 };
 FUNC void  Info_Xardas_SLEEPER_Info()
 {
-	AI_Output 		(hero, self,"Info_Xardas_SLEEPER_15_01"); //Tak zwany "Œni¹cy" okaza³ siê ponoæ potê¿nym demonem zag³ady.
-	AI_Output 		(hero, self,"Info_Xardas_SLEEPER_15_02"); //Przekona³o siê o tym Bractwo z obozu na bagnie.
-	AI_Output 		(hero, self,"Info_Xardas_SLEEPER_15_03"); //Magowie Wody uwa¿aj¹ teraz, ¿e ca³a kolonia znalaz³a siê w œmiertelnym niebezpieczeñstwie.
-	AI_Output 		(self, hero,"Info_Xardas_SLEEPER_14_04"); //Stoimy przed powa¿niejszym zagro¿eniem ni¿ ktokolwiek wewn¹trz Bariery jest w stanie sobie wyobraziæ... 
+	AI_Output 		(hero, self,"Info_Xardas_SLEEPER_15_01"); //Tak zwany "ÅšniÄ…cy" okazaÅ‚ siÄ™ ponoÄ‡ potÄ™Å¼nym demonem zagÅ‚ady.
+	AI_Output 		(hero, self,"Info_Xardas_SLEEPER_15_02"); //PrzekonaÅ‚o siÄ™ o tym Bractwo z obozu na bagnie.
+	AI_Output 		(hero, self,"Info_Xardas_SLEEPER_15_03"); //Magowie Wody uwaÅ¼ajÄ… teraz, Å¼e caÅ‚a kolonia znalazÅ‚a siÄ™ w Å›miertelnym niebezpieczeÅ„stwie.
+	AI_Output 		(self, hero,"Info_Xardas_SLEEPER_14_04"); //Stoimy przed powaÅ¼niejszym zagroÅ¼eniem niÅ¼ ktokolwiek wewnÄ…trz Bariery jest w stanie sobie wyobraziÄ‡... 
 }; 
 
 //---------------------------------------------------------------------
@@ -197,7 +197,7 @@ instance  Info_Xardas_DANGER (C_INFO)
 	information	= Info_Xardas_DANGER_Info;
 	important	= 0;
 	permanent	= 0;
-	description = "Jeœli detonacja kopca rudy nie wystarczy, by za¿egnaæ niebezpieczeñstwo...";
+	description = "JeÅ›li detonacja kopca rudy nie wystarczy, by zaÅ¼egnaÄ‡ niebezpieczeÅ„stwo...";
 };
 
 FUNC int  Info_Xardas_DANGER_Condition()
@@ -210,11 +210,11 @@ FUNC int  Info_Xardas_DANGER_Condition()
 };
 FUNC void  Info_Xardas_DANGER_Info()
 {
-	AI_Output 		(hero, self,"Info_Xardas_DANGER_15_01"); //Jeœli detonacja kopca rudy nie wystarczy, by za¿egnaæ niebezpieczeñstwo...
-	AI_Output 		(self, hero,"Info_Xardas_DANGER_14_02"); //...Zapomnij o tym ca³ym kopcu! Jego potêga nie wystarczy, by prze³amaæ Barierê.
-	AI_Output 		(self, hero,"Info_Xardas_DANGER_14_03"); //Gdyby Corristo i Saturas nie tracili cennego czasu na te swoje dziecinne spory, wiedzieliby teraz co nale¿y zrobiæ.
-	AI_Output 		(hero, self,"Info_Xardas_DANGER_15_04"); //A co twoim zdaniem nale¿y zrobiæ?
-	AI_Output 		(self, hero,"Info_Xardas_DANGER_14_05"); //¯aden z dwunastu magów nie zada³ sobie trudu, by zbadaæ z jakich przyczyn Bariera wymknê³a siê spod kontroli, ani dlaczego przybra³a tak ogromne rozmiary.
+	AI_Output 		(hero, self,"Info_Xardas_DANGER_15_01"); //JeÅ›li detonacja kopca rudy nie wystarczy, by zaÅ¼egnaÄ‡ niebezpieczeÅ„stwo...
+	AI_Output 		(self, hero,"Info_Xardas_DANGER_14_02"); //...Zapomnij o tym caÅ‚ym kopcu! Jego potÄ™ga nie wystarczy, by przeÅ‚amaÄ‡ BarierÄ™.
+	AI_Output 		(self, hero,"Info_Xardas_DANGER_14_03"); //Gdyby Corristo i Saturas nie tracili cennego czasu na te swoje dziecinne spory, wiedzieliby teraz co naleÅ¼y zrobiÄ‡.
+	AI_Output 		(hero, self,"Info_Xardas_DANGER_15_04"); //A co twoim zdaniem naleÅ¼y zrobiÄ‡?
+	AI_Output 		(self, hero,"Info_Xardas_DANGER_14_05"); //Å»aden z dwunastu magÃ³w nie zadaÅ‚ sobie trudu, by zbadaÄ‡ z jakich przyczyn Bariera wymknÄ™Å‚a siÄ™ spod kontroli, ani dlaczego przybraÅ‚a tak ogromne rozmiary.
 };
 
 //---------------------------------------------------------------------
@@ -227,7 +227,7 @@ instance  Info_Xardas_BARRIER (C_INFO)
 	information	= Info_Xardas_BARRIER_Info;
 	important	= 0;
 	permanent	= 0;
-	description = "A ty wiesz, co siê sta³o, tak?";
+	description = "A ty wiesz, co siÄ™ staÅ‚o, tak?";
 };
 
 FUNC int  Info_Xardas_BARRIER_Condition()
@@ -239,13 +239,13 @@ FUNC int  Info_Xardas_BARRIER_Condition()
 };
 FUNC void  Info_Xardas_BARRIER_Info()
 {
-	AI_Output 		(hero, self,"Info_Xardas_BARRIER_15_01"); //A ty wiesz, co siê sta³o, tak? 
-	AI_Output 		(self, hero,"Info_Xardas_BARRIER_14_02"); //Có¿, jedno jest pewne: odpowiedŸ spoczywa ukryta g³êboko pod miastem Orków.
-	AI_Output 		(hero, self,"Info_Xardas_BARRIER_15_03"); //Miastem Orków?
-	AI_Output 		(self, hero,"Info_Xardas_BARRIER_14_04"); //Orkowie to nie zwierzêta, choæ wielu ludzi tak w³aœnie myœli. Ich kultura dorównuje wiekiem naszej.
-	AI_Output 		(self, hero,"Info_Xardas_BARRIER_14_05"); //Wiele stuleci temu, piêciu orkowych szamanów przywo³a³o do tego œwiata potê¿nego demona, który mia³ im pomóc zdominowaæ pozosta³e klany.
-	AI_Output 		(hero, self,"Info_Xardas_BARRIER_15_06"); //Ten demon... To Œni¹cy, prawda?
-	AI_Output 		(self, hero,"Info_Xardas_BARRIER_14_07"); //Orkowie nadali mu to imiê du¿o póŸniej. Ale nie powiem ci dlaczego wybrali tê nazwê, ani dlaczego tak bardzo siê go teraz boj¹!
+	AI_Output 		(hero, self,"Info_Xardas_BARRIER_15_01"); //A ty wiesz, co siÄ™ staÅ‚o, tak? 
+	AI_Output 		(self, hero,"Info_Xardas_BARRIER_14_02"); //CÃ³Å¼, jedno jest pewne: odpowiedÅº spoczywa ukryta gÅ‚Ä™boko pod miastem OrkÃ³w.
+	AI_Output 		(hero, self,"Info_Xardas_BARRIER_15_03"); //Miastem OrkÃ³w?
+	AI_Output 		(self, hero,"Info_Xardas_BARRIER_14_04"); //Orkowie to nie zwierzÄ™ta, choÄ‡ wielu ludzi tak wÅ‚aÅ›nie myÅ›li. Ich kultura dorÃ³wnuje wiekiem naszej.
+	AI_Output 		(self, hero,"Info_Xardas_BARRIER_14_05"); //Wiele stuleci temu, piÄ™ciu orkowych szamanÃ³w przywoÅ‚aÅ‚o do tego Å›wiata potÄ™Å¼nego demona, ktÃ³ry miaÅ‚ im pomÃ³c zdominowaÄ‡ pozostaÅ‚e klany.
+	AI_Output 		(hero, self,"Info_Xardas_BARRIER_15_06"); //Ten demon... To ÅšniÄ…cy, prawda?
+	AI_Output 		(self, hero,"Info_Xardas_BARRIER_14_07"); //Orkowie nadali mu to imiÄ™ duÅ¼o pÃ³Åºniej. Ale nie powiem ci dlaczego wybrali tÄ™ nazwÄ™, ani dlaczego tak bardzo siÄ™ go teraz bojÄ…!
 }; 
 
 //---------------------------------------------------------------------
@@ -271,9 +271,9 @@ FUNC int  Info_Xardas_EVENT_Condition()
 FUNC void  Info_Xardas_EVENT_Info()
 {
 	AI_Output 		(hero, self,"Info_Xardas_EVENT_15_01"); //Dlaczego nie?
-	AI_Output 		(self, hero,"Info_Xardas_EVENT_14_02"); //Myœlê, ¿e mo¿esz byæ... NIE, aby mnie przekonaæ, musisz wykonaæ jeszcze jedno zadanie!
+	AI_Output 		(self, hero,"Info_Xardas_EVENT_14_02"); //MyÅ›lÄ™, Å¼e moÅ¼esz byÄ‡... NIE, aby mnie przekonaÄ‡, musisz wykonaÄ‡ jeszcze jedno zadanie!
 	AI_Output 		(hero, self,"Info_Xardas_EVENT_15_03"); //Jakie zadanie?
-	AI_Output 		(self, hero,"Info_Xardas_EVENT_14_04"); //S³uchaj uwa¿nie: Orkowie wygnali z miasta jednego ze swoich szamanów.
+	AI_Output 		(self, hero,"Info_Xardas_EVENT_14_04"); //SÅ‚uchaj uwaÅ¼nie: Orkowie wygnali z miasta jednego ze swoich szamanÃ³w.
 }; 
 
 //---------------------------------------------------------------------
@@ -299,7 +299,7 @@ FUNC int  Info_Xardas_EVENTWHY_Condition()
 FUNC void  Info_Xardas_EVENTWHY_Info()
 {
 	AI_Output 		(hero, self,"Info_Xardas_EVENTWHY_15_01"); //Dlaczego?
-	AI_Output 		(self, hero,"Info_Xardas_EVENTWHY_14_02"); //Umieraj¹cy Ork, którego kaza³em przes³uchaæ moim demonom, nie by³ w stanie odpowiedzieæ mi na to pytanie.
+	AI_Output 		(self, hero,"Info_Xardas_EVENTWHY_14_02"); //UmierajÄ…cy Ork, ktÃ³rego kazaÅ‚em przesÅ‚uchaÄ‡ moim demonom, nie byÅ‚ w stanie odpowiedzieÄ‡ mi na to pytanie.
 }; 
 
 //---------------------------------------------------------------------
@@ -312,7 +312,7 @@ instance  Info_Xardas_EVENTHOW (C_INFO)
 	information	= Info_Xardas_EVENTHOW_Info;
 	important	= 0;
 	permanent	= 0;
-	description = "Co ten szaman ma wspólnego z moim zadaniem?";
+	description = "Co ten szaman ma wspÃ³lnego z moim zadaniem?";
 };
 
 FUNC int  Info_Xardas_EVENTHOW_Condition()
@@ -324,14 +324,14 @@ FUNC int  Info_Xardas_EVENTHOW_Condition()
 };
 FUNC void  Info_Xardas_EVENTHOW_Info()
 {
-	AI_Output 		(hero, self,"Info_Xardas_EVENTHOW_15_01"); //Co ten szaman ma wspólnego z moim zadaniem?
-	AI_Output 		(self, hero,"Info_Xardas_EVENTHOW_14_02"); //On opowie ci resztê historii zwi¹zanej ze Œni¹cym.
-	AI_Output 		(hero, self,"Info_Xardas_EVENTHOW_15_03"); //Obawiam siê, ¿e Ork nie bêdzie zbyt chêtny do zwierzeñ w mojej obecnoœci!
-	AI_Output 		(self, hero,"Info_Xardas_EVENTHOW_14_04"); //Chcesz ¿ebym ci pomóg³, czy nie?
+	AI_Output 		(hero, self,"Info_Xardas_EVENTHOW_15_01"); //Co ten szaman ma wspÃ³lnego z moim zadaniem?
+	AI_Output 		(self, hero,"Info_Xardas_EVENTHOW_14_02"); //On opowie ci resztÄ™ historii zwiÄ…zanej ze ÅšniÄ…cym.
+	AI_Output 		(hero, self,"Info_Xardas_EVENTHOW_15_03"); //Obawiam siÄ™, Å¼e Ork nie bÄ™dzie zbyt chÄ™tny do zwierzeÅ„ w mojej obecnoÅ›ci!
+	AI_Output 		(self, hero,"Info_Xardas_EVENTHOW_14_04"); //Chcesz Å¼ebym ci pomÃ³gÅ‚, czy nie?
 	AI_Output 		(hero, self,"Info_Xardas_EVENTHOW_15_05"); //Tak, ale...
-	AI_Output 		(self, hero,"Info_Xardas_EVENTHOW_14_06"); //Wiêc nigdy wiêcej nie kwestionuj tego, co mówiê!
-	AI_Output 		(self, hero,"Info_Xardas_EVENTHOW_14_07"); //ZnajdŸ tego szamana. Nie pa³a mi³oœci¹ do swych braci z miasta Orków, wiêc mo¿e zgodzi siê ciebie wys³uchaæ zanim zamieni ciê w ¿yw¹ pochodniê!
-	AI_Output 		(hero, self,"Info_Xardas_EVENTHOW_15_08"); //Bardzo pocieszaj¹ce!
+	AI_Output 		(self, hero,"Info_Xardas_EVENTHOW_14_06"); //WiÄ™c nigdy wiÄ™cej nie kwestionuj tego, co mÃ³wiÄ™!
+	AI_Output 		(self, hero,"Info_Xardas_EVENTHOW_14_07"); //ZnajdÅº tego szamana. Nie paÅ‚a miÅ‚oÅ›ciÄ… do swych braci z miasta OrkÃ³w, wiÄ™c moÅ¼e zgodzi siÄ™ ciebie wysÅ‚uchaÄ‡ zanim zamieni ciÄ™ w Å¼ywÄ… pochodniÄ™!
+	AI_Output 		(hero, self,"Info_Xardas_EVENTHOW_15_08"); //Bardzo pocieszajÄ…ce!
 }; 
 
 //---------------------------------------------------------------------
@@ -344,7 +344,7 @@ instance  Info_Xardas_EVENTWHERE (C_INFO)
 	information	= Info_Xardas_EVENTWHERE_Info;
 	important	= 0;
 	permanent	= 0;
-	description = "Gdzie znajdê tego wygnanego szamana?";
+	description = "Gdzie znajdÄ™ tego wygnanego szamana?";
 };
 
 FUNC int  Info_Xardas_EVENTWHERE_Condition()
@@ -356,10 +356,10 @@ FUNC int  Info_Xardas_EVENTWHERE_Condition()
 };
 FUNC void  Info_Xardas_EVENTWHERE_Info()
 {
-	AI_Output 		(hero, self,"Info_Xardas_EVENTWHERE_15_01"); //Gdzie znajdê tego wygnanego szamana?
-	AI_Output 		(self, hero,"Info_Xardas_EVENTWHERE_14_02"); //IdŸ do starej cytadeli na wschodzie. Na pewno trafisz - znajduje siê na szczycie wysokiej góry. Widaæ j¹ ju¿ z daleka.
-	AI_Output 		(hero, self,"Info_Xardas_EVENTWHERE_15_03"); //I mogê tak po prostu do niej wejœæ?
-	AI_Output 		(self, hero,"Info_Xardas_EVENTWHERE_14_04"); //Mówi¹ na ni¹ stara cytadela, choæ tak naprawdê to tylko sterta kamieni. Od wielu dziesiêcioleci nikt tam nie zagl¹da.
+	AI_Output 		(hero, self,"Info_Xardas_EVENTWHERE_15_01"); //Gdzie znajdÄ™ tego wygnanego szamana?
+	AI_Output 		(self, hero,"Info_Xardas_EVENTWHERE_14_02"); //IdÅº do starej cytadeli na wschodzie. Na pewno trafisz - znajduje siÄ™ na szczycie wysokiej gÃ³ry. WidaÄ‡ jÄ… juÅ¼ z daleka.
+	AI_Output 		(hero, self,"Info_Xardas_EVENTWHERE_15_03"); //I mogÄ™ tak po prostu do niej wejÅ›Ä‡?
+	AI_Output 		(self, hero,"Info_Xardas_EVENTWHERE_14_04"); //MÃ³wiÄ… na niÄ… stara cytadela, choÄ‡ tak naprawdÄ™ to tylko sterta kamieni. Od wielu dziesiÄ™cioleci nikt tam nie zaglÄ…da.
 }; 
 
 //---------------------------------------------------------------------
@@ -387,8 +387,8 @@ FUNC int  Info_Xardas_ACCEPT_Condition()
 FUNC void  Info_Xardas_ACCEPT_Info()
 {
 	AI_Output 		(hero, self,"Info_Xardas_ACCEPT_15_01"); //Porozmawiam z tym szamanem!
-	AI_Output 		(self, hero,"Info_Xardas_ACCEPT_14_02"); //Mój s³uga da³ ci ju¿ magiczn¹ runê uaktywniaj¹c¹ pentagram piêtro ni¿ej.
-	AI_Output 		(self, hero,"Info_Xardas_ACCEPT_14_03"); //W ten sposób bêdziesz móg³ wróciæ do mnie natychmiast po wykonaniu zadania.
+	AI_Output 		(self, hero,"Info_Xardas_ACCEPT_14_02"); //MÃ³j sÅ‚uga daÅ‚ ci juÅ¼ magicznÄ… runÄ™ uaktywniajÄ…cÄ… pentagram piÄ™tro niÅ¼ej.
+	AI_Output 		(self, hero,"Info_Xardas_ACCEPT_14_03"); //W ten sposÃ³b bÄ™dziesz mÃ³gÅ‚ wrÃ³ciÄ‡ do mnie natychmiast po wykonaniu zadania.
 
 	B_Story_CordsPost();		// Falls Spieler Gorn am Wassermagier-Pentragramm nicht angesprochen hat!
 	B_Story_FindOrcShaman();
@@ -407,7 +407,7 @@ instance  Kdf_404_Xardas_SELLMAGICSTUFF (C_INFO)
 	important		= 0;
 	permanent		= 1;
 	trade			= 1;
-	description		= "Poszukujê wiedzy magicznej."; 
+	description		= "PoszukujÄ™ wiedzy magicznej."; 
 	
 };
 
@@ -421,7 +421,7 @@ FUNC int  Kdf_404_Xardas_SELLMAGICSTUFF_Condition()
 };
 FUNC void  Kdf_404_Xardas_SELLMAGICSTUFF_Info()
 {
-	AI_Output (other, self,"Kdf_404_Xardas_SELLMAGICSTUFF_Info_15_01"); //Poszukujê wiedzy magicznej.
+	AI_Output (other, self,"Kdf_404_Xardas_SELLMAGICSTUFF_Info_15_01"); //PoszukujÄ™ wiedzy magicznej.
 };
 
 //---------------------------------------------------------------------
@@ -434,7 +434,7 @@ instance  Info_Xardas_RETURN (C_INFO)
 	information	= Info_Xardas_RETURN_Info;
 	important	= 0;
 	permanent	= 0;
-	description = "Rozmawia³em z szamanem Orków.";
+	description = "RozmawiaÅ‚em z szamanem OrkÃ³w.";
 };
 
 FUNC int  Info_Xardas_RETURN_Condition()
@@ -447,20 +447,20 @@ FUNC int  Info_Xardas_RETURN_Condition()
 };
 FUNC void  Info_Xardas_RETURN_Info()
 {
-	AI_Output 		(hero, self,"Info_Xardas_RETURN_15_01"); //Rozmawia³em z szamanem Orków.
-	AI_Output 		(self, hero,"Info_Xardas_RETURN_14_02"); //Œwietnie! Czego siê dowiedzia³eœ?
-	AI_Output 		(hero, self,"Info_Xardas_RETURN_15_03"); //Piêciu szamanów, którzy przywo³ali Œni¹cego, wybudowa³o dla niego podziemn¹ œwi¹tyniê. Wejœcie do niej znajduje siê w mieœcie Orków.
-	AI_Output 		(self, hero,"Info_Xardas_RETURN_14_04"); //Zgadza siê!
-	AI_Output 		(hero, self,"Info_Xardas_RETURN_15_05"); //Miast okazaæ wdziêcznoœæ, Œni¹cy wyrwa³ ich serca i skaza³ ich, oraz wszystkich, którzy pracowali przy budowie na wieczne potêpienie, zamieniaj¹c ich w O¿ywieñców!
+	AI_Output 		(hero, self,"Info_Xardas_RETURN_15_01"); //RozmawiaÅ‚em z szamanem OrkÃ³w.
+	AI_Output 		(self, hero,"Info_Xardas_RETURN_14_02"); //Åšwietnie! Czego siÄ™ dowiedziaÅ‚eÅ›?
+	AI_Output 		(hero, self,"Info_Xardas_RETURN_15_03"); //PiÄ™ciu szamanÃ³w, ktÃ³rzy przywoÅ‚ali ÅšniÄ…cego, wybudowaÅ‚o dla niego podziemnÄ… Å›wiÄ…tyniÄ™. WejÅ›cie do niej znajduje siÄ™ w mieÅ›cie OrkÃ³w.
+	AI_Output 		(self, hero,"Info_Xardas_RETURN_14_04"); //Zgadza siÄ™!
+	AI_Output 		(hero, self,"Info_Xardas_RETURN_15_05"); //Miast okazaÄ‡ wdziÄ™cznoÅ›Ä‡, ÅšniÄ…cy wyrwaÅ‚ ich serca i skazaÅ‚ ich, oraz wszystkich, ktÃ³rzy pracowali przy budowie na wieczne potÄ™pienie, zamieniajÄ…c ich w OÅ¼ywieÅ„cÃ³w!
 	AI_Output 		(self, hero,"Info_Xardas_RETURN_14_06"); //Doskonale, doskonale!
-	AI_Output 		(hero, self,"Info_Xardas_RETURN_15_07"); //Orkowie zapieczêtowali wejœcie do œwi¹tyni i próbowali przeb³agaæ demona sk³adaj¹c mu ofiary!
-	AI_Output 		(self, hero,"Info_Xardas_RETURN_14_08"); //Znalaz³eœ sposób na dostanie siê do œwi¹tyni?
-	AI_Output 		(hero, self,"Info_Xardas_RETURN_15_09"); //Tak, jest pewien Ork, który...
-	AI_Output 		(self, hero,"Info_Xardas_RETURN_14_10"); //¯adnych szczegó³ów! Udaj siê do podziemnej œwi¹tyni. Tam znajdziesz jedyny sposób na zniszczenie Bariery!
+	AI_Output 		(hero, self,"Info_Xardas_RETURN_15_07"); //Orkowie zapieczÄ™towali wejÅ›cie do Å›wiÄ…tyni i prÃ³bowali przebÅ‚agaÄ‡ demona skÅ‚adajÄ…c mu ofiary!
+	AI_Output 		(self, hero,"Info_Xardas_RETURN_14_08"); //ZnalazÅ‚eÅ› sposÃ³b na dostanie siÄ™ do Å›wiÄ…tyni?
+	AI_Output 		(hero, self,"Info_Xardas_RETURN_15_09"); //Tak, jest pewien Ork, ktÃ³ry...
+	AI_Output 		(self, hero,"Info_Xardas_RETURN_14_10"); //Å»adnych szczegÃ³Å‚Ã³w! Udaj siÄ™ do podziemnej Å›wiÄ…tyni. Tam znajdziesz jedyny sposÃ³b na zniszczenie Bariery!
 	AI_Output 		(hero, self,"Info_Xardas_RETURN_15_11"); //Nic nie rozumiem!
-	AI_Output 		(self, hero,"Info_Xardas_RETURN_14_12"); //Poprosi³eœ mnie o pomoc w zniszczeniu Bariery, tak czy nie?!
+	AI_Output 		(self, hero,"Info_Xardas_RETURN_14_12"); //PoprosiÅ‚eÅ› mnie o pomoc w zniszczeniu Bariery, tak czy nie?!
 	AI_Output 		(hero, self,"Info_Xardas_RETURN_15_13"); //Tak, ale...
-	AI_Output 		(self, hero,"Info_Xardas_RETURN_14_14"); //WIÊC ID! Zmarnowano ju¿ doœæ czasu! IdŸ do podziemnej œwi¹tyni! Tam znajdziesz odpowiedŸ!
+	AI_Output 		(self, hero,"Info_Xardas_RETURN_14_14"); //WIÄ˜C IDÅ¹! Zmarnowano juÅ¼ doÅ›Ä‡ czasu! IdÅº do podziemnej Å›wiÄ…tyni! Tam znajdziesz odpowiedÅº!
 
 	B_Story_ReturnedFromUrShak();
 }; 
@@ -483,7 +483,7 @@ instance  Info_Xardas_FOUNDTEMPLE (C_INFO)
 	information		= Info_Xardas_FOUNDTEMPLE_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Znalaz³em drogê do podziemnej œwi¹tyni!"; 
+	description		= "ZnalazÅ‚em drogÄ™ do podziemnej Å›wiÄ…tyni!"; 
 };
 
 FUNC int  Info_Xardas_FOUNDTEMPLE_Condition()
@@ -496,10 +496,10 @@ FUNC int  Info_Xardas_FOUNDTEMPLE_Condition()
 
 FUNC void  Info_Xardas_FOUNDTEMPLE_Info()
 {
-	AI_Output (other, self,"Info_Xardas_FOUNDTEMPLE_15_01"); //Znalaz³em drogê do podziemnej œwi¹tyni!
-	AI_Output (self, other,"Info_Xardas_FOUNDTEMPLE_14_02"); //ZNALAZ£EŒ... To niesamowite!
-	AI_Output (self, other,"Info_Xardas_FOUNDTEMPLE_14_03"); //Sta³eœ siê niezwykle potê¿ny! Potê¿niejszy ni¿ ktokolwiek wewn¹trz Bariery.
-	AI_Output (self, other,"Info_Xardas_FOUNDTEMPLE_14_04"); //Mo¿e rzeczywiœcie jesteœ cz³owiekiem, o którym wspomina proroctwo Orków!
+	AI_Output (other, self,"Info_Xardas_FOUNDTEMPLE_15_01"); //ZnalazÅ‚em drogÄ™ do podziemnej Å›wiÄ…tyni!
+	AI_Output (self, other,"Info_Xardas_FOUNDTEMPLE_14_02"); //ZNALAZÅEÅš... To niesamowite!
+	AI_Output (self, other,"Info_Xardas_FOUNDTEMPLE_14_03"); //StaÅ‚eÅ› siÄ™ niezwykle potÄ™Å¼ny! PotÄ™Å¼niejszy niÅ¼ ktokolwiek wewnÄ…trz Bariery.
+	AI_Output (self, other,"Info_Xardas_FOUNDTEMPLE_14_04"); //MoÅ¼e rzeczywiÅ›cie jesteÅ› czÅ‚owiekiem, o ktÃ³rym wspomina proroctwo OrkÃ³w!
 };
 
 //---------------------------------------------------------------------
@@ -526,11 +526,11 @@ FUNC int  Info_Xardas_PROPHECY_Condition()
 FUNC void  Info_Xardas_PROPHECY_Info()
 {
 	AI_Output (other, self,"Info_Xardas_PROPHECY_15_01"); //Proroctwo? Jakie proroctwo?
-	AI_Output (self, other,"Info_Xardas_PROPHECY_14_02"); //Prastare manuskrypty Orków, spisane tu¿ po zamkniêciu œwi¹tyni, wspominaj¹ o "Œwiêtym Nieprzyjacielu".
-	AI_Output (other, self,"Info_Xardas_PROPHECY_15_03"); //Œwiêtym Nieprzyjacielu?
-	AI_Output (self, other,"Info_Xardas_PROPHECY_14_04"); //Kogoœ, kto raz na zawsze wypêdzi Œni¹cego z naszego œwiata!
-	AI_Output (other, self,"Info_Xardas_PROPHECY_15_05"); //I to ja mam byæ t¹ osob¹ z przepowiedni?! Mylisz siê! Na pewno siê mylisz!
-	AI_Output (self, other,"Info_Xardas_PROPHECY_14_06"); //Mo¿e tak... Mo¿e nie!
+	AI_Output (self, other,"Info_Xardas_PROPHECY_14_02"); //Prastare manuskrypty OrkÃ³w, spisane tuÅ¼ po zamkniÄ™ciu Å›wiÄ…tyni, wspominajÄ… o "ÅšwiÄ™tym Nieprzyjacielu".
+	AI_Output (other, self,"Info_Xardas_PROPHECY_15_03"); //ÅšwiÄ™tym Nieprzyjacielu?
+	AI_Output (self, other,"Info_Xardas_PROPHECY_14_04"); //KogoÅ›, kto raz na zawsze wypÄ™dzi ÅšniÄ…cego z naszego Å›wiata!
+	AI_Output (other, self,"Info_Xardas_PROPHECY_15_05"); //I to ja mam byÄ‡ tÄ… osobÄ… z przepowiedni?! Mylisz siÄ™! Na pewno siÄ™ mylisz!
+	AI_Output (self, other,"Info_Xardas_PROPHECY_14_06"); //MoÅ¼e tak... MoÅ¼e nie!
 };
 
 //---------------------------------------------------------------------
@@ -543,7 +543,7 @@ instance  Info_Xardas_LOADSWORD (C_INFO)
 	information		= Info_Xardas_LOADSWORD_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Znalaz³em dziwny miecz."; 
+	description		= "ZnalazÅ‚em dziwny miecz."; 
 };
 
 FUNC int  Info_Xardas_LOADSWORD_Condition()
@@ -556,8 +556,8 @@ FUNC int  Info_Xardas_LOADSWORD_Condition()
 
 FUNC void  Info_Xardas_LOADSWORD_Info()
 {
-	AI_Output				(other, self,"Info_Xardas_LOADSWORD_15_01"); //Znalaz³em dziwny miecz.
-	AI_Output				(self, other,"Info_Xardas_LOADSWORD_14_02"); //Poka¿ mi go.
+	AI_Output				(other, self,"Info_Xardas_LOADSWORD_15_01"); //ZnalazÅ‚em dziwny miecz.
+	AI_Output				(self, other,"Info_Xardas_LOADSWORD_14_02"); //PokaÅ¼ mi go.
 
 	CreateInvItem 			(self, Mythrilklinge01);
 	AI_EquipBestMeleeWeapon	(self);
@@ -566,10 +566,10 @@ FUNC void  Info_Xardas_LOADSWORD_Info()
 	AI_RemoveWeapon			(self);
 	AI_UnequipWeapons		(self);
 
-	AI_Output				(self, other,"Info_Xardas_LOADSWORD_14_03"); //Hmm... To ciekawe. Wyryto na nim s³owo "URIZIEL".
-	AI_Output				(self, other,"Info_Xardas_LOADSWORD_14_04"); //S³ysza³em o tym mieczu. To orê¿ z dawnych lat, kiedy rasa ludzka by³a jeszcze bardzo m³oda.
-	AI_Output				(self, other,"Info_Xardas_LOADSWORD_14_05"); //Nie wiem z jakiego materia³u go wykuto, ani nawet KTO go wyku³.
-	AI_Output				(self, other,"Info_Xardas_LOADSWORD_14_06"); //Wed³ug legendy, miecz ma posiadaæ niezwyk³e moce, ale nie wyczuwam wokó³ niego magicznej aury! 
+	AI_Output				(self, other,"Info_Xardas_LOADSWORD_14_03"); //Hmm... To ciekawe. Wyryto na nim sÅ‚owo "URIZIEL".
+	AI_Output				(self, other,"Info_Xardas_LOADSWORD_14_04"); //SÅ‚yszaÅ‚em o tym mieczu. To orÄ™Å¼ z dawnych lat, kiedy rasa ludzka byÅ‚a jeszcze bardzo mÅ‚oda.
+	AI_Output				(self, other,"Info_Xardas_LOADSWORD_14_05"); //Nie wiem z jakiego materiaÅ‚u go wykuto, ani nawet KTO go wykuÅ‚.
+	AI_Output				(self, other,"Info_Xardas_LOADSWORD_14_06"); //WedÅ‚ug legendy, miecz ma posiadaÄ‡ niezwykÅ‚e moce, ale nie wyczuwam wokÃ³Å‚ niego magicznej aury! 
 	
 	Npc_RemoveInvItem 		(hero, Mythrilklinge);	
 	CreateInvItem 			(hero, Mythrilklinge01);
@@ -585,7 +585,7 @@ instance  Info_Xardas_LOADSWORD01 (C_INFO)
 	information		= Info_Xardas_LOADSWORD01_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "URIZIEL posiada³ niezwyk³e moce?"; 
+	description		= "URIZIEL posiadaÅ‚ niezwykÅ‚e moce?"; 
 };
 
 FUNC int  Info_Xardas_LOADSWORD01_Condition()
@@ -601,11 +601,11 @@ FUNC void  Info_Xardas_LOADSWORD01_Info()
 {
 	Npc_RemoveInvItem 	(self, Mythrilklinge01);
 
-	AI_Output 			(other, self,"Info_Xardas_LOADSWORD01_15_01"); //URIZIEL posiada³ niezwyk³e moce?
-	AI_Output 			(self, other,"Info_Xardas_LOADSWORD01_14_02"); //Napisano, ¿e posiadacz tej broni by³ w stanie przebiæ najgrubszy pancerz i przezwyciê¿yæ najsilniejsze zaklêcia.
-	AI_Output 			(other, self,"Info_Xardas_LOADSWORD01_15_03"); //W jaki sposób tak potê¿ny orê¿ trafi³ w rêce Orków?
-	AI_Output 			(self, other,"Info_Xardas_LOADSWORD01_14_04"); //Ponoæ Orkowie odebrali go potê¿nemu rycerzowi. Nie wiedzieli jak go wykorzystaæ, wiêc postanowili go ukryæ!
-	AI_Output 			(other, self,"Info_Xardas_LOADSWORD01_15_05"); //Jak widaæ - nie doœæ dobrze!
+	AI_Output 			(other, self,"Info_Xardas_LOADSWORD01_15_01"); //URIZIEL posiadaÅ‚ niezwykÅ‚e moce?
+	AI_Output 			(self, other,"Info_Xardas_LOADSWORD01_14_02"); //Napisano, Å¼e posiadacz tej broni byÅ‚ w stanie przebiÄ‡ najgrubszy pancerz i przezwyciÄ™Å¼yÄ‡ najsilniejsze zaklÄ™cia.
+	AI_Output 			(other, self,"Info_Xardas_LOADSWORD01_15_03"); //W jaki sposÃ³b tak potÄ™Å¼ny orÄ™Å¼ trafiÅ‚ w rÄ™ce OrkÃ³w?
+	AI_Output 			(self, other,"Info_Xardas_LOADSWORD01_14_04"); //PonoÄ‡ Orkowie odebrali go potÄ™Å¼nemu rycerzowi. Nie wiedzieli jak go wykorzystaÄ‡, wiÄ™c postanowili go ukryÄ‡!
+	AI_Output 			(other, self,"Info_Xardas_LOADSWORD01_15_05"); //Jak widaÄ‡ - nie doÅ›Ä‡ dobrze!
 };
 
 //---------------------------------------------------------------------
@@ -618,7 +618,7 @@ instance  Info_Xardas_LOADSWORD02 (C_INFO)
 	information		= Info_Xardas_LOADSWORD02_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Czy jest jakiœ sposób na przywrócenie tej broni dawnej œwietnoœci?"; 
+	description		= "Czy jest jakiÅ› sposÃ³b na przywrÃ³cenie tej broni dawnej Å›wietnoÅ›ci?"; 
 };
 
 FUNC int  Info_Xardas_LOADSWORD02_Condition()
@@ -631,12 +631,12 @@ FUNC int  Info_Xardas_LOADSWORD02_Condition()
 
 FUNC void  Info_Xardas_LOADSWORD02_Info()
 {
-	AI_Output 			(other, self,"Info_Xardas_LOADSWORD02_15_01"); //Czy jest jakiœ sposób na przywrócenie tej broni dawnej œwietnoœci?
-	AI_Output 			(self, other,"Info_Xardas_LOADSWORD02_14_02"); //Nie obejdzie siê bez odpowiednio silnego Ÿród³a magii.
-	AI_Output 			(other, self,"Info_Xardas_LOADSWORD02_15_03"); //Masz na myœli Ÿród³o wystarczaj¹co potê¿ne, by wysadziæ w powietrze Magiczn¹ Barierê?
-	AI_Output 			(self, other,"Info_Xardas_LOADSWORD02_14_04"); //Coœ w tym rodzaju...
-	AI_Output 			(self, other,"Info_Xardas_LOADSWORD02_14_05"); //Oprócz tego potrzebna bêdzie specjalna magiczna formu³a, która przeka¿e ca³¹ wyzwolon¹ energiê na miecz.
-	AI_Output			(self, other,"Info_Xardas_LOADSWORD02_14_06"); //Daj mi trochê czasu na przygotowanie formu³y!
+	AI_Output 			(other, self,"Info_Xardas_LOADSWORD02_15_01"); //Czy jest jakiÅ› sposÃ³b na przywrÃ³cenie tej broni dawnej Å›wietnoÅ›ci?
+	AI_Output 			(self, other,"Info_Xardas_LOADSWORD02_14_02"); //Nie obejdzie siÄ™ bez odpowiednio silnego ÅºrÃ³dÅ‚a magii.
+	AI_Output 			(other, self,"Info_Xardas_LOADSWORD02_15_03"); //Masz na myÅ›li ÅºrÃ³dÅ‚o wystarczajÄ…co potÄ™Å¼ne, by wysadziÄ‡ w powietrze MagicznÄ… BarierÄ™?
+	AI_Output 			(self, other,"Info_Xardas_LOADSWORD02_14_04"); //CoÅ› w tym rodzaju...
+	AI_Output 			(self, other,"Info_Xardas_LOADSWORD02_14_05"); //OprÃ³cz tego potrzebna bÄ™dzie specjalna magiczna formuÅ‚a, ktÃ³ra przekaÅ¼e caÅ‚Ä… wyzwolonÄ… energiÄ™ na miecz.
+	AI_Output			(self, other,"Info_Xardas_LOADSWORD02_14_06"); //Daj mi trochÄ™ czasu na przygotowanie formuÅ‚y!
 
 	B_Story_ShowedUrizielToXardas();
 };
@@ -652,7 +652,7 @@ instance  Info_Xardas_BETTERARMOR (C_INFO)
 	information		= Info_Xardas_BETTERARMOR_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "W miêdzyczasie, ja poszukam sobie lepszej zbroi!"; 
+	description		= "W miÄ™dzyczasie, ja poszukam sobie lepszej zbroi!"; 
 };
 
 FUNC int  Info_Xardas_BETTERARMOR_Condition()
@@ -665,30 +665,30 @@ FUNC int  Info_Xardas_BETTERARMOR_Condition()
 
 FUNC void  Info_Xardas_BETTERARMOR_Info()
 {
-	AI_Output		(other, self,"Info_Xardas_BETTERARMOR_15_01"); //W miêdzyczasie, jak poszukam sobie lepszej zbroi!
+	AI_Output		(other, self,"Info_Xardas_BETTERARMOR_15_01"); //W miÄ™dzyczasie, jak poszukam sobie lepszej zbroi!
 
 	var C_ITEM	armor;			armor 			= Npc_GetEquippedArmor	(hero);
 	var int		armorInstance;	armorInstance	= Hlp_GetInstanceID		(armor);
 	if (armorInstance == CRW_ARMOR_H)
 	{
-		AI_Output	(other, self,"Info_Xardas_BETTERARMOR_15_02"); //Te posklecane w naprêdce pancerze pe³zaczy s¹ zbyt gêsto podziurawione po wyprawie do podziemnej œwi¹tyni!
+		AI_Output	(other, self,"Info_Xardas_BETTERARMOR_15_02"); //Te posklecane w naprÄ™dce pancerze peÅ‚zaczy sÄ… zbyt gÄ™sto podziurawione po wyprawie do podziemnej Å›wiÄ…tyni!
 	}
 	else if (armorInstance == KDW_ARMOR_H) || (armorInstance == KDW_ARMOR_L)		
 	{
-		AI_Output	(other, self,"Info_Xardas_BETTERARMOR_15_03"); //Te niebieskie szmatki nie zapewni³y mi zbyt wielkiej ochrony w podziemnej œwi¹tyni!
+		AI_Output	(other, self,"Info_Xardas_BETTERARMOR_15_03"); //Te niebieskie szmatki nie zapewniÅ‚y mi zbyt wielkiej ochrony w podziemnej Å›wiÄ…tyni!
 	}
 	else
 	{
-		AI_Output	(other, self,"Info_Xardas_BETTERARMOR_15_04"); //O¿ywieñcy porz¹dnie podziurawili mój stary pancerz.
+		AI_Output	(other, self,"Info_Xardas_BETTERARMOR_15_04"); //OÅ¼ywieÅ„cy porzÄ…dnie podziurawili mÃ³j stary pancerz.
 	};
 	
-	AI_Output		(self, other,"Info_Xardas_BETTERARMOR_14_05"); //Powinieneœ zajrzeæ do mojej starej wie¿y?
-	AI_Output		(other, self,"Info_Xardas_BETTERARMOR_15_06"); //Twojej starej wie¿y?
-	AI_Output		(self, other,"Info_Xardas_BETTERARMOR_14_07"); //Podczas trzêsienia ziemi poch³onê³o j¹ jedno ze wschodnich jezior. Jej szczyt powinien nadal wystawaæ nad poziom wody.
-	AI_Output		(self, other,"Info_Xardas_BETTERARMOR_14_08"); //Wewn¹trz zosta³o kilka cennych artefaktów. Nigdy nie zada³em sobie trudu, by je odzyskaæ.
-	AI_Output		(other, self,"Info_Xardas_BETTERARMOR_15_09"); //Jak siê tam dostanê?
-	AI_Output		(self, other,"Info_Xardas_BETTERARMOR_14_10"); //Nie zagl¹da³em tam od trzêsienia ziemi, wiêc sam bêdziesz musia³ poszukaæ drogi do œrodka.
-	AI_Output		(self, other,"Info_Xardas_BETTERARMOR_14_11"); //WeŸ ten klucz. Otwiera skrzyniê, w której przechowywa³em szczególnie cenne artefakty.
+	AI_Output		(self, other,"Info_Xardas_BETTERARMOR_14_05"); //PowinieneÅ› zajrzeÄ‡ do mojej starej wieÅ¼y?
+	AI_Output		(other, self,"Info_Xardas_BETTERARMOR_15_06"); //Twojej starej wieÅ¼y?
+	AI_Output		(self, other,"Info_Xardas_BETTERARMOR_14_07"); //Podczas trzÄ™sienia ziemi pochÅ‚onÄ™Å‚o jÄ… jedno ze wschodnich jezior. Jej szczyt powinien nadal wystawaÄ‡ nad poziom wody.
+	AI_Output		(self, other,"Info_Xardas_BETTERARMOR_14_08"); //WewnÄ…trz zostaÅ‚o kilka cennych artefaktÃ³w. Nigdy nie zadaÅ‚em sobie trudu, by je odzyskaÄ‡.
+	AI_Output		(other, self,"Info_Xardas_BETTERARMOR_15_09"); //Jak siÄ™ tam dostanÄ™?
+	AI_Output		(self, other,"Info_Xardas_BETTERARMOR_14_10"); //Nie zaglÄ…daÅ‚em tam od trzÄ™sienia ziemi, wiÄ™c sam bÄ™dziesz musiaÅ‚ poszukaÄ‡ drogi do Å›rodka.
+	AI_Output		(self, other,"Info_Xardas_BETTERARMOR_14_11"); //WeÅº ten klucz. Otwiera skrzyniÄ™, w ktÃ³rej przechowywaÅ‚em szczegÃ³lnie cenne artefakty.
 
 	B_Story_ExploreSunkenTower();
 };
@@ -722,15 +722,15 @@ FUNC void  Info_Xardas_OREARMOR_Info()
 	if	(armorInstance == ORE_ARMOR_M)
 	||	(armorInstance == ORE_ARMOR_H)
 	{
-		AI_Output	(self, other,"Info_Xardas_OREARMOR_14_01"); //Ach, jak widzê nosisz zbrojê runiczn¹, wykonan¹ z magicznej rudy!
+		AI_Output	(self, other,"Info_Xardas_OREARMOR_14_01"); //Ach, jak widzÄ™ nosisz zbrojÄ™ runicznÄ…, wykonanÄ… z magicznej rudy!
 	}
 	else
 	{
-		AI_Output	(self, other,"Info_Xardas_OREARMOR_14_02"); //Jak widzê, znalaz³eœ zbrojê runiczn¹, wykonan¹ z magicznej rudy!
+		AI_Output	(self, other,"Info_Xardas_OREARMOR_14_02"); //Jak widzÄ™, znalazÅ‚eÅ› zbrojÄ™ runicznÄ…, wykonanÄ… z magicznej rudy!
 	};
-	AI_Output		(other, self,"Info_Xardas_OREARMOR_15_03"); //Znalaz³em j¹ w zatopionej wie¿y, w jednej z tych starych skrzyñ.
-	AI_Output		(self, other,"Info_Xardas_OREARMOR_14_04"); //Nale¿a³a kiedyœ do tego samego genera³a, który dzier¿y³ URIZIEL w bitwie z Orkami.
-	AI_Output		(other, self,"Info_Xardas_OREARMOR_15_05"); //Mam tylko nadziejê, ¿e przyniesie mi trochê wiêcej szczêœcia ni¿ jemu!
+	AI_Output		(other, self,"Info_Xardas_OREARMOR_15_03"); //ZnalazÅ‚em jÄ… w zatopionej wieÅ¼y, w jednej z tych starych skrzyÅ„.
+	AI_Output		(self, other,"Info_Xardas_OREARMOR_14_04"); //NaleÅ¼aÅ‚a kiedyÅ› do tego samego generaÅ‚a, ktÃ³ry dzierÅ¼yÅ‚ URIZIEL w bitwie z Orkami.
+	AI_Output		(other, self,"Info_Xardas_OREARMOR_15_05"); //Mam tylko nadziejÄ™, Å¼e przyniesie mi trochÄ™ wiÄ™cej szczÄ™Å›cia niÅ¼ jemu!
 };
 
 //---------------------------------------------------------------------
@@ -743,7 +743,7 @@ instance  Info_Xardas_FORMULA (C_INFO)
 	information		= Info_Xardas_FORMULA_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Przygotowa³eœ ju¿ formu³ê, która przywróci URIZIELOWI jego dawn¹ moc?";
+	description		= "PrzygotowaÅ‚eÅ› juÅ¼ formuÅ‚Ä™, ktÃ³ra przywrÃ³ci URIZIELOWI jego dawnÄ… moc?";
 };
 
 FUNC int  Info_Xardas_FORMULA_Condition()
@@ -758,12 +758,12 @@ FUNC int  Info_Xardas_FORMULA_Condition()
 
 FUNC void  Info_Xardas_FORMULA_Info()
 {
-	AI_Output		(other, self,"Info_Xardas_FORMULA_15_01"); //Przygotowa³eœ ju¿ formu³ê, która przywróci URIZIELOWI jego dawn¹ moc?
-	AI_Output		(self, other,"Info_Xardas_FORMULA_14_02"); //Tak, wszystko gotowe. Ale sam nie dasz rady jej u¿yæ.
+	AI_Output		(other, self,"Info_Xardas_FORMULA_15_01"); //PrzygotowaÅ‚eÅ› juÅ¼ formuÅ‚Ä™, ktÃ³ra przywrÃ³ci URIZIELOWI jego dawnÄ… moc?
+	AI_Output		(self, other,"Info_Xardas_FORMULA_14_02"); //Tak, wszystko gotowe. Ale sam nie dasz rady jej uÅ¼yÄ‡.
 	AI_Output		(other, self,"Info_Xardas_FORMULA_15_03"); //Dlaczego nie?
-	AI_Output		(self, other,"Info_Xardas_FORMULA_14_04"); //Bêdziesz musia³ dotkn¹æ mieczem Ÿród³a mocy magicznej. Dok³adnie w tej samej chwili jakiœ mag musi wypowiedzieæ formu³ê.
-	AI_Output		(other, self,"Info_Xardas_FORMULA_15_05"); //Zatem muszê sobie poszukaæ kogoœ do pomocy!
-	AI_Output		(self, other,"Info_Xardas_FORMULA_14_06"); //WeŸ formu³ê i przywróæ URIZIEL do jego dawnej œwietnoœci. Bêdzie ci wkrótce potrzebny!
+	AI_Output		(self, other,"Info_Xardas_FORMULA_14_04"); //BÄ™dziesz musiaÅ‚ dotknÄ…Ä‡ mieczem ÅºrÃ³dÅ‚a mocy magicznej. DokÅ‚adnie w tej samej chwili jakiÅ› mag musi wypowiedzieÄ‡ formuÅ‚Ä™.
+	AI_Output		(other, self,"Info_Xardas_FORMULA_15_05"); //Zatem muszÄ™ sobie poszukaÄ‡ kogoÅ› do pomocy!
+	AI_Output		(self, other,"Info_Xardas_FORMULA_14_06"); //WeÅº formuÅ‚Ä™ i przywrÃ³Ä‡ URIZIEL do jego dawnej Å›wietnoÅ›ci. BÄ™dzie ci wkrÃ³tce potrzebny!
 
 	B_Story_LoadSword();
 };
@@ -778,7 +778,7 @@ instance  Info_Xardas_ALTRUNE (C_INFO)
 	information		= Info_Xardas_ALTRUNE_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Jestem magiem. Nie wiem, czy potrafiê pos³ugiwaæ siê URIZIELEM!";
+	description		= "Jestem magiem. Nie wiem, czy potrafiÄ™ posÅ‚ugiwaÄ‡ siÄ™ URIZIELEM!";
 };
 
 FUNC int  Info_Xardas_ALTRUNE_Condition()
@@ -792,9 +792,9 @@ FUNC int  Info_Xardas_ALTRUNE_Condition()
 
 FUNC void  Info_Xardas_ALTRUNE_Info()
 {
-	AI_Output		(other, self,"Info_Xardas_ALTRUNE_15_01"); //Jestem magiem. Nie wiem, czy potrafiê pos³ugiwaæ siê mieczem takim jak URIZIEL!
-	AI_Output		(self, other,"Info_Xardas_ALTRUNE_14_02"); //Jest na to sposób...
-	AI_Output		(self, other,"Info_Xardas_ALTRUNE_14_03"); //Ale najpierw na³aduj miecz magiczn¹ energi¹. Wróæ jak najszybciej!
+	AI_Output		(other, self,"Info_Xardas_ALTRUNE_15_01"); //Jestem magiem. Nie wiem, czy potrafiÄ™ posÅ‚ugiwaÄ‡ siÄ™ mieczem takim jak URIZIEL!
+	AI_Output		(self, other,"Info_Xardas_ALTRUNE_14_02"); //Jest na to sposÃ³b...
+	AI_Output		(self, other,"Info_Xardas_ALTRUNE_14_03"); //Ale najpierw naÅ‚aduj miecz magicznÄ… energiÄ…. WrÃ³Ä‡ jak najszybciej!
 };
 
 
@@ -808,7 +808,7 @@ instance  Info_Xardas_SWORDLOADED (C_INFO)
 	information		= Info_Xardas_SWORDLOADED_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Uda³o mi siê! URIZIEL znów posiada magiczn¹ aurê!"; 
+	description		= "UdaÅ‚o mi siÄ™! URIZIEL znÃ³w posiada magicznÄ… aurÄ™!"; 
 };
 
 FUNC int  Info_Xardas_SWORDLOADED_Condition()
@@ -821,10 +821,10 @@ FUNC int  Info_Xardas_SWORDLOADED_Condition()
 
 FUNC void  Info_Xardas_SWORDLOADED_Info()
 {
-	AI_Output		(other, self,"Info_Xardas_SWORDLOADED_15_01"); //Uda³o mi siê! URIZIEL znów posiada magiczn¹ aurê!
-	AI_Output		(self, other,"Info_Xardas_SWORDLOADED_14_02"); //Niesamowite! Miecz odzyska³ sw¹ dawn¹ moc! Dysponujesz teraz nie lada orê¿em!
+	AI_Output		(other, self,"Info_Xardas_SWORDLOADED_15_01"); //UdaÅ‚o mi siÄ™! URIZIEL znÃ³w posiada magicznÄ… aurÄ™!
+	AI_Output		(self, other,"Info_Xardas_SWORDLOADED_14_02"); //Niesamowite! Miecz odzyskaÅ‚ swÄ… dawnÄ… moc! Dysponujesz teraz nie lada orÄ™Å¼em!
 
-	Wld_InsertItem			(ItArScrollTeleport4,"OW_ORC_SHAMAN_ROOM2");	//Unblutige Lösung für´s Ich-brauch-Orc-Statue-Massaker ***Björn***
+	Wld_InsertItem			(ItArScrollTeleport4,"OW_ORC_SHAMAN_ROOM2");	//Unblutige LÃ¶sung fÃ¼rÂ´s Ich-brauch-Orc-Statue-Massaker ***BjÃ¶rn***
 
 };
 
@@ -838,7 +838,7 @@ instance  Info_Xardas_MAKERUNE (C_INFO)
 	information		= Info_Xardas_MAKERUNE_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Bêdê móg³ pos³ugiwaæ siê tym mieczem mimo, i¿ jestem magiem?"; 
+	description		= "BÄ™dÄ™ mÃ³gÅ‚ posÅ‚ugiwaÄ‡ siÄ™ tym mieczem mimo, iÅ¼ jestem magiem?"; 
 };
 
 FUNC int  Info_Xardas_MAKERUNE_Condition()
@@ -852,13 +852,13 @@ FUNC int  Info_Xardas_MAKERUNE_Condition()
 
 FUNC void  Info_Xardas_MAKERUNE_Info()
 {
-	AI_Output		(other, self,"Info_Xardas_MAKERUNE_15_01"); //Powiedzia³eœ, ¿e bêdê móg³ pos³ugiwaæ siê tym mieczem mimo, i¿ jestem magiem?
-	AI_Output		(self, other,"Info_Xardas_MAKERUNE_14_02"); //Przyjrzyj siê mu uwa¿nie. Zauwa¿y³eœ zapewne ten du¿y, b³êkitny klejnot zatopiony w ostrzu.
-	AI_Output		(self, other,"Info_Xardas_MAKERUNE_14_03"); //Ca³a energia magiczna miecza skumulowana jest w³aœnie tutaj.
-	AI_Output		(self, other,"Info_Xardas_MAKERUNE_14_04"); //Jeœli usunê klejnot, bêdê móg³ stworzyæ magiczn¹ runê posiadaj¹c¹ wszystkie te cechy, które czyni¹ URIZIEL tak szczególnym orê¿em.
+	AI_Output		(other, self,"Info_Xardas_MAKERUNE_15_01"); //PowiedziaÅ‚eÅ›, Å¼e bÄ™dÄ™ mÃ³gÅ‚ posÅ‚ugiwaÄ‡ siÄ™ tym mieczem mimo, iÅ¼ jestem magiem?
+	AI_Output		(self, other,"Info_Xardas_MAKERUNE_14_02"); //Przyjrzyj siÄ™ mu uwaÅ¼nie. ZauwaÅ¼yÅ‚eÅ› zapewne ten duÅ¼y, bÅ‚Ä™kitny klejnot zatopiony w ostrzu.
+	AI_Output		(self, other,"Info_Xardas_MAKERUNE_14_03"); //CaÅ‚a energia magiczna miecza skumulowana jest wÅ‚aÅ›nie tutaj.
+	AI_Output		(self, other,"Info_Xardas_MAKERUNE_14_04"); //JeÅ›li usunÄ™ klejnot, bÄ™dÄ™ mÃ³gÅ‚ stworzyÄ‡ magicznÄ… runÄ™ posiadajÄ…cÄ… wszystkie te cechy, ktÃ³re czyniÄ… URIZIEL tak szczegÃ³lnym orÄ™Å¼em.
 	AI_Output		(other, self,"Info_Xardas_MAKERUNE_15_05"); //Magiczna runa stworzona z URIZIEL?
-	AI_Output		(self, other,"Info_Xardas_MAKERUNE_14_06"); //W bitwie ta runa bêdzie równie niebezpieczna co sam miecz!
-	AI_Output		(self, other,"Info_Xardas_MAKERUNE_14_07"); //Ale nie zapominaj, ¿e jedynie mag Szóstego Krêgu mo¿e zapanowaæ nad tak potê¿n¹ magi¹!
+	AI_Output		(self, other,"Info_Xardas_MAKERUNE_14_06"); //W bitwie ta runa bÄ™dzie rÃ³wnie niebezpieczna co sam miecz!
+	AI_Output		(self, other,"Info_Xardas_MAKERUNE_14_07"); //Ale nie zapominaj, Å¼e jedynie mag SzÃ³stego KrÄ™gu moÅ¼e zapanowaÄ‡ nad tak potÄ™Å¼nÄ… magiÄ…!
 };
 
 //---------------------------------------------------------------------
@@ -871,7 +871,7 @@ instance  Info_Xardas_MAKERUNEDOIT (C_INFO)
 	information		= Info_Xardas_MAKERUNEDOIT_Info;
 	important		= 0;
 	permanent		= 1;
-	description		= "Chcê, ¿ebyœ usun¹³ klejnot z URIZIELA!"; 
+	description		= "ChcÄ™, Å¼ebyÅ› usunÄ…Å‚ klejnot z URIZIELA!"; 
 };
 
 FUNC int  Info_Xardas_MAKERUNEDOIT_Condition()
@@ -885,38 +885,38 @@ FUNC int  Info_Xardas_MAKERUNEDOIT_Condition()
 
 FUNC void  Info_Xardas_MAKERUNEDOIT_Info()
 {
-	AI_Output			(other, self,"Info_Xardas_MAKERUNEDOIT_15_01"); //Chcê, ¿ebyœ usun¹³ klejnot z URIZIEL!
+	AI_Output			(other, self,"Info_Xardas_MAKERUNEDOIT_15_01"); //ChcÄ™, Å¼ebyÅ› usunÄ…Å‚ klejnot z URIZIEL!
 	if (Npc_GetTalentSkill(hero, NPC_TALENT_MAGE) < 6)
 	{
-		AI_Output		(self, other,"Info_Xardas_MAKERUNEDOIT_14_02"); //Ale nie opanowa³eœ jeszcze magii Szóstego Krêgu!
+		AI_Output		(self, other,"Info_Xardas_MAKERUNEDOIT_14_02"); //Ale nie opanowaÅ‚eÅ› jeszcze magii SzÃ³stego KrÄ™gu!
 	};
-	AI_Output			(self, other,"Info_Xardas_MAKERUNEDOIT_14_03"); //Od tej decyzji nie ma odwrotu. Jesteœ pewien, ¿e chcesz abym usun¹³ klejnot?
+	AI_Output			(self, other,"Info_Xardas_MAKERUNEDOIT_14_03"); //Od tej decyzji nie ma odwrotu. JesteÅ› pewien, Å¼e chcesz abym usunÄ…Å‚ klejnot?
 
 	Info_ClearChoices	(Info_Xardas_MAKERUNEDOIT);
-	Info_AddChoice		(Info_Xardas_MAKERUNEDOIT,"TAK, zrób to.",	Info_Xardas_MAKERUNE_YES);
-	Info_AddChoice		(Info_Xardas_MAKERUNEDOIT,"Nie, nie chcê.",	Info_Xardas_MAKERUNE_NO);
+	Info_AddChoice		(Info_Xardas_MAKERUNEDOIT,"TAK, zrÃ³b to.",	Info_Xardas_MAKERUNE_YES);
+	Info_AddChoice		(Info_Xardas_MAKERUNEDOIT,"Nie, nie chcÄ™.",	Info_Xardas_MAKERUNE_NO);
 };
 
 func void Info_Xardas_MAKERUNE_YES ()
 {
 	Info_ClearChoices	(Info_Xardas_MAKERUNEDOIT);
-	AI_Output			(other, self,"Info_Xardas_MAKERUNEDOIT_15_04"); //TAK, zrób to.
-	AI_Output			(self, other,"Info_Xardas_MAKERUNEDOIT_14_05"); //Jeœli tego w³aœnie chcesz... Proszê, oto miecz i runa!
+	AI_Output			(other, self,"Info_Xardas_MAKERUNEDOIT_15_04"); //TAK, zrÃ³b to.
+	AI_Output			(self, other,"Info_Xardas_MAKERUNEDOIT_14_05"); //JeÅ›li tego wÅ‚aÅ›nie chcesz... ProszÄ™, oto miecz i runa!
 
 	Npc_RemoveInvItem 	(hero, Mythrilklinge02);
 	CreateInvItems 		(self, UrizielRune, 2);	
-	B_GiveInvItems      (self, hero, UrizielRune, 2);// Wegen Ausgabe "2 Items übergeben", wird direkt angeglichen
+	B_GiveInvItems      (self, hero, UrizielRune, 2);// Wegen Ausgabe "2 Items Ã¼bergeben", wird direkt angeglichen
 	Npc_RemoveInvItem	(hero, UrizielRune);
 	CreateInvItem		(hero, Mythrilklinge03);
-	B_LogEntry			(CH5_Uriziel,"Xardas usun¹³ magiczny kryszta³ z Uriziela. Magiczna moc tego miecza spoczywa teraz w magicznej runie.");
+	B_LogEntry			(CH5_Uriziel,"Xardas usunÄ…Å‚ magiczny krysztaÅ‚ z Uriziela. Magiczna moc tego miecza spoczywa teraz w magicznej runie.");
 	Log_SetTopicStatus	(CH5_Uriziel,	LOG_SUCCESS);
 };	
 
 func void Info_Xardas_MAKERUNE_NO ()
 {
 	Info_ClearChoices	(Info_Xardas_MAKERUNEDOIT);
-	AI_Output			(other, self,"Info_Xardas_MAKERUNEDOIT_15_06"); //Nie, nie chcê.
-	AI_Output			(self, other,"Info_Xardas_MAKERUNEDOIT_14_07"); //Jak sobie ¿yczysz. Ostrze zachowa sw¹ magiczn¹ moc!
+	AI_Output			(other, self,"Info_Xardas_MAKERUNEDOIT_15_06"); //Nie, nie chcÄ™.
+	AI_Output			(self, other,"Info_Xardas_MAKERUNEDOIT_14_07"); //Jak sobie Å¼yczysz. Ostrze zachowa swÄ… magicznÄ… moc!
 };	
 	
 
@@ -943,23 +943,23 @@ FUNC int  Info_Xardas_LOADSWORD09_Condition()
 };
 func void  Info_Xardas_LOADSWORD09_Info()
 {
-	AI_Output (other, self,"Info_Xardas_LOADSWORD09_15_01");		//Mo¿esz mnie czegoœ nauczyæ?
+	AI_Output (other, self,"Info_Xardas_LOADSWORD09_15_01");		//MoÅ¼esz mnie czegoÅ› nauczyÄ‡?
 	
 	if ( Npc_GetTalentSkill	( hero,	NPC_TALENT_MAGE ) == 5) 
 	{
 		
 		if (B_GiveSkill(other, NPC_TALENT_MAGE, 6, LPCOST_TALENT_MAGE_6))
 		{
-			AI_Output (self, other,"Info_Xardas_LOADSWORD09_14_02"); //Wprowadzê ciê w Szósty Kr¹g Magii.
-			AI_Output (self, other,"Info_Xardas_LOADSWORD09_14_03"); //Pamiêtaj, ¿e to przywilej zarezerwowany wy³¹cznie dla najbieglejszych magów. Mog¹ do niego przyst¹piæ ci, których ca³e ¿ycie jest znakiem.
-			AI_Output (self, other,"Info_Xardas_LOADSWORD09_14_04"); //Twoim znakiem jest zjednoczenie elementów.
-			AI_Output (self, other,"Info_Xardas_LOADSWORD09_14_05"); //Szósty Kr¹g pozwala ci wykorzystywaæ magiê dowolnej runy.
-			AI_Output (self, other,"Info_Xardas_LOADSWORD09_14_06"); //I nie zapomnij: twoim zadaniem jest s³u¿yæ potêdze magii, a nie j¹ wykorzystywaæ.
+			AI_Output (self, other,"Info_Xardas_LOADSWORD09_14_02"); //WprowadzÄ™ ciÄ™ w SzÃ³sty KrÄ…g Magii.
+			AI_Output (self, other,"Info_Xardas_LOADSWORD09_14_03"); //PamiÄ™taj, Å¼e to przywilej zarezerwowany wyÅ‚Ä…cznie dla najbieglejszych magÃ³w. MogÄ… do niego przystÄ…piÄ‡ ci, ktÃ³rych caÅ‚e Å¼ycie jest znakiem.
+			AI_Output (self, other,"Info_Xardas_LOADSWORD09_14_04"); //Twoim znakiem jest zjednoczenie elementÃ³w.
+			AI_Output (self, other,"Info_Xardas_LOADSWORD09_14_05"); //SzÃ³sty KrÄ…g pozwala ci wykorzystywaÄ‡ magiÄ™ dowolnej runy.
+			AI_Output (self, other,"Info_Xardas_LOADSWORD09_14_06"); //I nie zapomnij: twoim zadaniem jest sÅ‚uÅ¼yÄ‡ potÄ™dze magii, a nie jÄ… wykorzystywaÄ‡.
 			
-			CreateInvItem 		(hero, DMB_ARMOR_M);		// SN: kann nicht mit B_GiveInvItem() übergeben werden, da Xardas sonst nackt dasteht!
+			CreateInvItem 		(hero, DMB_ARMOR_M);		// SN: kann nicht mit B_GiveInvItem() Ã¼bergeben werden, da Xardas sonst nackt dasteht!
 			AI_EquipBestArmor	(hero);
 
-			//Fakeitem für Bildschirmausgabe
+			//Fakeitem fÃ¼r Bildschirmausgabe
 			CreateInvItem		(self,			ItAmArrow);
 			B_GiveInvItems		(self, hero,	ItAmArrow, 1);
 			Npc_RemoveInvItem	(hero,			ItAmArrow);
@@ -972,7 +972,7 @@ func void  Info_Xardas_LOADSWORD09_Info()
 	}
 	else 
 	{
-		AI_Output (self, other,"Info_Xardas_LOADSWORD09_14_07"); 	//Jeszcze nie. Jesteœ zdolny, ale brak ci niezbêdnego doœwiadczenia. Niech Saturas popracuje nad tob¹ przez jakiœ czas. Wtedy zobaczymy.
+		AI_Output (self, other,"Info_Xardas_LOADSWORD09_14_07"); 	//Jeszcze nie. JesteÅ› zdolny, ale brak ci niezbÄ™dnego doÅ›wiadczenia. Niech Saturas popracuje nad tobÄ… przez jakiÅ› czas. Wtedy zobaczymy.
 		
 		AI_StopProcessInfos	( self );
 	};

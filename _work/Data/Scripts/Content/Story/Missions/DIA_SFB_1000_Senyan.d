@@ -44,7 +44,7 @@ FUNC INT DIA_Senyan_Hello_Condition()
 FUNC VOID DIA_Senyan_Hello_Info()
 {	
 	AI_Output (other, self,"DIA_Senyan_Hello_15_00"); //Przybywasz z Wolnej Kopalni, tak?
-	AI_Output (self, other,"DIA_Senyan_Hello_01_01"); //Tak. Sk¹d wiesz?
+	AI_Output (self, other,"DIA_Senyan_Hello_01_01"); //Tak. SkÄ…d wiesz?
 	AI_StopProcessInfos	(self);
 };
 
@@ -59,7 +59,7 @@ INSTANCE DIA_Senyan_JustTalk(C_INFO)
 	condition	= DIA_Senyan_JustTalk_Condition;
 	information	= DIA_Senyan_JustTalk_Info;
 	permanent	= 1;
-	description = "Chcê z tob¹ chwilê porozmawiaæ?";
+	description = "ChcÄ™ z tobÄ… chwilÄ™ porozmawiaÄ‡?";
 };                       
 
 FUNC INT DIA_Senyan_JustTalk_Condition()
@@ -72,7 +72,7 @@ FUNC INT DIA_Senyan_JustTalk_Condition()
 
 FUNC VOID DIA_Senyan_JustTalk_Info()
 {	
-	AI_Output (other, self,"DIA_Senyan_JustTalk_15_00"); //Chcê z tob¹ chwilê porozmawiaæ.
-	AI_Output (self, other,"DIA_Senyan_JustTalk_01_01"); //Nie przyszed³em tutaj, ¿eby gadaæ.
+	AI_Output (other, self,"DIA_Senyan_JustTalk_15_00"); //ChcÄ™ z tobÄ… chwilÄ™ porozmawiaÄ‡.
+	AI_Output (self, other,"DIA_Senyan_JustTalk_01_01"); //Nie przyszedÅ‚em tutaj, Å¼eby gadaÄ‡.
 	AI_StopProcessInfos	(self);
 };

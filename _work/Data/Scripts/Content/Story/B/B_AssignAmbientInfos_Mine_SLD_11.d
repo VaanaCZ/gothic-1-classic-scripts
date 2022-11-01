@@ -37,7 +37,7 @@ INSTANCE Info_Mine_Sld_11_EinerVonEuchWerden (C_INFO) // E1
 	condition	= Info_Mine_Sld_11_EinerVonEuchWerden_Condition;
 	information	= Info_Mine_Sld_11_EinerVonEuchWerden_Info;
 	permanent	= 1;
-	description = "Jak mogê do was do³¹czyæ?";
+	description = "Jak mogÄ™ do was doÅ‚Ä…czyÄ‡?";
 };                       
 
 FUNC INT Info_Mine_Sld_11_EinerVonEuchWerden_Condition()
@@ -53,9 +53,9 @@ FUNC INT Info_Mine_Sld_11_EinerVonEuchWerden_Condition()
 
 FUNC VOID Info_Mine_Sld_11_EinerVonEuchWerden_Info()
 {
-	AI_Output(other,self,"Info_Mine_Sld_11_EinerVonEuchWerden_15_00"); //Jak mogê do was do³¹czyæ?
-	AI_Output(self,other,"Info_Mine_Sld_11_EinerVonEuchWerden_011_01"); //Jeœli chcesz byæ jednym z nas, musisz najpierw zas³u¿yæ na odpowiedni¹ reputacjê.
-	AI_Output(self,other,"Info_Mine_Sld_11_EinerVonEuchWerden_011_02"); //IdŸ i udowodnij, co potrafisz, a mo¿e bêdziesz móg³ pracowaæ w Kotle.
+	AI_Output(other,self,"Info_Mine_Sld_11_EinerVonEuchWerden_15_00"); //Jak mogÄ™ do was doÅ‚Ä…czyÄ‡?
+	AI_Output(self,other,"Info_Mine_Sld_11_EinerVonEuchWerden_011_01"); //JeÅ›li chcesz byÄ‡ jednym z nas, musisz najpierw zasÅ‚uÅ¼yÄ‡ na odpowiedniÄ… reputacjÄ™.
+	AI_Output(self,other,"Info_Mine_Sld_11_EinerVonEuchWerden_011_02"); //IdÅº i udowodnij, co potrafisz, a moÅ¼e bÄ™dziesz mÃ³gÅ‚ pracowaÄ‡ w Kotle.
 };
 
 // *************************************************************************
@@ -79,8 +79,8 @@ FUNC INT Info_Mine_Sld_11_WichtigePersonen_Condition()
 FUNC VOID Info_Mine_Sld_11_WichtigePersonen_Info()
 {
 	AI_Output(other,self,"Info_Mine_Sld_11_WichtigePersonen_15_00"); //Kto tu wydaje rozkazy?
-	AI_Output(self,other,"Info_Mine_Sld_11_WichtigePersonen_011_01"); //W Kotle rz¹dzi Okyl. Ma kontakty ze wszystkimi szychami w Obozie.
-	AI_Output(self,other,"Info_Mine_Sld_11_WichtigePersonen_011_02"); //A jak zaczniesz sprawiaæ k³opoty, zajm¹ siê tob¹ Magowie Wody z Nowego Obozu.
+	AI_Output(self,other,"Info_Mine_Sld_11_WichtigePersonen_011_01"); //W Kotle rzÄ…dzi Okyl. Ma kontakty ze wszystkimi szychami w Obozie.
+	AI_Output(self,other,"Info_Mine_Sld_11_WichtigePersonen_011_02"); //A jak zaczniesz sprawiaÄ‡ kÅ‚opoty, zajmÄ… siÄ™ tobÄ… Magowie Wody z Nowego Obozu.
 };
 
 // *************************************************************************
@@ -93,7 +93,7 @@ INSTANCE Info_Mine_Sld_11_DasLager(C_INFO)
 	condition	= Info_Mine_Sld_11_DasLager_Condition;
 	information	= Info_Mine_Sld_11_DasLager_Info;
 	permanent	= 1;
-	description = "Dzieje siê tu coœ szczególnie interesuj¹cego?";
+	description = "Dzieje siÄ™ tu coÅ› szczegÃ³lnie interesujÄ…cego?";
 };                       
 
 FUNC INT Info_Mine_Sld_11_DasLager_Condition()
@@ -103,9 +103,9 @@ FUNC INT Info_Mine_Sld_11_DasLager_Condition()
 
 FUNC VOID Info_Mine_Sld_11_DasLager_Info()
 {
-	AI_Output(other,self,"Info_Mine_Sld_11_DasLager_15_00"); //Dzieje siê tu coœ szczególnie interesuj¹cego?
-	AI_Output(self,other,"Info_Mine_Sld_11_DasLager_011_01"); //Nic, ale jak spróbujesz czegoœ g³upiego bêdziesz mia³ powa¿ne k³opoty.
-	AI_Output(self,other,"Info_Mine_Sld_11_DasLager_011_02"); //Zw³aszcza, jeœli spróbujesz dostaæ siê do kopalni albo stró¿ówki bez pozwolenia.
+	AI_Output(other,self,"Info_Mine_Sld_11_DasLager_15_00"); //Dzieje siÄ™ tu coÅ› szczegÃ³lnie interesujÄ…cego?
+	AI_Output(self,other,"Info_Mine_Sld_11_DasLager_011_01"); //Nic, ale jak sprÃ³bujesz czegoÅ› gÅ‚upiego bÄ™dziesz miaÅ‚ powaÅ¼ne kÅ‚opoty.
+	AI_Output(self,other,"Info_Mine_Sld_11_DasLager_011_02"); //ZwÅ‚aszcza, jeÅ›li sprÃ³bujesz dostaÄ‡ siÄ™ do kopalni albo strÃ³Å¼Ã³wki bez pozwolenia.
 };
 
 // *************************************************************************
@@ -118,7 +118,7 @@ INSTANCE Info_Mine_Sld_11_DieLage(C_INFO) // E1
 	condition	= Info_Mine_Sld_11_DieLage_Condition;
 	information	= Info_Mine_Sld_11_DieLage_Info;
 	permanent	= 1;
-	description = "Co s³ychaæ?";
+	description = "Co sÅ‚ychaÄ‡?";
 };                       
 
 FUNC INT Info_Mine_Sld_11_DieLage_Condition()
@@ -128,8 +128,8 @@ FUNC INT Info_Mine_Sld_11_DieLage_Condition()
 
 FUNC VOID Info_Mine_Sld_11_DieLage_Info()
 {
-	AI_Output(other,self,"Info_Mine_Sld_11_DieLage_15_00"); //Co s³ychaæ?
-	AI_Output(self,other,"Info_Mine_Sld_11_DieLage_011_01"); //Na razie cicho. Za cicho jak na mój gust.
+	AI_Output(other,self,"Info_Mine_Sld_11_DieLage_15_00"); //Co sÅ‚ychaÄ‡?
+	AI_Output(self,other,"Info_Mine_Sld_11_DieLage_011_01"); //Na razie cicho. Za cicho jak na mÃ³j gust.
 };
 	
 // *************************************************************************

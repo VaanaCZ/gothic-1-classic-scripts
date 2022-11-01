@@ -40,7 +40,7 @@ const int MENU_SOUND_DY = 550;
 INSTANCE MENUITEM_AUDIO_HEADLINE(C_MENU_ITEM_DEF) 
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	text[0]		= "USTAWIENIA DèWI KU";
+	text[0]		= "USTAWIENIA D≈πWIƒòKU";
 	type		= MENU_ITEM_TEXT;
 	// Position und Dimension	
 	posx		= 0;		posy		= MENU_TITLE_Y;
@@ -59,7 +59,7 @@ INSTANCE MENUITEM_AUDIO_SFXVOL(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
 	text[0]		= "Efekty i mowa";
-	text[1]		= "G≥oúnoúÊ efektÛw düwiÍkowych i mowy."; // Kommentar
+	text[1]		= "G≈Ço≈õno≈õƒá efekt√≥w d≈∫wiƒôkowych i mowy."; // Kommentar
 	
 	// Position und Dimension	
 	posx		= 1000;		posy		= MENU_START_Y + MENU_SOUND_DY*0;
@@ -94,8 +94,8 @@ INSTANCE MENUITEM_AUDIO_SFXVOL_SLIDER(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_AUDIO_MUSICVOL(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	text[0]		= "G≥oúnoúÊ muzyki";
-	text[1]		= "G≥oúnoúÊ muzyki w tle."; // Kommentar
+	text[0]		= "G≈Ço≈õno≈õƒá muzyki";
+	text[1]		= "G≈Ço≈õno≈õƒá muzyki w tle."; // Kommentar
 	
 	// Position und Dimension	
 	posx		= 1000;		posy		=	MENU_START_Y + MENU_SOUND_DY*1;
@@ -131,7 +131,7 @@ instance MENUITEM_AUDIO_MUSIC(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
 	text[0]		= "Muzyka";
-	text[1]		= "W≥πcza/wy≥πcza muzykÍ w tle."; // Kommentar
+	text[1]		= "W≈ÇƒÖcza/wy≈ÇƒÖcza muzykƒô w tle."; // Kommentar
 	
 	// Position und Dimension	
 	posx		=	1000;	posy		=	MENU_START_Y + MENU_SOUND_DY*2;
@@ -147,7 +147,7 @@ INSTANCE MENUITEM_AUDIO_MUSIC_CHOICE(C_MENU_ITEM_DEF)
 {
 	backPic		=	MENU_CHOICE_BACK_PIC;
 	type		=	MENU_ITEM_CHOICEBOX;	
-	text[0]		=   "wy≥.|w≥.";
+	text[0]		=   "wy≈Ç.|w≈Ç.";
 	fontName	= 	MENU_FONT_SMALL;
 	// Position und Dimension	
 	posx		= 4300;		posy		=	MENU_START_Y + MENU_SOUND_DY*2 + MENU_CHOICE_YPLUS;
@@ -173,8 +173,8 @@ INSTANCE MENUITEM_AUDIO_MUSIC_CHOICE(C_MENU_ITEM_DEF)
 instance MENUITEM_AUDIO_PROVIDER(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	text[0]		= "èrÛd≥o düwiÍku";
-	text[1]		= "Zmiany uaktywniπ siÍ po ponownym uruchomieniu!"; // Kommentar
+	text[0]		= "≈πr√≥d≈Ço d≈∫wiƒôku";
+	text[1]		= "Zmiany uaktywniƒÖ siƒô po ponownym uruchomieniu!"; // Kommentar
 	
 	// Position und Dimension	
 	posx		=	1000;	posy		=	MENU_START_Y + MENU_SOUND_DY*3;
@@ -206,7 +206,7 @@ instance MENUITEM_AUDIO_PROVIDER_CHOICE(C_MENU_ITEM_DEF)
 instance MENUITEM_AUDIO_SPEEKER(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	text[0]		= "G≥oúniki";
+	text[0]		= "G≈Ço≈õniki";
 	text[1]		= ""; // Kommentar
 	
 	// Position und Dimension	
@@ -222,7 +222,7 @@ instance MENUITEM_AUDIO_SPEEKER_CHOICE(C_MENU_ITEM_DEF)
 {
 	backPic		=	MENU_CHOICE_BACK_PIC;
 	type		=	MENU_ITEM_CHOICEBOX;	
-	text[0]		=   "2 g≥oúniki|S≥uchawki|Surround|4 g≥oúniki";
+	text[0]		=   "2 g≈Ço≈õniki|S≈Çuchawki|Surround|4 g≈Ço≈õniki";
 	fontName	= 	MENU_FONT_SMALL;
 	// Position und Dimension	
 	posx		= 4300;		posy		=	MENU_START_Y + MENU_SOUND_DY*4 + MENU_CHOICE_YPLUS;
@@ -238,8 +238,8 @@ instance MENUITEM_AUDIO_SPEEKER_CHOICE(C_MENU_ITEM_DEF)
 instance MENUITEM_AUDIO_REVERB(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	text[0]		= "Pog≥os";
-	text[1]		= "W≥πcza pog≥os w jaskiniach (wymaga ponownego uruchomienia)."; // Kommentar
+	text[0]		= "Pog≈Ços";
+	text[1]		= "W≈ÇƒÖcza pog≈Ços w jaskiniach (wymaga ponownego uruchomienia)."; // Kommentar
 	
 	// Position und Dimension	
 	posx		=	1000;	posy		=	MENU_START_Y + MENU_SOUND_DY*5;
@@ -254,7 +254,7 @@ instance MENUITEM_AUDIO_REVERB_CHOICE(C_MENU_ITEM_DEF)
 {
 	backPic		=	MENU_CHOICE_BACK_PIC;
 	type		=	MENU_ITEM_CHOICEBOX;	
-	text[0]		=   "w≥.|wy≥.";
+	text[0]		=   "w≈Ç.|wy≈Ç.";
 	fontName	= 	MENU_FONT_SMALL;
 	// Position und Dimension	
 	posx		= 4300;		posy		=	MENU_START_Y + MENU_SOUND_DY*5 + MENU_CHOICE_YPLUS;
@@ -270,8 +270,8 @@ instance MENUITEM_AUDIO_REVERB_CHOICE(C_MENU_ITEM_DEF)
 instance MENUITEM_AUDIO_SAMPLERATE(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	text[0]		= "PrÛbkowanie";
-	text[1]		= "Zmiany uaktywniπ siÍ po ponownym uruchomieniu!"; // Kommentar
+	text[0]		= "Pr√≥bkowanie";
+	text[1]		= "Zmiany uaktywniƒÖ siƒô po ponownym uruchomieniu!"; // Kommentar
 	
 	// Position und Dimension	
 	posx		=	1000;	posy		=	MENU_START_Y + MENU_SOUND_DY*6;

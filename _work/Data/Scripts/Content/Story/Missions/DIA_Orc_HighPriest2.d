@@ -22,10 +22,10 @@ FUNC VOID Info_HighPriest2_Info()
 	AI_GotoNpc			(self, other);
 	
 	AI_Output			(self, other,"Info_HighPriest2_17_01"); //NIEWIERNY? W DOMU PANA?!
-	AI_Output			(self, other,"Info_HighPriest2_17_02"); //B¥D PRZEKLÊTY!
-	AI_Output			(other, self,"Info_HighPriest2_15_03"); //Sam b¹dŸ przeklêty, pajacu!
+	AI_Output			(self, other,"Info_HighPriest2_17_02"); //BÄ„DÅ¹ PRZEKLÄ˜TY!
+	AI_Output			(other, self,"Info_HighPriest2_15_03"); //Sam bÄ…dÅº przeklÄ™ty, pajacu!
 	
-	B_LogEntry			(CH4_EnterTemple,"Varrag-Kashor, kolejny z piêciu szamanów, zakoñczy wkrótce swój przeklêty ¿ywot!");
+	B_LogEntry			(CH4_EnterTemple,"Varrag-Kashor, kolejny z piÄ™ciu szamanÃ³w, zakoÅ„czy wkrÃ³tce swÃ³j przeklÄ™ty Å¼ywot!");
 
 	AI_StopProcessInfos	(self );
 

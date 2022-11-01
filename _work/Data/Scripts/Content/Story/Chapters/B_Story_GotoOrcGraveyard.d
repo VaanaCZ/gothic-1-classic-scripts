@@ -11,8 +11,8 @@ func void B_Story_GotoOrcGraveyard()
 	//-------- Tagebucheintrag --------
 	Log_CreateTopic		(CH3_OrcGraveyard,	LOG_MISSION);
 	Log_SetTopicStatus	(CH3_OrcGraveyard,	LOG_RUNNING);
-	B_LogEntry			(CH3_OrcGraveyard,"Wielkie przyzwanie Œni¹cego okaza³o siê niemal kompletn¹ klap¹. Ujrzano jedynie mgliste wizje orkowych jaskiñ. Ogromy wysi³ek zmóg³ Y'Beriona, duchowego przywódcê bractwa. Wielki Guru straci³ przytomnoœæ."); 
-	B_LogEntry			(CH3_OrcGraveyard,"Cor Angar, przywódca Œwi¹tynnej Stra¿y, poprosi³ mnie, bym uda³ siê na cmentarzysko orków. Do tych podziemnych jaskiñ wys³ano wczeœniej grupê Stra¿ników pod wodz¹ Baal Lukora. Mo¿e uda³o siê im odkryæ coœ, co pozwoli³oby na jaœniejsze zrozumienie wizji zes³anej przez Œni¹cego.");
+	B_LogEntry			(CH3_OrcGraveyard,"Wielkie przyzwanie ÅšniÄ…cego okazaÅ‚o siÄ™ niemal kompletnÄ… klapÄ…. Ujrzano jedynie mgliste wizje orkowych jaskiÅ„. Ogromy wysiÅ‚ek zmÃ³gÅ‚ Y'Beriona, duchowego przywÃ³dcÄ™ bractwa. Wielki Guru straciÅ‚ przytomnoÅ›Ä‡."); 
+	B_LogEntry			(CH3_OrcGraveyard,"Cor Angar, przywÃ³dca ÅšwiÄ…tynnej StraÅ¼y, poprosiÅ‚ mnie, bym udaÅ‚ siÄ™ na cmentarzysko orkÃ³w. Do tych podziemnych jaskiÅ„ wysÅ‚ano wczeÅ›niej grupÄ™ StraÅ¼nikÃ³w pod wodzÄ… Baal Lukora. MoÅ¼e udaÅ‚o siÄ™ im odkryÄ‡ coÅ›, co pozwoliÅ‚oby na jaÅ›niejsze zrozumienie wizji zesÅ‚anej przez ÅšniÄ…cego.");
 	
 	//-------- Templer und Orks vor Ork-Friedhof setzen --------
 	// mitten auf dem Vorplatz 
@@ -21,7 +21,7 @@ func void B_Story_GotoOrcGraveyard()
 	Wld_InsertNpc		(OrcBiter,			"OW_PATH_198_ORCGRAVEYARD4");
 	Wld_InsertNpc		(OrcBiter,			"OW_PATH_198_ORCGRAVEYARD4");
 
-	// vor dem Höhleneingang 
+	// vor dem HÃ¶hleneingang 
 	Wld_InsertNpc		(OrcScout,			"OW_PATH_198_ORCGRAVEYARD5");
 	Wld_InsertNpc		(OrcScout,			"OW_PATH_198_ORCGRAVEYARD6");
 	Wld_InsertNpc		(OrcScout,			"OW_PATH_198_ORCGRAVEYARD7");

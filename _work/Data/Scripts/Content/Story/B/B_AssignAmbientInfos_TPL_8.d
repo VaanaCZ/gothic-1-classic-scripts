@@ -37,7 +37,7 @@ INSTANCE Info_Tpl_8_EinerVonEuchWerden (C_INFO) // E1
 	condition	= Info_Tpl_8_EinerVonEuchWerden_Condition;
 	information	= Info_Tpl_8_EinerVonEuchWerden_Info;
 	permanent	= 1;
-	description = "Nie przyda³by siê wam dodatkowy cz³owiek?";
+	description = "Nie przydaÅ‚by siÄ™ wam dodatkowy czÅ‚owiek?";
 };                       
 
 FUNC INT Info_Tpl_8_EinerVonEuchWerden_Condition()
@@ -52,9 +52,9 @@ FUNC INT Info_Tpl_8_EinerVonEuchWerden_Condition()
 
 FUNC VOID Info_Tpl_8_EinerVonEuchWerden_Info()
 {
-	AI_Output(other,self,"Info_Tpl_8_EinerVonEuchWerden_15_00"); //Nie przyda³by siê wam dodatkowy cz³owiek?
-	AI_Output(self,other,"Info_Tpl_8_EinerVonEuchWerden_08_01"); //Zawsze chêtnie przyjmujemy nowych ludzi, ale czeka ciê jeszcze wiele pracy. Tylko najlepsi Nowicjusze mog¹ zostaæ Stra¿nikami Œwi¹tynnymi.
-	AI_Output(self,other,"Info_Tpl_8_EinerVonEuchWerden_08_02"); //To najwy¿sze wyró¿nienie, jakie mo¿e spotkaæ cz³onka Bractwa Œni¹cego.
+	AI_Output(other,self,"Info_Tpl_8_EinerVonEuchWerden_15_00"); //Nie przydaÅ‚by siÄ™ wam dodatkowy czÅ‚owiek?
+	AI_Output(self,other,"Info_Tpl_8_EinerVonEuchWerden_08_01"); //Zawsze chÄ™tnie przyjmujemy nowych ludzi, ale czeka ciÄ™ jeszcze wiele pracy. Tylko najlepsi Nowicjusze mogÄ… zostaÄ‡ StraÅ¼nikami ÅšwiÄ…tynnymi.
+	AI_Output(self,other,"Info_Tpl_8_EinerVonEuchWerden_08_02"); //To najwyÅ¼sze wyrÃ³Å¼nienie, jakie moÅ¼e spotkaÄ‡ czÅ‚onka Bractwa ÅšniÄ…cego.
 };
 
 // *************************************************************************
@@ -78,9 +78,9 @@ FUNC INT Info_Tpl_8_WichtigePersonen_Condition()
 FUNC VOID Info_Tpl_8_WichtigePersonen_Info()
 {
 	AI_Output(other,self,"Info_Tpl_8_WichtigePersonen_15_00"); //Kto tu dowodzi?
-	AI_Output(self,other,"Info_Tpl_8_WichtigePersonen_08_01"); //Naszym œwiêtym obowi¹zkiem jest wype³nianie poleceñ Guru.
-	AI_Output(other,self,"Info_Tpl_8_WichtigePersonen_15_02"); //Kim s¹ ci Guru?
-	AI_Output(self,other,"Info_Tpl_8_WichtigePersonen_08_03"); //Najwy¿szym z Guru jest jaœnie oœwiecony Y'Berion. Oprócz niego s¹ jeszcze Cor Kalom, Cor Angar oraz kilku innych.
+	AI_Output(self,other,"Info_Tpl_8_WichtigePersonen_08_01"); //Naszym Å›wiÄ™tym obowiÄ…zkiem jest wypeÅ‚nianie poleceÅ„ Guru.
+	AI_Output(other,self,"Info_Tpl_8_WichtigePersonen_15_02"); //Kim sÄ… ci Guru?
+	AI_Output(self,other,"Info_Tpl_8_WichtigePersonen_08_03"); //NajwyÅ¼szym z Guru jest jaÅ›nie oÅ›wiecony Y'Berion. OprÃ³cz niego sÄ… jeszcze Cor Kalom, Cor Angar oraz kilku innych.
 	var C_NPC YBerion;		YBerion	= Hlp_GetNpc(Gur_1200_Yberion);
 	var C_NPC CorKalom;		CorKalom= Hlp_GetNpc(Gur_1201_CorKalom);
 	var C_NPC CorAngar;		CorAngar= Hlp_GetNpc(Gur_1202_CorAngar);
@@ -99,7 +99,7 @@ INSTANCE Info_Tpl_8_DasLager(C_INFO)
 	condition	= Info_Tpl_8_DasLager_Condition;
 	information	= Info_Tpl_8_DasLager_Info;
 	permanent	= 1;
-	description = "Co mo¿esz mi powiedzieæ o tym obozie?";
+	description = "Co moÅ¼esz mi powiedzieÄ‡ o tym obozie?";
 };                       
 
 FUNC INT Info_Tpl_8_DasLager_Condition()
@@ -112,9 +112,9 @@ FUNC INT Info_Tpl_8_DasLager_Condition()
 
 FUNC VOID Info_Tpl_8_DasLager_Info()
 {
-	AI_Output(other,self,"Info_Tpl_8_DasLager_15_00"); //Co mo¿esz mi powiedzieæ o tym obozie?
-	AI_Output(self,other,"Info_Tpl_8_DasLager_08_01"); //Chocia¿ jesteœ tu nowy, mo¿esz bezpiecznie poruszaæ siê niemal po ca³ym obozie. Wyj¹tkiem jest jedynie œwi¹tynia Œni¹cego.
-	AI_Output(self,other,"Info_Tpl_8_DasLager_08_02"); //Dlatego staraj siê nie chadzaæ tam, gdzie ci nie wolno, oraz nie przeszkadzaj naszym mistrzom w medytacji.
+	AI_Output(other,self,"Info_Tpl_8_DasLager_15_00"); //Co moÅ¼esz mi powiedzieÄ‡ o tym obozie?
+	AI_Output(self,other,"Info_Tpl_8_DasLager_08_01"); //ChociaÅ¼ jesteÅ› tu nowy, moÅ¼esz bezpiecznie poruszaÄ‡ siÄ™ niemal po caÅ‚ym obozie. WyjÄ…tkiem jest jedynie Å›wiÄ…tynia ÅšniÄ…cego.
+	AI_Output(self,other,"Info_Tpl_8_DasLager_08_02"); //Dlatego staraj siÄ™ nie chadzaÄ‡ tam, gdzie ci nie wolno, oraz nie przeszkadzaj naszym mistrzom w medytacji.
 };
 
 // *************************************************************************
@@ -127,7 +127,7 @@ INSTANCE Info_Tpl_8_DieLage(C_INFO) // E1
 	condition	= Info_Tpl_8_DieLage_Condition;
 	information	= Info_Tpl_8_DieLage_Info;
 	permanent	= 1;
-	description = "Jak siê masz?";
+	description = "Jak siÄ™ masz?";
 };                       
 
 FUNC INT Info_Tpl_8_DieLage_Condition()
@@ -140,8 +140,8 @@ FUNC INT Info_Tpl_8_DieLage_Condition()
 
 FUNC VOID Info_Tpl_8_DieLage_Info()
 {
-	AI_Output(other,self,"Info_Tpl_8_DieLage_15_00"); //Jak siê masz?
-	AI_Output(self,other,"Info_Tpl_8_DieLage_08_01"); //Ostrzegam ciê! Oka¿ nieco wiêcej szacunku. Rozmawiasz z jednym z obroñców œwiêtych proroków.
+	AI_Output(other,self,"Info_Tpl_8_DieLage_15_00"); //Jak siÄ™ masz?
+	AI_Output(self,other,"Info_Tpl_8_DieLage_08_01"); //Ostrzegam ciÄ™! OkaÅ¼ nieco wiÄ™cej szacunku. Rozmawiasz z jednym z obroÅ„cÃ³w Å›wiÄ™tych prorokÃ³w.
 };
 	
 // *************************************************************************

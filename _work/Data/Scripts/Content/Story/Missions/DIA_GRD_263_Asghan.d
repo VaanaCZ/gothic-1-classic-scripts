@@ -30,7 +30,7 @@ instance  Grd_263_Asghan_NEST (C_INFO)
 	information		= Grd_263_Asghan_NEST_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Gdzieœ tutaj musi byæ gniazdo pe³zaczy."; 
+	description		= "GdzieÅ› tutaj musi byÄ‡ gniazdo peÅ‚zaczy."; 
 };
 
 FUNC int  Grd_263_Asghan_NEST_Condition()
@@ -43,14 +43,14 @@ FUNC int  Grd_263_Asghan_NEST_Condition()
 };
 FUNC void  Grd_263_Asghan_NEST_Info()
 {
-	AI_Output			(other, self,"Grd_263_Asghan_NEST_Info_15_01"); //Gdzieœ tutaj musi byæ gniazdo pe³zaczy.
-	AI_Output			(self, other,"Grd_263_Asghan_NEST_Info_06_02"); //Ca³a ta przeklêta góra jest jednym wielkim gniazdem pe³zaczy!
-	AI_Output			(other, self,"Grd_263_Asghan_NEST_Info_15_03"); //Dlaczego zamkniêto ten szyb?
-	AI_Output			(self, other,"Grd_263_Asghan_NEST_Info_06_04"); //Niewa¿ne ile pe³zaczy zabijaliœmy, kolejne zastêpy wyrasta³y jak spod ziemi.
-	AI_Output			(other, self,"Grd_263_Asghan_NEST_Info_15_05"); //Wygl¹da na to, ¿e gdzieœ w pobli¿u jest ich gniazdo. Pozwól mi otworzyæ drzwi!
-	AI_Output			(self, other,"Grd_263_Asghan_NEST_Info_06_06"); //Nie! To przejœcie mo¿na otworzyæ tylko za pozwoleniem Iana! Bez tego nie ma o czym mówiæ!
+	AI_Output			(other, self,"Grd_263_Asghan_NEST_Info_15_01"); //GdzieÅ› tutaj musi byÄ‡ gniazdo peÅ‚zaczy.
+	AI_Output			(self, other,"Grd_263_Asghan_NEST_Info_06_02"); //CaÅ‚a ta przeklÄ™ta gÃ³ra jest jednym wielkim gniazdem peÅ‚zaczy!
+	AI_Output			(other, self,"Grd_263_Asghan_NEST_Info_15_03"); //Dlaczego zamkniÄ™to ten szyb?
+	AI_Output			(self, other,"Grd_263_Asghan_NEST_Info_06_04"); //NiewaÅ¼ne ile peÅ‚zaczy zabijaliÅ›my, kolejne zastÄ™py wyrastaÅ‚y jak spod ziemi.
+	AI_Output			(other, self,"Grd_263_Asghan_NEST_Info_15_05"); //WyglÄ…da na to, Å¼e gdzieÅ› w pobliÅ¼u jest ich gniazdo. PozwÃ³l mi otworzyÄ‡ drzwi!
+	AI_Output			(self, other,"Grd_263_Asghan_NEST_Info_06_06"); //Nie! To przejÅ›cie moÅ¼na otworzyÄ‡ tylko za pozwoleniem Iana! Bez tego nie ma o czym mÃ³wiÄ‡!
 	
-	B_LogEntry		(CH2_MCEggs,"Asghan, przywódca Stra¿ników z kopalni nie chce otworzyæ dla mnie bramy bez upowa¿nienia Iana.");
+	B_LogEntry		(CH2_MCEggs,"Asghan, przywÃ³dca StraÅ¼nikÃ³w z kopalni nie chce otworzyÄ‡ dla mnie bramy bez upowaÅ¼nienia Iana.");
 
 };
 /*------------------------------------------------------------------------
@@ -64,7 +64,7 @@ instance  Grd_263_Asghan_OPEN (C_INFO)
 	information		= Grd_263_Asghan_OPEN_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Hej, Asghan! Mo¿esz ju¿ otworzyæ te drzwi!"; 
+	description		= "Hej, Asghan! MoÅ¼esz juÅ¼ otworzyÄ‡ te drzwi!"; 
 };
 
 FUNC int  Grd_263_Asghan_OPEN_Condition()
@@ -78,14 +78,14 @@ FUNC int  Grd_263_Asghan_OPEN_Condition()
 
 FUNC void  Grd_263_Asghan_OPEN_Info()
 {
-	AI_Output (other, self,"Grd_263_Asghan_OPEN_Info_15_01"); //Hej, Asghan! Mo¿esz ju¿ otworzyæ te drzwi!
-	AI_Output (self, other,"Grd_263_Asghan_OPEN_Info_06_02"); //Mówi³em ci ju¿: tylko jeœli Ian.
-	AI_Output (other, self,"Grd_263_Asghan_OPEN_Info_15_03"); //Asghan... Wszystko bêdzie w porz¹dku... Pozdrowienia od Iana.
-	AI_Output (self, other,"Grd_263_Asghan_OPEN_Info_06_04"); //Có¿, jeœli Ian bierze na siebie odpowiedzialnoœæ... Ale tylko pod jednym warunkiem!
+	AI_Output (other, self,"Grd_263_Asghan_OPEN_Info_15_01"); //Hej, Asghan! MoÅ¼esz juÅ¼ otworzyÄ‡ te drzwi!
+	AI_Output (self, other,"Grd_263_Asghan_OPEN_Info_06_02"); //MÃ³wiÅ‚em ci juÅ¼: tylko jeÅ›li Ian.
+	AI_Output (other, self,"Grd_263_Asghan_OPEN_Info_15_03"); //Asghan... Wszystko bÄ™dzie w porzÄ…dku... Pozdrowienia od Iana.
+	AI_Output (self, other,"Grd_263_Asghan_OPEN_Info_06_04"); //CÃ³Å¼, jeÅ›li Ian bierze na siebie odpowiedzialnoÅ›Ä‡... Ale tylko pod jednym warunkiem!
 	AI_Output (other, self,"Grd_263_Asghan_OPEN_Info_15_05"); //Jakim warunkiem?
-	AI_Output (self, other,"Grd_263_Asghan_OPEN_Info_06_06"); //SprowadŸ mi tu najpierw dwóch albo trzech Stra¿ników Œwi¹tynnych. Nie chcê tu siedzieæ sam, gdy ca³y szyb zaroi siê od pe³zaczy!
+	AI_Output (self, other,"Grd_263_Asghan_OPEN_Info_06_06"); //SprowadÅº mi tu najpierw dwÃ³ch albo trzech StraÅ¼nikÃ³w ÅšwiÄ…tynnych. Nie chcÄ™ tu siedzieÄ‡ sam, gdy caÅ‚y szyb zaroi siÄ™ od peÅ‚zaczy!
 	
-	B_LogEntry		(CH2_MCEggs,"Mimo wszystko, Asghan nie otworzy bramy dopóki nie sprowadzê mu kilku Stra¿ników Œwi¹tynnych do pomocy.");
+	B_LogEntry		(CH2_MCEggs,"Mimo wszystko, Asghan nie otworzy bramy dopÃ³ki nie sprowadzÄ™ mu kilku StraÅ¼nikÃ³w ÅšwiÄ…tynnych do pomocy.");
 
 	AI_StopProcessInfos	( self );
 };  
@@ -99,7 +99,7 @@ instance  Grd_263_Asghan_OPEN_NOW (C_INFO)
 	information		= Grd_263_Asghan_OPEN_NOW_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Przygotowania skoñczone. Mo¿na ju¿ otworzyæ te drzwi!"; 
+	description		= "Przygotowania skoÅ„czone. MoÅ¼na juÅ¼ otworzyÄ‡ te drzwi!"; 
 };
 
 FUNC int  Grd_263_Asghan_OPEN_NOW_Condition()
@@ -114,14 +114,14 @@ FUNC int  Grd_263_Asghan_OPEN_NOW_Condition()
 };
 FUNC void  Grd_263_Asghan_OPEN_NOW_Info()
 {
-	AI_Output			(other, self,"Grd_263_Asghan_OPEN_NOW_Info_15_01"); //Przygotowania skoñczone. Mo¿na ju¿ otworzyæ drzwi!
-	AI_Output			(self, other,"Grd_263_Asghan_OPEN_NOW_Info_06_02"); //Dobra, otwieramy szyb. Bêdzie niez³y bal!
+	AI_Output			(other, self,"Grd_263_Asghan_OPEN_NOW_Info_15_01"); //Przygotowania skoÅ„czone. MoÅ¼na juÅ¼ otworzyÄ‡ drzwi!
+	AI_Output			(self, other,"Grd_263_Asghan_OPEN_NOW_Info_06_02"); //Dobra, otwieramy szyb. BÄ™dzie niezÅ‚y bal!
 	
 	Npc_SetPermAttitude (self,ATT_FRIENDLY);
 	Npc_ExchangeRoutine	(self,"opengate");
 	
 	B_GiveXP			(XP_OpenAsghansGate);
-	B_LogEntry			(CH2_MCEggs,"Uda³o mi siê znaleŸæ wystarczaj¹c¹ liczbê Stra¿ników Œwi¹tynnych. Ciekawe, co mnie czeka po drugiej stronie bramy?");
+	B_LogEntry			(CH2_MCEggs,"UdaÅ‚o mi siÄ™ znaleÅºÄ‡ wystarczajÄ…cÄ… liczbÄ™ StraÅ¼nikÃ³w ÅšwiÄ…tynnych. Ciekawe, co mnie czeka po drugiej stronie bramy?");
 		
 	AI_StopProcessInfos	(self);
 };    
@@ -134,7 +134,7 @@ instance  Grd_263_Asghan_LAIRFOUND (C_INFO)
 	information		= Grd_263_Asghan_LAIRFOUND_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Pe³zacze nie bêd¹ wam ju¿ zagra¿a³y!"; 
+	description		= "PeÅ‚zacze nie bÄ™dÄ… wam juÅ¼ zagraÅ¼aÅ‚y!"; 
 };
 
 FUNC int  Grd_263_Asghan_LAIRFOUND_Condition()
@@ -148,14 +148,14 @@ FUNC int  Grd_263_Asghan_LAIRFOUND_Condition()
 };
 FUNC void  Grd_263_Asghan_LAIRFOUND_Info()
 {
-	AI_Output			(other, self,"Grd_263_Asghan_LAIRFOUND_Info_15_01"); //Pe³zacze nie bêd¹ wam ju¿ zagra¿a³y!
-	AI_Output			(self, other,"Grd_263_Asghan_LAIRFOUND_Info_06_02"); //To wspania³a wiadomoœæ! Wyœlê goñca do Thorusa z dobrymi nowinami!
+	AI_Output			(other, self,"Grd_263_Asghan_LAIRFOUND_Info_15_01"); //PeÅ‚zacze nie bÄ™dÄ… wam juÅ¼ zagraÅ¼aÅ‚y!
+	AI_Output			(self, other,"Grd_263_Asghan_LAIRFOUND_Info_06_02"); //To wspaniaÅ‚a wiadomoÅ›Ä‡! WyÅ›lÄ™ goÅ„ca do Thorusa z dobrymi nowinami!
 
 	AI_StopProcessInfos	(self);
 };    
 
 /*------------------------------------------------------------------------
-						MCQ Hatz läuft noch nicht 						
+						MCQ Hatz lÃ¤uft noch nicht 						
 ------------------------------------------------------------------------*/
 
 instance  Grd_263_Asghan_SMALLTALK (C_INFO)
@@ -179,9 +179,9 @@ FUNC int  Grd_263_Asghan_SMALLTALK_Condition()
 FUNC void  Grd_263_Asghan_SMALLTALK_Info()
 {
 	AI_Output (other, self,"Grd_263_Asghan_SMALLTALK_Info_15_01"); //Jak leci?
-	AI_Output (self, other,"Grd_263_Asghan_SMALLTALK_Info_06_02"); //Ujdzie... Tak d³ugo jak nikt nie bêdzie próbowa³ otworzyæ tych drzwi, nie bêdê musia³ wdawaæ siê w bójki.
-	AI_Output (other, self,"Grd_263_Asghan_SMALLTALK_Info_15_03"); //A co jest takiego szczególnego za tymi drzwiami?
-	AI_Output (self, other,"Grd_263_Asghan_SMALLTALK_Info_06_04"); //Pe³zacze. Wielkie, paskudne pe³zacze. Ca³e mnóstwo wielkich, paskudnych pe³zaczy!
+	AI_Output (self, other,"Grd_263_Asghan_SMALLTALK_Info_06_02"); //Ujdzie... Tak dÅ‚ugo jak nikt nie bÄ™dzie prÃ³bowaÅ‚ otworzyÄ‡ tych drzwi, nie bÄ™dÄ™ musiaÅ‚ wdawaÄ‡ siÄ™ w bÃ³jki.
+	AI_Output (other, self,"Grd_263_Asghan_SMALLTALK_Info_15_03"); //A co jest takiego szczegÃ³lnego za tymi drzwiami?
+	AI_Output (self, other,"Grd_263_Asghan_SMALLTALK_Info_06_04"); //PeÅ‚zacze. Wielkie, paskudne peÅ‚zacze. CaÅ‚e mnÃ³stwo wielkich, paskudnych peÅ‚zaczy!
 };  
 
 

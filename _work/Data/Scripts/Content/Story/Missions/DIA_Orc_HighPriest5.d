@@ -21,8 +21,8 @@ FUNC VOID Info_HighPriest5_Info()
 	
 	if ( Npc_HasItems ( hero, Mythrilklinge02 )) || ( Npc_HasItems ( hero, UrizielRune ))
 	{
-		AI_Output 			(self, other,"Info_HighPriest5_17_04"); //MASZ ZE SOB¥ POTÊ¯NY ORÊ¯!
-		AI_Output 			(self, other,"Info_HighPriest5_17_05"); //POWSTRZYMAM CIÊ!
+		AI_Output 			(self, other,"Info_HighPriest5_17_04"); //MASZ ZE SOBÄ„ POTÄ˜Å»NY ORÄ˜Å»!
+		AI_Output 			(self, other,"Info_HighPriest5_17_05"); //POWSTRZYMAM CIÄ˜!
 
 		AI_StopProcessInfos	(self);
 		self.npctype 		= NPCTYPE_MAIN;
@@ -32,9 +32,9 @@ FUNC VOID Info_HighPriest5_Info()
 	}
 	else
 	{
-		AI_Output 			(self, other,"Info_HighPriest5_17_01"); //MUSISZ TUTAJ ZAWRÓCIÆ!
-		AI_Output 			(self, other,"Info_HighPriest5_17_02"); //NIKT NIE MO¯E ZAK£ÓCIÆ SNU MEGO PANA!
-		AI_Output 			(other, self,"Info_HighPriest5_15_03"); //Nie ma lekko! Budzimy ŒPIOCHA!
+		AI_Output 			(self, other,"Info_HighPriest5_17_01"); //MUSISZ TUTAJ ZAWRÃ“CIÄ†!
+		AI_Output 			(self, other,"Info_HighPriest5_17_02"); //NIKT NIE MOÅ»E ZAKÅÃ“CIÄ† SNU MEGO PANA!
+		AI_Output 			(other, self,"Info_HighPriest5_15_03"); //Nie ma lekko! Budzimy ÅšPIOCHA!
 	
 		AI_StopProcessInfos	(self);
 	
@@ -65,9 +65,9 @@ FUNC INT Info_HighPriest5FAILED_Condition()
 
 FUNC VOID Info_HighPriest5FAILED_Info()
 {
-	AI_Output			(other, self,"Info_HighPriest5FAILED_15_01"); //Cholera! Nie zadajê mu nawet najmniejszych obra¿eñ. Potrzebujê innej...
+	AI_Output			(other, self,"Info_HighPriest5FAILED_15_01"); //Cholera! Nie zadajÄ™ mu nawet najmniejszych obraÅ¼eÅ„. PotrzebujÄ™ innej...
 	AI_Output			(self, other,"Info_HighPriest5FAILED_17_02"); //TERAZ ZGINIESZ!
-	AI_Output			(other, self,"Info_HighPriest5FAILED_15_03"); //Lepiej siê st¹d wynosiæ! I to zaraz!
+	AI_Output			(other, self,"Info_HighPriest5FAILED_15_03"); //Lepiej siÄ™ stÄ…d wynosiÄ‡! I to zaraz!
 	AI_RemoveWeapon		(other);
 	AI_TurnAway			(other,	self);	
 	
@@ -75,7 +75,7 @@ FUNC VOID Info_HighPriest5FAILED_Info()
 	Npc_SetAttitude 	(self, ATT_HOSTILE);
 	Npc_SetTempAttitude (self, ATT_HOSTILE);	
 
-	B_LogEntry			(CH4_EnterTemple,"Wygl¹da na to, ¿e Grash-Varrag-Arushat nie nale¿y do przeklêtych orkowych szamanów. Jest o wiele bardziej potê¿ny i ma broñ zdaje siê go nie imaæ! Potrzebujê potê¿niejszego orê¿a!");
+	B_LogEntry			(CH4_EnterTemple,"WyglÄ…da na to, Å¼e Grash-Varrag-Arushat nie naleÅ¼y do przeklÄ™tych orkowych szamanÃ³w. Jest o wiele bardziej potÄ™Å¼ny i ma broÅ„ zdaje siÄ™ go nie imaÄ‡! PotrzebujÄ™ potÄ™Å¼niejszego orÄ™Å¼a!");
 	B_GiveXP			(XP_RetreatFromLastPriest);
 
 	AI_StopProcessInfos	(self);

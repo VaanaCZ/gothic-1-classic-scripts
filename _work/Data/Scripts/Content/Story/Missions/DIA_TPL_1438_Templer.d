@@ -17,7 +17,7 @@ FUNC int  Tpl_1438_Templer_Exit_Condition()
 FUNC VOID  Tpl_1438_Templer_Exit_Info()
 {
 	AI_Output			(other, self,"Tpl_1438_Templer_Exit_Info_15_01"); //Do zobaczenia.
-	AI_Output			(self, other,"Tpl_1438_Templer_Exit_Info_13_02"); //Niech nadejdzie przebudzenie Œni¹cego.
+	AI_Output			(self, other,"Tpl_1438_Templer_Exit_Info_13_02"); //Niech nadejdzie przebudzenie ÅšniÄ…cego.
 	
 	AI_StopProcessInfos	( self );
 };
@@ -30,7 +30,7 @@ instance  Tpl_1438_Templer_INFO (C_INFO)
 	information		= Tpl_1438_Templer_INFO_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Co Stra¿nicy Œwi¹tynni robi¹ w kopalni?"; 
+	description		= "Co StraÅ¼nicy ÅšwiÄ…tynni robiÄ… w kopalni?"; 
 };
 
 FUNC int  Tpl_1438_Templer_INFO_Condition()
@@ -44,8 +44,8 @@ FUNC int  Tpl_1438_Templer_INFO_Condition()
 
 FUNC void  Tpl_1438_Templer_INFO_Info()
 {
-	AI_Output			(other, self,"Tpl_1438_Templer_INFO_Info_15_01"); //Co Stra¿nicy Œwi¹tynni robi¹ w kopalni?
-	AI_Output			(self, other,"Tpl_1438_Templer_INFO_Info_13_02"); //Polujemy na pe³zacze. Wracaj do Obozu. Tam bêdziesz bezpieczny.
+	AI_Output			(other, self,"Tpl_1438_Templer_INFO_Info_15_01"); //Co StraÅ¼nicy ÅšwiÄ…tynni robiÄ… w kopalni?
+	AI_Output			(self, other,"Tpl_1438_Templer_INFO_Info_13_02"); //Polujemy na peÅ‚zacze. Wracaj do Obozu. Tam bÄ™dziesz bezpieczny.
 }; 
 
 // ***************** SEKRET *****************************
@@ -57,7 +57,7 @@ instance  Tpl_1438_Templer_WHY (C_INFO)
 	information		= Tpl_1438_Templer_WHY_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Dlaczego polujecie na pe³zacze?"; 
+	description		= "Dlaczego polujecie na peÅ‚zacze?"; 
 };
 
 FUNC int  Tpl_1438_Templer_WHY_Condition()
@@ -70,10 +70,10 @@ FUNC int  Tpl_1438_Templer_WHY_Condition()
 };
 FUNC void  Tpl_1438_Templer_WHY_Info()
 {
-	AI_Output			(other, self,"Tpl_1438_Templer_WHY_Info_15_01"); //Dlaczego polujecie na pe³zacze?
-	AI_Output			(self, other,"Tpl_1438_Templer_WHY_Info_13_02"); //Ich wnêtrznoœci zawieraj¹ niezwykle cenn¹ wydzielinê.
+	AI_Output			(other, self,"Tpl_1438_Templer_WHY_Info_15_01"); //Dlaczego polujecie na peÅ‚zacze?
+	AI_Output			(self, other,"Tpl_1438_Templer_WHY_Info_13_02"); //Ich wnÄ™trznoÅ›ci zawierajÄ… niezwykle cennÄ… wydzielinÄ™.
 	AI_Output			(other, self,"Tpl_1438_Templer_WHY_Info_15_03"); //Co to za wydzielina?
-	AI_Output			(self, other,"Tpl_1438_Templer_WHY_Info_13_04"); //Trucizna. Tylko nasz wielki Guru, Cor Kalom, potrafi przyrz¹dzaæ z niej magiczne wywary.
+	AI_Output			(self, other,"Tpl_1438_Templer_WHY_Info_13_04"); //Trucizna. Tylko nasz wielki Guru, Cor Kalom, potrafi przyrzÄ…dzaÄ‡ z niej magiczne wywary.
 };
 // ***************** KALOM *****************************
 
@@ -99,11 +99,11 @@ FUNC int  Tpl_1438_Templer_KALOM_Condition()
 FUNC void  Tpl_1438_Templer_KALOM_Info()
 {
 	AI_Output			(other, self,"Tpl_1438_Templer_KALOM_Info_15_01"); //Kim jest Cor Kalom?
-	AI_Output			(self, other,"Tpl_1438_Templer_KALOM_Info_13_02"); //To jeden z najpotê¿niejszych ludzi w ca³ym Bractwie. Posiad³ wiele tajemnic magii i potrafi kontrolowaæ ludzkie myœli!
-	AI_Output			(self, other,"Tpl_1438_Templer_KALOM_Info_13_03"); //Oprócz tego jest równie¿ alchemikiem. Przygotowuje wywary, które pozwol¹ nam nawi¹zaæ kontakt ze Œni¹cym. Jeœli chcesz go poznaæ, udaj siê do naszego obozu. Zawsze chêtnie witamy nowych goœci!
-	AI_Output			(other, self,"Tpl_1438_Templer_KALOM_Info_15_04"); //Zastanowiê siê...
+	AI_Output			(self, other,"Tpl_1438_Templer_KALOM_Info_13_02"); //To jeden z najpotÄ™Å¼niejszych ludzi w caÅ‚ym Bractwie. PosiadÅ‚ wiele tajemnic magii i potrafi kontrolowaÄ‡ ludzkie myÅ›li!
+	AI_Output			(self, other,"Tpl_1438_Templer_KALOM_Info_13_03"); //OprÃ³cz tego jest rÃ³wnieÅ¼ alchemikiem. Przygotowuje wywary, ktÃ³re pozwolÄ… nam nawiÄ…zaÄ‡ kontakt ze ÅšniÄ…cym. JeÅ›li chcesz go poznaÄ‡, udaj siÄ™ do naszego obozu. Zawsze chÄ™tnie witamy nowych goÅ›ci!
+	AI_Output			(other, self,"Tpl_1438_Templer_KALOM_Info_15_04"); //ZastanowiÄ™ siÄ™...
 };  
-//---------------------WENN DIE EIERSUCHE LÄUFT-------------------------------  
+//---------------------WENN DIE EIERSUCHE LÃ„UFT-------------------------------  
 instance  Tpl_1438_Templer_EGGSEARCH (C_INFO)
 {
 	npc				= Tpl_1438_Templer;
@@ -111,7 +111,7 @@ instance  Tpl_1438_Templer_EGGSEARCH (C_INFO)
 	information		= Tpl_1438_Templer_EGGSEARCH_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Szukam gniazda pe³zaczy."; 
+	description		= "Szukam gniazda peÅ‚zaczy."; 
 };
 
 FUNC int  Tpl_1438_Templer_EGGSEARCH_Condition()
@@ -124,10 +124,10 @@ FUNC int  Tpl_1438_Templer_EGGSEARCH_Condition()
 };
 FUNC void  Tpl_1438_Templer_EGGSEARCH_Info()
 {
-	AI_Output			(other, self,"Tpl_1438_Templer_EGGSEARCH_Info_15_01"); //Szukam gniazda pe³zaczy.
-	AI_Output			(self, other,"Tpl_1438_Templer_EGGSEARCH_Info_13_02"); //Porozmawiaj z Gor Na Videm, Gor Na Koshem lub Gor Na Barem. Oni wiedz¹ wiêcej o pe³zaczach ni¿ ja.
+	AI_Output			(other, self,"Tpl_1438_Templer_EGGSEARCH_Info_15_01"); //Szukam gniazda peÅ‚zaczy.
+	AI_Output			(self, other,"Tpl_1438_Templer_EGGSEARCH_Info_13_02"); //Porozmawiaj z Gor Na Videm, Gor Na Koshem lub Gor Na Barem. Oni wiedzÄ… wiÄ™cej o peÅ‚zaczach niÅ¼ ja.
 
-	B_LogEntry		(CH2_MCEggs,"Przy wejœciu do Starej Kopalni zapyta³em Œwi¹tynnego Stra¿nika o gniazdo pe³zaczy. Skierowa³ mnie do swoich pobratymców: Gor Na Vida, Gor Na Kosha i Gor Na Bara. Imiona cz³onków Bractwa zaczynaj¹ doprowadzaæ mnie do sza³u.");  
+	B_LogEntry		(CH2_MCEggs,"Przy wejÅ›ciu do Starej Kopalni zapytaÅ‚em ÅšwiÄ…tynnego StraÅ¼nika o gniazdo peÅ‚zaczy. SkierowaÅ‚ mnie do swoich pobratymcÃ³w: Gor Na Vida, Gor Na Kosha i Gor Na Bara. Imiona czÅ‚onkÃ³w Bractwa zaczynajÄ… doprowadzaÄ‡ mnie do szaÅ‚u.");  
 };  
 /*------------------------------------------------------------------------
 //							ZANGEN FREISCHALTEN						    //
@@ -140,7 +140,7 @@ instance  Tpl_1438_Templer_ZANGEN (C_INFO)
 	information		= Tpl_1438_Templer_ZANGEN_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Jak mogê pozyskaæ wydzielinê z wnêtrznoœci pe³zaczy?"; 
+	description		= "Jak mogÄ™ pozyskaÄ‡ wydzielinÄ™ z wnÄ™trznoÅ›ci peÅ‚zaczy?"; 
 };
 
 FUNC int  Tpl_1438_Templer_ZANGEN_Condition()
@@ -154,8 +154,8 @@ FUNC int  Tpl_1438_Templer_ZANGEN_Condition()
 };
 FUNC void  Tpl_1438_Templer_ZANGEN_Info()
 {
-	AI_Output			(other, self,"Tpl_1438_Templer_ZANGEN_Info_15_01"); //Jak mogê pozyskaæ wydzielinê z wnêtrznoœci pe³zaczy?
-	AI_Output			(self, other,"Tpl_1438_Templer_ZANGEN_Info_13_02"); //To nie takie proste, ale mogê ciê nauczyæ.
+	AI_Output			(other, self,"Tpl_1438_Templer_ZANGEN_Info_15_01"); //Jak mogÄ™ pozyskaÄ‡ wydzielinÄ™ z wnÄ™trznoÅ›ci peÅ‚zaczy?
+	AI_Output			(self, other,"Tpl_1438_Templer_ZANGEN_Info_13_02"); //To nie takie proste, ale mogÄ™ ciÄ™ nauczyÄ‡.
 }; 
 /*------------------------------------------------------------------------
 //							LERNEN ZANGEN ZU ENTFERNEN					//
@@ -168,7 +168,7 @@ instance  Tpl_1438_Templer_TEACHZANGEN (C_INFO)
 	information		= Tpl_1438_Templer_TEACHZANGEN_Info;
 	important		= 0;
 	permanent		= 1;
-	description		= "Naucz siê usuwaæ wnêtrznoœci pe³zaczy (1 punkt umiejêtnoœci)"; 
+	description		= "Naucz siÄ™ usuwaÄ‡ wnÄ™trznoÅ›ci peÅ‚zaczy (1 punkt umiejÄ™tnoÅ›ci)"; 
 };
 
 FUNC int  Tpl_1438_Templer_TEACHZANGEN_Condition()
@@ -183,24 +183,24 @@ FUNC int  Tpl_1438_Templer_TEACHZANGEN_Condition()
 FUNC void  Tpl_1438_Templer_TEACHZANGEN_Info()
 {
 	
-	AI_Output			(other, self,"Tpl_1438_Templer_TEACHZANGEN_Info_15_01"); //Naucz mnie pozyskiwaæ wydzielinê z wnêtrznoœci pe³zaczy.
+	AI_Output			(other, self,"Tpl_1438_Templer_TEACHZANGEN_Info_15_01"); //Naucz mnie pozyskiwaÄ‡ wydzielinÄ™ z wnÄ™trznoÅ›ci peÅ‚zaczy.
 	
 	if (hero.lp >= 1)
 	{
 		hero.lp = hero.lp - 1;
-		AI_Output		(self, other,"Tpl_1438_Templer_TEACHZANGEN_Info_13_01"); //Najpierw musisz wykonaæ g³êbokie ciêcie. Tylko uwa¿aj, ¿eby nie przeci¹æ gruczo³u jadowego, bo trucizna mo¿e trysn¹æ ci na rêce.
-		AI_Output		(other, self,"Tpl_1438_Templer_TEACHZANGEN_Info_15_02"); //To musi byæ bardzo bolesne.
-		AI_Output		(self, other,"Tpl_1438_Templer_TEACHZANGEN_Info_13_03"); //Jeszcze jak! Pozna³eœ kiedyœ Korgura Trzy Palce, tego ³owcê pe³zaczy? A, nie - to by³o przed twoim przybyciem. Có¿, kontynuujmy...
-		AI_Output		(self, other,"Tpl_1438_Templer_TEACHZANGEN_Info_13_04"); //Wytnij spory kawa³ miêsa dooko³a gruczo³u. Jeœli bêdziesz wystarczaj¹co ostro¿ny, powinno ci siê udaæ bezpiecznie pozyskaæ gruczo³y.
+		AI_Output		(self, other,"Tpl_1438_Templer_TEACHZANGEN_Info_13_01"); //Najpierw musisz wykonaÄ‡ gÅ‚Ä™bokie ciÄ™cie. Tylko uwaÅ¼aj, Å¼eby nie przeciÄ…Ä‡ gruczoÅ‚u jadowego, bo trucizna moÅ¼e trysnÄ…Ä‡ ci na rÄ™ce.
+		AI_Output		(other, self,"Tpl_1438_Templer_TEACHZANGEN_Info_15_02"); //To musi byÄ‡ bardzo bolesne.
+		AI_Output		(self, other,"Tpl_1438_Templer_TEACHZANGEN_Info_13_03"); //Jeszcze jak! PoznaÅ‚eÅ› kiedyÅ› Korgura Trzy Palce, tego Å‚owcÄ™ peÅ‚zaczy? A, nie - to byÅ‚o przed twoim przybyciem. CÃ³Å¼, kontynuujmy...
+		AI_Output		(self, other,"Tpl_1438_Templer_TEACHZANGEN_Info_13_04"); //Wytnij spory kawaÅ‚ miÄ™sa dookoÅ‚a gruczoÅ‚u. JeÅ›li bÄ™dziesz wystarczajÄ…co ostroÅ¼ny, powinno ci siÄ™ udaÄ‡ bezpiecznie pozyskaÄ‡ gruczoÅ‚y.
 		Knows_GetMCMandibles = TRUE;
 		Log_CreateTopic (GE_AnimalTrophies,LOG_NOTE);
-		B_LogEntry		(GE_AnimalTrophies,"Jak usuwaæ wnêtrznoœci pe³zaczy.");
+		B_LogEntry		(GE_AnimalTrophies,"Jak usuwaÄ‡ wnÄ™trznoÅ›ci peÅ‚zaczy.");
 		Tpl_1438_Templer_TEACHZANGEN.permanent		= 0;
-		PrintScreen		("Nowa umiejêtnoœæ: Wycinanie wnêtrznoœci pe³zaczy", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
+		PrintScreen		("Nowa umiejÄ™tnoÅ›Ä‡: Wycinanie wnÄ™trznoÅ›ci peÅ‚zaczy", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
 	}
 	else 
 	{
-		PrintScreen		("Za ma³o punktów umiejêtnoœci!", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
+		PrintScreen		("Za maÅ‚o punktÃ³w umiejÄ™tnoÅ›ci!", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
 		B_Say			(self, other, "$NOLEARNNOPOINTS");
 	};
 };   

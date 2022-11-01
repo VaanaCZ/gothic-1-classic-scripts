@@ -1,14 +1,14 @@
 func void B_Story_ShowedUrizielToXardas()
 {
-	//-------- Missionsgegenstände --------
+	//-------- MissionsgegenstÃ¤nde --------
 	
-	//-------- Tagebucheinträge --------
-	B_LogEntry			(CH4_EnterTemple,"Xardas by³ bardzo zaskoczony, ¿e uda³o mi siê dotrzeæ do podziemnej œwi¹tyni. Chyba naprawdê uwa¿a, ¿e jestem osob¹, o której mówi staro¿ytna przepowiednia orków.");
+	//-------- TagebucheintrÃ¤ge --------
+	B_LogEntry			(CH4_EnterTemple,"Xardas byÅ‚ bardzo zaskoczony, Å¼e udaÅ‚o mi siÄ™ dotrzeÄ‡ do podziemnej Å›wiÄ…tyni. Chyba naprawdÄ™ uwaÅ¼a, Å¼e jestem osobÄ…, o ktÃ³rej mÃ³wi staroÅ¼ytna przepowiednia orkÃ³w.");
 	Log_SetTopicStatus	(CH4_EnterTemple,	LOG_SUCCESS);
 	
 	Log_CreateTopic		(CH5_Uriziel,	LOG_MISSION);
 	Log_SetTopicStatus	(CH5_Uriziel,	LOG_RUNNING);
-	B_LogEntry			(CH5_Uriziel,"Xardasowi uda³o siê zidentyfikowaæ dziwny miecz, który znalaz³em w œwi¹tyni Œni¹cego. To staro¿ytny URIZIEL - niegdyœ obdarzony niezwykle potê¿nymi mocami. Niestety, z biegiem lat miecz straci³ swe magiczne w³aœciwoœci. Muszê znaleŸæ jakiœ sposób, by przywróciæ mu dawn¹ œwietnoœæ.");
+	B_LogEntry			(CH5_Uriziel,"Xardasowi udaÅ‚o siÄ™ zidentyfikowaÄ‡ dziwny miecz, ktÃ³ry znalazÅ‚em w Å›wiÄ…tyni ÅšniÄ…cego. To staroÅ¼ytny URIZIEL - niegdyÅ› obdarzony niezwykle potÄ™Å¼nymi mocami. Niestety, z biegiem lat miecz straciÅ‚ swe magiczne wÅ‚aÅ›ciwoÅ›ci. MuszÄ™ znaleÅºÄ‡ jakiÅ› sposÃ³b, by przywrÃ³ciÄ‡ mu dawnÄ… Å›wietnoÅ›Ä‡.");
 	
 	//-------- Erfahrung --------
 	B_GiveXP			(XP_ShowUrizielToXardas);

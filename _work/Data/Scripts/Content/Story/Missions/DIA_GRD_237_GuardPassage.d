@@ -34,24 +34,24 @@ FUNC INT Info_Grd_237_FirstWarn_Condition()
 
 FUNC VOID Info_Grd_237_FirstWarn_Info()
 {
-	AI_Output			(self, hero,"Info_Grd_237_FirstWarn_07_01"); //Lepiej st¹d zmykaj. Za t¹ barykad¹ zaczynaj¹ siê ziemie Orków!
+	AI_Output			(self, hero,"Info_Grd_237_FirstWarn_07_01"); //Lepiej stÄ…d zmykaj. Za tÄ… barykadÄ… zaczynajÄ… siÄ™ ziemie OrkÃ³w!
 	AI_Output			(hero, self,"Info_Grd_237_FirstWarn_15_02"); //Jest tu niebezpiecznie?
-	AI_Output			(self, hero,"Info_Grd_237_FirstWarn_07_03"); //Ujmê to tak: mo¿esz równie dobrze oddaæ mi ca³¹ swoj¹ rudê. Za kilka minut i tak nie bêdzie ci potrzebna, bo bêdziesz gryz³ ziemiê!
+	AI_Output			(self, hero,"Info_Grd_237_FirstWarn_07_03"); //UjmÄ™ to tak: moÅ¼esz rÃ³wnie dobrze oddaÄ‡ mi caÅ‚Ä… swojÄ… rudÄ™. Za kilka minut i tak nie bÄ™dzie ci potrzebna, bo bÄ™dziesz gryzÅ‚ ziemiÄ™!
 
 	hero.aivar[AIV_LASTDISTTOWP] 		= Npc_GetDistToWP (hero,Grd_237_CHECKPOINT);
 
 	Info_ClearChoices	(Info_Grd_237_FirstWarn);
-	Info_AddChoice		(Info_Grd_237_FirstWarn,"Chyba wola³bym tego nie robiæ.",		Info_Grd_237_FirstWarn_Info_NO);	
+	Info_AddChoice		(Info_Grd_237_FirstWarn,"Chyba wolaÅ‚bym tego nie robiÄ‡.",		Info_Grd_237_FirstWarn_Info_NO);	
 	Info_AddChoice		(Info_Grd_237_FirstWarn,"Jasne, oto moja ruda!",				Info_Grd_237_FirstWarn_Info_YES);	
-	Info_AddChoice		(Info_Grd_237_FirstWarn,"Chyba lepiej bêdzie, jeœli zawrócê.",	Info_Grd_237_FirstWarn_Info_RETREAT);	
+	Info_AddChoice		(Info_Grd_237_FirstWarn,"Chyba lepiej bÄ™dzie, jeÅ›li zawrÃ³cÄ™.",	Info_Grd_237_FirstWarn_Info_RETREAT);	
 };
 
 func void Info_Grd_237_FirstWarn_Info_RETREAT ()
 {
 	Info_ClearChoices	(Info_Grd_237_FirstWarn);
 
-	AI_Output			(hero, self,"Info_Grd_237_FirstWarn_15_04"); //Chyba lepiej bêdzie, jeœli zawrócê.
-	AI_Output			(self, hero,"Info_Grd_237_FirstWarn_07_05"); //Szkoda, bardzo chêtnie zaj¹³bym siê twoj¹ rud¹.
+	AI_Output			(hero, self,"Info_Grd_237_FirstWarn_15_04"); //Chyba lepiej bÄ™dzie, jeÅ›li zawrÃ³cÄ™.
+	AI_Output			(self, hero,"Info_Grd_237_FirstWarn_07_05"); //Szkoda, bardzo chÄ™tnie zajÄ…Å‚bym siÄ™ twojÄ… rudÄ….
 
 	hero.aivar[AIV_GUARDPASSAGE_STATUS] = AIV_GPS_FIRSTWARN;
 
@@ -63,7 +63,7 @@ func void Info_Grd_237_FirstWarn_Info_YES ()
 	Info_ClearChoices	(Info_Grd_237_FirstWarn);
 
 	AI_Output			(hero, self,"Info_Grd_237_FirstWarn_15_06"); //Jasne, oto moja ruda!
-	AI_Output			(self, hero,"Info_Grd_237_FirstWarn_07_07"); //Ojej, jakie to szlachetne. Zaraz siê rozp³aczê.
+	AI_Output			(self, hero,"Info_Grd_237_FirstWarn_07_07"); //Ojej, jakie to szlachetne. Zaraz siÄ™ rozpÅ‚aczÄ™.
 	
 	var int ore;
 	ore = Npc_HasItems	(hero,	ItMiNugget);
@@ -79,7 +79,7 @@ func void Info_Grd_237_FirstWarn_Info_NO ()
 {
 	Info_ClearChoices	(Info_Grd_237_FirstWarn);
 
-	AI_Output			(hero, self,"Info_Grd_237_FirstWarn_15_08"); //Chyba wola³bym tego nie robiæ.
+	AI_Output			(hero, self,"Info_Grd_237_FirstWarn_15_08"); //Chyba wolaÅ‚bym tego nie robiÄ‡.
 	AI_Output			(self, hero,"Info_Grd_237_FirstWarn_07_09"); //W takim razie ani kroku dalej!
 
 	hero.aivar[AIV_GUARDPASSAGE_STATUS] = AIV_GPS_FIRSTWARN;
@@ -113,7 +113,7 @@ FUNC INT Info_Grd_237_LastWarn_Condition()
 
 func int Info_Grd_237_LastWarn_Info()
 {
-	AI_Output (self, hero,"Info_Grd_237_LastWarn_07_01"); 		//Og³uch³eœ? Jeszcze jeden krok a nakarmiê tob¹ robaki!
+	AI_Output (self, hero,"Info_Grd_237_LastWarn_07_01"); 		//OgÅ‚uchÅ‚eÅ›? Jeszcze jeden krok a nakarmiÄ™ tobÄ… robaki!
 
 	hero.aivar[AIV_LASTDISTTOWP] 		= Npc_GetDistToWP (hero,Grd_237_CHECKPOINT);
 	hero.aivar[AIV_GUARDPASSAGE_STATUS]	= AIV_GPS_LASTWARN;	
@@ -152,7 +152,7 @@ func int Info_Grd_237_Attack_Info()
 	hero.aivar[AIV_GUARDPASSAGE_STATUS]	= AIV_GPS_PUNISH;	
 	
 	B_FullStop			(self);	
-	AI_StopProcessInfos	(self);					//dem Spieler sofort wieder die Kontrolle zurückgeben
+	AI_StopProcessInfos	(self);					//dem Spieler sofort wieder die Kontrolle zurÃ¼ckgeben
 	B_SetAttackReason	(self,	AIV_AR_INTRUDER);
 	Npc_SetTarget		(self,	hero);
 	AI_StartState		(self,	ZS_Attack,	1,	"");

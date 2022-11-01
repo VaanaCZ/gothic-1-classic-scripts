@@ -78,28 +78,28 @@ FUNC int  ORG_862_Jacko_GUARD_Condition()
 
 FUNC void  ORG_862_Jacko_GUARD_Info()
 {
-	AI_Output			(self, other,"ORG_862_Jacko_GUARD_Info_06_00"); //Czy¿byœmy pob³¹dzili, hê?
-	AI_Output			(other, self,"ORG_862_Jacko_GUARD_Info_15_01"); //Cor Kalom wie o waszym ma³ym przedsiêwziêciu.
-	AI_Output			(self, other,"ORG_862_Jacko_GUARD_Info_06_02"); //Co? Dlaczego tu jesteœ?
+	AI_Output			(self, other,"ORG_862_Jacko_GUARD_Info_06_00"); //CzyÅ¼byÅ›my pobÅ‚Ä…dzili, hÄ™?
+	AI_Output			(other, self,"ORG_862_Jacko_GUARD_Info_15_01"); //Cor Kalom wie o waszym maÅ‚ym przedsiÄ™wziÄ™ciu.
+	AI_Output			(self, other,"ORG_862_Jacko_GUARD_Info_06_02"); //Co? Dlaczego tu jesteÅ›?
 	
-	B_LogEntry			(CH1_DrugMonopol,"Znalaz³em miejsce, w którym wytwarzano ziele. Zajmuje siê tym Jacko i dwóch jego kompanów.");
+	B_LogEntry			(CH1_DrugMonopol,"ZnalazÅ‚em miejsce, w ktÃ³rym wytwarzano ziele. Zajmuje siÄ™ tym Jacko i dwÃ³ch jego kompanÃ³w.");
 
 	Info_Clearchoices	(ORG_862_Jacko_GUARD);
-	Info_Addchoice		(ORG_862_Jacko_GUARD,"Cor Kalom wys³a³ piêciu Stra¿ników Œwi¹tynnych, którzy maj¹ was wykoñczyæ.",ORG_862_Jacko_GUARD_Templer);
-	Info_Addchoice		(ORG_862_Jacko_GUARD,"Chcê wiedzieæ ile ta informacja jest dla ciebie warta.",ORG_862_Jacko_GUARD_InfoWert);
-	Info_Addchoice		(ORG_862_Jacko_GUARD,"Aby po³o¿yæ kres ca³ej tej sprawie!",ORG_862_Jacko_GUARD_Angriff);
+	Info_Addchoice		(ORG_862_Jacko_GUARD,"Cor Kalom wysÅ‚aÅ‚ piÄ™ciu StraÅ¼nikÃ³w ÅšwiÄ…tynnych, ktÃ³rzy majÄ… was wykoÅ„czyÄ‡.",ORG_862_Jacko_GUARD_Templer);
+	Info_Addchoice		(ORG_862_Jacko_GUARD,"ChcÄ™ wiedzieÄ‡ ile ta informacja jest dla ciebie warta.",ORG_862_Jacko_GUARD_InfoWert);
+	Info_Addchoice		(ORG_862_Jacko_GUARD,"Aby poÅ‚oÅ¼yÄ‡ kres caÅ‚ej tej sprawie!",ORG_862_Jacko_GUARD_Angriff);
 };  
 
 func void ORG_862_Jacko_GUARD_Templer()
 {
-	AI_Output			(other, self,"ORG_862_Jacko_GUARD_Templer_Info_15_00"); //Jestem tu, ¿eby was ostrzec. Cor Kalom wys³a³ piêciu Stra¿ników Œwi¹tynnych, którzy maj¹ was wykoñczyæ.
-	AI_Output			(self, other,"ORG_862_Jacko_GUARD_Templer_Info_06_01"); //¯e jak? Chyba ¿artujesz!
-	AI_Output			(other, self,"ORG_862_Jacko_GUARD_Templer_Info_15_02"); //Mog¹ tu byæ w ka¿dej chwili!
-	AI_Output			(self, other,"ORG_862_Jacko_GUARD_Templer_Info_06_03"); //Niech to szlag! Musimy st¹d wiaæ!
+	AI_Output			(other, self,"ORG_862_Jacko_GUARD_Templer_Info_15_00"); //Jestem tu, Å¼eby was ostrzec. Cor Kalom wysÅ‚aÅ‚ piÄ™ciu StraÅ¼nikÃ³w ÅšwiÄ…tynnych, ktÃ³rzy majÄ… was wykoÅ„czyÄ‡.
+	AI_Output			(self, other,"ORG_862_Jacko_GUARD_Templer_Info_06_01"); //Å»e jak? Chyba Å¼artujesz!
+	AI_Output			(other, self,"ORG_862_Jacko_GUARD_Templer_Info_15_02"); //MogÄ… tu byÄ‡ w kaÅ¼dej chwili!
+	AI_Output			(self, other,"ORG_862_Jacko_GUARD_Templer_Info_06_03"); //Niech to szlag! Musimy stÄ…d wiaÄ‡!
 
 	Info_Clearchoices	(ORG_862_Jacko_GUARD);
 
-	B_LogEntry			(CH1_DrugMonopol,"Przy pomocy zmyœlonych Stra¿ników Œwi¹tynnych uda³o mi siê rozpêdziæ tê bandê miêczaków. Na jakiœ czas problem zosta³ za¿egnany.");
+	B_LogEntry			(CH1_DrugMonopol,"Przy pomocy zmyÅ›lonych StraÅ¼nikÃ³w ÅšwiÄ…tynnych udaÅ‚o mi siÄ™ rozpÄ™dziÄ‡ tÄ™ bandÄ™ miÄ™czakÃ³w. Na jakiÅ› czas problem zostaÅ‚ zaÅ¼egnany.");
 	B_GiveXP			(XP_JackoRetired);
 
 	Npc_ExchangeRoutine (self,				"ARBEITSLOS");
@@ -113,9 +113,9 @@ func void ORG_862_Jacko_GUARD_Templer()
 
 func void ORG_862_Jacko_GUARD_InfoWert()
 {
-	AI_Output			(other, self,"ORG_862_Jacko_GUARD_InfoWert_Info_15_00"); //Chcê wiedzieæ ile ta informacja jest dla ciebie warta.
-	AI_Output			(self, other,"ORG_862_Jacko_GUARD_InfoWert_Info_06_01"); //Ach, wiêc o to ci chodzi... No dobrze. Ty zrobisz coœ dla mnie - ja zrobiê coœ dla ciebie. Proszê, to ca³a ruda jak¹ mam przy sobie.
-	AI_Output			(self, other,"ORG_862_Jacko_GUARD_InfoWert_Info_06_02"); //Musimy ju¿ iœæ! Tobie zreszt¹ te¿ to radzê!
+	AI_Output			(other, self,"ORG_862_Jacko_GUARD_InfoWert_Info_15_00"); //ChcÄ™ wiedzieÄ‡ ile ta informacja jest dla ciebie warta.
+	AI_Output			(self, other,"ORG_862_Jacko_GUARD_InfoWert_Info_06_01"); //Ach, wiÄ™c o to ci chodzi... No dobrze. Ty zrobisz coÅ› dla mnie - ja zrobiÄ™ coÅ› dla ciebie. ProszÄ™, to caÅ‚a ruda jakÄ… mam przy sobie.
+	AI_Output			(self, other,"ORG_862_Jacko_GUARD_InfoWert_Info_06_02"); //Musimy juÅ¼ iÅ›Ä‡! Tobie zresztÄ… teÅ¼ to radzÄ™!
 
 	B_GiveInvItems		(self, other,itminugget,95);
 
@@ -124,7 +124,7 @@ func void ORG_862_Jacko_GUARD_InfoWert()
 	B_ExchangeRoutine	(ORG_860_Renyu,		"ARBEITSLOS");
 
 	Stooges_Fled = TRUE;
-	B_LogEntry			(CH1_DrugMonopol,"Sprytna gadka pozwoli³a mi rozwi¹zaæ kolejny problem. Jacko uzna³, ¿e robi siê za gor¹co, wiêc postanowi³ daæ nogê.");
+	B_LogEntry			(CH1_DrugMonopol,"Sprytna gadka pozwoliÅ‚a mi rozwiÄ…zaÄ‡ kolejny problem. Jacko uznaÅ‚, Å¼e robi siÄ™ za gorÄ…co, wiÄ™c postanowiÅ‚ daÄ‡ nogÄ™.");
 	B_GiveXP			(XP_JackoRetired);
 
 	Info_Clearchoices	(ORG_862_Jacko_GUARD);
@@ -133,8 +133,8 @@ func void ORG_862_Jacko_GUARD_InfoWert()
 
 func void ORG_862_Jacko_GUARD_Angriff()
 {
-	AI_Output (other, self,"ORG_862_Jacko_GUARD_Angriff_Info_15_00"); //Aby po³o¿yæ kres ca³ej tej sprawie!
-	AI_Output (self, other,"ORG_862_Jacko_GUARD_Angriff_Info_06_01"); //Ch³opaki! ChodŸcie no tu na chwilê!
+	AI_Output (other, self,"ORG_862_Jacko_GUARD_Angriff_Info_15_00"); //Aby poÅ‚oÅ¼yÄ‡ kres caÅ‚ej tej sprawie!
+	AI_Output (self, other,"ORG_862_Jacko_GUARD_Angriff_Info_06_01"); //ChÅ‚opaki! ChodÅºcie no tu na chwilÄ™!
 
 	Info_Clearchoices	(ORG_862_Jacko_GUARD);
 	AI_StopProcessInfos	(self);
@@ -168,7 +168,7 @@ instance  ORG_862_Jacko_Banditencamp (C_INFO)
 	condition		= ORG_862_Jacko_Banditencamp_Condition;
 	information		= ORG_862_Jacko_Banditencamp_Info;
 	permanent		= 1;
-	description		= "A wiêc to tutaj siê zaszyliœcie.";
+	description		= "A wiÄ™c to tutaj siÄ™ zaszyliÅ›cie.";
 };
 
 FUNC int  ORG_862_Jacko_Banditencamp_Condition()
@@ -181,8 +181,8 @@ FUNC int  ORG_862_Jacko_Banditencamp_Condition()
 
 FUNC void  ORG_862_Jacko_Banditencamp_Info()
 {
-	AI_Output (other, self,"ORG_862_Jacko_Banditencamp_15_00"); //A wiêc to tutaj siê zaszyliœcie.
-	AI_Output (self, other,"ORG_862_Jacko_Banditencamp_06_01"); //By³ blisko. Stra¿nicy z Sekty posiekaliby nas na dzwona.
+	AI_Output (other, self,"ORG_862_Jacko_Banditencamp_15_00"); //A wiÄ™c to tutaj siÄ™ zaszyliÅ›cie.
+	AI_Output (self, other,"ORG_862_Jacko_Banditencamp_06_01"); //ByÅ‚ blisko. StraÅ¼nicy z Sekty posiekaliby nas na dzwona.
 			
 	AI_StopProcessInfos	(self);
 }; 
@@ -273,9 +273,9 @@ FUNC int  ORG_862_Jacko_ANGEBOT_Condition()
 FUNC void  ORG_862_Jacko_ANGEBOT_Info()
 {
 	AI_Output (other, self,"ORG_862_Jacko_ANGEBOT_Info_15_01"); //Ich will euch ein Angebot machen!
-	AI_Output (self, other,"ORG_862_Jacko_ANGEBOT_Info_06_02"); //Was für ein Angebot? 
+	AI_Output (self, other,"ORG_862_Jacko_ANGEBOT_Info_06_02"); //Was fÃ¼r ein Angebot? 
 	AI_Output (other, self,"ORG_862_Jacko_ANGEBOT_Info_15_03"); //Das werde ich mit demjenigen bereden,der hier das Sagen hat.  
-	AI_Output (self, other,"ORG_862_Jacko_ANGEBOT_Info_06_04"); //Na schön,dann rede mit Renyu. Aber keine faulen Tricks, sonst zerschlage ich jeden deiner Knochen einzeln!
+	AI_Output (self, other,"ORG_862_Jacko_ANGEBOT_Info_06_04"); //Na schÃ¶n,dann rede mit Renyu. Aber keine faulen Tricks, sonst zerschlage ich jeden deiner Knochen einzeln!
 	AI_StopProcessInfos	(self);
 };  
 
