@@ -18,7 +18,7 @@ INSTANCE ItArRuneLight (C_Item)
 	spell				= 	SPL_LIGHT;
 	mag_circle 			= 	1;
 
-	description			=	"Свет";
+	description			=	"РЎРІРµС‚";
 	TEXT	[0]			=	NAME_Mag_Circle;		COUNT	[0]		=	mag_circle;
 	TEXT	[1]			=	NAME_Manakosten;		COUNT	[1]		=	SPL_SENDCAST_LIGHT;
 	//TEXT	[2]			=	"";						COUNT	[2]		=	;
@@ -43,7 +43,7 @@ INSTANCE ItArScrollLight (C_Item)
 	cond_atr[2]   		= 	ATR_MANA_MAX;
 	cond_value[2]  		= 	SPL_SENDCAST_LIGHT;
 
-	description			=	"Свет";
+	description			=	"РЎРІРµС‚";
 	//TEXT	[0]			=	NAME_Mag_Circle;			COUNT	[0]		=	mag_circle;
 	TEXT	[1]			=	NAME_Manakosten;		COUNT	[1]		=	SPL_SENDCAST_LIGHT;
 	//TEXT	[2]			=	"";						COUNT	[2]		=	;
@@ -70,7 +70,7 @@ INSTANCE ItArRuneFirebolt (C_Item)
 	spell				= 	SPL_FIREBOLT;
 	mag_circle 			=	1;
 
-	description			=	"Огненная стрела";
+	description			=	"РћРіРЅРµРЅРЅР°СЏ СЃС‚СЂРµР»Р°";
 	TEXT	[0]			=	NAME_Mag_Circle;		COUNT	[0]		=	mag_circle;
 	TEXT	[1]			=	NAME_Manakosten;		COUNT	[1]		=	SPL_SENDCAST_FIREBOLT;
 	TEXT	[2]			=	NAME_Dam_Fire;			COUNT	[2]		=	SPL_DAMAGE_FIREBOLT;
@@ -95,7 +95,7 @@ INSTANCE ItArScrollFirebolt (C_Item)
 	cond_atr[2]   		= 	ATR_MANA_MAX;
 	cond_value[2]  		= 	SPL_SENDCAST_FIREBOLT;
 
-	description			=	"Огненная стрела";
+	description			=	"РћРіРЅРµРЅРЅР°СЏ СЃС‚СЂРµР»Р°";
 	//TEXT	[0]			=	NAME_Mag_Circle;		COUNT	[0]		=	mag_circle;
 	TEXT	[1]			=	NAME_Manakosten;		COUNT	[1]		=	SPL_SENDCAST_FIREBOLT;
 	TEXT	[2]			=	NAME_Dam_Fire;			COUNT	[2]		=	SPL_DAMAGE_FIREBOLT;
@@ -122,7 +122,7 @@ INSTANCE ItArRuneFireball (C_Item)
 	spell				= 	SPL_FIREBALL;
 	mag_circle 			=	3;
 
-	description			= 	"Огненный шар";
+	description			= 	"РћРіРЅРµРЅРЅС‹Р№ С€Р°СЂ";
 	TEXT	[0]			=	NAME_Mag_Circle;							COUNT	[0]		=	mag_circle;
 	TEXT	[1]			=	NAME_ManakostenMax;							COUNT	[1]		=	SPL_SENDCAST_FIREBALL;
 	TEXT	[2]			=	ConcatStrings(NAME_Dam_Fire,NAME_PerMana);	COUNT	[2]		=	SPL_DAMAGE_FIREBALL;
@@ -147,7 +147,7 @@ INSTANCE ItArScrollFireball (C_Item)
 	cond_atr[2]   		= 	ATR_MANA_MAX;
 	cond_value[2]  		= 	SPL_SENDCAST_FIREBALL;
 
-	description			= 	"Огненный шар";
+	description			= 	"РћРіРЅРµРЅРЅС‹Р№ С€Р°СЂ";
 	//TEXT	[0]			=	NAME_Mag_Circle;							COUNT	[0]		=	mag_circle;
 	TEXT	[1]			=	NAME_ManakostenMax;							COUNT	[1]		=	SPL_SENDCAST_FIREBALL;
 	TEXT	[2]			=	ConcatStrings(NAME_Dam_Fire,NAME_PerMana);	COUNT	[2]		=	SPL_DAMAGE_FIREBALL;
@@ -174,7 +174,7 @@ INSTANCE ItArRuneFirestorm (C_Item)
 	spell				= 	SPL_FIRESTORM;
 	mag_circle 			=	4;
 
-	description			= 	"Огненный шторм";
+	description			= 	"РћРіРЅРµРЅРЅС‹Р№ С€С‚РѕСЂРј";
 	TEXT	[0]			=	NAME_Mag_Circle;							COUNT	[0]		=	mag_circle;
 	TEXT	[1]			=	NAME_ManakostenMax;							COUNT	[1]		=	SPL_SENDCAST_FIRESTORM;
 	TEXT	[2]			=	ConcatStrings(NAME_Dam_Fire,NAME_PerMana);	COUNT	[2]		=	SPL_DAMAGE_FIRESTORM;
@@ -199,7 +199,7 @@ INSTANCE ItArScrollFirestorm (C_Item)
 	cond_atr[2]   		= 	ATR_MANA_MAX;
 	cond_value[2]  		= 	SPL_SENDCAST_FIRESTORM;
 
-	description			= 	"Огненный шторм";
+	description			= 	"РћРіРЅРµРЅРЅС‹Р№ С€С‚РѕСЂРј";
 	//TEXT	[0]			=	NAME_Mag_Circle;							COUNT	[0]		=	mag_circle;
 	TEXT	[1]			=	NAME_ManakostenMax;							COUNT	[1]		=	SPL_SENDCAST_FIRESTORM;
 	TEXT	[2]			=	ConcatStrings(NAME_Dam_Fire,NAME_PerMana);	COUNT	[2]		=	SPL_DAMAGE_FIRESTORM;
@@ -226,7 +226,7 @@ INSTANCE ItArRuneFireRain (C_Item)
 	spell				= 	SPL_FIRERAIN;
 	mag_circle 			= 	5;
 
-	description			=	"Огненный дождь";
+	description			=	"РћРіРЅРµРЅРЅС‹Р№ РґРѕР¶РґСЊ";
 	TEXT	[0]			=	NAME_Mag_Circle;			COUNT	[0]		=	mag_circle;
 	TEXT	[1]			=	NAME_Manakosten;			COUNT	[1]		=	SPL_SENDCAST_FIRERAIN;
 	TEXT	[2]			=	NAME_Dam_Fire;				COUNT	[2]		=	SPL_DAMAGE_FIRERAIN;
@@ -251,7 +251,7 @@ INSTANCE ItArScrollFireRain (C_Item)
 	cond_atr[2]   		= 	ATR_MANA_MAX;
 	cond_value[2]  		= 	SPL_SENDCAST_FIRERAIN;
 
-	description			=	"Огненный дождь";
+	description			=	"РћРіРЅРµРЅРЅС‹Р№ РґРѕР¶РґСЊ";
 	//TEXT	[0]			=	NAME_Mag_Circle;			COUNT	[0]		=	mag_circle;
 	TEXT	[1]			=	NAME_Manakosten;			COUNT	[1]		=	SPL_SENDCAST_FIRERAIN;
 	TEXT	[2]			=	NAME_Dam_Fire;				COUNT	[2]		=	SPL_DAMAGE_FIRERAIN;
@@ -274,9 +274,9 @@ INSTANCE ItArRuneTeleport1 (C_Item)
 	material			=	MAT_STONE;
 
 	spell				= 	SPL_TELEPORT1;
-//mag_circle 			= 	4;   //SN: Teleport-Spells mьssen auch ohne Circle sprechbar sein!
+//mag_circle 			= 	4;   //SN: Teleport-Spells mСЊssen auch ohne Circle sprechbar sein!
 
-	description			= 	"Телепортация к магам Огня";
+	description			= 	"РўРµР»РµРїРѕСЂС‚Р°С†РёСЏ Рє РјР°РіР°Рј РћРіРЅСЏ";
 	TEXT	[0]			=	NAME_Mag_Circle;			COUNT	[0]		=	mag_circle;
 	TEXT	[1]			=	NAME_Manakosten;			COUNT	[1]		=	SPL_SENDCAST_TELEPORT;
 };
@@ -295,7 +295,7 @@ INSTANCE ItArScrollTeleport1 (C_Item)
 	cond_atr[2]   		= 	ATR_MANA_MAX;
 	cond_value[2]  		= 	SPL_SENDCAST_TELEPORT;
 
-	description			= 	"Телепортация к магам Огня";
+	description			= 	"РўРµР»РµРїРѕСЂС‚Р°С†РёСЏ Рє РјР°РіР°Рј РћРіРЅСЏ";
 	//TEXT	[0]			=	NAME_Mag_Circle;			COUNT	[0]		=	mag_circle;
 	TEXT	[1]			=	NAME_Manakosten;			COUNT	[1]		=	SPL_SENDCAST_TELEPORT;
 };
@@ -314,9 +314,9 @@ INSTANCE ItArRuneTeleport2 (C_Item)
 	material			=	MAT_STONE;
 
 	spell				= 	SPL_TELEPORT2;
-//mag_circle 			= 	4;   //SN: Teleport-Spells mьssen auch ohne Circle sprechbar sein!
+//mag_circle 			= 	4;   //SN: Teleport-Spells mСЊssen auch ohne Circle sprechbar sein!
 
-	description			= 	"Телепортация к магам Воды";
+	description			= 	"РўРµР»РµРїРѕСЂС‚Р°С†РёСЏ Рє РјР°РіР°Рј Р’РѕРґС‹";
 	TEXT	[0]			=	NAME_Mag_Circle;			COUNT	[0]		=	mag_circle;
 	TEXT	[1]			=	NAME_Manakosten;			COUNT	[1]		=	SPL_SENDCAST_TELEPORT;
 };
@@ -335,7 +335,7 @@ INSTANCE ItArScrollTeleport2 (C_Item)
 	cond_atr[2]   		= 	ATR_MANA_MAX;
 	cond_value[2]  		= 	SPL_SENDCAST_TELEPORT;
 
-	description			= 	"Телепортация к магам Воды";
+	description			= 	"РўРµР»РµРїРѕСЂС‚Р°С†РёСЏ Рє РјР°РіР°Рј Р’РѕРґС‹";
 	//TEXT	[0]			=	NAME_Mag_Circle;			COUNT	[0]		=	mag_circle;
 	TEXT	[1]			=	NAME_Manakosten;			COUNT	[1]		=	SPL_SENDCAST_TELEPORT;
 };
@@ -354,9 +354,9 @@ INSTANCE ItArRuneTeleport3 (C_Item)
 	material			=	MAT_STONE;
 
 	spell				= 	SPL_TELEPORT3;
-	//mag_circle 			= 	4;   //SN: Teleport-Spells mьssen auch ohne Circle sprechbar sein!
+	//mag_circle 			= 	4;   //SN: Teleport-Spells mСЊssen auch ohne Circle sprechbar sein!
 
-	description			=	"Телепортация к некроманту";	//blaue Rune
+	description			=	"РўРµР»РµРїРѕСЂС‚Р°С†РёСЏ Рє РЅРµРєСЂРѕРјР°РЅС‚Сѓ";	//blaue Rune
 	TEXT	[0]			=	NAME_Mag_Circle;			COUNT	[0]		=	mag_circle;
 	TEXT	[1]			=	NAME_Manakosten;			COUNT	[1]		=	SPL_SENDCAST_TELEPORT;
 };
@@ -375,7 +375,7 @@ INSTANCE ItArScrollTeleport3 (C_Item)
 	cond_atr[2]   		= 	ATR_MANA_MAX;
 	cond_value[2]  		= 	SPL_SENDCAST_TELEPORT;
 
-	description			=	"Телепортация к некроманту";
+	description			=	"РўРµР»РµРїРѕСЂС‚Р°С†РёСЏ Рє РЅРµРєСЂРѕРјР°РЅС‚Сѓ";
 	//TEXT	[0]			=	NAME_Mag_Circle;			COUNT	[0]		=	mag_circle;
 	TEXT	[1]			=	NAME_Manakosten;			COUNT	[1]		=	SPL_SENDCAST_TELEPORT;
 };
@@ -398,7 +398,7 @@ INSTANCE ItArScrollTeleport4 (C_Item)
 	cond_atr[2]   		= 	ATR_MANA_MAX;
 	cond_value[2]  		= 	SPL_SENDCAST_TELEPORT;
 
-	description			= 	"Орочье заклинание";
+	description			= 	"РћСЂРѕС‡СЊРµ Р·Р°РєР»РёРЅР°РЅРёРµ";
 	//TEXT	[0]			=	NAME_Mag_Circle;			COUNT	[0]		=	0;
 	TEXT	[1]			=	NAME_Manakosten;			COUNT	[1]		=	SPL_SENDCAST_TELEPORT;
 };
@@ -414,13 +414,13 @@ INSTANCE ItArRuneTeleport5 (C_Item)
 	mainflag 			=	ITEM_KAT_RUNE;
 	flags 				=	0;
 
-	visual				=	"ItAr_Rune_39.3ds";	//grьne Rune
+	visual				=	"ItAr_Rune_39.3ds";	//grСЊne Rune
 	material			=	MAT_STONE;
 
 	spell				= 	SPL_TELEPORT5;
-//mag_circle 			= 	4;   //SN: Teleport-Spells mьssen auch ohne Circle sprechbar sein!
+//mag_circle 			= 	4;   //SN: Teleport-Spells mСЊssen auch ohne Circle sprechbar sein!
 
-	description			=	"Телепортация в Болотный лагерь";	//lila Rune
+	description			=	"РўРµР»РµРїРѕСЂС‚Р°С†РёСЏ РІ Р‘РѕР»РѕС‚РЅС‹Р№ Р»Р°РіРµСЂСЊ";	//lila Rune
 	TEXT	[0]			=	NAME_Mag_Circle;			COUNT	[0]		=	mag_circle;
 	TEXT	[1]			=	NAME_Manakosten;			COUNT	[1]		=	SPL_SENDCAST_TELEPORT;
 };
@@ -439,7 +439,7 @@ INSTANCE ItArScrollTeleport5 (C_Item)
 	cond_atr[2]   		= 	ATR_MANA_MAX;
 	cond_value[2]  		= 	SPL_SENDCAST_TELEPORT;
 
-	description			=	"Телепортация в Болотный лагерь";
+	description			=	"РўРµР»РµРїРѕСЂС‚Р°С†РёСЏ РІ Р‘РѕР»РѕС‚РЅС‹Р№ Р»Р°РіРµСЂСЊ";
 	//TEXT	[0]			=	NAME_Mag_Circle;			COUNT	[0]		=	mag_circle;
 	TEXT	[1]			=	NAME_Manakosten;			COUNT	[1]		=	SPL_SENDCAST_TELEPORT;
 };
@@ -466,9 +466,9 @@ INSTANCE ItArRuneHeal (C_Item)
 	spell				= 	SPL_HEAL;
 	mag_circle 			= 	2;
 
-	description			=	"Лечение";
+	description			=	"Р›РµС‡РµРЅРёРµ";
 	TEXT	[0]			=	NAME_Mag_Circle;			COUNT	[0]		=	mag_circle;
-	TEXT	[1]			=	"Лечение за маг. силу";		COUNT	[1]		=	SPL_HEALING_HP_PER_MP;
+	TEXT	[1]			=	"Р›РµС‡РµРЅРёРµ Р·Р° РјР°Рі. СЃРёР»Сѓ";		COUNT	[1]		=	SPL_HEALING_HP_PER_MP;
 	//TEXT	[2]			=	"";							COUNT	[2]		=	;
 	//TEXT	[3] 		=	"";							COUNT	[3]		=	;
 	TEXT	[4]			=	NAME_Spell_Invest;
@@ -492,9 +492,9 @@ INSTANCE ItArScrollHeal (C_Item)
 	cond_atr[2]   		= 	ATR_MANA_MAX;
 	cond_value[2]  		= 	SPL_HEALING_HP_PER_MP;
 
-	description			=	"Лечение";
+	description			=	"Р›РµС‡РµРЅРёРµ";
 	//TEXT	[0]			=	NAME_Mag_Circle;			COUNT	[0]		=	mag_circle;
-	TEXT	[1]			=	"Лечение за маг. силу";		COUNT	[1]		=	SPL_HEALING_HP_PER_MP;
+	TEXT	[1]			=	"Р›РµС‡РµРЅРёРµ Р·Р° РјР°Рі. СЃРёР»Сѓ";		COUNT	[1]		=	SPL_HEALING_HP_PER_MP;
 	TEXT	[2]			=	NAME_Mana_needed;			COUNT	[2]		=	SPL_HEALING_HP_PER_MP;
 	//TEXT	[3] 		=	"";							COUNT	[3]		=	;
 	TEXT	[4]			=	NAME_Spell_Invest;
@@ -522,7 +522,7 @@ INSTANCE ItArScrollTrfBloodfly (C_Item)
 	cond_atr[2]   		= 	ATR_MANA_MAX;
 	cond_value[2]  		= 	SPL_SENDCAST_TRF_BLOODFLY;
 
-	description			=	"Превращение в шершня";
+	description			=	"РџСЂРµРІСЂР°С‰РµРЅРёРµ РІ С€РµСЂС€РЅСЏ";
 	//TEXT	[0]			=	NAME_Mag_Circle;			COUNT	[0]		=	mag_circle;
 	TEXT	[1]			=	NAME_Manakosten;			COUNT	[1]		=	SPL_SENDCAST_TRF_BLOODFLY;
 	//TEXT	[2]			=	"";							COUNT	[2]		=	;
@@ -547,7 +547,7 @@ INSTANCE ItArScrollTrfCrawler (C_Item)
 	cond_atr[2]   		=	ATR_MANA_MAX;
 	cond_value[2]  		=	SPL_SENDCAST_TRF_CRAWLER;
 
-	description			=	"Превращение в ползуна";
+	description			=	"РџСЂРµРІСЂР°С‰РµРЅРёРµ РІ РїРѕР»Р·СѓРЅР°";
 	//TEXT	[0]			=	NAME_Mag_Circle;			COUNT	[0]		=	mag_circle;
 	TEXT	[1]			=	NAME_Manakosten;			COUNT	[1]		=	SPL_SENDCAST_TRF_CRAWLER;
 	//TEXT	[2]			=	"";							COUNT	[2]		=	;
@@ -572,7 +572,7 @@ INSTANCE ItArScrollTrfLurker (C_Item)
 	cond_atr[2]   		=	ATR_MANA_MAX;
 	cond_value[2]  		=	SPL_SENDCAST_TRF_LURKER;
 
-	description			=	"Превращение в шныга";
+	description			=	"РџСЂРµРІСЂР°С‰РµРЅРёРµ РІ С€РЅС‹РіР°";
 	//TEXT	[0]			=	NAME_Mag_Circle;			COUNT	[0]		=	mag_circle;
 	TEXT	[1]			=	NAME_Manakosten;			COUNT	[1]		=	SPL_SENDCAST_TRF_LURKER;
 	//TEXT	[2]			=	"";							COUNT	[2]		=	;
@@ -597,7 +597,7 @@ INSTANCE ItArScrollTrfMeatbug (C_Item)
 	cond_atr[2]   		=	ATR_MANA_MAX;
 	cond_value[2]  		=	SPL_SENDCAST_TRF_MEATBUG;
 
-	description			=	"Превращение в мясного жука";
+	description			=	"РџСЂРµРІСЂР°С‰РµРЅРёРµ РІ РјСЏСЃРЅРѕРіРѕ Р¶СѓРєР°";
 	//TEXT	[0]			=	NAME_Mag_Circle;			COUNT	[0]		=	mag_circle;
 	TEXT	[1]			=	NAME_Manakosten;			COUNT	[1]		=	SPL_SENDCAST_TRF_MEATBUG;
 	//TEXT	[2]			=	"";							COUNT	[2]		=	;
@@ -622,7 +622,7 @@ INSTANCE ItArScrollTrfMolerat (C_Item)
 	cond_atr[2]   		=	ATR_MANA_MAX;
 	cond_value[2]  		=	SPL_SENDCAST_TRF_MOLERAT;
 
-	description			= "Превращение в кротокрыса";
+	description			= "РџСЂРµРІСЂР°С‰РµРЅРёРµ РІ РєСЂРѕС‚РѕРєСЂС‹СЃР°";
 	//TEXT	[0]			=	NAME_Mag_Circle;			COUNT	[0]		=	mag_circle;
 	TEXT	[1]			=	NAME_Manakosten;			COUNT	[1]		=	SPL_SENDCAST_TRF_MOLERAT;
 	//TEXT	[2]			=	"";							COUNT	[2]		=	;
@@ -647,7 +647,7 @@ INSTANCE ItArScrollTrfOrcdog (C_Item)
 	cond_atr[2]   		=	ATR_MANA_MAX;
 	cond_value[2]  		=	SPL_SENDCAST_TRF_ORCDOG;
 
-	description			=	"Превращение в орочью собаку";
+	description			=	"РџСЂРµРІСЂР°С‰РµРЅРёРµ РІ РѕСЂРѕС‡СЊСЋ СЃРѕР±Р°РєСѓ";
 	//TEXT	[0]			=	NAME_Mag_Circle;			COUNT	[0]		=	mag_circle;
 	TEXT	[1]			=	NAME_Manakosten;			COUNT	[1]		=	SPL_SENDCAST_TRF_ORCDOG;
 	//TEXT	[2]			=	"";							COUNT	[2]		=	;
@@ -672,7 +672,7 @@ INSTANCE ItArScrollTrfScavenger (C_Item)
 	cond_atr[2]   		=	ATR_MANA_MAX;
 	cond_value[2]  		=	SPL_SENDCAST_TRF_SCAVENGER;
 
-	description			=	"Превращение в падальщика";
+	description			=	"РџСЂРµРІСЂР°С‰РµРЅРёРµ РІ РїР°РґР°Р»СЊС‰РёРєР°";
 	//TEXT	[0]			=	NAME_Mag_Circle;			COUNT	[0]		=	mag_circle;
 	TEXT	[1]			=	NAME_Manakosten;			COUNT	[1]		=	SPL_SENDCAST_TRF_SCAVENGER;
 	//TEXT	[2]			=	"";							COUNT	[2]		=	;
@@ -697,7 +697,7 @@ INSTANCE ItArScrollTrfShadowbeast (C_Item)
 	cond_atr[2]   		=	ATR_MANA_MAX;
 	cond_value[2]  		=	SPL_SENDCAST_TRF_SHADOWBEAST;
 
-	description			=	"Превращение в мракориса";
+	description			=	"РџСЂРµРІСЂР°С‰РµРЅРёРµ РІ РјСЂР°РєРѕСЂРёСЃР°";
 	//TEXT	[0]			=	NAME_Mag_Circle;			COUNT	[0]		=	mag_circle;
 	TEXT	[1]			=	NAME_Manakosten;			COUNT	[1]		=	SPL_SENDCAST_TRF_SHADOWBEAST;
 	//TEXT	[2]			=	"";							COUNT	[2]		=	;
@@ -722,7 +722,7 @@ INSTANCE ItArScrollTrfSnapper (C_Item)
 	cond_atr[2]   		=	ATR_MANA_MAX;
 	cond_value[2]  		=	SPL_SENDCAST_TRF_SNAPPER;
 
-	description			=	"Превращение в глорха";
+	description			=	"РџСЂРµРІСЂР°С‰РµРЅРёРµ РІ РіР»РѕСЂС…Р°";
 	//TEXT	[0]			=	NAME_Mag_Circle;			COUNT	[0]		=	mag_circle;
 	TEXT	[1]			=	NAME_Manakosten;			COUNT	[1]		=	SPL_SENDCAST_TRF_SNAPPER;
 	//TEXT	[2]			=	"";							COUNT	[2]		=	;
@@ -747,7 +747,7 @@ INSTANCE ItArScrollTrfWaran (C_Item)
 	cond_atr[2]   		=	ATR_MANA_MAX;
 	cond_value[2]  		=	SPL_SENDCAST_TRF_WARAN;
 
-	description			= "Превращение в ящерицу";
+	description			= "РџСЂРµРІСЂР°С‰РµРЅРёРµ РІ СЏС‰РµСЂРёС†Сѓ";
 	//TEXT	[0]			=	NAME_Mag_Circle;			COUNT	[0]		=	mag_circle;
 	TEXT	[1]			=	NAME_Manakosten;			COUNT	[1]		=	SPL_SENDCAST_TRF_WARAN;
 	//TEXT	[2]			=	"";							COUNT	[2]		=	;
@@ -772,7 +772,7 @@ INSTANCE ItArScrollTrfWolf (C_Item)
 	cond_atr[2]   		=	ATR_MANA_MAX;
 	cond_value[2]  		=	SPL_SENDCAST_TRF_WOLF;
 
-	description			= "Превращение в волка";
+	description			= "РџСЂРµРІСЂР°С‰РµРЅРёРµ РІ РІРѕР»РєР°";
 	//TEXT	[0]			=	NAME_Mag_Circle;			COUNT	[0]		=	mag_circle;
 	TEXT	[1]			=	NAME_Manakosten;			COUNT	[1]		=	SPL_SENDCAST_TRF_WOLF;
 	//TEXT	[2]			=	"";							COUNT	[2]		=	;
@@ -800,7 +800,7 @@ INSTANCE ItArRuneChainLightning (C_Item)
 	spell				= 	SPL_CHAINLIGHTNING;
 	mag_circle 			=	4;
 
-	description			=	"Молния";
+	description			=	"РњРѕР»РЅРёСЏ";
 	TEXT	[0]			=	NAME_Mag_Circle;			COUNT	[0]		=	mag_circle;
 	TEXT	[1]			=	NAME_DamagePerSec;			COUNT	[1]		=	SPL_ZAPPED_DAMAGE_PER_SEC;
 	//TEXT	[2]			=	"";							COUNT	[2]		=	;
@@ -824,7 +824,7 @@ INSTANCE ItArScrollChainLightning (C_Item)
 	spell				= 	SPL_CHAINLIGHTNING;
 	//mag_circle 			=	3;
 
-	description			=	"Молния";
+	description			=	"РњРѕР»РЅРёСЏ";
 	//TEXT	[0]			=	NAME_Mag_Circle;			COUNT	[0]		=	mag_circle;
 	TEXT	[1]			=	NAME_DamagePerSec;			COUNT	[1]		=	SPL_ZAPPED_DAMAGE_PER_SEC;
 	//TEXT	[2]			=	"";							COUNT	[2]		=	;
@@ -852,8 +852,8 @@ INSTANCE ItArRuneThunderbolt (C_Item)
 	spell				= 	SPL_THUNDERBOLT;
 	mag_circle 			=	1;
 
-// FIXME: kann man die DAMAGE_PER_LEVEL-Werte der Spells aus der Spells_Params hier fьr Manakosten einsetzen??
-	description			=	"Ледяная стрела";
+// FIXME: kann man die DAMAGE_PER_LEVEL-Werte der Spells aus der Spells_Params hier fСЊr Manakosten einsetzen??
+	description			=	"Р›РµРґСЏРЅР°СЏ СЃС‚СЂРµР»Р°";
 	TEXT	[0]			=	NAME_Mag_Circle;			COUNT	[0]		=	mag_circle;
 	TEXT	[1]			=	NAME_Manakosten;			COUNT	[1]		=	SPL_SENDCAST_THUNDERBOLT;
 	TEXT	[2]			=	NAME_Dam_Magic;				COUNT	[2]		=	SPL_DAMAGE_THUNDERBOLT;
@@ -878,7 +878,7 @@ INSTANCE ItArScrollThunderbolt (C_Item)
 	cond_atr[2]   		=	ATR_MANA_MAX;
 	cond_value[2]  		=	SPL_SENDCAST_THUNDERBOLT;
 
-	description			=	"Ледяная стрела";
+	description			=	"Р›РµРґСЏРЅР°СЏ СЃС‚СЂРµР»Р°";
 	//TEXT	[0]			=	NAME_Mag_Circle;			COUNT	[0]		=	mag_circle;
 	TEXT	[1]			=	NAME_Manakosten;			COUNT	[1]		=	SPL_SENDCAST_THUNDERBOLT;
 	TEXT	[2]			=	NAME_Dam_Magic;				COUNT	[2]		=	SPL_DAMAGE_THUNDERBOLT;
@@ -904,9 +904,9 @@ INSTANCE ItArRuneThunderball (C_Item)
 	material			=	MAT_STONE;
 
 	spell				= 	SPL_THUNDERBALL;
-	mag_circle 			=	3;		//SN: von 4 auf 3 geдndert!
+	mag_circle 			=	3;		//SN: von 4 auf 3 geРґndert!
 
-	description			=	"Шаровая молния";
+	description			=	"РЁР°СЂРѕРІР°СЏ РјРѕР»РЅРёСЏ";
 	TEXT	[0]			=	NAME_Mag_Circle;							COUNT	[0]		=	mag_circle;
 	TEXT	[1]			=	NAME_ManakostenMax;							COUNT	[1]		=	SPL_SENDCAST_THUNDERBALL;
 	TEXT	[2]			=	ConcatStrings(NAME_Dam_Magic,NAME_PerMana);	COUNT	[2]		=	SPL_DAMAGE_THUNDERBALL;
@@ -932,7 +932,7 @@ INSTANCE ItArScrollThunderball (C_Item)
 	cond_atr[2]   		=	ATR_MANA_MAX;
 	cond_value[2]  		=	SPL_SENDCAST_THUNDERBALL;
 
-	description			=	"Шаровая молния";
+	description			=	"РЁР°СЂРѕРІР°СЏ РјРѕР»РЅРёСЏ";
 	//TEXT	[0]			=	NAME_Mag_Circle;							COUNT	[0]		=	mag_circle;
 	TEXT	[1]			=	NAME_ManakostenMax;							COUNT	[1]		=	SPL_SENDCAST_THUNDERBALL;
 	TEXT	[2]			=	ConcatStrings(NAME_Dam_Magic,NAME_PerMana);	COUNT	[2]		=	SPL_DAMAGE_THUNDERBALL;
@@ -959,10 +959,10 @@ INSTANCE ItArRuneIceCube (C_Item)
 	spell				= 	SPL_ICECUBE;
 	mag_circle 			=	3;
 
-	description			=	"Ледяная глыба";
+	description			=	"Р›РµРґСЏРЅР°СЏ РіР»С‹Р±Р°";
 	TEXT	[0]			=	NAME_Mag_Circle;			COUNT	[0]		=	mag_circle;
 	TEXT	[1]			=	NAME_Manakosten;			COUNT	[1]		=	SPL_SENDCAST_ICECUBE;
-	TEXT	[2]			=	"Урон";				COUNT	[2]		=	SPL_FREEZE_DAMAGE;
+	TEXT	[2]			=	"РЈСЂРѕРЅ";				COUNT	[2]		=	SPL_FREEZE_DAMAGE;
 	//TEXT	[3] 		=	"";							COUNT	[3]		=	;
 	//TEXT	[4]			=	"";
 	TEXT	[5]			=	NAME_Value;					COUNT	[5]		=	value;
@@ -984,10 +984,10 @@ INSTANCE ItArScrollIceCube (C_Item)
 	cond_atr[2]   		=	ATR_MANA_MAX;
 	cond_value[2]  		=	SPL_SENDCAST_ICECUBE;
 
-	description			=	"Ледяная глыба";
+	description			=	"Р›РµРґСЏРЅР°СЏ РіР»С‹Р±Р°";
 	//TEXT	[0]			=	NAME_Mag_Circle;			COUNT	[0]		=	mag_circle;
 	TEXT	[1]			=	NAME_Manakosten;			COUNT	[1]		=	SPL_SENDCAST_ICECUBE;
-	TEXT	[2]			=	"Урон";				COUNT	[2]		=	SPL_FREEZE_DAMAGE;
+	TEXT	[2]			=	"РЈСЂРѕРЅ";				COUNT	[2]		=	SPL_FREEZE_DAMAGE;
 	//TEXT	[3] 		=	"";							COUNT	[3]		=	;
 	//TEXT	[4]			=	"";
 	TEXT	[5]			=	NAME_Value;					COUNT	[5]		=	value;
@@ -1012,10 +1012,10 @@ INSTANCE ItArRuneIceWave (C_Item)
 	spell				= 	SPL_ICEWAVE;
 	mag_circle 			=	5;
 
-	description			=	"Ледяная волна";
+	description			=	"Р›РµРґСЏРЅР°СЏ РІРѕР»РЅР°";
 	TEXT	[0]			=	NAME_Mag_Circle;			COUNT	[0]		=	mag_circle;
 	TEXT	[1]			=	NAME_Manakosten;			COUNT	[1]		=	SPL_SENDCAST_ICEWAVE;
-	TEXT	[2]			=	"Урон";				COUNT	[2]		=	SPL_FREEZE_DAMAGE;
+	TEXT	[2]			=	"РЈСЂРѕРЅ";				COUNT	[2]		=	SPL_FREEZE_DAMAGE;
 	//TEXT	[3] 		=	"";							COUNT	[3]		=	;
 	//TEXT	[4]			=	"";
 	TEXT	[5]			=	NAME_Value;					COUNT	[5]		=	value;
@@ -1037,10 +1037,10 @@ INSTANCE ItArScrollIceWave (C_Item)
 	cond_atr[2]   		=	ATR_MANA_MAX;
 	cond_value[2]  		=	SPL_SENDCAST_ICEWAVE;
 
-	description			=	"Ледяная волна";
+	description			=	"Р›РµРґСЏРЅР°СЏ РІРѕР»РЅР°";
 	//TEXT	[0]			=	NAME_Mag_Circle;			COUNT	[0]		=	mag_circle;
 	TEXT	[1]			=	NAME_Manakosten;			COUNT	[1]		=	SPL_SENDCAST_ICEWAVE;
-	TEXT	[2]			=	"Урон";				COUNT	[2]		=	SPL_FREEZE_DAMAGE;
+	TEXT	[2]			=	"РЈСЂРѕРЅ";				COUNT	[2]		=	SPL_FREEZE_DAMAGE;
 	//TEXT	[3] 		=	"";							COUNT	[3]		=	;
 	//TEXT	[4]			=	"";
 	TEXT	[5]			=	NAME_Value;					COUNT	[5]		=	value;
@@ -1048,7 +1048,7 @@ INSTANCE ItArScrollIceWave (C_Item)
 
 
 /*******************************************************************************************
-**  Dдmonenbeschwцrer	 (Runensteine  und Scrolls)										  **
+**  DРґmonenbeschwС†rer	 (Runensteine  und Scrolls)										  **
 *******************************************************************************************/
 
 // Summon Demon (Scrolls)
@@ -1069,7 +1069,7 @@ INSTANCE ItArScrollSummonDemon (C_Item)
 	cond_atr[2]   		=	ATR_MANA_MAX;
 	cond_value[2]  		=	SPL_SENDCAST_SUMMONDEMON;
 
-	description			=	"Призыв демона";
+	description			=	"РџСЂРёР·С‹РІ РґРµРјРѕРЅР°";
 	//TEXT	[0]			=	NAME_Mag_Circle;			COUNT	[0]		=	mag_circle;
 	TEXT	[1]			=	NAME_Manakosten;			COUNT	[1]		=	SPL_SENDCAST_SUMMONDEMON;
 	//TEXT	[2]			=	"";							COUNT	[2]		=	;
@@ -1097,7 +1097,7 @@ INSTANCE ItArScrollSummonSkeletons (C_Item)
 	cond_atr[2]   		=	ATR_MANA_MAX;
 	cond_value[2]  		=	SPL_SENDCAST_SUMMONSKELETON;
 
-	description			=	"Призыв скелета";
+	description			=	"РџСЂРёР·С‹РІ СЃРєРµР»РµС‚Р°";
 	//TEXT	[0]			=	NAME_Mag_Circle;			COUNT	[0]		=	mag_circle;
 	TEXT	[1]			=	NAME_Manakosten;			COUNT	[1]		=	SPL_SENDCAST_SUMMONSKELETON;
 	//TEXT	[2]			=	"";							COUNT	[2]		=	;
@@ -1125,7 +1125,7 @@ INSTANCE ItArScrollSummonGolem (C_Item)
 	cond_atr[2]   		=	ATR_MANA_MAX;
 	cond_value[2]  		=	SPL_SENDCAST_SUMMONGOLEM;
 
-	description			=	"Призыв голема";
+	description			=	"РџСЂРёР·С‹РІ РіРѕР»РµРјР°";
 	//TEXT	[0]			=	NAME_Mag_Circle;			COUNT	[0]		=	mag_circle;
 	TEXT	[1]			=	NAME_Manakosten;			COUNT	[1]		=	SPL_SENDCAST_SUMMONGOLEM;
 	//TEXT	[2]			=	"";							COUNT	[2]		=	;
@@ -1153,7 +1153,7 @@ INSTANCE ItArScrollArmyOfDarkness (C_Item)
 	cond_atr[2]   		=	ATR_MANA_MAX;
 	cond_value[2]  		=	SPL_SENDCAST_ARMYOFDARKNESS;
 
-	description			=	"Армия тьмы";
+	description			=	"РђСЂРјРёСЏ С‚СЊРјС‹";
 	//TEXT	[0]			=	NAME_Mag_Circle;			COUNT	[0]		=	mag_circle;
 	TEXT	[1]			=	NAME_Manakosten;			COUNT	[1]		=	SPL_SENDCAST_ARMYOFDARKNESS;
 	//TEXT	[2]			=	"";							COUNT	[2]		=	;
@@ -1180,7 +1180,7 @@ INSTANCE ItArRuneDestroyUndead (C_Item)
 	spell				= 	SPL_DESTROYUNDEAD;
 	mag_circle 			=	4;
 
-	description			=	"Уничтожение нежити";
+	description			=	"РЈРЅРёС‡С‚РѕР¶РµРЅРёРµ РЅРµР¶РёС‚Рё";
 	TEXT	[0]			=	NAME_Mag_Circle;			COUNT	[0]		=	mag_circle;
 	TEXT	[1]			=	NAME_Manakosten;			COUNT	[1]		=	SPL_SENDCAST_DESTROYUNDEAD;
 	TEXT	[2]			=	NAME_Dam_Magic;				COUNT	[2]		=	SPL_DAMAGE_DESTROYUNDEAD;
@@ -1205,7 +1205,7 @@ INSTANCE ItArScrollDestroyUndead (C_Item)
 	cond_atr[2]   		=	ATR_MANA_MAX;
 	cond_value[2]  		=	SPL_SENDCAST_DESTROYUNDEAD;
 
-	description			=	"Уничтожение нежити";
+	description			=	"РЈРЅРёС‡С‚РѕР¶РµРЅРёРµ РЅРµР¶РёС‚Рё";
 	TEXT	[0]			=	NAME_Mag_Circle;			COUNT	[0]		=	mag_circle;
 	TEXT	[1]			=	NAME_Manakosten;			COUNT	[1]		=	SPL_SENDCAST_DESTROYUNDEAD;
 	TEXT	[2]			=	NAME_Dam_Magic;				COUNT	[2]		=	SPL_DAMAGE_DESTROYUNDEAD;
@@ -1216,7 +1216,7 @@ INSTANCE ItArScrollDestroyUndead (C_Item)
 
 
 /*******************************************************************************************
-**  PSI-Sprьche		(Runen und Scrolls)													  **
+**  PSI-SprСЊche		(Runen und Scrolls)													  **
 *******************************************************************************************/
 
 // Windfist (Scrolls und Runen)
@@ -1236,7 +1236,7 @@ INSTANCE ItArRuneWindfist (C_Item)
 	spell				= 	SPL_WINDFIST;
 	mag_circle 			=	2;
 
-	description			=	"Кулак ветра";
+	description			=	"РљСѓР»Р°Рє РІРµС‚СЂР°";
 	TEXT	[0]			=	NAME_Mag_Circle;							COUNT	[0]		=	mag_circle;
 	TEXT	[1]			=	NAME_ManakostenMax;							COUNT	[1]		=	SPL_SENDCAST_WINDFIST;
 	TEXT	[2]			=	ConcatStrings(NAME_Dam_Fly,NAME_PerMana);	COUNT	[2]		=	SPL_DAMAGE_WINDFIST;
@@ -1261,7 +1261,7 @@ INSTANCE ItArScrollWindfist (C_Item)
 	cond_atr[2]   		=	ATR_MANA_MAX;
 	cond_value[2]  		=	SPL_SENDCAST_WINDFIST;
 
-	description			=	"Кулак ветра";
+	description			=	"РљСѓР»Р°Рє РІРµС‚СЂР°";
 	//TEXT	[0]			=	NAME_Mag_Circle;							COUNT	[0]		=	mag_circle;
 	TEXT	[1]			=	NAME_ManakostenMax;							COUNT	[1]		=	SPL_SENDCAST_WINDFIST;
 	TEXT	[2]			=	ConcatStrings(NAME_Dam_Fly,NAME_PerMana);	COUNT	[2]		=	SPL_DAMAGE_WINDFIST;
@@ -1288,7 +1288,7 @@ INSTANCE ItArRuneStormfist (C_Item)
 	spell				= 	SPL_STORMFIST;
 	mag_circle 			=	4;
 
-	description			=	"Шторм";
+	description			=	"РЁС‚РѕСЂРј";
 	TEXT	[0]			=	NAME_Mag_Circle;							COUNT	[0]		=	mag_circle;
 	TEXT	[1]			=	NAME_ManakostenMax;							COUNT	[1]		=	SPL_SENDCAST_STORMFIST;
 	TEXT	[2]			=	ConcatStrings(NAME_Dam_Fly,NAME_PerMana);	COUNT	[2]		=	SPL_DAMAGE_STORMFIST;
@@ -1313,7 +1313,7 @@ INSTANCE ItArScrollStormfist (C_Item)
 	cond_atr[2]   		=	ATR_MANA_MAX;
 	cond_value[2]  		=	SPL_SENDCAST_STORMFIST;
 
-	description			=	"Шторм";
+	description			=	"РЁС‚РѕСЂРј";
 	//TEXT	[0]			=	NAME_Mag_Circle;							COUNT	[0]		=	mag_circle;
 	TEXT	[1]			=	NAME_ManakostenMax;							COUNT	[1]		=	SPL_SENDCAST_STORMFIST;
 	TEXT	[2]			=	ConcatStrings(NAME_Dam_Fly,NAME_PerMana);	COUNT	[2]		=	SPL_DAMAGE_STORMFIST;
@@ -1341,7 +1341,7 @@ INSTANCE ItArRuneTelekinesis (C_Item)
 	spell				= 	SPL_TELEKINESIS;
 	mag_circle 			=	3;
 
-	description			=	"Телекинез";
+	description			=	"РўРµР»РµРєРёРЅРµР·";
 	TEXT	[0]			=	NAME_Mag_Circle;			COUNT	[0]		=	mag_circle;
 	TEXT	[1]			=	NAME_ManaPerSec;			COUNT	[1]		=	1;
 	//TEXT	[2]			=	"";							COUNT	[2]		=	;
@@ -1367,7 +1367,7 @@ INSTANCE ItArScrollTelekinesis (C_Item)
 	cond_atr[2]   		=	ATR_MANA_MAX;
 	cond_value[2]  		=	10;
 
-	description			=	"Телекинез";
+	description			=	"РўРµР»РµРєРёРЅРµР·";
 	//TEXT	[0]			=	NAME_Mag_Circle;			COUNT	[0]		=	mag_circle;
 	TEXT	[1]			=	NAME_ManaPerSec;			COUNT	[1]		=	1;
 	TEXT	[2]			=	NAME_Mana_needed;			COUNT	[2]		=	cond_value[2];
@@ -1394,7 +1394,7 @@ INSTANCE ItArRuneCharm (C_Item)
 	spell				= 	SPL_CHARM;
 	mag_circle 			=	3;
 
-	description			=	"Дружба";
+	description			=	"Р”СЂСѓР¶Р±Р°";
 	TEXT	[0]			=	NAME_Mag_Circle;			COUNT	[0]		=	mag_circle;
 	TEXT	[1]			=	NAME_Manakosten;			COUNT	[1]		=	SPL_SENDCAST_CHARM;
 	//TEXT	[2]			=	"";							COUNT	[2]		=	;
@@ -1419,7 +1419,7 @@ INSTANCE ItArScrollCharm (C_Item)
 	cond_atr[2]   		=	ATR_MANA_MAX;
 	cond_value[2]  		=	SPL_SENDCAST_CHARM;
 
-	description			=	"Дружба";
+	description			=	"Р”СЂСѓР¶Р±Р°";
 	//TEXT	[0]			=	NAME_Mag_Circle;			COUNT	[0]		=	mag_circle;
 	TEXT	[1]			=	NAME_Manakosten;			COUNT	[1]		=	SPL_SENDCAST_CHARM;
 	//TEXT	[2]			=	"";							COUNT	[2]		=	;
@@ -1446,7 +1446,7 @@ INSTANCE ItArRuneSleep (C_Item)
 	spell				= 	SPL_SLEEP;
 	mag_circle 			=	2;
 
-	description			=	"Сон";
+	description			=	"РЎРѕРЅ";
 	TEXT	[0]			=	NAME_Mag_Circle;			COUNT	[0]		=	mag_circle;
 	TEXT	[1]			=	NAME_Manakosten;			COUNT	[1]		=	SPL_SENDCAST_SLEEP;
 	//TEXT	[2]			=	"";							COUNT	[2]		=	;
@@ -1471,7 +1471,7 @@ INSTANCE ItArScrollSleep (C_Item)
 	cond_atr[2]   		=	ATR_MANA_MAX;
 	cond_value[2]  		=	SPL_SENDCAST_SLEEP;
 
-	description			=	"Сон";
+	description			=	"РЎРѕРЅ";
 	//TEXT	[0]			=	NAME_Mag_Circle;			COUNT	[0]		=	mag_circle;
 	TEXT	[1]			=	NAME_Manakosten;			COUNT	[1]		=	SPL_SENDCAST_SLEEP;
 	//TEXT	[2]			=	"";							COUNT	[2]		=	;
@@ -1498,7 +1498,7 @@ INSTANCE ItArRunePyrokinesis (C_Item)
 	spell				= 	SPL_PYROKINESIS;
 	mag_circle 			=	3;
 
-	description			=	"Пирокинез";
+	description			=	"РџРёСЂРѕРєРёРЅРµР·";
 	TEXT	[0]			=	NAME_Mag_Circle;			COUNT	[0]		=	mag_circle;
 	TEXT	[1]			=	NAME_DamagePerSec;			COUNT	[1]		=	SPL_PYRO_DAMAGE_PER_SEC;
 	//TEXT	[2]			=	"";							COUNT	[2]		=	;
@@ -1523,7 +1523,7 @@ INSTANCE ItArScrollPyrokinesis (C_Item)
 	cond_atr[2]   		=	ATR_MANA_MAX;
 	cond_value[2]  		=	10;
 
-	description			=	"Пирокинез";
+	description			=	"РџРёСЂРѕРєРёРЅРµР·";
 	//TEXT	[0]			=	NAME_Mag_Circle;			COUNT	[0]		=	mag_circle;
 	TEXT	[1]			=	NAME_DamagePerSec;			COUNT	[1]		=	SPL_PYRO_DAMAGE_PER_SEC;
 	//TEXT	[2]			=	"";							COUNT	[2]		=	;
@@ -1550,7 +1550,7 @@ INSTANCE ItArRuneControl (C_Item)
 	spell				= 	SPL_CONTROL;
 	mag_circle 			=	4;
 
-	description			=	"Контроль";
+	description			=	"РљРѕРЅС‚СЂРѕР»СЊ";
 	TEXT	[0]			=	NAME_Mag_Circle;			COUNT	[0]		=	mag_circle;
 	//TEXT	[1]			=	NAME_Manakosten;			COUNT	[1]		=	SPL_SENDCAST_SLEEP;
 	//TEXT	[2]			=	"";							COUNT	[2]		=	;
@@ -1575,7 +1575,7 @@ INSTANCE ItArScrollControl (C_Item)
 	cond_atr[2]   		=	ATR_MANA_MAX;
 	cond_value[2]  		=	30;
 
-	description			=	"Контроль";
+	description			=	"РљРѕРЅС‚СЂРѕР»СЊ";
 	//TEXT	[0]			=	NAME_Mag_Circle;			COUNT	[0]		=	mag_circle;
 	//TEXT	[1]			=	NAME_Manakosten;			COUNT	[1]		=	;
 	//TEXT	[2]			=	"";							COUNT	[2]		=	;
@@ -1603,7 +1603,7 @@ INSTANCE ItArScrollFear (C_Item)
 	cond_atr[2]   		=	ATR_MANA_MAX;
 	cond_value[2]  		=	SPL_SENDCAST_FEAR;
 
-	description			=	"Страх";
+	description			=	"РЎС‚СЂР°С…";
 	//TEXT	[0]			=	NAME_Mag_Circle;			COUNT	[0]		=	mag_circle;
 	TEXT	[1]			=	NAME_Manakosten;			COUNT	[1]		=	SPL_SENDCAST_FEAR;
 	//TEXT	[2]			=	"";							COUNT	[2]		=	;
@@ -1631,7 +1631,7 @@ INSTANCE ItArScrollBerzerk (C_Item)
 	cond_atr[2]   		=	ATR_MANA_MAX;
 	cond_value[2]  		=	SPL_SENDCAST_BERZERK;
 
-	description			=	"Гнев";
+	description			=	"Р“РЅРµРІ";
 	//TEXT	[0]			=	NAME_Mag_Circle;			COUNT	[0]		=	mag_circle;
 	TEXT	[1]			=	NAME_Manakosten;			COUNT	[1]		=	SPL_SENDCAST_BERZERK;
 	//TEXT	[2]			=	"";							COUNT	[2]		=	;
@@ -1658,7 +1658,7 @@ INSTANCE ItArRuneBreathOfDeath (C_Item)
 	spell				= 	SPL_BREATHOFDEATH;
 	mag_circle 			=	6;
 
-	description			=	"Дыхание смерти";
+	description			=	"Р”С‹С…Р°РЅРёРµ СЃРјРµСЂС‚Рё";
 	TEXT	[0]			=	NAME_Mag_Circle;			COUNT	[0]		=	mag_circle;
 	TEXT	[1]			=	NAME_Manakosten;			COUNT	[1]		=	SPL_SENDCAST_BREATHOFDEATH;
 	TEXT	[2]			=	NAME_Dam_Magic;				COUNT	[2]		=	SPL_DAMAGE_BREATHOFDEATH;
@@ -1686,7 +1686,7 @@ INSTANCE ItArScrollShrink (C_Item)
 	cond_atr[2]   		=	ATR_MANA_MAX;
 	cond_value[2]  		=	SPL_SENDCAST_SHRINK;
 
-	description			=	"Ужас врагов";
+	description			=	"РЈР¶Р°СЃ РІСЂР°РіРѕРІ";
 	//TEXT	[0]			=	NAME_Mag_Circle;			COUNT	[0]		=	mag_circle;
 	TEXT	[1]			=	NAME_Manakosten;			COUNT	[1]		=	SPL_SENDCAST_SHRINK;
 	//TEXT	[2]			=	"";							COUNT	[2]		=	;

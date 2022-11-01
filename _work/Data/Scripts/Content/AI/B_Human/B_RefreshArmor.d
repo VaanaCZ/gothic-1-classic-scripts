@@ -2,11 +2,11 @@
 //	B_RefreshArmor
 //	==============
 //	Wird einmal pro Spieltag um 0 Uhr vom Code aufgerufen!
-//	Wurde früher genutzt, um NSCs die ihrer Rüstung beraubt wurden, wieder
-//	eine passende Rüstung dazuzuschummeln. Da der Spieler nun den NSCs
-//	nicht mehr die Rüstung abnehmen kann, ist diese Funktion leer.
+//	Wurde frÑŒher genutzt, um NSCs die ihrer RÑŒstung beraubt wurden, wieder
+//	eine passende RÑŒstung dazuzuschummeln. Da der Spieler nun den NSCs
+//	nicht mehr die RÑŒstung abnehmen kann, ist diese Funktion leer.
 //
-//	WICHTIG: Könnte aber zum Respawnen von irgendwelchen anderen Dingen
+//	WICHTIG: KÑ†nnte aber zum Respawnen von irgendwelchen anderen Dingen
 //	benutzt werden!
 //////////////////////////////////////////////////////////////////////////
 func void B_RefreshArmor()

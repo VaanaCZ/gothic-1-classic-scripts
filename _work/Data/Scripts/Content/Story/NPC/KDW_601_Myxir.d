@@ -2,7 +2,7 @@ instance KDW_601_Myxir (Npc_Default)
 {
 	//-------- primary data --------
 	
-	name 		=	"Μΰκρύπ";
+	name 		=	"ΠΠ°ΠΊΡΡΡ€";
 	npctype		=	npctype_main;
 	guild 		=	GIL_KDW;      
 	level 		=	24;

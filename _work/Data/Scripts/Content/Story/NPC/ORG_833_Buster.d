@@ -2,7 +2,7 @@ instance ORG_833_Buster (Npc_Default)
 {
 	//-------- primary data --------
 	
-	name =							"Бустер";
+	name =							"Р‘СѓСЃС‚РµСЂ";
 	Npctype =						Npctype_Main;
 	guild =							GIL_ORG;      
 	level =							4;

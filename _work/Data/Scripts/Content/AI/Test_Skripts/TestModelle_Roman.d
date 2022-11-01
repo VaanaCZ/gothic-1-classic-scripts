@@ -3,7 +3,7 @@
 **		TESTMODELLE_ROMAN.D												**
 **		===================												**
 **																		**
-**		Enthдlt 														**
+**		EnthРґlt 														**
 **		- Allround-Testmodell											**
 **																		**
 *************************************************************************/
@@ -99,7 +99,7 @@ INSTANCE ItMw1hSwordBurning (C_Item)
 	//----------------------------------------------------------------	
 	//---------------------------------------------------- DESCRIPTION
 	//----------------------------------------------------------------	
-	NAME 				=	"Легендарный короткий меч прижигания";
+	NAME 				=	"Р›РµРіРµРЅРґР°СЂРЅС‹Р№ РєРѕСЂРѕС‚РєРёР№ РјРµС‡ РїСЂРёР¶РёРіР°РЅРёСЏ";
 
 	//----------------------------------------------------------------	
 	//----------------------------------------------------- APPEARANCE	
@@ -123,11 +123,11 @@ INSTANCE ItMw1hSwordBurning (C_Item)
 	//----------------------------------------------------------------	
 	//---------------------------------------------------- DESCRIPTION	
 	//----------------------------------------------------------------	
-	DESCRIPTION			= 	"Легендарный короткий меч прижигания"  	;
-	TEXT	[1]			=	"Это отличный меч, убивающий всех,"   	;
-	TEXT	[2]			=	"кто пытается"   	;
-	TEXT	[3]			=	"убить тебя."              ;
-	TEXT	[5]			=	"Урон";
+	DESCRIPTION			= 	"Р›РµРіРµРЅРґР°СЂРЅС‹Р№ РєРѕСЂРѕС‚РєРёР№ РјРµС‡ РїСЂРёР¶РёРіР°РЅРёСЏ"  	;
+	TEXT	[1]			=	"Р­С‚Рѕ РѕС‚Р»РёС‡РЅС‹Р№ РјРµС‡, СѓР±РёРІР°СЋС‰РёР№ РІСЃРµС…,"   	;
+	TEXT	[2]			=	"РєС‚Рѕ РїС‹С‚Р°РµС‚СЃСЏ"   	;
+	TEXT	[3]			=	"СѓР±РёС‚СЊ С‚РµР±СЏ."              ;
+	TEXT	[5]			=	"РЈСЂРѕРЅ";
 	COUNT	[5]			=	DAMAGETOTAL;
 };
 
@@ -141,7 +141,7 @@ INSTANCE ItMw2hSwordBurning (C_Item)
 	//----------------------------------------------------------------	
 	//---------------------------------------------------- DESCRIPTION
 	//----------------------------------------------------------------	
-	NAME 				=	"Легендарный тяжелый меч прижигания";
+	NAME 				=	"Р›РµРіРµРЅРґР°СЂРЅС‹Р№ С‚СЏР¶РµР»С‹Р№ РјРµС‡ РїСЂРёР¶РёРіР°РЅРёСЏ";
 
 	//----------------------------------------------------------------	
 	//----------------------------------------------------- APPEARANCE	
@@ -161,11 +161,11 @@ INSTANCE ItMw2hSwordBurning (C_Item)
 	//----------------------------------------------------------------	
 	//---------------------------------------------------- DESCRIPTION	
 	//----------------------------------------------------------------	
-	DESCRIPTION			= 	"Легендарный тяжелый меч прижигания"  	;
-	TEXT	[1]			=	"Ничто не может устоять перед"   	;
-	TEXT	[2]			=	"его огненным прикосновением."   	;
-	TEXT	[3]			=	"Этот меч считался давно утерянным."    ;
-	TEXT	[5]			=	"Урон";
+	DESCRIPTION			= 	"Р›РµРіРµРЅРґР°СЂРЅС‹Р№ С‚СЏР¶РµР»С‹Р№ РјРµС‡ РїСЂРёР¶РёРіР°РЅРёСЏ"  	;
+	TEXT	[1]			=	"РќРёС‡С‚Рѕ РЅРµ РјРѕР¶РµС‚ СѓСЃС‚РѕСЏС‚СЊ РїРµСЂРµРґ"   	;
+	TEXT	[2]			=	"РµРіРѕ РѕРіРЅРµРЅРЅС‹Рј РїСЂРёРєРѕСЃРЅРѕРІРµРЅРёРµРј."   	;
+	TEXT	[3]			=	"Р­С‚РѕС‚ РјРµС‡ СЃС‡РёС‚Р°Р»СЃСЏ РґР°РІРЅРѕ СѓС‚РµСЂСЏРЅРЅС‹Рј."    ;
+	TEXT	[5]			=	"РЈСЂРѕРЅ";
 	COUNT	[5]			=	DAMAGETOTAL;
 };
 
@@ -179,7 +179,7 @@ INSTANCE ItRwWarBowBurning (C_Item)
 	//----------------------------------------------------------------	
 	//---------------------------------------------------- DESCRIPTION
 	//----------------------------------------------------------------	
-	NAME 				=	"Легендарный лук прижигания";
+	NAME 				=	"Р›РµРіРµРЅРґР°СЂРЅС‹Р№ Р»СѓРє РїСЂРёР¶РёРіР°РЅРёСЏ";
 
 	//----------------------------------------------------------------	
 	//----------------------------------------------------- APPEARANCE	
@@ -203,11 +203,11 @@ INSTANCE ItRwWarBowBurning (C_Item)
 	//----------------------------------------------------------------	
 	//---------------------------------------------------- DESCRIPTION	
 	//----------------------------------------------------------------	
-	DESCRIPTION			= 	"Легендарный лук прижигания"  		;
-	TEXT	[1]			=	"Лук, сделанный в давние времена,"   	;
-	TEXT	[2]			=	"является самым лучшим оружием," 	;
-	TEXT	[3]			=	"которое когда-либо появлялось в мире."    	;
-	TEXT	[5]			=	"Урон";
+	DESCRIPTION			= 	"Р›РµРіРµРЅРґР°СЂРЅС‹Р№ Р»СѓРє РїСЂРёР¶РёРіР°РЅРёСЏ"  		;
+	TEXT	[1]			=	"Р›СѓРє, СЃРґРµР»Р°РЅРЅС‹Р№ РІ РґР°РІРЅРёРµ РІСЂРµРјРµРЅР°,"   	;
+	TEXT	[2]			=	"СЏРІР»СЏРµС‚СЃСЏ СЃР°РјС‹Рј Р»СѓС‡С€РёРј РѕСЂСѓР¶РёРµРј," 	;
+	TEXT	[3]			=	"РєРѕС‚РѕСЂРѕРµ РєРѕРіРґР°-Р»РёР±Рѕ РїРѕСЏРІР»СЏР»РѕСЃСЊ РІ РјРёСЂРµ."    	;
+	TEXT	[5]			=	"РЈСЂРѕРЅ";
 	COUNT	[5]			=	DAMAGETOTAL;
 };
 
@@ -218,7 +218,7 @@ INSTANCE ItRwWarBowBurning (C_Item)
 //########################################################################
 INSTANCE ItArRobeMithril (C_Item)
 {	
-	name 						=	"Легендарный доспех из мифрила";
+	name 						=	"Р›РµРіРµРЅРґР°СЂРЅС‹Р№ РґРѕСЃРїРµС… РёР· РјРёС„СЂРёР»Р°";
 
 	mainflag 					=	ITEM_KAT_ARMOR;
 	flags 						=	0;	
@@ -261,7 +261,7 @@ instance PC_Roman (NPC_DEFAULT)
 	//------------------------------------------------- IDENTIFIACTION
 	//----------------------------------------------------------------	
 	
-	NAME  	= "Роман Ромулан";
+	NAME  	= "Р РѕРјР°РЅ Р РѕРјСѓР»Р°РЅ";
 	ID    	= 9995;
 	GUILD 	= GIL_NONE;
 	VOICE 	= 11;
@@ -357,7 +357,7 @@ instance Allround_Testmodell (NPC_DEFAULT)
 	//------------------------------------------------- IDENTIFIACTION
 	//----------------------------------------------------------------	
 	
-	NAME  	= "Странник";
+	NAME  	= "РЎС‚СЂР°РЅРЅРёРє";
 	ID    	= 9999;
 	GUILD 	= GIL_NONE;	//GIL_NONE;
 	VOICE 	= 11;
@@ -1327,7 +1327,7 @@ func void ZS_TestTalk()
 	//
 	//	LABER
 	//
-	AI_Output( self ,other,"Sit_1_OW_Diego_Gamestart_11_00"); //Ich bin Diego. Ich kьmmere mich um die Neuen.                                                                                                                                                   
+	AI_Output( self ,other,"Sit_1_OW_Diego_Gamestart_11_00"); //Ich bin Diego. Ich kСЊmmere mich um die Neuen.                                                                                                                                                   
 	AI_Output( other,self ,"Sit_1_OW_Diego_Gamestart_20_01"); //Wo sind all die anderen?                                                                                                                                                                        
 	
 	//
@@ -1946,7 +1946,7 @@ func int Mis_Con_Obs_TE()
 
 func void Mis_Off_TE()
 {
-	AI_AskText( self, NOFUNC, NOFUNC, "Да.", "Нет." );
+	AI_AskText( self, NOFUNC, NOFUNC, "Р”Р°.", "РќРµС‚." );
 //	Mis_SetStatus( Mission_Test_Empty, MIS_RUNNING );
 };
 
@@ -2044,7 +2044,7 @@ func int Mis_Con_Obs_TD()
 
 func void Mis_Off_TD()
 {
-	AI_AskText( self, NOFUNC, NOFUNC, "Да.", "Нет." );
+	AI_AskText( self, NOFUNC, NOFUNC, "Р”Р°.", "РќРµС‚." );
 // 	Mis_SetStatus( Mission_Test_Default, MIS_RUNNING );
 };
 
@@ -2093,19 +2093,19 @@ INSTANCE Trade_Test (C_ITEMREACT)
 FUNC INT Trade_Test_Check ()
 {   
 	var string strTradeAmount;
-	strTradeAmount = "Количество товара:";
+	strTradeAmount = "РљРѕР»РёС‡РµСЃС‚РІРѕ С‚РѕРІР°СЂР°:";
 	strTradeAmount = ConcatStrings( strTradeAmount, IntToString( Trade_Test.trade_amount ) );
 	
 	var string strTradeItem;
-	strTradeItem = "Вид товара:";
+	strTradeItem = "Р’РёРґ С‚РѕРІР°СЂР°:";
 	strTradeItem = ConcatStrings( strTradeItem, IntToString( Trade_Test.trade_item ) );
 	
 	var string strRequestedAmount;
-	strRequestedAmount = "Необходимое количество:";
+	strRequestedAmount = "РќРµРѕР±С…РѕРґРёРјРѕРµ РєРѕР»РёС‡РµСЃС‚РІРѕ:";
 	strRequestedAmount = ConcatStrings( strRequestedAmount, IntToString( Trade_Test.requested_amount ) );
     
 	var string strRequestedItem;
-	strRequestedItem = "Необходимый товар:";
+	strRequestedItem = "РќРµРѕР±С…РѕРґРёРјС‹Р№ С‚РѕРІР°СЂ:";
 	strRequestedItem = ConcatStrings( strRequestedItem, IntToString( Trade_Test.requested_item ) );
 	
 	PrintScreen( strTradeAmount		, 10, 20, "FONT_OLD_20_WHITE.TGA", 3 );
@@ -2307,10 +2307,10 @@ FUNC VOID Info_Test_Procedure_Choice()
 	PrintScreen( "Info_Test_Procedure_Choice()", -1, 50, "FONT_OLD_20_WHITE.TGA", 10 );                            
 	
 	Info_ClearChoices	( Info_Test_Choice );
-	Info_AddChoice		( Info_Test_Choice, "Да."		, Info_Test_Procedure_Choice_Yes 	);
-	Info_AddChoice		( Info_Test_Choice, "Нет."		, Info_Test_Procedure_Choice_No 	);
-	Info_AddChoice		( Info_Test_Choice, "Не знаю.", Info_Test_Procedure_Choice_Unsure );	
-	Info_AddChoice		( Info_Test_Choice, "Выйти."		, Info_Test_Procedure_Choice_Exit	);	
+	Info_AddChoice		( Info_Test_Choice, "Р”Р°."		, Info_Test_Procedure_Choice_Yes 	);
+	Info_AddChoice		( Info_Test_Choice, "РќРµС‚."		, Info_Test_Procedure_Choice_No 	);
+	Info_AddChoice		( Info_Test_Choice, "РќРµ Р·РЅР°СЋ.", Info_Test_Procedure_Choice_Unsure );	
+	Info_AddChoice		( Info_Test_Choice, "Р’С‹Р№С‚Рё."		, Info_Test_Procedure_Choice_Exit	);	
 };
 
 FUNC VOID Info_Test_Procedure_Choice_Yes()
@@ -2326,9 +2326,9 @@ FUNC VOID Info_Test_Procedure_Choice_No()
 FUNC VOID Info_Test_Procedure_Choice_Unsure()
 {
 	Info_ClearChoices	( Info_Test_Choice );
-	Info_AddChoice		( Info_Test_Choice, "Да."		, Info_Test_Procedure_Choice_Yes 	);
-	Info_AddChoice		( Info_Test_Choice, "Нет."		, Info_Test_Procedure_Choice_No 	);
-	Info_AddChoice		( Info_Test_Choice, "Выйти."		, Info_Test_Procedure_Choice_Exit	);	
+	Info_AddChoice		( Info_Test_Choice, "Р”Р°."		, Info_Test_Procedure_Choice_Yes 	);
+	Info_AddChoice		( Info_Test_Choice, "РќРµС‚."		, Info_Test_Procedure_Choice_No 	);
+	Info_AddChoice		( Info_Test_Choice, "Р’С‹Р№С‚Рё."		, Info_Test_Procedure_Choice_Exit	);	
 };
 
 FUNC VOID Info_Test_Procedure_Choice_Exit()
@@ -2363,10 +2363,10 @@ FUNC VOID Info_Test_Procedure_Permanent_Choice()
 	PrintScreen( "Info_Test_Procedure_Permanent_Choice()", -1, 50, "FONT_OLD_20_WHITE.TGA", 10 );                            
 	
 	Info_ClearChoices	( Info_Test_Permanent_Choice );
-	Info_AddChoice		( Info_Test_Permanent_Choice, "Ладно."			, Info_Test_Procedure_Permanent_Choice_Yes 		);
-	Info_AddChoice		( Info_Test_Permanent_Choice, "А не пошел бы ты..."	, Info_Test_Procedure_Permanent_Choice_No 		);
-	Info_AddChoice		( Info_Test_Permanent_Choice, "Хм..."		, Info_Test_Procedure_Permanent_Choice_Unsure 	);	
-	Info_AddChoice		( Info_Test_Permanent_Choice, "(уйти)"		, Info_Test_Procedure_Permanent_Choice_Exit		);	
+	Info_AddChoice		( Info_Test_Permanent_Choice, "Р›Р°РґРЅРѕ."			, Info_Test_Procedure_Permanent_Choice_Yes 		);
+	Info_AddChoice		( Info_Test_Permanent_Choice, "Рђ РЅРµ РїРѕС€РµР» Р±С‹ С‚С‹..."	, Info_Test_Procedure_Permanent_Choice_No 		);
+	Info_AddChoice		( Info_Test_Permanent_Choice, "РҐРј..."		, Info_Test_Procedure_Permanent_Choice_Unsure 	);	
+	Info_AddChoice		( Info_Test_Permanent_Choice, "(СѓР№С‚Рё)"		, Info_Test_Procedure_Permanent_Choice_Exit		);	
 };
 
 FUNC VOID Info_Test_Procedure_Permanent_Choice_Yes()
@@ -2416,10 +2416,10 @@ FUNC VOID Info_Test_Procedure_Permanent_Important_Choice()
 	PrintScreen( "Info_Test_Procedure_Permanent_Important_Choice()", -1, 50, "FONT_OLD_20_WHITE.TGA", 10 );                            
 	
 	Info_ClearChoices	( Info_Test_Permanent_Important_Choice );
-	Info_AddChoice		( Info_Test_Permanent_Important_Choice, "Да."			, Info_Test_Procedure_Permanent_Important_Choice_Yes 		);
-	Info_AddChoice		( Info_Test_Permanent_Important_Choice, "Нет."			, Info_Test_Procedure_Permanent_Important_Choice_No 		);
-	Info_AddChoice		( Info_Test_Permanent_Important_Choice, "Не знаю."	, Info_Test_Procedure_Permanent_Important_Choice_Unsure 	);	
-	Info_AddChoice		( Info_Test_Permanent_Important_Choice, "Пока."			, Info_Test_Procedure_Permanent_Important_Choice_Exit		);	
+	Info_AddChoice		( Info_Test_Permanent_Important_Choice, "Р”Р°."			, Info_Test_Procedure_Permanent_Important_Choice_Yes 		);
+	Info_AddChoice		( Info_Test_Permanent_Important_Choice, "РќРµС‚."			, Info_Test_Procedure_Permanent_Important_Choice_No 		);
+	Info_AddChoice		( Info_Test_Permanent_Important_Choice, "РќРµ Р·РЅР°СЋ."	, Info_Test_Procedure_Permanent_Important_Choice_Unsure 	);	
+	Info_AddChoice		( Info_Test_Permanent_Important_Choice, "РџРѕРєР°."			, Info_Test_Procedure_Permanent_Important_Choice_Exit		);	
 };
 
 FUNC VOID Info_Test_Procedure_Permanent_Important_Choice_Yes()

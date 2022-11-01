@@ -3,8 +3,8 @@ func void B_CheerFight ()
 	PrintDebugNpc			(PD_ZS_FRAME, "B_CheerFight" );
 
 	// SN:	WORKAROUND, damit sich die Kampfkommentare nicht aufschaukeln
-	//		VORSICHT: führt aber zu unschönen Abwürgern der SVMs
-	//		Lösung durch Bugfix #3055, dann diesen Befehl wieder entfernen!
+	//		VORSICHT: fÑŒhrt aber zu unschÑ†nen AbwÑŒrgern der SVMs
+	//		LÑ†sung durch Bugfix #3055, dann diesen Befehl wieder entfernen!
 	//Npc_ClearAIQueue		(self);			
 	//---- Ende Workaround ----
 	

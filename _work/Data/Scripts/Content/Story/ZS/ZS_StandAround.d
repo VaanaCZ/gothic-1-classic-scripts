@@ -1,8 +1,8 @@
 //////////////////////////////////////////////////////////////////////////
 //	ZS_StandAround
 //	==============
-//	Der NSC sucht sich für diesen Tagesablauf-Zustand  einen FP 'STAND'
-//	und führt eine große Anzahl an zufälligen Ambient-Aktionen durch:
+//	Der NSC sucht sich fÑŒr diesen Tagesablauf-Zustand  einen FP 'STAND'
+//	und fÑŒhrt eine groÐ¯e Anzahl an zufÐ´lligen Ambient-Aktionen durch:
 //	->	Essen
 //	->	Trinken
 //	->	Rauchen
@@ -11,14 +11,14 @@
 //////////////////////////////////////////////////////////////////////////
 //	ToDo:
 //	-----
-//	- Manche Übergänge von T_..._RANDOM_X nach S_..._S0 poppen unschön
+//	- Manche Ð¬bergÐ´nge von T_..._RANDOM_X nach S_..._S0 poppen unschÑ†n
 ////////////////////////////////////////////////////////////////////////////
 func void ZS_StandAround ()
 {
 	PrintDebugNpc			(PD_TA_FRAME,	"ZS_StandAround");
 	
 	//-------- Wahrnehmungen --------
-	// R$ückkehr in ZS_SmallTalk wird enabled
+	// R$ÑŒckkehr in ZS_SmallTalk wird enabled
 	
 	B_SetPerception			(self);
 	if Npc_WasInState(self,ZS_Smalltalk)
@@ -42,7 +42,7 @@ func int ZS_StandAround_Loop ()
 {
 	PrintDebugNpc			(PD_TA_LOOP,	"ZS_StandAround_Loop");
 	
-	//-------- Feinpositionierung abhängig von Vorgängerzustand! --------
+	//-------- Feinpositionierung abhÐ´ngig von VorgÐ´ngerzustand! --------
 	if Npc_WasInState(self,ZS_Smalltalk)
 	{
 	    B_GotoFP				(self,	"SMALLTALK");

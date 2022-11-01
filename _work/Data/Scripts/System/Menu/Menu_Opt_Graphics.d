@@ -28,7 +28,7 @@ INSTANCE MENU_OPT_GRAPHICS(C_MENU_DEF)
 
 INSTANCE MENUITEM_GRA_HEADLINE(C_MENU_ITEM_DEF) 
 {
-	text[0]		=	"Настройки графики";
+	text[0]		=	"РќР°СЃС‚СЂРѕР№РєРё РіСЂР°С„РёРєРё";
 	type		=	MENU_ITEM_TEXT;
 	// Position und Dimension	
 	posx		=	0;		posy		=	MENU_TITLE_Y;
@@ -46,8 +46,8 @@ INSTANCE MENUITEM_GRA_HEADLINE(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_GRA_TEXQUAL(C_MENU_ITEM_DEF)
 {
 	backpic		=	MENU_ITEM_BACK_PIC;
-	text[0]		=	"Текстуры";
-	text[1]		= 	"Уровень детализации текстур."; // Kommentar
+	text[0]		=	"РўРµРєСЃС‚СѓСЂС‹";
+	text[1]		= 	"РЈСЂРѕРІРµРЅСЊ РґРµС‚Р°Р»РёР·Р°С†РёРё С‚РµРєСЃС‚СѓСЂ."; // Kommentar
 	// Position und Dimension	
 	posx		=	1000;	posy		=	MENU_START_Y + MENU_DY*0;
 	dimx		=	3000;	dimy		=	750;
@@ -81,8 +81,8 @@ INSTANCE MENUITEM_GRA_TEXQUAL_SLIDER(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_GRA_MODEL_DETAIL(C_MENU_ITEM_DEF)
 {
 	backpic		=	MENU_ITEM_BACK_PIC;
-	text[0]		=	"Модели";
-	text[1]		= 	"Уровень детализации моделей."; // Kommentar
+	text[0]		=	"РњРѕРґРµР»Рё";
+	text[1]		= 	"РЈСЂРѕРІРµРЅСЊ РґРµС‚Р°Р»РёР·Р°С†РёРё РјРѕРґРµР»РµР№."; // Kommentar
 	// Position und Dimension	
 	posx		=	1000;	posy		=	MENU_START_Y + MENU_DY*1;
 	dimx		=	3000;	dimy		=	750;
@@ -118,8 +118,8 @@ instance MENUITEM_GRA_MODEL_DETAIL_SLIDER(C_MENU_ITEM_DEF)
 instance MENUITEM_GRA_SIGHT(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	text[0]		= "Видимость";
-	text[1]		= "Дальность видимости в процентах."; // Kommentar
+	text[0]		= "Р’РёРґРёРјРѕСЃС‚СЊ";
+	text[1]		= "Р”Р°Р»СЊРЅРѕСЃС‚СЊ РІРёРґРёРјРѕСЃС‚Рё РІ РїСЂРѕС†РµРЅС‚Р°С…."; // Kommentar
 	// Position und Dimension	
 	posx		=	1000;	posy		=	MENU_START_Y + MENU_DY*2;
 	dimx		=	3000;	dimy		=	750;
@@ -156,8 +156,8 @@ INSTANCE MENUITEM_GRA_SIGHT_CHOICE(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_GRA_SKY_EFFECTS(C_MENU_ITEM_DEF)
 {
 	backpic		=	MENU_ITEM_BACK_PIC;
-	text[0]		=	"Небо";
-	text[1]		= 	"Включение/выключение анимации неба."; // Kommentar
+	text[0]		=	"РќРµР±Рѕ";
+	text[1]		= 	"Р’РєР»СЋС‡РµРЅРёРµ/РІС‹РєР»СЋС‡РµРЅРёРµ Р°РЅРёРјР°С†РёРё РЅРµР±Р°."; // Kommentar
 	// Position und Dimension	
 	posx		=	1000;	posy		=	MENU_START_Y + MENU_DY*3;
 	dimx		=	3000;	dimy		=	750;
@@ -171,7 +171,7 @@ instance MENUITEM_GRA_SKY_EFFECTS_CHOICE(C_MENU_ITEM_DEF)
 {
 	backPic		=	MENU_CHOICE_BACK_PIC;
 	type		=	MENU_ITEM_CHOICEBOX;		
-	text[0]		= 	"выкл.|вкл. ";
+	text[0]		= 	"РІС‹РєР».|РІРєР». ";
 	fontName	=   MENU_FONT_SMALL;
 	// Position und Dimension	
 	posx		= 5000;		posy		=	MENU_START_Y + MENU_DY*3 + MENU_CHOICE_YPLUS;
@@ -189,7 +189,7 @@ instance MENUITEM_GRA_SKY_EFFECTS_CHOICE(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_GRA_BACK(C_MENU_ITEM_DEF)
 {
 	backpic		=	MENU_ITEM_BACK_PIC;
-	text[0]		=	"Назад";
+	text[0]		=	"РќР°Р·Р°Рґ";
 	// Position und Dimension	
 	posx		=	1000;		posy		=	MENU_BACK_Y;
 	dimx		=	6192;		dimy		=	MENU_DY;

@@ -2,7 +2,7 @@ instance Non_1500_Gilbert (Npc_Default)
 {
 	//-------- primary data --------
 	
-	name 		=		"Гилберт";
+	name 		=		"Р“РёР»Р±РµСЂС‚";
 	npctype 	=		NPCTYPE_MAIN;
 	guild 		=		GIL_NONE;      
 	level 		=		4;

@@ -1,10 +1,10 @@
-// Nur fьr Kap.6 benutzen
+// Nur fСЊr Kap.6 benutzen
 
 instance GUR_1212_MadCorKalom (Npc_Default)
 {
 	//-------- primary data --------
 	
-	name 		=	"Сумасшедший Кор Галом";
+	name 		=	"РЎСѓРјР°СЃС€РµРґС€РёР№ РљРѕСЂ Р“Р°Р»РѕРј";
 	npctype 	= 	npctype_main;
 	guild 		=	GIL_GUR;
 	level 		=	1000;

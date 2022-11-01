@@ -1,7 +1,7 @@
 INSTANCE PC_Mage(NPC_DEFAULT)
 {
 	//-------- primary data --------
-	name 			= "ÃËÎ¸ÚÂÌ";
+	name 			= "–ú–∏–ª—å—Ç–µ–Ω";
 	Npctype			= NPCTYPE_FRIEND;
 	guild			= GIL_KDF;
 	level			= 999;			// real 15, aber 999 damit er nicht flieht!
@@ -55,7 +55,7 @@ FUNC VOID Rtn_Start_2 ()
 //##################################################################
 //	Kapitel 3
 //##################################################################
-// SN: bitte ab hier keine TAs ‰ndern, da Storyrelevant
+// SN: bitte ab hier keine TAs –¥ndern, da Storyrelevant
 
 FUNC VOID Rtn_SHWait_2 ()
 {	

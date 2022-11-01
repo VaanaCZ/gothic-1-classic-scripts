@@ -23,7 +23,7 @@ FUNC VOID  DIA_BaalTaran_EXIT_Info()
 };
 
 // **************************************************
-//					Erste Begrьssung
+//					Erste BegrСЊssung
 // **************************************************
 
 instance  DIA_BaalTaran_Greet (C_INFO)
@@ -33,7 +33,7 @@ instance  DIA_BaalTaran_Greet (C_INFO)
 	condition	= DIA_BaalTaran_Greet_Condition;
 	information	= DIA_BaalTaran_Greet_Info;
 	permanent	= 0;
-	description = "Я новенький. Кто ты?";
+	description = "РЇ РЅРѕРІРµРЅСЊРєРёР№. РљС‚Рѕ С‚С‹?";
 };                       
 
 FUNC int  DIA_BaalTaran_Greet_Condition()
@@ -43,8 +43,8 @@ FUNC int  DIA_BaalTaran_Greet_Condition()
 
 FUNC VOID  DIA_BaalTaran_Greet_Info()
 {
-	AI_Output (other, self,"DIA_BaalTaran_Greet_15_00"); //Я новенький. А ты кто?
-	AI_Output (self, other,"DIA_BaalTaran_Greet_05_01"); //Я Идол Тэран, один из верных Спящему. Я пришел из лагеря Братства.
+	AI_Output (other, self,"DIA_BaalTaran_Greet_15_00"); //РЇ РЅРѕРІРµРЅСЊРєРёР№. Рђ С‚С‹ РєС‚Рѕ?
+	AI_Output (self, other,"DIA_BaalTaran_Greet_05_01"); //РЇ РРґРѕР» РўСЌСЂР°РЅ, РѕРґРёРЅ РёР· РІРµСЂРЅС‹С… РЎРїСЏС‰РµРјСѓ. РЇ РїСЂРёС€РµР» РёР· Р»Р°РіРµСЂСЏ Р‘СЂР°С‚СЃС‚РІР°.
 };
 
 // **************************************************
@@ -58,7 +58,7 @@ instance  DIA_BaalTaran_Bruderschaft (C_INFO)
 	condition	= DIA_BaalTaran_Bruderschaft_Condition;
 	information	= DIA_BaalTaran_Bruderschaft_Info;
 	permanent	= 0;
-	description = "Что такое братство Спящего?";
+	description = "Р§С‚Рѕ С‚Р°РєРѕРµ Р±СЂР°С‚СЃС‚РІРѕ РЎРїСЏС‰РµРіРѕ?";
 };                       
 
 FUNC int  DIA_BaalTaran_Bruderschaft_Condition()
@@ -71,13 +71,13 @@ FUNC int  DIA_BaalTaran_Bruderschaft_Condition()
 
 FUNC VOID  DIA_BaalTaran_Bruderschaft_Info()
 {
-	AI_Output (other, self,"DIA_BaalTaran_Bruderschaft_15_00"); //Что такое братство Спящего?
-	AI_Output (self, other,"DIA_BaalTaran_Bruderschaft_05_01"); //Мы так называем Братство последователей новой веры.
-	AI_Output (self, other,"DIA_BaalTaran_Bruderschaft_05_02"); //Наш лагерь находится к востоку отсюда, среди болот. В Старом лагере я несу людям слово Спящего.
+	AI_Output (other, self,"DIA_BaalTaran_Bruderschaft_15_00"); //Р§С‚Рѕ С‚Р°РєРѕРµ Р±СЂР°С‚СЃС‚РІРѕ РЎРїСЏС‰РµРіРѕ?
+	AI_Output (self, other,"DIA_BaalTaran_Bruderschaft_05_01"); //РњС‹ С‚Р°Рє РЅР°Р·С‹РІР°РµРј Р‘СЂР°С‚СЃС‚РІРѕ РїРѕСЃР»РµРґРѕРІР°С‚РµР»РµР№ РЅРѕРІРѕР№ РІРµСЂС‹.
+	AI_Output (self, other,"DIA_BaalTaran_Bruderschaft_05_02"); //РќР°С€ Р»Р°РіРµСЂСЊ РЅР°С…РѕРґРёС‚СЃСЏ Рє РІРѕСЃС‚РѕРєСѓ РѕС‚СЃСЋРґР°, СЃСЂРµРґРё Р±РѕР»РѕС‚. Р’ РЎС‚Р°СЂРѕРј Р»Р°РіРµСЂРµ СЏ РЅРµСЃСѓ Р»СЋРґСЏРј СЃР»РѕРІРѕ РЎРїСЏС‰РµРіРѕ.
 };
 
 // **************************************************
-//					Wer ist der Schlдfer
+//					Wer ist der SchlРґfer
 // **************************************************
 
 instance  DIA_BaalTaran_Sleeper (C_INFO)
@@ -87,7 +87,7 @@ instance  DIA_BaalTaran_Sleeper (C_INFO)
 	condition	= DIA_BaalTaran_Sleeper_Condition;
 	information	= DIA_BaalTaran_Sleeper_Info;
 	permanent	= 0;
-	description = "Кто такой Спящий?";
+	description = "РљС‚Рѕ С‚Р°РєРѕР№ РЎРїСЏС‰РёР№?";
 };                       
 
 FUNC int  DIA_BaalTaran_Sleeper_Condition()
@@ -100,14 +100,14 @@ FUNC int  DIA_BaalTaran_Sleeper_Condition()
 
 FUNC VOID  DIA_BaalTaran_Sleeper_Info()
 {
-	AI_Output (other, self,"DIA_BaalTaran_Sleeper_15_00"); //Кто такой Спящий?
-	AI_Output (self, other,"DIA_BaalTaran_Sleeper_05_01"); //Спящий - наш спаситель. Он раскрыл себя в видениях нашему Учителю Юбериону пять лет назад.
-	AI_Output (self, other,"DIA_BaalTaran_Sleeper_05_02"); //С тех пор мы отвернулись от трех богов. Тебе тоже предстоит это сделать.
-	AI_Output (self, other,"DIA_BaalTaran_Sleeper_05_03"); //Эти боги не смогли нам помочь, они покинули нас, допустили проведение этого нелепого эксперимента с Барьером. Но Спящий освободит нас отсюда!
+	AI_Output (other, self,"DIA_BaalTaran_Sleeper_15_00"); //РљС‚Рѕ С‚Р°РєРѕР№ РЎРїСЏС‰РёР№?
+	AI_Output (self, other,"DIA_BaalTaran_Sleeper_05_01"); //РЎРїСЏС‰РёР№ - РЅР°С€ СЃРїР°СЃРёС‚РµР»СЊ. РћРЅ СЂР°СЃРєСЂС‹Р» СЃРµР±СЏ РІ РІРёРґРµРЅРёСЏС… РЅР°С€РµРјСѓ РЈС‡РёС‚РµР»СЋ Р®Р±РµСЂРёРѕРЅСѓ РїСЏС‚СЊ Р»РµС‚ РЅР°Р·Р°Рґ.
+	AI_Output (self, other,"DIA_BaalTaran_Sleeper_05_02"); //РЎ С‚РµС… РїРѕСЂ РјС‹ РѕС‚РІРµСЂРЅСѓР»РёСЃСЊ РѕС‚ С‚СЂРµС… Р±РѕРіРѕРІ. РўРµР±Рµ С‚РѕР¶Рµ РїСЂРµРґСЃС‚РѕРёС‚ СЌС‚Рѕ СЃРґРµР»Р°С‚СЊ.
+	AI_Output (self, other,"DIA_BaalTaran_Sleeper_05_03"); //Р­С‚Рё Р±РѕРіРё РЅРµ СЃРјРѕРіР»Рё РЅР°Рј РїРѕРјРѕС‡СЊ, РѕРЅРё РїРѕРєРёРЅСѓР»Рё РЅР°СЃ, РґРѕРїСѓСЃС‚РёР»Рё РїСЂРѕРІРµРґРµРЅРёРµ СЌС‚РѕРіРѕ РЅРµР»РµРїРѕРіРѕ СЌРєСЃРїРµСЂРёРјРµРЅС‚Р° СЃ Р‘Р°СЂСЊРµСЂРѕРј. РќРѕ РЎРїСЏС‰РёР№ РѕСЃРІРѕР±РѕРґРёС‚ РЅР°СЃ РѕС‚СЃСЋРґР°!
 };
 
 // **************************************************
-//					Lehre des Schlдfers
+//					Lehre des SchlРґfers
 // **************************************************
 
 instance  DIA_BaalTaran_Lehre (C_INFO)
@@ -117,7 +117,7 @@ instance  DIA_BaalTaran_Lehre (C_INFO)
 	condition	= DIA_BaalTaran_Lehre_Condition;
 	information	= DIA_BaalTaran_Lehre_Info;
 	permanent	= 0;
-	description = "Что ты можешь рассказать мне о Спящем?";
+	description = "Р§С‚Рѕ С‚С‹ РјРѕР¶РµС€СЊ СЂР°СЃСЃРєР°Р·Р°С‚СЊ РјРЅРµ Рѕ РЎРїСЏС‰РµРј?";
 };                       
 
 FUNC int  DIA_BaalTaran_Lehre_Condition()
@@ -130,12 +130,12 @@ FUNC int  DIA_BaalTaran_Lehre_Condition()
 
 FUNC VOID  DIA_BaalTaran_Lehre_Info()
 {
-	AI_Output (other, self,"DIA_BaalTaran_Lehre_15_00"); //Что ты можешь рассказать мне о Спящем?
-	AI_Output (self, other,"DIA_BaalTaran_Lehre_05_01"); //Спящий обладает огромной силой. Я думаю, что даже Иннос, бог света, не сравнится с ним.
-	AI_Output (self, other,"DIA_BaalTaran_Lehre_05_02"); //Его дух пребывает с нами. Но сам он не может явить нам всю свою мощь. Его сон продолжается тысячу лет, но скоро, скоро наступит миг пробуждения.
-	AI_Output (self, other,"DIA_BaalTaran_Lehre_05_03"); //Он избрал нас, чтобы нести неверным его учение, чтобы засвидетельствовать его пробуждение и рассказать об этом чуде.
-	AI_Output (self, other,"DIA_BaalTaran_Lehre_05_04"); //Знай же, что все, кто уверует в Спящего, сохранят свои души незапятнанными, а неверные будут стерты с лица земли.
-	AI_Output (self, other,"DIA_BaalTaran_Lehre_05_05"); //Но Спящий милостив, и потому посылает доказательства своей силы всем, кто сомневается в нем.
+	AI_Output (other, self,"DIA_BaalTaran_Lehre_15_00"); //Р§С‚Рѕ С‚С‹ РјРѕР¶РµС€СЊ СЂР°СЃСЃРєР°Р·Р°С‚СЊ РјРЅРµ Рѕ РЎРїСЏС‰РµРј?
+	AI_Output (self, other,"DIA_BaalTaran_Lehre_05_01"); //РЎРїСЏС‰РёР№ РѕР±Р»Р°РґР°РµС‚ РѕРіСЂРѕРјРЅРѕР№ СЃРёР»РѕР№. РЇ РґСѓРјР°СЋ, С‡С‚Рѕ РґР°Р¶Рµ РРЅРЅРѕСЃ, Р±РѕРі СЃРІРµС‚Р°, РЅРµ СЃСЂР°РІРЅРёС‚СЃСЏ СЃ РЅРёРј.
+	AI_Output (self, other,"DIA_BaalTaran_Lehre_05_02"); //Р•РіРѕ РґСѓС… РїСЂРµР±С‹РІР°РµС‚ СЃ РЅР°РјРё. РќРѕ СЃР°Рј РѕРЅ РЅРµ РјРѕР¶РµС‚ СЏРІРёС‚СЊ РЅР°Рј РІСЃСЋ СЃРІРѕСЋ РјРѕС‰СЊ. Р•РіРѕ СЃРѕРЅ РїСЂРѕРґРѕР»Р¶Р°РµС‚СЃСЏ С‚С‹СЃСЏС‡Сѓ Р»РµС‚, РЅРѕ СЃРєРѕСЂРѕ, СЃРєРѕСЂРѕ РЅР°СЃС‚СѓРїРёС‚ РјРёРі РїСЂРѕР±СѓР¶РґРµРЅРёСЏ.
+	AI_Output (self, other,"DIA_BaalTaran_Lehre_05_03"); //РћРЅ РёР·Р±СЂР°Р» РЅР°СЃ, С‡С‚РѕР±С‹ РЅРµСЃС‚Рё РЅРµРІРµСЂРЅС‹Рј РµРіРѕ СѓС‡РµРЅРёРµ, С‡С‚РѕР±С‹ Р·Р°СЃРІРёРґРµС‚РµР»СЊСЃС‚РІРѕРІР°С‚СЊ РµРіРѕ РїСЂРѕР±СѓР¶РґРµРЅРёРµ Рё СЂР°СЃСЃРєР°Р·Р°С‚СЊ РѕР± СЌС‚РѕРј С‡СѓРґРµ.
+	AI_Output (self, other,"DIA_BaalTaran_Lehre_05_04"); //Р—РЅР°Р№ Р¶Рµ, С‡С‚Рѕ РІСЃРµ, РєС‚Рѕ СѓРІРµСЂСѓРµС‚ РІ РЎРїСЏС‰РµРіРѕ, СЃРѕС…СЂР°РЅСЏС‚ СЃРІРѕРё РґСѓС€Рё РЅРµР·Р°РїСЏС‚РЅР°РЅРЅС‹РјРё, Р° РЅРµРІРµСЂРЅС‹Рµ Р±СѓРґСѓС‚ СЃС‚РµСЂС‚С‹ СЃ Р»РёС†Р° Р·РµРјР»Рё.
+	AI_Output (self, other,"DIA_BaalTaran_Lehre_05_05"); //РќРѕ РЎРїСЏС‰РёР№ РјРёР»РѕСЃС‚РёРІ, Рё РїРѕС‚РѕРјСѓ РїРѕСЃС‹Р»Р°РµС‚ РґРѕРєР°Р·Р°С‚РµР»СЊСЃС‚РІР° СЃРІРѕРµР№ СЃРёР»С‹ РІСЃРµРј, РєС‚Рѕ СЃРѕРјРЅРµРІР°РµС‚СЃСЏ РІ РЅРµРј.
 };
 
 // **************************************************
@@ -149,7 +149,7 @@ instance  DIA_BaalTaran_Freiheit (C_INFO)
 	condition	= DIA_BaalTaran_Freiheit_Condition;
 	information	= DIA_BaalTaran_Freiheit_Info;
 	permanent	= 0;
-	description = "А как будет выглядеть путь к свободе?";
+	description = "Рђ РєР°Рє Р±СѓРґРµС‚ РІС‹РіР»СЏРґРµС‚СЊ РїСѓС‚СЊ Рє СЃРІРѕР±РѕРґРµ?";
 };                       
 
 FUNC int  DIA_BaalTaran_Freiheit_Condition()
@@ -162,9 +162,9 @@ FUNC int  DIA_BaalTaran_Freiheit_Condition()
 
 FUNC VOID  DIA_BaalTaran_Freiheit_Info()
 {
-	AI_Output (other, self,"DIA_BaalTaran_Freiheit_15_00"); //А как будет выглядеть путь к свободе?
-	AI_Output (self, other,"DIA_BaalTaran_Freiheit_05_01"); //Мы готовим великую Церемонию, в которой объединим все духовные силы и призовем Спящего.
-	AI_Output (self, other,"DIA_BaalTaran_Freiheit_05_02"); //Во время Церемонии наш господин укажет нам путь к свободе.
+	AI_Output (other, self,"DIA_BaalTaran_Freiheit_15_00"); //Рђ РєР°Рє Р±СѓРґРµС‚ РІС‹РіР»СЏРґРµС‚СЊ РїСѓС‚СЊ Рє СЃРІРѕР±РѕРґРµ?
+	AI_Output (self, other,"DIA_BaalTaran_Freiheit_05_01"); //РњС‹ РіРѕС‚РѕРІРёРј РІРµР»РёРєСѓСЋ Р¦РµСЂРµРјРѕРЅРёСЋ, РІ РєРѕС‚РѕСЂРѕР№ РѕР±СЉРµРґРёРЅРёРј РІСЃРµ РґСѓС…РѕРІРЅС‹Рµ СЃРёР»С‹ Рё РїСЂРёР·РѕРІРµРј РЎРїСЏС‰РµРіРѕ.
+	AI_Output (self, other,"DIA_BaalTaran_Freiheit_05_02"); //Р’Рѕ РІСЂРµРјСЏ Р¦РµСЂРµРјРѕРЅРёРё РЅР°С€ РіРѕСЃРїРѕРґРёРЅ СѓРєР°Р¶РµС‚ РЅР°Рј РїСѓС‚СЊ Рє СЃРІРѕР±РѕРґРµ.
 };
 
 // **************************************************
@@ -178,7 +178,7 @@ instance  DIA_BaalTaran_Beweis (C_INFO)
 	condition	= DIA_BaalTaran_Beweis_Condition;
 	information	= DIA_BaalTaran_Beweis_Info;
 	permanent	= 0;
-	description = "Есть ли у тебя доказательства его силы?";
+	description = "Р•СЃС‚СЊ Р»Рё Сѓ С‚РµР±СЏ РґРѕРєР°Р·Р°С‚РµР»СЊСЃС‚РІР° РµРіРѕ СЃРёР»С‹?";
 };                       
 
 FUNC int  DIA_BaalTaran_Beweis_Condition()
@@ -191,10 +191,10 @@ FUNC int  DIA_BaalTaran_Beweis_Condition()
 
 FUNC VOID  DIA_BaalTaran_Beweis_Info()
 {
-	AI_Output (other, self,"DIA_BaalTaran_Beweis_15_00"); //Есть ли у тебя доказательства его силы?
-	AI_Output (self, other,"DIA_BaalTaran_Beweis_05_01"); //Свою волю он раскрывает нам в видениях. Те, кто хоть раз слышал его голос, больше никогда не сомневаются в его силе.
-	AI_Output (self, other,"DIA_BaalTaran_Beweis_05_02"); //На болотах мы собираем траву, которая помогает последователям приблизиться к тайне Спящего и услышать его. Некоторым из нас выпадает честь созерцать видения, которые он посылает.
-	AI_Output (other, self,"DIA_BaalTaran_Beweis_15_03"); //Понятно.
+	AI_Output (other, self,"DIA_BaalTaran_Beweis_15_00"); //Р•СЃС‚СЊ Р»Рё Сѓ С‚РµР±СЏ РґРѕРєР°Р·Р°С‚РµР»СЊСЃС‚РІР° РµРіРѕ СЃРёР»С‹?
+	AI_Output (self, other,"DIA_BaalTaran_Beweis_05_01"); //РЎРІРѕСЋ РІРѕР»СЋ РѕРЅ СЂР°СЃРєСЂС‹РІР°РµС‚ РЅР°Рј РІ РІРёРґРµРЅРёСЏС…. РўРµ, РєС‚Рѕ С…РѕС‚СЊ СЂР°Р· СЃР»С‹С€Р°Р» РµРіРѕ РіРѕР»РѕСЃ, Р±РѕР»СЊС€Рµ РЅРёРєРѕРіРґР° РЅРµ СЃРѕРјРЅРµРІР°СЋС‚СЃСЏ РІ РµРіРѕ СЃРёР»Рµ.
+	AI_Output (self, other,"DIA_BaalTaran_Beweis_05_02"); //РќР° Р±РѕР»РѕС‚Р°С… РјС‹ СЃРѕР±РёСЂР°РµРј С‚СЂР°РІСѓ, РєРѕС‚РѕСЂР°СЏ РїРѕРјРѕРіР°РµС‚ РїРѕСЃР»РµРґРѕРІР°С‚РµР»СЏРј РїСЂРёР±Р»РёР·РёС‚СЊСЃСЏ Рє С‚Р°Р№РЅРµ РЎРїСЏС‰РµРіРѕ Рё СѓСЃР»С‹С€Р°С‚СЊ РµРіРѕ. РќРµРєРѕС‚РѕСЂС‹Рј РёР· РЅР°СЃ РІС‹РїР°РґР°РµС‚ С‡РµСЃС‚СЊ СЃРѕР·РµСЂС†Р°С‚СЊ РІРёРґРµРЅРёСЏ, РєРѕС‚РѕСЂС‹Рµ РѕРЅ РїРѕСЃС‹Р»Р°РµС‚.
+	AI_Output (other, self,"DIA_BaalTaran_Beweis_15_03"); //РџРѕРЅСЏС‚РЅРѕ.
 };
 
 // **************************************************
@@ -208,7 +208,7 @@ instance  DIA_BaalTaran_WayToST (C_INFO)
 	condition	= DIA_BaalTaran_WayToST_Condition;
 	information	= DIA_BaalTaran_WayToST_Info;
 	permanent	= 0;
-	description = "Как я могу найти лагерь Братства?";
+	description = "РљР°Рє СЏ РјРѕРіСѓ РЅР°Р№С‚Рё Р»Р°РіРµСЂСЊ Р‘СЂР°С‚СЃС‚РІР°?";
 };                       
 
 FUNC int  DIA_BaalTaran_WayToST_Condition()
@@ -221,16 +221,16 @@ FUNC int  DIA_BaalTaran_WayToST_Condition()
 
 FUNC VOID  DIA_BaalTaran_WayToST_Info()
 {
-	AI_Output (other, self,"DIA_BaalTaran_WayToST_15_00"); //Как я могу найти лагерь Братства?
-	AI_Output (self, other,"DIA_BaalTaran_WayToST_05_01"); //Сейчас у меня много дел. Ты можешь обратиться к Идолу Парвезу, который тоже пришел в этот лагерь.
-	AI_Output (self, other,"DIA_BaalTaran_WayToST_05_02"); //Его можно найти недалеко от рынка, по другую сторону замка. По-моему, у него там есть своя хижина.
+	AI_Output (other, self,"DIA_BaalTaran_WayToST_15_00"); //РљР°Рє СЏ РјРѕРіСѓ РЅР°Р№С‚Рё Р»Р°РіРµСЂСЊ Р‘СЂР°С‚СЃС‚РІР°?
+	AI_Output (self, other,"DIA_BaalTaran_WayToST_05_01"); //РЎРµР№С‡Р°СЃ Сѓ РјРµРЅСЏ РјРЅРѕРіРѕ РґРµР». РўС‹ РјРѕР¶РµС€СЊ РѕР±СЂР°С‚РёС‚СЊСЃСЏ Рє РРґРѕР»Сѓ РџР°СЂРІРµР·Сѓ, РєРѕС‚РѕСЂС‹Р№ С‚РѕР¶Рµ РїСЂРёС€РµР» РІ СЌС‚РѕС‚ Р»Р°РіРµСЂСЊ.
+	AI_Output (self, other,"DIA_BaalTaran_WayToST_05_02"); //Р•РіРѕ РјРѕР¶РЅРѕ РЅР°Р№С‚Рё РЅРµРґР°Р»РµРєРѕ РѕС‚ СЂС‹РЅРєР°, РїРѕ РґСЂСѓРіСѓСЋ СЃС‚РѕСЂРѕРЅСѓ Р·Р°РјРєР°. РџРѕ-РјРѕРµРјСѓ, Сѓ РЅРµРіРѕ С‚Р°Рј РµСЃС‚СЊ СЃРІРѕСЏ С…РёР¶РёРЅР°.
 
 	if (Npc_GetTrueGuild(hero) == GIL_NONE)
 	{
 		Log_CreateTopic		(CH1_JoinPsi, LOG_MISSION);
 		Log_SetTopicStatus	(CH1_JoinPsi, LOG_RUNNING);
 	};
-	B_LogEntry				(CH1_JoinPsi, "Послушник по имени Идол Парвез может отвести меня в Болотный лагерь. Я смогу найти его на рыночной площади за замком в Старом лагере.");
+	B_LogEntry				(CH1_JoinPsi, "РџРѕСЃР»СѓС€РЅРёРє РїРѕ РёРјРµРЅРё РРґРѕР» РџР°СЂРІРµР· РјРѕР¶РµС‚ РѕС‚РІРµСЃС‚Рё РјРµРЅСЏ РІ Р‘РѕР»РѕС‚РЅС‹Р№ Р»Р°РіРµСЂСЊ. РЇ СЃРјРѕРіСѓ РЅР°Р№С‚Рё РµРіРѕ РЅР° СЂС‹РЅРѕС‡РЅРѕР№ РїР»РѕС‰Р°РґРё Р·Р° Р·Р°РјРєРѕРј РІ РЎС‚Р°СЂРѕРј Р»Р°РіРµСЂРµ.");
 };
 
 
@@ -245,7 +245,7 @@ instance  DIA_BaalTaran_IntoCastle (C_INFO)
 	condition	= DIA_BaalTaran_IntoCastle_Condition;
 	information	= DIA_BaalTaran_IntoCastle_Info;
 	permanent	= 1;
-	description = "Мне нужно попасть в замок. Ты можешь мне помочь?";
+	description = "РњРЅРµ РЅСѓР¶РЅРѕ РїРѕРїР°СЃС‚СЊ РІ Р·Р°РјРѕРє. РўС‹ РјРѕР¶РµС€СЊ РјРЅРµ РїРѕРјРѕС‡СЊ?";
 };                       
 
 FUNC int  DIA_BaalTaran_IntoCastle_Condition()
@@ -258,58 +258,58 @@ FUNC int  DIA_BaalTaran_IntoCastle_Condition()
 
 FUNC VOID  DIA_BaalTaran_IntoCastle_Info()
 {
-	AI_Output (other, self,"DIA_BaalTaran_IntoCastle_15_00"); //Мне нужно попасть в замок. Ты можешь мне помочь?
-	AI_Output (self, other,"DIA_BaalTaran_IntoCastle_05_01"); //Боюсь, это невозможно. В замок могут попасть только те из нас, кто поставляет Гомезу болотник из нашего лагеря.
-	AI_Output (self, other,"DIA_BaalTaran_IntoCastle_05_02"); //Мы собираем его и часть продаем в других лагерях, а часть меняем на товары из внешнего мира.
-	AI_Output (self, other,"DIA_BaalTaran_IntoCastle_05_03"); //Если бы ты был одним из курьеров, работающих на Кор Галома, тебя бы пропустили в замок. Но для этого ты должен вступить в наше Братство.
-	AI_Output (self, other,"DIA_BaalTaran_IntoCastle_05_04"); //А что тебе нужно в замке?
+	AI_Output (other, self,"DIA_BaalTaran_IntoCastle_15_00"); //РњРЅРµ РЅСѓР¶РЅРѕ РїРѕРїР°СЃС‚СЊ РІ Р·Р°РјРѕРє. РўС‹ РјРѕР¶РµС€СЊ РјРЅРµ РїРѕРјРѕС‡СЊ?
+	AI_Output (self, other,"DIA_BaalTaran_IntoCastle_05_01"); //Р‘РѕСЋСЃСЊ, СЌС‚Рѕ РЅРµРІРѕР·РјРѕР¶РЅРѕ. Р’ Р·Р°РјРѕРє РјРѕРіСѓС‚ РїРѕРїР°СЃС‚СЊ С‚РѕР»СЊРєРѕ С‚Рµ РёР· РЅР°СЃ, РєС‚Рѕ РїРѕСЃС‚Р°РІР»СЏРµС‚ Р“РѕРјРµР·Сѓ Р±РѕР»РѕС‚РЅРёРє РёР· РЅР°С€РµРіРѕ Р»Р°РіРµСЂСЏ.
+	AI_Output (self, other,"DIA_BaalTaran_IntoCastle_05_02"); //РњС‹ СЃРѕР±РёСЂР°РµРј РµРіРѕ Рё С‡Р°СЃС‚СЊ РїСЂРѕРґР°РµРј РІ РґСЂСѓРіРёС… Р»Р°РіРµСЂСЏС…, Р° С‡Р°СЃС‚СЊ РјРµРЅСЏРµРј РЅР° С‚РѕРІР°СЂС‹ РёР· РІРЅРµС€РЅРµРіРѕ РјРёСЂР°.
+	AI_Output (self, other,"DIA_BaalTaran_IntoCastle_05_03"); //Р•СЃР»Рё Р±С‹ С‚С‹ Р±С‹Р» РѕРґРЅРёРј РёР· РєСѓСЂСЊРµСЂРѕРІ, СЂР°Р±РѕС‚Р°СЋС‰РёС… РЅР° РљРѕСЂ Р“Р°Р»РѕРјР°, С‚РµР±СЏ Р±С‹ РїСЂРѕРїСѓСЃС‚РёР»Рё РІ Р·Р°РјРѕРє. РќРѕ РґР»СЏ СЌС‚РѕРіРѕ С‚С‹ РґРѕР»Р¶РµРЅ РІСЃС‚СѓРїРёС‚СЊ РІ РЅР°С€Рµ Р‘СЂР°С‚СЃС‚РІРѕ.
+	AI_Output (self, other,"DIA_BaalTaran_IntoCastle_05_04"); //Рђ С‡С‚Рѕ С‚РµР±Рµ РЅСѓР¶РЅРѕ РІ Р·Р°РјРєРµ?
 	
 	Info_ClearChoices	(DIA_BaalTaran_IntoCastle );
-	Info_AddChoice		(DIA_BaalTaran_IntoCastle,"Мне нужно поговорить там с одним человеком."						,DIA_BaalTaran_IntoCastle_MeetSomeone);
-	Info_AddChoice		(DIA_BaalTaran_IntoCastle,"У меня есть послание к Верховному Магу Круга Огня."	,DIA_BaalTaran_IntoCastle_Letter);
+	Info_AddChoice		(DIA_BaalTaran_IntoCastle,"РњРЅРµ РЅСѓР¶РЅРѕ РїРѕРіРѕРІРѕСЂРёС‚СЊ С‚Р°Рј СЃ РѕРґРЅРёРј С‡РµР»РѕРІРµРєРѕРј."						,DIA_BaalTaran_IntoCastle_MeetSomeone);
+	Info_AddChoice		(DIA_BaalTaran_IntoCastle,"РЈ РјРµРЅСЏ РµСЃС‚СЊ РїРѕСЃР»Р°РЅРёРµ Рє Р’РµСЂС…РѕРІРЅРѕРјСѓ РњР°РіСѓ РљСЂСѓРіР° РћРіРЅСЏ."	,DIA_BaalTaran_IntoCastle_Letter);
 };
 
 func void DIA_BaalTaran_IntoCastle_MeetSomeone()
 {
-	AI_Output (other, self,"DIA_BaalTaran_IntoCastle_MeetSomeone_15_00"); //Мне нужно поговорить там с одним человеком.
-	AI_Output (self, other,"DIA_BaalTaran_IntoCastle_MeetSomeone_05_01"); //Да? А почему бы тебе не подождать, пока он сам выйдет из замка?
+	AI_Output (other, self,"DIA_BaalTaran_IntoCastle_MeetSomeone_15_00"); //РњРЅРµ РЅСѓР¶РЅРѕ РїРѕРіРѕРІРѕСЂРёС‚СЊ С‚Р°Рј СЃ РѕРґРЅРёРј С‡РµР»РѕРІРµРєРѕРј.
+	AI_Output (self, other,"DIA_BaalTaran_IntoCastle_MeetSomeone_05_01"); //Р”Р°? Рђ РїРѕС‡РµРјСѓ Р±С‹ С‚РµР±Рµ РЅРµ РїРѕРґРѕР¶РґР°С‚СЊ, РїРѕРєР° РѕРЅ СЃР°Рј РІС‹Р№РґРµС‚ РёР· Р·Р°РјРєР°?
 	Info_ClearChoices	(DIA_BaalTaran_IntoCastle );
-	Info_AddChoice		(DIA_BaalTaran_IntoCastle,"Тебе это знать не обязательно."	,DIA_BaalTaran_IntoCastle_ForgetIt);
-	Info_AddChoice		(DIA_BaalTaran_IntoCastle,"Это один из магов."	,DIA_BaalTaran_IntoCastle_Mage);
+	Info_AddChoice		(DIA_BaalTaran_IntoCastle,"РўРµР±Рµ СЌС‚Рѕ Р·РЅР°С‚СЊ РЅРµ РѕР±СЏР·Р°С‚РµР»СЊРЅРѕ."	,DIA_BaalTaran_IntoCastle_ForgetIt);
+	Info_AddChoice		(DIA_BaalTaran_IntoCastle,"Р­С‚Рѕ РѕРґРёРЅ РёР· РјР°РіРѕРІ."	,DIA_BaalTaran_IntoCastle_Mage);
 };
 
 func void DIA_BaalTaran_IntoCastle_Letter()
 {
-	AI_Output (other, self,"DIA_BaalTaran_IntoCastle_Letter_15_00"); //У меня есть послание к Верховному Магу Круга Огня.
-	AI_Output (self, other,"DIA_BaalTaran_IntoCastle_Letter_05_01"); //Письмо? А откуда оно у тебя? Его дали тебе маги, до того как ты попал в эту тюрьму, да?
-	AI_Output (self, other,"DIA_BaalTaran_IntoCastle_Letter_05_02"); //Тебе не следует рассказывать об этом. Но не волнуйся - сам я никому ничего не скажу.
-	AI_Output (self, other,"DIA_BaalTaran_IntoCastle_Letter_05_03"); //Но ради собственной безопасности не говори о нем никому, хорошо? Из-за него тебя могут убить на месте.
-	AI_Output (self, other,"DIA_BaalTaran_IntoCastle_Letter_05_04"); //Каждому захочется получить награду, положенную гонцу, доставившему письмо из внешнего мира.
+	AI_Output (other, self,"DIA_BaalTaran_IntoCastle_Letter_15_00"); //РЈ РјРµРЅСЏ РµСЃС‚СЊ РїРѕСЃР»Р°РЅРёРµ Рє Р’РµСЂС…РѕРІРЅРѕРјСѓ РњР°РіСѓ РљСЂСѓРіР° РћРіРЅСЏ.
+	AI_Output (self, other,"DIA_BaalTaran_IntoCastle_Letter_05_01"); //РџРёСЃСЊРјРѕ? Рђ РѕС‚РєСѓРґР° РѕРЅРѕ Сѓ С‚РµР±СЏ? Р•РіРѕ РґР°Р»Рё С‚РµР±Рµ РјР°РіРё, РґРѕ С‚РѕРіРѕ РєР°Рє С‚С‹ РїРѕРїР°Р» РІ СЌС‚Сѓ С‚СЋСЂСЊРјСѓ, РґР°?
+	AI_Output (self, other,"DIA_BaalTaran_IntoCastle_Letter_05_02"); //РўРµР±Рµ РЅРµ СЃР»РµРґСѓРµС‚ СЂР°СЃСЃРєР°Р·С‹РІР°С‚СЊ РѕР± СЌС‚РѕРј. РќРѕ РЅРµ РІРѕР»РЅСѓР№СЃСЏ - СЃР°Рј СЏ РЅРёРєРѕРјСѓ РЅРёС‡РµРіРѕ РЅРµ СЃРєР°Р¶Сѓ.
+	AI_Output (self, other,"DIA_BaalTaran_IntoCastle_Letter_05_03"); //РќРѕ СЂР°РґРё СЃРѕР±СЃС‚РІРµРЅРЅРѕР№ Р±РµР·РѕРїР°СЃРЅРѕСЃС‚Рё РЅРµ РіРѕРІРѕСЂРё Рѕ РЅРµРј РЅРёРєРѕРјСѓ, С…РѕСЂРѕС€Рѕ? РР·-Р·Р° РЅРµРіРѕ С‚РµР±СЏ РјРѕРіСѓС‚ СѓР±РёС‚СЊ РЅР° РјРµСЃС‚Рµ.
+	AI_Output (self, other,"DIA_BaalTaran_IntoCastle_Letter_05_04"); //РљР°Р¶РґРѕРјСѓ Р·Р°С…РѕС‡РµС‚СЃСЏ РїРѕР»СѓС‡РёС‚СЊ РЅР°РіСЂР°РґСѓ, РїРѕР»РѕР¶РµРЅРЅСѓСЋ РіРѕРЅС†Сѓ, РґРѕСЃС‚Р°РІРёРІС€РµРјСѓ РїРёСЃСЊРјРѕ РёР· РІРЅРµС€РЅРµРіРѕ РјРёСЂР°.
 	Info_ClearChoices	(DIA_BaalTaran_IntoCastle );
 };
 //-----------------------------------------
 func void DIA_BaalTaran_IntoCastle_Mage()
 {
-	AI_Output (other, self,"DIA_BaalTaran_IntoCastle_Mage_15_00"); //Это один из магов.
-	AI_Output (self, other,"DIA_BaalTaran_IntoCastle_Mage_05_01"); //О! Маги никогда не выходят из замка. Тебе самому придется найти способ попасть к ним.
-	AI_Output (self, other,"DIA_BaalTaran_IntoCastle_Mage_05_02"); //Зачем же он тебе нужен? Неужели, чтобы купить магические руны или зелья?
+	AI_Output (other, self,"DIA_BaalTaran_IntoCastle_Mage_15_00"); //Р­С‚Рѕ РѕРґРёРЅ РёР· РјР°РіРѕРІ.
+	AI_Output (self, other,"DIA_BaalTaran_IntoCastle_Mage_05_01"); //Рћ! РњР°РіРё РЅРёРєРѕРіРґР° РЅРµ РІС‹С…РѕРґСЏС‚ РёР· Р·Р°РјРєР°. РўРµР±Рµ СЃР°РјРѕРјСѓ РїСЂРёРґРµС‚СЃСЏ РЅР°Р№С‚Рё СЃРїРѕСЃРѕР± РїРѕРїР°СЃС‚СЊ Рє РЅРёРј.
+	AI_Output (self, other,"DIA_BaalTaran_IntoCastle_Mage_05_02"); //Р—Р°С‡РµРј Р¶Рµ РѕРЅ С‚РµР±Рµ РЅСѓР¶РµРЅ? РќРµСѓР¶РµР»Рё, С‡С‚РѕР±С‹ РєСѓРїРёС‚СЊ РјР°РіРёС‡РµСЃРєРёРµ СЂСѓРЅС‹ РёР»Рё Р·РµР»СЊСЏ?
 	Info_ClearChoices	(DIA_BaalTaran_IntoCastle );
-	Info_AddChoice		(DIA_BaalTaran_IntoCastle,"Тебе это знать не обязательно."	,DIA_BaalTaran_IntoCastle_ForgetIt);
-	Info_AddChoice		(DIA_BaalTaran_IntoCastle,"Верно, ты угадал."				,DIA_BaalTaran_IntoCastle_Exactly);
+	Info_AddChoice		(DIA_BaalTaran_IntoCastle,"РўРµР±Рµ СЌС‚Рѕ Р·РЅР°С‚СЊ РЅРµ РѕР±СЏР·Р°С‚РµР»СЊРЅРѕ."	,DIA_BaalTaran_IntoCastle_ForgetIt);
+	Info_AddChoice		(DIA_BaalTaran_IntoCastle,"Р’РµСЂРЅРѕ, С‚С‹ СѓРіР°РґР°Р»."				,DIA_BaalTaran_IntoCastle_Exactly);
 };
 
 func void DIA_BaalTaran_IntoCastle_ForgetIt()
 {
-	AI_Output (other, self,"DIA_BaalTaran_IntoCastle_ForgetIt_15_00"); //Тебе это знать не обязательно.
-	AI_Output (self, other,"DIA_BaalTaran_IntoCastle_ForgetIt_05_01"); //Как знаешь, брат. Я же просто хотел помочь...
+	AI_Output (other, self,"DIA_BaalTaran_IntoCastle_ForgetIt_15_00"); //РўРµР±Рµ СЌС‚Рѕ Р·РЅР°С‚СЊ РЅРµ РѕР±СЏР·Р°С‚РµР»СЊРЅРѕ.
+	AI_Output (self, other,"DIA_BaalTaran_IntoCastle_ForgetIt_05_01"); //РљР°Рє Р·РЅР°РµС€СЊ, Р±СЂР°С‚. РЇ Р¶Рµ РїСЂРѕСЃС‚Рѕ С…РѕС‚РµР» РїРѕРјРѕС‡СЊ...
 	Info_ClearChoices	(DIA_BaalTaran_IntoCastle );
 };
 
 func void DIA_BaalTaran_IntoCastle_Exactly()
 {
-	AI_Output (other, self,"DIA_BaalTaran_IntoCastle_Exactly_15_00"); //Верно, ты угадал.
-	AI_Output (self, other,"DIA_BaalTaran_IntoCastle_Exactly_05_01"); //Я так и подумал! Что же еще нужно от магов такому человеку как ты.
-	AI_Output (self, other,"DIA_BaalTaran_IntoCastle_Exactly_05_02"); //Мой тебе совет: забудь об этих магах. Их товары тебе не по карману.
-	AI_Output (self, other,"DIA_BaalTaran_IntoCastle_Exactly_05_03"); //В нашем лагере все эти руны и зелья стоят гораздо дешевле.
+	AI_Output (other, self,"DIA_BaalTaran_IntoCastle_Exactly_15_00"); //Р’РµСЂРЅРѕ, С‚С‹ СѓРіР°РґР°Р».
+	AI_Output (self, other,"DIA_BaalTaran_IntoCastle_Exactly_05_01"); //РЇ С‚Р°Рє Рё РїРѕРґСѓРјР°Р»! Р§С‚Рѕ Р¶Рµ РµС‰Рµ РЅСѓР¶РЅРѕ РѕС‚ РјР°РіРѕРІ С‚Р°РєРѕРјСѓ С‡РµР»РѕРІРµРєСѓ РєР°Рє С‚С‹.
+	AI_Output (self, other,"DIA_BaalTaran_IntoCastle_Exactly_05_02"); //РњРѕР№ С‚РµР±Рµ СЃРѕРІРµС‚: Р·Р°Р±СѓРґСЊ РѕР± СЌС‚РёС… РјР°РіР°С…. РС… С‚РѕРІР°СЂС‹ С‚РµР±Рµ РЅРµ РїРѕ РєР°СЂРјР°РЅСѓ.
+	AI_Output (self, other,"DIA_BaalTaran_IntoCastle_Exactly_05_03"); //Р’ РЅР°С€РµРј Р»Р°РіРµСЂРµ РІСЃРµ СЌС‚Рё СЂСѓРЅС‹ Рё Р·РµР»СЊСЏ СЃС‚РѕСЏС‚ РіРѕСЂР°Р·РґРѕ РґРµС€РµРІР»Рµ.
 	Info_ClearChoices	(DIA_BaalTaran_IntoCastle);
 };

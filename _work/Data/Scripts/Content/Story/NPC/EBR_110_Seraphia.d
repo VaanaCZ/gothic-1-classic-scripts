@@ -2,7 +2,7 @@ instance EBR_110_Seraphia (Npc_Default)
 {
 	//-------- primary data --------
 	
-	name 		=	"Серафия";
+	name 		=	"РЎРµСЂР°С„РёСЏ";
 	npctype		= 	npctype_main;
 	guild 		=	GIL_BAB;
 	level 		=   1;

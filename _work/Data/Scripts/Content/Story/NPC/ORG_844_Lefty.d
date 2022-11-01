@@ -2,7 +2,7 @@ instance ORG_844_Lefty (Npc_Default)
 {
 	//-------- primary data --------
 	
-	name =						"Лефти";
+	name =						"Р›РµС„С‚Рё";
 	Npctype =					NPCTYPE_MAIN;	
 	guild =						GIL_ORG;      
 	level =						8;

@@ -33,7 +33,7 @@ INSTANCE Info_ORG_830_Hello (C_INFO)
 	condition	= Info_ORG_830_Hello_Condition;
 	information	= Info_ORG_830_Hello_Info;
 	permanent	= 0;
-	description	= "Привет! Я здесь недавно.";
+	description	= "РџСЂРёРІРµС‚! РЇ Р·РґРµСЃСЊ РЅРµРґР°РІРЅРѕ.";
 };                       
 
 FUNC INT Info_ORG_830_Hello_Condition()
@@ -43,8 +43,8 @@ FUNC INT Info_ORG_830_Hello_Condition()
 
 FUNC VOID Info_ORG_830_Hello_Info()
 {	
-	AI_Output (other, self,"Info_ORG_830_Hello_15_00"); //Привет! Я здесь недавно.
-	AI_Output (self, other,"Info_ORG_830_Hello_13_01"); //Ну и что?
+	AI_Output (other, self,"Info_ORG_830_Hello_15_00"); //РџСЂРёРІРµС‚! РЇ Р·РґРµСЃСЊ РЅРµРґР°РІРЅРѕ.
+	AI_Output (self, other,"Info_ORG_830_Hello_13_01"); //РќСѓ Рё С‡С‚Рѕ?
 };
 
 // ************************************************************
@@ -58,7 +58,7 @@ INSTANCE Info_ORG_830_What (C_INFO)
 	condition	= Info_ORG_830_What_Condition;
 	information	= Info_ORG_830_What_Info;
 	permanent	= 0;
-	description	= "Что ты здесь делаешь?";
+	description	= "Р§С‚Рѕ С‚С‹ Р·РґРµСЃСЊ РґРµР»Р°РµС€СЊ?";
 };                       
 
 FUNC INT Info_ORG_830_What_Condition()
@@ -71,9 +71,9 @@ FUNC INT Info_ORG_830_What_Condition()
 
 FUNC VOID Info_ORG_830_What_Info()
 {	
-	AI_Output (other, self,"Info_ORG_830_What_15_00"); //Что ты здесь делаешь?
-	AI_Output (self, other,"Info_ORG_830_What_13_01"); //Только не думай, что я дам тебе затянуться... ничего не выйдет!
-	AI_Output (self, other,"Info_ORG_830_What_13_02"); //Нет. Делать мне больше нечего. И потом, такие как ты обычно не доставляют нам неприятностей.
+	AI_Output (other, self,"Info_ORG_830_What_15_00"); //Р§С‚Рѕ С‚С‹ Р·РґРµСЃСЊ РґРµР»Р°РµС€СЊ?
+	AI_Output (self, other,"Info_ORG_830_What_13_01"); //РўРѕР»СЊРєРѕ РЅРµ РґСѓРјР°Р№, С‡С‚Рѕ СЏ РґР°Рј С‚РµР±Рµ Р·Р°С‚СЏРЅСѓС‚СЊСЃСЏ... РЅРёС‡РµРіРѕ РЅРµ РІС‹Р№РґРµС‚!
+	AI_Output (self, other,"Info_ORG_830_What_13_02"); //РќРµС‚. Р”РµР»Р°С‚СЊ РјРЅРµ Р±РѕР»СЊС€Рµ РЅРµС‡РµРіРѕ. Р РїРѕС‚РѕРј, С‚Р°РєРёРµ РєР°Рє С‚С‹ РѕР±С‹С‡РЅРѕ РЅРµ РґРѕСЃС‚Р°РІР»СЏСЋС‚ РЅР°Рј РЅРµРїСЂРёСЏС‚РЅРѕСЃС‚РµР№.
 };
 
 // ************************************************************
@@ -87,7 +87,7 @@ INSTANCE Info_ORG_830_Aufhalten (C_INFO)
 	condition	= Info_ORG_830_Aufhalten_Condition;
 	information	= Info_ORG_830_Aufhalten_Info;
 	permanent	= 0;
-	description	= "И ты даже не попытаешься остановить меня?..";
+	description	= "Р С‚С‹ РґР°Р¶Рµ РЅРµ РїРѕРїС‹С‚Р°РµС€СЊСЃСЏ РѕСЃС‚Р°РЅРѕРІРёС‚СЊ РјРµРЅСЏ?..";
 };                       
 
 FUNC INT Info_ORG_830_Aufhalten_Condition()
@@ -100,8 +100,8 @@ FUNC INT Info_ORG_830_Aufhalten_Condition()
 
 FUNC VOID Info_ORG_830_Aufhalten_Info()
 {	
-	AI_Output (other, self,"Info_ORG_830_Aufhalten_15_00"); //И ты даже не попытаешься остановить меня? Ну, или спросить о чем-нибудь?
-	AI_Output (self, other,"Info_ORG_830_Aufhalten_13_01"); //Нет. Делать мне больше нечего. И потом, такие как ты обычно не доставляют нам неприятностей.
+	AI_Output (other, self,"Info_ORG_830_Aufhalten_15_00"); //Р С‚С‹ РґР°Р¶Рµ РЅРµ РїРѕРїС‹С‚Р°РµС€СЊСЃСЏ РѕСЃС‚Р°РЅРѕРІРёС‚СЊ РјРµРЅСЏ? РќСѓ, РёР»Рё СЃРїСЂРѕСЃРёС‚СЊ Рѕ С‡РµРј-РЅРёР±СѓРґСЊ?
+	AI_Output (self, other,"Info_ORG_830_Aufhalten_13_01"); //РќРµС‚. Р”РµР»Р°С‚СЊ РјРЅРµ Р±РѕР»СЊС€Рµ РЅРµС‡РµРіРѕ. Р РїРѕС‚РѕРј, С‚Р°РєРёРµ РєР°Рє С‚С‹ РѕР±С‹С‡РЅРѕ РЅРµ РґРѕСЃС‚Р°РІР»СЏСЋС‚ РЅР°Рј РЅРµРїСЂРёСЏС‚РЅРѕСЃС‚РµР№.
 };
 
 // ************************************************************
@@ -115,7 +115,7 @@ INSTANCE Info_ORG_830_Perm (C_INFO)
 	condition	= Info_ORG_830_Perm_Condition;
 	information	= Info_ORG_830_Perm_Info;
 	permanent	= 1;
-	description	= "Как там дела в шахте?";
+	description	= "РљР°Рє С‚Р°Рј РґРµР»Р° РІ С€Р°С…С‚Рµ?";
 };                       
 
 FUNC INT Info_ORG_830_Perm_Condition()
@@ -128,6 +128,6 @@ FUNC INT Info_ORG_830_Perm_Condition()
 
 FUNC VOID Info_ORG_830_Perm_Info()
 {	
-	AI_Output (other, self,"Info_ORG_830_Perm_15_00"); //Как там дела в шахте?
-	AI_Output (self, other,"Info_ORG_830_Perm_13_01"); //Как обычно - тихо, разве что было несколько драк.
+	AI_Output (other, self,"Info_ORG_830_Perm_15_00"); //РљР°Рє С‚Р°Рј РґРµР»Р° РІ С€Р°С…С‚Рµ?
+	AI_Output (self, other,"Info_ORG_830_Perm_13_01"); //РљР°Рє РѕР±С‹С‡РЅРѕ - С‚РёС…Рѕ, СЂР°Р·РІРµ С‡С‚Рѕ Р±С‹Р»Рѕ РЅРµСЃРєРѕР»СЊРєРѕ РґСЂР°Рє.
 };

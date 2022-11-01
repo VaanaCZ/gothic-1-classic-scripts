@@ -2,7 +2,7 @@
 //	ZS_FollowPC
 //	===========
 //	Tagesablauf-Zustand: menschlicher NSC folgt dem Spieler in einigem
-//	Abstand überall hin.
+//	Abstand ÑŒberall hin.
 //////////////////////////////////////////////////////////////////////////
 func void ZS_FollowPC()
 {

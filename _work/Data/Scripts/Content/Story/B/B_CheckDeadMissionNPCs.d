@@ -5,7 +5,7 @@ func void B_CheckDeadMissionNPCs ()
 	{
 		if (Lefty_Mission == LOG_RUNNING)
 		{
-			B_LogEntry	(CH1_CarryWater,	"После смерти Лефти проблема с водой была решена. Этот тип все равно был невыносим.");
+			B_LogEntry	(CH1_CarryWater,	"РџРѕСЃР»Рµ СЃРјРµСЂС‚Рё Р›РµС„С‚Рё РїСЂРѕР±Р»РµРјР° СЃ РІРѕРґРѕР№ Р±С‹Р»Р° СЂРµС€РµРЅР°. Р­С‚РѕС‚ С‚РёРї РІСЃРµ СЂР°РІРЅРѕ Р±С‹Р» РЅРµРІС‹РЅРѕСЃРёРј.");
 			Log_SetTopicStatus	(CH1_CarryWater,	LOG_SUCCESS);
 			LeftyDead = TRUE;
 		};

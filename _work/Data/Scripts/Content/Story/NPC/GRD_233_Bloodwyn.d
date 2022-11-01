@@ -2,7 +2,7 @@ instance GRD_233_Bloodwyn (Npc_Default)
 {
 	//-------- primary data --------
 	
-	name 		=	"¡Î‡‰‚ËÌ";
+	name 		=	"–ë–ª–∞–¥–≤–∏–Ω";
 	npctype 	=	npctype_main;
 	guild 		=	GIL_GRD;
 	level 		=	15;

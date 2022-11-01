@@ -46,8 +46,8 @@ FUNC int DIA_Gilbert_First_Condition()
 
 FUNC VOID  DIA_Gilbert_First_Info()
 {
-	AI_Output (self, other,"DIA_Gilbert_First_04_00"); //Что ты здесь делаешь? Редко кто заходит ко мне сюда, хе-хе!
-	AI_Output (self, other,"DIA_Gilbert_First_04_01"); //Тебе удалось найти мое убежище, что не многим под силу.
+	AI_Output (self, other,"DIA_Gilbert_First_04_00"); //Р§С‚Рѕ С‚С‹ Р·РґРµСЃСЊ РґРµР»Р°РµС€СЊ? Р РµРґРєРѕ РєС‚Рѕ Р·Р°С…РѕРґРёС‚ РєРѕ РјРЅРµ СЃСЋРґР°, С…Рµ-С…Рµ!
+	AI_Output (self, other,"DIA_Gilbert_First_04_01"); //РўРµР±Рµ СѓРґР°Р»РѕСЃСЊ РЅР°Р№С‚Рё РјРѕРµ СѓР±РµР¶РёС‰Рµ, С‡С‚Рѕ РЅРµ РјРЅРѕРіРёРј РїРѕРґ СЃРёР»Сѓ.
 	
 	B_GiveXP(XP_GilbertFound);
 };
@@ -63,7 +63,7 @@ instance DIA_Gilbert_Hallo (C_INFO)
 	condition	= DIA_Gilbert_Hallo_Condition;
 	information	= DIA_Gilbert_Hallo_Info;
 	permanent	= 1;
-	description = "Что ты здесь делаешь?";
+	description = "Р§С‚Рѕ С‚С‹ Р·РґРµСЃСЊ РґРµР»Р°РµС€СЊ?";
 };                       
 
 FUNC int DIA_Gilbert_Hallo_Condition()
@@ -73,9 +73,9 @@ FUNC int DIA_Gilbert_Hallo_Condition()
 
 FUNC VOID  DIA_Gilbert_Hallo_Info()
 {
-	AI_Output (other, self,"DIA_Gilbert_Hallo_15_00"); //Что ты здесь делаешь?
-	AI_Output (self, other,"DIA_Gilbert_Hallo_04_01"); //Старый лагерь мне давно надоел. У нас давние разногласия с людьми Гомеза. Как давно это все началось...
-	AI_Output (self, other,"DIA_Gilbert_Hallo_04_02"); //Теперь обо мне, наверное, никто и не помнит. Но я все равно останусь здесь. В Старом лагере стало слишком много солдатни.
+	AI_Output (other, self,"DIA_Gilbert_Hallo_15_00"); //Р§С‚Рѕ С‚С‹ Р·РґРµСЃСЊ РґРµР»Р°РµС€СЊ?
+	AI_Output (self, other,"DIA_Gilbert_Hallo_04_01"); //РЎС‚Р°СЂС‹Р№ Р»Р°РіРµСЂСЊ РјРЅРµ РґР°РІРЅРѕ РЅР°РґРѕРµР». РЈ РЅР°СЃ РґР°РІРЅРёРµ СЂР°Р·РЅРѕРіР»Р°СЃРёСЏ СЃ Р»СЋРґСЊРјРё Р“РѕРјРµР·Р°. РљР°Рє РґР°РІРЅРѕ СЌС‚Рѕ РІСЃРµ РЅР°С‡Р°Р»РѕСЃСЊ...
+	AI_Output (self, other,"DIA_Gilbert_Hallo_04_02"); //РўРµРїРµСЂСЊ РѕР±Рѕ РјРЅРµ, РЅР°РІРµСЂРЅРѕРµ, РЅРёРєС‚Рѕ Рё РЅРµ РїРѕРјРЅРёС‚. РќРѕ СЏ РІСЃРµ СЂР°РІРЅРѕ РѕСЃС‚Р°РЅСѓСЃСЊ Р·РґРµСЃСЊ. Р’ РЎС‚Р°СЂРѕРј Р»Р°РіРµСЂРµ СЃС‚Р°Р»Рѕ СЃР»РёС€РєРѕРј РјРЅРѕРіРѕ СЃРѕР»РґР°С‚РЅРё.
 };
 
 

@@ -2,8 +2,8 @@
 //##
 //##							KAPITEL 4
 //##							=========
-//##	Sцldner, Banditen und Schьrfer der Freien Mine werden
-//##	getцtet und beraubt.
+//##	SС†ldner, Banditen und SchСЊrfer der Freien Mine werden
+//##	getС†tet und beraubt.
 //##	Drei Gardisten bewachen jetzt den Eingang zur Mine.						
 //##
 //#####################################################################
@@ -13,7 +13,7 @@ func void B_Story_FMTaken()
 	var C_NPC fighter;	fighter = Hlp_GetNpc(PC_FIGHTER);
 	Npc_ExchangeRoutine(fighter, "NCREPORT");
 
-	//-------- Besatzung des Kessels tцten --------
+	//-------- Besatzung des Kessels tС†ten --------
 	B_KillNpc	(SLD_750_Soeldner);
 	B_KillNpc	(SLD_751_Soeldner);
 	B_KillNpc	(SLD_752_Okyl);
@@ -50,12 +50,12 @@ func void B_Story_FMTaken()
 	B_KillNpc	(ORG_891_Organisator);
 	B_KillNpc	(ORG_892_Organisator);
 		
-	//-------- Gardisten-Eroberer einfьgen --------
+	//-------- Gardisten-Eroberer einfСЊgen --------
 	Wld_InsertNpc		(Grd_283_Gardist,	"FMC_ENTRANCE");	//FMC-Guard(Mineneingang)			
 	Wld_InsertNpc		(Grd_285_Gardist,	"FMC_ENTRANCE");	//FMC-Guard(Mineneingang)	
 	B_ExchangeRoutine	(Grd_201_Jackal,	"FMTaken");			//FMC-Guard(Mineneingang)
 
-	//-------- Tor zur Alten Mine im Stundentakt auf VerschluЯ checken! --------
+	//-------- Tor zur Alten Mine im Stundentakt auf VerschluРЇ checken! --------
 	//B_ExchangeRoutine	(Grd_250_Gardist,	"FMTaken");
 	Wld_SetObjectRoutine		(0,00,"EVT_AM_LOB_GATE_BIG",1);
 	Wld_SetObjectRoutine		(1,00,"EVT_AM_LOB_GATE_BIG",1);
@@ -82,22 +82,22 @@ func void B_Story_FMTaken()
 	Wld_SetObjectRoutine		(22,00,"EVT_AM_LOB_GATE_BIG",1);
 	Wld_SetObjectRoutine		(23,00,"EVT_AM_LOB_GATE_BIG",1);
 
-	//-------- Tagebucheintrдge --------
+	//-------- TagebucheintrРґge --------
 	if (Npc_KnowsInfo(hero, Info_Milten_OCWARN))
 	{
-		B_LogEntry	(CH4_Firemages,	"Диего мог бы многое рассказать мне о событиях в Старом лагере.");
+		B_LogEntry	(CH4_Firemages,	"Р”РёРµРіРѕ РјРѕРі Р±С‹ РјРЅРѕРіРѕРµ СЂР°СЃСЃРєР°Р·Р°С‚СЊ РјРЅРµ Рѕ СЃРѕР±С‹С‚РёСЏС… РІ РЎС‚Р°СЂРѕРј Р»Р°РіРµСЂРµ.");
 	}
 	else
 	{
-		B_LogEntry	(CH4_Firemages,	"У входа в Старый лагерь меня нашел Диего и рассказал о том, что там недавно произошло.");
+		B_LogEntry	(CH4_Firemages,	"РЈ РІС…РѕРґР° РІ РЎС‚Р°СЂС‹Р№ Р»Р°РіРµСЂСЊ РјРµРЅСЏ РЅР°С€РµР» Р”РёРµРіРѕ Рё СЂР°СЃСЃРєР°Р·Р°Р» Рѕ С‚РѕРј, С‡С‚Рѕ С‚Р°Рј РЅРµРґР°РІРЅРѕ РїСЂРѕРёР·РѕС€Р»Рѕ.");
 	};
-	B_LogEntry		(CH4_Firemages,	"После разрушения Старой шахты Гомез приказал своим людям захватить Свободную шахту в Новом лагере. Корристо и все маги Огня выступили против захвата, и за это были убиты.");
-	B_LogEntry		(CH4_Firemages,	"Я должен как можно быстрее предупредить людей Нового лагеря и рассказать Сатурасу о том, что произошло с магами Огня. Надеюсь, я не опоздаю.");
+	B_LogEntry		(CH4_Firemages,	"РџРѕСЃР»Рµ СЂР°Р·СЂСѓС€РµРЅРёСЏ РЎС‚Р°СЂРѕР№ С€Р°С…С‚С‹ Р“РѕРјРµР· РїСЂРёРєР°Р·Р°Р» СЃРІРѕРёРј Р»СЋРґСЏРј Р·Р°С…РІР°С‚РёС‚СЊ РЎРІРѕР±РѕРґРЅСѓСЋ С€Р°С…С‚Сѓ РІ РќРѕРІРѕРј Р»Р°РіРµСЂРµ. РљРѕСЂСЂРёСЃС‚Рѕ Рё РІСЃРµ РјР°РіРё РћРіРЅСЏ РІС‹СЃС‚СѓРїРёР»Рё РїСЂРѕС‚РёРІ Р·Р°С…РІР°С‚Р°, Рё Р·Р° СЌС‚Рѕ Р±С‹Р»Рё СѓР±РёС‚С‹.");
+	B_LogEntry		(CH4_Firemages,	"РЇ РґРѕР»Р¶РµРЅ РєР°Рє РјРѕР¶РЅРѕ Р±С‹СЃС‚СЂРµРµ РїСЂРµРґСѓРїСЂРµРґРёС‚СЊ Р»СЋРґРµР№ РќРѕРІРѕРіРѕ Р»Р°РіРµСЂСЏ Рё СЂР°СЃСЃРєР°Р·Р°С‚СЊ РЎР°С‚СѓСЂР°СЃСѓ Рѕ С‚РѕРј, С‡С‚Рѕ РїСЂРѕРёР·РѕС€Р»Рѕ СЃ РјР°РіР°РјРё РћРіРЅСЏ. РќР°РґРµСЋСЃСЊ, СЏ РЅРµ РѕРїРѕР·РґР°СЋ.");
 	
 	if (Scorpio_Exile == FALSE)
 	{
 		Log_CreateTopic (GE_TraderOW,LOG_NOTE);
-		B_LogEntry		(GE_TraderOW,   "Скорпио покинул Старый лагерь и остановился в охотничьем домике Кавалорна, между Старым и Новым лагерями.");
+		B_LogEntry		(GE_TraderOW,   "РЎРєРѕСЂРїРёРѕ РїРѕРєРёРЅСѓР» РЎС‚Р°СЂС‹Р№ Р»Р°РіРµСЂСЊ Рё РѕСЃС‚Р°РЅРѕРІРёР»СЃСЏ РІ РѕС…РѕС‚РЅРёС‡СЊРµРј РґРѕРјРёРєРµ РљР°РІР°Р»РѕСЂРЅР°, РјРµР¶РґСѓ РЎС‚Р°СЂС‹Рј Рё РќРѕРІС‹Рј Р»Р°РіРµСЂСЏРјРё.");
 		Scorpio_Exile = TRUE;
 	};
 	//-------- globale Variable setzen --------

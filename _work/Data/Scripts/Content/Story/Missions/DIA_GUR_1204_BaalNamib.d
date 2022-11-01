@@ -23,7 +23,7 @@ FUNC VOID DIA_BaalNamib_EXIT_Info()
 };
 
 // ************************************************************
-// 					NICHT ansprechbar (Unglдubiger) 
+// 					NICHT ansprechbar (UnglРґubiger) 
 // ************************************************************
 // ************************************************************
 
@@ -49,28 +49,28 @@ FUNC VOID DIA_BaalNamib_NoTalk_Info()
 {	
 	Info_ClearChoices 	(DIA_BaalNamib_NoTalk);
 	Info_Addchoice 		(DIA_BaalNamib_NoTalk,DIALOG_ENDE					,DIA_BaalNamib_NoTalk_ENDE);
-	Info_Addchoice 		(DIA_BaalNamib_NoTalk,"С тобой все нормально, приятель?"			,DIA_BaalNamib_NoTalk_Imp);
-	Info_Addchoice 		(DIA_BaalNamib_NoTalk,"Да пребудет с тобой Спящий!"	,DIA_BaalNamib_NoTalk_Sleeper);
-	Info_Addchoice 		(DIA_BaalNamib_NoTalk,"Привет! Я здесь новенький!"		,DIA_BaalNamib_NoTalk_Hi);
+	Info_Addchoice 		(DIA_BaalNamib_NoTalk,"РЎ С‚РѕР±РѕР№ РІСЃРµ РЅРѕСЂРјР°Р»СЊРЅРѕ, РїСЂРёСЏС‚РµР»СЊ?"			,DIA_BaalNamib_NoTalk_Imp);
+	Info_Addchoice 		(DIA_BaalNamib_NoTalk,"Р”Р° РїСЂРµР±СѓРґРµС‚ СЃ С‚РѕР±РѕР№ РЎРїСЏС‰РёР№!"	,DIA_BaalNamib_NoTalk_Sleeper);
+	Info_Addchoice 		(DIA_BaalNamib_NoTalk,"РџСЂРёРІРµС‚! РЇ Р·РґРµСЃСЊ РЅРѕРІРµРЅСЊРєРёР№!"		,DIA_BaalNamib_NoTalk_Hi);
 };
 
 func void DIA_BaalNamib_NoTalk_Hi()
 {
-	AI_Output (other, self,"DIA_BaalNamib_NoTalk_Hi_15_00"); //Привет! Я здесь новенький!
+	AI_Output (other, self,"DIA_BaalNamib_NoTalk_Hi_15_00"); //РџСЂРёРІРµС‚! РЇ Р·РґРµСЃСЊ РЅРѕРІРµРЅСЊРєРёР№!
 	AI_Output (self, other,"DIA_BaalNamib_NoTalk_Hi_02_01"); //
 	BaalNamib_Sakrileg = TRUE;
 };
 
 func void DIA_BaalNamib_NoTalk_Sleeper()
 {
-	AI_Output (other, self,"DIA_BaalNamib_NoTalk_Sleeper_15_00"); //Да пребудет с тобой Спящий!
+	AI_Output (other, self,"DIA_BaalNamib_NoTalk_Sleeper_15_00"); //Р”Р° РїСЂРµР±СѓРґРµС‚ СЃ С‚РѕР±РѕР№ РЎРїСЏС‰РёР№!
 	AI_Output (self, other,"DIA_BaalNamib_NoTalk_Sleeper_02_01"); //
 	BaalNamib_Sakrileg = TRUE;
 };
 
 func void DIA_BaalNamib_NoTalk_Imp()
 {
-	AI_Output (other, self,"DIA_BaalNamib_NoTalk_Imp_15_00"); //С тобой все нормально, приятель?
+	AI_Output (other, self,"DIA_BaalNamib_NoTalk_Imp_15_00"); //РЎ С‚РѕР±РѕР№ РІСЃРµ РЅРѕСЂРјР°Р»СЊРЅРѕ, РїСЂРёСЏС‚РµР»СЊ?
 	AI_Output (self, other,"DIA_BaalNamib_NoTalk_Imp_02_01"); //
 	BaalNamib_Sakrileg = TRUE;
 };
@@ -105,31 +105,31 @@ FUNC INT DIA_BaalNamib_FirstTalk_Condition()
 FUNC VOID DIA_BaalNamib_FirstTalk_Info()
 {	
 	AI_Output (self, other,"DIA_BaalNamib_FirstTalk_02_00"); //
-	AI_Output (self, other,"DIA_BaalNamib_FirstTalk_02_01"); //Спящий избрал тебя. Ты и в самом деле хочешь присоединиться к нам?
+	AI_Output (self, other,"DIA_BaalNamib_FirstTalk_02_01"); //РЎРїСЏС‰РёР№ РёР·Р±СЂР°Р» С‚РµР±СЏ. РўС‹ Рё РІ СЃР°РјРѕРј РґРµР»Рµ С…РѕС‡РµС€СЊ РїСЂРёСЃРѕРµРґРёРЅРёС‚СЊСЃСЏ Рє РЅР°Рј?
 
 	Info_ClearChoices 	(DIA_BaalNamib_FirstTalk);
-	Info_AddChoice 		(DIA_BaalNamib_FirstTalk,"ПРОМОЛЧАТЬ"										,DIA_BaalNamib_FirstTalk_Mute);
-	Info_AddChoice 		(DIA_BaalNamib_FirstTalk,"Да, я хочу вступить на путь, указанный Спящим."	,DIA_BaalNamib_FirstTalk_Sleeper);
+	Info_AddChoice 		(DIA_BaalNamib_FirstTalk,"РџР РћРњРћР›Р§РђРўР¬"										,DIA_BaalNamib_FirstTalk_Mute);
+	Info_AddChoice 		(DIA_BaalNamib_FirstTalk,"Р”Р°, СЏ С…РѕС‡Сѓ РІСЃС‚СѓРїРёС‚СЊ РЅР° РїСѓС‚СЊ, СѓРєР°Р·Р°РЅРЅС‹Р№ РЎРїСЏС‰РёРј."	,DIA_BaalNamib_FirstTalk_Sleeper);
 };
 
 func void DIA_BaalNamib_FirstTalk_Mute()
 {
 	AI_Output (other, self,"DIA_BaalNamib_FirstTalk_Mute_15_00"); //
-	AI_Output (self, other,"DIA_BaalNamib_FirstTalk_Mute_02_01"); //Ну?
+	AI_Output (self, other,"DIA_BaalNamib_FirstTalk_Mute_02_01"); //РќСѓ?
 };
 
 func void DIA_BaalNamib_FirstTalk_Sleeper()
 {
-	AI_Output 			(other, self,"DIA_BaalNamib_FirstTalk_Sleeper_15_00"); //Да, я хочу вступить на путь, указанный Спящим.
-	AI_Output 			(self, other,"DIA_BaalNamib_FirstTalk_Sleeper_02_01"); //Иди к Кор Галому. Скажи ему, что я считаю тебя истинно верующим!
+	AI_Output 			(other, self,"DIA_BaalNamib_FirstTalk_Sleeper_15_00"); //Р”Р°, СЏ С…РѕС‡Сѓ РІСЃС‚СѓРїРёС‚СЊ РЅР° РїСѓС‚СЊ, СѓРєР°Р·Р°РЅРЅС‹Р№ РЎРїСЏС‰РёРј.
+	AI_Output 			(self, other,"DIA_BaalNamib_FirstTalk_Sleeper_02_01"); //РРґРё Рє РљРѕСЂ Р“Р°Р»РѕРјСѓ. РЎРєР°Р¶Рё РµРјСѓ, С‡С‚Рѕ СЏ СЃС‡РёС‚Р°СЋ С‚РµР±СЏ РёСЃС‚РёРЅРЅРѕ РІРµСЂСѓСЋС‰РёРј!
 	Info_ClearChoices 	(DIA_BaalNamib_FirstTalk);
 
-	B_LogEntry			(CH1_JoinPsi,	"Задумка Лестера удалась. Идол Намиб заговорил со мной. Теперь он думает, что я стал убежденным верующим. Мне нужно увидеть Гуру Кор Галома в лаборатории!");
+	B_LogEntry			(CH1_JoinPsi,	"Р—Р°РґСѓРјРєР° Р›РµСЃС‚РµСЂР° СѓРґР°Р»Р°СЃСЊ. РРґРѕР» РќР°РјРёР± Р·Р°РіРѕРІРѕСЂРёР» СЃРѕ РјРЅРѕР№. РўРµРїРµСЂСЊ РѕРЅ РґСѓРјР°РµС‚, С‡С‚Рѕ СЏ СЃС‚Р°Р» СѓР±РµР¶РґРµРЅРЅС‹Рј РІРµСЂСѓСЋС‰РёРј. РњРЅРµ РЅСѓР¶РЅРѕ СѓРІРёРґРµС‚СЊ Р“СѓСЂСѓ РљРѕСЂ Р“Р°Р»РѕРјР° РІ Р»Р°Р±РѕСЂР°С‚РѕСЂРёРё!");
 	B_GiveXP			(XP_ImpressBaalNamib);
 };
 
 //-----------------------------------------------------
-// BESSERE RЬSTUNG NOVIZEN
+// BESSERE RР¬STUNG NOVIZEN
 //-----------------------------------------------------
 instance  GUR_1204_BaalNamib_ARMOR (C_INFO)
 {
@@ -138,7 +138,7 @@ instance  GUR_1204_BaalNamib_ARMOR (C_INFO)
 	information		= GUR_1204_BaalNamib_ARMOR_Info;
 	important		= 0;
 	permanent		= 1;
-	description		= "Мне нужны хорошие доспехи."; 
+	description		= "РњРЅРµ РЅСѓР¶РЅС‹ С…РѕСЂРѕС€РёРµ РґРѕСЃРїРµС…Рё."; 
 };
 
 FUNC int  GUR_1204_BaalNamib_ARMOR_Condition()
@@ -152,19 +152,19 @@ FUNC int  GUR_1204_BaalNamib_ARMOR_Condition()
 };
 FUNC void  GUR_1204_BaalNamib_ARMOR_Info()
 {
-	AI_Output (hero,self,"GUR_1204_BaalNamib_ARMOR_Info_15_01");//Мне нужны хорошие доспехи.
+	AI_Output (hero,self,"GUR_1204_BaalNamib_ARMOR_Info_15_01");//РњРЅРµ РЅСѓР¶РЅС‹ С…РѕСЂРѕС€РёРµ РґРѕСЃРїРµС…Рё.
 	
 	if (Kapitel < 3)
 	{
-		AI_Output (self,other,"GUR_1204_BaalNamib_ARMOR_Info_02_02");//Тебе еще рано носить тяжелые доспехи послушника.
+		AI_Output (self,other,"GUR_1204_BaalNamib_ARMOR_Info_02_02");//РўРµР±Рµ РµС‰Рµ СЂР°РЅРѕ РЅРѕСЃРёС‚СЊ С‚СЏР¶РµР»С‹Рµ РґРѕСЃРїРµС…Рё РїРѕСЃР»СѓС€РЅРёРєР°.
 	}
 	else if (Npc_HasItems (hero, ItMinugget) < VALUE_NOV_ARMOR_H )
 	{
-		AI_Output (self,other,"GUR_1204_BaalNamib_ARMOR_Info_02_03");//Возвращайся, когда соберешь достаточно руды.
+		AI_Output (self,other,"GUR_1204_BaalNamib_ARMOR_Info_02_03");//Р’РѕР·РІСЂР°С‰Р°Р№СЃСЏ, РєРѕРіРґР° СЃРѕР±РµСЂРµС€СЊ РґРѕСЃС‚Р°С‚РѕС‡РЅРѕ СЂСѓРґС‹.
 	}
 	else
 	{
-		AI_Output (self,other,"GUR_1204_BaalNamib_ARMOR_Info_02_04");//Эти доспехи защитят тело твое, так же как Спящий защищает твою душу!
+		AI_Output (self,other,"GUR_1204_BaalNamib_ARMOR_Info_02_04");//Р­С‚Рё РґРѕСЃРїРµС…Рё Р·Р°С‰РёС‚СЏС‚ С‚РµР»Рѕ С‚РІРѕРµ, С‚Р°Рє Р¶Рµ РєР°Рє РЎРїСЏС‰РёР№ Р·Р°С‰РёС‰Р°РµС‚ С‚РІРѕСЋ РґСѓС€Сѓ!
 		CreateInvItem (self,NOV_ARMOR_H);
 		B_GiveInvItems (self, hero, NOV_ARMOR_H, 1);
 		B_GiveInvItems (hero, self, ItMinugget,VALUE_NOV_ARMOR_H);
@@ -187,7 +187,7 @@ INSTANCE Info_BaalNamib_BROTHERHOOD (C_INFO)
 	information	= Info_BaalNamib_BROTHERHOOD_Info;
 	important	= 0;
 	permanent	= 0;
-	description = "Я могу что-нибудь сделать для Братства?";
+	description = "РЇ РјРѕРіСѓ С‡С‚Рѕ-РЅРёР±СѓРґСЊ СЃРґРµР»Р°С‚СЊ РґР»СЏ Р‘СЂР°С‚СЃС‚РІР°?";
 };
 
 FUNC INT Info_BaalNamib_BROTHERHOOD_Condition()
@@ -197,12 +197,12 @@ FUNC INT Info_BaalNamib_BROTHERHOOD_Condition()
 
 FUNC VOID Info_BaalNamib_BROTHERHOOD_Info()
 {
-	AI_Output (other, self,"Info_BaalNamib_BROTHERHOOD_15_01"); //Я могу что-нибудь сделать для Братства?
-	AI_Output (self, other,"Info_BaalNamib_BROTHERHOOD_02_02"); //Нашему Мастеру, мудрейшему Юбериону, нужен послушник. Иди к нему и предложи свои услуги.
+	AI_Output (other, self,"Info_BaalNamib_BROTHERHOOD_15_01"); //РЇ РјРѕРіСѓ С‡С‚Рѕ-РЅРёР±СѓРґСЊ СЃРґРµР»Р°С‚СЊ РґР»СЏ Р‘СЂР°С‚СЃС‚РІР°?
+	AI_Output (self, other,"Info_BaalNamib_BROTHERHOOD_02_02"); //РќР°С€РµРјСѓ РњР°СЃС‚РµСЂСѓ, РјСѓРґСЂРµР№С€РµРјСѓ Р®Р±РµСЂРёРѕРЅСѓ, РЅСѓР¶РµРЅ РїРѕСЃР»СѓС€РЅРёРє. РРґРё Рє РЅРµРјСѓ Рё РїСЂРµРґР»РѕР¶Рё СЃРІРѕРё СѓСЃР»СѓРіРё.
 	Info_Clearchoices ( Info_BaalNamib_BROTHERHOOD);
-	Info_Addchoice (Info_BaalNamib_BROTHERHOOD,"Я пойду и поговорю с ним прямо сейчас."		,Info_BaalNamib_BROTHERHOOD_OK);
-	Info_Addchoice (Info_BaalNamib_BROTHERHOOD,"Где я могу найти Юбериона?"							,Info_BaalNamib_BROTHERHOOD_YBWO);  
-	Info_Addchoice (Info_BaalNamib_BROTHERHOOD,"Ты знаешь, какое задание даст мне Юберион?"	,Info_BaalNamib_BROTHERHOOD_YBWAS);
+	Info_Addchoice (Info_BaalNamib_BROTHERHOOD,"РЇ РїРѕР№РґСѓ Рё РїРѕРіРѕРІРѕСЂСЋ СЃ РЅРёРј РїСЂСЏРјРѕ СЃРµР№С‡Р°СЃ."		,Info_BaalNamib_BROTHERHOOD_OK);
+	Info_Addchoice (Info_BaalNamib_BROTHERHOOD,"Р“РґРµ СЏ РјРѕРіСѓ РЅР°Р№С‚Рё Р®Р±РµСЂРёРѕРЅР°?"							,Info_BaalNamib_BROTHERHOOD_YBWO);  
+	Info_Addchoice (Info_BaalNamib_BROTHERHOOD,"РўС‹ Р·РЅР°РµС€СЊ, РєР°РєРѕРµ Р·Р°РґР°РЅРёРµ РґР°СЃС‚ РјРЅРµ Р®Р±РµСЂРёРѕРЅ?"	,Info_BaalNamib_BROTHERHOOD_YBWAS);
 	var C_NPC Kalom;
 	Kalom = Hlp_GetNpc (GUR_1201_CORKALOM); 
 	Npc_ExchangeRoutine (Kalom,"kapitel2");
@@ -210,21 +210,21 @@ FUNC VOID Info_BaalNamib_BROTHERHOOD_Info()
 };
 FUNC VOID Info_BaalNamib_BROTHERHOOD_YBWO()
 {
-	AI_Output (other, self,"Info_BaalNamib_BROTHERHOOD_YBWO_15_01"); //А где я могу найти Юбериона?
-	AI_Output (self, other,"Info_BaalNamib_BROTHERHOOD_YBWO_02_02"); //На холме. Как и всегда, впрочем.
+	AI_Output (other, self,"Info_BaalNamib_BROTHERHOOD_YBWO_15_01"); //Рђ РіРґРµ СЏ РјРѕРіСѓ РЅР°Р№С‚Рё Р®Р±РµСЂРёРѕРЅР°?
+	AI_Output (self, other,"Info_BaalNamib_BROTHERHOOD_YBWO_02_02"); //РќР° С…РѕР»РјРµ. РљР°Рє Рё РІСЃРµРіРґР°, РІРїСЂРѕС‡РµРј.
 
 };	
 FUNC VOID Info_BaalNamib_BROTHERHOOD_YBWAS()
 {
-	AI_Output (other, self,"Info_BaalNamib_BROTHERHOOD_YBWAS_15_01"); //Ты знаешь, какое задание даст мне Юберион?
-	AI_Output (self, other,"Info_BaalNamib_BROTHERHOOD_YBWAS_02_02"); //Все мы ждем Великой Церемонии. Но прежде чем она начнется, нам потребуется магический артефакт.
-	AI_Output (self, other,"Info_BaalNamib_BROTHERHOOD_YBWAS_02_03"); //Юберион ищет храбреца, который найдет его.
-	AI_Output (other, self,"Info_BaalNamib_BROTHERHOOD_YBWAS_15_04"); //Кажется, это простое дело.
-	AI_Output (self, other,"Info_BaalNamib_BROTHERHOOD_YBWAS_02_05"); //Если бы это было так просто, артефакт был бы уже у нас. Прежде поговори с Юберионом. Он тебе все объяснит.
+	AI_Output (other, self,"Info_BaalNamib_BROTHERHOOD_YBWAS_15_01"); //РўС‹ Р·РЅР°РµС€СЊ, РєР°РєРѕРµ Р·Р°РґР°РЅРёРµ РґР°СЃС‚ РјРЅРµ Р®Р±РµСЂРёРѕРЅ?
+	AI_Output (self, other,"Info_BaalNamib_BROTHERHOOD_YBWAS_02_02"); //Р’СЃРµ РјС‹ Р¶РґРµРј Р’РµР»РёРєРѕР№ Р¦РµСЂРµРјРѕРЅРёРё. РќРѕ РїСЂРµР¶РґРµ С‡РµРј РѕРЅР° РЅР°С‡РЅРµС‚СЃСЏ, РЅР°Рј РїРѕС‚СЂРµР±СѓРµС‚СЃСЏ РјР°РіРёС‡РµСЃРєРёР№ Р°СЂС‚РµС„Р°РєС‚.
+	AI_Output (self, other,"Info_BaalNamib_BROTHERHOOD_YBWAS_02_03"); //Р®Р±РµСЂРёРѕРЅ РёС‰РµС‚ С…СЂР°Р±СЂРµС†Р°, РєРѕС‚РѕСЂС‹Р№ РЅР°Р№РґРµС‚ РµРіРѕ.
+	AI_Output (other, self,"Info_BaalNamib_BROTHERHOOD_YBWAS_15_04"); //РљР°Р¶РµС‚СЃСЏ, СЌС‚Рѕ РїСЂРѕСЃС‚РѕРµ РґРµР»Рѕ.
+	AI_Output (self, other,"Info_BaalNamib_BROTHERHOOD_YBWAS_02_05"); //Р•СЃР»Рё Р±С‹ СЌС‚Рѕ Р±С‹Р»Рѕ С‚Р°Рє РїСЂРѕСЃС‚Рѕ, Р°СЂС‚РµС„Р°РєС‚ Р±С‹Р» Р±С‹ СѓР¶Рµ Сѓ РЅР°СЃ. РџСЂРµР¶РґРµ РїРѕРіРѕРІРѕСЂРё СЃ Р®Р±РµСЂРёРѕРЅРѕРј. РћРЅ С‚РµР±Рµ РІСЃРµ РѕР±СЉСЏСЃРЅРёС‚.
 };	
 FUNC VOID Info_BaalNamib_BROTHERHOOD_OK()
 {
-	AI_Output (other, self,"Info_BaalNamib_BROTHERHOOD_OK_15_01"); //Я пойду и поговорю с ним прямо сейчас.
-	AI_Output (self, other,"Info_BaalNamib_BROTHERHOOD_OK_02_02"); //Да хранит тебя Спящий!
+	AI_Output (other, self,"Info_BaalNamib_BROTHERHOOD_OK_15_01"); //РЇ РїРѕР№РґСѓ Рё РїРѕРіРѕРІРѕСЂСЋ СЃ РЅРёРј РїСЂСЏРјРѕ СЃРµР№С‡Р°СЃ.
+	AI_Output (self, other,"Info_BaalNamib_BROTHERHOOD_OK_02_02"); //Р”Р° С…СЂР°РЅРёС‚ С‚РµР±СЏ РЎРїСЏС‰РёР№!
 	Info_Clearchoices ( Info_BaalNamib_BROTHERHOOD);
 };	

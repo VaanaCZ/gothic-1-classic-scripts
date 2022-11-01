@@ -1,9 +1,9 @@
 instance ORG_841_Silas (Npc_Default)
-// hat den mittleren Organistor-Dress und Bogen3, weil er Attent‰ter ist
+// hat den mittleren Organistor-Dress und Bogen3, weil er Attent–¥ter ist
 {
 	//-------- primary data --------
 	
-	name =					"—ËÎ‡Ò";
+	name =					"–°–∏–ª–∞—Å";
 	Npctype =				Npctype_Main;
 	guild =					GIL_ORG;      
 	level =					15;

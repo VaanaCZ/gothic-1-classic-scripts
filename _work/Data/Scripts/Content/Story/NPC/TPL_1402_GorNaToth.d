@@ -1,7 +1,7 @@
 instance TPL_1402_GorNaToth (Npc_Default)
 {
 	//-------- primary data --------
-	name =							"√Ó Õ‡ “ÓÙ";
+	name =							"–ì–æ—Ä –ù–∞ –¢–æ—Ñ";
 	npctype =						npctype_Main;
 	guild =							GIL_TPL;
 	level =							21;
@@ -37,7 +37,7 @@ instance TPL_1402_GorNaToth (Npc_Default)
 	//-------- inventory --------					
 	//EquipItem (self, ItMw_2H_Sword_Light_04);
 	
-	CreateInvItem (self, ItMw_2H_Sword_Old_01); // HƒNDLER
+	CreateInvItem (self, ItMw_2H_Sword_Old_01); // H–îNDLER
 	CreateInvItem (self, ItMw_2H_Sword_Light_01);
 	CreateInvItem (self, ItMw_2H_Sword_Light_02);
 	

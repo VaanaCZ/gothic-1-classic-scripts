@@ -28,7 +28,7 @@ instance  GRD_271_ULBERT_KEY (C_INFO)
 	information		= GRD_271_ULBERT_KEY_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Что хранится на складе?"; 
+	description		= "Р§С‚Рѕ С…СЂР°РЅРёС‚СЃСЏ РЅР° СЃРєР»Р°РґРµ?"; 
 };
 
 FUNC int  GRD_271_ULBERT_KEY_Condition()
@@ -39,8 +39,8 @@ FUNC int  GRD_271_ULBERT_KEY_Condition()
 
 FUNC void  GRD_271_ULBERT_KEY_Info()
 {
-	AI_Output			(other, self,"GRD_271_ULBERT_KEY_Info_15_01"); //Что хранится на складе?
-	AI_Output			(self, other,"GRD_271_ULBERT_KEY_Info_07_02"); //Это тебя не касается.
+	AI_Output			(other, self,"GRD_271_ULBERT_KEY_Info_15_01"); //Р§С‚Рѕ С…СЂР°РЅРёС‚СЃСЏ РЅР° СЃРєР»Р°РґРµ?
+	AI_Output			(self, other,"GRD_271_ULBERT_KEY_Info_07_02"); //Р­С‚Рѕ С‚РµР±СЏ РЅРµ РєР°СЃР°РµС‚СЃСЏ.
 };  
 // ***************** Infos *****************************
 
@@ -51,7 +51,7 @@ instance  GRD_271_ULBERT_TRICK (C_INFO)
 	information		= GRD_271_ULBERT_TRICK_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "А ты здесь давно стоишь. Хочешь пить?"; 
+	description		= "Рђ С‚С‹ Р·РґРµСЃСЊ РґР°РІРЅРѕ СЃС‚РѕРёС€СЊ. РҐРѕС‡РµС€СЊ РїРёС‚СЊ?"; 
 };
 
 FUNC int  GRD_271_ULBERT_TRICK_Condition()
@@ -65,12 +65,12 @@ FUNC int  GRD_271_ULBERT_TRICK_Condition()
 
 FUNC void  GRD_271_ULBERT_TRICK_Info()
 {
-	AI_Output			(other, self,"GRD_271_ULBERT_TRICK_Info_15_01"); //А ты здесь давно стоишь. Хочешь пить?
-	AI_Output			(self, other,"GRD_271_ULBERT_TRICK_Info_07_02"); //Ты прав! Да, с удовольствием бы что-нибудь выпил. А у тебя есть с собой что-нибудь?
+	AI_Output			(other, self,"GRD_271_ULBERT_TRICK_Info_15_01"); //Рђ С‚С‹ Р·РґРµСЃСЊ РґР°РІРЅРѕ СЃС‚РѕРёС€СЊ. РҐРѕС‡РµС€СЊ РїРёС‚СЊ?
+	AI_Output			(self, other,"GRD_271_ULBERT_TRICK_Info_07_02"); //РўС‹ РїСЂР°РІ! Р”Р°, СЃ СѓРґРѕРІРѕР»СЊСЃС‚РІРёРµРј Р±С‹ С‡С‚Рѕ-РЅРёР±СѓРґСЊ РІС‹РїРёР». Рђ Сѓ С‚РµР±СЏ РµСЃС‚СЊ СЃ СЃРѕР±РѕР№ С‡С‚Рѕ-РЅРёР±СѓРґСЊ?
 
 	Log_CreateTopic		(CH2_StorageShed,	LOG_MISSION);
 	Log_SetTopicStatus	(CH2_StorageShed,	LOG_RUNNING);
-	B_LogEntry		(CH2_StorageShed,	"Стражник Ульберт сторожит ящики на складе в Старой шахте. Я должен найти ему какую-нибудь выпивку!"); 
+	B_LogEntry		(CH2_StorageShed,	"РЎС‚СЂР°Р¶РЅРёРє РЈР»СЊР±РµСЂС‚ СЃС‚РѕСЂРѕР¶РёС‚ СЏС‰РёРєРё РЅР° СЃРєР»Р°РґРµ РІ РЎС‚Р°СЂРѕР№ С€Р°С…С‚Рµ. РЇ РґРѕР»Р¶РµРЅ РЅР°Р№С‚Рё РµРјСѓ РєР°РєСѓСЋ-РЅРёР±СѓРґСЊ РІС‹РїРёРІРєСѓ!"); 
 };  
 
 // ***************** Infos *****************************
@@ -82,7 +82,7 @@ instance  GRD_271_ULBERT_DRINK (C_INFO)
 	information		= GRD_271_ULBERT_DRINK_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "(угостить)"; 
+	description		= "(СѓРіРѕСЃС‚РёС‚СЊ)"; 
 };
 
 FUNC int  GRD_271_ULBERT_DRINK_Condition()
@@ -97,8 +97,8 @@ FUNC int  GRD_271_ULBERT_DRINK_Condition()
 };
 FUNC void  GRD_271_ULBERT_DRINK_Info()
 {
-	AI_Output			(other, self,"GRD_271_ULBERT_DRINK_Info_15_01"); //Вот, выпей это за мое здоровье!
-	AI_Output			(self, other,"GRD_271_ULBERT_DRINK_Info_07_02"); //Спасибо.
+	AI_Output			(other, self,"GRD_271_ULBERT_DRINK_Info_15_01"); //Р’РѕС‚, РІС‹РїРµР№ СЌС‚Рѕ Р·Р° РјРѕРµ Р·РґРѕСЂРѕРІСЊРµ!
+	AI_Output			(self, other,"GRD_271_ULBERT_DRINK_Info_07_02"); //РЎРїР°СЃРёР±Рѕ.
 	
 	if 		(Npc_HasItems (hero, ItFobeer ))
 	{
@@ -139,7 +139,7 @@ instance  GRD_271_ULBERT_DRUNK (C_INFO)
 	information		= GRD_271_ULBERT_DRUNK_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Так ты можешь сказать, что хранится на складе?"; 
+	description		= "РўР°Рє С‚С‹ РјРѕР¶РµС€СЊ СЃРєР°Р·Р°С‚СЊ, С‡С‚Рѕ С…СЂР°РЅРёС‚СЃСЏ РЅР° СЃРєР»Р°РґРµ?"; 
 };
 
 FUNC int  GRD_271_ULBERT_DRUNK_Condition()
@@ -152,12 +152,12 @@ FUNC int  GRD_271_ULBERT_DRUNK_Condition()
 };
 FUNC void  GRD_271_ULBERT_DRUNK_Info()
 {
-	AI_Output			(other, self,"GRD_271_ULBERT_DRUNK_Info_15_01"); //Так ты можешь сказать, что хранится на складе?
-	AI_Output			(self, other,"GRD_271_ULBERT_DRUNK_Info_07_02"); //Ну, несколько сундуков с припасами. Только вот ключ от них все равно потерялся.
-	AI_Output			(other, self,"GRD_271_ULBERT_DRUNK_Info_15_03"); //Потерялся?
-	AI_Output			(self, other,"GRD_271_ULBERT_DRUNK_Info_07_04"); //Да. Думаю, без Алефа здесь не обошлось. Ему вообще не стоит доверять.
+	AI_Output			(other, self,"GRD_271_ULBERT_DRUNK_Info_15_01"); //РўР°Рє С‚С‹ РјРѕР¶РµС€СЊ СЃРєР°Р·Р°С‚СЊ, С‡С‚Рѕ С…СЂР°РЅРёС‚СЃСЏ РЅР° СЃРєР»Р°РґРµ?
+	AI_Output			(self, other,"GRD_271_ULBERT_DRUNK_Info_07_02"); //РќСѓ, РЅРµСЃРєРѕР»СЊРєРѕ СЃСѓРЅРґСѓРєРѕРІ СЃ РїСЂРёРїР°СЃР°РјРё. РўРѕР»СЊРєРѕ РІРѕС‚ РєР»СЋС‡ РѕС‚ РЅРёС… РІСЃРµ СЂР°РІРЅРѕ РїРѕС‚РµСЂСЏР»СЃСЏ.
+	AI_Output			(other, self,"GRD_271_ULBERT_DRUNK_Info_15_03"); //РџРѕС‚РµСЂСЏР»СЃСЏ?
+	AI_Output			(self, other,"GRD_271_ULBERT_DRUNK_Info_07_04"); //Р”Р°. Р”СѓРјР°СЋ, Р±РµР· РђР»РµС„Р° Р·РґРµСЃСЊ РЅРµ РѕР±РѕС€Р»РѕСЃСЊ. Р•РјСѓ РІРѕРѕР±С‰Рµ РЅРµ СЃС‚РѕРёС‚ РґРѕРІРµСЂСЏС‚СЊ.
 
-	B_LogEntry		(CH2_StorageShed,	"Когда я принес Ульберту выпивку, он рассказал мне, что потерял ключ от ящиков. Может быть, Алеф, рудокоп, что-то знает об этом?");
+	B_LogEntry		(CH2_StorageShed,	"РљРѕРіРґР° СЏ РїСЂРёРЅРµСЃ РЈР»СЊР±РµСЂС‚Сѓ РІС‹РїРёРІРєСѓ, РѕРЅ СЂР°СЃСЃРєР°Р·Р°Р» РјРЅРµ, С‡С‚Рѕ РїРѕС‚РµСЂСЏР» РєР»СЋС‡ РѕС‚ СЏС‰РёРєРѕРІ. РњРѕР¶РµС‚ Р±С‹С‚СЊ, РђР»РµС„, СЂСѓРґРѕРєРѕРї, С‡С‚Рѕ-С‚Рѕ Р·РЅР°РµС‚ РѕР± СЌС‚РѕРј?");
 };  
 // ***************** Infos *****************************
 instance  GRD_271_ULBERT_LOCK (C_INFO)
@@ -167,7 +167,7 @@ instance  GRD_271_ULBERT_LOCK (C_INFO)
 	information		= GRD_271_ULBERT_LOCK_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "(отвлечь Ульберта)"; 
+	description		= "(РѕС‚РІР»РµС‡СЊ РЈР»СЊР±РµСЂС‚Р°)"; 
 };
 
 FUNC int  GRD_271_ULBERT_LOCK_Condition()
@@ -180,10 +180,10 @@ FUNC int  GRD_271_ULBERT_LOCK_Condition()
 };
 FUNC void  GRD_271_ULBERT_LOCK_Info()
 {
-	AI_Output			(other, self,"GRD_271_ULBERT_LOCK_Info_15_01"); //Слушай, Ян и стражники сидят внизу и едят жареное мясо.
-	AI_Output			(self, other,"GRD_271_ULBERT_LOCK_Info_07_02"); //Что? Без меня? Ну, так я пойду и заберу свою долю.
+	AI_Output			(other, self,"GRD_271_ULBERT_LOCK_Info_15_01"); //РЎР»СѓС€Р°Р№, РЇРЅ Рё СЃС‚СЂР°Р¶РЅРёРєРё СЃРёРґСЏС‚ РІРЅРёР·Сѓ Рё РµРґСЏС‚ Р¶Р°СЂРµРЅРѕРµ РјСЏСЃРѕ.
+	AI_Output			(self, other,"GRD_271_ULBERT_LOCK_Info_07_02"); //Р§С‚Рѕ? Р‘РµР· РјРµРЅСЏ? РќСѓ, С‚Р°Рє СЏ РїРѕР№РґСѓ Рё Р·Р°Р±РµСЂСѓ СЃРІРѕСЋ РґРѕР»СЋ.
 	
-	B_LogEntry		(CH2_StorageShed,	"Я смог легко отвлечь Ульберта. Он ушел со склада!");
+	B_LogEntry		(CH2_StorageShed,	"РЇ СЃРјРѕРі Р»РµРіРєРѕ РѕС‚РІР»РµС‡СЊ РЈР»СЊР±РµСЂС‚Р°. РћРЅ СѓС€РµР» СЃРѕ СЃРєР»Р°РґР°!");
 
 	Npc_ExchangeRoutine	(self,	"away");
 	AI_StopProcessInfos	(self);
@@ -210,12 +210,12 @@ FUNC int  GRD_271_ULBERT_ANGRY_Condition()
 };
 FUNC void  GRD_271_ULBERT_ANGRY_Info()
 {
-	AI_Output			(self, other,"GRD_271_ULBERT_ANGRY_Info_07_01"); //Эй, ты, не было там никакого мяса!
-	AI_Output			(other, self,"GRD_271_ULBERT_ANGRY_Info_15_02"); //А... э... Наверное, я ошибся! Желаю хорошего дня!
+	AI_Output			(self, other,"GRD_271_ULBERT_ANGRY_Info_07_01"); //Р­Р№, С‚С‹, РЅРµ Р±С‹Р»Рѕ С‚Р°Рј РЅРёРєР°РєРѕРіРѕ РјСЏСЃР°!
+	AI_Output			(other, self,"GRD_271_ULBERT_ANGRY_Info_15_02"); //Рђ... СЌ... РќР°РІРµСЂРЅРѕРµ, СЏ РѕС€РёР±СЃСЏ! Р–РµР»Р°СЋ С…РѕСЂРѕС€РµРіРѕ РґРЅСЏ!
 
 	B_GiveXP			(XP_LureUlbertAway);
 	
-	B_LogEntry		(CH2_StorageShed,	"Я снова встретил Ульберта. Он до сих пор не понял, что я обманул его. Какой наивный солдат!");
+	B_LogEntry		(CH2_StorageShed,	"РЇ СЃРЅРѕРІР° РІСЃС‚СЂРµС‚РёР» РЈР»СЊР±РµСЂС‚Р°. РћРЅ РґРѕ СЃРёС… РїРѕСЂ РЅРµ РїРѕРЅСЏР», С‡С‚Рѕ СЏ РѕР±РјР°РЅСѓР» РµРіРѕ. РљР°РєРѕР№ РЅР°РёРІРЅС‹Р№ СЃРѕР»РґР°С‚!");
 	Log_SetTopicStatus	(CH2_StorageShed,	LOG_SUCCESS);
 
 	Npc_ExchangeRoutine	(self,	"start");

@@ -9,7 +9,7 @@ INSTANCE DIA_BaalTondral_MuteExit (C_INFO)
 	condition	= DIA_BaalTondral_MuteExit_Condition;
 	information	= DIA_BaalTondral_MuteExit_Info;
 	permanent	= 0;
-	description = "Ничего не говорить.";
+	description = "РќРёС‡РµРіРѕ РЅРµ РіРѕРІРѕСЂРёС‚СЊ.";
 };                       
 
 FUNC INT DIA_BaalTondral_MuteExit_Condition()
@@ -73,15 +73,15 @@ FUNC INT DIA_BaalTondral_FanaticTeacher_Condition()
 
 FUNC VOID DIA_BaalTondral_FanaticTeacher_Info()
 {
-	AI_Output (self, other,"DIA_BaalTondral_FanaticTeacher_13_00"); //Ты не похож на тех, кто служит Баронам.
-	AI_Output (self, other,"DIA_BaalTondral_FanaticTeacher_13_01"); //Ты больше похож на того, кто ищет что-то. Я думаю, ты ищешь истинную веру. Разве ты не чувствуешь в себе огромное желание познать смысл твоего бытия?
-	AI_Output (self, other,"DIA_BaalTondral_FanaticTeacher_13_02"); //Я вижу в тебе сомнение, посеянное словами прислужников Баронов. Они выдают их за истинную монету, но ты-то чувствуешь, что все это ложь!
-	AI_Output (self, other,"DIA_BaalTondral_FanaticTeacher_13_03"); //Они лгут, чтобы получить власть над теми, кто слаб духом. Но они не смогут одолеть твой дух своей ложью.
-	AI_Output (self, other,"DIA_BaalTondral_FanaticTeacher_13_04"); //Ты же чувствуешь это стремление к свободе? Чувствуешь, как крепнет оно в тебе? Оно направляет твой дух. Не мешай ему.
-	AI_Output (self, other,"DIA_BaalTondral_FanaticTeacher_13_05"); //Ты знаешь, что произойдет, если ты попытаешься его подавить? Ты будешь лгать самому себе! Перестань жить в тени собственных страхов. 
-	AI_Output (self, other,"DIA_BaalTondral_FanaticTeacher_13_06"); //Отбрось сомнения. Ты должен меня понять! Близится время пробуждения Спящего, и он освободит нас, а неверных жестоко покарает.
-	AI_Output (self, other,"DIA_BaalTondral_FanaticTeacher_13_07"); //Будут они смыты с лица земли гневом его, и души их будут истреблены. Не помогут им тогда ни раскаяние, ни горькие мольбы о прощении. Будет слишком поздно.
-	AI_Output (self, other,"DIA_BaalTondral_FanaticTeacher_13_08"); //За свои сомнения они заплатят ему жизнью.
+	AI_Output (self, other,"DIA_BaalTondral_FanaticTeacher_13_00"); //РўС‹ РЅРµ РїРѕС…РѕР¶ РЅР° С‚РµС…, РєС‚Рѕ СЃР»СѓР¶РёС‚ Р‘Р°СЂРѕРЅР°Рј.
+	AI_Output (self, other,"DIA_BaalTondral_FanaticTeacher_13_01"); //РўС‹ Р±РѕР»СЊС€Рµ РїРѕС…РѕР¶ РЅР° С‚РѕРіРѕ, РєС‚Рѕ РёС‰РµС‚ С‡С‚Рѕ-С‚Рѕ. РЇ РґСѓРјР°СЋ, С‚С‹ РёС‰РµС€СЊ РёСЃС‚РёРЅРЅСѓСЋ РІРµСЂСѓ. Р Р°Р·РІРµ С‚С‹ РЅРµ С‡СѓРІСЃС‚РІСѓРµС€СЊ РІ СЃРµР±Рµ РѕРіСЂРѕРјРЅРѕРµ Р¶РµР»Р°РЅРёРµ РїРѕР·РЅР°С‚СЊ СЃРјС‹СЃР» С‚РІРѕРµРіРѕ Р±С‹С‚РёСЏ?
+	AI_Output (self, other,"DIA_BaalTondral_FanaticTeacher_13_02"); //РЇ РІРёР¶Сѓ РІ С‚РµР±Рµ СЃРѕРјРЅРµРЅРёРµ, РїРѕСЃРµСЏРЅРЅРѕРµ СЃР»РѕРІР°РјРё РїСЂРёСЃР»СѓР¶РЅРёРєРѕРІ Р‘Р°СЂРѕРЅРѕРІ. РћРЅРё РІС‹РґР°СЋС‚ РёС… Р·Р° РёСЃС‚РёРЅРЅСѓСЋ РјРѕРЅРµС‚Сѓ, РЅРѕ С‚С‹-С‚Рѕ С‡СѓРІСЃС‚РІСѓРµС€СЊ, С‡С‚Рѕ РІСЃРµ СЌС‚Рѕ Р»РѕР¶СЊ!
+	AI_Output (self, other,"DIA_BaalTondral_FanaticTeacher_13_03"); //РћРЅРё Р»РіСѓС‚, С‡С‚РѕР±С‹ РїРѕР»СѓС‡РёС‚СЊ РІР»Р°СЃС‚СЊ РЅР°Рґ С‚РµРјРё, РєС‚Рѕ СЃР»Р°Р± РґСѓС…РѕРј. РќРѕ РѕРЅРё РЅРµ СЃРјРѕРіСѓС‚ РѕРґРѕР»РµС‚СЊ С‚РІРѕР№ РґСѓС… СЃРІРѕРµР№ Р»РѕР¶СЊСЋ.
+	AI_Output (self, other,"DIA_BaalTondral_FanaticTeacher_13_04"); //РўС‹ Р¶Рµ С‡СѓРІСЃС‚РІСѓРµС€СЊ СЌС‚Рѕ СЃС‚СЂРµРјР»РµРЅРёРµ Рє СЃРІРѕР±РѕРґРµ? Р§СѓРІСЃС‚РІСѓРµС€СЊ, РєР°Рє РєСЂРµРїРЅРµС‚ РѕРЅРѕ РІ С‚РµР±Рµ? РћРЅРѕ РЅР°РїСЂР°РІР»СЏРµС‚ С‚РІРѕР№ РґСѓС…. РќРµ РјРµС€Р°Р№ РµРјСѓ.
+	AI_Output (self, other,"DIA_BaalTondral_FanaticTeacher_13_05"); //РўС‹ Р·РЅР°РµС€СЊ, С‡С‚Рѕ РїСЂРѕРёР·РѕР№РґРµС‚, РµСЃР»Рё С‚С‹ РїРѕРїС‹С‚Р°РµС€СЊСЃСЏ РµРіРѕ РїРѕРґР°РІРёС‚СЊ? РўС‹ Р±СѓРґРµС€СЊ Р»РіР°С‚СЊ СЃР°РјРѕРјСѓ СЃРµР±Рµ! РџРµСЂРµСЃС‚Р°РЅСЊ Р¶РёС‚СЊ РІ С‚РµРЅРё СЃРѕР±СЃС‚РІРµРЅРЅС‹С… СЃС‚СЂР°С…РѕРІ. 
+	AI_Output (self, other,"DIA_BaalTondral_FanaticTeacher_13_06"); //РћС‚Р±СЂРѕСЃСЊ СЃРѕРјРЅРµРЅРёСЏ. РўС‹ РґРѕР»Р¶РµРЅ РјРµРЅСЏ РїРѕРЅСЏС‚СЊ! Р‘Р»РёР·РёС‚СЃСЏ РІСЂРµРјСЏ РїСЂРѕР±СѓР¶РґРµРЅРёСЏ РЎРїСЏС‰РµРіРѕ, Рё РѕРЅ РѕСЃРІРѕР±РѕРґРёС‚ РЅР°СЃ, Р° РЅРµРІРµСЂРЅС‹С… Р¶РµСЃС‚РѕРєРѕ РїРѕРєР°СЂР°РµС‚.
+	AI_Output (self, other,"DIA_BaalTondral_FanaticTeacher_13_07"); //Р‘СѓРґСѓС‚ РѕРЅРё СЃРјС‹С‚С‹ СЃ Р»РёС†Р° Р·РµРјР»Рё РіРЅРµРІРѕРј РµРіРѕ, Рё РґСѓС€Рё РёС… Р±СѓРґСѓС‚ РёСЃС‚СЂРµР±Р»РµРЅС‹. РќРµ РїРѕРјРѕРіСѓС‚ РёРј С‚РѕРіРґР° РЅРё СЂР°СЃРєР°СЏРЅРёРµ, РЅРё РіРѕСЂСЊРєРёРµ РјРѕР»СЊР±С‹ Рѕ РїСЂРѕС‰РµРЅРёРё. Р‘СѓРґРµС‚ СЃР»РёС€РєРѕРј РїРѕР·РґРЅРѕ.
+	AI_Output (self, other,"DIA_BaalTondral_FanaticTeacher_13_08"); //Р—Р° СЃРІРѕРё СЃРѕРјРЅРµРЅРёСЏ РѕРЅРё Р·Р°РїР»Р°С‚СЏС‚ РµРјСѓ Р¶РёР·РЅСЊСЋ.
 };
 
 // **************************************************
@@ -95,7 +95,7 @@ INSTANCE DIA_BaalTondral_YouTalked (C_INFO)
 	condition	= DIA_BaalTondral_YouTalked_Condition;
 	information	= DIA_BaalTondral_YouTalked_Info;
 	permanent	= 0;
-	description = "Ты заговорил со мной. Значит, теперь я смогу обращаться к тебе?";
+	description = "РўС‹ Р·Р°РіРѕРІРѕСЂРёР» СЃРѕ РјРЅРѕР№. Р—РЅР°С‡РёС‚, С‚РµРїРµСЂСЊ СЏ СЃРјРѕРіСѓ РѕР±СЂР°С‰Р°С‚СЊСЃСЏ Рє С‚РµР±Рµ?";
 };                       
 
 FUNC INT DIA_BaalTondral_YouTalked_Condition()
@@ -105,14 +105,14 @@ FUNC INT DIA_BaalTondral_YouTalked_Condition()
 
 FUNC VOID DIA_BaalTondral_YouTalked_Info()
 {
-	AI_Output (other, self,"DIA_BaalTondral_YouTalked_15_00"); //Эй! Ты заговорил со мной. Значит, теперь я смогу обращаться к тебе?
-	AI_Output (self, other,"DIA_BaalTondral_YouTalked_13_01"); //Я вижу, ты уже ознакомился с нашими правилами. Это похвально.
-	AI_Output (self, other,"DIA_BaalTondral_YouTalked_13_02"); //В тебе сокрыта великая духовная сила! Я чувствую это. Возможно, ты очень скоро будешь принят в наше Братство.
-	AI_Output (self, other,"DIA_BaalTondral_YouTalked_13_03"); //Я заговорил с тобой, дабы дать тебе шанс доказать нам свою преданность.
+	AI_Output (other, self,"DIA_BaalTondral_YouTalked_15_00"); //Р­Р№! РўС‹ Р·Р°РіРѕРІРѕСЂРёР» СЃРѕ РјРЅРѕР№. Р—РЅР°С‡РёС‚, С‚РµРїРµСЂСЊ СЏ СЃРјРѕРіСѓ РѕР±СЂР°С‰Р°С‚СЊСЃСЏ Рє С‚РµР±Рµ?
+	AI_Output (self, other,"DIA_BaalTondral_YouTalked_13_01"); //РЇ РІРёР¶Сѓ, С‚С‹ СѓР¶Рµ РѕР·РЅР°РєРѕРјРёР»СЃСЏ СЃ РЅР°С€РёРјРё РїСЂР°РІРёР»Р°РјРё. Р­С‚Рѕ РїРѕС…РІР°Р»СЊРЅРѕ.
+	AI_Output (self, other,"DIA_BaalTondral_YouTalked_13_02"); //Р’ С‚РµР±Рµ СЃРѕРєСЂС‹С‚Р° РІРµР»РёРєР°СЏ РґСѓС…РѕРІРЅР°СЏ СЃРёР»Р°! РЇ С‡СѓРІСЃС‚РІСѓСЋ СЌС‚Рѕ. Р’РѕР·РјРѕР¶РЅРѕ, С‚С‹ РѕС‡РµРЅСЊ СЃРєРѕСЂРѕ Р±СѓРґРµС€СЊ РїСЂРёРЅСЏС‚ РІ РЅР°С€Рµ Р‘СЂР°С‚СЃС‚РІРѕ.
+	AI_Output (self, other,"DIA_BaalTondral_YouTalked_13_03"); //РЇ Р·Р°РіРѕРІРѕСЂРёР» СЃ С‚РѕР±РѕР№, РґР°Р±С‹ РґР°С‚СЊ С‚РµР±Рµ С€Р°РЅСЃ РґРѕРєР°Р·Р°С‚СЊ РЅР°Рј СЃРІРѕСЋ РїСЂРµРґР°РЅРЅРѕСЃС‚СЊ.
 };
 
 // **************************************************
-// 				Loyalitдt beweisen
+// 				LoyalitРґt beweisen
 // **************************************************
 	var int BaalTondral_GetNewGuy;
 // **************************************************
@@ -124,7 +124,7 @@ INSTANCE DIA_BaalTondral_Loyality (C_INFO)
 	condition	= DIA_BaalTondral_Loyality_Condition;
 	information	= DIA_BaalTondral_Loyality_Info;
 	permanent	= 0;
-	description = "Как я смогу доказать свою преданность?";
+	description = "РљР°Рє СЏ СЃРјРѕРіСѓ РґРѕРєР°Р·Р°С‚СЊ СЃРІРѕСЋ РїСЂРµРґР°РЅРЅРѕСЃС‚СЊ?";
 };                       
 
 FUNC INT DIA_BaalTondral_Loyality_Condition()
@@ -137,13 +137,13 @@ FUNC INT DIA_BaalTondral_Loyality_Condition()
 
 FUNC VOID DIA_BaalTondral_Loyality_Info()
 {
-	AI_Output (other, self,"DIA_BaalTondral_Loyality_15_00"); //Как я смогу доказать свою преданность?
-	AI_Output (self, other,"DIA_BaalTondral_Loyality_13_01"); //Наше Братство нуждается в новых последователях, принявших учение Спящего.
-	AI_Output (self, other,"DIA_BaalTondral_Loyality_13_02"); //Если ты убедишь одного из неверных присоединиться к нам, ты покажешь, что твои намерения стать нашим братом в истинной вере, достаточно серьезны.
+	AI_Output (other, self,"DIA_BaalTondral_Loyality_15_00"); //РљР°Рє СЏ СЃРјРѕРіСѓ РґРѕРєР°Р·Р°С‚СЊ СЃРІРѕСЋ РїСЂРµРґР°РЅРЅРѕСЃС‚СЊ?
+	AI_Output (self, other,"DIA_BaalTondral_Loyality_13_01"); //РќР°С€Рµ Р‘СЂР°С‚СЃС‚РІРѕ РЅСѓР¶РґР°РµС‚СЃСЏ РІ РЅРѕРІС‹С… РїРѕСЃР»РµРґРѕРІР°С‚РµР»СЏС…, РїСЂРёРЅСЏРІС€РёС… СѓС‡РµРЅРёРµ РЎРїСЏС‰РµРіРѕ.
+	AI_Output (self, other,"DIA_BaalTondral_Loyality_13_02"); //Р•СЃР»Рё С‚С‹ СѓР±РµРґРёС€СЊ РѕРґРЅРѕРіРѕ РёР· РЅРµРІРµСЂРЅС‹С… РїСЂРёСЃРѕРµРґРёРЅРёС‚СЊСЃСЏ Рє РЅР°Рј, С‚С‹ РїРѕРєР°Р¶РµС€СЊ, С‡С‚Рѕ С‚РІРѕРё РЅР°РјРµСЂРµРЅРёСЏ СЃС‚Р°С‚СЊ РЅР°С€РёРј Р±СЂР°С‚РѕРј РІ РёСЃС‚РёРЅРЅРѕР№ РІРµСЂРµ, РґРѕСЃС‚Р°С‚РѕС‡РЅРѕ СЃРµСЂСЊРµР·РЅС‹.
 
 	Log_CreateTopic		(CH1_RecruitDusty,	LOG_MISSION);
 	Log_SetTopicStatus	(CH1_RecruitDusty,	LOG_RUNNING);
-	B_LogEntry			(CH1_RecruitDusty,	"Идол Тондрал послал меня в Старый лагерь, чтобы найти человека, который согласится присоединиться к Братству. Это отличная возможность завоевать его расположение!");
+	B_LogEntry			(CH1_RecruitDusty,	"РРґРѕР» РўРѕРЅРґСЂР°Р» РїРѕСЃР»Р°Р» РјРµРЅСЏ РІ РЎС‚Р°СЂС‹Р№ Р»Р°РіРµСЂСЊ, С‡С‚РѕР±С‹ РЅР°Р№С‚Рё С‡РµР»РѕРІРµРєР°, РєРѕС‚РѕСЂС‹Р№ СЃРѕРіР»Р°СЃРёС‚СЃСЏ РїСЂРёСЃРѕРµРґРёРЅРёС‚СЊСЃСЏ Рє Р‘СЂР°С‚СЃС‚РІСѓ. Р­С‚Рѕ РѕС‚Р»РёС‡РЅР°СЏ РІРѕР·РјРѕР¶РЅРѕСЃС‚СЊ Р·Р°РІРѕРµРІР°С‚СЊ РµРіРѕ СЂР°СЃРїРѕР»РѕР¶РµРЅРёРµ!");
 
 	BaalTondral_GetNewGuy = LOG_RUNNING;
 };
@@ -159,7 +159,7 @@ INSTANCE DIA_BaalTondral_NewMember (C_INFO)
 	condition	= DIA_BaalTondral_NewMember_Condition;
 	information	= DIA_BaalTondral_NewMember_Info;
 	permanent	= 1;
-	description = "А где я смогу найти такого человека?";
+	description = "Рђ РіРґРµ СЏ СЃРјРѕРіСѓ РЅР°Р№С‚Рё С‚Р°РєРѕРіРѕ С‡РµР»РѕРІРµРєР°?";
 };                       
 
 FUNC INT DIA_BaalTondral_NewMember_Condition()
@@ -172,9 +172,9 @@ FUNC INT DIA_BaalTondral_NewMember_Condition()
 
 FUNC VOID DIA_BaalTondral_NewMember_Info()
 {
-	AI_Output (other, self,"DIA_BaalTondral_NewMember_15_00"); //А где я смогу найти такого человека?
-	AI_Output (self, other,"DIA_BaalTondral_NewMember_13_01"); //В Старом лагере ты сможешь найти тех, кто согласится принять нашу веру. Те, кто там живет, устали ото лжи и страха. Они не откажутся от дружеской поддержки.
-	AI_Output (self, other,"DIA_BaalTondral_NewMember_13_02"); //В Новом лагере люди не смогут воспринять наше духовное учение. Я думаю, там ты не сможешь никого убедить.
+	AI_Output (other, self,"DIA_BaalTondral_NewMember_15_00"); //Рђ РіРґРµ СЏ СЃРјРѕРіСѓ РЅР°Р№С‚Рё С‚Р°РєРѕРіРѕ С‡РµР»РѕРІРµРєР°?
+	AI_Output (self, other,"DIA_BaalTondral_NewMember_13_01"); //Р’ РЎС‚Р°СЂРѕРј Р»Р°РіРµСЂРµ С‚С‹ СЃРјРѕР¶РµС€СЊ РЅР°Р№С‚Рё С‚РµС…, РєС‚Рѕ СЃРѕРіР»Р°СЃРёС‚СЃСЏ РїСЂРёРЅСЏС‚СЊ РЅР°С€Сѓ РІРµСЂСѓ. РўРµ, РєС‚Рѕ С‚Р°Рј Р¶РёРІРµС‚, СѓСЃС‚Р°Р»Рё РѕС‚Рѕ Р»Р¶Рё Рё СЃС‚СЂР°С…Р°. РћРЅРё РЅРµ РѕС‚РєР°Р¶СѓС‚СЃСЏ РѕС‚ РґСЂСѓР¶РµСЃРєРѕР№ РїРѕРґРґРµСЂР¶РєРё.
+	AI_Output (self, other,"DIA_BaalTondral_NewMember_13_02"); //Р’ РќРѕРІРѕРј Р»Р°РіРµСЂРµ Р»СЋРґРё РЅРµ СЃРјРѕРіСѓС‚ РІРѕСЃРїСЂРёРЅСЏС‚СЊ РЅР°С€Рµ РґСѓС…РѕРІРЅРѕРµ СѓС‡РµРЅРёРµ. РЇ РґСѓРјР°СЋ, С‚Р°Рј С‚С‹ РЅРµ СЃРјРѕР¶РµС€СЊ РЅРёРєРѕРіРѕ СѓР±РµРґРёС‚СЊ.
 };
 
 // **************************************************
@@ -188,7 +188,7 @@ INSTANCE DIA_BaalTondral_NewMember2 (C_INFO)
 	condition	= DIA_BaalTondral_NewMember2_Condition;
 	information	= DIA_BaalTondral_NewMember2_Info;
 	permanent	= 0;
-	description = "Зачем Братству новые люди?";
+	description = "Р—Р°С‡РµРј Р‘СЂР°С‚СЃС‚РІСѓ РЅРѕРІС‹Рµ Р»СЋРґРё?";
 };                       
 
 FUNC INT DIA_BaalTondral_NewMember2_Condition()
@@ -201,11 +201,11 @@ FUNC INT DIA_BaalTondral_NewMember2_Condition()
 
 FUNC VOID DIA_BaalTondral_NewMember2_Info()
 {
-	AI_Output (other, self,"DIA_BaalTondral_NewMember2_15_00"); //Зачем Братству новые люди?
-	AI_Output (self, other,"DIA_BaalTondral_NewMember2_13_01"); //В одном из видений Спящий передал нашему Учителю послание.
-	AI_Output (self, other,"DIA_BaalTondral_NewMember2_13_02"); //Чтобы он пробудился и указал нам истинный путь, ему нужна наша помощь, наша духовная сила.
-	AI_Output (self, other,"DIA_BaalTondral_NewMember2_13_03"); //Поэтому мы готовим великую Церемонию, во время которой мы объединим наши мысли. Для этого нам потребуется очень много людей.
-	AI_Output (self, other,"DIA_BaalTondral_NewMember2_13_04"); //Если ты желаешь узнать больше, иди на площадь перед Храмом. Только не нарушай покой нашего Учителя.
+	AI_Output (other, self,"DIA_BaalTondral_NewMember2_15_00"); //Р—Р°С‡РµРј Р‘СЂР°С‚СЃС‚РІСѓ РЅРѕРІС‹Рµ Р»СЋРґРё?
+	AI_Output (self, other,"DIA_BaalTondral_NewMember2_13_01"); //Р’ РѕРґРЅРѕРј РёР· РІРёРґРµРЅРёР№ РЎРїСЏС‰РёР№ РїРµСЂРµРґР°Р» РЅР°С€РµРјСѓ РЈС‡РёС‚РµР»СЋ РїРѕСЃР»Р°РЅРёРµ.
+	AI_Output (self, other,"DIA_BaalTondral_NewMember2_13_02"); //Р§С‚РѕР±С‹ РѕРЅ РїСЂРѕР±СѓРґРёР»СЃСЏ Рё СѓРєР°Р·Р°Р» РЅР°Рј РёСЃС‚РёРЅРЅС‹Р№ РїСѓС‚СЊ, РµРјСѓ РЅСѓР¶РЅР° РЅР°С€Р° РїРѕРјРѕС‰СЊ, РЅР°С€Р° РґСѓС…РѕРІРЅР°СЏ СЃРёР»Р°.
+	AI_Output (self, other,"DIA_BaalTondral_NewMember2_13_03"); //РџРѕСЌС‚РѕРјСѓ РјС‹ РіРѕС‚РѕРІРёРј РІРµР»РёРєСѓСЋ Р¦РµСЂРµРјРѕРЅРёСЋ, РІРѕ РІСЂРµРјСЏ РєРѕС‚РѕСЂРѕР№ РјС‹ РѕР±СЉРµРґРёРЅРёРј РЅР°С€Рё РјС‹СЃР»Рё. Р”Р»СЏ СЌС‚РѕРіРѕ РЅР°Рј РїРѕС‚СЂРµР±СѓРµС‚СЃСЏ РѕС‡РµРЅСЊ РјРЅРѕРіРѕ Р»СЋРґРµР№.
+	AI_Output (self, other,"DIA_BaalTondral_NewMember2_13_04"); //Р•СЃР»Рё С‚С‹ Р¶РµР»Р°РµС€СЊ СѓР·РЅР°С‚СЊ Р±РѕР»СЊС€Рµ, РёРґРё РЅР° РїР»РѕС‰Р°РґСЊ РїРµСЂРµРґ РҐСЂР°РјРѕРј. РўРѕР»СЊРєРѕ РЅРµ РЅР°СЂСѓС€Р°Р№ РїРѕРєРѕР№ РЅР°С€РµРіРѕ РЈС‡РёС‚РµР»СЏ.
 };
 
 // **************************************************
@@ -219,7 +219,7 @@ INSTANCE DIA_BaalTondral_DustySuccess (C_INFO)
 	condition	= DIA_BaalTondral_DustySuccess_Condition;
 	information	= DIA_BaalTondral_DustySuccess_Info;
 	permanent	= 0;
-	description = "Cо мной пришел человек, который хочет познакомиться с тобой.";
+	description = "CРѕ РјРЅРѕР№ РїСЂРёС€РµР» С‡РµР»РѕРІРµРє, РєРѕС‚РѕСЂС‹Р№ С…РѕС‡РµС‚ РїРѕР·РЅР°РєРѕРјРёС‚СЊСЃСЏ СЃ С‚РѕР±РѕР№.";
 };                       
 
 FUNC INT DIA_BaalTondral_DustySuccess_Condition()
@@ -235,28 +235,28 @@ FUNC VOID DIA_BaalTondral_DustySuccess_Info()
 {
 	var C_NPC dusty; dusty = Hlp_GetNpc(Vlk_524_Dusty);
 	
-	AI_Output			(other, self,"DIA_BaalTondral_DustySuccess_15_00"); //Учитель, со мной пришел человек, который хочет познакомиться с тобой.
-	AI_Output			(self, other,"DIA_BaalTondral_DustySuccess_13_01"); //Кто это с тобой? Он достоин? 
-	AI_Output			(other, self,"DIA_BaalTondral_DustySuccess_15_02"); //Ему нужно духовное наставление, Учитель.
-	AI_Output			(self, other,"DIA_BaalTondral_DustySuccess_13_03"); //Хорошо. С этого дня он будет моим учеником.
+	AI_Output			(other, self,"DIA_BaalTondral_DustySuccess_15_00"); //РЈС‡РёС‚РµР»СЊ, СЃРѕ РјРЅРѕР№ РїСЂРёС€РµР» С‡РµР»РѕРІРµРє, РєРѕС‚РѕСЂС‹Р№ С…РѕС‡РµС‚ РїРѕР·РЅР°РєРѕРјРёС‚СЊСЃСЏ СЃ С‚РѕР±РѕР№.
+	AI_Output			(self, other,"DIA_BaalTondral_DustySuccess_13_01"); //РљС‚Рѕ СЌС‚Рѕ СЃ С‚РѕР±РѕР№? РћРЅ РґРѕСЃС‚РѕРёРЅ? 
+	AI_Output			(other, self,"DIA_BaalTondral_DustySuccess_15_02"); //Р•РјСѓ РЅСѓР¶РЅРѕ РґСѓС…РѕРІРЅРѕРµ РЅР°СЃС‚Р°РІР»РµРЅРёРµ, РЈС‡РёС‚РµР»СЊ.
+	AI_Output			(self, other,"DIA_BaalTondral_DustySuccess_13_03"); //РҐРѕСЂРѕС€Рѕ. РЎ СЌС‚РѕРіРѕ РґРЅСЏ РѕРЅ Р±СѓРґРµС‚ РјРѕРёРј СѓС‡РµРЅРёРєРѕРј.
 	//------------------------------------------------------------------	
 	AI_TurnToNpc		(self, dusty);
 	AI_TurnToNpc		(dusty,other);
-	AI_Output			(self, NULL,"DIA_BaalTondral_DustySuccess_13_04"); //Ты должен будешь приходить ко мне каждый день и внимать моим словам. Я еще могу спасти твою душу.
+	AI_Output			(self, NULL,"DIA_BaalTondral_DustySuccess_13_04"); //РўС‹ РґРѕР»Р¶РµРЅ Р±СѓРґРµС€СЊ РїСЂРёС…РѕРґРёС‚СЊ РєРѕ РјРЅРµ РєР°Р¶РґС‹Р№ РґРµРЅСЊ Рё РІРЅРёРјР°С‚СЊ РјРѕРёРј СЃР»РѕРІР°Рј. РЇ РµС‰Рµ РјРѕРіСѓ СЃРїР°СЃС‚Рё С‚РІРѕСЋ РґСѓС€Сѓ.
 
-	//AI_Output			(dusty,other,"DIA_BaalTondral_DustySuccess_03_05"); //HeiЯt das, ich bin dabei - einfach so?
+	//AI_Output			(dusty,other,"DIA_BaalTondral_DustySuccess_03_05"); //HeiРЇt das, ich bin dabei - einfach so?
 	//AI_TurnToNpc		(other,dusty);
 	//AI_Output			(other,NULL,"DIA_BaalTondral_DustySuccess_15_06"); //Sieht so aus. Tu einfach, was der Meister dir sagt.
 
-	//---- Dusty vom SC lцsen ----
+	//---- Dusty vom SC lС†sen ----
 	dusty.aivar[AIV_PARTYMEMBER] = FALSE;
-	dusty.flags = 0;	// Immortal lцschen
+	dusty.flags = 0;	// Immortal lС†schen
 	dusty.guild = GIL_NOV;
 	Npc_SetTrueGuild	(dusty, GIL_NOV);
 	B_ExchangeRoutine	(Vlk_524_Dusty,"PREPARERITUAL");
 	
 	BaalTondral_GetNewGuy = LOG_SUCCESS;
-	B_LogEntry			(CH1_RecruitDusty,	"Дасти стал учеником Идола Тондрала. Я выполнил свое задание.");
+	B_LogEntry			(CH1_RecruitDusty,	"Р”Р°СЃС‚Рё СЃС‚Р°Р» СѓС‡РµРЅРёРєРѕРј РРґРѕР»Р° РўРѕРЅРґСЂР°Р»Р°. РЇ РІС‹РїРѕР»РЅРёР» СЃРІРѕРµ Р·Р°РґР°РЅРёРµ.");
 	Log_SetTopicStatus	(CH1_RecruitDusty,	LOG_SUCCESS);
 	B_GiveXP			(XP_DeliveredDusty);
 };
@@ -272,7 +272,7 @@ INSTANCE DIA_BaalTondral_SendToKalom (C_INFO)
 	condition	= DIA_BaalTondral_SendToKalom_Condition;
 	information	= DIA_BaalTondral_SendToKalom_Info;
 	permanent	= 0;
-	description = "Учитель! Я хочу вступить в Братство. Помоги мне.";
+	description = "РЈС‡РёС‚РµР»СЊ! РЇ С…РѕС‡Сѓ РІСЃС‚СѓРїРёС‚СЊ РІ Р‘СЂР°С‚СЃС‚РІРѕ. РџРѕРјРѕРіРё РјРЅРµ.";
 };                       
 
 FUNC INT DIA_BaalTondral_SendToKalom_Condition()
@@ -285,11 +285,11 @@ FUNC INT DIA_BaalTondral_SendToKalom_Condition()
 
 FUNC VOID DIA_BaalTondral_SendToKalom_Info()
 {
-	AI_Output 		(other, self,"DIA_BaalTondral_SendToKalom_15_00"); //Учитель! Я хочу вступить в Братство. Помоги мне.
+	AI_Output 		(other, self,"DIA_BaalTondral_SendToKalom_15_00"); //РЈС‡РёС‚РµР»СЊ! РЇ С…РѕС‡Сѓ РІСЃС‚СѓРїРёС‚СЊ РІ Р‘СЂР°С‚СЃС‚РІРѕ. РџРѕРјРѕРіРё РјРЅРµ.
 	AI_TurnToNpc	(self, other);
-	AI_Output 		(self, other,"DIA_BaalTondral_SendToKalom_13_01"); //Ты доказал нам свою преданность. Иди к Кор Галому. Он даст тебе одеяние послушника.
+	AI_Output 		(self, other,"DIA_BaalTondral_SendToKalom_13_01"); //РўС‹ РґРѕРєР°Р·Р°Р» РЅР°Рј СЃРІРѕСЋ РїСЂРµРґР°РЅРЅРѕСЃС‚СЊ. РРґРё Рє РљРѕСЂ Р“Р°Р»РѕРјСѓ. РћРЅ РґР°СЃС‚ С‚РµР±Рµ РѕРґРµСЏРЅРёРµ РїРѕСЃР»СѓС€РЅРёРєР°.
 
-	B_LogEntry(CH1_JoinPsi,	"Идол Тондрал считает меня достойным носить одежду послушника!");
+	B_LogEntry(CH1_JoinPsi,	"РРґРѕР» РўРѕРЅРґСЂР°Р» СЃС‡РёС‚Р°РµС‚ РјРµРЅСЏ РґРѕСЃС‚РѕР№РЅС‹Рј РЅРѕСЃРёС‚СЊ РѕРґРµР¶РґСѓ РїРѕСЃР»СѓС€РЅРёРєР°!");
 };
 
 

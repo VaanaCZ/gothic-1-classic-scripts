@@ -1,7 +1,7 @@
 instance TPL_1439_GorNaDrak (Npc_Default)
 {
 	//-------- primary data --------
-	name =							"√Ó Õ‡ ƒ‡Í";
+	name =							"–ì–æ—Ä –ù–∞ –î—Ä–∞–∫";
 	npctype =						npctype_Main;
 	guild =							GIL_TPL;
 	level =							21;
@@ -43,7 +43,7 @@ instance TPL_1439_GorNaDrak (Npc_Default)
 	daily_routine = Rtn_start_1439;
 };
 
-FUNC VOID Rtn_start_1439 () //ST-OM-Pendler (MC-J‰ger)
+FUNC VOID Rtn_start_1439 () //ST-OM-Pendler (MC-J–¥ger)
 {
     TA_Smalltalk	(06,00,14,00,"PSI_WALK_05");
     TA_Smalltalk	(14,00,06,00,"OW_OM_ENTRANCE02");

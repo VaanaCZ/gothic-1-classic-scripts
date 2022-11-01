@@ -14,7 +14,7 @@ INSTANCE Info_Mine_Grd_7_EXIT(C_INFO)
 	condition	= Info_Mine_Grd_7_EXIT_Condition;
 	information	= Info_Mine_Grd_7_EXIT_Info;
 	permanent	= 1;
-	description = "ЗАКОНЧИТЬ РАЗГОВОР";
+	description = "Р—РђРљРћРќР§РРўР¬ Р РђР—Р“РћР’РћР ";
 };                       
 
 FUNC INT Info_Mine_Grd_7_EXIT_Condition()
@@ -37,7 +37,7 @@ INSTANCE Info_Mine_Grd_7_Mine (C_INFO) // E1
 	condition	= Info_Mine_Grd_7_Mine_Condition;
 	information	= Info_Mine_Grd_7_Mine_Info;
 	permanent	= 1;
-	description = "Расскажи мне о шахте.";
+	description = "Р Р°СЃСЃРєР°Р¶Рё РјРЅРµ Рѕ С€Р°С…С‚Рµ.";
 };                       
 
 FUNC INT Info_Mine_Grd_7_Mine_Condition()
@@ -50,8 +50,8 @@ FUNC INT Info_Mine_Grd_7_Mine_Condition()
 
 FUNC VOID Info_Mine_Grd_7_Mine_Info()
 {
-	AI_Output(other,self,"Info_Mine_Grd_7_Mine_15_00"); //Расскажи мне о шахте.
-	AI_Output(self,other,"Info_Mine_Grd_7_Mine_07_01"); //А что тут рассказывать? Рудокопы добывают руду, а мы их защищаем от ползунов.
+	AI_Output(other,self,"Info_Mine_Grd_7_Mine_15_00"); //Р Р°СЃСЃРєР°Р¶Рё РјРЅРµ Рѕ С€Р°С…С‚Рµ.
+	AI_Output(self,other,"Info_Mine_Grd_7_Mine_07_01"); //Рђ С‡С‚Рѕ С‚СѓС‚ СЂР°СЃСЃРєР°Р·С‹РІР°С‚СЊ? Р СѓРґРѕРєРѕРїС‹ РґРѕР±С‹РІР°СЋС‚ СЂСѓРґСѓ, Р° РјС‹ РёС… Р·Р°С‰РёС‰Р°РµРј РѕС‚ РїРѕР»Р·СѓРЅРѕРІ.
 	
 };
 
@@ -65,7 +65,7 @@ INSTANCE Info_Mine_Grd_7_WichtigePersonen(C_INFO)
 	condition	= Info_Mine_Grd_7_WichtigePersonen_Condition;
 	information	= Info_Mine_Grd_7_WichtigePersonen_Info;
 	permanent	= 1;
-	description = "Кто здесь командует?";
+	description = "РљС‚Рѕ Р·РґРµСЃСЊ РєРѕРјР°РЅРґСѓРµС‚?";
 };                       
 
 FUNC INT Info_Mine_Grd_7_WichtigePersonen_Condition()
@@ -78,8 +78,8 @@ FUNC INT Info_Mine_Grd_7_WichtigePersonen_Condition()
 
 FUNC VOID Info_Mine_Grd_7_WichtigePersonen_Info()
 {
-	AI_Output(other,self,"Info_Mine_Grd_7_WichtigePersonen_15_00"); //Кто здесь командует?
-	AI_Output(self,other,"Info_Mine_Grd_7_WichtigePersonen_07_01"); //Ян и Асгхан. Обращайся к ним, если тебе что-нибудь понадобится.
+	AI_Output(other,self,"Info_Mine_Grd_7_WichtigePersonen_15_00"); //РљС‚Рѕ Р·РґРµСЃСЊ РєРѕРјР°РЅРґСѓРµС‚?
+	AI_Output(self,other,"Info_Mine_Grd_7_WichtigePersonen_07_01"); //РЇРЅ Рё РђСЃРіС…Р°РЅ. РћР±СЂР°С‰Р°Р№СЃСЏ Рє РЅРёРј, РµСЃР»Рё С‚РµР±Рµ С‡С‚Рѕ-РЅРёР±СѓРґСЊ РїРѕРЅР°РґРѕР±РёС‚СЃСЏ.
 	
 };
 
@@ -93,7 +93,7 @@ INSTANCE Info_Mine_Grd_7_Minecrawler(C_INFO)
 	condition	= Info_Mine_Grd_7_Minecrawler_Condition;
 	information	= Info_Mine_Grd_7_Minecrawler_Info;
 	permanent	= 1;
-	description = "Что ты знаешь о ползунах?";
+	description = "Р§С‚Рѕ С‚С‹ Р·РЅР°РµС€СЊ Рѕ РїРѕР»Р·СѓРЅР°С…?";
 };                       
 
 FUNC INT Info_Mine_Grd_7_Minecrawler_Condition()
@@ -106,8 +106,8 @@ FUNC INT Info_Mine_Grd_7_Minecrawler_Condition()
 
 FUNC VOID Info_Mine_Grd_7_Minecrawler_Info()
 {
-	AI_Output(other,self,"Info_Mine_Grd_7_Minecrawler_15_00"); //Что ты знаешь о ползунах?
-	AI_Output(self,other,"Info_Mine_Grd_7_Minecrawler_07_01"); //Вот что я думаю, их всех нужно уничтожить как можно быстрее.
+	AI_Output(other,self,"Info_Mine_Grd_7_Minecrawler_15_00"); //Р§С‚Рѕ С‚С‹ Р·РЅР°РµС€СЊ Рѕ РїРѕР»Р·СѓРЅР°С…?
+	AI_Output(self,other,"Info_Mine_Grd_7_Minecrawler_07_01"); //Р’РѕС‚ С‡С‚Рѕ СЏ РґСѓРјР°СЋ, РёС… РІСЃРµС… РЅСѓР¶РЅРѕ СѓРЅРёС‡С‚РѕР¶РёС‚СЊ РєР°Рє РјРѕР¶РЅРѕ Р±С‹СЃС‚СЂРµРµ.
 	
 	
 };
@@ -121,7 +121,7 @@ INSTANCE Info_Mine_Grd_7_DieLage(C_INFO) // E1
 	condition	= Info_Mine_Grd_7_DieLage_Condition;
 	information	= Info_Mine_Grd_7_DieLage_Info;
 	permanent	= 1;
-	description = "Как дела?";
+	description = "РљР°Рє РґРµР»Р°?";
 };                       
 
 FUNC INT Info_Mine_Grd_7_DieLage_Condition()
@@ -134,8 +134,8 @@ FUNC INT Info_Mine_Grd_7_DieLage_Condition()
 
 FUNC VOID Info_Mine_Grd_7_DieLage_Info()
 {
-	AI_Output(other,self,"Info_Mine_Grd_7_DieLage_15_00"); //Как жизнь?
-	AI_Output(self,other,"Info_Mine_Grd_7_DieLage_07_01"); //Слушай, не отвлекай меня от работы!
+	AI_Output(other,self,"Info_Mine_Grd_7_DieLage_15_00"); //РљР°Рє Р¶РёР·РЅСЊ?
+	AI_Output(self,other,"Info_Mine_Grd_7_DieLage_07_01"); //РЎР»СѓС€Р°Р№, РЅРµ РѕС‚РІР»РµРєР°Р№ РјРµРЅСЏ РѕС‚ СЂР°Р±РѕС‚С‹!
 };
 	
 // *************************************************************************

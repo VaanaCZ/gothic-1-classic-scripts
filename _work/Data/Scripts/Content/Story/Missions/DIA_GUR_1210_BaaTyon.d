@@ -24,7 +24,7 @@ FUNC VOID  DIA_BaalTyon_Exit_Info()
 };
 
 // ************************************************************
-// 					NICHT ansprechbar (Unglдubiger) 
+// 					NICHT ansprechbar (UnglРґubiger) 
 // ************************************************************
 	var int BaalTyon_Ansprechbar;
 	var int BaalTyon_Sakrileg;
@@ -54,30 +54,30 @@ FUNC VOID DIA_BaalTyon_NoTalk_Info()
 	Info_Addchoice 		(DIA_BaalTyon_NoTalk,DIALOG_ENDE					,DIA_BaalTyon_NoTalk_ENDE);
 	if (Npc_HasItems(other,SpecialJoint)>=1)
 	{
-		info_AddChoice	(DIA_BaalTyon_NoTalk,"(предложить улучшенный 'Зов мечты')"	,DIA_BaalTyon_SpecialJoint);
+		info_AddChoice	(DIA_BaalTyon_NoTalk,"(РїСЂРµРґР»РѕР¶РёС‚СЊ СѓР»СѓС‡С€РµРЅРЅС‹Р№ 'Р—РѕРІ РјРµС‡С‚С‹')"	,DIA_BaalTyon_SpecialJoint);
 	};
-	Info_Addchoice 		(DIA_BaalTyon_NoTalk,"С тобой все нормально, приятель?"			,DIA_BaalTyon_NoTalk_Imp);
-	Info_Addchoice 		(DIA_BaalTyon_NoTalk,"Да пребудет с тобой Спящий!"	,DIA_BaalTyon_NoTalk_Sleeper);
-	Info_Addchoice 		(DIA_BaalTyon_NoTalk,"Привет! Я здесь новенький!"		,DIA_BaalTyon_NoTalk_Hi);
+	Info_Addchoice 		(DIA_BaalTyon_NoTalk,"РЎ С‚РѕР±РѕР№ РІСЃРµ РЅРѕСЂРјР°Р»СЊРЅРѕ, РїСЂРёСЏС‚РµР»СЊ?"			,DIA_BaalTyon_NoTalk_Imp);
+	Info_Addchoice 		(DIA_BaalTyon_NoTalk,"Р”Р° РїСЂРµР±СѓРґРµС‚ СЃ С‚РѕР±РѕР№ РЎРїСЏС‰РёР№!"	,DIA_BaalTyon_NoTalk_Sleeper);
+	Info_Addchoice 		(DIA_BaalTyon_NoTalk,"РџСЂРёРІРµС‚! РЇ Р·РґРµСЃСЊ РЅРѕРІРµРЅСЊРєРёР№!"		,DIA_BaalTyon_NoTalk_Hi);
 };
 
 func void DIA_BaalTyon_NoTalk_Hi()
 {
-	AI_Output			(other, self,"DIA_BaalTyon_NoTalk_Hi_15_00"); //Привет! Я здесь новенький!
+	AI_Output			(other, self,"DIA_BaalTyon_NoTalk_Hi_15_00"); //РџСЂРёРІРµС‚! РЇ Р·РґРµСЃСЊ РЅРѕРІРµРЅСЊРєРёР№!
 	AI_Output			(self, other,"DIA_BaalTyon_NoTalk_Hi_11_01"); //
 	BaalTyon_Sakrileg = TRUE;
 };
 
 func void DIA_BaalTyon_NoTalk_Sleeper()
 {
-	AI_Output			(other, self,"DIA_BaalTyon_NoTalk_Sleeper_15_00"); //Да пребудет с тобой Спящий!
+	AI_Output			(other, self,"DIA_BaalTyon_NoTalk_Sleeper_15_00"); //Р”Р° РїСЂРµР±СѓРґРµС‚ СЃ С‚РѕР±РѕР№ РЎРїСЏС‰РёР№!
 	AI_Output			(self, other,"DIA_BaalTyon_NoTalk_Sleeper_11_01"); //
 	BaalTyon_Sakrileg = TRUE;
 };
 
 func void DIA_BaalTyon_NoTalk_Imp()
 {
-	AI_Output			(other, self,"DIA_BaalTyon_NoTalk_Imp_15_00"); //С тобой все нормально, приятель? 
+	AI_Output			(other, self,"DIA_BaalTyon_NoTalk_Imp_15_00"); //РЎ С‚РѕР±РѕР№ РІСЃРµ РЅРѕСЂРјР°Р»СЊРЅРѕ, РїСЂРёСЏС‚РµР»СЊ? 
 	AI_Output			(self, other,"DIA_BaalTyon_NoTalk_Imp_11_01"); //
 	BaalTyon_Sakrileg = TRUE;
 };
@@ -89,7 +89,7 @@ func void DIA_BaalTyon_NoTalk_ENDE()
 
 func void DIA_BaalTyon_SpecialJoint()
 {
-	AI_Output			(other, self,"DIA_BaalTyon_SpecialJoint_15_00"); //Вот, Учитель! Скромный подарок от верного ученика...
+	AI_Output			(other, self,"DIA_BaalTyon_SpecialJoint_15_00"); //Р’РѕС‚, РЈС‡РёС‚РµР»СЊ! РЎРєСЂРѕРјРЅС‹Р№ РїРѕРґР°СЂРѕРє РѕС‚ РІРµСЂРЅРѕРіРѕ СѓС‡РµРЅРёРєР°...
 	AI_StopProcessInfos	(self);
 
 	B_GiveInvItems	(hero, self, SpecialJoint, 1);
@@ -104,7 +104,7 @@ func void DIA_BaalTyon_SpecialJoint()
 
 	BaalTyon_Ansprechbar = TRUE;
 	Npc_SetRefuseTalk	(self,5);
-	hero.aivar[AIV_INVINCIBLE] = FALSE; //SN: Workaround, da in diese Situation das INVINCIBLE-Flag nicht automatisch gelцscht wird!
+	hero.aivar[AIV_INVINCIBLE] = FALSE; //SN: Workaround, da in diese Situation das INVINCIBLE-Flag nicht automatisch gelС†scht wird!
 };
 
 // **************************************************
@@ -131,18 +131,18 @@ FUNC int  DIA_BaalTyon_Vision_Condition()
 
 FUNC VOID  DIA_BaalTyon_Vision_Info()
 {
-	AI_Output			(self, other,"DIA_BaalTyon_Vision_11_00"); //Во имя Спящего! У меня было видение!
-	AI_Output			(self, other,"DIA_BaalTyon_Vision_11_01"); //Невероятно! Я видел, как к нам присоединился новый брат. Он не был похож на тех, кто приходил к нам до этого.
-	AI_Output			(self, other,"DIA_BaalTyon_Vision_11_02"); //Он что-то делал с нами... в руке его был меч, и он спускался по широкой лестнице. После этого я больше ничего не увидел.
-	AI_Output			(self, other,"DIA_BaalTyon_Vision_11_03"); //И еще он был похож на тебя. Кто ты? Что тебе здесь нужно?
-	AI_Output			(other, self,"DIA_BaalTyon_Vision_15_04"); //Я всего лишь скромный слуга Спящего...
-	AI_Output			(self, other,"DIA_BaalTyon_Vision_11_05"); //Иди к Кор Галому. Он знает, что делать.
+	AI_Output			(self, other,"DIA_BaalTyon_Vision_11_00"); //Р’Рѕ РёРјСЏ РЎРїСЏС‰РµРіРѕ! РЈ РјРµРЅСЏ Р±С‹Р»Рѕ РІРёРґРµРЅРёРµ!
+	AI_Output			(self, other,"DIA_BaalTyon_Vision_11_01"); //РќРµРІРµСЂРѕСЏС‚РЅРѕ! РЇ РІРёРґРµР», РєР°Рє Рє РЅР°Рј РїСЂРёСЃРѕРµРґРёРЅРёР»СЃСЏ РЅРѕРІС‹Р№ Р±СЂР°С‚. РћРЅ РЅРµ Р±С‹Р» РїРѕС…РѕР¶ РЅР° С‚РµС…, РєС‚Рѕ РїСЂРёС…РѕРґРёР» Рє РЅР°Рј РґРѕ СЌС‚РѕРіРѕ.
+	AI_Output			(self, other,"DIA_BaalTyon_Vision_11_02"); //РћРЅ С‡С‚Рѕ-С‚Рѕ РґРµР»Р°Р» СЃ РЅР°РјРё... РІ СЂСѓРєРµ РµРіРѕ Р±С‹Р» РјРµС‡, Рё РѕРЅ СЃРїСѓСЃРєР°Р»СЃСЏ РїРѕ С€РёСЂРѕРєРѕР№ Р»РµСЃС‚РЅРёС†Рµ. РџРѕСЃР»Рµ СЌС‚РѕРіРѕ СЏ Р±РѕР»СЊС€Рµ РЅРёС‡РµРіРѕ РЅРµ СѓРІРёРґРµР».
+	AI_Output			(self, other,"DIA_BaalTyon_Vision_11_03"); //Р РµС‰Рµ РѕРЅ Р±С‹Р» РїРѕС…РѕР¶ РЅР° С‚РµР±СЏ. РљС‚Рѕ С‚С‹? Р§С‚Рѕ С‚РµР±Рµ Р·РґРµСЃСЊ РЅСѓР¶РЅРѕ?
+	AI_Output			(other, self,"DIA_BaalTyon_Vision_15_04"); //РЇ РІСЃРµРіРѕ Р»РёС€СЊ СЃРєСЂРѕРјРЅС‹Р№ СЃР»СѓРіР° РЎРїСЏС‰РµРіРѕ...
+	AI_Output			(self, other,"DIA_BaalTyon_Vision_11_05"); //РРґРё Рє РљРѕСЂ Р“Р°Р»РѕРјСѓ. РћРЅ Р·РЅР°РµС‚, С‡С‚Рѕ РґРµР»Р°С‚СЊ.
 	
 	self.npctype 	=	NPCTYPE_MAIN;
 	self.flags 		=	0;
 
 	BaalTyon_Ansprechbar = FALSE;
-	B_LogEntry			(CH1_JoinPsi,	"Благодаря моему особому подарку Идола Тиона посетило видение! Он хочет, чтобы я поговорил с Кор Галомом!");
+	B_LogEntry			(CH1_JoinPsi,	"Р‘Р»Р°РіРѕРґР°СЂСЏ РјРѕРµРјСѓ РѕСЃРѕР±РѕРјСѓ РїРѕРґР°СЂРєСѓ РРґРѕР»Р° РўРёРѕРЅР° РїРѕСЃРµС‚РёР»Рѕ РІРёРґРµРЅРёРµ! РћРЅ С…РѕС‡РµС‚, С‡С‚РѕР±С‹ СЏ РїРѕРіРѕРІРѕСЂРёР» СЃ РљРѕСЂ Р“Р°Р»РѕРјРѕРј!");
 	B_GiveXP			(XP_ImpressedBaalTyon);
 	
 	AI_StopProcessInfos	(self);

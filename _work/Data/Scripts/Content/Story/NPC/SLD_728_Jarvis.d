@@ -2,7 +2,7 @@ instance SLD_728_Jarvis (Npc_Default)
 {
 	//-------- primary data --------
 	
-	name =					"Ярвис";
+	name =					"РЇСЂРІРёСЃ";
 	Npctype =				Npctype_Main;
 	guild =					GIL_SLD;       
 	level =					16;

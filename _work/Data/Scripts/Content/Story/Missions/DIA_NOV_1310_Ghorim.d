@@ -30,7 +30,7 @@ instance  DIA_Ghorim_MissingHarlok (C_INFO)
 	condition	= DIA_Ghorim_MissingHarlok_Condition;
 	information	= DIA_Ghorim_MissingHarlok_Info;
 	permanent	= 0;
-	description	= "Привет! Как дела?";
+	description	= "РџСЂРёРІРµС‚! РљР°Рє РґРµР»Р°?";
 };                       
 
 FUNC int  DIA_Ghorim_MissingHarlok_Condition()
@@ -40,18 +40,18 @@ FUNC int  DIA_Ghorim_MissingHarlok_Condition()
 
 FUNC VOID  DIA_Ghorim_MissingHarlok_Info()
 {
-	AI_Output (other, self,"DIA_Ghorim_MissingHarlok_15_00"); //Привет! Как дела?
-	AI_Output (self, other,"DIA_Ghorim_MissingHarlok_02_01"); //Устал я, парень, прямо с ног валюсь. Работаю уже два дня - и ни минуты отдыха.
-	AI_Output (self, other,"DIA_Ghorim_MissingHarlok_02_02"); //Харлок давным-давно должен был заступить на смену. С этим парнем всегда так.
-	AI_Output (self, other,"DIA_Ghorim_MissingHarlok_02_03"); //Небось, дрыхнет сейчас у себя дома!
-	AI_Output (other, self,"DIA_Ghorim_MissingHarlok_15_04"); //А почему ты сам не можешь сходить к нему и привести сюда?
-	AI_Output (self, other,"DIA_Ghorim_MissingHarlok_02_05"); //Я не могу уйти. Тут работа прежде всего.
-	AI_Output (self, other,"DIA_Ghorim_MissingHarlok_02_06"); //Может, ты сходишь вместо меня? Он живет под лабораторией Кор Галома, у Фортуно.
-	AI_Output (self, other,"DIA_Ghorim_MissingHarlok_02_07"); //Скажи ему, чтобы он немедленно тащил свою задницу сюда.
+	AI_Output (other, self,"DIA_Ghorim_MissingHarlok_15_00"); //РџСЂРёРІРµС‚! РљР°Рє РґРµР»Р°?
+	AI_Output (self, other,"DIA_Ghorim_MissingHarlok_02_01"); //РЈСЃС‚Р°Р» СЏ, РїР°СЂРµРЅСЊ, РїСЂСЏРјРѕ СЃ РЅРѕРі РІР°Р»СЋСЃСЊ. Р Р°Р±РѕС‚Р°СЋ СѓР¶Рµ РґРІР° РґРЅСЏ - Рё РЅРё РјРёРЅСѓС‚С‹ РѕС‚РґС‹С…Р°.
+	AI_Output (self, other,"DIA_Ghorim_MissingHarlok_02_02"); //РҐР°СЂР»РѕРє РґР°РІРЅС‹Рј-РґР°РІРЅРѕ РґРѕР»Р¶РµРЅ Р±С‹Р» Р·Р°СЃС‚СѓРїРёС‚СЊ РЅР° СЃРјРµРЅСѓ. РЎ СЌС‚РёРј РїР°СЂРЅРµРј РІСЃРµРіРґР° С‚Р°Рє.
+	AI_Output (self, other,"DIA_Ghorim_MissingHarlok_02_03"); //РќРµР±РѕСЃСЊ, РґСЂС‹С…РЅРµС‚ СЃРµР№С‡Р°СЃ Сѓ СЃРµР±СЏ РґРѕРјР°!
+	AI_Output (other, self,"DIA_Ghorim_MissingHarlok_15_04"); //Рђ РїРѕС‡РµРјСѓ С‚С‹ СЃР°Рј РЅРµ РјРѕР¶РµС€СЊ СЃС…РѕРґРёС‚СЊ Рє РЅРµРјСѓ Рё РїСЂРёРІРµСЃС‚Рё СЃСЋРґР°?
+	AI_Output (self, other,"DIA_Ghorim_MissingHarlok_02_05"); //РЇ РЅРµ РјРѕРіСѓ СѓР№С‚Рё. РўСѓС‚ СЂР°Р±РѕС‚Р° РїСЂРµР¶РґРµ РІСЃРµРіРѕ.
+	AI_Output (self, other,"DIA_Ghorim_MissingHarlok_02_06"); //РњРѕР¶РµС‚, С‚С‹ СЃС…РѕРґРёС€СЊ РІРјРµСЃС‚Рѕ РјРµРЅСЏ? РћРЅ Р¶РёРІРµС‚ РїРѕРґ Р»Р°Р±РѕСЂР°С‚РѕСЂРёРµР№ РљРѕСЂ Р“Р°Р»РѕРјР°, Сѓ Р¤РѕСЂС‚СѓРЅРѕ.
+	AI_Output (self, other,"DIA_Ghorim_MissingHarlok_02_07"); //РЎРєР°Р¶Рё РµРјСѓ, С‡С‚РѕР±С‹ РѕРЅ РЅРµРјРµРґР»РµРЅРЅРѕ С‚Р°С‰РёР» СЃРІРѕСЋ Р·Р°РґРЅРёС†Сѓ СЃСЋРґР°.
 		
 	Log_CreateTopic		(CH1_GhorimsRelief,	LOG_MISSION);
 	Log_SetTopicStatus	(CH1_GhorimsRelief,	LOG_RUNNING);
-	B_LogEntry			(CH1_GhorimsRelief,	"Послушник Горим попросил меня позвать лентяя Харлока, который сможет его заменить. Я смогу найти его недалеко от дома Фортуно.");
+	B_LogEntry			(CH1_GhorimsRelief,	"РџРѕСЃР»СѓС€РЅРёРє Р“РѕСЂРёРј РїРѕРїСЂРѕСЃРёР» РјРµРЅСЏ РїРѕР·РІР°С‚СЊ Р»РµРЅС‚СЏСЏ РҐР°СЂР»РѕРєР°, РєРѕС‚РѕСЂС‹Р№ СЃРјРѕР¶РµС‚ РµРіРѕ Р·Р°РјРµРЅРёС‚СЊ. РЇ СЃРјРѕРіСѓ РЅР°Р№С‚Рё РµРіРѕ РЅРµРґР°Р»РµРєРѕ РѕС‚ РґРѕРјР° Р¤РѕСЂС‚СѓРЅРѕ.");
 
 	Ghorim_KickHarlok = LOG_RUNNING;
 };
@@ -67,7 +67,7 @@ instance  DIA_Ghorim_SUCCESS (C_INFO)
 	condition	= DIA_Ghorim_SUCCESS_Condition;
 	information	= DIA_Ghorim_SUCCESS_Info;
 	permanent	= 1;
-	description	= "Ну? Теперь ты свободен?";
+	description	= "РќСѓ? РўРµРїРµСЂСЊ С‚С‹ СЃРІРѕР±РѕРґРµРЅ?";
 };                       
 
 FUNC int  DIA_Ghorim_SUCCESS_Condition()
@@ -80,8 +80,8 @@ FUNC int  DIA_Ghorim_SUCCESS_Condition()
 
 FUNC VOID  DIA_Ghorim_SUCCESS_Info()
 {
-	AI_Output (other, self,"DIA_Ghorim_SUCCESS_15_00"); //Ну? Теперь ты свободен?
-	AI_Output (self, other,"DIA_Ghorim_SUCCESS_02_01"); //Да, наконец-то я могу поспать. Спасибо, дружище!
+	AI_Output (other, self,"DIA_Ghorim_SUCCESS_15_00"); //РќСѓ? РўРµРїРµСЂСЊ С‚С‹ СЃРІРѕР±РѕРґРµРЅ?
+	AI_Output (self, other,"DIA_Ghorim_SUCCESS_02_01"); //Р”Р°, РЅР°РєРѕРЅРµС†-С‚Рѕ СЏ РјРѕРіСѓ РїРѕСЃРїР°С‚СЊ. РЎРїР°СЃРёР±Рѕ, РґСЂСѓР¶РёС‰Рµ!
 };
 
 

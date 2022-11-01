@@ -1,7 +1,7 @@
 instance STT_329_Dexter (Npc_Default)
 {
 	//-------- primary data --------
-	name 		=		"Δεκρςεπ";
+	name 		=		"Π”ΠµΠΊΡΡ‚ΠµΡ€";
 	npctype 		=		NPCTYPE_MAIN;
 	guild 		=		GIL_STT;
 	level 		=		7;

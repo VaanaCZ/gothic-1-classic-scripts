@@ -46,13 +46,13 @@ FUNC int DIA_Grd_218_FirstIn_Condition()
 
 FUNC VOID DIA_Grd_218_FirstIn_Info()
 {
-	AI_Output (self, other,"DIA_Grd_218_FirstIn_07_00"); //Стой! Что тебе здесь нужно?
-	AI_Output (other, self,"DIA_Grd_218_FirstIn_15_01"); //Просто хотел зайти.
-	AI_Output (self, other,"DIA_Grd_218_FirstIn_07_02"); //Ты шутишь, да?
-	AI_Output (other, self,"DIA_Grd_218_FirstIn_15_03"); //Лучше спроси об этом Торуса.
-	AI_Output (self, other,"DIA_Grd_218_FirstIn_07_04"); //Конечно, спрошу. И если ты солгал, я лично тебя убью.
-	AI_Output (other, self,"DIA_Grd_218_FirstIn_15_05"); //Это значит, что я могу войти?
-	AI_Output (self, other,"DIA_Grd_218_FirstIn_07_06"); //Да, давай быстрее!
+	AI_Output (self, other,"DIA_Grd_218_FirstIn_07_00"); //РЎС‚РѕР№! Р§С‚Рѕ С‚РµР±Рµ Р·РґРµСЃСЊ РЅСѓР¶РЅРѕ?
+	AI_Output (other, self,"DIA_Grd_218_FirstIn_15_01"); //РџСЂРѕСЃС‚Рѕ С…РѕС‚РµР» Р·Р°Р№С‚Рё.
+	AI_Output (self, other,"DIA_Grd_218_FirstIn_07_02"); //РўС‹ С€СѓС‚РёС€СЊ, РґР°?
+	AI_Output (other, self,"DIA_Grd_218_FirstIn_15_03"); //Р›СѓС‡С€Рµ СЃРїСЂРѕСЃРё РѕР± СЌС‚РѕРј РўРѕСЂСѓСЃР°.
+	AI_Output (self, other,"DIA_Grd_218_FirstIn_07_04"); //РљРѕРЅРµС‡РЅРѕ, СЃРїСЂРѕС€Сѓ. Р РµСЃР»Рё С‚С‹ СЃРѕР»РіР°Р», СЏ Р»РёС‡РЅРѕ С‚РµР±СЏ СѓР±СЊСЋ.
+	AI_Output (other, self,"DIA_Grd_218_FirstIn_15_05"); //Р­С‚Рѕ Р·РЅР°С‡РёС‚, С‡С‚Рѕ СЏ РјРѕРіСѓ РІРѕР№С‚Рё?
+	AI_Output (self, other,"DIA_Grd_218_FirstIn_07_06"); //Р”Р°, РґР°РІР°Р№ Р±С‹СЃС‚СЂРµРµ!
 	AI_StopProcessInfos	(self);
 };
 
@@ -68,9 +68,9 @@ FUNC VOID DIA_Grd_218_FirstIn_Info()
 //	Uhrzeit:	24h
 //
 //	Es passiert folgendes:
-//	1.	Nдhert sich der Spieler dem Durchgang, so wird er in diesen
+//	1.	NРґhert sich der Spieler dem Durchgang, so wird er in diesen
 //		Dialog gezwungen und einmal gewarnt
-//	2.	Nдhert er sich trotzdem wieder, wird er angegriffen
+//	2.	NРґhert er sich trotzdem wieder, wird er angegriffen
 //////////////////////////////////////////////////////////////////////////
 const string	Grd_218_CHECKPOINT		= "OCC_BARONS_HALLWAY_FRONT";
 
@@ -102,9 +102,9 @@ func void Info_Grd_218_FirstWarn_Info()
 {
 	PrintGlobals	(PD_MISSION);
 
-	AI_Output (self, hero,"Info_Grd_218_FirstWarn_Info_07_01"); //Стой! Ни шагу дальше!
-	AI_Output (hero, self,"Info_Grd_218_FirstWarn_Info_15_02"); //Это почему?
-	AI_Output (self, hero,"Info_Grd_218_FirstWarn_Info_07_03"); //Для таких как ты дом Баронов закрыт, понял?
+	AI_Output (self, hero,"Info_Grd_218_FirstWarn_Info_07_01"); //РЎС‚РѕР№! РќРё С€Р°РіСѓ РґР°Р»СЊС€Рµ!
+	AI_Output (hero, self,"Info_Grd_218_FirstWarn_Info_15_02"); //Р­С‚Рѕ РїРѕС‡РµРјСѓ?
+	AI_Output (self, hero,"Info_Grd_218_FirstWarn_Info_07_03"); //Р”Р»СЏ С‚Р°РєРёС… РєР°Рє С‚С‹ РґРѕРј Р‘Р°СЂРѕРЅРѕРІ Р·Р°РєСЂС‹С‚, РїРѕРЅСЏР»?
 
 	hero.aivar[AIV_LASTDISTTOWP] 		= Npc_GetDistToWP(hero,Grd_218_CHECKPOINT);
 	hero.aivar[AIV_GUARDPASSAGE_STATUS]	= AIV_GPS_FIRSTWARN;	
@@ -144,7 +144,7 @@ func int Info_Grd_218_Attack_Info()
 	hero.aivar[AIV_GUARDPASSAGE_STATUS]	= AIV_GPS_PUNISH;	
 	
 	B_FullStop			(self);	
-	AI_StopProcessInfos	(self);					// dem Spieler sofort wieder die Kontrolle zurьckgeben
+	AI_StopProcessInfos	(self);					// dem Spieler sofort wieder die Kontrolle zurСЊckgeben
 	B_IntruderAlert		(self,	other);
 	B_SetAttackReason	(self,	AIV_AR_INTRUDER);
 	Npc_SetTarget		(self,	hero);

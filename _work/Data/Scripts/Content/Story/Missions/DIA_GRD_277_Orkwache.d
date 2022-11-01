@@ -9,7 +9,7 @@ instance  Grd_277_Gardist_SITTINGORK (C_INFO)
 	information		= Grd_277_Gardist_SITTINGORK_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Что это за орк?"; 
+	description		= "Р§С‚Рѕ СЌС‚Рѕ Р·Р° РѕСЂРє?"; 
 };
 
 FUNC int  Grd_277_Gardist_SITTINGORK_Condition()
@@ -22,9 +22,9 @@ FUNC int  Grd_277_Gardist_SITTINGORK_Condition()
 };
 FUNC void  Grd_277_Gardist_SITTINGORK_Info()
 {
-	AI_Output (other, self,"Grd_277_Gardist_SITTINGORK_Info_15_01"); //Что это за орк?
-	AI_Output (self, other,"Grd_277_Gardist_SITTINGORK_Info_06_02"); //Он наш пленник. Счастливчик! У нас сломалась шестеренка, и этот мерзавец может спокойно валять дурака.
-	AI_Output (self, other,"Grd_277_Gardist_SITTINGORK_Info_06_03"); //Как только пресс будет отремонтирован, он сразу же приступит к работе. Бездельничать не будет.
+	AI_Output (other, self,"Grd_277_Gardist_SITTINGORK_Info_15_01"); //Р§С‚Рѕ СЌС‚Рѕ Р·Р° РѕСЂРє?
+	AI_Output (self, other,"Grd_277_Gardist_SITTINGORK_Info_06_02"); //РћРЅ РЅР°С€ РїР»РµРЅРЅРёРє. РЎС‡Р°СЃС‚Р»РёРІС‡РёРє! РЈ РЅР°СЃ СЃР»РѕРјР°Р»Р°СЃСЊ С€РµСЃС‚РµСЂРµРЅРєР°, Рё СЌС‚РѕС‚ РјРµСЂР·Р°РІРµС† РјРѕР¶РµС‚ СЃРїРѕРєРѕР№РЅРѕ РІР°Р»СЏС‚СЊ РґСѓСЂР°РєР°.
+	AI_Output (self, other,"Grd_277_Gardist_SITTINGORK_Info_06_03"); //РљР°Рє С‚РѕР»СЊРєРѕ РїСЂРµСЃСЃ Р±СѓРґРµС‚ РѕС‚СЂРµРјРѕРЅС‚РёСЂРѕРІР°РЅ, РѕРЅ СЃСЂР°Р·Сѓ Р¶Рµ РїСЂРёСЃС‚СѓРїРёС‚ Рє СЂР°Р±РѕС‚Рµ. Р‘РµР·РґРµР»СЊРЅРёС‡Р°С‚СЊ РЅРµ Р±СѓРґРµС‚.
 };  
 /*------------------------------------------------------------------------
 							WORKINGORK							
@@ -37,7 +37,7 @@ instance  Grd_277_Gardist_WORKINGORK (C_INFO)
 	information		= Grd_277_Gardist_WORKINGORK_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Как я вижу, пресс уже в порядке."; 
+	description		= "РљР°Рє СЏ РІРёР¶Сѓ, РїСЂРµСЃСЃ СѓР¶Рµ РІ РїРѕСЂСЏРґРєРµ."; 
 };
 
 FUNC int  Grd_277_Gardist_WORKINGORK_Condition()
@@ -50,6 +50,6 @@ FUNC int  Grd_277_Gardist_WORKINGORK_Condition()
 };
 FUNC void  Grd_277_Gardist_WORKINGORK_Info()
 {
-	AI_Output (other, self,"Grd_277_Gardist_WORKINGORK_Info_15_01"); //Как я вижу, пресс уже в порядке.
-	AI_Output (self, other,"Grd_277_Gardist_WORKINGORK_Info_06_02"); //Отлично. Заставить работать - это мы умеем.
+	AI_Output (other, self,"Grd_277_Gardist_WORKINGORK_Info_15_01"); //РљР°Рє СЏ РІРёР¶Сѓ, РїСЂРµСЃСЃ СѓР¶Рµ РІ РїРѕСЂСЏРґРєРµ.
+	AI_Output (self, other,"Grd_277_Gardist_WORKINGORK_Info_06_02"); //РћС‚Р»РёС‡РЅРѕ. Р—Р°СЃС‚Р°РІРёС‚СЊ СЂР°Р±РѕС‚Р°С‚СЊ - СЌС‚Рѕ РјС‹ СѓРјРµРµРј.
 };  

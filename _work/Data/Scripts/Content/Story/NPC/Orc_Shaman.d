@@ -1,7 +1,7 @@
 instance ORC_2200_Shaman (Mst_Default_OrcShaman)
 {
 	//-------- primary data --------
-	name 		=		"Óð-Øàê";
+	name 		=		"Ð£Ñ€-Ð¨Ð°Ðº";
 	Npctype 	=		NPCTYPE_FRIEND;
 	flags	 	=		NPC_FLAG_IMMORTAL;
 	guild 		=		GIL_NONE;
@@ -38,7 +38,7 @@ instance ORC_2200_Shaman (Mst_Default_OrcShaman)
 	Npc_SetTalentSkill		( self, NPC_TALENT_MAGE,		6);
 
 	//-------- inventory --------
-	EquipItem			(self,	ItRwOrcstaff);		// für Magiemodus
+	EquipItem			(self,	ItRwOrcstaff);		// fÑŒr Magiemodus
 	CreateInvItem		(self,	ItArRuneFireball);
   	  
 	//------------- ai -------------

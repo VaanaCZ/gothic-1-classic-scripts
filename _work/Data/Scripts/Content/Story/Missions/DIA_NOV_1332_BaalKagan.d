@@ -33,7 +33,7 @@ INSTANCE DIA_BaalKagan_Hello(C_INFO)
 	condition	= DIA_BaalKagan_Hello_Condition;
 	information	= DIA_BaalKagan_Hello_Info;
 	permanent	= 0;
-	description = "Ты пришел из Лагеря Сектантов?";
+	description = "РўС‹ РїСЂРёС€РµР» РёР· Р›Р°РіРµСЂСЏ РЎРµРєС‚Р°РЅС‚РѕРІ?";
 };                       
 
 FUNC INT DIA_BaalKagan_Hello_Condition()
@@ -43,9 +43,9 @@ FUNC INT DIA_BaalKagan_Hello_Condition()
 
 FUNC VOID DIA_BaalKagan_Hello_Info()
 {	
-	AI_Output			(other, self,"DIA_BaalKagan_Hello_15_00"); //Ты пришел из Лагеря сектантов?
-	AI_Output			(self, other,"DIA_BaalKagan_Hello_13_01"); //Мы называем его лагерем Братства.
-	AI_Output			(self, other,"DIA_BaalKagan_Hello_13_02"); //Меня зовут Идол Каган. Да пребудет с тобой Спящий!
+	AI_Output			(other, self,"DIA_BaalKagan_Hello_15_00"); //РўС‹ РїСЂРёС€РµР» РёР· Р›Р°РіРµСЂСЏ СЃРµРєС‚Р°РЅС‚РѕРІ?
+	AI_Output			(self, other,"DIA_BaalKagan_Hello_13_01"); //РњС‹ РЅР°Р·С‹РІР°РµРј РµРіРѕ Р»Р°РіРµСЂРµРј Р‘СЂР°С‚СЃС‚РІР°.
+	AI_Output			(self, other,"DIA_BaalKagan_Hello_13_02"); //РњРµРЅСЏ Р·РѕРІСѓС‚ РРґРѕР» РљР°РіР°РЅ. Р”Р° РїСЂРµР±СѓРґРµС‚ СЃ С‚РѕР±РѕР№ РЎРїСЏС‰РёР№!
 };
 
 // ************************************************************
@@ -59,7 +59,7 @@ INSTANCE DIA_BaalKagan_WhyHere(C_INFO)
 	condition	= DIA_BaalKagan_WhyHere_Condition;
 	information	= DIA_BaalKagan_WhyHere_Info;
 	permanent	= 0;
-	description = "А что ты здесь делаешь?";
+	description = "Рђ С‡С‚Рѕ С‚С‹ Р·РґРµСЃСЊ РґРµР»Р°РµС€СЊ?";
 };                       
 
 FUNC INT DIA_BaalKagan_WhyHere_Condition()
@@ -72,13 +72,13 @@ FUNC INT DIA_BaalKagan_WhyHere_Condition()
 
 FUNC VOID DIA_BaalKagan_WhyHere_Info()
 {	
-	AI_Output			(other, self,"DIA_BaalKagan_WhyHere_15_00"); //А что ты здесь делаешь?
-	AI_Output			(self, other,"DIA_BaalKagan_WhyHere_13_01"); //Гуру прислали меня проповедовать учение Спящего среди неверных.
-	AI_Output			(self, other,"DIA_BaalKagan_WhyHere_13_02"); //Но эти люди ничего не хотят знать о духовном просветлении. Поэтому сейчас я просто продаю болотник.
-	AI_Output			(self, other,"DIA_BaalKagan_WhyHere_13_03"); //Уж его-то здесь раскупают быстро. Так быстро, что моего болотника здесь всегда не хватает.
+	AI_Output			(other, self,"DIA_BaalKagan_WhyHere_15_00"); //Рђ С‡С‚Рѕ С‚С‹ Р·РґРµСЃСЊ РґРµР»Р°РµС€СЊ?
+	AI_Output			(self, other,"DIA_BaalKagan_WhyHere_13_01"); //Р“СѓСЂСѓ РїСЂРёСЃР»Р°Р»Рё РјРµРЅСЏ РїСЂРѕРїРѕРІРµРґРѕРІР°С‚СЊ СѓС‡РµРЅРёРµ РЎРїСЏС‰РµРіРѕ СЃСЂРµРґРё РЅРµРІРµСЂРЅС‹С….
+	AI_Output			(self, other,"DIA_BaalKagan_WhyHere_13_02"); //РќРѕ СЌС‚Рё Р»СЋРґРё РЅРёС‡РµРіРѕ РЅРµ С…РѕС‚СЏС‚ Р·РЅР°С‚СЊ Рѕ РґСѓС…РѕРІРЅРѕРј РїСЂРѕСЃРІРµС‚Р»РµРЅРёРё. РџРѕСЌС‚РѕРјСѓ СЃРµР№С‡Р°СЃ СЏ РїСЂРѕСЃС‚Рѕ РїСЂРѕРґР°СЋ Р±РѕР»РѕС‚РЅРёРє.
+	AI_Output			(self, other,"DIA_BaalKagan_WhyHere_13_03"); //РЈР¶ РµРіРѕ-С‚Рѕ Р·РґРµСЃСЊ СЂР°СЃРєСѓРїР°СЋС‚ Р±С‹СЃС‚СЂРѕ. РўР°Рє Р±С‹СЃС‚СЂРѕ, С‡С‚Рѕ РјРѕРµРіРѕ Р±РѕР»РѕС‚РЅРёРєР° Р·РґРµСЃСЊ РІСЃРµРіРґР° РЅРµ С…РІР°С‚Р°РµС‚.
 
 	Log_CreateTopic	(GE_TraderNC,	LOG_NOTE);
-	B_LogEntry		(GE_TraderNC,	"Идол Каган продает болотник ворам и наемникам из Нового лагеря.");
+	B_LogEntry		(GE_TraderNC,	"РРґРѕР» РљР°РіР°РЅ РїСЂРѕРґР°РµС‚ Р±РѕР»РѕС‚РЅРёРє РІРѕСЂР°Рј Рё РЅР°РµРјРЅРёРєР°Рј РёР· РќРѕРІРѕРіРѕ Р»Р°РіРµСЂСЏ.");
 };
 
 // ************************************************************
@@ -92,7 +92,7 @@ INSTANCE DIA_BaalKagan_TRADE (C_INFO)
 	condition	= DIA_BaalKagan_TRADE_Condition;
 	information	= DIA_BaalKagan_TRADE_Info;
 	permanent	= 1;
-	description = "Покажи мне свои товары.";
+	description = "РџРѕРєР°Р¶Рё РјРЅРµ СЃРІРѕРё С‚РѕРІР°СЂС‹.";
 	trade		= 1;
 };                       
 
@@ -106,8 +106,8 @@ FUNC INT DIA_BaalKagan_TRADE_Condition()
 
 FUNC VOID DIA_BaalKagan_TRADE_Info()
 {	
-	AI_Output			(other, self,"DIA_BaalKagan_TRADE_15_00"); //Покажи мне свои товары.
-	AI_Output			(self, other,"DIA_BaalKagan_TRADE_13_01"); //Как пожелаешь!
+	AI_Output			(other, self,"DIA_BaalKagan_TRADE_15_00"); //РџРѕРєР°Р¶Рё РјРЅРµ СЃРІРѕРё С‚РѕРІР°СЂС‹.
+	AI_Output			(self, other,"DIA_BaalKagan_TRADE_13_01"); //РљР°Рє РїРѕР¶РµР»Р°РµС€СЊ!
 };
 
 // ************************************************************
@@ -121,7 +121,7 @@ INSTANCE DIA_BaalKagan_OrderHelp(C_INFO)
 	condition	= DIA_BaalKagan_OrderHelp_Condition;
 	information	= DIA_BaalKagan_OrderHelp_Info;
 	permanent	= 0;
-	description = "Почему бы им не послать сюда кого-нибудь еще?";
+	description = "РџРѕС‡РµРјСѓ Р±С‹ РёРј РЅРµ РїРѕСЃР»Р°С‚СЊ СЃСЋРґР° РєРѕРіРѕ-РЅРёР±СѓРґСЊ РµС‰Рµ?";
 };                       
 
 FUNC INT DIA_BaalKagan_OrderHelp_Condition()
@@ -134,20 +134,20 @@ FUNC INT DIA_BaalKagan_OrderHelp_Condition()
 
 FUNC VOID DIA_BaalKagan_OrderHelp_Info()
 {	
-	AI_Output			(other, self,"DIA_BaalKagan_OrderHelp_15_00"); //Почему бы им не послать сюда кого-нибудь еще?
-	AI_Output			(self, other,"DIA_BaalKagan_OrderHelp_13_01"); //У меня есть здесь помощник. Идол Исидро. Но он целыми днями пропадает в баре на озере, где пропивает весь свой болотник.
-	AI_Output			(self, other,"DIA_BaalKagan_OrderHelp_13_02"); //Его больше привлекает шнапс, чем служение Спящему. От него мне никакой помощи.
+	AI_Output			(other, self,"DIA_BaalKagan_OrderHelp_15_00"); //РџРѕС‡РµРјСѓ Р±С‹ РёРј РЅРµ РїРѕСЃР»Р°С‚СЊ СЃСЋРґР° РєРѕРіРѕ-РЅРёР±СѓРґСЊ РµС‰Рµ?
+	AI_Output			(self, other,"DIA_BaalKagan_OrderHelp_13_01"); //РЈ РјРµРЅСЏ РµСЃС‚СЊ Р·РґРµСЃСЊ РїРѕРјРѕС‰РЅРёРє. РРґРѕР» РСЃРёРґСЂРѕ. РќРѕ РѕРЅ С†РµР»С‹РјРё РґРЅСЏРјРё РїСЂРѕРїР°РґР°РµС‚ РІ Р±Р°СЂРµ РЅР° РѕР·РµСЂРµ, РіРґРµ РїСЂРѕРїРёРІР°РµС‚ РІРµСЃСЊ СЃРІРѕР№ Р±РѕР»РѕС‚РЅРёРє.
+	AI_Output			(self, other,"DIA_BaalKagan_OrderHelp_13_02"); //Р•РіРѕ Р±РѕР»СЊС€Рµ РїСЂРёРІР»РµРєР°РµС‚ С€РЅР°РїСЃ, С‡РµРј СЃР»СѓР¶РµРЅРёРµ РЎРїСЏС‰РµРјСѓ. РћС‚ РЅРµРіРѕ РјРЅРµ РЅРёРєР°РєРѕР№ РїРѕРјРѕС‰Рё.
 	
 	if (Lares_Get400Ore == LOG_RUNNING)
 	{
 		Log_CreateTopic		(CH1_DealerJob,	LOG_MISSION);
 		Log_SetTopicStatus	(CH1_DealerJob,	LOG_RUNNING);
-	    B_LogEntry			(CH1_DealerJob,	"Идол Исидро весь день сидит в баре на озере и пьянствует.");	
+	    B_LogEntry			(CH1_DealerJob,	"РРґРѕР» РСЃРёРґСЂРѕ РІРµСЃСЊ РґРµРЅСЊ СЃРёРґРёС‚ РІ Р±Р°СЂРµ РЅР° РѕР·РµСЂРµ Рё РїСЊСЏРЅСЃС‚РІСѓРµС‚.");	
 	};
 };
 
 // ************************************************************
-// 					Ich kцnnte dir helfen
+// 					Ich kС†nnte dir helfen
 // ************************************************************
 
 INSTANCE DIA_BaalKagan_WannaHelp(C_INFO)
@@ -157,7 +157,7 @@ INSTANCE DIA_BaalKagan_WannaHelp(C_INFO)
 	condition	= DIA_BaalKagan_WannaHelp_Condition;
 	information	= DIA_BaalKagan_WannaHelp_Info;
 	permanent	= 0;
-	description = "Я могу помочь тебе продавать здесь болотник.";
+	description = "РЇ РјРѕРіСѓ РїРѕРјРѕС‡СЊ С‚РµР±Рµ РїСЂРѕРґР°РІР°С‚СЊ Р·РґРµСЃСЊ Р±РѕР»РѕС‚РЅРёРє.";
 };                       
 
 FUNC INT DIA_BaalKagan_WannaHelp_Condition()
@@ -170,12 +170,12 @@ FUNC INT DIA_BaalKagan_WannaHelp_Condition()
 
 FUNC VOID DIA_BaalKagan_WannaHelp_Info()
 {	
-	AI_Output			(other, self,"DIA_BaalKagan_WannaHelp_15_00"); //Я могу помочь тебе продавать здесь болотник.
-	AI_Output			(self, other,"DIA_BaalKagan_WannaHelp_13_01"); //Я не могу доверить это важное дело незнакомому человеку. Только одному из наших последователей могу позволить это.
-	AI_Output			(self, other,"DIA_BaalKagan_WannaHelp_13_02"); //Но и твоя помощь может мне пригодиться.
-	AI_Output			(self, other,"DIA_BaalKagan_WannaHelp_13_03"); //В этом лагере не все еще знают о болотнике. Попробовав его один раз, они будут приходить ко мне еще и еще. Спрос на него повысится.
-	AI_Output			(other, self,"DIA_BaalKagan_WannaHelp_15_04"); //Думаю, теперь у тебя никак не получится справиться с этим.
-	AI_Output			(self, other,"DIA_BaalKagan_WannaHelp_13_05"); //Наши братья позаботятся об Идоле Исидро. Я уже отправил сообщение Кор Галому.
+	AI_Output			(other, self,"DIA_BaalKagan_WannaHelp_15_00"); //РЇ РјРѕРіСѓ РїРѕРјРѕС‡СЊ С‚РµР±Рµ РїСЂРѕРґР°РІР°С‚СЊ Р·РґРµСЃСЊ Р±РѕР»РѕС‚РЅРёРє.
+	AI_Output			(self, other,"DIA_BaalKagan_WannaHelp_13_01"); //РЇ РЅРµ РјРѕРіСѓ РґРѕРІРµСЂРёС‚СЊ СЌС‚Рѕ РІР°Р¶РЅРѕРµ РґРµР»Рѕ РЅРµР·РЅР°РєРѕРјРѕРјСѓ С‡РµР»РѕРІРµРєСѓ. РўРѕР»СЊРєРѕ РѕРґРЅРѕРјСѓ РёР· РЅР°С€РёС… РїРѕСЃР»РµРґРѕРІР°С‚РµР»РµР№ РјРѕРіСѓ РїРѕР·РІРѕР»РёС‚СЊ СЌС‚Рѕ.
+	AI_Output			(self, other,"DIA_BaalKagan_WannaHelp_13_02"); //РќРѕ Рё С‚РІРѕСЏ РїРѕРјРѕС‰СЊ РјРѕР¶РµС‚ РјРЅРµ РїСЂРёРіРѕРґРёС‚СЊСЃСЏ.
+	AI_Output			(self, other,"DIA_BaalKagan_WannaHelp_13_03"); //Р’ СЌС‚РѕРј Р»Р°РіРµСЂРµ РЅРµ РІСЃРµ РµС‰Рµ Р·РЅР°СЋС‚ Рѕ Р±РѕР»РѕС‚РЅРёРєРµ. РџРѕРїСЂРѕР±РѕРІР°РІ РµРіРѕ РѕРґРёРЅ СЂР°Р·, РѕРЅРё Р±СѓРґСѓС‚ РїСЂРёС…РѕРґРёС‚СЊ РєРѕ РјРЅРµ РµС‰Рµ Рё РµС‰Рµ. РЎРїСЂРѕСЃ РЅР° РЅРµРіРѕ РїРѕРІС‹СЃРёС‚СЃСЏ.
+	AI_Output			(other, self,"DIA_BaalKagan_WannaHelp_15_04"); //Р”СѓРјР°СЋ, С‚РµРїРµСЂСЊ Сѓ С‚РµР±СЏ РЅРёРєР°Рє РЅРµ РїРѕР»СѓС‡РёС‚СЃСЏ СЃРїСЂР°РІРёС‚СЊСЃСЏ СЃ СЌС‚РёРј.
+	AI_Output			(self, other,"DIA_BaalKagan_WannaHelp_13_05"); //РќР°С€Рё Р±СЂР°С‚СЊСЏ РїРѕР·Р°Р±РѕС‚СЏС‚СЃСЏ РѕР± РРґРѕР»Рµ РСЃРёРґСЂРѕ. РЇ СѓР¶Рµ РѕС‚РїСЂР°РІРёР» СЃРѕРѕР±С‰РµРЅРёРµ РљРѕСЂ Р“Р°Р»РѕРјСѓ.
 };
 
 // ************************************************************
@@ -189,7 +189,7 @@ INSTANCE DIA_BaalKagan_WasDrin(C_INFO)
 	condition	= DIA_BaalKagan_WasDrin_Condition;
 	information	= DIA_BaalKagan_WasDrin_Info;
 	permanent	= 0;
-	description = "А что я получу, если раздам твой болотник?";
+	description = "Рђ С‡С‚Рѕ СЏ РїРѕР»СѓС‡Сѓ, РµСЃР»Рё СЂР°Р·РґР°Рј С‚РІРѕР№ Р±РѕР»РѕС‚РЅРёРє?";
 };                       
 
 FUNC INT DIA_BaalKagan_WasDrin_Condition()
@@ -202,15 +202,15 @@ FUNC INT DIA_BaalKagan_WasDrin_Condition()
 
 FUNC VOID DIA_BaalKagan_WasDrin_Info()
 {	
-	AI_Output			(other, self,"DIA_BaalKagan_WasDrin_15_00"); //А что я получу, если раздам твой болотник?
-	AI_Output			(self, other,"DIA_BaalKagan_WasDrin_13_01"); //Я сумею щедро наградить тебя.
-	AI_Output			(self, other,"DIA_BaalKagan_WasDrin_13_02"); //Ты можешь взять у меня свитки, хранящие тайную магию Спящего.
+	AI_Output			(other, self,"DIA_BaalKagan_WasDrin_15_00"); //Рђ С‡С‚Рѕ СЏ РїРѕР»СѓС‡Сѓ, РµСЃР»Рё СЂР°Р·РґР°Рј С‚РІРѕР№ Р±РѕР»РѕС‚РЅРёРє?
+	AI_Output			(self, other,"DIA_BaalKagan_WasDrin_13_01"); //РЇ СЃСѓРјРµСЋ С‰РµРґСЂРѕ РЅР°РіСЂР°РґРёС‚СЊ С‚РµР±СЏ.
+	AI_Output			(self, other,"DIA_BaalKagan_WasDrin_13_02"); //РўС‹ РјРѕР¶РµС€СЊ РІР·СЏС‚СЊ Сѓ РјРµРЅСЏ СЃРІРёС‚РєРё, С…СЂР°РЅСЏС‰РёРµ С‚Р°Р№РЅСѓСЋ РјР°РіРёСЋ РЎРїСЏС‰РµРіРѕ.
 	if (Npc_GetTrueGuild(hero) == GIL_NONE)
 	{
-		AI_Output		(self, other,"DIA_BaalKagan_WasDrin_13_03"); //Еще я могу помочь тебе вступить в наше Братство, если ты этого пожелаешь. У меня хорошие отношения с Кор Галомом и Идолом Тионом, которые отвечают за прием послушников.
-		AI_Output		(self, other,"DIA_BaalKagan_WasDrin_13_04"); //Юберион прислушивается к их советам.
+		AI_Output		(self, other,"DIA_BaalKagan_WasDrin_13_03"); //Р•С‰Рµ СЏ РјРѕРіСѓ РїРѕРјРѕС‡СЊ С‚РµР±Рµ РІСЃС‚СѓРїРёС‚СЊ РІ РЅР°С€Рµ Р‘СЂР°С‚СЃС‚РІРѕ, РµСЃР»Рё С‚С‹ СЌС‚РѕРіРѕ РїРѕР¶РµР»Р°РµС€СЊ. РЈ РјРµРЅСЏ С…РѕСЂРѕС€РёРµ РѕС‚РЅРѕС€РµРЅРёСЏ СЃ РљРѕСЂ Р“Р°Р»РѕРјРѕРј Рё РРґРѕР»РѕРј РўРёРѕРЅРѕРј, РєРѕС‚РѕСЂС‹Рµ РѕС‚РІРµС‡Р°СЋС‚ Р·Р° РїСЂРёРµРј РїРѕСЃР»СѓС€РЅРёРєРѕРІ.
+		AI_Output		(self, other,"DIA_BaalKagan_WasDrin_13_04"); //Р®Р±РµСЂРёРѕРЅ РїСЂРёСЃР»СѓС€РёРІР°РµС‚СЃСЏ Рє РёС… СЃРѕРІРµС‚Р°Рј.
 	};
-	AI_Output			(self, other,"DIA_BaalKagan_WasDrin_13_05"); //Если все это тебе не по нраву, ты можешь выбрать руду. Тогда я заплачу тебе 100 кусков за твои старания.
+	AI_Output			(self, other,"DIA_BaalKagan_WasDrin_13_05"); //Р•СЃР»Рё РІСЃРµ СЌС‚Рѕ С‚РµР±Рµ РЅРµ РїРѕ РЅСЂР°РІСѓ, С‚С‹ РјРѕР¶РµС€СЊ РІС‹Р±СЂР°С‚СЊ СЂСѓРґСѓ. РўРѕРіРґР° СЏ Р·Р°РїР»Р°С‡Сѓ С‚РµР±Рµ 100 РєСѓСЃРєРѕРІ Р·Р° С‚РІРѕРё СЃС‚Р°СЂР°РЅРёСЏ.
 };
 
 // ************************************************************
@@ -226,7 +226,7 @@ INSTANCE DIA_BaalKagan_GimmeKraut(C_INFO)
 	condition	= DIA_BaalKagan_GimmeKraut_Condition;
 	information	= DIA_BaalKagan_GimmeKraut_Info;
 	permanent	= 0;
-	description = "Хорошо. Давай болотник. Кому его нужно раздать?";
+	description = "РҐРѕСЂРѕС€Рѕ. Р”Р°РІР°Р№ Р±РѕР»РѕС‚РЅРёРє. РљРѕРјСѓ РµРіРѕ РЅСѓР¶РЅРѕ СЂР°Р·РґР°С‚СЊ?";
 };                       
 
 FUNC INT DIA_BaalKagan_GimmeKraut_Condition()
@@ -239,15 +239,15 @@ FUNC INT DIA_BaalKagan_GimmeKraut_Condition()
 
 FUNC VOID DIA_BaalKagan_GimmeKraut_Info()
 {	
-	AI_Output			(other, self,"DIA_BaalKagan_GimmeKraut_15_00"); //Хорошо. Давай болотник. Кому его нужно раздать?
-	AI_Output			(self, other,"DIA_BaalKagan_GimmeKraut_13_01"); //Думаю, тебе легко удастся найти тех, кто возьмет у тебя болотник. Но каждый из них может получить только одну сигарету, не больше.
-	AI_Output			(self, other,"DIA_BaalKagan_GimmeKraut_13_02"); //И еще: если кто-то заберет у тебя этот болотник или ты сам его используешь, то можешь считать, что мы ни о чем не договаривались.
-	AI_Output			(other, self,"DIA_BaalKagan_GimmeKraut_15_03"); //Конечно.
+	AI_Output			(other, self,"DIA_BaalKagan_GimmeKraut_15_00"); //РҐРѕСЂРѕС€Рѕ. Р”Р°РІР°Р№ Р±РѕР»РѕС‚РЅРёРє. РљРѕРјСѓ РµРіРѕ РЅСѓР¶РЅРѕ СЂР°Р·РґР°С‚СЊ?
+	AI_Output			(self, other,"DIA_BaalKagan_GimmeKraut_13_01"); //Р”СѓРјР°СЋ, С‚РµР±Рµ Р»РµРіРєРѕ СѓРґР°СЃС‚СЃСЏ РЅР°Р№С‚Рё С‚РµС…, РєС‚Рѕ РІРѕР·СЊРјРµС‚ Сѓ С‚РµР±СЏ Р±РѕР»РѕС‚РЅРёРє. РќРѕ РєР°Р¶РґС‹Р№ РёР· РЅРёС… РјРѕР¶РµС‚ РїРѕР»СѓС‡РёС‚СЊ С‚РѕР»СЊРєРѕ РѕРґРЅСѓ СЃРёРіР°СЂРµС‚Сѓ, РЅРµ Р±РѕР»СЊС€Рµ.
+	AI_Output			(self, other,"DIA_BaalKagan_GimmeKraut_13_02"); //Р РµС‰Рµ: РµСЃР»Рё РєС‚Рѕ-С‚Рѕ Р·Р°Р±РµСЂРµС‚ Сѓ С‚РµР±СЏ СЌС‚РѕС‚ Р±РѕР»РѕС‚РЅРёРє РёР»Рё С‚С‹ СЃР°Рј РµРіРѕ РёСЃРїРѕР»СЊР·СѓРµС€СЊ, С‚Рѕ РјРѕР¶РµС€СЊ СЃС‡РёС‚Р°С‚СЊ, С‡С‚Рѕ РјС‹ РЅРё Рѕ С‡РµРј РЅРµ РґРѕРіРѕРІР°СЂРёРІР°Р»РёСЃСЊ.
+	AI_Output			(other, self,"DIA_BaalKagan_GimmeKraut_15_03"); //РљРѕРЅРµС‡РЅРѕ.
 	BaalKagan_VerteilKraut = LOG_RUNNING;
 	
 	Log_CreateTopic		(CH1_SpreadJoints, LOG_MISSION);
 	Log_SetTopicStatus	(CH1_SpreadJoints, LOG_RUNNING);
-	B_LogEntry			(CH1_SpreadJoints, "Послушник Идол Каган дал мне десять порций болотника, чтобы я раздал его людям в лагере.");		
+	B_LogEntry			(CH1_SpreadJoints, "РџРѕСЃР»СѓС€РЅРёРє РРґРѕР» РљР°РіР°РЅ РґР°Р» РјРЅРµ РґРµСЃСЏС‚СЊ РїРѕСЂС†РёР№ Р±РѕР»РѕС‚РЅРёРєР°, С‡С‚РѕР±С‹ СЏ СЂР°Р·РґР°Р» РµРіРѕ Р»СЋРґСЏРј РІ Р»Р°РіРµСЂРµ.");		
 	
 	CreateInvItems		(self, itmijoint_1, 10);
 	B_GiveInvItems      (self, hero, itmijoint_1, 10);
@@ -264,7 +264,7 @@ INSTANCE DIA_BaalKagan_SUCCESS(C_INFO)
 	condition	= DIA_BaalKagan_SUCCESS_Condition;
 	information	= DIA_BaalKagan_SUCCESS_Info;
 	permanent	= 1;
-	description = "Я раздал весь болотник.";
+	description = "РЇ СЂР°Р·РґР°Р» РІРµСЃСЊ Р±РѕР»РѕС‚РЅРёРє.";
 };                       
 
 FUNC INT DIA_BaalKagan_SUCCESS_Condition()
@@ -277,58 +277,58 @@ FUNC INT DIA_BaalKagan_SUCCESS_Condition()
 
 FUNC VOID DIA_BaalKagan_SUCCESS_Info()
 {	
-	AI_Output			(other, self,"DIA_BaalKagan_SUCCESS_15_00"); //Я раздал весь болотник.
+	AI_Output			(other, self,"DIA_BaalKagan_SUCCESS_15_00"); //РЇ СЂР°Р·РґР°Р» РІРµСЃСЊ Р±РѕР»РѕС‚РЅРёРє.
 	if (NC_Joints_verteilt >= 8)
 	{
-		AI_Output			(self, other,"DIA_BaalKagan_SUCCESS_13_01"); //У меня уже побывали новые покупатели, ты хорошо справился со своей задачей.
-		AI_Output			(self, other,"DIA_BaalKagan_SUCCESS_13_02"); //Как я могу отблагодарить тебя?
+		AI_Output			(self, other,"DIA_BaalKagan_SUCCESS_13_01"); //РЈ РјРµРЅСЏ СѓР¶Рµ РїРѕР±С‹РІР°Р»Рё РЅРѕРІС‹Рµ РїРѕРєСѓРїР°С‚РµР»Рё, С‚С‹ С…РѕСЂРѕС€Рѕ СЃРїСЂР°РІРёР»СЃСЏ СЃРѕ СЃРІРѕРµР№ Р·Р°РґР°С‡РµР№.
+		AI_Output			(self, other,"DIA_BaalKagan_SUCCESS_13_02"); //РљР°Рє СЏ РјРѕРіСѓ РѕС‚Р±Р»Р°РіРѕРґР°СЂРёС‚СЊ С‚РµР±СЏ?
 		
 		Info_ClearChoices(DIA_BaalKagan_SUCCESS);
-		Info_AddChoice   (DIA_BaalKagan_SUCCESS, "Дай мне сто кусков руды."	,DIA_BaalKagan_SUCCESS_Erz);
+		Info_AddChoice   (DIA_BaalKagan_SUCCESS, "Р”Р°Р№ РјРЅРµ СЃС‚Рѕ РєСѓСЃРєРѕРІ СЂСѓРґС‹."	,DIA_BaalKagan_SUCCESS_Erz);
 		if (Npc_GetTrueGuild(hero) == GIL_NONE)
 		{
-			Info_AddChoice(DIA_BaalKagan_SUCCESS, "Помоги мне присоединиться к Братству."	,DIA_BaalKagan_SUCCESS_Join);
+			Info_AddChoice(DIA_BaalKagan_SUCCESS, "РџРѕРјРѕРіРё РјРЅРµ РїСЂРёСЃРѕРµРґРёРЅРёС‚СЊСЃСЏ Рє Р‘СЂР°С‚СЃС‚РІСѓ."	,DIA_BaalKagan_SUCCESS_Join);
 		};
-		Info_AddChoice	 (DIA_BaalKagan_SUCCESS, "Ты говорил что-то о магических свитках. Расскажи о них."	,DIA_BaalKagan_SUCCESS_WhatSpells);
+		Info_AddChoice	 (DIA_BaalKagan_SUCCESS, "РўС‹ РіРѕРІРѕСЂРёР» С‡С‚Рѕ-С‚Рѕ Рѕ РјР°РіРёС‡РµСЃРєРёС… СЃРІРёС‚РєР°С…. Р Р°СЃСЃРєР°Р¶Рё Рѕ РЅРёС…."	,DIA_BaalKagan_SUCCESS_WhatSpells);
 		
 		BaalKagan_VerteilKraut = LOG_SUCCESS;
 		Log_SetTopicStatus	(CH1_SpreadJoints, LOG_SUCCESS);
-    	B_LogEntry			(CH1_SpreadJoints, "У Идола Кагана появились новые покупатели, а я получил свою награду.");
+    	B_LogEntry			(CH1_SpreadJoints, "РЈ РРґРѕР»Р° РљР°РіР°РЅР° РїРѕСЏРІРёР»РёСЃСЊ РЅРѕРІС‹Рµ РїРѕРєСѓРїР°С‚РµР»Рё, Р° СЏ РїРѕР»СѓС‡РёР» СЃРІРѕСЋ РЅР°РіСЂР°РґСѓ.");
 		B_GiveXP			(XP_DistributedWeedForKagan);
 	}
 	else
 	{
-		AI_Output			(self, other,"DIA_BaalKagan_NO_SUCCESS_13_00"); //Я еще не видел новых покупателей. Кажется, ты раздал не все.
+		AI_Output			(self, other,"DIA_BaalKagan_NO_SUCCESS_13_00"); //РЇ РµС‰Рµ РЅРµ РІРёРґРµР» РЅРѕРІС‹С… РїРѕРєСѓРїР°С‚РµР»РµР№. РљР°Р¶РµС‚СЃСЏ, С‚С‹ СЂР°Р·РґР°Р» РЅРµ РІСЃРµ.
 	};
 };
 
 func void DIA_BaalKagan_SUCCESS_WhatSpells()
 {
-	AI_Output			(other, self,"DIA_BaalKagan_SUCCESS_WhatSpells_15_00"); //Ты говорил что-то о магических свитках. Расскажи о них поподробнее.
-	AI_Output			(self, other,"DIA_BaalKagan_SUCCESS_WhatSpells_13_01"); //Кулак ветра, Чары, Телекинез, Пирокинез и Сон. Ты можешь выбрать три свитка.
-	Info_AddChoice   (DIA_BaalKagan_SUCCESS, "Я возьму магические свитки."	,DIA_BaalKagan_SUCCESS_TakeScrolls);
+	AI_Output			(other, self,"DIA_BaalKagan_SUCCESS_WhatSpells_15_00"); //РўС‹ РіРѕРІРѕСЂРёР» С‡С‚Рѕ-С‚Рѕ Рѕ РјР°РіРёС‡РµСЃРєРёС… СЃРІРёС‚РєР°С…. Р Р°СЃСЃРєР°Р¶Рё Рѕ РЅРёС… РїРѕРїРѕРґСЂРѕР±РЅРµРµ.
+	AI_Output			(self, other,"DIA_BaalKagan_SUCCESS_WhatSpells_13_01"); //РљСѓР»Р°Рє РІРµС‚СЂР°, Р§Р°СЂС‹, РўРµР»РµРєРёРЅРµР·, РџРёСЂРѕРєРёРЅРµР· Рё РЎРѕРЅ. РўС‹ РјРѕР¶РµС€СЊ РІС‹Р±СЂР°С‚СЊ С‚СЂРё СЃРІРёС‚РєР°.
+	Info_AddChoice   (DIA_BaalKagan_SUCCESS, "РЇ РІРѕР·СЊРјСѓ РјР°РіРёС‡РµСЃРєРёРµ СЃРІРёС‚РєРё."	,DIA_BaalKagan_SUCCESS_TakeScrolls);
 };
 
 func void DIA_BaalKagan_SUCCESS_Join()
 {
 	Info_ClearChoices(DIA_BaalKagan_SUCCESS);
-	AI_Output			(other, self,"DIA_BaalKagan_SUCCESS_Join_15_00"); //Помоги мне присоединиться к Братству.
-	AI_Output			(self, other,"DIA_BaalKagan_SUCCESS_Join_13_01"); //Твоя скромность похвальна. Я помогу тебе, слушай же. Идол Тион является одним из младших Гуру нашего Братства.
-	AI_Output			(self, other,"DIA_BaalKagan_SUCCESS_Join_13_02"); //Недавно Юберион назначил его своим советником. Но от этого его поведение только ухудшилось.
-	AI_Output			(self, other,"DIA_BaalKagan_SUCCESS_Join_13_03"); //Теперь он гордится собой, как никогда, и поэтому не разговаривает ни с кем, кроме своих учеников.
-	AI_Output			(self, other,"DIA_BaalKagan_SUCCESS_Join_13_04"); //Если ты передашь ему эту вещь, он сделает для тебя исключение.
+	AI_Output			(other, self,"DIA_BaalKagan_SUCCESS_Join_15_00"); //РџРѕРјРѕРіРё РјРЅРµ РїСЂРёСЃРѕРµРґРёРЅРёС‚СЊСЃСЏ Рє Р‘СЂР°С‚СЃС‚РІСѓ.
+	AI_Output			(self, other,"DIA_BaalKagan_SUCCESS_Join_13_01"); //РўРІРѕСЏ СЃРєСЂРѕРјРЅРѕСЃС‚СЊ РїРѕС…РІР°Р»СЊРЅР°. РЇ РїРѕРјРѕРіСѓ С‚РµР±Рµ, СЃР»СѓС€Р°Р№ Р¶Рµ. РРґРѕР» РўРёРѕРЅ СЏРІР»СЏРµС‚СЃСЏ РѕРґРЅРёРј РёР· РјР»Р°РґС€РёС… Р“СѓСЂСѓ РЅР°С€РµРіРѕ Р‘СЂР°С‚СЃС‚РІР°.
+	AI_Output			(self, other,"DIA_BaalKagan_SUCCESS_Join_13_02"); //РќРµРґР°РІРЅРѕ Р®Р±РµСЂРёРѕРЅ РЅР°Р·РЅР°С‡РёР» РµРіРѕ СЃРІРѕРёРј СЃРѕРІРµС‚РЅРёРєРѕРј. РќРѕ РѕС‚ СЌС‚РѕРіРѕ РµРіРѕ РїРѕРІРµРґРµРЅРёРµ С‚РѕР»СЊРєРѕ СѓС…СѓРґС€РёР»РѕСЃСЊ.
+	AI_Output			(self, other,"DIA_BaalKagan_SUCCESS_Join_13_03"); //РўРµРїРµСЂСЊ РѕРЅ РіРѕСЂРґРёС‚СЃСЏ СЃРѕР±РѕР№, РєР°Рє РЅРёРєРѕРіРґР°, Рё РїРѕСЌС‚РѕРјСѓ РЅРµ СЂР°Р·РіРѕРІР°СЂРёРІР°РµС‚ РЅРё СЃ РєРµРј, РєСЂРѕРјРµ СЃРІРѕРёС… СѓС‡РµРЅРёРєРѕРІ.
+	AI_Output			(self, other,"DIA_BaalKagan_SUCCESS_Join_13_04"); //Р•СЃР»Рё С‚С‹ РїРµСЂРµРґР°С€СЊ РµРјСѓ СЌС‚Сѓ РІРµС‰СЊ, РѕРЅ СЃРґРµР»Р°РµС‚ РґР»СЏ С‚РµР±СЏ РёСЃРєР»СЋС‡РµРЅРёРµ.
 	CreateInvItem       (self, SpecialJoint);
 	B_GiveInvItems		(self, other, SpecialJoint, 1);
 
 	Log_CreateTopic		(CH1_JoinPsi,	LOG_MISSION);
 	Log_SetTopicStatus	(CH1_JoinPsi,	LOG_RUNNING);
-	B_LogEntry			(CH1_JoinPsi,	"Идол Каган дал мне для Идола Тиона улучшенный 'Зов мечты'. Это поможет мне вступить в Братство Спящего.");
+	B_LogEntry			(CH1_JoinPsi,	"РРґРѕР» РљР°РіР°РЅ РґР°Р» РјРЅРµ РґР»СЏ РРґРѕР»Р° РўРёРѕРЅР° СѓР»СѓС‡С€РµРЅРЅС‹Р№ 'Р—РѕРІ РјРµС‡С‚С‹'. Р­С‚Рѕ РїРѕРјРѕР¶РµС‚ РјРЅРµ РІСЃС‚СѓРїРёС‚СЊ РІ Р‘СЂР°С‚СЃС‚РІРѕ РЎРїСЏС‰РµРіРѕ.");
 };
 
 func void DIA_BaalKagan_SUCCESS_Erz()
 {
-	AI_Output			(other, self,"DIA_BaalKagan_SUCCESS_Erz_15_00"); //Дай мне сто кусков руды.
-	AI_Output			(self, other,"DIA_BaalKagan_SUCCESS_Erz_13_01"); //Ты сделал выбор. Бери.
+	AI_Output			(other, self,"DIA_BaalKagan_SUCCESS_Erz_15_00"); //Р”Р°Р№ РјРЅРµ СЃС‚Рѕ РєСѓСЃРєРѕРІ СЂСѓРґС‹.
+	AI_Output			(self, other,"DIA_BaalKagan_SUCCESS_Erz_13_01"); //РўС‹ СЃРґРµР»Р°Р» РІС‹Р±РѕСЂ. Р‘РµСЂРё.
 	
 	CreateInvItems		(self, itminugget, 100);
 	B_GiveInvItems      (self, other, itminugget, 100);
@@ -338,14 +338,14 @@ func void DIA_BaalKagan_SUCCESS_Erz()
 //-----------------------------------------------------------------------
 func void DIA_BaalKagan_SUCCESS_TakeScrolls()
 {
-	AI_Output			(other, self,"DIA_BaalKagan_SUCCESS_TakeScrolls_15_00"); //Я возьму магические свитки.
-	AI_Output			(self, other,"DIA_BaalKagan_SUCCESS_TakeScrolls_13_01"); //Ты принял хорошее решение. Выбирай три свитка.
+	AI_Output			(other, self,"DIA_BaalKagan_SUCCESS_TakeScrolls_15_00"); //РЇ РІРѕР·СЊРјСѓ РјР°РіРёС‡РµСЃРєРёРµ СЃРІРёС‚РєРё.
+	AI_Output			(self, other,"DIA_BaalKagan_SUCCESS_TakeScrolls_13_01"); //РўС‹ РїСЂРёРЅСЏР» С…РѕСЂРѕС€РµРµ СЂРµС€РµРЅРёРµ. Р’С‹Р±РёСЂР°Р№ С‚СЂРё СЃРІРёС‚РєР°.
 	Info_ClearChoices(DIA_BaalKagan_SUCCESS);
-	Info_AddChoice   (DIA_BaalKagan_SUCCESS, "Кулак ветра"	,DIA_BaalKagan_SUCCESS_TakeScrolls_Windfaust);
-	Info_AddChoice   (DIA_BaalKagan_SUCCESS, "Телекинез"	,DIA_BaalKagan_SUCCESS_TakeScrolls_Telekinese);
-	Info_AddChoice   (DIA_BaalKagan_SUCCESS, "Пирокинез"	,DIA_BaalKagan_SUCCESS_TakeScrolls_Pyrokinese);
-	Info_AddChoice   (DIA_BaalKagan_SUCCESS, "Сон"		,DIA_BaalKagan_SUCCESS_TakeScrolls_Schlaf);
-	Info_AddChoice   (DIA_BaalKagan_SUCCESS, "Чары"		,DIA_BaalKagan_SUCCESS_TakeScrolls_Charme);
+	Info_AddChoice   (DIA_BaalKagan_SUCCESS, "РљСѓР»Р°Рє РІРµС‚СЂР°"	,DIA_BaalKagan_SUCCESS_TakeScrolls_Windfaust);
+	Info_AddChoice   (DIA_BaalKagan_SUCCESS, "РўРµР»РµРєРёРЅРµР·"	,DIA_BaalKagan_SUCCESS_TakeScrolls_Telekinese);
+	Info_AddChoice   (DIA_BaalKagan_SUCCESS, "РџРёСЂРѕРєРёРЅРµР·"	,DIA_BaalKagan_SUCCESS_TakeScrolls_Pyrokinese);
+	Info_AddChoice   (DIA_BaalKagan_SUCCESS, "РЎРѕРЅ"		,DIA_BaalKagan_SUCCESS_TakeScrolls_Schlaf);
+	Info_AddChoice   (DIA_BaalKagan_SUCCESS, "Р§Р°СЂС‹"		,DIA_BaalKagan_SUCCESS_TakeScrolls_Charme);
 };
 //-----------------------------------------------------------------------
 	var int BaalKagan_drei;
@@ -358,7 +358,7 @@ func void DIA_BaalKagan_SUCCESS_TakeScrolls_Windfaust()
 	BaalKagan_drei = BaalKagan_drei+1;
 	if (BaalKagan_drei >= 3)	 
 	{	
-		AI_Output			(self, other,"DIA_BaalKagan_SUCCESS_TakeScrolls_DREI_13_00"); //Ты взял три свитка. Используй их с умом.
+		AI_Output			(self, other,"DIA_BaalKagan_SUCCESS_TakeScrolls_DREI_13_00"); //РўС‹ РІР·СЏР» С‚СЂРё СЃРІРёС‚РєР°. РСЃРїРѕР»СЊР·СѓР№ РёС… СЃ СѓРјРѕРј.
 		Info_ClearChoices	(DIA_BaalKagan_SUCCESS);	
 	};
 };
@@ -371,7 +371,7 @@ func void DIA_BaalKagan_SUCCESS_TakeScrolls_Telekinese()
 	BaalKagan_drei = BaalKagan_drei+1;
 	if (BaalKagan_drei >= 3)	 
 	{	
-		AI_Output			(self, other,"DIA_BaalKagan_SUCCESS_TakeScrolls_DREI_13_00"); //Ты взял три свитка. Используй их с умом.
+		AI_Output			(self, other,"DIA_BaalKagan_SUCCESS_TakeScrolls_DREI_13_00"); //РўС‹ РІР·СЏР» С‚СЂРё СЃРІРёС‚РєР°. РСЃРїРѕР»СЊР·СѓР№ РёС… СЃ СѓРјРѕРј.
 		Info_ClearChoices	(DIA_BaalKagan_SUCCESS);	
 	};
 };
@@ -384,7 +384,7 @@ func void DIA_BaalKagan_SUCCESS_TakeScrolls_Pyrokinese()
 	BaalKagan_drei = BaalKagan_drei+1;
 	if (BaalKagan_drei >= 3)	 
 	{	
-		AI_Output			(self, other,"DIA_BaalKagan_SUCCESS_TakeScrolls_DREI_13_00"); //Ты взял три свитка. Используй их с умом.
+		AI_Output			(self, other,"DIA_BaalKagan_SUCCESS_TakeScrolls_DREI_13_00"); //РўС‹ РІР·СЏР» С‚СЂРё СЃРІРёС‚РєР°. РСЃРїРѕР»СЊР·СѓР№ РёС… СЃ СѓРјРѕРј.
 		Info_ClearChoices	(DIA_BaalKagan_SUCCESS);	
 	};
 };
@@ -397,7 +397,7 @@ func void DIA_BaalKagan_SUCCESS_TakeScrolls_Schlaf()
 	BaalKagan_drei = BaalKagan_drei+1;
 	if (BaalKagan_drei >= 3)	 
 	{	
-		AI_Output			(self, other,"DIA_BaalKagan_SUCCESS_TakeScrolls_DREI_13_00"); //Ты взял три свитка. Используй их с умом.
+		AI_Output			(self, other,"DIA_BaalKagan_SUCCESS_TakeScrolls_DREI_13_00"); //РўС‹ РІР·СЏР» С‚СЂРё СЃРІРёС‚РєР°. РСЃРїРѕР»СЊР·СѓР№ РёС… СЃ СѓРјРѕРј.
 		Info_ClearChoices	(DIA_BaalKagan_SUCCESS);	
 	};
 };
@@ -410,7 +410,7 @@ func void DIA_BaalKagan_SUCCESS_TakeScrolls_Charme()
 	BaalKagan_drei = BaalKagan_drei+1;
 	if (BaalKagan_drei >= 3)	 
 	{	
-		AI_Output			(self, other,"DIA_BaalKagan_SUCCESS_TakeScrolls_DREI_13_00"); //Ты взял три свитка. Используй их с умом.
+		AI_Output			(self, other,"DIA_BaalKagan_SUCCESS_TakeScrolls_DREI_13_00"); //РўС‹ РІР·СЏР» С‚СЂРё СЃРІРёС‚РєР°. РСЃРїРѕР»СЊР·СѓР№ РёС… СЃ СѓРјРѕРј.
 		Info_ClearChoices	(DIA_BaalKagan_SUCCESS);	
 	};
 };

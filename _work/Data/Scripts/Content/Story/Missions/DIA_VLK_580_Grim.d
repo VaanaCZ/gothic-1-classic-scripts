@@ -47,52 +47,52 @@ FUNC INT DIA_Grim_Falle_Condition()
 
 FUNC VOID DIA_Grim_Falle_Info()
 {
-	AI_Output (self, other,"DIA_Grim_Falle_06_00"); //Эй, ты! Я слышал, ты хочешь присоединиться к нашему лагерю?
-	AI_Output (other, self,"DIA_Grim_Falle_15_01"); //Да, и что из того?
-	AI_Output (self, other,"DIA_Grim_Falle_06_02"); //Я могу помочь тебе...
-	AI_Output (other, self,"DIA_Grim_Falle_15_03"); //Как помочь?
-	AI_Output (self, other,"DIA_Grim_Falle_06_04"); //За воротами лагеря сидят два рудокопа. Они украли кое-что у Баронов. В общем они украли один амулет, который пришел с последним грузом.
-	AI_Output (self, other,"DIA_Grim_Falle_06_05"); //Наверное, этот амулет они держат при себе. Если мы вместе нападем на них, мы с ними быстро справимся. Одному мне это не под силу. Что скажешь?
+	AI_Output (self, other,"DIA_Grim_Falle_06_00"); //Р­Р№, С‚С‹! РЇ СЃР»С‹С€Р°Р», С‚С‹ С…РѕС‡РµС€СЊ РїСЂРёСЃРѕРµРґРёРЅРёС‚СЊСЃСЏ Рє РЅР°С€РµРјСѓ Р»Р°РіРµСЂСЋ?
+	AI_Output (other, self,"DIA_Grim_Falle_15_01"); //Р”Р°, Рё С‡С‚Рѕ РёР· С‚РѕРіРѕ?
+	AI_Output (self, other,"DIA_Grim_Falle_06_02"); //РЇ РјРѕРіСѓ РїРѕРјРѕС‡СЊ С‚РµР±Рµ...
+	AI_Output (other, self,"DIA_Grim_Falle_15_03"); //РљР°Рє РїРѕРјРѕС‡СЊ?
+	AI_Output (self, other,"DIA_Grim_Falle_06_04"); //Р—Р° РІРѕСЂРѕС‚Р°РјРё Р»Р°РіРµСЂСЏ СЃРёРґСЏС‚ РґРІР° СЂСѓРґРѕРєРѕРїР°. РћРЅРё СѓРєСЂР°Р»Рё РєРѕРµ-С‡С‚Рѕ Сѓ Р‘Р°СЂРѕРЅРѕРІ. Р’ РѕР±С‰РµРј РѕРЅРё СѓРєСЂР°Р»Рё РѕРґРёРЅ Р°РјСѓР»РµС‚, РєРѕС‚РѕСЂС‹Р№ РїСЂРёС€РµР» СЃ РїРѕСЃР»РµРґРЅРёРј РіСЂСѓР·РѕРј.
+	AI_Output (self, other,"DIA_Grim_Falle_06_05"); //РќР°РІРµСЂРЅРѕРµ, СЌС‚РѕС‚ Р°РјСѓР»РµС‚ РѕРЅРё РґРµСЂР¶Р°С‚ РїСЂРё СЃРµР±Рµ. Р•СЃР»Рё РјС‹ РІРјРµСЃС‚Рµ РЅР°РїР°РґРµРј РЅР° РЅРёС…, РјС‹ СЃ РЅРёРјРё Р±С‹СЃС‚СЂРѕ СЃРїСЂР°РІРёРјСЃСЏ. РћРґРЅРѕРјСѓ РјРЅРµ СЌС‚Рѕ РЅРµ РїРѕРґ СЃРёР»Сѓ. Р§С‚Рѕ СЃРєР°Р¶РµС€СЊ?
 		
 	Info_ClearChoices	(DIA_Grim_Falle );
-	Info_AddChoice		(DIA_Grim_Falle,"Мне это не нужно. Пусть этим займется кто-нибудь еще."	,DIA_Grim_Falle_Deny);
-	Info_AddChoice		(DIA_Grim_Falle,"А что будет, когда мы заберем у них амулет?"	,DIA_Grim_Falle_HowShare);
-	Info_AddChoice		(DIA_Grim_Falle,"Я готов."							,DIA_Grim_Falle_Accepr);
+	Info_AddChoice		(DIA_Grim_Falle,"РњРЅРµ СЌС‚Рѕ РЅРµ РЅСѓР¶РЅРѕ. РџСѓСЃС‚СЊ СЌС‚РёРј Р·Р°Р№РјРµС‚СЃСЏ РєС‚Рѕ-РЅРёР±СѓРґСЊ РµС‰Рµ."	,DIA_Grim_Falle_Deny);
+	Info_AddChoice		(DIA_Grim_Falle,"Рђ С‡С‚Рѕ Р±СѓРґРµС‚, РєРѕРіРґР° РјС‹ Р·Р°Р±РµСЂРµРј Сѓ РЅРёС… Р°РјСѓР»РµС‚?"	,DIA_Grim_Falle_HowShare);
+	Info_AddChoice		(DIA_Grim_Falle,"РЇ РіРѕС‚РѕРІ."							,DIA_Grim_Falle_Accepr);
 };
 
 func void DIA_Grim_Falle_Deny()
 {
-	AI_Output (other, self,"DIA_Grim_Falle_Deny_15_00"); //Мне это не нужно. Пусть этим займется кто-нибудь еще.
-	AI_Output (self, other,"DIA_Grim_Falle_Deny_06_01"); //С таким отношением к делу ты здесь долго не протянешь. Если передумаешь, ты знаешь, где меня найти.
+	AI_Output (other, self,"DIA_Grim_Falle_Deny_15_00"); //РњРЅРµ СЌС‚Рѕ РЅРµ РЅСѓР¶РЅРѕ. РџСѓСЃС‚СЊ СЌС‚РёРј Р·Р°Р№РјРµС‚СЃСЏ РєС‚Рѕ-РЅРёР±СѓРґСЊ РµС‰Рµ.
+	AI_Output (self, other,"DIA_Grim_Falle_Deny_06_01"); //РЎ С‚Р°РєРёРј РѕС‚РЅРѕС€РµРЅРёРµРј Рє РґРµР»Сѓ С‚С‹ Р·РґРµСЃСЊ РґРѕР»РіРѕ РЅРµ РїСЂРѕС‚СЏРЅРµС€СЊ. Р•СЃР»Рё РїРµСЂРµРґСѓРјР°РµС€СЊ, С‚С‹ Р·РЅР°РµС€СЊ, РіРґРµ РјРµРЅСЏ РЅР°Р№С‚Рё.
 	Info_ClearChoices	(DIA_Grim_Falle );
 };
 
 func void DIA_Grim_Falle_HowShare()
 {
-	AI_Output (other, self,"DIA_Grim_Falle_HowShare_15_00"); //А что будет, когда мы заберем у них амулет?
-	AI_Output (self, other,"DIA_Grim_Falle_HowShare_06_01"); //Это просто! Я верну амулет и получу награду. Ну, еще я упомяну там, что ты помогал мне. И ты будешь у Гомеза на хорошем счету.
+	AI_Output (other, self,"DIA_Grim_Falle_HowShare_15_00"); //Рђ С‡С‚Рѕ Р±СѓРґРµС‚, РєРѕРіРґР° РјС‹ Р·Р°Р±РµСЂРµРј Сѓ РЅРёС… Р°РјСѓР»РµС‚?
+	AI_Output (self, other,"DIA_Grim_Falle_HowShare_06_01"); //Р­С‚Рѕ РїСЂРѕСЃС‚Рѕ! РЇ РІРµСЂРЅСѓ Р°РјСѓР»РµС‚ Рё РїРѕР»СѓС‡Сѓ РЅР°РіСЂР°РґСѓ. РќСѓ, РµС‰Рµ СЏ СѓРїРѕРјСЏРЅСѓ С‚Р°Рј, С‡С‚Рѕ С‚С‹ РїРѕРјРѕРіР°Р» РјРЅРµ. Р С‚С‹ Р±СѓРґРµС€СЊ Сѓ Р“РѕРјРµР·Р° РЅР° С…РѕСЂРѕС€РµРј СЃС‡РµС‚Сѓ.
 	
 	Info_ClearChoices	(DIA_Grim_Falle );
-	Info_AddChoice		(DIA_Grim_Falle,"Мне это не нужно. Пусть этим займется кто-нибудь еще."	,DIA_Grim_Falle_Deny);
-	Info_AddChoice		(DIA_Grim_Falle,"Я не согласен. Ты даешь мне половину награды..."	,DIA_Grim_Falle_HalfHalf);
-	Info_AddChoice		(DIA_Grim_Falle,"Да, можешь."							,DIA_Grim_Falle_Accepr);
+	Info_AddChoice		(DIA_Grim_Falle,"РњРЅРµ СЌС‚Рѕ РЅРµ РЅСѓР¶РЅРѕ. РџСѓСЃС‚СЊ СЌС‚РёРј Р·Р°Р№РјРµС‚СЃСЏ РєС‚Рѕ-РЅРёР±СѓРґСЊ РµС‰Рµ."	,DIA_Grim_Falle_Deny);
+	Info_AddChoice		(DIA_Grim_Falle,"РЇ РЅРµ СЃРѕРіР»Р°СЃРµРЅ. РўС‹ РґР°РµС€СЊ РјРЅРµ РїРѕР»РѕРІРёРЅСѓ РЅР°РіСЂР°РґС‹..."	,DIA_Grim_Falle_HalfHalf);
+	Info_AddChoice		(DIA_Grim_Falle,"Р”Р°, РјРѕР¶РµС€СЊ."							,DIA_Grim_Falle_Accepr);
 };
 
 func void DIA_Grim_Falle_HalfHalf()
 {
-	AI_Output (other, self,"DIA_Grim_Falle_HalfHalf_15_00"); //Я не согласен. Ты даешь мне половину награды, или разбирайся с ними сам!
-	AI_Output (self, other,"DIA_Grim_Falle_HalfHalf_06_01"); //Ладно, как хочешь, пополам так пополам. Награды должно хватить на двоих. Ну, я могу на тебя рассчитывать?
+	AI_Output (other, self,"DIA_Grim_Falle_HalfHalf_15_00"); //РЇ РЅРµ СЃРѕРіР»Р°СЃРµРЅ. РўС‹ РґР°РµС€СЊ РјРЅРµ РїРѕР»РѕРІРёРЅСѓ РЅР°РіСЂР°РґС‹, РёР»Рё СЂР°Р·Р±РёСЂР°Р№СЃСЏ СЃ РЅРёРјРё СЃР°Рј!
+	AI_Output (self, other,"DIA_Grim_Falle_HalfHalf_06_01"); //Р›Р°РґРЅРѕ, РєР°Рє С…РѕС‡РµС€СЊ, РїРѕРїРѕР»Р°Рј С‚Р°Рє РїРѕРїРѕР»Р°Рј. РќР°РіСЂР°РґС‹ РґРѕР»Р¶РЅРѕ С…РІР°С‚РёС‚СЊ РЅР° РґРІРѕРёС…. РќСѓ, СЏ РјРѕРіСѓ РЅР° С‚РµР±СЏ СЂР°СЃСЃС‡РёС‚С‹РІР°С‚СЊ?
 };
 
 func void DIA_Grim_Falle_Accepr()
 {
-	AI_Output (other, self,"DIA_Grim_Falle_Accepr_15_00"); //Я готов.
-	AI_Output (self, other,"DIA_Grim_Falle_Accepr_06_01"); //Хорошо. 
+	AI_Output (other, self,"DIA_Grim_Falle_Accepr_15_00"); //РЇ РіРѕС‚РѕРІ.
+	AI_Output (self, other,"DIA_Grim_Falle_Accepr_06_01"); //РҐРѕСЂРѕС€Рѕ. 
 	Info_ClearChoices	(DIA_Grim_Falle );
 };
 
 // **************************************************
-// 				Bereit fьr Falle
+// 				Bereit fСЊr Falle
 // **************************************************
 
 INSTANCE DIA_Grim_ReadyToGo (C_INFO)
@@ -102,7 +102,7 @@ INSTANCE DIA_Grim_ReadyToGo (C_INFO)
 	condition		= DIA_Grim_ReadyToGo_Condition;
 	information		= DIA_Grim_ReadyToGo_Info;
 	permanent		= 0;
-	description		= "Я готов пойти с тобой за амулетом!";
+	description		= "РЇ РіРѕС‚РѕРІ РїРѕР№С‚Рё СЃ С‚РѕР±РѕР№ Р·Р° Р°РјСѓР»РµС‚РѕРј!";
 };
 
 FUNC INT DIA_Grim_ReadyToGo_Condition()
@@ -115,8 +115,8 @@ FUNC INT DIA_Grim_ReadyToGo_Condition()
 
 FUNC VOID DIA_Grim_ReadyToGo_Info()
 {
-	AI_Output (other, self,"DIA_Grim_ReadyToGo_15_00"); //Я готов пойти с тобой за амулетом!
-	AI_Output (self, other,"DIA_Grim_ReadyToGo_06_01"); //Ладно, иди за мной...
+	AI_Output (other, self,"DIA_Grim_ReadyToGo_15_00"); //РЇ РіРѕС‚РѕРІ РїРѕР№С‚Рё СЃ С‚РѕР±РѕР№ Р·Р° Р°РјСѓР»РµС‚РѕРј!
+	AI_Output (self, other,"DIA_Grim_ReadyToGo_06_01"); //Р›Р°РґРЅРѕ, РёРґРё Р·Р° РјРЅРѕР№...
 	
 	AI_StopProcessInfos	(self);
 	
@@ -147,14 +147,14 @@ FUNC int  DIA_Grim_AtOCdraussen_Condition()
 
 FUNC VOID  DIA_Grim_AtOCdraussen_Info()
 {
-	AI_Output (self, other,"DIA_Grim_AtOCdraussen_06_00"); //Вот мы и на месте. Твой друг Диего не скоро здесь появится.
+	AI_Output (self, other,"DIA_Grim_AtOCdraussen_06_00"); //Р’РѕС‚ РјС‹ Рё РЅР° РјРµСЃС‚Рµ. РўРІРѕР№ РґСЂСѓРі Р”РёРµРіРѕ РЅРµ СЃРєРѕСЂРѕ Р·РґРµСЃСЊ РїРѕСЏРІРёС‚СЃСЏ.
 	if ( ((Npc_GetDistToNpc(self,Bu520)<1000)&&(!Npc_IsDead(Bu520))) || ((Npc_GetDistToNpc(self,Bu534)<1000)&&(!Npc_IsDead(Bu534))) )
 	{
-		AI_Output (self, other,"DIA_Grim_AtOCdraussen_06_01"); //Бладвин просил передать тебе свой горячий привет!
+		AI_Output (self, other,"DIA_Grim_AtOCdraussen_06_01"); //Р‘Р»Р°РґРІРёРЅ РїСЂРѕСЃРёР» РїРµСЂРµРґР°С‚СЊ С‚РµР±Рµ СЃРІРѕР№ РіРѕСЂСЏС‡РёР№ РїСЂРёРІРµС‚!
 	}
 	else
 	{
-		AI_Output (self, other,"DIA_Grim_AtOCdraussen_06_02"); //Бладвин просил меня передать тебе привет!
+		AI_Output (self, other,"DIA_Grim_AtOCdraussen_06_02"); //Р‘Р»Р°РґРІРёРЅ РїСЂРѕСЃРёР» РјРµРЅСЏ РїРµСЂРµРґР°С‚СЊ С‚РµР±Рµ РїСЂРёРІРµС‚!
 	};
 
 	AI_StopProcessInfos	(self);
@@ -203,22 +203,22 @@ FUNC INT DIA_Grim_NACHFalle_Condition()
 
 FUNC VOID DIA_Grim_NACHFalle_Info()
 {
-	AI_Output (other, self,"DIA_Grim_NACHFalle_15_01"); //Так ты заманил меня в ловушку, предатель!
-	AI_Output (self, other,"DIA_Grim_NACHFalle_06_02"); //Эй! Пойми меня правильно. Мне ведь совсем не хочется навечно застрять в шахте.
-	AI_Output (self, other,"DIA_Grim_NACHFalle_06_03"); //Если я хорошо справлюсь с этим заданием, меня примут в лагерь.
-	AI_Output (self, other,"DIA_Grim_NACHFalle_06_04"); //Ты ведь сам виноват в том, что мне поручили убрать именно тебя. Не стоило тебе ссориться со стражниками.
-	AI_Output (self, other,"DIA_Grim_NACHFalle_06_05"); //Лично я против тебя ничего не имею. Так что мы решим - драться или разойтись с миром?
+	AI_Output (other, self,"DIA_Grim_NACHFalle_15_01"); //РўР°Рє С‚С‹ Р·Р°РјР°РЅРёР» РјРµРЅСЏ РІ Р»РѕРІСѓС€РєСѓ, РїСЂРµРґР°С‚РµР»СЊ!
+	AI_Output (self, other,"DIA_Grim_NACHFalle_06_02"); //Р­Р№! РџРѕР№РјРё РјРµРЅСЏ РїСЂР°РІРёР»СЊРЅРѕ. РњРЅРµ РІРµРґСЊ СЃРѕРІСЃРµРј РЅРµ С…РѕС‡РµС‚СЃСЏ РЅР°РІРµС‡РЅРѕ Р·Р°СЃС‚СЂСЏС‚СЊ РІ С€Р°С…С‚Рµ.
+	AI_Output (self, other,"DIA_Grim_NACHFalle_06_03"); //Р•СЃР»Рё СЏ С…РѕСЂРѕС€Рѕ СЃРїСЂР°РІР»СЋСЃСЊ СЃ СЌС‚РёРј Р·Р°РґР°РЅРёРµРј, РјРµРЅСЏ РїСЂРёРјСѓС‚ РІ Р»Р°РіРµСЂСЊ.
+	AI_Output (self, other,"DIA_Grim_NACHFalle_06_04"); //РўС‹ РІРµРґСЊ СЃР°Рј РІРёРЅРѕРІР°С‚ РІ С‚РѕРј, С‡С‚Рѕ РјРЅРµ РїРѕСЂСѓС‡РёР»Рё СѓР±СЂР°С‚СЊ РёРјРµРЅРЅРѕ С‚РµР±СЏ. РќРµ СЃС‚РѕРёР»Рѕ С‚РµР±Рµ СЃСЃРѕСЂРёС‚СЊСЃСЏ СЃРѕ СЃС‚СЂР°Р¶РЅРёРєР°РјРё.
+	AI_Output (self, other,"DIA_Grim_NACHFalle_06_05"); //Р›РёС‡РЅРѕ СЏ РїСЂРѕС‚РёРІ С‚РµР±СЏ РЅРёС‡РµРіРѕ РЅРµ РёРјРµСЋ. РўР°Рє С‡С‚Рѕ РјС‹ СЂРµС€РёРј - РґСЂР°С‚СЊСЃСЏ РёР»Рё СЂР°Р·РѕР№С‚РёСЃСЊ СЃ РјРёСЂРѕРј?
 	
 	Info_ClearChoices	(DIA_Grim_NACHFalle );
-	Info_AddChoice		(DIA_Grim_NACHFalle,"Думаю, мирным путем этот вопрос не решить!"	,DIA_Grim_NACHFalle_Weiterpruegeln);
-	Info_AddChoice		(DIA_Grim_NACHFalle,"Давай разойдемся с миром!"			,DIA_Grim_NACHFalle_Frieden);
+	Info_AddChoice		(DIA_Grim_NACHFalle,"Р”СѓРјР°СЋ, РјРёСЂРЅС‹Рј РїСѓС‚РµРј СЌС‚РѕС‚ РІРѕРїСЂРѕСЃ РЅРµ СЂРµС€РёС‚СЊ!"	,DIA_Grim_NACHFalle_Weiterpruegeln);
+	Info_AddChoice		(DIA_Grim_NACHFalle,"Р”Р°РІР°Р№ СЂР°Р·РѕР№РґРµРјСЃСЏ СЃ РјРёСЂРѕРј!"			,DIA_Grim_NACHFalle_Frieden);
 };
 
 
 func void DIA_Grim_NACHFalle_Weiterpruegeln()
 {
-	AI_Output (other, self,"DIA_Grim_NACHFalle_Weiterpruegeln_15_00"); //Думаю, мирным путем этот вопрос не решить!
-	AI_Output (self, other,"DIA_Grim_NACHFalle_Weiterpruegeln_06_01"); //Не самое лучшее решение, но пусть будет так.
+	AI_Output (other, self,"DIA_Grim_NACHFalle_Weiterpruegeln_15_00"); //Р”СѓРјР°СЋ, РјРёСЂРЅС‹Рј РїСѓС‚РµРј СЌС‚РѕС‚ РІРѕРїСЂРѕСЃ РЅРµ СЂРµС€РёС‚СЊ!
+	AI_Output (self, other,"DIA_Grim_NACHFalle_Weiterpruegeln_06_01"); //РќРµ СЃР°РјРѕРµ Р»СѓС‡С€РµРµ СЂРµС€РµРЅРёРµ, РЅРѕ РїСѓСЃС‚СЊ Р±СѓРґРµС‚ С‚Р°Рє.
 	Info_ClearChoices	(DIA_Grim_NACHFalle );
 	AI_StopProcessInfos	(self);
 
@@ -228,9 +228,9 @@ func void DIA_Grim_NACHFalle_Weiterpruegeln()
 
 func void DIA_Grim_NACHFalle_Frieden()
 {
-	AI_Output (other, self,"DIA_Grim_NACHFalle_Frieden_15_00"); //Давай разойдемся с миром!
-	AI_Output (self, other,"DIA_Grim_NACHFalle_Frieden_06_01"); //Я рад, что ты понимаешь меня. Забудем об этом. Теперь я буду на твоей стороне.
-	AI_Output (self, other,"DIA_Grim_NACHFalle_Frieden_06_02"); //Если у тебя возникнут неприятности, ты можешь на меня рассчитывать, я же твой должник.
+	AI_Output (other, self,"DIA_Grim_NACHFalle_Frieden_15_00"); //Р”Р°РІР°Р№ СЂР°Р·РѕР№РґРµРјСЃСЏ СЃ РјРёСЂРѕРј!
+	AI_Output (self, other,"DIA_Grim_NACHFalle_Frieden_06_01"); //РЇ СЂР°Рґ, С‡С‚Рѕ С‚С‹ РїРѕРЅРёРјР°РµС€СЊ РјРµРЅСЏ. Р—Р°Р±СѓРґРµРј РѕР± СЌС‚РѕРј. РўРµРїРµСЂСЊ СЏ Р±СѓРґСѓ РЅР° С‚РІРѕРµР№ СЃС‚РѕСЂРѕРЅРµ.
+	AI_Output (self, other,"DIA_Grim_NACHFalle_Frieden_06_02"); //Р•СЃР»Рё Сѓ С‚РµР±СЏ РІРѕР·РЅРёРєРЅСѓС‚ РЅРµРїСЂРёСЏС‚РЅРѕСЃС‚Рё, С‚С‹ РјРѕР¶РµС€СЊ РЅР° РјРµРЅСЏ СЂР°СЃСЃС‡РёС‚С‹РІР°С‚СЊ, СЏ Р¶Рµ С‚РІРѕР№ РґРѕР»Р¶РЅРёРє.
 	Info_ClearChoices	(DIA_Grim_NACHFalle );
 
 	Npc_SetPermAttitude(self,ATT_FRIENDLY);
@@ -249,7 +249,7 @@ INSTANCE DIA_Grim_Hallo (C_INFO)
 	condition		= DIA_Grim_Hallo_Condition;
 	information		= DIA_Grim_Hallo_Info;
 	permanent		= 0;
-	description		= "Я новенький.";
+	description		= "РЇ РЅРѕРІРµРЅСЊРєРёР№.";
 };
 
 FUNC INT DIA_Grim_Hallo_Condition()
@@ -267,8 +267,8 @@ FUNC INT DIA_Grim_Hallo_Condition()
 
 FUNC VOID DIA_Grim_Hallo_Info()
 {
-	AI_Output (other, self,"DIA_Grim_Hallo_15_00"); //Я новенький.
-	AI_Output (self, other,"DIA_Grim_Hallo_06_01"); //Ты недавно здесь, верно? Я Грим. Меня забросили сюда с прошлым караваном.
+	AI_Output (other, self,"DIA_Grim_Hallo_15_00"); //РЇ РЅРѕРІРµРЅСЊРєРёР№.
+	AI_Output (self, other,"DIA_Grim_Hallo_06_01"); //РўС‹ РЅРµРґР°РІРЅРѕ Р·РґРµСЃСЊ, РІРµСЂРЅРѕ? РЇ Р“СЂРёРј. РњРµРЅСЏ Р·Р°Р±СЂРѕСЃРёР»Рё СЃСЋРґР° СЃ РїСЂРѕС€Р»С‹Рј РєР°СЂР°РІР°РЅРѕРј.
 };
 
 // **************************************************
@@ -282,7 +282,7 @@ INSTANCE DIA_Grim_Leben (C_INFO)
 	condition		= DIA_Grim_Leben_Condition;
 	information		= DIA_Grim_Leben_Info;
 	permanent		= 0;
-	description		= "И как здесь живется?";
+	description		= "Р РєР°Рє Р·РґРµСЃСЊ Р¶РёРІРµС‚СЃСЏ?";
 };
 
 FUNC INT DIA_Grim_Leben_Condition()
@@ -292,8 +292,8 @@ FUNC INT DIA_Grim_Leben_Condition()
 
 FUNC VOID DIA_Grim_Leben_Info()
 {
-	AI_Output (other, self,"DIA_Grim_Leben_15_00"); //И как здесь живется?
-	AI_Output (self, other,"DIA_Grim_Leben_06_01"); //Довольно сносно, если платишь стражникам за защиту.
+	AI_Output (other, self,"DIA_Grim_Leben_15_00"); //Р РєР°Рє Р·РґРµСЃСЊ Р¶РёРІРµС‚СЃСЏ?
+	AI_Output (self, other,"DIA_Grim_Leben_06_01"); //Р”РѕРІРѕР»СЊРЅРѕ СЃРЅРѕСЃРЅРѕ, РµСЃР»Рё РїР»Р°С‚РёС€СЊ СЃС‚СЂР°Р¶РЅРёРєР°Рј Р·Р° Р·Р°С‰РёС‚Сѓ.
 };
 
 // **************************************************
@@ -307,7 +307,7 @@ INSTANCE DIA_Grim_Aufnahme (C_INFO)
 	condition		= DIA_Grim_Aufnahme_Condition;
 	information		= DIA_Grim_Aufnahme_Info;
 	permanent		= 0;
-	description		= "Я хочу быть принятым в этот лагерь. Что мне нужно сделать?";
+	description		= "РЇ С…РѕС‡Сѓ Р±С‹С‚СЊ РїСЂРёРЅСЏС‚С‹Рј РІ СЌС‚РѕС‚ Р»Р°РіРµСЂСЊ. Р§С‚Рѕ РјРЅРµ РЅСѓР¶РЅРѕ СЃРґРµР»Р°С‚СЊ?";
 };
 
 FUNC INT DIA_Grim_Aufnahme_Condition()
@@ -317,11 +317,11 @@ FUNC INT DIA_Grim_Aufnahme_Condition()
 
 FUNC VOID DIA_Grim_Aufnahme_Info()
 {
-	AI_Output (other, self,"DIA_Grim_Aufnahme_15_00"); //Я хочу быть принятым в этот лагерь. Что мне нужно сделать?
-	AI_Output (self, other,"DIA_Grim_Aufnahme_06_01"); //Сначала ты должен стать Призраком. Для этого тебе стоит заручиться поддержкой одного из влиятельных людей.
-	AI_Output (self, other,"DIA_Grim_Aufnahme_06_02"); //На твоем месте я бы обратился к Диего. Кстати, я так и сделал. Здесь его уважают.
-	AI_Output (self, other,"DIA_Grim_Aufnahme_06_03"); //Каждому, кто к нему обратится, он дает какое-нибудь важное задание. У некоторых Призраков тоже найдутся для тебя поручения.
-	AI_Output (self, other,"DIA_Grim_Aufnahme_06_04"); //Если ты справишься, тебя примут в лагерь.
+	AI_Output (other, self,"DIA_Grim_Aufnahme_15_00"); //РЇ С…РѕС‡Сѓ Р±С‹С‚СЊ РїСЂРёРЅСЏС‚С‹Рј РІ СЌС‚РѕС‚ Р»Р°РіРµСЂСЊ. Р§С‚Рѕ РјРЅРµ РЅСѓР¶РЅРѕ СЃРґРµР»Р°С‚СЊ?
+	AI_Output (self, other,"DIA_Grim_Aufnahme_06_01"); //РЎРЅР°С‡Р°Р»Р° С‚С‹ РґРѕР»Р¶РµРЅ СЃС‚Р°С‚СЊ РџСЂРёР·СЂР°РєРѕРј. Р”Р»СЏ СЌС‚РѕРіРѕ С‚РµР±Рµ СЃС‚РѕРёС‚ Р·Р°СЂСѓС‡РёС‚СЊСЃСЏ РїРѕРґРґРµСЂР¶РєРѕР№ РѕРґРЅРѕРіРѕ РёР· РІР»РёСЏС‚РµР»СЊРЅС‹С… Р»СЋРґРµР№.
+	AI_Output (self, other,"DIA_Grim_Aufnahme_06_02"); //РќР° С‚РІРѕРµРј РјРµСЃС‚Рµ СЏ Р±С‹ РѕР±СЂР°С‚РёР»СЃСЏ Рє Р”РёРµРіРѕ. РљСЃС‚Р°С‚Рё, СЏ С‚Р°Рє Рё СЃРґРµР»Р°Р». Р—РґРµСЃСЊ РµРіРѕ СѓРІР°Р¶Р°СЋС‚.
+	AI_Output (self, other,"DIA_Grim_Aufnahme_06_03"); //РљР°Р¶РґРѕРјСѓ, РєС‚Рѕ Рє РЅРµРјСѓ РѕР±СЂР°С‚РёС‚СЃСЏ, РѕРЅ РґР°РµС‚ РєР°РєРѕРµ-РЅРёР±СѓРґСЊ РІР°Р¶РЅРѕРµ Р·Р°РґР°РЅРёРµ. РЈ РЅРµРєРѕС‚РѕСЂС‹С… РџСЂРёР·СЂР°РєРѕРІ С‚РѕР¶Рµ РЅР°Р№РґСѓС‚СЃСЏ РґР»СЏ С‚РµР±СЏ РїРѕСЂСѓС‡РµРЅРёСЏ.
+	AI_Output (self, other,"DIA_Grim_Aufnahme_06_04"); //Р•СЃР»Рё С‚С‹ СЃРїСЂР°РІРёС€СЊСЃСЏ, С‚РµР±СЏ РїСЂРёРјСѓС‚ РІ Р»Р°РіРµСЂСЊ.
 };
 
 // **************************************************
@@ -337,7 +337,7 @@ INSTANCE DIA_Grim_HowFarAreYou (C_INFO)
 	condition		= DIA_Grim_HowFarAreYou_Condition;
 	information		= DIA_Grim_HowFarAreYou_Info;
 	permanent		= 1;
-	description		= "Как проходит твое испытание?";
+	description		= "РљР°Рє РїСЂРѕС…РѕРґРёС‚ С‚РІРѕРµ РёСЃРїС‹С‚Р°РЅРёРµ?";
 };
 
 FUNC INT DIA_Grim_HowFarAreYou_Condition()
@@ -350,12 +350,12 @@ FUNC INT DIA_Grim_HowFarAreYou_Condition()
 
 FUNC VOID DIA_Grim_HowFarAreYou_Info()
 {
-	AI_Output (other, self,"DIA_Grim_HowFarAreYou_15_00"); //Как проходит твое испытание?
-	AI_Output (self, other,"DIA_Grim_HowFarAreYou_06_01"); //Я уже разговаривал с Декстером, Слаем и Фингерсом. 
+	AI_Output (other, self,"DIA_Grim_HowFarAreYou_15_00"); //РљР°Рє РїСЂРѕС…РѕРґРёС‚ С‚РІРѕРµ РёСЃРїС‹С‚Р°РЅРёРµ?
+	AI_Output (self, other,"DIA_Grim_HowFarAreYou_06_01"); //РЇ СѓР¶Рµ СЂР°Р·РіРѕРІР°СЂРёРІР°Р» СЃ Р”РµРєСЃС‚РµСЂРѕРј, РЎР»Р°РµРј Рё Р¤РёРЅРіРµСЂСЃРѕРј. 
 	
 	if	!Grim_Tests
 	{
-		B_LogEntry( CH1_JoinOC, "Декстер, Слай и Фингерс самые влиятельные из Призраков.");
+		B_LogEntry( CH1_JoinOC, "Р”РµРєСЃС‚РµСЂ, РЎР»Р°Р№ Рё Р¤РёРЅРіРµСЂСЃ СЃР°РјС‹Рµ РІР»РёСЏС‚РµР»СЊРЅС‹Рµ РёР· РџСЂРёР·СЂР°РєРѕРІ.");
 		Grim_Tests = TRUE;
 	};
 };
@@ -371,7 +371,7 @@ INSTANCE DIA_Grim_YourPDV (C_INFO)
 	condition		= DIA_Grim_YourPDV_Condition;
 	information		= DIA_Grim_YourPDV_Info;
 	permanent		= 0;
-	description		= "В чем заключается твое испытание?";
+	description		= "Р’ С‡РµРј Р·Р°РєР»СЋС‡Р°РµС‚СЃСЏ С‚РІРѕРµ РёСЃРїС‹С‚Р°РЅРёРµ?";
 };
 
 FUNC INT DIA_Grim_YourPDV_Condition()
@@ -384,8 +384,8 @@ FUNC INT DIA_Grim_YourPDV_Condition()
 
 FUNC VOID DIA_Grim_YourPDV_Info()
 {
-	AI_Output (other, self,"DIA_Grim_YourPDV_15_00"); //В чем заключается твое испытание?
-	AI_Output (self, other,"DIA_Grim_YourPDV_06_01"); //Этого я не могу тебе сказать. О таких вещах здесь не говорят!
+	AI_Output (other, self,"DIA_Grim_YourPDV_15_00"); //Р’ С‡РµРј Р·Р°РєР»СЋС‡Р°РµС‚СЃСЏ С‚РІРѕРµ РёСЃРїС‹С‚Р°РЅРёРµ?
+	AI_Output (self, other,"DIA_Grim_YourPDV_06_01"); //Р­С‚РѕРіРѕ СЏ РЅРµ РјРѕРіСѓ С‚РµР±Рµ СЃРєР°Р·Р°С‚СЊ. Рћ С‚Р°РєРёС… РІРµС‰Р°С… Р·РґРµСЃСЊ РЅРµ РіРѕРІРѕСЂСЏС‚!
 };
 
 
@@ -421,9 +421,9 @@ FUNC int  DIA_Grim_INEXTREMO_Condition()
 
 FUNC VOID  DIA_Grim_INEXTREMO_Info()
 {
-	AI_Output		(self, other,"DIA_Grim_INEXTREMO_06_01"); //Эй, слышал новость?
-	AI_Output		(self, other,"DIA_Grim_INEXTREMO_06_02"); //Здесь In Extremo! Они будут выступать на сцене.
-	AI_Output		(self, other,"DIA_Grim_INEXTREMO_06_03"); //Торопись! Жаль будет пропустить их выступление.
+	AI_Output		(self, other,"DIA_Grim_INEXTREMO_06_01"); //Р­Р№, СЃР»С‹С€Р°Р» РЅРѕРІРѕСЃС‚СЊ?
+	AI_Output		(self, other,"DIA_Grim_INEXTREMO_06_02"); //Р—РґРµСЃСЊ In Extremo! РћРЅРё Р±СѓРґСѓС‚ РІС‹СЃС‚СѓРїР°С‚СЊ РЅР° СЃС†РµРЅРµ.
+	AI_Output		(self, other,"DIA_Grim_INEXTREMO_06_03"); //РўРѕСЂРѕРїРёСЃСЊ! Р–Р°Р»СЊ Р±СѓРґРµС‚ РїСЂРѕРїСѓСЃС‚РёС‚СЊ РёС… РІС‹СЃС‚СѓРїР»РµРЅРёРµ.
 
 	Npc_ExchangeRoutine	(self,	"InExtremo");
 
@@ -449,7 +449,7 @@ instance  DIA_Grim_INEXTREMOAWAY(C_INFO)
 	information	= DIA_Grim_INEXTREMOAWAY_Info;
 	permanent	= 0;
 	important 	= 0;
-	description = "А где In Extremo?";
+	description = "Рђ РіРґРµ In Extremo?";
 };                       
 
 FUNC int  DIA_Grim_INEXTREMOAWAY_Condition()
@@ -463,8 +463,8 @@ FUNC int  DIA_Grim_INEXTREMOAWAY_Condition()
 
 FUNC VOID  DIA_Grim_INEXTREMOAWAY_Info()
 {
-	AI_Output			(hero, self,"DIA_Grim_INEXTREMOAWAY_15_01"); //А где In Extremo?
-	AI_Output			(self, hero,"DIA_Grim_INEXTREMOAWAY_06_02"); //Они уже уехали. А я уже так привык сидеть по вечерам перед сценой.
+	AI_Output			(hero, self,"DIA_Grim_INEXTREMOAWAY_15_01"); //Рђ РіРґРµ In Extremo?
+	AI_Output			(self, hero,"DIA_Grim_INEXTREMOAWAY_06_02"); //РћРЅРё СѓР¶Рµ СѓРµС…Р°Р»Рё. Рђ СЏ СѓР¶Рµ С‚Р°Рє РїСЂРёРІС‹Рє СЃРёРґРµС‚СЊ РїРѕ РІРµС‡РµСЂР°Рј РїРµСЂРµРґ СЃС†РµРЅРѕР№.
 
 	AI_StopProcessInfos	(self);
 };

@@ -2,7 +2,7 @@ instance SFB_1000_Senyan (Npc_Default)
 {
 	//-------- primary data --------
 	
-	name =					"Сеньян";
+	name =					"РЎРµРЅСЊСЏРЅ";
 	npctype =				npctype_main;
 	guild =					GIL_SFB;      
 	level =					3;

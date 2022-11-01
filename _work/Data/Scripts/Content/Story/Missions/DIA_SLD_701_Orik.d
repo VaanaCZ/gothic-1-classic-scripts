@@ -10,7 +10,7 @@ instance  Sld_701_Orik_Exit (C_INFO)
 	information	=  Sld_701_Orik_Exit_Info;
 	important	=  0;	
 	permanent	=  1;
-	description = "«¿ ŒÕ◊»“‹ –¿«√Œ¬Œ–";
+	description = "–ó–ê–ö–û–ù–ß–ò–¢–¨ –†–ê–ó–ì–û–í–û–†";
 };                       
 
 FUNC int  Sld_701_Orik_Exit_Condition()

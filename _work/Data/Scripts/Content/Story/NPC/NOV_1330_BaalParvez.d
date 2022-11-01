@@ -1,7 +1,7 @@
 instance NOV_1330_BaalParvez (Npc_Default)
 {
 	//-------- primary data --------
-	name 		=		"Идол Парвез";
+	name 		=		"РРґРѕР» РџР°СЂРІРµР·";
 	Npctype 	=		Npctype_Main;
 	guild 		=		GIL_NOV;
 	level 		=		18;

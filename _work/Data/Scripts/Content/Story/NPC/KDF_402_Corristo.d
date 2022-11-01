@@ -2,7 +2,7 @@ instance KDF_402_Corristo (Npc_Default)
 {
 	//-------- primary data --------
 	
-	name 		=	"Корристо";
+	name 		=	"РљРѕСЂСЂРёСЃС‚Рѕ";
 	npctype		=	npctype_main;
 	guild 		=	GIL_KDF;      
 	level 		=	30;

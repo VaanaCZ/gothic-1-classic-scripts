@@ -2,7 +2,7 @@ instance ORG_843_Sharky (Npc_Default)
 {
 	//-------- primary data --------
 	
-	name =			"Øàðêè";
+	name =			"Ð¨Ð°Ñ€ÐºÐ¸";
 	Npctype =		NPCTYPE_MAIN;
 	guild =			GIL_ORG;      
 	level =			8;

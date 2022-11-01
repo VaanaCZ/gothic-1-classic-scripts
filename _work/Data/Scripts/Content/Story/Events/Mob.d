@@ -31,13 +31,13 @@ func int MC_OLDMINE_ENTRANCE ()
 	if	(Kapitel >= 4)
 	&&	Hlp_IsValidNpc(self)
 	{
-		PrintDebugNpc	(PD_ITEM_MOBSI,	"...заблокировано.");
+		PrintDebugNpc	(PD_ITEM_MOBSI,	"...Р·Р°Р±Р»РѕРєРёСЂРѕРІР°РЅРѕ.");
 		G_PrintScreen	(_STR_MESSAGE_WHEEL_STUCKS);
 		return 			FALSE;
 	}
 	else
 	{
-		PrintDebugNpc	(PD_ITEM_MOBSI,	"...готово к работе.");
+		PrintDebugNpc	(PD_ITEM_MOBSI,	"...РіРѕС‚РѕРІРѕ Рє СЂР°Р±РѕС‚Рµ.");
 		return 			TRUE;
 	};
 };
@@ -51,7 +51,7 @@ FUNC int MC_MONASTERYRUIN_GATE ()
 
 	if (MonasteryRuin_GateOpen == FALSE)
 	{
-		PrintDebugNpc	(PD_ITEM_MOBSI,	"...еще не открыто.");
+		PrintDebugNpc	(PD_ITEM_MOBSI,	"...РµС‰Рµ РЅРµ РѕС‚РєСЂС‹С‚Рѕ.");
 		AI_UseMob		(hero,"VWHEEL",1);
 		AI_UseMob		(hero,"VWHEEL",-1);
 
@@ -61,7 +61,7 @@ FUNC int MC_MONASTERYRUIN_GATE ()
 	}
 	else
 	{
-		PrintDebugNpc	(PD_ITEM_MOBSI,	"...уже открыто.");
+		PrintDebugNpc	(PD_ITEM_MOBSI,	"...СѓР¶Рµ РѕС‚РєСЂС‹С‚Рѕ.");
 		return 			TRUE;
 	};
 };
@@ -175,7 +175,7 @@ FUNC int EVT_TROLLSCHLUCHT_GATE_TRIGGER ()
 };
 
 //***************************************************************************
-//	Ork-Stadt - groЯes Holztor
+//	Ork-Stadt - groРЇes Holztor
 //***************************************************************************
 var int	OrcCity_GateOpen;
 FUNC int MC_OrcCity_Gate ()
@@ -206,9 +206,9 @@ FUNC int MC_OrcCity_Gate ()
 };
 
 //***************************************************************************
-//	Ork-Stadt - дuЯeres Tempeltor
+//	Ork-Stadt - РґuРЇeres Tempeltor
 //***************************************************************************
-FUNC int MC_OrcCity_Sunctum_OuterGate ()	// heiЯt absichtlich "Sunctum"
+FUNC int MC_OrcCity_Sunctum_OuterGate ()	// heiРЇt absichtlich "Sunctum"
 {	
 	PrintDebugNpc		(PD_ITEM_MOBSI,	"MC_OrcCity_Sanctum_OuterGate");
 

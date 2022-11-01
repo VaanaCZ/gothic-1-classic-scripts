@@ -15,7 +15,7 @@ instance DIA_Stone_Hello (C_INFO)
 	condition		= DIA_Stone_Hello_Condition;
 	information		= DIA_Stone_Hello_Info;
 	permanent		= 0;
-	description		= "Ты ведь кузнец?";
+	description		= "РўС‹ РІРµРґСЊ РєСѓР·РЅРµС†?";
 };
 
 FUNC int  DIA_Stone_Hello_Condition()
@@ -28,8 +28,8 @@ FUNC int  DIA_Stone_Hello_Condition()
 
 func void  DIA_Stone_Hello_Info()
 {
-	AI_Output (other, self,"DIA_Stone_Hello_15_00"); //Ты ведь кузнец?
-	AI_Output (self, other,"DIA_Stone_Hello_06_01"); //Точно.
+	AI_Output (other, self,"DIA_Stone_Hello_15_00"); //РўС‹ РІРµРґСЊ РєСѓР·РЅРµС†?
+	AI_Output (self, other,"DIA_Stone_Hello_06_01"); //РўРѕС‡РЅРѕ.
 };
 
 // ************************************************************
@@ -43,7 +43,7 @@ instance DIA_Stone_NotSelling (C_INFO)
 	condition		= DIA_Stone_NotSelling_Condition;
 	information		= DIA_Stone_NotSelling_Info;
 	permanent		= 1;
-	description		= "Ты продаешь оружие и доспехи?";
+	description		= "РўС‹ РїСЂРѕРґР°РµС€СЊ РѕСЂСѓР¶РёРµ Рё РґРѕСЃРїРµС…Рё?";
 };
 
 FUNC int  DIA_Stone_NotSelling_Condition()
@@ -57,10 +57,10 @@ FUNC int  DIA_Stone_NotSelling_Condition()
 
 func void  DIA_Stone_NotSelling_Info()
 {
-	AI_Output (other, self,"DIA_Stone_NotSelling_15_00"); //Ты продаешь оружие и доспехи?
-	AI_Output (self, other,"DIA_Stone_NotSelling_06_01"); //Да, продаю доспехи. А оружием заведует Скип.
-	AI_Output (other, self,"DIA_Stone_NotSelling_15_02"); //А какие у тебя есть доспехи?
-	AI_Output (self, other,"DIA_Stone_NotSelling_06_03"); //Есть доспехи для стражников. А ты не стражник. Так что, поищи что-нибудь для себя в другом месте!
+	AI_Output (other, self,"DIA_Stone_NotSelling_15_00"); //РўС‹ РїСЂРѕРґР°РµС€СЊ РѕСЂСѓР¶РёРµ Рё РґРѕСЃРїРµС…Рё?
+	AI_Output (self, other,"DIA_Stone_NotSelling_06_01"); //Р”Р°, РїСЂРѕРґР°СЋ РґРѕСЃРїРµС…Рё. Рђ РѕСЂСѓР¶РёРµРј Р·Р°РІРµРґСѓРµС‚ РЎРєРёРї.
+	AI_Output (other, self,"DIA_Stone_NotSelling_15_02"); //Рђ РєР°РєРёРµ Сѓ С‚РµР±СЏ РµСЃС‚СЊ РґРѕСЃРїРµС…Рё?
+	AI_Output (self, other,"DIA_Stone_NotSelling_06_03"); //Р•СЃС‚СЊ РґРѕСЃРїРµС…Рё РґР»СЏ СЃС‚СЂР°Р¶РЅРёРєРѕРІ. Рђ С‚С‹ РЅРµ СЃС‚СЂР°Р¶РЅРёРє. РўР°Рє С‡С‚Рѕ, РїРѕРёС‰Рё С‡С‚Рѕ-РЅРёР±СѓРґСЊ РґР»СЏ СЃРµР±СЏ РІ РґСЂСѓРіРѕРј РјРµСЃС‚Рµ!
 	AI_StopProcessInfos	( self );
 };
 
@@ -71,7 +71,7 @@ func void  DIA_Stone_NotSelling_Info()
 
 
 //-----------------------------------------------------
-// RЬSTUNG UND SCHWERT ABHOLEN WENN DER SPIELER GARDIST IST
+// RР¬STUNG UND SCHWERT ABHOLEN WENN DER SPIELER GARDIST IST
 //-----------------------------------------------------
 instance  GRD_219_Stone_GETSTUFF (C_INFO)
 {
@@ -80,7 +80,7 @@ instance  GRD_219_Stone_GETSTUFF (C_INFO)
 	information		= GRD_219_Stone_GETSTUFF_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Мне нужны доспехи."; 
+	description		= "РњРЅРµ РЅСѓР¶РЅС‹ РґРѕСЃРїРµС…Рё."; 
 };
 
 FUNC int  GRD_219_Stone_GETSTUFF_Condition()
@@ -93,10 +93,10 @@ FUNC int  GRD_219_Stone_GETSTUFF_Condition()
 };
 FUNC void  GRD_219_Stone_GETSTUFF_Info()
 {
-	AI_Output (other, self,"GRD_219_Stone_GETSTUFF_Info_15_01"); //Мне нужны доспехи.
-	AI_Output (self, other,"GRD_219_Stone_GETSTUFF_Info_06_02"); //Вижу, Торус взял тебя на службу? Мои поздравления!
-	AI_Output (self, other,"GRD_219_Stone_GETSTUFF_Info_06_03"); //Еще один желающий свернуть себе голову за Гомеза. Впрочем, мне-то какое дело?
-	AI_Output (self, other,"GRD_219_Stone_GETSTUFF_Info_06_04"); //Вот, держи доспехи и меч. Добро пожаловать в Стражники!
+	AI_Output (other, self,"GRD_219_Stone_GETSTUFF_Info_15_01"); //РњРЅРµ РЅСѓР¶РЅС‹ РґРѕСЃРїРµС…Рё.
+	AI_Output (self, other,"GRD_219_Stone_GETSTUFF_Info_06_02"); //Р’РёР¶Сѓ, РўРѕСЂСѓСЃ РІР·СЏР» С‚РµР±СЏ РЅР° СЃР»СѓР¶Р±Сѓ? РњРѕРё РїРѕР·РґСЂР°РІР»РµРЅРёСЏ!
+	AI_Output (self, other,"GRD_219_Stone_GETSTUFF_Info_06_03"); //Р•С‰Рµ РѕРґРёРЅ Р¶РµР»Р°СЋС‰РёР№ СЃРІРµСЂРЅСѓС‚СЊ СЃРµР±Рµ РіРѕР»РѕРІСѓ Р·Р° Р“РѕРјРµР·Р°. Р’РїСЂРѕС‡РµРј, РјРЅРµ-С‚Рѕ РєР°РєРѕРµ РґРµР»Рѕ?
+	AI_Output (self, other,"GRD_219_Stone_GETSTUFF_Info_06_04"); //Р’РѕС‚, РґРµСЂР¶Рё РґРѕСЃРїРµС…Рё Рё РјРµС‡. Р”РѕР±СЂРѕ РїРѕР¶Р°Р»РѕРІР°С‚СЊ РІ РЎС‚СЂР°Р¶РЅРёРєРё!
 
 	CreateInvItems		(self,ItMw_1H_Sword_03,2);
 	B_GiveInvItems      (self,other,ItMw_1H_Sword_03,2);
@@ -105,13 +105,13 @@ FUNC void  GRD_219_Stone_GETSTUFF_Info()
 	AI_EquipBestArmor	(hero);
 	AI_EquipBestMeleeWeapon	(hero);
 
-	B_LogEntry		(GE_BecomeGuard,	"Я получил у кузнеца Стоуна мой первый доспех стражника. Я могу купить у него и более прочные доспехи, если у меня будет достаточно руды.");
+	B_LogEntry		(GE_BecomeGuard,	"РЇ РїРѕР»СѓС‡РёР» Сѓ РєСѓР·РЅРµС†Р° РЎС‚РѕСѓРЅР° РјРѕР№ РїРµСЂРІС‹Р№ РґРѕСЃРїРµС… СЃС‚СЂР°Р¶РЅРёРєР°. РЇ РјРѕРіСѓ РєСѓРїРёС‚СЊ Сѓ РЅРµРіРѕ Рё Р±РѕР»РµРµ РїСЂРѕС‡РЅС‹Рµ РґРѕСЃРїРµС…Рё, РµСЃР»Рё Сѓ РјРµРЅСЏ Р±СѓРґРµС‚ РґРѕСЃС‚Р°С‚РѕС‡РЅРѕ СЂСѓРґС‹.");
 
 	AI_StopProcessInfos	( self );
 };  
 
 //-----------------------------------------------------
-// BESSERE RЬSTUNG
+// BESSERE RР¬STUNG
 //-----------------------------------------------------
 instance  GRD_219_Stone_BETTERARMOR (C_INFO)
 {
@@ -120,7 +120,7 @@ instance  GRD_219_Stone_BETTERARMOR (C_INFO)
 	information		= GRD_219_Stone_BETTERARMOR_Info;
 	important		= 0;
 	permanent		= 1;
-	description		= "Мне нужны доспехи получше."; 
+	description		= "РњРЅРµ РЅСѓР¶РЅС‹ РґРѕСЃРїРµС…Рё РїРѕР»СѓС‡С€Рµ."; 
 };
 
 FUNC int  GRD_219_Stone_BETTERARMOR_Condition()
@@ -134,30 +134,30 @@ FUNC int  GRD_219_Stone_BETTERARMOR_Condition()
 
 FUNC void  GRD_219_Stone_BETTERARMOR_Info()
 {
-	AI_Output				(other, self,"GRD_219_Stone_BETTERARMOR_Info_15_01"); //Мне нужны доспехи получше.
-	AI_Output				(self, other,"GRD_219_Stone_BETTERARMOR_Info_06_02"); //Когда будешь достоин лучшего, тогда и получишь... ну, конечно, если у тебя будет достаточно руды.
+	AI_Output				(other, self,"GRD_219_Stone_BETTERARMOR_Info_15_01"); //РњРЅРµ РЅСѓР¶РЅС‹ РґРѕСЃРїРµС…Рё РїРѕР»СѓС‡С€Рµ.
+	AI_Output				(self, other,"GRD_219_Stone_BETTERARMOR_Info_06_02"); //РљРѕРіРґР° Р±СѓРґРµС€СЊ РґРѕСЃС‚РѕРёРЅ Р»СѓС‡С€РµРіРѕ, С‚РѕРіРґР° Рё РїРѕР»СѓС‡РёС€СЊ... РЅСѓ, РєРѕРЅРµС‡РЅРѕ, РµСЃР»Рё Сѓ С‚РµР±СЏ Р±СѓРґРµС‚ РґРѕСЃС‚Р°С‚РѕС‡РЅРѕ СЂСѓРґС‹.
 		
 	Info_ClearChoices		(GRD_219_Stone_BETTERARMOR);
 	Info_AddChoice			(GRD_219_Stone_BETTERARMOR,	DIALOG_BACK							,	GRD_219_Stone_BETTERARMOR_BACK);	
-	Info_AddChoice			(GRD_219_Stone_BETTERARMOR, B_BuildBuyArmorString("Тяж. доспех стражника: оружие 70, стрелы 10, огонь 25",VALUE_GRD_ARMOR_H)	,GRD_219_Stone_BETTERARMOR_H);	
-	Info_AddChoice			(GRD_219_Stone_BETTERARMOR,	B_BuildBuyArmorString("Доспех стражника: оружие 55, стрелы 10, огонь 35",VALUE_GRD_ARMOR_M)	,	GRD_219_Stone_BETTERARMOR_M);	
+	Info_AddChoice			(GRD_219_Stone_BETTERARMOR, B_BuildBuyArmorString("РўСЏР¶. РґРѕСЃРїРµС… СЃС‚СЂР°Р¶РЅРёРєР°: РѕСЂСѓР¶РёРµ 70, СЃС‚СЂРµР»С‹ 10, РѕРіРѕРЅСЊ 25",VALUE_GRD_ARMOR_H)	,GRD_219_Stone_BETTERARMOR_H);	
+	Info_AddChoice			(GRD_219_Stone_BETTERARMOR,	B_BuildBuyArmorString("Р”РѕСЃРїРµС… СЃС‚СЂР°Р¶РЅРёРєР°: РѕСЂСѓР¶РёРµ 55, СЃС‚СЂРµР»С‹ 10, РѕРіРѕРЅСЊ 35",VALUE_GRD_ARMOR_M)	,	GRD_219_Stone_BETTERARMOR_M);	
 };  
 
 func void GRD_219_Stone_BETTERARMOR_M ()
 {
-	AI_Output				(hero, self,"GRD_219_Stone_BETTERARMOR_Info_M_15_01"); //Мне нужны обычные доспехи стражника.
+	AI_Output				(hero, self,"GRD_219_Stone_BETTERARMOR_Info_M_15_01"); //РњРЅРµ РЅСѓР¶РЅС‹ РѕР±С‹С‡РЅС‹Рµ РґРѕСЃРїРµС…Рё СЃС‚СЂР°Р¶РЅРёРєР°.
 
 	if (Kapitel < 3)
 	{
-		AI_Output			(self, hero,"GRD_219_Stone_BETTERARMOR_Info_M_06_02"); //Торус сказал, что сперва послужишь немного, а потом уже и получишь новые доспехи!
+		AI_Output			(self, hero,"GRD_219_Stone_BETTERARMOR_Info_M_06_02"); //РўРѕСЂСѓСЃ СЃРєР°Р·Р°Р», С‡С‚Рѕ СЃРїРµСЂРІР° РїРѕСЃР»СѓР¶РёС€СЊ РЅРµРјРЅРѕРіРѕ, Р° РїРѕС‚РѕРј СѓР¶Рµ Рё РїРѕР»СѓС‡РёС€СЊ РЅРѕРІС‹Рµ РґРѕСЃРїРµС…Рё!
 	}
 	else if (Npc_HasItems(hero, ItMiNugget)<VALUE_GRD_ARMOR_M)
 	{
-		AI_Output			(self, hero,"GRD_219_Stone_BETTERARMOR_Info_M_06_03"); //Есть у меня одни в запасе, но, похоже, у тебя не хватит на них руды! Будет руда - будут доспехи!
+		AI_Output			(self, hero,"GRD_219_Stone_BETTERARMOR_Info_M_06_03"); //Р•СЃС‚СЊ Сѓ РјРµРЅСЏ РѕРґРЅРё РІ Р·Р°РїР°СЃРµ, РЅРѕ, РїРѕС…РѕР¶Рµ, Сѓ С‚РµР±СЏ РЅРµ С…РІР°С‚РёС‚ РЅР° РЅРёС… СЂСѓРґС‹! Р‘СѓРґРµС‚ СЂСѓРґР° - Р±СѓРґСѓС‚ РґРѕСЃРїРµС…Рё!
 	}
 	else
 	{
-		AI_Output			(self, hero,"GRD_219_Stone_BETTERARMOR_Info_M_06_04"); //Хорошо, вот держи. Специально для тебя, новенькие, только не позволяй наемникам их дырявить!
+		AI_Output			(self, hero,"GRD_219_Stone_BETTERARMOR_Info_M_06_04"); //РҐРѕСЂРѕС€Рѕ, РІРѕС‚ РґРµСЂР¶Рё. РЎРїРµС†РёР°Р»СЊРЅРѕ РґР»СЏ С‚РµР±СЏ, РЅРѕРІРµРЅСЊРєРёРµ, С‚РѕР»СЊРєРѕ РЅРµ РїРѕР·РІРѕР»СЏР№ РЅР°РµРјРЅРёРєР°Рј РёС… РґС‹СЂСЏРІРёС‚СЊ!
 		B_GiveInvItems	    (hero, self, ItMiNugget, VALUE_GRD_ARMOR_M);
 		B_GiveInvItems		(self, hero, GRD_ARMOR_M, 1);
 		AI_EquipBestArmor	(hero);
@@ -168,15 +168,15 @@ func void GRD_219_Stone_BETTERARMOR_M ()
 
 func void GRD_219_Stone_BETTERARMOR_H ()
 {
-	AI_Output				(hero, self,"GRD_219_Stone_BETTERARMOR_Info_H_15_01"); //Мне нужны тяжелые доспехи стражника.
-	AI_Output				(self, hero,"GRD_219_Stone_BETTERARMOR_Info_H_06_02"); //Такие доспехи только для матерых стражников. А ты, парень, до них не дорос.
+	AI_Output				(hero, self,"GRD_219_Stone_BETTERARMOR_Info_H_15_01"); //РњРЅРµ РЅСѓР¶РЅС‹ С‚СЏР¶РµР»С‹Рµ РґРѕСЃРїРµС…Рё СЃС‚СЂР°Р¶РЅРёРєР°.
+	AI_Output				(self, hero,"GRD_219_Stone_BETTERARMOR_Info_H_06_02"); //РўР°РєРёРµ РґРѕСЃРїРµС…Рё С‚РѕР»СЊРєРѕ РґР»СЏ РјР°С‚РµСЂС‹С… СЃС‚СЂР°Р¶РЅРёРєРѕРІ. Рђ С‚С‹, РїР°СЂРµРЅСЊ, РґРѕ РЅРёС… РЅРµ РґРѕСЂРѕСЃ.
 	Info_ClearChoices		(GRD_219_Stone_BETTERARMOR);
 };
 
 func void GRD_219_Stone_BETTERARMOR_BACK ()
 {
-	AI_Output				(hero, self,"GRD_219_Stone_BETTERARMOR_Info_BACK_15_01"); //Я передумал.  
-	AI_Output				(self, hero,"GRD_219_Stone_BETTERARMOR_Info_BACK_06_02"); //Твое дело. Ты знаешь, где меня найти.
+	AI_Output				(hero, self,"GRD_219_Stone_BETTERARMOR_Info_BACK_15_01"); //РЇ РїРµСЂРµРґСѓРјР°Р».  
+	AI_Output				(self, hero,"GRD_219_Stone_BETTERARMOR_Info_BACK_06_02"); //РўРІРѕРµ РґРµР»Рѕ. РўС‹ Р·РЅР°РµС€СЊ, РіРґРµ РјРµРЅСЏ РЅР°Р№С‚Рё.
 
 	Info_ClearChoices		(GRD_219_Stone_BETTERARMOR);
 };
@@ -221,12 +221,12 @@ func VOID DIA_GRD_219_Stone_Exit_Info()
 			TA_Min (Stone, 00, 20, 72, 00, ZS_Position,"OCC_STABLE_LEFT_FRONT"	);	
 		TA_EndOverlay (Stone);
 		
-		AI_Output (self, other,"Info_EXIT_06_02"); //Еще увидимся.
+		AI_Output (self, other,"Info_EXIT_06_02"); //Р•С‰Рµ СѓРІРёРґРёРјСЃСЏ.
 
 		AI_StopProcessInfos	( self );
 	}
 	else {
-		AI_Output (self, other,"Info_EXIT_06_03"); //Увидимся.
+		AI_Output (self, other,"Info_EXIT_06_03"); //РЈРІРёРґРёРјСЃСЏ.
 					
 		AI_StopProcessInfos	( self );
 	};	
@@ -244,7 +244,7 @@ func VOID DIA_GRD_219_Stone_Exit_Info()
 //#####################################################################
 
 //---------------------------------------------------------------------
-//	BegrьЯung
+//	BegrСЊРЇung
 //---------------------------------------------------------------------
 instance DIA_GRD_219_Stone (C_INFO)
 {
@@ -265,7 +265,7 @@ FUNC int DIA_GRD_219_Stone_Condition()
 
 func void DIA_GRD_219_Stone_Info()
 {
-	AI_Output (self, other, "DIA_GRD_219_Stone_06_01"); //Чего тебе? Ты не похож на прихвостней Гомеза.
+	AI_Output (self, other, "DIA_GRD_219_Stone_06_01"); //Р§РµРіРѕ С‚РµР±Рµ? РўС‹ РЅРµ РїРѕС…РѕР¶ РЅР° РїСЂРёС…РІРѕСЃС‚РЅРµР№ Р“РѕРјРµР·Р°.
 };
 
 //---------------------------------------------------------------------
@@ -278,7 +278,7 @@ instance DIA_GRD_219_Stone1 (C_INFO)
 	information		= DIA_GRD_219_Stone1_Info;
 	important		= 0;
 	permanent		= 0;
-	description 	= "Правда, я не один из его людей.";
+	description 	= "РџСЂР°РІРґР°, СЏ РЅРµ РѕРґРёРЅ РёР· РµРіРѕ Р»СЋРґРµР№.";
 };
 
 FUNC int DIA_GRD_219_Stone1_Condition()
@@ -291,16 +291,16 @@ FUNC int DIA_GRD_219_Stone1_Condition()
 
 func void DIA_GRD_219_Stone1_Info()
 {
-	AI_Output (other, self, "DIA_GRD_219_Stone1_15_01"); //Правда, я не один из его людей.
-	AI_Output (self, other, "DIA_GRD_219_Stone1_06_02"); //Тогда как ты сюда попал? Ключи от камер Гомез держит при себе...
-	AI_Output (other, self, "DIA_GRD_219_Stone1_15_03"); //Скажем так, он сам отдал их мне.
-	AI_Output (self, other, "DIA_GRD_219_Stone1_06_04"); //Хочешь сказать, что ты тот парень, который поставил Гомеза на место?
-	AI_Output (other, self, "DIA_GRD_219_Stone1_15_05"); //Да, это я.
-	AI_Output (self, other, "DIA_GRD_219_Stone1_06_06"); //Парень, вот уж никогда бы не подумал! Но я рад, что этот подлый головорез наконец-то получил свое!
-	AI_Output (self, other, "DIA_GRD_219_Stone1_06_07"); //Но зачем тебе спасать меня?
-	AI_Output (other, self, "DIA_GRD_219_Stone1_15_08"); //Я услышал, что тебя посадили за решетку, и решил использовать эту возможность, чтобы устранить Гомеза и освободить тебя.
-	AI_Output (self, other, "DIA_GRD_219_Stone1_06_09"); //Ну, спасибо...
-	AI_Output (self, other, "DIA_GRD_219_Stone1_06_10"); //... Я твой должник. Будет минутка, заходи ко мне в кузницу, поболтаем.
+	AI_Output (other, self, "DIA_GRD_219_Stone1_15_01"); //РџСЂР°РІРґР°, СЏ РЅРµ РѕРґРёРЅ РёР· РµРіРѕ Р»СЋРґРµР№.
+	AI_Output (self, other, "DIA_GRD_219_Stone1_06_02"); //РўРѕРіРґР° РєР°Рє С‚С‹ СЃСЋРґР° РїРѕРїР°Р»? РљР»СЋС‡Рё РѕС‚ РєР°РјРµСЂ Р“РѕРјРµР· РґРµСЂР¶РёС‚ РїСЂРё СЃРµР±Рµ...
+	AI_Output (other, self, "DIA_GRD_219_Stone1_15_03"); //РЎРєР°Р¶РµРј С‚Р°Рє, РѕРЅ СЃР°Рј РѕС‚РґР°Р» РёС… РјРЅРµ.
+	AI_Output (self, other, "DIA_GRD_219_Stone1_06_04"); //РҐРѕС‡РµС€СЊ СЃРєР°Р·Р°С‚СЊ, С‡С‚Рѕ С‚С‹ С‚РѕС‚ РїР°СЂРµРЅСЊ, РєРѕС‚РѕСЂС‹Р№ РїРѕСЃС‚Р°РІРёР» Р“РѕРјРµР·Р° РЅР° РјРµСЃС‚Рѕ?
+	AI_Output (other, self, "DIA_GRD_219_Stone1_15_05"); //Р”Р°, СЌС‚Рѕ СЏ.
+	AI_Output (self, other, "DIA_GRD_219_Stone1_06_06"); //РџР°СЂРµРЅСЊ, РІРѕС‚ СѓР¶ РЅРёРєРѕРіРґР° Р±С‹ РЅРµ РїРѕРґСѓРјР°Р»! РќРѕ СЏ СЂР°Рґ, С‡С‚Рѕ СЌС‚РѕС‚ РїРѕРґР»С‹Р№ РіРѕР»РѕРІРѕСЂРµР· РЅР°РєРѕРЅРµС†-С‚Рѕ РїРѕР»СѓС‡РёР» СЃРІРѕРµ!
+	AI_Output (self, other, "DIA_GRD_219_Stone1_06_07"); //РќРѕ Р·Р°С‡РµРј С‚РµР±Рµ СЃРїР°СЃР°С‚СЊ РјРµРЅСЏ?
+	AI_Output (other, self, "DIA_GRD_219_Stone1_15_08"); //РЇ СѓСЃР»С‹С€Р°Р», С‡С‚Рѕ С‚РµР±СЏ РїРѕСЃР°РґРёР»Рё Р·Р° СЂРµС€РµС‚РєСѓ, Рё СЂРµС€РёР» РёСЃРїРѕР»СЊР·РѕРІР°С‚СЊ СЌС‚Сѓ РІРѕР·РјРѕР¶РЅРѕСЃС‚СЊ, С‡С‚РѕР±С‹ СѓСЃС‚СЂР°РЅРёС‚СЊ Р“РѕРјРµР·Р° Рё РѕСЃРІРѕР±РѕРґРёС‚СЊ С‚РµР±СЏ.
+	AI_Output (self, other, "DIA_GRD_219_Stone1_06_09"); //РќСѓ, СЃРїР°СЃРёР±Рѕ...
+	AI_Output (self, other, "DIA_GRD_219_Stone1_06_10"); //... РЇ С‚РІРѕР№ РґРѕР»Р¶РЅРёРє. Р‘СѓРґРµС‚ РјРёРЅСѓС‚РєР°, Р·Р°С…РѕРґРё РєРѕ РјРЅРµ РІ РєСѓР·РЅРёС†Сѓ, РїРѕР±РѕР»С‚Р°РµРј.
 
 	Npc_ExchangeRoutine(self, "OTNEW");
 };
@@ -327,9 +327,9 @@ FUNC int DIA_GRD_219_Stone3_Condition()
 
 func void DIA_GRD_219_Stone3_Info()
 {
-		AI_Output (self, other, "DIA_GRD_219_Stone3_06_01"); //А вот и ты. Дай мне тебя отблагодарить за то, что ты меня вытащил из той крысиной норы!
-		AI_Output (self, other, "DIA_GRD_219_Stone3_06_02"); //Знаешь, я вот подумал: мне ведь нечего тебе подарить, может, я скую для тебя что-нибудь, а?
-		AI_Output (self, other, "DIA_GRD_219_Stone3_06_03"); //Может, кольцо или что-то в этом роде...
+		AI_Output (self, other, "DIA_GRD_219_Stone3_06_01"); //Рђ РІРѕС‚ Рё С‚С‹. Р”Р°Р№ РјРЅРµ С‚РµР±СЏ РѕС‚Р±Р»Р°РіРѕРґР°СЂРёС‚СЊ Р·Р° С‚Рѕ, С‡С‚Рѕ С‚С‹ РјРµРЅСЏ РІС‹С‚Р°С‰РёР» РёР· С‚РѕР№ РєСЂС‹СЃРёРЅРѕР№ РЅРѕСЂС‹!
+		AI_Output (self, other, "DIA_GRD_219_Stone3_06_02"); //Р—РЅР°РµС€СЊ, СЏ РІРѕС‚ РїРѕРґСѓРјР°Р»: РјРЅРµ РІРµРґСЊ РЅРµС‡РµРіРѕ С‚РµР±Рµ РїРѕРґР°СЂРёС‚СЊ, РјРѕР¶РµС‚, СЏ СЃРєСѓСЋ РґР»СЏ С‚РµР±СЏ С‡С‚Рѕ-РЅРёР±СѓРґСЊ, Р°?
+		AI_Output (self, other, "DIA_GRD_219_Stone3_06_03"); //РњРѕР¶РµС‚, РєРѕР»СЊС†Рѕ РёР»Рё С‡С‚Рѕ-С‚Рѕ РІ СЌС‚РѕРј СЂРѕРґРµ...
 };
 
 //---------------------------------------------------------------------
@@ -343,7 +343,7 @@ instance DIA_GRD_219_Stone2 (C_INFO)
 	information		= DIA_GRD_219_Stone2_Info;
 	important		= 0;
 	permanent		= 0;
-	description 	= "Кто посадил тебя за решетку? Как ты здесь оказался?";
+	description 	= "РљС‚Рѕ РїРѕСЃР°РґРёР» С‚РµР±СЏ Р·Р° СЂРµС€РµС‚РєСѓ? РљР°Рє С‚С‹ Р·РґРµСЃСЊ РѕРєР°Р·Р°Р»СЃСЏ?";
 };
 
 FUNC int DIA_GRD_219_Stone2_Condition()
@@ -356,9 +356,9 @@ FUNC int DIA_GRD_219_Stone2_Condition()
 
 func void DIA_GRD_219_Stone2_Info()
 {
-	AI_Output (other, self, "DIA_GRD_219_Stone2_15_01"); //Кто посадил тебя за решетку? Как ты здесь оказался?
-	AI_Output (self, other, "DIA_GRD_219_Stone2_06_02"); //Гомез! Эта свинья обвинила меня в сговоре с магами Огня. Я жив до сих пор, только потому, что лучший кузнец на весь Старый лагерь.
-	AI_Output (self, other, "DIA_GRD_219_Stone2_06_03"); //Меня бросили в эту крысиную нору и выпускали, только когда нужно было поработать на Гомеза.
+	AI_Output (other, self, "DIA_GRD_219_Stone2_15_01"); //РљС‚Рѕ РїРѕСЃР°РґРёР» С‚РµР±СЏ Р·Р° СЂРµС€РµС‚РєСѓ? РљР°Рє С‚С‹ Р·РґРµСЃСЊ РѕРєР°Р·Р°Р»СЃСЏ?
+	AI_Output (self, other, "DIA_GRD_219_Stone2_06_02"); //Р“РѕРјРµР·! Р­С‚Р° СЃРІРёРЅСЊСЏ РѕР±РІРёРЅРёР»Р° РјРµРЅСЏ РІ СЃРіРѕРІРѕСЂРµ СЃ РјР°РіР°РјРё РћРіРЅСЏ. РЇ Р¶РёРІ РґРѕ СЃРёС… РїРѕСЂ, С‚РѕР»СЊРєРѕ РїРѕС‚РѕРјСѓ, С‡С‚Рѕ Р»СѓС‡С€РёР№ РєСѓР·РЅРµС† РЅР° РІРµСЃСЊ РЎС‚Р°СЂС‹Р№ Р»Р°РіРµСЂСЊ.
+	AI_Output (self, other, "DIA_GRD_219_Stone2_06_03"); //РњРµРЅСЏ Р±СЂРѕСЃРёР»Рё РІ СЌС‚Сѓ РєСЂС‹СЃРёРЅСѓСЋ РЅРѕСЂСѓ Рё РІС‹РїСѓСЃРєР°Р»Рё, С‚РѕР»СЊРєРѕ РєРѕРіРґР° РЅСѓР¶РЅРѕ Р±С‹Р»Рѕ РїРѕСЂР°Р±РѕС‚Р°С‚СЊ РЅР° Р“РѕРјРµР·Р°.
 };
 
 
@@ -366,7 +366,7 @@ func void DIA_GRD_219_Stone2_Info()
 //---------------------------------------------------------------------
 //	Info Stone4
 //---------------------------------------------------------------------
-// Rьstung verbessern lassen
+// RСЊstung verbessern lassen
 instance DIA_GRD_219_Stone4 (C_INFO)
 {
 	npc				= GRD_219_Stone;
@@ -374,7 +374,7 @@ instance DIA_GRD_219_Stone4 (C_INFO)
 	information		= DIA_GRD_219_Stone4_Info;
 	important		= 0;
 	permanent		= 0;
-	description 	= "Ты можешь усилить эти железные доспехи?";
+	description 	= "РўС‹ РјРѕР¶РµС€СЊ СѓСЃРёР»РёС‚СЊ СЌС‚Рё Р¶РµР»РµР·РЅС‹Рµ РґРѕСЃРїРµС…Рё?";
 };
 
 FUNC int DIA_GRD_219_Stone4_Condition()
@@ -386,8 +386,8 @@ FUNC int DIA_GRD_219_Stone4_Condition()
 
 func void DIA_GRD_219_Stone4_Info()
 {
-		AI_Output (other, self, "DIA_GRD_219_Stone4_15_01"); //Ты можешь усилить эти железные доспехи?
-		AI_Output (self, other, "DIA_GRD_219_Stone4_06_02"); //Конечно, могу. Давай сюда, минутку и все будет готово.
+		AI_Output (other, self, "DIA_GRD_219_Stone4_15_01"); //РўС‹ РјРѕР¶РµС€СЊ СѓСЃРёР»РёС‚СЊ СЌС‚Рё Р¶РµР»РµР·РЅС‹Рµ РґРѕСЃРїРµС…Рё?
+		AI_Output (self, other, "DIA_GRD_219_Stone4_06_02"); //РљРѕРЅРµС‡РЅРѕ, РјРѕРіСѓ. Р”Р°РІР°Р№ СЃСЋРґР°, РјРёРЅСѓС‚РєСѓ Рё РІСЃРµ Р±СѓРґРµС‚ РіРѕС‚РѕРІРѕ.
 	
 		AI_UnequipArmor	  ( hero );
 		B_GiveInvItems   (hero, self, ORE_ARMOR_M, 1);
@@ -406,7 +406,7 @@ func void DIA_GRD_219_Stone4_Info()
 		CreateInvItem (self,ORE_ARMOR_H);
 		B_GiveInvItems	  (self, hero, ORE_ARMOR_H, 1);	
 
-		AI_Output (self, other, "DIA_GRD_219_Stone4_06_03"); //Держи, теперь эти доспехи мощнее и мы в расчете.
+		AI_Output (self, other, "DIA_GRD_219_Stone4_06_03"); //Р”РµСЂР¶Рё, С‚РµРїРµСЂСЊ СЌС‚Рё РґРѕСЃРїРµС…Рё РјРѕС‰РЅРµРµ Рё РјС‹ РІ СЂР°СЃС‡РµС‚Рµ.
 		
 		KnowStone = 1;
 };
@@ -420,7 +420,7 @@ instance DIA_GRD_219_Stone5 (C_INFO)
 	information		= DIA_GRD_219_Stone5_Info;
 	important		= 0;
 	permanent		= 0;
-	description 	= "Я хотел бы получить кольцо, чтобы повысить мою жизненную энергию.";
+	description 	= "РЇ С…РѕС‚РµР» Р±С‹ РїРѕР»СѓС‡РёС‚СЊ РєРѕР»СЊС†Рѕ, С‡С‚РѕР±С‹ РїРѕРІС‹СЃРёС‚СЊ РјРѕСЋ Р¶РёР·РЅРµРЅРЅСѓСЋ СЌРЅРµСЂРіРёСЋ.";
 };
 
 FUNC int DIA_GRD_219_Stone5_Condition()
@@ -432,8 +432,8 @@ FUNC int DIA_GRD_219_Stone5_Condition()
 
 func void DIA_GRD_219_Stone5_Info()
 {
-		AI_Output (other, self, "DIA_GRD_219_Stone5_15_01"); //Я хотел бы получить кольцо, которое может повысить мою жизненную энергию.
-		AI_Output (self, other, "DIA_GRD_219_Stone5_06_02"); //Это просто. Минуту.
+		AI_Output (other, self, "DIA_GRD_219_Stone5_15_01"); //РЇ С…РѕС‚РµР» Р±С‹ РїРѕР»СѓС‡РёС‚СЊ РєРѕР»СЊС†Рѕ, РєРѕС‚РѕСЂРѕРµ РјРѕР¶РµС‚ РїРѕРІС‹СЃРёС‚СЊ РјРѕСЋ Р¶РёР·РЅРµРЅРЅСѓСЋ СЌРЅРµСЂРіРёСЋ.
+		AI_Output (self, other, "DIA_GRD_219_Stone5_06_02"); //Р­С‚Рѕ РїСЂРѕСЃС‚Рѕ. РњРёРЅСѓС‚Сѓ.
 	
 		B_StartUseMob	( self,	"BSFIRE" );	
 		AI_Wait			( self,	1);
@@ -445,7 +445,7 @@ func void DIA_GRD_219_Stone5_Info()
 		AI_Wait			( self,	1);
 		AI_GotoNpc 		( self, hero );
 		
-		AI_Output (self, other, "DIA_GRD_219_Stone5_06_03"); //Кольцо здоровья даст тебе дополнительный запас жизненных сил. Думаю, теперь мы в расчете.
+		AI_Output (self, other, "DIA_GRD_219_Stone5_06_03"); //РљРѕР»СЊС†Рѕ Р·РґРѕСЂРѕРІСЊСЏ РґР°СЃС‚ С‚РµР±Рµ РґРѕРїРѕР»РЅРёС‚РµР»СЊРЅС‹Р№ Р·Р°РїР°СЃ Р¶РёР·РЅРµРЅРЅС‹С… СЃРёР». Р”СѓРјР°СЋ, С‚РµРїРµСЂСЊ РјС‹ РІ СЂР°СЃС‡РµС‚Рµ.
 
 		CreateInvItem	  ( self, Ring_des_Lebens2 );	
 		B_GiveInvItems	  ( self, other, Ring_des_Lebens2, 1);	
@@ -462,7 +462,7 @@ instance DIA_GRD_219_Stone6 (C_INFO)
 	information		= DIA_GRD_219_Stone6_Info;
 	important		= 0;
 	permanent		= 0;
-	description 	= "Наверное, мне пригодилось бы Кольцо Защиты.";
+	description 	= "РќР°РІРµСЂРЅРѕРµ, РјРЅРµ РїСЂРёРіРѕРґРёР»РѕСЃСЊ Р±С‹ РљРѕР»СЊС†Рѕ Р—Р°С‰РёС‚С‹.";
 };
 
 FUNC int DIA_GRD_219_Stone6_Condition()
@@ -474,8 +474,8 @@ FUNC int DIA_GRD_219_Stone6_Condition()
 
 func void DIA_GRD_219_Stone6_Info()
 {
-		AI_Output (other, self, "DIA_GRD_219_Stone6_15_01"); //Наверное, мне пригодилось бы Кольцо защиты.
-		AI_Output (self, other, "DIA_GRD_219_Stone6_06_02"); //Кольцо защиты? Хорошо, прямо сейчас и сделаю. Подожди немного.
+		AI_Output (other, self, "DIA_GRD_219_Stone6_15_01"); //РќР°РІРµСЂРЅРѕРµ, РјРЅРµ РїСЂРёРіРѕРґРёР»РѕСЃСЊ Р±С‹ РљРѕР»СЊС†Рѕ Р·Р°С‰РёС‚С‹.
+		AI_Output (self, other, "DIA_GRD_219_Stone6_06_02"); //РљРѕР»СЊС†Рѕ Р·Р°С‰РёС‚С‹? РҐРѕСЂРѕС€Рѕ, РїСЂСЏРјРѕ СЃРµР№С‡Р°СЃ Рё СЃРґРµР»Р°СЋ. РџРѕРґРѕР¶РґРё РЅРµРјРЅРѕРіРѕ.
 		
 		B_StartUseMob	( self,	"BSFIRE" );	
 		AI_Wait			( self,	1);
@@ -487,7 +487,7 @@ func void DIA_GRD_219_Stone6_Info()
 		AI_Wait			( self,	1);
 		AI_GotoNpc 		( self, hero );
 	
-		AI_Output (self, other, "DIA_GRD_219_Stone6_06_03"); //Хотел Кольцо защиты - получил. Так что теперь мы в расчете.
+		AI_Output (self, other, "DIA_GRD_219_Stone6_06_03"); //РҐРѕС‚РµР» РљРѕР»СЊС†Рѕ Р·Р°С‰РёС‚С‹ - РїРѕР»СѓС‡РёР». РўР°Рє С‡С‚Рѕ С‚РµРїРµСЂСЊ РјС‹ РІ СЂР°СЃС‡РµС‚Рµ.
 
 		CreateInvItem	  ( self, Schutzring_Total2 );
 		B_GiveInvItems     (self, other, Schutzring_Total2, 1);
@@ -503,7 +503,7 @@ instance DIA_GRD_219_Stone7 (C_INFO)
 	information		= DIA_GRD_219_Stone7_Info;
 	important		= 0;
 	permanent		= 0;
-	description 	= "Сделай мне то, что повысит мою магическую силу.";
+	description 	= "РЎРґРµР»Р°Р№ РјРЅРµ С‚Рѕ, С‡С‚Рѕ РїРѕРІС‹СЃРёС‚ РјРѕСЋ РјР°РіРёС‡РµСЃРєСѓСЋ СЃРёР»Сѓ.";
 };
 
 FUNC int DIA_GRD_219_Stone7_Condition()
@@ -515,8 +515,8 @@ FUNC int DIA_GRD_219_Stone7_Condition()
 
 func void DIA_GRD_219_Stone7_Info()
 {
-		AI_Output (other, self, "DIA_GRD_219_Stone7_15_01"); //Сделай мне то, что повысит мою магическую силу.
-		AI_Output (self, other, "DIA_GRD_219_Stone7_06_02"); //...Повысить магическую силу?.. Амулет! Точно, я скую тебе Амулет магии. Подожди немного.
+		AI_Output (other, self, "DIA_GRD_219_Stone7_15_01"); //РЎРґРµР»Р°Р№ РјРЅРµ С‚Рѕ, С‡С‚Рѕ РїРѕРІС‹СЃРёС‚ РјРѕСЋ РјР°РіРёС‡РµСЃРєСѓСЋ СЃРёР»Сѓ.
+		AI_Output (self, other, "DIA_GRD_219_Stone7_06_02"); //...РџРѕРІС‹СЃРёС‚СЊ РјР°РіРёС‡РµСЃРєСѓСЋ СЃРёР»Сѓ?.. РђРјСѓР»РµС‚! РўРѕС‡РЅРѕ, СЏ СЃРєСѓСЋ С‚РµР±Рµ РђРјСѓР»РµС‚ РјР°РіРёРё. РџРѕРґРѕР¶РґРё РЅРµРјРЅРѕРіРѕ.
 	
 		B_StartUseMob	( self,	"BSFIRE" );	
 		AI_Wait			( self,	1);
@@ -528,7 +528,7 @@ func void DIA_GRD_219_Stone7_Info()
 		AI_Wait			( self,	1);
 		AI_GotoNpc 		( self, hero );
 		
-		AI_Output (self, other, "DIA_GRD_219_Stone7_06_03"); //Вот, амулет готов. Отличная вещь получилась, думаю, ты в обиде не остался.
+		AI_Output (self, other, "DIA_GRD_219_Stone7_06_03"); //Р’РѕС‚, Р°РјСѓР»РµС‚ РіРѕС‚РѕРІ. РћС‚Р»РёС‡РЅР°СЏ РІРµС‰СЊ РїРѕР»СѓС‡РёР»Р°СЃСЊ, РґСѓРјР°СЋ, С‚С‹ РІ РѕР±РёРґРµ РЅРµ РѕСЃС‚Р°Р»СЃСЏ.
 
 		CreateInvItem	  ( self, Amulett_der_Magie );
 		B_GiveInvItems     (self, other, Amulett_der_Magie, 1);	

@@ -1,12 +1,12 @@
 //********************************************************************************************************//
-// 3 SKLAVEN MÜSST IHR SEIN...DIE ORKSKLAVEN IN DER ALTEN MINE
+// 3 SKLAVEN MÐ¬SST IHR SEIN...DIE ORKSKLAVEN IN DER ALTEN MINE
 //*********************************************************************************************************//
 instance Orc_2001_Sklave(Npc_Default)
 {
 	//-------- primary data --------
 	
-	name =							"Îðê-ðàá";
-	slot =							"Îðê-ðàá";
+	name =							"ÐžÑ€Ðº-Ñ€Ð°Ð±";
+	slot =							"ÐžÑ€Ðº-Ñ€Ð°Ð±";
 	guild =							GIL_ORCSLAVE;      
 	level =							3;
 	flags =							0;
@@ -35,7 +35,7 @@ instance Orc_2001_Sklave(Npc_Default)
 
 
 	//-------- ai --------
-//	start_aistate				=		ZS_Orc_Stomper;//SN: wegen Überarbeitung Ork-AI entfernt
+//	start_aistate				=		ZS_Orc_Stomper;//SN: wegen Ð¬berarbeitung Ork-AI entfernt
 	fight_tactic				=		FAI_ORC;
 	senses_range				=		2000;	
 
@@ -60,7 +60,7 @@ instance Orc_2002_Sklave(Npc_Default)
 {
 	//-------- primary data --------
 	
-	name =							"Îðê-ðàá";
+	name =							"ÐžÑ€Ðº-Ñ€Ð°Ð±";
 	slot =							"Orc Slave";
 	guild =							GIL_ORCSLAVE;      
 	level =							3;
@@ -90,7 +90,7 @@ instance Orc_2002_Sklave(Npc_Default)
 
 
 	//-------- ai --------
-//	start_aistate				=		ZS_Orc_Stomper;//SN: wegen Überarbeitung Ork-AI entfernt
+//	start_aistate				=		ZS_Orc_Stomper;//SN: wegen Ð¬berarbeitung Ork-AI entfernt
 	fight_tactic				=		FAI_ORC;
 	senses_range				=		2000;	
 

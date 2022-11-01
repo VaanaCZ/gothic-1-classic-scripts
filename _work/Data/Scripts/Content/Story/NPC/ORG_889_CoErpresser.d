@@ -2,7 +2,7 @@ instance ORG_889_CoErpresser (Npc_Default)
 {
 	//-------- primary data --------
 	
-	name =					"Шантажист";
+	name =					"РЁР°РЅС‚Р°Р¶РёСЃС‚";
 	Npctype =				Npctype_Ambient;
 	guild =					GIL_ORG;      
 	level =					11;

@@ -2,7 +2,7 @@ instance EBR_106_Bartholo (Npc_Default)
 {
 	//-------- primary data --------
 	
-	name 		=	"Бартоло";
+	name 		=	"Р‘Р°СЂС‚РѕР»Рѕ";
 	npctype 	= 	npctype_main;
    	guild 		=	GIL_EBR;      
 	level 		=	70;

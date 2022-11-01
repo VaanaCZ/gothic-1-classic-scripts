@@ -2,7 +2,7 @@ instance GRD_201_Jackal (Npc_Default)
 {
 	//-------- primary data --------
 	
-	name 		=	"ÿ‡Í‡Î";
+	name 		=	"–®–∞–∫–∞–ª";
 	npctype		=	npctype_main;
 	guild 		=	GIL_GRD;
 	level 		= 	50;		// wegen XP!

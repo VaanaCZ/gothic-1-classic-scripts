@@ -2,7 +2,7 @@ instance EBR_109_Syra (Npc_Default)
 {
 	//-------- primary data --------
 	
-	name 		=	"Сэра";
+	name 		=	"РЎСЌСЂР°";
 	npctype		= 	npctype_main;
 	guild 		=	GIL_BAB;
 	level 		=	1;

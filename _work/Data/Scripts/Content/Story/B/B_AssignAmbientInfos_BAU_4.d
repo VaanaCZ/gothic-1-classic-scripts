@@ -14,7 +14,7 @@ INSTANCE Info_Bau_4_EXIT(C_INFO)
 	condition	= Info_Bau_4_EXIT_Condition;
 	information	= Info_Bau_4_EXIT_Info;
 	permanent	= 1;
-	description = "ЗАКОНЧИТЬ РАЗГОВОР";
+	description = "Р—РђРљРћРќР§РРўР¬ Р РђР—Р“РћР’РћР ";
 };                       
 
 FUNC INT Info_Bau_4_EXIT_Condition()
@@ -37,7 +37,7 @@ INSTANCE Info_Bau_4_WichtigePersonen(C_INFO)
 	condition	= Info_Bau_4_WichtigePersonen_Condition;
 	information	= Info_Bau_4_WichtigePersonen_Info;
 	permanent	= 1;
-	description = "У вас есть главный?";
+	description = "РЈ РІР°СЃ РµСЃС‚СЊ РіР»Р°РІРЅС‹Р№?";
 };                       
 
 FUNC INT Info_Bau_4_WichtigePersonen_Condition()
@@ -47,9 +47,9 @@ FUNC INT Info_Bau_4_WichtigePersonen_Condition()
 
 FUNC VOID Info_Bau_4_WichtigePersonen_Info()
 {
-	AI_Output(other,self,"Info_Bau_4_WichtigePersonen_15_00"); //У вас есть главный?
-	AI_Output(self,other,"Info_Bau_4_WichtigePersonen_04_01"); //Ну, здесь все подчиняются Лорду. Но большая часть людей работает на его полях из страха перед ним и его головорезами.
-	AI_Output(self,other,"Info_Bau_4_WichtigePersonen_04_02"); //Но я их не боюсь. Я живу здесь уже несколько лет и мне давно надоело иметь дело с ворами из лагеря... Поэтому рисовые поля для меня как раз то, что нужно.
+	AI_Output(other,self,"Info_Bau_4_WichtigePersonen_15_00"); //РЈ РІР°СЃ РµСЃС‚СЊ РіР»Р°РІРЅС‹Р№?
+	AI_Output(self,other,"Info_Bau_4_WichtigePersonen_04_01"); //РќСѓ, Р·РґРµСЃСЊ РІСЃРµ РїРѕРґС‡РёРЅСЏСЋС‚СЃСЏ Р›РѕСЂРґСѓ. РќРѕ Р±РѕР»СЊС€Р°СЏ С‡Р°СЃС‚СЊ Р»СЋРґРµР№ СЂР°Р±РѕС‚Р°РµС‚ РЅР° РµРіРѕ РїРѕР»СЏС… РёР· СЃС‚СЂР°С…Р° РїРµСЂРµРґ РЅРёРј Рё РµРіРѕ РіРѕР»РѕРІРѕСЂРµР·Р°РјРё.
+	AI_Output(self,other,"Info_Bau_4_WichtigePersonen_04_02"); //РќРѕ СЏ РёС… РЅРµ Р±РѕСЋСЃСЊ. РЇ Р¶РёРІСѓ Р·РґРµСЃСЊ СѓР¶Рµ РЅРµСЃРєРѕР»СЊРєРѕ Р»РµС‚ Рё РјРЅРµ РґР°РІРЅРѕ РЅР°РґРѕРµР»Рѕ РёРјРµС‚СЊ РґРµР»Рѕ СЃ РІРѕСЂР°РјРё РёР· Р»Р°РіРµСЂСЏ... РџРѕСЌС‚РѕРјСѓ СЂРёСЃРѕРІС‹Рµ РїРѕР»СЏ РґР»СЏ РјРµРЅСЏ РєР°Рє СЂР°Р· С‚Рѕ, С‡С‚Рѕ РЅСѓР¶РЅРѕ.
 	var C_NPC Ricelord;			Ricelord	= Hlp_GetNpc(Bau_900_Ricelord);
 	Ricelord.aivar[AIV_FINDABLE] = TRUE;	
 };
@@ -64,7 +64,7 @@ INSTANCE Info_Bau_4_DasLager(C_INFO)
 	condition	= Info_Bau_4_DasLager_Condition;
 	information	= Info_Bau_4_DasLager_Info;
 	permanent	= 1;
-	description = "Есть что-нибудь, что я должен узнать об этом месте?";
+	description = "Р•СЃС‚СЊ С‡С‚Рѕ-РЅРёР±СѓРґСЊ, С‡С‚Рѕ СЏ РґРѕР»Р¶РµРЅ СѓР·РЅР°С‚СЊ РѕР± СЌС‚РѕРј РјРµСЃС‚Рµ?";
 };                       
 
 FUNC INT Info_Bau_4_DasLager_Condition()
@@ -74,8 +74,8 @@ FUNC INT Info_Bau_4_DasLager_Condition()
 
 FUNC VOID Info_Bau_4_DasLager_Info()
 {
-	AI_Output(other,self,"Info_Bau_4_DasLager_15_00"); //Есть что-нибудь, что я должен узнать об этом месте?
-	AI_Output(self,other,"Info_Bau_4_DasLager_04_01"); //Будь осторожен, в этом лагере с тобой всякое может случиться. Здесь полно головорезов, которые могут избить до полусмерти такого новичка, как ты, просто ради забавы.
+	AI_Output(other,self,"Info_Bau_4_DasLager_15_00"); //Р•СЃС‚СЊ С‡С‚Рѕ-РЅРёР±СѓРґСЊ, С‡С‚Рѕ СЏ РґРѕР»Р¶РµРЅ СѓР·РЅР°С‚СЊ РѕР± СЌС‚РѕРј РјРµСЃС‚Рµ?
+	AI_Output(self,other,"Info_Bau_4_DasLager_04_01"); //Р‘СѓРґСЊ РѕСЃС‚РѕСЂРѕР¶РµРЅ, РІ СЌС‚РѕРј Р»Р°РіРµСЂРµ СЃ С‚РѕР±РѕР№ РІСЃСЏРєРѕРµ РјРѕР¶РµС‚ СЃР»СѓС‡РёС‚СЊСЃСЏ. Р—РґРµСЃСЊ РїРѕР»РЅРѕ РіРѕР»РѕРІРѕСЂРµР·РѕРІ, РєРѕС‚РѕСЂС‹Рµ РјРѕРіСѓС‚ РёР·Р±РёС‚СЊ РґРѕ РїРѕР»СѓСЃРјРµСЂС‚Рё С‚Р°РєРѕРіРѕ РЅРѕРІРёС‡РєР°, РєР°Рє С‚С‹, РїСЂРѕСЃС‚Рѕ СЂР°РґРё Р·Р°Р±Р°РІС‹.
 };
 
 // *************************************************************************
@@ -88,7 +88,7 @@ INSTANCE Info_Bau_4_DieLage(C_INFO) // E1
 	condition	= Info_Bau_4_DieLage_Condition;
 	information	= Info_Bau_4_DieLage_Info;
 	permanent	= 1;
-	description = "Как идут дела?";
+	description = "РљР°Рє РёРґСѓС‚ РґРµР»Р°?";
 };                       
 
 FUNC INT Info_Bau_4_DieLage_Condition()
@@ -98,8 +98,8 @@ FUNC INT Info_Bau_4_DieLage_Condition()
 
 FUNC VOID Info_Bau_4_DieLage_Info()
 {
-	AI_Output(other,self,"Info_Bau_4_DieLage_15_00"); //Как идут дела?
-	AI_Output(self,other,"Info_Bau_4_DieLage_04_01"); //У нас здесь полно работы. Нужно много риса, чтобы прокормить всех, кто живет в лагере.
+	AI_Output(other,self,"Info_Bau_4_DieLage_15_00"); //РљР°Рє РёРґСѓС‚ РґРµР»Р°?
+	AI_Output(self,other,"Info_Bau_4_DieLage_04_01"); //РЈ РЅР°СЃ Р·РґРµСЃСЊ РїРѕР»РЅРѕ СЂР°Р±РѕС‚С‹. РќСѓР¶РЅРѕ РјРЅРѕРіРѕ СЂРёСЃР°, С‡С‚РѕР±С‹ РїСЂРѕРєРѕСЂРјРёС‚СЊ РІСЃРµС…, РєС‚Рѕ Р¶РёРІРµС‚ РІ Р»Р°РіРµСЂРµ.
 };
 
 // *************************************************************************
@@ -112,7 +112,7 @@ INSTANCE Info_Bau_4_Wasser(C_INFO) // E1
 	condition	= Info_Bau_4_Wasser_Condition;
 	information	= Info_Bau_4_Wasser_Info;
 	permanent	= 1;
-	description = "Меня прислал Лефти. Я принес тебе воды.";
+	description = "РњРµРЅСЏ РїСЂРёСЃР»Р°Р» Р›РµС„С‚Рё. РЇ РїСЂРёРЅРµСЃ С‚РµР±Рµ РІРѕРґС‹.";
 };                       
 
 FUNC INT Info_Bau_4_Wasser_Condition()
@@ -126,7 +126,7 @@ FUNC INT Info_Bau_4_Wasser_Condition()
 
 FUNC VOID Info_Bau_4_Wasser_Info()
 {
-	AI_Output(other,self,"Info_Bau_4_Wasser_15_00"); //Меня прислал Лефти. Я принес тебе воды.
+	AI_Output(other,self,"Info_Bau_4_Wasser_15_00"); //РњРµРЅСЏ РїСЂРёСЃР»Р°Р» Р›РµС„С‚Рё. РЇ РїСЂРёРЅРµСЃ С‚РµР±Рµ РІРѕРґС‹.
 	if (Npc_HasItems(other, ItFo_Potion_Water_01)>=1)
 	{
 		B_GiveInvItems		(other, self,	ItFo_Potion_Water_01, 1);
@@ -137,7 +137,7 @@ FUNC VOID Info_Bau_4_Wasser_Info()
 		};
 		AI_UseItem			(self,	ItFo_Potion_Water_01);
 
-		AI_Output(self,other,"Info_Bau_4_Wasser_04_01"); //Спасибо! Мне ее так не хватало!
+		AI_Output(self,other,"Info_Bau_4_Wasser_04_01"); //РЎРїР°СЃРёР±Рѕ! РњРЅРµ РµРµ С‚Р°Рє РЅРµ С…РІР°С‚Р°Р»Рѕ!
 		
 		An_Bauern_verteilt = An_Bauern_verteilt+1;
 		if (An_Bauern_verteilt>=DurstigeBauern)
@@ -148,7 +148,7 @@ FUNC VOID Info_Bau_4_Wasser_Info()
 	}
 	else
 	{
-		AI_Output(self,other,"Info_Bau_4_Wasser_NOWATER_04_00"); //Да, у тебя же не осталось ни капли. Ладно, я спрошу у кого-нибудь другого.
+		AI_Output(self,other,"Info_Bau_4_Wasser_NOWATER_04_00"); //Р”Р°, Сѓ С‚РµР±СЏ Р¶Рµ РЅРµ РѕСЃС‚Р°Р»РѕСЃСЊ РЅРё РєР°РїР»Рё. Р›Р°РґРЅРѕ, СЏ СЃРїСЂРѕС€Сѓ Сѓ РєРѕРіРѕ-РЅРёР±СѓРґСЊ РґСЂСѓРіРѕРіРѕ.
 	};
 };
 

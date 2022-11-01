@@ -2,7 +2,7 @@
 /******************************************************************************************/
 INSTANCE ItWr_Book_Circle_01(C_Item)
 {	
-	name 					=	"Посох Мастера";
+	name 					=	"РџРѕСЃРѕС… РњР°СЃС‚РµСЂР°";
 	
 	mainflag 				=	ITEM_KAT_DOCS;
 	flags 					=	0;
@@ -13,7 +13,7 @@ INSTANCE ItWr_Book_Circle_01(C_Item)
 	material 				=	MAT_LEATHER;
 
 	scemeName				=	"MAP";	
-	description			= "1-й Круг магии";
+	description			= "1-Р№ РљСЂСѓРі РјР°РіРёРё";
 	
 	TEXT[5]				= NAME_Value;
 	COUNT[5]			= value;
@@ -39,30 +39,30 @@ INSTANCE ItWr_Book_Circle_01(C_Item)
   					
   					Doc_SetFont 	( nDocID, -1, "font_15_book.tga"	   			); 	// -1 -> all pages 
   					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   		);  //  0 -> margins are in pixels
-					Doc_PrintLine	( nDocID,  0, "1-й Круг магии"			);
+					Doc_PrintLine	( nDocID,  0, "1-Р№ РљСЂСѓРі РјР°РіРёРё"			);
 					Doc_PrintLine	( nDocID,  0, "---------------");
 					Doc_SetFont 	( nDocID, -1, "font_10_book.TGA"	   			); 	// -1 -> all pages 
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLines	( nDocID,  0, "Когда боги даровали человеку способность воспринимать мир магии и использовать его, они наделили его знанием, позволяющим создавать руны. Слуги богов взяли на себя почетную миссию создания и использования этих артефактов божественной силы. Постигая знания Кругов магии, они могли читать определенные заклинания.");
+					Doc_PrintLines	( nDocID,  0, "РљРѕРіРґР° Р±РѕРіРё РґР°СЂРѕРІР°Р»Рё С‡РµР»РѕРІРµРєСѓ СЃРїРѕСЃРѕР±РЅРѕСЃС‚СЊ РІРѕСЃРїСЂРёРЅРёРјР°С‚СЊ РјРёСЂ РјР°РіРёРё Рё РёСЃРїРѕР»СЊР·РѕРІР°С‚СЊ РµРіРѕ, РѕРЅРё РЅР°РґРµР»РёР»Рё РµРіРѕ Р·РЅР°РЅРёРµРј, РїРѕР·РІРѕР»СЏСЋС‰РёРј СЃРѕР·РґР°РІР°С‚СЊ СЂСѓРЅС‹. РЎР»СѓРіРё Р±РѕРіРѕРІ РІР·СЏР»Рё РЅР° СЃРµР±СЏ РїРѕС‡РµС‚РЅСѓСЋ РјРёСЃСЃРёСЋ СЃРѕР·РґР°РЅРёСЏ Рё РёСЃРїРѕР»СЊР·РѕРІР°РЅРёСЏ СЌС‚РёС… Р°СЂС‚РµС„Р°РєС‚РѕРІ Р±РѕР¶РµСЃС‚РІРµРЅРЅРѕР№ СЃРёР»С‹. РџРѕСЃС‚РёРіР°СЏ Р·РЅР°РЅРёСЏ РљСЂСѓРіРѕРІ РјР°РіРёРё, РѕРЅРё РјРѕРіР»Рё С‡РёС‚Р°С‚СЊ РѕРїСЂРµРґРµР»РµРЅРЅС‹Рµ Р·Р°РєР»РёРЅР°РЅРёСЏ.");
 					
 				
 
 					//2.Seite
-					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den Rдnder des TGAs aus, links,oben,rechts,unten)
+					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den RРґnder des TGAs aus, links,oben,rechts,unten)
 					Doc_PrintLine	( nDocID,  1, "");
-					Doc_PrintLine	( nDocID,  1,  "Свет" );
+					Doc_PrintLine	( nDocID,  1,  "РЎРІРµС‚" );
 					Doc_PrintLine	( nDocID,  1, "---------------");
-					Doc_PrintLines	( nDocID,  1, "Первый дар Инноса людям. Маг создает ярко светящийся шар.");
+					Doc_PrintLines	( nDocID,  1, "РџРµСЂРІС‹Р№ РґР°СЂ РРЅРЅРѕСЃР° Р»СЋРґСЏРј. РњР°Рі СЃРѕР·РґР°РµС‚ СЏСЂРєРѕ СЃРІРµС‚СЏС‰РёР№СЃСЏ С€Р°СЂ.");
 					Doc_PrintLine	( nDocID,  1,  Text);
 					Doc_PrintLine	( nDocID,  1,  "" );
-					Doc_PrintLine	( nDocID,  1, "Ледяная стрела");
+					Doc_PrintLine	( nDocID,  1, "Р›РµРґСЏРЅР°СЏ СЃС‚СЂРµР»Р°");
 					Doc_PrintLine	( nDocID,  1, "---------------");
-					Doc_PrintLines	( nDocID,  1, "Выстрел магической энергии.");
+					Doc_PrintLines	( nDocID,  1, "Р’С‹СЃС‚СЂРµР» РјР°РіРёС‡РµСЃРєРѕР№ СЌРЅРµСЂРіРёРё.");
 					Doc_PrintLine	( nDocID,  1,  Text_1);
 					Doc_PrintLine	( nDocID,  1, "");
-					Doc_PrintLine	( nDocID,  1, "Огненная стрела");
+					Doc_PrintLine	( nDocID,  1, "РћРіРЅРµРЅРЅР°СЏ СЃС‚СЂРµР»Р°");
 					Doc_PrintLine	( nDocID,  1, "---------------");
-					Doc_PrintLines	( nDocID,  1, "Выстрел магического огня.");
+					Doc_PrintLines	( nDocID,  1, "Р’С‹СЃС‚СЂРµР» РјР°РіРёС‡РµСЃРєРѕРіРѕ РѕРіРЅСЏ.");
 					Doc_PrintLine	( nDocID,  1,  Text_2);
 					Doc_Show		( nDocID );
 	};
@@ -71,7 +71,7 @@ INSTANCE ItWr_Book_Circle_01(C_Item)
 
 INSTANCE ItWr_Book_Circle_02(C_Item)
 {	
-	name 					=	"2-й Круг магии";
+	name 					=	"2-Р№ РљСЂСѓРі РјР°РіРёРё";
 	
 	mainflag 				=	ITEM_KAT_DOCS;
 	flags 					=	0;
@@ -82,7 +82,7 @@ INSTANCE ItWr_Book_Circle_02(C_Item)
 	material 				=	MAT_LEATHER;
 
 	scemeName				=	"MAP";	
-	description			= "2-й Круг магии";
+	description			= "2-Р№ РљСЂСѓРі РјР°РіРёРё";
 	
 	TEXT[5]				= NAME_Value;
 	COUNT[5]			= value;
@@ -107,29 +107,29 @@ INSTANCE ItWr_Book_Circle_02(C_Item)
   					
   					Doc_SetFont 	( nDocID, -1, "font_15_book.tga"	   			); 	// -1 -> all pages 
   					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   		);  //  0 -> margins are in pixels
-					Doc_PrintLine	( nDocID,  0, "2-й Круг магии"			);
+					Doc_PrintLine	( nDocID,  0, "2-Р№ РљСЂСѓРі РјР°РіРёРё"			);
 					Doc_PrintLine	( nDocID,  0, "---------------"			);
 					Doc_SetFont 	( nDocID, -1, "font_10_book.TGA"	   			); 	// -1 -> all pages 
 					Doc_PrintLine	( nDocID,  0, "");
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLines	( nDocID,  0, "Все заклинания высвобождают магическую энергию силой того, кто их использует. Такого человека называют магом.");
+					Doc_PrintLines	( nDocID,  0, "Р’СЃРµ Р·Р°РєР»РёРЅР°РЅРёСЏ РІС‹СЃРІРѕР±РѕР¶РґР°СЋС‚ РјР°РіРёС‡РµСЃРєСѓСЋ СЌРЅРµСЂРіРёСЋ СЃРёР»РѕР№ С‚РѕРіРѕ, РєС‚Рѕ РёС… РёСЃРїРѕР»СЊР·СѓРµС‚. РўР°РєРѕРіРѕ С‡РµР»РѕРІРµРєР° РЅР°Р·С‹РІР°СЋС‚ РјР°РіРѕРј.");
 					Doc_PrintLine	( nDocID,  0, "");
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLines	( nDocID,  0, "Каждое применение заклинания отбирает у мага часть энергии, которая называется магической силой.");
+					Doc_PrintLines	( nDocID,  0, "РљР°Р¶РґРѕРµ РїСЂРёРјРµРЅРµРЅРёРµ Р·Р°РєР»РёРЅР°РЅРёСЏ РѕС‚Р±РёСЂР°РµС‚ Сѓ РјР°РіР° С‡Р°СЃС‚СЊ СЌРЅРµСЂРіРёРё, РєРѕС‚РѕСЂР°СЏ РЅР°Р·С‹РІР°РµС‚СЃСЏ РјР°РіРёС‡РµСЃРєРѕР№ СЃРёР»РѕР№.");
 					Doc_PrintLine	( nDocID,  0, "");
 					Doc_PrintLine	( nDocID,  0, "");
 					
 					
 					//2.Seite
-					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den Rдnder des TGAs aus, links,oben,rechts,unten)
+					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den RРґnder des TGAs aus, links,oben,rechts,unten)
 					Doc_PrintLine	( nDocID,  1, "");
-					Doc_PrintLine	( nDocID,  1, "Исцеление");
+					Doc_PrintLine	( nDocID,  1, "РСЃС†РµР»РµРЅРёРµ");
 					Doc_PrintLine	( nDocID,  1, "---------------");
-					Doc_PrintLines	( nDocID,  1, "Аданос увидел, что люди не бессмертны, что они умирают по воле Белиара. И он решил, что не будет подчиняться Белиару, а даст людям возможность исцелять свои тела." ); 
+					Doc_PrintLines	( nDocID,  1, "РђРґР°РЅРѕСЃ СѓРІРёРґРµР», С‡С‚Рѕ Р»СЋРґРё РЅРµ Р±РµСЃСЃРјРµСЂС‚РЅС‹, С‡С‚Рѕ РѕРЅРё СѓРјРёСЂР°СЋС‚ РїРѕ РІРѕР»Рµ Р‘РµР»РёР°СЂР°. Р РѕРЅ СЂРµС€РёР», С‡С‚Рѕ РЅРµ Р±СѓРґРµС‚ РїРѕРґС‡РёРЅСЏС‚СЊСЃСЏ Р‘РµР»РёР°СЂСѓ, Р° РґР°СЃС‚ Р»СЋРґСЏРј РІРѕР·РјРѕР¶РЅРѕСЃС‚СЊ РёСЃС†РµР»СЏС‚СЊ СЃРІРѕРё С‚РµР»Р°." ); 
 					Doc_PrintLine	( nDocID,  1, "");
 					Doc_PrintLine	( nDocID,  1, "");
-					Doc_PrintLines	( nDocID,  1, "Это заклинание освобождает силу, исцеляющую мага.");
-					Doc_PrintLine	( nDocID,  1, "Инвестир. заклинание");
+					Doc_PrintLines	( nDocID,  1, "Р­С‚Рѕ Р·Р°РєР»РёРЅР°РЅРёРµ РѕСЃРІРѕР±РѕР¶РґР°РµС‚ СЃРёР»Сѓ, РёСЃС†РµР»СЏСЋС‰СѓСЋ РјР°РіР°.");
+					Doc_PrintLine	( nDocID,  1, "РРЅРІРµСЃС‚РёСЂ. Р·Р°РєР»РёРЅР°РЅРёРµ");
 					Doc_PrintLine	( nDocID,  1,  Text_1);
 					Doc_PrintLine	( nDocID,  1, "");
 					Doc_PrintLine	( nDocID,  1, "");
@@ -140,7 +140,7 @@ INSTANCE ItWr_Book_Circle_02(C_Item)
 /******************************************************************************************/
 INSTANCE ItWr_Book_Circle_03 (C_Item)
 {	
-	name 					=	"3-й Круг магии";
+	name 					=	"3-Р№ РљСЂСѓРі РјР°РіРёРё";
 
 	mainflag 				=	ITEM_KAT_DOCS;
 	flags 					=	0;
@@ -151,7 +151,7 @@ INSTANCE ItWr_Book_Circle_03 (C_Item)
 	material 				=	MAT_LEATHER;
 
 	scemeName				=	"MAP";
-	description			= "3-й Круг магии";
+	description			= "3-Р№ РљСЂСѓРі РјР°РіРёРё";
 	
 	TEXT[5]				= NAME_Value;
 	COUNT[5]			= value;
@@ -179,34 +179,34 @@ INSTANCE ItWr_Book_Circle_03 (C_Item)
   					
   					Doc_SetFont 	( nDocID, -1, "font_15_book.tga"	   			); 	// -1 -> all pages 
   					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   		);  //  0 -> margins are in pixels
-					Doc_PrintLine	( nDocID,  0, "3-й Круг магии"			);
+					Doc_PrintLine	( nDocID,  0, "3-Р№ РљСЂСѓРі РјР°РіРёРё"			);
 					Doc_PrintLine	( nDocID,  0, "---------------");
 					Doc_SetFont 	( nDocID, -1, "font_10_book.TGA"	   			); 	// -1 -> all pages 
 					Doc_PrintLine	( nDocID,  0, "");
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLines	( nDocID,  0, "Некоторые заклинания используют определенное количество магической силы. Они называются зарядными заклинаниями.");
+					Doc_PrintLines	( nDocID,  0, "РќРµРєРѕС‚РѕСЂС‹Рµ Р·Р°РєР»РёРЅР°РЅРёСЏ РёСЃРїРѕР»СЊР·СѓСЋС‚ РѕРїСЂРµРґРµР»РµРЅРЅРѕРµ РєРѕР»РёС‡РµСЃС‚РІРѕ РјР°РіРёС‡РµСЃРєРѕР№ СЃРёР»С‹. РћРЅРё РЅР°Р·С‹РІР°СЋС‚СЃСЏ Р·Р°СЂСЏРґРЅС‹РјРё Р·Р°РєР»РёРЅР°РЅРёСЏРјРё.");
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLines	( nDocID,  0, "Другие заклинания сохраняются до тех пор, пока маг может расходовать на них свою магическую энергию. Они называются инвестирующими заклинаниями.");
+					Doc_PrintLines	( nDocID,  0, "Р”СЂСѓРіРёРµ Р·Р°РєР»РёРЅР°РЅРёСЏ СЃРѕС…СЂР°РЅСЏСЋС‚СЃСЏ РґРѕ С‚РµС… РїРѕСЂ, РїРѕРєР° РјР°Рі РјРѕР¶РµС‚ СЂР°СЃС…РѕРґРѕРІР°С‚СЊ РЅР° РЅРёС… СЃРІРѕСЋ РјР°РіРёС‡РµСЃРєСѓСЋ СЌРЅРµСЂРіРёСЋ. РћРЅРё РЅР°Р·С‹РІР°СЋС‚СЃСЏ РёРЅРІРµСЃС‚РёСЂСѓСЋС‰РёРјРё Р·Р°РєР»РёРЅР°РЅРёСЏРјРё.");
 
 
 					//2.Seite
-					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den Rдnder des TGAs aus, links,oben,rechts,unten)
+					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den RРґnder des TGAs aus, links,oben,rechts,unten)
 					Doc_PrintLine	( nDocID,  1, "");
-					Doc_PrintLine	( nDocID,  1, "Огненный шар");
+					Doc_PrintLine	( nDocID,  1, "РћРіРЅРµРЅРЅС‹Р№ С€Р°СЂ");
 					Doc_PrintLine	( nDocID,  1, "---------------");
-					Doc_PrintLines	( nDocID,  1, "Второй дар Инноса детям огня. Огненный шар, сжигающий свою жертву.");
-					Doc_PrintLine	( nDocID,  1, "Зарядное заклинание");
+					Doc_PrintLines	( nDocID,  1, "Р’С‚РѕСЂРѕР№ РґР°СЂ РРЅРЅРѕСЃР° РґРµС‚СЏРј РѕРіРЅСЏ. РћРіРЅРµРЅРЅС‹Р№ С€Р°СЂ, СЃР¶РёРіР°СЋС‰РёР№ СЃРІРѕСЋ Р¶РµСЂС‚РІСѓ.");
+					Doc_PrintLine	( nDocID,  1, "Р—Р°СЂСЏРґРЅРѕРµ Р·Р°РєР»РёРЅР°РЅРёРµ");
 					Doc_PrintLine	( nDocID,  1, Text);
 					Doc_PrintLine	( nDocID,  1, "");
-					Doc_PrintLine	( nDocID,  1, "Ледяная глыба");
+					Doc_PrintLine	( nDocID,  1, "Р›РµРґСЏРЅР°СЏ РіР»С‹Р±Р°");
 					Doc_PrintLine	( nDocID,  1, "---------------");
-					Doc_PrintLines	( nDocID,  1, "Жертва превращается в ледяную глыбу. Это заклинание Круга Воды.");
+					Doc_PrintLines	( nDocID,  1, "Р–РµСЂС‚РІР° РїСЂРµРІСЂР°С‰Р°РµС‚СЃСЏ РІ Р»РµРґСЏРЅСѓСЋ РіР»С‹Р±Сѓ. Р­С‚Рѕ Р·Р°РєР»РёРЅР°РЅРёРµ РљСЂСѓРіР° Р’РѕРґС‹.");
 					Doc_PrintLine	( nDocID,  1, "");
 					Doc_PrintLine	( nDocID,  1, Text_1);
 					Doc_PrintLine	( nDocID,  1, "");
-					Doc_PrintLine	( nDocID,  1, "Шаровая молния");
+					Doc_PrintLine	( nDocID,  1, "РЁР°СЂРѕРІР°СЏ РјРѕР»РЅРёСЏ");
 					Doc_PrintLine	( nDocID,  1, "---------------");
-					Doc_PrintLines	( nDocID,  1, "Шар, созданный из магической энергии.");
+					Doc_PrintLines	( nDocID,  1, "РЁР°СЂ, СЃРѕР·РґР°РЅРЅС‹Р№ РёР· РјР°РіРёС‡РµСЃРєРѕР№ СЌРЅРµСЂРіРёРё.");
 					Doc_PrintLine	( nDocID,  1,  Text_2);
 					Doc_Show		( nDocID );
 	};
@@ -216,7 +216,7 @@ INSTANCE ItWr_Book_Circle_03 (C_Item)
 /******************************************************************************************/
 INSTANCE ItWr_Book_Circle_04 (C_Item)
 {	
-	name 					=	"4-й Круг магии";
+	name 					=	"4-Р№ РљСЂСѓРі РјР°РіРёРё";
 
 	mainflag 				=	ITEM_KAT_DOCS;
 	flags 					=	0;
@@ -227,7 +227,7 @@ INSTANCE ItWr_Book_Circle_04 (C_Item)
 	material 				=	MAT_LEATHER;
 
 	scemeName				=	"MAP";
-	description			= "4-й Круг магии";
+	description			= "4-Р№ РљСЂСѓРі РјР°РіРёРё";
 	
 	TEXT[5]				= NAME_Value;
 	COUNT[5]			= value;
@@ -254,36 +254,36 @@ INSTANCE ItWr_Book_Circle_04 (C_Item)
   					
   					Doc_SetFont 	( nDocID, -1, "font_15_book.tga"	   			); 	// -1 -> all pages 
   					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   		);  //  0 -> margins are in pixels
-					Doc_PrintLine	( nDocID,  0, "4-й Круг магии"			);
+					Doc_PrintLine	( nDocID,  0, "4-Р№ РљСЂСѓРі РјР°РіРёРё"			);
 					Doc_PrintLine	( nDocID,  0, "---------------");
 					Doc_SetFont 	( nDocID, -1, "font_10_book.TGA"	   			); 	// -1 -> all pages 
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLine	( nDocID,  0, "Магия");
-					Doc_PrintLine	( nDocID,  0, "телепортации");
+					Doc_PrintLine	( nDocID,  0, "РњР°РіРёСЏ");
+					Doc_PrintLine	( nDocID,  0, "С‚РµР»РµРїРѕСЂС‚Р°С†РёРё");
 					Doc_PrintLine	( nDocID,  0, "---------------");
 					Doc_PrintLine	( nDocID,  0, "");
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLines	( nDocID,  0, "Главная особенность: несмотря на то, что заклинание заключено в руну, оно может быть прочитано каждым, кто обладает магической силой. При этом энергия заклинания сразу освобождается. Для него не существует ограничений.");
+					Doc_PrintLines	( nDocID,  0, "Р“Р»Р°РІРЅР°СЏ РѕСЃРѕР±РµРЅРЅРѕСЃС‚СЊ: РЅРµСЃРјРѕС‚СЂСЏ РЅР° С‚Рѕ, С‡С‚Рѕ Р·Р°РєР»РёРЅР°РЅРёРµ Р·Р°РєР»СЋС‡РµРЅРѕ РІ СЂСѓРЅСѓ, РѕРЅРѕ РјРѕР¶РµС‚ Р±С‹С‚СЊ РїСЂРѕС‡РёС‚Р°РЅРѕ РєР°Р¶РґС‹Рј, РєС‚Рѕ РѕР±Р»Р°РґР°РµС‚ РјР°РіРёС‡РµСЃРєРѕР№ СЃРёР»РѕР№. РџСЂРё СЌС‚РѕРј СЌРЅРµСЂРіРёСЏ Р·Р°РєР»РёРЅР°РЅРёСЏ СЃСЂР°Р·Сѓ РѕСЃРІРѕР±РѕР¶РґР°РµС‚СЃСЏ. Р”Р»СЏ РЅРµРіРѕ РЅРµ СЃСѓС‰РµСЃС‚РІСѓРµС‚ РѕРіСЂР°РЅРёС‡РµРЅРёР№.");
 					
 
 					//2.Seite
-					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den Rдnder des TGAs aus, links,oben,rechts,unten)
+					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den RРґnder des TGAs aus, links,oben,rechts,unten)
 					
 					
-					Doc_PrintLine	( nDocID,  1, "Огненный шторм");
+					Doc_PrintLine	( nDocID,  1, "РћРіРЅРµРЅРЅС‹Р№ С€С‚РѕСЂРј");
 					Doc_PrintLine	( nDocID,  1, "---------------");
-					Doc_PrintLines	( nDocID,  1, "Это заклинание действует как огненный шар на одного противника, а потом переносится на других, стоящих возле него.");
-					Doc_PrintLine	( nDocID,  1, "Зарядное заклинание");
+					Doc_PrintLines	( nDocID,  1, "Р­С‚Рѕ Р·Р°РєР»РёРЅР°РЅРёРµ РґРµР№СЃС‚РІСѓРµС‚ РєР°Рє РѕРіРЅРµРЅРЅС‹Р№ С€Р°СЂ РЅР° РѕРґРЅРѕРіРѕ РїСЂРѕС‚РёРІРЅРёРєР°, Р° РїРѕС‚РѕРј РїРµСЂРµРЅРѕСЃРёС‚СЃСЏ РЅР° РґСЂСѓРіРёС…, СЃС‚РѕСЏС‰РёС… РІРѕР·Р»Рµ РЅРµРіРѕ.");
+					Doc_PrintLine	( nDocID,  1, "Р—Р°СЂСЏРґРЅРѕРµ Р·Р°РєР»РёРЅР°РЅРёРµ");
 					Doc_PrintLine	( nDocID,  1, "");
 					Doc_PrintLine	( nDocID,  1, Text);
-					Doc_PrintLine	( nDocID,  1, "Молния");
+					Doc_PrintLine	( nDocID,  1, "РњРѕР»РЅРёСЏ");
 					Doc_PrintLine	( nDocID,  1, "---------------");
-					Doc_PrintLines	( nDocID,  1, "Заклинание действует на многих врагов. Его силу сложно контролировать, магу следует осторожно его использовать.");
+					Doc_PrintLines	( nDocID,  1, "Р—Р°РєР»РёРЅР°РЅРёРµ РґРµР№СЃС‚РІСѓРµС‚ РЅР° РјРЅРѕРіРёС… РІСЂР°РіРѕРІ. Р•РіРѕ СЃРёР»Сѓ СЃР»РѕР¶РЅРѕ РєРѕРЅС‚СЂРѕР»РёСЂРѕРІР°С‚СЊ, РјР°РіСѓ СЃР»РµРґСѓРµС‚ РѕСЃС‚РѕСЂРѕР¶РЅРѕ РµРіРѕ РёСЃРїРѕР»СЊР·РѕРІР°С‚СЊ.");
 					Doc_PrintLine	( nDocID,  1,  Text_1);
 					Doc_PrintLine	( nDocID,  1, "");	
-					Doc_PrintLine	( nDocID,  1, "Уничтожение нежити");
+					Doc_PrintLine	( nDocID,  1, "РЈРЅРёС‡С‚РѕР¶РµРЅРёРµ РЅРµР¶РёС‚Рё");
 					Doc_PrintLine	( nDocID,  1, "---------------");
-					Doc_PrintLines	( nDocID,  1, "Это заклинание уничтожает существа, порожденные тьмой.");	
+					Doc_PrintLines	( nDocID,  1, "Р­С‚Рѕ Р·Р°РєР»РёРЅР°РЅРёРµ СѓРЅРёС‡С‚РѕР¶Р°РµС‚ СЃСѓС‰РµСЃС‚РІР°, РїРѕСЂРѕР¶РґРµРЅРЅС‹Рµ С‚СЊРјРѕР№.");	
 					Doc_PrintLine	( nDocID,  1, Text_2);
 					
 					Doc_Show		( nDocID );
@@ -292,7 +292,7 @@ INSTANCE ItWr_Book_Circle_04 (C_Item)
 /******************************************************************************************/
 INSTANCE  ItWr_Book_Circle_05(C_Item)
 {	
-	name 					=	"5-й Круг магии";
+	name 					=	"5-Р№ РљСЂСѓРі РјР°РіРёРё";
 
 	mainflag 				=	ITEM_KAT_DOCS;
 	flags 					=	0;
@@ -303,7 +303,7 @@ INSTANCE  ItWr_Book_Circle_05(C_Item)
 	material 				=	MAT_LEATHER;
 
 	scemeName				=	"MAP";
-	description				= "5-й Круг магии";
+	description				= "5-Р№ РљСЂСѓРі РјР°РіРёРё";
 	
 	TEXT[5]				= NAME_Value;
 	COUNT[5]			= value;
@@ -328,31 +328,31 @@ INSTANCE  ItWr_Book_Circle_05(C_Item)
   					
   					Doc_SetFont 	( nDocID, -1, "font_15_book.tga"	   			); 	// -1 -> all pages 
   					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   		);  //  0 -> margins are in pixels
-					Doc_PrintLine	( nDocID,  0, "5-й Круг магии"			);
+					Doc_PrintLine	( nDocID,  0, "5-Р№ РљСЂСѓРі РјР°РіРёРё"			);
 					Doc_PrintLine	( nDocID,  0, "---------------");
 					Doc_SetFont 	( nDocID, -1, "font_10_book.TGA"	   			); 	// -1 -> all pages 
 					Doc_PrintLine	( nDocID,  0, "");
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLine	( nDocID,  0, "Огненный дождь");
+					Doc_PrintLine	( nDocID,  0, "РћРіРЅРµРЅРЅС‹Р№ РґРѕР¶РґСЊ");
 					Doc_PrintLine	( nDocID,  0, "---------------");
-					Doc_PrintLines	( nDocID,  0, "Сила божественного огня поражает любое живое существо, находящееся в поле зрения мага.");
+					Doc_PrintLines	( nDocID,  0, "РЎРёР»Р° Р±РѕР¶РµСЃС‚РІРµРЅРЅРѕРіРѕ РѕРіРЅСЏ РїРѕСЂР°Р¶Р°РµС‚ Р»СЋР±РѕРµ Р¶РёРІРѕРµ СЃСѓС‰РµСЃС‚РІРѕ, РЅР°С…РѕРґСЏС‰РµРµСЃСЏ РІ РїРѕР»Рµ Р·СЂРµРЅРёСЏ РјР°РіР°.");
 					Doc_PrintLine	( nDocID,  0, Text_1);					
 					
 					
 					//2.Seite
-					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den Rдnder des TGAs aus, links,oben,rechts,unten)
+					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den RРґnder des TGAs aus, links,oben,rechts,unten)
 					Doc_PrintLine	( nDocID,  1, "");
-					Doc_PrintLine	( nDocID,  1, "Ледяная волна");
+					Doc_PrintLine	( nDocID,  1, "Р›РµРґСЏРЅР°СЏ РІРѕР»РЅР°");
 					Doc_PrintLine	( nDocID,  1, "---------------");
-					Doc_PrintLines	( nDocID,  1, "Волна магического льда накрывает всех противников и замораживает их на короткое время. Жертвы сохраняют подвижность, но при этом постепенно теряют свою жизненную силу.");
-					Doc_PrintLines	( nDocID,  1, "Заклинание Круга Воды.");
+					Doc_PrintLines	( nDocID,  1, "Р’РѕР»РЅР° РјР°РіРёС‡РµСЃРєРѕРіРѕ Р»СЊРґР° РЅР°РєСЂС‹РІР°РµС‚ РІСЃРµС… РїСЂРѕС‚РёРІРЅРёРєРѕРІ Рё Р·Р°РјРѕСЂР°Р¶РёРІР°РµС‚ РёС… РЅР° РєРѕСЂРѕС‚РєРѕРµ РІСЂРµРјСЏ. Р–РµСЂС‚РІС‹ СЃРѕС…СЂР°РЅСЏСЋС‚ РїРѕРґРІРёР¶РЅРѕСЃС‚СЊ, РЅРѕ РїСЂРё СЌС‚РѕРј РїРѕСЃС‚РµРїРµРЅРЅРѕ С‚РµСЂСЏСЋС‚ СЃРІРѕСЋ Р¶РёР·РЅРµРЅРЅСѓСЋ СЃРёР»Сѓ.");
+					Doc_PrintLines	( nDocID,  1, "Р—Р°РєР»РёРЅР°РЅРёРµ РљСЂСѓРіР° Р’РѕРґС‹.");
 					Doc_PrintLine	( nDocID,  1, Text_2);
 					Doc_Show		( nDocID );
 };
 
 INSTANCE  ItWr_Book_Circle_06(C_Item)
 {	
-	name 					=	"6-й Круг магии";
+	name 					=	"6-Р№ РљСЂСѓРі РјР°РіРёРё";
 
 	mainflag 				=	ITEM_KAT_DOCS;
 	flags 					=	0;
@@ -363,7 +363,7 @@ INSTANCE  ItWr_Book_Circle_06(C_Item)
 	material 				=	MAT_LEATHER;
 
 	scemeName				=	"MAP";
-	description			= "6-й Круг магии";
+	description			= "6-Р№ РљСЂСѓРі РјР°РіРёРё";
 	
 	TEXT[5]				= NAME_Value;
 	COUNT[5]			= value;
@@ -388,27 +388,27 @@ INSTANCE  ItWr_Book_Circle_06(C_Item)
   					
   					Doc_SetFont 	( nDocID, -1, "font_15_book.tga"	   			); 	// -1 -> all pages 
   					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   		);  //  0 -> margins are in pixels
-					Doc_PrintLine	( nDocID,  0, "6-й Круг магии"			);
+					Doc_PrintLine	( nDocID,  0, "6-Р№ РљСЂСѓРі РјР°РіРёРё"			);
 					Doc_SetFont 	( nDocID, -1, "font_10_book.TGA"	   			); 	// -1 -> all pages 
 					Doc_PrintLine	( nDocID,  0, "");
 					Doc_PrintLine	( nDocID,  0, "");
 					Doc_PrintLine	( nDocID,  0, "");
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLine	( nDocID,  0, "Дыхание смерти");
+					Doc_PrintLine	( nDocID,  0, "Р”С‹С…Р°РЅРёРµ СЃРјРµСЂС‚Рё");
 					Doc_PrintLine	( nDocID,  0, "---------------");
-					Doc_PrintLines	( nDocID,  0, "Дыхание Белиара. Облако забирающего жизнь Ничто, способное мгновенно убить жертву.");
+					Doc_PrintLines	( nDocID,  0, "Р”С‹С…Р°РЅРёРµ Р‘РµР»РёР°СЂР°. РћР±Р»Р°РєРѕ Р·Р°Р±РёСЂР°СЋС‰РµРіРѕ Р¶РёР·РЅСЊ РќРёС‡С‚Рѕ, СЃРїРѕСЃРѕР±РЅРѕРµ РјРіРЅРѕРІРµРЅРЅРѕ СѓР±РёС‚СЊ Р¶РµСЂС‚РІСѓ.");
 					Doc_PrintLine	( nDocID,  0, "");
 					Doc_PrintLine	( nDocID,  0, Text);					
 					
 					
 					//2.Seite
-					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den Rдnder des TGAs aus, links,oben,rechts,unten)
+					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den RРґnder des TGAs aus, links,oben,rechts,unten)
 					Doc_PrintLine	( nDocID,  1, "");
 					Doc_PrintLine	( nDocID,  1, "");
-					Doc_PrintLine	( nDocID,  1, "Волна Смерти");
+					Doc_PrintLine	( nDocID,  1, "Р’РѕР»РЅР° РЎРјРµСЂС‚Рё");
 					Doc_PrintLine	( nDocID,  1, "---------------");
-					Doc_PrintLines	( nDocID,  1, "Немногое известно о руне, содержащей энергию УРИЗЕЛЯ.");	
-					Doc_PrintLines	( nDocID,  1, "Сохранилась память лишь о том, что она скрывает силы Белиара.");
+					Doc_PrintLines	( nDocID,  1, "РќРµРјРЅРѕРіРѕРµ РёР·РІРµСЃС‚РЅРѕ Рѕ СЂСѓРЅРµ, СЃРѕРґРµСЂР¶Р°С‰РµР№ СЌРЅРµСЂРіРёСЋ РЈР РР—Р•Р›РЇ.");	
+					Doc_PrintLines	( nDocID,  1, "РЎРѕС…СЂР°РЅРёР»Р°СЃСЊ РїР°РјСЏС‚СЊ Р»РёС€СЊ Рѕ С‚РѕРј, С‡С‚Рѕ РѕРЅР° СЃРєСЂС‹РІР°РµС‚ СЃРёР»С‹ Р‘РµР»РёР°СЂР°.");
 					Doc_PrintLine	( nDocID,  1, "");
 				
 					
@@ -420,7 +420,7 @@ INSTANCE  ItWr_Book_Circle_06(C_Item)
 
 INSTANCE Goettergabe(C_Item)
 {	
-	name 					=	"Дар богов";
+	name 					=	"Р”Р°СЂ Р±РѕРіРѕРІ";
 	
 	mainflag 				=	ITEM_KAT_DOCS;
 	flags 					=	0;
@@ -431,7 +431,7 @@ INSTANCE Goettergabe(C_Item)
 	material 				=	MAT_LEATHER;
 
 	scemeName				=	"MAP";	
-	description			= "Дар богов";
+	description			= "Р”Р°СЂ Р±РѕРіРѕРІ";
 	//TEXT[0]				= "Dritter Kreis";
 	////COUNT[0]			= ;
 	//TEXT[1]				= "";
@@ -460,32 +460,32 @@ INSTANCE Goettergabe(C_Item)
 					//1.Seite
   					
   					Doc_SetFont 	( nDocID, -1, "font_15_book.tga"	   			); 	// -1 -> all pages 
-  					Doc_PrintLine	( nDocID,  0, "Магия");
+  					Doc_PrintLine	( nDocID,  0, "РњР°РіРёСЏ");
   					Doc_PrintLine	( nDocID,  0, "");
 					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   		);  //  0 -> margins are in pixels
 					Doc_PrintLine	( nDocID,  0, " "			);
 					Doc_SetFont 	( nDocID, -1, "font_10_book.TGA"	   			); 	// -1 -> all pages 
-					Doc_PrintLine	( nDocID,  0, "Дар богов");
+					Doc_PrintLine	( nDocID,  0, "Р”Р°СЂ Р±РѕРіРѕРІ");
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLines	( nDocID,  0, "В течение столетий люди пытались постичь смысл и происхождение магии. Но каким образом собирались они это сделать? Как можно исследовать магию? Это самая противоречивая сила из тех, что нам известна. Одна и та же сила используется, чтобы убить или исцелить, создать или уничтожить.");
+					Doc_PrintLines	( nDocID,  0, "Р’ С‚РµС‡РµРЅРёРµ СЃС‚РѕР»РµС‚РёР№ Р»СЋРґРё РїС‹С‚Р°Р»РёСЃСЊ РїРѕСЃС‚РёС‡СЊ СЃРјС‹СЃР» Рё РїСЂРѕРёСЃС…РѕР¶РґРµРЅРёРµ РјР°РіРёРё. РќРѕ РєР°РєРёРј РѕР±СЂР°Р·РѕРј СЃРѕР±РёСЂР°Р»РёСЃСЊ РѕРЅРё СЌС‚Рѕ СЃРґРµР»Р°С‚СЊ? РљР°Рє РјРѕР¶РЅРѕ РёСЃСЃР»РµРґРѕРІР°С‚СЊ РјР°РіРёСЋ? Р­С‚Рѕ СЃР°РјР°СЏ РїСЂРѕС‚РёРІРѕСЂРµС‡РёРІР°СЏ СЃРёР»Р° РёР· С‚РµС…, С‡С‚Рѕ РЅР°Рј РёР·РІРµСЃС‚РЅР°. РћРґРЅР° Рё С‚Р° Р¶Рµ СЃРёР»Р° РёСЃРїРѕР»СЊР·СѓРµС‚СЃСЏ, С‡С‚РѕР±С‹ СѓР±РёС‚СЊ РёР»Рё РёСЃС†РµР»РёС‚СЊ, СЃРѕР·РґР°С‚СЊ РёР»Рё СѓРЅРёС‡С‚РѕР¶РёС‚СЊ.");
 					
 
 					//2.Seite
-					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den Rдnder des TGAs aus, links,oben,rechts,unten)
+					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den RРґnder des TGAs aus, links,oben,rechts,unten)
 					Doc_PrintLine	( nDocID,  1, "");
 					Doc_PrintLine	( nDocID,  1, "");
 					Doc_PrintLine	( nDocID,  1, "");
 					Doc_PrintLine	( nDocID,  1, "");
-					Doc_PrintLines	( nDocID,  1, "На что похожа эта сила? Где отыскать ее, невидимую и в то же время обладающую таким могуществом? Магия есть то, что она есть. Самый щедрый и могущественный подарок богов. Сила богов дается только избранным, и лишь они способны становиться ее проводниками и обладают даром управлять ею.");	
+					Doc_PrintLines	( nDocID,  1, "РќР° С‡С‚Рѕ РїРѕС…РѕР¶Р° СЌС‚Р° СЃРёР»Р°? Р“РґРµ РѕС‚С‹СЃРєР°С‚СЊ РµРµ, РЅРµРІРёРґРёРјСѓСЋ Рё РІ С‚Рѕ Р¶Рµ РІСЂРµРјСЏ РѕР±Р»Р°РґР°СЋС‰СѓСЋ С‚Р°РєРёРј РјРѕРіСѓС‰РµСЃС‚РІРѕРј? РњР°РіРёСЏ РµСЃС‚СЊ С‚Рѕ, С‡С‚Рѕ РѕРЅР° РµСЃС‚СЊ. РЎР°РјС‹Р№ С‰РµРґСЂС‹Р№ Рё РјРѕРіСѓС‰РµСЃС‚РІРµРЅРЅС‹Р№ РїРѕРґР°СЂРѕРє Р±РѕРіРѕРІ. РЎРёР»Р° Р±РѕРіРѕРІ РґР°РµС‚СЃСЏ С‚РѕР»СЊРєРѕ РёР·Р±СЂР°РЅРЅС‹Рј, Рё Р»РёС€СЊ РѕРЅРё СЃРїРѕСЃРѕР±РЅС‹ СЃС‚Р°РЅРѕРІРёС‚СЊСЃСЏ РµРµ РїСЂРѕРІРѕРґРЅРёРєР°РјРё Рё РѕР±Р»Р°РґР°СЋС‚ РґР°СЂРѕРј СѓРїСЂР°РІР»СЏС‚СЊ РµСЋ.");	
 					Doc_PrintLine	( nDocID,  1, "");
-					Doc_PrintLine	( nDocID,  1, "Бартос фон Ларан");
+					Doc_PrintLine	( nDocID,  1, "Р‘Р°СЂС‚РѕСЃ С„РѕРЅ Р›Р°СЂР°РЅ");
 					Doc_Show		( nDocID );
 	};
 /******************************************************************************************/
 
 INSTANCE Geheimnisse_der_Zauberei(C_Item)
 {	
-	name 					=	"Тайны колдовства";
+	name 					=	"РўР°Р№РЅС‹ РєРѕР»РґРѕРІСЃС‚РІР°";
 	
 	mainflag 				=	ITEM_KAT_DOCS;
 	flags 					=	0;
@@ -496,7 +496,7 @@ INSTANCE Geheimnisse_der_Zauberei(C_Item)
 	material 				=	MAT_LEATHER;
 
 	scemeName				=	"MAP";	
-	description			= "Тайны колдовства";
+	description			= "РўР°Р№РЅС‹ РєРѕР»РґРѕРІСЃС‚РІР°";
 	//TEXT[0]				= "Dritter Kreis";
 	////COUNT[0]			= ;
 	//TEXT[1]				= "";
@@ -528,28 +528,28 @@ INSTANCE Geheimnisse_der_Zauberei(C_Item)
 					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1);  //  0 -> margins are in pixels
 					Doc_PrintLine	( nDocID,  0, "");
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLine	( nDocID,  0, "Тайны колдовства");
+					Doc_PrintLine	( nDocID,  0, "РўР°Р№РЅС‹ РєРѕР»РґРѕРІСЃС‚РІР°");
 					
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLines	( nDocID,  0, "Сам маг является служителем магической силы, а не ее повелителем. Он обладает способностью влиять на мир магической энергии и проводить ее через себя. Адепт, посвященный в высокое искусство магии, должен уметь укрощать свой дух, чтобы добиться этого.");
+					Doc_PrintLines	( nDocID,  0, "РЎР°Рј РјР°Рі СЏРІР»СЏРµС‚СЃСЏ СЃР»СѓР¶РёС‚РµР»РµРј РјР°РіРёС‡РµСЃРєРѕР№ СЃРёР»С‹, Р° РЅРµ РµРµ РїРѕРІРµР»РёС‚РµР»РµРј. РћРЅ РѕР±Р»Р°РґР°РµС‚ СЃРїРѕСЃРѕР±РЅРѕСЃС‚СЊСЋ РІР»РёСЏС‚СЊ РЅР° РјРёСЂ РјР°РіРёС‡РµСЃРєРѕР№ СЌРЅРµСЂРіРёРё Рё РїСЂРѕРІРѕРґРёС‚СЊ РµРµ С‡РµСЂРµР· СЃРµР±СЏ. РђРґРµРїС‚, РїРѕСЃРІСЏС‰РµРЅРЅС‹Р№ РІ РІС‹СЃРѕРєРѕРµ РёСЃРєСѓСЃСЃС‚РІРѕ РјР°РіРёРё, РґРѕР»Р¶РµРЅ СѓРјРµС‚СЊ СѓРєСЂРѕС‰Р°С‚СЊ СЃРІРѕР№ РґСѓС…, С‡С‚РѕР±С‹ РґРѕР±РёС‚СЊСЃСЏ СЌС‚РѕРіРѕ.");
 					
 					//2.Seite
-					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1);  //  0 -> margins are in pixels (Position des Textes von den Rдnder des TGAs aus, links,oben,rechts,unten)
+					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1);  //  0 -> margins are in pixels (Position des Textes von den RРґnder des TGAs aus, links,oben,rechts,unten)
 					Doc_PrintLine	( nDocID,  1, "");
 					Doc_PrintLine	( nDocID,  1, "");
 					Doc_PrintLine	( nDocID,  1, "");
 					Doc_PrintLine	( nDocID,  1, "");
-					Doc_PrintLines	( nDocID,  1, "Сила его духа помогает собирать магические арканы, формировать, связывать и вносить в наш вещественный мир. В момент наивысшей концентрации магу удается перенести свой дух из нашего мира в иные миры, откуда к нему приходит сила. Он является лишь ее проводником.");
+					Doc_PrintLines	( nDocID,  1, "РЎРёР»Р° РµРіРѕ РґСѓС…Р° РїРѕРјРѕРіР°РµС‚ СЃРѕР±РёСЂР°С‚СЊ РјР°РіРёС‡РµСЃРєРёРµ Р°СЂРєР°РЅС‹, С„РѕСЂРјРёСЂРѕРІР°С‚СЊ, СЃРІСЏР·С‹РІР°С‚СЊ Рё РІРЅРѕСЃРёС‚СЊ РІ РЅР°С€ РІРµС‰РµСЃС‚РІРµРЅРЅС‹Р№ РјРёСЂ. Р’ РјРѕРјРµРЅС‚ РЅР°РёРІС‹СЃС€РµР№ РєРѕРЅС†РµРЅС‚СЂР°С†РёРё РјР°РіСѓ СѓРґР°РµС‚СЃСЏ РїРµСЂРµРЅРµСЃС‚Рё СЃРІРѕР№ РґСѓС… РёР· РЅР°С€РµРіРѕ РјРёСЂР° РІ РёРЅС‹Рµ РјРёСЂС‹, РѕС‚РєСѓРґР° Рє РЅРµРјСѓ РїСЂРёС…РѕРґРёС‚ СЃРёР»Р°. РћРЅ СЏРІР»СЏРµС‚СЃСЏ Р»РёС€СЊ РµРµ РїСЂРѕРІРѕРґРЅРёРєРѕРј.");
 					Doc_PrintLine	( nDocID,  1, "");
 					Doc_PrintLine	( nDocID,  1, "");
-					Doc_PrintLine	( nDocID,  1, "Бартос фон Ларан");
+					Doc_PrintLine	( nDocID,  1, "Р‘Р°СЂС‚РѕСЃ С„РѕРЅ Р›Р°СЂР°РЅ");
 					Doc_Show		( nDocID );
 	};
 
 /******************************************************************************************/
 INSTANCE Machtvolle_Kunst (C_Item)
 {	
-	name 					=	"Могущественное искусство";
+	name 					=	"РњРѕРіСѓС‰РµСЃС‚РІРµРЅРЅРѕРµ РёСЃРєСѓСЃСЃС‚РІРѕ";
 
 	mainflag 				=	ITEM_KAT_DOCS;
 	flags 					=	0;
@@ -560,7 +560,7 @@ INSTANCE Machtvolle_Kunst (C_Item)
 	material 				=	MAT_LEATHER;
 
 	scemeName				=	"MAP";
-	description			= "Могущественное искусство";
+	description			= "РњРѕРіСѓС‰РµСЃС‚РІРµРЅРЅРѕРµ РёСЃРєСѓСЃСЃС‚РІРѕ";
 	//TEXT[0]				= "Dritter Kreis";
 	////COUNT[0]			= ;
 	//TEXT[1]				= "";
@@ -592,30 +592,30 @@ INSTANCE Machtvolle_Kunst (C_Item)
   					Doc_SetFont 	( nDocID, -1, "font_15_book.tga"); 	// -1 -> all pages 
 					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1);  //  0 -> margins are in pixels
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLine	( nDocID,  0, "Могущественное искусство");
+					Doc_PrintLine	( nDocID,  0, "РњРѕРіСѓС‰РµСЃС‚РІРµРЅРЅРѕРµ РёСЃРєСѓСЃСЃС‚РІРѕ");
 					Doc_PrintLine	( nDocID,  0, "");
 					Doc_SetFont 	( nDocID, -1, "font_10_book.tga");
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLines	( nDocID,  0, "Труд для посвященных в искусство аркан.");
+					Doc_PrintLines	( nDocID,  0, "РўСЂСѓРґ РґР»СЏ РїРѕСЃРІСЏС‰РµРЅРЅС‹С… РІ РёСЃРєСѓСЃСЃС‚РІРѕ Р°СЂРєР°РЅ.");
 					Doc_PrintLine	( nDocID,  0, "");
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLines	( nDocID,  0, "В процессе постижения тайн магии увеличивается способность мага собирать энергию. Сначала она течет к нему как лесной ручеек. В это время о ней нужно заботиться, иначе она может иссякнуть. Но потом этот ручеек наполняется и превращается в полноводную реку.");
+					Doc_PrintLines	( nDocID,  0, "Р’ РїСЂРѕС†РµСЃСЃРµ РїРѕСЃС‚РёР¶РµРЅРёСЏ С‚Р°Р№РЅ РјР°РіРёРё СѓРІРµР»РёС‡РёРІР°РµС‚СЃСЏ СЃРїРѕСЃРѕР±РЅРѕСЃС‚СЊ РјР°РіР° СЃРѕР±РёСЂР°С‚СЊ СЌРЅРµСЂРіРёСЋ. РЎРЅР°С‡Р°Р»Р° РѕРЅР° С‚РµС‡РµС‚ Рє РЅРµРјСѓ РєР°Рє Р»РµСЃРЅРѕР№ СЂСѓС‡РµРµРє. Р’ СЌС‚Рѕ РІСЂРµРјСЏ Рѕ РЅРµР№ РЅСѓР¶РЅРѕ Р·Р°Р±РѕС‚РёС‚СЊСЃСЏ, РёРЅР°С‡Рµ РѕРЅР° РјРѕР¶РµС‚ РёСЃСЃСЏРєРЅСѓС‚СЊ. РќРѕ РїРѕС‚РѕРј СЌС‚РѕС‚ СЂСѓС‡РµРµРє РЅР°РїРѕР»РЅСЏРµС‚СЃСЏ Рё РїСЂРµРІСЂР°С‰Р°РµС‚СЃСЏ РІ РїРѕР»РЅРѕРІРѕРґРЅСѓСЋ СЂРµРєСѓ.");
 					
 					
 					//2.Seite
-					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1);  //  0 -> margins are in pixels (Position des Textes von den Rдnder des TGAs aus, links,oben,rechts,unten)
+					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1);  //  0 -> margins are in pixels (Position des Textes von den RРґnder des TGAs aus, links,oben,rechts,unten)
 					Doc_PrintLine	( nDocID,  1, "");
 					Doc_PrintLine	( nDocID,  1, "");
 					Doc_PrintLine	( nDocID,  1, "");
 					Doc_PrintLine	( nDocID,  1, "");
-					Doc_PrintLines	( nDocID,  1, "Он растет и растет, становится сильнее с каждым днем. В его дальнейшем могуществе не будет и намека на прежнюю слабость. Достижение максимальной силы - священный долг каждого мага, ибо она была дарована богами и являет собой самый ценный дар, который когда-либо получали смертные.");
+					Doc_PrintLines	( nDocID,  1, "РћРЅ СЂР°СЃС‚РµС‚ Рё СЂР°СЃС‚РµС‚, СЃС‚Р°РЅРѕРІРёС‚СЃСЏ СЃРёР»СЊРЅРµРµ СЃ РєР°Р¶РґС‹Рј РґРЅРµРј. Р’ РµРіРѕ РґР°Р»СЊРЅРµР№С€РµРј РјРѕРіСѓС‰РµСЃС‚РІРµ РЅРµ Р±СѓРґРµС‚ Рё РЅР°РјРµРєР° РЅР° РїСЂРµР¶РЅСЋСЋ СЃР»Р°Р±РѕСЃС‚СЊ. Р”РѕСЃС‚РёР¶РµРЅРёРµ РјР°РєСЃРёРјР°Р»СЊРЅРѕР№ СЃРёР»С‹ - СЃРІСЏС‰РµРЅРЅС‹Р№ РґРѕР»Рі РєР°Р¶РґРѕРіРѕ РјР°РіР°, РёР±Рѕ РѕРЅР° Р±С‹Р»Р° РґР°СЂРѕРІР°РЅР° Р±РѕРіР°РјРё Рё СЏРІР»СЏРµС‚ СЃРѕР±РѕР№ СЃР°РјС‹Р№ С†РµРЅРЅС‹Р№ РґР°СЂ, РєРѕС‚РѕСЂС‹Р№ РєРѕРіРґР°-Р»РёР±Рѕ РїРѕР»СѓС‡Р°Р»Рё СЃРјРµСЂС‚РЅС‹Рµ.");
 					Doc_Show		( nDocID );
 	};
 
 /******************************************************************************************/
 INSTANCE Elementare_Arcanei (C_Item)
 {	
-	name 					=	"Магические знания";
+	name 					=	"РњР°РіРёС‡РµСЃРєРёРµ Р·РЅР°РЅРёСЏ";
 
 	mainflag 				=	ITEM_KAT_DOCS;
 	flags 					=	0;
@@ -626,7 +626,7 @@ INSTANCE Elementare_Arcanei (C_Item)
 	material 				=	MAT_LEATHER;
 
 	scemeName				=	"MAP";
-	description			= "Магические знания";
+	description			= "РњР°РіРёС‡РµСЃРєРёРµ Р·РЅР°РЅРёСЏ";
 	//TEXT[0]				= "Vierter Kreis";
 	////COUNT[0]			= ;
 	//TEXT[1]				= "";
@@ -659,31 +659,31 @@ INSTANCE Elementare_Arcanei (C_Item)
 					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1);  //  0 -> margins are in pixels
 					Doc_PrintLine	( nDocID,  0, "");
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLine	( nDocID,  0, "Магические знания");
+					Doc_PrintLine	( nDocID,  0, "РњР°РіРёС‡РµСЃРєРёРµ Р·РЅР°РЅРёСЏ");
 					Doc_PrintLine	( nDocID,  0, "");
 					Doc_SetFont 	( nDocID, -1, "font_10_book.tga");
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLines	( nDocID,  0, "Классификация магии в соответствии с земными представлениями.");
+					Doc_PrintLines	( nDocID,  0, "РљР»Р°СЃСЃРёС„РёРєР°С†РёСЏ РјР°РіРёРё РІ СЃРѕРѕС‚РІРµС‚СЃС‚РІРёРё СЃ Р·РµРјРЅС‹РјРё РїСЂРµРґСЃС‚Р°РІР»РµРЅРёСЏРјРё.");
 					Doc_PrintLine	( nDocID,  0, "");
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLines	( nDocID,  0, "Долгие годы исследований магии и ее места в мире дали свои плоды. Уже можно сказать, что магия является абсолютным элементом мира. Она может воздействовать на другие элементы, изменяя их природу.");
+					Doc_PrintLines	( nDocID,  0, "Р”РѕР»РіРёРµ РіРѕРґС‹ РёСЃСЃР»РµРґРѕРІР°РЅРёР№ РјР°РіРёРё Рё РµРµ РјРµСЃС‚Р° РІ РјРёСЂРµ РґР°Р»Рё СЃРІРѕРё РїР»РѕРґС‹. РЈР¶Рµ РјРѕР¶РЅРѕ СЃРєР°Р·Р°С‚СЊ, С‡С‚Рѕ РјР°РіРёСЏ СЏРІР»СЏРµС‚СЃСЏ Р°Р±СЃРѕР»СЋС‚РЅС‹Рј СЌР»РµРјРµРЅС‚РѕРј РјРёСЂР°. РћРЅР° РјРѕР¶РµС‚ РІРѕР·РґРµР№СЃС‚РІРѕРІР°С‚СЊ РЅР° РґСЂСѓРіРёРµ СЌР»РµРјРµРЅС‚С‹, РёР·РјРµРЅСЏСЏ РёС… РїСЂРёСЂРѕРґСѓ.");
 					
 					
 					//2.Seite
-					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1);  //  0 -> margins are in pixels (Position des Textes von den Rдnder des TGAs aus, links,oben,rechts,unten)
+					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1);  //  0 -> margins are in pixels (Position des Textes von den RРґnder des TGAs aus, links,oben,rechts,unten)
 					Doc_PrintLine	( nDocID,  1, "");
 					Doc_PrintLine	( nDocID,  1, "");	
 					Doc_PrintLine	( nDocID,  1, "");
 					Doc_PrintLine	( nDocID,  1, "");
 					Doc_PrintLine	( nDocID,  1, "");
-					Doc_PrintLines	( nDocID,  1, "Соединение элемента и магии дает элемент в самой чистой его форме, но в природе такое соединение встречается очень редко. Способность мага создавать из ничего вещи материального мира является доказательством того, что магическая сила вызывает к жизни чистые и высшие элементы, которые только могут существовать в природе.");
+					Doc_PrintLines	( nDocID,  1, "РЎРѕРµРґРёРЅРµРЅРёРµ СЌР»РµРјРµРЅС‚Р° Рё РјР°РіРёРё РґР°РµС‚ СЌР»РµРјРµРЅС‚ РІ СЃР°РјРѕР№ С‡РёСЃС‚РѕР№ РµРіРѕ С„РѕСЂРјРµ, РЅРѕ РІ РїСЂРёСЂРѕРґРµ С‚Р°РєРѕРµ СЃРѕРµРґРёРЅРµРЅРёРµ РІСЃС‚СЂРµС‡Р°РµС‚СЃСЏ РѕС‡РµРЅСЊ СЂРµРґРєРѕ. РЎРїРѕСЃРѕР±РЅРѕСЃС‚СЊ РјР°РіР° СЃРѕР·РґР°РІР°С‚СЊ РёР· РЅРёС‡РµРіРѕ РІРµС‰Рё РјР°С‚РµСЂРёР°Р»СЊРЅРѕРіРѕ РјРёСЂР° СЏРІР»СЏРµС‚СЃСЏ РґРѕРєР°Р·Р°С‚РµР»СЊСЃС‚РІРѕРј С‚РѕРіРѕ, С‡С‚Рѕ РјР°РіРёС‡РµСЃРєР°СЏ СЃРёР»Р° РІС‹Р·С‹РІР°РµС‚ Рє Р¶РёР·РЅРё С‡РёСЃС‚С‹Рµ Рё РІС‹СЃС€РёРµ СЌР»РµРјРµРЅС‚С‹, РєРѕС‚РѕСЂС‹Рµ С‚РѕР»СЊРєРѕ РјРѕРіСѓС‚ СЃСѓС‰РµСЃС‚РІРѕРІР°С‚СЊ РІ РїСЂРёСЂРѕРґРµ.");
 					Doc_Show		( nDocID );
 	};
 
 /******************************************************************************************/
 INSTANCE  Wahre_Macht(C_Item)
 {	
-	name 					=	"Истинная сила";
+	name 					=	"РСЃС‚РёРЅРЅР°СЏ СЃРёР»Р°";
 
 	mainflag 				=	ITEM_KAT_DOCS;
 	flags 					=	0;
@@ -694,8 +694,8 @@ INSTANCE  Wahre_Macht(C_Item)
 	material 				=	MAT_LEATHER;
 
 	scemeName				=	"MAP";
-	description			= "Истинная сила";
-	//TEXT[0]				= "Fьnfter Kreis";
+	description			= "РСЃС‚РёРЅРЅР°СЏ СЃРёР»Р°";
+	//TEXT[0]				= "FСЊnfter Kreis";
 	////COUNT[0]			= ;
 	//TEXT[1]				= "";
 	////COUNT[1]			= ;
@@ -726,26 +726,26 @@ INSTANCE  Wahre_Macht(C_Item)
   					Doc_SetFont 	( nDocID, -1, "font_15_book.tga"); 	// -1 -> all pages 
 					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1);  //  0 -> margins are in pixels
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLine	( nDocID,  0, "Истинная сила");
+					Doc_PrintLine	( nDocID,  0, "РСЃС‚РёРЅРЅР°СЏ СЃРёР»Р°");
 					Doc_PrintLine	( nDocID,  0, "");
 					Doc_SetFont 	( nDocID, -1, "font_10_book.tga");
 					Doc_PrintLine	( nDocID,  0, "");
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLines	( nDocID,  0, "Святой долг посвященного");
+					Doc_PrintLines	( nDocID,  0, "РЎРІСЏС‚РѕР№ РґРѕР»Рі РїРѕСЃРІСЏС‰РµРЅРЅРѕРіРѕ");
 					Doc_PrintLine	( nDocID,  0, "");
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLines	( nDocID,  0, "Только одно отличает мага от обычного человека. Обладая возможностью влиять на божественную силу, он является существом, для которого не действуют границы и законы мира смертных.");
+					Doc_PrintLines	( nDocID,  0, "РўРѕР»СЊРєРѕ РѕРґРЅРѕ РѕС‚Р»РёС‡Р°РµС‚ РјР°РіР° РѕС‚ РѕР±С‹С‡РЅРѕРіРѕ С‡РµР»РѕРІРµРєР°. РћР±Р»Р°РґР°СЏ РІРѕР·РјРѕР¶РЅРѕСЃС‚СЊСЋ РІР»РёСЏС‚СЊ РЅР° Р±РѕР¶РµСЃС‚РІРµРЅРЅСѓСЋ СЃРёР»Сѓ, РѕРЅ СЏРІР»СЏРµС‚СЃСЏ СЃСѓС‰РµСЃС‚РІРѕРј, РґР»СЏ РєРѕС‚РѕСЂРѕРіРѕ РЅРµ РґРµР№СЃС‚РІСѓСЋС‚ РіСЂР°РЅРёС†С‹ Рё Р·Р°РєРѕРЅС‹ РјРёСЂР° СЃРјРµСЂС‚РЅС‹С….");
 					
 					
 					//2.Seite
-					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1);  //  0 -> margins are in pixels (Position des Textes von den Rдnder des TGAs aus, links,oben,rechts,unten)
+					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1);  //  0 -> margins are in pixels (Position des Textes von den RРґnder des TGAs aus, links,oben,rechts,unten)
 					Doc_PrintLine	( nDocID,  1, "");
 					Doc_PrintLine	( nDocID,  1, "");	
 					Doc_PrintLine	( nDocID,  1, "");
 					Doc_PrintLine	( nDocID,  1, "");
 					Doc_PrintLine	( nDocID,  1, "");
 					Doc_PrintLine	( nDocID,  1, "");
-					Doc_PrintLines	( nDocID,  1, "Если маг смог достичь уровня, на котором у него получилось выйти за границы своего существования, он поднимается над законами мира смертных. Он может пересекать границы времени и пространства, даже конец всему существующему в мире - смерть не сможет встать у него на пути.");
+					Doc_PrintLines	( nDocID,  1, "Р•СЃР»Рё РјР°Рі СЃРјРѕРі РґРѕСЃС‚РёС‡СЊ СѓСЂРѕРІРЅСЏ, РЅР° РєРѕС‚РѕСЂРѕРј Сѓ РЅРµРіРѕ РїРѕР»СѓС‡РёР»РѕСЃСЊ РІС‹Р№С‚Рё Р·Р° РіСЂР°РЅРёС†С‹ СЃРІРѕРµРіРѕ СЃСѓС‰РµСЃС‚РІРѕРІР°РЅРёСЏ, РѕРЅ РїРѕРґРЅРёРјР°РµС‚СЃСЏ РЅР°Рґ Р·Р°РєРѕРЅР°РјРё РјРёСЂР° СЃРјРµСЂС‚РЅС‹С…. РћРЅ РјРѕР¶РµС‚ РїРµСЂРµСЃРµРєР°С‚СЊ РіСЂР°РЅРёС†С‹ РІСЂРµРјРµРЅРё Рё РїСЂРѕСЃС‚СЂР°РЅСЃС‚РІР°, РґР°Р¶Рµ РєРѕРЅРµС† РІСЃРµРјСѓ СЃСѓС‰РµСЃС‚РІСѓСЋС‰РµРјСѓ РІ РјРёСЂРµ - СЃРјРµСЂС‚СЊ РЅРµ СЃРјРѕР¶РµС‚ РІСЃС‚Р°С‚СЊ Сѓ РЅРµРіРѕ РЅР° РїСѓС‚Рё.");
 					Doc_Show		( nDocID );
 };
 
@@ -754,7 +754,7 @@ INSTANCE  Wahre_Macht(C_Item)
 
 INSTANCE  Das_magische_Erz(C_Item)
 {	
-	name 					=	"Магическая руда";
+	name 					=	"РњР°РіРёС‡РµСЃРєР°СЏ СЂСѓРґР°";
 
 	mainflag 				=	ITEM_KAT_DOCS;
 	flags 					=	0;
@@ -765,7 +765,7 @@ INSTANCE  Das_magische_Erz(C_Item)
 	material 				=	MAT_LEATHER;
 
 	scemeName				=	"MAP";
-	description			= "Магическая руда";
+	description			= "РњР°РіРёС‡РµСЃРєР°СЏ СЂСѓРґР°";
 	//TEXT[0]				= "";
 	////COUNT[0]			= ;
 	//TEXT[1]				= "";
@@ -796,18 +796,18 @@ INSTANCE  Das_magische_Erz(C_Item)
   					
   					Doc_SetFont 	( nDocID, -1, "font_15_book.tga"); 	// -1 -> all pages 
 					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1);  //  0 -> margins are in pixels
-					Doc_PrintLine	( nDocID,  0, "Магическая руда");
+					Doc_PrintLine	( nDocID,  0, "РњР°РіРёС‡РµСЃРєР°СЏ СЂСѓРґР°");
 					Doc_PrintLine	( nDocID,  0, "");
 					Doc_SetFont 	( nDocID, -1, "font_10_book.tga");
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLines	( nDocID,  0, "Лучшую руду для мечей, без сомнения, можно найти в шахтах Хориниса. Это самая чистая руда в мире. Она содержит магическую энергию, обладает непревзойденной прочностью и в то же время легка в обработке. Из этой руды, добываемой в темных глубинах шахт Хориниса, куется лучшее оружие, с которым не сравнится ни один клинок, выкованный из обычной стали.");
+					Doc_PrintLines	( nDocID,  0, "Р›СѓС‡С€СѓСЋ СЂСѓРґСѓ РґР»СЏ РјРµС‡РµР№, Р±РµР· СЃРѕРјРЅРµРЅРёСЏ, РјРѕР¶РЅРѕ РЅР°Р№С‚Рё РІ С€Р°С…С‚Р°С… РҐРѕСЂРёРЅРёСЃР°. Р­С‚Рѕ СЃР°РјР°СЏ С‡РёСЃС‚Р°СЏ СЂСѓРґР° РІ РјРёСЂРµ. РћРЅР° СЃРѕРґРµСЂР¶РёС‚ РјР°РіРёС‡РµСЃРєСѓСЋ СЌРЅРµСЂРіРёСЋ, РѕР±Р»Р°РґР°РµС‚ РЅРµРїСЂРµРІР·РѕР№РґРµРЅРЅРѕР№ РїСЂРѕС‡РЅРѕСЃС‚СЊСЋ Рё РІ С‚Рѕ Р¶Рµ РІСЂРµРјСЏ Р»РµРіРєР° РІ РѕР±СЂР°Р±РѕС‚РєРµ. РР· СЌС‚РѕР№ СЂСѓРґС‹, РґРѕР±С‹РІР°РµРјРѕР№ РІ С‚РµРјРЅС‹С… РіР»СѓР±РёРЅР°С… С€Р°С…С‚ РҐРѕСЂРёРЅРёСЃР°, РєСѓРµС‚СЃСЏ Р»СѓС‡С€РµРµ РѕСЂСѓР¶РёРµ, СЃ РєРѕС‚РѕСЂС‹Рј РЅРµ СЃСЂР°РІРЅРёС‚СЃСЏ РЅРё РѕРґРёРЅ РєР»РёРЅРѕРє, РІС‹РєРѕРІР°РЅРЅС‹Р№ РёР· РѕР±С‹С‡РЅРѕР№ СЃС‚Р°Р»Рё.");
 					
 					
 					//2.Seite
-					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1);  //  0 -> margins are in pixels (Position des Textes von den Rдnder des TGAs aus, links,oben,rechts,unten)
+					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1);  //  0 -> margins are in pixels (Position des Textes von den RРґnder des TGAs aus, links,oben,rechts,unten)
 					Doc_PrintLine	( nDocID,  1, "");
 					Doc_PrintLine	( nDocID,  1, "");	
-					Doc_PrintLines	( nDocID,  1, "Нет такого щита или доспеха, который смог бы устоять перед ним. Короли и герои древних времен носили оружие из лучшей стали Хориниса, и во всей Мертане оно ценилось очень высоко. Но магическая руда стоит очень дорого. Очень много сил уходит на ее добычу. Кажется, будто руда сама не желает покидать недра земли.");
+					Doc_PrintLines	( nDocID,  1, "РќРµС‚ С‚Р°РєРѕРіРѕ С‰РёС‚Р° РёР»Рё РґРѕСЃРїРµС…Р°, РєРѕС‚РѕСЂС‹Р№ СЃРјРѕРі Р±С‹ СѓСЃС‚РѕСЏС‚СЊ РїРµСЂРµРґ РЅРёРј. РљРѕСЂРѕР»Рё Рё РіРµСЂРѕРё РґСЂРµРІРЅРёС… РІСЂРµРјРµРЅ РЅРѕСЃРёР»Рё РѕСЂСѓР¶РёРµ РёР· Р»СѓС‡С€РµР№ СЃС‚Р°Р»Рё РҐРѕСЂРёРЅРёСЃР°, Рё РІРѕ РІСЃРµР№ РњРµСЂС‚Р°РЅРµ РѕРЅРѕ С†РµРЅРёР»РѕСЃСЊ РѕС‡РµРЅСЊ РІС‹СЃРѕРєРѕ. РќРѕ РјР°РіРёС‡РµСЃРєР°СЏ СЂСѓРґР° СЃС‚РѕРёС‚ РѕС‡РµРЅСЊ РґРѕСЂРѕРіРѕ. РћС‡РµРЅСЊ РјРЅРѕРіРѕ СЃРёР» СѓС…РѕРґРёС‚ РЅР° РµРµ РґРѕР±С‹С‡Сѓ. РљР°Р¶РµС‚СЃСЏ, Р±СѓРґС‚Рѕ СЂСѓРґР° СЃР°РјР° РЅРµ Р¶РµР»Р°РµС‚ РїРѕРєРёРґР°С‚СЊ РЅРµРґСЂР° Р·РµРјР»Рё.");
 					Doc_Show		( nDocID );
 	};
 
@@ -819,7 +819,7 @@ INSTANCE  Das_magische_Erz(C_Item)
 /******************************************************************************************/
 INSTANCE Schlacht_um_Varant1(C_Item)
 {	
-	name 					=	"Битва при Варанте";
+	name 					=	"Р‘РёС‚РІР° РїСЂРё Р’Р°СЂР°РЅС‚Рµ";
 
 	mainflag 				=	ITEM_KAT_DOCS;
 	flags 					=	0;
@@ -830,8 +830,8 @@ INSTANCE Schlacht_um_Varant1(C_Item)
 	material 				=	MAT_LEATHER;
 
 	scemeName				=	"MAP";
-	description			= "Битва при Варанте";
-	TEXT[0]				= "Том 1";
+	description			= "Р‘РёС‚РІР° РїСЂРё Р’Р°СЂР°РЅС‚Рµ";
+	TEXT[0]				= "РўРѕРј 1";
 	////COUNT[0]			= ;
 	//TEXT[1]				= "";
 	////COUNT[1]			= ;
@@ -861,15 +861,15 @@ INSTANCE Schlacht_um_Varant1(C_Item)
 					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   		);  //  0 -> margins are in pixels
 					Doc_SetFont 	( nDocID, -1, "font_10_book.tga"	   			); 	// -1 -> all pages 
 					Doc_PrintLine	( nDocID,  0, ""					); 					
-					Doc_PrintLines	( nDocID,  0, "... но король Робар решил напасть первым. Он собрал свои войска и все силы направил на ослабленный левый фланг вражеской армии. Он решил не тратить время и стрелы, и мечи его войска с легкостью расправились с врагами. Он направил своих солдат дальше, к границам Варанта. Он знал, что для победы в этой битве нужно разделить вражеское войско и сделать так, чтобы силы Геллона и Люккора не смогли...");
+					Doc_PrintLines	( nDocID,  0, "... РЅРѕ РєРѕСЂРѕР»СЊ Р РѕР±Р°СЂ СЂРµС€РёР» РЅР°РїР°СЃС‚СЊ РїРµСЂРІС‹Рј. РћРЅ СЃРѕР±СЂР°Р» СЃРІРѕРё РІРѕР№СЃРєР° Рё РІСЃРµ СЃРёР»С‹ РЅР°РїСЂР°РІРёР» РЅР° РѕСЃР»Р°Р±Р»РµРЅРЅС‹Р№ Р»РµРІС‹Р№ С„Р»Р°РЅРі РІСЂР°Р¶РµСЃРєРѕР№ Р°СЂРјРёРё. РћРЅ СЂРµС€РёР» РЅРµ С‚СЂР°С‚РёС‚СЊ РІСЂРµРјСЏ Рё СЃС‚СЂРµР»С‹, Рё РјРµС‡Рё РµРіРѕ РІРѕР№СЃРєР° СЃ Р»РµРіРєРѕСЃС‚СЊСЋ СЂР°СЃРїСЂР°РІРёР»РёСЃСЊ СЃ РІСЂР°РіР°РјРё. РћРЅ РЅР°РїСЂР°РІРёР» СЃРІРѕРёС… СЃРѕР»РґР°С‚ РґР°Р»СЊС€Рµ, Рє РіСЂР°РЅРёС†Р°Рј Р’Р°СЂР°РЅС‚Р°. РћРЅ Р·РЅР°Р», С‡С‚Рѕ РґР»СЏ РїРѕР±РµРґС‹ РІ СЌС‚РѕР№ Р±РёС‚РІРµ РЅСѓР¶РЅРѕ СЂР°Р·РґРµР»РёС‚СЊ РІСЂР°Р¶РµСЃРєРѕРµ РІРѕР№СЃРєРѕ Рё СЃРґРµР»Р°С‚СЊ С‚Р°Рє, С‡С‚РѕР±С‹ СЃРёР»С‹ Р“РµР»Р»РѕРЅР° Рё Р›СЋРєРєРѕСЂР° РЅРµ СЃРјРѕРіР»Рё...");
 					
 					//2.Seite
 
-					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den Rдnder des TGAs aus, links,oben,rechts,unten)
+					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den RРґnder des TGAs aus, links,oben,rechts,unten)
 					Doc_PrintLine	( nDocID,  1, ""					);					
-					Doc_PrintLines	( nDocID,  1, "... объединились и нанесли ему сокрушительный удар. Ему немедленно нужно было вызывать подкрепление, иначе победа досталась бы врагу..."	);
+					Doc_PrintLines	( nDocID,  1, "... РѕР±СЉРµРґРёРЅРёР»РёСЃСЊ Рё РЅР°РЅРµСЃР»Рё РµРјСѓ СЃРѕРєСЂСѓС€РёС‚РµР»СЊРЅС‹Р№ СѓРґР°СЂ. Р•РјСѓ РЅРµРјРµРґР»РµРЅРЅРѕ РЅСѓР¶РЅРѕ Р±С‹Р»Рѕ РІС‹Р·С‹РІР°С‚СЊ РїРѕРґРєСЂРµРїР»РµРЅРёРµ, РёРЅР°С‡Рµ РїРѕР±РµРґР° РґРѕСЃС‚Р°Р»Р°СЃСЊ Р±С‹ РІСЂР°РіСѓ..."	);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "...Геллон был убит, его армия разбита, его солдаты бежали с поля боя. Но Робар не хотел дать побежденным ни единого шанса собраться вместе и приказал уничтожить всех, кто остался в живых. Люккор же решил воспользоваться моментом и предпринял последнюю попытку разгромить уставшее войско Робара...");
+					Doc_PrintLines	( nDocID,  1, "...Р“РµР»Р»РѕРЅ Р±С‹Р» СѓР±РёС‚, РµРіРѕ Р°СЂРјРёСЏ СЂР°Р·Р±РёС‚Р°, РµРіРѕ СЃРѕР»РґР°С‚С‹ Р±РµР¶Р°Р»Рё СЃ РїРѕР»СЏ Р±РѕСЏ. РќРѕ Р РѕР±Р°СЂ РЅРµ С…РѕС‚РµР» РґР°С‚СЊ РїРѕР±РµР¶РґРµРЅРЅС‹Рј РЅРё РµРґРёРЅРѕРіРѕ С€Р°РЅСЃР° СЃРѕР±СЂР°С‚СЊСЃСЏ РІРјРµСЃС‚Рµ Рё РїСЂРёРєР°Р·Р°Р» СѓРЅРёС‡С‚РѕР¶РёС‚СЊ РІСЃРµС…, РєС‚Рѕ РѕСЃС‚Р°Р»СЃСЏ РІ Р¶РёРІС‹С…. Р›СЋРєРєРѕСЂ Р¶Рµ СЂРµС€РёР» РІРѕСЃРїРѕР»СЊР·РѕРІР°С‚СЊСЃСЏ РјРѕРјРµРЅС‚РѕРј Рё РїСЂРµРґРїСЂРёРЅСЏР» РїРѕСЃР»РµРґРЅСЋСЋ РїРѕРїС‹С‚РєСѓ СЂР°Р·РіСЂРѕРјРёС‚СЊ СѓСЃС‚Р°РІС€РµРµ РІРѕР№СЃРєРѕ Р РѕР±Р°СЂР°...");
 					
 					Doc_Show		( nDocID );
 	};
@@ -877,7 +877,7 @@ INSTANCE Schlacht_um_Varant1(C_Item)
 /******************************************************************************************/
 INSTANCE Schlacht_um_Varant2(C_Item)
 {	
-	name 					=	"Битва при Варанте";
+	name 					=	"Р‘РёС‚РІР° РїСЂРё Р’Р°СЂР°РЅС‚Рµ";
 
 	mainflag 				=	ITEM_KAT_DOCS;
 	flags 					=	0;
@@ -888,8 +888,8 @@ INSTANCE Schlacht_um_Varant2(C_Item)
 	material 				=	MAT_LEATHER;
 
 	scemeName				=	"MAP";
-	description			= "Битва при Варанте";
-	TEXT[0]				= "Том 2";
+	description			= "Р‘РёС‚РІР° РїСЂРё Р’Р°СЂР°РЅС‚Рµ";
+	TEXT[0]				= "РўРѕРј 2";
 	////COUNT[0]			= ;
 	//TEXT[1]				= "";
 	////COUNT[1]			= ;
@@ -919,13 +919,13 @@ INSTANCE Schlacht_um_Varant2(C_Item)
 					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   		);  //  0 -> margins are in pixels
 					Doc_SetFont 	( nDocID, -1, "font_10_book.tga"	   			); 	// -1 -> all pages 
 					Doc_PrintLine	( nDocID,  0, ""					); 					
-					Doc_PrintLines	( nDocID,  0, "Исход войны был известен. Варант, захваченный иноземцами, был полностью разграблен. Король Робар решил не оставаться на полях Варанта, а приказал своим генералам самим расправиться с оставшимися врагами. В разгромленном государстве остались еще войска, которыми руководил Люккор, самый способный военачальник Варанта. Он провел множество блестящих сражений.");
+					Doc_PrintLines	( nDocID,  0, "РСЃС…РѕРґ РІРѕР№РЅС‹ Р±С‹Р» РёР·РІРµСЃС‚РµРЅ. Р’Р°СЂР°РЅС‚, Р·Р°С…РІР°С‡РµРЅРЅС‹Р№ РёРЅРѕР·РµРјС†Р°РјРё, Р±С‹Р» РїРѕР»РЅРѕСЃС‚СЊСЋ СЂР°Р·РіСЂР°Р±Р»РµРЅ. РљРѕСЂРѕР»СЊ Р РѕР±Р°СЂ СЂРµС€РёР» РЅРµ РѕСЃС‚Р°РІР°С‚СЊСЃСЏ РЅР° РїРѕР»СЏС… Р’Р°СЂР°РЅС‚Р°, Р° РїСЂРёРєР°Р·Р°Р» СЃРІРѕРёРј РіРµРЅРµСЂР°Р»Р°Рј СЃР°РјРёРј СЂР°СЃРїСЂР°РІРёС‚СЊСЃСЏ СЃ РѕСЃС‚Р°РІС€РёРјРёСЃСЏ РІСЂР°РіР°РјРё. Р’ СЂР°Р·РіСЂРѕРјР»РµРЅРЅРѕРј РіРѕСЃСѓРґР°СЂСЃС‚РІРµ РѕСЃС‚Р°Р»РёСЃСЊ РµС‰Рµ РІРѕР№СЃРєР°, РєРѕС‚РѕСЂС‹РјРё СЂСѓРєРѕРІРѕРґРёР» Р›СЋРєРєРѕСЂ, СЃР°РјС‹Р№ СЃРїРѕСЃРѕР±РЅС‹Р№ РІРѕРµРЅР°С‡Р°Р»СЊРЅРёРє Р’Р°СЂР°РЅС‚Р°. РћРЅ РїСЂРѕРІРµР» РјРЅРѕР¶РµСЃС‚РІРѕ Р±Р»РµСЃС‚СЏС‰РёС… СЃСЂР°Р¶РµРЅРёР№.");
 					
 					//2.Seite
 
-					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den Rдnder des TGAs aus, links,oben,rechts,unten)
+					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den RРґnder des TGAs aus, links,oben,rechts,unten)
 					Doc_PrintLine	( nDocID,  1, ""					);					
-					Doc_PrintLines	( nDocID,  1, "Но теперь его войско попало в засаду. Вражеские солдаты готовились к наступлению. Ли, один из лучших генералов Мертаны, загнал его в ловушку. Тяжелая конница Варанта не могла сражаться на заболоченной местности. Вся долина была окружена солдатами генерала Ли, которые нападали на врагов и убивали их одного за другим. Отчаянные попытки выбраться из ловушки не имели успеха. Он был побежден.");
+					Doc_PrintLines	( nDocID,  1, "РќРѕ С‚РµРїРµСЂСЊ РµРіРѕ РІРѕР№СЃРєРѕ РїРѕРїР°Р»Рѕ РІ Р·Р°СЃР°РґСѓ. Р’СЂР°Р¶РµСЃРєРёРµ СЃРѕР»РґР°С‚С‹ РіРѕС‚РѕРІРёР»РёСЃСЊ Рє РЅР°СЃС‚СѓРїР»РµРЅРёСЋ. Р›Рё, РѕРґРёРЅ РёР· Р»СѓС‡С€РёС… РіРµРЅРµСЂР°Р»РѕРІ РњРµСЂС‚Р°РЅС‹, Р·Р°РіРЅР°Р» РµРіРѕ РІ Р»РѕРІСѓС€РєСѓ. РўСЏР¶РµР»Р°СЏ РєРѕРЅРЅРёС†Р° Р’Р°СЂР°РЅС‚Р° РЅРµ РјРѕРіР»Р° СЃСЂР°Р¶Р°С‚СЊСЃСЏ РЅР° Р·Р°Р±РѕР»РѕС‡РµРЅРЅРѕР№ РјРµСЃС‚РЅРѕСЃС‚Рё. Р’СЃСЏ РґРѕР»РёРЅР° Р±С‹Р»Р° РѕРєСЂСѓР¶РµРЅР° СЃРѕР»РґР°С‚Р°РјРё РіРµРЅРµСЂР°Р»Р° Р›Рё, РєРѕС‚РѕСЂС‹Рµ РЅР°РїР°РґР°Р»Рё РЅР° РІСЂР°РіРѕРІ Рё СѓР±РёРІР°Р»Рё РёС… РѕРґРЅРѕРіРѕ Р·Р° РґСЂСѓРіРёРј. РћС‚С‡Р°СЏРЅРЅС‹Рµ РїРѕРїС‹С‚РєРё РІС‹Р±СЂР°С‚СЊСЃСЏ РёР· Р»РѕРІСѓС€РєРё РЅРµ РёРјРµР»Рё СѓСЃРїРµС…Р°. РћРЅ Р±С‹Р» РїРѕР±РµР¶РґРµРЅ.");
 					
 					Doc_Show		( nDocID );
 	};
@@ -933,7 +933,7 @@ INSTANCE Schlacht_um_Varant2(C_Item)
 /******************************************************************************************/
 INSTANCE Myrtanas_Lyrik(C_Item)
 {	
-	name 					=	"Лирика Мертаны";
+	name 					=	"Р›РёСЂРёРєР° РњРµСЂС‚Р°РЅС‹";
 
 	mainflag 				=	ITEM_KAT_DOCS;
 	flags 					=	0;
@@ -944,7 +944,7 @@ INSTANCE Myrtanas_Lyrik(C_Item)
 	material 				=	MAT_LEATHER;
 
 	scemeName				=	"MAP";
-	description			= "Лирика Мертаны";
+	description			= "Р›РёСЂРёРєР° РњРµСЂС‚Р°РЅС‹";
 
 	TEXT[5]				= NAME_Value;
 	COUNT[5]			= value;
@@ -969,9 +969,9 @@ INSTANCE Myrtanas_Lyrik(C_Item)
 					Doc_PrintLine	( nDocID,  0, "");
 					Doc_PrintLine	( nDocID,  0, "");
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLine	( nDocID,  0, "    Песнь");
+					Doc_PrintLine	( nDocID,  0, "    РџРµСЃРЅСЊ");
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLine	( nDocID,  0, "                  покаяния");
+					Doc_PrintLine	( nDocID,  0, "                  РїРѕРєР°СЏРЅРёСЏ");
 					Doc_PrintLine	( nDocID,  0, "");
 					Doc_PrintLine	( nDocID,  0, "");
 					Doc_PrintLine	( nDocID,  0, "");
@@ -986,30 +986,30 @@ INSTANCE Myrtanas_Lyrik(C_Item)
 		
 					//2.Seite
 
-					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den Rдnder des TGAs aus, links,oben,rechts,unten)
+					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den RРґnder des TGAs aus, links,oben,rechts,unten)
 					Doc_PrintLine	( nDocID,  1, ""					);					
-					Doc_PrintLines	( nDocID,  1, "Погибло все, но солнце неустанно");				
+					Doc_PrintLines	( nDocID,  1, "РџРѕРіРёР±Р»Рѕ РІСЃРµ, РЅРѕ СЃРѕР»РЅС†Рµ РЅРµСѓСЃС‚Р°РЅРЅРѕ");				
 					Doc_PrintLine	( nDocID,  1, "");				
-					Doc_PrintLines	( nDocID,  1, "По-прежнему вершит годов круговорот.");				
+					Doc_PrintLines	( nDocID,  1, "РџРѕ-РїСЂРµР¶РЅРµРјСѓ РІРµСЂС€РёС‚ РіРѕРґРѕРІ РєСЂСѓРіРѕРІРѕСЂРѕС‚.");				
 					Doc_PrintLine	( nDocID,  1, "");				
-					Doc_PrintLines	( nDocID,  1, "И память о былом тревожит разум,");				
+					Doc_PrintLines	( nDocID,  1, "Р РїР°РјСЏС‚СЊ Рѕ Р±С‹Р»РѕРј С‚СЂРµРІРѕР¶РёС‚ СЂР°Р·СѓРј,");				
 					Doc_PrintLine	( nDocID,  1, "");				
-					Doc_PrintLines	( nDocID,  1, "О прежней жизни чистой вопиет.");				
+					Doc_PrintLines	( nDocID,  1, "Рћ РїСЂРµР¶РЅРµР№ Р¶РёР·РЅРё С‡РёСЃС‚РѕР№ РІРѕРїРёРµС‚.");				
 					Doc_PrintLine	( nDocID,  1, "");				
-					Doc_PrintLines	( nDocID,  1, "И братства дух, забытый нами, ждет");				
+					Doc_PrintLines	( nDocID,  1, "Р Р±СЂР°С‚СЃС‚РІР° РґСѓС…, Р·Р°Р±С‹С‚С‹Р№ РЅР°РјРё, Р¶РґРµС‚");				
 					Doc_PrintLine	( nDocID,  1, "");				
-					Doc_PrintLines	( nDocID,  1, "Бесплодно исполнения обетов данных,");				
+					Doc_PrintLines	( nDocID,  1, "Р‘РµСЃРїР»РѕРґРЅРѕ РёСЃРїРѕР»РЅРµРЅРёСЏ РѕР±РµС‚РѕРІ РґР°РЅРЅС‹С…,");				
 					Doc_PrintLine	( nDocID,  1, "");				
-					Doc_PrintLines	( nDocID,  1, "Отвергнутых во имя низких целей,");				
+					Doc_PrintLines	( nDocID,  1, "РћС‚РІРµСЂРіРЅСѓС‚С‹С… РІРѕ РёРјСЏ РЅРёР·РєРёС… С†РµР»РµР№,");				
 					Doc_PrintLine	( nDocID,  1, "");				
-					Doc_PrintLines	( nDocID,  1, "Что никогда не ведали законов чести.");				
+					Doc_PrintLines	( nDocID,  1, "Р§С‚Рѕ РЅРёРєРѕРіРґР° РЅРµ РІРµРґР°Р»Рё Р·Р°РєРѕРЅРѕРІ С‡РµСЃС‚Рё.");				
 					Doc_PrintLines	( nDocID,  1, ""	);
 					Doc_Show		( nDocID );
 	};
 /******************************************************************************************/
 INSTANCE Lehren_der_Goetter1 (C_ITEM)
 {	
-	name 					=	"Учение богов - Том 1";
+	name 					=	"РЈС‡РµРЅРёРµ Р±РѕРіРѕРІ - РўРѕРј 1";
 
 	mainflag 				=	ITEM_KAT_DOCS;
 	flags 					=	0;
@@ -1020,8 +1020,8 @@ INSTANCE Lehren_der_Goetter1 (C_ITEM)
 	material 				=	MAT_LEATHER;
 
 	scemeName				=	"MAP";
-	description			= "Учение богов";
-	TEXT[0]				= "Том 1";
+	description			= "РЈС‡РµРЅРёРµ Р±РѕРіРѕРІ";
+	TEXT[0]				= "РўРѕРј 1";
 	TEXT[5]				= NAME_Value;
 	COUNT[5]			= value;
 	on_state[0]				=	UseLehren_der_Goetter1;
@@ -1042,25 +1042,25 @@ INSTANCE Lehren_der_Goetter1 (C_ITEM)
  					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   		);  //  0 -> margins are in pixels 					
 					Doc_SetFont 	( nDocID, -1, "font_10_book.tga"	   			); 	// -1 -> all pages 
  					Doc_PrintLine	( nDocID,  0, ""					);										
-					Doc_PrintLines	( nDocID,  0, "Услышь слова богов, ибо на то их воля, чтобы слова были услышаны. Следуй учению богов, ибо на то их воля, чтобы учению следовали. Слушай жрецов, ибо они были избраны."	);
+					Doc_PrintLines	( nDocID,  0, "РЈСЃР»С‹С€СЊ СЃР»РѕРІР° Р±РѕРіРѕРІ, РёР±Рѕ РЅР° С‚Рѕ РёС… РІРѕР»СЏ, С‡С‚РѕР±С‹ СЃР»РѕРІР° Р±С‹Р»Рё СѓСЃР»С‹С€Р°РЅС‹. РЎР»РµРґСѓР№ СѓС‡РµРЅРёСЋ Р±РѕРіРѕРІ, РёР±Рѕ РЅР° С‚Рѕ РёС… РІРѕР»СЏ, С‡С‚РѕР±С‹ СѓС‡РµРЅРёСЋ СЃР»РµРґРѕРІР°Р»Рё. РЎР»СѓС€Р°Р№ Р¶СЂРµС†РѕРІ, РёР±Рѕ РѕРЅРё Р±С‹Р»Рё РёР·Р±СЂР°РЅС‹."	);
 					Doc_PrintLine	( nDocID,  0, ""					);
 					//Absatz
-					Doc_PrintLines	( nDocID,  0, "Слова Инноса: Не сомневайся в словах жрецов, даже если не можешь понять их смысла, это станет свидетельством истины и мудрости. Я восходящее солнце, свет и жизнь. Идти против солнца, значит идти против меня. Делающие так навлекают на себя проклятие.");
+					Doc_PrintLines	( nDocID,  0, "РЎР»РѕРІР° РРЅРЅРѕСЃР°: РќРµ СЃРѕРјРЅРµРІР°Р№СЃСЏ РІ СЃР»РѕРІР°С… Р¶СЂРµС†РѕРІ, РґР°Р¶Рµ РµСЃР»Рё РЅРµ РјРѕР¶РµС€СЊ РїРѕРЅСЏС‚СЊ РёС… СЃРјС‹СЃР»Р°, СЌС‚Рѕ СЃС‚Р°РЅРµС‚ СЃРІРёРґРµС‚РµР»СЊСЃС‚РІРѕРј РёСЃС‚РёРЅС‹ Рё РјСѓРґСЂРѕСЃС‚Рё. РЇ РІРѕСЃС…РѕРґСЏС‰РµРµ СЃРѕР»РЅС†Рµ, СЃРІРµС‚ Рё Р¶РёР·РЅСЊ. РРґС‚Рё РїСЂРѕС‚РёРІ СЃРѕР»РЅС†Р°, Р·РЅР°С‡РёС‚ РёРґС‚Рё РїСЂРѕС‚РёРІ РјРµРЅСЏ. Р”РµР»Р°СЋС‰РёРµ С‚Р°Рє РЅР°РІР»РµРєР°СЋС‚ РЅР° СЃРµР±СЏ РїСЂРѕРєР»СЏС‚РёРµ.");
 
 					//2.Seite
-					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den Rдnder des TGAs aus, links,oben,rechts,unten)
+					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den RРґnder des TGAs aus, links,oben,rechts,unten)
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "Слова Аданоса: Работай и живи, ибо день создан для того, чтобы человек работал. Учись и ищи знаний, чтобы передать их другим, ибо такова природа человека. Ленивые и праздные навлекают на себя проклятие."	);
+					Doc_PrintLines	( nDocID,  1, "РЎР»РѕРІР° РђРґР°РЅРѕСЃР°: Р Р°Р±РѕС‚Р°Р№ Рё Р¶РёРІРё, РёР±Рѕ РґРµРЅСЊ СЃРѕР·РґР°РЅ РґР»СЏ С‚РѕРіРѕ, С‡С‚РѕР±С‹ С‡РµР»РѕРІРµРє СЂР°Р±РѕС‚Р°Р». РЈС‡РёСЃСЊ Рё РёС‰Рё Р·РЅР°РЅРёР№, С‡С‚РѕР±С‹ РїРµСЂРµРґР°С‚СЊ РёС… РґСЂСѓРіРёРј, РёР±Рѕ С‚Р°РєРѕРІР° РїСЂРёСЂРѕРґР° С‡РµР»РѕРІРµРєР°. Р›РµРЅРёРІС‹Рµ Рё РїСЂР°Р·РґРЅС‹Рµ РЅР°РІР»РµРєР°СЋС‚ РЅР° СЃРµР±СЏ РїСЂРѕРєР»СЏС‚РёРµ."	);
 					Doc_PrintLine	( nDocID,  1, ""					);
 					//Absatz
-					Doc_PrintLines	( nDocID,  1, "Слова Белиара: Тот, кто действует против законов справедливости и воли богов, будет наказан мной. Его тело познает боль, страдание и смерть, а дух навечно останется в царстве теней."					);
+					Doc_PrintLines	( nDocID,  1, "РЎР»РѕРІР° Р‘РµР»РёР°СЂР°: РўРѕС‚, РєС‚Рѕ РґРµР№СЃС‚РІСѓРµС‚ РїСЂРѕС‚РёРІ Р·Р°РєРѕРЅРѕРІ СЃРїСЂР°РІРµРґР»РёРІРѕСЃС‚Рё Рё РІРѕР»Рё Р±РѕРіРѕРІ, Р±СѓРґРµС‚ РЅР°РєР°Р·Р°РЅ РјРЅРѕР№. Р•РіРѕ С‚РµР»Рѕ РїРѕР·РЅР°РµС‚ Р±РѕР»СЊ, СЃС‚СЂР°РґР°РЅРёРµ Рё СЃРјРµСЂС‚СЊ, Р° РґСѓС… РЅР°РІРµС‡РЅРѕ РѕСЃС‚Р°РЅРµС‚СЃСЏ РІ С†Р°СЂСЃС‚РІРµ С‚РµРЅРµР№."					);
 					Doc_Show		( nDocID );
 	};
 
 /******************************************************************************************/
 INSTANCE Lehren_der_Goetter2 (C_ITEM)
 {	
-	name 					=	"Учение богов - Том 2";
+	name 					=	"РЈС‡РµРЅРёРµ Р±РѕРіРѕРІ - РўРѕРј 2";
 
 	mainflag 				=	ITEM_KAT_DOCS;
 	flags 					=	0;
@@ -1071,8 +1071,8 @@ INSTANCE Lehren_der_Goetter2 (C_ITEM)
 	material 				=	MAT_LEATHER;
 
 	scemeName				=	"MAP";
-	description			= "Учение богов";
-	TEXT[0]				= "Том 2";
+	description			= "РЈС‡РµРЅРёРµ Р±РѕРіРѕРІ";
+	TEXT[0]				= "РўРѕРј 2";
 	TEXT[5]				= NAME_Value;
 	COUNT[5]			= value;
 	on_state[0]				=	UseLehren_der_Goetter2;
@@ -1093,20 +1093,20 @@ INSTANCE Lehren_der_Goetter2 (C_ITEM)
 					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   		);  //  0 -> margins are in pixels
 					Doc_SetFont 	( nDocID, -1, "font_10_book.tga"	   			); 	// -1 -> all pages 
 					Doc_PrintLine	( nDocID,  0, ""					); 					
-					Doc_PrintLines	( nDocID,  0, "Не было ни дня, ни ночи, и ничто живое не обременяло собой мир. Но вот миру явился Иннос, и его свет осветил все. Иннос даровал миру жизнь. Но ничто живое не могло жить в свете Инноса, и тогда он создал солнце. Но его свет был все еще слишком силен. Тогда Иннос отделил часть себя и создал Белиара. Белиар принес миру ночь. И тогда в мир пришли люди. Иннос отделил от себя другую часть и создал Аданоса. Аданос даровал людям множество желаний, знания, любознательность и смелость. И был Иннос доволен своими созданиями.");
+					Doc_PrintLines	( nDocID,  0, "РќРµ Р±С‹Р»Рѕ РЅРё РґРЅСЏ, РЅРё РЅРѕС‡Рё, Рё РЅРёС‡С‚Рѕ Р¶РёРІРѕРµ РЅРµ РѕР±СЂРµРјРµРЅСЏР»Рѕ СЃРѕР±РѕР№ РјРёСЂ. РќРѕ РІРѕС‚ РјРёСЂСѓ СЏРІРёР»СЃСЏ РРЅРЅРѕСЃ, Рё РµРіРѕ СЃРІРµС‚ РѕСЃРІРµС‚РёР» РІСЃРµ. РРЅРЅРѕСЃ РґР°СЂРѕРІР°Р» РјРёСЂСѓ Р¶РёР·РЅСЊ. РќРѕ РЅРёС‡С‚Рѕ Р¶РёРІРѕРµ РЅРµ РјРѕРіР»Рѕ Р¶РёС‚СЊ РІ СЃРІРµС‚Рµ РРЅРЅРѕСЃР°, Рё С‚РѕРіРґР° РѕРЅ СЃРѕР·РґР°Р» СЃРѕР»РЅС†Рµ. РќРѕ РµРіРѕ СЃРІРµС‚ Р±С‹Р» РІСЃРµ РµС‰Рµ СЃР»РёС€РєРѕРј СЃРёР»РµРЅ. РўРѕРіРґР° РРЅРЅРѕСЃ РѕС‚РґРµР»РёР» С‡Р°СЃС‚СЊ СЃРµР±СЏ Рё СЃРѕР·РґР°Р» Р‘РµР»РёР°СЂР°. Р‘РµР»РёР°СЂ РїСЂРёРЅРµСЃ РјРёСЂСѓ РЅРѕС‡СЊ. Р С‚РѕРіРґР° РІ РјРёСЂ РїСЂРёС€Р»Рё Р»СЋРґРё. РРЅРЅРѕСЃ РѕС‚РґРµР»РёР» РѕС‚ СЃРµР±СЏ РґСЂСѓРіСѓСЋ С‡Р°СЃС‚СЊ Рё СЃРѕР·РґР°Р» РђРґР°РЅРѕСЃР°. РђРґР°РЅРѕСЃ РґР°СЂРѕРІР°Р» Р»СЋРґСЏРј РјРЅРѕР¶РµСЃС‚РІРѕ Р¶РµР»Р°РЅРёР№, Р·РЅР°РЅРёСЏ, Р»СЋР±РѕР·РЅР°С‚РµР»СЊРЅРѕСЃС‚СЊ Рё СЃРјРµР»РѕСЃС‚СЊ. Р Р±С‹Р» РРЅРЅРѕСЃ РґРѕРІРѕР»РµРЅ СЃРІРѕРёРјРё СЃРѕР·РґР°РЅРёСЏРјРё.");
 					
 					//2.Seite
 
-					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den Rдnder des TGAs aus, links,oben,rechts,unten)
+					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den RРґnder des TGAs aus, links,oben,rechts,unten)
 					Doc_PrintLine	( nDocID,  1, ""					);					
-					Doc_PrintLines	( nDocID,  1, "И он решил передать людей под покровительство Аданоса и почил от дел своих. Белиар же рассердился на людей, ибо они не захотели видеть его своим покровителем и отдыхали ночью, когда приходило его время. И тогда он сотворил себе человека, чтобы он поклонялся только ему одному. Но человек этот ничем не отличался от других людей. Гневом наполнилось сердце Белиара, и он убил созданного им человека и так сказал: 'Они не поклоняются мне, так пусть же мысли обо мне внушают им ужас'. И он создал смерть и взял у людей их жизни."	);
+					Doc_PrintLines	( nDocID,  1, "Р РѕРЅ СЂРµС€РёР» РїРµСЂРµРґР°С‚СЊ Р»СЋРґРµР№ РїРѕРґ РїРѕРєСЂРѕРІРёС‚РµР»СЊСЃС‚РІРѕ РђРґР°РЅРѕСЃР° Рё РїРѕС‡РёР» РѕС‚ РґРµР» СЃРІРѕРёС…. Р‘РµР»РёР°СЂ Р¶Рµ СЂР°СЃСЃРµСЂРґРёР»СЃСЏ РЅР° Р»СЋРґРµР№, РёР±Рѕ РѕРЅРё РЅРµ Р·Р°С…РѕС‚РµР»Рё РІРёРґРµС‚СЊ РµРіРѕ СЃРІРѕРёРј РїРѕРєСЂРѕРІРёС‚РµР»РµРј Рё РѕС‚РґС‹С…Р°Р»Рё РЅРѕС‡СЊСЋ, РєРѕРіРґР° РїСЂРёС…РѕРґРёР»Рѕ РµРіРѕ РІСЂРµРјСЏ. Р С‚РѕРіРґР° РѕРЅ СЃРѕС‚РІРѕСЂРёР» СЃРµР±Рµ С‡РµР»РѕРІРµРєР°, С‡С‚РѕР±С‹ РѕРЅ РїРѕРєР»РѕРЅСЏР»СЃСЏ С‚РѕР»СЊРєРѕ РµРјСѓ РѕРґРЅРѕРјСѓ. РќРѕ С‡РµР»РѕРІРµРє СЌС‚РѕС‚ РЅРёС‡РµРј РЅРµ РѕС‚Р»РёС‡Р°Р»СЃСЏ РѕС‚ РґСЂСѓРіРёС… Р»СЋРґРµР№. Р“РЅРµРІРѕРј РЅР°РїРѕР»РЅРёР»РѕСЃСЊ СЃРµСЂРґС†Рµ Р‘РµР»РёР°СЂР°, Рё РѕРЅ СѓР±РёР» СЃРѕР·РґР°РЅРЅРѕРіРѕ РёРј С‡РµР»РѕРІРµРєР° Рё С‚Р°Рє СЃРєР°Р·Р°Р»: 'РћРЅРё РЅРµ РїРѕРєР»РѕРЅСЏСЋС‚СЃСЏ РјРЅРµ, С‚Р°Рє РїСѓСЃС‚СЊ Р¶Рµ РјС‹СЃР»Рё РѕР±Рѕ РјРЅРµ РІРЅСѓС€Р°СЋС‚ РёРј СѓР¶Р°СЃ'. Р РѕРЅ СЃРѕР·РґР°Р» СЃРјРµСЂС‚СЊ Рё РІР·СЏР» Сѓ Р»СЋРґРµР№ РёС… Р¶РёР·РЅРё."	);
 					Doc_Show		( nDocID );
 	};
 
 /******************************************************************************************/
 INSTANCE Lehren_der_Goetter3 (C_ITEM)
 {	
-	name 					=	"Учение богов - Том 3";
+	name 					=	"РЈС‡РµРЅРёРµ Р±РѕРіРѕРІ - РўРѕРј 3";
 
 	mainflag 				=	ITEM_KAT_DOCS;
 	flags 					=	0;
@@ -1117,8 +1117,8 @@ INSTANCE Lehren_der_Goetter3 (C_ITEM)
 	material 				=	MAT_LEATHER;
 
 	scemeName				=	"MAP";
-	description			= "Учение богов";
-	TEXT[0]				= "Том 3";
+	description			= "РЈС‡РµРЅРёРµ Р±РѕРіРѕРІ";
+	TEXT[0]				= "РўРѕРј 3";
 
 	TEXT[5]				= NAME_Value;
 	COUNT[5]			= value;
@@ -1140,18 +1140,18 @@ INSTANCE Lehren_der_Goetter3 (C_ITEM)
 					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   		);  //  0 -> margins are in pixels
    					Doc_SetFont 	( nDocID, -1, "font_10_book.tga"	   			); 	// -1 -> all pages 
    					Doc_PrintLine	( nDocID,  0, ""					);			
-					Doc_PrintLines	( nDocID,  0, "Иннос дал людям способность слышать его и разговаривать с ним. Некоторым из них он даровал способность творить великие чудеса. Он назвал ее магией. С ее помощью люди могли изменять мир по своему желанию, и изначально это желание было ничем не ограничено. Так люди получили доступ к божественным силам созидания. Но все они были равны между собой, и им это было не по нраву. И тогда взял он силу тех, кто был недоволен. Те немногие, кто был благодарен за магический дар, ставили Инноса выше остальных богов."	);
+					Doc_PrintLines	( nDocID,  0, "РРЅРЅРѕСЃ РґР°Р» Р»СЋРґСЏРј СЃРїРѕСЃРѕР±РЅРѕСЃС‚СЊ СЃР»С‹С€Р°С‚СЊ РµРіРѕ Рё СЂР°Р·РіРѕРІР°СЂРёРІР°С‚СЊ СЃ РЅРёРј. РќРµРєРѕС‚РѕСЂС‹Рј РёР· РЅРёС… РѕРЅ РґР°СЂРѕРІР°Р» СЃРїРѕСЃРѕР±РЅРѕСЃС‚СЊ С‚РІРѕСЂРёС‚СЊ РІРµР»РёРєРёРµ С‡СѓРґРµСЃР°. РћРЅ РЅР°Р·РІР°Р» РµРµ РјР°РіРёРµР№. РЎ РµРµ РїРѕРјРѕС‰СЊСЋ Р»СЋРґРё РјРѕРіР»Рё РёР·РјРµРЅСЏС‚СЊ РјРёСЂ РїРѕ СЃРІРѕРµРјСѓ Р¶РµР»Р°РЅРёСЋ, Рё РёР·РЅР°С‡Р°Р»СЊРЅРѕ СЌС‚Рѕ Р¶РµР»Р°РЅРёРµ Р±С‹Р»Рѕ РЅРёС‡РµРј РЅРµ РѕРіСЂР°РЅРёС‡РµРЅРѕ. РўР°Рє Р»СЋРґРё РїРѕР»СѓС‡РёР»Рё РґРѕСЃС‚СѓРї Рє Р±РѕР¶РµСЃС‚РІРµРЅРЅС‹Рј СЃРёР»Р°Рј СЃРѕР·РёРґР°РЅРёСЏ. РќРѕ РІСЃРµ РѕРЅРё Р±С‹Р»Рё СЂР°РІРЅС‹ РјРµР¶РґСѓ СЃРѕР±РѕР№, Рё РёРј СЌС‚Рѕ Р±С‹Р»Рѕ РЅРµ РїРѕ РЅСЂР°РІСѓ. Р С‚РѕРіРґР° РІР·СЏР» РѕРЅ СЃРёР»Сѓ С‚РµС…, РєС‚Рѕ Р±С‹Р» РЅРµРґРѕРІРѕР»РµРЅ. РўРµ РЅРµРјРЅРѕРіРёРµ, РєС‚Рѕ Р±С‹Р» Р±Р»Р°РіРѕРґР°СЂРµРЅ Р·Р° РјР°РіРёС‡РµСЃРєРёР№ РґР°СЂ, СЃС‚Р°РІРёР»Рё РРЅРЅРѕСЃР° РІС‹С€Рµ РѕСЃС‚Р°Р»СЊРЅС‹С… Р±РѕРіРѕРІ."	);
 					
 					//2.Seite
-					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den Rдnder des TGAs aus, links,oben,rechts,unten)
+					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den RРґnder des TGAs aus, links,oben,rechts,unten)
  					Doc_PrintLine	( nDocID,  1, ""					);					
-					Doc_PrintLines	( nDocID,  1, "Этих людей уважали и боялись, и называли жрецами. Но даже многие из них были недовольны способностями самых сильных. И тогда они воззвали к Аданосу, и он позволил им забыть о своих способностях. Группа жрецов распалась, и начались бесчисленные войны. Воспоминания о могуществе богов стали не более чем мифом. Так разделились жрецы. Тех, кто последовал за Аданосом, назвали магами Воды, а избранники Инноса назывались магами Огня."	);
+					Doc_PrintLines	( nDocID,  1, "Р­С‚РёС… Р»СЋРґРµР№ СѓРІР°Р¶Р°Р»Рё Рё Р±РѕСЏР»РёСЃСЊ, Рё РЅР°Р·С‹РІР°Р»Рё Р¶СЂРµС†Р°РјРё. РќРѕ РґР°Р¶Рµ РјРЅРѕРіРёРµ РёР· РЅРёС… Р±С‹Р»Рё РЅРµРґРѕРІРѕР»СЊРЅС‹ СЃРїРѕСЃРѕР±РЅРѕСЃС‚СЏРјРё СЃР°РјС‹С… СЃРёР»СЊРЅС‹С…. Р С‚РѕРіРґР° РѕРЅРё РІРѕР·Р·РІР°Р»Рё Рє РђРґР°РЅРѕСЃСѓ, Рё РѕРЅ РїРѕР·РІРѕР»РёР» РёРј Р·Р°Р±С‹С‚СЊ Рѕ СЃРІРѕРёС… СЃРїРѕСЃРѕР±РЅРѕСЃС‚СЏС…. Р“СЂСѓРїРїР° Р¶СЂРµС†РѕРІ СЂР°СЃРїР°Р»Р°СЃСЊ, Рё РЅР°С‡Р°Р»РёСЃСЊ Р±РµСЃС‡РёСЃР»РµРЅРЅС‹Рµ РІРѕР№РЅС‹. Р’РѕСЃРїРѕРјРёРЅР°РЅРёСЏ Рѕ РјРѕРіСѓС‰РµСЃС‚РІРµ Р±РѕРіРѕРІ СЃС‚Р°Р»Рё РЅРµ Р±РѕР»РµРµ С‡РµРј РјРёС„РѕРј. РўР°Рє СЂР°Р·РґРµР»РёР»РёСЃСЊ Р¶СЂРµС†С‹. РўРµС…, РєС‚Рѕ РїРѕСЃР»РµРґРѕРІР°Р» Р·Р° РђРґР°РЅРѕСЃРѕРј, РЅР°Р·РІР°Р»Рё РјР°РіР°РјРё Р’РѕРґС‹, Р° РёР·Р±СЂР°РЅРЅРёРєРё РРЅРЅРѕСЃР° РЅР°Р·С‹РІР°Р»РёСЃСЊ РјР°РіР°РјРё РћРіРЅСЏ."	);
 					Doc_Show		( nDocID );
 	};
 /******************************************************************************************/
 INSTANCE Jagd_und_Beute (C_ITEM)
 {	
-	name 					=	"Охотничьи трофеи";
+	name 					=	"РћС…РѕС‚РЅРёС‡СЊРё С‚СЂРѕС„РµРё";
 	mainflag 				=	ITEM_KAT_DOCS;			
 									
 	flags 					=	0;
@@ -1162,7 +1162,7 @@ INSTANCE Jagd_und_Beute (C_ITEM)
 	material 				=	MAT_LEATHER;
 
 	scemeName				=	"MAP";
-	description			= "Охотничьи трофеи";
+	description			= "РћС…РѕС‚РЅРёС‡СЊРё С‚СЂРѕС„РµРё";
 	//TEXT[0]				= "";
 	////COUNT[0]			= ;
 	//TEXT[1]				= "";
@@ -1193,19 +1193,19 @@ INSTANCE Jagd_und_Beute (C_ITEM)
 					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   		);  //  0 -> margins are in pixels
 					Doc_SetFont 	( nDocID, -1, "font_10_book.tga"	   			); 	// -1 -> all pages 
 					Doc_PrintLine	( nDocID,  0, ""					); 					
-					Doc_PrintLines	( nDocID,  0, "Его книги пережили многие эпохи, а его советы используют учителя, чтобы обучать людей искусству охоты. Великие битвы севера не прошли даром. Сейчас любой живущий в лесах человек может хорошо обращаться с луком. Но это еще не говорит о том, что они умеют охотиться. Существует несколько правил, которые предполагают больше, чем простое обращение с оружием! Дикая природа таинственна и непредсказуема.");
+					Doc_PrintLines	( nDocID,  0, "Р•РіРѕ РєРЅРёРіРё РїРµСЂРµР¶РёР»Рё РјРЅРѕРіРёРµ СЌРїРѕС…Рё, Р° РµРіРѕ СЃРѕРІРµС‚С‹ РёСЃРїРѕР»СЊР·СѓСЋС‚ СѓС‡РёС‚РµР»СЏ, С‡С‚РѕР±С‹ РѕР±СѓС‡Р°С‚СЊ Р»СЋРґРµР№ РёСЃРєСѓСЃСЃС‚РІСѓ РѕС…РѕС‚С‹. Р’РµР»РёРєРёРµ Р±РёС‚РІС‹ СЃРµРІРµСЂР° РЅРµ РїСЂРѕС€Р»Рё РґР°СЂРѕРј. РЎРµР№С‡Р°СЃ Р»СЋР±РѕР№ Р¶РёРІСѓС‰РёР№ РІ Р»РµСЃР°С… С‡РµР»РѕРІРµРє РјРѕР¶РµС‚ С…РѕСЂРѕС€Рѕ РѕР±СЂР°С‰Р°С‚СЊСЃСЏ СЃ Р»СѓРєРѕРј. РќРѕ СЌС‚Рѕ РµС‰Рµ РЅРµ РіРѕРІРѕСЂРёС‚ Рѕ С‚РѕРј, С‡С‚Рѕ РѕРЅРё СѓРјРµСЋС‚ РѕС…РѕС‚РёС‚СЊСЃСЏ. РЎСѓС‰РµСЃС‚РІСѓРµС‚ РЅРµСЃРєРѕР»СЊРєРѕ РїСЂР°РІРёР», РєРѕС‚РѕСЂС‹Рµ РїСЂРµРґРїРѕР»Р°РіР°СЋС‚ Р±РѕР»СЊС€Рµ, С‡РµРј РїСЂРѕСЃС‚РѕРµ РѕР±СЂР°С‰РµРЅРёРµ СЃ РѕСЂСѓР¶РёРµРј! Р”РёРєР°СЏ РїСЂРёСЂРѕРґР° С‚Р°РёРЅСЃС‚РІРµРЅРЅР° Рё РЅРµРїСЂРµРґСЃРєР°Р·СѓРµРјР°.");
 					
 					//2.Seite
 
-					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den Rдnder des TGAs aus, links,oben,rechts,unten)
+					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den RРґnder des TGAs aus, links,oben,rechts,unten)
 					Doc_PrintLine	( nDocID,  1, ""					);					
-					Doc_PrintLines	( nDocID,  1, "Искусство охоты с луком является не только частью древней традиции, но и самым быстрым способом охоты. За долгие годы техника стрельбы не претерпела особых изменений, и, возможно, она не изменится и в будущем. Какие обстоятельства определяют ход охоты с луком? Умение распознать эти закономерности и является решающим на пути постижения охотничьего искусства."	);
+					Doc_PrintLines	( nDocID,  1, "РСЃРєСѓСЃСЃС‚РІРѕ РѕС…РѕС‚С‹ СЃ Р»СѓРєРѕРј СЏРІР»СЏРµС‚СЃСЏ РЅРµ С‚РѕР»СЊРєРѕ С‡Р°СЃС‚СЊСЋ РґСЂРµРІРЅРµР№ С‚СЂР°РґРёС†РёРё, РЅРѕ Рё СЃР°РјС‹Рј Р±С‹СЃС‚СЂС‹Рј СЃРїРѕСЃРѕР±РѕРј РѕС…РѕС‚С‹. Р—Р° РґРѕР»РіРёРµ РіРѕРґС‹ С‚РµС…РЅРёРєР° СЃС‚СЂРµР»СЊР±С‹ РЅРµ РїСЂРµС‚РµСЂРїРµР»Р° РѕСЃРѕР±С‹С… РёР·РјРµРЅРµРЅРёР№, Рё, РІРѕР·РјРѕР¶РЅРѕ, РѕРЅР° РЅРµ РёР·РјРµРЅРёС‚СЃСЏ Рё РІ Р±СѓРґСѓС‰РµРј. РљР°РєРёРµ РѕР±СЃС‚РѕСЏС‚РµР»СЊСЃС‚РІР° РѕРїСЂРµРґРµР»СЏСЋС‚ С…РѕРґ РѕС…РѕС‚С‹ СЃ Р»СѓРєРѕРј? РЈРјРµРЅРёРµ СЂР°СЃРїРѕР·РЅР°С‚СЊ СЌС‚Рё Р·Р°РєРѕРЅРѕРјРµСЂРЅРѕСЃС‚Рё Рё СЏРІР»СЏРµС‚СЃСЏ СЂРµС€Р°СЋС‰РёРј РЅР° РїСѓС‚Рё РїРѕСЃС‚РёР¶РµРЅРёСЏ РѕС…РѕС‚РЅРёС‡СЊРµРіРѕ РёСЃРєСѓСЃСЃС‚РІР°."	);
 					Doc_Show		( nDocID );
 	};
 /******************************************************************************************/
 INSTANCE Kampfkunst (C_ITEM)
 {	
-	name 					=	"Искусство войны";
+	name 					=	"РСЃРєСѓСЃСЃС‚РІРѕ РІРѕР№РЅС‹";
 
 	mainflag 				=	ITEM_KAT_DOCS;
 	flags 					=	0;
@@ -1216,7 +1216,7 @@ INSTANCE Kampfkunst (C_ITEM)
 	material 				=	MAT_LEATHER;
 
 	scemeName				=	"MAP";
-	description			= "Искусство войны";
+	description			= "РСЃРєСѓСЃСЃС‚РІРѕ РІРѕР№РЅС‹";
 	//TEXT[0]				= "";                                                                                                                                                                                          
 	////COUNT[0]			= ;
 	//TEXT[1]				= "";
@@ -1249,27 +1249,27 @@ INSTANCE Kampfkunst (C_ITEM)
   					Doc_PrintLine	( nDocID,  0, ""					);					
   					Doc_PrintLine	( nDocID,  0, ""					);					
   					Doc_PrintLine	( nDocID,  0, ""					);					
-					Doc_PrintLines	( nDocID,  0, "В течение двух тысячелетий это учение служило основой развития искусства войны."	);
+					Doc_PrintLines	( nDocID,  0, "Р’ С‚РµС‡РµРЅРёРµ РґРІСѓС… С‚С‹СЃСЏС‡РµР»РµС‚РёР№ СЌС‚Рѕ СѓС‡РµРЅРёРµ СЃР»СѓР¶РёР»Рѕ РѕСЃРЅРѕРІРѕР№ СЂР°Р·РІРёС‚РёСЏ РёСЃРєСѓСЃСЃС‚РІР° РІРѕР№РЅС‹."	);
   					Doc_PrintLine	( nDocID,  0, ""					);					
   					Doc_PrintLine	( nDocID,  0, ""					);					
-   					Doc_PrintLines	( nDocID,  0, "Вместе с подвижностью тела бойцов обучали быстро нападать, развивали наблюдательность и реакцию, а также самоконтроль. Они должны были хорошо контролировать свои движения и правильное положение тела, чтобы наилучшим образом раскрыть свои возможности."	);			
+   					Doc_PrintLines	( nDocID,  0, "Р’РјРµСЃС‚Рµ СЃ РїРѕРґРІРёР¶РЅРѕСЃС‚СЊСЋ С‚РµР»Р° Р±РѕР№С†РѕРІ РѕР±СѓС‡Р°Р»Рё Р±С‹СЃС‚СЂРѕ РЅР°РїР°РґР°С‚СЊ, СЂР°Р·РІРёРІР°Р»Рё РЅР°Р±Р»СЋРґР°С‚РµР»СЊРЅРѕСЃС‚СЊ Рё СЂРµР°РєС†РёСЋ, Р° С‚Р°РєР¶Рµ СЃР°РјРѕРєРѕРЅС‚СЂРѕР»СЊ. РћРЅРё РґРѕР»Р¶РЅС‹ Р±С‹Р»Рё С…РѕСЂРѕС€Рѕ РєРѕРЅС‚СЂРѕР»РёСЂРѕРІР°С‚СЊ СЃРІРѕРё РґРІРёР¶РµРЅРёСЏ Рё РїСЂР°РІРёР»СЊРЅРѕРµ РїРѕР»РѕР¶РµРЅРёРµ С‚РµР»Р°, С‡С‚РѕР±С‹ РЅР°РёР»СѓС‡С€РёРј РѕР±СЂР°Р·РѕРј СЂР°СЃРєСЂС‹С‚СЊ СЃРІРѕРё РІРѕР·РјРѕР¶РЅРѕСЃС‚Рё."	);			
 					
 					//2.Seite
-					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den Rдnder des TGAs aus, links,oben,rechts,unten)
+					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den RРґnder des TGAs aus, links,oben,rechts,unten)
   					Doc_PrintLine	( nDocID,  1, ""					);					
   					Doc_PrintLine	( nDocID,  1, ""					);					
   					Doc_PrintLine	( nDocID,  1, ""					);					
-					Doc_PrintLines	( nDocID,  1, "Основное учение о развитии тела пережило многие столетия."	);
+					Doc_PrintLines	( nDocID,  1, "РћСЃРЅРѕРІРЅРѕРµ СѓС‡РµРЅРёРµ Рѕ СЂР°Р·РІРёС‚РёРё С‚РµР»Р° РїРµСЂРµР¶РёР»Рѕ РјРЅРѕРіРёРµ СЃС‚РѕР»РµС‚РёСЏ."	);
   					Doc_PrintLine	( nDocID,  1, ""					);					
   					Doc_PrintLine	( nDocID,  1, ""					);					
- 					Doc_PrintLines	( nDocID,  1, "Его достижения имели огромное влияние на все последующие поколения. Проходили столетия, и мир изменялся, но только одно оставалось неизменным: гармония внутренней силы и целенаправленное движение тела."					);					
+ 					Doc_PrintLines	( nDocID,  1, "Р•РіРѕ РґРѕСЃС‚РёР¶РµРЅРёСЏ РёРјРµР»Рё РѕРіСЂРѕРјРЅРѕРµ РІР»РёСЏРЅРёРµ РЅР° РІСЃРµ РїРѕСЃР»РµРґСѓСЋС‰РёРµ РїРѕРєРѕР»РµРЅРёСЏ. РџСЂРѕС…РѕРґРёР»Рё СЃС‚РѕР»РµС‚РёСЏ, Рё РјРёСЂ РёР·РјРµРЅСЏР»СЃСЏ, РЅРѕ С‚РѕР»СЊРєРѕ РѕРґРЅРѕ РѕСЃС‚Р°РІР°Р»РѕСЃСЊ РЅРµРёР·РјРµРЅРЅС‹Рј: РіР°СЂРјРѕРЅРёСЏ РІРЅСѓС‚СЂРµРЅРЅРµР№ СЃРёР»С‹ Рё С†РµР»РµРЅР°РїСЂР°РІР»РµРЅРЅРѕРµ РґРІРёР¶РµРЅРёРµ С‚РµР»Р°."					);					
 					Doc_Show		( nDocID );
 	};
 
 /******************************************************************************************/
 INSTANCE Die_Gruft (C_ITEM)
 {	
-	name 				=	"Могила";
+	name 				=	"РњРѕРіРёР»Р°";
 
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	0;
@@ -1280,7 +1280,7 @@ INSTANCE Die_Gruft (C_ITEM)
 	material 			=	MAT_LEATHER;
 
 	scemeName			=	"MAP";
-	description			= "Искусство войны";
+	description			= "РСЃРєСѓСЃСЃС‚РІРѕ РІРѕР№РЅС‹";
 	TEXT[5]				= NAME_Value;
 	COUNT[5]			= value;
 };
@@ -1291,7 +1291,7 @@ INSTANCE Die_Gruft (C_ITEM)
 /******************************************************************************************/
 INSTANCE Astronomie (C_ITEM)
 {	
-	name 					=	"Астрономия";
+	name 					=	"РђСЃС‚СЂРѕРЅРѕРјРёСЏ";
 
 	mainflag 				=	ITEM_KAT_DOCS;
 	flags 					=	0;
@@ -1302,7 +1302,7 @@ INSTANCE Astronomie (C_ITEM)
 	material 				=	MAT_LEATHER;
 
 	scemeName				=	"MAP";
-	description			= "Астрономия";
+	description			= "РђСЃС‚СЂРѕРЅРѕРјРёСЏ";
 	//TEXT[0]				= "";
 	////COUNT[0]			= ;
 	//TEXT[1]				= "";
@@ -1333,18 +1333,18 @@ INSTANCE Astronomie (C_ITEM)
  					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   		);  //  0 -> margins are in pixels 					
 					Doc_SetFont 	( nDocID, -1, "font_10_book.tga"	   			); 	// -1 -> all pages 
  					Doc_PrintLine	( nDocID,  0, ""					);										
-					Doc_PrintLines	( nDocID,  0, "В центре находится Морград и его четыре элемента: Земля, Вода, Огонь и Воздух, обитель смерти и в ее недрах - невыразимая тьма Белиара. Небесная сфера укрывает собой мир."	);
+					Doc_PrintLines	( nDocID,  0, "Р’ С†РµРЅС‚СЂРµ РЅР°С…РѕРґРёС‚СЃСЏ РњРѕСЂРіСЂР°Рґ Рё РµРіРѕ С‡РµС‚С‹СЂРµ СЌР»РµРјРµРЅС‚Р°: Р—РµРјР»СЏ, Р’РѕРґР°, РћРіРѕРЅСЊ Рё Р’РѕР·РґСѓС…, РѕР±РёС‚РµР»СЊ СЃРјРµСЂС‚Рё Рё РІ РµРµ РЅРµРґСЂР°С… - РЅРµРІС‹СЂР°Р·РёРјР°СЏ С‚СЊРјР° Р‘РµР»РёР°СЂР°. РќРµР±РµСЃРЅР°СЏ СЃС„РµСЂР° СѓРєСЂС‹РІР°РµС‚ СЃРѕР±РѕР№ РјРёСЂ."	);
 					Doc_PrintLine	( nDocID,  0, ""					);
 					//Absatz
-					Doc_PrintLines	( nDocID,  0, "В космической иерархии человек занимает место преемника. Его душа связывает его с высшим бытием, божественным духом, его преходящее тело напротив состоит из материи Морграда. В нем отражена картина целого мира.");
+					Doc_PrintLines	( nDocID,  0, "Р’ РєРѕСЃРјРёС‡РµСЃРєРѕР№ РёРµСЂР°СЂС…РёРё С‡РµР»РѕРІРµРє Р·Р°РЅРёРјР°РµС‚ РјРµСЃС‚Рѕ РїСЂРµРµРјРЅРёРєР°. Р•РіРѕ РґСѓС€Р° СЃРІСЏР·С‹РІР°РµС‚ РµРіРѕ СЃ РІС‹СЃС€РёРј Р±С‹С‚РёРµРј, Р±РѕР¶РµСЃС‚РІРµРЅРЅС‹Рј РґСѓС…РѕРј, РµРіРѕ РїСЂРµС…РѕРґСЏС‰РµРµ С‚РµР»Рѕ РЅР°РїСЂРѕС‚РёРІ СЃРѕСЃС‚РѕРёС‚ РёР· РјР°С‚РµСЂРёРё РњРѕСЂРіСЂР°РґР°. Р’ РЅРµРј РѕС‚СЂР°Р¶РµРЅР° РєР°СЂС‚РёРЅР° С†РµР»РѕРіРѕ РјРёСЂР°.");
 
 					//2.Seite
-					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den Rдnder des TGAs aus, links,oben,rechts,unten)
+					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den RРґnder des TGAs aus, links,oben,rechts,unten)
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "Время обращения планет, или время, за которое они совершают полный оборот по отношению к Мордрагу, не всегда постоянно, из чего мы можем сделать вывод, что наш мир движется так же, как и другие планеты."	);
+					Doc_PrintLines	( nDocID,  1, "Р’СЂРµРјСЏ РѕР±СЂР°С‰РµРЅРёСЏ РїР»Р°РЅРµС‚, РёР»Рё РІСЂРµРјСЏ, Р·Р° РєРѕС‚РѕСЂРѕРµ РѕРЅРё СЃРѕРІРµСЂС€Р°СЋС‚ РїРѕР»РЅС‹Р№ РѕР±РѕСЂРѕС‚ РїРѕ РѕС‚РЅРѕС€РµРЅРёСЋ Рє РњРѕСЂРґСЂР°РіСѓ, РЅРµ РІСЃРµРіРґР° РїРѕСЃС‚РѕСЏРЅРЅРѕ, РёР· С‡РµРіРѕ РјС‹ РјРѕР¶РµРј СЃРґРµР»Р°С‚СЊ РІС‹РІРѕРґ, С‡С‚Рѕ РЅР°С€ РјРёСЂ РґРІРёР¶РµС‚СЃСЏ С‚Р°Рє Р¶Рµ, РєР°Рє Рё РґСЂСѓРіРёРµ РїР»Р°РЅРµС‚С‹."	);
 					Doc_PrintLine	( nDocID,  1, ""					);
 					//Absatz
-					Doc_PrintLines	( nDocID,  1, "При составлении календаря человек стал рассчитывать фазы луны, чтобы точно вычислить солнечный год.");
+					Doc_PrintLines	( nDocID,  1, "РџСЂРё СЃРѕСЃС‚Р°РІР»РµРЅРёРё РєР°Р»РµРЅРґР°СЂСЏ С‡РµР»РѕРІРµРє СЃС‚Р°Р» СЂР°СЃСЃС‡РёС‚С‹РІР°С‚СЊ С„Р°Р·С‹ Р»СѓРЅС‹, С‡С‚РѕР±С‹ С‚РѕС‡РЅРѕ РІС‹С‡РёСЃР»РёС‚СЊ СЃРѕР»РЅРµС‡РЅС‹Р№ РіРѕРґ.");
 					Doc_Show		( nDocID );
 	};
 /******************************************************************************************/
@@ -1352,7 +1352,7 @@ INSTANCE Astronomie (C_ITEM)
 /******************************************************************************************/
 INSTANCE Rezepturen (C_ITEM)
 {	
-	name 					=	"Рецепты зелий";
+	name 					=	"Р РµС†РµРїС‚С‹ Р·РµР»РёР№";
 
 	mainflag 				=	ITEM_KAT_DOCS;
 	flags 					=	0;
@@ -1363,8 +1363,8 @@ INSTANCE Rezepturen (C_ITEM)
 	material 				=	MAT_LEATHER;
 
 	scemeName				=	"MAP";
-	description			= "Рецепты зелий";
-	TEXT[0]				= "Том 1";
+	description			= "Р РµС†РµРїС‚С‹ Р·РµР»РёР№";
+	TEXT[0]				= "РўРѕРј 1";
 	////COUNT[0]			= ;
 	//TEXT[1]				= "";
 	////COUNT[1]			= ;
@@ -1394,24 +1394,24 @@ INSTANCE Rezepturen (C_ITEM)
  					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   		);  //  0 -> margins are in pixels 					
 					Doc_SetFont 	( nDocID, -1, "font_10_book.tga"	   			); 	// -1 -> all pages 
  					Doc_PrintLine	( nDocID,  0, ""					);										
-					Doc_PrintLines	( nDocID,  0, "Бальзам провидения:"	);
+					Doc_PrintLines	( nDocID,  0, "Р‘Р°Р»СЊР·Р°Рј РїСЂРѕРІРёРґРµРЅРёСЏ:"	);
 					Doc_PrintLine	( nDocID,  0, "----------------"					);
 					Doc_PrintLine	( nDocID,  0, ""					);		
-					Doc_PrintLines	( nDocID,  0, "Поэтому в его глаза попала желчь. Это вещество горькое на вкус. Если она попадает в глаза, человек начинает видеть горечь мира, так растет его мудрость. Он становится провидцем! Горечь и мудрость зависимы друг от друга.");
+					Doc_PrintLines	( nDocID,  0, "РџРѕСЌС‚РѕРјСѓ РІ РµРіРѕ РіР»Р°Р·Р° РїРѕРїР°Р»Р° Р¶РµР»С‡СЊ. Р­С‚Рѕ РІРµС‰РµСЃС‚РІРѕ РіРѕСЂСЊРєРѕРµ РЅР° РІРєСѓСЃ. Р•СЃР»Рё РѕРЅР° РїРѕРїР°РґР°РµС‚ РІ РіР»Р°Р·Р°, С‡РµР»РѕРІРµРє РЅР°С‡РёРЅР°РµС‚ РІРёРґРµС‚СЊ РіРѕСЂРµС‡СЊ РјРёСЂР°, С‚Р°Рє СЂР°СЃС‚РµС‚ РµРіРѕ РјСѓРґСЂРѕСЃС‚СЊ. РћРЅ СЃС‚Р°РЅРѕРІРёС‚СЃСЏ РїСЂРѕРІРёРґС†РµРј! Р“РѕСЂРµС‡СЊ Рё РјСѓРґСЂРѕСЃС‚СЊ Р·Р°РІРёСЃРёРјС‹ РґСЂСѓРі РѕС‚ РґСЂСѓРіР°.");
 
 					//2.Seite
-					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den Rдnder des TGAs aus, links,oben,rechts,unten)
+					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den RРґnder des TGAs aus, links,oben,rechts,unten)
 					Doc_PrintLine	( nDocID,  1, ""					);
 					Doc_PrintLines	( nDocID,  1, ""	);
 					Doc_PrintLine	( nDocID,  1, ""					);
 					//Absatz
-					Doc_PrintLines	( nDocID,  1, "Слезы, страдания и разочарования тоже несут горечь, а мудрость утешает человека, хранящего душевную боль. Горечь и мудрость противоположны. Где есть горечь, там нет мудрости, где есть мудрость - нет горечи.");
+					Doc_PrintLines	( nDocID,  1, "РЎР»РµР·С‹, СЃС‚СЂР°РґР°РЅРёСЏ Рё СЂР°Р·РѕС‡Р°СЂРѕРІР°РЅРёСЏ С‚РѕР¶Рµ РЅРµСЃСѓС‚ РіРѕСЂРµС‡СЊ, Р° РјСѓРґСЂРѕСЃС‚СЊ СѓС‚РµС€Р°РµС‚ С‡РµР»РѕРІРµРєР°, С…СЂР°РЅСЏС‰РµРіРѕ РґСѓС€РµРІРЅСѓСЋ Р±РѕР»СЊ. Р“РѕСЂРµС‡СЊ Рё РјСѓРґСЂРѕСЃС‚СЊ РїСЂРѕС‚РёРІРѕРїРѕР»РѕР¶РЅС‹. Р“РґРµ РµСЃС‚СЊ РіРѕСЂРµС‡СЊ, С‚Р°Рј РЅРµС‚ РјСѓРґСЂРѕСЃС‚Рё, РіРґРµ РµСЃС‚СЊ РјСѓРґСЂРѕСЃС‚СЊ - РЅРµС‚ РіРѕСЂРµС‡Рё.");
 					Doc_Show		( nDocID );
 	};
 /******************************************************************************************/
 INSTANCE Rezepturen2 (C_ITEM)
 {	
-	name 					=	"Рецепты зелий";
+	name 					=	"Р РµС†РµРїС‚С‹ Р·РµР»РёР№";
 
 	mainflag 				=	ITEM_KAT_DOCS;
 	flags 					=	0;
@@ -1422,8 +1422,8 @@ INSTANCE Rezepturen2 (C_ITEM)
 	material 				=	MAT_LEATHER;
 
 	scemeName				=	"MAP";
-	description			= "Рецепты зелий";
-	TEXT[0]				= "Том 2";
+	description			= "Р РµС†РµРїС‚С‹ Р·РµР»РёР№";
+	TEXT[0]				= "РўРѕРј 2";
 	////COUNT[0]			= ;
 	//TEXT[1]				= "";
 	////COUNT[1]			= ;
@@ -1453,19 +1453,19 @@ INSTANCE Rezepturen2 (C_ITEM)
  					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   		);  //  0 -> margins are in pixels 					
 					Doc_SetFont 	( nDocID, -1, "font_10_book.tga"	   			); 	// -1 -> all pages 
  					Doc_PrintLine	( nDocID,  0, ""					);										
-					Doc_PrintLines	( nDocID,  0, "Вино забвения"	);
+					Doc_PrintLines	( nDocID,  0, "Р’РёРЅРѕ Р·Р°Р±РІРµРЅРёСЏ"	);
 					Doc_PrintLine	( nDocID,  0, "--------------------"					);
 						Doc_PrintLine	( nDocID,  0, ""					);			
-					Doc_PrintLines	( nDocID,  0, "Высоко в горах Архолоса растет лучший виноград, идущий на изготовление этого вина. Довести это вино до совершенства, дать ему созреть - это целое искусство. Основная тайна вина: оно всегда должно оставаться неподвижным. При приготовлении вина виноградные кисти перекладываются особой травой - зиосом.");
+					Doc_PrintLines	( nDocID,  0, "Р’С‹СЃРѕРєРѕ РІ РіРѕСЂР°С… РђСЂС…РѕР»РѕСЃР° СЂР°СЃС‚РµС‚ Р»СѓС‡С€РёР№ РІРёРЅРѕРіСЂР°Рґ, РёРґСѓС‰РёР№ РЅР° РёР·РіРѕС‚РѕРІР»РµРЅРёРµ СЌС‚РѕРіРѕ РІРёРЅР°. Р”РѕРІРµСЃС‚Рё СЌС‚Рѕ РІРёРЅРѕ РґРѕ СЃРѕРІРµСЂС€РµРЅСЃС‚РІР°, РґР°С‚СЊ РµРјСѓ СЃРѕР·СЂРµС‚СЊ - СЌС‚Рѕ С†РµР»РѕРµ РёСЃРєСѓСЃСЃС‚РІРѕ. РћСЃРЅРѕРІРЅР°СЏ С‚Р°Р№РЅР° РІРёРЅР°: РѕРЅРѕ РІСЃРµРіРґР° РґРѕР»Р¶РЅРѕ РѕСЃС‚Р°РІР°С‚СЊСЃСЏ РЅРµРїРѕРґРІРёР¶РЅС‹Рј. РџСЂРё РїСЂРёРіРѕС‚РѕРІР»РµРЅРёРё РІРёРЅР° РІРёРЅРѕРіСЂР°РґРЅС‹Рµ РєРёСЃС‚Рё РїРµСЂРµРєР»Р°РґС‹РІР°СЋС‚СЃСЏ РѕСЃРѕР±РѕР№ С‚СЂР°РІРѕР№ - Р·РёРѕСЃРѕРј.");
 
 					//2.Seite
-					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den Rдnder des TGAs aus, links,oben,rechts,unten)
+					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den RРґnder des TGAs aus, links,oben,rechts,unten)
 					Doc_PrintLine	( nDocID,  1, "");
 					Doc_PrintLines	( nDocID,  1, "");
 					Doc_PrintLine	( nDocID,  1, "");
 					Doc_PrintLine	( nDocID,  1, "");
 					//Absatz
-					Doc_PrintLines	( nDocID,  1, "Они видели, как Магистр превращает чистейшую родниковую воду в вино, и были поражены. Они преклонялись перед ним и хвалили его дар. В наказание за лень Магистр заточил своих учеников в бутылки, а сам исчез в огненном столбе.");
+					Doc_PrintLines	( nDocID,  1, "РћРЅРё РІРёРґРµР»Рё, РєР°Рє РњР°РіРёСЃС‚СЂ РїСЂРµРІСЂР°С‰Р°РµС‚ С‡РёСЃС‚РµР№С€СѓСЋ СЂРѕРґРЅРёРєРѕРІСѓСЋ РІРѕРґСѓ РІ РІРёРЅРѕ, Рё Р±С‹Р»Рё РїРѕСЂР°Р¶РµРЅС‹. РћРЅРё РїСЂРµРєР»РѕРЅСЏР»РёСЃСЊ РїРµСЂРµРґ РЅРёРј Рё С…РІР°Р»РёР»Рё РµРіРѕ РґР°СЂ. Р’ РЅР°РєР°Р·Р°РЅРёРµ Р·Р° Р»РµРЅСЊ РњР°РіРёСЃС‚СЂ Р·Р°С‚РѕС‡РёР» СЃРІРѕРёС… СѓС‡РµРЅРёРєРѕРІ РІ Р±СѓС‚С‹Р»РєРё, Р° СЃР°Рј РёСЃС‡РµР· РІ РѕРіРЅРµРЅРЅРѕРј СЃС‚РѕР»Р±Рµ.");
 					Doc_Show		( nDocID );
 	};
 /******************************************************************************************/
@@ -1473,7 +1473,7 @@ INSTANCE Rezepturen2 (C_ITEM)
 
 INSTANCE TagebuchOT (C_Item)
 {	
-	name 					=	"Дневник";
+	name 					=	"Р”РЅРµРІРЅРёРє";
 
 	mainflag 					=	ITEM_KAT_DOCS;
 	flags 					=	0;
@@ -1484,10 +1484,10 @@ INSTANCE TagebuchOT (C_Item)
 	material 					=	MAT_LEATHER;
 
 	scemeName				=	"MAP";
-	description			= "Дневник";
-	TEXT[0]				= "Старая потрепанная книга.";
+	description			= "Р”РЅРµРІРЅРёРє";
+	TEXT[0]				= "РЎС‚Р°СЂР°СЏ РїРѕС‚СЂРµРїР°РЅРЅР°СЏ РєРЅРёРіР°.";
 	////COUNT[0]			= ;
-	TEXT[1]				= "В ней не хватает страниц.";
+	TEXT[1]				= "Р’ РЅРµР№ РЅРµ С…РІР°С‚Р°РµС‚ СЃС‚СЂР°РЅРёС†.";
 	////COUNT[1]			= ;
 	//TEXT[2]				= "";
 	//COUNT[2]			= ;
@@ -1514,41 +1514,41 @@ INSTANCE TagebuchOT (C_Item)
 					//1.Seite	
   					Doc_SetFont 		( nDocID, -1, "font_15_book.tga"); 	// -1 -> all pages 
 					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1);  //  0 -> margins are in pixels
-					Doc_PrintLine		( nDocID,  0, "День 23.");
+					Doc_PrintLine		( nDocID,  0, "Р”РµРЅСЊ 23.");
 					Doc_SetFont 		( nDocID, -1, "font_10_book.tga");
-					Doc_PrintLines	( nDocID,  0, "Я потерял счет времени.");
-					Doc_PrintLines	( nDocID,  0, "Думаю, прошло уже двадцать три дня, с тех пор как нас захватили орки и заставили работать.");
-					Doc_PrintLines	( nDocID,  0, "Работа очень тяжелая, а эти твари не знают пощады. Кто оказался слаб, уже давно лежит в могиле!");
-					Doc_PrintLines	( nDocID,  0, "Я сбегу отсюда, им меня не остановить!");
+					Doc_PrintLines	( nDocID,  0, "РЇ РїРѕС‚РµСЂСЏР» СЃС‡РµС‚ РІСЂРµРјРµРЅРё.");
+					Doc_PrintLines	( nDocID,  0, "Р”СѓРјР°СЋ, РїСЂРѕС€Р»Рѕ СѓР¶Рµ РґРІР°РґС†Р°С‚СЊ С‚СЂРё РґРЅСЏ, СЃ С‚РµС… РїРѕСЂ РєР°Рє РЅР°СЃ Р·Р°С…РІР°С‚РёР»Рё РѕСЂРєРё Рё Р·Р°СЃС‚Р°РІРёР»Рё СЂР°Р±РѕС‚Р°С‚СЊ.");
+					Doc_PrintLines	( nDocID,  0, "Р Р°Р±РѕС‚Р° РѕС‡РµРЅСЊ С‚СЏР¶РµР»Р°СЏ, Р° СЌС‚Рё С‚РІР°СЂРё РЅРµ Р·РЅР°СЋС‚ РїРѕС‰Р°РґС‹. РљС‚Рѕ РѕРєР°Р·Р°Р»СЃСЏ СЃР»Р°Р±, СѓР¶Рµ РґР°РІРЅРѕ Р»РµР¶РёС‚ РІ РјРѕРіРёР»Рµ!");
+					Doc_PrintLines	( nDocID,  0, "РЇ СЃР±РµРіСѓ РѕС‚СЃСЋРґР°, РёРј РјРµРЅСЏ РЅРµ РѕСЃС‚Р°РЅРѕРІРёС‚СЊ!");
 					Doc_PrintLine		( nDocID,  0, "");
 					Doc_SetFont 		( nDocID, -1, "font_15_book.tga"); 	// -1 -> all pages 
 					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1);  //  0 -> margins are in pixels
-					Doc_PrintLine		( nDocID,  0, "День 28.");
+					Doc_PrintLine		( nDocID,  0, "Р”РµРЅСЊ 28.");
 					Doc_SetFont 		( nDocID, -1, "font_10_book.tga");
-					Doc_PrintLines	( nDocID,  0, "Мы должны продолжить копать пещеру вглубь горы.");
-					Doc_PrintLines	( nDocID,  0, "Мы уже выкопали огромную пещеру, но я до сих пор не знаю, зачем все это нужно.");
+					Doc_PrintLines	( nDocID,  0, "РњС‹ РґРѕР»Р¶РЅС‹ РїСЂРѕРґРѕР»Р¶РёС‚СЊ РєРѕРїР°С‚СЊ РїРµС‰РµСЂСѓ РІРіР»СѓР±СЊ РіРѕСЂС‹.");
+					Doc_PrintLines	( nDocID,  0, "РњС‹ СѓР¶Рµ РІС‹РєРѕРїР°Р»Рё РѕРіСЂРѕРјРЅСѓСЋ РїРµС‰РµСЂСѓ, РЅРѕ СЏ РґРѕ СЃРёС… РїРѕСЂ РЅРµ Р·РЅР°СЋ, Р·Р°С‡РµРј РІСЃРµ СЌС‚Рѕ РЅСѓР¶РЅРѕ.");
 
 					//1.Seite	
   					Doc_SetFont 		( nDocID, -1, "font_15_book.tga"); 	// -1 -> all pages 
 					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1); //  0 -> margins are in pixels
-					Doc_PrintLine		( nDocID,  1, "День 67.");
+					Doc_PrintLine		( nDocID,  1, "Р”РµРЅСЊ 67.");
 					Doc_SetFont 		( nDocID, -1, "font_10_book.tga");
-					Doc_PrintLines	( nDocID,  1, "Кто-то рассказал мне, что у этих орков-шаманов больше нет сердец, но как же они тогда живут?");
-					Doc_PrintLines	( nDocID,  1, "Еще я видел меч, которого так боятся шаманы. Как бы мне хотелось проткнуть их всех этим мечом.");
+					Doc_PrintLines	( nDocID,  1, "РљС‚Рѕ-С‚Рѕ СЂР°СЃСЃРєР°Р·Р°Р» РјРЅРµ, С‡С‚Рѕ Сѓ СЌС‚РёС… РѕСЂРєРѕРІ-С€Р°РјР°РЅРѕРІ Р±РѕР»СЊС€Рµ РЅРµС‚ СЃРµСЂРґРµС†, РЅРѕ РєР°Рє Р¶Рµ РѕРЅРё С‚РѕРіРґР° Р¶РёРІСѓС‚?");
+					Doc_PrintLines	( nDocID,  1, "Р•С‰Рµ СЏ РІРёРґРµР» РјРµС‡, РєРѕС‚РѕСЂРѕРіРѕ С‚Р°Рє Р±РѕСЏС‚СЃСЏ С€Р°РјР°РЅС‹. РљР°Рє Р±С‹ РјРЅРµ С…РѕС‚РµР»РѕСЃСЊ РїСЂРѕС‚РєРЅСѓС‚СЊ РёС… РІСЃРµС… СЌС‚РёРј РјРµС‡РѕРј.");
 					Doc_PrintLine		( nDocID,  1, "");
 					Doc_SetFont 		( nDocID, -1, "font_15_book.tga"); 	// -1 -> all pages 
 					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1);   //  0 -> margins are in pixels
-					Doc_PrintLine		( nDocID,  1, "День 78.");
+					Doc_PrintLine		( nDocID,  1, "Р”РµРЅСЊ 78.");
 					Doc_SetFont 		( nDocID, -1, "font_10_book.tga");
-					Doc_PrintLines	( nDocID,  1, "Меч лежит в одной из зал в передней части храма. Но его охраняет один из шаманов.");
-					Doc_PrintLines	( nDocID,  1, "Я сбегу отсюда. Этот дневник лучше оставить здесь. Может быть, он кому-нибудь пригодится.");
+					Doc_PrintLines	( nDocID,  1, "РњРµС‡ Р»РµР¶РёС‚ РІ РѕРґРЅРѕР№ РёР· Р·Р°Р» РІ РїРµСЂРµРґРЅРµР№ С‡Р°СЃС‚Рё С…СЂР°РјР°. РќРѕ РµРіРѕ РѕС…СЂР°РЅСЏРµС‚ РѕРґРёРЅ РёР· С€Р°РјР°РЅРѕРІ.");
+					Doc_PrintLines	( nDocID,  1, "РЇ СЃР±РµРіСѓ РѕС‚СЃСЋРґР°. Р­С‚РѕС‚ РґРЅРµРІРЅРёРє Р»СѓС‡С€Рµ РѕСЃС‚Р°РІРёС‚СЊ Р·РґРµСЃСЊ. РњРѕР¶РµС‚ Р±С‹С‚СЊ, РѕРЅ РєРѕРјСѓ-РЅРёР±СѓРґСЊ РїСЂРёРіРѕРґРёС‚СЃСЏ.");
 					Doc_Show		( nDocID );
 };
 
 
 INSTANCE ItWr_Bloodfly_01(C_Item)
 {	
-	name 					=	"Шершни";
+	name 					=	"РЁРµСЂС€РЅРё";
 	
 	mainflag 				=	ITEM_KAT_DOCS;
 	flags 					=	0;
@@ -1559,7 +1559,7 @@ INSTANCE ItWr_Bloodfly_01(C_Item)
 	material 				=	MAT_LEATHER;
 
 	scemeName				=	"MAP";	
-	description			= "Шершни";
+	description			= "РЁРµСЂС€РЅРё";
 	
 	TEXT[5]				= NAME_Value;
 	COUNT[5]			= value;
@@ -1580,23 +1580,23 @@ INSTANCE ItWr_Bloodfly_01(C_Item)
   					
   					Doc_SetFont 	( nDocID, -1, "font_15_book.tga"	   			); 	// -1 -> all pages 
  					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   		);  //  0 -> margins are in pixels
- 					Doc_PrintLine	( nDocID,  0, "Шершни");
+ 					Doc_PrintLine	( nDocID,  0, "РЁРµСЂС€РЅРё");
   					Doc_PrintLine	( nDocID,  0, "");
 					Doc_PrintLine	( nDocID,  0, ""			);
 					Doc_SetFont 	( nDocID, -1, "font_10_book.TGA"	   			); 	// -1 -> all pages 
-					Doc_PrintLine	( nDocID,  0, "О шершнях.");
+					Doc_PrintLine	( nDocID,  0, "Рћ С€РµСЂС€РЅСЏС….");
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLines	( nDocID,  0, "Но там, где земля затоплена водой, а воздух тяжел, обитают огромные шершни, привлекаемые запахом живого тела. Они убивают свою жертву ядом и выпивают ее кровь.");
+					Doc_PrintLines	( nDocID,  0, "РќРѕ С‚Р°Рј, РіРґРµ Р·РµРјР»СЏ Р·Р°С‚РѕРїР»РµРЅР° РІРѕРґРѕР№, Р° РІРѕР·РґСѓС… С‚СЏР¶РµР», РѕР±РёС‚Р°СЋС‚ РѕРіСЂРѕРјРЅС‹Рµ С€РµСЂС€РЅРё, РїСЂРёРІР»РµРєР°РµРјС‹Рµ Р·Р°РїР°С…РѕРј Р¶РёРІРѕРіРѕ С‚РµР»Р°. РћРЅРё СѓР±РёРІР°СЋС‚ СЃРІРѕСЋ Р¶РµСЂС‚РІСѓ СЏРґРѕРј Рё РІС‹РїРёРІР°СЋС‚ РµРµ РєСЂРѕРІСЊ.");
 					Doc_PrintLine	( nDocID,  0, "");
 					
 
 					//2.Seite
-					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den Rдnder des TGAs aus, links,oben,rechts,unten)
+					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den RРґnder des TGAs aus, links,oben,rechts,unten)
 					Doc_PrintLine	( nDocID,  1, "");
 					Doc_PrintLine	( nDocID,  1, "");
 					Doc_PrintLine	( nDocID,  1, "");
 					Doc_PrintLine	( nDocID,  1, "");
-					Doc_PrintLines	( nDocID,  1, "Вынуть жало из тела шершня довольно сложно, но у хорошего охотника это должно получиться. Нужно сделать глубокий надрез, чтобы ножом отделить его от окружающих тканей, и осторожно вынуть. Применять его можно после того, как стечет кровь.");	
+					Doc_PrintLines	( nDocID,  1, "Р’С‹РЅСѓС‚СЊ Р¶Р°Р»Рѕ РёР· С‚РµР»Р° С€РµСЂС€РЅСЏ РґРѕРІРѕР»СЊРЅРѕ СЃР»РѕР¶РЅРѕ, РЅРѕ Сѓ С…РѕСЂРѕС€РµРіРѕ РѕС…РѕС‚РЅРёРєР° СЌС‚Рѕ РґРѕР»Р¶РЅРѕ РїРѕР»СѓС‡РёС‚СЊСЃСЏ. РќСѓР¶РЅРѕ СЃРґРµР»Р°С‚СЊ РіР»СѓР±РѕРєРёР№ РЅР°РґСЂРµР·, С‡С‚РѕР±С‹ РЅРѕР¶РѕРј РѕС‚РґРµР»РёС‚СЊ РµРіРѕ РѕС‚ РѕРєСЂСѓР¶Р°СЋС‰РёС… С‚РєР°РЅРµР№, Рё РѕСЃС‚РѕСЂРѕР¶РЅРѕ РІС‹РЅСѓС‚СЊ. РџСЂРёРјРµРЅСЏС‚СЊ РµРіРѕ РјРѕР¶РЅРѕ РїРѕСЃР»Рµ С‚РѕРіРѕ, РєР°Рє СЃС‚РµС‡РµС‚ РєСЂРѕРІСЊ.");	
 					Doc_PrintLine	( nDocID,  1, "");
 					Doc_PrintLine	( nDocID,  1, "");
 					Doc_Show		( nDocID );
@@ -1605,7 +1605,7 @@ INSTANCE ItWr_Bloodfly_01(C_Item)
 					{
 					Knows_GetBFSting = TRUE;
 					Log_CreateTopic (GE_AnimalTrophies,LOG_NOTE);
-					B_LogEntry (GE_AnimalTrophies,"Навык добычи жала шершня");	
-					PrintScreen	("Навык: добыча жала", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
+					B_LogEntry (GE_AnimalTrophies,"РќР°РІС‹Рє РґРѕР±С‹С‡Рё Р¶Р°Р»Р° С€РµСЂС€РЅСЏ");	
+					PrintScreen	("РќР°РІС‹Рє: РґРѕР±С‹С‡Р° Р¶Р°Р»Р°", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
 					};
 	};

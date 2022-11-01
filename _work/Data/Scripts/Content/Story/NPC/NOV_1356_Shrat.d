@@ -1,7 +1,7 @@
 instance NOV_1356_Shrat (Npc_Default)
 {
 	//-------- primary data --------
-	name 		=		"Ψπύς";
+	name 		=		"Π¨Ρ€ΡΡ‚";
 	Npctype 		=		Npctype_Main;
 	guild 		=		GIL_NOV;
 	level 		=		3;

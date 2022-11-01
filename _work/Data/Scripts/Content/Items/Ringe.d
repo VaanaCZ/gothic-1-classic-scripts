@@ -15,7 +15,7 @@
 	on_equip				=	Equip_Schutzring_Feuer1;
 	on_unequip				=	UnEquip_Schutzring_Feuer1;
 
-	description		= "Кольцо защиты от огня";
+	description		= "РљРѕР»СЊС†Рѕ Р·Р°С‰РёС‚С‹ РѕС‚ РѕРіРЅСЏ";
 	//TEXT[0]			= "";
 	//TEXT[1]			= "";
 	////COUNT[1]		= ;
@@ -56,7 +56,7 @@
 	on_equip				=	Equip_Schutzring_Feuer2;
 	on_unequip				=	UnEquip_Schutzring_Feuer2;
 
-	description		= "Защита от огня";
+	description		= "Р—Р°С‰РёС‚Р° РѕС‚ РѕРіРЅСЏ";
 	//TEXT[0]			= "";
 	//TEXT[1]			= "";
 	////COUNT[1]		= ;
@@ -97,7 +97,7 @@
 	on_equip				=	Equip_Schutzring_Geschosse1;
 	on_unequip				=	UnEquip_Schutzring_Geschosse1;
 
-	description		= "Кольцо деревянной кожи";
+	description		= "РљРѕР»СЊС†Рѕ РґРµСЂРµРІСЏРЅРЅРѕР№ РєРѕР¶Рё";
 	//TEXT[0]			= "";
 	//TEXT[1]			= "";
 	////COUNT[1]		= ;
@@ -138,7 +138,7 @@
 	on_equip				=	Equip_Schutzring_Geschosse2;
 	on_unequip				=	UnEquip_Schutzring_Geschosse2;
 
-	description		= "Кольцо каменной кожи";
+	description		= "РљРѕР»СЊС†Рѕ РєР°РјРµРЅРЅРѕР№ РєРѕР¶Рё";
 	//TEXT[0]			= "";
 	//TEXT[1]			= "";
 	////COUNT[1]		= ;
@@ -179,7 +179,7 @@
 	on_equip				=	Equip_Schutzring_Waffen1;
 	on_unequip				=	UnEquip_Schutzring_Waffen1;
 
-	description		= "Кольцо железной кожи";
+	description		= "РљРѕР»СЊС†Рѕ Р¶РµР»РµР·РЅРѕР№ РєРѕР¶Рё";
 	//TEXT[0]			= "";
 	//TEXT[1]			= "";
 	////COUNT[1]		= ;
@@ -222,7 +222,7 @@
 	on_equip				=	Equip_Schutzring_Waffen2;
 	on_unequip				=	UnEquip_Schutzring_Waffen2;
 
-	description		= "Кольцо бронированной кожи";
+	description		= "РљРѕР»СЊС†Рѕ Р±СЂРѕРЅРёСЂРѕРІР°РЅРЅРѕР№ РєРѕР¶Рё";
 	//TEXT[0]			= "";
 	//TEXT[1]			= "";
 	////COUNT[1]		= ;
@@ -251,7 +251,7 @@
 /******************************************************************************************/
 	INSTANCE Schutzring_Magie1(C_ITEM)
 {
-	name 					=	"Кольцо";
+	name 					=	"РљРѕР»СЊС†Рѕ";
 
 	mainflag 				=	ITEM_KAT_MAGIC;
 	flags 					=	ITEM_RING;
@@ -265,7 +265,7 @@
 	on_equip				=	Equip_Schutzring_Magie1;
 	on_unequip				=	UnEquip_Schutzring_Magie1;
 
-	description		= "Кольцо силы духа";
+	description		= "РљРѕР»СЊС†Рѕ СЃРёР»С‹ РґСѓС…Р°";
 	//TEXT[0]			= "";
 	//TEXT[1]			= "";
 	////COUNT[1]		= ;
@@ -307,7 +307,7 @@
 	on_equip				=	Equip_Schutzring_Magie2;
 	on_unequip				=	UnEquip_Schutzring_Magie2;
 
-	description		= "Кольцо защиты";
+	description		= "РљРѕР»СЊС†Рѕ Р·Р°С‰РёС‚С‹";
 	//TEXT[0]			= "";
 	//TEXT[1]			= "";
 	////COUNT[1]		= ;
@@ -350,7 +350,7 @@
 	on_equip				=	Equip_Schutzring_Magie1_Fire1;
 	on_unequip				=	UnEquip_Schutzring_Magie1_Fire1;
 
-	description		= "Кольцо очищения";
+	description		= "РљРѕР»СЊС†Рѕ РѕС‡РёС‰РµРЅРёСЏ";
 	//TEXT[0]			= "";
 	//TEXT[1]			= "";
 	////COUNT[1]		= ;
@@ -393,7 +393,7 @@
 	on_equip				=	Equip_Schutzring_Magie2_Fire2;
 	on_unequip				=	UnEquip_Schutzring_Magie2_Fire2;
 
-	description		= "Кольцо неуязвимости";
+	description		= "РљРѕР»СЊС†Рѕ РЅРµСѓСЏР·РІРёРјРѕСЃС‚Рё";
 	//TEXT[0]			= "";
 	//TEXT[1]			= "";
 	////COUNT[1]		= ;
@@ -436,7 +436,7 @@
 	on_equip				=  	Equip_Schutzring_Geschosse1_Waffen1;
 	on_unequip				= 	UnEquip_Schutzring_Geschosse1_Waffen1;
 
-	description		= "Кольцо стойкости";
+	description		= "РљРѕР»СЊС†Рѕ СЃС‚РѕР№РєРѕСЃС‚Рё";
 	//TEXT[0]			= "";
 	//TEXT[1]			= "";
 	////COUNT[1]		= ;
@@ -481,7 +481,7 @@
 	on_equip				=  	Equip_Schutzring_Geschosse2_Waffen2;
 	on_unequip				= 	UnEquip_Schutzring_Geschosse2_Waffen2;
 
-	description		= "Кольцо неприкосновенности";
+	description		= "РљРѕР»СЊС†Рѕ РЅРµРїСЂРёРєРѕСЃРЅРѕРІРµРЅРЅРѕСЃС‚Рё";
 	//TEXT[0]			= "";
 	//TEXT[1]			= "";
 	////COUNT[1]		= ;
@@ -526,7 +526,7 @@
 	on_equip				=  	Equip_Schutzring_Total1;
 	on_unequip				= 	UnEquip_Schutzring_Total1;
 
-	description		= "Кольцо неприкосновенности";
+	description		= "РљРѕР»СЊС†Рѕ РЅРµРїСЂРёРєРѕСЃРЅРѕРІРµРЅРЅРѕСЃС‚Рё";
 	//TEXT[0]			= "";
 	TEXT[1]			= NAME_Prot_Magic;
 	COUNT[1]		= 1;
@@ -575,7 +575,7 @@
 	on_equip				=  	Equip_Schutzring_Total2;
 	on_unequip				= 	UnEquip_Schutzring_Total2;
 
-	description		= "Кольцо защиты";
+	description		= "РљРѕР»СЊС†Рѕ Р·Р°С‰РёС‚С‹";
 	//TEXT[0]			= "";
 	TEXT[1]			= NAME_Prot_Magic;
 	COUNT[1]		= 3;
@@ -624,7 +624,7 @@
 	on_equip				=	Equip_Ring_des_Geschicks;
 	on_unequip				=	UnEquip_Ring_des_Geschicks;
 
-	description		= "Кольцо ловкости";
+	description		= "РљРѕР»СЊС†Рѕ Р»РѕРІРєРѕСЃС‚Рё";
 	//TEXT[0]			= "";
 	//TEXT[1]			= "";
 	////COUNT[1]		= ;
@@ -666,7 +666,7 @@
 	on_equip				=	Equip_Ring_des_Geschicks2;
 	on_unequip				=	UnEquip_Ring_des_Geschicks2;
 
-	description		= "Кольцо ловкости";
+	description		= "РљРѕР»СЊС†Рѕ Р»РѕРІРєРѕСЃС‚Рё";
 	//TEXT[0]			= "";
 	//TEXT[1]			= "";
 	////COUNT[1]		= ;
@@ -708,7 +708,7 @@
 	on_equip				=	Equip_Ring_des_Lebens;
 	on_unequip				=	UnEquip_Ring_des_Lebens;
 
-	description		= "Кольцо жизненной силы";
+	description		= "РљРѕР»СЊС†Рѕ Р¶РёР·РЅРµРЅРЅРѕР№ СЃРёР»С‹";
 	//TEXT[0]			= "";
 	//TEXT[1]			= "";
 	////COUNT[1]		= ;
@@ -757,7 +757,7 @@
 	material 				=	MAT_METAL;
 	on_equip				=	Equip_Ring_des_Lebens2;
 	on_unequip				=	UnEquip_Ring_des_Lebens2;
-	description		= "Кольцо здоровья";
+	description		= "РљРѕР»СЊС†Рѕ Р·РґРѕСЂРѕРІСЊСЏ";
 	//TEXT[0]			= "";
 	//TEXT[1]			= "";
 	////COUNT[1]		= ;
@@ -808,7 +808,7 @@
 	on_equip				=	Equip_Staerkering;
 	on_unequip				=	UnEquip_Staerkering;
 
-	description		= "Кольцо силы";
+	description		= "РљРѕР»СЊС†Рѕ СЃРёР»С‹";
 	//TEXT[0]			= "";
 	//TEXT[1]			= "";
 	////COUNT[1]		= ;
@@ -850,7 +850,7 @@
 	on_equip				=	Equip_Staerkering2;
 	on_unequip				=	UnEquip_Staerkering2;
 
-	description		= "Кольцо силы";
+	description		= "РљРѕР»СЊС†Рѕ СЃРёР»С‹";
 	//TEXT[0]			= "";
 	//TEXT[1]			= "";
 	////COUNT[1]		= ;
@@ -891,7 +891,7 @@
 	on_equip				=	Equip_Ring_der_Magie;
 	on_unequip				=	UnEquip_Ring_der_Magie;
 
-	description		= "Кольцо магической энергии";
+	description		= "РљРѕР»СЊС†Рѕ РјР°РіРёС‡РµСЃРєРѕР№ СЌРЅРµСЂРіРёРё";
 	//TEXT[0]			= "";
 	//TEXT[1]			= "";
 	////COUNT[1]		= ;
@@ -935,7 +935,7 @@
 	on_equip				=	Equip_Ring_der_Erleuchtung;
 	on_unequip				=	UnEquip_Ring_der_Erleuchtung;
 
-	description		= "Кольцо просвещения";
+	description		= "РљРѕР»СЊС†Рѕ РїСЂРѕСЃРІРµС‰РµРЅРёСЏ";
 	//TEXT[0]			= "";
 	//TEXT[1]			= "";
 	////COUNT[1]		= ;
@@ -993,7 +993,7 @@
 	on_equip				=	Equip_Machtring;
 	on_unequip				=	UnEquip_Machtring;
 
-	description		= "Кольцо силы";
+	description		= "РљРѕР»СЊС†Рѕ СЃРёР»С‹";
 	//TEXT[0]			= "";
 	//TEXT[1]			= "";
 	////COUNT[1]		= ;

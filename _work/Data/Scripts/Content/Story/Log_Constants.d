@@ -1,114 +1,114 @@
 //#############################################################################################
 //
-//	Konstanten fьr die Tagebucheintrдge
+//	Konstanten fСЊr die TagebucheintrРґge
 //	-----------------------------------
-//	ALLE Tagebucheintrдge ьber die Funktionen Log_... mьssen fьr den ersten Parameter
+//	ALLE TagebucheintrРґge СЊber die Funktionen Log_... mСЊssen fСЊr den ersten Parameter
 //	eine String-Konstante verwenden, die hier eingetragen ist. Auf keinen Fall direkt
 //	Strings in die Dialog-Skripte schreiben!!!
 //
 //#############################################################################################
 
 
-const string  	Baloros_Waffe 			= 	"Оружие Балоро";
-const string  	theriddle_log 			= 	"Чужак";
+const string  	Baloros_Waffe 			= 	"РћСЂСѓР¶РёРµ Р‘Р°Р»РѕСЂРѕ";
+const string  	theriddle_log 			= 	"Р§СѓР¶Р°Рє";
 //---------------------------------------------------------------------
 //	Gildenaufnahme/Wechsel
 //---------------------------------------------------------------------
-const string	GE_BecomeShadow			=	"Зачисление в Призраки";
-const string	GE_BecomeTemplar		=	"Назначение Стражем";
-const string	GE_BecomeGuard			=	"Назначение стражником";
-const string	GE_BecomeFiremage		=	"Круг магов Огня";
-const string	GE_BecomeMercenary		=	"Зачисление в наемники";
+const string	GE_BecomeShadow			=	"Р—Р°С‡РёСЃР»РµРЅРёРµ РІ РџСЂРёР·СЂР°РєРё";
+const string	GE_BecomeTemplar		=	"РќР°Р·РЅР°С‡РµРЅРёРµ РЎС‚СЂР°Р¶РµРј";
+const string	GE_BecomeGuard			=	"РќР°Р·РЅР°С‡РµРЅРёРµ СЃС‚СЂР°Р¶РЅРёРєРѕРј";
+const string	GE_BecomeFiremage		=	"РљСЂСѓРі РјР°РіРѕРІ РћРіРЅСЏ";
+const string	GE_BecomeMercenary		=	"Р—Р°С‡РёСЃР»РµРЅРёРµ РІ РЅР°РµРјРЅРёРєРё";
 
 //---------------------------------------------------------------------
-//	Hдndler und Lehrer
+//	HРґndler und Lehrer
 //---------------------------------------------------------------------
-const string	GE_TraderOC				=	"Торговцы в Старом лагере";
-const string	GE_TraderNC				=	"Торговцы в Новом лагере";
-const string	GE_TraderPSI			=	"Торговцы в Болотном лагере";
-const string	GE_TraderOW				=	"Торговцы вне лагерей";
+const string	GE_TraderOC				=	"РўРѕСЂРіРѕРІС†С‹ РІ РЎС‚Р°СЂРѕРј Р»Р°РіРµСЂРµ";
+const string	GE_TraderNC				=	"РўРѕСЂРіРѕРІС†С‹ РІ РќРѕРІРѕРј Р»Р°РіРµСЂРµ";
+const string	GE_TraderPSI			=	"РўРѕСЂРіРѕРІС†С‹ РІ Р‘РѕР»РѕС‚РЅРѕРј Р»Р°РіРµСЂРµ";
+const string	GE_TraderOW				=	"РўРѕСЂРіРѕРІС†С‹ РІРЅРµ Р»Р°РіРµСЂРµР№";
 
-const string	GE_TeacherOC			=	"Учителя в Старом лагере";
-const string	GE_TeacherNC			=	"Учителя в Новом лагере";
-const string	GE_TeacherPSI			=	"Учителя в Болотном лагере";
-const string	GE_TeacherOW			=	"Учителя вне лагерей";
+const string	GE_TeacherOC			=	"РЈС‡РёС‚РµР»СЏ РІ РЎС‚Р°СЂРѕРј Р»Р°РіРµСЂРµ";
+const string	GE_TeacherNC			=	"РЈС‡РёС‚РµР»СЏ РІ РќРѕРІРѕРј Р»Р°РіРµСЂРµ";
+const string	GE_TeacherPSI			=	"РЈС‡РёС‚РµР»СЏ РІ Р‘РѕР»РѕС‚РЅРѕРј Р»Р°РіРµСЂРµ";
+const string	GE_TeacherOW			=	"РЈС‡РёС‚РµР»СЏ РІРЅРµ Р»Р°РіРµСЂРµР№";
 
-const string	GE_AnimalTrophies		=	"Навыки разделывания добычи";
+const string	GE_AnimalTrophies		=	"РќР°РІС‹РєРё СЂР°Р·РґРµР»С‹РІР°РЅРёСЏ РґРѕР±С‹С‡Рё";
 
 //---------------------------------------------------------------------
 //	KAPITEL 1
 //---------------------------------------------------------------------
 // Aufnahme Altes Lager
-const string	CH1_MordragKO			=	"Задание от Торуса";
-const string	CH1_JoinOC			    =	"Принятие в Старый лагерь";
-const string	CH1_SnafsRecipe			=	"Просьба Снэфа";
-const string	CH1_LostNek 			=	"Исчезнувший стражник";
-const string	CH1_FiskNewDealer		=	"Новый партнер для Фиска";
-const string	CH1_KalomsRecipe		=	"Рецепт из секты";
-const string	CH1_BringList     		=	"Испытание на преданность";
-const string	CH1_GoToPsi     		=	"Великие планы Братства";
+const string	CH1_MordragKO			=	"Р—Р°РґР°РЅРёРµ РѕС‚ РўРѕСЂСѓСЃР°";
+const string	CH1_JoinOC			    =	"РџСЂРёРЅСЏС‚РёРµ РІ РЎС‚Р°СЂС‹Р№ Р»Р°РіРµСЂСЊ";
+const string	CH1_SnafsRecipe			=	"РџСЂРѕСЃСЊР±Р° РЎРЅСЌС„Р°";
+const string	CH1_LostNek 			=	"РСЃС‡РµР·РЅСѓРІС€РёР№ СЃС‚СЂР°Р¶РЅРёРє";
+const string	CH1_FiskNewDealer		=	"РќРѕРІС‹Р№ РїР°СЂС‚РЅРµСЂ РґР»СЏ Р¤РёСЃРєР°";
+const string	CH1_KalomsRecipe		=	"Р РµС†РµРїС‚ РёР· СЃРµРєС‚С‹";
+const string	CH1_BringList     		=	"РСЃРїС‹С‚Р°РЅРёРµ РЅР° РїСЂРµРґР°РЅРЅРѕСЃС‚СЊ";
+const string	CH1_GoToPsi     		=	"Р’РµР»РёРєРёРµ РїР»Р°РЅС‹ Р‘СЂР°С‚СЃС‚РІР°";
 //Aufnahme Neues Lager
-const string	CH1_JoinNC             	=   "Принятие в Новый лагерь";    
-const string	CH1_CarryWater			=	"Водонос для Лефти";
-const string	CH1_DamLurker           =   "Шныг и плотина";
-const string	CH1_SpreadJoints        =   "Поиск новых покупателей"; 
-const string	CH1_DealerJob           =   "Продавец болотника";
-const string	CH1_ShrikesHut			=	"Дом Шрайка";
-const string	CH1_HoratiosTeachings	=	"Крестьянин Горацио";
-const string	CH1_GotoPsiCamp			=	"Великие планы Братства";
+const string	CH1_JoinNC             	=   "РџСЂРёРЅСЏС‚РёРµ РІ РќРѕРІС‹Р№ Р»Р°РіРµСЂСЊ";    
+const string	CH1_CarryWater			=	"Р’РѕРґРѕРЅРѕСЃ РґР»СЏ Р›РµС„С‚Рё";
+const string	CH1_DamLurker           =   "РЁРЅС‹Рі Рё РїР»РѕС‚РёРЅР°";
+const string	CH1_SpreadJoints        =   "РџРѕРёСЃРє РЅРѕРІС‹С… РїРѕРєСѓРїР°С‚РµР»РµР№"; 
+const string	CH1_DealerJob           =   "РџСЂРѕРґР°РІРµС† Р±РѕР»РѕС‚РЅРёРєР°";
+const string	CH1_ShrikesHut			=	"Р”РѕРј РЁСЂР°Р№РєР°";
+const string	CH1_HoratiosTeachings	=	"РљСЂРµСЃС‚СЊСЏРЅРёРЅ Р“РѕСЂР°С†РёРѕ";
+const string	CH1_GotoPsiCamp			=	"Р’РµР»РёРєРёРµ РїР»Р°РЅС‹ Р‘СЂР°С‚СЃС‚РІР°";
 
 // Aufnahme Sumpflager
-const string	CH1_JoinPsi				=	"Принятие в Болотный лагерь";
-const string	CH1_GhorimsRelief		=	"Сменщик для Горима";
-const string	CH1_DeliverWeed			=	"Урожай болотника";
-const string	CH1_RecruitDusty		=	"Новый человек для Братства";
-const string	CH1_KrautBote			=	"Доставка болотника Гомезу";
-const string	CH1_DrugMonopol			=	"Монополия на торговлю болотником";
+const string	CH1_JoinPsi				=	"РџСЂРёРЅСЏС‚РёРµ РІ Р‘РѕР»РѕС‚РЅС‹Р№ Р»Р°РіРµСЂСЊ";
+const string	CH1_GhorimsRelief		=	"РЎРјРµРЅС‰РёРє РґР»СЏ Р“РѕСЂРёРјР°";
+const string	CH1_DeliverWeed			=	"РЈСЂРѕР¶Р°Р№ Р±РѕР»РѕС‚РЅРёРєР°";
+const string	CH1_RecruitDusty		=	"РќРѕРІС‹Р№ С‡РµР»РѕРІРµРє РґР»СЏ Р‘СЂР°С‚СЃС‚РІР°";
+const string	CH1_KrautBote			=	"Р”РѕСЃС‚Р°РІРєР° Р±РѕР»РѕС‚РЅРёРєР° Р“РѕРјРµР·Сѓ";
+const string	CH1_DrugMonopol			=	"РњРѕРЅРѕРїРѕР»РёСЏ РЅР° С‚РѕСЂРіРѕРІР»СЋ Р±РѕР»РѕС‚РЅРёРєРѕРј";
 
 //---------------------------------------------------------------------
 //	KAPITEL 2
 //---------------------------------------------------------------------
-const string	CH2_Focus				=	"Юнитор для Гуру";
-const string	CH2_MCEggs				=	"Слюна ползунов";
-const string	CH2_Book				=	"Альманах";
-const string	CH2_SnipesDeal			=	"Сундук Аарона";
-const string	CH2_StorageShed			=	"Склад Ульберта";
+const string	CH2_Focus				=	"Р®РЅРёС‚РѕСЂ РґР»СЏ Р“СѓСЂСѓ";
+const string	CH2_MCEggs				=	"РЎР»СЋРЅР° РїРѕР»Р·СѓРЅРѕРІ";
+const string	CH2_Book				=	"РђР»СЊРјР°РЅР°С…";
+const string	CH2_SnipesDeal			=	"РЎСѓРЅРґСѓРє РђР°СЂРѕРЅР°";
+const string	CH2_StorageShed			=	"РЎРєР»Р°Рґ РЈР»СЊР±РµСЂС‚Р°";
 
 
 //---------------------------------------------------------------------
 //	KAPITEL 3
 //---------------------------------------------------------------------
-const string	CH3_OrcGraveyard		=	"Кладбище орков";
-const string	CH3_FindHerbs			=	"Целебные травы для Юбериона";
-const string	CH3_EscapePlanNC		=	"Помощь магам Нового лагеря";
-const string	CH3_BringFoci			=	"Поиск юниторов";
-const string	CH3_Stonehenge			=	"Юнитор из круга камней";
-const string	CH3_Fortress			=	"Юнитор из горного форта";
-const string	CH3_MonasteryRuin		=	"Юнитор из развалин монастыря";
-const string	CH3_TrollCanyon			=	"Юнитор из ущелья троллей";
+const string	CH3_OrcGraveyard		=	"РљР»Р°РґР±РёС‰Рµ РѕСЂРєРѕРІ";
+const string	CH3_FindHerbs			=	"Р¦РµР»РµР±РЅС‹Рµ С‚СЂР°РІС‹ РґР»СЏ Р®Р±РµСЂРёРѕРЅР°";
+const string	CH3_EscapePlanNC		=	"РџРѕРјРѕС‰СЊ РјР°РіР°Рј РќРѕРІРѕРіРѕ Р»Р°РіРµСЂСЏ";
+const string	CH3_BringFoci			=	"РџРѕРёСЃРє СЋРЅРёС‚РѕСЂРѕРІ";
+const string	CH3_Stonehenge			=	"Р®РЅРёС‚РѕСЂ РёР· РєСЂСѓРіР° РєР°РјРЅРµР№";
+const string	CH3_Fortress			=	"Р®РЅРёС‚РѕСЂ РёР· РіРѕСЂРЅРѕРіРѕ С„РѕСЂС‚Р°";
+const string	CH3_MonasteryRuin		=	"Р®РЅРёС‚РѕСЂ РёР· СЂР°Р·РІР°Р»РёРЅ РјРѕРЅР°СЃС‚С‹СЂСЏ";
+const string	CH3_TrollCanyon			=	"Р®РЅРёС‚РѕСЂ РёР· СѓС‰РµР»СЊСЏ С‚СЂРѕР»Р»РµР№";
 
 
 //---------------------------------------------------------------------
 //	KAPITEL 4
 //---------------------------------------------------------------------
-const string	CH4_Firemages			=	"Помощь магов Огня";
-const string	CH4_4Friends			=	"Встреча друзей";
-const string	CH4_BannedFromOC		=	"Изгнание из Старого лагеря";
-const string	CH4_FindXardas			=	"Некромант Ксардас";
-const string	CH4_FindOrcShaman		=	"Изгнанный орк-шаман";
-const string	CH4_MCPlateArmor		=	"Доспех из панцирных пластин ползунов";
-const string	CH4_UluMulu				=	"Поиски составляющих для Улу-Мулу";
-const string	CH4_EnterTemple			=	"Путь в храм Спящего";
-const string	CH4_SldToKdW			= 	"Принятие к магам Воды";
+const string	CH4_Firemages			=	"РџРѕРјРѕС‰СЊ РјР°РіРѕРІ РћРіРЅСЏ";
+const string	CH4_4Friends			=	"Р’СЃС‚СЂРµС‡Р° РґСЂСѓР·РµР№";
+const string	CH4_BannedFromOC		=	"РР·РіРЅР°РЅРёРµ РёР· РЎС‚Р°СЂРѕРіРѕ Р»Р°РіРµСЂСЏ";
+const string	CH4_FindXardas			=	"РќРµРєСЂРѕРјР°РЅС‚ РљСЃР°СЂРґР°СЃ";
+const string	CH4_FindOrcShaman		=	"РР·РіРЅР°РЅРЅС‹Р№ РѕСЂРє-С€Р°РјР°РЅ";
+const string	CH4_MCPlateArmor		=	"Р”РѕСЃРїРµС… РёР· РїР°РЅС†РёСЂРЅС‹С… РїР»Р°СЃС‚РёРЅ РїРѕР»Р·СѓРЅРѕРІ";
+const string	CH4_UluMulu				=	"РџРѕРёСЃРєРё СЃРѕСЃС‚Р°РІР»СЏСЋС‰РёС… РґР»СЏ РЈР»Сѓ-РњСѓР»Сѓ";
+const string	CH4_EnterTemple			=	"РџСѓС‚СЊ РІ С…СЂР°Рј РЎРїСЏС‰РµРіРѕ";
+const string	CH4_SldToKdW			= 	"РџСЂРёРЅСЏС‚РёРµ Рє РјР°РіР°Рј Р’РѕРґС‹";
 
 //---------------------------------------------------------------------
 //	KAPITEL 5
 //---------------------------------------------------------------------
-const string	CH5_Uriziel				=	"Волшебный меч УРИЗЕЛЬ";
+const string	CH5_Uriziel				=	"Р’РѕР»С€РµР±РЅС‹Р№ РјРµС‡ РЈР РР—Р•Р›Р¬";
 
 
 
 //---------------------------------------------------------------------
 //	KAPITEL 6
 //---------------------------------------------------------------------
-const string	CH6_Sleeper				=	"Пробуждение Спящего";
+const string	CH6_Sleeper				=	"РџСЂРѕР±СѓР¶РґРµРЅРёРµ РЎРїСЏС‰РµРіРѕ";

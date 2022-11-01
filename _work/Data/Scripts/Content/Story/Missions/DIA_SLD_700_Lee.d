@@ -34,7 +34,7 @@ instance  Sld_700_Lee_Greet (C_INFO)
 	condition	=  Sld_700_Lee_Greet_Condition;
 	information	=  Sld_700_Lee_Greet_Info;
 	permanent	=  0;
-	description = "Ты глава наемников, да?";
+	description = "РўС‹ РіР»Р°РІР° РЅР°РµРјРЅРёРєРѕРІ, РґР°?";
 };                       
 
 FUNC int  Sld_700_Lee_Greet_Condition()
@@ -44,8 +44,8 @@ FUNC int  Sld_700_Lee_Greet_Condition()
 
 FUNC VOID  Sld_700_Lee_Greet_Info()
 {
-	AI_Output (other, self,"DIA_Lee_Greet_15_00"); //Ты глава наемников, да?
-	AI_Output (self, other,"DIA_Lee_Greet_08_01"); //Да, ты совершенно прав!
+	AI_Output (other, self,"DIA_Lee_Greet_15_00"); //РўС‹ РіР»Р°РІР° РЅР°РµРјРЅРёРєРѕРІ, РґР°?
+	AI_Output (self, other,"DIA_Lee_Greet_08_01"); //Р”Р°, С‚С‹ СЃРѕРІРµСЂС€РµРЅРЅРѕ РїСЂР°РІ!
 };
 
 //*********************************************************
@@ -59,7 +59,7 @@ instance  Sld_700_Lee_Define (C_INFO)
 	condition	=  Sld_700_Lee_Define_Condition;
 	information	=  Sld_700_Lee_Define_Info;
 	permanent	=  0;
-	description = "Что делают наемники на службе у магов?";
+	description = "Р§С‚Рѕ РґРµР»Р°СЋС‚ РЅР°РµРјРЅРёРєРё РЅР° СЃР»СѓР¶Р±Рµ Сѓ РјР°РіРѕРІ?";
 };                       
 
 FUNC int  Sld_700_Lee_Define_Condition()
@@ -72,9 +72,9 @@ FUNC int  Sld_700_Lee_Define_Condition()
 
 FUNC VOID  Sld_700_Lee_Define_Info()
 {
-	AI_Output (other, self,"DIA_Lee_Define_15_00"); //Что делают наемники на службе у магов?
-	AI_Output (self, other,"DIA_Lee_Define_08_01"); //У нас не такая уж сложная работа. Мы должны охранять руду и защищать магов.
-	AI_Output (self, other,"DIA_Lee_Define_08_02"); //Иногда маги дают кому-нибудь из нас особые задания.
+	AI_Output (other, self,"DIA_Lee_Define_15_00"); //Р§С‚Рѕ РґРµР»Р°СЋС‚ РЅР°РµРјРЅРёРєРё РЅР° СЃР»СѓР¶Р±Рµ Сѓ РјР°РіРѕРІ?
+	AI_Output (self, other,"DIA_Lee_Define_08_01"); //РЈ РЅР°СЃ РЅРµ С‚Р°РєР°СЏ СѓР¶ СЃР»РѕР¶РЅР°СЏ СЂР°Р±РѕС‚Р°. РњС‹ РґРѕР»Р¶РЅС‹ РѕС…СЂР°РЅСЏС‚СЊ СЂСѓРґСѓ Рё Р·Р°С‰РёС‰Р°С‚СЊ РјР°РіРѕРІ.
+	AI_Output (self, other,"DIA_Lee_Define_08_02"); //РРЅРѕРіРґР° РјР°РіРё РґР°СЋС‚ РєРѕРјСѓ-РЅРёР±СѓРґСЊ РёР· РЅР°СЃ РѕСЃРѕР±С‹Рµ Р·Р°РґР°РЅРёСЏ.
 };
 
 //*********************************************************
@@ -88,7 +88,7 @@ instance  Sld_700_Lee_Mitmachen (C_INFO)
 	condition	=  Sld_700_Lee_Mitmachen_Condition;
 	information	=  Sld_700_Lee_Mitmachen_Info;
 	permanent	=  0;
-	description = "Я хочу стать одним из вас.";
+	description = "РЇ С…РѕС‡Сѓ СЃС‚Р°С‚СЊ РѕРґРЅРёРј РёР· РІР°СЃ.";
 };                       
 
 FUNC int  Sld_700_Lee_Mitmachen_Condition()
@@ -103,9 +103,9 @@ FUNC int  Sld_700_Lee_Mitmachen_Condition()
 
 FUNC VOID  Sld_700_Lee_Mitmachen_Info()
 {
-	AI_Output (other, self,"DIA_Lee_Mitmachen_15_00"); //Я хочу стать одним из вас.
-	AI_Output (self, other,"DIA_Lee_Mitmachen_08_01"); //А ты храбр! Думаешь, я так просто принимаю каждого, кто ко мне приходит?
-	AI_Output (self, other,"DIA_Lee_Mitmachen_08_02"); //Сначала познакомься с жизнью нашего лагеря, а я буду за тобой приглядывать!
+	AI_Output (other, self,"DIA_Lee_Mitmachen_15_00"); //РЇ С…РѕС‡Сѓ СЃС‚Р°С‚СЊ РѕРґРЅРёРј РёР· РІР°СЃ.
+	AI_Output (self, other,"DIA_Lee_Mitmachen_08_01"); //Рђ С‚С‹ С…СЂР°Р±СЂ! Р”СѓРјР°РµС€СЊ, СЏ С‚Р°Рє РїСЂРѕСЃС‚Рѕ РїСЂРёРЅРёРјР°СЋ РєР°Р¶РґРѕРіРѕ, РєС‚Рѕ РєРѕ РјРЅРµ РїСЂРёС…РѕРґРёС‚?
+	AI_Output (self, other,"DIA_Lee_Mitmachen_08_02"); //РЎРЅР°С‡Р°Р»Р° РїРѕР·РЅР°РєРѕРјСЊСЃСЏ СЃ Р¶РёР·РЅСЊСЋ РЅР°С€РµРіРѕ Р»Р°РіРµСЂСЏ, Р° СЏ Р±СѓРґСѓ Р·Р° С‚РѕР±РѕР№ РїСЂРёРіР»СЏРґС‹РІР°С‚СЊ!
 };
 
 //*********************************************************
@@ -121,7 +121,7 @@ instance  Sld_700_Lee_NowReady (C_INFO)
 	condition	=  Sld_700_Lee_NowReady_Condition;
 	information	=  Sld_700_Lee_NowReady_Info;
 	permanent	=  1;
-	description = "Я хочу стать наемником и защищать магов. Ты примешь меня?";
+	description = "РЇ С…РѕС‡Сѓ СЃС‚Р°С‚СЊ РЅР°РµРјРЅРёРєРѕРј Рё Р·Р°С‰РёС‰Р°С‚СЊ РјР°РіРѕРІ. РўС‹ РїСЂРёРјРµС€СЊ РјРµРЅСЏ?";
 };                       
 
 FUNC int  Sld_700_Lee_NowReady_Condition()
@@ -135,22 +135,22 @@ FUNC int  Sld_700_Lee_NowReady_Condition()
 
 FUNC VOID  Sld_700_Lee_NowReady_Info()
 {
-	AI_Output (other, self,"DIA_Lee_NowReady_15_00"); //Я хочу стать наемником и защищать магов. Ты примешь меня?
+	AI_Output (other, self,"DIA_Lee_NowReady_15_00"); //РЇ С…РѕС‡Сѓ СЃС‚Р°С‚СЊ РЅР°РµРјРЅРёРєРѕРј Рё Р·Р°С‰РёС‰Р°С‚СЊ РјР°РіРѕРІ. РўС‹ РїСЂРёРјРµС€СЊ РјРµРЅСЏ?
 	
 	if (CorKalom_BringMCQBalls == LOG_SUCCESS)
 	{
-		AI_Output			(self, other,"Sld_700_Lee_BECOMESLD_Info_08_01"); //Ты помог Братству, а твои дела в Старой шахте говорят сами за себя. 
-		AI_Output			(self, other,"Sld_700_Lee_BECOMESLD_Info_08_02"); //Я согласен принять тебя в наемники.
+		AI_Output			(self, other,"Sld_700_Lee_BECOMESLD_Info_08_01"); //РўС‹ РїРѕРјРѕРі Р‘СЂР°С‚СЃС‚РІСѓ, Р° С‚РІРѕРё РґРµР»Р° РІ РЎС‚Р°СЂРѕР№ С€Р°С…С‚Рµ РіРѕРІРѕСЂСЏС‚ СЃР°РјРё Р·Р° СЃРµР±СЏ. 
+		AI_Output			(self, other,"Sld_700_Lee_BECOMESLD_Info_08_02"); //РЇ СЃРѕРіР»Р°СЃРµРЅ РїСЂРёРЅСЏС‚СЊ С‚РµР±СЏ РІ РЅР°РµРјРЅРёРєРё.
 	
 		if hero.level < 10
 		{
-			AI_Output			(self, other,"Sld_700_Lee_BECOMESLD_Info_08_03"); //Но ты еще не готов стать одним из нас. Наберись сначала опыта, а там посмотрим.
+			AI_Output			(self, other,"Sld_700_Lee_BECOMESLD_Info_08_03"); //РќРѕ С‚С‹ РµС‰Рµ РЅРµ РіРѕС‚РѕРІ СЃС‚Р°С‚СЊ РѕРґРЅРёРј РёР· РЅР°СЃ. РќР°Р±РµСЂРёСЃСЊ СЃРЅР°С‡Р°Р»Р° РѕРїС‹С‚Р°, Р° С‚Р°Рј РїРѕСЃРјРѕС‚СЂРёРј.
 	    	AI_StopProcessInfos	(self);
 			B_PrintGuildCondition(10);
 	    }
 	    else if hero.level >= 10
 	    {
-	    	AI_Output			(self, other,"Sld_700_Lee_BECOMESLD_Info_08_04"); //Я дам тебе возможность проявить себя.
+	    	AI_Output			(self, other,"Sld_700_Lee_BECOMESLD_Info_08_04"); //РЇ РґР°Рј С‚РµР±Рµ РІРѕР·РјРѕР¶РЅРѕСЃС‚СЊ РїСЂРѕСЏРІРёС‚СЊ СЃРµР±СЏ.
 	    	Lee_SldPossible = TRUE;
 		};
 	}
@@ -158,19 +158,19 @@ FUNC VOID  Sld_700_Lee_NowReady_Info()
 	{	
 		if hero.level < 10
 		{
-			AI_Output (self, other,"DIA_Lee_NowReady_08_01"); //Ты недостаточно опытен. Тебе нужно еще многому научиться.
+			AI_Output (self, other,"DIA_Lee_NowReady_08_01"); //РўС‹ РЅРµРґРѕСЃС‚Р°С‚РѕС‡РЅРѕ РѕРїС‹С‚РµРЅ. РўРµР±Рµ РЅСѓР¶РЅРѕ РµС‰Рµ РјРЅРѕРіРѕРјСѓ РЅР°СѓС‡РёС‚СЊСЃСЏ.
 			B_PrintGuildCondition(10);
 	    }
 	    else if hero.level >= 10
 	    {
-	    	AI_Output			(self, other,"Sld_700_Lee_BECOMESLD_Info_08_04"); //Я дам тебе возможность проявить себя.
+	    	AI_Output			(self, other,"Sld_700_Lee_BECOMESLD_Info_08_04"); //РЇ РґР°Рј С‚РµР±Рµ РІРѕР·РјРѕР¶РЅРѕСЃС‚СЊ РїСЂРѕСЏРІРёС‚СЊ СЃРµР±СЏ.
 	    	Lee_SldPossible = TRUE;
 		};
 	};
 };
 
 /*------------------------------------------------------------------------
-							SЦLDNER WERDEN	2									
+							SР¦LDNER WERDEN	2									
 ------------------------------------------------------------------------*/
 
 instance  Sld_700_Lee_BECOMESLDNOW (C_INFO)
@@ -180,7 +180,7 @@ instance  Sld_700_Lee_BECOMESLDNOW (C_INFO)
 	information		= Sld_700_Lee_BECOMESLDNOW_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Я хочу стать наемником."; 
+	description		= "РЇ С…РѕС‡Сѓ СЃС‚Р°С‚СЊ РЅР°РµРјРЅРёРєРѕРј."; 
 };
 
 FUNC int  Sld_700_Lee_BECOMESLDNOW_Condition()
@@ -194,23 +194,23 @@ FUNC int  Sld_700_Lee_BECOMESLDNOW_Condition()
 
 FUNC void  Sld_700_Lee_BECOMESLDNOW_Info()
 {
-	AI_Output			(other, self,"Sld_700_Lee_BECOMESLDNOW_Info_15_01"); //Я хочу стать наемником.
-	AI_Output			(self, other,"Sld_700_Lee_BECOMESLDNOW_Info_08_02"); //Это хороший выбор. Ты о нем не пожалеешь.
-	AI_Output			(self, other,"Sld_700_Lee_BECOMESLDNOW_Info_08_03"); //Скажи мне только, почему? Почему ты решил присоединиться к нашему лагерю, а не к Гомезу или к Братству?
+	AI_Output			(other, self,"Sld_700_Lee_BECOMESLDNOW_Info_15_01"); //РЇ С…РѕС‡Сѓ СЃС‚Р°С‚СЊ РЅР°РµРјРЅРёРєРѕРј.
+	AI_Output			(self, other,"Sld_700_Lee_BECOMESLDNOW_Info_08_02"); //Р­С‚Рѕ С…РѕСЂРѕС€РёР№ РІС‹Р±РѕСЂ. РўС‹ Рѕ РЅРµРј РЅРµ РїРѕР¶Р°Р»РµРµС€СЊ.
+	AI_Output			(self, other,"Sld_700_Lee_BECOMESLDNOW_Info_08_03"); //РЎРєР°Р¶Рё РјРЅРµ С‚РѕР»СЊРєРѕ, РїРѕС‡РµРјСѓ? РџРѕС‡РµРјСѓ С‚С‹ СЂРµС€РёР» РїСЂРёСЃРѕРµРґРёРЅРёС‚СЊСЃСЏ Рє РЅР°С€РµРјСѓ Р»Р°РіРµСЂСЋ, Р° РЅРµ Рє Р“РѕРјРµР·Сѓ РёР»Рё Рє Р‘СЂР°С‚СЃС‚РІСѓ?
 
 	Log_CreateTopic		(GE_BecomeMercenary,LOG_NOTE);
-	B_LogEntry			(GE_BecomeMercenary,"Ли принял меня в ряды наемников.");
+	B_LogEntry			(GE_BecomeMercenary,"Р›Рё РїСЂРёРЅСЏР» РјРµРЅСЏ РІ СЂСЏРґС‹ РЅР°РµРјРЅРёРєРѕРІ.");
 	
 	Info_ClearChoices	(Sld_700_Lee_BECOMESLDNOW);
-	Info_AddChoice		(Sld_700_Lee_BECOMESLDNOW,"Другие лагеря того не стоят.",Sld_700_Lee_BECOMESLDNOW_NOOTHER);
-	Info_AddChoice		(Sld_700_Lee_BECOMESLDNOW,"Я хотел свободы с тех пор как попал сюда.",Sld_700_Lee_BECOMESLDNOW_FREEDOM);
-	Info_AddChoice		(Sld_700_Lee_BECOMESLDNOW,"Так уж вышло.",Sld_700_Lee_BECOMESLDNOW_JUSTBECAUSE);
+	Info_AddChoice		(Sld_700_Lee_BECOMESLDNOW,"Р”СЂСѓРіРёРµ Р»Р°РіРµСЂСЏ С‚РѕРіРѕ РЅРµ СЃС‚РѕСЏС‚.",Sld_700_Lee_BECOMESLDNOW_NOOTHER);
+	Info_AddChoice		(Sld_700_Lee_BECOMESLDNOW,"РЇ С…РѕС‚РµР» СЃРІРѕР±РѕРґС‹ СЃ С‚РµС… РїРѕСЂ РєР°Рє РїРѕРїР°Р» СЃСЋРґР°.",Sld_700_Lee_BECOMESLDNOW_FREEDOM);
+	Info_AddChoice		(Sld_700_Lee_BECOMESLDNOW,"РўР°Рє СѓР¶ РІС‹С€Р»Рѕ.",Sld_700_Lee_BECOMESLDNOW_JUSTBECAUSE);
 };
   
 FUNC void  Sld_700_Lee_BECOMESLDNOW_NOOTHER()
 {
-	AI_Output			(other, self,"Sld_700_Lee_BECOMESLDNOW_NOOTHER_15_01"); //Другие лагеря того не стоят.
-	AI_Output			(self, other,"Sld_700_Lee_BECOMESLDNOW_NOOTHER_08_02"); //Да, единственное, что хоть чего-то стоит в этой колонии - это надежда на освобождение. Добро пожаловать, наемник!
+	AI_Output			(other, self,"Sld_700_Lee_BECOMESLDNOW_NOOTHER_15_01"); //Р”СЂСѓРіРёРµ Р»Р°РіРµСЂСЏ С‚РѕРіРѕ РЅРµ СЃС‚РѕСЏС‚.
+	AI_Output			(self, other,"Sld_700_Lee_BECOMESLDNOW_NOOTHER_08_02"); //Р”Р°, РµРґРёРЅСЃС‚РІРµРЅРЅРѕРµ, С‡С‚Рѕ С…РѕС‚СЊ С‡РµРіРѕ-С‚Рѕ СЃС‚РѕРёС‚ РІ СЌС‚РѕР№ РєРѕР»РѕРЅРёРё - СЌС‚Рѕ РЅР°РґРµР¶РґР° РЅР° РѕСЃРІРѕР±РѕР¶РґРµРЅРёРµ. Р”РѕР±СЂРѕ РїРѕР¶Р°Р»РѕРІР°С‚СЊ, РЅР°РµРјРЅРёРє!
 	CreateInvItem		(self,SLD_ARMOR_L);
 	B_GiveInvItems      (self, hero, SLD_ARMOR_L, 1);
 	AI_EquipBestArmor	(hero);
@@ -221,8 +221,8 @@ FUNC void  Sld_700_Lee_BECOMESLDNOW_NOOTHER()
 
 FUNC void  Sld_700_Lee_BECOMESLDNOW_FREEDOM()
 {
-	AI_Output			(other, self,"Sld_700_Lee_BECOMESLDNOW_FREEDOM_15_01"); //Я хотел свободы с тех пор как попал сюда.
-	AI_Output			(self, other,"Sld_700_Lee_BECOMESLDNOW_FREEDOM_08_02"); //И мы вернем ее себе. Добро пожаловать, наемник!
+	AI_Output			(other, self,"Sld_700_Lee_BECOMESLDNOW_FREEDOM_15_01"); //РЇ С…РѕС‚РµР» СЃРІРѕР±РѕРґС‹ СЃ С‚РµС… РїРѕСЂ РєР°Рє РїРѕРїР°Р» СЃСЋРґР°.
+	AI_Output			(self, other,"Sld_700_Lee_BECOMESLDNOW_FREEDOM_08_02"); //Р РјС‹ РІРµСЂРЅРµРј РµРµ СЃРµР±Рµ. Р”РѕР±СЂРѕ РїРѕР¶Р°Р»РѕРІР°С‚СЊ, РЅР°РµРјРЅРёРє!
 	CreateInvItem		(self,SLD_ARMOR_L);
 	B_GiveInvItems      (self, hero, SLD_ARMOR_L, 1);
 	AI_EquipBestArmor	(hero);
@@ -233,8 +233,8 @@ FUNC void  Sld_700_Lee_BECOMESLDNOW_FREEDOM()
 
 FUNC void  Sld_700_Lee_BECOMESLDNOW_JUSTBECAUSE()
 {
-	AI_Output			(other, self,"Sld_700_Lee_BECOMESLDNOW_JUSTBECAUSE_15_01"); //Так уж вышло.
-	AI_Output			(self, other,"Sld_700_Lee_BECOMESLDNOW_JUSTBECAUSE_08_02"); //Главное, чтобы мы не остались в плену этого Барьера навечно. Добро пожаловать, наемник!
+	AI_Output			(other, self,"Sld_700_Lee_BECOMESLDNOW_JUSTBECAUSE_15_01"); //РўР°Рє СѓР¶ РІС‹С€Р»Рѕ.
+	AI_Output			(self, other,"Sld_700_Lee_BECOMESLDNOW_JUSTBECAUSE_08_02"); //Р“Р»Р°РІРЅРѕРµ, С‡С‚РѕР±С‹ РјС‹ РЅРµ РѕСЃС‚Р°Р»РёСЃСЊ РІ РїР»РµРЅСѓ СЌС‚РѕРіРѕ Р‘Р°СЂСЊРµСЂР° РЅР°РІРµС‡РЅРѕ. Р”РѕР±СЂРѕ РїРѕР¶Р°Р»РѕРІР°С‚СЊ, РЅР°РµРјРЅРёРє!
 	CreateInvItem		(self,SLD_ARMOR_L);
 	B_GiveInvItems      (self, hero, SLD_ARMOR_L, 1);
 	AI_EquipBestArmor	(hero);
@@ -274,18 +274,18 @@ FUNC int  Sld_700_Lee_DAMNPAST_Condition()
 };
 func void  Sld_700_Lee_DAMNPAST_Info()
 {
-	AI_Output			(self, other,"Sld_700_Lee_DAMNPAST_Info_08_01"); //А ведь когда-то я вел совсем другую жизнь.
-	AI_Output			(self, other,"Sld_700_Lee_DAMNPAST_Info_08_02"); //Я был одним из лучших генералов королевства.
-	AI_Output			(self, other,"Sld_700_Lee_DAMNPAST_Info_08_03"); //Всю свою жизнь я боролся за его свободу.
-	AI_Output			(self, other,"Sld_700_Lee_DAMNPAST_Info_08_04"); //Знать не принимала меня, но король прислушивался к моим советам. Вельможи считали, что я представляю угрозу их грязным интригам.
-	AI_Output			(self, other,"Sld_700_Lee_DAMNPAST_Info_08_05"); //Я недооценивал их коварства. Они не побоялись убить королеву ради победы надо мной.
-	AI_Output			(self, other,"Sld_700_Lee_DAMNPAST_Info_08_06"); //В этом бессмысленном убийстве обвинили меня. У короля Робара не осталось иного выбора.
-	AI_Output			(self, other,"Sld_700_Lee_DAMNPAST_Info_08_07"); //Мои заслуги перед королевством спасли меня от смерти. Но у меня забрали свободу.
-	AI_Output			(self, other,"Sld_700_Lee_DAMNPAST_Info_08_08"); //Когда-нибудь я вырвусь отсюда. Вот тогда они за все поплатятся.
+	AI_Output			(self, other,"Sld_700_Lee_DAMNPAST_Info_08_01"); //Рђ РІРµРґСЊ РєРѕРіРґР°-С‚Рѕ СЏ РІРµР» СЃРѕРІСЃРµРј РґСЂСѓРіСѓСЋ Р¶РёР·РЅСЊ.
+	AI_Output			(self, other,"Sld_700_Lee_DAMNPAST_Info_08_02"); //РЇ Р±С‹Р» РѕРґРЅРёРј РёР· Р»СѓС‡С€РёС… РіРµРЅРµСЂР°Р»РѕРІ РєРѕСЂРѕР»РµРІСЃС‚РІР°.
+	AI_Output			(self, other,"Sld_700_Lee_DAMNPAST_Info_08_03"); //Р’СЃСЋ СЃРІРѕСЋ Р¶РёР·РЅСЊ СЏ Р±РѕСЂРѕР»СЃСЏ Р·Р° РµРіРѕ СЃРІРѕР±РѕРґСѓ.
+	AI_Output			(self, other,"Sld_700_Lee_DAMNPAST_Info_08_04"); //Р—РЅР°С‚СЊ РЅРµ РїСЂРёРЅРёРјР°Р»Р° РјРµРЅСЏ, РЅРѕ РєРѕСЂРѕР»СЊ РїСЂРёСЃР»СѓС€РёРІР°Р»СЃСЏ Рє РјРѕРёРј СЃРѕРІРµС‚Р°Рј. Р’РµР»СЊРјРѕР¶Рё СЃС‡РёС‚Р°Р»Рё, С‡С‚Рѕ СЏ РїСЂРµРґСЃС‚Р°РІР»СЏСЋ СѓРіСЂРѕР·Сѓ РёС… РіСЂСЏР·РЅС‹Рј РёРЅС‚СЂРёРіР°Рј.
+	AI_Output			(self, other,"Sld_700_Lee_DAMNPAST_Info_08_05"); //РЇ РЅРµРґРѕРѕС†РµРЅРёРІР°Р» РёС… РєРѕРІР°СЂСЃС‚РІР°. РћРЅРё РЅРµ РїРѕР±РѕСЏР»РёСЃСЊ СѓР±РёС‚СЊ РєРѕСЂРѕР»РµРІСѓ СЂР°РґРё РїРѕР±РµРґС‹ РЅР°РґРѕ РјРЅРѕР№.
+	AI_Output			(self, other,"Sld_700_Lee_DAMNPAST_Info_08_06"); //Р’ СЌС‚РѕРј Р±РµСЃСЃРјС‹СЃР»РµРЅРЅРѕРј СѓР±РёР№СЃС‚РІРµ РѕР±РІРёРЅРёР»Рё РјРµРЅСЏ. РЈ РєРѕСЂРѕР»СЏ Р РѕР±Р°СЂР° РЅРµ РѕСЃС‚Р°Р»РѕСЃСЊ РёРЅРѕРіРѕ РІС‹Р±РѕСЂР°.
+	AI_Output			(self, other,"Sld_700_Lee_DAMNPAST_Info_08_07"); //РњРѕРё Р·Р°СЃР»СѓРіРё РїРµСЂРµРґ РєРѕСЂРѕР»РµРІСЃС‚РІРѕРј СЃРїР°СЃР»Рё РјРµРЅСЏ РѕС‚ СЃРјРµСЂС‚Рё. РќРѕ Сѓ РјРµРЅСЏ Р·Р°Р±СЂР°Р»Рё СЃРІРѕР±РѕРґСѓ.
+	AI_Output			(self, other,"Sld_700_Lee_DAMNPAST_Info_08_08"); //РљРѕРіРґР°-РЅРёР±СѓРґСЊ СЏ РІС‹СЂРІСѓСЃСЊ РѕС‚СЃСЋРґР°. Р’РѕС‚ С‚РѕРіРґР° РѕРЅРё Р·Р° РІСЃРµ РїРѕРїР»Р°С‚СЏС‚СЃСЏ.
 	
 	AI_AlignToWP		(self);
 	
-	AI_Output			(self, other,"Sld_700_Lee_DAMNPAST_Info_08_09"); //Я должен им отомстить.
+	AI_Output			(self, other,"Sld_700_Lee_DAMNPAST_Info_08_09"); //РЇ РґРѕР»Р¶РµРЅ РёРј РѕС‚РѕРјСЃС‚РёС‚СЊ.
 	
 	Npc_ExchangeRoutine (self,"START");
 	
@@ -306,7 +306,7 @@ instance  Sld_700_Lee_FMTaken (C_INFO)
 	condition	=  Sld_700_Lee_FMTaken_Condition;
 	information	=  Sld_700_Lee_FMTaken_Info;
 	permanent	=  1;
-	description = "Что ты думаешь о нападении на шахту?";
+	description = "Р§С‚Рѕ С‚С‹ РґСѓРјР°РµС€СЊ Рѕ РЅР°РїР°РґРµРЅРёРё РЅР° С€Р°С…С‚Сѓ?";
 };                       
 
 FUNC int  Sld_700_Lee_FMTaken_Condition()
@@ -319,26 +319,26 @@ FUNC int  Sld_700_Lee_FMTaken_Condition()
 
 FUNC VOID  Sld_700_Lee_FMTaken_Info()
 {
-	AI_Output (other, self,"DIA_Lee_FMTaken_15_00"); //Что ты думаешь о нападении на шахту?
+	AI_Output (other, self,"DIA_Lee_FMTaken_15_00"); //Р§С‚Рѕ С‚С‹ РґСѓРјР°РµС€СЊ Рѕ РЅР°РїР°РґРµРЅРёРё РЅР° С€Р°С…С‚Сѓ?
 	
-	if (Lee_freeminereport == 0) 					//SC hat jetzt die Mцglichkeit, Lee ьber die freie Mine zu informieren! ***Bjцrn***
+	if (Lee_freeminereport == 0) 					//SC hat jetzt die MС†glichkeit, Lee СЊber die freie Mine zu informieren! ***BjС†rn***
 	{
 	
-		AI_Output (self, other,"DIA_Lee_FMTaken_08_01"); //Гомез зашел слишком далеко. Он еще пожалеет об этом.
+		AI_Output (self, other,"DIA_Lee_FMTaken_08_01"); //Р“РѕРјРµР· Р·Р°С€РµР» СЃР»РёС€РєРѕРј РґР°Р»РµРєРѕ. РћРЅ РµС‰Рµ РїРѕР¶Р°Р»РµРµС‚ РѕР± СЌС‚РѕРј.
 	
 	}
 	else
 	{
-		AI_Output			(hero, self,"Info_Lee_now_freeminefree_15_01"); 	//Люди Гомеза больше не опасны!
-		AI_Output			(self, hero,"Sld_700_Lee_CHANGESIDE_Info_08_02"); 	//Ты много сделал для нас. Нам нужны такие люди, как ты.
-		AI_Output			(hero, self,"Info_FreemineOrc_EXIT_15_03"); 		//Спасибо. А теперь мне нужно уходить.
-		AI_Output			(self, hero,"Info_CorAngar_TELEPORT_08_01"); 		//Подожди!
-		AI_Output			(self, hero,"Info_CorAngar_TELEPORT_08_03"); 		//Возьми эту руну в знак нашей благодарности за твою помощь.
-		AI_Output			(hero, self,"Info_CorAngar_TELEPORT_15_05"); 		//Спасибо тебе!
-		AI_Output			(hero,	self,"Info_Exit_Info_15_01"); 				//До встречи!
+		AI_Output			(hero, self,"Info_Lee_now_freeminefree_15_01"); 	//Р›СЋРґРё Р“РѕРјРµР·Р° Р±РѕР»СЊС€Рµ РЅРµ РѕРїР°СЃРЅС‹!
+		AI_Output			(self, hero,"Sld_700_Lee_CHANGESIDE_Info_08_02"); 	//РўС‹ РјРЅРѕРіРѕ СЃРґРµР»Р°Р» РґР»СЏ РЅР°СЃ. РќР°Рј РЅСѓР¶РЅС‹ С‚Р°РєРёРµ Р»СЋРґРё, РєР°Рє С‚С‹.
+		AI_Output			(hero, self,"Info_FreemineOrc_EXIT_15_03"); 		//РЎРїР°СЃРёР±Рѕ. Рђ С‚РµРїРµСЂСЊ РјРЅРµ РЅСѓР¶РЅРѕ СѓС…РѕРґРёС‚СЊ.
+		AI_Output			(self, hero,"Info_CorAngar_TELEPORT_08_01"); 		//РџРѕРґРѕР¶РґРё!
+		AI_Output			(self, hero,"Info_CorAngar_TELEPORT_08_03"); 		//Р’РѕР·СЊРјРё СЌС‚Сѓ СЂСѓРЅСѓ РІ Р·РЅР°Рє РЅР°С€РµР№ Р±Р»Р°РіРѕРґР°СЂРЅРѕСЃС‚Рё Р·Р° С‚РІРѕСЋ РїРѕРјРѕС‰СЊ.
+		AI_Output			(hero, self,"Info_CorAngar_TELEPORT_15_05"); 		//РЎРїР°СЃРёР±Рѕ С‚РµР±Рµ!
+		AI_Output			(hero,	self,"Info_Exit_Info_15_01"); 				//Р”Рѕ РІСЃС‚СЂРµС‡Рё!
 
 
-		B_LogEntry			(CH4_BannedFromOC,	"Я рассказал Ли о том, что мы с Горном очистили Свободную шахту. Он был очень доволен.");
+		B_LogEntry			(CH4_BannedFromOC,	"РЇ СЂР°СЃСЃРєР°Р·Р°Р» Р›Рё Рѕ С‚РѕРј, С‡С‚Рѕ РјС‹ СЃ Р“РѕСЂРЅРѕРј РѕС‡РёСЃС‚РёР»Рё РЎРІРѕР±РѕРґРЅСѓСЋ С€Р°С…С‚Сѓ. РћРЅ Р±С‹Р» РѕС‡РµРЅСЊ РґРѕРІРѕР»РµРЅ.");
 		
  	   	B_GiveInvItems (self,other, ItArRuneFirestorm, 1);
 		B_GiveXP (500);		
@@ -356,7 +356,7 @@ instance  Sld_700_Lee_CHANGESIDE (C_INFO)
 	information		= Sld_700_Lee_CHANGESIDE_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Меня прогнали из Старого лагеря. Я могу присоединиться к вам?"; 
+	description		= "РњРµРЅСЏ РїСЂРѕРіРЅР°Р»Рё РёР· РЎС‚Р°СЂРѕРіРѕ Р»Р°РіРµСЂСЏ. РЇ РјРѕРіСѓ РїСЂРёСЃРѕРµРґРёРЅРёС‚СЊСЃСЏ Рє РІР°Рј?"; 
 };
 
 FUNC int  Sld_700_Lee_CHANGESIDE_Condition()
@@ -370,10 +370,10 @@ FUNC int  Sld_700_Lee_CHANGESIDE_Condition()
 
 FUNC void  Sld_700_Lee_CHANGESIDE_Info()
 {
-	AI_Output			(other, self,"Sld_700_Lee_CHANGESIDE_Info_15_01"); //Меня прогнали из Старого лагеря. Я могу присоединиться к вам?
-	AI_Output			(self, other,"Sld_700_Lee_CHANGESIDE_Info_08_02"); //Ты много сделал для нас. Нам нужны такие люди, как ты.
-	AI_Output			(self, other,"Sld_700_Lee_CHANGESIDE_Info_08_03"); //Что ж, добро пожаловать в Новый лагерь, наемник!
-	AI_Output			(self, other,"Sld_700_Lee_CHANGESIDE_Info_08_04"); //Возьми эти доспехи. Я рад, что ты пришел к нам.
+	AI_Output			(other, self,"Sld_700_Lee_CHANGESIDE_Info_15_01"); //РњРµРЅСЏ РїСЂРѕРіРЅР°Р»Рё РёР· РЎС‚Р°СЂРѕРіРѕ Р»Р°РіРµСЂСЏ. РЇ РјРѕРіСѓ РїСЂРёСЃРѕРµРґРёРЅРёС‚СЊСЃСЏ Рє РІР°Рј?
+	AI_Output			(self, other,"Sld_700_Lee_CHANGESIDE_Info_08_02"); //РўС‹ РјРЅРѕРіРѕ СЃРґРµР»Р°Р» РґР»СЏ РЅР°СЃ. РќР°Рј РЅСѓР¶РЅС‹ С‚Р°РєРёРµ Р»СЋРґРё, РєР°Рє С‚С‹.
+	AI_Output			(self, other,"Sld_700_Lee_CHANGESIDE_Info_08_03"); //Р§С‚Рѕ Р¶, РґРѕР±СЂРѕ РїРѕР¶Р°Р»РѕРІР°С‚СЊ РІ РќРѕРІС‹Р№ Р»Р°РіРµСЂСЊ, РЅР°РµРјРЅРёРє!
+	AI_Output			(self, other,"Sld_700_Lee_CHANGESIDE_Info_08_04"); //Р’РѕР·СЊРјРё СЌС‚Рё РґРѕСЃРїРµС…Рё. РЇ СЂР°Рґ, С‡С‚Рѕ С‚С‹ РїСЂРёС€РµР» Рє РЅР°Рј.
 
 	CreateInvItem		(self, SLD_ARMOR_M);
 	B_GiveInvItems      (self, hero, SLD_ARMOR_M, 1);
@@ -386,10 +386,10 @@ FUNC void  Sld_700_Lee_CHANGESIDE_Info()
 	Npc_SetTrueGuild	(hero, GIL_SLD);
 	hero.guild = GIL_SLD;
 
-	B_LogEntry			(CH4_BannedFromOC,"Я перешел в другой лагерь. После того как меня изгнали из Старого лагеря, Ли принял меня в наемники. Мне нужно попасть к Сатурасу!");
+	B_LogEntry			(CH4_BannedFromOC,"РЇ РїРµСЂРµС€РµР» РІ РґСЂСѓРіРѕР№ Р»Р°РіРµСЂСЊ. РџРѕСЃР»Рµ С‚РѕРіРѕ РєР°Рє РјРµРЅСЏ РёР·РіРЅР°Р»Рё РёР· РЎС‚Р°СЂРѕРіРѕ Р»Р°РіРµСЂСЏ, Р›Рё РїСЂРёРЅСЏР» РјРµРЅСЏ РІ РЅР°РµРјРЅРёРєРё. РњРЅРµ РЅСѓР¶РЅРѕ РїРѕРїР°СЃС‚СЊ Рє РЎР°С‚СѓСЂР°СЃСѓ!");
 
 	Log_CreateTopic 	(GE_TeacherNC,LOG_NOTE);
-	B_LogEntry			(GE_TeacherNC,"Ли может научить меня вести бой двуручным мечом. Еще он может помочь мне увеличить силу и ловкость.");
+	B_LogEntry			(GE_TeacherNC,"Р›Рё РјРѕР¶РµС‚ РЅР°СѓС‡РёС‚СЊ РјРµРЅСЏ РІРµСЃС‚Рё Р±РѕР№ РґРІСѓСЂСѓС‡РЅС‹Рј РјРµС‡РѕРј. Р•С‰Рµ РѕРЅ РјРѕР¶РµС‚ РїРѕРјРѕС‡СЊ РјРЅРµ СѓРІРµР»РёС‡РёС‚СЊ СЃРёР»Сѓ Рё Р»РѕРІРєРѕСЃС‚СЊ.");
 };  
 
 /*------------------------------------------------------------------------
@@ -402,7 +402,7 @@ instance  Sld_700_Lee_ARMOR (C_INFO)
 	information		= Sld_700_Lee_ARMOR_Info;
 	important		= 0;
 	permanent		= 1;
-	description		= "У тебя есть хорошие доспехи?"; 
+	description		= "РЈ С‚РµР±СЏ РµСЃС‚СЊ С…РѕСЂРѕС€РёРµ РґРѕСЃРїРµС…Рё?"; 
 };
 
 FUNC int  Sld_700_Lee_ARMOR_Condition()
@@ -415,13 +415,13 @@ FUNC int  Sld_700_Lee_ARMOR_Condition()
 };
 FUNC void  Sld_700_Lee_ARMOR_Info()
 {
-	AI_Output				(other, self,"Sld_700_Lee_ARMOR_Info_15_01"); //У тебя есть хорошие доспехи?
-	AI_Output				(self, other,"Sld_700_Lee_ARMOR_Info_08_02"); //Доспехи нужно заслужить. К тому же, хорошие доспехи ценятся очень высоко.
+	AI_Output				(other, self,"Sld_700_Lee_ARMOR_Info_15_01"); //РЈ С‚РµР±СЏ РµСЃС‚СЊ С…РѕСЂРѕС€РёРµ РґРѕСЃРїРµС…Рё?
+	AI_Output				(self, other,"Sld_700_Lee_ARMOR_Info_08_02"); //Р”РѕСЃРїРµС…Рё РЅСѓР¶РЅРѕ Р·Р°СЃР»СѓР¶РёС‚СЊ. Рљ С‚РѕРјСѓ Р¶Рµ, С…РѕСЂРѕС€РёРµ РґРѕСЃРїРµС…Рё С†РµРЅСЏС‚СЃСЏ РѕС‡РµРЅСЊ РІС‹СЃРѕРєРѕ.
 	
 	Info_ClearChoices	(Sld_700_Lee_ARMOR);
 	Info_AddChoice		(Sld_700_Lee_ARMOR,DIALOG_BACK,Sld_700_Lee_ARMOR_BACK);
-	Info_AddChoice		(Sld_700_Lee_ARMOR,B_BuildBuyArmorString("Средний доспех: оружие 55, стрелы 10, огонь 25", VALUE_SLD_ARMOR_M) ,Sld_700_Lee_ARMOR_M);
-	Info_AddChoice		(Sld_700_Lee_ARMOR,B_BuildBuyArmorString("Тяжелый доспех: оружие 70, стрелы 10, огонь 35", VALUE_SLD_ARMOR_H),Sld_700_Lee_ARMOR_H);
+	Info_AddChoice		(Sld_700_Lee_ARMOR,B_BuildBuyArmorString("РЎСЂРµРґРЅРёР№ РґРѕСЃРїРµС…: РѕСЂСѓР¶РёРµ 55, СЃС‚СЂРµР»С‹ 10, РѕРіРѕРЅСЊ 25", VALUE_SLD_ARMOR_M) ,Sld_700_Lee_ARMOR_M);
+	Info_AddChoice		(Sld_700_Lee_ARMOR,B_BuildBuyArmorString("РўСЏР¶РµР»С‹Р№ РґРѕСЃРїРµС…: РѕСЂСѓР¶РёРµ 70, СЃС‚СЂРµР»С‹ 10, РѕРіРѕРЅСЊ 35", VALUE_SLD_ARMOR_H),Sld_700_Lee_ARMOR_H);
 };  
 func void Sld_700_Lee_ARMOR_BACK()
 {
@@ -429,18 +429,18 @@ func void Sld_700_Lee_ARMOR_BACK()
 };
 func void Sld_700_Lee_ARMOR_M()
 {
-	AI_Output				(other, self,"Sld_700_Lee_ARMOR_M_Info_08_01"); //Дай мне средний доспех.
+	AI_Output				(other, self,"Sld_700_Lee_ARMOR_M_Info_08_01"); //Р”Р°Р№ РјРЅРµ СЃСЂРµРґРЅРёР№ РґРѕСЃРїРµС….
 	if (Kapitel < 3)
 	{
-		AI_Output			(self, other,"Sld_700_Lee_ARMOR_M_Info_08_02"); //Ты еще не можешь носить такие доспехи. Приходи, когда у тебя будет больше опыта.
+		AI_Output			(self, other,"Sld_700_Lee_ARMOR_M_Info_08_02"); //РўС‹ РµС‰Рµ РЅРµ РјРѕР¶РµС€СЊ РЅРѕСЃРёС‚СЊ С‚Р°РєРёРµ РґРѕСЃРїРµС…Рё. РџСЂРёС…РѕРґРё, РєРѕРіРґР° Сѓ С‚РµР±СЏ Р±СѓРґРµС‚ Р±РѕР»СЊС€Рµ РѕРїС‹С‚Р°.
 	}
 	else if (Npc_HasItems (hero,ItMinugget) < VALUE_SLD_ARMOR_M) 
 	{
-		AI_Output			(self, other,"Sld_700_Lee_ARMOR_M_Info_08_03"); //Я не раздаю доспехи бесплатно.
+		AI_Output			(self, other,"Sld_700_Lee_ARMOR_M_Info_08_03"); //РЇ РЅРµ СЂР°Р·РґР°СЋ РґРѕСЃРїРµС…Рё Р±РµСЃРїР»Р°С‚РЅРѕ.
 	}
 	else 
 	{
-		AI_Output			(self, other,"Sld_700_Lee_ARMOR_M_Info_08_04"); //Это добротно сделанные доспехи. Они надежно защитят тебя.
+		AI_Output			(self, other,"Sld_700_Lee_ARMOR_M_Info_08_04"); //Р­С‚Рѕ РґРѕР±СЂРѕС‚РЅРѕ СЃРґРµР»Р°РЅРЅС‹Рµ РґРѕСЃРїРµС…Рё. РћРЅРё РЅР°РґРµР¶РЅРѕ Р·Р°С‰РёС‚СЏС‚ С‚РµР±СЏ.
 		B_GiveInvItems  	(hero, self, ItMinugget,VALUE_SLD_ARMOR_M);
 		CreateInvItem		(hero,SLD_ARMOR_M);
 		
@@ -451,18 +451,18 @@ func void Sld_700_Lee_ARMOR_M()
 };
 func void Sld_700_Lee_ARMOR_H()
 {
-	AI_Output				(other, self,"Sld_700_Lee_ARMOR_H_Info_08_01"); //Дай мне тяжелый доспех.
+	AI_Output				(other, self,"Sld_700_Lee_ARMOR_H_Info_08_01"); //Р”Р°Р№ РјРЅРµ С‚СЏР¶РµР»С‹Р№ РґРѕСЃРїРµС….
 	if (Kapitel < 4)
 	{
-		AI_Output			(self, other,"Sld_700_Lee_ARMOR_H_Info_08_02"); //Ты еще не можешь носить такие доспехи. Приходи, когда у тебя будет больше опыта.
+		AI_Output			(self, other,"Sld_700_Lee_ARMOR_H_Info_08_02"); //РўС‹ РµС‰Рµ РЅРµ РјРѕР¶РµС€СЊ РЅРѕСЃРёС‚СЊ С‚Р°РєРёРµ РґРѕСЃРїРµС…Рё. РџСЂРёС…РѕРґРё, РєРѕРіРґР° Сѓ С‚РµР±СЏ Р±СѓРґРµС‚ Р±РѕР»СЊС€Рµ РѕРїС‹С‚Р°.
 	}
 	else if (Npc_HasItems(hero,ItMinugget) < VALUE_SLD_ARMOR_H) 
 	{
-		AI_Output			(self, other,"Sld_700_Lee_ARMOR_H_Info_08_03"); //Я не раздаю доспехи бесплатно.
+		AI_Output			(self, other,"Sld_700_Lee_ARMOR_H_Info_08_03"); //РЇ РЅРµ СЂР°Р·РґР°СЋ РґРѕСЃРїРµС…Рё Р±РµСЃРїР»Р°С‚РЅРѕ.
 	}
 	else 
 	{
-		AI_Output			(self, other,"Sld_700_Lee_ARMOR_H_Info_08_04"); //Это лучшие доспехи, которые можно достать в колонии, поверь мне. Они стоят той руды, которую я за них беру.
+		AI_Output			(self, other,"Sld_700_Lee_ARMOR_H_Info_08_04"); //Р­С‚Рѕ Р»СѓС‡С€РёРµ РґРѕСЃРїРµС…Рё, РєРѕС‚РѕСЂС‹Рµ РјРѕР¶РЅРѕ РґРѕСЃС‚Р°С‚СЊ РІ РєРѕР»РѕРЅРёРё, РїРѕРІРµСЂСЊ РјРЅРµ. РћРЅРё СЃС‚РѕСЏС‚ С‚РѕР№ СЂСѓРґС‹, РєРѕС‚РѕСЂСѓСЋ СЏ Р·Р° РЅРёС… Р±РµСЂСѓ.
 		B_GiveInvItems  	(hero, self, ItMinugget,VALUE_SLD_ARMOR_H);
 
 		CreateInvItem		(hero,SLD_ARMOR_H);	//SN: ohne B_GiveInvItem, weil sonst Lee nackt dasteht!
@@ -484,7 +484,7 @@ INSTANCE Sld_700_Lee_Teach(C_INFO)
 	condition	= Sld_700_Lee_Teach_Condition;
 	information	= Sld_700_Lee_Teach_Info;
 	permanent	= 1;
-	description = "Ты можешь научить меня чему-нибудь?";
+	description = "РўС‹ РјРѕР¶РµС€СЊ РЅР°СѓС‡РёС‚СЊ РјРµРЅСЏ С‡РµРјСѓ-РЅРёР±СѓРґСЊ?";
 };                       
 
 FUNC INT Sld_700_Lee_Teach_Condition()
@@ -498,8 +498,8 @@ FUNC INT Sld_700_Lee_Teach_Condition()
 
 FUNC VOID Sld_700_Lee_Teach_Info()
 {
-	AI_Output(other,self,"Sld_700_Lee_Teach_15_00"); //Ты можешь научить меня чему-нибудь?
-	AI_Output(self,other,"Sld_700_Lee_Teach_08_01"); //Я могу помочь тебе стать более ловким и сильным.
+	AI_Output(other,self,"Sld_700_Lee_Teach_15_00"); //РўС‹ РјРѕР¶РµС€СЊ РЅР°СѓС‡РёС‚СЊ РјРµРЅСЏ С‡РµРјСѓ-РЅРёР±СѓРґСЊ?
+	AI_Output(self,other,"Sld_700_Lee_Teach_08_01"); //РЇ РјРѕРіСѓ РїРѕРјРѕС‡СЊ С‚РµР±Рµ СЃС‚Р°С‚СЊ Р±РѕР»РµРµ Р»РѕРІРєРёРј Рё СЃРёР»СЊРЅС‹Рј.
 	
 	
 	
@@ -577,7 +577,7 @@ FUNC int  Sld_700_Lee_ZWEIHAND1_Condition()
 {	
 	if 	( 
 			(Npc_GetTalentSkill  (hero,NPC_TALENT_2H) < 1)
-			&& ((Npc_GetTrueGuild    (hero) == GIL_SLD) || ((Npc_GetTrueGuild(hero)==GIL_KDW) && (Kapitel >= 4))  )	//jetzt auch als Wassermagier im 4. Kapitel mцglich ***BJЦRN***
+			&& ((Npc_GetTrueGuild    (hero) == GIL_SLD) || ((Npc_GetTrueGuild(hero)==GIL_KDW) && (Kapitel >= 4))  )	//jetzt auch als Wassermagier im 4. Kapitel mС†glich ***BJР¦RN***
 		)
 	{
 		return TRUE;
@@ -586,16 +586,16 @@ FUNC int  Sld_700_Lee_ZWEIHAND1_Condition()
 };
 FUNC void  Sld_700_Lee_ZWEIHAND1_Info()
 {
-	AI_Output			(other, self,"Sld_700_Lee_ZWEIHAND1_Info_15_01"); //Научи меня владеть двуручным мечом.
+	AI_Output			(other, self,"Sld_700_Lee_ZWEIHAND1_Info_15_01"); //РќР°СѓС‡Рё РјРµРЅСЏ РІР»Р°РґРµС‚СЊ РґРІСѓСЂСѓС‡РЅС‹Рј РјРµС‡РѕРј.
 	
 	if (B_GiveSkill(other,NPC_TALENT_2H , 1, LPCOST_TALENT_2H_1))
 	{
-		AI_Output			(self, other,"Sld_700_Lee_ZWEIHAND1_Info_08_02"); //Хорошо, начнем с самых азов.
-		AI_Output			(self, other,"Sld_700_Lee_ZWEIHAND1_Info_08_03"); //Держи клинок горизонтально. Чтобы нанести удар таким тяжелым оружием, необходимо хорошо размахнуться.
-		AI_Output			(self, other,"Sld_700_Lee_ZWEIHAND1_Info_08_04"); //Подними меч и нанеси удар сверху. Обычно такой удар может повергнуть противника.
-		AI_Output			(self, other,"Sld_700_Lee_ZWEIHAND1_Info_08_05"); //Используй инерцию движения, чтобы нанести удар снизу.
-		AI_Output			(self, other,"Sld_700_Lee_ZWEIHAND1_Info_08_06"); //Двуручным мечом можно наносить очень сильные боковые удары. При этом противник не сможет к тебе приблизиться.
-		AI_Output			(self, other,"Sld_700_Lee_ZWEIHAND1_Info_08_07"); //Что ж, для первого урока достаточно. Иди, тренируйся.
+		AI_Output			(self, other,"Sld_700_Lee_ZWEIHAND1_Info_08_02"); //РҐРѕСЂРѕС€Рѕ, РЅР°С‡РЅРµРј СЃ СЃР°РјС‹С… Р°Р·РѕРІ.
+		AI_Output			(self, other,"Sld_700_Lee_ZWEIHAND1_Info_08_03"); //Р”РµСЂР¶Рё РєР»РёРЅРѕРє РіРѕСЂРёР·РѕРЅС‚Р°Р»СЊРЅРѕ. Р§С‚РѕР±С‹ РЅР°РЅРµСЃС‚Рё СѓРґР°СЂ С‚Р°РєРёРј С‚СЏР¶РµР»С‹Рј РѕСЂСѓР¶РёРµРј, РЅРµРѕР±С…РѕРґРёРјРѕ С…РѕСЂРѕС€Рѕ СЂР°Р·РјР°С…РЅСѓС‚СЊСЃСЏ.
+		AI_Output			(self, other,"Sld_700_Lee_ZWEIHAND1_Info_08_04"); //РџРѕРґРЅРёРјРё РјРµС‡ Рё РЅР°РЅРµСЃРё СѓРґР°СЂ СЃРІРµСЂС…Сѓ. РћР±С‹С‡РЅРѕ С‚Р°РєРѕР№ СѓРґР°СЂ РјРѕР¶РµС‚ РїРѕРІРµСЂРіРЅСѓС‚СЊ РїСЂРѕС‚РёРІРЅРёРєР°.
+		AI_Output			(self, other,"Sld_700_Lee_ZWEIHAND1_Info_08_05"); //РСЃРїРѕР»СЊР·СѓР№ РёРЅРµСЂС†РёСЋ РґРІРёР¶РµРЅРёСЏ, С‡С‚РѕР±С‹ РЅР°РЅРµСЃС‚Рё СѓРґР°СЂ СЃРЅРёР·Сѓ.
+		AI_Output			(self, other,"Sld_700_Lee_ZWEIHAND1_Info_08_06"); //Р”РІСѓСЂСѓС‡РЅС‹Рј РјРµС‡РѕРј РјРѕР¶РЅРѕ РЅР°РЅРѕСЃРёС‚СЊ РѕС‡РµРЅСЊ СЃРёР»СЊРЅС‹Рµ Р±РѕРєРѕРІС‹Рµ СѓРґР°СЂС‹. РџСЂРё СЌС‚РѕРј РїСЂРѕС‚РёРІРЅРёРє РЅРµ СЃРјРѕР¶РµС‚ Рє С‚РµР±Рµ РїСЂРёР±Р»РёР·РёС‚СЊСЃСЏ.
+		AI_Output			(self, other,"Sld_700_Lee_ZWEIHAND1_Info_08_07"); //Р§С‚Рѕ Р¶, РґР»СЏ РїРµСЂРІРѕРіРѕ СѓСЂРѕРєР° РґРѕСЃС‚Р°С‚РѕС‡РЅРѕ. РРґРё, С‚СЂРµРЅРёСЂСѓР№СЃСЏ.
 	
 		Sld_700_Lee_ZWEIHAND1.permanent = 0;
 	};
@@ -618,7 +618,7 @@ FUNC int  Sld_700_Lee_ZWEIHAND2_Condition()
 	if
 		( 
 			(Npc_GetTalentSkill  (hero,NPC_TALENT_2H) == 1)
-			&& ( (Npc_GetTrueGuild    (hero) == GIL_SLD) ||  ((Npc_GetTrueGuild(hero)==GIL_KDW) && (Kapitel >= 4))  )	//jetzt auch als Wassermagier im 4. Kapitel mцglich ***BJЦRN***
+			&& ( (Npc_GetTrueGuild    (hero) == GIL_SLD) ||  ((Npc_GetTrueGuild(hero)==GIL_KDW) && (Kapitel >= 4))  )	//jetzt auch als Wassermagier im 4. Kapitel mС†glich ***BJР¦RN***
 		)
 	{
 		return TRUE;
@@ -627,18 +627,18 @@ FUNC int  Sld_700_Lee_ZWEIHAND2_Condition()
 };
 FUNC void  Sld_700_Lee_ZWEIHAND2_Info()
 {
-	AI_Output			(other, self,"Sld_700_Lee_ZWEIHAND2_Info_15_01"); //Я хочу узнать больше о владении двуручным мечом.
+	AI_Output			(other, self,"Sld_700_Lee_ZWEIHAND2_Info_15_01"); //РЇ С…РѕС‡Сѓ СѓР·РЅР°С‚СЊ Р±РѕР»СЊС€Рµ Рѕ РІР»Р°РґРµРЅРёРё РґРІСѓСЂСѓС‡РЅС‹Рј РјРµС‡РѕРј.
 	
 	if (B_GiveSkill(other,NPC_TALENT_2H , 2, LPCOST_TALENT_2H_2))
 	{
-		AI_Output			(self, other,"Sld_700_Lee_ZWEIHAND2_Info_08_02"); //Для начала тебе нужно изменить стойку. Держи клинок вертикально, возьмись за рукоять обеими руками и отведи меч немного в сторону.
-		AI_Output			(self, other,"Sld_700_Lee_ZWEIHAND2_Info_08_03"); //Нанеси быстрый удар сверху, направляя клинок над плечом. У тебя появится возможность перейти к быстрому удару слева.
-		AI_Output			(self, other,"Sld_700_Lee_ZWEIHAND2_Info_08_04"); //При этом у противника не будет никаких шансов приблизиться к тебе.
-		AI_Output			(self, other,"Sld_700_Lee_ZWEIHAND2_Info_08_05"); //Ты можешь еще нанести удар слева сверху, чтобы оттолкнуть противника.
-		AI_Output			(self, other,"Sld_700_Lee_ZWEIHAND2_Info_08_06"); //Сделай быстрый разворот, и ты сможешь ударить противника с силой, достаточной для того, чтобы повергнуть врага.
-		AI_Output			(self, other,"Sld_700_Lee_ZWEIHAND2_Info_08_07"); //Если противник смог избежать этого удара, используй инерцию меча, чтобы нанести следующий удар.
-		AI_Output			(self, other,"Sld_700_Lee_ZWEIHAND2_Info_08_08"); //После атаки прими оборонительную стойку и жди подходящего момента для следующего удара.
-		AI_Output			(self, other,"Sld_700_Lee_ZWEIHAND2_Info_08_09"); //Смена ударов и правильный выбор позиции являются основой успешного ведения боя.
+		AI_Output			(self, other,"Sld_700_Lee_ZWEIHAND2_Info_08_02"); //Р”Р»СЏ РЅР°С‡Р°Р»Р° С‚РµР±Рµ РЅСѓР¶РЅРѕ РёР·РјРµРЅРёС‚СЊ СЃС‚РѕР№РєСѓ. Р”РµСЂР¶Рё РєР»РёРЅРѕРє РІРµСЂС‚РёРєР°Р»СЊРЅРѕ, РІРѕР·СЊРјРёСЃСЊ Р·Р° СЂСѓРєРѕСЏС‚СЊ РѕР±РµРёРјРё СЂСѓРєР°РјРё Рё РѕС‚РІРµРґРё РјРµС‡ РЅРµРјРЅРѕРіРѕ РІ СЃС‚РѕСЂРѕРЅСѓ.
+		AI_Output			(self, other,"Sld_700_Lee_ZWEIHAND2_Info_08_03"); //РќР°РЅРµСЃРё Р±С‹СЃС‚СЂС‹Р№ СѓРґР°СЂ СЃРІРµСЂС…Сѓ, РЅР°РїСЂР°РІР»СЏСЏ РєР»РёРЅРѕРє РЅР°Рґ РїР»РµС‡РѕРј. РЈ С‚РµР±СЏ РїРѕСЏРІРёС‚СЃСЏ РІРѕР·РјРѕР¶РЅРѕСЃС‚СЊ РїРµСЂРµР№С‚Рё Рє Р±С‹СЃС‚СЂРѕРјСѓ СѓРґР°СЂСѓ СЃР»РµРІР°.
+		AI_Output			(self, other,"Sld_700_Lee_ZWEIHAND2_Info_08_04"); //РџСЂРё СЌС‚РѕРј Сѓ РїСЂРѕС‚РёРІРЅРёРєР° РЅРµ Р±СѓРґРµС‚ РЅРёРєР°РєРёС… С€Р°РЅСЃРѕРІ РїСЂРёР±Р»РёР·РёС‚СЊСЃСЏ Рє С‚РµР±Рµ.
+		AI_Output			(self, other,"Sld_700_Lee_ZWEIHAND2_Info_08_05"); //РўС‹ РјРѕР¶РµС€СЊ РµС‰Рµ РЅР°РЅРµСЃС‚Рё СѓРґР°СЂ СЃР»РµРІР° СЃРІРµСЂС…Сѓ, С‡С‚РѕР±С‹ РѕС‚С‚РѕР»РєРЅСѓС‚СЊ РїСЂРѕС‚РёРІРЅРёРєР°.
+		AI_Output			(self, other,"Sld_700_Lee_ZWEIHAND2_Info_08_06"); //РЎРґРµР»Р°Р№ Р±С‹СЃС‚СЂС‹Р№ СЂР°Р·РІРѕСЂРѕС‚, Рё С‚С‹ СЃРјРѕР¶РµС€СЊ СѓРґР°СЂРёС‚СЊ РїСЂРѕС‚РёРІРЅРёРєР° СЃ СЃРёР»РѕР№, РґРѕСЃС‚Р°С‚РѕС‡РЅРѕР№ РґР»СЏ С‚РѕРіРѕ, С‡С‚РѕР±С‹ РїРѕРІРµСЂРіРЅСѓС‚СЊ РІСЂР°РіР°.
+		AI_Output			(self, other,"Sld_700_Lee_ZWEIHAND2_Info_08_07"); //Р•СЃР»Рё РїСЂРѕС‚РёРІРЅРёРє СЃРјРѕРі РёР·Р±РµР¶Р°С‚СЊ СЌС‚РѕРіРѕ СѓРґР°СЂР°, РёСЃРїРѕР»СЊР·СѓР№ РёРЅРµСЂС†РёСЋ РјРµС‡Р°, С‡С‚РѕР±С‹ РЅР°РЅРµСЃС‚Рё СЃР»РµРґСѓСЋС‰РёР№ СѓРґР°СЂ.
+		AI_Output			(self, other,"Sld_700_Lee_ZWEIHAND2_Info_08_08"); //РџРѕСЃР»Рµ Р°С‚Р°РєРё РїСЂРёРјРё РѕР±РѕСЂРѕРЅРёС‚РµР»СЊРЅСѓСЋ СЃС‚РѕР№РєСѓ Рё Р¶РґРё РїРѕРґС…РѕРґСЏС‰РµРіРѕ РјРѕРјРµРЅС‚Р° РґР»СЏ СЃР»РµРґСѓСЋС‰РµРіРѕ СѓРґР°СЂР°.
+		AI_Output			(self, other,"Sld_700_Lee_ZWEIHAND2_Info_08_09"); //РЎРјРµРЅР° СѓРґР°СЂРѕРІ Рё РїСЂР°РІРёР»СЊРЅС‹Р№ РІС‹Р±РѕСЂ РїРѕР·РёС†РёРё СЏРІР»СЏСЋС‚СЃСЏ РѕСЃРЅРѕРІРѕР№ СѓСЃРїРµС€РЅРѕРіРѕ РІРµРґРµРЅРёСЏ Р±РѕСЏ.
 	
 		Sld_700_Lee_ZWEIHAND2.permanent = 0;
 	};

@@ -43,7 +43,7 @@ FUNC int  Info_Corristo_Intruder_Condition()
 
 FUNC VOID  Info_Corristo_Intruder_Info()
 {
-	AI_Output			(self, other,"Info_Saturas_Intruder_14_00"); //Что ты здесь делаешь? Тебе сюда нельзя! Уходи!
+	AI_Output			(self, other,"Info_Saturas_Intruder_14_00"); //Р§С‚Рѕ С‚С‹ Р·РґРµСЃСЊ РґРµР»Р°РµС€СЊ? РўРµР±Рµ СЃСЋРґР° РЅРµР»СЊР·СЏ! РЈС…РѕРґРё!
 
 	AI_StopProcessInfos	(self);
 };
@@ -54,7 +54,7 @@ FUNC VOID  Info_Corristo_Intruder_Info()
 
 
 //--------------------------------------------------------------------------
-// 							ЬBER DIE MAGIER
+// 							Р¬BER DIE MAGIER
 //--------------------------------------------------------------------------
 instance  KDF_402_Corristo_EXPLAINMAGE (C_INFO)
 {
@@ -63,7 +63,7 @@ instance  KDF_402_Corristo_EXPLAINMAGE (C_INFO)
 	information		= KDF_402_Corristo_EXPLAINMAGE_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Расскажи мне, что значит быть магом."; 
+	description		= "Р Р°СЃСЃРєР°Р¶Рё РјРЅРµ, С‡С‚Рѕ Р·РЅР°С‡РёС‚ Р±С‹С‚СЊ РјР°РіРѕРј."; 
 };
 
 FUNC int  KDF_402_Corristo_EXPLAINMAGE_Condition()
@@ -77,10 +77,10 @@ FUNC int  KDF_402_Corristo_EXPLAINMAGE_Condition()
 };
 FUNC void  KDF_402_Corristo_EXPLAINMAGE_Info()
 {
-	AI_Output (other, self,"KDF_402_Corristo_EXPLAINMAGE_Info_15_01"); //Расскажи мне, что значит быть магом.
-	AI_Output (self, other,"KDF_402_Corristo_EXPLAINMAGE_Info_14_02"); //Мы, маги Огня, служим Инносу, верховному богу.
-	AI_Output (self, other,"KDF_402_Corristo_EXPLAINMAGE_Info_14_03"); //Мы избраны быть его жрецами, учителями и судьями. Наша способность колдовать - его бесценный дар.
-	AI_Output (self, other,"KDF_402_Corristo_EXPLAINMAGE_Info_14_04"); //Дар, который определяет цель нашей жизни и налагает на нас большую ответственность.
+	AI_Output (other, self,"KDF_402_Corristo_EXPLAINMAGE_Info_15_01"); //Р Р°СЃСЃРєР°Р¶Рё РјРЅРµ, С‡С‚Рѕ Р·РЅР°С‡РёС‚ Р±С‹С‚СЊ РјР°РіРѕРј.
+	AI_Output (self, other,"KDF_402_Corristo_EXPLAINMAGE_Info_14_02"); //РњС‹, РјР°РіРё РћРіРЅСЏ, СЃР»СѓР¶РёРј РРЅРЅРѕСЃСѓ, РІРµСЂС…РѕРІРЅРѕРјСѓ Р±РѕРіСѓ.
+	AI_Output (self, other,"KDF_402_Corristo_EXPLAINMAGE_Info_14_03"); //РњС‹ РёР·Р±СЂР°РЅС‹ Р±С‹С‚СЊ РµРіРѕ Р¶СЂРµС†Р°РјРё, СѓС‡РёС‚РµР»СЏРјРё Рё СЃСѓРґСЊСЏРјРё. РќР°С€Р° СЃРїРѕСЃРѕР±РЅРѕСЃС‚СЊ РєРѕР»РґРѕРІР°С‚СЊ - РµРіРѕ Р±РµСЃС†РµРЅРЅС‹Р№ РґР°СЂ.
+	AI_Output (self, other,"KDF_402_Corristo_EXPLAINMAGE_Info_14_04"); //Р”Р°СЂ, РєРѕС‚РѕСЂС‹Р№ РѕРїСЂРµРґРµР»СЏРµС‚ С†РµР»СЊ РЅР°С€РµР№ Р¶РёР·РЅРё Рё РЅР°Р»Р°РіР°РµС‚ РЅР° РЅР°СЃ Р±РѕР»СЊС€СѓСЋ РѕС‚РІРµС‚СЃС‚РІРµРЅРЅРѕСЃС‚СЊ.
 };  
 //--------------------------------------------------------------------------
 // 							MAGIERAUFNAHME
@@ -92,7 +92,7 @@ instance KDF_402_Corristo_WANNBEKDF (C_INFO)
 	information		= KDF_402_Corristo_WANNBEKDF_Info;
 	important		= 0;
 	permanent		= 1;
-	description     = "Я хочу стать магом, одним из вас.";
+	description     = "РЇ С…РѕС‡Сѓ СЃС‚Р°С‚СЊ РјР°РіРѕРј, РѕРґРЅРёРј РёР· РІР°СЃ.";
 };
 
 FUNC int  KDF_402_Corristo_WANNBEKDF_Condition()
@@ -105,27 +105,27 @@ FUNC int  KDF_402_Corristo_WANNBEKDF_Condition()
 };
 func void  KDF_402_Corristo_WANNBEKDF_Info()
 {
-	AI_Output (other, self,"KDF_402_Corristo_WANNBEKDF_Info_15_01"); //Я хочу стать магом, одним из вас.
-	AI_Output (self, other,"KDF_402_Corristo_WANNBEKDF_Info_14_02"); //Ты хочешь стать магом Круга Огня? Хм...
+	AI_Output (other, self,"KDF_402_Corristo_WANNBEKDF_Info_15_01"); //РЇ С…РѕС‡Сѓ СЃС‚Р°С‚СЊ РјР°РіРѕРј, РѕРґРЅРёРј РёР· РІР°СЃ.
+	AI_Output (self, other,"KDF_402_Corristo_WANNBEKDF_Info_14_02"); //РўС‹ С…РѕС‡РµС€СЊ СЃС‚Р°С‚СЊ РјР°РіРѕРј РљСЂСѓРіР° РћРіРЅСЏ? РҐРј...
 
 	
 	if	(hero.level < 10)
 	{
-		AI_Output (self, other,"KDF_402_Corristo_WANNBEKDF_Info_14_04"); //Ты знаешь еще слишком мало. Приходи ко мне, когда будешь знать больше.
+		AI_Output (self, other,"KDF_402_Corristo_WANNBEKDF_Info_14_04"); //РўС‹ Р·РЅР°РµС€СЊ РµС‰Рµ СЃР»РёС€РєРѕРј РјР°Р»Рѕ. РџСЂРёС…РѕРґРё РєРѕ РјРЅРµ, РєРѕРіРґР° Р±СѓРґРµС€СЊ Р·РЅР°С‚СЊ Р±РѕР»СЊС€Рµ.
 		
 		AI_StopProcessInfos	( self );
 		B_PrintGuildCondition(10);
 	}
 	else
 	{
-		AI_Output (self, other,"KDF_402_Corristo_WANNBEKDF_Info_14_03"); //Многие приходили ко мне, чтобы стать магами, но только один из них стал моим учеником. Все остальные ушли ни с чем.
-		AI_Output (self, other,"KDF_402_Corristo_WANNBEKDF_Info_14_05"); //Твой дух уже может принять наше учение. Если хочешь стать магом, ты должен пройти испытание. Скажи мне, когда будешь готов.
+		AI_Output (self, other,"KDF_402_Corristo_WANNBEKDF_Info_14_03"); //РњРЅРѕРіРёРµ РїСЂРёС…РѕРґРёР»Рё РєРѕ РјРЅРµ, С‡С‚РѕР±С‹ СЃС‚Р°С‚СЊ РјР°РіР°РјРё, РЅРѕ С‚РѕР»СЊРєРѕ РѕРґРёРЅ РёР· РЅРёС… СЃС‚Р°Р» РјРѕРёРј СѓС‡РµРЅРёРєРѕРј. Р’СЃРµ РѕСЃС‚Р°Р»СЊРЅС‹Рµ СѓС€Р»Рё РЅРё СЃ С‡РµРј.
+		AI_Output (self, other,"KDF_402_Corristo_WANNBEKDF_Info_14_05"); //РўРІРѕР№ РґСѓС… СѓР¶Рµ РјРѕР¶РµС‚ РїСЂРёРЅСЏС‚СЊ РЅР°С€Рµ СѓС‡РµРЅРёРµ. Р•СЃР»Рё С…РѕС‡РµС€СЊ СЃС‚Р°С‚СЊ РјР°РіРѕРј, С‚С‹ РґРѕР»Р¶РµРЅ РїСЂРѕР№С‚Рё РёСЃРїС‹С‚Р°РЅРёРµ. РЎРєР°Р¶Рё РјРЅРµ, РєРѕРіРґР° Р±СѓРґРµС€СЊ РіРѕС‚РѕРІ.
 		Corristo_KDFAufnahme = 1;
 		KDF_402_Corristo_WANNBEKDF.permanent = 0;
 		Info_ClearChoices (KDF_402_Corristo_WANNBEKDF);
 
 		Log_CreateTopic	(GE_BecomeFiremage,	LOG_NOTE);
-		B_LogEntry	(GE_BecomeFiremage,	"Корристо сказал мне, что я могу быть принят в Круг магов Огня. Но для этого я должен пройти испытание.");
+		B_LogEntry	(GE_BecomeFiremage,	"РљРѕСЂСЂРёСЃС‚Рѕ СЃРєР°Р·Р°Р» РјРЅРµ, С‡С‚Рѕ СЏ РјРѕРіСѓ Р±С‹С‚СЊ РїСЂРёРЅСЏС‚ РІ РљСЂСѓРі РјР°РіРѕРІ РћРіРЅСЏ. РќРѕ РґР»СЏ СЌС‚РѕРіРѕ СЏ РґРѕР»Р¶РµРЅ РїСЂРѕР№С‚Рё РёСЃРїС‹С‚Р°РЅРёРµ.");
 	};
 };
 //--------------------------------------------------------------------------
@@ -138,7 +138,7 @@ instance  KDF_402_Corristo_KDFTEST (C_INFO)
 	information		= KDF_402_Corristo_KDFTEST_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Я готов к испытанию."; 
+	description		= "РЇ РіРѕС‚РѕРІ Рє РёСЃРїС‹С‚Р°РЅРёСЋ."; 
 };
 
 FUNC int  KDF_402_Corristo_KDFTEST_Condition()
@@ -151,68 +151,68 @@ FUNC int  KDF_402_Corristo_KDFTEST_Condition()
 };
 FUNC void  KDF_402_Corristo_KDFTEST_Info()
 {
-	AI_Output (other, self,"KDF_402_Corristo_KDFTEST_Info_15_01"); //Я готов к испытанию.
-	AI_Output (self, other,"KDF_402_Corristo_KDFTEST_Info_14_02"); //Хорошо. Ты помогал братьям из Болотного лагеря, да?
+	AI_Output (other, self,"KDF_402_Corristo_KDFTEST_Info_15_01"); //РЇ РіРѕС‚РѕРІ Рє РёСЃРїС‹С‚Р°РЅРёСЋ.
+	AI_Output (self, other,"KDF_402_Corristo_KDFTEST_Info_14_02"); //РҐРѕСЂРѕС€Рѕ. РўС‹ РїРѕРјРѕРіР°Р» Р±СЂР°С‚СЊСЏРј РёР· Р‘РѕР»РѕС‚РЅРѕРіРѕ Р»Р°РіРµСЂСЏ, РґР°?
 	Info_ClearChoices (KDF_402_Corristo_KDFTEST);
-	Info_Addchoice (KDF_402_Corristo_KDFTEST,"Да, это так.",KDF_402_Corristo_KDFTEST_JA); 
-	Info_Addchoice (KDF_402_Corristo_KDFTEST,"Нет.",KDF_402_Corristo_KDFTEST_NO); 
+	Info_Addchoice (KDF_402_Corristo_KDFTEST,"Р”Р°, СЌС‚Рѕ С‚Р°Рє.",KDF_402_Corristo_KDFTEST_JA); 
+	Info_Addchoice (KDF_402_Corristo_KDFTEST,"РќРµС‚.",KDF_402_Corristo_KDFTEST_NO); 
 
 };  
 FUNC VOID  KDF_402_Corristo_KDFTEST_JA()
 {
-	AI_Output (other, self,"KDF_402_Corristo_KDFTEST_JA_Info_15_01"); //Да, это так.
-	AI_Output (self, other,"KDF_402_Corristo_KDFTEST_JA_Info_14_02"); //Хм...
-	AI_Output (self, other,"KDF_402_Corristo_KDFTEST_JA_Info_14_03"); //Назови мне имя верховного бога.
+	AI_Output (other, self,"KDF_402_Corristo_KDFTEST_JA_Info_15_01"); //Р”Р°, СЌС‚Рѕ С‚Р°Рє.
+	AI_Output (self, other,"KDF_402_Corristo_KDFTEST_JA_Info_14_02"); //РҐРј...
+	AI_Output (self, other,"KDF_402_Corristo_KDFTEST_JA_Info_14_03"); //РќР°Р·РѕРІРё РјРЅРµ РёРјСЏ РІРµСЂС…РѕРІРЅРѕРіРѕ Р±РѕРіР°.
 	Corristo_KDFAufnahme = 2;
 	Info_ClearChoices (KDF_402_Corristo_KDFTEST);
-	Info_Addchoice (KDF_402_Corristo_KDFTEST,"Аданос.",KDF_402_Corristo_KDFTEST_ADANOS); 
-	Info_Addchoice (KDF_402_Corristo_KDFTEST,"Спящий.",KDF_402_Corristo_KDFTEST_SLEEPER);
-	Info_Addchoice (KDF_402_Corristo_KDFTEST,"Иннос.",KDF_402_Corristo_KDFTEST_INNOS); 
-	Info_Addchoice (KDF_402_Corristo_KDFTEST,"Гомез.",KDF_402_Corristo_KDFTEST_GOMEZ);
+	Info_Addchoice (KDF_402_Corristo_KDFTEST,"РђРґР°РЅРѕСЃ.",KDF_402_Corristo_KDFTEST_ADANOS); 
+	Info_Addchoice (KDF_402_Corristo_KDFTEST,"РЎРїСЏС‰РёР№.",KDF_402_Corristo_KDFTEST_SLEEPER);
+	Info_Addchoice (KDF_402_Corristo_KDFTEST,"РРЅРЅРѕСЃ.",KDF_402_Corristo_KDFTEST_INNOS); 
+	Info_Addchoice (KDF_402_Corristo_KDFTEST,"Р“РѕРјРµР·.",KDF_402_Corristo_KDFTEST_GOMEZ);
 };
 
 FUNC VOID  KDF_402_Corristo_KDFTEST_NO()
 {
-	AI_Output (other, self,"KDF_402_Corristo_KDFTEST_NO_Info_15_01"); //Нет.
-	AI_Output (self, other,"KDF_402_Corristo_KDFTEST_NO_Info_14_02"); //Хм...
-	AI_Output (self, other,"KDF_402_Corristo_KDFTEST_NO_Info_14_03"); //Мы не можем принять в свой круг человека, который отрекается от своих поступков.
-	AI_Output (self, other,"KDF_402_Corristo_KDFTEST_NO_Info_14_04"); //Путь мага для тебя закрыт. Ты можешь пойти к стражникам или рудокопам.
+	AI_Output (other, self,"KDF_402_Corristo_KDFTEST_NO_Info_15_01"); //РќРµС‚.
+	AI_Output (self, other,"KDF_402_Corristo_KDFTEST_NO_Info_14_02"); //РҐРј...
+	AI_Output (self, other,"KDF_402_Corristo_KDFTEST_NO_Info_14_03"); //РњС‹ РЅРµ РјРѕР¶РµРј РїСЂРёРЅСЏС‚СЊ РІ СЃРІРѕР№ РєСЂСѓРі С‡РµР»РѕРІРµРєР°, РєРѕС‚РѕСЂС‹Р№ РѕС‚СЂРµРєР°РµС‚СЃСЏ РѕС‚ СЃРІРѕРёС… РїРѕСЃС‚СѓРїРєРѕРІ.
+	AI_Output (self, other,"KDF_402_Corristo_KDFTEST_NO_Info_14_04"); //РџСѓС‚СЊ РјР°РіР° РґР»СЏ С‚РµР±СЏ Р·Р°РєСЂС‹С‚. РўС‹ РјРѕР¶РµС€СЊ РїРѕР№С‚Рё Рє СЃС‚СЂР°Р¶РЅРёРєР°Рј РёР»Рё СЂСѓРґРѕРєРѕРїР°Рј.
 	AI_StopProcessInfos	( self );
 	Npc_ExchangeRoutine (self,"START");
 };
 FUNC VOID  KDF_402_Corristo_KDFTEST_ADANOS()
 {
-	AI_Output (other, self,"KDF_402_Corristo_KDFTEST_ADANOS_Info_15_01"); //Аданос.
-	AI_Output (self, other,"KDF_402_Corristo_KDFTEST_ADANOS_Info_14_02"); //Хм...
-	AI_Output (self, other,"KDF_402_Corristo_KDFTEST_ADANOS_Info_14_03"); //Это неверный ответ. Быть может, твои таланты больше пригодятся стражникам.
+	AI_Output (other, self,"KDF_402_Corristo_KDFTEST_ADANOS_Info_15_01"); //РђРґР°РЅРѕСЃ.
+	AI_Output (self, other,"KDF_402_Corristo_KDFTEST_ADANOS_Info_14_02"); //РҐРј...
+	AI_Output (self, other,"KDF_402_Corristo_KDFTEST_ADANOS_Info_14_03"); //Р­С‚Рѕ РЅРµРІРµСЂРЅС‹Р№ РѕС‚РІРµС‚. Р‘С‹С‚СЊ РјРѕР¶РµС‚, С‚РІРѕРё С‚Р°Р»Р°РЅС‚С‹ Р±РѕР»СЊС€Рµ РїСЂРёРіРѕРґСЏС‚СЃСЏ СЃС‚СЂР°Р¶РЅРёРєР°Рј.
 	AI_StopProcessInfos	( self );
 	Npc_ExchangeRoutine (self,"START");
 };
 FUNC VOID  KDF_402_Corristo_KDFTEST_SLEEPER()
 {
-	AI_Output (other, self,"KDF_402_Corristo_KDFTEST_SLEEPER_Info_15_01"); //Спящий.
-	AI_Output (self, other,"KDF_402_Corristo_KDFTEST_SLEEPER_Info_14_02"); //Хм...
-	AI_Output (self, other,"KDF_402_Corristo_KDFTEST_SLEEPER_Info_14_03"); //Ты слишком много времени провел в лагере на болотах. Может быть, тебе стоит вернуться к ним.
+	AI_Output (other, self,"KDF_402_Corristo_KDFTEST_SLEEPER_Info_15_01"); //РЎРїСЏС‰РёР№.
+	AI_Output (self, other,"KDF_402_Corristo_KDFTEST_SLEEPER_Info_14_02"); //РҐРј...
+	AI_Output (self, other,"KDF_402_Corristo_KDFTEST_SLEEPER_Info_14_03"); //РўС‹ СЃР»РёС€РєРѕРј РјРЅРѕРіРѕ РІСЂРµРјРµРЅРё РїСЂРѕРІРµР» РІ Р»Р°РіРµСЂРµ РЅР° Р±РѕР»РѕС‚Р°С…. РњРѕР¶РµС‚ Р±С‹С‚СЊ, С‚РµР±Рµ СЃС‚РѕРёС‚ РІРµСЂРЅСѓС‚СЊСЃСЏ Рє РЅРёРј.
 	AI_StopProcessInfos	( self );
 	Npc_ExchangeRoutine (self,"START");
 };
 FUNC VOID  KDF_402_Corristo_KDFTEST_INNOS()
 {
-	AI_Output (other, self,"KDF_402_Corristo_KDFTEST_INNOS_Info_15_01"); //Иннос.
-	AI_Output (self, other,"KDF_402_Corristo_KDFTEST_INNOS_Info_14_02"); //Хм...
-	AI_Output (self, other,"KDF_402_Corristo_KDFTEST_INNOS_Info_14_03"); //Назови мне высшую добродетель.
+	AI_Output (other, self,"KDF_402_Corristo_KDFTEST_INNOS_Info_15_01"); //РРЅРЅРѕСЃ.
+	AI_Output (self, other,"KDF_402_Corristo_KDFTEST_INNOS_Info_14_02"); //РҐРј...
+	AI_Output (self, other,"KDF_402_Corristo_KDFTEST_INNOS_Info_14_03"); //РќР°Р·РѕРІРё РјРЅРµ РІС‹СЃС€СѓСЋ РґРѕР±СЂРѕРґРµС‚РµР»СЊ.
 	Corristo_KDFAufnahme = 3;
 	Info_ClearChoices (KDF_402_Corristo_KDFTEST);
-	Info_Addchoice (KDF_402_Corristo_KDFTEST,"Честь воина.",KDF_402_Corristo_KDFTEST_FIGHT); 
-	Info_Addchoice (KDF_402_Corristo_KDFTEST,"Смирение перед силой магии.",KDF_402_Corristo_KDFTEST_DEMUT);
-	Info_Addchoice (KDF_402_Corristo_KDFTEST,"Контроль над телом и духом.",KDF_402_Corristo_KDFTEST_DISZIPLIN); 
-	Info_Addchoice (KDF_402_Corristo_KDFTEST,"Благоговение перед богами.",KDF_402_Corristo_KDFTEST_EHRFURCHT);
+	Info_Addchoice (KDF_402_Corristo_KDFTEST,"Р§РµСЃС‚СЊ РІРѕРёРЅР°.",KDF_402_Corristo_KDFTEST_FIGHT); 
+	Info_Addchoice (KDF_402_Corristo_KDFTEST,"РЎРјРёСЂРµРЅРёРµ РїРµСЂРµРґ СЃРёР»РѕР№ РјР°РіРёРё.",KDF_402_Corristo_KDFTEST_DEMUT);
+	Info_Addchoice (KDF_402_Corristo_KDFTEST,"РљРѕРЅС‚СЂРѕР»СЊ РЅР°Рґ С‚РµР»РѕРј Рё РґСѓС…РѕРј.",KDF_402_Corristo_KDFTEST_DISZIPLIN); 
+	Info_Addchoice (KDF_402_Corristo_KDFTEST,"Р‘Р»Р°РіРѕРіРѕРІРµРЅРёРµ РїРµСЂРµРґ Р±РѕРіР°РјРё.",KDF_402_Corristo_KDFTEST_EHRFURCHT);
 };
 FUNC VOID  KDF_402_Corristo_KDFTEST_GOMEZ()
 {
-	AI_Output (other, self,"KDF_402_Corristo_KDFTEST_GOMEZ_Info_15_01"); //Гомез.
-	AI_Output (self, other,"KDF_402_Corristo_KDFTEST_GOMEZ_Info_14_02"); //Хмм...
-	AI_Output (self, other,"KDF_402_Corristo_KDFTEST_GOMEZ_Info_14_03"); //Я думаю, тебе стоит обратиться к Торусу. Твоя судьба - стать воином.
+	AI_Output (other, self,"KDF_402_Corristo_KDFTEST_GOMEZ_Info_15_01"); //Р“РѕРјРµР·.
+	AI_Output (self, other,"KDF_402_Corristo_KDFTEST_GOMEZ_Info_14_02"); //РҐРјРј...
+	AI_Output (self, other,"KDF_402_Corristo_KDFTEST_GOMEZ_Info_14_03"); //РЇ РґСѓРјР°СЋ, С‚РµР±Рµ СЃС‚РѕРёС‚ РѕР±СЂР°С‚РёС‚СЊСЃСЏ Рє РўРѕСЂСѓСЃСѓ. РўРІРѕСЏ СЃСѓРґСЊР±Р° - СЃС‚Р°С‚СЊ РІРѕРёРЅРѕРј.
 	AI_StopProcessInfos	( self );
 	Npc_ExchangeRoutine (self,"START");
 };
@@ -221,18 +221,18 @@ FUNC VOID  KDF_402_Corristo_KDFTEST_GOMEZ()
 //--------------------------------------------------------------------------
 FUNC VOID  KDF_402_Corristo_KDFTEST_FIGHT()
 {
-	AI_Output (other, self,"KDF_402_Corristo_KDFTEST_FIGHT_Info_15_01"); //Честь воина.
-	AI_Output (self, other,"KDF_402_Corristo_KDFTEST_FIGHT_Info_14_02"); //Хм...
-	AI_Output (self, other,"KDF_402_Corristo_KDFTEST_FIGHT_Info_14_03"); //Я думаю, тебе стоит обратиться к Торусу. Твоя судьба - стать воином.
+	AI_Output (other, self,"KDF_402_Corristo_KDFTEST_FIGHT_Info_15_01"); //Р§РµСЃС‚СЊ РІРѕРёРЅР°.
+	AI_Output (self, other,"KDF_402_Corristo_KDFTEST_FIGHT_Info_14_02"); //РҐРј...
+	AI_Output (self, other,"KDF_402_Corristo_KDFTEST_FIGHT_Info_14_03"); //РЇ РґСѓРјР°СЋ, С‚РµР±Рµ СЃС‚РѕРёС‚ РѕР±СЂР°С‚РёС‚СЊСЃСЏ Рє РўРѕСЂСѓСЃСѓ. РўРІРѕСЏ СЃСѓРґСЊР±Р° - СЃС‚Р°С‚СЊ РІРѕРёРЅРѕРј.
 	AI_StopProcessInfos	( self );
 
 };
 FUNC VOID  KDF_402_Corristo_KDFTEST_DEMUT()
 {
-	AI_Output (other, self,"KDF_402_Corristo_KDFTEST_DEMUT_Info_15_01"); //Смирение перед силой магии.
-	AI_Output (self, other,"KDF_402_Corristo_KDFTEST_DEMUT_Info_14_02"); //Хм...
-	AI_Output (self, other,"KDF_402_Corristo_KDFTEST_DEMUT_Info_14_03"); //Твои ответы меня порадовали. Ты достоин стать моим учеником.
-	AI_Output (self, other,"KDF_402_Corristo_KDFTEST_DEMUT_Info_14_04"); //Пойдем в Зал Магии. Там ты принесешь древнюю клятву магов. 
+	AI_Output (other, self,"KDF_402_Corristo_KDFTEST_DEMUT_Info_15_01"); //РЎРјРёСЂРµРЅРёРµ РїРµСЂРµРґ СЃРёР»РѕР№ РјР°РіРёРё.
+	AI_Output (self, other,"KDF_402_Corristo_KDFTEST_DEMUT_Info_14_02"); //РҐРј...
+	AI_Output (self, other,"KDF_402_Corristo_KDFTEST_DEMUT_Info_14_03"); //РўРІРѕРё РѕС‚РІРµС‚С‹ РјРµРЅСЏ РїРѕСЂР°РґРѕРІР°Р»Рё. РўС‹ РґРѕСЃС‚РѕРёРЅ СЃС‚Р°С‚СЊ РјРѕРёРј СѓС‡РµРЅРёРєРѕРј.
+	AI_Output (self, other,"KDF_402_Corristo_KDFTEST_DEMUT_Info_14_04"); //РџРѕР№РґРµРј РІ Р—Р°Р» РњР°РіРёРё. РўР°Рј С‚С‹ РїСЂРёРЅРµСЃРµС€СЊ РґСЂРµРІРЅСЋСЋ РєР»СЏС‚РІСѓ РјР°РіРѕРІ. 
 
 	AI_StopProcessInfos	( self );
 	Corristo_KDFAufnahme = 4;
@@ -240,10 +240,10 @@ FUNC VOID  KDF_402_Corristo_KDFTEST_DEMUT()
 };
 FUNC VOID  KDF_402_Corristo_KDFTEST_DISZIPLIN()
 {
-	AI_Output (other, self,"KDF_402_Corristo_KDFTEST_DISZIPLIN_Info_15_01"); //Контроль над телом и духом.
-	AI_Output (self, other,"KDF_402_Corristo_KDFTEST_DISZIPLIN_Info_14_02"); //Хм...
-	AI_Output (self, other,"KDF_402_Corristo_KDFTEST_DISZIPLIN_Info_14_03"); //Твои ответы меня порадовали. Ты достоин стать моим учеником.
-	AI_Output (self, other,"KDF_402_Corristo_KDFTEST_DISZIPLIN_Info_14_04"); //Пойдем в Зал Магии. Там ты принесешь древнюю клятву магов. 
+	AI_Output (other, self,"KDF_402_Corristo_KDFTEST_DISZIPLIN_Info_15_01"); //РљРѕРЅС‚СЂРѕР»СЊ РЅР°Рґ С‚РµР»РѕРј Рё РґСѓС…РѕРј.
+	AI_Output (self, other,"KDF_402_Corristo_KDFTEST_DISZIPLIN_Info_14_02"); //РҐРј...
+	AI_Output (self, other,"KDF_402_Corristo_KDFTEST_DISZIPLIN_Info_14_03"); //РўРІРѕРё РѕС‚РІРµС‚С‹ РјРµРЅСЏ РїРѕСЂР°РґРѕРІР°Р»Рё. РўС‹ РґРѕСЃС‚РѕРёРЅ СЃС‚Р°С‚СЊ РјРѕРёРј СѓС‡РµРЅРёРєРѕРј.
+	AI_Output (self, other,"KDF_402_Corristo_KDFTEST_DISZIPLIN_Info_14_04"); //РџРѕР№РґРµРј РІ Р—Р°Р» РњР°РіРёРё. РўР°Рј С‚С‹ РїСЂРёРЅРµСЃРµС€СЊ РґСЂРµРІРЅСЋСЋ РєР»СЏС‚РІСѓ РјР°РіРѕРІ. 
 	Corristo_KDFAufnahme = 4;
 	AI_StopProcessInfos	( self );
 	B_Story_Feueraufnahme();
@@ -251,10 +251,10 @@ FUNC VOID  KDF_402_Corristo_KDFTEST_DISZIPLIN()
 };
 FUNC VOID  KDF_402_Corristo_KDFTEST_EHRFURCHT()
 {
-	AI_Output (other, self,"KDF_402_Corristo_KDFTEST_EHRFURCHT_Info_15_01"); //Благоговение перед богами.
-	AI_Output (self, other,"KDF_402_Corristo_KDFTEST_EHRFURCHT_Info_14_02"); //Хм...
-	AI_Output (self, other,"KDF_402_Corristo_KDFTEST_EHRFURCHT_Info_14_03"); //Твои ответы меня порадовали. Ты достоин стать моим учеником.
-	AI_Output (self, other,"KDF_402_Corristo_KDFTEST_EHRFURCHT_Info_14_04"); //Пойдем в Зал Магии. Там ты принесешь древнюю клятву магов. 
+	AI_Output (other, self,"KDF_402_Corristo_KDFTEST_EHRFURCHT_Info_15_01"); //Р‘Р»Р°РіРѕРіРѕРІРµРЅРёРµ РїРµСЂРµРґ Р±РѕРіР°РјРё.
+	AI_Output (self, other,"KDF_402_Corristo_KDFTEST_EHRFURCHT_Info_14_02"); //РҐРј...
+	AI_Output (self, other,"KDF_402_Corristo_KDFTEST_EHRFURCHT_Info_14_03"); //РўРІРѕРё РѕС‚РІРµС‚С‹ РјРµРЅСЏ РїРѕСЂР°РґРѕРІР°Р»Рё. РўС‹ РґРѕСЃС‚РѕРёРЅ СЃС‚Р°С‚СЊ РјРѕРёРј СѓС‡РµРЅРёРєРѕРј.
+	AI_Output (self, other,"KDF_402_Corristo_KDFTEST_EHRFURCHT_Info_14_04"); //РџРѕР№РґРµРј РІ Р—Р°Р» РњР°РіРёРё. РўР°Рј С‚С‹ РїСЂРёРЅРµСЃРµС€СЊ РґСЂРµРІРЅСЋСЋ РєР»СЏС‚РІСѓ РјР°РіРѕРІ. 
 	Corristo_KDFAufnahme = 4;
 	AI_StopProcessInfos	( self );
 	B_Story_Feueraufnahme();
@@ -287,17 +287,17 @@ func void  KDF_402_Corristo_AUFNAHME_Info()
 	AI_UnequipWeapons (hero); 
 	AI_SetWalkmode (hero,NPC_WALK); 
 	AI_GotoNpc (hero,self);
-	AI_Output  (self, other,"KDF_402_Corristo_AUFNAHME_Info_14_01"); //Мы собрались здесь, чтобы принять клятву нового служителя Огня.
-	AI_Output  (self, other,"KDF_402_Corristo_AUFNAHME_Info_14_02"); //Принеси же клятву Огня.
+	AI_Output  (self, other,"KDF_402_Corristo_AUFNAHME_Info_14_01"); //РњС‹ СЃРѕР±СЂР°Р»РёСЃСЊ Р·РґРµСЃСЊ, С‡С‚РѕР±С‹ РїСЂРёРЅСЏС‚СЊ РєР»СЏС‚РІСѓ РЅРѕРІРѕРіРѕ СЃР»СѓР¶РёС‚РµР»СЏ РћРіРЅСЏ.
+	AI_Output  (self, other,"KDF_402_Corristo_AUFNAHME_Info_14_02"); //РџСЂРёРЅРµСЃРё Р¶Рµ РєР»СЏС‚РІСѓ РћРіРЅСЏ.
 	Snd_Play   ("howling_01");
-	AI_Output  (self, other,"KDF_402_Corristo_AUFNAHME_Info_14_03"); //Я клянусь божественной властью...
-	AI_Output  (other, self,"KDF_402_Corristo_AUFNAHME_Info_15_04"); //Я клянусь божественной властью...
-	AI_Output  (self, other,"KDF_402_Corristo_AUFNAHME_Info_14_05"); //...и силой священного неугасимого Огня...
-	AI_Output  (other, self,"KDF_402_Corristo_AUFNAHME_Info_15_06"); //...и силой священного неугасимого Огня...
-	AI_Output  (self, other,"KDF_402_Corristo_AUFNAHME_Info_14_07"); //... что с этого дня мои знания и дела будут навеки едины с пламенем...
-	AI_Output  (other, self,"KDF_402_Corristo_AUFNAHME_Info_15_08"); //... что с этого дня мои знания и дела будут навеки едины с пламенем...
-	AI_Output  (self, other,"KDF_402_Corristo_AUFNAHME_Info_14_09"); //...пока мое тело не вернется в царство Белиара и не угаснет огонь моей жизни.
-	AI_Output  (other, self,"KDF_402_Corristo_AUFNAHME_Info_15_10"); //...пока мое тело не вернется в царство Белиара и не угаснет огонь моей жизни.
+	AI_Output  (self, other,"KDF_402_Corristo_AUFNAHME_Info_14_03"); //РЇ РєР»СЏРЅСѓСЃСЊ Р±РѕР¶РµСЃС‚РІРµРЅРЅРѕР№ РІР»Р°СЃС‚СЊСЋ...
+	AI_Output  (other, self,"KDF_402_Corristo_AUFNAHME_Info_15_04"); //РЇ РєР»СЏРЅСѓСЃСЊ Р±РѕР¶РµСЃС‚РІРµРЅРЅРѕР№ РІР»Р°СЃС‚СЊСЋ...
+	AI_Output  (self, other,"KDF_402_Corristo_AUFNAHME_Info_14_05"); //...Рё СЃРёР»РѕР№ СЃРІСЏС‰РµРЅРЅРѕРіРѕ РЅРµСѓРіР°СЃРёРјРѕРіРѕ РћРіРЅСЏ...
+	AI_Output  (other, self,"KDF_402_Corristo_AUFNAHME_Info_15_06"); //...Рё СЃРёР»РѕР№ СЃРІСЏС‰РµРЅРЅРѕРіРѕ РЅРµСѓРіР°СЃРёРјРѕРіРѕ РћРіРЅСЏ...
+	AI_Output  (self, other,"KDF_402_Corristo_AUFNAHME_Info_14_07"); //... С‡С‚Рѕ СЃ СЌС‚РѕРіРѕ РґРЅСЏ РјРѕРё Р·РЅР°РЅРёСЏ Рё РґРµР»Р° Р±СѓРґСѓС‚ РЅР°РІРµРєРё РµРґРёРЅС‹ СЃ РїР»Р°РјРµРЅРµРј...
+	AI_Output  (other, self,"KDF_402_Corristo_AUFNAHME_Info_15_08"); //... С‡С‚Рѕ СЃ СЌС‚РѕРіРѕ РґРЅСЏ РјРѕРё Р·РЅР°РЅРёСЏ Рё РґРµР»Р° Р±СѓРґСѓС‚ РЅР°РІРµРєРё РµРґРёРЅС‹ СЃ РїР»Р°РјРµРЅРµРј...
+	AI_Output  (self, other,"KDF_402_Corristo_AUFNAHME_Info_14_09"); //...РїРѕРєР° РјРѕРµ С‚РµР»Рѕ РЅРµ РІРµСЂРЅРµС‚СЃСЏ РІ С†Р°СЂСЃС‚РІРѕ Р‘РµР»РёР°СЂР° Рё РЅРµ СѓРіР°СЃРЅРµС‚ РѕРіРѕРЅСЊ РјРѕРµР№ Р¶РёР·РЅРё.
+	AI_Output  (other, self,"KDF_402_Corristo_AUFNAHME_Info_15_10"); //...РїРѕРєР° РјРѕРµ С‚РµР»Рѕ РЅРµ РІРµСЂРЅРµС‚СЃСЏ РІ С†Р°СЂСЃС‚РІРѕ Р‘РµР»РёР°СЂР° Рё РЅРµ СѓРіР°СЃРЅРµС‚ РѕРіРѕРЅСЊ РјРѕРµР№ Р¶РёР·РЅРё.
 	AI_StopProcessInfos	( self );
 };
 instance KDF_402_Corristo_ROBE (C_INFO)
@@ -326,8 +326,8 @@ func void  KDF_402_Corristo_ROBE_Info()
 	B_GiveInvItems      (self, hero, ItAmArrow, 1);
 	Npc_RemoveInvItem	(hero, ItAmArrow);
 	
-	AI_Output			(self, other,"KDF_402_Corristo_ROBE_Info_14_01"); //Этой клятвой ты связал свою жизнь с неугасимым Огнем.
-	AI_Output			(self, other,"KDF_402_Corristo_ROBE_Info_14_02"); //Возьми это одеяние и носи его в знак вечного союза.
+	AI_Output			(self, other,"KDF_402_Corristo_ROBE_Info_14_01"); //Р­С‚РѕР№ РєР»СЏС‚РІРѕР№ С‚С‹ СЃРІСЏР·Р°Р» СЃРІРѕСЋ Р¶РёР·РЅСЊ СЃ РЅРµСѓРіР°СЃРёРјС‹Рј РћРіРЅРµРј.
+	AI_Output			(self, other,"KDF_402_Corristo_ROBE_Info_14_02"); //Р’РѕР·СЊРјРё СЌС‚Рѕ РѕРґРµСЏРЅРёРµ Рё РЅРѕСЃРё РµРіРѕ РІ Р·РЅР°Рє РІРµС‡РЅРѕРіРѕ СЃРѕСЋР·Р°.
 	AI_StopProcessInfos	(self);
 	AI_EquipBestArmor	(hero);
 	AI_UnequipWeapons	(hero);
@@ -336,9 +336,9 @@ func void  KDF_402_Corristo_ROBE_Info()
 	
 	hero.attribute [ATR_HITPOINTS] = hero.attribute [ATR_HITPOINTS_MAX];
 
-	B_LogEntry		(GE_BecomeFiremage,	"Я прошел испытание и принес клятву Огня. Теперь я могу носить одеяние магов Огня!");
+	B_LogEntry		(GE_BecomeFiremage,	"РЇ РїСЂРѕС€РµР» РёСЃРїС‹С‚Р°РЅРёРµ Рё РїСЂРёРЅРµСЃ РєР»СЏС‚РІСѓ РћРіРЅСЏ. РўРµРїРµСЂСЊ СЏ РјРѕРіСѓ РЅРѕСЃРёС‚СЊ РѕРґРµСЏРЅРёРµ РјР°РіРѕРІ РћРіРЅСЏ!");
 	Log_CreateTopic	(GE_TeacherOC,LOG_NOTE);
-	B_LogEntry		(GE_TeacherOC,"Корристо может посвятить меня в тайны Кругов магии и помочь мне повысить мою магическую силу. Я смогу найти его в доме магов Огня.");	
+	B_LogEntry		(GE_TeacherOC,"РљРѕСЂСЂРёСЃС‚Рѕ РјРѕР¶РµС‚ РїРѕСЃРІСЏС‚РёС‚СЊ РјРµРЅСЏ РІ С‚Р°Р№РЅС‹ РљСЂСѓРіРѕРІ РјР°РіРёРё Рё РїРѕРјРѕС‡СЊ РјРЅРµ РїРѕРІС‹СЃРёС‚СЊ РјРѕСЋ РјР°РіРёС‡РµСЃРєСѓСЋ СЃРёР»Сѓ. РЇ СЃРјРѕРіСѓ РЅР°Р№С‚Рё РµРіРѕ РІ РґРѕРјРµ РјР°РіРѕРІ РћРіРЅСЏ.");	
 };
 //--------------------------------------------------------------------------
 // 							MANA KAUFEN
@@ -352,7 +352,7 @@ instance  KDF_402_Corristo_MANA (C_INFO)
 	information		= KDF_402_Corristo_MANA_Info;
 	important		= 0;
 	permanent		= 1;
-	description		= "Я хочу увеличить свою магическую силу."; 
+	description		= "РЇ С…РѕС‡Сѓ СѓРІРµР»РёС‡РёС‚СЊ СЃРІРѕСЋ РјР°РіРёС‡РµСЃРєСѓСЋ СЃРёР»Сѓ."; 
 };
 
 FUNC int  KDF_402_Corristo_MANA_Condition()
@@ -365,8 +365,8 @@ FUNC int  KDF_402_Corristo_MANA_Condition()
 };
 FUNC void  KDF_402_Corristo_MANA_Info()
 {
-	AI_Output (other, self,"KDF_402_Corristo_MANA_Info_15_01"); //Я хочу увеличить свою магическую силу.
-	AI_Output (self, other,"KDF_402_Corristo_MANA_Info_14_02"); //Я могу помочь тебе в этом. Как ты будешь использовать ее, зависит только от тебя.
+	AI_Output (other, self,"KDF_402_Corristo_MANA_Info_15_01"); //РЇ С…РѕС‡Сѓ СѓРІРµР»РёС‡РёС‚СЊ СЃРІРѕСЋ РјР°РіРёС‡РµСЃРєСѓСЋ СЃРёР»Сѓ.
+	AI_Output (self, other,"KDF_402_Corristo_MANA_Info_14_02"); //РЇ РјРѕРіСѓ РїРѕРјРѕС‡СЊ С‚РµР±Рµ РІ СЌС‚РѕРј. РљР°Рє С‚С‹ Р±СѓРґРµС€СЊ РёСЃРїРѕР»СЊР·РѕРІР°С‚СЊ РµРµ, Р·Р°РІРёСЃРёС‚ С‚РѕР»СЊРєРѕ РѕС‚ С‚РµР±СЏ.
 	
 	Info_ClearChoices	(KDF_402_Corristo_MANA);
 	Info_AddChoice		(KDF_402_Corristo_MANA,DIALOG_BACK	,KDF_402_Corristo_MANA_BACK);
@@ -398,7 +398,7 @@ func void KDF_402_Corristo_MANA_MAN_5()
 
 };
 //--------------------------------------------------------------------------
-// 							ERLДUTERUNG DER KREISE
+// 							ERLР”UTERUNG DER KREISE
 //--------------------------------------------------------------------------
 // ***************************** INFOS ****************************************//
 
@@ -409,7 +409,7 @@ instance  KDF_402_Corristo_EXPLAINCIRCLES (C_INFO)
 	information		= KDF_402_Corristo_EXPLAINCIRCLES_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Объясни мне, в чем смысл магических Кругов?"; 
+	description		= "РћР±СЉСЏСЃРЅРё РјРЅРµ, РІ С‡РµРј СЃРјС‹СЃР» РјР°РіРёС‡РµСЃРєРёС… РљСЂСѓРіРѕРІ?"; 
 };
 
 FUNC int  KDF_402_Corristo_EXPLAINCIRCLES_Condition()
@@ -421,14 +421,14 @@ FUNC int  KDF_402_Corristo_EXPLAINCIRCLES_Condition()
 };
 func void  KDF_402_Corristo_EXPLAINCIRCLES_Info()
 {
-	AI_Output (other, self,"KDF_402_Corristo_EXPLAINCIRCLES_Info_15_01"); //Объясни мне, в чем смысл магических Кругов?
-	AI_Output (self, other,"KDF_402_Corristo_EXPLAINCIRCLES_Info_14_02"); //Как пожелаешь. Круги символизируют глубину твоих магических знаний.  
-	AI_Output (self, other,"KDF_402_Corristo_EXPLAINCIRCLES_Info_14_03"); //Они влияют на твою способность изучать и использовать новые заклинания. 
-	AI_Output (self, other,"KDF_402_Corristo_EXPLAINCIRCLES_Info_14_04"); //Прежде чем изучать следующий Круг, ты должен полностью освоить знания предыдущего.
-	AI_Output (self, other,"KDF_402_Corristo_EXPLAINCIRCLES_Info_14_05"); //Чтобы изучить высшие Круги, тебе потребуется много времени и опыта. 
-	AI_Output (self, other,"KDF_402_Corristo_EXPLAINCIRCLES_Info_14_06"); //Но твое усердие в их изучении будет вознаграждено новыми, все более могущественными заклинаниями. Но суть Кругов магии не только в этом.
-	AI_Output (self, other,"KDF_402_Corristo_EXPLAINCIRCLES_Info_14_07"); //Они являются частью жизни любого мага. Они навсегда останутся с тобой. Прими их словно часть самого себя.
-	AI_Output (self, other,"KDF_402_Corristo_EXPLAINCIRCLES_Info_14_08"); //Если ты поймешь, в чем заключается их сила, ты поймешь, какая сила скрывается в тебе самом.
+	AI_Output (other, self,"KDF_402_Corristo_EXPLAINCIRCLES_Info_15_01"); //РћР±СЉСЏСЃРЅРё РјРЅРµ, РІ С‡РµРј СЃРјС‹СЃР» РјР°РіРёС‡РµСЃРєРёС… РљСЂСѓРіРѕРІ?
+	AI_Output (self, other,"KDF_402_Corristo_EXPLAINCIRCLES_Info_14_02"); //РљР°Рє РїРѕР¶РµР»Р°РµС€СЊ. РљСЂСѓРіРё СЃРёРјРІРѕР»РёР·РёСЂСѓСЋС‚ РіР»СѓР±РёРЅСѓ С‚РІРѕРёС… РјР°РіРёС‡РµСЃРєРёС… Р·РЅР°РЅРёР№.  
+	AI_Output (self, other,"KDF_402_Corristo_EXPLAINCIRCLES_Info_14_03"); //РћРЅРё РІР»РёСЏСЋС‚ РЅР° С‚РІРѕСЋ СЃРїРѕСЃРѕР±РЅРѕСЃС‚СЊ РёР·СѓС‡Р°С‚СЊ Рё РёСЃРїРѕР»СЊР·РѕРІР°С‚СЊ РЅРѕРІС‹Рµ Р·Р°РєР»РёРЅР°РЅРёСЏ. 
+	AI_Output (self, other,"KDF_402_Corristo_EXPLAINCIRCLES_Info_14_04"); //РџСЂРµР¶РґРµ С‡РµРј РёР·СѓС‡Р°С‚СЊ СЃР»РµРґСѓСЋС‰РёР№ РљСЂСѓРі, С‚С‹ РґРѕР»Р¶РµРЅ РїРѕР»РЅРѕСЃС‚СЊСЋ РѕСЃРІРѕРёС‚СЊ Р·РЅР°РЅРёСЏ РїСЂРµРґС‹РґСѓС‰РµРіРѕ.
+	AI_Output (self, other,"KDF_402_Corristo_EXPLAINCIRCLES_Info_14_05"); //Р§С‚РѕР±С‹ РёР·СѓС‡РёС‚СЊ РІС‹СЃС€РёРµ РљСЂСѓРіРё, С‚РµР±Рµ РїРѕС‚СЂРµР±СѓРµС‚СЃСЏ РјРЅРѕРіРѕ РІСЂРµРјРµРЅРё Рё РѕРїС‹С‚Р°. 
+	AI_Output (self, other,"KDF_402_Corristo_EXPLAINCIRCLES_Info_14_06"); //РќРѕ С‚РІРѕРµ СѓСЃРµСЂРґРёРµ РІ РёС… РёР·СѓС‡РµРЅРёРё Р±СѓРґРµС‚ РІРѕР·РЅР°РіСЂР°Р¶РґРµРЅРѕ РЅРѕРІС‹РјРё, РІСЃРµ Р±РѕР»РµРµ РјРѕРіСѓС‰РµСЃС‚РІРµРЅРЅС‹РјРё Р·Р°РєР»РёРЅР°РЅРёСЏРјРё. РќРѕ СЃСѓС‚СЊ РљСЂСѓРіРѕРІ РјР°РіРёРё РЅРµ С‚РѕР»СЊРєРѕ РІ СЌС‚РѕРј.
+	AI_Output (self, other,"KDF_402_Corristo_EXPLAINCIRCLES_Info_14_07"); //РћРЅРё СЏРІР»СЏСЋС‚СЃСЏ С‡Р°СЃС‚СЊСЋ Р¶РёР·РЅРё Р»СЋР±РѕРіРѕ РјР°РіР°. РћРЅРё РЅР°РІСЃРµРіРґР° РѕСЃС‚Р°РЅСѓС‚СЃСЏ СЃ С‚РѕР±РѕР№. РџСЂРёРјРё РёС… СЃР»РѕРІРЅРѕ С‡Р°СЃС‚СЊ СЃР°РјРѕРіРѕ СЃРµР±СЏ.
+	AI_Output (self, other,"KDF_402_Corristo_EXPLAINCIRCLES_Info_14_08"); //Р•СЃР»Рё С‚С‹ РїРѕР№РјРµС€СЊ, РІ С‡РµРј Р·Р°РєР»СЋС‡Р°РµС‚СЃСЏ РёС… СЃРёР»Р°, С‚С‹ РїРѕР№РјРµС€СЊ, РєР°РєР°СЏ СЃРёР»Р° СЃРєСЂС‹РІР°РµС‚СЃСЏ РІ С‚РµР±Рµ СЃР°РјРѕРј.
 };  
 //--------------------------------------------------------------------------
 // 							DER ERSTE KREIS
@@ -455,18 +455,18 @@ FUNC int  KDF_402_Corristo_KREIS1_Condition()
 };
 FUNC void  KDF_402_Corristo_KREIS1_Info()
 {
-	AI_Output (other, self,"KDF_402_Corristo_KREIS1_Info_15_01"); //Я готов приобщиться к Первому Кругу магии.
+	AI_Output (other, self,"KDF_402_Corristo_KREIS1_Info_15_01"); //РЇ РіРѕС‚РѕРІ РїСЂРёРѕР±С‰РёС‚СЊСЃСЏ Рє РџРµСЂРІРѕРјСѓ РљСЂСѓРіСѓ РјР°РіРёРё.
 	
 	if (B_GiveSkill(other,NPC_TALENT_MAGE , 1, LPCOST_TALENT_MAGE_1))
 	{
-		AI_Output (self, other,"KDF_402_Corristo_KREIS1_Info_14_02"); //Вступление в Первый Круг магии даст тебе умение использовать магические руны.
-		AI_Output (self, other,"KDF_402_Corristo_KREIS1_Info_14_03"); //Каждая руна содержит в себе одно магическое заклинание.
-		AI_Output (self, other,"KDF_402_Corristo_KREIS1_Info_14_04"); //Используя свою магическую силу, ты сможешь прочитать это заклинание.
-		AI_Output (self, other,"KDF_402_Corristo_KREIS1_Info_14_05"); //Но в отличие от магических свитков, которые теряют свою силу после первого прочтения, заклинание руны можно читать снова и снова, и оно не иссякнет.  
-		AI_Output (self, other,"KDF_402_Corristo_KREIS1_Info_14_06"); //Каждая руна является источником магической силы, которая может быть задействована в любое время.  
-		AI_Output (self, other,"KDF_402_Corristo_KREIS1_Info_14_07"); //Как я уже сказал, при прочтении заклинания руны или свитка будет расходоваться твоя магическая сила.
-		AI_Output (self, other,"KDF_402_Corristo_KREIS1_Info_14_08"); //Каждый новый Круг, который ты изучишь, будет давать тебе возможность читать заклинания более сложных рун.
-		AI_Output (self, other,"KDF_402_Corristo_KREIS1_Info_14_09"); //Используй силу рун, чтобы познать самого себя.
+		AI_Output (self, other,"KDF_402_Corristo_KREIS1_Info_14_02"); //Р’СЃС‚СѓРїР»РµРЅРёРµ РІ РџРµСЂРІС‹Р№ РљСЂСѓРі РјР°РіРёРё РґР°СЃС‚ С‚РµР±Рµ СѓРјРµРЅРёРµ РёСЃРїРѕР»СЊР·РѕРІР°С‚СЊ РјР°РіРёС‡РµСЃРєРёРµ СЂСѓРЅС‹.
+		AI_Output (self, other,"KDF_402_Corristo_KREIS1_Info_14_03"); //РљР°Р¶РґР°СЏ СЂСѓРЅР° СЃРѕРґРµСЂР¶РёС‚ РІ СЃРµР±Рµ РѕРґРЅРѕ РјР°РіРёС‡РµСЃРєРѕРµ Р·Р°РєР»РёРЅР°РЅРёРµ.
+		AI_Output (self, other,"KDF_402_Corristo_KREIS1_Info_14_04"); //РСЃРїРѕР»СЊР·СѓСЏ СЃРІРѕСЋ РјР°РіРёС‡РµСЃРєСѓСЋ СЃРёР»Сѓ, С‚С‹ СЃРјРѕР¶РµС€СЊ РїСЂРѕС‡РёС‚Р°С‚СЊ СЌС‚Рѕ Р·Р°РєР»РёРЅР°РЅРёРµ.
+		AI_Output (self, other,"KDF_402_Corristo_KREIS1_Info_14_05"); //РќРѕ РІ РѕС‚Р»РёС‡РёРµ РѕС‚ РјР°РіРёС‡РµСЃРєРёС… СЃРІРёС‚РєРѕРІ, РєРѕС‚РѕСЂС‹Рµ С‚РµСЂСЏСЋС‚ СЃРІРѕСЋ СЃРёР»Сѓ РїРѕСЃР»Рµ РїРµСЂРІРѕРіРѕ РїСЂРѕС‡С‚РµРЅРёСЏ, Р·Р°РєР»РёРЅР°РЅРёРµ СЂСѓРЅС‹ РјРѕР¶РЅРѕ С‡РёС‚Р°С‚СЊ СЃРЅРѕРІР° Рё СЃРЅРѕРІР°, Рё РѕРЅРѕ РЅРµ РёСЃСЃСЏРєРЅРµС‚.  
+		AI_Output (self, other,"KDF_402_Corristo_KREIS1_Info_14_06"); //РљР°Р¶РґР°СЏ СЂСѓРЅР° СЏРІР»СЏРµС‚СЃСЏ РёСЃС‚РѕС‡РЅРёРєРѕРј РјР°РіРёС‡РµСЃРєРѕР№ СЃРёР»С‹, РєРѕС‚РѕСЂР°СЏ РјРѕР¶РµС‚ Р±С‹С‚СЊ Р·Р°РґРµР№СЃС‚РІРѕРІР°РЅР° РІ Р»СЋР±РѕРµ РІСЂРµРјСЏ.  
+		AI_Output (self, other,"KDF_402_Corristo_KREIS1_Info_14_07"); //РљР°Рє СЏ СѓР¶Рµ СЃРєР°Р·Р°Р», РїСЂРё РїСЂРѕС‡С‚РµРЅРёРё Р·Р°РєР»РёРЅР°РЅРёСЏ СЂСѓРЅС‹ РёР»Рё СЃРІРёС‚РєР° Р±СѓРґРµС‚ СЂР°СЃС…РѕРґРѕРІР°С‚СЊСЃСЏ С‚РІРѕСЏ РјР°РіРёС‡РµСЃРєР°СЏ СЃРёР»Р°.
+		AI_Output (self, other,"KDF_402_Corristo_KREIS1_Info_14_08"); //РљР°Р¶РґС‹Р№ РЅРѕРІС‹Р№ РљСЂСѓРі, РєРѕС‚РѕСЂС‹Р№ С‚С‹ РёР·СѓС‡РёС€СЊ, Р±СѓРґРµС‚ РґР°РІР°С‚СЊ С‚РµР±Рµ РІРѕР·РјРѕР¶РЅРѕСЃС‚СЊ С‡РёС‚Р°С‚СЊ Р·Р°РєР»РёРЅР°РЅРёСЏ Р±РѕР»РµРµ СЃР»РѕР¶РЅС‹С… СЂСѓРЅ.
+		AI_Output (self, other,"KDF_402_Corristo_KREIS1_Info_14_09"); //РСЃРїРѕР»СЊР·СѓР№ СЃРёР»Сѓ СЂСѓРЅ, С‡С‚РѕР±С‹ РїРѕР·РЅР°С‚СЊ СЃР°РјРѕРіРѕ СЃРµР±СЏ.
 		KDF_402_Corristo_KREIS1.permanent	= 0;
 	};
 };  
@@ -495,17 +495,17 @@ FUNC int  KDF_402_Corristo_KREIS2_Condition()
 };
 FUNC void  KDF_402_Corristo_KREIS2_Info()
 {
-	AI_Output (other, self,"KDF_402_Corristo_KREIS2_Info_15_01"); //Я готов обрести знания Второго Круга.
+	AI_Output (other, self,"KDF_402_Corristo_KREIS2_Info_15_01"); //РЇ РіРѕС‚РѕРІ РѕР±СЂРµСЃС‚Рё Р·РЅР°РЅРёСЏ Р’С‚РѕСЂРѕРіРѕ РљСЂСѓРіР°.
 	
 	if (B_GiveSkill(other,NPC_TALENT_MAGE , 2, LPCOST_TALENT_MAGE_2))
 	{
-		AI_Output (self, other,"KDF_402_Corristo_KREIS2_Info_14_02"); //Ты уже научился читать заклинания рун. Пришло время углубить твои знания.
-		AI_Output (self, other,"KDF_402_Corristo_KREIS2_Info_14_03"); //Второй Круг магии даст тебе возможность читать сильные боевые заклинания, но самое главное, ты сможешь исцелять болезни. 
-		AI_Output (self, other,"KDF_402_Corristo_KREIS2_Info_14_04"); //Но тебе предстоит еще многому научиться, чтобы познать истинные тайны магии. 
-		AI_Output (self, other,"KDF_402_Corristo_KREIS2_Info_14_05"); //Ты уже знаешь, что можешь использовать любую руну, пока на это хватит твоей личной силы.
-		AI_Output (self, other,"KDF_402_Corristo_KREIS2_Info_14_06"); //Но это крайний случай, и он не всегда оправдан. Тебе дана сила, которая может приносить смерть и разрушение.   
-		AI_Output (self, other,"KDF_402_Corristo_KREIS2_Info_14_07"); //Истинный маг использует ее лишь тогда, когда это действительно необходимо.
-		AI_Output (self, other,"KDF_402_Corristo_KREIS2_Info_14_08"); //Внимательно следи за тем, что происходит вокруг, и ты сможешь познать силу рун.   
+		AI_Output (self, other,"KDF_402_Corristo_KREIS2_Info_14_02"); //РўС‹ СѓР¶Рµ РЅР°СѓС‡РёР»СЃСЏ С‡РёС‚Р°С‚СЊ Р·Р°РєР»РёРЅР°РЅРёСЏ СЂСѓРЅ. РџСЂРёС€Р»Рѕ РІСЂРµРјСЏ СѓРіР»СѓР±РёС‚СЊ С‚РІРѕРё Р·РЅР°РЅРёСЏ.
+		AI_Output (self, other,"KDF_402_Corristo_KREIS2_Info_14_03"); //Р’С‚РѕСЂРѕР№ РљСЂСѓРі РјР°РіРёРё РґР°СЃС‚ С‚РµР±Рµ РІРѕР·РјРѕР¶РЅРѕСЃС‚СЊ С‡РёС‚Р°С‚СЊ СЃРёР»СЊРЅС‹Рµ Р±РѕРµРІС‹Рµ Р·Р°РєР»РёРЅР°РЅРёСЏ, РЅРѕ СЃР°РјРѕРµ РіР»Р°РІРЅРѕРµ, С‚С‹ СЃРјРѕР¶РµС€СЊ РёСЃС†РµР»СЏС‚СЊ Р±РѕР»РµР·РЅРё. 
+		AI_Output (self, other,"KDF_402_Corristo_KREIS2_Info_14_04"); //РќРѕ С‚РµР±Рµ РїСЂРµРґСЃС‚РѕРёС‚ РµС‰Рµ РјРЅРѕРіРѕРјСѓ РЅР°СѓС‡РёС‚СЊСЃСЏ, С‡С‚РѕР±С‹ РїРѕР·РЅР°С‚СЊ РёСЃС‚РёРЅРЅС‹Рµ С‚Р°Р№РЅС‹ РјР°РіРёРё. 
+		AI_Output (self, other,"KDF_402_Corristo_KREIS2_Info_14_05"); //РўС‹ СѓР¶Рµ Р·РЅР°РµС€СЊ, С‡С‚Рѕ РјРѕР¶РµС€СЊ РёСЃРїРѕР»СЊР·РѕРІР°С‚СЊ Р»СЋР±СѓСЋ СЂСѓРЅСѓ, РїРѕРєР° РЅР° СЌС‚Рѕ С…РІР°С‚РёС‚ С‚РІРѕРµР№ Р»РёС‡РЅРѕР№ СЃРёР»С‹.
+		AI_Output (self, other,"KDF_402_Corristo_KREIS2_Info_14_06"); //РќРѕ СЌС‚Рѕ РєСЂР°Р№РЅРёР№ СЃР»СѓС‡Р°Р№, Рё РѕРЅ РЅРµ РІСЃРµРіРґР° РѕРїСЂР°РІРґР°РЅ. РўРµР±Рµ РґР°РЅР° СЃРёР»Р°, РєРѕС‚РѕСЂР°СЏ РјРѕР¶РµС‚ РїСЂРёРЅРѕСЃРёС‚СЊ СЃРјРµСЂС‚СЊ Рё СЂР°Р·СЂСѓС€РµРЅРёРµ.   
+		AI_Output (self, other,"KDF_402_Corristo_KREIS2_Info_14_07"); //РСЃС‚РёРЅРЅС‹Р№ РјР°Рі РёСЃРїРѕР»СЊР·СѓРµС‚ РµРµ Р»РёС€СЊ С‚РѕРіРґР°, РєРѕРіРґР° СЌС‚Рѕ РґРµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ РЅРµРѕР±С…РѕРґРёРјРѕ.
+		AI_Output (self, other,"KDF_402_Corristo_KREIS2_Info_14_08"); //Р’РЅРёРјР°С‚РµР»СЊРЅРѕ СЃР»РµРґРё Р·Р° С‚РµРј, С‡С‚Рѕ РїСЂРѕРёСЃС…РѕРґРёС‚ РІРѕРєСЂСѓРі, Рё С‚С‹ СЃРјРѕР¶РµС€СЊ РїРѕР·РЅР°С‚СЊ СЃРёР»Сѓ СЂСѓРЅ.   
 		KDF_402_Corristo_KREIS2.permanent = 0;
 	};
 
@@ -535,15 +535,15 @@ FUNC int  KDF_402_Corristo_KREIS3_Condition()
 };
 FUNC void  KDF_402_Corristo_KREIS3_Info()
 {
-	AI_Output (other, self,"KDF_402_Corristo_KREIS3_Info_15_01"); //Ты можешь передать мне знания Третьего Круга магии?
+	AI_Output (other, self,"KDF_402_Corristo_KREIS3_Info_15_01"); //РўС‹ РјРѕР¶РµС€СЊ РїРµСЂРµРґР°С‚СЊ РјРЅРµ Р·РЅР°РЅРёСЏ РўСЂРµС‚СЊРµРіРѕ РљСЂСѓРіР° РјР°РіРёРё?
 	if (B_GiveSkill(other,NPC_TALENT_MAGE , 3, LPCOST_TALENT_MAGE_3))
 	{
-		AI_Output (self, other,"KDF_402_Corristo_KREIS3_Info_14_02"); //Третий Круг - очень важная часть пути, который проходит каждый маг. Его постижением завершается твой поиск. 
-		AI_Output (self, other,"KDF_402_Corristo_KREIS3_Info_14_03"); //Ты уже на середине пути познания магии. Ты уже умеешь читать заклинания рун. 
-		AI_Output (self, other,"KDF_402_Corristo_KREIS3_Info_14_04"); //Это знание станет основой для дальнейшего совершенствования. Подумай, прежде чем использовать ту или иную руну. 
-		AI_Output (self, other,"KDF_402_Corristo_KREIS3_Info_14_05"); //Ты можешь читать ее или не читать, но твой выбор должен быть осознан.
-		AI_Output (self, other,"KDF_402_Corristo_KREIS3_Info_14_06"); //Если ты сделал выбор, ты должен следовать ему не раздумывая.
-		AI_Output (self, other,"KDF_402_Corristo_KREIS3_Info_14_07"); //Познай свой путь, и ты познаешь силу своих решений.
+		AI_Output (self, other,"KDF_402_Corristo_KREIS3_Info_14_02"); //РўСЂРµС‚РёР№ РљСЂСѓРі - РѕС‡РµРЅСЊ РІР°Р¶РЅР°СЏ С‡Р°СЃС‚СЊ РїСѓС‚Рё, РєРѕС‚РѕСЂС‹Р№ РїСЂРѕС…РѕРґРёС‚ РєР°Р¶РґС‹Р№ РјР°Рі. Р•РіРѕ РїРѕСЃС‚РёР¶РµРЅРёРµРј Р·Р°РІРµСЂС€Р°РµС‚СЃСЏ С‚РІРѕР№ РїРѕРёСЃРє. 
+		AI_Output (self, other,"KDF_402_Corristo_KREIS3_Info_14_03"); //РўС‹ СѓР¶Рµ РЅР° СЃРµСЂРµРґРёРЅРµ РїСѓС‚Рё РїРѕР·РЅР°РЅРёСЏ РјР°РіРёРё. РўС‹ СѓР¶Рµ СѓРјРµРµС€СЊ С‡РёС‚Р°С‚СЊ Р·Р°РєР»РёРЅР°РЅРёСЏ СЂСѓРЅ. 
+		AI_Output (self, other,"KDF_402_Corristo_KREIS3_Info_14_04"); //Р­С‚Рѕ Р·РЅР°РЅРёРµ СЃС‚Р°РЅРµС‚ РѕСЃРЅРѕРІРѕР№ РґР»СЏ РґР°Р»СЊРЅРµР№С€РµРіРѕ СЃРѕРІРµСЂС€РµРЅСЃС‚РІРѕРІР°РЅРёСЏ. РџРѕРґСѓРјР°Р№, РїСЂРµР¶РґРµ С‡РµРј РёСЃРїРѕР»СЊР·РѕРІР°С‚СЊ С‚Сѓ РёР»Рё РёРЅСѓСЋ СЂСѓРЅСѓ. 
+		AI_Output (self, other,"KDF_402_Corristo_KREIS3_Info_14_05"); //РўС‹ РјРѕР¶РµС€СЊ С‡РёС‚Р°С‚СЊ РµРµ РёР»Рё РЅРµ С‡РёС‚Р°С‚СЊ, РЅРѕ С‚РІРѕР№ РІС‹Р±РѕСЂ РґРѕР»Р¶РµРЅ Р±С‹С‚СЊ РѕСЃРѕР·РЅР°РЅ.
+		AI_Output (self, other,"KDF_402_Corristo_KREIS3_Info_14_06"); //Р•СЃР»Рё С‚С‹ СЃРґРµР»Р°Р» РІС‹Р±РѕСЂ, С‚С‹ РґРѕР»Р¶РµРЅ СЃР»РµРґРѕРІР°С‚СЊ РµРјСѓ РЅРµ СЂР°Р·РґСѓРјС‹РІР°СЏ.
+		AI_Output (self, other,"KDF_402_Corristo_KREIS3_Info_14_07"); //РџРѕР·РЅР°Р№ СЃРІРѕР№ РїСѓС‚СЊ, Рё С‚С‹ РїРѕР·РЅР°РµС€СЊ СЃРёР»Сѓ СЃРІРѕРёС… СЂРµС€РµРЅРёР№.
 		KDF_402_Corristo_KREIS3.permanent = 0;
 	};
 
@@ -572,15 +572,15 @@ FUNC int  KDF_402_Corristo_KREIS4_Condition()
 };
 FUNC void  KDF_402_Corristo_KREIS4_Info()
 {
-	AI_Output (other, self,"KDF_402_Corristo_KREIS4_Info_15_01"); //Я готов вступить в Четвертый Круг.
+	AI_Output (other, self,"KDF_402_Corristo_KREIS4_Info_15_01"); //РЇ РіРѕС‚РѕРІ РІСЃС‚СѓРїРёС‚СЊ РІ Р§РµС‚РІРµСЂС‚С‹Р№ РљСЂСѓРі.
 	if (B_GiveSkill(other,NPC_TALENT_MAGE , 4, LPCOST_TALENT_MAGE_4))
 	{
-		AI_Output (self, other,"KDF_402_Corristo_KREIS4_Info_14_02"); //Тебе уже открыты знания трех Кругов магии. Пришло время познать ее тайны.
-		AI_Output (self, other,"KDF_402_Corristo_KREIS4_Info_14_03"); //Магия руны сокрыта в камне. Камень этот получают при шлифовке магической руды. 
-		AI_Output (self, other,"KDF_402_Corristo_KREIS4_Info_14_04"); //Такой руды, которую добывают в здешних шахтах. Камень наделяется магической энергией в особых храмах. Так он становится орудием нашей силы.
-		AI_Output (self, other,"KDF_402_Corristo_KREIS4_Info_14_05"); //Все руны, которые ты можешь использовать, открывают тебе доступ к знаниям и могуществу наших храмов.
-		AI_Output (self, other,"KDF_402_Corristo_KREIS4_Info_14_06"); //Теперь ты выучил все, что знаю я сам. 
-		AI_Output (self, other,"KDF_402_Corristo_KREIS4_Info_14_07"); //Познай магию, и ты познаешь тайну своей силы.
+		AI_Output (self, other,"KDF_402_Corristo_KREIS4_Info_14_02"); //РўРµР±Рµ СѓР¶Рµ РѕС‚РєСЂС‹С‚С‹ Р·РЅР°РЅРёСЏ С‚СЂРµС… РљСЂСѓРіРѕРІ РјР°РіРёРё. РџСЂРёС€Р»Рѕ РІСЂРµРјСЏ РїРѕР·РЅР°С‚СЊ РµРµ С‚Р°Р№РЅС‹.
+		AI_Output (self, other,"KDF_402_Corristo_KREIS4_Info_14_03"); //РњР°РіРёСЏ СЂСѓРЅС‹ СЃРѕРєСЂС‹С‚Р° РІ РєР°РјРЅРµ. РљР°РјРµРЅСЊ СЌС‚РѕС‚ РїРѕР»СѓС‡Р°СЋС‚ РїСЂРё С€Р»РёС„РѕРІРєРµ РјР°РіРёС‡РµСЃРєРѕР№ СЂСѓРґС‹. 
+		AI_Output (self, other,"KDF_402_Corristo_KREIS4_Info_14_04"); //РўР°РєРѕР№ СЂСѓРґС‹, РєРѕС‚РѕСЂСѓСЋ РґРѕР±С‹РІР°СЋС‚ РІ Р·РґРµС€РЅРёС… С€Р°С…С‚Р°С…. РљР°РјРµРЅСЊ РЅР°РґРµР»СЏРµС‚СЃСЏ РјР°РіРёС‡РµСЃРєРѕР№ СЌРЅРµСЂРіРёРµР№ РІ РѕСЃРѕР±С‹С… С…СЂР°РјР°С…. РўР°Рє РѕРЅ СЃС‚Р°РЅРѕРІРёС‚СЃСЏ РѕСЂСѓРґРёРµРј РЅР°С€РµР№ СЃРёР»С‹.
+		AI_Output (self, other,"KDF_402_Corristo_KREIS4_Info_14_05"); //Р’СЃРµ СЂСѓРЅС‹, РєРѕС‚РѕСЂС‹Рµ С‚С‹ РјРѕР¶РµС€СЊ РёСЃРїРѕР»СЊР·РѕРІР°С‚СЊ, РѕС‚РєСЂС‹РІР°СЋС‚ С‚РµР±Рµ РґРѕСЃС‚СѓРї Рє Р·РЅР°РЅРёСЏРј Рё РјРѕРіСѓС‰РµСЃС‚РІСѓ РЅР°С€РёС… С…СЂР°РјРѕРІ.
+		AI_Output (self, other,"KDF_402_Corristo_KREIS4_Info_14_06"); //РўРµРїРµСЂСЊ С‚С‹ РІС‹СѓС‡РёР» РІСЃРµ, С‡С‚Рѕ Р·РЅР°СЋ СЏ СЃР°Рј. 
+		AI_Output (self, other,"KDF_402_Corristo_KREIS4_Info_14_07"); //РџРѕР·РЅР°Р№ РјР°РіРёСЋ, Рё С‚С‹ РїРѕР·РЅР°РµС€СЊ С‚Р°Р№РЅСѓ СЃРІРѕРµР№ СЃРёР»С‹.
 		KDF_402_Corristo_KREIS4.permanent = 0;
 	};
 };  
@@ -595,7 +595,7 @@ instance  KDF_402_Corristo_HEAVYARMOR (C_INFO)
 	information		= KDF_402_Corristo_HEAVYARMOR_Info;
 	important		= 0;
 	permanent		= 1;
-	description		= B_BuildBuyArmorString("Учитель, я хочу носить одеяние верховных магов Круга Огня.",VALUE_KDF_ARMOR_H); 
+	description		= B_BuildBuyArmorString("РЈС‡РёС‚РµР»СЊ, СЏ С…РѕС‡Сѓ РЅРѕСЃРёС‚СЊ РѕРґРµСЏРЅРёРµ РІРµСЂС…РѕРІРЅС‹С… РјР°РіРѕРІ РљСЂСѓРіР° РћРіРЅСЏ.",VALUE_KDF_ARMOR_H); 
 };
 
 FUNC int  KDF_402_Corristo_HEAVYARMOR_Condition()
@@ -608,19 +608,19 @@ FUNC int  KDF_402_Corristo_HEAVYARMOR_Condition()
 };
 FUNC void  KDF_402_Corristo_HEAVYARMOR_Info()
 {
-	AI_Output (other, self,"KDF_402_Corristo_HEAVYARMOR_Info_15_01"); //Учитель, я хочу носить одеяние верховных магов Круга Огня.
+	AI_Output (other, self,"KDF_402_Corristo_HEAVYARMOR_Info_15_01"); //РЈС‡РёС‚РµР»СЊ, СЏ С…РѕС‡Сѓ РЅРѕСЃРёС‚СЊ РѕРґРµСЏРЅРёРµ РІРµСЂС…РѕРІРЅС‹С… РјР°РіРѕРІ РљСЂСѓРіР° РћРіРЅСЏ.
 	if (Kapitel < 3) 
 	{
-		AI_Output (self, other,"KDF_402_Corristo_WANNBEKDF_Info_14_04"); //Ты знаешь еще слишком мало. Приходи ко мне, когда будешь знать больше.
+		AI_Output (self, other,"KDF_402_Corristo_WANNBEKDF_Info_14_04"); //РўС‹ Р·РЅР°РµС€СЊ РµС‰Рµ СЃР»РёС€РєРѕРј РјР°Р»Рѕ. РџСЂРёС…РѕРґРё РєРѕ РјРЅРµ, РєРѕРіРґР° Р±СѓРґРµС€СЊ Р·РЅР°С‚СЊ Р±РѕР»СЊС€Рµ.
 		//AI_Output (other, self,"KDF_402_Corristo_HEAVYARMOR_Info_15_02"); //Es ist noch nicht deine Zeit, die hohe Robe zu tragen. //***FALSCHE STIMME***
 	}
 	else if (Npc_HasItems (hero,ItMinugget)< VALUE_KDF_ARMOR_H) 
 	{ 
-		AI_Output			(self, other,"KDF_402_Corristo_HEAVYARMOR_Info_14_03"); //Тебе не хватает руды.
+		AI_Output			(self, other,"KDF_402_Corristo_HEAVYARMOR_Info_14_03"); //РўРµР±Рµ РЅРµ С…РІР°С‚Р°РµС‚ СЂСѓРґС‹.
 	}	
 	else
 	{	
-		AI_Output			(self, other,"KDF_402_Corristo_HEAVYARMOR_Info_14_04"); //Я вижу, что ты уже достоин носить облачение верховного мага Круга Огня.
+		AI_Output			(self, other,"KDF_402_Corristo_HEAVYARMOR_Info_14_04"); //РЇ РІРёР¶Сѓ, С‡С‚Рѕ С‚С‹ СѓР¶Рµ РґРѕСЃС‚РѕРёРЅ РЅРѕСЃРёС‚СЊ РѕР±Р»Р°С‡РµРЅРёРµ РІРµСЂС…РѕРІРЅРѕРіРѕ РјР°РіР° РљСЂСѓРіР° РћРіРЅСЏ.
 		
 		CreateInvItem		(hero,KDF_ARMOR_H);
 		

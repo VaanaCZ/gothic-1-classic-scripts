@@ -49,16 +49,16 @@ FUNC int Info_Pacho_STOP_Condition()
 
 func void Info_Pacho_STOP_Info()
 {
-	AI_Output			(self, hero,"Info_Pacho_STOP_13_01"); //Эй, ты!
-	AI_Output			(hero, self,"Info_Pacho_STOP_15_02"); //Кто? Я?
-	AI_Output			(self, hero,"Info_Pacho_STOP_13_03"); //Нет, твоя бабуля... Конечно ты, кто ж еще?
-	AI_Output			(self, hero,"Info_Pacho_STOP_13_04"); //Я бы на твоем месте туда не ходил!
-	AI_Output			(hero, self,"Info_Pacho_STOP_15_05"); //Почему?
-	AI_Output			(self, hero,"Info_Pacho_STOP_13_06"); //Похоже, ты здесь недавно.
-	AI_Output			(self, hero,"Info_Pacho_STOP_13_07"); //Парень, эта дорога ведет прямиком к оркам...
-	AI_Output			(self, hero,"Info_Pacho_STOP_13_08"); //Они с радостью сделают из тебя котлету!
-	AI_Output			(hero, self,"Info_Pacho_STOP_15_09"); //Ох...
-	AI_Output			(self, hero,"Info_Pacho_STOP_13_10"); //Не за что!
+	AI_Output			(self, hero,"Info_Pacho_STOP_13_01"); //Р­Р№, С‚С‹!
+	AI_Output			(hero, self,"Info_Pacho_STOP_15_02"); //РљС‚Рѕ? РЇ?
+	AI_Output			(self, hero,"Info_Pacho_STOP_13_03"); //РќРµС‚, С‚РІРѕСЏ Р±Р°Р±СѓР»СЏ... РљРѕРЅРµС‡РЅРѕ С‚С‹, РєС‚Рѕ Р¶ РµС‰Рµ?
+	AI_Output			(self, hero,"Info_Pacho_STOP_13_04"); //РЇ Р±С‹ РЅР° С‚РІРѕРµРј РјРµСЃС‚Рµ С‚СѓРґР° РЅРµ С…РѕРґРёР»!
+	AI_Output			(hero, self,"Info_Pacho_STOP_15_05"); //РџРѕС‡РµРјСѓ?
+	AI_Output			(self, hero,"Info_Pacho_STOP_13_06"); //РџРѕС…РѕР¶Рµ, С‚С‹ Р·РґРµСЃСЊ РЅРµРґР°РІРЅРѕ.
+	AI_Output			(self, hero,"Info_Pacho_STOP_13_07"); //РџР°СЂРµРЅСЊ, СЌС‚Р° РґРѕСЂРѕРіР° РІРµРґРµС‚ РїСЂСЏРјРёРєРѕРј Рє РѕСЂРєР°Рј...
+	AI_Output			(self, hero,"Info_Pacho_STOP_13_08"); //РћРЅРё СЃ СЂР°РґРѕСЃС‚СЊСЋ СЃРґРµР»Р°СЋС‚ РёР· С‚РµР±СЏ РєРѕС‚Р»РµС‚Сѓ!
+	AI_Output			(hero, self,"Info_Pacho_STOP_15_09"); //РћС…...
+	AI_Output			(self, hero,"Info_Pacho_STOP_13_10"); //РќРµ Р·Р° С‡С‚Рѕ!
 
 	AI_StopProcessInfos	(self);
 };

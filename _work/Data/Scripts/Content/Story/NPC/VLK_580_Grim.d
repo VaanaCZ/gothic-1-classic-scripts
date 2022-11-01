@@ -2,7 +2,7 @@ instance VLK_580_Grim (Npc_Default)
 {
 	//-------- primary data --------
 	
-	name =							"Ãðèì";
+	name =							"Ð“Ñ€Ð¸Ð¼";
 	npctype =						npctype_main;
 	guild =							GIL_VLK;      
 	level =							5;

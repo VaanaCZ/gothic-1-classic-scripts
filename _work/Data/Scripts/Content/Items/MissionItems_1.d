@@ -22,7 +22,7 @@ INSTANCE MordragsRing(C_Item)
 	on_equip				=	Equip_MordragsRing;
 	on_unequip				=	UnEquip_MordragsRing;
 
-	description		= "Кольцо Мордрага";
+	description		= "РљРѕР»СЊС†Рѕ РњРѕСЂРґСЂР°РіР°";
 	//TEXT[0]			= "";
 	//TEXT[1]			= "";
 	////COUNT[1]		= ;
@@ -51,7 +51,7 @@ INSTANCE MordragsRing(C_Item)
 
 INSTANCE SpecialJoint(C_Item)
 {
-	name 				=	"Улучшенный Зов мечты";
+	name 				=	"РЈР»СѓС‡С€РµРЅРЅС‹Р№ Р—РѕРІ РјРµС‡С‚С‹";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -64,9 +64,9 @@ INSTANCE SpecialJoint(C_Item)
 	scemeName			=	"JOINT";
 	on_state[0]			=	UseSpecialJoint;
 
-	TEXT[0]		    	= "Этот болотник действует";
-	TEXT[1]             = "гораздо сильнее, чем обычный 'Зов мечты'.";
-	TEXT[3]             = "Он приготовлен для Гуру Идола Тиона!";
+	TEXT[0]		    	= "Р­С‚РѕС‚ Р±РѕР»РѕС‚РЅРёРє РґРµР№СЃС‚РІСѓРµС‚";
+	TEXT[1]             = "РіРѕСЂР°Р·РґРѕ СЃРёР»СЊРЅРµРµ, С‡РµРј РѕР±С‹С‡РЅС‹Р№ 'Р—РѕРІ РјРµС‡С‚С‹'.";
+	TEXT[3]             = "РћРЅ РїСЂРёРіРѕС‚РѕРІР»РµРЅ РґР»СЏ Р“СѓСЂСѓ РРґРѕР»Р° РўРёРѕРЅР°!";
 	TEXT[5]				= NAME_Value;					COUNT[4]	= Value_Joint3*10;
 };
 
@@ -77,7 +77,7 @@ func void UseSpecialJoint()
 
 INSTANCE ItAt_DamLurker_01 (C_Item)
 {
-	name 				=	"Когти шныга";
+	name 				=	"РљРѕРіС‚Рё С€РЅС‹РіР°";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MISSION;
@@ -96,7 +96,7 @@ INSTANCE ItAt_DamLurker_01 (C_Item)
 
 INSTANCE ItWrOMMap(C_Item)
 {	
-	name 					=	"Карта";
+	name 					=	"РљР°СЂС‚Р°";
 	
 	mainflag 				=	ITEM_KAT_DOCS;
 	flags 					=	ITEM_MISSION;
@@ -109,7 +109,7 @@ INSTANCE ItWrOMMap(C_Item)
 	scemeName				=	"MAP";	
 	on_state[0]				=	UseOMmap;
 
-	description				= "Карта дороги к Старой шахте";
+	description				= "РљР°СЂС‚Р° РґРѕСЂРѕРіРё Рє РЎС‚Р°СЂРѕР№ С€Р°С…С‚Рµ";
 	//TEXT[0]				= "";
 	////COUNT[0]			= ;
 	//TEXT[1]				= "";
@@ -138,12 +138,12 @@ INSTANCE ItWrOMMap(C_Item)
 
 
 /************************************************
-**  Missionsitems fьr Introparcours in der VM  **
+**  Missionsitems fСЊr Introparcours in der VM  **
 ************************************************/
 
 INSTANCE AltesSchwertVM (C_Item)
 {	
-	name 				=	"Старый меч";
+	name 				=	"РЎС‚Р°СЂС‹Р№ РјРµС‡";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD|ITEM_MISSION;	
@@ -173,7 +173,7 @@ INSTANCE AltesSchwertVM (C_Item)
 
 INSTANCE AltesSchwert (C_Item)
 {	
-	name 				=	"Старый меч";
+	name 				=	"РЎС‚Р°СЂС‹Р№ РјРµС‡";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD|ITEM_MISSION;	
@@ -205,7 +205,7 @@ INSTANCE AltesSchwert (C_Item)
 
 INSTANCE JackalsSword (C_Item)
 {	
-	name 				=	"Меч Шакала";
+	name 				=	"РњРµС‡ РЁР°РєР°Р»Р°";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -253,7 +253,7 @@ instance  KdW_Amulett(C_Item)
 	//on_equip		=	Equip_Schutzamulett_Nek;
 	//on_unequip	=	UnEquip_Schutzamulett_Nek;
 
-	description		= "Амулет посланника магов Воды";
+	description		= "РђРјСѓР»РµС‚ РїРѕСЃР»Р°РЅРЅРёРєР° РјР°РіРѕРІ Р’РѕРґС‹";
 	//TEXT[0]			= "";
 	//TEXT[2]			= NAME_Prot_Edge;
 	//COUNT[2]		= 5;
@@ -267,7 +267,7 @@ instance  KdW_Amulett(C_Item)
 
 INSTANCE Cronos_Brief (C_Item)
 {	
-	name 				=	"Письмо";
+	name 				=	"РџРёСЃСЊРјРѕ";
 
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION;
@@ -278,7 +278,7 @@ INSTANCE Cronos_Brief (C_Item)
 	material 			=	MAT_LEATHER;
 	on_state[0]			=   UseCronosBrief;
 	scemeName			=	"MAP";
-	description			= "Письмо Кроноса к магам Огня";
+	description			= "РџРёСЃСЊРјРѕ РљСЂРѕРЅРѕСЃР° Рє РјР°РіР°Рј РћРіРЅСЏ";
 };
 func void UseCronosBrief ()
 {   
@@ -290,17 +290,17 @@ func void UseCronosBrief ()
 					Doc_SetFont 	( nDocID, -1, "font_10_book.tga"	   			); 	// -1 -> all pages 
 					Doc_SetMargins	( nDocID, -1, 50, 50, 50, 50, 1   		);  //  0 -> margins are in pixels
 					Doc_PrintLine	( nDocID,  0, " "					);
-					Doc_PrintLine	( nDocID,  0, "Великий Мастер Корристо,"					);
+					Doc_PrintLine	( nDocID,  0, "Р’РµР»РёРєРёР№ РњР°СЃС‚РµСЂ РљРѕСЂСЂРёСЃС‚Рѕ,"					);
 					Doc_PrintLine	( nDocID,  0, ""					);
 					Doc_SetFont 	( nDocID, -1, "font_10_book.TGA"	   			); 	// -1 -> all pages 
-					Doc_PrintLines	( nDocID,  0, "Сатурас, почтенный Мастер магов Круга Воды, просит Вас не отказать нам в поддержке. Я искренне надеюсь, что Вы разделяете наше стремление удерживать нарастающее недовольство среди жителей Старого и Нового лагерей в приемлемых рамках. Так как Вы заботитесь о поставках руды, мы можем ограничить деятельность воров Нового лагеря, действуя в Ваших интересах. Поэтому для Вас и для нас будет лучше, если Старый лагерь не будет препятствовать осуществлению нашего плана."	);
+					Doc_PrintLines	( nDocID,  0, "РЎР°С‚СѓСЂР°СЃ, РїРѕС‡С‚РµРЅРЅС‹Р№ РњР°СЃС‚РµСЂ РјР°РіРѕРІ РљСЂСѓРіР° Р’РѕРґС‹, РїСЂРѕСЃРёС‚ Р’Р°СЃ РЅРµ РѕС‚РєР°Р·Р°С‚СЊ РЅР°Рј РІ РїРѕРґРґРµСЂР¶РєРµ. РЇ РёСЃРєСЂРµРЅРЅРµ РЅР°РґРµСЋСЃСЊ, С‡С‚Рѕ Р’С‹ СЂР°Р·РґРµР»СЏРµС‚Рµ РЅР°С€Рµ СЃС‚СЂРµРјР»РµРЅРёРµ СѓРґРµСЂР¶РёРІР°С‚СЊ РЅР°СЂР°СЃС‚Р°СЋС‰РµРµ РЅРµРґРѕРІРѕР»СЊСЃС‚РІРѕ СЃСЂРµРґРё Р¶РёС‚РµР»РµР№ РЎС‚Р°СЂРѕРіРѕ Рё РќРѕРІРѕРіРѕ Р»Р°РіРµСЂРµР№ РІ РїСЂРёРµРјР»РµРјС‹С… СЂР°РјРєР°С…. РўР°Рє РєР°Рє Р’С‹ Р·Р°Р±РѕС‚РёС‚РµСЃСЊ Рѕ РїРѕСЃС‚Р°РІРєР°С… СЂСѓРґС‹, РјС‹ РјРѕР¶РµРј РѕРіСЂР°РЅРёС‡РёС‚СЊ РґРµСЏС‚РµР»СЊРЅРѕСЃС‚СЊ РІРѕСЂРѕРІ РќРѕРІРѕРіРѕ Р»Р°РіРµСЂСЏ, РґРµР№СЃС‚РІСѓСЏ РІ Р’Р°С€РёС… РёРЅС‚РµСЂРµСЃР°С…. РџРѕСЌС‚РѕРјСѓ РґР»СЏ Р’Р°СЃ Рё РґР»СЏ РЅР°СЃ Р±СѓРґРµС‚ Р»СѓС‡С€Рµ, РµСЃР»Рё РЎС‚Р°СЂС‹Р№ Р»Р°РіРµСЂСЊ РЅРµ Р±СѓРґРµС‚ РїСЂРµРїСЏС‚СЃС‚РІРѕРІР°С‚СЊ РѕСЃСѓС‰РµСЃС‚РІР»РµРЅРёСЋ РЅР°С€РµРіРѕ РїР»Р°РЅР°."	);
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLine	( nDocID,  0, "Жду Вашего скорого ответа."					);
+					Doc_PrintLine	( nDocID,  0, "Р–РґСѓ Р’Р°С€РµРіРѕ СЃРєРѕСЂРѕРіРѕ РѕС‚РІРµС‚Р°."					);
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLine	( nDocID,  0, "Кронос, хранитель руды.");
+					Doc_PrintLine	( nDocID,  0, "РљСЂРѕРЅРѕСЃ, С…СЂР°РЅРёС‚РµР»СЊ СЂСѓРґС‹.");
 					Doc_PrintLine	( nDocID,  0, ""					);
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_SetMargins	( nDocID, -1, 200, 50, 50, 50, 1   		);  //  0 -> margins are in pixels (Position des Textes von den Rдnder des TGAs aus
+					Doc_SetMargins	( nDocID, -1, 200, 50, 50, 50, 1   		);  //  0 -> margins are in pixels (Position des Textes von den RРґnder des TGAs aus
 				
 					Doc_Show		( nDocID );
 		
@@ -326,8 +326,8 @@ instance  Neks_Amulett(C_Item)
 	on_equip		=	Equip_Schutzamulett_Nek;
 	on_unequip		=	UnEquip_Schutzamulett_Nek;
 
-	description		= "Амулет убитого стражника"; //Nek's Amulett
-	TEXT[1]			= "На обратной стороне амулета выбито имя 'Нек'";
+	description		= "РђРјСѓР»РµС‚ СѓР±РёС‚РѕРіРѕ СЃС‚СЂР°Р¶РЅРёРєР°"; //Nek's Amulett
+	TEXT[1]			= "РќР° РѕР±СЂР°С‚РЅРѕР№ СЃС‚РѕСЂРѕРЅРµ Р°РјСѓР»РµС‚Р° РІС‹Р±РёС‚Рѕ РёРјСЏ 'РќРµРє'";
 	TEXT[2]			= NAME_Prot_Edge;
 	COUNT[2]		= 5;
 	//TEXT[3] 		= "";
@@ -350,11 +350,11 @@ instance  Neks_Amulett(C_Item)
 	};
 
 /*************************************************
-**	Missionsitems fьr Mis_1_Psi_RecruitBuddler  **
+**	Missionsitems fСЊr Mis_1_Psi_RecruitBuddler  **
 *************************************************/
 INSTANCE RecruitJoint(C_Item)
 {	
-	name 					=	"Болотник для рудокопов";
+	name 					=	"Р‘РѕР»РѕС‚РЅРёРє РґР»СЏ СЂСѓРґРѕРєРѕРїРѕРІ";
 	
 	mainflag 				=	ITEM_KAT_NONE;
 	flags 					=	ITEM_MULTI;	
@@ -384,12 +384,12 @@ INSTANCE RecruitJoint(C_Item)
 };
 
 /**************************************************
-**    Missionsitems fьr Mis_3_Psi_BringMedicine  **
+**    Missionsitems fСЊr Mis_3_Psi_BringMedicine  **
 **************************************************/
 
 INSTANCE HealthWater(C_Item)
 {
-	name 					=	"Лечебное зелье для Юбериона";
+	name 					=	"Р›РµС‡РµР±РЅРѕРµ Р·РµР»СЊРµ РґР»СЏ Р®Р±РµСЂРёРѕРЅР°";
 
 	mainflag 				=	ITEM_KAT_NONE;
 	flags 					=	ITEM_MISSION;
@@ -422,11 +422,11 @@ INSTANCE HealthWater(C_Item)
 };
 
 /************************************************
-**    Missionsitems fьr Mis_1_OC_BringList     **
+**    Missionsitems fСЊr Mis_1_OC_BringList     **
 ************************************************/
 INSTANCE TheList(C_Item)
 {	
-	name 					=	"Список";
+	name 					=	"РЎРїРёСЃРѕРє";
 
 	mainflag 				=	ITEM_KAT_DOCS;
 	flags 					=	ITEM_MISSION;	
@@ -442,8 +442,8 @@ INSTANCE TheList(C_Item)
 	on_state[0]				=	UseTheList;
 	description				=	name;
 
-	TEXT[0]					=	"Ян, глава Старой шахты, занес в этот список";
-	TEXT[1]					=	"все необходимое для работы рудокопов.";
+	TEXT[0]					=	"РЇРЅ, РіР»Р°РІР° РЎС‚Р°СЂРѕР№ С€Р°С…С‚С‹, Р·Р°РЅРµСЃ РІ СЌС‚РѕС‚ СЃРїРёСЃРѕРє";
+	TEXT[1]					=	"РІСЃРµ РЅРµРѕР±С…РѕРґРёРјРѕРµ РґР»СЏ СЂР°Р±РѕС‚С‹ СЂСѓРґРѕРєРѕРїРѕРІ.";
 };
 func void UseTheList ()
 {   
@@ -455,21 +455,21 @@ func void UseTheList ()
 					Doc_SetFont 	( nDocID, -1, "font_10_book.tga"	   			); 	// -1 -> all pages 
 					Doc_SetMargins	( nDocID, -1, 50, 50, 50, 50, 1   		);  //  0 -> margins are in pixels
 					
-					Doc_PrintLine	( nDocID,  0, "Список"					);
+					Doc_PrintLine	( nDocID,  0, "РЎРїРёСЃРѕРє"					);
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLines	( nDocID,  0, "20 буханок хлеба - не заплесневелого!"					);
-					Doc_PrintLine	( nDocID,  0, "25-30 яблок"	);
-					Doc_PrintLine	( nDocID,  0, "10 кусков сыра"					);
-					Doc_PrintLine	( nDocID,  0, "1 черпак"					);
-					Doc_PrintLine	( nDocID,  0, "1 щетка"					);
-					Doc_PrintLine	( nDocID,  0, "5 кирок + 3 молотка"					);
-					Doc_PrintLines	( nDocID,  0, "и много болотника - это же первый груз за этот месяц!"					);
-					Doc_PrintLine	( nDocID,  0, "Груз должен быть доставлен послезавтра."					);
+					Doc_PrintLines	( nDocID,  0, "20 Р±СѓС…Р°РЅРѕРє С…Р»РµР±Р° - РЅРµ Р·Р°РїР»РµСЃРЅРµРІРµР»РѕРіРѕ!"					);
+					Doc_PrintLine	( nDocID,  0, "25-30 СЏР±Р»РѕРє"	);
+					Doc_PrintLine	( nDocID,  0, "10 РєСѓСЃРєРѕРІ СЃС‹СЂР°"					);
+					Doc_PrintLine	( nDocID,  0, "1 С‡РµСЂРїР°Рє"					);
+					Doc_PrintLine	( nDocID,  0, "1 С‰РµС‚РєР°"					);
+					Doc_PrintLine	( nDocID,  0, "5 РєРёСЂРѕРє + 3 РјРѕР»РѕС‚РєР°"					);
+					Doc_PrintLines	( nDocID,  0, "Рё РјРЅРѕРіРѕ Р±РѕР»РѕС‚РЅРёРєР° - СЌС‚Рѕ Р¶Рµ РїРµСЂРІС‹Р№ РіСЂСѓР· Р·Р° СЌС‚РѕС‚ РјРµСЃСЏС†!"					);
+					Doc_PrintLine	( nDocID,  0, "Р“СЂСѓР· РґРѕР»Р¶РµРЅ Р±С‹С‚СЊ РґРѕСЃС‚Р°РІР»РµРЅ РїРѕСЃР»РµР·Р°РІС‚СЂР°."					);
 					Doc_PrintLine	( nDocID,  0, ""					);
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLine	( nDocID,  0, "Ян"					);
+					Doc_PrintLine	( nDocID,  0, "РЇРЅ"					);
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_SetMargins	( nDocID, -1, 200, 50, 50, 50, 1   		);  //  0 -> margins are in pixels (Position des Textes von den Rдnder des TGAs aus
+					Doc_SetMargins	( nDocID, -1, 200, 50, 50, 50, 1   		);  //  0 -> margins are in pixels (Position des Textes von den RРґnder des TGAs aus
 				
 					Doc_Show		( nDocID );
 		
@@ -477,7 +477,7 @@ func void UseTheList ()
 
 INSTANCE TheListNC(C_Item)
 {	
-	name 					=	"Список (дополненный)";
+	name 					=	"РЎРїРёСЃРѕРє (РґРѕРїРѕР»РЅРµРЅРЅС‹Р№)";
 
 	mainflag 				=	ITEM_KAT_DOCS;
 	flags 					=	ITEM_MISSION;	
@@ -493,10 +493,10 @@ INSTANCE TheListNC(C_Item)
 	on_state[0]				=	UseTheListNC;
 	description				=	name;
 
-	TEXT[0]					=	"Ян, глава Старой шахты, занес в этот список";
-	TEXT[1]					=	"все необходимое для работы рудокопов.";
-	TEXT[2]					=	"(Ларс добавил в него еще несколько пунктов.";
-	TEXT[3]					=	"Подделка высокого качества!)";
+	TEXT[0]					=	"РЇРЅ, РіР»Р°РІР° РЎС‚Р°СЂРѕР№ С€Р°С…С‚С‹, Р·Р°РЅРµСЃ РІ СЌС‚РѕС‚ СЃРїРёСЃРѕРє";
+	TEXT[1]					=	"РІСЃРµ РЅРµРѕР±С…РѕРґРёРјРѕРµ РґР»СЏ СЂР°Р±РѕС‚С‹ СЂСѓРґРѕРєРѕРїРѕРІ.";
+	TEXT[2]					=	"(Р›Р°СЂСЃ РґРѕР±Р°РІРёР» РІ РЅРµРіРѕ РµС‰Рµ РЅРµСЃРєРѕР»СЊРєРѕ РїСѓРЅРєС‚РѕРІ.";
+	TEXT[3]					=	"РџРѕРґРґРµР»РєР° РІС‹СЃРѕРєРѕРіРѕ РєР°С‡РµСЃС‚РІР°!)";
 };
 func void UseTheListNC ()
 {   
@@ -508,26 +508,26 @@ func void UseTheListNC ()
 					Doc_SetFont 	( nDocID, -1, "font_10_book.tga"	   			); 	// -1 -> all pages 
 					Doc_SetMargins	( nDocID, -1, 50, 50, 50, 50, 1   		);  //  0 -> margins are in pixels
 					
-					Doc_PrintLine	( nDocID,  0, "Список"					);
+					Doc_PrintLine	( nDocID,  0, "РЎРїРёСЃРѕРє"					);
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLines	( nDocID,  0, "20 буханок хлеба - не заплесневелого!"					);
-					Doc_PrintLine	( nDocID,  0, "25-30 яблок"	);
-					Doc_PrintLine	( nDocID,  0, "10 кусков сыра"					);
-					Doc_PrintLine	( nDocID,  0, "1 черпак"					);
-					Doc_PrintLine	( nDocID,  0, "1 щетка"					);
-					Doc_PrintLine	( nDocID,  0, "5 кирок + 3 молотка"					);
-					Doc_PrintLines	( nDocID,  0, "и много болотника - это же первый груз за этот месяц!"					);
-					Doc_PrintLine	( nDocID,  0, "Груз должен быть доставлен послезавтра."					);
+					Doc_PrintLines	( nDocID,  0, "20 Р±СѓС…Р°РЅРѕРє С…Р»РµР±Р° - РЅРµ Р·Р°РїР»РµСЃРЅРµРІРµР»РѕРіРѕ!"					);
+					Doc_PrintLine	( nDocID,  0, "25-30 СЏР±Р»РѕРє"	);
+					Doc_PrintLine	( nDocID,  0, "10 РєСѓСЃРєРѕРІ СЃС‹СЂР°"					);
+					Doc_PrintLine	( nDocID,  0, "1 С‡РµСЂРїР°Рє"					);
+					Doc_PrintLine	( nDocID,  0, "1 С‰РµС‚РєР°"					);
+					Doc_PrintLine	( nDocID,  0, "5 РєРёСЂРѕРє + 3 РјРѕР»РѕС‚РєР°"					);
+					Doc_PrintLines	( nDocID,  0, "Рё РјРЅРѕРіРѕ Р±РѕР»РѕС‚РЅРёРєР° - СЌС‚Рѕ Р¶Рµ РїРµСЂРІС‹Р№ РіСЂСѓР· Р·Р° СЌС‚РѕС‚ РјРµСЃСЏС†!"					);
+					Doc_PrintLine	( nDocID,  0, "Р“СЂСѓР· РґРѕР»Р¶РµРЅ Р±С‹С‚СЊ РґРѕСЃС‚Р°РІР»РµРЅ РїРѕСЃР»РµР·Р°РІС‚СЂР°."					);
 					Doc_PrintLine	( nDocID,  0, ""					);
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLine	( nDocID,  0, "Ян"					);
+					Doc_PrintLine	( nDocID,  0, "РЇРЅ"					);
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLine	( nDocID,  0, "Да, есть кое-что еще..."					);
-					Doc_PrintLine	( nDocID,  0, "30 бутылок пива"					);
-					Doc_PrintLine	( nDocID,  0, "5 бутылок вина"					);
-					Doc_PrintLine	( nDocID,  0, "25 жареных окороков"					);
-					Doc_PrintLine	( nDocID,  0, "полдюжины мечей"					);
-					Doc_SetMargins	( nDocID, -1, 200, 50, 50, 50, 1   		);  //  0 -> margins are in pixels (Position des Textes von den Rдnder des TGAs aus
+					Doc_PrintLine	( nDocID,  0, "Р”Р°, РµСЃС‚СЊ РєРѕРµ-С‡С‚Рѕ РµС‰Рµ..."					);
+					Doc_PrintLine	( nDocID,  0, "30 Р±СѓС‚С‹Р»РѕРє РїРёРІР°"					);
+					Doc_PrintLine	( nDocID,  0, "5 Р±СѓС‚С‹Р»РѕРє РІРёРЅР°"					);
+					Doc_PrintLine	( nDocID,  0, "25 Р¶Р°СЂРµРЅС‹С… РѕРєРѕСЂРѕРєРѕРІ"					);
+					Doc_PrintLine	( nDocID,  0, "РїРѕР»РґСЋР¶РёРЅС‹ РјРµС‡РµР№"					);
+					Doc_SetMargins	( nDocID, -1, 200, 50, 50, 50, 1   		);  //  0 -> margins are in pixels (Position des Textes von den RРґnder des TGAs aus
 				
 					Doc_Show		( nDocID );
 		
@@ -535,7 +535,7 @@ func void UseTheListNC ()
 
 
 /*********************************************
-**   Missionsitems fьr Lares Find Ring    **
+**   Missionsitems fСЊr Lares Find Ring    **
 *********************************************/
 
 INSTANCE Lares_Ring(C_Item)
@@ -553,7 +553,7 @@ INSTANCE Lares_Ring(C_Item)
 	material 				=	MAT_METAL;
 	on_equip				=	Equip_Lares_Ring;
 	on_unequip				=	UnEquip_Lares_Ring;
-	description		= "Кольцо Ларса";
+	description		= "РљРѕР»СЊС†Рѕ Р›Р°СЂСЃР°";
 	//TEXT[0]			= "";
 	//TEXT[1]			= "";
 	////COUNT[1]		= ;
@@ -580,7 +580,7 @@ INSTANCE Lares_Ring(C_Item)
 		Npc_ChangeAttribute(self,ATR_STRENGTH,-3 );
 	};
 /*********************************************
-**   Missionsitems fьr Lares Get Potion   **
+**   Missionsitems fСЊr Lares Get Potion   **
 *********************************************/
 INSTANCE  Heiltrank(C_Item)
 {
@@ -595,7 +595,7 @@ INSTANCE  Heiltrank(C_Item)
 	material 				=	MAT_GLAS;
 	on_state[0]				=	UseHeiltrank;
 	scemeName				=	"POTION";
-	description				= "Зелье быстрого лечения";
+	description				= "Р—РµР»СЊРµ Р±С‹СЃС‚СЂРѕРіРѕ Р»РµС‡РµРЅРёСЏ";
 	//TEXT[0]				= "";
 	TEXT[2]					= NAME_Bonus_HP;
 	COUNT[2]				= 30;
@@ -609,17 +609,17 @@ FUNC VOID UseHeiltrank()
 {
 		PrintDebugNpc		(PD_ITEM_MOBSI, "UseHealthPotion");
 		Npc_ChangeAttribute	(self,ATR_HITPOINTS,30);
-		PrintDebugNpc 		(PD_ITEM_MOBSI, "Я выпью целебное зелье.");
+		PrintDebugNpc 		(PD_ITEM_MOBSI, "РЇ РІС‹РїСЊСЋ С†РµР»РµР±РЅРѕРµ Р·РµР»СЊРµ.");
 	
 };
 
 /*********************************************
-**   Missionsitems fьr Mordrag    **
+**   Missionsitems fСЊr Mordrag    **
 *********************************************/
 
 INSTANCE SpecialWater(C_Item)
 {
-	name 					=	"Волшебная вода";
+	name 					=	"Р’РѕР»С€РµР±РЅР°СЏ РІРѕРґР°";
 
 	mainflag 				=	ITEM_KAT_FOOD;
 	flags 					=	ITEM_MISSION;
@@ -650,11 +650,11 @@ INSTANCE SpecialWater(C_Item)
 };
 
 /*********************************************
-**   Missionsitems fьr Dexter / Kalom	    **
+**   Missionsitems fСЊr Dexter / Kalom	    **
 *********************************************/
 INSTANCE KalomsRecipe(C_Item)
 {
-	name 					=	"Рецепт Галома";
+	name 					=	"Р РµС†РµРїС‚ Р“Р°Р»РѕРјР°";
 	
 	mainflag 				=	ITEM_KAT_DOCS;
 	flags 					=	ITEM_MISSION;
@@ -666,7 +666,7 @@ INSTANCE KalomsRecipe(C_Item)
 
 	scemeName				=	"MAP";
 	description				= name;
-	TEXT[0]					= "Рецепт целебного зелья";
+	TEXT[0]					= "Р РµС†РµРїС‚ С†РµР»РµР±РЅРѕРіРѕ Р·РµР»СЊСЏ";
 	////COUNT[0]			= ;
 	//TEXT[1]				= "";
 	////COUNT[1]			= ;
@@ -696,18 +696,18 @@ func VOID Use_KalomsRecipe()
 				Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   		);  //  0 -> margins are in pixels
 				Doc_SetFont 	( nDocID, -1, "font_10_book.tga"	   			); 	// -1 -> all pages 
 				Doc_PrintLine	( nDocID,  0, ""									);
-				Doc_PrintLine	( nDocID,  0, "Лифрун ак Гарак"					); 		
+				Doc_PrintLine	( nDocID,  0, "Р›РёС„СЂСѓРЅ Р°Рє Р“Р°СЂР°Рє"					); 		
 				Doc_PrintLine	( nDocID,  0, ""									); 			
-				Doc_PrintLines	( nDocID,  0, "Гарак ор Нах бин ту. Лифрун мар Ораг штах. Шрунк есп Хоринф.");
+				Doc_PrintLines	( nDocID,  0, "Р“Р°СЂР°Рє РѕСЂ РќР°С… Р±РёРЅ С‚Сѓ. Р›РёС„СЂСѓРЅ РјР°СЂ РћСЂР°Рі С€С‚Р°С…. РЁСЂСѓРЅРє РµСЃРї РҐРѕСЂРёРЅС„.");
 				
 				//2.Seite
 
-				Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den Rдnder des TGAs aus, links,oben,rechts,unten)
+				Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den RРґnder des TGAs aus, links,oben,rechts,unten)
 				Doc_PrintLine	( nDocID,  1, ""					);	
 				Doc_PrintLine	( nDocID,  1, ""					);					
-				Doc_PrintLines	( nDocID,  1, "Скорее всего, это лучше прочитать наоборот.");
+				Doc_PrintLines	( nDocID,  1, "РЎРєРѕСЂРµРµ РІСЃРµРіРѕ, СЌС‚Рѕ Р»СѓС‡С€Рµ РїСЂРѕС‡РёС‚Р°С‚СЊ РЅР°РѕР±РѕСЂРѕС‚.");
 				Doc_PrintLine	( nDocID,  1, ""					);	
-				Doc_PrintLine	( nDocID,  1, "- Галом"	);	
+				Doc_PrintLine	( nDocID,  1, "- Р“Р°Р»РѕРј"	);	
 				
 				
 				
@@ -717,7 +717,7 @@ func VOID Use_KalomsRecipe()
 
 
 /*********************************************
-** Missionsitems fьr Mis_1_PSI_DrugMonopol  **
+** Missionsitems fСЊr Mis_1_PSI_DrugMonopol  **
 *********************************************/
 /*
 INSTANCE SalmAmulett (C_Item)
@@ -746,7 +746,7 @@ INSTANCE SalmAmulett (C_Item)
 
 INSTANCE ItWrWorldmap(C_Item)
 {	
-	name 					=	"Карта колонии";
+	name 					=	"РљР°СЂС‚Р° РєРѕР»РѕРЅРёРё";
 	
 	mainflag 				=	ITEM_KAT_DOCS;
 	flags 					=	ITEM_MISSION;
@@ -760,8 +760,8 @@ INSTANCE ItWrWorldmap(C_Item)
 	on_state[0]				=	UseWorldmap;
 
 	description				= name;
-	TEXT[0]					= "К сожалению, здесь не хватает области";
-	TEXT[1]					= "на юго-западе.";
+	TEXT[0]					= "Рљ СЃРѕР¶Р°Р»РµРЅРёСЋ, Р·РґРµСЃСЊ РЅРµ С…РІР°С‚Р°РµС‚ РѕР±Р»Р°СЃС‚Рё";
+	TEXT[1]					= "РЅР° СЋРіРѕ-Р·Р°РїР°РґРµ.";
 	TEXT[5]					= NAME_Value;
 	COUNT[5]				= value;
 };
@@ -776,11 +776,11 @@ INSTANCE ItWrWorldmap(C_Item)
 					Doc_SetPage 	( nDocID, 0, "Map_World.tga", 	1	);  //  1 -> DO NOT SCALE 
 
 /*  				Doc_SetFont 	( nDocID, 0, "font_15_book.TGA"		); 	// -1 -> all pages 
-					Doc_SetMargins	( nDocID, 0, 120, 80, 10, 10, 	1	);  //  0 -> Textrahmen (von den Rдnder des TGAs aus, links-oben,rechts-unten)
+					Doc_SetMargins	( nDocID, 0, 120, 80, 10, 10, 	1	);  //  0 -> Textrahmen (von den RРґnder des TGAs aus, links-oben,rechts-unten)
 					Doc_PrintLine	( nDocID, 0, "Karte der"	);
 					Doc_PrintLine	( nDocID, 0, "Kolonie"	);
 
-// FIXME: mehrere Texte an verschiedenen Stellen fьr Location-Beschriftung funzen nicht.
+// FIXME: mehrere Texte an verschiedenen Stellen fСЊr Location-Beschriftung funzen nicht.
  					Doc_SetFont 	( nDocID, 0, "font_10_book.TGA"			); 
 					Doc_SetMargins	( nDocID, 0, 110, 300, 10, 10, 1	);
 					Doc_PrintLine	( nDocID, 0, "Neues Lager");
@@ -789,7 +789,7 @@ INSTANCE ItWrWorldmap(C_Item)
 					Doc_PrintLine	( nDocID, 0, "Altes Lager");
 
 					Doc_SetMargins	( nDocID, 0, 200, 420, 10, 10, 1	);
-					Doc_PrintLine	( nDocID, 0, "Dдmonenbeschwцrer");
+					Doc_PrintLine	( nDocID, 0, "DРґmonenbeschwС†rer");
 					
 					Doc_SetMargins	( nDocID, 0, 510, 340, 10, 10, 1	);
 					Doc_PrintLine	( nDocID, 0, "Sekten-Lager");
@@ -804,7 +804,7 @@ INSTANCE ItWrWorldmap(C_Item)
 
 INSTANCE ItWrOCmap(C_Item)
 {	
-	name 					=	"Карта";
+	name 					=	"РљР°СЂС‚Р°";
 	
 	mainflag 				=	ITEM_KAT_DOCS;
 	flags 					=	ITEM_MISSION;
@@ -817,7 +817,7 @@ INSTANCE ItWrOCmap(C_Item)
 	scemeName				=	"MAP";	
 	on_state[0]				=	UseOCmap;
 
-	description				= "Схема Старого лагеря";
+	description				= "РЎС…РµРјР° РЎС‚Р°СЂРѕРіРѕ Р»Р°РіРµСЂСЏ";
 	TEXT[5]					= NAME_Value;
 	COUNT[5]				= value;
 };
@@ -827,7 +827,7 @@ INSTANCE ItWrOCmap(C_Item)
 		var int nDocID;
 		
 		nDocID = 	Doc_CreateMap	()			  ;							// DocManager 
-//					Doc_SetLevel	( nDocID,	"WORLD.ZEN" ); Kein Positionsanzeiger mцglich!
+//					Doc_SetLevel	( nDocID,	"WORLD.ZEN" ); Kein Positionsanzeiger mС†glich!
 					Doc_SetPages	( nDocID, 1 );                         
 					Doc_SetPage 	( nDocID, 0, "Map_OldCamp.tga", 	1	);  //  1 -> DO NOT SCALE 
 					Doc_Show		( nDocID 	);
@@ -839,7 +839,7 @@ INSTANCE ItWrOCmap(C_Item)
 
 INSTANCE ItWrNCmap(C_Item)
 {	
-	name 					=	"Карта";
+	name 					=	"РљР°СЂС‚Р°";
 	
 	mainflag 				=	ITEM_KAT_DOCS;
 	flags 					=	ITEM_MISSION;
@@ -852,7 +852,7 @@ INSTANCE ItWrNCmap(C_Item)
 	scemeName				=	"MAP";	
 	on_state[0]				=	UseNCmap;
 
-	description				= "Схема Нового лагеря";
+	description				= "РЎС…РµРјР° РќРѕРІРѕРіРѕ Р»Р°РіРµСЂСЏ";
 	TEXT[5]					= NAME_Value;
 	COUNT[5]				= value;
 };
@@ -862,7 +862,7 @@ INSTANCE ItWrNCmap(C_Item)
 		var int nDocID;
 		
 		nDocID = 	Doc_CreateMap	()			  ;							// DocManager 
-//					Doc_SetLevel	( nDocID,	"WORLD.ZEN" ); Kein Positionsanzeiger mцglich!
+//					Doc_SetLevel	( nDocID,	"WORLD.ZEN" ); Kein Positionsanzeiger mС†glich!
 					Doc_SetPages	( nDocID, 1 );                         
 					Doc_SetPage 	( nDocID, 0, "Map_NewCamp.tga", 	1	);  //  1 -> DO NOT SCALE 
 					Doc_Show		( nDocID 	);
@@ -874,7 +874,7 @@ INSTANCE ItWrNCmap(C_Item)
 
 INSTANCE ItWrPSImap(C_Item)
 {	
-	name 					=	"Карта";
+	name 					=	"РљР°СЂС‚Р°";
 	
 	mainflag 				=	ITEM_KAT_DOCS;
 	flags 					=	ITEM_MISSION;
@@ -887,7 +887,7 @@ INSTANCE ItWrPSImap(C_Item)
 	scemeName				=	"MAP";	
 	on_state[0]				=	UsePSImap;
 
-	description				= "Схема Болотного лагеря";
+	description				= "РЎС…РµРјР° Р‘РѕР»РѕС‚РЅРѕРіРѕ Р»Р°РіРµСЂСЏ";
 	TEXT[5]					= NAME_Value;
 	COUNT[5]				= value;
 };
@@ -897,7 +897,7 @@ INSTANCE ItWrPSImap(C_Item)
 		var int nDocID;
 		
 		nDocID = 	Doc_CreateMap	()			  ;							// DocManager 
-//					Doc_SetLevel	( nDocID,	"WORLD.ZEN" ); Kein Positionsanzeiger mцglich!
+//					Doc_SetLevel	( nDocID,	"WORLD.ZEN" ); Kein Positionsanzeiger mС†glich!
 					Doc_SetPages	( nDocID, 1 );                         
 					Doc_SetPage 	( nDocID, 0, "Map_PSICamp.tga", 	1	);  //  1 -> DO NOT SCALE 
 					Doc_Show		( nDocID 	);
@@ -909,7 +909,7 @@ INSTANCE ItWrPSImap(C_Item)
 
 INSTANCE ItWrPinup(C_Item)
 {	
-	name 					=	"Набросок";
+	name 					=	"РќР°Р±СЂРѕСЃРѕРє";
 	
 	mainflag 				=	ITEM_KAT_DOCS;
 	flags 					=	ITEM_MISSION;
@@ -932,7 +932,7 @@ INSTANCE ItWrPinup(C_Item)
 		var int nDocID;
 		
 		nDocID = 	Doc_CreateMap	()			  ;							// DocManager 
-//					Doc_SetLevel	( nDocID,	"WORLD.ZEN" ); Kein Positionsanzeiger mцglich!
+//					Doc_SetLevel	( nDocID,	"WORLD.ZEN" ); Kein Positionsanzeiger mС†glich!
 					Doc_SetPages	( nDocID, 1 );                         
 					Doc_SetPage 	( nDocID, 0, "Map_PinUp.tga", 	1	);  //  1 -> DO NOT SCALE 
 					Doc_Show		( nDocID 	);
@@ -941,7 +941,7 @@ INSTANCE ItWrPinup(C_Item)
 /********************************************************************************/
 INSTANCE ItWrDieVerurteilten (C_Item)
 {	
-	name 					=	"Приговоренные";
+	name 					=	"РџСЂРёРіРѕРІРѕСЂРµРЅРЅС‹Рµ";
 
 	mainflag 				=	ITEM_KAT_NONE;
 	flags 					=	ITEM_MISSION;
@@ -973,7 +973,7 @@ INSTANCE ItWrDieVerurteilten (C_Item)
 /*********************************************************************************/
 INSTANCE ItWr_Fire_Letter_01 (C_Item)
 {	
-	name 				=	"Запечатанное письмо";
+	name 				=	"Р—Р°РїРµС‡Р°С‚Р°РЅРЅРѕРµ РїРёСЃСЊРјРѕ";
 
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION;
@@ -984,10 +984,10 @@ INSTANCE ItWr_Fire_Letter_01 (C_Item)
 	material 			=	MAT_LEATHER;
 	on_state[0]			=   UseFireletter;
 	scemeName			=	"MAPSEALED";
-	description			= "Письмо магам Огня";
+	description			= "РџРёСЃСЊРјРѕ РјР°РіР°Рј РћРіРЅСЏ";
 	//TEXT[0]				= "";
 	////COUNT[0]			= ;
-	TEXT[1]				= "Не вскрывать!";
+	TEXT[1]				= "РќРµ РІСЃРєСЂС‹РІР°С‚СЊ!";
 	////COUNT[1]			= ;
 	//TEXT[2]				= "";
 	//COUNT[2]			= ;
@@ -1011,18 +1011,18 @@ func void Usefireletter ()
 					Doc_SetFont 	( nDocID, -1, "font_10_book.tga"	   			); 	// -1 -> all pages 
 					Doc_SetMargins	( nDocID, -1, 50, 50, 50, 50, 1   		);  //  0 -> margins are in pixels
 					Doc_PrintLine	( nDocID,  0, " "					);
-					Doc_PrintLine	( nDocID,  0, "Многоуважаемый Мастер"					);
+					Doc_PrintLine	( nDocID,  0, "РњРЅРѕРіРѕСѓРІР°Р¶Р°РµРјС‹Р№ РњР°СЃС‚РµСЂ"					);
 					Doc_PrintLine	( nDocID,  0, ""					);
 					Doc_SetFont 	( nDocID, -1, "font_10_book.TGA"	   			); 	// -1 -> all pages 
-					Doc_PrintLines	( nDocID,  0, "Ваше предыдущее письмо вызвало беспокойство среди магов. Мы посоветовались и в этом послании сообщаем Вам о нашем решении. Братство представляет собой большую опасность. Оно угрожает нашей торговле с королем, угрожает нашему королевству и Вашей жизни. Вам необходимо отправить к сектантам одного из своих людей, чтобы он разузнал, какой бог наделяет их силой и какими знаниями они обладают. Когда это станет известно, мы сообщим священнослужителям о том, что мы вместе отправим этого темного бога туда, откуда он явился. Наши ученые работают над древними манускриптами. Мы постараемся сообщить Вам все, что сможем узнать."	);
+					Doc_PrintLines	( nDocID,  0, "Р’Р°С€Рµ РїСЂРµРґС‹РґСѓС‰РµРµ РїРёСЃСЊРјРѕ РІС‹Р·РІР°Р»Рѕ Р±РµСЃРїРѕРєРѕР№СЃС‚РІРѕ СЃСЂРµРґРё РјР°РіРѕРІ. РњС‹ РїРѕСЃРѕРІРµС‚РѕРІР°Р»РёСЃСЊ Рё РІ СЌС‚РѕРј РїРѕСЃР»Р°РЅРёРё СЃРѕРѕР±С‰Р°РµРј Р’Р°Рј Рѕ РЅР°С€РµРј СЂРµС€РµРЅРёРё. Р‘СЂР°С‚СЃС‚РІРѕ РїСЂРµРґСЃС‚Р°РІР»СЏРµС‚ СЃРѕР±РѕР№ Р±РѕР»СЊС€СѓСЋ РѕРїР°СЃРЅРѕСЃС‚СЊ. РћРЅРѕ СѓРіСЂРѕР¶Р°РµС‚ РЅР°С€РµР№ С‚РѕСЂРіРѕРІР»Рµ СЃ РєРѕСЂРѕР»РµРј, СѓРіСЂРѕР¶Р°РµС‚ РЅР°С€РµРјСѓ РєРѕСЂРѕР»РµРІСЃС‚РІСѓ Рё Р’Р°С€РµР№ Р¶РёР·РЅРё. Р’Р°Рј РЅРµРѕР±С…РѕРґРёРјРѕ РѕС‚РїСЂР°РІРёС‚СЊ Рє СЃРµРєС‚Р°РЅС‚Р°Рј РѕРґРЅРѕРіРѕ РёР· СЃРІРѕРёС… Р»СЋРґРµР№, С‡С‚РѕР±С‹ РѕРЅ СЂР°Р·СѓР·РЅР°Р», РєР°РєРѕР№ Р±РѕРі РЅР°РґРµР»СЏРµС‚ РёС… СЃРёР»РѕР№ Рё РєР°РєРёРјРё Р·РЅР°РЅРёСЏРјРё РѕРЅРё РѕР±Р»Р°РґР°СЋС‚. РљРѕРіРґР° СЌС‚Рѕ СЃС‚Р°РЅРµС‚ РёР·РІРµСЃС‚РЅРѕ, РјС‹ СЃРѕРѕР±С‰РёРј СЃРІСЏС‰РµРЅРЅРѕСЃР»СѓР¶РёС‚РµР»СЏРј Рѕ С‚РѕРј, С‡С‚Рѕ РјС‹ РІРјРµСЃС‚Рµ РѕС‚РїСЂР°РІРёРј СЌС‚РѕРіРѕ С‚РµРјРЅРѕРіРѕ Р±РѕРіР° С‚СѓРґР°, РѕС‚РєСѓРґР° РѕРЅ СЏРІРёР»СЃСЏ. РќР°С€Рё СѓС‡РµРЅС‹Рµ СЂР°Р±РѕС‚Р°СЋС‚ РЅР°Рґ РґСЂРµРІРЅРёРјРё РјР°РЅСѓСЃРєСЂРёРїС‚Р°РјРё. РњС‹ РїРѕСЃС‚Р°СЂР°РµРјСЃСЏ СЃРѕРѕР±С‰РёС‚СЊ Р’Р°Рј РІСЃРµ, С‡С‚Рѕ СЃРјРѕР¶РµРј СѓР·РЅР°С‚СЊ."	);
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLine	( nDocID,  0, "Да поможет нам Иннос!"					);
-					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLine	( nDocID,  0, ""					);
+					Doc_PrintLine	( nDocID,  0, "Р”Р° РїРѕРјРѕР¶РµС‚ РЅР°Рј РРЅРЅРѕСЃ!"					);
 					Doc_PrintLine	( nDocID,  0, ""					);
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_SetMargins	( nDocID, -1, 200, 50, 50, 50, 1   		);  //  0 -> margins are in pixels (Position des Textes von den Rдnder des TGAs aus
-					//Doc_PrintLine	( nDocID,  0, "Rigaldo Marschall des Kцnigs"					);
+					Doc_PrintLine	( nDocID,  0, ""					);
+					Doc_PrintLine	( nDocID,  0, ""					);
+					Doc_SetMargins	( nDocID, -1, 200, 50, 50, 50, 1   		);  //  0 -> margins are in pixels (Position des Textes von den RРґnder des TGAs aus
+					//Doc_PrintLine	( nDocID,  0, "Rigaldo Marschall des KС†nigs"					);
 					Doc_Show		( nDocID );
 		
 		
@@ -1030,7 +1030,7 @@ func void Usefireletter ()
 /********************************************************************************/
 INSTANCE ItWr_Fire_Letter_02 (C_Item)
 {	
-	name 				=	"Вскрытое письмо";
+	name 				=	"Р’СЃРєСЂС‹С‚РѕРµ РїРёСЃСЊРјРѕ";
 
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION;
@@ -1041,7 +1041,7 @@ INSTANCE ItWr_Fire_Letter_02 (C_Item)
 	material 			=	MAT_LEATHER;
 	on_state[0]			=   UseFireletter2;
 	scemeName			=	"MAP";
-	description			= "Письмо магам Огня";
+	description			= "РџРёСЃСЊРјРѕ РјР°РіР°Рј РћРіРЅСЏ";
 	//TEXT[0]				= "";
 	////COUNT[0]			= ;
 	//TEXT[1]				= "";
@@ -1066,29 +1066,29 @@ func void Usefireletter2 ()
 					Doc_SetFont 	( nDocID, -1, "font_10_book.tga"	   			); 	// -1 -> all pages 
 					Doc_SetMargins	( nDocID, -1, 50, 50, 50, 50, 1   		);  //  0 -> margins are in pixels
 					Doc_PrintLine	( nDocID,  0, " "					);
-					Doc_PrintLine	( nDocID,  0, "Многоуважаемый Мастер Ксардас"					);
+					Doc_PrintLine	( nDocID,  0, "РњРЅРѕРіРѕСѓРІР°Р¶Р°РµРјС‹Р№ РњР°СЃС‚РµСЂ РљСЃР°СЂРґР°СЃ"					);
 					Doc_PrintLine	( nDocID,  0, ""					);
 					Doc_SetFont 	( nDocID, -1, "font_10_book.TGA"	   			); 	// -1 -> all pages 
-					Doc_PrintLines	( nDocID,  0, "Ваше предыдущее письмо вызвало беспокойство среди магов. Мы посоветовались и в этом послании сообщаем Вам о нашем решении. Братство представляет собой большую опасность. Оно угрожает нашей торговле с королем, угрожает нашему королевству и Вашей жизни. Вам необходимо отправить к сектантам одного из своих людей, чтобы он разузнал, какой бог наделяет их силой и какими знаниями они обладают. Когда это станет известно, мы сообщим священнослужителям о том, что мы вместе отправим этого темного бога туда, откуда он явился. Наши ученые работают над древними манускриптами. Мы постараемся сообщить Вам все, что сможем узнать."	);
+					Doc_PrintLines	( nDocID,  0, "Р’Р°С€Рµ РїСЂРµРґС‹РґСѓС‰РµРµ РїРёСЃСЊРјРѕ РІС‹Р·РІР°Р»Рѕ Р±РµСЃРїРѕРєРѕР№СЃС‚РІРѕ СЃСЂРµРґРё РјР°РіРѕРІ. РњС‹ РїРѕСЃРѕРІРµС‚РѕРІР°Р»РёСЃСЊ Рё РІ СЌС‚РѕРј РїРѕСЃР»Р°РЅРёРё СЃРѕРѕР±С‰Р°РµРј Р’Р°Рј Рѕ РЅР°С€РµРј СЂРµС€РµРЅРёРё. Р‘СЂР°С‚СЃС‚РІРѕ РїСЂРµРґСЃС‚Р°РІР»СЏРµС‚ СЃРѕР±РѕР№ Р±РѕР»СЊС€СѓСЋ РѕРїР°СЃРЅРѕСЃС‚СЊ. РћРЅРѕ СѓРіСЂРѕР¶Р°РµС‚ РЅР°С€РµР№ С‚РѕСЂРіРѕРІР»Рµ СЃ РєРѕСЂРѕР»РµРј, СѓРіСЂРѕР¶Р°РµС‚ РЅР°С€РµРјСѓ РєРѕСЂРѕР»РµРІСЃС‚РІСѓ Рё Р’Р°С€РµР№ Р¶РёР·РЅРё. Р’Р°Рј РЅРµРѕР±С…РѕРґРёРјРѕ РѕС‚РїСЂР°РІРёС‚СЊ Рє СЃРµРєС‚Р°РЅС‚Р°Рј РѕРґРЅРѕРіРѕ РёР· СЃРІРѕРёС… Р»СЋРґРµР№, С‡С‚РѕР±С‹ РѕРЅ СЂР°Р·СѓР·РЅР°Р», РєР°РєРѕР№ Р±РѕРі РЅР°РґРµР»СЏРµС‚ РёС… СЃРёР»РѕР№ Рё РєР°РєРёРјРё Р·РЅР°РЅРёСЏРјРё РѕРЅРё РѕР±Р»Р°РґР°СЋС‚. РљРѕРіРґР° СЌС‚Рѕ СЃС‚Р°РЅРµС‚ РёР·РІРµСЃС‚РЅРѕ, РјС‹ СЃРѕРѕР±С‰РёРј СЃРІСЏС‰РµРЅРЅРѕСЃР»СѓР¶РёС‚РµР»СЏРј Рѕ С‚РѕРј, С‡С‚Рѕ РјС‹ РІРјРµСЃС‚Рµ РѕС‚РїСЂР°РІРёРј СЌС‚РѕРіРѕ С‚РµРјРЅРѕРіРѕ Р±РѕРіР° С‚СѓРґР°, РѕС‚РєСѓРґР° РѕРЅ СЏРІРёР»СЃСЏ. РќР°С€Рё СѓС‡РµРЅС‹Рµ СЂР°Р±РѕС‚Р°СЋС‚ РЅР°Рґ РґСЂРµРІРЅРёРјРё РјР°РЅСѓСЃРєСЂРёРїС‚Р°РјРё. РњС‹ РїРѕСЃС‚Р°СЂР°РµРјСЃСЏ СЃРѕРѕР±С‰РёС‚СЊ Р’Р°Рј РІСЃРµ, С‡С‚Рѕ СЃРјРѕР¶РµРј СѓР·РЅР°С‚СЊ."	);
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLine	( nDocID,  0, "Да поможет нам Иннос!"					);
+					Doc_PrintLine	( nDocID,  0, "Р”Р° РїРѕРјРѕР¶РµС‚ РЅР°Рј РРЅРЅРѕСЃ!"					);
 					Doc_PrintLine	( nDocID,  0, ""					);
-					//Doc_PrintLine	( nDocID,  0, "            Rigaldo, Marschall des Kцnigs");
+					//Doc_PrintLine	( nDocID,  0, "            Rigaldo, Marschall des KС†nigs");
 					Doc_PrintLine	( nDocID,  0, ""					);
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_SetMargins	( nDocID, -1, 200, 50, 50, 50, 1   		);  //  0 -> margins are in pixels (Position des Textes von den Rдnder des TGAs aus
+					Doc_SetMargins	( nDocID, -1, 200, 50, 50, 50, 1   		);  //  0 -> margins are in pixels (Position des Textes von den RРґnder des TGAs aus
 				
 					Doc_Show		( nDocID );
 		
 };
 
 /********************************************************************************/
-//SCHLЬSSEL 
+//SCHLР¬SSEL 
 /*********************************************************************************/
-//GOMEZ SCHLЬSSEL
+//GOMEZ SCHLР¬SSEL
 INSTANCE ItKe_Gomez_01(C_Item)
 {	
-	name 					=	"Ключ Гомеза";
+	name 					=	"РљР»СЋС‡ Р“РѕРјРµР·Р°";
 
 	mainflag 				=	ITEM_KAT_NONE;
 	flags 					=	0;	
@@ -1098,9 +1098,9 @@ INSTANCE ItKe_Gomez_01(C_Item)
 	visual 					=	"ItKe_Key_04.3ds";
 	material 				=	MAT_METAL;
 	description			= name;
-	TEXT[0]				= "Это ключ от личного сундука Гомеза.";
+	TEXT[0]				= "Р­С‚Рѕ РєР»СЋС‡ РѕС‚ Р»РёС‡РЅРѕРіРѕ СЃСѓРЅРґСѓРєР° Р“РѕРјРµР·Р°.";
 	////COUNT[0]			= ;
-	TEXT[1]				= "Он открывает камеры подвалов в замке Баронов.";
+	TEXT[1]				= "РћРЅ РѕС‚РєСЂС‹РІР°РµС‚ РєР°РјРµСЂС‹ РїРѕРґРІР°Р»РѕРІ РІ Р·Р°РјРєРµ Р‘Р°СЂРѕРЅРѕРІ.";
 	////COUNT[1]			= ;
 	//TEXT[2]				= "";
 	//COUNT[2]			= ;
@@ -1113,10 +1113,10 @@ INSTANCE ItKe_Gomez_01(C_Item)
 };
 
 /*********************************************************************************/
-//RICELORDS SCHLЬSSEL
+//RICELORDS SCHLР¬SSEL
 INSTANCE ItKey_RB_01(C_Item)
 {	
-	name 				=	"Ключ Лорда";
+	name 				=	"РљР»СЋС‡ Р›РѕСЂРґР°";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	0;	
@@ -1126,13 +1126,13 @@ INSTANCE ItKey_RB_01(C_Item)
 	visual 				=	"ItKe_Key_01.3ds";
 	material 			=	MAT_METAL;
 	description			=	name;
-	TEXT[0]				=	"Открывает сундук Лорда.";
+	TEXT[0]				=	"РћС‚РєСЂС‹РІР°РµС‚ СЃСѓРЅРґСѓРє Р›РѕСЂРґР°.";
 };
 /*********************************************************************************/
-//SCHMIEDESCHLЬSSEL ERZBARONE
+//SCHMIEDESCHLР¬SSEL ERZBARONE
 INSTANCE ItKe_OB_Smith_01(C_Item)
 {	
-	name 					=	"Железный ключ";
+	name 					=	"Р–РµР»РµР·РЅС‹Р№ РєР»СЋС‡";
 
 	mainflag 				=	ITEM_KAT_NONE;
 	flags 					=	0;	
@@ -1142,7 +1142,7 @@ INSTANCE ItKe_OB_Smith_01(C_Item)
 	visual 					=	"ItKe_Key_02.3ds";
 	material 				=	MAT_METAL;
 	description			= name;
-	TEXT[0]				= "Он открывает дверь в кузницу.";
+	TEXT[0]				= "РћРЅ РѕС‚РєСЂС‹РІР°РµС‚ РґРІРµСЂСЊ РІ РєСѓР·РЅРёС†Сѓ.";
 	////COUNT[0]			= ;
 	//TEXT[1]				= "";
 	////COUNT[1]			= ;
@@ -1159,7 +1159,7 @@ INSTANCE ItKe_OB_Smith_01(C_Item)
 // 
 INSTANCE ItKe_Storage_01(C_Item)
 {	
-	name 					=	"Ключ";
+	name 					=	"РљР»СЋС‡";
 
 	mainflag 				=	ITEM_KAT_NONE;
 	flags 					=	0;	
@@ -1169,9 +1169,9 @@ INSTANCE ItKe_Storage_01(C_Item)
 	visual 					=	"ItKe_Key_03.3ds";
 	material 				=	MAT_METAL;
 	description			= name;
-	TEXT[0]				= "Открывает главную дверь";
+	TEXT[0]				= "РћС‚РєСЂС‹РІР°РµС‚ РіР»Р°РІРЅСѓСЋ РґРІРµСЂСЊ";
 	////COUNT[0]			= ;
-	TEXT[1]				= "в подвалах замка Баронов.";
+	TEXT[1]				= "РІ РїРѕРґРІР°Р»Р°С… Р·Р°РјРєР° Р‘Р°СЂРѕРЅРѕРІ.";
 	////COUNT[1]			= ;
 	//TEXT[2]				= "";
 	//COUNT[2]			= ;
@@ -1184,13 +1184,13 @@ INSTANCE ItKe_Storage_01(C_Item)
 };
 
 /********************************************************/
-//			SCHLЬSSEL IN DER ALTEN MINE
+//			SCHLР¬SSEL IN DER ALTEN MINE
 /********************************************************/
 
 /********************************************************/
 INSTANCE ItKe_OM_01(C_Item)
 {	
-	name 				=	"Ключ от сундука";
+	name 				=	"РљР»СЋС‡ РѕС‚ СЃСѓРЅРґСѓРєР°";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	0;	
@@ -1200,14 +1200,14 @@ INSTANCE ItKe_OM_01(C_Item)
 	visual 				=	"ItKe_Key_01.3ds";
 	material 			=	MAT_METAL;
 	description			= name;
-	TEXT[0]				= "Место Сантино";
-	TEXT[1]				= "Верхняя площадка для обмена";
-	TEXT[2]				= "Старая шахта";
+	TEXT[0]				= "РњРµСЃС‚Рѕ РЎР°РЅС‚РёРЅРѕ";
+	TEXT[1]				= "Р’РµСЂС…РЅСЏСЏ РїР»РѕС‰Р°РґРєР° РґР»СЏ РѕР±РјРµРЅР°";
+	TEXT[2]				= "РЎС‚Р°СЂР°СЏ С€Р°С…С‚Р°";
 };
 /********************************************************/
 INSTANCE ItKe_OM_02(C_Item)
 {	
-	name 				=	"Ключ от сундука";
+	name 				=	"РљР»СЋС‡ РѕС‚ СЃСѓРЅРґСѓРєР°";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	0;	
@@ -1217,14 +1217,14 @@ INSTANCE ItKe_OM_02(C_Item)
 	visual 				=	"ItKe_Key_02.3ds";
 	material 			=	MAT_METAL;
 	description			= name;
-	TEXT[0]				= "Открывает сундук Аарона";
-	TEXT[1]				= "в Старой шахте.";
+	TEXT[0]				= "РћС‚РєСЂС‹РІР°РµС‚ СЃСѓРЅРґСѓРє РђР°СЂРѕРЅР°";
+	TEXT[1]				= "РІ РЎС‚Р°СЂРѕР№ С€Р°С…С‚Рµ.";
 };
 
 /********************************************************/
 INSTANCE ItKe_OM_03(C_Item)
 {	
-	name 				=	"Ключ от сундука";
+	name 				=	"РљР»СЋС‡ РѕС‚ СЃСѓРЅРґСѓРєР°";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	0;	
@@ -1234,14 +1234,14 @@ INSTANCE ItKe_OM_03(C_Item)
 	visual 				=	"ItKe_Key_03.3ds";
 	material 			=	MAT_METAL;
 	description			= name;
-	TEXT[0]				= "Открывает сундуки";
-	TEXT[1]             = "на складе в Старой шахте.";
+	TEXT[0]				= "РћС‚РєСЂС‹РІР°РµС‚ СЃСѓРЅРґСѓРєРё";
+	TEXT[1]             = "РЅР° СЃРєР»Р°РґРµ РІ РЎС‚Р°СЂРѕР№ С€Р°С…С‚Рµ.";
 };
 
 /********************************************************/
 INSTANCE ItKe_OM_04(C_Item)
 {	
-	name 				=	"Ключ от сундука";
+	name 				=	"РљР»СЋС‡ РѕС‚ СЃСѓРЅРґСѓРєР°";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	0;	
@@ -1251,14 +1251,14 @@ INSTANCE ItKe_OM_04(C_Item)
 	visual 				=	"ItKe_Key_04.3ds";
 	material 			=	MAT_METAL;
 	description			= name;
-	TEXT[0]				= "Место Альберто";
-	TEXT[1]				= "Нижняя площадка обмена";
+	TEXT[0]				= "РњРµСЃС‚Рѕ РђР»СЊР±РµСЂС‚Рѕ";
+	TEXT[1]				= "РќРёР¶РЅСЏСЏ РїР»РѕС‰Р°РґРєР° РѕР±РјРµРЅР°";
 };
 
 /********************************GESCHENK VON IAN *********************************************/
 INSTANCE ItFo_OM_Beer_01(C_Item)
 {
-	name 					=	"Крепкое пиво";
+	name 					=	"РљСЂРµРїРєРѕРµ РїРёРІРѕ";
 
 	mainflag 				=	ITEM_KAT_FOOD;
 	flags 					=	ITEM_MULTI;
@@ -1293,7 +1293,7 @@ INSTANCE ItFo_OM_Beer_01(C_Item)
 
 
 //***********************************************************************************************************
-//**								Das Rдtsel des Nebelturms			Bjцrn							   **
+//**								Das RРґtsel des Nebelturms			BjС†rn							   **
 //***********************************************************************************************************
 
 //*******Effekt nur beim ersten benutzen des Buches
@@ -1307,7 +1307,7 @@ var int riddle6;
 
 INSTANCE theriddle1(C_Item)
 {	
-	name 					=	"Старая книга";
+	name 					=	"РЎС‚Р°СЂР°СЏ РєРЅРёРіР°";
 	
 	mainflag 				=	ITEM_KAT_DOCS;
 	flags 					=	ITEM_MISSION;
@@ -1318,7 +1318,7 @@ INSTANCE theriddle1(C_Item)
 	material 				=	MAT_LEATHER;
 
 	scemeName				=	"MAP";	
-	description			= "Хроманин";
+	description			= "РҐСЂРѕРјР°РЅРёРЅ";
 	
 	TEXT[5]				= NAME_Value;
 	COUNT[5]			= value;
@@ -1338,16 +1338,16 @@ INSTANCE theriddle1(C_Item)
    					Doc_SetFont 	( nDocID, -1, "font_15_book.tga"	   			); 	// -1 -> all pages 
   					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   		);  //  0 -> margins are in pixels
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLine	( nDocID,  0, "Хроманин"			);
+					Doc_PrintLine	( nDocID,  0, "РҐСЂРѕРјР°РЅРёРЅ"			);
 					Doc_PrintLine	( nDocID,  0, "-----------");
 					Doc_SetFont 	( nDocID, -1, "font_10_book.TGA"	   			); 	// -1 -> all pages 
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLines	( nDocID,  0, "Тот, кто готов отказаться от всех земных страстей и следовать тропами правды, должен узнать, где сокрыт источник моей силы. Найдя его, он будет способен разрушить все, что соединяет его с этим миром, и покажет, что он готов принять знания Хроманина.");
+					Doc_PrintLines	( nDocID,  0, "РўРѕС‚, РєС‚Рѕ РіРѕС‚РѕРІ РѕС‚РєР°Р·Р°С‚СЊСЃСЏ РѕС‚ РІСЃРµС… Р·РµРјРЅС‹С… СЃС‚СЂР°СЃС‚РµР№ Рё СЃР»РµРґРѕРІР°С‚СЊ С‚СЂРѕРїР°РјРё РїСЂР°РІРґС‹, РґРѕР»Р¶РµРЅ СѓР·РЅР°С‚СЊ, РіРґРµ СЃРѕРєСЂС‹С‚ РёСЃС‚РѕС‡РЅРёРє РјРѕРµР№ СЃРёР»С‹. РќР°Р№РґСЏ РµРіРѕ, РѕРЅ Р±СѓРґРµС‚ СЃРїРѕСЃРѕР±РµРЅ СЂР°Р·СЂСѓС€РёС‚СЊ РІСЃРµ, С‡С‚Рѕ СЃРѕРµРґРёРЅСЏРµС‚ РµРіРѕ СЃ СЌС‚РёРј РјРёСЂРѕРј, Рё РїРѕРєР°Р¶РµС‚, С‡С‚Рѕ РѕРЅ РіРѕС‚РѕРІ РїСЂРёРЅСЏС‚СЊ Р·РЅР°РЅРёСЏ РҐСЂРѕРјР°РЅРёРЅР°.");
 					
 				
 
 					//2.Seite
-					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den Rдnder des TGAs aus, links,oben,rechts,unten)
+					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den RРґnder des TGAs aus, links,oben,rechts,unten)
 					Doc_PrintLine	( nDocID,  1, "");
 					Doc_PrintLine	( nDocID,  1, "");
 					Doc_PrintLine	( nDocID,  1, "");
@@ -1357,14 +1357,14 @@ INSTANCE theriddle1(C_Item)
 					Doc_PrintLine	( nDocID,  1, "");
 					Doc_PrintLine	( nDocID,  1, "");
 					Doc_PrintLine	( nDocID,  1, "");
-					Doc_PrintLines	( nDocID,  1, "Мудрый пересматривает свои прошлые дела, прежде чем начать что-то новое.");
+					Doc_PrintLines	( nDocID,  1, "РњСѓРґСЂС‹Р№ РїРµСЂРµСЃРјР°С‚СЂРёРІР°РµС‚ СЃРІРѕРё РїСЂРѕС€Р»С‹Рµ РґРµР»Р°, РїСЂРµР¶РґРµ С‡РµРј РЅР°С‡Р°С‚СЊ С‡С‚Рѕ-С‚Рѕ РЅРѕРІРѕРµ.");
 					Doc_Show		( nDocID );
 				
 					if (riddle1 == FALSE)
 					{
 						Log_CreateTopic		(theriddle_log,		LOG_MISSION);
 						Log_SetTopicStatus	(theriddle_log,		LOG_RUNNING);
-						B_LogEntry			(theriddle_log,		"Я взял у скелета-мага в туманной башне одну очень странную книгу. 'Хроманин'! Она содержит непонятные вещи. В ней написано, что таинственный Некто создал этот мир: ...Мудрый пересматривает свои прошлые дела, прежде чем начать что-то новое... Да... Я еще ничего не понимаю, но, может быть, скоро что-нибудь прояснится."); 
+						B_LogEntry			(theriddle_log,		"РЇ РІР·СЏР» Сѓ СЃРєРµР»РµС‚Р°-РјР°РіР° РІ С‚СѓРјР°РЅРЅРѕР№ Р±Р°С€РЅРµ РѕРґРЅСѓ РѕС‡РµРЅСЊ СЃС‚СЂР°РЅРЅСѓСЋ РєРЅРёРіСѓ. 'РҐСЂРѕРјР°РЅРёРЅ'! РћРЅР° СЃРѕРґРµСЂР¶РёС‚ РЅРµРїРѕРЅСЏС‚РЅС‹Рµ РІРµС‰Рё. Р’ РЅРµР№ РЅР°РїРёСЃР°РЅРѕ, С‡С‚Рѕ С‚Р°РёРЅСЃС‚РІРµРЅРЅС‹Р№ РќРµРєС‚Рѕ СЃРѕР·РґР°Р» СЌС‚РѕС‚ РјРёСЂ: ...РњСѓРґСЂС‹Р№ РїРµСЂРµСЃРјР°С‚СЂРёРІР°РµС‚ СЃРІРѕРё РїСЂРѕС€Р»С‹Рµ РґРµР»Р°, РїСЂРµР¶РґРµ С‡РµРј РЅР°С‡Р°С‚СЊ С‡С‚Рѕ-С‚Рѕ РЅРѕРІРѕРµ... Р”Р°... РЇ РµС‰Рµ РЅРёС‡РµРіРѕ РЅРµ РїРѕРЅРёРјР°СЋ, РЅРѕ, РјРѕР¶РµС‚ Р±С‹С‚СЊ, СЃРєРѕСЂРѕ С‡С‚Рѕ-РЅРёР±СѓРґСЊ РїСЂРѕСЏСЃРЅРёС‚СЃСЏ."); 
 						Wld_InsertItem			(theriddle2,"CASTLE_TOWER_TOP");
 					
 						riddle1 = TRUE;
@@ -1374,7 +1374,7 @@ INSTANCE theriddle1(C_Item)
 
 INSTANCE theriddle2(C_Item)
 {	
-	name 					=	"Старая книга";
+	name 					=	"РЎС‚Р°СЂР°СЏ РєРЅРёРіР°";
 	
 	mainflag 				=	ITEM_KAT_DOCS;
 	flags 					=	ITEM_MISSION;
@@ -1385,7 +1385,7 @@ INSTANCE theriddle2(C_Item)
 	material 				=	MAT_LEATHER;
 
 	scemeName				=	"MAP";	
-	description			= "Хроманин 2";
+	description			= "РҐСЂРѕРјР°РЅРёРЅ 2";
 	
 	TEXT[5]				= NAME_Value;
 	COUNT[5]			= value;
@@ -1406,16 +1406,16 @@ INSTANCE theriddle2(C_Item)
   					Doc_SetFont 	( nDocID, -1, "font_15_book.tga"	   			); 	// -1 -> all pages 
   					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   		);  //  0 -> margins are in pixels
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLine	( nDocID,  0, "Хроманин"			);
+					Doc_PrintLine	( nDocID,  0, "РҐСЂРѕРјР°РЅРёРЅ"			);
 					Doc_PrintLine	( nDocID,  0, "-----------");
 					Doc_SetFont 	( nDocID, -1, "font_10_book.TGA"	   			); 	// -1 -> all pages 
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLines	( nDocID,  0, "В приносимых ветрами видениях Хроманина открывалось передо мной будущее. За веру в него я готов был отдать все, но и этого было бы мало. Они потрясли меня до глубины души.");
+					Doc_PrintLines	( nDocID,  0, "Р’ РїСЂРёРЅРѕСЃРёРјС‹С… РІРµС‚СЂР°РјРё РІРёРґРµРЅРёСЏС… РҐСЂРѕРјР°РЅРёРЅР° РѕС‚РєСЂС‹РІР°Р»РѕСЃСЊ РїРµСЂРµРґРѕ РјРЅРѕР№ Р±СѓРґСѓС‰РµРµ. Р—Р° РІРµСЂСѓ РІ РЅРµРіРѕ СЏ РіРѕС‚РѕРІ Р±С‹Р» РѕС‚РґР°С‚СЊ РІСЃРµ, РЅРѕ Рё СЌС‚РѕРіРѕ Р±С‹Р»Рѕ Р±С‹ РјР°Р»Рѕ. РћРЅРё РїРѕС‚СЂСЏСЃР»Рё РјРµРЅСЏ РґРѕ РіР»СѓР±РёРЅС‹ РґСѓС€Рё.");
 					
 				
 
 					//2.Seite
-					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den Rдnder des TGAs aus, links,oben,rechts,unten)
+					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den RРґnder des TGAs aus, links,oben,rechts,unten)
 					Doc_PrintLine	( nDocID,  1, "");
 					Doc_PrintLine	( nDocID,  1, "");
 					Doc_PrintLine	( nDocID,  1, "");
@@ -1425,13 +1425,13 @@ INSTANCE theriddle2(C_Item)
 					Doc_PrintLine	( nDocID,  1, "");
 					Doc_PrintLine	( nDocID,  1, "");
 					Doc_PrintLine	( nDocID,  1, "");
-					Doc_PrintLines	( nDocID,  1, "Что было разделено, снова станет единым, если разделение длится недолго.");
+					Doc_PrintLines	( nDocID,  1, "Р§С‚Рѕ Р±С‹Р»Рѕ СЂР°Р·РґРµР»РµРЅРѕ, СЃРЅРѕРІР° СЃС‚Р°РЅРµС‚ РµРґРёРЅС‹Рј, РµСЃР»Рё СЂР°Р·РґРµР»РµРЅРёРµ РґР»РёС‚СЃСЏ РЅРµРґРѕР»РіРѕ.");
 					Doc_Show		( nDocID );
 					
 					if (riddle2 == FALSE)
 					{					
 						B_GiveXP (300);
-						B_LogEntry			(theriddle_log,		"Я нашел вторую книгу, на которой стоит слово 'Хроманин'. Она оказалась не менее загадочной... Что было разделено, снова станет единым, если разделение длится недолго..."); 
+						B_LogEntry			(theriddle_log,		"РЇ РЅР°С€РµР» РІС‚РѕСЂСѓСЋ РєРЅРёРіСѓ, РЅР° РєРѕС‚РѕСЂРѕР№ СЃС‚РѕРёС‚ СЃР»РѕРІРѕ 'РҐСЂРѕРјР°РЅРёРЅ'. РћРЅР° РѕРєР°Р·Р°Р»Р°СЃСЊ РЅРµ РјРµРЅРµРµ Р·Р°РіР°РґРѕС‡РЅРѕР№... Р§С‚Рѕ Р±С‹Р»Рѕ СЂР°Р·РґРµР»РµРЅРѕ, СЃРЅРѕРІР° СЃС‚Р°РЅРµС‚ РµРґРёРЅС‹Рј, РµСЃР»Рё СЂР°Р·РґРµР»РµРЅРёРµ РґР»РёС‚СЃСЏ РЅРµРґРѕР»РіРѕ..."); 
 						Snd_Play 		("FoundRiddlersBook");
 						Wld_InsertItem			(theriddle3,"FP_SLEEP_OW_BLOODFLY_01_02");
 					
@@ -1442,7 +1442,7 @@ INSTANCE theriddle2(C_Item)
 	};
 INSTANCE theriddle3(C_Item)
 {	
-	name 					=	"Старая книга";
+	name 					=	"РЎС‚Р°СЂР°СЏ РєРЅРёРіР°";
 	
 	mainflag 				=	ITEM_KAT_DOCS;
 	flags 					=	ITEM_MISSION;
@@ -1453,7 +1453,7 @@ INSTANCE theriddle3(C_Item)
 	material 				=	MAT_LEATHER;
 
 	scemeName				=	"MAP";	
-	description			= "Хроманин 3";
+	description			= "РҐСЂРѕРјР°РЅРёРЅ 3";
 	
 	TEXT[5]				= NAME_Value;
 	COUNT[5]			= value;
@@ -1474,16 +1474,16 @@ INSTANCE theriddle3(C_Item)
    					Doc_SetFont 	( nDocID, -1, "font_15_book.tga"	   			); 	// -1 -> all pages 
   					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   		);  //  0 -> margins are in pixels
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLine	( nDocID,  0, "Хроманин"			);
+					Doc_PrintLine	( nDocID,  0, "РҐСЂРѕРјР°РЅРёРЅ"			);
 					Doc_PrintLine	( nDocID,  0, "-----------");
 					Doc_SetFont 	( nDocID, -1, "font_10_book.TGA"	   			); 	// -1 -> all pages 
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLines	( nDocID,  0, "О, боги древних времен. Возможно ли, чтобы такой человек, как я, недостойный, получил эту силу. Как велик страх потерять все, выказав малейшее слово сомнения.");
+					Doc_PrintLines	( nDocID,  0, "Рћ, Р±РѕРіРё РґСЂРµРІРЅРёС… РІСЂРµРјРµРЅ. Р’РѕР·РјРѕР¶РЅРѕ Р»Рё, С‡С‚РѕР±С‹ С‚Р°РєРѕР№ С‡РµР»РѕРІРµРє, РєР°Рє СЏ, РЅРµРґРѕСЃС‚РѕР№РЅС‹Р№, РїРѕР»СѓС‡РёР» СЌС‚Сѓ СЃРёР»Сѓ. РљР°Рє РІРµР»РёРє СЃС‚СЂР°С… РїРѕС‚РµСЂСЏС‚СЊ РІСЃРµ, РІС‹РєР°Р·Р°РІ РјР°Р»РµР№С€РµРµ СЃР»РѕРІРѕ СЃРѕРјРЅРµРЅРёСЏ.");
 					
 				
 
 					//2.Seite
-					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den Rдnder des TGAs aus, links,oben,rechts,unten)
+					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den RРґnder des TGAs aus, links,oben,rechts,unten)
 					Doc_PrintLine	( nDocID,  1, "");
 					Doc_PrintLine	( nDocID,  1, "");
 					Doc_PrintLine	( nDocID,  1, "");
@@ -1493,7 +1493,7 @@ INSTANCE theriddle3(C_Item)
 					Doc_PrintLine	( nDocID,  1, "");
 					Doc_PrintLine	( nDocID,  1, "");
 					Doc_PrintLine	( nDocID,  1, "");
-					Doc_PrintLines	( nDocID,  1, "Умный рыбак попробует найти удачу и на другом берегу моря.");
+					Doc_PrintLines	( nDocID,  1, "РЈРјРЅС‹Р№ СЂС‹Р±Р°Рє РїРѕРїСЂРѕР±СѓРµС‚ РЅР°Р№С‚Рё СѓРґР°С‡Сѓ Рё РЅР° РґСЂСѓРіРѕРј Р±РµСЂРµРіСѓ РјРѕСЂСЏ.");
 					Doc_Show		( nDocID );
 
 
@@ -1501,7 +1501,7 @@ INSTANCE theriddle3(C_Item)
 					if (riddle3 == FALSE)
 					{		
 						B_GiveXP (500);
-						B_LogEntry			(theriddle_log,		"Я нашел третью книгу. Кажется, я начинаю понимать, что хотел сказать ее автор... Умный рыбак попробует найти удачу и на другом берегу моря..."); 
+						B_LogEntry			(theriddle_log,		"РЇ РЅР°С€РµР» С‚СЂРµС‚СЊСЋ РєРЅРёРіСѓ. РљР°Р¶РµС‚СЃСЏ, СЏ РЅР°С‡РёРЅР°СЋ РїРѕРЅРёРјР°С‚СЊ, С‡С‚Рѕ С…РѕС‚РµР» СЃРєР°Р·Р°С‚СЊ РµРµ Р°РІС‚РѕСЂ... РЈРјРЅС‹Р№ СЂС‹Р±Р°Рє РїРѕРїСЂРѕР±СѓРµС‚ РЅР°Р№С‚Рё СѓРґР°С‡Сѓ Рё РЅР° РґСЂСѓРіРѕРј Р±РµСЂРµРіСѓ РјРѕСЂСЏ..."); 
 						Snd_Play 		("FoundRiddlersBook");
 						Wld_InsertItem			(theriddle4,"FP_SLEEP_OW_LURKER_NC_LAKE_02");
 						
@@ -1515,7 +1515,7 @@ INSTANCE theriddle3(C_Item)
 				
 INSTANCE theriddle4(C_Item)
 {	
-	name 					=	"Старая книга";
+	name 					=	"РЎС‚Р°СЂР°СЏ РєРЅРёРіР°";
 	
 	mainflag 				=	ITEM_KAT_DOCS;
 	flags 					=	ITEM_MISSION;
@@ -1526,7 +1526,7 @@ INSTANCE theriddle4(C_Item)
 	material 				=	MAT_LEATHER;
 
 	scemeName				=	"MAP";	
-	description			= "Хроманин 4";
+	description			= "РҐСЂРѕРјР°РЅРёРЅ 4";
 	
 	TEXT[5]				= NAME_Value;
 	COUNT[5]			= value;
@@ -1547,16 +1547,16 @@ INSTANCE theriddle4(C_Item)
   					Doc_SetFont 	( nDocID, -1, "font_15_book.tga"	   			); 	// -1 -> all pages 
   					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   		);  //  0 -> margins are in pixels
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLine	( nDocID,  0, "Хроманин"			);
+					Doc_PrintLine	( nDocID,  0, "РҐСЂРѕРјР°РЅРёРЅ"			);
 					Doc_PrintLine	( nDocID,  0, "-----------");
 					Doc_SetFont 	( nDocID, -1, "font_10_book.TGA"	   			); 	// -1 -> all pages 
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLines	( nDocID,  0, "Я даже не смею надеяться когда-нибудь самому пережить Хроманин. Прошли дни растрат и пустых слов. Теперь будет так просто достичь исполнения, и очень скоро я это сделаю.");
+					Doc_PrintLines	( nDocID,  0, "РЇ РґР°Р¶Рµ РЅРµ СЃРјРµСЋ РЅР°РґРµСЏС‚СЊСЃСЏ РєРѕРіРґР°-РЅРёР±СѓРґСЊ СЃР°РјРѕРјСѓ РїРµСЂРµР¶РёС‚СЊ РҐСЂРѕРјР°РЅРёРЅ. РџСЂРѕС€Р»Рё РґРЅРё СЂР°СЃС‚СЂР°С‚ Рё РїСѓСЃС‚С‹С… СЃР»РѕРІ. РўРµРїРµСЂСЊ Р±СѓРґРµС‚ С‚Р°Рє РїСЂРѕСЃС‚Рѕ РґРѕСЃС‚РёС‡СЊ РёСЃРїРѕР»РЅРµРЅРёСЏ, Рё РѕС‡РµРЅСЊ СЃРєРѕСЂРѕ СЏ СЌС‚Рѕ СЃРґРµР»Р°СЋ.");
 					
 				
 
 					//2.Seite
-					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den Rдnder des TGAs aus, links,oben,rechts,unten)
+					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den RРґnder des TGAs aus, links,oben,rechts,unten)
 					Doc_PrintLine	( nDocID,  1, "");
 					Doc_PrintLine	( nDocID,  1, "");
 					Doc_PrintLine	( nDocID,  1, "");
@@ -1566,14 +1566,14 @@ INSTANCE theriddle4(C_Item)
 					Doc_PrintLine	( nDocID,  1, "");
 					Doc_PrintLine	( nDocID,  1, "");
 					Doc_PrintLine	( nDocID,  1, "");
-					Doc_PrintLines	( nDocID,  1, "Забыты дела тех, кто был когда-то на борту.");
+					Doc_PrintLines	( nDocID,  1, "Р—Р°Р±С‹С‚С‹ РґРµР»Р° С‚РµС…, РєС‚Рѕ Р±С‹Р» РєРѕРіРґР°-С‚Рѕ РЅР° Р±РѕСЂС‚Сѓ.");
 					Doc_Show		( nDocID );
 					
 
 					if (riddle4 == FALSE)
 					{					
 						B_GiveXP (700);
-						B_LogEntry			(theriddle_log,		"Книга четвертая. И зачем только я позволяю этим книжкам морочить мне голову... Забыты дела тех, кто был когда-то на борту..."); 
+						B_LogEntry			(theriddle_log,		"РљРЅРёРіР° С‡РµС‚РІРµСЂС‚Р°СЏ. Р Р·Р°С‡РµРј С‚РѕР»СЊРєРѕ СЏ РїРѕР·РІРѕР»СЏСЋ СЌС‚РёРј РєРЅРёР¶РєР°Рј РјРѕСЂРѕС‡РёС‚СЊ РјРЅРµ РіРѕР»РѕРІСѓ... Р—Р°Р±С‹С‚С‹ РґРµР»Р° С‚РµС…, РєС‚Рѕ Р±С‹Р» РєРѕРіРґР°-С‚Рѕ РЅР° Р±РѕСЂС‚Сѓ..."); 
 						Snd_Play 		("FoundRiddlersBook");					
 						Wld_InsertItem			(theriddle5,"LOCATION_25_01");
 					
@@ -1588,7 +1588,7 @@ INSTANCE theriddle4(C_Item)
 								
 INSTANCE theriddle5(C_Item)
 {	
-	name 					=	"Старая книга";
+	name 					=	"РЎС‚Р°СЂР°СЏ РєРЅРёРіР°";
 	
 	mainflag 				=	ITEM_KAT_DOCS;
 	flags 					=	ITEM_MISSION;
@@ -1599,7 +1599,7 @@ INSTANCE theriddle5(C_Item)
 	material 				=	MAT_LEATHER;
 
 	scemeName				=	"MAP";	
-	description			= "Хроманин 5";
+	description			= "РҐСЂРѕРјР°РЅРёРЅ 5";
 	
 	TEXT[5]				= NAME_Value;
 	COUNT[5]			= value;
@@ -1620,16 +1620,16 @@ INSTANCE theriddle5(C_Item)
   					Doc_SetFont 	( nDocID, -1, "font_15_book.tga"	   			); 	// -1 -> all pages 
   					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   		);  //  0 -> margins are in pixels
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLine	( nDocID,  0, "Хроманин"			);
+					Doc_PrintLine	( nDocID,  0, "РҐСЂРѕРјР°РЅРёРЅ"			);
 					Doc_PrintLine	( nDocID,  0, "-----------");
 					Doc_SetFont 	( nDocID, -1, "font_10_book.TGA"	   			); 	// -1 -> all pages 
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLines	( nDocID,  0, "Но я не буду вставать на этот путь один. Я должен буду разделить силу, сокрытую во мне, с достойным, который найдет меня. Надеюсь, мое ожидание не затянется надолго...");
+					Doc_PrintLines	( nDocID,  0, "РќРѕ СЏ РЅРµ Р±СѓРґСѓ РІСЃС‚Р°РІР°С‚СЊ РЅР° СЌС‚РѕС‚ РїСѓС‚СЊ РѕРґРёРЅ. РЇ РґРѕР»Р¶РµРЅ Р±СѓРґСѓ СЂР°Р·РґРµР»РёС‚СЊ СЃРёР»Сѓ, СЃРѕРєСЂС‹С‚СѓСЋ РІРѕ РјРЅРµ, СЃ РґРѕСЃС‚РѕР№РЅС‹Рј, РєРѕС‚РѕСЂС‹Р№ РЅР°Р№РґРµС‚ РјРµРЅСЏ. РќР°РґРµСЋСЃСЊ, РјРѕРµ РѕР¶РёРґР°РЅРёРµ РЅРµ Р·Р°С‚СЏРЅРµС‚СЃСЏ РЅР°РґРѕР»РіРѕ...");
 					
 				
 
 					//2.Seite
-					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den Rдnder des TGAs aus, links,oben,rechts,unten)
+					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den RРґnder des TGAs aus, links,oben,rechts,unten)
 					Doc_PrintLine	( nDocID,  1, "");
 					Doc_PrintLine	( nDocID,  1, "");
 					Doc_PrintLine	( nDocID,  1, "");
@@ -1639,7 +1639,7 @@ INSTANCE theriddle5(C_Item)
 					Doc_PrintLine	( nDocID,  1, "");
 					Doc_PrintLine	( nDocID,  1, "");
 					Doc_PrintLine	( nDocID,  1, "");
-					Doc_PrintLines	( nDocID,  1, "Ты найдешь меня там, где все началось.");
+					Doc_PrintLines	( nDocID,  1, "РўС‹ РЅР°Р№РґРµС€СЊ РјРµРЅСЏ С‚Р°Рј, РіРґРµ РІСЃРµ РЅР°С‡Р°Р»РѕСЃСЊ.");
 					Doc_Show		( nDocID );
 
 
@@ -1648,7 +1648,7 @@ INSTANCE theriddle5(C_Item)
 					if (riddle5 == FALSE)
 					{
 						B_GiveXP (850);
-						B_LogEntry			(theriddle_log,		"Кажется, это последняя книга. Интересно, с кем мне предстоит встретиться... Ты найдешь меня там, где все началось."); 
+						B_LogEntry			(theriddle_log,		"РљР°Р¶РµС‚СЃСЏ, СЌС‚Рѕ РїРѕСЃР»РµРґРЅСЏСЏ РєРЅРёРіР°. РРЅС‚РµСЂРµСЃРЅРѕ, СЃ РєРµРј РјРЅРµ РїСЂРµРґСЃС‚РѕРёС‚ РІСЃС‚СЂРµС‚РёС‚СЊСЃСЏ... РўС‹ РЅР°Р№РґРµС€СЊ РјРµРЅСЏ С‚Р°Рј, РіРґРµ РІСЃРµ РЅР°С‡Р°Р»РѕСЃСЊ."); 
 						Snd_Play 		("FoundRiddlersBook");				
 						Wld_InsertNpc				(Bau_940_Riddler,"");
 						var C_NPC riddler; riddler = Hlp_GetNpc(Bau_940_Riddler);
@@ -1661,7 +1661,7 @@ INSTANCE theriddle5(C_Item)
 
 INSTANCE theriddle6(C_Item)
 {	
-	name 					=	"Старая книга";
+	name 					=	"РЎС‚Р°СЂР°СЏ РєРЅРёРіР°";
 	
 	mainflag 				=	ITEM_KAT_DOCS;
 	flags 					=	ITEM_MISSION;
@@ -1672,7 +1672,7 @@ INSTANCE theriddle6(C_Item)
 	material 				=	MAT_LEATHER;
 
 	scemeName				=	"MAP";	
-	description			= "Хроманин 6";
+	description			= "РҐСЂРѕРјР°РЅРёРЅ 6";
 	
 	TEXT[5]				= NAME_Value;
 	COUNT[5]			= value;
@@ -1693,7 +1693,7 @@ INSTANCE theriddle6(C_Item)
   					Doc_SetFont 	( nDocID, -1, "font_15_book.tga"	   			); 	// -1 -> all pages 
   					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   		);  //  0 -> margins are in pixels
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLine	( nDocID,  0, "Хроманин"			);
+					Doc_PrintLine	( nDocID,  0, "РҐСЂРѕРјР°РЅРёРЅ"			);
 					Doc_PrintLine	( nDocID,  0, "-----------");
 					Doc_SetFont 	( nDocID, -1, "font_10_book.TGA"	   			); 	// -1 -> all pages 
 					Doc_PrintLine	( nDocID,  0, "");
@@ -1702,7 +1702,7 @@ INSTANCE theriddle6(C_Item)
 				
 
 					//2.Seite
-					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den Rдnder des TGAs aus, links,oben,rechts,unten)
+					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den RРґnder des TGAs aus, links,oben,rechts,unten)
 					Doc_PrintLine	( nDocID,  1, "");
 					Doc_PrintLine	( nDocID,  1, "");
 					Doc_PrintLine	( nDocID,  1, "");
@@ -1720,7 +1720,7 @@ INSTANCE theriddle6(C_Item)
 					{
 
 						B_GiveXP (1000);
-						B_LogEntry			(theriddle_log,		"Таинственный Некто мертв. Его убили какие-то демоны. Что связывало его с этими порождениями ада. Иначе он никогда не вернулся бы в это забытое богами место. Он не разделил со мной свою тайну, она умерла вместе с ним."); 
+						B_LogEntry			(theriddle_log,		"РўР°РёРЅСЃС‚РІРµРЅРЅС‹Р№ РќРµРєС‚Рѕ РјРµСЂС‚РІ. Р•РіРѕ СѓР±РёР»Рё РєР°РєРёРµ-С‚Рѕ РґРµРјРѕРЅС‹. Р§С‚Рѕ СЃРІСЏР·С‹РІР°Р»Рѕ РµРіРѕ СЃ СЌС‚РёРјРё РїРѕСЂРѕР¶РґРµРЅРёСЏРјРё Р°РґР°. РРЅР°С‡Рµ РѕРЅ РЅРёРєРѕРіРґР° РЅРµ РІРµСЂРЅСѓР»СЃСЏ Р±С‹ РІ СЌС‚Рѕ Р·Р°Р±С‹С‚РѕРµ Р±РѕРіР°РјРё РјРµСЃС‚Рѕ. РћРЅ РЅРµ СЂР°Р·РґРµР»РёР» СЃРѕ РјРЅРѕР№ СЃРІРѕСЋ С‚Р°Р№РЅСѓ, РѕРЅР° СѓРјРµСЂР»Р° РІРјРµСЃС‚Рµ СЃ РЅРёРј."); 
 						Log_SetTopicStatus	(theriddle_log,		LOG_SUCCESS);
 						Snd_Play 		("FoundRiddler");					
 						Wld_InsertNpc	(SkeletonMage,		"OW_FOGDUNGEON_36_MOVEMENT");

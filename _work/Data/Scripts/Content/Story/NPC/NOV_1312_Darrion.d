@@ -1,7 +1,7 @@
 instance NOV_1312_Darrion (Npc_Default)
 {
 	//-------- primary data --------
-	name 		=		"Даррион";
+	name 		=		"Р”Р°СЂСЂРёРѕРЅ";
 	Npctype 		=		Npctype_Main;
 	guild 		=		GIL_NOV;
 	level 		=		9;

@@ -1,9 +1,9 @@
-//Savegame Bugfixbooks   ****Björn****
+//Savegame Bugfixbooks   ****BjÑ†rn****
 
 
 INSTANCE Lukor_Bugfixbook(C_Item)
 {	
-	name 					=	"Óáåäèòü Èäîëà Ëþêîðà â ðåæèìå ñîïðîâîæäåíèÿ.";
+	name 					=	"Ð£Ð±ÐµÐ´Ð¸Ñ‚ÑŒ Ð˜Ð´Ð¾Ð»Ð° Ð›ÑŽÐºÐ¾Ñ€Ð° Ð² Ñ€ÐµÐ¶Ð¸Ð¼Ðµ ÑÐ¾Ð¿Ñ€Ð¾Ð²Ð¾Ð¶Ð´ÐµÐ½Ð¸Ñ.";
 	
 	mainflag 				=	ITEM_KAT_DOCS;
 	flags 					=	ITEM_MISSION;
@@ -30,15 +30,15 @@ INSTANCE Lukor_Bugfixbook(C_Item)
 		
 		//1.Seite
 		Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1);  //  0 -> margins are in pixels
-		Doc_PrintLine	( nDocID,  0, "Óáåäèòü Èäîëà Ëþêîðà.");
-		Doc_PrintLine	( nDocID,  0, "Â ðåæèìå ñîïðîâîæäåíèÿ.");
+		Doc_PrintLine	( nDocID,  0, "Ð£Ð±ÐµÐ´Ð¸Ñ‚ÑŒ Ð˜Ð´Ð¾Ð»Ð° Ð›ÑŽÐºÐ¾Ñ€Ð°.");
+		Doc_PrintLine	( nDocID,  0, "Ð’ Ñ€ÐµÐ¶Ð¸Ð¼Ðµ ÑÐ¾Ð¿Ñ€Ð¾Ð²Ð¾Ð¶Ð´ÐµÐ½Ð¸Ñ.");
 		Doc_PrintLines	( nDocID,  0, "");
 		Doc_PrintLine	( nDocID,  0, "");
 		Doc_PrintLines	( nDocID,  0, "");
 		Doc_PrintLine	( nDocID,  0, "");
 
 		//2.Seite
-		Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1);  //  0 -> margins are in pixels (Position des Textes von den Ränder des TGAs aus, links,oben,rechts,unten)
+		Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1);  //  0 -> margins are in pixels (Position des Textes von den RÐ´nder des TGAs aus, links,oben,rechts,unten)
 		Doc_PrintLine	( nDocID,  1, "");
 		Doc_PrintLine	( nDocID,  1, "");
 		Doc_PrintLines	( nDocID,  1, "");
@@ -54,7 +54,7 @@ INSTANCE Lukor_Bugfixbook(C_Item)
 	};
 INSTANCE Lester_Bugfixbook(C_Item)
 {	
-	name 					=	"Îòïðàâèòü Ëåñòåðà äîìîé.";
+	name 					=	"ÐžÑ‚Ð¿Ñ€Ð°Ð²Ð¸Ñ‚ÑŒ Ð›ÐµÑÑ‚ÐµÑ€Ð° Ð´Ð¾Ð¼Ð¾Ð¹.";
 	
 	mainflag 				=	ITEM_KAT_DOCS;
 	flags 					=	ITEM_MISSION;
@@ -91,7 +91,7 @@ INSTANCE Lester_Bugfixbook(C_Item)
 		Doc_PrintLine	( nDocID,  0, "");
 
 		//2.Seite
-		Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1);  //  0 -> margins are in pixels (Position des Textes von den Ränder des TGAs aus, links,oben,rechts,unten)
+		Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1);  //  0 -> margins are in pixels (Position des Textes von den RÐ´nder des TGAs aus, links,oben,rechts,unten)
 		Doc_PrintLine	( nDocID,  1, "");
 		Doc_PrintLine	( nDocID,  1, "");
 		Doc_PrintLines	( nDocID,  1, "");
@@ -124,9 +124,9 @@ Wld_InsertNpc				( SLD_754_Soeldner, "FMC_ENTRANCE" );//Guard	(am Eingang)	(evtl
 Wld_InsertNpc				( SLD_756_Soeldner, "FMC_ENTRANCE" );//Guard
 //Wld_InsertNpc				( SLD_757_Soeldner, "FMC_ENTRANCE" );//GuardPalisade
 //Wld_InsertNpc				( SLD_758_Soeldner, "FMC_ENTRANCE" );//GuardPalisade
-Wld_InsertNpc				( SLD_759_Soeldner, "FMC_ENTRANCE" );//Guard(Tür zum Drehradhaus)		(evtl Pers)
+Wld_InsertNpc				( SLD_759_Soeldner, "FMC_ENTRANCE" );//Guard(TÑŒr zum Drehradhaus)		(evtl Pers)
 
-Wld_InsertNpc				( SLD_760_Soeldner, "FMC_ENTRANCE" );//Guard(Tür zum Drehradhaus)		(evtl Pers)
+Wld_InsertNpc				( SLD_760_Soeldner, "FMC_ENTRANCE" );//Guard(TÑŒr zum Drehradhaus)		(evtl Pers)
 Wld_InsertNpc				( SLD_761_Soeldner, "FMC_ENTRANCE" );//Guard(Mineneingang)			(gleiche wie Tor zum OCC)
 Wld_InsertNpc				( SLD_762_Soeldner, "FMC_ENTRANCE" );//Guard(Mineneingang				(gleiche wie Tor zum OCC)
 Wld_InsertNpc				( SLD_763_Soeldner, "FMC_ENTRANCE" );//Guard

@@ -1,7 +1,7 @@
 //KURZBOGEN//
 INSTANCE ItRw_Bow_Small_01 (C_Item)
 {
-	name 				=	"Короткий лук";
+	name 				=	"РљРѕСЂРѕС‚РєРёР№ Р»СѓРє";
 
 	mainflag 			=	ITEM_KAT_FF;
 	flags 				=	ITEM_BOW;
@@ -26,7 +26,7 @@ INSTANCE ItRw_Bow_Small_01 (C_Item)
 /******************************************************************************************/
 INSTANCE ItRw_Bow_Small_02 (C_Item)
 {
-	name 				=	"Лук всадника";
+	name 				=	"Р›СѓРє РІСЃР°РґРЅРёРєР°";
 
 	mainflag 			=	ITEM_KAT_FF;
 	flags 				=	ITEM_BOW;
@@ -50,7 +50,7 @@ INSTANCE ItRw_Bow_Small_02 (C_Item)
 /******************************************************************************************/
 INSTANCE ItRw_Bow_Small_03 (C_Item)
 {
-	name 				=	"Полевой лук";
+	name 				=	"РџРѕР»РµРІРѕР№ Р»СѓРє";
 
 	mainflag 			=	ITEM_KAT_FF;
 	flags 				=	ITEM_BOW;
@@ -74,7 +74,7 @@ INSTANCE ItRw_Bow_Small_03 (C_Item)
 /******************************************************************************************/
 INSTANCE ItRw_Bow_Small_04 (C_Item)
 {
-	name 				=	"Охотничий лук";
+	name 				=	"РћС…РѕС‚РЅРёС‡РёР№ Р»СѓРє";
 
 	mainflag 			=	ITEM_KAT_FF;
 	flags 				=	ITEM_BOW;
@@ -98,7 +98,7 @@ INSTANCE ItRw_Bow_Small_04 (C_Item)
 /******************************************************************************************/
 INSTANCE ItRw_Bow_Small_05 (C_Item)
 {
-	name 				=	"Костяной лук";
+	name 				=	"РљРѕСЃС‚СЏРЅРѕР№ Р»СѓРє";
 
 	mainflag 			=	ITEM_KAT_FF;
 	flags 				=	ITEM_BOW;
@@ -125,7 +125,7 @@ INSTANCE ItRw_Bow_Small_05 (C_Item)
 // Org & SLD
 INSTANCE ItRw_Bow_Long_01 (C_Item)
 {
-	name 				=	"Длинный лук";
+	name 				=	"Р”Р»РёРЅРЅС‹Р№ Р»СѓРє";
 
 	mainflag 			=	ITEM_KAT_FF;
 	flags 				=	ITEM_BOW;
@@ -149,7 +149,7 @@ INSTANCE ItRw_Bow_Long_01 (C_Item)
 /******************************************************************************************/
 INSTANCE ItRw_Bow_Long_02 (C_Item)
 {
-	name 				=	"Стремительный лук";
+	name 				=	"РЎС‚СЂРµРјРёС‚РµР»СЊРЅС‹Р№ Р»СѓРє";
 
 	mainflag 			=	ITEM_KAT_FF;
 	flags 				=	ITEM_BOW;
@@ -173,7 +173,7 @@ INSTANCE ItRw_Bow_Long_02 (C_Item)
 /******************************************************************************************/
 INSTANCE ItRw_Bow_Long_03 (C_Item)
 {
-	name 				=	"Пастуший лук";
+	name 				=	"РџР°СЃС‚СѓС€РёР№ Р»СѓРє";
 
 	mainflag 			=	ITEM_KAT_FF;
 	flags 				=	ITEM_BOW;
@@ -197,7 +197,7 @@ INSTANCE ItRw_Bow_Long_03 (C_Item)
 /******************************************************************************************/
 INSTANCE ItRw_Bow_Long_04 (C_Item)
 {
-	name 				=	"Дубовый лук";
+	name 				=	"Р”СѓР±РѕРІС‹Р№ Р»СѓРє";
 
 	mainflag 			=	ITEM_KAT_FF;
 	flags 				=	ITEM_BOW;
@@ -221,7 +221,7 @@ INSTANCE ItRw_Bow_Long_04 (C_Item)
 /******************************************************************************************/
 INSTANCE ItRw_Bow_Long_05 (C_Item)
 {
-	name 				=	"Убийца волков";
+	name 				=	"РЈР±РёР№С†Р° РІРѕР»РєРѕРІ";
 
 	mainflag 			=	ITEM_KAT_FF;
 	flags 				=	ITEM_BOW;
@@ -245,7 +245,7 @@ INSTANCE ItRw_Bow_Long_05 (C_Item)
 /******************************************************************************************/
 INSTANCE ItRw_Bow_Long_06 (C_Item)
 {
-	name 				=	"Пронзающий ветер";
+	name 				=	"РџСЂРѕРЅР·Р°СЋС‰РёР№ РІРµС‚РµСЂ";
 
 	mainflag 			=	ITEM_KAT_FF;
 	flags 				=	ITEM_BOW;
@@ -268,7 +268,7 @@ INSTANCE ItRw_Bow_Long_06 (C_Item)
 /******************************************************************************************/
 INSTANCE ItRw_Bow_Long_07 (C_Item)
 {
-	name 				=	"Армейский лук";
+	name 				=	"РђСЂРјРµР№СЃРєРёР№ Р»СѓРє";
 
 	mainflag 			=	ITEM_KAT_FF;
 	flags 				=	ITEM_BOW;
@@ -292,7 +292,7 @@ INSTANCE ItRw_Bow_Long_07 (C_Item)
 /******************************************************************************************/
 INSTANCE ItRw_Bow_Long_08 (C_Item)
 {
-	name 				=	"Роговой лук";
+	name 				=	"Р РѕРіРѕРІРѕР№ Р»СѓРє";
 
 	mainflag 			=	ITEM_KAT_FF;
 	flags 				=	ITEM_BOW;
@@ -316,7 +316,7 @@ INSTANCE ItRw_Bow_Long_08 (C_Item)
 /******************************************************************************************/
 INSTANCE ItRw_Bow_Long_09 (C_Item)
 {
-	name 				=	"Нимродер";
+	name 				=	"РќРёРјСЂРѕРґРµСЂ";
 
 	mainflag 			=	ITEM_KAT_FF;
 	flags 				=	ITEM_BOW;
@@ -342,7 +342,7 @@ INSTANCE ItRw_Bow_Long_09 (C_Item)
 /******************************************************************************************/
 INSTANCE ItRw_Bow_War_01 (C_Item)
 {
-	name 				=	"Военный лук";
+	name 				=	"Р’РѕРµРЅРЅС‹Р№ Р»СѓРє";
 
 	mainflag 			=	ITEM_KAT_FF;
 	flags 				=	ITEM_BOW;
@@ -366,7 +366,7 @@ INSTANCE ItRw_Bow_War_01 (C_Item)
 /******************************************************************************************/
 INSTANCE ItRw_Bow_War_02 (C_Item)
 {
-	name 				=	"Убийца орков";
+	name 				=	"РЈР±РёР№С†Р° РѕСЂРєРѕРІ";
 
 	mainflag 			=	ITEM_KAT_FF;
 	flags 				=	ITEM_BOW;
@@ -390,7 +390,7 @@ INSTANCE ItRw_Bow_War_02 (C_Item)
 /******************************************************************************************/
 INSTANCE ItRw_Bow_War_03 (C_Item)
 {
-	name 				=	"Штурмовой лук";
+	name 				=	"РЁС‚СѓСЂРјРѕРІРѕР№ Р»СѓРє";
 
 	mainflag 			=	ITEM_KAT_FF;
 	flags 				=	ITEM_BOW;
@@ -414,7 +414,7 @@ INSTANCE ItRw_Bow_War_03 (C_Item)
 /******************************************************************************************/
 INSTANCE ItRw_Bow_War_04 (C_Item)
 {
-	name 				=	"Лук демонов";
+	name 				=	"Р›СѓРє РґРµРјРѕРЅРѕРІ";
 
 	mainflag 			=	ITEM_KAT_FF;
 	flags 				=	ITEM_BOW;
@@ -438,7 +438,7 @@ INSTANCE ItRw_Bow_War_04 (C_Item)
 /******************************************************************************************/
 INSTANCE ItRw_Bow_War_05 (C_Item)
 {
-	name 				=	"Несущий смерть";
+	name 				=	"РќРµСЃСѓС‰РёР№ СЃРјРµСЂС‚СЊ";
 
 	mainflag 			=	ITEM_KAT_FF;
 	flags 				=	ITEM_BOW;
@@ -464,7 +464,7 @@ INSTANCE ItRw_Bow_War_05 (C_Item)
 /******************************************************************************************/
 INSTANCE ItRw_Crossbow_01(C_Item)
 {
-	name 				=	"Легкий арбалет";
+	name 				=	"Р›РµРіРєРёР№ Р°СЂР±Р°Р»РµС‚";
 
 	mainflag 			=	ITEM_KAT_FF;
 	flags 				=	ITEM_CROSSBOW;
@@ -488,7 +488,7 @@ INSTANCE ItRw_Crossbow_01(C_Item)
 /******************************************************************************************/
 INSTANCE ItRw_Crossbow_02(C_Item)
 {
-	name 				=	"Арбалет";
+	name 				=	"РђСЂР±Р°Р»РµС‚";
 
 	mainflag 			=	ITEM_KAT_FF;
 	flags 				=	ITEM_CROSSBOW;
@@ -513,7 +513,7 @@ INSTANCE ItRw_Crossbow_02(C_Item)
 /******************************************************************************************/
 INSTANCE ItRw_Crossbow_03(C_Item)
 {
-	name 				=	"Тяжелый арбалет";
+	name 				=	"РўСЏР¶РµР»С‹Р№ Р°СЂР±Р°Р»РµС‚";
 
 	mainflag 			=	ITEM_KAT_FF;
 	flags 				=	ITEM_CROSSBOW;
@@ -537,7 +537,7 @@ INSTANCE ItRw_Crossbow_03(C_Item)
 /******************************************************************************************/
 INSTANCE ItRw_Crossbow_04(C_Item)
 {
-	name 				=	"Военный арбалет";
+	name 				=	"Р’РѕРµРЅРЅС‹Р№ Р°СЂР±Р°Р»РµС‚";
 
 	mainflag 			=	ITEM_KAT_FF;
 	flags 				=	ITEM_CROSSBOW;
@@ -564,7 +564,7 @@ INSTANCE ItRw_Crossbow_04(C_Item)
 /******************************************************************************************/
 INSTANCE ItAmArrow(C_Item)
 {
-	name 				=	"Стрела";
+	name 				=	"РЎС‚СЂРµР»Р°";
 
 	mainflag 			=	ITEM_KAT_MUN;
 	flags 				=	ITEM_BOW|ITEM_MULTI;
@@ -586,7 +586,7 @@ INSTANCE ItAmArrow(C_Item)
 /******************************************************************************************/
 INSTANCE ItAmBolt(C_Item)
 {
-	name 				=	"Арбалетный болт";
+	name 				=	"РђСЂР±Р°Р»РµС‚РЅС‹Р№ Р±РѕР»С‚";
 
 	mainflag 			=	ITEM_KAT_MUN;
 	flags 				=	ITEM_CROSSBOW|ITEM_MULTI;

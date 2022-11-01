@@ -2,7 +2,7 @@ instance ORG_840_Roscoe (Npc_Default)
 {
 	//-------- primary data --------
 	
-	name =					"–ÓÒÍÓ";
+	name =					"–†–æ—Å–∫–æ";
 	Npctype =				Npctype_Main;
 	guild =					GIL_ORG;       
 	level =					11;
@@ -58,7 +58,7 @@ instance ORG_840_Roscoe (Npc_Default)
 	daily_routine = Rtn_start_840;
 };
 
-FUNC VOID Rtn_start_840 () //vor Lares H¸tte
+FUNC VOID Rtn_start_840 () //vor Lares H—åtte
 {
 	TA_GuardPassage	(23,00,07,00,"NC_HUT22_OUT_MOVEMENT");
 	TA_GuardPassage	(07,00,23,00,"NC_HUT22_OUT_MOVEMENT");	

@@ -2,7 +2,7 @@ instance ORG_851_Butch (Npc_Default)
 {
 	//-------- primary data --------
 	
-	name =							"Áóò÷";
+	name =							"Ð‘ÑƒÑ‚Ñ‡";
 	Npctype =						Npctype_Main;
 	guild =							GIL_ORG;      
 	level =							15;

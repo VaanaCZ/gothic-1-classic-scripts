@@ -17,7 +17,7 @@ FUNC int DIA_ORG_833_Buster_Condition()
 
 func void DIA_ORG_833_Buster_Info()
 {
-	AI_Output (self, other,"DIA_ORG_833_Buster_02_01"); //Похоже, ты не слишком проворен. Я могу помочь тебе.
+	AI_Output (self, other,"DIA_ORG_833_Buster_02_01"); //РџРѕС…РѕР¶Рµ, С‚С‹ РЅРµ СЃР»РёС€РєРѕРј РїСЂРѕРІРѕСЂРµРЅ. РЇ РјРѕРіСѓ РїРѕРјРѕС‡СЊ С‚РµР±Рµ.
 };
 
 
@@ -54,7 +54,7 @@ INSTANCE DIA_ORG_833_Buster3 (C_INFO)
 	information		= DIA_ORG_833_Buster3_Info;
 	important		= 0;
 	permanent		= 1;
-	description		= "Чем ты можешь мне помочь?"; 
+	description		= "Р§РµРј С‚С‹ РјРѕР¶РµС€СЊ РјРЅРµ РїРѕРјРѕС‡СЊ?"; 
 };
 
 FUNC INT DIA_ORG_833_Buster3_Condition()
@@ -64,14 +64,14 @@ FUNC INT DIA_ORG_833_Buster3_Condition()
 
 func VOID DIA_ORG_833_Buster3_Info()
 {
-	AI_Output (self, other,"DIA_ORG_833_Buster3_02_01"); //Я могу обучить тебя контролю над телом. Это искусство называется акробатика.
+	AI_Output (self, other,"DIA_ORG_833_Buster3_02_01"); //РЇ РјРѕРіСѓ РѕР±СѓС‡РёС‚СЊ С‚РµР±СЏ РєРѕРЅС‚СЂРѕР»СЋ РЅР°Рґ С‚РµР»РѕРј. Р­С‚Рѕ РёСЃРєСѓСЃСЃС‚РІРѕ РЅР°Р·С‹РІР°РµС‚СЃСЏ Р°РєСЂРѕР±Р°С‚РёРєР°.
 
 	Info_ClearChoices	( DIA_ORG_833_Buster3 );
 	Info_AddChoice		( DIA_ORG_833_Buster3, DIALOG_BACK													, DIA_ORG_833_Buster_Back );
 	Info_AddChoice		( DIA_ORG_833_Buster3, B_BuildLearnString(NAME_LearnAcrobat, LPCOST_TALENT_ACROBAT,0)	, DIA_ORG_833_Buster_Train1 );
 
 	Log_CreateTopic   	(GE_TeacherNC,	LOG_NOTE);
-	B_LogEntry			(GE_TeacherNC,	"Вор Бустер может научить меня акробатике.");
+	B_LogEntry			(GE_TeacherNC,	"Р’РѕСЂ Р‘СѓСЃС‚РµСЂ РјРѕР¶РµС‚ РЅР°СѓС‡РёС‚СЊ РјРµРЅСЏ Р°РєСЂРѕР±Р°С‚РёРєРµ.");
 };
 
 
@@ -82,9 +82,9 @@ FUNC void DIA_ORG_833_Buster_Train1()
 	
 	if (B_GiveSkill(other,NPC_TALENT_ACROBAT , 1, LPCOST_TALENT_ACROBAT))
 	{
-		AI_Output (self, other,"DIA_ORG_833_Buster3_02_02"); //Когда ты контролируешь свое тело, ты можешь прыгать гораздо дальше. 
-		AI_Output (self, other,"DIA_ORG_833_Buster3_02_03"); //Я научу тебя откатываться в сторону, покажу, как приземляться после падения. Но не стоит забывать, что ты все-таки не бессмертный!
-		AI_Output (self, other,"DIA_ORG_833_Buster3_02_04"); //Акробатика также очень полезна в бою. Ты сможешь быстро менять дистанцию между собой и противником. Ну, с богом! 
+		AI_Output (self, other,"DIA_ORG_833_Buster3_02_02"); //РљРѕРіРґР° С‚С‹ РєРѕРЅС‚СЂРѕР»РёСЂСѓРµС€СЊ СЃРІРѕРµ С‚РµР»Рѕ, С‚С‹ РјРѕР¶РµС€СЊ РїСЂС‹РіР°С‚СЊ РіРѕСЂР°Р·РґРѕ РґР°Р»СЊС€Рµ. 
+		AI_Output (self, other,"DIA_ORG_833_Buster3_02_03"); //РЇ РЅР°СѓС‡Сѓ С‚РµР±СЏ РѕС‚РєР°С‚С‹РІР°С‚СЊСЃСЏ РІ СЃС‚РѕСЂРѕРЅСѓ, РїРѕРєР°Р¶Сѓ, РєР°Рє РїСЂРёР·РµРјР»СЏС‚СЊСЃСЏ РїРѕСЃР»Рµ РїР°РґРµРЅРёСЏ. РќРѕ РЅРµ СЃС‚РѕРёС‚ Р·Р°Р±С‹РІР°С‚СЊ, С‡С‚Рѕ С‚С‹ РІСЃРµ-С‚Р°РєРё РЅРµ Р±РµСЃСЃРјРµСЂС‚РЅС‹Р№!
+		AI_Output (self, other,"DIA_ORG_833_Buster3_02_04"); //РђРєСЂРѕР±Р°С‚РёРєР° С‚Р°РєР¶Рµ РѕС‡РµРЅСЊ РїРѕР»РµР·РЅР° РІ Р±РѕСЋ. РўС‹ СЃРјРѕР¶РµС€СЊ Р±С‹СЃС‚СЂРѕ РјРµРЅСЏС‚СЊ РґРёСЃС‚Р°РЅС†РёСЋ РјРµР¶РґСѓ СЃРѕР±РѕР№ Рё РїСЂРѕС‚РёРІРЅРёРєРѕРј. РќСѓ, СЃ Р±РѕРіРѕРј! 
 	};		
 };  
 

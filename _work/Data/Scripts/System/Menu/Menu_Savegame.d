@@ -97,7 +97,7 @@ const int SAVEGAME_DX2= 1000;
 
 instance MENUITEM_LOAD_HEADLINE(C_MENU_ITEM_DEF)  
 {	
-	text[0]		=	"Загрузить игру";   
+	text[0]		=	"Р—Р°РіСЂСѓР·РёС‚СЊ РёРіСЂСѓ";   
 	type		=	MENU_ITEM_TEXT;
 	posx		=	SAVEGAME_X1;
 	posy		=	1000;	
@@ -108,7 +108,7 @@ instance MENUITEM_LOAD_HEADLINE(C_MENU_ITEM_DEF)
 
 INSTANCE MENUITEM_SAVE_HEADLINE(C_MENU_ITEM_DEF)  
 {
-	text[0]		=	"Сохранить игру";   
+	text[0]		=	"РЎРѕС…СЂР°РЅРёС‚СЊ РёРіСЂСѓ";   
 	type		=	MENU_ITEM_TEXT;
 	posx		=	SAVEGAME_X1;
 	posy		=	1000;	
@@ -137,7 +137,7 @@ instance MENUITEM_LOADSAVE_THUMBPIC(C_MENU_ITEM_DEF)
 instance MENUITEM_LOADSAVE_LEVELNAME(C_MENU_ITEM_DEF)	
 {
 	type		= MENU_ITEM_TEXT;
-	text[0]		= "Карта:";	
+	text[0]		= "РљР°СЂС‚Р°:";	
 	posx		= SAVEGAME_X2;
 	posy		= 3960;
 	fontName	= MENU_FONT_SMALL;
@@ -163,7 +163,7 @@ instance MENUITEM_LOADSAVE_LEVELNAME_VALUE(C_MENU_ITEM_DEF)
 instance MENUITEM_LOADSAVE_DATETIME(C_MENU_ITEM_DEF)	
 {	
 	type		= MENU_ITEM_TEXT;
-	text[0]		= "Сохранение:";	
+	text[0]		= "РЎРѕС…СЂР°РЅРµРЅРёРµ:";	
 	posx		= SAVEGAME_X2;
 	posy		= 4900;
 	fontName	= MENU_FONT_SMALL;
@@ -192,7 +192,7 @@ instance MENUITEM_LOADSAVE_DATETIME_VALUE(C_MENU_ITEM_DEF)
 instance MENUITEM_LOADSAVE_GAMETIME(C_MENU_ITEM_DEF)	
 {	
 	type		= MENU_ITEM_TEXT;
-	text[0]		= "Время игры:";	
+	text[0]		= "Р’СЂРµРјСЏ РёРіСЂС‹:";	
 	posx		= SAVEGAME_X2;
 	posy		= 6200;
 	fontName	= MENU_FONT_SMALL;
@@ -202,7 +202,7 @@ instance MENUITEM_LOADSAVE_GAMETIME(C_MENU_ITEM_DEF)
 instance MENUITEM_LOADSAVE_GAMETIME_VALUE(C_MENU_ITEM_DEF)
 {
 	type		= MENU_ITEM_TEXT;	
-	text[0]		= "Назад";	
+	text[0]		= "РќР°Р·Р°Рґ";	
 	posx		= SAVEGAME_X2;
 	posy		= 6200+320;
 	dimx		= 8192 - posx;
@@ -219,7 +219,7 @@ instance MENUITEM_LOADSAVE_GAMETIME_VALUE(C_MENU_ITEM_DEF)
 instance MENUITEM_LOADSAVE_PLAYTIME_VALUE(C_MENU_ITEM_DEF)
 {
 	type		= MENU_ITEM_TEXT;	
-	text[0]		= "Назад";	
+	text[0]		= "РќР°Р·Р°Рґ";	
 	posx		= SAVEGAME_X2;
 	posy		= 6200 + 320*2;
 	dimx		= 8192 - posx;
@@ -235,8 +235,8 @@ instance MENUITEM_LOADSAVE_PLAYTIME_VALUE(C_MENU_ITEM_DEF)
 
 instance MENUITEM_SAVE_BACK(C_MENU_ITEM_DEF) 
 {
-	text[0]		=	"Назад";
-	text[1]		=	"Назад";
+	text[0]		=	"РќР°Р·Р°Рґ";
+	text[1]		=	"РќР°Р·Р°Рґ";
 	posx		=	SAVEGAME_X1;
 	posy		=	SAVEGAME_Y + 16*SAVEGAME_DY;	
 };
@@ -251,7 +251,7 @@ instance MENUITEM_SAVE_BACK(C_MENU_ITEM_DEF)
 
 INSTANCE MENUITEM_LOAD_BACK(C_MENU_ITEM_DEF) 
 {
-	text[0]		=	"Назад";	
+	text[0]		=	"РќР°Р·Р°Рґ";	
 	posx		=	SAVEGAME_X1;	
 	posy		=	SAVEGAME_Y + 16*SAVEGAME_DY;				
 };
@@ -279,7 +279,7 @@ INSTANCE MENUITEM_SAVE_SLOT1(C_MENU_ITEM_DEF)
 	backPic		=   MENU_INPUT_BACK_PIC;
 	type		=	MENU_ITEM_INPUT;
 	text[0]		=   "unknown";
-	text[1]		=   "Строка 1 - Нажмите клавишу Enter для сохранения в строке."; // Kommentar	
+	text[1]		=   "РЎС‚СЂРѕРєР° 1 - РќР°Р¶РјРёС‚Рµ РєР»Р°РІРёС€Сѓ Enter РґР»СЏ СЃРѕС…СЂР°РЅРµРЅРёСЏ РІ СЃС‚СЂРѕРєРµ."; // Kommentar	
 	
 	posx		=	SAVEGAME_X1;
 	posy		=	SAVEGAME_Y + 0 * SAVEGAME_DY;
@@ -296,7 +296,7 @@ INSTANCE MENUITEM_SAVE_SLOT2(C_MENU_ITEM_DEF)
 	backPic		=   MENU_INPUT_BACK_PIC;
 	type		=	MENU_ITEM_INPUT;
 	text[0]		=   "unknown";
-	text[1]		=   "Строка 2 - Нажмите клавишу Enter для сохранения в строке."; // Kommentar	
+	text[1]		=   "РЎС‚СЂРѕРєР° 2 - РќР°Р¶РјРёС‚Рµ РєР»Р°РІРёС€Сѓ Enter РґР»СЏ СЃРѕС…СЂР°РЅРµРЅРёСЏ РІ СЃС‚СЂРѕРєРµ."; // Kommentar	
 	
 	posx		=	SAVEGAME_X1;
 	posy		=	SAVEGAME_Y + 1 * SAVEGAME_DY;
@@ -313,7 +313,7 @@ INSTANCE MENUITEM_SAVE_SLOT3(C_MENU_ITEM_DEF)
 	backPic		=   MENU_INPUT_BACK_PIC;
 	type		=	MENU_ITEM_INPUT;
 	text[0]		=   "unknown";
-	text[1]		=   "Строка 3 - Нажмите клавишу Enter для сохранения в строке."; // Kommentar	
+	text[1]		=   "РЎС‚СЂРѕРєР° 3 - РќР°Р¶РјРёС‚Рµ РєР»Р°РІРёС€Сѓ Enter РґР»СЏ СЃРѕС…СЂР°РЅРµРЅРёСЏ РІ СЃС‚СЂРѕРєРµ."; // Kommentar	
 	
 	posx		=	SAVEGAME_X1;
 	posy		=	SAVEGAME_Y + 2 * SAVEGAME_DY;
@@ -331,7 +331,7 @@ INSTANCE MENUITEM_SAVE_SLOT4(C_MENU_ITEM_DEF)
 	backPic		=   MENU_INPUT_BACK_PIC;
 	type		=	MENU_ITEM_INPUT;
 	text[0]		=   "unknown";
-	text[1]		=   "Строка 4 - Нажмите клавишу Enter для сохранения в строке."; // Kommentar	
+	text[1]		=   "РЎС‚СЂРѕРєР° 4 - РќР°Р¶РјРёС‚Рµ РєР»Р°РІРёС€Сѓ Enter РґР»СЏ СЃРѕС…СЂР°РЅРµРЅРёСЏ РІ СЃС‚СЂРѕРєРµ."; // Kommentar	
 	
 	posx		=	SAVEGAME_X1;
 	posy		=	SAVEGAME_Y + 3 * SAVEGAME_DY;
@@ -349,7 +349,7 @@ INSTANCE MENUITEM_SAVE_SLOT5(C_MENU_ITEM_DEF)
 	backPic		=   MENU_INPUT_BACK_PIC;
 	type		=	MENU_ITEM_INPUT;
 	text[0]		=   "unknown";
-	text[1]		=   "Строка 5 - Нажмите клавишу Enter для сохранения в строке."; // Kommentar	
+	text[1]		=   "РЎС‚СЂРѕРєР° 5 - РќР°Р¶РјРёС‚Рµ РєР»Р°РІРёС€Сѓ Enter РґР»СЏ СЃРѕС…СЂР°РЅРµРЅРёСЏ РІ СЃС‚СЂРѕРєРµ."; // Kommentar	
 	
 	posx		=	SAVEGAME_X1;
 	posy		=	SAVEGAME_Y + 4 * SAVEGAME_DY;
@@ -366,7 +366,7 @@ INSTANCE MENUITEM_SAVE_SLOT6(C_MENU_ITEM_DEF)
 	backPic		=   MENU_INPUT_BACK_PIC;
 	type		=	MENU_ITEM_INPUT;
 	text[0]		=   "unknown";
-	text[1]		=   "Строка 6 - Нажмите клавишу Enter для сохранения в строке."; // Kommentar	
+	text[1]		=   "РЎС‚СЂРѕРєР° 6 - РќР°Р¶РјРёС‚Рµ РєР»Р°РІРёС€Сѓ Enter РґР»СЏ СЃРѕС…СЂР°РЅРµРЅРёСЏ РІ СЃС‚СЂРѕРєРµ."; // Kommentar	
 	
 	posx		=	SAVEGAME_X1;
 	posy		=	SAVEGAME_Y + 5 * SAVEGAME_DY;
@@ -383,7 +383,7 @@ INSTANCE MENUITEM_SAVE_SLOT7(C_MENU_ITEM_DEF)
 	backPic		=   MENU_INPUT_BACK_PIC;
 	type		=	MENU_ITEM_INPUT;
 	text[0]		=   "unknown";
-	text[1]		=   "Строка 7 - Нажмите клавишу Enter для сохранения в строке."; // Kommentar	
+	text[1]		=   "РЎС‚СЂРѕРєР° 7 - РќР°Р¶РјРёС‚Рµ РєР»Р°РІРёС€Сѓ Enter РґР»СЏ СЃРѕС…СЂР°РЅРµРЅРёСЏ РІ СЃС‚СЂРѕРєРµ."; // Kommentar	
 	
 	posx		=	SAVEGAME_X1;
 	posy		=	SAVEGAME_Y + 6 * SAVEGAME_DY;
@@ -400,7 +400,7 @@ INSTANCE MENUITEM_SAVE_SLOT8(C_MENU_ITEM_DEF)
 	backPic		=   MENU_INPUT_BACK_PIC;
 	type		=	MENU_ITEM_INPUT;
 	text[0]		=   "unknown";
-	text[1]		=   "Строка 8 - Нажмите клавишу Enter для сохранения в строке."; // Kommentar	
+	text[1]		=   "РЎС‚СЂРѕРєР° 8 - РќР°Р¶РјРёС‚Рµ РєР»Р°РІРёС€Сѓ Enter РґР»СЏ СЃРѕС…СЂР°РЅРµРЅРёСЏ РІ СЃС‚СЂРѕРєРµ."; // Kommentar	
 	
 	posx		=	SAVEGAME_X1;
 	posy		=	SAVEGAME_Y + 7 * SAVEGAME_DY;
@@ -416,7 +416,7 @@ INSTANCE MENUITEM_SAVE_SLOT9(C_MENU_ITEM_DEF)
 {
 	type		=	MENU_ITEM_INPUT;
 	text[0]		=   "unknown";
-	text[1]		=   "Строка 9 - Нажмите клавишу Enter для сохранения в строке."; // Kommentar
+	text[1]		=   "РЎС‚СЂРѕРєР° 9 - РќР°Р¶РјРёС‚Рµ РєР»Р°РІРёС€Сѓ Enter РґР»СЏ СЃРѕС…СЂР°РЅРµРЅРёСЏ РІ СЃС‚СЂРѕРєРµ."; // Kommentar
 		
 	posx		=	SAVEGAME_X1;
 	posy		=	SAVEGAME_Y + 8 * SAVEGAME_DY;
@@ -433,7 +433,7 @@ INSTANCE MENUITEM_SAVE_SLOT10(C_MENU_ITEM_DEF)
 	backPic		=   MENU_INPUT_BACK_PIC;
 	type		=	MENU_ITEM_INPUT;
 	text[0]		=   "unknown";
-	text[1]		=   "Строка 10 - Нажмите клавишу Enter для сохранения в строке."; // Kommentar	
+	text[1]		=   "РЎС‚СЂРѕРєР° 10 - РќР°Р¶РјРёС‚Рµ РєР»Р°РІРёС€Сѓ Enter РґР»СЏ СЃРѕС…СЂР°РЅРµРЅРёСЏ РІ СЃС‚СЂРѕРєРµ."; // Kommentar	
 	
 	posx		=	SAVEGAME_X1;
 	posy		=	SAVEGAME_Y + 9 * SAVEGAME_DY;
@@ -451,7 +451,7 @@ INSTANCE MENUITEM_SAVE_SLOT11(C_MENU_ITEM_DEF)
 	backPic		=   MENU_INPUT_BACK_PIC;
 	type		=	MENU_ITEM_INPUT;
 	text[0]		=   "unknown";
-	text[1]		=   "Строка 11 - Нажмите клавишу Enter для сохранения в строке."; // Kommentar	
+	text[1]		=   "РЎС‚СЂРѕРєР° 11 - РќР°Р¶РјРёС‚Рµ РєР»Р°РІРёС€Сѓ Enter РґР»СЏ СЃРѕС…СЂР°РЅРµРЅРёСЏ РІ СЃС‚СЂРѕРєРµ."; // Kommentar	
 	
 	posx		=	SAVEGAME_X1;
 	posy		=	SAVEGAME_Y + 10 * SAVEGAME_DY;
@@ -468,7 +468,7 @@ INSTANCE MENUITEM_SAVE_SLOT12(C_MENU_ITEM_DEF)
 	backPic		=   MENU_INPUT_BACK_PIC;
 	type		=	MENU_ITEM_INPUT;
 	text[0]		=   "unknown";
-	text[1]		=   "Строка 12 - Нажмите клавишу Enter для сохранения в строке."; // Kommentar	
+	text[1]		=   "РЎС‚СЂРѕРєР° 12 - РќР°Р¶РјРёС‚Рµ РєР»Р°РІРёС€Сѓ Enter РґР»СЏ СЃРѕС…СЂР°РЅРµРЅРёСЏ РІ СЃС‚СЂРѕРєРµ."; // Kommentar	
 	
 	posx		=	SAVEGAME_X1;
 	posy		=	SAVEGAME_Y + 11 * SAVEGAME_DY;
@@ -485,7 +485,7 @@ INSTANCE MENUITEM_SAVE_SLOT13(C_MENU_ITEM_DEF)
 	backPic		=   MENU_INPUT_BACK_PIC;
 	type		=	MENU_ITEM_INPUT;
 	text[0]		=   "unknown";
-	text[1]		=   "Строка 13 - Нажмите клавишу Enter для сохранения в строке."; // Kommentar	
+	text[1]		=   "РЎС‚СЂРѕРєР° 13 - РќР°Р¶РјРёС‚Рµ РєР»Р°РІРёС€Сѓ Enter РґР»СЏ СЃРѕС…СЂР°РЅРµРЅРёСЏ РІ СЃС‚СЂРѕРєРµ."; // Kommentar	
 	
 	posx		=	SAVEGAME_X1;
 	posy		=	SAVEGAME_Y + 12 * SAVEGAME_DY;
@@ -502,7 +502,7 @@ INSTANCE MENUITEM_SAVE_SLOT14(C_MENU_ITEM_DEF)
 	backPic		=   MENU_INPUT_BACK_PIC;
 	type		=	MENU_ITEM_INPUT;
 	text[0]		=   "unknown";
-	text[1]		=   "Строка 14 - Нажмите клавишу Enter для сохранения в строке."; // Kommentar	
+	text[1]		=   "РЎС‚СЂРѕРєР° 14 - РќР°Р¶РјРёС‚Рµ РєР»Р°РІРёС€Сѓ Enter РґР»СЏ СЃРѕС…СЂР°РЅРµРЅРёСЏ РІ СЃС‚СЂРѕРєРµ."; // Kommentar	
 	
 	posx		=	SAVEGAME_X1;
 	posy		=	SAVEGAME_Y + 13 * SAVEGAME_DY;
@@ -519,7 +519,7 @@ INSTANCE MENUITEM_SAVE_SLOT15(C_MENU_ITEM_DEF)
 	backPic		=   MENU_INPUT_BACK_PIC;
 	type		=	MENU_ITEM_INPUT;
 	text[0]		=   "unknown";
-	text[1]		=   "Строка 15 - Нажмите клавишу Enter для сохранения в строке."; // Kommentar	
+	text[1]		=   "РЎС‚СЂРѕРєР° 15 - РќР°Р¶РјРёС‚Рµ РєР»Р°РІРёС€Сѓ Enter РґР»СЏ СЃРѕС…СЂР°РЅРµРЅРёСЏ РІ СЃС‚СЂРѕРєРµ."; // Kommentar	
 	
 	posx		=	SAVEGAME_X1;
 	posy		=	SAVEGAME_Y + 14 * SAVEGAME_DY;
@@ -541,7 +541,7 @@ INSTANCE MENUITEM_SAVE_SLOT15(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_LOAD_SLOT1(C_MENU_ITEM_DEF) 
 {
 	text[0]		=   "unknown";
-	text[1]		=   "Строка 1 - Нажмите клавишу Enter, чтобы загрузить игру."; // Kommentar	
+	text[1]		=   "РЎС‚СЂРѕРєР° 1 - РќР°Р¶РјРёС‚Рµ РєР»Р°РІРёС€Сѓ Enter, С‡С‚РѕР±С‹ Р·Р°РіСЂСѓР·РёС‚СЊ РёРіСЂСѓ."; // Kommentar	
 	
 	posx		=	SAVEGAME_X1;
 	posy		=	SAVEGAME_Y + 0 * SAVEGAME_DY;
@@ -554,7 +554,7 @@ INSTANCE MENUITEM_LOAD_SLOT1(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_LOAD_SLOT2(C_MENU_ITEM_DEF) 
 {
 	text[0]		=   "unknown";
-	text[1]		=   "Строка 2 - Нажмите клавишу Enter, чтобы загрузить игру."; // Kommentar	
+	text[1]		=   "РЎС‚СЂРѕРєР° 2 - РќР°Р¶РјРёС‚Рµ РєР»Р°РІРёС€Сѓ Enter, С‡С‚РѕР±С‹ Р·Р°РіСЂСѓР·РёС‚СЊ РёРіСЂСѓ."; // Kommentar	
 	
 	posx		=	SAVEGAME_X1;
 	posy		=	SAVEGAME_Y + 1 * SAVEGAME_DY;
@@ -567,7 +567,7 @@ INSTANCE MENUITEM_LOAD_SLOT2(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_LOAD_SLOT3(C_MENU_ITEM_DEF) 
 {
 	text[0]		=   "unknown";
-	text[1]		=   "Строка 3 - Нажмите клавишу Enter, чтобы загрузить игру."; // Kommentar	
+	text[1]		=   "РЎС‚СЂРѕРєР° 3 - РќР°Р¶РјРёС‚Рµ РєР»Р°РІРёС€Сѓ Enter, С‡С‚РѕР±С‹ Р·Р°РіСЂСѓР·РёС‚СЊ РёРіСЂСѓ."; // Kommentar	
 	
 	posx		=	SAVEGAME_X1;
 	posy		=	SAVEGAME_Y + 2 * SAVEGAME_DY;
@@ -580,7 +580,7 @@ INSTANCE MENUITEM_LOAD_SLOT3(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_LOAD_SLOT4(C_MENU_ITEM_DEF) 
 {
 	text[0]		=   "unknown";
-	text[1]		=   "Строка 4 - Нажмите клавишу Enter, чтобы загрузить игру."; // Kommentar	
+	text[1]		=   "РЎС‚СЂРѕРєР° 4 - РќР°Р¶РјРёС‚Рµ РєР»Р°РІРёС€Сѓ Enter, С‡С‚РѕР±С‹ Р·Р°РіСЂСѓР·РёС‚СЊ РёРіСЂСѓ."; // Kommentar	
 	
 	posx		=	SAVEGAME_X1;
 	posy		=	SAVEGAME_Y + 3 * SAVEGAME_DY;
@@ -593,7 +593,7 @@ INSTANCE MENUITEM_LOAD_SLOT4(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_LOAD_SLOT5(C_MENU_ITEM_DEF) 
 {
 	text[0]		=   "unknown";
-	text[1]		=   "Строка 5 - Нажмите клавишу Enter, чтобы загрузить игру."; // Kommentar	
+	text[1]		=   "РЎС‚СЂРѕРєР° 5 - РќР°Р¶РјРёС‚Рµ РєР»Р°РІРёС€Сѓ Enter, С‡С‚РѕР±С‹ Р·Р°РіСЂСѓР·РёС‚СЊ РёРіСЂСѓ."; // Kommentar	
 	
 	posx		=	SAVEGAME_X1;
 	posy		=	SAVEGAME_Y + 4 * SAVEGAME_DY;
@@ -606,7 +606,7 @@ INSTANCE MENUITEM_LOAD_SLOT5(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_LOAD_SLOT6(C_MENU_ITEM_DEF) 
 {
 	text[0]		=   "unknown";
-	text[1]		=   "Строка 6 - Нажмите клавишу Enter, чтобы загрузить игру."; // Kommentar	
+	text[1]		=   "РЎС‚СЂРѕРєР° 6 - РќР°Р¶РјРёС‚Рµ РєР»Р°РІРёС€Сѓ Enter, С‡С‚РѕР±С‹ Р·Р°РіСЂСѓР·РёС‚СЊ РёРіСЂСѓ."; // Kommentar	
 	
 	posx		=	SAVEGAME_X1;
 	posy		=	SAVEGAME_Y + 5 * SAVEGAME_DY;
@@ -619,7 +619,7 @@ INSTANCE MENUITEM_LOAD_SLOT6(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_LOAD_SLOT7(C_MENU_ITEM_DEF) 
 {
 	text[0]		=   "unknown";
-	text[1]		=   "Строка 7 - Нажмите клавишу Enter, чтобы загрузить игру."; // Kommentar	
+	text[1]		=   "РЎС‚СЂРѕРєР° 7 - РќР°Р¶РјРёС‚Рµ РєР»Р°РІРёС€Сѓ Enter, С‡С‚РѕР±С‹ Р·Р°РіСЂСѓР·РёС‚СЊ РёРіСЂСѓ."; // Kommentar	
 	
 	posx		=	SAVEGAME_X1;
 	posy		=	SAVEGAME_Y + 6 * SAVEGAME_DY;
@@ -632,7 +632,7 @@ INSTANCE MENUITEM_LOAD_SLOT7(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_LOAD_SLOT8(C_MENU_ITEM_DEF) 
 {
 	text[0]		=   "---";	
-	text[1]		=   "Строка 8 - Нажмите клавишу Enter, чтобы загрузить игру."; // Kommentar	
+	text[1]		=   "РЎС‚СЂРѕРєР° 8 - РќР°Р¶РјРёС‚Рµ РєР»Р°РІРёС€Сѓ Enter, С‡С‚РѕР±С‹ Р·Р°РіСЂСѓР·РёС‚СЊ РёРіСЂСѓ."; // Kommentar	
 	
 	posx		=	SAVEGAME_X1;
 	posy		=	SAVEGAME_Y + 7 * SAVEGAME_DY;
@@ -645,7 +645,7 @@ INSTANCE MENUITEM_LOAD_SLOT8(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_LOAD_SLOT9(C_MENU_ITEM_DEF) 
 {
 	text[0]		=   "---";
-	text[1]		=   "Строка 9 - Нажмите клавишу Enter, чтобы загрузить игру."; // Kommentar	
+	text[1]		=   "РЎС‚СЂРѕРєР° 9 - РќР°Р¶РјРёС‚Рµ РєР»Р°РІРёС€Сѓ Enter, С‡С‚РѕР±С‹ Р·Р°РіСЂСѓР·РёС‚СЊ РёРіСЂСѓ."; // Kommentar	
 	
 	posx		=	SAVEGAME_X1;
 	posy		=	SAVEGAME_Y + 8 * SAVEGAME_DY;
@@ -658,7 +658,7 @@ INSTANCE MENUITEM_LOAD_SLOT9(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_LOAD_SLOT10(C_MENU_ITEM_DEF) 
 {
 	text[0]		=   "---";
-	text[1]		=   "Строка 10 - Нажмите клавишу Enter, чтобы загрузить игру."; // Kommentar	
+	text[1]		=   "РЎС‚СЂРѕРєР° 10 - РќР°Р¶РјРёС‚Рµ РєР»Р°РІРёС€Сѓ Enter, С‡С‚РѕР±С‹ Р·Р°РіСЂСѓР·РёС‚СЊ РёРіСЂСѓ."; // Kommentar	
 	
 	posx		=	SAVEGAME_X1;
 	posy		=	SAVEGAME_Y + 9 * SAVEGAME_DY;
@@ -674,7 +674,7 @@ INSTANCE MENUITEM_LOAD_SLOT10(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_LOAD_SLOT11(C_MENU_ITEM_DEF) 
 {
 	text[0]		=   "---";
-	text[1]		=   "Строка 11 - Нажмите клавишу Enter, чтобы загрузить игру."; // Kommentar	
+	text[1]		=   "РЎС‚СЂРѕРєР° 11 - РќР°Р¶РјРёС‚Рµ РєР»Р°РІРёС€Сѓ Enter, С‡С‚РѕР±С‹ Р·Р°РіСЂСѓР·РёС‚СЊ РёРіСЂСѓ."; // Kommentar	
 	
 	posx		=	SAVEGAME_X1;
 	posy		=	SAVEGAME_Y + 10 * SAVEGAME_DY;
@@ -687,7 +687,7 @@ INSTANCE MENUITEM_LOAD_SLOT11(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_LOAD_SLOT12(C_MENU_ITEM_DEF) 
 {
 	text[0]		=   "---";
-	text[1]		=   "Строка 12 - Нажмите клавишу Enter, чтобы загрузить игру."; // Kommentar	
+	text[1]		=   "РЎС‚СЂРѕРєР° 12 - РќР°Р¶РјРёС‚Рµ РєР»Р°РІРёС€Сѓ Enter, С‡С‚РѕР±С‹ Р·Р°РіСЂСѓР·РёС‚СЊ РёРіСЂСѓ."; // Kommentar	
 	
 	posx		=	SAVEGAME_X1;
 	posy		=	SAVEGAME_Y + 11 * SAVEGAME_DY;
@@ -700,7 +700,7 @@ INSTANCE MENUITEM_LOAD_SLOT12(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_LOAD_SLOT13(C_MENU_ITEM_DEF) 
 {
 	text[0]		=   "---";
-	text[1]		=   "Строка 13 - Нажмите клавишу Enter, чтобы загрузить игру."; // Kommentar	
+	text[1]		=   "РЎС‚СЂРѕРєР° 13 - РќР°Р¶РјРёС‚Рµ РєР»Р°РІРёС€Сѓ Enter, С‡С‚РѕР±С‹ Р·Р°РіСЂСѓР·РёС‚СЊ РёРіСЂСѓ."; // Kommentar	
 	
 	posx		=	SAVEGAME_X1;
 	posy		=	SAVEGAME_Y + 12 * SAVEGAME_DY;
@@ -713,7 +713,7 @@ INSTANCE MENUITEM_LOAD_SLOT13(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_LOAD_SLOT14(C_MENU_ITEM_DEF) 
 {
 	text[0]		=   "---";
-	text[1]		=   "Строка 14 - Нажмите клавишу Enter, чтобы загрузить игру."; // Kommentar	
+	text[1]		=   "РЎС‚СЂРѕРєР° 14 - РќР°Р¶РјРёС‚Рµ РєР»Р°РІРёС€Сѓ Enter, С‡С‚РѕР±С‹ Р·Р°РіСЂСѓР·РёС‚СЊ РёРіСЂСѓ."; // Kommentar	
 	
 	posx		=	SAVEGAME_X1;
 	posy		=	SAVEGAME_Y + 13 * SAVEGAME_DY;
@@ -726,7 +726,7 @@ INSTANCE MENUITEM_LOAD_SLOT14(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_LOAD_SLOT15(C_MENU_ITEM_DEF) 
 {
 	text[0]		=   "---";
-	text[1]		=   "Строка 15 - Нажмите клавишу Enter, чтобы загрузить игру."; // Kommentar	
+	text[1]		=   "РЎС‚СЂРѕРєР° 15 - РќР°Р¶РјРёС‚Рµ РєР»Р°РІРёС€Сѓ Enter, С‡С‚РѕР±С‹ Р·Р°РіСЂСѓР·РёС‚СЊ РёРіСЂСѓ."; // Kommentar	
 	
 	posx		=	SAVEGAME_X1;
 	posy		=	SAVEGAME_Y + 14 * SAVEGAME_DY;

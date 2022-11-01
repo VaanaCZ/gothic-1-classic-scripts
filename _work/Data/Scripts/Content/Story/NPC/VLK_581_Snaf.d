@@ -1,7 +1,7 @@
 instance VLK_581_Snaf (Npc_Default)
 {
 	//-------- primary data --------
-	name =							"Ρνύτ";
+	name =							"Π΅Π½ΡΡ„";
 	npctype =						npctype_Main;
 	guild =							GIL_VLK;
 	level =							5;

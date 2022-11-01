@@ -1,4 +1,4 @@
-// Novize nur für Kap. 6 Orktempel benutzen
+// Novize nur fÑŒr Kap. 6 Orktempel benutzen
 
 instance NOV_1360_Novize (Npc_Default)
 {

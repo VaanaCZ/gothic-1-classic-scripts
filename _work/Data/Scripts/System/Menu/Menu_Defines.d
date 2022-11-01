@@ -4,15 +4,15 @@
 
 	// Menu
 	const string MENU_BACK_PIC 			= "menu_ingame.tga"; 		// outgame/ingame
-	const string MENU_ITEM_BACK_PIC 	= "";						// Hintergrund fьr alle anwдhlbaren Menьpunkte
-	const string MENU_CHOICE_BACK_PIC	= "menu_choice_back.tga";	// Hintergrund fьr Choicebox
-	const string MENU_SLIDER_BACK_PIC	= "menu_slider_back.tga";	// Hintergrund fьr Slider
-	const string MENU_SLIDER_POS_PIC	= "menu_slider_pos.tga";	// Textur fьr Positionsanzeige eines Sliders
-	const string MENU_INPUT_BACK_PIC 	= "";						// Hintergrund fьr Eingabefelder
-	const string MENU_KBDINPUT_BACK_PIC = "";						// Hintergrund fьrs Definieren der Controls
-	const string MENU_SAVELOAD_BACK_PIC = "menu_saveload_back.tga"; // menu_kbd_back.tga";		// Hintergrund fьrs Definieren der Controls
+	const string MENU_ITEM_BACK_PIC 	= "";						// Hintergrund fСЊr alle anwРґhlbaren MenСЊpunkte
+	const string MENU_CHOICE_BACK_PIC	= "menu_choice_back.tga";	// Hintergrund fСЊr Choicebox
+	const string MENU_SLIDER_BACK_PIC	= "menu_slider_back.tga";	// Hintergrund fСЊr Slider
+	const string MENU_SLIDER_POS_PIC	= "menu_slider_pos.tga";	// Textur fСЊr Positionsanzeige eines Sliders
+	const string MENU_INPUT_BACK_PIC 	= "";						// Hintergrund fСЊr Eingabefelder
+	const string MENU_KBDINPUT_BACK_PIC = "";						// Hintergrund fСЊrs Definieren der Controls
+	const string MENU_SAVELOAD_BACK_PIC = "menu_saveload_back.tga"; // menu_kbd_back.tga";		// Hintergrund fСЊrs Definieren der Controls
 	// Log
-	const string LOG_BACK_PIC			= "log_back.tga";			// Hintergrund fьr den Log-Screen
+	const string LOG_BACK_PIC			= "log_back.tga";			// Hintergrund fСЊr den Log-Screen
 	const string LOG_VIEWER_BACK_PIC	= "log_paper.tga";			// Hintergrund des Log-Betrachters
 	// StaticScreen
 	const string STAT_BACK_PIC			= "status_back.tga";		// Hintergrund
@@ -61,4 +61,4 @@
 //
 
 	const string MENU_TEXT_NEEDS_APPLY		= "";
-	const string MENU_TEXT_NEEDS_RESTART	= "Некоторые настройки будут задействованы только после повторного запуска.";
+	const string MENU_TEXT_NEEDS_RESTART	= "РќРµРєРѕС‚РѕСЂС‹Рµ РЅР°СЃС‚СЂРѕР№РєРё Р±СѓРґСѓС‚ Р·Р°РґРµР№СЃС‚РІРѕРІР°РЅС‹ С‚РѕР»СЊРєРѕ РїРѕСЃР»Рµ РїРѕРІС‚РѕСЂРЅРѕРіРѕ Р·Р°РїСѓСЃРєР°.";

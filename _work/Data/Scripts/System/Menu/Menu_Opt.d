@@ -31,7 +31,7 @@ const int MENU_OPT_START_Y	= 2200;
 
 INSTANCE MENUITEM_OPT_HEADING(C_MENU_ITEM_DEF) 
 {
-	text[0]		=	"Настройки";
+	text[0]		=	"РќР°СЃС‚СЂРѕР№РєРё";
 	type		=	MENU_ITEM_TEXT;
 	// Position und Dimension	
 	posx		=	0;		posy		=	MENU_TITLE_Y;
@@ -44,8 +44,8 @@ INSTANCE MENUITEM_OPT_HEADING(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_OPT_GAME(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	text[0]		= "Игра";
-	text[1]		= "Настройки игры.";  // Kommentar
+	text[0]		= "РРіСЂР°";
+	text[1]		= "РќР°СЃС‚СЂРѕР№РєРё РёРіСЂС‹.";  // Kommentar
 	
 	// Position und Dimension	
 	posx		= 0;		posy		= MENU_OPT_START_Y + MENU_OPT_DY*0;
@@ -61,8 +61,8 @@ INSTANCE MENUITEM_OPT_GAME(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_OPT_GRAPHICS(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	text[0]		= "Графика";
-	text[1]		= "Видимость, детализация и эффекты.";  // Kommentar
+	text[0]		= "Р“СЂР°С„РёРєР°";
+	text[1]		= "Р’РёРґРёРјРѕСЃС‚СЊ, РґРµС‚Р°Р»РёР·Р°С†РёСЏ Рё СЌС„С„РµРєС‚С‹.";  // Kommentar
 	
 	// Position und Dimension	
 	posx		= 0;		posy		= MENU_OPT_START_Y + MENU_OPT_DY*1;
@@ -78,8 +78,8 @@ INSTANCE MENUITEM_OPT_GRAPHICS(C_MENU_ITEM_DEF)
 instance MENUITEM_OPT_VIDEO(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	text[0]		=	"Видео";
-	text[1]		=	"Видеокарта, разрешение и яркость.";  // Kommentar
+	text[0]		=	"Р’РёРґРµРѕ";
+	text[1]		=	"Р’РёРґРµРѕРєР°СЂС‚Р°, СЂР°Р·СЂРµС€РµРЅРёРµ Рё СЏСЂРєРѕСЃС‚СЊ.";  // Kommentar
 	
 	// Position und Dimension	
 	posx		= 0;		posy		= MENU_OPT_START_Y + MENU_OPT_DY*2;
@@ -95,8 +95,8 @@ instance MENUITEM_OPT_VIDEO(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_OPT_AUDIO(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	text[0]		= "Звук";
-	text[1]		= "Музыка, речь и звуковые эффекты.";  // Kommentar
+	text[0]		= "Р—РІСѓРє";
+	text[1]		= "РњСѓР·С‹РєР°, СЂРµС‡СЊ Рё Р·РІСѓРєРѕРІС‹Рµ СЌС„С„РµРєС‚С‹.";  // Kommentar
 	
 	// Position und Dimension
 	posx		= 0;		posy		= MENU_OPT_START_Y + MENU_OPT_DY*3;
@@ -113,8 +113,8 @@ INSTANCE MENUITEM_OPT_AUDIO(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_OPT_CONTROLS(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	text[0]		= "Управление";
-	text[1]		= "Клавиши управления.";  // Kommentar
+	text[0]		= "РЈРїСЂР°РІР»РµРЅРёРµ";
+	text[1]		= "РљР»Р°РІРёС€Рё СѓРїСЂР°РІР»РµРЅРёСЏ.";  // Kommentar
 	
 	// Position und Dimension	
 	posx		= 0;		posy		= MENU_OPT_START_Y + MENU_OPT_DY*4;
@@ -132,8 +132,8 @@ INSTANCE MENUITEM_OPT_CONTROLS(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_PERF(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	text[0]		= "Быстродействие/Качество";
-	text[1]		= "Оптимальная производительность и качество.";  // Kommentar
+	text[0]		= "Р‘С‹СЃС‚СЂРѕРґРµР№СЃС‚РІРёРµ/РљР°С‡РµСЃС‚РІРѕ";
+	text[1]		= "РћРїС‚РёРјР°Р»СЊРЅР°СЏ РїСЂРѕРёР·РІРѕРґРёС‚РµР»СЊРЅРѕСЃС‚СЊ Рё РєР°С‡РµСЃС‚РІРѕ.";  // Kommentar
 	
 	// Position und Dimension	
 	posx		= 0;		posy		= MENU_OPT_START_Y + MENU_OPT_DY*5;
@@ -149,7 +149,7 @@ INSTANCE MENUITEM_PERF(C_MENU_ITEM_DEF)
 instance MENUITEM_PERF_CHOICE(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_CHOICE_BACK_PIC;
-	text[0]		= "по умолчанию#высокое быстродействие|среднее качество|высокое качество";	// # trennt die UnDef-Option von der auswaehlbaren Optionen
+	text[0]		= "РїРѕ СѓРјРѕР»С‡Р°РЅРёСЋ#РІС‹СЃРѕРєРѕРµ Р±С‹СЃС‚СЂРѕРґРµР№СЃС‚РІРёРµ|СЃСЂРµРґРЅРµРµ РєР°С‡РµСЃС‚РІРѕ|РІС‹СЃРѕРєРѕРµ РєР°С‡РµСЃС‚РІРѕ";	// # trennt die UnDef-Option von der auswaehlbaren Optionen
 	type		= MENU_ITEM_CHOICEBOX;
 	fontName	= MENU_FONT_SMALL;
 	// Position und Dimension	
@@ -167,7 +167,7 @@ instance MENUITEM_PERF_CHOICE(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_OPT_BACK(C_MENU_ITEM_DEF)
 {
 	backpic		=	MENU_ITEM_BACK_PIC;
-	text[0]		=	"Назад";
+	text[0]		=	"РќР°Р·Р°Рґ";
 	// Position und Dimension	
 	posx		=	1000;			posy		=	MENU_BACK_Y;
 	dimx		=	6192;		dimy		=	MENU_OPT_DY;

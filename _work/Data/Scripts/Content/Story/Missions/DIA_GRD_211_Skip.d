@@ -35,7 +35,7 @@ instance  DIA_Skip_First (C_INFO)
 	condition	=  DIA_Skip_First_Condition;
 	information	=  DIA_Skip_First_Info;
 	permanent	=  0;
-	description = "Что ты делаешь?";
+	description = "Р§С‚Рѕ С‚С‹ РґРµР»Р°РµС€СЊ?";
 };                       
 
 FUNC int  DIA_Skip_First_Condition()
@@ -48,80 +48,80 @@ FUNC int  DIA_Skip_First_Condition()
 
 FUNC VOID  DIA_Skip_First_Info()
 {
-	AI_Output (other, self,"DIA_Skip_First_15_00"); //Что ты делаешь?
-	AI_Output (self, other,"DIA_Skip_First_12_01"); //Моя работа - это оружие для стражников.
-	AI_Output (other, self,"DIA_Skip_First_15_02"); //Ты продаешь оружие?
-	AI_Output (self, other,"DIA_Skip_First_12_03"); //Да, Гомезу и его людям.
+	AI_Output (other, self,"DIA_Skip_First_15_00"); //Р§С‚Рѕ С‚С‹ РґРµР»Р°РµС€СЊ?
+	AI_Output (self, other,"DIA_Skip_First_12_01"); //РњРѕСЏ СЂР°Р±РѕС‚Р° - СЌС‚Рѕ РѕСЂСѓР¶РёРµ РґР»СЏ СЃС‚СЂР°Р¶РЅРёРєРѕРІ.
+	AI_Output (other, self,"DIA_Skip_First_15_02"); //РўС‹ РїСЂРѕРґР°РµС€СЊ РѕСЂСѓР¶РёРµ?
+	AI_Output (self, other,"DIA_Skip_First_12_03"); //Р”Р°, Р“РѕРјРµР·Сѓ Рё РµРіРѕ Р»СЋРґСЏРј.
 
 	if	!Npc_KnowsInfo(hero, DIA_Raven_Equipment)
 	{
 		Log_CreateTopic	(GE_TraderOC,	LOG_NOTE);
-		B_LogEntry		(GE_TraderOC,	"Стражник Скип во внутреннем дворе замка продает оружие. Но купить его могут только люди Гомеза.");
+		B_LogEntry		(GE_TraderOC,	"РЎС‚СЂР°Р¶РЅРёРє РЎРєРёРї РІРѕ РІРЅСѓС‚СЂРµРЅРЅРµРј РґРІРѕСЂРµ Р·Р°РјРєР° РїСЂРѕРґР°РµС‚ РѕСЂСѓР¶РёРµ. РќРѕ РєСѓРїРёС‚СЊ РµРіРѕ РјРѕРіСѓС‚ С‚РѕР»СЊРєРѕ Р»СЋРґРё Р“РѕРјРµР·Р°.");
 	};
 	
 	Info_ClearChoices 	(DIA_Skip_First);
-	Info_Addchoice 		(DIA_Skip_First,"Понятно. До встречи!",DIA_Skip_First_BACK);
-	Info_Addchoice 		(DIA_Skip_First,"Торус сказал, что ты сможешь подобрать мне оружие.",DIA_Skip_First_Thorus);
-	Info_Addchoice 		(DIA_Skip_First,"Гомез прислал меня к тебе. Я должен подобрать себе снаряжение.",DIA_Skip_First_Gomez);
+	Info_Addchoice 		(DIA_Skip_First,"РџРѕРЅСЏС‚РЅРѕ. Р”Рѕ РІСЃС‚СЂРµС‡Рё!",DIA_Skip_First_BACK);
+	Info_Addchoice 		(DIA_Skip_First,"РўРѕСЂСѓСЃ СЃРєР°Р·Р°Р», С‡С‚Рѕ С‚С‹ СЃРјРѕР¶РµС€СЊ РїРѕРґРѕР±СЂР°С‚СЊ РјРЅРµ РѕСЂСѓР¶РёРµ.",DIA_Skip_First_Thorus);
+	Info_Addchoice 		(DIA_Skip_First,"Р“РѕРјРµР· РїСЂРёСЃР»Р°Р» РјРµРЅСЏ Рє С‚РµР±Рµ. РЇ РґРѕР»Р¶РµРЅ РїРѕРґРѕР±СЂР°С‚СЊ СЃРµР±Рµ СЃРЅР°СЂСЏР¶РµРЅРёРµ.",DIA_Skip_First_Gomez);
 		
 };
 
 func void DIA_Skip_First_Gomez()
 {
-	AI_Output (other, self,"DIA_Skip_First_Gomez_15_00"); //Гомез прислал меня к тебе. Я должен подобрать себе снаряжение.
-	AI_Output (self, other,"DIA_Skip_First_Gomez_12_01"); //Как обычно, да? Новые доспехи и лучшее оружие из того, что у меня есть.
-	AI_Output (self, other,"DIA_Skip_First_Gomez_12_02"); //Убирайся отсюда, пока я не разозлился!
+	AI_Output (other, self,"DIA_Skip_First_Gomez_15_00"); //Р“РѕРјРµР· РїСЂРёСЃР»Р°Р» РјРµРЅСЏ Рє С‚РµР±Рµ. РЇ РґРѕР»Р¶РµРЅ РїРѕРґРѕР±СЂР°С‚СЊ СЃРµР±Рµ СЃРЅР°СЂСЏР¶РµРЅРёРµ.
+	AI_Output (self, other,"DIA_Skip_First_Gomez_12_01"); //РљР°Рє РѕР±С‹С‡РЅРѕ, РґР°? РќРѕРІС‹Рµ РґРѕСЃРїРµС…Рё Рё Р»СѓС‡С€РµРµ РѕСЂСѓР¶РёРµ РёР· С‚РѕРіРѕ, С‡С‚Рѕ Сѓ РјРµРЅСЏ РµСЃС‚СЊ.
+	AI_Output (self, other,"DIA_Skip_First_Gomez_12_02"); //РЈР±РёСЂР°Р№СЃСЏ РѕС‚СЃСЋРґР°, РїРѕРєР° СЏ РЅРµ СЂР°Р·РѕР·Р»РёР»СЃСЏ!
 	Info_ClearChoices 	(DIA_Skip_First);
 	AI_StopProcessInfos	(self);
 };
 
 func void DIA_Skip_First_Thorus()
 {
-	AI_Output (other, self,"DIA_Skip_First_Thorus_15_00"); //Торус отправил меня к тебе. Сказал, что ты сможешь подобрать мне оружие.
-	AI_Output (self, other,"DIA_Skip_First_Thorus_12_01"); //Даже так?
+	AI_Output (other, self,"DIA_Skip_First_Thorus_15_00"); //РўРѕСЂСѓСЃ РѕС‚РїСЂР°РІРёР» РјРµРЅСЏ Рє С‚РµР±Рµ. РЎРєР°Р·Р°Р», С‡С‚Рѕ С‚С‹ СЃРјРѕР¶РµС€СЊ РїРѕРґРѕР±СЂР°С‚СЊ РјРЅРµ РѕСЂСѓР¶РёРµ.
+	AI_Output (self, other,"DIA_Skip_First_Thorus_12_01"); //Р”Р°Р¶Рµ С‚Р°Рє?
 	Info_ClearChoices 	(DIA_Skip_First);
-	Info_Addchoice 		(DIA_Skip_First,"А ты сам у него спроси.",DIA_Skip_First_Thorus_AskHim);
-	Info_Addchoice 		(DIA_Skip_First,"Он сказал, что если ты не выдашь мне оружие, я могу у тебя его отобрать.",DIA_Skip_First_Thorus_KickAss);
-	Info_Addchoice 		(DIA_Skip_First,"Я должен выполнить одно его задание...",DIA_Skip_First_Thorus_Stranger);
+	Info_Addchoice 		(DIA_Skip_First,"Рђ С‚С‹ СЃР°Рј Сѓ РЅРµРіРѕ СЃРїСЂРѕСЃРё.",DIA_Skip_First_Thorus_AskHim);
+	Info_Addchoice 		(DIA_Skip_First,"РћРЅ СЃРєР°Р·Р°Р», С‡С‚Рѕ РµСЃР»Рё С‚С‹ РЅРµ РІС‹РґР°С€СЊ РјРЅРµ РѕСЂСѓР¶РёРµ, СЏ РјРѕРіСѓ Сѓ С‚РµР±СЏ РµРіРѕ РѕС‚РѕР±СЂР°С‚СЊ.",DIA_Skip_First_Thorus_KickAss);
+	Info_Addchoice 		(DIA_Skip_First,"РЇ РґРѕР»Р¶РµРЅ РІС‹РїРѕР»РЅРёС‚СЊ РѕРґРЅРѕ РµРіРѕ Р·Р°РґР°РЅРёРµ...",DIA_Skip_First_Thorus_Stranger);
 };
 
 func void DIA_Skip_First_BACK()
 {
-	AI_Output (other, self,"DIA_Skip_First_BACK_15_00"); //Понятно. До встречи!
+	AI_Output (other, self,"DIA_Skip_First_BACK_15_00"); //РџРѕРЅСЏС‚РЅРѕ. Р”Рѕ РІСЃС‚СЂРµС‡Рё!
 	Info_ClearChoices 	(DIA_Skip_First);
 	AI_StopProcessInfos	(self);
 };
 //------------------------------------------------------
 func void DIA_Skip_First_Thorus_Stranger()
 {
-	AI_Output (other, self,"DIA_Skip_First_Thorus_Stranger_15_00"); //Я должен выполнить одно его задание. Никто из вас не сможет его сделать.
-	AI_Output (self, other,"DIA_Skip_First_Thorus_Stranger_12_01"); //Да? И он первым делом решил отправить тебя ко мне, верно?
+	AI_Output (other, self,"DIA_Skip_First_Thorus_Stranger_15_00"); //РЇ РґРѕР»Р¶РµРЅ РІС‹РїРѕР»РЅРёС‚СЊ РѕРґРЅРѕ РµРіРѕ Р·Р°РґР°РЅРёРµ. РќРёРєС‚Рѕ РёР· РІР°СЃ РЅРµ СЃРјРѕР¶РµС‚ РµРіРѕ СЃРґРµР»Р°С‚СЊ.
+	AI_Output (self, other,"DIA_Skip_First_Thorus_Stranger_12_01"); //Р”Р°? Р РѕРЅ РїРµСЂРІС‹Рј РґРµР»РѕРј СЂРµС€РёР» РѕС‚РїСЂР°РІРёС‚СЊ С‚РµР±СЏ РєРѕ РјРЅРµ, РІРµСЂРЅРѕ?
 	Info_ClearChoices 	(DIA_Skip_First);
-	Info_Addchoice 		(DIA_Skip_First,"А ты сам у него спроси.",DIA_Skip_First_Thorus_AskHim);
-	Info_Addchoice 		(DIA_Skip_First,"Он велел пинать твою задницу, пока ты не выдашь мне оружие.",DIA_Skip_First_Thorus_KickAssAGAIN);
+	Info_Addchoice 		(DIA_Skip_First,"Рђ С‚С‹ СЃР°Рј Сѓ РЅРµРіРѕ СЃРїСЂРѕСЃРё.",DIA_Skip_First_Thorus_AskHim);
+	Info_Addchoice 		(DIA_Skip_First,"РћРЅ РІРµР»РµР» РїРёРЅР°С‚СЊ С‚РІРѕСЋ Р·Р°РґРЅРёС†Сѓ, РїРѕРєР° С‚С‹ РЅРµ РІС‹РґР°С€СЊ РјРЅРµ РѕСЂСѓР¶РёРµ.",DIA_Skip_First_Thorus_KickAssAGAIN);
 };
 
 func void DIA_Skip_First_Thorus_KickAss()
 {
-	AI_Output (other, self,"DIA_Skip_First_Thorus_KickAss_15_00"); //Он велел пинать твою тощую задницу до тех пор, пока ты не выдашь мне оружие.
-	AI_Output (self, other,"DIA_Skip_First_Thorus_KickAss_12_01"); //В самом деле? Мне кажется, если ты не уберешься отсюда достаточно быстро, то я буду пинать твою задницу.
+	AI_Output (other, self,"DIA_Skip_First_Thorus_KickAss_15_00"); //РћРЅ РІРµР»РµР» РїРёРЅР°С‚СЊ С‚РІРѕСЋ С‚РѕС‰СѓСЋ Р·Р°РґРЅРёС†Сѓ РґРѕ С‚РµС… РїРѕСЂ, РїРѕРєР° С‚С‹ РЅРµ РІС‹РґР°С€СЊ РјРЅРµ РѕСЂСѓР¶РёРµ.
+	AI_Output (self, other,"DIA_Skip_First_Thorus_KickAss_12_01"); //Р’ СЃР°РјРѕРј РґРµР»Рµ? РњРЅРµ РєР°Р¶РµС‚СЃСЏ, РµСЃР»Рё С‚С‹ РЅРµ СѓР±РµСЂРµС€СЊСЃСЏ РѕС‚СЃСЋРґР° РґРѕСЃС‚Р°С‚РѕС‡РЅРѕ Р±С‹СЃС‚СЂРѕ, С‚Рѕ СЏ Р±СѓРґСѓ РїРёРЅР°С‚СЊ С‚РІРѕСЋ Р·Р°РґРЅРёС†Сѓ.
 	Info_ClearChoices 	(DIA_Skip_First);
 	AI_StopProcessInfos	(self);
 };
 
 func void DIA_Skip_First_Thorus_AskHim()
 {
-	AI_Output (other, self,"DIA_Skip_First_Thorus_AskHim_15_00"); //А ты сам у него спроси.
-	AI_Output (self, other,"DIA_Skip_First_Thorus_AskHim_12_01"); //Именно это я и сделаю, только попозже. Уверен, что он захочет услышать все, что ты говорил о нем.
-	AI_Output (self, other,"DIA_Skip_First_Thorus_AskHim_12_02"); //Не знаю, кто тебя впустил, но на твоем месте я бы поскорее убрался отсюда!
+	AI_Output (other, self,"DIA_Skip_First_Thorus_AskHim_15_00"); //Рђ С‚С‹ СЃР°Рј Сѓ РЅРµРіРѕ СЃРїСЂРѕСЃРё.
+	AI_Output (self, other,"DIA_Skip_First_Thorus_AskHim_12_01"); //РРјРµРЅРЅРѕ СЌС‚Рѕ СЏ Рё СЃРґРµР»Р°СЋ, С‚РѕР»СЊРєРѕ РїРѕРїРѕР·Р¶Рµ. РЈРІРµСЂРµРЅ, С‡С‚Рѕ РѕРЅ Р·Р°С…РѕС‡РµС‚ СѓСЃР»С‹С€Р°С‚СЊ РІСЃРµ, С‡С‚Рѕ С‚С‹ РіРѕРІРѕСЂРёР» Рѕ РЅРµРј.
+	AI_Output (self, other,"DIA_Skip_First_Thorus_AskHim_12_02"); //РќРµ Р·РЅР°СЋ, РєС‚Рѕ С‚РµР±СЏ РІРїСѓСЃС‚РёР», РЅРѕ РЅР° С‚РІРѕРµРј РјРµСЃС‚Рµ СЏ Р±С‹ РїРѕСЃРєРѕСЂРµРµ СѓР±СЂР°Р»СЃСЏ РѕС‚СЃСЋРґР°!
 	Info_ClearChoices 	(DIA_Skip_First);
 	AI_StopProcessInfos	(self);
 };
 
 func void DIA_Skip_First_Thorus_KickAssAGAIN()
 {
-	AI_Output (other, self,"DIA_Skip_First_Thorus_KickAssAGAIN_15_00"); //Он сказал, что если ты не выдашь мне оружие, я могу у тебя его отобрать.
-	AI_Output (self, other,"DIA_Skip_First_Thorus_KickAssAGAIN_12_01"); //Хорошо, приятель. Что тебе нужно?
+	AI_Output (other, self,"DIA_Skip_First_Thorus_KickAssAGAIN_15_00"); //РћРЅ СЃРєР°Р·Р°Р», С‡С‚Рѕ РµСЃР»Рё С‚С‹ РЅРµ РІС‹РґР°С€СЊ РјРЅРµ РѕСЂСѓР¶РёРµ, СЏ РјРѕРіСѓ Сѓ С‚РµР±СЏ РµРіРѕ РѕС‚РѕР±СЂР°С‚СЊ.
+	AI_Output (self, other,"DIA_Skip_First_Thorus_KickAssAGAIN_12_01"); //РҐРѕСЂРѕС€Рѕ, РїСЂРёСЏС‚РµР»СЊ. Р§С‚Рѕ С‚РµР±Рµ РЅСѓР¶РЅРѕ?
 	Info_ClearChoices 	(DIA_Skip_First);
 	Skip_TradeFree = TRUE;
 };
@@ -137,7 +137,7 @@ instance  DIA_Skip_VERPATZT (C_INFO)
 	condition	=  DIA_Skip_VERPATZT_Condition;
 	information	=  DIA_Skip_VERPATZT_Info;
 	permanent	=  1;
-	description = "Я подумал, что неплохо было поговорить с тобой о снаряжении.";
+	description = "РЇ РїРѕРґСѓРјР°Р», С‡С‚Рѕ РЅРµРїР»РѕС…Рѕ Р±С‹Р»Рѕ РїРѕРіРѕРІРѕСЂРёС‚СЊ СЃ С‚РѕР±РѕР№ Рѕ СЃРЅР°СЂСЏР¶РµРЅРёРё.";
 };                       
 
 FUNC int  DIA_Skip_VERPATZT_Condition()
@@ -153,8 +153,8 @@ FUNC int  DIA_Skip_VERPATZT_Condition()
 
 FUNC VOID  DIA_Skip_VERPATZT_Info()
 {
-	AI_Output (other, self,"DIA_Skip_VERPATZT_15_00"); //Я просто подумал, что неплохо было бы поговорить с тобой о снаряжении.
-	AI_Output (self, other,"DIA_Skip_VERPATZT_12_01"); //Убирайся отсюда!
+	AI_Output (other, self,"DIA_Skip_VERPATZT_15_00"); //РЇ РїСЂРѕСЃС‚Рѕ РїРѕРґСѓРјР°Р», С‡С‚Рѕ РЅРµРїР»РѕС…Рѕ Р±С‹Р»Рѕ Р±С‹ РїРѕРіРѕРІРѕСЂРёС‚СЊ СЃ С‚РѕР±РѕР№ Рѕ СЃРЅР°СЂСЏР¶РµРЅРёРё.
+	AI_Output (self, other,"DIA_Skip_VERPATZT_12_01"); //РЈР±РёСЂР°Р№СЃСЏ РѕС‚СЃСЋРґР°!
 };
 
 /*------------------------------------------------------------------------
@@ -167,7 +167,7 @@ instance  GRD_211_Skip_TRADE (C_INFO)
 	condition		= GRD_211_Skip_TRADE_Condition;
 	information		= GRD_211_Skip_TRADE_Info;
 	permanent		= 1;
-	description		= "Я подумал, что неплохо было поговорить с тобой о снаряжении."; 
+	description		= "РЇ РїРѕРґСѓРјР°Р», С‡С‚Рѕ РЅРµРїР»РѕС…Рѕ Р±С‹Р»Рѕ РїРѕРіРѕРІРѕСЂРёС‚СЊ СЃ С‚РѕР±РѕР№ Рѕ СЃРЅР°СЂСЏР¶РµРЅРёРё."; 
 	trade 			= 1;
 };
 
@@ -183,8 +183,8 @@ FUNC int  GRD_211_Skip_TRADE_Condition()
 
 FUNC void  GRD_211_Skip_TRADE_Info()
 {
-	AI_Output (other, self,"GRD_211_Skip_TRADE_Info_15_01"); //Я просто подумал, что неплохо было бы поговорить с тобой о снаряжении.
-	AI_Output (self, other,"GRD_211_Skip_TRADE_Info_12_02"); //Если надо могу кое-что продать.
+	AI_Output (other, self,"GRD_211_Skip_TRADE_Info_15_01"); //РЇ РїСЂРѕСЃС‚Рѕ РїРѕРґСѓРјР°Р», С‡С‚Рѕ РЅРµРїР»РѕС…Рѕ Р±С‹Р»Рѕ Р±С‹ РїРѕРіРѕРІРѕСЂРёС‚СЊ СЃ С‚РѕР±РѕР№ Рѕ СЃРЅР°СЂСЏР¶РµРЅРёРё.
+	AI_Output (self, other,"GRD_211_Skip_TRADE_Info_12_02"); //Р•СЃР»Рё РЅР°РґРѕ РјРѕРіСѓ РєРѕРµ-С‡С‚Рѕ РїСЂРѕРґР°С‚СЊ.
 };  
 
 /*------------------------------------------------------------------------
@@ -209,5 +209,5 @@ FUNC int  GRD_211_Skip_WELCOME_Condition()
 };
 func void  GRD_211_Skip_WELCOME_Info()
 {
-	AI_Output (self, other,"GRD_211_Skip_WELCOME_Info_12_01"); //Эй, ты не плохо тут разошелся для новичка.
+	AI_Output (self, other,"GRD_211_Skip_WELCOME_Info_12_01"); //Р­Р№, С‚С‹ РЅРµ РїР»РѕС…Рѕ С‚СѓС‚ СЂР°Р·РѕС€РµР»СЃСЏ РґР»СЏ РЅРѕРІРёС‡РєР°.
 };

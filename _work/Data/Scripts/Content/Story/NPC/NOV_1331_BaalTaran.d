@@ -1,7 +1,7 @@
 instance NOV_1331_BaalTaran (Npc_Default)
 {
 	//-------- primary data --------
-	name 		=		"Идол Тэран";
+	name 		=		"РРґРѕР» РўСЌСЂР°РЅ";
 	Npctype 		=		Npctype_Main;
 	guild 		=		GIL_NOV;
 	level 		=		9;

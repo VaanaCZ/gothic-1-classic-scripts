@@ -1,7 +1,7 @@
 instance NOV_1303_Nyras (Npc_Default)
 {
 	//-------- primary data --------
-	name 		=		"Нирас";
+	name 		=		"РќРёСЂР°СЃ";
 	Npctype 	=		NPCTYPE_MAIN;
 	guild 		=		GIL_NONE;
 	level 		=		6;

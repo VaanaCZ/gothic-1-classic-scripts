@@ -3,7 +3,7 @@ INSTANCE PC_Hero(NPC_DEFAULT)
 
 {
 	//-------- primary data --------		
-	name 			= "ﬂ";
+	name 			= "–Ø";
 	Npctype			= NPCTYPE_MAIN;
 	guild			= GIL_NONE;
 	level			= 0;
@@ -37,14 +37,14 @@ INSTANCE PC_Hero(NPC_DEFAULT)
 
 
 // ***************************************************************************
-// PlayerInstanz ANFANG LEVEL2!!! Mit Buddlerr¸stung +10, Waffe +13, Waffe +20
+// PlayerInstanz ANFANG LEVEL2!!! Mit Buddlerr—åstung +10, Waffe +13, Waffe +20
 // ***************************************************************************
 
 INSTANCE PC_Hero_L2(NPC_DEFAULT)
 
 {
 	//-------- primary data --------
-	name 			= "ﬂ";
+	name 			= "–Ø";
 	Npctype			= NPCTYPE_MAIN;
 	guild			= GIL_NONE;
 	level			= 2;
@@ -100,7 +100,7 @@ INSTANCE PC_Hero_L5(NPC_DEFAULT)
 
 {
 	//-------- primary data --------
-	name 			= "ﬂ";
+	name 			= "–Ø";
 	Npctype			= NPCTYPE_MAIN;
 	guild			= GIL_NONE; //
 	level			= 5;
@@ -151,7 +151,7 @@ INSTANCE PC_Hero_L5(NPC_DEFAULT)
 INSTANCE PC_Hero_L7(NPC_DEFAULT)
 {
 	//-------- primary data --------
-	name 			= "ﬂ";
+	name 			= "–Ø";
 	Npctype			= NPCTYPE_MAIN;
 	guild			= GIL_ORG; //
 	level			= 7;
@@ -208,7 +208,7 @@ INSTANCE PC_Hero_L7(NPC_DEFAULT)
 INSTANCE PC_Hero_L11(NPC_DEFAULT)
 {
 	//-------- primary data --------
-	name 			= "ﬂ";
+	name 			= "–Ø";
 	Npctype			= NPCTYPE_MAIN;
 	guild			= GIL_SLD; //
 	level			= 11;
@@ -262,7 +262,7 @@ INSTANCE PC_Hero_L11(NPC_DEFAULT)
 INSTANCE PC_Hero_L13(NPC_DEFAULT)
 {
 	//-------- primary data --------
-	name 			= "ﬂ";
+	name 			= "–Ø";
 	Npctype			= Npctype_Main;
 	guild			= GIL_SLD; //
 	level			= 13;
@@ -387,7 +387,7 @@ INSTANCE HeroBow13 (C_Item)
 
 
 
-// *********** NICHT L÷SCHEN - SONST STERBEN **************
+// *********** NICHT L–¶SCHEN - SONST STERBEN **************
 
 
 INSTANCE XP_Map(C_Item)
@@ -411,5 +411,5 @@ FUNC VOID Use_XP_Map()
 	CreateInvItems(self,ItMiNugget,1000);
 	hero.lp = hero.lp + 20;
 	
-	PrintScreen	("+1000 ÍÛÒÍÓ‚ Û‰˚", -1,40,"font_10_book.tga",10);
+	PrintScreen	("+1000 –∫—É—Å–∫–æ–≤ —Ä—É–¥—ã", -1,40,"font_10_book.tga",10);
 };

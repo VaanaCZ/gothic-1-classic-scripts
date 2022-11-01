@@ -2,7 +2,7 @@ instance GRD_224_Pacho (Npc_Default)
 {
 	//-------- primary data --------
 	
-	name 		=	"œ‡ÍÓ";
+	name 		=	"–ü–∞–∫–æ";
 	npctype		= 	NPCTYPE_MAIN;
 	guild 		=	GIL_GRD;
 	level 		=	10;

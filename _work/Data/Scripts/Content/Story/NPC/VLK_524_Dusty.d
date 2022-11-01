@@ -2,7 +2,7 @@ instance VLK_524_Dusty (Npc_Default)
 {
 	//-------- primary data --------
 	
-	name =							"Дасти";
+	name =							"Р”Р°СЃС‚Рё";
 	npctype =						NPCTYPE_FRIEND;
 	guild =							GIL_VLK;      
 	level =							10;

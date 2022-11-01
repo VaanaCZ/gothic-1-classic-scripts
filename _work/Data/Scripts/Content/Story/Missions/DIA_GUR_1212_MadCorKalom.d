@@ -17,15 +17,15 @@ FUNC void GUR_1212_MadCorKalom_Talk2SC_Info ()
 	AI_SetWalkmode		(self, NPC_WALK);
 	AI_GotoNpc			(self, hero);
 	
-	AI_Output			(self, hero,"GUR_1212_MadCorKalom_Talk2SC_10_01"); //Вот мы снова и встретились!
-	AI_Output			(self, hero,"GUR_1212_MadCorKalom_Talk2SC_10_02"); //Мой повелитель уже сообщил мне о тебе.
-	AI_Output			(self, hero,"GUR_1212_MadCorKalom_Talk2SC_10_03"); //Он чувствует, что ты рядом.
-	AI_Output			(hero, self,"GUR_1212_MadCorKalom_Talk2SC_15_04"); //Скоро я подойду к нему даже ближе, чем ему бы хотелось!
-	AI_Output			(self, hero,"GUR_1212_MadCorKalom_Talk2SC_10_05"); //Мы не позволим тебе испортить все.
-	AI_Output			(self, hero,"GUR_1212_MadCorKalom_Talk2SC_10_06"); //Мир на пороге пробуждения нашего Избавителя, и никто не остановит его.
-	AI_Output			(self, hero,"GUR_1212_MadCorKalom_Talk2SC_10_07"); //Все неверные заплатят за свои грехи.
-	AI_Output			(self, hero,"GUR_1212_MadCorKalom_Talk2SC_10_08"); //И ты будешь первым в их рядах.
-	AI_Output			(self, hero,"GUR_1212_MadCorKalom_Talk2SC_10_09"); //Пробудись, Спящий!
+	AI_Output			(self, hero,"GUR_1212_MadCorKalom_Talk2SC_10_01"); //Р’РѕС‚ РјС‹ СЃРЅРѕРІР° Рё РІСЃС‚СЂРµС‚РёР»РёСЃСЊ!
+	AI_Output			(self, hero,"GUR_1212_MadCorKalom_Talk2SC_10_02"); //РњРѕР№ РїРѕРІРµР»РёС‚РµР»СЊ СѓР¶Рµ СЃРѕРѕР±С‰РёР» РјРЅРµ Рѕ С‚РµР±Рµ.
+	AI_Output			(self, hero,"GUR_1212_MadCorKalom_Talk2SC_10_03"); //РћРЅ С‡СѓРІСЃС‚РІСѓРµС‚, С‡С‚Рѕ С‚С‹ СЂСЏРґРѕРј.
+	AI_Output			(hero, self,"GUR_1212_MadCorKalom_Talk2SC_15_04"); //РЎРєРѕСЂРѕ СЏ РїРѕРґРѕР№РґСѓ Рє РЅРµРјСѓ РґР°Р¶Рµ Р±Р»РёР¶Рµ, С‡РµРј РµРјСѓ Р±С‹ С…РѕС‚РµР»РѕСЃСЊ!
+	AI_Output			(self, hero,"GUR_1212_MadCorKalom_Talk2SC_10_05"); //РњС‹ РЅРµ РїРѕР·РІРѕР»РёРј С‚РµР±Рµ РёСЃРїРѕСЂС‚РёС‚СЊ РІСЃРµ.
+	AI_Output			(self, hero,"GUR_1212_MadCorKalom_Talk2SC_10_06"); //РњРёСЂ РЅР° РїРѕСЂРѕРіРµ РїСЂРѕР±СѓР¶РґРµРЅРёСЏ РЅР°С€РµРіРѕ РР·Р±Р°РІРёС‚РµР»СЏ, Рё РЅРёРєС‚Рѕ РЅРµ РѕСЃС‚Р°РЅРѕРІРёС‚ РµРіРѕ.
+	AI_Output			(self, hero,"GUR_1212_MadCorKalom_Talk2SC_10_07"); //Р’СЃРµ РЅРµРІРµСЂРЅС‹Рµ Р·Р°РїР»Р°С‚СЏС‚ Р·Р° СЃРІРѕРё РіСЂРµС…Рё.
+	AI_Output			(self, hero,"GUR_1212_MadCorKalom_Talk2SC_10_08"); //Р С‚С‹ Р±СѓРґРµС€СЊ РїРµСЂРІС‹Рј РІ РёС… СЂСЏРґР°С….
+	AI_Output			(self, hero,"GUR_1212_MadCorKalom_Talk2SC_10_09"); //РџСЂРѕР±СѓРґРёСЃСЊ, РЎРїСЏС‰РёР№!
 
 	AI_StopProcessInfos	(self);
 

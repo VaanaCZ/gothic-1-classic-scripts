@@ -14,7 +14,7 @@ INSTANCE Info_Mine_Org_7_EXIT(C_INFO)
 	condition	= Info_Mine_Org_7_EXIT_Condition;
 	information	= Info_Mine_Org_7_EXIT_Info;
 	permanent	= 1;
-	description = "ЗАКОНЧИТЬ РАЗГОВОР";
+	description = "Р—РђРљРћРќР§РРўР¬ Р РђР—Р“РћР’РћР ";
 };                       
 
 FUNC INT Info_Mine_Org_7_EXIT_Condition()
@@ -37,7 +37,7 @@ INSTANCE Info_Mine_Org_7_Mine (C_INFO) // E1
 	condition	= Info_Mine_Org_7_Mine_Condition;
 	information	= Info_Mine_Org_7_Mine_Info;
 	permanent	= 1;
-	description = "Расскажи мне об этом лагере.";
+	description = "Р Р°СЃСЃРєР°Р¶Рё РјРЅРµ РѕР± СЌС‚РѕРј Р»Р°РіРµСЂРµ.";
 };                       
 
 FUNC INT Info_Mine_Org_7_Mine_Condition()
@@ -47,8 +47,8 @@ FUNC INT Info_Mine_Org_7_Mine_Condition()
 
 FUNC VOID Info_Mine_Org_7_Mine_Info()
 {
-	AI_Output(other,self,"Info_Mine_Org_7_Mine_15_00"); //Расскажи мне об этом лагере.
-	AI_Output(self,other,"Info_Mine_Org_7_Mine_07_01"); //О лагере? Ты имеешь в виду нашу пещеру? Здесь не так уж плохо. Рудокопы добывают руду, наемники нас охраняют, а мы, воры, всем здесь заправляем. 
+	AI_Output(other,self,"Info_Mine_Org_7_Mine_15_00"); //Р Р°СЃСЃРєР°Р¶Рё РјРЅРµ РѕР± СЌС‚РѕРј Р»Р°РіРµСЂРµ.
+	AI_Output(self,other,"Info_Mine_Org_7_Mine_07_01"); //Рћ Р»Р°РіРµСЂРµ? РўС‹ РёРјРµРµС€СЊ РІ РІРёРґСѓ РЅР°С€Сѓ РїРµС‰РµСЂСѓ? Р—РґРµСЃСЊ РЅРµ С‚Р°Рє СѓР¶ РїР»РѕС…Рѕ. Р СѓРґРѕРєРѕРїС‹ РґРѕР±С‹РІР°СЋС‚ СЂСѓРґСѓ, РЅР°РµРјРЅРёРєРё РЅР°СЃ РѕС…СЂР°РЅСЏСЋС‚, Р° РјС‹, РІРѕСЂС‹, РІСЃРµРј Р·РґРµСЃСЊ Р·Р°РїСЂР°РІР»СЏРµРј. 
 	
 };
 
@@ -62,7 +62,7 @@ INSTANCE Info_Mine_Org_7_WichtigePersonen(C_INFO)
 	condition	= Info_Mine_Org_7_WichtigePersonen_Condition;
 	information	= Info_Mine_Org_7_WichtigePersonen_Info;
 	permanent	= 1;
-	description = "Кто здесь всем руководит?";
+	description = "РљС‚Рѕ Р·РґРµСЃСЊ РІСЃРµРј СЂСѓРєРѕРІРѕРґРёС‚?";
 };                       
 
 FUNC INT Info_Mine_Org_7_WichtigePersonen_Condition()
@@ -72,9 +72,9 @@ FUNC INT Info_Mine_Org_7_WichtigePersonen_Condition()
 
 FUNC VOID Info_Mine_Org_7_WichtigePersonen_Info()
 {
-	AI_Output(other,self,"Info_Mine_Org_7_WichtigePersonen_15_00"); //Кто здесь всем руководит?
-	AI_Output(self,other,"Info_Mine_Org_7_WichtigePersonen_07_01"); //Зависит от того, кому ты подчиняешься.
-	AI_Output(self,other,"Info_Mine_Org_7_WichtigePersonen_07_02"); //Но если Окил захочет, чтобы ты что-нибудь для него сделал, лучше с ним не спорить. Он не прощает тех, кто в чем-то ему отказывает.
+	AI_Output(other,self,"Info_Mine_Org_7_WichtigePersonen_15_00"); //РљС‚Рѕ Р·РґРµСЃСЊ РІСЃРµРј СЂСѓРєРѕРІРѕРґРёС‚?
+	AI_Output(self,other,"Info_Mine_Org_7_WichtigePersonen_07_01"); //Р—Р°РІРёСЃРёС‚ РѕС‚ С‚РѕРіРѕ, РєРѕРјСѓ С‚С‹ РїРѕРґС‡РёРЅСЏРµС€СЊСЃСЏ.
+	AI_Output(self,other,"Info_Mine_Org_7_WichtigePersonen_07_02"); //РќРѕ РµСЃР»Рё РћРєРёР» Р·Р°С…РѕС‡РµС‚, С‡С‚РѕР±С‹ С‚С‹ С‡С‚Рѕ-РЅРёР±СѓРґСЊ РґР»СЏ РЅРµРіРѕ СЃРґРµР»Р°Р», Р»СѓС‡С€Рµ СЃ РЅРёРј РЅРµ СЃРїРѕСЂРёС‚СЊ. РћРЅ РЅРµ РїСЂРѕС‰Р°РµС‚ С‚РµС…, РєС‚Рѕ РІ С‡РµРј-С‚Рѕ РµРјСѓ РѕС‚РєР°Р·С‹РІР°РµС‚.
 	
 };
 
@@ -88,7 +88,7 @@ INSTANCE Info_Mine_Org_7_DieLage(C_INFO) // E1
 	condition	= Info_Mine_Org_7_DieLage_Condition;
 	information	= Info_Mine_Org_7_DieLage_Info;
 	permanent	= 1;
-	description = "Как жизнь?";
+	description = "РљР°Рє Р¶РёР·РЅСЊ?";
 };                       
 
 FUNC INT Info_Mine_Org_7_DieLage_Condition()
@@ -98,8 +98,8 @@ FUNC INT Info_Mine_Org_7_DieLage_Condition()
 
 FUNC VOID Info_Mine_Org_7_DieLage_Info()
 {
-	AI_Output(other,self,"Info_Mine_Org_7_DieLage_15_00"); //Как жизнь?
-	AI_Output(self,other,"Info_Mine_Org_7_DieLage_07_01"); //Слушай, не отвлекай меня от работы!
+	AI_Output(other,self,"Info_Mine_Org_7_DieLage_15_00"); //РљР°Рє Р¶РёР·РЅСЊ?
+	AI_Output(self,other,"Info_Mine_Org_7_DieLage_07_01"); //РЎР»СѓС€Р°Р№, РЅРµ РѕС‚РІР»РµРєР°Р№ РјРµРЅСЏ РѕС‚ СЂР°Р±РѕС‚С‹!
 };
 	
 // *************************************************************************

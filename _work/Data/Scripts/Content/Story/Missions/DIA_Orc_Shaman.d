@@ -53,9 +53,9 @@ FUNC int  Info_OrcShaman_THX_Condition()
 };
 FUNC void  Info_OrcShaman_THX_Info()
 {
-	AI_Output 		(self, hero,"Info_OrcShaman_THX_17_01"); //Спасибо чужак!
-	AI_Output 		(self, hero,"Info_OrcShaman_THX_17_02"); //Плохой орки хотеть убить меня.
-	AI_Output 		(self, hero,"Info_OrcShaman_THX_17_03"); //Братья стать враги.
+	AI_Output 		(self, hero,"Info_OrcShaman_THX_17_01"); //РЎРїР°СЃРёР±Рѕ С‡СѓР¶Р°Рє!
+	AI_Output 		(self, hero,"Info_OrcShaman_THX_17_02"); //РџР»РѕС…РѕР№ РѕСЂРєРё С…РѕС‚РµС‚СЊ СѓР±РёС‚СЊ РјРµРЅСЏ.
+	AI_Output 		(self, hero,"Info_OrcShaman_THX_17_03"); //Р‘СЂР°С‚СЊСЏ СЃС‚Р°С‚СЊ РІСЂР°РіРё.
 }; 
 
 //---------------------------------------------------------------------
@@ -68,7 +68,7 @@ instance  Info_OrcShaman_WHO (C_INFO)
 	information	= Info_OrcShaman_WHO_Info;
 	important	= 0;
 	permanent	= 0;
-	description = "Кто ты?";
+	description = "РљС‚Рѕ С‚С‹?";
 };
 
 FUNC int  Info_OrcShaman_WHO_Condition()
@@ -82,9 +82,9 @@ FUNC int  Info_OrcShaman_WHO_Condition()
 
 FUNC void  Info_OrcShaman_WHO_Info()
 {
-	AI_Output 		(hero, self,"Info_OrcShaman_WHO_15_01"); //Кто ты?
-	AI_Output 		(self, hero,"Info_OrcShaman_WHO_17_02"); //Имя Ур-Шак.
-	AI_Output 		(self, hero,"Info_OrcShaman_WHO_17_03"); //Быть сын духа. Люди звать нас шаман.
+	AI_Output 		(hero, self,"Info_OrcShaman_WHO_15_01"); //РљС‚Рѕ С‚С‹?
+	AI_Output 		(self, hero,"Info_OrcShaman_WHO_17_02"); //РРјСЏ РЈСЂ-РЁР°Рє.
+	AI_Output 		(self, hero,"Info_OrcShaman_WHO_17_03"); //Р‘С‹С‚СЊ СЃС‹РЅ РґСѓС…Р°. Р›СЋРґРё Р·РІР°С‚СЊ РЅР°СЃ С€Р°РјР°РЅ.
 }; 
 
 //---------------------------------------------------------------------
@@ -97,7 +97,7 @@ instance  Info_OrcShaman_TONGUE (C_INFO)
 	information	= Info_OrcShaman_TONGUE_Info;
 	important	= 0;
 	permanent	= 0;
-	description = "Откуда ты знаешь язык людей?";
+	description = "РћС‚РєСѓРґР° С‚С‹ Р·РЅР°РµС€СЊ СЏР·С‹Рє Р»СЋРґРµР№?";
 };
 
 FUNC int  Info_OrcShaman_TONGUE_Condition()
@@ -111,9 +111,9 @@ FUNC int  Info_OrcShaman_TONGUE_Condition()
 
 FUNC void  Info_OrcShaman_TONGUE_Info()
 {
-	AI_Output 		(hero, self,"Info_OrcShaman_TONGUE_15_01"); //Откуда ты знаешь язык людей?
-	AI_Output 		(self, hero,"Info_OrcShaman_TONGUE_17_02"); //Ур-Шак быть раб людей в шахта.
-	AI_Output 		(self, hero,"Info_OrcShaman_TONGUE_17_03"); //Убежать. Много зимы назад убежать.
+	AI_Output 		(hero, self,"Info_OrcShaman_TONGUE_15_01"); //РћС‚РєСѓРґР° С‚С‹ Р·РЅР°РµС€СЊ СЏР·С‹Рє Р»СЋРґРµР№?
+	AI_Output 		(self, hero,"Info_OrcShaman_TONGUE_17_02"); //РЈСЂ-РЁР°Рє Р±С‹С‚СЊ СЂР°Р± Р»СЋРґРµР№ РІ С€Р°С…С‚Р°.
+	AI_Output 		(self, hero,"Info_OrcShaman_TONGUE_17_03"); //РЈР±РµР¶Р°С‚СЊ. РњРЅРѕРіРѕ Р·РёРјС‹ РЅР°Р·Р°Рґ СѓР±РµР¶Р°С‚СЊ.
 }; 
 
 //---------------------------------------------------------------------
@@ -126,7 +126,7 @@ instance  Info_OrcShaman_MINE (C_INFO)
 	information	= Info_OrcShaman_MINE_Info;
 	important	= 0;
 	permanent	= 0;
-	description = "Ты был рабом в шахте? А в какой?";
+	description = "РўС‹ Р±С‹Р» СЂР°Р±РѕРј РІ С€Р°С…С‚Рµ? Рђ РІ РєР°РєРѕР№?";
 };
 
 FUNC int  Info_OrcShaman_MINE_Condition()
@@ -140,8 +140,8 @@ FUNC int  Info_OrcShaman_MINE_Condition()
 
 FUNC void  Info_OrcShaman_MINE_Info()
 {
-	AI_Output 		(hero, self,"Info_OrcShaman_MINE_15_01"); //Ты был рабом в шахте? А в какой?
-	AI_Output 		(self, hero,"Info_OrcShaman_MINE_17_02"); //Шахта возле деревня в долине.
+	AI_Output 		(hero, self,"Info_OrcShaman_MINE_15_01"); //РўС‹ Р±С‹Р» СЂР°Р±РѕРј РІ С€Р°С…С‚Рµ? Рђ РІ РєР°РєРѕР№?
+	AI_Output 		(self, hero,"Info_OrcShaman_MINE_17_02"); //РЁР°С…С‚Р° РІРѕР·Р»Рµ РґРµСЂРµРІРЅСЏ РІ РґРѕР»РёРЅРµ.
 }; 
 
 //---------------------------------------------------------------------
@@ -154,7 +154,7 @@ instance  Info_OrcShaman_WHY (C_INFO)
 	information	= Info_OrcShaman_WHY_Info;
 	important	= 0;
 	permanent	= 0;
-	description = "Почему твои братья хотели убить тебя?";
+	description = "РџРѕС‡РµРјСѓ С‚РІРѕРё Р±СЂР°С‚СЊСЏ С…РѕС‚РµР»Рё СѓР±РёС‚СЊ С‚РµР±СЏ?";
 };
 
 FUNC int  Info_OrcShaman_WHY_Condition()
@@ -168,10 +168,10 @@ FUNC int  Info_OrcShaman_WHY_Condition()
 
 FUNC void  Info_OrcShaman_WHY_Info()
 {
-	AI_Output 		(hero, self,"Info_OrcShaman_WHY_15_01"); //Почему твои братья хотели убить тебя?
-	AI_Output 		(self, hero,"Info_OrcShaman_WHY_17_02"); //Они Ур-Шак не любить.
-	AI_Output 		(self, hero,"Info_OrcShaman_WHY_17_03"); //Ур-Шак предать их вера в КРУШАК.
-	AI_Output 		(self, hero,"Info_OrcShaman_WHY_17_04"); //Считать КРУШАК плохой демон.
+	AI_Output 		(hero, self,"Info_OrcShaman_WHY_15_01"); //РџРѕС‡РµРјСѓ С‚РІРѕРё Р±СЂР°С‚СЊСЏ С…РѕС‚РµР»Рё СѓР±РёС‚СЊ С‚РµР±СЏ?
+	AI_Output 		(self, hero,"Info_OrcShaman_WHY_17_02"); //РћРЅРё РЈСЂ-РЁР°Рє РЅРµ Р»СЋР±РёС‚СЊ.
+	AI_Output 		(self, hero,"Info_OrcShaman_WHY_17_03"); //РЈСЂ-РЁР°Рє РїСЂРµРґР°С‚СЊ РёС… РІРµСЂР° РІ РљР РЈРЁРђРљ.
+	AI_Output 		(self, hero,"Info_OrcShaman_WHY_17_04"); //РЎС‡РёС‚Р°С‚СЊ РљР РЈРЁРђРљ РїР»РѕС…РѕР№ РґРµРјРѕРЅ.
 }; 
 
 //---------------------------------------------------------------------
@@ -184,7 +184,7 @@ instance  Info_OrcShaman_KRUSHAK (C_INFO)
 	information	= Info_OrcShaman_KRUSHAK_Info;
 	important	= 0;
 	permanent	= 0;
-	description = "А кто такой КРУШАК?";
+	description = "Рђ РєС‚Рѕ С‚Р°РєРѕР№ РљР РЈРЁРђРљ?";
 };
 
 FUNC int  Info_OrcShaman_KRUSHAK_Condition()
@@ -198,10 +198,10 @@ FUNC int  Info_OrcShaman_KRUSHAK_Condition()
 
 FUNC void  Info_OrcShaman_KRUSHAK_Info()
 {
-	AI_Output 		(hero, self,"Info_OrcShaman_KRUSHAK_15_01"); //А кто такой КРУШАК?
-	AI_Output 		(self, hero,"Info_OrcShaman_KRUSHAK_17_02"); //Люди звать КРУШАК Спящ.
-	AI_Output 		(hero, self,"Info_OrcShaman_KRUSHAK_15_03"); //Ты хочешь сказать Спящий?
-	AI_Output 		(self, hero,"Info_OrcShaman_KRUSHAK_17_04"); //Да, люди говорить СПЯЩИЙ!
+	AI_Output 		(hero, self,"Info_OrcShaman_KRUSHAK_15_01"); //Рђ РєС‚Рѕ С‚Р°РєРѕР№ РљР РЈРЁРђРљ?
+	AI_Output 		(self, hero,"Info_OrcShaman_KRUSHAK_17_02"); //Р›СЋРґРё Р·РІР°С‚СЊ РљР РЈРЁРђРљ РЎРїСЏС‰.
+	AI_Output 		(hero, self,"Info_OrcShaman_KRUSHAK_15_03"); //РўС‹ С…РѕС‡РµС€СЊ СЃРєР°Р·Р°С‚СЊ РЎРїСЏС‰РёР№?
+	AI_Output 		(self, hero,"Info_OrcShaman_KRUSHAK_17_04"); //Р”Р°, Р»СЋРґРё РіРѕРІРѕСЂРёС‚СЊ РЎРџРЇР©РР™!
 }; 
 
 //---------------------------------------------------------------------
@@ -214,7 +214,7 @@ instance  Info_OrcShaman_SLEEPER (C_INFO)
 	information	= Info_OrcShaman_SLEEPER_Info;
 	important	= 0;
 	permanent	= 0;
-	description = "Что ты знаешь о Спящем?";
+	description = "Р§С‚Рѕ С‚С‹ Р·РЅР°РµС€СЊ Рѕ РЎРїСЏС‰РµРј?";
 };
 
 FUNC int  Info_OrcShaman_SLEEPER_Condition()
@@ -228,14 +228,14 @@ FUNC int  Info_OrcShaman_SLEEPER_Condition()
 
 FUNC void  Info_OrcShaman_SLEEPER_Info()
 {
-	AI_Output 		(hero, self,"Info_OrcShaman_SLEEPER_15_01"); //Что ты знаешь о Спящем?
-	AI_Output 		(self, hero,"Info_OrcShaman_SLEEPER_17_02"); //Много зим назад быть пять братов!
-	AI_Output 		(self, hero,"Info_OrcShaman_SLEEPER_17_03"); //Сыны духа как Ур-Шак.
-	AI_Output 		(hero, self,"Info_OrcShaman_SLEEPER_15_04"); //Так шаманов было пять!
-	AI_Output 		(self, hero,"Info_OrcShaman_SLEEPER_17_05"); //Они позвать КРУШАК!
-	AI_Output 		(self, hero,"Info_OrcShaman_SLEEPER_17_06"); //Хотеть победить свой враги!
-	AI_Output 		(self, hero,"Info_OrcShaman_SLEEPER_17_07"); //Пять братов строить храм под землей для КРУШАК!
-	AI_Output 		(hero, self,"Info_OrcShaman_SLEEPER_15_08"); //Подземный храм Спящего! Должно быть, Ксардас говорил как раз о нем, ведь он находится под городом орков.
+	AI_Output 		(hero, self,"Info_OrcShaman_SLEEPER_15_01"); //Р§С‚Рѕ С‚С‹ Р·РЅР°РµС€СЊ Рѕ РЎРїСЏС‰РµРј?
+	AI_Output 		(self, hero,"Info_OrcShaman_SLEEPER_17_02"); //РњРЅРѕРіРѕ Р·РёРј РЅР°Р·Р°Рґ Р±С‹С‚СЊ РїСЏС‚СЊ Р±СЂР°С‚РѕРІ!
+	AI_Output 		(self, hero,"Info_OrcShaman_SLEEPER_17_03"); //РЎС‹РЅС‹ РґСѓС…Р° РєР°Рє РЈСЂ-РЁР°Рє.
+	AI_Output 		(hero, self,"Info_OrcShaman_SLEEPER_15_04"); //РўР°Рє С€Р°РјР°РЅРѕРІ Р±С‹Р»Рѕ РїСЏС‚СЊ!
+	AI_Output 		(self, hero,"Info_OrcShaman_SLEEPER_17_05"); //РћРЅРё РїРѕР·РІР°С‚СЊ РљР РЈРЁРђРљ!
+	AI_Output 		(self, hero,"Info_OrcShaman_SLEEPER_17_06"); //РҐРѕС‚РµС‚СЊ РїРѕР±РµРґРёС‚СЊ СЃРІРѕР№ РІСЂР°РіРё!
+	AI_Output 		(self, hero,"Info_OrcShaman_SLEEPER_17_07"); //РџСЏС‚СЊ Р±СЂР°С‚РѕРІ СЃС‚СЂРѕРёС‚СЊ С…СЂР°Рј РїРѕРґ Р·РµРјР»РµР№ РґР»СЏ РљР РЈРЁРђРљ!
+	AI_Output 		(hero, self,"Info_OrcShaman_SLEEPER_15_08"); //РџРѕРґР·РµРјРЅС‹Р№ С…СЂР°Рј РЎРїСЏС‰РµРіРѕ! Р”РѕР»Р¶РЅРѕ Р±С‹С‚СЊ, РљСЃР°СЂРґР°СЃ РіРѕРІРѕСЂРёР» РєР°Рє СЂР°Р· Рѕ РЅРµРј, РІРµРґСЊ РѕРЅ РЅР°С…РѕРґРёС‚СЃСЏ РїРѕРґ РіРѕСЂРѕРґРѕРј РѕСЂРєРѕРІ.
 }; 
 
 //---------------------------------------------------------------------
@@ -248,7 +248,7 @@ instance  Info_OrcShaman_CURSE (C_INFO)
 	information	= Info_OrcShaman_CURSE_Info;
 	important	= 0;
 	permanent	= 0;
-	description = "Что случилось в подземном храме?";
+	description = "Р§С‚Рѕ СЃР»СѓС‡РёР»РѕСЃСЊ РІ РїРѕРґР·РµРјРЅРѕРј С…СЂР°РјРµ?";
 };
 
 FUNC int  Info_OrcShaman_CURSE_Condition()
@@ -262,13 +262,13 @@ FUNC int  Info_OrcShaman_CURSE_Condition()
 
 FUNC void  Info_OrcShaman_CURSE_Info()
 {
-	AI_Output 		(hero, self,"Info_OrcShaman_CURSE_15_01"); //Что случилось в подземном храме?
-	AI_Output 		(self, hero,"Info_OrcShaman_CURSE_17_02"); //Браты отдать сердце КРУШАКУ.
-	AI_Output 		(self, hero,"Info_OrcShaman_CURSE_17_03"); //Но КРУШАК плохой. КРУШАК проклинать все, кто строить храм.
-	AI_Output 		(self, hero,"Info_OrcShaman_CURSE_17_04"); //Браты нет сердца. Не быть ни живой ни мертвый. Стать все вместе.
-	AI_Output 		(self, hero,"Info_OrcShaman_CURSE_17_05"); //КРУШАК взять сердце браты. В них сила КРУШАК.
-	AI_Output 		(hero, self,"Info_OrcShaman_CURSE_15_06"); //А что случилось с теми, кто строил храм?
-	AI_Output 		(self, hero,"Info_OrcShaman_CURSE_17_07"); //КРУШАК всех проклинать. И строители. Все стали живой и мертвый, то и другое.
+	AI_Output 		(hero, self,"Info_OrcShaman_CURSE_15_01"); //Р§С‚Рѕ СЃР»СѓС‡РёР»РѕСЃСЊ РІ РїРѕРґР·РµРјРЅРѕРј С…СЂР°РјРµ?
+	AI_Output 		(self, hero,"Info_OrcShaman_CURSE_17_02"); //Р‘СЂР°С‚С‹ РѕС‚РґР°С‚СЊ СЃРµСЂРґС†Рµ РљР РЈРЁРђРљРЈ.
+	AI_Output 		(self, hero,"Info_OrcShaman_CURSE_17_03"); //РќРѕ РљР РЈРЁРђРљ РїР»РѕС…РѕР№. РљР РЈРЁРђРљ РїСЂРѕРєР»РёРЅР°С‚СЊ РІСЃРµ, РєС‚Рѕ СЃС‚СЂРѕРёС‚СЊ С…СЂР°Рј.
+	AI_Output 		(self, hero,"Info_OrcShaman_CURSE_17_04"); //Р‘СЂР°С‚С‹ РЅРµС‚ СЃРµСЂРґС†Р°. РќРµ Р±С‹С‚СЊ РЅРё Р¶РёРІРѕР№ РЅРё РјРµСЂС‚РІС‹Р№. РЎС‚Р°С‚СЊ РІСЃРµ РІРјРµСЃС‚Рµ.
+	AI_Output 		(self, hero,"Info_OrcShaman_CURSE_17_05"); //РљР РЈРЁРђРљ РІР·СЏС‚СЊ СЃРµСЂРґС†Рµ Р±СЂР°С‚С‹. Р’ РЅРёС… СЃРёР»Р° РљР РЈРЁРђРљ.
+	AI_Output 		(hero, self,"Info_OrcShaman_CURSE_15_06"); //Рђ С‡С‚Рѕ СЃР»СѓС‡РёР»РѕСЃСЊ СЃ С‚РµРјРё, РєС‚Рѕ СЃС‚СЂРѕРёР» С…СЂР°Рј?
+	AI_Output 		(self, hero,"Info_OrcShaman_CURSE_17_07"); //РљР РЈРЁРђРљ РІСЃРµС… РїСЂРѕРєР»РёРЅР°С‚СЊ. Р СЃС‚СЂРѕРёС‚РµР»Рё. Р’СЃРµ СЃС‚Р°Р»Рё Р¶РёРІРѕР№ Рё РјРµСЂС‚РІС‹Р№, С‚Рѕ Рё РґСЂСѓРіРѕРµ.
 }; 
 
 //---------------------------------------------------------------------
@@ -281,7 +281,7 @@ instance  Info_OrcShaman_OUTSIDE (C_INFO)
 	information	= Info_OrcShaman_OUTSIDE_Info;
 	important	= 0;
 	permanent	= 0;
-	description = "А орки, оставшиеся на поверхности, что-нибудь сделали?";
+	description = "Рђ РѕСЂРєРё, РѕСЃС‚Р°РІС€РёРµСЃСЏ РЅР° РїРѕРІРµСЂС…РЅРѕСЃС‚Рё, С‡С‚Рѕ-РЅРёР±СѓРґСЊ СЃРґРµР»Р°Р»Рё?";
 };
 
 FUNC int  Info_OrcShaman_OUTSIDE_Condition()
@@ -294,11 +294,11 @@ FUNC int  Info_OrcShaman_OUTSIDE_Condition()
 
 FUNC void  Info_OrcShaman_OUTSIDE_Info()
 {
-	AI_Output 		(hero, self,"Info_OrcShaman_OUTSIDE_15_01"); //А орки, оставшиеся на поверхности, что-нибудь сделали?
-	AI_Output 		(self, hero,"Info_OrcShaman_OUTSIDE_17_02"); //Они закрыть храм. Браты сейчас служить КРУШАК.
-	AI_Output 		(self, hero,"Info_OrcShaman_OUTSIDE_17_03"); //КРУШАК получать жертва и не злиться.
-	AI_Output 		(self, hero,"Info_OrcShaman_OUTSIDE_17_04"); //Ур-Шак думать жертва плохо. Говорить браты КРУШАК плохой.
-	AI_Output 		(self, hero,"Info_OrcShaman_OUTSIDE_17_05"); //Они не слушать. Они сказать Ур-Шак уходить. Они побить Ур-Шак.
+	AI_Output 		(hero, self,"Info_OrcShaman_OUTSIDE_15_01"); //Рђ РѕСЂРєРё, РѕСЃС‚Р°РІС€РёРµСЃСЏ РЅР° РїРѕРІРµСЂС…РЅРѕСЃС‚Рё, С‡С‚Рѕ-РЅРёР±СѓРґСЊ СЃРґРµР»Р°Р»Рё?
+	AI_Output 		(self, hero,"Info_OrcShaman_OUTSIDE_17_02"); //РћРЅРё Р·Р°РєСЂС‹С‚СЊ С…СЂР°Рј. Р‘СЂР°С‚С‹ СЃРµР№С‡Р°СЃ СЃР»СѓР¶РёС‚СЊ РљР РЈРЁРђРљ.
+	AI_Output 		(self, hero,"Info_OrcShaman_OUTSIDE_17_03"); //РљР РЈРЁРђРљ РїРѕР»СѓС‡Р°С‚СЊ Р¶РµСЂС‚РІР° Рё РЅРµ Р·Р»РёС‚СЊСЃСЏ.
+	AI_Output 		(self, hero,"Info_OrcShaman_OUTSIDE_17_04"); //РЈСЂ-РЁР°Рє РґСѓРјР°С‚СЊ Р¶РµСЂС‚РІР° РїР»РѕС…Рѕ. Р“РѕРІРѕСЂРёС‚СЊ Р±СЂР°С‚С‹ РљР РЈРЁРђРљ РїР»РѕС…РѕР№.
+	AI_Output 		(self, hero,"Info_OrcShaman_OUTSIDE_17_05"); //РћРЅРё РЅРµ СЃР»СѓС€Р°С‚СЊ. РћРЅРё СЃРєР°Р·Р°С‚СЊ РЈСЂ-РЁР°Рє СѓС…РѕРґРёС‚СЊ. РћРЅРё РїРѕР±РёС‚СЊ РЈСЂ-РЁР°Рє.
 }; 
 
 //---------------------------------------------------------------------
@@ -311,7 +311,7 @@ instance  Info_OrcShaman_INTEMPLE (C_INFO)
 	information	= Info_OrcShaman_INTEMPLE_Info;
 	important	= 0;
 	permanent	= 0;
-	description = "Я должен попасть в подземный храм.";
+	description = "РЇ РґРѕР»Р¶РµРЅ РїРѕРїР°СЃС‚СЊ РІ РїРѕРґР·РµРјРЅС‹Р№ С…СЂР°Рј.";
 };
 
 FUNC int  Info_OrcShaman_INTEMPLE_Condition()
@@ -324,10 +324,10 @@ FUNC int  Info_OrcShaman_INTEMPLE_Condition()
 
 FUNC void  Info_OrcShaman_INTEMPLE_Info()
 {
-	AI_Output 		(hero, self,"Info_OrcShaman_INTEMPLE_15_01"); //Я должен попасть в подземный храм. Ты можешь отвести меня туда?
-	AI_Output 		(self, hero,"Info_OrcShaman_INTEMPLE_17_02"); //Ур-Шак говорить спасибо чужак. Чужак спасти Ур-Шак.
-	AI_Output 		(self, hero,"Info_OrcShaman_INTEMPLE_17_03"); //Только вход в храм в дом Ур-Шак. Ур-Шак не идти в дом.
-	AI_Output 		(hero, self,"Info_OrcShaman_INTEMPLE_15_04"); //Так они не пропустят тебя обратно в город, да? 
+	AI_Output 		(hero, self,"Info_OrcShaman_INTEMPLE_15_01"); //РЇ РґРѕР»Р¶РµРЅ РїРѕРїР°СЃС‚СЊ РІ РїРѕРґР·РµРјРЅС‹Р№ С…СЂР°Рј. РўС‹ РјРѕР¶РµС€СЊ РѕС‚РІРµСЃС‚Рё РјРµРЅСЏ С‚СѓРґР°?
+	AI_Output 		(self, hero,"Info_OrcShaman_INTEMPLE_17_02"); //РЈСЂ-РЁР°Рє РіРѕРІРѕСЂРёС‚СЊ СЃРїР°СЃРёР±Рѕ С‡СѓР¶Р°Рє. Р§СѓР¶Р°Рє СЃРїР°СЃС‚Рё РЈСЂ-РЁР°Рє.
+	AI_Output 		(self, hero,"Info_OrcShaman_INTEMPLE_17_03"); //РўРѕР»СЊРєРѕ РІС…РѕРґ РІ С…СЂР°Рј РІ РґРѕРј РЈСЂ-РЁР°Рє. РЈСЂ-РЁР°Рє РЅРµ РёРґС‚Рё РІ РґРѕРј.
+	AI_Output 		(hero, self,"Info_OrcShaman_INTEMPLE_15_04"); //РўР°Рє РѕРЅРё РЅРµ РїСЂРѕРїСѓСЃС‚СЏС‚ С‚РµР±СЏ РѕР±СЂР°С‚РЅРѕ РІ РіРѕСЂРѕРґ, РґР°? 
 };
 
 //---------------------------------------------------------------------
@@ -340,7 +340,7 @@ instance  Info_OrcShaman_MAP (C_INFO)
 	information	= Info_OrcShaman_MAP_Info;
 	important	= 0;
 	permanent	= 0;
-	description = "А ты можешь показать мне на карте, где этот город находится?";
+	description = "Рђ С‚С‹ РјРѕР¶РµС€СЊ РїРѕРєР°Р·Р°С‚СЊ РјРЅРµ РЅР° РєР°СЂС‚Рµ, РіРґРµ СЌС‚РѕС‚ РіРѕСЂРѕРґ РЅР°С…РѕРґРёС‚СЃСЏ?";
 };
 
 FUNC int  Info_OrcShaman_MAP_Condition()
@@ -355,11 +355,11 @@ FUNC int  Info_OrcShaman_MAP_Condition()
 
 FUNC void  Info_OrcShaman_MAP_Info()
 {
-	AI_Output 		(hero, self,"Info_OrcShaman_MAP_15_01"); //А ты можешь показать мне на карте, где этот город находится?
-	AI_Output 		(self, hero,"Info_OrcShaman_MAP_17_02"); //Дом Ур-Шак там, на пустой белый карта.
-	AI_Output 		(self, hero,"Info_OrcShaman_MAP_17_03"); //Чужать давать карта, Ур-Шак рисовать дом.
+	AI_Output 		(hero, self,"Info_OrcShaman_MAP_15_01"); //Рђ С‚С‹ РјРѕР¶РµС€СЊ РїРѕРєР°Р·Р°С‚СЊ РјРЅРµ РЅР° РєР°СЂС‚Рµ, РіРґРµ СЌС‚РѕС‚ РіРѕСЂРѕРґ РЅР°С…РѕРґРёС‚СЃСЏ?
+	AI_Output 		(self, hero,"Info_OrcShaman_MAP_17_02"); //Р”РѕРј РЈСЂ-РЁР°Рє С‚Р°Рј, РЅР° РїСѓСЃС‚РѕР№ Р±РµР»С‹Р№ РєР°СЂС‚Р°.
+	AI_Output 		(self, hero,"Info_OrcShaman_MAP_17_03"); //Р§СѓР¶Р°С‚СЊ РґР°РІР°С‚СЊ РєР°СЂС‚Р°, РЈСЂ-РЁР°Рє СЂРёСЃРѕРІР°С‚СЊ РґРѕРј.
 	AI_Output 		(self, hero,"Info_OrcShaman_MAP_17_04"); //
-	AI_Output 		(hero, self,"Info_OrcShaman_MAP_15_05"); //О! А ты неплохо рисуешь! Спасибо!
+	AI_Output 		(hero, self,"Info_OrcShaman_MAP_15_05"); //Рћ! Рђ С‚С‹ РЅРµРїР»РѕС…Рѕ СЂРёСЃСѓРµС€СЊ! РЎРїР°СЃРёР±Рѕ!
 
 	B_GiveInvItems  (hero, self, ItWrWorldmap, 1);
 	Npc_RemoveInvItem(self, ItWrWorldmap);
@@ -377,7 +377,7 @@ instance  Info_OrcShaman_FIGHT (C_INFO)
 	information	= Info_OrcShaman_FIGHT_Info;
 	important	= 0;
 	permanent	= 0;
-	description = "Да, похоже, мне там придется пробивать дорогу мечом!";
+	description = "Р”Р°, РїРѕС…РѕР¶Рµ, РјРЅРµ С‚Р°Рј РїСЂРёРґРµС‚СЃСЏ РїСЂРѕР±РёРІР°С‚СЊ РґРѕСЂРѕРіСѓ РјРµС‡РѕРј!";
 };
 
 FUNC int  Info_OrcShaman_FIGHT_Condition()
@@ -390,10 +390,10 @@ FUNC int  Info_OrcShaman_FIGHT_Condition()
 
 FUNC void  Info_OrcShaman_FIGHT_Info()
 {
-	AI_Output 		(hero, self,"Info_OrcShaman_FIGHT_15_01"); //Да, похоже, мне там придется пробивать дорогу мечом!
-	AI_Output 		(self, hero,"Info_OrcShaman_FIGHT_17_02"); //Дома браты очень сильный! Они очень много быть!
-	AI_Output 		(self, hero,"Info_OrcShaman_FIGHT_17_03"); //Чужак не ходить! Много солдаты! Чужак умереть.
-	AI_Output 		(self, hero,"Info_OrcShaman_FIGHT_17_04"); //Дома быть другие сыны духа. Сделать чужак гореть и умереть.
+	AI_Output 		(hero, self,"Info_OrcShaman_FIGHT_15_01"); //Р”Р°, РїРѕС…РѕР¶Рµ, РјРЅРµ С‚Р°Рј РїСЂРёРґРµС‚СЃСЏ РїСЂРѕР±РёРІР°С‚СЊ РґРѕСЂРѕРіСѓ РјРµС‡РѕРј!
+	AI_Output 		(self, hero,"Info_OrcShaman_FIGHT_17_02"); //Р”РѕРјР° Р±СЂР°С‚С‹ РѕС‡РµРЅСЊ СЃРёР»СЊРЅС‹Р№! РћРЅРё РѕС‡РµРЅСЊ РјРЅРѕРіРѕ Р±С‹С‚СЊ!
+	AI_Output 		(self, hero,"Info_OrcShaman_FIGHT_17_03"); //Р§СѓР¶Р°Рє РЅРµ С…РѕРґРёС‚СЊ! РњРЅРѕРіРѕ СЃРѕР»РґР°С‚С‹! Р§СѓР¶Р°Рє СѓРјРµСЂРµС‚СЊ.
+	AI_Output 		(self, hero,"Info_OrcShaman_FIGHT_17_04"); //Р”РѕРјР° Р±С‹С‚СЊ РґСЂСѓРіРёРµ СЃС‹РЅС‹ РґСѓС…Р°. РЎРґРµР»Р°С‚СЊ С‡СѓР¶Р°Рє РіРѕСЂРµС‚СЊ Рё СѓРјРµСЂРµС‚СЊ.
 }; 
 
 //---------------------------------------------------------------------
@@ -406,7 +406,7 @@ instance  Info_OrcShaman_OTHERWAY (C_INFO)
 	information	= Info_OrcShaman_OTHERWAY_Info;
 	important	= 0;
 	permanent	= 0;
-	description = "Да, это понятно, но мне все равно придется туда попасть!";
+	description = "Р”Р°, СЌС‚Рѕ РїРѕРЅСЏС‚РЅРѕ, РЅРѕ РјРЅРµ РІСЃРµ СЂР°РІРЅРѕ РїСЂРёРґРµС‚СЃСЏ С‚СѓРґР° РїРѕРїР°СЃС‚СЊ!";
 };
 
 FUNC int  Info_OrcShaman_OTHERWAY_Condition()
@@ -419,11 +419,11 @@ FUNC int  Info_OrcShaman_OTHERWAY_Condition()
 
 FUNC void  Info_OrcShaman_OTHERWAY_Info()
 {
-	AI_Output 		(hero, self,"Info_OrcShaman_OTHERWAY_15_01"); //Да, это понятно, но мне все равно придется туда попасть!
-	AI_Output 		(self, hero,"Info_OrcShaman_OTHERWAY_17_02"); //Ур-Шак знать один способ! Чужак надеть Улу-Мулу.
-	AI_Output 		(hero, self,"Info_OrcShaman_OTHERWAY_15_03"); //Улу-Мулу? А что это такое?
-	AI_Output 		(self, hero,"Info_OrcShaman_OTHERWAY_17_04"); //Быть знак дружбы. Браты уважать Улу-Мулу.
-	AI_Output 		(self, hero,"Info_OrcShaman_OTHERWAY_17_05"); //Чужак одеть Улу-Мулу и не умереть!
+	AI_Output 		(hero, self,"Info_OrcShaman_OTHERWAY_15_01"); //Р”Р°, СЌС‚Рѕ РїРѕРЅСЏС‚РЅРѕ, РЅРѕ РјРЅРµ РІСЃРµ СЂР°РІРЅРѕ РїСЂРёРґРµС‚СЃСЏ С‚СѓРґР° РїРѕРїР°СЃС‚СЊ!
+	AI_Output 		(self, hero,"Info_OrcShaman_OTHERWAY_17_02"); //РЈСЂ-РЁР°Рє Р·РЅР°С‚СЊ РѕРґРёРЅ СЃРїРѕСЃРѕР±! Р§СѓР¶Р°Рє РЅР°РґРµС‚СЊ РЈР»Сѓ-РњСѓР»Сѓ.
+	AI_Output 		(hero, self,"Info_OrcShaman_OTHERWAY_15_03"); //РЈР»Сѓ-РњСѓР»Сѓ? Рђ С‡С‚Рѕ СЌС‚Рѕ С‚Р°РєРѕРµ?
+	AI_Output 		(self, hero,"Info_OrcShaman_OTHERWAY_17_04"); //Р‘С‹С‚СЊ Р·РЅР°Рє РґСЂСѓР¶Р±С‹. Р‘СЂР°С‚С‹ СѓРІР°Р¶Р°С‚СЊ РЈР»Сѓ-РњСѓР»Сѓ.
+	AI_Output 		(self, hero,"Info_OrcShaman_OTHERWAY_17_05"); //Р§СѓР¶Р°Рє РѕРґРµС‚СЊ РЈР»Сѓ-РњСѓР»Сѓ Рё РЅРµ СѓРјРµСЂРµС‚СЊ!
 };
 
 //---------------------------------------------------------------------
@@ -436,7 +436,7 @@ instance  Info_OrcShaman_ULUMULU (C_INFO)
 	information	= Info_OrcShaman_ULUMULU_Info;
 	important	= 0;
 	permanent	= 0;
-	description = "А где мне достать эту самую Улу-Мулу?";
+	description = "Рђ РіРґРµ РјРЅРµ РґРѕСЃС‚Р°С‚СЊ СЌС‚Сѓ СЃР°РјСѓСЋ РЈР»Сѓ-РњСѓР»Сѓ?";
 };
 
 FUNC int  Info_OrcShaman_ULUMULU_Condition()
@@ -449,37 +449,37 @@ FUNC int  Info_OrcShaman_ULUMULU_Condition()
 
 FUNC void  Info_OrcShaman_ULUMULU_Info()
 {
-	AI_Output 		(hero, self,"Info_OrcShaman_ULUMULU_15_01"); //А где мне достать эту самую Улу-Мулу?
-	AI_Output 		(self, hero,"Info_OrcShaman_ULUMULU_17_02"); //Чужак ходить к друг Ур-Шак!
-	AI_Output 		(self, hero,"Info_OrcShaman_ULUMULU_17_03"); //Друг Ур-Шак давать чужак Улу-Мулу. Чужак одеть Улу-Мулу и не умереть!
-	AI_Output 		(hero, self,"Info_OrcShaman_ULUMULU_15_04"); //Да, да, то что с этой штукой я 'не умереть', я уже понял. Но где я найду твоего друга?
-	AI_Output 		(self, hero,"Info_OrcShaman_ULUMULU_17_05"); //Друг Ур-Шак в шахта жить, у людей. Друг не убежать с Ур-Шак. Друг сильно болеть.
+	AI_Output 		(hero, self,"Info_OrcShaman_ULUMULU_15_01"); //Рђ РіРґРµ РјРЅРµ РґРѕСЃС‚Р°С‚СЊ СЌС‚Сѓ СЃР°РјСѓСЋ РЈР»Сѓ-РњСѓР»Сѓ?
+	AI_Output 		(self, hero,"Info_OrcShaman_ULUMULU_17_02"); //Р§СѓР¶Р°Рє С…РѕРґРёС‚СЊ Рє РґСЂСѓРі РЈСЂ-РЁР°Рє!
+	AI_Output 		(self, hero,"Info_OrcShaman_ULUMULU_17_03"); //Р”СЂСѓРі РЈСЂ-РЁР°Рє РґР°РІР°С‚СЊ С‡СѓР¶Р°Рє РЈР»Сѓ-РњСѓР»Сѓ. Р§СѓР¶Р°Рє РѕРґРµС‚СЊ РЈР»Сѓ-РњСѓР»Сѓ Рё РЅРµ СѓРјРµСЂРµС‚СЊ!
+	AI_Output 		(hero, self,"Info_OrcShaman_ULUMULU_15_04"); //Р”Р°, РґР°, С‚Рѕ С‡С‚Рѕ СЃ СЌС‚РѕР№ С€С‚СѓРєРѕР№ СЏ 'РЅРµ СѓРјРµСЂРµС‚СЊ', СЏ СѓР¶Рµ РїРѕРЅСЏР». РќРѕ РіРґРµ СЏ РЅР°Р№РґСѓ С‚РІРѕРµРіРѕ РґСЂСѓРіР°?
+	AI_Output 		(self, hero,"Info_OrcShaman_ULUMULU_17_05"); //Р”СЂСѓРі РЈСЂ-РЁР°Рє РІ С€Р°С…С‚Р° Р¶РёС‚СЊ, Сѓ Р»СЋРґРµР№. Р”СЂСѓРі РЅРµ СѓР±РµР¶Р°С‚СЊ СЃ РЈСЂ-РЁР°Рє. Р”СЂСѓРі СЃРёР»СЊРЅРѕ Р±РѕР»РµС‚СЊ.
 
 	B_Story_FoundUrShak	();
 	
 	Info_ClearChoices	(Info_OrcShaman_ULUMULU);
-	Info_AddChoice		(Info_OrcShaman_ULUMULU, "Ты работал в Свободной шахте?",										Info_OrcShaman_ULUMULU_FM);
-	Info_AddChoice		(Info_OrcShaman_ULUMULU, "Ты работал в Заброшенной шахте?",									Info_OrcShaman_ULUMULU_VM);
-	Info_AddChoice		(Info_OrcShaman_ULUMULU, "Ты работал в Старой шахте?",										Info_OrcShaman_ULUMULU_AM);
+	Info_AddChoice		(Info_OrcShaman_ULUMULU, "РўС‹ СЂР°Р±РѕС‚Р°Р» РІ РЎРІРѕР±РѕРґРЅРѕР№ С€Р°С…С‚Рµ?",										Info_OrcShaman_ULUMULU_FM);
+	Info_AddChoice		(Info_OrcShaman_ULUMULU, "РўС‹ СЂР°Р±РѕС‚Р°Р» РІ Р—Р°Р±СЂРѕС€РµРЅРЅРѕР№ С€Р°С…С‚Рµ?",									Info_OrcShaman_ULUMULU_VM);
+	Info_AddChoice		(Info_OrcShaman_ULUMULU, "РўС‹ СЂР°Р±РѕС‚Р°Р» РІ РЎС‚Р°СЂРѕР№ С€Р°С…С‚Рµ?",										Info_OrcShaman_ULUMULU_AM);
 }; 
 
 func void Info_OrcShaman_ULUMULU_VM ()
 {
-	AI_Output 		(hero, self,"Info_OrcShaman_ULUMULU_15_08"); //Ты работал в Заброшенной шахте?
-	AI_Output 		(self, hero,"Info_OrcShaman_ULUMULU_17_09"); //Ур-Шак не понимать.
+	AI_Output 		(hero, self,"Info_OrcShaman_ULUMULU_15_08"); //РўС‹ СЂР°Р±РѕС‚Р°Р» РІ Р—Р°Р±СЂРѕС€РµРЅРЅРѕР№ С€Р°С…С‚Рµ?
+	AI_Output 		(self, hero,"Info_OrcShaman_ULUMULU_17_09"); //РЈСЂ-РЁР°Рє РЅРµ РїРѕРЅРёРјР°С‚СЊ.
 };
 
 func void Info_OrcShaman_ULUMULU_AM ()
 {
-	AI_Output 		(hero, self,"Info_OrcShaman_ULUMULU_15_10"); //Ты работал в Старой шахте?
-	AI_Output 		(self, hero,"Info_OrcShaman_ULUMULU_17_11"); //Ур-Шак не понимать.
+	AI_Output 		(hero, self,"Info_OrcShaman_ULUMULU_15_10"); //РўС‹ СЂР°Р±РѕС‚Р°Р» РІ РЎС‚Р°СЂРѕР№ С€Р°С…С‚Рµ?
+	AI_Output 		(self, hero,"Info_OrcShaman_ULUMULU_17_11"); //РЈСЂ-РЁР°Рє РЅРµ РїРѕРЅРёРјР°С‚СЊ.
 };
 
 func void Info_OrcShaman_ULUMULU_FM ()
 {
-	AI_Output 		(hero, self,"Info_OrcShaman_ULUMULU_15_12"); //Ты работал в Свободной шахте?
-	AI_Output 		(self, hero,"Info_OrcShaman_ULUMULU_17_13"); //Ур-Шак быть раб в шахте под деревня.
-	AI_Output 		(self, hero,"Info_OrcShaman_ULUMULU_17_14"); //Ур-Шак думать люди называть шахта так.
+	AI_Output 		(hero, self,"Info_OrcShaman_ULUMULU_15_12"); //РўС‹ СЂР°Р±РѕС‚Р°Р» РІ РЎРІРѕР±РѕРґРЅРѕР№ С€Р°С…С‚Рµ?
+	AI_Output 		(self, hero,"Info_OrcShaman_ULUMULU_17_13"); //РЈСЂ-РЁР°Рє Р±С‹С‚СЊ СЂР°Р± РІ С€Р°С…С‚Рµ РїРѕРґ РґРµСЂРµРІРЅСЏ.
+	AI_Output 		(self, hero,"Info_OrcShaman_ULUMULU_17_14"); //РЈСЂ-РЁР°Рє РґСѓРјР°С‚СЊ Р»СЋРґРё РЅР°Р·С‹РІР°С‚СЊ С€Р°С…С‚Р° С‚Р°Рє.
 
 	Info_ClearChoices	(Info_OrcShaman_ULUMULU);
 };
@@ -494,7 +494,7 @@ instance  Info_OrcShaman_BYEBYE (C_INFO)
 	information	= Info_OrcShaman_BYEBYE_Info;
 	important	= 0;
 	permanent	= 0;
-	description = "Спасибо за помощь.";
+	description = "РЎРїР°СЃРёР±Рѕ Р·Р° РїРѕРјРѕС‰СЊ.";
 };
 
 FUNC int  Info_OrcShaman_BYEBYE_Condition()
@@ -507,11 +507,11 @@ FUNC int  Info_OrcShaman_BYEBYE_Condition()
 
 FUNC void  Info_OrcShaman_BYEBYE_Info()
 {
-	AI_Output 		(hero, self,"Info_OrcShaman_BYEBYE_15_01"); //Спасибо за помощь.
-	AI_Output 		(self, hero,"Info_OrcShaman_BYEBYE_17_02"); //Ур-Шак говорить чужак спасибо. Чужак спасать Ур-Шак. Теперь чужак друг!
-	AI_Output 		(self, hero,"Info_OrcShaman_BYEBYE_17_03"); //Друг получать подарок. Знак Ур-Шак. Знак зищищать от огонь ящерица огня.
-	AI_Output 		(self, hero,"Info_OrcShaman_BYEBYE_17_04"); //Ур-Шак не может домой. Ур-Шак теперь жить здесь. Друг приходить когда нужен помощь.
-	AI_Output 		(hero, self,"Info_OrcShaman_BYEBYE_15_05"); //Возможно, я этим когда-нибудь воспользуюсь.
+	AI_Output 		(hero, self,"Info_OrcShaman_BYEBYE_15_01"); //РЎРїР°СЃРёР±Рѕ Р·Р° РїРѕРјРѕС‰СЊ.
+	AI_Output 		(self, hero,"Info_OrcShaman_BYEBYE_17_02"); //РЈСЂ-РЁР°Рє РіРѕРІРѕСЂРёС‚СЊ С‡СѓР¶Р°Рє СЃРїР°СЃРёР±Рѕ. Р§СѓР¶Р°Рє СЃРїР°СЃР°С‚СЊ РЈСЂ-РЁР°Рє. РўРµРїРµСЂСЊ С‡СѓР¶Р°Рє РґСЂСѓРі!
+	AI_Output 		(self, hero,"Info_OrcShaman_BYEBYE_17_03"); //Р”СЂСѓРі РїРѕР»СѓС‡Р°С‚СЊ РїРѕРґР°СЂРѕРє. Р—РЅР°Рє РЈСЂ-РЁР°Рє. Р—РЅР°Рє Р·РёС‰РёС‰Р°С‚СЊ РѕС‚ РѕРіРѕРЅСЊ СЏС‰РµСЂРёС†Р° РѕРіРЅСЏ.
+	AI_Output 		(self, hero,"Info_OrcShaman_BYEBYE_17_04"); //РЈСЂ-РЁР°Рє РЅРµ РјРѕР¶РµС‚ РґРѕРјРѕР№. РЈСЂ-РЁР°Рє С‚РµРїРµСЂСЊ Р¶РёС‚СЊ Р·РґРµСЃСЊ. Р”СЂСѓРі РїСЂРёС…РѕРґРёС‚СЊ РєРѕРіРґР° РЅСѓР¶РµРЅ РїРѕРјРѕС‰СЊ.
+	AI_Output 		(hero, self,"Info_OrcShaman_BYEBYE_15_05"); //Р’РѕР·РјРѕР¶РЅРѕ, СЏ СЌС‚РёРј РєРѕРіРґР°-РЅРёР±СѓРґСЊ РІРѕСЃРїРѕР»СЊР·СѓСЋСЃСЊ.
 
 	B_Story_FriendOfUrShak	();
 
@@ -528,7 +528,7 @@ instance  Info_OrcShaman_FRIENDLYHELLO (C_INFO)
 	information	= Info_OrcShaman_FRIENDLYHELLO_Info;
 	important	= 0;
 	permanent	= 0;
-	description = "Как у тебя дела?";
+	description = "РљР°Рє Сѓ С‚РµР±СЏ РґРµР»Р°?";
 };
 
 FUNC int  Info_OrcShaman_FRIENDLYHELLO_Condition()
@@ -542,12 +542,12 @@ FUNC int  Info_OrcShaman_FRIENDLYHELLO_Condition()
 
 FUNC void  Info_OrcShaman_FRIENDLYHELLO_Info()
 {
-	AI_Output 			(hero, self,"Info_OrcShaman_FRIENDLYHELLO_15_01"); //Как у тебя дела?
-	AI_Output 			(self, hero,"Info_OrcShaman_FRIENDLYHELLO_17_02"); //Ур-Шак быть здоровый!
-	AI_Output 			(self, hero,"Info_OrcShaman_FRIENDLYHELLO_17_03"); //Ур-Шак теперь искать свой Улу-Мулу!
-	AI_Output 			(self, hero,"Info_OrcShaman_FRIENDLYHELLO_17_04"); //Может Ур-Шак вернуться домой с Улу-Мулу.
-	AI_Output 			(self, hero,"Info_OrcShaman_FRIENDLYHELLO_17_05"); //Друг приходить, когда нужен помощь!
-	AI_Output 			(hero, self,"Info_OrcShaman_FRIENDLYHELLO_15_06"); //Береги себя!
+	AI_Output 			(hero, self,"Info_OrcShaman_FRIENDLYHELLO_15_01"); //РљР°Рє Сѓ С‚РµР±СЏ РґРµР»Р°?
+	AI_Output 			(self, hero,"Info_OrcShaman_FRIENDLYHELLO_17_02"); //РЈСЂ-РЁР°Рє Р±С‹С‚СЊ Р·РґРѕСЂРѕРІС‹Р№!
+	AI_Output 			(self, hero,"Info_OrcShaman_FRIENDLYHELLO_17_03"); //РЈСЂ-РЁР°Рє С‚РµРїРµСЂСЊ РёСЃРєР°С‚СЊ СЃРІРѕР№ РЈР»Сѓ-РњСѓР»Сѓ!
+	AI_Output 			(self, hero,"Info_OrcShaman_FRIENDLYHELLO_17_04"); //РњРѕР¶РµС‚ РЈСЂ-РЁР°Рє РІРµСЂРЅСѓС‚СЊСЃСЏ РґРѕРјРѕР№ СЃ РЈР»Сѓ-РњСѓР»Сѓ.
+	AI_Output 			(self, hero,"Info_OrcShaman_FRIENDLYHELLO_17_05"); //Р”СЂСѓРі РїСЂРёС…РѕРґРёС‚СЊ, РєРѕРіРґР° РЅСѓР¶РµРЅ РїРѕРјРѕС‰СЊ!
+	AI_Output 			(hero, self,"Info_OrcShaman_FRIENDLYHELLO_15_06"); //Р‘РµСЂРµРіРё СЃРµР±СЏ!
 	AI_StopProcessInfos	(self);
 };
 
@@ -586,17 +586,17 @@ FUNC void  Info_OrcShaman_ORCCITY_Info()
 	B_FullStop		(hero);
 	AI_GotoNpc		(hero, self);
 
-	AI_Output 		(self, hero,"Info_OrcShaman_ORCCITY_17_01"); //Ур-Шак говорить друг привет!
+	AI_Output 		(self, hero,"Info_OrcShaman_ORCCITY_17_01"); //РЈСЂ-РЁР°Рє РіРѕРІРѕСЂРёС‚СЊ РґСЂСѓРі РїСЂРёРІРµС‚!
 
 	if (Npc_HasItems(hero, UluMulu))
 	{
-		AI_Output 	(self, hero,"Info_OrcShaman_ORCCITY_17_02"); //Друг найти Улу-Мулу! Какой хороший!
-		AI_Output 	(self, hero,"Info_OrcShaman_ORCCITY_17_03"); //Друг не забыть нести Улу-Мулу в руке, когда идти на мост!
+		AI_Output 	(self, hero,"Info_OrcShaman_ORCCITY_17_02"); //Р”СЂСѓРі РЅР°Р№С‚Рё РЈР»Сѓ-РњСѓР»Сѓ! РљР°РєРѕР№ С…РѕСЂРѕС€РёР№!
+		AI_Output 	(self, hero,"Info_OrcShaman_ORCCITY_17_03"); //Р”СЂСѓРі РЅРµ Р·Р°Р±С‹С‚СЊ РЅРµСЃС‚Рё РЈР»Сѓ-РњСѓР»Сѓ РІ СЂСѓРєРµ, РєРѕРіРґР° РёРґС‚Рё РЅР° РјРѕСЃС‚!
 	}
 	else
 	{	
-		AI_Output 	(self, hero,"Info_OrcShaman_ORCCITY_17_04"); //Друг не найти Улу-Мулу! Плохо!
-		AI_Output 	(self, hero,"Info_OrcShaman_ORCCITY_17_05"); //Друг не идти на мост, а то умереть!
+		AI_Output 	(self, hero,"Info_OrcShaman_ORCCITY_17_04"); //Р”СЂСѓРі РЅРµ РЅР°Р№С‚Рё РЈР»Сѓ-РњСѓР»Сѓ! РџР»РѕС…Рѕ!
+		AI_Output 	(self, hero,"Info_OrcShaman_ORCCITY_17_05"); //Р”СЂСѓРі РЅРµ РёРґС‚Рё РЅР° РјРѕСЃС‚, Р° С‚Рѕ СѓРјРµСЂРµС‚СЊ!
 	};
 }; 
 
@@ -610,7 +610,7 @@ instance  Info_OrcShaman_YOUHERE (C_INFO)
 	information	= Info_OrcShaman_YOUHERE_Info;
 	important	= 0;
 	permanent	= 0;
-	description = "Что ты делаешь так близко к городу орков?";
+	description = "Р§С‚Рѕ С‚С‹ РґРµР»Р°РµС€СЊ С‚Р°Рє Р±Р»РёР·РєРѕ Рє РіРѕСЂРѕРґСѓ РѕСЂРєРѕРІ?";
 };
 
 FUNC int  Info_OrcShaman_YOUHERE_Condition()
@@ -623,12 +623,12 @@ FUNC int  Info_OrcShaman_YOUHERE_Condition()
 };
 FUNC void  Info_OrcShaman_YOUHERE_Info()
 {
-	AI_Output 		(hero, self,"Info_OrcShaman_YOUHERE_15_01"); //Что ты делаешь так близко к городу орков?
-	AI_Output 		(self, hero,"Info_OrcShaman_YOUHERE_17_02"); //Ур-Шак смотреть на братья из дома!
-	AI_Output 		(self, hero,"Info_OrcShaman_YOUHERE_17_03"); //Ур-Шак думать КРУШАК хотеть просыпаться скоро!
-	AI_Output 		(self, hero,"Info_OrcShaman_YOUHERE_17_04"); //Ур-Шак здесь ждать и драться против КРУШАК, когда он проснуться!
-	AI_Output 		(hero, self,"Info_OrcShaman_YOUHERE_15_05"); //Так Спящий действительно может проснуться? А ты не ошибаешься?
-	AI_Output 		(hero, self,"Info_OrcShaman_YOUHERE_15_06"); //Я кое-что слышал об этом демоне. Судя по всему, всем будет лучше, если он так и останется спать.
+	AI_Output 		(hero, self,"Info_OrcShaman_YOUHERE_15_01"); //Р§С‚Рѕ С‚С‹ РґРµР»Р°РµС€СЊ С‚Р°Рє Р±Р»РёР·РєРѕ Рє РіРѕСЂРѕРґСѓ РѕСЂРєРѕРІ?
+	AI_Output 		(self, hero,"Info_OrcShaman_YOUHERE_17_02"); //РЈСЂ-РЁР°Рє СЃРјРѕС‚СЂРµС‚СЊ РЅР° Р±СЂР°С‚СЊСЏ РёР· РґРѕРјР°!
+	AI_Output 		(self, hero,"Info_OrcShaman_YOUHERE_17_03"); //РЈСЂ-РЁР°Рє РґСѓРјР°С‚СЊ РљР РЈРЁРђРљ С…РѕС‚РµС‚СЊ РїСЂРѕСЃС‹РїР°С‚СЊСЃСЏ СЃРєРѕСЂРѕ!
+	AI_Output 		(self, hero,"Info_OrcShaman_YOUHERE_17_04"); //РЈСЂ-РЁР°Рє Р·РґРµСЃСЊ Р¶РґР°С‚СЊ Рё РґСЂР°С‚СЊСЃСЏ РїСЂРѕС‚РёРІ РљР РЈРЁРђРљ, РєРѕРіРґР° РѕРЅ РїСЂРѕСЃРЅСѓС‚СЊСЃСЏ!
+	AI_Output 		(hero, self,"Info_OrcShaman_YOUHERE_15_05"); //РўР°Рє РЎРїСЏС‰РёР№ РґРµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ РјРѕР¶РµС‚ РїСЂРѕСЃРЅСѓС‚СЊСЃСЏ? Рђ С‚С‹ РЅРµ РѕС€РёР±Р°РµС€СЊСЃСЏ?
+	AI_Output 		(hero, self,"Info_OrcShaman_YOUHERE_15_06"); //РЇ РєРѕРµ-С‡С‚Рѕ СЃР»С‹С€Р°Р» РѕР± СЌС‚РѕРј РґРµРјРѕРЅРµ. РЎСѓРґСЏ РїРѕ РІСЃРµРјСѓ, РІСЃРµРј Р±СѓРґРµС‚ Р»СѓС‡С€Рµ, РµСЃР»Рё РѕРЅ С‚Р°Рє Рё РѕСЃС‚Р°РЅРµС‚СЃСЏ СЃРїР°С‚СЊ.
 }; 
 
 //---------------------------------------------------------------------
@@ -641,7 +641,7 @@ instance  Info_OrcShaman_SEAL (C_INFO)
 	information	= Info_OrcShaman_SEAL_Info;
 	important	= 0;
 	permanent	= 0;
-	description = "В прошлый раз ты рассказывал, что твои братья запечатали храм.";
+	description = "Р’ РїСЂРѕС€Р»С‹Р№ СЂР°Р· С‚С‹ СЂР°СЃСЃРєР°Р·С‹РІР°Р», С‡С‚Рѕ С‚РІРѕРё Р±СЂР°С‚СЊСЏ Р·Р°РїРµС‡Р°С‚Р°Р»Рё С…СЂР°Рј.";
 };
 
 FUNC int  Info_OrcShaman_SEAL_Condition()
@@ -654,10 +654,10 @@ FUNC int  Info_OrcShaman_SEAL_Condition()
 };
 FUNC void  Info_OrcShaman_SEAL_Info()
 {
-	AI_Output 		(hero, self,"Info_OrcShaman_SEAL_15_01"); //В прошлый раз ты рассказывал, что твои братья запечатали храм.
-	AI_Output 		(self, hero,"Info_OrcShaman_SEAL_17_02"); //Братья Ур-Шак закрыть храм в земле очень хорошо!
-	AI_Output 		(self, hero,"Info_OrcShaman_SEAL_17_03"); //Друг нельзя идти в храм!
-	AI_Output 		(self, hero,"Info_OrcShaman_SEAL_17_04"); //Друг использовать магия братья, сыны духа как Ур-Шак!
+	AI_Output 		(hero, self,"Info_OrcShaman_SEAL_15_01"); //Р’ РїСЂРѕС€Р»С‹Р№ СЂР°Р· С‚С‹ СЂР°СЃСЃРєР°Р·С‹РІР°Р», С‡С‚Рѕ С‚РІРѕРё Р±СЂР°С‚СЊСЏ Р·Р°РїРµС‡Р°С‚Р°Р»Рё С…СЂР°Рј.
+	AI_Output 		(self, hero,"Info_OrcShaman_SEAL_17_02"); //Р‘СЂР°С‚СЊСЏ РЈСЂ-РЁР°Рє Р·Р°РєСЂС‹С‚СЊ С…СЂР°Рј РІ Р·РµРјР»Рµ РѕС‡РµРЅСЊ С…РѕСЂРѕС€Рѕ!
+	AI_Output 		(self, hero,"Info_OrcShaman_SEAL_17_03"); //Р”СЂСѓРі РЅРµР»СЊР·СЏ РёРґС‚Рё РІ С…СЂР°Рј!
+	AI_Output 		(self, hero,"Info_OrcShaman_SEAL_17_04"); //Р”СЂСѓРі РёСЃРїРѕР»СЊР·РѕРІР°С‚СЊ РјР°РіРёСЏ Р±СЂР°С‚СЊСЏ, СЃС‹РЅС‹ РґСѓС…Р° РєР°Рє РЈСЂ-РЁР°Рє!
 }; 
 
 //---------------------------------------------------------------------
@@ -670,7 +670,7 @@ instance  Info_OrcShaman_SCROLL (C_INFO)
 	information	= Info_OrcShaman_SCROLL_Info;
 	important	= 0;
 	permanent	= 0;
-	description = "Где я найду это заклинание?";
+	description = "Р“РґРµ СЏ РЅР°Р№РґСѓ СЌС‚Рѕ Р·Р°РєР»РёРЅР°РЅРёРµ?";
 };
 
 FUNC int  Info_OrcShaman_SCROLL_Condition()
@@ -683,12 +683,12 @@ FUNC int  Info_OrcShaman_SCROLL_Condition()
 };
 FUNC void  Info_OrcShaman_SCROLL_Info()
 {
-	AI_Output 		(hero, self,"Info_OrcShaman_SCROLL_15_01"); //Где я найду это заклинание?
-	AI_Output 		(self, hero,"Info_OrcShaman_SCROLL_17_02"); //Друг идти в пещера где братья сыны духа как Ур-Шак!
-	AI_Output 		(self, hero,"Info_OrcShaman_SCROLL_17_03"); //Но друг надо делать магия осторожно!
-	AI_Output 		(self, hero,"Info_OrcShaman_SCROLL_17_04"); //Братья Ур-Шак не любить! Улу-Мулу не помочь, если друг использовать магия!
+	AI_Output 		(hero, self,"Info_OrcShaman_SCROLL_15_01"); //Р“РґРµ СЏ РЅР°Р№РґСѓ СЌС‚Рѕ Р·Р°РєР»РёРЅР°РЅРёРµ?
+	AI_Output 		(self, hero,"Info_OrcShaman_SCROLL_17_02"); //Р”СЂСѓРі РёРґС‚Рё РІ РїРµС‰РµСЂР° РіРґРµ Р±СЂР°С‚СЊСЏ СЃС‹РЅС‹ РґСѓС…Р° РєР°Рє РЈСЂ-РЁР°Рє!
+	AI_Output 		(self, hero,"Info_OrcShaman_SCROLL_17_03"); //РќРѕ РґСЂСѓРі РЅР°РґРѕ РґРµР»Р°С‚СЊ РјР°РіРёСЏ РѕСЃС‚РѕСЂРѕР¶РЅРѕ!
+	AI_Output 		(self, hero,"Info_OrcShaman_SCROLL_17_04"); //Р‘СЂР°С‚СЊСЏ РЈСЂ-РЁР°Рє РЅРµ Р»СЋР±РёС‚СЊ! РЈР»Сѓ-РњСѓР»Сѓ РЅРµ РїРѕРјРѕС‡СЊ, РµСЃР»Рё РґСЂСѓРі РёСЃРїРѕР»СЊР·РѕРІР°С‚СЊ РјР°РіРёСЏ!
 
-	B_LogEntry		(CH4_EnterTemple,	"Я снова встретил шамана Ур-Шака перед городом орков. Он сказал мне, что в подземный храм можно попасть только тогда, когда я прочту специальное орочье заклинание. Другие орки-шаманы хранят такие заклинания в своих норах.");
+	B_LogEntry		(CH4_EnterTemple,	"РЇ СЃРЅРѕРІР° РІСЃС‚СЂРµС‚РёР» С€Р°РјР°РЅР° РЈСЂ-РЁР°РєР° РїРµСЂРµРґ РіРѕСЂРѕРґРѕРј РѕСЂРєРѕРІ. РћРЅ СЃРєР°Р·Р°Р» РјРЅРµ, С‡С‚Рѕ РІ РїРѕРґР·РµРјРЅС‹Р№ С…СЂР°Рј РјРѕР¶РЅРѕ РїРѕРїР°СЃС‚СЊ С‚РѕР»СЊРєРѕ С‚РѕРіРґР°, РєРѕРіРґР° СЏ РїСЂРѕС‡С‚Сѓ СЃРїРµС†РёР°Р»СЊРЅРѕРµ РѕСЂРѕС‡СЊРµ Р·Р°РєР»РёРЅР°РЅРёРµ. Р”СЂСѓРіРёРµ РѕСЂРєРё-С€Р°РјР°РЅС‹ С…СЂР°РЅСЏС‚ С‚Р°РєРёРµ Р·Р°РєР»РёРЅР°РЅРёСЏ РІ СЃРІРѕРёС… РЅРѕСЂР°С….");
 }; 
 
 //---------------------------------------------------------------------
@@ -701,7 +701,7 @@ instance  Info_OrcShaman_IDOL (C_INFO)
 	information	= Info_OrcShaman_IDOL_Info;
 	important	= 0;
 	permanent	= 0;
-	description = "Есть ли другой путь в храм Спящего?";
+	description = "Р•СЃС‚СЊ Р»Рё РґСЂСѓРіРѕР№ РїСѓС‚СЊ РІ С…СЂР°Рј РЎРїСЏС‰РµРіРѕ?";
 };
 
 FUNC int  Info_OrcShaman_IDOL_Condition()
@@ -716,22 +716,22 @@ FUNC int  Info_OrcShaman_IDOL_Condition()
 FUNC void  Info_OrcShaman_IDOL_Info()
 {
 	//SN: fliegt raus, da der Hinweis jetzt sofort nach dem Hinweis mit der Scroll gegeben wird.
-	//AI_Output 	(hero, self,"Info_OrcShaman_IDOL_15_01"); //Ich habe den Teleportzauber verbraucht und das Gitter zur Tempelvorhalle lдsst sich nicht цffnen!
+	//AI_Output 	(hero, self,"Info_OrcShaman_IDOL_15_01"); //Ich habe den Teleportzauber verbraucht und das Gitter zur Tempelvorhalle lРґsst sich nicht С†ffnen!
 	//AI_Output 	(hero, self,"Info_OrcShaman_IDOL_15_02"); //Wie komme ich jetzt wieder in den Tempel?
 
 	if	Npc_HasItems(hero,ItMi_Stuff_Idol_Sleeper_01) 
 	{
-		AI_Output 	(self, hero,"Info_OrcShaman_IDOL_17_03"); //Друг найти знак, что лежать на колонне!
-		AI_Output 	(self, hero,"Info_OrcShaman_IDOL_17_04"); //Друг теперь открыть ворота в храм!
+		AI_Output 	(self, hero,"Info_OrcShaman_IDOL_17_03"); //Р”СЂСѓРі РЅР°Р№С‚Рё Р·РЅР°Рє, С‡С‚Рѕ Р»РµР¶Р°С‚СЊ РЅР° РєРѕР»РѕРЅРЅРµ!
+		AI_Output 	(self, hero,"Info_OrcShaman_IDOL_17_04"); //Р”СЂСѓРі С‚РµРїРµСЂСЊ РѕС‚РєСЂС‹С‚СЊ РІРѕСЂРѕС‚Р° РІ С…СЂР°Рј!
 
-		B_LogEntry	(CH4_EnterTemple,	"Есть и другой вход в храм Спящего. Нужно повернуть статую Спящего на священной колонне орков-шаманов. Она откроет путь в храм.");
+		B_LogEntry	(CH4_EnterTemple,	"Р•СЃС‚СЊ Рё РґСЂСѓРіРѕР№ РІС…РѕРґ РІ С…СЂР°Рј РЎРїСЏС‰РµРіРѕ. РќСѓР¶РЅРѕ РїРѕРІРµСЂРЅСѓС‚СЊ СЃС‚Р°С‚СѓСЋ РЎРїСЏС‰РµРіРѕ РЅР° СЃРІСЏС‰РµРЅРЅРѕР№ РєРѕР»РѕРЅРЅРµ РѕСЂРєРѕРІ-С€Р°РјР°РЅРѕРІ. РћРЅР° РѕС‚РєСЂРѕРµС‚ РїСѓС‚СЊ РІ С…СЂР°Рј.");
 	}
 	else
 	{
-		AI_Output 	(self, hero,"Info_OrcShaman_IDOL_17_05"); //Друг надо взять знак, что лежать на колонне!
-		AI_Output 	(self, hero,"Info_OrcShaman_IDOL_17_06"); //Теперь знак открыть врата в храм!
+		AI_Output 	(self, hero,"Info_OrcShaman_IDOL_17_05"); //Р”СЂСѓРі РЅР°РґРѕ РІР·СЏС‚СЊ Р·РЅР°Рє, С‡С‚Рѕ Р»РµР¶Р°С‚СЊ РЅР° РєРѕР»РѕРЅРЅРµ!
+		AI_Output 	(self, hero,"Info_OrcShaman_IDOL_17_06"); //РўРµРїРµСЂСЊ Р·РЅР°Рє РѕС‚РєСЂС‹С‚СЊ РІСЂР°С‚Р° РІ С…СЂР°Рј!
 
-		B_LogEntry	(CH4_EnterTemple,	"В храм Спящего можно попасть и другим путем. На священной колонне стоит статуя Спящего, которая открывает ворота в храм. Но если шаманы заметят меня у своей святыни, они не обрадуются.");
+		B_LogEntry	(CH4_EnterTemple,	"Р’ С…СЂР°Рј РЎРїСЏС‰РµРіРѕ РјРѕР¶РЅРѕ РїРѕРїР°СЃС‚СЊ Рё РґСЂСѓРіРёРј РїСѓС‚РµРј. РќР° СЃРІСЏС‰РµРЅРЅРѕР№ РєРѕР»РѕРЅРЅРµ СЃС‚РѕРёС‚ СЃС‚Р°С‚СѓСЏ РЎРїСЏС‰РµРіРѕ, РєРѕС‚РѕСЂР°СЏ РѕС‚РєСЂС‹РІР°РµС‚ РІРѕСЂРѕС‚Р° РІ С…СЂР°Рј. РќРѕ РµСЃР»Рё С€Р°РјР°РЅС‹ Р·Р°РјРµС‚СЏС‚ РјРµРЅСЏ Сѓ СЃРІРѕРµР№ СЃРІСЏС‚С‹РЅРё, РѕРЅРё РЅРµ РѕР±СЂР°РґСѓСЋС‚СЃСЏ.");
 	};
 }; 
 

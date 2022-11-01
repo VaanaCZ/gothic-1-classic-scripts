@@ -2,7 +2,7 @@ instance VLK_586_Grimes (Npc_Default)
 {
 	//-------- primary data --------
 	
-	name =							"Граймс";
+	name =							"Р“СЂР°Р№РјСЃ";
 	npctype =						npctype_main;
 	guild =							GIL_VLK;      
 	level =							5;

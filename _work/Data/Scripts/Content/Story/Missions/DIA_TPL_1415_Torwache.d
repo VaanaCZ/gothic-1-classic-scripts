@@ -56,33 +56,33 @@ FUNC INT DIA_Tpl_1415_Torwache_First_Condition()
 
 FUNC VOID DIA_Tpl_1415_Torwache_First_Info()
 {
-	AI_Output (self, other,"DIA_Tpl_1415_Torwache_First_13_00"); //Рад видеть тебя, незнакомец!
-	AI_Output (self, other,"DIA_Tpl_1415_Torwache_First_13_01"); //Ты ступил на святую землю - Братство Спящего.
-	AI_Output (self, other,"DIA_Tpl_1415_Torwache_First_13_02"); //Какими судьбами ты здесь?
+	AI_Output (self, other,"DIA_Tpl_1415_Torwache_First_13_00"); //Р Р°Рґ РІРёРґРµС‚СЊ С‚РµР±СЏ, РЅРµР·РЅР°РєРѕРјРµС†!
+	AI_Output (self, other,"DIA_Tpl_1415_Torwache_First_13_01"); //РўС‹ СЃС‚СѓРїРёР» РЅР° СЃРІСЏС‚СѓСЋ Р·РµРјР»СЋ - Р‘СЂР°С‚СЃС‚РІРѕ РЎРїСЏС‰РµРіРѕ.
+	AI_Output (self, other,"DIA_Tpl_1415_Torwache_First_13_02"); //РљР°РєРёРјРё СЃСѓРґСЊР±Р°РјРё С‚С‹ Р·РґРµСЃСЊ?
 	
 	Info_ClearChoices	(DIA_Tpl_1415_Torwache_First);
-	Info_AddChoice		(DIA_Tpl_1415_Torwache_First,"Я здесь недавно. Могу я осмотреть лагерь?",DIA_Tpl_1415_Torwache_First_JustLooking);
+	Info_AddChoice		(DIA_Tpl_1415_Torwache_First,"РЇ Р·РґРµСЃСЊ РЅРµРґР°РІРЅРѕ. РњРѕРіСѓ СЏ РѕСЃРјРѕС‚СЂРµС‚СЊ Р»Р°РіРµСЂСЊ?",DIA_Tpl_1415_Torwache_First_JustLooking);
 	
 	if (Npc_GetTrueGuild (hero) == GIL_NONE)
 	{
-		Info_AddChoice		(DIA_Tpl_1415_Torwache_First,"Я собираюсь присоединиться к вам.",DIA_Tpl_1415_Torwache_First_Join);
+		Info_AddChoice		(DIA_Tpl_1415_Torwache_First,"РЇ СЃРѕР±РёСЂР°СЋСЃСЊ РїСЂРёСЃРѕРµРґРёРЅРёС‚СЊСЃСЏ Рє РІР°Рј.",DIA_Tpl_1415_Torwache_First_Join);
 	};
 };
 
 func void DIA_Tpl_1415_Torwache_First_Join()
 {
-	AI_Output (other, self,"DIA_Tpl_1415_Torwache_First_Join_15_00"); //Мне сказали, что вам нужны люди. Я хочу присоединиться к вам.
-	AI_Output (self, other,"DIA_Tpl_1415_Torwache_First_Join_13_01"); //Тогда я рад видеть тебя! Наше братство открыто для всех, кто душою стремится к Спящему.
-	AI_Output (self, other,"DIA_Tpl_1415_Torwache_First_Join_13_02"); //Если твое стремление серьезно, то иди к Идолу Намибу. Он во дворе за воротами. Может, он и уделит тебе внимание.
-	AI_Output (self, other,"DIA_Tpl_1415_Torwache_First_Join_13_04"); //Но ты не сможешь с ним поговорить, пока он сам этого не захочет.
+	AI_Output (other, self,"DIA_Tpl_1415_Torwache_First_Join_15_00"); //РњРЅРµ СЃРєР°Р·Р°Р»Рё, С‡С‚Рѕ РІР°Рј РЅСѓР¶РЅС‹ Р»СЋРґРё. РЇ С…РѕС‡Сѓ РїСЂРёСЃРѕРµРґРёРЅРёС‚СЊСЃСЏ Рє РІР°Рј.
+	AI_Output (self, other,"DIA_Tpl_1415_Torwache_First_Join_13_01"); //РўРѕРіРґР° СЏ СЂР°Рґ РІРёРґРµС‚СЊ С‚РµР±СЏ! РќР°С€Рµ Р±СЂР°С‚СЃС‚РІРѕ РѕС‚РєСЂС‹С‚Рѕ РґР»СЏ РІСЃРµС…, РєС‚Рѕ РґСѓС€РѕСЋ СЃС‚СЂРµРјРёС‚СЃСЏ Рє РЎРїСЏС‰РµРјСѓ.
+	AI_Output (self, other,"DIA_Tpl_1415_Torwache_First_Join_13_02"); //Р•СЃР»Рё С‚РІРѕРµ СЃС‚СЂРµРјР»РµРЅРёРµ СЃРµСЂСЊРµР·РЅРѕ, С‚Рѕ РёРґРё Рє РРґРѕР»Сѓ РќР°РјРёР±Сѓ. РћРЅ РІРѕ РґРІРѕСЂРµ Р·Р° РІРѕСЂРѕС‚Р°РјРё. РњРѕР¶РµС‚, РѕРЅ Рё СѓРґРµР»РёС‚ С‚РµР±Рµ РІРЅРёРјР°РЅРёРµ.
+	AI_Output (self, other,"DIA_Tpl_1415_Torwache_First_Join_13_04"); //РќРѕ С‚С‹ РЅРµ СЃРјРѕР¶РµС€СЊ СЃ РЅРёРј РїРѕРіРѕРІРѕСЂРёС‚СЊ, РїРѕРєР° РѕРЅ СЃР°Рј СЌС‚РѕРіРѕ РЅРµ Р·Р°С…РѕС‡РµС‚.
 	Info_ClearChoices	(DIA_Tpl_1415_Torwache_First);
 };
 
 func void DIA_Tpl_1415_Torwache_First_JustLooking()
 {
-	AI_Output (other, self,"DIA_Tpl_1415_Torwache_First_JustLooking_15_00"); //Я здесь недавно. Могу я осмотреть лагерь?
-	AI_Output (self, other,"DIA_Tpl_1415_Torwache_First_JustLooking_13_01"); //Мы всегда рады новым людям.
-	AI_Output (self, other,"DIA_Tpl_1415_Torwache_First_JustLooking_13_02"); //Но только пока ты соблюдаешь наши правила. Есть места недозволенные таким как ты.
+	AI_Output (other, self,"DIA_Tpl_1415_Torwache_First_JustLooking_15_00"); //РЇ Р·РґРµСЃСЊ РЅРµРґР°РІРЅРѕ. РњРѕРіСѓ СЏ РѕСЃРјРѕС‚СЂРµС‚СЊ Р»Р°РіРµСЂСЊ?
+	AI_Output (self, other,"DIA_Tpl_1415_Torwache_First_JustLooking_13_01"); //РњС‹ РІСЃРµРіРґР° СЂР°РґС‹ РЅРѕРІС‹Рј Р»СЋРґСЏРј.
+	AI_Output (self, other,"DIA_Tpl_1415_Torwache_First_JustLooking_13_02"); //РќРѕ С‚РѕР»СЊРєРѕ РїРѕРєР° С‚С‹ СЃРѕР±Р»СЋРґР°РµС€СЊ РЅР°С€Рё РїСЂР°РІРёР»Р°. Р•СЃС‚СЊ РјРµСЃС‚Р° РЅРµРґРѕР·РІРѕР»РµРЅРЅС‹Рµ С‚Р°РєРёРј РєР°Рє С‚С‹.
 	Info_ClearChoices	(DIA_Tpl_1415_Torwache_First);
 };
 
@@ -97,7 +97,7 @@ INSTANCE DIA_Tpl_1415_Torwache_Sit (C_INFO)
 	condition		= DIA_Tpl_1415_Torwache_Sit_Condition;
 	information		= DIA_Tpl_1415_Torwache_Sit_Info;
 	permanent		= 1;
-	description		= "Как идут дела?";
+	description		= "РљР°Рє РёРґСѓС‚ РґРµР»Р°?";
 };
 
 FUNC INT DIA_Tpl_1415_Torwache_Sit_Condition()
@@ -107,8 +107,8 @@ FUNC INT DIA_Tpl_1415_Torwache_Sit_Condition()
 
 FUNC VOID DIA_Tpl_1415_Torwache_Sit_Info()
 {
-	AI_Output (other, self,"DIA_Tpl_1415_Torwache_Sit_15_00"); //Как идут дела?
-	AI_Output (self, other,"DIA_Tpl_1415_Torwache_Sit_13_01"); //Тишина. Заходи.
+	AI_Output (other, self,"DIA_Tpl_1415_Torwache_Sit_15_00"); //РљР°Рє РёРґСѓС‚ РґРµР»Р°?
+	AI_Output (self, other,"DIA_Tpl_1415_Torwache_Sit_13_01"); //РўРёС€РёРЅР°. Р—Р°С…РѕРґРё.
 };
 /*------------------------------------------------------------------------
 //						TEMPLERAUFNAHME							//
@@ -135,16 +135,16 @@ FUNC int  Tpl_1415_Torwache_TEMPLERAUFNAHME_Condition()
 func void  Tpl_1415_Torwache_TEMPLERAUFNAHME_Info()
 {
 	AI_GotoNpc (hero,self); 
-	AI_Output (self, other,"Tpl_1415_Torwache_IMPORTANT_Info_13_01"); //Эй, я знаю, что случилось в шахте. Молодчина! Ты достоин быть одним из Стражей.
-	AI_Output (self, other,"Tpl_1415_Torwache_IMPORTANT_Info_13_02"); //Просто поговори с Кор Ангаром!
+	AI_Output (self, other,"Tpl_1415_Torwache_IMPORTANT_Info_13_01"); //Р­Р№, СЏ Р·РЅР°СЋ, С‡С‚Рѕ СЃР»СѓС‡РёР»РѕСЃСЊ РІ С€Р°С…С‚Рµ. РњРѕР»РѕРґС‡РёРЅР°! РўС‹ РґРѕСЃС‚РѕРёРЅ Р±С‹С‚СЊ РѕРґРЅРёРј РёР· РЎС‚СЂР°Р¶РµР№.
+	AI_Output (self, other,"Tpl_1415_Torwache_IMPORTANT_Info_13_02"); //РџСЂРѕСЃС‚Рѕ РїРѕРіРѕРІРѕСЂРё СЃ РљРѕСЂ РђРЅРіР°СЂРѕРј!
 
 	Log_CreateTopic (GE_BecomeTemplar,LOG_NOTE);
-	B_LogEntry (GE_BecomeTemplar,"Мне нужно поговорить с Кор Ангаром. Может быть, он зачислит меня в ряды Стражей.");
+	B_LogEntry (GE_BecomeTemplar,"РњРЅРµ РЅСѓР¶РЅРѕ РїРѕРіРѕРІРѕСЂРёС‚СЊ СЃ РљРѕСЂ РђРЅРіР°СЂРѕРј. РњРѕР¶РµС‚ Р±С‹С‚СЊ, РѕРЅ Р·Р°С‡РёСЃР»РёС‚ РјРµРЅСЏ РІ СЂСЏРґС‹ РЎС‚СЂР°Р¶РµР№.");
 };
 
 
 /*------------------------------------------------------------------------
-						Novizenrцckchen							
+						NovizenrС†ckchen							
 ------------------------------------------------------------------------*/
 
 instance  Tpl_1415_Templer_ROCK (C_INFO)
@@ -154,7 +154,7 @@ instance  Tpl_1415_Templer_ROCK (C_INFO)
 	information		= Tpl_1415_Templer_ROCK_Info;
 	important		= 0;
 	permanent		= 1;
-	description		= "Мне нужен какой-нибудь доспех."; 
+	description		= "РњРЅРµ РЅСѓР¶РµРЅ РєР°РєРѕР№-РЅРёР±СѓРґСЊ РґРѕСЃРїРµС…."; 
 };
 
 FUNC int  Tpl_1415_Templer_ROCK_Condition()
@@ -167,14 +167,14 @@ FUNC int  Tpl_1415_Templer_ROCK_Condition()
 };
 FUNC void  Tpl_1415_Templer_ROCK_Info()
 {
-	AI_Output (other, self,"Tpl_1415_Templer_ROCK_Info_15_01"); //Мне нужен какой-нибудь доспех.
-	AI_Output (self, other,"Tpl_1415_Templer_ROCK_Info_13_02"); //Доспехи Стража нужно еще заслужить. А пока могу одолжить тебе набедренную повязку послушника.
-	AI_Output (other, self,"Tpl_1415_Templer_ROCK_Info_15_03"); //Все же лучше, чем ничего...
-	AI_Output (self, other,"Tpl_1415_Templer_ROCK_Info_13_04"); //Только не подумай, что это бесплатно!
+	AI_Output (other, self,"Tpl_1415_Templer_ROCK_Info_15_01"); //РњРЅРµ РЅСѓР¶РµРЅ РєР°РєРѕР№-РЅРёР±СѓРґСЊ РґРѕСЃРїРµС….
+	AI_Output (self, other,"Tpl_1415_Templer_ROCK_Info_13_02"); //Р”РѕСЃРїРµС…Рё РЎС‚СЂР°Р¶Р° РЅСѓР¶РЅРѕ РµС‰Рµ Р·Р°СЃР»СѓР¶РёС‚СЊ. Рђ РїРѕРєР° РјРѕРіСѓ РѕРґРѕР»Р¶РёС‚СЊ С‚РµР±Рµ РЅР°Р±РµРґСЂРµРЅРЅСѓСЋ РїРѕРІСЏР·РєСѓ РїРѕСЃР»СѓС€РЅРёРєР°.
+	AI_Output (other, self,"Tpl_1415_Templer_ROCK_Info_15_03"); //Р’СЃРµ Р¶Рµ Р»СѓС‡С€Рµ, С‡РµРј РЅРёС‡РµРіРѕ...
+	AI_Output (self, other,"Tpl_1415_Templer_ROCK_Info_13_04"); //РўРѕР»СЊРєРѕ РЅРµ РїРѕРґСѓРјР°Р№, С‡С‚Рѕ СЌС‚Рѕ Р±РµСЃРїР»Р°С‚РЅРѕ!
 
 	Info_ClearChoices (Tpl_1415_Templer_ROCK);
 	Info_Addchoice (Tpl_1415_Templer_ROCK,DIALOG_BACK,Tpl_1415_Templer_ROCK_BACK);
-	Info_Addchoice (Tpl_1415_Templer_ROCK,B_BuildBuyArmorString("Одежда послушника, защита от оружия 15, от огня 10",VALUE_NOV_ARMOR_L),Tpl_1415_Templer_ROCK_BUY);
+	Info_Addchoice (Tpl_1415_Templer_ROCK,B_BuildBuyArmorString("РћРґРµР¶РґР° РїРѕСЃР»СѓС€РЅРёРєР°, Р·Р°С‰РёС‚Р° РѕС‚ РѕСЂСѓР¶РёСЏ 15, РѕС‚ РѕРіРЅСЏ 10",VALUE_NOV_ARMOR_L),Tpl_1415_Templer_ROCK_BUY);
 };
 
 func void Tpl_1415_Templer_ROCK_BACK()
@@ -184,14 +184,14 @@ func void Tpl_1415_Templer_ROCK_BACK()
 
 func void Tpl_1415_Templer_ROCK_BUY()
 {
-	AI_Output (other, self,"Tpl_1415_Templer_ROCK_BUY_15_01"); //Хорошо, я возьму у тебя повязку.
+	AI_Output (other, self,"Tpl_1415_Templer_ROCK_BUY_15_01"); //РҐРѕСЂРѕС€Рѕ, СЏ РІРѕР·СЊРјСѓ Сѓ С‚РµР±СЏ РїРѕРІСЏР·РєСѓ.
 	if (Npc_HasItems (hero,ItMiNugget) <  VALUE_NOV_ARMOR_L)
 	{
-		AI_Output (self, other,"Tpl_1415_Templer_ROCK_BUY_13_02"); //Приходи тогда, когда у тебя будет достаточно руды!
+		AI_Output (self, other,"Tpl_1415_Templer_ROCK_BUY_13_02"); //РџСЂРёС…РѕРґРё С‚РѕРіРґР°, РєРѕРіРґР° Сѓ С‚РµР±СЏ Р±СѓРґРµС‚ РґРѕСЃС‚Р°С‚РѕС‡РЅРѕ СЂСѓРґС‹!
 	}
 	else
 	{
-		AI_Output (self, other,"Tpl_1415_Templer_ROCK_BUY_13_03"); //Эта нехитрая одежда может спасти тебе жизнь!
+		AI_Output (self, other,"Tpl_1415_Templer_ROCK_BUY_13_03"); //Р­С‚Р° РЅРµС…РёС‚СЂР°СЏ РѕРґРµР¶РґР° РјРѕР¶РµС‚ СЃРїР°СЃС‚Рё С‚РµР±Рµ Р¶РёР·РЅСЊ!
 		B_GiveInvItems (hero, self, ItMinugget, VALUE_NOV_ARMOR_L);
 		CreateInvItem (self, NOV_ARMOR_L);
 		B_GiveInvItems (self, hero, NOV_ARMOR_L, 1);

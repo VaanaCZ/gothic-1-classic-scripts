@@ -5,7 +5,7 @@
 instance ORC_Priest_1 (Npc_Default)
 {
 	//-------- primary data --------
-	name 		=		"Варраг-Хашор";
+	name 		=		"Р’Р°СЂСЂР°Рі-РҐР°С€РѕСЂ";
 	Npctype 	=		Npctype_Main;
 	guild 		=		GIL_ORCSHAMAN;
 	level 		=		800;
@@ -39,7 +39,7 @@ instance ORC_Priest_1 (Npc_Default)
 	Npc_SetTalentSkill	(self, NPC_TALENT_MAGE, 6);
 	
 	//-------- inventory --------
-	CreateInvItem		(self,	ItRwOrcstaff);		// fьr Magiemodus
+	CreateInvItem		(self,	ItRwOrcstaff);		// fСЊr Magiemodus
 	CreateInvItem 		(self,  Weltenspalter);
 	CreateInvItem		(self,	ItArRunePyrokinesis);
 
@@ -65,7 +65,7 @@ FUNC VOID Rtn_PreStart_2995 ()
 instance ORC_Priest_2 (Npc_Default)
 {
 	//-------- primary data --------
-	name 		=		"Варраг-Казорг";
+	name 		=		"Р’Р°СЂСЂР°Рі-РљР°Р·РѕСЂРі";
 	Npctype 	=		Npctype_Main;
 	guild 		=		GIL_ORCSHAMAN;
 	level 		=		800;
@@ -100,7 +100,7 @@ instance ORC_Priest_2 (Npc_Default)
 	
 
 	//-------- inventory --------
-	CreateInvItem		(self,	ItRwUdOrcstaff);		// fьr Magiemodus
+	CreateInvItem		(self,	ItRwUdOrcstaff);		// fСЊr Magiemodus
 	CreateInvItem 		(self,  Lichtbringer);
    	CreateInvItem		(self,	ItArRuneThunderball);
  
@@ -124,7 +124,7 @@ FUNC VOID Rtn_PreStart_2996 ()
 instance ORC_Priest_3 (Npc_Default)
 {
 	//-------- primary data --------
-	name 		=		"Варраг-Унхилькт";
+	name 		=		"Р’Р°СЂСЂР°Рі-РЈРЅС…РёР»СЊРєС‚";
 	Npctype 	=		Npctype_Main;
 	guild 		=		GIL_ORCSHAMAN;
 	level 		=		800;
@@ -158,7 +158,7 @@ instance ORC_Priest_3 (Npc_Default)
 	Npc_SetTalentSkill	(self, NPC_TALENT_MAGE, 6);
 	
 	//-------- inventory --------		
-	CreateInvItem		(self,	ItRwUdOrcstaff);		// fьr Magiemodus
+	CreateInvItem		(self,	ItRwUdOrcstaff);		// fСЊr Magiemodus
 	CreateInvItem		(self,	Zeitenklinge);
 	CreateInvItem		(self,	ItArRuneChainLightning);
 
@@ -185,7 +185,7 @@ FUNC VOID Rtn_PreStart_2997 ()
 instance ORC_Priest_4 (Npc_Default)
 {
 	//-------- primary data --------
-	name 		=		"Варраг-Руушк";
+	name 		=		"Р’Р°СЂСЂР°Рі-Р СѓСѓС€Рє";
 	Npctype 	=		Npctype_Main;
 	guild 		=		GIL_ORCSHAMAN;
 	level 		=		800;
@@ -219,7 +219,7 @@ instance ORC_Priest_4 (Npc_Default)
 	
 		
 	//-------- inventory --------
-	CreateInvItem			(self,	ItRwUdOrcstaff);		// fьr Magiemodus
+	CreateInvItem			(self,	ItRwUdOrcstaff);		// fСЊr Magiemodus
 	CreateInvItem			(self, 	Daemonenstreich);
 	CreateInvItem			(self,	ItArRuneFirestorm);
 
@@ -245,7 +245,7 @@ FUNC VOID Rtn_PreStart_2998 ()
 instance ORC_Priest_5 (Npc_Default)
 {
 	//-------- primary data --------
-	name 		=		"Граш-Варраг-Арушат";
+	name 		=		"Р“СЂР°С€-Р’Р°СЂСЂР°Рі-РђСЂСѓС€Р°С‚";
 	Npctype 	=		NPCTYPE_FRIEND;
 	guild 		=		GIL_ORCSHAMAN;
 	level 		=		1000;
@@ -281,7 +281,7 @@ instance ORC_Priest_5 (Npc_Default)
 	
 		
 	//-------- inventory --------
-	CreateInvItem		(self,	ItRwUdOrcstaff);		// fьr Magiemodus
+	CreateInvItem		(self,	ItRwUdOrcstaff);		// fСЊr Magiemodus
 	CreateInvItem		(self, 	Bannklinge);
 	CreateInvItem		(self,	ItArRuneBreathOfDeath);
 

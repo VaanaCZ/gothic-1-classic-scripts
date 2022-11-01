@@ -1,4 +1,4 @@
-// ---- C_ZSInit(); genereller "Constuctor" für Zustände ---- //
+// ---- C_ZSInit(); genereller "Constuctor" fÑŒr ZustÐ´nde ---- //
 
 
 func void C_ZSInit()

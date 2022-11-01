@@ -3,7 +3,7 @@
 //##							KAPITEL ?
 //##							=========
 //##	Die Oberwelt wird nochmal mit ein paar Ambient-Monstern
-//##	aufgefüllt, damit sie nicht zu leer wirkt.
+//##	aufgefÑŒllt, damit sie nicht zu leer wirkt.
 //##
 //#####################################################################
 func void B_Story_RespawnOW()

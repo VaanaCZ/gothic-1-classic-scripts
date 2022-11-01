@@ -56,9 +56,9 @@ FUNC INT DIA_Grd_216_First_Condition()
 
 FUNC VOID DIA_Grd_216_First_Info()
 {
-	AI_Output (self, other,"DIA_Grd_216_First_13_00"); //Эй, ты! Я тебя раньше здесь не видел!
-	AI_Output (other, self,"DIA_Grd_216_First_15_01"); //Еще бы. Меня недавно сюда забросили.
-	AI_Output (self, other,"DIA_Grd_216_First_13_02"); //Будь осторожен. За пределами лагеря очень опасно. Только в лагере тебя смогут защитить.
+	AI_Output (self, other,"DIA_Grd_216_First_13_00"); //Р­Р№, С‚С‹! РЇ С‚РµР±СЏ СЂР°РЅСЊС€Рµ Р·РґРµСЃСЊ РЅРµ РІРёРґРµР»!
+	AI_Output (other, self,"DIA_Grd_216_First_15_01"); //Р•С‰Рµ Р±С‹. РњРµРЅСЏ РЅРµРґР°РІРЅРѕ СЃСЋРґР° Р·Р°Р±СЂРѕСЃРёР»Рё.
+	AI_Output (self, other,"DIA_Grd_216_First_13_02"); //Р‘СѓРґСЊ РѕСЃС‚РѕСЂРѕР¶РµРЅ. Р—Р° РїСЂРµРґРµР»Р°РјРё Р»Р°РіРµСЂСЏ РѕС‡РµРЅСЊ РѕРїР°СЃРЅРѕ. РўРѕР»СЊРєРѕ РІ Р»Р°РіРµСЂРµ С‚РµР±СЏ СЃРјРѕРіСѓС‚ Р·Р°С‰РёС‚РёС‚СЊ.
 };
 
 // **************************************************
@@ -87,20 +87,20 @@ FUNC INT DIA_Grd_216_DustyZoll_Condition()
 
 FUNC VOID DIA_Grd_216_DustyZoll_Info()
 {
-	AI_Output			(self, other,"DIA_Grd_216_Dusty_Zoll_13_00"); //Стоять! И куда это ты направляешься с нашим другом?
+	AI_Output			(self, other,"DIA_Grd_216_Dusty_Zoll_13_00"); //РЎС‚РѕСЏС‚СЊ! Р РєСѓРґР° СЌС‚Рѕ С‚С‹ РЅР°РїСЂР°РІР»СЏРµС€СЊСЃСЏ СЃ РЅР°С€РёРј РґСЂСѓРіРѕРј?
 	Info_ClearChoices	(DIA_Grd_216_DustyZoll);
-	Info_AddChoice		(DIA_Grd_216_DustyZoll,"Это тебе знать не положено!" ,DIA_Grd_216_DustyZoll_PissOff);
-	Info_AddChoice		(DIA_Grd_216_DustyZoll,"Мы хотим пойти в лагерь Братства." ,DIA_Grd_216_DustyZoll_ToPSI);
+	Info_AddChoice		(DIA_Grd_216_DustyZoll,"Р­С‚Рѕ С‚РµР±Рµ Р·РЅР°С‚СЊ РЅРµ РїРѕР»РѕР¶РµРЅРѕ!" ,DIA_Grd_216_DustyZoll_PissOff);
+	Info_AddChoice		(DIA_Grd_216_DustyZoll,"РњС‹ С…РѕС‚РёРј РїРѕР№С‚Рё РІ Р»Р°РіРµСЂСЊ Р‘СЂР°С‚СЃС‚РІР°." ,DIA_Grd_216_DustyZoll_ToPSI);
 	if (Npc_HasItems (other,itminugget) >= 100)
 	{
-		Info_AddChoice	(DIA_Grd_216_DustyZoll,"Мы просто хотим прогуляться. А вот тебе от нас небольшой подарок." ,DIA_Grd_216_DustyZoll_LittleWalk);
+		Info_AddChoice	(DIA_Grd_216_DustyZoll,"РњС‹ РїСЂРѕСЃС‚Рѕ С…РѕС‚РёРј РїСЂРѕРіСѓР»СЏС‚СЊСЃСЏ. Рђ РІРѕС‚ С‚РµР±Рµ РѕС‚ РЅР°СЃ РЅРµР±РѕР»СЊС€РѕР№ РїРѕРґР°СЂРѕРє." ,DIA_Grd_216_DustyZoll_LittleWalk);
 	};
 };
 
 func void DIA_Grd_216_DustyZoll_PissOff()
 {
-	AI_Output			(other, self,"DIA_Grd_216_Dusty_Zoll_PissOff_15_00"); //Это тебе знать не положено!
-	AI_Output			(self, other,"DIA_Grd_216_Dusty_Zoll_PIssOff_13_00"); //Я так не думаю!
+	AI_Output			(other, self,"DIA_Grd_216_Dusty_Zoll_PissOff_15_00"); //Р­С‚Рѕ С‚РµР±Рµ Р·РЅР°С‚СЊ РЅРµ РїРѕР»РѕР¶РµРЅРѕ!
+	AI_Output			(self, other,"DIA_Grd_216_Dusty_Zoll_PIssOff_13_00"); //РЇ С‚Р°Рє РЅРµ РґСѓРјР°СЋ!
 	AI_StopProcessInfos	(self);
 	Npc_SetTarget		(self,other);
 	AI_StartState		(self,ZS_Attack,1,"");
@@ -108,13 +108,13 @@ func void DIA_Grd_216_DustyZoll_PissOff()
 	B_ExchangeRoutine	(Vlk_524_Dusty,"start");
 	var C_NPC dusty;	dusty = Hlp_GetNpc(Vlk_524_Dusty);
 	dusty.aivar[AIV_PARTYMEMBER] = FALSE;
-	dusty.flags = 0;	// Immortal lцschen
+	dusty.flags = 0;	// Immortal lС†schen
 };
 
 func void DIA_Grd_216_DustyZoll_ToPSI()
 {
-	AI_Output			(other, self,"DIA_Grd_216_Dusty_Zoll_ToPsi_15_00"); //Мы хотим пойти в лагерь Братства.
-	AI_Output 			(self, other,"DIA_Grd_216_Dusty_Zoll_ToPsi_13_00"); //Ну, вам туда дорога закрыта...
+	AI_Output			(other, self,"DIA_Grd_216_Dusty_Zoll_ToPsi_15_00"); //РњС‹ С…РѕС‚РёРј РїРѕР№С‚Рё РІ Р»Р°РіРµСЂСЊ Р‘СЂР°С‚СЃС‚РІР°.
+	AI_Output 			(self, other,"DIA_Grd_216_Dusty_Zoll_ToPsi_13_00"); //РќСѓ, РІР°Рј С‚СѓРґР° РґРѕСЂРѕРіР° Р·Р°РєСЂС‹С‚Р°...
 	AI_StopProcessInfos	(self);
 	Npc_SetTarget		(self,other);
 	AI_StartState		(self,ZS_Attack,1,"");
@@ -122,26 +122,26 @@ func void DIA_Grd_216_DustyZoll_ToPSI()
 	B_ExchangeRoutine	(Vlk_524_Dusty,"start");
 	var C_NPC dusty;	dusty = Hlp_GetNpc(Vlk_524_Dusty);
 	dusty.aivar[AIV_PARTYMEMBER] = FALSE;
-	dusty.flags = 0;	// Immortal lцschen
+	dusty.flags = 0;	// Immortal lС†schen
 };
 
 func void DIA_Grd_216_DustyZoll_LittleWalk()
 {
-	AI_Output				(other, self,"DIA_Grd_216_Dusty_Zoll_LittleWalk_15_00"); //Мы просто хотим прогуляться. А вот тебе от нас небольшой подарок.
+	AI_Output				(other, self,"DIA_Grd_216_Dusty_Zoll_LittleWalk_15_00"); //РњС‹ РїСЂРѕСЃС‚Рѕ С…РѕС‚РёРј РїСЂРѕРіСѓР»СЏС‚СЊСЃСЏ. Рђ РІРѕС‚ С‚РµР±Рµ РѕС‚ РЅР°СЃ РЅРµР±РѕР»СЊС€РѕР№ РїРѕРґР°СЂРѕРє.
 	if (Npc_HasItems (hero,itminugget) >= 100)
 	{
-		AI_Output			(self, other,"DIA_Grd_216_Dusty_Zoll_LittleWalk_13_00"); //Я ничего не видел.
+		AI_Output			(self, other,"DIA_Grd_216_Dusty_Zoll_LittleWalk_13_00"); //РЇ РЅРёС‡РµРіРѕ РЅРµ РІРёРґРµР».
 
 		B_GiveInvItems	(hero, self, ItMiNugget, 100);
 		DIA_Grd_216_DustyZoll.permanent = 0;
-		B_LogEntry			(CH1_RecruitDusty,	"Охранник у южных ворот сделал вид, что он нас не видел. За небольшую плату, конечно. Все имеет свою цену!");
+		B_LogEntry			(CH1_RecruitDusty,	"РћС…СЂР°РЅРЅРёРє Сѓ СЋР¶РЅС‹С… РІРѕСЂРѕС‚ СЃРґРµР»Р°Р» РІРёРґ, С‡С‚Рѕ РѕРЅ РЅР°СЃ РЅРµ РІРёРґРµР». Р—Р° РЅРµР±РѕР»СЊС€СѓСЋ РїР»Р°С‚Сѓ, РєРѕРЅРµС‡РЅРѕ. Р’СЃРµ РёРјРµРµС‚ СЃРІРѕСЋ С†РµРЅСѓ!");
 		B_GiveXP			(XP_BribedDustyGuard);
 		
 		AI_StopProcessInfos	(self);
 	}
 	else
 	{
-		AI_Output			(self, other,"DIA_Grd_216_Dusty_Zoll_LittleWalk_13_02"); //Ты, что пытаешься меня надуть? Так не пойдет, малыш!
+		AI_Output			(self, other,"DIA_Grd_216_Dusty_Zoll_LittleWalk_13_02"); //РўС‹, С‡С‚Рѕ РїС‹С‚Р°РµС€СЊСЃСЏ РјРµРЅСЏ РЅР°РґСѓС‚СЊ? РўР°Рє РЅРµ РїРѕР№РґРµС‚, РјР°Р»С‹С€!
 		AI_StopProcessInfos	(self);
 		Npc_SetTarget		(self,other);
 		AI_StartState		(self,ZS_Attack,1,"");
@@ -149,7 +149,7 @@ func void DIA_Grd_216_DustyZoll_LittleWalk()
 		B_ExchangeRoutine	(Vlk_524_Dusty,"start");
 		var C_NPC dusty;	dusty = Hlp_GetNpc(Vlk_524_Dusty);
 		dusty.aivar[AIV_PARTYMEMBER] = FALSE;
-		dusty.flags = 0;	// Immortal lцschen
+		dusty.flags = 0;	// Immortal lС†schen
 	};
 };
 
@@ -179,7 +179,7 @@ FUNC int  GRD_216_Torwache_SEETHORUS_Condition()
 
 func void  GRD_216_Torwache_SEETHORUS_Info()
 {
-	AI_Output (self, other,"Grd_216_Torwache_SEETHORUS_Info_13_01"); //Рад, что ты объявился. Торус хочет поговорить с тобой!
-	AI_Output (other, self,"Grd_216_Torwache_SEETHORUS_Info_15_02"); //А что ему нужно?
-	AI_Output (self, other,"Grd_216_Torwache_SEETHORUS_Info_13_03"); //Он сам тебе все расскажет.
+	AI_Output (self, other,"Grd_216_Torwache_SEETHORUS_Info_13_01"); //Р Р°Рґ, С‡С‚Рѕ С‚С‹ РѕР±СЉСЏРІРёР»СЃСЏ. РўРѕСЂСѓСЃ С…РѕС‡РµС‚ РїРѕРіРѕРІРѕСЂРёС‚СЊ СЃ С‚РѕР±РѕР№!
+	AI_Output (other, self,"Grd_216_Torwache_SEETHORUS_Info_15_02"); //Рђ С‡С‚Рѕ РµРјСѓ РЅСѓР¶РЅРѕ?
+	AI_Output (self, other,"Grd_216_Torwache_SEETHORUS_Info_13_03"); //РћРЅ СЃР°Рј С‚РµР±Рµ РІСЃРµ СЂР°СЃСЃРєР°Р¶РµС‚.
 };

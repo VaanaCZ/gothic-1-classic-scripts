@@ -33,7 +33,7 @@ INSTANCE DIA_Dusty_Hello (C_INFO)
 	condition		= DIA_Dusty_Hello_Condition;
 	information		= DIA_Dusty_Hello_Info;
 	permanent		= 0;
-	description		= "Привет! Я новенький. Можешь рассказать, как дела?";
+	description		= "РџСЂРёРІРµС‚! РЇ РЅРѕРІРµРЅСЊРєРёР№. РњРѕР¶РµС€СЊ СЂР°СЃСЃРєР°Р·Р°С‚СЊ, РєР°Рє РґРµР»Р°?";
 };
 
 FUNC INT DIA_Dusty_Hello_Condition()
@@ -43,11 +43,11 @@ FUNC INT DIA_Dusty_Hello_Condition()
 
 FUNC VOID DIA_Dusty_Hello_Info()
 {
-	AI_Output (other, self,"DIA_Dusty_Hello_15_00"); //Привет! Я новенький. Можешь рассказать, как дела?
-	AI_Output (self, other,"DIA_Dusty_Hello_03_01"); //Ах, и не спрашивай! Две недели я гнул спину в шахте. И что я получил?
-	AI_Output (self, other,"DIA_Dusty_Hello_03_02"); //Несколько жалких кусков руды, на которые даже нормальную еду не купишь!
-	AI_Output (self, other,"DIA_Dusty_Hello_03_03"); //Я разговаривал с Идолом Парвезом внизу. Он рассказал мне кое-что интересное о Лагере сектантов.
-	AI_Output (self, other,"DIA_Dusty_Hello_03_04"); //Думаю, лучше уж присоединиться к ним, чем до конца жизни быть рабом Гомеза.
+	AI_Output (other, self,"DIA_Dusty_Hello_15_00"); //РџСЂРёРІРµС‚! РЇ РЅРѕРІРµРЅСЊРєРёР№. РњРѕР¶РµС€СЊ СЂР°СЃСЃРєР°Р·Р°С‚СЊ, РєР°Рє РґРµР»Р°?
+	AI_Output (self, other,"DIA_Dusty_Hello_03_01"); //РђС…, Рё РЅРµ СЃРїСЂР°С€РёРІР°Р№! Р”РІРµ РЅРµРґРµР»Рё СЏ РіРЅСѓР» СЃРїРёРЅСѓ РІ С€Р°С…С‚Рµ. Р С‡С‚Рѕ СЏ РїРѕР»СѓС‡РёР»?
+	AI_Output (self, other,"DIA_Dusty_Hello_03_02"); //РќРµСЃРєРѕР»СЊРєРѕ Р¶Р°Р»РєРёС… РєСѓСЃРєРѕРІ СЂСѓРґС‹, РЅР° РєРѕС‚РѕСЂС‹Рµ РґР°Р¶Рµ РЅРѕСЂРјР°Р»СЊРЅСѓСЋ РµРґСѓ РЅРµ РєСѓРїРёС€СЊ!
+	AI_Output (self, other,"DIA_Dusty_Hello_03_03"); //РЇ СЂР°Р·РіРѕРІР°СЂРёРІР°Р» СЃ РРґРѕР»РѕРј РџР°СЂРІРµР·РѕРј РІРЅРёР·Сѓ. РћРЅ СЂР°СЃСЃРєР°Р·Р°Р» РјРЅРµ РєРѕРµ-С‡С‚Рѕ РёРЅС‚РµСЂРµСЃРЅРѕРµ Рѕ Р›Р°РіРµСЂРµ СЃРµРєС‚Р°РЅС‚РѕРІ.
+	AI_Output (self, other,"DIA_Dusty_Hello_03_04"); //Р”СѓРјР°СЋ, Р»СѓС‡С€Рµ СѓР¶ РїСЂРёСЃРѕРµРґРёРЅРёС‚СЊСЃСЏ Рє РЅРёРј, С‡РµРј РґРѕ РєРѕРЅС†Р° Р¶РёР·РЅРё Р±С‹С‚СЊ СЂР°Р±РѕРј Р“РѕРјРµР·Р°.
 };
 
 // **************************************************
@@ -61,7 +61,7 @@ INSTANCE DIA_Dusty_WhyNotLeave (C_INFO)
 	condition		= DIA_Dusty_WhyNotLeave_Condition;
 	information		= DIA_Dusty_WhyNotLeave_Info;
 	permanent		= 0;
-	description		= "Если тебе здесь не нравится, почему ты не уйдешь?";
+	description		= "Р•СЃР»Рё С‚РµР±Рµ Р·РґРµСЃСЊ РЅРµ РЅСЂР°РІРёС‚СЃСЏ, РїРѕС‡РµРјСѓ С‚С‹ РЅРµ СѓР№РґРµС€СЊ?";
 };
 
 FUNC INT DIA_Dusty_WhyNotLeave_Condition()
@@ -75,13 +75,13 @@ FUNC INT DIA_Dusty_WhyNotLeave_Condition()
 
 FUNC VOID DIA_Dusty_WhyNotLeave_Info()
 {
-	AI_Output (other, self,"DIA_Dusty_WhyNotLeave_15_00"); //Если тебе здесь не нравится, почему ты не уйдешь?
-	AI_Output (self, other,"DIA_Dusty_WhyNotLeave_03_01"); //Я не уверен, что мне там действительно будет лучше. У меня был здесь друг. Его звали Мелвин. Неделю назад он ушел в Лагерь сектантов.
-	AI_Output (self, other,"DIA_Dusty_WhyNotLeave_03_02"); //Но с тех пор я ничего о нем не слышал. Если так и дальше будет продолжаться, я лучше останусь здесь.
+	AI_Output (other, self,"DIA_Dusty_WhyNotLeave_15_00"); //Р•СЃР»Рё С‚РµР±Рµ Р·РґРµСЃСЊ РЅРµ РЅСЂР°РІРёС‚СЃСЏ, РїРѕС‡РµРјСѓ С‚С‹ РЅРµ СѓР№РґРµС€СЊ?
+	AI_Output (self, other,"DIA_Dusty_WhyNotLeave_03_01"); //РЇ РЅРµ СѓРІРµСЂРµРЅ, С‡С‚Рѕ РјРЅРµ С‚Р°Рј РґРµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ Р±СѓРґРµС‚ Р»СѓС‡С€Рµ. РЈ РјРµРЅСЏ Р±С‹Р» Р·РґРµСЃСЊ РґСЂСѓРі. Р•РіРѕ Р·РІР°Р»Рё РњРµР»РІРёРЅ. РќРµРґРµР»СЋ РЅР°Р·Р°Рґ РѕРЅ СѓС€РµР» РІ Р›Р°РіРµСЂСЊ СЃРµРєС‚Р°РЅС‚РѕРІ.
+	AI_Output (self, other,"DIA_Dusty_WhyNotLeave_03_02"); //РќРѕ СЃ С‚РµС… РїРѕСЂ СЏ РЅРёС‡РµРіРѕ Рѕ РЅРµРј РЅРµ СЃР»С‹С€Р°Р». Р•СЃР»Рё С‚Р°Рє Рё РґР°Р»СЊС€Рµ Р±СѓРґРµС‚ РїСЂРѕРґРѕР»Р¶Р°С‚СЊСЃСЏ, СЏ Р»СѓС‡С€Рµ РѕСЃС‚Р°РЅСѓСЃСЊ Р·РґРµСЃСЊ.
 
 	Log_CreateTopic		(CH1_RecruitDusty,	LOG_MISSION);
 	Log_SetTopicStatus	(CH1_RecruitDusty,	LOG_RUNNING);
-	B_LogEntry			(CH1_RecruitDusty,	"Дасти, рудокоп из Старого лагеря, недоволен своей жизнью. Он раздумывает над тем, не присоединиться ли ему к лагерю Братства.");
+	B_LogEntry			(CH1_RecruitDusty,	"Р”Р°СЃС‚Рё, СЂСѓРґРѕРєРѕРї РёР· РЎС‚Р°СЂРѕРіРѕ Р»Р°РіРµСЂСЏ, РЅРµРґРѕРІРѕР»РµРЅ СЃРІРѕРµР№ Р¶РёР·РЅСЊСЋ. РћРЅ СЂР°Р·РґСѓРјС‹РІР°РµС‚ РЅР°Рґ С‚РµРј, РЅРµ РїСЂРёСЃРѕРµРґРёРЅРёС‚СЊСЃСЏ Р»Рё РµРјСѓ Рє Р»Р°РіРµСЂСЋ Р‘СЂР°С‚СЃС‚РІР°.");
 };
 
 // **************************************************
@@ -95,7 +95,7 @@ INSTANCE DIA_Dusty_MetMelvin (C_INFO)
 	condition		= DIA_Dusty_MetMelvin_Condition;
 	information		= DIA_Dusty_MetMelvin_Info;
 	permanent		= 0;
-	description		= "Я был в лагере Сектантов и встретил там Мелвина.";
+	description		= "РЇ Р±С‹Р» РІ Р»Р°РіРµСЂРµ РЎРµРєС‚Р°РЅС‚РѕРІ Рё РІСЃС‚СЂРµС‚РёР» С‚Р°Рј РњРµР»РІРёРЅР°.";
 };
 
 FUNC INT DIA_Dusty_MetMelvin_Condition()
@@ -108,13 +108,13 @@ FUNC INT DIA_Dusty_MetMelvin_Condition()
 
 FUNC VOID DIA_Dusty_MetMelvin_Info()
 {
-	AI_Output (other, self,"DIA_Dusty_MetMelvin_15_00"); //Я был в Лагере сектантов и встретил там Мелвина.
-	AI_Output (self, other,"DIA_Dusty_MetMelvin_03_01"); //Правда? Он передал мне что-нибудь?
-	AI_Output (other, self,"DIA_Dusty_MetMelvin_15_02"); //Говорит, что там гораздо лучше, никто не пинает, не кричит.
-	AI_Output (self, other,"DIA_Dusty_MetMelvin_03_03"); //Эй! И он там отдыхает без меня? Я тоже хочу туда пойти. Но меня из этого лагеря никто не выпустит. 
-	AI_Output (other, self,"DIA_Dusty_MetMelvin_15_04"); //Вот как? Почему?
-	AI_Output (self, other,"DIA_Dusty_MetMelvin_03_05"); //Стражники быстро узнали, что я собираюсь уйти отсюда. Мне не стоило так много болтать об этом.
-	AI_Output (self, other,"DIA_Dusty_MetMelvin_03_06"); //Чтобы они меня пропустили, нужно заплатить им не меньше 100 кусков руды.
+	AI_Output (other, self,"DIA_Dusty_MetMelvin_15_00"); //РЇ Р±С‹Р» РІ Р›Р°РіРµСЂРµ СЃРµРєС‚Р°РЅС‚РѕРІ Рё РІСЃС‚СЂРµС‚РёР» С‚Р°Рј РњРµР»РІРёРЅР°.
+	AI_Output (self, other,"DIA_Dusty_MetMelvin_03_01"); //РџСЂР°РІРґР°? РћРЅ РїРµСЂРµРґР°Р» РјРЅРµ С‡С‚Рѕ-РЅРёР±СѓРґСЊ?
+	AI_Output (other, self,"DIA_Dusty_MetMelvin_15_02"); //Р“РѕРІРѕСЂРёС‚, С‡С‚Рѕ С‚Р°Рј РіРѕСЂР°Р·РґРѕ Р»СѓС‡С€Рµ, РЅРёРєС‚Рѕ РЅРµ РїРёРЅР°РµС‚, РЅРµ РєСЂРёС‡РёС‚.
+	AI_Output (self, other,"DIA_Dusty_MetMelvin_03_03"); //Р­Р№! Р РѕРЅ С‚Р°Рј РѕС‚РґС‹С…Р°РµС‚ Р±РµР· РјРµРЅСЏ? РЇ С‚РѕР¶Рµ С…РѕС‡Сѓ С‚СѓРґР° РїРѕР№С‚Рё. РќРѕ РјРµРЅСЏ РёР· СЌС‚РѕРіРѕ Р»Р°РіРµСЂСЏ РЅРёРєС‚Рѕ РЅРµ РІС‹РїСѓСЃС‚РёС‚. 
+	AI_Output (other, self,"DIA_Dusty_MetMelvin_15_04"); //Р’РѕС‚ РєР°Рє? РџРѕС‡РµРјСѓ?
+	AI_Output (self, other,"DIA_Dusty_MetMelvin_03_05"); //РЎС‚СЂР°Р¶РЅРёРєРё Р±С‹СЃС‚СЂРѕ СѓР·РЅР°Р»Рё, С‡С‚Рѕ СЏ СЃРѕР±РёСЂР°СЋСЃСЊ СѓР№С‚Рё РѕС‚СЃСЋРґР°. РњРЅРµ РЅРµ СЃС‚РѕРёР»Рѕ С‚Р°Рє РјРЅРѕРіРѕ Р±РѕР»С‚Р°С‚СЊ РѕР± СЌС‚РѕРј.
+	AI_Output (self, other,"DIA_Dusty_MetMelvin_03_06"); //Р§С‚РѕР±С‹ РѕРЅРё РјРµРЅСЏ РїСЂРѕРїСѓСЃС‚РёР»Рё, РЅСѓР¶РЅРѕ Р·Р°РїР»Р°С‚РёС‚СЊ РёРј РЅРµ РјРµРЅСЊС€Рµ 100 РєСѓСЃРєРѕРІ СЂСѓРґС‹.
 };
 
 // **************************************************
@@ -128,7 +128,7 @@ INSTANCE DIA_Dusty_Offer100Ore (C_INFO)
 	condition		= DIA_Dusty_Offer100Ore_Condition;
 	information		= DIA_Dusty_Offer100Ore_Info;
 	permanent		= 0;
-	description		= "А если я дам тебе сто кусков, ты сможешь уйти из этого лагеря?";
+	description		= "Рђ РµСЃР»Рё СЏ РґР°Рј С‚РµР±Рµ СЃС‚Рѕ РєСѓСЃРєРѕРІ, С‚С‹ СЃРјРѕР¶РµС€СЊ СѓР№С‚Рё РёР· СЌС‚РѕРіРѕ Р»Р°РіРµСЂСЏ?";
 };
 
 FUNC INT DIA_Dusty_Offer100Ore_Condition()
@@ -142,10 +142,10 @@ FUNC INT DIA_Dusty_Offer100Ore_Condition()
 
 FUNC VOID DIA_Dusty_Offer100Ore_Info()
 {
-	AI_Output (other, self,"DIA_Dusty_Offer100Ore_15_00"); //А если я дам тебе сто кусков, ты сможешь уйти из этого лагеря?
-	AI_Output (self, other,"DIA_Dusty_Offer100Ore_03_01"); //И ты сделаешь это? Почему?
-	AI_Output (other, self,"DIA_Dusty_Offer100Ore_15_02"); //Ну, скажем так, не ты один хотел бы видеть себя одним из братьев в Лагере сектантов.
-	AI_Output (self, other,"DIA_Dusty_Offer100Ore_03_03"); //Ты хочешь сказать, что ты пойдешь вместе со мной?
+	AI_Output (other, self,"DIA_Dusty_Offer100Ore_15_00"); //Рђ РµСЃР»Рё СЏ РґР°Рј С‚РµР±Рµ СЃС‚Рѕ РєСѓСЃРєРѕРІ, С‚С‹ СЃРјРѕР¶РµС€СЊ СѓР№С‚Рё РёР· СЌС‚РѕРіРѕ Р»Р°РіРµСЂСЏ?
+	AI_Output (self, other,"DIA_Dusty_Offer100Ore_03_01"); //Р С‚С‹ СЃРґРµР»Р°РµС€СЊ СЌС‚Рѕ? РџРѕС‡РµРјСѓ?
+	AI_Output (other, self,"DIA_Dusty_Offer100Ore_15_02"); //РќСѓ, СЃРєР°Р¶РµРј С‚Р°Рє, РЅРµ С‚С‹ РѕРґРёРЅ С…РѕС‚РµР» Р±С‹ РІРёРґРµС‚СЊ СЃРµР±СЏ РѕРґРЅРёРј РёР· Р±СЂР°С‚СЊРµРІ РІ Р›Р°РіРµСЂРµ СЃРµРєС‚Р°РЅС‚РѕРІ.
+	AI_Output (self, other,"DIA_Dusty_Offer100Ore_03_03"); //РўС‹ С…РѕС‡РµС€СЊ СЃРєР°Р·Р°С‚СЊ, С‡С‚Рѕ С‚С‹ РїРѕР№РґРµС€СЊ РІРјРµСЃС‚Рµ СЃРѕ РјРЅРѕР№?
 };
 
 // **************************************************
@@ -159,7 +159,7 @@ INSTANCE DIA_Dusty_IWouldGo (C_INFO)
 	condition		= DIA_Dusty_IWouldGo_Condition;
 	information		= DIA_Dusty_IWouldGo_Info;
 	permanent		= 0;
-	description		= "Я не просто хочу, а пойду вместе с тобой.";
+	description		= "РЇ РЅРµ РїСЂРѕСЃС‚Рѕ С…РѕС‡Сѓ, Р° РїРѕР№РґСѓ РІРјРµСЃС‚Рµ СЃ С‚РѕР±РѕР№.";
 };
 
 FUNC INT DIA_Dusty_IWouldGo_Condition()
@@ -172,11 +172,11 @@ FUNC INT DIA_Dusty_IWouldGo_Condition()
 
 FUNC VOID DIA_Dusty_IWouldGo_Info()
 {
-	AI_Output	(other, self,"DIA_Dusty_IWouldGo_15_00"); //Я не просто хочу, а пойду вместе с тобой.
-	AI_Output	(self, other,"DIA_Dusty_IWouldGo_03_01"); //Ты меня обрадовал. Мы пойдем, как только ты будешь готов.
-	AI_Output	(self, other,"DIA_Dusty_IWouldGo_03_02"); //Не забудь только, что нужно приготовить 100 кусков руды для стражников.
+	AI_Output	(other, self,"DIA_Dusty_IWouldGo_15_00"); //РЇ РЅРµ РїСЂРѕСЃС‚Рѕ С…РѕС‡Сѓ, Р° РїРѕР№РґСѓ РІРјРµСЃС‚Рµ СЃ С‚РѕР±РѕР№.
+	AI_Output	(self, other,"DIA_Dusty_IWouldGo_03_01"); //РўС‹ РјРµРЅСЏ РѕР±СЂР°РґРѕРІР°Р». РњС‹ РїРѕР№РґРµРј, РєР°Рє С‚РѕР»СЊРєРѕ С‚С‹ Р±СѓРґРµС€СЊ РіРѕС‚РѕРІ.
+	AI_Output	(self, other,"DIA_Dusty_IWouldGo_03_02"); //РќРµ Р·Р°Р±СѓРґСЊ С‚РѕР»СЊРєРѕ, С‡С‚Рѕ РЅСѓР¶РЅРѕ РїСЂРёРіРѕС‚РѕРІРёС‚СЊ 100 РєСѓСЃРєРѕРІ СЂСѓРґС‹ РґР»СЏ СЃС‚СЂР°Р¶РЅРёРєРѕРІ.
 
-	B_LogEntry	(CH1_RecruitDusty,	"Я смог уговорить рудокопа Дасти пойти со мной в Болотный лагерь. Мне придется подкупить стражников, чтобы они нас пропустили. Лучше всего отвести его прямо к Идолу Тондралу.");
+	B_LogEntry	(CH1_RecruitDusty,	"РЇ СЃРјРѕРі СѓРіРѕРІРѕСЂРёС‚СЊ СЂСѓРґРѕРєРѕРїР° Р”Р°СЃС‚Рё РїРѕР№С‚Рё СЃРѕ РјРЅРѕР№ РІ Р‘РѕР»РѕС‚РЅС‹Р№ Р»Р°РіРµСЂСЊ. РњРЅРµ РїСЂРёРґРµС‚СЃСЏ РїРѕРґРєСѓРїРёС‚СЊ СЃС‚СЂР°Р¶РЅРёРєРѕРІ, С‡С‚РѕР±С‹ РѕРЅРё РЅР°СЃ РїСЂРѕРїСѓСЃС‚РёР»Рё. Р›СѓС‡С€Рµ РІСЃРµРіРѕ РѕС‚РІРµСЃС‚Рё РµРіРѕ РїСЂСЏРјРѕ Рє РРґРѕР»Сѓ РўРѕРЅРґСЂР°Р»Сѓ.");
 	B_GiveXP	(XP_DustyJoined);
 };
 
@@ -193,7 +193,7 @@ INSTANCE DIA_Dusty_LetsGo (C_INFO)
 	condition		= DIA_Dusty_LetsGo_Condition;
 	information		= DIA_Dusty_LetsGo_Info;
 	permanent		= 1;
-	description		= "Я готов. Пойдем!";
+	description		= "РЇ РіРѕС‚РѕРІ. РџРѕР№РґРµРј!";
 };
 
 FUNC INT DIA_Dusty_LetsGo_Condition()
@@ -209,14 +209,14 @@ FUNC INT DIA_Dusty_LetsGo_Condition()
 
 FUNC VOID DIA_Dusty_LetsGo_Info()
 {
-	AI_Output (other, self,"DIA_Dusty_LetsGo_15_00"); //Я готов. Пойдем!
-	AI_Output (self, other,"DIA_Dusty_LetsGo_03_01"); //Хорошо, мы пойдем через южные ворота. Через северные нам не пройти, там стражники не берут взяток.
-	AI_Output (self, other,"DIA_Dusty_LetsGo_03_02"); //И лучше всего, если руду предложишь им ты - у меня нет опыта в подобных делах.
-	AI_Output (other, self,"DIA_Dusty_LetsGo_15_03"); //Ладно. Пойдем.
+	AI_Output (other, self,"DIA_Dusty_LetsGo_15_00"); //РЇ РіРѕС‚РѕРІ. РџРѕР№РґРµРј!
+	AI_Output (self, other,"DIA_Dusty_LetsGo_03_01"); //РҐРѕСЂРѕС€Рѕ, РјС‹ РїРѕР№РґРµРј С‡РµСЂРµР· СЋР¶РЅС‹Рµ РІРѕСЂРѕС‚Р°. Р§РµСЂРµР· СЃРµРІРµСЂРЅС‹Рµ РЅР°Рј РЅРµ РїСЂРѕР№С‚Рё, С‚Р°Рј СЃС‚СЂР°Р¶РЅРёРєРё РЅРµ Р±РµСЂСѓС‚ РІР·СЏС‚РѕРє.
+	AI_Output (self, other,"DIA_Dusty_LetsGo_03_02"); //Р Р»СѓС‡С€Рµ РІСЃРµРіРѕ, РµСЃР»Рё СЂСѓРґСѓ РїСЂРµРґР»РѕР¶РёС€СЊ РёРј С‚С‹ - Сѓ РјРµРЅСЏ РЅРµС‚ РѕРїС‹С‚Р° РІ РїРѕРґРѕР±РЅС‹С… РґРµР»Р°С….
+	AI_Output (other, self,"DIA_Dusty_LetsGo_15_03"); //Р›Р°РґРЅРѕ. РџРѕР№РґРµРј.
 
 	if	!Dusty_LetsGo
 	{
-		B_LogEntry(CH1_RecruitDusty,	"Дасти посоветовал мне не ходить к северным воротам. Стражники у южных ворот гораздо лучше относятся к людям с рудой.");
+		B_LogEntry(CH1_RecruitDusty,	"Р”Р°СЃС‚Рё РїРѕСЃРѕРІРµС‚РѕРІР°Р» РјРЅРµ РЅРµ С…РѕРґРёС‚СЊ Рє СЃРµРІРµСЂРЅС‹Рј РІРѕСЂРѕС‚Р°Рј. РЎС‚СЂР°Р¶РЅРёРєРё Сѓ СЋР¶РЅС‹С… РІРѕСЂРѕС‚ РіРѕСЂР°Р·РґРѕ Р»СѓС‡С€Рµ РѕС‚РЅРѕСЃСЏС‚СЃСЏ Рє Р»СЋРґСЏРј СЃ СЂСѓРґРѕР№.");
 		Dusty_LetsGo = TRUE;
 	};
 	

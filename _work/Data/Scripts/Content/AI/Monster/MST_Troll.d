@@ -4,7 +4,7 @@
 
 PROTOTYPE Mst_Default_Troll(C_Npc)			
 {
-	name							=	"Тролль";
+	name							=	"РўСЂРѕР»Р»СЊ";
 	guild							=	GIL_TROLL;
 	aivar[AIV_MM_REAL_ID]			= 	ID_TROLL;
 	level							=	200;
@@ -77,7 +77,7 @@ INSTANCE Troll	(Mst_Default_Troll)
 INSTANCE YoungTroll	(Mst_Default_Troll)
 {
 	//-------- general data --------
-	name							=	"Молодой тролль";
+	name							=	"РњРѕР»РѕРґРѕР№ С‚СЂРѕР»Р»СЊ";
 	guild							=	GIL_TROLL;
 	aivar[AIV_MM_REAL_ID]			= 	ID_TROLL;
 	level							=	100;

@@ -1,7 +1,7 @@
 instance TPL_1433_GorNaVid (Npc_Default)
 {
 	//-------- primary data --------
-	name =							"Гор На Вид";
+	name =							"Р“РѕСЂ РќР° Р’РёРґ";
 	npctype =						npctype_Main;
 	guild =							GIL_TPL;
 	level =							17;
