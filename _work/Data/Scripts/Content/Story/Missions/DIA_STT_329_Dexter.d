@@ -23,7 +23,7 @@ FUNC VOID DIA_Dexter_Exit_Info()
 };
 
 // **************************************************
-// 					Erste Begr¸ssung
+// 					Erste Begr√ºssung
 // **************************************************
 
 INSTANCE DIA_Dexter_First (C_INFO)
@@ -46,7 +46,7 @@ FUNC INT DIA_Dexter_First_Condition()
 
 FUNC VOID DIA_Dexter_First_Info()
 {
-	AI_Output (self,other,"DIA_Dexter_IAmNew_10_00"); //Hej, ty! Obchoduju s drogou z baûiny a lektvary ze SektovnÌho t·bora. Chceö nÏco?
+	AI_Output (self,other,"DIA_Dexter_IAmNew_10_00"); //Hej, ty! Obchoduju s drogou z ba≈æiny a lektvary ze Sektovn√≠ho t√°bora. Chce≈° nƒõco?
 };
 
 // **************************************************
@@ -60,7 +60,7 @@ INSTANCE DIA_Dexter_Kraut (C_INFO)
 	condition	= DIA_Dexter_Kraut_Condition;
 	information	= DIA_Dexter_Kraut_Info;
 	permanent	= 0;
-	description	= "Co je to droga z baûiny?";
+	description	= "Co je to droga z ba≈æiny?";
 };                       
 
 FUNC INT DIA_Dexter_Kraut_Condition()
@@ -70,8 +70,8 @@ FUNC INT DIA_Dexter_Kraut_Condition()
 
 FUNC VOID DIA_Dexter_Kraut_Info()
 {
-	AI_Output (other,self,"DIA_Dexter_Kraut_15_00"); //Co je to droga z baûiny?
-	AI_Output (self,other,"DIA_Dexter_Kraut_10_01"); //Jsi tady nov˝, viÔ? M˘ûeö ji kou¯it. Pro vÏtöinu z n·s je to velmi uvolÚujÌcÌ.
+	AI_Output (other,self,"DIA_Dexter_Kraut_15_00"); //Co je to droga z ba≈æiny?
+	AI_Output (self,other,"DIA_Dexter_Kraut_10_01"); //Jsi tady nov√Ω, viƒè? M≈Ø≈æe≈° ji kou≈ôit. Pro vƒõt≈°inu z n√°s je to velmi uvol≈àuj√≠c√≠.
 };
 
 // **************************************************
@@ -87,7 +87,7 @@ INSTANCE DIA_Dexter_Trade (C_INFO)
 	condition	= DIA_Dexter_Trade_Condition;
 	information	= DIA_Dexter_Trade_Info;
 	permanent	= 1;
-	description	= "Ukaû mi svoje zboûÌ.";
+	description	= "Uka≈æ mi svoje zbo≈æ√≠.";
 	Trade		= 1;
 };                       
 
@@ -98,13 +98,13 @@ FUNC INT DIA_Dexter_Trade_Condition()
 
 FUNC VOID DIA_Dexter_Trade_Info()
 {
-	AI_Output (other,self,"DIA_Dexter_Trade_15_00"); //Ukaû mi svoje zboûÌ.
-	AI_Output (self,other,"DIA_Dexter_Trade_10_01"); //M·m tu nejlepöÌ zboûÌ...
+	AI_Output (other,self,"DIA_Dexter_Trade_15_00"); //Uka≈æ mi svoje zbo≈æ√≠.
+	AI_Output (self,other,"DIA_Dexter_Trade_10_01"); //M√°m tu nejlep≈°√≠ zbo≈æ√≠...
 	
 	if	(Dexter_Traded == FALSE)
 	{
 		Log_CreateTopic(GE_TraderOC, LOG_NOTE);
-		B_LogEntry(GE_TraderOC,"Dexter, jeden ze StÌn˘, obchoduje s drogou z baûin a LEKTVARY ze Sekt·¯skÈho t·bora.");
+		B_LogEntry(GE_TraderOC,"Dexter, jeden ze St√≠n≈Ø, obchoduje s drogou z ba≈æin a LEKTVARY ze Sekt√°≈ôsk√©ho t√°bora.");
 	
 		Dexter_Traded = TRUE;
 	};
@@ -123,7 +123,7 @@ INSTANCE DIA_Dexter_JoinOC (C_INFO)
 	condition	= DIA_Dexter_JoinOC_Condition;
 	information	= DIA_Dexter_JoinOC_Info;
 	permanent	= 0;
-	description	= "Chci se p¯idat k t·boru - chci se st·t StÌnem.";
+	description	= "Chci se p≈ôidat k t√°boru - chci se st√°t St√≠nem.";
 };                       
 
 FUNC INT DIA_Dexter_JoinOC_Condition()
@@ -135,82 +135,82 @@ FUNC INT DIA_Dexter_JoinOC_Condition()
 };
 FUNC VOID DIA_Dexter_JoinOC_Info()
 {
-	AI_Output (other,self,"DIA_Dexter_JoinOC_15_00"); //Chci se p¯idat k t·boru - chci se st·t StÌnem.
-	AI_Output (self,other,"DIA_Dexter_JoinOC_10_01"); //Och? Hled·ö p¯Ìleûitost uk·zat svoji cenu?
-	AI_Output (self,other,"DIA_Dexter_JoinOC_10_02"); //Dob¯e - m˘ûeö mi prok·zat laskavost. Kdyû to provedeö dob¯e, p¯imluvÌm se za tebe u Diega.
+	AI_Output (other,self,"DIA_Dexter_JoinOC_15_00"); //Chci se p≈ôidat k t√°boru - chci se st√°t St√≠nem.
+	AI_Output (self,other,"DIA_Dexter_JoinOC_10_01"); //Och? Hled√°≈° p≈ô√≠le≈æitost uk√°zat svoji cenu?
+	AI_Output (self,other,"DIA_Dexter_JoinOC_10_02"); //Dob≈ôe - m≈Ø≈æe≈° mi prok√°zat laskavost. Kdy≈æ to provede≈° dob≈ôe, p≈ôimluv√≠m se za tebe u Diega.
 	AI_Output (other,self,"DIA_Dexter_JoinOC_15_03"); //Co to je?
-	AI_Output (self,other,"DIA_Dexter_JoinOC_10_04"); //V SektovnÌm t·bo¯e je muû jmÈnem Kalom. Vezmu to zkr·tka - je to jeden z Guru tÈ sekty.
-	AI_Output (self,other,"DIA_Dexter_JoinOC_10_05"); //Kalom je alchymista. M· recept na ˙Ëinn˝ hojiv˝ lektvar.
-	AI_Output (self,other,"DIA_Dexter_JoinOC_10_06"); //ChtÏl bych od nÏj ten recept koupit, abych si ho mohl p¯ipravovat s·m.
+	AI_Output (self,other,"DIA_Dexter_JoinOC_10_04"); //V Sektovn√≠m t√°bo≈ôe je mu≈æ jm√©nem Kalom. Vezmu to zkr√°tka - je to jeden z Guru t√© sekty.
+	AI_Output (self,other,"DIA_Dexter_JoinOC_10_05"); //Kalom je alchymista. M√° recept na √∫ƒçinn√Ω hojiv√Ω lektvar.
+	AI_Output (self,other,"DIA_Dexter_JoinOC_10_06"); //Chtƒõl bych od nƒõj ten recept koupit, abych si ho mohl p≈ôipravovat s√°m.
 	AI_Output (self,other,"DIA_Dexter_JoinOC_10_07"); //Nikdo se ale ke Kalomovi nedostane.
-	AI_Output (other,self,"DIA_Dexter_JoinOC_15_08"); //A co m·m v tÈ vÏci udÏlat j·?
-	AI_Output (self,other,"DIA_Dexter_JoinOC_10_09"); //Ti sekt·¯ötÌ bl·zni hledajÌ v souËasnosti novÈ lidi. Jsi tady nov˝. P¯edstÌrej, ûe se chceö nechat p¯ijmout...
-	AI_Output (self,other,"DIA_Dexter_JoinOC_10_10"); //Kalom je jednÌm z Guru, coû znamen·, ûe zkouöÌ novÈ uchazeËe. Jestli se s nÌm dostaneö do styku, pokus se dostat ten recept.
-	AI_Output (self,other,"DIA_Dexter_JoinOC_10_11"); //Jestli za to zaplatÌö nebo ne, je mi jedno.
+	AI_Output (other,self,"DIA_Dexter_JoinOC_15_08"); //A co m√°m v t√© vƒõci udƒõlat j√°?
+	AI_Output (self,other,"DIA_Dexter_JoinOC_10_09"); //Ti sekt√°≈ô≈°t√≠ bl√°zni hledaj√≠ v souƒçasnosti nov√© lidi. Jsi tady nov√Ω. P≈ôedst√≠rej, ≈æe se chce≈° nechat p≈ôijmout...
+	AI_Output (self,other,"DIA_Dexter_JoinOC_10_10"); //Kalom je jedn√≠m z Guru, co≈æ znamen√°, ≈æe zkou≈°√≠ nov√© uchazeƒçe. Jestli se s n√≠m dostane≈° do styku, pokus se dostat ten recept.
+	AI_Output (self,other,"DIA_Dexter_JoinOC_10_11"); //Jestli za to zaplat√≠≈° nebo ne, je mi jedno.
 
 	Info_ClearChoices(DIA_Dexter_JoinOC);
-	Info_AddChoice	 (DIA_Dexter_JoinOC,"Dob¯e - uvidÌm, jestli tu vÏc budu moci dostat.",DIA_Dexter_JoinOC_Ok);
-	Info_AddChoice	 (DIA_Dexter_JoinOC,"Vypad· to na obtÌûn˝ ˙kol - kolik mi to vynese?",DIA_Dexter_JoinOC_HowMuch);
+	Info_AddChoice	 (DIA_Dexter_JoinOC,"Dob≈ôe - uvid√≠m, jestli tu vƒõc budu moci dostat.",DIA_Dexter_JoinOC_Ok);
+	Info_AddChoice	 (DIA_Dexter_JoinOC,"Vypad√° to na obt√≠≈æn√Ω √∫kol - kolik mi to vynese?",DIA_Dexter_JoinOC_HowMuch);
 };
 
 func void DIA_Dexter_JoinOC_Ok()
 {
-	AI_Output (other,self,"DIA_Dexter_JoinOC_Ok_15_00"); //Dob¯e - uvidÌm, jestli tu vÏc budu moci dostat.
+	AI_Output (other,self,"DIA_Dexter_JoinOC_Ok_15_00"); //Dob≈ôe - uvid√≠m, jestli tu vƒõc budu moci dostat.
 	Dexter_GetKalomsRecipe = LOG_RUNNING;
 	
 	Log_CreateTopic (CH1_KalomsRecipe,LOG_MISSION);
 	Log_SetTopicStatus (CH1_KalomsRecipe,LOG_RUNNING);
-	B_LogEntry    (CH1_KalomsRecipe,"Dexter, jeden ze StÌn˘ od trûiötÏ, mi ¯ekl, abych se vydal ke guru Kalomovi do Sekt·¯skÈho t·bora a zÌskal od nÏj recept.");
-	B_LogEntry    (CH1_KalomsRecipe,"Dexter ¯Ìkal, ûe se m·m vyd·vat za p¯Ìvrûence Sekt·¯skÈho t·bora, abych se dostal dovnit¯.");
+	B_LogEntry    (CH1_KalomsRecipe,"Dexter, jeden ze St√≠n≈Ø od tr≈æi≈°tƒõ, mi ≈ôekl, abych se vydal ke guru Kalomovi do Sekt√°≈ôsk√©ho t√°bora a z√≠skal od nƒõj recept.");
+	B_LogEntry    (CH1_KalomsRecipe,"Dexter ≈ô√≠kal, ≈æe se m√°m vyd√°vat za p≈ô√≠vr≈æence Sekt√°≈ôsk√©ho t√°bora, abych se dostal dovnit≈ô.");
 	
 	Info_ClearChoices(DIA_Dexter_JoinOC);
 };
 
 func void DIA_Dexter_JoinOC_HowMuch()	
 {
-	AI_Output (other,self,"DIA_Dexter_JoinOC_HowMuch_15_00"); //Vypad· to na obtÌûn˝ ˙kol - kolik mi to vynese?
-	AI_Output (self,other,"DIA_Dexter_JoinOC_HowMuch_10_01"); //NÏjakÈ body ve chvÌli, kdyû se mÏ Diego zept·, jestli m·ö pro n·s cenu. A h·dej, na Ëem bude z·viset moje odpovÏÔ.
+	AI_Output (other,self,"DIA_Dexter_JoinOC_HowMuch_15_00"); //Vypad√° to na obt√≠≈æn√Ω √∫kol - kolik mi to vynese?
+	AI_Output (self,other,"DIA_Dexter_JoinOC_HowMuch_10_01"); //Nƒõjak√© body ve chv√≠li, kdy≈æ se mƒõ Diego zept√°, jestli m√°≈° pro n√°s cenu. A h√°dej, na ƒçem bude z√°viset moje odpovƒõƒè.
 	
-	Info_AddChoice	 (DIA_Dexter_JoinOC,"Moûn· budu muset za ten recept zaplatit - dej mi 50 nuget˘ jako z·lohu.",DIA_Dexter_JoinOC_Advance);
+	Info_AddChoice	 (DIA_Dexter_JoinOC,"Mo≈æn√° budu muset za ten recept zaplatit - dej mi 50 nuget≈Ø jako z√°lohu.",DIA_Dexter_JoinOC_Advance);
 };
 
 func void DIA_Dexter_JoinOC_Advance()
 {
-	AI_Output (other,self,"DIA_Dexter_JoinOC_Advance_15_00"); //Moûn· budu muset za ten recept zaplatit - dej mi 50 nuget˘ jako z·lohu.
-	AI_Output (self,other,"DIA_Dexter_JoinOC_Advance_10_01"); //ZapomeÚ na to!
+	AI_Output (other,self,"DIA_Dexter_JoinOC_Advance_15_00"); //Mo≈æn√° budu muset za ten recept zaplatit - dej mi 50 nuget≈Ø jako z√°lohu.
+	AI_Output (self,other,"DIA_Dexter_JoinOC_Advance_10_01"); //Zapome≈à na to!
 	
-	Info_AddChoice	 (DIA_Dexter_JoinOC,"é·dn· ruda, û·dn˝ recept!",DIA_Dexter_JoinOC_Threat);
+	Info_AddChoice	 (DIA_Dexter_JoinOC,"≈Ω√°dn√° ruda, ≈æ√°dn√Ω recept!",DIA_Dexter_JoinOC_Threat);
 };
 
 func void DIA_Dexter_JoinOC_Threat()
 {
-	AI_Output (other,self,"DIA_Dexter_JoinOC_Threat_15_00"); //é·dn· ruda, û·dn˝ recept!
-	AI_Output (self,other,"DIA_Dexter_JoinOC_Threat_10_01"); //Dobr·! O rudÏ se m˘ûeme zaËÌt bavit, aû budeö mÌt ten recept.
+	AI_Output (other,self,"DIA_Dexter_JoinOC_Threat_15_00"); //≈Ω√°dn√° ruda, ≈æ√°dn√Ω recept!
+	AI_Output (self,other,"DIA_Dexter_JoinOC_Threat_10_01"); //Dobr√°! O rudƒõ se m≈Ø≈æeme zaƒç√≠t bavit, a≈æ bude≈° m√≠t ten recept.
 	
-	Info_AddChoice	 (DIA_Dexter_JoinOC,"Ne! Chci to vidÏt teÔ a pak si m˘ûeö ten recept nechat.",DIA_Dexter_JoinOC_OreNowOrElse);
+	Info_AddChoice	 (DIA_Dexter_JoinOC,"Ne! Chci to vidƒõt teƒè a pak si m≈Ø≈æe≈° ten recept nechat.",DIA_Dexter_JoinOC_OreNowOrElse);
 };
 
 func void DIA_Dexter_JoinOC_OreNowOrElse()
 {
-	AI_Output (other,self,"DIA_Dexter_JoinOC_OreNowOrElse_15_00"); //Ne! Chci to vidÏt teÔ a pak si m˘ûeö ten recept nechat.
-	AI_Output (self,other,"DIA_Dexter_JoinOC_OreNowOrElse_10_01"); //Je tady spousta jin˝ch nov·Ëk˘.MyslÌm, ûe bych ten ˙kol mohl d·t nÏkomu z nich...
+	AI_Output (other,self,"DIA_Dexter_JoinOC_OreNowOrElse_15_00"); //Ne! Chci to vidƒõt teƒè a pak si m≈Ø≈æe≈° ten recept nechat.
+	AI_Output (self,other,"DIA_Dexter_JoinOC_OreNowOrElse_10_01"); //Je tady spousta jin√Ωch nov√°ƒçk≈Ø.Mysl√≠m, ≈æe bych ten √∫kol mohl d√°t nƒõkomu z nich...
 	
-	Info_AddChoice	 (DIA_Dexter_JoinOC,"Dob¯e! ZapomeÚme na celou tu vÏc.",DIA_Dexter_JoinOC_ForgetIt);
+	Info_AddChoice	 (DIA_Dexter_JoinOC,"Dob≈ôe! Zapome≈àme na celou tu vƒõc.",DIA_Dexter_JoinOC_ForgetIt);
 };
 
 func void DIA_Dexter_JoinOC_ForgetIt()
 {
-	AI_Output (other,self,"DIA_Dexter_JoinOC_ForgetIt_15_00"); //Dob¯e! ZapomeÚme na celou tu vÏc.
-	AI_Output (self,other,"DIA_Dexter_JoinOC_ForgetIt_10_01"); //Ne tak rychle! ChtÏl jsem jen vÏdÏt, jak daleko bys zaöel... 50 nuget˘ je pro nov·Ëka docela dost, nemyslÌö?
-	AI_Output (other,self,"DIA_Dexter_JoinOC_ForgetIt_15_02"); //To znÌ lÌp.
-	AI_Output (self,other,"DIA_Dexter_JoinOC_ForgetIt_10_03"); //Dob¯e, dob¯e, m·m tady 50 nuget˘ rudy uloûen˝ch stranou. Ale nepokouöej se mÏ podvÈst, mladej!
+	AI_Output (other,self,"DIA_Dexter_JoinOC_ForgetIt_15_00"); //Dob≈ôe! Zapome≈àme na celou tu vƒõc.
+	AI_Output (self,other,"DIA_Dexter_JoinOC_ForgetIt_10_01"); //Ne tak rychle! Chtƒõl jsem jen vƒõdƒõt, jak daleko bys za≈°el... 50 nuget≈Ø je pro nov√°ƒçka docela dost, nemysl√≠≈°?
+	AI_Output (other,self,"DIA_Dexter_JoinOC_ForgetIt_15_02"); //To zn√≠ l√≠p.
+	AI_Output (self,other,"DIA_Dexter_JoinOC_ForgetIt_10_03"); //Dob≈ôe, dob≈ôe, m√°m tady 50 nuget≈Ø rudy ulo≈æen√Ωch stranou. Ale nepokou≈°ej se mƒõ podv√©st, mladej!
 	
 	Dexter_GetKalomsRecipe = LOG_RUNNING;
 	
 	Log_CreateTopic (CH1_KalomsRecipe,LOG_MISSION);
 	Log_SetTopicStatus (CH1_KalomsRecipe,LOG_RUNNING);
-	B_LogEntry    (CH1_KalomsRecipe,"Dexter, jeden ze StÌn˘ od trûiötÏ, mi ¯ekl, abych se vydal ke guru Kalomovi do Sekt·¯skÈho t·bora a zÌskal od nÏj recept.");
-	B_LogEntry    (CH1_KalomsRecipe,"Dexter ¯Ìkal, ûe se m·m vyd·vat za p¯Ìvrûence Sekt·¯skÈho t·bora, abych se dostal dovnit¯.");
+	B_LogEntry    (CH1_KalomsRecipe,"Dexter, jeden ze St√≠n≈Ø od tr≈æi≈°tƒõ, mi ≈ôekl, abych se vydal ke guru Kalomovi do Sekt√°≈ôsk√©ho t√°bora a z√≠skal od nƒõj recept.");
+	B_LogEntry    (CH1_KalomsRecipe,"Dexter ≈ô√≠kal, ≈æe se m√°m vyd√°vat za p≈ô√≠vr≈æence Sekt√°≈ôsk√©ho t√°bora, abych se dostal dovnit≈ô.");
 	
 	CreateInvItems(self, itminugget, 50);
 	B_GiveInvItems(self, other, itminugget, 50);
@@ -231,7 +231,7 @@ INSTANCE DIA_Dexter_WhereST (C_INFO)
 	condition	= DIA_Dexter_WhereST_Condition;
 	information	= DIA_Dexter_WhereST_Info;
 	permanent	= 1;
-	description	= "Kde je SektovnÌ t·bor?";
+	description	= "Kde je Sektovn√≠ t√°bor?";
 };                       
 
 FUNC INT DIA_Dexter_WhereST_Condition()
@@ -244,20 +244,20 @@ FUNC INT DIA_Dexter_WhereST_Condition()
 
 FUNC VOID DIA_Dexter_WhereST_Info()
 {
-	AI_Output (other,self,"DIA_Dexter_WhereST_15_00"); //Kde je SektovnÌ t·bor?
-	AI_Output (self,other,"DIA_Dexter_WhereST_10_01"); //Vyjdeö z t·bora jiûnÌm v˝chodem, pak se d·ö na v˝chod. MÏl by sis vzÌt mapu.
+	AI_Output (other,self,"DIA_Dexter_WhereST_15_00"); //Kde je Sektovn√≠ t√°bor?
+	AI_Output (self,other,"DIA_Dexter_WhereST_10_01"); //Vyjde≈° z t√°bora ji≈æn√≠m v√Ωchodem, pak se d√°≈° na v√Ωchod. Mƒõl by sis vz√≠t mapu.
 	
-	if (Npc_HasItems(self,ItWrWorldmap) >0)														//Bjˆrn
-		{																						//Bjˆrn
-			AI_Output (self,other,"DIA_Dexter_WhereST_10_02"); //M·m tady 50 nuget˘...
-		};																						//Bjˆrn
+	if (Npc_HasItems(self,ItWrWorldmap) >0)														//Bj√∂rn
+		{																						//Bj√∂rn
+			AI_Output (self,other,"DIA_Dexter_WhereST_10_02"); //M√°m tady 50 nuget≈Ø...
+		};																						//Bj√∂rn
 	
-	AI_Output (other,self,"DIA_Dexter_WhereST_15_02"); //JiûnÌ v˝chod je ta zhroucen· vÏû, ne?
-	AI_Output (self,other,"DIA_Dexter_WhereST_10_03"); //P¯esnÏ tak.
+	AI_Output (other,self,"DIA_Dexter_WhereST_15_02"); //Ji≈æn√≠ v√Ωchod je ta zhroucen√° vƒõ≈æ, ne?
+	AI_Output (self,other,"DIA_Dexter_WhereST_10_03"); //P≈ôesnƒõ tak.
 	
 	if	!Dexter_PsiCamp
 	{
-		B_LogEntry    (CH1_KalomsRecipe,"Sekt·¯sk˝ t·bor leûÌ na v˝chod od StarÈho t·bora.");
+		B_LogEntry    (CH1_KalomsRecipe,"Sekt√°≈ôsk√Ω t√°bor le≈æ√≠ na v√Ωchod od Star√©ho t√°bora.");
 		Dexter_PsiCamp = TRUE;
 	};
 };
@@ -273,7 +273,7 @@ INSTANCE DIA_Dexter_KalomsRecipeSuccess (C_INFO)
 	condition	= DIA_Dexter_KalomsRecipeSuccess_Condition;
 	information	= DIA_Dexter_KalomsRecipeSuccess_Info;
 	permanent	= 1;
-	description	= "M·m ten recept, co jsi chtÏl!";
+	description	= "M√°m ten recept, co jsi chtƒõl!";
 };                       
 
 FUNC INT DIA_Dexter_KalomsRecipeSuccess_Condition()
@@ -286,13 +286,13 @@ FUNC INT DIA_Dexter_KalomsRecipeSuccess_Condition()
 
 FUNC VOID DIA_Dexter_KalomsRecipeSuccess_Info()
 {
-	AI_Output (other,self,"DIA_Dexter_KalomsRecipeSuccess_15_00"); //M·m ten recept, co jsi chtÏl!
-	AI_Output (self,other,"DIA_Dexter_KalomsRecipeSuccess_10_01"); //V˝bornÏ! Ukaû mi ho!
+	AI_Output (other,self,"DIA_Dexter_KalomsRecipeSuccess_15_00"); //M√°m ten recept, co jsi chtƒõl!
+	AI_Output (self,other,"DIA_Dexter_KalomsRecipeSuccess_10_01"); //V√Ωbornƒõ! Uka≈æ mi ho!
 	
 	B_UseFakeScroll();
 	
-	AI_Output (self,other,"DIA_Dexter_KalomsRecipeSuccess_10_02"); //Dob¯e! TeÔ si budu moci p¯ipravovat lektvar s·m.
-	AI_Output (self,other,"DIA_Dexter_KalomsRecipeSuccess_10_03"); //Jsi dobr˝ chlap! ÿeknu to Diegovi!
+	AI_Output (self,other,"DIA_Dexter_KalomsRecipeSuccess_10_02"); //Dob≈ôe! Teƒè si budu moci p≈ôipravovat lektvar s√°m.
+	AI_Output (self,other,"DIA_Dexter_KalomsRecipeSuccess_10_03"); //Jsi dobr√Ω chlap! ≈òeknu to Diegovi!
 	AI_Output (self,other,"DIA_Dexter_KalomsRecipeSuccess_10_04"); //Tady - vezmi si - za svoji snahu...
 	
 	CreateInvItems (other,itminugget,50);
@@ -304,12 +304,12 @@ FUNC VOID DIA_Dexter_KalomsRecipeSuccess_Info()
 	if (Npc_GetTrueGuild (hero) == GIL_NONE)
 	{
 		Log_SetTopicStatus(CH1_KalomsRecipe, LOG_SUCCESS);
-		B_LogEntry    (CH1_KalomsRecipe,"Na Dextera to udÏlalo dojem. Jsem si jist˝, ûe se za mÏ u Diega p¯imluvÌ.");
+		B_LogEntry    (CH1_KalomsRecipe,"Na Dextera to udƒõlalo dojem. Jsem si jist√Ω, ≈æe se za mƒõ u Diega p≈ôimluv√≠.");
 	}
 	else
 	{
 		Log_SetTopicStatus(CH1_KalomsRecipe, LOG_SUCCESS);
-		B_LogEntry    (CH1_KalomsRecipe,"Na Dextera to udÏlalo dojem. Nic z toho vöak nebudu mÌt - uû se nikdy nebudu moci st·t StÌnem.");
+		B_LogEntry    (CH1_KalomsRecipe,"Na Dextera to udƒõlalo dojem. Nic z toho v≈°ak nebudu m√≠t - u≈æ se nikdy nebudu moci st√°t St√≠nem.");
 	};
 	B_GiveXP (XP_DexterKalom);
 };

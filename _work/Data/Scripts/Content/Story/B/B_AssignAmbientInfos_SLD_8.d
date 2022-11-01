@@ -37,7 +37,7 @@ INSTANCE Info_Sld_8_EinerVonEuchWerden (C_INFO) // E1
 	condition	= Info_Sld_8_EinerVonEuchWerden_Condition;
 	information	= Info_Sld_8_EinerVonEuchWerden_Info;
 	permanent	= 1;
-	description = "Potøebujete spolehlivého mue?";
+	description = "PotÅ™ebujete spolehlivÃ©ho muÅ¾e?";
 };                       
 
 FUNC INT Info_Sld_8_EinerVonEuchWerden_Condition()
@@ -53,9 +53,9 @@ FUNC INT Info_Sld_8_EinerVonEuchWerden_Condition()
 
 FUNC VOID Info_Sld_8_EinerVonEuchWerden_Info()
 {
-	AI_Output(other,self,"Info_Sld_8_EinerVonEuchWerden_15_00"); //Potøebujete spolehlivého mue?
-	AI_Output(self,other,"Info_Sld_8_EinerVonEuchWerden_08_01"); //Lee nechce, aby se nìkdo dával k oldákùm, dokud tu nìjakı èas nepobude a nezíská dost zkušeností.
-	AI_Output(self,other,"Info_Sld_8_EinerVonEuchWerden_08_02"); //Jestli chceš zùstat v táboøe, musíš si získat respekt u banditù.
+	AI_Output(other,self,"Info_Sld_8_EinerVonEuchWerden_15_00"); //PotÅ™ebujete spolehlivÃ©ho muÅ¾e?
+	AI_Output(self,other,"Info_Sld_8_EinerVonEuchWerden_08_01"); //Lee nechce, aby se nÄ›kdo dÃ¡val k Å¾oldÃ¡kÅ¯m, dokud tu nÄ›jakÃ½ Äas nepobude a nezÃ­skÃ¡ dost zkuÅ¡enostÃ­.
+	AI_Output(self,other,"Info_Sld_8_EinerVonEuchWerden_08_02"); //Jestli chceÅ¡ zÅ¯stat v tÃ¡boÅ™e, musÃ­Å¡ si zÃ­skat respekt u banditÅ¯.
 };
 
 // *************************************************************************
@@ -78,11 +78,11 @@ FUNC INT Info_Sld_8_WichtigePersonen_Condition()
 
 FUNC VOID Info_Sld_8_WichtigePersonen_Info()
 {
-	AI_Output(other,self,"Info_Sld_8_WichtigePersonen_15_00"); //Kdo tady má velení?
-	AI_Output(self,other,"Info_Sld_8_WichtigePersonen_08_01"); //My oldáci jdeme všichni s Leem. Uzavøeli jsme s mágy dohodu, budeme je chránit a oni nás odtud dostanou ven.
-	AI_Output(other,self,"Info_Sld_8_WichtigePersonen_15_02"); //Take tu ve skuteènosti velí mágové?
-	AI_Output(self,other,"Info_Sld_8_WichtigePersonen_08_03"); //Ani náhodou. V táboøe nevelí nikdo. Vìtšina lidí jsou chlapíci, kteøí nemohli nebo nechtìli bıt ve Starém táboøe.
-	AI_Output(self,other,"Info_Sld_8_WichtigePersonen_08_04"); //Všichni si tady hledíme svého. Ale v jednom jsme zajedno: Je lepší dát všechnu rudu na hromadu a vyhodit ji do vzduchu, ne ji cpát do chøtánu tomu zpropadenému králi!
+	AI_Output(other,self,"Info_Sld_8_WichtigePersonen_15_00"); //Kdo tady mÃ¡ velenÃ­?
+	AI_Output(self,other,"Info_Sld_8_WichtigePersonen_08_01"); //My Å¾oldÃ¡ci jdeme vÅ¡ichni s Leem. UzavÅ™eli jsme s mÃ¡gy dohodu, budeme je chrÃ¡nit a oni nÃ¡s odtud dostanou ven.
+	AI_Output(other,self,"Info_Sld_8_WichtigePersonen_15_02"); //TakÅ¾e tu ve skuteÄnosti velÃ­ mÃ¡govÃ©?
+	AI_Output(self,other,"Info_Sld_8_WichtigePersonen_08_03"); //Ani nÃ¡hodou. V tÃ¡boÅ™e nevelÃ­ nikdo. VÄ›tÅ¡ina lidÃ­ jsou chlapÃ­ci, kteÅ™Ã­ nemohli nebo nechtÄ›li bÃ½t ve StarÃ©m tÃ¡boÅ™e.
+	AI_Output(self,other,"Info_Sld_8_WichtigePersonen_08_04"); //VÅ¡ichni si tady hledÃ­me svÃ©ho. Ale v jednom jsme zajedno: Je lepÅ¡Ã­ dÃ¡t vÅ¡echnu rudu na hromadu a vyhodit ji do vzduchu, neÅ¾ ji cpÃ¡t do chÅ™tÃ¡nu tomu zpropadenÃ©mu krÃ¡li!
 	var C_NPC Lee;			Lee		= Hlp_GetNpc(Sld_700_Lee);
 	Lee.aivar[AIV_FINDABLE] = TRUE;
 	var C_NPC Cronos;		Cronos  = Hlp_GetNpc(KdW_604_Cronos);
@@ -99,7 +99,7 @@ INSTANCE Info_Sld_8_DasLager(C_INFO)
 	condition	= Info_Sld_8_DasLager_Condition;
 	information	= Info_Sld_8_DasLager_Info;
 	permanent	= 1;
-	description = "Co mi mùeš øíci o táboøe?";
+	description = "Co mi mÅ¯Å¾eÅ¡ Å™Ã­ci o tÃ¡boÅ™e?";
 };                       
 
 FUNC INT Info_Sld_8_DasLager_Condition()
@@ -111,11 +111,11 @@ FUNC INT Info_Sld_8_DasLager_Condition()
 };
 FUNC VOID Info_Sld_8_DasLager_Info()
 {
-	AI_Output(other,self,"Info_Sld_8_DasLager_15_00"); //Co mi mùeš øíci o táboru?
-	AI_Output(self,other,"Info_Sld_8_DasLager_08_01"); //Dávej si tu pozor. V táboøe je spousta hrdloøezù.
-	AI_Output(self,other,"Info_Sld_8_DasLager_08_02"); //Máme tu nìkolik nepsanıch zákonù. Zaprvé: jen oldáci smìjí vstoupit na území mágù.
-	AI_Output(self,other,"Info_Sld_8_DasLager_08_03"); //Zadruhé: pokusíš se pøiblíit k haldì rudy a jsi mrtvı mu. Zatøetí: nezkoušej se dostat do baru na jezeøe.
-	AI_Output(self,other,"Info_Sld_8_DasLager_08_04"); //Abys vìdìl, je to bar banditù a ti nemají rádi, kdy se tam ukazují nováèci.
+	AI_Output(other,self,"Info_Sld_8_DasLager_15_00"); //Co mi mÅ¯Å¾eÅ¡ Å™Ã­ci o tÃ¡boru?
+	AI_Output(self,other,"Info_Sld_8_DasLager_08_01"); //DÃ¡vej si tu pozor. V tÃ¡boÅ™e je spousta hrdloÅ™ezÅ¯.
+	AI_Output(self,other,"Info_Sld_8_DasLager_08_02"); //MÃ¡me tu nÄ›kolik nepsanÃ½ch zÃ¡konÅ¯. ZaprvÃ©: jen Å¾oldÃ¡ci smÄ›jÃ­ vstoupit na ÃºzemÃ­ mÃ¡gÅ¯.
+	AI_Output(self,other,"Info_Sld_8_DasLager_08_03"); //ZadruhÃ©: pokusÃ­Å¡ se pÅ™iblÃ­Å¾it k haldÄ› rudy a jsi mrtvÃ½ muÅ¾. ZatÅ™etÃ­: nezkouÅ¡ej se dostat do baru na jezeÅ™e.
+	AI_Output(self,other,"Info_Sld_8_DasLager_08_04"); //Abys vÄ›dÄ›l, je to bar banditÅ¯ a ti nemajÃ­ rÃ¡di, kdyÅ¾ se tam ukazujÃ­ novÃ¡Äci.
 	var C_NPC Cronos;		Cronos  = Hlp_GetNpc(KdW_604_Cronos);
 	Cronos.aivar[AIV_FINDABLE] = TRUE;
 };
@@ -141,7 +141,7 @@ FUNC INT Info_Sld_8_DieLage_Condition()
 FUNC VOID Info_Sld_8_DieLage_Info()
 {
 	AI_Output(other,self,"Info_Sld_8_DieLage_15_00"); //Jak to jde?
-	AI_Output(self,other,"Info_Sld_8_DieLage_08_01"); //Jako vdycky. Staráme se, aby se nikdo nepøiblioval k mágùm a k rudì.
+	AI_Output(self,other,"Info_Sld_8_DieLage_08_01"); //Jako vÅ¾dycky. StarÃ¡me se, aby se nikdo nepÅ™ibliÅ¾oval k mÃ¡gÅ¯m a k rudÄ›.
 	var C_NPC Cronos;		Cronos  = Hlp_GetNpc(KdW_604_Cronos);
 	Cronos.aivar[AIV_FINDABLE] = TRUE;
 };
@@ -156,7 +156,7 @@ INSTANCE Info_Sld_8_Krautprobe (C_INFO) // E1
 	condition	= Info_Sld_8_Krautprobe_Condition;
 	information	= Info_Sld_8_Krautprobe_Info;
 	permanent	= 1;
-	description = "Mám tu trochu drogy z bain. Dáš si?";
+	description = "MÃ¡m tu trochu drogy z baÅ¾in. DÃ¡Å¡ si?";
 };                       
 
 FUNC INT Info_Sld_8_Krautprobe_Condition()
@@ -170,7 +170,7 @@ FUNC INT Info_Sld_8_Krautprobe_Condition()
 
 FUNC VOID Info_Sld_8_Krautprobe_Info()
 {
-	AI_Output(other,self,"Info_Sld_8_Krautprobe_15_00"); //Mám tu trochu drogy z bain. Dáš si?
+	AI_Output(other,self,"Info_Sld_8_Krautprobe_15_00"); //MÃ¡m tu trochu drogy z baÅ¾in. DÃ¡Å¡ si?
 	
 	if ( (Npc_HasItems(other,ItMiJoint_1)>0) || (Npc_HasItems(other,ItMiJoint_2)>0) || (Npc_HasItems(other,ItMiJoint_3)>0) )
 	{
@@ -181,8 +181,8 @@ FUNC VOID Info_Sld_8_Krautprobe_Info()
 		else if (Npc_HasItems(other,ItMiJoint_3))
 		{	B_GiveInvItems(other,self,ItMiJoint_3,1);	 };
 		
-		AI_Output(self,other,"Info_Sld_8_Krautprobe_08_01"); //Proè ne. Dám ti 10 nugetù.
-		AI_Output(self,other,"Info_Sld_8_Krautprobe_08_02"); //Jdi a øekni i ostatním chlapùm, urèitì budou chtít taky.
+		AI_Output(self,other,"Info_Sld_8_Krautprobe_08_01"); //ProÄ ne. DÃ¡m ti 10 nugetÅ¯.
+		AI_Output(self,other,"Info_Sld_8_Krautprobe_08_02"); //Jdi a Å™ekni i ostatnÃ­m chlapÅ¯m, urÄitÄ› budou chtÃ­t taky.
 		
 		CreateInvItems(self,itminugget,10);
 		B_GiveInvItems(self,other,itminugget,10);
@@ -191,7 +191,7 @@ FUNC VOID Info_Sld_8_Krautprobe_Info()
 	}
 	else
 	{
-		AI_Output (self, other,"Info_Sld_8_Krautprobe_No_Joint_08_00"); //Nejdøív mi uka drogu. ádnou nemáš, viï?
+		AI_Output (self, other,"Info_Sld_8_Krautprobe_No_Joint_08_00"); //NejdÅ™Ã­v mi ukaÅ¾ drogu. Å½Ã¡dnou nemÃ¡Å¡, viÄ?
 	};
 };
 	

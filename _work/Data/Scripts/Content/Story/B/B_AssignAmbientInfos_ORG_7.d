@@ -37,7 +37,7 @@ INSTANCE Info_Org_7_EinerVonEuchWerden (C_INFO) // E1
 	condition	= Info_Org_7_EinerVonEuchWerden_Condition;
 	information	= Info_Org_7_EinerVonEuchWerden_Info;
 	permanent	= 1;
-	description = "Co musÌm udÏlat, abych se mohl p¯idat k t·boru?";
+	description = "Co mus√≠m udƒõlat, abych se mohl p≈ôidat k t√°boru?";
 };                       
 
 FUNC INT Info_Org_7_EinerVonEuchWerden_Condition()
@@ -50,10 +50,10 @@ FUNC INT Info_Org_7_EinerVonEuchWerden_Condition()
 
 FUNC VOID Info_Org_7_EinerVonEuchWerden_Info()
 {
-	AI_Output(other,self,"Info_Org_7_EinerVonEuchWerden_15_00"); //Co musÌm udÏlat, abych se mohl p¯idat k t·boru?
-	AI_Output(self,other,"Info_Org_7_EinerVonEuchWerden_07_01"); //M˘ûeö se d·t k naöÌ tlupÏ. Ale nejd¯Ìv se musÌö postavit Gomezovi.
-	AI_Output(other,self,"Info_Org_7_EinerVonEuchWerden_15_02"); //Jak to m·m udÏlat?
-	AI_Output(self,other,"Info_Org_7_EinerVonEuchWerden_07_03"); //B˝t tebou, vzal bych nÏco d˘leûitÈho z StarÈho t·bora nebo ze StarÈho dolu a dal to Laresovi.
+	AI_Output(other,self,"Info_Org_7_EinerVonEuchWerden_15_00"); //Co mus√≠m udƒõlat, abych se mohl p≈ôidat k t√°boru?
+	AI_Output(self,other,"Info_Org_7_EinerVonEuchWerden_07_01"); //M≈Ø≈æe≈° se d√°t k na≈°√≠ tlupƒõ. Ale nejd≈ô√≠v se mus√≠≈° postavit Gomezovi.
+	AI_Output(other,self,"Info_Org_7_EinerVonEuchWerden_15_02"); //Jak to m√°m udƒõlat?
+	AI_Output(self,other,"Info_Org_7_EinerVonEuchWerden_07_03"); //B√Ωt tebou, vzal bych nƒõco d≈Øle≈æit√©ho z Star√©ho t√°bora nebo ze Star√©ho dolu a dal to Laresovi.
 	var C_NPC Lares;		Lares	= Hlp_GetNpc(Org_801_Lares);
 	Lares.aivar[AIV_FINDABLE] = TRUE;
 };
@@ -68,7 +68,7 @@ INSTANCE Info_Org_7_WichtigePersonen(C_INFO)
 	condition	= Info_Org_7_WichtigePersonen_Condition;
 	information	= Info_Org_7_WichtigePersonen_Info;
 	permanent	= 1;
-	description = "Kdo je v·ö v˘dce?";
+	description = "Kdo je v√°≈° v≈Ødce?";
 };                       
 
 FUNC INT Info_Org_7_WichtigePersonen_Condition()
@@ -78,9 +78,9 @@ FUNC INT Info_Org_7_WichtigePersonen_Condition()
 
 FUNC VOID Info_Org_7_WichtigePersonen_Info()
 {
-	AI_Output(other,self,"Info_Org_7_WichtigePersonen_15_00"); //Kdo je v·ö v˘dce?
-	AI_Output(self,other,"Info_Org_7_WichtigePersonen_07_01"); //Lares je hlava tlupy. VÏtöina lidÌ ho uzn·v·.
-	AI_Output(self,other,"Info_Org_7_WichtigePersonen_07_02"); //Ten n·m ale ne¯Ìk·, co dÏlat.
+	AI_Output(other,self,"Info_Org_7_WichtigePersonen_15_00"); //Kdo je v√°≈° v≈Ødce?
+	AI_Output(self,other,"Info_Org_7_WichtigePersonen_07_01"); //Lares je hlava tlupy. Vƒõt≈°ina lid√≠ ho uzn√°v√°.
+	AI_Output(self,other,"Info_Org_7_WichtigePersonen_07_02"); //Ten n√°m ale ne≈ô√≠k√°, co dƒõlat.
 	var C_NPC Lares;		Lares	= Hlp_GetNpc(Org_801_Lares);
 	Lares.aivar[AIV_FINDABLE] = TRUE;
 };
@@ -95,7 +95,7 @@ INSTANCE Info_Org_7_DasLager(C_INFO)
 	condition	= Info_Org_7_DasLager_Condition;
 	information	= Info_Org_7_DasLager_Info;
 	permanent	= 1;
-	description = "Co mi m˘ûeö ¯Ìci o t·bo¯e?";
+	description = "Co mi m≈Ø≈æe≈° ≈ô√≠ci o t√°bo≈ôe?";
 };                       
 
 FUNC INT Info_Org_7_DasLager_Condition()
@@ -105,10 +105,10 @@ FUNC INT Info_Org_7_DasLager_Condition()
 
 FUNC VOID Info_Org_7_DasLager_Info()
 {
-	AI_Output(other,self,"Info_Org_7_DasLager_15_00"); //Co mi m˘ûeö ¯Ìci o t·boru?
-	AI_Output(self,other,"Info_Org_7_DasLager_07_01"); //Je to jak·si komunita pro komunitu, jestli mi rozumÌö. Vöichni si dÏl·me, co chceme, ale je n·s tu tolik, ûe n·s Gomez jentak nevyhladÌ.
-	AI_Output(self,other,"Info_Org_7_DasLager_07_02"); //AËkoli je to p¯esnÏ to, co by nejradÏji udÏlal.
-	AI_Output(other,self,"Info_Org_7_DasLager_15_03"); //Co vlastnÏ m·te s Gomezem?
+	AI_Output(other,self,"Info_Org_7_DasLager_15_00"); //Co mi m≈Ø≈æe≈° ≈ô√≠ci o t√°boru?
+	AI_Output(self,other,"Info_Org_7_DasLager_07_01"); //Je to jak√°si komunita pro komunitu, jestli mi rozum√≠≈°. V≈°ichni si dƒõl√°me, co chceme, ale je n√°s tu tolik, ≈æe n√°s Gomez jentak nevyhlad√≠.
+	AI_Output(self,other,"Info_Org_7_DasLager_07_02"); //Aƒçkoli je to p≈ôesnƒõ to, co by nejradƒõji udƒõlal.
+	AI_Output(other,self,"Info_Org_7_DasLager_15_03"); //Co vlastnƒõ m√°te s Gomezem?
 	AI_Output(self,other,"Info_Org_7_DasLager_07_04"); //Okrademe ho!
 };
 
@@ -122,7 +122,7 @@ INSTANCE Info_Org_7_DieLage(C_INFO) // E1
 	condition	= Info_Org_7_DieLage_Condition;
 	information	= Info_Org_7_DieLage_Info;
 	permanent	= 1;
-	description = "Co se tu dÏje?";
+	description = "Co se tu dƒõje?";
 };                       
 
 FUNC INT Info_Org_7_DieLage_Condition()
@@ -132,10 +132,10 @@ FUNC INT Info_Org_7_DieLage_Condition()
 
 FUNC VOID Info_Org_7_DieLage_Info()
 {
-	AI_Output(other,self,"Info_Org_7_DieLage_15_00"); //Co se tu dÏje?
-	AI_Output(self,other,"Info_Org_7_DieLage_07_01"); //Tys tady asi jeötÏ nebyl, viÔ?
-	AI_Output(self,other,"Info_Org_7_DieLage_07_02"); //M·govÈ se uû lÈta chystajÌ k odst¯elenÌ rudnÈ haldy. ÿÌkajÌ, ûe uû to nebude dlouho trvat.
-	AI_Output(self,other,"Info_Org_7_DieLage_07_03"); //Tak se aspoÚ uk·ûe cesta. Kdyû se vezme v ˙vahu to mnoûstvÌ rudonosnÈ horniny, kterou ruda¯i tak dlouho shromaûÔovali.
+	AI_Output(other,self,"Info_Org_7_DieLage_15_00"); //Co se tu dƒõje?
+	AI_Output(self,other,"Info_Org_7_DieLage_07_01"); //Tys tady asi je≈°tƒõ nebyl, viƒè?
+	AI_Output(self,other,"Info_Org_7_DieLage_07_02"); //M√°gov√© se u≈æ l√©ta chystaj√≠ k odst≈ôelen√≠ rudn√© haldy. ≈ò√≠kaj√≠, ≈æe u≈æ to nebude dlouho trvat.
+	AI_Output(self,other,"Info_Org_7_DieLage_07_03"); //Tak se aspo≈à uk√°≈æe cesta. Kdy≈æ se vezme v √∫vahu to mno≈æstv√≠ rudonosn√© horniny, kterou ruda≈ôi tak dlouho shroma≈æƒèovali.
 };
 
 // *************************************************************************
@@ -148,7 +148,7 @@ INSTANCE Info_Org_7_Krautprobe (C_INFO) // E1
 	condition	= Info_Org_7_Krautprobe_Condition;
 	information	= Info_Org_7_Krautprobe_Info;
 	permanent	= 1;
-	description = "Chceö trochu drogy z baûin?";
+	description = "Chce≈° trochu drogy z ba≈æin?";
 };                       
 
 FUNC INT Info_Org_7_Krautprobe_Condition()
@@ -162,7 +162,7 @@ FUNC INT Info_Org_7_Krautprobe_Condition()
 
 FUNC VOID Info_Org_7_Krautprobe_Info()
 {
-	AI_Output(other,self,"Info_Org_7_Krautprobe_15_00"); //Chceö trochu drogy z baûin?
+	AI_Output(other,self,"Info_Org_7_Krautprobe_15_00"); //Chce≈° trochu drogy z ba≈æin?
 	
 	if ( (Npc_HasItems(other,ItMiJoint_1)>0) || (Npc_HasItems(other,ItMiJoint_2)>0) || (Npc_HasItems(other,ItMiJoint_3)>0) )
 	{
@@ -173,8 +173,8 @@ FUNC VOID Info_Org_7_Krautprobe_Info()
 		else if (Npc_HasItems(other,ItMiJoint_3))
 		{	B_GiveInvItems(other,self,ItMiJoint_3,1);	 };
 		
-		AI_Output(self,other,"Info_Org_7_Krautprobe_07_01"); //D·m ti za nÌ 10 nuget˘, tady jsou.
-		AI_Output(self,other,"Info_Org_7_Krautprobe_07_02"); //Aû se jÌ zase budeö pot¯ebovat zbavit, p¯ijÔ za mnou.
+		AI_Output(self,other,"Info_Org_7_Krautprobe_07_01"); //D√°m ti za n√≠ 10 nuget≈Ø, tady jsou.
+		AI_Output(self,other,"Info_Org_7_Krautprobe_07_02"); //A≈æ se j√≠ zase bude≈° pot≈ôebovat zbavit, p≈ôijƒè za mnou.
 		
 		CreateInvItems(self,itminugget,10);
 		B_GiveInvItems(self,other,itminugget,10);
@@ -183,7 +183,7 @@ FUNC VOID Info_Org_7_Krautprobe_Info()
 	}
 	else
 	{
-		AI_Output (self, other,"Info_Org_7_Krautprobe_No_Joint_07_00"); //Kde? é·dnou drogu tu nevidÌm.
+		AI_Output (self, other,"Info_Org_7_Krautprobe_No_Joint_07_00"); //Kde? ≈Ω√°dnou drogu tu nevid√≠m.
 	};
 };
 

@@ -20,7 +20,7 @@ FUNC INT DIA_Orry_PreExit_Condition()
 
 FUNC VOID DIA_Orry_PreExit_Info()
 {
-	AI_Output (self, other,"DIA_Orry_PreExit_06_00"); //Udìlal bys líp, kdyby ses do Starého tábora dostal celı!
+	AI_Output (self, other,"DIA_Orry_PreExit_06_00"); //UdÄ›lal bys lÃ­p, kdyby ses do StarÃ©ho tÃ¡bora dostal celÃ½!
 	AI_StopProcessInfos	( self );
 };
 
@@ -62,7 +62,7 @@ INSTANCE DIA_Orry_GuardGate (C_INFO)
 	condition		= DIA_Orry_GuardGate_Condition;
 	information		= DIA_Orry_GuardGate_Info;
 	permanent		= 0;
-	description		= "Co tady dìláš?"; 
+	description		= "Co tady dÄ›lÃ¡Å¡?"; 
 };
 
 FUNC INT DIA_Orry_GuardGate_Condition()
@@ -75,13 +75,13 @@ FUNC INT DIA_Orry_GuardGate_Condition()
 
 FUNC VOID DIA_Orry_GuardGate_Info()
 {
-	AI_Output (other, self,"DIA_Orry_GuardGate_15_00"); //Co tady dìláš?
-	AI_Output (self, other,"DIA_Orry_GuardGate_06_01"); //Zajišujeme, aby se nikdo nedostal do blízkosti místa vımìny. Hlavnì nikdo z tìch vrahounù z Nového tábora.
-	AI_Output (self, other,"DIA_Orry_GuardGate_06_02"); //Ty jsi ten novej, co ho dneska vyhodili, e jo?
-	AI_Output (other, self,"DIA_Orry_GuardGate_15_03"); //Jo, já.
-	AI_Output (self, other,"DIA_Orry_GuardGate_06_04"); //Pak udìláš nejlíp, kdy se budeš mít na pozoru pøed tìma chlapíkama z Nového tábora!
-	AI_Output (self, other,"DIA_Orry_GuardGate_06_05"); //Pracuju pro Starı tábor, zrovna tak jako ti ostatní, které vidíš poblí místa vımìny.
-	AI_Output (self, other,"DIA_Orry_GuardGate_06_06"); //Pøedpokládám, e jsi mluvil s Diegem...?
+	AI_Output (other, self,"DIA_Orry_GuardGate_15_00"); //Co tady dÄ›lÃ¡Å¡?
+	AI_Output (self, other,"DIA_Orry_GuardGate_06_01"); //ZajiÅ¡Å¥ujeme, aby se nikdo nedostal do blÃ­zkosti mÃ­sta vÃ½mÄ›ny. HlavnÄ› nikdo z tÄ›ch vrahounÅ¯ z NovÃ©ho tÃ¡bora.
+	AI_Output (self, other,"DIA_Orry_GuardGate_06_02"); //Ty jsi ten novej, co ho dneska vyhodili, Å¾e jo?
+	AI_Output (other, self,"DIA_Orry_GuardGate_15_03"); //Jo, jÃ¡.
+	AI_Output (self, other,"DIA_Orry_GuardGate_06_04"); //Pak udÄ›lÃ¡Å¡ nejlÃ­p, kdyÅ¾ se budeÅ¡ mÃ­t na pozoru pÅ™ed tÄ›ma chlapÃ­kama z NovÃ©ho tÃ¡bora!
+	AI_Output (self, other,"DIA_Orry_GuardGate_06_05"); //Pracuju pro StarÃ½ tÃ¡bor, zrovna tak jako ti ostatnÃ­, kterÃ© vidÃ­Å¡ poblÃ­Å¾ mÃ­sta vÃ½mÄ›ny.
+	AI_Output (self, other,"DIA_Orry_GuardGate_06_06"); //PÅ™edpoklÃ¡dÃ¡m, Å¾e jsi mluvil s Diegem...?
 	Info_ClearChoices	(DIA_Orry_GuardGate );
 	Info_AddChoice		(DIA_Orry_GuardGate,"Ne.",DIA_Orry_GuardGate_No);
 	Info_AddChoice		(DIA_Orry_GuardGate,"Ano.",DIA_Orry_GuardGate_Yes);
@@ -90,15 +90,15 @@ FUNC VOID DIA_Orry_GuardGate_Info()
 func void DIA_Orry_GuardGate_No()
 {
 	AI_Output (other, self,"DIA_Orry_GuardGate_No_15_00"); //Ne.
-	AI_Output (self, other,"DIA_Orry_GuardGate_No_06_01"); //Tak to udìlej! To on se stará o nováèky.
-	AI_Output (self, other,"DIA_Orry_GuardGate_No_06_02"); //Ví toho o kolonii hodnì - vìci, které jsou pro nováèky, jako jsi ty, dùleité.
+	AI_Output (self, other,"DIA_Orry_GuardGate_No_06_01"); //Tak to udÄ›lej! To on se starÃ¡ o novÃ¡Äky.
+	AI_Output (self, other,"DIA_Orry_GuardGate_No_06_02"); //VÃ­ toho o kolonii hodnÄ› - vÄ›ci, kterÃ© jsou pro novÃ¡Äky, jako jsi ty, dÅ¯leÅ¾itÃ©.
 	Info_ClearChoices	(DIA_Orry_GuardGate );
 };
 
 func void DIA_Orry_GuardGate_Yes()
 {
 	AI_Output (other, self,"DIA_Orry_GuardGate_Yes_15_00"); //Ano.
-	AI_Output (self, other,"DIA_Orry_GuardGate_Yes_06_01"); //Dobøe. Pak budeš vìdìt, co se tady všude dìje.
+	AI_Output (self, other,"DIA_Orry_GuardGate_Yes_06_01"); //DobÅ™e. Pak budeÅ¡ vÄ›dÄ›t, co se tady vÅ¡ude dÄ›je.
 	Info_ClearChoices	(DIA_Orry_GuardGate );
 };
 
@@ -113,7 +113,7 @@ INSTANCE DIA_Orry_NewCamp (C_INFO)
 	condition		= DIA_Orry_NewCamp_Condition;
 	information		= DIA_Orry_NewCamp_Info;
 	permanent		= 0;
-	description		= "Proè se mám mít na pozoru pøed chlapy z Nového tábora?"; 
+	description		= "ProÄ se mÃ¡m mÃ­t na pozoru pÅ™ed chlapy z NovÃ©ho tÃ¡bora?"; 
 };
 
 FUNC INT DIA_Orry_NewCamp_Condition()
@@ -126,9 +126,9 @@ FUNC INT DIA_Orry_NewCamp_Condition()
 
 FUNC VOID DIA_Orry_NewCamp_Info()
 {
-	AI_Output (other, self,"DIA_Orry_NewCamp_15_00"); //Proè se mám mít na pozoru pøed chlapy z Nového tábora?
-	AI_Output (self, other,"DIA_Orry_NewCamp_06_01"); //Starı tábor je ve srovnání s Novım táborem klidné a mírumilovné místo.
-	AI_Output (self, other,"DIA_Orry_NewCamp_06_02"); //Novı tábor nedostává ádné dodávky z vnìjšího svìta. Vìtšina tamìjších darebákù pak krade, co potøebuje.
+	AI_Output (other, self,"DIA_Orry_NewCamp_15_00"); //ProÄ se mÃ¡m mÃ­t na pozoru pÅ™ed chlapy z NovÃ©ho tÃ¡bora?
+	AI_Output (self, other,"DIA_Orry_NewCamp_06_01"); //StarÃ½ tÃ¡bor je ve srovnÃ¡nÃ­ s NovÃ½m tÃ¡borem klidnÃ© a mÃ­rumilovnÃ© mÃ­sto.
+	AI_Output (self, other,"DIA_Orry_NewCamp_06_02"); //NovÃ½ tÃ¡bor nedostÃ¡vÃ¡ Å¾Ã¡dnÃ© dodÃ¡vky z vnÄ›jÅ¡Ã­ho svÄ›ta. VÄ›tÅ¡ina tamÄ›jÅ¡Ã­ch darebÃ¡kÅ¯ pak krade, co potÅ™ebuje.
 };
 
 // **************************************************
@@ -142,7 +142,7 @@ INSTANCE DIA_Orry_OldCamp (C_INFO)
 	condition		= DIA_Orry_OldCamp_Condition;
 	information		= DIA_Orry_OldCamp_Info;
 	permanent		= 0;
-	description		= "A Starı tábor?"; 
+	description		= "A StarÃ½ tÃ¡bor?"; 
 };
 
 FUNC INT DIA_Orry_OldCamp_Condition()
@@ -155,9 +155,9 @@ FUNC INT DIA_Orry_OldCamp_Condition()
 
 FUNC VOID DIA_Orry_OldCamp_Info()
 {
-	AI_Output (other, self,"DIA_Orry_OldCamp_15_00"); //A Starı tábor?
-	AI_Output (self, other,"DIA_Orry_OldCamp_06_01"); //Rudobaroni mají všechno pod kontrolou. Hned po nich následují stráe a po nich Stíny. Kopáèi jsou a vespodu.
-	AI_Output (self, other,"DIA_Orry_OldCamp_06_02"); //Kadı novı pøíchozí zaèíná jako kopáè. Pokud se chceš stát nìèím lepším, musíš bıt nejprve pøijat mezi Stíny.
+	AI_Output (other, self,"DIA_Orry_OldCamp_15_00"); //A StarÃ½ tÃ¡bor?
+	AI_Output (self, other,"DIA_Orry_OldCamp_06_01"); //Rudobaroni majÃ­ vÅ¡echno pod kontrolou. Hned po nich nÃ¡sledujÃ­ strÃ¡Å¾e a po nich StÃ­ny. KopÃ¡Äi jsou aÅ¾ vespodu.
+	AI_Output (self, other,"DIA_Orry_OldCamp_06_02"); //KaÅ¾dÃ½ novÃ½ pÅ™Ã­chozÃ­ zaÄÃ­nÃ¡ jako kopÃ¡Ä. Pokud se chceÅ¡ stÃ¡t nÄ›ÄÃ­m lepÅ¡Ã­m, musÃ­Å¡ bÃ½t nejprve pÅ™ijat mezi StÃ­ny.
 };
 
 // **************************************************
@@ -171,7 +171,7 @@ INSTANCE DIA_Orry_Shore (C_INFO)
 	condition		= DIA_Orry_Shore_Condition;
 	information		= DIA_Orry_Shore_Info;
 	permanent		= 0;
-	description		= "Kdy jsem se sem dostal, jeden z tìch chlapù mì praštil do tváøe."; 
+	description		= "KdyÅ¾ jsem se sem dostal, jeden z tÄ›ch chlapÅ¯ mÄ› praÅ¡til do tvÃ¡Å™e."; 
 };
 
 FUNC INT DIA_Orry_Shore_Condition()
@@ -184,10 +184,10 @@ FUNC INT DIA_Orry_Shore_Condition()
 
 FUNC VOID DIA_Orry_Shore_Info()
 {
-	AI_Output (other, self,"DIA_Orry_Shore_15_00"); //Kdy jsem se sem dostal, jeden z tìch chlapù mì praštil do tváøe.
-	AI_Output (self, other,"DIA_Orry_Shore_06_01"); //Dìlají to všem nováèkùm. Øíkají tomu 'Kmotr'.
-	AI_Output (other, self,"DIA_Orry_Shore_15_02"); //Och. Jsou všichni ti chlapi ve Starém táboøe takoví?
-	AI_Output (self, other,"DIA_Orry_Shore_06_03"); //Je tam dost gaunerù. Ale kdy jim platíš za ochranu, nechají tì bıt.
+	AI_Output (other, self,"DIA_Orry_Shore_15_00"); //KdyÅ¾ jsem se sem dostal, jeden z tÄ›ch chlapÅ¯ mÄ› praÅ¡til do tvÃ¡Å™e.
+	AI_Output (self, other,"DIA_Orry_Shore_06_01"); //DÄ›lajÃ­ to vÅ¡em novÃ¡ÄkÅ¯m. Å˜Ã­kajÃ­ tomu 'Kmotr'.
+	AI_Output (other, self,"DIA_Orry_Shore_15_02"); //Och. Jsou vÅ¡ichni ti chlapi ve StarÃ©m tÃ¡boÅ™e takovÃ­?
+	AI_Output (self, other,"DIA_Orry_Shore_06_03"); //Je tam dost gaunerÅ¯. Ale kdyÅ¾ jim platÃ­Å¡ za ochranu, nechajÃ­ tÄ› bÃ½t.
 };
 
 // **************************************************
@@ -201,7 +201,7 @@ INSTANCE DIA_Orry_Woman (C_INFO)
 	condition		= DIA_Orry_Woman_Condition;
 	information		= DIA_Orry_Woman_Info;
 	permanent		= 0;
-	description		= "Vidìl jsem, jak dolù se zboím poslali i nìjakou enu."; 
+	description		= "VidÄ›l jsem, jak dolÅ¯ se zboÅ¾Ã­m poslali i nÄ›jakou Å¾enu."; 
 };
 
 FUNC INT DIA_Orry_Woman_Condition()
@@ -214,11 +214,11 @@ FUNC INT DIA_Orry_Woman_Condition()
 
 FUNC VOID DIA_Orry_Woman_Info()
 {
-	AI_Output (other, self,"DIA_Orry_Woman_15_00"); //Vidìl jsem, jak dolù se zboím poslali i nìjakou enu.
-	AI_Output (self, other,"DIA_Orry_Woman_06_01"); //Jistì, Rudobaroni dostanou všechno, co se jim zachce.
-	AI_Output (other, self,"DIA_Orry_Woman_15_02"); //Chceš tím øíci, e Král vymìòuje eny za rudu?
-	AI_Output (self, other,"DIA_Orry_Woman_06_03"); //Jsou to také samozøejmì odsouzené trestankynì. Ale pokud si o nì Gomez neøekne, sedí zamèené nìkde ve vìzení.
-	AI_Output (self, other,"DIA_Orry_Woman_06_04"); //Nevím, co je horší...
+	AI_Output (other, self,"DIA_Orry_Woman_15_00"); //VidÄ›l jsem, jak dolÅ¯ se zboÅ¾Ã­m poslali i nÄ›jakou Å¾enu.
+	AI_Output (self, other,"DIA_Orry_Woman_06_01"); //JistÄ›, Rudobaroni dostanou vÅ¡echno, co se jim zachce.
+	AI_Output (other, self,"DIA_Orry_Woman_15_02"); //ChceÅ¡ tÃ­m Å™Ã­ci, Å¾e KrÃ¡l vymÄ›Åˆuje Å¾eny za rudu?
+	AI_Output (self, other,"DIA_Orry_Woman_06_03"); //Jsou to takÃ© samozÅ™ejmÄ› odsouzenÃ© trestankynÄ›. Ale pokud si o nÄ› Gomez neÅ™ekne, sedÃ­ zamÄenÃ© nÄ›kde ve vÄ›zenÃ­.
+	AI_Output (self, other,"DIA_Orry_Woman_06_04"); //NevÃ­m, co je horÅ¡Ã­...
 };
 
 // **************************************************
@@ -232,7 +232,7 @@ INSTANCE DIA_Orry_Waffe (C_INFO)
 	condition		= DIA_Orry_Waffe_Condition;
 	information		= DIA_Orry_Waffe_Info;
 	permanent		= 0;
-	description		= "Hledám nìjakou zbraò..."; 
+	description		= "HledÃ¡m nÄ›jakou zbraÅˆ..."; 
 };
 
 FUNC INT DIA_Orry_Waffe_Condition()
@@ -245,10 +245,10 @@ FUNC INT DIA_Orry_Waffe_Condition()
 
 FUNC VOID DIA_Orry_Waffe_Info()
 {
-	AI_Output (other, self,"DIA_Orry_Waffe_15_00"); //Hledám nìjakou zbraò...
-	AI_Output (self, other,"DIA_Orry_Waffe_06_01"); //V uzavøeném dolu za kaòonem by mìly bıt nìjaké staré zbranì.
-	AI_Output (self, other,"DIA_Orry_Waffe_06_02"); //Nezaèínej ale válku, ani bys mìl jinou zbraò ne rezavı krumpáè - tyhle vìci jsou pomalé a tìké.
-	AI_Output (self, other,"DIA_Orry_Waffe_06_03"); //Nezkušenı bojovník by je mìl pouít jen v nouzi.
+	AI_Output (other, self,"DIA_Orry_Waffe_15_00"); //HledÃ¡m nÄ›jakou zbraÅˆ...
+	AI_Output (self, other,"DIA_Orry_Waffe_06_01"); //V uzavÅ™enÃ©m dolu za kaÅˆonem by mÄ›ly bÃ½t nÄ›jakÃ© starÃ© zbranÄ›.
+	AI_Output (self, other,"DIA_Orry_Waffe_06_02"); //NezaÄÃ­nej ale vÃ¡lku, aniÅ¾ bys mÄ›l jinou zbraÅˆ neÅ¾ rezavÃ½ krumpÃ¡Ä - tyhle vÄ›ci jsou pomalÃ© a tÄ›Å¾kÃ©.
+	AI_Output (self, other,"DIA_Orry_Waffe_06_03"); //NezkuÅ¡enÃ½ bojovnÃ­k by je mÄ›l pouÅ¾Ã­t jen v nouzi.
 	
 };
 

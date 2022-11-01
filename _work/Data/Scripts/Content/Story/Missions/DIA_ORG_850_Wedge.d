@@ -47,8 +47,8 @@ FUNC int  DIA_Wedge_Psst_Condition()
 func void  DIA_Wedge_Psst_Info()
 {
 	AI_Output (self, other,"DIA_Wedge_Psst_05_00"); //Pssss... hej, ty!
-	AI_Output (other, self,"DIA_Wedge_Psst_15_01"); //Kdo?... Já?
-	AI_Output (self, other,"DIA_Wedge_Psst_05_02"); //Pøesnì tak... Pojï sem!
+	AI_Output (other, self,"DIA_Wedge_Psst_15_01"); //Kdo?... JÃ¡?
+	AI_Output (self, other,"DIA_Wedge_Psst_05_02"); //PÅ™esnÄ› tak... PojÄ sem!
 	AI_StopProcessInfos	(self);
 };
 
@@ -63,7 +63,7 @@ instance  DIA_Wedge_Hello (C_INFO)
 	information		= DIA_Wedge_Hello_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Co chceš?"; 
+	description		= "Co chceÅ¡?"; 
 };
 
 FUNC int  DIA_Wedge_Hello_Condition()
@@ -76,10 +76,10 @@ FUNC int  DIA_Wedge_Hello_Condition()
 };
 FUNC void  DIA_Wedge_Hello_Info()
 {
-	AI_Output (other, self,"DIA_Wedge_Hello_15_00"); //Co chceš?
-	AI_Output (self, other,"DIA_Wedge_Hello_05_01"); //Právì jsi sem pøišel, viï? Hned jsem si toho všiml.
-	AI_Output (self, other,"DIA_Wedge_Hello_05_02"); //Je spousta vìcí, které potøebuješ vìdìt. Mùu tì pár vìcí nauèit.
-	AI_Output (self, other,"DIA_Wedge_Hello_05_03"); //Mimo jiné musíš dávat pozor na to, s kım mluvíš. Tak napøíklad Butch - to je ten chlapík támhle, vedle táborového ohnì... Dávej si na nìj pozor!
+	AI_Output (other, self,"DIA_Wedge_Hello_15_00"); //Co chceÅ¡?
+	AI_Output (self, other,"DIA_Wedge_Hello_05_01"); //PrÃ¡vÄ› jsi sem pÅ™iÅ¡el, viÄ? Hned jsem si toho vÅ¡iml.
+	AI_Output (self, other,"DIA_Wedge_Hello_05_02"); //Je spousta vÄ›cÃ­, kterÃ© potÅ™ebujeÅ¡ vÄ›dÄ›t. MÅ¯Å¾u tÄ› pÃ¡r vÄ›cÃ­ nauÄit.
+	AI_Output (self, other,"DIA_Wedge_Hello_05_03"); //Mimo jinÃ© musÃ­Å¡ dÃ¡vat pozor na to, s kÃ½m mluvÃ­Å¡. Tak napÅ™Ã­klad Butch - to je ten chlapÃ­k tÃ¡mhle, vedle tÃ¡borovÃ©ho ohnÄ›... DÃ¡vej si na nÄ›j pozor!
 };  
 
 // ****************************************
@@ -107,7 +107,7 @@ FUNC int  DIA_Wedge_WarnsOfButch_Condition()
 FUNC void  DIA_Wedge_WarnsOfButch_Info()
 {
 	AI_Output (other, self,"DIA_Wedge_WarnsOfButch_15_00"); //Co je s Butchem?
-	AI_Output (self, other,"DIA_Wedge_WarnsOfButch_05_01"); //Má ve zvyku mlátit nováèky. Radìji se mu vyhıbej.
+	AI_Output (self, other,"DIA_Wedge_WarnsOfButch_05_01"); //MÃ¡ ve zvyku mlÃ¡tit novÃ¡Äky. RadÄ›ji se mu vyhÃ½bej.
 	//AI_Output (self, other,"DIA_Wedge_WarnsOfButch_05_02"); //Also, geh ihm am besten aus dem Weg.//***Doppelt***
 };  
 
@@ -122,7 +122,7 @@ INSTANCE DIA_Wedge_Lehrer (C_INFO)
 	condition		= DIA_Wedge_Lehrer_Condition;
 	information		= DIA_Wedge_Lehrer_Info;
 	permanent		= 1;
-	description		= "Co mì mùeš nauèit?"; 
+	description		= "Co mÄ› mÅ¯Å¾eÅ¡ nauÄit?"; 
 };
 
 FUNC INT DIA_Wedge_Lehrer_Condition()
@@ -138,11 +138,11 @@ FUNC VOID DIA_Wedge_Lehrer_Info()
 	if (log_wedgelearn == FALSE)
 	{
 		Log_CreateTopic   	(GE_TeacherNC,LOG_NOTE);
-		B_LogEntry			(GE_TeacherNC,"Bandita Wedge mì mùe uèit dovednostem PLÍENÍ, VYBÍRÁNÍ KAPES a PÁÈENÍ ZÁMKÙ.");
+		B_LogEntry			(GE_TeacherNC,"Bandita Wedge mÄ› mÅ¯Å¾e uÄit dovednostem PLÃÅ½ENÃ, VYBÃRÃNÃ KAPES a PÃÄŒENÃ ZÃMKÅ®.");
 		log_wedgelearn = TRUE ;
 	};
-	AI_Output (other, self,"DIA_Wedge_Lehrer_15_00"); //Co mì mùeš nauèit?
-	AI_Output (self, other,"DIA_Wedge_Lehrer_05_01"); //To záleí... Co chceš umìt?
+	AI_Output (other, self,"DIA_Wedge_Lehrer_15_00"); //Co mÄ› mÅ¯Å¾eÅ¡ nauÄit?
+	AI_Output (self, other,"DIA_Wedge_Lehrer_05_01"); //To zÃ¡leÅ¾Ã­... Co chceÅ¡ umÄ›t?
 	
 
 	Info_ClearChoices	(DIA_Wedge_Lehrer );
@@ -172,65 +172,65 @@ FUNC VOID DIA_Wedge_Lehrer_Info()
 
 func void DIA_Wedge_Lehrer_Schleichen()
 {
-	AI_Output (other, self,"DIA_Wedge_Lehrer_Schleichen_15_00"); //Chci se nauèit plíit.
+	AI_Output (other, self,"DIA_Wedge_Lehrer_Schleichen_15_00"); //Chci se nauÄit plÃ­Å¾it.
 	if (B_GiveSkill(other, NPC_TALENT_SNEAK, 1, LPCOST_TALENT_SNEAK))
 	{
-		AI_Output (self, other,"DIA_Wedge_Lehrer_Schleichen_05_01"); //To je záleitost udrení rovnováhy. Také se musíš nauèit ovládat svùj dech.
-		AI_Output (self, other,"DIA_Wedge_Lehrer_Schleichen_05_02"); //Dávej pozor na drení tìla a nikdo tvùj pohyb neuslyší...
+		AI_Output (self, other,"DIA_Wedge_Lehrer_Schleichen_05_01"); //To je zÃ¡leÅ¾itost udrÅ¾enÃ­ rovnovÃ¡hy. TakÃ© se musÃ­Å¡ nauÄit ovlÃ¡dat svÅ¯j dech.
+		AI_Output (self, other,"DIA_Wedge_Lehrer_Schleichen_05_02"); //DÃ¡vej pozor na drÅ¾enÃ­ tÄ›la a nikdo tvÅ¯j pohyb neuslyÅ¡Ã­...
 	};
 };
 
 func void DIA_Wedge_Lehrer_Lockpick()
 {
-	AI_Output (other, self,"DIA_Wedge_Lehrer_Lockpick_15_00"); //Jak mùu vylepšit své umìní v otevírání zámkù?
+	AI_Output (other, self,"DIA_Wedge_Lehrer_Lockpick_15_00"); //Jak mÅ¯Å¾u vylepÅ¡it svÃ© umÄ›nÃ­ v otevÃ­rÃ¡nÃ­ zÃ¡mkÅ¯?
 	
 	if (B_GiveSkill(other, NPC_TALENT_PICKLOCK, 1, LPCOST_TALENT_PICKLOCK_1))
 	{
-		AI_Output (self, other,"DIA_Wedge_Lehrer_Lockpick_05_01"); //To bys rád vìdìl, co? Není tìké s tím zaèít.
-		AI_Output (self, other,"DIA_Wedge_Lehrer_Lockpick_05_02"); //Pøedevším se musíš ujistit, e se tvùj paklíè nezlomí.
-		AI_Output (self, other,"DIA_Wedge_Lehrer_Lockpick_05_03"); //Kdy budeš v budoucnu trochu trpìlivìjší, uvidíš, e nebudeš potøebovat tolik paklíèù!
+		AI_Output (self, other,"DIA_Wedge_Lehrer_Lockpick_05_01"); //To bys rÃ¡d vÄ›dÄ›l, co? NenÃ­ tÄ›Å¾kÃ© s tÃ­m zaÄÃ­t.
+		AI_Output (self, other,"DIA_Wedge_Lehrer_Lockpick_05_02"); //PÅ™edevÅ¡Ã­m se musÃ­Å¡ ujistit, Å¾e se tvÅ¯j paklÃ­Ä nezlomÃ­.
+		AI_Output (self, other,"DIA_Wedge_Lehrer_Lockpick_05_03"); //KdyÅ¾ budeÅ¡ v budoucnu trochu trpÄ›livÄ›jÅ¡Ã­, uvidÃ­Å¡, Å¾e nebudeÅ¡ potÅ™ebovat tolik paklÃ­ÄÅ¯!
 	};
 };
 
 func void DIA_Wedge_Lehrer_Lockpick2()
 {
-	AI_Output (other, self,"DIA_Wedge_Lehrer_Lockpick2_15_00"); //Jak se ze mì stane odborník na vylamování zámkù?
+	AI_Output (other, self,"DIA_Wedge_Lehrer_Lockpick2_15_00"); //Jak se ze mÄ› stane odbornÃ­k na vylamovÃ¡nÃ­ zÃ¡mkÅ¯?
 	
 	if (B_GiveSkill(other, NPC_TALENT_PICKLOCK, 2, LPCOST_TALENT_PICKLOCK_2))
 	{
-		AI_Output (self, other,"DIA_Wedge_Lehrer_Lockpick2_05_01"); //Jedinì kdy získáš nìjaké zkušenosti, budeš moci øíci, jestli se paklíè zlomí. Vydává jinı zvuk!
-		AI_Output (self, other,"DIA_Wedge_Lehrer_Lockpick2_05_02"); //Myslím, e to máš. Nauè se poslouchat to jemné cvaknutí zámku a pak u nebudeš pøicházet o tolik paklíèù.
-		AI_Output (self, other,"DIA_Wedge_Lehrer_Lockpick2_05_03"); //Odborník v tomhle oboru má velkou šanci, e otevøe zámek, ani by zlomil svùj paklíè.
+		AI_Output (self, other,"DIA_Wedge_Lehrer_Lockpick2_05_01"); //JedinÄ› kdyÅ¾ zÃ­skÃ¡Å¡ nÄ›jakÃ© zkuÅ¡enosti, budeÅ¡ moci Å™Ã­ci, jestli se paklÃ­Ä zlomÃ­. VydÃ¡vÃ¡ jinÃ½ zvuk!
+		AI_Output (self, other,"DIA_Wedge_Lehrer_Lockpick2_05_02"); //MyslÃ­m, Å¾e to mÃ¡Å¡. NauÄ se poslouchat to jemnÃ© cvaknutÃ­ zÃ¡mku a pak uÅ¾ nebudeÅ¡ pÅ™ichÃ¡zet o tolik paklÃ­ÄÅ¯.
+		AI_Output (self, other,"DIA_Wedge_Lehrer_Lockpick2_05_03"); //OdbornÃ­k v tomhle oboru mÃ¡ velkou Å¡anci, Å¾e otevÅ™e zÃ¡mek, aniÅ¾ by zlomil svÅ¯j paklÃ­Ä.
 	};
 };
 
 func void DIA_Wedge_Lehrer_Pickpocket()
 {
-	AI_Output (other, self,"DIA_Wedge_Lehrer_PICKPOCKET_15_00"); //Chci se stát zbìhlım kapsáøem.
+	AI_Output (other, self,"DIA_Wedge_Lehrer_PICKPOCKET_15_00"); //Chci se stÃ¡t zbÄ›hlÃ½m kapsÃ¡Å™em.
 	if (Npc_GetTalentSkill(other, NPC_TALENT_SNEAK) == 1)
 	{
 		if (B_GiveSkill(other, NPC_TALENT_PICKPOCKET, 1, LPCOST_TALENT_PICKPOCKET_1))
 		{
-			AI_Output (self, other,"DIA_Wedge_Lehrer_PICKPOCKET_05_01"); //Take chceš pár lidem odlehèit o jejich majetek? Dobrá teda.
-			AI_Output (self, other,"DIA_Wedge_Lehrer_PICKPOCKET_05_02"); //Nauèím tì, jak zlepšit své umìní, ale pøesto bude dost pravdìpodobné, e tì pøitom chytnou.
-			AI_Output (self, other,"DIA_Wedge_Lehrer_PICKPOCKET_05_03"); //Mìl bys to zkoušet pouze tehdy, a nebude kolem nikdo, ne ty a tvoje obì.
-			AI_Output (self, other,"DIA_Wedge_Lehrer_PICKPOCKET_05_04"); //Jedinì odborník dokáe vzít lidem vìci z kapes, ani by si toho všimli!
+			AI_Output (self, other,"DIA_Wedge_Lehrer_PICKPOCKET_05_01"); //TakÅ¾e chceÅ¡ pÃ¡r lidem odlehÄit o jejich majetek? DobrÃ¡ teda.
+			AI_Output (self, other,"DIA_Wedge_Lehrer_PICKPOCKET_05_02"); //NauÄÃ­m tÄ›, jak zlepÅ¡it svÃ© umÄ›nÃ­, ale pÅ™esto bude dost pravdÄ›podobnÃ©, Å¾e tÄ› pÅ™itom chytnou.
+			AI_Output (self, other,"DIA_Wedge_Lehrer_PICKPOCKET_05_03"); //MÄ›l bys to zkouÅ¡et pouze tehdy, aÅ¾ nebude kolem nikdo, neÅ¾ ty a tvoje obÄ›Å¥.
+			AI_Output (self, other,"DIA_Wedge_Lehrer_PICKPOCKET_05_04"); //JedinÄ› odbornÃ­k dokÃ¡Å¾e vzÃ­t lidem vÄ›ci z kapes, aniÅ¾ by si toho vÅ¡imli!
 		};
 	}
 	else
 	{
-		AI_Output (self, other,"DIA_Wedge_lehrer_Pickpocket_05_05"); //Zapomeò na to! Nikdy z tebe nebude zkušenı zlodìj, dokud se nebudeš umìt plíit.
+		AI_Output (self, other,"DIA_Wedge_lehrer_Pickpocket_05_05"); //ZapomeÅˆ na to! Nikdy z tebe nebude zkuÅ¡enÃ½ zlodÄ›j, dokud se nebudeÅ¡ umÄ›t plÃ­Å¾it.
 	};
 };
 
 func void DIA_Wedge_Lehrer_Pickpocket2()
 {
-	AI_Output (other, self,"DIA_Wedge_Lehrer_Pickpocket2_15_00"); //Chci se stát kapsáøskım odborníkem!
+	AI_Output (other, self,"DIA_Wedge_Lehrer_Pickpocket2_15_00"); //Chci se stÃ¡t kapsÃ¡Å™skÃ½m odbornÃ­kem!
 	
 	if (B_GiveSkill(other, NPC_TALENT_PICKPOCKET, 2, LPCOST_TALENT_PICKPOCKET_2))
 	{		
-		AI_Output (self, other,"DIA_Wedge_Lehrer_Pickpocket2_05_01"); //Myslím, e jsi pokroèil tak daleko, e tì mùu nauèit poslední triky tohohle øemesla.
-		AI_Output (self, other,"DIA_Wedge_Lehrer_Pickpocket2_05_02"); //Mìl bys ale vìdìt, e i ten nejlepší mùe bıt nìkdy pøistien.
+		AI_Output (self, other,"DIA_Wedge_Lehrer_Pickpocket2_05_01"); //MyslÃ­m, Å¾e jsi pokroÄil tak daleko, Å¾e tÄ› mÅ¯Å¾u nauÄit poslednÃ­ triky tohohle Å™emesla.
+		AI_Output (self, other,"DIA_Wedge_Lehrer_Pickpocket2_05_02"); //MÄ›l bys ale vÄ›dÄ›t, Å¾e i ten nejlepÅ¡Ã­ mÅ¯Å¾e bÃ½t nÄ›kdy pÅ™istiÅ¾en.
 		AI_Output (self, other,"DIA_Wedge_Lehrer_Pickpocket2_05_03"); //Opatruj se.
 	};
 };

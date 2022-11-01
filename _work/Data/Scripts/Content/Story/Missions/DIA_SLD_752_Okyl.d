@@ -20,7 +20,7 @@ FUNC int DIA_SLD_752_OKYL_INTRO_CONDITION()
 
 func void DIA_SLD_752_OKYL_INTRO_INFO()
 {
-	AI_Output (self, other,"DIA_SLD_752_OKYL_INTRO_INFO_11_01"); //Hej, ty! Ty nepat¯Ìö k m˝m muû˘m. Co tady dÏl·ö?
+	AI_Output (self, other,"DIA_SLD_752_OKYL_INTRO_INFO_11_01"); //Hej, ty! Ty nepat≈ô√≠≈° k m√Ωm mu≈æ≈Øm. Co tady dƒõl√°≈°?
 };
 
 //-------------------- Exit -----------------------------
@@ -33,7 +33,7 @@ instance DIA_SLD_752_OKYL_EXIT (C_INFO)
 	information		= DIA_SLD_752_OKYL_EXIT_INFO;
 	important		= 0;
 	permanent		= 1;
-	description 	= "MusÌm jÌt d·l.";
+	description 	= "Mus√≠m j√≠t d√°l.";
 };
 
 FUNC int DIA_SLD_752_OKYL_EXIT_CONDITION()
@@ -43,8 +43,8 @@ FUNC int DIA_SLD_752_OKYL_EXIT_CONDITION()
 
 func void DIA_SLD_752_OKYL_EXIT_INFO()
 {
-	AI_Output (other, self,"DIA_SLD_752_OKYL_EXIT_INFO_15_01"); //MusÌm jÌt d·l.
-	AI_Output (self, other,"DIA_SLD_752_OKYL_EXIT_INFO_11_02");//Nech mÏ b˝t.
+	AI_Output (other, self,"DIA_SLD_752_OKYL_EXIT_INFO_15_01"); //Mus√≠m j√≠t d√°l.
+	AI_Output (self, other,"DIA_SLD_752_OKYL_EXIT_INFO_11_02");//Nech mƒõ b√Ωt.
 	AI_StopProcessInfos	( self );
 };
 
@@ -57,7 +57,7 @@ instance DIA_SLD_752_OKYL_UMSEHEN (C_INFO)
 	information		= DIA_SLD_752_OKYL_UMSEHEN_INFO;
 	important		= 0;
 	permanent		= 0;
-	description 	= "Jen se tu porozhlÈdnu.";
+	description 	= "Jen se tu porozhl√©dnu.";
 };
 
 FUNC int DIA_SLD_752_OKYL_UMSEHEN_CONDITION()
@@ -67,8 +67,8 @@ FUNC int DIA_SLD_752_OKYL_UMSEHEN_CONDITION()
 
 func void DIA_SLD_752_OKYL_UMSEHEN_INFO()
 {
-	AI_Output (other, self,"DIA_SLD_752_OKYL_UMSEHEN_INFO_15_01"); //Jen se tu porozhlÈdnu.
-	AI_Output (self, other,"DIA_SLD_752_OKYL_UMSEHEN_INFO_11_02");//D·vej pozor, aby ses tady v KotlinÏ nedostal do û·dnÈho malÈru, jinak se dostaneö do hrobu rychleji, neû by ses nad·l.
+	AI_Output (other, self,"DIA_SLD_752_OKYL_UMSEHEN_INFO_15_01"); //Jen se tu porozhl√©dnu.
+	AI_Output (self, other,"DIA_SLD_752_OKYL_UMSEHEN_INFO_11_02");//D√°vej pozor, aby ses tady v Kotlinƒõ nedostal do ≈æ√°dn√©ho mal√©ru, jinak se dostane≈° do hrobu rychleji, ne≈æ by ses nad√°l.
 };
 
 //--------------------- Wer bist Du -----------------------------
@@ -91,7 +91,7 @@ FUNC int DIA_SLD_752_OKYL_WERBISTDU_CONDITION()
 func void DIA_SLD_752_OKYL_WERBISTDU_INFO()
 {
 	AI_Output (other, self,"DIA_SLD_752_OKYL_WERBISTDU_INFO_15_01"); //Kdo jsi?
-	AI_Output (self, other,"DIA_SLD_752_OKYL_WERBISTDU_INFO_11_02");//Jsem Okyl. Jsem öÈf Kotliny.
+	AI_Output (self, other,"DIA_SLD_752_OKYL_WERBISTDU_INFO_11_02");//Jsem Okyl. Jsem ≈°√©f Kotliny.
 
 };
 
@@ -104,7 +104,7 @@ instance DIA_SLD_752_OKYL_INMINE (C_INFO)
 	information		= DIA_SLD_752_OKYL_INMINE_INFO;
 	important		= 0;
 	permanent		= 0;
-	description 	= "ChtÏl jsem se jednom podÌvat do dolu.";
+	description 	= "Chtƒõl jsem se jednom pod√≠vat do dolu.";
 };
 
 FUNC int DIA_SLD_752_OKYL_INMINE_CONDITION()
@@ -114,10 +114,10 @@ FUNC int DIA_SLD_752_OKYL_INMINE_CONDITION()
 
 func void DIA_SLD_752_OKYL_INMINE_INFO()
 {
-	AI_Output (other, self,"DIA_SLD_752_OKYL_INMINE_INFO_15_01"); //ChtÏl jsem se jednom podÌvat do dolu.
-	AI_Output (self, other,"DIA_SLD_752_OKYL_INMINE_INFO_11_02");//Och, jen se tak proch·zet po dolu.
-	AI_Output (self, other,"DIA_SLD_752_OKYL_INMINE_INFO_11_03");//VidÌm, ûe nem·ö p¯edstavu, jak to tady chodÌ. Bez mojeho svolenÌ do dolu nevkroËÌ ani noha.
-	AI_Output (self, other,"DIA_SLD_752_OKYL_INMINE_INFO_11_04");//Provûdy si zapamatuj: kdokoliv vstoupÌ do dolu nebo do str·ûnice bez mÈho svolenÌ, je mrtv˝ muû!
+	AI_Output (other, self,"DIA_SLD_752_OKYL_INMINE_INFO_15_01"); //Chtƒõl jsem se jednom pod√≠vat do dolu.
+	AI_Output (self, other,"DIA_SLD_752_OKYL_INMINE_INFO_11_02");//Och, jen se tak proch√°zet po dolu.
+	AI_Output (self, other,"DIA_SLD_752_OKYL_INMINE_INFO_11_03");//Vid√≠m, ≈æe nem√°≈° p≈ôedstavu, jak to tady chod√≠. Bez mojeho svolen√≠ do dolu nevkroƒç√≠ ani noha.
+	AI_Output (self, other,"DIA_SLD_752_OKYL_INMINE_INFO_11_04");//Prov≈ædy si zapamatuj: kdokoliv vstoup√≠ do dolu nebo do str√°≈ænice bez m√©ho svolen√≠, je mrtv√Ω mu≈æ!
 };
 
 //----------------------- Erlaubniss kriegen -------------------------
@@ -129,7 +129,7 @@ instance DIA_SLD_752_OKYL_PERMIT (C_INFO)
 	information		= DIA_SLD_752_OKYL_PERMIT_INFO;
 	important		= 0;
 	permanent		= 0;
-	description 	= "Dostanu povolenÌ jÌt dovnit¯?";
+	description 	= "Dostanu povolen√≠ j√≠t dovnit≈ô?";
 };
 
 FUNC int DIA_SLD_752_OKYL_PERMIT_CONDITION()
@@ -142,8 +142,8 @@ FUNC int DIA_SLD_752_OKYL_PERMIT_CONDITION()
 
 func void DIA_SLD_752_OKYL_PERMIT_INFO()
 {
-	AI_Output (other, self,"DIA_SLD_752_OKYL_PERMIT_INFO_15_01");//Dostanu povolenÌ jÌt dovnit¯?
-	AI_Output (self, other,"DIA_SLD_752_OKYL_PERMIT_INFO_11_02");//JeötÏ nevÌm. ProË bych tÏ mÏl pouötÏt do dolu?
-	AI_Output (self, other,"DIA_SLD_752_OKYL_PERMIT_INFO_11_03");//TeÔ zmiz, m·m d˘leûitÏjöÌ vÏci na pr·ci.
+	AI_Output (other, self,"DIA_SLD_752_OKYL_PERMIT_INFO_15_01");//Dostanu povolen√≠ j√≠t dovnit≈ô?
+	AI_Output (self, other,"DIA_SLD_752_OKYL_PERMIT_INFO_11_02");//Je≈°tƒõ nev√≠m. Proƒç bych tƒõ mƒõl pou≈°tƒõt do dolu?
+	AI_Output (self, other,"DIA_SLD_752_OKYL_PERMIT_INFO_11_03");//Teƒè zmiz, m√°m d≈Øle≈æitƒõj≈°√≠ vƒõci na pr√°ci.
 	AI_StopProcessInfos (self);
 };

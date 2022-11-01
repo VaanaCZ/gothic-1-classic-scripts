@@ -32,7 +32,7 @@ INSTANCE MENU_OPT_VIDEO(C_MENU_DEF)
 
 INSTANCE MENUITEM_VID_HEADLINE(C_MENU_ITEM_DEF) 
 {
-	text[0]		=	"NASTAVENÕ GRAFICK…HO ADAPT…RU";
+	text[0]		=	"NASTAVEN√ç GRAFICK√âHO ADAPT√âRU";
 	type		=	MENU_ITEM_TEXT;
 	// Position und Dimension	
 	posx		=	0;		posy		=	MENU_TITLE_Y;
@@ -50,8 +50,8 @@ INSTANCE MENUITEM_VID_HEADLINE(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_VID_DEVICE(C_MENU_ITEM_DEF)
 {
 	backpic		=	MENU_ITEM_BACK_PIC;
-	text[0]		=	"Graf. adaptÈr";
-	text[1]		=	"Po provedenÌ tÈto volby je t¯eba znovu spustit hru Gothic"; // Kommentar
+	text[0]		=	"Graf. adapt√©r";
+	text[1]		=	"Po proveden√≠ t√©to volby je t≈ôeba znovu spustit hru Gothic"; // Kommentar
 	
 	// Position und Dimension	
 	posx		=	1000;	posy		=	MENU_START_Y + MENU_DY*0;
@@ -87,8 +87,8 @@ INSTANCE MENUITEM_VID_DEVICE_CHOICE(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_VID_RESOLUTION(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	text[0]		= "RozliöenÌ";
-	text[1]		= "PotvrÔte rozliöenÌ stiskem ENTER."; // Kommentar
+	text[0]		= "Rozli≈°en√≠";
+	text[1]		= "Potvrƒète rozli≈°en√≠ stiskem ENTER."; // Kommentar
 	
 	// Position und Dimension	
 	posx		= 1000;		posy		= MENU_START_Y + MENU_DY*1;
@@ -194,8 +194,8 @@ INSTANCE MENUITEM_VID_CONTRAST_SLIDER(C_MENU_ITEM_DEF)
 instance MENUITEM_VID_GAMMA(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	text[0]		= "Gama k¯ivka";
-	text[1]		= "Gama k¯ivka"; // Kommentar
+	text[0]		= "Gama k≈ôivka";
+	text[1]		= "Gama k≈ôivka"; // Kommentar
 	
 	// Position und Dimension	
 	posx		=	1000;	posy		=	MENU_START_Y + MENU_DY*5;
@@ -227,7 +227,7 @@ INSTANCE MENUITEM_VID_GAMMA_SLIDER(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_VID_BACK(C_MENU_ITEM_DEF)
 {
 	backpic		=	MENU_ITEM_BACK_PIC;
-	text[0]		=	"ZpÏt";
+	text[0]		=	"Zpƒõt";
 	// Position und Dimension	
 	posx		=	1000;		posy		=	MENU_BACK_Y;
 	dimx		=	6192;		dimy		=	MENU_DY;

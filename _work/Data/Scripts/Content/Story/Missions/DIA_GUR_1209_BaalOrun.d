@@ -24,7 +24,7 @@ FUNC VOID  DIA_BaalOrun_Exit_Info()
 };
 
 // ************************************************************
-// 					NICHT ansprechbar (Ungläubiger) 
+// 					NICHT ansprechbar (UnglÃ¤ubiger) 
 // ************************************************************
 	var int BaalOrun_Ansprechbar;
 	var int BaalOrun_Sakrileg;
@@ -52,28 +52,28 @@ FUNC VOID DIA_BaalOrun_NoTalk_Info()
 {	
 	Info_ClearChoices 	(DIA_BaalOrun_NoTalk);
 	Info_Addchoice 		(DIA_BaalOrun_NoTalk,DIALOG_ENDE					,DIA_BaalOrun_NoTalk_ENDE);
-	Info_Addchoice 		(DIA_BaalOrun_NoTalk,"Je všechno v poøádku, pøíteli?",DIA_BaalOrun_NoTalk_Imp);
-	Info_Addchoice 		(DIA_BaalOrun_NoTalk,"Spáè buï s tebou!",DIA_BaalOrun_NoTalk_Sleeper);
-	Info_Addchoice 		(DIA_BaalOrun_NoTalk,"Zdar! Jsem tu novı!",DIA_BaalOrun_NoTalk_Hi);
+	Info_Addchoice 		(DIA_BaalOrun_NoTalk,"Je vÅ¡echno v poÅ™Ã¡dku, pÅ™Ã­teli?",DIA_BaalOrun_NoTalk_Imp);
+	Info_Addchoice 		(DIA_BaalOrun_NoTalk,"SpÃ¡Ä buÄ s tebou!",DIA_BaalOrun_NoTalk_Sleeper);
+	Info_Addchoice 		(DIA_BaalOrun_NoTalk,"Zdar! Jsem tu novÃ½!",DIA_BaalOrun_NoTalk_Hi);
 };
 
 func void DIA_BaalOrun_NoTalk_Hi()
 {
-	AI_Output (other, self,"DIA_BaalOrun_NoTalk_Hi_15_00"); //Zdar! Jsem tu novı!
+	AI_Output (other, self,"DIA_BaalOrun_NoTalk_Hi_15_00"); //Zdar! Jsem tu novÃ½!
 	AI_Output (self, other,"DIA_BaalOrun_NoTalk_Hi_12_01"); //(vzdech)
 	BaalOrun_Sakrileg = TRUE;
 };
 
 func void DIA_BaalOrun_NoTalk_Sleeper()
 {
-	AI_Output (other, self,"DIA_BaalOrun_NoTalk_Sleeper_15_00"); //Spáè buï s tebou!
+	AI_Output (other, self,"DIA_BaalOrun_NoTalk_Sleeper_15_00"); //SpÃ¡Ä buÄ s tebou!
 	AI_Output (self, other,"DIA_BaalOrun_NoTalk_Sleeper_12_01"); //(vzdech)
 	BaalOrun_Sakrileg = TRUE;
 };
 
 func void DIA_BaalOrun_NoTalk_Imp()
 {
-	AI_Output (other, self,"DIA_BaalOrun_NoTalk_Imp_15_00"); //Je všechno v poøádku, pøíteli?
+	AI_Output (other, self,"DIA_BaalOrun_NoTalk_Imp_15_00"); //Je vÅ¡echno v poÅ™Ã¡dku, pÅ™Ã­teli?
 	AI_Output (self, other,"DIA_BaalOrun_NoTalk_Imp_12_01"); //(vzdech)
 	BaalOrun_Sakrileg = TRUE;
 };
@@ -107,30 +107,30 @@ FUNC int  DIA_BaalOrun_FirstTalk_Condition()
 
 FUNC VOID  DIA_BaalOrun_FirstTalk_Info()
 {
-	AI_Output (self, other,"DIA_BaalOrun_FirstTalk_12_00"); //Mluvil jsem s Ghorimem. Prokázal jsi jednomu z našich bratrù velkou slubu - a to je od tebe správné.
-	AI_Output (self, other,"DIA_BaalOrun_FirstTalk_12_01"); //Proto jsem si tì vybral pro zvláštní úkol.
-	AI_Output (self, other,"DIA_BaalOrun_FirstTalk_12_02"); //Col Kalom naléhavì potøebuje novou drogu z bain pro své experimenty.
-	AI_Output (self, other,"DIA_BaalOrun_FirstTalk_12_03"); //Naši sbìraèi pracují ve dne v noci. Jdi za nimi a celou jejich sklizeò pøedej do Kalomovy alchymistické dílny.
+	AI_Output (self, other,"DIA_BaalOrun_FirstTalk_12_00"); //Mluvil jsem s Ghorimem. ProkÃ¡zal jsi jednomu z naÅ¡ich bratrÅ¯ velkou sluÅ¾bu - a to je od tebe sprÃ¡vnÃ©.
+	AI_Output (self, other,"DIA_BaalOrun_FirstTalk_12_01"); //Proto jsem si tÄ› vybral pro zvlÃ¡Å¡tnÃ­ Ãºkol.
+	AI_Output (self, other,"DIA_BaalOrun_FirstTalk_12_02"); //Col Kalom nalÃ©havÄ› potÅ™ebuje novou drogu z baÅ¾in pro svÃ© experimenty.
+	AI_Output (self, other,"DIA_BaalOrun_FirstTalk_12_03"); //NaÅ¡i sbÄ›raÄi pracujÃ­ ve dne v noci. Jdi za nimi a celou jejich sklizeÅˆ pÅ™edej do Kalomovy alchymistickÃ© dÃ­lny.
 	
 	B_GiveXP			(XP_BaalOrunTalks);
-	B_LogEntry			(CH1_GhorimsRelief,"Harlok právì nahradil Ghorima. Zázraky se dìjí.");
+	B_LogEntry			(CH1_GhorimsRelief,"Harlok prÃ¡vÄ› nahradil Ghorima. ZÃ¡zraky se dÄ›jÃ­.");
 	Log_SetTopicStatus	(CH1_GhorimsRelief,	LOG_SUCCESS);
 
 	Log_CreateTopic		(CH1_DeliverWeed,	LOG_MISSION);
 	Log_SetTopicStatus	(CH1_DeliverWeed,	LOG_RUNNING);
-	B_LogEntry			(CH1_DeliverWeed,"Dovednost pøemlouvání v té vìci s Harlokem udìlala dojem na guru Baala Oruna. Nyní mám tu èest pøebírat všechnu drogu od novicù v bainách pro Cora Kaloma.");
+	B_LogEntry			(CH1_DeliverWeed,"Dovednost pÅ™emlouvÃ¡nÃ­ v tÃ© vÄ›ci s Harlokem udÄ›lala dojem na guru Baala Oruna. NynÃ­ mÃ¡m tu Äest pÅ™ebÃ­rat vÅ¡echnu drogu od novicÅ¯ v baÅ¾inÃ¡ch pro Cora Kaloma.");
 	BaalOrun_FetchWeed = LOG_RUNNING;
 	
 	Info_ClearChoices 	(DIA_BaalOrun_FirstTalk);
-	Info_Addchoice 		(DIA_BaalOrun_FirstTalk,"Nic neøíkej",DIA_BaalOrun_FirstTalk_MuteEnde);
-	Info_Addchoice 		(DIA_BaalOrun_FirstTalk,"Kde pøesnì najdu ty sbìraèe?",DIA_BaalOrun_FirstTalk_Where);
+	Info_Addchoice 		(DIA_BaalOrun_FirstTalk,"Nic neÅ™Ã­kej",DIA_BaalOrun_FirstTalk_MuteEnde);
+	Info_Addchoice 		(DIA_BaalOrun_FirstTalk,"Kde pÅ™esnÄ› najdu ty sbÄ›raÄe?",DIA_BaalOrun_FirstTalk_Where);
 };
 
 func void DIA_BaalOrun_FirstTalk_Where()
 {
-	AI_Output (other, self,"DIA_BaalOrun_FirstTalk_Where_15_00"); //Kde pøesnì najdu ty sbìraèe?
-	AI_Output (self, other,"DIA_BaalOrun_FirstTalk_Where_12_01"); //Nedal jsem ti povolení mì oslovovat!
-	AI_Output (self, other,"DIA_BaalOrun_FirstTalk_Where_12_02"); //Modli se ke Spáèovi, aby ti odpustil tvùj høích! A teï odejdi. Tvé poslání je nesmírnì dùleité.
+	AI_Output (other, self,"DIA_BaalOrun_FirstTalk_Where_15_00"); //Kde pÅ™esnÄ› najdu ty sbÄ›raÄe?
+	AI_Output (self, other,"DIA_BaalOrun_FirstTalk_Where_12_01"); //Nedal jsem ti povolenÃ­ mÄ› oslovovat!
+	AI_Output (self, other,"DIA_BaalOrun_FirstTalk_Where_12_02"); //Modli se ke SpÃ¡Äovi, aby ti odpustil tvÅ¯j hÅ™Ã­ch! A teÄ odejdi. TvÃ© poslÃ¡nÃ­ je nesmÃ­rnÄ› dÅ¯leÅ¾itÃ©.
 	
 	Info_ClearChoices 	(DIA_BaalOrun_FirstTalk);
 	AI_StopProcessInfos	(self);
@@ -168,9 +168,9 @@ FUNC int  DIA_BaalOrun_GotWeed_Condition()
 
 FUNC VOID  DIA_BaalOrun_GotWeed_Info()
 {
-	AI_Output (self, other,"DIA_BaalOrun_GotWeed_12_00"); //Ochránil jsi naše sbìraèe...
-	AI_Output (self, other,"DIA_BaalOrun_GotWeed_12_01"); //Nejen e jsi prokázal, e jsi na naší stranì - dokázal jsi také, e jsi vìrnı sluebník Spáèe.
-	AI_Output (self, other,"DIA_BaalOrun_GotWeed_12_02"); //Vìøím, e u brzy oblékneš roucho novice.
+	AI_Output (self, other,"DIA_BaalOrun_GotWeed_12_00"); //OchrÃ¡nil jsi naÅ¡e sbÄ›raÄe...
+	AI_Output (self, other,"DIA_BaalOrun_GotWeed_12_01"); //Nejen Å¾e jsi prokÃ¡zal, Å¾e jsi na naÅ¡Ã­ stranÄ› - dokÃ¡zal jsi takÃ©, Å¾e jsi vÄ›rnÃ½ sluÅ¾ebnÃ­k SpÃ¡Äe.
+	AI_Output (self, other,"DIA_BaalOrun_GotWeed_12_02"); //VÄ›Å™Ã­m, Å¾e uÅ¾ brzy oblÃ©kneÅ¡ roucho novice.
 	BaalOrun_Ansprechbar = TRUE;
 
 	Log_CreateTopic		(CH1_JoinPsi,	LOG_MISSION);
@@ -178,7 +178,7 @@ FUNC VOID  DIA_BaalOrun_GotWeed_Info()
 	{
 		Log_SetTopicStatus	(CH1_JoinPsi,	LOG_RUNNING);
 	};
-	B_LogEntry			(CH1_JoinPsi,"Baal Orun mì nazval vìrnım sluebníkem Spáèe, protoe jsem kvùli novicùm z bain vymıtil krvavé mouchy.");
+	B_LogEntry			(CH1_JoinPsi,"Baal Orun mÄ› nazval vÄ›rnÃ½m sluÅ¾ebnÃ­kem SpÃ¡Äe, protoÅ¾e jsem kvÅ¯li novicÅ¯m z baÅ¾in vymÃ½til krvavÃ© mouchy.");
 	B_GiveXP			(XP_ImpressedBaalOrun);
 };
 
@@ -193,7 +193,7 @@ instance  DIA_BaalOrun_WeedAtKaloms (C_INFO)
 	condition	= DIA_BaalOrun_WeedAtKaloms_Condition;
 	information	= DIA_BaalOrun_WeedAtKaloms_Info;
 	permanent	= 0;
-	description = "Pøedal jsem drogu z bain Corovi Kalomovi.";
+	description = "PÅ™edal jsem drogu z baÅ¾in Corovi Kalomovi.";
 };                       
 
 FUNC int  DIA_BaalOrun_WeedAtKaloms_Condition()
@@ -206,9 +206,9 @@ FUNC int  DIA_BaalOrun_WeedAtKaloms_Condition()
 
 FUNC VOID  DIA_BaalOrun_WeedAtKaloms_Info()
 {
-	AI_Output		(other, self,"DIA_BaalOrun_WeedAtKaloms_15_00"); //Pøedal jsem drogu z bain Corovi Kalomovi.
-	AI_Output		(self, other,"DIA_BaalOrun_WeedAtKaloms_12_01"); //Dobøe jsi to provedl. Za tvé úsilí ti dám malou odmìnu. Tady je, vem si ji.
-	AI_Output		(self, other,"DIA_BaalOrun_WeedAtKaloms_12_02"); //To je magické zaøíkávání ke spánku. Mùeš je pouít jen jedenkrát, ale vìøím, e ti prokáe dobrou slubu.
+	AI_Output		(other, self,"DIA_BaalOrun_WeedAtKaloms_15_00"); //PÅ™edal jsem drogu z baÅ¾in Corovi Kalomovi.
+	AI_Output		(self, other,"DIA_BaalOrun_WeedAtKaloms_12_01"); //DobÅ™e jsi to provedl. Za tvÃ© ÃºsilÃ­ ti dÃ¡m malou odmÄ›nu. Tady je, vem si ji.
+	AI_Output		(self, other,"DIA_BaalOrun_WeedAtKaloms_12_02"); //To je magickÃ© zaÅ™Ã­kÃ¡vÃ¡nÃ­ ke spÃ¡nku. MÅ¯Å¾eÅ¡ je pouÅ¾Ã­t jen jedenkrÃ¡t, ale vÄ›Å™Ã­m, Å¾e ti prokÃ¡Å¾e dobrou sluÅ¾bu.
 	
 	BaalOrun_Ansprechbar = TRUE; //damit NoTalk-info nicht kommt
 	B_GiveXP		(XP_ReportToBaalOrun);
@@ -228,7 +228,7 @@ instance  DIA_BaalOrun_Perm (C_INFO)
 	condition	= DIA_BaalOrun_Perm_Condition;
 	information	= DIA_BaalOrun_Perm_Info;
 	permanent	= 1;
-	description = "Jak jde produkce drogy z bain?";
+	description = "Jak jde produkce drogy z baÅ¾in?";
 };                       
 
 FUNC int  DIA_BaalOrun_Perm_Condition()
@@ -241,9 +241,9 @@ FUNC int  DIA_BaalOrun_Perm_Condition()
 
 FUNC VOID  DIA_BaalOrun_Perm_Info()
 {
-	AI_Output (other, self,"DIA_BaalOrun_Perm_15_00"); //Jak jde produkce drogy z bain?
-	AI_Output (self, other,"DIA_BaalOrun_Perm_12_01"); //Naléháme, jak nejvíce dokáeme, na kadého mue, aby vyprodukoval dostatek pro nás samotné a obchodování s ostatními tábory.
-	AI_Output (self, other,"DIA_BaalOrun_Perm_12_02"); //To je ale obì pro Spáèe, kterou naši novicové ochotnì pøinášejí.
+	AI_Output (other, self,"DIA_BaalOrun_Perm_15_00"); //Jak jde produkce drogy z baÅ¾in?
+	AI_Output (self, other,"DIA_BaalOrun_Perm_12_01"); //NalÃ©hÃ¡me, jak nejvÃ­ce dokÃ¡Å¾eme, na kaÅ¾dÃ©ho muÅ¾e, aby vyprodukoval dostatek pro nÃ¡s samotnÃ© a obchodovÃ¡nÃ­ s ostatnÃ­mi tÃ¡bory.
+	AI_Output (self, other,"DIA_BaalOrun_Perm_12_02"); //To je ale obÄ›Å¥ pro SpÃ¡Äe, kterou naÅ¡i novicovÃ© ochotnÄ› pÅ™inÃ¡Å¡ejÃ­.
 };
 
 

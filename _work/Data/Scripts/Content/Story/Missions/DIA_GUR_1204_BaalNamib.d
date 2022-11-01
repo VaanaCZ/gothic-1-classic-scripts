@@ -23,7 +23,7 @@ FUNC VOID DIA_BaalNamib_EXIT_Info()
 };
 
 // ************************************************************
-// 					NICHT ansprechbar (Ungl‰ubiger) 
+// 					NICHT ansprechbar (Ungl√§ubiger) 
 // ************************************************************
 // ************************************************************
 
@@ -49,28 +49,28 @@ FUNC VOID DIA_BaalNamib_NoTalk_Info()
 {	
 	Info_ClearChoices 	(DIA_BaalNamib_NoTalk);
 	Info_Addchoice 		(DIA_BaalNamib_NoTalk,DIALOG_ENDE					,DIA_BaalNamib_NoTalk_ENDE);
-	Info_Addchoice 		(DIA_BaalNamib_NoTalk,"Je vöechno v po¯·dku, p¯Ìteli?",DIA_BaalNamib_NoTalk_Imp);
-	Info_Addchoice 		(DIA_BaalNamib_NoTalk,"Sp·Ë buÔ s tebou!",DIA_BaalNamib_NoTalk_Sleeper);
-	Info_Addchoice 		(DIA_BaalNamib_NoTalk,"Zdar! Jsem tu nov˝!",DIA_BaalNamib_NoTalk_Hi);
+	Info_Addchoice 		(DIA_BaalNamib_NoTalk,"Je v≈°echno v po≈ô√°dku, p≈ô√≠teli?",DIA_BaalNamib_NoTalk_Imp);
+	Info_Addchoice 		(DIA_BaalNamib_NoTalk,"Sp√°ƒç buƒè s tebou!",DIA_BaalNamib_NoTalk_Sleeper);
+	Info_Addchoice 		(DIA_BaalNamib_NoTalk,"Zdar! Jsem tu nov√Ω!",DIA_BaalNamib_NoTalk_Hi);
 };
 
 func void DIA_BaalNamib_NoTalk_Hi()
 {
-	AI_Output (other, self,"DIA_BaalNamib_NoTalk_Hi_15_00"); //Zdar! Jsem tu nov˝!
+	AI_Output (other, self,"DIA_BaalNamib_NoTalk_Hi_15_00"); //Zdar! Jsem tu nov√Ω!
 	AI_Output (self, other,"DIA_BaalNamib_NoTalk_Hi_02_01"); //(vzdech)
 	BaalNamib_Sakrileg = TRUE;
 };
 
 func void DIA_BaalNamib_NoTalk_Sleeper()
 {
-	AI_Output (other, self,"DIA_BaalNamib_NoTalk_Sleeper_15_00"); //Sp·Ë buÔ s tebou!
+	AI_Output (other, self,"DIA_BaalNamib_NoTalk_Sleeper_15_00"); //Sp√°ƒç buƒè s tebou!
 	AI_Output (self, other,"DIA_BaalNamib_NoTalk_Sleeper_02_01"); //(vzdech)
 	BaalNamib_Sakrileg = TRUE;
 };
 
 func void DIA_BaalNamib_NoTalk_Imp()
 {
-	AI_Output (other, self,"DIA_BaalNamib_NoTalk_Imp_15_00"); //Je vöechno v po¯·dku, p¯Ìteli?
+	AI_Output (other, self,"DIA_BaalNamib_NoTalk_Imp_15_00"); //Je v≈°echno v po≈ô√°dku, p≈ô√≠teli?
 	AI_Output (self, other,"DIA_BaalNamib_NoTalk_Imp_02_01"); //(vzdech)
 	BaalNamib_Sakrileg = TRUE;
 };
@@ -105,31 +105,31 @@ FUNC INT DIA_BaalNamib_FirstTalk_Condition()
 FUNC VOID DIA_BaalNamib_FirstTalk_Info()
 {	
 	AI_Output (self, other,"DIA_BaalNamib_FirstTalk_02_00"); //(vzdech)
-	AI_Output (self, other,"DIA_BaalNamib_FirstTalk_02_01"); //Sp·Ë si tÏ vyvolil. Chceö se k n·m opravdu p¯idat?
+	AI_Output (self, other,"DIA_BaalNamib_FirstTalk_02_01"); //Sp√°ƒç si tƒõ vyvolil. Chce≈° se k n√°m opravdu p≈ôidat?
 
 	Info_ClearChoices 	(DIA_BaalNamib_FirstTalk);
-	Info_AddChoice 		(DIA_BaalNamib_FirstTalk,"NEÿÕKEJ NIC",DIA_BaalNamib_FirstTalk_Mute);
-	Info_AddChoice 		(DIA_BaalNamib_FirstTalk,"Ano, chci n·sledovat Sp·Ëe!",DIA_BaalNamib_FirstTalk_Sleeper);
+	Info_AddChoice 		(DIA_BaalNamib_FirstTalk,"NE≈ò√çKEJ NIC",DIA_BaalNamib_FirstTalk_Mute);
+	Info_AddChoice 		(DIA_BaalNamib_FirstTalk,"Ano, chci n√°sledovat Sp√°ƒçe!",DIA_BaalNamib_FirstTalk_Sleeper);
 };
 
 func void DIA_BaalNamib_FirstTalk_Mute()
 {
 	AI_Output (other, self,"DIA_BaalNamib_FirstTalk_Mute_15_00"); //(vzdech)
-	AI_Output (self, other,"DIA_BaalNamib_FirstTalk_Mute_02_01"); //Vöechno v po¯·dku?
+	AI_Output (self, other,"DIA_BaalNamib_FirstTalk_Mute_02_01"); //V≈°echno v po≈ô√°dku?
 };
 
 func void DIA_BaalNamib_FirstTalk_Sleeper()
 {
-	AI_Output 			(other, self,"DIA_BaalNamib_FirstTalk_Sleeper_15_00"); //Ano, chci n·sledovat Sp·Ëe!
-	AI_Output 			(self, other,"DIA_BaalNamib_FirstTalk_Sleeper_02_01"); //Jdi za Corem Kalomem. ÿekni mu, ûe jsem tÏ vyslal, protoûe jsi opravdov˝ sluûebnÌk vÌry!
+	AI_Output 			(other, self,"DIA_BaalNamib_FirstTalk_Sleeper_15_00"); //Ano, chci n√°sledovat Sp√°ƒçe!
+	AI_Output 			(self, other,"DIA_BaalNamib_FirstTalk_Sleeper_02_01"); //Jdi za Corem Kalomem. ≈òekni mu, ≈æe jsem tƒõ vyslal, proto≈æe jsi opravdov√Ω slu≈æebn√≠k v√≠ry!
 	Info_ClearChoices 	(DIA_BaalNamib_FirstTalk);
 
-	B_LogEntry			(CH1_JoinPsi,"Lester˘v scÈn·¯ zapracoval. Baal Namib se mnou promluvil a je p¯esvÏdËen˝, ûe jsem opravdovÏ vÏ¯ÌcÌ. NynÌ m˘ûu jÌt navötÌvit guru Cora Kaloma do jeho alchymistickÈ dÌlny!");
+	B_LogEntry			(CH1_JoinPsi,"Lester≈Øv sc√©n√°≈ô zapracoval. Baal Namib se mnou promluvil a je p≈ôesvƒõdƒçen√Ω, ≈æe jsem opravdovƒõ vƒõ≈ô√≠c√≠. Nyn√≠ m≈Ø≈æu j√≠t nav≈°t√≠vit guru Cora Kaloma do jeho alchymistick√© d√≠lny!");
 	B_GiveXP			(XP_ImpressBaalNamib);
 };
 
 //-----------------------------------------------------
-// BESSERE R‹STUNG NOVIZEN
+// BESSERE R√úSTUNG NOVIZEN
 //-----------------------------------------------------
 instance  GUR_1204_BaalNamib_ARMOR (C_INFO)
 {
@@ -138,7 +138,7 @@ instance  GUR_1204_BaalNamib_ARMOR (C_INFO)
 	information		= GUR_1204_BaalNamib_ARMOR_Info;
 	important		= 0;
 	permanent		= 1;
-	description		= "R·d bych lepöÌ zbroj."; 
+	description		= "R√°d bych lep≈°√≠ zbroj."; 
 };
 
 FUNC int  GUR_1204_BaalNamib_ARMOR_Condition()
@@ -152,19 +152,19 @@ FUNC int  GUR_1204_BaalNamib_ARMOR_Condition()
 };
 FUNC void  GUR_1204_BaalNamib_ARMOR_Info()
 {
-	AI_Output (hero,self,"GUR_1204_BaalNamib_ARMOR_Info_15_01");//R·d bych lepöÌ zbroj.
+	AI_Output (hero,self,"GUR_1204_BaalNamib_ARMOR_Info_15_01");//R√°d bych lep≈°√≠ zbroj.
 	
 	if (Kapitel < 3)
 	{
-		AI_Output (self,other,"GUR_1204_BaalNamib_ARMOR_Info_02_02");//JeötÏ nep¯iöel Ëas, abys oblÈkl tÏûkou zbroj novice.
+		AI_Output (self,other,"GUR_1204_BaalNamib_ARMOR_Info_02_02");//Je≈°tƒõ nep≈ôi≈°el ƒças, abys obl√©kl tƒõ≈ækou zbroj novice.
 	}
 	else if (Npc_HasItems (hero, ItMinugget) < VALUE_NOV_ARMOR_H )
 	{
-		AI_Output (self,other,"GUR_1204_BaalNamib_ARMOR_Info_02_03");//Vraù se, aû budeö mÌt dost rudy.
+		AI_Output (self,other,"GUR_1204_BaalNamib_ARMOR_Info_02_03");//Vra≈• se, a≈æ bude≈° m√≠t dost rudy.
 	}
 	else
 	{
-		AI_Output (self,other,"GUR_1204_BaalNamib_ARMOR_Info_02_04");//Tahle zbroj ochr·nÌ tvoje tÏlo, tak jako Sp·Ë ochr·nÌ tvoji duöi!
+		AI_Output (self,other,"GUR_1204_BaalNamib_ARMOR_Info_02_04");//Tahle zbroj ochr√°n√≠ tvoje tƒõlo, tak jako Sp√°ƒç ochr√°n√≠ tvoji du≈°i!
 		CreateInvItem (self,NOV_ARMOR_H);
 		B_GiveInvItems (self, hero, NOV_ARMOR_H, 1);
 		B_GiveInvItems (hero, self, ItMinugget,VALUE_NOV_ARMOR_H);
@@ -187,7 +187,7 @@ INSTANCE Info_BaalNamib_BROTHERHOOD (C_INFO)
 	information	= Info_BaalNamib_BROTHERHOOD_Info;
 	important	= 0;
 	permanent	= 0;
-	description = "M˘ûu pro Bratrstvo vykonat nÏjakÈ ˙koly?";
+	description = "M≈Ø≈æu pro Bratrstvo vykonat nƒõjak√© √∫koly?";
 };
 
 FUNC INT Info_BaalNamib_BROTHERHOOD_Condition()
@@ -197,12 +197,12 @@ FUNC INT Info_BaalNamib_BROTHERHOOD_Condition()
 
 FUNC VOID Info_BaalNamib_BROTHERHOOD_Info()
 {
-	AI_Output (other, self,"Info_BaalNamib_BROTHERHOOD_15_01"); //M˘ûu pro Bratrstvo vykonat nÏjakÈ ˙koly?
-	AI_Output (self, other,"Info_BaalNamib_BROTHERHOOD_02_02"); //N·ö mistr, moudr˝ Y¥Berion, nechal poslat pro novice. Protoûe jsi nynÌ Ëlenem komunity, jdi za nÌm a nabÌdni mu svÈ sluûby. 
+	AI_Output (other, self,"Info_BaalNamib_BROTHERHOOD_15_01"); //M≈Ø≈æu pro Bratrstvo vykonat nƒõjak√© √∫koly?
+	AI_Output (self, other,"Info_BaalNamib_BROTHERHOOD_02_02"); //N√°≈° mistr, moudr√Ω Y¬¥Berion, nechal poslat pro novice. Proto≈æe jsi nyn√≠ ƒçlenem komunity, jdi za n√≠m a nab√≠dni mu sv√© slu≈æby. 
 	Info_Clearchoices ( Info_BaalNamib_BROTHERHOOD);
-	Info_Addchoice (Info_BaalNamib_BROTHERHOOD,"Dobr·, p˘jdu za nÌm hned.",Info_BaalNamib_BROTHERHOOD_OK);
-	Info_Addchoice (Info_BaalNamib_BROTHERHOOD,"Kde najdu Y¥Beriona?",Info_BaalNamib_BROTHERHOOD_YBWO);  
-	Info_Addchoice (Info_BaalNamib_BROTHERHOOD,"VÌö, co ode mÏ Y¥Berion chce?",Info_BaalNamib_BROTHERHOOD_YBWAS);
+	Info_Addchoice (Info_BaalNamib_BROTHERHOOD,"Dobr√°, p≈Øjdu za n√≠m hned.",Info_BaalNamib_BROTHERHOOD_OK);
+	Info_Addchoice (Info_BaalNamib_BROTHERHOOD,"Kde najdu Y¬¥Beriona?",Info_BaalNamib_BROTHERHOOD_YBWO);  
+	Info_Addchoice (Info_BaalNamib_BROTHERHOOD,"V√≠≈°, co ode mƒõ Y¬¥Berion chce?",Info_BaalNamib_BROTHERHOOD_YBWAS);
 	var C_NPC Kalom;
 	Kalom = Hlp_GetNpc (GUR_1201_CORKALOM); 
 	Npc_ExchangeRoutine (Kalom,"kapitel2");
@@ -210,21 +210,21 @@ FUNC VOID Info_BaalNamib_BROTHERHOOD_Info()
 };
 FUNC VOID Info_BaalNamib_BROTHERHOOD_YBWO()
 {
-	AI_Output (other, self,"Info_BaalNamib_BROTHERHOOD_YBWO_15_01"); //Kde najdu Y¥Beriona?
-	AI_Output (self, other,"Info_BaalNamib_BROTHERHOOD_YBWO_02_02"); //Je v chr·mu, jako vûdy.
+	AI_Output (other, self,"Info_BaalNamib_BROTHERHOOD_YBWO_15_01"); //Kde najdu Y¬¥Beriona?
+	AI_Output (self, other,"Info_BaalNamib_BROTHERHOOD_YBWO_02_02"); //Je v chr√°mu, jako v≈ædy.
 
 };	
 FUNC VOID Info_BaalNamib_BROTHERHOOD_YBWAS()
 {
-	AI_Output (other, self,"Info_BaalNamib_BROTHERHOOD_YBWAS_15_01"); //VÌö, co ode mÏ Y¥Berion chce?
-	AI_Output (self, other,"Info_BaalNamib_BROTHERHOOD_YBWAS_02_02"); //Bude se konat velkÈ vz˝v·nÌ. Aby ale mohlo zaËÌt, pot¯ebujeme jeden magick˝ p¯edmÏt. 
-	AI_Output (self, other,"Info_BaalNamib_BROTHERHOOD_YBWAS_02_03"); //Y¥Berion hled· odv·ûnÈ muûe, kte¯Ì by mu ten artefakt opat¯ili.
-	AI_Output (other, self,"Info_BaalNamib_BROTHERHOOD_YBWAS_15_04"); //To znÌ jako snadn˝ ˙kol.
-	AI_Output (self, other,"Info_BaalNamib_BROTHERHOOD_YBWAS_02_05"); //Kdyby to bylo snadnÈ, uû bysme ten p¯edmÏt mÏli. Promluv si nejd¯Ìve s Y¥Berionem. Vöechno ti vysvÏtlÌ.
+	AI_Output (other, self,"Info_BaalNamib_BROTHERHOOD_YBWAS_15_01"); //V√≠≈°, co ode mƒõ Y¬¥Berion chce?
+	AI_Output (self, other,"Info_BaalNamib_BROTHERHOOD_YBWAS_02_02"); //Bude se konat velk√© vz√Ωv√°n√≠. Aby ale mohlo zaƒç√≠t, pot≈ôebujeme jeden magick√Ω p≈ôedmƒõt. 
+	AI_Output (self, other,"Info_BaalNamib_BROTHERHOOD_YBWAS_02_03"); //Y¬¥Berion hled√° odv√°≈æn√© mu≈æe, kte≈ô√≠ by mu ten artefakt opat≈ôili.
+	AI_Output (other, self,"Info_BaalNamib_BROTHERHOOD_YBWAS_15_04"); //To zn√≠ jako snadn√Ω √∫kol.
+	AI_Output (self, other,"Info_BaalNamib_BROTHERHOOD_YBWAS_02_05"); //Kdyby to bylo snadn√©, u≈æ bysme ten p≈ôedmƒõt mƒõli. Promluv si nejd≈ô√≠ve s Y¬¥Berionem. V≈°echno ti vysvƒõtl√≠.
 };	
 FUNC VOID Info_BaalNamib_BROTHERHOOD_OK()
 {
-	AI_Output (other, self,"Info_BaalNamib_BROTHERHOOD_OK_15_01"); //Dobr·, hned mu ¯eknu.
-	AI_Output (self, other,"Info_BaalNamib_BROTHERHOOD_OK_02_02"); //KÈû tÏ Sp·Ë ochr·nÌ!
+	AI_Output (other, self,"Info_BaalNamib_BROTHERHOOD_OK_15_01"); //Dobr√°, hned mu ≈ôeknu.
+	AI_Output (self, other,"Info_BaalNamib_BROTHERHOOD_OK_02_02"); //K√©≈æ tƒõ Sp√°ƒç ochr√°n√≠!
 	Info_Clearchoices ( Info_BaalNamib_BROTHERHOOD);
 };	

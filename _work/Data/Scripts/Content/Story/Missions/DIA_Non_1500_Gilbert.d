@@ -46,8 +46,8 @@ FUNC int DIA_Gilbert_First_Condition()
 
 FUNC VOID  DIA_Gilbert_First_Info()
 {
-	AI_Output (self, other,"DIA_Gilbert_First_04_00"); //Co tady dìláš? Moc èasto sem návštìvníky nepouštím, hehe!
-	AI_Output (self, other,"DIA_Gilbert_First_04_01"); //To byl šikovnı kousek, najít tohle ukryté místo.
+	AI_Output (self, other,"DIA_Gilbert_First_04_00"); //Co tady dÄ›lÃ¡Å¡? Moc Äasto sem nÃ¡vÅ¡tÄ›vnÃ­ky nepouÅ¡tÃ­m, hehe!
+	AI_Output (self, other,"DIA_Gilbert_First_04_01"); //To byl Å¡ikovnÃ½ kousek, najÃ­t tohle ukrytÃ© mÃ­sto.
 	
 	B_GiveXP(XP_GilbertFound);
 };
@@ -63,7 +63,7 @@ instance DIA_Gilbert_Hallo (C_INFO)
 	condition	= DIA_Gilbert_Hallo_Condition;
 	information	= DIA_Gilbert_Hallo_Info;
 	permanent	= 1;
-	description = "Co tady dìláš?";
+	description = "Co tady dÄ›lÃ¡Å¡?";
 };                       
 
 FUNC int DIA_Gilbert_Hallo_Condition()
@@ -73,9 +73,9 @@ FUNC int DIA_Gilbert_Hallo_Condition()
 
 FUNC VOID  DIA_Gilbert_Hallo_Info()
 {
-	AI_Output (other, self,"DIA_Gilbert_Hallo_15_00"); //Co tady dìláš?
-	AI_Output (self, other,"DIA_Gilbert_Hallo_04_01"); //U mám dost Starého tábora. Mìl jsem problém s Gomezovımi lidmi. U je to delší dobu.
-	AI_Output (self, other,"DIA_Gilbert_Hallo_04_02"); //Myslím, e u si to nikdo nepamatuje. Já tady ale zùstávám. Po Starém táboøe se motají spousty zabednìncù.
+	AI_Output (other, self,"DIA_Gilbert_Hallo_15_00"); //Co tady dÄ›lÃ¡Å¡?
+	AI_Output (self, other,"DIA_Gilbert_Hallo_04_01"); //UÅ¾ mÃ¡m dost StarÃ©ho tÃ¡bora. MÄ›l jsem problÃ©m s GomezovÃ½mi lidmi. UÅ¾ je to delÅ¡Ã­ dobu.
+	AI_Output (self, other,"DIA_Gilbert_Hallo_04_02"); //MyslÃ­m, Å¾e uÅ¾ si to nikdo nepamatuje. JÃ¡ tady ale zÅ¯stÃ¡vÃ¡m. Po StarÃ©m tÃ¡boÅ™e se motajÃ­ spousty zabednÄ›ncÅ¯.
 };
 
 

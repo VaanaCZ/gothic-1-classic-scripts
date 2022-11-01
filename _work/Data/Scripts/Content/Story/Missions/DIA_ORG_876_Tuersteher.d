@@ -23,7 +23,7 @@ FUNC VOID DIA_Org_876_EXIT_Info()
 };
 
 // ************************************************************
-// 						Bin Sch¸rfer
+// 						Bin Sch√ºrfer
 // ************************************************************
 
 INSTANCE DIA_Org_876_AmSfb (C_INFO)
@@ -33,7 +33,7 @@ INSTANCE DIA_Org_876_AmSfb (C_INFO)
 	condition	= DIA_Org_876_AmSfb_Condition;
 	information	= DIA_Org_876_AmSfb_Info;
 	permanent	= 1;
-	description = "Jsem ruda¯! A m·m ûÌzeÚ!";
+	description = "Jsem ruda≈ô! A m√°m ≈æ√≠ze≈à!";
 };                       
 
 FUNC INT DIA_Org_876_AmSfb_Condition()
@@ -47,21 +47,21 @@ FUNC INT DIA_Org_876_AmSfb_Condition()
 
 FUNC VOID DIA_Org_876_AmSfb_Info()
 {	
-	AI_Output (other, self,"DIA_Org_876_AmSfb_15_00"); //Jsem ruda¯! A m·m ûÌzeÚ!
+	AI_Output (other, self,"DIA_Org_876_AmSfb_15_00"); //Jsem ruda≈ô! A m√°m ≈æ√≠ze≈à!
 	
 	var C_ITEM myarmor;
 	
 	myarmor = Npc_GetEquippedArmor(hero);
 	if (Hlp_IsItem(myarmor, SFB_ARMOR_L))
 	{
-		AI_Output (self, other,"DIA_Org_876_AmSfb_06_01"); //Vypad·ö jako jedna z tÏch öpinavejch krys. PojÔ d·l!
+		AI_Output (self, other,"DIA_Org_876_AmSfb_06_01"); //Vypad√°≈° jako jedna z tƒõch ≈°pinavejch krys. Pojƒè d√°l!
 		self.aivar[AIV_PASSGATE] = TRUE;	
 		
 		AI_StopProcessInfos	(self);
 	}
 	else
 	{
-		AI_Output (self, other,"DIA_Org_876_AmSfb_NOSFB_06_00"); //Nevypad·ö jako ruda¯. Takhle dovnit¯ nesmÌö, hochu.
+		AI_Output (self, other,"DIA_Org_876_AmSfb_NOSFB_06_00"); //Nevypad√°≈° jako ruda≈ô. Takhle dovnit≈ô nesm√≠≈°, hochu.
 	};
 };
 
@@ -76,7 +76,7 @@ INSTANCE DIA_Org_876_Bribe (C_INFO)
 	condition	= DIA_Org_876_Bribe_Condition;
 	information	= DIA_Org_876_Bribe_Info;
 	permanent	= 1;
-	description = "Co takhle nÏjakou rudu jako vstupnÈ?";
+	description = "Co takhle nƒõjakou rudu jako vstupn√©?";
 };                       
 
 FUNC INT DIA_Org_876_Bribe_Condition()
@@ -90,25 +90,25 @@ FUNC INT DIA_Org_876_Bribe_Condition()
 
 FUNC VOID DIA_Org_876_Bribe_Info()
 {	
-	AI_Output (other, self,"DIA_Org_876_Bribe_15_00"); //Co takhle nÏjakou rudu jako vstupnÈ?
-	AI_Output (self, other,"DIA_Org_876_Bribe_06_01"); //Co myslÌö tÌm 'nÏjakou'?
+	AI_Output (other, self,"DIA_Org_876_Bribe_15_00"); //Co takhle nƒõjakou rudu jako vstupn√©?
+	AI_Output (self, other,"DIA_Org_876_Bribe_06_01"); //Co mysl√≠≈° t√≠m 'nƒõjakou'?
 	
 	Info_ClearChoices	(DIA_Org_876_Bribe );
-	Info_AddChoice		(DIA_Org_876_Bribe,"100 nuget˘ by mÏlo staËit.",DIA_Org_876_Bribe_100Erz);
-	Info_AddChoice		(DIA_Org_876_Bribe,"Co ¯Ìk·ö na 50 nuget˘?",DIA_Org_876_Bribe_50Erz);
-	Info_AddChoice		(DIA_Org_876_Bribe,"M·m s sebou 10 nuget˘.",DIA_Org_876_Bribe_10Erz);
+	Info_AddChoice		(DIA_Org_876_Bribe,"100 nuget≈Ø by mƒõlo staƒçit.",DIA_Org_876_Bribe_100Erz);
+	Info_AddChoice		(DIA_Org_876_Bribe,"Co ≈ô√≠k√°≈° na 50 nuget≈Ø?",DIA_Org_876_Bribe_50Erz);
+	Info_AddChoice		(DIA_Org_876_Bribe,"M√°m s sebou 10 nuget≈Ø.",DIA_Org_876_Bribe_10Erz);
 };
 
 func void DIA_Org_876_Bribe_10Erz()
 {
-	AI_Output (other, self,"DIA_Org_876_Bribe_10Erz_15_00"); //M·m s sebou 10 nuget˘.
+	AI_Output (other, self,"DIA_Org_876_Bribe_10Erz_15_00"); //M√°m s sebou 10 nuget≈Ø.
 	if (Npc_HasItems (other, itminugget) >= 10)
 	{
-		AI_Output (self, other,"DIA_Org_876_Bribe_10Erz_06_01"); //10 nuget˘? Za to ti dovolÌm to zkusit znovu.
+		AI_Output (self, other,"DIA_Org_876_Bribe_10Erz_06_01"); //10 nuget≈Ø? Za to ti dovol√≠m to zkusit znovu.
 	}
 	else
 	{
-		AI_Output (self, other,"DIA_Org_876_Bribe_10Erz_06_02"); //Kde? NevidÌm tÏch 10 nuget˘.
+		AI_Output (self, other,"DIA_Org_876_Bribe_10Erz_06_02"); //Kde? Nevid√≠m tƒõch 10 nuget≈Ø.
 	};
 	
 	AI_StopProcessInfos	(self);
@@ -116,14 +116,14 @@ func void DIA_Org_876_Bribe_10Erz()
 
 func void DIA_Org_876_Bribe_50Erz()
 {
-	AI_Output (other, self,"DIA_Org_876_Bribe_50Erz_15_00"); //Co ¯Ìk·ö na 50 nuget˘?
+	AI_Output (other, self,"DIA_Org_876_Bribe_50Erz_15_00"); //Co ≈ô√≠k√°≈° na 50 nuget≈Ø?
 	if (Npc_HasItems (other, itminugget) >= 50)
 	{
-		AI_Output (self, other,"DIA_Org_876_Bribe_50Erz_06_01"); //To je akor·t p˘lka toho, Ëemu ¯Ìk·m 'nÏjakou rudu'.
+		AI_Output (self, other,"DIA_Org_876_Bribe_50Erz_06_01"); //To je akor√°t p≈Ølka toho, ƒçemu ≈ô√≠k√°m 'nƒõjakou rudu'.
 	}
 	else
 	{
-		AI_Output (self, other,"DIA_Org_876_Bribe_50Erz_06_02"); //Kde? NevidÌm tÏch 50 nuget˘..
+		AI_Output (self, other,"DIA_Org_876_Bribe_50Erz_06_02"); //Kde? Nevid√≠m tƒõch 50 nuget≈Ø..
 	};
 	
 	AI_StopProcessInfos	(self);
@@ -131,16 +131,16 @@ func void DIA_Org_876_Bribe_50Erz()
 
 func void DIA_Org_876_Bribe_100Erz()
 {
-	AI_Output (other, self,"DIA_Org_876_Bribe_100Erz_15_00"); //100 magick˝ch nuget˘ by mÏlo staËit.
+	AI_Output (other, self,"DIA_Org_876_Bribe_100Erz_15_00"); //100 magick√Ωch nuget≈Ø by mƒõlo staƒçit.
 	if (Npc_HasItems (other, itminugget) >= 100)
 	{
-		AI_Output (self, other,"DIA_Org_876_Bribe_100Erz_06_01"); //Dob¯e ¯eËeno - m˘ûeö d·l.
+		AI_Output (self, other,"DIA_Org_876_Bribe_100Erz_06_01"); //Dob≈ôe ≈ôeƒçeno - m≈Ø≈æe≈° d√°l.
 		self.aivar[AIV_PASSGATE] = TRUE;	
 		B_GiveInvItems	(other, self, ItMiNugget, 100);
 	}
 	else
 	{
-		AI_Output (self, other,"DIA_Org_876_Bribe_100Erz_06_02"); //To sedÌ. NevidÌm ale, ûe bys mÏl tolik.
+		AI_Output (self, other,"DIA_Org_876_Bribe_100Erz_06_02"); //To sed√≠. Nevid√≠m ale, ≈æe bys mƒõl tolik.
 	};
 
 	AI_StopProcessInfos	(self);
@@ -157,7 +157,7 @@ INSTANCE DIA_Org_876_PERM (C_INFO)
 	condition	= DIA_Org_876_PERM_Condition;
 	information	= DIA_Org_876_PERM_Info;
 	permanent	= 1;
-	description = "Jak jde obchod s p·lenkou?";
+	description = "Jak jde obchod s p√°lenkou?";
 };                       
 
 FUNC INT DIA_Org_876_PERM_Condition()
@@ -171,8 +171,8 @@ FUNC INT DIA_Org_876_PERM_Condition()
 
 FUNC VOID DIA_Org_876_PERM_Info()
 {	
-	AI_Output (other, self,"DIA_Org_876_PERM_15_00"); //Jak jde obchod s p·lenkou?
-	AI_Output (self, other,"DIA_Org_876_PERM_06_01"); //Jdi se zeptat Silase. MY jsme spokojenÌ.
+	AI_Output (other, self,"DIA_Org_876_PERM_15_00"); //Jak jde obchod s p√°lenkou?
+	AI_Output (self, other,"DIA_Org_876_PERM_06_01"); //Jdi se zeptat Silase. MY jsme spokojen√≠.
 };
 
 // ************************************************************
@@ -199,9 +199,9 @@ FUNC INT DIA_Org_876_ScSld_Condition()
 
 FUNC VOID DIA_Org_876_ScSld_Info()
 {	
-	AI_Output (self, other,"DIA_Org_876_ScSld_06_00"); //St˘j! Zn·ö pravidla. Jen pro bandity a ruda¯e!
-	AI_Output (other, self,"DIA_Org_876_ScSld_15_01"); //PokouöÌö se mÏ zastavit?
-	AI_Output (self, other,"DIA_Org_876_ScSld_06_02"); //Ne... tak pojÔ...
+	AI_Output (self, other,"DIA_Org_876_ScSld_06_00"); //St≈Øj! Zn√°≈° pravidla. Jen pro bandity a ruda≈ôe!
+	AI_Output (other, self,"DIA_Org_876_ScSld_15_01"); //Pokou≈°√≠≈° se mƒõ zastavit?
+	AI_Output (self, other,"DIA_Org_876_ScSld_06_02"); //Ne... tak pojƒè...
 	self.aivar[AIV_PASSGATE] = TRUE;
 };
 
@@ -229,8 +229,8 @@ FUNC INT DIA_Org_876_ScSekte_Condition()
 
 FUNC VOID DIA_Org_876_ScSekte_Info()
 {	
-	AI_Output (self, other,"DIA_Org_876_ScSekte_06_00"); //Obvykle pouötÌm dovnit¯ jenom naöe hochy, ale proti Bratrstvu nem˘ûu ¯Ìci nic.
-	AI_Output (self, other,"DIA_Org_876_ScSekte_06_01"); //Obzvl·öù pak ne, kdyû majÌ sebou nÏco ke kou¯enÌ.
+	AI_Output (self, other,"DIA_Org_876_ScSekte_06_00"); //Obvykle pou≈°t√≠m dovnit≈ô jenom na≈°e hochy, ale proti Bratrstvu nem≈Ø≈æu ≈ô√≠ci nic.
+	AI_Output (self, other,"DIA_Org_876_ScSekte_06_01"); //Obzvl√°≈°≈• pak ne, kdy≈æ maj√≠ sebou nƒõco ke kou≈ôen√≠.
 };
 
 // ************************************************************
@@ -246,7 +246,7 @@ INSTANCE DIA_Org_876_GibKraut (C_INFO)
 	condition	= DIA_Org_876_GibKraut_Condition;
 	information	= DIA_Org_876_GibKraut_Info;
 	permanent	= 1;
-	description = "M·m s sebou p·r lodyh - tady, vezmi si jednu.";
+	description = "M√°m s sebou p√°r lodyh - tady, vezmi si jednu.";
 };                       
 
 FUNC INT DIA_Org_876_GibKraut_Condition()
@@ -259,7 +259,7 @@ FUNC INT DIA_Org_876_GibKraut_Condition()
 
 FUNC VOID DIA_Org_876_GibKraut_Info()
 {	
-	AI_Output (other, self,"DIA_Org_876_GibKraut_15_00"); //M·m s sebou p·r lodyh - tady, vezmi si jednu.
+	AI_Output (other, self,"DIA_Org_876_GibKraut_15_00"); //M√°m s sebou p√°r lodyh - tady, vezmi si jednu.
 
 	if ( (Npc_HasItems(other,ItMiJoint_1)>0) || (Npc_HasItems(other,ItMiJoint_2)>0) || (Npc_HasItems(other,ItMiJoint_3)>0) )
 	{
@@ -270,14 +270,14 @@ FUNC VOID DIA_Org_876_GibKraut_Info()
 		else if (Npc_HasItems(other,ItMiJoint_3))
 		{	B_GiveInvItems	(other, self,ItMiJoint_3, 1); };
 		
-		AI_Output (self, other,"DIA_Org_876_GibKraut_06_01"); //BuÔ vûdycky vÌt·n, ËlovÏËe.
+		AI_Output (self, other,"DIA_Org_876_GibKraut_06_01"); //Buƒè v≈ædycky v√≠t√°n, ƒçlovƒõƒçe.
 		self.aivar[AIV_PASSGATE] = TRUE;
 		Org_876_GotJoint = TRUE;
 	}
 	else
 	{
-		AI_Output (other, self,"DIA_Org_876_GibKraut_KEIN_15_00"); //Och... PoËkej. J· vlastnÏ nic nem·m.
-		AI_Output (self, other,"DIA_Org_876_GibKraut_KEIN_06_00"); //V˝bornÏ. Mysli na mÏ p¯ÌötÏ.
+		AI_Output (other, self,"DIA_Org_876_GibKraut_KEIN_15_00"); //Och... Poƒçkej. J√° vlastnƒõ nic nem√°m.
+		AI_Output (self, other,"DIA_Org_876_GibKraut_KEIN_06_00"); //V√Ωbornƒõ. Mysli na mƒõ p≈ô√≠≈°tƒõ.
 		self.aivar[AIV_PASSGATE] = TRUE;
 	};
 };
@@ -291,11 +291,11 @@ FUNC VOID DIA_Org_876_GibKraut_Info()
 //	Uhrzeit:	24h
 //
 //	Es passiert folgendes:
-//	1.	N‰hert sich der Spieler dem Durchgang, so wird er in diesen
+//	1.	N√§hert sich der Spieler dem Durchgang, so wird er in diesen
 //		Dialog gezwungen und einmal gewarnt
-//	2.	N‰hert sich der SC trotzdem weiter, so wird er ein ZWEITES Mal
+//	2.	N√§hert sich der SC trotzdem weiter, so wird er ein ZWEITES Mal
 //		gewarnt (aggressiver mit Waffe ziehen)
-//	3.	N‰hert er sich trotzdem wieder, wird er angegriffen
+//	3.	N√§hert er sich trotzdem wieder, wird er angegriffen
 //////////////////////////////////////////////////////////////////////////
 
 // **********************************************
@@ -329,9 +329,9 @@ func void Info_Org_876_FirstWarn_Info()
 {
 	PrintGlobals	(PD_MISSION);
 
-	AI_Output (self, hero,"Info_Org_876_FirstWarn_Info_06_00"); //A kampak CHCEä jÌt?
-	AI_Output (hero, self,"Info_Org_876_FirstWarn_Info_15_01"); //No, dovnit¯.
-	AI_Output (self, hero,"Info_Org_876_FirstWarn_Info_06_02"); //ZapomeÚ na to! Silas chce v baru vidÏt jenom ruda¯e a bandity.
+	AI_Output (self, hero,"Info_Org_876_FirstWarn_Info_06_00"); //A kampak CHCE≈† j√≠t?
+	AI_Output (hero, self,"Info_Org_876_FirstWarn_Info_15_01"); //No, dovnit≈ô.
+	AI_Output (self, hero,"Info_Org_876_FirstWarn_Info_06_02"); //Zapome≈à na to! Silas chce v baru vidƒõt jenom ruda≈ôe a bandity.
 
 	hero.aivar[AIV_LASTDISTTOWP] 		= Npc_GetDistToWP(hero,Org_876_CHECKPOINT);
 	hero.aivar[AIV_GUARDPASSAGE_STATUS]	= AIV_GPS_FIRSTWARN;	
@@ -364,7 +364,7 @@ func int Info_Org_876_LastWarn_Condition()
 
 func int Info_Org_876_LastWarn_Info()
 {
-	AI_Output (self, hero,"Info_Org_876_LastWarn_06_00"); //Jsi hluchej, nebo co, p¯Ìteli?
+	AI_Output (self, hero,"Info_Org_876_LastWarn_06_00"); //Jsi hluchej, nebo co, p≈ô√≠teli?
 
 	hero.aivar[AIV_LASTDISTTOWP] 		= Npc_GetDistToWP (hero,Org_876_CHECKPOINT);
 	hero.aivar[AIV_GUARDPASSAGE_STATUS]	= AIV_GPS_LASTWARN;	
@@ -404,7 +404,7 @@ func int Info_Org_876_Attack_Info()
 	hero.aivar[AIV_GUARDPASSAGE_STATUS]	= AIV_GPS_PUNISH;	
 	
 	B_FullStop			(self);	
-	AI_StopProcessInfos	(self);					// dem Spieler sofort wieder die Kontrolle zur¸ckgeben
+	AI_StopProcessInfos	(self);					// dem Spieler sofort wieder die Kontrolle zur√ºckgeben
 	B_IntruderAlert		(self,	other);
 	B_SetAttackReason	(self,	AIV_AR_INTRUDER);
 	Npc_SetTarget		(self,	hero);

@@ -34,7 +34,7 @@ instance  DIA_Shrat_WhyHere (C_INFO)
 	condition	= DIA_Shrat_WhyHere_Condition;
 	information	= DIA_Shrat_WhyHere_Info;
 	permanent	= 0;
-	description	= "Co tady dìláš?";
+	description	= "Co tady dÄ›lÃ¡Å¡?";
 };                       
 
 FUNC int  DIA_Shrat_WhyHere_Condition()
@@ -44,12 +44,12 @@ FUNC int  DIA_Shrat_WhyHere_Condition()
 
 FUNC VOID  DIA_Shrat_WhyHere_Info()
 {
-	AI_Output (other, self,"DIA_Shrat_WhyHere_15_00"); //Co tady dìláš?
-	AI_Output (self, other,"DIA_Shrat_WhyHere_02_01"); //Dovolil jsem ti na mì mluvit?
-	AI_Output (self, other,"DIA_Shrat_WhyHere_02_02"); //Jen ertuju! Ti zatracení cvoci mi lezou na nervy, proto jsem tady!
-	AI_Output (self, other,"DIA_Shrat_WhyHere_02_03"); //Nemluv na mì!' - 'Modli se ke Spáèovi za odpuštìní!' - 'Tvùj úkol je nesmírnì dùleitı!'
-	AI_Output (self, other,"DIA_Shrat_WhyHere_02_04"); //Nejde to pustit z hlavy - není divu, e se z toho všichni tady pominuli.
-	AI_Output (self, other,"DIA_Shrat_WhyHere_02_05"); //Jsem Shrat, novic první tøídy - a tím také navdy zùstanu!
+	AI_Output (other, self,"DIA_Shrat_WhyHere_15_00"); //Co tady dÄ›lÃ¡Å¡?
+	AI_Output (self, other,"DIA_Shrat_WhyHere_02_01"); //Dovolil jsem ti na mÄ› mluvit?
+	AI_Output (self, other,"DIA_Shrat_WhyHere_02_02"); //Jen Å¾ertuju! Ti zatracenÃ­ cvoci mi lezou na nervy, proto jsem tady!
+	AI_Output (self, other,"DIA_Shrat_WhyHere_02_03"); //Nemluv na mÄ›!' - 'Modli se ke SpÃ¡Äovi za odpuÅ¡tÄ›nÃ­!' - 'TvÅ¯j Ãºkol je nesmÃ­rnÄ› dÅ¯leÅ¾itÃ½!'
+	AI_Output (self, other,"DIA_Shrat_WhyHere_02_04"); //Nejde to pustit z hlavy - nenÃ­ divu, Å¾e se z toho vÅ¡ichni tady pominuli.
+	AI_Output (self, other,"DIA_Shrat_WhyHere_02_05"); //Jsem Shrat, novic prvnÃ­ tÅ™Ã­dy - a tÃ­m takÃ© navÅ¾dy zÅ¯stanu!
 };
 
 // **************************************************
@@ -63,7 +63,7 @@ instance DIA_Shrat_JoinPSI (C_INFO)
 	condition	= DIA_Shrat_JoinPSI_Condition;
 	information	= DIA_Shrat_JoinPSI_Info;
 	permanent	= 0;
-	description	= "Chci se pøidat k Bratrstvu - mùeš mi pomoci?";
+	description	= "Chci se pÅ™idat k Bratrstvu - mÅ¯Å¾eÅ¡ mi pomoci?";
 };                       
 
 FUNC int DIA_Shrat_JoinPSI_Condition()
@@ -76,9 +76,9 @@ FUNC int DIA_Shrat_JoinPSI_Condition()
 
 FUNC void DIA_Shrat_JoinPSI_Info()
 {
-	AI_Output (other, self,"DIA_Shrat_JoinPSI_15_00"); //Chci se pøidat k Bratrstvu - mùeš mi pomoci?
-	AI_Output (self, other,"DIA_Shrat_JoinPSI_02_01"); //Chceš se k nám pøidat? Já u vánì pøemıšlím o tom, jak se odsud dostat.
-	AI_Output (self, other,"DIA_Shrat_JoinPSI_02_02"); //Mohli bychom se potulovat po kolonii. Ulehèit pár mamlasùm o jejich peníze, nasbírat nìjakou rudu - co myslíš?
+	AI_Output (other, self,"DIA_Shrat_JoinPSI_15_00"); //Chci se pÅ™idat k Bratrstvu - mÅ¯Å¾eÅ¡ mi pomoci?
+	AI_Output (self, other,"DIA_Shrat_JoinPSI_02_01"); //ChceÅ¡ se k nÃ¡m pÅ™idat? JÃ¡ uÅ¾ vÃ¡Å¾nÄ› pÅ™emÃ½Å¡lÃ­m o tom, jak se odsud dostat.
+	AI_Output (self, other,"DIA_Shrat_JoinPSI_02_02"); //Mohli bychom se potulovat po kolonii. UlehÄit pÃ¡r mamlasÅ¯m o jejich penÃ­ze, nasbÃ­rat nÄ›jakou rudu - co myslÃ­Å¡?
 };
 
 // **************************************************
@@ -92,7 +92,7 @@ instance DIA_Shrat_ComeWithMe (C_INFO)
 	condition	= DIA_Shrat_ComeWithMe_Condition;
 	information	= DIA_Shrat_ComeWithMe_Info;
 	permanent	= 1;
-	description	= "Mùeme se toulat spoleènì! Pojï se mnou!";
+	description	= "MÅ¯Å¾eme se toulat spoleÄnÄ›! PojÄ se mnou!";
 };                       
 
 FUNC int DIA_Shrat_ComeWithMe_Condition()
@@ -105,8 +105,8 @@ FUNC int DIA_Shrat_ComeWithMe_Condition()
 
 FUNC void DIA_Shrat_ComeWithMe_Info()
 {
-	AI_Output (other, self,"DIA_Shrat_ComeWithMe_15_00"); //Mùeme se toulat spoleènì! Pojï se mnou!
-	AI_Output (self, other,"DIA_Shrat_ComeWithMe_02_01"); //Tohle rád slyším! Pojïme!
+	AI_Output (other, self,"DIA_Shrat_ComeWithMe_15_00"); //MÅ¯Å¾eme se toulat spoleÄnÄ›! PojÄ se mnou!
+	AI_Output (self, other,"DIA_Shrat_ComeWithMe_02_01"); //Tohle rÃ¡d slyÅ¡Ã­m! PojÄme!
 
 	Npc_ExchangeRoutine (self, "FOLLOW");
 	self.aivar[AIV_PARTYMEMBER] = TRUE;
@@ -123,7 +123,7 @@ instance DIA_Shrat_LeaveMe (C_INFO)
 	condition	= DIA_Shrat_LeaveMe_Condition;
 	information	= DIA_Shrat_LeaveMe_Info;
 	permanent	= 1;
-	description	= "Naše cesty se rozcházejí - pùjdu si po svıch.";
+	description	= "NaÅ¡e cesty se rozchÃ¡zejÃ­ - pÅ¯jdu si po svÃ½ch.";
 };                       
 
 FUNC int DIA_Shrat_LeaveMe_Condition()
@@ -136,8 +136,8 @@ FUNC int DIA_Shrat_LeaveMe_Condition()
 
 FUNC void DIA_Shrat_LeaveMe_Info()
 {
-	AI_Output (other, self,"DIA_Shrat_LeaveMe_15_00"); //Naše cesty se rozcházejí - pùjdu si po svıch.
-	AI_Output (self, other,"DIA_Shrat_LeaveMe_02_01"); //Dobøe. Já se vrátím do svého úkrytu v bainách. Dávej na sebe pozor!
+	AI_Output (other, self,"DIA_Shrat_LeaveMe_15_00"); //NaÅ¡e cesty se rozchÃ¡zejÃ­ - pÅ¯jdu si po svÃ½ch.
+	AI_Output (self, other,"DIA_Shrat_LeaveMe_02_01"); //DobÅ™e. JÃ¡ se vrÃ¡tÃ­m do svÃ©ho Ãºkrytu v baÅ¾inÃ¡ch. DÃ¡vej na sebe pozor!
 
 	Npc_ExchangeRoutine (self, "START");
 	self.aivar[AIV_PARTYMEMBER] = FALSE;

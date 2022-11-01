@@ -40,7 +40,7 @@ instance  KDW_604_Cronos_Greet (C_INFO)
 	condition	=  KDW_604_Cronos_Greet_Condition;
 	information	=  KDW_604_Cronos_Greet_Info;
 	permanent	=  0;
-	description = "Ich grüße dich, Magier.";
+	description = "Ich grÃ¼ÃŸe dich, Magier.";
 };                       
 
 FUNC int  KDW_604_Cronos_Greet_Condition()
@@ -50,8 +50,8 @@ FUNC int  KDW_604_Cronos_Greet_Condition()
 
 FUNC VOID  KDW_604_Cronos_Greet_Info()
 {
-	AI_Output (other, self,"DIA_Cronos_Greet_15_00"); //Ich grüße dich, Magier.
-	AI_Output (self, other,"DIA_Cronos_Greet_08_01"); //Warum störst du den Hüter des Erzes?
+	AI_Output (other, self,"DIA_Cronos_Greet_15_00"); //Ich grÃ¼ÃŸe dich, Magier.
+	AI_Output (self, other,"DIA_Cronos_Greet_08_01"); //Warum stÃ¶rst du den HÃ¼ter des Erzes?
 };
 */
 
@@ -66,7 +66,7 @@ instance  KDW_604_Cronos_Brief (C_INFO)
 	condition	=  KDW_604_Cronos_Brief_Condition;
 	information	=  KDW_604_Cronos_Brief_Info;
 	permanent	=  0;
-	description = "Mám dopis pro Velkého mága Kruhu ohnì.";
+	description = "MÃ¡m dopis pro VelkÃ©ho mÃ¡ga Kruhu ohnÄ›.";
 };                       
 
 FUNC int  KDW_604_Cronos_Brief_Condition()
@@ -82,11 +82,11 @@ FUNC int  KDW_604_Cronos_Brief_Condition()
 
 FUNC VOID  KDW_604_Cronos_Brief_Info()
 {
-	AI_Output (other, self,"DIA_Cronos_Brief_15_00"); //Mám dopis pro Velkého mága Kruhu ohnì.
-	AI_Output (self, other,"DIA_Cronos_Brief_08_01"); //Jsme mágové Kruhu vody. Mágové Kruhu ohnì ijí ve Starém táboøe.
-	AI_Output (other, self,"DIA_Cronos_Brief_15_02"); //Já se ale nedostanu na hrad. Mùeš mi pomoci?
-	AI_Output (self, other,"DIA_Cronos_Brief_08_03"); //Dobrá, obèas vysíláme k bratrùm do Starého tábora kurıry...
-	AI_Output (self, other,"DIA_Cronos_Brief_08_04"); //Ti ovšem mohou ty dopisy pouze pøedat Laresovım muùm. Bìhem mnoha let, co to takhle dìláme, se naši kurıøi bezpeènì vracejí zpátky.
+	AI_Output (other, self,"DIA_Cronos_Brief_15_00"); //MÃ¡m dopis pro VelkÃ©ho mÃ¡ga Kruhu ohnÄ›.
+	AI_Output (self, other,"DIA_Cronos_Brief_08_01"); //Jsme mÃ¡govÃ© Kruhu vody. MÃ¡govÃ© Kruhu ohnÄ› Å¾ijÃ­ ve StarÃ©m tÃ¡boÅ™e.
+	AI_Output (other, self,"DIA_Cronos_Brief_15_02"); //JÃ¡ se ale nedostanu na hrad. MÅ¯Å¾eÅ¡ mi pomoci?
+	AI_Output (self, other,"DIA_Cronos_Brief_08_03"); //DobrÃ¡, obÄas vysÃ­lÃ¡me k bratrÅ¯m do StarÃ©ho tÃ¡bora kurÃ½ry...
+	AI_Output (self, other,"DIA_Cronos_Brief_08_04"); //Ti ovÅ¡em mohou ty dopisy pouze pÅ™edat LaresovÃ½m muÅ¾Å¯m. BÄ›hem mnoha let, co to takhle dÄ›lÃ¡me, se naÅ¡i kurÃ½Å™i bezpeÄnÄ› vracejÃ­ zpÃ¡tky.
 };
 
 // *****************************************
@@ -100,7 +100,7 @@ instance  KDW_604_Cronos_Barrier (C_INFO)
 	condition	=  KDW_604_Cronos_Barrier_Condition;
 	information	=  KDW_604_Cronos_Barrier_Info;
 	permanent	=  0;
-	description = "Chcete rozbít Bariéru - jak se to pøesnì chystáte udìlat?";
+	description = "Chcete rozbÃ­t BariÃ©ru - jak se to pÅ™esnÄ› chystÃ¡te udÄ›lat?";
 };                       
 
 FUNC int  KDW_604_Cronos_Barrier_Condition()
@@ -113,11 +113,11 @@ FUNC int  KDW_604_Cronos_Barrier_Condition()
 
 FUNC VOID  KDW_604_Cronos_Barrier_Info()
 {
-	AI_Output (other, self,"DIA_Cronos_Barrier_15_00"); //Chcete rozbít Bariéru - jak se to pøesnì chystáte udìlat?
-	AI_Output (self, other,"DIA_Cronos_Barrier_08_01"); //Potøebujeme velké mnoství magické rudy.
-	AI_Output (self, other,"DIA_Cronos_Barrier_08_02"); //Pøi velkém magickém obøadu uvolníme všechnu magickou sílu, která rozbije Bariéru.
-	AI_Output (self, other,"DIA_Cronos_Barrier_08_03"); //Takové velké mnoství magické rudy ovšem samozøejmì pøiláká spoustu zlodìjù a darebákù!
-	AI_Output (self, other,"DIA_Cronos_Barrier_08_04"); //Proto potøebujeme nìkoho, kdo náš plán ochrání.
+	AI_Output (other, self,"DIA_Cronos_Barrier_15_00"); //Chcete rozbÃ­t BariÃ©ru - jak se to pÅ™esnÄ› chystÃ¡te udÄ›lat?
+	AI_Output (self, other,"DIA_Cronos_Barrier_08_01"); //PotÅ™ebujeme velkÃ© mnoÅ¾stvÃ­ magickÃ© rudy.
+	AI_Output (self, other,"DIA_Cronos_Barrier_08_02"); //PÅ™i velkÃ©m magickÃ©m obÅ™adu uvolnÃ­me vÅ¡echnu magickou sÃ­lu, kterÃ¡ rozbije BariÃ©ru.
+	AI_Output (self, other,"DIA_Cronos_Barrier_08_03"); //TakovÃ© velkÃ© mnoÅ¾stvÃ­ magickÃ© rudy ovÅ¡em samozÅ™ejmÄ› pÅ™ilÃ¡kÃ¡ spoustu zlodÄ›jÅ¯ a darebÃ¡kÅ¯!
+	AI_Output (self, other,"DIA_Cronos_Barrier_08_04"); //Proto potÅ™ebujeme nÄ›koho, kdo nÃ¡Å¡ plÃ¡n ochrÃ¡nÃ­.
 };
 
 // *****************************************
@@ -131,7 +131,7 @@ instance  KDW_604_Cronos_WannaJoin (C_INFO)
 	condition	=  KDW_604_Cronos_WannaJoin_Condition;
 	information	=  KDW_604_Cronos_WannaJoin_Info;
 	permanent	=  0;
-	description = "Chtìl bych se k vám pøidat!";
+	description = "ChtÄ›l bych se k vÃ¡m pÅ™idat!";
 };                       
 
 FUNC int  KDW_604_Cronos_WannaJoin_Condition()
@@ -144,8 +144,8 @@ FUNC int  KDW_604_Cronos_WannaJoin_Condition()
 
 FUNC VOID  KDW_604_Cronos_WannaJoin_Info()
 {
-	AI_Output (other, self,"DIA_Cronos_WannaJoin_15_00"); //Chtìl bych se k vám pøidat!
-	AI_Output (self, other,"DIA_Cronos_WannaJoin_08_01"); //Jestli se k nám chceš pøidat, mìl bys zajít za Leem nebo Laresem.
+	AI_Output (other, self,"DIA_Cronos_WannaJoin_15_00"); //ChtÄ›l bych se k vÃ¡m pÅ™idat!
+	AI_Output (self, other,"DIA_Cronos_WannaJoin_08_01"); //Jestli se k nÃ¡m chceÅ¡ pÅ™idat, mÄ›l bys zajÃ­t za Leem nebo Laresem.
 };
 
 // *****************************************
@@ -159,7 +159,7 @@ instance  KDW_604_Cronos_WannaMage (C_INFO)
 	condition	=  KDW_604_Cronos_WannaMage_Condition;
 	information	=  KDW_604_Cronos_WannaMage_Info;
 	permanent	=  0;
-	description = "Chtìl bych se stát mágem!";
+	description = "ChtÄ›l bych se stÃ¡t mÃ¡gem!";
 };                       
 
 FUNC int  KDW_604_Cronos_WannaMage_Condition()
@@ -172,9 +172,9 @@ FUNC int  KDW_604_Cronos_WannaMage_Condition()
 
 FUNC VOID  KDW_604_Cronos_WannaMage_Info()
 {
-	AI_Output (other, self,"DIA_Cronos_WannaMage_15_00"); //Chtìl bych se stát mágem!
-	AI_Output (self, other,"DIA_Cronos_WannaMage_08_01"); //Nemùeme dopustit, aby se naše vìdomosti dostaly k našim nepøátelùm.
-	AI_Output (self, other,"DIA_Cronos_WannaMage_08_02"); //Nemùeme tì ani cvièit, dokud nám neprokáeš svoji oddanost.
+	AI_Output (other, self,"DIA_Cronos_WannaMage_15_00"); //ChtÄ›l bych se stÃ¡t mÃ¡gem!
+	AI_Output (self, other,"DIA_Cronos_WannaMage_08_01"); //NemÅ¯Å¾eme dopustit, aby se naÅ¡e vÄ›domosti dostaly k naÅ¡im nepÅ™Ã¡telÅ¯m.
+	AI_Output (self, other,"DIA_Cronos_WannaMage_08_02"); //NemÅ¯Å¾eme tÄ› ani cviÄit, dokud nÃ¡m neprokÃ¡Å¾eÅ¡ svoji oddanost.
 };
 
 ///////////////////////////////////////////////////
@@ -194,7 +194,7 @@ instance  KDW_604_Cronos_Bandit (C_INFO)
 	condition	=  KDW_604_Cronos_Bandit_Condition;
 	information	=  KDW_604_Cronos_Bandit_Info;
 	permanent	=  0;
-	description = "Jsem teï jedním z Laresovıch muù. Nemáš nìjakou zprávu pro mágy Ohnì?";
+	description = "Jsem teÄ jednÃ­m z LaresovÃ½ch muÅ¾Å¯. NemÃ¡Å¡ nÄ›jakou zprÃ¡vu pro mÃ¡gy OhnÄ›?";
 };                       
 
 FUNC int  KDW_604_Cronos_Bandit_Condition()
@@ -207,9 +207,9 @@ FUNC int  KDW_604_Cronos_Bandit_Condition()
 
 FUNC VOID  KDW_604_Cronos_Bandit_Info()
 {
-	AI_Output (other, self,"DIA_Cronos_Bandit_15_00"); //Jsem teï jedním z Laresovıch muù. Nemáš nìjakou zprávu pro mágy Ohnì?
-	AI_Output (self, other,"DIA_Cronos_Bandit_08_01"); //Opravdu. Budeš ale potøebovat znamení našich kurırù, jinak tì Gomezovi mui nepustí na hrad.
-	AI_Output (self, other,"DIA_Cronos_Bandit_08_02"); //Tady je dopis a znamení. A teï u pospíchej!
+	AI_Output (other, self,"DIA_Cronos_Bandit_15_00"); //Jsem teÄ jednÃ­m z LaresovÃ½ch muÅ¾Å¯. NemÃ¡Å¡ nÄ›jakou zprÃ¡vu pro mÃ¡gy OhnÄ›?
+	AI_Output (self, other,"DIA_Cronos_Bandit_08_01"); //Opravdu. BudeÅ¡ ale potÅ™ebovat znamenÃ­ naÅ¡ich kurÃ½rÅ¯, jinak tÄ› Gomezovi muÅ¾i nepustÃ­ na hrad.
+	AI_Output (self, other,"DIA_Cronos_Bandit_08_02"); //Tady je dopis a znamenÃ­. A teÄ uÅ¾ pospÃ­chej!
 	
 	CreateInvItem (other,KdW_Amulett);
 	CreateInvItem (other,Cronos_Brief);
@@ -228,7 +228,7 @@ instance  KDW_604_Cronos_BriefBack (C_INFO)
 	condition	=  KDW_604_Cronos_BriefBack_Condition;
 	information	=  KDW_604_Cronos_BriefBack_Info;
 	permanent	=  0;
-	description = "Pøedal jsem tu zprávu!";
+	description = "PÅ™edal jsem tu zprÃ¡vu!";
 };                       
 
 FUNC int  KDW_604_Cronos_BriefBack_Condition()
@@ -241,8 +241,8 @@ FUNC int  KDW_604_Cronos_BriefBack_Condition()
 
 FUNC VOID  KDW_604_Cronos_BriefBack_Info()
 {
-	AI_Output (other, self,"DIA_Cronos_BriefBack_15_00"); //Pøedal jsem tu zprávu!
-	AI_Output (self, other,"DIA_Cronos_BriefBack_08_01"); //Á, vıbornì! Tady je malá odmìna za tvoji snahu!
+	AI_Output (other, self,"DIA_Cronos_BriefBack_15_00"); //PÅ™edal jsem tu zprÃ¡vu!
+	AI_Output (self, other,"DIA_Cronos_BriefBack_08_01"); //Ã, vÃ½bornÄ›! Tady je malÃ¡ odmÄ›na za tvoji snahu!
 	
 	CreateInvItems (self,itminugget, 200);
 	B_GiveInvItems (self, other, itminugget, 200);
@@ -267,7 +267,7 @@ instance Info_Cronos_NEWS (C_INFO)
 	information	= Info_Cronos_NEWS_Info;
 	permanent	= 0;
 	important 	= 0;
-	description = "Mám dùleitou zprávu pro Saturase!";
+	description = "MÃ¡m dÅ¯leÅ¾itou zprÃ¡vu pro Saturase!";
 };
 
 FUNC INT Info_Cronos_NEWS_Condition()
@@ -281,8 +281,8 @@ FUNC INT Info_Cronos_NEWS_Condition()
 
 FUNC VOID Info_Cronos_NEWS_Info()
 {
-	AI_Output			(other, self,"Info_Cronos_NEWS_15_01"); //Mám dùleitou zprávu pro Saturase!
-	AI_Output			(self, other,"Info_Cronos_NEWS_08_02"); //Co mùe bıt tak dùleité, aby náš duchovní vùdce kvùli tomu pøerušil své dùleité studium?
+	AI_Output			(other, self,"Info_Cronos_NEWS_15_01"); //MÃ¡m dÅ¯leÅ¾itou zprÃ¡vu pro Saturase!
+	AI_Output			(self, other,"Info_Cronos_NEWS_08_02"); //Co mÅ¯Å¾e bÃ½t tak dÅ¯leÅ¾itÃ©, aby nÃ¡Å¡ duchovnÃ­ vÅ¯dce kvÅ¯li tomu pÅ™eruÅ¡il svÃ© dÅ¯leÅ¾itÃ© studium?
 };
 
 //***************************************************************************
@@ -309,11 +309,11 @@ FUNC INT Info_Cronos_KALOM_Condition()
 
 FUNC VOID Info_Cronos_KALOM_Info()
 {
-	AI_Output			(other, self,"Info_Cronos_KALOM_15_01"); //Cor Kalom opustil spolu s nìkolika fanatickımi templáøi Bratrstvo!
-	AI_Output			(other, self,"Info_Cronos_KALOM_15_02"); //Chce na vlastní pìst najít Spáèe a za kadou cenu ho probudit.
-	AI_Output			(self, other,"Info_Cronos_KALOM_08_03"); //Nikdy jsem mu nevìøil. A u je Druhı Guru guru nebo ne, je domıšlivı, zákeønı a všehoschopnı.
-	AI_Output			(self, other,"Info_Cronos_KALOM_08_04"); //Bratrstvu bez nìj bude líp!
-	AI_Output			(self, other,"Info_Cronos_KALOM_08_05"); //Øeknu o tom Saturasovi, jakmile k tomu dostanu pøíleitost. Teï jdi!
+	AI_Output			(other, self,"Info_Cronos_KALOM_15_01"); //Cor Kalom opustil spolu s nÄ›kolika fanatickÃ½mi templÃ¡Å™i Bratrstvo!
+	AI_Output			(other, self,"Info_Cronos_KALOM_15_02"); //Chce na vlastnÃ­ pÄ›st najÃ­t SpÃ¡Äe a za kaÅ¾dou cenu ho probudit.
+	AI_Output			(self, other,"Info_Cronos_KALOM_08_03"); //Nikdy jsem mu nevÄ›Å™il. AÅ¥ uÅ¾ je DruhÃ½ Guru guru nebo ne, je domÃ½Å¡livÃ½, zÃ¡keÅ™nÃ½ a vÅ¡ehoschopnÃ½.
+	AI_Output			(self, other,"Info_Cronos_KALOM_08_04"); //Bratrstvu bez nÄ›j bude lÃ­p!
+	AI_Output			(self, other,"Info_Cronos_KALOM_08_05"); //Å˜eknu o tom Saturasovi, jakmile k tomu dostanu pÅ™Ã­leÅ¾itost. TeÄ jdi!
 
 	AI_StopProcessInfos	(self);
 };
@@ -329,7 +329,7 @@ instance Info_Cronos_YBERION (C_INFO)
 	information	= Info_Cronos_YBERION_Info;
 	permanent	= 0;
 	important 	= 0;
-	description = "Y´Berion, vùdce Sektovního tábora, je mrtev!";
+	description = "YÂ´Berion, vÅ¯dce SektovnÃ­ho tÃ¡bora, je mrtev!";
 };
 
 FUNC INT Info_Cronos_YBERION_Condition()
@@ -342,12 +342,12 @@ FUNC INT Info_Cronos_YBERION_Condition()
 
 FUNC VOID Info_Cronos_YBERION_Info()
 {
-	AI_Output			(other, self,"Info_Cronos_YBERION_15_01"); //Y´Berion, vùdce Sektovního tábora, je mrtev!
-	AI_Output			(self, other,"Info_Cronos_YBERION_08_02"); //COEEE??? Jak se to stalo?
-	AI_Output			(other, self,"Info_Cronos_YBERION_15_03"); //Bratrstvo provádìlo obøad, pøi kterém vzıvalo svého boha.
-	AI_Output			(other, self,"Info_Cronos_YBERION_15_04"); //Myšlenkové napìtí však bylo pro Y´Beriona pøíliš velké.
-	AI_Output			(self, other,"Info_Cronos_YBERION_08_05"); //To je velmi smutné. Y´Berion byl spolehlivı spojenec.
-	AI_Output			(self, other,"Info_Cronos_YBERION_08_06"); //Není to ale dùvod, kterı by ospravedlnil pøerušení Saturasova studia.
+	AI_Output			(other, self,"Info_Cronos_YBERION_15_01"); //YÂ´Berion, vÅ¯dce SektovnÃ­ho tÃ¡bora, je mrtev!
+	AI_Output			(self, other,"Info_Cronos_YBERION_08_02"); //COÅ½EEE??? Jak se to stalo?
+	AI_Output			(other, self,"Info_Cronos_YBERION_15_03"); //Bratrstvo provÃ¡dÄ›lo obÅ™ad, pÅ™i kterÃ©m vzÃ½valo svÃ©ho boha.
+	AI_Output			(other, self,"Info_Cronos_YBERION_15_04"); //MyÅ¡lenkovÃ© napÄ›tÃ­ vÅ¡ak bylo pro YÂ´Beriona pÅ™Ã­liÅ¡ velkÃ©.
+	AI_Output			(self, other,"Info_Cronos_YBERION_08_05"); //To je velmi smutnÃ©. YÂ´Berion byl spolehlivÃ½ spojenec.
+	AI_Output			(self, other,"Info_Cronos_YBERION_08_06"); //NenÃ­ to ale dÅ¯vod, kterÃ½ by ospravedlnil pÅ™eruÅ¡enÃ­ Saturasova studia.
 
 	AI_StopProcessInfos	(self);
 };
@@ -363,7 +363,7 @@ instance Info_Cronos_SLEEPER (C_INFO)
 	information	= Info_Cronos_SLEEPER_Info;
 	permanent	= 0;
 	important 	= 0;
-	description = "Guru zjistili, e se modlí ke zlému arcidémonovi!";
+	description = "Guru zjistili, Å¾e se modlÃ­ ke zlÃ©mu arcidÃ©monovi!";
 };
 
 FUNC INT Info_Cronos_SLEEPER_Condition()
@@ -376,18 +376,18 @@ FUNC INT Info_Cronos_SLEEPER_Condition()
 
 FUNC VOID Info_Cronos_SLEEPER_Info()
 {
-	AI_Output			(other, self,"Info_Cronos_SLEEPER_15_01"); //Guru zjistili, e se modlí ke zlému arcidémonovi!
-	AI_Output			(self, other,"Info_Cronos_SLEEPER_08_02"); //Všichni zaèali najednou vìøit, e je jejich Spáè démon?
-	AI_Output			(self, other,"Info_Cronos_SLEEPER_08_03"); //Vypadá to na další šílenı vımysl Bratrstva, ale...
-	AI_Output			(self, other,"Info_Cronos_SLEEPER_08_04"); //...moná mají pravdu... všichni tady v kolonii bysme se mohli ocitnout ve velkém nebezpeèí.
-	AI_Output			(self, other,"Info_Cronos_SLEEPER_08_05"); //Musíš to ihned sdìlit Saturasovi. Musí rozhodnout, co bude tøeba udìlat.
+	AI_Output			(other, self,"Info_Cronos_SLEEPER_15_01"); //Guru zjistili, Å¾e se modlÃ­ ke zlÃ©mu arcidÃ©monovi!
+	AI_Output			(self, other,"Info_Cronos_SLEEPER_08_02"); //VÅ¡ichni zaÄali najednou vÄ›Å™it, Å¾e je jejich SpÃ¡Ä dÃ©mon?
+	AI_Output			(self, other,"Info_Cronos_SLEEPER_08_03"); //VypadÃ¡ to na dalÅ¡Ã­ Å¡Ã­lenÃ½ vÃ½mysl Bratrstva, ale...
+	AI_Output			(self, other,"Info_Cronos_SLEEPER_08_04"); //...moÅ¾nÃ¡ majÃ­ pravdu... vÅ¡ichni tady v kolonii bysme se mohli ocitnout ve velkÃ©m nebezpeÄÃ­.
+	AI_Output			(self, other,"Info_Cronos_SLEEPER_08_05"); //MusÃ­Å¡ to ihned sdÄ›lit Saturasovi. MusÃ­ rozhodnout, co bude tÅ™eba udÄ›lat.
 	AI_Output			(other, self,"Info_Cronos_SLEEPER_15_06"); //Kde najdu Saturase?
-	AI_Output			(self, other,"Info_Cronos_SLEEPER_08_07"); //Jdi do horní roviny. Øekni stráím, e máš mé povolení ke vstupu.
+	AI_Output			(self, other,"Info_Cronos_SLEEPER_08_07"); //Jdi do hornÃ­ roviny. Å˜ekni strÃ¡Å¾Ã­m, Å¾e mÃ¡Å¡ mÃ© povolenÃ­ ke vstupu.
 	AI_Output			(self, other,"Info_Cronos_SLEEPER_08_08"); //Heslo je TETRIANDOCH.
-	AI_Output			(self, other,"Info_Cronos_SLEEPER_08_09"); //Saturase najdeš u velkého pentagramu.
-	AI_Output			(self, other,"Info_Cronos_SLEEPER_08_10"); //Tráví tam vìtšinu èasu a zkoumá, jak odpálit velkou rudnou haldu.
+	AI_Output			(self, other,"Info_Cronos_SLEEPER_08_09"); //Saturase najdeÅ¡ u velkÃ©ho pentagramu.
+	AI_Output			(self, other,"Info_Cronos_SLEEPER_08_10"); //TrÃ¡vÃ­ tam vÄ›tÅ¡inu Äasu a zkoumÃ¡, jak odpÃ¡lit velkou rudnou haldu.
 
-	B_LogEntry			(CH3_EscapePlanNC,"Cronos mi dal svolení navštívit Saturase v horní rovinì. Velkého mága Kruhu vody lze obvykle najít u pentagramu. Heslo pro strá zní... Sakra, jak to jen bylo?");
+	B_LogEntry			(CH3_EscapePlanNC,"Cronos mi dal svolenÃ­ navÅ¡tÃ­vit Saturase v hornÃ­ rovinÄ›. VelkÃ©ho mÃ¡ga Kruhu vody lze obvykle najÃ­t u pentagramu. Heslo pro strÃ¡Å¾ znÃ­... Sakra, jak to jen bylo?");
 
 	B_GiveXP			(XP_GetCronosPermission);
 
@@ -405,7 +405,7 @@ instance Info_Cronos_PAROLE (C_INFO)
 	information	= Info_Cronos_PAROLE_Info;
 	permanent	= 0;
 	important 	= 0;
-	description = "Jake bylo to heslo?";
+	description = "JakÅ¾e bylo to heslo?";
 };
 
 FUNC INT Info_Cronos_PAROLE_Condition()
@@ -418,8 +418,8 @@ FUNC INT Info_Cronos_PAROLE_Condition()
 
 FUNC VOID Info_Cronos_PAROLE_Info()
 {
-	AI_Output			(other, self,"Info_Cronos_PAROLE_15_01"); //Jake bylo to heslo?
-	AI_Output			(self, other,"Info_Cronos_PAROLE_08_02"); //Jsi ještì roztritìjší ne moje bába. Zní 'TETRIANDOCH'.
+	AI_Output			(other, self,"Info_Cronos_PAROLE_15_01"); //JakÅ¾e bylo to heslo?
+	AI_Output			(self, other,"Info_Cronos_PAROLE_08_02"); //Jsi jeÅ¡tÄ› roztrÅ¾itÄ›jÅ¡Ã­ neÅ¾ moje bÃ¡ba. ZnÃ­ 'TETRIANDOCH'.
 };
 
 //***************************************************************************
@@ -433,7 +433,7 @@ instance Info_Cronos_REWARD (C_INFO)
 	information	= Info_Cronos_REWARD_Info;
 	permanent	= 0;
 	important 	= 0;
-	description = "Saturas øekl, e mì máš odmìnit.";
+	description = "Saturas Å™ekl, Å¾e mÄ› mÃ¡Å¡ odmÄ›nit.";
 };
 
 FUNC INT Info_Cronos_REWARD_Condition()
@@ -446,11 +446,11 @@ FUNC INT Info_Cronos_REWARD_Condition()
 
 FUNC VOID Info_Cronos_REWARD_Info()
 {
-	AI_Output			(other, self,"Info_Cronos_REWARD_15_01"); //Saturas øekl, e mì máš odmìnit.
-	AI_Output			(self, other,"Info_Cronos_REWARD_08_02"); //Jako stráce magické rudy bych ti za tvoje velké èiny pro náš tábor chtìl  dát trošku naší rudy.
-	AI_Output			(self, other,"Info_Cronos_REWARD_08_03"); //Doufám, e ho pouiješ, jak nejlépe budeš umìt!
+	AI_Output			(other, self,"Info_Cronos_REWARD_15_01"); //Saturas Å™ekl, Å¾e mÄ› mÃ¡Å¡ odmÄ›nit.
+	AI_Output			(self, other,"Info_Cronos_REWARD_08_02"); //Jako strÃ¡Å¾ce magickÃ© rudy bych ti za tvoje velkÃ© Äiny pro nÃ¡Å¡ tÃ¡bor chtÄ›l  dÃ¡t troÅ¡ku naÅ¡Ã­ rudy.
+	AI_Output			(self, other,"Info_Cronos_REWARD_08_03"); //DoufÃ¡m, Å¾e ho pouÅ¾ijeÅ¡, jak nejlÃ©pe budeÅ¡ umÄ›t!
 
-	B_LogEntry		(CH3_BringFoci,"Cronos mi dal velké mnoství rudy, které dost zmenší tu obrovitou rudnou haldu.");
+	B_LogEntry		(CH3_BringFoci,"Cronos mi dal velkÃ© mnoÅ¾stvÃ­ rudy, kterÃ© dost zmenÅ¡Ã­ tu obrovitou rudnou haldu.");
 	if	Npc_KnowsInfo(hero, Info_Riordian_REWARD)
 	{
 		Log_SetTopicStatus	(CH3_BringFoci,	LOG_SUCCESS);
@@ -480,7 +480,7 @@ FUNC int  KDW_604_Cronos_WELCOME_Condition()
 };
 func void  KDW_604_Cronos_WELCOME_Info()
 {
-	AI_Output			(self, other,"KDW_604_Cronos_WELCOME_Info_08_01"); //Tvoje rozhodnutí pøidat se mágùm Vody bylo správné. Buï vítán, bratøe!
+	AI_Output			(self, other,"KDW_604_Cronos_WELCOME_Info_08_01"); //Tvoje rozhodnutÃ­ pÅ™idat se mÃ¡gÅ¯m Vody bylo sprÃ¡vnÃ©. BuÄ vÃ­tÃ¡n, bratÅ™e!
 	AI_StopProcessInfos	( self );  
 };
 //--------------------------------------------------------------------------
@@ -496,7 +496,7 @@ instance  KDW_604_Cronos_MANA (C_INFO)
 	information		= KDW_604_Cronos_MANA_Info;
 	important		= 0;
 	permanent		= 1;
-	description		= "Potøebuji více magické moci."; 
+	description		= "PotÅ™ebuji vÃ­ce magickÃ© moci."; 
 };
 
 FUNC int  KDW_604_Cronos_MANA_Condition()
@@ -510,8 +510,8 @@ FUNC int  KDW_604_Cronos_MANA_Condition()
 };
 FUNC void  KDW_604_Cronos_MANA_Info()
 {
-	AI_Output			(other, self,"KDW_604_Cronos_MANA_Info_15_01"); //Potøebuju více magické síly.
-	AI_Output			(self, other,"KDW_604_Cronos_MANA_Info_08_02"); //Mùu ti pomoci zvìtšit tvoji sílu. Uívej ji moudøe.
+	AI_Output			(other, self,"KDW_604_Cronos_MANA_Info_15_01"); //PotÅ™ebuju vÃ­ce magickÃ© sÃ­ly.
+	AI_Output			(self, other,"KDW_604_Cronos_MANA_Info_08_02"); //MÅ¯Å¾u ti pomoci zvÄ›tÅ¡it tvoji sÃ­lu. UÅ¾Ã­vej ji moudÅ™e.
 	
 	Info_ClearChoices	(KDW_604_Cronos_MANA);
 	Info_AddChoice		(KDW_604_Cronos_MANA,DIALOG_BACK									,KDW_604_Cronos_MANA_BACK);
@@ -568,11 +568,11 @@ FUNC int  KDW_604_Cronos_SELLSTUFF_Condition()
 };
 FUNC void  KDW_604_Cronos_SELLSTUFF_Info()
 {
-	AI_Output (other, self,"KDW_604_Cronos_SELLSTUFF_Info_15_01"); //Rád bych získal magické spisy.
+	AI_Output (other, self,"KDW_604_Cronos_SELLSTUFF_Info_15_01"); //RÃ¡d bych zÃ­skal magickÃ© spisy.
 	
 };  
 /*------------------------------------------------------------------------
-						BEGRÜSSUNG						
+						BEGRÃœSSUNG						
 ------------------------------------------------------------------------*/
 
 instance  KDW_604_Cronos_GREET (C_INFO)
@@ -582,7 +582,7 @@ instance  KDW_604_Cronos_GREET (C_INFO)
 	information		= KDW_604_Cronos_GREET_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Buï zdráv, mágu."; 
+	description		= "BuÄ zdrÃ¡v, mÃ¡gu."; 
 };
 
 FUNC int  KDW_604_Cronos_GREET_Condition()
@@ -593,11 +593,11 @@ FUNC int  KDW_604_Cronos_GREET_Condition()
 
 FUNC void  KDW_604_Cronos_GREET_Info()
 {
-	AI_Output (other, self,"KDW_604_Cronos_GREET_Info_15_01"); //Buï pozdraven, mágu.
-	AI_Output (self, other,"KDW_604_Cronos_GREET_Info_08_02"); //Ké je Adanosovo poehnání s tebou. Mùu ti pomoci zvìtšit tvé magické síly, nebo ti dát pár uiteènıch vìcí.
-	AI_Output (self, other,"KDW_604_Cronos_GREET_Info_08_03"); //Co pro tebe mùu udìlat?
+	AI_Output (other, self,"KDW_604_Cronos_GREET_Info_15_01"); //BuÄ pozdraven, mÃ¡gu.
+	AI_Output (self, other,"KDW_604_Cronos_GREET_Info_08_02"); //KÃ©Å¾ je Adanosovo poÅ¾ehnÃ¡nÃ­ s tebou. MÅ¯Å¾u ti pomoci zvÄ›tÅ¡it tvÃ© magickÃ© sÃ­ly, nebo ti dÃ¡t pÃ¡r uÅ¾iteÄnÃ½ch vÄ›cÃ­.
+	AI_Output (self, other,"KDW_604_Cronos_GREET_Info_08_03"); //Co pro tebe mÅ¯Å¾u udÄ›lat?
 	Log_CreateTopic (GE_TraderNC,LOG_NOTE);
-	B_LogEntry (GE_TraderNC,"Cronos prodává magické pøedmìty jako RUNY, SVITKY a PRSTENY. Mùu ho ve dne v noci najít u møíe nad velkou rudnou haldou."); 
+	B_LogEntry (GE_TraderNC,"Cronos prodÃ¡vÃ¡ magickÃ© pÅ™edmÄ›ty jako RUNY, SVITKY a PRSTENY. MÅ¯Å¾u ho ve dne v noci najÃ­t u mÅ™Ã­Å¾e nad velkou rudnou haldou."); 
 	Log_CreateTopic (GE_TeacherNC,LOG_NOTE);
-	B_LogEntry (GE_TeacherNC,"Cronos mi mùe pomoci zvıšit MAGICKOU ENERGII. Mùu ho ve dne v noci najít u møíe nad velkou rudnou haldou.");
+	B_LogEntry (GE_TeacherNC,"Cronos mi mÅ¯Å¾e pomoci zvÃ½Å¡it MAGICKOU ENERGII. MÅ¯Å¾u ho ve dne v noci najÃ­t u mÅ™Ã­Å¾e nad velkou rudnou haldou.");
 };

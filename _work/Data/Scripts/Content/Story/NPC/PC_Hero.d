@@ -3,7 +3,7 @@ INSTANCE PC_Hero(NPC_DEFAULT)
 
 {
 	//-------- primary data --------		
-	name 			= "J·";
+	name 			= "J√°";
 	Npctype			= NPCTYPE_MAIN;
 	guild			= GIL_NONE;
 	level			= 0;
@@ -37,14 +37,14 @@ INSTANCE PC_Hero(NPC_DEFAULT)
 
 
 // ***************************************************************************
-// PlayerInstanz ANFANG LEVEL2!!! Mit Buddlerr¸stung +10, Waffe +13, Waffe +20
+// PlayerInstanz ANFANG LEVEL2!!! Mit Buddlerr√ºstung +10, Waffe +13, Waffe +20
 // ***************************************************************************
 
 INSTANCE PC_Hero_L2(NPC_DEFAULT)
 
 {
 	//-------- primary data --------
-	name 			= "J·";
+	name 			= "J√°";
 	Npctype			= NPCTYPE_MAIN;
 	guild			= GIL_NONE;
 	level			= 2;
@@ -100,7 +100,7 @@ INSTANCE PC_Hero_L5(NPC_DEFAULT)
 
 {
 	//-------- primary data --------
-	name 			= "J·";
+	name 			= "J√°";
 	Npctype			= NPCTYPE_MAIN;
 	guild			= GIL_NONE; //
 	level			= 5;
@@ -151,7 +151,7 @@ INSTANCE PC_Hero_L5(NPC_DEFAULT)
 INSTANCE PC_Hero_L7(NPC_DEFAULT)
 {
 	//-------- primary data --------
-	name 			= "J·";
+	name 			= "J√°";
 	Npctype			= NPCTYPE_MAIN;
 	guild			= GIL_ORG; //
 	level			= 7;
@@ -208,7 +208,7 @@ INSTANCE PC_Hero_L7(NPC_DEFAULT)
 INSTANCE PC_Hero_L11(NPC_DEFAULT)
 {
 	//-------- primary data --------
-	name 			= "J·";
+	name 			= "J√°";
 	Npctype			= NPCTYPE_MAIN;
 	guild			= GIL_SLD; //
 	level			= 11;
@@ -262,7 +262,7 @@ INSTANCE PC_Hero_L11(NPC_DEFAULT)
 INSTANCE PC_Hero_L13(NPC_DEFAULT)
 {
 	//-------- primary data --------
-	name 			= "J·";
+	name 			= "J√°";
 	Npctype			= Npctype_Main;
 	guild			= GIL_SLD; //
 	level			= 13;
@@ -316,7 +316,7 @@ INSTANCE PC_Hero_L13(NPC_DEFAULT)
 
 instance HeroSword13 (C_Item)
 {	
-	name 				=	"Opot¯ebovan˝ meË";//Rostiges Schwert
+	name 				=	"Opot≈ôebovan√Ω meƒç";//Rostiges Schwert
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -333,7 +333,7 @@ instance HeroSword13 (C_Item)
 
 INSTANCE HeroSword20 (C_Item)
 {	
-	name 				=	"MeË";//Schwert
+	name 				=	"Meƒç";//Schwert
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -350,7 +350,7 @@ INSTANCE HeroSword20 (C_Item)
 
 INSTANCE HeroSword25 (C_Item)
 {	
-	name 				=	"MeË";//Schwert
+	name 				=	"Meƒç";//Schwert
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -367,7 +367,7 @@ INSTANCE HeroSword25 (C_Item)
 
 INSTANCE HeroBow13 (C_Item)
 {	
-	name 					=	"Dlouh˝ luk";//Langbogen
+	name 					=	"Dlouh√Ω luk";//Langbogen
 
 	mainflag 				=	ITEM_KAT_FF;
 	flags 					=	ITEM_BOW;	
@@ -387,7 +387,7 @@ INSTANCE HeroBow13 (C_Item)
 
 
 
-// *********** NICHT L÷SCHEN - SONST STERBEN **************
+// *********** NICHT L√ñSCHEN - SONST STERBEN **************
 
 
 INSTANCE XP_Map(C_Item)
@@ -411,10 +411,10 @@ FUNC VOID Use_XP_Map()
 	CreateInvItems(self,ItMiNugget,1000);
 	hero.lp = hero.lp + 20;
 	
-	PrintScreen("a·‡‚A¡¿¬", -1,40,"font_10_book.tga",10);
-	PrintScreen("a·‡‚A¡¿¬", -1,50,"font_15_book.tga",10);
-	PrintScreen("a·‡‚A¡¿¬", -1,60,"font_15_white.tga",10);
-	PrintScreen("a·‡‚A¡¿¬", -1,70,"font_default.tga",10);
-	PrintScreen("a·‡‚A¡¿¬", -1,80,"font_old_10_white.tga",10);
-	PrintScreen("a·‡‚A¡¿¬", -1,90,"font_old_20_white.tga",10);
+	PrintScreen("a√°≈ï√¢A√Å≈î√Ç", -1,40,"font_10_book.tga",10);
+	PrintScreen("a√°≈ï√¢A√Å≈î√Ç", -1,50,"font_15_book.tga",10);
+	PrintScreen("a√°≈ï√¢A√Å≈î√Ç", -1,60,"font_15_white.tga",10);
+	PrintScreen("a√°≈ï√¢A√Å≈î√Ç", -1,70,"font_default.tga",10);
+	PrintScreen("a√°≈ï√¢A√Å≈î√Ç", -1,80,"font_old_10_white.tga",10);
+	PrintScreen("a√°≈ï√¢A√Å≈î√Ç", -1,90,"font_old_20_white.tga",10);
 };

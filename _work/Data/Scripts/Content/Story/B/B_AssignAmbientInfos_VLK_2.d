@@ -37,7 +37,7 @@ INSTANCE Info_Vlk_2_EinerVonEuchWerden (C_INFO) // E1
 	condition	= Info_Vlk_2_EinerVonEuchWerden_Condition;
 	information	= Info_Vlk_2_EinerVonEuchWerden_Info;
 	permanent	= 1;
-	description = "Chci s k vám pøidat.";
+	description = "Chci s k vÃ¡m pÅ™idat.";
 };                       
 
 FUNC INT Info_Vlk_2_EinerVonEuchWerden_Condition()
@@ -50,8 +50,8 @@ FUNC INT Info_Vlk_2_EinerVonEuchWerden_Condition()
 
 FUNC VOID Info_Vlk_2_EinerVonEuchWerden_Info()
 {
-	AI_Output(other,self,"Info_Vlk_2_EinerVonEuchWerden_15_00"); //Chci se k vám pøidat.
-	AI_Output(self,other,"Info_Vlk_2_EinerVonEuchWerden_02_01"); //Nechápu, proè bys chtìl dobrovolnì pracovat v dolech. Nìkdo jako ty mùe brzy ít na hradì.
+	AI_Output(other,self,"Info_Vlk_2_EinerVonEuchWerden_15_00"); //Chci se k vÃ¡m pÅ™idat.
+	AI_Output(self,other,"Info_Vlk_2_EinerVonEuchWerden_02_01"); //NechÃ¡pu, proÄ bys chtÄ›l dobrovolnÄ› pracovat v dolech. NÄ›kdo jako ty mÅ¯Å¾e brzy Å¾Ã­t na hradÄ›.
 };
 
 // *************************************************************************
@@ -74,9 +74,9 @@ FUNC INT Info_Vlk_2_WichtigePersonen_Condition()
 
 FUNC VOID Info_Vlk_2_WichtigePersonen_Info()
 {
-	AI_Output(other,self,"Info_Vlk_2_WichtigePersonen_15_00"); //Kdo tady má velení?
-	AI_Output(self,other,"Info_Vlk_2_WichtigePersonen_02_01"); //Tady na vnìjším kruhu vybírají Fletcher, Bloodwyn a Jackal peníze za ochranu. Kadı má svùj obvod.
-	AI_Output(self,other,"Info_Vlk_2_WichtigePersonen_02_02"); //Kdy s nimi budeš zadobøe, nic se ti nestane.
+	AI_Output(other,self,"Info_Vlk_2_WichtigePersonen_15_00"); //Kdo tady mÃ¡ velenÃ­?
+	AI_Output(self,other,"Info_Vlk_2_WichtigePersonen_02_01"); //Tady na vnÄ›jÅ¡Ã­m kruhu vybÃ­rajÃ­ Fletcher, Bloodwyn a Jackal penÃ­ze za ochranu. KaÅ¾dÃ½ mÃ¡ svÅ¯j obvod.
+	AI_Output(self,other,"Info_Vlk_2_WichtigePersonen_02_02"); //KdyÅ¾ s nimi budeÅ¡ zadobÅ™e, nic se ti nestane.
 };
 
 // *************************************************************************
@@ -89,7 +89,7 @@ INSTANCE Info_Vlk_2_DasLager(C_INFO)
 	condition	= Info_Vlk_2_DasLager_Condition;
 	information	= Info_Vlk_2_DasLager_Info;
 	permanent	= 1;
-	description = "Chci vìdìt o táboøe víc.";
+	description = "Chci vÄ›dÄ›t o tÃ¡boÅ™e vÃ­c.";
 };                       
 
 FUNC INT Info_Vlk_2_DasLager_Condition()
@@ -99,8 +99,8 @@ FUNC INT Info_Vlk_2_DasLager_Condition()
 
 FUNC VOID Info_Vlk_2_DasLager_Info()
 {
-	AI_Output(other,self,"Info_Vlk_2_DasLager_15_00"); //Chci vìdìt o táboøe víc.
-	AI_Output(self,other,"Info_Vlk_2_DasLager_02_01"); //Mìl by sis promluvit se Stíny. Øeknou ti, co potøebuješ vìdìt. Buï ale opatrnı, vìtšinì z nich nelze dùvìøovat.
+	AI_Output(other,self,"Info_Vlk_2_DasLager_15_00"); //Chci vÄ›dÄ›t o tÃ¡boÅ™e vÃ­c.
+	AI_Output(self,other,"Info_Vlk_2_DasLager_02_01"); //MÄ›l by sis promluvit se StÃ­ny. Å˜eknou ti, co potÅ™ebujeÅ¡ vÄ›dÄ›t. BuÄ ale opatrnÃ½, vÄ›tÅ¡inÄ› z nich nelze dÅ¯vÄ›Å™ovat.
 };
 
 // *************************************************************************
@@ -113,7 +113,7 @@ INSTANCE Info_Vlk_2_DieLage(C_INFO) // E1
 	condition	= Info_Vlk_2_DieLage_Condition;
 	information	= Info_Vlk_2_DieLage_Info;
 	permanent	= 1;
-	description = "Jak se tady ije?";
+	description = "Jak se tady Å¾ije?";
 };                       
 
 FUNC INT Info_Vlk_2_DieLage_Condition()
@@ -125,11 +125,11 @@ FUNC INT Info_Vlk_2_DieLage_Condition()
 };
 FUNC VOID Info_Vlk_2_DieLage_Info()
 {
-	AI_Output(other,self,"Info_Vlk_2_DieLage_15_00"); //Jak se tady ije?
-	AI_Output(self,other,"Info_Vlk_2_DieLage_02_01"); //Pokud tì posílají Rudobaroni, vzka jim, e nechci ádné problémy. Ode mì nic neuslyšíš.
-	AI_Output(self,other,"Info_Vlk_2_DieLage_02_02"); //S tím, co nám dávají, jsem spokojenı.
-	AI_Output(other,self,"Info_Vlk_2_DieLage_15_03"); //Nikdo mì neposlal. Jsem tu novı.
-	AI_Output(self,other,"Info_Vlk_2_DieLage_02_04"); //Nováèek, co? Nováèci se vdycky hned dostanou do problémù. Nechci s tím mít nic spoleèného, jasnı?
+	AI_Output(other,self,"Info_Vlk_2_DieLage_15_00"); //Jak se tady Å¾ije?
+	AI_Output(self,other,"Info_Vlk_2_DieLage_02_01"); //Pokud tÄ› posÃ­lajÃ­ Rudobaroni, vzkaÅ¾ jim, Å¾e nechci Å¾Ã¡dnÃ© problÃ©my. Ode mÄ› nic neuslyÅ¡Ã­Å¡.
+	AI_Output(self,other,"Info_Vlk_2_DieLage_02_02"); //S tÃ­m, co nÃ¡m dÃ¡vajÃ­, jsem spokojenÃ½.
+	AI_Output(other,self,"Info_Vlk_2_DieLage_15_03"); //Nikdo mÄ› neposlal. Jsem tu novÃ½.
+	AI_Output(self,other,"Info_Vlk_2_DieLage_02_04"); //NovÃ¡Äek, co? NovÃ¡Äci se vÅ¾dycky hned dostanou do problÃ©mÅ¯. Nechci s tÃ­m mÃ­t nic spoleÄnÃ©ho, jasnÃ½?
 };	
 	
 // *************************************************************************

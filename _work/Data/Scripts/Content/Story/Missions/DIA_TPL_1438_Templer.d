@@ -16,8 +16,8 @@ FUNC int  Tpl_1438_Templer_Exit_Condition()
 
 FUNC VOID  Tpl_1438_Templer_Exit_Info()
 {
-	AI_Output			(other, self,"Tpl_1438_Templer_Exit_Info_15_01"); //Ještì se uvidíme!
-	AI_Output			(self, other,"Tpl_1438_Templer_Exit_Info_13_02"); //Ké Spáè procitne!
+	AI_Output			(other, self,"Tpl_1438_Templer_Exit_Info_15_01"); //JeÅ¡tÄ› se uvidÃ­me!
+	AI_Output			(self, other,"Tpl_1438_Templer_Exit_Info_13_02"); //KÃ©Å¾ SpÃ¡Ä procitne!
 	
 	AI_StopProcessInfos	( self );
 };
@@ -30,7 +30,7 @@ instance  Tpl_1438_Templer_INFO (C_INFO)
 	information		= Tpl_1438_Templer_INFO_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Co dìlají templáøi v dolu?"; 
+	description		= "Co dÄ›lajÃ­ templÃ¡Å™i v dolu?"; 
 };
 
 FUNC int  Tpl_1438_Templer_INFO_Condition()
@@ -44,8 +44,8 @@ FUNC int  Tpl_1438_Templer_INFO_Condition()
 
 FUNC void  Tpl_1438_Templer_INFO_Info()
 {
-	AI_Output			(other, self,"Tpl_1438_Templer_INFO_Info_15_01"); //Co dìlají templáøi v dolu?
-	AI_Output			(self, other,"Tpl_1438_Templer_INFO_Info_13_02"); //Lovíme tady dùlní èervy. Jdi zpátky do tábora, tam budeš v bezpeèí.
+	AI_Output			(other, self,"Tpl_1438_Templer_INFO_Info_15_01"); //Co dÄ›lajÃ­ templÃ¡Å™i v dolu?
+	AI_Output			(self, other,"Tpl_1438_Templer_INFO_Info_13_02"); //LovÃ­me tady dÅ¯lnÃ­ Äervy. Jdi zpÃ¡tky do tÃ¡bora, tam budeÅ¡ v bezpeÄÃ­.
 }; 
 
 // ***************** SEKRET *****************************
@@ -57,7 +57,7 @@ instance  Tpl_1438_Templer_WHY (C_INFO)
 	information		= Tpl_1438_Templer_WHY_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Proè lovíte èervy?"; 
+	description		= "ProÄ lovÃ­te Äervy?"; 
 };
 
 FUNC int  Tpl_1438_Templer_WHY_Condition()
@@ -70,10 +70,10 @@ FUNC int  Tpl_1438_Templer_WHY_Condition()
 };
 FUNC void  Tpl_1438_Templer_WHY_Info()
 {
-	AI_Output			(other, self,"Tpl_1438_Templer_WHY_Info_15_01"); //Proè lovíte èervy?
-	AI_Output			(self, other,"Tpl_1438_Templer_WHY_Info_13_02"); //Pro jejich èelisti. Obsahují cennı vımìšek.
-	AI_Output			(other, self,"Tpl_1438_Templer_WHY_Info_15_03"); //Jakı druh vımìšku?
-	AI_Output			(self, other,"Tpl_1438_Templer_WHY_Info_13_04"); //Jed. Jedinì náš Guru Cor Kalom ví, jak z nìj pøipravit lektvar.
+	AI_Output			(other, self,"Tpl_1438_Templer_WHY_Info_15_01"); //ProÄ lovÃ­te Äervy?
+	AI_Output			(self, other,"Tpl_1438_Templer_WHY_Info_13_02"); //Pro jejich Äelisti. ObsahujÃ­ cennÃ½ vÃ½mÄ›Å¡ek.
+	AI_Output			(other, self,"Tpl_1438_Templer_WHY_Info_15_03"); //JakÃ½ druh vÃ½mÄ›Å¡ku?
+	AI_Output			(self, other,"Tpl_1438_Templer_WHY_Info_13_04"); //Jed. JedinÄ› nÃ¡Å¡ Guru Cor Kalom vÃ­, jak z nÄ›j pÅ™ipravit lektvar.
 };
 // ***************** KALOM *****************************
 
@@ -99,11 +99,11 @@ FUNC int  Tpl_1438_Templer_KALOM_Condition()
 FUNC void  Tpl_1438_Templer_KALOM_Info()
 {
 	AI_Output			(other, self,"Tpl_1438_Templer_KALOM_Info_15_01"); //Kdo je Cor Kalom?
-	AI_Output			(self, other,"Tpl_1438_Templer_KALOM_Info_13_02"); //Jeden z nejmocnìjších muù celého Bratrstva. Zná mnohá tajemství a dokáe ovládat mysl jinıch lidí!
-	AI_Output			(self, other,"Tpl_1438_Templer_KALOM_Info_13_03"); //Kromì toho je alchymista. Pøipravuje lektvary, díky kterım mùeme navazovat duchovní kontakt se Spáèem. Jdi do tábora. Poøád hledáme nìjaké lidi!
-	AI_Output			(other, self,"Tpl_1438_Templer_KALOM_Info_15_04"); //Budu o tom pøemıšlet.
+	AI_Output			(self, other,"Tpl_1438_Templer_KALOM_Info_13_02"); //Jeden z nejmocnÄ›jÅ¡Ã­ch muÅ¾Å¯ celÃ©ho Bratrstva. ZnÃ¡ mnohÃ¡ tajemstvÃ­ a dokÃ¡Å¾e ovlÃ¡dat mysl jinÃ½ch lidÃ­!
+	AI_Output			(self, other,"Tpl_1438_Templer_KALOM_Info_13_03"); //KromÄ› toho je alchymista. PÅ™ipravuje lektvary, dÃ­ky kterÃ½m mÅ¯Å¾eme navazovat duchovnÃ­ kontakt se SpÃ¡Äem. Jdi do tÃ¡bora. PoÅ™Ã¡d hledÃ¡me nÄ›jakÃ© lidi!
+	AI_Output			(other, self,"Tpl_1438_Templer_KALOM_Info_15_04"); //Budu o tom pÅ™emÃ½Å¡let.
 };  
-//---------------------WENN DIE EIERSUCHE LÄUFT-------------------------------  
+//---------------------WENN DIE EIERSUCHE LÃ„UFT-------------------------------  
 instance  Tpl_1438_Templer_EGGSEARCH (C_INFO)
 {
 	npc				= Tpl_1438_Templer;
@@ -111,7 +111,7 @@ instance  Tpl_1438_Templer_EGGSEARCH (C_INFO)
 	information		= Tpl_1438_Templer_EGGSEARCH_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Hledám hnízdo dùlních èervù."; 
+	description		= "HledÃ¡m hnÃ­zdo dÅ¯lnÃ­ch ÄervÅ¯."; 
 };
 
 FUNC int  Tpl_1438_Templer_EGGSEARCH_Condition()
@@ -124,10 +124,10 @@ FUNC int  Tpl_1438_Templer_EGGSEARCH_Condition()
 };
 FUNC void  Tpl_1438_Templer_EGGSEARCH_Info()
 {
-	AI_Output			(other, self,"Tpl_1438_Templer_EGGSEARCH_Info_15_01"); //Hledám hnízdo dùlních èervù.
-	AI_Output			(self, other,"Tpl_1438_Templer_EGGSEARCH_Info_13_02"); //Jdi za Gorem Na Videm, Gorem Na Koshem nebo Gorem Na Barem. Ti vìdí o èervech mnohem více ne já.
+	AI_Output			(other, self,"Tpl_1438_Templer_EGGSEARCH_Info_15_01"); //HledÃ¡m hnÃ­zdo dÅ¯lnÃ­ch ÄervÅ¯.
+	AI_Output			(self, other,"Tpl_1438_Templer_EGGSEARCH_Info_13_02"); //Jdi za Gorem Na Videm, Gorem Na Koshem nebo Gorem Na Barem. Ti vÄ›dÃ­ o Äervech mnohem vÃ­ce neÅ¾ jÃ¡.
 
-	B_LogEntry		(CH2_MCEggs,"U vchodu do Starého dolu jsem se zeptal jednoho templáøe na hnízdo dùlních èervù. Odkázal mì na tøi další templáøe - Gora Na Vida, Gora Na Koshe a Gora Na Bara. Tahle jména, která pouívají v Bratrstvu, mì pøivádìjí k šílenství.");  
+	B_LogEntry		(CH2_MCEggs,"U vchodu do StarÃ©ho dolu jsem se zeptal jednoho templÃ¡Å™e na hnÃ­zdo dÅ¯lnÃ­ch ÄervÅ¯. OdkÃ¡zal mÄ› na tÅ™i dalÅ¡Ã­ templÃ¡Å™e - Gora Na Vida, Gora Na Koshe a Gora Na Bara. Tahle jmÃ©na, kterÃ¡ pouÅ¾Ã­vajÃ­ v Bratrstvu, mÄ› pÅ™ivÃ¡dÄ›jÃ­ k Å¡Ã­lenstvÃ­.");  
 };  
 /*------------------------------------------------------------------------
 //							ZANGEN FREISCHALTEN						    //
@@ -140,7 +140,7 @@ instance  Tpl_1438_Templer_ZANGEN (C_INFO)
 	information		= Tpl_1438_Templer_ZANGEN_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Jak oddìlím dùlnímu èervovi èelisti?"; 
+	description		= "Jak oddÄ›lÃ­m dÅ¯lnÃ­mu Äervovi Äelisti?"; 
 };
 
 FUNC int  Tpl_1438_Templer_ZANGEN_Condition()
@@ -154,8 +154,8 @@ FUNC int  Tpl_1438_Templer_ZANGEN_Condition()
 };
 FUNC void  Tpl_1438_Templer_ZANGEN_Info()
 {
-	AI_Output			(other, self,"Tpl_1438_Templer_ZANGEN_Info_15_01"); //Jak oddìlím dùlnímu èervovi èelisti?
-	AI_Output			(self, other,"Tpl_1438_Templer_ZANGEN_Info_13_02"); //Není to tak snadné. Nauèím tì to.
+	AI_Output			(other, self,"Tpl_1438_Templer_ZANGEN_Info_15_01"); //Jak oddÄ›lÃ­m dÅ¯lnÃ­mu Äervovi Äelisti?
+	AI_Output			(self, other,"Tpl_1438_Templer_ZANGEN_Info_13_02"); //NenÃ­ to tak snadnÃ©. NauÄÃ­m tÄ› to.
 }; 
 /*------------------------------------------------------------------------
 //							LERNEN ZANGEN ZU ENTFERNEN					//
@@ -168,7 +168,7 @@ instance  Tpl_1438_Templer_TEACHZANGEN (C_INFO)
 	information		= Tpl_1438_Templer_TEACHZANGEN_Info;
 	important		= 0;
 	permanent		= 1;
-	description		= "Nauèit se oddìlit èervovi èelisti (1 dovednostní bod)"; 
+	description		= "NauÄit se oddÄ›lit Äervovi Äelisti (1 dovednostnÃ­ bod)"; 
 };
 
 FUNC int  Tpl_1438_Templer_TEACHZANGEN_Condition()
@@ -183,24 +183,24 @@ FUNC int  Tpl_1438_Templer_TEACHZANGEN_Condition()
 FUNC void  Tpl_1438_Templer_TEACHZANGEN_Info()
 {
 	
-	AI_Output			(other, self,"Tpl_1438_Templer_TEACHZANGEN_Info_15_01"); //Mùeš mì nauèit, jak se odstraòují èelisti?
+	AI_Output			(other, self,"Tpl_1438_Templer_TEACHZANGEN_Info_15_01"); //MÅ¯Å¾eÅ¡ mÄ› nauÄit, jak se odstraÅˆujÃ­ Äelisti?
 	
 	if (hero.lp >= 1)
 	{
 		hero.lp = hero.lp - 1;
-		AI_Output		(self, other,"Tpl_1438_Templer_TEACHZANGEN_Info_13_01"); //Nejdøív musíš udìlat hlubokı záøez do masa. Dávej pozor, abys neporušil èelistní lázu. Pokud to udìláš, vımìšek vystøíkne pryè.
-		AI_Output		(other, self,"Tpl_1438_Templer_TEACHZANGEN_Info_15_02"); //To musí bıt docela mrzuté.
-		AI_Output		(self, other,"Tpl_1438_Templer_TEACHZANGEN_Info_13_03"); //To si piš! U jsi navštívil Korgura Tøíprsáka, lovce èervù? Ale ne, to bylo, ne jsi pøišel. Dobrá, pokraèujme...
-		AI_Output		(self, other,"Tpl_1438_Templer_TEACHZANGEN_Info_13_04"); //Øezej kolem lázy, dìlej hlubokı záøez a potom odstraò maso spoleènì s èelistma. Kdy je uchopíš takhle, nebudeš mít potíe s odstranìním èelistí.
+		AI_Output		(self, other,"Tpl_1438_Templer_TEACHZANGEN_Info_13_01"); //NejdÅ™Ã­v musÃ­Å¡ udÄ›lat hlubokÃ½ zÃ¡Å™ez do masa. DÃ¡vej pozor, abys neporuÅ¡il ÄelistnÃ­ Å¾lÃ¡zu. Pokud to udÄ›lÃ¡Å¡, vÃ½mÄ›Å¡ek vystÅ™Ã­kne pryÄ.
+		AI_Output		(other, self,"Tpl_1438_Templer_TEACHZANGEN_Info_15_02"); //To musÃ­ bÃ½t docela mrzutÃ©.
+		AI_Output		(self, other,"Tpl_1438_Templer_TEACHZANGEN_Info_13_03"); //To si piÅ¡! UÅ¾ jsi navÅ¡tÃ­vil Korgura TÅ™Ã­prsÅ¥Ã¡ka, lovce ÄervÅ¯? Ale ne, to bylo, neÅ¾ jsi pÅ™iÅ¡el. DobrÃ¡, pokraÄujme...
+		AI_Output		(self, other,"Tpl_1438_Templer_TEACHZANGEN_Info_13_04"); //Å˜ezej kolem Å¾lÃ¡zy, dÄ›lej hlubokÃ½ zÃ¡Å™ez a potom odstraÅˆ maso spoleÄnÄ› s Äelistma. KdyÅ¾ je uchopÃ­Å¡ takhle, nebudeÅ¡ mÃ­t potÃ­Å¾e s odstranÄ›nÃ­m ÄelistÃ­.
 		Knows_GetMCMandibles = TRUE;
 		Log_CreateTopic (GE_AnimalTrophies,LOG_NOTE);
-		B_LogEntry		(GE_AnimalTrophies,"Jak odstranit èelisti - dùlní èervi");
+		B_LogEntry		(GE_AnimalTrophies,"Jak odstranit Äelisti - dÅ¯lnÃ­ Äervi");
 		Tpl_1438_Templer_TEACHZANGEN.permanent		= 0;
-		PrintScreen		("Nauèit se: Odøíznout èelisti dùlních èervù", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
+		PrintScreen		("NauÄit se: OdÅ™Ã­znout Äelisti dÅ¯lnÃ­ch ÄervÅ¯", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
 	}
 	else 
 	{
-		PrintScreen		("Nedostatek zkušenostních bodù!", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
+		PrintScreen		("Nedostatek zkuÅ¡enostnÃ­ch bodÅ¯!", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
 		B_Say			(self, other, "$NOLEARNNOPOINTS");
 	};
 };   

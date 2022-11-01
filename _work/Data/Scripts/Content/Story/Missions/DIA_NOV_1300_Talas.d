@@ -30,7 +30,7 @@ instance  Nov_1300_Talas_UR (C_INFO)
 	information		= Nov_1300_Talas_UR_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Ty jsi Talas, ten co ho p¯epadli."; 
+	description		= "Ty jsi Talas, ten co ho p≈ôepadli."; 
 };
 
 FUNC int  Nov_1300_Talas_UR_Condition()
@@ -44,8 +44,8 @@ FUNC int  Nov_1300_Talas_UR_Condition()
 };
 FUNC void  Nov_1300_Talas_UR_Info()
 {
-	AI_Output			(other, self,"Nov_1300_Talas_UR_Info_15_01"); //Ty jsi Talas, ten co ho p¯epadli.
-	AI_Output			(self, other,"Nov_1300_Talas_UR_Info_02_02"); //Nech mÏ na pokoji, nechci o tom mluvit!
+	AI_Output			(other, self,"Nov_1300_Talas_UR_Info_15_01"); //Ty jsi Talas, ten co ho p≈ôepadli.
+	AI_Output			(self, other,"Nov_1300_Talas_UR_Info_02_02"); //Nech mƒõ na pokoji, nechci o tom mluvit!
 };  
 // ***************************** INFOS ****************************************//
 
@@ -56,7 +56,7 @@ instance  Nov_1300_Talas_HELP (C_INFO)
 	information		= Nov_1300_Talas_HELP_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Pom˘ûu ti p¯inÈst zp·tky ten almanach."; 
+	description		= "Pom≈Ø≈æu ti p≈ôin√©st zp√°tky ten almanach."; 
 };
 
 FUNC int  Nov_1300_Talas_HELP_Condition()
@@ -69,35 +69,35 @@ FUNC int  Nov_1300_Talas_HELP_Condition()
 };
 FUNC void  Nov_1300_Talas_HELP_Info()
 {
-	AI_Output			(other, self,"Nov_1300_Talas_HELP_Info_15_01"); //Pom˘ûu ti p¯inÈst zp·tky ten almanach.
-	AI_Output			(self, other,"Nov_1300_Talas_HELP_Info_02_02"); //Opravdu? P¯epadli mÏ goblini! A teÔ se po mnÏ chce, abych za nimi öel a p¯inesl tu knihu zp·tky!
-	AI_Output			(self, other,"Nov_1300_Talas_HELP_Info_02_03"); //M·m pro tebe n·vrh. Uk·ûu ti cestu k almanachu, abys ho mohl dostat nazpÏt.
+	AI_Output			(other, self,"Nov_1300_Talas_HELP_Info_15_01"); //Pom≈Ø≈æu ti p≈ôin√©st zp√°tky ten almanach.
+	AI_Output			(self, other,"Nov_1300_Talas_HELP_Info_02_02"); //Opravdu? P≈ôepadli mƒõ goblini! A teƒè se po mnƒõ chce, abych za nimi ≈°el a p≈ôinesl tu knihu zp√°tky!
+	AI_Output			(self, other,"Nov_1300_Talas_HELP_Info_02_03"); //M√°m pro tebe n√°vrh. Uk√°≈æu ti cestu k almanachu, abys ho mohl dostat nazpƒõt.
 
 	Info_ClearChoices	(Nov_1300_Talas_HELP);
-	Info_AddChoice		(Nov_1300_Talas_HELP,"SouhlasÌm.",Nov_1300_Talas_HELP_OK);
-	Info_AddChoice		(Nov_1300_Talas_HELP,"Bude tÏ to st·t 30 nuget˘.",Nov_1300_Talas_HELP_BRING);
-	Info_AddChoice		(Nov_1300_Talas_HELP,"Dej mi 50 nuget˘ a j· budu p¯itom.",Nov_1300_Talas_HELP_MORE);
+	Info_AddChoice		(Nov_1300_Talas_HELP,"Souhlas√≠m.",Nov_1300_Talas_HELP_OK);
+	Info_AddChoice		(Nov_1300_Talas_HELP,"Bude tƒõ to st√°t 30 nuget≈Ø.",Nov_1300_Talas_HELP_BRING);
+	Info_AddChoice		(Nov_1300_Talas_HELP,"Dej mi 50 nuget≈Ø a j√° budu p≈ôitom.",Nov_1300_Talas_HELP_MORE);
 	
 };  
 
 func void Nov_1300_Talas_HELP_OK ()
 {
-	AI_Output			(other, self,"Nov_1300_Talas_HELP_OK_15_01"); //SouhlasÌm.
-	AI_Output			(self, other,"Nov_1300_Talas_HELP_OK_02_02"); //Dob¯e, aû budeö p¯ipraven, m˘ûeme vyrazit.
+	AI_Output			(other, self,"Nov_1300_Talas_HELP_OK_15_01"); //Souhlas√≠m.
+	AI_Output			(self, other,"Nov_1300_Talas_HELP_OK_02_02"); //Dob≈ôe, a≈æ bude≈° p≈ôipraven, m≈Ø≈æeme vyrazit.
 	Info_ClearChoices	(Nov_1300_Talas_HELP);
 };
 func void Nov_1300_Talas_HELP_BRING ()
 {
-	AI_Output			(other, self,"Nov_1300_Talas_HELP_BRING_15_01"); //Bude tÏ to st·t 30 nuget˘.
-	AI_Output			(self, other,"Nov_1300_Talas_HELP_BRING_02_02"); //Dob¯e, aû budeö p¯ipraven, m˘ûeme vyrazit.
+	AI_Output			(other, self,"Nov_1300_Talas_HELP_BRING_15_01"); //Bude tƒõ to st√°t 30 nuget≈Ø.
+	AI_Output			(self, other,"Nov_1300_Talas_HELP_BRING_02_02"); //Dob≈ôe, a≈æ bude≈° p≈ôipraven, m≈Ø≈æeme vyrazit.
 	CreateInvItems		(self,ItMiNugget,30);
 	B_GiveInvItems      (self,hero,ItMiNugget,30);
 	Info_ClearChoices	(Nov_1300_Talas_HELP);
 };
 func void Nov_1300_Talas_HELP_MORE ()
 {
-	AI_Output			(other, self,"Nov_1300_Talas_HELP_MORE_15_01"); //Dej mi 50 nuget˘ a j· budu p¯itom.
-	AI_Output			(self, other,"Nov_1300_Talas_HELP_MORE_02_02"); //Coûe? To je kr·deû! Dobr· teda, ¯ekni mi, aû budeö p¯ipraven.
+	AI_Output			(other, self,"Nov_1300_Talas_HELP_MORE_15_01"); //Dej mi 50 nuget≈Ø a j√° budu p≈ôitom.
+	AI_Output			(self, other,"Nov_1300_Talas_HELP_MORE_02_02"); //Co≈æe? To je kr√°de≈æ! Dobr√° teda, ≈ôekni mi, a≈æ bude≈° p≈ôipraven.
 	CreateInvItems		(self,ItMiNugget,50);
 	B_GiveInvItems      (self,hero,ItMiNugget,50);
 	Info_ClearChoices	(Nov_1300_Talas_HELP);
@@ -111,7 +111,7 @@ instance  Nov_1300_Talas_READY (C_INFO)
 	information		= Nov_1300_Talas_READY_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Jsem p¯ipraven, m˘ûeme vyrazit."; 
+	description		= "Jsem p≈ôipraven, m≈Ø≈æeme vyrazit."; 
 };
 
 FUNC int  Nov_1300_Talas_READY_Condition()
@@ -125,10 +125,10 @@ FUNC int  Nov_1300_Talas_READY_Condition()
 };
 FUNC void  Nov_1300_Talas_READY_Info()
 {
-	AI_Output			(other, self,"Nov_1300_Talas_READY_Info_15_01"); //Jsem p¯ipraven, m˘ûeme vyrazit.
-	AI_Output			(self, other,"Nov_1300_Talas_READY_Info_02_02"); //Dob¯e. PojÔ za mnou.
+	AI_Output			(other, self,"Nov_1300_Talas_READY_Info_15_01"); //Jsem p≈ôipraven, m≈Ø≈æeme vyrazit.
+	AI_Output			(self, other,"Nov_1300_Talas_READY_Info_02_02"); //Dob≈ôe. Pojƒè za mnou.
 	
-	B_LogEntry		(CH2_Book,"NabÌdl jsem Talasovi, ûe pro nÏj zÌsk·m zpÏt rukopis. Chce mÏ dovÈst na mÌsto, kde kniha je."); 
+	B_LogEntry		(CH2_Book,"Nab√≠dl jsem Talasovi, ≈æe pro nƒõj z√≠sk√°m zpƒõt rukopis. Chce mƒõ dov√©st na m√≠sto, kde kniha je."); 
 	
 	self.aivar[AIV_PARTYMEMBER] = TRUE;
 	Npc_ExchangeRoutine	(self,"GOBBOCAVE");
@@ -136,7 +136,7 @@ FUNC void  Nov_1300_Talas_READY_Info()
 	
 };  
 
-// ***************************** AN DER BR‹CKE ****************************************//
+// ***************************** AN DER BR√úCKE ****************************************//
 instance  Nov_1300_Talas_BRIDGE (C_INFO)
 {
 	npc				= Nov_1300_Talas;
@@ -157,14 +157,14 @@ FUNC int  Nov_1300_Talas_BRIDGE_Condition()
 };
 FUNC void  Nov_1300_Talas_BRIDGE_Info()
 {
-	AI_Output			(self, other,"Nov_1300_Talas_BRIDGE_Info_02_01"); //Tyhle proklatÈ malÈ bestie ûijÌ v jeskyni pod mostem. BuÔ opatrn˝!
-	AI_Output			(other, self,"Nov_1300_Talas_BRIDGE_Info_15_02"); //Ty nep˘jdeö se mnou?
-	AI_Output			(self, other,"Nov_1300_Talas_BRIDGE_Info_02_03"); //PoËk·m tady a... budu... kr˝t naöi ˙nikovou cestu.
+	AI_Output			(self, other,"Nov_1300_Talas_BRIDGE_Info_02_01"); //Tyhle proklat√© mal√© bestie ≈æij√≠ v jeskyni pod mostem. Buƒè opatrn√Ω!
+	AI_Output			(other, self,"Nov_1300_Talas_BRIDGE_Info_15_02"); //Ty nep≈Øjde≈° se mnou?
+	AI_Output			(self, other,"Nov_1300_Talas_BRIDGE_Info_02_03"); //Poƒçk√°m tady a... budu... kr√Ωt na≈°i √∫nikovou cestu.
 
-	B_LogEntry		(CH2_Book,"StojÌme p¯ed jeskynÌ goblin˘. Ten zbabÏl˝ novic v·ûnÏ chce, abych öel dovnit¯ s·m.");
+	B_LogEntry		(CH2_Book,"Stoj√≠me p≈ôed jeskyn√≠ goblin≈Ø. Ten zbabƒõl√Ω novic v√°≈ænƒõ chce, abych ≈°el dovnit≈ô s√°m.");
 };
 
-// ***************************** ZUR‹CK INS LAGER ****************************************//
+// ***************************** ZUR√úCK INS LAGER ****************************************//
 instance  Nov_1300_Talas_BACK (C_INFO)
 {
 	npc				= Nov_1300_Talas;
@@ -185,15 +185,15 @@ FUNC int  Nov_1300_Talas_BACK_Condition()
 };
 FUNC void  Nov_1300_Talas_BACK_Info()
 {
-	AI_Output			(self, other,"Nov_1300_Talas_BACK_Info_02_01"); //M·ö ten almanach! V˝bornÏ! PojÔme zp·tky do t·bora.
+	AI_Output			(self, other,"Nov_1300_Talas_BACK_Info_02_01"); //M√°≈° ten almanach! V√Ωbornƒõ! Pojƒème zp√°tky do t√°bora.
 
-	B_LogEntry		(CH2_Book,"Naöel jsem rukopis a spoleËnÏ s Talasem jej odneseme do t·bora v baûin·ch.");
+	B_LogEntry		(CH2_Book,"Na≈°el jsem rukopis a spoleƒçnƒõ s Talasem jej odneseme do t√°bora v ba≈æin√°ch.");
 
 	Npc_ExchangeRoutine	(self,"RETURNTOCAMP");
 	AI_StopProcessInfos	(self);
 };
 
-// ***************************** Zur¸ck im Lager ****************************************//
+// ***************************** Zur√ºck im Lager ****************************************//
 instance  Nov_1300_Talas_RETURNED (C_INFO)
 {
 	npc				= Nov_1300_Talas;
@@ -216,11 +216,11 @@ FUNC int  Nov_1300_Talas_RETURNED_Condition()
 };
 FUNC void  Nov_1300_Talas_RETURNED_Info()
 {
-	AI_Output			(self, other,"Info_Talas_RETURNED_02_01"); //Jsme zp·tky. P¯edej ten almanach Corovi Kalomovi radÏji hned.
-	AI_Output			(other, self,"Info_Talas_RETURNED_15_02"); //D·vej pozor, aby ses nevysÌlil.
-	AI_Output			(self, other,"Info_Talas_RETURNED_02_03"); //NemÏj obavy, nevysÌlÌm! NemusÌö si se mnou dÏlat starosti.
+	AI_Output			(self, other,"Info_Talas_RETURNED_02_01"); //Jsme zp√°tky. P≈ôedej ten almanach Corovi Kalomovi radƒõji hned.
+	AI_Output			(other, self,"Info_Talas_RETURNED_15_02"); //D√°vej pozor, aby ses nevys√≠lil.
+	AI_Output			(self, other,"Info_Talas_RETURNED_02_03"); //Nemƒõj obavy, nevys√≠l√≠m! Nemus√≠≈° si se mnou dƒõlat starosti.
 
-	B_LogEntry		(CH2_Book,"Uû jsme zpÏt v t·bo¯e v baûin·ch. Talas je nejvÏtöÌ zbabÏlec, jakÈho jsem kdy potkal. P¯ed·m Cor Kalomovi rukopis s·m.");
+	B_LogEntry		(CH2_Book,"U≈æ jsme zpƒõt v t√°bo≈ôe v ba≈æin√°ch. Talas je nejvƒõt≈°√≠ zbabƒõlec, jak√©ho jsem kdy potkal. P≈ôed√°m Cor Kalomovi rukopis s√°m.");
 
 	self.aivar[AIV_PARTYMEMBER] = FALSE;
 	Npc_ExchangeRoutine	(self,"BackInCamp");
@@ -236,7 +236,7 @@ instance  Nov_1300_Talas_OGY (C_INFO)
 	information		= Nov_1300_Talas_OGY_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Poslal mÏ Cor Angar."; 
+	description		= "Poslal mƒõ Cor Angar."; 
 };
 
 FUNC int  Nov_1300_Talas_OGY_Condition()
@@ -249,9 +249,9 @@ FUNC int  Nov_1300_Talas_OGY_Condition()
 };
 FUNC void  Nov_1300_Talas_OGY_Info()
 {
-	AI_Output			(other, self,"Nov_1300_Talas_OGY_15_01"); //Poslal mÏ Cor Angar. ÿekl, ûe mÏ m·ö dovÈst k sk¯etÌmu poh¯ebiöti, abych tam naöel Baala Lukora a jeho templ·¯e.
-	AI_Output			(self, other,"Nov_1300_Talas_OGY_02_02"); //Tak jsem zase poslÌËek. ProklatÏ!!! NemÏl jsem ten almanach nikdy ztratit...
-	AI_Output			(self, other,"Nov_1300_Talas_OGY_02_03"); //Tak dobr·, pojÔ se mnou.
+	AI_Output			(other, self,"Nov_1300_Talas_OGY_15_01"); //Poslal mƒõ Cor Angar. ≈òekl, ≈æe mƒõ m√°≈° dov√©st k sk≈ôet√≠mu poh≈ôebi≈°ti, abych tam na≈°el Baala Lukora a jeho templ√°≈ôe.
+	AI_Output			(self, other,"Nov_1300_Talas_OGY_02_02"); //Tak jsem zase posl√≠ƒçek. Proklatƒõ!!! Nemƒõl jsem ten almanach nikdy ztratit...
+	AI_Output			(self, other,"Nov_1300_Talas_OGY_02_03"); //Tak dobr√°, pojƒè se mnou.
 	
 	self.aivar[AIV_PARTYMEMBER] = TRUE;
 	AI_StopProcessInfos	(self);
@@ -278,9 +278,9 @@ FUNC int  Nov_1300_Talas_BACKAGAIN_Condition()
 
 FUNC void  Nov_1300_Talas_BACKAGAIN_Info()
 {
-	AI_Output			(self, other,"Nov_1300_Talas_BACKAGAIN_Info_02_01"); //P¯es ten most tÏ nep¯evedu, nechci sp·chat sebevraûdu.
-	AI_Output			(self, other,"Nov_1300_Talas_BACKAGAIN_Info_02_02"); //MusÌö b˝t bl·zen, kdyû tam jdeö. Ani Baal Lukor se sv˝mi templ·¯i se uû nevr·til.
-	AI_Output			(other, self,"Nov_1300_Talas_BACKAGAIN_Info_15_03"); //UvidÌme, co se p¯ihodÌ. Vraù se do t·bora, j· p¯ijdu pozdÏji.
+	AI_Output			(self, other,"Nov_1300_Talas_BACKAGAIN_Info_02_01"); //P≈ôes ten most tƒõ nep≈ôevedu, nechci sp√°chat sebevra≈ædu.
+	AI_Output			(self, other,"Nov_1300_Talas_BACKAGAIN_Info_02_02"); //Mus√≠≈° b√Ωt bl√°zen, kdy≈æ tam jde≈°. Ani Baal Lukor se sv√Ωmi templ√°≈ôi se u≈æ nevr√°til.
+	AI_Output			(other, self,"Nov_1300_Talas_BACKAGAIN_Info_15_03"); //Uvid√≠me, co se p≈ôihod√≠. Vra≈• se do t√°bora, j√° p≈ôijdu pozdƒõji.
 
 	self.aivar[AIV_PARTYMEMBER] = FALSE;
 	AI_StopProcessInfos	(self);

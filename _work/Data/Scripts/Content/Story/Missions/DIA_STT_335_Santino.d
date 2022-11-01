@@ -45,7 +45,7 @@ FUNC int  STT_335_Santino_BUY_Condition()
 
 FUNC void  STT_335_Santino_BUY_Info()
 {
-	AI_Output (other, self,"STT_335_Santino_BUY_Info_15_01"); //M˘ûu s tebou obchodovat?
-	AI_Output (self, other,"STT_335_Santino_BUY_Info_07_02"); //M·m vöechno, co pot¯ebujeö. A to, co nem·m, taky nechceö.
+	AI_Output (other, self,"STT_335_Santino_BUY_Info_15_01"); //M≈Ø≈æu s tebou obchodovat?
+	AI_Output (self, other,"STT_335_Santino_BUY_Info_07_02"); //M√°m v≈°echno, co pot≈ôebuje≈°. A to, co nem√°m, taky nechce≈°.
 	
 };  

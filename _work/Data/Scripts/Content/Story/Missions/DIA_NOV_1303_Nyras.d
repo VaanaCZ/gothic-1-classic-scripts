@@ -33,7 +33,7 @@ instance DIA_Nyras_Hallo (C_INFO)
 	condition		= DIA_Nyras_Hallo_Condition;
 	information		= DIA_Nyras_Hallo_Info;
 	permanent		= 0;
-	description		= "Zdar! Jsem tady novı.";
+	description		= "Zdar! Jsem tady novÃ½.";
 };
 
 FUNC int  DIA_Nyras_Hallo_Condition()
@@ -45,8 +45,8 @@ FUNC int  DIA_Nyras_Hallo_Condition()
 };
 func void  DIA_Nyras_Hallo_Info()
 {
-	AI_Output			(other, self,"DIA_Nyras_Hallo_15_00"); //Zdar! Jsem tady novı!
-	AI_Output			(self, other,"DIA_Nyras_Hallo_03_01"); //Spáè s tebou, cizinèe!
+	AI_Output			(other, self,"DIA_Nyras_Hallo_15_00"); //Zdar! Jsem tady novÃ½!
+	AI_Output			(self, other,"DIA_Nyras_Hallo_03_01"); //SpÃ¡Ä s tebou, cizinÄe!
 };
 
 // **************************************************
@@ -60,7 +60,7 @@ instance DIA_Nyras_Ort (C_INFO)
 	condition		= DIA_Nyras_Ort_Condition;
 	information		= DIA_Nyras_Ort_Info;
 	permanent		= 0;
-	description		= "Co mi mùeš øíci o tomhle místì?";
+	description		= "Co mi mÅ¯Å¾eÅ¡ Å™Ã­ci o tomhle mÃ­stÄ›?";
 };
 
 FUNC int  DIA_Nyras_Ort_Condition()
@@ -74,31 +74,31 @@ FUNC int  DIA_Nyras_Ort_Condition()
 
 func void  DIA_Nyras_Ort_Info()
 {
-	AI_Output			(other, self,"DIA_Nyras_Ort_15_00"); //Co mi mùeš øíci o tomhle místì?
-	AI_Output			(self, other,"DIA_Nyras_Ort_03_01"); //Dobrá - Guru jsou tady nejdùleitìjšími lidmi. Šíøí Spáèovo uèení a pøedávají vize našich mistrù novicùm.
-	AI_Output			(self, other,"DIA_Nyras_Ort_03_02"); //On sám je pochopitelnì pøíliš unavenı, ne aby to øíkal kadému sám.
-	AI_Output			(self, other,"DIA_Nyras_Ort_03_03"); //Obèas k nám ale promluví v chrámovém dvoøe a pøedá nám svaté Spáèovo poslání.
+	AI_Output			(other, self,"DIA_Nyras_Ort_15_00"); //Co mi mÅ¯Å¾eÅ¡ Å™Ã­ci o tomhle mÃ­stÄ›?
+	AI_Output			(self, other,"DIA_Nyras_Ort_03_01"); //DobrÃ¡ - Guru jsou tady nejdÅ¯leÅ¾itÄ›jÅ¡Ã­mi lidmi. Å Ã­Å™Ã­ SpÃ¡Äovo uÄenÃ­ a pÅ™edÃ¡vajÃ­ vize naÅ¡ich mistrÅ¯ novicÅ¯m.
+	AI_Output			(self, other,"DIA_Nyras_Ort_03_02"); //On sÃ¡m je pochopitelnÄ› pÅ™Ã­liÅ¡ unavenÃ½, neÅ¾ aby to Å™Ã­kal kaÅ¾dÃ©mu sÃ¡m.
+	AI_Output			(self, other,"DIA_Nyras_Ort_03_03"); //ObÄas k nÃ¡m ale promluvÃ­ v chrÃ¡movÃ©m dvoÅ™e a pÅ™edÃ¡ nÃ¡m svatÃ© SpÃ¡Äovo poslÃ¡nÃ­.
 	
 	Info_ClearChoices 	(DIA_Nyras_Ort);
-	Info_Addchoice 		(DIA_Nyras_Ort,"Povídej mi o svatém poslání velkého Spáèe!",DIA_Nyras_Ort_Holy);
-	Info_Addchoice 		(DIA_Nyras_Ort,"A co øíká potom?",DIA_Nyras_Ort_Casual);
+	Info_Addchoice 		(DIA_Nyras_Ort,"PovÃ­dej mi o svatÃ©m poslÃ¡nÃ­ velkÃ©ho SpÃ¡Äe!",DIA_Nyras_Ort_Holy);
+	Info_Addchoice 		(DIA_Nyras_Ort,"A co Å™Ã­kÃ¡ potom?",DIA_Nyras_Ort_Casual);
 };
 
 func void DIA_Nyras_Ort_Casual()
 {
-	AI_Output			(other, self,"DIA_Nyras_Ort_Casual_15_00"); //A co øíká potom?
-	AI_Output			(self, other,"DIA_Nyras_Ort_Casual_03_01"); //Spáè urèuje naší cestu. Tomu by ale nevìrci, jako jsi ty, nemohli rozumìt!
+	AI_Output			(other, self,"DIA_Nyras_Ort_Casual_15_00"); //A co Å™Ã­kÃ¡ potom?
+	AI_Output			(self, other,"DIA_Nyras_Ort_Casual_03_01"); //SpÃ¡Ä urÄuje naÅ¡Ã­ cestu. Tomu by ale nevÄ›rci, jako jsi ty, nemohli rozumÄ›t!
 	Info_ClearChoices 	(DIA_Nyras_Ort);
 };
 
 func void DIA_Nyras_Ort_Holy()
 {
-	AI_Output			(other, self,"DIA_Nyras_Ort_Holy_15_00"); //Povídej mi o svatém poslání velkého Spáèe!
-	AI_Output			(self, other,"DIA_Nyras_Ort_Holy_03_01"); //ON nám øíká, co musíme udìlat, abysme opìt získali svobodu.
-	AI_Output			(self, other,"DIA_Nyras_Ort_Holy_03_02"); //Y´Berion øíká, e Spáè nám ukáe cestu ihned, jakmile mu budeme schopni naslouchat.
-	AI_Output			(self, other,"DIA_Nyras_Ort_Holy_03_03"); //Pøipravuje velké vzıvání, ve kterém se spolu s nejlepšími novici spojí se Spáèem.
-	AI_Output			(self, other,"DIA_Nyras_Ort_Holy_03_04"); //Cor Kalom mu pomáhá. Je to alchymista, kterı pøipravuje substance, které ho uvádìjí do jakoby spánkového stavu.
-	AI_Output			(self, other,"DIA_Nyras_Ort_Holy_03_05"); //Jedinì v takovém stavu mùeš pøijímat Spáèovy myšlenky - nebo ve spánku.
+	AI_Output			(other, self,"DIA_Nyras_Ort_Holy_15_00"); //PovÃ­dej mi o svatÃ©m poslÃ¡nÃ­ velkÃ©ho SpÃ¡Äe!
+	AI_Output			(self, other,"DIA_Nyras_Ort_Holy_03_01"); //ON nÃ¡m Å™Ã­kÃ¡, co musÃ­me udÄ›lat, abysme opÄ›t zÃ­skali svobodu.
+	AI_Output			(self, other,"DIA_Nyras_Ort_Holy_03_02"); //YÂ´Berion Å™Ã­kÃ¡, Å¾e SpÃ¡Ä nÃ¡m ukÃ¡Å¾e cestu ihned, jakmile mu budeme schopni naslouchat.
+	AI_Output			(self, other,"DIA_Nyras_Ort_Holy_03_03"); //PÅ™ipravuje velkÃ© vzÃ½vÃ¡nÃ­, ve kterÃ©m se spolu s nejlepÅ¡Ã­mi novici spojÃ­ se SpÃ¡Äem.
+	AI_Output			(self, other,"DIA_Nyras_Ort_Holy_03_04"); //Cor Kalom mu pomÃ¡hÃ¡. Je to alchymista, kterÃ½ pÅ™ipravuje substance, kterÃ© ho uvÃ¡dÄ›jÃ­ do jakoby spÃ¡nkovÃ©ho stavu.
+	AI_Output			(self, other,"DIA_Nyras_Ort_Holy_03_05"); //JedinÄ› v takovÃ©m stavu mÅ¯Å¾eÅ¡ pÅ™ijÃ­mat SpÃ¡Äovy myÅ¡lenky - nebo ve spÃ¡nku.
 	Info_ClearChoices 	(DIA_Nyras_Ort);
 };
 
@@ -119,7 +119,7 @@ func void DIA_Nyras_Ort_Holy()
 ///////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////
 
-// ***************************** BEGRÜßUNG ****************************************//
+// ***************************** BEGRÃœÃŸUNG ****************************************//
 
 instance Nov_1303_Nyras_GREET (C_INFO)
 {
@@ -139,7 +139,7 @@ FUNC int  Nov_1303_Nyras_GREET_Condition()
 };
 func void  Nov_1303_Nyras_GREET_Info()
 {
-	AI_Output			(self,other ,"Nov_1303_Nyras_GREET_Info_03_00"); //Zmiz! Tady nemáš co dìlat!
+	AI_Output			(self,other ,"Nov_1303_Nyras_GREET_Info_03_00"); //Zmiz! Tady nemÃ¡Å¡ co dÄ›lat!
 };
 // ***************************** INFOS ****************************************//
 
@@ -150,7 +150,7 @@ instance  Nov_1303_Nyras_LEAVE (C_INFO)
 	information		= Nov_1303_Nyras_LEAVE_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Hledám ohnisko."; 
+	description		= "HledÃ¡m ohnisko."; 
 };
 
 FUNC int  Nov_1303_Nyras_LEAVE_Condition()
@@ -162,15 +162,15 @@ FUNC int  Nov_1303_Nyras_LEAVE_Condition()
 };
 FUNC void  Nov_1303_Nyras_LEAVE_Info()
 {
-	AI_Output			(other, self,"Nov_1303_Nyras_LEAVE_Info_15_01"); //Hledám ohnisko.
-	AI_Output			(self, other,"Nov_1303_Nyras_LEAVE_Info_03_02"); //Bohuel jdeš pøíliš pozdì. U jsem ho našel!
-	AI_Output			(self, other,"Nov_1303_Nyras_LEAVE_Info_03_03"); //A nechám si ho pro sebe!
-	AI_Output			(self, other,"Nov_1303_Nyras_LEAVE_Info_03_04"); //Minulou noc ke mnì mluvil Spáè a prohlásil mì svım jedinım nástrojem!
-	AI_Output			(self, other,"Nov_1303_Nyras_LEAVE_Info_03_05"); //Teï slouím jen Spáèovi. ádnému templáøi ani Guru!
-	AI_Output			(self, other,"Nov_1303_Nyras_LEAVE_Info_03_06"); //JEEENNN JÁÁÁÁ SÁÁÁÁÁMM!!!!!!
-	AI_Output			(self, other,"Nov_1303_Nyras_LEAVE_Info_03_07"); //ZEEEMØØÍÍÍ!!!!!
+	AI_Output			(other, self,"Nov_1303_Nyras_LEAVE_Info_15_01"); //HledÃ¡m ohnisko.
+	AI_Output			(self, other,"Nov_1303_Nyras_LEAVE_Info_03_02"); //BohuÅ¾el jdeÅ¡ pÅ™Ã­liÅ¡ pozdÄ›. UÅ¾ jsem ho naÅ¡el!
+	AI_Output			(self, other,"Nov_1303_Nyras_LEAVE_Info_03_03"); //A nechÃ¡m si ho pro sebe!
+	AI_Output			(self, other,"Nov_1303_Nyras_LEAVE_Info_03_04"); //Minulou noc ke mnÄ› mluvil SpÃ¡Ä a prohlÃ¡sil mÄ› svÃ½m jedinÃ½m nÃ¡strojem!
+	AI_Output			(self, other,"Nov_1303_Nyras_LEAVE_Info_03_05"); //TeÄ slouÅ¾Ã­m jen SpÃ¡Äovi. Å½Ã¡dnÃ©mu templÃ¡Å™i ani Guru!
+	AI_Output			(self, other,"Nov_1303_Nyras_LEAVE_Info_03_06"); //JEEENNN JÃÃÃÃ SÃÃÃÃÃMM!!!!!!
+	AI_Output			(self, other,"Nov_1303_Nyras_LEAVE_Info_03_07"); //ZEEEMÅ˜Å˜ÃÃÃ!!!!!
 
-	B_LogEntry		(CH2_Focus,"Nyras se pominul. Chce získat ohnisko pro sebe a proto mì v návalu vzteku napadl.");
+	B_LogEntry		(CH2_Focus,"Nyras se pominul. Chce zÃ­skat ohnisko pro sebe a proto mÄ› v nÃ¡valu vzteku napadl.");
 
 	Npc_SetPermAttitude (self,ATT_HOSTILE);
 	AI_StopProcessInfos	(self);

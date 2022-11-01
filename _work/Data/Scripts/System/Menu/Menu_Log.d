@@ -26,7 +26,7 @@ instance MENU_LOG(C_MENU_DEF)
 };
 
 //
-// Men¸punkte
+// Men√ºpunkte
 //
 
 const int LOG_ITEM_X1 	= 1200;
@@ -39,7 +39,7 @@ const int LOG_ITEM_LIST_WIDTH	= 4500;
 
 INSTANCE MENU_ITEM_SEL_MISSIONS_ACT(C_MENU_ITEM_DEF)
 {
-	text[0]		=	"RozehranÈ\nmise";
+	text[0]		=	"Rozehran√©\nmise";
 	posx		=	LOG_ITEM_X1;
 	posy		=   	1500;
 	dimx 		= 	LOG_ITEM_DX1;
@@ -53,7 +53,7 @@ INSTANCE MENU_ITEM_SEL_MISSIONS_ACT(C_MENU_ITEM_DEF)
 
 INSTANCE MENU_ITEM_SEL_MISSIONS_OLD(C_MENU_ITEM_DEF)
 {
-	text[0]		=	"DokonËenÈ\nmise";
+	text[0]		=	"Dokonƒçen√©\nmise";
 	
 	posx		=	LOG_ITEM_X1;
 	posy		=   	2500;
@@ -69,7 +69,7 @@ INSTANCE MENU_ITEM_SEL_MISSIONS_OLD(C_MENU_ITEM_DEF)
 
 INSTANCE MENU_ITEM_SEL_MISSIONS_FAILED(C_MENU_ITEM_DEF)
 {
-	text[0]		=	"NedokonËenÈ\nmise";
+	text[0]		=	"Nedokonƒçen√©\nmise";
 	
 	posx		=	LOG_ITEM_X1;
 	posy		=   	3500;
@@ -85,7 +85,7 @@ INSTANCE MENU_ITEM_SEL_MISSIONS_FAILED(C_MENU_ITEM_DEF)
 
 INSTANCE MENU_ITEM_SEL_LOG(C_MENU_ITEM_DEF)
 {
-	text[0]		=	"VöeobecnÈ\ninformace";
+	text[0]		=	"V≈°eobecn√©\ninformace";
 	
 	posx		=	LOG_ITEM_X1;
 	posy		=   	4500;
@@ -106,7 +106,7 @@ INSTANCE MENU_ITEM_SEL_LOG(C_MENU_ITEM_DEF)
 instance MENU_ITEM_LIST_MISSIONS_ACT(C_MENU_ITEM_DEF)
 {
 	type		= 	MENU_ITEM_LISTBOX;	
-	text[0]		= 	"RozehranÈ mise";
+	text[0]		= 	"Rozehran√© mise";
 	
 	posx		=	LOG_ITEM_LIST_X;
 	posy		=   LOG_ITEM_LIST_Y;
@@ -126,7 +126,7 @@ instance MENU_ITEM_LIST_MISSIONS_ACT(C_MENU_ITEM_DEF)
 instance MENU_ITEM_LIST_MISSIONS_FAILED(C_MENU_ITEM_DEF)
 {
 	type		= 	MENU_ITEM_LISTBOX;	
-	text[0]		= 	"DokonËenÈ mise";
+	text[0]		= 	"Dokonƒçen√© mise";
 	
 	posx		=	LOG_ITEM_LIST_X;
 	posy		=   LOG_ITEM_LIST_Y;
@@ -146,7 +146,7 @@ instance MENU_ITEM_LIST_MISSIONS_FAILED(C_MENU_ITEM_DEF)
 instance MENU_ITEM_LIST_MISSIONS_OLD(C_MENU_ITEM_DEF)
 {
 	type		= 	MENU_ITEM_LISTBOX;	
-	text[0]		= 	"NedokonËenÈ mise";
+	text[0]		= 	"Nedokonƒçen√© mise";
 	
 	posx		=	LOG_ITEM_LIST_X;
 	posy		=   LOG_ITEM_LIST_Y;
@@ -166,7 +166,7 @@ instance MENU_ITEM_LIST_MISSIONS_OLD(C_MENU_ITEM_DEF)
 instance MENU_ITEM_LIST_LOG(C_MENU_ITEM_DEF)
 {
 	type		= 	MENU_ITEM_LISTBOX;	
-	text[0]		= 	"P¯ihl·öenÌ";
+	text[0]		= 	"P≈ôihl√°≈°en√≠";
 	
 	posx		=	LOG_ITEM_LIST_X;
 	posy		=   LOG_ITEM_LIST_Y;
@@ -189,7 +189,7 @@ instance MENU_ITEM_LIST_LOG(C_MENU_ITEM_DEF)
 
 INSTANCE MENU_ITEM_CONTENT_VIEWER(C_MENU_ITEM_DEF)
 {
-	text[0]		=	"pr·zdnÈ";
+	text[0]		=	"pr√°zdn√©";
 	
 	posx		=	0;
 	posy		=   0;	
@@ -217,7 +217,7 @@ INSTANCE MENU_ITEM_DAY_TITLE(C_MENU_ITEM_DEF)
 
 INSTANCE MENU_ITEM_TIME_TITLE(C_MENU_ITEM_DEF)
 {
-	text[0]		= 	"»as";
+	text[0]		= 	"ƒåas";
 	posx 		= 	1500;
 	posy		= 	6300;
 	fontName	=	LOG_FONT_DATETIME;

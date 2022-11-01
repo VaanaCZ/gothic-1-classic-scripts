@@ -33,7 +33,7 @@ instance Info_Kirgo_What(C_INFO)
 	condition		= Info_Kirgo_What_Condition;
 	information		= Info_Kirgo_What_Info;
 	permanent		= 0;
-	description 	= "Zdar! Jsem tady nový.";
+	description 	= "Zdar! Jsem tady novÃ½.";
 };                       
 
 FUNC INT Info_Kirgo_What_Condition()
@@ -45,9 +45,9 @@ FUNC INT Info_Kirgo_What_Condition()
 };
 func VOID Info_Kirgo_What_Info()
 {
-	AI_Output (other, self,"Info_Kirgo_What_15_00"); //Zdar! Jsem tu nový.
-	AI_Output (self, other,"Info_Kirgo_What_05_01"); //Neøíkej! Øekni mi nìco o vnìjším svìtì! Už jsem o tom, co se dìje venku, neslyšel pøes mìsíc.
-	AI_Output (self, other,"Info_Kirgo_What_05_02"); //Jsem Kirgo. Bojuju v arénì.
+	AI_Output (other, self,"Info_Kirgo_What_15_00"); //Zdar! Jsem tu novÃ½.
+	AI_Output (self, other,"Info_Kirgo_What_05_01"); //NeÅ™Ã­kej! Å˜ekni mi nÄ›co o vnÄ›jÅ¡Ã­m svÄ›tÄ›! UÅ¾ jsem o tom, co se dÄ›je venku, neslyÅ¡el pÅ™es mÄ›sÃ­c.
+	AI_Output (self, other,"Info_Kirgo_What_05_02"); //Jsem Kirgo. Bojuju v arÃ©nÄ›.
 };
 
 // **************************************************
@@ -61,7 +61,7 @@ instance Info_Kirgo_Good (C_INFO)
 	condition		= Info_Kirgo_Good_Condition;
 	information		= Info_Kirgo_Good_Info;
 	permanent		= 0;
-	description 	= "A jsi dobrý? Myslím v boji, chápeš?";
+	description 	= "A jsi dobrÃ½? MyslÃ­m v boji, chÃ¡peÅ¡?";
 };                       
 
 FUNC INT Info_Kirgo_Good_Condition()
@@ -74,8 +74,8 @@ FUNC INT Info_Kirgo_Good_Condition()
 
 func VOID Info_Kirgo_Good_Info()
 {
-	AI_Output (other, self,"Info_Kirgo_Good_15_00"); //A jsi dobrý?
-	AI_Output (self, other,"Info_Kirgo_Good_05_01"); //V boji? Už jsem dlouho nebojoval, ale zatím jsem v souboji vždycky zvítìzil!
+	AI_Output (other, self,"Info_Kirgo_Good_15_00"); //A jsi dobrÃ½?
+	AI_Output (self, other,"Info_Kirgo_Good_05_01"); //V boji? UÅ¾ jsem dlouho nebojoval, ale zatÃ­m jsem v souboji vÅ¾dycky zvÃ­tÄ›zil!
 };
 
 // **************************************
@@ -89,12 +89,12 @@ instance Info_Kirgo_Charge(C_INFO)
 	condition		= Info_Kirgo_Charge_Condition;
 	information		= Info_Kirgo_Charge_Info;
 	permanent		= 0;
-	description 	= "Chtìl bych tì vyzvat na souboj v arénì!";
+	description 	= "ChtÄ›l bych tÄ› vyzvat na souboj v arÃ©nÄ›!";
 };                       
 
 FUNC INT Info_Kirgo_Charge_Condition()
 {
-	if (Npc_KnowsInfo (hero,DIA_Scatty_JoinOC) && Npc_KnowsInfo (hero,Info_Kirgo_What) && (Kapitel <= 1))	// Kapitelfix   ***Björn***
+	if (Npc_KnowsInfo (hero,DIA_Scatty_JoinOC) && Npc_KnowsInfo (hero,Info_Kirgo_What) && (Kapitel <= 1))	// Kapitelfix   ***BjÃ¶rn***
 	{
 		return 1;
 	};
@@ -102,32 +102,32 @@ FUNC INT Info_Kirgo_Charge_Condition()
 
 func VOID Info_Kirgo_Charge_Info()
 {
-	AI_Output (other, self,"Info_Kirgo_Charge_15_00"); //Chtìl bych tì vyzvat na souboj v arénì!
-	AI_Output (self, other,"Info_Kirgo_Charge_05_01"); //Cože? Ale já bojovat nechci. Proè si radìji nedáme pivo a nepopovídáme o vnìjším svìtì?
+	AI_Output (other, self,"Info_Kirgo_Charge_15_00"); //ChtÄ›l bych tÄ› vyzvat na souboj v arÃ©nÄ›!
+	AI_Output (self, other,"Info_Kirgo_Charge_05_01"); //CoÅ¾e? Ale jÃ¡ bojovat nechci. ProÄ si radÄ›ji nedÃ¡me pivo a nepopovÃ­dÃ¡me o vnÄ›jÅ¡Ã­m svÄ›tÄ›?
 	Info_ClearChoices	(Info_Kirgo_Charge );
-	Info_AddChoice		(Info_Kirgo_Charge,"Ne! Chci bojovat. Teï!",Info_Kirgo_Charge_NOW);
-	Info_AddChoice		(Info_Kirgo_Charge,"Dobøe, pak mám u tebe pivo!",Info_Kirgo_Charge_Beer);
+	Info_AddChoice		(Info_Kirgo_Charge,"Ne! Chci bojovat. TeÄ!",Info_Kirgo_Charge_NOW);
+	Info_AddChoice		(Info_Kirgo_Charge,"DobÅ™e, pak mÃ¡m u tebe pivo!",Info_Kirgo_Charge_Beer);
 };
 
 func void Info_Kirgo_Charge_NOW()
 {
-	AI_Output (other, self,"Info_Kirgo_Charge_NOW_15_00"); //Ne! Chci bojovat. Teï!
-	AI_Output (self, other,"Info_Kirgo_Charge_NOW_05_01"); //V tom pøípadì... Jestli jsi pøipraven, já taky.
+	AI_Output (other, self,"Info_Kirgo_Charge_NOW_15_00"); //Ne! Chci bojovat. TeÄ!
+	AI_Output (self, other,"Info_Kirgo_Charge_NOW_05_01"); //V tom pÅ™Ã­padÄ›... Jestli jsi pÅ™ipraven, jÃ¡ taky.
 	Info_ClearChoices	(Info_Kirgo_Charge );
 };
 
 func void Info_Kirgo_Charge_Beer()
 {
-	AI_Output (other, self,"Info_Kirgo_Charge_Beer_15_00"); //Dobøe, pak mám u tebe pivo!
+	AI_Output (other, self,"Info_Kirgo_Charge_Beer_15_00"); //DobÅ™e, pak mÃ¡m u tebe pivo!
 	AI_Output (self, other,"Info_Kirgo_Charge_Beer_05_01"); //Tady je!
-	AI_Output (other, self,"Info_Kirgo_Charge_Beer_15_02"); //Díky! Obávám se, že ti toho o vnìjším svìtì nebudu moci tolik øíci - drželi mì skoro dva mìsíce zamknutého v tmavé díøe, než mì uvrhli sem.
-	AI_Output (self, other,"Info_Kirgo_Charge_Beer_05_03"); //To je ostuda... No, nezlob se... Hej, na nìkoho, kdo byl dva mìsíce pod zámkem, ale vypadáš docela dobøe.
-	AI_Output (other, self,"Info_Kirgo_Charge_Beer_15_04"); //Jsem rád, že to takhle dopadlo.
-	AI_Output (self, other,"Info_Kirgo_Charge_Beer_05_05"); //Proè potom trváš na tom, abysme se spolu utkali?
-	AI_Output (other, self,"Info_Kirgo_Charge_Beer_15_06"); //Chci, aby se o mnì v táboøe vìdìlo!
-	AI_Output (self, other,"Info_Kirgo_Charge_Beer_05_07"); //Myslíš Scattyho? Hm, to je jeden z nejvýznamnìjších mužù z Vnìjšího okruhu... Když mì porazíš, urèitì si toho všimne...
-	AI_Output (self, other,"Info_Kirgo_Charge_Beer_05_08"); //Ale jestli ho doopravdy chceš zaujmout, pak potøebuješ porazit Kharima. Akorát mám obavu, že na tebe bude pøíliš silný!
-	AI_Output (self, other,"Info_Kirgo_Charge_Beer_05_09"); //Jestli chceš ještì poøád bojovat se mnou, dej mi vìdìt. Nebudu mít ale radost z toho, až tì skolím.
+	AI_Output (other, self,"Info_Kirgo_Charge_Beer_15_02"); //DÃ­ky! ObÃ¡vÃ¡m se, Å¾e ti toho o vnÄ›jÅ¡Ã­m svÄ›tÄ› nebudu moci tolik Å™Ã­ci - drÅ¾eli mÄ› skoro dva mÄ›sÃ­ce zamknutÃ©ho v tmavÃ© dÃ­Å™e, neÅ¾ mÄ› uvrhli sem.
+	AI_Output (self, other,"Info_Kirgo_Charge_Beer_05_03"); //To je ostuda... No, nezlob se... Hej, na nÄ›koho, kdo byl dva mÄ›sÃ­ce pod zÃ¡mkem, ale vypadÃ¡Å¡ docela dobÅ™e.
+	AI_Output (other, self,"Info_Kirgo_Charge_Beer_15_04"); //Jsem rÃ¡d, Å¾e to takhle dopadlo.
+	AI_Output (self, other,"Info_Kirgo_Charge_Beer_05_05"); //ProÄ potom trvÃ¡Å¡ na tom, abysme se spolu utkali?
+	AI_Output (other, self,"Info_Kirgo_Charge_Beer_15_06"); //Chci, aby se o mnÄ› v tÃ¡boÅ™e vÄ›dÄ›lo!
+	AI_Output (self, other,"Info_Kirgo_Charge_Beer_05_07"); //MyslÃ­Å¡ Scattyho? Hm, to je jeden z nejvÃ½znamnÄ›jÅ¡Ã­ch muÅ¾Å¯ z VnÄ›jÅ¡Ã­ho okruhu... KdyÅ¾ mÄ› porazÃ­Å¡, urÄitÄ› si toho vÅ¡imne...
+	AI_Output (self, other,"Info_Kirgo_Charge_Beer_05_08"); //Ale jestli ho doopravdy chceÅ¡ zaujmout, pak potÅ™ebujeÅ¡ porazit Kharima. AkorÃ¡t mÃ¡m obavu, Å¾e na tebe bude pÅ™Ã­liÅ¡ silnÃ½!
+	AI_Output (self, other,"Info_Kirgo_Charge_Beer_05_09"); //Jestli chceÅ¡ jeÅ¡tÄ› poÅ™Ã¡d bojovat se mnou, dej mi vÄ›dÄ›t. Nebudu mÃ­t ale radost z toho, aÅ¾ tÄ› skolÃ­m.
 	
 	CreateInvItem (other, ItFoBeer);
 	B_GiveInvItems (other, self, ItFoBeer, 1);
@@ -150,12 +150,12 @@ instance Info_Kirgo_ChargeREAL(C_INFO)
 	condition		= Info_Kirgo_ChargeREAL_Condition;
 	information		= Info_Kirgo_ChargeREAL_Info;
 	permanent		= 0;
-	description 	= "Tak pojïme bojovat - jsi pøipraven?";
+	description 	= "Tak pojÄme bojovat - jsi pÅ™ipraven?";
 };                       
 
 FUNC INT Info_Kirgo_ChargeREAL_Condition()
 {
-	if (Npc_KnowsInfo (hero,Info_Kirgo_Charge) &&  (Kapitel <= 1))	//Kapitelfix	****Björn****
+	if (Npc_KnowsInfo (hero,Info_Kirgo_Charge) &&  (Kapitel <= 1))	//Kapitelfix	****BjÃ¶rn****
 	{
 		return 1;
 	};
@@ -163,8 +163,8 @@ FUNC INT Info_Kirgo_ChargeREAL_Condition()
 
 func VOID Info_Kirgo_ChargeREAL_Info()
 {
-	AI_Output (other, self,"Info_Kirgo_ChargeREAL_15_00"); //Tak pojïme bojovat - jsi pøipraven?
-	AI_Output (self, other,"Info_Kirgo_ChargeREAL_05_01"); //Pojï za mnou!
+	AI_Output (other, self,"Info_Kirgo_ChargeREAL_15_00"); //Tak pojÄme bojovat - jsi pÅ™ipraven?
+	AI_Output (self, other,"Info_Kirgo_ChargeREAL_05_01"); //PojÄ za mnou!
 	
 	AI_StopProcessInfos	( self );
 	
@@ -197,9 +197,9 @@ FUNC INT Info_Kirgo_InArena_Condition()
 
 func VOID Info_Kirgo_InArena_Info()
 {
-	if (Kapitel <= 1)			//Fix für spätere Kapitel ****Björn****
+	if (Kapitel <= 1)			//Fix fÃ¼r spÃ¤tere Kapitel ****BjÃ¶rn****
 	{
-		AI_Output (self, other,"Info_Kirgo_InArena_05_00"); //Dobøe, pojïme do toho. A vyhraje ten nejlepší!
+		AI_Output (self, other,"Info_Kirgo_InArena_05_00"); //DobÅ™e, pojÄme do toho. AÅ¥ vyhraje ten nejlepÅ¡Ã­!
 		
 		AI_StopProcessInfos	( self );
 			
@@ -210,7 +210,7 @@ func VOID Info_Kirgo_InArena_Info()
 	}
 	else
 	{
-		AI_Output (self, other,"SVM_5_LetsForgetOurLittleFight"); //Dobrá, zapomeòme na tuhle hádku, dobrý?
+		AI_Output (self, other,"SVM_5_LetsForgetOurLittleFight"); //DobrÃ¡, zapomeÅˆme na tuhle hÃ¡dku, dobrÃ½?
 		AI_StopProcessInfos	( self );
 		Npc_ExchangeRoutine(self,"START");
 	};

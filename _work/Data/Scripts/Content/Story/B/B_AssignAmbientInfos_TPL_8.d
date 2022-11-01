@@ -37,7 +37,7 @@ INSTANCE Info_Tpl_8_EinerVonEuchWerden (C_INFO) // E1
 	condition	= Info_Tpl_8_EinerVonEuchWerden_Condition;
 	information	= Info_Tpl_8_EinerVonEuchWerden_Info;
 	permanent	= 1;
-	description = "Potøebujete spolehlivého mue?";
+	description = "PotÅ™ebujete spolehlivÃ©ho muÅ¾e?";
 };                       
 
 FUNC INT Info_Tpl_8_EinerVonEuchWerden_Condition()
@@ -52,9 +52,9 @@ FUNC INT Info_Tpl_8_EinerVonEuchWerden_Condition()
 
 FUNC VOID Info_Tpl_8_EinerVonEuchWerden_Info()
 {
-	AI_Output(other,self,"Info_Tpl_8_EinerVonEuchWerden_15_00"); //Potøebujete spolehlivého mue?
-	AI_Output(self,other,"Info_Tpl_8_EinerVonEuchWerden_08_01"); //Poøád hledáme spolehlivé mue. Musíš ale tvrdì pracovat, aby ses zdokonalil. Jen zkušení novicové se mohou stát templáøi.
-	AI_Output(self,other,"Info_Tpl_8_EinerVonEuchWerden_08_02"); //To je ta nejvìtší pocta pro všechny následovníky Spáèova Bratrstva.
+	AI_Output(other,self,"Info_Tpl_8_EinerVonEuchWerden_15_00"); //PotÅ™ebujete spolehlivÃ©ho muÅ¾e?
+	AI_Output(self,other,"Info_Tpl_8_EinerVonEuchWerden_08_01"); //PoÅ™Ã¡d hledÃ¡me spolehlivÃ© muÅ¾e. MusÃ­Å¡ ale tvrdÄ› pracovat, aby ses zdokonalil. Jen zkuÅ¡enÃ­ novicovÃ© se mohou stÃ¡t templÃ¡Å™i.
+	AI_Output(self,other,"Info_Tpl_8_EinerVonEuchWerden_08_02"); //To je ta nejvÄ›tÅ¡Ã­ pocta pro vÅ¡echny nÃ¡sledovnÃ­ky SpÃ¡Äova Bratrstva.
 };
 
 // *************************************************************************
@@ -77,10 +77,10 @@ FUNC INT Info_Tpl_8_WichtigePersonen_Condition()
 
 FUNC VOID Info_Tpl_8_WichtigePersonen_Info()
 {
-	AI_Output(other,self,"Info_Tpl_8_WichtigePersonen_15_00"); //Kdo tady má velení?
-	AI_Output(self,other,"Info_Tpl_8_WichtigePersonen_08_01"); //Dìláme to, co øeknou Guru. Slouit jim je naše povinnost.
+	AI_Output(other,self,"Info_Tpl_8_WichtigePersonen_15_00"); //Kdo tady mÃ¡ velenÃ­?
+	AI_Output(self,other,"Info_Tpl_8_WichtigePersonen_08_01"); //DÄ›lÃ¡me to, co Å™eknou Guru. SlouÅ¾it jim je naÅ¡e povinnost.
 	AI_Output(other,self,"Info_Tpl_8_WichtigePersonen_15_02"); //Kdo jsou ti Guru?
-	AI_Output(self,other,"Info_Tpl_8_WichtigePersonen_08_03"); //Y´Berion Osvícenı je hlavou Guru. Pod ním jsou Cor Kalom a další.
+	AI_Output(self,other,"Info_Tpl_8_WichtigePersonen_08_03"); //YÂ´Berion OsvÃ­cenÃ½ je hlavou Guru. Pod nÃ­m jsou Cor Kalom a dalÅ¡Ã­.
 	var C_NPC YBerion;		YBerion	= Hlp_GetNpc(Gur_1200_Yberion);
 	var C_NPC CorKalom;		CorKalom= Hlp_GetNpc(Gur_1201_CorKalom);
 	var C_NPC CorAngar;		CorAngar= Hlp_GetNpc(Gur_1202_CorAngar);
@@ -99,7 +99,7 @@ INSTANCE Info_Tpl_8_DasLager(C_INFO)
 	condition	= Info_Tpl_8_DasLager_Condition;
 	information	= Info_Tpl_8_DasLager_Info;
 	permanent	= 1;
-	description = "Co mi mùeš øíci o táboøe?";
+	description = "Co mi mÅ¯Å¾eÅ¡ Å™Ã­ci o tÃ¡boÅ™e?";
 };                       
 
 FUNC INT Info_Tpl_8_DasLager_Condition()
@@ -112,9 +112,9 @@ FUNC INT Info_Tpl_8_DasLager_Condition()
 
 FUNC VOID Info_Tpl_8_DasLager_Info()
 {
-	AI_Output(other,self,"Info_Tpl_8_DasLager_15_00"); //Co mi mùeš øíci o táboru?
-	AI_Output(self,other,"Info_Tpl_8_DasLager_08_01"); //Jako novı pøíchozí mùeš jít v podstatì kam chceš. Nevìrcùm však není povolen vstup do Spáèova chrámu.
-	AI_Output(self,other,"Info_Tpl_8_DasLager_08_02"); //Take choï jen tam, kam smíš. A také nevyrušuj naše pány pøi meditacích.
+	AI_Output(other,self,"Info_Tpl_8_DasLager_15_00"); //Co mi mÅ¯Å¾eÅ¡ Å™Ã­ci o tÃ¡boru?
+	AI_Output(self,other,"Info_Tpl_8_DasLager_08_01"); //Jako novÃ½ pÅ™Ã­chozÃ­ mÅ¯Å¾eÅ¡ jÃ­t v podstatÄ› kam chceÅ¡. NevÄ›rcÅ¯m vÅ¡ak nenÃ­ povolen vstup do SpÃ¡Äova chrÃ¡mu.
+	AI_Output(self,other,"Info_Tpl_8_DasLager_08_02"); //TakÅ¾e choÄ jen tam, kam smÃ­Å¡. A takÃ© nevyruÅ¡uj naÅ¡e pÃ¡ny pÅ™i meditacÃ­ch.
 };
 
 // *************************************************************************
@@ -140,8 +140,8 @@ FUNC INT Info_Tpl_8_DieLage_Condition()
 
 FUNC VOID Info_Tpl_8_DieLage_Info()
 {
-	AI_Output(other,self,"Info_Tpl_8_DieLage_15_00"); //Jak se máš?
-	AI_Output(self,other,"Info_Tpl_8_DieLage_08_01"); //Varuji tì. Nebuï nezdvoøilı. Mluvíš s jedním z vyvolenıch prorokovıch strácù.
+	AI_Output(other,self,"Info_Tpl_8_DieLage_15_00"); //Jak se mÃ¡Å¡?
+	AI_Output(self,other,"Info_Tpl_8_DieLage_08_01"); //Varuji tÄ›. NebuÄ nezdvoÅ™ilÃ½. MluvÃ­Å¡ s jednÃ­m z vyvolenÃ½ch prorokovÃ½ch strÃ¡Å¾cÅ¯.
 };
 	
 // *************************************************************************

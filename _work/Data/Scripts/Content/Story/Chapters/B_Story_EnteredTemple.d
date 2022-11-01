@@ -1,7 +1,7 @@
 func void B_Story_EnteredTemple()
 {
-	//-------- Tagebucheinträge --------
-	B_LogEntry		(CH4_EnterTemple,"Podaøilo se mi dostat se do Spáèova chrámu. Nemám sebemenší tušení, co se tu ode mì oèekává, ale pøijdu na to.");
+	//-------- TagebucheintrÃ¤ge --------
+	B_LogEntry		(CH4_EnterTemple,"PodaÅ™ilo se mi dostat se do SpÃ¡Äova chrÃ¡mu. NemÃ¡m sebemenÅ¡Ã­ tuÅ¡enÃ­, co se tu ode mÄ› oÄekÃ¡vÃ¡, ale pÅ™ijdu na to.");
 	
 	//-------- Monster platziern --------
 

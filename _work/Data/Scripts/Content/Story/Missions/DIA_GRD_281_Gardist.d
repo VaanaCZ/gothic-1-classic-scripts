@@ -46,6 +46,6 @@ FUNC INT DIA_Grd_281_GuardGate_Condition()
 FUNC VOID DIA_Grd_281_GuardGate_Info()
 {
 	AI_Output (other, self,"DIA_Grd_281_GuardGate_15_00"); //Jak to jde?
-	AI_Output (self, other,"DIA_Grd_281_GuardGate_07_01"); //Dobøe. Nikdo z té lùzy z Nového tábora se tu neukázal!
+	AI_Output (self, other,"DIA_Grd_281_GuardGate_07_01"); //DobÅ™e. Nikdo z tÃ© lÅ¯zy z NovÃ©ho tÃ¡bora se tu neukÃ¡zal!
 	AI_StopProcessInfos	( self );
 };

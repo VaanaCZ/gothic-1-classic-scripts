@@ -37,7 +37,7 @@ instance  DIA_Torrez_Hello (C_INFO)
 	condition	=  DIA_Torrez_Hello_Condition;
 	information	=  DIA_Torrez_Hello_Info;
 	permanent	=  0;
-	description =  "Hled·m NejvyööÌho m·ga OhnivÈho kruhu.";
+	description =  "Hled√°m Nejvy≈°≈°√≠ho m√°ga Ohniv√©ho kruhu.";
 };                       
 
 FUNC int  DIA_Torrez_Hello_Condition()
@@ -47,14 +47,14 @@ FUNC int  DIA_Torrez_Hello_Condition()
 
 FUNC VOID  DIA_Torrez_Hello_Info()
 {
-	AI_Output (other, self,"DIA_Torrez_Hello_15_00"); //Hled·m VelkÈho m·ga Kruhu ohnÏ!
-	AI_Output (self, other,"DIA_Torrez_Hello_04_01"); //ÿekni Miltenovi! A teÔ uû jdi!
+	AI_Output (other, self,"DIA_Torrez_Hello_15_00"); //Hled√°m Velk√©ho m√°ga Kruhu ohnƒõ!
+	AI_Output (self, other,"DIA_Torrez_Hello_04_01"); //≈òekni Miltenovi! A teƒè u≈æ jdi!
 	
 	AI_StopProcessInfos	( self );
 };
 
 //***********************************************
-//					Belohnung WƒHLEN	
+//					Belohnung W√ÑHLEN	
 //***********************************************
 
 instance  DIA_Torrez_Belohnung (C_INFO)
@@ -64,7 +64,7 @@ instance  DIA_Torrez_Belohnung (C_INFO)
 	condition	=  DIA_Torrez_Belohnung_Condition;
 	information	=  DIA_Torrez_Belohnung_Info;
 	permanent	=  0;
-	description =  "Dopis jsem p¯edal a teÔ si chci vybrat svoji odmÏnu.";
+	description =  "Dopis jsem p≈ôedal a teƒè si chci vybrat svoji odmƒõnu.";
 };                       
 
 FUNC int  DIA_Torrez_Belohnung_Condition()
@@ -77,20 +77,20 @@ FUNC int  DIA_Torrez_Belohnung_Condition()
 
 FUNC VOID  DIA_Torrez_Belohnung_Info()
 {
-	AI_Output (other, self,"DIA_Torrez_Belohnung_15_00"); //Poslal mÏ Corristo. P¯edal jsem mu zpr·vu a teÔ jsem tu, abych si vybral odmÏnu.
-	AI_Output (self, other,"DIA_Torrez_Belohnung_04_01"); //UdÏlal jsi pro n·s velkou sluûbu a dostaneö za to odmÏnu. VybÌrej pozornÏ.
+	AI_Output (other, self,"DIA_Torrez_Belohnung_15_00"); //Poslal mƒõ Corristo. P≈ôedal jsem mu zpr√°vu a teƒè jsem tu, abych si vybral odmƒõnu.
+	AI_Output (self, other,"DIA_Torrez_Belohnung_04_01"); //Udƒõlal jsi pro n√°s velkou slu≈æbu a dostane≈° za to odmƒõnu. Vyb√≠rej pozornƒõ.
 	
 	Info_ClearChoices	(DIA_Torrez_Belohnung);
 	Info_AddChoice		(DIA_Torrez_Belohnung,"Esence ducha (maximum many +5)",DIA_Torrez_Belohnung_ManaMax);
-	Info_AddChoice		(DIA_Torrez_Belohnung,"3 kouzelnÈ svitky (ohniv· koule, blesk, promÏna v mrchoûrouta)",DIA_Torrez_Belohnung_Scrolls);
+	Info_AddChoice		(DIA_Torrez_Belohnung,"3 kouzeln√© svitky (ohniv√° koule, blesk, promƒõna v mrcho≈ærouta)",DIA_Torrez_Belohnung_Scrolls);
 	Info_AddChoice		(DIA_Torrez_Belohnung,"Prsten obratnosti (+5)",DIA_Torrez_Belohnung_Dex);
-	Info_AddChoice		(DIA_Torrez_Belohnung,"Prsten sÌly (+5)",DIA_Torrez_Belohnung_Str);
+	Info_AddChoice		(DIA_Torrez_Belohnung,"Prsten s√≠ly (+5)",DIA_Torrez_Belohnung_Str);
 };
 
 func void DIA_Torrez_Belohnung_Str()
 {
-	AI_Output (other, self,"DIA_Torrez_Belohnung_Str_15_00"); //Vezmu si Prsten sÌly.
-	AI_Output (self, other,"DIA_Torrez_Belohnung_Str_04_01"); //Zkuöen· volba. Tady je ten prsten.
+	AI_Output (other, self,"DIA_Torrez_Belohnung_Str_15_00"); //Vezmu si Prsten s√≠ly.
+	AI_Output (self, other,"DIA_Torrez_Belohnung_Str_04_01"); //Zku≈°en√° volba. Tady je ten prsten.
 	CreateInvItem(self, Staerkering);
 	B_GiveInvItems (self, hero, Staerkering, 1);
 	Info_ClearChoices	(DIA_Torrez_Belohnung);
@@ -98,8 +98,8 @@ func void DIA_Torrez_Belohnung_Str()
 
 func void DIA_Torrez_Belohnung_Dex()
 {
-	AI_Output (other, self,"DIA_Torrez_Belohnung_Dex_15_00"); //Vezmu si tenhle Prsten zruËnosti.
-	AI_Output (self, other,"DIA_Torrez_Belohnung_Dex_04_01"); //ZruËnost vÌtÏzÌ nad silou. DobrÈ rozhodnutÌ.
+	AI_Output (other, self,"DIA_Torrez_Belohnung_Dex_15_00"); //Vezmu si tenhle Prsten zruƒçnosti.
+	AI_Output (self, other,"DIA_Torrez_Belohnung_Dex_04_01"); //Zruƒçnost v√≠tƒõz√≠ nad silou. Dobr√© rozhodnut√≠.
 	CreateInvItem(self, Ring_des_Geschicks);
 	B_GiveInvItems (self, hero, Ring_des_Geschicks, 1);
 	Info_ClearChoices	(DIA_Torrez_Belohnung);
@@ -107,8 +107,8 @@ func void DIA_Torrez_Belohnung_Dex()
 
 func void DIA_Torrez_Belohnung_Scrolls()
 {
-	AI_Output (other, self,"DIA_Torrez_Belohnung_Scrolls_15_00"); //Dej mi kouzeln˝ svitek.
-	AI_Output (self, other,"DIA_Torrez_Belohnung_Scrolls_04_01"); //Pouûij ho moud¯e. Kaûd˝ m˘ûeö pouûÌt jen jednou!
+	AI_Output (other, self,"DIA_Torrez_Belohnung_Scrolls_15_00"); //Dej mi kouzeln√Ω svitek.
+	AI_Output (self, other,"DIA_Torrez_Belohnung_Scrolls_04_01"); //Pou≈æij ho moud≈ôe. Ka≈æd√Ω m≈Ø≈æe≈° pou≈æ√≠t jen jednou!
 	CreateInvItems(self, ItArScrollFireball, 3);
 	B_GiveInvItems (self, hero, ItArScrollFireball, 3);//Wegen Bildschirmausgabe, wird direkt angepasst
 	Npc_RemoveInvItems(other, ItArScrollFireball, 2);
@@ -119,8 +119,8 @@ func void DIA_Torrez_Belohnung_Scrolls()
 
 func void DIA_Torrez_Belohnung_ManaMax()
 {
-	AI_Output (other, self,"DIA_Torrez_Belohnung_ManaMax_15_00"); //ChtÏl bych mÌt ten lektvar!
-	AI_Output (self, other,"DIA_Torrez_Belohnung_ManaMax_04_01"); //Moudr· volba! Vybral sis nejlepöÌ z dar˘. Kdyû se toho lektvaru napijeö, tvoje sÌla se umocnÌ!
+	AI_Output (other, self,"DIA_Torrez_Belohnung_ManaMax_15_00"); //Chtƒõl bych m√≠t ten lektvar!
+	AI_Output (self, other,"DIA_Torrez_Belohnung_ManaMax_04_01"); //Moudr√° volba! Vybral sis nejlep≈°√≠ z dar≈Ø. Kdy≈æ se toho lektvaru napije≈°, tvoje s√≠la se umocn√≠!
 	CreateInvItem(self, ItFo_Potion_Mana_Perma_01);
 	B_GiveInvItems (self, hero, ItFo_Potion_Mana_Perma_01, 1);
 	Info_ClearChoices	(DIA_Torrez_Belohnung);
@@ -137,7 +137,7 @@ instance  DIA_Torrez_BriefTausch (C_INFO)
 	condition	=  DIA_Torrez_BriefTausch_Condition;
 	information	=  DIA_Torrez_BriefTausch_Info;
 	permanent	=  0;
-	description =  "M·m pro tebe dopis! Nejd¯Ìv chci ale odmÏnu!";
+	description =  "M√°m pro tebe dopis! Nejd≈ô√≠v chci ale odmƒõnu!";
 };                       
 
 FUNC int  DIA_Torrez_BriefTausch_Condition()
@@ -150,16 +150,16 @@ FUNC int  DIA_Torrez_BriefTausch_Condition()
 
 FUNC VOID  DIA_Torrez_BriefTausch_Info()
 {
-	AI_Output (other, self,"DIA_Torrez_BriefTausch_15_00"); //M·m pro tebe dopis! Nejd¯Ìv chci ale odmÏnu!
-	AI_Output (self, other,"DIA_Torrez_BriefTausch_04_01"); //ProË si ne¯ekneö Miltenovi?
-	AI_Output (other, self,"DIA_Torrez_BriefTausch_15_02"); //Uû jsem to udÏlal.
-	AI_Output (self, other,"DIA_Torrez_BriefTausch_04_03"); //RozumÌm. Tvou odmÏnu m·m tady - ukaû mi ten dopis. TeÔ!
+	AI_Output (other, self,"DIA_Torrez_BriefTausch_15_00"); //M√°m pro tebe dopis! Nejd≈ô√≠v chci ale odmƒõnu!
+	AI_Output (self, other,"DIA_Torrez_BriefTausch_04_01"); //Proƒç si ne≈ôekne≈° Miltenovi?
+	AI_Output (other, self,"DIA_Torrez_BriefTausch_15_02"); //U≈æ jsem to udƒõlal.
+	AI_Output (self, other,"DIA_Torrez_BriefTausch_04_03"); //Rozum√≠m. Tvou odmƒõnu m√°m tady - uka≈æ mi ten dopis. Teƒè!
 	AI_Output (other, self,"DIA_Torrez_BriefTausch_15_04"); //Tady je.
 		
 	if (Npc_HasItems(other,ItWr_Fire_Letter_01)>=1) 
 	{
-		AI_Output (self, other,"DIA_Torrez_BriefTausch_04_05"); //Tvoje odmÏna je Prsten sÌly. Je to vz·cn˝ artefakt a bude pro tebe velice uûiteËn˝.
-		AI_Output (self, other,"DIA_Torrez_BriefTausch_04_06"); //A teÔ uû jdi!
+		AI_Output (self, other,"DIA_Torrez_BriefTausch_04_05"); //Tvoje odmƒõna je Prsten s√≠ly. Je to vz√°cn√Ω artefakt a bude pro tebe velice u≈æiteƒçn√Ω.
+		AI_Output (self, other,"DIA_Torrez_BriefTausch_04_06"); //A teƒè u≈æ jdi!
 		B_GiveInvItems(other, self, ItWr_Fire_Letter_01, 1);
 		Npc_RemoveInvItems(self, ItWr_Fire_Letter_01, 1);
 		CreateInvItems(self, Staerkering, 1);
@@ -168,9 +168,9 @@ FUNC VOID  DIA_Torrez_BriefTausch_Info()
 	}
 	else if (Npc_HasItems(other,ItWr_Fire_Letter_02)>=1) 
 	{
-		AI_Output (self, other,"DIA_Torrez_BriefTausch_04_07"); //PeËeù je zlomen·.
+		AI_Output (self, other,"DIA_Torrez_BriefTausch_04_07"); //Peƒçe≈• je zlomen√°.
 		AI_Output (other, self,"DIA_Torrez_BriefTausch_15_08"); //Stala se nehoda.
-		AI_Output (self, other,"DIA_Torrez_BriefTausch_04_09"); //Tvoje odmÏna je lÈËiv˝ lektvar. BuÔ r·d, ûe ho dostaneö. Kur˝¯i, kte¯Ì donesou dopis bez peËeti, obvykle nedostanou nic!
+		AI_Output (self, other,"DIA_Torrez_BriefTausch_04_09"); //Tvoje odmƒõna je l√©ƒçiv√Ω lektvar. Buƒè r√°d, ≈æe ho dostane≈°. Kur√Ω≈ôi, kte≈ô√≠ donesou dopis bez peƒçeti, obvykle nedostanou nic!
 		B_GiveInvItems(other, self, ItWr_Fire_Letter_02, 1);
 		Npc_RemoveInvItems(self, ItWr_Fire_Letter_02, 1);
 		CreateInvItems(self, ItFo_Potion_Health_03, 1);
@@ -195,7 +195,7 @@ instance  DIA_Torrez_PERM (C_INFO)
 	condition	=  DIA_Torrez_PERM_Condition;
 	information	=  DIA_Torrez_PERM_Info;
 	permanent	=  1;
-	description =  "Co je v magick˝ch umÏnÌch nebezpeËnÈ?";
+	description =  "Co je v magick√Ωch umƒõn√≠ch nebezpeƒçn√©?";
 };                       
 
 FUNC int  DIA_Torrez_PERM_Condition()
@@ -205,8 +205,8 @@ FUNC int  DIA_Torrez_PERM_Condition()
 
 FUNC VOID  DIA_Torrez_PERM_Info()
 {
-	AI_Output (other, self,"DIA_Torrez_PERM_15_00"); //Co je v magick˝ch umÏnÌch nebezpeËnÈ?
-	AI_Output (self, other,"DIA_Torrez_PERM_04_01"); //To nenÌ tvoje vÏc!
+	AI_Output (other, self,"DIA_Torrez_PERM_15_00"); //Co je v magick√Ωch umƒõn√≠ch nebezpeƒçn√©?
+	AI_Output (self, other,"DIA_Torrez_PERM_04_01"); //To nen√≠ tvoje vƒõc!
 	AI_StopProcessInfos	( self );
 };
 
@@ -226,7 +226,7 @@ FUNC VOID  DIA_Torrez_PERM_Info()
 ///////////////////////////////////////////
 
 //---------------------------------------------------------
-//					WƒHREND DER AUFNAHME	
+//					W√ÑHREND DER AUFNAHME	
 //---------------------------------------------------------
 instance KDF_405_Torrez_BOOK (C_INFO)
 {
@@ -248,8 +248,8 @@ FUNC int  KDF_405_Torrez_BOOK_Condition()
 func void  KDF_405_Torrez_BOOK_Info()
 {
 	
-	AI_Output (self, other,"KDF_405_Torrez_BOOK_Info_04_01"); //Pro kaûd˝ Kruh existuje jedna kniha, kter· vysvÏtluje jeho kouzla. P¯eËti si ty knihy. VÏdomosti jsou sÌla!
-	AI_Output (self, other,"KDF_405_Torrez_BOOK_Info_04_02"); //Vezmi si knihu PrvnÌho kruhu a nauË se rozumÏt Ohni.
+	AI_Output (self, other,"KDF_405_Torrez_BOOK_Info_04_01"); //Pro ka≈æd√Ω Kruh existuje jedna kniha, kter√° vysvƒõtluje jeho kouzla. P≈ôeƒçti si ty knihy. Vƒõdomosti jsou s√≠la!
+	AI_Output (self, other,"KDF_405_Torrez_BOOK_Info_04_02"); //Vezmi si knihu Prvn√≠ho kruhu a nauƒç se rozumƒõt Ohni.
 	CreateInvItem (self,ItWr_Book_Circle_01);
 	B_GiveInvItems(self,hero,ItWr_Book_Circle_01, 1);
 	AI_StopProcessInfos	( self );
@@ -264,7 +264,7 @@ instance  KDF_405_Torrez_SELLBOOKS (C_INFO)
 	information		= KDF_405_Torrez_SELLBOOKS_Info;
 	important		= 0;
 	permanent		= 1;
-	description		= "R·d bych zÌskal magickÈ spisy."; 
+	description		= "R√°d bych z√≠skal magick√© spisy."; 
 	trade 			= 1;
 };
 
@@ -278,10 +278,10 @@ FUNC int  KDF_405_Torrez_SELLBOOKS_Condition()
 	};
 FUNC void  KDF_405_Torrez_SELLBOOKS_Info()
 {
-	AI_Output (other, self,"KDF_405_Torrez_SELLBOOKS_Info_15_01"); //R·d bych zÌskal magickÈ spisy.
+	AI_Output (other, self,"KDF_405_Torrez_SELLBOOKS_Info_15_01"); //R√°d bych z√≠skal magick√© spisy.
 };  
 /*------------------------------------------------------------------------
-						BEGR‹SSUNG						
+						BEGR√úSSUNG						
 ------------------------------------------------------------------------*/
 
 instance  KDF_405_Torrez_GREET (C_INFO)
@@ -291,7 +291,7 @@ instance  KDF_405_Torrez_GREET (C_INFO)
 	information		= KDF_405_Torrez_GREET_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "BuÔ zdr·v, m·gu."; 
+	description		= "Buƒè zdr√°v, m√°gu."; 
 };
 
 FUNC int  KDF_405_Torrez_GREET_Condition()
@@ -302,14 +302,14 @@ FUNC int  KDF_405_Torrez_GREET_Condition()
 
 FUNC void  KDF_405_Torrez_GREET_Info()
 {
-	AI_Output (other, self,"KDF_405_Torrez_GREET_Info_15_01"); //BuÔ zdr·v, m·gu.
-	AI_Output (self, other,"KDF_405_Torrez_GREET_Info_04_02"); //KÈû nad tebou bdÌ Innos! Obchoduji s magick˝mi vÏdomostmi a m˘ûu ti uk·zat, jak zvÏtöÌö svÈ kouzelnÈ sÌly!
+	AI_Output (other, self,"KDF_405_Torrez_GREET_Info_15_01"); //Buƒè zdr√°v, m√°gu.
+	AI_Output (self, other,"KDF_405_Torrez_GREET_Info_04_02"); //K√©≈æ nad tebou bd√≠ Innos! Obchoduji s magick√Ωmi vƒõdomostmi a m≈Ø≈æu ti uk√°zat, jak zvƒõt≈°√≠≈° sv√© kouzeln√© s√≠ly!
 	
 	Log_CreateTopic (GE_TraderOC,LOG_NOTE);
-	B_LogEntry		(GE_TraderOC,"Torrez prod·v· KOUZELN… SVITKY a RUNY. P¯es den b˝v· na n·dvo¯Ì.");
+	B_LogEntry		(GE_TraderOC,"Torrez prod√°v√° KOUZELN√â SVITKY a RUNY. P≈ôes den b√Ωv√° na n√°dvo≈ô√≠.");
 
 	Log_CreateTopic (GE_TeacherOC,LOG_NOTE);
-	B_LogEntry		(GE_TeacherOC,"Torres mi m˘ûe uk·zat, jak zv˝öit svoji MAGICKOU ENERGII. P¯es den b˝v· na n·dvo¯Ì.");
+	B_LogEntry		(GE_TeacherOC,"Torres mi m≈Ø≈æe uk√°zat, jak zv√Ω≈°it svoji MAGICKOU ENERGII. P≈ôes den b√Ωv√° na n√°dvo≈ô√≠.");
 };
 // 
 instance  KDF_405_Torrez_MANA (C_INFO)
@@ -319,7 +319,7 @@ instance  KDF_405_Torrez_MANA (C_INFO)
 	information		= KDF_405_Torrez_MANA_Info;
 	important		= 0;
 	permanent		= 1;
-	description		= "Pot¯ebuji vÌce magickÈ moci."; 
+	description		= "Pot≈ôebuji v√≠ce magick√© moci."; 
 };
 
 FUNC int  KDF_405_Torrez_MANA_Condition()
@@ -332,13 +332,13 @@ FUNC int  KDF_405_Torrez_MANA_Condition()
 };
 FUNC void  KDF_405_Torrez_MANA_Info()
 {
-	AI_Output (other, self,"KDF_405_Torrez_MANA_Info_15_01"); //Po¯ebuju vÌc kouzelnÈ sÌly.
-	AI_Output (self, other,"KDF_405_Torrez_MANA_Info_04_02"); //M˘ûu ti pomoci zvÏtöit tvoji sÌlu. Jak ji pouûijeö, je uû tvoje vÏc.
+	AI_Output (other, self,"KDF_405_Torrez_MANA_Info_15_01"); //Po≈ôebuju v√≠c kouzeln√© s√≠ly.
+	AI_Output (self, other,"KDF_405_Torrez_MANA_Info_04_02"); //M≈Ø≈æu ti pomoci zvƒõt≈°it tvoji s√≠lu. Jak ji pou≈æije≈°, je u≈æ tvoje vƒõc.
 	
 	Info_ClearChoices	(KDF_405_Torrez_MANA);
 	Info_AddChoice		(KDF_405_Torrez_MANA,DIALOG_BACK							,KDF_405_Torrez_MANA_BACK);
-	Info_AddChoice		(KDF_405_Torrez_MANA,"Zv˝öenÌ many o 5 (cena 5 dovednostnÌch bod˘)",KDF_405_Torrez_MANA_MAN_5);
-	Info_AddChoice		(KDF_405_Torrez_MANA,"Zv˝öenÌ many o 1 (cena 1 dovednostnÌ bod)",KDF_405_Torrez_MANA_MAN_1);
+	Info_AddChoice		(KDF_405_Torrez_MANA,"Zv√Ω≈°en√≠ many o 5 (cena 5 dovednostn√≠ch bod≈Ø)",KDF_405_Torrez_MANA_MAN_5);
+	Info_AddChoice		(KDF_405_Torrez_MANA,"Zv√Ω≈°en√≠ many o 1 (cena 1 dovednostn√≠ bod)",KDF_405_Torrez_MANA_MAN_1);
 };  
 func void KDF_405_Torrez_MANA_BACK()
 {
@@ -350,8 +350,8 @@ func void KDF_405_Torrez_MANA_MAN_1()
 	B_BuyAttributePoints (other, ATR_MANA_MAX, 1);
 	Info_ClearChoices	(KDF_405_Torrez_MANA);
 	Info_AddChoice		(KDF_405_Torrez_MANA,DIALOG_BACK								,KDF_405_Torrez_MANA_BACK);
-	Info_AddChoice		(KDF_405_Torrez_MANA,"Zv˝öenÌ many o 5 (cena 5 dovednostnÌch bod˘)",KDF_405_Torrez_MANA_MAN_5);
-	Info_AddChoice		(KDF_405_Torrez_MANA,"Zv˝öenÌ many o 1 (cena 1 dovednostnÌ bod)",KDF_405_Torrez_MANA_MAN_1);
+	Info_AddChoice		(KDF_405_Torrez_MANA,"Zv√Ω≈°en√≠ many o 5 (cena 5 dovednostn√≠ch bod≈Ø)",KDF_405_Torrez_MANA_MAN_5);
+	Info_AddChoice		(KDF_405_Torrez_MANA,"Zv√Ω≈°en√≠ many o 1 (cena 1 dovednostn√≠ bod)",KDF_405_Torrez_MANA_MAN_1);
 
 };
 
@@ -360,8 +360,8 @@ func void KDF_405_Torrez_MANA_MAN_5()
 	B_BuyAttributePoints (other, ATR_MANA_MAX, 5);
 	Info_ClearChoices	(KDF_405_Torrez_MANA);
 	Info_AddChoice		(KDF_405_Torrez_MANA,DIALOG_BACK								,KDF_405_Torrez_MANA_BACK);
-	Info_AddChoice		(KDF_405_Torrez_MANA,"Zv˝öenÌ many o 5 (cena 5 dovednostnÌch bod˘)",KDF_405_Torrez_MANA_MAN_5);
-	Info_AddChoice		(KDF_405_Torrez_MANA,"Zv˝öenÌ many o 1 (cena 1 dovednostnÌ bod)",KDF_405_Torrez_MANA_MAN_1);
+	Info_AddChoice		(KDF_405_Torrez_MANA,"Zv√Ω≈°en√≠ many o 5 (cena 5 dovednostn√≠ch bod≈Ø)",KDF_405_Torrez_MANA_MAN_5);
+	Info_AddChoice		(KDF_405_Torrez_MANA,"Zv√Ω≈°en√≠ many o 1 (cena 1 dovednostn√≠ bod)",KDF_405_Torrez_MANA_MAN_1);
 
 };
 /*------------------------------------------------------------------------
@@ -375,7 +375,7 @@ instance  KDF_405_Torrez_WANNABEMAGE (C_INFO)
 	information		= KDF_405_Torrez_WANNABEMAGE_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Co musÌm udÏlat, abych se stal m·gem?"; 
+	description		= "Co mus√≠m udƒõlat, abych se stal m√°gem?"; 
 };
 
 FUNC int  KDF_405_Torrez_WANNABEMAGE_Condition()
@@ -390,6 +390,6 @@ FUNC int  KDF_405_Torrez_WANNABEMAGE_Condition()
 };
 FUNC void  KDF_405_Torrez_WANNABEMAGE_Info()
 {
-	AI_Output (other, self,"KDF_405_Torrez_WANNABEMAGE_Info_15_01"); //Co musÌm udÏlat, abych se stal m·gem?
-	AI_Output (self, other,"KDF_405_Torrez_WANNABEMAGE_Info_04_02"); //ÿekni mistrovi Corristovi, pokud na tebe bude mÌt Ëas.
+	AI_Output (other, self,"KDF_405_Torrez_WANNABEMAGE_Info_15_01"); //Co mus√≠m udƒõlat, abych se stal m√°gem?
+	AI_Output (self, other,"KDF_405_Torrez_WANNABEMAGE_Info_04_02"); //≈òekni mistrovi Corristovi, pokud na tebe bude m√≠t ƒças.
 };  

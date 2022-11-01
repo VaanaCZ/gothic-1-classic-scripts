@@ -33,7 +33,7 @@ INSTANCE DIA_Whistler_IAmNew (C_INFO)
 	condition	= DIA_Whistler_IAmNew_Condition;
 	information	= DIA_Whistler_IAmNew_Info;
 	permanent	= 0;
-	description = "Zdar! Jsem tu novı!";
+	description = "Zdar! Jsem tu novÃ½!";
 };                       
 
 FUNC INT DIA_Whistler_IAmNew_Condition()
@@ -45,11 +45,11 @@ FUNC INT DIA_Whistler_IAmNew_Condition()
 };
 FUNC VOID DIA_Whistler_IAmNew_Info()
 {
-	AI_Output (other,self,"DIA_Whistler_IAmNew_15_00"); //Zdar! Jsem tady novı!
-	AI_Output (self,other,"DIA_Whistler_IAmNew_11_01"); //Co ode mì chceš?
-	AI_Output (other,self,"DIA_Whistler_IAmNew_15_02"); //Chci se stát jedním z vás - chci se pøidat k táboru.
-	AI_Output (self,other,"DIA_Whistler_IAmNew_11_03"); //Hledáš lidi, kteøí by ti pomohli, viï?
-	AI_Output (self,other,"DIA_Whistler_IAmNew_11_04"); //Jestli chceš, abych se za tebe pøimluvil u Diega, musíš mi prokázat slubièku.
+	AI_Output (other,self,"DIA_Whistler_IAmNew_15_00"); //Zdar! Jsem tady novÃ½!
+	AI_Output (self,other,"DIA_Whistler_IAmNew_11_01"); //Co ode mÄ› chceÅ¡?
+	AI_Output (other,self,"DIA_Whistler_IAmNew_15_02"); //Chci se stÃ¡t jednÃ­m z vÃ¡s - chci se pÅ™idat k tÃ¡boru.
+	AI_Output (self,other,"DIA_Whistler_IAmNew_11_03"); //HledÃ¡Å¡ lidi, kteÅ™Ã­ by ti pomohli, viÄ?
+	AI_Output (self,other,"DIA_Whistler_IAmNew_11_04"); //Jestli chceÅ¡, abych se za tebe pÅ™imluvil u Diega, musÃ­Å¡ mi prokÃ¡zat sluÅ¾biÄku.
 };
 
 // **************************************************
@@ -66,7 +66,7 @@ INSTANCE DIA_Whistler_Favour (C_INFO)
 	condition	= DIA_Whistler_Favour_Condition;
 	information	= DIA_Whistler_Favour_Info;
 	permanent	= 0;
-	description = "Jakou slubièku bys chtìl?";
+	description = "Jakou sluÅ¾biÄku bys chtÄ›l?";
 };                       
 
 FUNC INT DIA_Whistler_Favour_Condition()
@@ -79,21 +79,21 @@ FUNC INT DIA_Whistler_Favour_Condition()
 
 FUNC VOID DIA_Whistler_Favour_Info()
 {
-	AI_Output (other,self,"DIA_Whistler_Favour_15_00"); //Jakou slubièku bys chtìl?
-	AI_Output (self,other,"DIA_Whistler_Favour_11_01"); //Chci jednu z Fiskovıch zbraní. Je to jeden obchodník z trištì.
-	AI_Output (self,other,"DIA_Whistler_Favour_11_02"); //Nechce mi ji prodat. Je to zdobenı meè se širokou èepelí.
-	AI_Output (self,other,"DIA_Whistler_Favour_11_03"); //Dám ti 100 nugetù, abys mi tu zbraò obstaral. O mnì mu ale neøíkej.
+	AI_Output (other,self,"DIA_Whistler_Favour_15_00"); //Jakou sluÅ¾biÄku bys chtÄ›l?
+	AI_Output (self,other,"DIA_Whistler_Favour_11_01"); //Chci jednu z FiskovÃ½ch zbranÃ­. Je to jeden obchodnÃ­k z trÅ¾iÅ¡tÄ›.
+	AI_Output (self,other,"DIA_Whistler_Favour_11_02"); //Nechce mi ji prodat. Je to zdobenÃ½ meÄ se Å¡irokou ÄepelÃ­.
+	AI_Output (self,other,"DIA_Whistler_Favour_11_03"); //DÃ¡m ti 100 nugetÅ¯, abys mi tu zbraÅˆ obstaral. O mnÄ› mu ale neÅ™Ã­kej.
 
 	Info_ClearChoices(DIA_Whistler_Favour);
-	Info_AddChoice	 (DIA_Whistler_Favour,"Dobøe, dej mi tìch 100 magickıch nugetù. Dostanu tu vìc.",DIA_Whistler_Favour_Ok);
-	Info_AddChoice	 (DIA_Whistler_Favour,"Nenapadlo tì snad, e bych mohl s tou rudou utéct...?",DIA_Whistler_Favour_OreAway);
-	Info_AddChoice	 (DIA_Whistler_Favour,"Proè ti tu zbraò nechce prodat?",DIA_Whistler_Favour_WhyNotSell);
+	Info_AddChoice	 (DIA_Whistler_Favour,"DobÅ™e, dej mi tÄ›ch 100 magickÃ½ch nugetÅ¯. Dostanu tu vÄ›c.",DIA_Whistler_Favour_Ok);
+	Info_AddChoice	 (DIA_Whistler_Favour,"Nenapadlo tÄ› snad, Å¾e bych mohl s tou rudou utÃ©ct...?",DIA_Whistler_Favour_OreAway);
+	Info_AddChoice	 (DIA_Whistler_Favour,"ProÄ ti tu zbraÅˆ nechce prodat?",DIA_Whistler_Favour_WhyNotSell);
 };
 
 func void DIA_Whistler_Favour_Ok()
 {
-	AI_Output (other,self,"DIA_Whistler_Favour_Ok_15_00"); //Dobøe, dej mi tìch 100 magickıch nugetù. Dostanu tu vìc.
-	AI_Output (self,other,"DIA_Whistler_Favour_Ok_11_01"); //Tady jsi. Pojï hned sem!
+	AI_Output (other,self,"DIA_Whistler_Favour_Ok_15_00"); //DobÅ™e, dej mi tÄ›ch 100 magickÃ½ch nugetÅ¯. Dostanu tu vÄ›c.
+	AI_Output (self,other,"DIA_Whistler_Favour_Ok_11_01"); //Tady jsi. PojÄ hned sem!
 	
 	Whistler_BuyMySword = LOG_RUNNING;
 	
@@ -102,7 +102,7 @@ func void DIA_Whistler_Favour_Ok()
 		Log_CreateTopic		(CH1_JoinOC,LOG_MISSION);
 		Log_SetTopicStatus	(CH1_JoinOC,LOG_RUNNING);
 	};
-	B_LogEntry (CH1_JoinOC,"Whistler mi pomùe, kdy pùjdu na trištì za Fistem a koupím pro nìj meè. Dal mi na nìj 100 nugetù.");
+	B_LogEntry (CH1_JoinOC,"Whistler mi pomÅ¯Å¾e, kdyÅ¾ pÅ¯jdu na trÅ¾iÅ¡tÄ› za Fistem a koupÃ­m pro nÄ›j meÄ. Dal mi na nÄ›j 100 nugetÅ¯.");
 	
 	var C_NPC fisk; fisk = Hlp_GetNpc(Stt_311_Fisk);
 	
@@ -116,16 +116,16 @@ func void DIA_Whistler_Favour_Ok()
 
 func void DIA_Whistler_Favour_OreAway()
 {
-	AI_Output (other,self,"DIA_Whistler_Favour_OreAway_15_00"); //Nenapadlo tì snad, e bych mohl s tou rudou utéct...?
-	AI_Output (self,other,"DIA_Whistler_Favour_OreAway_11_01"); //Nezapomeò: kolonie je malá! Jestli mi s tou rudou uteèeš, najdu si tì!
+	AI_Output (other,self,"DIA_Whistler_Favour_OreAway_15_00"); //Nenapadlo tÄ› snad, Å¾e bych mohl s tou rudou utÃ©ct...?
+	AI_Output (self,other,"DIA_Whistler_Favour_OreAway_11_01"); //NezapomeÅˆ: kolonie je malÃ¡! Jestli mi s tou rudou uteÄeÅ¡, najdu si tÄ›!
 };
 
 func void DIA_Whistler_Favour_WhyNotSell()
 {
-	AI_Output (other,self,"DIA_Whistler_Favour_WhyNotSell_15_00"); //Proè ti tu zbraò nechce prodat?
-	AI_Output (self,other,"DIA_Whistler_Favour_WhyNotSell_11_01"); //Má k tomu malı dùvod.
-	AI_Output (other,self,"DIA_Whistler_Favour_WhyNotSell_15_02"); //Jakı?
-	AI_Output (self,other,"DIA_Whistler_Favour_WhyNotSell_11_03"); //Tohle ti musí staèit!
+	AI_Output (other,self,"DIA_Whistler_Favour_WhyNotSell_15_00"); //ProÄ ti tu zbraÅˆ nechce prodat?
+	AI_Output (self,other,"DIA_Whistler_Favour_WhyNotSell_11_01"); //MÃ¡ k tomu malÃ½ dÅ¯vod.
+	AI_Output (other,self,"DIA_Whistler_Favour_WhyNotSell_15_02"); //JakÃ½?
+	AI_Output (self,other,"DIA_Whistler_Favour_WhyNotSell_11_03"); //Tohle ti musÃ­ staÄit!
 };
 
 // **************************************************
@@ -139,7 +139,7 @@ INSTANCE DIA_Whistler_Running110 (C_INFO)
 	condition	= DIA_Whistler_Running110_Condition;
 	information	= DIA_Whistler_Running110_Info;
 	permanent	= 0;
-	description = "Fisk chce teï za tu zbraò 110 nugetù.";
+	description = "Fisk chce teÄ za tu zbraÅˆ 110 nugetÅ¯.";
 };                       
 
 FUNC INT DIA_Whistler_Running110_Condition()
@@ -152,10 +152,10 @@ FUNC INT DIA_Whistler_Running110_Condition()
 
 FUNC VOID DIA_Whistler_Running110_Info()
 {
-	AI_Output (other,self,"DIA_Whistler_Running110_15_00"); //Fisk chce teï za tu zbraò 110 nugetù.
-	AI_Output (self,other,"DIA_Whistler_Running110_11_01"); //A ty chceš, abych ti teï dal tìch 10 nugetù...
-	AI_Output (other,self,"DIA_Whistler_Running110_15_02"); //Myslel jsem, e chceš ten meè.
-	AI_Output (self,other,"DIA_Whistler_Running110_11_03"); //Tady, vem si to a u spìchej!
+	AI_Output (other,self,"DIA_Whistler_Running110_15_00"); //Fisk chce teÄ za tu zbraÅˆ 110 nugetÅ¯.
+	AI_Output (self,other,"DIA_Whistler_Running110_11_01"); //A ty chceÅ¡, abych ti teÄ dal tÄ›ch 10 nugetÅ¯...
+	AI_Output (other,self,"DIA_Whistler_Running110_15_02"); //Myslel jsem, Å¾e chceÅ¡ ten meÄ.
+	AI_Output (self,other,"DIA_Whistler_Running110_11_03"); //Tady, vem si to a uÅ¾ spÄ›chej!
 	CreateInvItems  (self,itminugget,10);
 	B_GiveInvItems  (self, hero, itminugget, 10);
 };	
@@ -171,7 +171,7 @@ INSTANCE DIA_Whistler_RunningPayBack (C_INFO)
 	condition	= DIA_Whistler_RunningPayBack_Condition;
 	information	= DIA_Whistler_RunningPayBack_Info;
 	permanent	= 1;
-	description = "Nedostal jsem ten meè - tady je tvıch 100 nugetù zpátky.";
+	description = "Nedostal jsem ten meÄ - tady je tvÃ½ch 100 nugetÅ¯ zpÃ¡tky.";
 };                       
 
 FUNC INT DIA_Whistler_RunningPayBack_Condition()
@@ -184,21 +184,21 @@ FUNC INT DIA_Whistler_RunningPayBack_Condition()
 
 FUNC VOID DIA_Whistler_RunningPayBack_Info()
 {
-	AI_Output (other,self,"DIA_Whistler_RunningPayBack_15_00"); //Nedostal jsem ten meè - tady je tvıch 100 nugetù zpátky.
+	AI_Output (other,self,"DIA_Whistler_RunningPayBack_15_00"); //Nedostal jsem ten meÄ - tady je tvÃ½ch 100 nugetÅ¯ zpÃ¡tky.
 	
 	if (Npc_HasItems(other,itminugget) >= 100)
 	{
-		AI_Output (self,other,"DIA_Whistler_RunningPayBack_11_01"); //Ty idiote! Nepotøebujeme tu takové idioty! Ztra se!
+		AI_Output (self,other,"DIA_Whistler_RunningPayBack_11_01"); //Ty idiote! NepotÅ™ebujeme tu takovÃ© idioty! ZtraÅ¥ se!
 		B_GiveInvItems (hero, self, itminugget, 100);
 		Whistler_BuyMySword = LOG_OBSOLETE;
 		
-		B_LogEntry (CH1_JoinOC,"Nepochodil jsem, Whistler svùj meè u nikdy nedostane.");
+		B_LogEntry (CH1_JoinOC,"Nepochodil jsem, Whistler svÅ¯j meÄ uÅ¾ nikdy nedostane.");
 		
 		AI_StopProcessInfos(self);
 	}
 	else
 	{
-		AI_Output (self,other,"DIA_Whistler_RunningPayBack_11_02"); //Já ale nevidím ádnıch 100 nugetù - udìláš nejlíp, kdy odtud vypadneš, jak nejrychleji mùeš, jinak se dostaneš do maléru!
+		AI_Output (self,other,"DIA_Whistler_RunningPayBack_11_02"); //JÃ¡ ale nevidÃ­m Å¾Ã¡dnÃ½ch 100 nugetÅ¯ - udÄ›lÃ¡Å¡ nejlÃ­p, kdyÅ¾ odtud vypadneÅ¡, jak nejrychleji mÅ¯Å¾eÅ¡, jinak se dostaneÅ¡ do malÃ©ru!
 		AI_StopProcessInfos(self);
 	};
 };	
@@ -230,11 +230,11 @@ FUNC INT DIA_Whistler_MySword_TooLate_Condition()
 
 FUNC VOID DIA_Whistler_MySword_TooLate_Info()
 {
-	AI_Output (self,other,"DIA_Whistler_MySword_TooLate_11_00"); //Tady jsi! Chtìl jsi utéci s mojí rudou, ech? Pojï sem, synku!
+	AI_Output (self,other,"DIA_Whistler_MySword_TooLate_11_00"); //Tady jsi! ChtÄ›l jsi utÃ©ci s mojÃ­ rudou, ech? PojÄ sem, synku!
 	
 	Whistler_BuyMySword = LOG_FAILED;
 	
-	B_LogEntry (CH1_JoinOC,"Nepochodil jsem, Whistler se na mì poøádnì naštval.");
+	B_LogEntry (CH1_JoinOC,"Nepochodil jsem, Whistler se na mÄ› poÅ™Ã¡dnÄ› naÅ¡tval.");
 	
 	AI_StopProcessInfos	(self);
 	
@@ -254,7 +254,7 @@ INSTANCE DIA_Whistler_MySword_Success (C_INFO)
 	condition	= DIA_Whistler_MySword_Success_Condition;
 	information	= DIA_Whistler_MySword_Success_Info;
 	permanent	= 1;
-	description = "Mám tvùj meè...";
+	description = "MÃ¡m tvÅ¯j meÄ...";
 };                       
 
 FUNC INT DIA_Whistler_MySword_Success_Condition()
@@ -268,20 +268,20 @@ FUNC INT DIA_Whistler_MySword_Success_Condition()
 
 FUNC VOID DIA_Whistler_MySword_Success_Info()
 {
-	AI_Output (other,self,"DIA_Whistler_MySword_Success_15_00"); //Mám tvùj meè...
+	AI_Output (other,self,"DIA_Whistler_MySword_Success_15_00"); //MÃ¡m tvÅ¯j meÄ...
 
     B_GiveInvItems (other, self, Whistlers_Schwert, 1);
 	
-	AI_Output (self,other,"DIA_Whistler_MySword_Success_11_01"); //To nebylo tak tìké, e ne? Ale asi - prokázal jsi mi slubu a já ti ji teï oplatím.
+	AI_Output (self,other,"DIA_Whistler_MySword_Success_11_01"); //To nebylo tak tÄ›Å¾kÃ©, Å¾e ne? Ale aÅ¥si - prokÃ¡zal jsi mi sluÅ¾bu a jÃ¡ ti ji teÄ oplatÃ­m.
 	if (Npc_GetTrueGuild (hero) == GIL_NONE)
 	{
-	AI_Output (self,other,"DIA_Whistler_MySword_Success_11_02"); //Kdy se na tebe bude Diego ptát, budu mluvit v tvùj prospìch. Do té doby - mìj se!
+	AI_Output (self,other,"DIA_Whistler_MySword_Success_11_02"); //KdyÅ¾ se na tebe bude Diego ptÃ¡t, budu mluvit v tvÅ¯j prospÄ›ch. Do tÃ© doby - mÄ›j se!
 	
-	B_LogEntry (CH1_JoinOC,"Whistler byl spokojenı, kdy jsem mu dal meè, o kterı ádal. Doporuèil mì Diegovi.");
+	B_LogEntry (CH1_JoinOC,"Whistler byl spokojenÃ½, kdyÅ¾ jsem mu dal meÄ, o kterÃ½ Å¾Ã¡dal. DoporuÄil mÄ› Diegovi.");
 	}
 	else
 	{
-	B_LogEntry (CH1_JoinOC,"Whistler byl spokojenı, kdy jsem mu dal meè, o kterı ádal. Bohuel z toho nic nebudu mít, protoe u se nikdy nebudu moci stát Stínem.");
+	B_LogEntry (CH1_JoinOC,"Whistler byl spokojenÃ½, kdyÅ¾ jsem mu dal meÄ, o kterÃ½ Å¾Ã¡dal. BohuÅ¾el z toho nic nebudu mÃ­t, protoÅ¾e uÅ¾ se nikdy nebudu moci stÃ¡t StÃ­nem.");
 	};
 	Whistler_BuyMySword = LOG_SUCCESS;
 	B_GiveXP (XP_Whistlerssword);
@@ -314,7 +314,7 @@ FUNC INT DIA_Whistler_StandardKap1_Condition()
 FUNC VOID DIA_Whistler_StandardKap1_Info()
 {
 	AI_Output (other,self,"DIA_Whistler_StandardKap1_15_00"); //Jak to jde...
-	AI_Output (self,other,"DIA_Whistler_StandardKap1_11_01"); //Vıbornì! Prokázal jsi mi slubu a já ti ji teï oplatím. Øeknu Diegovi, e jsi spolehlivı mu.
+	AI_Output (self,other,"DIA_Whistler_StandardKap1_11_01"); //VÃ½bornÄ›! ProkÃ¡zal jsi mi sluÅ¾bu a jÃ¡ ti ji teÄ oplatÃ­m. Å˜eknu Diegovi, Å¾e jsi spolehlivÃ½ muÅ¾.
 };
 
 

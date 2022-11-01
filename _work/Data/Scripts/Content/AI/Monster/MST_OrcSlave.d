@@ -4,7 +4,7 @@
 
 PROTOTYPE Mst_Default_OrcSlave(C_Npc)			
 {
-	name							=	"Skøetí otrok";
+	name							=	"SkÅ™etÃ­ otrok";
 	guild							=	GIL_ORCSLAVE;
 	level							=	15;
 //----------------------------------------------------------	
@@ -84,7 +84,7 @@ INSTANCE OrcPeasantDance (Mst_Default_OrcSlave)
 {
 	//-------- general data --------
 	guild			=	GIL_ORCWARRIOR;
-	name			=	"Skøet";
+	name			=	"SkÅ™et";
 
 	//-------- visuals --------
 	Set_OrcSlave_Visuals();
@@ -104,7 +104,7 @@ INSTANCE OrcPeasantDrum (Mst_Default_OrcSlave)
 {
 	//-------- general data --------
 	guild			=	GIL_ORCWARRIOR;
-	name			=	"Skøet";
+	name			=	"SkÅ™et";
 
 	//-------- visuals --------
 	Set_OrcSlave_Visuals();

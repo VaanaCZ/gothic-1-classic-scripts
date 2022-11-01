@@ -4,7 +4,7 @@
 
 PROTOTYPE Mst_Default_UndeadOrcShaman (C_Npc)			
 {
-	name							=	"Vysoce postavený knìz";
+	name							=	"Vysoce postavenÃ½ knÄ›z";
 	guild							=	GIL_UNDEADORC;
 	aivar[AIV_MM_REAL_ID]			= 	ID_UNDEADORCSHAMAN;
 	level							=	30;
@@ -67,7 +67,7 @@ func void Set_UndeadOrcShaman_Visuals()
 INSTANCE UndeadOrcShaman	(Mst_Default_UndeadOrcShaman)
 {
 	Set_UndeadOrcShaman_Visuals();
-	EquipItem		(self,	ItRwUdOrcstaff);		// für Magiemodus
+	EquipItem		(self,	ItRwUdOrcstaff);		// fÃ¼r Magiemodus
 	CreateInvItem	(self,	ItArRuneBreathOfDeath);
 	CreateInvItems	(self,	ItArScrollSummonGolem,	20);
 

@@ -7,11 +7,11 @@
 //	Uhrzeit:	24h
 //
 //	Es passiert folgendes:
-//	1.	N‰hert sich der Spieler dem Durchgang, so wird er in diesen
+//	1.	N√§hert sich der Spieler dem Durchgang, so wird er in diesen
 //		Dialog gezwungen und einmal gewarnt
-//	2.	N‰hert sich der SC trotzdem weiter, so wird er ein ZWEITES Mal
+//	2.	N√§hert sich der SC trotzdem weiter, so wird er ein ZWEITES Mal
 //		gewarnt (aggressiver mit Waffe ziehen)
-//	3.	N‰hert er sich trotzdem wieder, wird er angegriffen
+//	3.	N√§hert er sich trotzdem wieder, wird er angegriffen
 //////////////////////////////////////////////////////////////////////////
 CONST STRING	Grd_212_CHECKPOINT		= "OCC_GATE_INSIDE";
 
@@ -43,9 +43,9 @@ FUNC VOID Info_Grd_212_FirstWarn_Info()
 {
 	PrintGlobals	(PD_MISSION);
 
-	AI_Output (self, hero,"Info_Grd_212_FirstWarn_Info_13_01"); //STŸJ!
-	AI_Output (hero, self,"Info_Grd_212_FirstWarn_Info_15_02"); //Co se dÏje?
-	AI_Output (self, hero,"Info_Grd_212_FirstWarn_Info_13_03"); //Nem˘ûeö vstoupit do hradu bez povolenÌ! Jdi odsud!
+	AI_Output (self, hero,"Info_Grd_212_FirstWarn_Info_13_01"); //ST≈ÆJ!
+	AI_Output (hero, self,"Info_Grd_212_FirstWarn_Info_15_02"); //Co se dƒõje?
+	AI_Output (self, hero,"Info_Grd_212_FirstWarn_Info_13_03"); //Nem≈Ø≈æe≈° vstoupit do hradu bez povolen√≠! Jdi odsud!
 
 	hero.aivar[AIV_LASTDISTTOWP] 		= Npc_GetDistToWP(hero,Grd_212_CHECKPOINT);
 	hero.aivar[AIV_GUARDPASSAGE_STATUS]	= AIV_GPS_FIRSTWARN;	
@@ -80,7 +80,7 @@ FUNC INT Info_Grd_212_LastWarn_Condition()
 
 func int Info_Grd_212_LastWarn_Info()
 {
-	AI_Output (self, hero,"Info_Grd_212_LastWarn_13_01"); 		//Jsi hluch˝? JeötÏ krok a je z tebe potrava pro Ëervy!
+	AI_Output (self, hero,"Info_Grd_212_LastWarn_13_01"); 		//Jsi hluch√Ω? Je≈°tƒõ krok a je z tebe potrava pro ƒçervy!
 
 	hero.aivar[AIV_LASTDISTTOWP] 		= Npc_GetDistToWP (hero,Grd_212_CHECKPOINT);
 	hero.aivar[AIV_GUARDPASSAGE_STATUS]	= AIV_GPS_LASTWARN;	
@@ -120,7 +120,7 @@ func int Info_Grd_212_Attack_Info()
 	hero.aivar[AIV_GUARDPASSAGE_STATUS]	= AIV_GPS_PUNISH;	
 	
 	B_FullStop			(self);	
-	AI_StopProcessInfos	(self);					//dem Spieler sofort wieder die Kontrolle zur¸ckgeben
+	AI_StopProcessInfos	(self);					//dem Spieler sofort wieder die Kontrolle zur√ºckgeben
 	B_IntruderAlert		(self,	other);
 	B_SetAttackReason	(self,	AIV_AR_INTRUDER);
 	Npc_SetTarget		(self,	hero);
@@ -176,10 +176,10 @@ FUNC INT Info_Grd_212_Abblitzen_Condition()
 FUNC VOID Info_Grd_212_Abblitzen_Info()
 {
 	AI_Output (other, self,"Info_Grd_212_Abblitzen_15_00"); //Chci se dostat na hrad!
-	AI_Output (self, other,"Info_Grd_212_Abblitzen_13_01"); //ZajÌmavÈ! J· se chci dostat z tÈ proklatÈ kolonie!
-	AI_Output (self, other,"Info_Grd_212_Abblitzen_13_02"); //UmÌm si p¯edstavit lepöÌ pr·ci, neû zastavovat takovÈ pobudy jako ty, aby nelezli tam, kde nemajÌ co dÏlat!
-	AI_Output (other, self,"Info_Grd_212_Abblitzen_15_03"); //Mohl bys mÏ nechat jenom vejÌt...
-	AI_Output (self, other,"Info_Grd_212_Abblitzen_13_04"); //Ne, nemohl! To m˘ûe Thorus.
+	AI_Output (self, other,"Info_Grd_212_Abblitzen_13_01"); //Zaj√≠mav√©! J√° se chci dostat z t√© proklat√© kolonie!
+	AI_Output (self, other,"Info_Grd_212_Abblitzen_13_02"); //Um√≠m si p≈ôedstavit lep≈°√≠ pr√°ci, ne≈æ zastavovat takov√© pobudy jako ty, aby nelezli tam, kde nemaj√≠ co dƒõlat!
+	AI_Output (other, self,"Info_Grd_212_Abblitzen_15_03"); //Mohl bys mƒõ nechat jenom vej√≠t...
+	AI_Output (self, other,"Info_Grd_212_Abblitzen_13_04"); //Ne, nemohl! To m≈Ø≈æe Thorus.
 	AI_StopProcessInfos	(self);
 };
 
@@ -207,9 +207,9 @@ FUNC INT Info_Grd_212_FirstIn_Condition()
 
 FUNC VOID Info_Grd_212_FirstIn_Info()
 {
-	AI_Output (self, other,"Info_Grd_212_FirstIn_13_00"); //St˘j!
-	AI_Output (other, self,"Info_Grd_212_FirstIn_15_01"); //Klid. Mluvil jsem s Thorusem. SmÌm dovnit¯.
-	AI_Output (self, other,"Info_Grd_212_FirstIn_13_02"); //Budu si tÏ pamatovat, p¯Ìteli! Dostaneö se do malÈru a pak to vezme rychlej konec!
+	AI_Output (self, other,"Info_Grd_212_FirstIn_13_00"); //St≈Øj!
+	AI_Output (other, self,"Info_Grd_212_FirstIn_15_01"); //Klid. Mluvil jsem s Thorusem. Sm√≠m dovnit≈ô.
+	AI_Output (self, other,"Info_Grd_212_FirstIn_13_02"); //Budu si tƒõ pamatovat, p≈ô√≠teli! Dostane≈° se do mal√©ru a pak to vezme rychlej konec!
 	AI_StopProcessInfos	(self);
 };
 
@@ -224,7 +224,7 @@ INSTANCE Info_Grd_212_Passgate (C_INFO)
 	condition	= Info_Grd_212_Passgate_Condition;
 	information	= Info_Grd_212_Passgate_Info;
 	permanent	= 1;
-	description	= "M˘ûu jeötÏ po¯·d dovnit¯?";
+	description	= "M≈Ø≈æu je≈°tƒõ po≈ô√°d dovnit≈ô?";
 };                       
 
 FUNC INT Info_Grd_212_Passgate_Condition()
@@ -237,7 +237,7 @@ FUNC INT Info_Grd_212_Passgate_Condition()
 
 FUNC VOID Info_Grd_212_Passgate_Info()
 {
-	AI_Output (other, self,"Info_Grd_212_Passgate_15_00"); //M˘ûu jeötÏ po¯·d dovnit¯?
-	AI_Output (self, other,"Info_Grd_212_Passgate_13_01"); //Jen kdyû se p¯estaneö takhle stupidnÏ vypt·vat.
+	AI_Output (other, self,"Info_Grd_212_Passgate_15_00"); //M≈Ø≈æu je≈°tƒõ po≈ô√°d dovnit≈ô?
+	AI_Output (self, other,"Info_Grd_212_Passgate_13_01"); //Jen kdy≈æ se p≈ôestane≈° takhle stupidnƒõ vypt√°vat.
 	AI_StopProcessInfos	(self);
 };

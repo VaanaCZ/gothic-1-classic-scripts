@@ -22,7 +22,7 @@ INSTANCE MordragsRing(C_Item)
 	on_equip				=	Equip_MordragsRing;
 	on_unequip				=	UnEquip_MordragsRing;
 
-	description		= "Mordragùv prsten";
+	description		= "MordragÅ¯v prsten";
 	//TEXT[0]			= "";
 	//TEXT[1]			= "";
 	////COUNT[1]		= ;
@@ -51,7 +51,7 @@ INSTANCE MordragsRing(C_Item)
 
 INSTANCE SpecialJoint(C_Item)
 {
-	name 				=	"Upravenı pøivolávaè snù";
+	name 				=	"UpravenÃ½ pÅ™ivolÃ¡vaÄ snÅ¯";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -64,8 +64,8 @@ INSTANCE SpecialJoint(C_Item)
 	scemeName			=	"JOINT";
 	on_state[0]			=	UseSpecialJoint;
 
-	TEXT[0]		    	= "Droga z bain se silnìjším";
-	TEXT[1]             = "úèinkem ne obyèejná droga.";
+	TEXT[0]		    	= "Droga z baÅ¾in se silnÄ›jÅ¡Ã­m";
+	TEXT[1]             = "ÃºÄinkem neÅ¾ obyÄejnÃ¡ droga.";
 	TEXT[3]             = "To je pro Guru Baala Tyona!";
 	TEXT[5]				= NAME_Value;					COUNT[4]	= Value_Joint3*10;
 };
@@ -77,7 +77,7 @@ func void UseSpecialJoint()
 
 INSTANCE ItAt_DamLurker_01 (C_Item)
 {
-	name 				=	"Drápy hrázového èíhavce";
+	name 				=	"DrÃ¡py hrÃ¡zovÃ©ho ÄÃ­havce";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MISSION;
@@ -109,7 +109,7 @@ INSTANCE ItWrOMMap(C_Item)
 	scemeName				=	"MAP";	
 	on_state[0]				=	UseOMmap;
 
-	description				= "Mapa Starého dolu";
+	description				= "Mapa StarÃ©ho dolu";
 	//TEXT[0]				= "";
 	////COUNT[0]			= ;
 	//TEXT[1]				= "";
@@ -138,12 +138,12 @@ INSTANCE ItWrOMMap(C_Item)
 
 
 /************************************************
-**  Missionsitems für Introparcours in der VM  **
+**  Missionsitems fÃ¼r Introparcours in der VM  **
 ************************************************/
 
 INSTANCE AltesSchwertVM (C_Item)
 {	
-	name 				=	"Starı meè";
+	name 				=	"StarÃ½ meÄ";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD|ITEM_MISSION;	
@@ -173,7 +173,7 @@ INSTANCE AltesSchwertVM (C_Item)
 
 INSTANCE AltesSchwert (C_Item)
 {	
-	name 				=	"Starı meè";
+	name 				=	"StarÃ½ meÄ";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD|ITEM_MISSION;	
@@ -205,7 +205,7 @@ INSTANCE AltesSchwert (C_Item)
 
 INSTANCE JackalsSword (C_Item)
 {	
-	name 				=	"Jackalùv meè";
+	name 				=	"JackalÅ¯v meÄ";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -253,7 +253,7 @@ instance  KdW_Amulett(C_Item)
 	//on_equip		=	Equip_Schutzamulett_Nek;
 	//on_unequip	=	UnEquip_Schutzamulett_Nek;
 
-	description		= "Kurırskı odznak mágù Vody";
+	description		= "KurÃ½rskÃ½ odznak mÃ¡gÅ¯ Vody";
 	//TEXT[0]			= "";
 	//TEXT[2]			= NAME_Prot_Edge;
 	//COUNT[2]		= 5;
@@ -278,7 +278,7 @@ INSTANCE Cronos_Brief (C_Item)
 	material 			=	MAT_LEATHER;
 	on_state[0]			=   UseCronosBrief;
 	scemeName			=	"MAP";
-	description			= "Kronosùv dopis mágùm Ohnì";
+	description			= "KronosÅ¯v dopis mÃ¡gÅ¯m OhnÄ›";
 };
 func void UseCronosBrief ()
 {   
@@ -290,17 +290,17 @@ func void UseCronosBrief ()
 					Doc_SetFont 	( nDocID, -1, "font_10_book.tga"	   			); 	// -1 -> all pages 
 					Doc_SetMargins	( nDocID, -1, 50, 50, 50, 50, 1   		);  //  0 -> margins are in pixels
 					Doc_PrintLine	( nDocID,  0," ");
-					Doc_PrintLine	( nDocID,  0,"Slovutnı pane Corristo,");
+					Doc_PrintLine	( nDocID,  0,"SlovutnÃ½ pane Corristo,");
 					Doc_PrintLine	( nDocID,  0, ""					);
 					Doc_SetFont 	( nDocID, -1, "font_10_book.TGA"	   			); 	// -1 -> all pages 
-					Doc_PrintLines	( nDocID,  0,"Saturas, veleváenı mistr mágù Kruhu vody, vás snanì ádá o podporu, která by zajistila, aby napìtí mezi Starım a Novım táborem zùstalo v takovıch mezích, které by byly ku prospìchu obou stran. Protoe jste zodpovìdnı za mìsíèní zásilky magické rudy králi, je zøejmé, e zastavení aktivit banditù z Nového tábora je i ve vašem zájmu. Naším pøáním pak je, aby Starı tábor ji nepodnikal ádné kroky, které by ohroovaly naše úsilí o znovuotevøení Bariéry, která nás všechny drí ve vìzení.");
+					Doc_PrintLines	( nDocID,  0,"Saturas, velevÃ¡Å¾enÃ½ mistr mÃ¡gÅ¯ Kruhu vody, vÃ¡s snaÅ¾nÄ› Å¾Ã¡dÃ¡ o podporu, kterÃ¡ by zajistila, aby napÄ›tÃ­ mezi StarÃ½m a NovÃ½m tÃ¡borem zÅ¯stalo v takovÃ½ch mezÃ­ch, kterÃ© by byly ku prospÄ›chu obou stran. ProtoÅ¾e jste zodpovÄ›dnÃ½ za mÄ›sÃ­ÄnÃ­ zÃ¡silky magickÃ© rudy krÃ¡li, je zÅ™ejmÃ©, Å¾e zastavenÃ­ aktivit banditÅ¯ z NovÃ©ho tÃ¡bora je i ve vaÅ¡em zÃ¡jmu. NaÅ¡Ã­m pÅ™Ã¡nÃ­m pak je, aby StarÃ½ tÃ¡bor jiÅ¾ nepodnikal Å¾Ã¡dnÃ© kroky, kterÃ© by ohroÅ¾ovaly naÅ¡e ÃºsilÃ­ o znovuotevÅ™enÃ­ BariÃ©ry, kterÃ¡ nÃ¡s vÅ¡echny drÅ¾Ã­ ve vÄ›zenÃ­.");
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLine	( nDocID,  0,"S oèekáváním brzké odpovìdi,");
+					Doc_PrintLine	( nDocID,  0,"S oÄekÃ¡vÃ¡nÃ­m brzkÃ© odpovÄ›di,");
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLine	( nDocID,  0,"Cronos, dritel rudy");
+					Doc_PrintLine	( nDocID,  0,"Cronos, drÅ¾itel rudy");
 					Doc_PrintLine	( nDocID,  0, ""					);
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_SetMargins	( nDocID, -1, 200, 50, 50, 50, 1   		);  //  0 -> margins are in pixels (Position des Textes von den Ränder des TGAs aus
+					Doc_SetMargins	( nDocID, -1, 200, 50, 50, 50, 1   		);  //  0 -> margins are in pixels (Position des Textes von den RÃ¤nder des TGAs aus
 				
 					Doc_Show		( nDocID );
 		
@@ -326,8 +326,8 @@ instance  Neks_Amulett(C_Item)
 	on_equip		=	Equip_Schutzamulett_Nek;
 	on_unequip		=	UnEquip_Schutzamulett_Nek;
 
-	description		= "Amulet mrtvého stráce"; //Nek's Amulett
-	TEXT[1]			= "Na rubu je vyryto jméno NEK.";
+	description		= "Amulet mrtvÃ©ho strÃ¡Å¾ce"; //Nek's Amulett
+	TEXT[1]			= "Na rubu je vyryto jmÃ©no NEK.";
 	TEXT[2]			= NAME_Prot_Edge;
 	COUNT[2]		= 5;
 	//TEXT[3] 		= "";
@@ -350,11 +350,11 @@ instance  Neks_Amulett(C_Item)
 	};
 
 /*************************************************
-**	Missionsitems für Mis_1_Psi_RecruitBuddler  **
+**	Missionsitems fÃ¼r Mis_1_Psi_RecruitBuddler  **
 *************************************************/
 INSTANCE RecruitJoint(C_Item)
 {	
-	name 					=	"Droga z bain pro kopáèe";
+	name 					=	"Droga z baÅ¾in pro kopÃ¡Äe";
 	
 	mainflag 				=	ITEM_KAT_NONE;
 	flags 					=	ITEM_MULTI;	
@@ -384,12 +384,12 @@ INSTANCE RecruitJoint(C_Item)
 };
 
 /**************************************************
-**    Missionsitems für Mis_3_Psi_BringMedicine  **
+**    Missionsitems fÃ¼r Mis_3_Psi_BringMedicine  **
 **************************************************/
 
 INSTANCE HealthWater(C_Item)
 {
-	name 					=	"Hojivı lektvar pro Y´Beriona";
+	name 					=	"HojivÃ½ lektvar pro YÂ´Beriona";
 
 	mainflag 				=	ITEM_KAT_NONE;
 	flags 					=	ITEM_MISSION;
@@ -422,7 +422,7 @@ INSTANCE HealthWater(C_Item)
 };
 
 /************************************************
-**    Missionsitems für Mis_1_OC_BringList     **
+**    Missionsitems fÃ¼r Mis_1_OC_BringList     **
 ************************************************/
 INSTANCE TheList(C_Item)
 {	
@@ -442,8 +442,8 @@ INSTANCE TheList(C_Item)
 	on_state[0]				=	UseTheList;
 	description				=	name;
 
-	TEXT[0]					=	"Ian, vùdce Starého tábora,";
-	TEXT[1]					=	"vypracoval seznam poadavkù.";
+	TEXT[0]					=	"Ian, vÅ¯dce StarÃ©ho tÃ¡bora,";
+	TEXT[1]					=	"vypracoval seznam poÅ¾adavkÅ¯.";
 };
 func void UseTheList ()
 {   
@@ -455,21 +455,21 @@ func void UseTheList ()
 					Doc_SetFont 	( nDocID, -1, "font_10_book.tga"	   			); 	// -1 -> all pages 
 					Doc_SetMargins	( nDocID, -1, 50, 50, 50, 50, 1   		);  //  0 -> margins are in pixels
 					
-					Doc_PrintLine	( nDocID,  0,"Seznam poadavkù");
+					Doc_PrintLine	( nDocID,  0,"Seznam poÅ¾adavkÅ¯");
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLines	( nDocID,  0,"20 bochníkù chleba - tentokrát ádnou shnilotinu!");
+					Doc_PrintLines	( nDocID,  0,"20 bochnÃ­kÅ¯ chleba - tentokrÃ¡t Å¾Ã¡dnou shnilotinu!");
 					Doc_PrintLine	( nDocID,  0,"25 - 30 jablek");
-					Doc_PrintLine	( nDocID,  0,"10 kouskù sıra");
-					Doc_PrintLine	( nDocID,  0,"1 nabìraèku polévky");
-					Doc_PrintLine	( nDocID,  0,"1 kartáè");
-					Doc_PrintLine	( nDocID,  0,"5 krumpáèù + 3 kladiva");
-					Doc_PrintLines	( nDocID,  0,"A poøádnou dávku drogy z bain - to víš, první dodávka v mìsíci!");
-					Doc_PrintLine	( nDocID,  0,"Pozítøí oèekáváme dodávku.");
+					Doc_PrintLine	( nDocID,  0,"10 kouskÅ¯ sÃ½ra");
+					Doc_PrintLine	( nDocID,  0,"1 nabÄ›raÄku polÃ©vky");
+					Doc_PrintLine	( nDocID,  0,"1 kartÃ¡Ä");
+					Doc_PrintLine	( nDocID,  0,"5 krumpÃ¡ÄÅ¯ + 3 kladiva");
+					Doc_PrintLines	( nDocID,  0,"A poÅ™Ã¡dnou dÃ¡vku drogy z baÅ¾in - to vÃ­Å¡, prvnÃ­ dodÃ¡vka v mÄ›sÃ­ci!");
+					Doc_PrintLine	( nDocID,  0,"PozÃ­tÅ™Ã­ oÄekÃ¡vÃ¡me dodÃ¡vku.");
 					Doc_PrintLine	( nDocID,  0, ""					);
 					Doc_PrintLine	( nDocID,  0, ""					);
 					Doc_PrintLine	( nDocID,  0,"IAN");
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_SetMargins	( nDocID, -1, 200, 50, 50, 50, 1   		);  //  0 -> margins are in pixels (Position des Textes von den Ränder des TGAs aus
+					Doc_SetMargins	( nDocID, -1, 200, 50, 50, 50, 1   		);  //  0 -> margins are in pixels (Position des Textes von den RÃ¤nder des TGAs aus
 				
 					Doc_Show		( nDocID );
 		
@@ -477,7 +477,7 @@ func void UseTheList ()
 
 INSTANCE TheListNC(C_Item)
 {	
-	name 					=	"Seznam (doplnìnı)";
+	name 					=	"Seznam (doplnÄ›nÃ½)";
 
 	mainflag 				=	ITEM_KAT_DOCS;
 	flags 					=	ITEM_MISSION;	
@@ -493,10 +493,10 @@ INSTANCE TheListNC(C_Item)
 	on_state[0]				=	UseTheListNC;
 	description				=	name;
 
-	TEXT[0]					=	"Ian, vùdce Starého tábora,";
-	TEXT[1]					=	"vypracoval seznam poadavkù.";
-	TEXT[2]					=	"(Lares pøidal pár bodù. Opravdu";
-	TEXT[3]					=	"zdaøilı padìlek!)";
+	TEXT[0]					=	"Ian, vÅ¯dce StarÃ©ho tÃ¡bora,";
+	TEXT[1]					=	"vypracoval seznam poÅ¾adavkÅ¯.";
+	TEXT[2]					=	"(Lares pÅ™idal pÃ¡r bodÅ¯. Opravdu";
+	TEXT[3]					=	"zdaÅ™ilÃ½ padÄ›lek!)";
 };
 func void UseTheListNC ()
 {   
@@ -508,26 +508,26 @@ func void UseTheListNC ()
 					Doc_SetFont 	( nDocID, -1, "font_10_book.tga"	   			); 	// -1 -> all pages 
 					Doc_SetMargins	( nDocID, -1, 50, 50, 50, 50, 1   		);  //  0 -> margins are in pixels
 					
-					Doc_PrintLine	( nDocID,  0,"Seznam poadavkù");
+					Doc_PrintLine	( nDocID,  0,"Seznam poÅ¾adavkÅ¯");
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLines	( nDocID,  0,"20 bochníkù chleba - tentokrát ádnou shnilotinu!");
+					Doc_PrintLines	( nDocID,  0,"20 bochnÃ­kÅ¯ chleba - tentokrÃ¡t Å¾Ã¡dnou shnilotinu!");
 					Doc_PrintLine	( nDocID,  0,"25 - 30 jablek");
-					Doc_PrintLine	( nDocID,  0,"10 kouskù sıra");
-					Doc_PrintLine	( nDocID,  0,"1 nabìraèku polévky");
-					Doc_PrintLine	( nDocID,  0,"1 kartáè");
-					Doc_PrintLine	( nDocID,  0,"5 krumpáèù + 3 kladiva");
-					Doc_PrintLines	( nDocID,  0,"A poøádnou dávku drogy z bain - to víš, první dodávka v mìsíci!");
-					Doc_PrintLine	( nDocID,  0,"Pozítøí oèekáváme dodávku.");
+					Doc_PrintLine	( nDocID,  0,"10 kouskÅ¯ sÃ½ra");
+					Doc_PrintLine	( nDocID,  0,"1 nabÄ›raÄku polÃ©vky");
+					Doc_PrintLine	( nDocID,  0,"1 kartÃ¡Ä");
+					Doc_PrintLine	( nDocID,  0,"5 krumpÃ¡ÄÅ¯ + 3 kladiva");
+					Doc_PrintLines	( nDocID,  0,"A poÅ™Ã¡dnou dÃ¡vku drogy z baÅ¾in - to vÃ­Å¡, prvnÃ­ dodÃ¡vka v mÄ›sÃ­ci!");
+					Doc_PrintLine	( nDocID,  0,"PozÃ­tÅ™Ã­ oÄekÃ¡vÃ¡me dodÃ¡vku.");
 					Doc_PrintLine	( nDocID,  0, ""					);
 					Doc_PrintLine	( nDocID,  0, ""					);
 					Doc_PrintLine	( nDocID,  0,"IAN");
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLine	( nDocID,  0,"Ještì mì napadlo:");
-					Doc_PrintLine	( nDocID,  0,"30 lahví piva");
-					Doc_PrintLine	( nDocID,  0,"5 lahví vína");
-					Doc_PrintLine	( nDocID,  0,"25 peèenıch mrchoroutích kıt");
-					Doc_PrintLine	( nDocID,  0,"pùltucet náhradních zbraní");
-					Doc_SetMargins	( nDocID, -1, 200, 50, 50, 50, 1   		);  //  0 -> margins are in pixels (Position des Textes von den Ränder des TGAs aus
+					Doc_PrintLine	( nDocID,  0,"JeÅ¡tÄ› mÄ› napadlo:");
+					Doc_PrintLine	( nDocID,  0,"30 lahvÃ­ piva");
+					Doc_PrintLine	( nDocID,  0,"5 lahvÃ­ vÃ­na");
+					Doc_PrintLine	( nDocID,  0,"25 peÄenÃ½ch mrchoÅ¾routÃ­ch kÃ½t");
+					Doc_PrintLine	( nDocID,  0,"pÅ¯ltucet nÃ¡hradnÃ­ch zbranÃ­");
+					Doc_SetMargins	( nDocID, -1, 200, 50, 50, 50, 1   		);  //  0 -> margins are in pixels (Position des Textes von den RÃ¤nder des TGAs aus
 				
 					Doc_Show		( nDocID );
 		
@@ -535,7 +535,7 @@ func void UseTheListNC ()
 
 
 /*********************************************
-**   Missionsitems für Lares Find Ring    **
+**   Missionsitems fÃ¼r Lares Find Ring    **
 *********************************************/
 
 INSTANCE Lares_Ring(C_Item)
@@ -553,7 +553,7 @@ INSTANCE Lares_Ring(C_Item)
 	material 				=	MAT_METAL;
 	on_equip				=	Equip_Lares_Ring;
 	on_unequip				=	UnEquip_Lares_Ring;
-	description		= "Laresùv prsten";
+	description		= "LaresÅ¯v prsten";
 	//TEXT[0]			= "";
 	//TEXT[1]			= "";
 	////COUNT[1]		= ;
@@ -580,7 +580,7 @@ INSTANCE Lares_Ring(C_Item)
 		Npc_ChangeAttribute(self,ATR_STRENGTH,-3 );
 	};
 /*********************************************
-**   Missionsitems für Lares Get Potion   **
+**   Missionsitems fÃ¼r Lares Get Potion   **
 *********************************************/
 INSTANCE  Heiltrank(C_Item)
 {
@@ -595,7 +595,7 @@ INSTANCE  Heiltrank(C_Item)
 	material 				=	MAT_GLAS;
 	on_state[0]				=	UseHeiltrank;
 	scemeName				=	"POTION";
-	description				= "Lektvar pro rychlé vyhojení";
+	description				= "Lektvar pro rychlÃ© vyhojenÃ­";
 	//TEXT[0]				= "";
 	TEXT[2]					= NAME_Bonus_HP;
 	COUNT[2]				= 30;
@@ -614,12 +614,12 @@ FUNC VOID UseHeiltrank()
 };
 
 /*********************************************
-**   Missionsitems für Mordrag    **
+**   Missionsitems fÃ¼r Mordrag    **
 *********************************************/
 
 INSTANCE SpecialWater(C_Item)
 {
-	name 					=	"Magická voda";
+	name 					=	"MagickÃ¡ voda";
 
 	mainflag 				=	ITEM_KAT_FOOD;
 	flags 					=	ITEM_MISSION;
@@ -650,11 +650,11 @@ INSTANCE SpecialWater(C_Item)
 };
 
 /*********************************************
-**   Missionsitems für Dexter / Kalom	    **
+**   Missionsitems fÃ¼r Dexter / Kalom	    **
 *********************************************/
 INSTANCE KalomsRecipe(C_Item)
 {
-	name 					=	"Kalomùv recept";
+	name 					=	"KalomÅ¯v recept";
 	
 	mainflag 				=	ITEM_KAT_DOCS;
 	flags 					=	ITEM_MISSION;
@@ -666,7 +666,7 @@ INSTANCE KalomsRecipe(C_Item)
 
 	scemeName				=	"MAP";
 	description				= name;
-	TEXT[0]					= "Recept na hojivı lektvar";
+	TEXT[0]					= "Recept na hojivÃ½ lektvar";
 	////COUNT[0]			= ;
 	//TEXT[1]				= "";
 	////COUNT[1]			= ;
@@ -702,10 +702,10 @@ func VOID Use_KalomsRecipe()
 				
 				//2.Seite
 
-				Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den Ränder des TGAs aus, links,oben,rechts,unten)
+				Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den RÃ¤nder des TGAs aus, links,oben,rechts,unten)
 				Doc_PrintLine	( nDocID,  1, ""					);	
 				Doc_PrintLine	( nDocID,  1, ""					);					
-				Doc_PrintLines	( nDocID,  1,"Vypadá, e to dává smysl, kdy se to ète pozpátku.");
+				Doc_PrintLines	( nDocID,  1,"VypadÃ¡, Å¾e to dÃ¡vÃ¡ smysl, kdyÅ¾ se to Äte pozpÃ¡tku.");
 				Doc_PrintLine	( nDocID,  1, ""					);	
 				Doc_PrintLine	( nDocID,  1,"          - Kalom");	
 				
@@ -717,7 +717,7 @@ func VOID Use_KalomsRecipe()
 
 
 /*********************************************
-** Missionsitems für Mis_1_PSI_DrugMonopol  **
+** Missionsitems fÃ¼r Mis_1_PSI_DrugMonopol  **
 *********************************************/
 /*
 INSTANCE SalmAmulett (C_Item)
@@ -760,8 +760,8 @@ INSTANCE ItWrWorldmap(C_Item)
 	on_state[0]				=	UseWorldmap;
 
 	description				= name;
-	TEXT[0]					= "Bohuel, schází velké";
-	TEXT[1]					= "území na jihozápadì.";
+	TEXT[0]					= "BohuÅ¾el, schÃ¡zÃ­ velkÃ©";
+	TEXT[1]					= "ÃºzemÃ­ na jihozÃ¡padÄ›.";
 	TEXT[5]					= NAME_Value;
 	COUNT[5]				= value;
 };
@@ -776,11 +776,11 @@ INSTANCE ItWrWorldmap(C_Item)
 					Doc_SetPage 	( nDocID, 0, "Map_World.tga", 	1	);  //  1 -> DO NOT SCALE 
 
 /*  				Doc_SetFont 	( nDocID, 0, "font_15_book.TGA"		); 	// -1 -> all pages 
-					Doc_SetMargins	( nDocID, 0, 120, 80, 10, 10, 	1	);  //  0 -> Textrahmen (von den Ränder des TGAs aus, links-oben,rechts-unten)
+					Doc_SetMargins	( nDocID, 0, 120, 80, 10, 10, 	1	);  //  0 -> Textrahmen (von den RÃ¤nder des TGAs aus, links-oben,rechts-unten)
 					Doc_PrintLine	( nDocID, 0, "Karte der"	);
 					Doc_PrintLine	( nDocID, 0, "Kolonie"	);
 
-// FIXME: mehrere Texte an verschiedenen Stellen für Location-Beschriftung funzen nicht.
+// FIXME: mehrere Texte an verschiedenen Stellen fÃ¼r Location-Beschriftung funzen nicht.
  					Doc_SetFont 	( nDocID, 0, "font_10_book.TGA"			); 
 					Doc_SetMargins	( nDocID, 0, 110, 300, 10, 10, 1	);
 					Doc_PrintLine	( nDocID, 0, "Neues Lager");
@@ -789,7 +789,7 @@ INSTANCE ItWrWorldmap(C_Item)
 					Doc_PrintLine	( nDocID, 0, "Altes Lager");
 
 					Doc_SetMargins	( nDocID, 0, 200, 420, 10, 10, 1	);
-					Doc_PrintLine	( nDocID, 0, "Dämonenbeschwörer");
+					Doc_PrintLine	( nDocID, 0, "DÃ¤monenbeschwÃ¶rer");
 					
 					Doc_SetMargins	( nDocID, 0, 510, 340, 10, 10, 1	);
 					Doc_PrintLine	( nDocID, 0, "Sekten-Lager");
@@ -817,7 +817,7 @@ INSTANCE ItWrOCmap(C_Item)
 	scemeName				=	"MAP";	
 	on_state[0]				=	UseOCmap;
 
-	description				= "Pøehled Starého tábora";
+	description				= "PÅ™ehled StarÃ©ho tÃ¡bora";
 	TEXT[5]					= NAME_Value;
 	COUNT[5]				= value;
 };
@@ -827,7 +827,7 @@ INSTANCE ItWrOCmap(C_Item)
 		var int nDocID;
 		
 		nDocID = 	Doc_CreateMap	()			  ;							// DocManager 
-//					Doc_SetLevel	( nDocID,	"WORLD.ZEN" ); Kein Positionsanzeiger möglich!
+//					Doc_SetLevel	( nDocID,	"WORLD.ZEN" ); Kein Positionsanzeiger mÃ¶glich!
 					Doc_SetPages	( nDocID, 1 );                         
 					Doc_SetPage 	( nDocID, 0, "Map_OldCamp.tga", 	1	);  //  1 -> DO NOT SCALE 
 					Doc_Show		( nDocID 	);
@@ -852,7 +852,7 @@ INSTANCE ItWrNCmap(C_Item)
 	scemeName				=	"MAP";	
 	on_state[0]				=	UseNCmap;
 
-	description				= "Pøehled Nového tábora";
+	description				= "PÅ™ehled NovÃ©ho tÃ¡bora";
 	TEXT[5]					= NAME_Value;
 	COUNT[5]				= value;
 };
@@ -862,7 +862,7 @@ INSTANCE ItWrNCmap(C_Item)
 		var int nDocID;
 		
 		nDocID = 	Doc_CreateMap	()			  ;							// DocManager 
-//					Doc_SetLevel	( nDocID,	"WORLD.ZEN" ); Kein Positionsanzeiger möglich!
+//					Doc_SetLevel	( nDocID,	"WORLD.ZEN" ); Kein Positionsanzeiger mÃ¶glich!
 					Doc_SetPages	( nDocID, 1 );                         
 					Doc_SetPage 	( nDocID, 0, "Map_NewCamp.tga", 	1	);  //  1 -> DO NOT SCALE 
 					Doc_Show		( nDocID 	);
@@ -887,7 +887,7 @@ INSTANCE ItWrPSImap(C_Item)
 	scemeName				=	"MAP";	
 	on_state[0]				=	UsePSImap;
 
-	description				= "Pøehled Tábora v bainách";
+	description				= "PÅ™ehled TÃ¡bora v baÅ¾inÃ¡ch";
 	TEXT[5]					= NAME_Value;
 	COUNT[5]				= value;
 };
@@ -897,7 +897,7 @@ INSTANCE ItWrPSImap(C_Item)
 		var int nDocID;
 		
 		nDocID = 	Doc_CreateMap	()			  ;							// DocManager 
-//					Doc_SetLevel	( nDocID,	"WORLD.ZEN" ); Kein Positionsanzeiger möglich!
+//					Doc_SetLevel	( nDocID,	"WORLD.ZEN" ); Kein Positionsanzeiger mÃ¶glich!
 					Doc_SetPages	( nDocID, 1 );                         
 					Doc_SetPage 	( nDocID, 0, "Map_PSICamp.tga", 	1	);  //  1 -> DO NOT SCALE 
 					Doc_Show		( nDocID 	);
@@ -909,7 +909,7 @@ INSTANCE ItWrPSImap(C_Item)
 
 INSTANCE ItWrPinup(C_Item)
 {	
-	name 					=	"Náèrt";
+	name 					=	"NÃ¡Ärt";
 	
 	mainflag 				=	ITEM_KAT_DOCS;
 	flags 					=	ITEM_MISSION;
@@ -932,7 +932,7 @@ INSTANCE ItWrPinup(C_Item)
 		var int nDocID;
 		
 		nDocID = 	Doc_CreateMap	()			  ;							// DocManager 
-//					Doc_SetLevel	( nDocID,	"WORLD.ZEN" ); Kein Positionsanzeiger möglich!
+//					Doc_SetLevel	( nDocID,	"WORLD.ZEN" ); Kein Positionsanzeiger mÃ¶glich!
 					Doc_SetPages	( nDocID, 1 );                         
 					Doc_SetPage 	( nDocID, 0, "Map_PinUp.tga", 	1	);  //  1 -> DO NOT SCALE 
 					Doc_Show		( nDocID 	);
@@ -973,7 +973,7 @@ INSTANCE ItWrDieVerurteilten (C_Item)
 /*********************************************************************************/
 INSTANCE ItWr_Fire_Letter_01 (C_Item)
 {	
-	name 				=	"Zapeèetìnı dopis";
+	name 				=	"ZapeÄetÄ›nÃ½ dopis";
 
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION;
@@ -984,10 +984,10 @@ INSTANCE ItWr_Fire_Letter_01 (C_Item)
 	material 			=	MAT_LEATHER;
 	on_state[0]			=   UseFireletter;
 	scemeName			=	"MAPSEALED";
-	description			= "Dopis mágùm Ohnì";
+	description			= "Dopis mÃ¡gÅ¯m OhnÄ›";
 	//TEXT[0]				= "";
 	////COUNT[0]			= ;
-	TEXT[1]				= "Ta peèe nesmí bıt rozlomena!";
+	TEXT[1]				= "Ta peÄeÅ¥ nesmÃ­ bÃ½t rozlomena!";
 	////COUNT[1]			= ;
 	//TEXT[2]				= "";
 	//COUNT[2]			= ;
@@ -1011,18 +1011,18 @@ func void Usefireletter ()
 					Doc_SetFont 	( nDocID, -1, "font_10_book.tga"	   			); 	// -1 -> all pages 
 					Doc_SetMargins	( nDocID, -1, 50, 50, 50, 50, 1   		);  //  0 -> margins are in pixels
 					Doc_PrintLine	( nDocID,  0," ");
-					Doc_PrintLine	( nDocID,  0,"Slovutnı pane,");
+					Doc_PrintLine	( nDocID,  0,"SlovutnÃ½ pane,");
 					Doc_PrintLine	( nDocID,  0, ""					);
 					Doc_SetFont 	( nDocID, -1, "font_10_book.TGA"	   			); 	// -1 -> all pages 
-					Doc_PrintLines	( nDocID,  0, "váš poslední dopis v nás vyvolal velké starosti. Celou záleitost jsme probrali a v tomto dopise vám posíláme naši odpovìï. Bratrstvo pøedstavuje hrozbu. Ohrouje prosperitu naší obchodní smlouvy, která pak potamo ohrouje krále, tedy i celé království a vaše vlastní ivoty. Proto byste mìli vyslat zvìdy, kteøí by zjistili, z jakého bostva vycházejí jejich znalosti a magická moc. Jakmile se vám podaøí toto odhalit, zpravíme o tom knìstvo a spoleènımi silami pak celou záleitost vyøešíme. V souèasnosti naši uèenci studují ve starıch knihách. O našich poznatcích vás budeme informovat, a to obvyklımi zpùsoby komunikace."	);
+					Doc_PrintLines	( nDocID,  0, "vÃ¡Å¡ poslednÃ­ dopis v nÃ¡s vyvolal velkÃ© starosti. Celou zÃ¡leÅ¾itost jsme probrali a v tomto dopise vÃ¡m posÃ­lÃ¡me naÅ¡i odpovÄ›Ä. Bratrstvo pÅ™edstavuje hrozbu. OhroÅ¾uje prosperitu naÅ¡Ã­ obchodnÃ­ smlouvy, kterÃ¡ pak potaÅ¾mo ohroÅ¾uje krÃ¡le, tedy i celÃ© krÃ¡lovstvÃ­ a vaÅ¡e vlastnÃ­ Å¾ivoty. Proto byste mÄ›li vyslat zvÄ›dy, kteÅ™Ã­ by zjistili, z jakÃ©ho boÅ¾stva vychÃ¡zejÃ­ jejich znalosti a magickÃ¡ moc. Jakmile se vÃ¡m podaÅ™Ã­ toto odhalit, zpravÃ­me o tom knÄ›Å¾stvo a spoleÄnÃ½mi silami pak celou zÃ¡leÅ¾itost vyÅ™eÅ¡Ã­me. V souÄasnosti naÅ¡i uÄenci studujÃ­ ve starÃ½ch knihÃ¡ch. O naÅ¡ich poznatcÃ­ch vÃ¡s budeme informovat, a to obvyklÃ½mi zpÅ¯soby komunikace."	);
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLine	( nDocID,  0,"Nech nás Innos všechny ochrání");
-					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLine	( nDocID,  0, ""					);
+					Doc_PrintLine	( nDocID,  0,"NechÅ¥ nÃ¡s Innos vÅ¡echny ochrÃ¡nÃ­");
 					Doc_PrintLine	( nDocID,  0, ""					);
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_SetMargins	( nDocID, -1, 200, 50, 50, 50, 1   		);  //  0 -> margins are in pixels (Position des Textes von den Ränder des TGAs aus
-					//Doc_PrintLine	( nDocID,  0, "Rigaldo Marschall des Königs"					);
+					Doc_PrintLine	( nDocID,  0, ""					);
+					Doc_PrintLine	( nDocID,  0, ""					);
+					Doc_SetMargins	( nDocID, -1, 200, 50, 50, 50, 1   		);  //  0 -> margins are in pixels (Position des Textes von den RÃ¤nder des TGAs aus
+					//Doc_PrintLine	( nDocID,  0, "Rigaldo Marschall des KÃ¶nigs"					);
 					Doc_Show		( nDocID );
 		
 		
@@ -1030,7 +1030,7 @@ func void Usefireletter ()
 /********************************************************************************/
 INSTANCE ItWr_Fire_Letter_02 (C_Item)
 {	
-	name 				=	"Otevøenı dopis";
+	name 				=	"OtevÅ™enÃ½ dopis";
 
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION;
@@ -1041,7 +1041,7 @@ INSTANCE ItWr_Fire_Letter_02 (C_Item)
 	material 			=	MAT_LEATHER;
 	on_state[0]			=   UseFireletter2;
 	scemeName			=	"MAP";
-	description			= "Dopis mágùm Ohnì";
+	description			= "Dopis mÃ¡gÅ¯m OhnÄ›";
 	//TEXT[0]				= "";
 	////COUNT[0]			= ;
 	//TEXT[1]				= "";
@@ -1066,29 +1066,29 @@ func void Usefireletter2 ()
 					Doc_SetFont 	( nDocID, -1, "font_10_book.tga"	   			); 	// -1 -> all pages 
 					Doc_SetMargins	( nDocID, -1, 50, 50, 50, 50, 1   		);  //  0 -> margins are in pixels
 					Doc_PrintLine	( nDocID,  0," ");
-					Doc_PrintLine	( nDocID,  0,"Slovutnı mistøe Xardasi,");
+					Doc_PrintLine	( nDocID,  0,"SlovutnÃ½ mistÅ™e Xardasi,");
 					Doc_PrintLine	( nDocID,  0, ""					);
 					Doc_SetFont 	( nDocID, -1, "font_10_book.TGA"	   			); 	// -1 -> all pages 
-					Doc_PrintLines	( nDocID,  0, "váš poslední dopis v nás vyvolal velké starosti. Celou záleitost jsme probrali a v tomto dopise vám posíláme naši odpovìï. Bratrstvo pøedstavuje hrozbu. Ohrouje prosperitu naší obchodní smlouvy, která pak potamo ohrouje krále, tedy i celé království a vaše vlastní ivoty. Proto byste mìli vyslat zvìdy, kteøí by zjistili, z jakého bostva vycházejí jejich znalosti a magická moc. Je naší povinností tu sektu rozprášit a jejich vìdomosti si pøivlastnit, aby jich nikdo jinı nemohl zneuít. V tomto okamiku ji naši uèenci studují ve starıch knihách. O našich poznatcích vás budeme informovat, a to obvyklımi zpùsoby komunikace."	);
+					Doc_PrintLines	( nDocID,  0, "vÃ¡Å¡ poslednÃ­ dopis v nÃ¡s vyvolal velkÃ© starosti. Celou zÃ¡leÅ¾itost jsme probrali a v tomto dopise vÃ¡m posÃ­lÃ¡me naÅ¡i odpovÄ›Ä. Bratrstvo pÅ™edstavuje hrozbu. OhroÅ¾uje prosperitu naÅ¡Ã­ obchodnÃ­ smlouvy, kterÃ¡ pak potaÅ¾mo ohroÅ¾uje krÃ¡le, tedy i celÃ© krÃ¡lovstvÃ­ a vaÅ¡e vlastnÃ­ Å¾ivoty. Proto byste mÄ›li vyslat zvÄ›dy, kteÅ™Ã­ by zjistili, z jakÃ©ho boÅ¾stva vychÃ¡zejÃ­ jejich znalosti a magickÃ¡ moc. Je naÅ¡Ã­ povinnostÃ­ tu sektu rozprÃ¡Å¡it a jejich vÄ›domosti si pÅ™ivlastnit, aby jich nikdo jinÃ½ nemohl zneuÅ¾Ã­t. V tomto okamÅ¾iku jiÅ¾ naÅ¡i uÄenci studujÃ­ ve starÃ½ch knihÃ¡ch. O naÅ¡ich poznatcÃ­ch vÃ¡s budeme informovat, a to obvyklÃ½mi zpÅ¯soby komunikace."	);
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLine	( nDocID,  0,"Nech nás Innos všechny ochrání");
+					Doc_PrintLine	( nDocID,  0,"NechÅ¥ nÃ¡s Innos vÅ¡echny ochrÃ¡nÃ­");
 					Doc_PrintLine	( nDocID,  0, ""					);
-					//Doc_PrintLine	( nDocID,  0, "            Rigaldo, Marschall des Königs");
+					//Doc_PrintLine	( nDocID,  0, "            Rigaldo, Marschall des KÃ¶nigs");
 					Doc_PrintLine	( nDocID,  0, ""					);
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_SetMargins	( nDocID, -1, 200, 50, 50, 50, 1   		);  //  0 -> margins are in pixels (Position des Textes von den Ränder des TGAs aus
+					Doc_SetMargins	( nDocID, -1, 200, 50, 50, 50, 1   		);  //  0 -> margins are in pixels (Position des Textes von den RÃ¤nder des TGAs aus
 				
 					Doc_Show		( nDocID );
 		
 };
 
 /********************************************************************************/
-//SCHLÜSSEL 
+//SCHLÃœSSEL 
 /*********************************************************************************/
-//GOMEZ SCHLÜSSEL
+//GOMEZ SCHLÃœSSEL
 INSTANCE ItKe_Gomez_01(C_Item)
 {	
-	name 					=	"Gomezùv klíè";
+	name 					=	"GomezÅ¯v klÃ­Ä";
 
 	mainflag 				=	ITEM_KAT_NONE;
 	flags 					=	0;	
@@ -1098,9 +1098,9 @@ INSTANCE ItKe_Gomez_01(C_Item)
 	visual 					=	"ItKe_Key_04.3ds";
 	material 				=	MAT_METAL;
 	description			= name;
-	TEXT[0]				= "Otevøe Gomezovy truhlice.";
+	TEXT[0]				= "OtevÅ™e Gomezovy truhlice.";
 	////COUNT[0]			= ;
-	TEXT[1]				= "Otevøe sklad ve sklepì Rudobaronù.";
+	TEXT[1]				= "OtevÅ™e sklad ve sklepÄ› RudobaronÅ¯.";
 	////COUNT[1]			= ;
 	//TEXT[2]				= "";
 	//COUNT[2]			= ;
@@ -1113,10 +1113,10 @@ INSTANCE ItKe_Gomez_01(C_Item)
 };
 
 /*********************************************************************************/
-//RICELORDS SCHLÜSSEL
+//RICELORDS SCHLÃœSSEL
 INSTANCE ItKey_RB_01(C_Item)
 {	
-	name 				=	"Klíè Rıového lorda";
+	name 				=	"KlÃ­Ä RÃ½Å¾ovÃ©ho lorda";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	0;	
@@ -1126,13 +1126,13 @@ INSTANCE ItKey_RB_01(C_Item)
 	visual 				=	"ItKe_Key_01.3ds";
 	material 			=	MAT_METAL;
 	description			=	name;
-	TEXT[0]				=	"Otevøe truhlice Rıového lorda.";
+	TEXT[0]				=	"OtevÅ™e truhlice RÃ½Å¾ovÃ©ho lorda.";
 };
 /*********************************************************************************/
-//SCHMIEDESCHLÜSSEL ERZBARONE
+//SCHMIEDESCHLÃœSSEL ERZBARONE
 INSTANCE ItKe_OB_Smith_01(C_Item)
 {	
-	name 					=	"eleznı klíè";
+	name 					=	"Å½eleznÃ½ klÃ­Ä";
 
 	mainflag 				=	ITEM_KAT_NONE;
 	flags 					=	0;	
@@ -1142,7 +1142,7 @@ INSTANCE ItKe_OB_Smith_01(C_Item)
 	visual 					=	"ItKe_Key_02.3ds";
 	material 				=	MAT_METAL;
 	description			= name;
-	TEXT[0]				= "Otevøe dveøe od kováøova skladu";
+	TEXT[0]				= "OtevÅ™e dveÅ™e od kovÃ¡Å™ova skladu";
 	////COUNT[0]			= ;
 	//TEXT[1]				= "";
 	////COUNT[1]			= ;
@@ -1159,7 +1159,7 @@ INSTANCE ItKe_OB_Smith_01(C_Item)
 // 
 INSTANCE ItKe_Storage_01(C_Item)
 {	
-	name 					=	"Klíè do skladu";
+	name 					=	"KlÃ­Ä do skladu";
 
 	mainflag 				=	ITEM_KAT_NONE;
 	flags 					=	0;	
@@ -1169,9 +1169,9 @@ INSTANCE ItKe_Storage_01(C_Item)
 	visual 					=	"ItKe_Key_03.3ds";
 	material 				=	MAT_METAL;
 	description			= name;
-	TEXT[0]				= "Otevøe hlavní vstup do skladu";
+	TEXT[0]				= "OtevÅ™e hlavnÃ­ vstup do skladu";
 	////COUNT[0]			= ;
-	TEXT[1]				= "ve sklepì Rudobaronù";
+	TEXT[1]				= "ve sklepÄ› RudobaronÅ¯";
 	////COUNT[1]			= ;
 	//TEXT[2]				= "";
 	//COUNT[2]			= ;
@@ -1184,13 +1184,13 @@ INSTANCE ItKe_Storage_01(C_Item)
 };
 
 /********************************************************/
-//			SCHLÜSSEL IN DER ALTEN MINE
+//			SCHLÃœSSEL IN DER ALTEN MINE
 /********************************************************/
 
 /********************************************************/
 INSTANCE ItKe_OM_01(C_Item)
 {	
-	name 				=	"Klíè od truhlice";
+	name 				=	"KlÃ­Ä od truhlice";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	0;	
@@ -1200,14 +1200,14 @@ INSTANCE ItKe_OM_01(C_Item)
 	visual 				=	"ItKe_Key_01.3ds";
 	material 			=	MAT_METAL;
 	description			= name;
-	TEXT[0]				= "Santinùv sklad.";
-	TEXT[1]				= "Horní smìnárna.";
-	TEXT[2]				= "Starı dùl";
+	TEXT[0]				= "SantinÅ¯v sklad.";
+	TEXT[1]				= "HornÃ­ smÄ›nÃ¡rna.";
+	TEXT[2]				= "StarÃ½ dÅ¯l";
 };
 /********************************************************/
 INSTANCE ItKe_OM_02(C_Item)
 {	
-	name 				=	"Klíè od truhlice";
+	name 				=	"KlÃ­Ä od truhlice";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	0;	
@@ -1217,14 +1217,14 @@ INSTANCE ItKe_OM_02(C_Item)
 	visual 				=	"ItKe_Key_02.3ds";
 	material 			=	MAT_METAL;
 	description			= name;
-	TEXT[0]				= "otevøe Aaronovu truhlici";
-	TEXT[1]				= "ve Starém dole";
+	TEXT[0]				= "otevÅ™e Aaronovu truhlici";
+	TEXT[1]				= "ve StarÃ©m dole";
 };
 
 /********************************************************/
 INSTANCE ItKe_OM_03(C_Item)
 {	
-	name 				=	"Klíè od truhlice";
+	name 				=	"KlÃ­Ä od truhlice";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	0;	
@@ -1234,14 +1234,14 @@ INSTANCE ItKe_OM_03(C_Item)
 	visual 				=	"ItKe_Key_03.3ds";
 	material 			=	MAT_METAL;
 	description			= name;
-	TEXT[0]				= "otevøe truhlice";
-	TEXT[1]             = "ve skladu Starého dolu";
+	TEXT[0]				= "otevÅ™e truhlice";
+	TEXT[1]             = "ve skladu StarÃ©ho dolu";
 };
 
 /********************************************************/
 INSTANCE ItKe_OM_04(C_Item)
 {	
-	name 				=	"Klíè od truhlice";
+	name 				=	"KlÃ­Ä od truhlice";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	0;	
@@ -1251,14 +1251,14 @@ INSTANCE ItKe_OM_04(C_Item)
 	visual 				=	"ItKe_Key_04.3ds";
 	material 			=	MAT_METAL;
 	description			= name;
-	TEXT[0]				= "Albertùv sklad";
-	TEXT[1]				= "Dolní smìnárna.";
+	TEXT[0]				= "AlbertÅ¯v sklad";
+	TEXT[1]				= "DolnÃ­ smÄ›nÃ¡rna.";
 };
 
 /********************************GESCHENK VON IAN *********************************************/
 INSTANCE ItFo_OM_Beer_01(C_Item)
 {
-	name 					=	"Silné pivo";
+	name 					=	"SilnÃ© pivo";
 
 	mainflag 				=	ITEM_KAT_FOOD;
 	flags 					=	ITEM_MULTI;
@@ -1293,7 +1293,7 @@ INSTANCE ItFo_OM_Beer_01(C_Item)
 
 
 //***********************************************************************************************************
-//**								Das Rätsel des Nebelturms			Björn							   **
+//**								Das RÃ¤tsel des Nebelturms			BjÃ¶rn							   **
 //***********************************************************************************************************
 
 //*******Effekt nur beim ersten benutzen des Buches
@@ -1307,7 +1307,7 @@ var int riddle6;
 
 INSTANCE theriddle1(C_Item)
 {	
-	name 					=	"Stará kniha";
+	name 					=	"StarÃ¡ kniha";
 	
 	mainflag 				=	ITEM_KAT_DOCS;
 	flags 					=	ITEM_MISSION;
@@ -1342,12 +1342,12 @@ INSTANCE theriddle1(C_Item)
 					Doc_PrintLine	( nDocID,  0, "-----------");
 					Doc_SetFont 	( nDocID, -1, "font_10_book.TGA"	   			); 	// -1 -> all pages 
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLines	( nDocID,  0, "Ten, kdo se touí vzdát vší mravní špíny a kráèí po cestì poctivosti, zví, kde se nachází skrytı zdroj mé moci. Proto, aby ji mohl pouít k zlomení pout tohoto svìta a stal se hodnım pochopit Chromanin.");
+					Doc_PrintLines	( nDocID,  0, "Ten, kdo se touÅ¾Ã­ vzdÃ¡t vÅ¡Ã­ mravnÃ­ Å¡pÃ­ny a krÃ¡ÄÃ­ po cestÄ› poctivosti, zvÃ­, kde se nachÃ¡zÃ­ skrytÃ½ zdroj mÃ© moci. Proto, aby ji mohl pouÅ¾Ã­t k zlomenÃ­ pout tohoto svÄ›ta a stal se hodnÃ½m pochopit Chromanin.");
 					
 				
 
 					//2.Seite
-					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den Ränder des TGAs aus, links,oben,rechts,unten)
+					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den RÃ¤nder des TGAs aus, links,oben,rechts,unten)
 					Doc_PrintLine	( nDocID,  1, "");
 					Doc_PrintLine	( nDocID,  1, "");
 					Doc_PrintLine	( nDocID,  1, "");
@@ -1357,14 +1357,14 @@ INSTANCE theriddle1(C_Item)
 					Doc_PrintLine	( nDocID,  1, "");
 					Doc_PrintLine	( nDocID,  1, "");
 					Doc_PrintLine	( nDocID,  1, "");
-					Doc_PrintLines	( nDocID,  1, "Moudrı èlovìk si o vìci udìlá nejdøíve pøehled, ne se rozhodne");
+					Doc_PrintLines	( nDocID,  1, "MoudrÃ½ ÄlovÄ›k si o vÄ›ci udÄ›lÃ¡ nejdÅ™Ã­ve pÅ™ehled, neÅ¾ se rozhodne");
 					Doc_Show		( nDocID );
 				
 					if (riddle1 == FALSE)
 					{
 						Log_CreateTopic		(theriddle_log,		LOG_MISSION);
 						Log_SetTopicStatus	(theriddle_log,		LOG_RUNNING);
-						B_LogEntry			(theriddle_log,		"V Zamlené vìi jsem dostal od Kostlivého mága prazvláštní rukopis. Chromanin! Jakoby do vezdejšího svìta vstoupila opravdová záhada! Moudrı èlovìk si o vìci udìlá nejdøíve pøehled, ne se rozhodne pro další misi... Hmmm! Moc tomu nerozumím, ale snad jednou prohlédnu."); 
+						B_LogEntry			(theriddle_log,		"V ZamlÅ¾enÃ© vÄ›Å¾i jsem dostal od KostlivÃ©ho mÃ¡ga prazvlÃ¡Å¡tnÃ­ rukopis. Chromanin! Jakoby do vezdejÅ¡Ã­ho svÄ›ta vstoupila opravdovÃ¡ zÃ¡hada! MoudrÃ½ ÄlovÄ›k si o vÄ›ci udÄ›lÃ¡ nejdÅ™Ã­ve pÅ™ehled, neÅ¾ se rozhodne pro dalÅ¡Ã­ misi... Hmmm! Moc tomu nerozumÃ­m, ale snad jednou prohlÃ©dnu."); 
 						Wld_InsertItem			(theriddle2,"CASTLE_TOWER_TOP");
 					
 						riddle1 = TRUE;
@@ -1374,7 +1374,7 @@ INSTANCE theriddle1(C_Item)
 
 INSTANCE theriddle2(C_Item)
 {	
-	name 					=	"Stará kniha";
+	name 					=	"StarÃ¡ kniha";
 	
 	mainflag 				=	ITEM_KAT_DOCS;
 	flags 					=	ITEM_MISSION;
@@ -1410,12 +1410,12 @@ INSTANCE theriddle2(C_Item)
 					Doc_PrintLine	( nDocID,  0, "-----------");
 					Doc_SetFont 	( nDocID, -1, "font_10_book.TGA"	   			); 	// -1 -> all pages 
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLines	( nDocID,  0, "Vize z Chromaninu, které vyplavil pøíliv dávnıch èasù, mi otevøely oèi. Není na svìtì nic, co by mì pøimìlo vzdát se mé víry v ony vize, které se tak hluboko dotkly mého nitra.");
+					Doc_PrintLines	( nDocID,  0, "Vize z Chromaninu, kterÃ© vyplavil pÅ™Ã­liv dÃ¡vnÃ½ch ÄasÅ¯, mi otevÅ™ely oÄi. NenÃ­ na svÄ›tÄ› nic, co by mÄ› pÅ™imÄ›lo vzdÃ¡t se mÃ© vÃ­ry v ony vize, kterÃ© se tak hluboko dotkly mÃ©ho nitra.");
 					
 				
 
 					//2.Seite
-					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den Ränder des TGAs aus, links,oben,rechts,unten)
+					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den RÃ¤nder des TGAs aus, links,oben,rechts,unten)
 					Doc_PrintLine	( nDocID,  1, "");
 					Doc_PrintLine	( nDocID,  1, "");
 					Doc_PrintLine	( nDocID,  1, "");
@@ -1425,13 +1425,13 @@ INSTANCE theriddle2(C_Item)
 					Doc_PrintLine	( nDocID,  1, "");
 					Doc_PrintLine	( nDocID,  1, "");
 					Doc_PrintLine	( nDocID,  1, "");
-					Doc_PrintLines	( nDocID,  1, "Vše, co bylo rozdìleno, se po krátkém, avšak krutém roztrení, znovu sjednotí.");
+					Doc_PrintLines	( nDocID,  1, "VÅ¡e, co bylo rozdÄ›leno, se po krÃ¡tkÃ©m, avÅ¡ak krutÃ©m roztrÅ¾enÃ­, znovu sjednotÃ­.");
 					Doc_Show		( nDocID );
 					
 					if (riddle2 == FALSE)
 					{					
 						B_GiveXP (300);
-						B_LogEntry			(theriddle_log,		"Našel jsem druhou knihu jména Chromanin. A znovu ve mnì vzklíèilo sémì záhad... Vše, co bylo rozdìleno, se po krátkém, avšak krutém roztrení, znovu sjednotí."); 
+						B_LogEntry			(theriddle_log,		"NaÅ¡el jsem druhou knihu jmÃ©na Chromanin. A znovu ve mnÄ› vzklÃ­Äilo sÃ©mÄ› zÃ¡had... VÅ¡e, co bylo rozdÄ›leno, se po krÃ¡tkÃ©m, avÅ¡ak krutÃ©m roztrÅ¾enÃ­, znovu sjednotÃ­."); 
 						Snd_Play 		("FoundRiddlersBook");
 						Wld_InsertItem			(theriddle3,"FP_SLEEP_OW_BLOODFLY_01_02");
 					
@@ -1442,7 +1442,7 @@ INSTANCE theriddle2(C_Item)
 	};
 INSTANCE theriddle3(C_Item)
 {	
-	name 					=	"Stará kniha";
+	name 					=	"StarÃ¡ kniha";
 	
 	mainflag 				=	ITEM_KAT_DOCS;
 	flags 					=	ITEM_MISSION;
@@ -1478,12 +1478,12 @@ INSTANCE theriddle3(C_Item)
 					Doc_PrintLine	( nDocID,  0, "-----------");
 					Doc_SetFont 	( nDocID, -1, "font_10_book.TGA"	   			); 	// -1 -> all pages 
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLines	( nDocID,  0, "Och, prastaré Bostvo. Jak to pøijde, e takovı prostı a nehodnı mu, jako jsem já, dostane takové velké dìdictví. Mám velkı strach, e kvùli sebemenšímu škobrtnutí uèinìnému slovem èi skutkem, zas o všechno pøijdu.");
+					Doc_PrintLines	( nDocID,  0, "Och, prastarÃ© BoÅ¾stvo. Jak to pÅ™ijde, Å¾e takovÃ½ prostÃ½ a nehodnÃ½ muÅ¾, jako jsem jÃ¡, dostane takovÃ© velkÃ© dÄ›dictvÃ­. MÃ¡m velkÃ½ strach, Å¾e kvÅ¯li sebemenÅ¡Ã­mu Å¡kobrtnutÃ­ uÄinÄ›nÃ©mu slovem Äi skutkem, zas o vÅ¡echno pÅ™ijdu.");
 					
 				
 
 					//2.Seite
-					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den Ränder des TGAs aus, links,oben,rechts,unten)
+					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den RÃ¤nder des TGAs aus, links,oben,rechts,unten)
 					Doc_PrintLine	( nDocID,  1, "");
 					Doc_PrintLine	( nDocID,  1, "");
 					Doc_PrintLine	( nDocID,  1, "");
@@ -1493,7 +1493,7 @@ INSTANCE theriddle3(C_Item)
 					Doc_PrintLine	( nDocID,  1, "");
 					Doc_PrintLine	( nDocID,  1, "");
 					Doc_PrintLine	( nDocID,  1, "");
-					Doc_PrintLines	( nDocID,  1, "Moudrı rybáø obèas zkouší štìstí na druhé stranì jezera.");
+					Doc_PrintLines	( nDocID,  1, "MoudrÃ½ rybÃ¡Å™ obÄas zkouÅ¡Ã­ Å¡tÄ›stÃ­ na druhÃ© stranÄ› jezera.");
 					Doc_Show		( nDocID );
 
 
@@ -1501,7 +1501,7 @@ INSTANCE theriddle3(C_Item)
 					if (riddle3 == FALSE)
 					{		
 						B_GiveXP (500);
-						B_LogEntry			(theriddle_log,		"Našel jsem tøetí rukopis. Mám pocit, e jsem zaèal rozumìt smyslu toho díla! ...Moudrı rybáø obèas zkouší štìstí na druhé stranì jezera."); 
+						B_LogEntry			(theriddle_log,		"NaÅ¡el jsem tÅ™etÃ­ rukopis. MÃ¡m pocit, Å¾e jsem zaÄal rozumÄ›t smyslu toho dÃ­la! ...MoudrÃ½ rybÃ¡Å™ obÄas zkouÅ¡Ã­ Å¡tÄ›stÃ­ na druhÃ© stranÄ› jezera."); 
 						Snd_Play 		("FoundRiddlersBook");
 						Wld_InsertItem			(theriddle4,"FP_SLEEP_OW_LURKER_NC_LAKE_02");
 						
@@ -1515,7 +1515,7 @@ INSTANCE theriddle3(C_Item)
 				
 INSTANCE theriddle4(C_Item)
 {	
-	name 					=	"Stará kniha";
+	name 					=	"StarÃ¡ kniha";
 	
 	mainflag 				=	ITEM_KAT_DOCS;
 	flags 					=	ITEM_MISSION;
@@ -1551,12 +1551,12 @@ INSTANCE theriddle4(C_Item)
 					Doc_PrintLine	( nDocID,  0, "-----------");
 					Doc_SetFont 	( nDocID, -1, "font_10_book.TGA"	   			); 	// -1 -> all pages 
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLines	( nDocID,  0, "Nechovám v sobì nadìji, e bych se jednoho dne ztotonil s Chromaninem. Pryè jsou dny bìd a náøkù. Tak snadné je dosáhnout absolutní dokonalosti. A nemám k ní ji daleko!");
+					Doc_PrintLines	( nDocID,  0, "NechovÃ¡m v sobÄ› nadÄ›ji, Å¾e bych se jednoho dne ztotoÅ¾nil s Chromaninem. PryÄ jsou dny bÄ›d a nÃ¡Å™kÅ¯. Tak snadnÃ© je dosÃ¡hnout absolutnÃ­ dokonalosti. A nemÃ¡m k nÃ­ jiÅ¾ daleko!");
 					
 				
 
 					//2.Seite
-					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den Ränder des TGAs aus, links,oben,rechts,unten)
+					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den RÃ¤nder des TGAs aus, links,oben,rechts,unten)
 					Doc_PrintLine	( nDocID,  1, "");
 					Doc_PrintLine	( nDocID,  1, "");
 					Doc_PrintLine	( nDocID,  1, "");
@@ -1566,14 +1566,14 @@ INSTANCE theriddle4(C_Item)
 					Doc_PrintLine	( nDocID,  1, "");
 					Doc_PrintLine	( nDocID,  1, "");
 					Doc_PrintLine	( nDocID,  1, "");
-					Doc_PrintLines	( nDocID,  1, "Dlouho ji je tomu, co èiny tìch, kteøí kdysi stáli na palubì, upadly v zapomnìní.");
+					Doc_PrintLines	( nDocID,  1, "Dlouho jiÅ¾ je tomu, co Äiny tÄ›ch, kteÅ™Ã­ kdysi stÃ¡li na palubÄ›, upadly v zapomnÄ›nÃ­.");
 					Doc_Show		( nDocID );
 					
 
 					if (riddle4 == FALSE)
 					{					
 						B_GiveXP (700);
-						B_LogEntry			(theriddle_log,		"Èíslo ètyøi. Zaèínám se sám sebe ptát, jestli jsem se tím nenechal ponìkud tahat za nos! ...Dlouho ji je tomu, co èiny tìch, kteøí kdysi stáli na palubì, upadly v zapomnìní."); 
+						B_LogEntry			(theriddle_log,		"ÄŒÃ­slo ÄtyÅ™i. ZaÄÃ­nÃ¡m se sÃ¡m sebe ptÃ¡t, jestli jsem se tÃ­m nenechal ponÄ›kud tahat za nos! ...Dlouho jiÅ¾ je tomu, co Äiny tÄ›ch, kteÅ™Ã­ kdysi stÃ¡li na palubÄ›, upadly v zapomnÄ›nÃ­."); 
 						Snd_Play 		("FoundRiddlersBook");					
 						Wld_InsertItem			(theriddle5,"LOCATION_25_01");
 					
@@ -1588,7 +1588,7 @@ INSTANCE theriddle4(C_Item)
 								
 INSTANCE theriddle5(C_Item)
 {	
-	name 					=	"Stará kniha";
+	name 					=	"StarÃ¡ kniha";
 	
 	mainflag 				=	ITEM_KAT_DOCS;
 	flags 					=	ITEM_MISSION;
@@ -1624,12 +1624,12 @@ INSTANCE theriddle5(C_Item)
 					Doc_PrintLine	( nDocID,  0, "-----------");
 					Doc_SetFont 	( nDocID, -1, "font_10_book.TGA"	   			); 	// -1 -> all pages 
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLines	( nDocID,  0, "Nebudu tou cestou však kráèet sám. Ta èest patøí mnì. Musím se smíøit s tím, e svoji moc budu sdílet s nìkım, kdo toho bude hoden, s nìkım, kdo pøijde a vyhledá mì. Doufám jen, e pøijdou brzy...");
+					Doc_PrintLines	( nDocID,  0, "Nebudu tou cestou vÅ¡ak krÃ¡Äet sÃ¡m. Ta Äest patÅ™Ã­ mnÄ›. MusÃ­m se smÃ­Å™it s tÃ­m, Å¾e svoji moc budu sdÃ­let s nÄ›kÃ½m, kdo toho bude hoden, s nÄ›kÃ½m, kdo pÅ™ijde a vyhledÃ¡ mÄ›. DoufÃ¡m jen, Å¾e pÅ™ijdou brzy...");
 					
 				
 
 					//2.Seite
-					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den Ränder des TGAs aus, links,oben,rechts,unten)
+					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den RÃ¤nder des TGAs aus, links,oben,rechts,unten)
 					Doc_PrintLine	( nDocID,  1, "");
 					Doc_PrintLine	( nDocID,  1, "");
 					Doc_PrintLine	( nDocID,  1, "");
@@ -1639,7 +1639,7 @@ INSTANCE theriddle5(C_Item)
 					Doc_PrintLine	( nDocID,  1, "");
 					Doc_PrintLine	( nDocID,  1, "");
 					Doc_PrintLine	( nDocID,  1, "");
-					Doc_PrintLines	( nDocID,  1, "Najdeš mì tam, kde to všechno zaèalo.");
+					Doc_PrintLines	( nDocID,  1, "NajdeÅ¡ mÄ› tam, kde to vÅ¡echno zaÄalo.");
 					Doc_Show		( nDocID );
 
 
@@ -1648,7 +1648,7 @@ INSTANCE theriddle5(C_Item)
 					if (riddle5 == FALSE)
 					{
 						B_GiveXP (850);
-						B_LogEntry			(theriddle_log,		"Tento se zdá bıt poslední. Dychtím najít nìkoho nebo nìco, s èím se mám utkat... Najdeš mì tam, kde to všechno zaèalo."); 
+						B_LogEntry			(theriddle_log,		"Tento se zdÃ¡ bÃ½t poslednÃ­. DychtÃ­m najÃ­t nÄ›koho nebo nÄ›co, s ÄÃ­m se mÃ¡m utkat... NajdeÅ¡ mÄ› tam, kde to vÅ¡echno zaÄalo."); 
 						Snd_Play 		("FoundRiddlersBook");				
 						Wld_InsertNpc				(Bau_940_Riddler,"");
 						var C_NPC riddler; riddler = Hlp_GetNpc(Bau_940_Riddler);
@@ -1661,7 +1661,7 @@ INSTANCE theriddle5(C_Item)
 
 INSTANCE theriddle6(C_Item)
 {	
-	name 					=	"Stará kniha";
+	name 					=	"StarÃ¡ kniha";
 	
 	mainflag 				=	ITEM_KAT_DOCS;
 	flags 					=	ITEM_MISSION;
@@ -1702,7 +1702,7 @@ INSTANCE theriddle6(C_Item)
 				
 
 					//2.Seite
-					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den Ränder des TGAs aus, links,oben,rechts,unten)
+					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den RÃ¤nder des TGAs aus, links,oben,rechts,unten)
 					Doc_PrintLine	( nDocID,  1, "");
 					Doc_PrintLine	( nDocID,  1, "");
 					Doc_PrintLine	( nDocID,  1, "");
@@ -1720,7 +1720,7 @@ INSTANCE theriddle6(C_Item)
 					{
 
 						B_GiveXP (1000);
-						B_LogEntry			(theriddle_log,		"Záhadnı cizinec je mrtev. Zabili jej tihle démoni. Zdá se, e mezi ním a tìmi pekelnımi stvùrami bylo nìjaké pouto, jinak by se na toto místo nevrátil zpìt. Znal tajemství, které si sebou zøejmì chtìl vzít do hrobu."); 
+						B_LogEntry			(theriddle_log,		"ZÃ¡hadnÃ½ cizinec je mrtev. Zabili jej tihle dÃ©moni. ZdÃ¡ se, Å¾e mezi nÃ­m a tÄ›mi pekelnÃ½mi stvÅ¯rami bylo nÄ›jakÃ© pouto, jinak by se na toto mÃ­sto nevrÃ¡til zpÄ›t. Znal tajemstvÃ­, kterÃ© si sebou zÅ™ejmÄ› chtÄ›l vzÃ­t do hrobu."); 
 						Log_SetTopicStatus	(theriddle_log,		LOG_SUCCESS);
 						Snd_Play 		("FoundRiddler");					
 						Wld_InsertNpc	(SkeletonMage,		"OW_FOGDUNGEON_36_MOVEMENT");

@@ -7,7 +7,7 @@
 //#####################################################################
 
 //---------------------------------------------------------------------
-//	Buch über Golems
+//	Buch Ã¼ber Golems
 //---------------------------------------------------------------------
 INSTANCE ItWr_GolemBook1(C_Item)
 {	
@@ -40,18 +40,18 @@ INSTANCE ItWr_GolemBook1(C_Item)
 		Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1);  //  0 -> margins are in pixels
 		Doc_PrintLine	( nDocID,  0,"ARCANUM GOLUM - Svazek I.");
 		Doc_PrintLine	( nDocID,  0, "=====================");
-		Doc_PrintLines	( nDocID,  0,"(Magie golemù)");
+		Doc_PrintLines	( nDocID,  0,"(Magie golemÅ¯)");
 		Doc_PrintLine	( nDocID,  0, "");
-		Doc_PrintLines	( nDocID,  0,"Jedinì ten, kdo se setkal s tìmito bytostmi, které povstaly z ivlù, si dokáe plnì uvìdomit, jak velkı respekt si dokáou tato magická stvoøení získat u odvánıch poutníkù. ");
+		Doc_PrintLines	( nDocID,  0,"JedinÄ› ten, kdo se setkal s tÄ›mito bytostmi, kterÃ© povstaly z Å¾ivlÅ¯, si dokÃ¡Å¾e plnÄ› uvÄ›domit, jak velkÃ½ respekt si dokÃ¡Å¾ou tato magickÃ¡ stvoÅ™enÃ­ zÃ­skat u odvÃ¡Å¾nÃ½ch poutnÃ­kÅ¯. ");
 		Doc_PrintLine	( nDocID,  0, "");
 
 		//2.Seite
-		Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1);  //  0 -> margins are in pixels (Position des Textes von den Ränder des TGAs aus, links,oben,rechts,unten)
-		Doc_PrintLine	( nDocID,  1,"Kamennı golem");
+		Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1);  //  0 -> margins are in pixels (Position des Textes von den RÃ¤nder des TGAs aus, links,oben,rechts,unten)
+		Doc_PrintLine	( nDocID,  1,"KamennÃ½ golem");
 		Doc_PrintLine	( nDocID,  1,"------------");
-		Doc_PrintLines	( nDocID,  1,"Tito kolosové jsou v boji prakticky nezranitelní. Zdá se, e meèe, sekyry ani luky tìm obrùm neublíí.");
+		Doc_PrintLines	( nDocID,  1,"Tito kolosovÃ© jsou v boji prakticky nezranitelnÃ­. ZdÃ¡ se, Å¾e meÄe, sekyry ani luky tÄ›m obrÅ¯m neublÃ­Å¾Ã­.");
 		Doc_PrintLine	( nDocID,  1, "");
-		Doc_PrintLines	( nDocID,  1,"Jediná zdánlivì ovìøená zpráva z boje s jedním takovım leviatanem pochází od jakéhosi oldáka. Trhliny, které mu zpùsobil svım váleènım kladivem, nakonec zapøíèinily, e se golem rozpadl na malé kousky.");
+		Doc_PrintLines	( nDocID,  1,"JedinÃ¡ zdÃ¡nlivÄ› ovÄ›Å™enÃ¡ zprÃ¡va z boje s jednÃ­m takovÃ½m leviatanem pochÃ¡zÃ­ od jakÃ©hosi Å¾oldÃ¡ka. Trhliny, kterÃ© mu zpÅ¯sobil svÃ½m vÃ¡leÄnÃ½m kladivem, nakonec zapÅ™Ã­Äinily, Å¾e se golem rozpadl na malÃ© kousky.");
 
 		Doc_Show		( nDocID );
 	};
@@ -89,19 +89,19 @@ INSTANCE ItWr_GolemBook2(C_Item)
 		Doc_PrintLine	( nDocID,  0,"ARCANUM GOLUM - Svazek II.");
 		Doc_PrintLine	( nDocID,  0, "======================");
 		Doc_PrintLine	( nDocID,  0, "");
-		Doc_PrintLine	( nDocID,  0,"Ledovı Golem");
+		Doc_PrintLine	( nDocID,  0,"LedovÃ½ Golem");
 		Doc_PrintLine	( nDocID,  0,"---------");
-		Doc_PrintLines	( nDocID,  0,"Ledoví golemové jsou svım zpùsobem pøíbuzní kamennıch golemù, jejich fyzikální podstata se však zdá bıt vodní povahy. Veškeré známé zbranì sklouzávají po povrchu tìchto ledovıch bytostí.");
-		Doc_PrintLines	( nDocID,  0,"Odvání poutníci, mìjte se na pozoru pøed dechem tìchto  bytostí, kterı vás v miku obklopí ledovımi sloupy.");
+		Doc_PrintLines	( nDocID,  0,"LedovÃ­ golemovÃ© jsou svÃ½m zpÅ¯sobem pÅ™Ã­buznÃ­ kamennÃ½ch golemÅ¯, jejich fyzikÃ¡lnÃ­ podstata se vÅ¡ak zdÃ¡ bÃ½t vodnÃ­ povahy. VeÅ¡kerÃ© znÃ¡mÃ© zbranÄ› sklouzÃ¡vajÃ­ po povrchu tÄ›chto ledovÃ½ch bytostÃ­.");
+		Doc_PrintLines	( nDocID,  0,"OdvÃ¡Å¾nÃ­ poutnÃ­ci, mÄ›jte se na pozoru pÅ™ed dechem tÄ›chto  bytostÃ­, kterÃ½ vÃ¡s v mÅ¾iku obklopÃ­ ledovÃ½mi sloupy.");
 
 		//2.Seite
-		Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1);  //  0 -> margins are in pixels (Position des Textes von den Ränder des TGAs aus, links,oben,rechts,unten)
-		Doc_PrintLines	( nDocID,  1,"Kterısi mág Ohnì popsal støetnutí s touto pøíšerou, ale zøejmì mnoho nevìdìl o nebezpeèí, které pøedstavovala.");
+		Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1);  //  0 -> margins are in pixels (Position des Textes von den RÃ¤nder des TGAs aus, links,oben,rechts,unten)
+		Doc_PrintLines	( nDocID,  1,"KterÃ½si mÃ¡g OhnÄ› popsal stÅ™etnutÃ­ s touto pÅ™Ã­Å¡erou, ale zÅ™ejmÄ› mnoho nevÄ›dÄ›l o nebezpeÄÃ­, kterÃ© pÅ™edstavovala.");
 		Doc_PrintLine	( nDocID,  1, "");
-		Doc_PrintLine	( nDocID,  1,"Ohnivı golem");
+		Doc_PrintLine	( nDocID,  1,"OhnivÃ½ golem");
 		Doc_PrintLine	( nDocID,  1,"------------");
-		Doc_PrintLines	( nDocID,  1,"Podle zpráv dokáou tyto ohnivé bytosti jedinım dotykem promìnit své obìti v moøe plamenù.");
-		Doc_PrintLines	( nDocID,  1,"Bylo to sotva pøed rokem, kdy skupina lovcù potkala jednoho z nich, jak si vykraèuje po øeøavém uhlí. O vısledku støetnutí nebyla podána zpráva, ale blesky a led na tuto pekelnou stvùru zøejmì trochu úèinkovaly.");
+		Doc_PrintLines	( nDocID,  1,"Podle zprÃ¡v dokÃ¡Å¾ou tyto ohnivÃ© bytosti jedinÃ½m dotykem promÄ›nit svÃ© obÄ›ti v moÅ™e plamenÅ¯.");
+		Doc_PrintLines	( nDocID,  1,"Bylo to sotva pÅ™ed rokem, kdy skupina lovcÅ¯ potkala jednoho z nich, jak si vykraÄuje po Å™eÅ™avÃ©m uhlÃ­. O vÃ½sledku stÅ™etnutÃ­ nebyla podÃ¡na zprÃ¡va, ale blesky a led na tuto pekelnou stvÅ¯ru zÅ™ejmÄ› trochu ÃºÄinkovaly.");
 		Doc_Show		( nDocID );
 	};
 
@@ -123,9 +123,9 @@ INSTANCE ItWrWorldmap_Orc(C_Item)
 	scemeName				=	"MAP";	
 	on_state[0]				=	UseWorldmap_Orc;
 
-	description				= "Mapa kolonie (doplnìná)";
-	TEXT[0]					= "Ur-Shak, skøetí šaman, do ní zakreslil";
-	TEXT[1]					= "skøetí území!";
+	description				= "Mapa kolonie (doplnÄ›nÃ¡)";
+	TEXT[0]					= "Ur-Shak, skÅ™etÃ­ Å¡aman, do nÃ­ zakreslil";
+	TEXT[1]					= "skÅ™etÃ­ ÃºzemÃ­!";
 	TEXT[5]					= NAME_Value;
 	COUNT[5]				= value;
 };
@@ -141,11 +141,11 @@ INSTANCE ItWrWorldmap_Orc(C_Item)
 					Doc_Show		( nDocID 	);
 	};
 //---------------------------------------------------------------------
-//	Schlüssel zur Freien Mine
+//	SchlÃ¼ssel zur Freien Mine
 //---------------------------------------------------------------------
 INSTANCE ItKe_Freemine(C_Item)
 {	
-	name 					=	"Klíè od Svobodného dolu";
+	name 					=	"KlÃ­Ä od SvobodnÃ©ho dolu";
 
 	mainflag 				=	ITEM_KAT_NONE;
 	flags 					=	ITEM_MISSION;	
@@ -154,7 +154,7 @@ INSTANCE ItKe_Freemine(C_Item)
 
 	visual 					=	"ItKe_Key_01.3ds";
 	material 				=	MAT_METAL;
-	description			= "Klíè od Svobodného dolu";
+	description			= "KlÃ­Ä od SvobodnÃ©ho dolu";
 	//TEXT[0]				= "";
 	////COUNT[0]			= ;
 	//TEXT[1]				= "";
@@ -170,11 +170,11 @@ INSTANCE ItKe_Freemine(C_Item)
 };
 
 //---------------------------------------------------------------------
-//	Medizin für den verwundeten Orc in der Freien Mine
+//	Medizin fÃ¼r den verwundeten Orc in der Freien Mine
 //---------------------------------------------------------------------
 INSTANCE	OrcMedicine(C_ITEM)
 {
-	name 				= "Skøetí lék";
+	name 				= "SkÅ™etÃ­ lÃ©k";
 
 	mainflag 			= ITEM_KAT_POTIONS;
 	flags 				= ITEM_MISSION;
@@ -188,7 +188,7 @@ INSTANCE	OrcMedicine(C_ITEM)
 	scemeName			= "POTION";
 	description			= name;
 
-	TEXT[0]				= "Úèinek: neznámı";
+	TEXT[0]				= "ÃšÄinek: neznÃ¡mÃ½";
 };
 func void UseOrcMedicine ()
 {
@@ -226,9 +226,9 @@ INSTANCE UluMulu(C_Item)
 	material 		=	MAT_METAL;
 	
 	description		=	name;
-	TEXT[0]			=	"Ulu-Mulu je znamení velké síly a";
-	TEXT[1]			=	"vánosti. Ten, kdo je nosí, nebude";
-	TEXT[2]			=	"skøety napaden!";
+	TEXT[0]			=	"Ulu-Mulu je znamenÃ­ velkÃ© sÃ­ly a";
+	TEXT[1]			=	"vÃ¡Å¾nosti. Ten, kdo je nosÃ­, nebude";
+	TEXT[2]			=	"skÅ™ety napaden!";
 	TEXT[3]			=	NAME_Damage;			COUNT[3]	= damageTotal;
 	TEXT[4] 		=	NAME_Str_needed;		COUNT[4]	= cond_value[2];
 	TEXT[5]			=	NAME_Value; 			COUNT[5]	= value;

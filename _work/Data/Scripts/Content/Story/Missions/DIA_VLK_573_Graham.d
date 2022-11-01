@@ -33,7 +33,7 @@ INSTANCE DIA_Graham_Hello (C_INFO)
 	condition	= DIA_Graham_Hello_Condition;
 	information	= DIA_Graham_Hello_Info;
 	permanent	= 0;
-	description = "Zdar! Jsem tady novı.";
+	description = "Zdar! Jsem tady novÃ½.";
 };                       
 
 FUNC INT DIA_Graham_Hello_Condition()
@@ -43,10 +43,10 @@ FUNC INT DIA_Graham_Hello_Condition()
 
 FUNC VOID DIA_Graham_Hello_Info()
 {	
-	AI_Output (other, self,"DIA_Graham_Hello_15_00"); //Zdar! Jsem tady novı.
-	AI_Output (self, other,"DIA_Graham_Hello_02_01"); //Já jsem Graham, Kreslím mapy. Ještì jsem tì tu nevidìl... Co chceš?
+	AI_Output (other, self,"DIA_Graham_Hello_15_00"); //Zdar! Jsem tady novÃ½.
+	AI_Output (self, other,"DIA_Graham_Hello_02_01"); //JÃ¡ jsem Graham, KreslÃ­m mapy. JeÅ¡tÄ› jsem tÄ› tu nevidÄ›l... Co chceÅ¡?
 	
-	B_LogEntry( GE_TraderOC,"Kopáè Graham prodává mapy nalevo od hlavní brány.");
+	B_LogEntry( GE_TraderOC,"KopÃ¡Ä Graham prodÃ¡vÃ¡ mapy nalevo od hlavnÃ­ brÃ¡ny.");
 };
 
 // ************************************************************
@@ -63,7 +63,7 @@ INSTANCE DIA_Graham_SellMap (C_INFO)
 	condition	= DIA_Graham_SellMap_Condition;
 	information	= DIA_Graham_SellMap_Info;
 	permanent	= 1;
-	description = "Poslal mì Diego. ádá, abys mi dal mapu cesty do Starého dolu.";
+	description = "Poslal mÄ› Diego. Å½Ã¡dÃ¡, abys mi dal mapu cesty do StarÃ©ho dolu.";
 };                       
 
 FUNC INT DIA_Graham_SellMap_Condition()
@@ -76,27 +76,27 @@ FUNC INT DIA_Graham_SellMap_Condition()
 
 FUNC VOID DIA_Graham_SellMap_Info()
 {	
-	AI_Output (other, self,"DIA_Graham_SellMap_15_00"); //Poslal mì Diego. ádá, abys mi dal mapu cesty do Starého dolu.
-	AI_Output (self, other,"DIA_Graham_SellMap_02_01"); //ádnı problém. Pro tebe... jen za 20 nugetù.
+	AI_Output (other, self,"DIA_Graham_SellMap_15_00"); //Poslal mÄ› Diego. Å½Ã¡dÃ¡, abys mi dal mapu cesty do StarÃ©ho dolu.
+	AI_Output (self, other,"DIA_Graham_SellMap_02_01"); //Å½Ã¡dnÃ½ problÃ©m. Pro tebe... jen za 20 nugetÅ¯.
 	Info_ClearChoices	(DIA_Graham_SellMap );
-	Info_AddChoice		(DIA_Graham_SellMap,"Ještì pøijdu.",DIA_Graham_SellMap_BACK);
-	Info_AddChoice		(DIA_Graham_SellMap,"Zaplatím za mapu. Tady, vem si nugety.",DIA_Graham_SellMap_Pay);
-	Info_AddChoice		(DIA_Graham_SellMap,"Dej mi tu mapu, nebo si ji vezmu sám!",DIA_Graham_SellMap_AufsMaul);
-	Info_AddChoice		(DIA_Graham_SellMap,"Zadr, Diego øekl, e bys mi mìl tu mapu DÁT, ne, e bys mi ji mìl prodat.",DIA_Graham_SellMap_GiveNotSell);
+	Info_AddChoice		(DIA_Graham_SellMap,"JeÅ¡tÄ› pÅ™ijdu.",DIA_Graham_SellMap_BACK);
+	Info_AddChoice		(DIA_Graham_SellMap,"ZaplatÃ­m za mapu. Tady, vem si nugety.",DIA_Graham_SellMap_Pay);
+	Info_AddChoice		(DIA_Graham_SellMap,"Dej mi tu mapu, nebo si ji vezmu sÃ¡m!",DIA_Graham_SellMap_AufsMaul);
+	Info_AddChoice		(DIA_Graham_SellMap,"ZadrÅ¾, Diego Å™ekl, Å¾e bys mi mÄ›l tu mapu DÃT, ne, Å¾e bys mi ji mÄ›l prodat.",DIA_Graham_SellMap_GiveNotSell);
 };
 
 func void DIA_Graham_SellMap_BACK()
 {
-	AI_Output (other, self,"DIA_Graham_SellMap_BACK_15_00"); //Ještì pøijdu.
+	AI_Output (other, self,"DIA_Graham_SellMap_BACK_15_00"); //JeÅ¡tÄ› pÅ™ijdu.
 	Info_ClearChoices	(DIA_Graham_SellMap );
 };
 
 func void DIA_Graham_SellMap_Pay()
 {
-	AI_Output (other, self,"DIA_Graham_SellMap_Pay_15_00"); //Zaplatím za mapu. Tady, vem si nugety.
+	AI_Output (other, self,"DIA_Graham_SellMap_Pay_15_00"); //ZaplatÃ­m za mapu. Tady, vem si nugety.
 	if (Npc_HasItems(other, itminugget)>=20)
 	{
-		AI_Output (self, other,"DIA_Graham_SellMap_Pay_02_01"); //Dobrá. Takovouhle mapu nikde nedostaneš lacinìji - to mi vìø.
+		AI_Output (self, other,"DIA_Graham_SellMap_Pay_02_01"); //DobrÃ¡. Takovouhle mapu nikde nedostaneÅ¡ lacinÄ›ji - to mi vÄ›Å™.
 		B_GiveInvItems (other, self, itminugget, 20);
 		B_GiveInvItems (self, other, ItWrOMmap, 1);
 		Graham_OMKarteVerkauft = TRUE;
@@ -104,14 +104,14 @@ func void DIA_Graham_SellMap_Pay()
 	}
 	else
 	{
-		AI_Output (self, other,"DIA_Graham_SellMap_Pay_NoOre_02_00"); //Napøed mi dej nìjakou rudu. Ulov zvìø nebo nasbírej houby - tyhle vìci mùeš prodat tady v táboøe.
+		AI_Output (self, other,"DIA_Graham_SellMap_Pay_NoOre_02_00"); //NapÅ™ed mi dej nÄ›jakou rudu. Ulov zvÄ›Å™ nebo nasbÃ­rej houby - tyhle vÄ›ci mÅ¯Å¾eÅ¡ prodat tady v tÃ¡boÅ™e.
 	};
 };
 
 func void DIA_Graham_SellMap_AufsMaul()
 {
-	AI_Output (other, self,"DIA_Graham_SellMap_AufsMaul_15_00"); //Dej mi tu mapu nebo si ji vezmu sám!
-	AI_Output (self, other,"DIA_Graham_SellMap_AufsMaul_02_01"); //Hej, opatrnì, hochu. Nechci problémy. Tady si vezmi tu mapu a dej mi pokoj!
+	AI_Output (other, self,"DIA_Graham_SellMap_AufsMaul_15_00"); //Dej mi tu mapu nebo si ji vezmu sÃ¡m!
+	AI_Output (self, other,"DIA_Graham_SellMap_AufsMaul_02_01"); //Hej, opatrnÄ›, hochu. Nechci problÃ©my. Tady si vezmi tu mapu a dej mi pokoj!
 	B_GiveInvItems(self, other, ItWrOMmap, 1);
 	Info_ClearChoices	(DIA_Graham_SellMap );
 	Npc_SetPermAttitude(self,ATT_ANGRY);
@@ -121,9 +121,9 @@ func void DIA_Graham_SellMap_AufsMaul()
 
 func void DIA_Graham_SellMap_GiveNotSell()
 {
-	AI_Output (other, self,"DIA_Graham_SellMap_GiveNotSell_15_00"); //Zadr, Diego øekl, e bys mi mìl tu mapu DÁT, ne, e bys mi ji mìl prodat.
-	AI_Output (self, other,"DIA_Graham_SellMap_GiveNotSell_02_01"); //To mì ale nezajímá! Máš vùbec pøedstavu, jak obtíné je takovouhle mapu sestrojit?
-	AI_Output (self, other,"DIA_Graham_SellMap_GiveNotSell_02_02"); //20 je má speciální cena pro Diegovy pøátele. Obvykle beru 50.
+	AI_Output (other, self,"DIA_Graham_SellMap_GiveNotSell_15_00"); //ZadrÅ¾, Diego Å™ekl, Å¾e bys mi mÄ›l tu mapu DÃT, ne, Å¾e bys mi ji mÄ›l prodat.
+	AI_Output (self, other,"DIA_Graham_SellMap_GiveNotSell_02_01"); //To mÄ› ale nezajÃ­mÃ¡! MÃ¡Å¡ vÅ¯bec pÅ™edstavu, jak obtÃ­Å¾nÃ© je takovouhle mapu sestrojit?
+	AI_Output (self, other,"DIA_Graham_SellMap_GiveNotSell_02_02"); //20 je mÃ¡ speciÃ¡lnÃ­ cena pro Diegovy pÅ™Ã¡tele. Obvykle beru 50.
 };
 
 
@@ -134,7 +134,7 @@ INSTANCE DIA_Graham_BuyMaps (C_INFO)
 	condition	= DIA_Graham_BuyMaps_Condition;
 	information	= DIA_Graham_BuyMaps_Info;
 	permanent	= 1;
-	description = "Chtìl bych koupit mapu.";
+	description = "ChtÄ›l bych koupit mapu.";
 	Trade 		= 1;
 };                       
 
@@ -148,8 +148,8 @@ FUNC INT DIA_Graham_BuyMaps_Condition()
 
 FUNC VOID DIA_Graham_BuyMaps_Info()
 {	
-	AI_Output (other, self,"DIA_Graham_BuyMaps_15_00"); //Chtìl bych koupit mapu.
-	AI_Output (self, other,"DIA_Graham_BuyMaps_02_01"); //Jistì... Jakou máš na mysli? Èím více toho na mapì vidíš, tím je draší.
+	AI_Output (other, self,"DIA_Graham_BuyMaps_15_00"); //ChtÄ›l bych koupit mapu.
+	AI_Output (self, other,"DIA_Graham_BuyMaps_02_01"); //JistÄ›... Jakou mÃ¡Å¡ na mysli? ÄŒÃ­m vÃ­ce toho na mapÄ› vidÃ­Å¡, tÃ­m je draÅ¾Å¡Ã­.
 };
 
 

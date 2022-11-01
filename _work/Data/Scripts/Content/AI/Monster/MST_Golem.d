@@ -82,7 +82,7 @@ func void Set_IceGolem_Visuals()
 
 INSTANCE StoneGolem	(Mst_Default_Golem)
 {
-	name	=	"Kamenný golem";
+	name	=	"KamennÃ½ golem";
 	aivar[AIV_MM_REAL_ID]			= 	ID_STONEGOLEM;
 	protection	[PROT_BLUNT]		=	75;
 //--------------------------------------------
@@ -121,7 +121,7 @@ INSTANCE SummonedByPC_StoneGolem (Mst_Default_Golem)
 INSTANCE SummonedByNPC_StoneGolem (Mst_Default_Golem)
 {
 	//-------- general --------
-	name	=	"Kamenný golem";
+	name	=	"KamennÃ½ golem";
 	aivar[AIV_MM_REAL_ID]			= 	ID_STONEGOLEM;
 
 	//-------- visual --------
@@ -142,7 +142,7 @@ INSTANCE SummonedByNPC_StoneGolem (Mst_Default_Golem)
 INSTANCE FireGolem	(Mst_Default_Golem)
 {
 	//-------- general --------
-	name	=	"Ohnivý golem";
+	name	=	"OhnivÃ½ golem";
 	aivar		[AIV_MM_REAL_ID]	= 	ID_FIREGOLEM;
 
 	//-------- visual --------
@@ -152,7 +152,7 @@ INSTANCE FireGolem	(Mst_Default_Golem)
 	//-------- attributes --------
 	attribute	[ATR_STRENGTH]		=	50;	// da Feuerschaden
 	protection	[PROT_MAGIC]		=	0;	// betrifft im wesentlichen die Blitz- und Eiszauber
-	attribute	[ATR_HITPOINTS_MAX]	=	150;// da er nur durch Blitz- und Eiszauber verwundbar ist, muß dieser Wert hier sehr viel niedriger sein 
+	attribute	[ATR_HITPOINTS_MAX]	=	150;// da er nur durch Blitz- und Eiszauber verwundbar ist, muÃŸ dieser Wert hier sehr viel niedriger sein 
 	attribute	[ATR_HITPOINTS]		=	150;
 	damagetype 						=	DAM_FIRE;
 
@@ -169,7 +169,7 @@ INSTANCE FireGolem	(Mst_Default_Golem)
 INSTANCE IceGolem	(Mst_Default_Golem)
 {
 	//-------- general --------
-	name	=	"Ledový Golem";
+	name	=	"LedovÃ½ Golem";
 	aivar[AIV_MM_REAL_ID]			= 	ID_ICEGOLEM;
 
 	//-------- visual --------
@@ -195,7 +195,7 @@ INSTANCE IceGolem	(Mst_Default_Golem)
 /*************************************************************************
 **	Bridge Golem   														**
 *************************************************************************/
-// bewacht die Brücke zur Bergfestung
+// bewacht die BrÃ¼cke zur Bergfestung
 // Hinweis im Spiel: sollte mit Keulenwaffen bezwungen werden!
 INSTANCE BridgeGolem	(Mst_Default_Golem)
 {

@@ -34,7 +34,7 @@ instance  DIA_Darrion_Hello (C_INFO)
 	condition	= DIA_Darrion_Hello_Condition;
 	information	= DIA_Darrion_Hello_Info;
 	permanent	= 0;
-	description	= "Zdar - jsem tady novı a chtìl bych se nìco dovìdìt o táboøe.";
+	description	= "Zdar - jsem tady novÃ½ a chtÄ›l bych se nÄ›co dovÄ›dÄ›t o tÃ¡boÅ™e.";
 };                       
 
 FUNC int  DIA_Darrion_Hello_Condition()
@@ -44,12 +44,12 @@ FUNC int  DIA_Darrion_Hello_Condition()
 
 FUNC VOID  DIA_Darrion_Hello_Info()
 {
-	AI_Output (other, self,"DIA_Darrion_Hello_15_00"); //Zdar - jsem tady novı a chtìl bych se nìco dovìdìt o táboru.
-	AI_Output (self, other,"DIA_Darrion_Hello_11_01"); //Pak jsi pøišel na špatné místo. Od té doby, co se templáøi zaèali pøipravovat k boji, tu máme ve dne v noci napilno.
-	AI_Output (self, other,"DIA_Darrion_Hello_11_02"); //Nemám moc èasu na otázky. Tak mì nevyrušuj - pokud si nechceš nìco koupit.
+	AI_Output (other, self,"DIA_Darrion_Hello_15_00"); //Zdar - jsem tady novÃ½ a chtÄ›l bych se nÄ›co dovÄ›dÄ›t o tÃ¡boru.
+	AI_Output (self, other,"DIA_Darrion_Hello_11_01"); //Pak jsi pÅ™iÅ¡el na Å¡patnÃ© mÃ­sto. Od tÃ© doby, co se templÃ¡Å™i zaÄali pÅ™ipravovat k boji, tu mÃ¡me ve dne v noci napilno.
+	AI_Output (self, other,"DIA_Darrion_Hello_11_02"); //NemÃ¡m moc Äasu na otÃ¡zky. Tak mÄ› nevyruÅ¡uj - pokud si nechceÅ¡ nÄ›co koupit.
 	
 	Log_CreateTopic	(GE_TraderPSI,	LOG_NOTE);
-	B_LogEntry		(GE_TraderPSI,"Novic Darrion obchoduje se ZBRANÌMI. Tráví vìtšinu èasu v kovárnì.");
+	B_LogEntry		(GE_TraderPSI,"Novic Darrion obchoduje se ZBRANÄšMI. TrÃ¡vÃ­ vÄ›tÅ¡inu Äasu v kovÃ¡rnÄ›.");
 };
 
 // **************************************************
@@ -63,7 +63,7 @@ instance  DIA_Darrion_Trade (C_INFO)
 	condition	= DIA_Darrion_Trade_Condition;
 	information	= DIA_Darrion_Trade_Info;
 	permanent	= 1;
-	description	= "Chtìl bych s tebou obchodovat!";
+	description	= "ChtÄ›l bych s tebou obchodovat!";
 	trade 		= 1;
 };                       
 
@@ -77,8 +77,8 @@ FUNC int  DIA_Darrion_Trade_Condition()
 
 FUNC VOID  DIA_Darrion_Trade_Info()
 {
-	AI_Output (other, self,"DIA_Darrion_Trade_15_00"); //Chtìl bych s tebou obchodovat!
-	AI_Output (self, other,"DIA_Darrion_Trade_11_01"); //Dobøe! Tady - to jsou zbranì, které mám zrovna k dispozici.
+	AI_Output (other, self,"DIA_Darrion_Trade_15_00"); //ChtÄ›l bych s tebou obchodovat!
+	AI_Output (self, other,"DIA_Darrion_Trade_11_01"); //DobÅ™e! Tady - to jsou zbranÄ›, kterÃ© mÃ¡m zrovna k dispozici.
 
 	if	(Npc_HasItems(self,ItMiSwordRaw		) < 5)		{	CreateInvItems(self,ItMiSwordRaw,		5);	};
 	if	(Npc_HasItems(self,ItMiSwordRawHot	) < 5)		{	CreateInvItems(self,ItMiSwordRawHot,	5);	};

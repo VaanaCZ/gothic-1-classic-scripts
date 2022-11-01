@@ -45,7 +45,7 @@ FUNC INT DIA_YBerion_Wache_Condition()
 
 FUNC VOID DIA_YBerion_Wache_Info()
 {	
-	AI_Output			(self,	other,"DIA_YBerion_Wache_12_00"); //Co tady dÏl·ö? Kdo tÏ sem pustil? Str·ûe!
+	AI_Output			(self,	other,"DIA_YBerion_Wache_12_00"); //Co tady dƒõl√°≈°? Kdo tƒõ sem pustil? Str√°≈æe!
 	B_IntruderAlert		(self,	other);
 	AI_StopProcessInfos	(self);
 };
@@ -59,7 +59,7 @@ INSTANCE DIA_YBerion_Kennen(C_INFO)
 	condition	= DIA_YBerion_Kennen_Condition;
 	information	= DIA_YBerion_Kennen_Info;
 	permanent	= 0;
-	description = "BuÔ pozdraven, mist¯e Y¥Berione.";
+	description = "Buƒè pozdraven, mist≈ôe Y¬¥Berione.";
 };                       
 
 FUNC INT DIA_YBerion_Kennen_Condition()
@@ -72,10 +72,10 @@ FUNC INT DIA_YBerion_Kennen_Condition()
 
 FUNC VOID DIA_YBerion_Kennen_Info()
 {	
-	AI_Output (other, self,"DIA_YBerion_Kennen_15_00"); //BuÔ pozdraven, mist¯e Y¥Berione.
-	AI_Output (self, other,"DIA_YBerion_Kennen_12_01"); //Ach! Tuhle tv·¯ zn·m!
-	AI_Output (other, self,"DIA_YBerion_Kennen_15_02"); //VylouËeno. Nikdy jsme se nevidÏli.
-	AI_Output (self, other,"DIA_YBerion_Kennen_12_03"); //Ale p¯ece... Dob¯e - co chceö?
+	AI_Output (other, self,"DIA_YBerion_Kennen_15_00"); //Buƒè pozdraven, mist≈ôe Y¬¥Berione.
+	AI_Output (self, other,"DIA_YBerion_Kennen_12_01"); //Ach! Tuhle tv√°≈ô zn√°m!
+	AI_Output (other, self,"DIA_YBerion_Kennen_15_02"); //Vylouƒçeno. Nikdy jsme se nevidƒõli.
+	AI_Output (self, other,"DIA_YBerion_Kennen_12_03"); //Ale p≈ôece... Dob≈ôe - co chce≈°?
 };
 
 
@@ -88,7 +88,7 @@ INSTANCE Info_YBerion_BringFocus (C_INFO)
 	condition	= Info_YBerion_BringFocus_Condition;
 	information	= Info_YBerion_BringFocus_Info;
 	permanent	= 1;
-	description = "Slyöel jsem, ûe nÏco hled·ö.";
+	description = "Sly≈°el jsem, ≈æe nƒõco hled√°≈°.";
 };
 
 
@@ -105,16 +105,16 @@ FUNC INT Info_YBerion_BringFocus_Condition()
 
 FUNC VOID Info_YBerion_BringFocus_Info()
 {
-	AI_Output (other, self,"Sit_2_PSI_Yberion_BringFocus_Info_15_01"); //Slyöel jsem, ûe nÏco hled·ö.
-	AI_Output (self, other,"Sit_2_PSI_Yberion_BringFocus_Info_12_02"); //To je pravda. Pot¯ebujeme kouzelnÈ ohnisko.
-	AI_Output (self, other,"Sit_2_PSI_Yberion_BringFocus_Info_12_03"); //Poslali jsme novice Nyrase, aby ho p¯inesl. JeötÏ se ale nevr·til.
-	AI_Output (self, other,"Sit_2_PSI_Yberion_BringFocus_Info_12_04"); //Mohl bys pro mÏ vyp·trat, co se stalo.
+	AI_Output (other, self,"Sit_2_PSI_Yberion_BringFocus_Info_15_01"); //Sly≈°el jsem, ≈æe nƒõco hled√°≈°.
+	AI_Output (self, other,"Sit_2_PSI_Yberion_BringFocus_Info_12_02"); //To je pravda. Pot≈ôebujeme kouzeln√© ohnisko.
+	AI_Output (self, other,"Sit_2_PSI_Yberion_BringFocus_Info_12_03"); //Poslali jsme novice Nyrase, aby ho p≈ôinesl. Je≈°tƒõ se ale nevr√°til.
+	AI_Output (self, other,"Sit_2_PSI_Yberion_BringFocus_Info_12_04"); //Mohl bys pro mƒõ vyp√°trat, co se stalo.
 	
 	Info_ClearChoices	(Info_YBerion_BringFocus);
 	Info_AddChoice		(Info_YBerion_BringFocus,DIALOG_BACK							,	Info_YBerion_BringFocus_BACK);
-	Info_AddChoice		(Info_YBerion_BringFocus,"P¯inesu to ohnisko zp·tky!",	Info_YBerion_BringFocus_OK);
-	Info_AddChoice		(Info_YBerion_BringFocus,"Kde m·m zaËÌt p·trat?",	Info_YBerion_BringFocus_WO);
-	Info_AddChoice		(Info_YBerion_BringFocus,"ProË je to ohnisko tak d˘leûitÈ?",	Info_YBerion_BringFocus_FOKUS);
+	Info_AddChoice		(Info_YBerion_BringFocus,"P≈ôinesu to ohnisko zp√°tky!",	Info_YBerion_BringFocus_OK);
+	Info_AddChoice		(Info_YBerion_BringFocus,"Kde m√°m zaƒç√≠t p√°trat?",	Info_YBerion_BringFocus_WO);
+	Info_AddChoice		(Info_YBerion_BringFocus,"Proƒç je to ohnisko tak d≈Øle≈æit√©?",	Info_YBerion_BringFocus_FOKUS);
 };
 
 func void Info_YBerion_BringFocus_BACK ()
@@ -124,28 +124,28 @@ func void Info_YBerion_BringFocus_BACK ()
 
 func void Info_YBerion_BringFocus_OK ()
 {
-	AI_Output			(other, self,"Sit_2_PSI_Yberion_BringFocus_OK_15_01"); //P¯inesu to ohnisko zp·tky!
-	AI_Output			(self, other,"Sit_2_PSI_Yberion_BringFocus_OK_12_02"); //Vem si tuhle mapu! Je na nÌ vyznaËena poloha ohniska.
+	AI_Output			(other, self,"Sit_2_PSI_Yberion_BringFocus_OK_15_01"); //P≈ôinesu to ohnisko zp√°tky!
+	AI_Output			(self, other,"Sit_2_PSI_Yberion_BringFocus_OK_12_02"); //Vem si tuhle mapu! Je na n√≠ vyznaƒçena poloha ohniska.
 
 	B_Story_BringFirstFocus();
 
-	B_LogEntry		(CH2_Focus,"Y¥Berion vyslal novice Nyrase, aby p¯inesl magickÈ ohnisko, ten se vöak jeötÏ nevr·til. Guru mi dal mapu s vyznaËenou cestou k ohnisku.");
+	B_LogEntry		(CH2_Focus,"Y¬¥Berion vyslal novice Nyrase, aby p≈ôinesl magick√© ohnisko, ten se v≈°ak je≈°tƒõ nevr√°til. Guru mi dal mapu s vyznaƒçenou cestou k ohnisku.");
 };
 
 func void Info_YBerion_BringFocus_WO ()
 {
-	AI_Output			(other, self,"Sit_2_PSI_Yberion_BringFocus_WO_15_01"); //Kde m·m zaËÌt p·trat?
-	AI_Output			(self, other,"Sit_2_PSI_Yberion_BringFocus_WO_12_02"); //Vyjdi z t·bora, dej se doprava a pak nahoru na vysok˝ ˙tes. Pak pokraËuj lesem, dokud neuvidÌö mo¯e. Tam to ohnisko najdeö.
+	AI_Output			(other, self,"Sit_2_PSI_Yberion_BringFocus_WO_15_01"); //Kde m√°m zaƒç√≠t p√°trat?
+	AI_Output			(self, other,"Sit_2_PSI_Yberion_BringFocus_WO_12_02"); //Vyjdi z t√°bora, dej se doprava a pak nahoru na vysok√Ω √∫tes. Pak pokraƒçuj lesem, dokud neuvid√≠≈° mo≈ôe. Tam to ohnisko najde≈°.
 };
 
 func void Info_YBerion_BringFocus_FOKUS ()
 {
-	AI_Output			(other, self,"Sit_2_PSI_Yberion_BringFocus_FOKUS_15_01"); //ProË je to ohnisko tak d˘leûitÈ?
-	AI_Output			(self, other,"Sit_2_PSI_Yberion_BringFocus_FOKUS_12_02"); //Je to magick˝ p¯edmÏt, kter˝ soust¯eÔuje naöi duchovnÌ sÌlu.
-	AI_Output			(self, other,"Sit_2_PSI_Yberion_BringFocus_FOKUS_12_03"); //Je to jeden z pÏti ohniskov˝ch kamen˘, kterÈ pouûili m·govÈ ke vztyËenÌ BariÈry.
-	AI_Output			(self, other,"Sit_2_PSI_Yberion_BringFocus_FOKUS_12_04"); //V jednÈ vidinÏ jsem vidÏl, jak vyuûÌv·me sÌlu toho ohniska.
-	AI_Output			(other, self,"Sit_2_PSI_Yberion_BringFocus_FOKUS_15_05"); //To byla docela zajÌmav· vidina.
-	AI_Output			(self, other,"Sit_2_PSI_Yberion_BringFocus_FOKUS_12_06"); //Moje vidina byla znamenÌm od Sp·Ëe. M˘ûeme k nÏmu dojÌt pomocÌ toho ohniska!
+	AI_Output			(other, self,"Sit_2_PSI_Yberion_BringFocus_FOKUS_15_01"); //Proƒç je to ohnisko tak d≈Øle≈æit√©?
+	AI_Output			(self, other,"Sit_2_PSI_Yberion_BringFocus_FOKUS_12_02"); //Je to magick√Ω p≈ôedmƒõt, kter√Ω soust≈ôeƒèuje na≈°i duchovn√≠ s√≠lu.
+	AI_Output			(self, other,"Sit_2_PSI_Yberion_BringFocus_FOKUS_12_03"); //Je to jeden z pƒõti ohniskov√Ωch kamen≈Ø, kter√© pou≈æili m√°gov√© ke vztyƒçen√≠ Bari√©ry.
+	AI_Output			(self, other,"Sit_2_PSI_Yberion_BringFocus_FOKUS_12_04"); //V jedn√© vidinƒõ jsem vidƒõl, jak vyu≈æ√≠v√°me s√≠lu toho ohniska.
+	AI_Output			(other, self,"Sit_2_PSI_Yberion_BringFocus_FOKUS_15_05"); //To byla docela zaj√≠mav√° vidina.
+	AI_Output			(self, other,"Sit_2_PSI_Yberion_BringFocus_FOKUS_12_06"); //Moje vidina byla znamen√≠m od Sp√°ƒçe. M≈Ø≈æeme k nƒõmu doj√≠t pomoc√≠ toho ohniska!
 };
 
 // ------------------------------ RUNNING ----------------------------------
@@ -156,7 +156,7 @@ INSTANCE Info_YBerion_BringFocus_RUNNING (C_INFO)
 	condition	= Info_YBerion_BringFocus_RUNNING_Condition;
 	information	= Info_YBerion_BringFocus_RUNNING_Info;
 	permanent	= 0;
-	description	= "Po¯·d to ohnisko nem˘ûu najÌt.";
+	description	= "Po≈ô√°d to ohnisko nem≈Ø≈æu naj√≠t.";
 };                       
 
 FUNC INT Info_YBerion_BringFocus_RUNNING_Condition()
@@ -169,8 +169,8 @@ FUNC INT Info_YBerion_BringFocus_RUNNING_Condition()
 
 FUNC VOID Info_YBerion_BringFocus_RUNNING_Info()
 {	
-	AI_Output (other, self,"Info_YBerion_BringFocus_RUNNING_15_01"); //Po¯·d to ohnisko nem˘ûu najÌt.
-	AI_Output (self, other,"Info_YBerion_BringFocus_RUNNING_12_02"); //Tak hledej. Sp·Ë tÏ povede.
+	AI_Output (other, self,"Info_YBerion_BringFocus_RUNNING_15_01"); //Po≈ô√°d to ohnisko nem≈Ø≈æu naj√≠t.
+	AI_Output (self, other,"Info_YBerion_BringFocus_RUNNING_12_02"); //Tak hledej. Sp√°ƒç tƒõ povede.
 };
 
 // ------------------------------ SUCCESS ----------------------------------
@@ -181,7 +181,7 @@ INSTANCE Info_YBerion_BringFocus_Success (C_INFO)
 	condition	= Info_YBerion_BringFocus_Success_Condition;
 	information	= Info_YBerion_BringFocus_Success_Info;
 	permanent	= 0;
-	description	= "Naöel jsem to ohnisko.";
+	description	= "Na≈°el jsem to ohnisko.";
 };                       
 
 FUNC INT Info_YBerion_BringFocus_Success_Condition()
@@ -194,22 +194,22 @@ FUNC INT Info_YBerion_BringFocus_Success_Condition()
 
 FUNC VOID Info_YBerion_BringFocus_Success_Info()
 {	
-	AI_Output			(other, self,"Info_YBerion_BringFocus_Success_15_01"); //Naöel jsem to ohnisko.
-	AI_Output			(self, other,"Info_YBerion_BringFocus_Success_12_02"); //V˝bornÏ. NesmÌrnÏ jsi n·m pomohl.
-	AI_Output			(self, other,"Info_YBerion_BringFocus_Success_12_03"); //TeÔ dej to ohnisko zp·tky Corovi Kalomovi. Ten vÌ, co je t¯eba udÏlat.
+	AI_Output			(other, self,"Info_YBerion_BringFocus_Success_15_01"); //Na≈°el jsem to ohnisko.
+	AI_Output			(self, other,"Info_YBerion_BringFocus_Success_12_02"); //V√Ωbornƒõ. Nesm√≠rnƒõ jsi n√°m pomohl.
+	AI_Output			(self, other,"Info_YBerion_BringFocus_Success_12_03"); //Teƒè dej to ohnisko zp√°tky Corovi Kalomovi. Ten v√≠, co je t≈ôeba udƒõlat.
 	if	(Kalom_TalkedTo == FALSE)
 	{
 		AI_Output		(other, self,"Info_YBerion_BringFocus_Success_15_04"); //Kde najdu toho Cora Kaloma?
-		AI_Output		(self, other,"Info_YBerion_BringFocus_Success_12_05"); //VÏtöinu Ëasu tr·vÌ ve svÈ alchymistickÈ dÌlnÏ v hornÌ sekci m˘stk˘.
-		AI_Output		(self, other,"Info_YBerion_BringFocus_Success_12_06"); //Zeptej se u vchodu do t·bora Lestera... ten Ëasto prov·dÌ nov·Ëky po t·boru.
-		B_LogEntry		(CH2_Focus,"Y¥Berion mi ¯ekl, abych to ohnisko p¯edal dalöÌmu guru jmÈnem Cor Kalom. Cor Kalom tr·vÌ celÈ dny ve svÈ alchymistickÈ dÌlnÏ."); 
+		AI_Output		(self, other,"Info_YBerion_BringFocus_Success_12_05"); //Vƒõt≈°inu ƒçasu tr√°v√≠ ve sv√© alchymistick√© d√≠lnƒõ v horn√≠ sekci m≈Østk≈Ø.
+		AI_Output		(self, other,"Info_YBerion_BringFocus_Success_12_06"); //Zeptej se u vchodu do t√°bora Lestera... ten ƒçasto prov√°d√≠ nov√°ƒçky po t√°boru.
+		B_LogEntry		(CH2_Focus,"Y¬¥Berion mi ≈ôekl, abych to ohnisko p≈ôedal dal≈°√≠mu guru jm√©nem Cor Kalom. Cor Kalom tr√°v√≠ cel√© dny ve sv√© alchymistick√© d√≠lnƒõ."); 
 	}
 	else
 	{
-		B_LogEntry		(CH2_Focus,"Y¥Berion mi ¯ekl, abych to ohnisko p¯edal  Cor Kalomovi. JakÈ potÏöenÌ, shledat se zase s tÌm p¯Ìjemn˝m chlapÌkem.");
+		B_LogEntry		(CH2_Focus,"Y¬¥Berion mi ≈ôekl, abych to ohnisko p≈ôedal  Cor Kalomovi. Jak√© potƒõ≈°en√≠, shledat se zase s t√≠m p≈ô√≠jemn√Ωm chlap√≠kem.");
 	};
 
-	Tpl_1406_Templer.aivar[AIV_PASSGATE] = TRUE;		//T¸rwache vor dem Labor
+	Tpl_1406_Templer.aivar[AIV_PASSGATE] = TRUE;		//T√ºrwache vor dem Labor
 
 	YBerion_BringFocus = LOG_SUCCESS;
 	B_GiveXP			(XP_BringFocusToYBerion);
@@ -223,7 +223,7 @@ INSTANCE Info_YBerion_NYRAS (C_INFO)
 	condition	= Info_YBerion_NYRAS_Condition;
 	information	= Info_YBerion_NYRAS_Info;
 	permanent	= 0;
-	description	= "Novic Nyras zeöÌlel!";
+	description	= "Novic Nyras ze≈°√≠lel!";
 };                       
 
 FUNC INT Info_YBerion_NYRAS_Condition()
@@ -236,11 +236,11 @@ FUNC INT Info_YBerion_NYRAS_Condition()
 
 FUNC VOID Info_YBerion_NYRAS_Info()
 {	
-	AI_Output			(other, self,"Info_YBerion_NYRAS_15_01"); //Novic Nyras zeöÌlel!
-	AI_Output			(other, self,"Info_YBerion_NYRAS_15_02"); //ÿÌkal, ûe mluvil se Sp·Ëem, kter˝ si ho zvolil za svÈho pomocnÌka!
-	AI_Output			(other, self,"Info_YBerion_NYRAS_15_03"); //Pak mÏ napadl a pokusil se mÏ zabÌt!
-	AI_Output			(self, other,"Info_YBerion_NYRAS_12_04"); //Sp·Ëova moc je tak nesmÌrn·, ûe nep¯ipravenÈ duöe p¯ivede k zoufalstvÌ!
-	AI_Output			(self, other,"Info_YBerion_NYRAS_12_05"); //Jenom my, Guru, jsme lÈty str·ven˝mi v meditacÌch dos·hli takovÈ duchovnÌ sÌly, kter· dok·ûe unÈst sÌlu hlasu vöemohoucÌho Sp·Ëe!
+	AI_Output			(other, self,"Info_YBerion_NYRAS_15_01"); //Novic Nyras ze≈°√≠lel!
+	AI_Output			(other, self,"Info_YBerion_NYRAS_15_02"); //≈ò√≠kal, ≈æe mluvil se Sp√°ƒçem, kter√Ω si ho zvolil za sv√©ho pomocn√≠ka!
+	AI_Output			(other, self,"Info_YBerion_NYRAS_15_03"); //Pak mƒõ napadl a pokusil se mƒõ zab√≠t!
+	AI_Output			(self, other,"Info_YBerion_NYRAS_12_04"); //Sp√°ƒçova moc je tak nesm√≠rn√°, ≈æe nep≈ôipraven√© du≈°e p≈ôivede k zoufalstv√≠!
+	AI_Output			(self, other,"Info_YBerion_NYRAS_12_05"); //Jenom my, Guru, jsme l√©ty str√°ven√Ωmi v meditac√≠ch dos√°hli takov√© duchovn√≠ s√≠ly, kter√° dok√°≈æe un√©st s√≠lu hlasu v≈°emohouc√≠ho Sp√°ƒçe!
 };
 
 // ------------------------------ BELOHNUNG ----------------------------------
@@ -251,7 +251,7 @@ instance  GUR_1200_Yberion_EARN (C_INFO)
 	information		= GUR_1200_Yberion_EARN_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "A co takhle nÏjak· odmÏna?"; 
+	description		= "A co takhle nƒõjak√° odmƒõna?"; 
 };
 
 FUNC int  GUR_1200_Yberion_EARN_Condition()
@@ -264,9 +264,9 @@ FUNC int  GUR_1200_Yberion_EARN_Condition()
 };
 FUNC void  GUR_1200_Yberion_EARN_Info()
 {
-	AI_Output				(other, self,"GUR_1200_Yberion_EARN_Info_15_01"); //A co takhle nÏjakou odmÏnu?
-	AI_Output				(self, other,"GUR_1200_Yberion_EARN_Info_12_02"); //Protoûe nejsi Ëlenem naöeho Bratrstva, odmÏnÌm tÏ.
-	AI_Output				(self, other,"GUR_1200_Yberion_EARN_Info_12_03"); //Vezmi si tento amulet na znamenÌ mÈ vdÏËnosti.
+	AI_Output				(other, self,"GUR_1200_Yberion_EARN_Info_15_01"); //A co takhle nƒõjakou odmƒõnu?
+	AI_Output				(self, other,"GUR_1200_Yberion_EARN_Info_12_02"); //Proto≈æe nejsi ƒçlenem na≈°eho Bratrstva, odmƒõn√≠m tƒõ.
+	AI_Output				(self, other,"GUR_1200_Yberion_EARN_Info_12_03"); //Vezmi si tento amulet na znamen√≠ m√© vdƒõƒçnosti.
 	CreateInvItem	    (self, Schutzamulett_Feuer);
 	B_GiveInvItems	    (self, hero, Schutzamulett_Feuer, 1);
 };  
@@ -274,7 +274,7 @@ FUNC void  GUR_1200_Yberion_EARN_Info()
 
 
 //############################### KAPITEL 3 ###############################
-//SPIELER HAT DIE HEILKRƒUTER ZU COR ANGAR GEBRACHT
+//SPIELER HAT DIE HEILKR√ÑUTER ZU COR ANGAR GEBRACHT
 //YBERION WACHT AUF UND STIRBT
 /*
 instance GUR_1200_Yberion_LASTWORDS (C_INFO)
@@ -297,15 +297,15 @@ FUNC int GUR_1200_Yberion_LASTWORDS_Condition()
 };
 FUNC void  GUR_1200_Yberion_LASTWORDS_Info()
 {
-	AI_Output (self, other,"GUR_1200_Yberion_LASTWORDS_Info_12_01"); //Das Ende...der Schl‰fer...ich sah...IHN!
-	AI_Output (self, other,"GUR_1200_Yberion_LASTWORDS_Info_12_02"); //Wer...?...du bist es, gut. Hˆr mir zu....
-	AI_Output (self, other,"GUR_1200_Yberion_LASTWORDS_Info_12_03"); //Du darfst den Schl‰fer nicht wecken,... die Wassermagier, ...
+	AI_Output (self, other,"GUR_1200_Yberion_LASTWORDS_Info_12_01"); //Das Ende...der Schl√§fer...ich sah...IHN!
+	AI_Output (self, other,"GUR_1200_Yberion_LASTWORDS_Info_12_02"); //Wer...?...du bist es, gut. H√∂r mir zu....
+	AI_Output (self, other,"GUR_1200_Yberion_LASTWORDS_Info_12_03"); //Du darfst den Schl√§fer nicht wecken,... die Wassermagier, ...
 	AI_Output (other, self,"GUR_1200_Yberion_LASTWORDS_Info_15_04"); //Was ist mit den Wassermagiern?
 	AI_Output (self, other,"GUR_1200_Yberion_LASTWORDS_Info_12_05"); //Du musst zu den Wassermagiern gehen. Sie werden es schaffen, hier rauszukommen.
-	AI_Output (self, other,"GUR_1200_Yberion_LASTWORDS_Info_12_06"); //Der Schl‰fer...Ich sah ihn. Er ist ein ...ein ....D‰mon!
+	AI_Output (self, other,"GUR_1200_Yberion_LASTWORDS_Info_12_06"); //Der Schl√§fer...Ich sah ihn. Er ist ein ...ein ....D√§mon!
 	AI_Output (self, other,"GUR_1200_Yberion_LASTWORDS_Info_12_07"); //Wenn du die Barriere noch immer vernichten willst,... geh zum Neuen Lager. Berichte ihnen vom Fokus. Sag ihnen...
-	AI_Output (self, other,"GUR_1200_Yberion_LASTWORDS_Info_12_08"); //...sag ihnen das wir herausgefunden haben, wie sich die Foki aufladen lassen, sie sollen...sollen die Barriere vernichten......ihr m¸sst ....
-	AI_Output (self, other,"GUR_1200_Yberion_LASTWORDS_Info_12_09"); //...das Bˆse....darf nicht erwachen .... 
+	AI_Output (self, other,"GUR_1200_Yberion_LASTWORDS_Info_12_08"); //...sag ihnen das wir herausgefunden haben, wie sich die Foki aufladen lassen, sie sollen...sollen die Barriere vernichten......ihr m√ºsst ....
+	AI_Output (self, other,"GUR_1200_Yberion_LASTWORDS_Info_12_09"); //...das B√∂se....darf nicht erwachen .... 
 	
 	
 	

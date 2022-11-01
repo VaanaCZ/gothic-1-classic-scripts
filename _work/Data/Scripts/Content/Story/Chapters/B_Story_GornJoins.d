@@ -1,6 +1,6 @@
 func void B_Story_GornJoins()
 {
-	//-------- Missionsgegenstände --------
+	//-------- MissionsgegenstÃ¤nde --------
 	CreateInvItem		(hero, ItKe_Freemine);
 	
 	//-------- Monster platziern --------
@@ -11,14 +11,14 @@ func void B_Story_GornJoins()
 	Wld_InsertNpc		(Razor,	"OW_PATH_3001_MOVE4");
 	//Wld_InsertNpc		(Razor,	"OW_PATH_3001_MOVE4");
 
-	//-------- Tagesabläufe ändern --------
+	//-------- TagesablÃ¤ufe Ã¤ndern --------
 	var C_NPC gorn;	gorn = Hlp_GetNpc(PC_Fighter);	Npc_ExchangeRoutine(gorn,	"FollowToFMC");	
 	
 	//-------- Erfahrung --------
 	B_GiveXP			(XP_GornJoins);
 
-	//-------- Tagebucheinträge --------
-	B_LogEntry			(CH4_UluMulu,"Pøedpokládá se, e tajnou operací s Gornem získáme Svobodnı dùl zpìt. Skuteènost, e je zde skøetí Ur-Shakùv pøítel, je pøedzvìst toho, e se karta obrací."); 
+	//-------- TagebucheintrÃ¤ge --------
+	B_LogEntry			(CH4_UluMulu,"PÅ™edpoklÃ¡dÃ¡ se, Å¾e tajnou operacÃ­ s Gornem zÃ­skÃ¡me SvobodnÃ½ dÅ¯l zpÄ›t. SkuteÄnost, Å¾e je zde skÅ™etÃ­ Ur-ShakÅ¯v pÅ™Ã­tel, je pÅ™edzvÄ›st toho, Å¾e se karta obracÃ­."); 
 	
 	//-------- globale Variable setzen --------
 	gorn.aivar[AIV_PARTYMEMBER] = TRUE;

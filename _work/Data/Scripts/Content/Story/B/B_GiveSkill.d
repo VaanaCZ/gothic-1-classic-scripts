@@ -25,72 +25,72 @@ func int B_GiveSkill(var C_NPC typ, var int TAL, var int NEW_Wert, var int LP_Co
 			{	
 				Npc_SetTalentSkill(typ, NPC_TALENT_1H, NEW_Wert);
 				Npc_SetTalentValue(typ, NPC_TALENT_1H, Npc_GetTalentValue(typ, NPC_TALENT_1H)+5);
-				PrintScreen	("NauËil ses: bojovat s jednoruËnÌmi zbranÏmi", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
+				PrintScreen	("Nauƒçil ses: bojovat s jednoruƒçn√≠mi zbranƒõmi", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
 				return 1;
 			}
 			else if (tal == NPC_TALENT_2H)
 			{
 				Npc_SetTalentSkill(typ, NPC_TALENT_2H, NEW_Wert);
 				Npc_SetTalentValue(typ, NPC_TALENT_2H, Npc_GetTalentValue(typ, NPC_TALENT_2H)+5);
-				PrintScreen	("NauËil ses: bojovat s obouruËnÌmi zbranÏmi", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
+				PrintScreen	("Nauƒçil ses: bojovat s obouruƒçn√≠mi zbranƒõmi", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
 				return 1;
 			}
 			else if (tal == NPC_TALENT_BOW)
 			{
 				Npc_SetTalentSkill(typ, NPC_TALENT_BOW, NEW_Wert);
 				Npc_SetTalentValue(typ, NPC_TALENT_BOW, Npc_GetTalentValue(typ, NPC_TALENT_BOW)+15);
-				PrintScreen	("NauËil ses: st¯Ìlet z luku", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
+				PrintScreen	("Nauƒçil ses: st≈ô√≠let z luku", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
 				return 1;
 			}
 			else if (tal == NPC_TALENT_CROSSBOW)
 			{
 				Npc_SetTalentSkill(typ, NPC_TALENT_CROSSBOW, NEW_Wert);
 				Npc_SetTalentValue(typ, NPC_TALENT_CROSSBOW, Npc_GetTalentValue(typ, NPC_TALENT_CROSSBOW)+20);
-				PrintScreen	("NauËil ses: st¯Ìlet ze samost¯Ìlu", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
+				PrintScreen	("Nauƒçil ses: st≈ô√≠let ze samost≈ô√≠lu", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
 				return 1;
 			}
 			else if (tal == NPC_TALENT_PICKLOCK)
 			{
 				Npc_SetTalentSkill(typ, NPC_TALENT_PICKLOCK, NEW_Wert);
 				Npc_SetTalentValue(typ, NPC_TALENT_PICKLOCK, Npc_GetTalentValue(typ, NPC_TALENT_PICKLOCK)-40);
-				PrintScreen	("NauËil ses: otevÌrat z·mky", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
+				PrintScreen	("Nauƒçil ses: otev√≠rat z√°mky", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
 				return 1;
 			}
 			else if (tal == NPC_TALENT_PICKPOCKET)
 			{
 				Npc_SetTalentSkill(typ, NPC_TALENT_PICKPOCKET, NEW_Wert);
 				Npc_SetTalentValue(typ, NPC_TALENT_PICKPOCKET, Npc_GetTalentValue(typ, NPC_TALENT_PICKPOCKET)-40);
-				PrintScreen	("NauËil ses: vybÌrat kapsy", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
+				PrintScreen	("Nauƒçil ses: vyb√≠rat kapsy", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
 				return 1;
 			}
 			else if (tal == NPC_TALENT_MAGE)
 			{
 				Npc_SetTalentSkill(typ, NPC_TALENT_MAGE, NEW_Wert);
-				PrintScreen	("NauËil ses: dalöÌ kouzeln˝ kruh", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
+				PrintScreen	("Nauƒçil ses: dal≈°√≠ kouzeln√Ω kruh", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
 				return 1;
 			}
 			else if (tal == NPC_TALENT_SNEAK)
 			{
 				Npc_SetTalentSkill(typ, NPC_TALENT_SNEAK, NEW_Wert);
-				PrintScreen	("NauËil ses: plÌûit", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
+				PrintScreen	("Nauƒçil ses: pl√≠≈æit", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
 				return 1;
 			}
 			else if (tal == NPC_TALENT_REGENERATE)
 			{
 				Npc_SetTalentSkill(typ, NPC_TALENT_REGENERATE, NEW_Wert);
-				PrintScreen	("Zv˝öit stupeÚ regenerace", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
+				PrintScreen	("Zv√Ω≈°it stupe≈à regenerace", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
 				return 1;
 			}
 			else if (tal == NPC_TALENT_FIREMASTER)
 			{
 				Npc_SetTalentSkill(typ, NPC_TALENT_FIREMASTER, NEW_Wert);
-				PrintScreen	("VyuË se: mistrem ohnÏ", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
+				PrintScreen	("Vyuƒç se: mistrem ohnƒõ", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
 				return 1;
 			}
 			else if (tal == NPC_TALENT_ACROBAT)
 			{
 				Npc_SetTalentSkill(typ, NPC_TALENT_ACROBAT, NEW_Wert);
-				PrintScreen	("NauËil ses: akrobacii", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
+				PrintScreen	("Nauƒçil ses: akrobacii", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
 				return 1;
 			}
 			else
@@ -100,7 +100,7 @@ func int B_GiveSkill(var C_NPC typ, var int TAL, var int NEW_Wert, var int LP_Co
 		}
 		else 
 		{
-			PrintScreen	("Nedostatek zkuöenostnÌch bod˘!", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
+			PrintScreen	("Nedostatek zku≈°enostn√≠ch bod≈Ø!", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
 			B_Say (self, other, "$NOLEARNNOPOINTS");
 			return 0;
 		};
@@ -112,9 +112,9 @@ func int B_GiveSkill(var C_NPC typ, var int TAL, var int NEW_Wert, var int LP_Co
 			B_Say (self, other, "$NOLEARNYOUREBETTER"); //Du bist jetzt schon besser!
 			return 0;
 		}
-		else if ((TAL_Wert+1) < NEW_Wert) //d.h. i.d.R. TAL_Wert=2 und NEW_Wert=0, auﬂer bei TALENT_MAGE
+		else if ((TAL_Wert+1) < NEW_Wert) //d.h. i.d.R. TAL_Wert=2 und NEW_Wert=0, au√üer bei TALENT_MAGE
 		{
-			B_Say (self, other, "$NOLEARNYOUALREADYKNOW"); //Du muﬂt erst Fortgeschritten sein, bevor du ein Meister werden kannst!
+			B_Say (self, other, "$NOLEARNYOUALREADYKNOW"); //Du mu√üt erst Fortgeschritten sein, bevor du ein Meister werden kannst!
 			return 0;
 		};
 	};	

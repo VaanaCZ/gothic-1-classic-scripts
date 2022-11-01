@@ -26,7 +26,7 @@ FUNC VOID  Org_804_Organisator_Exit_Info()
 };
 
 // **************************************************
-//					Erste Begrüssung
+//					Erste BegrÃ¼ssung
 // **************************************************
 
 instance  Org_804_Organisator_Greet (C_INFO)
@@ -49,7 +49,7 @@ FUNC int  Org_804_Organisator_Greet_Condition()
 
 FUNC VOID  Org_804_Organisator_Greet_Info()
 {
-	AI_Output (self, other,"Org_804_Organisator_Greet_06_00"); //Tak kam jdeš?
+	AI_Output (self, other,"Org_804_Organisator_Greet_06_00"); //Tak kam jdeÅ¡?
 };
 
 // **************************************************
@@ -63,7 +63,7 @@ instance Org_804_Organisator_WayTo (C_INFO)
 	condition	= Org_804_Organisator_WayTo_Condition;
 	information	= Org_804_Organisator_WayTo_Info;
 	permanent	= 0;
-	description  = "Kam mùžu jít?";
+	description  = "Kam mÅ¯Å¾u jÃ­t?";
 };                       
 
 FUNC int Org_804_Organisator_WayTo_Condition()
@@ -73,7 +73,7 @@ FUNC int Org_804_Organisator_WayTo_Condition()
 
 FUNC VOID Org_804_Organisator_WayTo_Info()
 {
-	AI_Output (other, self,"Org_804_Organisator_WayTo_15_00"); //Kam MÙŽU jít?
+	AI_Output (other, self,"Org_804_Organisator_WayTo_15_00"); //Kam MÅ®Å½U jÃ­t?
 	AI_Output (self, other,"Org_804_Organisator_WayTo_06_01"); //K Laresovi.
 	var C_NPC Lares; Lares = Hlp_GetNpc(Org_801_Lares);
 	Lares.aivar[AIV_FINDABLE] = TRUE;
@@ -90,7 +90,7 @@ instance  Org_804_Organisator_ToLares (C_INFO)
 	condition	= Org_804_Organisator_ToLares_Condition;
 	information	= Org_804_Organisator_ToLares_Info;
 	permanent	= 0;
-	description  = "Chci vidìt Larese.";
+	description  = "Chci vidÄ›t Larese.";
 };                       
 
 FUNC int  Org_804_Organisator_ToLares_Condition()
@@ -103,10 +103,10 @@ FUNC int  Org_804_Organisator_ToLares_Condition()
 
 FUNC VOID  Org_804_Organisator_ToLares_Info()
 {
-	AI_Output (other, self,"Org_804_Organisator_ToLares_15_00"); //Chci vidìt Larese.
-	AI_Output (self, other,"Org_804_Organisator_ToLares_06_01"); //Pochybuji, že s tebou bude mluvit.
-	AI_Output (other, self,"Org_804_Organisator_ToLares_15_02"); //To nech na mnì.
-	AI_Output (self, other,"Org_804_Organisator_ToLares_06_03"); //Já tì zastavovat nebudu.
+	AI_Output (other, self,"Org_804_Organisator_ToLares_15_00"); //Chci vidÄ›t Larese.
+	AI_Output (self, other,"Org_804_Organisator_ToLares_06_01"); //Pochybuji, Å¾e s tebou bude mluvit.
+	AI_Output (other, self,"Org_804_Organisator_ToLares_15_02"); //To nech na mnÄ›.
+	AI_Output (self, other,"Org_804_Organisator_ToLares_06_03"); //JÃ¡ tÄ› zastavovat nebudu.
 	AI_StopProcessInfos	(self);
 };
 
@@ -121,7 +121,7 @@ instance  Org_804_Organisator_PERM (C_INFO)
 	condition	= Org_804_Organisator_PERM_Condition;
 	information	= Org_804_Organisator_PERM_Info;
 	permanent	= 1;
-	description  = "Mùžu vidìt Larese?";
+	description  = "MÅ¯Å¾u vidÄ›t Larese?";
 };                       
 
 FUNC int  Org_804_Organisator_PERM_Condition()
@@ -134,7 +134,7 @@ FUNC int  Org_804_Organisator_PERM_Condition()
 
 FUNC VOID  Org_804_Organisator_PERM_Info()
 {
-	AI_Output (other, self,"Org_804_Organisator_PERM_15_00"); //Mùžu vidìt Larese?
+	AI_Output (other, self,"Org_804_Organisator_PERM_15_00"); //MÅ¯Å¾u vidÄ›t Larese?
 	AI_Output (self, other,"Org_804_Organisator_PERM_06_01"); //Prober to s Roscoem.
 	AI_StopProcessInfos	(self);
 };
@@ -175,7 +175,7 @@ func void Info_Org_804_FirstWarn_Info()
 {
 	PrintGlobals	(PD_MISSION);
 
-	AI_Output (self, hero,"Info_Org_804_FirstWarn_Info_06_00"); //Gomezovi služebníci se sem nedostanou! Jdi!
+	AI_Output (self, hero,"Info_Org_804_FirstWarn_Info_06_00"); //Gomezovi sluÅ¾ebnÃ­ci se sem nedostanou! Jdi!
 
 	hero.aivar[AIV_LASTDISTTOWP] 		= Npc_GetDistToWP(hero,Org_804_CHECKPOINT);
 	hero.aivar[AIV_GUARDPASSAGE_STATUS]	= AIV_GPS_FIRSTWARN;	
@@ -210,7 +210,7 @@ func int Info_Org_804_LastWarn_Condition()
 
 func int Info_Org_804_LastWarn_Info()
 {
-	AI_Output (self, hero,"Info_Org_804_LastWarn_06_00"); //Odejdi, dokud mùžeš!
+	AI_Output (self, hero,"Info_Org_804_LastWarn_06_00"); //Odejdi, dokud mÅ¯Å¾eÅ¡!
 
 	hero.aivar[AIV_LASTDISTTOWP] 		= Npc_GetDistToWP (hero,Org_804_CHECKPOINT);
 	hero.aivar[AIV_GUARDPASSAGE_STATUS]	= AIV_GPS_LASTWARN;	
@@ -250,7 +250,7 @@ func int Info_Org_804_Attack_Info()
 	hero.aivar[AIV_GUARDPASSAGE_STATUS]	= AIV_GPS_PUNISH;	
 	
 	B_FullStop			(self);	
-	AI_StopProcessInfos	(self);					// dem Spieler sofort wieder die Kontrolle zurückgeben
+	AI_StopProcessInfos	(self);					// dem Spieler sofort wieder die Kontrolle zurÃ¼ckgeben
 	B_IntruderAlert		(self,	other);
 	B_SetAttackReason	(self,	AIV_AR_INTRUDER);
 	Npc_SetTarget		(self,	hero);

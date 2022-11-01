@@ -43,7 +43,7 @@ FUNC int  Info_Corristo_Intruder_Condition()
 
 FUNC VOID  Info_Corristo_Intruder_Info()
 {
-	AI_Output			(self, other,"Info_Saturas_Intruder_14_00"); //Co tady dÏl·ö? Tady nem·ö co pohled·vat! Zmiz!
+	AI_Output			(self, other,"Info_Saturas_Intruder_14_00"); //Co tady dƒõl√°≈°? Tady nem√°≈° co pohled√°vat! Zmiz!
 
 	AI_StopProcessInfos	(self);
 };
@@ -54,7 +54,7 @@ FUNC VOID  Info_Corristo_Intruder_Info()
 
 
 //--------------------------------------------------------------------------
-// 							‹BER DIE MAGIER
+// 							√úBER DIE MAGIER
 //--------------------------------------------------------------------------
 instance  KDF_402_Corristo_EXPLAINMAGE (C_INFO)
 {
@@ -63,7 +63,7 @@ instance  KDF_402_Corristo_EXPLAINMAGE (C_INFO)
 	information		= KDF_402_Corristo_EXPLAINMAGE_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "ÿekni mi - jakÈ to je b˝t m·gem."; 
+	description		= "≈òekni mi - jak√© to je b√Ωt m√°gem."; 
 };
 
 FUNC int  KDF_402_Corristo_EXPLAINMAGE_Condition()
@@ -77,10 +77,10 @@ FUNC int  KDF_402_Corristo_EXPLAINMAGE_Condition()
 };
 FUNC void  KDF_402_Corristo_EXPLAINMAGE_Info()
 {
-	AI_Output (other, self,"KDF_402_Corristo_EXPLAINMAGE_Info_15_01"); //ÿekni mi - jakÈ to je, b˝t m·gem.
-	AI_Output (self, other,"KDF_402_Corristo_EXPLAINMAGE_Info_14_02"); //Jsme m·govÈ OhnÏ. Jsme sluûebnÌci Innose, nejvyööÌho ze vöech boh˘.
-	AI_Output (self, other,"KDF_402_Corristo_EXPLAINMAGE_Info_14_03"); //Naöe kouzla jsou dar boûÌ. Byli jsme zvoleni, abychom p˘sobili jako knÏûÌ, uËitelÈ a soudci.
-	AI_Output (self, other,"KDF_402_Corristo_EXPLAINMAGE_Info_14_04"); //Je to dar, kter˝ je naöÌm trval˝m b¯emenem. ⁄kolem, kter˝ urËuje naöe ûivoty.
+	AI_Output (other, self,"KDF_402_Corristo_EXPLAINMAGE_Info_15_01"); //≈òekni mi - jak√© to je, b√Ωt m√°gem.
+	AI_Output (self, other,"KDF_402_Corristo_EXPLAINMAGE_Info_14_02"); //Jsme m√°gov√© Ohnƒõ. Jsme slu≈æebn√≠ci Innose, nejvy≈°≈°√≠ho ze v≈°ech boh≈Ø.
+	AI_Output (self, other,"KDF_402_Corristo_EXPLAINMAGE_Info_14_03"); //Na≈°e kouzla jsou dar bo≈æ√≠. Byli jsme zvoleni, abychom p≈Øsobili jako knƒõ≈æ√≠, uƒçitel√© a soudci.
+	AI_Output (self, other,"KDF_402_Corristo_EXPLAINMAGE_Info_14_04"); //Je to dar, kter√Ω je na≈°√≠m trval√Ωm b≈ôemenem. √ökolem, kter√Ω urƒçuje na≈°e ≈æivoty.
 };  
 //--------------------------------------------------------------------------
 // 							MAGIERAUFNAHME
@@ -92,7 +92,7 @@ instance KDF_402_Corristo_WANNBEKDF (C_INFO)
 	information		= KDF_402_Corristo_WANNBEKDF_Info;
 	important		= 0;
 	permanent		= 1;
-	description     = "ChtÏl bych vstoupit do magickÈho Kruhu.";
+	description     = "Chtƒõl bych vstoupit do magick√©ho Kruhu.";
 };
 
 FUNC int  KDF_402_Corristo_WANNBEKDF_Condition()
@@ -105,27 +105,27 @@ FUNC int  KDF_402_Corristo_WANNBEKDF_Condition()
 };
 func void  KDF_402_Corristo_WANNBEKDF_Info()
 {
-	AI_Output (other, self,"KDF_402_Corristo_WANNBEKDF_Info_15_01"); //ChtÏl bych vstoupit do magickÈho Kruhu.
-	AI_Output (self, other,"KDF_402_Corristo_WANNBEKDF_Info_14_02"); //Tak ty se chceö st·t m·gem Kruhu ohnÏ? Hm...
+	AI_Output (other, self,"KDF_402_Corristo_WANNBEKDF_Info_15_01"); //Chtƒõl bych vstoupit do magick√©ho Kruhu.
+	AI_Output (self, other,"KDF_402_Corristo_WANNBEKDF_Info_14_02"); //Tak ty se chce≈° st√°t m√°gem Kruhu ohnƒõ? Hm...
 
 	
 	if	(hero.level < 10)
 	{
-		AI_Output (self, other,"KDF_402_Corristo_WANNBEKDF_Info_14_04"); //JeötÏ nem·ö dostateËnÈ vÏdomosti. Vraù se, aû budeö zn·t vÌc.
+		AI_Output (self, other,"KDF_402_Corristo_WANNBEKDF_Info_14_04"); //Je≈°tƒõ nem√°≈° dostateƒçn√© vƒõdomosti. Vra≈• se, a≈æ bude≈° zn√°t v√≠c.
 		
 		AI_StopProcessInfos	( self );
 		B_PrintGuildCondition(10);
 	}
 	else
 	{
-		AI_Output (self, other,"KDF_402_Corristo_WANNBEKDF_Info_14_03"); //MnozÌ se k n·m chtÏli p¯idat, ale za ta lÈta jsem p¯ijal jen jedinÈho za svÈho uËednÌka. Vöichni ostatnÌ neuspÏli.
-		AI_Output (self, other,"KDF_402_Corristo_WANNBEKDF_Info_14_05"); //Tvoje duöe je vyzr·l· a p¯ipraven· se k n·m p¯idat. Jestli se chceö st·t m·gem, musÌm tÏ nejd¯Ìve vyzkouöet. ÿekni mi, aû budeö p¯ipraven na zkouöku.
+		AI_Output (self, other,"KDF_402_Corristo_WANNBEKDF_Info_14_03"); //Mnoz√≠ se k n√°m chtƒõli p≈ôidat, ale za ta l√©ta jsem p≈ôijal jen jedin√©ho za sv√©ho uƒçedn√≠ka. V≈°ichni ostatn√≠ neuspƒõli.
+		AI_Output (self, other,"KDF_402_Corristo_WANNBEKDF_Info_14_05"); //Tvoje du≈°e je vyzr√°l√° a p≈ôipraven√° se k n√°m p≈ôidat. Jestli se chce≈° st√°t m√°gem, mus√≠m tƒõ nejd≈ô√≠ve vyzkou≈°et. ≈òekni mi, a≈æ bude≈° p≈ôipraven na zkou≈°ku.
 		Corristo_KDFAufnahme = 1;
 		KDF_402_Corristo_WANNBEKDF.permanent = 0;
 		Info_ClearChoices (KDF_402_Corristo_WANNBEKDF);
 
 		Log_CreateTopic	(GE_BecomeFiremage,	LOG_NOTE);
-		B_LogEntry	(GE_BecomeFiremage,"Corristo mi ¯ekl, ûe mi dovolÌ p¯idat se ke Kruhu m·g˘ OhnÏ. Nejd¯Ìv vöak musÌm sloûit zkouöku.");
+		B_LogEntry	(GE_BecomeFiremage,"Corristo mi ≈ôekl, ≈æe mi dovol√≠ p≈ôidat se ke Kruhu m√°g≈Ø Ohnƒõ. Nejd≈ô√≠v v≈°ak mus√≠m slo≈æit zkou≈°ku.");
 	};
 };
 //--------------------------------------------------------------------------
@@ -138,7 +138,7 @@ instance  KDF_402_Corristo_KDFTEST (C_INFO)
 	information		= KDF_402_Corristo_KDFTEST_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Jsem p¯ipraven. Vyzkouöej mÏ."; 
+	description		= "Jsem p≈ôipraven. Vyzkou≈°ej mƒõ."; 
 };
 
 FUNC int  KDF_402_Corristo_KDFTEST_Condition()
@@ -151,8 +151,8 @@ FUNC int  KDF_402_Corristo_KDFTEST_Condition()
 };
 FUNC void  KDF_402_Corristo_KDFTEST_Info()
 {
-	AI_Output (other, self,"KDF_402_Corristo_KDFTEST_Info_15_01"); //Jsem p¯ipraven. Vyzkouöej mÏ.
-	AI_Output (self, other,"KDF_402_Corristo_KDFTEST_Info_14_02"); //Dob¯e. Slouûil jsi Bratrstvu u baûin, ûe ano?
+	AI_Output (other, self,"KDF_402_Corristo_KDFTEST_Info_15_01"); //Jsem p≈ôipraven. Vyzkou≈°ej mƒõ.
+	AI_Output (self, other,"KDF_402_Corristo_KDFTEST_Info_14_02"); //Dob≈ôe. Slou≈æil jsi Bratrstvu u ba≈æin, ≈æe ano?
 	Info_ClearChoices (KDF_402_Corristo_KDFTEST);
 	Info_Addchoice (KDF_402_Corristo_KDFTEST,"Ano.",KDF_402_Corristo_KDFTEST_JA); 
 	Info_Addchoice (KDF_402_Corristo_KDFTEST,"Ne",KDF_402_Corristo_KDFTEST_NO); 
@@ -162,11 +162,11 @@ FUNC VOID  KDF_402_Corristo_KDFTEST_JA()
 {
 	AI_Output (other, self,"KDF_402_Corristo_KDFTEST_JA_Info_15_01"); //Ano.
 	AI_Output (self, other,"KDF_402_Corristo_KDFTEST_JA_Info_14_02"); //Hmm...
-	AI_Output (self, other,"KDF_402_Corristo_KDFTEST_JA_Info_14_03"); //Jak se jmenuje n·ö b˘h?
+	AI_Output (self, other,"KDF_402_Corristo_KDFTEST_JA_Info_14_03"); //Jak se jmenuje n√°≈° b≈Øh?
 	Corristo_KDFAufnahme = 2;
 	Info_ClearChoices (KDF_402_Corristo_KDFTEST);
 	Info_Addchoice (KDF_402_Corristo_KDFTEST,"Adanos.",KDF_402_Corristo_KDFTEST_ADANOS); 
-	Info_Addchoice (KDF_402_Corristo_KDFTEST,"Sp·Ë.",KDF_402_Corristo_KDFTEST_SLEEPER);
+	Info_Addchoice (KDF_402_Corristo_KDFTEST,"Sp√°ƒç.",KDF_402_Corristo_KDFTEST_SLEEPER);
 	Info_Addchoice (KDF_402_Corristo_KDFTEST,"Innos.",KDF_402_Corristo_KDFTEST_INNOS); 
 	Info_Addchoice (KDF_402_Corristo_KDFTEST,"Gomez.",KDF_402_Corristo_KDFTEST_GOMEZ);
 };
@@ -175,8 +175,8 @@ FUNC VOID  KDF_402_Corristo_KDFTEST_NO()
 {
 	AI_Output (other, self,"KDF_402_Corristo_KDFTEST_NO_Info_15_01"); //Ne.
 	AI_Output (self, other,"KDF_402_Corristo_KDFTEST_NO_Info_14_02"); //Hmmm...
-	AI_Output (self, other,"KDF_402_Corristo_KDFTEST_NO_Info_14_03"); //Nepot¯ebujeme muûe, kter˝ zapÌr· svÈ Ëiny.
-	AI_Output (self, other,"KDF_402_Corristo_KDFTEST_NO_Info_14_04"); //BuÔ radÏji uûiteËn˝ jako bojovnÌk nebo kop·Ë. Cesta k magii pro tebe z˘stane provûdy uzav¯en·.
+	AI_Output (self, other,"KDF_402_Corristo_KDFTEST_NO_Info_14_03"); //Nepot≈ôebujeme mu≈æe, kter√Ω zap√≠r√° sv√© ƒçiny.
+	AI_Output (self, other,"KDF_402_Corristo_KDFTEST_NO_Info_14_04"); //Buƒè radƒõji u≈æiteƒçn√Ω jako bojovn√≠k nebo kop√°ƒç. Cesta k magii pro tebe z≈Østane prov≈ædy uzav≈ôen√°.
 	AI_StopProcessInfos	( self );
 	Npc_ExchangeRoutine (self,"START");
 };
@@ -184,15 +184,15 @@ FUNC VOID  KDF_402_Corristo_KDFTEST_ADANOS()
 {
 	AI_Output (other, self,"KDF_402_Corristo_KDFTEST_ADANOS_Info_15_01"); //Adanos.
 	AI_Output (self, other,"KDF_402_Corristo_KDFTEST_ADANOS_Info_14_02"); //Hmmm...
-	AI_Output (self, other,"KDF_402_Corristo_KDFTEST_ADANOS_Info_14_03"); //To nenÌ spr·vnÏ. Moûn· by tÏ mohly vyuûÌt str·ûe.
+	AI_Output (self, other,"KDF_402_Corristo_KDFTEST_ADANOS_Info_14_03"); //To nen√≠ spr√°vnƒõ. Mo≈æn√° by tƒõ mohly vyu≈æ√≠t str√°≈æe.
 	AI_StopProcessInfos	( self );
 	Npc_ExchangeRoutine (self,"START");
 };
 FUNC VOID  KDF_402_Corristo_KDFTEST_SLEEPER()
 {
-	AI_Output (other, self,"KDF_402_Corristo_KDFTEST_SLEEPER_Info_15_01"); //Sp·Ë.
+	AI_Output (other, self,"KDF_402_Corristo_KDFTEST_SLEEPER_Info_15_01"); //Sp√°ƒç.
 	AI_Output (self, other,"KDF_402_Corristo_KDFTEST_SLEEPER_Info_14_02"); //Hmmm...
-	AI_Output (self, other,"KDF_402_Corristo_KDFTEST_SLEEPER_Info_14_03"); //Vypad·ö jako nÏkdo, kdo str·vil p¯Ìliö Ëasu mezi bratry z baûin. Moûn· bys mÏl radÏji z˘stat tam.
+	AI_Output (self, other,"KDF_402_Corristo_KDFTEST_SLEEPER_Info_14_03"); //Vypad√°≈° jako nƒõkdo, kdo str√°vil p≈ô√≠li≈° ƒçasu mezi bratry z ba≈æin. Mo≈æn√° bys mƒõl radƒõji z≈Østat tam.
 	AI_StopProcessInfos	( self );
 	Npc_ExchangeRoutine (self,"START");
 };
@@ -200,19 +200,19 @@ FUNC VOID  KDF_402_Corristo_KDFTEST_INNOS()
 {
 	AI_Output (other, self,"KDF_402_Corristo_KDFTEST_INNOS_Info_15_01"); //Innos.
 	AI_Output (self, other,"KDF_402_Corristo_KDFTEST_INNOS_Info_14_02"); //Hmmm...
-	AI_Output (self, other,"KDF_402_Corristo_KDFTEST_INNOS_Info_14_03"); //Jak· je nejvyööÌ ctnost?
+	AI_Output (self, other,"KDF_402_Corristo_KDFTEST_INNOS_Info_14_03"); //Jak√° je nejvy≈°≈°√≠ ctnost?
 	Corristo_KDFAufnahme = 3;
 	Info_ClearChoices (KDF_402_Corristo_KDFTEST);
-	Info_Addchoice (KDF_402_Corristo_KDFTEST,"»est bojovnÌka.",KDF_402_Corristo_KDFTEST_FIGHT); 
-	Info_Addchoice (KDF_402_Corristo_KDFTEST,"Pokora p¯ed tv·¯Ì magie.",KDF_402_Corristo_KDFTEST_DEMUT);
-	Info_Addchoice (KDF_402_Corristo_KDFTEST,"Uk·znÏnost muûe.",KDF_402_Corristo_KDFTEST_DISZIPLIN); 
+	Info_Addchoice (KDF_402_Corristo_KDFTEST,"ƒåest bojovn√≠ka.",KDF_402_Corristo_KDFTEST_FIGHT); 
+	Info_Addchoice (KDF_402_Corristo_KDFTEST,"Pokora p≈ôed tv√°≈ô√≠ magie.",KDF_402_Corristo_KDFTEST_DEMUT);
+	Info_Addchoice (KDF_402_Corristo_KDFTEST,"Uk√°znƒõnost mu≈æe.",KDF_402_Corristo_KDFTEST_DISZIPLIN); 
 	Info_Addchoice (KDF_402_Corristo_KDFTEST,"Bohabojnost.",KDF_402_Corristo_KDFTEST_EHRFURCHT);
 };
 FUNC VOID  KDF_402_Corristo_KDFTEST_GOMEZ()
 {
 	AI_Output (other, self,"KDF_402_Corristo_KDFTEST_GOMEZ_Info_15_01"); //Gomez.
 	AI_Output (self, other,"KDF_402_Corristo_KDFTEST_GOMEZ_Info_14_02"); //Hmmm...
-	AI_Output (self, other,"KDF_402_Corristo_KDFTEST_GOMEZ_Info_14_03"); //MyslÌm, ûe tvÈ mÌsto bude u str·ûÌ! Promluv s Thorusem!
+	AI_Output (self, other,"KDF_402_Corristo_KDFTEST_GOMEZ_Info_14_03"); //Mysl√≠m, ≈æe tv√© m√≠sto bude u str√°≈æ√≠! Promluv s Thorusem!
 	AI_StopProcessInfos	( self );
 	Npc_ExchangeRoutine (self,"START");
 };
@@ -221,18 +221,18 @@ FUNC VOID  KDF_402_Corristo_KDFTEST_GOMEZ()
 //--------------------------------------------------------------------------
 FUNC VOID  KDF_402_Corristo_KDFTEST_FIGHT()
 {
-	AI_Output (other, self,"KDF_402_Corristo_KDFTEST_FIGHT_Info_15_01"); //»est bojovnÌka.
+	AI_Output (other, self,"KDF_402_Corristo_KDFTEST_FIGHT_Info_15_01"); //ƒåest bojovn√≠ka.
 	AI_Output (self, other,"KDF_402_Corristo_KDFTEST_FIGHT_Info_14_02"); //Hmmm...
-	AI_Output (self, other,"KDF_402_Corristo_KDFTEST_FIGHT_Info_14_03"); //MyslÌm, ûe tvÈ mÌsto bude u str·ûÌ! Promluv s Thorusem!
+	AI_Output (self, other,"KDF_402_Corristo_KDFTEST_FIGHT_Info_14_03"); //Mysl√≠m, ≈æe tv√© m√≠sto bude u str√°≈æ√≠! Promluv s Thorusem!
 	AI_StopProcessInfos	( self );
 
 };
 FUNC VOID  KDF_402_Corristo_KDFTEST_DEMUT()
 {
-	AI_Output (other, self,"KDF_402_Corristo_KDFTEST_DEMUT_Info_15_01"); //Pokora p¯ed tv·¯i magie.
+	AI_Output (other, self,"KDF_402_Corristo_KDFTEST_DEMUT_Info_15_01"); //Pokora p≈ôed tv√°≈ôi magie.
 	AI_Output (self, other,"KDF_402_Corristo_KDFTEST_DEMUT_Info_14_02"); //Hmmm...
-	AI_Output (self, other,"KDF_402_Corristo_KDFTEST_DEMUT_Info_14_03"); //OdpovÌdal jsi dob¯e a spr·vnÏ. Budu tÏ uËit umÏnÌ magie.
-	AI_Output (self, other,"KDF_402_Corristo_KDFTEST_DEMUT_Info_14_04"); //N·sleduj mÏ do S·lu magie, kde sloûÌö prastar˝ slib.
+	AI_Output (self, other,"KDF_402_Corristo_KDFTEST_DEMUT_Info_14_03"); //Odpov√≠dal jsi dob≈ôe a spr√°vnƒõ. Budu tƒõ uƒçit umƒõn√≠ magie.
+	AI_Output (self, other,"KDF_402_Corristo_KDFTEST_DEMUT_Info_14_04"); //N√°sleduj mƒõ do S√°lu magie, kde slo≈æ√≠≈° prastar√Ω slib.
 
 	AI_StopProcessInfos	( self );
 	Corristo_KDFAufnahme = 4;
@@ -240,10 +240,10 @@ FUNC VOID  KDF_402_Corristo_KDFTEST_DEMUT()
 };
 FUNC VOID  KDF_402_Corristo_KDFTEST_DISZIPLIN()
 {
-	AI_Output (other, self,"KDF_402_Corristo_KDFTEST_DISZIPLIN_Info_15_01"); //Uk·znÏnost muûe.
+	AI_Output (other, self,"KDF_402_Corristo_KDFTEST_DISZIPLIN_Info_15_01"); //Uk√°znƒõnost mu≈æe.
 	AI_Output (self, other,"KDF_402_Corristo_KDFTEST_DISZIPLIN_Info_14_02"); //Hmmm.
-	AI_Output (self, other,"KDF_402_Corristo_KDFTEST_DISZIPLIN_Info_14_03"); //OdpovÌdal jsi dob¯e a spr·vnÏ. Budu tÏ uËit umÏnÌ magie.
-	AI_Output (self, other,"KDF_402_Corristo_KDFTEST_DISZIPLIN_Info_14_04"); //N·sleduj mÏ do S·lu magie, kde sloûÌö prastar˝ slib.
+	AI_Output (self, other,"KDF_402_Corristo_KDFTEST_DISZIPLIN_Info_14_03"); //Odpov√≠dal jsi dob≈ôe a spr√°vnƒõ. Budu tƒõ uƒçit umƒõn√≠ magie.
+	AI_Output (self, other,"KDF_402_Corristo_KDFTEST_DISZIPLIN_Info_14_04"); //N√°sleduj mƒõ do S√°lu magie, kde slo≈æ√≠≈° prastar√Ω slib.
 	Corristo_KDFAufnahme = 4;
 	AI_StopProcessInfos	( self );
 	B_Story_Feueraufnahme();
@@ -253,8 +253,8 @@ FUNC VOID  KDF_402_Corristo_KDFTEST_EHRFURCHT()
 {
 	AI_Output (other, self,"KDF_402_Corristo_KDFTEST_EHRFURCHT_Info_15_01"); //Bohabojnost.
 	AI_Output (self, other,"KDF_402_Corristo_KDFTEST_EHRFURCHT_Info_14_02"); //Hmmm...
-	AI_Output (self, other,"KDF_402_Corristo_KDFTEST_EHRFURCHT_Info_14_03"); //OdpovÌdal jsi dob¯e a spr·vnÏ. Budu tÏ uËit umÏnÌ magie.
-	AI_Output (self, other,"KDF_402_Corristo_KDFTEST_EHRFURCHT_Info_14_04"); //N·sleduj mÏ do S·lu magie, kde sloûÌö prastar˝ slib.
+	AI_Output (self, other,"KDF_402_Corristo_KDFTEST_EHRFURCHT_Info_14_03"); //Odpov√≠dal jsi dob≈ôe a spr√°vnƒõ. Budu tƒõ uƒçit umƒõn√≠ magie.
+	AI_Output (self, other,"KDF_402_Corristo_KDFTEST_EHRFURCHT_Info_14_04"); //N√°sleduj mƒõ do S√°lu magie, kde slo≈æ√≠≈° prastar√Ω slib.
 	Corristo_KDFAufnahme = 4;
 	AI_StopProcessInfos	( self );
 	B_Story_Feueraufnahme();
@@ -287,17 +287,17 @@ func void  KDF_402_Corristo_AUFNAHME_Info()
 	AI_UnequipWeapons (hero); 
 	AI_SetWalkmode (hero,NPC_WALK); 
 	AI_GotoNpc (hero,self);
-	AI_Output  (self, other,"KDF_402_Corristo_AUFNAHME_Info_14_01"); //Dnes jsme se tu shrom·ûdili, abysme vysvÏtili sluûebnÌka OhnÏ.
-	AI_Output  (self, other,"KDF_402_Corristo_AUFNAHME_Info_14_02"); //TeÔ prones p¯Ìsahu ohnÏ.
+	AI_Output  (self, other,"KDF_402_Corristo_AUFNAHME_Info_14_01"); //Dnes jsme se tu shrom√°≈ædili, abysme vysvƒõtili slu≈æebn√≠ka Ohnƒõ.
+	AI_Output  (self, other,"KDF_402_Corristo_AUFNAHME_Info_14_02"); //Teƒè prones p≈ô√≠sahu ohnƒõ.
 	Snd_Play   ("howling_01");
-	AI_Output  (self, other,"KDF_402_Corristo_AUFNAHME_Info_14_03"); //P¯Ìsah·m p¯i moci boûÌ...
-	AI_Output  (other, self,"KDF_402_Corristo_AUFNAHME_Info_15_04"); //P¯Ìsah·m p¯i moci boûÌ...
-	AI_Output  (self, other,"KDF_402_Corristo_AUFNAHME_Info_14_05"); //...p¯Ìsah·m p¯i moci svatÈho OhnÏ...
-	AI_Output  (other, self,"KDF_402_Corristo_AUFNAHME_Info_15_06"); //...p¯Ìsah·m p¯i moci svatÈho OhnÏ...
-	AI_Output  (self, other,"KDF_402_Corristo_AUFNAHME_Info_14_07"); //...ûe mÈ vÏdomosti a mÈ skutky vejdou od tohoto okamûiku a navûdy v jednotu s ohnÏm...
-	AI_Output  (other, self,"KDF_402_Corristo_AUFNAHME_Info_15_08"); //...ûe mÈ vÏdomosti a mÈ skutky vejdou od tohoto okamûiku a navûdy v jednotu s ohnÏm...
-	AI_Output  (self, other,"KDF_402_Corristo_AUFNAHME_Info_14_09"); //...dokud mÈ tÏlo nebude navr·ceno ¯Ìöi BeliarovÏ a oheÚ mÈho ûivota nepohasne.
-	AI_Output  (other, self,"KDF_402_Corristo_AUFNAHME_Info_15_10"); //...dokud mÈ tÏlo nebude navr·ceno ¯Ìöi BeliarovÏ a oheÚ mÈho ûivota nepohasne.
+	AI_Output  (self, other,"KDF_402_Corristo_AUFNAHME_Info_14_03"); //P≈ô√≠sah√°m p≈ôi moci bo≈æ√≠...
+	AI_Output  (other, self,"KDF_402_Corristo_AUFNAHME_Info_15_04"); //P≈ô√≠sah√°m p≈ôi moci bo≈æ√≠...
+	AI_Output  (self, other,"KDF_402_Corristo_AUFNAHME_Info_14_05"); //...p≈ô√≠sah√°m p≈ôi moci svat√©ho Ohnƒõ...
+	AI_Output  (other, self,"KDF_402_Corristo_AUFNAHME_Info_15_06"); //...p≈ô√≠sah√°m p≈ôi moci svat√©ho Ohnƒõ...
+	AI_Output  (self, other,"KDF_402_Corristo_AUFNAHME_Info_14_07"); //...≈æe m√© vƒõdomosti a m√© skutky vejdou od tohoto okam≈æiku a nav≈ædy v jednotu s ohnƒõm...
+	AI_Output  (other, self,"KDF_402_Corristo_AUFNAHME_Info_15_08"); //...≈æe m√© vƒõdomosti a m√© skutky vejdou od tohoto okam≈æiku a nav≈ædy v jednotu s ohnƒõm...
+	AI_Output  (self, other,"KDF_402_Corristo_AUFNAHME_Info_14_09"); //...dokud m√© tƒõlo nebude navr√°ceno ≈ô√≠≈°i Beliarovƒõ a ohe≈à m√©ho ≈æivota nepohasne.
+	AI_Output  (other, self,"KDF_402_Corristo_AUFNAHME_Info_15_10"); //...dokud m√© tƒõlo nebude navr√°ceno ≈ô√≠≈°i Beliarovƒõ a ohe≈à m√©ho ≈æivota nepohasne.
 	AI_StopProcessInfos	( self );
 };
 instance KDF_402_Corristo_ROBE (C_INFO)
@@ -326,8 +326,8 @@ func void  KDF_402_Corristo_ROBE_Info()
 	B_GiveInvItems      (self, hero, ItAmArrow, 1);
 	Npc_RemoveInvItem	(hero, ItAmArrow);
 	
-	AI_Output			(self, other,"KDF_402_Corristo_ROBE_Info_14_01"); //PronesenÌm slov tÈto p¯Ìsahy jsi nynÌ vstoupil ve spojenÌ s OhnÏm.
-	AI_Output			(self, other,"KDF_402_Corristo_ROBE_Info_14_02"); //Nos toto roucho na znamenÌ vÏËnÈho svazku.
+	AI_Output			(self, other,"KDF_402_Corristo_ROBE_Info_14_01"); //Pronesen√≠m slov t√©to p≈ô√≠sahy jsi nyn√≠ vstoupil ve spojen√≠ s Ohnƒõm.
+	AI_Output			(self, other,"KDF_402_Corristo_ROBE_Info_14_02"); //Nos toto roucho na znamen√≠ vƒõƒçn√©ho svazku.
 	AI_StopProcessInfos	(self);
 	AI_EquipBestArmor	(hero);
 	AI_UnequipWeapons	(hero);
@@ -336,9 +336,9 @@ func void  KDF_402_Corristo_ROBE_Info()
 	
 	hero.attribute [ATR_HITPOINTS] = hero.attribute [ATR_HITPOINTS_MAX];
 
-	B_LogEntry		(GE_BecomeFiremage,"Sloûil jsem zkouöku a pronesl p¯Ìsahu OhnÏ. NynÌ smÌm nosit roucho Kruhu ohnÏ! ");
+	B_LogEntry		(GE_BecomeFiremage,"Slo≈æil jsem zkou≈°ku a pronesl p≈ô√≠sahu Ohnƒõ. Nyn√≠ sm√≠m nosit roucho Kruhu ohnƒõ! ");
 	Log_CreateTopic	(GE_TeacherOC,LOG_NOTE);
-	B_LogEntry		(GE_TeacherOC,"Corristo mÏ m˘ûe nauËit magickÈ KRUHY a zv˝öit moji magickou energii. Ob˝v· d˘m m·g˘ OhnÏ.");	
+	B_LogEntry		(GE_TeacherOC,"Corristo mƒõ m≈Ø≈æe nauƒçit magick√© KRUHY a zv√Ω≈°it moji magickou energii. Ob√Ωv√° d≈Øm m√°g≈Ø Ohnƒõ.");	
 };
 //--------------------------------------------------------------------------
 // 							MANA KAUFEN
@@ -352,7 +352,7 @@ instance  KDF_402_Corristo_MANA (C_INFO)
 	information		= KDF_402_Corristo_MANA_Info;
 	important		= 0;
 	permanent		= 1;
-	description		= "Pot¯ebuji vÌce magickÈ moci."; 
+	description		= "Pot≈ôebuji v√≠ce magick√© moci."; 
 };
 
 FUNC int  KDF_402_Corristo_MANA_Condition()
@@ -365,8 +365,8 @@ FUNC int  KDF_402_Corristo_MANA_Condition()
 };
 FUNC void  KDF_402_Corristo_MANA_Info()
 {
-	AI_Output (other, self,"KDF_402_Corristo_MANA_Info_15_01"); //Pot¯ebuji vÌce magickÈ moci.
-	AI_Output (self, other,"KDF_402_Corristo_MANA_Info_14_02"); //M˘ûu ti pomoci zvÏtöit tvoji sÌlu. Jak ji pouûijeö, je uû tvoje vÏc.
+	AI_Output (other, self,"KDF_402_Corristo_MANA_Info_15_01"); //Pot≈ôebuji v√≠ce magick√© moci.
+	AI_Output (self, other,"KDF_402_Corristo_MANA_Info_14_02"); //M≈Ø≈æu ti pomoci zvƒõt≈°it tvoji s√≠lu. Jak ji pou≈æije≈°, je u≈æ tvoje vƒõc.
 	
 	Info_ClearChoices	(KDF_402_Corristo_MANA);
 	Info_AddChoice		(KDF_402_Corristo_MANA,DIALOG_BACK	,KDF_402_Corristo_MANA_BACK);
@@ -398,7 +398,7 @@ func void KDF_402_Corristo_MANA_MAN_5()
 
 };
 //--------------------------------------------------------------------------
-// 							ERLƒUTERUNG DER KREISE
+// 							ERL√ÑUTERUNG DER KREISE
 //--------------------------------------------------------------------------
 // ***************************** INFOS ****************************************//
 
@@ -409,7 +409,7 @@ instance  KDF_402_Corristo_EXPLAINCIRCLES (C_INFO)
 	information		= KDF_402_Corristo_EXPLAINCIRCLES_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "VysvÏtli mi v˝znam kouzeln˝ch Kruh˘."; 
+	description		= "Vysvƒõtli mi v√Ωznam kouzeln√Ωch Kruh≈Ø."; 
 };
 
 FUNC int  KDF_402_Corristo_EXPLAINCIRCLES_Condition()
@@ -421,14 +421,14 @@ FUNC int  KDF_402_Corristo_EXPLAINCIRCLES_Condition()
 };
 func void  KDF_402_Corristo_EXPLAINCIRCLES_Info()
 {
-	AI_Output (other, self,"KDF_402_Corristo_EXPLAINCIRCLES_Info_15_01"); //VysvÏtli mi v˝znam kouzeln˝ch Kruh˘.
-	AI_Output (self, other,"KDF_402_Corristo_EXPLAINCIRCLES_Info_14_02"); //JistÏ. Tyhle Kruhy zn·zorÚujÌ, ûe sdÌlÌö kouzlo.
-	AI_Output (self, other,"KDF_402_Corristo_EXPLAINCIRCLES_Info_14_03"); //Jsou tady pro vÏdÏnÌ, dovednost a uËenÌ nov˝ch kouzeln˝ch za¯Ìk·vadel.
-	AI_Output (self, other,"KDF_402_Corristo_EXPLAINCIRCLES_Info_14_04"); //Aby ses mohl p¯idat k dalöÌmu Kruhu, musÌö projÌt p¯edchozÌm.
-	AI_Output (self, other,"KDF_402_Corristo_EXPLAINCIRCLES_Info_14_05"); //Vyûaduje to dlouhÈ uËenÌ a takÈ budeö pot¯ebovat zÌskat spoustu zkuöenostÌ, neû dos·hneö vyööÌch kruh˘.
-	AI_Output (self, other,"KDF_402_Corristo_EXPLAINCIRCLES_Info_14_06"); //Ale tvoje ˙silÌ o jejich dosaûenÌ bude pokaûdÈ odmÏnÏno nov˝mi a mocnÏjöÌmi kouzly. KouzelnÈ Kruhy jsou vöak jeötÏ nÏËÌm vÌce.
-	AI_Output (self, other,"KDF_402_Corristo_EXPLAINCIRCLES_Info_14_07"); //Jsou souË·stÌ ûivota. Budou vûdy s tebou. Ber je jako souË·st sebe sama.
-	AI_Output (self, other,"KDF_402_Corristo_EXPLAINCIRCLES_Info_14_08"); //Abys porozumÏl jejich moci, musÌö poznat s·m sebe.
+	AI_Output (other, self,"KDF_402_Corristo_EXPLAINCIRCLES_Info_15_01"); //Vysvƒõtli mi v√Ωznam kouzeln√Ωch Kruh≈Ø.
+	AI_Output (self, other,"KDF_402_Corristo_EXPLAINCIRCLES_Info_14_02"); //Jistƒõ. Tyhle Kruhy zn√°zor≈àuj√≠, ≈æe sd√≠l√≠≈° kouzlo.
+	AI_Output (self, other,"KDF_402_Corristo_EXPLAINCIRCLES_Info_14_03"); //Jsou tady pro vƒõdƒõn√≠, dovednost a uƒçen√≠ nov√Ωch kouzeln√Ωch za≈ô√≠k√°vadel.
+	AI_Output (self, other,"KDF_402_Corristo_EXPLAINCIRCLES_Info_14_04"); //Aby ses mohl p≈ôidat k dal≈°√≠mu Kruhu, mus√≠≈° proj√≠t p≈ôedchoz√≠m.
+	AI_Output (self, other,"KDF_402_Corristo_EXPLAINCIRCLES_Info_14_05"); //Vy≈æaduje to dlouh√© uƒçen√≠ a tak√© bude≈° pot≈ôebovat z√≠skat spoustu zku≈°enost√≠, ne≈æ dos√°hne≈° vy≈°≈°√≠ch kruh≈Ø.
+	AI_Output (self, other,"KDF_402_Corristo_EXPLAINCIRCLES_Info_14_06"); //Ale tvoje √∫sil√≠ o jejich dosa≈æen√≠ bude poka≈æd√© odmƒõnƒõno nov√Ωmi a mocnƒõj≈°√≠mi kouzly. Kouzeln√© Kruhy jsou v≈°ak je≈°tƒõ nƒõƒç√≠m v√≠ce.
+	AI_Output (self, other,"KDF_402_Corristo_EXPLAINCIRCLES_Info_14_07"); //Jsou souƒç√°st√≠ ≈æivota. Budou v≈ædy s tebou. Ber je jako souƒç√°st sebe sama.
+	AI_Output (self, other,"KDF_402_Corristo_EXPLAINCIRCLES_Info_14_08"); //Abys porozumƒõl jejich moci, mus√≠≈° poznat s√°m sebe.
 };  
 //--------------------------------------------------------------------------
 // 							DER ERSTE KREIS
@@ -455,18 +455,18 @@ FUNC int  KDF_402_Corristo_KREIS1_Condition()
 };
 FUNC void  KDF_402_Corristo_KREIS1_Info()
 {
-	AI_Output (other, self,"KDF_402_Corristo_KREIS1_Info_15_01"); //Jsem p¯ipraven vstoupit do PrvnÌho Kruhu.
+	AI_Output (other, self,"KDF_402_Corristo_KREIS1_Info_15_01"); //Jsem p≈ôipraven vstoupit do Prvn√≠ho Kruhu.
 	
 	if (B_GiveSkill(other,NPC_TALENT_MAGE , 1, LPCOST_TALENT_MAGE_1))
 	{
-		AI_Output (self, other,"KDF_402_Corristo_KREIS1_Info_14_02"); //Vstoupit do prvnÌho z kouzeln˝ch Kruh˘ znamen· nauËit se pouûÌvat kouzelnÈ runy.
-		AI_Output (self, other,"KDF_402_Corristo_KREIS1_Info_14_03"); //Kaûd· runa obsahuje strukturu zvl·ötnÌho kouzelnÈho za¯Ìk·vadla.
-		AI_Output (self, other,"KDF_402_Corristo_KREIS1_Info_14_04"); //Spolu se sv˝mi vlastnÌmi kouzeln˝mi silami budeö schopen vyuûÌvat kouzlo run.
-		AI_Output (self, other,"KDF_402_Corristo_KREIS1_Info_14_05"); //Ale narozdÌl od kouzeln˝ch svitk˘, kterÈ jsou takÈ kouzeln˝mi formulemi, magick· sÌla run zajiöùuje, ûe struktura za¯Ìk·vadla p¯etrv·v·.
-		AI_Output (self, other,"KDF_402_Corristo_KREIS1_Info_14_06"); //Kaûd· runa je zdrojem magickÈ sÌly, kterou m˘ûeö kdykoliv zase zruöit.
-		AI_Output (self, other,"KDF_402_Corristo_KREIS1_Info_14_07"); //Svoji vlastnÌ kouzelnou moc vyuûijeö tehdy, kdyû pouûijeö runu, podobnÏ jako je tomu s kouzeln˝m svitkem.
-		AI_Output (self, other,"KDF_402_Corristo_KREIS1_Info_14_08"); //Se vstupem do kaûdÈho dalöÌho Kruhu se nauËÌö vyuûÌvat takÈ dalöÌ kouzelnÈ runy.
-		AI_Output (self, other,"KDF_402_Corristo_KREIS1_Info_14_09"); //Vyuûij moc run k pozn·nÌ sebe sama.
+		AI_Output (self, other,"KDF_402_Corristo_KREIS1_Info_14_02"); //Vstoupit do prvn√≠ho z kouzeln√Ωch Kruh≈Ø znamen√° nauƒçit se pou≈æ√≠vat kouzeln√© runy.
+		AI_Output (self, other,"KDF_402_Corristo_KREIS1_Info_14_03"); //Ka≈æd√° runa obsahuje strukturu zvl√°≈°tn√≠ho kouzeln√©ho za≈ô√≠k√°vadla.
+		AI_Output (self, other,"KDF_402_Corristo_KREIS1_Info_14_04"); //Spolu se sv√Ωmi vlastn√≠mi kouzeln√Ωmi silami bude≈° schopen vyu≈æ√≠vat kouzlo run.
+		AI_Output (self, other,"KDF_402_Corristo_KREIS1_Info_14_05"); //Ale narozd√≠l od kouzeln√Ωch svitk≈Ø, kter√© jsou tak√© kouzeln√Ωmi formulemi, magick√° s√≠la run zaji≈°≈•uje, ≈æe struktura za≈ô√≠k√°vadla p≈ôetrv√°v√°.
+		AI_Output (self, other,"KDF_402_Corristo_KREIS1_Info_14_06"); //Ka≈æd√° runa je zdrojem magick√© s√≠ly, kterou m≈Ø≈æe≈° kdykoliv zase zru≈°it.
+		AI_Output (self, other,"KDF_402_Corristo_KREIS1_Info_14_07"); //Svoji vlastn√≠ kouzelnou moc vyu≈æije≈° tehdy, kdy≈æ pou≈æije≈° runu, podobnƒõ jako je tomu s kouzeln√Ωm svitkem.
+		AI_Output (self, other,"KDF_402_Corristo_KREIS1_Info_14_08"); //Se vstupem do ka≈æd√©ho dal≈°√≠ho Kruhu se nauƒç√≠≈° vyu≈æ√≠vat tak√© dal≈°√≠ kouzeln√© runy.
+		AI_Output (self, other,"KDF_402_Corristo_KREIS1_Info_14_09"); //Vyu≈æij moc run k pozn√°n√≠ sebe sama.
 		KDF_402_Corristo_KREIS1.permanent	= 0;
 	};
 };  
@@ -495,17 +495,17 @@ FUNC int  KDF_402_Corristo_KREIS2_Condition()
 };
 FUNC void  KDF_402_Corristo_KREIS2_Info()
 {
-	AI_Output (other, self,"KDF_402_Corristo_KREIS2_Info_15_01"); //Jsem p¯ipraven vstoupit do DruhÈho kruhu.
+	AI_Output (other, self,"KDF_402_Corristo_KREIS2_Info_15_01"); //Jsem p≈ôipraven vstoupit do Druh√©ho kruhu.
 	
 	if (B_GiveSkill(other,NPC_TALENT_MAGE , 2, LPCOST_TALENT_MAGE_2))
 	{
-		AI_Output (self, other,"KDF_402_Corristo_KREIS2_Info_14_02"); //NauËil ses rozumÏt kouzeln˝m znak˘m. Nadeöel Ëas prohloubit toto porozumÏnÌ.
-		AI_Output (self, other,"KDF_402_Corristo_KREIS2_Info_14_03"); //Jakmile se p¯id·ö ke DruhÈmu kruhu, nauËÌö se z·klad˘m mocnÏjöÌch bojov˝ch za¯Ìk·vadel a vöem taj˘m ranhojiËstvÌ.
-		AI_Output (self, other,"KDF_402_Corristo_KREIS2_Info_14_04"); //Budeö se ale muset nauËit jeötÏ vÌc, jestli chceö poznat opravdov· tajemstvÌ magie.
-		AI_Output (self, other,"KDF_402_Corristo_KREIS2_Info_14_05"); //VÌö, ûe kaûdou runu m˘ûeö pouûÌvat jak Ëasto chceö, dokud nevyËerp·ö svÈ vlastnÌ sÌly.
-		AI_Output (self, other,"KDF_402_Corristo_KREIS2_Info_14_06"); //Neû budeö jednat, rozmysli si cÌl svÈho jedn·nÌ. Nabyl jsi sÌly, kter· tÏ snadno m˘ûe dovÈst k z·hubÏ a zniËenÌ.
-		AI_Output (self, other,"KDF_402_Corristo_KREIS2_Info_14_07"); //Opravdov˝ kouzelnÌk ale uûÌv· kouzla jen tehdy, kdyû je to nezbytnÈ.
-		AI_Output (self, other,"KDF_402_Corristo_KREIS2_Info_14_08"); //Pokud porozumÌö situaci, pak pozn·ö moc run.
+		AI_Output (self, other,"KDF_402_Corristo_KREIS2_Info_14_02"); //Nauƒçil ses rozumƒõt kouzeln√Ωm znak≈Øm. Nade≈°el ƒças prohloubit toto porozumƒõn√≠.
+		AI_Output (self, other,"KDF_402_Corristo_KREIS2_Info_14_03"); //Jakmile se p≈ôid√°≈° ke Druh√©mu kruhu, nauƒç√≠≈° se z√°klad≈Øm mocnƒõj≈°√≠ch bojov√Ωch za≈ô√≠k√°vadel a v≈°em taj≈Øm ranhojiƒçstv√≠.
+		AI_Output (self, other,"KDF_402_Corristo_KREIS2_Info_14_04"); //Bude≈° se ale muset nauƒçit je≈°tƒõ v√≠c, jestli chce≈° poznat opravdov√° tajemstv√≠ magie.
+		AI_Output (self, other,"KDF_402_Corristo_KREIS2_Info_14_05"); //V√≠≈°, ≈æe ka≈ædou runu m≈Ø≈æe≈° pou≈æ√≠vat jak ƒçasto chce≈°, dokud nevyƒçerp√°≈° sv√© vlastn√≠ s√≠ly.
+		AI_Output (self, other,"KDF_402_Corristo_KREIS2_Info_14_06"); //Ne≈æ bude≈° jednat, rozmysli si c√≠l sv√©ho jedn√°n√≠. Nabyl jsi s√≠ly, kter√° tƒõ snadno m≈Ø≈æe dov√©st k z√°hubƒõ a zniƒçen√≠.
+		AI_Output (self, other,"KDF_402_Corristo_KREIS2_Info_14_07"); //Opravdov√Ω kouzeln√≠k ale u≈æ√≠v√° kouzla jen tehdy, kdy≈æ je to nezbytn√©.
+		AI_Output (self, other,"KDF_402_Corristo_KREIS2_Info_14_08"); //Pokud porozum√≠≈° situaci, pak pozn√°≈° moc run.
 		KDF_402_Corristo_KREIS2.permanent = 0;
 	};
 
@@ -535,15 +535,15 @@ FUNC int  KDF_402_Corristo_KREIS3_Condition()
 };
 FUNC void  KDF_402_Corristo_KREIS3_Info()
 {
-	AI_Output (other, self,"KDF_402_Corristo_KREIS3_Info_15_01"); //M˘ûeö mÏ p¯ipravit do T¯etÌho kruhu?
+	AI_Output (other, self,"KDF_402_Corristo_KREIS3_Info_15_01"); //M≈Ø≈æe≈° mƒõ p≈ôipravit do T≈ôet√≠ho kruhu?
 	if (B_GiveSkill(other,NPC_TALENT_MAGE , 3, LPCOST_TALENT_MAGE_3))
 	{
-		AI_Output (self, other,"KDF_402_Corristo_KREIS3_Info_14_02"); //T¯etÌ kouzeln˝ kruh je jednÌm z nejd˘leûitÏjöÌch krok˘ v ûivotÏ m·ga. Jakmile ho dos·hneö, p¯est·v·ö b˝t hledaËem.
-		AI_Output (self, other,"KDF_402_Corristo_KREIS3_Info_14_03"); //Doöel jsi uû po cestÏ magie opravdu daleko. NauËil ses pouûÌvat kouzelnÈ runy.
-		AI_Output (self, other,"KDF_402_Corristo_KREIS3_Info_14_04"); //Tato znalost je v˝chodisko pro tvojÌ dalöÌ cestu. PouûÌvej tyto runy s uv·ûenÌm.
-		AI_Output (self, other,"KDF_402_Corristo_KREIS3_Info_14_05"); //Runy m˘ûeö nebo nemusÌö pouûÌvat. Ale musÌö se rozhodnout pro jednu z tÏchto moûnostÌ.
-		AI_Output (self, other,"KDF_402_Corristo_KREIS3_Info_14_06"); //Jakmile se rozhodneö, neost˝chej se vyuûÌt sv˝ch sil.
-		AI_Output (self, other,"KDF_402_Corristo_KREIS3_Info_14_07"); //Jakmile porozumÌö svÈ cestÏ, pak pozn·ö sÌlu rozhodnutÌ.
+		AI_Output (self, other,"KDF_402_Corristo_KREIS3_Info_14_02"); //T≈ôet√≠ kouzeln√Ω kruh je jedn√≠m z nejd≈Øle≈æitƒõj≈°√≠ch krok≈Ø v ≈æivotƒõ m√°ga. Jakmile ho dos√°hne≈°, p≈ôest√°v√°≈° b√Ωt hledaƒçem.
+		AI_Output (self, other,"KDF_402_Corristo_KREIS3_Info_14_03"); //Do≈°el jsi u≈æ po cestƒõ magie opravdu daleko. Nauƒçil ses pou≈æ√≠vat kouzeln√© runy.
+		AI_Output (self, other,"KDF_402_Corristo_KREIS3_Info_14_04"); //Tato znalost je v√Ωchodisko pro tvoj√≠ dal≈°√≠ cestu. Pou≈æ√≠vej tyto runy s uv√°≈æen√≠m.
+		AI_Output (self, other,"KDF_402_Corristo_KREIS3_Info_14_05"); //Runy m≈Ø≈æe≈° nebo nemus√≠≈° pou≈æ√≠vat. Ale mus√≠≈° se rozhodnout pro jednu z tƒõchto mo≈ænost√≠.
+		AI_Output (self, other,"KDF_402_Corristo_KREIS3_Info_14_06"); //Jakmile se rozhodne≈°, neost√Ωchej se vyu≈æ√≠t sv√Ωch sil.
+		AI_Output (self, other,"KDF_402_Corristo_KREIS3_Info_14_07"); //Jakmile porozum√≠≈° sv√© cestƒõ, pak pozn√°≈° s√≠lu rozhodnut√≠.
 		KDF_402_Corristo_KREIS3.permanent = 0;
 	};
 
@@ -572,15 +572,15 @@ FUNC int  KDF_402_Corristo_KREIS4_Condition()
 };
 FUNC void  KDF_402_Corristo_KREIS4_Info()
 {
-	AI_Output (other, self,"KDF_402_Corristo_KREIS4_Info_15_01"); //Jsem p¯ipraven vstoupit do P·tÈho kruhu.
+	AI_Output (other, self,"KDF_402_Corristo_KREIS4_Info_15_01"); //Jsem p≈ôipraven vstoupit do P√°t√©ho kruhu.
 	if (B_GiveSkill(other,NPC_TALENT_MAGE , 4, LPCOST_TALENT_MAGE_4))
 	{
-		AI_Output (self, other,"KDF_402_Corristo_KREIS4_Info_14_02"); //DokonËil jsi prvnÌ t¯i Kruhy. NynÌ nadeöel Ëas nauËit se tajemstvÌ magie.
-		AI_Output (self, other,"KDF_402_Corristo_KREIS4_Info_14_03"); //Kouzlo run je zaloûeno na kamenech. ExistujÌ kouzelnÈ kameny, vytvo¯enÈ z kouzelnÈ rudy.
-		AI_Output (self, other,"KDF_402_Corristo_KREIS4_Info_14_04"); //Z tÈ samÈ rudy, kter· se tÏûÌ tady v dolech. Tato ruda je obda¯ena magick˝mi formulemi templ·¯˘. Tyto runy jsou upraveny jako n·stroje naöÌ moci.
-		AI_Output (self, other,"KDF_402_Corristo_KREIS4_Info_14_05"); //S tÏmito runami, kterÈ uû ovl·d·ö, m·ö celÈ vÏdÏnÌ chr·movÈ sfÈry v malÌËku.
-		AI_Output (self, other,"KDF_402_Corristo_KREIS4_Info_14_06"); //TeÔ uû vÌö vöechno, co jsem tÏ mohl nauËit.
-		AI_Output (self, other,"KDF_402_Corristo_KREIS4_Info_14_07"); //Jakmile porozumÌö magii, objevÌö tajemstvÌ moci.
+		AI_Output (self, other,"KDF_402_Corristo_KREIS4_Info_14_02"); //Dokonƒçil jsi prvn√≠ t≈ôi Kruhy. Nyn√≠ nade≈°el ƒças nauƒçit se tajemstv√≠ magie.
+		AI_Output (self, other,"KDF_402_Corristo_KREIS4_Info_14_03"); //Kouzlo run je zalo≈æeno na kamenech. Existuj√≠ kouzeln√© kameny, vytvo≈ôen√© z kouzeln√© rudy.
+		AI_Output (self, other,"KDF_402_Corristo_KREIS4_Info_14_04"); //Z t√© sam√© rudy, kter√° se tƒõ≈æ√≠ tady v dolech. Tato ruda je obda≈ôena magick√Ωmi formulemi templ√°≈ô≈Ø. Tyto runy jsou upraveny jako n√°stroje na≈°√≠ moci.
+		AI_Output (self, other,"KDF_402_Corristo_KREIS4_Info_14_05"); //S tƒõmito runami, kter√© u≈æ ovl√°d√°≈°, m√°≈° cel√© vƒõdƒõn√≠ chr√°mov√© sf√©ry v mal√≠ƒçku.
+		AI_Output (self, other,"KDF_402_Corristo_KREIS4_Info_14_06"); //Teƒè u≈æ v√≠≈° v≈°echno, co jsem tƒõ mohl nauƒçit.
+		AI_Output (self, other,"KDF_402_Corristo_KREIS4_Info_14_07"); //Jakmile porozum√≠≈° magii, objev√≠≈° tajemstv√≠ moci.
 		KDF_402_Corristo_KREIS4.permanent = 0;
 	};
 };  
@@ -608,19 +608,19 @@ FUNC int  KDF_402_Corristo_HEAVYARMOR_Condition()
 };
 FUNC void  KDF_402_Corristo_HEAVYARMOR_Info()
 {
-	AI_Output (other, self,"KDF_402_Corristo_HEAVYARMOR_Info_15_01"); //Mist¯e, chtÏl bych nosit vzneöenÈ roucho OhnÏ.
+	AI_Output (other, self,"KDF_402_Corristo_HEAVYARMOR_Info_15_01"); //Mist≈ôe, chtƒõl bych nosit vzne≈°en√© roucho Ohnƒõ.
 	if (Kapitel < 3) 
 	{
-		AI_Output (self, other,"KDF_402_Corristo_WANNBEKDF_Info_14_04"); //JeötÏ nem·ö dostateËnÈ vÏdomosti. Vraù se, aû budeö zn·t vÌc.
+		AI_Output (self, other,"KDF_402_Corristo_WANNBEKDF_Info_14_04"); //Je≈°tƒõ nem√°≈° dostateƒçn√© vƒõdomosti. Vra≈• se, a≈æ bude≈° zn√°t v√≠c.
 		//AI_Output (other, self,"KDF_402_Corristo_HEAVYARMOR_Info_15_02"); //Es ist noch nicht deine Zeit, die hohe Robe zu tragen. //***FALSCHE STIMME***
 	}
 	else if (Npc_HasItems (hero,ItMinugget)< VALUE_KDF_ARMOR_H) 
 	{ 
-		AI_Output			(self, other,"KDF_402_Corristo_HEAVYARMOR_Info_14_03"); //Nem·ö dost rudy.
+		AI_Output			(self, other,"KDF_402_Corristo_HEAVYARMOR_Info_14_03"); //Nem√°≈° dost rudy.
 	}	
 	else
 	{	
-		AI_Output			(self, other,"KDF_402_Corristo_HEAVYARMOR_Info_14_04"); //Nadeöel Ëas. Jsi hoden nosit vzneöenÈ roucho OhnÏ.
+		AI_Output			(self, other,"KDF_402_Corristo_HEAVYARMOR_Info_14_04"); //Nade≈°el ƒças. Jsi hoden nosit vzne≈°en√© roucho Ohnƒõ.
 		
 		CreateInvItem		(hero,KDF_ARMOR_H);
 		

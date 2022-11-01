@@ -4,7 +4,7 @@
 
 
 // *************************************************************************
-// 									Vor Gespr‰ch
+// 									Vor Gespr√§ch
 // *************************************************************************
 
 INSTANCE Info_SFB_5_Pre(C_INFO)
@@ -60,7 +60,7 @@ INSTANCE Info_SFB_5_EinerVonEuchWerden (C_INFO)
 	condition	= Info_SFB_5_EinerVonEuchWerden_Condition;
 	information	= Info_SFB_5_EinerVonEuchWerden_Info;
 	permanent	= 1;
-	description = "Co kdybych se dal k v·m?";
+	description = "Co kdybych se dal k v√°m?";
 };                       
 
 FUNC INT Info_SFB_5_EinerVonEuchWerden_Condition()
@@ -73,11 +73,11 @@ FUNC INT Info_SFB_5_EinerVonEuchWerden_Condition()
 
 FUNC VOID Info_SFB_5_EinerVonEuchWerden_Info()
 {
-	AI_Output(other,self,"Info_SFB_5_EinerVonEuchWerden_15_00"); //Co kdybych se dal k v·m?
-	AI_Output(self,other,"Info_SFB_5_EinerVonEuchWerden_02_01"); //P¯idat se k n·m? Jako co? Jako nosiË vody?
-	AI_Output(other,self,"Info_SFB_5_EinerVonEuchWerden_15_02"); //Ne, jako ruda¯.
-	AI_Output(self,other,"Info_SFB_5_EinerVonEuchWerden_02_03"); //PodÌvej, nÏco ti ¯eknu: nikdo se DOBROVOLNÃ nestane ruda¯em.
-	AI_Output(self,other,"Info_SFB_5_EinerVonEuchWerden_02_04"); //Dobr·, kdyû na tom trv·ö... Jdi a promluv si se Swineym, vsadÌm se, ûe m· krump·Ë nazbyt a ûe ti ho r·d p¯enech·.
+	AI_Output(other,self,"Info_SFB_5_EinerVonEuchWerden_15_00"); //Co kdybych se dal k v√°m?
+	AI_Output(self,other,"Info_SFB_5_EinerVonEuchWerden_02_01"); //P≈ôidat se k n√°m? Jako co? Jako nosiƒç vody?
+	AI_Output(other,self,"Info_SFB_5_EinerVonEuchWerden_15_02"); //Ne, jako ruda≈ô.
+	AI_Output(self,other,"Info_SFB_5_EinerVonEuchWerden_02_03"); //Pod√≠vej, nƒõco ti ≈ôeknu: nikdo se DOBROVOLNƒö nestane ruda≈ôem.
+	AI_Output(self,other,"Info_SFB_5_EinerVonEuchWerden_02_04"); //Dobr√°, kdy≈æ na tom trv√°≈°... Jdi a promluv si se Swineym, vsad√≠m se, ≈æe m√° krump√°ƒç nazbyt a ≈æe ti ho r√°d p≈ôenech√°.
 };
 
 // *************************************************************************
@@ -90,7 +90,7 @@ INSTANCE Info_SFB_5_WichtigePersonen(C_INFO)
 	condition	= Info_SFB_5_WichtigePersonen_Condition;
 	information	= Info_SFB_5_WichtigePersonen_Info;
 	permanent	= 1;
-	description = "Kdo je tu nejd˘leûitÏjöÌ?";
+	description = "Kdo je tu nejd≈Øle≈æitƒõj≈°√≠?";
 };                       
 
 FUNC INT Info_SFB_5_WichtigePersonen_Condition()
@@ -100,11 +100,11 @@ FUNC INT Info_SFB_5_WichtigePersonen_Condition()
 
 FUNC VOID Info_SFB_5_WichtigePersonen_Info()
 {
-	AI_Output(other,self,"Info_SFB_5_WichtigePersonen_15_00"); //Kdo je tu nejd˘leûitÏjöÌ?
-	AI_Output(self,other,"Info_SFB_5_WichtigePersonen_02_01"); //Nejd˘leûitÏjöÌ? Samoz¯ejmÏ j·.
-	AI_Output(self,other,"Info_SFB_5_WichtigePersonen_02_02"); //MyslÌm, ûe vÌö, kdo tady velÌ.
-	AI_Output(self,other,"Info_SFB_5_WichtigePersonen_02_03"); //Dob¯e, asi by sis mÏl promluvit se ûold·ky nebo s bandity. K VodnÌm m·g˘m se nedostaneö.
-	AI_Output(self,other,"Info_SFB_5_WichtigePersonen_02_04"); //Ten velkohub˝ Swiney se dÏl· d˘leûitÏjöÌ neû je. P¯itom akor·t rozdÏluje krump·Ëe a dÏl·, co mu na¯ÌdÌ Okyl.
+	AI_Output(other,self,"Info_SFB_5_WichtigePersonen_15_00"); //Kdo je tu nejd≈Øle≈æitƒõj≈°√≠?
+	AI_Output(self,other,"Info_SFB_5_WichtigePersonen_02_01"); //Nejd≈Øle≈æitƒõj≈°√≠? Samoz≈ôejmƒõ j√°.
+	AI_Output(self,other,"Info_SFB_5_WichtigePersonen_02_02"); //Mysl√≠m, ≈æe v√≠≈°, kdo tady vel√≠.
+	AI_Output(self,other,"Info_SFB_5_WichtigePersonen_02_03"); //Dob≈ôe, asi by sis mƒõl promluvit se ≈æold√°ky nebo s bandity. K Vodn√≠m m√°g≈Øm se nedostane≈°.
+	AI_Output(self,other,"Info_SFB_5_WichtigePersonen_02_04"); //Ten velkohub√Ω Swiney se dƒõl√° d≈Øle≈æitƒõj≈°√≠ ne≈æ je. P≈ôitom akor√°t rozdƒõluje krump√°ƒçe a dƒõl√°, co mu na≈ô√≠d√≠ Okyl.
 };
 
 // *************************************************************************
@@ -117,7 +117,7 @@ INSTANCE Info_SFB_5_DasLager(C_INFO)
 	condition	= Info_SFB_5_DasLager_Condition;
 	information	= Info_SFB_5_DasLager_Info;
 	permanent	= 1;
-	description = "Co m˘ûe t·bor nabÌdnout?";
+	description = "Co m≈Ø≈æe t√°bor nab√≠dnout?";
 };                       
 
 FUNC INT Info_SFB_5_DasLager_Condition()
@@ -127,8 +127,8 @@ FUNC INT Info_SFB_5_DasLager_Condition()
 
 FUNC VOID Info_SFB_5_DasLager_Info()
 {
-	AI_Output(other,self,"Info_SFB_5_DasLager_15_00"); //Co m˘ûe t·bor nabÌdnout?
-	AI_Output(self,other,"Info_SFB_5_DasLager_02_01"); //Cokoliv, co si zaslouûÌö. Pro nÏkterÈ tu nenÌ nic neû pr·ce a pro jinÈ spousta uûÌv·nÌ.
+	AI_Output(other,self,"Info_SFB_5_DasLager_15_00"); //Co m≈Ø≈æe t√°bor nab√≠dnout?
+	AI_Output(self,other,"Info_SFB_5_DasLager_02_01"); //Cokoliv, co si zaslou≈æ√≠≈°. Pro nƒõkter√© tu nen√≠ nic ne≈æ pr√°ce a pro jin√© spousta u≈æ√≠v√°n√≠.
 };
 
 // *************************************************************************
@@ -141,7 +141,7 @@ INSTANCE Info_SFB_5_DieLage(C_INFO)
 	condition	= Info_SFB_5_DieLage_Condition;
 	information	= Info_SFB_5_DieLage_Info;
 	permanent	= 1;
-	description = "Jak se tady ûije?";
+	description = "Jak se tady ≈æije?";
 };                       
 
 FUNC INT Info_SFB_5_DieLage_Condition()
@@ -151,10 +151,10 @@ FUNC INT Info_SFB_5_DieLage_Condition()
 
 FUNC VOID Info_SFB_5_DieLage_Info()
 {
-	AI_Output(other,self,"Info_SFB_5_DieLage_15_00"); //Jak se tady ûije?
-	AI_Output(self,other,"Info_SFB_5_DieLage_02_01"); //Par·da!
-	AI_Output(self,other,"Info_SFB_5_DieLage_02_02"); //A protoûe jsme tu tak öùastnÌ, udÏl·me nejlÈpe, kdyû odsud vypadneme.
-	AI_Output(self,other,"Info_SFB_5_DieLage_02_03"); //Co si myslÌö, ûe tohle mÌsto je? Je to vÏzenÌ a ve vÏzenÌ nikdo ûÌt nechce.
+	AI_Output(other,self,"Info_SFB_5_DieLage_15_00"); //Jak se tady ≈æije?
+	AI_Output(self,other,"Info_SFB_5_DieLage_02_01"); //Par√°da!
+	AI_Output(self,other,"Info_SFB_5_DieLage_02_02"); //A proto≈æe jsme tu tak ≈°≈•astn√≠, udƒõl√°me nejl√©pe, kdy≈æ odsud vypadneme.
+	AI_Output(self,other,"Info_SFB_5_DieLage_02_03"); //Co si mysl√≠≈°, ≈æe tohle m√≠sto je? Je to vƒõzen√≠ a ve vƒõzen√≠ nikdo ≈æ√≠t nechce.
 	
 };	
 // *************************************************************************

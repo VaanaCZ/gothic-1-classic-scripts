@@ -1,5 +1,5 @@
 /*******************************************************************************************
-**	R¸stungswert-Multiplikator	                                         				  **
+**	R√ºstungswert-Multiplikator	                                         				  **
 *******************************************************************************************/
 const int	ARMOR_VALUE_MULTIPLIER	= 30;	// wird mit Schutzwert gegen EDGE-Schaden multipliziert
 
@@ -48,7 +48,7 @@ const int VALUE_SFB_ARMOR_L = 250;
 
 INSTANCE VLK_ARMOR_L(C_Item)
 {
-	name 					=	"LehkÈ kalhoty kop·Ëe";
+	name 					=	"Lehk√© kalhoty kop√°ƒçe";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -80,7 +80,7 @@ INSTANCE VLK_ARMOR_L(C_Item)
 /******************************************************************************************/
 INSTANCE VLK_ARMOR_M(C_Item)
 {
-	name 					=	"Kalhoty kop·Ëe";
+	name 					=	"Kalhoty kop√°ƒçe";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -114,7 +114,7 @@ INSTANCE VLK_ARMOR_M(C_Item)
 
 INSTANCE STT_ARMOR_M(C_Item)
 {
-	name 					=	"OdÏv StÌn˘";
+	name 					=	"Odƒõv St√≠n≈Ø";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -146,7 +146,7 @@ INSTANCE STT_ARMOR_M(C_Item)
 /******************************************************************************************/
 INSTANCE STT_ARMOR_H(C_Item)
 {
-	name 					=	"Zbroj StÌn˘";
+	name 					=	"Zbroj St√≠n≈Ø";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -180,7 +180,7 @@ INSTANCE STT_ARMOR_H(C_Item)
 
 INSTANCE GRD_ARMOR_L(C_Item)
 {
-	name 					=	"Lehk· zbroj str·ûce";
+	name 					=	"Lehk√° zbroj str√°≈æce";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -212,7 +212,7 @@ INSTANCE GRD_ARMOR_L(C_Item)
 /******************************************************************************************/
 INSTANCE GRD_ARMOR_M(C_Item)
 {
-	name 					=	"Zbroj str·ûce";
+	name 					=	"Zbroj str√°≈æce";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -244,7 +244,7 @@ INSTANCE GRD_ARMOR_M(C_Item)
 /******************************************************************************************/
 INSTANCE GRD_ARMOR_H(C_Item)
 {
-	name 					=	"TÏûk· zbroj str·ûce";
+	name 					=	"Tƒõ≈æk√° zbroj str√°≈æce";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -278,7 +278,7 @@ INSTANCE GRD_ARMOR_H(C_Item)
 
 INSTANCE EBR_ARMOR_M(C_Item)
 {
-	name 					=	"SlavnostnÌ roucho";
+	name 					=	"Slavnostn√≠ roucho";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -347,7 +347,7 @@ INSTANCE EBR_ARMOR_H(C_Item)
 /******************************************************************************************/
 INSTANCE EBR_ARMOR_H2(C_Item)
 {
-	name 					=	"TÏûk· zbroj Rudobarona";
+	name 					=	"Tƒõ≈æk√° zbroj Rudobarona";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -383,11 +383,11 @@ INSTANCE EBR_ARMOR_H2(C_Item)
 *******************************************************************************************/
 
 /******************************************************************************************/
-// Sch¸rferbund
+// Sch√ºrferbund
 
 instance SFB_ARMOR_L(C_Item)
 {
-	name 					=	"OdÏv kop·Ëe";
+	name 					=	"Odƒõv kop√°ƒçe";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -421,7 +421,7 @@ instance SFB_ARMOR_L(C_Item)
 
 INSTANCE ORG_ARMOR_L(C_Item)
 {
-	name 					=	"Lehk˝ oblek tul·ka";
+	name 					=	"Lehk√Ω oblek tul√°ka";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -453,7 +453,7 @@ INSTANCE ORG_ARMOR_L(C_Item)
 /******************************************************************************************/
 INSTANCE ORG_ARMOR_M(C_Item)
 {
-	name 					=	"OdÏv tul·ka";
+	name 					=	"Odƒõv tul√°ka";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -485,7 +485,7 @@ INSTANCE ORG_ARMOR_M(C_Item)
 /******************************************************************************************/
 INSTANCE ORG_ARMOR_H(C_Item)
 {
-	name 					=	"TÏûk˝ oblek tul·ka";
+	name 					=	"Tƒõ≈æk√Ω oblek tul√°ka";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -517,7 +517,7 @@ INSTANCE ORG_ARMOR_H(C_Item)
 /******************************************************************************************/
 INSTANCE SLD_ARMOR_L(C_Item)
 {
-	name 					=	"Lehk· zbroj ûold·ka";
+	name 					=	"Lehk√° zbroj ≈æold√°ka";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -549,7 +549,7 @@ INSTANCE SLD_ARMOR_L(C_Item)
 /******************************************************************************************/
 instance SLD_ARMOR_M(C_Item)
 {
-	name 					=	"Zbroj ûold·ka";
+	name 					=	"Zbroj ≈æold√°ka";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -581,7 +581,7 @@ instance SLD_ARMOR_M(C_Item)
 /******************************************************************************************/
 INSTANCE SLD_ARMOR_H(C_Item)
 {
-	name 					=	"TÏûk· zbroj ûold·ka";
+	name 					=	"Tƒõ≈æk√° zbroj ≈æold√°ka";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -620,7 +620,7 @@ INSTANCE SLD_ARMOR_H(C_Item)
 
 INSTANCE NOV_ARMOR_L(C_Item)
 {
-	name 					=	"BedernÌ rouöka novice";
+	name 					=	"Bedern√≠ rou≈°ka novice";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -652,7 +652,7 @@ INSTANCE NOV_ARMOR_L(C_Item)
 /******************************************************************************************/
 INSTANCE NOV_ARMOR_M(C_Item)
 {
-	name 					=	"Lehk· zbroj novice";
+	name 					=	"Lehk√° zbroj novice";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -718,7 +718,7 @@ INSTANCE NOV_ARMOR_H(C_Item)
 
 INSTANCE TPL_ARMOR_L(C_Item)
 {
-	name 					=	"Lehk· zbroj templ·¯e";
+	name 					=	"Lehk√° zbroj templ√°≈ôe";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -750,7 +750,7 @@ INSTANCE TPL_ARMOR_L(C_Item)
 /******************************************************************************************/
 INSTANCE TPL_ARMOR_M(C_Item)
 {
-	name 					=	"Zbroj templ·¯e";
+	name 					=	"Zbroj templ√°≈ôe";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -782,7 +782,7 @@ INSTANCE TPL_ARMOR_M(C_Item)
 /******************************************************************************************/
 INSTANCE TPL_ARMOR_H(C_Item)
 {
-	name 					=	"TÏûk· zbroj templ·¯e";
+	name 					=	"Tƒõ≈æk√° zbroj templ√°≈ôe";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -849,7 +849,7 @@ INSTANCE GUR_ARMOR_M(C_Item)
 /******************************************************************************************/
 INSTANCE GUR_ARMOR_H(C_Item)
 {
-	name 					=	"VzneöenÈ roucho Guru";
+	name 					=	"Vzne≈°en√© roucho Guru";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -888,7 +888,7 @@ INSTANCE GUR_ARMOR_H(C_Item)
 
 INSTANCE KDF_ARMOR_L(C_Item)
 {
-	name 					=	"Roucho OhnÏ";
+	name 					=	"Roucho Ohnƒõ";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -919,7 +919,7 @@ INSTANCE KDF_ARMOR_L(C_Item)
 /******************************************************************************************/
 INSTANCE KDF_ARMOR_H(C_Item)
 {
-	name 					=	"VzneöenÈ roucho OhnÏ";
+	name 					=	"Vzne≈°en√© roucho Ohnƒõ";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -984,7 +984,7 @@ INSTANCE KDW_ARMOR_L(C_Item)
 /******************************************************************************************/
 INSTANCE KDW_ARMOR_H(C_Item)
 {
-	name 					=	"VzneöenÈ roucho Vody";
+	name 					=	"Vzne≈°en√© roucho Vody";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -1013,11 +1013,11 @@ INSTANCE KDW_ARMOR_H(C_Item)
 };
 
 /******************************************************************************************/
-// D‰monenbeschwˆrer
+// D√§monenbeschw√∂rer
 
 INSTANCE DMB_ARMOR_M(C_Item)
 {
-	name 					=	"Roucho temn˝ch umÏnÌ";
+	name 					=	"Roucho temn√Ωch umƒõn√≠";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -1051,15 +1051,15 @@ INSTANCE DMB_ARMOR_M(C_Item)
 
 
 /*******************************************************************************************
-**	Spezial-R¸stungen                                                                     **
+**	Spezial-R√ºstungen                                                                     **
 *******************************************************************************************/
 
-// FIXME: hier fehlen noch die Visuals f¸r die Erz-R¸stungen und das INV-Item f¸r die CRAWLERPLATTEN-R‹STUNG 
+// FIXME: hier fehlen noch die Visuals f√ºr die Erz-R√ºstungen und das INV-Item f√ºr die CRAWLERPLATTEN-R√úSTUNG 
 
-// Crawler-Plattenr¸stung
+// Crawler-Plattenr√ºstung
 INSTANCE CRW_ARMOR_H(C_Item)
 {
-	name 					=	"Krun˝¯ d˘lnÌho Ëerva";
+	name 					=	"Krun√Ω≈ô d≈Øln√≠ho ƒçerva";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -1090,10 +1090,10 @@ INSTANCE CRW_ARMOR_H(C_Item)
 
 
 /******************************************************************************************/
-// Erz-R¸stungen
+// Erz-R√ºstungen
 INSTANCE ORE_ARMOR_M(C_Item)
 {
-	name 					=	"Starobyl· rudn· zbroj";
+	name 					=	"Starobyl√° rudn√° zbroj";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -1114,7 +1114,7 @@ INSTANCE ORE_ARMOR_M(C_Item)
 	material 				=	MAT_WOOD;
 
 	description				=	name;
-	TEXT[0]					=	"Tato starobyl· zbroj byla vyrobena z magickÈ rudy.";
+	TEXT[0]					=	"Tato starobyl√° zbroj byla vyrobena z magick√© rudy.";
 	TEXT[1]					=	NAME_Prot_Edge;			COUNT[1]	= protection	[PROT_EDGE];
 	TEXT[2]					=	NAME_Prot_Point;		COUNT[2]	= protection	[PROT_POINT];
 	TEXT[3] 				=	NAME_Prot_Fire;			COUNT[3]	= protection	[PROT_FIRE];
@@ -1124,7 +1124,7 @@ INSTANCE ORE_ARMOR_M(C_Item)
 
 INSTANCE ORE_ARMOR_H(C_Item)
 {
-	name 					=	"Vylepöen· zbroj z rudy.";
+	name 					=	"Vylep≈°en√° zbroj z rudy.";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -1145,7 +1145,7 @@ INSTANCE ORE_ARMOR_H(C_Item)
 	material 				=	MAT_WOOD;
 
 	description				=	name;
-	TEXT[0]					=	"Kov·¯ Stone ji dok·zal vylepöit!";
+	TEXT[0]					=	"Kov√°≈ô Stone ji dok√°zal vylep≈°it!";
 	TEXT[1]					=	NAME_Prot_Edge;			COUNT[1]	= protection	[PROT_EDGE];
 	TEXT[2]					=	NAME_Prot_Point;		COUNT[2]	= protection	[PROT_POINT];
 	TEXT[3] 				=	NAME_Prot_Fire;			COUNT[3]	= protection	[PROT_FIRE];
@@ -1197,11 +1197,11 @@ INSTANCE LAW_ARMOR (C_Item)
 
 
 /*******************************************************************************************
-**	Wache f¸r Intro-Cutscene                                                          **
+**	Wache f√ºr Intro-Cutscene                                                          **
 *******************************************************************************************/
 INSTANCE GRD_ARMOR_I(C_Item)
 {
-	name 					=	"Zbroj kr·lovskÈ str·ûe";
+	name 					=	"Zbroj kr√°lovsk√© str√°≈æe";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -1238,7 +1238,7 @@ INSTANCE GRD_ARMOR_I(C_Item)
 *******************************************************************************************/
 INSTANCE BAB_ARMOR_NUDE (C_Item)
 {
-	name 					=	"Nah· dÌvka";
+	name 					=	"Nah√° d√≠vka";
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
 	value 					=	1;
@@ -1260,7 +1260,7 @@ INSTANCE BAB_ARMOR_NUDE (C_Item)
 /******************************************************************************************/
 INSTANCE BAB_ARMOR_BIKINI (C_Item)
 {
-	name 					=	"DÌvka v bikin·ch";
+	name 					=	"D√≠vka v bikin√°ch";
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
 	value 					=	1;

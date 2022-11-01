@@ -36,7 +36,7 @@ INSTANCE Info_Pock_Wasser(C_INFO) // E1
 	condition	= Info_Pock_Wasser_Condition;
 	information	= Info_Pock_Wasser_Info;
 	permanent	= 1;
-	description = "Lefty mì poslal. Pøinesl jsem ti trochu vody.";
+	description = "Lefty mÄ› poslal. PÅ™inesl jsem ti trochu vody.";
 };                       
 
 FUNC INT Info_Pock_Wasser_Condition()
@@ -50,7 +50,7 @@ FUNC INT Info_Pock_Wasser_Condition()
 
 FUNC VOID Info_Pock_Wasser_Info()
 {
-	AI_Output(other,self,"Info_Pock_Wasser_15_00"); //Poslal mì Lefty. Pøinesl jsem trochu vody.
+	AI_Output(other,self,"Info_Pock_Wasser_15_00"); //Poslal mÄ› Lefty. PÅ™inesl jsem trochu vody.
 	if (Npc_HasItems(other, ItFo_Potion_Water_01)>=1)
 	{
 		B_GiveInvItems(other,self,ItFo_Potion_Water_01,1);
@@ -60,7 +60,7 @@ FUNC VOID Info_Pock_Wasser_Info()
 			AI_TurnToNpc	(self, hero);
 		};
 		AI_UseItem(self, ItFo_Potion_Water_01);
-		AI_Output(self,other,"Info_Pock_Wasser_04_01"); //Díky, chlapèe! To jsem potøeboval!
+		AI_Output(self,other,"Info_Pock_Wasser_04_01"); //DÃ­ky, chlapÄe! To jsem potÅ™eboval!
 		An_Bauern_verteilt = An_Bauern_verteilt+1;
 		if (An_Bauern_verteilt>=DurstigeBauern)
 		{
@@ -70,7 +70,7 @@ FUNC VOID Info_Pock_Wasser_Info()
 	}
 	else
 	{
-		AI_Output(self,other,"Info_Pock_Wasser_NOWATER_04_00"); //Tobì u ale nic nezbylo. Nevadí, hochu - øeknu ostatním.
+		AI_Output(self,other,"Info_Pock_Wasser_NOWATER_04_00"); //TobÄ› uÅ¾ ale nic nezbylo. NevadÃ­, hochu - Å™eknu ostatnÃ­m.
 	};
 };
 
@@ -85,7 +85,7 @@ INSTANCE DIA_Pock_Hello (C_INFO)
 	condition	= DIA_Pock_Hello_Condition;
 	information	= DIA_Pock_Hello_Info;
 	permanent	= 0;
-	description	= "Zdar! Jsem tady novı.";
+	description	= "Zdar! Jsem tady novÃ½.";
 };                       
 
 FUNC INT DIA_Pock_Hello_Condition()
@@ -98,14 +98,14 @@ FUNC INT DIA_Pock_Hello_Condition()
 
 FUNC VOID DIA_Pock_Hello_Info()
 {	
-	AI_Output (other, self,"DIA_Pock_Hello_15_00"); //Zdar! Jsem tady novı.
-	AI_Output (self, other,"DIA_Pock_Hello_04_01"); //Je pìkné vidìt zase novou tváø.
-	AI_Output (other, self,"DIA_Pock_Hello_15_02"); //Musíš tu bıt pìknì dlouho, viï?
-	AI_Output (self, other,"DIA_Pock_Hello_04_03"); //Proklatì dlouho, hochu. Byl jsem jeden z prvních.
+	AI_Output (other, self,"DIA_Pock_Hello_15_00"); //Zdar! Jsem tady novÃ½.
+	AI_Output (self, other,"DIA_Pock_Hello_04_01"); //Je pÄ›knÃ© vidÄ›t zase novou tvÃ¡Å™.
+	AI_Output (other, self,"DIA_Pock_Hello_15_02"); //MusÃ­Å¡ tu bÃ½t pÄ›knÄ› dlouho, viÄ?
+	AI_Output (self, other,"DIA_Pock_Hello_04_03"); //ProklatÄ› dlouho, hochu. Byl jsem jeden z prvnÃ­ch.
 };
 
 // ************************************************************
-// 						Weißt ne Menge
+// 						WeiÃŸt ne Menge
 // ************************************************************
 
 INSTANCE DIA_Pock_KnowMuch (C_INFO)
@@ -115,7 +115,7 @@ INSTANCE DIA_Pock_KnowMuch (C_INFO)
 	condition	= DIA_Pock_KnowMuch_Condition;
 	information	= DIA_Pock_KnowMuch_Info;
 	permanent	= 0;
-	description	= "Tedy toho musíš o tomhle místì hodnì vìdìt.";
+	description	= "Tedy toho musÃ­Å¡ o tomhle mÃ­stÄ› hodnÄ› vÄ›dÄ›t.";
 };                       
 
 FUNC INT DIA_Pock_KnowMuch_Condition()
@@ -128,9 +128,9 @@ FUNC INT DIA_Pock_KnowMuch_Condition()
 
 FUNC VOID DIA_Pock_KnowMuch_Info()
 {	
-	AI_Output (other, self,"DIA_Pock_KnowMuch_15_00"); //To toho musíš o tomhle místì hodnì vìdìt.
-	AI_Output (self, other,"DIA_Pock_KnowMuch_04_01"); //Taky e ano. Vìtšinu èasu jsem strávil venku sklízením rıe.
-	AI_Output (self, other,"DIA_Pock_KnowMuch_04_02"); // Jenom díky tomu jsem se doil takového stáøí. Dostávám trochu rıe a mizernou koøalku. Není to moc, ale staèí to.
+	AI_Output (other, self,"DIA_Pock_KnowMuch_15_00"); //To toho musÃ­Å¡ o tomhle mÃ­stÄ› hodnÄ› vÄ›dÄ›t.
+	AI_Output (self, other,"DIA_Pock_KnowMuch_04_01"); //Taky Å¾e ano. VÄ›tÅ¡inu Äasu jsem strÃ¡vil venku sklÃ­zenÃ­m rÃ½Å¾e.
+	AI_Output (self, other,"DIA_Pock_KnowMuch_04_02"); // Jenom dÃ­ky tomu jsem se doÅ¾il takovÃ©ho stÃ¡Å™Ã­. DostÃ¡vÃ¡m trochu rÃ½Å¾e a mizernou koÅ™alku. NenÃ­ to moc, ale staÄÃ­ to.
 };
 
 // ************************************************************
@@ -144,7 +144,7 @@ INSTANCE DIA_Pock_WhyJail (C_INFO)
 	condition	= DIA_Pock_WhyJail_Condition;
 	information	= DIA_Pock_WhyJail_Info;
 	permanent	= 0;
-	description	= "Proè tady jsi?";
+	description	= "ProÄ tady jsi?";
 };                       
 
 FUNC INT DIA_Pock_WhyJail_Condition()
@@ -157,10 +157,10 @@ FUNC INT DIA_Pock_WhyJail_Condition()
 
 FUNC VOID DIA_Pock_WhyJail_Info()
 {	
-	AI_Output (other, self,"DIA_Pock_WhyJail_15_00"); //Proè tady jsi?
-	AI_Output (self, other,"DIA_Pock_WhyJail_04_01"); //Danì, hochu, danì. Má chatrè byla prázdná jako mùj aludek a nemohl jsem platit.
-	AI_Output (self, other,"DIA_Pock_WhyJail_04_02"); //A tak jednoho dne pøišli vojáci a odvedli mì sem. Ale není to tu o nic horší ne tam. Tady aspoò neumírám hlady.
-	AI_Output (self, other,"DIA_Pock_WhyJail_04_03"); //Pøedtím jsem vdycky danì platil - celı ivot. Ale pro toho èubèího syna s korunou na hlavì to nebylo dost!
+	AI_Output (other, self,"DIA_Pock_WhyJail_15_00"); //ProÄ tady jsi?
+	AI_Output (self, other,"DIA_Pock_WhyJail_04_01"); //DanÄ›, hochu, danÄ›. MÃ¡ chatrÄ byla prÃ¡zdnÃ¡ jako mÅ¯j Å¾aludek a nemohl jsem platit.
+	AI_Output (self, other,"DIA_Pock_WhyJail_04_02"); //A tak jednoho dne pÅ™iÅ¡li vojÃ¡ci a odvedli mÄ› sem. Ale nenÃ­ to tu o nic horÅ¡Ã­ neÅ¾ tam. Tady aspoÅˆ neumÃ­rÃ¡m hlady.
+	AI_Output (self, other,"DIA_Pock_WhyJail_04_03"); //PÅ™edtÃ­m jsem vÅ¾dycky danÄ› platil - celÃ½ Å¾ivot. Ale pro toho ÄubÄÃ­ho syna s korunou na hlavÄ› to nebylo dost!
 };
 
 // ************************************************************
@@ -174,7 +174,7 @@ INSTANCE DIA_Pock_ForgotAll (C_INFO)
 	condition	= DIA_Pock_ForgotAll_Condition;
 	information	= DIA_Pock_ForgotAll_Info;
 	permanent	= 1;
-	description	= "Jinak jsi v poøádku?";
+	description	= "Jinak jsi v poÅ™Ã¡dku?";
 };                       
 
 FUNC INT DIA_Pock_ForgotAll_Condition()
@@ -187,10 +187,10 @@ FUNC INT DIA_Pock_ForgotAll_Condition()
 
 FUNC VOID DIA_Pock_ForgotAll_Info()
 {	
-	AI_Output (other, self,"DIA_Pock_ForgotAll_15_00"); //Jinak jsi v poøádku?
-	AI_Output (self, other,"DIA_Pock_ForgotAll_04_01"); //Je pìkné vidìt novou tváø.
-	AI_Output (other, self,"DIA_Pock_ForgotAll_15_02"); //Poèkej ještì! My u jsme spolu mluvili.
-	AI_Output (self, other,"DIA_Pock_ForgotAll_04_03"); //Ne! Ještì jsme neskonèili. Ještì nikdy jsem tì tu nevidìl.
-	AI_Output (other, self,"DIA_Pock_ForgotAll_15_04"); //Jistì...
+	AI_Output (other, self,"DIA_Pock_ForgotAll_15_00"); //Jinak jsi v poÅ™Ã¡dku?
+	AI_Output (self, other,"DIA_Pock_ForgotAll_04_01"); //Je pÄ›knÃ© vidÄ›t novou tvÃ¡Å™.
+	AI_Output (other, self,"DIA_Pock_ForgotAll_15_02"); //PoÄkej jeÅ¡tÄ›! My uÅ¾ jsme spolu mluvili.
+	AI_Output (self, other,"DIA_Pock_ForgotAll_04_03"); //Ne! JeÅ¡tÄ› jsme neskonÄili. JeÅ¡tÄ› nikdy jsem tÄ› tu nevidÄ›l.
+	AI_Output (other, self,"DIA_Pock_ForgotAll_15_04"); //JistÄ›...
 };
 

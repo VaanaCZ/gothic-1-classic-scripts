@@ -37,7 +37,7 @@ INSTANCE Info_Bau_9_WichtigePersonen(C_INFO)
 	condition	= Info_Bau_9_WichtigePersonen_Condition;
 	information	= Info_Bau_9_WichtigePersonen_Info;
 	permanent	= 1;
-	description = "Kdo má na starosti dohled nad plnìním plánu práce na tìch polích?";
+	description = "Kdo mÃ¡ na starosti dohled nad plnÄ›nÃ­m plÃ¡nu prÃ¡ce na tÄ›ch polÃ­ch?";
 };                       
 
 FUNC INT Info_Bau_9_WichtigePersonen_Condition()
@@ -47,9 +47,9 @@ FUNC INT Info_Bau_9_WichtigePersonen_Condition()
 
 FUNC VOID Info_Bau_9_WichtigePersonen_Info()
 {
-	AI_Output(other,self,"Info_Bau_9_WichtigePersonen_15_00"); //Kdo má na starosti dohled nad plnìním plánu práce na tìch polích?
-	AI_Output(self,other,"Info_Bau_9_WichtigePersonen_09_01"); //Každý! Rýžový Lord sice hlídá všechno, ale já mám dojem, že celé dny prosedí ve svém bunkru a poèítá pytle.
-	AI_Output(self,other,"Info_Bau_9_WichtigePersonen_09_02"); //On a Homer to všechno vymysleli.
+	AI_Output(other,self,"Info_Bau_9_WichtigePersonen_15_00"); //Kdo mÃ¡ na starosti dohled nad plnÄ›nÃ­m plÃ¡nu prÃ¡ce na tÄ›ch polÃ­ch?
+	AI_Output(self,other,"Info_Bau_9_WichtigePersonen_09_01"); //KaÅ¾dÃ½! RÃ½Å¾ovÃ½ Lord sice hlÃ­dÃ¡ vÅ¡echno, ale jÃ¡ mÃ¡m dojem, Å¾e celÃ© dny prosedÃ­ ve svÃ©m bunkru a poÄÃ­tÃ¡ pytle.
+	AI_Output(self,other,"Info_Bau_9_WichtigePersonen_09_02"); //On a Homer to vÅ¡echno vymysleli.
 	var C_NPC Ricelord;			Ricelord	= Hlp_GetNpc(Bau_900_Ricelord);
 	Ricelord.aivar[AIV_FINDABLE] = TRUE;	
 };
@@ -64,7 +64,7 @@ INSTANCE Info_Bau_9_DasLager(C_INFO)
 	condition	= Info_Bau_9_DasLager_Condition;
 	information	= Info_Bau_9_DasLager_Info;
 	permanent	= 1;
-	description = "Povídej mi o táboøe.";
+	description = "PovÃ­dej mi o tÃ¡boÅ™e.";
 };                       
 
 FUNC INT Info_Bau_9_DasLager_Condition()
@@ -74,9 +74,9 @@ FUNC INT Info_Bau_9_DasLager_Condition()
 
 FUNC VOID Info_Bau_9_DasLager_Info()
 {
-	AI_Output(other,self,"Info_Bau_9_DasLager_15_00"); //Povídej mi o táboøe.
-	AI_Output(self,other,"Info_Bau_9_DasLager_09_01"); //Je až po støechu plný bastardù. Kdyby bylo po mém, nechal bych žoldáky, aby všechny ty lotry z tábora vyházeli.
-	AI_Output(self,other,"Info_Bau_9_DasLager_09_02"); //Nedìlají nic...jenom problémy.
+	AI_Output(other,self,"Info_Bau_9_DasLager_15_00"); //PovÃ­dej mi o tÃ¡boÅ™e.
+	AI_Output(self,other,"Info_Bau_9_DasLager_09_01"); //Je aÅ¾ po stÅ™echu plnÃ½ bastardÅ¯. Kdyby bylo po mÃ©m, nechal bych Å¾oldÃ¡ky, aby vÅ¡echny ty lotry z tÃ¡bora vyhÃ¡zeli.
+	AI_Output(self,other,"Info_Bau_9_DasLager_09_02"); //NedÄ›lajÃ­ nic...jenom problÃ©my.
 };
 
 // *************************************************************************
@@ -99,8 +99,8 @@ FUNC INT Info_Bau_9_DieLage_Condition()
 
 FUNC VOID Info_Bau_9_DieLage_Info()
 {
-	AI_Output(other,self,"Info_Bau_9_DieLage_15_00"); //Jak se máš?
-	AI_Output(self,other,"Info_Bau_9_DieLage_09_01"); //Pracujeme do úmoru, abysme dostali nìco k jídlu!
+	AI_Output(other,self,"Info_Bau_9_DieLage_15_00"); //Jak se mÃ¡Å¡?
+	AI_Output(self,other,"Info_Bau_9_DieLage_09_01"); //Pracujeme do Ãºmoru, abysme dostali nÄ›co k jÃ­dlu!
 };
 
 // *************************************************************************
@@ -113,7 +113,7 @@ INSTANCE Info_Bau_9_Wasser(C_INFO) // E1
 	condition	= Info_Bau_9_Wasser_Condition;
 	information	= Info_Bau_9_Wasser_Info;
 	permanent	= 1;
-	description = "Lefty mì poslal. Pøinesl jsem ti trochu vody.";
+	description = "Lefty mÄ› poslal. PÅ™inesl jsem ti trochu vody.";
 };                       
 
 FUNC INT Info_Bau_9_Wasser_Condition()
@@ -127,7 +127,7 @@ FUNC INT Info_Bau_9_Wasser_Condition()
 
 FUNC VOID Info_Bau_9_Wasser_Info()
 {
-	AI_Output(other,self,"Info_Bau_9_Wasser_15_00"); //Lefty mì poslal. Pøinesl jsem ti trochu vody.
+	AI_Output(other,self,"Info_Bau_9_Wasser_15_00"); //Lefty mÄ› poslal. PÅ™inesl jsem ti trochu vody.
 	if (Npc_HasItems(other, ItFo_Potion_Water_01)>=1)
 	{
 		B_GiveInvItems		(other, self,	ItFo_Potion_Water_01, 1);
@@ -138,7 +138,7 @@ FUNC VOID Info_Bau_9_Wasser_Info()
 		};
 		AI_UseItem			(self,	ItFo_Potion_Water_01);
 
-		AI_Output			(self,other,"Info_Bau_9_Wasser_09_01"); //Díky, kamaráde! Ještì chvilku a zešílel bych žízní!
+		AI_Output			(self,other,"Info_Bau_9_Wasser_09_01"); //DÃ­ky, kamarÃ¡de! JeÅ¡tÄ› chvilku a zeÅ¡Ã­lel bych Å¾Ã­znÃ­!
 		
 		An_Bauern_verteilt = An_Bauern_verteilt+1;
 		if (An_Bauern_verteilt>=DurstigeBauern)
@@ -149,7 +149,7 @@ FUNC VOID Info_Bau_9_Wasser_Info()
 	}
 	else
 	{
-		AI_Output(self,other,"Info_Bau_9_Wasser_NOWATER_09_00"); //Už nic nezbylo. Vezmu trochu od ostatních.
+		AI_Output(self,other,"Info_Bau_9_Wasser_NOWATER_09_00"); //UÅ¾ nic nezbylo. Vezmu trochu od ostatnÃ­ch.
 	};
 };
 	

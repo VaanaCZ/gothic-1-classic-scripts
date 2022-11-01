@@ -45,9 +45,9 @@ FUNC INT DIA_Wolf_Hello_Condition()
 FUNC VOID DIA_Wolf_Hello_Info()
 {
 	AI_Output			(other, self,"DIA_Wolf_Hello_15_00"); //Kdo jsi?
-	AI_Output			(self, other,"DIA_Wolf_Hello_09_01"); //Jsem Wolf. Vyrábím zbroj.
+	AI_Output			(self, other,"DIA_Wolf_Hello_09_01"); //Jsem Wolf. VyrÃ¡bÃ­m zbroj.
 
-	B_LogEntry			(GE_TraderNC,"Wolf dodává banditùm zbroj. Obvykle bıvá ve své chatrèi v pøední èásti velké obytné jeskynì.");
+	B_LogEntry			(GE_TraderNC,"Wolf dodÃ¡vÃ¡ banditÅ¯m zbroj. Obvykle bÃ½vÃ¡ ve svÃ© chatrÄi v pÅ™ednÃ­ ÄÃ¡sti velkÃ© obytnÃ© jeskynÄ›.");
 };
 
 //****************************************
@@ -74,7 +74,7 @@ FUNC INT DIA_Wolf_GreetORG_Condition()
 
 FUNC VOID DIA_Wolf_GreetORG_Info()
 {
-	AI_Output (self, other,"DIA_Wolf_GreetORG_09_00"); //Hej! Teï jsi jedním z nás, chlapèe.
+	AI_Output (self, other,"DIA_Wolf_GreetORG_09_00"); //Hej! TeÄ jsi jednÃ­m z nÃ¡s, chlapÄe.
 };
 
 //****************************************
@@ -99,14 +99,14 @@ FUNC int  Org_855_Wolf_TRADE_Condition()
 
 FUNC void  Org_855_Wolf_TRADE_Info()
 {
-	AI_Output (other, self,"Org_855_Wolf_TRADE_15_00"); //Obchoduješ ještì s nìèím jinım?
-	AI_Output (self, other,"Org_855_Wolf_TRADE_09_01"); //Nakupuju od lovcù koešiny a kùe. Jestli nìco takového máš, koupím to.
+	AI_Output (other, self,"Org_855_Wolf_TRADE_15_00"); //ObchodujeÅ¡ jeÅ¡tÄ› s nÄ›ÄÃ­m jinÃ½m?
+	AI_Output (self, other,"Org_855_Wolf_TRADE_09_01"); //Nakupuju od lovcÅ¯ koÅ¾eÅ¡iny a kÅ¯Å¾e. Jestli nÄ›co takovÃ©ho mÃ¡Å¡, koupÃ­m to.
 	
 
 };
 
 //****************************************
-//				Wo Jäger
+//				Wo JÃ¤ger
 //****************************************
 
 instance  Org_855_Wolf_WhereHunter (C_INFO)
@@ -116,7 +116,7 @@ instance  Org_855_Wolf_WhereHunter (C_INFO)
 	condition		= Org_855_Wolf_WhereHunter_Condition;
 	information		= Org_855_Wolf_WhereHunter_Info;
 	permanent		= 1;
-	description		= "Jak stáhnu koešiny a kùe?"; 
+	description		= "Jak stÃ¡hnu koÅ¾eÅ¡iny a kÅ¯Å¾e?"; 
 };
 
 FUNC int  Org_855_Wolf_WhereHunter_Condition()
@@ -126,9 +126,9 @@ FUNC int  Org_855_Wolf_WhereHunter_Condition()
 
 FUNC void  Org_855_Wolf_WhereHunter_Info()
 {
-	AI_Output (other, self,"Org_855_Wolf_WhereHunter_15_00"); //Jak stáhnu koešiny a kùe?
-	AI_Output (self, other,"Org_855_Wolf_WhereHunter_09_01"); //Po cestì do Nového tábora pøijdeš k Aidanovi. Nauèí tì stahovat zvìø.
-	AI_Output (self, other,"Org_855_Wolf_WhereHunter_09_02"); //Ratford a Drax se potloukají severnì od Starého tábora. Je to po cestì k místu vımìny.
+	AI_Output (other, self,"Org_855_Wolf_WhereHunter_15_00"); //Jak stÃ¡hnu koÅ¾eÅ¡iny a kÅ¯Å¾e?
+	AI_Output (self, other,"Org_855_Wolf_WhereHunter_09_01"); //Po cestÄ› do NovÃ©ho tÃ¡bora pÅ™ijdeÅ¡ k Aidanovi. NauÄÃ­ tÄ› stahovat zvÄ›Å™.
+	AI_Output (self, other,"Org_855_Wolf_WhereHunter_09_02"); //Ratford a Drax se potloukajÃ­ severnÄ› od StarÃ©ho tÃ¡bora. Je to po cestÄ› k mÃ­stu vÃ½mÄ›ny.
 };
 
 //****************************************
@@ -142,7 +142,7 @@ INSTANCE DIA_Wolf_SellArmor (C_INFO)
 	condition	= DIA_Wolf_SellArmor_Condition;
 	information	= DIA_Wolf_SellArmor_Info;
 	permanent	= 1;
-	description = "Sháním lepší zbroj.";
+	description = "ShÃ¡nÃ­m lepÅ¡Ã­ zbroj.";
 };                       
 
 FUNC INT DIA_Wolf_SellArmor_Condition()
@@ -156,11 +156,11 @@ FUNC INT DIA_Wolf_SellArmor_Condition()
 
 FUNC VOID DIA_Wolf_SellArmor_Info()
 {
-	AI_Output (other, self,"DIA_Wolf_SellArmor_15_00"); //Sháním lepší zbroj.
+	AI_Output (other, self,"DIA_Wolf_SellArmor_15_00"); //ShÃ¡nÃ­m lepÅ¡Ã­ zbroj.
 	
 	if ( (Npc_GetTrueGuild(other)==GIL_ORG) || (Npc_GetTrueGuild(other)==GIL_SLD) )
 	{
-		AI_Output (self, other,"DIA_Wolf_SellArmor_09_01"); //Teï kdy jsi jedním z nás, mùu ti jednu prodat.
+		AI_Output (self, other,"DIA_Wolf_SellArmor_09_01"); //TeÄ kdyÅ¾ jsi jednÃ­m z nÃ¡s, mÅ¯Å¾u ti jednu prodat.
 
 		Info_ClearChoices 	(DIA_Wolf_SellArmor);
 		Info_Addchoice 		(DIA_Wolf_SellArmor,DIALOG_BACK														,DIA_Wolf_SellArmor_BACK);
@@ -169,7 +169,7 @@ FUNC VOID DIA_Wolf_SellArmor_Info()
 	}
 	else
 	{
-		AI_Output (self, other,"DIA_Wolf_SellArmor_WRONGGUILD_09_00"); //Nemùu ti nic prodat. Lares by mì zabil, kdybych prodal zbroj cizincùm.
+		AI_Output (self, other,"DIA_Wolf_SellArmor_WRONGGUILD_09_00"); //NemÅ¯Å¾u ti nic prodat. Lares by mÄ› zabil, kdybych prodal zbroj cizincÅ¯m.
 	};
 };
 
@@ -180,15 +180,15 @@ func void DIA_Wolf_SellArmor_BACK()
 
 func void DIA_Wolf_SellArmor_M()
 {
-	AI_Output (other, self,"DIA_Wolf_SellArmor_M_15_01"); //Chci støední zbroj.
+	AI_Output (other, self,"DIA_Wolf_SellArmor_M_15_01"); //Chci stÅ™ednÃ­ zbroj.
 	
 	if (Npc_HasItems (hero,ItMinugget)< VALUE_ORG_ARMOR_M)
 	{
-		AI_Output (self, other,"DIA_Wolf_SellArmor_M_09_02"); //ádná ruda, ádná zbroj.
+		AI_Output (self, other,"DIA_Wolf_SellArmor_M_09_02"); //Å½Ã¡dnÃ¡ ruda, Å¾Ã¡dnÃ¡ zbroj.
 	}
 	else 
 	{
-		AI_Output			(self, other,"DIA_Wolf_SellArmor_M_09_03"); //To je dobrá zbroj. Ne sice tak dobrá jako ta, co nosím já, ale ochrání tì také dobøe.
+		AI_Output			(self, other,"DIA_Wolf_SellArmor_M_09_03"); //To je dobrÃ¡ zbroj. Ne sice tak dobrÃ¡ jako ta, co nosÃ­m jÃ¡, ale ochrÃ¡nÃ­ tÄ› takÃ© dobÅ™e.
 
 		B_GiveInvItems		(hero, self,ItMinugget,VALUE_ORG_ARMOR_M);
 		
@@ -202,15 +202,15 @@ func void DIA_Wolf_SellArmor_M()
 
 func void DIA_Wolf_SellArmor_H()
 {
-	AI_Output (other,self,"DIA_Wolf_SellArmor_H_15_01"); //Mùeš mi prodat tìkou zbroj?
+	AI_Output (other,self,"DIA_Wolf_SellArmor_H_15_01"); //MÅ¯Å¾eÅ¡ mi prodat tÄ›Å¾kou zbroj?
 
 	if (Npc_HasItems (hero,ItMinugget) < VALUE_ORG_ARMOR_H) 
 	{
-		AI_Output (self, other,"DIA_Wolf_SellArmor_H_09_02"); //ádná ruda, ádná zbroj.
+		AI_Output (self, other,"DIA_Wolf_SellArmor_H_09_02"); //Å½Ã¡dnÃ¡ ruda, Å¾Ã¡dnÃ¡ zbroj.
 	}
 	else 
 	{
-		AI_Output			(self, other,"DIA_Wolf_SellArmor_H_09_03"); //Tahle zbroj tì ochrání pøed kadım nebezpeèím! Nosím ji sám a pøeívám u dost dlouho. V neposledním díky téhle zbroji.
+		AI_Output			(self, other,"DIA_Wolf_SellArmor_H_09_03"); //Tahle zbroj tÄ› ochrÃ¡nÃ­ pÅ™ed kaÅ¾dÃ½m nebezpeÄÃ­m! NosÃ­m ji sÃ¡m a pÅ™eÅ¾Ã­vÃ¡m uÅ¾ dost dlouho. V neposlednÃ­m dÃ­ky tÃ©hle zbroji.
 
 		B_GiveInvItems		(hero, self, ItMinugget,VALUE_ORG_ARMOR_H);
 		
@@ -234,7 +234,7 @@ instance  ORG_855_Wolf_TRAINOFFER (C_INFO)
 	information		= ORG_855_Wolf_TRAINOFFER_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Rád bych se nauèil zacházet s lukem."; 
+	description		= "RÃ¡d bych se nauÄil zachÃ¡zet s lukem."; 
 };
 
 FUNC int  ORG_855_Wolf_TRAINOFFER_Condition()
@@ -247,13 +247,13 @@ FUNC int  ORG_855_Wolf_TRAINOFFER_Condition()
 
 FUNC void  ORG_855_Wolf_TRAINOFFER_Info()
 {
-	AI_Output (other, self,"ORG_855_Wolf_TRAINOFFER_Info_15_01"); //Rád bych se nauèil zacházet s lukem.
-	AI_Output (self, other,"ORG_855_Wolf_TRAINOFFER_Info_09_02"); //Mùu tì to nauèit. Ale nemùu to dìlat jenom pro radost. Pøedevším musím také nìco jíst.
+	AI_Output (other, self,"ORG_855_Wolf_TRAINOFFER_Info_15_01"); //RÃ¡d bych se nauÄil zachÃ¡zet s lukem.
+	AI_Output (self, other,"ORG_855_Wolf_TRAINOFFER_Info_09_02"); //MÅ¯Å¾u tÄ› to nauÄit. Ale nemÅ¯Å¾u to dÄ›lat jenom pro radost. PÅ™edevÅ¡Ã­m musÃ­m takÃ© nÄ›co jÃ­st.
 	AI_Output (other, self,"ORG_855_Wolf_TRAINOFFER_Info_15_03"); //Kolik?
-	AI_Output (self, other,"ORG_855_Wolf_TRAINOFFER_Info_09_04"); //Všechno, co tì nauèím, bude stát 50 nugetù. A bez smlouvání.
+	AI_Output (self, other,"ORG_855_Wolf_TRAINOFFER_Info_09_04"); //VÅ¡echno, co tÄ› nauÄÃ­m, bude stÃ¡t 50 nugetÅ¯. A bez smlouvÃ¡nÃ­.
 	
 	Log_CreateTopic   	(GE_TeacherNC,	LOG_NOTE);
-	B_LogEntry			(GE_TeacherNC,"Bandita Wolf mì mùe nauèit pouívat LUK.");
+	B_LogEntry			(GE_TeacherNC,"Bandita Wolf mÄ› mÅ¯Å¾e nauÄit pouÅ¾Ã­vat LUK.");
 	
 };  
 /*------------------------------------------------------------------------
@@ -282,13 +282,13 @@ FUNC int  ORG_855_Wolf_TRAIN_Condition()
 };
 FUNC void  ORG_855_Wolf_TRAIN_Info()
 {
-	AI_Output (other, self,"ORG_855_Wolf_TRAIN_Info_15_01"); //Nauè mì zacházet s lukem.
+	AI_Output (other, self,"ORG_855_Wolf_TRAIN_Info_15_01"); //NauÄ mÄ› zachÃ¡zet s lukem.
 	if (Npc_HasItems (hero,ItMiNugget) >= 50) 
 	{
 		if B_GiveSkill(hero,NPC_TALENT_BOW,1,LPCOST_TALENT_BOW_1)
 		{
-			AI_Output (self, other,"ORG_855_Wolf_TRAIN_Info_09_02"); //Tvùj zásah záleí na tvé zruènosti. Èím pohotovìjší budeš, tím pøesnìji zasáhne tvùj šíp cíl.
-			AI_Output (self, other,"ORG_855_Wolf_TRAIN_Info_09_03"); //Tvoje obratnost urèuje vzdálenost, ze které dokáeš zasáhnout cíl. Aby se z tebe stal dobrı støelec, mìl bys vylepšovat obojí rovnomìrnì.
+			AI_Output (self, other,"ORG_855_Wolf_TRAIN_Info_09_02"); //TvÅ¯j zÃ¡sah zÃ¡leÅ¾Ã­ na tvÃ© zruÄnosti. ÄŒÃ­m pohotovÄ›jÅ¡Ã­ budeÅ¡, tÃ­m pÅ™esnÄ›ji zasÃ¡hne tvÅ¯j Å¡Ã­p cÃ­l.
+			AI_Output (self, other,"ORG_855_Wolf_TRAIN_Info_09_03"); //Tvoje obratnost urÄuje vzdÃ¡lenost, ze kterÃ© dokÃ¡Å¾eÅ¡ zasÃ¡hnout cÃ­l. Aby se z tebe stal dobrÃ½ stÅ™elec, mÄ›l bys vylepÅ¡ovat obojÃ­ rovnomÄ›rnÄ›.
 			B_GiveInvItems (hero, self, ItMiNugget,50);
 		};
 	};
@@ -319,15 +319,15 @@ FUNC int  ORG_855_Wolf_TRAINAGAIN_Condition()
 };
 FUNC void  ORG_855_Wolf_TRAINAGAIN_Info()
 {
-	AI_Output (other, self,"ORG_855_Wolf_TRAINAGAIN_Info_15_01"); //Chci se zlepšit v umìní lukostøelby.
+	AI_Output (other, self,"ORG_855_Wolf_TRAINAGAIN_Info_15_01"); //Chci se zlepÅ¡it v umÄ›nÃ­ lukostÅ™elby.
 	if (Npc_HasItems (hero,ItMiNugget) >= 50) 
 	{
 		if B_GiveSkill(hero,NPC_TALENT_BOW,2,LPCOST_TALENT_BOW_2)
 		{
-			AI_Output (self, other,"ORG_855_Wolf_TRAINAGAIN_Info_09_02"); //U je z tebe dobrı lovec. Teï si osvojíš zbıvající znalosti.
-			AI_Output (self, other,"ORG_855_Wolf_TRAINAGAIN_Info_09_03"); //Aby ses stal dobrım støelcem, musíš se o to pøestat snait.
-			AI_Output (self, other,"ORG_855_Wolf_TRAINAGAIN_Info_09_04"); //Objev zákony zraku, napìtí, dráhy a cíle. Vdy buï ve støehu a buï pøipravenı.
-			AI_Output (self, other,"ORG_855_Wolf_TRAINAGAIN_Info_09_05"); //Teï u jsi velmi dobøe zvládl techniku. Tak pojï a vyzkoušej své znalosti a umìní.
+			AI_Output (self, other,"ORG_855_Wolf_TRAINAGAIN_Info_09_02"); //UÅ¾ je z tebe dobrÃ½ lovec. TeÄ si osvojÃ­Å¡ zbÃ½vajÃ­cÃ­ znalosti.
+			AI_Output (self, other,"ORG_855_Wolf_TRAINAGAIN_Info_09_03"); //Aby ses stal dobrÃ½m stÅ™elcem, musÃ­Å¡ se o to pÅ™estat snaÅ¾it.
+			AI_Output (self, other,"ORG_855_Wolf_TRAINAGAIN_Info_09_04"); //Objev zÃ¡kony zraku, napÄ›tÃ­, drÃ¡hy a cÃ­le. VÅ¾dy buÄ ve stÅ™ehu a buÄ pÅ™ipravenÃ½.
+			AI_Output (self, other,"ORG_855_Wolf_TRAINAGAIN_Info_09_05"); //TeÄ uÅ¾ jsi velmi dobÅ™e zvlÃ¡dl techniku. Tak pojÄ a vyzkouÅ¡ej svÃ© znalosti a umÄ›nÃ­.
 			
 			B_GiveInvItems (hero, self, ItMiNugget,50);
 		};
@@ -343,7 +343,7 @@ INSTANCE ORG_855_Wolf_Teach(C_INFO)
 	condition	= ORG_855_Wolf_Teach_Condition;
 	information	= ORG_855_Wolf_Teach_Info;
 	permanent	= 1;
-	description = "Mùeš mì nìco nauèit?";
+	description = "MÅ¯Å¾eÅ¡ mÄ› nÄ›co nauÄit?";
 };                       
 
 FUNC INT ORG_855_Wolf_Teach_Condition()
@@ -356,13 +356,13 @@ FUNC INT ORG_855_Wolf_Teach_Condition()
 
 FUNC VOID ORG_855_Wolf_Teach_Info()
 {
-	AI_Output(other,self,"ORG_855_Wolf_Teach_15_00"); //Mùeš mì nìco nauèit?
-	AI_Output(self,other,"ORG_855_Wolf_Teach_09_01"); //Tvá zruènost pøedurèuje úspìch pøi lovu.
+	AI_Output(other,self,"ORG_855_Wolf_Teach_15_00"); //MÅ¯Å¾eÅ¡ mÄ› nÄ›co nauÄit?
+	AI_Output(self,other,"ORG_855_Wolf_Teach_09_01"); //TvÃ¡ zruÄnost pÅ™edurÄuje ÃºspÄ›ch pÅ™i lovu.
 	
 	if (log_wolftrain == FALSE)
 	{
 	Log_CreateTopic   	(GE_TeacherNC,LOG_NOTE);
-	B_LogEntry			(GE_TeacherNC,"Bandita Wolf mi mùe ukázat, jak si zlepšit OBRATNOST.");
+	B_LogEntry			(GE_TeacherNC,"Bandita Wolf mi mÅ¯Å¾e ukÃ¡zat, jak si zlepÅ¡it OBRATNOST.");
 	log_wolftrain = TRUE;
 	};
 	
@@ -417,7 +417,7 @@ INSTANCE Info_Wolf_GOOD (C_INFO)
 	information	= Info_Wolf_GOOD_Info;
 	important	= 0;	
 	permanent	= 0;
-	description = "Gorn øíkal, e mi potøebuješ nìco naléhavého sdìlit?";
+	description = "Gorn Å™Ã­kal, Å¾e mi potÅ™ebujeÅ¡ nÄ›co nalÃ©havÃ©ho sdÄ›lit?";
 };                       
 
 FUNC INT Info_Wolf_GOOD_Condition()
@@ -430,12 +430,12 @@ FUNC INT Info_Wolf_GOOD_Condition()
 
 func VOID Info_Wolf_GOOD_Info()
 {
-	AI_Output 			(hero,self,"Info_Wolf_GOOD_15_01"); //Gorn øíkal, e mi potøebuješ nìco naléhavého sdìlit?
-	AI_Output 			(self,hero,"Info_Wolf_GOOD_09_02"); //Jsem rád, e ses pøed odchodem ještì zastavil!
+	AI_Output 			(hero,self,"Info_Wolf_GOOD_15_01"); //Gorn Å™Ã­kal, Å¾e mi potÅ™ebujeÅ¡ nÄ›co nalÃ©havÃ©ho sdÄ›lit?
+	AI_Output 			(self,hero,"Info_Wolf_GOOD_09_02"); //Jsem rÃ¡d, Å¾e ses pÅ™ed odchodem jeÅ¡tÄ› zastavil!
 	if (!Npc_KnowsInfo(hero,Info_Gorn_FMCENTRANCE))
 	{
-		AI_Output 			(hero,self,"Info_Wolf_GOOD_15_03"); //Pøed èím?
-		AI_Output 			(self,hero,"Info_Wolf_GOOD_09_04"); //Pøed tím, ne odejdeš navštívit ten 'Nepøíliš Svobodnı dùl'.
+		AI_Output 			(hero,self,"Info_Wolf_GOOD_15_03"); //PÅ™ed ÄÃ­m?
+		AI_Output 			(self,hero,"Info_Wolf_GOOD_09_04"); //PÅ™ed tÃ­m, neÅ¾ odejdeÅ¡ navÅ¡tÃ­vit ten 'NepÅ™Ã­liÅ¡ SvobodnÃ½ dÅ¯l'.
 	};
 };
 
@@ -449,7 +449,7 @@ INSTANCE Info_Wolf_SPEAK (C_INFO)
 	information	= Info_Wolf_SPEAK_Info;
 	important	= 0;	
 	permanent	= 0;
-	description = "Co se dìje?";
+	description = "Co se dÄ›je?";
 };                       
 
 FUNC INT Info_Wolf_SPEAK_Condition()
@@ -462,14 +462,14 @@ FUNC INT Info_Wolf_SPEAK_Condition()
 
 func VOID Info_Wolf_SPEAK_Info()
 {
-	AI_Output 			(hero,self,"Info_Wolf_SPEAK_15_01"); //Co se dìje?
-	AI_Output 			(self,hero,"Info_Wolf_SPEAK_09_02"); //Dostal jsem nápad jak vyrobit úplnì novou zbroj.
+	AI_Output 			(hero,self,"Info_Wolf_SPEAK_15_01"); //Co se dÄ›je?
+	AI_Output 			(self,hero,"Info_Wolf_SPEAK_09_02"); //Dostal jsem nÃ¡pad jak vyrobit ÃºplnÄ› novou zbroj.
 	AI_Output 			(hero,self,"Info_Wolf_SPEAK_15_03"); //Och, a jak?
-	AI_Output 			(self,hero,"Info_Wolf_SPEAK_09_04"); //Pancéøové krunıøe dùlních èervù jsou z nejpevnìjšího materiálu, kterı znám.
-	AI_Output 			(self,hero,"Info_Wolf_SPEAK_09_05"); //Nemyslím ty malé nepoškozené vzorky, které se našly v Gomezovì zakopaném dole...
-	AI_Output 			(self,hero,"Info_Wolf_SPEAK_09_06"); //...NEEE. Ty ne. V našem dole je daleko nebezpeènìjší typ.
-	AI_Output 			(self,hero,"Info_Wolf_SPEAK_09_07"); //Brnìní tìch bestií je témìø neprorazitelné.
-	AI_Output 			(self,hero,"Info_Wolf_SPEAK_09_08"); //Kdy mi pøineseš pár tìch ochrannıch plátù, pokusím se z nich vyrobit zbroj...
+	AI_Output 			(self,hero,"Info_Wolf_SPEAK_09_04"); //PancÃ©Å™ovÃ© krunÃ½Å™e dÅ¯lnÃ­ch ÄervÅ¯ jsou z nejpevnÄ›jÅ¡Ã­ho materiÃ¡lu, kterÃ½ znÃ¡m.
+	AI_Output 			(self,hero,"Info_Wolf_SPEAK_09_05"); //NemyslÃ­m ty malÃ© nepoÅ¡kozenÃ© vzorky, kterÃ© se naÅ¡ly v GomezovÄ› zakopanÃ©m dole...
+	AI_Output 			(self,hero,"Info_Wolf_SPEAK_09_06"); //...NEEE. Ty ne. V naÅ¡em dole je daleko nebezpeÄnÄ›jÅ¡Ã­ typ.
+	AI_Output 			(self,hero,"Info_Wolf_SPEAK_09_07"); //BrnÄ›nÃ­ tÄ›ch bestiÃ­ je tÃ©mÄ›Å™ neprorazitelnÃ©.
+	AI_Output 			(self,hero,"Info_Wolf_SPEAK_09_08"); //KdyÅ¾ mi pÅ™ineseÅ¡ pÃ¡r tÄ›ch ochrannÃ½ch plÃ¡tÅ¯, pokusÃ­m se z nich vyrobit zbroj...
 };
 
 //---------------------------------------------------------------------
@@ -482,7 +482,7 @@ INSTANCE Info_Wolf_SKIN (C_INFO)
 	information	= Info_Wolf_SKIN_Info;
 	important	= 0;	
 	permanent	= 0;
-	description = "Jak dostanu krunıø z tìch bestií?";
+	description = "Jak dostanu krunÃ½Å™ z tÄ›ch bestiÃ­?";
 };                       
 
 FUNC INT Info_Wolf_SKIN_Condition()
@@ -495,20 +495,20 @@ FUNC INT Info_Wolf_SKIN_Condition()
 
 func VOID Info_Wolf_SKIN_Info()
 {
-	AI_Output 			(hero,self,"Info_Wolf_SKIN_15_01"); //Jak ty pláty z tìch bestií dostanu?
-	AI_Output 			(self,hero,"Info_Wolf_SKIN_09_02"); //To je celkem snadné. Zadní pláty jsou pøipevnìné k tìlu jenom podél okrajù.
-	AI_Output 			(self,hero,"Info_Wolf_SKIN_09_03"); //Vezmi bøitvu a odøízni je podél teèkované èáry.
-	AI_Output 			(hero,self,"Info_Wolf_SKIN_15_04"); //Dobøe, mám to! Podívám se, jestli takové ochranné pláty nenajdu.
+	AI_Output 			(hero,self,"Info_Wolf_SKIN_15_01"); //Jak ty plÃ¡ty z tÄ›ch bestiÃ­ dostanu?
+	AI_Output 			(self,hero,"Info_Wolf_SKIN_09_02"); //To je celkem snadnÃ©. ZadnÃ­ plÃ¡ty jsou pÅ™ipevnÄ›nÃ© k tÄ›lu jenom podÃ©l okrajÅ¯.
+	AI_Output 			(self,hero,"Info_Wolf_SKIN_09_03"); //Vezmi bÅ™itvu a odÅ™Ã­zni je podÃ©l teÄkovanÃ© ÄÃ¡ry.
+	AI_Output 			(hero,self,"Info_Wolf_SKIN_15_04"); //DobÅ™e, mÃ¡m to! PodÃ­vÃ¡m se, jestli takovÃ© ochrannÃ© plÃ¡ty nenajdu.
 
 	Knows_GetMCPlates = TRUE;
-	PrintScreen	("Nauèit se: Odøíznout ochranné pláty", -1,-1,"FONT_OLD_20_WHITE.TGA",3);
+	PrintScreen	("NauÄit se: OdÅ™Ã­znout ochrannÃ© plÃ¡ty", -1,-1,"FONT_OLD_20_WHITE.TGA",3);
 	
 	Log_CreateTopic		(CH4_MCPlateArmor,	LOG_MISSION);
 	Log_SetTopicStatus	(CH4_MCPlateArmor,	LOG_RUNNING);
-	B_LogEntry			(CH4_MCPlateArmor,"Bandita Wolf z Nového tábora mi nabídl, e mi zhotoví brnìní z ochrannıch krunıøù dùlních èervù. Ukázal mi, jak se z mrtvého dùlního èerva odøezávají."); 
+	B_LogEntry			(CH4_MCPlateArmor,"Bandita Wolf z NovÃ©ho tÃ¡bora mi nabÃ­dl, Å¾e mi zhotovÃ­ brnÄ›nÃ­ z ochrannÃ½ch krunÃ½Å™Å¯ dÅ¯lnÃ­ch ÄervÅ¯. UkÃ¡zal mi, jak se z mrtvÃ©ho dÅ¯lnÃ­ho Äerva odÅ™ezÃ¡vajÃ­."); 
 	
 	Log_CreateTopic (GE_AnimalTrophies,LOG_NOTE);
-	B_LogEntry (GE_AnimalTrophies,"Znalost odstranìní krunıøù - dùlní èerv - bojovník");
+	B_LogEntry (GE_AnimalTrophies,"Znalost odstranÄ›nÃ­ krunÃ½Å™Å¯ - dÅ¯lnÃ­ Äerv - bojovnÃ­k");
 
 	AI_StopProcessInfos	(self);
 };
@@ -523,7 +523,7 @@ INSTANCE Info_Wolf_PROFIT (C_INFO)
 	information	= Info_Wolf_PROFIT_Info;
 	important	= 0;	
 	permanent	= 0;
-	description = "A øíkáš mi to jen tak, ani bys za to nìco chtìl?";
+	description = "A Å™Ã­kÃ¡Å¡ mi to jen tak, aniÅ¾ bys za to nÄ›co chtÄ›l?";
 };                       
 
 FUNC INT Info_Wolf_PROFIT_Condition()
@@ -536,8 +536,8 @@ FUNC INT Info_Wolf_PROFIT_Condition()
 
 func VOID Info_Wolf_PROFIT_Info()
 {
-	AI_Output 			(hero,self,"Info_Wolf_PROFIT_15_01"); //A øíkáš mi to jen tak, ani bys za to nìco chtìl?
-	AI_Output 			(self,hero,"Info_Wolf_PROFIT_09_02"); //Ne tak docela...Pokud se mi z tìch plátù podaøí vyrobit dobrou zbroj, budu.. hodnì brzy... hodnì moc... och, zapomeò na to!
+	AI_Output 			(hero,self,"Info_Wolf_PROFIT_15_01"); //A Å™Ã­kÃ¡Å¡ mi to jen tak, aniÅ¾ bys za to nÄ›co chtÄ›l?
+	AI_Output 			(self,hero,"Info_Wolf_PROFIT_09_02"); //Ne tak docela...Pokud se mi z tÄ›ch plÃ¡tÅ¯ podaÅ™Ã­ vyrobit dobrou zbroj, budu.. hodnÄ› brzy... hodnÄ› moc... och, zapomeÅˆ na to!
 };
 
 //---------------------------------------------------------------------
@@ -550,7 +550,7 @@ INSTANCE Info_Wolf_MCPLATESFEW (C_INFO)
 	information	= Info_Wolf_MCPLATESFEW_Info;
 	important	= 0;	
 	permanent	= 0;
-	description = "Nasbíral jsem nìjaké ty krunıøe  dùlních èervù!";
+	description = "NasbÃ­ral jsem nÄ›jakÃ© ty krunÃ½Å™e  dÅ¯lnÃ­ch ÄervÅ¯!";
 };                       
 
 FUNC INT Info_Wolf_MCPLATESFEW_Condition()
@@ -565,9 +565,9 @@ FUNC INT Info_Wolf_MCPLATESFEW_Condition()
 
 func VOID Info_Wolf_MCPLATESFEW_Info()
 {
-	AI_Output 			(hero,self,"Info_Wolf_MCPLATESFEW_15_01"); //Nasbíral jsem nìjaké ty ochranné pláty z dùlních èervù!
-	AI_Output 			(self,hero,"Info_Wolf_MCPLATESFEW_09_02"); //To nestaèí! To nestaèí na celou zbroj.
-	AI_Output 			(self,hero,"Info_Wolf_MCPLATESFEW_09_03"); //Pøines ještì další pláty!
+	AI_Output 			(hero,self,"Info_Wolf_MCPLATESFEW_15_01"); //NasbÃ­ral jsem nÄ›jakÃ© ty ochrannÃ© plÃ¡ty z dÅ¯lnÃ­ch ÄervÅ¯!
+	AI_Output 			(self,hero,"Info_Wolf_MCPLATESFEW_09_02"); //To nestaÄÃ­! To nestaÄÃ­ na celou zbroj.
+	AI_Output 			(self,hero,"Info_Wolf_MCPLATESFEW_09_03"); //PÅ™ines jeÅ¡tÄ› dalÅ¡Ã­ plÃ¡ty!
 };
 
 //---------------------------------------------------------------------
@@ -580,7 +580,7 @@ INSTANCE Info_Wolf_MCPLATESENOUGH (C_INFO)
 	information	= Info_Wolf_MCPLATESENOUGH_Info;
 	important	= 0;	
 	permanent	= 0;
-	description = "U jsem nasbíral dost krunıøù dùlních èervù!";
+	description = "UÅ¾ jsem nasbÃ­ral dost krunÃ½Å™Å¯ dÅ¯lnÃ­ch ÄervÅ¯!";
 };                       
 
 FUNC INT Info_Wolf_MCPLATESENOUGH_Condition()
@@ -594,15 +594,15 @@ FUNC INT Info_Wolf_MCPLATESENOUGH_Condition()
 
 func VOID Info_Wolf_MCPLATESENOUGH_Info()
 {
-	AI_Output 			(hero,self,"Info_Wolf_MCPLATESENOUGH_15_01"); //U jsem nasbíral dost ochrannıch plátù z dùlních èervù!
-	AI_Output 			(self,hero,"Info_Wolf_MCPLATESENOUGH_09_02"); //Vynikající!!! Mùu se ihned pustit do práce!
+	AI_Output 			(hero,self,"Info_Wolf_MCPLATESENOUGH_15_01"); //UÅ¾ jsem nasbÃ­ral dost ochrannÃ½ch plÃ¡tÅ¯ z dÅ¯lnÃ­ch ÄervÅ¯!
+	AI_Output 			(self,hero,"Info_Wolf_MCPLATESENOUGH_09_02"); //VynikajÃ­cÃ­!!! MÅ¯Å¾u se ihned pustit do prÃ¡ce!
 	AI_Output 			(hero,self,"Info_Wolf_MCPLATESENOUGH_15_03"); //Jak dlouho to bude trvat?
-	AI_Output 			(self,hero,"Info_Wolf_MCPLATESENOUGH_09_04"); //Nemám nejmenší pøedstavu. Je to úplnì novı postup, èlovìèe!
-	AI_Output 			(self,hero,"Info_Wolf_MCPLATESENOUGH_09_05"); //Prostì se tu obèas zastav, kdy budeš nìkde blízko!
+	AI_Output 			(self,hero,"Info_Wolf_MCPLATESENOUGH_09_04"); //NemÃ¡m nejmenÅ¡Ã­ pÅ™edstavu. Je to ÃºplnÄ› novÃ½ postup, ÄlovÄ›Äe!
+	AI_Output 			(self,hero,"Info_Wolf_MCPLATESENOUGH_09_05"); //ProstÄ› se tu obÄas zastav, kdyÅ¾ budeÅ¡ nÄ›kde blÃ­zko!
 
 	MCPlatesDelivered = TRUE;
 
-	B_LogEntry			(CH4_MCPlateArmor,"Wolf ode mì dostal patnáct takovıchto krunıøù dùlních èervù. Mám se vrátit pozdìji.");
+	B_LogEntry			(CH4_MCPlateArmor,"Wolf ode mÄ› dostal patnÃ¡ct takovÃ½chto krunÃ½Å™Å¯ dÅ¯lnÃ­ch ÄervÅ¯. MÃ¡m se vrÃ¡tit pozdÄ›ji.");
 	B_GiveXP			(XP_DeliveredMCPlates);
 	
 	B_GiveInvItems	(hero, self, ItAt_Crawler_02,	15);
@@ -619,7 +619,7 @@ INSTANCE Info_Wolf_ARMORINWORK (C_INFO)
 	information	= Info_Wolf_ARMORINWORK_Info;
 	important	= 0;	
 	permanent	= 1;
-	description = "Jak jsi daleko s tou zbrojí?";
+	description = "Jak jsi daleko s tou zbrojÃ­?";
 };                       
 
 FUNC INT Info_Wolf_ARMORINWORK_Condition()
@@ -633,9 +633,9 @@ FUNC INT Info_Wolf_ARMORINWORK_Condition()
 
 func VOID Info_Wolf_ARMORINWORK_Info()
 {
-	AI_Output 			(hero,self,"Info_Wolf_ARMORINWORK_15_01"); //Jak jsi daleko s tou zbrojí?
-	AI_Output 			(self,hero,"Info_Wolf_ARMORINWORK_09_02"); //Bude to asi chvilku trvat, èlovìèe! Tyhle pláty jsou opravdu tìkı materiál. Ještì jsem poøád nepøišel na zpùsob, jak je spojit dohromady!
-	AI_Output 			(self,hero,"Info_Wolf_ARMORINWORK_09_03"); //Dej mi ještì èas, pøijdu na to!
+	AI_Output 			(hero,self,"Info_Wolf_ARMORINWORK_15_01"); //Jak jsi daleko s tou zbrojÃ­?
+	AI_Output 			(self,hero,"Info_Wolf_ARMORINWORK_09_02"); //Bude to asi chvilku trvat, ÄlovÄ›Äe! Tyhle plÃ¡ty jsou opravdu tÄ›Å¾kÃ½ materiÃ¡l. JeÅ¡tÄ› jsem poÅ™Ã¡d nepÅ™iÅ¡el na zpÅ¯sob, jak je spojit dohromady!
+	AI_Output 			(self,hero,"Info_Wolf_ARMORINWORK_09_03"); //Dej mi jeÅ¡tÄ› Äas, pÅ™ijdu na to!
 	AI_StopProcessInfos	(self);
 };
 
@@ -649,7 +649,7 @@ INSTANCE Info_Wolf_ARMORFINISHED (C_INFO)
 	information	= Info_Wolf_ARMORFINISHED_Info;
 	important	= 0;	
 	permanent	= 0;
-	description = "Jak jsi daleko s tou zbrojí?";
+	description = "Jak jsi daleko s tou zbrojÃ­?";
 };                       
 
 FUNC INT Info_Wolf_ARMORFINISHED_Condition()
@@ -663,14 +663,14 @@ FUNC INT Info_Wolf_ARMORFINISHED_Condition()
 
 func VOID Info_Wolf_ARMORFINISHED_Info()
 {
-	AI_Output 			(hero,self,"Info_Wolf_ARMORFINISHED_15_01"); //Jak daleko ses dostal s tou zbrojí?
-	AI_Output 			(self,hero,"Info_Wolf_ARMORFINISHED_09_02"); //Nakonec jsem pøišel na to, jak ty ochranné pláty spojit dohromady!
-	AI_Output 			(hero,self,"Info_Wolf_ARMORFINISHED_15_03"); //Znamená to, e je zbroj hotova?
-	AI_Output 			(self,hero,"Info_Wolf_ARMORFINISHED_09_04"); //Ano, èlovìèe. Tady je. Vypadá doopravdy silnìjší ne jakákoliv jiná zbroj tady v táboøe.
-	AI_Output 			(hero,self,"Info_Wolf_ARMORFINISHED_15_05"); //Díky, nìco ti dluím!
-	AI_Output 			(self,hero,"Info_Wolf_ARMORFINISHED_09_06"); //To je v poøádku! U jsem pøišel na to, jak pokrıt svoje vıdaje!
+	AI_Output 			(hero,self,"Info_Wolf_ARMORFINISHED_15_01"); //Jak daleko ses dostal s tou zbrojÃ­?
+	AI_Output 			(self,hero,"Info_Wolf_ARMORFINISHED_09_02"); //Nakonec jsem pÅ™iÅ¡el na to, jak ty ochrannÃ© plÃ¡ty spojit dohromady!
+	AI_Output 			(hero,self,"Info_Wolf_ARMORFINISHED_15_03"); //ZnamenÃ¡ to, Å¾e je zbroj hotova?
+	AI_Output 			(self,hero,"Info_Wolf_ARMORFINISHED_09_04"); //Ano, ÄlovÄ›Äe. Tady je. VypadÃ¡ doopravdy silnÄ›jÅ¡Ã­ neÅ¾ jakÃ¡koliv jinÃ¡ zbroj tady v tÃ¡boÅ™e.
+	AI_Output 			(hero,self,"Info_Wolf_ARMORFINISHED_15_05"); //DÃ­ky, nÄ›co ti dluÅ¾Ã­m!
+	AI_Output 			(self,hero,"Info_Wolf_ARMORFINISHED_09_06"); //To je v poÅ™Ã¡dku! UÅ¾ jsem pÅ™iÅ¡el na to, jak pokrÃ½t svoje vÃ½daje!
 
-	B_LogEntry			(CH4_MCPlateArmor,"Zbroj je dokonèena. Brilantní práce, nejlepší bojová ochrana, jakou jsem kdy vidìl.");
+	B_LogEntry			(CH4_MCPlateArmor,"Zbroj je dokonÄena. BrilantnÃ­ prÃ¡ce, nejlepÅ¡Ã­ bojovÃ¡ ochrana, jakou jsem kdy vidÄ›l.");
 	Log_SetTopicStatus	(CH4_MCPlateArmor,	LOG_SUCCESS);
 
 	B_GiveXP			(XP_GorMCPlateArmor);
@@ -700,7 +700,7 @@ FUNC int  Org_855_Wolf_SELLBOW_Condition()
 FUNC void  Org_855_Wolf_SELLBOW_Info()
 {
 	AI_Output (other, self,"Org_855_Wolf_SELLBOW_Info_15_01"); //Kde tady dostanu luk?
-	AI_Output (self, other,"Org_855_Wolf_SELLBOW_Info_09_02"); //To jsi na správné adrese. Za dobrou rudu nabízím kvalitu.
+	AI_Output (self, other,"Org_855_Wolf_SELLBOW_Info_09_02"); //To jsi na sprÃ¡vnÃ© adrese. Za dobrou rudu nabÃ­zÃ­m kvalitu.
 	Log_CreateTopic   	(GE_TraderNC,LOG_NOTE);
 	B_LogEntry			(GE_TraderNC,"Bandita Wolf obchoduje s LUKY.");
 

@@ -33,7 +33,7 @@ instance DIA_Lefty_FirstAtNight (C_INFO)
 	condition	= DIA_Lefty_FirstAtNight_Condition;
 	information	= DIA_Lefty_FirstAtNight_Info;
 	permanent	= 0;
-	description = "Co tady dìláš?";
+	description = "Co tady dÄ›lÃ¡Å¡?";
 };                       
 
 FUNC int DIA_Lefty_FirstAtNight_Condition()
@@ -47,10 +47,10 @@ FUNC int DIA_Lefty_FirstAtNight_Condition()
 
 FUNC VOID DIA_Lefty_FirstAtNight_Info()
 {
-	AI_Output (other, self,"DIA_Aidan_Hello_15_00"); //Co tady dìláš?
-	AI_Output (self, other,"DIA_846_Hello_07_01"); //Pracuju pro Rıového Lorda.
-	AI_Output (other, self,"DIA_Ricelord_Arbeit_15_00"); //Máš pro mì nìjakou práci?
-	AI_Output (self, other,"DIA_Shrike_GetLost_07_01"); //Ještì si popovídáme!
+	AI_Output (other, self,"DIA_Aidan_Hello_15_00"); //Co tady dÄ›lÃ¡Å¡?
+	AI_Output (self, other,"DIA_846_Hello_07_01"); //Pracuju pro RÃ½Å¾ovÃ©ho Lorda.
+	AI_Output (other, self,"DIA_Ricelord_Arbeit_15_00"); //MÃ¡Å¡ pro mÄ› nÄ›jakou prÃ¡ci?
+	AI_Output (self, other,"DIA_Shrike_GetLost_07_01"); //JeÅ¡tÄ› si popovÃ­dÃ¡me!
 	AI_StopProcessInfos	(self);
 };
 
@@ -79,38 +79,38 @@ FUNC int DIA_Lefty_First_Condition()
 
 FUNC VOID DIA_Lefty_First_Info()
 {
-	AI_Output (self, other,"DIA_Lefty_First_07_00"); //Hej! Ty jsi právì pøišel? Potøebujeme nìkoho, kdo by nosil vodu rolníkùm na rıová pole.
-	AI_Output (self, other,"DIA_Lefty_First_07_01"); //Takhle mùeš s nìkterımi lidmi navázat pøátelství. Tak co øíkáš?
+	AI_Output (self, other,"DIA_Lefty_First_07_00"); //Hej! Ty jsi prÃ¡vÄ› pÅ™iÅ¡el? PotÅ™ebujeme nÄ›koho, kdo by nosil vodu rolnÃ­kÅ¯m na rÃ½Å¾ovÃ¡ pole.
+	AI_Output (self, other,"DIA_Lefty_First_07_01"); //Takhle mÅ¯Å¾eÅ¡ s nÄ›kterÃ½mi lidmi navÃ¡zat pÅ™Ã¡telstvÃ­. Tak co Å™Ã­kÃ¡Å¡?
 	
 	Log_CreateTopic		(CH1_CarryWater,	LOG_MISSION);
 	Log_SetTopicStatus	(CH1_CarryWater,	LOG_RUNNING);
-	B_LogEntry			(CH1_CarryWater,"Lefty, otravnı bandita z Nového tábora, po mnì chce, abych nosil rolníkùm na pole vodu.");
+	B_LogEntry			(CH1_CarryWater,"Lefty, otravnÃ½ bandita z NovÃ©ho tÃ¡bora, po mnÄ› chce, abych nosil rolnÃ­kÅ¯m na pole vodu.");
 	
 	Info_ClearChoices	(DIA_Lefty_First );
-	Info_AddChoice		(DIA_Lefty_First,"Moná pozdìji.",DIA_Lefty_First_Later);
-	Info_AddChoice		(DIA_Lefty_First,"Dones tu vodu rolníkùm sám!",DIA_Lefty_First_Never);
-	Info_AddChoice		(DIA_Lefty_First,"Jistì, rád pomùu.",DIA_Lefty_First_Yes);
+	Info_AddChoice		(DIA_Lefty_First,"MoÅ¾nÃ¡ pozdÄ›ji.",DIA_Lefty_First_Later);
+	Info_AddChoice		(DIA_Lefty_First,"Dones tu vodu rolnÃ­kÅ¯m sÃ¡m!",DIA_Lefty_First_Never);
+	Info_AddChoice		(DIA_Lefty_First,"JistÄ›, rÃ¡d pomÅ¯Å¾u.",DIA_Lefty_First_Yes);
 };
 
 func void DIA_Lefty_First_Yes()
 {
-	AI_Output (other, self,"DIA_Lefty_First_Yes_15_00"); //Jistì, rád pomùu.
-	AI_Output (self, other,"DIA_Lefty_First_Yes_07_01"); //Vıbornì! Jdi za Rıovım Lordem. Dá ti vodu a øekne všechno, co je potøeba udìlat. 
+	AI_Output (other, self,"DIA_Lefty_First_Yes_15_00"); //JistÄ›, rÃ¡d pomÅ¯Å¾u.
+	AI_Output (self, other,"DIA_Lefty_First_Yes_07_01"); //VÃ½bornÄ›! Jdi za RÃ½Å¾ovÃ½m Lordem. DÃ¡ ti vodu a Å™ekne vÅ¡echno, co je potÅ™eba udÄ›lat. 
 	Lefty_WorkDay = B_SetDayTolerance();
 	Lefty_Mission = LOG_RUNNING;
 	An_Bauern_verteilt = 0;
-	B_LogEntry			(CH1_CarryWater,"Pøestoe to je dosti stupidní úkol, pøijal jsem to, protoe si tam moná najdu nìjaké pøátele. Musím si vyzvednout vodu od takzvaného Rıového lorda.");
+	B_LogEntry			(CH1_CarryWater,"PÅ™estoÅ¾e to je dosti stupidnÃ­ Ãºkol, pÅ™ijal jsem to, protoÅ¾e si tam moÅ¾nÃ¡ najdu nÄ›jakÃ© pÅ™Ã¡tele. MusÃ­m si vyzvednout vodu od takzvanÃ©ho RÃ½Å¾ovÃ©ho lorda.");
 
 	Info_ClearChoices	(DIA_Lefty_First);
 };
 
 func void DIA_Lefty_First_Never()
 {
-	AI_Output (other, self,"DIA_Lefty_First_Never_15_00"); //Dones tu vodu rolníkùm sám!
-	AI_Output (self, other,"DIA_Lefty_First_Never_07_01"); //To není dobrı zpùsob, jak navazovat pøátelství!  Budu tì muset nauèit slušnému chování!
+	AI_Output (other, self,"DIA_Lefty_First_Never_15_00"); //Dones tu vodu rolnÃ­kÅ¯m sÃ¡m!
+	AI_Output (self, other,"DIA_Lefty_First_Never_07_01"); //To nenÃ­ dobrÃ½ zpÅ¯sob, jak navazovat pÅ™Ã¡telstvÃ­!  Budu tÄ› muset nauÄit sluÅ¡nÃ©mu chovÃ¡nÃ­!
 	Lefty_WorkDay = B_SetDayTolerance();
 	Lefty_Mission = LOG_FAILED;
-	B_LogEntry			(CH1_CarryWater,"Kdy jsem Leftyho 'nabídku' odmítl, tváøil se hodnì naštvanì! A já si myslel, jaké je Starı tábor drsné místo!");
+	B_LogEntry			(CH1_CarryWater,"KdyÅ¾ jsem Leftyho 'nabÃ­dku' odmÃ­tl, tvÃ¡Å™il se hodnÄ› naÅ¡tvanÄ›! A jÃ¡ si myslel, jakÃ© je StarÃ½ tÃ¡bor drsnÃ© mÃ­sto!");
 	
 	Info_ClearChoices	(DIA_Lefty_First );
 	AI_StopProcessInfos	(self);
@@ -120,8 +120,8 @@ func void DIA_Lefty_First_Never()
 
 func void DIA_Lefty_First_Later()
 {
-	AI_Output (other, self,"DIA_Lefty_First_Later_15_00"); //Moná pozdìji.
-	AI_Output (self, other,"DIA_Lefty_First_Later_07_01"); //Pozdìji u nebudu nikoho potøebovat. Potøebuju tvou pomoc teï HNED. Chceš mi pomoci nebo ne?
+	AI_Output (other, self,"DIA_Lefty_First_Later_15_00"); //MoÅ¾nÃ¡ pozdÄ›ji.
+	AI_Output (self, other,"DIA_Lefty_First_Later_07_01"); //PozdÄ›ji uÅ¾ nebudu nikoho potÅ™ebovat. PotÅ™ebuju tvou pomoc teÄ HNED. ChceÅ¡ mi pomoci nebo ne?
 };
 
 // **************************************
@@ -156,22 +156,22 @@ FUNC VOID DIA_Lefty_WorkDay_Info()
 	
 	if (Lefty_Mission == LOG_FAILED)
 	{
-		AI_Output (self, other,"DIA_Lefty_WorkDay_NextChance_07_00"); //Máš štìstí! Dám ti druhou pøíleitost.
-		AI_Output (self, other,"DIA_Lefty_WorkDay_NextChance_07_01"); //Zkus to tentokrát nezkazit! Dobrá, jdi za Rıovım Lordem a pak roznes vodu všem rolníkùm. Jasnı?
+		AI_Output (self, other,"DIA_Lefty_WorkDay_NextChance_07_00"); //MÃ¡Å¡ Å¡tÄ›stÃ­! DÃ¡m ti druhou pÅ™Ã­leÅ¾itost.
+		AI_Output (self, other,"DIA_Lefty_WorkDay_NextChance_07_01"); //Zkus to tentokrÃ¡t nezkazit! DobrÃ¡, jdi za RÃ½Å¾ovÃ½m Lordem a pak roznes vodu vÅ¡em rolnÃ­kÅ¯m. JasnÃ½?
 		Lefty_WorkDay = B_SetDayTolerance();
 		Lefty_Mission = LOG_RUNNING;
 		An_Bauern_verteilt = 0;
-		B_LogEntry			(CH1_CarryWater,"Znovu jsem se setkal s Leftym! Chce po mnì, abych šel k Rıovému lordovi vyzvednout vodu pro rolníky na polích.");
+		B_LogEntry			(CH1_CarryWater,"Znovu jsem se setkal s Leftym! Chce po mnÄ›, abych Å¡el k RÃ½Å¾ovÃ©mu lordovi vyzvednout vodu pro rolnÃ­ky na polÃ­ch.");
 		
 		AI_StopProcessInfos	(self);
 	}
 	else if (Lefty_Mission == LOG_RUNNING)
 	{
-		AI_Output (self, other,"DIA_Lefty_WorkDay_StillRunning_07_00"); //Øekl jsem ti, abys zanesl vodu rolníkùm!
-		AI_Output (self, other,"DIA_Lefty_WorkDay_StillRunning_07_01"); //Nemám rád lidi, kteøí dávají sliby a pak je neplní!
+		AI_Output (self, other,"DIA_Lefty_WorkDay_StillRunning_07_00"); //Å˜ekl jsem ti, abys zanesl vodu rolnÃ­kÅ¯m!
+		AI_Output (self, other,"DIA_Lefty_WorkDay_StillRunning_07_01"); //NemÃ¡m rÃ¡d lidi, kteÅ™Ã­ dÃ¡vajÃ­ sliby a pak je neplnÃ­!
 		Lefty_WorkDay = B_SetDayTolerance();
 		Lefty_Mission = LOG_FAILED;
-		B_LogEntry			(CH1_CarryWater,"Lefty byl doopravdy na padnutí, e jsem ještì neroznesl vodu! Jako bych si z toho èipery støílel. ");
+		B_LogEntry			(CH1_CarryWater,"Lefty byl doopravdy na padnutÃ­, Å¾e jsem jeÅ¡tÄ› neroznesl vodu! Jako bych si z toho Äipery stÅ™Ã­lel. ");
 		
 		AI_StopProcessInfos	(self);
 		Npc_SetTarget (self, other);
@@ -179,14 +179,14 @@ FUNC VOID DIA_Lefty_WorkDay_Info()
 	}
 	else if (Lefty_Mission == LOG_SUCCESS)
 	{
-		AI_Output (self, other,"DIA_Lefty_WorkDay_SUCCESS_07_00"); //Dobrá práce! Pøece jen jsi k nìèemu uiteènı.
-		AI_Output (self, other,"DIA_Lefty_WorkDay_SUCCESS_07_01"); //Myslím, e to je úkol právì pro tebe. Od teïka to budeš dìlat kadı den. Tak a teï pokraèuj.
+		AI_Output (self, other,"DIA_Lefty_WorkDay_SUCCESS_07_00"); //DobrÃ¡ prÃ¡ce! PÅ™ece jen jsi k nÄ›Äemu uÅ¾iteÄnÃ½.
+		AI_Output (self, other,"DIA_Lefty_WorkDay_SUCCESS_07_01"); //MyslÃ­m, Å¾e to je Ãºkol prÃ¡vÄ› pro tebe. Od teÄka to budeÅ¡ dÄ›lat kaÅ¾dÃ½ den. Tak a teÄ pokraÄuj.
 		Lefty_WorkDay = B_SetDayTolerance();
 		Lefty_Mission = LOG_RUNNING;
 		An_Bauern_verteilt = 0;
 		if	!CarriedWaterForLefty
 		{
-			B_LogEntry		(CH1_CarryWater,"Nemùu tomu uvìøit. Potom, co jsem všude roznesl vodu, Lefty snad vánì chce, abych to dìlal kadı den. Mám pocit, e tomu idiotovi budu muset pár vìcí vysvìtlit.");
+			B_LogEntry		(CH1_CarryWater,"NemÅ¯Å¾u tomu uvÄ›Å™it. Potom, co jsem vÅ¡ude roznesl vodu, Lefty snad vÃ¡Å¾nÄ› chce, abych to dÄ›lal kaÅ¾dÃ½ den. MÃ¡m pocit, Å¾e tomu idiotovi budu muset pÃ¡r vÄ›cÃ­ vysvÄ›tlit.");
 			B_GiveXP		(XP_LeftyCarriedWater);
 			CarriedWaterForLefty = TRUE;
 		};
@@ -206,7 +206,7 @@ instance DIA_Lefty_NeverAgain (C_INFO)
 	condition	= DIA_Lefty_NeverAgain_Condition;
 	information	= DIA_Lefty_NeverAgain_Info;
 	permanent	= 1;
-	description	= "Od teïka si mùeš tu vodu nosit sám.";
+	description	= "Od teÄka si mÅ¯Å¾eÅ¡ tu vodu nosit sÃ¡m.";
 };                       
 
 FUNC int DIA_Lefty_NeverAgain_Condition()
@@ -219,9 +219,9 @@ FUNC int DIA_Lefty_NeverAgain_Condition()
 
 FUNC VOID DIA_Lefty_NeverAgain_Info()
 {
-	AI_Output (other, self,"DIA_Lefty_NeverAgain_15_00"); //Od teïka si mùeš tu vodu nosit sám.
-	AI_Output (self, other,"DIA_Lefty_NeverAgain_07_01"); //Ale? Máš nìco lepšího?
-	AI_Output (self, other,"DIA_Lefty_NeverAgain_07_02"); //Myslím, e je èas ti pøipomenout, kdo je tady šéf!
+	AI_Output (other, self,"DIA_Lefty_NeverAgain_15_00"); //Od teÄka si mÅ¯Å¾eÅ¡ tu vodu nosit sÃ¡m.
+	AI_Output (self, other,"DIA_Lefty_NeverAgain_07_01"); //Ale? MÃ¡Å¡ nÄ›co lepÅ¡Ã­ho?
+	AI_Output (self, other,"DIA_Lefty_NeverAgain_07_02"); //MyslÃ­m, Å¾e je Äas ti pÅ™ipomenout, kdo je tady Å¡Ã©f!
 	
 	AI_StopProcessInfos	(self);
 	Npc_SetTarget (self, other);
@@ -240,7 +240,7 @@ instance DIA_Lefty_PERM (C_INFO)
 	condition	= DIA_Lefty_PERM_Condition;
 	information	= DIA_Lefty_PERM_Info;
 	permanent	= 1;
-	description	= "Jak se máš, pøíteli?";
+	description	= "Jak se mÃ¡Å¡, pÅ™Ã­teli?";
 };                       
 
 FUNC int DIA_Lefty_PERM_Condition()
@@ -253,27 +253,27 @@ FUNC int DIA_Lefty_PERM_Condition()
 
 FUNC VOID DIA_Lefty_PERM_Info()
 {
-	AI_Output (other, self,"DIA_Lefty_PERM_15_00"); //Jak se máš, pøíteli?
-	AI_Output (self, other,"DIA_Lefty_PERM_07_01"); //Ach, èlovìèe! Co chceš?
+	AI_Output (other, self,"DIA_Lefty_PERM_15_00"); //Jak se mÃ¡Å¡, pÅ™Ã­teli?
+	AI_Output (self, other,"DIA_Lefty_PERM_07_01"); //Ach, ÄlovÄ›Äe! Co chceÅ¡?
 
 	if	!LeftyWasBeaten
 	{
-		B_LogEntry			(CH1_CarryWater,"Øekl jsem Leftymu, aby mì ve vlastním zájmu pøestal obtìovat se svımi teoriemi o roznášení vody. Nìkteøí lidé se pouèí, jen kdy je to zabolí.");
+		B_LogEntry			(CH1_CarryWater,"Å˜ekl jsem Leftymu, aby mÄ› ve vlastnÃ­m zÃ¡jmu pÅ™estal obtÄ›Å¾ovat se svÃ½mi teoriemi o roznÃ¡Å¡enÃ­ vody. NÄ›kteÅ™Ã­ lidÃ© se pouÄÃ­, jen kdyÅ¾ je to zabolÃ­.");
 		Log_SetTopicStatus	(CH1_CarryWater,	LOG_SUCCESS);
 		B_GiveXP			(XP_LeftyConfronted);
 		LeftyWasBeaten = TRUE;
 	};
 	
 	Info_ClearChoices	(DIA_Lefty_PERM );
-	Info_AddChoice		(DIA_Lefty_PERM,"Jen jsem chtìl vìdìt, jak se máš.",DIA_Lefty_PERM_Nothing);
-	Info_AddChoice		(DIA_Lefty_PERM,"Rolníci vypadají íznivì.",DIA_Lefty_PERM_Durstig);
-	Info_AddChoice		(DIA_Lefty_PERM,"Mìl jsem vánì zlej den. Radím ti, abys mì neprovokoval a zùstal radìji zticha.",DIA_Lefty_PERM_AufsMaul);
+	Info_AddChoice		(DIA_Lefty_PERM,"Jen jsem chtÄ›l vÄ›dÄ›t, jak se mÃ¡Å¡.",DIA_Lefty_PERM_Nothing);
+	Info_AddChoice		(DIA_Lefty_PERM,"RolnÃ­ci vypadajÃ­ Å¾Ã­znivÄ›.",DIA_Lefty_PERM_Durstig);
+	Info_AddChoice		(DIA_Lefty_PERM,"MÄ›l jsem vÃ¡Å¾nÄ› zlej den. RadÃ­m ti, abys mÄ› neprovokoval a zÅ¯stal radÄ›ji zticha.",DIA_Lefty_PERM_AufsMaul);
 
 };	
 
 func void DIA_Lefty_PERM_AufsMaul()
 {
-	AI_Output (other, self,"DIA_Lefty_PERM_AufsMaul_15_00"); //Mìl jsem opravdu špatnı den a hledám zpùsob, jak uvolnit napìtí... jen takhle ještì chvilku stùj.
+	AI_Output (other, self,"DIA_Lefty_PERM_AufsMaul_15_00"); //MÄ›l jsem opravdu Å¡patnÃ½ den a hledÃ¡m zpÅ¯sob, jak uvolnit napÄ›tÃ­... jen takhle jeÅ¡tÄ› chvilku stÅ¯j.
 	B_Say (self,other,"$YOUWANNAFOOLME");
 	Info_ClearChoices	(DIA_Lefty_PERM );
 	AI_StopProcessInfos	(self);
@@ -284,14 +284,14 @@ func void DIA_Lefty_PERM_AufsMaul()
 
 func void DIA_Lefty_PERM_Durstig()
 {
-	AI_Output (other, self,"DIA_Lefty_PERM_Durstig_15_00"); //Rolníci vypadají íznivì.
-	AI_Output (self, other,"DIA_Lefty_PERM_Durstig_07_01"); //Dohlédnu na to... bez starosti.
+	AI_Output (other, self,"DIA_Lefty_PERM_Durstig_15_00"); //RolnÃ­ci vypadajÃ­ Å¾Ã­znivÄ›.
+	AI_Output (self, other,"DIA_Lefty_PERM_Durstig_07_01"); //DohlÃ©dnu na to... bez starosti.
 	AI_StopProcessInfos	(self);
 };
 
 func void DIA_Lefty_PERM_Nothing()
 {
-	AI_Output (other, self,"DIA_Lefty_PERM_Nothing_15_00"); //Jen jsem chtìl vìdìt, jak se máš.
+	AI_Output (other, self,"DIA_Lefty_PERM_Nothing_15_00"); //Jen jsem chtÄ›l vÄ›dÄ›t, jak se mÃ¡Å¡.
 	AI_StopProcessInfos	(self);
 };
 

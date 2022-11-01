@@ -4,7 +4,7 @@
 
 PROTOTYPE Mst_Default_Minecrawler(C_Npc)			
 {
-	name							=	"D˘lnÌ Ëerv";
+	name							=	"D≈Øln√≠ ƒçerv";
 	guild							=	GIL_MINECRAWLER;
 	aivar[AIV_MM_REAL_ID]			= 	ID_MINECRAWLER;
 	level							=	13;

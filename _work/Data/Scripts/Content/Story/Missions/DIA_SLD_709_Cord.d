@@ -32,7 +32,7 @@ instance  SLD_709_Cord_TRAINOFFER (C_INFO)
 	information		= SLD_709_Cord_TRAINOFFER_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Chci se zlepšit v ovládání jednoruèního meèe."; 
+	description		= "Chci se zlepÅ¡it v ovlÃ¡dÃ¡nÃ­ jednoruÄnÃ­ho meÄe."; 
 };
 
 FUNC int  SLD_709_Cord_TRAINOFFER_Condition()
@@ -45,11 +45,11 @@ FUNC int  SLD_709_Cord_TRAINOFFER_Condition()
 };
 FUNC void  SLD_709_Cord_TRAINOFFER_Info()
 {
-	AI_Output (other, self,"SLD_709_Cord_TRAINOFFER_Info_15_01"); //Chci se zlepšit v ovládání jednoruèního meèe.
-	AI_Output (self, other,"SLD_709_Cord_TRAINOFFER_Info_14_02"); //Jistì. Bude tì to ovšem nìco stát. Chci 30 nugetù.
+	AI_Output (other, self,"SLD_709_Cord_TRAINOFFER_Info_15_01"); //Chci se zlepÅ¡it v ovlÃ¡dÃ¡nÃ­ jednoruÄnÃ­ho meÄe.
+	AI_Output (self, other,"SLD_709_Cord_TRAINOFFER_Info_14_02"); //JistÄ›. Bude tÄ› to ovÅ¡em nÄ›co stÃ¡t. Chci 30 nugetÅ¯.
 
 	Log_CreateTopic	(GE_TeacherNC,	LOG_NOTE);
-	B_LogEntry		(GE_TeacherNC,"oldák Cord mì mùe nauèit bojovat s JEDNORUÈNÍMI ZBRANÌMI. Pøes den ho mùu najít na skalnaté plošinì u jezera.");
+	B_LogEntry		(GE_TeacherNC,"Å½oldÃ¡k Cord mÄ› mÅ¯Å¾e nauÄit bojovat s JEDNORUÄŒNÃMI ZBRANÄšMI. PÅ™es den ho mÅ¯Å¾u najÃ­t na skalnatÃ© ploÅ¡inÄ› u jezera.");
 };  
 /*------------------------------------------------------------------------
 						EINHANDKAMPF	DIE ERSTE LEHRSTUNDE							
@@ -75,27 +75,27 @@ FUNC int  SLD_709_Cord_TRAIN_Condition()
 };
 FUNC void  SLD_709_Cord_TRAIN_Info()
 {
-	AI_Output (other, self,"SLD_709_Cord_TRAIN_Info_15_00"); //Chci se zlepšit v ovládání jednoruèního meèe.
+	AI_Output (other, self,"SLD_709_Cord_TRAIN_Info_15_00"); //Chci se zlepÅ¡it v ovlÃ¡dÃ¡nÃ­ jednoruÄnÃ­ho meÄe.
 
 	if (Npc_HasItems (hero,ItMiNugget) >= 30)
 	{
 		if B_GiveSkill(hero,NPC_TALENT_1H,1,LPCOST_TALENT_1H_1)
 		{
-			AI_Output			(self,other,"SLD_709_Cord_TRAIN_14_01"); //To je dobré rozhodnutí! Ještì ne se zaèneš uèit techniku, musíš se nauèit správnì dret zbraò.
-			AI_Output			(self,other,"SLD_709_Cord_TRAIN_14_02"); //Zaèáteèníci obyèejnì mívají snahu dret jednoruèní meè obìma rukama. Tímto zpùsobem rozhodnì nezaèínej, to není dobré.
-			AI_Output			(self,other,"SLD_709_Cord_TRAIN_14_03"); //Dr zbraò v jedné ruce, èepelí vzhùru a šermuj s ní.
-			AI_Output			(self,other,"SLD_709_Cord_TRAIN_14_04"); //Musíš se nauèit sladit pohyb zbranì s pohybem svého tìla. Tak budeš pøi útoku rychlejší.
-			AI_Output			(self,other,"SLD_709_Cord_TRAIN_14_05"); //Kdy si zapamatuješ, co jsem tì nauèil, tak bude tvùj boj v budoucnu elegantnìjší a rychlejší.
+			AI_Output			(self,other,"SLD_709_Cord_TRAIN_14_01"); //To je dobrÃ© rozhodnutÃ­! JeÅ¡tÄ› neÅ¾ se zaÄneÅ¡ uÄit techniku, musÃ­Å¡ se nauÄit sprÃ¡vnÄ› drÅ¾et zbraÅˆ.
+			AI_Output			(self,other,"SLD_709_Cord_TRAIN_14_02"); //ZaÄÃ¡teÄnÃ­ci obyÄejnÄ› mÃ­vajÃ­ snahu drÅ¾et jednoruÄnÃ­ meÄ obÄ›ma rukama. TÃ­mto zpÅ¯sobem rozhodnÄ› nezaÄÃ­nej, to nenÃ­ dobrÃ©.
+			AI_Output			(self,other,"SLD_709_Cord_TRAIN_14_03"); //DrÅ¾ zbraÅˆ v jednÃ© ruce, ÄepelÃ­ vzhÅ¯ru a Å¡ermuj s nÃ­.
+			AI_Output			(self,other,"SLD_709_Cord_TRAIN_14_04"); //MusÃ­Å¡ se nauÄit sladit pohyb zbranÄ› s pohybem svÃ©ho tÄ›la. Tak budeÅ¡ pÅ™i Ãºtoku rychlejÅ¡Ã­.
+			AI_Output			(self,other,"SLD_709_Cord_TRAIN_14_05"); //KdyÅ¾ si zapamatujeÅ¡, co jsem tÄ› nauÄil, tak bude tvÅ¯j boj v budoucnu elegantnÄ›jÅ¡Ã­ a rychlejÅ¡Ã­.
 			B_PracticeCombat	("NC_WATERFALL_TOP01");
-			AI_Output			(self,other,"SLD_709_Cord_TRAIN_14_06"); //Ovšem, ještì jednu vìc. Nìkteré údery zpùsobí vìtší škodu ne ostatní. Jako zaèáteèníkovi se ti nebude èasto dostávat šance rozhodujících úderù.
-			AI_Output			(self,other,"SLD_709_Cord_TRAIN_14_07"); //Ale èasem budeš dìlat pokroky a zlepšíš se.
+			AI_Output			(self,other,"SLD_709_Cord_TRAIN_14_06"); //OvÅ¡em, jeÅ¡tÄ› jednu vÄ›c. NÄ›kterÃ© Ãºdery zpÅ¯sobÃ­ vÄ›tÅ¡Ã­ Å¡kodu neÅ¾ ostatnÃ­. Jako zaÄÃ¡teÄnÃ­kovi se ti nebude Äasto dostÃ¡vat Å¡ance rozhodujÃ­cÃ­ch ÃºderÅ¯.
+			AI_Output			(self,other,"SLD_709_Cord_TRAIN_14_07"); //Ale Äasem budeÅ¡ dÄ›lat pokroky a zlepÅ¡Ã­Å¡ se.
 			B_GiveInvItems (hero, self,ItMiNugget,30);
 			SLD_709_Cord_TRAIN.permanent = 0;
 		};
 	}
 	else
 	{
-		AI_Output (self, other,"KDF_402_Corristo_HEAVYARMOR_Info_14_03"); //Nemáš dost rudy.
+		AI_Output (self, other,"KDF_402_Corristo_HEAVYARMOR_Info_14_03"); //NemÃ¡Å¡ dost rudy.
 	};
 };  
 /*------------------------------------------------------------------------
@@ -123,23 +123,23 @@ FUNC int  SLD_709_Cord_TRAINAGAIN_Condition()
 };
 FUNC void  SLD_709_Cord_TRAINAGAIN_Info()
 {
-	AI_Output			(other, self,"SLD_709_Cord_TRAINAGAIN_Info_15_01"); //Nauè mì ještì lépe ovládat jednoruèní meè.
+	AI_Output			(other, self,"SLD_709_Cord_TRAINAGAIN_Info_15_01"); //NauÄ mÄ› jeÅ¡tÄ› lÃ©pe ovlÃ¡dat jednoruÄnÃ­ meÄ.
 
 	if (Npc_HasItems (hero,ItMiNugget) >= 50)
 	{
 		if B_GiveSkill(hero,NPC_TALENT_1H,2,LPCOST_TALENT_1H_2)
 		{
-			AI_Output		(self, other,"SLD_709_Cord_TRAINAGAIN_Info_14_02"); //Dobrá, základy znáš. Kdy podríš zbraò ní, umoní ti to mnohem silnìji vést první švih.
-			AI_Output		(self, other,"SLD_709_Cord_TRAINAGAIN_Info_14_03"); //Musíš se hıbat, pamatuješ? Dobøe, teï musíš ještì víc pracovat tìlem. Po druhém úderu se otoè. To protivníka zmate a tobì to umoní zaujmout optimální pozici.
-			AI_Output		(self, other,"SLD_709_Cord_TRAINAGAIN_Info_14_04"); //Ještì jednou veï èepel zprava doleva.
+			AI_Output		(self, other,"SLD_709_Cord_TRAINAGAIN_Info_14_02"); //DobrÃ¡, zÃ¡klady znÃ¡Å¡. KdyÅ¾ podrÅ¾Ã­Å¡ zbraÅˆ nÃ­Å¾, umoÅ¾nÃ­ ti to mnohem silnÄ›ji vÃ©st prvnÃ­ Å¡vih.
+			AI_Output		(self, other,"SLD_709_Cord_TRAINAGAIN_Info_14_03"); //MusÃ­Å¡ se hÃ½bat, pamatujeÅ¡? DobÅ™e, teÄ musÃ­Å¡ jeÅ¡tÄ› vÃ­c pracovat tÄ›lem. Po druhÃ©m Ãºderu se otoÄ. To protivnÃ­ka zmate a tobÄ› to umoÅ¾nÃ­ zaujmout optimÃ¡lnÃ­ pozici.
+			AI_Output		(self, other,"SLD_709_Cord_TRAINAGAIN_Info_14_04"); //JeÅ¡tÄ› jednou veÄ Äepel zprava doleva.
 			B_PracticeCombat("NC_WATERFALL_TOP01");
-			AI_Output		(self, other,"SLD_709_Cord_TRAINAGAIN_Info_14_05"); //A znovu kupøedu. Nezapomeò: cvièením k dokonalosti. Take vzhùru do toho, aby ses stal mistrem jednoruèního meèe.
+			AI_Output		(self, other,"SLD_709_Cord_TRAINAGAIN_Info_14_05"); //A znovu kupÅ™edu. NezapomeÅˆ: cviÄenÃ­m k dokonalosti. TakÅ¾e vzhÅ¯ru do toho, aby ses stal mistrem jednoruÄnÃ­ho meÄe.
 			B_GiveInvItems	(hero, self, ItMiNugget, 50);
 			SLD_709_Cord_TRAINAGAIN.permanent = 0;
 		};
 	}
 	else
 	{
-		AI_Output (self, other,"KDF_402_Corristo_HEAVYARMOR_Info_14_03"); //Nemáš dost rudy.
+		AI_Output (self, other,"KDF_402_Corristo_HEAVYARMOR_Info_14_03"); //NemÃ¡Å¡ dost rudy.
 	};
 }; 

@@ -37,7 +37,7 @@ INSTANCE Info_Org_13_EinerVonEuchWerden (C_INFO) // E1
 	condition	= Info_Org_13_EinerVonEuchWerden_Condition;
 	information	= Info_Org_13_EinerVonEuchWerden_Info;
 	permanent	= 1;
-	description = "Co musím udìlat, abych se mohl pøidat k táboru?";
+	description = "Co musÃ­m udÄ›lat, abych se mohl pÅ™idat k tÃ¡boru?";
 };                       
 
 FUNC INT Info_Org_13_EinerVonEuchWerden_Condition()
@@ -50,8 +50,8 @@ FUNC INT Info_Org_13_EinerVonEuchWerden_Condition()
 
 FUNC VOID Info_Org_13_EinerVonEuchWerden_Info()
 {
-	AI_Output(other,self,"Info_Org_13_EinerVonEuchWerden_15_00"); //Co musím udìlat, abych se mohl pøidat k táboru?
-	AI_Output(self,other,"Info_Org_13_EinerVonEuchWerden_13_01"); //Jdi na pole a pomoz rolníkùm sklízet rýži.
+	AI_Output(other,self,"Info_Org_13_EinerVonEuchWerden_15_00"); //Co musÃ­m udÄ›lat, abych se mohl pÅ™idat k tÃ¡boru?
+	AI_Output(self,other,"Info_Org_13_EinerVonEuchWerden_13_01"); //Jdi na pole a pomoz rolnÃ­kÅ¯m sklÃ­zet rÃ½Å¾i.
 };
 
 // *************************************************************************
@@ -74,8 +74,8 @@ FUNC INT Info_Org_13_WichtigePersonen_Condition()
 
 FUNC VOID Info_Org_13_WichtigePersonen_Info()
 {
-	AI_Output(other,self,"Info_Org_13_WichtigePersonen_15_00"); //Kdo tady má velení?
-	AI_Output(self,other,"Info_Org_13_WichtigePersonen_13_01"); //Lee je hlava žoldákù, jestli tì zrovna TOHLE zajímá. Ale já nejsem žoldák a a mì vezme èert, jestli je nechám, aby mi rozkazovali!
+	AI_Output(other,self,"Info_Org_13_WichtigePersonen_15_00"); //Kdo tady mÃ¡ velenÃ­?
+	AI_Output(self,other,"Info_Org_13_WichtigePersonen_13_01"); //Lee je hlava Å¾oldÃ¡kÅ¯, jestli tÄ› zrovna TOHLE zajÃ­mÃ¡. Ale jÃ¡ nejsem Å¾oldÃ¡k a aÅ¥ mÄ› vezme Äert, jestli je nechÃ¡m, aby mi rozkazovali!
 	var C_NPC Lee;			Lee		= Hlp_GetNpc(Sld_700_Lee);
 	Lee.aivar[AIV_FINDABLE] = TRUE;
 };
@@ -90,7 +90,7 @@ INSTANCE Info_Org_13_DasLager(C_INFO)
 	condition	= Info_Org_13_DasLager_Condition;
 	information	= Info_Org_13_DasLager_Info;
 	permanent	= 1;
-	description = "Chci vìdìt o táboru víc.";
+	description = "Chci vÄ›dÄ›t o tÃ¡boru vÃ­c.";
 };                       
 
 FUNC INT Info_Org_13_DasLager_Condition()
@@ -100,8 +100,8 @@ FUNC INT Info_Org_13_DasLager_Condition()
 
 FUNC VOID Info_Org_13_DasLager_Info()
 {
-	AI_Output(other,self,"Info_Org_13_DasLager_15_00"); //Chci vìdìt o táboru víc.
-	AI_Output(self,other,"Info_Org_13_DasLager_13_01"); //Tak jdi a porozhlédni se kolem. Dokud nebudeš patøit ke  Gomezových mužùm, nikdo ti v tom nebude bránit.
+	AI_Output(other,self,"Info_Org_13_DasLager_15_00"); //Chci vÄ›dÄ›t o tÃ¡boru vÃ­c.
+	AI_Output(self,other,"Info_Org_13_DasLager_13_01"); //Tak jdi a porozhlÃ©dni se kolem. Dokud nebudeÅ¡ patÅ™it ke  GomezovÃ½ch muÅ¾Å¯m, nikdo ti v tom nebude brÃ¡nit.
 };
 
 // *************************************************************************
@@ -125,7 +125,7 @@ FUNC INT Info_Org_13_DieLage_Condition()
 FUNC VOID Info_Org_13_DieLage_Info()
 {
 	AI_Output(other,self,"Info_Org_13_DieLage_15_00"); //Jak to jde?
-	AI_Output(self,other,"Info_Org_13_DieLage_13_01"); //Co TY mi vlastnì chceš?
+	AI_Output(self,other,"Info_Org_13_DieLage_13_01"); //Co TY mi vlastnÄ› chceÅ¡?
 };
 
 // *************************************************************************
@@ -138,7 +138,7 @@ INSTANCE Info_Org_13_Krautprobe (C_INFO) // E1
 	condition	= Info_Org_13_Krautprobe_Condition;
 	information	= Info_Org_13_Krautprobe_Info;
 	permanent	= 1;
-	description = "Vypadá to, jako bys mìl co dìlat s drogou z bažin.";
+	description = "VypadÃ¡ to, jako bys mÄ›l co dÄ›lat s drogou z baÅ¾in.";
 };                       
 
 FUNC INT Info_Org_13_Krautprobe_Condition()
@@ -152,7 +152,7 @@ FUNC INT Info_Org_13_Krautprobe_Condition()
 
 FUNC VOID Info_Org_13_Krautprobe_Info()
 {
-	AI_Output(other,self,"Info_Org_13_Krautprobe_15_00"); //Vypadá to, jako bys mìl co dìlat s drogou z bažin.
+	AI_Output(other,self,"Info_Org_13_Krautprobe_15_00"); //VypadÃ¡ to, jako bys mÄ›l co dÄ›lat s drogou z baÅ¾in.
 	
 	if ( (Npc_HasItems(other,ItMiJoint_1)>0) || (Npc_HasItems(other,ItMiJoint_2)>0) || (Npc_HasItems(other,ItMiJoint_3)>0) )
 	{
@@ -163,8 +163,8 @@ FUNC VOID Info_Org_13_Krautprobe_Info()
 		else if (Npc_HasItems(other,ItMiJoint_3))
 		{	B_GiveInvItems(other,self,ItMiJoint_3,1);	 };
 		
-		AI_Output(self,other,"Info_Org_13_Krautprobe_13_01"); //Máš nìco? Dám ti za jednu lodyhu 10 nugetù.
-		AI_Output(self,other,"Info_Org_13_Krautprobe_13_02"); //Mùžeš vždycky zase pøijít, bratøe.
+		AI_Output(self,other,"Info_Org_13_Krautprobe_13_01"); //MÃ¡Å¡ nÄ›co? DÃ¡m ti za jednu lodyhu 10 nugetÅ¯.
+		AI_Output(self,other,"Info_Org_13_Krautprobe_13_02"); //MÅ¯Å¾eÅ¡ vÅ¾dycky zase pÅ™ijÃ­t, bratÅ™e.
 		
 		CreateInvItems(self,itminugget,10);
 		B_GiveInvItems(self,other,itminugget,10);
@@ -173,7 +173,7 @@ FUNC VOID Info_Org_13_Krautprobe_Info()
 	}
 	else
 	{
-		AI_Output (self, other,"Info_Org_13_Krautprobe_No_Joint_13_00"); //Ale ty nic nemáš. Pøestaò si ze mì dìlat blázny, jasný?
+		AI_Output (self, other,"Info_Org_13_Krautprobe_No_Joint_13_00"); //Ale ty nic nemÃ¡Å¡. PÅ™estaÅˆ si ze mÄ› dÄ›lat blÃ¡zny, jasnÃ½?
 	};
 };
 	

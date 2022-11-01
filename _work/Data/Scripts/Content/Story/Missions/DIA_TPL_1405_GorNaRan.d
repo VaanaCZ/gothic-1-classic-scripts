@@ -33,7 +33,7 @@ instance  DIA_GorNaRan_Wache (C_INFO)
 	condition	=  DIA_GorNaRan_Wache_Condition;
 	information	=  DIA_GorNaRan_Wache_Info;
 	permanent	=  1;
-	description = "Co tady dìláš?";
+	description = "Co tady dÄ›lÃ¡Å¡?";
 };                       
 
 FUNC int  DIA_GorNaRan_Wache_Condition()
@@ -43,10 +43,10 @@ FUNC int  DIA_GorNaRan_Wache_Condition()
 
 FUNC VOID  DIA_GorNaRan_Wache_Info()
 {
-	AI_Output (other, self,"DIA_GorNaRan_Wache_15_00"); //Co tady dìláš?
-	AI_Output (self, other,"DIA_GorNaRan_Wache_13_01"); //Dávám pozor, aby se moèáloví raloci nedostali pøíliš blízko k táboru.
-	AI_Output (self, other,"DIA_GorNaRan_Wache_13_02"); //Bıt tebou, tak bych se od tìch bestií drel dál. Nemáš proti nim vùbec šanci.
-	AI_Output (self, other,"DIA_GorNaRan_Wache_13_03"); //Teï u mì neruš, musím dávat bedlivı pozor.
+	AI_Output (other, self,"DIA_GorNaRan_Wache_15_00"); //Co tady dÄ›lÃ¡Å¡?
+	AI_Output (self, other,"DIA_GorNaRan_Wache_13_01"); //DÃ¡vÃ¡m pozor, aby se moÄÃ¡lovÃ­ Å¾raloci nedostali pÅ™Ã­liÅ¡ blÃ­zko k tÃ¡boru.
+	AI_Output (self, other,"DIA_GorNaRan_Wache_13_02"); //BÃ½t tebou, tak bych se od tÄ›ch bestiÃ­ drÅ¾el dÃ¡l. NemÃ¡Å¡ proti nim vÅ¯bec Å¡anci.
+	AI_Output (self, other,"DIA_GorNaRan_Wache_13_03"); //TeÄ uÅ¾ mÄ› neruÅ¡, musÃ­m dÃ¡vat bedlivÃ½ pozor.
 	AI_StopProcessInfos	( self );
 };
 
@@ -77,7 +77,7 @@ FUNC INT Info_TPL_1405_GorNaRan_Condition()
 
 FUNC VOID Info_TPL_1405_GorNaRan_Info()
 {
-	AI_Output (self, other,"Info_TPL_1405_GorNaRan_Info_13_01"); //Kam si myslíš, e jdeš? Nikdo tudy nesmí projít!
+	AI_Output (self, other,"Info_TPL_1405_GorNaRan_Info_13_01"); //Kam si myslÃ­Å¡, Å¾e jdeÅ¡? Nikdo tudy nesmÃ­ projÃ­t!
 };
 
 
@@ -90,7 +90,7 @@ INSTANCE Info_TPL_1405_GorNaRan2 (C_INFO)
 	condition	= Info_TPL_1405_GorNaRan2_Condition;
 	information	= Info_TPL_1405_GorNaRan2_Info;
 	permanent	= 1;
-	description = "Co se tu vlastnì dìje?";
+	description = "Co se tu vlastnÄ› dÄ›je?";
 };                       
 
 FUNC INT Info_TPL_1405_GorNaRan2_Condition()
@@ -102,8 +102,8 @@ FUNC INT Info_TPL_1405_GorNaRan2_Condition()
 
 FUNC VOID Info_TPL_1405_GorNaRan2_Info()
 {
-	AI_Output (other, self,"Info_TPL_1405_GorNaRan_Info_15_02"); //Co se tu vlastnì dìje?
-	AI_Output (self, other,"Info_TPL_1405_GorNaRan_Info_13_03"); //Ptáš se mì, co se tu dìje? Vrhni se do prachu a vzdávej úctu Spáèovi, protoe v okamiku procitne, aby zatratil všechny bezvìrce na tomhle svìtì.
+	AI_Output (other, self,"Info_TPL_1405_GorNaRan_Info_15_02"); //Co se tu vlastnÄ› dÄ›je?
+	AI_Output (self, other,"Info_TPL_1405_GorNaRan_Info_13_03"); //PtÃ¡Å¡ se mÄ›, co se tu dÄ›je? Vrhni se do prachu a vzdÃ¡vej Ãºctu SpÃ¡Äovi, protoÅ¾e v okamÅ¾iku procitne, aby zatratil vÅ¡echny bezvÄ›rce na tomhle svÄ›tÄ›.
 };
 
 
@@ -116,7 +116,7 @@ INSTANCE Info_TPL_1405_GorNaRan3 (C_INFO)
 	condition	= Info_TPL_1405_GorNaRan3_Condition;
 	information	= Info_TPL_1405_GorNaRan3_Info;
 	permanent	= 1;
-	description = "Chtìl jsem se jenom porozhlédnout.";
+	description = "ChtÄ›l jsem se jenom porozhlÃ©dnout.";
 };                       
 
 FUNC INT Info_TPL_1405_GorNaRan3_Condition()
@@ -128,8 +128,8 @@ FUNC INT Info_TPL_1405_GorNaRan3_Condition()
 
 FUNC VOID Info_TPL_1405_GorNaRan3_Info()
 {	
-	AI_Output (other, self,"Info_TPL_1405_GorNaRan_Info_15_04"); //Chtìl jsem se jenom porozhlédnout.
-	AI_Output (self, other,"Info_TPL_1405_GorNaRan_Info_13_05"); //Ty èerve, ty a tobì podobní tady nebudete mít co pohledávat, a se Spáè probudí! Budu tì odtud muset vyprovodit.
+	AI_Output (other, self,"Info_TPL_1405_GorNaRan_Info_15_04"); //ChtÄ›l jsem se jenom porozhlÃ©dnout.
+	AI_Output (self, other,"Info_TPL_1405_GorNaRan_Info_13_05"); //Ty Äerve, ty a tobÄ› podobnÃ­ tady nebudete mÃ­t co pohledÃ¡vat, aÅ¾ se SpÃ¡Ä probudÃ­! Budu tÄ› odtud muset vyprovodit.
 	
 	AI_StopProcessInfos	( self );
 	
@@ -146,7 +146,7 @@ INSTANCE Info_TPL_1405_GorNaRan4 (C_INFO)
 	condition	= Info_TPL_1405_GorNaRan4_Condition;
 	information	= Info_TPL_1405_GorNaRan4_Info;
 	permanent	= 0;
-	description = "Nemùeš mì zastavit!";
+	description = "NemÅ¯Å¾eÅ¡ mÄ› zastavit!";
 };                       
 
 FUNC INT Info_TPL_1405_GorNaRan4_Condition()
@@ -158,8 +158,8 @@ FUNC INT Info_TPL_1405_GorNaRan4_Condition()
 
 FUNC VOID Info_TPL_1405_GorNaRan4_Info()
 {	
-	AI_Output (other, self,"Info_TPL_1405_GorNaRan_Info_15_06"); //Nemùeš mì zastavit!
-	AI_Output (self, other,"Info_TPL_1405_GorNaRan_Info_13_07"); //Jak myslíš, chlapèe. Za Spáèe!
+	AI_Output (other, self,"Info_TPL_1405_GorNaRan_Info_15_06"); //NemÅ¯Å¾eÅ¡ mÄ› zastavit!
+	AI_Output (self, other,"Info_TPL_1405_GorNaRan_Info_13_07"); //Jak myslÃ­Å¡, chlapÄe. Za SpÃ¡Äe!
 
 	AI_StopProcessInfos	( self );
 

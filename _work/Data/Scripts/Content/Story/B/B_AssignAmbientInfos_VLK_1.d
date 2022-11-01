@@ -37,7 +37,7 @@ INSTANCE Info_Vlk_1_EinerVonEuchWerden (C_INFO) // E1
 	condition	= Info_Vlk_1_EinerVonEuchWerden_Condition;
 	information	= Info_Vlk_1_EinerVonEuchWerden_Info;
 	permanent	= 1;
-	description = "Jak se mùu pøidat k táboru?";
+	description = "Jak se mÅ¯Å¾u pÅ™idat k tÃ¡boru?";
 };                       
 
 FUNC INT Info_Vlk_1_EinerVonEuchWerden_Condition()
@@ -50,9 +50,9 @@ FUNC INT Info_Vlk_1_EinerVonEuchWerden_Condition()
 
 FUNC VOID Info_Vlk_1_EinerVonEuchWerden_Info()
 {
-	AI_Output(other,self,"Info_Vlk_1_EinerVonEuchWerden_15_00"); //Jak se mùu pøidat k táboru?
-	AI_Output(self,other,"Info_Vlk_1_EinerVonEuchWerden_01_01"); //To je jednoduché. Seber krumpáè a jdi do dolu. Polovinu své rudy vydáš za ochranu a zbytek ti umoní pøeití.
-	AI_Output(self,other,"Info_Vlk_1_EinerVonEuchWerden_01_02"); //Ceny, jaké si Gomez øíká za ochranu, jsou lichváøské. Ale je to poøád lepší, ne celı den pøevykovat rıi jako v Novém táboøe.
+	AI_Output(other,self,"Info_Vlk_1_EinerVonEuchWerden_15_00"); //Jak se mÅ¯Å¾u pÅ™idat k tÃ¡boru?
+	AI_Output(self,other,"Info_Vlk_1_EinerVonEuchWerden_01_01"); //To je jednoduchÃ©. Seber krumpÃ¡Ä a jdi do dolu. Polovinu svÃ© rudy vydÃ¡Å¡ za ochranu a zbytek ti umoÅ¾nÃ­ pÅ™eÅ¾itÃ­.
+	AI_Output(self,other,"Info_Vlk_1_EinerVonEuchWerden_01_02"); //Ceny, jakÃ© si Gomez Å™Ã­kÃ¡ za ochranu, jsou lichvÃ¡Å™skÃ©. Ale je to poÅ™Ã¡d lepÅ¡Ã­, neÅ¾ celÃ½ den pÅ™eÅ¾vykovat rÃ½Å¾i jako v NovÃ©m tÃ¡boÅ™e.
 };
 
 // *************************************************************************
@@ -75,8 +75,8 @@ FUNC INT Info_Vlk_1_WichtigePersonen_Condition()
 
 FUNC VOID Info_Vlk_1_WichtigePersonen_Info()
 {
-	AI_Output(other,self,"Info_Vlk_1_WichtigePersonen_15_00"); //Kdo tady má velení?
-	AI_Output(self,other,"Info_Vlk_1_WichtigePersonen_01_01"); //Rudobaroni. Organizují vımìnu rudy s Králem. Èím dùleitìjší jsi, tím víc dostáváš.
+	AI_Output(other,self,"Info_Vlk_1_WichtigePersonen_15_00"); //Kdo tady mÃ¡ velenÃ­?
+	AI_Output(self,other,"Info_Vlk_1_WichtigePersonen_01_01"); //Rudobaroni. OrganizujÃ­ vÃ½mÄ›nu rudy s KrÃ¡lem. ÄŒÃ­m dÅ¯leÅ¾itÄ›jÅ¡Ã­ jsi, tÃ­m vÃ­c dostÃ¡vÃ¡Å¡.
 };
 
 // *************************************************************************
@@ -89,7 +89,7 @@ INSTANCE Info_Vlk_1_DasLager(C_INFO)
 	condition	= Info_Vlk_1_DasLager_Condition;
 	information	= Info_Vlk_1_DasLager_Info;
 	permanent	= 1;
-	description = "Je tady k vidìní nìco zajímavìjšího ne chatrèe?";
+	description = "Je tady k vidÄ›nÃ­ nÄ›co zajÃ­mavÄ›jÅ¡Ã­ho neÅ¾ chatrÄe?";
 };                       
 
 FUNC INT Info_Vlk_1_DasLager_Condition()
@@ -99,9 +99,9 @@ FUNC INT Info_Vlk_1_DasLager_Condition()
 
 FUNC VOID Info_Vlk_1_DasLager_Info()
 {
-	AI_Output(other,self,"Info_Vlk_1_DasLager_15_00"); //Je tady nìco zajímavìjšího k vidìní ne pece?
-	AI_Output(self,other,"Info_Vlk_1_DasLager_01_01"); //Jistì, veèer mùeš jít do arény a pozorovat stráce, jak si navzájem rozbíjejí ksichty.
-	AI_Output(self,other,"Info_Vlk_1_DasLager_01_02"); //Za to vstupné to opravdu stojí.
+	AI_Output(other,self,"Info_Vlk_1_DasLager_15_00"); //Je tady nÄ›co zajÃ­mavÄ›jÅ¡Ã­ho k vidÄ›nÃ­ neÅ¾ pece?
+	AI_Output(self,other,"Info_Vlk_1_DasLager_01_01"); //JistÄ›, veÄer mÅ¯Å¾eÅ¡ jÃ­t do arÃ©ny a pozorovat strÃ¡Å¾ce, jak si navzÃ¡jem rozbÃ­jejÃ­ ksichty.
+	AI_Output(self,other,"Info_Vlk_1_DasLager_01_02"); //Za to vstupnÃ© to opravdu stojÃ­.
 };
 
 // *************************************************************************
@@ -124,8 +124,8 @@ FUNC INT Info_Vlk_1_DieLage_Condition()
 
 FUNC VOID Info_Vlk_1_DieLage_Info()
 {
-	AI_Output(other,self,"Info_Vlk_1_DieLage_15_00"); //Jak se máš?
-	AI_Output(self,other,"Info_Vlk_1_DieLage_01_01"); //Poslední dva tıdny jsem strávil prací v dole. Jediné, co chci, je klid. Take se mi kliï z oèí.
+	AI_Output(other,self,"Info_Vlk_1_DieLage_15_00"); //Jak se mÃ¡Å¡?
+	AI_Output(self,other,"Info_Vlk_1_DieLage_01_01"); //PoslednÃ­ dva tÃ½dny jsem strÃ¡vil pracÃ­ v dole. JedinÃ©, co chci, je klid. TakÅ¾e se mi kliÄ z oÄÃ­.
 };
 	
 // *************************************************************************

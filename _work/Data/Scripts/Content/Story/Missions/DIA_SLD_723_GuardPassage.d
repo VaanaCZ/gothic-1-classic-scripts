@@ -7,11 +7,11 @@
 //	Uhrzeit:
 //
 //	Es passiert folgendes:
-//	1.	N‰hert sich der Spieler dem Durchgang, so wird er in diesen
+//	1.	N√§hert sich der Spieler dem Durchgang, so wird er in diesen
 //		Dialog gezwungen und einmal gewarnt
-//	2.	N‰hert sich der SC trotzdem weiter, so wird er ein ZWEITES Mal
+//	2.	N√§hert sich der SC trotzdem weiter, so wird er ein ZWEITES Mal
 //		gewarnt (aggressiver mit Waffe ziehen)
-//	3.	N‰hert er sich trotzdem wieder, wird er angegriffen
+//	3.	N√§hert er sich trotzdem wieder, wird er angegriffen
 //////////////////////////////////////////////////////////////////////////
 const string	SLD_723_CHECKPOINT		= "NC_PLACE02";
 
@@ -42,7 +42,7 @@ func void Info_SLD_723_FirstWarn_Info()
 {
 	PrintGlobals	(PD_MISSION);
 
-	AI_Output 		(self, hero,"Info_SLD_723_FirstWarn_11_01"); //STŸJ! Nikdo nesmÌ d·l bez hesla!
+	AI_Output 		(self, hero,"Info_SLD_723_FirstWarn_11_01"); //ST≈ÆJ! Nikdo nesm√≠ d√°l bez hesla!
 
 	hero.aivar[AIV_LASTDISTTOWP] 		= Npc_GetDistToWP(hero,SLD_723_CHECKPOINT);
 	hero.aivar[AIV_GUARDPASSAGE_STATUS]	= AIV_GPS_FIRSTWARN;	
@@ -50,11 +50,11 @@ func void Info_SLD_723_FirstWarn_Info()
 	if (Npc_KnowsInfo(hero, Info_Cronos_SLEEPER))
 	{
 		Info_Clearchoices 	(Info_SLD_723_FirstWarn);
-		Info_Addchoice 		(Info_SLD_723_FirstWarn,"Cronos mi dal povolenÌ!",	Info_SLD_723_Parole_CRONOS);  
-		Info_Addchoice 		(Info_SLD_723_FirstWarn,"NevÌm, zapomnÏl jsem ho!",	Info_SLD_723_Parole_FORGOT);  
-		Info_Addchoice 		(Info_SLD_723_FirstWarn,"Heslo znÌ: TERIANTROCH.",	Info_SLD_723_Parole_FALSE2);  
-		Info_Addchoice 		(Info_SLD_723_FirstWarn,"Heslo znÌ: TETRIANDOCH.",	Info_SLD_723_Parole_TRUE);  
-		Info_Addchoice 		(Info_SLD_723_FirstWarn,"Heslo znÌ: TETRIDANOCH.",	Info_SLD_723_Parole_FALSE1);  
+		Info_Addchoice 		(Info_SLD_723_FirstWarn,"Cronos mi dal povolen√≠!",	Info_SLD_723_Parole_CRONOS);  
+		Info_Addchoice 		(Info_SLD_723_FirstWarn,"Nev√≠m, zapomnƒõl jsem ho!",	Info_SLD_723_Parole_FORGOT);  
+		Info_Addchoice 		(Info_SLD_723_FirstWarn,"Heslo zn√≠: TERIANTROCH.",	Info_SLD_723_Parole_FALSE2);  
+		Info_Addchoice 		(Info_SLD_723_FirstWarn,"Heslo zn√≠: TETRIANDOCH.",	Info_SLD_723_Parole_TRUE);  
+		Info_Addchoice 		(Info_SLD_723_FirstWarn,"Heslo zn√≠: TETRIDANOCH.",	Info_SLD_723_Parole_FALSE1);  
 	}
 	else
 	{
@@ -64,36 +64,36 @@ func void Info_SLD_723_FirstWarn_Info()
 
 func void Info_SLD_723_Parole_CRONOS ()
 {
-	AI_Output 			(hero, self,"Info_SLD_723_Parole_CRONOS_15_01"); //Cronos mi dal povolenÌ!
-	AI_Output 			(self, hero,"Info_SLD_723_Parole_CRONOS_11_02"); //Jestli je to tak, pak ti taky ¯ekl heslo. Ztraù se, lh·¯i!
+	AI_Output 			(hero, self,"Info_SLD_723_Parole_CRONOS_15_01"); //Cronos mi dal povolen√≠!
+	AI_Output 			(self, hero,"Info_SLD_723_Parole_CRONOS_11_02"); //Jestli je to tak, pak ti taky ≈ôekl heslo. Ztra≈• se, lh√°≈ôi!
 	AI_StopProcessInfos	(self);
 };
 
 func void Info_SLD_723_Parole_FORGOT ()
 {
-	AI_Output 			(hero, self,"Info_SLD_723_Parole_FORGOT_15_01"); //NevÌm, zapomnÏl jsem ho!
-	AI_Output 			(self, hero,"Info_SLD_723_Parole_FORGOT_11_02"); //Tak se vraù, aû si vzpomeneö a nezdrûuj mÏ!
+	AI_Output 			(hero, self,"Info_SLD_723_Parole_FORGOT_15_01"); //Nev√≠m, zapomnƒõl jsem ho!
+	AI_Output 			(self, hero,"Info_SLD_723_Parole_FORGOT_11_02"); //Tak se vra≈•, a≈æ si vzpomene≈° a nezdr≈æuj mƒõ!
 	AI_StopProcessInfos	(self);
 };
 
 func void Info_SLD_723_Parole_FALSE1 ()
 {
-	AI_Output 			(hero, self,"Info_SLD_723_Parole_FALSE1_15_01"); //Heslo znÌ: TETRIDANOCH.
-	AI_Output 			(self, hero,"Info_SLD_723_Parole_FALSE1_11_02"); //äPATNÃ!
+	AI_Output 			(hero, self,"Info_SLD_723_Parole_FALSE1_15_01"); //Heslo zn√≠: TETRIDANOCH.
+	AI_Output 			(self, hero,"Info_SLD_723_Parole_FALSE1_11_02"); //≈†PATNƒö!
 	AI_StopProcessInfos	(self);
 };
 
 func void Info_SLD_723_Parole_FALSE2 ()
 {
-	AI_Output 			(hero, self,"Info_SLD_723_Parole_FALSE2_15_01"); //Heslo znÌ: TERIANTROCH.
-	AI_Output 			(self, hero,"Info_SLD_723_Parole_FALSE2_11_02"); //äPATNÃ!
+	AI_Output 			(hero, self,"Info_SLD_723_Parole_FALSE2_15_01"); //Heslo zn√≠: TERIANTROCH.
+	AI_Output 			(self, hero,"Info_SLD_723_Parole_FALSE2_11_02"); //≈†PATNƒö!
 	AI_StopProcessInfos	(self);
 };
 
 func void Info_SLD_723_Parole_TRUE ()
 {
-	AI_Output 			(hero, self,"Info_SLD_723_Parole_TRUE_15_01"); //Heslo znÌ: TETRIANDOCH.
-	AI_Output 			(self, hero,"Info_SLD_723_Parole_TRUE_11_02"); //Spr·vnÏ, m˘ûeö jÌt!
+	AI_Output 			(hero, self,"Info_SLD_723_Parole_TRUE_15_01"); //Heslo zn√≠: TETRIANDOCH.
+	AI_Output 			(self, hero,"Info_SLD_723_Parole_TRUE_11_02"); //Spr√°vnƒõ, m≈Ø≈æe≈° j√≠t!
 	AI_StopProcessInfos	(self);
 
 	//---- beide Wachen auf passieren schalten ----
@@ -132,7 +132,7 @@ func int Info_SLD_723_LastWarn_Condition()
 
 func int Info_SLD_723_LastWarn_Info()
 {
-	AI_Output 		(self, hero,"Info_SLD_723_LastWarn_11_01"); 		//Nebudu to opakovat! ANI KROK D¡L!
+	AI_Output 		(self, hero,"Info_SLD_723_LastWarn_11_01"); 		//Nebudu to opakovat! ANI KROK D√ÅL!
 
 	hero.aivar[AIV_LASTDISTTOWP] 		= Npc_GetDistToWP(hero,SLD_723_CHECKPOINT);
 	hero.aivar[AIV_GUARDPASSAGE_STATUS]	= AIV_GPS_LASTWARN;
@@ -171,7 +171,7 @@ func int Info_SLD_723_Attack_Info()
 	hero.aivar[AIV_GUARDPASSAGE_STATUS]	= AIV_GPS_PUNISH;	
 	
 	B_FullStop			(self);	
-	AI_StopProcessInfos	(self);					// dem Spieler sofort wieder die Kontrolle zur¸ckgeben
+	AI_StopProcessInfos	(self);					// dem Spieler sofort wieder die Kontrolle zur√ºckgeben
 	B_IntruderAlert		(self,	other);
 	B_SetAttackReason	(self,	AIV_AR_INTRUDER);
 	Npc_SetTarget		(self,	hero);
@@ -189,7 +189,7 @@ instance Info_SLD_723_PAROLE (C_INFO)
 	information	= Info_SLD_723_PAROLE_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "(¯ekni heslo)";
+	description	= "(≈ôekni heslo)";
 };                       
 
 func int Info_SLD_723_PAROLE_Condition()
@@ -204,9 +204,9 @@ func int Info_SLD_723_PAROLE_Condition()
 func int Info_SLD_723_PAROLE_Info()
 {
 	Info_ClearChoices 	(Info_SLD_723_PAROLE);
-	Info_AddChoice 		(Info_SLD_723_PAROLE,"Cronos mi dal povolenÌ!",	Info_SLD_723_Parole_CRONOS);  
-	Info_AddChoice 		(Info_SLD_723_PAROLE,"NevÌm, zapomnÏl jsem ho!",	Info_SLD_723_Parole_FORGOT);  
-	Info_AddChoice 		(Info_SLD_723_PAROLE,"Heslo znÌ: TERIANTROCH.",	Info_SLD_723_Parole_FALSE2);  
-	Info_AddChoice 		(Info_SLD_723_PAROLE,"Heslo znÌ: TETRIANDOCH.",	Info_SLD_723_Parole_TRUE);  
-	Info_AddChoice 		(Info_SLD_723_PAROLE,"Heslo znÌ: TETRIDANOCH.",	Info_SLD_723_Parole_FALSE1);  
+	Info_AddChoice 		(Info_SLD_723_PAROLE,"Cronos mi dal povolen√≠!",	Info_SLD_723_Parole_CRONOS);  
+	Info_AddChoice 		(Info_SLD_723_PAROLE,"Nev√≠m, zapomnƒõl jsem ho!",	Info_SLD_723_Parole_FORGOT);  
+	Info_AddChoice 		(Info_SLD_723_PAROLE,"Heslo zn√≠: TERIANTROCH.",	Info_SLD_723_Parole_FALSE2);  
+	Info_AddChoice 		(Info_SLD_723_PAROLE,"Heslo zn√≠: TETRIANDOCH.",	Info_SLD_723_Parole_TRUE);  
+	Info_AddChoice 		(Info_SLD_723_PAROLE,"Heslo zn√≠: TETRIDANOCH.",	Info_SLD_723_Parole_FALSE1);  
 };

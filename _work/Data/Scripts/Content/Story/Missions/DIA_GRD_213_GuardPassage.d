@@ -7,11 +7,11 @@
 //	Uhrzeit:	24h
 //
 //	Es passiert folgendes:
-//	1.	N‰hert sich der Spieler dem Durchgang, so wird er in diesen
+//	1.	N√§hert sich der Spieler dem Durchgang, so wird er in diesen
 //		Dialog gezwungen und einmal gewarnt
-//	2.	N‰hert sich der SC trotzdem weiter, so wird er ein ZWEITES Mal
+//	2.	N√§hert sich der SC trotzdem weiter, so wird er ein ZWEITES Mal
 //		gewarnt (aggressiver mit Waffe ziehen)
-//	3.	N‰hert er sich trotzdem wieder, wird er angegriffen
+//	3.	N√§hert er sich trotzdem wieder, wird er angegriffen
 //////////////////////////////////////////////////////////////////////////
 const string	Grd_213_CHECKPOINT		= "OCC_GATE_INSIDE";
 
@@ -43,9 +43,9 @@ func void Info_Grd_213_FirstWarn_Info()
 {
 	PrintGlobals	(PD_MISSION);
 
-	AI_Output (self, hero,"Info_Grd_213_FirstWarn_Info_07_01"); //STŸJ!
-	AI_Output (hero, self,"Info_Grd_213_FirstWarn_Info_15_02"); //Co se dÏje?
-	AI_Output (self, hero,"Info_Grd_213_FirstWarn_Info_07_03"); //Na hrad nesmÌö! Vypadni!
+	AI_Output (self, hero,"Info_Grd_213_FirstWarn_Info_07_01"); //ST≈ÆJ!
+	AI_Output (hero, self,"Info_Grd_213_FirstWarn_Info_15_02"); //Co se dƒõje?
+	AI_Output (self, hero,"Info_Grd_213_FirstWarn_Info_07_03"); //Na hrad nesm√≠≈°! Vypadni!
 
 	hero.aivar[AIV_LASTDISTTOWP] 		= Npc_GetDistToWP(hero,Grd_213_CHECKPOINT);
 	hero.aivar[AIV_GUARDPASSAGE_STATUS]	= AIV_GPS_FIRSTWARN;	
@@ -80,7 +80,7 @@ func int Info_Grd_213_LastWarn_Condition()
 
 func int Info_Grd_213_LastWarn_Info()
 {
-	AI_Output (self, hero,"Info_Grd_213_LastWarn_07_01"); 		//Jsi hluch˝? JeötÏ krok a je z tebe potrava pro Ëervy!
+	AI_Output (self, hero,"Info_Grd_213_LastWarn_07_01"); 		//Jsi hluch√Ω? Je≈°tƒõ krok a je z tebe potrava pro ƒçervy!
 
 	hero.aivar[AIV_LASTDISTTOWP] 		= Npc_GetDistToWP (hero,Grd_213_CHECKPOINT);
 	hero.aivar[AIV_GUARDPASSAGE_STATUS]	= AIV_GPS_LASTWARN;	
@@ -120,7 +120,7 @@ func int Info_Grd_213_Attack_Info()
 	hero.aivar[AIV_GUARDPASSAGE_STATUS]	= AIV_GPS_PUNISH;	
 	
 	B_FullStop			(self);	
-	AI_StopProcessInfos	(self);					//dem Spieler sofort wieder die Kontrolle zur¸ckgeben
+	AI_StopProcessInfos	(self);					//dem Spieler sofort wieder die Kontrolle zur√ºckgeben
 	B_IntruderAlert		(self,	other);
 	B_SetAttackReason	(self,	AIV_AR_INTRUDER);
 	Npc_SetTarget		(self,	hero);
@@ -147,7 +147,7 @@ FUNC int  Grd_213_Torwache_WELCOME_Condition()
 };
 func void  Grd_213_Torwache_WELCOME_Info()
 {
-	AI_Output (self, other,"Grd_213_Torwache_WELCOME_Info_07_01"); //Slyöel jsem, ûe jsi jednÌm z n·s? Na nÏkoho, kdo tady nenÌ dlouho, to nenÌ öpatnÈ.
+	AI_Output (self, other,"Grd_213_Torwache_WELCOME_Info_07_01"); //Sly≈°el jsem, ≈æe jsi jedn√≠m z n√°s? Na nƒõkoho, kdo tady nen√≠ dlouho, to nen√≠ ≈°patn√©.
 };
 
 // ************************************************************
@@ -185,7 +185,7 @@ INSTANCE Info_Grd_213_Abblitzen (C_INFO)
 	condition	= Info_Grd_213_Abblitzen_Condition;
 	information	= Info_Grd_213_Abblitzen_Info;
 	permanent	= 1;
-	description	= "Trochu ûivota do toho umÌr·nÌ! Jako kdyby nÏkdo...";
+	description	= "Trochu ≈æivota do toho um√≠r√°n√≠! Jako kdyby nƒõkdo...";
 };                       
 
 FUNC INT Info_Grd_213_Abblitzen_Condition()
@@ -198,8 +198,8 @@ FUNC INT Info_Grd_213_Abblitzen_Condition()
 
 FUNC VOID Info_Grd_213_Abblitzen_Info()
 {
-	AI_Output (other, self,"Info_Grd_213_Abblitzen_15_00"); //VÌö, mÏl bys do ûivota vnÈst trochu vÌc vzruöenÌ. Jako t¯eba vpustit nÏkoho na hrad.
-	AI_Output (self, other,"Info_Grd_213_Abblitzen_07_01"); //VzruöenÌ? To nenÌ öpatn˝ n·pad - uû dlouho jsem nevyrazil nÏkoho, jako jsi ty!
+	AI_Output (other, self,"Info_Grd_213_Abblitzen_15_00"); //V√≠≈°, mƒõl bys do ≈æivota vn√©st trochu v√≠c vzru≈°en√≠. Jako t≈ôeba vpustit nƒõkoho na hrad.
+	AI_Output (self, other,"Info_Grd_213_Abblitzen_07_01"); //Vzru≈°en√≠? To nen√≠ ≈°patn√Ω n√°pad - u≈æ dlouho jsem nevyrazil nƒõkoho, jako jsi ty!
 	AI_StopProcessInfos	(self);
 };
 
@@ -214,7 +214,7 @@ INSTANCE Info_Grd_213_Passgate (C_INFO)
 	condition	= Info_Grd_213_Passgate_Condition;
 	information	= Info_Grd_213_Passgate_Info;
 	permanent	= 1;
-	description	= "Jsi v po¯·dku?";
+	description	= "Jsi v po≈ô√°dku?";
 };                       
 
 FUNC INT Info_Grd_213_Passgate_Condition()
@@ -227,7 +227,7 @@ FUNC INT Info_Grd_213_Passgate_Condition()
 
 FUNC VOID Info_Grd_213_Passgate_Info()
 {
-	AI_Output (other, self,"Info_Grd_213_Passgate_15_00"); //Hej, jsi v po¯·dku?
-	AI_Output (self, other,"Info_Grd_213_Passgate_07_01"); //Moc se tady nemotej - bÏû dovnit¯.
+	AI_Output (other, self,"Info_Grd_213_Passgate_15_00"); //Hej, jsi v po≈ô√°dku?
+	AI_Output (self, other,"Info_Grd_213_Passgate_07_01"); //Moc se tady nemotej - bƒõ≈æ dovnit≈ô.
 	AI_StopProcessInfos	(self);
 };

@@ -34,7 +34,7 @@ instance  Org_819_Drax_HuntHere (C_INFO)
 	condition	= Org_819_Drax_HuntHere_Condition;
 	information	= Org_819_Drax_HuntHere_Info;
 	permanent	= 0;
-	description = "Ty tady lovíš, e jo?";
+	description = "Ty tady lovÃ­Å¡, Å¾e jo?";
 };                       
 
 FUNC int  Org_819_Drax_HuntHere_Condition()
@@ -44,12 +44,12 @@ FUNC int  Org_819_Drax_HuntHere_Condition()
 
 FUNC VOID  Org_819_Drax_HuntHere_Info()
 {
-	AI_Output (other, self,"Org_819_Drax_HuntHere_15_00"); //Ty tady lovíš, e jo?
-	AI_Output (self, other,"Org_819_Drax_HuntHere_06_01"); //Vypadá to tak... co chceš?
-	AI_Output (other, self,"Org_819_Drax_HuntHere_15_02"); //Mùeš mi dát nìjaké rady pro lov?
-	AI_Output (self, other,"Org_819_Drax_HuntHere_06_03"); //Mùu tì nauèit pár vìcí - ale všechno má svoji cenu.
-	AI_Output (other, self,"Org_819_Drax_HuntHere_15_04"); //Kolik by to stálo?
-	AI_Output (self, other,"Org_819_Drax_HuntHere_06_05"); //Poøádnı doušek piva by pro zaèátek mohl staèit - pak se uvidí.
+	AI_Output (other, self,"Org_819_Drax_HuntHere_15_00"); //Ty tady lovÃ­Å¡, Å¾e jo?
+	AI_Output (self, other,"Org_819_Drax_HuntHere_06_01"); //VypadÃ¡ to tak... co chceÅ¡?
+	AI_Output (other, self,"Org_819_Drax_HuntHere_15_02"); //MÅ¯Å¾eÅ¡ mi dÃ¡t nÄ›jakÃ© rady pro lov?
+	AI_Output (self, other,"Org_819_Drax_HuntHere_06_03"); //MÅ¯Å¾u tÄ› nauÄit pÃ¡r vÄ›cÃ­ - ale vÅ¡echno mÃ¡ svoji cenu.
+	AI_Output (other, self,"Org_819_Drax_HuntHere_15_04"); //Kolik by to stÃ¡lo?
+	AI_Output (self, other,"Org_819_Drax_HuntHere_06_05"); //PoÅ™Ã¡dnÃ½ douÅ¡ek piva by pro zaÄÃ¡tek mohl staÄit - pak se uvidÃ­.
 };
 
 // **************************************************
@@ -66,7 +66,7 @@ instance  Org_819_Drax_Scavenger (C_INFO)
 	condition	= Org_819_Drax_Scavenger_Condition;
 	information	= Org_819_Drax_Scavenger_Info;
 	permanent	= 1;
-	description = "Tady je, vezmi si pivo a vyprávìj mi o lovu.";
+	description = "Tady je, vezmi si pivo a vyprÃ¡vÄ›j mi o lovu.";
 };                       
 
 FUNC int  Org_819_Drax_Scavenger_Condition()
@@ -83,29 +83,29 @@ FUNC VOID  Org_819_Drax_Scavenger_Info()
 	{
 		B_GiveInvItems	(other, self, itfobeer,1);
 	
-		AI_Output	(other, self,"Org_819_Drax_Scavenger_15_00"); //Tady je, vezmi si pivo a vyprávìj mi o lovu.
+		AI_Output	(other, self,"Org_819_Drax_Scavenger_15_00"); //Tady je, vezmi si pivo a vyprÃ¡vÄ›j mi o lovu.
 		if ( C_BodystateContains(self, BS_SIT) )
 		{
 			AI_StandUp		(self);
 			AI_TurnToNpc	(self, hero);
 		};
 		AI_UseItem	(self,	ItFobeer);
-		AI_Output	(self, other,"Org_819_Drax_Scavenger_06_01"); //Mrchorouty, tak øíkáme tìm velkım ptákùm, je nejlepší lovit jednoho po druhém. Vylákat jednoho mrchorouta z hejna je snadné.
-		AI_Output	(self, other,"Org_819_Drax_Scavenger_06_02"); //Kdy pøijdeš moc blízko, jsou podrádìní. Za chvilku vyrazí tvım smìrem. V tom okamiku bys na nì mìl èekat s pøipravenou zbraní.
-		AI_Output	(self, other,"Org_819_Drax_Scavenger_06_03"); //Kdy se ti tu potvoru podaøí srazit, ještì ne na tebe zaútoèí, musíš bıt poøád ve støehu, abys ji pak mohl dorazit, a sám se pøitom nezranil.
-		AI_Output	(self, other,"Org_819_Drax_Scavenger_06_04"); //Pokud udeøíš první TY - vıbornì - ale nenech to udìlat je.
+		AI_Output	(self, other,"Org_819_Drax_Scavenger_06_01"); //MrchoÅ¾routy, tak Å™Ã­kÃ¡me tÄ›m velkÃ½m ptÃ¡kÅ¯m, je nejlepÅ¡Ã­ lovit jednoho po druhÃ©m. VylÃ¡kat jednoho mrchoÅ¾routa z hejna je snadnÃ©.
+		AI_Output	(self, other,"Org_819_Drax_Scavenger_06_02"); //KdyÅ¾ pÅ™ijdeÅ¡ moc blÃ­zko, jsou podrÃ¡Å¾dÄ›nÃ­. Za chvilku vyrazÃ­ tvÃ½m smÄ›rem. V tom okamÅ¾iku bys na nÄ› mÄ›l Äekat s pÅ™ipravenou zbranÃ­.
+		AI_Output	(self, other,"Org_819_Drax_Scavenger_06_03"); //KdyÅ¾ se ti tu potvoru podaÅ™Ã­ srazit, jeÅ¡tÄ› neÅ¾ na tebe zaÃºtoÄÃ­, musÃ­Å¡ bÃ½t poÅ™Ã¡d ve stÅ™ehu, abys ji pak mohl dorazit, a sÃ¡m se pÅ™itom nezranil.
+		AI_Output	(self, other,"Org_819_Drax_Scavenger_06_04"); //Pokud udeÅ™Ã­Å¡ prvnÃ­ TY - vÃ½bornÄ› - ale nenech to udÄ›lat je.
 		drax_bierbekommen = TRUE;
 	}
 	else
 	{
-		AI_Output (other, self,"Org_819_Drax_Scavenger_KEIN_BIER_15_00"); //Nemám ádné pivo.
-		AI_Output (self, other,"Org_819_Drax_Scavenger_KEIN_BIER_06_01"); //Tak bì a nìjaké seeò. Takhle lacino u nikdy k ádné dobré radì nepøijdeš. A a pøijdeš pøíštì, pøines také nìjakou rudu!
-		AI_Output (self, other,"Org_819_Drax_Scavenger_KEIN_BIER_06_02"); //Mùu ti dát pár informací o zvìøi, ale bude tì to nìco stát!
+		AI_Output (other, self,"Org_819_Drax_Scavenger_KEIN_BIER_15_00"); //NemÃ¡m Å¾Ã¡dnÃ© pivo.
+		AI_Output (self, other,"Org_819_Drax_Scavenger_KEIN_BIER_06_01"); //Tak bÄ›Å¾ a nÄ›jakÃ© seÅ¾eÅˆ. Takhle lacino uÅ¾ nikdy k Å¾Ã¡dnÃ© dobrÃ© radÄ› nepÅ™ijdeÅ¡. A aÅ¾ pÅ™ijdeÅ¡ pÅ™Ã­Å¡tÄ›, pÅ™ines takÃ© nÄ›jakou rudu!
+		AI_Output (self, other,"Org_819_Drax_Scavenger_KEIN_BIER_06_02"); //MÅ¯Å¾u ti dÃ¡t pÃ¡r informacÃ­ o zvÄ›Å™i, ale bude tÄ› to nÄ›co stÃ¡t!
 	};	
 	drax_Lehrer_frei = TRUE;
 	
 	Log_CreateTopic	(GE_TeacherOW, LOG_NOTE);
-	B_LogEntry		(GE_TeacherOW,"Bandita Drax mi nabídl, e mì nauèí kuchat zvìø, kdy mu zaplatím, oè poádá. Vìtšinou loví na cestì z trištì do Starého tábora.");
+	B_LogEntry		(GE_TeacherOW,"Bandita Drax mi nabÃ­dl, Å¾e mÄ› nauÄÃ­ kuchat zvÄ›Å™, kdyÅ¾ mu zaplatÃ­m, oÄ poÅ¾Ã¡dÃ¡. VÄ›tÅ¡inou lovÃ­ na cestÄ› z trÅ¾iÅ¡tÄ› do StarÃ©ho tÃ¡bora.");
 };
 
 // **************************************************
@@ -119,7 +119,7 @@ instance  Org_819_Drax_Creatures (C_INFO)
 	condition	= Org_819_Drax_Creatures_Condition;
 	information	= Org_819_Drax_Creatures_Info;
 	permanent	= 1;
-	description = "Co mi ještì mùeš øíci o lovu?";
+	description = "Co mi jeÅ¡tÄ› mÅ¯Å¾eÅ¡ Å™Ã­ci o lovu?";
 };                       
 
 FUNC int  Org_819_Drax_Creatures_Condition()
@@ -133,37 +133,37 @@ FUNC int  Org_819_Drax_Creatures_Condition()
 
 FUNC VOID  Org_819_Drax_Creatures_Info()
 {
-	AI_Output (other, self,"Org_819_Drax_Creatures_15_00"); //Co mi ještì mùeš øíci o lovu?
+	AI_Output (other, self,"Org_819_Drax_Creatures_15_00"); //Co mi jeÅ¡tÄ› mÅ¯Å¾eÅ¡ Å™Ã­ci o lovu?
 	
 	if ( (Knows_GetTeeth == FALSE)||(Knows_GetFur == FALSE)||(Knows_GetClaws == FALSE)||(Knows_GetHide == FALSE) )
 	{
-		AI_Output (self, other,"Org_819_Drax_Creatures_06_01"); //Spoustu - ale bude tì to stát mnohem víc ne pivo.
-		AI_Output (self, other,"Org_819_Drax_Creatures_06_02"); //Kdy víš jak, mùeš si z tìch pøíšer vzít zuby, drápy a kùi. Je tìké je získat, ale mají velkou cenu.
-		AI_Output (self, other,"Org_819_Drax_Creatures_06_03"); //Kadı obchodník ty vìci s tebou vymìní.
+		AI_Output (self, other,"Org_819_Drax_Creatures_06_01"); //Spoustu - ale bude tÄ› to stÃ¡t mnohem vÃ­c neÅ¾ pivo.
+		AI_Output (self, other,"Org_819_Drax_Creatures_06_02"); //KdyÅ¾ vÃ­Å¡ jak, mÅ¯Å¾eÅ¡ si z tÄ›ch pÅ™Ã­Å¡er vzÃ­t zuby, drÃ¡py a kÅ¯Å¾i. Je tÄ›Å¾kÃ© je zÃ­skat, ale majÃ­ velkou cenu.
+		AI_Output (self, other,"Org_819_Drax_Creatures_06_03"); //KaÅ¾dÃ½ obchodnÃ­k ty vÄ›ci s tebou vymÄ›nÃ­.
 		
 		Info_ClearChoices(Org_819_Drax_Creatures);
 		Info_AddChoice   (Org_819_Drax_Creatures, DIALOG_BACK 													,Org_819_Drax_Creatures_BACK);
-		Info_AddChoice   (Org_819_Drax_Creatures,"Poaduješ toho za své rady moc.",Org_819_Drax_Creatures_PrettyMuch);
+		Info_AddChoice   (Org_819_Drax_Creatures,"PoÅ¾adujeÅ¡ toho za svÃ© rady moc.",Org_819_Drax_Creatures_PrettyMuch);
 		if (Knows_GetTeeth == FALSE)
 		{
-			Info_AddChoice   (Org_819_Drax_Creatures,"Vyjmout zuby (cena: 1 dovednostní bod, 50 nugetù)",Org_819_Drax_Creatures_Zahn);
+			Info_AddChoice   (Org_819_Drax_Creatures,"Vyjmout zuby (cena: 1 dovednostnÃ­ bod, 50 nugetÅ¯)",Org_819_Drax_Creatures_Zahn);
 		};
 		if (Knows_GetFur == FALSE)
 		{
-			Info_AddChoice	 (Org_819_Drax_Creatures,"Stáhnout koešinu (cena: 1 dovednostní bod, 100 nugetù)",Org_819_Drax_Creatures_Fell);
+			Info_AddChoice	 (Org_819_Drax_Creatures,"StÃ¡hnout koÅ¾eÅ¡inu (cena: 1 dovednostnÃ­ bod, 100 nugetÅ¯)",Org_819_Drax_Creatures_Fell);
 		};
 		if (Knows_GetClaws == FALSE)
 		{
-			Info_AddChoice	 (Org_819_Drax_Creatures,"Vyjmout drápy (cena: 1 dovednostní bod, 50 nugetù)",Org_819_Drax_Creatures_Kralle);
+			Info_AddChoice	 (Org_819_Drax_Creatures,"Vyjmout drÃ¡py (cena: 1 dovednostnÃ­ bod, 50 nugetÅ¯)",Org_819_Drax_Creatures_Kralle);
 		};
 		if (Knows_GetHide == FALSE)
 		{
-			Info_AddChoice	 (Org_819_Drax_Creatures,"Stáhnout plaza (cena: 1 dovednostní bod, 100 nugetù)",Org_819_Drax_Creatures_Haut);
+			Info_AddChoice	 (Org_819_Drax_Creatures,"StÃ¡hnout plaza (cena: 1 dovednostnÃ­ bod, 100 nugetÅ¯)",Org_819_Drax_Creatures_Haut);
 		};
 	}
 	else
 	{
-		AI_Output (self, other,"Org_819_Drax_Creatures_TaughtAll_06_00"); //Øekl jsem ti všechno, co vím.
+		AI_Output (self, other,"Org_819_Drax_Creatures_TaughtAll_06_00"); //Å˜ekl jsem ti vÅ¡echno, co vÃ­m.
 	};
 };
 
@@ -174,11 +174,11 @@ func void Org_819_Drax_Creatures_BACK()
 
 func void Org_819_Drax_Creatures_PrettyMuch()
 {
-	AI_Output (other, self,"Org_819_Drax_Creatures_PrettyMuch_15_00"); //Poaduješ toho za své rady moc.
-	AI_Output (self, other,"Org_819_Drax_Creatures_PrettyMuch_06_01"); //Moná, ale ty na nich mùeš vydìlat daleko víc.
-	AI_Output (self, other,"Org_819_Drax_Creatures_PrettyMuch_06_02"); //Všechna ta zvìø, kterou zabiješ, ti shnije, kdy nebudeš vìdìt, jak ji rozøezat.
-	AI_Output (self, other,"Org_819_Drax_Creatures_PrettyMuch_06_03"); //Tím ztratíš monost stáhnout ji z kùe a za vysokou cenu prodat koešinu.
-	AI_Output (self, other,"Org_819_Drax_Creatures_PrettyMuch_06_04"); //Já bıt tebou, pokusil bych si doplnit vìdomosti, jak nejvíce to pùjde.
+	AI_Output (other, self,"Org_819_Drax_Creatures_PrettyMuch_15_00"); //PoÅ¾adujeÅ¡ toho za svÃ© rady moc.
+	AI_Output (self, other,"Org_819_Drax_Creatures_PrettyMuch_06_01"); //MoÅ¾nÃ¡, ale ty na nich mÅ¯Å¾eÅ¡ vydÄ›lat daleko vÃ­c.
+	AI_Output (self, other,"Org_819_Drax_Creatures_PrettyMuch_06_02"); //VÅ¡echna ta zvÄ›Å™, kterou zabijeÅ¡, ti shnije, kdyÅ¾ nebudeÅ¡ vÄ›dÄ›t, jak ji rozÅ™ezat.
+	AI_Output (self, other,"Org_819_Drax_Creatures_PrettyMuch_06_03"); //TÃ­m ztratÃ­Å¡ moÅ¾nost stÃ¡hnout ji z kÅ¯Å¾e a za vysokou cenu prodat koÅ¾eÅ¡inu.
+	AI_Output (self, other,"Org_819_Drax_Creatures_PrettyMuch_06_04"); //JÃ¡ bÃ½t tebou, pokusil bych si doplnit vÄ›domosti, jak nejvÃ­ce to pÅ¯jde.
 };
 
 func void Org_819_Drax_Creatures_Zahn()
@@ -193,30 +193,30 @@ func void Org_819_Drax_Creatures_Zahn()
 			
 			B_GiveInvItems	(other, self,itminugget,50);
 			
-			PrintScreen	("Nauèit se: vytahovat zuby", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
+			PrintScreen	("NauÄit se: vytahovat zuby", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
 					
-			AI_Output (self, other,"Org_819_Drax_Creatures_Zahn_06_01"); //Nejdùleitìjší je zajistit, aby se zuby netøíštily. Tomu se vyhneš tak, e vloíš nù blízko støedu zubu a opatrnì ho vypáèíš.
-			AI_Output (self, other,"Org_819_Drax_Creatures_Zahn_06_02"); //Tak si mùeš vzít zuby vlkù, stínovıch pøíšer a kousavcù.
+			AI_Output (self, other,"Org_819_Drax_Creatures_Zahn_06_01"); //NejdÅ¯leÅ¾itÄ›jÅ¡Ã­ je zajistit, aby se zuby netÅ™Ã­Å¡tily. Tomu se vyhneÅ¡ tak, Å¾e vloÅ¾Ã­Å¡ nÅ¯Å¾ blÃ­zko stÅ™edu zubu a opatrnÄ› ho vypÃ¡ÄÃ­Å¡.
+			AI_Output (self, other,"Org_819_Drax_Creatures_Zahn_06_02"); //Tak si mÅ¯Å¾eÅ¡ vzÃ­t zuby vlkÅ¯, stÃ­novÃ½ch pÅ™Ã­Å¡er a kousavcÅ¯.
 			
 			Knows_GetTeeth = TRUE;
 			Log_CreateTopic (GE_AnimalTrophies,LOG_NOTE);
-			B_LogEntry (GE_AnimalTrophies,"Znalost vytahování zubù - vlk, skøetí pes, chòapavec, kousavec, loveckı pes, stínová šelma");
+			B_LogEntry (GE_AnimalTrophies,"Znalost vytahovÃ¡nÃ­ zubÅ¯ - vlk, skÅ™etÃ­ pes, chÅˆapavec, kousavec, loveckÃ½ pes, stÃ­novÃ¡ Å¡elma");
 		}
 		else
 		{
-			AI_Output (self, other,"Org_819_Drax_Creatures_KEINE_LP_06_00"); //Musíš ještì získat zkušenosti, jinak ti mé rady nebudou k nièemu.
-			PrintScreen	("Nedostatek zkušenostních bodù!", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
+			AI_Output (self, other,"Org_819_Drax_Creatures_KEINE_LP_06_00"); //MusÃ­Å¡ jeÅ¡tÄ› zÃ­skat zkuÅ¡enosti, jinak ti mÃ© rady nebudou k niÄemu.
+			PrintScreen	("Nedostatek zkuÅ¡enostnÃ­ch bodÅ¯!", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
 		};
 	}
 	else
 	{
-		AI_Output (self, other,"Org_819_Drax_Creatures_KEIN_ERZ_06_00"); //Nejdøív chci vidìt nìjakou rudu. Jak jsem øekl: všechno má svou cenu!
+		AI_Output (self, other,"Org_819_Drax_Creatures_KEIN_ERZ_06_00"); //NejdÅ™Ã­v chci vidÄ›t nÄ›jakou rudu. Jak jsem Å™ekl: vÅ¡echno mÃ¡ svou cenu!
 	};
 };
 
 func void Org_819_Drax_Creatures_Fell()
 {
-	AI_Output (other, self,"Org_819_Drax_Creatures_Fell_15_00"); //Jak dostanu kùi tìch pøíšer?
+	AI_Output (other, self,"Org_819_Drax_Creatures_Fell_15_00"); //Jak dostanu kÅ¯Å¾i tÄ›ch pÅ™Ã­Å¡er?
 	
 	if (Npc_HasItems(other,itminugget)>=100)
 	{
@@ -226,24 +226,24 @@ func void Org_819_Drax_Creatures_Fell()
 			
 			B_GiveInvItems	(other, self, itminugget,100);
 			
-			PrintScreen	("Nauèit se: stahovat koešinu", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
+			PrintScreen	("NauÄit se: stahovat koÅ¾eÅ¡inu", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
 		
-			AI_Output (self, other,"Org_819_Drax_Creatures_Fell_06_01"); //Dùleité je kùi stahovat zezadu dopøedu. Jakmile se ti napne, u je to snadné. Koešiny se velmi cení!
-			AI_Output (self, other,"Org_819_Drax_Creatures_Fell_06_02"); //Kùe vlkù a stínovıch pøíšer se mùou pouít na odìv. Kdy prohlídneš koešinu zabitého zvíøete, hned poznáš, jestli ji pùjde pouít, nebo ne. 
+			AI_Output (self, other,"Org_819_Drax_Creatures_Fell_06_01"); //DÅ¯leÅ¾itÃ© je kÅ¯Å¾i stahovat zezadu dopÅ™edu. Jakmile se ti napne, uÅ¾ je to snadnÃ©. KoÅ¾eÅ¡iny se velmi cenÃ­!
+			AI_Output (self, other,"Org_819_Drax_Creatures_Fell_06_02"); //KÅ¯Å¾e vlkÅ¯ a stÃ­novÃ½ch pÅ™Ã­Å¡er se mÅ¯Å¾ou pouÅ¾Ã­t na odÄ›v. KdyÅ¾ prohlÃ­dneÅ¡ koÅ¾eÅ¡inu zabitÃ©ho zvÃ­Å™ete, hned poznÃ¡Å¡, jestli ji pÅ¯jde pouÅ¾Ã­t, nebo ne. 
 			
 			Knows_GetFur = TRUE;
 			Log_CreateTopic (GE_AnimalTrophies,LOG_NOTE);
-			B_LogEntry (GE_AnimalTrophies,"Znalost stahování koešiny - vlk, skøetí pes, chòapavec, kousavec, loveckı pes, stínová šelma, trol");
+			B_LogEntry (GE_AnimalTrophies,"Znalost stahovÃ¡nÃ­ koÅ¾eÅ¡iny - vlk, skÅ™etÃ­ pes, chÅˆapavec, kousavec, loveckÃ½ pes, stÃ­novÃ¡ Å¡elma, trol");
 		}
 		else
 		{
-			AI_Output (self, other,"Org_819_Drax_Creatures_KEINE_LP_06_01"); //Potøebuješ víc zkušeností, jinak ti mé vìdomosti nebudou k nièemu.
-			PrintScreen	("Nedostatek zkušenostních bodù!", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
+			AI_Output (self, other,"Org_819_Drax_Creatures_KEINE_LP_06_01"); //PotÅ™ebujeÅ¡ vÃ­c zkuÅ¡enostÃ­, jinak ti mÃ© vÄ›domosti nebudou k niÄemu.
+			PrintScreen	("Nedostatek zkuÅ¡enostnÃ­ch bodÅ¯!", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
 		};
 	}
 	else
 	{
-		AI_Output (self, other,"Org_819_Drax_Creatures_KEIN_ERZ_06_01"); //Nejdøív chci vidìt nìjakou rudu. Jak jsem øekl: všechno má svou cenu!
+		AI_Output (self, other,"Org_819_Drax_Creatures_KEIN_ERZ_06_01"); //NejdÅ™Ã­v chci vidÄ›t nÄ›jakou rudu. Jak jsem Å™ekl: vÅ¡echno mÃ¡ svou cenu!
 	};
 };
 
@@ -257,25 +257,25 @@ func void Org_819_Drax_Creatures_Kralle()
 			
 			B_GiveInvItems	(other, self,itminugget,50);
 			
-			PrintScreen	("Nauèit se: vytahovat drápy", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
+			PrintScreen	("NauÄit se: vytahovat drÃ¡py", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
 			
-			AI_Output (other, self,"Org_819_Drax_Creatures_Kralle_15_00"); //Uka mi, jak dostanu drápy!
-			AI_Output (self, other,"Org_819_Drax_Creatures_Kralle_06_01"); //Je to v podstatì velmi jednoduché, pokud víš jak na to. Ohneš drápy dopøedu - nikdy ne dozadu - ale NESMÍŠ je vytahovat!
-			AI_Output (self, other,"Org_819_Drax_Creatures_Kralle_06_02"); //Drápy mùeš dostat hlavnì z ještìrek. Teï u víš, z kterıch pøíšer drápy brát.
+			AI_Output (other, self,"Org_819_Drax_Creatures_Kralle_15_00"); //UkaÅ¾ mi, jak dostanu drÃ¡py!
+			AI_Output (self, other,"Org_819_Drax_Creatures_Kralle_06_01"); //Je to v podstatÄ› velmi jednoduchÃ©, pokud vÃ­Å¡ jak na to. OhneÅ¡ drÃ¡py dopÅ™edu - nikdy ne dozadu - ale NESMÃÅ  je vytahovat!
+			AI_Output (self, other,"Org_819_Drax_Creatures_Kralle_06_02"); //DrÃ¡py mÅ¯Å¾eÅ¡ dostat hlavnÄ› z jeÅ¡tÄ›rek. TeÄ uÅ¾ vÃ­Å¡, z kterÃ½ch pÅ™Ã­Å¡er drÃ¡py brÃ¡t.
 			
 			Knows_GetClaws = TRUE;
 			Log_CreateTopic (GE_AnimalTrophies,LOG_NOTE);
-			B_LogEntry (GE_AnimalTrophies,"Znalost vytahování drápù - ještìrka, chòapavec, èíhavec, kousavec, bøitvoun");
+			B_LogEntry (GE_AnimalTrophies,"Znalost vytahovÃ¡nÃ­ drÃ¡pÅ¯ - jeÅ¡tÄ›rka, chÅˆapavec, ÄÃ­havec, kousavec, bÅ™itvoun");
 		}
 		else
 		{
-			AI_Output (self, other,"Org_819_Drax_Creatures_KEINE_LP_06_02"); //Potøebuješ víc zkušeností, jinak ti mé vìdomosti nebudou k nièemu.
-			PrintScreen	("Nedostatek zkušenostních bodù!", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
+			AI_Output (self, other,"Org_819_Drax_Creatures_KEINE_LP_06_02"); //PotÅ™ebujeÅ¡ vÃ­c zkuÅ¡enostÃ­, jinak ti mÃ© vÄ›domosti nebudou k niÄemu.
+			PrintScreen	("Nedostatek zkuÅ¡enostnÃ­ch bodÅ¯!", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
 		};
 	}
 	else
 	{
-		AI_Output (self, other,"Org_819_Drax_Creatures_KEIN_ERZ_06_02"); //Nejdøív chci vidìt nìjakou rudu. Jak jsem øekl: všechno má svou cenu!
+		AI_Output (self, other,"Org_819_Drax_Creatures_KEIN_ERZ_06_02"); //NejdÅ™Ã­v chci vidÄ›t nÄ›jakou rudu. Jak jsem Å™ekl: vÅ¡echno mÃ¡ svou cenu!
 	};
 };
 
@@ -289,25 +289,25 @@ func void Org_819_Drax_Creatures_Haut()
 						
 			B_GiveInvItems	(other, self,itminugget,100);
 			
-			PrintScreen	("Nauèit se: stahovat plazí kùi", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
+			PrintScreen	("NauÄit se: stahovat plazÃ­ kÅ¯Å¾i", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
 				
-			AI_Output (other, self,"Org_819_Drax_Creatures_Haut_15_00"); //Na co musím dávat pozor, kdy stahuji plazí kùi?
-			AI_Output (self, other,"Org_819_Drax_Creatures_Haut_06_01"); //Jediní plazi, kteøí jsou k tomuhle úèelu vhodní, jsou èíhavci a moèáloví raloci.
-			AI_Output (self, other,"Org_819_Drax_Creatures_Haut_06_02"); //Kdy naøízneš kùi po stranách, sloupne se sama. Teï u bys mìl umìt stahovat plazy.
+			AI_Output (other, self,"Org_819_Drax_Creatures_Haut_15_00"); //Na co musÃ­m dÃ¡vat pozor, kdyÅ¾ stahuji plazÃ­ kÅ¯Å¾i?
+			AI_Output (self, other,"Org_819_Drax_Creatures_Haut_06_01"); //JedinÃ­ plazi, kteÅ™Ã­ jsou k tomuhle ÃºÄelu vhodnÃ­, jsou ÄÃ­havci a moÄÃ¡lovÃ­ Å¾raloci.
+			AI_Output (self, other,"Org_819_Drax_Creatures_Haut_06_02"); //KdyÅ¾ naÅ™Ã­zneÅ¡ kÅ¯Å¾i po stranÃ¡ch, sloupne se sama. TeÄ uÅ¾ bys mÄ›l umÄ›t stahovat plazy.
 				
 			Knows_GetHide = TRUE;
 			
 			Log_CreateTopic (GE_AnimalTrophies,LOG_NOTE);
-			B_LogEntry (GE_AnimalTrophies,"Znalost stahování plazù - èíhavec, moèálovı ralok");
+			B_LogEntry (GE_AnimalTrophies,"Znalost stahovÃ¡nÃ­ plazÅ¯ - ÄÃ­havec, moÄÃ¡lovÃ½ Å¾ralok");
 		}
 		else
 		{
-			AI_Output (self, other,"Org_819_Drax_Creatures_KEINE_LP_06_03"); //Potøebuješ víc zkušeností, jinak ti mé vìdomosti nebudou k nièemu.
-			PrintScreen	("Nedostatek zkušenostních bodù!", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
+			AI_Output (self, other,"Org_819_Drax_Creatures_KEINE_LP_06_03"); //PotÅ™ebujeÅ¡ vÃ­c zkuÅ¡enostÃ­, jinak ti mÃ© vÄ›domosti nebudou k niÄemu.
+			PrintScreen	("Nedostatek zkuÅ¡enostnÃ­ch bodÅ¯!", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
 		};
 	}
 	else
 	{
-		AI_Output (self, other,"Org_819_Drax_Creatures_KEIN_ERZ_06_03"); //Nejdøív chci vidìt nìjakou rudu. Jak jsem øekl: všechno má svou cenu!
+		AI_Output (self, other,"Org_819_Drax_Creatures_KEIN_ERZ_06_03"); //NejdÅ™Ã­v chci vidÄ›t nÄ›jakou rudu. Jak jsem Å™ekl: vÅ¡echno mÃ¡ svou cenu!
 	};
 };

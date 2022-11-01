@@ -33,7 +33,7 @@ INSTANCE DIA_Tpl_1416_Torwache_Life (C_INFO)
 	condition		= DIA_Tpl_1416_Torwache_Life_Condition;
 	information		= DIA_Tpl_1416_Torwache_Life_Info;
 	permanent		= 1;
-	description		= "Jakı je ivot stráce Bratrstva?";
+	description		= "JakÃ½ je Å¾ivot strÃ¡Å¾ce Bratrstva?";
 };
 
 FUNC INT DIA_Tpl_1416_Torwache_Life_Condition()
@@ -43,7 +43,7 @@ FUNC INT DIA_Tpl_1416_Torwache_Life_Condition()
 
 FUNC VOID DIA_Tpl_1416_Torwache_Life_Info()
 {
-	AI_Output (other, self,"DIA_Tpl_1416_Torwache_Life_15_00"); //Jakı je ivot stráce Bratrstva?
-	AI_Output (self, other,"DIA_Tpl_1416_Torwache_Life_08_01"); //Mám dùleitı úkol. Osvícenı a jeho áci na mì spoléhají.
-	AI_Output (self, other,"DIA_Tpl_1416_Torwache_Life_08_02");	//Mùj døívìjší ivot u je minulost. Teï jsem GOR NA - Spáèùv templáø.
+	AI_Output (other, self,"DIA_Tpl_1416_Torwache_Life_15_00"); //JakÃ½ je Å¾ivot strÃ¡Å¾ce Bratrstva?
+	AI_Output (self, other,"DIA_Tpl_1416_Torwache_Life_08_01"); //MÃ¡m dÅ¯leÅ¾itÃ½ Ãºkol. OsvÃ­cenÃ½ a jeho Å¾Ã¡ci na mÄ› spolÃ©hajÃ­.
+	AI_Output (self, other,"DIA_Tpl_1416_Torwache_Life_08_02");	//MÅ¯j dÅ™Ã­vÄ›jÅ¡Ã­ Å¾ivot uÅ¾ je minulost. TeÄ jsem GOR NA - SpÃ¡ÄÅ¯v templÃ¡Å™.
 };

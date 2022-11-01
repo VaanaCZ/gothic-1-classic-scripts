@@ -21,11 +21,11 @@ FUNC VOID  PC_Psionic_Exit_Info()
 {
 	if (self.aivar[AIV_PARTYMEMBER])
 	{
-		AI_Output 	(self, hero,"Info_Lester_EXIT_05_01"); //PojÔme!
+		AI_Output 	(self, hero,"Info_Lester_EXIT_05_01"); //Pojƒème!
 	}
 	else
 	{
-		AI_Output 	(self, hero,"Info_Lester_EXIT_05_02"); //KÈû tÏ Sp·Ë ochr·nÌ!
+		AI_Output 	(self, hero,"Info_Lester_EXIT_05_02"); //K√©≈æ tƒõ Sp√°ƒç ochr√°n√≠!
 	};
 	
 	AI_StopProcessInfos	( self );
@@ -54,7 +54,7 @@ FUNC int  DIA_Lester_Sakrileg_Condition()
 
 FUNC VOID  DIA_Lester_Sakrileg_Info()
 {
-	AI_Output (self, other,"DIA_Lester_Sakrileg_05_00"); //Oslovil jsi Guru! Uû to nikdy nedÏlej! Je to svatokr·deû! Kdyû bude s tebou chtÌt mistr mluvit, ON oslovÌ TEBE.
+	AI_Output (self, other,"DIA_Lester_Sakrileg_05_00"); //Oslovil jsi Guru! U≈æ to nikdy nedƒõlej! Je to svatokr√°de≈æ! Kdy≈æ bude s tebou cht√≠t mistr mluvit, ON oslov√≠ TEBE.
 };
 
 // **************************************************
@@ -82,10 +82,10 @@ FUNC int  DIA_Lester_Hallo_Condition()
 FUNC VOID  DIA_Lester_Hallo_Info()
 {
 	AI_Output (other, self,"DIA_Lester_Hallo_15_00"); //Kdo jsi?
-	AI_Output (self, other,"DIA_Lester_Hallo_05_01"); //Jsem Lester. Star·m se o cizince, kte¯Ì sem p¯ijdou.
+	AI_Output (self, other,"DIA_Lester_Hallo_05_01"); //Jsem Lester. Star√°m se o cizince, kte≈ô√≠ sem p≈ôijdou.
 	if (BaalNamib_Sakrileg == FALSE)
 	{
-		AI_Output (self, other,"DIA_Lester_Hallo_05_02"); //M·ö ötÏstÌ, ûe jsi nemluvil s Baalem Namibem. é·dn˝ cizinec nesmÌ mluvit s Guru.
+		AI_Output (self, other,"DIA_Lester_Hallo_05_02"); //M√°≈° ≈°tƒõst√≠, ≈æe jsi nemluvil s Baalem Namibem. ≈Ω√°dn√Ω cizinec nesm√≠ mluvit s Guru.
 	};
 };
 
@@ -100,7 +100,7 @@ instance  DIA_Lester_WannaTalkToMaster (C_INFO) //E2
 	condition	= DIA_Lester_WannaTalkToMaster_Condition;
 	information	= DIA_Lester_WannaTalkToMaster_Info;
 	permanent	= 0;
-	description	= "J· ale chci mluvit s tv˝m mistrem.";
+	description	= "J√° ale chci mluvit s tv√Ωm mistrem.";
 };                       
 
 FUNC int  DIA_Lester_WannaTalkToMaster_Condition()
@@ -115,8 +115,8 @@ FUNC int  DIA_Lester_WannaTalkToMaster_Condition()
 
 FUNC VOID  DIA_Lester_WannaTalkToMaster_Info()
 {
-	AI_Output (other, self,"DIA_Lester_WannaTalkToMaster_15_00"); //J· ale chci mluvit s tv˝m mistrem.
-	AI_Output (self, other,"DIA_Lester_WannaTalkToMaster_05_01"); //ZapomeÚ na to! M˘ûu ti pomoci s jak˝mkoliv tv˝m problÈmem!
+	AI_Output (other, self,"DIA_Lester_WannaTalkToMaster_15_00"); //J√° ale chci mluvit s tv√Ωm mistrem.
+	AI_Output (self, other,"DIA_Lester_WannaTalkToMaster_05_01"); //Zapome≈à na to! M≈Ø≈æu ti pomoci s jak√Ωmkoliv tv√Ωm probl√©mem!
 };
 
 // **************************************************
@@ -130,7 +130,7 @@ instance  DIA_Lester_CampInfo (C_INFO) //E2
 	condition	= DIA_Lester_CampInfo_Condition;
 	information	= DIA_Lester_CampInfo_Info;
 	permanent	= 1;
-	description	= "ÿekni mi nÏco o t·bo¯e.";
+	description	= "≈òekni mi nƒõco o t√°bo≈ôe.";
 };                       
 
 FUNC int  DIA_Lester_CampInfo_Condition()
@@ -144,13 +144,13 @@ FUNC int  DIA_Lester_CampInfo_Condition()
 
 FUNC VOID  DIA_Lester_CampInfo_Info()
 {
-	AI_Output (other, self,"DIA_Lester_CampInfo_15_00"); //ÿekni mi nÏco o t·boru.
-	AI_Output (self, other,"DIA_Lester_CampInfo_05_01"); //Co chceö vÏdÏt?
+	AI_Output (other, self,"DIA_Lester_CampInfo_15_00"); //≈òekni mi nƒõco o t√°boru.
+	AI_Output (self, other,"DIA_Lester_CampInfo_05_01"); //Co chce≈° vƒõdƒõt?
 	Info_Clearchoices (DIA_Lester_CampInfo);
 	Info_Addchoice (DIA_Lester_CampInfo,DIALOG_BACK,DIA_Lester_CampInfo_BACK); 
-	Info_Addchoice (DIA_Lester_CampInfo,"ÿekni mi o spoleËenstvÌ.",DIA_Lester_CampInfo_GIL);
-	Info_Addchoice (DIA_Lester_CampInfo,"Co mi m˘ûeö ¯Ìci o Sp·Ëovi?",DIA_Lester_CampInfo_SLEEPER);
-	Info_Addchoice (DIA_Lester_CampInfo,"Co vÌö o droze z baûin?",DIA_Lester_CampInfo_HERB);
+	Info_Addchoice (DIA_Lester_CampInfo,"≈òekni mi o spoleƒçenstv√≠.",DIA_Lester_CampInfo_GIL);
+	Info_Addchoice (DIA_Lester_CampInfo,"Co mi m≈Ø≈æe≈° ≈ô√≠ci o Sp√°ƒçovi?",DIA_Lester_CampInfo_SLEEPER);
+	Info_Addchoice (DIA_Lester_CampInfo,"Co v√≠≈° o droze z ba≈æin?",DIA_Lester_CampInfo_HERB);
 };
 func void DIA_Lester_CampInfo_BACK()
 {
@@ -159,27 +159,27 @@ func void DIA_Lester_CampInfo_BACK()
 
 func void DIA_Lester_CampInfo_GIL()
 {
-	AI_Output (other, self,"DIA_Lester_CampInfo_GIL_15_00"); //ÿekni mi o spoleËenstvÌ.
-	AI_Output (self, other,"DIA_Lester_CampInfo_GIL_05_01"); //Guru tvo¯Ì nejvyööÌ spoleËenstvÌ. Jsou duchem t·bora a jeho velkou silou. Templ·¯i pouûÌvajÌ svoji duchovnÌ sÌlu v boji.
-	AI_Output (self, other,"DIA_Lester_CampInfo_GIL_05_02"); //MajÌ nezkrotnou divokou sÌlu. NIKDY by ses s nimi nemÏl dostat do problÈmu. J· osobnÏ pat¯Ìm k novic˘m. ModlÌme se ke Sp·Ëovi a pracujeme v t·bo¯e.
-	AI_Output (self, other,"DIA_Lester_CampInfo_GIL_05_03"); //NÏkte¯Ì novici se smÏjÌ p¯idat ke Guru, ale aby jim to bylo povoleno, musejÌ dlouh· lÈta studovat.
+	AI_Output (other, self,"DIA_Lester_CampInfo_GIL_15_00"); //≈òekni mi o spoleƒçenstv√≠.
+	AI_Output (self, other,"DIA_Lester_CampInfo_GIL_05_01"); //Guru tvo≈ô√≠ nejvy≈°≈°√≠ spoleƒçenstv√≠. Jsou duchem t√°bora a jeho velkou silou. Templ√°≈ôi pou≈æ√≠vaj√≠ svoji duchovn√≠ s√≠lu v boji.
+	AI_Output (self, other,"DIA_Lester_CampInfo_GIL_05_02"); //Maj√≠ nezkrotnou divokou s√≠lu. NIKDY by ses s nimi nemƒõl dostat do probl√©mu. J√° osobnƒõ pat≈ô√≠m k novic≈Øm. Modl√≠me se ke Sp√°ƒçovi a pracujeme v t√°bo≈ôe.
+	AI_Output (self, other,"DIA_Lester_CampInfo_GIL_05_03"); //Nƒõkte≈ô√≠ novici se smƒõj√≠ p≈ôidat ke Guru, ale aby jim to bylo povoleno, musej√≠ dlouh√° l√©ta studovat.
 };
 func void DIA_Lester_CampInfo_SLEEPER()
 {
-	AI_Output (other, self,"DIA_Lester_CampInfo_SLEEPER_15_00"); //Co mi m˘ûeö ¯Ìci o Sp·Ëovi?
-	AI_Output (self, other,"DIA_Lester_CampInfo_SLEEPER_05_01"); //Sp·Ë je duchovnÌ bytost. Vytv·¯Ì vize - aspoÚ pro Guru.
-	AI_Output (self, other,"DIA_Lester_CampInfo_SLEEPER_05_02"); //ModlÌme se k nÏmu, aby n·m dal svobodu.
-	AI_Output (other, self,"DIA_Lester_CampInfo_SLEEPER_15_03"); //A vÏ¯Ìte tomu?
-	AI_Output (self, other,"DIA_Lester_CampInfo_SLEEPER_05_04"); //Hej, jsem v BariÈ¯e uû dva roky. Dok·ûeö si p¯edstavit, jak dlouhÈ m˘ûou DVA ROKY b˝t?
-	AI_Output (self, other,"DIA_Lester_CampInfo_SLEEPER_05_05"); //Nedok·ûeö si p¯edstavit, v co jsem ochotn˝ vÏ¯it a co udÏlat, jen abych se odtud dostal pryË!
+	AI_Output (other, self,"DIA_Lester_CampInfo_SLEEPER_15_00"); //Co mi m≈Ø≈æe≈° ≈ô√≠ci o Sp√°ƒçovi?
+	AI_Output (self, other,"DIA_Lester_CampInfo_SLEEPER_05_01"); //Sp√°ƒç je duchovn√≠ bytost. Vytv√°≈ô√≠ vize - aspo≈à pro Guru.
+	AI_Output (self, other,"DIA_Lester_CampInfo_SLEEPER_05_02"); //Modl√≠me se k nƒõmu, aby n√°m dal svobodu.
+	AI_Output (other, self,"DIA_Lester_CampInfo_SLEEPER_15_03"); //A vƒõ≈ô√≠te tomu?
+	AI_Output (self, other,"DIA_Lester_CampInfo_SLEEPER_05_04"); //Hej, jsem v Bari√©≈ôe u≈æ dva roky. Dok√°≈æe≈° si p≈ôedstavit, jak dlouh√© m≈Ø≈æou DVA ROKY b√Ωt?
+	AI_Output (self, other,"DIA_Lester_CampInfo_SLEEPER_05_05"); //Nedok√°≈æe≈° si p≈ôedstavit, v co jsem ochotn√Ω vƒõ≈ôit a co udƒõlat, jen abych se odtud dostal pryƒç!
 };
 func void DIA_Lester_CampInfo_HERB()
 {
-	AI_Output (other, self,"DIA_Lester_CampInfo_HERB_15_00"); //Co vÌö o droze z baûin?
-	AI_Output (self, other,"DIA_Lester_CampInfo_HERB_05_01"); //No, tahle droga roste v baûin·ch. P¯ed tÌm, neû se m˘ûe kou¯it, se samoz¯ejmÏ musÌ zpracovat. To dÏlajÌ novici.
-	AI_Output (self, other,"DIA_Lester_CampInfo_HERB_05_02"); //Droga m· uklidÚujÌcÌ a osvÏûujÌcÌ ˙Ëinek. Pom·h· p¯i koncentraci a umocÚuje vÏdomÌ.
-	AI_Output (self, other,"DIA_Lester_CampInfo_HERB_05_03"); //VymÏÚujeme ji za zboûÌ ze StarÈho t·bora a takÈ ji pouûÌv·me pro zÌsk·v·nÌ nov˝ch lidÌ.
-	AI_Output (self, other,"DIA_Lester_CampInfo_HERB_05_04"); //NÏkte¯Ì lidÈ se vöak k n·m p¯id·vajÌ jen kv˘li tÈ droze. Ale tak n·m aspoÚ pom·hajÌ s pracÌ v t·bo¯e.
+	AI_Output (other, self,"DIA_Lester_CampInfo_HERB_15_00"); //Co v√≠≈° o droze z ba≈æin?
+	AI_Output (self, other,"DIA_Lester_CampInfo_HERB_05_01"); //No, tahle droga roste v ba≈æin√°ch. P≈ôed t√≠m, ne≈æ se m≈Ø≈æe kou≈ôit, se samoz≈ôejmƒõ mus√≠ zpracovat. To dƒõlaj√≠ novici.
+	AI_Output (self, other,"DIA_Lester_CampInfo_HERB_05_02"); //Droga m√° uklid≈àuj√≠c√≠ a osvƒõ≈æuj√≠c√≠ √∫ƒçinek. Pom√°h√° p≈ôi koncentraci a umoc≈àuje vƒõdom√≠.
+	AI_Output (self, other,"DIA_Lester_CampInfo_HERB_05_03"); //Vymƒõ≈àujeme ji za zbo≈æ√≠ ze Star√©ho t√°bora a tak√© ji pou≈æ√≠v√°me pro z√≠sk√°v√°n√≠ nov√Ωch lid√≠.
+	AI_Output (self, other,"DIA_Lester_CampInfo_HERB_05_04"); //Nƒõkte≈ô√≠ lid√© se v≈°ak k n√°m p≈ôid√°vaj√≠ jen kv≈Øli t√© droze. Ale tak n√°m aspo≈à pom√°haj√≠ s prac√≠ v t√°bo≈ôe.
 };
 
 // **************************************************
@@ -193,7 +193,7 @@ instance  DIA_Lester_WannaJoin (C_INFO) //E2
 	condition	= DIA_Lester_WannaJoin_Condition;
 	information	= DIA_Lester_WannaJoin_Info;
 	permanent	= 0;
-	description	= "Chci se st·t Ëlenem Bratrstva!";
+	description	= "Chci se st√°t ƒçlenem Bratrstva!";
 };                       
 
 FUNC int  DIA_Lester_WannaJoin_Condition()
@@ -207,10 +207,10 @@ FUNC int  DIA_Lester_WannaJoin_Condition()
 
 FUNC VOID  DIA_Lester_WannaJoin_Info()
 {
-	AI_Output (other, self,"DIA_Lester_WannaJoin_15_00"); //Chci se st·t Ëlenem Bratrstva!
+	AI_Output (other, self,"DIA_Lester_WannaJoin_15_00"); //Chci se st√°t ƒçlenem Bratrstva!
 	AI_Output (self, other,"DIA_Lester_WannaJoin_05_01"); //Cor Kalom rozhodne, jestli jsi hoden vstoupit do Bratrstva.
-	AI_Output (self, other,"DIA_Lester_WannaJoin_05_02"); //SpolÈh· se ale na radu Guru. Baal Namib, t·mhle ten, je jednÌm z nich.
-	AI_Output (self, other,"DIA_Lester_WannaJoin_05_03"); //Nejprve musÌö dok·zat, ûe jsi toho hoden a pak tÏ jeden z Guru poöle za Corem Kalomem.
+	AI_Output (self, other,"DIA_Lester_WannaJoin_05_02"); //Spol√©h√° se ale na radu Guru. Baal Namib, t√°mhle ten, je jedn√≠m z nich.
+	AI_Output (self, other,"DIA_Lester_WannaJoin_05_03"); //Nejprve mus√≠≈° dok√°zat, ≈æe jsi toho hoden a pak tƒõ jeden z Guru po≈°le za Corem Kalomem.
 };
 
 // **************************************************
@@ -224,7 +224,7 @@ instance  DIA_Lester_HowProofWorthy (C_INFO) //E2
 	condition	= DIA_Lester_HowProofWorthy_Condition;
 	information	= DIA_Lester_HowProofWorthy_Info;
 	permanent	= 0;
-	description	= "Jak to asi probÏhne, pokud se za mÏ ani jeden z Guru nep¯imluvÌ?";
+	description	= "Jak to asi probƒõhne, pokud se za mƒõ ani jeden z Guru nep≈ôimluv√≠?";
 };                       
 
 FUNC int  DIA_Lester_HowProofWorthy_Condition()
@@ -238,14 +238,14 @@ FUNC int  DIA_Lester_HowProofWorthy_Condition()
 
 FUNC VOID  DIA_Lester_HowProofWorthy_Info()
 {
-	AI_Output (other, self,"DIA_Lester_HowProofWorthy_15_00"); //Jak to asi probÏhne, pokud se za mÏ ani jeden z Guru nep¯imluvÌ?
-	AI_Output (self, other,"DIA_Lester_HowProofWorthy_05_01"); //To nevÌm, ale Guru sledujÌ vöechno, co tady v t·bo¯e dÏl·ö.
-	AI_Output (self, other,"DIA_Lester_HowProofWorthy_05_02"); //Pokud si myslÌ, ûe si zaslouûÌö st·t se Ëlenem komunity, pak se za tebe p¯imluvÌ.
-	AI_Output (self, other,"DIA_Lester_HowProofWorthy_05_03"); //V t·bo¯e m·ö spoustu moûnostÌ, jak dok·zat, ûe jsi toho hoden.
+	AI_Output (other, self,"DIA_Lester_HowProofWorthy_15_00"); //Jak to asi probƒõhne, pokud se za mƒõ ani jeden z Guru nep≈ôimluv√≠?
+	AI_Output (self, other,"DIA_Lester_HowProofWorthy_05_01"); //To nev√≠m, ale Guru sleduj√≠ v≈°echno, co tady v t√°bo≈ôe dƒõl√°≈°.
+	AI_Output (self, other,"DIA_Lester_HowProofWorthy_05_02"); //Pokud si mysl√≠, ≈æe si zaslou≈æ√≠≈° st√°t se ƒçlenem komunity, pak se za tebe p≈ôimluv√≠.
+	AI_Output (self, other,"DIA_Lester_HowProofWorthy_05_03"); //V t√°bo≈ôe m√°≈° spoustu mo≈ænost√≠, jak dok√°zat, ≈æe jsi toho hoden.
 
 	Log_CreateTopic		(CH1_JoinPsi,	LOG_MISSION);
 	Log_SetTopicStatus	(CH1_JoinPsi,	LOG_RUNNING);
-	B_LogEntry			(CH1_JoinPsi,"Pokud se budu chtÌt p¯idat k Bratrstvu v t·bo¯e v baûin·ch, budu muset udÏlat dojem na guru. Ti vöak bohuûel nemluvÌ s nov˝mi p¯ÌchozÌmi. Novic Lester mi ¯ekl, ûe mÏ p¯esto pozorujÌ, a ûe budu pot¯ebovat nÏjak uk·zat, jak bych jim mohl b˝t uûiteËn˝. Nem·m nejmenöÌ p¯edstavu o tom, jak to udÏlat! RadÏji bych se mÏl dob¯e porozhlÈdnout po T·bo¯e v baûin·ch.");
+	B_LogEntry			(CH1_JoinPsi,"Pokud se budu cht√≠t p≈ôidat k Bratrstvu v t√°bo≈ôe v ba≈æin√°ch, budu muset udƒõlat dojem na guru. Ti v≈°ak bohu≈æel nemluv√≠ s nov√Ωmi p≈ô√≠choz√≠mi. Novic Lester mi ≈ôekl, ≈æe mƒõ p≈ôesto pozoruj√≠, a ≈æe budu pot≈ôebovat nƒõjak uk√°zat, jak bych jim mohl b√Ωt u≈æiteƒçn√Ω. Nem√°m nejmen≈°√≠ p≈ôedstavu o tom, jak to udƒõlat! Radƒõji bych se mƒõl dob≈ôe porozhl√©dnout po T√°bo≈ôe v ba≈æin√°ch.");
 
 };
 
@@ -262,7 +262,7 @@ instance  DIA_Lester_WeitWeg (C_INFO) //E2
 	condition	= DIA_Lester_WeitWeg_Condition;
 	information	= DIA_Lester_WeitWeg_Info;
 	permanent	= 0;
-	description	= "Co musÌm udÏlat, aby se za mÏ tv˘j mistr p¯imluvil?";
+	description	= "Co mus√≠m udƒõlat, aby se za mƒõ tv≈Øj mistr p≈ôimluvil?";
 };                       
 
 FUNC int  DIA_Lester_WeitWeg_Condition()
@@ -278,17 +278,17 @@ FUNC int  DIA_Lester_WeitWeg_Condition()
 
 FUNC VOID  DIA_Lester_WeitWeg_Info()
 {
-	AI_Output (other, self,"DIA_Lester_WeitWeg_15_00"); //Co musÌm udÏlat, aby se za mÏ tv˘j mistr p¯imluvil?
-	AI_Output (self, other,"DIA_Lester_WeitWeg_05_01"); //MusÌö vÏdÏt, co chce slyöet.
+	AI_Output (other, self,"DIA_Lester_WeitWeg_15_00"); //Co mus√≠m udƒõlat, aby se za mƒõ tv≈Øj mistr p≈ôimluvil?
+	AI_Output (self, other,"DIA_Lester_WeitWeg_05_01"); //Mus√≠≈° vƒõdƒõt, co chce sly≈°et.
 	AI_Output (other, self,"DIA_Lester_WeitWeg_15_02"); //A to je?
-	AI_Output (self, other,"DIA_Lester_WeitWeg_05_03"); //Poslouchej: aû u nÏho p¯ÌötÏ budeme, oslovÌö mÏ a povedeme spolu kr·tk˝ hovor.
-	AI_Output (self, other,"DIA_Lester_WeitWeg_05_04"); //Baal Namib m· obavy z toho, ûe se mnozÌ novici nemodlÌ jen ke Sp·Ëovi, ale takÈ ke sv˝m d¯ÌvÏjöÌm boh˘m.
-	AI_Output (self, other,"DIA_Lester_WeitWeg_05_05"); //Ty mi ¯ekneö, ûe jsi se star˝ch boh˘ z¯ekl a ûe se uû nad·le budeö modlit v˝hradnÏ ke Sp·Ëovi.
-	AI_Output (self, other,"DIA_Lester_WeitWeg_05_06"); //Pak se tÏ zept·m, proË jsi se takhle rozhodl a ty ¯ekneö, ûe jsi mÏl vizi, ve kterÈ tÏ k tomu Sp·Ë vyzval.
-	AI_Output (self, other,"DIA_Lester_WeitWeg_05_07"); //Pak projevÌ z·jem. MyslÌö, ûe to zvl·dneö?
-	AI_Output (other, self,"DIA_Lester_WeitWeg_15_08"); //Bez problÈm˘.
+	AI_Output (self, other,"DIA_Lester_WeitWeg_05_03"); //Poslouchej: a≈æ u nƒõho p≈ô√≠≈°tƒõ budeme, oslov√≠≈° mƒõ a povedeme spolu kr√°tk√Ω hovor.
+	AI_Output (self, other,"DIA_Lester_WeitWeg_05_04"); //Baal Namib m√° obavy z toho, ≈æe se mnoz√≠ novici nemodl√≠ jen ke Sp√°ƒçovi, ale tak√© ke sv√Ωm d≈ô√≠vƒõj≈°√≠m boh≈Øm.
+	AI_Output (self, other,"DIA_Lester_WeitWeg_05_05"); //Ty mi ≈ôekne≈°, ≈æe jsi se star√Ωch boh≈Ø z≈ôekl a ≈æe se u≈æ nad√°le bude≈° modlit v√Ωhradnƒõ ke Sp√°ƒçovi.
+	AI_Output (self, other,"DIA_Lester_WeitWeg_05_06"); //Pak se tƒõ zept√°m, proƒç jsi se takhle rozhodl a ty ≈ôekne≈°, ≈æe jsi mƒõl vizi, ve kter√© tƒõ k tomu Sp√°ƒç vyzval.
+	AI_Output (self, other,"DIA_Lester_WeitWeg_05_07"); //Pak projev√≠ z√°jem. Mysl√≠≈°, ≈æe to zvl√°dne≈°?
+	AI_Output (other, self,"DIA_Lester_WeitWeg_15_08"); //Bez probl√©m≈Ø.
 	
-	B_LogEntry	(CH1_JoinPsi,"Abych udÏlal dojem na Baala Namiba, mÏl bych v blÌzkosti tohoto guru oslovit Lestera a vypr·vÏt mu o star˝ch bozÌch a Sp·Ëovi.");
+	B_LogEntry	(CH1_JoinPsi,"Abych udƒõlal dojem na Baala Namiba, mƒõl bych v bl√≠zkosti tohoto guru oslovit Lestera a vypr√°vƒõt mu o star√Ωch boz√≠ch a Sp√°ƒçovi.");
 
 	Lester_Show = TRUE;
 };
@@ -321,7 +321,7 @@ FUNC int  DIA_Lester_ShowHallo_Condition()
 
 FUNC VOID  DIA_Lester_ShowHallo_Info()
 {
-	AI_Output (self, other,"DIA_Lester_ShowHallo_05_00"); //AAH! R¡D TÃ ZASE VIDÕM. JAK SE TI VEDE?
+	AI_Output (self, other,"DIA_Lester_ShowHallo_05_00"); //AAH! R√ÅD Tƒö ZASE VID√çM. JAK SE TI VEDE?
 };
 
 // **************************************************
@@ -335,7 +335,7 @@ instance  DIA_Lester_Show (C_INFO) //E2
 	condition	= DIA_Lester_Show_Condition;
 	information	= DIA_Lester_Show_Info;
 	permanent	= 0;
-	description	= "Z¯ekl jsem se star˝ch boh˘.";
+	description	= "Z≈ôekl jsem se star√Ωch boh≈Ø.";
 };                       
 
 FUNC int  DIA_Lester_Show_Condition()
@@ -349,12 +349,12 @@ FUNC int  DIA_Lester_Show_Condition()
 
 FUNC VOID  DIA_Lester_Show_Info()
 {
-	AI_Output (other, self,"DIA_Lester_Show_15_00"); //ZÿEKL JSEM SE STAR›CH BOHŸ.
-	AI_Output (self, other,"DIA_Lester_Show_05_01"); //OPRAVDU? CO TÃ K TOMU PÿIMÃLO?
-	AI_Output (other, self,"DIA_Lester_Show_15_02"); //MÃL JSEM VIZI: PROMLUVIL KE MNÃ SP¡».
-	AI_Output (self, other,"DIA_Lester_Show_05_03"); //CO TI ÿÕKAL?
-	AI_Output (other, self,"DIA_Lester_Show_15_04"); //ÿEKL: JDI DO T¡BORA V BAéIN¡CH A PÿIDEJ SE K BRATRSTVU.
-	AI_Output (self, other,"DIA_Lester_Show_05_05"); //JSI VELMI äçASTN› MUé, CIZIN»E: SP¡» TAKTO NEPROMLOUV¡ K MNOHA LIDEM.
+	AI_Output (other, self,"DIA_Lester_Show_15_00"); //Z≈òEKL JSEM SE STAR√ùCH BOH≈Æ.
+	AI_Output (self, other,"DIA_Lester_Show_05_01"); //OPRAVDU? CO Tƒö K TOMU P≈òIMƒöLO?
+	AI_Output (other, self,"DIA_Lester_Show_15_02"); //MƒöL JSEM VIZI: PROMLUVIL KE MNƒö SP√Åƒå.
+	AI_Output (self, other,"DIA_Lester_Show_05_03"); //CO TI ≈ò√çKAL?
+	AI_Output (other, self,"DIA_Lester_Show_15_04"); //≈òEKL: JDI DO T√ÅBORA V BA≈ΩIN√ÅCH A P≈òIDEJ SE K BRATRSTVU.
+	AI_Output (self, other,"DIA_Lester_Show_05_05"); //JSI VELMI ≈†≈§ASTN√ù MU≈Ω, CIZINƒåE: SP√Åƒå TAKTO NEPROMLOUV√Å K MNOHA LIDEM.
 
 	BaalNamib_Ansprechbar = TRUE;
 
@@ -372,7 +372,7 @@ instance  DIA_Lester_GuideOffer (C_INFO) //E3
 	condition	= DIA_Lester_GuideOffer_Condition;
 	information	= DIA_Lester_GuideOffer_Info;
 	permanent	= 0;
-	description	= "Jak se m·m tady v t·bo¯e vyznat?";
+	description	= "Jak se m√°m tady v t√°bo≈ôe vyznat?";
 };
 
 FUNC int  DIA_Lester_GuideOffer_Condition()
@@ -386,12 +386,12 @@ FUNC int  DIA_Lester_GuideOffer_Condition()
 
 FUNC VOID  DIA_Lester_GuideOffer_Info()
 {
-	AI_Output (other, self,"DIA_Lester_GuideOffer_15_00"); //Jak se m·m tady v t·bo¯e vyznat?
-	AI_Output (self, other,"DIA_Lester_GuideOffer_05_01"); //M˘ûu ti uk·zat nejd˘leûitÏjöÌ mÌsta.
+	AI_Output (other, self,"DIA_Lester_GuideOffer_15_00"); //Jak se m√°m tady v t√°bo≈ôe vyznat?
+	AI_Output (self, other,"DIA_Lester_GuideOffer_05_01"); //M≈Ø≈æu ti uk√°zat nejd≈Øle≈æitƒõj≈°√≠ m√≠sta.
 };
 
 // **************************************************
-//				F‹HRUNG DURCHS PSI-CAMP
+//				F√úHRUNG DURCHS PSI-CAMP
 // **************************************************
 
 
@@ -403,7 +403,7 @@ instance  PC_Psionic_SOON (C_INFO)
 	information	=  PC_Psionic_SOON_Info;
 	important	=  0;	
 	permanent	=  1;
-	description = "Uû tam budeme?";
+	description = "U≈æ tam budeme?";
 };                       
 
 FUNC int  PC_Psionic_SOON_Condition()
@@ -417,11 +417,11 @@ FUNC int  PC_Psionic_SOON_Condition()
 };
 FUNC VOID  PC_Psionic_SOON_Info()
 {
-	AI_Output (other, self,"PC_Psionic_SOON_Info_15_01"); //Uû tam budeme?
-	AI_Output (self, other,"PC_Psionic_SOON_Info_05_02"); //Kdyû se mÏ p¯estaneö pt·t, budeme moci jÌt rychleji.
+	AI_Output (other, self,"PC_Psionic_SOON_Info_15_01"); //U≈æ tam budeme?
+	AI_Output (self, other,"PC_Psionic_SOON_Info_05_02"); //Kdy≈æ se mƒõ p≈ôestane≈° pt√°t, budeme moci j√≠t rychleji.
 	AI_StopProcessInfos	( self );
 };
-//------ UNTERWEGS IM SUMPFLAGER UND ROUTE ƒNDERN ----------------
+//------ UNTERWEGS IM SUMPFLAGER UND ROUTE √ÑNDERN ----------------
 instance  PC_Psionic_CHANGE (C_INFO)
 {
 	npc			=  PC_Psionic;
@@ -444,14 +444,14 @@ FUNC int  PC_Psionic_CHANGE_Condition()
 FUNC VOID  PC_Psionic_CHANGE_Info()
 {
 	AI_Output (other, self,"PC_Psionic_CHANGE_Info_15_01"); //Rozmyslel jsem se.
-	AI_Output (self, other,"PC_Psionic_CHANGE_Info_05_02"); //Douf·m, ûe vÌö, kde mÏ najdeö.
+	AI_Output (self, other,"PC_Psionic_CHANGE_Info_05_02"); //Douf√°m, ≈æe v√≠≈°, kde mƒõ najde≈°.
 	AI_StopProcessInfos	( self );
 	LesterGuide = 0;
 	Npc_ExchangeRoutine (self,"START");
 
 };
 
-//------------------F‹HRUNG DURCH DAS LAGER
+//------------------F√úHRUNG DURCH DAS LAGER
 instance  PC_Psionic_GUIDEFIRST (C_INFO)
 {
 	npc				= PC_Psionic;
@@ -460,7 +460,7 @@ instance  PC_Psionic_GUIDEFIRST (C_INFO)
 	information		= PC_Psionic_GUIDEFIRST_Info;
 	important		= 0;
 	permanent		= 1;
-	description		= "Ukaû mi cestu..."; 
+	description		= "Uka≈æ mi cestu..."; 
 };
 
 FUNC int  PC_Psionic_GUIDEFIRST_Condition()
@@ -476,17 +476,17 @@ FUNC int  PC_Psionic_GUIDEFIRST_Condition()
 };
 FUNC void  PC_Psionic_GUIDEFIRST_Info()
 {
-	AI_Output (other, self,"PC_Psionic_GUIDEFIRST_Info_15_01"); //Ukaû mi cestu...
+	AI_Output (other, self,"PC_Psionic_GUIDEFIRST_Info_15_01"); //Uka≈æ mi cestu...
 //	AI_Output (self, other,"PC_Psionic_GUIDEFIRST_Info_05_02"); //Klar, wohin willst du?
 	
 	Info_ClearChoices (PC_Psionic_GUIDEFIRST);
 	
 	Info_Addchoice (PC_Psionic_GUIDEFIRST, DIALOG_BACK, PC_Psionic_GUIDEFIRST_BACK);
-	Info_Addchoice (PC_Psionic_GUIDEFIRST,"zp·tky k hlavnÌ br·nÏ",PC_Psionic_GUIDEFIRST_MAINGATE);
-	Info_Addchoice (PC_Psionic_GUIDEFIRST,"do kov·¯stvÌ",PC_Psionic_GUIDEFIRST_SMITH);
-	Info_Addchoice (PC_Psionic_GUIDEFIRST,"do chr·mu",PC_Psionic_GUIDEFIRST_TEMPEL);
-	Info_Addchoice (PC_Psionic_GUIDEFIRST,"k uËitel˘m",PC_Psionic_GUIDEFIRST_TRAIN);
-	Info_Addchoice (PC_Psionic_GUIDEFIRST,"do alchymistickÈ dÌlny",PC_Psionic_GUIDEFIRST_HERB);
+	Info_Addchoice (PC_Psionic_GUIDEFIRST,"zp√°tky k hlavn√≠ br√°nƒõ",PC_Psionic_GUIDEFIRST_MAINGATE);
+	Info_Addchoice (PC_Psionic_GUIDEFIRST,"do kov√°≈ôstv√≠",PC_Psionic_GUIDEFIRST_SMITH);
+	Info_Addchoice (PC_Psionic_GUIDEFIRST,"do chr√°mu",PC_Psionic_GUIDEFIRST_TEMPEL);
+	Info_Addchoice (PC_Psionic_GUIDEFIRST,"k uƒçitel≈Øm",PC_Psionic_GUIDEFIRST_TRAIN);
+	Info_Addchoice (PC_Psionic_GUIDEFIRST,"do alchymistick√© d√≠lny",PC_Psionic_GUIDEFIRST_HERB);
 
 };  
 
@@ -501,8 +501,8 @@ func void PC_Psionic_GUIDEFIRST_MAINGATE()
 
 func void PC_Psionic_GUIDEFIRST_SMITH()
 {
-	AI_Output (other, self,"PC_Psionic_GUIDEFIRST_SMITH_Info_15_01"); //...do kov·¯skÈho kr·mu.
-	AI_Output (self, other,"PC_Psionic_GUIDEFIRST_SMITH_Info_05_02"); //PojÔ za mnou!
+	AI_Output (other, self,"PC_Psionic_GUIDEFIRST_SMITH_Info_15_01"); //...do kov√°≈ôsk√©ho kr√°mu.
+	AI_Output (self, other,"PC_Psionic_GUIDEFIRST_SMITH_Info_05_02"); //Pojƒè za mnou!
 	LesterGuide = 1;
 	AI_StopProcessInfos (self);
 	Npc_ExchangeRoutine(self,"GUIDETOSMITH");
@@ -510,8 +510,8 @@ func void PC_Psionic_GUIDEFIRST_SMITH()
 
 func void PC_Psionic_GUIDEFIRST_TEMPEL()
 {
-	AI_Output (other, self,"PC_Psionic_GUIDEFIRST_TEMPEL_Info_15_01"); //...do chr·mu.
-	AI_Output (self, other,"PC_Psionic_GUIDEFIRST_TEMPEL_Info_05_02"); //PojÔ za mnou!
+	AI_Output (other, self,"PC_Psionic_GUIDEFIRST_TEMPEL_Info_15_01"); //...do chr√°mu.
+	AI_Output (self, other,"PC_Psionic_GUIDEFIRST_TEMPEL_Info_05_02"); //Pojƒè za mnou!
 	LesterGuide = 2;
 	AI_StopProcessInfos (self);
 	Npc_ExchangeRoutine(self,"GUIDETOTEMPEL");
@@ -519,8 +519,8 @@ func void PC_Psionic_GUIDEFIRST_TEMPEL()
 
 func void PC_Psionic_GUIDEFIRST_TRAIN()
 {
-	AI_Output (other, self,"PC_Psionic_GUIDEFIRST_TRAIN_Info_15_01"); //...k uËitel˘m.
-	AI_Output (self, other,"PC_Psionic_GUIDEFIRST_TARIN_Info_05_02"); //PojÔ za mnou!
+	AI_Output (other, self,"PC_Psionic_GUIDEFIRST_TRAIN_Info_15_01"); //...k uƒçitel≈Øm.
+	AI_Output (self, other,"PC_Psionic_GUIDEFIRST_TARIN_Info_05_02"); //Pojƒè za mnou!
 	LesterGuide = 3;
 	AI_StopProcessInfos (self);
 	Npc_ExchangeRoutine(self,"GUIDETOTRAIN");
@@ -528,8 +528,8 @@ func void PC_Psionic_GUIDEFIRST_TRAIN()
 
 func void PC_Psionic_GUIDEFIRST_HERB()
 {
-	AI_Output (other, self,"PC_Psionic_GUIDEFIRST_HERB_Info_15_01"); //...do alchymistickÈ dÌlny.
-	AI_Output (self, other,"PC_Psionic_GUIDEFIRST_HERB_Info_05_02"); //PojÔ za mnou!
+	AI_Output (other, self,"PC_Psionic_GUIDEFIRST_HERB_Info_15_01"); //...do alchymistick√© d√≠lny.
+	AI_Output (self, other,"PC_Psionic_GUIDEFIRST_HERB_Info_05_02"); //Pojƒè za mnou!
 	LesterGuide = 4;
 	AI_StopProcessInfos (self);
 	Npc_ExchangeRoutine(self,"GUIDETOHERB");
@@ -562,10 +562,10 @@ FUNC int  PC_Psionic_TRAIN_Condition()
 
 FUNC void  PC_Psionic_TRAIN_Info()
 {
-	AI_Output (self, other,"PC_Psionic_TRAIN_Info_05_01"); //Dole najdeö Baala Cadara. VyuËuje novice.
+	AI_Output (self, other,"PC_Psionic_TRAIN_Info_05_01"); //Dole najde≈° Baala Cadara. Vyuƒçuje novice.
 	AI_PointAt(self,"PSI_PATH_9_14");
 	AI_StopPointAt (self);
-	AI_Output (self, other,"PC_Psionic_TRAIN_Info_05_02"); //Kdyû vylezeö po tomhle ûeb¯Ìku, dostaneö se na templ·¯skÈ cviËiötÏ. Budu tady na tebe Ëekat. Kdyby ses zpozdil, budu zase u Baala Namiba u vchodu do t·bora.
+	AI_Output (self, other,"PC_Psionic_TRAIN_Info_05_02"); //Kdy≈æ vyleze≈° po tomhle ≈æeb≈ô√≠ku, dostane≈° se na templ√°≈ôsk√© cviƒçi≈°tƒõ. Budu tady na tebe ƒçekat. Kdyby ses zpozdil, budu zase u Baala Namiba u vchodu do t√°bora.
 
 	LesterGuide = 0;
 	Npc_ExchangeRoutine (self,"START");
@@ -596,7 +596,7 @@ FUNC int  PC_Psionic_TEMPEL_Condition()
 
 FUNC void  PC_Psionic_TEMPEL_Info()
 {
-	AI_Output (self, other,"PC_Psionic_TEMPEL_Info_05_01"); //Tohle je chr·m! PoËk·m na tebe, ale kdyû ti to bude moc dlouho trvat, p˘jdu zp·tky k Baalu Namibovi.
+	AI_Output (self, other,"PC_Psionic_TEMPEL_Info_05_01"); //Tohle je chr√°m! Poƒçk√°m na tebe, ale kdy≈æ ti to bude moc dlouho trvat, p≈Øjdu zp√°tky k Baalu Namibovi.
 
 	LesterGuide = 0;
 	
@@ -629,7 +629,7 @@ FUNC int  PC_Psionic_SMITH_Condition()
 
 FUNC void  PC_Psionic_SMITH_Info()
 {
-	AI_Output (self, other,"PC_Psionic_SMITH_Info_05_01"); //Tohle je kov·rna. RozhlÈdni se tu. PoËk·m na tebe asi hodinu, pak p˘jdu pryË.
+	AI_Output (self, other,"PC_Psionic_SMITH_Info_05_01"); //Tohle je kov√°rna. Rozhl√©dni se tu. Poƒçk√°m na tebe asi hodinu, pak p≈Øjdu pryƒç.
 	LesterGuide = 0;
 	
 	
@@ -641,7 +641,7 @@ FUNC void  PC_Psionic_SMITH_Info()
 	
 	
 };   
-// ***************************** Beim Krauth‰ndler ****************************************// 
+// ***************************** Beim Krauth√§ndler ****************************************// 
 instance  PC_Psionic_HERB (C_INFO)
 {
 	npc				= PC_Psionic;                       
@@ -661,8 +661,8 @@ FUNC int  PC_Psionic_HERB_Condition()
 };
 FUNC void  PC_Psionic_HERB_Info()
 {
-	AI_Output      (self, other,"PC_Psionic_HERB_Info_05_01"); //Kdyû vylezeö po tomhle ûeb¯Ìku, dostaneö se k alchymistovi Corovi Kalomovi. Dole je Fortuno, obchodnÌk s drogou.
-	AI_Output      (self, other,"PC_Psionic_HERB_Info_05_02"); //PoËk·m tu na tebe. NebuÔ tam ale moc dlouho, jinak se vr·tÌm zp·tky.
+	AI_Output      (self, other,"PC_Psionic_HERB_Info_05_01"); //Kdy≈æ vyleze≈° po tomhle ≈æeb≈ô√≠ku, dostane≈° se k alchymistovi Corovi Kalomovi. Dole je Fortuno, obchodn√≠k s drogou.
+	AI_Output      (self, other,"PC_Psionic_HERB_Info_05_02"); //Poƒçk√°m tu na tebe. Nebuƒè tam ale moc dlouho, jinak se vr√°t√≠m zp√°tky.
 	
 	LesterGuide = 0;
 	
@@ -701,7 +701,7 @@ instance  PC_Psionic_SEND (C_INFO)// PC muss im ersten Kapitel schon mal mit Les
 
 FUNC int  PC_Psionic_SEND_Condition()
 {
-	//SN: NICHT auf Kapitel 2 abfragen, Kapitelwechel geschieht erst unten zentral f¸r alle SC-Gilden!!!
+	//SN: NICHT auf Kapitel 2 abfragen, Kapitelwechel geschieht erst unten zentral f√ºr alle SC-Gilden!!!
 	if	(Npc_GetTrueGuild(hero) != GIL_NONE)
 	&&	(YBerion_BringFocus != LOG_RUNNING)
 	&&	(YBerion_BringFocus != LOG_SUCCESS)
@@ -715,14 +715,14 @@ func void  PC_Psionic_SEND_Info()
 	AI_GotoNpc			(self,hero);
 	if (Npc_KnowsInfo(hero,DIA_Lester_Hallo))
 	{
-		AI_Output		(self, other,"PC_Psionic_SEND_Info_05_00"); //Jsem r·d, ûe jsi tady. M·m pro tebe noviny.
-		AI_Output		(other, self,"PC_Psionic_SEND_Info_15_01"); //Douf·m, ûe dobrÈ.
+		AI_Output		(self, other,"PC_Psionic_SEND_Info_05_00"); //Jsem r√°d, ≈æe jsi tady. M√°m pro tebe noviny.
+		AI_Output		(other, self,"PC_Psionic_SEND_Info_15_01"); //Douf√°m, ≈æe dobr√©.
 	};
-	AI_Output			(self, other,"PC_Psionic_SEND_Info_05_02"); //Naöe Bratrstvo pl·nuje nesmÌrnÏ velkou vÏc.
-	AI_Output			(other, self,"PC_Psionic_SEND_Info_15_03"); //Co pl·nuje? ProlomenÌ?
-	AI_Output			(self, other,"PC_Psionic_SEND_Info_05_04"); //Guru se pokouöejÌ spojit se se Sp·Ëem. Pot¯ebujÌ ale nÏjak sjednotit svÈ sÌly.
+	AI_Output			(self, other,"PC_Psionic_SEND_Info_05_02"); //Na≈°e Bratrstvo pl√°nuje nesm√≠rnƒõ velkou vƒõc.
+	AI_Output			(other, self,"PC_Psionic_SEND_Info_15_03"); //Co pl√°nuje? Prolomen√≠?
+	AI_Output			(self, other,"PC_Psionic_SEND_Info_05_04"); //Guru se pokou≈°ej√≠ spojit se se Sp√°ƒçem. Pot≈ôebuj√≠ ale nƒõjak sjednotit sv√© s√≠ly.
 	AI_Output			(other, self,"PC_Psionic_SEND_Info_15_05"); //No a?
-	AI_Output			(self, other,"PC_Psionic_SEND_Info_05_06"); //Pot¯ebujÌ magick˝ p¯edmÏt, ohnisko.
+	AI_Output			(self, other,"PC_Psionic_SEND_Info_05_06"); //Pot≈ôebuj√≠ magick√Ω p≈ôedmƒõt, ohnisko.
 
 	B_Kapitelwechsel	(2);
 };  
@@ -737,7 +737,7 @@ instance  PC_Psionic_BROTHERHOOD_TODO (C_INFO)
 	information		= PC_Psionic_BROTHERHOOD_TODO_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "A co j· s tÌm m·m dÏlat?"; 
+	description		= "A co j√° s t√≠m m√°m dƒõlat?"; 
 };
 
 FUNC int  PC_Psionic_BROTHERHOOD_TODO_Condition()
@@ -750,14 +750,14 @@ FUNC int  PC_Psionic_BROTHERHOOD_TODO_Condition()
 };
 FUNC void  PC_Psionic_BROTHERHOOD_TODO_Info()
 {
-	AI_Output			(other, self,"PC_Psionic_BROTHERHOOD_TODO_15_01"); //A co j· s tÌm m·m dÏlat?
-	AI_Output			(self, other,"PC_Psionic_BROTHERHOOD_TODO_05_02"); //Promluv s Y¥Berionem. Je tady nejmocnÏjöÌ muû. Je to moûnost, jak u nÏj dos·hnout obliby.
+	AI_Output			(other, self,"PC_Psionic_BROTHERHOOD_TODO_15_01"); //A co j√° s t√≠m m√°m dƒõlat?
+	AI_Output			(self, other,"PC_Psionic_BROTHERHOOD_TODO_05_02"); //Promluv s Y¬¥Berionem. Je tady nejmocnƒõj≈°√≠ mu≈æ. Je to mo≈ænost, jak u nƒõj dos√°hnout obliby.
 	AI_Output			(other, self,"PC_Psionic_BROTHERHOOD_TODO_15_03"); //Kde ho najdu?
-	AI_Output			(self, other,"PC_Psionic_BROTHERHOOD_TODO_05_04"); //Jdi do chr·mu. Z¯Ìdkakdy ho opouötÌ. Z¯ejmÏ se v tÏch chladn˝ch zdech cÌtÌ b˝t blÌû Sp·Ëovi.
+	AI_Output			(self, other,"PC_Psionic_BROTHERHOOD_TODO_05_04"); //Jdi do chr√°mu. Z≈ô√≠dkakdy ho opou≈°t√≠. Z≈ôejmƒõ se v tƒõch chladn√Ωch zdech c√≠t√≠ b√Ωt bl√≠≈æ Sp√°ƒçovi.
 
 	Log_CreateTopic		(CH2_Focus,	LOG_MISSION);
 	Log_SetTopicStatus	(CH2_Focus,	LOG_RUNNING);
-	B_LogEntry			(CH2_Focus,"Novic Lester mi ¯ekl, ûe se Y¥Berion sh·nÌ po kouzelnÈm ohniskovÈm kameni. Guru je v chr·movÈ ho¯e.");
+	B_LogEntry			(CH2_Focus,"Novic Lester mi ≈ôekl, ≈æe se Y¬¥Berion sh√°n√≠ po kouzeln√©m ohniskov√©m kameni. Guru je v chr√°mov√© ho≈ôe.");
 
 	var C_NPC YBerion;
 	YBerion = Hlp_GetNpc(Gur_1200_YBerion);
@@ -799,14 +799,14 @@ FUNC int  PC_Psionic_FOLLOWME_Condition()
 func void  PC_Psionic_FOLLOWME_Info()
 {
 	AI_GotoNpc(self,hero);
-	AI_Output (self, other,"PC_Psionic_FOLLOWME_Info_05_01"); //Hej, co tady dÏl·ö?
-	AI_Output (other, self,"PC_Psionic_FOLLOWME_Info_15_02"); //P¯iöel jsem na rozkaz m·g˘ Vody. Hled·m kouzelnÈ artefakty, takzvanÈ ohniskovÈ kameny.
-	AI_Output (self, other,"PC_Psionic_FOLLOWME_Info_05_03"); //Hled·ö ohniskovÈ kameny? Jsi opravdu smÏl˝.
-	AI_Output (other, self,"PC_Psionic_FOLLOWME_Info_15_04"); //Saturas a ostatnÌ m·govÈ z NovÈho t·bora je chtÏjÌ pouûÌt k rozbo¯enÌ BariÈry, aby n·s osvobodili z naöeho uvÏznÏnÌ.
-	AI_Output (self, other,"PC_Psionic_FOLLOWME_Info_05_05"); //Tomu uvÏ¯Ìm, jedinÏ aû to uvidÌm na vlastnÌ oËi.
-	AI_Output (other, self,"PC_Psionic_FOLLOWME_Info_15_06"); //Taky to tak cÌtÌm. Ale ¯ekni mi, proË jsi sem p¯iöel?
-	AI_Output (self, other,"PC_Psionic_FOLLOWME_Info_05_07"); //Zvaûuju, jestli m· cenu se vydat na n·vötÏvu horskÈ pevnosti.
-	AI_Output (self, other,"PC_Psionic_FOLLOWME_Info_05_08"); //VÌö... existuje jeden dokument, kter˝ bych r·d zÌskal. Na druhou stranu je to nebezpeËnÈ, tam chodit.
+	AI_Output (self, other,"PC_Psionic_FOLLOWME_Info_05_01"); //Hej, co tady dƒõl√°≈°?
+	AI_Output (other, self,"PC_Psionic_FOLLOWME_Info_15_02"); //P≈ôi≈°el jsem na rozkaz m√°g≈Ø Vody. Hled√°m kouzeln√© artefakty, takzvan√© ohniskov√© kameny.
+	AI_Output (self, other,"PC_Psionic_FOLLOWME_Info_05_03"); //Hled√°≈° ohniskov√© kameny? Jsi opravdu smƒõl√Ω.
+	AI_Output (other, self,"PC_Psionic_FOLLOWME_Info_15_04"); //Saturas a ostatn√≠ m√°gov√© z Nov√©ho t√°bora je chtƒõj√≠ pou≈æ√≠t k rozbo≈ôen√≠ Bari√©ry, aby n√°s osvobodili z na≈°eho uvƒõznƒõn√≠.
+	AI_Output (self, other,"PC_Psionic_FOLLOWME_Info_05_05"); //Tomu uvƒõ≈ô√≠m, jedinƒõ a≈æ to uvid√≠m na vlastn√≠ oƒçi.
+	AI_Output (other, self,"PC_Psionic_FOLLOWME_Info_15_06"); //Taky to tak c√≠t√≠m. Ale ≈ôekni mi, proƒç jsi sem p≈ôi≈°el?
+	AI_Output (self, other,"PC_Psionic_FOLLOWME_Info_05_07"); //Zva≈æuju, jestli m√° cenu se vydat na n√°v≈°tƒõvu horsk√© pevnosti.
+	AI_Output (self, other,"PC_Psionic_FOLLOWME_Info_05_08"); //V√≠≈°... existuje jeden dokument, kter√Ω bych r√°d z√≠skal. Na druhou stranu je to nebezpeƒçn√©, tam chodit.
 };
 
 // ***************************** INFOS ****************************************//
@@ -817,7 +817,7 @@ instance  PC_Psionic_GOLEM (C_INFO)
 	information		= PC_Psionic_GOLEM_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Jak se ti poda¯ilo p¯ejÌt p¯es ty hory?"; 
+	description		= "Jak se ti poda≈ôilo p≈ôej√≠t p≈ôes ty hory?"; 
 };
 
 FUNC int  PC_Psionic_GOLEM_Condition()
@@ -831,8 +831,8 @@ FUNC int  PC_Psionic_GOLEM_Condition()
 };
 FUNC void  PC_Psionic_GOLEM_Info()
 {
-	AI_Output (other, self,"PC_Psionic_NORMAL_Info_15_01"); //Jak se ti poda¯ilo p¯ejÌt p¯es ty hory?
-	AI_Output (self, other,"PC_Psionic_NORMAL_Info_05_02"); //HodnÏ jsem se toho nauËil od Guru. Jejich kouzla m˘ûou b˝t opravdu uûiteËn·.
+	AI_Output (other, self,"PC_Psionic_NORMAL_Info_15_01"); //Jak se ti poda≈ôilo p≈ôej√≠t p≈ôes ty hory?
+	AI_Output (self, other,"PC_Psionic_NORMAL_Info_05_02"); //Hodnƒõ jsem se toho nauƒçil od Guru. Jejich kouzla m≈Ø≈æou b√Ωt opravdu u≈æiteƒçn√°.
 };  
 
 //------------GESCHICHTE WARUM LESTER ZUR BERGFESTUNG GEHT--------------------
@@ -843,7 +843,7 @@ instance  PC_Psionic_STORY (C_INFO)
 	information		= PC_Psionic_STORY_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Ten dokument, co ho chceö... co je to zaË?"; 
+	description		= "Ten dokument, co ho chce≈°... co je to zaƒç?"; 
 };
 
 FUNC int  PC_Psionic_STORY_Condition()
@@ -857,11 +857,11 @@ FUNC int  PC_Psionic_STORY_Condition()
 };
 FUNC void  PC_Psionic_STORY_Info()
 {
-	AI_Output (other, self,"PC_Psionic_STORY_Info_15_01"); //Ten dokument, co ho chceö... co je to zaË?
-	AI_Output (self, other,"PC_Psionic_STORY_Info_05_02"); //P¯ed mnoha lety ûil v tÈ horskÈ pevnosti p·n tÈto oblasti. MÏl pod kontrolou zem i doly.
-	AI_Output (self, other,"PC_Psionic_STORY_Info_05_03"); //Tak jako ostatnÌ ölechtici i on samoz¯ejmÏ mÏl dokument, kter˝ potvrzoval jeho lennÌ majetek. A pr·vÏ to je ten dokument.
-	AI_Output (other, self,"PC_Psionic_STORY_Info_15_04"); //Ale od tÈ doby, co jsme tu drûeni BariÈrou, uû nenÌ k niËemu uûiteËn˝.
-	AI_Output (self, other,"PC_Psionic_STORY_Info_05_05"); //To je pravda. Pokud se ale m·g˘m Vody poda¯Ì zniËit BariÈru, dokument znovu nabude znaËnÈ hodnoty.
+	AI_Output (other, self,"PC_Psionic_STORY_Info_15_01"); //Ten dokument, co ho chce≈°... co je to zaƒç?
+	AI_Output (self, other,"PC_Psionic_STORY_Info_05_02"); //P≈ôed mnoha lety ≈æil v t√© horsk√© pevnosti p√°n t√©to oblasti. Mƒõl pod kontrolou zem i doly.
+	AI_Output (self, other,"PC_Psionic_STORY_Info_05_03"); //Tak jako ostatn√≠ ≈°lechtici i on samoz≈ôejmƒõ mƒõl dokument, kter√Ω potvrzoval jeho lenn√≠ majetek. A pr√°vƒõ to je ten dokument.
+	AI_Output (other, self,"PC_Psionic_STORY_Info_15_04"); //Ale od t√© doby, co jsme tu dr≈æeni Bari√©rou, u≈æ nen√≠ k niƒçemu u≈æiteƒçn√Ω.
+	AI_Output (self, other,"PC_Psionic_STORY_Info_05_05"); //To je pravda. Pokud se ale m√°g≈Øm Vody poda≈ô√≠ zniƒçit Bari√©ru, dokument znovu nabude znaƒçn√© hodnoty.
 };  
 
 // ***************************** INFOS ****************************************//
@@ -872,7 +872,7 @@ instance  PC_Psionic_COMEWITHME (C_INFO)
 	information		= PC_Psionic_COMEWITHME_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Mohli bychom se podÌvat na tu pevnost spoleËnÏ."; 
+	description		= "Mohli bychom se pod√≠vat na tu pevnost spoleƒçnƒõ."; 
 };
 
 FUNC int  PC_Psionic_COMEWITHME_Condition()
@@ -886,12 +886,12 @@ FUNC int  PC_Psionic_COMEWITHME_Condition()
 
 FUNC void  PC_Psionic_COMEWITHME_Info()
 {
-	AI_Output (other, self,"PC_Psionic_COMEWITHME_Info_15_01"); //Mohli bysme se podÌvat na tu pevnost spoleËnÏ.
-	AI_Output (self, other,"PC_Psionic_COMEWITHME_Info_05_02"); //To je dobr˝ n·pad. Jdi prvnÌ, z˘stanu blÌzko tebe.
+	AI_Output (other, self,"PC_Psionic_COMEWITHME_Info_15_01"); //Mohli bysme se pod√≠vat na tu pevnost spoleƒçnƒõ.
+	AI_Output (self, other,"PC_Psionic_COMEWITHME_Info_05_02"); //To je dobr√Ω n√°pad. Jdi prvn√≠, z≈Østanu bl√≠zko tebe.
 
 	Log_CreateTopic		(CH3_Fortress,	LOG_MISSION);
 	Log_SetTopicStatus	(CH3_Fortress,	LOG_RUNNING);
-	B_LogEntry		(CH3_Fortress,"P¯ed mohutnou pevnostÌ, kter· byla vybudov·na v hor·ch, jsem se setkal s novicem Lesterem z T·bora v baûin·ch. RozhlÌûel se v budovÏ po nÏjakÈ listinÏ a p¯idal se ke mnÏ p¯i hled·nÌ ohniska.");
+	B_LogEntry		(CH3_Fortress,"P≈ôed mohutnou pevnost√≠, kter√° byla vybudov√°na v hor√°ch, jsem se setkal s novicem Lesterem z T√°bora v ba≈æin√°ch. Rozhl√≠≈æel se v budovƒõ po nƒõjak√© listinƒõ a p≈ôidal se ke mnƒõ p≈ôi hled√°n√≠ ohniska.");
 
   	self.aivar[AIV_PARTYMEMBER] =	TRUE;
 	Npc_ExchangeRoutine (self,"FORTRESSFOLLOW");
@@ -919,18 +919,18 @@ func void  PC_Psionic_FOKUSPLACE_Info()
 {
 	AI_GotoNpc(self,hero);
 	//AI_PointAt(FOKUSWP)
-	AI_Output (self, other,"PC_Psionic_FOKUSPLACE_Info_05_01"); //PodÌvej, tohle vypad· jako to ohnisko, co hled·ö.
-	AI_Output (other, self,"PC_Psionic_FOKUSPLACE_Info_15_02"); //Ano, vypad· to jako ohniskov· rovina, hmm... NenÌ snadnÈ se k tomu dostat...
+	AI_Output (self, other,"PC_Psionic_FOKUSPLACE_Info_05_01"); //Pod√≠vej, tohle vypad√° jako to ohnisko, co hled√°≈°.
+	AI_Output (other, self,"PC_Psionic_FOKUSPLACE_Info_15_02"); //Ano, vypad√° to jako ohniskov√° rovina, hmm... Nen√≠ snadn√© se k tomu dostat...
 	AI_StopProcessInfos(self);
 
-	B_LogEntry		(CH3_Fortress,"Ohnisko, kterÈ hled·m, stojÌ na podstavci. Je vöak p¯Ìliö vysoko, neû abych pro nÏj mohl vylÈzt. MusÌm najÌt nÏjak˝ zp˘sob, jak tento artefakt zÌskat.");	
+	B_LogEntry		(CH3_Fortress,"Ohnisko, kter√© hled√°m, stoj√≠ na podstavci. Je v≈°ak p≈ô√≠li≈° vysoko, ne≈æ abych pro nƒõj mohl vyl√©zt. Mus√≠m naj√≠t nƒõjak√Ω zp≈Øsob, jak tento artefakt z√≠skat.");	
 	
 	Wld_InsertNpc		(Harpie,"LOCATION_19_03_ENTRANCE_HARPYE");
 	Wld_InsertNpc		(Harpie,"LOCATION_19_03_ENTRANCE_HARPYE2");
 	Wld_InsertNpc		(Harpie,"LOCATION_19_03_ENTRANCE_HARPYE3");
 };
 
-// ---------SPIELER WILL ‹BER DIE BR‹CKE OHNE DEN AUFTRAG ERF‹LLT ZU HABEN--------
+// ---------SPIELER WILL √úBER DIE BR√úCKE OHNE DEN AUFTRAG ERF√úLLT ZU HABEN--------
 instance PC_Psionic_COMEBACK (C_INFO)
 {
 	npc				= PC_Psionic;
@@ -952,7 +952,7 @@ FUNC int  PC_Psionic_COMEBACK_Condition()
 func void  PC_Psionic_COMEBACK_Info()
 {
 	AI_GotoNpc(self,hero);
-	AI_Output (self, other,"PC_Psionic_COMEBACK_Info_05_01"); //Kam jdeö? JeötÏ jsme tady neskonËili!
+	AI_Output (self, other,"PC_Psionic_COMEBACK_Info_05_01"); //Kam jde≈°? Je≈°tƒõ jsme tady neskonƒçili!
 	
   	self.aivar[AIV_PARTYMEMBER] =	FALSE;
 	Npc_ExchangeRoutine (self,"FORTRESSWAIT");
@@ -967,7 +967,7 @@ instance  PC_Psionic_IAMHURT (C_INFO)
 	information		= PC_Psionic_IAMHURT_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Jsem ranÏn˝. M˘ûeö mi pomoci?"; 
+	description		= "Jsem ranƒõn√Ω. M≈Ø≈æe≈° mi pomoci?"; 
 };
 
 FUNC int  PC_Psionic_IAMHURT_Condition()
@@ -981,14 +981,14 @@ FUNC int  PC_Psionic_IAMHURT_Condition()
 };
 FUNC void  PC_Psionic_IAMHURT_Info()
 {
-	AI_Output (other, self,"PC_Psionic_IAMHURT_Info_15_01"); //Jsem ranÏn˝. M˘ûeö mi pomoci?
-	AI_Output (self, other,"PC_Psionic_IAMHURT_Info_05_02"); //Vezmi si tenhle hojiv˝ lektvar.
+	AI_Output (other, self,"PC_Psionic_IAMHURT_Info_15_01"); //Jsem ranƒõn√Ω. M≈Ø≈æe≈° mi pomoci?
+	AI_Output (self, other,"PC_Psionic_IAMHURT_Info_05_02"); //Vezmi si tenhle hojiv√Ω lektvar.
 	
 	CreateInvItem (self,ItFo_Potion_Health_02);
 	B_GiveInvItems 	(self, hero,ItFo_Potion_Health_02, 1);
 };  
 
-//------------- SPIELER HAT DIE URKUNDE F‹R LESTER GEFUNDEN-----------------------
+//------------- SPIELER HAT DIE URKUNDE F√úR LESTER GEFUNDEN-----------------------
 instance  PC_Psionic_URKUNDE (C_INFO)
 {
 	npc				= PC_Psionic;
@@ -996,7 +996,7 @@ instance  PC_Psionic_URKUNDE (C_INFO)
 	information		= PC_Psionic_URKUNDE_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Naöel jsem ten dokument."; 
+	description		= "Na≈°el jsem ten dokument."; 
 };
 
 FUNC int  PC_Psionic_URKUNDE_Condition()
@@ -1010,11 +1010,11 @@ FUNC int  PC_Psionic_URKUNDE_Condition()
 };
 FUNC void  PC_Psionic_URKUNDE_Info()
 {
-	AI_Output			(other, self,"PC_Psionic_URKUNDE_Info_15_01"); //Naöel jsem ten dokument.
-	AI_Output			(self, other,"PC_Psionic_URKUNDE_Info_05_02"); //Hej, dobr· pr·ce. Vezmi si za odmÏnu tyto kouzelnÈ svitky. S nimi se dostaneö k tomu ohnisku.
-	AI_Output			(self, other,"PC_Psionic_URKUNDE_Info_05_03"); //PoËk·m na tebe dole u tÈ ohniskovÈ roviny.
+	AI_Output			(other, self,"PC_Psionic_URKUNDE_Info_15_01"); //Na≈°el jsem ten dokument.
+	AI_Output			(self, other,"PC_Psionic_URKUNDE_Info_05_02"); //Hej, dobr√° pr√°ce. Vezmi si za odmƒõnu tyto kouzeln√© svitky. S nimi se dostane≈° k tomu ohnisku.
+	AI_Output			(self, other,"PC_Psionic_URKUNDE_Info_05_03"); //Poƒçk√°m na tebe dole u t√© ohniskov√© roviny.
 
-	B_LogEntry		(CH3_Fortress,"Listina, po kterÈ se sh·nÏl Lester, byla v jednÈ truhlici. V˝mÏnou mi dal Ëty¯i kouzelnÈ svitky telekineze, pomocÌ kter˝ch dostanu to ohnisko.");
+	B_LogEntry		(CH3_Fortress,"Listina, po kter√© se sh√°nƒõl Lester, byla v jedn√© truhlici. V√Ωmƒõnou mi dal ƒçty≈ôi kouzeln√© svitky telekineze, pomoc√≠ kter√Ωch dostanu to ohnisko.");
 	
 	CreateInvItems		(self,ItArScrollTelekinesis,4);
 	B_GiveInvItems 	(self, hero, ItArScrollTelekinesis,4);
@@ -1047,7 +1047,7 @@ FUNC int  PC_Psionic_TIP_Condition()
 FUNC void  PC_Psionic_TIP_Info()
 {
 	AI_Output (other, self,"PC_Psionic_TIP_Info_15_01"); //Jak se dostanu k tomu ohnisku?
-	AI_Output (self, other,"PC_Psionic_TIP_Info_05_02"); //Mistr Y¥Berion obvykle ¯Ìk·: û·k zkouöÌ vÏcmi pohybovat pomocÌ rukou a nohou, mistr jimi pohybuje duchovnÌ silou.
+	AI_Output (self, other,"PC_Psionic_TIP_Info_05_02"); //Mistr Y¬¥Berion obvykle ≈ô√≠k√°: ≈æ√°k zkou≈°√≠ vƒõcmi pohybovat pomoc√≠ rukou a nohou, mistr jimi pohybuje duchovn√≠ silou.
 // 	AI_Output (self, other,"PC_Psionic_TIP_Info_05_03"); //Hier ist ein guter Ort, um die Kraft des Geistes zu nutzen!
 };  
 
@@ -1073,7 +1073,7 @@ FUNC int  PC_Psionic_LEAVE_Condition()
 func void  PC_Psionic_LEAVE_Info()
 {
 	AI_GotoNpc(self,hero);
-	AI_Output (self, other,"PC_Psionic_LEAVE_Info_05_01"); //Z˘stanu tady, abych naöel ten dokument.
+	AI_Output (self, other,"PC_Psionic_LEAVE_Info_05_01"); //Z≈Østanu tady, abych na≈°el ten dokument.
 	
   	self.aivar[AIV_PARTYMEMBER] =	FALSE;
 
@@ -1103,7 +1103,7 @@ FUNC int  PC_Psionic_BALKON_Condition()
 func void  PC_Psionic_BALKON_Info()
 {
 	AI_GotoNpc(self,hero);
-	AI_Output (self, other,"PC_Psionic_BALKON_Info_05_01"); //P˘jdu a porozhlÈdnu se tady.
+	AI_Output (self, other,"PC_Psionic_BALKON_Info_05_01"); //P≈Øjdu a porozhl√©dnu se tady.
 	
 	AI_StopProcessInfos(self);
 	Npc_ExchangeRoutine (self,"BALKON");
@@ -1129,10 +1129,10 @@ FUNC int  PC_Psionic_FINISH_Condition()
 };
 func void  PC_Psionic_FINISH_Info()
 {
-	AI_Output (self, other,"PC_Psionic_FINISH_Info_05_01"); //JeötÏ nem·me oba to, co jsme chtÏli. J· z˘stanu tady, abych si p¯eËetl ty starÈ knihy.
-	AI_Output (other, self,"PC_Psionic_FINISH_Info_15_02"); //Dob¯e, jeötÏ se sejdeme.
+	AI_Output (self, other,"PC_Psionic_FINISH_Info_05_01"); //Je≈°tƒõ nem√°me oba to, co jsme chtƒõli. J√° z≈Østanu tady, abych si p≈ôeƒçetl ty star√© knihy.
+	AI_Output (other, self,"PC_Psionic_FINISH_Info_15_02"); //Dob≈ôe, je≈°tƒõ se sejdeme.
 
-	B_LogEntry		(CH3_Fortress,"ZÌskal jsem ohnisko. Lester se chce jeötÏ porozhlÈdnout po knihovnÏ v pevnosti. Douf·m, ûe se s nÌm jeötÏ uvidÌm.");
+	B_LogEntry		(CH3_Fortress,"Z√≠skal jsem ohnisko. Lester se chce je≈°tƒõ porozhl√©dnout po knihovnƒõ v pevnosti. Douf√°m, ≈æe se s n√≠m je≈°tƒõ uvid√≠m.");
 
  	self.aivar[AIV_PARTYMEMBER] = FALSE;
 	Npc_ExchangeRoutine (self,"BOOK");
@@ -1148,7 +1148,7 @@ instance  PC_Psionic_CHESTCLOSED (C_INFO)
 	information		= PC_Psionic_CHESTCLOSED_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Naöel jsi nÏco?"; 
+	description		= "Na≈°el jsi nƒõco?"; 
 };
 
 FUNC int  PC_Psionic_CHESTCLOSED_Condition()
@@ -1163,11 +1163,11 @@ FUNC int  PC_Psionic_CHESTCLOSED_Condition()
 };
 FUNC void  PC_Psionic_CHESTCLOSED_Info()
 {
-	AI_Output (other, self,"PC_Psionic_CHESTCLOSED_Info_15_01"); //Naöel jsi nÏco?
-	AI_Output (self, other,"PC_Psionic_CHESTCLOSED_Info_05_02"); //Ta truhla je zamËen·. Moûn· k nÌ najdeme klÌË nÏkde v pevnosti.
-	AI_Output (self, other,"PC_Psionic_CHESTCLOSED_Info_05_03"); //Uû jsi naöel ten dokument?
-	AI_Output (other, self,"PC_Psionic_CHESTCLOSED_Info_15_04"); //JeötÏ ne.
-	AI_Output (self, other,"PC_Psionic_CHESTCLOSED_Info_05_05"); //Hledal jsi v knihovnÏ?
+	AI_Output (other, self,"PC_Psionic_CHESTCLOSED_Info_15_01"); //Na≈°el jsi nƒõco?
+	AI_Output (self, other,"PC_Psionic_CHESTCLOSED_Info_05_02"); //Ta truhla je zamƒçen√°. Mo≈æn√° k n√≠ najdeme kl√≠ƒç nƒõkde v pevnosti.
+	AI_Output (self, other,"PC_Psionic_CHESTCLOSED_Info_05_03"); //U≈æ jsi na≈°el ten dokument?
+	AI_Output (other, self,"PC_Psionic_CHESTCLOSED_Info_15_04"); //Je≈°tƒõ ne.
+	AI_Output (self, other,"PC_Psionic_CHESTCLOSED_Info_05_05"); //Hledal jsi v knihovnƒõ?
 	AI_StopProcessInfos(self);
 };  
 /*------------------------------------------------------------------------
@@ -1181,7 +1181,7 @@ instance  PC_Psionic_COMEAGAIN (C_INFO)
 	information		= PC_Psionic_COMEAGAIN_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Prozkoum·me pevnost spoleËnÏ."; 
+	description		= "Prozkoum√°me pevnost spoleƒçnƒõ."; 
 };
 
 FUNC int  PC_Psionic_COMEAGAIN_Condition()
@@ -1195,8 +1195,8 @@ FUNC int  PC_Psionic_COMEAGAIN_Condition()
 };
 FUNC void  PC_Psionic_COMEAGAIN_Info()
 {
-	AI_Output (other, self,"PC_Psionic_COMEAGAIN_Info_15_01"); //Prozkoum·me pevnost spoleËnÏ.
-	AI_Output (self, other,"PC_Psionic_COMEAGAIN_Info_05_02"); //Dob¯e, jdi prvnÌ!
+	AI_Output (other, self,"PC_Psionic_COMEAGAIN_Info_15_01"); //Prozkoum√°me pevnost spoleƒçnƒõ.
+	AI_Output (self, other,"PC_Psionic_COMEAGAIN_Info_05_02"); //Dob≈ôe, jdi prvn√≠!
  
  	self.aivar[AIV_PARTYMEMBER] =	TRUE;
 	Npc_ExchangeRoutine (self,"FORTRESSFOLLOW");
@@ -1205,7 +1205,7 @@ FUNC void  PC_Psionic_COMEAGAIN_Info()
 };  
 
 //---------------------------------------------------------------------
-//	Info DIEGOMILTEN      ******Bjˆrn****** Patch2
+//	Info DIEGOMILTEN      ******Bj√∂rn****** Patch2
 //---------------------------------------------------------------------
 INSTANCE Info_Lester_DIEGOMILTEN (C_INFO)
 {
@@ -1214,7 +1214,7 @@ INSTANCE Info_Lester_DIEGOMILTEN (C_INFO)
 	information	= Info_Lester_DIEGOMILTEN_Info;
 	important	= 0;	
 	permanent	= 0;
-	description = "Potkal jsem p¯es Star˝m t·borem Diega a Miltena!";
+	description = "Potkal jsem p≈ôes Star√Ωm t√°borem Diega a Miltena!";
 };                       
 
 FUNC INT Info_Lester_DIEGOMILTEN_Condition()
@@ -1228,24 +1228,24 @@ FUNC INT Info_Lester_DIEGOMILTEN_Condition()
 func VOID Info_Lester_DIEGOMILTEN_Info()
 {
 	
-	AI_Output	(hero,self,"Info_SFB_1_DieLage_15_00"); 				//Jak se m·ö?
-	AI_Output 	(self, hero,"PC_Psionic_FOLLOWME_Info_05_01"); 			//Hej, co tady dÏl·ö?
-	AI_Output	(hero,self,"Info_Saturas_COLLAPSE_15_01"); 				//Star˝ d˘l se zhroutil potom, co ho zatopila voda!
+	AI_Output	(hero,self,"Info_SFB_1_DieLage_15_00"); 				//Jak se m√°≈°?
+	AI_Output 	(self, hero,"PC_Psionic_FOLLOWME_Info_05_01"); 			//Hej, co tady dƒõl√°≈°?
+	AI_Output	(hero,self,"Info_Saturas_COLLAPSE_15_01"); 				//Star√Ω d≈Øl se zhroutil potom, co ho zatopila voda!
 	AI_Output 	(self, hero,"DIA_Fingers_BecomeShadow_05_01"); 			//No a?
-	AI_Output 	(hero, self,"Info_Xardas_KDW_15_01"); 					//Vöichni m·govÈ OhnÏ jsou mrtvÌ!
-	AI_Output 	(hero, self,"Info_Xardas_KDW_15_02"); 					//Gomez je povraûdil.
-	AI_Output 	(self, hero,"SVM_5_GetThingsRight"); 					//To nebude snadnÈ napravit!
-	AI_Output 	(hero,self,"Info_Gorn_DIEGOMILTEN_15_01"); 				//Potkal jsem p¯es Star˝m t·borem Diega a Miltena!
-	AI_Output 	(hero, self,"Info_lester_DIEGOMILTEN_15_01"); 			//ChtÏli se s tebou setkat. Na obvyklÈm mÌstÏ.
-	AI_Output 	(self, hero,"SVM_5_YeahWellDone"); 						//Uû bylo na Ëase!
-	AI_Output 	(other, self,"Info_Gorn_RUINWALLWHAT_15_01"); 			//Co se dÏje?
-	AI_Output 	(self, hero,"Info_lester_DIEGOMILTEN_05_02"); 			//Z˘stanu tady, abych si p¯eËetl ty starÈ knihy.
-	AI_Output	(hero, self,"KDW_600_Saturas_OATH_Info_15_06"); 		//Uch... NerozumÌm...
-	AI_Output 	(self, hero,"PC_Psionic_TIP_Info_05_02"); 				//Mistr Y¥Berion obvykle ¯Ìk·: û·k zkouöÌ vÏcmi pohybovat pomocÌ rukou a nohou, mistr jimi pohybuje duchovnÌ silou.
-	AI_Output	(hero,self,"Info_Grd_6_DasLager_WasIstAerger_15_04"); 	//Dob¯e, dob¯e. D·m si pozor.
+	AI_Output 	(hero, self,"Info_Xardas_KDW_15_01"); 					//V≈°ichni m√°gov√© Ohnƒõ jsou mrtv√≠!
+	AI_Output 	(hero, self,"Info_Xardas_KDW_15_02"); 					//Gomez je povra≈ædil.
+	AI_Output 	(self, hero,"SVM_5_GetThingsRight"); 					//To nebude snadn√© napravit!
+	AI_Output 	(hero,self,"Info_Gorn_DIEGOMILTEN_15_01"); 				//Potkal jsem p≈ôes Star√Ωm t√°borem Diega a Miltena!
+	AI_Output 	(hero, self,"Info_lester_DIEGOMILTEN_15_01"); 			//Chtƒõli se s tebou setkat. Na obvykl√©m m√≠stƒõ.
+	AI_Output 	(self, hero,"SVM_5_YeahWellDone"); 						//U≈æ bylo na ƒçase!
+	AI_Output 	(other, self,"Info_Gorn_RUINWALLWHAT_15_01"); 			//Co se dƒõje?
+	AI_Output 	(self, hero,"Info_lester_DIEGOMILTEN_05_02"); 			//Z≈Østanu tady, abych si p≈ôeƒçetl ty star√© knihy.
+	AI_Output	(hero, self,"KDW_600_Saturas_OATH_Info_15_06"); 		//Uch... Nerozum√≠m...
+	AI_Output 	(self, hero,"PC_Psionic_TIP_Info_05_02"); 				//Mistr Y¬¥Berion obvykle ≈ô√≠k√°: ≈æ√°k zkou≈°√≠ vƒõcmi pohybovat pomoc√≠ rukou a nohou, mistr jimi pohybuje duchovn√≠ silou.
+	AI_Output	(hero,self,"Info_Grd_6_DasLager_WasIstAerger_15_04"); 	//Dob≈ôe, dob≈ôe. D√°m si pozor.
 	AI_Output 	(self, hero,"DIA_Fingers_Lehrer_Pickpocket2_05_03"); 	//Opatruj se.
-	AI_Output	(hero, self,"Info_FreemineOrc_EXIT_15_03"); 			//DÏkuju. P˘jdu si svou cestou.
-	AI_Output 	(self, hero,"Info_Lester_EXIT_05_02"); 					//KÈû tÏ Sp·Ë ochr·nÌ!
+	AI_Output	(hero, self,"Info_FreemineOrc_EXIT_15_03"); 			//Dƒõkuju. P≈Øjdu si svou cestou.
+	AI_Output 	(self, hero,"Info_Lester_EXIT_05_02"); 					//K√©≈æ tƒõ Sp√°ƒç ochr√°n√≠!
 		
 	B_GiveXP			(XP_MessageForGorn);
 
@@ -1255,7 +1255,7 @@ func VOID Info_Lester_DIEGOMILTEN_Info()
 	}
 	else
 	{
-		B_LogEntry			(CH4_4Friends,		"ÿekl jsem Lesterovi a Gornovi o setk·nÌ s jejich p¯·teli. TeÔ uû to nenÌ moje vÏc. D·l si poradÌ sami..."); 
+		B_LogEntry			(CH4_4Friends,		"≈òekl jsem Lesterovi a Gornovi o setk√°n√≠ s jejich p≈ô√°teli. Teƒè u≈æ to nen√≠ moje vƒõc. D√°l si porad√≠ sami..."); 
 		Log_SetTopicStatus	(CH4_4Friends,		LOG_SUCCESS);
 	};
 

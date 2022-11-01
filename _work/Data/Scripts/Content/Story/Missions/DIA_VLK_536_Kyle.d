@@ -47,7 +47,7 @@ FUNC INT DIA_Kyle_HutRage_Condition()
 
 FUNC VOID DIA_Kyle_HutRage_Info()
 {
-	AI_Output (self, other,"DIA_Kyle_HutRage_10_00"); //Kolikrát vám budu, vy bastardi, muset opakovat, abyste neprocházeli mojí chatrèí?
+	AI_Output (self, other,"DIA_Kyle_HutRage_10_00"); //KolikrÃ¡t vÃ¡m budu, vy bastardi, muset opakovat, abyste neprochÃ¡zeli mojÃ­ chatrÄÃ­?
 };
 
 // **************************************************
@@ -61,7 +61,7 @@ INSTANCE DIA_Kyle_Problem (C_INFO)
 	condition		= DIA_Kyle_Problem_Condition;
 	information		= DIA_Kyle_Problem_Info;
 	permanent		= 1;
-	description		= "Co máš za problém?";
+	description		= "Co mÃ¡Å¡ za problÃ©m?";
 };
 
 FUNC INT DIA_Kyle_Problem_Condition()
@@ -71,14 +71,14 @@ FUNC INT DIA_Kyle_Problem_Condition()
 
 FUNC VOID DIA_Kyle_Problem_Info()
 {
-	AI_Output (other, self,"DIA_Kyle_Problem_15_00"); //Co máš za problém?
-	AI_Output (self, other,"DIA_Kyle_Problem_10_01"); //Nech mì na pokoji, èlovìèe! Kadı má tady problémy se MNOU!
-	AI_Output (self, other,"DIA_Kyle_Problem_10_02"); //Všechno zaèalo v okamiku, kdy jsem stavìl tuhle chatrè.
-	AI_Output (self, other,"DIA_Kyle_Problem_10_03"); //Øíkali: nestav tu chatrè tak blízko strouhy.
-	AI_Output (self, other,"DIA_Kyle_Problem_10_04"); //Nikdo z tìch bastardù mi ale neøekl, co se stane, kdy to udìlám.
-	AI_Output (self, other,"DIA_Kyle_Problem_10_05"); //Kdy jsem se za pár dní vrátil z dolu, byly tam druhé dveøe.
-	AI_Output (self, other,"DIA_Kyle_Problem_10_06"); //Ty hajzlové! Nenávidím je! Ani nedokáu øíci, jak strašnì je nenávidím!
-	AI_Output (self, other,"DIA_Kyle_Problem_10_07"); //Teï  kadı prochází mojí chatrèí. Kadı idiot.
+	AI_Output (other, self,"DIA_Kyle_Problem_15_00"); //Co mÃ¡Å¡ za problÃ©m?
+	AI_Output (self, other,"DIA_Kyle_Problem_10_01"); //Nech mÄ› na pokoji, ÄlovÄ›Äe! KaÅ¾dÃ½ mÃ¡ tady problÃ©my se MNOU!
+	AI_Output (self, other,"DIA_Kyle_Problem_10_02"); //VÅ¡echno zaÄalo v okamÅ¾iku, kdyÅ¾ jsem stavÄ›l tuhle chatrÄ.
+	AI_Output (self, other,"DIA_Kyle_Problem_10_03"); //Å˜Ã­kali: nestav tu chatrÄ tak blÃ­zko strouhy.
+	AI_Output (self, other,"DIA_Kyle_Problem_10_04"); //Nikdo z tÄ›ch bastardÅ¯ mi ale neÅ™ekl, co se stane, kdyÅ¾ to udÄ›lÃ¡m.
+	AI_Output (self, other,"DIA_Kyle_Problem_10_05"); //KdyÅ¾ jsem se za pÃ¡r dnÃ­ vrÃ¡til z dolu, byly tam druhÃ© dveÅ™e.
+	AI_Output (self, other,"DIA_Kyle_Problem_10_06"); //Ty hajzlovÃ©! NenÃ¡vidÃ­m je! Ani nedokÃ¡Å¾u Å™Ã­ci, jak straÅ¡nÄ› je nenÃ¡vidÃ­m!
+	AI_Output (self, other,"DIA_Kyle_Problem_10_07"); //TeÄ  kaÅ¾dÃ½ prochÃ¡zÃ­ mojÃ­ chatrÄÃ­. KaÅ¾dÃ½ idiot.
 };
 
 	

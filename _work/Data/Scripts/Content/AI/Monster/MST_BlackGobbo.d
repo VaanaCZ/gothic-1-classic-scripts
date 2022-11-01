@@ -4,7 +4,7 @@
 
 PROTOTYPE Mst_Default_BlackGobbo(C_NPC)			
 {
-	name							=	"Èerný goblin";
+	name							=	"ÄŒernÃ½ goblin";
 	guild							=	GIL_GOBBO;
 	aivar[AIV_MM_REAL_ID]			= 	ID_BLACKGOBBO;
 	level							=	12;
@@ -88,6 +88,6 @@ INSTANCE BlackGobboWarrior	(Mst_Default_BlackGobbo)
 	protection	[PROT_BLUNT]		=	50;
 	protection	[PROT_EDGE]			=	50;
 	
-	name							=	"Gobliní bojovník";
+	name							=	"GoblinÃ­ bojovnÃ­k";
 	
 };

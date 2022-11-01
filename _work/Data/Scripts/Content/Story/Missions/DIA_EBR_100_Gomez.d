@@ -33,7 +33,7 @@ instance DIA_Gomez_Fault (C_INFO)
 	condition	= DIA_Gomez_Fault_Condition;
 	information	= DIA_Gomez_Fault_Info;
 	permanent	= 0;
-	description	= "P¯iöel jsem nabÌdnout svÈ sluûby.";
+	description	= "P≈ôi≈°el jsem nab√≠dnout sv√© slu≈æby.";
 };                       
 
 FUNC int DIA_Gomez_Fault_Condition()
@@ -46,8 +46,8 @@ FUNC int DIA_Gomez_Fault_Condition()
 
 FUNC VOID DIA_Gomez_Fault_Info()
 {
-	AI_Output (other, self,"DIA_Gomez_Fault_15_00"); //P¯iöel jsem nabÌdnout svÈ sluûby.
-	AI_Output (self, other,"DIA_Gomez_Fault_11_01"); //Tak ty jsi sem p¯iöel a myslÌö si, ûe se o tebe budu zajÌmat, ty Ëerve? STR¡éE!
+	AI_Output (other, self,"DIA_Gomez_Fault_15_00"); //P≈ôi≈°el jsem nab√≠dnout sv√© slu≈æby.
+	AI_Output (self, other,"DIA_Gomez_Fault_11_01"); //Tak ty jsi sem p≈ôi≈°el a mysl√≠≈° si, ≈æe se o tebe budu zaj√≠mat, ty ƒçerve? STR√Å≈ΩE!
 	
 	AI_StopProcessInfos	(self);
 	Npc_SetPermAttitude	(self, ATT_HOSTILE);
@@ -69,7 +69,7 @@ instance DIA_Gomez_Hello (C_INFO)
 	condition	= DIA_Gomez_Hello_Condition;
 	information	= DIA_Gomez_Hello_Info;
 	permanent	= 1;
-	description	= "P¯iöel jsem nabÌdnout svÈ sluûby.";
+	description	= "P≈ôi≈°el jsem nab√≠dnout sv√© slu≈æby.";
 };                       
 
 FUNC int DIA_Gomez_Hello_Condition()
@@ -82,34 +82,34 @@ FUNC int DIA_Gomez_Hello_Condition()
 
 FUNC VOID DIA_Gomez_Hello_Info()
 {
-	AI_Output (other, self,"DIA_Gomez_Hello_15_00"); //P¯iöel jsem nabÌdnout svÈ sluûby.
-	AI_Output (self, other,"DIA_Gomez_Hello_11_01"); //ProË si myslÌö, ûe bysme mÏli mÌt o tvoje sluûby z·jem?
+	AI_Output (other, self,"DIA_Gomez_Hello_15_00"); //P≈ôi≈°el jsem nab√≠dnout sv√© slu≈æby.
+	AI_Output (self, other,"DIA_Gomez_Hello_11_01"); //Proƒç si mysl√≠≈°, ≈æe bysme mƒõli m√≠t o tvoje slu≈æby z√°jem?
 	
 	Info_ClearChoices	(DIA_Gomez_Hello);																			
-	Info_AddChoice		(DIA_Gomez_Hello,"Douf·m, ûe ti nebudu muset useknout hlavu, abych ti uk·zal, ûe se umÌm...",DIA_Gomez_Hello_KopfAb);
-	Info_AddChoice		(DIA_Gomez_Hello,"Tady jsou jenom hÚupovÈ.",DIA_Gomez_Hello_Spinner);
-	Info_AddChoice		(DIA_Gomez_Hello,"Chodil jsem po vöech t·borech a ve vöech m·m zn·mÈ.",DIA_Gomez_Hello_Kontakte);
-	Info_AddChoice		(DIA_Gomez_Hello,"Sloûil jsem zkouöku poctivosti.",DIA_Gomez_Hello_ThorusSays);
+	Info_AddChoice		(DIA_Gomez_Hello,"Douf√°m, ≈æe ti nebudu muset useknout hlavu, abych ti uk√°zal, ≈æe se um√≠m...",DIA_Gomez_Hello_KopfAb);
+	Info_AddChoice		(DIA_Gomez_Hello,"Tady jsou jenom h≈àupov√©.",DIA_Gomez_Hello_Spinner);
+	Info_AddChoice		(DIA_Gomez_Hello,"Chodil jsem po v≈°ech t√°borech a ve v≈°ech m√°m zn√°m√©.",DIA_Gomez_Hello_Kontakte);
+	Info_AddChoice		(DIA_Gomez_Hello,"Slo≈æil jsem zkou≈°ku poctivosti.",DIA_Gomez_Hello_ThorusSays);
 	
 };
 
 func void DIA_Gomez_Hello_ThorusSays()
 {
-	AI_Output (other, self,"DIA_Gomez_Hello_ThorusSays_15_00"); //Sloûil jsem zkouöku poctivosti a Thorus ¯Ìkal, ûe pr·vem.
-	AI_Output (self, other,"DIA_Gomez_Hello_ThorusSays_11_01"); //Kdyby to tak opravdu nebylo, nebyl by ses sem dostal ûiv˝. Douf·m ale, ûe to nebylo vöechno, co umÌö.
+	AI_Output (other, self,"DIA_Gomez_Hello_ThorusSays_15_00"); //Slo≈æil jsem zkou≈°ku poctivosti a Thorus ≈ô√≠kal, ≈æe pr√°vem.
+	AI_Output (self, other,"DIA_Gomez_Hello_ThorusSays_11_01"); //Kdyby to tak opravdu nebylo, nebyl by ses sem dostal ≈æiv√Ω. Douf√°m ale, ≈æe to nebylo v≈°echno, co um√≠≈°.
 };
 
 func void DIA_Gomez_Hello_Kontakte()
 {
 	gomez_kontakte = 0;
-	AI_Output (other, self,"DIA_Gomez_Hello_Kontakte_15_00"); //Chodil jsem po vöech t·borech a ve vöech m·m zn·mÈ.
-	AI_Output (self, other,"DIA_Gomez_Hello_Kontakte_11_01"); //Tak to by bylo uûiteËnÈ. S k˝m jsi ve spojenÌ?
+	AI_Output (other, self,"DIA_Gomez_Hello_Kontakte_15_00"); //Chodil jsem po v≈°ech t√°borech a ve v≈°ech m√°m zn√°m√©.
+	AI_Output (self, other,"DIA_Gomez_Hello_Kontakte_11_01"); //Tak to by bylo u≈æiteƒçn√©. S k√Ωm jsi ve spojen√≠?
 	Info_ClearChoices	(DIA_Gomez_Hello);
-	Info_AddChoice		(DIA_Gomez_Hello,"To byly ty d˘leûitÈ.",DIA_Gomez_Hello_Kontakte_ThatsAll);
-	Info_AddChoice		(DIA_Gomez_Hello,"P·r p¯echov·vaË˘ v NovÈm t·bo¯e.",DIA_Gomez_Hello_Kontakte_NLHehler);
+	Info_AddChoice		(DIA_Gomez_Hello,"To byly ty d≈Øle≈æit√©.",DIA_Gomez_Hello_Kontakte_ThatsAll);
+	Info_AddChoice		(DIA_Gomez_Hello,"P√°r p≈ôechov√°vaƒç≈Ø v Nov√©m t√°bo≈ôe.",DIA_Gomez_Hello_Kontakte_NLHehler);
 	Info_AddChoice		(DIA_Gomez_Hello,"Lares.",DIA_Gomez_Hello_Kontakte_Lares);
 	//Info_AddChoice		(DIA_Gomez_Hello,"Zu Lee."	,DIA_Gomez_Hello_Kontakte_Lee);
-	Info_AddChoice		(DIA_Gomez_Hello,"P·r Baal˘ v t·bo¯e Bratrstva.",DIA_Gomez_Hello_Kontakte_Baals);
+	Info_AddChoice		(DIA_Gomez_Hello,"P√°r Baal≈Ø v t√°bo≈ôe Bratrstva.",DIA_Gomez_Hello_Kontakte_Baals);
 	Info_AddChoice		(DIA_Gomez_Hello,"Cor Kalom.",DIA_Gomez_Hello_Kontakte_Kalom);
 	
 	if (gomez_kontakte < 3)
@@ -120,14 +120,14 @@ func void DIA_Gomez_Hello_Kontakte()
 
 func void DIA_Gomez_Hello_Spinner()
 {
-	AI_Output (other, self,"DIA_Gomez_Hello_Spinner_15_00"); //Jsou tu jenom hÚupovÈ, kte¯Ì vöechnu pr·ci jenom p¯ehazujÌ na nov·Ëky, mÌsto aby ji dÏlali sami.
-	AI_Output (self, other,"DIA_Gomez_Hello_Spinner_11_01"); //To je, aû na p·r v˝jimek, pravda. NenÌ to ale v˘bec d˘vod najÌmat dalöÌ hÚupy.
+	AI_Output (other, self,"DIA_Gomez_Hello_Spinner_15_00"); //Jsou tu jenom h≈àupov√©, kte≈ô√≠ v≈°echnu pr√°ci jenom p≈ôehazuj√≠ na nov√°ƒçky, m√≠sto aby ji dƒõlali sami.
+	AI_Output (self, other,"DIA_Gomez_Hello_Spinner_11_01"); //To je, a≈æ na p√°r v√Ωjimek, pravda. Nen√≠ to ale v≈Øbec d≈Øvod naj√≠mat dal≈°√≠ h≈àupy.
 };
 
 func void DIA_Gomez_Hello_KopfAb()
 {
-	AI_Output (other, self,"DIA_Gomez_Hello_KopfAb_15_00"); //Douf·m, ûe ti nebudu muset useknout hlavu, abych ti uk·zal, ûe se umÌm oh·nÏt se zbranÌ.
-	AI_Output (self, other,"DIA_Gomez_Hello_KopfAb_11_01"); //Mezi hrdinstvÌm a pitomostÌ je jen velmi mal˝ rozdÌl.
+	AI_Output (other, self,"DIA_Gomez_Hello_KopfAb_15_00"); //Douf√°m, ≈æe ti nebudu muset useknout hlavu, abych ti uk√°zal, ≈æe se um√≠m oh√°nƒõt se zbran√≠.
+	AI_Output (self, other,"DIA_Gomez_Hello_KopfAb_11_01"); //Mezi hrdinstv√≠m a pitomost√≠ je jen velmi mal√Ω rozd√≠l.
 	
 	AI_StopProcessInfos	(self);
 	Npc_SetPermAttitude	(self, ATT_HOSTILE);
@@ -141,10 +141,10 @@ func void DIA_Gomez_Hello_KopfAb()
 func void DIA_Gomez_Hello_Kontakte_YBerion()
 {
 	AI_Output (other, self,"DIA_Gomez_Hello_Kontakte_YBerion_15_00"); //Y'Berion.
-	AI_Output (self, other,"DIA_Gomez_Hello_Kontakte_YBerion_11_01"); //Y'Berion neztr·cÌ Ëas s chlapÌky jako jsi ty.
-	AI_Output (self, other,"DIA_Gomez_Hello_Kontakte_YBerion_11_02"); //Lûeö mi, jako bych byl nÏjak˝ idiot.
-	AI_Output (self, other,"DIA_Gomez_Hello_Kontakte_YBerion_11_03"); //MrzÌ mÏ, kdyû vidÌm, ûe mÏ m·ö za HLUP¡KA.
-	AI_Output (self, other,"DIA_Gomez_Hello_Kontakte_YBerion_11_04"); //Nerad se cÌtÌm zklaman˝.
+	AI_Output (self, other,"DIA_Gomez_Hello_Kontakte_YBerion_11_01"); //Y'Berion neztr√°c√≠ ƒças s chlap√≠ky jako jsi ty.
+	AI_Output (self, other,"DIA_Gomez_Hello_Kontakte_YBerion_11_02"); //L≈æe≈° mi, jako bych byl nƒõjak√Ω idiot.
+	AI_Output (self, other,"DIA_Gomez_Hello_Kontakte_YBerion_11_03"); //Mrz√≠ mƒõ, kdy≈æ vid√≠m, ≈æe mƒõ m√°≈° za HLUP√ÅKA.
+	AI_Output (self, other,"DIA_Gomez_Hello_Kontakte_YBerion_11_04"); //Nerad se c√≠t√≠m zklaman√Ω.
 	AI_StopProcessInfos	(self);
 	Npc_SetPermAttitude	(self, ATT_HOSTILE);
 	Npc_SetTarget (self,other);
@@ -160,7 +160,7 @@ func void DIA_Gomez_Hello_Kontakte_Kalom()
 
 func void DIA_Gomez_Hello_Kontakte_Baals()
 {
-	AI_Output (other, self,"DIA_Gomez_Hello_Kontakte_Baals_15_00"); //P·r Baal˘ v t·bo¯e Bratrstva.
+	AI_Output (other, self,"DIA_Gomez_Hello_Kontakte_Baals_15_00"); //P√°r Baal≈Ø v t√°bo≈ôe Bratrstva.
 	AI_Output (self, other,"DIA_Gomez_Hello_Kontakte_Baals_11_01"); //No a?
 	gomez_kontakte = gomez_kontakte + 1;
 };
@@ -170,7 +170,7 @@ func void DIA_Gomez_Hello_Kontakte_Lee()
 {
 	AI_Output (other, self,"DIA_Gomez_Hello_Kontakte_Lee_15_00"); //Zu Lee.
 	AI_Output (self, other,"DIA_Gomez_Hello_Kontakte_Lee_11_01"); //Lee ist also ein guter Freund von dir, ja?
-	AI_Output (self, other,"DIA_Gomez_Hello_Kontakte_Lee_11_02"); //Dann sieht die Sache nat¸rlich ANDERS AUS (zornig am ENDE)
+	AI_Output (self, other,"DIA_Gomez_Hello_Kontakte_Lee_11_02"); //Dann sieht die Sache nat√ºrlich ANDERS AUS (zornig am ENDE)
 
 	AI_StopProcessInfos	(self);
 	Npc_SetPermAttitude	(self, ATT_HOSTILE);
@@ -187,23 +187,23 @@ func void DIA_Gomez_Hello_Kontakte_Lares()
 
 func void DIA_Gomez_Hello_Kontakte_NLHehler()
 {
-	AI_Output (other, self,"DIA_Gomez_Hello_Kontakte_NLHehler_15_00"); //NÏkolik p¯ekupnÌk˘ v NovÈm t·bo¯e.
+	AI_Output (other, self,"DIA_Gomez_Hello_Kontakte_NLHehler_15_00"); //Nƒõkolik p≈ôekupn√≠k≈Ø v Nov√©m t√°bo≈ôe.
 	AI_Output (self, other,"DIA_Gomez_Hello_Kontakte_NLHehler_11_01"); //No a?
 	gomez_kontakte = gomez_kontakte + 1;
 };
 
 func void DIA_Gomez_Hello_Kontakte_ThatsAll()
 {
-	AI_Output (other, self,"DIA_Gomez_Hello_Kontakte_ThatsAll_15_00"); //To byly ty d˘leûitÈ.
+	AI_Output (other, self,"DIA_Gomez_Hello_Kontakte_ThatsAll_15_00"); //To byly ty d≈Øle≈æit√©.
 	if (gomez_kontakte >= 4)	
 	{
-		AI_Output (self, other,"DIA_Gomez_Hello_Kontakte_ThatsAll_11_01"); //To nenÌ öpatnÈ - na zaË·teËnÌka.
-		AI_Output (self, other,"DIA_Gomez_Hello_Kontakte_ThatsAll_11_02"); //MÏl bys dostat öanci.
+		AI_Output (self, other,"DIA_Gomez_Hello_Kontakte_ThatsAll_11_01"); //To nen√≠ ≈°patn√© - na zaƒç√°teƒçn√≠ka.
+		AI_Output (self, other,"DIA_Gomez_Hello_Kontakte_ThatsAll_11_02"); //Mƒõl bys dostat ≈°anci.
 		Info_ClearChoices	(DIA_Gomez_Hello);
 	}
 	else
 	{
-		AI_Output (self, other,"DIA_Gomez_Hello_Kontakte_ThatsAll_INSUFF_11_00"); //MyslÌö si, ûe mÏ TOHLE dojme? To m·me KOP¡»E s lepöÌmi kontakty!
+		AI_Output (self, other,"DIA_Gomez_Hello_Kontakte_ThatsAll_INSUFF_11_00"); //Mysl√≠≈° si, ≈æe mƒõ TOHLE dojme? To m√°me KOP√ÅƒåE s lep≈°√≠mi kontakty!
 		Info_ClearChoices	(DIA_Gomez_Hello);
 	};
 };
@@ -219,7 +219,7 @@ instance DIA_Gomez_Dabei (C_INFO)
 	condition	= DIA_Gomez_Dabei_Condition;
 	information	= DIA_Gomez_Dabei_Info;
 	permanent	= 0;
-	description	= "Znamen· to, ûe jsem p¯ijat?";
+	description	= "Znamen√° to, ≈æe jsem p≈ôijat?";
 };                       
 
 FUNC int DIA_Gomez_Dabei_Condition()
@@ -233,24 +233,24 @@ FUNC int DIA_Gomez_Dabei_Condition()
 
 FUNC VOID DIA_Gomez_Dabei_Info()
 {
-	AI_Output (other, self,"DIA_Gomez_Dabei_15_00"); //Znamen· to, ûe jsem p¯ijat?
-	AI_Output (self, other,"DIA_Gomez_Dabei_11_01"); //P¯esnÏ tak. Jsi jednÌm z n·s, hochu.
-	AI_Output (self, other,"DIA_Gomez_Dabei_11_02"); //Raven tÏ do vöeho zasvÏtÌ.
+	AI_Output (other, self,"DIA_Gomez_Dabei_15_00"); //Znamen√° to, ≈æe jsem p≈ôijat?
+	AI_Output (self, other,"DIA_Gomez_Dabei_11_01"); //P≈ôesnƒõ tak. Jsi jedn√≠m z n√°s, hochu.
+	AI_Output (self, other,"DIA_Gomez_Dabei_11_02"); //Raven tƒõ do v≈°eho zasvƒõt√≠.
 	
 	Npc_SetTrueGuild (hero,GIL_STT );
 	hero.guild = GIL_STT;
 	B_GiveXP (XP_BecomeShadow);
-	B_LogEntry			(CH1_JoinOC,"Ode dneöka pracuji pro Gomeze a Star˝ t·bor. Raven mi ¯ekne vöe pot¯ebnÈ!");
+	B_LogEntry			(CH1_JoinOC,"Ode dne≈°ka pracuji pro Gomeze a Star√Ω t√°bor. Raven mi ≈ôekne v≈°e pot≈ôebn√©!");
 	Log_SetTopicStatus	(CH1_JoinOC,	LOG_SUCCESS);
 
 	// Canceln der anderen Aufnahmen
 	Log_CreateTopic		(CH1_JoinNC,	LOG_MISSION);
 	Log_SetTopicStatus	(CH1_JoinNC,	LOG_FAILED);
-	B_LogEntry			(CH1_JoinNC,"Od doby, co pat¯Ìm ke Gomezov˝m lidem, nem˘ûu b˝t p¯ijat do Laresovy tlupy.");
+	B_LogEntry			(CH1_JoinNC,"Od doby, co pat≈ô√≠m ke Gomezov√Ωm lidem, nem≈Ø≈æu b√Ωt p≈ôijat do Laresovy tlupy.");
 	
 	Log_CreateTopic		(CH1_JoinPsi,	LOG_MISSION);
 	Log_SetTopicStatus	(CH1_JoinPsi,	LOG_FAILED);
-	B_LogEntry			(CH1_JoinPsi,"NynÌ je Star˝ t·bor m˝m nov˝m domovem. Bratrstvo Sp·Ëe si bude muset poradit beze mÏ.");
+	B_LogEntry			(CH1_JoinPsi,"Nyn√≠ je Star√Ω t√°bor m√Ωm nov√Ωm domovem. Bratrstvo Sp√°ƒçe si bude muset poradit beze mƒõ.");
 	
 	AI_StopProcessInfos	(self);
 };
@@ -266,7 +266,7 @@ instance DIA_Gomez_NurSo (C_INFO)
 	condition	= DIA_Gomez_NurSo_Condition;
 	information	= DIA_Gomez_NurSo_Info;
 	permanent	= 1;
-	description	= "Chci ti podat hl·öenÌ.";
+	description	= "Chci ti podat hl√°≈°en√≠.";
 };                       
 
 FUNC int DIA_Gomez_NurSo_Condition()
@@ -279,8 +279,8 @@ FUNC int DIA_Gomez_NurSo_Condition()
 
 FUNC VOID DIA_Gomez_NurSo_Info()
 {
-	AI_Output (other, self,"DIA_Gomez_NurSo_15_00"); //Chci ti podat hl·öenÌ.
-	AI_Output (self, other,"DIA_Gomez_NurSo_11_00"); //Tak jdi a navötiv Ravena. A nikdy uû na mÏ nemluv, dokud tÏ nevybÌdnu!
+	AI_Output (other, self,"DIA_Gomez_NurSo_15_00"); //Chci ti podat hl√°≈°en√≠.
+	AI_Output (self, other,"DIA_Gomez_NurSo_11_00"); //Tak jdi a nav≈°tiv Ravena. A nikdy u≈æ na mƒõ nemluv, dokud tƒõ nevyb√≠dnu!
 };
 
 
@@ -314,10 +314,10 @@ FUNC int  DIA_EBR_100_Gomez_Wait4SC_Condition()
 FUNC void  DIA_EBR_100_Gomez_Wait4SC_Info()
 {
 	AI_Output (self, other,"DIA_EBR_100_Gomez_Wait4SC_11_01"); //Jak ses sem dostal?
-	AI_Output (self, other,"DIA_EBR_100_Gomez_Wait4SC_11_02"); //St˘j! Nejsi ty ten, co bojoval s naöimi muûi v SvobodnÈm dole?
-	AI_Output (other, self,"DIA_EBR_100_Gomez_Wait4SC_15_03"); //TvÌ muûi nemÏli pr·vo je napadnout! Jen jsem ztrestal jejich megalomansk˝ ˙tok!
-	AI_Output (self, other,"DIA_EBR_100_Gomez_Wait4SC_11_04"); //M·ö odvahu, takhle se mnou - GOMEZEM - mluvit. Ale bylo od tebe dost hloupÈ, takhle sem vpadnout.
-	AI_Output (self, other,"DIA_EBR_100_Gomez_Wait4SC_11_05"); //OsobnÏ dohlÈdnu, abys mi uû nikdy nezk¯Ìûil cestu.
+	AI_Output (self, other,"DIA_EBR_100_Gomez_Wait4SC_11_02"); //St≈Øj! Nejsi ty ten, co bojoval s na≈°imi mu≈æi v Svobodn√©m dole?
+	AI_Output (other, self,"DIA_EBR_100_Gomez_Wait4SC_15_03"); //Tv√≠ mu≈æi nemƒõli pr√°vo je napadnout! Jen jsem ztrestal jejich megalomansk√Ω √∫tok!
+	AI_Output (self, other,"DIA_EBR_100_Gomez_Wait4SC_11_04"); //M√°≈° odvahu, takhle se mnou - GOMEZEM - mluvit. Ale bylo od tebe dost hloup√©, takhle sem vpadnout.
+	AI_Output (self, other,"DIA_EBR_100_Gomez_Wait4SC_11_05"); //Osobnƒõ dohl√©dnu, abys mi u≈æ nikdy nezk≈ô√≠≈æil cestu.
 	
 	AI_StopProcessInfos	( self );
 

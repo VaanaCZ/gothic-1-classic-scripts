@@ -9,7 +9,7 @@
 
 func void B_Story_SentToNC()
 {
-	//-------- Cor-Angar zurück zum Übungsplatz schicken --------
+	//-------- Cor-Angar zurÃ¼ck zum Ãœbungsplatz schicken --------
 	var C_NPC	angar;
 	angar = Hlp_GetNpc	(Gur_1202_CorAngar);
 	Npc_ExchangeRoutine	(angar, "start");
@@ -26,11 +26,11 @@ func void B_Story_SentToNC()
 	Npc_ExchangeRoutine	(gorn, "NCWAIT");
 	AI_ContinueRoutine	(gorn);
 
-	//-------- Tagebucheinträge --------
+	//-------- TagebucheintrÃ¤ge --------
 	Log_CreateTopic		(CH3_EscapePlanNC,	LOG_MISSION);
 	Log_SetTopicStatus	(CH3_EscapePlanNC,	LOG_RUNNING);
-	B_LogEntry			(CH3_EscapePlanNC,"Y´Berion, duchovní vùdce Bratrstva, je mrtev! Snad jeho duše odpoèívá v pokoji. Podle jeho posledních slov vkládá veškeré nadìje na vysvobození do rukou mágù Kruhu vody.");
-	B_LogEntry			(CH3_EscapePlanNC,"Udìlal jsem pevné rozhodnutí. Pùjdu do Nového tábora, abych mágùm Vody pomohl provést plán úniku. Cor Angar mi pøedal klíèe od truhlice, která je v Cor Kalomovì alchymistické dílnì. Mìl by v ní bıt ohniskovı kámen a rukopis, které jsem získal pøi mém posledním úkolu. Cor Angar je pøesvìdèen, e mágové z Nového tábora budou tyto dva artefakty potøebovat pro dokonèení svého plánu.");
+	B_LogEntry			(CH3_EscapePlanNC,"YÂ´Berion, duchovnÃ­ vÅ¯dce Bratrstva, je mrtev! Snad jeho duÅ¡e odpoÄÃ­vÃ¡ v pokoji. Podle jeho poslednÃ­ch slov vklÃ¡dÃ¡ veÅ¡kerÃ© nadÄ›je na vysvobozenÃ­ do rukou mÃ¡gÅ¯ Kruhu vody.");
+	B_LogEntry			(CH3_EscapePlanNC,"UdÄ›lal jsem pevnÃ© rozhodnutÃ­. PÅ¯jdu do NovÃ©ho tÃ¡bora, abych mÃ¡gÅ¯m Vody pomohl provÃ©st plÃ¡n Ãºniku. Cor Angar mi pÅ™edal klÃ­Äe od truhlice, kterÃ¡ je v Cor KalomovÄ› alchymistickÃ© dÃ­lnÄ›. MÄ›l by v nÃ­ bÃ½t ohniskovÃ½ kÃ¡men a rukopis, kterÃ© jsem zÃ­skal pÅ™i mÃ©m poslednÃ­m Ãºkolu. Cor Angar je pÅ™esvÄ›dÄen, Å¾e mÃ¡govÃ© z NovÃ©ho tÃ¡bora budou tyto dva artefakty potÅ™ebovat pro dokonÄenÃ­ svÃ©ho plÃ¡nu.");
 
 	//-------- Missionitem --------
 	CreateInvItem		(self,			ItArRuneTeleport5);

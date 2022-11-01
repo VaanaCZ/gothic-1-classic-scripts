@@ -37,7 +37,7 @@ INSTANCE Info_Mine_Grd_13_Mine (C_INFO) // E1
 	condition	= Info_Mine_Grd_13_Mine_Condition;
 	information	= Info_Mine_Grd_13_Mine_Info;
 	permanent	= 1;
-	description = "Co se v tom dole dÏje?";
+	description = "Co se v tom dole dƒõje?";
 };                       
 
 FUNC INT Info_Mine_Grd_13_Mine_Condition()
@@ -50,8 +50,8 @@ FUNC INT Info_Mine_Grd_13_Mine_Condition()
 
 FUNC VOID Info_Mine_Grd_13_Mine_Info()
 {
-	AI_Output(other,self,"Info_Mine_Grd_13_Mine_15_00"); //Co se v tom dole dÏje?
-	AI_Output(self,other,"Info_Mine_Grd_13_Mine_13_01"); //Tenhle d˘l je srdce StarÈho t·bora. é·dn˝ d˘l, û·dn· ruda. é·dn· ruda, û·dnÈ zboûÌ. Ch·peö?
+	AI_Output(other,self,"Info_Mine_Grd_13_Mine_15_00"); //Co se v tom dole dƒõje?
+	AI_Output(self,other,"Info_Mine_Grd_13_Mine_13_01"); //Tenhle d≈Øl je srdce Star√©ho t√°bora. ≈Ω√°dn√Ω d≈Øl, ≈æ√°dn√° ruda. ≈Ω√°dn√° ruda, ≈æ√°dn√© zbo≈æ√≠. Ch√°pe≈°?
 };
 
 // *************************************************************************
@@ -78,7 +78,7 @@ FUNC INT Info_Mine_Grd_13_WichtigePersonen_Condition()
 FUNC VOID Info_Mine_Grd_13_WichtigePersonen_Info()
 {
 	AI_Output(other,self,"Info_Mine_Grd_13_WichtigePersonen_15_00"); //Kdo to tady vede?
-	AI_Output(self,other,"Info_Mine_Grd_13_WichtigePersonen_13_01"); //Asghan je n·ö öÈf. Ale ty ho nech na pokoji. Ian je z tÏch, co si to s takov˝mi, jako jsi ty, vy¯ÌdÌ.
+	AI_Output(self,other,"Info_Mine_Grd_13_WichtigePersonen_13_01"); //Asghan je n√°≈° ≈°√©f. Ale ty ho nech na pokoji. Ian je z tƒõch, co si to s takov√Ωmi, jako jsi ty, vy≈ô√≠d√≠.
 };
 
 // *************************************************************************
@@ -91,7 +91,7 @@ INSTANCE Info_Mine_Grd_13_DasLager(C_INFO)
 	condition	= Info_Mine_Grd_13_DasLager_Condition;
 	information	= Info_Mine_Grd_13_DasLager_Info;
 	permanent	= 1;
-	description = "ÿekni mi nÏco o Ëervech.";
+	description = "≈òekni mi nƒõco o ƒçervech.";
 };                       
 
 FUNC INT Info_Mine_Grd_13_DasLager_Condition()
@@ -104,8 +104,8 @@ FUNC INT Info_Mine_Grd_13_DasLager_Condition()
 
 FUNC VOID Info_Mine_Grd_13_DasLager_Info()
 {
-	AI_Output(other,self,"Info_Mine_Grd_13_DasLager_15_00"); //ÿekni mi nÏco o Ëervech.
-	AI_Output(self,other,"Info_Mine_Grd_13_DasLager_13_01"); //Bratrstvo zaplatilo StarÈmu t·boru drogou z baûin, a tak je nechajÌ v dolech lovit Ëervy.
+	AI_Output(other,self,"Info_Mine_Grd_13_DasLager_15_00"); //≈òekni mi nƒõco o ƒçervech.
+	AI_Output(self,other,"Info_Mine_Grd_13_DasLager_13_01"); //Bratrstvo zaplatilo Star√©mu t√°boru drogou z ba≈æin, a tak je nechaj√≠ v dolech lovit ƒçervy.
 	
 };
 
@@ -133,7 +133,7 @@ FUNC INT Info_Mine_Grd_13_DieLage_Condition()
 FUNC VOID Info_Mine_Grd_13_DieLage_Info()
 {
 	AI_Output(other,self,"Info_Mine_Grd_13_DieLage_15_00"); //Jak to jde?
-	AI_Output(self,other,"Info_Mine_Grd_13_DieLage_13_01"); //Uû jsem se stoletÌ nerval!
+	AI_Output(self,other,"Info_Mine_Grd_13_DieLage_13_01"); //U≈æ jsem se stolet√≠ nerval!
 	
 };
 	

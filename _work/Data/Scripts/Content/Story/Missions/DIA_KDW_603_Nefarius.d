@@ -44,7 +44,7 @@ FUNC int  Info_Nefarius_Hallo_Condition()
 FUNC VOID  Info_Nefarius_Hallo_Info()
 {
 	AI_Output (other, self,"Info_Nefarius_Hallo_15_00"); //Kdo jsi?
-	AI_Output (self, other,"Info_Nefarius_Hallo_04_01"); //Jsem Nefarius. Mág Kruhu vody.
+	AI_Output (self, other,"Info_Nefarius_Hallo_04_01"); //Jsem Nefarius. MÃ¡g Kruhu vody.
 };
 
 // **************************** 
@@ -69,7 +69,7 @@ FUNC int  Info_Nefarius_WoSaturas_Condition()
 FUNC VOID  Info_Nefarius_WoSaturas_Info()
 {
 	AI_Output (other, self,"Info_Nefarius_WoSaturas_15_00"); //Kde najdu Saturase?
-	AI_Output (self, other,"Info_Nefarius_WoSaturas_04_01"); //Projdi tou velkou kulatou branou. Tam ho najdeš.
+	AI_Output (self, other,"Info_Nefarius_WoSaturas_04_01"); //Projdi tou velkou kulatou branou. Tam ho najdeÅ¡.
 };
 
 // **************************** 
@@ -83,7 +83,7 @@ instance  Info_Nefarius_WannaMage (C_INFO)
 	condition	=	Info_Nefarius_WannaMage_Condition;
 	information	=	Info_Nefarius_WannaMage_Info;
 	permanent	=	0;
-	description =	"Chtìl bych se stát mágem Kruhu vody.";
+	description =	"ChtÄ›l bych se stÃ¡t mÃ¡gem Kruhu vody.";
 };                       
 
 FUNC int  Info_Nefarius_WannaMage_Condition()
@@ -96,12 +96,12 @@ FUNC int  Info_Nefarius_WannaMage_Condition()
 
 FUNC VOID  Info_Nefarius_WannaMage_Info()
 {
-	AI_Output (other, self,"Info_Nefarius_WannaMage_15_00"); //Chtìl bych se stát mágem Kruhu vody.
-	AI_Output (self, other,"Info_Nefarius_WannaMage_04_01"); //(smích) Ne tak rychle, chlapèe!
-	AI_Output (self, other,"Info_Nefarius_WannaMage_04_02"); //Ne mezi sebe vezmeme nìjakého mladíka, musí vykonat nìco velkého.
-	AI_Output (self, other,"Info_Nefarius_WannaMage_04_03"); //A nìjakı èas nám musí slouit.
-	AI_Output (self, other,"Info_Nefarius_WannaMage_04_04"); //Pokud to myslíš vánì, mìl by ses pøidat k oldákùm. U nich nám mùeš slouit.
-	AI_Output (self, other,"Info_Nefarius_WannaMage_04_05"); //A jednoho dne moná dostaneš monost vykonat nìco velkého.
+	AI_Output (other, self,"Info_Nefarius_WannaMage_15_00"); //ChtÄ›l bych se stÃ¡t mÃ¡gem Kruhu vody.
+	AI_Output (self, other,"Info_Nefarius_WannaMage_04_01"); //(smÃ­ch) Ne tak rychle, chlapÄe!
+	AI_Output (self, other,"Info_Nefarius_WannaMage_04_02"); //NeÅ¾ mezi sebe vezmeme nÄ›jakÃ©ho mladÃ­ka, musÃ­ vykonat nÄ›co velkÃ©ho.
+	AI_Output (self, other,"Info_Nefarius_WannaMage_04_03"); //A nÄ›jakÃ½ Äas nÃ¡m musÃ­ slouÅ¾it.
+	AI_Output (self, other,"Info_Nefarius_WannaMage_04_04"); //Pokud to myslÃ­Å¡ vÃ¡Å¾nÄ›, mÄ›l by ses pÅ™idat k Å¾oldÃ¡kÅ¯m. U nich nÃ¡m mÅ¯Å¾eÅ¡ slouÅ¾it.
+	AI_Output (self, other,"Info_Nefarius_WannaMage_04_05"); //A jednoho dne moÅ¾nÃ¡ dostaneÅ¡ moÅ¾nost vykonat nÄ›co velkÃ©ho.
 };
 
 // **************************** 
@@ -115,7 +115,7 @@ instance  Info_Nefarius_NowReady (C_INFO)
 	condition	=	Info_Nefarius_NowReady_Condition;
 	information	=	Info_Nefarius_NowReady_Info;
 	permanent	=	1;
-	description =	"Jsem pøipraven na vstup do Kruhu vody?";
+	description =	"Jsem pÅ™ipraven na vstup do Kruhu vody?";
 };                       
 
 FUNC int  Info_Nefarius_NowReady_Condition()
@@ -128,16 +128,16 @@ FUNC int  Info_Nefarius_NowReady_Condition()
 
 FUNC VOID  Info_Nefarius_NowReady_Info()
 {
-	AI_Output (other, self,"Info_Nefarius_NowReady_15_00"); //Jsem pøipraven na vstup do Kruhu vody?
+	AI_Output (other, self,"Info_Nefarius_NowReady_15_00"); //Jsem pÅ™ipraven na vstup do Kruhu vody?
 	
 	if (Npc_GetTrueGuild (hero) != GIL_SLD) 
 	{
-		AI_Output (self, other,"Info_Nefarius_NowReady_04_01"); //Staò se jedním z našich oldákù, pak se uvidí...
+		AI_Output (self, other,"Info_Nefarius_NowReady_04_01"); //StaÅˆ se jednÃ­m z naÅ¡ich Å¾oldÃ¡kÅ¯, pak se uvidÃ­...
 	}
 	else
 	{
-		AI_Output (self, other,"Info_Nefarius_NowReady_04_02"); //Vím, stal ses jedním z našich oldákù. Velmi dobøe, velmi dobøe...
-		AI_Output (self, other,"Info_Nefarius_NowReady_04_03"); //Èas dokoná zbytek...
+		AI_Output (self, other,"Info_Nefarius_NowReady_04_02"); //VÃ­m, stal ses jednÃ­m z naÅ¡ich Å¾oldÃ¡kÅ¯. Velmi dobÅ™e, velmi dobÅ™e...
+		AI_Output (self, other,"Info_Nefarius_NowReady_04_03"); //ÄŒas dokonÃ¡ zbytek...
 	};
 };
 
@@ -172,15 +172,15 @@ FUNC int  Info_Nefarius_OCNews_Condition()
 
 FUNC VOID  Info_Nefarius_OCNews_Info()
 {
-	AI_Output (self, other,"Info_Nefarius_OCNews_04_00"); //Jsou nìjaké noviny u našich pøátel ze Starého tábora?
-	AI_Output (other, self,"Info_Nefarius_OCNews_15_01"); //Gomez zabil všechny mágy Ohnì!
-	AI_Output (self, other,"Info_Nefarius_OCNews_04_02"); //Ne! Ten grázl! Varoval jsem Corrista - nikdy se mu nedalo vìøit! Musíš o tom øíci Saturasovi!
+	AI_Output (self, other,"Info_Nefarius_OCNews_04_00"); //Jsou nÄ›jakÃ© noviny u naÅ¡ich pÅ™Ã¡tel ze StarÃ©ho tÃ¡bora?
+	AI_Output (other, self,"Info_Nefarius_OCNews_15_01"); //Gomez zabil vÅ¡echny mÃ¡gy OhnÄ›!
+	AI_Output (self, other,"Info_Nefarius_OCNews_04_02"); //Ne! Ten grÃ¡zl! Varoval jsem Corrista - nikdy se mu nedalo vÄ›Å™it! MusÃ­Å¡ o tom Å™Ã­ci Saturasovi!
 	if (Npc_GetTrueGuild(hero)==GIL_SLD)
 	{
-		AI_Output (self, other,"Info_Nefarius_OCNews_04_03"); //Poèkej!
-		AI_Output (self, other,"Info_Nefarius_OCNews_04_04"); //Èelil jsi za nás velkému nebezpeèí.
-		AI_Output (self, other,"Info_Nefarius_OCNews_04_05"); //Myslím, e jsi u hoden obléknout roucho mága Vody.
-		AI_Output (self, other,"Info_Nefarius_OCNews_04_06"); //Teï ale promluv se Saturasem. Pospìš si!
+		AI_Output (self, other,"Info_Nefarius_OCNews_04_03"); //PoÄkej!
+		AI_Output (self, other,"Info_Nefarius_OCNews_04_04"); //ÄŒelil jsi za nÃ¡s velkÃ©mu nebezpeÄÃ­.
+		AI_Output (self, other,"Info_Nefarius_OCNews_04_05"); //MyslÃ­m, Å¾e jsi uÅ¾ hoden oblÃ©knout roucho mÃ¡ga Vody.
+		AI_Output (self, other,"Info_Nefarius_OCNews_04_06"); //TeÄ ale promluv se Saturasem. PospÄ›Å¡ si!
 	};
 	AI_StopProcessInfos	(self);
 };

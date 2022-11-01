@@ -65,10 +65,10 @@ FUNC int  Info_Xardas_DISTURB_Condition()
 FUNC void  Info_Xardas_DISTURB_Info()
 {
 	B_WhirlAround	(self, hero);
-	AI_Output 		(self, hero,"Info_Xardas_DISTURB_14_01"); //KDO SI DOVOLUJE MÌ RUŠIT PØI STUDIÍCH?
+	AI_Output 		(self, hero,"Info_Xardas_DISTURB_14_01"); //KDO SI DOVOLUJE MÄš RUÅ IT PÅ˜I STUDIÃCH?
 	AI_Output 		(hero, self,"Info_Xardas_DISTURB_15_02"); //Jmenuju se...
-	AI_Output 		(self, hero,"Info_Xardas_DISTURB_14_03"); //Nezajímá mì, jak se jmenuješ. Je to nedùleité.
-	AI_Output 		(self, hero,"Info_Xardas_DISTURB_14_04"); //Dùleité je jen to, e jsi za ta léta první èlovìk, kterı rozøešil hádanku mıch Golemù.
+	AI_Output 		(self, hero,"Info_Xardas_DISTURB_14_03"); //NezajÃ­mÃ¡ mÄ›, jak se jmenujeÅ¡. Je to nedÅ¯leÅ¾itÃ©.
+	AI_Output 		(self, hero,"Info_Xardas_DISTURB_14_04"); //DÅ¯leÅ¾itÃ© je jen to, Å¾e jsi za ta lÃ©ta prvnÃ­ ÄlovÄ›k, kterÃ½ rozÅ™eÅ¡il hÃ¡danku mÃ½ch GolemÅ¯.
 }; 
 
 //---------------------------------------------------------------------
@@ -81,7 +81,7 @@ instance  Info_Xardas_OTHERS (C_INFO)
 	information	= Info_Xardas_OTHERS_Info;
 	important	= 0;
 	permanent	= 0;
-	description = "Byli tu ještì jiní návštìvníci?";
+	description = "Byli tu jeÅ¡tÄ› jinÃ­ nÃ¡vÅ¡tÄ›vnÃ­ci?";
 };
 
 FUNC int  Info_Xardas_OTHERS_Condition()
@@ -94,9 +94,9 @@ FUNC int  Info_Xardas_OTHERS_Condition()
 };
 FUNC void  Info_Xardas_OTHERS_Info()
 {
-	AI_Output 		(hero, self,"Info_Xardas_OTHERS_15_01"); //Byli tu ještì jiní návštìvníci?
-	AI_Output 		(self, hero,"Info_Xardas_OTHERS_14_02"); //Ne moc, ale jakmile mì zaèali obtìovat, nechal jsem je konfrontovat s jednou z mıch nadpøirozenıch pøíšer.
-	AI_Output 		(hero, self,"Info_Xardas_OTHERS_15_03"); //Ty jsi nerad vyrušován, viï?
+	AI_Output 		(hero, self,"Info_Xardas_OTHERS_15_01"); //Byli tu jeÅ¡tÄ› jinÃ­ nÃ¡vÅ¡tÄ›vnÃ­ci?
+	AI_Output 		(self, hero,"Info_Xardas_OTHERS_14_02"); //Ne moc, ale jakmile mÄ› zaÄali obtÄ›Å¾ovat, nechal jsem je konfrontovat s jednou z mÃ½ch nadpÅ™irozenÃ½ch pÅ™Ã­Å¡er.
+	AI_Output 		(hero, self,"Info_Xardas_OTHERS_15_03"); //Ty jsi nerad vyruÅ¡ovÃ¡n, viÄ?
 }; 
 
 //---------------------------------------------------------------------
@@ -109,7 +109,7 @@ instance  Info_Xardas_SATURAS (C_INFO)
 	information	= Info_Xardas_SATURAS_Info;
 	important	= 0;
 	permanent	= 0;
-	description = "Poslal mì Saturas. Potøebujeme tvoji pomoc!";
+	description = "Poslal mÄ› Saturas. PotÅ™ebujeme tvoji pomoc!";
 };
 
 FUNC int  Info_Xardas_SATURAS_Condition()
@@ -122,10 +122,10 @@ FUNC int  Info_Xardas_SATURAS_Condition()
 };
 FUNC void  Info_Xardas_SATURAS_Info()
 {
-	AI_Output 		(hero, self,"Info_Xardas_SATURAS_15_01"); //Poslal mì Saturas. Potøebujeme tvojí pomoc!
-	AI_Output 		(hero, self,"Info_Xardas_SATURAS_15_02"); //Mágové Vody se chystají pouít svojí velkou rudnou haldu...
-	AI_Output 		(self, hero,"Info_Xardas_SATURAS_14_03"); //Rudná halda NENÍ správné øešení!
-	AI_Output 		(hero, self,"Info_Xardas_SATURAS_15_04"); //Není?
+	AI_Output 		(hero, self,"Info_Xardas_SATURAS_15_01"); //Poslal mÄ› Saturas. PotÅ™ebujeme tvojÃ­ pomoc!
+	AI_Output 		(hero, self,"Info_Xardas_SATURAS_15_02"); //MÃ¡govÃ© Vody se chystajÃ­ pouÅ¾Ã­t svojÃ­ velkou rudnou haldu...
+	AI_Output 		(self, hero,"Info_Xardas_SATURAS_14_03"); //RudnÃ¡ halda NENÃ sprÃ¡vnÃ© Å™eÅ¡enÃ­!
+	AI_Output 		(hero, self,"Info_Xardas_SATURAS_15_04"); //NenÃ­?
 	AI_Output 		(self, hero,"Info_Xardas_SATURAS_14_05"); //NE!
 }; 
 
@@ -139,7 +139,7 @@ instance  Info_Xardas_KDW (C_INFO)
 	information	= Info_Xardas_KDW_Info;
 	important	= 0;
 	permanent	= 0;
-	description = "Všichni mágové Ohnì jsou mrtví!";
+	description = "VÅ¡ichni mÃ¡govÃ© OhnÄ› jsou mrtvÃ­!";
 };
 
 FUNC int  Info_Xardas_KDW_Condition()
@@ -152,10 +152,10 @@ FUNC int  Info_Xardas_KDW_Condition()
 
 FUNC void  Info_Xardas_KDW_Info()
 {
-	AI_Output 		(hero, self,"Info_Xardas_KDW_15_01"); //Všichni mágové Ohnì jsou mrtví!
-	AI_Output 		(hero, self,"Info_Xardas_KDW_15_02"); //Gomez je povradil.
-	AI_Output 		(self, hero,"Info_Xardas_KDW_14_03"); //To mì nepøekvapuje. Tìm bláznivım barbarùm na hradì, hlavnì Gomezovi, nikdy není co vìøit.
-	AI_Output 		(self, hero,"Info_Xardas_KDW_14_04"); //Corristo a další mágové si sami zvolili šibenici, kdy pomáhali Gomezovi pøevzít moc.
+	AI_Output 		(hero, self,"Info_Xardas_KDW_15_01"); //VÅ¡ichni mÃ¡govÃ© OhnÄ› jsou mrtvÃ­!
+	AI_Output 		(hero, self,"Info_Xardas_KDW_15_02"); //Gomez je povraÅ¾dil.
+	AI_Output 		(self, hero,"Info_Xardas_KDW_14_03"); //To mÄ› nepÅ™ekvapuje. TÄ›m blÃ¡znivÃ½m barbarÅ¯m na hradÄ›, hlavnÄ› Gomezovi, nikdy nenÃ­ co vÄ›Å™it.
+	AI_Output 		(self, hero,"Info_Xardas_KDW_14_04"); //Corristo a dalÅ¡Ã­ mÃ¡govÃ© si sami zvolili Å¡ibenici, kdyÅ¾ pomÃ¡hali Gomezovi pÅ™evzÃ­t moc.
 }; 
 
 //---------------------------------------------------------------------
@@ -168,7 +168,7 @@ instance  Info_Xardas_SLEEPER (C_INFO)
 	information	= Info_Xardas_SLEEPER_Info;
 	important	= 0;
 	permanent	= 0;
-	description = "O tom takzvaném 'Spáèovi' se øíká, e je to zlı arcidémon.";
+	description = "O tom takzvanÃ©m 'SpÃ¡Äovi' se Å™Ã­kÃ¡, Å¾e je to zlÃ½ arcidÃ©mon.";
 };
 
 FUNC int  Info_Xardas_SLEEPER_Condition()
@@ -181,10 +181,10 @@ FUNC int  Info_Xardas_SLEEPER_Condition()
 };
 FUNC void  Info_Xardas_SLEEPER_Info()
 {
-	AI_Output 		(hero, self,"Info_Xardas_SLEEPER_15_01"); //O tom takzvaném 'Spáèovi' se øíká, e je to zlı arcidémon.
-	AI_Output 		(hero, self,"Info_Xardas_SLEEPER_15_02"); //Toho si vytvoøilo Bratrstvo z bain.
-	AI_Output 		(hero, self,"Info_Xardas_SLEEPER_15_03"); //Teï mágové Vody vìøí tomu, e jsou všichni v kolonii ve velkém nebezpeèí.
-	AI_Output 		(self, hero,"Info_Xardas_SLEEPER_14_04"); //Je to vìtší nebezpeèí, ne si kdokoliv uvnitø Bariéry dokáe pøedstavit. 
+	AI_Output 		(hero, self,"Info_Xardas_SLEEPER_15_01"); //O tom takzvanÃ©m 'SpÃ¡Äovi' se Å™Ã­kÃ¡, Å¾e je to zlÃ½ arcidÃ©mon.
+	AI_Output 		(hero, self,"Info_Xardas_SLEEPER_15_02"); //Toho si vytvoÅ™ilo Bratrstvo z baÅ¾in.
+	AI_Output 		(hero, self,"Info_Xardas_SLEEPER_15_03"); //TeÄ mÃ¡govÃ© Vody vÄ›Å™Ã­ tomu, Å¾e jsou vÅ¡ichni v kolonii ve velkÃ©m nebezpeÄÃ­.
+	AI_Output 		(self, hero,"Info_Xardas_SLEEPER_14_04"); //Je to vÄ›tÅ¡Ã­ nebezpeÄÃ­, neÅ¾ si kdokoliv uvnitÅ™ BariÃ©ry dokÃ¡Å¾e pÅ™edstavit. 
 }; 
 
 //---------------------------------------------------------------------
@@ -197,7 +197,7 @@ instance  Info_Xardas_DANGER (C_INFO)
 	information	= Info_Xardas_DANGER_Info;
 	important	= 0;
 	permanent	= 0;
-	description = "Pokud exploze rudné haldy toto velké nebezpeèí neodvrátí...";
+	description = "Pokud exploze rudnÃ© haldy toto velkÃ© nebezpeÄÃ­ neodvrÃ¡tÃ­...";
 };
 
 FUNC int  Info_Xardas_DANGER_Condition()
@@ -210,11 +210,11 @@ FUNC int  Info_Xardas_DANGER_Condition()
 };
 FUNC void  Info_Xardas_DANGER_Info()
 {
-	AI_Output 		(hero, self,"Info_Xardas_DANGER_15_01"); //Pokud exploze rudné haldy toto velké nebezpeèí neodvrátí...
-	AI_Output 		(self, hero,"Info_Xardas_DANGER_14_02"); //...Zapomeò na rudnou haldu! Její síla Bariéru neotevøe.
-	AI_Output 		(self, hero,"Info_Xardas_DANGER_14_03"); //Kdyby Corristo a Saturas neplıtvali v minulıch letech èasem na bláznivé a zbyteèné záleitosti, pak by všichni vìdìli, co já vím.
+	AI_Output 		(hero, self,"Info_Xardas_DANGER_15_01"); //Pokud exploze rudnÃ© haldy toto velkÃ© nebezpeÄÃ­ neodvrÃ¡tÃ­...
+	AI_Output 		(self, hero,"Info_Xardas_DANGER_14_02"); //...ZapomeÅˆ na rudnou haldu! JejÃ­ sÃ­la BariÃ©ru neotevÅ™e.
+	AI_Output 		(self, hero,"Info_Xardas_DANGER_14_03"); //Kdyby Corristo a Saturas neplÃ½tvali v minulÃ½ch letech Äasem na blÃ¡znivÃ© a zbyteÄnÃ© zÃ¡leÅ¾itosti, pak by vÅ¡ichni vÄ›dÄ›li, co jÃ¡ vÃ­m.
 	AI_Output 		(hero, self,"Info_Xardas_DANGER_15_04"); //A co?
-	AI_Output 		(self, hero,"Info_Xardas_DANGER_14_05"); //ádnı z dvanácti mágù se od té doby nepøestal ptát, proè se jim vytvoøení Bariéry vymklo z rukou a proè nabyla tak obrovskıch rozmìrù.
+	AI_Output 		(self, hero,"Info_Xardas_DANGER_14_05"); //Å½Ã¡dnÃ½ z dvanÃ¡cti mÃ¡gÅ¯ se od tÃ© doby nepÅ™estal ptÃ¡t, proÄ se jim vytvoÅ™enÃ­ BariÃ©ry vymklo z rukou a proÄ nabyla tak obrovskÃ½ch rozmÄ›rÅ¯.
 };
 
 //---------------------------------------------------------------------
@@ -227,7 +227,7 @@ instance  Info_Xardas_BARRIER (C_INFO)
 	information	= Info_Xardas_BARRIER_Info;
 	important	= 0;
 	permanent	= 0;
-	description = "Pøišel jsi na to, proè se to stalo?";
+	description = "PÅ™iÅ¡el jsi na to, proÄ se to stalo?";
 };
 
 FUNC int  Info_Xardas_BARRIER_Condition()
@@ -239,13 +239,13 @@ FUNC int  Info_Xardas_BARRIER_Condition()
 };
 FUNC void  Info_Xardas_BARRIER_Info()
 {
-	AI_Output 		(hero, self,"Info_Xardas_BARRIER_15_01"); //Pøišel jsi na to, proè se to stalo? 
-	AI_Output 		(self, hero,"Info_Xardas_BARRIER_14_02"); //Dobrá, jedno je jisté: odpovìï leí hluboko pod mìstem skøetù.
-	AI_Output 		(hero, self,"Info_Xardas_BARRIER_15_03"); //Pod mìstem skøetù?
-	AI_Output 		(self, hero,"Info_Xardas_BARRIER_14_04"); //Skøeti nejsou zvíøata, jak si mnozí myslí. Jejich kultura je tak stará jako lidská.
-	AI_Output 		(self, hero,"Info_Xardas_BARRIER_14_05"); //Pøed nìkolika stoletími vyvolalo pìt skøetích šamanù velmi starého arcidémona, protoe doufali, e dá jejich klanu sílu, se kterou by porazili své nepøátele.
-	AI_Output 		(hero, self,"Info_Xardas_BARRIER_15_06"); //Ten arcidémon, to byl Spáè?
-	AI_Output 		(self, hero,"Info_Xardas_BARRIER_14_07"); //Skøeti mu tohle jméno dali a mnohem pozdìji. Nemùu ale øíci, proè mu ho dali, ani proè se teï té nadpøirozené bytosti dìsí!
+	AI_Output 		(hero, self,"Info_Xardas_BARRIER_15_01"); //PÅ™iÅ¡el jsi na to, proÄ se to stalo? 
+	AI_Output 		(self, hero,"Info_Xardas_BARRIER_14_02"); //DobrÃ¡, jedno je jistÃ©: odpovÄ›Ä leÅ¾Ã­ hluboko pod mÄ›stem skÅ™etÅ¯.
+	AI_Output 		(hero, self,"Info_Xardas_BARRIER_15_03"); //Pod mÄ›stem skÅ™etÅ¯?
+	AI_Output 		(self, hero,"Info_Xardas_BARRIER_14_04"); //SkÅ™eti nejsou zvÃ­Å™ata, jak si mnozÃ­ myslÃ­. Jejich kultura je tak starÃ¡ jako lidskÃ¡.
+	AI_Output 		(self, hero,"Info_Xardas_BARRIER_14_05"); //PÅ™ed nÄ›kolika stoletÃ­mi vyvolalo pÄ›t skÅ™etÃ­ch Å¡amanÅ¯ velmi starÃ©ho arcidÃ©mona, protoÅ¾e doufali, Å¾e dÃ¡ jejich klanu sÃ­lu, se kterou by porazili svÃ© nepÅ™Ã¡tele.
+	AI_Output 		(hero, self,"Info_Xardas_BARRIER_15_06"); //Ten arcidÃ©mon, to byl SpÃ¡Ä?
+	AI_Output 		(self, hero,"Info_Xardas_BARRIER_14_07"); //SkÅ™eti mu tohle jmÃ©no dali aÅ¾ mnohem pozdÄ›ji. NemÅ¯Å¾u ale Å™Ã­ci, proÄ mu ho dali, ani proÄ se teÄ tÃ© nadpÅ™irozenÃ© bytosti dÄ›sÃ­!
 }; 
 
 //---------------------------------------------------------------------
@@ -258,7 +258,7 @@ instance  Info_Xardas_EVENT (C_INFO)
 	information	= Info_Xardas_EVENT_Info;
 	important	= 0;
 	permanent	= 0;
-	description = "Proè ne?";
+	description = "ProÄ ne?";
 };
 
 FUNC int  Info_Xardas_EVENT_Condition()
@@ -270,10 +270,10 @@ FUNC int  Info_Xardas_EVENT_Condition()
 };
 FUNC void  Info_Xardas_EVENT_Info()
 {
-	AI_Output 		(hero, self,"Info_Xardas_EVENT_15_01"); //Proè ne?
-	AI_Output 		(self, hero,"Info_Xardas_EVENT_14_02"); //Vìøím, e ty bys mohl... NE, jsem si jist, ty budeš muset vykonat jinı úkol!
-	AI_Output 		(hero, self,"Info_Xardas_EVENT_15_03"); //Jakı?
-	AI_Output 		(self, hero,"Info_Xardas_EVENT_14_04"); //Pozornì poslouchej: Skøeti vyhostili z toho mìsta jednoho šamana.
+	AI_Output 		(hero, self,"Info_Xardas_EVENT_15_01"); //ProÄ ne?
+	AI_Output 		(self, hero,"Info_Xardas_EVENT_14_02"); //VÄ›Å™Ã­m, Å¾e ty bys mohl... NE, jsem si jist, ty budeÅ¡ muset vykonat jinÃ½ Ãºkol!
+	AI_Output 		(hero, self,"Info_Xardas_EVENT_15_03"); //JakÃ½?
+	AI_Output 		(self, hero,"Info_Xardas_EVENT_14_04"); //PozornÄ› poslouchej: SkÅ™eti vyhostili z toho mÄ›sta jednoho Å¡amana.
 }; 
 
 //---------------------------------------------------------------------
@@ -286,7 +286,7 @@ instance  Info_Xardas_EVENTWHY (C_INFO)
 	information	= Info_Xardas_EVENTWHY_Info;
 	important	= 0;
 	permanent	= 0;
-	description = "Proè ho vyhostili?";
+	description = "ProÄ ho vyhostili?";
 };
 
 FUNC int  Info_Xardas_EVENTWHY_Condition()
@@ -298,8 +298,8 @@ FUNC int  Info_Xardas_EVENTWHY_Condition()
 };
 FUNC void  Info_Xardas_EVENTWHY_Info()
 {
-	AI_Output 		(hero, self,"Info_Xardas_EVENTWHY_15_01"); //Proè ho vyhostili?
-	AI_Output 		(self, hero,"Info_Xardas_EVENTWHY_14_02"); //Umírající skøetí bojovník pøi vıslechu jedním mım démonem nebyl schopen dlouho odpovídat na otázky.
+	AI_Output 		(hero, self,"Info_Xardas_EVENTWHY_15_01"); //ProÄ ho vyhostili?
+	AI_Output 		(self, hero,"Info_Xardas_EVENTWHY_14_02"); //UmÃ­rajÃ­cÃ­ skÅ™etÃ­ bojovnÃ­k pÅ™i vÃ½slechu jednÃ­m mÃ½m dÃ©monem nebyl schopen dlouho odpovÃ­dat na otÃ¡zky.
 }; 
 
 //---------------------------------------------------------------------
@@ -312,7 +312,7 @@ instance  Info_Xardas_EVENTHOW (C_INFO)
 	information	= Info_Xardas_EVENTHOW_Info;
 	important	= 0;
 	permanent	= 0;
-	description = "Co má ten skøetí šaman spoleèného s mım úkolem?";
+	description = "Co mÃ¡ ten skÅ™etÃ­ Å¡aman spoleÄnÃ©ho s mÃ½m Ãºkolem?";
 };
 
 FUNC int  Info_Xardas_EVENTHOW_Condition()
@@ -324,14 +324,14 @@ FUNC int  Info_Xardas_EVENTHOW_Condition()
 };
 FUNC void  Info_Xardas_EVENTHOW_Info()
 {
-	AI_Output 		(hero, self,"Info_Xardas_EVENTHOW_15_01"); //Co má ten skøetí šaman spoleèného s mım úkolem?
-	AI_Output 		(self, hero,"Info_Xardas_EVENTHOW_14_02"); //Øekne ti zbytek toho pøíbìhu o Spáèovi.
-	AI_Output 		(hero, self,"Info_Xardas_EVENTHOW_15_03"); //Nìjakı skøetí šaman bude asi sotva ochotnı se mnou mluvit!
-	AI_Output 		(self, hero,"Info_Xardas_EVENTHOW_14_04"); //Chceš, abych ti pomohl nebo ne?
+	AI_Output 		(hero, self,"Info_Xardas_EVENTHOW_15_01"); //Co mÃ¡ ten skÅ™etÃ­ Å¡aman spoleÄnÃ©ho s mÃ½m Ãºkolem?
+	AI_Output 		(self, hero,"Info_Xardas_EVENTHOW_14_02"); //Å˜ekne ti zbytek toho pÅ™Ã­bÄ›hu o SpÃ¡Äovi.
+	AI_Output 		(hero, self,"Info_Xardas_EVENTHOW_15_03"); //NÄ›jakÃ½ skÅ™etÃ­ Å¡aman bude asi sotva ochotnÃ½ se mnou mluvit!
+	AI_Output 		(self, hero,"Info_Xardas_EVENTHOW_14_04"); //ChceÅ¡, abych ti pomohl nebo ne?
 	AI_Output 		(hero, self,"Info_Xardas_EVENTHOW_15_05"); //Ano, chci, ale...
-	AI_Output 		(self, hero,"Info_Xardas_EVENTHOW_14_06"); //Pak u ádné otázky!
-	AI_Output 		(self, hero,"Info_Xardas_EVENTHOW_14_07"); //Najdi toho šamana. Není u dlouhou dobu se svımi bratry ve skøetím mìstì zadobøe, take tì moná vyslechne ještì pøedtím, ne tì promìní v ivou pochodeò!
-	AI_Output 		(hero, self,"Info_Xardas_EVENTHOW_15_08"); //Pìkná pøedstava!
+	AI_Output 		(self, hero,"Info_Xardas_EVENTHOW_14_06"); //Pak uÅ¾ Å¾Ã¡dnÃ© otÃ¡zky!
+	AI_Output 		(self, hero,"Info_Xardas_EVENTHOW_14_07"); //Najdi toho Å¡amana. NenÃ­ uÅ¾ dlouhou dobu se svÃ½mi bratry ve skÅ™etÃ­m mÄ›stÄ› zadobÅ™e, takÅ¾e tÄ› moÅ¾nÃ¡ vyslechne jeÅ¡tÄ› pÅ™edtÃ­m, neÅ¾ tÄ› promÄ›nÃ­ v Å¾ivou pochodeÅˆ!
+	AI_Output 		(hero, self,"Info_Xardas_EVENTHOW_15_08"); //PÄ›knÃ¡ pÅ™edstava!
 }; 
 
 //---------------------------------------------------------------------
@@ -344,7 +344,7 @@ instance  Info_Xardas_EVENTWHERE (C_INFO)
 	information	= Info_Xardas_EVENTWHERE_Info;
 	important	= 0;
 	permanent	= 0;
-	description = "Kde je ten vyhoštìnı šaman?";
+	description = "Kde je ten vyhoÅ¡tÄ›nÃ½ Å¡aman?";
 };
 
 FUNC int  Info_Xardas_EVENTWHERE_Condition()
@@ -356,10 +356,10 @@ FUNC int  Info_Xardas_EVENTWHERE_Condition()
 };
 FUNC void  Info_Xardas_EVENTWHERE_Info()
 {
-	AI_Output 		(hero, self,"Info_Xardas_EVENTWHERE_15_01"); //Kde je ten vyhoštìnı šaman?
-	AI_Output 		(self, hero,"Info_Xardas_EVENTWHERE_14_02"); //Jdi na vıchod ke staré citadele. Nemùeš ji minout, je na vrcholu hory, kterou uvidíš u z dálky.
-	AI_Output 		(hero, self,"Info_Xardas_EVENTWHERE_15_03"); //Jak se dostanu dovnitø?
-	AI_Output 		(self, hero,"Info_Xardas_EVENTWHERE_14_04"); //Øíkají jí stará citadela, ale zbylo z ní sotva víc ne základové zdi. Je to u po mnoho desetiletí zøícenina.
+	AI_Output 		(hero, self,"Info_Xardas_EVENTWHERE_15_01"); //Kde je ten vyhoÅ¡tÄ›nÃ½ Å¡aman?
+	AI_Output 		(self, hero,"Info_Xardas_EVENTWHERE_14_02"); //Jdi na vÃ½chod ke starÃ© citadele. NemÅ¯Å¾eÅ¡ ji minout, je na vrcholu hory, kterou uvidÃ­Å¡ uÅ¾ z dÃ¡lky.
+	AI_Output 		(hero, self,"Info_Xardas_EVENTWHERE_15_03"); //Jak se dostanu dovnitÅ™?
+	AI_Output 		(self, hero,"Info_Xardas_EVENTWHERE_14_04"); //Å˜Ã­kajÃ­ jÃ­ starÃ¡ citadela, ale zbylo z nÃ­ sotva vÃ­c neÅ¾ zÃ¡kladovÃ© zdi. Je to uÅ¾ po mnoho desetiletÃ­ zÅ™Ã­cenina.
 }; 
 
 //---------------------------------------------------------------------
@@ -372,7 +372,7 @@ instance  Info_Xardas_ACCEPT (C_INFO)
 	information	= Info_Xardas_ACCEPT_Info;
 	important	= 0;
 	permanent	= 0;
-	description = "Dostanu od toho šamana odpovìdi!";
+	description = "Dostanu od toho Å¡amana odpovÄ›di!";
 };
 
 FUNC int  Info_Xardas_ACCEPT_Condition()
@@ -386,9 +386,9 @@ FUNC int  Info_Xardas_ACCEPT_Condition()
 };
 FUNC void  Info_Xardas_ACCEPT_Info()
 {
-	AI_Output 		(hero, self,"Info_Xardas_ACCEPT_15_01"); //Dostanu od toho šamana odpovìdi!
-	AI_Output 		(self, hero,"Info_Xardas_ACCEPT_14_02"); //Mùj sluebník ti u pøipravil teleportaèní runu na pentagram na podlaze.
-	AI_Output 		(self, hero,"Info_Xardas_ACCEPT_14_03"); //To ti usnadní pozdìjší návrat zpìt.
+	AI_Output 		(hero, self,"Info_Xardas_ACCEPT_15_01"); //Dostanu od toho Å¡amana odpovÄ›di!
+	AI_Output 		(self, hero,"Info_Xardas_ACCEPT_14_02"); //MÅ¯j sluÅ¾ebnÃ­k ti uÅ¾ pÅ™ipravil teleportaÄnÃ­ runu na pentagram na podlaze.
+	AI_Output 		(self, hero,"Info_Xardas_ACCEPT_14_03"); //To ti usnadnÃ­ pozdÄ›jÅ¡Ã­ nÃ¡vrat zpÄ›t.
 
 	B_Story_CordsPost();		// Falls Spieler Gorn am Wassermagier-Pentragramm nicht angesprochen hat!
 	B_Story_FindOrcShaman();
@@ -407,7 +407,7 @@ instance  Kdf_404_Xardas_SELLMAGICSTUFF (C_INFO)
 	important		= 0;
 	permanent		= 1;
 	trade			= 1;
-	description		= "Hledám magické vìdìní."; 
+	description		= "HledÃ¡m magickÃ© vÄ›dÄ›nÃ­."; 
 	
 };
 
@@ -421,7 +421,7 @@ FUNC int  Kdf_404_Xardas_SELLMAGICSTUFF_Condition()
 };
 FUNC void  Kdf_404_Xardas_SELLMAGICSTUFF_Info()
 {
-	AI_Output (other, self,"Kdf_404_Xardas_SELLMAGICSTUFF_Info_15_01"); //Hledám magické vìdìní.
+	AI_Output (other, self,"Kdf_404_Xardas_SELLMAGICSTUFF_Info_15_01"); //HledÃ¡m magickÃ© vÄ›dÄ›nÃ­.
 };
 
 //---------------------------------------------------------------------
@@ -434,7 +434,7 @@ instance  Info_Xardas_RETURN (C_INFO)
 	information	= Info_Xardas_RETURN_Info;
 	important	= 0;
 	permanent	= 0;
-	description = "Mám odpovìdi od skøetího šamana!";
+	description = "MÃ¡m odpovÄ›di od skÅ™etÃ­ho Å¡amana!";
 };
 
 FUNC int  Info_Xardas_RETURN_Condition()
@@ -447,20 +447,20 @@ FUNC int  Info_Xardas_RETURN_Condition()
 };
 FUNC void  Info_Xardas_RETURN_Info()
 {
-	AI_Output 		(hero, self,"Info_Xardas_RETURN_15_01"); //Mám odpovìdi od skøetího šamana!
-	AI_Output 		(self, hero,"Info_Xardas_RETURN_14_02"); //Vıbornì, tak povídej!
-	AI_Output 		(hero, self,"Info_Xardas_RETURN_15_03"); //Pìt skøetích šamanù vyvolalo Spáèe, kterého vytvoøili v podzemním chrámu, do kterého je vstup v skøetím mìstì.
+	AI_Output 		(hero, self,"Info_Xardas_RETURN_15_01"); //MÃ¡m odpovÄ›di od skÅ™etÃ­ho Å¡amana!
+	AI_Output 		(self, hero,"Info_Xardas_RETURN_14_02"); //VÃ½bornÄ›, tak povÃ­dej!
+	AI_Output 		(hero, self,"Info_Xardas_RETURN_15_03"); //PÄ›t skÅ™etÃ­ch Å¡amanÅ¯ vyvolalo SpÃ¡Äe, kterÃ©ho vytvoÅ™ili v podzemnÃ­m chrÃ¡mu, do kterÃ©ho je vstup v skÅ™etÃ­m mÄ›stÄ›.
 	AI_Output 		(self, hero,"Info_Xardas_RETURN_14_04"); //To je pravda!
-	AI_Output 		(hero, self,"Info_Xardas_RETURN_15_05"); //Protoe byl nevdìènı, zaklel jejich srdce a odsoudil je k vìènému bytí jako nesmrtelné stvùry!
-	AI_Output 		(self, hero,"Info_Xardas_RETURN_14_06"); //Velmi dobøe, velmi dobøe!
-	AI_Output 		(hero, self,"Info_Xardas_RETURN_15_07"); //Skøeti zavøeli chrám a zaèali pøinášet obìti, aby toho démona usmíøili!
-	AI_Output 		(self, hero,"Info_Xardas_RETURN_14_08"); //Našel jsi cestu ke vchodu do toho chrámu?
-	AI_Output 		(hero, self,"Info_Xardas_RETURN_15_09"); //Ano, je jeden skøet, kterı...
-	AI_Output 		(self, hero,"Info_Xardas_RETURN_14_10"); //Bez tìch podrobností! Jdi do podzemního chrámu! Tam najdeš zpùsob jak znièit Bariéru!
-	AI_Output 		(hero, self,"Info_Xardas_RETURN_15_11"); //Nerozumím!
-	AI_Output 		(self, hero,"Info_Xardas_RETURN_14_12"); //Nechtìl jsi snad po mnì, abych ti pomáhal s odstranìním Bariéry?
+	AI_Output 		(hero, self,"Info_Xardas_RETURN_15_05"); //ProtoÅ¾e byl nevdÄ›ÄnÃ½, zaklel jejich srdce a odsoudil je k vÄ›ÄnÃ©mu bytÃ­ jako nesmrtelnÃ© stvÅ¯ry!
+	AI_Output 		(self, hero,"Info_Xardas_RETURN_14_06"); //Velmi dobÅ™e, velmi dobÅ™e!
+	AI_Output 		(hero, self,"Info_Xardas_RETURN_15_07"); //SkÅ™eti zavÅ™eli chrÃ¡m a zaÄali pÅ™inÃ¡Å¡et obÄ›ti, aby toho dÃ©mona usmÃ­Å™ili!
+	AI_Output 		(self, hero,"Info_Xardas_RETURN_14_08"); //NaÅ¡el jsi cestu ke vchodu do toho chrÃ¡mu?
+	AI_Output 		(hero, self,"Info_Xardas_RETURN_15_09"); //Ano, je jeden skÅ™et, kterÃ½...
+	AI_Output 		(self, hero,"Info_Xardas_RETURN_14_10"); //Bez tÄ›ch podrobnostÃ­! Jdi do podzemnÃ­ho chrÃ¡mu! Tam najdeÅ¡ zpÅ¯sob jak zniÄit BariÃ©ru!
+	AI_Output 		(hero, self,"Info_Xardas_RETURN_15_11"); //NerozumÃ­m!
+	AI_Output 		(self, hero,"Info_Xardas_RETURN_14_12"); //NechtÄ›l jsi snad po mnÄ›, abych ti pomÃ¡hal s odstranÄ›nÃ­m BariÃ©ry?
 	AI_Output 		(hero, self,"Info_Xardas_RETURN_15_13"); //To je pravda, ale...
-	AI_Output 		(self, hero,"Info_Xardas_RETURN_14_14"); //PAK TEDY BÌ. U se promrhalo spoustu èasu! Jdi do podzemního chrámu a najdi tam odpovìï!
+	AI_Output 		(self, hero,"Info_Xardas_RETURN_14_14"); //PAK TEDY BÄšÅ½. UÅ¾ se promrhalo spoustu Äasu! Jdi do podzemnÃ­ho chrÃ¡mu a najdi tam odpovÄ›Ä!
 
 	B_Story_ReturnedFromUrShak();
 }; 
@@ -483,7 +483,7 @@ instance  Info_Xardas_FOUNDTEMPLE (C_INFO)
 	information		= Info_Xardas_FOUNDTEMPLE_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Našel jsem cestu do podzemního chrámu!"; 
+	description		= "NaÅ¡el jsem cestu do podzemnÃ­ho chrÃ¡mu!"; 
 };
 
 FUNC int  Info_Xardas_FOUNDTEMPLE_Condition()
@@ -496,10 +496,10 @@ FUNC int  Info_Xardas_FOUNDTEMPLE_Condition()
 
 FUNC void  Info_Xardas_FOUNDTEMPLE_Info()
 {
-	AI_Output (other, self,"Info_Xardas_FOUNDTEMPLE_15_01"); //Našel jsem cestu do podzemního chrámu!
-	AI_Output (self, other,"Info_Xardas_FOUNDTEMPLE_14_02"); //NAŠEL... To je pozoruhodné!
-	AI_Output (self, other,"Info_Xardas_FOUNDTEMPLE_14_03"); //Stal ses velmi mocnı! Silnìjší ne kdokoliv jinı uvnitø Bariéry.
-	AI_Output (self, other,"Info_Xardas_FOUNDTEMPLE_14_04"); //Moná jsi doopravdy ten mu ze skøetího proroctví!
+	AI_Output (other, self,"Info_Xardas_FOUNDTEMPLE_15_01"); //NaÅ¡el jsem cestu do podzemnÃ­ho chrÃ¡mu!
+	AI_Output (self, other,"Info_Xardas_FOUNDTEMPLE_14_02"); //NAÅ EL... To je pozoruhodnÃ©!
+	AI_Output (self, other,"Info_Xardas_FOUNDTEMPLE_14_03"); //Stal ses velmi mocnÃ½! SilnÄ›jÅ¡Ã­ neÅ¾ kdokoliv jinÃ½ uvnitÅ™ BariÃ©ry.
+	AI_Output (self, other,"Info_Xardas_FOUNDTEMPLE_14_04"); //MoÅ¾nÃ¡ jsi doopravdy ten muÅ¾ ze skÅ™etÃ­ho proroctvÃ­!
 };
 
 //---------------------------------------------------------------------
@@ -512,7 +512,7 @@ instance  Info_Xardas_PROPHECY (C_INFO)
 	information		= Info_Xardas_PROPHECY_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Proroctví? Jaké proroctví?"; 
+	description		= "ProroctvÃ­? JakÃ© proroctvÃ­?"; 
 };
 
 FUNC int  Info_Xardas_PROPHECY_Condition()
@@ -525,12 +525,12 @@ FUNC int  Info_Xardas_PROPHECY_Condition()
 
 FUNC void  Info_Xardas_PROPHECY_Info()
 {
-	AI_Output (other, self,"Info_Xardas_PROPHECY_15_01"); //Proroctví? Jaké proroctví?
-	AI_Output (self, other,"Info_Xardas_PROPHECY_14_02"); //Prastaré skøetí dokumenty napsané krátce pøed uzavøením podzemního chrámu se zmiòovaly o 'Svatém nepøíteli'.
-	AI_Output (other, self,"Info_Xardas_PROPHECY_15_03"); //O Svatém nepøíteli?
-	AI_Output (self, other,"Info_Xardas_PROPHECY_14_04"); //Nìkdo, kdo provdy odstraní SPÁÈE z našeho svìta!
-	AI_Output (other, self,"Info_Xardas_PROPHECY_15_05"); //A já mám bıt tím, kdo byl v tom starém proroctví zmínìn??? Musíš se mılit, urèitì!
-	AI_Output (self, other,"Info_Xardas_PROPHECY_14_06"); //Moná... Moná ne!
+	AI_Output (other, self,"Info_Xardas_PROPHECY_15_01"); //ProroctvÃ­? JakÃ© proroctvÃ­?
+	AI_Output (self, other,"Info_Xardas_PROPHECY_14_02"); //PrastarÃ© skÅ™etÃ­ dokumenty napsanÃ© krÃ¡tce pÅ™ed uzavÅ™enÃ­m podzemnÃ­ho chrÃ¡mu se zmiÅˆovaly o 'SvatÃ©m nepÅ™Ã­teli'.
+	AI_Output (other, self,"Info_Xardas_PROPHECY_15_03"); //O SvatÃ©m nepÅ™Ã­teli?
+	AI_Output (self, other,"Info_Xardas_PROPHECY_14_04"); //NÄ›kdo, kdo provÅ¾dy odstranÃ­ SPÃÄŒE z naÅ¡eho svÄ›ta!
+	AI_Output (other, self,"Info_Xardas_PROPHECY_15_05"); //A jÃ¡ mÃ¡m bÃ½t tÃ­m, kdo byl v tom starÃ©m proroctvÃ­ zmÃ­nÄ›n??? MusÃ­Å¡ se mÃ½lit, urÄitÄ›!
+	AI_Output (self, other,"Info_Xardas_PROPHECY_14_06"); //MoÅ¾nÃ¡... MoÅ¾nÃ¡ ne!
 };
 
 //---------------------------------------------------------------------
@@ -543,7 +543,7 @@ instance  Info_Xardas_LOADSWORD (C_INFO)
 	information		= Info_Xardas_LOADSWORD_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Našel jsem zvláštní meè."; 
+	description		= "NaÅ¡el jsem zvlÃ¡Å¡tnÃ­ meÄ."; 
 };
 
 FUNC int  Info_Xardas_LOADSWORD_Condition()
@@ -556,8 +556,8 @@ FUNC int  Info_Xardas_LOADSWORD_Condition()
 
 FUNC void  Info_Xardas_LOADSWORD_Info()
 {
-	AI_Output				(other, self,"Info_Xardas_LOADSWORD_15_01"); //Našel jsem zvláštní meè.
-	AI_Output				(self, other,"Info_Xardas_LOADSWORD_14_02"); //Uka mi ho.
+	AI_Output				(other, self,"Info_Xardas_LOADSWORD_15_01"); //NaÅ¡el jsem zvlÃ¡Å¡tnÃ­ meÄ.
+	AI_Output				(self, other,"Info_Xardas_LOADSWORD_14_02"); //UkaÅ¾ mi ho.
 
 	CreateInvItem 			(self, Mythrilklinge01);
 	AI_EquipBestMeleeWeapon	(self);
@@ -566,10 +566,10 @@ FUNC void  Info_Xardas_LOADSWORD_Info()
 	AI_RemoveWeapon			(self);
 	AI_UnequipWeapons		(self);
 
-	AI_Output				(self, other,"Info_Xardas_LOADSWORD_14_03"); //To je zajímavé... Je na nìm napsáno 'URIZIEL'.
-	AI_Output				(self, other,"Info_Xardas_LOADSWORD_14_04"); //Slyšel jsem o tom meèi. Je to zbraò z dávnıch dob, kdy lidské plemeno bylo ještì mladé.
-	AI_Output				(self, other,"Info_Xardas_LOADSWORD_14_05"); //Ta zbraò je ukována z neznámého materiálu. A nikde není napsáno, kdo ji vytvoøil!
-	AI_Output				(self, other,"Info_Xardas_LOADSWORD_14_06"); //Jeho ostøí je obdaøeno neuvìøitelnou mocí, ale nevidím ádnou kouzelnou auru! 
+	AI_Output				(self, other,"Info_Xardas_LOADSWORD_14_03"); //To je zajÃ­mavÃ©... Je na nÄ›m napsÃ¡no 'URIZIEL'.
+	AI_Output				(self, other,"Info_Xardas_LOADSWORD_14_04"); //SlyÅ¡el jsem o tom meÄi. Je to zbraÅˆ z dÃ¡vnÃ½ch dob, kdy lidskÃ© plemeno bylo jeÅ¡tÄ› mladÃ©.
+	AI_Output				(self, other,"Info_Xardas_LOADSWORD_14_05"); //Ta zbraÅˆ je ukovÃ¡na z neznÃ¡mÃ©ho materiÃ¡lu. A nikde nenÃ­ napsÃ¡no, kdo ji vytvoÅ™il!
+	AI_Output				(self, other,"Info_Xardas_LOADSWORD_14_06"); //Jeho ostÅ™Ã­ je obdaÅ™eno neuvÄ›Å™itelnou mocÃ­, ale nevidÃ­m Å¾Ã¡dnou kouzelnou auru! 
 	
 	Npc_RemoveInvItem 		(hero, Mythrilklinge);	
 	CreateInvItem 			(hero, Mythrilklinge01);
@@ -585,7 +585,7 @@ instance  Info_Xardas_LOADSWORD01 (C_INFO)
 	information		= Info_Xardas_LOADSWORD01_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "URIZIEL je obdaøen neuvìøitelnou mocí?"; 
+	description		= "URIZIEL je obdaÅ™en neuvÄ›Å™itelnou mocÃ­?"; 
 };
 
 FUNC int  Info_Xardas_LOADSWORD01_Condition()
@@ -601,11 +601,11 @@ FUNC void  Info_Xardas_LOADSWORD01_Info()
 {
 	Npc_RemoveInvItem 	(self, Mythrilklinge01);
 
-	AI_Output 			(other, self,"Info_Xardas_LOADSWORD01_15_01"); //URIZIEL je obdaøen neuvìøitelnou mocí?
-	AI_Output 			(self, other,"Info_Xardas_LOADSWORD01_14_02"); //Stojí psáno, e majitel té zbranì dokázal protnout i to nejsilnìjší brnìní a pøekonat i to nejmocnìjší ochranné kouzlo.
-	AI_Output 			(other, self,"Info_Xardas_LOADSWORD01_15_03"); //Jak se mohla skøetùm tahle mocná zbraò dostat do rukou?
-	AI_Output 			(self, other,"Info_Xardas_LOADSWORD01_14_04"); //Tvrdí se, e ji skøeti vzali jednomu mocnému váleèníkovi. Nevìdìli, jak ji pouívat, ale ukryli ji!
-	AI_Output 			(other, self,"Info_Xardas_LOADSWORD01_15_05"); //Neukryli ji ale dobøe!
+	AI_Output 			(other, self,"Info_Xardas_LOADSWORD01_15_01"); //URIZIEL je obdaÅ™en neuvÄ›Å™itelnou mocÃ­?
+	AI_Output 			(self, other,"Info_Xardas_LOADSWORD01_14_02"); //StojÃ­ psÃ¡no, Å¾e majitel tÃ© zbranÄ› dokÃ¡zal protnout i to nejsilnÄ›jÅ¡Ã­ brnÄ›nÃ­ a pÅ™ekonat i to nejmocnÄ›jÅ¡Ã­ ochrannÃ© kouzlo.
+	AI_Output 			(other, self,"Info_Xardas_LOADSWORD01_15_03"); //Jak se mohla skÅ™etÅ¯m tahle mocnÃ¡ zbraÅˆ dostat do rukou?
+	AI_Output 			(self, other,"Info_Xardas_LOADSWORD01_14_04"); //TvrdÃ­ se, Å¾e ji skÅ™eti vzali jednomu mocnÃ©mu vÃ¡leÄnÃ­kovi. NevÄ›dÄ›li, jak ji pouÅ¾Ã­vat, ale ukryli ji!
+	AI_Output 			(other, self,"Info_Xardas_LOADSWORD01_15_05"); //Neukryli ji ale dobÅ™e!
 };
 
 //---------------------------------------------------------------------
@@ -618,7 +618,7 @@ instance  Info_Xardas_LOADSWORD02 (C_INFO)
 	information		= Info_Xardas_LOADSWORD02_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Je moné obnovit bıvalou moc této zbranì?"; 
+	description		= "Je moÅ¾nÃ© obnovit bÃ½valou moc tÃ©to zbranÄ›?"; 
 };
 
 FUNC int  Info_Xardas_LOADSWORD02_Condition()
@@ -631,12 +631,12 @@ FUNC int  Info_Xardas_LOADSWORD02_Condition()
 
 FUNC void  Info_Xardas_LOADSWORD02_Info()
 {
-	AI_Output 			(other, self,"Info_Xardas_LOADSWORD02_15_01"); //Je moné obnovit bıvalou moc této zbranì?
-	AI_Output 			(self, other,"Info_Xardas_LOADSWORD02_14_02"); //Potøeboval bys k tomu velmi silnı zdroj magické síly.
-	AI_Output 			(other, self,"Info_Xardas_LOADSWORD02_15_03"); //Myslíš natolik silnı, aby prorazil magickou Bariéru?
-	AI_Output 			(self, other,"Info_Xardas_LOADSWORD02_14_04"); //Asi tak silnı...
-	AI_Output 			(self, other,"Info_Xardas_LOADSWORD02_14_05"); //A kromì toho bys potøeboval zvláštní magickou formuli, která by tu sílu pøetransformovala.
-	AI_Output			(self, other,"Info_Xardas_LOADSWORD02_14_06"); //Dej mi trochu èasu a já tu magickou formuli vytvoøím.
+	AI_Output 			(other, self,"Info_Xardas_LOADSWORD02_15_01"); //Je moÅ¾nÃ© obnovit bÃ½valou moc tÃ©to zbranÄ›?
+	AI_Output 			(self, other,"Info_Xardas_LOADSWORD02_14_02"); //PotÅ™eboval bys k tomu velmi silnÃ½ zdroj magickÃ© sÃ­ly.
+	AI_Output 			(other, self,"Info_Xardas_LOADSWORD02_15_03"); //MyslÃ­Å¡ natolik silnÃ½, aby prorazil magickou BariÃ©ru?
+	AI_Output 			(self, other,"Info_Xardas_LOADSWORD02_14_04"); //Asi tak silnÃ½...
+	AI_Output 			(self, other,"Info_Xardas_LOADSWORD02_14_05"); //A kromÄ› toho bys potÅ™eboval zvlÃ¡Å¡tnÃ­ magickou formuli, kterÃ¡ by tu sÃ­lu pÅ™etransformovala.
+	AI_Output			(self, other,"Info_Xardas_LOADSWORD02_14_06"); //Dej mi trochu Äasu a jÃ¡ tu magickou formuli vytvoÅ™Ã­m.
 
 	B_Story_ShowedUrizielToXardas();
 };
@@ -652,7 +652,7 @@ instance  Info_Xardas_BETTERARMOR (C_INFO)
 	information		= Info_Xardas_BETTERARMOR_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Já se zatím podívám po nìjaké lepší zbroji!"; 
+	description		= "JÃ¡ se zatÃ­m podÃ­vÃ¡m po nÄ›jakÃ© lepÅ¡Ã­ zbroji!"; 
 };
 
 FUNC int  Info_Xardas_BETTERARMOR_Condition()
@@ -665,30 +665,30 @@ FUNC int  Info_Xardas_BETTERARMOR_Condition()
 
 FUNC void  Info_Xardas_BETTERARMOR_Info()
 {
-	AI_Output		(other, self,"Info_Xardas_BETTERARMOR_15_01"); //Já se zatím podívám po nìjaké lepší zbroji!
+	AI_Output		(other, self,"Info_Xardas_BETTERARMOR_15_01"); //JÃ¡ se zatÃ­m podÃ­vÃ¡m po nÄ›jakÃ© lepÅ¡Ã­ zbroji!
 
 	var C_ITEM	armor;			armor 			= Npc_GetEquippedArmor	(hero);
 	var int		armorInstance;	armorInstance	= Hlp_GetInstanceID		(armor);
 	if (armorInstance == CRW_ARMOR_H)
 	{
-		AI_Output	(other, self,"Info_Xardas_BETTERARMOR_15_02"); //Tahle zalátaná protièerví zbroj byla v podzemním chrámu mockrát proraena!
+		AI_Output	(other, self,"Info_Xardas_BETTERARMOR_15_02"); //Tahle zalÃ¡tanÃ¡ protiÄervÃ­ zbroj byla v podzemnÃ­m chrÃ¡mu mockrÃ¡t proraÅ¾ena!
 	}
 	else if (armorInstance == KDW_ARMOR_H) || (armorInstance == KDW_ARMOR_L)		
 	{
-		AI_Output	(other, self,"Info_Xardas_BETTERARMOR_15_03"); //Tyhle modré hadry by mì v podzemním chrámu sotva ochránily!
+		AI_Output	(other, self,"Info_Xardas_BETTERARMOR_15_03"); //Tyhle modrÃ© hadry by mÄ› v podzemnÃ­m chrÃ¡mu sotva ochrÃ¡nily!
 	}
 	else
 	{
-		AI_Output	(other, self,"Info_Xardas_BETTERARMOR_15_04"); //Ten nemrtvı zanechal v mé zbroji poøádné díry!
+		AI_Output	(other, self,"Info_Xardas_BETTERARMOR_15_04"); //Ten nemrtvÃ½ zanechal v mÃ© zbroji poÅ™Ã¡dnÃ© dÃ­ry!
 	};
 	
-	AI_Output		(self, other,"Info_Xardas_BETTERARMOR_14_05"); //Mìl bys jít do mojí staré vìe.
-	AI_Output		(other, self,"Info_Xardas_BETTERARMOR_15_06"); //Tvojí staré vìe?
-	AI_Output		(self, other,"Info_Xardas_BETTERARMOR_14_07"); //Potopila se v jednom z vıchodních jezer pøi jednom zemìtøesení. Vrcholy jsou nad povrchem stále viditelné.
-	AI_Output		(self, other,"Info_Xardas_BETTERARMOR_14_08"); //Zùstalo v ní nìkolik artefaktù. Nikdy jsem se nesnail je dostat zpátky.
+	AI_Output		(self, other,"Info_Xardas_BETTERARMOR_14_05"); //MÄ›l bys jÃ­t do mojÃ­ starÃ© vÄ›Å¾e.
+	AI_Output		(other, self,"Info_Xardas_BETTERARMOR_15_06"); //TvojÃ­ starÃ© vÄ›Å¾e?
+	AI_Output		(self, other,"Info_Xardas_BETTERARMOR_14_07"); //Potopila se v jednom z vÃ½chodnÃ­ch jezer pÅ™i jednom zemÄ›tÅ™esenÃ­. Vrcholy jsou nad povrchem stÃ¡le viditelnÃ©.
+	AI_Output		(self, other,"Info_Xardas_BETTERARMOR_14_08"); //ZÅ¯stalo v nÃ­ nÄ›kolik artefaktÅ¯. Nikdy jsem se nesnaÅ¾il je dostat zpÃ¡tky.
 	AI_Output		(other, self,"Info_Xardas_BETTERARMOR_15_09"); //Jak se tam dostanu?
-	AI_Output		(self, other,"Info_Xardas_BETTERARMOR_14_10"); //Od toho zemìtøesení jsem tam nebyl, take si k ní budeš muset najít cestu sám.
-	AI_Output		(self, other,"Info_Xardas_BETTERARMOR_14_11"); //Tady je klíè. Je od truhly, ve které jsem obvykle ukládal obzvláš vzácné artefakty.
+	AI_Output		(self, other,"Info_Xardas_BETTERARMOR_14_10"); //Od toho zemÄ›tÅ™esenÃ­ jsem tam nebyl, takÅ¾e si k nÃ­ budeÅ¡ muset najÃ­t cestu sÃ¡m.
+	AI_Output		(self, other,"Info_Xardas_BETTERARMOR_14_11"); //Tady je klÃ­Ä. Je od truhly, ve kterÃ© jsem obvykle uklÃ¡dal obzvlÃ¡Å¡Å¥ vzÃ¡cnÃ© artefakty.
 
 	B_Story_ExploreSunkenTower();
 };
@@ -722,15 +722,15 @@ FUNC void  Info_Xardas_OREARMOR_Info()
 	if	(armorInstance == ORE_ARMOR_M)
 	||	(armorInstance == ORE_ARMOR_H)
 	{
-		AI_Output	(self, other,"Info_Xardas_OREARMOR_14_01"); //Aha! Vidím, e nosíš rudnou zbroj.
+		AI_Output	(self, other,"Info_Xardas_OREARMOR_14_01"); //Aha! VidÃ­m, Å¾e nosÃ­Å¡ rudnou zbroj.
 	}
 	else
 	{
-		AI_Output	(self, other,"Info_Xardas_OREARMOR_14_02"); //Jak vidím, našel jsi rudnou zbroj.
+		AI_Output	(self, other,"Info_Xardas_OREARMOR_14_02"); //Jak vidÃ­m, naÅ¡el jsi rudnou zbroj.
 	};
-	AI_Output		(other, self,"Info_Xardas_OREARMOR_15_03"); //Našel jsem ji v jedné z tìch truhel v potopené vìi.
-	AI_Output		(self, other,"Info_Xardas_OREARMOR_14_04"); //Patøila generálovi, kterı v bitvì proti skøetùm pouíval URIZIEL.
-	AI_Output		(other, self,"Info_Xardas_OREARMOR_15_05"); //Doufám, e mi pøinese víc štìstí ne jemu!
+	AI_Output		(other, self,"Info_Xardas_OREARMOR_15_03"); //NaÅ¡el jsem ji v jednÃ© z tÄ›ch truhel v potopenÃ© vÄ›Å¾i.
+	AI_Output		(self, other,"Info_Xardas_OREARMOR_14_04"); //PatÅ™ila generÃ¡lovi, kterÃ½ v bitvÄ› proti skÅ™etÅ¯m pouÅ¾Ã­val URIZIEL.
+	AI_Output		(other, self,"Info_Xardas_OREARMOR_15_05"); //DoufÃ¡m, Å¾e mi pÅ™inese vÃ­c Å¡tÄ›stÃ­ neÅ¾ jemu!
 };
 
 //---------------------------------------------------------------------
@@ -743,7 +743,7 @@ instance  Info_Xardas_FORMULA (C_INFO)
 	information		= Info_Xardas_FORMULA_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Máš hotovou tu formuli na obnovení síly URIZIELA?";
+	description		= "MÃ¡Å¡ hotovou tu formuli na obnovenÃ­ sÃ­ly URIZIELA?";
 };
 
 FUNC int  Info_Xardas_FORMULA_Condition()
@@ -758,12 +758,12 @@ FUNC int  Info_Xardas_FORMULA_Condition()
 
 FUNC void  Info_Xardas_FORMULA_Info()
 {
-	AI_Output		(other, self,"Info_Xardas_FORMULA_15_01"); //Máš hotovou tu formuli na obnovení síly URIZIELA?
-	AI_Output		(self, other,"Info_Xardas_FORMULA_14_02"); //Je hotová. Nebudeš ji moci ale pouít sám.
-	AI_Output		(other, self,"Info_Xardas_FORMULA_15_03"); //Proè ne?
-	AI_Output		(self, other,"Info_Xardas_FORMULA_14_04"); //Musí bıt vyslovena nìjakım mágem, zatímco ty se budeš dotıkat meèem zdroje síly.
-	AI_Output		(other, self,"Info_Xardas_FORMULA_15_05"); //Pak se budu muset porozhlédnout po nìjaké pomoci!
-	AI_Output		(self, other,"Info_Xardas_FORMULA_14_06"); //Vyslov tu formuli a obnov døívìjší sílu meèe. Budeš ji potøebovat!
+	AI_Output		(other, self,"Info_Xardas_FORMULA_15_01"); //MÃ¡Å¡ hotovou tu formuli na obnovenÃ­ sÃ­ly URIZIELA?
+	AI_Output		(self, other,"Info_Xardas_FORMULA_14_02"); //Je hotovÃ¡. NebudeÅ¡ ji moci ale pouÅ¾Ã­t sÃ¡m.
+	AI_Output		(other, self,"Info_Xardas_FORMULA_15_03"); //ProÄ ne?
+	AI_Output		(self, other,"Info_Xardas_FORMULA_14_04"); //MusÃ­ bÃ½t vyslovena nÄ›jakÃ½m mÃ¡gem, zatÃ­mco ty se budeÅ¡ dotÃ½kat meÄem zdroje sÃ­ly.
+	AI_Output		(other, self,"Info_Xardas_FORMULA_15_05"); //Pak se budu muset porozhlÃ©dnout po nÄ›jakÃ© pomoci!
+	AI_Output		(self, other,"Info_Xardas_FORMULA_14_06"); //Vyslov tu formuli a obnov dÅ™Ã­vÄ›jÅ¡Ã­ sÃ­lu meÄe. BudeÅ¡ ji potÅ™ebovat!
 
 	B_Story_LoadSword();
 };
@@ -778,7 +778,7 @@ instance  Info_Xardas_ALTRUNE (C_INFO)
 	information		= Info_Xardas_ALTRUNE_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Protoe jsem mág, bude pro mì tìké vládnout URIZIELEM!";
+	description		= "ProtoÅ¾e jsem mÃ¡g, bude pro mÄ› tÄ›Å¾kÃ© vlÃ¡dnout URIZIELEM!";
 };
 
 FUNC int  Info_Xardas_ALTRUNE_Condition()
@@ -792,9 +792,9 @@ FUNC int  Info_Xardas_ALTRUNE_Condition()
 
 FUNC void  Info_Xardas_ALTRUNE_Info()
 {
-	AI_Output		(other, self,"Info_Xardas_ALTRUNE_15_01"); //Protoe jsem mág, bude pro mì tìké vládnout URIZIELEM!
-	AI_Output		(self, other,"Info_Xardas_ALTRUNE_14_02"); //Je tu jedno øešení...
-	AI_Output		(self, other,"Info_Xardas_ALTRUNE_14_03"); //Nejdøív ale musíš obnovit døívìjší sílu ostøí! Pak se vra!
+	AI_Output		(other, self,"Info_Xardas_ALTRUNE_15_01"); //ProtoÅ¾e jsem mÃ¡g, bude pro mÄ› tÄ›Å¾kÃ© vlÃ¡dnout URIZIELEM!
+	AI_Output		(self, other,"Info_Xardas_ALTRUNE_14_02"); //Je tu jedno Å™eÅ¡enÃ­...
+	AI_Output		(self, other,"Info_Xardas_ALTRUNE_14_03"); //NejdÅ™Ã­v ale musÃ­Å¡ obnovit dÅ™Ã­vÄ›jÅ¡Ã­ sÃ­lu ostÅ™Ã­! Pak se vraÅ¥!
 };
 
 
@@ -808,7 +808,7 @@ instance  Info_Xardas_SWORDLOADED (C_INFO)
 	information		= Info_Xardas_SWORDLOADED_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Obnovil jsem sílu URIZIELA!"; 
+	description		= "Obnovil jsem sÃ­lu URIZIELA!"; 
 };
 
 FUNC int  Info_Xardas_SWORDLOADED_Condition()
@@ -821,10 +821,10 @@ FUNC int  Info_Xardas_SWORDLOADED_Condition()
 
 FUNC void  Info_Xardas_SWORDLOADED_Info()
 {
-	AI_Output		(other, self,"Info_Xardas_SWORDLOADED_15_01"); //Obnovil jsem sílu URIZIELA!
-	AI_Output		(self, other,"Info_Xardas_SWORDLOADED_14_02"); //To je neuvìøitelné, meè znovu získal svou pùvodní sílu. Teï máš opravdu mocnou zbraò!
+	AI_Output		(other, self,"Info_Xardas_SWORDLOADED_15_01"); //Obnovil jsem sÃ­lu URIZIELA!
+	AI_Output		(self, other,"Info_Xardas_SWORDLOADED_14_02"); //To je neuvÄ›Å™itelnÃ©, meÄ znovu zÃ­skal svou pÅ¯vodnÃ­ sÃ­lu. TeÄ mÃ¡Å¡ opravdu mocnou zbraÅˆ!
 
-	Wld_InsertItem			(ItArScrollTeleport4,"OW_ORC_SHAMAN_ROOM2");	//Unblutige Lösung für´s Ich-brauch-Orc-Statue-Massaker ***Björn***
+	Wld_InsertItem			(ItArScrollTeleport4,"OW_ORC_SHAMAN_ROOM2");	//Unblutige LÃ¶sung fÃ¼rÂ´s Ich-brauch-Orc-Statue-Massaker ***BjÃ¶rn***
 
 };
 
@@ -838,7 +838,7 @@ instance  Info_Xardas_MAKERUNE (C_INFO)
 	information		= Info_Xardas_MAKERUNE_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Øíkal jsi, e existuje nìjakı zpùsob, jak bych mohl URIZIEL ovládat, pøestoe jsem mág?"; 
+	description		= "Å˜Ã­kal jsi, Å¾e existuje nÄ›jakÃ½ zpÅ¯sob, jak bych mohl URIZIEL ovlÃ¡dat, pÅ™estoÅ¾e jsem mÃ¡g?"; 
 };
 
 FUNC int  Info_Xardas_MAKERUNE_Condition()
@@ -852,13 +852,13 @@ FUNC int  Info_Xardas_MAKERUNE_Condition()
 
 FUNC void  Info_Xardas_MAKERUNE_Info()
 {
-	AI_Output		(other, self,"Info_Xardas_MAKERUNE_15_01"); //Øíkal jsi, e existuje nìjakı zpùsob, jak bych mohl URIZIEL ovládat, pøestoe jsem mág?
-	AI_Output		(self, other,"Info_Xardas_MAKERUNE_14_02"); //Podívej se na URIZIEL zblízka. Všimneš si modrého drahokamu v èepeli.
-	AI_Output		(self, other,"Info_Xardas_MAKERUNE_14_03"); //V nìm je obsaena magická síla ostøí.
-	AI_Output		(self, other,"Info_Xardas_MAKERUNE_14_04"); //Kdy ten drahokam odstraním, budu moci vytvoøit kouzelnou runu, která bude obsahovat atributy samotného URIZIELA.
-	AI_Output		(other, self,"Info_Xardas_MAKERUNE_15_05"); //Magická runa vytvoøená z URIZIELA?
-	AI_Output		(self, other,"Info_Xardas_MAKERUNE_14_06"); //V boji bude ta runa stejnì silná jako meè!
-	AI_Output		(self, other,"Info_Xardas_MAKERUNE_14_07"); //Nezapomeò ale, e jedinì nìkterı mág Šestého kruhu je schopen ovládat takhle mocnou runu!
+	AI_Output		(other, self,"Info_Xardas_MAKERUNE_15_01"); //Å˜Ã­kal jsi, Å¾e existuje nÄ›jakÃ½ zpÅ¯sob, jak bych mohl URIZIEL ovlÃ¡dat, pÅ™estoÅ¾e jsem mÃ¡g?
+	AI_Output		(self, other,"Info_Xardas_MAKERUNE_14_02"); //PodÃ­vej se na URIZIEL zblÃ­zka. VÅ¡imneÅ¡ si modrÃ©ho drahokamu v Äepeli.
+	AI_Output		(self, other,"Info_Xardas_MAKERUNE_14_03"); //V nÄ›m je obsaÅ¾ena magickÃ¡ sÃ­la ostÅ™Ã­.
+	AI_Output		(self, other,"Info_Xardas_MAKERUNE_14_04"); //KdyÅ¾ ten drahokam odstranÃ­m, budu moci vytvoÅ™it kouzelnou runu, kterÃ¡ bude obsahovat atributy samotnÃ©ho URIZIELA.
+	AI_Output		(other, self,"Info_Xardas_MAKERUNE_15_05"); //MagickÃ¡ runa vytvoÅ™enÃ¡ z URIZIELA?
+	AI_Output		(self, other,"Info_Xardas_MAKERUNE_14_06"); //V boji bude ta runa stejnÄ› silnÃ¡ jako meÄ!
+	AI_Output		(self, other,"Info_Xardas_MAKERUNE_14_07"); //NezapomeÅˆ ale, Å¾e jedinÄ› nÄ›kterÃ½ mÃ¡g Å estÃ©ho kruhu je schopen ovlÃ¡dat takhle mocnou runu!
 };
 
 //---------------------------------------------------------------------
@@ -871,7 +871,7 @@ instance  Info_Xardas_MAKERUNEDOIT (C_INFO)
 	information		= Info_Xardas_MAKERUNEDOIT_Info;
 	important		= 0;
 	permanent		= 1;
-	description		= "Odstraò z URIZIELA ten drahokam!"; 
+	description		= "OdstraÅˆ z URIZIELA ten drahokam!"; 
 };
 
 FUNC int  Info_Xardas_MAKERUNEDOIT_Condition()
@@ -885,38 +885,38 @@ FUNC int  Info_Xardas_MAKERUNEDOIT_Condition()
 
 FUNC void  Info_Xardas_MAKERUNEDOIT_Info()
 {
-	AI_Output			(other, self,"Info_Xardas_MAKERUNEDOIT_15_01"); //Odstraò z URIZIELA ten drahokam!
+	AI_Output			(other, self,"Info_Xardas_MAKERUNEDOIT_15_01"); //OdstraÅˆ z URIZIELA ten drahokam!
 	if (Npc_GetTalentSkill(hero, NPC_TALENT_MAGE) < 6)
 	{
-		AI_Output		(self, other,"Info_Xardas_MAKERUNEDOIT_14_02"); //Nejsi ale ještì pod velením Šestého magického kruhu!
+		AI_Output		(self, other,"Info_Xardas_MAKERUNEDOIT_14_02"); //Nejsi ale jeÅ¡tÄ› pod velenÃ­m Å estÃ©ho magickÃ©ho kruhu!
 	};
-	AI_Output			(self, other,"Info_Xardas_MAKERUNEDOIT_14_03"); //Tohle rozhodnutí je koneèné. Opravdu chceš, abych ten drahokam odstranil?
+	AI_Output			(self, other,"Info_Xardas_MAKERUNEDOIT_14_03"); //Tohle rozhodnutÃ­ je koneÄnÃ©. Opravdu chceÅ¡, abych ten drahokam odstranil?
 
 	Info_ClearChoices	(Info_Xardas_MAKERUNEDOIT);
-	Info_AddChoice		(Info_Xardas_MAKERUNEDOIT,"ANO, udìlej to!",	Info_Xardas_MAKERUNE_YES);
-	Info_AddChoice		(Info_Xardas_MAKERUNEDOIT,"NE, nedìlej to!",	Info_Xardas_MAKERUNE_NO);
+	Info_AddChoice		(Info_Xardas_MAKERUNEDOIT,"ANO, udÄ›lej to!",	Info_Xardas_MAKERUNE_YES);
+	Info_AddChoice		(Info_Xardas_MAKERUNEDOIT,"NE, nedÄ›lej to!",	Info_Xardas_MAKERUNE_NO);
 };
 
 func void Info_Xardas_MAKERUNE_YES ()
 {
 	Info_ClearChoices	(Info_Xardas_MAKERUNEDOIT);
-	AI_Output			(other, self,"Info_Xardas_MAKERUNEDOIT_15_04"); //ANO, udìlej to!
-	AI_Output			(self, other,"Info_Xardas_MAKERUNEDOIT_14_05"); //Jestli to opravdu chceš... Tady je prázdnı meè a runa!
+	AI_Output			(other, self,"Info_Xardas_MAKERUNEDOIT_15_04"); //ANO, udÄ›lej to!
+	AI_Output			(self, other,"Info_Xardas_MAKERUNEDOIT_14_05"); //Jestli to opravdu chceÅ¡... Tady je prÃ¡zdnÃ½ meÄ a runa!
 
 	Npc_RemoveInvItem 	(hero, Mythrilklinge02);
 	CreateInvItems 		(self, UrizielRune, 2);	
-	B_GiveInvItems      (self, hero, UrizielRune, 2);// Wegen Ausgabe "2 Items übergeben", wird direkt angeglichen
+	B_GiveInvItems      (self, hero, UrizielRune, 2);// Wegen Ausgabe "2 Items Ã¼bergeben", wird direkt angeglichen
 	Npc_RemoveInvItem	(hero, UrizielRune);
 	CreateInvItem		(hero, Mythrilklinge03);
-	B_LogEntry			(CH5_Uriziel,"Xardas odstranil z URIZIELU kouzelnı kámen. Síla této èepele spoèívá v kouzelné runì nevídané moci.");
+	B_LogEntry			(CH5_Uriziel,"Xardas odstranil z URIZIELU kouzelnÃ½ kÃ¡men. SÃ­la tÃ©to Äepele spoÄÃ­vÃ¡ v kouzelnÃ© runÄ› nevÃ­danÃ© moci.");
 	Log_SetTopicStatus	(CH5_Uriziel,	LOG_SUCCESS);
 };	
 
 func void Info_Xardas_MAKERUNE_NO ()
 {
 	Info_ClearChoices	(Info_Xardas_MAKERUNEDOIT);
-	AI_Output			(other, self,"Info_Xardas_MAKERUNEDOIT_15_06"); //NE, nedìlej to!
-	AI_Output			(self, other,"Info_Xardas_MAKERUNEDOIT_14_07"); //Jak si pøeješ. Ostøí si zachová magickou moc!
+	AI_Output			(other, self,"Info_Xardas_MAKERUNEDOIT_15_06"); //NE, nedÄ›lej to!
+	AI_Output			(self, other,"Info_Xardas_MAKERUNEDOIT_14_07"); //Jak si pÅ™ejeÅ¡. OstÅ™Ã­ si zachovÃ¡ magickou moc!
 };	
 	
 
@@ -943,23 +943,23 @@ FUNC int  Info_Xardas_LOADSWORD09_Condition()
 };
 func void  Info_Xardas_LOADSWORD09_Info()
 {
-	AI_Output (other, self,"Info_Xardas_LOADSWORD09_15_01");		//Mùeš mì uèit?
+	AI_Output (other, self,"Info_Xardas_LOADSWORD09_15_01");		//MÅ¯Å¾eÅ¡ mÄ› uÄit?
 	
 	if ( Npc_GetTalentSkill	( hero,	NPC_TALENT_MAGE ) == 5) 
 	{
 		
 		if (B_GiveSkill(other, NPC_TALENT_MAGE, 6, LPCOST_TALENT_MAGE_6))
 		{
-			AI_Output (self, other,"Info_Xardas_LOADSWORD09_14_02"); //Pøivedu tì k Šestému kruhu magie.
-			AI_Output (self, other,"Info_Xardas_LOADSWORD09_14_03"); //Uvìdom si, e jen ti nejmocnìjší mágové se mohou pøidat k Šestému kruhu. Je vyhrazen pro ty, jejich ivoty jsou znameními.
-			AI_Output (self, other,"Info_Xardas_LOADSWORD09_14_04"); //Tvé znamení je sjednocení ivlù.
-			AI_Output (self, other,"Info_Xardas_LOADSWORD09_14_05"); //Šestı kruh ti umoní vyuít jakoukoliv runu.
-			AI_Output (self, other,"Info_Xardas_LOADSWORD09_14_06"); //A nezapomeò: neuplatòuj moc, ale slu jí.
+			AI_Output (self, other,"Info_Xardas_LOADSWORD09_14_02"); //PÅ™ivedu tÄ› k Å estÃ©mu kruhu magie.
+			AI_Output (self, other,"Info_Xardas_LOADSWORD09_14_03"); //UvÄ›dom si, Å¾e jen ti nejmocnÄ›jÅ¡Ã­ mÃ¡govÃ© se mohou pÅ™idat k Å estÃ©mu kruhu. Je vyhrazen pro ty, jejichÅ¾ Å¾ivoty jsou znamenÃ­mi.
+			AI_Output (self, other,"Info_Xardas_LOADSWORD09_14_04"); //TvÃ© znamenÃ­ je sjednocenÃ­ Å¾ivlÅ¯.
+			AI_Output (self, other,"Info_Xardas_LOADSWORD09_14_05"); //Å estÃ½ kruh ti umoÅ¾nÃ­ vyuÅ¾Ã­t jakoukoliv runu.
+			AI_Output (self, other,"Info_Xardas_LOADSWORD09_14_06"); //A nezapomeÅˆ: neuplatÅˆuj moc, ale sluÅ¾ jÃ­.
 			
-			CreateInvItem 		(hero, DMB_ARMOR_M);		// SN: kann nicht mit B_GiveInvItem() übergeben werden, da Xardas sonst nackt dasteht!
+			CreateInvItem 		(hero, DMB_ARMOR_M);		// SN: kann nicht mit B_GiveInvItem() Ã¼bergeben werden, da Xardas sonst nackt dasteht!
 			AI_EquipBestArmor	(hero);
 
-			//Fakeitem für Bildschirmausgabe
+			//Fakeitem fÃ¼r Bildschirmausgabe
 			CreateInvItem		(self,			ItAmArrow);
 			B_GiveInvItems		(self, hero,	ItAmArrow, 1);
 			Npc_RemoveInvItem	(hero,			ItAmArrow);
@@ -972,7 +972,7 @@ func void  Info_Xardas_LOADSWORD09_Info()
 	}
 	else 
 	{
-		AI_Output (self, other,"Info_Xardas_LOADSWORD09_14_07"); 	//Ještì ne. U jsi zbìhlı, ale nemáš ještì dost vìdomostí. A tì nejdøíve cvièí Saturas, já ti dám pokyny pozdìji.
+		AI_Output (self, other,"Info_Xardas_LOADSWORD09_14_07"); 	//JeÅ¡tÄ› ne. UÅ¾ jsi zbÄ›hlÃ½, ale nemÃ¡Å¡ jeÅ¡tÄ› dost vÄ›domostÃ­. AÅ¥ tÄ› nejdÅ™Ã­ve cviÄÃ­ Saturas, jÃ¡ ti dÃ¡m pokyny pozdÄ›ji.
 		
 		AI_StopProcessInfos	( self );
 	};

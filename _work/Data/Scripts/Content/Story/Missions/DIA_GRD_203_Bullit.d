@@ -43,7 +43,7 @@ FUNC int  DIA_Bullit_First_Condition()
 
 FUNC VOID  DIA_Bullit_First_Info()
 {
-	AI_Output (self, other,"DIA_Bullit_First_06_00"); //Kohopak to tady máme? Není to ten hoch, kterého jsem kdysi pokøtil? Co chceš? Vracíš se a chceš ještì víc?
+	AI_Output (self, other,"DIA_Bullit_First_06_00"); //Kohopak to tady mÃ¡me? NenÃ­ to ten hoch, kterÃ©ho jsem kdysi pokÅ™til? Co chceÅ¡? VracÃ­Å¡ se a chceÅ¡ jeÅ¡tÄ› vÃ­c?
 };
 
 //******************************************
@@ -57,7 +57,7 @@ instance  DIA_Bullit_AufsMAul (C_INFO)
 	condition	= DIA_Bullit_AufsMAul_Condition;
 	information	= DIA_Bullit_AufsMAul_Info;
 	permanent	= 0;
-	description = "Pøišel jsem, abych ti zacpal tu tvojí velkou hubu.";
+	description = "PÅ™iÅ¡el jsem, abych ti zacpal tu tvojÃ­ velkou hubu.";
 };                       
 
 FUNC int  DIA_Bullit_AufsMAul_Condition()
@@ -67,8 +67,8 @@ FUNC int  DIA_Bullit_AufsMAul_Condition()
 
 FUNC VOID  DIA_Bullit_AufsMAul_Info()
 {
-	AI_Output (other, self,"DIA_Bullit_AufsMAul_15_00"); //Pøišel jsem, abych ti zacpal tu tvoji velkou hubu.
-	AI_Output (self, other,"DIA_Bullit_AufsMAul_06_01"); //Ha, tak pojï a zkus to, zlatíèko!
+	AI_Output (other, self,"DIA_Bullit_AufsMAul_15_00"); //PÅ™iÅ¡el jsem, abych ti zacpal tu tvoji velkou hubu.
+	AI_Output (self, other,"DIA_Bullit_AufsMAul_06_01"); //Ha, tak pojÄ a zkus to, zlatÃ­Äko!
 	
 	Npc_SetAttitude 		( self, ATT_HOSTILE );
 	Npc_SetTempAttitude 	( self, ATT_HOSTILE );
@@ -102,9 +102,9 @@ FUNC int  DIA_GRD_203_Bullit_Wait4SC_Condition()
 
 func void  DIA_GRD_203_Bullit_Wait4SC_Info()
 {
-	AI_Output (self, other,"DIA_GRD_203_Bullit_Wait4SC_06_01"); //Zase ty! Mìl jsem tì utopit v jezeøe hned, jak jsem tì poprvé uvidìl!
-	AI_Output (other, self,"DIA_GRD_203_Bullit_Wait4SC_15_02"); //Tehdy jsem nemìl šanci - teï se ale karta obrátila.
-	AI_Output (self, other,"DIA_GRD_203_Bullit_Wait4SC_06_03"); //Ty èerve! Jenom doufám, e mi to tentokrát tolik neusnadníš jako poprvé!
+	AI_Output (self, other,"DIA_GRD_203_Bullit_Wait4SC_06_01"); //Zase ty! MÄ›l jsem tÄ› utopit v jezeÅ™e hned, jak jsem tÄ› poprvÃ© uvidÄ›l!
+	AI_Output (other, self,"DIA_GRD_203_Bullit_Wait4SC_15_02"); //Tehdy jsem nemÄ›l Å¡anci - teÄ se ale karta obrÃ¡tila.
+	AI_Output (self, other,"DIA_GRD_203_Bullit_Wait4SC_06_03"); //Ty Äerve! Jenom doufÃ¡m, Å¾e mi to tentokrÃ¡t tolik neusnadnÃ­Å¡ jako poprvÃ©!
 		
 	AI_StopProcessInfos	( self );
 

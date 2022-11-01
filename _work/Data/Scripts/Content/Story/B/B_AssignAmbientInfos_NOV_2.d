@@ -37,7 +37,7 @@ INSTANCE Info_Nov_2_EinerVonEuchWerden (C_INFO) // E1
 	condition	= Info_Nov_2_EinerVonEuchWerden_Condition;
 	information	= Info_Nov_2_EinerVonEuchWerden_Info;
 	permanent	= 1;
-	description = "Chci s k v·m p¯idat.";
+	description = "Chci s k v√°m p≈ôidat.";
 };                       
 
 FUNC INT Info_Nov_2_EinerVonEuchWerden_Condition()
@@ -50,9 +50,9 @@ FUNC INT Info_Nov_2_EinerVonEuchWerden_Condition()
 
 FUNC VOID Info_Nov_2_EinerVonEuchWerden_Info()
 {
-	AI_Output(other,self,"Info_Nov_2_EinerVonEuchWerden_15_00"); //Chci s k v·m p¯idat.
-	AI_Output(self,other,"Info_Nov_2_EinerVonEuchWerden_02_01"); //Opravdu jsi se rozhodl slouûit Sp·Ëovi? Cesta ke ötÏstÌ a dobrÈ vyhlÌdky ti leûÌ p¯Ìmo u nohou.
-	AI_Output(self,other,"Info_Nov_2_EinerVonEuchWerden_02_02"); //Jdi a promluv si s Corem Kalomem. Rozhodne, jak· pr·ce pro tebe bude nejlepöÌ.
+	AI_Output(other,self,"Info_Nov_2_EinerVonEuchWerden_15_00"); //Chci s k v√°m p≈ôidat.
+	AI_Output(self,other,"Info_Nov_2_EinerVonEuchWerden_02_01"); //Opravdu jsi se rozhodl slou≈æit Sp√°ƒçovi? Cesta ke ≈°tƒõst√≠ a dobr√© vyhl√≠dky ti le≈æ√≠ p≈ô√≠mo u nohou.
+	AI_Output(self,other,"Info_Nov_2_EinerVonEuchWerden_02_02"); //Jdi a promluv si s Corem Kalomem. Rozhodne, jak√° pr√°ce pro tebe bude nejlep≈°√≠.
 	
 	var C_NPC CorKalom;		CorKalom= Hlp_GetNpc(Gur_1201_CorKalom);
 	CorKalom.aivar[AIV_FINDABLE] = TRUE;
@@ -68,7 +68,7 @@ INSTANCE Info_Nov_2_WichtigePersonen(C_INFO)
 	condition	= Info_Nov_2_WichtigePersonen_Condition;
 	information	= Info_Nov_2_WichtigePersonen_Info;
 	permanent	= 1;
-	description = "Kdo je v·ö v˘dce?";
+	description = "Kdo je v√°≈° v≈Ødce?";
 };                       
 
 FUNC INT Info_Nov_2_WichtigePersonen_Condition()
@@ -78,9 +78,9 @@ FUNC INT Info_Nov_2_WichtigePersonen_Condition()
 
 FUNC VOID Info_Nov_2_WichtigePersonen_Info()
 {
-	AI_Output(other,self,"Info_Nov_2_WichtigePersonen_15_00"); //Kdo je v·ö v˘dce?
-	AI_Output(self,other,"Info_Nov_2_WichtigePersonen_02_01"); //Y'Berion, Cor Kalom a Cor Angar jsou naöi r·dci.
-	AI_Output(self,other,"Info_Nov_2_WichtigePersonen_02_02"); //Jsou naöÌm spojenÌm se Sp·Ëem. BÏhem vz˝v·nÌ jsou jedinÌ, kdo majÌ se Sp·Ëem kontakt.
+	AI_Output(other,self,"Info_Nov_2_WichtigePersonen_15_00"); //Kdo je v√°≈° v≈Ødce?
+	AI_Output(self,other,"Info_Nov_2_WichtigePersonen_02_01"); //Y'Berion, Cor Kalom a Cor Angar jsou na≈°i r√°dci.
+	AI_Output(self,other,"Info_Nov_2_WichtigePersonen_02_02"); //Jsou na≈°√≠m spojen√≠m se Sp√°ƒçem. Bƒõhem vz√Ωv√°n√≠ jsou jedin√≠, kdo maj√≠ se Sp√°ƒçem kontakt.
 	
 	var C_NPC YBerion;		YBerion	= Hlp_GetNpc(Gur_1200_Yberion);
 	var C_NPC CorKalom;		CorKalom= Hlp_GetNpc(Gur_1201_CorKalom);
@@ -100,7 +100,7 @@ INSTANCE Info_Nov_2_DasLager(C_INFO)
 	condition	= Info_Nov_2_DasLager_Condition;
 	information	= Info_Nov_2_DasLager_Info;
 	permanent	= 1;
-	description = "Co bych mÏl o tomhle mÌstÏ vÏdÏt?";
+	description = "Co bych mƒõl o tomhle m√≠stƒõ vƒõdƒõt?";
 };                       
 
 FUNC INT Info_Nov_2_DasLager_Condition()
@@ -110,9 +110,9 @@ FUNC INT Info_Nov_2_DasLager_Condition()
 
 FUNC VOID Info_Nov_2_DasLager_Info()
 {
-	AI_Output(other,self,"Info_Nov_2_DasLager_15_00"); //Co bych mÏl o tomhle mÌstÏ vÏdÏt?
-	AI_Output(self,other,"Info_Nov_2_DasLager_02_01"); //Toto je mÌsto vÌry, brat¯e. Nem·me toho mnoho, ale to co m·me, sdÌlÌme s kaûd˝m, kdo je ochoten naslouchat Sp·Ëovu uËenÌ.
-	AI_Output(self,other,"Info_Nov_2_DasLager_02_02"); //Promluv si s jednÌm z Guru a tv· duöe bude povznesena.
+	AI_Output(other,self,"Info_Nov_2_DasLager_15_00"); //Co bych mƒõl o tomhle m√≠stƒõ vƒõdƒõt?
+	AI_Output(self,other,"Info_Nov_2_DasLager_02_01"); //Toto je m√≠sto v√≠ry, brat≈ôe. Nem√°me toho mnoho, ale to co m√°me, sd√≠l√≠me s ka≈æd√Ωm, kdo je ochoten naslouchat Sp√°ƒçovu uƒçen√≠.
+	AI_Output(self,other,"Info_Nov_2_DasLager_02_02"); //Promluv si s jedn√≠m z Guru a tv√° du≈°e bude povznesena.
 };
 
 // *************************************************************************
@@ -136,7 +136,7 @@ FUNC INT Info_Nov_2_DieLage_Condition()
 FUNC VOID Info_Nov_2_DieLage_Info()
 {
 	AI_Output(other,self,"Info_Nov_2_DieLage_15_00"); //Jak to jde?
-	AI_Output(self,other,"Info_Nov_2_DieLage_02_01"); //Nem·m moc Ëasu. MusÌm pracovat.
+	AI_Output(self,other,"Info_Nov_2_DieLage_02_01"); //Nem√°m moc ƒçasu. Mus√≠m pracovat.
 };
 	
 // *************************************************************************

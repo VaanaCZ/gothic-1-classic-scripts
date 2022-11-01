@@ -18,7 +18,7 @@ FUNC int  Tpl_1400_GorNaBar_Exit_Condition()
 
 FUNC VOID  Tpl_1400_GorNaBar_Exit_Info()
 {
-	AI_Output			(self, other,"Tpl_1400_GorNaBar_Exit_Info_09_02"); //Ké tì Spáè ochrání!
+	AI_Output			(self, other,"Tpl_1400_GorNaBar_Exit_Info_09_02"); //KÃ©Å¾ tÄ› SpÃ¡Ä ochrÃ¡nÃ­!
 	AI_StopProcessInfos	( self );
 };
 
@@ -34,7 +34,7 @@ instance  Tpl_1400_GorNaBar_SUGGEST (C_INFO)
 	information		= Tpl_1400_GorNaBar_SUGGEST_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Potøebuju tvoji pomoc."; 
+	description		= "PotÅ™ebuju tvoji pomoc."; 
 };
 
 FUNC int  Tpl_1400_GorNaBar_SUGGEST_Condition()
@@ -48,17 +48,17 @@ FUNC int  Tpl_1400_GorNaBar_SUGGEST_Condition()
 
 FUNC void  Tpl_1400_GorNaBar_SUGGEST_Info()
 {
-	AI_Output			(other, self,"Tpl_1400_GorNaBar_SUGGEST_Info_15_01"); //Potøebuju tvoji pomoc.
-	AI_Output			(other, self,"Tpl_1400_GorNaBar_SUGGEST_Info_15_02"); //Hledám pro Kaloma vımìšek a asi vím, kde je èerví hnízdo.
-	AI_Output			(other, self,"Tpl_1400_GorNaBar_SUGGEST_Info_15_03"); //Jestli otevøeme chodbu, budeš tam taky?
-	AI_Output			(self, other,"Tpl_1400_GorNaBar_SUGGEST_Info_09_04"); //Hnízdo dùlních èervù. Koneènì! Mùj meè je ti k slubám!
+	AI_Output			(other, self,"Tpl_1400_GorNaBar_SUGGEST_Info_15_01"); //PotÅ™ebuju tvoji pomoc.
+	AI_Output			(other, self,"Tpl_1400_GorNaBar_SUGGEST_Info_15_02"); //HledÃ¡m pro Kaloma vÃ½mÄ›Å¡ek a asi vÃ­m, kde je ÄervÃ­ hnÃ­zdo.
+	AI_Output			(other, self,"Tpl_1400_GorNaBar_SUGGEST_Info_15_03"); //Jestli otevÅ™eme chodbu, budeÅ¡ tam taky?
+	AI_Output			(self, other,"Tpl_1400_GorNaBar_SUGGEST_Info_09_04"); //HnÃ­zdo dÅ¯lnÃ­ch ÄervÅ¯. KoneÄnÄ›! MÅ¯j meÄ je ti k sluÅ¾bÃ¡m!
 
 	AI_StopProcessInfos	(self);
 	Npc_ExchangeRoutine (self,"GATE"); 
 	Npc_SetPermAttitude (self,ATT_FRIENDLY); 
 	B_GiveXP			(XP_HireGorNaBar);
 
-	B_LogEntry		(CH2_MCEggs,"Kdy jsem se zmínil o hnízdì dùlních èervù, templáø Gor Na Bar pøislíbil posilu posádce u Asghanovıch vrat. Tam ho také najdu.");
+	B_LogEntry		(CH2_MCEggs,"KdyÅ¾ jsem se zmÃ­nil o hnÃ­zdÄ› dÅ¯lnÃ­ch ÄervÅ¯, templÃ¡Å™ Gor Na Bar pÅ™islÃ­bil posilu posÃ¡dce u AsghanovÃ½ch vrat. Tam ho takÃ© najdu.");
 };
 
 // ***************** Infos *****************************
@@ -70,7 +70,7 @@ instance  Tpl_1400_GorNaBar_INFO (C_INFO)
 	information		= Tpl_1400_GorNaBar_INFO_Info;
 	important		= 0;
 	permanent		= 1;
-	description		= "Co víš o dùlních èervech?";
+	description		= "Co vÃ­Å¡ o dÅ¯lnÃ­ch Äervech?";
 };
 
 FUNC int  Tpl_1400_GorNaBar_INFO_Condition()
@@ -83,8 +83,8 @@ FUNC int  Tpl_1400_GorNaBar_INFO_Condition()
 
 FUNC void  Tpl_1400_GorNaBar_INFO_Info()
 {
-	AI_Output			(other, self,"Tpl_1400_GorNaBar_INFO_Info_15_01"); //Co víš o dùlních èervech?
-	AI_Output			(self, other,"Tpl_1400_GorNaBar_INFO_Info_09_02"); //Èervi tu musí mít nìkde hnízdo. Kdybysme jenom vìdìli kde, mohli bysme znièit všechna mláïata.
+	AI_Output			(other, self,"Tpl_1400_GorNaBar_INFO_Info_15_01"); //Co vÃ­Å¡ o dÅ¯lnÃ­ch Äervech?
+	AI_Output			(self, other,"Tpl_1400_GorNaBar_INFO_Info_09_02"); //ÄŒervi tu musÃ­ mÃ­t nÄ›kde hnÃ­zdo. Kdybysme jenom vÄ›dÄ›li kde, mohli bysme zniÄit vÅ¡echna mlÃ¡Äata.
 };    
 
 
@@ -96,7 +96,7 @@ instance  Tpl_1400_GorNaBar_VICTORY (C_INFO)
 	information		= Tpl_1400_GorNaBar_VICTORY_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Našel jsem hnízdo královny!"; 
+	description		= "NaÅ¡el jsem hnÃ­zdo krÃ¡lovny!"; 
 };
 
 FUNC int  Tpl_1400_GorNaBar_VICTORY_Condition()
@@ -109,9 +109,9 @@ FUNC int  Tpl_1400_GorNaBar_VICTORY_Condition()
 };
 FUNC void  Tpl_1400_GorNaBar_VICTORY_Info()
 {
-	AI_Output			(other, self,"Tpl_1400_GorNaBar_VICTORY_Info_15_01"); //Našel jsem hnízdo královny!
-	AI_Output			(self, other,"Tpl_1400_GorNaBar_VICTORY_Info_09_02"); //Ukázal jsi odvahu a dùvtip! Potøebujeme lidi, jako jsi ty!
+	AI_Output			(other, self,"Tpl_1400_GorNaBar_VICTORY_Info_15_01"); //NaÅ¡el jsem hnÃ­zdo krÃ¡lovny!
+	AI_Output			(self, other,"Tpl_1400_GorNaBar_VICTORY_Info_09_02"); //UkÃ¡zal jsi odvahu a dÅ¯vtip! PotÅ™ebujeme lidi, jako jsi ty!
 	
 	Log_CreateTopic (GE_BecomeTemplar,LOG_NOTE);
-	B_LogEntry (GE_BecomeTemplar,"A pøinesu ta vajíèka, mìl bych si promluvit s Corem Angarem. Moná mi dovolí, abych se pøidal k templáøùm.");
+	B_LogEntry (GE_BecomeTemplar,"AÅ¾ pÅ™inesu ta vajÃ­Äka, mÄ›l bych si promluvit s Corem Angarem. MoÅ¾nÃ¡ mi dovolÃ­, abych se pÅ™idal k templÃ¡Å™Å¯m.");
 };  

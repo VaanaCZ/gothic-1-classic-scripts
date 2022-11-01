@@ -37,7 +37,7 @@ INSTANCE Info_Mine_Org_6_Mine (C_INFO) // E1
 	condition	= Info_Mine_Org_6_Mine_Condition;
 	information	= Info_Mine_Org_6_Mine_Info;
 	permanent	= 1;
-	description = "Co se v tom dole dìje?";
+	description = "Co se v tom dole dÄ›je?";
 };                       
 
 FUNC INT Info_Mine_Org_6_Mine_Condition()
@@ -47,9 +47,9 @@ FUNC INT Info_Mine_Org_6_Mine_Condition()
 
 FUNC VOID Info_Mine_Org_6_Mine_Info()
 {
-	AI_Output(other,self,"Info_Mine_Org_6_Mine_15_00"); //Co se v tom dole dìje?
-	AI_Output(self,other,"Info_Mine_Org_6_Mine_06_01"); //V tom dole? Chlapi tam zùstávají. Nikdo nechodí dovnitø, nikdo ven.
-	AI_Output(self,other,"Info_Mine_Org_6_Mine_06_02"); //Mìl bys být rád, že jsi venku.
+	AI_Output(other,self,"Info_Mine_Org_6_Mine_15_00"); //Co se v tom dole dÄ›je?
+	AI_Output(self,other,"Info_Mine_Org_6_Mine_06_01"); //V tom dole? Chlapi tam zÅ¯stÃ¡vajÃ­. Nikdo nechodÃ­ dovnitÅ™, nikdo ven.
+	AI_Output(self,other,"Info_Mine_Org_6_Mine_06_02"); //MÄ›l bys bÃ½t rÃ¡d, Å¾e jsi venku.
 	
 };
 
@@ -63,7 +63,7 @@ INSTANCE Info_Mine_Org_6_WichtigePersonen(C_INFO)
 	condition	= Info_Mine_Org_6_WichtigePersonen_Condition;
 	information	= Info_Mine_Org_6_WichtigePersonen_Info;
 	permanent	= 1;
-	description = "Kdo tady dává rozkazy?";
+	description = "Kdo tady dÃ¡vÃ¡ rozkazy?";
 };                       
 
 FUNC INT Info_Mine_Org_6_WichtigePersonen_Condition()
@@ -73,10 +73,10 @@ FUNC INT Info_Mine_Org_6_WichtigePersonen_Condition()
 
 FUNC VOID Info_Mine_Org_6_WichtigePersonen_Info()
 {
-	AI_Output(other,self,"Info_Mine_Org_6_WichtigePersonen_15_00"); //Kdo tady dává rozkazy?
-	AI_Output(self,other,"Info_Mine_Org_6_WichtigePersonen_06_01"); //Nikdo mi nedává rozkazy, ale musíš vìdìt, jak si to zaøídit.
-	AI_Output(other,self,"Info_Mine_Org_6_WichtigePersonen_15_01"); //A jak se to zaøídí?
-	AI_Output(self,other,"Info_Mine_Org_6_WichtigePersonen_06_02"); //To je staré tajemství! Ale mezi náma, pro banditu to není nic tìžkého.
+	AI_Output(other,self,"Info_Mine_Org_6_WichtigePersonen_15_00"); //Kdo tady dÃ¡vÃ¡ rozkazy?
+	AI_Output(self,other,"Info_Mine_Org_6_WichtigePersonen_06_01"); //Nikdo mi nedÃ¡vÃ¡ rozkazy, ale musÃ­Å¡ vÄ›dÄ›t, jak si to zaÅ™Ã­dit.
+	AI_Output(other,self,"Info_Mine_Org_6_WichtigePersonen_15_01"); //A jak se to zaÅ™Ã­dÃ­?
+	AI_Output(self,other,"Info_Mine_Org_6_WichtigePersonen_06_02"); //To je starÃ© tajemstvÃ­! Ale mezi nÃ¡ma, pro banditu to nenÃ­ nic tÄ›Å¾kÃ©ho.
 };
 
 
@@ -90,7 +90,7 @@ INSTANCE Info_Mine_Org_6_DieLage(C_INFO) // E1
 	condition	= Info_Mine_Org_6_DieLage_Condition;
 	information	= Info_Mine_Org_6_DieLage_Info;
 	permanent	= 1;
-	description = "Nevypadáš, že bys byl právì pøepracovaný.";
+	description = "NevypadÃ¡Å¡, Å¾e bys byl prÃ¡vÄ› pÅ™epracovanÃ½.";
 };                       
 
 FUNC INT Info_Mine_Org_6_DieLage_Condition()
@@ -100,8 +100,8 @@ FUNC INT Info_Mine_Org_6_DieLage_Condition()
 
 FUNC VOID Info_Mine_Org_6_DieLage_Info()
 {
-	AI_Output(other,self,"Info_Mine_Org_6_DieLage_15_00"); //Nevypadáš, že bys byl právì pøepracovaný.
- 	AI_Output(self,other,"Info_Mine_Org_6_DieLage_06_01"); //Já a práce?! Pokud já jsem pracoval, pak to nebylo v Paláci, jestli mi rozumíš.
+	AI_Output(other,self,"Info_Mine_Org_6_DieLage_15_00"); //NevypadÃ¡Å¡, Å¾e bys byl prÃ¡vÄ› pÅ™epracovanÃ½.
+ 	AI_Output(self,other,"Info_Mine_Org_6_DieLage_06_01"); //JÃ¡ a prÃ¡ce?! Pokud jÃ¡ jsem pracoval, pak to nebylo v PalÃ¡ci, jestli mi rozumÃ­Å¡.
 };
 	
 // *************************************************************************

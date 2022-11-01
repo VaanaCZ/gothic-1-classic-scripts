@@ -75,12 +75,12 @@ INSTANCE Molerat	(Mst_Default_Molerat)
 
 
 /*************************************************************************
-**	junge Molerat   (für Spielstart) 									**
+**	junge Molerat   (fÃ¼r Spielstart) 									**
 *************************************************************************/
 
 INSTANCE YMolerat	(Mst_Default_Molerat)
 {
-	name							=	"Mladý krysokrt";
+	name							=	"MladÃ½ krysokrt";
 	level							=	4;
 
 	attribute	[ATR_STRENGTH]		=	5;

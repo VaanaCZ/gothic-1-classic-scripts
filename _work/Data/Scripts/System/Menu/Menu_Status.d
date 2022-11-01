@@ -145,7 +145,7 @@ const int STAT_B_X3 = 7200;
 
 instance MENU_ITEM_PLAYERGUILD_TITLE(C_MENU_ITEM_DEF)
 {
-	text[0]	 = "SpoleË.:";
+	text[0]	 = "Spoleƒç.:";
 	posx	 = STAT_A_X1;	posy = STAT_PLY_Y+STAT_DY*0;	
 	fontName	=	STAT_FONT_DEFAULT;
 	flags		=	flags & ~IT_SELECTABLE;
@@ -190,7 +190,7 @@ INSTANCE MENU_ITEM_PLAYERNAME(C_MENU_ITEM_DEF)
 INSTANCE MENU_ITEM_LEVEL_TITLE(C_MENU_ITEM_DEF)
 {
 	posx = STAT_A_X1;	posy = STAT_PLY_Y + 1*STAT_DY;
-	text[0]	= "⁄roveÚ";	
+	text[0]	= "√örove≈à";	
 	fontName= STAT_FONT_DEFAULT;		
 	flags	= flags & ~IT_SELECTABLE;
 };
@@ -198,7 +198,7 @@ INSTANCE MENU_ITEM_LEVEL_TITLE(C_MENU_ITEM_DEF)
 INSTANCE MENU_ITEM_EXP_TITLE(C_MENU_ITEM_DEF)
 {
 	posx = STAT_A_X1;	posy = STAT_PLY_Y + 2*STAT_DY;	
-	text[0]	= "Zkuöenost"; 
+	text[0]	= "Zku≈°enost"; 
 	fontName = STAT_FONT_DEFAULT;	
 	flags	= flags & ~IT_SELECTABLE;
 };
@@ -206,7 +206,7 @@ INSTANCE MENU_ITEM_EXP_TITLE(C_MENU_ITEM_DEF)
 INSTANCE MENU_ITEM_LEVEL_NEXT_TITLE(C_MENU_ITEM_DEF)
 {
 	posx = STAT_A_X1;	posy = STAT_PLY_Y + 3*STAT_DY;	
-	text[0]	= "DalöÌ ˙roveÚ";
+	text[0]	= "Dal≈°√≠ √∫rove≈à";
 	fontName = STAT_FONT_DEFAULT;
 	flags	= flags & ~IT_SELECTABLE;
 };
@@ -214,7 +214,7 @@ INSTANCE MENU_ITEM_LEVEL_NEXT_TITLE(C_MENU_ITEM_DEF)
 INSTANCE MENU_ITEM_LEARN_TITLE(C_MENU_ITEM_DEF)
 {
 	posx = STAT_A_X1;	posy = STAT_PLY_Y + 4*STAT_DY;	
-	text[0]	= "ZkuöenostnÌ body";	
+	text[0]	= "Zku≈°enostn√≠ body";	
 	fontName = STAT_FONT_DEFAULT;
 	flags	= flags & ~IT_SELECTABLE;
 };
@@ -267,7 +267,7 @@ INSTANCE MENU_ITEM_ATTRIBUTE_HEADING(C_MENU_ITEM_DEF)
 INSTANCE MENU_ITEM_ATTRIBUTE_1_TITLE(C_MENU_ITEM_DEF)
 {
 	posx = STAT_A_X1;	posy = STAT_ATR_Y + 1*STAT_DY;
-	text[0]		= 	"SÌla";
+	text[0]		= 	"S√≠la";
 	fontName	= 	STAT_FONT_DEFAULT;
 	flags		= 	flags & ~IT_SELECTABLE;
 };
@@ -288,7 +288,7 @@ INSTANCE MENU_ITEM_ATTRIBUTE_3_TITLE(C_MENU_ITEM_DEF)
 INSTANCE MENU_ITEM_ATTRIBUTE_4_TITLE(C_MENU_ITEM_DEF)
 {
 	posx = STAT_A_X1;	posy = STAT_ATR_Y + 4*STAT_DY;
-	text[0]		=	"ZdravÌ";
+	text[0]		=	"Zdrav√≠";
 	fontName	=	STAT_FONT_DEFAULT;
 	flags		=	flags & ~IT_SELECTABLE;
 };
@@ -334,14 +334,14 @@ INSTANCE MENU_ITEM_ARMOR_HEADING(C_MENU_ITEM_DEF)
 
 INSTANCE MENU_ITEM_ARMOR_1_TITLE(C_MENU_ITEM_DEF)
 {
-	text[0]	= "proti zbranÌm";
+	text[0]	= "proti zbran√≠m";
 	posx =  STAT_A_X1; posy = STAT_ARM_Y + 1*STAT_DY;	fontName = STAT_FONT_DEFAULT;
 	flags = flags & ~IT_SELECTABLE;
 };
 
 INSTANCE MENU_ITEM_ARMOR_2_TITLE(C_MENU_ITEM_DEF)
 {
-	text[0]	= "proti öÌp˘m";
+	text[0]	= "proti ≈°√≠p≈Øm";
 	posx =  STAT_A_X1; posy = STAT_ARM_Y + 2*STAT_DY;	fontName = STAT_FONT_DEFAULT;
 	flags = flags & ~IT_SELECTABLE;
 };
@@ -395,7 +395,7 @@ INSTANCE MENU_ITEM_ARMOR_4(C_MENU_ITEM_DEF)
 // Headings
 INSTANCE MENU_ITEM_TALENTS_WEAPON_HEADING(C_MENU_ITEM_DEF)
 {
-	text[0]	= "BOJOV… DOVEDNOSTI / KRITICK› ⁄DER";
+	text[0]	= "BOJOV√â DOVEDNOSTI / KRITICK√ù √öDER";
 	posx	= STAT_B_X1; posy = STAT_TAL_Y + STAT_DY*0;
 	fontName	=	STAT_FONT_TITLE;	
 	flags		=	flags & ~IT_SELECTABLE;
@@ -403,7 +403,7 @@ INSTANCE MENU_ITEM_TALENTS_WEAPON_HEADING(C_MENU_ITEM_DEF)
 
 INSTANCE MENU_ITEM_TALENTS_THIEF_HEADING(C_MENU_ITEM_DEF)
 {
-	text[0]	= "ZLODÃJ. DOVEDNOSTI / MOéNOST PÿISTIéENÕ";
+	text[0]	= "ZLODƒöJ. DOVEDNOSTI / MO≈ΩNOST P≈òISTI≈ΩEN√ç";
 	posx	= STAT_B_X1; posy = STAT_TAL_Y + STAT_DY*6;
 	fontName	=	STAT_FONT_TITLE;	
 	flags		=	flags & ~IT_SELECTABLE;
@@ -411,7 +411,7 @@ INSTANCE MENU_ITEM_TALENTS_THIEF_HEADING(C_MENU_ITEM_DEF)
 
 INSTANCE MENU_ITEM_TALENTS_SPECIAL_HEADING(C_MENU_ITEM_DEF)
 {
-	text[0]	= "ZVL¡äTNÕ DOVEDNOSTI";
+	text[0]	= "ZVL√Å≈†TN√ç DOVEDNOSTI";
 	posx	= STAT_B_X1; posy = STAT_TAL_Y + STAT_DY*14;
 	fontName	=	STAT_FONT_TITLE;
 	flags		=	flags & ~IT_SELECTABLE;

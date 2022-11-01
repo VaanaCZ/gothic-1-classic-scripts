@@ -24,7 +24,7 @@ FUNC VOID Info_FindNPC_NC_Info()
 	VAR C_NPC Cronos;		Cronos = Hlp_GetNpc(KdW_604_Cronos);
 	if (Cronos.aivar[AIV_FINDABLE] == TRUE)
 	{
-		Info_AddChoice(Info_FindNPC_NC,"...nìkterého z mágù?", Info_FindNPC_NC_Mage);
+		Info_AddChoice(Info_FindNPC_NC,"...nÄ›kterÃ©ho z mÃ¡gÅ¯?", Info_FindNPC_NC_Mage);
 	};
 	
 	VAR C_NPC Gorn;		Gorn = Hlp_GetNpc(PC_Fighter);
@@ -71,26 +71,26 @@ FUNC VOID Info_FindNPC_NC_Gorn()
 		{
 			if (self.voice == 6)
 			{
-				AI_Output(self,other,"Info_FindNPC_NC_Gorn_06_01"); //Kdy vejdeš do jeskynì, dr se vpravo. Pøímo pøed tebou bude pár chatrèí. ije v jedné z nich.
+				AI_Output(self,other,"Info_FindNPC_NC_Gorn_06_01"); //KdyÅ¾ vejdeÅ¡ do jeskynÄ›, drÅ¾ se vpravo. PÅ™Ã­mo pÅ™ed tebou bude pÃ¡r chatrÄÃ­. Å½ije v jednÃ© z nich.
 			}
 			else if (self.voice == 7)
 			{
-				AI_Output(self,other,"Info_FindNPC_NC_Gorn_07_01"); //Kdy vejdeš do jeskynì, dr se vpravo. Pøímo pøed tebou bude pár chatrèí. ije v jedné z nich.
+				AI_Output(self,other,"Info_FindNPC_NC_Gorn_07_01"); //KdyÅ¾ vejdeÅ¡ do jeskynÄ›, drÅ¾ se vpravo. PÅ™Ã­mo pÅ™ed tebou bude pÃ¡r chatrÄÃ­. Å½ije v jednÃ© z nich.
 			}
 			else if (self.voice == 13)
 			{
-				AI_Output(self,other,"Info_FindNPC_NC_Gorn_13_01"); //Kdy vejdeš do jeskynì, dr se vpravo. Pøímo pøed tebou bude pár chatrèí. ije v jedné z nich.
+				AI_Output(self,other,"Info_FindNPC_NC_Gorn_13_01"); //KdyÅ¾ vejdeÅ¡ do jeskynÄ›, drÅ¾ se vpravo. PÅ™Ã­mo pÅ™ed tebou bude pÃ¡r chatrÄÃ­. Å½ije v jednÃ© z nich.
 			};
 		}
 		else if (self.guild == GIL_SLD) 
 		{
 			if (self.voice == 8)
 			{
-				AI_Output(self,other,"Info_FindNPC_NC_Gorn_08_01"); //Kdy vejdeš do jeskynì, dr se vpravo. Pøímo pøed tebou bude pár chatrèí. ije v jedné z nich.
+				AI_Output(self,other,"Info_FindNPC_NC_Gorn_08_01"); //KdyÅ¾ vejdeÅ¡ do jeskynÄ›, drÅ¾ se vpravo. PÅ™Ã­mo pÅ™ed tebou bude pÃ¡r chatrÄÃ­. Å½ije v jednÃ© z nich.
 			}
 			else if (self.voice == 11)
 			{
-				AI_Output(self,other,"Info_FindNPC_NC_Gorn_11_01"); //Kdy vejdeš do jeskynì, dr se vpravo. Pøímo pøed tebou bude pár chatrèí. ije v jedné z nich.
+				AI_Output(self,other,"Info_FindNPC_NC_Gorn_11_01"); //KdyÅ¾ vejdeÅ¡ do jeskynÄ›, drÅ¾ se vpravo. PÅ™Ã­mo pÅ™ed tebou bude pÃ¡r chatrÄÃ­. Å½ije v jednÃ© z nich.
 			};
 		};
 	};
@@ -118,26 +118,26 @@ FUNC VOID Info_FindNPC_NC_Lares()
 		{
 			if (self.voice == 6)
 			{
-				AI_Output(self,other,"Info_FindNPC_NC_Lares_06_01"); //Hned vzadu, po levé stranì jeskynì. Nemùeš to pøehlédnout. A tì zastaví jeho chlapi, budeš vìdìt, es ho našel.
+				AI_Output(self,other,"Info_FindNPC_NC_Lares_06_01"); //Hned vzadu, po levÃ© stranÄ› jeskynÄ›. NemÅ¯Å¾eÅ¡ to pÅ™ehlÃ©dnout. AÅ¾ tÄ› zastavÃ­ jeho chlapi, budeÅ¡ vÄ›dÄ›t, Å¾es ho naÅ¡el.
 			}
 			else if (self.voice == 7)
 			{
-				AI_Output(self,other,"Info_FindNPC_NC_Lares_07_01"); //Hned vzadu, po levé stranì jeskynì. Nemùeš to pøehlédnout. A tì zastaví jeho chlapi, budeš vìdìt, es ho našel.
+				AI_Output(self,other,"Info_FindNPC_NC_Lares_07_01"); //Hned vzadu, po levÃ© stranÄ› jeskynÄ›. NemÅ¯Å¾eÅ¡ to pÅ™ehlÃ©dnout. AÅ¾ tÄ› zastavÃ­ jeho chlapi, budeÅ¡ vÄ›dÄ›t, Å¾es ho naÅ¡el.
 			}
 			else if (self.voice == 13)
 			{
-				AI_Output(self,other,"Info_FindNPC_NC_Lares_13_01"); //Hned vzadu, po levé stranì jeskynì. Nemùeš to pøehlédnout. A tì zastaví jeho chlapi, budeš vìdìt, es ho našel.
+				AI_Output(self,other,"Info_FindNPC_NC_Lares_13_01"); //Hned vzadu, po levÃ© stranÄ› jeskynÄ›. NemÅ¯Å¾eÅ¡ to pÅ™ehlÃ©dnout. AÅ¾ tÄ› zastavÃ­ jeho chlapi, budeÅ¡ vÄ›dÄ›t, Å¾es ho naÅ¡el.
 			};
 		}
 		else if (self.guild == GIL_SLD) 
 		{
 			if (self.voice == 8)
 			{
-				AI_Output(self,other,"Info_FindNPC_NC_Lares_08_01"); //Hned vzadu, po levé stranì jeskynì. Nemùeš to pøehlédnout. A tì zastaví jeho chlapi, budeš vìdìt, es ho našel.
+				AI_Output(self,other,"Info_FindNPC_NC_Lares_08_01"); //Hned vzadu, po levÃ© stranÄ› jeskynÄ›. NemÅ¯Å¾eÅ¡ to pÅ™ehlÃ©dnout. AÅ¾ tÄ› zastavÃ­ jeho chlapi, budeÅ¡ vÄ›dÄ›t, Å¾es ho naÅ¡el.
 			}
 			else if (self.voice == 11)
 			{
-				AI_Output(self,other,"Info_FindNPC_NC_Lares_11_01"); //Hned vzadu, po levé stranì jeskynì. Nemùeš to pøehlédnout. A tì zastaví jeho chlapi, budeš vìdìt, es ho našel.
+				AI_Output(self,other,"Info_FindNPC_NC_Lares_11_01"); //Hned vzadu, po levÃ© stranÄ› jeskynÄ›. NemÅ¯Å¾eÅ¡ to pÅ™ehlÃ©dnout. AÅ¾ tÄ› zastavÃ­ jeho chlapi, budeÅ¡ vÄ›dÄ›t, Å¾es ho naÅ¡el.
 			};
 		};
 	};
@@ -165,26 +165,26 @@ FUNC VOID Info_FindNPC_NC_Lee()
 		{
 			if (self.voice == 6)
 			{
-				AI_Output(self,other,"Info_FindNPC_NC_Lee_06_01"); //Jdi do velké jeskynì, pak zahni doprava a pak pøímo nahoru.
+				AI_Output(self,other,"Info_FindNPC_NC_Lee_06_01"); //Jdi do velkÃ© jeskynÄ›, pak zahni doprava a pak pÅ™Ã­mo nahoru.
 			}
 			else if (self.voice == 7)
 			{
-				AI_Output(self,other,"Info_FindNPC_NC_Lee_07_01"); //Jdi do velké jeskynì, pak zahni doprava a pak pøímo nahoru.
+				AI_Output(self,other,"Info_FindNPC_NC_Lee_07_01"); //Jdi do velkÃ© jeskynÄ›, pak zahni doprava a pak pÅ™Ã­mo nahoru.
 			}
 			else if (self.voice == 13)
 			{
-				AI_Output(self,other,"Info_FindNPC_NC_Lee_13_01"); //Jdi do velké jeskynì, pak zahni doprava a pak pøímo nahoru.
+				AI_Output(self,other,"Info_FindNPC_NC_Lee_13_01"); //Jdi do velkÃ© jeskynÄ›, pak zahni doprava a pak pÅ™Ã­mo nahoru.
 			};
 		}
 		else if (self.guild == GIL_SLD) 
 		{
 			if (self.voice == 8)
 			{
-				AI_Output(self,other,"Info_FindNPC_NC_Lee_08_01"); //Jdi do velké jeskynì, pak zahni doprava a pak pøímo nahoru.
+				AI_Output(self,other,"Info_FindNPC_NC_Lee_08_01"); //Jdi do velkÃ© jeskynÄ›, pak zahni doprava a pak pÅ™Ã­mo nahoru.
 			}
 			else if (self.voice == 11)
 			{
-				AI_Output(self,other,"Info_FindNPC_NC_Lee_11_01"); //Jdi do velké jeskynì, pak zahni doprava a pak pøímo nahoru.
+				AI_Output(self,other,"Info_FindNPC_NC_Lee_11_01"); //Jdi do velkÃ© jeskynÄ›, pak zahni doprava a pak pÅ™Ã­mo nahoru.
 			};
 		};
 	};
@@ -198,7 +198,7 @@ FUNC VOID Info_FindNPC_NC_Lee()
 
 FUNC VOID Info_FindNPC_NC_Mage()
 {
-	AI_Output(other,self,"Info_FindNPC_NC_Cronos_15_00"); //Kde najdu nìjakého mága?
+	AI_Output(other,self,"Info_FindNPC_NC_Cronos_15_00"); //Kde najdu nÄ›jakÃ©ho mÃ¡ga?
 
 	VAR C_NPC Cronos;		Cronos = Hlp_GetNpc(KdW_604_Cronos);
 	
@@ -212,26 +212,26 @@ FUNC VOID Info_FindNPC_NC_Mage()
 		{
 			if (self.voice == 6)
 			{
-				AI_Output(self,other,"Info_FindNPC_NC_Cronos_06_01"); //Obvykle ijí oddìlenì v horní èásti jeskynì. Nìkdy je ale uvidíš dole nad rudnou haldou uprostøed jeskynì.
+				AI_Output(self,other,"Info_FindNPC_NC_Cronos_06_01"); //Obvykle Å¾ijÃ­ oddÄ›lenÄ› v hornÃ­ ÄÃ¡sti jeskynÄ›. NÄ›kdy je ale uvidÃ­Å¡ dole nad rudnou haldou uprostÅ™ed jeskynÄ›.
 			}
 			else if (self.voice == 7)
 			{
-				AI_Output(self,other,"Info_FindNPC_NC_Cronos_07_01"); //Obvykle ijí oddìlenì v horní èásti jeskynì. Nìkdy je ale uvidíš dole nad rudnou haldou uprostøed jeskynì.
+				AI_Output(self,other,"Info_FindNPC_NC_Cronos_07_01"); //Obvykle Å¾ijÃ­ oddÄ›lenÄ› v hornÃ­ ÄÃ¡sti jeskynÄ›. NÄ›kdy je ale uvidÃ­Å¡ dole nad rudnou haldou uprostÅ™ed jeskynÄ›.
 			}
 			else if (self.voice == 13)
 			{
-				AI_Output(self,other,"Info_FindNPC_NC_Cronos_13_01"); //Obvykle ijí oddìlenì v horní èásti jeskynì. Nìkdy je ale uvidíš dole nad rudnou haldou uprostøed jeskynì.
+				AI_Output(self,other,"Info_FindNPC_NC_Cronos_13_01"); //Obvykle Å¾ijÃ­ oddÄ›lenÄ› v hornÃ­ ÄÃ¡sti jeskynÄ›. NÄ›kdy je ale uvidÃ­Å¡ dole nad rudnou haldou uprostÅ™ed jeskynÄ›.
 			};
 		}
 		else if (self.guild == GIL_SLD) 
 		{
 			if (self.voice == 8)
 			{
-				AI_Output(self,other,"Info_FindNPC_NC_Cronos_08_01"); //Obvykle ijí oddìlenì v horní èásti jeskynì. Nìkdy je ale uvidíš dole nad rudnou haldou uprostøed jeskynì.
+				AI_Output(self,other,"Info_FindNPC_NC_Cronos_08_01"); //Obvykle Å¾ijÃ­ oddÄ›lenÄ› v hornÃ­ ÄÃ¡sti jeskynÄ›. NÄ›kdy je ale uvidÃ­Å¡ dole nad rudnou haldou uprostÅ™ed jeskynÄ›.
 			}
 			else if (self.voice == 11)
 			{
-				AI_Output(self,other,"Info_FindNPC_NC_Cronos_11_01"); //Obvykle ijí oddìlenì v horní èásti jeskynì. Nìkdy je ale uvidíš dole nad rudnou haldou uprostøed jeskynì.
+				AI_Output(self,other,"Info_FindNPC_NC_Cronos_11_01"); //Obvykle Å¾ijÃ­ oddÄ›lenÄ› v hornÃ­ ÄÃ¡sti jeskynÄ›. NÄ›kdy je ale uvidÃ­Å¡ dole nad rudnou haldou uprostÅ™ed jeskynÄ›.
 			};
 		};
 	};

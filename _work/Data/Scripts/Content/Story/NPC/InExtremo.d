@@ -117,7 +117,7 @@ instance InExtremo_ThomasTheForger(Npc_Default)
 {
 	//-------- primary data --------
 	
-	name =					"Kováø Thomas";
+	name =					"KovÃ¡Å™ Thomas";
    	npctype	= npctype_main;
    	guild =					GIL_NONE;
 	level =					4;
@@ -175,7 +175,7 @@ instance InExtremo_Unicorn(Npc_Default)
 {
 	//-------- primary data --------
 	
-	name =					"Jednorožec";
+	name =					"JednoroÅ¾ec";
 	npctype		= 	npctype_main;
    	guild =					GIL_NONE;
 	level =					4;
@@ -231,7 +231,7 @@ instance InExtremo_YellowPfeiffer(Npc_Default)
 {
 	//-------- primary data --------
 	
-	name =					"Žlutý pepø";
+	name =					"Å½lutÃ½ pepÅ™";
    	npctype		= 	npctype_main;
    	guild =					GIL_NONE;
 	level =					4;
@@ -389,10 +389,10 @@ FUNC VOID Rtn_off_396 ()
 
 
 /////////////////////////////////////////
-// STEVE GÄTCHEN	  ///////////////////
+// STEVE GÃ„TCHEN	  ///////////////////
 /////////////////////////////////////////
 
-// Ansager für In Extremo
+// Ansager fÃ¼r In Extremo
 
 instance IE_397_Announcer(Npc_Default)
 {

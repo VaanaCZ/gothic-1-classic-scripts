@@ -19,7 +19,7 @@ FUNC int  Info_XardasDemon_EXIT_Condition()
 FUNC VOID  Info_XardasDemon_EXIT_Info()
 {
 	AI_Output (self, other,"DIA_BaalCadar_NoTalk_Hi_02_01"); //
-	AI_Output (hero, self,"Info_Saturas_EXIT_15_01"); //...SmrtelnÌk? ...kdo, j·? ...Dobr·,  j· si jdu po sv˝ch!
+	AI_Output (hero, self,"Info_Saturas_EXIT_15_01"); //...Smrteln√≠k? ...kdo, j√°? ...Dobr√°,  j√° si jdu po sv√Ωch!
 
 	AI_StopProcessInfos	(self);
 };
@@ -59,14 +59,14 @@ FUNC INT Info_XardasDemon_INTRO_Condition()
 FUNC VOID Info_XardasDemon_INTRO_Info()
 {
 	AI_TurnAway		(hero, self);
-	AI_Output		(hero, self,"Info_XardasDemon_INTRO_15_01"); //Zadrû... Kdo... Kdo to na mÏ mluvÌ?
+	AI_Output		(hero, self,"Info_XardasDemon_INTRO_15_01"); //Zadr≈æ... Kdo... Kdo to na mƒõ mluv√≠?
 	AI_WhirlAround	(hero, self);	//KEIN B_Whirlaround()!!!
-	AI_Output		(hero, self,"Info_XardasDemon_INTRO_15_02"); //TY na mÏ mluvÌö??? Jak... Ty ses dostal do mojÌ hlavy?
+	AI_Output		(hero, self,"Info_XardasDemon_INTRO_15_02"); //TY na mƒõ mluv√≠≈°??? Jak... Ty ses dostal do moj√≠ hlavy?
 	AI_Output (self, other,"DIA_BaalCadar_NoTalk_Hi_02_01"); //
-	AI_Output		(hero, self,"Info_XardasDemon_INTRO_15_03"); //Co jsi zaË?... SluûebnÌk svÈho p·na?
-	AI_Output		(hero, self,"Info_XardasDemon_INTRO_15_04"); //Vypad·ö jako pekeln· p¯Ìöera!
+	AI_Output		(hero, self,"Info_XardasDemon_INTRO_15_03"); //Co jsi zaƒç?... Slu≈æebn√≠k sv√©ho p√°na?
+	AI_Output		(hero, self,"Info_XardasDemon_INTRO_15_04"); //Vypad√°≈° jako pekeln√° p≈ô√≠≈°era!
 	AI_Output (self, other,"DIA_BaalCadar_NoTalk_Hi_02_01"); //
-	AI_Output		(hero, self,"Info_XardasDemon_INTRO_15_05"); //Chceö, abych byl zticha?
+	AI_Output		(hero, self,"Info_XardasDemon_INTRO_15_05"); //Chce≈°, abych byl zticha?
 };
 
 //***************************************************************************
@@ -79,7 +79,7 @@ instance Info_XardasDemon_MASTERWHO (C_INFO)
 	information	= Info_XardasDemon_MASTERWHO_Info;
 	permanent	= 0;
 	important 	= 0;
-	description = "Nejmenuje se tv˘j p·n n·hodou Xardas?";
+	description = "Nejmenuje se tv≈Øj p√°n n√°hodou Xardas?";
 };
 
 FUNC INT Info_XardasDemon_MASTERWHO_Condition()
@@ -92,10 +92,10 @@ FUNC INT Info_XardasDemon_MASTERWHO_Condition()
 
 FUNC VOID Info_XardasDemon_MASTERWHO_Info()
 {
-	AI_Output		(hero, self,"Info_XardasDemon_MASTERWHO_15_01"); //Nejmenuje se tv˘j p·n n·hodou Xardas?
+	AI_Output		(hero, self,"Info_XardasDemon_MASTERWHO_15_01"); //Nejmenuje se tv≈Øj p√°n n√°hodou Xardas?
 	AI_Output (self, other,"DIA_BaalCadar_NoTalk_Hi_02_01"); //
-	AI_Output		(hero, self,"Info_XardasDemon_MASTERWHO_15_02"); //Och, jistÏ... JmÈna nejsou podstatn·... Dob¯e.
-	AI_Output		(hero, self,"Info_XardasDemon_MASTERWHO_15_03"); //P¯edpokl·dejme, ûe to, co je tady, je Xardasova vÏû.
+	AI_Output		(hero, self,"Info_XardasDemon_MASTERWHO_15_02"); //Och, jistƒõ... Jm√©na nejsou podstatn√°... Dob≈ôe.
+	AI_Output		(hero, self,"Info_XardasDemon_MASTERWHO_15_03"); //P≈ôedpokl√°dejme, ≈æe to, co je tady, je Xardasova vƒõ≈æ.
 };
 
 //***************************************************************************
@@ -108,7 +108,7 @@ instance Info_XardasDemon_MASTERHOW (C_INFO)
 	information	= Info_XardasDemon_MASTERHOW_Info;
 	permanent	= 0;
 	important 	= 0;
-	description = "MusÌm mluvit s tv˝m p·nem!";
+	description = "Mus√≠m mluvit s tv√Ωm p√°nem!";
 };
 
 FUNC INT Info_XardasDemon_MASTERHOW_Condition()
@@ -121,17 +121,17 @@ FUNC INT Info_XardasDemon_MASTERHOW_Condition()
 
 FUNC VOID Info_XardasDemon_MASTERHOW_Info()
 {
-	AI_Output		(hero, self,"Info_XardasDemon_MASTERHOW_15_01"); //MusÌm mluvit s tv˝m p·nem!
+	AI_Output		(hero, self,"Info_XardasDemon_MASTERHOW_15_01"); //Mus√≠m mluvit s tv√Ωm p√°nem!
 	AI_Output (self, other,"DIA_BaalCadar_NoTalk_Hi_02_01"); //
-	AI_Output		(hero, self,"Info_XardasDemon_MASTERHOW_15_02"); //...J·? ...Bezcenn˝? ...Jak˝ druh zkouöky???
+	AI_Output		(hero, self,"Info_XardasDemon_MASTERHOW_15_02"); //...J√°? ...Bezcenn√Ω? ...Jak√Ω druh zkou≈°ky???
 	AI_Output (self, other,"DIA_BaalCadar_NoTalk_Hi_02_01"); //
-	AI_Output		(hero, self,"Info_XardasDemon_MASTERHOW_15_03"); //...AAchchchch... RozumÌm... Kdokoliv chce mluvit s tv˝m p·nem, musÌ nejd¯Ìv sloûit zkouöku hodnosti!
-	AI_Output		(hero, self,"Info_XardasDemon_MASTERHOW_15_04"); //... Zadrû, coûe? ... D˘kaz?... VÌtÏzstvÌ nad ËÌm?... VÌtÏzstvÌ nad ûivly?...
-	AI_Output		(hero, self,"Info_XardasDemon_MASTERHOW_15_05"); //... Kameny? ...Led? ...OheÚ?
+	AI_Output		(hero, self,"Info_XardasDemon_MASTERHOW_15_03"); //...AAchchchch... Rozum√≠m... Kdokoliv chce mluvit s tv√Ωm p√°nem, mus√≠ nejd≈ô√≠v slo≈æit zkou≈°ku hodnosti!
+	AI_Output		(hero, self,"Info_XardasDemon_MASTERHOW_15_04"); //... Zadr≈æ, co≈æe? ... D≈Økaz?... V√≠tƒõzstv√≠ nad ƒç√≠m?... V√≠tƒõzstv√≠ nad ≈æivly?...
+	AI_Output		(hero, self,"Info_XardasDemon_MASTERHOW_15_05"); //... Kameny? ...Led? ...Ohe≈à?
 
 	FindGolemHearts = 1;		// Auftrag vergeben
 
-	B_LogEntry		(CH4_FindXardas,"V XardasovÏ vÏûi jsem se setkal s dÈmonem, kter˝ se mnou promlouval v mÈ mysli. Poûaduje t¯i d˘kazy o vÌtÏzstvÌ nad ûivly ohnÏ, ledu a kamene p¯edtÌm, neû mi umoûnÌ p¯Ìstup ke svÈmu p·novi.");
+	B_LogEntry		(CH4_FindXardas,"V Xardasovƒõ vƒõ≈æi jsem se setkal s d√©monem, kter√Ω se mnou promlouval v m√© mysli. Po≈æaduje t≈ôi d≈Økazy o v√≠tƒõzstv√≠ nad ≈æivly ohnƒõ, ledu a kamene p≈ôedt√≠m, ne≈æ mi umo≈æn√≠ p≈ô√≠stup ke sv√©mu p√°novi.");
 };
 
 //***************************************************************************
@@ -144,7 +144,7 @@ instance Info_XardasDemon_NOHEART (C_INFO)
 	information	= Info_XardasDemon_NOHEART_Info;
 	permanent	= 1;
 	important 	= 0;
-	description = "MluvÌö v h·dank·ch!";
+	description = "Mluv√≠≈° v h√°dank√°ch!";
 };
 
 FUNC INT Info_XardasDemon_NOHEART_Condition()
@@ -161,10 +161,10 @@ FUNC INT Info_XardasDemon_NOHEART_Condition()
 
 FUNC VOID Info_XardasDemon_NOHEART_Info()
 {
-	AI_Output		(hero, self,"Info_XardasDemon_NOHEART_15_01"); //MluvÌö v h·dank·ch!
+	AI_Output		(hero, self,"Info_XardasDemon_NOHEART_15_01"); //Mluv√≠≈° v h√°dank√°ch!
 	AI_Output (self, other,"DIA_BaalCadar_NoTalk_Hi_02_01"); //
-	AI_Output		(hero, self,"Info_XardasDemon_NOHEART_15_02"); //...To jsi ¯Ìkal p¯edtÌm, opakujeö se!
-	AI_Output		(hero, self,"Info_XardasDemon_NOHEART_15_03"); //...Chceö d˘kaz o vÌtÏzstvÌ nad ûivly ohnÏ, ledu a kamene!
+	AI_Output		(hero, self,"Info_XardasDemon_NOHEART_15_02"); //...To jsi ≈ô√≠kal p≈ôedt√≠m, opakuje≈° se!
+	AI_Output		(hero, self,"Info_XardasDemon_NOHEART_15_03"); //...Chce≈° d≈Økaz o v√≠tƒõzstv√≠ nad ≈æivly ohnƒõ, ledu a kamene!
 };
 
 //***************************************************************************
@@ -175,24 +175,24 @@ func void B_XardasDemon_GiveHeart()
 	if 		(FindGolemHearts == 1)
 	{
 		AI_Output (self, other,"DIA_BaalCadar_NoTalk_Hi_02_01"); //
-		AI_Output	(hero, self,"Info_XardasDemon_GIVEHEART_15_01"); //...Co? ...JistÏ?... Zkouöka hodnosti!
-		AI_Output	(hero, self,"Info_XardasDemon_GIVEHEART_15_02"); //..Chyba? St·le dvÏ chyby?
+		AI_Output	(hero, self,"Info_XardasDemon_GIVEHEART_15_01"); //...Co? ...Jistƒõ?... Zkou≈°ka hodnosti!
+		AI_Output	(hero, self,"Info_XardasDemon_GIVEHEART_15_02"); //..Chyba? St√°le dvƒõ chyby?
 		FindGolemHearts = 2;
 	}
 	else if (FindGolemHearts == 2)
 	{
 		AI_Output (self, other,"DIA_BaalCadar_NoTalk_Hi_02_01"); //
-		AI_Output	(hero, self,"Info_XardasDemon_GIVEHEART_15_03"); //...Podvojnost? ...DalöÌ zkouöka?
-		AI_Output	(hero, self,"Info_XardasDemon_GIVEHEART_15_04"); //...Jeden jeötÏ z˘st·v·?
+		AI_Output	(hero, self,"Info_XardasDemon_GIVEHEART_15_03"); //...Podvojnost? ...Dal≈°√≠ zkou≈°ka?
+		AI_Output	(hero, self,"Info_XardasDemon_GIVEHEART_15_04"); //...Jeden je≈°tƒõ z≈Øst√°v√°?
 		FindGolemHearts = 3;
 	}
 	else if (FindGolemHearts == 3)
 	{
 		AI_Output (self, other,"DIA_BaalCadar_NoTalk_Hi_02_01"); //
 		AI_Output	(hero, self,"Info_XardasDemon_GIVEHEART_15_05"); //...Dokonalost? ...Jsem hoden?
-		AI_Output	(hero, self,"Info_XardasDemon_GIVEHEART_15_06"); //Jestli je to tak, chtÏl bych teÔ mluvit s tv˝m p·nem!
-		AI_Output	(hero, self,"Info_XardasDemon_GIVEHEART_15_07"); //...Protid˘kaz? ...V jakÈm smyslu protid˘kaz? ...Runa? ...Runa pro mÏ?
-		AI_Output	(hero, self,"Info_XardasDemon_GIVEHEART_15_08"); //JistÏ, potom p¯ijmu teleportaËnÌ runu jako znamenÌ v·ûnosti!
+		AI_Output	(hero, self,"Info_XardasDemon_GIVEHEART_15_06"); //Jestli je to tak, chtƒõl bych teƒè mluvit s tv√Ωm p√°nem!
+		AI_Output	(hero, self,"Info_XardasDemon_GIVEHEART_15_07"); //...Protid≈Økaz? ...V jak√©m smyslu protid≈Økaz? ...Runa? ...Runa pro mƒõ?
+		AI_Output	(hero, self,"Info_XardasDemon_GIVEHEART_15_08"); //Jistƒõ, potom p≈ôijmu teleportaƒçn√≠ runu jako znamen√≠ v√°≈ænosti!
 
 		B_Story_AccessToXardas();
 	};
@@ -209,7 +209,7 @@ instance Info_XardasDemon_STONEHEART (C_INFO)
 	information	= Info_XardasDemon_STONEHEART_Info;
 	permanent	= 0;
 	important 	= 0;
-	description = "Tady je srdce kamennÈho Golema.";
+	description = "Tady je srdce kamenn√©ho Golema.";
 };
 
 FUNC INT Info_XardasDemon_STONEHEART_Condition()
@@ -223,7 +223,7 @@ FUNC INT Info_XardasDemon_STONEHEART_Condition()
 
 FUNC VOID Info_XardasDemon_STONEHEART_Info()
 {
-	AI_Output		(hero, self,"Info_XardasDemon_STONEHEART_15_01"); //Tady je srdce kamennÈho Golema.
+	AI_Output		(hero, self,"Info_XardasDemon_STONEHEART_15_01"); //Tady je srdce kamenn√©ho Golema.
 
     B_GiveInvItems  (hero, self, ItAt_StoneGolem_01, 1);
 	Npc_RemoveInvItem(self, ItAt_StoneGolem_01);
@@ -241,7 +241,7 @@ instance Info_XardasDemon_ICEHEART (C_INFO)
 	information	= Info_XardasDemon_ICEHEART_Info;
 	permanent	= 0;
 	important 	= 0;
-	description = "Je toto ledovÈ srdce Golema d˘kaz?";
+	description = "Je toto ledov√© srdce Golema d≈Økaz?";
 };
 
 FUNC INT Info_XardasDemon_ICEHEART_Condition()
@@ -255,7 +255,7 @@ FUNC INT Info_XardasDemon_ICEHEART_Condition()
 
 FUNC VOID Info_XardasDemon_ICEHEART_Info()
 {
-	AI_Output		(hero, self,"Info_XardasDemon_ICEHEART_15_01"); //Je toto ledovÈ srdce Golema d˘kaz?
+	AI_Output		(hero, self,"Info_XardasDemon_ICEHEART_15_01"); //Je toto ledov√© srdce Golema d≈Økaz?
 
 	B_GiveInvItems  (hero, self, ItAt_IceGolem_01, 1);
 
@@ -272,7 +272,7 @@ instance Info_XardasDemon_FIREHEART (C_INFO)
 	information	= Info_XardasDemon_FIREHEART_Info;
 	permanent	= 0;
 	important 	= 0;
-	description = "A co toto srdce ohnivÈho Golema?";
+	description = "A co toto srdce ohniv√©ho Golema?";
 };
 
 FUNC INT Info_XardasDemon_FIREHEART_Condition()
@@ -286,7 +286,7 @@ FUNC INT Info_XardasDemon_FIREHEART_Condition()
 
 FUNC VOID Info_XardasDemon_FIREHEART_Info()
 {
-	AI_Output		(hero, self,"Info_XardasDemon_FIREHEART_15_01"); //A co toto srdce ohnivÈho Golema?
+	AI_Output		(hero, self,"Info_XardasDemon_FIREHEART_15_01"); //A co toto srdce ohniv√©ho Golema?
 
 	B_GiveInvItems  (hero, self, ItAt_FireGolem_01, 1);
 

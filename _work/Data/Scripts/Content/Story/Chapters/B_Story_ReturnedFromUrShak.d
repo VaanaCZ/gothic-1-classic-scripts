@@ -1,20 +1,20 @@
 func void B_Story_ReturnedFromUrShak()
 {
-	//-------- Missionsgegenstände --------
+	//-------- MissionsgegenstÃ¤nde --------
 	
 
-	//-------- Tagebucheinträge --------
-	B_LogEntry			(CH4_FindOrcShaman,"Zdá se, e Xardas je nadšenı z toho, co jsem se dozvìdìl od Ur-Shaka. Má další cesta povede do Svobodného dolu, kde najdu Ur-Shakova pøítele.");
+	//-------- TagebucheintrÃ¤ge --------
+	B_LogEntry			(CH4_FindOrcShaman,"ZdÃ¡ se, Å¾e Xardas je nadÅ¡enÃ½ z toho, co jsem se dozvÄ›dÄ›l od Ur-Shaka. MÃ¡ dalÅ¡Ã­ cesta povede do SvobodnÃ©ho dolu, kde najdu Ur-Shakova pÅ™Ã­tele.");
 	Log_SetTopicStatus	(CH4_FindOrcShaman,	LOG_SUCCESS);
 
 	Log_CreateTopic		(CH4_EnterTemple,	LOG_MISSION);
 	Log_SetTopicStatus	(CH4_EnterTemple,	LOG_RUNNING);
-	B_LogEntry			(CH4_EnterTemple,"Nyní zaèínám rozumìt Xardasovu zámìru. Poádal jsem ho o pomoc pøi rozbití magické Bariéry a on mi vzápìtí ukázal zpùsob, kterı nemá nic spoleèného s rudnou haldou mágù Vody. Namísto toho po mnì poaduje, abych našel cestu do podzemního Spáèova chrámu."); 
+	B_LogEntry			(CH4_EnterTemple,"NynÃ­ zaÄÃ­nÃ¡m rozumÄ›t Xardasovu zÃ¡mÄ›ru. PoÅ¾Ã¡dal jsem ho o pomoc pÅ™i rozbitÃ­ magickÃ© BariÃ©ry a on mi vzÃ¡pÄ›tÃ­ ukÃ¡zal zpÅ¯sob, kterÃ½ nemÃ¡ nic spoleÄnÃ©ho s rudnou haldou mÃ¡gÅ¯ Vody. NamÃ­sto toho po mnÄ› poÅ¾aduje, abych naÅ¡el cestu do podzemnÃ­ho SpÃ¡Äova chrÃ¡mu."); 
 
 	//-------- Erfahrung --------
 	B_GiveXP		(XP_ReturnedFromUrShak);
 
-	//-------- Tagesabläufe ändern --------
+	//-------- TagesablÃ¤ufe Ã¤ndern --------
 	var C_NPC riordian;	riordian= Hlp_GetNpc(KDW_605_Riordian);	Npc_ExchangeRoutine(riordian,	"FoundUrShak");	
 	
 	

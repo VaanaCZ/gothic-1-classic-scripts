@@ -37,7 +37,7 @@ INSTANCE Info_Mine_Org_7_Mine (C_INFO) // E1
 	condition	= Info_Mine_Org_7_Mine_Condition;
 	information	= Info_Mine_Org_7_Mine_Info;
 	permanent	= 1;
-	description = "ÿekni mi nÏco o t·bo¯e.";
+	description = "≈òekni mi nƒõco o t√°bo≈ôe.";
 };                       
 
 FUNC INT Info_Mine_Org_7_Mine_Condition()
@@ -47,8 +47,8 @@ FUNC INT Info_Mine_Org_7_Mine_Condition()
 
 FUNC VOID Info_Mine_Org_7_Mine_Info()
 {
-	AI_Output(other,self,"Info_Mine_Org_7_Mine_15_00"); //ÿekni mi nÏco o t·bo¯e.
-	AI_Output(self,other,"Info_Mine_Org_7_Mine_07_01"); //T·bor? MyslÌö tu Kotlinu. Ale nenÌ to tak zlÈ, v·ûnÏ. ruda¯i shromaûÔujÌ rudu, ûold·ci drûÌ str·û a my, banditÈ, je m·me pod kontrolou.
+	AI_Output(other,self,"Info_Mine_Org_7_Mine_15_00"); //≈òekni mi nƒõco o t√°bo≈ôe.
+	AI_Output(self,other,"Info_Mine_Org_7_Mine_07_01"); //T√°bor? Mysl√≠≈° tu Kotlinu. Ale nen√≠ to tak zl√©, v√°≈ænƒõ. ruda≈ôi shroma≈æƒèuj√≠ rudu, ≈æold√°ci dr≈æ√≠ str√°≈æ a my, bandit√©, je m√°me pod kontrolou.
 	
 };
 
@@ -62,7 +62,7 @@ INSTANCE Info_Mine_Org_7_WichtigePersonen(C_INFO)
 	condition	= Info_Mine_Org_7_WichtigePersonen_Condition;
 	information	= Info_Mine_Org_7_WichtigePersonen_Info;
 	permanent	= 1;
-	description = "Kdo to tady m· na starosti?";
+	description = "Kdo to tady m√° na starosti?";
 };                       
 
 FUNC INT Info_Mine_Org_7_WichtigePersonen_Condition()
@@ -72,9 +72,9 @@ FUNC INT Info_Mine_Org_7_WichtigePersonen_Condition()
 
 FUNC VOID Info_Mine_Org_7_WichtigePersonen_Info()
 {
-	AI_Output(other,self,"Info_Mine_Org_7_WichtigePersonen_15_00"); //Kdo to m· pak na starosti?
-	AI_Output(self,other,"Info_Mine_Org_7_WichtigePersonen_07_01"); //To z·leûÌ na tom, od koho p¯ijÌm·ö rozkazy.
-	AI_Output(self,other,"Info_Mine_Org_7_WichtigePersonen_07_02"); //Aù je to jak chce, pokud Okyl nÏco chce, nemÏl bys nic namÌtat. Dok·ûe b˝t pÏknÏ nep¯Ìjemn˝, kdyû se naötve.
+	AI_Output(other,self,"Info_Mine_Org_7_WichtigePersonen_15_00"); //Kdo to m√° pak na starosti?
+	AI_Output(self,other,"Info_Mine_Org_7_WichtigePersonen_07_01"); //To z√°le≈æ√≠ na tom, od koho p≈ôij√≠m√°≈° rozkazy.
+	AI_Output(self,other,"Info_Mine_Org_7_WichtigePersonen_07_02"); //A≈• je to jak chce, pokud Okyl nƒõco chce, nemƒõl bys nic nam√≠tat. Dok√°≈æe b√Ωt pƒõknƒõ nep≈ô√≠jemn√Ω, kdy≈æ se na≈°tve.
 	
 };
 
@@ -98,8 +98,8 @@ FUNC INT Info_Mine_Org_7_DieLage_Condition()
 
 FUNC VOID Info_Mine_Org_7_DieLage_Info()
 {
-	AI_Output(other,self,"Info_Mine_Org_7_DieLage_15_00"); //Jak se m·ö?
-	AI_Output(self,other,"Info_Mine_Org_7_DieLage_07_01"); //Chlape, hrajeö mi na nervy!
+	AI_Output(other,self,"Info_Mine_Org_7_DieLage_15_00"); //Jak se m√°≈°?
+	AI_Output(self,other,"Info_Mine_Org_7_DieLage_07_01"); //Chlape, hraje≈° mi na nervy!
 };
 	
 // *************************************************************************

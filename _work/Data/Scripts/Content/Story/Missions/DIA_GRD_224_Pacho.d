@@ -50,15 +50,15 @@ FUNC int Info_Pacho_STOP_Condition()
 func void Info_Pacho_STOP_Info()
 {
 	AI_Output			(self, hero,"Info_Pacho_STOP_13_01"); //Hej, ty!
-	AI_Output			(hero, self,"Info_Pacho_STOP_15_02"); //Kdo? J·?
-	AI_Output			(self, hero,"Info_Pacho_STOP_13_03"); //Ne, tvoje b·ba... Kdo jin˝ asi?!
-	AI_Output			(self, hero,"Info_Pacho_STOP_13_04"); //B˝t tebou, tak bych tudy nechodil!
-	AI_Output			(hero, self,"Info_Pacho_STOP_15_05"); //ProË ne?
-	AI_Output			(self, hero,"Info_Pacho_STOP_13_06"); //Ty tady asi nejsi jeötÏ dlouho!
-	AI_Output			(self, hero,"Info_Pacho_STOP_13_07"); //»lovÏËe, to je cesta do zemÏ sk¯et˘...
-	AI_Output			(self, hero,"Info_Pacho_STOP_13_08"); //UdÏlajÌ z tebe sekanou!
+	AI_Output			(hero, self,"Info_Pacho_STOP_15_02"); //Kdo? J√°?
+	AI_Output			(self, hero,"Info_Pacho_STOP_13_03"); //Ne, tvoje b√°ba... Kdo jin√Ω asi?!
+	AI_Output			(self, hero,"Info_Pacho_STOP_13_04"); //B√Ωt tebou, tak bych tudy nechodil!
+	AI_Output			(hero, self,"Info_Pacho_STOP_15_05"); //Proƒç ne?
+	AI_Output			(self, hero,"Info_Pacho_STOP_13_06"); //Ty tady asi nejsi je≈°tƒõ dlouho!
+	AI_Output			(self, hero,"Info_Pacho_STOP_13_07"); //ƒålovƒõƒçe, to je cesta do zemƒõ sk≈ôet≈Ø...
+	AI_Output			(self, hero,"Info_Pacho_STOP_13_08"); //Udƒõlaj√≠ z tebe sekanou!
 	AI_Output			(hero, self,"Info_Pacho_STOP_15_09"); //Och.
-	AI_Output			(self, hero,"Info_Pacho_STOP_13_10"); //VÌtej!
+	AI_Output			(self, hero,"Info_Pacho_STOP_13_10"); //V√≠tej!
 
 	AI_StopProcessInfos	(self);
 };

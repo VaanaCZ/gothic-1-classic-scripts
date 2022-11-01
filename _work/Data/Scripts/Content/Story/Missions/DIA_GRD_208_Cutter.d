@@ -33,7 +33,7 @@ instance  DIA_Cutter_Hello (C_INFO)
 	condition	= DIA_Cutter_Hello_Condition;
 	information	= DIA_Cutter_Hello_Info;
 	permanent	= 0;
-	description = "Tenhle hrad je poøádnì velkı.";
+	description = "Tenhle hrad je poÅ™Ã¡dnÄ› velkÃ½.";
 };                       
 
 FUNC int  DIA_Cutter_Hello_Condition()
@@ -45,9 +45,9 @@ FUNC int  DIA_Cutter_Hello_Condition()
 };
 FUNC VOID  DIA_Cutter_Hello_Info()
 {
-	AI_Output (other, self,"DIA_Cutter_Hello_15_00"); //Tenhle hrad je poøádnì velkı.
-	AI_Output (self, other,"DIA_Cutter_Hello_08_01"); //Nemyslím, e bych tì u nìkdy vidìl. Kdo jsi?
-	AI_Output (other, self,"DIA_Cutter_Hello_15_02"); //Jsem tady novı. Akorát se tu trochu porozhlíím.
+	AI_Output (other, self,"DIA_Cutter_Hello_15_00"); //Tenhle hrad je poÅ™Ã¡dnÄ› velkÃ½.
+	AI_Output (self, other,"DIA_Cutter_Hello_08_01"); //NemyslÃ­m, Å¾e bych tÄ› uÅ¾ nÄ›kdy vidÄ›l. Kdo jsi?
+	AI_Output (other, self,"DIA_Cutter_Hello_15_02"); //Jsem tady novÃ½. AkorÃ¡t se tu trochu porozhlÃ­Å¾Ã­m.
 };
 
 //******************************************
@@ -61,7 +61,7 @@ instance  DIA_Cutter_Burg (C_INFO)
 	condition	= DIA_Cutter_Burg_Condition;
 	information	= DIA_Cutter_Burg_Info;
 	permanent	= 10;
-	description = "Co mi mùeš øíci o hradu?";
+	description = "Co mi mÅ¯Å¾eÅ¡ Å™Ã­ci o hradu?";
 };                       
 
 FUNC int  DIA_Cutter_Burg_Condition()
@@ -74,12 +74,12 @@ FUNC int  DIA_Cutter_Burg_Condition()
 
 FUNC VOID  DIA_Cutter_Burg_Info()
 {
-	AI_Output (other, self,"DIA_Cutter_Burg_15_00"); //Co mi mùeš øíci o hradu?
-	AI_Output (self, other,"DIA_Cutter_Burg_08_01"); //Gomez a jeho banda ho zabrali po velkém povstání.
-	AI_Output (self, other,"DIA_Cutter_Burg_08_02"); //Hned jsem vìdìl, e bude lepší dát se k nìmu.
-	AI_Output (self, other,"DIA_Cutter_Burg_08_03"); //U kdy jsme se maèkali ve vìzení a museli otroèit v dolech, vdycky jsme dìlali, co on øekl.
-	AI_Output (other, self,"DIA_Cutter_Burg_15_04"); //Pod hradem je vìzení?
-	AI_Output (self, other,"DIA_Cutter_Burg_08_05"); //Ano, ale je prázdné. Po velkém povstání u tam nikdo nebyl uvìznìnı.
+	AI_Output (other, self,"DIA_Cutter_Burg_15_00"); //Co mi mÅ¯Å¾eÅ¡ Å™Ã­ci o hradu?
+	AI_Output (self, other,"DIA_Cutter_Burg_08_01"); //Gomez a jeho banda ho zabrali po velkÃ©m povstÃ¡nÃ­.
+	AI_Output (self, other,"DIA_Cutter_Burg_08_02"); //Hned jsem vÄ›dÄ›l, Å¾e bude lepÅ¡Ã­ dÃ¡t se k nÄ›mu.
+	AI_Output (self, other,"DIA_Cutter_Burg_08_03"); //UÅ¾ kdyÅ¾ jsme se maÄkali ve vÄ›zenÃ­ a museli otroÄit v dolech, vÅ¾dycky jsme dÄ›lali, co on Å™ekl.
+	AI_Output (other, self,"DIA_Cutter_Burg_15_04"); //Pod hradem je vÄ›zenÃ­?
+	AI_Output (self, other,"DIA_Cutter_Burg_08_05"); //Ano, ale je prÃ¡zdnÃ©. Po velkÃ©m povstÃ¡nÃ­ uÅ¾ tam nikdo nebyl uvÄ›znÄ›nÃ½.
 };
 
 //******************************************
@@ -93,7 +93,7 @@ instance  DIA_Cutter_PERM (C_INFO)
 	condition	= DIA_Cutter_PERM_Condition;
 	information	= DIA_Cutter_PERM_Info;
 	permanent	= 1;
-	description = "Jaké to je bıt strácem?";
+	description = "JakÃ© to je bÃ½t strÃ¡Å¾cem?";
 };                       
 
 FUNC int  DIA_Cutter_PERM_Condition()
@@ -106,8 +106,8 @@ FUNC int  DIA_Cutter_PERM_Condition()
 
 FUNC VOID  DIA_Cutter_PERM_Info()
 {
-	AI_Output (other, self,"DIA_Cutter_PERM_15_00"); //Jakı je to ivot bıt strácem?
-	AI_Output (self, other,"DIA_Cutter_PERM_08_01"); //Klidnı. Jsme nejvìtší a nejsilnìjší tábor v kolonii. Nikdo se na nás nedovoluje.
+	AI_Output (other, self,"DIA_Cutter_PERM_15_00"); //JakÃ½ je to Å¾ivot bÃ½t strÃ¡Å¾cem?
+	AI_Output (self, other,"DIA_Cutter_PERM_08_01"); //KlidnÃ½. Jsme nejvÄ›tÅ¡Ã­ a nejsilnÄ›jÅ¡Ã­ tÃ¡bor v kolonii. Nikdo se na nÃ¡s nedovoluje.
 	AI_Output (other, self,"DIA_Cutter_PERM_15_02"); //Aha.
 	AI_StopProcessInfos	(self);
 };
@@ -148,6 +148,6 @@ FUNC int  GRD_208_Cutter_WELCOME_Condition()
 };
 func void  GRD_208_Cutter_WELCOME_Info()
 {
-	AI_Output (self, other,"GRD_208_Cutter_WELCOME_Info_08_01"); //Dobøe sis zvolil. Jako stráce budeš mít dobrı ivot!
+	AI_Output (self, other,"GRD_208_Cutter_WELCOME_Info_08_01"); //DobÅ™e sis zvolil. Jako strÃ¡Å¾ce budeÅ¡ mÃ­t dobrÃ½ Å¾ivot!
 	AI_StopProcessInfos	(self);
 };

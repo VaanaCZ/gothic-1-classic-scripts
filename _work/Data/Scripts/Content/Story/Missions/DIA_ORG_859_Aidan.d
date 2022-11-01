@@ -33,7 +33,7 @@ instance DIA_Aidan_Hello (C_INFO)
 	condition		= DIA_Aidan_Hello_Condition;
 	information		= DIA_Aidan_Hello_Info;
 	permanent		= 0;
-	description		= "Co tady dìláš?";
+	description		= "Co tady dÄ›lÃ¡Å¡?";
 };
 
 FUNC int  DIA_Aidan_Hello_Condition()
@@ -43,13 +43,13 @@ FUNC int  DIA_Aidan_Hello_Condition()
 
 func void  DIA_Aidan_Hello_Info()
 {
-	AI_Output (other, self,"DIA_Aidan_Hello_15_00"); //Co tady dìláš?
-	AI_Output (self, other,"DIA_Aidan_Hello_13_01"); //Jsem lovec. iju z prodeje kùí a zubù.
-	AI_Output (other, self,"DIA_Aidan_Hello_15_02"); //Platí se za to?
-	AI_Output (self, other,"DIA_Aidan_Hello_13_03"); //Kdy víš, jak správnì ty bestie rozøezat, tak jo.
+	AI_Output (other, self,"DIA_Aidan_Hello_15_00"); //Co tady dÄ›lÃ¡Å¡?
+	AI_Output (self, other,"DIA_Aidan_Hello_13_01"); //Jsem lovec. Å½iju z prodeje kÅ¯Å¾Ã­ a zubÅ¯.
+	AI_Output (other, self,"DIA_Aidan_Hello_15_02"); //PlatÃ­ se za to?
+	AI_Output (self, other,"DIA_Aidan_Hello_13_03"); //KdyÅ¾ vÃ­Å¡, jak sprÃ¡vnÄ› ty bestie rozÅ™ezat, tak jo.
 
 	Log_CreateTopic	(GE_TeacherOW,	LOG_NOTE);
-	B_LogEntry		(GE_TeacherOW,"Adan, lovec ijící na cestì mezi Starım a Novım táborem, mì mùe nauèit kuchat zvìø.");
+	B_LogEntry		(GE_TeacherOW,"Adan, lovec Å¾ijÃ­cÃ­ na cestÄ› mezi StarÃ½m a NovÃ½m tÃ¡borem, mÄ› mÅ¯Å¾e nauÄit kuchat zvÄ›Å™.");
 };
 
 // **************************************************
@@ -63,7 +63,7 @@ instance  Org_859_Aidan_Creatures (C_INFO)
 	condition	= Org_859_Aidan_Creatures_Condition;
 	information	= Org_859_Aidan_Creatures_Info;
 	permanent	= 1;
-	description = "Chci se nauèit rozøezávat zvìø.";
+	description = "Chci se nauÄit rozÅ™ezÃ¡vat zvÄ›Å™.";
 };                       
 
 FUNC int  Org_859_Aidan_Creatures_Condition()
@@ -77,35 +77,35 @@ FUNC int  Org_859_Aidan_Creatures_Condition()
 
 FUNC VOID  Org_859_Aidan_Creatures_Info()
 {
-	AI_Output (other, self,"Org_859_Aidan_Creatures_15_00"); //Chci se nauèit rozøezávat zvìø.
+	AI_Output (other, self,"Org_859_Aidan_Creatures_15_00"); //Chci se nauÄit rozÅ™ezÃ¡vat zvÄ›Å™.
 	
 	if ( (Knows_GetTeeth == FALSE)||(Knows_GetFur == FALSE)||(Knows_GetClaws == FALSE)||(Knows_GetHide == FALSE) )
 	{
-		AI_Output (self, other,"Org_859_Aidan_Creatures_13_01"); //Co bys chtìl vìdìt?
+		AI_Output (self, other,"Org_859_Aidan_Creatures_13_01"); //Co bys chtÄ›l vÄ›dÄ›t?
 		
 		Info_ClearChoices(Org_859_Aidan_Creatures);
 		Info_AddChoice   (Org_859_Aidan_Creatures, DIALOG_BACK 											,Org_859_Aidan_Creatures_BACK);
 
 		if (Knows_GetTeeth == FALSE)
 		{
-			Info_AddChoice   (Org_859_Aidan_Creatures,"Vyjmout zuby (cena: 1 dovednostní bod, 50 nugetù)",Org_859_Aidan_Creatures_Zahn);
+			Info_AddChoice   (Org_859_Aidan_Creatures,"Vyjmout zuby (cena: 1 dovednostnÃ­ bod, 50 nugetÅ¯)",Org_859_Aidan_Creatures_Zahn);
 		};
 		if (Knows_GetFur == FALSE)
 		{
-			Info_AddChoice	 (Org_859_Aidan_Creatures,"Stáhnout koešinu (cena:1 dovednostní bod, 100 nugetù)",Org_859_Aidan_Creatures_Fell);
+			Info_AddChoice	 (Org_859_Aidan_Creatures,"StÃ¡hnout koÅ¾eÅ¡inu (cena:1 dovednostnÃ­ bod, 100 nugetÅ¯)",Org_859_Aidan_Creatures_Fell);
 		};
 		if (Knows_GetClaws == FALSE)
 		{
-			Info_AddChoice	 (Org_859_Aidan_Creatures,"Vyjmout drápy (cena: 1 dovednostní bod, 50 nugetù)",Org_859_Aidan_Creatures_Kralle);
+			Info_AddChoice	 (Org_859_Aidan_Creatures,"Vyjmout drÃ¡py (cena: 1 dovednostnÃ­ bod, 50 nugetÅ¯)",Org_859_Aidan_Creatures_Kralle);
 		};
 		if (Knows_GetHide == FALSE)
 		{
-			Info_AddChoice	 (Org_859_Aidan_Creatures,"Stáhnout plaza (cena: 1 dovednostní bod, 100 nugetù)",Org_859_Aidan_Creatures_Haut);
+			Info_AddChoice	 (Org_859_Aidan_Creatures,"StÃ¡hnout plaza (cena: 1 dovednostnÃ­ bod, 100 nugetÅ¯)",Org_859_Aidan_Creatures_Haut);
 		};
 	}
 	else
 	{
-		AI_Output (self, other,"Org_859_Aidan_Creatures_TaughtAll_13_00"); //Nauèil jsem tì všechno, co vím.
+		AI_Output (self, other,"Org_859_Aidan_Creatures_TaughtAll_13_00"); //NauÄil jsem tÄ› vÅ¡echno, co vÃ­m.
 	};
 };
 
@@ -126,30 +126,30 @@ func void Org_859_Aidan_Creatures_Zahn()
 			
 			B_GiveInvItems	(other, self,itminugget,50);
 			
-			PrintScreen	("Nauèit se: vytahovat zuby", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
+			PrintScreen	("NauÄit se: vytahovat zuby", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
 					
-			AI_Output (self, other,"Org_859_Aidan_Creatures_Zahn_13_01"); //Nejdùleitìjší je zajistit, aby se zuby netøíštily. Tomu se vyhneš tak, e vloíš nù blízko støedu zubu a opatrnì ho vypáèíš.
-			AI_Output (self, other,"Org_859_Aidan_Creatures_Zahn_13_02"); //Tak si mùeš vzít zuby vlkù, stínovıch pøíšer a kousavcù.
+			AI_Output (self, other,"Org_859_Aidan_Creatures_Zahn_13_01"); //NejdÅ¯leÅ¾itÄ›jÅ¡Ã­ je zajistit, aby se zuby netÅ™Ã­Å¡tily. Tomu se vyhneÅ¡ tak, Å¾e vloÅ¾Ã­Å¡ nÅ¯Å¾ blÃ­zko stÅ™edu zubu a opatrnÄ› ho vypÃ¡ÄÃ­Å¡.
+			AI_Output (self, other,"Org_859_Aidan_Creatures_Zahn_13_02"); //Tak si mÅ¯Å¾eÅ¡ vzÃ­t zuby vlkÅ¯, stÃ­novÃ½ch pÅ™Ã­Å¡er a kousavcÅ¯.
 			
 			Knows_GetTeeth = TRUE;
 			Log_CreateTopic (GE_AnimalTrophies,LOG_NOTE);
-			B_LogEntry (GE_AnimalTrophies,"Znalost vytahování zubù - vlk, skøetí pes, chòapavec, kousavec, loveckı pes, stínová šelma");
+			B_LogEntry (GE_AnimalTrophies,"Znalost vytahovÃ¡nÃ­ zubÅ¯ - vlk, skÅ™etÃ­ pes, chÅˆapavec, kousavec, loveckÃ½ pes, stÃ­novÃ¡ Å¡elma");
 		}
 		else
 		{
-			AI_Output (self, other,"Org_859_Aidan_Creatures_KEINE_LP_13_00"); //Potøebuješ víc zkušeností, jinak ti mé vìdomosti nebudou k nièemu.
-			PrintScreen	("Nedostatek zkušenostních bodù!", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
+			AI_Output (self, other,"Org_859_Aidan_Creatures_KEINE_LP_13_00"); //PotÅ™ebujeÅ¡ vÃ­c zkuÅ¡enostÃ­, jinak ti mÃ© vÄ›domosti nebudou k niÄemu.
+			PrintScreen	("Nedostatek zkuÅ¡enostnÃ­ch bodÅ¯!", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
 		};
 	}
 	else
 	{
-		AI_Output (self, other,"Org_859_Aidan_Creatures_KEIN_ERZ_13_00"); //Nejdøív chci vidìt nìjakou rudu. Jak jsem øekl: všechno má svou cenu!
+		AI_Output (self, other,"Org_859_Aidan_Creatures_KEIN_ERZ_13_00"); //NejdÅ™Ã­v chci vidÄ›t nÄ›jakou rudu. Jak jsem Å™ekl: vÅ¡echno mÃ¡ svou cenu!
 	};
 };
 
 func void Org_859_Aidan_Creatures_Fell()
 {
-	AI_Output (other, self,"Org_859_Aidan_Creatures_Fell_15_00"); //Jak dostanu kùi tìch pøíšer?
+	AI_Output (other, self,"Org_859_Aidan_Creatures_Fell_15_00"); //Jak dostanu kÅ¯Å¾i tÄ›ch pÅ™Ã­Å¡er?
 	
 	if (Npc_HasItems(other,itminugget)>=100)
 	{
@@ -159,24 +159,24 @@ func void Org_859_Aidan_Creatures_Fell()
 			
 			B_GiveInvItems	(other, self,itminugget,100);
 			
-			PrintScreen	("Nauèit se: stahovat koešinu", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
+			PrintScreen	("NauÄit se: stahovat koÅ¾eÅ¡inu", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
 		
-			AI_Output (self, other,"Org_859_Aidan_Creatures_Fell_13_01"); //Dùleité je kùi stahovat zezadu dopøedu. Jakmile se ti napne, u je to snadné. Koešiny se velmi cení!
-			AI_Output (self, other,"Org_859_Aidan_Creatures_Fell_13_02"); //Kùe vlkù a stínovıch pøíšer se mùou pouít na odìv. Kdy prohlídneš koešinu zabitého zvíøete, hned poznáš, jestli ji pùjde pouít nebo ne. 
+			AI_Output (self, other,"Org_859_Aidan_Creatures_Fell_13_01"); //DÅ¯leÅ¾itÃ© je kÅ¯Å¾i stahovat zezadu dopÅ™edu. Jakmile se ti napne, uÅ¾ je to snadnÃ©. KoÅ¾eÅ¡iny se velmi cenÃ­!
+			AI_Output (self, other,"Org_859_Aidan_Creatures_Fell_13_02"); //KÅ¯Å¾e vlkÅ¯ a stÃ­novÃ½ch pÅ™Ã­Å¡er se mÅ¯Å¾ou pouÅ¾Ã­t na odÄ›v. KdyÅ¾ prohlÃ­dneÅ¡ koÅ¾eÅ¡inu zabitÃ©ho zvÃ­Å™ete, hned poznÃ¡Å¡, jestli ji pÅ¯jde pouÅ¾Ã­t nebo ne. 
 			
 			Knows_GetFur = TRUE;
 			Log_CreateTopic (GE_AnimalTrophies,LOG_NOTE);
-			B_LogEntry (GE_AnimalTrophies,"Znalost stahování koešiny - vlk, skøetí pes, chòapavec, kousavec, loveckı pes, stínová šelma, trol");
+			B_LogEntry (GE_AnimalTrophies,"Znalost stahovÃ¡nÃ­ koÅ¾eÅ¡iny - vlk, skÅ™etÃ­ pes, chÅˆapavec, kousavec, loveckÃ½ pes, stÃ­novÃ¡ Å¡elma, trol");
 		}
 		else
 		{
-			AI_Output (self, other,"Org_859_Aidan_Creatures_KEINE_LP_13_00"); //Potøebuješ víc zkušeností, jinak ti mé vìdomosti nebudou k nièemu.
-			PrintScreen	("Nedostatek zkušenostních bodù!", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
+			AI_Output (self, other,"Org_859_Aidan_Creatures_KEINE_LP_13_00"); //PotÅ™ebujeÅ¡ vÃ­c zkuÅ¡enostÃ­, jinak ti mÃ© vÄ›domosti nebudou k niÄemu.
+			PrintScreen	("Nedostatek zkuÅ¡enostnÃ­ch bodÅ¯!", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
 		};
 	}
 	else
 	{
-		AI_Output (self, other,"Org_859_Aidan_Creatures_KEIN_ERZ_13_00"); //Nejdøív chci vidìt nìjakou rudu. Jak jsem øekl: všechno má svou cenu!
+		AI_Output (self, other,"Org_859_Aidan_Creatures_KEIN_ERZ_13_00"); //NejdÅ™Ã­v chci vidÄ›t nÄ›jakou rudu. Jak jsem Å™ekl: vÅ¡echno mÃ¡ svou cenu!
 	};
 };
 
@@ -190,25 +190,25 @@ func void Org_859_Aidan_Creatures_Kralle()
 			
 			B_GiveInvItems	(other, self,itminugget,50);
 			
-			PrintScreen	("Nauèit se: vytahovat drápy", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
+			PrintScreen	("NauÄit se: vytahovat drÃ¡py", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
 			
-			AI_Output (other, self,"Org_859_Aidan_Creatures_Kralle_15_00"); //Uka mi, jak dostanu drápy!
-			AI_Output (self, other,"Org_859_Aidan_Creatures_Kralle_13_01"); //Je to v podstatì velmi jednoduché, pokud víš jak na to. Ohneš drápy dopøedu - nikdy ne dozadu - ale NESMÍŠ je vytahovat!
-			AI_Output (self, other,"Org_859_Aidan_Creatures_Kralle_13_02"); //Drápy mùeš dostat hlavnì z ještìrek. Teï u víš, jak vzít z pøíšer drápy.
+			AI_Output (other, self,"Org_859_Aidan_Creatures_Kralle_15_00"); //UkaÅ¾ mi, jak dostanu drÃ¡py!
+			AI_Output (self, other,"Org_859_Aidan_Creatures_Kralle_13_01"); //Je to v podstatÄ› velmi jednoduchÃ©, pokud vÃ­Å¡ jak na to. OhneÅ¡ drÃ¡py dopÅ™edu - nikdy ne dozadu - ale NESMÃÅ  je vytahovat!
+			AI_Output (self, other,"Org_859_Aidan_Creatures_Kralle_13_02"); //DrÃ¡py mÅ¯Å¾eÅ¡ dostat hlavnÄ› z jeÅ¡tÄ›rek. TeÄ uÅ¾ vÃ­Å¡, jak vzÃ­t z pÅ™Ã­Å¡er drÃ¡py.
 			
 			Knows_GetClaws = TRUE;
 			Log_CreateTopic (GE_AnimalTrophies,LOG_NOTE);
-			B_LogEntry (GE_AnimalTrophies,"Znalost vytahování drápù - ještìrka, chòapavec, èíhavec, kousavec, bøitvoun");
+			B_LogEntry (GE_AnimalTrophies,"Znalost vytahovÃ¡nÃ­ drÃ¡pÅ¯ - jeÅ¡tÄ›rka, chÅˆapavec, ÄÃ­havec, kousavec, bÅ™itvoun");
 		}
 		else
 		{
-			AI_Output (self, other,"Org_859_Aidan_Creatures_KEINE_LP_13_00"); //Potøebuješ víc zkušeností, jinak ti mé vìdomosti nebudou k nièemu.
-			PrintScreen	("Nedostatek zkušenostních bodù!", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
+			AI_Output (self, other,"Org_859_Aidan_Creatures_KEINE_LP_13_00"); //PotÅ™ebujeÅ¡ vÃ­c zkuÅ¡enostÃ­, jinak ti mÃ© vÄ›domosti nebudou k niÄemu.
+			PrintScreen	("Nedostatek zkuÅ¡enostnÃ­ch bodÅ¯!", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
 		};
 	}
 	else
 	{
-		AI_Output (self, other,"Org_859_Aidan_Creatures_KEIN_ERZ_13_00"); //Nejdøív chci vidìt nìjakou rudu. Jak jsem øekl: všechno má svou cenu!
+		AI_Output (self, other,"Org_859_Aidan_Creatures_KEIN_ERZ_13_00"); //NejdÅ™Ã­v chci vidÄ›t nÄ›jakou rudu. Jak jsem Å™ekl: vÅ¡echno mÃ¡ svou cenu!
 	};
 };
 
@@ -222,24 +222,24 @@ func void Org_859_Aidan_Creatures_Haut()
 						
 			B_GiveInvItems	(other, self,itminugget,100);
 			
-			PrintScreen	("Nauèit se: stahovat plazí kùi", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
+			PrintScreen	("NauÄit se: stahovat plazÃ­ kÅ¯Å¾i", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
 				
-			AI_Output (other, self,"Org_859_Aidan_Creatures_Haut_15_00"); //Na co musím dávat pozor, kdy stahuji plazí kùi?
-			AI_Output (self, other,"Org_859_Aidan_Creatures_Haut_13_01"); //Jediní plazi, kteøí jsou k tomuhle úèelu vhodní, jsou èíhavci a moèáloví raloci.
-			AI_Output (self, other,"Org_859_Aidan_Creatures_Haut_13_02"); //Kdy naøízneš kùi po stranách, sloupne se sama. Teï u bys mìl umìt stahovat plazy.
+			AI_Output (other, self,"Org_859_Aidan_Creatures_Haut_15_00"); //Na co musÃ­m dÃ¡vat pozor, kdyÅ¾ stahuji plazÃ­ kÅ¯Å¾i?
+			AI_Output (self, other,"Org_859_Aidan_Creatures_Haut_13_01"); //JedinÃ­ plazi, kteÅ™Ã­ jsou k tomuhle ÃºÄelu vhodnÃ­, jsou ÄÃ­havci a moÄÃ¡lovÃ­ Å¾raloci.
+			AI_Output (self, other,"Org_859_Aidan_Creatures_Haut_13_02"); //KdyÅ¾ naÅ™Ã­zneÅ¡ kÅ¯Å¾i po stranÃ¡ch, sloupne se sama. TeÄ uÅ¾ bys mÄ›l umÄ›t stahovat plazy.
 				
 			Knows_GetHide = TRUE;
 			Log_CreateTopic (GE_AnimalTrophies,LOG_NOTE);
-			B_LogEntry (GE_AnimalTrophies,"Znalost stahování plazù - èíhavec, moèálovı ralok");
+			B_LogEntry (GE_AnimalTrophies,"Znalost stahovÃ¡nÃ­ plazÅ¯ - ÄÃ­havec, moÄÃ¡lovÃ½ Å¾ralok");
 		}
 		else
 		{
-			AI_Output (self, other,"Org_859_Aidan_Creatures_KEINE_LP_13_00"); //Potøebuješ víc zkušeností, jinak ti mé vìdomosti nebudou k nièemu.
-			PrintScreen	("Nedostatek zkušenostních bodù!", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
+			AI_Output (self, other,"Org_859_Aidan_Creatures_KEINE_LP_13_00"); //PotÅ™ebujeÅ¡ vÃ­c zkuÅ¡enostÃ­, jinak ti mÃ© vÄ›domosti nebudou k niÄemu.
+			PrintScreen	("Nedostatek zkuÅ¡enostnÃ­ch bodÅ¯!", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
 		};
 	}
 	else
 	{
-		AI_Output (self, other,"Org_859_Aidan_Creatures_KEIN_ERZ_13_00"); //Nejdøív chci vidìt nìjakou rudu. Jak jsem øekl: všechno má svou cenu!
+		AI_Output (self, other,"Org_859_Aidan_Creatures_KEIN_ERZ_13_00"); //NejdÅ™Ã­v chci vidÄ›t nÄ›jakou rudu. Jak jsem Å™ekl: vÅ¡echno mÃ¡ svou cenu!
 	};
 };

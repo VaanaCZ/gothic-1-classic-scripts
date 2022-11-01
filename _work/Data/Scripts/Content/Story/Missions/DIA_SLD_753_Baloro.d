@@ -1,5 +1,5 @@
 //****************************************************
-//	Typ der den SC an der Nase herum führt!
+//	Typ der den SC an der Nase herum fÃ¼hrt!
 //****************************************************
 
 //Variablen:
@@ -29,7 +29,7 @@ FUNC int DIA_SLD_753_Baloro_Condition()
 
 func void DIA_SLD_753_Baloro_Intro_Info()
 {
-	AI_Output (self, other,"DIA_SLD_753_Baloro_Intro_08_01"); //Hej, ty! Co se dìje?
+	AI_Output (self, other,"DIA_SLD_753_Baloro_Intro_08_01"); //Hej, ty! Co se dÄ›je?
 };
 
 // ********************** Was meinst du? *****************
@@ -52,9 +52,9 @@ FUNC int DIA_SLD_753_Baloro_Wasmeinstdu_Condition()
 FUNC VOID DIA_SLD_753_Baloro_Wasmeinstdu_Info()
 {
 	AI_Output (other, self,"DIA_SLD_753_Baloro_Wasmeinstdu_Info_15_01"); //Zdar!
-	AI_Output (self, other,"DIA_SLD_753_Baloro_Wasmeinstdu_Info_08_02"); //Vykraèuješ si tady, jako kdybys nìco hledal!
-	AI_Output (other, self,"DIA_SLD_753_Baloro_Wasmeinstdu_Info_15_03"); //Opravdu? Hmm, moná máš pravdu. Proè?
-	AI_Output (self, other,"DIA_SLD_753_Baloro_Wasmeinstdu_Info_08_04"); //Vıbornì! Zeptej se mì. Moná ti mùu pomoci!
+	AI_Output (self, other,"DIA_SLD_753_Baloro_Wasmeinstdu_Info_08_02"); //VykraÄujeÅ¡ si tady, jako kdybys nÄ›co hledal!
+	AI_Output (other, self,"DIA_SLD_753_Baloro_Wasmeinstdu_Info_15_03"); //Opravdu? Hmm, moÅ¾nÃ¡ mÃ¡Å¡ pravdu. ProÄ?
+	AI_Output (self, other,"DIA_SLD_753_Baloro_Wasmeinstdu_Info_08_04"); //VÃ½bornÄ›! Zeptej se mÄ›. MoÅ¾nÃ¡ ti mÅ¯Å¾u pomoci!
 
 
 };
@@ -68,7 +68,7 @@ instance DIA_SLD_753_Baloro_Worumgehts (C_INFO)
 	information	= DIA_SLD_753_Baloro_Worumgehts_Info;
 	important	= 0;	
 	permanent	= 0;
-	description 	= "Co jsi mìl na mysli?";
+	description 	= "Co jsi mÄ›l na mysli?";
 };                       
 
 FUNC int DIA_SLD_753_Baloro_Worumgehts_Condition()
@@ -82,37 +82,37 @@ FUNC int DIA_SLD_753_Baloro_Worumgehts_Condition()
 
 FUNC VOID DIA_SLD_753_Baloro_Worumgehts_Info()
 {
-	AI_Output (other, self,"DIA_SLD_753_Baloro_Worumgehts_Info_15_01"); //Co jsi mìl na mysli?
-	AI_Output (self, other,"DIA_SLD_753_Baloro_Worumgehts_Info_08_01"); //Co potøebuješ?
-	AI_Output (other, self,"DIA_SLD_753_Baloro_Worumgehts_Info_15_02"); //Co takhle dobrı meè, lehkou zbroj nebo pøístup do dolu?
-	AI_Output (self, other,"DIA_SLD_753_Baloro_Worumgehts_Info_08_02"); //Ó ne! To nic!
-	AI_Output (self, other,"DIA_SLD_753_Baloro_Worumgehts_Info_08_03"); //Mùu ti dát nìco, co udrí tvoje oèi na stopkách! Mùu ti dát zbraò, která rozdrtí kadého nepøítele!
-	AI_Output (self, other,"DIA_SLD_753_Baloro_Worumgehts_Info_08_04"); //Musíš mi jen prokázat malou slubièku. Pak bude tvoje! Co øíkáš?
+	AI_Output (other, self,"DIA_SLD_753_Baloro_Worumgehts_Info_15_01"); //Co jsi mÄ›l na mysli?
+	AI_Output (self, other,"DIA_SLD_753_Baloro_Worumgehts_Info_08_01"); //Co potÅ™ebujeÅ¡?
+	AI_Output (other, self,"DIA_SLD_753_Baloro_Worumgehts_Info_15_02"); //Co takhle dobrÃ½ meÄ, lehkou zbroj nebo pÅ™Ã­stup do dolu?
+	AI_Output (self, other,"DIA_SLD_753_Baloro_Worumgehts_Info_08_02"); //Ã“ ne! To nic!
+	AI_Output (self, other,"DIA_SLD_753_Baloro_Worumgehts_Info_08_03"); //MÅ¯Å¾u ti dÃ¡t nÄ›co, co udrÅ¾Ã­ tvoje oÄi na stopkÃ¡ch! MÅ¯Å¾u ti dÃ¡t zbraÅˆ, kterÃ¡ rozdrtÃ­ kaÅ¾dÃ©ho nepÅ™Ã­tele!
+	AI_Output (self, other,"DIA_SLD_753_Baloro_Worumgehts_Info_08_04"); //MusÃ­Å¡ mi jen prokÃ¡zat malou sluÅ¾biÄku. Pak bude tvoje! Co Å™Ã­kÃ¡Å¡?
 
 	Info_ClearChoices	(DIA_SLD_753_Baloro_Worumgehts); // alte choices loeschen
-	Info_AddChoice		(DIA_SLD_753_Baloro_Worumgehts,"Musím to mít.",DIA_SLD_753_Baloro_Worumgehts_ja);
-	Info_AddChoice		(DIA_SLD_753_Baloro_Worumgehts,"Nevìøím mu ani slovo.",DIA_SLD_753_Baloro_Exit_Info);
+	Info_AddChoice		(DIA_SLD_753_Baloro_Worumgehts,"MusÃ­m to mÃ­t.",DIA_SLD_753_Baloro_Worumgehts_ja);
+	Info_AddChoice		(DIA_SLD_753_Baloro_Worumgehts,"NevÄ›Å™Ã­m mu ani slovo.",DIA_SLD_753_Baloro_Exit_Info);
 	
 };
 
 FUNC VOID DIA_SLD_753_Baloro_Worumgehts_ja()
 {
-	AI_Output (other, self,"DIA_SLD_753_Baloro_Worumgehts_ja_15_05"); //Co pro tebe mám udìlat?
-	AI_Output (self, other,"DIA_SLD_753_Baloro_Worumgehts_ja_08_03"); //Velmi jednoduché!
-	AI_Output (self, other,"DIA_SLD_753_Baloro_Worumgehts_ja_08_04"); //Dej mi 5 jablek, 2 láhve rıové pálenky, 5 láhví piva, 3 bochníky chleba, 2 kusy sıra, 2 hrozny vína a jsme domluveni!
-	AI_Output (self, other,"DIA_SLD_753_Baloro_Worumgehts_ja_08_05"); //Vìø mi, nebudeš litovat! Jak jsem øekl: porazíš s ní jakéhokoliv nepøítele!
+	AI_Output (other, self,"DIA_SLD_753_Baloro_Worumgehts_ja_15_05"); //Co pro tebe mÃ¡m udÄ›lat?
+	AI_Output (self, other,"DIA_SLD_753_Baloro_Worumgehts_ja_08_03"); //Velmi jednoduchÃ©!
+	AI_Output (self, other,"DIA_SLD_753_Baloro_Worumgehts_ja_08_04"); //Dej mi 5 jablek, 2 lÃ¡hve rÃ½Å¾ovÃ© pÃ¡lenky, 5 lÃ¡hvÃ­ piva, 3 bochnÃ­ky chleba, 2 kusy sÃ½ra, 2 hrozny vÃ­na a jsme domluveni!
+	AI_Output (self, other,"DIA_SLD_753_Baloro_Worumgehts_ja_08_05"); //VÄ›Å™ mi, nebudeÅ¡ litovat! Jak jsem Å™ekl: porazÃ­Å¡ s nÃ­ jakÃ©hokoliv nepÅ™Ã­tele!
 	
 	Info_ClearChoices	(DIA_SLD_753_Baloro_Worumgehts); // alte choices loeschen
-	Info_AddChoice		(DIA_SLD_753_Baloro_Worumgehts,"Musím to mít.",DIA_SLD_753_Baloro_Worumgehts_jaklar);
-	Info_AddChoice		(DIA_SLD_753_Baloro_Worumgehts,"Ten chlápek mele nesmysly.",DIA_SLD_753_Baloro_Exit_Info);
+	Info_AddChoice		(DIA_SLD_753_Baloro_Worumgehts,"MusÃ­m to mÃ­t.",DIA_SLD_753_Baloro_Worumgehts_jaklar);
+	Info_AddChoice		(DIA_SLD_753_Baloro_Worumgehts,"Ten chlÃ¡pek mele nesmysly.",DIA_SLD_753_Baloro_Exit_Info);
 };
 	
 FUNC VOID DIA_SLD_753_Baloro_Worumgehts_jaklar()
 {
-	AI_Output (other, self,"DIA_SLD_753_Baloro_Worumgehts_ja_15_06"); //Dobrá, uvidíme, co budu moci udìlat!
-	AI_Output (self, other,"DIA_SLD_753_Baloro_Worumgehts_ja_08_06"); //Vıbornì! Ale nepospíchej
-	AI_Output (self, other,"DIA_SLD_753_Baloro_Worumgehts_ja_08_07"); //A nezapomeò: 5 jablek, 2 láhve rıové pálenky, 5 láhví piva, 3 bochníky chleba, 2 kusy sıra, 2 hrozny vína! Jasnı?
-	AI_Output (other, self,"DIA_SLD_753_Baloro_Worumgehts_ja_15_07"); //Jasnı!
+	AI_Output (other, self,"DIA_SLD_753_Baloro_Worumgehts_ja_15_06"); //DobrÃ¡, uvidÃ­me, co budu moci udÄ›lat!
+	AI_Output (self, other,"DIA_SLD_753_Baloro_Worumgehts_ja_08_06"); //VÃ½bornÄ›! Ale nepospÃ­chej
+	AI_Output (self, other,"DIA_SLD_753_Baloro_Worumgehts_ja_08_07"); //A nezapomeÅˆ: 5 jablek, 2 lÃ¡hve rÃ½Å¾ovÃ© pÃ¡lenky, 5 lÃ¡hvÃ­ piva, 3 bochnÃ­ky chleba, 2 kusy sÃ½ra, 2 hrozny vÃ­na! JasnÃ½?
+	AI_Output (other, self,"DIA_SLD_753_Baloro_Worumgehts_ja_15_07"); //JasnÃ½!
 	
 	
 //********	Auftragannahme	**************************
@@ -124,7 +124,7 @@ FUNC VOID DIA_SLD_753_Baloro_Worumgehts_jaklar()
 		
 	Log_CreateTopic		(Baloros_Waffe,		LOG_MISSION);
 	Log_SetTopicStatus	(Baloros_Waffe,		LOG_RUNNING);
-	B_LogEntry			(Baloros_Waffe,		"Baloro mi slíbil vıbornou zbraò, pokud mu pøinesu 5 jablek, 2 láhve rıové pálenky, 5 lahví piva, 3 bochníky chleba, 2 kousky sıra a 2 trsy hroznù."); 
+	B_LogEntry			(Baloros_Waffe,		"Baloro mi slÃ­bil vÃ½bornou zbraÅˆ, pokud mu pÅ™inesu 5 jablek, 2 lÃ¡hve rÃ½Å¾ovÃ© pÃ¡lenky, 5 lahvÃ­ piva, 3 bochnÃ­ky chleba, 2 kousky sÃ½ra a 2 trsy hroznÅ¯."); 
 
 	AI_StopProcessInfos	( self );
 };
@@ -132,7 +132,7 @@ FUNC VOID DIA_SLD_753_Baloro_Worumgehts_jaklar()
 
 
 
-// ********************** Ich hab´s noch nicht dabei *****************	
+// ********************** Ich habÂ´s noch nicht dabei *****************	
 
 
 instance DIA_SLD_753_Baloro_habsnichtdabei (C_INFO)
@@ -142,7 +142,7 @@ instance DIA_SLD_753_Baloro_habsnichtdabei (C_INFO)
 	information	= DIA_SLD_753_Baloro_habsnichtdabei_Info;
 	important	= 0;	
 	permanent	= 1;
-	description = "Nemohl jsem sehnat, co jsi chtìl!";
+	description = "Nemohl jsem sehnat, co jsi chtÄ›l!";
 };                       
 
 FUNC int DIA_SLD_753_Baloro_habsnichtdabei_Condition()
@@ -156,16 +156,16 @@ FUNC int DIA_SLD_753_Baloro_habsnichtdabei_Condition()
 
 FUNC VOID DIA_SLD_753_Baloro_habsnichtdabei_Info()
 {
-	AI_Output (other, self,"DIA_SLD_753_Baloro_habsnichtdabei_Info_15_01"); //Nemohl jsem sehnat, co jsi chtìl! Jake to bylo? Bylo to spousta rùznıch vìcí!
-	AI_Output (self, other,"DIA_SLD_753_Baloro_habsnichtdabei_Info_08_01"); //Dobøe! Zopakuju ti to pomalu. Chci, abys mi pøinesl...
-	AI_Output (self, other,"DIA_SLD_753_Baloro_habsnichtdabei_Info_08_02"); //5 jablek, 2 láhve rıové pálenky, 5 láhví piva, 3 bochníky chleba, 2 kusy sıra, 2 hrozny vína! Pamatuješ si to u?
-	AI_Output (other, self,"DIA_SLD_753_Baloro_habsnichtdabei_Info_15_02"); //Jistì! Urèitì! Pospíším si!
+	AI_Output (other, self,"DIA_SLD_753_Baloro_habsnichtdabei_Info_15_01"); //Nemohl jsem sehnat, co jsi chtÄ›l! JakÅ¾e to bylo? Bylo to spousta rÅ¯znÃ½ch vÄ›cÃ­!
+	AI_Output (self, other,"DIA_SLD_753_Baloro_habsnichtdabei_Info_08_01"); //DobÅ™e! Zopakuju ti to pomalu. Chci, abys mi pÅ™inesl...
+	AI_Output (self, other,"DIA_SLD_753_Baloro_habsnichtdabei_Info_08_02"); //5 jablek, 2 lÃ¡hve rÃ½Å¾ovÃ© pÃ¡lenky, 5 lÃ¡hvÃ­ piva, 3 bochnÃ­ky chleba, 2 kusy sÃ½ra, 2 hrozny vÃ­na! PamatujeÅ¡ si to uÅ¾?
+	AI_Output (other, self,"DIA_SLD_753_Baloro_habsnichtdabei_Info_15_02"); //JistÄ›! UrÄitÄ›! PospÃ­Å¡Ã­m si!
 
 	AI_StopProcessInfos	( self );	
 };
 
 
-// ********************** Ich hab´s  dabei *****************	
+// ********************** Ich habÂ´s  dabei *****************	
 
 instance DIA_SLD_753_Baloro_habsdabei (C_INFO)
 {
@@ -174,7 +174,7 @@ instance DIA_SLD_753_Baloro_habsdabei (C_INFO)
 	information	= DIA_SLD_753_Baloro_habsdabei_Info;
 	important	= 0;	
 	permanent	= 0;
-	description 	= "Mám pro tebe všechno, co jsi chtìl!";
+	description 	= "MÃ¡m pro tebe vÅ¡echno, co jsi chtÄ›l!";
 };                       
 
 FUNC int DIA_SLD_753_Baloro_habsdabei_Condition()
@@ -196,12 +196,12 @@ FUNC int DIA_SLD_753_Baloro_habsdabei_Condition()
 
 FUNC VOID DIA_SLD_753_Baloro_habsdabei_Info()
 {
-	AI_Output (other, self,"DIA_SLD_753_Baloro_habsdabei_Info_15_01"); //Mám pro tebe všechno, co jsi chtìl! A teï udìláme ten obchod s tou zázraènou zbraní, dobøe?
-	AI_Output (self, other,"DIA_SLD_753_Baloro_habsdabei_Info_08_01"); //Nejdøív mi uka ty vìci!
+	AI_Output (other, self,"DIA_SLD_753_Baloro_habsdabei_Info_15_01"); //MÃ¡m pro tebe vÅ¡echno, co jsi chtÄ›l! A teÄ udÄ›lÃ¡me ten obchod s tou zÃ¡zraÄnou zbranÃ­, dobÅ™e?
+	AI_Output (self, other,"DIA_SLD_753_Baloro_habsdabei_Info_08_01"); //NejdÅ™Ã­v mi ukaÅ¾ ty vÄ›ci!
 	
 	CreateInvItems(other, ItFoApple, 14);
 	
-	B_GiveInvItems(other, self, ItFoApple, 19); //Nötig für die Ausschrift "19 Itmes abgegeben", wird sofort angeglichen.
+	B_GiveInvItems(other, self, ItFoApple, 19); //NÃ¶tig fÃ¼r die Ausschrift "19 Itmes abgegeben", wird sofort angeglichen.
 	
 	Npc_RemoveInvItems ( other,ItFoBooze,2);
 	Npc_RemoveInvItems ( other,ItFoBeer,5);
@@ -218,17 +218,17 @@ FUNC VOID DIA_SLD_753_Baloro_habsdabei_Info()
 
 	
 	AI_Output (other, self,"DIA_SLD_753_Baloro_habsdabei_Info_15_02"); //Tady jsou.
-	AI_Output (self, other,"DIA_SLD_753_Baloro_habsdabei_Info_08_02"); //Ano. Vıbornì.
-	AI_Output (other, self,"DIA_SLD_753_Baloro_habsdabei_Info_15_03"); //Dobøe, a teï mi dej tu vìcièku!
-	AI_Output (self, other,"DIA_SLD_753_Baloro_habsdabei_Info_08_03"); //Zapomeò na to!
-	AI_Output (other, self,"DIA_SLD_753_Baloro_habsdabei_Info_15_04"); //Coe?
-	AI_Output (self, other,"DIA_SLD_753_Baloro_habsdabei_Info_08_04"); //Opravdu sis myslel, e za to nìco dostaneš? Mám pocit, e jestli jsi tak tupı, es tomu vìøil, tak si nezaslouíš nic jiného!
-	AI_Output (self, other,"DIA_SLD_753_Baloro_habsdabei_Info_08_05"); //Pøekvapuje mì, e jsi stále naivu! Kdy vìøíš všemu, co lidi øíkají, moc dlouho nepøeiješ!
-	AI_Output (self, other,"DIA_SLD_753_Baloro_habsdabei_Info_08_06"); //Ale nevadí! Teï máme my chlapi dost jídla na oslavu! Díky moc! Moná se ještì uvidíme. Hehehe!
+	AI_Output (self, other,"DIA_SLD_753_Baloro_habsdabei_Info_08_02"); //Ano. VÃ½bornÄ›.
+	AI_Output (other, self,"DIA_SLD_753_Baloro_habsdabei_Info_15_03"); //DobÅ™e, a teÄ mi dej tu vÄ›ciÄku!
+	AI_Output (self, other,"DIA_SLD_753_Baloro_habsdabei_Info_08_03"); //ZapomeÅˆ na to!
+	AI_Output (other, self,"DIA_SLD_753_Baloro_habsdabei_Info_15_04"); //CoÅ¾e?
+	AI_Output (self, other,"DIA_SLD_753_Baloro_habsdabei_Info_08_04"); //Opravdu sis myslel, Å¾e za to nÄ›co dostaneÅ¡? MÃ¡m pocit, Å¾e jestli jsi tak tupÃ½, Å¾es tomu vÄ›Å™il, tak si nezaslouÅ¾Ã­Å¡ nic jinÃ©ho!
+	AI_Output (self, other,"DIA_SLD_753_Baloro_habsdabei_Info_08_05"); //PÅ™ekvapuje mÄ›, Å¾e jsi stÃ¡le naÅ¾ivu! KdyÅ¾ vÄ›Å™Ã­Å¡ vÅ¡emu, co lidi Å™Ã­kajÃ­, moc dlouho nepÅ™eÅ¾ijeÅ¡!
+	AI_Output (self, other,"DIA_SLD_753_Baloro_habsdabei_Info_08_06"); //Ale nevadÃ­! TeÄ mÃ¡me my chlapi dost jÃ­dla na oslavu! DÃ­ky moc! MoÅ¾nÃ¡ se jeÅ¡tÄ› uvidÃ­me. Hehehe!
 	
 	SLD_753_Baloro_SC_besorgt_den_Kram = LOG_SUCCESS ;
 	B_GiveXP (300);
-	B_LogEntry			(Baloros_Waffe,		"Mìl bych více pøemıšlet, ne skoèím na takovı špek! Nevadí, aspoò jsem dostal lekci!"); 
+	B_LogEntry			(Baloros_Waffe,		"MÄ›l bych vÃ­ce pÅ™emÃ½Å¡let, neÅ¾ skoÄÃ­m na takovÃ½ Å¡pek! NevadÃ­, aspoÅˆ jsem dostal lekci!"); 
 
 	Log_SetTopicStatus	(Baloros_Waffe,		LOG_SUCCESS);
 	
@@ -245,7 +245,7 @@ instance DIA_SLD_753_Baloro_letztes_Wort (C_INFO)
 	information	= DIA_SLD_753_Baloro_letztes_Wort_Info;
 	important	= 0;	
 	permanent	= 0;
-	description 	= "Hej, èlovìèe! Tohle mi nemùeš udìlat!";
+	description 	= "Hej, ÄlovÄ›Äe! Tohle mi nemÅ¯Å¾eÅ¡ udÄ›lat!";
 	
 };                       
 
@@ -261,8 +261,8 @@ FUNC int DIA_SLD_753_Baloro_letztes_Wort_Condition()
 FUNC VOID DIA_SLD_753_Baloro_letztes_Wort_Info()
 
 	 	{
-			AI_Output (other, self,"DIA_SLD_753_Baloro_letztes_Wort_Info_15_01"); //Hej, èlovìèe! Tohle mi nemùeš udìlat!
-			AI_Output (self, other,"DIA_SLD_753_Baloro_letztes_Wort_Info_08_01"); //Co chceš víc? Odtáhni! Lez si na nervy nìkomu jinému, nebo tì rozmáznu! Jasnı!
+			AI_Output (other, self,"DIA_SLD_753_Baloro_letztes_Wort_Info_15_01"); //Hej, ÄlovÄ›Äe! Tohle mi nemÅ¯Å¾eÅ¡ udÄ›lat!
+			AI_Output (self, other,"DIA_SLD_753_Baloro_letztes_Wort_Info_08_01"); //Co chceÅ¡ vÃ­c? OdtÃ¡hni! Lez si na nervy nÄ›komu jinÃ©mu, nebo tÄ› rozmÃ¡znu! JasnÃ½!
 		
 			SLD_753_Baloro_SC_wills_wissen = 1	;
 			
@@ -272,7 +272,7 @@ FUNC VOID DIA_SLD_753_Baloro_letztes_Wort_Info()
 
 
 
-// **********************	EXIT\ Spieler will´s wissen	*****************	
+// **********************	EXIT\ Spieler willÂ´s wissen	*****************	
 
 instance DIA_SLD_753_Baloro_SC_wills_wissen (C_INFO)
 {
@@ -281,7 +281,7 @@ instance DIA_SLD_753_Baloro_SC_wills_wissen (C_INFO)
 	information	= DIA_SLD_753_Baloro_SC_wills_wissen_Info;
 	important	= 0;	
 	permanent	= 0;
-	description 	= "Obávám se, e tì budu muset pøetáhnout holí!";
+	description 	= "ObÃ¡vÃ¡m se, Å¾e tÄ› budu muset pÅ™etÃ¡hnout holÃ­!";
 	
 };                       
 
@@ -305,10 +305,10 @@ FUNC VOID DIA_SLD_753_Baloro_Attack()
 
 FUNC VOID DIA_SLD_753_Baloro_SC_wills_wissen_Info()
 {
-	AI_Output (other, self,"DIA_SLD_753_Baloro_SC_wills_wissen_Info_15_01"); //Obávám se, e tì budu muset pøetáhnout holí!
-	AI_Output (self, other,"DIA_SLD_753_Baloro_SC_wills_wissen_Info_08_01"); //Tak jsme se zasmáli! A teï padej, èlovìèe!
-	AI_Output (other, self,"DIA_SLD_753_Baloro_SC_wills_wissen_Info_15_02"); //Mám pocit, es mi nerozumìl!
-	AI_Output (self, other,"DIA_SLD_753_Baloro_SC_wills_wissen_Info_08_02"); //Dobrá! Øíkal sis o to! Já tì varoval!
+	AI_Output (other, self,"DIA_SLD_753_Baloro_SC_wills_wissen_Info_15_01"); //ObÃ¡vÃ¡m se, Å¾e tÄ› budu muset pÅ™etÃ¡hnout holÃ­!
+	AI_Output (self, other,"DIA_SLD_753_Baloro_SC_wills_wissen_Info_08_01"); //Tak jsme se zasmÃ¡li! A teÄ padej, ÄlovÄ›Äe!
+	AI_Output (other, self,"DIA_SLD_753_Baloro_SC_wills_wissen_Info_15_02"); //MÃ¡m pocit, Å¾es mi nerozumÄ›l!
+	AI_Output (self, other,"DIA_SLD_753_Baloro_SC_wills_wissen_Info_08_02"); //DobrÃ¡! Å˜Ã­kal sis o to! JÃ¡ tÄ› varoval!
 	
 	DIA_SLD_753_Baloro_Attack () ;
 	
@@ -328,7 +328,7 @@ instance DIA_SLD_753_Baloro_Exit (C_INFO)
 	information	= DIA_SLD_753_Baloro_Exit_Info;
 	important	= 0;	
 	permanent	= 1;
-	description 	= "Musím jít dál.";
+	description 	= "MusÃ­m jÃ­t dÃ¡l.";
 	
 };                       
 
@@ -346,15 +346,15 @@ FUNC VOID DIA_SLD_753_Baloro_Exit_Info()
 		
 				if ( (Npc_KnowsInfo(hero,DIA_SLD_753_Baloro_Wasmeinstdu))  &&   (SLD_753_Baloro_SC_choice == 0)	)  
 					{
-						AI_Output (other, self,"DIA_SLD_753_Baloro_Exit_Info_15_01"); //Ne, ne! Jdi pryè! Nezajímáš mì!
-						AI_Output (self, other,"DIA_SLD_753_Baloro_Exit_Info_08_02"); //Dobrá! Jak chceš! Dostal si šanci!
+						AI_Output (other, self,"DIA_SLD_753_Baloro_Exit_Info_15_01"); //Ne, ne! Jdi pryÄ! NezajÃ­mÃ¡Å¡ mÄ›!
+						AI_Output (self, other,"DIA_SLD_753_Baloro_Exit_Info_08_02"); //DobrÃ¡! Jak chceÅ¡! Dostal si Å¡anci!
 						
 						SLD_753_Baloro_SC_choice = 1 ;
 					}
 				else
 					{
-						AI_Output (other, self,"DIA_SLD_753_Baloro_Exit_Info_15_03"); //Je mi líto! Bohuel nemám èas si povídat!
-						AI_Output (self, other,"DIA_SLD_753_Baloro_Exit_Info_08_04"); //Och, ty nemáš èas! Ještì se uvidíme!
+						AI_Output (other, self,"DIA_SLD_753_Baloro_Exit_Info_15_03"); //Je mi lÃ­to! BohuÅ¾el nemÃ¡m Äas si povÃ­dat!
+						AI_Output (self, other,"DIA_SLD_753_Baloro_Exit_Info_08_04"); //Och, ty nemÃ¡Å¡ Äas! JeÅ¡tÄ› se uvidÃ­me!
 					};
 			
 	
@@ -371,7 +371,7 @@ instance DIA_SLD_753_Baloro_Angebotdochannehmen (C_INFO)
 	information	= DIA_SLD_753_Baloro_Angebotdochannehmen_Info;
 	important	= 0;	
 	permanent	= 0;
-	description 	= "Pøemıšlel jsem o tom! Chtìl bych tvoji nabídku pøijmout.";
+	description 	= "PÅ™emÃ½Å¡lel jsem o tom! ChtÄ›l bych tvoji nabÃ­dku pÅ™ijmout.";
 	
 };                       
 
@@ -387,8 +387,8 @@ FUNC int DIA_SLD_753_Baloro_Angebotdochannehmen_Condition()
 FUNC VOID DIA_SLD_753_Baloro_Angebotdochannehmen_Info()
 
 	 	{
-			AI_Output (other, self,"DIA_SLD_753_Baloro_Angebotdochannehmen_Info_15_01"); //Pøemıšlel jsem o tom! Chtìl bych tvoji nabídku pøijmout.
-			AI_Output (self, other,"DIA_SLD_753_Baloro_Angebotdochannehmen_Info_08_01"); //To u je pozdì! Mìl jsi monost!
+			AI_Output (other, self,"DIA_SLD_753_Baloro_Angebotdochannehmen_Info_15_01"); //PÅ™emÃ½Å¡lel jsem o tom! ChtÄ›l bych tvoji nabÃ­dku pÅ™ijmout.
+			AI_Output (self, other,"DIA_SLD_753_Baloro_Angebotdochannehmen_Info_08_01"); //To uÅ¾ je pozdÄ›! MÄ›l jsi moÅ¾nost!
 		
 			
 			AI_StopProcessInfos	(self);	

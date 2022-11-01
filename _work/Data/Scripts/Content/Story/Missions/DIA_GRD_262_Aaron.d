@@ -29,7 +29,7 @@ instance  GRD_262_Aaron_CHEST (C_INFO)
 	information	=  GRD_262_Aaron_CHEST_Info;
 	important	= 0;	
 	permanent	= 1;
-	description = "Co tady dÏl·ö?";
+	description = "Co tady dƒõl√°≈°?";
 };                       
 
 FUNC int  GRD_262_Aaron_CHEST_Condition()
@@ -42,8 +42,8 @@ FUNC int  GRD_262_Aaron_CHEST_Condition()
 };
 FUNC VOID  GRD_262_Aaron_CHEST_Info()
 {
-	AI_Output			(other, self,"GRD_262_Aaron_CHEST_Info_15_01"); //Co tady dÏl·ö?
-	AI_Output			(self, other,"GRD_262_Aaron_CHEST_Info_09_02"); //D·v·m pozor na kop·Ëe, jako je Snipes, abych se ujistil, ûe majÌ ruce daleko od mÈ truhly.
+	AI_Output			(other, self,"GRD_262_Aaron_CHEST_Info_15_01"); //Co tady dƒõl√°≈°?
+	AI_Output			(self, other,"GRD_262_Aaron_CHEST_Info_09_02"); //D√°v√°m pozor na kop√°ƒçe, jako je Snipes, abych se ujistil, ≈æe maj√≠ ruce daleko od m√© truhly.
 };
 
 //***************** BLUFF *****************************
@@ -54,7 +54,7 @@ instance  GRD_262_Aaron_BLUFF (C_INFO)
 	information		= GRD_262_Aaron_BLUFF_Info;
 	important		= 0;
 	permanent		= 1;
-	description		= "(odl·kej Aarona)"; 
+	description		= "(odl√°kej Aarona)"; 
 };
 
 FUNC int  GRD_262_Aaron_BLUFF_Condition()
@@ -71,50 +71,50 @@ FUNC void  GRD_262_Aaron_BLUFF_Info()
 {
 	Info_ClearChoices	(GRD_262_Aaron_BLUFF);
 	Info_AddChoice		(GRD_262_Aaron_BLUFF,DIALOG_BACK												,GRD_262_Aaron_BLUFF_BACK);
-	Info_AddChoice		(GRD_262_Aaron_BLUFF,"Poslal mÏ Ian. MÏl bys za nÌm ihned zajÌt!",GRD_262_Aaron_BLUFF_IAN);
-	Info_AddChoice		(GRD_262_Aaron_BLUFF,"Slyöel jsem, ûe v dole jsou banditi. ChtÏjÌ rudu!",GRD_262_Aaron_BLUFF_BANDIT);
-	Info_AddChoice		(GRD_262_Aaron_BLUFF,"Kop·Ëi naöli masivnÌ magick˝ nuget!",GRD_262_Aaron_BLUFF_ORE);
+	Info_AddChoice		(GRD_262_Aaron_BLUFF,"Poslal mƒõ Ian. Mƒõl bys za n√≠m ihned zaj√≠t!",GRD_262_Aaron_BLUFF_IAN);
+	Info_AddChoice		(GRD_262_Aaron_BLUFF,"Sly≈°el jsem, ≈æe v dole jsou banditi. Chtƒõj√≠ rudu!",GRD_262_Aaron_BLUFF_BANDIT);
+	Info_AddChoice		(GRD_262_Aaron_BLUFF,"Kop√°ƒçi na≈°li masivn√≠ magick√Ω nuget!",GRD_262_Aaron_BLUFF_ORE);
 };
 
 FUNC void   GRD_262_Aaron_BLUFF_ORE ()
 {
-	AI_Output			(other, self,"GRD_262_Aaron_BLUFF_ORE_15_01");//Kop·Ëi naöli masivnÌ magick˝ nuget!
+	AI_Output			(other, self,"GRD_262_Aaron_BLUFF_ORE_15_01");//Kop√°ƒçi na≈°li masivn√≠ magick√Ω nuget!
 	AI_Output			(self, other,"GRD_262_Aaron_BLUFF_ORE_09_02");//No a?
-	AI_Output			(other, self,"GRD_262_Aaron_BLUFF_ORE_15_03");//MusÌö na to dohlÈdnout!
-	AI_Output			(self, other,"GRD_262_Aaron_BLUFF_ORE_09_04");//Na to zapomeÚ!
+	AI_Output			(other, self,"GRD_262_Aaron_BLUFF_ORE_15_03");//Mus√≠≈° na to dohl√©dnout!
+	AI_Output			(self, other,"GRD_262_Aaron_BLUFF_ORE_09_04");//Na to zapome≈à!
 };  
 FUNC VOID GRD_262_Aaron_BLUFF_BANDIT ()
 {
-	AI_Output			(other, self,"GRD_262_Aaron_BLUFF_BANDIT_15_01"); //Slyöel jsem, ûe v dole jsou banditi. ChtÏjÌ rudu!
-	AI_Output			(self, other,"GRD_262_Aaron_BLUFF_BANDIT_09_02"); //MyslÌö, ûe jsem takov˝ hlup·k? NÏËeho takovÈho by se nikdy neodv·ûili!
+	AI_Output			(other, self,"GRD_262_Aaron_BLUFF_BANDIT_15_01"); //Sly≈°el jsem, ≈æe v dole jsou banditi. Chtƒõj√≠ rudu!
+	AI_Output			(self, other,"GRD_262_Aaron_BLUFF_BANDIT_09_02"); //Mysl√≠≈°, ≈æe jsem takov√Ω hlup√°k? Nƒõƒçeho takov√©ho by se nikdy neodv√°≈æili!
 };
 func void  GRD_262_Aaron_BLUFF_IAN()
 {
-	AI_Output			(other, self,"GRD_262_Aaron_BLUFF_IAN_15_01"); //Poslal mÏ Ian. MÏl bys za nÌm ihned zajÌt!
+	AI_Output			(other, self,"GRD_262_Aaron_BLUFF_IAN_15_01"); //Poslal mƒõ Ian. Mƒõl bys za n√≠m ihned zaj√≠t!
 	AI_Output			(self, other,"GRD_262_Aaron_BLUFF_IAN_09_02"); //Co chce?
 	
 	Info_ClearChoices	(GRD_262_Aaron_BLUFF);
-	Info_AddChoice		(GRD_262_Aaron_BLUFF,"NetuöÌm.",GRD_262_Aaron_BLUFF_UGLY);
-	Info_AddChoice		(GRD_262_Aaron_BLUFF,"Zabije tÏ.",GRD_262_Aaron_BLUFF_BAD);
-	Info_AddChoice		(GRD_262_Aaron_BLUFF,"Chce ti d·t odmÏnu.",GRD_262_Aaron_BLUFF_GOOD);
+	Info_AddChoice		(GRD_262_Aaron_BLUFF,"Netu≈°√≠m.",GRD_262_Aaron_BLUFF_UGLY);
+	Info_AddChoice		(GRD_262_Aaron_BLUFF,"Zabije tƒõ.",GRD_262_Aaron_BLUFF_BAD);
+	Info_AddChoice		(GRD_262_Aaron_BLUFF,"Chce ti d√°t odmƒõnu.",GRD_262_Aaron_BLUFF_GOOD);
 };  
 func void GRD_262_Aaron_BLUFF_GOOD ()
 {
-	AI_Output			(other, self,"GRD_262_Aaron_BLUFF_GOOD_15_01"); //Chce ti d·t odmÏnu za dobrou pr·ci.
-	AI_Output			(self, other,"GRD_262_Aaron_BLUFF_GOOD_09_02"); //Opravdu? MÏl bys radÏji jÌt.
+	AI_Output			(other, self,"GRD_262_Aaron_BLUFF_GOOD_15_01"); //Chce ti d√°t odmƒõnu za dobrou pr√°ci.
+	AI_Output			(self, other,"GRD_262_Aaron_BLUFF_GOOD_09_02"); //Opravdu? Mƒõl bys radƒõji j√≠t.
 	Npc_SetTempAttitude (self, ATT_ANGRY);
 	AI_StopProcessInfos	(self);
 };
 func void 	GRD_262_Aaron_BLUFF_BAD ()
 {
-	AI_Output			(other, self,"GRD_262_Aaron_BLUFF_BAD_15_01"); //Zabije tÏ, protoûe jsi straönÏ lÌnej!
-	AI_Output			(self, other,"GRD_262_Aaron_BLUFF_BAD_09_02"); //To nenÌ û·dn· novinka. Zmiz!
+	AI_Output			(other, self,"GRD_262_Aaron_BLUFF_BAD_15_01"); //Zabije tƒõ, proto≈æe jsi stra≈°nƒõ l√≠nej!
+	AI_Output			(self, other,"GRD_262_Aaron_BLUFF_BAD_09_02"); //To nen√≠ ≈æ√°dn√° novinka. Zmiz!
 	AI_StopProcessInfos	(self);
 };
 func void GRD_262_Aaron_BLUFF_UGLY()
 {
-	AI_Output			(other, self,"GRD_262_Aaron_BLUFF_UGLY_15_01"); //NevÌm. To ti ¯ekne s·m Ian. MyslÌö, ûe by mi nÏco takovÈho ¯ekl?
-	AI_Output			(self, other,"GRD_262_Aaron_BLUFF_UGLY_09_02"); //Pak teda za nÌm p˘jdu!
+	AI_Output			(other, self,"GRD_262_Aaron_BLUFF_UGLY_15_01"); //Nev√≠m. To ti ≈ôekne s√°m Ian. Mysl√≠≈°, ≈æe by mi nƒõco takov√©ho ≈ôekl?
+	AI_Output			(self, other,"GRD_262_Aaron_BLUFF_UGLY_09_02"); //Pak teda za n√≠m p≈Øjdu!
 
 	AI_StopProcessInfos	(self);
 		
@@ -124,7 +124,7 @@ func void GRD_262_Aaron_BLUFF_UGLY()
 	Snipes_Deal = LOG_SUCCESS;
 	GRD_262_Aaron_BLUFF.permanent = 0;
 	
-	B_LogEntry		(CH2_SnipesDeal,"Odl·kal jsem Aarona pryË od truhlice pod z·minkou, ûe ho chce vidÏt Ian. Douf·m, ûe to vezme jako vtip.");
+	B_LogEntry		(CH2_SnipesDeal,"Odl√°kal jsem Aarona pryƒç od truhlice pod z√°minkou, ≈æe ho chce vidƒõt Ian. Douf√°m, ≈æe to vezme jako vtip.");
 };
 
 func void GRD_262_Aaron_BLUFF_BACK()
@@ -153,16 +153,16 @@ FUNC int  GRD_262_Aaron_PISSED_Condition()
 FUNC VOID  GRD_262_Aaron_PISSED_Info()
 {
 	AI_DrawWeapon		(self);
-	AI_Output			(self, other,"Info_Aaron_PISSED_09_01"); //HEJ, TY!!! Jestli se ze mÏ jeötÏ pokusÌö udÏlat hlup·ka, pak si ¯Ìk·ö o po¯·dnej v˝prask, jasn˝?
+	AI_Output			(self, other,"Info_Aaron_PISSED_09_01"); //HEJ, TY!!! Jestli se ze mƒõ je≈°tƒõ pokus√≠≈° udƒõlat hlup√°ka, pak si ≈ô√≠k√°≈° o po≈ô√°dnej v√Ωprask, jasn√Ω?
 	AI_RemoveWeapon		(self);
 
 	Npc_ExchangeRoutine	(self,	"start");
 	Aaron_lock = LOG_SUCCESS;
 	
-	B_LogEntry		(CH2_SnipesDeal,"Znovu jsem potkal Aarona, kter˝ to vöak NEVZAL jako dobr˝ vtip."); 
+	B_LogEntry		(CH2_SnipesDeal,"Znovu jsem potkal Aarona, kter√Ω to v≈°ak NEVZAL jako dobr√Ω vtip."); 
 };
 
-// ***************** Schl¸ssel verkaufen *****************************
+// ***************** Schl√ºssel verkaufen *****************************
 instance  GRD_262_Aaron_SELL (C_INFO)
 {
 	npc			=  GRD_262_Aaron;
@@ -170,7 +170,7 @@ instance  GRD_262_Aaron_SELL (C_INFO)
 	information	=  GRD_262_Aaron_SELL_Info;
 	important	= 0;	
 	permanent	= 0;
-	description = "Hej, neztratil jsi klÌË?";
+	description = "Hej, neztratil jsi kl√≠ƒç?";
 };                       
 
 FUNC int  GRD_262_Aaron_SELL_Condition()
@@ -183,14 +183,14 @@ FUNC int  GRD_262_Aaron_SELL_Condition()
 
 FUNC VOID  GRD_262_Aaron_SELL_Info()
 {
-	AI_Output			(other, self,"Info_Aaron_SELL_15_01"); //Hej, nepostr·d·ö klÌË od truhly?
-	AI_Output			(self, other,"Info_Aaron_SELL_09_02"); //JistÏ. Akor·t netuöÌm, jak ani proË vÌö o tom klÌËi.
-	AI_Output			(self, other,"Info_Aaron_SELL_09_03"); //D·m ti 20 nuget˘, jestli mi ho p¯ineseö zp·tky.
+	AI_Output			(other, self,"Info_Aaron_SELL_15_01"); //Hej, nepostr√°d√°≈° kl√≠ƒç od truhly?
+	AI_Output			(self, other,"Info_Aaron_SELL_09_02"); //Jistƒõ. Akor√°t netu≈°√≠m, jak ani proƒç v√≠≈° o tom kl√≠ƒçi.
+	AI_Output			(self, other,"Info_Aaron_SELL_09_03"); //D√°m ti 20 nuget≈Ø, jestli mi ho p≈ôinese≈° zp√°tky.
 
-	B_LogEntry		(CH2_SnipesDeal,"Aaron mi nabÌdl 20 nuget˘, kdyû mu d·m klÌË od jeho truhlice!"); 
+	B_LogEntry		(CH2_SnipesDeal,"Aaron mi nab√≠dl 20 nuget≈Ø, kdy≈æ mu d√°m kl√≠ƒç od jeho truhlice!"); 
 };
 
-// ***************** Schl¸ssel verkaufen 2*****************************
+// ***************** Schl√ºssel verkaufen 2*****************************
 instance  GRD_262_Aaron_SELLNOW (C_INFO)
 {
 	npc			=  GRD_262_Aaron;
@@ -198,7 +198,7 @@ instance  GRD_262_Aaron_SELLNOW (C_INFO)
 	information	=  GRD_262_Aaron_SELLNOW_Info;
 	important	= 0;	
 	permanent	= 0;
-	description = "(prodej klÌË)";
+	description = "(prodej kl√≠ƒç)";
 };                       
 
 FUNC int  GRD_262_Aaron_SELLNOW_Condition()
@@ -210,9 +210,9 @@ FUNC int  GRD_262_Aaron_SELLNOW_Condition()
 };
 FUNC VOID  GRD_262_Aaron_SELLNOW_Info()
 {
-	AI_Output			(other, self,"Info_Aaron_SELLNOW_15_01"); //Tady je tv˘j klÌË.
-	AI_Output			(self, other,"Info_Aaron_SELLNOW_09_02"); //Ano, to je on. Dobr·, tady je tÏch 20 nuget˘, jak jsme se dohodli.
-	AI_Output			(self, other,"Info_Aaron_SELLNOW_09_03"); //MÏl bys ale p¯ÌötÏ d·vat lepöÌ pozor. Od teÔ na tebe budu dohlÌûet.
+	AI_Output			(other, self,"Info_Aaron_SELLNOW_15_01"); //Tady je tv≈Øj kl√≠ƒç.
+	AI_Output			(self, other,"Info_Aaron_SELLNOW_09_02"); //Ano, to je on. Dobr√°, tady je tƒõch 20 nuget≈Ø, jak jsme se dohodli.
+	AI_Output			(self, other,"Info_Aaron_SELLNOW_09_03"); //Mƒõl bys ale p≈ô√≠≈°tƒõ d√°vat lep≈°√≠ pozor. Od teƒè na tebe budu dohl√≠≈æet.
 	
 	CreateInvItems 		(self,ItMinugget,20);
 	B_GiveInvItems      (self,other,ItMinugget,20);
@@ -220,7 +220,7 @@ FUNC VOID  GRD_262_Aaron_SELLNOW_Info()
 
 	B_GiveXP			(XP_SellKeyToAaron);
 
-	B_LogEntry		(CH2_SnipesDeal,"Prodal jsem Aaronovi jeho vlastnÌ klÌË. Celkem vzato, nakonec jsem na tom vydÏlal!"); 
+	B_LogEntry		(CH2_SnipesDeal,"Prodal jsem Aaronovi jeho vlastn√≠ kl√≠ƒç. Celkem vzato, nakonec jsem na tom vydƒõlal!"); 
 	Log_SetTopicStatus	(CH2_SnipesDeal,	LOG_SUCCESS);
 };
 

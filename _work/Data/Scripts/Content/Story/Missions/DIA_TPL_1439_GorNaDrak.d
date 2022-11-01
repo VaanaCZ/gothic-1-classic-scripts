@@ -23,7 +23,7 @@ FUNC VOID  DIA_GorNaDrak_EXIT_Info()
 };
 
 // **************************************************
-//					Erste Begrüssung
+//					Erste BegrÃ¼ssung
 // **************************************************
 
 instance  DIA_GorNaDrak_Greet (C_INFO)
@@ -33,7 +33,7 @@ instance  DIA_GorNaDrak_Greet (C_INFO)
 	condition	= DIA_GorNaDrak_Greet_Condition;
 	information	= DIA_GorNaDrak_Greet_Info;
 	permanent	= 0;
-	description  = "Zdar! Kam odcházíš?";
+	description  = "Zdar! Kam odchÃ¡zÃ­Å¡?";
 };                       
 
 FUNC int  DIA_GorNaDrak_Greet_Condition()
@@ -43,9 +43,9 @@ FUNC int  DIA_GorNaDrak_Greet_Condition()
 
 FUNC VOID  DIA_GorNaDrak_Greet_Info()
 {
-	AI_Output (other, self,"DIA_GorNaDrak_Greet_15_00"); //Zdar! Kam odcházíš?
-	AI_Output (self, other,"DIA_GorNaDrak_Greet_09_01"); //Neseme vımìšek dùlního èerva od našich bratrù ze Starého dolu ke Cor Kalomovi.
-	AI_Output (self, other,"DIA_GorNaDrak_Greet_09_02"); //Chodíme pro nìj do Starého dolu kadı den.
+	AI_Output (other, self,"DIA_GorNaDrak_Greet_15_00"); //Zdar! Kam odchÃ¡zÃ­Å¡?
+	AI_Output (self, other,"DIA_GorNaDrak_Greet_09_01"); //Neseme vÃ½mÄ›Å¡ek dÅ¯lnÃ­ho Äerva od naÅ¡ich bratrÅ¯ ze StarÃ©ho dolu ke Cor Kalomovi.
+	AI_Output (self, other,"DIA_GorNaDrak_Greet_09_02"); //ChodÃ­me pro nÄ›j do StarÃ©ho dolu kaÅ¾dÃ½ den.
 };
 
 // **************************************************
@@ -59,7 +59,7 @@ instance  DIA_GorNaDrak_WasSekret (C_INFO)
 	condition	= DIA_GorNaDrak_WasSekret_Condition;
 	information	= DIA_GorNaDrak_WasSekret_Info;
 	permanent	= 0;
-	description  = "Jakı druh vımìšku to je?";
+	description  = "JakÃ½ druh vÃ½mÄ›Å¡ku to je?";
 };                       
 
 FUNC int  DIA_GorNaDrak_WasSekret_Condition()
@@ -72,8 +72,8 @@ FUNC int  DIA_GorNaDrak_WasSekret_Condition()
 
 FUNC VOID  DIA_GorNaDrak_WasSekret_Info()
 {
-	AI_Output (other, self,"DIA_GorNaDrak_WasSekret_15_00"); //Jakı druh vımìšku to je?
-	AI_Output (self, other,"DIA_GorNaDrak_WasSekret_09_01"); //Je obsaenı v èelistech dùlních èervù. Kdy víš jak na to, mùeš je odnést, ani bys ztratil vımìšek.
+	AI_Output (other, self,"DIA_GorNaDrak_WasSekret_15_00"); //JakÃ½ druh vÃ½mÄ›Å¡ku to je?
+	AI_Output (self, other,"DIA_GorNaDrak_WasSekret_09_01"); //Je obsaÅ¾enÃ½ v Äelistech dÅ¯lnÃ­ch ÄervÅ¯. KdyÅ¾ vÃ­Å¡ jak na to, mÅ¯Å¾eÅ¡ je odnÃ©st, aniÅ¾ bys ztratil vÃ½mÄ›Å¡ek.
 };
 
 // **************************************************
@@ -87,7 +87,7 @@ instance  DIA_GorNaDrak_TeachMandibles (C_INFO)
 	condition	= DIA_GorNaDrak_TeachMandibles_Condition;
 	information	= DIA_GorNaDrak_TeachMandibles_Info;
 	permanent	= 0;
-	description  = "Mùeš mi nìco øíci o tom, jak získáváš vımìšek dùlních èervù?";
+	description  = "MÅ¯Å¾eÅ¡ mi nÄ›co Å™Ã­ci o tom, jak zÃ­skÃ¡vÃ¡Å¡ vÃ½mÄ›Å¡ek dÅ¯lnÃ­ch ÄervÅ¯?";
 };                       
 
 FUNC int  DIA_GorNaDrak_TeachMandibles_Condition()
@@ -100,17 +100,17 @@ FUNC int  DIA_GorNaDrak_TeachMandibles_Condition()
 
 FUNC VOID  DIA_GorNaDrak_TeachMandibles_Info()
 {
-	AI_Output (other, self,"DIA_GorNaDrak_TeachMandibles_15_00"); //Mùeš mi nìco øíci o tom, jak získáváš vımìšek dùlních èervù?
-	AI_Output (self, other,"DIA_GorNaDrak_TeachMandibles_09_01"); //Jistì. Kdy tu bestii zabiješ, vezmeš její èelisti a odneseš je. Tak získáš lázu s vımìškem, ani bys ji poškodil.
+	AI_Output (other, self,"DIA_GorNaDrak_TeachMandibles_15_00"); //MÅ¯Å¾eÅ¡ mi nÄ›co Å™Ã­ci o tom, jak zÃ­skÃ¡vÃ¡Å¡ vÃ½mÄ›Å¡ek dÅ¯lnÃ­ch ÄervÅ¯?
+	AI_Output (self, other,"DIA_GorNaDrak_TeachMandibles_09_01"); //JistÄ›. KdyÅ¾ tu bestii zabijeÅ¡, vezmeÅ¡ jejÃ­ Äelisti a odneseÅ¡ je. Tak zÃ­skÃ¡Å¡ Å¾lÃ¡zu s vÃ½mÄ›Å¡kem, aniÅ¾ bys ji poÅ¡kodil.
 	
-	PrintScreen	("Nauèit se: Odøíznout èelisti dùlních èervù", -1,-1,"FONT_OLD_20_WHITE.TGA",3);
+	PrintScreen	("NauÄit se: OdÅ™Ã­znout Äelisti dÅ¯lnÃ­ch ÄervÅ¯", -1,-1,"FONT_OLD_20_WHITE.TGA",3);
 	Knows_GetMCMandibles = TRUE;
 	Log_CreateTopic (GE_AnimalTrophies,LOG_NOTE);
-	B_LogEntry (GE_AnimalTrophies,"Jak odstranit èelisti - dùlní èervi");
+	B_LogEntry (GE_AnimalTrophies,"Jak odstranit Äelisti - dÅ¯lnÃ­ Äervi");
 };
 
 // **************************************************
-//			 	Wofür ist Sekret da?
+//			 	WofÃ¼r ist Sekret da?
 // **************************************************
 
 instance  DIA_GorNaDrak_WhatFor (C_INFO)
@@ -120,7 +120,7 @@ instance  DIA_GorNaDrak_WhatFor (C_INFO)
 	condition	= DIA_GorNaDrak_WhatFor_Condition;
 	information	= DIA_GorNaDrak_WhatFor_Info;
 	permanent	= 0;
-	description  = "Na co Cor Kalom ten vımìšek potøebuje?";
+	description  = "Na co Cor Kalom ten vÃ½mÄ›Å¡ek potÅ™ebuje?";
 };                       
 
 FUNC int  DIA_GorNaDrak_WhatFor_Condition()
@@ -133,10 +133,10 @@ FUNC int  DIA_GorNaDrak_WhatFor_Condition()
 
 FUNC VOID  DIA_GorNaDrak_WhatFor_Info()
 {
-	AI_Output (other, self,"DIA_GorNaDrak_WhatFor_15_00"); //Na co Cor Kalom ten vımìšek potøebuje?
-	AI_Output (self, other,"DIA_GorNaDrak_WhatFor_09_01"); //Co já vím, pøipravuje z nìj nìjakı lektvar, kterı umocòuje magické síly novicù.
-	AI_Output (self, other,"DIA_GorNaDrak_WhatFor_09_02"); //Od té doby, co pøipravujeme velké vzıvání, nemá té látky stále dost.
-	AI_Output (self, other,"DIA_GorNaDrak_WhatFor_09_03"); //S pomocí toho lektvaru pøipravuje novice na ten velkı den.
+	AI_Output (other, self,"DIA_GorNaDrak_WhatFor_15_00"); //Na co Cor Kalom ten vÃ½mÄ›Å¡ek potÅ™ebuje?
+	AI_Output (self, other,"DIA_GorNaDrak_WhatFor_09_01"); //Co jÃ¡ vÃ­m, pÅ™ipravuje z nÄ›j nÄ›jakÃ½ lektvar, kterÃ½ umocÅˆuje magickÃ© sÃ­ly novicÅ¯.
+	AI_Output (self, other,"DIA_GorNaDrak_WhatFor_09_02"); //Od tÃ© doby, co pÅ™ipravujeme velkÃ© vzÃ½vÃ¡nÃ­, nemÃ¡ tÃ© lÃ¡tky stÃ¡le dost.
+	AI_Output (self, other,"DIA_GorNaDrak_WhatFor_09_03"); //S pomocÃ­ toho lektvaru pÅ™ipravuje novice na ten velkÃ½ den.
 };
 
 // **************************************************
@@ -150,7 +150,7 @@ instance  DIA_GorNaDrak_Permanent (C_INFO)
 	condition	= DIA_GorNaDrak_Permanent_Condition;
 	information	= DIA_GorNaDrak_Permanent_Info;
 	permanent	= 1;
-	description  = "Máte dost lektvaru na to velké vzıvání Spáèe?";
+	description  = "MÃ¡te dost lektvaru na to velkÃ© vzÃ½vÃ¡nÃ­ SpÃ¡Äe?";
 };                       
 
 FUNC int  DIA_GorNaDrak_Permanent_Condition()
@@ -163,8 +163,8 @@ FUNC int  DIA_GorNaDrak_Permanent_Condition()
 
 FUNC VOID  DIA_GorNaDrak_Permanent_Info()
 {
-	AI_Output (other, self,"DIA_GorNaDrak_Permanent_15_00"); //Máte dost lektvaru na to velké vzıvání Spáèe?
-	AI_Output (self, other,"DIA_GorNaDrak_Permanent_09_01"); //Ne - Poøád sbíráme další - jednotky našich lovcù dùlních èervù jsou ve dne v noci v akci.
+	AI_Output (other, self,"DIA_GorNaDrak_Permanent_15_00"); //MÃ¡te dost lektvaru na to velkÃ© vzÃ½vÃ¡nÃ­ SpÃ¡Äe?
+	AI_Output (self, other,"DIA_GorNaDrak_Permanent_09_01"); //Ne - PoÅ™Ã¡d sbÃ­rÃ¡me dalÅ¡Ã­ - jednotky naÅ¡ich lovcÅ¯ dÅ¯lnÃ­ch ÄervÅ¯ jsou ve dne v noci v akci.
 };
 
 

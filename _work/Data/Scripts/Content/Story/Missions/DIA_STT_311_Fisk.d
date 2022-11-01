@@ -43,9 +43,9 @@ FUNC int  Stt_311_Fisk_First_Condition()
 
 FUNC VOID  Stt_311_Fisk_First_Info()
 {
-	AI_Output		(self, other,"Stt_311_Fisk_First_12_00"); //Hej, èlovìèe. Já jsem Fisk. Obchoduju se zboím všeho druhu. Jestli budeš kdykoliv a cokoliv potøebovat - tady jsi na správném místì.
+	AI_Output		(self, other,"Stt_311_Fisk_First_12_00"); //Hej, ÄlovÄ›Äe. JÃ¡ jsem Fisk. Obchoduju se zboÅ¾Ã­m vÅ¡eho druhu. Jestli budeÅ¡ kdykoliv a cokoliv potÅ™ebovat - tady jsi na sprÃ¡vnÃ©m mÃ­stÄ›.
 	Log_CreateTopic (GE_TraderOC,LOG_NOTE);
-	B_LogEntry		(GE_TraderOC,"Fisk, jeden ze Stínù, obchoduje se vším zboím, zejména však se ZBRANÌMI. Bıvá obvykle na trišti."); 
+	B_LogEntry		(GE_TraderOC,"Fisk, jeden ze StÃ­nÅ¯, obchoduje se vÅ¡Ã­m zboÅ¾Ã­m, zejmÃ©na vÅ¡ak se ZBRANÄšMI. BÃ½vÃ¡ obvykle na trÅ¾iÅ¡ti."); 
 	
 };
 
@@ -60,7 +60,7 @@ instance  Stt_311_Fisk_Trade (C_INFO)
 	condition	= Stt_311_Fisk_Trade_Condition;
 	information	= Stt_311_Fisk_Trade_Info;
 	permanent	= 1;
-	description = "Uka mi svoje zboí.";
+	description = "UkaÅ¾ mi svoje zboÅ¾Ã­.";
 	trade		= 1;
 };                       
 
@@ -71,7 +71,7 @@ FUNC int  Stt_311_Fisk_Trade_Condition()
 
 FUNC VOID  Stt_311_Fisk_Trade_Info()
 {
-	AI_Output (other, self,"Stt_311_Fisk_Trade_15_00"); //Uka mi svoje zboí.
+	AI_Output (other, self,"Stt_311_Fisk_Trade_15_00"); //UkaÅ¾ mi svoje zboÅ¾Ã­.
 };
 
 
@@ -83,7 +83,7 @@ instance  Stt_311_Fisk_WhistlersSword (C_INFO)
 	condition	= Stt_311_Fisk_WhistlersSword_Condition;
 	information	= Stt_311_Fisk_WhistlersSword_Info;
 	permanent	= 1;
-	description = "Chtìl bych koupit meè. Ne ale nìjakı obyèejnı. Chtìl bych nìjakı se zdobením.";
+	description = "ChtÄ›l bych koupit meÄ. Ne ale nÄ›jakÃ½ obyÄejnÃ½. ChtÄ›l bych nÄ›jakÃ½ se zdobenÃ­m.";
 };                       
 
 FUNC int  Stt_311_Fisk_WhistlersSword_Condition()
@@ -96,29 +96,29 @@ FUNC int  Stt_311_Fisk_WhistlersSword_Condition()
 
 FUNC VOID  Stt_311_Fisk_WhistlersSword_Info()
 {
-	AI_Output (other, self,"Stt_311_Fisk_WhistlersSword_15_00"); //Chtìl bych koupit meè. Ne ale nìjakı obyèejnı. Chtìl bych nìjakı se zdobením.
-	AI_Output (self, other,"Stt_311_Fisk_WhistlersSword_12_01"); //Mám jeden takovı. Stín, kterı ho chtìl koupit, u ke mnì nikdy znovu nepøišel.
-	AI_Output (self, other,"Stt_311_Fisk_WhistlersSword_12_02"); //Bude to 110 nugetù, bereš?
+	AI_Output (other, self,"Stt_311_Fisk_WhistlersSword_15_00"); //ChtÄ›l bych koupit meÄ. Ne ale nÄ›jakÃ½ obyÄejnÃ½. ChtÄ›l bych nÄ›jakÃ½ se zdobenÃ­m.
+	AI_Output (self, other,"Stt_311_Fisk_WhistlersSword_12_01"); //MÃ¡m jeden takovÃ½. StÃ­n, kterÃ½ ho chtÄ›l koupit, uÅ¾ ke mnÄ› nikdy znovu nepÅ™iÅ¡el.
+	AI_Output (self, other,"Stt_311_Fisk_WhistlersSword_12_02"); //Bude to 110 nugetÅ¯, bereÅ¡?
 	Fisk_SCknows110 = TRUE;
 
 	Info_ClearChoices	(Stt_311_Fisk_WhistlersSword );
-	Info_AddChoice		(Stt_311_Fisk_WhistlersSword,"Moná pozdìji.",Stt_311_Fisk_WhistlersSword_BACK);
-	Info_AddChoice		(Stt_311_Fisk_WhistlersSword,"Whistlerovi jsi ho chtìl prodat za sto...",Stt_311_Fisk_WhistlersSword_Fault);
+	Info_AddChoice		(Stt_311_Fisk_WhistlersSword,"MoÅ¾nÃ¡ pozdÄ›ji.",Stt_311_Fisk_WhistlersSword_BACK);
+	Info_AddChoice		(Stt_311_Fisk_WhistlersSword,"Whistlerovi jsi ho chtÄ›l prodat za sto...",Stt_311_Fisk_WhistlersSword_Fault);
 	Info_AddChoice		(Stt_311_Fisk_WhistlersSword,"Ano, vezmu si ho.",Stt_311_Fisk_WhistlersSword_TakeIt);
 };
 
 func void Stt_311_Fisk_WhistlersSword_BACK()
 {
-	AI_Output (other, self,"Org_826_Mordrag_WhistlersSword_BACK_15_00"); //Moná pozdìji.
+	AI_Output (other, self,"Org_826_Mordrag_WhistlersSword_BACK_15_00"); //MoÅ¾nÃ¡ pozdÄ›ji.
 	Info_ClearChoices	(Stt_311_Fisk_WhistlersSword );
 };
 
 func void Stt_311_Fisk_WhistlersSword_Fault()
 {
-	AI_Output (other, self,"Stt_311_Fisk_WhistlersSword_Fault_15_00"); //Whistlerovi jsi ho chtìl prodat za sto...
-	AI_Output (self, other,"Stt_311_Fisk_WhistlersSword_Fault_12_01"); //Ach! Poèkej... pravda, málem jsem ti øekl moc málo! Myslel jsem samozøejmì 500.
-	AI_Output (other, self,"Stt_311_Fisk_WhistlersSword_Fault_15_02"); //Pìt set?
-	AI_Output (self, other,"Stt_311_Fisk_WhistlersSword_Fault_12_03"); //Pøíliš málo? Radìji bys za 1000? Tím líp pro mì. Dobøe, popøemıšlím o tom - radìji si ho nechám!
+	AI_Output (other, self,"Stt_311_Fisk_WhistlersSword_Fault_15_00"); //Whistlerovi jsi ho chtÄ›l prodat za sto...
+	AI_Output (self, other,"Stt_311_Fisk_WhistlersSword_Fault_12_01"); //Ach! PoÄkej... pravda, mÃ¡lem jsem ti Å™ekl moc mÃ¡lo! Myslel jsem samozÅ™ejmÄ› 500.
+	AI_Output (other, self,"Stt_311_Fisk_WhistlersSword_Fault_15_02"); //PÄ›t set?
+	AI_Output (self, other,"Stt_311_Fisk_WhistlersSword_Fault_12_03"); //PÅ™Ã­liÅ¡ mÃ¡lo? RadÄ›ji bys za 1000? TÃ­m lÃ­p pro mÄ›. DobÅ™e, popÅ™emÃ½Å¡lÃ­m o tom - radÄ›ji si ho nechÃ¡m!
 	
 	Fisk_ForgetSword = TRUE;
 	Info_ClearChoices	(Stt_311_Fisk_WhistlersSword );
@@ -130,7 +130,7 @@ func void Stt_311_Fisk_WhistlersSword_TakeIt()
 	
 	if (Npc_HasItems(other,itminugget) >= 110)
 	{
-		AI_Output (self, other,"Stt_311_Fisk_WhistlersSword_TakeIt_12_01"); //Udìlal jsi dobrı obchod!
+		AI_Output (self, other,"Stt_311_Fisk_WhistlersSword_TakeIt_12_01"); //UdÄ›lal jsi dobrÃ½ obchod!
 		B_GiveInvItems(other, self,itminugget,110);
 		CreateInvItem (self,Whistlers_Schwert);
 		B_GiveInvItems(self, other,Whistlers_Schwert,1);
@@ -140,7 +140,7 @@ func void Stt_311_Fisk_WhistlersSword_TakeIt()
 	}
 	else
 	{
-		AI_Output (self, other,"Stt_311_Fisk_WhistlersSword_TakeIt_12_02"); //Mám obavy, e nemáš dost rudy. Budu ti ten meè ještì nìjakı èas dret, ale nebudu èekat moc dlouho!
+		AI_Output (self, other,"Stt_311_Fisk_WhistlersSword_TakeIt_12_02"); //MÃ¡m obavy, Å¾e nemÃ¡Å¡ dost rudy. Budu ti ten meÄ jeÅ¡tÄ› nÄ›jakÃ½ Äas drÅ¾et, ale nebudu Äekat moc dlouho!
 	};
 };
 
@@ -155,7 +155,7 @@ instance  Stt_311_Fisk_ForgetSword (C_INFO)
 	condition	= Stt_311_Fisk_ForgetSword_Condition;
 	information	= Stt_311_Fisk_ForgetSword_Info;
 	permanent	= 1;
-	description = "O Whistlerovì meèi...";
+	description = "O WhistlerovÄ› meÄi...";
 };                       
 
 FUNC int  Stt_311_Fisk_ForgetSword_Condition()
@@ -168,8 +168,8 @@ FUNC int  Stt_311_Fisk_ForgetSword_Condition()
 
 FUNC VOID  Stt_311_Fisk_ForgetSword_Info()
 {
-	AI_Output (other, self,"Stt_311_Fisk_ForgetSword_15_00"); //Pojïme si ještì promluvit o tom Whistlerovì meèi.
-	AI_Output (self, other,"Stt_311_Fisk_ForgetSword_12_01"); //Mùeš mu øíci, e svùj meè nikdy nedostane.
+	AI_Output (other, self,"Stt_311_Fisk_ForgetSword_15_00"); //PojÄme si jeÅ¡tÄ› promluvit o tom WhistlerovÄ› meÄi.
+	AI_Output (self, other,"Stt_311_Fisk_ForgetSword_12_01"); //MÅ¯Å¾eÅ¡ mu Å™Ã­ci, Å¾e svÅ¯j meÄ nikdy nedostane.
 };
 
 // **************************************************
@@ -200,25 +200,25 @@ FUNC int  Stt_311_Fisk_MordragKO_Condition()
 FUNC VOID  Stt_311_Fisk_MordragKO_Info()
 {
 	AI_Output (self, other,"Stt_311_Fisk_MordragKO_12_00"); //Hej, ty!
-	AI_Output (self, other,"Stt_311_Fisk_MordragKO_12_01"); //Mordrag byl jeden z mıch nejdùleitìjších dodavatelù, ty idiote!
-	AI_Output (self, other,"Stt_311_Fisk_MordragKO_12_02"); //Jestli se chceš pøidat k našemu táboru, bude pro tebe velmi obtíné získat MÙJ hlas!
+	AI_Output (self, other,"Stt_311_Fisk_MordragKO_12_01"); //Mordrag byl jeden z mÃ½ch nejdÅ¯leÅ¾itÄ›jÅ¡Ã­ch dodavatelÅ¯, ty idiote!
+	AI_Output (self, other,"Stt_311_Fisk_MordragKO_12_02"); //Jestli se chceÅ¡ pÅ™idat k naÅ¡emu tÃ¡boru, bude pro tebe velmi obtÃ­Å¾nÃ© zÃ­skat MÅ®J hlas!
 
 	Info_ClearChoices(Stt_311_Fisk_MordragKO);
-	Info_AddChoice   (Stt_311_Fisk_MordragKO,"Obchoduješ s majetkem Rudobaronù! To bude Thoruse zajímat...",Stt_311_Fisk_MordragKO_Petze);
-	Info_AddChoice   (Stt_311_Fisk_MordragKO,"Klid! Moná to mùu nìjak napravit, ne?",Stt_311_Fisk_MordragKO_Relax);
+	Info_AddChoice   (Stt_311_Fisk_MordragKO,"ObchodujeÅ¡ s majetkem RudobaronÅ¯! To bude Thoruse zajÃ­mat...",Stt_311_Fisk_MordragKO_Petze);
+	Info_AddChoice   (Stt_311_Fisk_MordragKO,"Klid! MoÅ¾nÃ¡ to mÅ¯Å¾u nÄ›jak napravit, ne?",Stt_311_Fisk_MordragKO_Relax);
 	Info_AddChoice	 (Stt_311_Fisk_MordragKO,"Pak mi polib zadek!",Stt_311_Fisk_MordragKO_FuckOff);
 };
 
 func void Stt_311_Fisk_MordragKO_Relax()
 {
-	AI_Output (other, self,"Stt_311_Fisk_MordragKO_Relax_15_00"); //Klid! Moná to mùu nìjak napravit, ne?
-	AI_Output (self, other,"Stt_311_Fisk_MordragKO_Relax_12_01"); //Nevím ale, jak bys to chtìl udìlat. Ledae bys mi našel nového pøechovávaèe vìcí z Nového tábora!
-	AI_Output (other, self,"Stt_311_Fisk_MordragKO_Relax_15_02"); //Jak si myslíš, e bych nìkoho takového našel?
-	AI_Output (self, other,"Stt_311_Fisk_MordragKO_Relax_12_03"); //Jak jsem øekl, nevìøím, e bys to mìl u mì nìkdy dobrı.
+	AI_Output (other, self,"Stt_311_Fisk_MordragKO_Relax_15_00"); //Klid! MoÅ¾nÃ¡ to mÅ¯Å¾u nÄ›jak napravit, ne?
+	AI_Output (self, other,"Stt_311_Fisk_MordragKO_Relax_12_01"); //NevÃ­m ale, jak bys to chtÄ›l udÄ›lat. LedaÅ¾e bys mi naÅ¡el novÃ©ho pÅ™echovÃ¡vaÄe vÄ›cÃ­ z NovÃ©ho tÃ¡bora!
+	AI_Output (other, self,"Stt_311_Fisk_MordragKO_Relax_15_02"); //Jak si myslÃ­Å¡, Å¾e bych nÄ›koho takovÃ©ho naÅ¡el?
+	AI_Output (self, other,"Stt_311_Fisk_MordragKO_Relax_12_03"); //Jak jsem Å™ekl, nevÄ›Å™Ã­m, Å¾e bys to mÄ›l u mÄ› nÄ›kdy dobrÃ½.
 	
 	Log_CreateTopic(CH1_FiskNewDealer, LOG_MISSION);
 	Log_SetTopicStatus(CH1_FiskNewDealer, LOG_RUNNING);
-	B_LogEntry( CH1_FiskNewDealer,"Poté, co jsem vyhnal Mordraga, chce po mì obchodník Fisk z trištì, abych mu našel nového pøechovávaèe.");
+	B_LogEntry( CH1_FiskNewDealer,"PotÃ©, co jsem vyhnal Mordraga, chce po mÄ› obchodnÃ­k Fisk z trÅ¾iÅ¡tÄ›, abych mu naÅ¡el novÃ©ho pÅ™echovÃ¡vaÄe.");
 	
 	Fisk_GetNewHehler = LOG_RUNNING;
 };
@@ -233,8 +233,8 @@ func void Stt_311_Fisk_MordragKO_FuckOff()
 
 func void Stt_311_Fisk_MordragKO_Petze()
 {
-	AI_Output (other, self,"Stt_311_Fisk_MordragKO_Petze_15_00"); //Obchoduješ s vìcmi, které patøí Rudobaronùm. Thoruse to bude zajímat.
-	AI_Output (self, other,"Stt_311_Fisk_MordragKO_Petze_12_01"); //Tak takhle ne, mladíku!
+	AI_Output (other, self,"Stt_311_Fisk_MordragKO_Petze_15_00"); //ObchodujeÅ¡ s vÄ›cmi, kterÃ© patÅ™Ã­ RudobaronÅ¯m. Thoruse to bude zajÃ­mat.
+	AI_Output (self, other,"Stt_311_Fisk_MordragKO_Petze_12_01"); //Tak takhle ne, mladÃ­ku!
 };
 
 // **************************************************
@@ -248,7 +248,7 @@ instance  Stt_311_Fisk_HehlerSuccess (C_INFO)
 	condition	= Stt_311_Fisk_HehlerSuccess_Condition;
 	information	= Stt_311_Fisk_HehlerSuccess_Info;
 	permanent	= 0;
-	description	= "Mám nìkoho z Nového tábora, kdo by chtìl s tebou obchodovat.";
+	description	= "MÃ¡m nÄ›koho z NovÃ©ho tÃ¡bora, kdo by chtÄ›l s tebou obchodovat.";
 };                       
 
 FUNC int  Stt_311_Fisk_HehlerSuccess_Condition()
@@ -261,21 +261,21 @@ FUNC int  Stt_311_Fisk_HehlerSuccess_Condition()
 
 FUNC VOID  Stt_311_Fisk_HehlerSuccess_Info()
 {
-	AI_Output (other, self,"Stt_311_Fisk_HehlerSuccess_15_00"); //Mám nìkoho z Nového tábora, kdo by chtìl s tebou obchodovat.
-	AI_Output (self, other,"Stt_311_Fisk_HehlerSuccess_12_01"); //Ne! Kdo by si to byl pomyslel. Vypadá to, e se tu pokoušíš bıt oblíbenı...
-	AI_Output (self, other,"Stt_311_Fisk_HehlerSuccess_12_02"); //Vypadá, e se ti to taky povedlo! Kdo to je?
+	AI_Output (other, self,"Stt_311_Fisk_HehlerSuccess_15_00"); //MÃ¡m nÄ›koho z NovÃ©ho tÃ¡bora, kdo by chtÄ›l s tebou obchodovat.
+	AI_Output (self, other,"Stt_311_Fisk_HehlerSuccess_12_01"); //Ne! Kdo by si to byl pomyslel. VypadÃ¡ to, Å¾e se tu pokouÅ¡Ã­Å¡ bÃ½t oblÃ­benÃ½...
+	AI_Output (self, other,"Stt_311_Fisk_HehlerSuccess_12_02"); //VypadÃ¡, Å¾e se ti to taky povedlo! Kdo to je?
 	AI_Output (other, self,"Stt_311_Fisk_HehlerSuccess_15_03"); //Jmenuje se Sharky.
-	AI_Output (self, other,"Stt_311_Fisk_HehlerSuccess_12_04"); //Sharky? Je ještì horší ne Mordrag.
-	AI_Output (self, other,"Stt_311_Fisk_HehlerSuccess_12_05"); //Co se tıèe Diega... nemusíš u mít obavy.
+	AI_Output (self, other,"Stt_311_Fisk_HehlerSuccess_12_04"); //Sharky? Je jeÅ¡tÄ› horÅ¡Ã­ neÅ¾ Mordrag.
+	AI_Output (self, other,"Stt_311_Fisk_HehlerSuccess_12_05"); //Co se tÃ½Äe Diega... nemusÃ­Å¡ uÅ¾ mÃ­t obavy.
 	
 	Fisk_GetNewHehler = LOG_SUCCESS;
 	B_GiveXP(XP_fiskdealer);
 
 	Log_SetTopicStatus(CH1_FiskNewDealer, LOG_SUCCESS);
-	B_LogEntry( CH1_FiskNewDealer,"Fisk je spokojenı, protoe Sharky pøevzal Mordragovu práci.");
+	B_LogEntry( CH1_FiskNewDealer,"Fisk je spokojenÃ½, protoÅ¾e Sharky pÅ™evzal Mordragovu prÃ¡ci.");
 };
 /*------------------------------------------------------------------------
-							RÜSTUNG									
+							RÃœSTUNG									
 ------------------------------------------------------------------------*/
 
 instance  Stt_311_Fisk_ARMOR (C_INFO)
@@ -285,7 +285,7 @@ instance  Stt_311_Fisk_ARMOR (C_INFO)
 	information		= Stt_311_Fisk_ARMOR_Info;
 	important		= 0;
 	permanent		= 1;
-	description		= "Máš pro mì nìjakou zbroj?"; 
+	description		= "MÃ¡Å¡ pro mÄ› nÄ›jakou zbroj?"; 
 };
 
 FUNC int  Stt_311_Fisk_ARMOR_Condition()
@@ -299,8 +299,8 @@ FUNC int  Stt_311_Fisk_ARMOR_Condition()
 };
 FUNC void  Stt_311_Fisk_ARMOR_Info()
 {
-	AI_Output (other, self,"Stt_311_Fisk_ARMOR_Info_15_01"); //Máš pro mì také zbroj?
-	AI_Output (self, other,"Stt_311_Fisk_ARMOR_Info_12_02"); //Ano, urèitì budeš spokojenı.
+	AI_Output (other, self,"Stt_311_Fisk_ARMOR_Info_15_01"); //MÃ¡Å¡ pro mÄ› takÃ© zbroj?
+	AI_Output (self, other,"Stt_311_Fisk_ARMOR_Info_12_02"); //Ano, urÄitÄ› budeÅ¡ spokojenÃ½.
 	Info_ClearChoices (Stt_311_Fisk_ARMOR);
 	Info_Addchoice (Stt_311_Fisk_ARMOR,DIALOG_BACK,Stt_311_Fisk_ARMOR_BACK);
 	Info_Addchoice (Stt_311_Fisk_ARMOR,B_BuildBuyArmorString(NAME_FiskLightDiggers,VALUE_VLK_ARMOR_L),Stt_311_Fisk_ARMOR_L);
@@ -315,15 +315,15 @@ func void Stt_311_Fisk_ARMOR_BACK()
 
 func void Stt_311_Fisk_ARMOR_L()
 {
-	AI_Output (other, self,"Stt_311_Fisk_ARMOR_L_Info_15_01"); //Dej mi lehké kopáèské kalhoty.
+	AI_Output (other, self,"Stt_311_Fisk_ARMOR_L_Info_15_01"); //Dej mi lehkÃ© kopÃ¡ÄskÃ© kalhoty.
 	
 	if (Npc_HasItems (hero,ItMiNugget) <  VALUE_VLK_ARMOR_L)
 	{
-		AI_Output (self, other,"Stt_311_Fisk_ARMOR_L_Info_12_02"); //Vra se, a budeš mít dost rudy!
+		AI_Output (self, other,"Stt_311_Fisk_ARMOR_L_Info_12_02"); //VraÅ¥ se, aÅ¾ budeÅ¡ mÃ­t dost rudy!
 	}
 	else
 	{
-		AI_Output		(self,	other,	"Stt_311_Fisk_ARMOR_L_Info_12_03"); //Dobrá volba!
+		AI_Output		(self,	other,	"Stt_311_Fisk_ARMOR_L_Info_12_03"); //DobrÃ¡ volba!
 		B_GiveInvItems	(hero,	self,	ItMinugget, VALUE_VLK_ARMOR_L);
 		CreateInvItem	(self,			VLK_ARMOR_L);
 		B_GiveInvItems	(self,	hero,	VLK_ARMOR_L, 1);
@@ -332,14 +332,14 @@ func void Stt_311_Fisk_ARMOR_L()
 
 func void Stt_311_Fisk_ARMOR_M()
 {
-	AI_Output (other, self,"Stt_311_Fisk_ARMOR_M_Info_15_01"); //Dej mi kopáèské kalhoty.
+	AI_Output (other, self,"Stt_311_Fisk_ARMOR_M_Info_15_01"); //Dej mi kopÃ¡ÄskÃ© kalhoty.
 	if (Npc_HasItems (hero,ItMiNugget) <  VALUE_VLK_ARMOR_M)
 	{
-		AI_Output (self, other,"Stt_311_Fisk_ARMOR_M_Info_12_02"); //Vra se, a budeš mít dost rudy!
+		AI_Output (self, other,"Stt_311_Fisk_ARMOR_M_Info_12_02"); //VraÅ¥ se, aÅ¾ budeÅ¡ mÃ­t dost rudy!
 	}
 	else
 	{
-		AI_Output		(self, other,"Stt_311_Fisk_ARMOR_M_Info_12_03"); //Dobrá volba!
+		AI_Output		(self, other,"Stt_311_Fisk_ARMOR_M_Info_12_03"); //DobrÃ¡ volba!
 		B_GiveInvItems	(hero, self, ItMinugget, VALUE_VLK_ARMOR_M);
 		CreateInvItem	(self, VLK_ARMOR_M);
 		B_GiveInvItems	(self,hero, VLK_ARMOR_M, 1);

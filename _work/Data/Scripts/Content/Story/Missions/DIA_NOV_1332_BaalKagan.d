@@ -33,7 +33,7 @@ INSTANCE DIA_BaalKagan_Hello(C_INFO)
 	condition	= DIA_BaalKagan_Hello_Condition;
 	information	= DIA_BaalKagan_Hello_Info;
 	permanent	= 0;
-	description = "Ty jsi ze Sektovního tábora, viï?";
+	description = "Ty jsi ze SektovnÃ­ho tÃ¡bora, viÄ?";
 };                       
 
 FUNC INT DIA_BaalKagan_Hello_Condition()
@@ -43,9 +43,9 @@ FUNC INT DIA_BaalKagan_Hello_Condition()
 
 FUNC VOID DIA_BaalKagan_Hello_Info()
 {	
-	AI_Output			(other, self,"DIA_BaalKagan_Hello_15_00"); //Ty jsi ze Sektovního tábora, viï?
-	AI_Output			(self, other,"DIA_BaalKagan_Hello_13_01"); //Øíkáme tomu Bratrstvo.
-	AI_Output			(self, other,"DIA_BaalKagan_Hello_13_02"); //Jsem Baal Kagan. Spáè buï s tebou.
+	AI_Output			(other, self,"DIA_BaalKagan_Hello_15_00"); //Ty jsi ze SektovnÃ­ho tÃ¡bora, viÄ?
+	AI_Output			(self, other,"DIA_BaalKagan_Hello_13_01"); //Å˜Ã­kÃ¡me tomu Bratrstvo.
+	AI_Output			(self, other,"DIA_BaalKagan_Hello_13_02"); //Jsem Baal Kagan. SpÃ¡Ä buÄ s tebou.
 };
 
 // ************************************************************
@@ -59,7 +59,7 @@ INSTANCE DIA_BaalKagan_WhyHere(C_INFO)
 	condition	= DIA_BaalKagan_WhyHere_Condition;
 	information	= DIA_BaalKagan_WhyHere_Info;
 	permanent	= 0;
-	description = "Co tady dìláš?";
+	description = "Co tady dÄ›lÃ¡Å¡?";
 };                       
 
 FUNC INT DIA_BaalKagan_WhyHere_Condition()
@@ -72,13 +72,13 @@ FUNC INT DIA_BaalKagan_WhyHere_Condition()
 
 FUNC VOID DIA_BaalKagan_WhyHere_Info()
 {	
-	AI_Output			(other, self,"DIA_BaalKagan_WhyHere_15_00"); //Co tady dìláš?
-	AI_Output			(self, other,"DIA_BaalKagan_WhyHere_13_01"); //Pùvodnì jsem sem byl vyslán, abych pøesvìdèoval lidi, aby se pøidali k našemu Bratrstvu.
-	AI_Output			(self, other,"DIA_BaalKagan_WhyHere_13_02"); //Ti barbaøi ale nemají vùbec zájem o duchovní osvìtu. Proto jsem se omezil na prodej drogy z bažiny.
-	AI_Output			(self, other,"DIA_BaalKagan_WhyHere_13_03"); //A to je tady oblíbené zamìstnání. Pøíliš oblíbené. Sotva staèím uspokojovat poptávku.
+	AI_Output			(other, self,"DIA_BaalKagan_WhyHere_15_00"); //Co tady dÄ›lÃ¡Å¡?
+	AI_Output			(self, other,"DIA_BaalKagan_WhyHere_13_01"); //PÅ¯vodnÄ› jsem sem byl vyslÃ¡n, abych pÅ™esvÄ›dÄoval lidi, aby se pÅ™idali k naÅ¡emu Bratrstvu.
+	AI_Output			(self, other,"DIA_BaalKagan_WhyHere_13_02"); //Ti barbaÅ™i ale nemajÃ­ vÅ¯bec zÃ¡jem o duchovnÃ­ osvÄ›tu. Proto jsem se omezil na prodej drogy z baÅ¾iny.
+	AI_Output			(self, other,"DIA_BaalKagan_WhyHere_13_03"); //A to je tady oblÃ­benÃ© zamÄ›stnÃ¡nÃ­. PÅ™Ã­liÅ¡ oblÃ­benÃ©. Sotva staÄÃ­m uspokojovat poptÃ¡vku.
 
 	Log_CreateTopic	(GE_TraderNC,	LOG_NOTE);
-	B_LogEntry		(GE_TraderNC,"Baal Kagan prodává lodyhy drogy banditùm a žoldákùm v Novém táboøe.");
+	B_LogEntry		(GE_TraderNC,"Baal Kagan prodÃ¡vÃ¡ lodyhy drogy banditÅ¯m a Å¾oldÃ¡kÅ¯m v NovÃ©m tÃ¡boÅ™e.");
 };
 
 // ************************************************************
@@ -92,7 +92,7 @@ INSTANCE DIA_BaalKagan_TRADE (C_INFO)
 	condition	= DIA_BaalKagan_TRADE_Condition;
 	information	= DIA_BaalKagan_TRADE_Info;
 	permanent	= 1;
-	description = "Ukaž mi svoje zboží.";
+	description = "UkaÅ¾ mi svoje zboÅ¾Ã­.";
 	trade		= 1;
 };                       
 
@@ -106,8 +106,8 @@ FUNC INT DIA_BaalKagan_TRADE_Condition()
 
 FUNC VOID DIA_BaalKagan_TRADE_Info()
 {	
-	AI_Output			(other, self,"DIA_BaalKagan_TRADE_15_00"); //Ukaž mi svoje zboží.
-	AI_Output			(self, other,"DIA_BaalKagan_TRADE_13_01"); //Jak chceš.
+	AI_Output			(other, self,"DIA_BaalKagan_TRADE_15_00"); //UkaÅ¾ mi svoje zboÅ¾Ã­.
+	AI_Output			(self, other,"DIA_BaalKagan_TRADE_13_01"); //Jak chceÅ¡.
 };
 
 // ************************************************************
@@ -121,7 +121,7 @@ INSTANCE DIA_BaalKagan_OrderHelp(C_INFO)
 	condition	= DIA_BaalKagan_OrderHelp_Condition;
 	information	= DIA_BaalKagan_OrderHelp_Info;
 	permanent	= 0;
-	description = "Proè sem nepošlou jednoho muže navíc?";
+	description = "ProÄ sem nepoÅ¡lou jednoho muÅ¾e navÃ­c?";
 };                       
 
 FUNC INT DIA_BaalKagan_OrderHelp_Condition()
@@ -134,20 +134,20 @@ FUNC INT DIA_BaalKagan_OrderHelp_Condition()
 
 FUNC VOID DIA_BaalKagan_OrderHelp_Info()
 {	
-	AI_Output			(other, self,"DIA_BaalKagan_OrderHelp_15_00"); //Proè sem nepošlou jednoho muže navíc?
-	AI_Output			(self, other,"DIA_BaalKagan_OrderHelp_13_01"); //Baal Isidro mi chtìl pomáhat, ale pak se zasekl na celý den v baru na jezeøe a všechnu drogu vymìnil za rýžovou pálenku.
-	AI_Output			(self, other,"DIA_BaalKagan_OrderHelp_13_02"); //Stal se obìtí té lihoviny. Obávám se, že s jeho pomocí nemùžu poèítat.
+	AI_Output			(other, self,"DIA_BaalKagan_OrderHelp_15_00"); //ProÄ sem nepoÅ¡lou jednoho muÅ¾e navÃ­c?
+	AI_Output			(self, other,"DIA_BaalKagan_OrderHelp_13_01"); //Baal Isidro mi chtÄ›l pomÃ¡hat, ale pak se zasekl na celÃ½ den v baru na jezeÅ™e a vÅ¡echnu drogu vymÄ›nil za rÃ½Å¾ovou pÃ¡lenku.
+	AI_Output			(self, other,"DIA_BaalKagan_OrderHelp_13_02"); //Stal se obÄ›tÃ­ tÃ© lihoviny. ObÃ¡vÃ¡m se, Å¾e s jeho pomocÃ­ nemÅ¯Å¾u poÄÃ­tat.
 	
 	if (Lares_Get400Ore == LOG_RUNNING)
 	{
 		Log_CreateTopic		(CH1_DealerJob,	LOG_MISSION);
 		Log_SetTopicStatus	(CH1_DealerJob,	LOG_RUNNING);
-	    B_LogEntry			(CH1_DealerJob,"Baal Isidro sedí v baru na jezeøe a celé dny pije.");	
+	    B_LogEntry			(CH1_DealerJob,"Baal Isidro sedÃ­ v baru na jezeÅ™e a celÃ© dny pije.");	
 	};
 };
 
 // ************************************************************
-// 					Ich könnte dir helfen
+// 					Ich kÃ¶nnte dir helfen
 // ************************************************************
 
 INSTANCE DIA_BaalKagan_WannaHelp(C_INFO)
@@ -157,7 +157,7 @@ INSTANCE DIA_BaalKagan_WannaHelp(C_INFO)
 	condition	= DIA_BaalKagan_WannaHelp_Condition;
 	information	= DIA_BaalKagan_WannaHelp_Info;
 	permanent	= 0;
-	description = "Mohl bych ti pomoci prodávat tvou drogu lidem.";
+	description = "Mohl bych ti pomoci prodÃ¡vat tvou drogu lidem.";
 };                       
 
 FUNC INT DIA_BaalKagan_WannaHelp_Condition()
@@ -170,12 +170,12 @@ FUNC INT DIA_BaalKagan_WannaHelp_Condition()
 
 FUNC VOID DIA_BaalKagan_WannaHelp_Info()
 {	
-	AI_Output			(other, self,"DIA_BaalKagan_WannaHelp_15_00"); //Mohl bych ti pomoci prodávat tvou drogu lidem.
-	AI_Output			(self, other,"DIA_BaalKagan_WannaHelp_13_01"); //Takové množství drogy mùžu svìøit jedinì nìkomu z èlenù Bratrstva.
-	AI_Output			(self, other,"DIA_BaalKagan_WannaHelp_13_02"); //Mohl bys mi ale pomoci rozdávat dary.
-	AI_Output			(self, other,"DIA_BaalKagan_WannaHelp_13_03"); //Moje zboží ještì neokusili všichni. Jakmile jednou okusí tu drogu, budou chtít víc a víc, což pro mì bude znamenat lepší obchod.
-	AI_Output			(other, self,"DIA_BaalKagan_WannaHelp_15_04"); //Myslel jsem si, že se ti sotva podaøí vykonat tvùj úkol TEÏ.
-	AI_Output			(self, other,"DIA_BaalKagan_WannaHelp_13_05"); //O Baala Isidra bude brzy postaráno. Už jsem poslal Cor Kalomovi zprávu.
+	AI_Output			(other, self,"DIA_BaalKagan_WannaHelp_15_00"); //Mohl bych ti pomoci prodÃ¡vat tvou drogu lidem.
+	AI_Output			(self, other,"DIA_BaalKagan_WannaHelp_13_01"); //TakovÃ© mnoÅ¾stvÃ­ drogy mÅ¯Å¾u svÄ›Å™it jedinÄ› nÄ›komu z ÄlenÅ¯ Bratrstva.
+	AI_Output			(self, other,"DIA_BaalKagan_WannaHelp_13_02"); //Mohl bys mi ale pomoci rozdÃ¡vat dary.
+	AI_Output			(self, other,"DIA_BaalKagan_WannaHelp_13_03"); //Moje zboÅ¾Ã­ jeÅ¡tÄ› neokusili vÅ¡ichni. Jakmile jednou okusÃ­ tu drogu, budou chtÃ­t vÃ­c a vÃ­c, coÅ¾ pro mÄ› bude znamenat lepÅ¡Ã­ obchod.
+	AI_Output			(other, self,"DIA_BaalKagan_WannaHelp_15_04"); //Myslel jsem si, Å¾e se ti sotva podaÅ™Ã­ vykonat tvÅ¯j Ãºkol TEÄŽ.
+	AI_Output			(self, other,"DIA_BaalKagan_WannaHelp_13_05"); //O Baala Isidra bude brzy postarÃ¡no. UÅ¾ jsem poslal Cor Kalomovi zprÃ¡vu.
 };
 
 // ************************************************************
@@ -189,7 +189,7 @@ INSTANCE DIA_BaalKagan_WasDrin(C_INFO)
 	condition	= DIA_BaalKagan_WasDrin_Condition;
 	information	= DIA_BaalKagan_WasDrin_Info;
 	permanent	= 0;
-	description = "Co dostanu, když budu za tebe roznášet tu drogu?";
+	description = "Co dostanu, kdyÅ¾ budu za tebe roznÃ¡Å¡et tu drogu?";
 };                       
 
 FUNC INT DIA_BaalKagan_WasDrin_Condition()
@@ -202,15 +202,15 @@ FUNC INT DIA_BaalKagan_WasDrin_Condition()
 
 FUNC VOID DIA_BaalKagan_WasDrin_Info()
 {	
-	AI_Output			(other, self,"DIA_BaalKagan_WasDrin_15_00"); //Co dostanu, když bude za tebe roznášet tu drogu?
-	AI_Output			(self, other,"DIA_BaalKagan_WasDrin_13_01"); //Mùže tì odmìnit rùznými zpùsoby.
-	AI_Output			(self, other,"DIA_BaalKagan_WasDrin_13_02"); //Mùžeš ode mì dostat magické svitky, které v sobì mají silné Spáèovo kouzlo.
+	AI_Output			(other, self,"DIA_BaalKagan_WasDrin_15_00"); //Co dostanu, kdyÅ¾ bude za tebe roznÃ¡Å¡et tu drogu?
+	AI_Output			(self, other,"DIA_BaalKagan_WasDrin_13_01"); //MÅ¯Å¾e tÄ› odmÄ›nit rÅ¯znÃ½mi zpÅ¯soby.
+	AI_Output			(self, other,"DIA_BaalKagan_WasDrin_13_02"); //MÅ¯Å¾eÅ¡ ode mÄ› dostat magickÃ© svitky, kterÃ© v sobÄ› majÃ­ silnÃ© SpÃ¡Äovo kouzlo.
 	if (Npc_GetTrueGuild(hero) == GIL_NONE)
 	{
-		AI_Output		(self, other,"DIA_BaalKagan_WasDrin_13_03"); //Nebo ti mùžu pomoci pøidat se k naší komunitì, pokud bys to chtìl. Mám velmi dobré kontakty s Cor Kalomem a Baalem Tyonem.
-		AI_Output		(self, other,"DIA_BaalKagan_WasDrin_13_04"); //Oba mají velmi blízko k Y´Berionovi, našemu mistrovi.
+		AI_Output		(self, other,"DIA_BaalKagan_WasDrin_13_03"); //Nebo ti mÅ¯Å¾u pomoci pÅ™idat se k naÅ¡Ã­ komunitÄ›, pokud bys to chtÄ›l. MÃ¡m velmi dobrÃ© kontakty s Cor Kalomem a Baalem Tyonem.
+		AI_Output		(self, other,"DIA_BaalKagan_WasDrin_13_04"); //Oba majÃ­ velmi blÃ­zko k YÂ´Berionovi, naÅ¡emu mistrovi.
 	};
-	AI_Output			(self, other,"DIA_BaalKagan_WasDrin_13_05"); //Mùžu ti ale také zaplatit pøímo rudou, když budeš chtít. 100 nugetù by ti za tvou snahu mìlo staèit.
+	AI_Output			(self, other,"DIA_BaalKagan_WasDrin_13_05"); //MÅ¯Å¾u ti ale takÃ© zaplatit pÅ™Ã­mo rudou, kdyÅ¾ budeÅ¡ chtÃ­t. 100 nugetÅ¯ by ti za tvou snahu mÄ›lo staÄit.
 };
 
 // ************************************************************
@@ -226,7 +226,7 @@ INSTANCE DIA_BaalKagan_GimmeKraut(C_INFO)
 	condition	= DIA_BaalKagan_GimmeKraut_Condition;
 	information	= DIA_BaalKagan_GimmeKraut_Info;
 	permanent	= 0;
-	description = "Dobrá, dej mi tu drogu. Komu chceš, abych ji pøedal?";
+	description = "DobrÃ¡, dej mi tu drogu. Komu chceÅ¡, abych ji pÅ™edal?";
 };                       
 
 FUNC INT DIA_BaalKagan_GimmeKraut_Condition()
@@ -239,15 +239,15 @@ FUNC INT DIA_BaalKagan_GimmeKraut_Condition()
 
 FUNC VOID DIA_BaalKagan_GimmeKraut_Info()
 {	
-	AI_Output			(other, self,"DIA_BaalKagan_GimmeKraut_15_00"); //Dobrá, dej mi tu drogu. Komu chceš, abych ji pøedal?
-	AI_Output			(self, other,"DIA_BaalKagan_GimmeKraut_13_01"); //Jistì nìkoho najdeš, kdo ji bude chtít. Øekni lidem. Ale dávej pouze po JEDNÉ lodyze na osobu.
-	AI_Output			(self, other,"DIA_BaalKagan_GimmeKraut_13_02"); //A ještì dùležitá vìc: jestli si tu drogu necháš od nìkoho sebrat, nebo ji vykouøíš sám, naše domluva padá.
-	AI_Output			(other, self,"DIA_BaalKagan_GimmeKraut_15_03"); //Jistì.
+	AI_Output			(other, self,"DIA_BaalKagan_GimmeKraut_15_00"); //DobrÃ¡, dej mi tu drogu. Komu chceÅ¡, abych ji pÅ™edal?
+	AI_Output			(self, other,"DIA_BaalKagan_GimmeKraut_13_01"); //JistÄ› nÄ›koho najdeÅ¡, kdo ji bude chtÃ­t. Å˜ekni lidem. Ale dÃ¡vej pouze po JEDNÃ‰ lodyze na osobu.
+	AI_Output			(self, other,"DIA_BaalKagan_GimmeKraut_13_02"); //A jeÅ¡tÄ› dÅ¯leÅ¾itÃ¡ vÄ›c: jestli si tu drogu nechÃ¡Å¡ od nÄ›koho sebrat, nebo ji vykouÅ™Ã­Å¡ sÃ¡m, naÅ¡e domluva padÃ¡.
+	AI_Output			(other, self,"DIA_BaalKagan_GimmeKraut_15_03"); //JistÄ›.
 	BaalKagan_VerteilKraut = LOG_RUNNING;
 	
 	Log_CreateTopic		(CH1_SpreadJoints, LOG_MISSION);
 	Log_SetTopicStatus	(CH1_SpreadJoints, LOG_RUNNING);
-	B_LogEntry			(CH1_SpreadJoints,"Novic Baal Kagan mi pøedal 10 lodyh drogy od mladých novicù, které musím rozdat v Novém táboøe. ");		
+	B_LogEntry			(CH1_SpreadJoints,"Novic Baal Kagan mi pÅ™edal 10 lodyh drogy od mladÃ½ch novicÅ¯, kterÃ© musÃ­m rozdat v NovÃ©m tÃ¡boÅ™e. ");		
 	
 	CreateInvItems		(self, itmijoint_1, 10);
 	B_GiveInvItems      (self, hero, itmijoint_1, 10);
@@ -264,7 +264,7 @@ INSTANCE DIA_BaalKagan_SUCCESS(C_INFO)
 	condition	= DIA_BaalKagan_SUCCESS_Condition;
 	information	= DIA_BaalKagan_SUCCESS_Info;
 	permanent	= 1;
-	description = "Rozdal jsem všechnu drogu.";
+	description = "Rozdal jsem vÅ¡echnu drogu.";
 };                       
 
 FUNC INT DIA_BaalKagan_SUCCESS_Condition()
@@ -277,11 +277,11 @@ FUNC INT DIA_BaalKagan_SUCCESS_Condition()
 
 FUNC VOID DIA_BaalKagan_SUCCESS_Info()
 {	
-	AI_Output			(other, self,"DIA_BaalKagan_SUCCESS_15_00"); //Rozdal jsem všechnu drogu.
+	AI_Output			(other, self,"DIA_BaalKagan_SUCCESS_15_00"); //Rozdal jsem vÅ¡echnu drogu.
 	if (NC_Joints_verteilt >= 8)
 	{
-		AI_Output			(self, other,"DIA_BaalKagan_SUCCESS_13_01"); //První noví zákazníci mì už navštívili. Odvedl jsi výbornou práci.
-		AI_Output			(self, other,"DIA_BaalKagan_SUCCESS_13_02"); //Co budeš chtít za odmìnu?
+		AI_Output			(self, other,"DIA_BaalKagan_SUCCESS_13_01"); //PrvnÃ­ novÃ­ zÃ¡kaznÃ­ci mÄ› uÅ¾ navÅ¡tÃ­vili. Odvedl jsi vÃ½bornou prÃ¡ci.
+		AI_Output			(self, other,"DIA_BaalKagan_SUCCESS_13_02"); //Co budeÅ¡ chtÃ­t za odmÄ›nu?
 		
 		Info_ClearChoices(DIA_BaalKagan_SUCCESS);
 		Info_AddChoice   (DIA_BaalKagan_SUCCESS,"Vezmu si rudu.",DIA_BaalKagan_SUCCESS_Erz);
@@ -289,46 +289,46 @@ FUNC VOID DIA_BaalKagan_SUCCESS_Info()
 		{
 			Info_AddChoice(DIA_BaalKagan_SUCCESS,"Pomoz mi vstoupit do Bratrstva.",DIA_BaalKagan_SUCCESS_Join);
 		};
-		Info_AddChoice	 (DIA_BaalKagan_SUCCESS,"Tyto kouzelné svitky jsou také docela zajímavé - jaký druh kouzla mají?",DIA_BaalKagan_SUCCESS_WhatSpells);
+		Info_AddChoice	 (DIA_BaalKagan_SUCCESS,"Tyto kouzelnÃ© svitky jsou takÃ© docela zajÃ­mavÃ© - jakÃ½ druh kouzla majÃ­?",DIA_BaalKagan_SUCCESS_WhatSpells);
 		
 		BaalKagan_VerteilKraut = LOG_SUCCESS;
 		Log_SetTopicStatus	(CH1_SpreadJoints, LOG_SUCCESS);
-    	B_LogEntry			(CH1_SpreadJoints,"Baal Kagan má nové zákazníky a já svoji odmìnu.");
+    	B_LogEntry			(CH1_SpreadJoints,"Baal Kagan mÃ¡ novÃ© zÃ¡kaznÃ­ky a jÃ¡ svoji odmÄ›nu.");
 		B_GiveXP			(XP_DistributedWeedForKagan);
 	}
 	else
 	{
-		AI_Output			(self, other,"DIA_BaalKagan_NO_SUCCESS_13_00"); //Nevidìl jsem žádného nového zákazníka. Rozdej ještì další.
+		AI_Output			(self, other,"DIA_BaalKagan_NO_SUCCESS_13_00"); //NevidÄ›l jsem Å¾Ã¡dnÃ©ho novÃ©ho zÃ¡kaznÃ­ka. Rozdej jeÅ¡tÄ› dalÅ¡Ã­.
 	};
 };
 
 func void DIA_BaalKagan_SUCCESS_WhatSpells()
 {
-	AI_Output			(other, self,"DIA_BaalKagan_SUCCESS_WhatSpells_15_00"); //Tyto kouzelné svitky jsou také docela zajímavé - jaký druh kouzla mají?
-	AI_Output			(self, other,"DIA_BaalKagan_SUCCESS_WhatSpells_13_01"); //Vìtrnou pìst, telekinezi, pyrokinezi a spánek. Mùžeš si vybrat tøi z nich.
-	Info_AddChoice   (DIA_BaalKagan_SUCCESS,"Vezmu si tøi kouzelné svitky.",DIA_BaalKagan_SUCCESS_TakeScrolls);
+	AI_Output			(other, self,"DIA_BaalKagan_SUCCESS_WhatSpells_15_00"); //Tyto kouzelnÃ© svitky jsou takÃ© docela zajÃ­mavÃ© - jakÃ½ druh kouzla majÃ­?
+	AI_Output			(self, other,"DIA_BaalKagan_SUCCESS_WhatSpells_13_01"); //VÄ›trnou pÄ›st, telekinezi, pyrokinezi a spÃ¡nek. MÅ¯Å¾eÅ¡ si vybrat tÅ™i z nich.
+	Info_AddChoice   (DIA_BaalKagan_SUCCESS,"Vezmu si tÅ™i kouzelnÃ© svitky.",DIA_BaalKagan_SUCCESS_TakeScrolls);
 };
 
 func void DIA_BaalKagan_SUCCESS_Join()
 {
 	Info_ClearChoices(DIA_BaalKagan_SUCCESS);
 	AI_Output			(other, self,"DIA_BaalKagan_SUCCESS_Join_15_00"); //Pomoz mi vstoupit do Bratrstva.
-	AI_Output			(self, other,"DIA_BaalKagan_SUCCESS_Join_13_01"); //Tvùj požadavek je malièkost. Pomùžu ti, tak mì poslouchej. Baal Tyon je jedním z Guru - právì tak jako já.
-	AI_Output			(self, other,"DIA_BaalKagan_SUCCESS_Join_13_02"); //Y´Berion ho jmenoval jedním ze svých rádcù. To se nemìlo stát.
-	AI_Output			(self, other,"DIA_BaalKagan_SUCCESS_Join_13_03"); //Myslí si teï, že je velmi dùležitý, a proto nemluví s nikým jiným než se svými žáky.
-	AI_Output			(self, other,"DIA_BaalKagan_SUCCESS_Join_13_04"); //Když mu dáš tohle, rozváže mu to jazyk.
+	AI_Output			(self, other,"DIA_BaalKagan_SUCCESS_Join_13_01"); //TvÅ¯j poÅ¾adavek je maliÄkost. PomÅ¯Å¾u ti, tak mÄ› poslouchej. Baal Tyon je jednÃ­m z Guru - prÃ¡vÄ› tak jako jÃ¡.
+	AI_Output			(self, other,"DIA_BaalKagan_SUCCESS_Join_13_02"); //YÂ´Berion ho jmenoval jednÃ­m ze svÃ½ch rÃ¡dcÅ¯. To se nemÄ›lo stÃ¡t.
+	AI_Output			(self, other,"DIA_BaalKagan_SUCCESS_Join_13_03"); //MyslÃ­ si teÄ, Å¾e je velmi dÅ¯leÅ¾itÃ½, a proto nemluvÃ­ s nikÃ½m jinÃ½m neÅ¾ se svÃ½mi Å¾Ã¡ky.
+	AI_Output			(self, other,"DIA_BaalKagan_SUCCESS_Join_13_04"); //KdyÅ¾ mu dÃ¡Å¡ tohle, rozvÃ¡Å¾e mu to jazyk.
 	CreateInvItem       (self, SpecialJoint);
 	B_GiveInvItems		(self, other, SpecialJoint, 1);
 
 	Log_CreateTopic		(CH1_JoinPsi,	LOG_MISSION);
 	Log_SetTopicStatus	(CH1_JoinPsi,	LOG_RUNNING);
-	B_LogEntry			(CH1_JoinPsi,"Baal Kagan mi pøedal speciální PØIVOLÁVAÈ SNÙ pro Baala Tyona. To mi pomùže pøidat se k sektì Bratrstva.");
+	B_LogEntry			(CH1_JoinPsi,"Baal Kagan mi pÅ™edal speciÃ¡lnÃ­ PÅ˜IVOLÃVAÄŒ SNÅ® pro Baala Tyona. To mi pomÅ¯Å¾e pÅ™idat se k sektÄ› Bratrstva.");
 };
 
 func void DIA_BaalKagan_SUCCESS_Erz()
 {
-	AI_Output			(other, self,"DIA_BaalKagan_SUCCESS_Erz_15_00"); //Vezmu si tìch 100 nugetù.
-	AI_Output			(self, other,"DIA_BaalKagan_SUCCESS_Erz_13_01"); //Velmi dobøe. Tady.
+	AI_Output			(other, self,"DIA_BaalKagan_SUCCESS_Erz_15_00"); //Vezmu si tÄ›ch 100 nugetÅ¯.
+	AI_Output			(self, other,"DIA_BaalKagan_SUCCESS_Erz_13_01"); //Velmi dobÅ™e. Tady.
 	
 	CreateInvItems		(self, itminugget, 100);
 	B_GiveInvItems      (self, other, itminugget, 100);
@@ -338,14 +338,14 @@ func void DIA_BaalKagan_SUCCESS_Erz()
 //-----------------------------------------------------------------------
 func void DIA_BaalKagan_SUCCESS_TakeScrolls()
 {
-	AI_Output			(other, self,"DIA_BaalKagan_SUCCESS_TakeScrolls_15_00"); //Vezmu si ty kouzelné svitky.
-	AI_Output			(self, other,"DIA_BaalKagan_SUCCESS_TakeScrolls_13_01"); //Dobré rozhodnutí. Vem si tøi.
+	AI_Output			(other, self,"DIA_BaalKagan_SUCCESS_TakeScrolls_15_00"); //Vezmu si ty kouzelnÃ© svitky.
+	AI_Output			(self, other,"DIA_BaalKagan_SUCCESS_TakeScrolls_13_01"); //DobrÃ© rozhodnutÃ­. Vem si tÅ™i.
 	Info_ClearChoices(DIA_BaalKagan_SUCCESS);
-	Info_AddChoice   (DIA_BaalKagan_SUCCESS,"Úder vìtru",DIA_BaalKagan_SUCCESS_TakeScrolls_Windfaust);
+	Info_AddChoice   (DIA_BaalKagan_SUCCESS,"Ãšder vÄ›tru",DIA_BaalKagan_SUCCESS_TakeScrolls_Windfaust);
 	Info_AddChoice   (DIA_BaalKagan_SUCCESS,"Telekineze",DIA_BaalKagan_SUCCESS_TakeScrolls_Telekinese);
 	Info_AddChoice   (DIA_BaalKagan_SUCCESS,"Pyrokineze",DIA_BaalKagan_SUCCESS_TakeScrolls_Pyrokinese);
-	Info_AddChoice   (DIA_BaalKagan_SUCCESS,"Spánek",DIA_BaalKagan_SUCCESS_TakeScrolls_Schlaf);
-	Info_AddChoice   (DIA_BaalKagan_SUCCESS,"Šarm",DIA_BaalKagan_SUCCESS_TakeScrolls_Charme);
+	Info_AddChoice   (DIA_BaalKagan_SUCCESS,"SpÃ¡nek",DIA_BaalKagan_SUCCESS_TakeScrolls_Schlaf);
+	Info_AddChoice   (DIA_BaalKagan_SUCCESS,"Å arm",DIA_BaalKagan_SUCCESS_TakeScrolls_Charme);
 };
 //-----------------------------------------------------------------------
 	var int BaalKagan_drei;
@@ -358,7 +358,7 @@ func void DIA_BaalKagan_SUCCESS_TakeScrolls_Windfaust()
 	BaalKagan_drei = BaalKagan_drei+1;
 	if (BaalKagan_drei >= 3)	 
 	{	
-		AI_Output			(self, other,"DIA_BaalKagan_SUCCESS_TakeScrolls_DREI_13_00"); //To jsou tøi. Užívej je moudøe.
+		AI_Output			(self, other,"DIA_BaalKagan_SUCCESS_TakeScrolls_DREI_13_00"); //To jsou tÅ™i. UÅ¾Ã­vej je moudÅ™e.
 		Info_ClearChoices	(DIA_BaalKagan_SUCCESS);	
 	};
 };
@@ -371,7 +371,7 @@ func void DIA_BaalKagan_SUCCESS_TakeScrolls_Telekinese()
 	BaalKagan_drei = BaalKagan_drei+1;
 	if (BaalKagan_drei >= 3)	 
 	{	
-		AI_Output			(self, other,"DIA_BaalKagan_SUCCESS_TakeScrolls_DREI_13_00"); //To jsou tøi. Užívej je moudøe.
+		AI_Output			(self, other,"DIA_BaalKagan_SUCCESS_TakeScrolls_DREI_13_00"); //To jsou tÅ™i. UÅ¾Ã­vej je moudÅ™e.
 		Info_ClearChoices	(DIA_BaalKagan_SUCCESS);	
 	};
 };
@@ -384,7 +384,7 @@ func void DIA_BaalKagan_SUCCESS_TakeScrolls_Pyrokinese()
 	BaalKagan_drei = BaalKagan_drei+1;
 	if (BaalKagan_drei >= 3)	 
 	{	
-		AI_Output			(self, other,"DIA_BaalKagan_SUCCESS_TakeScrolls_DREI_13_00"); //To jsou tøi. Užívej je moudøe.
+		AI_Output			(self, other,"DIA_BaalKagan_SUCCESS_TakeScrolls_DREI_13_00"); //To jsou tÅ™i. UÅ¾Ã­vej je moudÅ™e.
 		Info_ClearChoices	(DIA_BaalKagan_SUCCESS);	
 	};
 };
@@ -397,7 +397,7 @@ func void DIA_BaalKagan_SUCCESS_TakeScrolls_Schlaf()
 	BaalKagan_drei = BaalKagan_drei+1;
 	if (BaalKagan_drei >= 3)	 
 	{	
-		AI_Output			(self, other,"DIA_BaalKagan_SUCCESS_TakeScrolls_DREI_13_00"); //To jsou tøi. Užívej je moudøe.
+		AI_Output			(self, other,"DIA_BaalKagan_SUCCESS_TakeScrolls_DREI_13_00"); //To jsou tÅ™i. UÅ¾Ã­vej je moudÅ™e.
 		Info_ClearChoices	(DIA_BaalKagan_SUCCESS);	
 	};
 };
@@ -410,7 +410,7 @@ func void DIA_BaalKagan_SUCCESS_TakeScrolls_Charme()
 	BaalKagan_drei = BaalKagan_drei+1;
 	if (BaalKagan_drei >= 3)	 
 	{	
-		AI_Output			(self, other,"DIA_BaalKagan_SUCCESS_TakeScrolls_DREI_13_00"); //To jsou tøi. Užívej je moudøe.
+		AI_Output			(self, other,"DIA_BaalKagan_SUCCESS_TakeScrolls_DREI_13_00"); //To jsou tÅ™i. UÅ¾Ã­vej je moudÅ™e.
 		Info_ClearChoices	(DIA_BaalKagan_SUCCESS);	
 	};
 };

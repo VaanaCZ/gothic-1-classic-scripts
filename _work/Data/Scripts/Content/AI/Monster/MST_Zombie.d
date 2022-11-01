@@ -132,8 +132,8 @@ INSTANCE Zombie4	(Mst_Default_Zombie)
 // SN: Endgegner vor Fokus 5 unter dem Steinkreis (Ende Kapitel 3)
 INSTANCE ZombieTheKeeper	(Mst_Default_Zombie)
 {
-	name	= "Strážce";
-	level	=	150;		// für XP!
+	name	= "StrÃ¡Å¾ce";
+	level	=	150;		// fÃ¼r XP!
 	ID 		= MID_THEKEEPER;
 
 	Set_Zombie4_Visuals();

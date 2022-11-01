@@ -23,7 +23,7 @@ FUNC VOID  DIA_Rodriguez_Exit_Info()
 };
 
 //***********************************************
-//				Hallo und tsch¸ﬂ
+//				Hallo und tsch√º√ü
 //***********************************************
 
 instance  DIA_Rodriguez_Hello (C_INFO)
@@ -33,7 +33,7 @@ instance  DIA_Rodriguez_Hello (C_INFO)
 	condition	=  DIA_Rodriguez_Hello_Condition;
 	information	=  DIA_Rodriguez_Hello_Info;
 	permanent	=  1;
-	description =  "Hled·m NejvyööÌho m·ga OhnivÈho kruhu.";
+	description =  "Hled√°m Nejvy≈°≈°√≠ho m√°ga Ohniv√©ho kruhu.";
 };                       
 
 FUNC int  DIA_Rodriguez_Hello_Condition()
@@ -46,7 +46,7 @@ FUNC int  DIA_Rodriguez_Hello_Condition()
 
 FUNC VOID  DIA_Rodriguez_Hello_Info()
 {
-	AI_Output (other, self,"DIA_Rodriguez_Hello_15_00"); //Hled·m NejvyööÌho m·ga OhnivÈho kruhu.
-	AI_Output (self, other,"DIA_Rodriguez_Hello_12_01"); //Jdi k Miltenovi. Ten se zab˝v· poslÌËky, jako jsi ty.
+	AI_Output (other, self,"DIA_Rodriguez_Hello_15_00"); //Hled√°m Nejvy≈°≈°√≠ho m√°ga Ohniv√©ho kruhu.
+	AI_Output (self, other,"DIA_Rodriguez_Hello_12_01"); //Jdi k Miltenovi. Ten se zab√Ωv√° posl√≠ƒçky, jako jsi ty.
 	AI_StopProcessInfos	( self );
 };

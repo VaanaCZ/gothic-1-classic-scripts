@@ -1,15 +1,15 @@
 func void B_Story_AccessToXardas()
 {
-	//-------- Missionsgegenstände --------
+	//-------- MissionsgegenstÃ¤nde --------
 	CreateInvItem	(hero, ItArRuneTeleport3);
 
-	//-------- Tagebucheinträge --------
-	B_LogEntry		(CH4_FindXardas,"Pøedal jsem stráci démonù ji tøi srdce golemù. Vımìnou jsem dostal magickou runu teleportace. Uvidíme, kdy pøijde vhod.");
+	//-------- TagebucheintrÃ¤ge --------
+	B_LogEntry		(CH4_FindXardas,"PÅ™edal jsem strÃ¡Å¾ci dÃ©monÅ¯ jiÅ¾ tÅ™i srdce golemÅ¯. VÃ½mÄ›nou jsem dostal magickou runu teleportace. UvidÃ­me, kdy pÅ™ijde vhod.");
 
 	//-------- Erfahrung --------
 	B_GiveXP		(XP_DeliveredGolemhearts);
 
-	//-------- Tagesabläufe ändern --------
+	//-------- TagesablÃ¤ufe Ã¤ndern --------
 	
 	//-------- globale Variable setzen --------
 	FindGolemHearts = 4;

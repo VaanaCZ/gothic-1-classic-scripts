@@ -44,10 +44,10 @@ FUNC INT DIA_Gravo_Hallo_Condition()
 func VOID DIA_Gravo_Hallo_Info()
 {
 	AI_Output (other, self,"DIA_Gravo_Hallo_15_00"); //Jak to jde?
-	AI_Output (self, other,"DIA_Gravo_Hallo_04_01"); //Co jsem skonèil s prací v dole, nemùu si stìovat.
-	AI_Output (other, self,"DIA_Gravo_Hallo_15_02"); //A odkud teï bereš rudu?
-	AI_Output (self, other,"DIA_Gravo_Hallo_04_03"); //Pomáhám lidem, kteøí mají problémy.
-	AI_Output (self, other,"DIA_Gravo_Hallo_04_04"); //Jestli se tu dostaneš do problémù s vlivnımi lidmi, budu ti schopen nìjak pomoci.
+	AI_Output (self, other,"DIA_Gravo_Hallo_04_01"); //Co jsem skonÄil s pracÃ­ v dole, nemÅ¯Å¾u si stÄ›Å¾ovat.
+	AI_Output (other, self,"DIA_Gravo_Hallo_15_02"); //A odkud teÄ bereÅ¡ rudu?
+	AI_Output (self, other,"DIA_Gravo_Hallo_04_03"); //PomÃ¡hÃ¡m lidem, kteÅ™Ã­ majÃ­ problÃ©my.
+	AI_Output (self, other,"DIA_Gravo_Hallo_04_04"); //Jestli se tu dostaneÅ¡ do problÃ©mÅ¯ s vlivnÃ½mi lidmi, budu ti schopen nÄ›jak pomoci.
 };
 
 // **************************************************
@@ -61,7 +61,7 @@ instance DIA_Gravo_HelpHow(C_INFO)
 	condition		= DIA_Gravo_HelpHow_Condition;
 	information		= DIA_Gravo_HelpHow_Info;
 	permanent		= 0;
-	description 	= "Kdy budu v nesnázích, TY bys mi mohl pomoci? Jak?";
+	description 	= "KdyÅ¾ budu v nesnÃ¡zÃ­ch, TY bys mi mohl pomoci? Jak?";
 };                       
 
 FUNC INT DIA_Gravo_HelpHow_Condition()
@@ -74,14 +74,14 @@ FUNC INT DIA_Gravo_HelpHow_Condition()
 
 func VOID DIA_Gravo_HelpHow_Info()
 {
-	AI_Output (other, self,"DIA_Gravo_HelpHow_15_00"); //Kdy budu v nesnázích, TY bys mi mohl pomoci? Jak?
-	AI_Output (self, other,"DIA_Gravo_HelpHow_04_01"); //No, øeknìme, e máš problém s Thorusem. Lepší bude, kdy se s ním do problému nikdy nedostaneš, ale jeden nikdy neví.
-	AI_Output (self, other,"DIA_Gravo_HelpHow_04_02"); //Thorus dokáe bıt pìknì neústupnı - kdy se jednou na nìkoho naštve, u s ním nikdy nepromluví. A to je zlá vìc.
-	AI_Output (self, other,"DIA_Gravo_HelpHow_04_03"); //Jako zelenáè jsi na nìm závislı. Pak teda pøijdeš za mnou. Znám tady øadu lidí, kterım Thorus naslouchá.
-	AI_Output (self, other,"DIA_Gravo_HelpHow_04_04"); //Ztratí u nìj za tebe slovo a Thorus bude zase kamarád. Ti hoši však pochopitelnì za tenhle druh laskavosti chtìjí vidìt nìjakou rudu. Tvoji rudu.
-	AI_Output (self, other,"DIA_Gravo_HelpHow_04_05"); //A já se starám, aby se ta ruda dostala do správnıch rukou...
+	AI_Output (other, self,"DIA_Gravo_HelpHow_15_00"); //KdyÅ¾ budu v nesnÃ¡zÃ­ch, TY bys mi mohl pomoci? Jak?
+	AI_Output (self, other,"DIA_Gravo_HelpHow_04_01"); //No, Å™eknÄ›me, Å¾e mÃ¡Å¡ problÃ©m s Thorusem. LepÅ¡Ã­ bude, kdyÅ¾ se s nÃ­m do problÃ©mu nikdy nedostaneÅ¡, ale jeden nikdy nevÃ­.
+	AI_Output (self, other,"DIA_Gravo_HelpHow_04_02"); //Thorus dokÃ¡Å¾e bÃ½t pÄ›knÄ› neÃºstupnÃ½ - kdyÅ¾ se jednou na nÄ›koho naÅ¡tve, uÅ¾ s nÃ­m nikdy nepromluvÃ­. A to je zlÃ¡ vÄ›c.
+	AI_Output (self, other,"DIA_Gravo_HelpHow_04_03"); //Jako zelenÃ¡Ä jsi na nÄ›m zÃ¡vislÃ½. Pak teda pÅ™ijdeÅ¡ za mnou. ZnÃ¡m tady Å™adu lidÃ­, kterÃ½m Thorus naslouchÃ¡.
+	AI_Output (self, other,"DIA_Gravo_HelpHow_04_04"); //ZtratÃ­ u nÄ›j za tebe slovo a Thorus bude zase kamarÃ¡d. Ti hoÅ¡i vÅ¡ak pochopitelnÄ› za tenhle druh laskavosti chtÄ›jÃ­ vidÄ›t nÄ›jakou rudu. Tvoji rudu.
+	AI_Output (self, other,"DIA_Gravo_HelpHow_04_05"); //A jÃ¡ se starÃ¡m, aby se ta ruda dostala do sprÃ¡vnÃ½ch rukou...
 
-	B_LogEntry(GE_TraderOC,"Kopáè Gravo poskytuje zvláštní sluby. Pokud se v táboøe dostanu do konfliktu s dùleitımi lidmi, mùu mu zaplatit za to, e vše urovná.");
+	B_LogEntry(GE_TraderOC,"KopÃ¡Ä Gravo poskytuje zvlÃ¡Å¡tnÃ­ sluÅ¾by. Pokud se v tÃ¡boÅ™e dostanu do konfliktu s dÅ¯leÅ¾itÃ½mi lidmi, mÅ¯Å¾u mu zaplatit za to, Å¾e vÅ¡e urovnÃ¡.");
 };
 
 // **************************************************
@@ -93,12 +93,12 @@ func void B_Gravo_HelpAttitude(var C_NPC prob)
 {
 	if (Npc_GetPermAttitude(prob, other)==ATT_ANGRY)
 	{
-		AI_Output (self, other,"B_Gravo_HelpAttitude_ANGRY_04_00"); //Pravda je, e jsi zapsanı v jeho špatnıch knihách.
-		AI_Output (self, other,"B_Gravo_HelpAttitude_ANGRY_04_01"); //Budu muset promluvit s pár lidma. 100 nugetù a já se o ten problém postarám.
+		AI_Output (self, other,"B_Gravo_HelpAttitude_ANGRY_04_00"); //Pravda je, Å¾e jsi zapsanÃ½ v jeho Å¡patnÃ½ch knihÃ¡ch.
+		AI_Output (self, other,"B_Gravo_HelpAttitude_ANGRY_04_01"); //Budu muset promluvit s pÃ¡r lidma. 100 nugetÅ¯ a jÃ¡ se o ten problÃ©m postarÃ¡m.
 		if (Npc_HasItems(other,itminugget)>=100)
 		{
-			AI_Output (self, other,"B_Gravo_HelpAttitude_ANGRY_04_02"); //Uka, kolik máš... Ach! To by mìlo staèit. Mùeš ten problém povaovat za vyøešenı.
-			AI_Output (self, other,"B_Gravo_HelpAttitude_ANGRY_04_03"); //A nikomu o tom neøíkej. Dìlej, jako by se nic nestalo.
+			AI_Output (self, other,"B_Gravo_HelpAttitude_ANGRY_04_02"); //UkaÅ¾, kolik mÃ¡Å¡... Ach! To by mÄ›lo staÄit. MÅ¯Å¾eÅ¡ ten problÃ©m povaÅ¾ovat za vyÅ™eÅ¡enÃ½.
+			AI_Output (self, other,"B_Gravo_HelpAttitude_ANGRY_04_03"); //A nikomu o tom neÅ™Ã­kej. DÄ›lej, jako by se nic nestalo.
 			B_GiveInvItems (hero, self, itminugget, 100);
 			Npc_SetPermAttitude(prob,ATT_NEUTRAL);
 		}
@@ -111,24 +111,24 @@ func void B_Gravo_HelpAttitude(var C_NPC prob)
 	}
 	else if (Npc_GetPermAttitude(prob, other)==ATT_HOSTILE)
 	{
-		AI_Output (self, other,"B_Gravo_HelpAttitude_HOSTILE_04_00"); //Tomu øíkáš nesnáz? To je skromné oznaèení. Myslím, e by tì za to nejradìji roztrhal na kousky, hochu.
-		AI_Output (self, other,"B_Gravo_HelpAttitude_HOSTILE_04_01"); //Jestli mám nìjaké lidi pøesvìdèit, aby ho zase uklidnili, tak to nebude vùbec levné. Bude tì to stát aspoò 500 nugetù.
+		AI_Output (self, other,"B_Gravo_HelpAttitude_HOSTILE_04_00"); //Tomu Å™Ã­kÃ¡Å¡ nesnÃ¡z? To je skromnÃ© oznaÄenÃ­. MyslÃ­m, Å¾e by tÄ› za to nejradÄ›ji roztrhal na kousky, hochu.
+		AI_Output (self, other,"B_Gravo_HelpAttitude_HOSTILE_04_01"); //Jestli mÃ¡m nÄ›jakÃ© lidi pÅ™esvÄ›dÄit, aby ho zase uklidnili, tak to nebude vÅ¯bec levnÃ©. Bude tÄ› to stÃ¡t aspoÅˆ 500 nugetÅ¯.
 		if (Npc_HasItems(other,itminugget)>=500)
 		{
-			AI_Output (self, other,"B_Gravo_HelpAttitude_HOSTILE_04_02"); //Podívejme, co to tady máš... zdá se, e jsi boháè. Vezmu si tìch 500 nugetù a smetem tu záleitost ze stolu.
-			AI_Output (self, other,"B_Gravo_HelpAttitude_HOSTILE_04_03"); //A pamatuj: nikdo a se nedozví, e jsem se o ten problém postaral já - take to nikomu neøíkej, rozumíš?
+			AI_Output (self, other,"B_Gravo_HelpAttitude_HOSTILE_04_02"); //PodÃ­vejme, co to tady mÃ¡Å¡... zdÃ¡ se, Å¾e jsi bohÃ¡Ä. Vezmu si tÄ›ch 500 nugetÅ¯ a smetem tu zÃ¡leÅ¾itost ze stolu.
+			AI_Output (self, other,"B_Gravo_HelpAttitude_HOSTILE_04_03"); //A pamatuj: nikdo aÅ¥ se nedozvÃ­, Å¾e jsem se o ten problÃ©m postaral jÃ¡ - takÅ¾e to nikomu neÅ™Ã­kej, rozumÃ­Å¡?
 			B_GiveInvItems (hero, self, itminugget, 500);
 			Npc_SetPermAttitude(prob,ATT_NEUTRAL);
 		}
 		else
 		{
-			AI_Output (other, self,"B_Gravo_HelpAttitude_NoOre_15_01"); //Nemám tolik.
-			AI_Output (self, other,"B_Gravo_HelpAttitude_NoOre_04_02"); //Pak pro tebe nebudu moci nic udìlat - je mi líto, chlapèe.
+			AI_Output (other, self,"B_Gravo_HelpAttitude_NoOre_15_01"); //NemÃ¡m tolik.
+			AI_Output (self, other,"B_Gravo_HelpAttitude_NoOre_04_02"); //Pak pro tebe nebudu moci nic udÄ›lat - je mi lÃ­to, chlapÄe.
 		};
 	}
 	else
 	{
-		AI_Output (self, other,"B_Gravo_HelpAttitude_NoProb_04_00"); //Co já vím, tak s tebou nemá problém - nemìj obavy.
+		AI_Output (self, other,"B_Gravo_HelpAttitude_NoProb_04_00"); //Co jÃ¡ vÃ­m, tak s tebou nemÃ¡ problÃ©m - nemÄ›j obavy.
 	};
 };
 
@@ -141,7 +141,7 @@ instance DIA_Gravo_HelpAngryNow(C_INFO)
 	condition		= DIA_Gravo_HelpAngryNow_Condition;
 	information		= DIA_Gravo_HelpAngryNow_Info;
 	permanent		= 1;
-	description 	= "Mùeš mi pomoci - myslím, e mám problém.";
+	description 	= "MÅ¯Å¾eÅ¡ mi pomoci - myslÃ­m, Å¾e mÃ¡m problÃ©m.";
 };                       
 
 FUNC INT DIA_Gravo_HelpAngryNow_Condition()
@@ -154,8 +154,8 @@ FUNC INT DIA_Gravo_HelpAngryNow_Condition()
 
 func VOID DIA_Gravo_HelpAngryNow_Info()
 {
-	AI_Output (other, self,"DIA_Gravo_HelpAngryNow_15_00"); //Mùeš mi pomoci - myslím, e mám problém.
-	AI_Output (self, other,"DIA_Gravo_HelpAngryNow_04_01"); //Taky myslím, ale varuju tì, mùe tì to stát 100 a 500 nugetù.
+	AI_Output (other, self,"DIA_Gravo_HelpAngryNow_15_00"); //MÅ¯Å¾eÅ¡ mi pomoci - myslÃ­m, Å¾e mÃ¡m problÃ©m.
+	AI_Output (self, other,"DIA_Gravo_HelpAngryNow_04_01"); //Taky myslÃ­m, ale varuju tÄ›, mÅ¯Å¾e tÄ› to stÃ¡t 100 aÅ¾ 500 nugetÅ¯.
 	
 	Info_ClearChoices(DIA_Gravo_HelpAngryNow );
 	Info_AddChoice	 (DIA_Gravo_HelpAngryNow, DIALOG_BACK			,DIA_Gravo_HelpAngryNow_BACK);
@@ -207,7 +207,7 @@ instance DIA_Gravo_Influence(C_INFO)
 	condition		= DIA_Gravo_Influence_Condition;
 	information		= DIA_Gravo_Influence_Info;
 	permanent		= 1;
-	description 	= "Mùeš mi øíci, kterı ze Stínù tady patøí k vlivnım lidem?";
+	description 	= "MÅ¯Å¾eÅ¡ mi Å™Ã­ci, kterÃ½ ze StÃ­nÅ¯ tady patÅ™Ã­ k vlivnÃ½m lidem?";
 };                       
 
 FUNC INT DIA_Gravo_Influence_Condition()
@@ -220,14 +220,14 @@ FUNC INT DIA_Gravo_Influence_Condition()
 
 func VOID DIA_Gravo_Influence_Info()
 {
-	AI_Output (other, self,"DIA_Gravo_Influence_15_00"); //Mùeš mi øíci, kterı ze Stínù tady patøí k vlivnım lidem?
-	AI_Output (self, other,"DIA_Gravo_Influence_04_01"); //Chceš udìlat dojem na správné lidi, viï?
-	AI_Output (self, other,"DIA_Gravo_Influence_04_02"); //Diego má ze Stínù nejvìtší moc. Vìøí Fingersovi, Whistlerovi a Slyovi.
-	AI_Output (self, other,"DIA_Gravo_Influence_04_03"); //Dexter a Fisk prodávají své zboí na trhovém námìstí. Mají spousty zákazníkù, dokonce i mezi stráemi, a to z nich dìlá dùleité osoby.
-	AI_Output (self, other,"DIA_Gravo_Influence_04_04"); //A pak je tu Scatty. Ten má na starosti arénu a rozhoduje, kdo bude bojovat a tak. Spousta lidí mu dluí rudu - je teda dost dùleitı.
+	AI_Output (other, self,"DIA_Gravo_Influence_15_00"); //MÅ¯Å¾eÅ¡ mi Å™Ã­ci, kterÃ½ ze StÃ­nÅ¯ tady patÅ™Ã­ k vlivnÃ½m lidem?
+	AI_Output (self, other,"DIA_Gravo_Influence_04_01"); //ChceÅ¡ udÄ›lat dojem na sprÃ¡vnÃ© lidi, viÄ?
+	AI_Output (self, other,"DIA_Gravo_Influence_04_02"); //Diego mÃ¡ ze StÃ­nÅ¯ nejvÄ›tÅ¡Ã­ moc. VÄ›Å™Ã­ Fingersovi, Whistlerovi a Slyovi.
+	AI_Output (self, other,"DIA_Gravo_Influence_04_03"); //Dexter a Fisk prodÃ¡vajÃ­ svÃ© zboÅ¾Ã­ na trhovÃ©m nÃ¡mÄ›stÃ­. MajÃ­ spousty zÃ¡kaznÃ­kÅ¯, dokonce i mezi strÃ¡Å¾emi, a to z nich dÄ›lÃ¡ dÅ¯leÅ¾itÃ© osoby.
+	AI_Output (self, other,"DIA_Gravo_Influence_04_04"); //A pak je tu Scatty. Ten mÃ¡ na starosti arÃ©nu a rozhoduje, kdo bude bojovat a tak. Spousta lidÃ­ mu dluÅ¾Ã­ rudu - je teda dost dÅ¯leÅ¾itÃ½.
 	
 	Log_CreateTopic (GE_TraderOC, LOG_NOTE);
-	B_LogEntry (GE_TraderOC,"Dexter a Fisk obchodují na trišti s rùznım zboím.");
+	B_LogEntry (GE_TraderOC,"Dexter a Fisk obchodujÃ­ na trÅ¾iÅ¡ti s rÅ¯znÃ½m zboÅ¾Ã­m.");
 
 	
 };

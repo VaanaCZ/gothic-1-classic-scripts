@@ -37,7 +37,7 @@ INSTANCE Info_grd_7_EinerVonEuchWerden (C_INFO) // E1
 	condition	= Info_grd_7_EinerVonEuchWerden_Condition;
 	information	= Info_grd_7_EinerVonEuchWerden_Info;
 	permanent	= 1;
-	description = "Co mám udìlat proto, abych byl pøijat mezi Gomezovy stráe?";
+	description = "Co mÃ¡m udÄ›lat proto, abych byl pÅ™ijat mezi Gomezovy strÃ¡Å¾e?";
 };                       
 
 FUNC INT Info_grd_7_EinerVonEuchWerden_Condition()
@@ -53,10 +53,10 @@ FUNC INT Info_grd_7_EinerVonEuchWerden_Condition()
 
 FUNC VOID Info_grd_7_EinerVonEuchWerden_Info()
 {
-	AI_Output(other,self,"Info_grd_7_EinerVonEuchWerden_15_00"); //Co mám udìlat proto, abych byl pøijat mezi Gomezovy stráe?
-	AI_Output(self,other,"Info_grd_7_EinerVonEuchWerden_07_01"); //Ty?! Jsi blázen. Myslíš, e si sem pøijdeš jen tak a budeš hned nahoøe, nebo co?
-	AI_Output(self,other,"Info_grd_7_EinerVonEuchWerden_07_02"); //Gomez má mezi stráí jen ty nejlepší.
-	AI_Output(self,other,"Info_grd_7_EinerVonEuchWerden_07_03"); //Musíš tu pracovat jako kadı jinı a prokázat svou oddanost jako Stín.
+	AI_Output(other,self,"Info_grd_7_EinerVonEuchWerden_15_00"); //Co mÃ¡m udÄ›lat proto, abych byl pÅ™ijat mezi Gomezovy strÃ¡Å¾e?
+	AI_Output(self,other,"Info_grd_7_EinerVonEuchWerden_07_01"); //Ty?! Jsi blÃ¡zen. MyslÃ­Å¡, Å¾e si sem pÅ™ijdeÅ¡ jen tak a budeÅ¡ hned nahoÅ™e, nebo co?
+	AI_Output(self,other,"Info_grd_7_EinerVonEuchWerden_07_02"); //Gomez mÃ¡ mezi strÃ¡Å¾Ã­ jen ty nejlepÅ¡Ã­.
+	AI_Output(self,other,"Info_grd_7_EinerVonEuchWerden_07_03"); //MusÃ­Å¡ tu pracovat jako kaÅ¾dÃ½ jinÃ½ a prokÃ¡zat svou oddanost jako StÃ­n.
 };
 
 // *************************************************************************
@@ -82,8 +82,8 @@ FUNC INT Info_grd_7_WichtigePersonen_Condition()
 FUNC VOID Info_grd_7_WichtigePersonen_Info()
 {
 	AI_Output(other,self,"Info_grd_7_WichtigePersonen_15_00"); //Kdo to tady vede?
-	AI_Output(self,other,"Info_grd_7_WichtigePersonen_07_01"); //Thorus kontroluje všechno, co se dìje v táboøe. Diego je jeho pravá ruka.
-	AI_Output(self,other,"Info_grd_7_WichtigePersonen_07_02"); //Pokud chceš kamkoliv jít, musíš to tìm hochùm øíci.
+	AI_Output(self,other,"Info_grd_7_WichtigePersonen_07_01"); //Thorus kontroluje vÅ¡echno, co se dÄ›je v tÃ¡boÅ™e. Diego je jeho pravÃ¡ ruka.
+	AI_Output(self,other,"Info_grd_7_WichtigePersonen_07_02"); //Pokud chceÅ¡ kamkoliv jÃ­t, musÃ­Å¡ to tÄ›m hochÅ¯m Å™Ã­ci.
 	var C_NPC Diego;		Diego 	= Hlp_GetNpc(PC_Thief);
 	Diego.aivar[AIV_FINDABLE] = TRUE;
 	var C_NPC Thorus;		Thorus 	= Hlp_GetNpc(GRD_200_Thorus);
@@ -100,7 +100,7 @@ INSTANCE Info_grd_7_DasLager(C_INFO)
 	condition	= Info_grd_7_DasLager_Condition;
 	information	= Info_grd_7_DasLager_Info;
 	permanent	= 1;
-	description = "Pracují tady všichni pro Gomeze?";
+	description = "PracujÃ­ tady vÅ¡ichni pro Gomeze?";
 };                       
 
 FUNC INT Info_grd_7_DasLager_Condition()
@@ -112,14 +112,14 @@ FUNC INT Info_grd_7_DasLager_Condition()
 };
 FUNC VOID Info_grd_7_DasLager_Info()
 {
-	AI_Output(other,self,"Info_grd_7_DasLager_15_00"); //Pracují tady všichni pro Gomeze?
-	AI_Output(self,other,"Info_grd_7_DasLager_07_01"); //Ne. Vìtšinou jsou to obyèejní kopáèi.
-	AI_Output(self,other,"Info_grd_7_DasLager_07_02"); //Jenom my, stráe a Stínové jsou s Gomezem.
+	AI_Output(other,self,"Info_grd_7_DasLager_15_00"); //PracujÃ­ tady vÅ¡ichni pro Gomeze?
+	AI_Output(self,other,"Info_grd_7_DasLager_07_01"); //Ne. VÄ›tÅ¡inou jsou to obyÄejnÃ­ kopÃ¡Äi.
+	AI_Output(self,other,"Info_grd_7_DasLager_07_02"); //Jenom my, strÃ¡Å¾e a StÃ­novÃ© jsou s Gomezem.
 	Info_ClearChoices(Info_grd_7_DasLager);
-	Info_AddChoice(Info_grd_7_DasLager,"ZPÌT", Info_grd_7_DasLager_Zurueck);
-	Info_AddChoice(Info_grd_7_DasLager,"Co stráe dìlají?", Info_grd_7_DasLager_Gardisten);
-	Info_AddChoice(Info_grd_7_DasLager,"Co dìlají Stínové?", Info_grd_7_DasLager_Schatten);
-	Info_AddChoice(Info_grd_7_DasLager,"Co dìlají kopáèi?", Info_grd_7_DasLager_Buddler);
+	Info_AddChoice(Info_grd_7_DasLager,"ZPÄšT", Info_grd_7_DasLager_Zurueck);
+	Info_AddChoice(Info_grd_7_DasLager,"Co strÃ¡Å¾e dÄ›lajÃ­?", Info_grd_7_DasLager_Gardisten);
+	Info_AddChoice(Info_grd_7_DasLager,"Co dÄ›lajÃ­ StÃ­novÃ©?", Info_grd_7_DasLager_Schatten);
+	Info_AddChoice(Info_grd_7_DasLager,"Co dÄ›lajÃ­ kopÃ¡Äi?", Info_grd_7_DasLager_Buddler);
 };
 
 FUNC VOID Info_grd_7_DasLager_ZURUECK()
@@ -129,27 +129,27 @@ FUNC VOID Info_grd_7_DasLager_ZURUECK()
 
 FUNC VOID Info_grd_7_DasLager_Gardisten()
 {
-	AI_Output(other,self,"Info_grd_7_DasLager_WasIstAerger_15_00"); //Co stráe dìlají?
-	AI_Output(self,other,"Info_grd_7_DasLager_WasIstAerger_07_01"); //Støeíme tábor a chráníme kopáèe.
-	AI_Output(self,other,"Info_grd_7_DasLager_WasIstAerger_07_02"); //Od Gomeze dostáváme old a kopáèi nám platí za ochranu. Je to dobrej dob.
+	AI_Output(other,self,"Info_grd_7_DasLager_WasIstAerger_15_00"); //Co strÃ¡Å¾e dÄ›lajÃ­?
+	AI_Output(self,other,"Info_grd_7_DasLager_WasIstAerger_07_01"); //StÅ™eÅ¾Ã­me tÃ¡bor a chrÃ¡nÃ­me kopÃ¡Äe.
+	AI_Output(self,other,"Info_grd_7_DasLager_WasIstAerger_07_02"); //Od Gomeze dostÃ¡vÃ¡me Å¾old a kopÃ¡Äi nÃ¡m platÃ­ za ochranu. Je to dobrej dÅ¾ob.
 };
 
 FUNC VOID Info_grd_7_DasLager_Schatten()
 {
-	AI_Output(other,self,"Info_grd_7_DasLager_Schatten_15_00"); //Co dìlají Stínové?
-	AI_Output(self,other,"Info_grd_7_DasLager_Schatten_07_01"); //Stínové dohlíejí na plnìní Gomezovıch pøíkazù.
-	AI_Output(self,other,"Info_grd_7_DasLager_Schatten_07_02"); //Vìtšinou jsou to patolízalové, kteøí se pokoušejí propracovat nahoru. Pokud tu nìco chceš dokázat, je to jediná cesta.
-	AI_Output(self,other,"Info_grd_7_DasLager_Schatten_07_03"); //Dìláš u svou práci dost dlouho tak dobøe, aby ses stal jedním z nás.
-	AI_Output(self,other,"Info_grd_7_DasLager_Schatten_07_04"); //Jakmile budeš s Gomezem, mladej, u si tu na tebe nikdo nedovolí.
+	AI_Output(other,self,"Info_grd_7_DasLager_Schatten_15_00"); //Co dÄ›lajÃ­ StÃ­novÃ©?
+	AI_Output(self,other,"Info_grd_7_DasLager_Schatten_07_01"); //StÃ­novÃ© dohlÃ­Å¾ejÃ­ na plnÄ›nÃ­ GomezovÃ½ch pÅ™Ã­kazÅ¯.
+	AI_Output(self,other,"Info_grd_7_DasLager_Schatten_07_02"); //VÄ›tÅ¡inou jsou to patolÃ­zalovÃ©, kteÅ™Ã­ se pokouÅ¡ejÃ­ propracovat nahoru. Pokud tu nÄ›co chceÅ¡ dokÃ¡zat, je to jedinÃ¡ cesta.
+	AI_Output(self,other,"Info_grd_7_DasLager_Schatten_07_03"); //DÄ›lÃ¡Å¡ uÅ¾ svou prÃ¡ci dost dlouho tak dobÅ™e, aby ses stal jednÃ­m z nÃ¡s.
+	AI_Output(self,other,"Info_grd_7_DasLager_Schatten_07_04"); //Jakmile budeÅ¡ s Gomezem, mladej, uÅ¾ si tu na tebe nikdo nedovolÃ­.
 };
 
 FUNC VOID Info_grd_7_DasLager_Buddler()
 {
-	AI_Output(other,self,"Info_grd_7_DasLager_Buddler_15_00"); //Co dìlají kopáèi?
-	AI_Output(self,other,"Info_grd_7_DasLager_Buddler_07_01"); //Dobrá otázka! Nemìli bysme ty umounìnce vùbec pouštìt z dolù ven!
-	AI_Output(self,other,"Info_grd_7_DasLager_Buddler_07_02"); //Kdy budou chvilku v dolech, pøijdou ven utratit svùj vıdìlek.
-	AI_Output(self,other,"Info_grd_7_DasLager_Buddler_07_03"); //Kdy všechno promrhají, vrátí se do dolù. Tak to tu dìlá vìtšina lidí.
-	AI_Output(self,other,"Info_grd_7_DasLager_Buddler_07_04"); //Vypadá to, e máš na víc, ne se ohánìt s krumpáèem. Mìl bys prohodit slovo s Thorusem, jestli se na to cítíš...
+	AI_Output(other,self,"Info_grd_7_DasLager_Buddler_15_00"); //Co dÄ›lajÃ­ kopÃ¡Äi?
+	AI_Output(self,other,"Info_grd_7_DasLager_Buddler_07_01"); //DobrÃ¡ otÃ¡zka! NemÄ›li bysme ty umounÄ›nce vÅ¯bec pouÅ¡tÄ›t z dolÅ¯ ven!
+	AI_Output(self,other,"Info_grd_7_DasLager_Buddler_07_02"); //KdyÅ¾ budou chvilku v dolech, pÅ™ijdou ven utratit svÅ¯j vÃ½dÄ›lek.
+	AI_Output(self,other,"Info_grd_7_DasLager_Buddler_07_03"); //KdyÅ¾ vÅ¡echno promrhajÃ­, vrÃ¡tÃ­ se do dolÅ¯. Tak to tu dÄ›lÃ¡ vÄ›tÅ¡ina lidÃ­.
+	AI_Output(self,other,"Info_grd_7_DasLager_Buddler_07_04"); //VypadÃ¡ to, Å¾e mÃ¡Å¡ na vÃ­c, neÅ¾ se ohÃ¡nÄ›t s krumpÃ¡Äem. MÄ›l bys prohodit slovo s Thorusem, jestli se na to cÃ­tÃ­Å¡...
 	VAR C_NPC Thorus; Thorus = Hlp_GetNpc(GRD_200_THORUS);
 	Thorus.aivar[AIV_FINDABLE]=TRUE;
 };
@@ -177,7 +177,7 @@ FUNC INT Info_grd_7_DieLage_Condition()
 FUNC VOID Info_grd_7_DieLage_Info()
 {
 	AI_Output(other,self,"Info_grd_7_DieLage_15_00"); //Jak to jde?
-	AI_Output(self,other,"Info_grd_7_DieLage_07_01"); //Tak jak to vidíš? Dokud se nerozhodneš, do kterého tábora se dáš, nikdo tì nebude brát vánì, mladej!
+	AI_Output(self,other,"Info_grd_7_DieLage_07_01"); //Tak jak to vidÃ­Å¡? Dokud se nerozhodneÅ¡, do kterÃ©ho tÃ¡bora se dÃ¡Å¡, nikdo tÄ› nebude brÃ¡t vÃ¡Å¾nÄ›, mladej!
 };
 	
 // *************************************************************************

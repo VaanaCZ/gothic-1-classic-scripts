@@ -30,7 +30,7 @@ instance  Tpl_1436_Templer_CRAWLER (C_INFO)
 	information		= Tpl_1436_Templer_CRAWLER_Info;
 	important		= 0;
 	permanent		= 1;
-	description		= "Co se dìje?"; 
+	description		= "Co se dÄ›je?"; 
 };
 
 FUNC int  Tpl_1436_Templer_CRAWLER_Condition()
@@ -40,9 +40,9 @@ FUNC int  Tpl_1436_Templer_CRAWLER_Condition()
 
 FUNC void  Tpl_1436_Templer_CRAWLER_Info()
 {
-	AI_Output (other, self,"Tpl_1436_Templer_CRAWLER_Info_15_01"); //Co se dìje?
-	AI_Output (self, other,"Tpl_1436_Templer_CRAWLER_Info_13_02"); //Lovíme tady èervy. Vedlejším efektem je ochrana kopáèù, co je taky docela dobré.
-	AI_Output (self, other,"Tpl_1436_Templer_CRAWLER_Info_13_03"); //Hlavní vìc, kterou chceme, je vımìšek èervù. Náš Guru Cor Kalom pøipravuje magické lektvary z vımìškù z èelistí dùlních èervù.
+	AI_Output (other, self,"Tpl_1436_Templer_CRAWLER_Info_15_01"); //Co se dÄ›je?
+	AI_Output (self, other,"Tpl_1436_Templer_CRAWLER_Info_13_02"); //LovÃ­me tady Äervy. VedlejÅ¡Ã­m efektem je ochrana kopÃ¡ÄÅ¯, coÅ¾ je taky docela dobrÃ©.
+	AI_Output (self, other,"Tpl_1436_Templer_CRAWLER_Info_13_03"); //HlavnÃ­ vÄ›c, kterou chceme, je vÃ½mÄ›Å¡ek ÄervÅ¯. NÃ¡Å¡ Guru Cor Kalom pÅ™ipravuje magickÃ© lektvary z vÃ½mÄ›Å¡kÅ¯ z ÄelistÃ­ dÅ¯lnÃ­ch ÄervÅ¯.
 };  
 
   

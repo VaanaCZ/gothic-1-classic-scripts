@@ -44,6 +44,6 @@ FUNC INT DIA_Sfb_1001_Hello_Condition()
 FUNC VOID DIA_Sfb_1001_Hello_Info()
 {	
 	AI_Output (other, self,"DIA_Sfb_1001_Hello_15_00"); //Tak jak to jde v dolu?
-	AI_Output (self, other,"DIA_Sfb_1001_Hello_02_01"); //Už máme skoro všechno. Ještì pár týdnù a budeme mít dost.
+	AI_Output (self, other,"DIA_Sfb_1001_Hello_02_01"); //UÅ¾ mÃ¡me skoro vÅ¡echno. JeÅ¡tÄ› pÃ¡r tÃ½dnÅ¯ a budeme mÃ­t dost.
 	AI_StopProcessInfos	(self);
 };

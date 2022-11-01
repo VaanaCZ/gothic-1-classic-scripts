@@ -28,7 +28,7 @@ instance  GRD_271_ULBERT_KEY (C_INFO)
 	information		= GRD_271_ULBERT_KEY_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Co je v tom skladiöti?"; 
+	description		= "Co je v tom skladi≈°ti?"; 
 };
 
 FUNC int  GRD_271_ULBERT_KEY_Condition()
@@ -39,8 +39,8 @@ FUNC int  GRD_271_ULBERT_KEY_Condition()
 
 FUNC void  GRD_271_ULBERT_KEY_Info()
 {
-	AI_Output			(other, self,"GRD_271_ULBERT_KEY_Info_15_01"); //Co je v tom skladiöti?
-	AI_Output			(self, other,"GRD_271_ULBERT_KEY_Info_07_02"); //Do toho ti nic nenÌ.
+	AI_Output			(other, self,"GRD_271_ULBERT_KEY_Info_15_01"); //Co je v tom skladi≈°ti?
+	AI_Output			(self, other,"GRD_271_ULBERT_KEY_Info_07_02"); //Do toho ti nic nen√≠.
 };  
 // ***************** Infos *****************************
 
@@ -51,7 +51,7 @@ instance  GRD_271_ULBERT_TRICK (C_INFO)
 	information		= GRD_271_ULBERT_TRICK_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Kdyû tady jsi tak dlouho, musÌö mÌt z toho ûÌzeÚ."; 
+	description		= "Kdy≈æ tady jsi tak dlouho, mus√≠≈° m√≠t z toho ≈æ√≠ze≈à."; 
 };
 
 FUNC int  GRD_271_ULBERT_TRICK_Condition()
@@ -65,12 +65,12 @@ FUNC int  GRD_271_ULBERT_TRICK_Condition()
 
 FUNC void  GRD_271_ULBERT_TRICK_Info()
 {
-	AI_Output			(other, self,"GRD_271_ULBERT_TRICK_Info_15_01"); //Kdyû tady jsi tak dlouho, musÌö mÌt z toho ûÌzeÚ.
-	AI_Output			(self, other,"GRD_271_ULBERT_TRICK_Info_07_02"); //To si piö! »lovÏËe, mohl bych to do sebe lejt! A co ty?
+	AI_Output			(other, self,"GRD_271_ULBERT_TRICK_Info_15_01"); //Kdy≈æ tady jsi tak dlouho, mus√≠≈° m√≠t z toho ≈æ√≠ze≈à.
+	AI_Output			(self, other,"GRD_271_ULBERT_TRICK_Info_07_02"); //To si pi≈°! ƒålovƒõƒçe, mohl bych to do sebe lejt! A co ty?
 
 	Log_CreateTopic		(CH2_StorageShed,	LOG_MISSION);
 	Log_SetTopicStatus	(CH2_StorageShed,	LOG_RUNNING);
-	B_LogEntry		(CH2_StorageShed,"Str·ûce Ulbert hlÌd· skladiötÏ ve StarÈm dole. MÏl bych mu d·t nÏco k pitÌ!"); 
+	B_LogEntry		(CH2_StorageShed,"Str√°≈æce Ulbert hl√≠d√° skladi≈°tƒõ ve Star√©m dole. Mƒõl bych mu d√°t nƒõco k pit√≠!"); 
 };  
 
 // ***************** Infos *****************************
@@ -82,7 +82,7 @@ instance  GRD_271_ULBERT_DRINK (C_INFO)
 	information		= GRD_271_ULBERT_DRINK_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "(podej n·poj)"; 
+	description		= "(podej n√°poj)"; 
 };
 
 FUNC int  GRD_271_ULBERT_DRINK_Condition()
@@ -97,8 +97,8 @@ FUNC int  GRD_271_ULBERT_DRINK_Condition()
 };
 FUNC void  GRD_271_ULBERT_DRINK_Info()
 {
-	AI_Output			(other, self,"GRD_271_ULBERT_DRINK_Info_15_01"); //Tady m·ö, dej si po¯·dnÏ na mÏ!
-	AI_Output			(self, other,"GRD_271_ULBERT_DRINK_Info_07_02"); //DÌky.
+	AI_Output			(other, self,"GRD_271_ULBERT_DRINK_Info_15_01"); //Tady m√°≈°, dej si po≈ô√°dnƒõ na mƒõ!
+	AI_Output			(self, other,"GRD_271_ULBERT_DRINK_Info_07_02"); //D√≠ky.
 	
 	if 		(Npc_HasItems (hero, ItFobeer ))
 	{
@@ -139,7 +139,7 @@ instance  GRD_271_ULBERT_DRUNK (C_INFO)
 	information		= GRD_271_ULBERT_DRUNK_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Je TEœ v tom skladiöti nÏco mimo¯·dnÈho?"; 
+	description		= "Je TEƒé v tom skladi≈°ti nƒõco mimo≈ô√°dn√©ho?"; 
 };
 
 FUNC int  GRD_271_ULBERT_DRUNK_Condition()
@@ -152,12 +152,12 @@ FUNC int  GRD_271_ULBERT_DRUNK_Condition()
 };
 FUNC void  GRD_271_ULBERT_DRUNK_Info()
 {
-	AI_Output			(other, self,"GRD_271_ULBERT_DRUNK_Info_15_01"); //Je TEœ v tom skladiöti nÏco mimo¯·dnÈho?
-	AI_Output			(self, other,"GRD_271_ULBERT_DRUNK_Info_07_02"); //NÏjakÈ truhly, ve kter˝ch skladujeme z·soby. Ztratil se ale klÌË.
+	AI_Output			(other, self,"GRD_271_ULBERT_DRUNK_Info_15_01"); //Je TEƒé v tom skladi≈°ti nƒõco mimo≈ô√°dn√©ho?
+	AI_Output			(self, other,"GRD_271_ULBERT_DRUNK_Info_07_02"); //Nƒõjak√© truhly, ve kter√Ωch skladujeme z√°soby. Ztratil se ale kl√≠ƒç.
 	AI_Output			(other, self,"GRD_271_ULBERT_DRUNK_Info_15_03"); //Ztratil?
-	AI_Output			(self, other,"GRD_271_ULBERT_DRUNK_Info_07_04"); //VsadÌm se, ûe v tom m· prsty Aleph. Tomu klukovi se ned· vÏ¯it.
+	AI_Output			(self, other,"GRD_271_ULBERT_DRUNK_Info_07_04"); //Vsad√≠m se, ≈æe v tom m√° prsty Aleph. Tomu klukovi se ned√° vƒõ≈ôit.
 
-	B_LogEntry		(CH2_StorageShed,"Kdyû jsem dal Ulbertovi napÌt, ¯ekl mi, ûe ztratil klÌË od truhlic. ⁄dajnÏ v tom m· prsty kop·Ë Aleph!");
+	B_LogEntry		(CH2_StorageShed,"Kdy≈æ jsem dal Ulbertovi nap√≠t, ≈ôekl mi, ≈æe ztratil kl√≠ƒç od truhlic. √ödajnƒõ v tom m√° prsty kop√°ƒç Aleph!");
 };  
 // ***************** Infos *****************************
 instance  GRD_271_ULBERT_LOCK (C_INFO)
@@ -167,7 +167,7 @@ instance  GRD_271_ULBERT_LOCK (C_INFO)
 	information		= GRD_271_ULBERT_LOCK_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "(odl·kej Ulberta)"; 
+	description		= "(odl√°kej Ulberta)"; 
 };
 
 FUNC int  GRD_271_ULBERT_LOCK_Condition()
@@ -180,10 +180,10 @@ FUNC int  GRD_271_ULBERT_LOCK_Condition()
 };
 FUNC void  GRD_271_ULBERT_LOCK_Info()
 {
-	AI_Output			(other, self,"GRD_271_ULBERT_LOCK_Info_15_01"); //Poslyö, Ian sedÌ s ostatnÌmi dole a opÈkajÌ si tam maso.
-	AI_Output			(self, other,"GRD_271_ULBERT_LOCK_Info_07_02"); //Coûe? Beze mÏ? Dob¯e, vezmu si sv˘j dÌl.
+	AI_Output			(other, self,"GRD_271_ULBERT_LOCK_Info_15_01"); //Posly≈°, Ian sed√≠ s ostatn√≠mi dole a op√©kaj√≠ si tam maso.
+	AI_Output			(self, other,"GRD_271_ULBERT_LOCK_Info_07_02"); //Co≈æe? Beze mƒõ? Dob≈ôe, vezmu si sv≈Øj d√≠l.
 	
-	B_LogEntry		(CH2_StorageShed,"Dostat Ulberta ze skladiötÏ bylo snadnÈ. Nep˘sobÌ p¯Ìliö bystr˝m dojmem!");
+	B_LogEntry		(CH2_StorageShed,"Dostat Ulberta ze skladi≈°tƒõ bylo snadn√©. Nep≈Øsob√≠ p≈ô√≠li≈° bystr√Ωm dojmem!");
 
 	Npc_ExchangeRoutine	(self,	"away");
 	AI_StopProcessInfos	(self);
@@ -210,12 +210,12 @@ FUNC int  GRD_271_ULBERT_ANGRY_Condition()
 };
 FUNC void  GRD_271_ULBERT_ANGRY_Info()
 {
-	AI_Output			(self, other,"GRD_271_ULBERT_ANGRY_Info_07_01"); //Hej, ty, tam se v˘bec û·dnÈ maso neopÈk·!
-	AI_Output			(other, self,"GRD_271_ULBERT_ANGRY_Info_15_02"); //Och... ech... To jsem se musel splÈst! PÏknej den!
+	AI_Output			(self, other,"GRD_271_ULBERT_ANGRY_Info_07_01"); //Hej, ty, tam se v≈Øbec ≈æ√°dn√© maso neop√©k√°!
+	AI_Output			(other, self,"GRD_271_ULBERT_ANGRY_Info_15_02"); //Och... ech... To jsem se musel spl√©st! Pƒõknej den!
 
 	B_GiveXP			(XP_LureUlbertAway);
 	
-	B_LogEntry		(CH2_StorageShed,"Znovu jsem potkal Ulberta. »lovÏËe, ten v˘bec nepochopil, ûe jsem ho zat·hl do tÈ hry. Tak naivnÌ je ten chlapÌk!");
+	B_LogEntry		(CH2_StorageShed,"Znovu jsem potkal Ulberta. ƒålovƒõƒçe, ten v≈Øbec nepochopil, ≈æe jsem ho zat√°hl do t√© hry. Tak naivn√≠ je ten chlap√≠k!");
 	Log_SetTopicStatus	(CH2_StorageShed,	LOG_SUCCESS);
 
 	Npc_ExchangeRoutine	(self,	"start");

@@ -37,7 +37,7 @@ INSTANCE Info_Mine_Sld_11_EinerVonEuchWerden (C_INFO) // E1
 	condition	= Info_Mine_Sld_11_EinerVonEuchWerden_Condition;
 	information	= Info_Mine_Sld_11_EinerVonEuchWerden_Info;
 	permanent	= 1;
-	description = "Jak se mùžu dát k vám?";
+	description = "Jak se mÅ¯Å¾u dÃ¡t k vÃ¡m?";
 };                       
 
 FUNC INT Info_Mine_Sld_11_EinerVonEuchWerden_Condition()
@@ -53,9 +53,9 @@ FUNC INT Info_Mine_Sld_11_EinerVonEuchWerden_Condition()
 
 FUNC VOID Info_Mine_Sld_11_EinerVonEuchWerden_Info()
 {
-	AI_Output(other,self,"Info_Mine_Sld_11_EinerVonEuchWerden_15_00"); //Jak se mùžu dát k vám?
-	AI_Output(self,other,"Info_Mine_Sld_11_EinerVonEuchWerden_011_01"); //Když chceš být jedním z nás, musíš si vysloužit uznání.
-	AI_Output(self,other,"Info_Mine_Sld_11_EinerVonEuchWerden_011_02"); //Bìž a dìlej, jak nejlíp umíš, a pak ti dovolí sloužit v Kotlinì.
+	AI_Output(other,self,"Info_Mine_Sld_11_EinerVonEuchWerden_15_00"); //Jak se mÅ¯Å¾u dÃ¡t k vÃ¡m?
+	AI_Output(self,other,"Info_Mine_Sld_11_EinerVonEuchWerden_011_01"); //KdyÅ¾ chceÅ¡ bÃ½t jednÃ­m z nÃ¡s, musÃ­Å¡ si vyslouÅ¾it uznÃ¡nÃ­.
+	AI_Output(self,other,"Info_Mine_Sld_11_EinerVonEuchWerden_011_02"); //BÄ›Å¾ a dÄ›lej, jak nejlÃ­p umÃ­Å¡, a pak ti dovolÃ­ slouÅ¾it v KotlinÄ›.
 };
 
 // *************************************************************************
@@ -68,7 +68,7 @@ INSTANCE Info_Mine_Sld_11_WichtigePersonen(C_INFO)
 	condition	= Info_Mine_Sld_11_WichtigePersonen_Condition;
 	information	= Info_Mine_Sld_11_WichtigePersonen_Info;
 	permanent	= 1;
-	description = "Kdo tady dává rozkazy?";
+	description = "Kdo tady dÃ¡vÃ¡ rozkazy?";
 };                       
 
 FUNC INT Info_Mine_Sld_11_WichtigePersonen_Condition()
@@ -78,9 +78,9 @@ FUNC INT Info_Mine_Sld_11_WichtigePersonen_Condition()
 
 FUNC VOID Info_Mine_Sld_11_WichtigePersonen_Info()
 {
-	AI_Output(other,self,"Info_Mine_Sld_11_WichtigePersonen_15_00"); //Kdo tady dává rozkazy?
-	AI_Output(self,other,"Info_Mine_Sld_11_WichtigePersonen_011_01"); //Tady dìlá každý to, co øekne Okyl. Zná tady v táboøe všechny.
-	AI_Output(self,other,"Info_Mine_Sld_11_WichtigePersonen_011_02"); //Takže jestli provedeš nìco hloupého, mágové Vody v Novém táboøe se o tom dovìdí.
+	AI_Output(other,self,"Info_Mine_Sld_11_WichtigePersonen_15_00"); //Kdo tady dÃ¡vÃ¡ rozkazy?
+	AI_Output(self,other,"Info_Mine_Sld_11_WichtigePersonen_011_01"); //Tady dÄ›lÃ¡ kaÅ¾dÃ½ to, co Å™ekne Okyl. ZnÃ¡ tady v tÃ¡boÅ™e vÅ¡echny.
+	AI_Output(self,other,"Info_Mine_Sld_11_WichtigePersonen_011_02"); //TakÅ¾e jestli provedeÅ¡ nÄ›co hloupÃ©ho, mÃ¡govÃ© Vody v NovÃ©m tÃ¡boÅ™e se o tom dovÄ›dÃ­.
 };
 
 // *************************************************************************
@@ -93,7 +93,7 @@ INSTANCE Info_Mine_Sld_11_DasLager(C_INFO)
 	condition	= Info_Mine_Sld_11_DasLager_Condition;
 	information	= Info_Mine_Sld_11_DasLager_Info;
 	permanent	= 1;
-	description = "Dìje se tu nìco zvláštního?";
+	description = "DÄ›je se tu nÄ›co zvlÃ¡Å¡tnÃ­ho?";
 };                       
 
 FUNC INT Info_Mine_Sld_11_DasLager_Condition()
@@ -103,9 +103,9 @@ FUNC INT Info_Mine_Sld_11_DasLager_Condition()
 
 FUNC VOID Info_Mine_Sld_11_DasLager_Info()
 {
-	AI_Output(other,self,"Info_Mine_Sld_11_DasLager_15_00"); //A nic zvláštního se tu nedìje?
-	AI_Output(self,other,"Info_Mine_Sld_11_DasLager_011_01"); //Nic než pekelné problémy, pokud nìco hloupého provedeš.
-	AI_Output(self,other,"Info_Mine_Sld_11_DasLager_011_02"); //Jo, další problémy, pokud se pokusíš dostat do dolu nebo pøes bránu bez povolení.
+	AI_Output(other,self,"Info_Mine_Sld_11_DasLager_15_00"); //A nic zvlÃ¡Å¡tnÃ­ho se tu nedÄ›je?
+	AI_Output(self,other,"Info_Mine_Sld_11_DasLager_011_01"); //Nic neÅ¾ pekelnÃ© problÃ©my, pokud nÄ›co hloupÃ©ho provedeÅ¡.
+	AI_Output(self,other,"Info_Mine_Sld_11_DasLager_011_02"); //Jo, dalÅ¡Ã­ problÃ©my, pokud se pokusÃ­Å¡ dostat do dolu nebo pÅ™es brÃ¡nu bez povolenÃ­.
 };
 
 // *************************************************************************
@@ -129,7 +129,7 @@ FUNC INT Info_Mine_Sld_11_DieLage_Condition()
 FUNC VOID Info_Mine_Sld_11_DieLage_Info()
 {
 	AI_Output(other,self,"Info_Mine_Sld_11_DieLage_15_00"); //Jak to jde?
-	AI_Output(self,other,"Info_Mine_Sld_11_DieLage_011_01"); //Je klid. Až moc klid na mùj vkus.
+	AI_Output(self,other,"Info_Mine_Sld_11_DieLage_011_01"); //Je klid. AÅ¾ moc klid na mÅ¯j vkus.
 };
 	
 // *************************************************************************

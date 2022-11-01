@@ -44,7 +44,7 @@ FUNC INT Info_ORG_829_Hello_Condition()
 FUNC VOID Info_ORG_829_Hello_Info()
 {	
 	AI_Output (other, self,"Info_ORG_829_Hello_15_00"); //Jak to jde?
-	AI_Output (self, other,"Info_ORG_829_Hello_06_01"); //Docela to ujde, ale nemám co kouøit.
+	AI_Output (self, other,"Info_ORG_829_Hello_06_01"); //Docela to ujde, ale nemÃ¡m co kouÅ™it.
 };
 
 // ************************************************************
@@ -60,7 +60,7 @@ INSTANCE Info_ORG_829_OfferJoint (C_INFO)
 	condition	= Info_ORG_829_OfferJoint_Condition;
 	information	= Info_ORG_829_OfferJoint_Info;
 	permanent	= 0;
-	description	= "Mám drogu z bain - chceš trochu?";
+	description	= "MÃ¡m drogu z baÅ¾in - chceÅ¡ trochu?";
 };                       
 
 FUNC INT Info_ORG_829_OfferJoint_Condition()
@@ -73,7 +73,7 @@ FUNC INT Info_ORG_829_OfferJoint_Condition()
 
 FUNC VOID Info_ORG_829_OfferJoint_Info()
 {	
-	AI_Output (other, self,"Info_ORG_829_OfferJoint_15_00"); //Mám drogu z bain - chceš trochu?
+	AI_Output (other, self,"Info_ORG_829_OfferJoint_15_00"); //MÃ¡m drogu z baÅ¾in - chceÅ¡ trochu?
 	
 	if ( (Npc_HasItems(other,ItMiJoint_1)>0) || (Npc_HasItems(other,ItMiJoint_2)>0) || (Npc_HasItems(other,ItMiJoint_3)>0) )
 	{
@@ -84,13 +84,13 @@ FUNC VOID Info_ORG_829_OfferJoint_Info()
 		else if (Npc_HasItems(other,ItMiJoint_3))
 		{	B_GiveInvItems (other,self,ItMiJoint_3,1);	 };
 		
-		AI_Output (self, other,"Info_ORG_829_OfferJoint_06_01"); //Jistì! Jsi jeden z pøekupníkù ze Sektovního tábora, nebo co?
+		AI_Output (self, other,"Info_ORG_829_OfferJoint_06_01"); //JistÄ›! Jsi jeden z pÅ™ekupnÃ­kÅ¯ ze SektovnÃ­ho tÃ¡bora, nebo co?
 		
 		NC_Joints_verteilt = NC_Joints_verteilt + 1;
 	}
 	else
 	{
-		AI_Output (self, other,"Info_ORG_829_OfferJoint_No_Joint_06_00"); //Hej, èlovìèe! Pøestaò takhle vanit, jasnı? Nemám to rád.
+		AI_Output (self, other,"Info_ORG_829_OfferJoint_No_Joint_06_00"); //Hej, ÄlovÄ›Äe! PÅ™estaÅˆ takhle Å¾vanit, jasnÃ½? NemÃ¡m to rÃ¡d.
 	};
 };
 
@@ -105,7 +105,7 @@ INSTANCE Info_ORG_829_SpecialInfo (C_INFO)
 	condition	= Info_ORG_829_SpecialInfo_Condition;
 	information	= Info_ORG_829_SpecialInfo_Info;
 	permanent	= 0;
-	description	= "Právì jsem pøišel - mùeš mi dát nìjakou radu?";
+	description	= "PrÃ¡vÄ› jsem pÅ™iÅ¡el - mÅ¯Å¾eÅ¡ mi dÃ¡t nÄ›jakou radu?";
 };                       
 
 FUNC INT Info_ORG_829_SpecialInfo_Condition()
@@ -118,10 +118,10 @@ FUNC INT Info_ORG_829_SpecialInfo_Condition()
 
 FUNC VOID Info_ORG_829_SpecialInfo_Info()
 {	
-	AI_Output (other, self,"Info_ORG_829_SpecialInfo_15_00"); //Právì jsem pøišel - mùeš mi dát nìjakou radu?
-	AI_Output (self, other,"Info_ORG_829_SpecialInfo_06_01"); //Jistì! Kdy pøijdeš do tábora, jdi za Gornem. Patøí ke kouzelnickım oldákùm, ale je dobrı. Bıval jedním z nás.
-	AI_Output (other, self,"Info_ORG_829_SpecialInfo_15_02"); //Co myslíš tím 'z nás'?
-	AI_Output (self, other,"Info_ORG_829_SpecialInfo_06_03"); //Psanec, samozøejmì. Jeden z 'nakopávaèù Rudobaronskejch zadkù'!
+	AI_Output (other, self,"Info_ORG_829_SpecialInfo_15_00"); //PrÃ¡vÄ› jsem pÅ™iÅ¡el - mÅ¯Å¾eÅ¡ mi dÃ¡t nÄ›jakou radu?
+	AI_Output (self, other,"Info_ORG_829_SpecialInfo_06_01"); //JistÄ›! KdyÅ¾ pÅ™ijdeÅ¡ do tÃ¡bora, jdi za Gornem. PatÅ™Ã­ ke kouzelnickÃ½m Å¾oldÃ¡kÅ¯m, ale je dobrÃ½. BÃ½val jednÃ­m z nÃ¡s.
+	AI_Output (other, self,"Info_ORG_829_SpecialInfo_15_02"); //Co myslÃ­Å¡ tÃ­m 'z nÃ¡s'?
+	AI_Output (self, other,"Info_ORG_829_SpecialInfo_06_03"); //Psanec, samozÅ™ejmÄ›. Jeden z 'nakopÃ¡vaÄÅ¯ Rudobaronskejch zadkÅ¯'!
 };
 
 // ************************************************************
@@ -135,7 +135,7 @@ INSTANCE Info_ORG_829_PERM (C_INFO)
 	condition	= Info_ORG_829_PERM_Condition;
 	information	= Info_ORG_829_PERM_Info;
 	permanent	= 1;
-	description	= "Mùeš mi øíct, co mì v táboøe èeká?";
+	description	= "MÅ¯Å¾eÅ¡ mi Å™Ã­ct, co mÄ› v tÃ¡boÅ™e ÄekÃ¡?";
 };                       
 
 FUNC INT Info_ORG_829_PERM_Condition()
@@ -148,6 +148,6 @@ FUNC INT Info_ORG_829_PERM_Condition()
 
 FUNC VOID Info_ORG_829_PERM_Info()
 {	
-	AI_Output (other, self,"Info_ORG_829_PERM_15_00"); //Mùeš mi øíct, co mì v táboøe èeká?
-	AI_Output (self, other,"Info_ORG_829_PERM_06_01"); //Tak bì a zjisti to.
+	AI_Output (other, self,"Info_ORG_829_PERM_15_00"); //MÅ¯Å¾eÅ¡ mi Å™Ã­ct, co mÄ› v tÃ¡boÅ™e ÄekÃ¡?
+	AI_Output (self, other,"Info_ORG_829_PERM_06_01"); //Tak bÄ›Å¾ a zjisti to.
 };

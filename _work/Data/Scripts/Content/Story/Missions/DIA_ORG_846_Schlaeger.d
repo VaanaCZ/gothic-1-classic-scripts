@@ -33,7 +33,7 @@ instance DIA_846_Hello (C_INFO)
 	condition	= DIA_846_Hello_Condition;
 	information	= DIA_846_Hello_Info;
 	permanent	= 0;
-	description	= "Co tady dìláš?";
+	description	= "Co tady dÄ›lÃ¡Å¡?";
 };                       
 
 FUNC int DIA_846_Hello_Condition()
@@ -43,12 +43,12 @@ FUNC int DIA_846_Hello_Condition()
 
 FUNC VOID DIA_846_Hello_Info()
 {
-	AI_Output (other, self,"DIA_846_Hello_15_00"); //Co tady dìláš?
-	AI_Output (self, other,"DIA_846_Hello_07_01"); //Pracuju pro Rýžového Lorda.
+	AI_Output (other, self,"DIA_846_Hello_15_00"); //Co tady dÄ›lÃ¡Å¡?
+	AI_Output (self, other,"DIA_846_Hello_07_01"); //Pracuju pro RÃ½Å¾ovÃ©ho Lorda.
 	
 	var C_NPC Lefty; Lefty = Hlp_GetNpc (Org_844_Lefty);
 	if (!Npc_IsDead(Lefty))
 	{
-		AI_Output (self, other,"DIA_846_Hello_07_02"); //Kdybys nìco potøeboval, øekni Leftymu.
+		AI_Output (self, other,"DIA_846_Hello_07_02"); //Kdybys nÄ›co potÅ™eboval, Å™ekni Leftymu.
 	};
 };

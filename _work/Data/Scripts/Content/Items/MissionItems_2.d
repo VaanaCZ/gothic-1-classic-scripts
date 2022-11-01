@@ -7,11 +7,11 @@
 //#####################################################################
 
 //---------------------------------------------------------------------
-//	Karte für 1. Fokus
+//	Karte fÃ¼r 1. Fokus
 //---------------------------------------------------------------------
 INSTANCE ItWrFocusmapPsi(C_Item)
 {	
-	name 			=	"Y´Berionova mapa ohnisek";
+	name 			=	"YÂ´Berionova mapa ohnisek";
 	
 	mainflag 		=	ITEM_KAT_DOCS;
 	flags 			=	ITEM_MISSION;
@@ -25,9 +25,9 @@ INSTANCE ItWrFocusmapPsi(C_Item)
 	on_state[0]		=	UseFocusmapPsi;
 
 	description		= name;
-	TEXT[1]			= "Tato mapa znaèí cestu k ohniskovému";
-	TEXT[2]			= "kameni, která Y´Berion potøebuje";
-	TEXT[3]			= "k vyzıvání Spáèe.";
+	TEXT[1]			= "Tato mapa znaÄÃ­ cestu k ohniskovÃ©mu";
+	TEXT[2]			= "kameni, kterÃ¡ YÂ´Berion potÅ™ebuje";
+	TEXT[3]			= "k vyzÃ½vÃ¡nÃ­ SpÃ¡Äe.";
 };
 
 	FUNC VOID UseFocusmapPsi()
@@ -47,7 +47,7 @@ INSTANCE ItWrFocusmapPsi(C_Item)
 //---------------------------------------------------------------------
 INSTANCE Focus_1(C_Item)
 {	
-	name 				=	"Ohnisko z moøskıch útesù";
+	name 				=	"Ohnisko z moÅ™skÃ½ch ÃºtesÅ¯";
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MISSION;	
 
@@ -60,16 +60,16 @@ INSTANCE Focus_1(C_Item)
 	material 			=	MAT_STONE;
 
 	description			=	name;
-	TEXT[1]				=	"Jeden z pìti ohniskovıch kamenù,";
-	TEXT[2]				=	"které byly pouity k vytvoøení magické Bariéry.";
+	TEXT[1]				=	"Jeden z pÄ›ti ohniskovÃ½ch kamenÅ¯,";
+	TEXT[2]				=	"kterÃ© byly pouÅ¾ity k vytvoÅ™enÃ­ magickÃ© BariÃ©ry.";
 };
 
 //---------------------------------------------------------------------
-//	Zahnrad für Ian
+//	Zahnrad fÃ¼r Ian
 //---------------------------------------------------------------------
 INSTANCE ItMi_Stuff_Gearwheel_01(C_Item)
 {	
-	name 				=	"Ozubené kolo!";
+	name 				=	"OzubenÃ© kolo!";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MISSION;	
@@ -79,9 +79,9 @@ INSTANCE ItMi_Stuff_Gearwheel_01(C_Item)
 	visual 				=	"ItMi_Stuff_Gearwheel_01.3ds";
 	material 			=	MAT_METAL;
 	description			=	name;
-	TEXT[0]				=	"Je z rozbité drtièky rudy, která";
-	TEXT[1]				=	"zùstala v opuštìné postranní chodbì";
-	TEXT[2]				=	"Starého dolu.";
+	TEXT[0]				=	"Je z rozbitÃ© drtiÄky rudy, kterÃ¡";
+	TEXT[1]				=	"zÅ¯stala v opuÅ¡tÄ›nÃ© postrannÃ­ chodbÄ›";
+	TEXT[2]				=	"StarÃ©ho dolu.";
 };
 
 //---------------------------------------------------------------------
@@ -89,7 +89,7 @@ INSTANCE ItMi_Stuff_Gearwheel_01(C_Item)
 //---------------------------------------------------------------------
 INSTANCE ItAt_Crawlerqueen(C_Item)
 {	
-	name 					=	"Vajíèko dùlního èerva";
+	name 					=	"VajÃ­Äko dÅ¯lnÃ­ho Äerva";
 	
 	mainflag 				=	ITEM_KAT_NONE;
 	flags 					=	ITEM_MISSION|ITEM_MULTI;	
@@ -100,10 +100,10 @@ INSTANCE ItAt_Crawlerqueen(C_Item)
 	material 				=	MAT_LEATHER;
 
 	description				=	name;
-	TEXT[0]					=	"Tato vajíèka snesla královna";
-	TEXT[1]					=	"dùlních èervù.";
-	TEXT[2]					=	"Obsahují daleko silnìjší vıtaek ne";
-	TEXT[3]					=	"obyèejné èelisti dùlních èervù.";
+	TEXT[0]					=	"Tato vajÃ­Äka snesla krÃ¡lovna";
+	TEXT[1]					=	"dÅ¯lnÃ­ch ÄervÅ¯.";
+	TEXT[2]					=	"ObsahujÃ­ daleko silnÄ›jÅ¡Ã­ vÃ½taÅ¾ek neÅ¾";
+	TEXT[3]					=	"obyÄejnÃ© Äelisti dÅ¯lnÃ­ch ÄervÅ¯.";
 	TEXT[5]					=	NAME_Value;					COUNT[5]	= value;
 };
 
@@ -125,9 +125,9 @@ INSTANCE ItWrFokusbuch(C_Item)
 	scemeName				=	"MAP";
 	on_state[0]				= 	UseItWrFokusbuch;
 	description				=	name;
-	TEXT[0]					=	"V této prastaré knize je pár";
-	TEXT[1]					=	"kouzelnıch zaøíkadel, která se vztahují";
-	TEXT[2]					=	"k pouití takzvanıch ohniskovıch kamenù.";
+	TEXT[0]					=	"V tÃ©to prastarÃ© knize je pÃ¡r";
+	TEXT[1]					=	"kouzelnÃ½ch zaÅ™Ã­kadel, kterÃ¡ se vztahujÃ­";
+	TEXT[2]					=	"k pouÅ¾itÃ­ takzvanÃ½ch ohniskovÃ½ch kamenÅ¯.";
 };
 	FUNC VOID UseItWrFokusbuch()
 	{   
@@ -155,18 +155,18 @@ INSTANCE ItWrFokusbuch(C_Item)
 					Doc_SetFont 	( nDocID, -1, "font_10_book.TGA"	   			); 	// -1 -> all pages 
 					Doc_PrintLine	( nDocID,  0,"Koncentrace sil");
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLines	( nDocID,  0,"Síla zakletá v kameni neustále narùstá a uvolní se prostøednictvím kouzelnického zaøíkadla. Jestli bude její úèinek trvalı èi okamitı, to záleí na vlastním rozváení. ");
+					Doc_PrintLines	( nDocID,  0,"SÃ­la zakletÃ¡ v kameni neustÃ¡le narÅ¯stÃ¡ a uvolnÃ­ se prostÅ™ednictvÃ­m kouzelnickÃ©ho zaÅ™Ã­kadla. Jestli bude jejÃ­ ÃºÄinek trvalÃ½ Äi okamÅ¾itÃ½, to zÃ¡leÅ¾Ã­ na vlastnÃ­m rozvÃ¡Å¾enÃ­. ");
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLines	( nDocID,  0,"Jakmile se jednou síla uvolní, ohniskovı kámen je zproštìn veškeré síly a není nièím ne prázdnou skoøápkou.");
+					Doc_PrintLines	( nDocID,  0,"Jakmile se jednou sÃ­la uvolnÃ­, ohniskovÃ½ kÃ¡men je zproÅ¡tÄ›n veÅ¡kerÃ© sÃ­ly a nenÃ­ niÄÃ­m neÅ¾ prÃ¡zdnou skoÅ™Ã¡pkou.");
 
 					//2.Seite
-					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den Ränder des TGAs aus, links,oben,rechts,unten)
+					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den RÃ¤nder des TGAs aus, links,oben,rechts,unten)
 					Doc_PrintLine	( nDocID,  1,  "");
-					Doc_PrintLines	( nDocID,  1,"Slova, která musí bıt pro uvolnìní síly z ohniska pronesena, jsou známa mnohım znalcùm tajemnıch sil. Dokonce i schopnost vybavit novı artefakt kouzelnou mocí se ji stalo spíše bìnou kouzelnickou praxí ne tajnou vìdou.");
+					Doc_PrintLines	( nDocID,  1,"Slova, kterÃ¡ musÃ­ bÃ½t pro uvolnÄ›nÃ­ sÃ­ly z ohniska pronesena, jsou znÃ¡ma mnohÃ½m znalcÅ¯m tajemnÃ½ch sil. Dokonce i schopnost vybavit novÃ½ artefakt kouzelnou mocÃ­ se jiÅ¾ stalo spÃ­Å¡e bÄ›Å¾nou kouzelnickou praxÃ­ neÅ¾ tajnou vÄ›dou.");
 					Doc_PrintLine	( nDocID,  1,  "");
-					Doc_PrintLines	( nDocID,  1,"Avšak jen nemnozí mají znalosti, kterıch je tøeba k obnovì síly pouitého ohniskového kamene. Tento magickı svitek starıch dob je znamením tìch nejvìtších schopností.");
+					Doc_PrintLines	( nDocID,  1,"AvÅ¡ak jen nemnozÃ­ majÃ­ znalosti, kterÃ½ch je tÅ™eba k obnovÄ› sÃ­ly pouÅ¾itÃ©ho ohniskovÃ©ho kamene. Tento magickÃ½ svitek starÃ½ch dob je znamenÃ­m tÄ›ch nejvÄ›tÅ¡Ã­ch schopnostÃ­.");
 					Doc_PrintLine	( nDocID,  1, "");
-					Doc_PrintLines	( nDocID,  1,"A nyní, ty, jen jsi vyvolenı, otevøi svoji mysl tìm slovùm pradávné moci.");
+					Doc_PrintLines	( nDocID,  1,"A nynÃ­, ty, jenÅ¾ jsi vyvolenÃ½, otevÅ™i svoji mysl tÄ›m slovÅ¯m pradÃ¡vnÃ© moci.");
 					
 					Doc_Show		( nDocID );
 	};

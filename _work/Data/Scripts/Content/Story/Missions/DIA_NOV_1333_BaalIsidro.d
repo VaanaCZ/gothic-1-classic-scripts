@@ -33,7 +33,7 @@ INSTANCE DIA_BaalIsidro_Hello(C_INFO)
 	condition	= DIA_BaalIsidro_Hello_Condition;
 	information	= DIA_BaalIsidro_Hello_Info;
 	permanent	= 0;
-	description = "Nevypad·ö p¯Ìliö spokojenÏ.";
+	description = "Nevypad√°≈° p≈ô√≠li≈° spokojenƒõ.";
 };                       
 
 FUNC INT DIA_BaalIsidro_Hello_Condition()
@@ -43,11 +43,11 @@ FUNC INT DIA_BaalIsidro_Hello_Condition()
 
 FUNC VOID DIA_BaalIsidro_Hello_Info()
 {	
-	AI_Output (other, self,"DIA_BaalIsidro_Hello_15_00"); //Nevypad·ö moc öùastnÏ.
-	AI_Output (self, other,"DIA_BaalIsidro_Hello_03_01"); //TakÈ nejsem!
-	AI_Output (self, other,"DIA_BaalIsidro_Hello_03_02"); //Pot¯ebuju se zbavit celÈ hromady drogy.
-	AI_Output (other, self,"DIA_BaalIsidro_Hello_15_03"); //Ty tady m·ö prod·vat zboûÌ ze SektovnÌho t·bora?
-	AI_Output (self, other,"DIA_BaalIsidro_Hello_03_04"); //Ano. Ale pr·vÏ se nem˘ûu vzchopit.
+	AI_Output (other, self,"DIA_BaalIsidro_Hello_15_00"); //Nevypad√°≈° moc ≈°≈•astnƒõ.
+	AI_Output (self, other,"DIA_BaalIsidro_Hello_03_01"); //Tak√© nejsem!
+	AI_Output (self, other,"DIA_BaalIsidro_Hello_03_02"); //Pot≈ôebuju se zbavit cel√© hromady drogy.
+	AI_Output (other, self,"DIA_BaalIsidro_Hello_15_03"); //Ty tady m√°≈° prod√°vat zbo≈æ√≠ ze Sektovn√≠ho t√°bora?
+	AI_Output (self, other,"DIA_BaalIsidro_Hello_03_04"); //Ano. Ale pr√°vƒõ se nem≈Ø≈æu vzchopit.
 };
 
 // ************************************************************
@@ -61,7 +61,7 @@ INSTANCE DIA_BaalIsidro_TRADE(C_INFO)
 	condition	= DIA_BaalIsidro_TRADE_Condition;
 	information	= DIA_BaalIsidro_TRADE_Info;
 	permanent	= 1;
-	description = "Ukaû, co m·ö.";
+	description = "Uka≈æ, co m√°≈°.";
 	trade 		= 1;
 };                       
 
@@ -75,12 +75,12 @@ FUNC INT DIA_BaalIsidro_TRADE_Condition()
 
 FUNC VOID DIA_BaalIsidro_TRADE_Info()
 {	
-	AI_Output (other, self,"DIA_BaalIsidro_TRADE_15_00"); //Ukaû, co m·ö.
+	AI_Output (other, self,"DIA_BaalIsidro_TRADE_15_00"); //Uka≈æ, co m√°≈°.
 	AI_Output (self, other,"DIA_BaalIsidro_TRADE_03_01"); //Tady...
 };
 
 // ************************************************************
-// 					 Ich verkaufe f¸r dich
+// 					 Ich verkaufe f√ºr dich
 // ************************************************************
 
 INSTANCE DIA_BaalIsidro_GimmeKraut(C_INFO) 
@@ -90,7 +90,7 @@ INSTANCE DIA_BaalIsidro_GimmeKraut(C_INFO)
 	condition	= DIA_BaalIsidro_GimmeKraut_Condition;
 	information	= DIA_BaalIsidro_GimmeKraut_Info;
 	permanent	= 0;
-	description = "Mohl bych ti prodat drogu - samoz¯ejmÏ po dohodÏ.";
+	description = "Mohl bych ti prodat drogu - samoz≈ôejmƒõ po dohodƒõ.";
 };                       
 
 FUNC INT DIA_BaalIsidro_GimmeKraut_Condition()
@@ -103,12 +103,12 @@ FUNC INT DIA_BaalIsidro_GimmeKraut_Condition()
 
 FUNC VOID DIA_BaalIsidro_GimmeKraut_Info()
 {	
-	AI_Output			(other, self,"DIA_BaalIsidro_GimmeKraut_15_00"); //Mohl bych ti prodat drogu - samoz¯ejmÏ po dohodÏ.
-	AI_Output			(self, other,"DIA_BaalIsidro_GimmeKraut_03_01"); //ZapomeÚ na to - nejsem v˘bec tak opil˝. MÏl by ses s tÌm ztratit.
+	AI_Output			(other, self,"DIA_BaalIsidro_GimmeKraut_15_00"); //Mohl bych ti prodat drogu - samoz≈ôejmƒõ po dohodƒõ.
+	AI_Output			(self, other,"DIA_BaalIsidro_GimmeKraut_03_01"); //Zapome≈à na to - nejsem v≈Øbec tak opil√Ω. Mƒõl by ses s t√≠m ztratit.
 
 	Log_CreateTopic		(CH1_DealerJob, LOG_MISSION);
     Log_SetTopicStatus	(CH1_DealerJob, LOG_RUNNING);
-    B_LogEntry			(CH1_DealerJob,"Novic Baal Isidro se cel˝ den mot· v baru na jeze¯e a popÌjÌ. MÏl by prod·vat sv˘j dÌl drogy, ale nedb· na to. Snad bych ho mohl p¯esvÏdËit, aby mÏ to nechal udÏlat. Jak ale na to?"); 
+    B_LogEntry			(CH1_DealerJob,"Novic Baal Isidro se cel√Ω den mot√° v baru na jeze≈ôe a pop√≠j√≠. Mƒõl by prod√°vat sv≈Øj d√≠l drogy, ale nedb√° na to. Snad bych ho mohl p≈ôesvƒõdƒçit, aby mƒõ to nechal udƒõlat. Jak ale na to?"); 
 };
 
 // ************************************************************
@@ -122,7 +122,7 @@ INSTANCE DIA_BaalIsidro_Problem(C_INFO)
 	condition	= DIA_BaalIsidro_Problem_Condition;
 	information	= DIA_BaalIsidro_Problem_Info;
 	permanent	= 0;
-	description = "NÏco ti povÌm - m·ö problÈm. Baal Kagan se postar·, abys byl vymÏnÏn.";
+	description = "Nƒõco ti pov√≠m - m√°≈° probl√©m. Baal Kagan se postar√°, abys byl vymƒõnƒõn.";
 };                       
 
 FUNC INT DIA_BaalIsidro_Problem_Condition()
@@ -135,16 +135,16 @@ FUNC INT DIA_BaalIsidro_Problem_Condition()
 
 FUNC VOID DIA_BaalIsidro_Problem_Info()
 {	
-	AI_Output			(other, self,"DIA_BaalIsidro_Problem_15_00"); //NÏco ti povÌm - m·ö problÈm. Baal Kagan zajistÌ, ûe tÏ vymÏnÌ.
-	AI_Output			(self, other,"DIA_BaalIsidro_Problem_03_01"); //Coûe? Sp·Ë se mnou bude mÌt slitov·nÌ! Pot¯ebuju se toho zboûÌ zbavit...
+	AI_Output			(other, self,"DIA_BaalIsidro_Problem_15_00"); //Nƒõco ti pov√≠m - m√°≈° probl√©m. Baal Kagan zajist√≠, ≈æe tƒõ vymƒõn√≠.
+	AI_Output			(self, other,"DIA_BaalIsidro_Problem_03_01"); //Co≈æe? Sp√°ƒç se mnou bude m√≠t slitov√°n√≠! Pot≈ôebuju se toho zbo≈æ√≠ zbavit...
 	
 	if (BaalIsidro_GotDrink == FALSE)
 	{
-	    B_LogEntry		(CH1_DealerJob,"Baal Isidro byl oËividnÏ zmaten˝, kdyû jsem mu nabÌdl, ûe ho nahradÌm. NestaËilo to vöak k tomu, aby mÏ to nechal udÏlat.");
+	    B_LogEntry		(CH1_DealerJob,"Baal Isidro byl oƒçividnƒõ zmaten√Ω, kdy≈æ jsem mu nab√≠dl, ≈æe ho nahrad√≠m. Nestaƒçilo to v≈°ak k tomu, aby mƒõ to nechal udƒõlat.");
 	}
 	else
 	{
-	    B_LogEntry		(CH1_DealerJob,"Baal Kagan se chyst· opilce Baala Isidra nahradit nÏk˝m jin˝m. MyslÌm, ûe teÔ uû moji nabÌdku p¯ijme!");
+	    B_LogEntry		(CH1_DealerJob,"Baal Kagan se chyst√° opilce Baala Isidra nahradit nƒõk√Ωm jin√Ωm. Mysl√≠m, ≈æe teƒè u≈æ moji nab√≠dku p≈ôijme!");
 	};	
 };
 
@@ -161,7 +161,7 @@ INSTANCE DIA_BaalIsidro_Drink(C_INFO)
 	condition	= DIA_BaalIsidro_Drink_Condition;
 	information	= DIA_BaalIsidro_Drink_Info;
 	permanent	= 1;
-	description = "Tady - dej si na mÏ jeötÏ jednu.";
+	description = "Tady - dej si na mƒõ je≈°tƒõ jednu.";
 };                       
 
 FUNC INT DIA_BaalIsidro_Drink_Condition()
@@ -174,11 +174,11 @@ FUNC INT DIA_BaalIsidro_Drink_Condition()
 
 FUNC VOID DIA_BaalIsidro_Drink_Info()
 {	
-	AI_Output (other, self,"DIA_BaalIsidro_Drink_15_00"); //Tady - dej si na mÏ jeötÏ jednu.
+	AI_Output (other, self,"DIA_BaalIsidro_Drink_15_00"); //Tady - dej si na mƒõ je≈°tƒõ jednu.
 	
 	if ( (Npc_HasItems(other,ItFoBooze)>0) || (Npc_HasItems(other,ItFoBeer)>0) || (Npc_HasItems(other,ItFoWine)>0) )
 	{
-		AI_Output (self, other,"DIA_BaalIsidro_Drink_03_01"); //DÌky, ËlovÏËe. P¯ipÌjÌm na tvoje zdravÌ!
+		AI_Output (self, other,"DIA_BaalIsidro_Drink_03_01"); //D√≠ky, ƒçlovƒõƒçe. P≈ôip√≠j√≠m na tvoje zdrav√≠!
 
 		if 		(Npc_HasItems(other,ItFoBooze))
 		{
@@ -215,11 +215,11 @@ FUNC VOID DIA_BaalIsidro_Drink_Info()
 
 		if	Npc_KnowsInfo(hero,DIA_BaalIsidro_Problem)
 		{
-		    B_LogEntry	(CH1_DealerJob,"PoslednÌ lok mÈ ölechetnÈ nabÌdky zlomil zb˝vajÌcÌ öpetku odporu Baala Isidra. MyslÌm, ûe teÔ uû moji nabÌdku p¯ijme!");
+		    B_LogEntry	(CH1_DealerJob,"Posledn√≠ lok m√© ≈°lechetn√© nab√≠dky zlomil zb√Ωvaj√≠c√≠ ≈°petku odporu Baala Isidra. Mysl√≠m, ≈æe teƒè u≈æ moji nab√≠dku p≈ôijme!");
 		}
 		else
 		{
-		    B_LogEntry	(CH1_DealerJob,"Baal Isidro nadöenÏ p¯ijal pitÌ, ale jeötÏ st·le mi nechce svÏ¯it prodej drogy.");
+		    B_LogEntry	(CH1_DealerJob,"Baal Isidro nad≈°enƒõ p≈ôijal pit√≠, ale je≈°tƒõ st√°le mi nechce svƒõ≈ôit prodej drogy.");
 		};
 	}
 	else
@@ -229,7 +229,7 @@ FUNC VOID DIA_BaalIsidro_Drink_Info()
 };
 
 // ************************************************************
-// 					 ‹brleg's dir!
+// 					 √úbrleg's dir!
 // ************************************************************
 	var int BaalIsidro_DealerJob;
 // ************************************************************
@@ -241,7 +241,7 @@ INSTANCE DIA_BaalIsidro_ThinkAgain(C_INFO)
 	condition	= DIA_BaalIsidro_ThinkAgain_Condition;
 	information	= DIA_BaalIsidro_ThinkAgain_Info;
 	permanent	= 1;
-	description = "P¯em˝ölej o tom - dej mi drogu a o zisk se rozdÏlÌme.";
+	description = "P≈ôem√Ω≈°lej o tom - dej mi drogu a o zisk se rozdƒõl√≠me.";
 };                       
 
 FUNC INT DIA_BaalIsidro_ThinkAgain_Condition()
@@ -254,23 +254,23 @@ FUNC INT DIA_BaalIsidro_ThinkAgain_Condition()
 
 FUNC VOID DIA_BaalIsidro_ThinkAgain_Info()
 {	
-	AI_Output (other, self,"DIA_BaalIsidro_ThinkAgain_15_00"); //P¯em˝ölej o tom - dej mi drogu a o zisk se rozdÏlÌme.
+	AI_Output (other, self,"DIA_BaalIsidro_ThinkAgain_15_00"); //P≈ôem√Ω≈°lej o tom - dej mi drogu a o zisk se rozdƒõl√≠me.
 	
 	if ( (BaalIsidro_GotDrink == TRUE) && Npc_KnowsInfo(hero,DIA_BaalIsidro_Problem) )
 	{
-		AI_Output (self, other,"DIA_BaalIsidro_ThinkAgain_03_01"); //Ach, ËlovÏËe, pot¯ebuju se toho zboûÌ zbavit. NemÏl bys na mÏ koukat jako na bl·zna, jo?
-		AI_Output (other, self,"DIA_BaalIsidro_ThinkAgain_15_02"); //D·v·m ti svÈ slovo.
-		AI_Output (self, other,"DIA_BaalIsidro_ThinkAgain_03_03"); //Dob¯e, tady je to zboûÌ... MÏl bys za nÏj dostat aspoÚ 400 nuget˘. To znamen· po 200 nuget˘ pro kaûdÈho. PoËk·m tady. P¯ijÔ hned, jak budeö mÌt tu rudu.
-		AI_Output (other, self,"DIA_BaalIsidro_ThinkAgain_15_04"); //VÌö, kdo si vezme vÏtöÌ Ë·st?
-		AI_Output (self, other,"DIA_BaalIsidro_ThinkAgain_03_05"); //Pokud vÌm, j· jsem s tÌm zaËal.
-		AI_Output (self, other,"DIA_BaalIsidro_ThinkAgain_03_06"); //CÌtÌm se teÔ mnohem lÌp, kdyû jsem se zbavil toho zboûÌ.
+		AI_Output (self, other,"DIA_BaalIsidro_ThinkAgain_03_01"); //Ach, ƒçlovƒõƒçe, pot≈ôebuju se toho zbo≈æ√≠ zbavit. Nemƒõl bys na mƒõ koukat jako na bl√°zna, jo?
+		AI_Output (other, self,"DIA_BaalIsidro_ThinkAgain_15_02"); //D√°v√°m ti sv√© slovo.
+		AI_Output (self, other,"DIA_BaalIsidro_ThinkAgain_03_03"); //Dob≈ôe, tady je to zbo≈æ√≠... Mƒõl bys za nƒõj dostat aspo≈à 400 nuget≈Ø. To znamen√° po 200 nuget≈Ø pro ka≈æd√©ho. Poƒçk√°m tady. P≈ôijƒè hned, jak bude≈° m√≠t tu rudu.
+		AI_Output (other, self,"DIA_BaalIsidro_ThinkAgain_15_04"); //V√≠≈°, kdo si vezme vƒõt≈°√≠ ƒç√°st?
+		AI_Output (self, other,"DIA_BaalIsidro_ThinkAgain_03_05"); //Pokud v√≠m, j√° jsem s t√≠m zaƒçal.
+		AI_Output (self, other,"DIA_BaalIsidro_ThinkAgain_03_06"); //C√≠t√≠m se teƒè mnohem l√≠p, kdy≈æ jsem se zbavil toho zbo≈æ√≠.
 		
 		BaalIsidro_DealerJob = LOG_RUNNING;
-	    B_LogEntry			(CH1_DealerJob,"Baal Isidro mi p¯edal d·vku lodyh drogy. Pokud vöechnu drogu prod·m, d· mi polovinu zisku, coû ËinÌ 200 nuget˘.");	
+	    B_LogEntry			(CH1_DealerJob,"Baal Isidro mi p≈ôedal d√°vku lodyh drogy. Pokud v≈°echnu drogu prod√°m, d√° mi polovinu zisku, co≈æ ƒçin√≠ 200 nuget≈Ø.");	
 	
-		//Item¸bergabe
+		//Item√ºbergabe
 		CreateInvItems		(self,			itmijoint_1, 40);
-		B_GiveInvItems  	(self, other,	itmijoint_1, 50);//Notwendig zur Textausgabe "50 Items ¸bergeben", wird sofort ausgeglichen
+		B_GiveInvItems  	(self, other,	itmijoint_1, 50);//Notwendig zur Textausgabe "50 Items √ºbergeben", wird sofort ausgeglichen
 		Npc_RemoveInvItems	(self,			itmijoint_2, 20);
 		Npc_RemoveInvItems	(self,			itmijoint_3, 20);
 		Npc_RemoveInvItems	(other,			itmijoint_1, 40);
@@ -281,7 +281,7 @@ FUNC VOID DIA_BaalIsidro_ThinkAgain_Info()
 	}
 	else
 	{
-		AI_Output (self, other,"DIA_BaalIsidro_REFUSE_ThinkAgain_03_00"); //Ne, ËlovÏËe. MnÏ se to poda¯Ì...
+		AI_Output (self, other,"DIA_BaalIsidro_REFUSE_ThinkAgain_03_00"); //Ne, ƒçlovƒõƒçe. Mnƒõ se to poda≈ô√≠...
 	};
 };
 
@@ -296,7 +296,7 @@ INSTANCE DIA_BaalIsidro_RUNNING(C_INFO)
 	condition	= DIA_BaalIsidro_RUNNING_Condition;
 	information	= DIA_BaalIsidro_RUNNING_Info;
 	permanent	= 0;
-	description = "Prodal jsem tu drogu. Tady je tv˝ch 200 nuget˘.";
+	description = "Prodal jsem tu drogu. Tady je tv√Ωch 200 nuget≈Ø.";
 };                       
 
 FUNC INT DIA_BaalIsidro_RUNNING_Condition()
@@ -310,24 +310,24 @@ FUNC INT DIA_BaalIsidro_RUNNING_Condition()
 FUNC VOID DIA_BaalIsidro_RUNNING_Info()
 {	
 	AI_Output				(other, self,"DIA_BaalIsidro_RUNNING_15_00"); //Prodal jsem tu drogu.
-	AI_Output				(self, other,"DIA_BaalIsidro_RUNNING_03_01"); //A co m˝ch 200 nuget˘?
+	AI_Output				(self, other,"DIA_BaalIsidro_RUNNING_03_01"); //A co m√Ωch 200 nuget≈Ø?
 	
 	if (Npc_HasItems(other,itminugget)>=200)
 	{
 		AI_Output			(other, self,"DIA_BaalIsidro_RUNNING_15_02"); //Tady jsou.
-		AI_Output			(self, other,"DIA_BaalIsidro_RUNNING_03_03"); //Dob¯e... TeÔ uû nikdy nebudu Baala Kagana proklÌnat. (drsn˝ smÌch)
-		AI_Output			(self, other,"DIA_BaalIsidro_RUNNING_03_04"); //Obchodovat s tebou byl dobr˝ n·pad.
+		AI_Output			(self, other,"DIA_BaalIsidro_RUNNING_03_03"); //Dob≈ôe... Teƒè u≈æ nikdy nebudu Baala Kagana prokl√≠nat. (drsn√Ω sm√≠ch)
+		AI_Output			(self, other,"DIA_BaalIsidro_RUNNING_03_04"); //Obchodovat s tebou byl dobr√Ω n√°pad.
 
 		B_GiveInvItems		(hero, self, ItMiNugget, 200);
 		BaalIsidro_DealerJob = LOG_SUCCESS;
 		
 		Log_SetTopicStatus	(CH1_DealerJob, LOG_SUCCESS);
-	    B_LogEntry			(CH1_DealerJob,"Baal Isidro se nemusel nam·hat, aby dostal sv˝ch 200 nuget˘.");	
+	    B_LogEntry			(CH1_DealerJob,"Baal Isidro se nemusel nam√°hat, aby dostal sv√Ωch 200 nuget≈Ø.");	
 	    B_GiveXP			(XP_BaalIsidroPayShare);
 	}
 	else
 	{
-		AI_Output			(other, self,"DIA_BaalIsidro_RUNNING_NoOre_15_05"); //Nem·m to u sebe.
+		AI_Output			(other, self,"DIA_BaalIsidro_RUNNING_NoOre_15_05"); //Nem√°m to u sebe.
 		AI_Output			(self, other,"DIA_BaalIsidro_RUNNING_NoOre_03_06"); //Tak si to obstarej!
 		AI_StopProcessInfos	(self);
 	};

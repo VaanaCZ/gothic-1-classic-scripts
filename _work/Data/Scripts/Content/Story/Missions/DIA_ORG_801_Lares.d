@@ -53,8 +53,8 @@ FUNC VOID ORG_801_Lares_YouHere_Info()
 	if ( (Npc_IsInState(Roscoe, ZS_MagicSleep)) || (Npc_GetTempAttitude(Roscoe,other)==ATT_FRIENDLY) )
 	{
 		AI_Output	(self, other,"ORG_801_Lares_YouHere_11_00"); //Jak ses sem dostal? Co se stalo s Roscoem?
-		AI_Output	(other, self,"ORG_801_Lares_YouHere_15_01"); //Nemìl chu mì zastavit.
-		AI_Output	(self, other,"ORG_801_Lares_YouHere_11_02"); //Co chceš?
+		AI_Output	(other, self,"ORG_801_Lares_YouHere_15_01"); //NemÄ›l chuÅ¥ mÄ› zastavit.
+		AI_Output	(self, other,"ORG_801_Lares_YouHere_11_02"); //Co chceÅ¡?
 		Roscoe.aivar[AIV_PASSGATE] = TRUE;
 		Lares_vorbeigemogelt = TRUE;
 		B_GiveXP	(XP_CheatedIntoLaresHut);
@@ -79,7 +79,7 @@ INSTANCE ORG_801_Lares_WannaJoin (C_INFO)
 	condition	= ORG_801_Lares_WannaJoin_Condition;
 	information	= ORG_801_Lares_WannaJoin_Info;
 	permanent	= 0;
-	description = "Chci se pøidat k tvojí tlupì!";
+	description = "Chci se pÅ™idat k tvojÃ­ tlupÄ›!";
 };                       
 
 FUNC int ORG_801_Lares_WannaJoin_Condition()
@@ -93,8 +93,8 @@ FUNC int ORG_801_Lares_WannaJoin_Condition()
 
 FUNC VOID ORG_801_Lares_WannaJoin_Info()
 {
-	AI_Output (other, self,"ORG_801_Lares_WannaJoin_15_00"); //Chci se pøidat k tvojí tlupì!
-	AI_Output (self, other,"ORG_801_Lares_WannaJoin_11_01"); //Coe? Proto ses tady ukázal?
+	AI_Output (other, self,"ORG_801_Lares_WannaJoin_15_00"); //Chci se pÅ™idat k tvojÃ­ tlupÄ›!
+	AI_Output (self, other,"ORG_801_Lares_WannaJoin_11_01"); //CoÅ¾e? Proto ses tady ukÃ¡zal?
 };
 
 // ****************************** 
@@ -110,7 +110,7 @@ INSTANCE   ORG_801_Lares_BringList (C_INFO)
 	condition	= ORG_801_Lares_BringList_Condition;
 	information	= ORG_801_Lares_BringList_Info;
 	permanent	= 0;
-	description = "Mám s sebou seznam poadavkù ze Starého dolu.";
+	description = "MÃ¡m s sebou seznam poÅ¾adavkÅ¯ ze StarÃ©ho dolu.";
 };                       
 
 FUNC int ORG_801_Lares_BringList_Condition()
@@ -123,14 +123,14 @@ FUNC int ORG_801_Lares_BringList_Condition()
 
 FUNC VOID ORG_801_Lares_BringList_Info()
 {
-	AI_Output (other, self,"ORG_801_Lares_BringList_15_00"); //Mám s sebou seznam poadavkù ze Starého dolu.
-	AI_Output (self, other,"ORG_801_Lares_BringList_11_01"); //Ne! Tomu nevìøím! Musím ale øíci, e máš pevné nervy!
-	AI_Output (self, other,"ORG_801_Lares_BringList_11_02"); //Uka mi to!
+	AI_Output (other, self,"ORG_801_Lares_BringList_15_00"); //MÃ¡m s sebou seznam poÅ¾adavkÅ¯ ze StarÃ©ho dolu.
+	AI_Output (self, other,"ORG_801_Lares_BringList_11_01"); //Ne! Tomu nevÄ›Å™Ã­m! MusÃ­m ale Å™Ã­ci, Å¾e mÃ¡Å¡ pevnÃ© nervy!
+	AI_Output (self, other,"ORG_801_Lares_BringList_11_02"); //UkaÅ¾ mi to!
 	AI_Output (other, self,"ORG_801_Lares_BringList_15_03"); //Tady je...
 	B_UseFakeScroll();
-	AI_Output (self, other,"ORG_801_Lares_BringList_11_04"); //Opravdu! Víš, co s tím udìláme? Ještì tam nìco pøipíšeme a pošleme ten seznam zpátky do Starého tábora!
-	AI_Output (self, other,"ORG_801_Lares_BringList_11_05"); //Potom, a ty vìci pøinesou do dolu, pøepadneme je a všechno si nacpeme do pytlù! Nebude to trvat ani minutku... Ha! Tady je ten seznam. Víš, co máš dìlat.
-	//AI_Output (self, other,"ORG_801_Lares_BringList_11_06"); //Das haben wir gleich ... So! Hier ist die Liste. Du weißt, was du zu tun hast.
+	AI_Output (self, other,"ORG_801_Lares_BringList_11_04"); //Opravdu! VÃ­Å¡, co s tÃ­m udÄ›lÃ¡me? JeÅ¡tÄ› tam nÄ›co pÅ™ipÃ­Å¡eme a poÅ¡leme ten seznam zpÃ¡tky do StarÃ©ho tÃ¡bora!
+	AI_Output (self, other,"ORG_801_Lares_BringList_11_05"); //Potom, aÅ¾ ty vÄ›ci pÅ™inesou do dolu, pÅ™epadneme je a vÅ¡echno si nacpeme do pytlÅ¯! Nebude to trvat ani minutku... Ha! Tady je ten seznam. VÃ­Å¡, co mÃ¡Å¡ dÄ›lat.
+	//AI_Output (self, other,"ORG_801_Lares_BringList_11_06"); //Das haben wir gleich ... So! Hier ist die Liste. Du weiÃŸt, was du zu tun hast.
 	
 	Points_NC = Points_NC + 10;
 	
@@ -143,7 +143,7 @@ FUNC VOID ORG_801_Lares_BringList_Info()
 		Log_CreateTopic		(CH1_JoinNC, LOG_MISSION);
 		Log_SetTopicStatus	(CH1_JoinNC, LOG_RUNNING);
 	};
-	B_LogEntry				(CH1_JoinNC,"Lares, vùdce banditù, byl velmi pøekvapen, kdy uvidìl seznam poadavkù. Pøipsal další poloky a já jej teï nesu Diegovi.");		
+	B_LogEntry				(CH1_JoinNC,"Lares, vÅ¯dce banditÅ¯, byl velmi pÅ™ekvapen, kdyÅ¾ uvidÄ›l seznam poÅ¾adavkÅ¯. PÅ™ipsal dalÅ¡Ã­ poloÅ¾ky a jÃ¡ jej teÄ nesu Diegovi.");		
 	B_GiveXP				(XP_GiveListToLares);	
 };
 
@@ -158,7 +158,7 @@ INSTANCE ORG_801_Lares_BringListBack (C_INFO)
 	condition	= ORG_801_Lares_BringListBack_Condition;
 	information	= ORG_801_Lares_BringListBack_Info;
 	permanent	= 0;
-	description = "Pøinesl jsem Diegovi seznam.";
+	description = "PÅ™inesl jsem Diegovi seznam.";
 };                       
 
 FUNC int ORG_801_Lares_BringListBack_Condition()
@@ -171,13 +171,13 @@ FUNC int ORG_801_Lares_BringListBack_Condition()
 
 FUNC VOID ORG_801_Lares_BringListBack_Info()
 {
-	AI_Output			(other, self,"ORG_801_Lares_BringListBack_15_00"); //Pøinesl jsem Diegovi seznam.
-	AI_Output			(self, other,"ORG_801_Lares_BringListBack_11_01"); //Dobøe! Rozmístil jsem pár muù po cestì ke Starému dolu. Thorusovi stráci u teï leí mrtví v lese.
+	AI_Output			(other, self,"ORG_801_Lares_BringListBack_15_00"); //PÅ™inesl jsem Diegovi seznam.
+	AI_Output			(self, other,"ORG_801_Lares_BringListBack_11_01"); //DobÅ™e! RozmÃ­stil jsem pÃ¡r muÅ¾Å¯ po cestÄ› ke StarÃ©mu dolu. Thorusovi strÃ¡Å¾ci uÅ¾ teÄ leÅ¾Ã­ mrtvÃ­ v lese.
 		
 	Points_NC = Points_NC + 10;
 	Lares_BringListBack = LOG_SUCCESS;
 
-	B_LogEntry			(CH1_JoinNC,"Lares ji pøepadl konvoje Starého tábora. Zøejmì se mu nechtìlo èekat, dokud... nebo spíše POKUD se vrátím. ");		
+	B_LogEntry			(CH1_JoinNC,"Lares jiÅ¾ pÅ™epadl konvoje StarÃ©ho tÃ¡bora. ZÅ™ejmÄ› se mu nechtÄ›lo Äekat, dokud... nebo spÃ­Å¡e POKUD se vrÃ¡tÃ­m. ");		
 
 	B_GiveXP			(XP_ReportListDeliveryToLares);
 };
@@ -193,7 +193,7 @@ INSTANCE   ORG_801_Lares_BringListAnteil (C_INFO)
 	condition	= ORG_801_Lares_BringListAnteil_Condition;
 	information	= ORG_801_Lares_BringListAnteil_Info;
 	permanent	= 0;
-	description = "U pøepadli konvoj? Kde je mùj podíl?";
+	description = "UÅ¾ pÅ™epadli konvoj? Kde je mÅ¯j podÃ­l?";
 };                       
 
 FUNC int ORG_801_Lares_BringListAnteil_Condition()
@@ -206,17 +206,17 @@ FUNC int ORG_801_Lares_BringListAnteil_Condition()
 
 FUNC VOID ORG_801_Lares_BringListAnteil_Info()
 {
-	AI_Output (other, self,"ORG_801_Lares_BringListAnteil_15_00"); //U pøepadli konvoj? Kde je mùj podíl?
-	AI_Output (self, other,"ORG_801_Lares_BringListAnteil_11_01"); //Bì za Gornem. Nìco ti dá...
+	AI_Output (other, self,"ORG_801_Lares_BringListAnteil_15_00"); //UÅ¾ pÅ™epadli konvoj? Kde je mÅ¯j podÃ­l?
+	AI_Output (self, other,"ORG_801_Lares_BringListAnteil_11_01"); //BÄ›Å¾ za Gornem. NÄ›co ti dÃ¡...
 	var C_NPC gorn; gorn = Hlp_GetNpc(PC_Fighter);
 	if (gorn.aivar[AIV_FINDABLE]==TRUE)
 	{
-		AI_Output (other, self,"ORG_801_Lares_BringListAnteil_15_02"); //Znám Gorna. Není èlenem tlupy. Je to oldák, co pracuje pro mágy!
+		AI_Output (other, self,"ORG_801_Lares_BringListAnteil_15_02"); //ZnÃ¡m Gorna. NenÃ­ Älenem tlupy. Je to Å¾oldÃ¡k, co pracuje pro mÃ¡gy!
 		AI_Output (self, other,"ORG_801_Lares_BringListAnteil_11_03"); //Jo, to je pravda!
-		AI_Output (other, self,"ORG_801_Lares_BringListAnteil_15_04"); //Je do tohohle podniku zapojenı?
-		AI_Output (self, other,"ORG_801_Lares_BringListAnteil_11_05"); //Kdo moc ví, není pro nás dobrı. Bì za ním a vyber si svùj podíl.
+		AI_Output (other, self,"ORG_801_Lares_BringListAnteil_15_04"); //Je do tohohle podniku zapojenÃ½?
+		AI_Output (self, other,"ORG_801_Lares_BringListAnteil_11_05"); //Kdo moc vÃ­, nenÃ­ pro nÃ¡s dobrÃ½. BÄ›Å¾ za nÃ­m a vyber si svÅ¯j podÃ­l.
 	};
-	B_LogEntry(CH1_JoinNC,"oldák Gorn se tajnì úèastnil útoku na konvoj. Dostanu od nìj svùj podíl.");
+	B_LogEntry(CH1_JoinNC,"Å½oldÃ¡k Gorn se tajnÄ› ÃºÄastnil Ãºtoku na konvoj. Dostanu od nÄ›j svÅ¯j podÃ­l.");
 	gorn.aivar[AIV_FINDABLE]==TRUE;
 };
 
@@ -231,7 +231,7 @@ INSTANCE ORG_801_Lares_MordragSentMe (C_INFO)
 	condition	= ORG_801_Lares_MordragSentMe_Condition;
 	information	= ORG_801_Lares_MordragSentMe_Info;
 	permanent	= 0;
-	description = "Poslal mì Mordrag. Dal mi pro tebe prsten.";
+	description = "Poslal mÄ› Mordrag. Dal mi pro tebe prsten.";
 };                       
 
 FUNC int ORG_801_Lares_MordragSentMe_Condition()
@@ -248,11 +248,11 @@ FUNC VOID ORG_801_Lares_MordragSentMe_Info()
 {
     B_GiveInvItems (other,self, MordragsRing, 1);
     
-	AI_Output (other, self,"ORG_801_Lares_MordragSentMe_15_00"); //Poslal mì Mordrag. Dal mi pro tebe prsten.
-	AI_Output (self, other,"ORG_801_Lares_MordragSentMe_11_01"); //Nádhernı kousek! To je èást zdejšího obvyklého postupu, e díl koøisti pøipadne vùdci tlupy.
-	AI_Output (self, other,"ORG_801_Lares_MordragSentMe_11_02"); //Ale to, e on dal prsten TOBÌ, svìdèí o tom, e má o tobì dobré mínìní.
-	AI_Output (self, other,"ORG_801_Lares_MordragSentMe_11_03"); //Chci, abys za ním zašel a nìco mu vyøídil.
-	AI_Output (self, other,"ORG_801_Lares_MordragSentMe_11_04"); //Øekni mu, e chci mít nìkoho v Sektovním táboøe. Bratrstvo plánuje nìco velkého - a já chci vìdìt pøesnì, co to bude.
+	AI_Output (other, self,"ORG_801_Lares_MordragSentMe_15_00"); //Poslal mÄ› Mordrag. Dal mi pro tebe prsten.
+	AI_Output (self, other,"ORG_801_Lares_MordragSentMe_11_01"); //NÃ¡dhernÃ½ kousek! To je ÄÃ¡st zdejÅ¡Ã­ho obvyklÃ©ho postupu, Å¾e dÃ­l koÅ™isti pÅ™ipadne vÅ¯dci tlupy.
+	AI_Output (self, other,"ORG_801_Lares_MordragSentMe_11_02"); //Ale to, Å¾e on dal prsten TOBÄš, svÄ›dÄÃ­ o tom, Å¾e mÃ¡ o tobÄ› dobrÃ© mÃ­nÄ›nÃ­.
+	AI_Output (self, other,"ORG_801_Lares_MordragSentMe_11_03"); //Chci, abys za nÃ­m zaÅ¡el a nÄ›co mu vyÅ™Ã­dil.
+	AI_Output (self, other,"ORG_801_Lares_MordragSentMe_11_04"); //Å˜ekni mu, Å¾e chci mÃ­t nÄ›koho v SektovnÃ­m tÃ¡boÅ™e. Bratrstvo plÃ¡nuje nÄ›co velkÃ©ho - a jÃ¡ chci vÄ›dÄ›t pÅ™esnÄ›, co to bude.
 	
 	Lares_InformMordrag = LOG_RUNNING;
 		
@@ -261,7 +261,7 @@ FUNC VOID ORG_801_Lares_MordragSentMe_Info()
 		Log_CreateTopic		(CH1_JoinNC, LOG_MISSION);
 		Log_SetTopicStatus	(CH1_JoinNC, LOG_RUNNING);
 	};
-	B_LogEntry				(CH1_JoinNC,"Lares mì vyslal za Mordragem. Chce, abych mu øekl, e do Sektáøského tábora bude vyslán zvìd, aby zjistil, co chystá Bratrstvo.");	
+	B_LogEntry				(CH1_JoinNC,"Lares mÄ› vyslal za Mordragem. Chce, abych mu Å™ekl, Å¾e do SektÃ¡Å™skÃ©ho tÃ¡bora bude vyslÃ¡n zvÄ›d, aby zjistil, co chystÃ¡ Bratrstvo.");	
 	B_GiveXP				(XP_GiveRingToLares);	
 		
 	Points_NC = Points_NC + 10;
@@ -278,7 +278,7 @@ INSTANCE   ORG_801_Lares_Vorbeigemogelt (C_INFO)
 	condition	= ORG_801_Lares_Vorbeigemogelt_Condition;
 	information	= ORG_801_Lares_Vorbeigemogelt_Info;
 	permanent	= 0;
-	description = "Podaøilo se mi dostat pøes tvoje stráe.";
+	description = "PodaÅ™ilo se mi dostat pÅ™es tvoje strÃ¡Å¾e.";
 };                       
 
 FUNC int  ORG_801_Lares_Vorbeigemogelt_Condition()
@@ -291,8 +291,8 @@ FUNC int  ORG_801_Lares_Vorbeigemogelt_Condition()
 
 FUNC VOID  ORG_801_Lares_Vorbeigemogelt_Info()
 {
-	AI_Output (other, self,"ORG_801_Lares_Vorbeigemogelt_15_00"); //Podaøilo se mi dostat pøes tvoje stráe.
-	AI_Output (self, other,"ORG_801_Lares_Vorbeigemogelt_11_01"); //To je v poøádku. To ale samo o sobì nestaèí.
+	AI_Output (other, self,"ORG_801_Lares_Vorbeigemogelt_15_00"); //PodaÅ™ilo se mi dostat pÅ™es tvoje strÃ¡Å¾e.
+	AI_Output (self, other,"ORG_801_Lares_Vorbeigemogelt_11_01"); //To je v poÅ™Ã¡dku. To ale samo o sobÄ› nestaÄÃ­.
 		
 	Points_NC = Points_NC + 10;
 };
@@ -310,7 +310,7 @@ INSTANCE   ORG_801_Lares_GetKraut (C_INFO)
 	condition	= ORG_801_Lares_GetKraut_Condition;
 	information	= ORG_801_Lares_GetKraut_Info;
 	permanent	= 0;
-	description = "Co mám ještì udìlat?";
+	description = "Co mÃ¡m jeÅ¡tÄ› udÄ›lat?";
 };                       
 
 FUNC int  ORG_801_Lares_GetKraut_Condition()
@@ -323,17 +323,17 @@ FUNC int  ORG_801_Lares_GetKraut_Condition()
 
 FUNC VOID  ORG_801_Lares_GetKraut_Info()
 {
-	AI_Output (other, self,"ORG_801_Lares_GetKraut_15_00"); //Co mám ještì udìlat?
-	AI_Output (self, other,"ORG_801_Lares_GetKraut_11_01"); //Baal Isidro ze Sektovního tábora má u sebe drogu v cenì aspoò 400 nugetù. Chci ji od nìj mít. Je mi jedno, jak to provedeš.
+	AI_Output (other, self,"ORG_801_Lares_GetKraut_15_00"); //Co mÃ¡m jeÅ¡tÄ› udÄ›lat?
+	AI_Output (self, other,"ORG_801_Lares_GetKraut_11_01"); //Baal Isidro ze SektovnÃ­ho tÃ¡bora mÃ¡ u sebe drogu v cenÄ› aspoÅˆ 400 nugetÅ¯. Chci ji od nÄ›j mÃ­t. Je mi jedno, jak to provedeÅ¡.
 	
 	if ( (BaalIsidro_DealerJob==LOG_RUNNING) || (BaalIsidro_DealerJob==LOG_SUCCESS) )
 	{
-		AI_Output (other, self,"ORG_801_Lares_GetKraut_15_02"); //Jestli myslíš tu velkou hromadu drogy, tak tu u mám.
-		AI_Output (self, other,"ORG_801_Lares_GetKraut_11_03"); //Vypadá to, e jsi skuteènì èipernı!
+		AI_Output (other, self,"ORG_801_Lares_GetKraut_15_02"); //Jestli myslÃ­Å¡ tu velkou hromadu drogy, tak tu uÅ¾ mÃ¡m.
+		AI_Output (self, other,"ORG_801_Lares_GetKraut_11_03"); //VypadÃ¡ to, Å¾e jsi skuteÄnÄ› ÄipernÃ½!
 	};
 	
-	AI_Output (self, other,"ORG_801_Lares_GetKraut_11_04"); //Jestli tu drogu máš, prodej ji. Pøines mi 400 nugetù.
-	AI_Output (self, other,"ORG_801_Lares_GetKraut_11_05"); //Pak si znovu promluvíme o tvém pøijetí do tlupy.
+	AI_Output (self, other,"ORG_801_Lares_GetKraut_11_04"); //Jestli tu drogu mÃ¡Å¡, prodej ji. PÅ™ines mi 400 nugetÅ¯.
+	AI_Output (self, other,"ORG_801_Lares_GetKraut_11_05"); //Pak si znovu promluvÃ­me o tvÃ©m pÅ™ijetÃ­ do tlupy.
 	Lares_Get400Ore = LOG_RUNNING;
 	
 	if	(Npc_GetTrueGuild(hero) == GIL_NONE)
@@ -341,7 +341,7 @@ FUNC VOID  ORG_801_Lares_GetKraut_Info()
 		Log_CreateTopic		(CH1_JoinNC, LOG_MISSION);
 		Log_SetTopicStatus	(CH1_JoinNC, LOG_RUNNING);
 	};
-	B_LogEntry				(CH1_JoinNC,"Mám pøevzít drogu Baala Isidra a prodat ji za 400 nugetù.Vıtìek dostane Lares.");	
+	B_LogEntry				(CH1_JoinNC,"MÃ¡m pÅ™evzÃ­t drogu Baala Isidra a prodat ji za 400 nugetÅ¯.VÃ½tÄ›Å¾ek dostane Lares.");	
 };
 
 // ****************************** 
@@ -355,7 +355,7 @@ INSTANCE   ORG_801_Lares_400Ore (C_INFO)
 	condition	= ORG_801_Lares_400Ore_Condition;
 	information	= ORG_801_Lares_400Ore_Info;
 	permanent	= 1;
-	description = "Mám tìch 400 nugetù.";
+	description = "MÃ¡m tÄ›ch 400 nugetÅ¯.";
 };                       
 
 FUNC int  ORG_801_Lares_400Ore_Condition()
@@ -368,20 +368,20 @@ FUNC int  ORG_801_Lares_400Ore_Condition()
 
 FUNC VOID  ORG_801_Lares_400Ore_Info()
 {
-	AI_Output			(other, self,"ORG_801_Lares_400Ore_15_00"); //Mám tìch 400 nugetù.
+	AI_Output			(other, self,"ORG_801_Lares_400Ore_15_00"); //MÃ¡m tÄ›ch 400 nugetÅ¯.
 	if (Npc_HasItems(other,itminugget)>=400)
 	{
-		AI_Output		(self, other,"ORG_801_Lares_400Ore_11_01"); //Vıbornì! Velmi dobøe! Myslím, e to by mìlo staèit.
+		AI_Output		(self, other,"ORG_801_Lares_400Ore_11_01"); //VÃ½bornÄ›! Velmi dobÅ™e! MyslÃ­m, Å¾e to by mÄ›lo staÄit.
 		Lares_Get400Ore = LOG_SUCCESS;
 		Points_NC = Points_NC + 10;
 		
 		B_GiveInvItems	(other, self, ItMiNugget, 400);
-	    B_LogEntry		(CH1_JoinNC,"Lares byl zjevnì spokojenı, kdy jsem mu pøedal tìch 400 nugetù, které jsem utril prodejem drogy Baala Isidra.");	
+	    B_LogEntry		(CH1_JoinNC,"Lares byl zjevnÄ› spokojenÃ½, kdyÅ¾ jsem mu pÅ™edal tÄ›ch 400 nugetÅ¯, kterÃ© jsem utrÅ¾il prodejem drogy Baala Isidra.");	
 		B_GiveXP		(XP_BaalIsidroPayLares);	
 	}
 	else
 	{
-		AI_Output		(self, other,"ORG_801_Lares_400Ore_NOORE_11_00"); //Poèítej znovu. Doufám, e jsi neutratil polovinu za chlast.
+		AI_Output		(self, other,"ORG_801_Lares_400Ore_NOORE_11_00"); //PoÄÃ­tej znovu. DoufÃ¡m, Å¾e jsi neutratil polovinu za chlast.
 	};
 };
 
@@ -396,7 +396,7 @@ INSTANCE   ORG_801_Lares_Reicht (C_INFO)
 	condition	= ORG_801_Lares_Reicht_Condition;
 	information	= ORG_801_Lares_Reicht_Info;
 	permanent	= 1;
-	description = "Staèí to, abych se mohl pøidat?";
+	description = "StaÄÃ­ to, abych se mohl pÅ™idat?";
 };                       
 
 FUNC int  ORG_801_Lares_Reicht_Condition()
@@ -412,12 +412,12 @@ FUNC int  ORG_801_Lares_Reicht_Condition()
 
 FUNC VOID  ORG_801_Lares_Reicht_Info()
 {
-	AI_Output (other, self,"ORG_801_Lares_Reicht_15_00"); //Staèí to, abych se mohl pøidat?
+	AI_Output (other, self,"ORG_801_Lares_Reicht_15_00"); //StaÄÃ­ to, abych se mohl pÅ™idat?
 	
 	if ( (Points_NC >= 30) && (hero.level >= 5) )
 	{
-		AI_Output (self, other,"ORG_801_Lares_Reicht_AUFNAHME_11_00"); //To bych øekl!
-		AI_Output (self, other,"ORG_801_Lares_Reicht_AUFNAHME_11_01"); //A mám pro tebe dárek. Lepší zbroj. Není to moc, ale vydìlal sis na ni.
+		AI_Output (self, other,"ORG_801_Lares_Reicht_AUFNAHME_11_00"); //To bych Å™ekl!
+		AI_Output (self, other,"ORG_801_Lares_Reicht_AUFNAHME_11_01"); //A mÃ¡m pro tebe dÃ¡rek. LepÅ¡Ã­ zbroj. NenÃ­ to moc, ale vydÄ›lal sis na ni.
 	
 		hero.guild = GIL_ORG;
 		Npc_SetTrueGuild	(hero,GIL_ORG );
@@ -430,17 +430,17 @@ FUNC VOID  ORG_801_Lares_Reicht_Info()
 		AI_EquipBestArmor	(hero);
 		B_GiveXP			(XP_BecomeBandit);	
 
-		B_LogEntry			(CH1_JoinNC,"Lares mì pøijal za èlena své tlupy. Teï je Novı tábor mım domovem!");
+		B_LogEntry			(CH1_JoinNC,"Lares mÄ› pÅ™ijal za Älena svÃ© tlupy. TeÄ je NovÃ½ tÃ¡bor mÃ½m domovem!");
 		Log_SetTopicStatus	(CH1_JoinNC,	LOG_SUCCESS);
 
 		// Canceln der anderen Aufnahmen
 		Log_CreateTopic		(CH1_JoinOC,	LOG_MISSION);
 		Log_SetTopicStatus	(CH1_JoinOC,	LOG_FAILED);
-		B_LogEntry			(CH1_JoinOC,"Èlen Laresovy tlupy se nemùe pøidat ke Starému táboru. To je nemoné.");
+		B_LogEntry			(CH1_JoinOC,"ÄŒlen Laresovy tlupy se nemÅ¯Å¾e pÅ™idat ke StarÃ©mu tÃ¡boru. To je nemoÅ¾nÃ©.");
 		
 		Log_CreateTopic		(CH1_JoinPsi,	LOG_MISSION);
 		Log_SetTopicStatus	(CH1_JoinPsi,	LOG_FAILED);
-		B_LogEntry			(CH1_JoinPsi,"Bratrstvo se bude muset beze mì obejít, protoe jsem nyní doma v Novém táboøe.");
+		B_LogEntry			(CH1_JoinPsi,"Bratrstvo se bude muset beze mÄ› obejÃ­t, protoÅ¾e jsem nynÃ­ doma v NovÃ©m tÃ¡boÅ™e.");
 		
 		Log_SetTopicStatus	(CH1_LostNek,	LOG_FAILED);
 		Log_SetTopicStatus	(CH1_FiskNewDealer,	LOG_FAILED);
@@ -452,13 +452,13 @@ FUNC VOID  ORG_801_Lares_Reicht_Info()
 	{
 		if (Npc_KnowsInfo(Hero, ORG_801_Lares_MordragSentMe))
 		{
-			AI_Output (self, other,"ORG_801_Lares_Reicht_11_02"); //Mordrag se za tebe pøimluvil.
+			AI_Output (self, other,"ORG_801_Lares_Reicht_11_02"); //Mordrag se za tebe pÅ™imluvil.
 		};
 		if (Npc_KnowsInfo(Hero, ORG_801_Lares_BringList))
 		{
-			AI_Output (self, other,"ORG_801_Lares_Reicht_11_03"); //Stal jsi se oblíbenım od okamiku, kdy jsi sem donesl ten seznam.
+			AI_Output (self, other,"ORG_801_Lares_Reicht_11_03"); //Stal jsi se oblÃ­benÃ½m od okamÅ¾iku, kdy jsi sem donesl ten seznam.
 		};
-		AI_Output (self, other,"ORG_801_Lares_Reicht_11_04"); //Nejsi ale ještì pøipravenı. Proveï své úkoly.
+		AI_Output (self, other,"ORG_801_Lares_Reicht_11_04"); //Nejsi ale jeÅ¡tÄ› pÅ™ipravenÃ½. ProveÄ svÃ© Ãºkoly.
 		
 		B_PrintGuildCondition(5);
 	};
@@ -475,7 +475,7 @@ INSTANCE   ORG_801_Lares_GotoKalom (C_INFO)
 	condition	= ORG_801_Lares_GotoKalom_Condition;
 	information	= ORG_801_Lares_GotoKalom_Info;
 	permanent	= 0;
-	description = "A co se oèekává, e mám udìlat?";
+	description = "A co se oÄekÃ¡vÃ¡, Å¾e mÃ¡m udÄ›lat?";
 };                       
 
 FUNC int  ORG_801_Lares_GotoKalom_Condition()
@@ -488,33 +488,33 @@ FUNC int  ORG_801_Lares_GotoKalom_Condition()
 
 FUNC VOID  ORG_801_Lares_GotoKalom_Info()
 {
-	AI_Output (other, self,"ORG_801_Lares_GotoKalom_15_00"); //A co se oèekává, e mám udìlat?
-	AI_Output (self, other,"ORG_801_Lares_GotoKalom_11_01"); //Jsi teï èlenem naší tlupy. Mùeš si dìlat, co chceš.
+	AI_Output (other, self,"ORG_801_Lares_GotoKalom_15_00"); //A co se oÄekÃ¡vÃ¡, Å¾e mÃ¡m udÄ›lat?
+	AI_Output (self, other,"ORG_801_Lares_GotoKalom_11_01"); //Jsi teÄ Älenem naÅ¡Ã­ tlupy. MÅ¯Å¾eÅ¡ si dÄ›lat, co chceÅ¡.
 		
 	Log_CreateTopic		(CH1_GotoPsiCamp,	LOG_MISSION);
 	Log_SetTopicStatus	(CH1_GotoPsiCamp,	LOG_RUNNING);
-	B_LogEntry			(CH1_GotoPsiCamp,"Bratrstvo z tábora v bainách plánuje nìco velkého. Lares, vùdce banditù, chce vìdìt, co to je.");
+	B_LogEntry			(CH1_GotoPsiCamp,"Bratrstvo z tÃ¡bora v baÅ¾inÃ¡ch plÃ¡nuje nÄ›co velkÃ©ho. Lares, vÅ¯dce banditÅ¯, chce vÄ›dÄ›t, co to je.");
 
 	if	(Lares_InformMordrag == LOG_RUNNING)
 	{	
-		AI_Output 		(self, other,"ORG_801_Lares_GotoKalom_11_02"); //Jestli chceš bıt uiteènı, jdi za Mordragem a pomoz mu s tou akcí se sektáøi.
-		B_LogEntry		(CH1_GotoPsiCamp,"Pomùu Mordragovi zjistit, o co tam jde.");
+		AI_Output 		(self, other,"ORG_801_Lares_GotoKalom_11_02"); //Jestli chceÅ¡ bÃ½t uÅ¾iteÄnÃ½, jdi za Mordragem a pomoz mu s tou akcÃ­ se sektÃ¡Å™i.
+		B_LogEntry		(CH1_GotoPsiCamp,"PomÅ¯Å¾u Mordragovi zjistit, o co tam jde.");
 	}
 	else
 	{
 		var C_NPC Mordrag; Mordrag = Hlp_GetNpc(Org_826_Mordrag);
 		if (Npc_IsDead(Mordrag))
 		{
-			AI_Output	(self, other,"ORG_801_Lares_GotoKalom_11_03"); //Mordrag, jeden z našich lidí, byl ve Starém táboøe zabit. Ne zemøel, poslal nám zprávu. Øíká, e se v Sektovním táboøe chystá nìco obrovského.
-			AI_Output	(self, other,"ORG_801_Lares_GotoKalom_11_04"); //Jdi tábora Bratrstva a zjisti, co se tam dìje.
-			B_LogEntry	(CH1_GotoPsiCamp,"Poslal mì pøímo do tábora Bratrstva.");
+			AI_Output	(self, other,"ORG_801_Lares_GotoKalom_11_03"); //Mordrag, jeden z naÅ¡ich lidÃ­, byl ve StarÃ©m tÃ¡boÅ™e zabit. NeÅ¾ zemÅ™el, poslal nÃ¡m zprÃ¡vu. Å˜Ã­kÃ¡, Å¾e se v SektovnÃ­m tÃ¡boÅ™e chystÃ¡ nÄ›co obrovskÃ©ho.
+			AI_Output	(self, other,"ORG_801_Lares_GotoKalom_11_04"); //Jdi tÃ¡bora Bratrstva a zjisti, co se tam dÄ›je.
+			B_LogEntry	(CH1_GotoPsiCamp,"Poslal mÄ› pÅ™Ã­mo do tÃ¡bora Bratrstva.");
 		}
 		else
 		{
-			AI_Output	(self, other,"ORG_801_Lares_GotoKalom_11_05"); //Mordrag, jeden z našich lidí, se vrátil zpátky ze Starého tábora.
-			AI_Output	(self, other,"ORG_801_Lares_GotoKalom_11_06"); //Bì za ním. Øekni mu, e chci mít nìkoho v Sektovním táboøe. Bratrstvo plánuje nìco velkého - a já chci pøesnì vìdìt co.
+			AI_Output	(self, other,"ORG_801_Lares_GotoKalom_11_05"); //Mordrag, jeden z naÅ¡ich lidÃ­, se vrÃ¡til zpÃ¡tky ze StarÃ©ho tÃ¡bora.
+			AI_Output	(self, other,"ORG_801_Lares_GotoKalom_11_06"); //BÄ›Å¾ za nÃ­m. Å˜ekni mu, Å¾e chci mÃ­t nÄ›koho v SektovnÃ­m tÃ¡boÅ™e. Bratrstvo plÃ¡nuje nÄ›co velkÃ©ho - a jÃ¡ chci pÅ™esnÄ› vÄ›dÄ›t co.
 			AI_Output	(self, other,"ORG_801_Lares_GotoKalom_11_07"); //Pomoz mu.
-			B_LogEntry	(CH1_GotoPsiCamp,"Bandita jménem Mordrag má tu vìc na starosti a já ho najdu v baru na jezeøe Nového tábora.");
+			B_LogEntry	(CH1_GotoPsiCamp,"Bandita jmÃ©nem Mordrag mÃ¡ tu vÄ›c na starosti a jÃ¡ ho najdu v baru na jezeÅ™e NovÃ©ho tÃ¡bora.");
 			
 			B_ExchangeRoutine(Org_826_Mordrag,"START");
 			Lares_InformMordrag = LOG_RUNNING;
@@ -535,7 +535,7 @@ instance  ORG_801_Lares_WhereLearn (C_INFO)
 	condition		= ORG_801_Lares_WhereLearn_Condition;
 	information		= ORG_801_Lares_WhereLearn_Info;
 	permanent		= 0;
-	description		= "Kde se mùu nìco nauèit?"; 
+	description		= "Kde se mÅ¯Å¾u nÄ›co nauÄit?"; 
 };
 
 FUNC int  ORG_801_Lares_WhereLearn_Condition()
@@ -545,10 +545,10 @@ FUNC int  ORG_801_Lares_WhereLearn_Condition()
 
 FUNC void  ORG_801_Lares_WhereLearn_Info()
 {
-	AI_Output 		(other, self,"ORG_801_Lares_WhereLearn_Info_15_01"); //Kde se mùu nìco nauèit?
-	AI_Output 		(self, other,"ORG_801_Lares_WhereLearn_Info_11_02"); //U mì. Mùu ti pomoci procvièit tvou obratnost a sílu.
+	AI_Output 		(other, self,"ORG_801_Lares_WhereLearn_Info_15_01"); //Kde se mÅ¯Å¾u nÄ›co nauÄit?
+	AI_Output 		(self, other,"ORG_801_Lares_WhereLearn_Info_11_02"); //U mÄ›. MÅ¯Å¾u ti pomoci procviÄit tvou obratnost a sÃ­lu.
 	Log_CreateTopic (GE_TeacherNC,LOG_NOTE);
-	B_LogEntry		(GE_TeacherNC,"Lares mì mùe nauèit, jak zlepšit svou ZRUÈNOST a SÍLU.");
+	B_LogEntry		(GE_TeacherNC,"Lares mÄ› mÅ¯Å¾e nauÄit, jak zlepÅ¡it svou ZRUÄŒNOST a SÃLU.");
 
 };  
 // ******************************
@@ -561,7 +561,7 @@ INSTANCE ORG_801_Lares_Teach(C_INFO)
 	condition	= ORG_801_Lares_Teach_Condition;
 	information	= ORG_801_Lares_Teach_Info;
 	permanent	= 1;
-	description = "Chci se zlepšit.";
+	description = "Chci se zlepÅ¡it.";
 };                       
 
 FUNC INT ORG_801_Lares_Teach_Condition()
@@ -573,7 +573,7 @@ FUNC INT ORG_801_Lares_Teach_Condition()
 };
 FUNC VOID ORG_801_Lares_Teach_Info()
 {
-	AI_Output(other,self,"ORG_801_Lares_Teach_15_00"); //Chci se zlepšit.
+	AI_Output(other,self,"ORG_801_Lares_Teach_15_00"); //Chci se zlepÅ¡it.
 	
 	Info_ClearChoices	(ORG_801_Lares_Teach);
 	Info_AddChoice		(ORG_801_Lares_Teach,DIALOG_BACK									,ORG_801_Lares_Teach_BACK);

@@ -36,7 +36,7 @@ INSTANCE ItMw_1H_Club_01 (C_Item)
 // keine NPCs
 INSTANCE ItMw_1H_Poker_01 (C_Item)
 {	
-	name 				=	"Pohrab·Ë";
+	name 				=	"Pohrab√°ƒç";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -87,11 +87,11 @@ INSTANCE ItMw_1H_Sickle_01 (C_Item)
 };
 
 /******************************************************************************************/
-// Auch f¸r Mobsi-Benutzung (PickOre)
+// Auch f√ºr Mobsi-Benutzung (PickOre)
 // VLK, SFB
 INSTANCE ItMwPickaxe (C_Item)
 {
-	name 				=	"Krump·Ë";
+	name 				=	"Krump√°ƒç";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_AXE;
@@ -115,10 +115,10 @@ INSTANCE ItMwPickaxe (C_Item)
 };
 
 /********************************************************************************/
-// Auch f¸r Mobsi-Benutzung (Schmieden)
+// Auch f√ºr Mobsi-Benutzung (Schmieden)
 INSTANCE ItMw_1H_Sledgehammer_01 (C_Item)
 {	
-	name 				=	"Kov·¯skÈ kladivo";
+	name 				=	"Kov√°≈ôsk√© kladivo";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_AXE;	
@@ -199,7 +199,7 @@ instance ItMw_1H_Hatchet_01 (C_Item)
 // keine NPCs
 INSTANCE ItMw_1H_Sword_Old_01 (C_Item)
 {	
-	name 				=	"Rezav˝ meË";
+	name 				=	"Rezav√Ω meƒç";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -226,7 +226,7 @@ INSTANCE ItMw_1H_Sword_Old_01 (C_Item)
 // VLK, SFB
 INSTANCE ItMw_1H_Nailmace_01 (C_Item)
 {	
-	name 				=	"Ostnat˝ kyj"; 
+	name 				=	"Ostnat√Ω kyj"; 
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_AXE;	
@@ -255,7 +255,7 @@ INSTANCE ItMw_1H_Nailmace_01 (C_Item)
 // SFB
 INSTANCE ItMw_1H_Sword_Short_01 (C_Item)
 {	
-	name 				=	"Kr·tk˝ meË";
+	name 				=	"Kr√°tk√Ω meƒç";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -282,7 +282,7 @@ INSTANCE ItMw_1H_Sword_Short_01 (C_Item)
 // STT
 INSTANCE ItMw_1H_Sword_Short_02 (C_Item)
 {	
-	name 				=	"Farm·¯ova obrana ";
+	name 				=	"Farm√°≈ôova obrana ";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -310,7 +310,7 @@ INSTANCE ItMw_1H_Sword_Short_02 (C_Item)
 // STT
 INSTANCE ItMw_1H_Sword_Short_03 (C_Item)
 {	
-	name 				=	"»ÌhavËÌ kousnutÌ";
+	name 				=	"ƒå√≠havƒç√≠ kousnut√≠";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -337,7 +337,7 @@ INSTANCE ItMw_1H_Sword_Short_03 (C_Item)
 // STT
 INSTANCE ItMw_1H_Sword_Short_04 (C_Item)
 {	
-	name 				=	"ZraÚujÌcÌ trny";
+	name 				=	"Zra≈àuj√≠c√≠ trny";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -364,7 +364,7 @@ INSTANCE ItMw_1H_Sword_Short_04 (C_Item)
 // keine NPCs
 INSTANCE ItMw_1H_Sword_Short_05 (C_Item)
 {	
-	name 				=	"Kop·Ëova posluönost";
+	name 				=	"Kop√°ƒçova poslu≈°nost";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -393,7 +393,7 @@ INSTANCE ItMw_1H_Sword_Short_05 (C_Item)
 // NOV
 instance ItMw_1H_Axe_Old_01 (C_Item)
 {	
-	name 				=	"Rozpadl· sekyra";   
+	name 				=	"Rozpadl√° sekyra";   
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_AXE;	
@@ -448,7 +448,7 @@ INSTANCE ItMw_1H_Scythe_01 (C_Item)
 // keine NPCs 
 INSTANCE ItMw_2H_Staff_01 (C_Item)
 {	
-	name 				=	"Bojov· h˘l";  
+	name 				=	"Bojov√° h≈Øl";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_AXE;	
@@ -475,7 +475,7 @@ INSTANCE ItMw_2H_Staff_01 (C_Item)
 // keine NPCs
 INSTANCE ItMw_2H_Staff_02 (C_Item)
 {	
-	name 				=	"H˘l rozsouzenÌ";  
+	name 				=	"H≈Øl rozsouzen√≠";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_AXE;	
@@ -501,7 +501,7 @@ INSTANCE ItMw_2H_Staff_02 (C_Item)
 // keine NPCs
 INSTANCE ItMw_2H_Staff_03 (C_Item)
 {	
-	name 				=	"KnÏûsk· h˘l";  
+	name 				=	"Knƒõ≈æsk√° h≈Øl";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_AXE;	
@@ -530,7 +530,7 @@ INSTANCE ItMw_2H_Staff_03 (C_Item)
 
 INSTANCE ItMw_1H_LightGuardsSword_03 (C_Item)
 {	
-	name 				=	"Lehk˝ meË str·ûe";
+	name 				=	"Lehk√Ω meƒç str√°≈æe";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -559,7 +559,7 @@ INSTANCE ItMw_1H_LightGuardsSword_03 (C_Item)
 // NOV + ORG
 INSTANCE ItMw_1H_Mace_01 (C_Item)
 {	
-	name 				=	"Palc·t";
+	name 				=	"Palc√°t";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_AXE;	
@@ -586,7 +586,7 @@ INSTANCE ItMw_1H_Mace_01 (C_Item)
 // ORG
 INSTANCE ItMw_1H_Mace_02 (C_Item)
 {	
-	name 				=	"Ostnat˝ palc·t";
+	name 				=	"Ostnat√Ω palc√°t";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_AXE;	
@@ -613,7 +613,7 @@ INSTANCE ItMw_1H_Mace_02 (C_Item)
 // ORG
 INSTANCE ItMw_1H_Mace_03 (C_Item)
 {	
-	name 				=	"éihadlo krvavÈ mouchy";
+	name 				=	"≈Ωihadlo krvav√© mouchy";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_AXE;	
@@ -640,7 +640,7 @@ INSTANCE ItMw_1H_Mace_03 (C_Item)
 // NOV_1303_NYRAS , NOV_1330_BAALPARVEZ
 INSTANCE ItMw_1H_Mace_04 (C_Item)
 {	
-	name 				=	"Ocelov˝ hrot";
+	name 				=	"Ocelov√Ω hrot";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_AXE;	
@@ -669,7 +669,7 @@ INSTANCE ItMw_1H_Mace_04 (C_Item)
 // GRD
 INSTANCE ItMw_1H_Sword_01 (C_Item)
 {	
-	name 				=	"PrimitivnÌ meË";
+	name 				=	"Primitivn√≠ meƒç";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -696,7 +696,7 @@ INSTANCE ItMw_1H_Sword_01 (C_Item)
 // GRD
 INSTANCE ItMw_1H_Sword_02 (C_Item)
 {	
-	name 				=	"MeË rozsudku";
+	name 				=	"Meƒç rozsudku";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -723,7 +723,7 @@ INSTANCE ItMw_1H_Sword_02 (C_Item)
 // GRD
 INSTANCE ItMw_1H_Sword_03 (C_Item)
 {	
-	name 				=	"MeË str·ûe";
+	name 				=	"Meƒç str√°≈æe";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -750,7 +750,7 @@ INSTANCE ItMw_1H_Sword_03 (C_Item)
 // GRD, STT (einer)
 INSTANCE ItMw_1H_Sword_04 (C_Item)
 {	
-	name 				=	"Bojov˝ meË";
+	name 				=	"Bojov√Ω meƒç";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -777,7 +777,7 @@ INSTANCE ItMw_1H_Sword_04 (C_Item)
 // keine NPC
 INSTANCE ItMw_1H_Sword_05 (C_Item)
 {	
-	name 				=	"V·leËn˝ meË";
+	name 				=	"V√°leƒçn√Ω meƒç";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -834,7 +834,7 @@ INSTANCE ItMw_1H_Mace_War_01 (C_Item)
 // ORG, SLD
 INSTANCE ItMw_1H_Mace_War_02 (C_Item)
 {	
-	name 				=	"Ocelov˝ palc·t";
+	name 				=	"Ocelov√Ω palc√°t";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_AXE;	
@@ -861,7 +861,7 @@ INSTANCE ItMw_1H_Mace_War_02 (C_Item)
 // SLD
 INSTANCE ItMw_1H_Mace_War_03 (C_Item)
 {	
-	name 				=	"DrtiË kamene";
+	name 				=	"Drtiƒç kamene";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_AXE;	
@@ -888,7 +888,7 @@ INSTANCE ItMw_1H_Mace_War_03 (C_Item)
 // GUR_1211_BaalLukor
 INSTANCE ItMw_1H_Mace_War_04 (C_Item)
 {	
-	name 				=	"LamaË srdcÌ";
+	name 				=	"Lamaƒç srdc√≠";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_AXE;	
@@ -917,7 +917,7 @@ INSTANCE ItMw_1H_Mace_War_04 (C_Item)
 // keine NPCs
 INSTANCE ItMw_1H_Sword_Long_01 (C_Item)
 {	
-	name 				=	"Dlouh˝ meË";
+	name 				=	"Dlouh√Ω meƒç";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -944,7 +944,7 @@ INSTANCE ItMw_1H_Sword_Long_01 (C_Item)
 // GRD_203_BULLIT
 INSTANCE ItMw_1H_Sword_Long_02 (C_Item)
 {	
-	name 				=	"MeË strachu ";
+	name 				=	"Meƒç strachu ";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -971,7 +971,7 @@ INSTANCE ItMw_1H_Sword_Long_02 (C_Item)
 // keine NPCs
 INSTANCE ItMw_1H_Sword_Long_03 (C_Item)
 {	
-	name 				=	"MeË nen·visti";
+	name 				=	"Meƒç nen√°visti";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -998,7 +998,7 @@ INSTANCE ItMw_1H_Sword_Long_03 (C_Item)
 // keine NPCs
 INSTANCE ItMw_1H_Sword_Long_04 (C_Item)
 {	
-	name 				=	"MeË vÌtÏzstvÌ";
+	name 				=	"Meƒç v√≠tƒõzstv√≠";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -1025,7 +1025,7 @@ INSTANCE ItMw_1H_Sword_Long_04 (C_Item)
 // keine NPCs
 INSTANCE ItMw_1H_Sword_Long_05 (C_Item)
 {	
-	name 				=	"MeË smrti";
+	name 				=	"Meƒç smrti";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -1052,7 +1052,7 @@ INSTANCE ItMw_1H_Sword_Long_05 (C_Item)
 // keine NPCs
 INSTANCE ItMw_1H_Warhammer_01 (C_Item)
 {	
-	name 				=	"Sk¯etÌ kladivo";
+	name 				=	"Sk≈ôet√≠ kladivo";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_AXE;	
@@ -1079,7 +1079,7 @@ INSTANCE ItMw_1H_Warhammer_01 (C_Item)
 // keine NPCs
 INSTANCE ItMw_1H_Warhammer_02 (C_Item)
 {	
-	name 				=	"V·leËnÈ kladivo";
+	name 				=	"V√°leƒçn√© kladivo";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_AXE;	
@@ -1106,7 +1106,7 @@ INSTANCE ItMw_1H_Warhammer_02 (C_Item)
 // keine NPCs
 INSTANCE ItMw_1H_Warhammer_03 (C_Item)
 {	
-	name 				=	"BoûÌ kladivo";
+	name 				=	"Bo≈æ√≠ kladivo";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_AXE;	
@@ -1131,7 +1131,7 @@ INSTANCE ItMw_1H_Warhammer_03 (C_Item)
 
 
 /*********************************************************************************
-** ƒxte										**
+** √Ñxte										**
 *********************************************************************************/
 // keine NPCs
 INSTANCE ItMw_1H_Axe_01 (C_Item)
@@ -1219,7 +1219,7 @@ INSTANCE ItMw_1H_Axe_03 (C_Item)
 // keine NPCs
 INSTANCE ItMw_1H_Sword_Broad_01 (C_Item) 
 {	
-	name 				=	"äirok˝ meË";
+	name 				=	"≈†irok√Ω meƒç";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -1246,7 +1246,7 @@ INSTANCE ItMw_1H_Sword_Broad_01 (C_Item)
 // keine NPCs
 INSTANCE ItMw_1H_Sword_Broad_02 (C_Item) 
 {	
-	name 				=	"V·leËnÌk˘v rozsudek";
+	name 				=	"V√°leƒçn√≠k≈Øv rozsudek";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -1273,7 +1273,7 @@ INSTANCE ItMw_1H_Sword_Broad_02 (C_Item)
 // keine NPCs
 INSTANCE ItMw_1H_Sword_Broad_03 (C_Item) 
 {	
-	name 				=	"äepot bou¯e";
+	name 				=	"≈†epot bou≈ôe";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -1300,7 +1300,7 @@ INSTANCE ItMw_1H_Sword_Broad_03 (C_Item)
 // keine NPCs
 INSTANCE ItMw_1H_Sword_Broad_04 (C_Item) 
 {	
-	name 				=	"Str·ûcova ruka";
+	name 				=	"Str√°≈æcova ruka";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -1324,12 +1324,12 @@ INSTANCE ItMw_1H_Sword_Broad_04 (C_Item)
 };
 
 /*********************************************************************************
-** Alte Zweih‰nder								**
+** Alte Zweih√§nder								**
 *********************************************************************************/
 // keine NPCs
 INSTANCE ItMw_2H_Sword_Old_01 (C_Item) 
 {	
-	name 				=	"Rezav˝ obouruËnÌ meË";
+	name 				=	"Rezav√Ω obouruƒçn√≠ meƒç";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_SWD;	
@@ -1358,7 +1358,7 @@ INSTANCE ItMw_2H_Sword_Old_01 (C_Item)
 // keine NPCs
 INSTANCE ItMw_1H_Sword_Bastard_01 (C_Item) 
 {	
-	name 				=	"Rezav˝ meË bastard";
+	name 				=	"Rezav√Ω meƒç bastard";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -1385,7 +1385,7 @@ INSTANCE ItMw_1H_Sword_Bastard_01 (C_Item)
 // keine NPCs
 INSTANCE ItMw_1H_Sword_Bastard_02 (C_Item) 
 {	
-	name 				=	"ÿeznÌk";
+	name 				=	"≈òezn√≠k";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -1412,7 +1412,7 @@ INSTANCE ItMw_1H_Sword_Bastard_02 (C_Item)
 // keine NPCs
 INSTANCE ItMw_1H_Sword_Bastard_03 (C_Item) 
 {	
-	name 				=	"PopravËÌ";
+	name 				=	"Popravƒç√≠";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -1439,7 +1439,7 @@ INSTANCE ItMw_1H_Sword_Bastard_03 (C_Item)
 // keine NPCs
 INSTANCE ItMw_1H_Sword_Bastard_04 (C_Item) 
 {	
-	name 				=	"Slovo n·silnÌka";
+	name 				=	"Slovo n√°siln√≠ka";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;	
@@ -1463,12 +1463,12 @@ INSTANCE ItMw_1H_Sword_Bastard_04 (C_Item)
 };
 
 /*********************************************************************************
-** Alte Streit‰xte								**
+** Alte Streit√§xte								**
 *********************************************************************************/
 // keine NPCs
 INSTANCE ItMw_2H_Axe_Old_01 (C_Item)
 {	
-	name 				=	"Star· bojov· sekyra";  
+	name 				=	"Star√° bojov√° sekyra";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_AXE;	
@@ -1495,7 +1495,7 @@ INSTANCE ItMw_2H_Axe_Old_01 (C_Item)
 // keine NPCs
 INSTANCE ItMw_2H_Axe_Old_02 (C_Item)
 {	
-	name 				=	"SbÏraË krve";  
+	name 				=	"Sbƒõraƒç krve";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_AXE;	
@@ -1522,7 +1522,7 @@ INSTANCE ItMw_2H_Axe_Old_02 (C_Item)
 // keine NPCs
 INSTANCE ItMw_2H_Axe_Old_03 (C_Item)
 {	
-	name 				=	"Star˝ soudce";  
+	name 				=	"Star√Ω soudce";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_AXE;	
@@ -1546,12 +1546,12 @@ INSTANCE ItMw_2H_Axe_Old_03 (C_Item)
 };
 
 /*********************************************************************************
-** Leichte Zweih‰nder								**
+** Leichte Zweih√§nder								**
 *********************************************************************************/
 // TPL
 INSTANCE ItMw_2H_Sword_Light_01 (C_Item) 
 {	
-	name 				=	"Lehk˝ obouruËnÌ meË";
+	name 				=	"Lehk√Ω obouruƒçn√≠ meƒç";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_SWD;	
@@ -1578,7 +1578,7 @@ INSTANCE ItMw_2H_Sword_Light_01 (C_Item)
 // TPL
 INSTANCE ItMw_2H_Sword_Light_02 (C_Item) 
 {	
-	name 				=	"äavle spr·vce";
+	name 				=	"≈†avle spr√°vce";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_SWD;	
@@ -1605,7 +1605,7 @@ INSTANCE ItMw_2H_Sword_Light_02 (C_Item)
 // keine NPCs
 INSTANCE ItMw_2H_Sword_Light_03 (C_Item) 
 {	
-	name 				=	"äavle ûold·ka";
+	name 				=	"≈†avle ≈æold√°ka";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_SWD;	
@@ -1632,7 +1632,7 @@ INSTANCE ItMw_2H_Sword_Light_03 (C_Item)
 // TPL_1402_GorNaToth, TPL_1439_GorNaDrak
 INSTANCE ItMw_2H_Sword_Light_04 (C_Item) 
 {	
-	name 				=	"äavle kr·le";
+	name 				=	"≈†avle kr√°le";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_SWD;	
@@ -1659,7 +1659,7 @@ INSTANCE ItMw_2H_Sword_Light_04 (C_Item)
 // keine NPCS
 INSTANCE ItMw_2H_Sword_Light_05 (C_Item) 
 {	
-	name 				=	"äavle Ô·bla";
+	name 				=	"≈†avle ƒè√°bla";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_SWD;	
@@ -1688,7 +1688,7 @@ INSTANCE ItMw_2H_Sword_Light_05 (C_Item)
 // keine NPCs
 INSTANCE ItMw_2H_Axe_light_01 (C_Item)
 {	
-	name 				=	"Lehk· bojov· sekyra";  
+	name 				=	"Lehk√° bojov√° sekyra";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_AXE;	
@@ -1715,7 +1715,7 @@ INSTANCE ItMw_2H_Axe_light_01 (C_Item)
 // keine NPCs
 INSTANCE ItMw_2H_Axe_light_02 (C_Item)
 {	
-	name 				=	"⁄der blesku";  
+	name 				=	"√öder blesku";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_AXE;	
@@ -1742,7 +1742,7 @@ INSTANCE ItMw_2H_Axe_light_02 (C_Item)
 // keine NPCs
 INSTANCE ItMw_2H_Axe_light_03 (C_Item)
 {	
-	name 				=	"T¯esk";  
+	name 				=	"T≈ôesk";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_AXE;	
@@ -1766,12 +1766,12 @@ INSTANCE ItMw_2H_Axe_light_03 (C_Item)
 };
 
 /*********************************************************************************
-** Zweih‰nder									**
+** Zweih√§nder									**
 *********************************************************************************/
 // keine NPCs
 INSTANCE ItMw_2H_Sword_01 (C_Item) 
 {	
-	name 				=	"ObouruËnÌ zbraÚ";
+	name 				=	"Obouruƒçn√≠ zbra≈à";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_SWD;	
@@ -1798,7 +1798,7 @@ INSTANCE ItMw_2H_Sword_01 (C_Item)
 // keine NPCs
 INSTANCE ItMw_2H_Sword_02 (C_Item) 
 {	
-	name 				=	"Hrdinova öavle";
+	name 				=	"Hrdinova ≈°avle";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_SWD;	
@@ -1825,7 +1825,7 @@ INSTANCE ItMw_2H_Sword_02 (C_Item)
 // keine NPCs
 INSTANCE ItMw_2H_Sword_03 (C_Item) 
 {	
-	name 				=	"Krvav· öavle";
+	name 				=	"Krvav√° ≈°avle";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_SWD;	
@@ -1849,12 +1849,12 @@ INSTANCE ItMw_2H_Sword_03 (C_Item)
 };
 
 /*********************************************************************************
-** Schwere Zweih‰nder								**
+** Schwere Zweih√§nder								**
 *********************************************************************************/
 // keine NPCs
 INSTANCE ItMw_2H_Sword_Heavy_01 (C_Item) 
 {	
-	name 				=	"TÏûk· obouruËnÌ zbraÚ";
+	name 				=	"Tƒõ≈æk√° obouruƒçn√≠ zbra≈à";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_SWD;	
@@ -1881,7 +1881,7 @@ INSTANCE ItMw_2H_Sword_Heavy_01 (C_Item)
 // keine NPCs
 INSTANCE ItMw_2H_Sword_Heavy_02 (C_Item) 
 {	
-	name 				=	"MeË bÏsnÏnÌ";
+	name 				=	"Meƒç bƒõsnƒõn√≠";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_SWD;	
@@ -1907,7 +1907,7 @@ INSTANCE ItMw_2H_Sword_Heavy_02 (C_Item)
 // keine NPCs
 INSTANCE ItMw_2H_Sword_Heavy_03 (C_Item) 
 {	
-	name 				=	"MeË hnÏvu";
+	name 				=	"Meƒç hnƒõvu";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_SWD;	
@@ -1934,7 +1934,7 @@ INSTANCE ItMw_2H_Sword_Heavy_03 (C_Item)
 // keine NPCs
 INSTANCE ItMw_2H_Sword_Heavy_04 (C_Item) 
 {	
-	name 				=	"MeË pomsty";
+	name 				=	"Meƒç pomsty";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_SWD;	
@@ -1958,12 +1958,12 @@ INSTANCE ItMw_2H_Sword_Heavy_04 (C_Item)
 };
 
 /*********************************************************************************
-** Streit‰xte									**
+** Streit√§xte									**
 *********************************************************************************/
 // keine NPCs
 INSTANCE ItMw_2H_Axe_Heavy_01 (C_Item)
 {	
-	name 				=	"V·leËn· sekyra";  
+	name 				=	"V√°leƒçn√° sekyra";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_AXE;	
@@ -1990,7 +1990,7 @@ INSTANCE ItMw_2H_Axe_Heavy_01 (C_Item)
 // keine NPCs
 INSTANCE ItMw_2H_Axe_Heavy_02 (C_Item)
 {	
-	name 				=	"Hlas v·leËnÌka";  
+	name 				=	"Hlas v√°leƒçn√≠ka";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_AXE;	
@@ -2017,7 +2017,7 @@ INSTANCE ItMw_2H_Axe_Heavy_02 (C_Item)
 // keine NPCs
 INSTANCE ItMw_2H_Axe_Heavy_03 (C_Item)
 {	
-	name 				=	"PÏst barbara";  
+	name 				=	"Pƒõst barbara";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_AXE;	
@@ -2044,7 +2044,7 @@ INSTANCE ItMw_2H_Axe_Heavy_03 (C_Item)
 // keine NPCs
 INSTANCE ItMw_2H_Axe_Heavy_04 (C_Item)
 {	
-	name 				=	"PÏst trola";  
+	name 				=	"Pƒõst trola";  
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_AXE;	

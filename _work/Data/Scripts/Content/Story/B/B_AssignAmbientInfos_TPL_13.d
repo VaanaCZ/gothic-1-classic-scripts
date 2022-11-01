@@ -37,7 +37,7 @@ INSTANCE Info_Tpl_13_EinerVonEuchWerden (C_INFO) // E1
 	condition	= Info_Tpl_13_EinerVonEuchWerden_Condition;
 	information	= Info_Tpl_13_EinerVonEuchWerden_Info;
 	permanent	= 1;
-	description = "Chci se stát templáøem jako ty.";
+	description = "Chci se stÃ¡t templÃ¡Å™em jako ty.";
 };                       
 
 FUNC INT Info_Tpl_13_EinerVonEuchWerden_Condition()
@@ -52,11 +52,11 @@ FUNC INT Info_Tpl_13_EinerVonEuchWerden_Condition()
 
 FUNC VOID Info_Tpl_13_EinerVonEuchWerden_Info()
 {
-	AI_Output(other,self,"Info_Tpl_13_EinerVonEuchWerden_15_00"); //Chci se stát templáøem jako ty.
-	AI_Output(self,other,"Info_Tpl_13_EinerVonEuchWerden_13_01"); //Máš ponìtí, co všechno jsem musel vytrpìt, abych smìl slouit mezi Spáèovımi vyvolenımi jako templáøská strá?
-	AI_Output(self,other,"Info_Tpl_13_EinerVonEuchWerden_13_02"); //Nemysli si, e se tu budeš jen tak poflakovat a  poívat té nejvìtší pocty.
-	AI_Output(self,other,"Info_Tpl_13_EinerVonEuchWerden_13_03"); //Ještì ne se rozhodneš, mìl by ses trochu seznámit se Spáèovım uèením.
-	AI_Output(self,other,"Info_Tpl_13_EinerVonEuchWerden_13_04"); //To zabere nìjakı èas a mìlo by to do tebe naèerpat nìjaké vìdomosti.
+	AI_Output(other,self,"Info_Tpl_13_EinerVonEuchWerden_15_00"); //Chci se stÃ¡t templÃ¡Å™em jako ty.
+	AI_Output(self,other,"Info_Tpl_13_EinerVonEuchWerden_13_01"); //MÃ¡Å¡ ponÄ›tÃ­, co vÅ¡echno jsem musel vytrpÄ›t, abych smÄ›l slouÅ¾it mezi SpÃ¡ÄovÃ½mi vyvolenÃ½mi jako templÃ¡Å™skÃ¡ strÃ¡Å¾?
+	AI_Output(self,other,"Info_Tpl_13_EinerVonEuchWerden_13_02"); //Nemysli si, Å¾e se tu budeÅ¡ jen tak poflakovat a  poÅ¾Ã­vat tÃ© nejvÄ›tÅ¡Ã­ pocty.
+	AI_Output(self,other,"Info_Tpl_13_EinerVonEuchWerden_13_03"); //JeÅ¡tÄ› neÅ¾ se rozhodneÅ¡, mÄ›l by ses trochu seznÃ¡mit se SpÃ¡ÄovÃ½m uÄenÃ­m.
+	AI_Output(self,other,"Info_Tpl_13_EinerVonEuchWerden_13_04"); //To zabere nÄ›jakÃ½ Äas a mÄ›lo by to do tebe naÄerpat nÄ›jakÃ© vÄ›domosti.
 };
 
 // *************************************************************************
@@ -79,8 +79,8 @@ FUNC INT Info_Tpl_13_WichtigePersonen_Condition()
 
 FUNC VOID Info_Tpl_13_WichtigePersonen_Info()
 {
-	AI_Output(other,self,"Info_Tpl_13_WichtigePersonen_15_00"); //Kdo tady má velení?
-	AI_Output(self,other,"Info_Tpl_13_WichtigePersonen_13_01"); //Naši Guru jsou Spáèovi vyvolení! Spáè pøedurèuje náš osud a Guru jej vìští.
+	AI_Output(other,self,"Info_Tpl_13_WichtigePersonen_15_00"); //Kdo tady mÃ¡ velenÃ­?
+	AI_Output(self,other,"Info_Tpl_13_WichtigePersonen_13_01"); //NaÅ¡i Guru jsou SpÃ¡Äovi vyvolenÃ­! SpÃ¡Ä pÅ™edurÄuje nÃ¡Å¡ osud a Guru jej vÄ›Å¡tÃ­.
 };
 
 // *************************************************************************
@@ -93,7 +93,7 @@ INSTANCE Info_Tpl_13_DasLager(C_INFO)
 	condition	= Info_Tpl_13_DasLager_Condition;
 	information	= Info_Tpl_13_DasLager_Info;
 	permanent	= 1;
-	description = "Chtìl bych se podívat do Spáèova chrámu...";
+	description = "ChtÄ›l bych se podÃ­vat do SpÃ¡Äova chrÃ¡mu...";
 };                       
 
 FUNC INT Info_Tpl_13_DasLager_Condition()
@@ -105,8 +105,8 @@ FUNC INT Info_Tpl_13_DasLager_Condition()
 };
 FUNC VOID Info_Tpl_13_DasLager_Info()
 {
-	AI_Output(other,self,"Info_Tpl_13_DasLager_15_00"); //Chtìl bych se podívat do Spáèova chrámu...
-	AI_Output(self,other,"Info_Tpl_13_DasLager_13_01"); //To je nemyslitelné! Nevìrec v Chrámu! Dokud se nezaváeš Spáèovi slouit, nebudeš smìt do Chrámu vstoupit!
+	AI_Output(other,self,"Info_Tpl_13_DasLager_15_00"); //ChtÄ›l bych se podÃ­vat do SpÃ¡Äova chrÃ¡mu...
+	AI_Output(self,other,"Info_Tpl_13_DasLager_13_01"); //To je nemyslitelnÃ©! NevÄ›rec v ChrÃ¡mu! Dokud se nezavÃ¡Å¾eÅ¡ SpÃ¡Äovi slouÅ¾it, nebudeÅ¡ smÄ›t do ChrÃ¡mu vstoupit!
 };
 
 // *************************************************************************
@@ -132,9 +132,9 @@ FUNC INT Info_Tpl_13_DieLage_Condition()
 FUNC VOID Info_Tpl_13_DieLage_Info()
 {
 	AI_Output(other,self,"Info_Tpl_13_DieLage_15_00"); //Jak to jde?
-	AI_Output(self,other,"Info_Tpl_13_DieLage_13_01"); //Od té doby, co jsem se stal jedním z vyvolenıch ochráncù víry, cítím se lépe ne kdykoliv pøedtím.
-	AI_Output(other,self,"Info_Tpl_13_DieLage_15_02"); //To zní honosnì...
-	AI_Output(self,other,"Info_Tpl_13_DieLage_13_03"); //Jsi nevìrec. Nerozumíš tomu.
+	AI_Output(self,other,"Info_Tpl_13_DieLage_13_01"); //Od tÃ© doby, co jsem se stal jednÃ­m z vyvolenÃ½ch ochrÃ¡ncÅ¯ vÃ­ry, cÃ­tÃ­m se lÃ©pe neÅ¾ kdykoliv pÅ™edtÃ­m.
+	AI_Output(other,self,"Info_Tpl_13_DieLage_15_02"); //To znÃ­ honosnÄ›...
+	AI_Output(self,other,"Info_Tpl_13_DieLage_13_03"); //Jsi nevÄ›rec. NerozumÃ­Å¡ tomu.
 };
 	
 // *************************************************************************

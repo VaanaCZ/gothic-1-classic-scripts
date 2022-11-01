@@ -1,8 +1,8 @@
 // Der Spieler wird von Xardas losgeschickt, um URIZIEL aufzuladen.
 func void B_Story_LoadSword ()
 {
-	//-------- Tagebucheinträge --------
-	B_LogEntry			(CH5_Uriziel,"Xardas dokonèil kouzelnou formuli. Nyní potøebuji opravdu silnı zdroj magické energie a ochotného mága, kterı by mi pomohl provést proceduru. Shodou okolností je v kolonii komunita, která takovım zdrojem energie disponuje a která mi je hluboce zavázána...");
+	//-------- TagebucheintrÃ¤ge --------
+	B_LogEntry			(CH5_Uriziel,"Xardas dokonÄil kouzelnou formuli. NynÃ­ potÅ™ebuji opravdu silnÃ½ zdroj magickÃ© energie a ochotnÃ©ho mÃ¡ga, kterÃ½ by mi pomohl provÃ©st proceduru. Shodou okolnostÃ­ je v kolonii komunita, kterÃ¡ takovÃ½m zdrojem energie disponuje a kterÃ¡ mi je hluboce zavÃ¡zÃ¡na...");
 
 	//-------- Erfahrung --------
 	B_GiveXP			(XP_ReturnedFromSunkenTower);
@@ -10,7 +10,7 @@ func void B_Story_LoadSword ()
 	//-------- magische Formel, um URIZIEL zu laden --------
 	CreateInvItem		(hero,	Scroll4Milten);
 	
-	//-------- TA für Milten, dass er auf SC wartet --------
+	//-------- TA fÃ¼r Milten, dass er auf SC wartet --------
 	VAR C_NPC Milten; Milten = Hlp_GetNpc(PC_Mage);
 	Npc_ExchangeRoutine (Milten, "LSWait"); 						
 

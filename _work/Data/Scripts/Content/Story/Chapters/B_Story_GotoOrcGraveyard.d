@@ -11,8 +11,8 @@ func void B_Story_GotoOrcGraveyard()
 	//-------- Tagebucheintrag --------
 	Log_CreateTopic		(CH3_OrcGraveyard,	LOG_MISSION);
 	Log_SetTopicStatus	(CH3_OrcGraveyard,	LOG_RUNNING);
-	B_LogEntry			(CH3_OrcGraveyard,"Velké vzıvání Spáèe nesplnilo oèekávání. Vidiny pøinesly jen pár nezøetelnıch obrazù skøetù v jejich jeskyních. Duchovní vùdce Y´Berion upadl v dùsledku pøepínání bìhem vzıvání do bezvìdomí!"); 
-	B_LogEntry			(CH3_OrcGraveyard,"Cor Angar, vùdce templáøù, mì poádal, abych se vydal na skøetí høbitov, co je soustava jeskyní nedaleko Tábora v bainách. Vydal se tam také guru Baal Lukor, aby nalezl nìjaké dùkazy, které by pomohly lépe pochopit vidinu skøetù.");
+	B_LogEntry			(CH3_OrcGraveyard,"VelkÃ© vzÃ½vÃ¡nÃ­ SpÃ¡Äe nesplnilo oÄekÃ¡vÃ¡nÃ­. Vidiny pÅ™inesly jen pÃ¡r nezÅ™etelnÃ½ch obrazÅ¯ skÅ™etÅ¯ v jejich jeskynÃ­ch. DuchovnÃ­ vÅ¯dce YÂ´Berion upadl v dÅ¯sledku pÅ™epÃ­nÃ¡nÃ­ bÄ›hem vzÃ½vÃ¡nÃ­ do bezvÄ›domÃ­!"); 
+	B_LogEntry			(CH3_OrcGraveyard,"Cor Angar, vÅ¯dce templÃ¡Å™Å¯, mÄ› poÅ¾Ã¡dal, abych se vydal na skÅ™etÃ­ hÅ™bitov, coÅ¾ je soustava jeskynÃ­ nedaleko TÃ¡bora v baÅ¾inÃ¡ch. Vydal se tam takÃ© guru Baal Lukor, aby nalezl nÄ›jakÃ© dÅ¯kazy, kterÃ© by pomohly lÃ©pe pochopit vidinu skÅ™etÅ¯.");
 	
 	//-------- Templer und Orks vor Ork-Friedhof setzen --------
 	// mitten auf dem Vorplatz 
@@ -21,7 +21,7 @@ func void B_Story_GotoOrcGraveyard()
 	Wld_InsertNpc		(OrcBiter,			"OW_PATH_198_ORCGRAVEYARD4");
 	Wld_InsertNpc		(OrcBiter,			"OW_PATH_198_ORCGRAVEYARD4");
 
-	// vor dem Höhleneingang 
+	// vor dem HÃ¶hleneingang 
 	Wld_InsertNpc		(OrcScout,			"OW_PATH_198_ORCGRAVEYARD5");
 	Wld_InsertNpc		(OrcScout,			"OW_PATH_198_ORCGRAVEYARD6");
 	Wld_InsertNpc		(OrcScout,			"OW_PATH_198_ORCGRAVEYARD7");

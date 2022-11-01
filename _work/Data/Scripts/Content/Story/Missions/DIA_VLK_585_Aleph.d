@@ -20,8 +20,8 @@ FUNC VOID  VLK_585_Aleph_Exit_Info()
 {
 	if	!Npc_KnowsInfo (hero, GRD_261_Brandick_ALEPH)
 	{
-		AI_Output (other, self,"VLK_585_Aleph_Exit_Info_15_01"); //Hodnì štìstí!
-		AI_Output (self, other,"VLK_585_Aleph_Exit_Info_05_02"); //Dobøe, víš kde mì najdeš.
+		AI_Output (other, self,"VLK_585_Aleph_Exit_Info_15_01"); //HodnÄ› Å¡tÄ›stÃ­!
+		AI_Output (self, other,"VLK_585_Aleph_Exit_Info_05_02"); //DobÅ™e, vÃ­Å¡ kde mÄ› najdeÅ¡.
 	};
 	
 	AI_StopProcessInfos	( self );
@@ -44,9 +44,9 @@ FUNC int  VLK_585_Aleph_CLEVER_Condition()
 
 func void  VLK_585_Aleph_CLEVER_Info()
 {
-	AI_Output (self,other,"VLK_585_Aleph_CLEVER_Info_05_01"); //Hehehe, stráe mì nikdy nedostanou!
+	AI_Output (self,other,"VLK_585_Aleph_CLEVER_Info_05_01"); //Hehehe, strÃ¡Å¾e mÄ› nikdy nedostanou!
 };
-// ***************** ALEPH ERKLÄRT SEINE ARBEITSHALTUNG *****************************
+// ***************** ALEPH ERKLÃ„RT SEINE ARBEITSHALTUNG *****************************
 
 instance  VLK_585_Aleph_GUARDS (C_INFO)
 {
@@ -55,7 +55,7 @@ instance  VLK_585_Aleph_GUARDS (C_INFO)
 	information		= VLK_585_Aleph_GUARDS_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Jak to myslíš?"; 
+	description		= "Jak to myslÃ­Å¡?"; 
 };
 
 FUNC int  VLK_585_Aleph_GUARDS_Condition()
@@ -68,11 +68,11 @@ FUNC int  VLK_585_Aleph_GUARDS_Condition()
 
 FUNC void  VLK_585_Aleph_GUARDS_Info()
 {
-	AI_Output (other, self,"VLK_585_Aleph_GUARDS_Info_15_01"); //Jak to myslíš?
-	AI_Output (self, other,"VLK_585_Aleph_GUARDS_Info_05_02"); //Pracuju jen tehdy, kdy jsou stráe blízko nebo kdy mì mùou vidìt. Jinak se jenom procházím.
-	AI_Output (other, self,"VLK_585_Aleph_GUARDS_Info_15_03"); //Nedostanou podezøení?
-	AI_Output (self, other,"VLK_585_Aleph_GUARDS_Info_05_04"); //Jo, jistì, narubu míò rudy ne ostatní. Není to nikdy dost, a tak musím dìlat trochu obchod.
-	AI_Output (self, other,"VLK_585_Aleph_GUARDS_Info_05_05"); //Jsem jedno ucho, take se dozvídám uiteèné informace. Nemáš náhodou sebou nìjakou rudu? Øeknìme 10 nugetù?
+	AI_Output (other, self,"VLK_585_Aleph_GUARDS_Info_15_01"); //Jak to myslÃ­Å¡?
+	AI_Output (self, other,"VLK_585_Aleph_GUARDS_Info_05_02"); //Pracuju jen tehdy, kdyÅ¾ jsou strÃ¡Å¾e blÃ­zko nebo kdyÅ¾ mÄ› mÅ¯Å¾ou vidÄ›t. Jinak se jenom prochÃ¡zÃ­m.
+	AI_Output (other, self,"VLK_585_Aleph_GUARDS_Info_15_03"); //Nedostanou podezÅ™enÃ­?
+	AI_Output (self, other,"VLK_585_Aleph_GUARDS_Info_05_04"); //Jo, jistÄ›, narubu mÃ­Åˆ rudy neÅ¾ ostatnÃ­. NenÃ­ to nikdy dost, a tak musÃ­m dÄ›lat trochu obchod.
+	AI_Output (self, other,"VLK_585_Aleph_GUARDS_Info_05_05"); //Jsem jedno ucho, takÅ¾e se dozvÃ­dÃ¡m uÅ¾iteÄnÃ© informace. NemÃ¡Å¡ nÃ¡hodou sebou nÄ›jakou rudu? Å˜eknÄ›me 10 nugetÅ¯?
 
 	Npc_ExchangeRoutine (self,"BUSY");
 	
@@ -90,7 +90,7 @@ instance VLK_585_Aleph_INFO (C_INFO)
 	information		= VLK_585_Aleph_INFO_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "(dej 10 nugetù)";
+	description		= "(dej 10 nugetÅ¯)";
 };
 
 FUNC int  VLK_585_Aleph_INFO_Condition()
@@ -103,15 +103,15 @@ FUNC int  VLK_585_Aleph_INFO_Condition()
 
 func void  VLK_585_Aleph_INFO_Info()
 {
-	AI_Output (other,self,"VLK_585_Aleph_INFO_Info_15_01"); //Dobøe, tady máš 10 nugetù.
-	AI_Output (self,other,"VLK_585_Aleph_INFO_Info_05_02"); //Díky. Kdy pùjdeš do hlavní šachty a pùjdeš po lávkách poøád dolu, dostaneš se za chvíli do dvojité jeskynì.
-	AI_Output (self,other,"VLK_585_Aleph_INFO_Info_05_03"); //V té druhé je strá a také tam stojí stará drtièka.
-	AI_Output (self,other,"VLK_585_Aleph_INFO_Info_05_04"); //Povalují se tam hojivé lektvary, ale mìj se na pozoru pøed èervy!
-	AI_Output (self,other,"VLK_585_Aleph_INFO_Info_05_05"); //A kdybys nìco potøeboval, nebo nìco slyšel, vra se zpátky ke mnì, urèitì ti budu schopen pomoci...
+	AI_Output (other,self,"VLK_585_Aleph_INFO_Info_15_01"); //DobÅ™e, tady mÃ¡Å¡ 10 nugetÅ¯.
+	AI_Output (self,other,"VLK_585_Aleph_INFO_Info_05_02"); //DÃ­ky. KdyÅ¾ pÅ¯jdeÅ¡ do hlavnÃ­ Å¡achty a pÅ¯jdeÅ¡ po lÃ¡vkÃ¡ch poÅ™Ã¡d dolu, dostaneÅ¡ se za chvÃ­li do dvojitÃ© jeskynÄ›.
+	AI_Output (self,other,"VLK_585_Aleph_INFO_Info_05_03"); //V tÃ© druhÃ© je strÃ¡Å¾ a takÃ© tam stojÃ­ starÃ¡ drtiÄka.
+	AI_Output (self,other,"VLK_585_Aleph_INFO_Info_05_04"); //PovalujÃ­ se tam hojivÃ© lektvary, ale mÄ›j se na pozoru pÅ™ed Äervy!
+	AI_Output (self,other,"VLK_585_Aleph_INFO_Info_05_05"); //A kdybys nÄ›co potÅ™eboval, nebo nÄ›co slyÅ¡el, vraÅ¥ se zpÃ¡tky ke mnÄ›, urÄitÄ› ti budu schopen pomoci...
 	
 	B_GiveInvItems (hero, other, ItMiNugget,10);
 };
-// ***************** WIRD ALEPH ANGESCHWÄRZT IST ER SAUER*****************************
+// ***************** WIRD ALEPH ANGESCHWÃ„RZT IST ER SAUER*****************************
 instance VLK_585_Aleph_ANGRY (C_INFO)
 {
 	npc				= VLK_585_Aleph;
@@ -132,7 +132,7 @@ FUNC int  VLK_585_Aleph_ANGRY_Condition()
 func void  VLK_585_Aleph_ANGRY_Info()
 {
 	
-	AI_Output (self,other,"VLK_585_Aleph_ANGRY_Info_05_01"); //Tys mì podvedl s Brandickem? Ztra se!
+	AI_Output (self,other,"VLK_585_Aleph_ANGRY_Info_05_01"); //Tys mÄ› podvedl s Brandickem? ZtraÅ¥ se!
 	
 	AI_StopProcessInfos	( self );
 	Npc_SetTempAttitude (self,ATT_ANGRY);
@@ -145,7 +145,7 @@ instance VLK_585_Aleph_KEY (C_INFO)
 	information		= VLK_585_Aleph_KEY_Info;
 	important		= 0;
 	permanent		= 0;
-	description     = "Máš ještì nìjaké uiteèné informace?";
+	description     = "MÃ¡Å¡ jeÅ¡tÄ› nÄ›jakÃ© uÅ¾iteÄnÃ© informace?";
 };
 FUNC int  VLK_585_Aleph_KEY_Condition()
 {
@@ -157,8 +157,8 @@ FUNC int  VLK_585_Aleph_KEY_Condition()
 
 func void  VLK_585_Aleph_KEY_Info()
 {
-	AI_Output (other,self,"VLK_585_Aleph_KEY_Info_15_01"); //Máš ještì nìjaké uiteèné informace?
-	AI_Output (self,other,"VLK_585_Aleph_KEY_Info_05_02"); //Jistì, máš 10 nugetù?
+	AI_Output (other,self,"VLK_585_Aleph_KEY_Info_15_01"); //MÃ¡Å¡ jeÅ¡tÄ› nÄ›jakÃ© uÅ¾iteÄnÃ© informace?
+	AI_Output (self,other,"VLK_585_Aleph_KEY_Info_05_02"); //JistÄ›, mÃ¡Å¡ 10 nugetÅ¯?
 };
 
 //***************** LOCKPICKS*****************************
@@ -169,7 +169,7 @@ instance VLK_585_Aleph_GLEN (C_INFO)
 	information		= VLK_585_Aleph_GLEN_Info;
 	important		= 0;
 	permanent		= 0;
-	description     = "(dej 10 nugetù)";
+	description     = "(dej 10 nugetÅ¯)";
 };
 FUNC int  VLK_585_Aleph_GLEN_Condition()
 {
@@ -182,15 +182,15 @@ FUNC int  VLK_585_Aleph_GLEN_Condition()
 func void  VLK_585_Aleph_GLEN_Info()
 {
 	
-	AI_Output (other,self,"VLK_585_Aleph_GLEN_Info_15_01"); //Za tuhle rudu oèekávám dobré informace!
-	AI_Output (self,other,"VLK_585_Aleph_GLEN_Info_05_02"); //Je tu hromada zamèenıch truhel. Glen, vrchní kopáè, ti mùe dát pár paklíèù.
+	AI_Output (other,self,"VLK_585_Aleph_GLEN_Info_15_01"); //Za tuhle rudu oÄekÃ¡vÃ¡m dobrÃ© informace!
+	AI_Output (self,other,"VLK_585_Aleph_GLEN_Info_05_02"); //Je tu hromada zamÄenÃ½ch truhel. Glen, vrchnÃ­ kopÃ¡Ä, ti mÅ¯Å¾e dÃ¡t pÃ¡r paklÃ­ÄÅ¯.
 	
 	B_GiveInvItems (hero, self, ItMinugget,10); 
 };
-//***************** LAGERSCHUPPENSCHLÜSSEL*****************************
+//***************** LAGERSCHUPPENSCHLÃœSSEL*****************************
 func void B_Aleph_StorageShedKey()
 {
-	B_LogEntry		(CH2_StorageShed,"Aleph mi prodal klíè od truhlic ve skladu!");
+	B_LogEntry		(CH2_StorageShed,"Aleph mi prodal klÃ­Ä od truhlic ve skladu!");
 };
 
 instance VLK_585_Aleph_SCHUPPEN (C_INFO)
@@ -200,7 +200,7 @@ instance VLK_585_Aleph_SCHUPPEN (C_INFO)
 	information		= VLK_585_Aleph_SCHUPPEN_Info;
 	important		= 0;
 	permanent		= 0;
-	description     = "Víš nìco o klíèi od tìch truhel ve skladové jeskyni?";
+	description     = "VÃ­Å¡ nÄ›co o klÃ­Äi od tÄ›ch truhel ve skladovÃ© jeskyni?";
 };
 FUNC int  VLK_585_Aleph_SCHUPPEN_Condition()
 {
@@ -213,17 +213,17 @@ FUNC int  VLK_585_Aleph_SCHUPPEN_Condition()
 func void  VLK_585_Aleph_SCHUPPEN_Info()
 {
 	
-	AI_Output (other,self,"VLK_585_Aleph_SCHUPPEN_Info_15_01"); //Víš nìco o klíèi od tìch truhel ve skladové jeskyni?
-	AI_Output (self,other,"VLK_585_Aleph_SCHUPPEN_Info_05_02"); //Jistì, to záleí na...
-	AI_Output (other,self,"VLK_585_Aleph_SCHUPPEN_Info_15_03"); //Tak kolik nugetù ti mám dát?
-	AI_Output (self,other,"VLK_585_Aleph_SCHUPPEN_Info_05_04"); //Uèíš se rychle.
+	AI_Output (other,self,"VLK_585_Aleph_SCHUPPEN_Info_15_01"); //VÃ­Å¡ nÄ›co o klÃ­Äi od tÄ›ch truhel ve skladovÃ© jeskyni?
+	AI_Output (self,other,"VLK_585_Aleph_SCHUPPEN_Info_05_02"); //JistÄ›, to zÃ¡leÅ¾Ã­ na...
+	AI_Output (other,self,"VLK_585_Aleph_SCHUPPEN_Info_15_03"); //Tak kolik nugetÅ¯ ti mÃ¡m dÃ¡t?
+	AI_Output (self,other,"VLK_585_Aleph_SCHUPPEN_Info_05_04"); //UÄÃ­Å¡ se rychle.
 	
 	Info_ClearChoices ( VLK_585_Aleph_SCHUPPEN );
 	
 	Info_AddChoice ( VLK_585_Aleph_SCHUPPEN,DIALOG_BACK 	   ,VLK_585_Aleph_SCHUPPEN_Back);
-	Info_AddChoice ( VLK_585_Aleph_SCHUPPEN,"Zapla 50 nugetù.",VLK_585_Aleph_SCHUPPEN_50 );
-	Info_AddChoice ( VLK_585_Aleph_SCHUPPEN,"Zapla 30 nugetù.",VLK_585_Aleph_SCHUPPEN_30 );
-	Info_AddChoice ( VLK_585_Aleph_SCHUPPEN,"Zapla 15 nugetù.",VLK_585_Aleph_SCHUPPEN_15 );
+	Info_AddChoice ( VLK_585_Aleph_SCHUPPEN,"ZaplaÅ¥ 50 nugetÅ¯.",VLK_585_Aleph_SCHUPPEN_50 );
+	Info_AddChoice ( VLK_585_Aleph_SCHUPPEN,"ZaplaÅ¥ 30 nugetÅ¯.",VLK_585_Aleph_SCHUPPEN_30 );
+	Info_AddChoice ( VLK_585_Aleph_SCHUPPEN,"ZaplaÅ¥ 15 nugetÅ¯.",VLK_585_Aleph_SCHUPPEN_15 );
 };
 
 
@@ -232,10 +232,10 @@ func void VLK_585_Aleph_SCHUPPEN_50 ()
 	
 	if (Npc_HasItems (hero, ItMiNugget) >= 50)
 	{ 
-		AI_Output			(other,self,"VLK_585_Aleph_SCHUPPEN_50_15_01"); //50 nugetù by ti mìlo víc ne staèit!
-		AI_Output			(self,other,"VLK_585_Aleph_SCHUPPEN_50_05_02"); //Jak šlechetné! Tady je klíè. A ten prsten si vezmi taky. Mnì vdycky pøináší štìstí.
+		AI_Output			(other,self,"VLK_585_Aleph_SCHUPPEN_50_15_01"); //50 nugetÅ¯ by ti mÄ›lo vÃ­c neÅ¾ staÄit!
+		AI_Output			(self,other,"VLK_585_Aleph_SCHUPPEN_50_05_02"); //Jak Å¡lechetnÃ©! Tady je klÃ­Ä. A ten prsten si vezmi taky. MnÄ› vÅ¾dycky pÅ™inÃ¡Å¡Ã­ Å¡tÄ›stÃ­.
 
-		CreateInvItems		(self, ItKe_OM_03,	1);			// nur für die korrekte Textausgaben!!!
+		CreateInvItems		(self, ItKe_OM_03,	1);			// nur fÃ¼r die korrekte Textausgaben!!!
 		B_GiveInvItems      (self, hero, ItKe_OM_03, 2);
 		Npc_RemoveInvItem	(hero, ItKe_OM_03);
 
@@ -251,7 +251,7 @@ func void VLK_585_Aleph_SCHUPPEN_50 ()
 	}
 	else
 	{
-		AI_Output (self,other,"VLK_585_Aleph_SCHUPPEN_50_05_03"); //Tolik rudy nemáš!
+		AI_Output (self,other,"VLK_585_Aleph_SCHUPPEN_50_05_03"); //Tolik rudy nemÃ¡Å¡!
 		VLK_585_Aleph_SCHUPPEN.permanent = 1;
 	};
 };
@@ -266,21 +266,21 @@ func void VLK_585_Aleph_SCHUPPEN_30 ()
 		B_GiveInvItems      (self, other, ItKe_OM_03, 1);
 		B_GiveInvItems	(hero, self, ItMinugget,30);  
 		Info_ClearChoices	(VLK_585_Aleph_SCHUPPEN );
-		AI_Output (other,self,"VLK_585_Aleph_SCHUPPEN_30_15_01"); //30 nugetù by mìlo staèit.
-		AI_Output (self,other,"VLK_585_Aleph_SCHUPPEN_30_05_02"); //Dobøe, náhodou mám ten klíè sebou.
+		AI_Output (other,self,"VLK_585_Aleph_SCHUPPEN_30_15_01"); //30 nugetÅ¯ by mÄ›lo staÄit.
+		AI_Output (self,other,"VLK_585_Aleph_SCHUPPEN_30_05_02"); //DobÅ™e, nÃ¡hodou mÃ¡m ten klÃ­Ä sebou.
 		VLK_585_Aleph_SCHUPPEN.permanent = 0;
 		B_Aleph_StorageShedKey();
 	}
 	else
 	{
-		AI_Output (self,other,"VLK_585_Aleph_SCHUPPEN_30_05_03"); //Tolik rudy nemáš!
+		AI_Output (self,other,"VLK_585_Aleph_SCHUPPEN_30_05_03"); //Tolik rudy nemÃ¡Å¡!
 		VLK_585_Aleph_SCHUPPEN.permanent = 1;
 	}; 
 };	
 func void VLK_585_Aleph_SCHUPPEN_15 ()
 {
-	AI_Output (other,self,"VLK_585_Aleph_SCHUPPEN_15_15_01"); //Bude ti 15 nugetù staèit?
-	AI_Output (self,other,"VLK_585_Aleph_SCHUPPEN_15_05_02"); //15 nugetù? Já o ádném klíèi nic nevím!
+	AI_Output (other,self,"VLK_585_Aleph_SCHUPPEN_15_15_01"); //Bude ti 15 nugetÅ¯ staÄit?
+	AI_Output (self,other,"VLK_585_Aleph_SCHUPPEN_15_05_02"); //15 nugetÅ¯? JÃ¡ o Å¾Ã¡dnÃ©m klÃ­Äi nic nevÃ­m!
 	VLK_585_Aleph_SCHUPPEN.permanent = 0;
 };	
 func void VLK_585_Aleph_SCHUPPEN_Back ()
@@ -289,7 +289,7 @@ func void VLK_585_Aleph_SCHUPPEN_Back ()
 	VLK_585_Aleph_SCHUPPEN.permanent = 1;
 };
 
-// WENN DER SPIELER ALEPH BEI BRANDICK ANGESCHWÄRZT HAT
+// WENN DER SPIELER ALEPH BEI BRANDICK ANGESCHWÃ„RZT HAT
 instance  VLK_585_Aleph_DIRTY (C_INFO)
 {
 	npc				= VLK_585_Aleph;
@@ -297,7 +297,7 @@ instance  VLK_585_Aleph_DIRTY (C_INFO)
 	information		= VLK_585_Aleph_DIRTY_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Víš nìco o klíèi od tìch truhel ve skladové jeskyni?"; 
+	description		= "VÃ­Å¡ nÄ›co o klÃ­Äi od tÄ›ch truhel ve skladovÃ© jeskyni?"; 
 };
 
 FUNC int  VLK_585_Aleph_DIRTY_Condition()
@@ -311,22 +311,22 @@ FUNC int  VLK_585_Aleph_DIRTY_Condition()
 
 FUNC void  VLK_585_Aleph_DIRTY_Info()
 {
-	AI_Output (other,self,"VLK_585_Aleph_DIRTY_Info_15_01"); //Víš nìco o klíèi od tìch truhel ve skladové jeskyni?
-	AI_Output (self,other,"VLK_585_Aleph_DIRTY_Info_05_02"); //Jistì, to záleí na...
-	AI_Output (other,self,"VLK_585_Aleph_DIRTY_Info_15_03"); //Tak kolik nugetù ti mám dát?
-	AI_Output (self,other,"VLK_585_Aleph_DIRTY_Info_05_04"); //Uèíš se rychle. Chci 100 nugetù.
+	AI_Output (other,self,"VLK_585_Aleph_DIRTY_Info_15_01"); //VÃ­Å¡ nÄ›co o klÃ­Äi od tÄ›ch truhel ve skladovÃ© jeskyni?
+	AI_Output (self,other,"VLK_585_Aleph_DIRTY_Info_05_02"); //JistÄ›, to zÃ¡leÅ¾Ã­ na...
+	AI_Output (other,self,"VLK_585_Aleph_DIRTY_Info_15_03"); //Tak kolik nugetÅ¯ ti mÃ¡m dÃ¡t?
+	AI_Output (self,other,"VLK_585_Aleph_DIRTY_Info_05_04"); //UÄÃ­Å¡ se rychle. Chci 100 nugetÅ¯.
 	
 	Info_ClearChoices ( VLK_585_Aleph_DIRTY );
 	
-	Info_AddChoice ( VLK_585_Aleph_DIRTY,"(zapla 100 nugetù)",VLK_585_Aleph_DIRTY_100 );
-	Info_AddChoice ( VLK_585_Aleph_DIRTY,"(nepla)",VLK_585_Aleph_DIRTY_NO );
+	Info_AddChoice ( VLK_585_Aleph_DIRTY,"(zaplaÅ¥ 100 nugetÅ¯)",VLK_585_Aleph_DIRTY_100 );
+	Info_AddChoice ( VLK_585_Aleph_DIRTY,"(neplaÅ¥)",VLK_585_Aleph_DIRTY_NO );
 };  
 func void VLK_585_Aleph_DIRTY_100()
 {
 	if Npc_HasItems (hero,ItMinugget)>=100
 	{ 
-		AI_Output (other,self,"VLK_585_Aleph_DIRTY_100_Info_15_01"); //Dobrá, ty podvodníku. Tady je 100 nugetù.
-		AI_Output (self,other,"VLK_585_Aleph_DIRTY_100_Info_05_02"); //Nemìl bys mì drádit. Tady je ten klíè.
+		AI_Output (other,self,"VLK_585_Aleph_DIRTY_100_Info_15_01"); //DobrÃ¡, ty podvodnÃ­ku. Tady je 100 nugetÅ¯.
+		AI_Output (self,other,"VLK_585_Aleph_DIRTY_100_Info_05_02"); //NemÄ›l bys mÄ› drÃ¡Å¾dit. Tady je ten klÃ­Ä.
 		B_GiveInvItems	(hero, self, ItMinugget,100);
 		CreateInvItem		(self, ItKe_OM_03);
 		B_GiveInvItems      (self, other, ItKe_OM_03, 1);
@@ -336,13 +336,13 @@ func void VLK_585_Aleph_DIRTY_100()
 	}
 	else
 	{
-		AI_Output (self,other,"VLK_585_Aleph_DIRTY_100_Info_05_03"); //Myslíš, e jsem tak stupidní nebo co? 100 nugetù a ani o jeden míò!
+		AI_Output (self,other,"VLK_585_Aleph_DIRTY_100_Info_05_03"); //MyslÃ­Å¡, Å¾e jsem tak stupidnÃ­ nebo co? 100 nugetÅ¯ a ani o jeden mÃ­Åˆ!
 		VLK_585_Aleph_DIRTY.permanent = 1;
 	};
 };
 func void VLK_585_Aleph_DIRTY_NO()
 {
-	AI_Output (other,self,"VLK_585_Aleph_DIRTY_NO_Info_15_01"); //Nemùu vyhodit 100 nugetù!
-	AI_Output (self,other,"VLK_585_Aleph_DIRTY_NO_Info_05_02"); //Hej, jsi to ty, kdo mì v jednom kuse pøemlouvá!
+	AI_Output (other,self,"VLK_585_Aleph_DIRTY_NO_Info_15_01"); //NemÅ¯Å¾u vyhodit 100 nugetÅ¯!
+	AI_Output (self,other,"VLK_585_Aleph_DIRTY_NO_Info_05_02"); //Hej, jsi to ty, kdo mÄ› v jednom kuse pÅ™emlouvÃ¡!
 	VLK_585_Aleph_DIRTY.permanent = 0;	
 };

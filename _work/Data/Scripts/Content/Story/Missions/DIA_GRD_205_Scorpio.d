@@ -47,50 +47,50 @@ FUNC int DIA_Scorpio_Hello_Condition()
 
 FUNC VOID DIA_Scorpio_Hello_Info()
 {
-	AI_Output (self, other,"DIA_Scorpio_Hello_13_00"); //Kdo TÃ pustil dovnit¯?
+	AI_Output (self, other,"DIA_Scorpio_Hello_13_00"); //Kdo Tƒö pustil dovnit≈ô?
 	AI_Output (other, self,"DIA_Scorpio_Hello_15_01"); //Thorus.
-	AI_Output (self, other,"DIA_Scorpio_Hello_13_02"); //A co tady chceö?
+	AI_Output (self, other,"DIA_Scorpio_Hello_13_02"); //A co tady chce≈°?
 
 	Info_ClearChoices 	(DIA_Scorpio_Hello);
-	Info_Addchoice 		(DIA_Scorpio_Hello,"Jen chci vidÏt, jak to tu vypad·.",DIA_Scorpio_Hello_JustLooking);
-	Info_Addchoice 		(DIA_Scorpio_Hello,"M·m zpr·vu pro m·gy.",DIA_Scorpio_Hello_Mages);
+	Info_Addchoice 		(DIA_Scorpio_Hello,"Jen chci vidƒõt, jak to tu vypad√°.",DIA_Scorpio_Hello_JustLooking);
+	Info_Addchoice 		(DIA_Scorpio_Hello,"M√°m zpr√°vu pro m√°gy.",DIA_Scorpio_Hello_Mages);
 	if (Kalom_Krautbote == LOG_RUNNING)
 	{
-		Info_Addchoice 		(DIA_Scorpio_Hello,"Nesu nÏjakou drogu z baûin pro Gomeze.",DIA_Scorpio_Hello_Kraut);
+		Info_Addchoice 		(DIA_Scorpio_Hello,"Nesu nƒõjakou drogu z ba≈æin pro Gomeze.",DIA_Scorpio_Hello_Kraut);
 	};
 	if (Npc_KnowsInfo(hero, Info_Thorus_ReadyForGomez))
 	{
-		Info_Addchoice 		(DIA_Scorpio_Hello,"P¯iöel jsem, abych se setkal s Gomezem. Chci se k v·m p¯idat.",DIA_Scorpio_Hello_Join);
+		Info_Addchoice 		(DIA_Scorpio_Hello,"P≈ôi≈°el jsem, abych se setkal s Gomezem. Chci se k v√°m p≈ôidat.",DIA_Scorpio_Hello_Join);
 	};
 };
 
 func void DIA_Scorpio_Hello_JustLooking()
 {
-	AI_Output (other, self,"DIA_Scorpio_Hello_JustLooking_15_00"); //Jen chci vidÏt, jak to tu vypad·.
-	AI_Output (self, other,"DIA_Scorpio_Hello_JustLooking_13_01"); //Z·bavnÈ.
+	AI_Output (other, self,"DIA_Scorpio_Hello_JustLooking_15_00"); //Jen chci vidƒõt, jak to tu vypad√°.
+	AI_Output (self, other,"DIA_Scorpio_Hello_JustLooking_13_01"); //Z√°bavn√©.
 	Info_ClearChoices 	(DIA_Scorpio_Hello);
 };
 
 func void DIA_Scorpio_Hello_Mages()
 {
-	AI_Output (other, self,"DIA_Scorpio_Hello_Mages_15_00"); //M·m zpr·vu pro m·gy.
-	AI_Output (self, other,"DIA_Scorpio_Hello_Mages_13_01"); //Ty pracujeö pro m·gy? S tÌm nechci nic mÌt...
+	AI_Output (other, self,"DIA_Scorpio_Hello_Mages_15_00"); //M√°m zpr√°vu pro m√°gy.
+	AI_Output (self, other,"DIA_Scorpio_Hello_Mages_13_01"); //Ty pracuje≈° pro m√°gy? S t√≠m nechci nic m√≠t...
 	Info_ClearChoices 	(DIA_Scorpio_Hello);
 };
 
 func void DIA_Scorpio_Hello_Kraut()
 {
-	AI_Output (other, self,"DIA_Scorpio_Hello_Kraut_15_00"); //Nesu nÏjakou drogu z baûin pro Gomeze.
-	AI_Output (self, other,"DIA_Scorpio_Hello_Kraut_13_01"); //Tak ji odevzdej v tom domÏ se dvÏma str·ûemi p¯ede dve¯mi.
+	AI_Output (other, self,"DIA_Scorpio_Hello_Kraut_15_00"); //Nesu nƒõjakou drogu z ba≈æin pro Gomeze.
+	AI_Output (self, other,"DIA_Scorpio_Hello_Kraut_13_01"); //Tak ji odevzdej v tom domƒõ se dvƒõma str√°≈æemi p≈ôede dve≈ômi.
 	Info_ClearChoices 	(DIA_Scorpio_Hello);
 };
 
 func void DIA_Scorpio_Hello_Join()
 {
-	AI_Output (other, self,"DIA_Scorpio_Hello_Join_15_00"); //P¯iöel jsem, abych se setkal Gomezem. Chci se k v·m p¯idat.
-	AI_Output (self, other,"DIA_Scorpio_Hello_Join_13_01"); //Ty? Co bys tak pro n·s mohl dÏlat?
-	AI_Output (other, self,"DIA_Scorpio_Hello_Join_15_02"); //StÌnovÈ se mnou byli velmi spokojeni.
-	AI_Output (self, other,"DIA_Scorpio_Hello_Join_13_03"); //Nikdo z n·s tady nechce o StÌnech ani slyöet. Tady jsme MY.
+	AI_Output (other, self,"DIA_Scorpio_Hello_Join_15_00"); //P≈ôi≈°el jsem, abych se setkal Gomezem. Chci se k v√°m p≈ôidat.
+	AI_Output (self, other,"DIA_Scorpio_Hello_Join_13_01"); //Ty? Co bys tak pro n√°s mohl dƒõlat?
+	AI_Output (other, self,"DIA_Scorpio_Hello_Join_15_02"); //St√≠nov√© se mnou byli velmi spokojeni.
+	AI_Output (self, other,"DIA_Scorpio_Hello_Join_13_03"); //Nikdo z n√°s tady nechce o St√≠nech ani sly≈°et. Tady jsme MY.
 	Info_ClearChoices 	(DIA_Scorpio_Hello);
 };
 
@@ -105,7 +105,7 @@ instance DIA_Scorpio_REFUSETRAIN (C_INFO)
 	condition	= DIA_Scorpio_REFUSETRAIN_Condition;
 	information	= DIA_Scorpio_REFUSETRAIN_Info;
 	permanent	= 1;
-	description = "NauËÌö mÏ bojovat?";
+	description = "Nauƒç√≠≈° mƒõ bojovat?";
 };                       
 
 FUNC int DIA_Scorpio_REFUSETRAIN_Condition()
@@ -118,13 +118,13 @@ FUNC int DIA_Scorpio_REFUSETRAIN_Condition()
 
 FUNC VOID DIA_Scorpio_REFUSETRAIN_Info()
 {
-	AI_Output (other, self,"DIA_Scorpio_REFUSETRAIN_15_00"); //NauËÌö mÏ bojovat?
-	AI_Output (self, other,"DIA_Scorpio_REFUSETRAIN_13_01"); //CviËÌm jenom str·ûe. Dokud tÏ k nim Thorus nejmenuje, budeö si muset najÌt nÏkoho jinÈho.
+	AI_Output (other, self,"DIA_Scorpio_REFUSETRAIN_15_00"); //Nauƒç√≠≈° mƒõ bojovat?
+	AI_Output (self, other,"DIA_Scorpio_REFUSETRAIN_13_01"); //Cviƒç√≠m jenom str√°≈æe. Dokud tƒõ k nim Thorus nejmenuje, bude≈° si muset naj√≠t nƒõkoho jin√©ho.
 	
 };
 
 //*******************************
-//*********∞∞∞∞∞∞∞∞∞∞∞***********
+//*********¬∞¬∞¬∞¬∞¬∞¬∞¬∞¬∞¬∞¬∞¬∞***********
 //********* KAPITEL 3 ***********
 //*********...........***********
 //*******************************
@@ -152,7 +152,7 @@ FUNC int  GRD_205_Scorpio_WELCOME_Condition()
 func void  GRD_205_Scorpio_WELCOME_Info()
 {
 	
-	AI_Output (self, other,"GRD_205_Scorpio_WELCOME_Info_13_01"); //D·t se k n·m byla tvoje nejlepöÌ volba v ûivotÏ!
+	AI_Output (self, other,"GRD_205_Scorpio_WELCOME_Info_13_01"); //D√°t se k n√°m byla tvoje nejlep≈°√≠ volba v ≈æivotƒõ!
 	AI_StopProcessInfos	( self );
 };
 
@@ -167,7 +167,7 @@ instance  GRD_205_Scorpio_CROSSBOW (C_INFO)
 	information		= GRD_205_Scorpio_CROSSBOW_Info;
 	important		= 0;
 	permanent		= 1;
-	description		= "Budeö mÏ cviËit?"; 
+	description		= "Bude≈° mƒõ cviƒçit?"; 
 };
 
 FUNC int  GRD_205_Scorpio_CROSSBOW_Condition()
@@ -182,20 +182,20 @@ FUNC int  GRD_205_Scorpio_CROSSBOW_Condition()
 };
 FUNC void  GRD_205_Scorpio_CROSSBOW_Info()
 {
-	AI_Output (other, self,"GRD_205_Scorpio_CROSSBOW_Info_15_01"); //Budeö mÏ cviËit?
-	AI_Output (self, other,"GRD_205_Scorpio_CROSSBOW_Info_13_02"); //Pokud m·ö dost rudy, nauËÌm tÏ, jak pouûÌvat samost¯Ìl. Zaplaù mi 200 nuget˘.
+	AI_Output (other, self,"GRD_205_Scorpio_CROSSBOW_Info_15_01"); //Bude≈° mƒõ cviƒçit?
+	AI_Output (self, other,"GRD_205_Scorpio_CROSSBOW_Info_13_02"); //Pokud m√°≈° dost rudy, nauƒç√≠m tƒõ, jak pou≈æ√≠vat samost≈ô√≠l. Zapla≈• mi 200 nuget≈Ø.
 	if (log_scorpiocrossbow == FALSE)
 	&& (Kapitel <= 4)
 	{
 		Log_CreateTopic   	(GE_TeacherOC,LOG_NOTE);
-		B_LogEntry			(GE_TeacherOC,"Scorpio mÏ m˘ûe nauËit pouûÌvat SAMOSTÿÕL.");
+		B_LogEntry			(GE_TeacherOC,"Scorpio mƒõ m≈Ø≈æe nauƒçit pou≈æ√≠vat SAMOST≈ò√çL.");
 		log_scorpiocrossbow = TRUE;
 	}
 	else if (log_scorpiocrossbow == FALSE)
 	&& (Kapitel > 4)
 	{
 		Log_CreateTopic   	(GE_TeacherOW,LOG_NOTE);
-		B_LogEntry			(GE_TeacherOW,"Scorpio mÏ m˘ûe nauËit pouûÌvat SAMOSTÿÕL.");
+		B_LogEntry			(GE_TeacherOW,"Scorpio mƒõ m≈Ø≈æe nauƒçit pou≈æ√≠vat SAMOST≈ò√çL.");
 		log_scorpiocrossbow = TRUE;
 	};
 	Info_ClearChoices (GRD_205_Scorpio_CROSSBOW);
@@ -210,23 +210,23 @@ func void GRD_205_Scorpio_CROSSBOW_BACK()
 
 func void GRD_205_Scorpio_CROSSBOW_OK()
 {
-	AI_Output (other, self,"GRD_205_Scorpio_CROSSBOW_OK_15_01"); //NauË mÏ jeötÏ lÈpe zach·zet se samost¯Ìlem.
+	AI_Output (other, self,"GRD_205_Scorpio_CROSSBOW_OK_15_01"); //Nauƒç mƒõ je≈°tƒõ l√©pe zach√°zet se samost≈ô√≠lem.
 	if (Npc_HasItems (hero,ItMiNugget)>= 200)
 	{
 		if (B_GiveSkill(other,NPC_TALENT_CROSSBOW , 1, LPCOST_TALENT_CROSSBOW_1))
 		{
-			AI_Output (self, other,"GRD_205_Scorpio_CROSSBOW_OK_13_02"); //Dobr·, tak zaËneme.
-			AI_Output (self, other,"GRD_205_Scorpio_CROSSBOW_OK_13_03"); //Sev¯i ˙chyt öÌpu a drû jej tÏsnÏ proti ramenu. Pak se soust¯eÔ na zamÏ¯enÌ.
-			AI_Output (self, other,"GRD_205_Scorpio_CROSSBOW_OK_13_04"); //V prvnÌch dnech budeö mÌt pocit, jakoby ti rameno mÏlo upadnout.
-			AI_Output (self, other,"GRD_205_Scorpio_CROSSBOW_OK_13_05"); //Ale uû po t˝dnu budeö mÌt rameno jako k·men!
-			AI_Output (self, other,"GRD_205_Scorpio_CROSSBOW_OK_13_06"); //ZamÏ¯ p¯Ìmo na cÌl podÈl nataûenÈho öÌpu. äÌp ze samost¯Ìlu m· daleko vÏtöÌ pr˘bojnost neû öÌp z obyËejnÈho luku, takûe zp˘sobÌ vÏtöÌ ökody!
+			AI_Output (self, other,"GRD_205_Scorpio_CROSSBOW_OK_13_02"); //Dobr√°, tak zaƒçneme.
+			AI_Output (self, other,"GRD_205_Scorpio_CROSSBOW_OK_13_03"); //Sev≈ôi √∫chyt ≈°√≠pu a dr≈æ jej tƒõsnƒõ proti ramenu. Pak se soust≈ôeƒè na zamƒõ≈ôen√≠.
+			AI_Output (self, other,"GRD_205_Scorpio_CROSSBOW_OK_13_04"); //V prvn√≠ch dnech bude≈° m√≠t pocit, jakoby ti rameno mƒõlo upadnout.
+			AI_Output (self, other,"GRD_205_Scorpio_CROSSBOW_OK_13_05"); //Ale u≈æ po t√Ωdnu bude≈° m√≠t rameno jako k√°men!
+			AI_Output (self, other,"GRD_205_Scorpio_CROSSBOW_OK_13_06"); //Zamƒõ≈ô p≈ô√≠mo na c√≠l pod√©l nata≈æen√©ho ≈°√≠pu. ≈†√≠p ze samost≈ô√≠lu m√° daleko vƒõt≈°√≠ pr≈Øbojnost ne≈æ ≈°√≠p z obyƒçejn√©ho luku, tak≈æe zp≈Øsob√≠ vƒõt≈°√≠ ≈°kody!
 			B_GiveInvItems (hero,other,ItMiNugget,200);
 			GRD_205_Scorpio_CROSSBOW.permanent = 0;
 		};
 	}
 	else
 	{
-	 AI_Output (self, other,"GRD_205_Scorpio_CROSSBOW_OK_13_07"); //DVÃ STÃ nuget˘ pÏknÏ sem, na ruku. Jestli nem·ö dost nuget˘, tak si je obstarej!
+	 AI_Output (self, other,"GRD_205_Scorpio_CROSSBOW_OK_13_07"); //DVƒö STƒö nuget≈Ø pƒõknƒõ sem, na ruku. Jestli nem√°≈° dost nuget≈Ø, tak si je obstarej!
 	};
 };
 
@@ -241,7 +241,7 @@ instance  GRD_205_Scorpio_CROSSBOW2 (C_INFO)
 	information		= GRD_205_Scorpio_CROSSBOW2_Info;
 	important		= 0;
 	permanent		= 1;
-	description		= "NauË mÏ jeötÏ lÈpe zach·zet se samost¯Ìlem."; 
+	description		= "Nauƒç mƒõ je≈°tƒõ l√©pe zach√°zet se samost≈ô√≠lem."; 
 };
 
 FUNC int  GRD_205_Scorpio_CROSSBOW2_Condition()
@@ -254,8 +254,8 @@ FUNC int  GRD_205_Scorpio_CROSSBOW2_Condition()
 };
 FUNC void  GRD_205_Scorpio_CROSSBOW2_Info()
 {
-	AI_Output (other, self,"GRD_205_Scorpio_CROSSBOW2_Info_15_01"); //NauË mÏ jeötÏ lÈpe zach·zet se samost¯Ìlem.
-	AI_Output (self, other,"GRD_205_Scorpio_CROSSBOW2_Info_13_02"); //To bude st·t 300 nuget˘.
+	AI_Output (other, self,"GRD_205_Scorpio_CROSSBOW2_Info_15_01"); //Nauƒç mƒõ je≈°tƒõ l√©pe zach√°zet se samost≈ô√≠lem.
+	AI_Output (self, other,"GRD_205_Scorpio_CROSSBOW2_Info_13_02"); //To bude st√°t 300 nuget≈Ø.
   
 	Info_ClearChoices (GRD_205_Scorpio_CROSSBOW2);
 	Info_Addchoice 	(GRD_205_Scorpio_CROSSBOW2,B_BuildLearnString(NAME_LearnCrossbow_2,	LPCOST_TALENT_CROSSBOW_2,300),GRD_205_Scorpio_CROSSBOW2_OK);
@@ -270,23 +270,23 @@ func void GRD_205_Scorpio_CROSSBOW2_BACK()
 
 func void GRD_205_Scorpio_CROSSBOW2_OK()
 {
-	AI_Output (other, self,"GRD_205_Scorpio_CROSSBOW2_OK_15_01"); //Tak zaËneme.
+	AI_Output (other, self,"GRD_205_Scorpio_CROSSBOW2_OK_15_01"); //Tak zaƒçneme.
 	if (Npc_HasItems (hero,ItMiNugget)>= 300)
 	{
 		if (B_GiveSkill(other,NPC_TALENT_CROSSBOW , 2, LPCOST_TALENT_CROSSBOW_2))
 		{
-		AI_Output (self, other,"GRD_205_Scorpio_CROSSBOW2_OK_13_02"); //Dob¯e. Pokud p¯i rozmachu pokrËÌö kolena, tvÈ övihy budou p¯esnÏjöÌ a r·znÏjöÌ.
-		AI_Output (self, other,"GRD_205_Scorpio_CROSSBOW2_OK_13_03"); //MusÌö se nauËit odhadnout, jakou rychlostÌ se pohybuje tv˘j protivnÌk.
-		AI_Output (self, other,"GRD_205_Scorpio_CROSSBOW2_OK_13_04"); //Vyst¯el öÌp do dr·hy pohybujÌcÌho se cÌle, abys jej zas·hl a poslal k zemi.
-		AI_Output (self, other,"GRD_205_Scorpio_CROSSBOW2_OK_13_05"); //Pokud m·ö vÌce neû jeden cÌl, pak nesmÌö pl˝tvat Ëasem. Sundej je jednoho po druhÈm v napl·novanÈm po¯adÌ.
-		AI_Output (self, other,"GRD_205_Scorpio_CROSSBOW2_OK_13_06"); //Tak jsem tÏ nauËil vöechno, co umÌm.
+		AI_Output (self, other,"GRD_205_Scorpio_CROSSBOW2_OK_13_02"); //Dob≈ôe. Pokud p≈ôi rozmachu pokrƒç√≠≈° kolena, tv√© ≈°vihy budou p≈ôesnƒõj≈°√≠ a r√°znƒõj≈°√≠.
+		AI_Output (self, other,"GRD_205_Scorpio_CROSSBOW2_OK_13_03"); //Mus√≠≈° se nauƒçit odhadnout, jakou rychlost√≠ se pohybuje tv≈Øj protivn√≠k.
+		AI_Output (self, other,"GRD_205_Scorpio_CROSSBOW2_OK_13_04"); //Vyst≈ôel ≈°√≠p do dr√°hy pohybuj√≠c√≠ho se c√≠le, abys jej zas√°hl a poslal k zemi.
+		AI_Output (self, other,"GRD_205_Scorpio_CROSSBOW2_OK_13_05"); //Pokud m√°≈° v√≠ce ne≈æ jeden c√≠l, pak nesm√≠≈° pl√Ωtvat ƒçasem. Sundej je jednoho po druh√©m v napl√°novan√©m po≈ôad√≠.
+		AI_Output (self, other,"GRD_205_Scorpio_CROSSBOW2_OK_13_06"); //Tak jsem tƒõ nauƒçil v≈°echno, co um√≠m.
 		B_GiveInvItems (hero,other,ItMiNugget,300);
 		GRD_205_Scorpio_CROSSBOW2.permanent = 0;
 		};
 	}
 	else
 	{
-	 AI_Output (self, other,"GRD_205_Scorpio_CROSSBOW2_OK_13_07"); //UvidÌme, jestli nÏkde dok·ûeö sehnat TÿI STA nuget˘.
+	 AI_Output (self, other,"GRD_205_Scorpio_CROSSBOW2_OK_13_07"); //Uvid√≠me, jestli nƒõkde dok√°≈æe≈° sehnat T≈òI STA nuget≈Ø.
 	};
 };
 /*------------------------------------------------------------------------
@@ -314,7 +314,7 @@ FUNC int  GRD_205_Scorpio_HeyPC_Condition()
 };
 func void  GRD_205_Scorpio_HeyPC_Info()
 {
-	AI_Output (self, other,"GRD_205_Scorpio_HeyPC_Info_13_01"); //Hej, û·dnej strach, ËlovÏËe. PojÔ sem!
+	AI_Output (self, other,"GRD_205_Scorpio_HeyPC_Info_13_01"); //Hej, ≈æ√°dnej strach, ƒçlovƒõƒçe. Pojƒè sem!
 };
 
 /*------------------------------------------------------------------------
@@ -327,7 +327,7 @@ instance  GRD_205_Scorpio_BANISHED (C_INFO)
 	information		= GRD_205_Scorpio_BANISHED_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Jsi v po¯·dku?"; 
+	description		= "Jsi v po≈ô√°dku?"; 
 };
 
 FUNC int  GRD_205_Scorpio_BANISHED_Condition()
@@ -340,13 +340,13 @@ FUNC int  GRD_205_Scorpio_BANISHED_Condition()
 };
 FUNC void  GRD_205_Scorpio_BANISHED_Info()
 {
-	AI_Output (other, self,"GRD_205_Scorpio_BANISHED_Info_15_01"); //Jsi v po¯·dku?
-	AI_Output (self, other,"GRD_205_Scorpio_BANISHED_Info_13_02"); //MizÌm odsud. Nestar·m se o ty pobudy, kterÈ str·ûe vyhodily.
-	AI_Output (self, other,"GRD_205_Scorpio_BANISHED_Info_13_03"); //M·m tady p·r pÏkn˝ch vÏciËek ze zbrojnice. Kdyû budeö pot¯ebovat nÏjakou zbraÚ, dej mi vÏdÏt.
+	AI_Output (other, self,"GRD_205_Scorpio_BANISHED_Info_15_01"); //Jsi v po≈ô√°dku?
+	AI_Output (self, other,"GRD_205_Scorpio_BANISHED_Info_13_02"); //Miz√≠m odsud. Nestar√°m se o ty pobudy, kter√© str√°≈æe vyhodily.
+	AI_Output (self, other,"GRD_205_Scorpio_BANISHED_Info_13_03"); //M√°m tady p√°r pƒõkn√Ωch vƒõciƒçek ze zbrojnice. Kdy≈æ bude≈° pot≈ôebovat nƒõjakou zbra≈à, dej mi vƒõdƒõt.
 	if (Scorpio_Exile == FALSE)
 	{
 	Log_CreateTopic   	(GE_TraderOW,LOG_NOTE);
-	B_LogEntry		(GE_TraderOW,"Scorpio z˘stal ve StarÈm t·bo¯e a teÔ ob˝v· spolu s Cavalornem loveckou ch˝öi mezi Star˝m a Nov˝m t·borem.");
+	B_LogEntry		(GE_TraderOW,"Scorpio z≈Østal ve Star√©m t√°bo≈ôe a teƒè ob√Ωv√° spolu s Cavalornem loveckou ch√Ω≈°i mezi Star√Ωm a Nov√Ωm t√°borem.");
 	Scorpio_Exile = TRUE;
 	};
 };  
@@ -362,7 +362,7 @@ instance  GRD_205_Scorpio_TRADE (C_INFO)
 	information		= GRD_205_Scorpio_TRADE_Info;
 	important		= 0;
 	permanent		= 1;
-	description		= "Ukaû, co m·ö."; 
+	description		= "Uka≈æ, co m√°≈°."; 
 	trade			= 1;
 };
 
@@ -376,6 +376,6 @@ FUNC int  GRD_205_Scorpio_TRADE_Condition()
 };
 FUNC void  GRD_205_Scorpio_TRADE_Info()
 {
-	AI_Output (other, self,"GRD_205_Scorpio_TRADE_Info_15_01"); //Ukaû, co m·ö.
+	AI_Output (other, self,"GRD_205_Scorpio_TRADE_Info_15_01"); //Uka≈æ, co m√°≈°.
 	
 };  

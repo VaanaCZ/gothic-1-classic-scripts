@@ -37,7 +37,7 @@ INSTANCE Info_Org_6_EinerVonEuchWerden (C_INFO) // E1
 	condition	= Info_Org_6_EinerVonEuchWerden_Condition;
 	information	= Info_Org_6_EinerVonEuchWerden_Info;
 	permanent	= 1;
-	description = "Chci se k v·m p¯idat!";
+	description = "Chci se k v√°m p≈ôidat!";
 };                       
 
 FUNC INT Info_Org_6_EinerVonEuchWerden_Condition()
@@ -50,11 +50,11 @@ FUNC INT Info_Org_6_EinerVonEuchWerden_Condition()
 
 FUNC VOID Info_Org_6_EinerVonEuchWerden_Info()
 {
-	AI_Output(other,self,"Info_Org_6_EinerVonEuchWerden_15_00"); //Chci se k v·m p¯idat!
-	AI_Output(self,other,"Info_Org_6_EinerVonEuchWerden_06_01"); //Lares rozhoduje, kdo se k tlupÏ p¯id·.
-	AI_Output(self,other,"Info_Org_6_EinerVonEuchWerden_06_02"); //To ale budeö pot¯ebovat sakra dobr˝ d˘vod, jestli se k nÏmu chceö dostat.
-	AI_Output(other,self,"Info_Org_6_EinerVonEuchWerden_15_03"); //Nap¯Ìklad?
-	AI_Output(self,other,"Info_Org_6_EinerVonEuchWerden_06_04"); //Nap¯Ìklad nÏkoho, kdo tÏ k nÏmu posÌl·.
+	AI_Output(other,self,"Info_Org_6_EinerVonEuchWerden_15_00"); //Chci se k v√°m p≈ôidat!
+	AI_Output(self,other,"Info_Org_6_EinerVonEuchWerden_06_01"); //Lares rozhoduje, kdo se k tlupƒõ p≈ôid√°.
+	AI_Output(self,other,"Info_Org_6_EinerVonEuchWerden_06_02"); //To ale bude≈° pot≈ôebovat sakra dobr√Ω d≈Øvod, jestli se k nƒõmu chce≈° dostat.
+	AI_Output(other,self,"Info_Org_6_EinerVonEuchWerden_15_03"); //Nap≈ô√≠klad?
+	AI_Output(self,other,"Info_Org_6_EinerVonEuchWerden_06_04"); //Nap≈ô√≠klad nƒõkoho, kdo tƒõ k nƒõmu pos√≠l√°.
 	var C_NPC Lares;		Lares	= Hlp_GetNpc(Org_801_Lares);
 	Lares.aivar[AIV_FINDABLE] = TRUE;
 };
@@ -69,7 +69,7 @@ INSTANCE Info_Org_6_WichtigePersonen(C_INFO)
 	condition	= Info_Org_6_WichtigePersonen_Condition;
 	information	= Info_Org_6_WichtigePersonen_Info;
 	permanent	= 1;
-	description = "Kdo je öÈf?";
+	description = "Kdo je ≈°√©f?";
 };                       
 
 FUNC INT Info_Org_6_WichtigePersonen_Condition()
@@ -79,10 +79,10 @@ FUNC INT Info_Org_6_WichtigePersonen_Condition()
 
 FUNC VOID Info_Org_6_WichtigePersonen_Info()
 {
-	AI_Output(other,self,"Info_Org_6_WichtigePersonen_15_00"); //Kdo je öÈf?
-	AI_Output(self,other,"Info_Org_6_WichtigePersonen_06_01"); //Tys pr·vÏ p¯iöel ze StarÈho t·bora, co?
-	AI_Output(self,other,"Info_Org_6_WichtigePersonen_06_02"); //Tady nenÌ û·dn˝ öÈf! Ten proklet˝ Lee se n·s snaûÌ drûet na uzdÏ, ale my si dÏl·me, co chceme.
-	AI_Output(self,other,"Info_Org_6_WichtigePersonen_06_03"); //Jestli m·me nÏco jako öÈfa, pak je to Lares. A ten m· dost rozumu na to, aby nikomu do jeho vÏcÌ nemluvil!
+	AI_Output(other,self,"Info_Org_6_WichtigePersonen_15_00"); //Kdo je ≈°√©f?
+	AI_Output(self,other,"Info_Org_6_WichtigePersonen_06_01"); //Tys pr√°vƒõ p≈ôi≈°el ze Star√©ho t√°bora, co?
+	AI_Output(self,other,"Info_Org_6_WichtigePersonen_06_02"); //Tady nen√≠ ≈æ√°dn√Ω ≈°√©f! Ten proklet√Ω Lee se n√°s sna≈æ√≠ dr≈æet na uzdƒõ, ale my si dƒõl√°me, co chceme.
+	AI_Output(self,other,"Info_Org_6_WichtigePersonen_06_03"); //Jestli m√°me nƒõco jako ≈°√©fa, pak je to Lares. A ten m√° dost rozumu na to, aby nikomu do jeho vƒõc√≠ nemluvil!
 	var C_NPC Lee;			Lee		= Hlp_GetNpc(Sld_700_Lee);
 	Lee.aivar[AIV_FINDABLE] = TRUE;
 	var C_NPC Lares;		Lares	= Hlp_GetNpc(Org_801_Lares);
@@ -99,7 +99,7 @@ INSTANCE Info_Org_6_DasLager(C_INFO)
 	condition	= Info_Org_6_DasLager_Condition;
 	information	= Info_Org_6_DasLager_Info;
 	permanent	= 1;
-	description = "Je nÏco, co bych mÏl vÏdÏt o tomhle mÌstÏ?";
+	description = "Je nƒõco, co bych mƒõl vƒõdƒõt o tomhle m√≠stƒõ?";
 };                       
 
 FUNC INT Info_Org_6_DasLager_Condition()
@@ -109,9 +109,9 @@ FUNC INT Info_Org_6_DasLager_Condition()
 
 FUNC VOID Info_Org_6_DasLager_Info()
 {
-	AI_Output(other,self,"Info_Org_6_DasLager_15_00"); //Je nÏco, co bych mÏl o tomhle mÌstÏ vÏdÏt?
-	AI_Output(self,other,"Info_Org_6_DasLager_06_01"); //Uprost¯ed tÈhle jeskynÏ je velk· kaverna pln· rudy. Ale jestli p¯em˝ölÌö, jak se k nÌ dostat, tak na to zapomeÚ!
-	AI_Output(self,other,"Info_Org_6_DasLager_06_02"); //S·m jsem se o to jednou pokouöel, ale ûold·ci to tu ve dne v noci st¯eûÌ.
+	AI_Output(other,self,"Info_Org_6_DasLager_15_00"); //Je nƒõco, co bych mƒõl o tomhle m√≠stƒõ vƒõdƒõt?
+	AI_Output(self,other,"Info_Org_6_DasLager_06_01"); //Uprost≈ôed t√©hle jeskynƒõ je velk√° kaverna pln√° rudy. Ale jestli p≈ôem√Ω≈°l√≠≈°, jak se k n√≠ dostat, tak na to zapome≈à!
+	AI_Output(self,other,"Info_Org_6_DasLager_06_02"); //S√°m jsem se o to jednou pokou≈°el, ale ≈æold√°ci to tu ve dne v noci st≈ôe≈æ√≠.
 };
 
 // *************************************************************************
@@ -134,9 +134,9 @@ FUNC INT Info_Org_6_DieLage_Condition()
 
 FUNC VOID Info_Org_6_DieLage_Info()
 {
-	AI_Output(other,self,"Info_Org_6_DieLage_15_00"); //Jak se m·ö?
-	AI_Output(self,other,"Info_Org_6_DieLage_06_01"); //»lovÏËe! Co si myslÌö? Cel˝ den se cp·t r˝ûÌ a celou dobu Ëekat na p¯Ìleûitost, jak se dostat k nÏjakÈ rudÏ.
-	AI_Output(self,other,"Info_Org_6_DieLage_06_02"); //Pak hur· do baru a naleju se aû po okraj r˝ûovou p·lenkou!
+	AI_Output(other,self,"Info_Org_6_DieLage_15_00"); //Jak se m√°≈°?
+	AI_Output(self,other,"Info_Org_6_DieLage_06_01"); //ƒålovƒõƒçe! Co si mysl√≠≈°? Cel√Ω den se cp√°t r√Ω≈æ√≠ a celou dobu ƒçekat na p≈ô√≠le≈æitost, jak se dostat k nƒõjak√© rudƒõ.
+	AI_Output(self,other,"Info_Org_6_DieLage_06_02"); //Pak hur√° do baru a naleju se a≈æ po okraj r√Ω≈æovou p√°lenkou!
 };
 
 // *************************************************************************
@@ -149,7 +149,7 @@ INSTANCE Info_Org_6_Krautprobe (C_INFO) // E1
 	condition	= Info_Org_6_Krautprobe_Condition;
 	information	= Info_Org_6_Krautprobe_Info;
 	permanent	= 1;
-	description = "M·m tu trochu drogy z baûin. D·ö si?";
+	description = "M√°m tu trochu drogy z ba≈æin. D√°≈° si?";
 };                       
 
 FUNC INT Info_Org_6_Krautprobe_Condition()
@@ -163,7 +163,7 @@ FUNC INT Info_Org_6_Krautprobe_Condition()
 
 FUNC VOID Info_Org_6_Krautprobe_Info()
 {
-	AI_Output(other,self,"Info_Org_6_Krautprobe_15_00"); //M·m tu trochu drogy z baûin. D·ö si?
+	AI_Output(other,self,"Info_Org_6_Krautprobe_15_00"); //M√°m tu trochu drogy z ba≈æin. D√°≈° si?
 	
 	if ( (Npc_HasItems(other,ItMiJoint_1)>0) || (Npc_HasItems(other,ItMiJoint_2)>0) || (Npc_HasItems(other,ItMiJoint_3)>0) )
 	{
@@ -174,8 +174,8 @@ FUNC VOID Info_Org_6_Krautprobe_Info()
 		else if (Npc_HasItems(other,ItMiJoint_3))
 		{	B_GiveInvItems(other,self,ItMiJoint_3,1);	 };
 		
-		AI_Output(self,other,"Info_Org_6_Krautprobe_06_01"); //JasnÏ. Tady je 10 nuget˘.
-		AI_Output(self,other,"Info_Org_6_Krautprobe_06_02"); //Aû budeö mÌt dalöÌ, p¯ijÔ zase, jo?
+		AI_Output(self,other,"Info_Org_6_Krautprobe_06_01"); //Jasnƒõ. Tady je 10 nuget≈Ø.
+		AI_Output(self,other,"Info_Org_6_Krautprobe_06_02"); //A≈æ bude≈° m√≠t dal≈°√≠, p≈ôijƒè zase, jo?
 		
 		CreateInvItems(self,itminugget,10);
 		B_GiveInvItems(self,other,itminugget,10);
@@ -184,7 +184,7 @@ FUNC VOID Info_Org_6_Krautprobe_Info()
 	}
 	else
 	{
-		AI_Output (self, other,"Info_Org_6_Krautprobe_No_Joint_06_00"); //Kde? é·dnou drogu tu nevidÌm.
+		AI_Output (self, other,"Info_Org_6_Krautprobe_No_Joint_06_00"); //Kde? ≈Ω√°dnou drogu tu nevid√≠m.
 	};
 };
 	

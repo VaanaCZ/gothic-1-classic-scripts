@@ -33,7 +33,7 @@ INSTANCE Info_Horatio_Wasser(C_INFO)
 	condition	= Info_Horatio_Wasser_Condition;
 	information	= Info_Horatio_Wasser_Info;
 	permanent	= 1;
-	description = "Lefty mì poslal. Pøinesl jsem ti trochu vody.";
+	description = "Lefty mÄ› poslal. PÅ™inesl jsem ti trochu vody.";
 };                       
 
 FUNC INT Info_Horatio_Wasser_Condition()
@@ -47,10 +47,10 @@ FUNC INT Info_Horatio_Wasser_Condition()
 
 FUNC VOID Info_Horatio_Wasser_Info()
 {
-	AI_Output(other,self,"Info_Horatio_Wasser_15_00"); //Poslal mì Lefty. Pøinesl jsem trochu vody.
+	AI_Output(other,self,"Info_Horatio_Wasser_15_00"); //Poslal mÄ› Lefty. PÅ™inesl jsem trochu vody.
 	if (Npc_HasItems(other, ItFo_Potion_Water_01)>=1)
 	{
-		AI_Output(self,other,"Info_Horatio_Wasser_09_01"); //Díky, pøíteli! Ještì chvíli a zaèal bych pít bahno!
+		AI_Output(self,other,"Info_Horatio_Wasser_09_01"); //DÃ­ky, pÅ™Ã­teli! JeÅ¡tÄ› chvÃ­li a zaÄal bych pÃ­t bahno!
 		B_GiveInvItems(other,self,ItFo_Potion_Water_01,1);
 		if ( C_BodystateContains(self, BS_SIT) )
 		{
@@ -67,7 +67,7 @@ FUNC VOID Info_Horatio_Wasser_Info()
 	}
 	else
 	{
-		AI_Output(self,other,"Info_Horatio_Wasser_NOWATER_09_00"); //U nic nezbylo. Vezmu si trochu od ostatních.
+		AI_Output(self,other,"Info_Horatio_Wasser_NOWATER_09_00"); //UÅ¾ nic nezbylo. Vezmu si trochu od ostatnÃ­ch.
 	};
 };
 
@@ -96,25 +96,25 @@ FUNC VOID DIA_Horatio_Hello_Info()
 {	
 	AI_GotoNpc	(self, hero);
 
-	AI_Output (self, other,"DIA_Horatio_Hello_09_00"); //Co tady dìláš? Hledáš problémy?
+	AI_Output (self, other,"DIA_Horatio_Hello_09_00"); //Co tady dÄ›lÃ¡Å¡? HledÃ¡Å¡ problÃ©my?
 	
 	Info_ClearChoices(DIA_Horatio_Hello );
-	Info_AddChoice	 (DIA_Horatio_Hello,"Problémy? S kım? S nìjakım rolníkem?",DIA_Horatio_Hello_PissOff);
-	Info_AddChoice	 (DIA_Horatio_Hello,"Hej, klídek! Jsem tady novı.",DIA_Horatio_Hello_BeCool);
+	Info_AddChoice	 (DIA_Horatio_Hello,"ProblÃ©my? S kÃ½m? S nÄ›jakÃ½m rolnÃ­kem?",DIA_Horatio_Hello_PissOff);
+	Info_AddChoice	 (DIA_Horatio_Hello,"Hej, klÃ­dek! Jsem tady novÃ½.",DIA_Horatio_Hello_BeCool);
 };
 
 func void DIA_Horatio_Hello_BeCool()
 {
-	AI_Output (other, self,"DIA_Horatio_Hello_BeCool_15_00"); //Hej, klídek! Jsem tady novı.
-	AI_Output (self, other,"DIA_Horatio_Hello_BeCool_09_01"); //Ha... Pøipadáš mi v poøádku... Jeden nikdy neví. Poøád pøicházejí noví chlapi.
+	AI_Output (other, self,"DIA_Horatio_Hello_BeCool_15_00"); //Hej, klÃ­dek! Jsem tady novÃ½.
+	AI_Output (self, other,"DIA_Horatio_Hello_BeCool_09_01"); //Ha... PÅ™ipadÃ¡Å¡ mi v poÅ™Ã¡dku... Jeden nikdy nevÃ­. PoÅ™Ã¡d pÅ™ichÃ¡zejÃ­ novÃ­ chlapi.
 	Info_ClearChoices(DIA_Horatio_Hello );
 };
 
 func void DIA_Horatio_Hello_PissOff()
 {
-	AI_Output (other, self,"DIA_Horatio_Hello_PissOff_15_00"); //Problémy? S kım? S nìjakım rolníkem?
-	AI_Output (self, other,"DIA_Horatio_Hello_PissOff_09_01"); //e pracuju na polích ještì neznamená, e se nedokáu ubránit takovım chlapíkùm, jako jsi ty.
-	AI_Output (self, other,"DIA_Horatio_Hello_PissOff_09_02"); //Tak pojï, jestli chceš mít problémy!
+	AI_Output (other, self,"DIA_Horatio_Hello_PissOff_15_00"); //ProblÃ©my? S kÃ½m? S nÄ›jakÃ½m rolnÃ­kem?
+	AI_Output (self, other,"DIA_Horatio_Hello_PissOff_09_01"); //Å½e pracuju na polÃ­ch jeÅ¡tÄ› neznamenÃ¡, Å¾e se nedokÃ¡Å¾u ubrÃ¡nit takovÃ½m chlapÃ­kÅ¯m, jako jsi ty.
+	AI_Output (self, other,"DIA_Horatio_Hello_PissOff_09_02"); //Tak pojÄ, jestli chceÅ¡ mÃ­t problÃ©my!
 	horatio_trouble = TRUE;
 	
 	Info_ClearChoices(DIA_Horatio_Hello);
@@ -132,7 +132,7 @@ INSTANCE DIA_Horatio_SORRY (C_INFO)
 	condition	= DIA_Horatio_SORRY_Condition;
 	information	= DIA_Horatio_SORRY_Info;
 	permanent	= 1;
-	description = "Je mi líto toho, co jsem øekl o rolnících.";
+	description = "Je mi lÃ­to toho, co jsem Å™ekl o rolnÃ­cÃ­ch.";
 };                       
 
 FUNC INT DIA_Horatio_SORRY_Condition()
@@ -145,8 +145,8 @@ FUNC INT DIA_Horatio_SORRY_Condition()
 
 FUNC VOID DIA_Horatio_SORRY_Info()
 {	
-	AI_Output (other, self,"DIA_Horatio_SORRY_15_00"); //Je mi líto toho, co jsem øekl o rolnících.
-	AI_Output (self, other,"DIA_Horatio_SORRY_09_01"); //Mìl bys napøed myslet, hochu!
+	AI_Output (other, self,"DIA_Horatio_SORRY_15_00"); //Je mi lÃ­to toho, co jsem Å™ekl o rolnÃ­cÃ­ch.
+	AI_Output (self, other,"DIA_Horatio_SORRY_09_01"); //MÄ›l bys napÅ™ed myslet, hochu!
 };
 
 // ************************************************************
@@ -160,7 +160,7 @@ INSTANCE DIA_Horatio_Story (C_INFO)
 	condition	= DIA_Horatio_Story_Condition;
 	information	= DIA_Horatio_Story_Info;
 	permanent	= 0;
-	description = "Co dìlá chlap jako ty mezi rolníkama?";
+	description = "Co dÄ›lÃ¡ chlap jako ty mezi rolnÃ­kama?";
 };                       
 
 FUNC INT DIA_Horatio_Story_Condition()
@@ -173,12 +173,12 @@ FUNC INT DIA_Horatio_Story_Condition()
 
 FUNC VOID DIA_Horatio_Story_Info()
 {	
-	AI_Output (other, self,"DIA_Horatio_Story_15_00"); //Co dìlá chlap jako ty mezi rolníkama?
-	AI_Output (self, other,"DIA_Horatio_Story_09_01"); //Lee mì o to poádal. Ale u se neperu - s vıjimkou sebeobrany.
-	AI_Output (self, other,"DIA_Horatio_Story_09_02"); //Jednou jsem zabil jednoho chlapíka, a to jednou bylo a moc. To je dùvod, proè mì poslali do téhle zpropadené kolonie - takovı je zákon.
+	AI_Output (other, self,"DIA_Horatio_Story_15_00"); //Co dÄ›lÃ¡ chlap jako ty mezi rolnÃ­kama?
+	AI_Output (self, other,"DIA_Horatio_Story_09_01"); //Lee mÄ› o to poÅ¾Ã¡dal. Ale uÅ¾ se neperu - s vÃ½jimkou sebeobrany.
+	AI_Output (self, other,"DIA_Horatio_Story_09_02"); //Jednou jsem zabil jednoho chlapÃ­ka, a to jednou bylo aÅ¾ moc. To je dÅ¯vod, proÄ mÄ› poslali do tÃ©hle zpropadenÃ© kolonie - takovÃ½ je zÃ¡kon.
 	AI_Output (other, self,"DIA_Horatio_Story_15_03"); //Jak se to stalo?
-	AI_Output (self, other,"DIA_Horatio_Story_09_04"); //Byla to obyèejná hospodská rvaèka. Nechtìl jsem toho kluka zabít, jenom jsem ho praštil moc silnì.
-	AI_Output (self, other,"DIA_Horatio_Story_09_05"); //Byl jsem tehdy kováø. Nevìdìl jsem, jakou mám vlastnì sílu...
+	AI_Output (self, other,"DIA_Horatio_Story_09_04"); //Byla to obyÄejnÃ¡ hospodskÃ¡ rvaÄka. NechtÄ›l jsem toho kluka zabÃ­t, jenom jsem ho praÅ¡til moc silnÄ›.
+	AI_Output (self, other,"DIA_Horatio_Story_09_05"); //Byl jsem tehdy kovÃ¡Å™. NevÄ›dÄ›l jsem, jakou mÃ¡m vlastnÄ› sÃ­lu...
 };
 
 // ************************************************************
@@ -192,7 +192,7 @@ INSTANCE DIA_Horatio_WhyHere (C_INFO)
 	condition	= DIA_Horatio_WhyHere_Condition;
 	information	= DIA_Horatio_WhyHere_Info;
 	permanent	= 0;
-	description = "Proè ses dal k TOMUHLE táboru?";
+	description = "ProÄ ses dal k TOMUHLE tÃ¡boru?";
 };                       
 
 FUNC INT DIA_Horatio_WhyHere_Condition()
@@ -205,11 +205,11 @@ FUNC INT DIA_Horatio_WhyHere_Condition()
 
 FUNC VOID DIA_Horatio_WhyHere_Info()
 {	
-	AI_Output (other, self,"DIA_Horatio_WhyHere_15_00"); //Proè ses dal k TOMUHLE táboru?
-	AI_Output (self, other,"DIA_Horatio_WhyHere_09_01"); //Jedno ti øeknu: jediná další monost byla dát se k tìm sektáøskım bláznùm. Ale já nemám nejmenší chu nechat si od jejich Guru vymıt mozek.
-	AI_Output (self, other,"DIA_Horatio_WhyHere_09_02"); //Ve Starém táboøe jsem mìl spoustu problémù se stráemi, ale u oldákù a banditù jsem mìl aspoò nìjakı respekt.
-	AI_Output (other, self,"DIA_Horatio_WhyHere_15_03"); //Mìli z tebe strach...
-	AI_Output (self, other,"DIA_Horatio_WhyHere_09_04"); //Moná. Ale kadopádnì jsem našel svoje místo tady a ty bys mìl zkusit to samé.
+	AI_Output (other, self,"DIA_Horatio_WhyHere_15_00"); //ProÄ ses dal k TOMUHLE tÃ¡boru?
+	AI_Output (self, other,"DIA_Horatio_WhyHere_09_01"); //Jedno ti Å™eknu: jedinÃ¡ dalÅ¡Ã­ moÅ¾nost byla dÃ¡t se k tÄ›m sektÃ¡Å™skÃ½m blÃ¡znÅ¯m. Ale jÃ¡ nemÃ¡m nejmenÅ¡Ã­ chuÅ¥ nechat si od jejich Guru vymÃ½t mozek.
+	AI_Output (self, other,"DIA_Horatio_WhyHere_09_02"); //Ve StarÃ©m tÃ¡boÅ™e jsem mÄ›l spoustu problÃ©mÅ¯ se strÃ¡Å¾emi, ale u Å¾oldÃ¡kÅ¯ a banditÅ¯ jsem mÄ›l aspoÅˆ nÄ›jakÃ½ respekt.
+	AI_Output (other, self,"DIA_Horatio_WhyHere_15_03"); //MÄ›li z tebe strach...
+	AI_Output (self, other,"DIA_Horatio_WhyHere_09_04"); //MoÅ¾nÃ¡. Ale kaÅ¾dopÃ¡dnÄ› jsem naÅ¡el svoje mÃ­sto tady a ty bys mÄ›l zkusit to samÃ©.
 };
 
 // ************************************************************
@@ -225,7 +225,7 @@ INSTANCE DIA_Horatio_PleaseTeachSTR (C_INFO)
 	condition	= DIA_Horatio_PleaseTeachSTR_Condition;
 	information	= DIA_Horatio_PleaseTeachSTR_Info;
 	permanent	= 0;
-	description = "Nauèíš mì, jak se stát tak silnım jako jsi ty?";
+	description = "NauÄÃ­Å¡ mÄ›, jak se stÃ¡t tak silnÃ½m jako jsi ty?";
 };                       
 
 FUNC INT DIA_Horatio_PleaseTeachSTR_Condition()
@@ -238,49 +238,49 @@ FUNC INT DIA_Horatio_PleaseTeachSTR_Condition()
 
 FUNC VOID DIA_Horatio_PleaseTeachSTR_Info()
 {	
-	AI_Output (other, self,"DIA_Horatio_PleaseTeachSTR_15_00"); //Nauèíš mì, jak se stát tak silnım jako jsi ty?
-	AI_Output (self, other,"DIA_Horatio_PleaseTeachSTR_09_01"); //I kdybych mohl - JAK bys pak svoji sílu vyuil?
+	AI_Output (other, self,"DIA_Horatio_PleaseTeachSTR_15_00"); //NauÄÃ­Å¡ mÄ›, jak se stÃ¡t tak silnÃ½m jako jsi ty?
+	AI_Output (self, other,"DIA_Horatio_PleaseTeachSTR_09_01"); //I kdybych mohl - JAK bys pak svoji sÃ­lu vyuÅ¾il?
 	Info_ClearChoices(DIA_Horatio_PleaseTeachSTR );
 	var C_NPC ricelord; ricelord = Hlp_GetNpc(Bau_900_Ricelord);
 	if	Npc_KnowsInfo(hero,DIA_Jeremiah_Horatio)
 	{
-		Info_AddChoice	 (DIA_Horatio_PleaseTeachSTR,"Mohl bych pak vyøídit Rıového Lorda a jeho tlupu!",DIA_Horatio_PleaseTeachSTR_Ricelord);
+		Info_AddChoice	 (DIA_Horatio_PleaseTeachSTR,"Mohl bych pak vyÅ™Ã­dit RÃ½Å¾ovÃ©ho Lorda a jeho tlupu!",DIA_Horatio_PleaseTeachSTR_Ricelord);
 	}
 	else
 	{
-		Info_AddChoice	 (DIA_Horatio_PleaseTeachSTR,"Dobrá otázka. Budu o tom pøemıšlet...",DIA_Horatio_PleaseTeachSTR_BACK);
+		Info_AddChoice	 (DIA_Horatio_PleaseTeachSTR,"DobrÃ¡ otÃ¡zka. Budu o tom pÅ™emÃ½Å¡let...",DIA_Horatio_PleaseTeachSTR_BACK);
 	};
 	Info_AddChoice	 (DIA_Horatio_PleaseTeachSTR,"Sebeobrana!",DIA_Horatio_PleaseTeachSTR_Defend);
-	Info_AddChoice	 (DIA_Horatio_PleaseTeachSTR,"Nauèil bych ty bastardy, jak se mnou mají správnì mluvit!",DIA_Horatio_PleaseTeachSTR_Attack);
+	Info_AddChoice	 (DIA_Horatio_PleaseTeachSTR,"NauÄil bych ty bastardy, jak se mnou majÃ­ sprÃ¡vnÄ› mluvit!",DIA_Horatio_PleaseTeachSTR_Attack);
 
 	Log_CreateTopic		(CH1_HoratiosTeachings,	LOG_MISSION);
 	Log_SetTopicStatus	(CH1_HoratiosTeachings, LOG_RUNNING);
-	B_LogEntry			(CH1_HoratiosTeachings,"Horatio, rolník z rıovıch polí Nového tábora, mì mùe nauèit, jak silnìji udeøit. Nìjak však nemùu najít správnou odpovìï na jeho otázku PROÈ.");
+	B_LogEntry			(CH1_HoratiosTeachings,"Horatio, rolnÃ­k z rÃ½Å¾ovÃ½ch polÃ­ NovÃ©ho tÃ¡bora, mÄ› mÅ¯Å¾e nauÄit, jak silnÄ›ji udeÅ™it. NÄ›jak vÅ¡ak nemÅ¯Å¾u najÃ­t sprÃ¡vnou odpovÄ›Ä na jeho otÃ¡zku PROÄŒ.");
 };
 
 func void DIA_Horatio_PleaseTeachSTR_Attack()
 {
-	AI_Output (other, self,"DIA_Horatio_PleaseTeachSTR_Attack_15_00"); //Nauèil bych ty bastardy, jak se mnou mají správnì mluvit!
-	AI_Output (self, other,"DIA_Horatio_PleaseTeachSTR_Attack_09_01"); //Pøedtím bys mìl vìdìt, e ses sám stal jedním z tìch bastardù... Ne, sire, na to tì pøipravovat nebudu.
+	AI_Output (other, self,"DIA_Horatio_PleaseTeachSTR_Attack_15_00"); //NauÄil bych ty bastardy, jak se mnou majÃ­ sprÃ¡vnÄ› mluvit!
+	AI_Output (self, other,"DIA_Horatio_PleaseTeachSTR_Attack_09_01"); //PÅ™edtÃ­m bys mÄ›l vÄ›dÄ›t, Å¾e ses sÃ¡m stal jednÃ­m z tÄ›ch bastardÅ¯... Ne, sire, na to tÄ› pÅ™ipravovat nebudu.
 	Info_ClearChoices(DIA_Horatio_PleaseTeachSTR );
 };
 
 func void DIA_Horatio_PleaseTeachSTR_Defend()
 {
 	AI_Output (other, self,"DIA_Horatio_PleaseTeachSTR_Defend_15_00"); //Sebeobrana!
-	AI_Output (self, other,"DIA_Horatio_PleaseTeachSTR_Defend_09_01"); //To chce rychlost, ne sílu. Myslíš, e rozbít nìkomu lebku, je lepší, ne sjednat mír?
+	AI_Output (self, other,"DIA_Horatio_PleaseTeachSTR_Defend_09_01"); //To chce rychlost, ne sÃ­lu. MyslÃ­Å¡, Å¾e rozbÃ­t nÄ›komu lebku, je lepÅ¡Ã­, neÅ¾ sjednat mÃ­r?
 };
 
 func void DIA_Horatio_PleaseTeachSTR_BACK()
 {
-	AI_Output (other, self,"DIA_Horatio_PleaseTeachSTR_BACK_15_00"); //Dobrá otázka. Budu o tom pøemıšlet...
+	AI_Output (other, self,"DIA_Horatio_PleaseTeachSTR_BACK_15_00"); //DobrÃ¡ otÃ¡zka. Budu o tom pÅ™emÃ½Å¡let...
 	Info_ClearChoices(DIA_Horatio_PleaseTeachSTR );
 };
 
 func void DIA_Horatio_PleaseTeachSTR_Ricelord()
 {
-	AI_Output (other, self,"DIA_Horatio_PleaseTeachSTR_Ricelord_15_00"); //Mohl bych pak vyøídit Rıového Lorda a jeho tlupu!
-	AI_Output (self, other,"DIA_Horatio_PleaseTeachSTR_Ricelord_09_01"); //Hmm... Nebyl bys první, kdo se o to pokusil.
+	AI_Output (other, self,"DIA_Horatio_PleaseTeachSTR_Ricelord_15_00"); //Mohl bych pak vyÅ™Ã­dit RÃ½Å¾ovÃ©ho Lorda a jeho tlupu!
+	AI_Output (self, other,"DIA_Horatio_PleaseTeachSTR_Ricelord_09_01"); //Hmm... Nebyl bys prvnÃ­, kdo se o to pokusil.
 	horatio_StrFree = TRUE;
 	Info_ClearChoices(DIA_Horatio_PleaseTeachSTR );
 };
@@ -296,7 +296,7 @@ INSTANCE DIA_Horatio_ThoughtSTR (C_INFO)
 	condition	= DIA_Horatio_ThoughtSTR_Condition;
 	information	= DIA_Horatio_ThoughtSTR_Info;
 	permanent	= 1;
-	description = "Celé jsem si to ještì promyslel...";
+	description = "CelÃ© jsem si to jeÅ¡tÄ› promyslel...";
 };                       
 
 FUNC INT DIA_Horatio_ThoughtSTR_Condition()
@@ -309,8 +309,8 @@ FUNC INT DIA_Horatio_ThoughtSTR_Condition()
 
 FUNC VOID DIA_Horatio_ThoughtSTR_Info()
 {	
-	AI_Output (other, self,"DIA_Horatio_ThoughtSTR_15_00"); //Celé jsem si to ještì promyslel...
-	AI_Output (self, other,"DIA_Horatio_ThoughtSTR_09_01"); //No a? Vymyslel jsi nìco lepšího?
+	AI_Output (other, self,"DIA_Horatio_ThoughtSTR_15_00"); //CelÃ© jsem si to jeÅ¡tÄ› promyslel...
+	AI_Output (self, other,"DIA_Horatio_ThoughtSTR_09_01"); //No a? Vymyslel jsi nÄ›co lepÅ¡Ã­ho?
 	
 	Info_ClearChoices(DIA_Horatio_ThoughtSTR );
 	Info_AddChoice	 (DIA_Horatio_ThoughtSTR,"Ne.",DIA_Horatio_ThoughtSTR_NoIdea);
@@ -318,7 +318,7 @@ FUNC VOID DIA_Horatio_ThoughtSTR_Info()
 	var C_NPC ricelord; ricelord = Hlp_GetNpc(Bau_900_Ricelord);
 	if	Npc_KnowsInfo(hero,DIA_Jeremiah_Horatio)
 	{
-		Info_AddChoice	 (DIA_Horatio_ThoughtSTR,"Ano. Chci bıt schopen dostat Rıového Lorda a jeho tlupu! ",DIA_Horatio_ThoughtSTR_Ricelord);
+		Info_AddChoice	 (DIA_Horatio_ThoughtSTR,"Ano. Chci bÃ½t schopen dostat RÃ½Å¾ovÃ©ho Lorda a jeho tlupu! ",DIA_Horatio_ThoughtSTR_Ricelord);
 	};
 };
 
@@ -331,15 +331,15 @@ func void DIA_Horatio_ThoughtSTR_NoIdea()
 
 func void DIA_Horatio_ThoughtSTR_Ricelord()
 {
-	AI_Output (other, self,"DIA_Horatio_ThoughtSTR_Ricelord_15_00"); //Ano. Chci bıt schopen dostat Rıového Lorda a jeho tlupu!
-	AI_Output (self, other,"DIA_Horatio_ThoughtSTR_Ricelord_09_01"); //Hmm... Nebyl bys první, kdo se o to pokusil.
+	AI_Output (other, self,"DIA_Horatio_ThoughtSTR_Ricelord_15_00"); //Ano. Chci bÃ½t schopen dostat RÃ½Å¾ovÃ©ho Lorda a jeho tlupu!
+	AI_Output (self, other,"DIA_Horatio_ThoughtSTR_Ricelord_09_01"); //Hmm... Nebyl bys prvnÃ­, kdo se o to pokusil.
 	horatio_StrFree = TRUE;
 	
 	Info_ClearChoices(DIA_Horatio_ThoughtSTR );
 };
 
 // ************************************************************
-//					Will Ricelord köpfen
+//					Will Ricelord kÃ¶pfen
 // ************************************************************
 
 func void DIA_Horatio_HelpSTR_LEARN_NOW()
@@ -347,17 +347,17 @@ func void DIA_Horatio_HelpSTR_LEARN_NOW()
 	if (other.attribute[ATR_STRENGTH]<=(100-5))
 	{
 		other.attribute[ATR_STRENGTH] = other.attribute[ATR_STRENGTH] + 5;
-		PrintScreen	("Síla +5", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
+		PrintScreen	("SÃ­la +5", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
 	}
 	else
 	{
 		other.attribute[ATR_STRENGTH] = 100; 
-		PrintScreen	("Síla: 100", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
+		PrintScreen	("SÃ­la: 100", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
 	};
 				
-	AI_Output (self, other,"DIA_Horatio_HelpSTR_LEARN_NOW_09_00"); //Pokud chceš udeøit plnou silou, musíš znát správnou taktiku.To je první vìc, kterou se jako kováø nauèíš.
-	AI_Output (self, other,"DIA_Horatio_HelpSTR_LEARN_NOW_09_01"); //Nauè se rozmáchnout celou rukou, od ramene po zápìstí.
-	AI_Output (self, other,"DIA_Horatio_HelpSTR_LEARN_NOW_09_02"); //Èím líp to zvládneš, tím silnìjší bude rána. Rychle tì to vyèerpá.
+	AI_Output (self, other,"DIA_Horatio_HelpSTR_LEARN_NOW_09_00"); //Pokud chceÅ¡ udeÅ™it plnou silou, musÃ­Å¡ znÃ¡t sprÃ¡vnou taktiku.To je prvnÃ­ vÄ›c, kterou se jako kovÃ¡Å™ nauÄÃ­Å¡.
+	AI_Output (self, other,"DIA_Horatio_HelpSTR_LEARN_NOW_09_01"); //NauÄ se rozmÃ¡chnout celou rukou, od ramene po zÃ¡pÄ›stÃ­.
+	AI_Output (self, other,"DIA_Horatio_HelpSTR_LEARN_NOW_09_02"); //ÄŒÃ­m lÃ­p to zvlÃ¡dneÅ¡, tÃ­m silnÄ›jÅ¡Ã­ bude rÃ¡na. Rychle tÄ› to vyÄerpÃ¡.
 };
 
 //--------------------------------------------------------------
@@ -369,7 +369,7 @@ INSTANCE DIA_Horatio_HelpSTR (C_INFO)
 	condition	= DIA_Horatio_HelpSTR_Condition;
 	information	= DIA_Horatio_HelpSTR_Info;
 	permanent	= 0;
-	description = "PORAZÍM Rıového Lorda a jeho tlupu - kdy mi pomùeš!";
+	description = "PORAZÃM RÃ½Å¾ovÃ©ho Lorda a jeho tlupu - kdyÅ¾ mi pomÅ¯Å¾eÅ¡!";
 };                       
 
 FUNC INT DIA_Horatio_HelpSTR_Condition()
@@ -382,13 +382,13 @@ FUNC INT DIA_Horatio_HelpSTR_Condition()
 
 FUNC VOID DIA_Horatio_HelpSTR_Info()
 {	
-	AI_Output (other, self,"DIA_Horatio_HelpSTR_15_00"); //PORAZÍM Rıového Lorda a jeho tlupu - kdy mi pomùeš!
-	AI_Output (self, other,"DIA_Horatio_HelpSTR_09_01"); //Dobøe! Pøísahal jsem, e u na nikoho nezaútoèím, ale nikdy jsem neøekl, e to nenauèím nìkoho, kdo to udìlá!
+	AI_Output (other, self,"DIA_Horatio_HelpSTR_15_00"); //PORAZÃM RÃ½Å¾ovÃ©ho Lorda a jeho tlupu - kdyÅ¾ mi pomÅ¯Å¾eÅ¡!
+	AI_Output (self, other,"DIA_Horatio_HelpSTR_09_01"); //DobÅ™e! PÅ™Ã­sahal jsem, Å¾e uÅ¾ na nikoho nezaÃºtoÄÃ­m, ale nikdy jsem neÅ™ekl, Å¾e to nenauÄÃ­m nÄ›koho, kdo to udÄ›lÃ¡!
 	AI_Output (other, self,"DIA_Horatio_HelpSTR_15_02"); //Jsem jedno ucho!
 	DIA_Horatio_HelpSTR_LEARN_NOW();
 
 	Log_SetTopicStatus	(CH1_HoratiosTeachings, LOG_SUCCESS);
-	B_LogEntry			(CH1_HoratiosTeachings,"Horatio mì nauèil, jak v boji pouívat sílu a jak silnìji udeøit. Ryzí duše, tenhle chlapík.");
+	B_LogEntry			(CH1_HoratiosTeachings,"Horatio mÄ› nauÄil, jak v boji pouÅ¾Ã­vat sÃ­lu a jak silnÄ›ji udeÅ™it. RyzÃ­ duÅ¡e, tenhle chlapÃ­k.");
 };
 
 // ************************************************************
@@ -402,7 +402,7 @@ INSTANCE DIA_Horatio_Thanks (C_INFO)
 	condition	= DIA_Horatio_Thanks_Condition;
 	information	= DIA_Horatio_Thanks_Info;
 	permanent	= 1;
-	description = "Díky za tvou pomoc!";
+	description = "DÃ­ky za tvou pomoc!";
 };                       
 
 FUNC INT DIA_Horatio_Thanks_Condition()
@@ -415,8 +415,8 @@ FUNC INT DIA_Horatio_Thanks_Condition()
 
 FUNC VOID DIA_Horatio_Thanks_Info()
 {	
-	AI_Output (other, self,"DIA_Horatio_Thanks_15_00"); //Díky za tvou pomoc!
-	AI_Output (self, other,"DIA_Horatio_Thanks_09_01"); //Pouij své umìní pro dobro vìci a pro NIC JINÉHO.
+	AI_Output (other, self,"DIA_Horatio_Thanks_15_00"); //DÃ­ky za tvou pomoc!
+	AI_Output (self, other,"DIA_Horatio_Thanks_09_01"); //PouÅ¾ij svÃ© umÄ›nÃ­ pro dobro vÄ›ci a pro NIC JINÃ‰HO.
 };
 
 

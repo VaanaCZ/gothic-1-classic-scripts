@@ -45,8 +45,8 @@ FUNC VOID  DIA_Torlof_Hallo_Info()
 {
 	AI_Output (other, self,"DIA_Torlof_Hallo_15_00"); //Kdo jsi?
 	AI_Output (self, other,"DIA_Torlof_Hallo_04_01"); //Jsem Torlof.
-	AI_Output (self, other,"DIA_Torlof_Hallo_04_02"); //Zapletl jsem se do vzpoury jako d˘stojnÌk kr·lovskÈ flotily.
-	AI_Output (self, other,"DIA_Torlof_Hallo_04_03"); //Nebyl to dobr˝ n·pad. Velk· Ë·st pos·dky st·la na stranÏ kapit·na.
+	AI_Output (self, other,"DIA_Torlof_Hallo_04_02"); //Zapletl jsem se do vzpoury jako d≈Østojn√≠k kr√°lovsk√© flotily.
+	AI_Output (self, other,"DIA_Torlof_Hallo_04_03"); //Nebyl to dobr√Ω n√°pad. Velk√° ƒç√°st pos√°dky st√°la na stranƒõ kapit√°na.
 	AI_Output (self, other,"DIA_Torlof_Hallo_04_04"); //Proto jsem tady.
 };
 
@@ -61,7 +61,7 @@ instance DIA_Torlof_Mitmachen (C_INFO)
 	condition	= DIA_Torlof_Mitmachen_Condition;
 	information	= DIA_Torlof_Mitmachen_Info;
 	permanent	= 1;
-	description = "R·d bych se k v·m p¯idal.";
+	description = "R√°d bych se k v√°m p≈ôidal.";
 };                       
 
 FUNC int DIA_Torlof_Mitmachen_Condition()
@@ -75,13 +75,13 @@ FUNC int DIA_Torlof_Mitmachen_Condition()
 
 FUNC VOID  DIA_Torlof_Mitmachen_Info()
 {
-	AI_Output (other, self,"DIA_Torlof_Mitmachen_15_00"); //R·d bych se k v·m p¯idal.
-	AI_Output (self, other,"DIA_Torlof_Mitmachen_04_01"); //Lee tÏ nep¯ijme, dokud nebude mÌt opravdov˝ d˘vod, to ti ¯Ìk·m rovnou.
-	AI_Output (self, other,"DIA_Torlof_Mitmachen_04_02"); //A do tÈ doby bys mÏl b˝t s Laresem a jeho lidmi zadob¯e.
-	AI_Output (self, other,"DIA_Torlof_Mitmachen_04_03"); //Jestli chceö dobrou radu, chlapËe: ukradni nÏco cennÈho ze StarÈho t·bora nebo ze StarÈho dolu.
-	AI_Output (self, other,"DIA_Torlof_Mitmachen_04_04"); //Jakmile chlapi zjistÌ, ûe jsi proti Gomezovi, nebudeö tu mÌt û·dnÈ problÈmy.
-	AI_Output (other, self,"DIA_Torlof_Mitmachen_15_05"); //A jak to m·m udÏlat?
-	AI_Output (self, other,"DIA_Torlof_Mitmachen_04_06"); //Pot¯ebujeö si zÌskat jejich DŸVÃRU - a pak se jich zbavÌö!
+	AI_Output (other, self,"DIA_Torlof_Mitmachen_15_00"); //R√°d bych se k v√°m p≈ôidal.
+	AI_Output (self, other,"DIA_Torlof_Mitmachen_04_01"); //Lee tƒõ nep≈ôijme, dokud nebude m√≠t opravdov√Ω d≈Øvod, to ti ≈ô√≠k√°m rovnou.
+	AI_Output (self, other,"DIA_Torlof_Mitmachen_04_02"); //A do t√© doby bys mƒõl b√Ωt s Laresem a jeho lidmi zadob≈ôe.
+	AI_Output (self, other,"DIA_Torlof_Mitmachen_04_03"); //Jestli chce≈° dobrou radu, chlapƒçe: ukradni nƒõco cenn√©ho ze Star√©ho t√°bora nebo ze Star√©ho dolu.
+	AI_Output (self, other,"DIA_Torlof_Mitmachen_04_04"); //Jakmile chlapi zjist√≠, ≈æe jsi proti Gomezovi, nebude≈° tu m√≠t ≈æ√°dn√© probl√©my.
+	AI_Output (other, self,"DIA_Torlof_Mitmachen_15_05"); //A jak to m√°m udƒõlat?
+	AI_Output (self, other,"DIA_Torlof_Mitmachen_04_06"); //Pot≈ôebuje≈° si z√≠skat jejich D≈ÆVƒöRU - a pak se jich zbav√≠≈°!
 };
 
 /*
@@ -97,7 +97,7 @@ instance DIA_Torlof_PERM (C_INFO)
 	condition	= DIA_Torlof_PERM_Condition;
 	information	= DIA_Torlof_PERM_Info;
 	permanent	= 1;
-	description = "Was kannst du mir ¸ber dieses Lager sagen?";
+	description = "Was kannst du mir √ºber dieses Lager sagen?";
 };                       
 
 FUNC int DIA_Torlof_PERM_Condition()
@@ -107,9 +107,9 @@ FUNC int DIA_Torlof_PERM_Condition()
 
 FUNC VOID  DIA_Torlof_PERM_Info()
 {
-	AI_Output (other, self,"DIA_Torlof_PERM_15_00"); //Was kannst du mir ¸ber dieses Lager sagen?
+	AI_Output (other, self,"DIA_Torlof_PERM_15_00"); //Was kannst du mir √ºber dieses Lager sagen?
 	AI_Output (self, other,"DIA_Torlof_PERM_04_01"); //Ist wie auf'm Piratenschiff, Junge. Solange ab und zu ein fetter Fischzug gegen Gomez drin ist, sind die Banditen zufrieden.
-	AI_Output (self, other,"DIA_Torlof_PERM_04_02"); //Wenn sie kein Erz mehr haben, um sich in der Kneipe vollaufen zu lassen, gibt's ne Menge Schl‰gereien.
+	AI_Output (self, other,"DIA_Torlof_PERM_04_02"); //Wenn sie kein Erz mehr haben, um sich in der Kneipe vollaufen zu lassen, gibt's ne Menge Schl√§gereien.
 };
 
 */

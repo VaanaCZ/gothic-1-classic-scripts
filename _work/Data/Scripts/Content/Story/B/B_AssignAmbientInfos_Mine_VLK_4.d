@@ -37,7 +37,7 @@ INSTANCE Info_Mine_Vlk_4_Mine (C_INFO) // E1
 	condition	= Info_Mine_Vlk_4_Mine_Condition;
 	information	= Info_Mine_Vlk_4_Mine_Info;
 	permanent	= 1;
-	description = "Øekni mi nìco o dole.";
+	description = "Å˜ekni mi nÄ›co o dole.";
 };                       
 
 FUNC INT Info_Mine_Vlk_4_Mine_Condition()
@@ -50,9 +50,9 @@ FUNC INT Info_Mine_Vlk_4_Mine_Condition()
 
 FUNC VOID Info_Mine_Vlk_4_Mine_Info()
 {
-	AI_Output(other,self,"Info_Mine_Vlk_4_Mine_15_00"); //Povídej mi o dole.
-	AI_Output(self,other,"Info_Mine_Vlk_4_Mine_01_01"); //Krumpáèe a pot. To jediné tady je. Nastoupíš a makáš.
-	AI_Output(self,other,"Info_Mine_Vlk_4_Mine_01_02"); //Ty u budeš dávno pryè a já tu budu poøád rubat ze skály rudu. To je moje práce, mùj ivot.
+	AI_Output(other,self,"Info_Mine_Vlk_4_Mine_15_00"); //PovÃ­dej mi o dole.
+	AI_Output(self,other,"Info_Mine_Vlk_4_Mine_01_01"); //KrumpÃ¡Äe a pot. To jedinÃ© tady je. NastoupÃ­Å¡ a makÃ¡Å¡.
+	AI_Output(self,other,"Info_Mine_Vlk_4_Mine_01_02"); //Ty uÅ¾ budeÅ¡ dÃ¡vno pryÄ a jÃ¡ tu budu poÅ™Ã¡d rubat ze skÃ¡ly rudu. To je moje prÃ¡ce, mÅ¯j Å¾ivot.
 };
 
 // *************************************************************************
@@ -65,7 +65,7 @@ INSTANCE Info_Mine_Vlk_4_WichtigePersonen(C_INFO)
 	condition	= Info_Mine_Vlk_4_WichtigePersonen_Condition;
 	information	= Info_Mine_Vlk_4_WichtigePersonen_Info;
 	permanent	= 1;
-	description = "Kdo to tady má na starosti?";
+	description = "Kdo to tady mÃ¡ na starosti?";
 };                       
 
 FUNC INT Info_Mine_Vlk_4_WichtigePersonen_Condition()
@@ -78,8 +78,8 @@ FUNC INT Info_Mine_Vlk_4_WichtigePersonen_Condition()
 
 FUNC VOID Info_Mine_Vlk_4_WichtigePersonen_Info()
 {
-	AI_Output(other,self,"Info_Mine_Vlk_4_WichtigePersonen_15_00"); //Kdo tady má velení?
-	AI_Output(self,other,"Info_Mine_Vlk_4_WichtigePersonen_01_01"); //Santino a Alberto vymìòují zboí za rudu, kterou vytìíme. Od nich dostáváme denní pøídìly.
+	AI_Output(other,self,"Info_Mine_Vlk_4_WichtigePersonen_15_00"); //Kdo tady mÃ¡ velenÃ­?
+	AI_Output(self,other,"Info_Mine_Vlk_4_WichtigePersonen_01_01"); //Santino a Alberto vymÄ›ÅˆujÃ­ zboÅ¾Ã­ za rudu, kterou vytÄ›Å¾Ã­me. Od nich dostÃ¡vÃ¡me dennÃ­ pÅ™Ã­dÄ›ly.
 };
 
 // *************************************************************************
@@ -92,7 +92,7 @@ INSTANCE Info_Mine_Vlk_4_Minecrawler(C_INFO)
 	condition	= Info_Mine_Vlk_4_Minecrawler_Condition;
 	information	= Info_Mine_Vlk_4_Minecrawler_Info;
 	permanent	= 1;
-	description = "Co víš o èervech?";
+	description = "Co vÃ­Å¡ o Äervech?";
 };                       
 
 FUNC INT Info_Mine_Vlk_4_Minecrawler_Condition()
@@ -105,8 +105,8 @@ FUNC INT Info_Mine_Vlk_4_Minecrawler_Condition()
 
 FUNC VOID Info_Mine_Vlk_4_Minecrawler_Info()
 {
-	AI_Output(other,self,"Info_Mine_Vlk_4_Minecrawler_15_00"); //Co víš o dùlních èervech?
-	AI_Output(self,other,"Info_Mine_Vlk_4_Minecrawler_01_01"); //Jakmile uvidíš nìjakého èerva pøed sebou, musíš ho praštit krumpáèem mezi oèi. Kdy špatnì míøíš, druhou šanci u nedostaneš.
+	AI_Output(other,self,"Info_Mine_Vlk_4_Minecrawler_15_00"); //Co vÃ­Å¡ o dÅ¯lnÃ­ch Äervech?
+	AI_Output(self,other,"Info_Mine_Vlk_4_Minecrawler_01_01"); //Jakmile uvidÃ­Å¡ nÄ›jakÃ©ho Äerva pÅ™ed sebou, musÃ­Å¡ ho praÅ¡tit krumpÃ¡Äem mezi oÄi. KdyÅ¾ Å¡patnÄ› mÃ­Å™Ã­Å¡, druhou Å¡anci uÅ¾ nedostaneÅ¡.
 	
 };
 
@@ -133,8 +133,8 @@ FUNC INT Info_Mine_Vlk_4_DieLage_Condition()
 
 FUNC VOID Info_Mine_Vlk_4_DieLage_Info()
 {
-	AI_Output(other,self,"Info_Mine_Vlk_4_DieLage_15_00"); //Jak se máš?
-	AI_Output(self,other,"Info_Mine_Vlk_4_DieLage_01_01"); //Je to lepší.
+	AI_Output(other,self,"Info_Mine_Vlk_4_DieLage_15_00"); //Jak se mÃ¡Å¡?
+	AI_Output(self,other,"Info_Mine_Vlk_4_DieLage_01_01"); //Je to lepÅ¡Ã­.
 };
 	
 // *************************************************************************

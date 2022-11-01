@@ -34,7 +34,7 @@ instance  Sld_700_Lee_Greet (C_INFO)
 	condition	=  Sld_700_Lee_Greet_Condition;
 	information	=  Sld_700_Lee_Greet_Info;
 	permanent	=  0;
-	description = "Ty jsi velitel oldákù, viï?";
+	description = "Ty jsi velitel Å¾oldÃ¡kÅ¯, viÄ?";
 };                       
 
 FUNC int  Sld_700_Lee_Greet_Condition()
@@ -44,8 +44,8 @@ FUNC int  Sld_700_Lee_Greet_Condition()
 
 FUNC VOID  Sld_700_Lee_Greet_Info()
 {
-	AI_Output (other, self,"DIA_Lee_Greet_15_00"); //Ty jsi velitel oldákù, viï?
-	AI_Output (self, other,"DIA_Lee_Greet_08_01"); //Pøesnì tak, hochu!
+	AI_Output (other, self,"DIA_Lee_Greet_15_00"); //Ty jsi velitel Å¾oldÃ¡kÅ¯, viÄ?
+	AI_Output (self, other,"DIA_Lee_Greet_08_01"); //PÅ™esnÄ› tak, hochu!
 };
 
 //*********************************************************
@@ -59,7 +59,7 @@ instance  Sld_700_Lee_Define (C_INFO)
 	condition	=  Sld_700_Lee_Define_Condition;
 	information	=  Sld_700_Lee_Define_Info;
 	permanent	=  0;
-	description = "Jaké úkoly dávají mágové oldákùm?";
+	description = "JakÃ© Ãºkoly dÃ¡vajÃ­ mÃ¡govÃ© Å¾oldÃ¡kÅ¯m?";
 };                       
 
 FUNC int  Sld_700_Lee_Define_Condition()
@@ -72,9 +72,9 @@ FUNC int  Sld_700_Lee_Define_Condition()
 
 FUNC VOID  Sld_700_Lee_Define_Info()
 {
-	AI_Output (other, self,"DIA_Lee_Define_15_00"); //Jaké úkoly dávají mágové oldákùm?
-	AI_Output (self, other,"DIA_Lee_Define_08_01"); //Velmi jednoduché: chránit rudu - chránit mágy.
-	AI_Output (self, other,"DIA_Lee_Define_08_02"); //Obèas pro nás mají mágové zvláštní úkoly.
+	AI_Output (other, self,"DIA_Lee_Define_15_00"); //JakÃ© Ãºkoly dÃ¡vajÃ­ mÃ¡govÃ© Å¾oldÃ¡kÅ¯m?
+	AI_Output (self, other,"DIA_Lee_Define_08_01"); //Velmi jednoduchÃ©: chrÃ¡nit rudu - chrÃ¡nit mÃ¡gy.
+	AI_Output (self, other,"DIA_Lee_Define_08_02"); //ObÄas pro nÃ¡s majÃ­ mÃ¡govÃ© zvlÃ¡Å¡tnÃ­ Ãºkoly.
 };
 
 //*********************************************************
@@ -88,7 +88,7 @@ instance  Sld_700_Lee_Mitmachen (C_INFO)
 	condition	=  Sld_700_Lee_Mitmachen_Condition;
 	information	=  Sld_700_Lee_Mitmachen_Info;
 	permanent	=  0;
-	description = "Chtìl bych se k vám pøidat!";
+	description = "ChtÄ›l bych se k vÃ¡m pÅ™idat!";
 };                       
 
 FUNC int  Sld_700_Lee_Mitmachen_Condition()
@@ -103,9 +103,9 @@ FUNC int  Sld_700_Lee_Mitmachen_Condition()
 
 FUNC VOID  Sld_700_Lee_Mitmachen_Info()
 {
-	AI_Output (other, self,"DIA_Lee_Mitmachen_15_00"); //Chtìl bych se k vám pøidat!
-	AI_Output (self, other,"DIA_Lee_Mitmachen_08_01"); //Ty máš ale nervy! Ty si vánì myslíš, e pøijmu kadého, kdo sem pøijde?
-	AI_Output (self, other,"DIA_Lee_Mitmachen_08_02"); //Mùeš se stát jedním z nás a potom, co strávíš urèitı èas v táboøe. Budu tì pozorovat!
+	AI_Output (other, self,"DIA_Lee_Mitmachen_15_00"); //ChtÄ›l bych se k vÃ¡m pÅ™idat!
+	AI_Output (self, other,"DIA_Lee_Mitmachen_08_01"); //Ty mÃ¡Å¡ ale nervy! Ty si vÃ¡Å¾nÄ› myslÃ­Å¡, Å¾e pÅ™ijmu kaÅ¾dÃ©ho, kdo sem pÅ™ijde?
+	AI_Output (self, other,"DIA_Lee_Mitmachen_08_02"); //MÅ¯Å¾eÅ¡ se stÃ¡t jednÃ­m z nÃ¡s aÅ¾ potom, co strÃ¡vÃ­Å¡ urÄitÃ½ Äas v tÃ¡boÅ™e. Budu tÄ› pozorovat!
 };
 
 //*********************************************************
@@ -121,7 +121,7 @@ instance  Sld_700_Lee_NowReady (C_INFO)
 	condition	=  Sld_700_Lee_NowReady_Condition;
 	information	=  Sld_700_Lee_NowReady_Info;
 	permanent	=  1;
-	description = "Chtìl bych se stát oldákem mágù - jsem na to u pøipravenı?";
+	description = "ChtÄ›l bych se stÃ¡t Å¾oldÃ¡kem mÃ¡gÅ¯ - jsem na to uÅ¾ pÅ™ipravenÃ½?";
 };                       
 
 FUNC int  Sld_700_Lee_NowReady_Condition()
@@ -135,16 +135,16 @@ FUNC int  Sld_700_Lee_NowReady_Condition()
 
 FUNC VOID  Sld_700_Lee_NowReady_Info()
 {
-	AI_Output (other, self,"DIA_Lee_NowReady_15_00"); //Chtìl bych se stát oldákem mágù - jsem na to u pøipravenı?
+	AI_Output (other, self,"DIA_Lee_NowReady_15_00"); //ChtÄ›l bych se stÃ¡t Å¾oldÃ¡kem mÃ¡gÅ¯ - jsem na to uÅ¾ pÅ™ipravenÃ½?
 	
 	if (CorKalom_BringMCQBalls == LOG_SUCCESS)
 	{
-		AI_Output			(self, other,"Sld_700_Lee_BECOMESLD_Info_08_01"); //Tvoje skutky vykonané pro lidi ve Starém dolu ukázaly, e jsi docela správnı chlap.
-		AI_Output			(self, other,"Sld_700_Lee_BECOMESLD_Info_08_02"); //Byl bych ochotnı pøijmout tì k oldákùm.
+		AI_Output			(self, other,"Sld_700_Lee_BECOMESLD_Info_08_01"); //Tvoje skutky vykonanÃ© pro lidi ve StarÃ©m dolu ukÃ¡zaly, Å¾e jsi docela sprÃ¡vnÃ½ chlap.
+		AI_Output			(self, other,"Sld_700_Lee_BECOMESLD_Info_08_02"); //Byl bych ochotnÃ½ pÅ™ijmout tÄ› k Å¾oldÃ¡kÅ¯m.
 	
 		if hero.level < 10
 		{
-			AI_Output			(self, other,"Sld_700_Lee_BECOMESLD_Info_08_03"); //Ale ještì nejsi pøipravenı stát se oldákem. Musíš ještì získat nìjaké zkušenosti, potom budeš patøit k nám.
+			AI_Output			(self, other,"Sld_700_Lee_BECOMESLD_Info_08_03"); //Ale jeÅ¡tÄ› nejsi pÅ™ipravenÃ½ stÃ¡t se Å¾oldÃ¡kem. MusÃ­Å¡ jeÅ¡tÄ› zÃ­skat nÄ›jakÃ© zkuÅ¡enosti, potom budeÅ¡ patÅ™it k nÃ¡m.
 	    	AI_StopProcessInfos	(self);
 			B_PrintGuildCondition(10);
 	    }
@@ -158,19 +158,19 @@ FUNC VOID  Sld_700_Lee_NowReady_Info()
 	{	
 		if hero.level < 10
 		{
-			AI_Output (self, other,"DIA_Lee_NowReady_08_01"); //Ještì nemáš dost zkušeností. Potøebuješ ještì zlepšit své schopnosti.
+			AI_Output (self, other,"DIA_Lee_NowReady_08_01"); //JeÅ¡tÄ› nemÃ¡Å¡ dost zkuÅ¡enostÃ­. PotÅ™ebujeÅ¡ jeÅ¡tÄ› zlepÅ¡it svÃ© schopnosti.
 			B_PrintGuildCondition(10);
 	    }
 	    else if hero.level >= 10
 	    {
-	    	AI_Output			(self, other,"Sld_700_Lee_BECOMESLD_Info_08_04"); //Dám ti pøíleitost. Co ty na to?
+	    	AI_Output			(self, other,"Sld_700_Lee_BECOMESLD_Info_08_04"); //DÃ¡m ti pÅ™Ã­leÅ¾itost. Co ty na to?
 	    	Lee_SldPossible = TRUE;
 		};
 	};
 };
 
 /*------------------------------------------------------------------------
-							SÖLDNER WERDEN	2									
+							SÃ–LDNER WERDEN	2									
 ------------------------------------------------------------------------*/
 
 instance  Sld_700_Lee_BECOMESLDNOW (C_INFO)
@@ -180,7 +180,7 @@ instance  Sld_700_Lee_BECOMESLDNOW (C_INFO)
 	information		= Sld_700_Lee_BECOMESLDNOW_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Chci se stát oldákem."; 
+	description		= "Chci se stÃ¡t Å¾oldÃ¡kem."; 
 };
 
 FUNC int  Sld_700_Lee_BECOMESLDNOW_Condition()
@@ -194,23 +194,23 @@ FUNC int  Sld_700_Lee_BECOMESLDNOW_Condition()
 
 FUNC void  Sld_700_Lee_BECOMESLDNOW_Info()
 {
-	AI_Output			(other, self,"Sld_700_Lee_BECOMESLDNOW_Info_15_01"); //Chci se stát oldákem.
-	AI_Output			(self, other,"Sld_700_Lee_BECOMESLDNOW_Info_08_02"); //Dobré rozhodnutí. Nebudeš litovat.
-	AI_Output			(self, other,"Sld_700_Lee_BECOMESLDNOW_Info_08_03"); //Øekni mi nìco: Proè? Proè jsi se pøidal k nám a ne ke Starému táboru nebo k Bratrstvu?
+	AI_Output			(other, self,"Sld_700_Lee_BECOMESLDNOW_Info_15_01"); //Chci se stÃ¡t Å¾oldÃ¡kem.
+	AI_Output			(self, other,"Sld_700_Lee_BECOMESLDNOW_Info_08_02"); //DobrÃ© rozhodnutÃ­. NebudeÅ¡ litovat.
+	AI_Output			(self, other,"Sld_700_Lee_BECOMESLDNOW_Info_08_03"); //Å˜ekni mi nÄ›co: ProÄ? ProÄ jsi se pÅ™idal k nÃ¡m a ne ke StarÃ©mu tÃ¡boru nebo k Bratrstvu?
 
 	Log_CreateTopic		(GE_BecomeMercenary,LOG_NOTE);
-	B_LogEntry			(GE_BecomeMercenary,"Lee mì nechal, abych se pøidal k oldákùm.");
+	B_LogEntry			(GE_BecomeMercenary,"Lee mÄ› nechal, abych se pÅ™idal k Å¾oldÃ¡kÅ¯m.");
 	
 	Info_ClearChoices	(Sld_700_Lee_BECOMESLDNOW);
-	Info_AddChoice		(Sld_700_Lee_BECOMESLDNOW,"Ostatní tábory nejsou tak dobré.",Sld_700_Lee_BECOMESLDNOW_NOOTHER);
-	Info_AddChoice		(Sld_700_Lee_BECOMESLDNOW,"Chtìl jsem svobodu od samého zaèátku.",Sld_700_Lee_BECOMESLDNOW_FREEDOM);
-	Info_AddChoice		(Sld_700_Lee_BECOMESLDNOW,"Nìco mì k tomu táhlo.",Sld_700_Lee_BECOMESLDNOW_JUSTBECAUSE);
+	Info_AddChoice		(Sld_700_Lee_BECOMESLDNOW,"OstatnÃ­ tÃ¡bory nejsou tak dobrÃ©.",Sld_700_Lee_BECOMESLDNOW_NOOTHER);
+	Info_AddChoice		(Sld_700_Lee_BECOMESLDNOW,"ChtÄ›l jsem svobodu od samÃ©ho zaÄÃ¡tku.",Sld_700_Lee_BECOMESLDNOW_FREEDOM);
+	Info_AddChoice		(Sld_700_Lee_BECOMESLDNOW,"NÄ›co mÄ› k tomu tÃ¡hlo.",Sld_700_Lee_BECOMESLDNOW_JUSTBECAUSE);
 };
   
 FUNC void  Sld_700_Lee_BECOMESLDNOW_NOOTHER()
 {
-	AI_Output			(other, self,"Sld_700_Lee_BECOMESLDNOW_NOOTHER_15_01"); //Ostatní tábory nejsou tak dobré.
-	AI_Output			(self, other,"Sld_700_Lee_BECOMESLDNOW_NOOTHER_08_02"); //Jedna vìc je tady nade všechno dùleitá, toti nadìje na svobodu. Vítej, OLDÁKU!
+	AI_Output			(other, self,"Sld_700_Lee_BECOMESLDNOW_NOOTHER_15_01"); //OstatnÃ­ tÃ¡bory nejsou tak dobrÃ©.
+	AI_Output			(self, other,"Sld_700_Lee_BECOMESLDNOW_NOOTHER_08_02"); //Jedna vÄ›c je tady nade vÅ¡echno dÅ¯leÅ¾itÃ¡, totiÅ¾ nadÄ›je na svobodu. VÃ­tej, Å½OLDÃKU!
 	CreateInvItem		(self,SLD_ARMOR_L);
 	B_GiveInvItems      (self, hero, SLD_ARMOR_L, 1);
 	AI_EquipBestArmor	(hero);
@@ -221,8 +221,8 @@ FUNC void  Sld_700_Lee_BECOMESLDNOW_NOOTHER()
 
 FUNC void  Sld_700_Lee_BECOMESLDNOW_FREEDOM()
 {
-	AI_Output			(other, self,"Sld_700_Lee_BECOMESLDNOW_FREEDOM_15_01"); //Chtìl jsem svobodu od samého zaèátku.
-	AI_Output			(self, other,"Sld_700_Lee_BECOMESLDNOW_FREEDOM_08_02"); //Dostaneme naší svobodu nazpìt. Vítej, OLDÁKU!
+	AI_Output			(other, self,"Sld_700_Lee_BECOMESLDNOW_FREEDOM_15_01"); //ChtÄ›l jsem svobodu od samÃ©ho zaÄÃ¡tku.
+	AI_Output			(self, other,"Sld_700_Lee_BECOMESLDNOW_FREEDOM_08_02"); //Dostaneme naÅ¡Ã­ svobodu nazpÄ›t. VÃ­tej, Å½OLDÃKU!
 	CreateInvItem		(self,SLD_ARMOR_L);
 	B_GiveInvItems      (self, hero, SLD_ARMOR_L, 1);
 	AI_EquipBestArmor	(hero);
@@ -233,8 +233,8 @@ FUNC void  Sld_700_Lee_BECOMESLDNOW_FREEDOM()
 
 FUNC void  Sld_700_Lee_BECOMESLDNOW_JUSTBECAUSE()
 {
-	AI_Output			(other, self,"Sld_700_Lee_BECOMESLDNOW_JUSTBECAUSE_15_01"); //Nìco mì k tomu táhlo.
-	AI_Output			(self, other,"Sld_700_Lee_BECOMESLDNOW_JUSTBECAUSE_08_02"); //Hlavní vìc, nevzdat se, aby nás ta Bariéra nepolapila navdycky. Vítej, OLDÁKU!
+	AI_Output			(other, self,"Sld_700_Lee_BECOMESLDNOW_JUSTBECAUSE_15_01"); //NÄ›co mÄ› k tomu tÃ¡hlo.
+	AI_Output			(self, other,"Sld_700_Lee_BECOMESLDNOW_JUSTBECAUSE_08_02"); //HlavnÃ­ vÄ›c, nevzdat se, aby nÃ¡s ta BariÃ©ra nepolapila navÅ¾dycky. VÃ­tej, Å½OLDÃKU!
 	CreateInvItem		(self,SLD_ARMOR_L);
 	B_GiveInvItems      (self, hero, SLD_ARMOR_L, 1);
 	AI_EquipBestArmor	(hero);
@@ -274,14 +274,14 @@ FUNC int  Sld_700_Lee_DAMNPAST_Condition()
 };
 func void  Sld_700_Lee_DAMNPAST_Info()
 {
-	AI_Output			(self, other,"Sld_700_Lee_DAMNPAST_Info_08_01"); //Bıvaly èasy, kdy jsem vedl úplnì jinı ivot.
-	AI_Output			(self, other,"Sld_700_Lee_DAMNPAST_Info_08_02"); //Byl jsem jedním z nejlepších generálù téhle zemì.
-	AI_Output			(self, other,"Sld_700_Lee_DAMNPAST_Info_08_03"); //Celı ivot jsem strávil v boji za svou vlast.
-	AI_Output			(self, other,"Sld_700_Lee_DAMNPAST_Info_08_04"); //Šlechta mì ale nemìla v oblibì, protoe král naslouchal mım radám. A také vìdìla, e pøedstavuju hrozbu pro jejich špinavé obchody.
-	AI_Output			(self, other,"Sld_700_Lee_DAMNPAST_Info_08_05"); //Nepoèítal jsem s jejich zákeøností. Pouili proti mnì královu enu.
-	AI_Output			(self, other,"Sld_700_Lee_DAMNPAST_Info_08_06"); //Byl jsem obvinìn z její nesmyslné vrady. Král Rhobar nemìl jinou volbu.
-	AI_Output			(self, other,"Sld_700_Lee_DAMNPAST_Info_08_07"); //Sluby, které jsem vlasti prokázal, mì zachránily pøed šibenicí. Ale byl jsem zbaven svobody.
-	AI_Output			(self, other,"Sld_700_Lee_DAMNPAST_Info_08_08"); //Jednoho dne budu zase svobodnı. Pak se vrátím a pomstím se.
+	AI_Output			(self, other,"Sld_700_Lee_DAMNPAST_Info_08_01"); //BÃ½valy Äasy, kdy jsem vedl ÃºplnÄ› jinÃ½ Å¾ivot.
+	AI_Output			(self, other,"Sld_700_Lee_DAMNPAST_Info_08_02"); //Byl jsem jednÃ­m z nejlepÅ¡Ã­ch generÃ¡lÅ¯ tÃ©hle zemÄ›.
+	AI_Output			(self, other,"Sld_700_Lee_DAMNPAST_Info_08_03"); //CelÃ½ Å¾ivot jsem strÃ¡vil v boji za svou vlast.
+	AI_Output			(self, other,"Sld_700_Lee_DAMNPAST_Info_08_04"); //Å lechta mÄ› ale nemÄ›la v oblibÄ›, protoÅ¾e krÃ¡l naslouchal mÃ½m radÃ¡m. A takÃ© vÄ›dÄ›la, Å¾e pÅ™edstavuju hrozbu pro jejich Å¡pinavÃ© obchody.
+	AI_Output			(self, other,"Sld_700_Lee_DAMNPAST_Info_08_05"); //NepoÄÃ­tal jsem s jejich zÃ¡keÅ™nostÃ­. PouÅ¾ili proti mnÄ› krÃ¡lovu Å¾enu.
+	AI_Output			(self, other,"Sld_700_Lee_DAMNPAST_Info_08_06"); //Byl jsem obvinÄ›n z jejÃ­ nesmyslnÃ© vraÅ¾dy. KrÃ¡l Rhobar nemÄ›l jinou volbu.
+	AI_Output			(self, other,"Sld_700_Lee_DAMNPAST_Info_08_07"); //SluÅ¾by, kterÃ© jsem vlasti prokÃ¡zal, mÄ› zachrÃ¡nily pÅ™ed Å¡ibenicÃ­. Ale byl jsem zbaven svobody.
+	AI_Output			(self, other,"Sld_700_Lee_DAMNPAST_Info_08_08"); //Jednoho dne budu zase svobodnÃ½. Pak se vrÃ¡tÃ­m a pomstÃ­m se.
 	
 	AI_AlignToWP		(self);
 	
@@ -306,7 +306,7 @@ instance  Sld_700_Lee_FMTaken (C_INFO)
 	condition	=  Sld_700_Lee_FMTaken_Condition;
 	information	=  Sld_700_Lee_FMTaken_Info;
 	permanent	=  1;
-	description = "Co si myslíš o dolu?";
+	description = "Co si myslÃ­Å¡ o dolu?";
 };                       
 
 FUNC int  Sld_700_Lee_FMTaken_Condition()
@@ -319,26 +319,26 @@ FUNC int  Sld_700_Lee_FMTaken_Condition()
 
 FUNC VOID  Sld_700_Lee_FMTaken_Info()
 {
-	AI_Output (other, self,"DIA_Lee_FMTaken_15_00"); //Co si myslíš o dolu?
+	AI_Output (other, self,"DIA_Lee_FMTaken_15_00"); //Co si myslÃ­Å¡ o dolu?
 	
-	if (Lee_freeminereport == 0) 					//SC hat jetzt die Möglichkeit, Lee über die freie Mine zu informieren! ***Björn***
+	if (Lee_freeminereport == 0) 					//SC hat jetzt die MÃ¶glichkeit, Lee Ã¼ber die freie Mine zu informieren! ***BjÃ¶rn***
 	{
 	
-		AI_Output (self, other,"DIA_Lee_FMTaken_08_01"); //Zašli pøíliš daleko a budou toho litovat.
+		AI_Output (self, other,"DIA_Lee_FMTaken_08_01"); //ZaÅ¡li pÅ™Ã­liÅ¡ daleko a budou toho litovat.
 	
 	}
 	else
 	{
-		AI_Output			(hero, self,"Info_Lee_now_freeminefree_15_01"); 	//U by nemìli nikdy pøedstavovat hrozbu!
-		AI_Output			(self, hero,"Sld_700_Lee_CHANGESIDE_Info_08_02"); 	//Udìlal jsi toho pro náš tábor mnoho. Pro mue, jako jsi ty, budu mít vdycky dobré místo.
-		AI_Output			(hero, self,"Info_FreemineOrc_EXIT_15_03"); 		//Dìkuju. Pùjdu si svou cestou.
-		AI_Output			(self, hero,"Info_CorAngar_TELEPORT_08_01"); 		//Ještì moment!
-		AI_Output			(self, hero,"Info_CorAngar_TELEPORT_08_03"); 		//Vem si tuhle magickou runu jako vyjádøení našeho vdìku za tvoje velké èiny.
-		AI_Output			(hero, self,"Info_CorAngar_TELEPORT_15_05"); 		//Dìkuju!
-		AI_Output			(hero,	self,"Info_Exit_Info_15_01"); 				//Ještì se uvidíme.
+		AI_Output			(hero, self,"Info_Lee_now_freeminefree_15_01"); 	//UÅ¾ by nemÄ›li nikdy pÅ™edstavovat hrozbu!
+		AI_Output			(self, hero,"Sld_700_Lee_CHANGESIDE_Info_08_02"); 	//UdÄ›lal jsi toho pro nÃ¡Å¡ tÃ¡bor mnoho. Pro muÅ¾e, jako jsi ty, budu mÃ­t vÅ¾dycky dobrÃ© mÃ­sto.
+		AI_Output			(hero, self,"Info_FreemineOrc_EXIT_15_03"); 		//DÄ›kuju. PÅ¯jdu si svou cestou.
+		AI_Output			(self, hero,"Info_CorAngar_TELEPORT_08_01"); 		//JeÅ¡tÄ› moment!
+		AI_Output			(self, hero,"Info_CorAngar_TELEPORT_08_03"); 		//Vem si tuhle magickou runu jako vyjÃ¡dÅ™enÃ­ naÅ¡eho vdÄ›ku za tvoje velkÃ© Äiny.
+		AI_Output			(hero, self,"Info_CorAngar_TELEPORT_15_05"); 		//DÄ›kuju!
+		AI_Output			(hero,	self,"Info_Exit_Info_15_01"); 				//JeÅ¡tÄ› se uvidÃ­me.
 
 
-		B_LogEntry			(CH4_BannedFromOC,	"Informoval jsem Leeho o èistce, kterou jsme s Gornem provedli ve Svobodném dole. Byl velmi potìšen.");
+		B_LogEntry			(CH4_BannedFromOC,	"Informoval jsem Leeho o Äistce, kterou jsme s Gornem provedli ve SvobodnÃ©m dole. Byl velmi potÄ›Å¡en.");
 		
  	   	B_GiveInvItems (self,other, ItArRuneFirestorm, 1);
 		B_GiveXP (500);		
@@ -356,7 +356,7 @@ instance  Sld_700_Lee_CHANGESIDE (C_INFO)
 	information		= Sld_700_Lee_CHANGESIDE_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Vypovìdìli mì ze Starého tábora, chtìl bych se pøidat k vám!"; 
+	description		= "VypovÄ›dÄ›li mÄ› ze StarÃ©ho tÃ¡bora, chtÄ›l bych se pÅ™idat k vÃ¡m!"; 
 };
 
 FUNC int  Sld_700_Lee_CHANGESIDE_Condition()
@@ -370,10 +370,10 @@ FUNC int  Sld_700_Lee_CHANGESIDE_Condition()
 
 FUNC void  Sld_700_Lee_CHANGESIDE_Info()
 {
-	AI_Output			(other, self,"Sld_700_Lee_CHANGESIDE_Info_15_01"); //Vypovìdìli mì ze Starého tábora, chtìl bych se pøidat k vám!
-	AI_Output			(self, other,"Sld_700_Lee_CHANGESIDE_Info_08_02"); //Udìlal jsi toho pro náš tábor mnoho. Pro mue, jako jsi ty, budu mít vdycky dobré místo.
-	AI_Output			(self, other,"Sld_700_Lee_CHANGESIDE_Info_08_03"); //Zkrátíme to. Vítej do Nového tábora, OLDÁKU!
-	AI_Output			(self, other,"Sld_700_Lee_CHANGESIDE_Info_08_04"); //Tady je zbroj. Dobøe, e jsi tu s náma.
+	AI_Output			(other, self,"Sld_700_Lee_CHANGESIDE_Info_15_01"); //VypovÄ›dÄ›li mÄ› ze StarÃ©ho tÃ¡bora, chtÄ›l bych se pÅ™idat k vÃ¡m!
+	AI_Output			(self, other,"Sld_700_Lee_CHANGESIDE_Info_08_02"); //UdÄ›lal jsi toho pro nÃ¡Å¡ tÃ¡bor mnoho. Pro muÅ¾e, jako jsi ty, budu mÃ­t vÅ¾dycky dobrÃ© mÃ­sto.
+	AI_Output			(self, other,"Sld_700_Lee_CHANGESIDE_Info_08_03"); //ZkrÃ¡tÃ­me to. VÃ­tej do NovÃ©ho tÃ¡bora, Å½OLDÃKU!
+	AI_Output			(self, other,"Sld_700_Lee_CHANGESIDE_Info_08_04"); //Tady je zbroj. DobÅ™e, Å¾e jsi tu s nÃ¡ma.
 
 	CreateInvItem		(self, SLD_ARMOR_M);
 	B_GiveInvItems      (self, hero, SLD_ARMOR_M, 1);
@@ -386,10 +386,10 @@ FUNC void  Sld_700_Lee_CHANGESIDE_Info()
 	Npc_SetTrueGuild	(hero, GIL_SLD);
 	hero.guild = GIL_SLD;
 
-	B_LogEntry			(CH4_BannedFromOC,"Pøevlékl jsem kabát. Poté, co mì vyhostili ze Starého tábora, pøidal jsem se k oldákùm. A teï zpátky za Saturasem!");
+	B_LogEntry			(CH4_BannedFromOC,"PÅ™evlÃ©kl jsem kabÃ¡t. PotÃ©, co mÄ› vyhostili ze StarÃ©ho tÃ¡bora, pÅ™idal jsem se k Å¾oldÃ¡kÅ¯m. A teÄ zpÃ¡tky za Saturasem!");
 
 	Log_CreateTopic 	(GE_TeacherNC,LOG_NOTE);
-	B_LogEntry			(GE_TeacherNC,"Lee mì mùe nauèit bojovat s OBOURUÈNÍMI ZBRANÌMI. Kromì toho mi mùe pomoci zdokonalit moji SÍLU a OBRATNOST. ");
+	B_LogEntry			(GE_TeacherNC,"Lee mÄ› mÅ¯Å¾e nauÄit bojovat s OBOURUÄŒNÃMI ZBRANÄšMI. KromÄ› toho mi mÅ¯Å¾e pomoci zdokonalit moji SÃLU a OBRATNOST. ");
 };  
 
 /*------------------------------------------------------------------------
@@ -402,7 +402,7 @@ instance  Sld_700_Lee_ARMOR (C_INFO)
 	information		= Sld_700_Lee_ARMOR_Info;
 	important		= 0;
 	permanent		= 1;
-	description		= "Potøebuju lepší zbroj."; 
+	description		= "PotÅ™ebuju lepÅ¡Ã­ zbroj."; 
 };
 
 FUNC int  Sld_700_Lee_ARMOR_Condition()
@@ -415,8 +415,8 @@ FUNC int  Sld_700_Lee_ARMOR_Condition()
 };
 FUNC void  Sld_700_Lee_ARMOR_Info()
 {
-	AI_Output				(other, self,"Sld_700_Lee_ARMOR_Info_15_01"); //Potøebuju lepší zbroj.
-	AI_Output				(self, other,"Sld_700_Lee_ARMOR_Info_08_02"); //Na svoji zbroj si musíš nejdøíve vydìlat. Nehledì na to, e tì pøijde draho.
+	AI_Output				(other, self,"Sld_700_Lee_ARMOR_Info_15_01"); //PotÅ™ebuju lepÅ¡Ã­ zbroj.
+	AI_Output				(self, other,"Sld_700_Lee_ARMOR_Info_08_02"); //Na svoji zbroj si musÃ­Å¡ nejdÅ™Ã­ve vydÄ›lat. NehledÄ› na to, Å¾e tÄ› pÅ™ijde draho.
 	
 	Info_ClearChoices	(Sld_700_Lee_ARMOR);
 	Info_AddChoice		(Sld_700_Lee_ARMOR,DIALOG_BACK,Sld_700_Lee_ARMOR_BACK);
@@ -429,18 +429,18 @@ func void Sld_700_Lee_ARMOR_BACK()
 };
 func void Sld_700_Lee_ARMOR_M()
 {
-	AI_Output				(other, self,"Sld_700_Lee_ARMOR_M_Info_08_01"); //Chtìl bych støední zbroj.
+	AI_Output				(other, self,"Sld_700_Lee_ARMOR_M_Info_08_01"); //ChtÄ›l bych stÅ™ednÃ­ zbroj.
 	if (Kapitel < 3)
 	{
-		AI_Output			(self, other,"Sld_700_Lee_ARMOR_M_Info_08_02"); //Ještì nejsi dost zkušenı, abys nosil lepší zbroj. Pøijï, a budeš mít víc zkušeností.
+		AI_Output			(self, other,"Sld_700_Lee_ARMOR_M_Info_08_02"); //JeÅ¡tÄ› nejsi dost zkuÅ¡enÃ½, abys nosil lepÅ¡Ã­ zbroj. PÅ™ijÄ, aÅ¾ budeÅ¡ mÃ­t vÃ­c zkuÅ¡enostÃ­.
 	}
 	else if (Npc_HasItems (hero,ItMinugget) < VALUE_SLD_ARMOR_M) 
 	{
-		AI_Output			(self, other,"Sld_700_Lee_ARMOR_M_Info_08_03"); //Bez rudy nedostaneš ádnou zbroj.
+		AI_Output			(self, other,"Sld_700_Lee_ARMOR_M_Info_08_03"); //Bez rudy nedostaneÅ¡ Å¾Ã¡dnou zbroj.
 	}
 	else 
 	{
-		AI_Output			(self, other,"Sld_700_Lee_ARMOR_M_Info_08_04"); //Tahle zbroj je pìkná práce. Ochrání tvé tìlo velmi dobøe.
+		AI_Output			(self, other,"Sld_700_Lee_ARMOR_M_Info_08_04"); //Tahle zbroj je pÄ›knÃ¡ prÃ¡ce. OchrÃ¡nÃ­ tvÃ© tÄ›lo velmi dobÅ™e.
 		B_GiveInvItems  	(hero, self, ItMinugget,VALUE_SLD_ARMOR_M);
 		CreateInvItem		(hero,SLD_ARMOR_M);
 		
@@ -451,18 +451,18 @@ func void Sld_700_Lee_ARMOR_M()
 };
 func void Sld_700_Lee_ARMOR_H()
 {
-	AI_Output				(other, self,"Sld_700_Lee_ARMOR_H_Info_08_01"); //Dej mi tìkou zbroj.
+	AI_Output				(other, self,"Sld_700_Lee_ARMOR_H_Info_08_01"); //Dej mi tÄ›Å¾kou zbroj.
 	if (Kapitel < 4)
 	{
-		AI_Output			(self, other,"Sld_700_Lee_ARMOR_H_Info_08_02"); //Ještì nejsi dost zkušenı, abys nosil tìkou zbroj. Pøijï, a budeš mít víc zkušeností.
+		AI_Output			(self, other,"Sld_700_Lee_ARMOR_H_Info_08_02"); //JeÅ¡tÄ› nejsi dost zkuÅ¡enÃ½, abys nosil tÄ›Å¾kou zbroj. PÅ™ijÄ, aÅ¾ budeÅ¡ mÃ­t vÃ­c zkuÅ¡enostÃ­.
 	}
 	else if (Npc_HasItems(hero,ItMinugget) < VALUE_SLD_ARMOR_H) 
 	{
-		AI_Output			(self, other,"Sld_700_Lee_ARMOR_H_Info_08_03"); //Bez rudy nedostaneš ádnou zbroj.
+		AI_Output			(self, other,"Sld_700_Lee_ARMOR_H_Info_08_03"); //Bez rudy nedostaneÅ¡ Å¾Ã¡dnou zbroj.
 	}
 	else 
 	{
-		AI_Output			(self, other,"Sld_700_Lee_ARMOR_H_Info_08_04"); //Tahle zbroj je nejlepší kousek, jakı kdy byl uvnitø Bariéry. A vìø mi, má cenu rudy.
+		AI_Output			(self, other,"Sld_700_Lee_ARMOR_H_Info_08_04"); //Tahle zbroj je nejlepÅ¡Ã­ kousek, jakÃ½ kdy byl uvnitÅ™ BariÃ©ry. A vÄ›Å™ mi, mÃ¡ cenu rudy.
 		B_GiveInvItems  	(hero, self, ItMinugget,VALUE_SLD_ARMOR_H);
 
 		CreateInvItem		(hero,SLD_ARMOR_H);	//SN: ohne B_GiveInvItem, weil sonst Lee nackt dasteht!
@@ -484,7 +484,7 @@ INSTANCE Sld_700_Lee_Teach(C_INFO)
 	condition	= Sld_700_Lee_Teach_Condition;
 	information	= Sld_700_Lee_Teach_Info;
 	permanent	= 1;
-	description = "Mùeš mì nìco nauèit?";
+	description = "MÅ¯Å¾eÅ¡ mÄ› nÄ›co nauÄit?";
 };                       
 
 FUNC INT Sld_700_Lee_Teach_Condition()
@@ -498,8 +498,8 @@ FUNC INT Sld_700_Lee_Teach_Condition()
 
 FUNC VOID Sld_700_Lee_Teach_Info()
 {
-	AI_Output(other,self,"Sld_700_Lee_Teach_15_00"); //Mùeš mì nìco nauèit?
-	AI_Output(self,other,"Sld_700_Lee_Teach_08_01"); //Mùu ti pomoci stát se silnìjší a obratnìjší.
+	AI_Output(other,self,"Sld_700_Lee_Teach_15_00"); //MÅ¯Å¾eÅ¡ mÄ› nÄ›co nauÄit?
+	AI_Output(self,other,"Sld_700_Lee_Teach_08_01"); //MÅ¯Å¾u ti pomoci stÃ¡t se silnÄ›jÅ¡Ã­ a obratnÄ›jÅ¡Ã­.
 	
 	
 	
@@ -577,7 +577,7 @@ FUNC int  Sld_700_Lee_ZWEIHAND1_Condition()
 {	
 	if 	( 
 			(Npc_GetTalentSkill  (hero,NPC_TALENT_2H) < 1)
-			&& ((Npc_GetTrueGuild    (hero) == GIL_SLD) || ((Npc_GetTrueGuild(hero)==GIL_KDW) && (Kapitel >= 4))  )	//jetzt auch als Wassermagier im 4. Kapitel möglich ***BJÖRN***
+			&& ((Npc_GetTrueGuild    (hero) == GIL_SLD) || ((Npc_GetTrueGuild(hero)==GIL_KDW) && (Kapitel >= 4))  )	//jetzt auch als Wassermagier im 4. Kapitel mÃ¶glich ***BJÃ–RN***
 		)
 	{
 		return TRUE;
@@ -586,16 +586,16 @@ FUNC int  Sld_700_Lee_ZWEIHAND1_Condition()
 };
 FUNC void  Sld_700_Lee_ZWEIHAND1_Info()
 {
-	AI_Output			(other, self,"Sld_700_Lee_ZWEIHAND1_Info_15_01"); //Chci se nauèit zacházet s obouruèním meèem.
+	AI_Output			(other, self,"Sld_700_Lee_ZWEIHAND1_Info_15_01"); //Chci se nauÄit zachÃ¡zet s obouruÄnÃ­m meÄem.
 	
 	if (B_GiveSkill(other,NPC_TALENT_2H , 1, LPCOST_TALENT_2H_1))
 	{
-		AI_Output			(self, other,"Sld_700_Lee_ZWEIHAND1_Info_08_02"); //Dobøe, ale nejdøív musíme pobrat základy.
-		AI_Output			(self, other,"Sld_700_Lee_ZWEIHAND1_Info_08_03"); //Meè musíš dret vodorovnì. Potøebuješ silnìjší rozmach, abys mohl na nepøítele zaútoèit takovou tìkou zbraní.
-		AI_Output			(self, other,"Sld_700_Lee_ZWEIHAND1_Info_08_04"); //Zvedni ruku a rozmáchni se rovnou dolu. To obvykle staèí na to, abys nepøítele srazil k zemi.
-		AI_Output			(self, other,"Sld_700_Lee_ZWEIHAND1_Info_08_05"); //Toho momentu pak vyuiješ k novému rozmáchnutí.
-		AI_Output			(self, other,"Sld_700_Lee_ZWEIHAND1_Info_08_06"); //Obouruèní meèe jsou ideální k zasazování boèních úderù, kterımi si nepøítele udríš od tìla.
-		AI_Output			(self, other,"Sld_700_Lee_ZWEIHAND1_Info_08_07"); //To by mohlo pro zaèátek staèit. Trénuj.
+		AI_Output			(self, other,"Sld_700_Lee_ZWEIHAND1_Info_08_02"); //DobÅ™e, ale nejdÅ™Ã­v musÃ­me pobrat zÃ¡klady.
+		AI_Output			(self, other,"Sld_700_Lee_ZWEIHAND1_Info_08_03"); //MeÄ musÃ­Å¡ drÅ¾et vodorovnÄ›. PotÅ™ebujeÅ¡ silnÄ›jÅ¡Ã­ rozmach, abys mohl na nepÅ™Ã­tele zaÃºtoÄit takovou tÄ›Å¾kou zbranÃ­.
+		AI_Output			(self, other,"Sld_700_Lee_ZWEIHAND1_Info_08_04"); //Zvedni ruku a rozmÃ¡chni se rovnou dolu. To obvykle staÄÃ­ na to, abys nepÅ™Ã­tele srazil k zemi.
+		AI_Output			(self, other,"Sld_700_Lee_ZWEIHAND1_Info_08_05"); //Toho momentu pak vyuÅ¾ijeÅ¡ k novÃ©mu rozmÃ¡chnutÃ­.
+		AI_Output			(self, other,"Sld_700_Lee_ZWEIHAND1_Info_08_06"); //ObouruÄnÃ­ meÄe jsou ideÃ¡lnÃ­ k zasazovÃ¡nÃ­ boÄnÃ­ch ÃºderÅ¯, kterÃ½mi si nepÅ™Ã­tele udrÅ¾Ã­Å¡ od tÄ›la.
+		AI_Output			(self, other,"Sld_700_Lee_ZWEIHAND1_Info_08_07"); //To by mohlo pro zaÄÃ¡tek staÄit. TrÃ©nuj.
 	
 		Sld_700_Lee_ZWEIHAND1.permanent = 0;
 	};
@@ -618,7 +618,7 @@ FUNC int  Sld_700_Lee_ZWEIHAND2_Condition()
 	if
 		( 
 			(Npc_GetTalentSkill  (hero,NPC_TALENT_2H) == 1)
-			&& ( (Npc_GetTrueGuild    (hero) == GIL_SLD) ||  ((Npc_GetTrueGuild(hero)==GIL_KDW) && (Kapitel >= 4))  )	//jetzt auch als Wassermagier im 4. Kapitel möglich ***BJÖRN***
+			&& ( (Npc_GetTrueGuild    (hero) == GIL_SLD) ||  ((Npc_GetTrueGuild(hero)==GIL_KDW) && (Kapitel >= 4))  )	//jetzt auch als Wassermagier im 4. Kapitel mÃ¶glich ***BJÃ–RN***
 		)
 	{
 		return TRUE;
@@ -627,18 +627,18 @@ FUNC int  Sld_700_Lee_ZWEIHAND2_Condition()
 };
 FUNC void  Sld_700_Lee_ZWEIHAND2_Info()
 {
-	AI_Output			(other, self,"Sld_700_Lee_ZWEIHAND2_Info_15_01"); //Chci se dozvìdìt víc o boji s obouruèním meèem.
+	AI_Output			(other, self,"Sld_700_Lee_ZWEIHAND2_Info_15_01"); //Chci se dozvÄ›dÄ›t vÃ­c o boji s obouruÄnÃ­m meÄem.
 	
 	if (B_GiveSkill(other,NPC_TALENT_2H , 2, LPCOST_TALENT_2H_2))
 	{
-		AI_Output			(self, other,"Sld_700_Lee_ZWEIHAND2_Info_08_02"); //Ze všeho nejdøíve musíš zaujmout základní postoj. Meè musíš dret svisle, stranou od tìla a údery vést silnì obìma rukama.
-		AI_Output			(self, other,"Sld_700_Lee_ZWEIHAND2_Info_08_03"); //Švihnout rychle dolu a ostøí vést pøes rameno. Pak máš šanci provést rychlı švih napravo.
-		AI_Output			(self, other,"Sld_700_Lee_ZWEIHAND2_Info_08_04"); //Tvùj protivník nebude mít šanci se k tobì dostat.
-		AI_Output			(self, other,"Sld_700_Lee_ZWEIHAND2_Info_08_05"); //Nebo meèem švihni z levé horní strany smìrem dopøedu, abys odrazil protivníka dozadu.
-		AI_Output			(self, other,"Sld_700_Lee_ZWEIHAND2_Info_08_06"); //Poøád se otáèej, abys následnému švihu vdy dodával potøebnou sílu, která protivníka srazí.
-		AI_Output			(self, other,"Sld_700_Lee_ZWEIHAND2_Info_08_07"); //Pokud to nebude staèit, zbylı švih vyuij k novému napøáhnutí meèe.
-		AI_Output			(self, other,"Sld_700_Lee_ZWEIHAND2_Info_08_08"); //A útok dokonèíš, zneškodni protivníka a vyèkej na další souboj.
-		AI_Output			(self, other,"Sld_700_Lee_ZWEIHAND2_Info_08_09"); //Klíèem k úspìchu je mìnit postoje a polohy.
+		AI_Output			(self, other,"Sld_700_Lee_ZWEIHAND2_Info_08_02"); //Ze vÅ¡eho nejdÅ™Ã­ve musÃ­Å¡ zaujmout zÃ¡kladnÃ­ postoj. MeÄ musÃ­Å¡ drÅ¾et svisle, stranou od tÄ›la a Ãºdery vÃ©st silnÄ› obÄ›ma rukama.
+		AI_Output			(self, other,"Sld_700_Lee_ZWEIHAND2_Info_08_03"); //Å vihnout rychle dolu a ostÅ™Ã­ vÃ©st pÅ™es rameno. Pak mÃ¡Å¡ Å¡anci provÃ©st rychlÃ½ Å¡vih napravo.
+		AI_Output			(self, other,"Sld_700_Lee_ZWEIHAND2_Info_08_04"); //TvÅ¯j protivnÃ­k nebude mÃ­t Å¡anci se k tobÄ› dostat.
+		AI_Output			(self, other,"Sld_700_Lee_ZWEIHAND2_Info_08_05"); //Nebo meÄem Å¡vihni z levÃ© hornÃ­ strany smÄ›rem dopÅ™edu, abys odrazil protivnÃ­ka dozadu.
+		AI_Output			(self, other,"Sld_700_Lee_ZWEIHAND2_Info_08_06"); //PoÅ™Ã¡d se otÃ¡Äej, abys nÃ¡slednÃ©mu Å¡vihu vÅ¾dy dodÃ¡val potÅ™ebnou sÃ­lu, kterÃ¡ protivnÃ­ka srazÃ­.
+		AI_Output			(self, other,"Sld_700_Lee_ZWEIHAND2_Info_08_07"); //Pokud to nebude staÄit, zbylÃ½ Å¡vih vyuÅ¾ij k novÃ©mu napÅ™Ã¡hnutÃ­ meÄe.
+		AI_Output			(self, other,"Sld_700_Lee_ZWEIHAND2_Info_08_08"); //AÅ¾ Ãºtok dokonÄÃ­Å¡, zneÅ¡kodni protivnÃ­ka a vyÄkej na dalÅ¡Ã­ souboj.
+		AI_Output			(self, other,"Sld_700_Lee_ZWEIHAND2_Info_08_09"); //KlÃ­Äem k ÃºspÄ›chu je mÄ›nit postoje a polohy.
 	
 		Sld_700_Lee_ZWEIHAND2.permanent = 0;
 	};

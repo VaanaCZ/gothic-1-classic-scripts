@@ -37,7 +37,7 @@ INSTANCE Info_Nov_3_EinerVonEuchWerden (C_INFO) // E1
 	condition	= Info_Nov_3_EinerVonEuchWerden_Condition;
 	information	= Info_Nov_3_EinerVonEuchWerden_Info;
 	permanent	= 1;
-	description = "Jak se m˘ûu p¯idat k t·boru?";
+	description = "Jak se m≈Ø≈æu p≈ôidat k t√°boru?";
 };                       
 
 FUNC INT Info_Nov_3_EinerVonEuchWerden_Condition()
@@ -50,9 +50,9 @@ FUNC INT Info_Nov_3_EinerVonEuchWerden_Condition()
 
 FUNC VOID Info_Nov_3_EinerVonEuchWerden_Info()
 {
-	AI_Output(other,self,"Info_Nov_3_EinerVonEuchWerden_15_00"); //Jak se m˘ûu p¯idat k t·boru?
-	AI_Output(self,other,"Info_Nov_3_EinerVonEuchWerden_03_01"); //Jednoduch· vÏc. ProstÏ tam jdi, p¯Ìteli.
-	AI_Output(self,other,"Info_Nov_3_EinerVonEuchWerden_03_02"); //ÿekni Guru, oni tÏ provedou.
+	AI_Output(other,self,"Info_Nov_3_EinerVonEuchWerden_15_00"); //Jak se m≈Ø≈æu p≈ôidat k t√°boru?
+	AI_Output(self,other,"Info_Nov_3_EinerVonEuchWerden_03_01"); //Jednoduch√° vƒõc. Prostƒõ tam jdi, p≈ô√≠teli.
+	AI_Output(self,other,"Info_Nov_3_EinerVonEuchWerden_03_02"); //≈òekni Guru, oni tƒõ provedou.
 };
 
 // *************************************************************************
@@ -65,7 +65,7 @@ INSTANCE Info_Nov_3_WichtigePersonen(C_INFO)
 	condition	= Info_Nov_3_WichtigePersonen_Condition;
 	information	= Info_Nov_3_WichtigePersonen_Info;
 	permanent	= 1;
-	description = "Kdo je tady öÈf?";
+	description = "Kdo je tady ≈°√©f?";
 };                       
 
 FUNC INT Info_Nov_3_WichtigePersonen_Condition()
@@ -75,9 +75,9 @@ FUNC INT Info_Nov_3_WichtigePersonen_Condition()
 
 FUNC VOID Info_Nov_3_WichtigePersonen_Info()
 {
-	AI_Output(other,self,"Info_Nov_3_WichtigePersonen_15_00"); //Kdo je tady öÈf?
-	AI_Output(self,other,"Info_Nov_3_WichtigePersonen_03_01"); //Y'Berion! BuÔ pochv·len, Sp·Ëi! Dovedl n·s na toto slavnÈ mÌsto.
-	AI_Output(self,other,"Info_Nov_3_WichtigePersonen_03_02"); //Toto vöe bylo stvo¯eno skrze jeho vize.
+	AI_Output(other,self,"Info_Nov_3_WichtigePersonen_15_00"); //Kdo je tady ≈°√©f?
+	AI_Output(self,other,"Info_Nov_3_WichtigePersonen_03_01"); //Y'Berion! Buƒè pochv√°len, Sp√°ƒçi! Dovedl n√°s na toto slavn√© m√≠sto.
+	AI_Output(self,other,"Info_Nov_3_WichtigePersonen_03_02"); //Toto v≈°e bylo stvo≈ôeno skrze jeho vize.
 };
 
 // *************************************************************************
@@ -90,7 +90,7 @@ INSTANCE Info_Nov_3_DasLager(C_INFO)
 	condition	= Info_Nov_3_DasLager_Condition;
 	information	= Info_Nov_3_DasLager_Info;
 	permanent	= 1;
-	description = "Je zde nÏco d˘leûitÈho, kam bych mÏl jÌt?";
+	description = "Je zde nƒõco d≈Øle≈æit√©ho, kam bych mƒõl j√≠t?";
 };                       
 
 FUNC INT Info_Nov_3_DasLager_Condition()
@@ -100,9 +100,9 @@ FUNC INT Info_Nov_3_DasLager_Condition()
 
 FUNC VOID Info_Nov_3_DasLager_Info()
 {
-	AI_Output(other,self,"Info_Nov_3_DasLager_15_00"); //Je zde nÏco d˘leûitÈho, kam bych mÏl jÌt?
-	AI_Output(self,other,"Info_Nov_3_DasLager_03_01"); //Je tu Fortuno. Rozd·v· drogu z baûin vöem n·sledovnÌk˘m.
-	AI_Output(self,other,"Info_Nov_3_DasLager_03_02"); //Najdeö ho pod alchymistickou dÌlnou Cor Kaloma.
+	AI_Output(other,self,"Info_Nov_3_DasLager_15_00"); //Je zde nƒõco d≈Øle≈æit√©ho, kam bych mƒõl j√≠t?
+	AI_Output(self,other,"Info_Nov_3_DasLager_03_01"); //Je tu Fortuno. Rozd√°v√° drogu z ba≈æin v≈°em n√°sledovn√≠k≈Øm.
+	AI_Output(self,other,"Info_Nov_3_DasLager_03_02"); //Najde≈° ho pod alchymistickou d√≠lnou Cor Kaloma.
 	
 	var C_NPC CorKalom;		CorKalom= Hlp_GetNpc(Gur_1201_CorKalom);
 	CorKalom.aivar[AIV_FINDABLE] = TRUE;
@@ -128,8 +128,8 @@ FUNC INT Info_Nov_3_DieLage_Condition()
 
 FUNC VOID Info_Nov_3_DieLage_Info()
 {
-	AI_Output(other,self,"Info_Nov_3_DieLage_15_00"); //Jak se m·ö?
-	AI_Output(self,other,"Info_Nov_3_DieLage_03_01"); //Docela dob¯e, p¯Ìteli!
+	AI_Output(other,self,"Info_Nov_3_DieLage_15_00"); //Jak se m√°≈°?
+	AI_Output(self,other,"Info_Nov_3_DieLage_03_01"); //Docela dob≈ôe, p≈ô√≠teli!
 };
 	
 // *************************************************************************

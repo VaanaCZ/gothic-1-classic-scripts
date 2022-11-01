@@ -17,15 +17,15 @@ FUNC void GUR_1212_MadCorKalom_Talk2SC_Info ()
 	AI_SetWalkmode		(self, NPC_WALK);
 	AI_GotoNpc			(self, hero);
 	
-	AI_Output			(self, hero,"GUR_1212_MadCorKalom_Talk2SC_10_01"); //Koneènì se znovu setkáváme!
-	AI_Output			(self, hero,"GUR_1212_MadCorKalom_Talk2SC_10_02"); //Mùj mistr mi u vyprávìl o tvém pøíchodu!
-	AI_Output			(self, hero,"GUR_1212_MadCorKalom_Talk2SC_10_03"); //Dokáe vycítit tvoji pøítomnost.
-	AI_Output			(hero, self,"GUR_1212_MadCorKalom_Talk2SC_15_04"); //Brzy mu budu blí, ne se mu bude líbit.
-	AI_Output			(self, hero,"GUR_1212_MadCorKalom_Talk2SC_10_05"); //Nechceme, abys zmaøil naše plány.
-	AI_Output			(self, hero,"GUR_1212_MadCorKalom_Talk2SC_10_06"); //Svìt se stane svìdkem probuzení spasitele a nikdo ho nezastaví.
-	AI_Output			(self, hero,"GUR_1212_MadCorKalom_Talk2SC_10_07"); //Všichni nevìrci zaplatí svùj dluh.
-	AI_Output			(self, hero,"GUR_1212_MadCorKalom_Talk2SC_10_08"); //A tobì se dostane té cti zaplatit jako první.
-	AI_Output			(self, hero,"GUR_1212_MadCorKalom_Talk2SC_10_09"); //SSSPÁÁÁÁÁÈÈÈÍÍÍÍ, PRROOBUUUÏÏÏ SSEEE!!!!!!!!
+	AI_Output			(self, hero,"GUR_1212_MadCorKalom_Talk2SC_10_01"); //KoneÄnÄ› se znovu setkÃ¡vÃ¡me!
+	AI_Output			(self, hero,"GUR_1212_MadCorKalom_Talk2SC_10_02"); //MÅ¯j mistr mi uÅ¾ vyprÃ¡vÄ›l o tvÃ©m pÅ™Ã­chodu!
+	AI_Output			(self, hero,"GUR_1212_MadCorKalom_Talk2SC_10_03"); //DokÃ¡Å¾e vycÃ­tit tvoji pÅ™Ã­tomnost.
+	AI_Output			(hero, self,"GUR_1212_MadCorKalom_Talk2SC_15_04"); //Brzy mu budu blÃ­Å¾, neÅ¾ se mu bude lÃ­bit.
+	AI_Output			(self, hero,"GUR_1212_MadCorKalom_Talk2SC_10_05"); //Nechceme, abys zmaÅ™il naÅ¡e plÃ¡ny.
+	AI_Output			(self, hero,"GUR_1212_MadCorKalom_Talk2SC_10_06"); //SvÄ›t se stane svÄ›dkem probuzenÃ­ spasitele a nikdo ho nezastavÃ­.
+	AI_Output			(self, hero,"GUR_1212_MadCorKalom_Talk2SC_10_07"); //VÅ¡ichni nevÄ›rci zaplatÃ­ svÅ¯j dluh.
+	AI_Output			(self, hero,"GUR_1212_MadCorKalom_Talk2SC_10_08"); //A tobÄ› se dostane tÃ© cti zaplatit jako prvnÃ­.
+	AI_Output			(self, hero,"GUR_1212_MadCorKalom_Talk2SC_10_09"); //SSSPÃÃÃÃÃÄŒÄŒÄŒÃÃÃÃ, PRROOBUUUÄÄÄ SSEEE!!!!!!!!
 
 	AI_StopProcessInfos	(self);
 

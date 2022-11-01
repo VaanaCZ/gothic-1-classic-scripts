@@ -21,7 +21,7 @@ FUNC int DIA_SLD_761_Soeldner_INTRO_CONDITION()
 
 func void DIA_SLD_761_Soeldner_INTRO_INFO()
 {
-	AI_Output (self, other,"DIA_SLD_761_Soeldner_INTRO_INFO_03_01"); //Co tady dÏl·ö v tom dole?
+	AI_Output (self, other,"DIA_SLD_761_Soeldner_INTRO_INFO_03_01"); //Co tady dƒõl√°≈° v tom dole?
 };
 
 //-------------------- Exit 1 -----------------------------
@@ -34,7 +34,7 @@ instance DIA_SLD_761_Soeldner_EXIT_1 (C_INFO)
 	information		= DIA_SLD_761_Soeldner_EXIT_1_INFO;
 	important		= 0;
 	permanent		= 0;
-	description 	= "DÏl·m po¯·d tu samou pr·ci.";
+	description 	= "Dƒõl√°m po≈ô√°d tu samou pr√°ci.";
 };
 
 FUNC int DIA_SLD_761_Soeldner_EXIT_1_CONDITION()
@@ -44,8 +44,8 @@ FUNC int DIA_SLD_761_Soeldner_EXIT_1_CONDITION()
 
 func void DIA_SLD_761_Soeldner_EXIT_1_INFO()
 {
-	AI_Output (other, self,"DIA_SLD_761_Soeldner_EXIT_1_INFO_15_01"); //DÏl·m po¯·d tu samou pr·ci.
-	AI_Output (self, other,"DIA_SLD_761_Soeldner_EXIT_1_INFO_03_02");//Taky si to myslÌm.
+	AI_Output (other, self,"DIA_SLD_761_Soeldner_EXIT_1_INFO_15_01"); //Dƒõl√°m po≈ô√°d tu samou pr√°ci.
+	AI_Output (self, other,"DIA_SLD_761_Soeldner_EXIT_1_INFO_03_02");//Taky si to mysl√≠m.
 	AI_StopProcessInfos	( self );
 };
 
@@ -59,7 +59,7 @@ instance DIA_SLD_761_Soeldner_EXIT_2 (C_INFO)
 	information		= DIA_SLD_761_Soeldner_EXIT_2_INFO;
 	important		= 0;
 	permanent		= 1;
-	description 	= "RadÏji p˘jdu!";
+	description 	= "Radƒõji p≈Øjdu!";
 };
 
 FUNC int DIA_SLD_761_Soeldner_EXIT_2_CONDITION()
@@ -72,8 +72,8 @@ FUNC int DIA_SLD_761_Soeldner_EXIT_2_CONDITION()
 
 func void DIA_SLD_761_Soeldner_EXIT_2_INFO()
 {
-	AI_Output (other, self,"DIA_SLD_761_Soeldner_EXIT_2_INFO_15_01"); //RadÏji p˘jdu!
-	AI_Output (self, other,"DIA_SLD_761_Soeldner_EXIT_2_INFO_03_02");//Dobr·.
+	AI_Output (other, self,"DIA_SLD_761_Soeldner_EXIT_2_INFO_15_01"); //Radƒõji p≈Øjdu!
+	AI_Output (self, other,"DIA_SLD_761_Soeldner_EXIT_2_INFO_03_02");//Dobr√°.
 	AI_StopProcessInfos	( self );
 };
 
@@ -86,7 +86,7 @@ instance DIA_SLD_761_Soeldner_UMSEHEN (C_INFO)
 	information		= DIA_SLD_761_Soeldner_UMSEHEN_INFO;
 	important		= 0;
 	permanent		= 0;
-	description 	= "Jen jsem se chtÏl porozhlÈdnout po t·bo¯e.";
+	description 	= "Jen jsem se chtƒõl porozhl√©dnout po t√°bo≈ôe.";
 };
 
 FUNC int DIA_SLD_761_Soeldner_UMSEHEN_CONDITION()
@@ -96,8 +96,8 @@ FUNC int DIA_SLD_761_Soeldner_UMSEHEN_CONDITION()
 
 func void DIA_SLD_761_Soeldner_UMSEHEN_INFO()
 {  
-	AI_Output (other, self,"DIA_SLD_761_Soeldner_UMSEHEN_INFO_15_01"); //Jen jsem se chtÏl porozhlÈdnout po t·bo¯e.
-	AI_Output (self, other,"DIA_SLD_761_Soeldner_UMSEHEN_INFO_03_02");//Pak jsi p¯iöel na nespr·vnÈ mÌsto, protoûe tohle je vchod do dolu, kam tÏ nepustÌme.
+	AI_Output (other, self,"DIA_SLD_761_Soeldner_UMSEHEN_INFO_15_01"); //Jen jsem se chtƒõl porozhl√©dnout po t√°bo≈ôe.
+	AI_Output (self, other,"DIA_SLD_761_Soeldner_UMSEHEN_INFO_03_02");//Pak jsi p≈ôi≈°el na nespr√°vn√© m√≠sto, proto≈æe tohle je vchod do dolu, kam tƒõ nepust√≠me.
 };
 
 
@@ -110,7 +110,7 @@ instance DIA_SLD_761_Soeldner_INMINE (C_INFO)
 	information		= DIA_SLD_761_Soeldner_INMINE_INFO;
 	important		= 0;
 	permanent		= 0;
-	description 	= "ChtÏl jsem vidÏt d˘l.";
+	description 	= "Chtƒõl jsem vidƒõt d≈Øl.";
 };
 
 FUNC int DIA_SLD_761_Soeldner_INMINE_CONDITION()
@@ -120,8 +120,8 @@ FUNC int DIA_SLD_761_Soeldner_INMINE_CONDITION()
 
 func void DIA_SLD_761_Soeldner_INMINE_INFO()
 {
-	AI_Output (other, self,"DIA_SLD_761_Soeldner_INMINE_INFO_15_01");//ChtÏl jsem vidÏt d˘l.
-	AI_Output (self, other,"DIA_SLD_761_Soeldner_INMINE_INFO_03_02");//Snad vidÌö, ûe d˘l je zamËen˝, takûe tu nenÌ v˘bec nic k vidÏnÌ.
+	AI_Output (other, self,"DIA_SLD_761_Soeldner_INMINE_INFO_15_01");//Chtƒõl jsem vidƒõt d≈Øl.
+	AI_Output (self, other,"DIA_SLD_761_Soeldner_INMINE_INFO_03_02");//Snad vid√≠≈°, ≈æe d≈Øl je zamƒçen√Ω, tak≈æe tu nen√≠ v≈Øbec nic k vidƒõn√≠.
 
 };
 
@@ -134,7 +134,7 @@ instance DIA_SLD_761_Soeldner_Bribe (C_INFO)
 	information		= DIA_SLD_761_Soeldner_Bribe_INFO;
 	important		= 0;
 	permanent		= 0;
-	description 	= "Nemohlo by se s tÌm nÏco udÏlat?";
+	description 	= "Nemohlo by se s t√≠m nƒõco udƒõlat?";
 };
 
 FUNC int DIA_SLD_761_Soeldner_Bribe_CONDITION()
@@ -147,11 +147,11 @@ FUNC int DIA_SLD_761_Soeldner_Bribe_CONDITION()
 
 func void DIA_SLD_761_Soeldner_Bribe_INFO()
 {  
-	AI_Output (other, self,"DIA_SLD_761_Soeldner_Bribe_INFO_15_01");//Nemohlo by se s tÌm nÏco udÏlat?
-	AI_Output (self, other,"DIA_SLD_761_Soeldner_Bribe_INFO_03_02");//Co bysme s tÌm mÏli udÏlat?
-	AI_Output (self, other,"DIA_SLD_761_Soeldner_Bribe_INFO_03_03");//Okamûik, jestli se mÏ pokouöÌö podplatit, tak to jsi narazil na toho nespr·vnÈho.
-	AI_Output (other, self,"DIA_SLD_761_Soeldner_Bribe_INFO_15_04");//Ne, nepokouöel jsem se nikoho podplatit, jenom jsem myslel...
-	AI_Output (other, self,"DIA_SLD_761_Soeldner_Bribe_INFO_15_05");//J· myslÌm, ûe bys mÏl radÏji jÌt pryË.
+	AI_Output (other, self,"DIA_SLD_761_Soeldner_Bribe_INFO_15_01");//Nemohlo by se s t√≠m nƒõco udƒõlat?
+	AI_Output (self, other,"DIA_SLD_761_Soeldner_Bribe_INFO_03_02");//Co bysme s t√≠m mƒõli udƒõlat?
+	AI_Output (self, other,"DIA_SLD_761_Soeldner_Bribe_INFO_03_03");//Okam≈æik, jestli se mƒõ pokou≈°√≠≈° podplatit, tak to jsi narazil na toho nespr√°vn√©ho.
+	AI_Output (other, self,"DIA_SLD_761_Soeldner_Bribe_INFO_15_04");//Ne, nepokou≈°el jsem se nikoho podplatit, jenom jsem myslel...
+	AI_Output (other, self,"DIA_SLD_761_Soeldner_Bribe_INFO_15_05");//J√° mysl√≠m, ≈æe bys mƒõl radƒõji j√≠t pryƒç.
 	AI_StopProcessInfos	(self); 
 };
 

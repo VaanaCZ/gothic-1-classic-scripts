@@ -33,7 +33,7 @@ INSTANCE DIA_Dusty_Hello (C_INFO)
 	condition		= DIA_Dusty_Hello_Condition;
 	information		= DIA_Dusty_Hello_Info;
 	permanent		= 0;
-	description		= "Zdar! Jsem tady novı - jak to jde?";
+	description		= "Zdar! Jsem tady novÃ½ - jak to jde?";
 };
 
 FUNC INT DIA_Dusty_Hello_Condition()
@@ -43,11 +43,11 @@ FUNC INT DIA_Dusty_Hello_Condition()
 
 FUNC VOID DIA_Dusty_Hello_Info()
 {
-	AI_Output (other, self,"DIA_Dusty_Hello_15_00"); //Zdar! Jsem tady novı - jak to jde?
-	AI_Output (self, other,"DIA_Dusty_Hello_03_01"); //Jdi pryè! Za poslední dva tıdny jsem se v dolech sedøel k smrti. A co z toho?
-	AI_Output (self, other,"DIA_Dusty_Hello_03_02"); //Nìjakej blbej kus rudy, to je všechno. Vìtšinu z toho utratím za jídlo.
-	AI_Output (self, other,"DIA_Dusty_Hello_03_03"); //Mluvil jsem s Baalem Parvezem. Øekl mi o Sektovním táboøe nìkolik zajímavıch vìcí.
-	AI_Output (self, other,"DIA_Dusty_Hello_03_04"); //Myslím, e by bylo lepší pøejít tam, ne tady dál otroèit na Gomeze.
+	AI_Output (other, self,"DIA_Dusty_Hello_15_00"); //Zdar! Jsem tady novÃ½ - jak to jde?
+	AI_Output (self, other,"DIA_Dusty_Hello_03_01"); //Jdi pryÄ! Za poslednÃ­ dva tÃ½dny jsem se v dolech sedÅ™el k smrti. A co z toho?
+	AI_Output (self, other,"DIA_Dusty_Hello_03_02"); //NÄ›jakej blbej kus rudy, to je vÅ¡echno. VÄ›tÅ¡inu z toho utratÃ­m za jÃ­dlo.
+	AI_Output (self, other,"DIA_Dusty_Hello_03_03"); //Mluvil jsem s Baalem Parvezem. Å˜ekl mi o SektovnÃ­m tÃ¡boÅ™e nÄ›kolik zajÃ­mavÃ½ch vÄ›cÃ­.
+	AI_Output (self, other,"DIA_Dusty_Hello_03_04"); //MyslÃ­m, Å¾e by bylo lepÅ¡Ã­ pÅ™ejÃ­t tam, neÅ¾ tady dÃ¡l otroÄit na Gomeze.
 };
 
 // **************************************************
@@ -61,7 +61,7 @@ INSTANCE DIA_Dusty_WhyNotLeave (C_INFO)
 	condition		= DIA_Dusty_WhyNotLeave_Condition;
 	information		= DIA_Dusty_WhyNotLeave_Info;
 	permanent		= 0;
-	description		= "Tobì se tady nelíbí? Proè teda neodejdeš?";
+	description		= "TobÄ› se tady nelÃ­bÃ­? ProÄ teda neodejdeÅ¡?";
 };
 
 FUNC INT DIA_Dusty_WhyNotLeave_Condition()
@@ -75,13 +75,13 @@ FUNC INT DIA_Dusty_WhyNotLeave_Condition()
 
 FUNC VOID DIA_Dusty_WhyNotLeave_Info()
 {
-	AI_Output (other, self,"DIA_Dusty_WhyNotLeave_15_00"); //Tobì se tady nelíbí? Proè teda neodejdeš?
-	AI_Output (self, other,"DIA_Dusty_WhyNotLeave_03_01"); //Protoe si nejsem úplnì jistı, co tam mùu oèekávat. Mìl jsem tady kamaráda - jmenoval se Melvin. Odešel pøed tıdnem do Sektovního tábora.
-	AI_Output (self, other,"DIA_Dusty_WhyNotLeave_03_02"); //Od té doby jsem o nìm neslyšel. A dokud o nìm nedostanu zprávu, zùstanu tady!
+	AI_Output (other, self,"DIA_Dusty_WhyNotLeave_15_00"); //TobÄ› se tady nelÃ­bÃ­? ProÄ teda neodejdeÅ¡?
+	AI_Output (self, other,"DIA_Dusty_WhyNotLeave_03_01"); //ProtoÅ¾e si nejsem ÃºplnÄ› jistÃ½, co tam mÅ¯Å¾u oÄekÃ¡vat. MÄ›l jsem tady kamarÃ¡da - jmenoval se Melvin. OdeÅ¡el pÅ™ed tÃ½dnem do SektovnÃ­ho tÃ¡bora.
+	AI_Output (self, other,"DIA_Dusty_WhyNotLeave_03_02"); //Od tÃ© doby jsem o nÄ›m neslyÅ¡el. A dokud o nÄ›m nedostanu zprÃ¡vu, zÅ¯stanu tady!
 
 	Log_CreateTopic		(CH1_RecruitDusty,	LOG_MISSION);
 	Log_SetTopicStatus	(CH1_RecruitDusty,	LOG_RUNNING);
-	B_LogEntry			(CH1_RecruitDusty,"Dusty, kopáè ze Starého tábora, u je dlouho nespokojen se zdejším ivotem. Pøemıšlí o tom, e se pøidá k Bratrstvu v bainách.");
+	B_LogEntry			(CH1_RecruitDusty,"Dusty, kopÃ¡Ä ze StarÃ©ho tÃ¡bora, uÅ¾ je dlouho nespokojen se zdejÅ¡Ã­m Å¾ivotem. PÅ™emÃ½Å¡lÃ­ o tom, Å¾e se pÅ™idÃ¡ k Bratrstvu v baÅ¾inÃ¡ch.");
 };
 
 // **************************************************
@@ -95,7 +95,7 @@ INSTANCE DIA_Dusty_MetMelvin (C_INFO)
 	condition		= DIA_Dusty_MetMelvin_Condition;
 	information		= DIA_Dusty_MetMelvin_Info;
 	permanent		= 0;
-	description		= "Byl jsem v Sektovním táboøe a setkal se s Melvinem.";
+	description		= "Byl jsem v SektovnÃ­m tÃ¡boÅ™e a setkal se s Melvinem.";
 };
 
 FUNC INT DIA_Dusty_MetMelvin_Condition()
@@ -108,13 +108,13 @@ FUNC INT DIA_Dusty_MetMelvin_Condition()
 
 FUNC VOID DIA_Dusty_MetMelvin_Info()
 {
-	AI_Output (other, self,"DIA_Dusty_MetMelvin_15_00"); //Byl jsem v Sektovním táboøe a setkal se s Melvinem.
-	AI_Output (self, other,"DIA_Dusty_MetMelvin_03_01"); //No a? Co øíkal?
-	AI_Output (other, self,"DIA_Dusty_MetMelvin_15_02"); //Oèividnì mu to vyhovovalo líp, ne se nechat utlaèovat od stráí.
-	AI_Output (self, other,"DIA_Dusty_MetMelvin_03_03"); //No, tìbuch! To si tu celou radost nechává sám pro sebe? Musím tam jít. Ale z tohohle tábora se nikdy nedostanu..
-	AI_Output (other, self,"DIA_Dusty_MetMelvin_15_04"); //Vánì? Proè ne?
-	AI_Output (self, other,"DIA_Dusty_MetMelvin_03_05"); //Stráe zjistily, e jsem chtìl odejít, protoe jsem asi moc mluvil.
-	AI_Output (self, other,"DIA_Dusty_MetMelvin_03_06"); //Potøebuju aspoò 100 nugetù na uplacení stráí.
+	AI_Output (other, self,"DIA_Dusty_MetMelvin_15_00"); //Byl jsem v SektovnÃ­m tÃ¡boÅ™e a setkal se s Melvinem.
+	AI_Output (self, other,"DIA_Dusty_MetMelvin_03_01"); //No a? Co Å™Ã­kal?
+	AI_Output (other, self,"DIA_Dusty_MetMelvin_15_02"); //OÄividnÄ› mu to vyhovovalo lÃ­p, neÅ¾ se nechat utlaÄovat od strÃ¡Å¾Ã­.
+	AI_Output (self, other,"DIA_Dusty_MetMelvin_03_03"); //No, tÄ›buch! To si tu celou radost nechÃ¡vÃ¡ sÃ¡m pro sebe? MusÃ­m tam jÃ­t. Ale z tohohle tÃ¡bora se nikdy nedostanu..
+	AI_Output (other, self,"DIA_Dusty_MetMelvin_15_04"); //VÃ¡Å¾nÄ›? ProÄ ne?
+	AI_Output (self, other,"DIA_Dusty_MetMelvin_03_05"); //StrÃ¡Å¾e zjistily, Å¾e jsem chtÄ›l odejÃ­t, protoÅ¾e jsem asi moc mluvil.
+	AI_Output (self, other,"DIA_Dusty_MetMelvin_03_06"); //PotÅ™ebuju aspoÅˆ 100 nugetÅ¯ na uplacenÃ­ strÃ¡Å¾Ã­.
 };
 
 // **************************************************
@@ -128,7 +128,7 @@ INSTANCE DIA_Dusty_Offer100Ore (C_INFO)
 	condition		= DIA_Dusty_Offer100Ore_Condition;
 	information		= DIA_Dusty_Offer100Ore_Info;
 	permanent		= 0;
-	description		= "Co kdybych ti dal tìch 100 nugetù pro stráe?";
+	description		= "Co kdybych ti dal tÄ›ch 100 nugetÅ¯ pro strÃ¡Å¾e?";
 };
 
 FUNC INT DIA_Dusty_Offer100Ore_Condition()
@@ -142,10 +142,10 @@ FUNC INT DIA_Dusty_Offer100Ore_Condition()
 
 FUNC VOID DIA_Dusty_Offer100Ore_Info()
 {
-	AI_Output (other, self,"DIA_Dusty_Offer100Ore_15_00"); //Co kdybych ti dal tìch 100 nugetù pro stráe?
-	AI_Output (self, other,"DIA_Dusty_Offer100Ore_03_01"); //To bys udìlal? Proè?
-	AI_Output (other, self,"DIA_Dusty_Offer100Ore_15_02"); //Dobrá, øeknìme, e nejsi jedinı, kdo by se chtìl do Sektovního tábora podívat.
-	AI_Output (self, other,"DIA_Dusty_Offer100Ore_03_03"); //Take ty chceš jít se mnou?
+	AI_Output (other, self,"DIA_Dusty_Offer100Ore_15_00"); //Co kdybych ti dal tÄ›ch 100 nugetÅ¯ pro strÃ¡Å¾e?
+	AI_Output (self, other,"DIA_Dusty_Offer100Ore_03_01"); //To bys udÄ›lal? ProÄ?
+	AI_Output (other, self,"DIA_Dusty_Offer100Ore_15_02"); //DobrÃ¡, Å™eknÄ›me, Å¾e nejsi jedinÃ½, kdo by se chtÄ›l do SektovnÃ­ho tÃ¡bora podÃ­vat.
+	AI_Output (self, other,"DIA_Dusty_Offer100Ore_03_03"); //TakÅ¾e ty chceÅ¡ jÃ­t se mnou?
 };
 
 // **************************************************
@@ -159,7 +159,7 @@ INSTANCE DIA_Dusty_IWouldGo (C_INFO)
 	condition		= DIA_Dusty_IWouldGo_Condition;
 	information		= DIA_Dusty_IWouldGo_Info;
 	permanent		= 0;
-	description		= "PÙJDU s tebou do Sektovního tábora.";
+	description		= "PÅ®JDU s tebou do SektovnÃ­ho tÃ¡bora.";
 };
 
 FUNC INT DIA_Dusty_IWouldGo_Condition()
@@ -172,11 +172,11 @@ FUNC INT DIA_Dusty_IWouldGo_Condition()
 
 FUNC VOID DIA_Dusty_IWouldGo_Info()
 {
-	AI_Output	(other, self,"DIA_Dusty_IWouldGo_15_00"); //PÙJDU s tebou do Sektovního tábora.
-	AI_Output	(self, other,"DIA_Dusty_IWouldGo_03_01"); //Vıbornì, èlovìèe! Jsem pøipraven. Mùeme vyrazit, jakmile budeš chtít.
-	AI_Output	(self, other,"DIA_Dusty_IWouldGo_03_02"); //Ale nezapomeò - potøebujeme tìch 100 nugetù pro stráe.
+	AI_Output	(other, self,"DIA_Dusty_IWouldGo_15_00"); //PÅ®JDU s tebou do SektovnÃ­ho tÃ¡bora.
+	AI_Output	(self, other,"DIA_Dusty_IWouldGo_03_01"); //VÃ½bornÄ›, ÄlovÄ›Äe! Jsem pÅ™ipraven. MÅ¯Å¾eme vyrazit, jakmile budeÅ¡ chtÃ­t.
+	AI_Output	(self, other,"DIA_Dusty_IWouldGo_03_02"); //Ale nezapomeÅˆ - potÅ™ebujeme tÄ›ch 100 nugetÅ¯ pro strÃ¡Å¾e.
 
-	B_LogEntry	(CH1_RecruitDusty,"Podaøilo se mi pøesvìdèit kopáèe Dustyho, aby se pøidal do Tábora v bainách. Budu ale muset uplatit stráe nìjakou rudou. Nejlepší bude, kdy ho pøivedu pøímo k Baalu Tondralovi.");
+	B_LogEntry	(CH1_RecruitDusty,"PodaÅ™ilo se mi pÅ™esvÄ›dÄit kopÃ¡Äe Dustyho, aby se pÅ™idal do TÃ¡bora v baÅ¾inÃ¡ch. Budu ale muset uplatit strÃ¡Å¾e nÄ›jakou rudou. NejlepÅ¡Ã­ bude, kdyÅ¾ ho pÅ™ivedu pÅ™Ã­mo k Baalu Tondralovi.");
 	B_GiveXP	(XP_DustyJoined);
 };
 
@@ -193,7 +193,7 @@ INSTANCE DIA_Dusty_LetsGo (C_INFO)
 	condition		= DIA_Dusty_LetsGo_Condition;
 	information		= DIA_Dusty_LetsGo_Info;
 	permanent		= 1;
-	description		= "Jsem pøipraven - jdeme!";
+	description		= "Jsem pÅ™ipraven - jdeme!";
 };
 
 FUNC INT DIA_Dusty_LetsGo_Condition()
@@ -209,14 +209,14 @@ FUNC INT DIA_Dusty_LetsGo_Condition()
 
 FUNC VOID DIA_Dusty_LetsGo_Info()
 {
-	AI_Output (other, self,"DIA_Dusty_LetsGo_15_00"); //Jsem pøipraven - jdeme!
-	AI_Output (self, other,"DIA_Dusty_LetsGo_03_01"); //Dobøe - pojïme jiní branou - severní brána se nedá pouít, stráe tam není moné podplatit.
-	AI_Output (self, other,"DIA_Dusty_LetsGo_03_02"); //Snad je ta ruda pøesvìdèí - nejsem v tìchhle vìcech moc dobrı.
-	AI_Output (other, self,"DIA_Dusty_LetsGo_15_03"); //Dobrá - pojïme!
+	AI_Output (other, self,"DIA_Dusty_LetsGo_15_00"); //Jsem pÅ™ipraven - jdeme!
+	AI_Output (self, other,"DIA_Dusty_LetsGo_03_01"); //DobÅ™e - pojÄme jiÅ¾nÃ­ branou - severnÃ­ brÃ¡na se nedÃ¡ pouÅ¾Ã­t, strÃ¡Å¾e tam nenÃ­ moÅ¾nÃ© podplatit.
+	AI_Output (self, other,"DIA_Dusty_LetsGo_03_02"); //Snad je ta ruda pÅ™esvÄ›dÄÃ­ - nejsem v tÄ›chhle vÄ›cech moc dobrÃ½.
+	AI_Output (other, self,"DIA_Dusty_LetsGo_15_03"); //DobrÃ¡ - pojÄme!
 
 	if	!Dusty_LetsGo
 	{
-		B_LogEntry(CH1_RecruitDusty,"Dusty mì varoval, abych se vyhnul severní bránì. Snazší prı bude uplatit stráe u jiní brány.");
+		B_LogEntry(CH1_RecruitDusty,"Dusty mÄ› varoval, abych se vyhnul severnÃ­ brÃ¡nÄ›. SnazÅ¡Ã­ prÃ½ bude uplatit strÃ¡Å¾e u jiÅ¾nÃ­ brÃ¡ny.");
 		Dusty_LetsGo = TRUE;
 	};
 	

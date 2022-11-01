@@ -15,7 +15,7 @@
 	on_equip				=	Equip_Schutzring_Feuer1;
 	on_unequip				=	UnEquip_Schutzring_Feuer1;
 
-	description		= "Prsten plamennÈ ochrany";
+	description		= "Prsten plamenn√© ochrany";
 	//TEXT[0]			= "";
 	//TEXT[1]			= "";
 	////COUNT[1]		= ;
@@ -56,7 +56,7 @@
 	on_equip				=	Equip_Schutzring_Feuer2;
 	on_unequip				=	UnEquip_Schutzring_Feuer2;
 
-	description		= "Ochrana p¯ed ohnÏm";
+	description		= "Ochrana p≈ôed ohnƒõm";
 	//TEXT[0]			= "";
 	//TEXT[1]			= "";
 	////COUNT[1]		= ;
@@ -97,7 +97,7 @@
 	on_equip				=	Equip_Schutzring_Geschosse1;
 	on_unequip				=	UnEquip_Schutzring_Geschosse1;
 
-	description		= "Prsten d¯evÏnÈ k˘ûe";
+	description		= "Prsten d≈ôevƒõn√© k≈Ø≈æe";
 	//TEXT[0]			= "";
 	//TEXT[1]			= "";
 	////COUNT[1]		= ;
@@ -138,7 +138,7 @@
 	on_equip				=	Equip_Schutzring_Geschosse2;
 	on_unequip				=	UnEquip_Schutzring_Geschosse2;
 
-	description		= "Prsten kamennÈ k˘ûe";
+	description		= "Prsten kamenn√© k≈Ø≈æe";
 	//TEXT[0]			= "";
 	//TEXT[1]			= "";
 	////COUNT[1]		= ;
@@ -179,7 +179,7 @@
 	on_equip				=	Equip_Schutzring_Waffen1;
 	on_unequip				=	UnEquip_Schutzring_Waffen1;
 
-	description		= "Prsten ûeleznÈ k˘ûe";
+	description		= "Prsten ≈æelezn√© k≈Ø≈æe";
 	//TEXT[0]			= "";
 	//TEXT[1]			= "";
 	////COUNT[1]		= ;
@@ -222,7 +222,7 @@
 	on_equip				=	Equip_Schutzring_Waffen2;
 	on_unequip				=	UnEquip_Schutzring_Waffen2;
 
-	description		= "Prsten k˘ûe z magickÈ rudy";
+	description		= "Prsten k≈Ø≈æe z magick√© rudy";
 	//TEXT[0]			= "";
 	//TEXT[1]			= "";
 	////COUNT[1]		= ;
@@ -265,7 +265,7 @@
 	on_equip				=	Equip_Schutzring_Magie1;
 	on_unequip				=	UnEquip_Schutzring_Magie1;
 
-	description		= "Prsten duchovnÌ sÌly";
+	description		= "Prsten duchovn√≠ s√≠ly";
 	//TEXT[0]			= "";
 	//TEXT[1]			= "";
 	////COUNT[1]		= ;
@@ -350,7 +350,7 @@
 	on_equip				=	Equip_Schutzring_Magie1_Fire1;
 	on_unequip				=	UnEquip_Schutzring_Magie1_Fire1;
 
-	description		= "Prsten oËisty";
+	description		= "Prsten oƒçisty";
 	//TEXT[0]			= "";
 	//TEXT[1]			= "";
 	////COUNT[1]		= ;
@@ -393,7 +393,7 @@
 	on_equip				=	Equip_Schutzring_Magie2_Fire2;
 	on_unequip				=	UnEquip_Schutzring_Magie2_Fire2;
 
-	description		= "Prsten nep¯emoûitelnosti";
+	description		= "Prsten nep≈ôemo≈æitelnosti";
 	//TEXT[0]			= "";
 	//TEXT[1]			= "";
 	////COUNT[1]		= ;
@@ -526,7 +526,7 @@
 	on_equip				=  	Equip_Schutzring_Total1;
 	on_unequip				= 	UnEquip_Schutzring_Total1;
 
-	description		= "Prsten menöÌ nep¯emoûitelnosti";
+	description		= "Prsten men≈°√≠ nep≈ôemo≈æitelnosti";
 	//TEXT[0]			= "";
 	TEXT[1]			= NAME_Prot_Magic;
 	COUNT[1]		= 1;
@@ -575,7 +575,7 @@
 	on_equip				=  	Equip_Schutzring_Total2;
 	on_unequip				= 	UnEquip_Schutzring_Total2;
 
-	description		= "Prsten vÏtöÌ nep¯emoûitelnosti";
+	description		= "Prsten vƒõt≈°√≠ nep≈ôemo≈æitelnosti";
 	//TEXT[0]			= "";
 	TEXT[1]			= NAME_Prot_Magic;
 	COUNT[1]		= 3;
@@ -624,7 +624,7 @@
 	on_equip				=	Equip_Ring_des_Geschicks;
 	on_unequip				=	UnEquip_Ring_des_Geschicks;
 
-	description		= "Prsten menöÌ obratnosti";
+	description		= "Prsten men≈°√≠ obratnosti";
 	//TEXT[0]			= "";
 	//TEXT[1]			= "";
 	////COUNT[1]		= ;
@@ -666,7 +666,7 @@
 	on_equip				=	Equip_Ring_des_Geschicks2;
 	on_unequip				=	UnEquip_Ring_des_Geschicks2;
 
-	description		= "Prsten vÏtöÌ obratnosti";
+	description		= "Prsten vƒõt≈°√≠ obratnosti";
 	//TEXT[0]			= "";
 	//TEXT[1]			= "";
 	////COUNT[1]		= ;
@@ -708,7 +708,7 @@
 	on_equip				=	Equip_Ring_des_Lebens;
 	on_unequip				=	UnEquip_Ring_des_Lebens;
 
-	description		= "Prsten zdravÌ";
+	description		= "Prsten zdrav√≠";
 	//TEXT[0]			= "";
 	//TEXT[1]			= "";
 	////COUNT[1]		= ;
@@ -757,7 +757,7 @@
 	material 				=	MAT_METAL;
 	on_equip				=	Equip_Ring_des_Lebens2;
 	on_unequip				=	UnEquip_Ring_des_Lebens2;
-	description		= "Prsten vÏtöÌho zdravÌ";
+	description		= "Prsten vƒõt≈°√≠ho zdrav√≠";
 	//TEXT[0]			= "";
 	//TEXT[1]			= "";
 	////COUNT[1]		= ;
@@ -850,7 +850,7 @@
 	on_equip				=	Equip_Staerkering2;
 	on_unequip				=	UnEquip_Staerkering2;
 
-	description		= "Prsten sÌly";
+	description		= "Prsten s√≠ly";
 	//TEXT[0]			= "";
 	//TEXT[1]			= "";
 	////COUNT[1]		= ;
@@ -935,7 +935,7 @@
 	on_equip				=	Equip_Ring_der_Erleuchtung;
 	on_unequip				=	UnEquip_Ring_der_Erleuchtung;
 
-	description		= "Prsten osvÌcenÌ";
+	description		= "Prsten osv√≠cen√≠";
 	//TEXT[0]			= "";
 	//TEXT[1]			= "";
 	////COUNT[1]		= ;
@@ -993,7 +993,7 @@
 	on_equip				=	Equip_Machtring;
 	on_unequip				=	UnEquip_Machtring;
 
-	description		= "V·leËnÌk˘v prsten moci";
+	description		= "V√°leƒçn√≠k≈Øv prsten moci";
 	//TEXT[0]			= "";
 	//TEXT[1]			= "";
 	////COUNT[1]		= ;

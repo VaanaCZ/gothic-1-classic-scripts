@@ -47,11 +47,11 @@ FUNC int  Org_873_Cipher_Hello_Condition()
 
 FUNC VOID  Org_873_Cipher_Hello_Info()
 {
-	AI_Output (other, self,"DIA_Cipher_Hello_15_00"); //Jak to vypad·?
-	AI_Output (self, other,"DIA_Cipher_Hello_12_01"); //Vsadili jsme dalöÌ p¯ÌËel do Gomezova kola.
-	AI_Output (self, other,"DIA_Cipher_Hello_12_02"); //T¯i mrtvÌ str·ûci a spousta zboûÌ na prodej. P¯ipÌjÌm na to!
-	AI_Output (other, self,"DIA_Cipher_Hello_15_03"); //Ty pat¯Ìö k tÏm chlap˘m, co neust·le napadali Star˝ t·bor?
-	AI_Output (self, other,"DIA_Cipher_Hello_12_04"); //Ne. Jen kdyû to stojÌ za to.
+	AI_Output (other, self,"DIA_Cipher_Hello_15_00"); //Jak to vypad√°?
+	AI_Output (self, other,"DIA_Cipher_Hello_12_01"); //Vsadili jsme dal≈°√≠ p≈ô√≠ƒçel do Gomezova kola.
+	AI_Output (self, other,"DIA_Cipher_Hello_12_02"); //T≈ôi mrtv√≠ str√°≈æci a spousta zbo≈æ√≠ na prodej. P≈ôip√≠j√≠m na to!
+	AI_Output (other, self,"DIA_Cipher_Hello_15_03"); //Ty pat≈ô√≠≈° k tƒõm chlap≈Øm, co neust√°le napadali Star√Ω t√°bor?
+	AI_Output (self, other,"DIA_Cipher_Hello_12_04"); //Ne. Jen kdy≈æ to stoj√≠ za to.
 };
 
 // ******************************
@@ -65,7 +65,7 @@ instance  Org_873_Cipher_Fisk (C_INFO)
 	condition	=  Org_873_Cipher_Fisk_Condition;
 	information	=  Org_873_Cipher_Fisk_Info;
 	permanent	=  1;
-	description = "Fisk ze StarÈho t·bora hled· obchodnÌho partnera.";
+	description = "Fisk ze Star√©ho t√°bora hled√° obchodn√≠ho partnera.";
 };                       
 
 FUNC int  Org_873_Cipher_Fisk_Condition()
@@ -78,9 +78,9 @@ FUNC int  Org_873_Cipher_Fisk_Condition()
 
 FUNC VOID  Org_873_Cipher_Fisk_Info()
 {
-	AI_Output (other, self,"DIA_Cipher_Fisk_15_00"); //Fisk ze StarÈho t·bora hled· obchodnÌho partnera.
-	AI_Output (self, other,"DIA_Cipher_Fisk_12_01"); //Nem·m z·jem.
-	AI_Output (self, other,"DIA_Cipher_Fisk_12_02"); //Ale Sharky by mohl mÌt z·jem. Jestli ho uvidÌö, ¯ekni mu.
+	AI_Output (other, self,"DIA_Cipher_Fisk_15_00"); //Fisk ze Star√©ho t√°bora hled√° obchodn√≠ho partnera.
+	AI_Output (self, other,"DIA_Cipher_Fisk_12_01"); //Nem√°m z√°jem.
+	AI_Output (self, other,"DIA_Cipher_Fisk_12_02"); //Ale Sharky by mohl m√≠t z√°jem. Jestli ho uvid√≠≈°, ≈ôekni mu.
 };
 
 // ******************************
@@ -96,7 +96,7 @@ instance  Org_873_Cipher_FromBalor (C_INFO)
 	condition	=  Org_873_Cipher_FromBalor_Condition;
 	information	=  Org_873_Cipher_FromBalor_Info;
 	permanent	=  1;
-	description = "Co m˘ûeö nabÌdnout?";
+	description = "Co m≈Ø≈æe≈° nab√≠dnout?";
 };                       
 
 FUNC int  Org_873_Cipher_FromBalor_Condition()
@@ -109,18 +109,18 @@ FUNC int  Org_873_Cipher_FromBalor_Condition()
 
 FUNC VOID  Org_873_Cipher_FromBalor_Info()
 {
-	AI_Output (other, self,"DIA_Cipher_FromBalor_15_00"); //Co m˘ûeö nabÌdnout?
-	AI_Output (self, other,"DIA_Cipher_FromBalor_12_01"); //Opakuji ot·zku: co MŸéEä nabÌdnout? ZajÌmajÌ mÏ jen velkÈ dod·vky.
+	AI_Output (other, self,"DIA_Cipher_FromBalor_15_00"); //Co m≈Ø≈æe≈° nab√≠dnout?
+	AI_Output (self, other,"DIA_Cipher_FromBalor_12_01"); //Opakuji ot√°zku: co M≈Æ≈ΩE≈† nab√≠dnout? Zaj√≠maj√≠ mƒõ jen velk√© dod√°vky.
 	if (Balor_TellsNCDealer == TRUE)
 	{
-		AI_Output (other, self,"DIA_Cipher_FromBalor_15_02"); //Balor ¯Ìkal, ûe by tÏ zajÌmala droga z baûin.
-		AI_Output (self, other,"DIA_Cipher_FromBalor_12_03"); //Mhmmm. Chceö teda obchodovat?
+		AI_Output (other, self,"DIA_Cipher_FromBalor_15_02"); //Balor ≈ô√≠kal, ≈æe by tƒõ zaj√≠mala droga z ba≈æin.
+		AI_Output (self, other,"DIA_Cipher_FromBalor_12_03"); //Mhmmm. Chce≈° teda obchodovat?
 		Cipher_Trade = TRUE;
 	}
 	else
 	{
-		AI_Output (other, self,"DIA_Cipher_FromBalor_15_04"); //S tÌm ti nem˘ûu pomoci.
-		AI_Output (self, other,"DIA_Cipher_FromBalor_12_05"); //Aû mi budeö schopen pomoci, p¯ijÔ zp·tky.
+		AI_Output (other, self,"DIA_Cipher_FromBalor_15_04"); //S t√≠m ti nem≈Ø≈æu pomoci.
+		AI_Output (self, other,"DIA_Cipher_FromBalor_12_05"); //A≈æ mi bude≈° schopen pomoci, p≈ôijƒè zp√°tky.
 	};
 };
 
@@ -135,7 +135,7 @@ instance  Org_873_Cipher_TRADE (C_INFO)
 	condition	=  Org_873_Cipher_TRADE_Condition;
 	information	=  Org_873_Cipher_TRADE_Info;
 	permanent	=  1;
-	description = "Uzav¯eme obchod.";
+	description = "Uzav≈ôeme obchod.";
 	trade		= 1;
 };                       
 
@@ -149,6 +149,6 @@ FUNC int  Org_873_Cipher_TRADE_Condition()
 
 FUNC VOID  Org_873_Cipher_TRADE_Info()
 {
-	AI_Output (other, self,"DIA_Cipher_TRADE_15_00"); //Uzav¯eme obchod.
-	AI_Output (self, other,"DIA_Cipher_TRADE_12_01"); //Co chceö?
+	AI_Output (other, self,"DIA_Cipher_TRADE_15_00"); //Uzav≈ôeme obchod.
+	AI_Output (self, other,"DIA_Cipher_TRADE_12_01"); //Co chce≈°?
 };

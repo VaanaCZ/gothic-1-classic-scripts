@@ -47,23 +47,23 @@ FUNC INT DIA_Grd_215_Torwache_First_Condition()
 
 FUNC VOID DIA_Grd_215_Torwache_First_Info()
 {
-	AI_Output (self, other,"DIA_Grd_215_Torwache_First_06_00"); //Kam m·ö namÌ¯eno?
-	AI_Output (other, self,"DIA_Grd_215_Torwache_First_15_01"); //Do t·bora.
-	AI_Output (self, other,"DIA_Grd_215_Torwache_First_06_02"); //Nechceö se dostat do problÈm˘, viÔ?
+	AI_Output (self, other,"DIA_Grd_215_Torwache_First_06_00"); //Kam m√°≈° nam√≠≈ôeno?
+	AI_Output (other, self,"DIA_Grd_215_Torwache_First_15_01"); //Do t√°bora.
+	AI_Output (self, other,"DIA_Grd_215_Torwache_First_06_02"); //Nechce≈° se dostat do probl√©m≈Ø, viƒè?
 	
 	Info_ClearChoices	(DIA_Grd_215_Torwache_First );
-	Info_AddChoice		(DIA_Grd_215_Torwache_First,"JistÏ, m·m v ˙myslu zabrat cel˝ t·bor.",DIA_Grd_215_Torwache_First_Trouble);
-	Info_AddChoice		(DIA_Grd_215_Torwache_First,"Chci se tu jenom porozhlÈdnout.",DIA_Grd_215_Torwache_First_JustLooking);
+	Info_AddChoice		(DIA_Grd_215_Torwache_First,"Jistƒõ, m√°m v √∫myslu zabrat cel√Ω t√°bor.",DIA_Grd_215_Torwache_First_Trouble);
+	Info_AddChoice		(DIA_Grd_215_Torwache_First,"Chci se tu jenom porozhl√©dnout.",DIA_Grd_215_Torwache_First_JustLooking);
 	if (Npc_KnowsInfo(hero,Info_Diego_Kolonie))
 	{
-		Info_AddChoice		(DIA_Grd_215_Torwache_First,"Diego ¯ekl, ûe ho m·m v t·bo¯e navötÌvit.",DIA_Grd_215_Torwache_First_Diego);
+		Info_AddChoice		(DIA_Grd_215_Torwache_First,"Diego ≈ôekl, ≈æe ho m√°m v t√°bo≈ôe nav≈°t√≠vit.",DIA_Grd_215_Torwache_First_Diego);
 	};
 };
 
 func void DIA_Grd_215_Torwache_First_Trouble()
 {
-	AI_Output (other, self,"DIA_Grd_215_Torwache_First_Trouble_15_00"); //JistÏ, m·m v ˙myslu zabrat cel˝ t·bor.
-	AI_Output (self, other,"DIA_Grd_215_Torwache_First_Trouble_06_01"); //No, to je pÏknej öpr˝ma¯... A j· nem·m öpr˝ma¯e r·d .
+	AI_Output (other, self,"DIA_Grd_215_Torwache_First_Trouble_15_00"); //Jistƒõ, m√°m v √∫myslu zabrat cel√Ω t√°bor.
+	AI_Output (self, other,"DIA_Grd_215_Torwache_First_Trouble_06_01"); //No, to je pƒõknej ≈°pr√Ωma≈ô... A j√° nem√°m ≈°pr√Ωma≈ôe r√°d .
 	Info_ClearChoices	(DIA_Grd_215_Torwache_First );
 	
 	AI_StopProcessInfos	( self );
@@ -73,24 +73,24 @@ func void DIA_Grd_215_Torwache_First_Trouble()
 
 func void DIA_Grd_215_Torwache_First_JustLooking()
 {
-	AI_Output (other, self,"DIA_Grd_215_Torwache_First_JustLooking_15_00"); //Chci se tu jenom porozhlÈdnout.
-	AI_Output (self, other,"DIA_Grd_215_Torwache_First_JustLooking_06_01"); //To tÏ bude st·t 10 nuget˘.
+	AI_Output (other, self,"DIA_Grd_215_Torwache_First_JustLooking_15_00"); //Chci se tu jenom porozhl√©dnout.
+	AI_Output (self, other,"DIA_Grd_215_Torwache_First_JustLooking_06_01"); //To tƒõ bude st√°t 10 nuget≈Ø.
 	
 	Info_ClearChoices	(DIA_Grd_215_Torwache_First );
-	Info_AddChoice		(DIA_Grd_215_Torwache_First,"Na to zapomeÚ.",DIA_Grd_215_Torwache_First_NoPay);
-	Info_AddChoice		(DIA_Grd_215_Torwache_First,"Dobr·, tady je tv˝ch 10 nuget˘.",DIA_Grd_215_Torwache_First_Pay);
+	Info_AddChoice		(DIA_Grd_215_Torwache_First,"Na to zapome≈à.",DIA_Grd_215_Torwache_First_NoPay);
+	Info_AddChoice		(DIA_Grd_215_Torwache_First,"Dobr√°, tady je tv√Ωch 10 nuget≈Ø.",DIA_Grd_215_Torwache_First_Pay);
 };
 
 func void DIA_Grd_215_Torwache_First_Diego()
 {
-	AI_Output (other, self,"DIA_Grd_215_Torwache_First_Diego_15_00"); //Diego ¯ekl, ûe ho m·m v t·bo¯e navötÌvit.
-	AI_Output (self, other,"DIA_Grd_215_Torwache_First_Diego_06_01"); //Dobr·, pak tedy pojÔ d·l.
+	AI_Output (other, self,"DIA_Grd_215_Torwache_First_Diego_15_00"); //Diego ≈ôekl, ≈æe ho m√°m v t√°bo≈ôe nav≈°t√≠vit.
+	AI_Output (self, other,"DIA_Grd_215_Torwache_First_Diego_06_01"); //Dobr√°, pak tedy pojƒè d√°l.
 	Info_ClearChoices	(DIA_Grd_215_Torwache_First );
 };
 
 func void DIA_Grd_215_Torwache_First_NoPay()
 {
-	AI_Output (other, self,"DIA_Grd_215_Torwache_First_NoPay_15_00"); //Na to zapomeÚ.
+	AI_Output (other, self,"DIA_Grd_215_Torwache_First_NoPay_15_00"); //Na to zapome≈à.
 	AI_Output (self, other,"DIA_Grd_215_Torwache_First_NoPay_06_01"); //Pak vypadni.
 	Info_ClearChoices	(DIA_Grd_215_Torwache_First );
 };
@@ -99,14 +99,14 @@ func void DIA_Grd_215_Torwache_First_Pay()
 {
 	if (Npc_HasItems(other, itminugget) >= 10)
 	{
-		AI_Output (other, self,"DIA_Grd_215_Torwache_First_Pay_15_00"); //Dobr·, tady je tv˝ch 10 nuget˘.
-		AI_Output (self, other,"DIA_Grd_215_Torwache_First_Pay_06_01"); //Pak pojÔ d·l.
+		AI_Output (other, self,"DIA_Grd_215_Torwache_First_Pay_15_00"); //Dobr√°, tady je tv√Ωch 10 nuget≈Ø.
+		AI_Output (self, other,"DIA_Grd_215_Torwache_First_Pay_06_01"); //Pak pojƒè d√°l.
 		B_GiveInvItems 	(other,self, itminugget,10);CreateInvItems 		(self,  itminugget,10);
 	}
 	else
 	{
-		AI_Output (other, self,"DIA_Grd_215_Torwache_First_Pay_NoOre_15_00"); //Tolik u sebe nem·m.
-		AI_Output (self, other,"DIA_Grd_215_Torwache_First_Pay_NoOre_06_01"); //Pro tentokr·t udÏl·m v˝jimku, protoûe jsi tu nov˝.
+		AI_Output (other, self,"DIA_Grd_215_Torwache_First_Pay_NoOre_15_00"); //Tolik u sebe nem√°m.
+		AI_Output (self, other,"DIA_Grd_215_Torwache_First_Pay_NoOre_06_01"); //Pro tentokr√°t udƒõl√°m v√Ωjimku, proto≈æe jsi tu nov√Ω.
 		
 	};
 		
@@ -125,7 +125,7 @@ INSTANCE DIA_Grd_215_Torwache_PERM (C_INFO)
 	condition	= DIA_Grd_215_Torwache_PERM_Condition;
 	information	= DIA_Grd_215_Torwache_PERM_Info;
 	permanent	= 1;
-	description = "NÏco novÈho?";
+	description = "Nƒõco nov√©ho?";
 };                       
 
 FUNC INT DIA_Grd_215_Torwache_PERM_Condition()
@@ -135,6 +135,6 @@ FUNC INT DIA_Grd_215_Torwache_PERM_Condition()
 
 FUNC VOID DIA_Grd_215_Torwache_PERM_Info()
 {
-	AI_Output (other, self,"DIA_Grd_215_Torwache_PERM_15_00"); //NÏco novÈho?
-	AI_Output (self, other,"DIA_Grd_215_Torwache_PERM_06_01"); //Ne. Vöechno p¯i starÈm.
+	AI_Output (other, self,"DIA_Grd_215_Torwache_PERM_15_00"); //Nƒõco nov√©ho?
+	AI_Output (self, other,"DIA_Grd_215_Torwache_PERM_06_01"); //Ne. V≈°echno p≈ôi star√©m.
 };

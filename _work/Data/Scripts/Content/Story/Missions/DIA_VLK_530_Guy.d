@@ -47,12 +47,12 @@ FUNC INT DIA_Guy_Hello_Condition()
 FUNC VOID DIA_Guy_Hello_Info()
 {
 	AI_Output (other, self,"DIA_Guy_Hello_15_00"); //Nazdar!
-	AI_Output (self, other,"DIA_Guy_Hello_03_01"); //Hmm? Ještì jsem tì tu nevidìl, jsi tady novı, e jo?
-	AI_Output (other, self,"DIA_Guy_Hello_15_02"); //Nedávno jsem pøišel.
-	AI_Output (self, other,"DIA_Guy_Hello_03_03"); //U ses rozhodl, ke kterému táboru se pøidáš?
-	AI_Output (other, self,"DIA_Guy_Hello_15_04"); //Ne, co myslíš?
-	AI_Output (self, other,"DIA_Guy_Hello_03_05"); //No, to záleí - kadı tábor má své vıhody, øekl bych.
-	AI_Output (self, other,"DIA_Guy_Hello_03_06"); //Dokud se nerozhodneš, mùeš zùstat tady - jedna chatrè se právì uvolnila.
+	AI_Output (self, other,"DIA_Guy_Hello_03_01"); //Hmm? JeÅ¡tÄ› jsem tÄ› tu nevidÄ›l, jsi tady novÃ½, Å¾e jo?
+	AI_Output (other, self,"DIA_Guy_Hello_15_02"); //NedÃ¡vno jsem pÅ™iÅ¡el.
+	AI_Output (self, other,"DIA_Guy_Hello_03_03"); //UÅ¾ ses rozhodl, ke kterÃ©mu tÃ¡boru se pÅ™idÃ¡Å¡?
+	AI_Output (other, self,"DIA_Guy_Hello_15_04"); //Ne, co myslÃ­Å¡?
+	AI_Output (self, other,"DIA_Guy_Hello_03_05"); //No, to zÃ¡leÅ¾Ã­ - kaÅ¾dÃ½ tÃ¡bor mÃ¡ svÃ© vÃ½hody, Å™ekl bych.
+	AI_Output (self, other,"DIA_Guy_Hello_03_06"); //Dokud se nerozhodneÅ¡, mÅ¯Å¾eÅ¡ zÅ¯stat tady - jedna chatrÄ se prÃ¡vÄ› uvolnila.
 };
 
 // **************************************************
@@ -66,7 +66,7 @@ INSTANCE DIA_Guy_AdOC (C_INFO)
 	condition		= DIA_Guy_AdOC_Condition;
 	information		= DIA_Guy_AdOC_Info;
 	permanent		= 1;
-	description 	= "Jaké jsou vıhody Starého tábora?";
+	description 	= "JakÃ© jsou vÃ½hody StarÃ©ho tÃ¡bora?";
 };
 
 FUNC INT DIA_Guy_AdOC_Condition()
@@ -79,36 +79,36 @@ FUNC INT DIA_Guy_AdOC_Condition()
 
 FUNC VOID DIA_Guy_AdOC_Info()
 {
-	AI_Output (other, self,"DIA_Guy_AdOC_15_00"); //Jaké jsou vıhody Starého tábora?
-	AI_Output (self, other,"DIA_Guy_AdOC_03_01"); //Kdy platíš stráím peníze za ochranu, mùeš tu mít klidnı ivot. Kdy nìkdo napadne platícího kopáèe, tak zasáhnou.
-	AI_Output (self, other,"DIA_Guy_AdOC_03_02"); //Kromì toho mùeš sehnat levné zboí z vnìjšího svìta jedinì tady. Tyhle vìci jsou v ostatních táborech nedostupné.
+	AI_Output (other, self,"DIA_Guy_AdOC_15_00"); //JakÃ© jsou vÃ½hody StarÃ©ho tÃ¡bora?
+	AI_Output (self, other,"DIA_Guy_AdOC_03_01"); //KdyÅ¾ platÃ­Å¡ strÃ¡Å¾Ã­m penÃ­ze za ochranu, mÅ¯Å¾eÅ¡ tu mÃ­t klidnÃ½ Å¾ivot. KdyÅ¾ nÄ›kdo napadne platÃ­cÃ­ho kopÃ¡Äe, tak zasÃ¡hnou.
+	AI_Output (self, other,"DIA_Guy_AdOC_03_02"); //KromÄ› toho mÅ¯Å¾eÅ¡ sehnat levnÃ© zboÅ¾Ã­ z vnÄ›jÅ¡Ã­ho svÄ›ta jedinÄ› tady. Tyhle vÄ›ci jsou v ostatnÃ­ch tÃ¡borech nedostupnÃ©.
 
 	Info_ClearChoices(DIA_Guy_AdOC);
-	Info_AddChoice	 (DIA_Guy_AdOC,"Myslím, e jsem o Starém táboøe slyšel dost.",DIA_Guy_AdOC_BACK);
-	Info_AddChoice	 (DIA_Guy_AdOC,"Jaké zboí je tu obzvláš vzácné?",DIA_Guy_AdOC_Warez);
-	Info_AddChoice	 (DIA_Guy_AdOC,"A co kdy se do sebe pustí dva lidé, kteøí oba platí peníze za ochranu?",DIA_Guy_AdOC_Protection);
+	Info_AddChoice	 (DIA_Guy_AdOC,"MyslÃ­m, Å¾e jsem o StarÃ©m tÃ¡boÅ™e slyÅ¡el dost.",DIA_Guy_AdOC_BACK);
+	Info_AddChoice	 (DIA_Guy_AdOC,"JakÃ© zboÅ¾Ã­ je tu obzvlÃ¡Å¡Å¥ vzÃ¡cnÃ©?",DIA_Guy_AdOC_Warez);
+	Info_AddChoice	 (DIA_Guy_AdOC,"A co kdyÅ¾ se do sebe pustÃ­ dva lidÃ©, kteÅ™Ã­ oba platÃ­ penÃ­ze za ochranu?",DIA_Guy_AdOC_Protection);
 };	
 
 func void DIA_Guy_AdOC_BACK()
 {
-	AI_Output (other, self,"DIA_Guy_AdOC_BACK_15_00"); //Myslím, e jsem o Starém táboøe slyšel dost.
-	AI_Output (self, other,"DIA_Guy_AdOC_BACK_03_01"); //Líbí se mi tady.
+	AI_Output (other, self,"DIA_Guy_AdOC_BACK_15_00"); //MyslÃ­m, Å¾e jsem o StarÃ©m tÃ¡boÅ™e slyÅ¡el dost.
+	AI_Output (self, other,"DIA_Guy_AdOC_BACK_03_01"); //LÃ­bÃ­ se mi tady.
 	Info_ClearChoices(DIA_Guy_AdOC);
 };
 
 func void DIA_Guy_AdOC_Warez()
 {
-	AI_Output (other, self,"DIA_Guy_AdOC_Warez_15_00"); //Jaké zboí je tu obzvláš vzácné?
-	AI_Output (self, other,"DIA_Guy_AdOC_Warez_03_01"); //Všechno z vnìjšího svìta. Chleba, sır, slanina a pøedevším pivo a víno - ne laciná rıová pálenka z Nového tábora, ale opravdu kvalitní zboí.
-	AI_Output (self, other,"DIA_Guy_AdOC_Warez_03_02"); //Také tu dostaneš dobré ceny za zbranì a DOOPRAVDY drahá je tu zbroj.
-	AI_Output (self, other,"DIA_Guy_AdOC_Warez_03_03"); //Stráe nosí starou zbroj po vìzních, které zabily.
-	AI_Output (self, other,"DIA_Guy_AdOC_Warez_03_04"); //Podle této zbroje je mùeš bezpeènì poznat, protoe ji zase prodávají vıhradnì jinım strácùm. Jako nezasvìcenec bys tuhle zbroj nemìl nikdy nosit.
+	AI_Output (other, self,"DIA_Guy_AdOC_Warez_15_00"); //JakÃ© zboÅ¾Ã­ je tu obzvlÃ¡Å¡Å¥ vzÃ¡cnÃ©?
+	AI_Output (self, other,"DIA_Guy_AdOC_Warez_03_01"); //VÅ¡echno z vnÄ›jÅ¡Ã­ho svÄ›ta. Chleba, sÃ½r, slanina a pÅ™edevÅ¡Ã­m pivo a vÃ­no - ne lacinÃ¡ rÃ½Å¾ovÃ¡ pÃ¡lenka z NovÃ©ho tÃ¡bora, ale opravdu kvalitnÃ­ zboÅ¾Ã­.
+	AI_Output (self, other,"DIA_Guy_AdOC_Warez_03_02"); //TakÃ© tu dostaneÅ¡ dobrÃ© ceny za zbranÄ› a DOOPRAVDY drahÃ¡ je tu zbroj.
+	AI_Output (self, other,"DIA_Guy_AdOC_Warez_03_03"); //StrÃ¡Å¾e nosÃ­ starou zbroj po vÄ›znÃ­ch, kterÃ© zabily.
+	AI_Output (self, other,"DIA_Guy_AdOC_Warez_03_04"); //Podle tÃ©to zbroje je mÅ¯Å¾eÅ¡ bezpeÄnÄ› poznat, protoÅ¾e ji zase prodÃ¡vajÃ­ vÃ½hradnÄ› jinÃ½m strÃ¡Å¾cÅ¯m. Jako nezasvÄ›cenec bys tuhle zbroj nemÄ›l nikdy nosit.
 };
 
 func void DIA_Guy_AdOC_Protection()
 {
-	AI_Output (other, self,"DIA_Guy_AdOC_Protection_15_00"); //A co kdy se do sebe pustí dva lidé, kteøí oba platí peníze za ochranu?
-	AI_Output (self, other,"DIA_Guy_AdOC_Protection_03_01"); //Pak je stráe sledují, dokud jeden nezabije druhého. Potom zabijou toho druhého.
+	AI_Output (other, self,"DIA_Guy_AdOC_Protection_15_00"); //A co kdyÅ¾ se do sebe pustÃ­ dva lidÃ©, kteÅ™Ã­ oba platÃ­ penÃ­ze za ochranu?
+	AI_Output (self, other,"DIA_Guy_AdOC_Protection_03_01"); //Pak je strÃ¡Å¾e sledujÃ­, dokud jeden nezabije druhÃ©ho. Potom zabijou toho druhÃ©ho.
 };
 
 // **************************************************
@@ -122,7 +122,7 @@ INSTANCE DIA_Guy_AdNC (C_INFO)
 	condition		= DIA_Guy_AdNC_Condition;
 	information		= DIA_Guy_AdNC_Info;
 	permanent		= 0;
-	description 		= "Jaké jsou vıhody Nového tábora?";
+	description 		= "JakÃ© jsou vÃ½hody NovÃ©ho tÃ¡bora?";
 };
 
 FUNC INT DIA_Guy_AdNC_Condition()
@@ -135,11 +135,11 @@ FUNC INT DIA_Guy_AdNC_Condition()
 
 FUNC VOID DIA_Guy_AdNC_Info()
 {
-	AI_Output (other, self,"DIA_Guy_AdNC_15_00"); //Jaké jsou vıhody Nového tábora?
-	AI_Output (self, other,"DIA_Guy_AdNC_03_01"); //Jestli se chceš nechat podøezat kvùli bochníku chleba, tak tam bì!
-	AI_Output (self, other,"DIA_Guy_AdNC_03_02"); //Ne - není to tak zlé. Ale jiné ne tady.
-	AI_Output (self, other,"DIA_Guy_AdNC_03_03"); //Tady se stará o jakısi mír Gomez, zatímco v Novém táboøe vládne bezpráví.
-	AI_Output (self, other,"DIA_Guy_AdNC_03_04"); //Jedinı, kdo tam má opravdu moc, jsou mágové Vody, ale ti jsou pøíliš zamìstnaní studiem Bariéry.
+	AI_Output (other, self,"DIA_Guy_AdNC_15_00"); //JakÃ© jsou vÃ½hody NovÃ©ho tÃ¡bora?
+	AI_Output (self, other,"DIA_Guy_AdNC_03_01"); //Jestli se chceÅ¡ nechat podÅ™ezat kvÅ¯li bochnÃ­ku chleba, tak tam bÄ›Å¾!
+	AI_Output (self, other,"DIA_Guy_AdNC_03_02"); //Ne - nenÃ­ to tak zlÃ©. Ale jinÃ© neÅ¾ tady.
+	AI_Output (self, other,"DIA_Guy_AdNC_03_03"); //Tady se starÃ¡ o jakÃ½si mÃ­r Gomez, zatÃ­mco v NovÃ©m tÃ¡boÅ™e vlÃ¡dne bezprÃ¡vÃ­.
+	AI_Output (self, other,"DIA_Guy_AdNC_03_04"); //JedinÃ½, kdo tam mÃ¡ opravdu moc, jsou mÃ¡govÃ© Vody, ale ti jsou pÅ™Ã­liÅ¡ zamÄ›stnanÃ­ studiem BariÃ©ry.
 };	
 
 // **************************************************
@@ -153,7 +153,7 @@ INSTANCE DIA_Guy_AdST (C_INFO)
 	condition		= DIA_Guy_AdST_Condition;
 	information		= DIA_Guy_AdST_Info;
 	permanent		= 0;
-	description 		= "Proè bych se mìl pøidat k té sektì?";
+	description 		= "ProÄ bych se mÄ›l pÅ™idat k tÃ© sektÄ›?";
 };
 
 FUNC INT DIA_Guy_AdST_Condition()
@@ -166,15 +166,15 @@ FUNC INT DIA_Guy_AdST_Condition()
 
 FUNC VOID DIA_Guy_AdST_Info()
 {
-	AI_Output (other, self,"DIA_Guy_AdST_15_00"); //Proè bych se mìl pøidat k té sektì?
-	AI_Output (self, other,"DIA_Guy_AdST_03_01"); //No, radìji se zeptej nìkoho ze Sektovního tábora.
-	AI_Output (self, other,"DIA_Guy_AdST_03_02"); //V táboøe je vdycky pár novicù, kteøí ti bezpochyby øeknou o sektì spoustu vìcí.
-	AI_Output (self, other,"DIA_Guy_AdST_03_03"); //Já sám jsem tam nikdy nebyl. Ale podle všeho, co se proslıchá, musejí bıt opravdu velkorysí.
-	AI_Output (self, other,"DIA_Guy_AdST_03_04"); //ádnı z tøech táborù, jak se zdá, nepotøebuje tolik novıch lidí jako Sektovní tábor.
+	AI_Output (other, self,"DIA_Guy_AdST_15_00"); //ProÄ bych se mÄ›l pÅ™idat k tÃ© sektÄ›?
+	AI_Output (self, other,"DIA_Guy_AdST_03_01"); //No, radÄ›ji se zeptej nÄ›koho ze SektovnÃ­ho tÃ¡bora.
+	AI_Output (self, other,"DIA_Guy_AdST_03_02"); //V tÃ¡boÅ™e je vÅ¾dycky pÃ¡r novicÅ¯, kteÅ™Ã­ ti bezpochyby Å™eknou o sektÄ› spoustu vÄ›cÃ­.
+	AI_Output (self, other,"DIA_Guy_AdST_03_03"); //JÃ¡ sÃ¡m jsem tam nikdy nebyl. Ale podle vÅ¡eho, co se proslÃ½chÃ¡, musejÃ­ bÃ½t opravdu velkorysÃ­.
+	AI_Output (self, other,"DIA_Guy_AdST_03_04"); //Å½Ã¡dnÃ½ z tÅ™ech tÃ¡borÅ¯, jak se zdÃ¡, nepotÅ™ebuje tolik novÃ½ch lidÃ­ jako SektovnÃ­ tÃ¡bor.
 };
 
 // **************************************************
-// 				Welche Hütte ist meine
+// 				Welche HÃ¼tte ist meine
 // **************************************************
 
 INSTANCE DIA_Guy_MyOwnHut (C_INFO)
@@ -184,7 +184,7 @@ INSTANCE DIA_Guy_MyOwnHut (C_INFO)
 	condition		= DIA_Guy_MyOwnHut_Condition;
 	information		= DIA_Guy_MyOwnHut_Info;
 	permanent		= 1;
-	description 		= "Kterou chatrè bych si mohl zabrat?";
+	description 		= "Kterou chatrÄ bych si mohl zabrat?";
 };
 
 FUNC INT DIA_Guy_MyOwnHut_Condition()
@@ -197,8 +197,8 @@ FUNC INT DIA_Guy_MyOwnHut_Condition()
 
 FUNC VOID DIA_Guy_MyOwnHut_Info()
 {
-	AI_Output (other, self,"DIA_Guy_MyOwnHut_15_00"); //Kterou chatrè bych si mohl zabrat?
+	AI_Output (other, self,"DIA_Guy_MyOwnHut_15_00"); //Kterou chatrÄ bych si mohl zabrat?
 	AI_PointAt(self, "OCR_HUT_26");
-	AI_Output (self, other,"DIA_Guy_MyOwnHut_03_01"); //Támhleta chatrè s malım pøístøeškem je prázdná.
+	AI_Output (self, other,"DIA_Guy_MyOwnHut_03_01"); //TÃ¡mhleta chatrÄ s malÃ½m pÅ™Ã­stÅ™eÅ¡kem je prÃ¡zdnÃ¡.
 	AI_StopPointAt(self);
 };	

@@ -2,7 +2,7 @@
 /******************************************************************************************/
 INSTANCE ItWr_Book_Circle_01(C_Item)
 {	
-	name 					=	"První kruh";
+	name 					=	"PrvnÃ­ kruh";
 	
 	mainflag 				=	ITEM_KAT_DOCS;
 	flags 					=	0;
@@ -13,7 +13,7 @@ INSTANCE ItWr_Book_Circle_01(C_Item)
 	material 				=	MAT_LEATHER;
 
 	scemeName				=	"MAP";	
-	description			= "První kruh magie";
+	description			= "PrvnÃ­ kruh magie";
 	
 	TEXT[5]				= NAME_Value;
 	COUNT[5]			= value;
@@ -39,30 +39,30 @@ INSTANCE ItWr_Book_Circle_01(C_Item)
   					
   					Doc_SetFont 	( nDocID, -1, "font_15_book.tga"	   			); 	// -1 -> all pages 
   					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   		);  //  0 -> margins are in pixels
-					Doc_PrintLine	( nDocID,  0,"První kruh");
+					Doc_PrintLine	( nDocID,  0,"PrvnÃ­ kruh");
 					Doc_PrintLine	( nDocID,  0,"---------------");
 					Doc_SetFont 	( nDocID, -1, "font_10_book.TGA"	   			); 	// -1 -> all pages 
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLines	( nDocID,  0,"Kdy dali bohové lidstvu schopnost kouzlit, nauèili jej také zhotovovat kouzelné runy. Boí sluebníci tak pøevzali èestnou úlohu vytváøet artefakty boí moci a pouívat je. Magickı kruh urèuje, jakı druh kouzla je kdo schopen pochopit a uívat.");
+					Doc_PrintLines	( nDocID,  0,"KdyÅ¾ dali bohovÃ© lidstvu schopnost kouzlit, nauÄili jej takÃ© zhotovovat kouzelnÃ© runy. BoÅ¾Ã­ sluÅ¾ebnÃ­ci tak pÅ™evzali Äestnou Ãºlohu vytvÃ¡Å™et artefakty boÅ¾Ã­ moci a pouÅ¾Ã­vat je. MagickÃ½ kruh urÄuje, jakÃ½ druh kouzla je kdo schopen pochopit a uÅ¾Ã­vat.");
 					
 				
 
 					//2.Seite
-					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den Ränder des TGAs aus, links,oben,rechts,unten)
+					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den RÃ¤nder des TGAs aus, links,oben,rechts,unten)
 					Doc_PrintLine	( nDocID,  1, "");
-					Doc_PrintLine	( nDocID,  1,"Svìtlo");
+					Doc_PrintLine	( nDocID,  1,"SvÄ›tlo");
 					Doc_PrintLine	( nDocID,  1,"---------------");
-					Doc_PrintLines	( nDocID,  1,"První Innosùv dar lidstvu. Nad mágem se objeví záøící koule.");
+					Doc_PrintLines	( nDocID,  1,"PrvnÃ­ InnosÅ¯v dar lidstvu. Nad mÃ¡gem se objevÃ­ zÃ¡Å™Ã­cÃ­ koule.");
 					Doc_PrintLine	( nDocID,  1,  Text);
 					Doc_PrintLine	( nDocID,  1,  "" );
-					Doc_PrintLine	( nDocID,  1,"Ledovı šíp");
+					Doc_PrintLine	( nDocID,  1,"LedovÃ½ Å¡Ã­p");
 					Doc_PrintLine	( nDocID,  1,"---------------");
-					Doc_PrintLines	( nDocID,  1,"Støela magické energie");
+					Doc_PrintLines	( nDocID,  1,"StÅ™ela magickÃ© energie");
 					Doc_PrintLine	( nDocID,  1,  Text_1);
 					Doc_PrintLine	( nDocID,  1, "");
-					Doc_PrintLine	( nDocID,  1,"Ohnivı šíp");
+					Doc_PrintLine	( nDocID,  1,"OhnivÃ½ Å¡Ã­p");
 					Doc_PrintLine	( nDocID,  1,"---------------");
-					Doc_PrintLines	( nDocID,  1,"Støela magického ohnì");
+					Doc_PrintLines	( nDocID,  1,"StÅ™ela magickÃ©ho ohnÄ›");
 					Doc_PrintLine	( nDocID,  1,  Text_2);
 					Doc_Show		( nDocID );
 	};
@@ -71,7 +71,7 @@ INSTANCE ItWr_Book_Circle_01(C_Item)
 
 INSTANCE ItWr_Book_Circle_02(C_Item)
 {	
-	name 					=	"Druhı kruh";
+	name 					=	"DruhÃ½ kruh";
 	
 	mainflag 				=	ITEM_KAT_DOCS;
 	flags 					=	0;
@@ -82,7 +82,7 @@ INSTANCE ItWr_Book_Circle_02(C_Item)
 	material 				=	MAT_LEATHER;
 
 	scemeName				=	"MAP";	
-	description			= "Druhı kruh magie";
+	description			= "DruhÃ½ kruh magie";
 	
 	TEXT[5]				= NAME_Value;
 	COUNT[5]			= value;
@@ -107,29 +107,29 @@ INSTANCE ItWr_Book_Circle_02(C_Item)
   					
   					Doc_SetFont 	( nDocID, -1, "font_15_book.tga"	   			); 	// -1 -> all pages 
   					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   		);  //  0 -> margins are in pixels
-					Doc_PrintLine	( nDocID,  0,"Druhı kruh");
+					Doc_PrintLine	( nDocID,  0,"DruhÃ½ kruh");
 					Doc_PrintLine	( nDocID,  0,"---------------");
 					Doc_SetFont 	( nDocID, -1, "font_10_book.TGA"	   			); 	// -1 -> all pages 
 					Doc_PrintLine	( nDocID,  0, "");
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLines	( nDocID,  0,"Kadé kouzlo pochází z magické moci uivatele. Tento uivatel se nazıvá mág.");
+					Doc_PrintLines	( nDocID,  0,"KaÅ¾dÃ© kouzlo pochÃ¡zÃ­ z magickÃ© moci uÅ¾ivatele. Tento uÅ¾ivatel se nazÃ½vÃ¡ mÃ¡g.");
 					Doc_PrintLine	( nDocID,  0, "");
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLines	( nDocID,  0,"Kadé vyvolání kouzla odebere mágovi èást jeho sil. Tyto síly se nazıvají duchovní síly, neboli mana.");
+					Doc_PrintLines	( nDocID,  0,"KaÅ¾dÃ© vyvolÃ¡nÃ­ kouzla odebere mÃ¡govi ÄÃ¡st jeho sil. Tyto sÃ­ly se nazÃ½vajÃ­ duchovnÃ­ sÃ­ly, neboli mana.");
 					Doc_PrintLine	( nDocID,  0, "");
 					Doc_PrintLine	( nDocID,  0, "");
 					
 					
 					//2.Seite
-					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den Ränder des TGAs aus, links,oben,rechts,unten)
+					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den RÃ¤nder des TGAs aus, links,oben,rechts,unten)
 					Doc_PrintLine	( nDocID,  1, "");
-					Doc_PrintLine	( nDocID,  1,"Uzdravení");
+					Doc_PrintLine	( nDocID,  1,"UzdravenÃ­");
 					Doc_PrintLine	( nDocID,  1,"---------------");
-					Doc_PrintLines	( nDocID,  1,"Adanos vidìl, e lidé umírají a e je to vùle Beliarova, kterı si pøeje, aby tomu tak bylo. Pravil: nebudu se vùli Beliarovì  protivit, dám však lidstvu moc léèení."); 
+					Doc_PrintLines	( nDocID,  1,"Adanos vidÄ›l, Å¾e lidÃ© umÃ­rajÃ­ a Å¾e je to vÅ¯le Beliarova, kterÃ½ si pÅ™eje, aby tomu tak bylo. Pravil: nebudu se vÅ¯li BeliarovÄ›  protivit, dÃ¡m vÅ¡ak lidstvu moc lÃ©ÄenÃ­."); 
 					Doc_PrintLine	( nDocID,  1, "");
 					Doc_PrintLine	( nDocID,  1, "");
-					Doc_PrintLines	( nDocID,  1,"Kouzlo dá mágovi schopnost uzdravování.");
-					Doc_PrintLine	( nDocID,  1,"Jednorázová kouzla");
+					Doc_PrintLines	( nDocID,  1,"Kouzlo dÃ¡ mÃ¡govi schopnost uzdravovÃ¡nÃ­.");
+					Doc_PrintLine	( nDocID,  1,"JednorÃ¡zovÃ¡ kouzla");
 					Doc_PrintLine	( nDocID,  1,  Text_1);
 					Doc_PrintLine	( nDocID,  1, "");
 					Doc_PrintLine	( nDocID,  1, "");
@@ -140,7 +140,7 @@ INSTANCE ItWr_Book_Circle_02(C_Item)
 /******************************************************************************************/
 INSTANCE ItWr_Book_Circle_03 (C_Item)
 {	
-	name 					=	"Tøetí kruh";
+	name 					=	"TÅ™etÃ­ kruh";
 
 	mainflag 				=	ITEM_KAT_DOCS;
 	flags 					=	0;
@@ -151,7 +151,7 @@ INSTANCE ItWr_Book_Circle_03 (C_Item)
 	material 				=	MAT_LEATHER;
 
 	scemeName				=	"MAP";
-	description			= "Tøetí kruh magie";
+	description			= "TÅ™etÃ­ kruh magie";
 	
 	TEXT[5]				= NAME_Value;
 	COUNT[5]			= value;
@@ -179,34 +179,34 @@ INSTANCE ItWr_Book_Circle_03 (C_Item)
   					
   					Doc_SetFont 	( nDocID, -1, "font_15_book.tga"	   			); 	// -1 -> all pages 
   					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   		);  //  0 -> margins are in pixels
-					Doc_PrintLine	( nDocID,  0,"Tøetí kruh");
+					Doc_PrintLine	( nDocID,  0,"TÅ™etÃ­ kruh");
 					Doc_PrintLine	( nDocID,  0,"---------------");
 					Doc_SetFont 	( nDocID, -1, "font_10_book.TGA"	   			); 	// -1 -> all pages 
 					Doc_PrintLine	( nDocID,  0, "");
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLines	( nDocID,  0,"Nìkterá kouzla lze pomocí jistého mnoství magické moci obnovovat. Jsou známa jako obnovitelná kouzla.");
+					Doc_PrintLines	( nDocID,  0,"NÄ›kterÃ¡ kouzla lze pomocÃ­ jistÃ©ho mnoÅ¾stvÃ­ magickÃ© moci obnovovat. Jsou znÃ¡ma jako obnovitelnÃ¡ kouzla.");
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLines	( nDocID,  0,"Ostatní kouzla si zachovávají úèinnost jen po dobu, kdy do nich proudí duchovní síla mága. Jsou známa jako jednorázová kouzla.");
+					Doc_PrintLines	( nDocID,  0,"OstatnÃ­ kouzla si zachovÃ¡vajÃ­ ÃºÄinnost jen po dobu, kdy do nich proudÃ­ duchovnÃ­ sÃ­la mÃ¡ga. Jsou znÃ¡ma jako jednorÃ¡zovÃ¡ kouzla.");
 
 
 					//2.Seite
-					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den Ränder des TGAs aus, links,oben,rechts,unten)
+					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den RÃ¤nder des TGAs aus, links,oben,rechts,unten)
 					Doc_PrintLine	( nDocID,  1, "");
-					Doc_PrintLine	( nDocID,  1,"Ohnivá koule");
+					Doc_PrintLine	( nDocID,  1,"OhnivÃ¡ koule");
 					Doc_PrintLine	( nDocID,  1,"---------------");
-					Doc_PrintLines	( nDocID,  1,"Druhı dar, kterı dal Innos dìtem ohnì. Ohnivou kouli, která zapálí své obìti.");
-					Doc_PrintLine	( nDocID,  1,"Obnovitelné kouzlo");
+					Doc_PrintLines	( nDocID,  1,"DruhÃ½ dar, kterÃ½ dal Innos dÄ›tem ohnÄ›. Ohnivou kouli, kterÃ¡ zapÃ¡lÃ­ svÃ© obÄ›ti.");
+					Doc_PrintLine	( nDocID,  1,"ObnovitelnÃ© kouzlo");
 					Doc_PrintLine	( nDocID,  1, Text);
 					Doc_PrintLine	( nDocID,  1, "");
-					Doc_PrintLine	( nDocID,  1,"Ledovı blok");
+					Doc_PrintLine	( nDocID,  1,"LedovÃ½ blok");
 					Doc_PrintLine	( nDocID,  1,"---------------");
-					Doc_PrintLines	( nDocID,  1,"Obì je uvìznìna v ledovém bloku. Kouzlo chrámu mágù Vody.");
+					Doc_PrintLines	( nDocID,  1,"ObÄ›Å¥ je uvÄ›znÄ›na v ledovÃ©m bloku. Kouzlo chrÃ¡mu mÃ¡gÅ¯ Vody.");
 					Doc_PrintLine	( nDocID,  1, "");
 					Doc_PrintLine	( nDocID,  1, Text_1);
 					Doc_PrintLine	( nDocID,  1, "");
-					Doc_PrintLine	( nDocID,  1,"Kulovı blesk");
+					Doc_PrintLine	( nDocID,  1,"KulovÃ½ blesk");
 					Doc_PrintLine	( nDocID,  1,"---------------");
-					Doc_PrintLines	( nDocID,  1,"Koule magické síly.");
+					Doc_PrintLines	( nDocID,  1,"Koule magickÃ© sÃ­ly.");
 					Doc_PrintLine	( nDocID,  1,  Text_2);
 					Doc_Show		( nDocID );
 	};
@@ -216,7 +216,7 @@ INSTANCE ItWr_Book_Circle_03 (C_Item)
 /******************************************************************************************/
 INSTANCE ItWr_Book_Circle_04 (C_Item)
 {	
-	name 					=	"Ètvrtı kruh";
+	name 					=	"ÄŒtvrtÃ½ kruh";
 
 	mainflag 				=	ITEM_KAT_DOCS;
 	flags 					=	0;
@@ -227,7 +227,7 @@ INSTANCE ItWr_Book_Circle_04 (C_Item)
 	material 				=	MAT_LEATHER;
 
 	scemeName				=	"MAP";
-	description			= "Ètvrtı kruh magie";
+	description			= "ÄŒtvrtÃ½ kruh magie";
 	
 	TEXT[5]				= NAME_Value;
 	COUNT[5]			= value;
@@ -254,7 +254,7 @@ INSTANCE ItWr_Book_Circle_04 (C_Item)
   					
   					Doc_SetFont 	( nDocID, -1, "font_15_book.tga"	   			); 	// -1 -> all pages 
   					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   		);  //  0 -> margins are in pixels
-					Doc_PrintLine	( nDocID,  0,"Ètvrtı kruh");
+					Doc_PrintLine	( nDocID,  0,"ÄŒtvrtÃ½ kruh");
 					Doc_PrintLine	( nDocID,  0,"---------------");
 					Doc_SetFont 	( nDocID, -1, "font_10_book.TGA"	   			); 	// -1 -> all pages 
 					Doc_PrintLine	( nDocID,  0, "");
@@ -263,27 +263,27 @@ INSTANCE ItWr_Book_Circle_04 (C_Item)
 					Doc_PrintLine	( nDocID,  0,"---------------");
 					Doc_PrintLine	( nDocID,  0, "");
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLines	( nDocID,  0,"Zvláštní vlastnost tìchto kouzelnıch zaøíkávadel spoèívá v tom, e aèkoliv jsou vázána v runách, mùe je pouít kdokoliv, kdo je obdaøen kouzelnou mocí. Kouzlo tìchto zaøíkávadel lze pouít jen jednou. Kouzlo teleportace nemá ádná omezení.");
+					Doc_PrintLines	( nDocID,  0,"ZvlÃ¡Å¡tnÃ­ vlastnost tÄ›chto kouzelnÃ½ch zaÅ™Ã­kÃ¡vadel spoÄÃ­vÃ¡ v tom, Å¾e aÄkoliv jsou vÃ¡zÃ¡na v runÃ¡ch, mÅ¯Å¾e je pouÅ¾Ã­t kdokoliv, kdo je obdaÅ™en kouzelnou mocÃ­. Kouzlo tÄ›chto zaÅ™Ã­kÃ¡vadel lze pouÅ¾Ã­t jen jednou. Kouzlo teleportace nemÃ¡ Å¾Ã¡dnÃ¡ omezenÃ­.");
 					
 
 					//2.Seite
-					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den Ränder des TGAs aus, links,oben,rechts,unten)
+					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den RÃ¤nder des TGAs aus, links,oben,rechts,unten)
 					
 					
-					Doc_PrintLine	( nDocID,  1,"Ohnivá bouøe");
+					Doc_PrintLine	( nDocID,  1,"OhnivÃ¡ bouÅ™e");
 					Doc_PrintLine	( nDocID,  1,"---------------");
-					Doc_PrintLines	( nDocID,  1,"Stejnì jako ohnivá koule toto kouzlo mùe udeøit jen na jednoho protivníka, pak však mùe pøejít na další.");
-					Doc_PrintLine	( nDocID,  1,"Obnovitelné kouzlo");
+					Doc_PrintLines	( nDocID,  1,"StejnÄ› jako ohnivÃ¡ koule toto kouzlo mÅ¯Å¾e udeÅ™it jen na jednoho protivnÃ­ka, pak vÅ¡ak mÅ¯Å¾e pÅ™ejÃ­t na dalÅ¡Ã­.");
+					Doc_PrintLine	( nDocID,  1,"ObnovitelnÃ© kouzlo");
 					Doc_PrintLine	( nDocID,  1, "");
 					Doc_PrintLine	( nDocID,  1, Text);
 					Doc_PrintLine	( nDocID,  1,"Blesk");
 					Doc_PrintLine	( nDocID,  1,"---------------");
-					Doc_PrintLines	( nDocID,  1,"Toto kouzlo zasahuje více cílù a déle pùsobí. Sílu bleskù lze obtínì ovládat. Proto se i sám uivatel mùe stát jejím terèem.");
+					Doc_PrintLines	( nDocID,  1,"Toto kouzlo zasahuje vÃ­ce cÃ­lÅ¯ a dÃ©le pÅ¯sobÃ­. SÃ­lu bleskÅ¯ lze obtÃ­Å¾nÄ› ovlÃ¡dat. Proto se i sÃ¡m uÅ¾ivatel mÅ¯Å¾e stÃ¡t jejÃ­m terÄem.");
 					Doc_PrintLine	( nDocID,  1,  Text_1);
 					Doc_PrintLine	( nDocID,  1, "");	
-					Doc_PrintLine	( nDocID,  1,"Smrt nemrtvému");
+					Doc_PrintLine	( nDocID,  1,"Smrt nemrtvÃ©mu");
 					Doc_PrintLine	( nDocID,  1,"---------------");
-					Doc_PrintLines	( nDocID,  1,"Toto kouzlo likviduje nemrtvé nestvùry temnot.");	
+					Doc_PrintLines	( nDocID,  1,"Toto kouzlo likviduje nemrtvÃ© nestvÅ¯ry temnot.");	
 					Doc_PrintLine	( nDocID,  1, Text_2);
 					
 					Doc_Show		( nDocID );
@@ -292,7 +292,7 @@ INSTANCE ItWr_Book_Circle_04 (C_Item)
 /******************************************************************************************/
 INSTANCE  ItWr_Book_Circle_05(C_Item)
 {	
-	name 					=	"Pátı kruh";
+	name 					=	"PÃ¡tÃ½ kruh";
 
 	mainflag 				=	ITEM_KAT_DOCS;
 	flags 					=	0;
@@ -303,7 +303,7 @@ INSTANCE  ItWr_Book_Circle_05(C_Item)
 	material 				=	MAT_LEATHER;
 
 	scemeName				=	"MAP";
-	description				= "Pátı kruh magie";
+	description				= "PÃ¡tÃ½ kruh magie";
 	
 	TEXT[5]				= NAME_Value;
 	COUNT[5]			= value;
@@ -328,31 +328,31 @@ INSTANCE  ItWr_Book_Circle_05(C_Item)
   					
   					Doc_SetFont 	( nDocID, -1, "font_15_book.tga"	   			); 	// -1 -> all pages 
   					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   		);  //  0 -> margins are in pixels
-					Doc_PrintLine	( nDocID,  0,"Pátı kruh");
+					Doc_PrintLine	( nDocID,  0,"PÃ¡tÃ½ kruh");
 					Doc_PrintLine	( nDocID,  0,"---------------");
 					Doc_SetFont 	( nDocID, -1, "font_10_book.TGA"	   			); 	// -1 -> all pages 
 					Doc_PrintLine	( nDocID,  0, "");
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLine	( nDocID,  0,"Ohnivı déš");
+					Doc_PrintLine	( nDocID,  0,"OhnivÃ½ dÃ©Å¡Å¥");
 					Doc_PrintLine	( nDocID,  0,"---------------");
-					Doc_PrintLines	( nDocID,  0,"Síla boího ohnì zasáhne všechny stvùry v okolí mága.");
+					Doc_PrintLines	( nDocID,  0,"SÃ­la boÅ¾Ã­ho ohnÄ› zasÃ¡hne vÅ¡echny stvÅ¯ry v okolÃ­ mÃ¡ga.");
 					Doc_PrintLine	( nDocID,  0, Text_1);					
 					
 					
 					//2.Seite
-					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den Ränder des TGAs aus, links,oben,rechts,unten)
+					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den RÃ¤nder des TGAs aus, links,oben,rechts,unten)
 					Doc_PrintLine	( nDocID,  1, "");
-					Doc_PrintLine	( nDocID,  1,"Ledová vlna");
+					Doc_PrintLine	( nDocID,  1,"LedovÃ¡ vlna");
 					Doc_PrintLine	( nDocID,  1,"---------------");
-					Doc_PrintLines	( nDocID,  1,"Kouzlo ledové vlny zasáhne všechny nepøátele a nakrátko je zmrazí. Bìhem zmrazení jsou obìti znehybnìny a nezpùsobují ádné škody.");
-					Doc_PrintLines	( nDocID,  1,"Kouzlo chrámu mágù Vody.");
+					Doc_PrintLines	( nDocID,  1,"Kouzlo ledovÃ© vlny zasÃ¡hne vÅ¡echny nepÅ™Ã¡tele a nakrÃ¡tko je zmrazÃ­. BÄ›hem zmrazenÃ­ jsou obÄ›ti znehybnÄ›ny a nezpÅ¯sobujÃ­ Å¾Ã¡dnÃ© Å¡kody.");
+					Doc_PrintLines	( nDocID,  1,"Kouzlo chrÃ¡mu mÃ¡gÅ¯ Vody.");
 					Doc_PrintLine	( nDocID,  1, Text_2);
 					Doc_Show		( nDocID );
 };
 
 INSTANCE  ItWr_Book_Circle_06(C_Item)
 {	
-	name 					=	"Šestı kruh";
+	name 					=	"Å estÃ½ kruh";
 
 	mainflag 				=	ITEM_KAT_DOCS;
 	flags 					=	0;
@@ -363,7 +363,7 @@ INSTANCE  ItWr_Book_Circle_06(C_Item)
 	material 				=	MAT_LEATHER;
 
 	scemeName				=	"MAP";
-	description			= "Šestı kruh magie";
+	description			= "Å estÃ½ kruh magie";
 	
 	TEXT[5]				= NAME_Value;
 	COUNT[5]			= value;
@@ -388,7 +388,7 @@ INSTANCE  ItWr_Book_Circle_06(C_Item)
   					
   					Doc_SetFont 	( nDocID, -1, "font_15_book.tga"	   			); 	// -1 -> all pages 
   					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   		);  //  0 -> margins are in pixels
-					Doc_PrintLine	( nDocID,  0,"Šestı kruh");
+					Doc_PrintLine	( nDocID,  0,"Å estÃ½ kruh");
 					Doc_PrintLine	( nDocID,  0,"---------------");
 					Doc_SetFont 	( nDocID, -1, "font_10_book.TGA"	   			); 	// -1 -> all pages 
 					Doc_PrintLine	( nDocID,  0, "");
@@ -396,19 +396,19 @@ INSTANCE  ItWr_Book_Circle_06(C_Item)
 					Doc_PrintLine	( nDocID,  0, "");
 					Doc_PrintLine	( nDocID,  0,"Dech smrti");
 					Doc_PrintLine	( nDocID,  0,"---------------");
-					Doc_PrintLines	( nDocID,  0,"Beliarùv dech. Oblak nièivého vzduchu, kterı okamitì usmrtí vše ivé.");
+					Doc_PrintLines	( nDocID,  0,"BeliarÅ¯v dech. Oblak niÄivÃ©ho vzduchu, kterÃ½ okamÅ¾itÄ› usmrtÃ­ vÅ¡e Å¾ivÃ©.");
 					Doc_PrintLine	( nDocID,  0, "");
 					Doc_PrintLine	( nDocID,  0, Text);					
 					
 					
 					//2.Seite
-					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den Ränder des TGAs aus, links,oben,rechts,unten)
+					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den RÃ¤nder des TGAs aus, links,oben,rechts,unten)
 					Doc_PrintLine	( nDocID,  1, "");
 					Doc_PrintLine	( nDocID,  1, "");
 					Doc_PrintLine	( nDocID,  1,"Kruh smrti");
 					Doc_PrintLine	( nDocID,  1,"---------------");
-					Doc_PrintLines	( nDocID,  1,"Tìko je dohledat jakıkoliv záznam o runì, která obsahuje kouzlo URIZIELU.");	
-					Doc_PrintLines	( nDocID,  1,"Známo je jen to, e patøila k moci Beliarovì.");
+					Doc_PrintLines	( nDocID,  1,"TÄ›Å¾ko je dohledat jakÃ½koliv zÃ¡znam o runÄ›, kterÃ¡ obsahuje kouzlo URIZIELU.");	
+					Doc_PrintLines	( nDocID,  1,"ZnÃ¡mo je jen to, Å¾e patÅ™ila k moci BeliarovÄ›.");
 					Doc_PrintLine	( nDocID,  1, "");
 				
 					
@@ -420,7 +420,7 @@ INSTANCE  ItWr_Book_Circle_06(C_Item)
 
 INSTANCE Goettergabe(C_Item)
 {	
-	name 					=	"Dar bohù";
+	name 					=	"Dar bohÅ¯";
 	
 	mainflag 				=	ITEM_KAT_DOCS;
 	flags 					=	0;
@@ -431,7 +431,7 @@ INSTANCE Goettergabe(C_Item)
 	material 				=	MAT_LEATHER;
 
 	scemeName				=	"MAP";	
-	description			= "Dar bohù";
+	description			= "Dar bohÅ¯";
 	//TEXT[0]				= "Dritter Kreis";
 	////COUNT[0]			= ;
 	//TEXT[1]				= "";
@@ -465,18 +465,18 @@ INSTANCE Goettergabe(C_Item)
 					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   		);  //  0 -> margins are in pixels
 					Doc_PrintLine	( nDocID,  0," ");
 					Doc_SetFont 	( nDocID, -1, "font_10_book.TGA"	   			); 	// -1 -> all pages 
-					Doc_PrintLine	( nDocID,  0,"Dar bohù");
+					Doc_PrintLine	( nDocID,  0,"Dar bohÅ¯");
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLines	( nDocID,  0,"Èlovìk se pokouší odhalit podstatu a pùvod magie u po staletí. Kde však jen zaèít? Jak magii popsat? Jedná se o nejrozporuplnìjší sílu, která kdy byla známa. Dokáe zabíjet i léèit, dokáe tvoøit i nièit.");
+					Doc_PrintLines	( nDocID,  0,"ÄŒlovÄ›k se pokouÅ¡Ã­ odhalit podstatu a pÅ¯vod magie uÅ¾ po staletÃ­. Kde vÅ¡ak jen zaÄÃ­t? Jak magii popsat? JednÃ¡ se o nejrozporuplnÄ›jÅ¡Ã­ sÃ­lu, kterÃ¡ kdy byla znÃ¡ma. DokÃ¡Å¾e zabÃ­jet i lÃ©Äit, dokÃ¡Å¾e tvoÅ™it i niÄit.");
 					
 
 					//2.Seite
-					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den Ränder des TGAs aus, links,oben,rechts,unten)
+					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den RÃ¤nder des TGAs aus, links,oben,rechts,unten)
 					Doc_PrintLine	( nDocID,  1, "");
 					Doc_PrintLine	( nDocID,  1, "");
 					Doc_PrintLine	( nDocID,  1, "");
 					Doc_PrintLine	( nDocID,  1, "");
-					Doc_PrintLines	( nDocID,  1,"Jak vlastnì taková síla vypadá? Kde mùe èlovìk najít tu neviditelnou, neskuteènì obrovskou sílu? Magie je tím, èím je. Je to ten nejkrásnìjší a nejmocnìjší dar, jakı kdy bostvo lidstvu dalo. Je to boí dar urèenı uivatelùm a šiøitelùm magie. Léèivá moc je svìøena jen nìkolika neèetnım vyvolencùm, kteøí ji dokáou ovládat.");	
+					Doc_PrintLines	( nDocID,  1,"Jak vlastnÄ› takovÃ¡ sÃ­la vypadÃ¡? Kde mÅ¯Å¾e ÄlovÄ›k najÃ­t tu neviditelnou, neskuteÄnÄ› obrovskou sÃ­lu? Magie je tÃ­m, ÄÃ­m je. Je to ten nejkrÃ¡snÄ›jÅ¡Ã­ a nejmocnÄ›jÅ¡Ã­ dar, jakÃ½ kdy boÅ¾stvo lidstvu dalo. Je to boÅ¾Ã­ dar urÄenÃ½ uÅ¾ivatelÅ¯m a Å¡iÅ™itelÅ¯m magie. LÃ©ÄivÃ¡ moc je svÄ›Å™ena jen nÄ›kolika neÄetnÃ½m vyvolencÅ¯m, kteÅ™Ã­ ji dokÃ¡Å¾ou ovlÃ¡dat.");	
 					Doc_PrintLine	( nDocID,  1, "");
 					Doc_PrintLine	( nDocID,  1,"Barthos z Laranu");
 					Doc_Show		( nDocID );
@@ -485,7 +485,7 @@ INSTANCE Goettergabe(C_Item)
 
 INSTANCE Geheimnisse_der_Zauberei(C_Item)
 {	
-	name 					=	"Tajemství magie";
+	name 					=	"TajemstvÃ­ magie";
 	
 	mainflag 				=	ITEM_KAT_DOCS;
 	flags 					=	0;
@@ -496,7 +496,7 @@ INSTANCE Geheimnisse_der_Zauberei(C_Item)
 	material 				=	MAT_LEATHER;
 
 	scemeName				=	"MAP";	
-	description			= "Tajemství magie";
+	description			= "TajemstvÃ­ magie";
 	//TEXT[0]				= "Dritter Kreis";
 	////COUNT[0]			= ;
 	//TEXT[1]				= "";
@@ -528,18 +528,18 @@ INSTANCE Geheimnisse_der_Zauberei(C_Item)
 					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1);  //  0 -> margins are in pixels
 					Doc_PrintLine	( nDocID,  0, "");
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLine	( nDocID,  0,"Tajemství magie");
+					Doc_PrintLine	( nDocID,  0,"TajemstvÃ­ magie");
 					
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLines	( nDocID,  0,"Magie není mágovi vrozena, je ji jen více zpùsobilı pouívat. Jedinı um, kterı vlastní, je schopnost ovlivòovat a vést. Uèòové umìní magie musí bıt schopni pouívat svoji mysl jako nástroj.");
+					Doc_PrintLines	( nDocID,  0,"Magie nenÃ­ mÃ¡govi vrozena, je ji jen vÃ­ce zpÅ¯sobilÃ½ pouÅ¾Ã­vat. JedinÃ½ um, kterÃ½ vlastnÃ­, je schopnost ovlivÅˆovat a vÃ©st. UÄÅˆovÃ© umÄ›nÃ­ magie musÃ­ bÃ½t schopni pouÅ¾Ã­vat svoji mysl jako nÃ¡stroj.");
 					
 					//2.Seite
-					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1);  //  0 -> margins are in pixels (Position des Textes von den Ränder des TGAs aus, links,oben,rechts,unten)
+					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1);  //  0 -> margins are in pixels (Position des Textes von den RÃ¤nder des TGAs aus, links,oben,rechts,unten)
 					Doc_PrintLine	( nDocID,  1, "");
 					Doc_PrintLine	( nDocID,  1, "");
 					Doc_PrintLine	( nDocID,  1, "");
 					Doc_PrintLine	( nDocID,  1, "");
-					Doc_PrintLines	( nDocID,  1,"Jeho duch je jakousi lodí obklopenou tajemnımi silami... která je tvaruje, usmìròuje a nakonec vypouští do svìta, kterı známe. Bìhem okamikù této absolutní koncentrace vstupuje mágùv duch mimo naši sféru a putuje po Odvrácené stranì, která je domovem sil. Sám mág není nièím jinım ne vodièem a usmìròovatelem tìchto sil.");
+					Doc_PrintLines	( nDocID,  1,"Jeho duch je jakousi lodÃ­ obklopenou tajemnÃ½mi silami... kterÃ¡ je tvaruje, usmÄ›rÅˆuje a nakonec vypouÅ¡tÃ­ do svÄ›ta, kterÃ½ znÃ¡me. BÄ›hem okamÅ¾ikÅ¯ tÃ©to absolutnÃ­ koncentrace vstupuje mÃ¡gÅ¯v duch mimo naÅ¡i sfÃ©ru a putuje po OdvrÃ¡cenÃ© stranÄ›, kterÃ¡ je domovem sil. SÃ¡m mÃ¡g nenÃ­ niÄÃ­m jinÃ½m neÅ¾ vodiÄem a usmÄ›rÅˆovatelem tÄ›chto sil.");
 					Doc_PrintLine	( nDocID,  1, "");
 					Doc_PrintLine	( nDocID,  1, "");
 					Doc_PrintLine	( nDocID,  1,"Barthos z Laranu");
@@ -549,7 +549,7 @@ INSTANCE Geheimnisse_der_Zauberei(C_Item)
 /******************************************************************************************/
 INSTANCE Machtvolle_Kunst (C_Item)
 {	
-	name 					=	"Mocné umìní";
+	name 					=	"MocnÃ© umÄ›nÃ­";
 
 	mainflag 				=	ITEM_KAT_DOCS;
 	flags 					=	0;
@@ -560,7 +560,7 @@ INSTANCE Machtvolle_Kunst (C_Item)
 	material 				=	MAT_LEATHER;
 
 	scemeName				=	"MAP";
-	description			= "Mocné umìní";
+	description			= "MocnÃ© umÄ›nÃ­";
 	//TEXT[0]				= "Dritter Kreis";
 	////COUNT[0]			= ;
 	//TEXT[1]				= "";
@@ -592,30 +592,30 @@ INSTANCE Machtvolle_Kunst (C_Item)
   					Doc_SetFont 	( nDocID, -1, "font_15_book.tga"); 	// -1 -> all pages 
 					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1);  //  0 -> margins are in pixels
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLine	( nDocID,  0,"Mocné umìní");
+					Doc_PrintLine	( nDocID,  0,"MocnÃ© umÄ›nÃ­");
 					Doc_PrintLine	( nDocID,  0, "");
 					Doc_SetFont 	( nDocID, -1, "font_10_book.tga");
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLines	( nDocID,  0,"Práce pro ty, kteøí byli vzdìláni v tajemném umìní");
+					Doc_PrintLines	( nDocID,  0,"PrÃ¡ce pro ty, kteÅ™Ã­ byli vzdÄ›lÃ¡ni v tajemnÃ©m umÄ›nÃ­");
 					Doc_PrintLine	( nDocID,  0, "");
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLines	( nDocID,  0,"Schopnost mága ovládat boí sílu vzrùstá. Nejprve je podobná semínku zasetému v poli. Musí se o nìj peèovat, jinak pøijde vniveè. Jakmile však zaène rùst, jeho krása se rozvine.");
+					Doc_PrintLines	( nDocID,  0,"Schopnost mÃ¡ga ovlÃ¡dat boÅ¾Ã­ sÃ­lu vzrÅ¯stÃ¡. Nejprve je podobnÃ¡ semÃ­nku zasetÃ©mu v poli. MusÃ­ se o nÄ›j peÄovat, jinak pÅ™ijde vniveÄ. Jakmile vÅ¡ak zaÄne rÅ¯st, jeho krÃ¡sa se rozvine.");
 					
 					
 					//2.Seite
-					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1);  //  0 -> margins are in pixels (Position des Textes von den Ränder des TGAs aus, links,oben,rechts,unten)
+					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1);  //  0 -> margins are in pixels (Position des Textes von den RÃ¤nder des TGAs aus, links,oben,rechts,unten)
 					Doc_PrintLine	( nDocID,  1, "");
 					Doc_PrintLine	( nDocID,  1, "");
 					Doc_PrintLine	( nDocID,  1, "");
 					Doc_PrintLine	( nDocID,  1, "");
-					Doc_PrintLines	( nDocID,  1,"Kadım dnem pokraèuje v rùstu. Je to stejné jako s vnímavım mágem. Zpoèátku jsou jeho síly moná chabé, ale jak v prùbìhu èasu roste a vyzrává, vzrùstají jeho síly, jejich hranice jsou nepøedvídatelné. Svatou povinností kadého mága je dovést své síly a k tomuto bodu dokonalosti, pro semínko zasetého bohy je to ten nejvìtší dar, jakı mùe smrtelník pøijmout.");
+					Doc_PrintLines	( nDocID,  1,"KaÅ¾dÃ½m dnem pokraÄuje v rÅ¯stu. Je to stejnÃ© jako s vnÃ­mavÃ½m mÃ¡gem. ZpoÄÃ¡tku jsou jeho sÃ­ly moÅ¾nÃ¡ chabÃ©, ale jak v prÅ¯bÄ›hu Äasu roste a vyzrÃ¡vÃ¡, vzrÅ¯stajÃ­ jeho sÃ­ly, jejichÅ¾ hranice jsou nepÅ™edvÃ­datelnÃ©. Svatou povinnostÃ­ kaÅ¾dÃ©ho mÃ¡ga je dovÃ©st svÃ© sÃ­ly aÅ¾ k tomuto bodu dokonalosti, pro semÃ­nko zasetÃ©ho bohy je to ten nejvÄ›tÅ¡Ã­ dar, jakÃ½ mÅ¯Å¾e smrtelnÃ­k pÅ™ijmout.");
 					Doc_Show		( nDocID );
 	};
 
 /******************************************************************************************/
 INSTANCE Elementare_Arcanei (C_Item)
 {	
-	name 					=	"Základní tajemné umìní";
+	name 					=	"ZÃ¡kladnÃ­ tajemnÃ© umÄ›nÃ­";
 
 	mainflag 				=	ITEM_KAT_DOCS;
 	flags 					=	0;
@@ -626,7 +626,7 @@ INSTANCE Elementare_Arcanei (C_Item)
 	material 				=	MAT_LEATHER;
 
 	scemeName				=	"MAP";
-	description			= "Základní tajemné umìní";
+	description			= "ZÃ¡kladnÃ­ tajemnÃ© umÄ›nÃ­";
 	//TEXT[0]				= "Vierter Kreis";
 	////COUNT[0]			= ;
 	//TEXT[1]				= "";
@@ -659,31 +659,31 @@ INSTANCE Elementare_Arcanei (C_Item)
 					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1);  //  0 -> margins are in pixels
 					Doc_PrintLine	( nDocID,  0, "");
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLine	( nDocID,  0,"Zákl. tajemné umìní");
+					Doc_PrintLine	( nDocID,  0,"ZÃ¡kl. tajemnÃ© umÄ›nÃ­");
 					Doc_PrintLine	( nDocID,  0, "");
 					Doc_SetFont 	( nDocID, -1, "font_10_book.tga");
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLines	( nDocID,  0,"Místo magie v pozemském spoleèenství");
+					Doc_PrintLines	( nDocID,  0,"MÃ­sto magie v pozemskÃ©m spoleÄenstvÃ­");
 					Doc_PrintLine	( nDocID,  0, "");
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLines	( nDocID,  0,"Vztahu magie a ivlù bylo vìnováno mnoho vızkumného úsilí. Lze prohlásit, e magie pøedstavuje dokonalı ivel. Je to síla, která veškeré ivly dokáe transformovat a tvarovat, co znamená, e je jim nadøízená. ");
+					Doc_PrintLines	( nDocID,  0,"Vztahu magie a Å¾ivlÅ¯ bylo vÄ›novÃ¡no mnoho vÃ½zkumnÃ©ho ÃºsilÃ­. Lze prohlÃ¡sit, Å¾e magie pÅ™edstavuje dokonalÃ½ Å¾ivel. Je to sÃ­la, kterÃ¡ veÅ¡kerÃ© Å¾ivly dokÃ¡Å¾e transformovat a tvarovat, coÅ¾ znamenÃ¡, Å¾e je jim nadÅ™Ã­zenÃ¡. ");
 					
 					
 					//2.Seite
-					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1);  //  0 -> margins are in pixels (Position des Textes von den Ränder des TGAs aus, links,oben,rechts,unten)
+					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1);  //  0 -> margins are in pixels (Position des Textes von den RÃ¤nder des TGAs aus, links,oben,rechts,unten)
 					Doc_PrintLine	( nDocID,  1, "");
 					Doc_PrintLine	( nDocID,  1, "");	
 					Doc_PrintLine	( nDocID,  1, "");
 					Doc_PrintLine	( nDocID,  1, "");
 					Doc_PrintLine	( nDocID,  1, "");
-					Doc_PrintLines	( nDocID,  1,"Kadı ivel, je-li vidìn ve své nejryzejší formì, v sobì nese spojení s magií. Pøirozená spojení tohoto druhu lze nalézt jen na nemnohıch místech,  která jsou také náruivì vyhledávána. Schopnost mága tyto síly zdánlivì z nièeho vyvolávat dokazuje, e moc magie je to nejèistší a nejvìtší dobro vùbec.");
+					Doc_PrintLines	( nDocID,  1,"KaÅ¾dÃ½ Å¾ivel, je-li vidÄ›n ve svÃ© nejryzejÅ¡Ã­ formÄ›, v sobÄ› nese spojenÃ­ s magiÃ­. PÅ™irozenÃ¡ spojenÃ­ tohoto druhu lze nalÃ©zt jen na nemnohÃ½ch mÃ­stech,  kterÃ¡ jsou takÃ© nÃ¡ruÅ¾ivÄ› vyhledÃ¡vÃ¡na. Schopnost mÃ¡ga tyto sÃ­ly zdÃ¡nlivÄ› z niÄeho vyvolÃ¡vat dokazuje, Å¾e moc magie je to nejÄistÅ¡Ã­ a nejvÄ›tÅ¡Ã­ dobro vÅ¯bec.");
 					Doc_Show		( nDocID );
 	};
 
 /******************************************************************************************/
 INSTANCE  Wahre_Macht(C_Item)
 {	
-	name 					=	"Ryzí síla";
+	name 					=	"RyzÃ­ sÃ­la";
 
 	mainflag 				=	ITEM_KAT_DOCS;
 	flags 					=	0;
@@ -694,8 +694,8 @@ INSTANCE  Wahre_Macht(C_Item)
 	material 				=	MAT_LEATHER;
 
 	scemeName				=	"MAP";
-	description			= "Ryzí síla";
-	//TEXT[0]				= "Fünfter Kreis";
+	description			= "RyzÃ­ sÃ­la";
+	//TEXT[0]				= "FÃ¼nfter Kreis";
 	////COUNT[0]			= ;
 	//TEXT[1]				= "";
 	////COUNT[1]			= ;
@@ -726,26 +726,26 @@ INSTANCE  Wahre_Macht(C_Item)
   					Doc_SetFont 	( nDocID, -1, "font_15_book.tga"); 	// -1 -> all pages 
 					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1);  //  0 -> margins are in pixels
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLine	( nDocID,  0,"Ryzí síla");
+					Doc_PrintLine	( nDocID,  0,"RyzÃ­ sÃ­la");
 					Doc_PrintLine	( nDocID,  0, "");
 					Doc_SetFont 	( nDocID, -1, "font_10_book.tga");
 					Doc_PrintLine	( nDocID,  0, "");
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLines	( nDocID,  0,"Svatá povinnost dovednosti");
+					Doc_PrintLines	( nDocID,  0,"SvatÃ¡ povinnost dovednosti");
 					Doc_PrintLine	( nDocID,  0, "");
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLines	( nDocID,  0,"Existuje síla, kterou se mág odlišuje od svıch bliních. Protoe je vybaven schopností ovlivòovat boskou moc, je narozdíl od smrtelníkù nezávislı na pøírodních zákonech.");
+					Doc_PrintLines	( nDocID,  0,"Existuje sÃ­la, kterou se mÃ¡g odliÅ¡uje od svÃ½ch bliÅ¾nÃ­ch. ProtoÅ¾e je vybaven schopnostÃ­ ovlivÅˆovat boÅ¾skou moc, je narozdÃ­l od smrtelnÃ­kÅ¯ nezÃ¡vislÃ½ na pÅ™Ã­rodnÃ­ch zÃ¡konech.");
 					
 					
 					//2.Seite
-					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1);  //  0 -> margins are in pixels (Position des Textes von den Ränder des TGAs aus, links,oben,rechts,unten)
+					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1);  //  0 -> margins are in pixels (Position des Textes von den RÃ¤nder des TGAs aus, links,oben,rechts,unten)
 					Doc_PrintLine	( nDocID,  1, "");
 					Doc_PrintLine	( nDocID,  1, "");	
 					Doc_PrintLine	( nDocID,  1, "");
 					Doc_PrintLine	( nDocID,  1, "");
 					Doc_PrintLine	( nDocID,  1, "");
 					Doc_PrintLine	( nDocID,  1, "");
-					Doc_PrintLines	( nDocID,  1,"Jakmile mág dosáhne úrovnì, která mu umoní povznést se nad svoji existenci, vystoupí do vyšších sfér, ne v jakıch ijí prostí smrtelníci. Mùe prolomit hranice èasu a prostoru, a dokonce ani smrt, soumrak ití, jej nedokáe zastavit.");
+					Doc_PrintLines	( nDocID,  1,"Jakmile mÃ¡g dosÃ¡hne ÃºrovnÄ›, kterÃ¡ mu umoÅ¾nÃ­ povznÃ©st se nad svoji existenci, vystoupÃ­ do vyÅ¡Å¡Ã­ch sfÃ©r, neÅ¾ v jakÃ½ch Å¾ijÃ­ prostÃ­ smrtelnÃ­ci. MÅ¯Å¾e prolomit hranice Äasu a prostoru, a dokonce ani smrt, soumrak Å¾itÃ­, jej nedokÃ¡Å¾e zastavit.");
 					Doc_Show		( nDocID );
 };
 
@@ -754,7 +754,7 @@ INSTANCE  Wahre_Macht(C_Item)
 
 INSTANCE  Das_magische_Erz(C_Item)
 {	
-	name 					=	"Magická ruda";
+	name 					=	"MagickÃ¡ ruda";
 
 	mainflag 				=	ITEM_KAT_DOCS;
 	flags 					=	0;
@@ -765,7 +765,7 @@ INSTANCE  Das_magische_Erz(C_Item)
 	material 				=	MAT_LEATHER;
 
 	scemeName				=	"MAP";
-	description			= "Magická ruda";
+	description			= "MagickÃ¡ ruda";
 	//TEXT[0]				= "";
 	////COUNT[0]			= ;
 	//TEXT[1]				= "";
@@ -796,18 +796,18 @@ INSTANCE  Das_magische_Erz(C_Item)
   					
   					Doc_SetFont 	( nDocID, -1, "font_15_book.tga"); 	// -1 -> all pages 
 					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1);  //  0 -> margins are in pixels
-					Doc_PrintLine	( nDocID,  0,"Magická ruda");
+					Doc_PrintLine	( nDocID,  0,"MagickÃ¡ ruda");
 					Doc_PrintLine	( nDocID,  0,"");
 					Doc_SetFont 	( nDocID, -1, "font_10_book.tga");
 					Doc_PrintLine	( nDocID,  0,"");
-					Doc_PrintLines	( nDocID,  0,"Nejlepší ruda pouívaná k vırobì zbraní se bez pochyb nachází v dolech Khorinisu. Ocel z ní je naprosto èistá a prostoupená magií. Její pevnost nesnese srovnání a pøitom je hladká, nelze ji zlomit. Zbranì ukované z této oceli, která se s nepopsatelnım úsilím tìí z hlubin zemì, nelze  s ádnou jinou èepelí vùbec srovnávat, by by byla zhotovena z té nejpevnìjší oceli.");
+					Doc_PrintLines	( nDocID,  0,"NejlepÅ¡Ã­ ruda pouÅ¾Ã­vanÃ¡ k vÃ½robÄ› zbranÃ­ se bez pochyb nachÃ¡zÃ­ v dolech Khorinisu. Ocel z nÃ­ je naprosto ÄistÃ¡ a prostoupenÃ¡ magiÃ­. JejÃ­ pevnost nesnese srovnÃ¡nÃ­ a pÅ™itom je hladkÃ¡, nelze ji zlomit. ZbranÄ› ukovanÃ© z tÃ©to oceli, kterÃ¡ se s nepopsatelnÃ½m ÃºsilÃ­m tÄ›Å¾Ã­ z hlubin zemÄ›, nelze  s Å¾Ã¡dnou jinou ÄepelÃ­ vÅ¯bec srovnÃ¡vat, byÅ¥ by byla zhotovena z tÃ© nejpevnÄ›jÅ¡Ã­ oceli.");
 					
 					
 					//2.Seite
-					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1);  //  0 -> margins are in pixels (Position des Textes von den Ränder des TGAs aus, links,oben,rechts,unten)
+					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1);  //  0 -> margins are in pixels (Position des Textes von den RÃ¤nder des TGAs aus, links,oben,rechts,unten)
 					Doc_PrintLine	( nDocID,  1,"");
 					Doc_PrintLine	( nDocID,  1,"");	
-					Doc_PrintLines	( nDocID,  1,"Prolomí kadı štít a projde skrz kadé brnìní. Králové a bohatıøi nosili zbranì ukované z té nejlepší  oceli z Khorinisu a v Myrtanì se za takovéto zbranì doposud platí vysoké èástky. Jen sama ruda pøedstavuje velkou hodnotu. Vylámat ji ze skály stojí obrovské úsilí.");
+					Doc_PrintLines	( nDocID,  1,"ProlomÃ­ kaÅ¾dÃ½ Å¡tÃ­t a projde skrz kaÅ¾dÃ© brnÄ›nÃ­. KrÃ¡lovÃ© a bohatÃ½Å™i nosili zbranÄ› ukovanÃ© z tÃ© nejlepÅ¡Ã­  oceli z Khorinisu a v MyrtanÄ› se za takovÃ©to zbranÄ› doposud platÃ­ vysokÃ© ÄÃ¡stky. Jen sama ruda pÅ™edstavuje velkou hodnotu. VylÃ¡mat ji ze skÃ¡ly stojÃ­ obrovskÃ© ÃºsilÃ­.");
 					Doc_Show		( nDocID );
 	};
 
@@ -861,15 +861,15 @@ INSTANCE Schlacht_um_Varant1(C_Item)
 					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   		);  //  0 -> margins are in pixels
 					Doc_SetFont 	( nDocID, -1, "font_10_book.tga"	   			); 	// -1 -> all pages 
 					Doc_PrintLine	( nDocID,  0,""); 					
-					Doc_PrintLines	( nDocID,  0,"...avšak Rhobar, stratég, volí útok. Sešikoval svá vojska a velel jim zaútoèit na slabé pravé køídlo nepøítele. Neztrácel èas v dlouhıch šarvátkách, ale pronikl armádou nepøítele jako meè a jeho obranu rozdrtil, jako by byla domeèkem z karet. Hnal svoji armádu a postupoval k hranicím Varantu. Vìdìl, e zvítìzit v tomto boji znamená rozprášit protivníkovu armádu a zabránit, aby se Gellon a Lukkor");
+					Doc_PrintLines	( nDocID,  0,"...avÅ¡ak Rhobar, stratÃ©g, volÃ­ Ãºtok. SeÅ¡ikoval svÃ¡ vojska a velel jim zaÃºtoÄit na slabÃ© pravÃ© kÅ™Ã­dlo nepÅ™Ã­tele. NeztrÃ¡cel Äas v dlouhÃ½ch Å¡arvÃ¡tkÃ¡ch, ale pronikl armÃ¡dou nepÅ™Ã­tele jako meÄ a jeho obranu rozdrtil, jako by byla domeÄkem z karet. Hnal svoji armÃ¡du a postupoval k hranicÃ­m Varantu. VÄ›dÄ›l, Å¾e zvÃ­tÄ›zit v tomto boji znamenÃ¡ rozprÃ¡Å¡it protivnÃ­kovu armÃ¡du a zabrÃ¡nit, aby se Gellon a Lukkor");
 					
 					//2.Seite
 
-					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den Ränder des TGAs aus, links,oben,rechts,unten)
+					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den RÃ¤nder des TGAs aus, links,oben,rechts,unten)
 					Doc_PrintLine	( nDocID,  1,"");					
-					Doc_PrintLines	( nDocID,  1,"sjednotili a zasadili mu drtivı úder. Aby zajistil své vítìzství, musel pøerušit své zásobovací kanály...");
+					Doc_PrintLines	( nDocID,  1,"sjednotili a zasadili mu drtivÃ½ Ãºder. Aby zajistil svÃ© vÃ­tÄ›zstvÃ­, musel pÅ™eruÅ¡it svÃ© zÃ¡sobovacÃ­ kanÃ¡ly...");
 					Doc_PrintLine	( nDocID,  1,"");
-					Doc_PrintLines	( nDocID,  1,"...Gellon padl, jeho armáda byla poraena a vojáci bez velitele se dali na útìk. Rhobar však nehodlal nepøíteli dát šanci, aby se znovu dal dohromady, a proto dal svım vojskùm rozkaz, aby znièila zbytky nepøátelskıch sil. Lukkor mezitím vyuil okamiku pøekvapení a zasadil vyèerpanım vojákùm krále Rhobara rozhodující ránu...");
+					Doc_PrintLines	( nDocID,  1,"...Gellon padl, jeho armÃ¡da byla poraÅ¾ena a vojÃ¡ci bez velitele se dali na ÃºtÄ›k. Rhobar vÅ¡ak nehodlal nepÅ™Ã­teli dÃ¡t Å¡anci, aby se znovu dal dohromady, a proto dal svÃ½m vojskÅ¯m rozkaz, aby zniÄila zbytky nepÅ™Ã¡telskÃ½ch sil. Lukkor mezitÃ­m vyuÅ¾il okamÅ¾iku pÅ™ekvapenÃ­ a zasadil vyÄerpanÃ½m vojÃ¡kÅ¯m krÃ¡le Rhobara rozhodujÃ­cÃ­ rÃ¡nu...");
 					
 					Doc_Show		( nDocID );
 	};
@@ -919,13 +919,13 @@ INSTANCE Schlacht_um_Varant2(C_Item)
 					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   		);  //  0 -> margins are in pixels
 					Doc_SetFont 	( nDocID, -1, "font_10_book.tga"	   			); 	// -1 -> all pages 
 					Doc_PrintLine	( nDocID,  0,""); 					
-					Doc_PrintLines	( nDocID,  0,"Válka byla rozhodnuta. Varant ztratil zámoøské pøístavy, ivotnì dùleité pro vlastní armádu. Král Rhobar na váleèném poli pøíliš dlouho neotálel, ale opustil své generály, aby uzavøel smlouvu s nepoèetnımi nepøátelskımi vojáky. Varantu zbyla jen jedna velká divize, jí velel Lukkor, kterı ji nejednou zvrátil jistou poráku ve vítìzství. ");
+					Doc_PrintLines	( nDocID,  0,"VÃ¡lka byla rozhodnuta. Varant ztratil zÃ¡moÅ™skÃ© pÅ™Ã­stavy, Å¾ivotnÄ› dÅ¯leÅ¾itÃ© pro vlastnÃ­ armÃ¡du. KrÃ¡l Rhobar na vÃ¡leÄnÃ©m poli pÅ™Ã­liÅ¡ dlouho neotÃ¡lel, ale opustil svÃ© generÃ¡ly, aby uzavÅ™el smlouvu s nepoÄetnÃ½mi nepÅ™Ã¡telskÃ½mi vojÃ¡ky. Varantu zbyla jen jedna velkÃ¡ divize, jÃ­Å¾ velel Lukkor, kterÃ½ jiÅ¾ nejednou zvrÃ¡til jistou porÃ¡Å¾ku ve vÃ­tÄ›zstvÃ­. ");
 					
 					//2.Seite
 
-					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den Ränder des TGAs aus, links,oben,rechts,unten)
+					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den RÃ¤nder des TGAs aus, links,oben,rechts,unten)
 					Doc_PrintLine	( nDocID,  1,"");					
-					Doc_PrintLines	( nDocID,  1,"Nyní však byla jeho armáda v obklíèení. Situace byla beznadìjná, tøebae poèetnì mnohokrát pøevyšoval nepøítele. Do této pasti jej vlákal Lee, váleènı hrdina z Myrtany. Tìká jízda nebyla schopna bojovat na nepevné bainaté pùdì úzkého údolí. Leeovi vojáci obsadili úboèí kopcù sousedících s bainami a opakovanımi vıpady decimovali Lukkorovu armádu. Zoufalé pokusy jeho jednotek konèily zakrátko v tratolišti krve. Byl poraen.");
+					Doc_PrintLines	( nDocID,  1,"NynÃ­ vÅ¡ak byla jeho armÃ¡da v obklÃ­ÄenÃ­. Situace byla beznadÄ›jnÃ¡, tÅ™ebaÅ¾e poÄetnÄ› mnohokrÃ¡t pÅ™evyÅ¡oval nepÅ™Ã­tele. Do tÃ©to pasti jej vlÃ¡kal Lee, vÃ¡leÄnÃ½ hrdina z Myrtany. TÄ›Å¾kÃ¡ jÃ­zda nebyla schopna bojovat na nepevnÃ© baÅ¾inatÃ© pÅ¯dÄ› ÃºzkÃ©ho ÃºdolÃ­. Leeovi vojÃ¡ci obsadili ÃºboÄÃ­ kopcÅ¯ sousedÃ­cÃ­ch s baÅ¾inami a opakovanÃ½mi vÃ½pady decimovali Lukkorovu armÃ¡du. ZoufalÃ© pokusy jeho jednotek konÄily zakrÃ¡tko v tratoliÅ¡ti krve. Byl poraÅ¾en.");
 					
 					Doc_Show		( nDocID );
 	};
@@ -933,7 +933,7 @@ INSTANCE Schlacht_um_Varant2(C_Item)
 /******************************************************************************************/
 INSTANCE Myrtanas_Lyrik(C_Item)
 {	
-	name 					=	"Myrtanská poezie";
+	name 					=	"MyrtanskÃ¡ poezie";
 
 	mainflag 				=	ITEM_KAT_DOCS;
 	flags 					=	0;
@@ -944,7 +944,7 @@ INSTANCE Myrtanas_Lyrik(C_Item)
 	material 				=	MAT_LEATHER;
 
 	scemeName				=	"MAP";
-	description			= "Myrtanská poezie";
+	description			= "MyrtanskÃ¡ poezie";
 
 	TEXT[5]				= NAME_Value;
 	COUNT[5]			= value;
@@ -969,9 +969,9 @@ INSTANCE Myrtanas_Lyrik(C_Item)
 					Doc_PrintLine	( nDocID,  0,"");
 					Doc_PrintLine	( nDocID,  0,"");
 					Doc_PrintLine	( nDocID,  0,"");
-					Doc_PrintLine	( nDocID,  0,"       Píseò");
+					Doc_PrintLine	( nDocID,  0,"       PÃ­seÅˆ");
 					Doc_PrintLine	( nDocID,  0,"");
-					Doc_PrintLine	( nDocID,  0,"               pokání");
+					Doc_PrintLine	( nDocID,  0,"               pokÃ¡nÃ­");
 					Doc_PrintLine	( nDocID,  0,"");
 					Doc_PrintLine	( nDocID,  0,"");
 					Doc_PrintLine	( nDocID,  0,"");
@@ -986,30 +986,30 @@ INSTANCE Myrtanas_Lyrik(C_Item)
 		
 					//2.Seite
 
-					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den Ränder des TGAs aus, links,oben,rechts,unten)
+					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den RÃ¤nder des TGAs aus, links,oben,rechts,unten)
 					Doc_PrintLine	( nDocID,  1,"");					
-					Doc_PrintLines	( nDocID,  1,"Na poèátku byla síla, ryzí a neposkvrnìná,");				
+					Doc_PrintLines	( nDocID,  1,"Na poÄÃ¡tku byla sÃ­la, ryzÃ­ a neposkvrnÄ›nÃ¡,");				
 					Doc_PrintLine	( nDocID,  1,"");				
-					Doc_PrintLines	( nDocID,  1,"teï se nocí ozıvají jen ozvìny slibù.");				
+					Doc_PrintLines	( nDocID,  1,"teÄ se nocÃ­ ozÃ½vajÃ­ jen ozvÄ›ny slibÅ¯.");				
 					Doc_PrintLine	( nDocID,  1,"");				
-					Doc_PrintLines	( nDocID,  1,"Øíkají, e dny jednoty jsou ji dávno tytam");				
+					Doc_PrintLines	( nDocID,  1,"Å˜Ã­kajÃ­, Å¾e dny jednoty jsou jiÅ¾ dÃ¡vno tytam");				
 					Doc_PrintLine	( nDocID,  1,"");				
-					Doc_PrintLines	( nDocID,  1,"a vzaly sebou to, po èem teï prahneme.");				
+					Doc_PrintLines	( nDocID,  1,"a vzaly sebou to, po Äem teÄ prahneme.");				
 					Doc_PrintLine	( nDocID,  1,"");				
-					Doc_PrintLines	( nDocID,  1,"Veškerá jednota byla odvrena a pošlapána.");				
+					Doc_PrintLines	( nDocID,  1,"VeÅ¡kerÃ¡ jednota byla odvrÅ¾ena a poÅ¡lapÃ¡na.");				
 					Doc_PrintLine	( nDocID,  1,"");				
-					Doc_PrintLines	( nDocID,  1,"Proklet byl duch, kterého nám vzala. ");				
+					Doc_PrintLines	( nDocID,  1,"Proklet byl duch, kterÃ©ho nÃ¡m vzala. ");				
 					Doc_PrintLine	( nDocID,  1,"");				
-					Doc_PrintLines	( nDocID,  1,"Touha je teï naší písní.");				
+					Doc_PrintLines	( nDocID,  1,"Touha je teÄ naÅ¡Ã­ pÃ­snÃ­.");				
 					Doc_PrintLine	( nDocID,  1,"");				
-					Doc_PrintLines	( nDocID,  1,"Za jednotu, která je navdy pryè.");				
+					Doc_PrintLines	( nDocID,  1,"Za jednotu, kterÃ¡ je navÅ¾dy pryÄ.");				
 					Doc_PrintLines	( nDocID,  1,"");
 					Doc_Show		( nDocID );
 	};
 /******************************************************************************************/
 INSTANCE Lehren_der_Goetter1 (C_ITEM)
 {	
-	name 					=	"Slovo boí Svazek 1";
+	name 					=	"Slovo boÅ¾Ã­ Svazek 1";
 
 	mainflag 				=	ITEM_KAT_DOCS;
 	flags 					=	0;
@@ -1020,7 +1020,7 @@ INSTANCE Lehren_der_Goetter1 (C_ITEM)
 	material 				=	MAT_LEATHER;
 
 	scemeName				=	"MAP";
-	description			= "Slovo boí";
+	description			= "Slovo boÅ¾Ã­";
 	TEXT[0]				= "Svazek 1";
 	TEXT[5]				= NAME_Value;
 	COUNT[5]			= value;
@@ -1042,25 +1042,25 @@ INSTANCE Lehren_der_Goetter1 (C_ITEM)
  					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   		);  //  0 -> margins are in pixels 					
 					Doc_SetFont 	( nDocID, -1, "font_10_book.tga"	   			); 	// -1 -> all pages 
  					Doc_PrintLine	( nDocID,  0,"");										
-					Doc_PrintLines	( nDocID,  0,"Slyš slovo boí, nebo je jeho vùlí, abys je slyšel. Dbej uèení boího, nebo je jeho vùlí, abys na nì dbal. Cti boskıch knìí, nebo jsou oni vyvolenımi.");
+					Doc_PrintLines	( nDocID,  0,"SlyÅ¡ slovo boÅ¾Ã­, neboÅ¥ je jeho vÅ¯lÃ­, abys je slyÅ¡el. Dbej uÄenÃ­ boÅ¾Ã­ho, neboÅ¥ je jeho vÅ¯lÃ­, abys na nÄ› dbal. Cti boÅ¾skÃ½ch knÄ›Å¾Ã­, neboÅ¥ jsou oni vyvolenÃ½mi.");
 					Doc_PrintLine	( nDocID,  0,"");
 					//Absatz
-					Doc_PrintLines	( nDocID,  0,"Slovo Innosovo: Pokud ti nebude dáno pochopit, nezoufej nad øeèí knìí, nebo oni jsou spravedliví a moudøí. Protoe já jsem vycházející slunce, vše, co se slunci protiví, protiví se té mnì a bude zatraceno do vìènıch temnot.");
+					Doc_PrintLines	( nDocID,  0,"Slovo Innosovo: Pokud ti nebude dÃ¡no pochopit, nezoufej nad Å™eÄÃ­ knÄ›Å¾Ã­, neboÅ¥ oni jsou spravedlivÃ­ a moudÅ™Ã­. ProtoÅ¾e jÃ¡ jsem vychÃ¡zejÃ­cÃ­ slunce, vÅ¡e, co se slunci protivÃ­, protivÃ­ se tÃ©Å¾ mnÄ› a bude zatraceno do vÄ›ÄnÃ½ch temnot.");
 
 					//2.Seite
-					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den Ränder des TGAs aus, links,oben,rechts,unten)
+					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den RÃ¤nder des TGAs aus, links,oben,rechts,unten)
 					Doc_PrintLine	( nDocID,  1,"");
-					Doc_PrintLines	( nDocID,  1,"Slovo Adanovo: Pracuj a ij, nebo den byl stvoøen k tomu, aby èlovìk mohl pracovat. Uè se a poznávej, abys vše mohl pøedávat dále, nebo toto byl dùvod, pro kterı jsi byl stvoøen. Ten, jen bude neteènı a zahálèivı, bude zatracen do vìènıch temnot.");
+					Doc_PrintLines	( nDocID,  1,"Slovo Adanovo: Pracuj a Å¾ij, neboÅ¥ den byl stvoÅ™en k tomu, aby ÄlovÄ›k mohl pracovat. UÄ se a poznÃ¡vej, abys vÅ¡e mohl pÅ™edÃ¡vat dÃ¡le, neboÅ¥ toto byl dÅ¯vod, pro kterÃ½ jsi byl stvoÅ™en. Ten, jenÅ¾ bude neteÄnÃ½ a zahÃ¡lÄivÃ½, bude zatracen do vÄ›ÄnÃ½ch temnot.");
 					Doc_PrintLine	( nDocID,  1,"");
 					//Absatz
-					Doc_PrintLines	( nDocID,  1,"Slovo Beliarovo: Kdokolivìk se dopustí nìèeho zlého a postaví se proti vùli boí, toho ztrestám. Na jeho tìlo pošlu útrapy, je jej usouí k smrti, jeho duše však zùstane se mnou ve vìènıch temnotách.");
+					Doc_PrintLines	( nDocID,  1,"Slovo Beliarovo: KdokolivÄ›k se dopustÃ­ nÄ›Äeho zlÃ©ho a postavÃ­ se proti vÅ¯li boÅ¾Ã­, toho ztrestÃ¡m. Na jeho tÄ›lo poÅ¡lu Ãºtrapy, jeÅ¾ jej usouÅ¾Ã­ k smrti, jeho duÅ¡e vÅ¡ak zÅ¯stane se mnou ve vÄ›ÄnÃ½ch temnotÃ¡ch.");
 					Doc_Show		( nDocID );
 	};
 
 /******************************************************************************************/
 INSTANCE Lehren_der_Goetter2 (C_ITEM)
 {	
-	name 					=	"Slovo boí Svazek 2";
+	name 					=	"Slovo boÅ¾Ã­ Svazek 2";
 
 	mainflag 				=	ITEM_KAT_DOCS;
 	flags 					=	0;
@@ -1071,7 +1071,7 @@ INSTANCE Lehren_der_Goetter2 (C_ITEM)
 	material 				=	MAT_LEATHER;
 
 	scemeName				=	"MAP";
-	description			= "Slovo boí";
+	description			= "Slovo boÅ¾Ã­";
 	TEXT[0]				= "Svazek 2";
 	TEXT[5]				= NAME_Value;
 	COUNT[5]			= value;
@@ -1093,20 +1093,20 @@ INSTANCE Lehren_der_Goetter2 (C_ITEM)
 					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   		);  //  0 -> margins are in pixels
 					Doc_SetFont 	( nDocID, -1, "font_10_book.tga"	   			); 	// -1 -> all pages 
 					Doc_PrintLine	( nDocID,  0,""); 					
-					Doc_PrintLines	( nDocID,  0,"Na úsvitu dìjin: Nebylo noci ani dne, ádné ivé bytosti, jen by se pohybovala po zemi. Tu se zjevil Innos a jeho Svìtlo zazáøilo v ústrety svìta. A Innos dal svìtu dar ivota. ádná bytost však nemohla v záøi Innosovì ít, a tak stvoøil Slunce. Avšak i toto svìtlo bylo stále pøíliš prudké. Proto se Innos rozdìlil ve dví a stvoøil Beliara. Beliar stvoøil noc. Od té doby mùe èlovìk ít. A pak se Innos znovu rozdìlil a stvoøil Adanose. Adanos pøinesl èlovìku pøizpùsobivost, uèenost, zvídavost a odvahu. Innos byl se svım dílem spokojen.");
+					Doc_PrintLines	( nDocID,  0,"Na Ãºsvitu dÄ›jin: Nebylo noci ani dne, Å¾Ã¡dnÃ© Å¾ivÃ© bytosti, jenÅ¾ by se pohybovala po zemi. Tu se zjevil Innos a jeho SvÄ›tlo zazÃ¡Å™ilo v Ãºstrety svÄ›ta. A Innos dal svÄ›tu dar Å¾ivota. Å½Ã¡dnÃ¡ bytost vÅ¡ak nemohla v zÃ¡Å™i InnosovÄ› Å¾Ã­t, a tak stvoÅ™il Slunce. AvÅ¡ak i toto svÄ›tlo bylo stÃ¡le pÅ™Ã­liÅ¡ prudkÃ©. Proto se Innos rozdÄ›lil ve dvÃ­ a stvoÅ™il Beliara. Beliar stvoÅ™il noc. Od tÃ© doby mÅ¯Å¾e ÄlovÄ›k Å¾Ã­t. A pak se Innos znovu rozdÄ›lil a stvoÅ™il Adanose. Adanos pÅ™inesl ÄlovÄ›ku pÅ™izpÅ¯sobivost, uÄenost, zvÃ­davost a odvahu. Innos byl se svÃ½m dÃ­lem spokojen.");
 					
 					//2.Seite
 
-					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den Ränder des TGAs aus, links,oben,rechts,unten)
+					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den RÃ¤nder des TGAs aus, links,oben,rechts,unten)
 					Doc_PrintLine	( nDocID,  1,"");					
-					Doc_PrintLines	( nDocID,  1,"Proto se rozhodl, e ponechá lidstvo na starosti Adanosovi a jal se odpoèívat. Beliar byl však sírán závistí, e lidé v noci spí a nemodlí se k nìmu. Jeho zlost vzrùstala, a stvoøil nakonec mue. Mue, kterı  by se modlil jen k nìmu. Tento stvoøenı mu byl však stejnı jako ostatní lidé. Beliar byl natolik bez sebe zlostí, e toho mue zahubil a pravil: Kdy u mì nebudou uctívat, nech a mì aspoò nenávidí. A stvoøil smrt, která konèí lidské ivoty.");
+					Doc_PrintLines	( nDocID,  1,"Proto se rozhodl, Å¾e ponechÃ¡ lidstvo na starosti Adanosovi a jal se odpoÄÃ­vat. Beliar byl vÅ¡ak sÅ¾Ã­rÃ¡n zÃ¡vistÃ­, Å¾e lidÃ© v noci spÃ­ a nemodlÃ­ se k nÄ›mu. Jeho zlost vzrÅ¯stala, aÅ¾ stvoÅ™il nakonec muÅ¾e. MuÅ¾e, kterÃ½  by se modlil jen k nÄ›mu. Tento stvoÅ™enÃ½ muÅ¾ byl vÅ¡ak stejnÃ½ jako ostatnÃ­ lidÃ©. Beliar byl natolik bez sebe zlostÃ­, Å¾e toho muÅ¾e zahubil a pravil: KdyÅ¾ uÅ¾ mÄ› nebudou uctÃ­vat, nech aÅ¥ mÄ› aspoÅˆ nenÃ¡vidÃ­. A stvoÅ™il smrt, kterÃ¡ konÄÃ­ lidskÃ© Å¾ivoty.");
 					Doc_Show		( nDocID );
 	};
 
 /******************************************************************************************/
 INSTANCE Lehren_der_Goetter3 (C_ITEM)
 {	
-	name 					=	"Slovo boí Svazek 3";
+	name 					=	"Slovo boÅ¾Ã­ Svazek 3";
 
 	mainflag 				=	ITEM_KAT_DOCS;
 	flags 					=	0;
@@ -1117,7 +1117,7 @@ INSTANCE Lehren_der_Goetter3 (C_ITEM)
 	material 				=	MAT_LEATHER;
 
 	scemeName				=	"MAP";
-	description			= "Slovo boí";
+	description			= "Slovo boÅ¾Ã­";
 	TEXT[0]				= "Svazek 3";
 
 	TEXT[5]				= NAME_Value;
@@ -1140,18 +1140,18 @@ INSTANCE Lehren_der_Goetter3 (C_ITEM)
 					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   		);  //  0 -> margins are in pixels
    					Doc_SetFont 	( nDocID, -1, "font_10_book.tga"	   			); 	// -1 -> all pages 
    					Doc_PrintLine	( nDocID,  0,"");			
-					Doc_PrintLines	( nDocID,  0,"Innos dal lidstvu moc, skrze ní jej mùe slyšet a hovoøit s ním. Dal lidstvu moc dìlat zázraky a nazval je mágy. S touto silou pak lidé mohli utváøet svìt ku svému obrazu. Innos je v tom nijak neomezil. A tak èlovìk dostal èást boí moci tvoøit. Ne všichni lidé si však byli rovni a to je znepokojovalo. Tak Innos slouèil moc z toho, co bylo rozdìleno. Vyvolil nìkolik z tìch, kteøí mu prokazovali více úcty ne ostatní a ty ustanovil nade všemi.");
+					Doc_PrintLines	( nDocID,  0,"Innos dal lidstvu moc, skrze nÃ­Å¾ jej mÅ¯Å¾e slyÅ¡et a hovoÅ™it s nÃ­m. Dal lidstvu moc dÄ›lat zÃ¡zraky a nazval je mÃ¡gy. S touto silou pak lidÃ© mohli utvÃ¡Å™et svÄ›t ku svÃ©mu obrazu. Innos je v tom nijak neomezil. A tak ÄlovÄ›k dostal ÄÃ¡st boÅ¾Ã­ moci tvoÅ™it. Ne vÅ¡ichni lidÃ© si vÅ¡ak byli rovni a to je znepokojovalo. Tak Innos slouÄil moc z toho, co bylo rozdÄ›leno. Vyvolil nÄ›kolik z tÄ›ch, kteÅ™Ã­ mu prokazovali vÃ­ce Ãºcty neÅ¾ ostatnÃ­ a ty ustanovil nade vÅ¡emi.");
 					
 					//2.Seite
-					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den Ränder des TGAs aus, links,oben,rechts,unten)
+					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den RÃ¤nder des TGAs aus, links,oben,rechts,unten)
  					Doc_PrintLine	( nDocID,  1,"");					
-					Doc_PrintLines	( nDocID,  1,"Tìch nìkolik se stalo uctívanımi a váenımi a lidé jim øíkali knìí. Ale i mezi nimi byli mnozí, kteøí byli nespokojení. A tak se stalo, e se zaèali modlit k Adanosovi a zapomnìli na svùj pùvod. Knìská jednota se tak rozdìlila. Následovaly války a víra v lidskou všemohoucnost se stala mıtem. A tehdy se knìí zaèali dìlit. Ti, kteøí následovali Adanose, se nazıvali mágy Kruhu vody, zatímco knìí vìrní Innosovi vešli do podvìdomí jako mágové Kruhu ohnì.");
+					Doc_PrintLines	( nDocID,  1,"TÄ›ch nÄ›kolik se stalo uctÃ­vanÃ½mi a vÃ¡Å¾enÃ½mi a lidÃ© jim Å™Ã­kali knÄ›Å¾Ã­. Ale i mezi nimi byli mnozÃ­, kteÅ™Ã­ byli nespokojenÃ­. A tak se stalo, Å¾e se zaÄali modlit k Adanosovi a zapomnÄ›li na svÅ¯j pÅ¯vod. KnÄ›Å¾skÃ¡ jednota se tak rozdÄ›lila. NÃ¡sledovaly vÃ¡lky a vÃ­ra v lidskou vÅ¡emohoucnost se stala mÃ½tem. A tehdy se knÄ›Å¾Ã­ zaÄali dÄ›lit. Ti, kteÅ™Ã­ nÃ¡sledovali Adanose, se nazÃ½vali mÃ¡gy Kruhu vody, zatÃ­mco knÄ›Å¾Ã­ vÄ›rnÃ­ Innosovi veÅ¡li do podvÄ›domÃ­ jako mÃ¡govÃ© Kruhu ohnÄ›.");
 					Doc_Show		( nDocID );
 	};
 /******************************************************************************************/
 INSTANCE Jagd_und_Beute (C_ITEM)
 {	
-	name 					=	"Lov a koøist";
+	name 					=	"Lov a koÅ™ist";
 	mainflag 				=	ITEM_KAT_DOCS;			
 									
 	flags 					=	0;
@@ -1162,7 +1162,7 @@ INSTANCE Jagd_und_Beute (C_ITEM)
 	material 				=	MAT_LEATHER;
 
 	scemeName				=	"MAP";
-	description			= "Lov a koøist";
+	description			= "Lov a koÅ™ist";
 	//TEXT[0]				= "";
 	////COUNT[0]			= ;
 	//TEXT[1]				= "";
@@ -1193,19 +1193,19 @@ INSTANCE Jagd_und_Beute (C_ITEM)
 					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   		);  //  0 -> margins are in pixels
 					Doc_SetFont 	( nDocID, -1, "font_10_book.tga"	   			); 	// -1 -> all pages 
 					Doc_PrintLine	( nDocID,  0,""); 					
-					Doc_PrintLines	( nDocID,  0,"Jeho dílo pøeèkalo vìky a jeho rady jsou povaovány za knihou nauky o umìní lovu. Po krutıch bojích na severu dokáe kadı venkovan zacházet s lukem a šípy. Jsou zde však pravidla, která je tøeba dodrovat, protoe lov je mnohem víc, ne pouhá znalost pouívání zbranì! Zvìø je plachá a nevypoèitatelná. ");
+					Doc_PrintLines	( nDocID,  0,"Jeho dÃ­lo pÅ™eÄkalo vÄ›ky a jeho rady jsou povaÅ¾ovÃ¡ny za knihou nauky o umÄ›nÃ­ lovu. Po krutÃ½ch bojÃ­ch na severu dokÃ¡Å¾e kaÅ¾dÃ½ venkovan zachÃ¡zet s lukem a Å¡Ã­py. Jsou zde vÅ¡ak pravidla, kterÃ¡ je tÅ™eba dodrÅ¾ovat, protoÅ¾e lov je mnohem vÃ­c, neÅ¾ pouhÃ¡ znalost pouÅ¾Ã­vÃ¡nÃ­ zbranÄ›! ZvÄ›Å™ je plachÃ¡ a nevypoÄitatelnÃ¡. ");
 					
 					//2.Seite
 
-					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den Ränder des TGAs aus, links,oben,rechts,unten)
+					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den RÃ¤nder des TGAs aus, links,oben,rechts,unten)
 					Doc_PrintLine	( nDocID,  1,"");					
-					Doc_PrintLines	( nDocID,  1,"Umìní lovu lukem není jen stará tradice, ale nejrozšíøenìjší zpùsob lovu. Vıvoj techniky této tradièní metody se v prùbìhu tisíciletí vıraznì zmìnil, není však pravdìpodobné, e by se v budoucnosti ještì vyvíjel. Jaké okolnosti tedy doopravdy rozhodují o lovu lukem a šípy? Rozpoznat tato pravidla je skuteènım umìním lukostøelby.");
+					Doc_PrintLines	( nDocID,  1,"UmÄ›nÃ­ lovu lukem nenÃ­ jen starÃ¡ tradice, ale nejrozÅ¡Ã­Å™enÄ›jÅ¡Ã­ zpÅ¯sob lovu. VÃ½voj techniky tÃ©to tradiÄnÃ­ metody se v prÅ¯bÄ›hu tisÃ­ciletÃ­ vÃ½raznÄ› zmÄ›nil, nenÃ­ vÅ¡ak pravdÄ›podobnÃ©, Å¾e by se v budoucnosti jeÅ¡tÄ› vyvÃ­jel. JakÃ© okolnosti tedy doopravdy rozhodujÃ­ o lovu lukem a Å¡Ã­py? Rozpoznat tato pravidla je skuteÄnÃ½m umÄ›nÃ­m lukostÅ™elby.");
 					Doc_Show		( nDocID );
 	};
 /******************************************************************************************/
 INSTANCE Kampfkunst (C_ITEM)
 {	
-	name 					=	"Umìní boje";
+	name 					=	"UmÄ›nÃ­ boje";
 
 	mainflag 				=	ITEM_KAT_DOCS;
 	flags 					=	0;
@@ -1216,7 +1216,7 @@ INSTANCE Kampfkunst (C_ITEM)
 	material 				=	MAT_LEATHER;
 
 	scemeName				=	"MAP";
-	description			= "Umìní boje";
+	description			= "UmÄ›nÃ­ boje";
 	//TEXT[0]				= "";                                                                                                                                                                                          
 	////COUNT[0]			= ;
 	//TEXT[1]				= "";
@@ -1249,20 +1249,20 @@ INSTANCE Kampfkunst (C_ITEM)
   					Doc_PrintLine	( nDocID,  0,"");					
   					Doc_PrintLine	( nDocID,  0,"");					
   					Doc_PrintLine	( nDocID,  0,"");					
-					Doc_PrintLines	( nDocID,  0,"Po 2000 let urèovalo uèení tohoto znalce vıvoj umìní boje.");
+					Doc_PrintLines	( nDocID,  0,"Po 2000 let urÄovalo uÄenÃ­ tohoto znalce vÃ½voj umÄ›nÃ­ boje.");
   					Doc_PrintLine	( nDocID,  0,"");					
   					Doc_PrintLine	( nDocID,  0,"");					
-   					Doc_PrintLines	( nDocID,  0,"Obratnost, soustøedìní, rychlost, postøeh a reakce jsou vlastnosti, které je tøeba cvièit. Tvé pohyby musí bıt správnì koordinovány a postoj bezchybnı, pokud chceš své síly vyuít.");			
+   					Doc_PrintLines	( nDocID,  0,"Obratnost, soustÅ™edÄ›nÃ­, rychlost, postÅ™eh a reakce jsou vlastnosti, kterÃ© je tÅ™eba cviÄit. TvÃ© pohyby musÃ­ bÃ½t sprÃ¡vnÄ› koordinovÃ¡ny a postoj bezchybnÃ½, pokud chceÅ¡ svÃ© sÃ­ly vyuÅ¾Ã­t.");			
 					
 					//2.Seite
-					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den Ränder des TGAs aus, links,oben,rechts,unten)
+					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den RÃ¤nder des TGAs aus, links,oben,rechts,unten)
   					Doc_PrintLine	( nDocID,  1,"");					
   					Doc_PrintLine	( nDocID,  1,"");					
   					Doc_PrintLine	( nDocID,  1,"");					
-					Doc_PrintLines	( nDocID,  1,"Podstata mistrova uèení o duchovním a fyzickém rozvoji setrvává v platnosti po mnoho let.");
+					Doc_PrintLines	( nDocID,  1,"Podstata mistrova uÄenÃ­ o duchovnÃ­m a fyzickÃ©m rozvoji setrvÃ¡vÃ¡ v platnosti po mnoho let.");
   					Doc_PrintLine	( nDocID,  1,"");					
   					Doc_PrintLine	( nDocID,  1,"");					
- 					Doc_PrintLines	( nDocID,  1,"Jeho jedineèná úspìšnost ovlivòuje generace. Po tisíciletí se svìt ubíral kupøedu a mìnil, avšak soulad vnitøních sil s pohybem tìla zùstává v platnosti dál.");					
+ 					Doc_PrintLines	( nDocID,  1,"Jeho jedineÄnÃ¡ ÃºspÄ›Å¡nost ovlivÅˆuje generace. Po tisÃ­ciletÃ­ se svÄ›t ubÃ­ral kupÅ™edu a mÄ›nil, avÅ¡ak soulad vnitÅ™nÃ­ch sil s pohybem tÄ›la zÅ¯stÃ¡vÃ¡ v platnosti dÃ¡l.");					
 					Doc_Show		( nDocID );
 	};
 
@@ -1333,18 +1333,18 @@ INSTANCE Astronomie (C_ITEM)
  					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   		);  //  0 -> margins are in pixels 					
 					Doc_SetFont 	( nDocID, -1, "font_10_book.tga"	   			); 	// -1 -> all pages 
  					Doc_PrintLine	( nDocID,  0,"");										
-					Doc_PrintLines	( nDocID,  0,"Ve støedu se rozkládá Morgrad, jen se sestává ze ètyø ivlù - zemì, vody, ohnì a vzduchu. Je to místo pomíjivosti, srdce nepopsatelné temnoty Beliarovy. Nad tím vším se vypíná nebeská klenba.");
+					Doc_PrintLines	( nDocID,  0,"Ve stÅ™edu se rozklÃ¡dÃ¡ Morgrad, jenÅ¾ se sestÃ¡vÃ¡ ze ÄtyÅ™ Å¾ivlÅ¯ - zemÄ›, vody, ohnÄ› a vzduchu. Je to mÃ­sto pomÃ­jivosti, srdce nepopsatelnÃ© temnoty Beliarovy. Nad tÃ­m vÅ¡Ã­m se vypÃ­nÃ¡ nebeskÃ¡ klenba.");
 					Doc_PrintLine	( nDocID,  0,"");
 					//Absatz
-					Doc_PrintLines	( nDocID,  0,"V øádu tohoto vesmíru je èlovìk pøíjemcem. Jeho duše mu umoòuje stát se souèástí nejvyšší formy bytí, boího ducha. Jen lidské tìlo se skládá z hmoty Morgradu. Je zrcadlem svìta samého.");
+					Doc_PrintLines	( nDocID,  0,"V Å™Ã¡du tohoto vesmÃ­ru je ÄlovÄ›k pÅ™Ã­jemcem. Jeho duÅ¡e mu umoÅ¾Åˆuje stÃ¡t se souÄÃ¡stÃ­ nejvyÅ¡Å¡Ã­ formy bytÃ­, boÅ¾Ã­ho ducha. Jen lidskÃ© tÄ›lo se sklÃ¡dÃ¡ z hmoty Morgradu. Je zrcadlem svÄ›ta samÃ©ho.");
 
 					//2.Seite
-					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den Ränder des TGAs aus, links,oben,rechts,unten)
+					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den RÃ¤nder des TGAs aus, links,oben,rechts,unten)
 					Doc_PrintLine	( nDocID,  1,"");
-					Doc_PrintLines	( nDocID,  1,"Synodická doba obìhu planet, co je dráha mezi dvìma  identickımi polohami obìnice vzhledem k Morgradu ètyø svìtù, se kadım stoletím o nìkolik stupòù mìní. Z toho usuzujeme, e se neustále pohybujeme spolu se zbytkem vesmíru.");
+					Doc_PrintLines	( nDocID,  1,"SynodickÃ¡ doba obÄ›hu planet, coÅ¾ je drÃ¡ha mezi dvÄ›ma  identickÃ½mi polohami obÄ›Å¾nice vzhledem k Morgradu ÄtyÅ™ svÄ›tÅ¯, se kaÅ¾dÃ½m stoletÃ­m o nÄ›kolik stupÅˆÅ¯ mÄ›nÃ­. Z toho usuzujeme, Å¾e se neustÃ¡le pohybujeme spolu se zbytkem vesmÃ­ru.");
 					Doc_PrintLine	( nDocID,  1,"");
 					//Absatz
-					Doc_PrintLines	( nDocID,  1,"Kdy jsme vytvoøili první kalendáø, pozorovali jsme dráhu Mìsíce, abychom mohli urèit délku sluneèního roku.");
+					Doc_PrintLines	( nDocID,  1,"KdyÅ¾ jsme vytvoÅ™ili prvnÃ­ kalendÃ¡Å™, pozorovali jsme drÃ¡hu MÄ›sÃ­ce, abychom mohli urÄit dÃ©lku sluneÄnÃ­ho roku.");
 					Doc_Show		( nDocID );
 	};
 /******************************************************************************************/
@@ -1394,18 +1394,18 @@ INSTANCE Rezepturen (C_ITEM)
  					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   		);  //  0 -> margins are in pixels 					
 					Doc_SetFont 	( nDocID, -1, "font_10_book.tga"	   			); 	// -1 -> all pages 
  					Doc_PrintLine	( nDocID,  0,"");										
-					Doc_PrintLines	( nDocID,  0,"Balzám vidin");
+					Doc_PrintLines	( nDocID,  0,"BalzÃ¡m vidin");
 					Doc_PrintLine	( nDocID,  0,"----------------");
 					Doc_PrintLine	( nDocID,  0,"");		
-					Doc_PrintLines	( nDocID,  0,"Potøi oèi nemocného luèí. Tento vımìšek je hoøké chuti. Styk této hoøké látky s okem pøinutí nemocného, aby prohlédnul, co jej uèiní moudrım. Nauèí se dívat! Hoøkost a rozum jsou vzájemnì vıluèné opaky. Jsou si však navzájem protìjšky! ");
+					Doc_PrintLines	( nDocID,  0,"PotÅ™i oÄi nemocnÃ©ho Å¾luÄÃ­. Tento vÃ½mÄ›Å¡ek je hoÅ™kÃ© chuti. Styk tÃ©to hoÅ™kÃ© lÃ¡tky s okem pÅ™inutÃ­ nemocnÃ©ho, aby prohlÃ©dnul, coÅ¾ jej uÄinÃ­ moudrÃ½m. NauÄÃ­ se dÃ­vat! HoÅ™kost a rozum jsou vzÃ¡jemnÄ› vÃ½luÄnÃ© opaky. Jsou si vÅ¡ak navzÃ¡jem protÄ›jÅ¡ky! ");
 
 					//2.Seite
-					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den Ränder des TGAs aus, links,oben,rechts,unten)
+					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den RÃ¤nder des TGAs aus, links,oben,rechts,unten)
 					Doc_PrintLine	( nDocID,  1,"");
 					Doc_PrintLines	( nDocID,  1,"");
 					Doc_PrintLine	( nDocID,  1,"");
 					//Absatz
-					Doc_PrintLines	( nDocID,  1,"Zármutek, utrpení a zklamání jsou hoøké, ale rozum je utìšujícím prostøedkem na kadı druh bolesti. Hoøkost a rozum jsou alternativy. Kde je hoøkost, není místo pro rozum a kde je rozum, tam není hoøkost.");
+					Doc_PrintLines	( nDocID,  1,"ZÃ¡rmutek, utrpenÃ­ a zklamÃ¡nÃ­ jsou hoÅ™kÃ©, ale rozum je utÄ›Å¡ujÃ­cÃ­m prostÅ™edkem na kaÅ¾dÃ½ druh bolesti. HoÅ™kost a rozum jsou alternativy. Kde je hoÅ™kost, nenÃ­ mÃ­sto pro rozum a kde je rozum, tam nenÃ­ hoÅ™kost.");
 					Doc_Show		( nDocID );
 	};
 /******************************************************************************************/
@@ -1453,19 +1453,19 @@ INSTANCE Rezepturen2 (C_ITEM)
  					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   		);  //  0 -> margins are in pixels 					
 					Doc_SetFont 	( nDocID, -1, "font_10_book.tga"	   			); 	// -1 -> all pages 
  					Doc_PrintLine	( nDocID,  0,"");										
-					Doc_PrintLines	( nDocID,  0,"Víno zapomnìní");
+					Doc_PrintLines	( nDocID,  0,"VÃ­no zapomnÄ›nÃ­");
 					Doc_PrintLine	( nDocID,  0,"--------------------");
 						Doc_PrintLine	( nDocID,  0,"");			
-					Doc_PrintLines	( nDocID,  0,"Nejlepší vinná réva se nachází vysoko ve svazích Archolosu. Umìní nechat toto víno dozrát do dokonalosti spoèívá v tom, e se nesmí vystavovat ádnému pohybu. Hrozny se pøed vinnımi sklípky mísí s plevelnou bylinou syos.");
+					Doc_PrintLines	( nDocID,  0,"NejlepÅ¡Ã­ vinnÃ¡ rÃ©va se nachÃ¡zÃ­ vysoko ve svazÃ­ch Archolosu. UmÄ›nÃ­ nechat toto vÃ­no dozrÃ¡t do dokonalosti spoÄÃ­vÃ¡ v tom, Å¾e se nesmÃ­ vystavovat Å¾Ã¡dnÃ©mu pohybu. Hrozny se pÅ™ed vinnÃ½mi sklÃ­pky mÃ­sÃ­ s plevelnou bylinou syos.");
 
 					//2.Seite
-					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den Ränder des TGAs aus, links,oben,rechts,unten)
+					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den RÃ¤nder des TGAs aus, links,oben,rechts,unten)
 					Doc_PrintLine	( nDocID,  1,"");
 					Doc_PrintLines	( nDocID,  1,"");
 					Doc_PrintLine	( nDocID,  1,"");
 					Doc_PrintLine	( nDocID,  1,"");
 					//Absatz
-					Doc_PrintLines	( nDocID,  1,"Pozoruj a obdivuj se tomu, jak mistr mìní èirou vodu ze studánky ve víno. Lidé mu za nì platí a radují se z jeho daru. Své líné uènì mistr trestá tím, e je zavírá do sudù. Oheò je zapálen a èerní hadi vylézají.");
+					Doc_PrintLines	( nDocID,  1,"Pozoruj a obdivuj se tomu, jak mistr mÄ›nÃ­ Äirou vodu ze studÃ¡nky ve vÃ­no. LidÃ© mu za nÄ› platÃ­ a radujÃ­ se z jeho daru. SvÃ© lÃ­nÃ© uÄnÄ› mistr trestÃ¡ tÃ­m, Å¾e je zavÃ­rÃ¡ do sudÅ¯. OheÅˆ je zapÃ¡len a ÄernÃ­ hadi vylÃ©zajÃ­.");
 					Doc_Show		( nDocID );
 	};
 /******************************************************************************************/
@@ -1473,7 +1473,7 @@ INSTANCE Rezepturen2 (C_ITEM)
 
 INSTANCE TagebuchOT (C_Item)
 {	
-	name 					=	"Deníèek";
+	name 					=	"DenÃ­Äek";
 
 	mainflag 					=	ITEM_KAT_DOCS;
 	flags 					=	0;
@@ -1484,10 +1484,10 @@ INSTANCE TagebuchOT (C_Item)
 	material 					=	MAT_LEATHER;
 
 	scemeName				=	"MAP";
-	description			= "Deníèek";
-	TEXT[0]				= "Stará potrhaná kniha.";
+	description			= "DenÃ­Äek";
+	TEXT[0]				= "StarÃ¡ potrhanÃ¡ kniha.";
 	////COUNT[0]			= ;
-	TEXT[1]				= "Tady chybìjí stránky.";
+	TEXT[1]				= "Tady chybÄ›jÃ­ strÃ¡nky.";
 	////COUNT[1]			= ;
 	//TEXT[2]				= "";
 	//COUNT[2]			= ;
@@ -1516,39 +1516,39 @@ INSTANCE TagebuchOT (C_Item)
 					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1);  //  0 -> margins are in pixels
 					Doc_PrintLine		( nDocID,  0,"Den 23");
 					Doc_SetFont 		( nDocID, -1, "font_10_book.tga");
-					Doc_PrintLines	( nDocID,  0,"Ztratil jsem pojem o èase.");
-					Doc_PrintLines	( nDocID,  0,"Myslím, e je asi 23. den potom, co nás skøeti chytili a pøinutili pracovat.");
-					Doc_PrintLines	( nDocID,  0,"Práce je tìká a ti bastardi neznají slitování. Pokud jsi slabı, zahyneš!");
+					Doc_PrintLines	( nDocID,  0,"Ztratil jsem pojem o Äase.");
+					Doc_PrintLines	( nDocID,  0,"MyslÃ­m, Å¾e je asi 23. den potom, co nÃ¡s skÅ™eti chytili a pÅ™inutili pracovat.");
+					Doc_PrintLines	( nDocID,  0,"PrÃ¡ce je tÄ›Å¾kÃ¡ a ti bastardi neznajÃ­ slitovÃ¡nÃ­. Pokud jsi slabÃ½, zahyneÅ¡!");
 					Doc_PrintLines	( nDocID,  0,"Chci se odsud dostat, je mi jedno jak!!!");
 					Doc_PrintLine		( nDocID,  0,"");
 					Doc_SetFont 		( nDocID, -1, "font_15_book.tga"); 	// -1 -> all pages 
 					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1);  //  0 -> margins are in pixels
 					Doc_PrintLine		( nDocID,  0,"Den 28");
 					Doc_SetFont 		( nDocID, -1, "font_10_book.tga");
-					Doc_PrintLines	( nDocID,  0,"Musíme prokopat štoly ještì hloubìji do hory.");
-					Doc_PrintLines	( nDocID,  0,"Pøední èást je ji zpevnìná. Kdybych tak vìdìl, proè to dìláme.");
+					Doc_PrintLines	( nDocID,  0,"MusÃ­me prokopat Å¡toly jeÅ¡tÄ› hloubÄ›ji do hory.");
+					Doc_PrintLines	( nDocID,  0,"PÅ™ednÃ­ ÄÃ¡st je jiÅ¾ zpevnÄ›nÃ¡. Kdybych tak vÄ›dÄ›l, proÄ to dÄ›lÃ¡me.");
 
 					//1.Seite	
   					Doc_SetFont 		( nDocID, -1, "font_15_book.tga"); 	// -1 -> all pages 
 					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1); //  0 -> margins are in pixels
 					Doc_PrintLine		( nDocID,  1,"Den 67");
 					Doc_SetFont 		( nDocID, -1, "font_10_book.tga");
-					Doc_PrintLines	( nDocID,  1,"Zaslechl jsem, e ti skøetí knìí nemají srdce. Jestli je tomu tak, jak to e ještì ijí?");
-					Doc_PrintLines	( nDocID,  1,"Dnes jsme zahlédl meè, kterého se knìí tak bojí. Získat jej tak, proklál bych jím jejich tìla.");
+					Doc_PrintLines	( nDocID,  1,"Zaslechl jsem, Å¾e ti skÅ™etÃ­ knÄ›Å¾Ã­ nemajÃ­ srdce. Jestli je tomu tak, jak to Å¾e jeÅ¡tÄ› Å¾ijÃ­?");
+					Doc_PrintLines	( nDocID,  1,"Dnes jsme zahlÃ©dl meÄ, kterÃ©ho se knÄ›Å¾Ã­ tak bojÃ­. ZÃ­skat jej tak, proklÃ¡l bych jÃ­m jejich tÄ›la.");
 					Doc_PrintLine		( nDocID,  1,"");
 					Doc_SetFont 		( nDocID, -1, "font_15_book.tga"); 	// -1 -> all pages 
 					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1);   //  0 -> margins are in pixels
 					Doc_PrintLine		( nDocID,  1,"Den 78");
 					Doc_SetFont 		( nDocID, -1, "font_10_book.tga");
-					Doc_PrintLines	( nDocID,  1,"Meè leí v místnosti v pøední èásti chrámu, ale støeí jej jeden knìz.");
-					Doc_PrintLines	( nDocID,  1,"Chystám se uprchnout. Svùj deník nechám tady, snad bude jednou nìkomu uiteènı.");
+					Doc_PrintLines	( nDocID,  1,"MeÄ leÅ¾Ã­ v mÃ­stnosti v pÅ™ednÃ­ ÄÃ¡sti chrÃ¡mu, ale stÅ™eÅ¾Ã­ jej jeden knÄ›z.");
+					Doc_PrintLines	( nDocID,  1,"ChystÃ¡m se uprchnout. SvÅ¯j denÃ­k nechÃ¡m tady, snad bude jednou nÄ›komu uÅ¾iteÄnÃ½.");
 					Doc_Show		( nDocID );
 };
 
 
 INSTANCE ItWr_Bloodfly_01(C_Item)
 {	
-	name 					=	"Krvavé mouchy";
+	name 					=	"KrvavÃ© mouchy";
 	
 	mainflag 				=	ITEM_KAT_DOCS;
 	flags 					=	0;
@@ -1559,7 +1559,7 @@ INSTANCE ItWr_Bloodfly_01(C_Item)
 	material 				=	MAT_LEATHER;
 
 	scemeName				=	"MAP";	
-	description			= "Krvavé mouchy";
+	description			= "KrvavÃ© mouchy";
 	
 	TEXT[5]				= NAME_Value;
 	COUNT[5]			= value;
@@ -1580,23 +1580,23 @@ INSTANCE ItWr_Bloodfly_01(C_Item)
   					
   					Doc_SetFont 	( nDocID, -1, "font_15_book.tga"	   			); 	// -1 -> all pages 
  					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   		);  //  0 -> margins are in pixels
- 					Doc_PrintLine	( nDocID,  0,"Krvavé mouchy");
+ 					Doc_PrintLine	( nDocID,  0,"KrvavÃ© mouchy");
   					Doc_PrintLine	( nDocID,  0,"");
 					Doc_PrintLine	( nDocID,  0," ");
 					Doc_SetFont 	( nDocID, -1, "font_10_book.TGA"	   			); 	// -1 -> all pages 
-					Doc_PrintLine	( nDocID,  0,"O mouchách");
+					Doc_PrintLine	( nDocID,  0,"O mouchÃ¡ch");
 					Doc_PrintLine	( nDocID,  0,"");
-					Doc_PrintLines	( nDocID,  0,"Krvavé mouchy se shromaïují jen na místech, kde je pùda bainatá, vzduch vlhkı ,a kde jsou vábeny potem veškerıch bytostí. Svá ihadla pouívají k usmrcení svıch obìtí, na jejich krvi pak hodují.");
+					Doc_PrintLines	( nDocID,  0,"KrvavÃ© mouchy se shromaÅ¾ÄujÃ­ jen na mÃ­stech, kde je pÅ¯da baÅ¾inatÃ¡, vzduch vlhkÃ½ ,a kde jsou vÃ¡beny potem veÅ¡kerÃ½ch bytostÃ­. SvÃ¡ Å¾ihadla pouÅ¾Ã­vajÃ­ k usmrcenÃ­ svÃ½ch obÄ›tÃ­, na jejichÅ¾ krvi pak hodujÃ­.");
 					Doc_PrintLine	( nDocID,  0,"");
 					
 
 					//2.Seite
-					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den Ränder des TGAs aus, links,oben,rechts,unten)
+					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den RÃ¤nder des TGAs aus, links,oben,rechts,unten)
 					Doc_PrintLine	( nDocID,  1,"");
 					Doc_PrintLine	( nDocID,  1,"");
 					Doc_PrintLine	( nDocID,  1,"");
 					Doc_PrintLine	( nDocID,  1,"");
-					Doc_PrintLines	( nDocID,  1,"Získat takové ihadlo je umìním mnoha lovcù z bain. Provedou do bøicha bytosti hlubokı øez, potom vedou klikatı øez kolem ihadla, které opatrnì vyjmou spoleènì s tkání, která je obklopuje. Nechají skapat krev a oøíznou nepoivatelné maso.");	
+					Doc_PrintLines	( nDocID,  1,"ZÃ­skat takovÃ© Å¾ihadlo je umÄ›nÃ­m mnoha lovcÅ¯ z baÅ¾in. Provedou do bÅ™icha bytosti hlubokÃ½ Å™ez, potom vedou klikatÃ½ Å™ez kolem Å¾ihadla, kterÃ© opatrnÄ› vyjmou spoleÄnÄ› s tkÃ¡nÃ­, kterÃ¡ je obklopuje. NechajÃ­ skapat krev a oÅ™Ã­znou nepoÅ¾ivatelnÃ© maso.");	
 					Doc_PrintLine	( nDocID,  1,"");
 					Doc_PrintLine	( nDocID,  1,"");
 					Doc_Show		( nDocID );
@@ -1605,7 +1605,7 @@ INSTANCE ItWr_Bloodfly_01(C_Item)
 					{
 					Knows_GetBFSting = TRUE;
 					Log_CreateTopic (GE_AnimalTrophies,LOG_NOTE);
-					B_LogEntry (GE_AnimalTrophies,"Jak vyjmout ihadlo - krvavé mouchy");	
-					PrintScreen	("Nauèit se: Vyjmout ihadlo", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
+					B_LogEntry (GE_AnimalTrophies,"Jak vyjmout Å¾ihadlo - krvavÃ© mouchy");	
+					PrintScreen	("NauÄit se: Vyjmout Å¾ihadlo", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
 					};
 	};

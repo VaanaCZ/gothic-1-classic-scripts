@@ -30,7 +30,7 @@ instance  Grd_263_Asghan_NEST (C_INFO)
 	information		= Grd_263_Asghan_NEST_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Tady nìkde musí bıt hnízdo dùlních èervù."; 
+	description		= "Tady nÄ›kde musÃ­ bÃ½t hnÃ­zdo dÅ¯lnÃ­ch ÄervÅ¯."; 
 };
 
 FUNC int  Grd_263_Asghan_NEST_Condition()
@@ -43,14 +43,14 @@ FUNC int  Grd_263_Asghan_NEST_Condition()
 };
 FUNC void  Grd_263_Asghan_NEST_Info()
 {
-	AI_Output			(other, self,"Grd_263_Asghan_NEST_Info_15_01"); //Tady nìkde musí bıt hnízdo dùlních èervù.
-	AI_Output			(self, other,"Grd_263_Asghan_NEST_Info_06_02"); //Celá tahle zpropadená hora je hnízdo èervù!
-	AI_Output			(other, self,"Grd_263_Asghan_NEST_Info_15_03"); //Proè je ta šachta zavøená?
-	AI_Output			(self, other,"Grd_263_Asghan_NEST_Info_06_04"); //Nemám pøedstavu, kolik èervù jsme zabili, ale poøád se objevují další a další.
-	AI_Output			(other, self,"Grd_263_Asghan_NEST_Info_15_05"); //Vypadá to, e tady nìkde musí bıt hnízdo. Nech mì otevøít ty vrata!
-	AI_Output			(self, other,"Grd_263_Asghan_NEST_Info_06_06"); //Ne! Tyhle vrata se smí otevírat jen s Ianovım svolením! Bez nìj se nic nesmí udìlat!
+	AI_Output			(other, self,"Grd_263_Asghan_NEST_Info_15_01"); //Tady nÄ›kde musÃ­ bÃ½t hnÃ­zdo dÅ¯lnÃ­ch ÄervÅ¯.
+	AI_Output			(self, other,"Grd_263_Asghan_NEST_Info_06_02"); //CelÃ¡ tahle zpropadenÃ¡ hora je hnÃ­zdo ÄervÅ¯!
+	AI_Output			(other, self,"Grd_263_Asghan_NEST_Info_15_03"); //ProÄ je ta Å¡achta zavÅ™enÃ¡?
+	AI_Output			(self, other,"Grd_263_Asghan_NEST_Info_06_04"); //NemÃ¡m pÅ™edstavu, kolik ÄervÅ¯ jsme zabili, ale poÅ™Ã¡d se objevujÃ­ dalÅ¡Ã­ a dalÅ¡Ã­.
+	AI_Output			(other, self,"Grd_263_Asghan_NEST_Info_15_05"); //VypadÃ¡ to, Å¾e tady nÄ›kde musÃ­ bÃ½t hnÃ­zdo. Nech mÄ› otevÅ™Ã­t ty vrata!
+	AI_Output			(self, other,"Grd_263_Asghan_NEST_Info_06_06"); //Ne! Tyhle vrata se smÃ­ otevÃ­rat jen s IanovÃ½m svolenÃ­m! Bez nÄ›j se nic nesmÃ­ udÄ›lat!
 	
-	B_LogEntry		(CH2_MCEggs,"Asghan, velitel dùlní stráe, nechce otevøít bránu. Chce vidìt Ianovo povolení.");
+	B_LogEntry		(CH2_MCEggs,"Asghan, velitel dÅ¯lnÃ­ strÃ¡Å¾e, nechce otevÅ™Ã­t brÃ¡nu. Chce vidÄ›t Ianovo povolenÃ­.");
 
 };
 /*------------------------------------------------------------------------
@@ -64,7 +64,7 @@ instance  Grd_263_Asghan_OPEN (C_INFO)
 	information		= Grd_263_Asghan_OPEN_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Hej, Asghane, máš otevøít ty vrata!"; 
+	description		= "Hej, Asghane, mÃ¡Å¡ otevÅ™Ã­t ty vrata!"; 
 };
 
 FUNC int  Grd_263_Asghan_OPEN_Condition()
@@ -78,14 +78,14 @@ FUNC int  Grd_263_Asghan_OPEN_Condition()
 
 FUNC void  Grd_263_Asghan_OPEN_Info()
 {
-	AI_Output (other, self,"Grd_263_Asghan_OPEN_Info_15_01"); //Hej, Asghane, máš otevøít ty vrata!
-	AI_Output (self, other,"Grd_263_Asghan_OPEN_Info_06_02"); //U jsem ti jednou øekl, jen s Ianovım...
-	AI_Output (other, self,"Grd_263_Asghan_OPEN_Info_15_03"); //Asghane... Všechno jde dobøe... a Ian tì pozdravuje.
-	AI_Output (self, other,"Grd_263_Asghan_OPEN_Info_06_04"); //Jestli je Ian za to zodpovìdnı.. ale pod jednou podmínkou!
-	AI_Output (other, self,"Grd_263_Asghan_OPEN_Info_15_05"); //Jakou podmínkou?
-	AI_Output (self, other,"Grd_263_Asghan_OPEN_Info_06_06"); //Dáš mi dva nebo tøi templáøe na pomoc, protoe tady nechci bıt sám, a ze šachty vylezou èervi!
+	AI_Output (other, self,"Grd_263_Asghan_OPEN_Info_15_01"); //Hej, Asghane, mÃ¡Å¡ otevÅ™Ã­t ty vrata!
+	AI_Output (self, other,"Grd_263_Asghan_OPEN_Info_06_02"); //UÅ¾ jsem ti jednou Å™ekl, jen s IanovÃ½m...
+	AI_Output (other, self,"Grd_263_Asghan_OPEN_Info_15_03"); //Asghane... VÅ¡echno jde dobÅ™e... a Ian tÄ› pozdravuje.
+	AI_Output (self, other,"Grd_263_Asghan_OPEN_Info_06_04"); //Jestli je Ian za to zodpovÄ›dnÃ½.. ale pod jednou podmÃ­nkou!
+	AI_Output (other, self,"Grd_263_Asghan_OPEN_Info_15_05"); //Jakou podmÃ­nkou?
+	AI_Output (self, other,"Grd_263_Asghan_OPEN_Info_06_06"); //DÃ¡Å¡ mi dva nebo tÅ™i templÃ¡Å™e na pomoc, protoÅ¾e tady nechci bÃ½t sÃ¡m, aÅ¾ ze Å¡achty vylezou Äervi!
 	
-	B_LogEntry		(CH2_MCEggs,"Tøebae mi Ian dal povolení, Asghan nechce otevøít bránu, dokud nepøivedu nìjaké templáøe jako posilu pøed vchod.");
+	B_LogEntry		(CH2_MCEggs,"TÅ™ebaÅ¾e mi Ian dal povolenÃ­, Asghan nechce otevÅ™Ã­t brÃ¡nu, dokud nepÅ™ivedu nÄ›jakÃ© templÃ¡Å™e jako posilu pÅ™ed vchod.");
 
 	AI_StopProcessInfos	( self );
 };  
@@ -99,7 +99,7 @@ instance  Grd_263_Asghan_OPEN_NOW (C_INFO)
 	information		= Grd_263_Asghan_OPEN_NOW_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Všechny pøípravy jsou hotovy. Vrata se teï mùou otevøít!"; 
+	description		= "VÅ¡echny pÅ™Ã­pravy jsou hotovy. Vrata se teÄ mÅ¯Å¾ou otevÅ™Ã­t!"; 
 };
 
 FUNC int  Grd_263_Asghan_OPEN_NOW_Condition()
@@ -114,14 +114,14 @@ FUNC int  Grd_263_Asghan_OPEN_NOW_Condition()
 };
 FUNC void  Grd_263_Asghan_OPEN_NOW_Info()
 {
-	AI_Output			(other, self,"Grd_263_Asghan_OPEN_NOW_Info_15_01"); //Všechny pøípravy jsou hotovy. Vrata se teï mùou otevøít!
-	AI_Output			(self, other,"Grd_263_Asghan_OPEN_NOW_Info_06_02"); //Tak dobrá, otevøeme je. A to teda zaène.
+	AI_Output			(other, self,"Grd_263_Asghan_OPEN_NOW_Info_15_01"); //VÅ¡echny pÅ™Ã­pravy jsou hotovy. Vrata se teÄ mÅ¯Å¾ou otevÅ™Ã­t!
+	AI_Output			(self, other,"Grd_263_Asghan_OPEN_NOW_Info_06_02"); //Tak dobrÃ¡, otevÅ™eme je. AÅ¥ to teda zaÄne.
 	
 	Npc_SetPermAttitude (self,ATT_FRIENDLY);
 	Npc_ExchangeRoutine	(self,"opengate");
 	
 	B_GiveXP			(XP_OpenAsghansGate);
-	B_LogEntry			(CH2_MCEggs,"Podaøilo se mi pøed Asghanovu bránu pøivést dostateènı poèet templáøù. Co nás èeká v temnotách za branou?");
+	B_LogEntry			(CH2_MCEggs,"PodaÅ™ilo se mi pÅ™ed Asghanovu brÃ¡nu pÅ™ivÃ©st dostateÄnÃ½ poÄet templÃ¡Å™Å¯. Co nÃ¡s ÄekÃ¡ v temnotÃ¡ch za branou?");
 		
 	AI_StopProcessInfos	(self);
 };    
@@ -134,7 +134,7 @@ instance  Grd_263_Asghan_LAIRFOUND (C_INFO)
 	information		= Grd_263_Asghan_LAIRFOUND_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Dùlní èervi nebudou u nikdy hrozbou!"; 
+	description		= "DÅ¯lnÃ­ Äervi nebudou uÅ¾ nikdy hrozbou!"; 
 };
 
 FUNC int  Grd_263_Asghan_LAIRFOUND_Condition()
@@ -148,14 +148,14 @@ FUNC int  Grd_263_Asghan_LAIRFOUND_Condition()
 };
 FUNC void  Grd_263_Asghan_LAIRFOUND_Info()
 {
-	AI_Output			(other, self,"Grd_263_Asghan_LAIRFOUND_Info_15_01"); //Dùlní èervi nebudou u nikdy hrozbou!
-	AI_Output			(self, other,"Grd_263_Asghan_LAIRFOUND_Info_06_02"); //Dobré zprávy. Pošlu k Thorusovi posla!
+	AI_Output			(other, self,"Grd_263_Asghan_LAIRFOUND_Info_15_01"); //DÅ¯lnÃ­ Äervi nebudou uÅ¾ nikdy hrozbou!
+	AI_Output			(self, other,"Grd_263_Asghan_LAIRFOUND_Info_06_02"); //DobrÃ© zprÃ¡vy. PoÅ¡lu k Thorusovi posla!
 
 	AI_StopProcessInfos	(self);
 };    
 
 /*------------------------------------------------------------------------
-						MCQ Hatz läuft noch nicht 						
+						MCQ Hatz lÃ¤uft noch nicht 						
 ------------------------------------------------------------------------*/
 
 instance  Grd_263_Asghan_SMALLTALK (C_INFO)
@@ -178,10 +178,10 @@ FUNC int  Grd_263_Asghan_SMALLTALK_Condition()
 
 FUNC void  Grd_263_Asghan_SMALLTALK_Info()
 {
-	AI_Output (other, self,"Grd_263_Asghan_SMALLTALK_Info_15_01"); //Hej, jak se máš?
-	AI_Output (self, other,"Grd_263_Asghan_SMALLTALK_Info_06_02"); //Dobrı... dokud nikdo nedostane nápad otevøít ty vrata, nebudu mít potøebu nìkomu nìco udìlat.
-	AI_Output (other, self,"Grd_263_Asghan_SMALLTALK_Info_15_03"); //Co je na tìch vratech tak zvláštního?
-	AI_Output (self, other,"Grd_263_Asghan_SMALLTALK_Info_06_04"); //Dùlní èervi. Velcí zlí èervi. Hromady, hromady a hromady èervù.
+	AI_Output (other, self,"Grd_263_Asghan_SMALLTALK_Info_15_01"); //Hej, jak se mÃ¡Å¡?
+	AI_Output (self, other,"Grd_263_Asghan_SMALLTALK_Info_06_02"); //DobrÃ½... dokud nikdo nedostane nÃ¡pad otevÅ™Ã­t ty vrata, nebudu mÃ­t potÅ™ebu nÄ›komu nÄ›co udÄ›lat.
+	AI_Output (other, self,"Grd_263_Asghan_SMALLTALK_Info_15_03"); //Co je na tÄ›ch vratech tak zvlÃ¡Å¡tnÃ­ho?
+	AI_Output (self, other,"Grd_263_Asghan_SMALLTALK_Info_06_04"); //DÅ¯lnÃ­ Äervi. VelcÃ­ zlÃ­ Äervi. Hromady, hromady a hromady ÄervÅ¯.
 };  
 
 

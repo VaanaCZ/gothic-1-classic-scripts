@@ -33,7 +33,7 @@ instance  DIA_Joru_Greet (C_INFO)
 	condition	= DIA_Joru_Greet_Condition;
 	information	= DIA_Joru_Greet_Info;
 	permanent	= 0;
-	description = "Co tady dìláš?";
+	description = "Co tady dÄ›lÃ¡Å¡?";
 };                       
 
 FUNC int  DIA_Joru_Greet_Condition()
@@ -43,12 +43,12 @@ FUNC int  DIA_Joru_Greet_Condition()
 
 FUNC VOID  DIA_Joru_Greet_Info()
 {
-	AI_Output (other, self,"DIA_Joru_Greet_15_00"); //Co tady dìláš?
-	AI_Output (self, other,"DIA_Joru_Greet_07_01"); //Uèím novice Spáèovu poselství.
-	AI_Output (self, other,"DIA_Joru_Greet_07_02"); //Jsem ještì novic, ale brzy budu Baal - jeden z Guru.
-	AI_Output (self, other,"DIA_Joru_Greet_07_03"); //U jsem mluvil s Y´Berionem. Je tím vyvolenım. Øíkal mi, e jestli budu tvrdì pracovat, mùu se zanedlouho sám stát mistrem.
-	AI_Output (self, other,"DIA_Joru_Greet_07_04"); //Poøád to ale odkládám. ádnı spìch - rozumíš? Mùu se stát mistrem kdykoliv.
-	AI_Output (self, other,"DIA_Joru_Greet_07_05"); //V tuhle chvíli jsem docela spokojenı se svım souèasnım posláním.
+	AI_Output (other, self,"DIA_Joru_Greet_15_00"); //Co tady dÄ›lÃ¡Å¡?
+	AI_Output (self, other,"DIA_Joru_Greet_07_01"); //UÄÃ­m novice SpÃ¡Äovu poselstvÃ­.
+	AI_Output (self, other,"DIA_Joru_Greet_07_02"); //Jsem jeÅ¡tÄ› novic, ale brzy budu Baal - jeden z Guru.
+	AI_Output (self, other,"DIA_Joru_Greet_07_03"); //UÅ¾ jsem mluvil s YÂ´Berionem. Je tÃ­m vyvolenÃ½m. Å˜Ã­kal mi, Å¾e jestli budu tvrdÄ› pracovat, mÅ¯Å¾u se zanedlouho sÃ¡m stÃ¡t mistrem.
+	AI_Output (self, other,"DIA_Joru_Greet_07_04"); //PoÅ™Ã¡d to ale odklÃ¡dÃ¡m. Å½Ã¡dnÃ½ spÄ›ch - rozumÃ­Å¡? MÅ¯Å¾u se stÃ¡t mistrem kdykoliv.
+	AI_Output (self, other,"DIA_Joru_Greet_07_05"); //V tuhle chvÃ­li jsem docela spokojenÃ½ se svÃ½m souÄasnÃ½m poslÃ¡nÃ­m.
 };
 
 // **************************************************
@@ -62,7 +62,7 @@ instance  DIA_Joru_Tester (C_INFO)
 	condition	= DIA_Joru_Tester_Condition;
 	information	= DIA_Joru_Tester_Info;
 	permanent	= 0;
-	description = "Jaké je teï tvoje poslání?";
+	description = "JakÃ© je teÄ tvoje poslÃ¡nÃ­?";
 };                       
 
 FUNC int  DIA_Joru_Tester_Condition()
@@ -75,10 +75,10 @@ FUNC int  DIA_Joru_Tester_Condition()
 
 FUNC VOID  DIA_Joru_Tester_Info()
 {
-	AI_Output (other, self,"DIA_Joru_Tester_15_00"); //Jaké je teï tvoje poslání?
-	AI_Output (self, other,"DIA_Joru_Tester_07_01"); //Zkouším tu se svımi kamarády nové substance, které ve své dílnì vyrobil Cor Kalom.
-	AI_Output (self, other,"DIA_Joru_Tester_07_02"); //Jeho úsilí nám kadıch pár dní pøináší nìco nového. A my to testujeme.
-	AI_Output (self, other,"DIA_Joru_Tester_07_03"); //Tahle droga otevírá duši. Kdy vezmeš správné mnoství, mùeš vejít do spojení se Spáèem.
+	AI_Output (other, self,"DIA_Joru_Tester_15_00"); //JakÃ© je teÄ tvoje poslÃ¡nÃ­?
+	AI_Output (self, other,"DIA_Joru_Tester_07_01"); //ZkouÅ¡Ã­m tu se svÃ½mi kamarÃ¡dy novÃ© substance, kterÃ© ve svÃ© dÃ­lnÄ› vyrobil Cor Kalom.
+	AI_Output (self, other,"DIA_Joru_Tester_07_02"); //Jeho ÃºsilÃ­ nÃ¡m kaÅ¾dÃ½ch pÃ¡r dnÃ­ pÅ™inÃ¡Å¡Ã­ nÄ›co novÃ©ho. A my to testujeme.
+	AI_Output (self, other,"DIA_Joru_Tester_07_03"); //Tahle droga otevÃ­rÃ¡ duÅ¡i. KdyÅ¾ vezmeÅ¡ sprÃ¡vnÃ© mnoÅ¾stvÃ­, mÅ¯Å¾eÅ¡ vejÃ­t do spojenÃ­ se SpÃ¡Äem.
 };
 
 // **************************************************
@@ -92,7 +92,7 @@ instance  DIA_Joru_SleeperContact (C_INFO)
 	condition	= DIA_Joru_SleeperContact_Condition;
 	information	= DIA_Joru_SleeperContact_Info;
 	permanent	= 0;
-	description = "U jsi byl nìkdy ve spojení se Spáèem?";
+	description = "UÅ¾ jsi byl nÄ›kdy ve spojenÃ­ se SpÃ¡Äem?";
 };                       
 
 FUNC int  DIA_Joru_SleeperContact_Condition()
@@ -105,11 +105,11 @@ FUNC int  DIA_Joru_SleeperContact_Condition()
 
 FUNC VOID  DIA_Joru_SleeperContact_Info()
 {
-	AI_Output (other, self,"DIA_Joru_SleeperContact_15_00"); //U jsi byl nìkdy ve spojení se Spáèem?
-	AI_Output (self, other,"DIA_Joru_SleeperContact_07_01"); //Ne. Ještì ne. Ale jen protoe jsem nikdy nemìl dost té látky.
-	AI_Output (self, other,"DIA_Joru_SleeperContact_07_02"); //Kalom chce vdycky vìdìt o vyvolanıch úèincích, ale mám dojem, e ho mùj názor vlastnì doopravdy nezajímá.
-	AI_Output (self, other,"DIA_Joru_SleeperContact_07_03"); //Jestlie zjistím, e ta látka stimuluje, pøedá ji pøímo Guru...
-	AI_Output (self, other,"DIA_Joru_SleeperContact_07_04"); //Brzy ale budu sám Guru, a pak budu moci zajít a na hranici svıch moností a naslouchat Spáèovu hlasu sám.
+	AI_Output (other, self,"DIA_Joru_SleeperContact_15_00"); //UÅ¾ jsi byl nÄ›kdy ve spojenÃ­ se SpÃ¡Äem?
+	AI_Output (self, other,"DIA_Joru_SleeperContact_07_01"); //Ne. JeÅ¡tÄ› ne. Ale jen protoÅ¾e jsem nikdy nemÄ›l dost tÃ© lÃ¡tky.
+	AI_Output (self, other,"DIA_Joru_SleeperContact_07_02"); //Kalom chce vÅ¾dycky vÄ›dÄ›t o vyvolanÃ½ch ÃºÄincÃ­ch, ale mÃ¡m dojem, Å¾e ho mÅ¯j nÃ¡zor vlastnÄ› doopravdy nezajÃ­mÃ¡.
+	AI_Output (self, other,"DIA_Joru_SleeperContact_07_03"); //JestliÅ¾e zjistÃ­m, Å¾e ta lÃ¡tka stimuluje, pÅ™edÃ¡ ji pÅ™Ã­mo Guru...
+	AI_Output (self, other,"DIA_Joru_SleeperContact_07_04"); //Brzy ale budu sÃ¡m Guru, a pak budu moci zajÃ­t aÅ¾ na hranici svÃ½ch moÅ¾nostÃ­ a naslouchat SpÃ¡Äovu hlasu sÃ¡m.
 };
 
 
@@ -126,7 +126,7 @@ instance  DIA_Joru_JoinPsi (C_INFO)
 	condition	= DIA_Joru_JoinPsi_Condition;
 	information	= DIA_Joru_JoinPsi_Info;
 	permanent	= 0;
-	description = "Rád bych se pøidal k vašemu táboru - pomùeš mi?";
+	description = "RÃ¡d bych se pÅ™idal k vaÅ¡emu tÃ¡boru - pomÅ¯Å¾eÅ¡ mi?";
 };                       
 
 FUNC int  DIA_Joru_JoinPsi_Condition()
@@ -140,10 +140,10 @@ FUNC int  DIA_Joru_JoinPsi_Condition()
 
 FUNC VOID  DIA_Joru_JoinPsi_Info()
 {
-	AI_Output (other, self,"DIA_Joru_JoinPsi_15_00"); //Rád bych se pøidal k vašemu táboru - pomùeš mi?
-	AI_Output (self, other,"DIA_Joru_JoinPsi_07_01"); //Chceš se k nám pøidat? To je dobøe! Poèkej chvíli... ano, myslím, e ti mùu pomoci.
-	AI_Output (self, other,"DIA_Joru_JoinPsi_07_02"); //Nejsem ještì Guru, mám ale urèitı vliv na Bratrstvo.
-	AI_Output (self, other,"DIA_Joru_JoinPsi_07_03"); //Musíš mi prokázat malou laskavost. U jsi vidìl Fortuna?
+	AI_Output (other, self,"DIA_Joru_JoinPsi_15_00"); //RÃ¡d bych se pÅ™idal k vaÅ¡emu tÃ¡boru - pomÅ¯Å¾eÅ¡ mi?
+	AI_Output (self, other,"DIA_Joru_JoinPsi_07_01"); //ChceÅ¡ se k nÃ¡m pÅ™idat? To je dobÅ™e! PoÄkej chvÃ­li... ano, myslÃ­m, Å¾e ti mÅ¯Å¾u pomoci.
+	AI_Output (self, other,"DIA_Joru_JoinPsi_07_02"); //Nejsem jeÅ¡tÄ› Guru, mÃ¡m ale urÄitÃ½ vliv na Bratrstvo.
+	AI_Output (self, other,"DIA_Joru_JoinPsi_07_03"); //MusÃ­Å¡ mi prokÃ¡zat malou laskavost. UÅ¾ jsi vidÄ›l Fortuna?
 	
 	Info_ClearChoices	(DIA_Joru_JoinPsi );
 	Info_AddChoice		(DIA_Joru_JoinPsi,"Ne.",DIA_Joru_JoinPsi_Nein);
@@ -152,8 +152,8 @@ FUNC VOID  DIA_Joru_JoinPsi_Info()
 
 func void DIA_Joru_JoinPsi_Ja()
 {
-	AI_Output (self, other,"DIA_Joru_JoinPsi_Ja_07_00"); //Pak u máš svùj denní pøídìl? Kdy mi ho dáš, jsme domluveni.
-	AI_Output (other, self,"DIA_Joru_JoinPsi_Ja_15_01"); //Rozmyslím si to.
+	AI_Output (self, other,"DIA_Joru_JoinPsi_Ja_07_00"); //Pak uÅ¾ mÃ¡Å¡ svÅ¯j dennÃ­ pÅ™Ã­dÄ›l? KdyÅ¾ mi ho dÃ¡Å¡, jsme domluveni.
+	AI_Output (other, self,"DIA_Joru_JoinPsi_Ja_15_01"); //RozmyslÃ­m si to.
 	Joru_BringJoints = LOG_RUNNING; 
 	
 	Info_ClearChoices	(DIA_Joru_JoinPsi );
@@ -161,13 +161,13 @@ func void DIA_Joru_JoinPsi_Ja()
 
 func void DIA_Joru_JoinPsi_Nein()
 {
-	AI_Output (self, other,"DIA_Joru_JoinPsi_Nein_07_00"); //Pak jdi za ním a  vyzvedni si svùj denní pøídìl. Kdy mi pøenecháš všechnu drogu z bain, kterou ti dá, budeme domluveni.
-	AI_Output (other, self,"DIA_Joru_JoinPsi_Nein_15_01"); //Rozmyslím si to.
+	AI_Output (self, other,"DIA_Joru_JoinPsi_Nein_07_00"); //Pak jdi za nÃ­m a  vyzvedni si svÅ¯j dennÃ­ pÅ™Ã­dÄ›l. KdyÅ¾ mi pÅ™enechÃ¡Å¡ vÅ¡echnu drogu z baÅ¾in, kterou ti dÃ¡, budeme domluveni.
+	AI_Output (other, self,"DIA_Joru_JoinPsi_Nein_15_01"); //RozmyslÃ­m si to.
 	Joru_BringJoints = LOG_RUNNING; 
 
 	Log_CreateTopic		(CH1_JoinPsi,	LOG_MISSION);
 	Log_SetTopicStatus	(CH1_JoinPsi,	LOG_RUNNING);
-	B_LogEntry			(CH1_JoinPsi,"Joru by chtìl mùj denní pøídìl drogy z bain, kterou jsem dostal od Fortuna.");
+	B_LogEntry			(CH1_JoinPsi,"Joru by chtÄ›l mÅ¯j dennÃ­ pÅ™Ã­dÄ›l drogy z baÅ¾in, kterou jsem dostal od Fortuna.");
 	
 	Info_ClearChoices	(DIA_Joru_JoinPsi );
 };
@@ -183,7 +183,7 @@ instance  DIA_Joru_JointsRunning (C_INFO)
 	condition	= DIA_Joru_JointsRunning_Condition;
 	information	= DIA_Joru_JointsRunning_Info;
 	permanent	= 1;
-	description = "Mám svoji drogu z bain. Mùeš ji mít.";
+	description = "MÃ¡m svoji drogu z baÅ¾in. MÅ¯Å¾eÅ¡ ji mÃ­t.";
 };                       
 
 FUNC int  DIA_Joru_JointsRunning_Condition()
@@ -196,12 +196,12 @@ FUNC int  DIA_Joru_JointsRunning_Condition()
 
 FUNC VOID  DIA_Joru_JointsRunning_Info()
 {
-	AI_Output				(other, self,"DIA_Joru_JointsRunning_15_00"); //Mám svoji drogu z bain. Mùeš ji mít.
+	AI_Output				(other, self,"DIA_Joru_JointsRunning_15_00"); //MÃ¡m svoji drogu z baÅ¾in. MÅ¯Å¾eÅ¡ ji mÃ­t.
 		
 	if (Npc_HasItems(other,itmijoint_2)>=3)
 	{
-		AI_Output			(self, other,"DIA_Joru_JointsRunning_07_01"); //Dobøe! Jistì sis všimnul, e s tebou nikdo z Guru nechce mluvit.
-		AI_Output			(self, other,"DIA_Joru_JointsRunning_07_02"); //Mùeš to zmìnit tím, e na nì udìláš dojem. Mùu ti øíci, jak to udìlat.
+		AI_Output			(self, other,"DIA_Joru_JointsRunning_07_01"); //DobÅ™e! JistÄ› sis vÅ¡imnul, Å¾e s tebou nikdo z Guru nechce mluvit.
+		AI_Output			(self, other,"DIA_Joru_JointsRunning_07_02"); //MÅ¯Å¾eÅ¡ to zmÄ›nit tÃ­m, Å¾e na nÄ› udÄ›lÃ¡Å¡ dojem. MÅ¯Å¾u ti Å™Ã­ci, jak to udÄ›lat.
 		
 		B_GiveInvItems		(other, self, itmijoint_2, 3);
 		
@@ -210,7 +210,7 @@ FUNC VOID  DIA_Joru_JointsRunning_Info()
 	}
 	else
 	{
-		AI_Output			(self, other,"DIA_Joru_JointsRunning_NO_JOINTS_07_00"); //Domluvili jsme si tøi Severní soumraky a nic jiného! Dej mi je a POTOM se mùeme bavit!
+		AI_Output			(self, other,"DIA_Joru_JointsRunning_NO_JOINTS_07_00"); //Domluvili jsme si tÅ™i SevernÃ­ soumraky a nic jinÃ©ho! Dej mi je a POTOM se mÅ¯Å¾eme bavit!
 	}; 
 };
 
@@ -227,7 +227,7 @@ instance  DIA_Joru_ImpressGurus (C_INFO)
 	condition	= DIA_Joru_ImpressGurus_Condition;
 	information	= DIA_Joru_ImpressGurus_Info;
 	permanent	= 1;
-	description = "Jak mùu udìlat dojem na Guru?";
+	description = "Jak mÅ¯Å¾u udÄ›lat dojem na Guru?";
 };                       
 
 FUNC int  DIA_Joru_ImpressGurus_Condition()
@@ -240,19 +240,19 @@ FUNC int  DIA_Joru_ImpressGurus_Condition()
 
 FUNC VOID  DIA_Joru_ImpressGurus_Info()
 {
-	AI_Output (other, self,"DIA_Joru_ImpressGurus_15_00"); //Jak mùu udìlat dojem na Guru?
-	AI_Output (self, other,"DIA_Joru_ImpressGurus_07_01"); //Baal Cadar cvièí novice ve Spáèovì magii.
-	AI_Output (self, other,"DIA_Joru_ImpressGurus_07_02"); //Jestlie chceš upoutat jeho pozornost, pouij kouzlo.
-	AI_Output (self, other,"DIA_Joru_ImpressGurus_07_03"); //Nepouívej však na nìj Vìtrnou pìst! Uspi jeho posluchaèe nebo nìco takového.
-	AI_Output (self, other,"DIA_Joru_ImpressGurus_07_04"); //Baal Namib, za hlavní branou, je jeden z nejtvrdších. Myslím, e by ti s ním mohl pomoci Lester. Promluv s ním, jakmile bude jeho pán pryè.
-	AI_Output (self, other,"DIA_Joru_ImpressGurus_07_05"); //Ostatní Guru jsou vcelku v pohodì - sna se bıt uiteènı.
-	AI_Output (other, self,"DIA_Joru_ImpressGurus_15_06"); //Díky za radu.
+	AI_Output (other, self,"DIA_Joru_ImpressGurus_15_00"); //Jak mÅ¯Å¾u udÄ›lat dojem na Guru?
+	AI_Output (self, other,"DIA_Joru_ImpressGurus_07_01"); //Baal Cadar cviÄÃ­ novice ve SpÃ¡ÄovÄ› magii.
+	AI_Output (self, other,"DIA_Joru_ImpressGurus_07_02"); //JestliÅ¾e chceÅ¡ upoutat jeho pozornost, pouÅ¾ij kouzlo.
+	AI_Output (self, other,"DIA_Joru_ImpressGurus_07_03"); //NepouÅ¾Ã­vej vÅ¡ak na nÄ›j VÄ›trnou pÄ›st! Uspi jeho posluchaÄe nebo nÄ›co takovÃ©ho.
+	AI_Output (self, other,"DIA_Joru_ImpressGurus_07_04"); //Baal Namib, za hlavnÃ­ branou, je jeden z nejtvrdÅ¡Ã­ch. MyslÃ­m, Å¾e by ti s nÃ­m mohl pomoci Lester. Promluv s nÃ­m, jakmile bude jeho pÃ¡n pryÄ.
+	AI_Output (self, other,"DIA_Joru_ImpressGurus_07_05"); //OstatnÃ­ Guru jsou vcelku v pohodÄ› - snaÅ¾ se bÃ½t uÅ¾iteÄnÃ½.
+	AI_Output (other, self,"DIA_Joru_ImpressGurus_15_06"); //DÃ­ky za radu.
 	AI_Output (self, other,"DIA_Joru_ImpressGurus_07_07"); //Hej - dohoda je dohoda.
 	
 	if ( Joru_JoinPsi == FALSE)
 	{
-		B_LogEntry	(CH1_JoinPsi,"Abych udìlal dojem na Baala Cadara, musel jsem seslat na jednoho z jeho posluchaèù spací kouzlo.");
-		B_LogEntry	(CH1_JoinPsi,"Zeptám se novice Lestera, jak udìlat dojem na Baala Namiba pøebıvajícího u hlavní brány. Mìl bych se ujistit, e není v blízkosti ádnı guru!");
+		B_LogEntry	(CH1_JoinPsi,"Abych udÄ›lal dojem na Baala Cadara, musel jsem seslat na jednoho z jeho posluchaÄÅ¯ spacÃ­ kouzlo.");
+		B_LogEntry	(CH1_JoinPsi,"ZeptÃ¡m se novice Lestera, jak udÄ›lat dojem na Baala Namiba pÅ™ebÃ½vajÃ­cÃ­ho u hlavnÃ­ brÃ¡ny. MÄ›l bych se ujistit, Å¾e nenÃ­ v blÃ­zkosti Å¾Ã¡dnÃ½ guru!");
 		Joru_JoinPsi = TRUE;
 	};
 	
@@ -270,7 +270,7 @@ instance  DIA_Joru_GetMagic (C_INFO)
 	condition	= DIA_Joru_GetMagic_Condition;
 	information	= DIA_Joru_GetMagic_Info;
 	permanent	= 1;
-	description = "Jak se dostanu ke Spáèovì magii?";
+	description = "Jak se dostanu ke SpÃ¡ÄovÄ› magii?";
 };                       
 
 FUNC int  DIA_Joru_GetMagic_Condition()
@@ -286,12 +286,12 @@ FUNC VOID  DIA_Joru_GetMagic_Info()
 	if (Joru_Tips_Mage == FALSE)
 	{
 		Log_CreateTopic	(GE_TraderPSI,	LOG_NOTE);
-		B_LogEntry		(GE_TraderPSI,"Baal Cadar prodává RUNY a SVITKY.");
+		B_LogEntry		(GE_TraderPSI,"Baal Cadar prodÃ¡vÃ¡ RUNY a SVITKY.");
 		Joru_Tips_Mage	=TRUE;
 	};
-	AI_Output (other, self,"DIA_Joru_GetMagic_15_00"); //Jak se dostanu ke Spáèovì magii?
-	AI_Output (self, other,"DIA_Joru_GetMagic_07_01"); //Baal Cadar prodává runy a zaøíkávací svitky. Ale to je ti vlastnì k nièemu, dokud si s ním nepromluvíš, e?
-	AI_Output (self, other,"DIA_Joru_GetMagic_07_02"); //Moná ti pomùe jinı Guru.
+	AI_Output (other, self,"DIA_Joru_GetMagic_15_00"); //Jak se dostanu ke SpÃ¡ÄovÄ› magii?
+	AI_Output (self, other,"DIA_Joru_GetMagic_07_01"); //Baal Cadar prodÃ¡vÃ¡ runy a zaÅ™Ã­kÃ¡vacÃ­ svitky. Ale to je ti vlastnÄ› k niÄemu, dokud si s nÃ­m nepromluvÃ­Å¡, Å¾e?
+	AI_Output (self, other,"DIA_Joru_GetMagic_07_02"); //MoÅ¾nÃ¡ ti pomÅ¯Å¾e jinÃ½ Guru.
 };
 
 
@@ -304,8 +304,8 @@ FUNC VOID  DIA_Joru_GetMagic_Info()
 Sit_1_PSI_Joru_SmokingTeacher
 
 Joru: Du bist neu hier. Hast Du schon unser Kraut genossen?
-Das solltest du unbedingt tun. Weißt du, es ist ziemlich gut. Es öffnet deinen Geist für die Worte des Schläfers.
-Komm, komm zu uns und lasse deinen Geist frei. Mach dich bereit für eine Reise.
+Das solltest du unbedingt tun. WeiÃŸt du, es ist ziemlich gut. Es Ã¶ffnet deinen Geist fÃ¼r die Worte des SchlÃ¤fers.
+Komm, komm zu uns und lasse deinen Geist frei. Mach dich bereit fÃ¼r eine Reise.
 Eine spirituelle Reise. Lerne die Macht des Geistes zu nutzen. Lerne sie zu kontrollieren.
 Komm zu uns in die Gemeinschaft der Erwachten und gleichzeitig Erwecker. Teile mit uns deine Kraft, wie wir unsere Kraft mit dir teilen.
 Mach dich frei von Suche und beginne zu finden. Entdecke die Wahrheit. Das alles kannst du erreichen, wenn du zu uns kommst.

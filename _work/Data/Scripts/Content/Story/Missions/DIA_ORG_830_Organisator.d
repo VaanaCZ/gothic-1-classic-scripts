@@ -33,7 +33,7 @@ INSTANCE Info_ORG_830_Hello (C_INFO)
 	condition	= Info_ORG_830_Hello_Condition;
 	information	= Info_ORG_830_Hello_Info;
 	permanent	= 0;
-	description	= "Zdar! Jsem tady nový.";
+	description	= "Zdar! Jsem tady novÃ½.";
 };                       
 
 FUNC INT Info_ORG_830_Hello_Condition()
@@ -43,7 +43,7 @@ FUNC INT Info_ORG_830_Hello_Condition()
 
 FUNC VOID Info_ORG_830_Hello_Info()
 {	
-	AI_Output (other, self,"Info_ORG_830_Hello_15_00"); //Zdar! Jsem tady nový!
+	AI_Output (other, self,"Info_ORG_830_Hello_15_00"); //Zdar! Jsem tady novÃ½!
 	AI_Output (self, other,"Info_ORG_830_Hello_13_01"); //A co?
 };
 
@@ -58,7 +58,7 @@ INSTANCE Info_ORG_830_What (C_INFO)
 	condition	= Info_ORG_830_What_Condition;
 	information	= Info_ORG_830_What_Info;
 	permanent	= 0;
-	description	= "Co dìláš?";
+	description	= "Co dÄ›lÃ¡Å¡?";
 };                       
 
 FUNC INT Info_ORG_830_What_Condition()
@@ -71,9 +71,9 @@ FUNC INT Info_ORG_830_What_Condition()
 
 FUNC VOID Info_ORG_830_What_Info()
 {	
-	AI_Output (other, self,"Info_ORG_830_What_15_00"); //Co tady dìláš?
-	AI_Output (self, other,"Info_ORG_830_What_13_01"); //Jak to vypadá? Kouøím.
-	AI_Output (self, other,"Info_ORG_830_What_13_02"); //Jestli si myslíš, že tì nechám potáhnout... Zapomeò na to!
+	AI_Output (other, self,"Info_ORG_830_What_15_00"); //Co tady dÄ›lÃ¡Å¡?
+	AI_Output (self, other,"Info_ORG_830_What_13_01"); //Jak to vypadÃ¡? KouÅ™Ã­m.
+	AI_Output (self, other,"Info_ORG_830_What_13_02"); //Jestli si myslÃ­Å¡, Å¾e tÄ› nechÃ¡m potÃ¡hnout... ZapomeÅˆ na to!
 };
 
 // ************************************************************
@@ -87,7 +87,7 @@ INSTANCE Info_ORG_830_Aufhalten (C_INFO)
 	condition	= Info_ORG_830_Aufhalten_Condition;
 	information	= Info_ORG_830_Aufhalten_Info;
 	permanent	= 0;
-	description	= "Nechceš se mì pokusit zastavit? Zeptat se mì, co tu chci nebo tak?";
+	description	= "NechceÅ¡ se mÄ› pokusit zastavit? Zeptat se mÄ›, co tu chci nebo tak?";
 };                       
 
 FUNC INT Info_ORG_830_Aufhalten_Condition()
@@ -100,8 +100,8 @@ FUNC INT Info_ORG_830_Aufhalten_Condition()
 
 FUNC VOID Info_ORG_830_Aufhalten_Info()
 {	
-	AI_Output (other, self,"Info_ORG_830_Aufhalten_15_00"); //Nechceš se mì pokusit zastavit? Zeptat se mì, co tu chci nebo tak?
-	AI_Output (self, other,"Info_ORG_830_Aufhalten_13_01"); //Ne. Ještì by mì to znervóznilo. Kromì toho, nìkdo jako ty tady moc škody nenadìlá.
+	AI_Output (other, self,"Info_ORG_830_Aufhalten_15_00"); //NechceÅ¡ se mÄ› pokusit zastavit? Zeptat se mÄ›, co tu chci nebo tak?
+	AI_Output (self, other,"Info_ORG_830_Aufhalten_13_01"); //Ne. JeÅ¡tÄ› by mÄ› to znervÃ³znilo. KromÄ› toho, nÄ›kdo jako ty tady moc Å¡kody nenadÄ›lÃ¡.
 };
 
 // ************************************************************
@@ -115,7 +115,7 @@ INSTANCE Info_ORG_830_Perm (C_INFO)
 	condition	= Info_ORG_830_Perm_Condition;
 	information	= Info_ORG_830_Perm_Info;
 	permanent	= 1;
-	description	= "Jaké je to uvnitø?";
+	description	= "JakÃ© je to uvnitÅ™?";
 };                       
 
 FUNC INT Info_ORG_830_Perm_Condition()
@@ -128,6 +128,6 @@ FUNC INT Info_ORG_830_Perm_Condition()
 
 FUNC VOID Info_ORG_830_Perm_Info()
 {	
-	AI_Output (other, self,"Info_ORG_830_Perm_15_00"); //Jaké je to uvnitø?
-	AI_Output (self, other,"Info_ORG_830_Perm_13_01"); //Jako vždy - klid, až na pár hádek.
+	AI_Output (other, self,"Info_ORG_830_Perm_15_00"); //JakÃ© je to uvnitÅ™?
+	AI_Output (self, other,"Info_ORG_830_Perm_13_01"); //Jako vÅ¾dy - klid, aÅ¾ na pÃ¡r hÃ¡dek.
 };

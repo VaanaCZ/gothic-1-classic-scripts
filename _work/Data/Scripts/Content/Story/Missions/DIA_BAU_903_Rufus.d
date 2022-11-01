@@ -33,7 +33,7 @@ INSTANCE Info_Rufus_Wasser(C_INFO) // E1
 	condition	= Info_Rufus_Wasser_Condition;
 	information	= Info_Rufus_Wasser_Info;
 	permanent	= 1;
-	description = "Lefty mì poslal. Pøinesl jsem ti trochu vody.";
+	description = "Lefty mÄ› poslal. PÅ™inesl jsem ti trochu vody.";
 };                       
 
 FUNC INT Info_Rufus_Wasser_Condition()
@@ -47,10 +47,10 @@ FUNC INT Info_Rufus_Wasser_Condition()
 
 FUNC VOID Info_Rufus_Wasser_Info()
 {
-	AI_Output(other,self,"Info_Rufus_Wasser_15_00"); //Poslal mì Lefty. Pøinesl jsem trochu vody.
+	AI_Output(other,self,"Info_Rufus_Wasser_15_00"); //Poslal mÄ› Lefty. PÅ™inesl jsem trochu vody.
 	if (Npc_HasItems(other, ItFo_Potion_Water_01)>=1)
 	{
-		AI_Output(self,other,"Info_Rufus_Wasser_02_01"); //Díky, pøíteli! Umírám ízní.
+		AI_Output(self,other,"Info_Rufus_Wasser_02_01"); //DÃ­ky, pÅ™Ã­teli! UmÃ­rÃ¡m Å¾Ã­znÃ­.
 		B_GiveInvItems(other,self,ItFo_Potion_Water_01,1);
 		if ( C_BodystateContains(self, BS_SIT) )
 		{
@@ -67,7 +67,7 @@ FUNC VOID Info_Rufus_Wasser_Info()
 	}
 	else
 	{
-		AI_Output(self,other,"Info_Rufus_Wasser_NOWATER_02_00"); //Vodu! Hej, pøíteli! U tu ádná není! Neøíkej mi, e zase dostal kadı kromì mì!
+		AI_Output(self,other,"Info_Rufus_Wasser_NOWATER_02_00"); //Vodu! Hej, pÅ™Ã­teli! UÅ¾ tu Å¾Ã¡dnÃ¡ nenÃ­! NeÅ™Ã­kej mi, Å¾e zase dostal kaÅ¾dÃ½ kromÄ› mÄ›!
 	};
 };
 
@@ -82,7 +82,7 @@ INSTANCE DIA_Rufus_Hello (C_INFO)
 	condition	= DIA_Rufus_Hello_Condition;
 	information	= DIA_Rufus_Hello_Info;
 	permanent	= 0;
-	description	= "Zdar! Jsem tady novı. Jen jsem chtìl vìdìt, co se tu dìje.";
+	description	= "Zdar! Jsem tady novÃ½. Jen jsem chtÄ›l vÄ›dÄ›t, co se tu dÄ›je.";
 };                       
 
 FUNC INT DIA_Rufus_Hello_Condition()
@@ -92,9 +92,9 @@ FUNC INT DIA_Rufus_Hello_Condition()
 
 FUNC VOID DIA_Rufus_Hello_Info()
 {	
-	AI_Output (other, self,"DIA_Rufus_Hello_15_00"); //Zdar! Jsem tady novı. Jen jsem chtìl vìdìt, co se tu dìje.
-	AI_Output (self, other,"DIA_Rufus_Hello_02_01"); //Zeptej se nìkoho jiného. Nedìlám nic jiného, ne e tu pracuju na polích, nevím nic.
-	AI_Output (self, other,"DIA_Rufus_Hello_02_02"); //Èlovìèe, nejradìji bych Rıovému Lordovi øekl, aby si tu svoji zpropadenou práci dìlal sám!
+	AI_Output (other, self,"DIA_Rufus_Hello_15_00"); //Zdar! Jsem tady novÃ½. Jen jsem chtÄ›l vÄ›dÄ›t, co se tu dÄ›je.
+	AI_Output (self, other,"DIA_Rufus_Hello_02_01"); //Zeptej se nÄ›koho jinÃ©ho. NedÄ›lÃ¡m nic jinÃ©ho, neÅ¾ Å¾e tu pracuju na polÃ­ch, nevÃ­m nic.
+	AI_Output (self, other,"DIA_Rufus_Hello_02_02"); //ÄŒlovÄ›Äe, nejradÄ›ji bych RÃ½Å¾ovÃ©mu Lordovi Å™ekl, aby si tu svoji zpropadenou prÃ¡ci dÄ›lal sÃ¡m!
 };
 
 // ************************************************************
@@ -108,7 +108,7 @@ INSTANCE DIA_Rufus_Why (C_INFO)
 	condition	= DIA_Rufus_Why_Condition;
 	information	= DIA_Rufus_Why_Info;
 	permanent	= 0;
-	description	= "Kdy se ti to nelíbí, tak proè tu pracuješ?";
+	description	= "KdyÅ¾ se ti to nelÃ­bÃ­, tak proÄ tu pracujeÅ¡?";
 };                       
 
 FUNC INT DIA_Rufus_Why_Condition()
@@ -121,15 +121,15 @@ FUNC INT DIA_Rufus_Why_Condition()
 
 FUNC VOID DIA_Rufus_Why_Info()
 {	
-	AI_Output (other, self,"DIA_Rufus_Why_15_00"); //Kdy se ti to nelíbí, tak proè tu pracuješ?
-	AI_Output (self, other,"DIA_Rufus_Why_02_01"); //Stalo se to první den, kdy jsem se sem dostal. Pøišel ke mnì Lefty, jeden z hrdloøezù, co dìlají pro Rıového Lorda, a zeptal se mì, jestli nechci pracovat na rıovıch polích.
-	AI_Output (self, other,"DIA_Rufus_Why_02_02"); //Jasnì, øekl jsem. Byl jsem tu novı a chtìl jsem dìlat nìco uiteèného.
-	AI_Output (self, other,"DIA_Rufus_Why_02_03"); //Pøíští den, kdy jsem si dával chvilku odpoèinku, ke mnì ten chlapík pøišel znovu.
-	AI_Output (self, other,"DIA_Rufus_Why_02_04"); //Nechceš snad nechávat své kolegy, aby pracovali sami, e ne?
-	AI_Output (self, other,"DIA_Rufus_Why_02_05"); //Øekl jsem mu, e jsem vyèerpanı z pøedešlého dne a e si potøebuji jen trochu odpoèinout. Vùbec mì neposlouchal.
-	AI_Output (self, other,"DIA_Rufus_Why_02_06"); //Chytil mì za límec a odvlekl zpátky na pole.
-	AI_Output (self, other,"DIA_Rufus_Why_02_07"); //Od toho dne stával pokadé pøed mımi dveømi, dokud jsem si nezvykl chodit sám. Nechtìl jsem mít s tìmi chlapíky ádné problémy.
-	AI_Output (self, other,"DIA_Rufus_Why_02_08"); //Jsou to opravdoví hrdloøezové, udìláš nejlíp, kdy s nimi budeš zadobøe.
+	AI_Output (other, self,"DIA_Rufus_Why_15_00"); //KdyÅ¾ se ti to nelÃ­bÃ­, tak proÄ tu pracujeÅ¡?
+	AI_Output (self, other,"DIA_Rufus_Why_02_01"); //Stalo se to prvnÃ­ den, kdyÅ¾ jsem se sem dostal. PÅ™iÅ¡el ke mnÄ› Lefty, jeden z hrdloÅ™ezÅ¯, co dÄ›lajÃ­ pro RÃ½Å¾ovÃ©ho Lorda, a zeptal se mÄ›, jestli nechci pracovat na rÃ½Å¾ovÃ½ch polÃ­ch.
+	AI_Output (self, other,"DIA_Rufus_Why_02_02"); //JasnÄ›, Å™ekl jsem. Byl jsem tu novÃ½ a chtÄ›l jsem dÄ›lat nÄ›co uÅ¾iteÄnÃ©ho.
+	AI_Output (self, other,"DIA_Rufus_Why_02_03"); //PÅ™Ã­Å¡tÃ­ den, kdyÅ¾ jsem si dÃ¡val chvilku odpoÄinku, ke mnÄ› ten chlapÃ­k pÅ™iÅ¡el znovu.
+	AI_Output (self, other,"DIA_Rufus_Why_02_04"); //NechceÅ¡ snad nechÃ¡vat svÃ© kolegy, aby pracovali sami, Å¾e ne?
+	AI_Output (self, other,"DIA_Rufus_Why_02_05"); //Å˜ekl jsem mu, Å¾e jsem vyÄerpanÃ½ z pÅ™edeÅ¡lÃ©ho dne a Å¾e si potÅ™ebuji jen trochu odpoÄinout. VÅ¯bec mÄ› neposlouchal.
+	AI_Output (self, other,"DIA_Rufus_Why_02_06"); //Chytil mÄ› za lÃ­mec a odvlekl zpÃ¡tky na pole.
+	AI_Output (self, other,"DIA_Rufus_Why_02_07"); //Od toho dne stÃ¡val pokaÅ¾dÃ© pÅ™ed mÃ½mi dveÅ™mi, dokud jsem si nezvykl chodit sÃ¡m. NechtÄ›l jsem mÃ­t s tÄ›mi chlapÃ­ky Å¾Ã¡dnÃ© problÃ©my.
+	AI_Output (self, other,"DIA_Rufus_Why_02_08"); //Jsou to opravdovÃ­ hrdloÅ™ezovÃ©, udÄ›lÃ¡Å¡ nejlÃ­p, kdyÅ¾ s nimi budeÅ¡ zadobÅ™e.
 	var C_NPC Ricelord;			Ricelord	= Hlp_GetNpc(Bau_900_Ricelord);
 	Ricelord.aivar[AIV_FINDABLE] = TRUE;	
 };
@@ -145,7 +145,7 @@ INSTANCE DIA_Rufus_Ricelord (C_INFO)
 	condition	= DIA_Rufus_Ricelord_Condition;
 	information	= DIA_Rufus_Ricelord_Info;
 	permanent	= 1;
-	description	= "Kdo je Rıovı Lord?";
+	description	= "Kdo je RÃ½Å¾ovÃ½ Lord?";
 };                       
 
 FUNC INT DIA_Rufus_Ricelord_Condition()
@@ -158,9 +158,9 @@ FUNC INT DIA_Rufus_Ricelord_Condition()
 
 FUNC VOID DIA_Rufus_Ricelord_Info()
 {	
-	AI_Output (other, self,"DIA_Rufus_Ricelord_15_00"); //Kdo je Rıovı Lord?
-	AI_Output (self, other,"DIA_Rufus_Ricelord_02_01"); //Byl jedním z prvních zdejších pøistìhovalcù. Pomáhal budovat tábor a zaloil rıová pole.
-	AI_Output (self, other,"DIA_Rufus_Ricelord_02_02"); //Teï u jenom postává ve skladišti a cpe si bøicho, to tlustı prase!
+	AI_Output (other, self,"DIA_Rufus_Ricelord_15_00"); //Kdo je RÃ½Å¾ovÃ½ Lord?
+	AI_Output (self, other,"DIA_Rufus_Ricelord_02_01"); //Byl jednÃ­m z prvnÃ­ch zdejÅ¡Ã­ch pÅ™istÄ›hovalcÅ¯. PomÃ¡hal budovat tÃ¡bor a zaloÅ¾il rÃ½Å¾ovÃ¡ pole.
+	AI_Output (self, other,"DIA_Rufus_Ricelord_02_02"); //TeÄ uÅ¾ jenom postÃ¡vÃ¡ ve skladiÅ¡ti a cpe si bÅ™icho, to tlustÃ½ prase!
 	var C_NPC Ricelord;			Ricelord	= Hlp_GetNpc(Bau_900_Ricelord);
 	Ricelord.aivar[AIV_FINDABLE] = TRUE;	
 };

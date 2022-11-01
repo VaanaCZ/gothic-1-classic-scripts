@@ -37,7 +37,7 @@ INSTANCE Info_grd_13_EinerVonEuchWerden (C_INFO) // E1
 	condition	= Info_grd_13_EinerVonEuchWerden_Condition;
 	information	= Info_grd_13_EinerVonEuchWerden_Info;
 	permanent	= 1;
-	description = "Chci se st·t str·ûcem.";
+	description = "Chci se st√°t str√°≈æcem.";
 };                       
 
 FUNC INT Info_grd_13_EinerVonEuchWerden_Condition()
@@ -53,8 +53,8 @@ FUNC INT Info_grd_13_EinerVonEuchWerden_Condition()
 
 FUNC VOID Info_grd_13_EinerVonEuchWerden_Info()
 {
-	AI_Output(other,self,"Info_grd_13_EinerVonEuchWerden_15_00"); //Chci se st·t str·ûcem.
-	AI_Output(self,other,"Info_grd_13_EinerVonEuchWerden_13_01"); //Pak p¯ed sebou budeö mÌt dlouhou cestu, chlapËe.
+	AI_Output(other,self,"Info_grd_13_EinerVonEuchWerden_15_00"); //Chci se st√°t str√°≈æcem.
+	AI_Output(self,other,"Info_grd_13_EinerVonEuchWerden_13_01"); //Pak p≈ôed sebou bude≈° m√≠t dlouhou cestu, chlapƒçe.
 };
 
 // *************************************************************************
@@ -78,7 +78,7 @@ FUNC INT Info_grd_13_WichtigePersonen_Condition()
 FUNC VOID Info_grd_13_WichtigePersonen_Info()
 {
 	AI_Output(other,self,"Info_grd_13_WichtigePersonen_15_00"); //Kdo to tady vede?
-	AI_Output(self,other,"Info_grd_13_WichtigePersonen_13_01"); //J· tu dohlÌûÌm. A ¯Ìk·m ti: mÏl bys d·vat, hochu, pozor na to, co ¯Ìk·ö!
+	AI_Output(self,other,"Info_grd_13_WichtigePersonen_13_01"); //J√° tu dohl√≠≈æ√≠m. A ≈ô√≠k√°m ti: mƒõl bys d√°vat, hochu, pozor na to, co ≈ô√≠k√°≈°!
 };
 
 // *************************************************************************
@@ -105,10 +105,10 @@ FUNC INT Info_grd_13_DasLager_Condition()
 FUNC VOID Info_grd_13_DasLager_Info()
 {
 	AI_Output(other,self,"Info_grd_13_DasLager_15_00"); //Jak se dostanu na hrad?
-	AI_Output(self,other,"Info_grd_13_DasLager_13_01"); //Nedostaneö. Tam smÌ jen Gomezovi lidÈ.
+	AI_Output(self,other,"Info_grd_13_DasLager_13_01"); //Nedostane≈°. Tam sm√≠ jen Gomezovi lid√©.
 	Info_ClearChoices(Info_grd_13_DasLager);
 	Info_AddChoice(Info_grd_13_DasLager,"Aha...", Info_grd_13_DasLager_Verstehe);
-	Info_AddChoice(Info_grd_13_DasLager,"Co kdybych podplatil str·ûe?", Info_grd_13_DasLager_WachenBestechen);
+	Info_AddChoice(Info_grd_13_DasLager,"Co kdybych podplatil str√°≈æe?", Info_grd_13_DasLager_WachenBestechen);
 	Info_AddChoice(Info_grd_13_DasLager,"Jak bych si mohl promluvit s Gomezem?", Info_grd_13_DasLager_GomezSprechen);
 };
 
@@ -120,19 +120,19 @@ FUNC VOID Info_grd_13_DasLager_Verstehe()
 
 FUNC VOID Info_grd_13_DasLager_WachenBestechen()
 {
-	AI_Output(other,self,"Info_grd_13_DasLager_WachenBestechen_15_00"); //Co kdybych podplatil str·ûe?
-	AI_Output(self,other,"Info_grd_13_DasLager_WachenBestechen_13_01"); //M·ö ale nervy, mladej. JedinÈ, jak bys je mohl p¯esvÏdËit, aby se na minutku dÌvali jinam, je p¯inÈst jim nÏco rudy.
-	AI_Output(self,other,"Info_grd_13_DasLager_WachenBestechen_13_02"); //Jak se ale Gomez dozvÌ, ûe nechali takovÈ ËerstvÈ maso napochodovat do jeho z·mku, uvrhne je do vÏzenÌ.
-	AI_Output(self,other,"Info_grd_13_DasLager_WachenBestechen_13_03"); //JistÏ, takov˝hle risk je ale nutn˝.
-	AI_Output(self,other,"Info_grd_13_DasLager_WachenBestechen_13_04"); //Ale i kdyû se dostaneö dovnit¯, co tam budeö dÏlat? Vöechny budovy jsou p¯ÌsnÏ st¯eûenÈ.
-	AI_Output(other,self,"Info_grd_13_DasLager_WachenBestechen_15_05"); //Byl jsem zvÏdav˝, to je vöe.
+	AI_Output(other,self,"Info_grd_13_DasLager_WachenBestechen_15_00"); //Co kdybych podplatil str√°≈æe?
+	AI_Output(self,other,"Info_grd_13_DasLager_WachenBestechen_13_01"); //M√°≈° ale nervy, mladej. Jedin√©, jak bys je mohl p≈ôesvƒõdƒçit, aby se na minutku d√≠vali jinam, je p≈ôin√©st jim nƒõco rudy.
+	AI_Output(self,other,"Info_grd_13_DasLager_WachenBestechen_13_02"); //Jak se ale Gomez dozv√≠, ≈æe nechali takov√© ƒçerstv√© maso napochodovat do jeho z√°mku, uvrhne je do vƒõzen√≠.
+	AI_Output(self,other,"Info_grd_13_DasLager_WachenBestechen_13_03"); //Jistƒõ, takov√Ωhle risk je ale nutn√Ω.
+	AI_Output(self,other,"Info_grd_13_DasLager_WachenBestechen_13_04"); //Ale i kdy≈æ se dostane≈° dovnit≈ô, co tam bude≈° dƒõlat? V≈°echny budovy jsou p≈ô√≠snƒõ st≈ôe≈æen√©.
+	AI_Output(other,self,"Info_grd_13_DasLager_WachenBestechen_15_05"); //Byl jsem zvƒõdav√Ω, to je v≈°e.
 };
 
 FUNC VOID Info_grd_13_DasLager_GomezSprechen()
 {
 	AI_Output(other,self,"Info_grd_13_DasLager_GomezSprechen_15_00"); //Jak bych si mohl promluvit s Gomezem?
-	AI_Output(self,other,"Info_grd_13_DasLager_GomezSprechen_13_01"); //Gomeze nezajÌmajÌ nov·Ëci, kte¯Ì neprok·zali svÈ schopnosti.
-	AI_Output(self,other,"Info_grd_13_DasLager_GomezSprechen_13_02"); //Jestli to myslÌö v·ûnÏ, promluv si s Thorusem.
+	AI_Output(self,other,"Info_grd_13_DasLager_GomezSprechen_13_01"); //Gomeze nezaj√≠maj√≠ nov√°ƒçci, kte≈ô√≠ neprok√°zali sv√© schopnosti.
+	AI_Output(self,other,"Info_grd_13_DasLager_GomezSprechen_13_02"); //Jestli to mysl√≠≈° v√°≈ænƒõ, promluv si s Thorusem.
 
 	var C_NPC Thorus;		Thorus 	= Hlp_GetNpc(GRD_200_Thorus);
 	Thorus.aivar[AIV_FINDABLE] = TRUE;
@@ -162,8 +162,8 @@ FUNC INT Info_grd_13_DieLage_Condition()
 FUNC VOID Info_grd_13_DieLage_Info()
 {
 	AI_Output(other,self,"Info_grd_13_DieLage_15_00"); //Jak to jde?
-	AI_Output(self,other,"Info_grd_13_DieLage_13_01"); //Je klid. ObËas nÏjak˝ problÈm s Nov˝m t·borem nebo p·r sekt·¯sk˝mi bl·zny.
-	AI_Output(self,other,"Info_grd_13_DieLage_13_02"); //Pokud jsi nov˝, vöechno je jedno. Jakmile se ale rozhodneö, ke kterÈmu t·boru se d·ö, pak jsi v tom jako my vöichni.
+	AI_Output(self,other,"Info_grd_13_DieLage_13_01"); //Je klid. Obƒças nƒõjak√Ω probl√©m s Nov√Ωm t√°borem nebo p√°r sekt√°≈ôsk√Ωmi bl√°zny.
+	AI_Output(self,other,"Info_grd_13_DieLage_13_02"); //Pokud jsi nov√Ω, v≈°echno je jedno. Jakmile se ale rozhodne≈°, ke kter√©mu t√°boru se d√°≈°, pak jsi v tom jako my v≈°ichni.
 };
 	
 // *************************************************************************

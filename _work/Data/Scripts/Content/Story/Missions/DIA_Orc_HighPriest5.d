@@ -21,8 +21,8 @@ FUNC VOID Info_HighPriest5_Info()
 	
 	if ( Npc_HasItems ( hero, Mythrilklinge02 )) || ( Npc_HasItems ( hero, UrizielRune ))
 	{
-		AI_Output 			(self, other,"Info_HighPriest5_17_04"); //TYYY máš MOOCNOOUU ZBRAAAÒ!!!
-		AI_Output 			(self, other,"Info_HighPriest5_17_05"); //JÁÁÁ TÌÌ ZAASTAAVÍÍÍM!!!
+		AI_Output 			(self, other,"Info_HighPriest5_17_04"); //TYYY mÃ¡Å¡ MOOCNOOUU ZBRAAAÅ‡!!!
+		AI_Output 			(self, other,"Info_HighPriest5_17_05"); //JÃÃÃ TÄšÄš ZAASTAAVÃÃÃM!!!
 
 		AI_StopProcessInfos	(self);
 		self.npctype 		= NPCTYPE_MAIN;
@@ -32,9 +32,9 @@ FUNC VOID Info_HighPriest5_Info()
 	}
 	else
 	{
-		AI_Output 			(self, other,"Info_HighPriest5_17_01"); //MUUSÍÍÍŠŠ SEE VRÁÁÁTIIT ZPÁÁÁTKYY!!!
-		AI_Output 			(self, other,"Info_HighPriest5_17_02"); //NIIIKDOOO NEESMÍÍÍ VYYRUUŠOOVAAT PÁÁÁNAAA VEE SPÁÁÁNKUUU!!!
-		AI_Output 			(other, self,"Info_HighPriest5_15_03"); //Chyba, tvùj SPÁÈ bude brzy probuzen.
+		AI_Output 			(self, other,"Info_HighPriest5_17_01"); //MUUSÃÃÃÅ Å  SEE VRÃÃÃTIIT ZPÃÃÃTKYY!!!
+		AI_Output 			(self, other,"Info_HighPriest5_17_02"); //NIIIKDOOO NEESMÃÃÃ VYYRUUÅ OOVAAT PÃÃÃNAAA VEE SPÃÃÃNKUUU!!!
+		AI_Output 			(other, self,"Info_HighPriest5_15_03"); //Chyba, tvÅ¯j SPÃÄŒ bude brzy probuzen.
 	
 		AI_StopProcessInfos	(self);
 	
@@ -65,9 +65,9 @@ FUNC INT Info_HighPriest5FAILED_Condition()
 
 FUNC VOID Info_HighPriest5FAILED_Info()
 {
-	AI_Output			(other, self,"Info_HighPriest5FAILED_15_01"); //Sakra! Nechci zpùsobit sebemenší škodu! Potøebuju nìco jiného...
-	AI_Output			(self, other,"Info_HighPriest5FAILED_17_02"); //NYYNÍÍI ZEEMØEEŠ!!!
-	AI_Output			(other, self,"Info_HighPriest5FAILED_15_03"); //Radìji odtud co nejrychleji vypadnu!
+	AI_Output			(other, self,"Info_HighPriest5FAILED_15_01"); //Sakra! Nechci zpÅ¯sobit sebemenÅ¡Ã­ Å¡kodu! PotÅ™ebuju nÄ›co jinÃ©ho...
+	AI_Output			(self, other,"Info_HighPriest5FAILED_17_02"); //NYYNÃÃI ZEEMÅ˜EEÅ !!!
+	AI_Output			(other, self,"Info_HighPriest5FAILED_15_03"); //RadÄ›ji odtud co nejrychleji vypadnu!
 	AI_RemoveWeapon		(other);
 	AI_TurnAway			(other,	self);	
 	
@@ -75,7 +75,7 @@ FUNC VOID Info_HighPriest5FAILED_Info()
 	Npc_SetAttitude 	(self, ATT_HOSTILE);
 	Npc_SetTempAttitude (self, ATT_HOSTILE);	
 
-	B_LogEntry			(CH4_EnterTemple,"Grash-Varrat-Arushat zøejmì nepatøí k nemrtvım skøetím šamanùm. Je daleko silnìjší a mé zbranì mu nedokáou ublíit. Potøebuji daleko silnìjší zbraò!");
+	B_LogEntry			(CH4_EnterTemple,"Grash-Varrat-Arushat zÅ™ejmÄ› nepatÅ™Ã­ k nemrtvÃ½m skÅ™etÃ­m Å¡amanÅ¯m. Je daleko silnÄ›jÅ¡Ã­ a mÃ© zbranÄ› mu nedokÃ¡Å¾ou ublÃ­Å¾it. PotÅ™ebuji daleko silnÄ›jÅ¡Ã­ zbraÅˆ!");
 	B_GiveXP			(XP_RetreatFromLastPriest);
 
 	AI_StopProcessInfos	(self);

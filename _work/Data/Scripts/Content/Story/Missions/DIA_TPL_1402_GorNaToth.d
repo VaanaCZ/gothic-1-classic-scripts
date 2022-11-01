@@ -32,7 +32,7 @@ instance DIA_GorNaToth_Abweisend (C_INFO)
 	condition	= DIA_GorNaToth_Abweisend_Condition;
 	information	= DIA_GorNaToth_Abweisend_Info;
 	permanent	= 1;
-	description = "Mùeš mì cvièit?";
+	description = "MÅ¯Å¾eÅ¡ mÄ› cviÄit?";
 };                       
 
 FUNC int DIA_GorNaToth_Abweisend_Condition()
@@ -46,8 +46,8 @@ FUNC int DIA_GorNaToth_Abweisend_Condition()
 
 FUNC VOID DIA_GorNaToth_Abweisend_Info()
 {
-	AI_Output			(other, self,"DIA_GorNaToth_AngarTalked_15_00"); //Mùeš mì cvièit?
-	AI_Output			(self, other,"DIA_GorNaToth_AngarTalked_11_01"); //Jdi mi z oèí, ty nemehlo. Cvièím jen Spáèovy templáøe.
+	AI_Output			(other, self,"DIA_GorNaToth_AngarTalked_15_00"); //MÅ¯Å¾eÅ¡ mÄ› cviÄit?
+	AI_Output			(self, other,"DIA_GorNaToth_AngarTalked_11_01"); //Jdi mi z oÄÃ­, ty nemehlo. CviÄÃ­m jen SpÃ¡Äovy templÃ¡Å™e.
 	AI_StopProcessInfos	(self);
 };
 
@@ -75,33 +75,33 @@ FUNC int DIA_GorNaToth_AngarTalked_Condition()
 
 FUNC VOID DIA_GorNaToth_AngarTalked_Info()
 {
-	AI_Output (self, other,"DIA_GorNaToth_AngarTalked_11_00"); //Mluvil s tebou Cor Angar? Co øíkal?
+	AI_Output (self, other,"DIA_GorNaToth_AngarTalked_11_00"); //Mluvil s tebou Cor Angar? Co Å™Ã­kal?
 	Info_ClearChoices		(DIA_GorNaToth_AngarTalked);
-	Info_AddChoice			(DIA_GorNaToth_AngarTalked,"Øíká, e nejsi hoden nosit templáøskou zbroj.",DIA_GorNaToth_AngarTalked_Unworthy);	
-	Info_AddChoice			(DIA_GorNaToth_AngarTalked,"Øíkal, e vdycky nesnášel moèálové raloky.",DIA_GorNaToth_AngarTalked_Shark);	
-	Info_AddChoice			(DIA_GorNaToth_AngarTalked,"Øíkal, e se mám vrátit, jakmile se stanu templáøem.",DIA_GorNaToth_AngarTalked_Normal);	
+	Info_AddChoice			(DIA_GorNaToth_AngarTalked,"Å˜Ã­kÃ¡, Å¾e nejsi hoden nosit templÃ¡Å™skou zbroj.",DIA_GorNaToth_AngarTalked_Unworthy);	
+	Info_AddChoice			(DIA_GorNaToth_AngarTalked,"Å˜Ã­kal, Å¾e vÅ¾dycky nesnÃ¡Å¡el moÄÃ¡lovÃ© Å¾raloky.",DIA_GorNaToth_AngarTalked_Shark);	
+	Info_AddChoice			(DIA_GorNaToth_AngarTalked,"Å˜Ã­kal, Å¾e se mÃ¡m vrÃ¡tit, jakmile se stanu templÃ¡Å™em.",DIA_GorNaToth_AngarTalked_Normal);	
 };
 
 func void DIA_GorNaToth_AngarTalked_Normal()
 {
-	AI_Output (other, self,"DIA_GorNaToth_AngarTalked_Normal_15_00"); //Øíkal, e se mám vrátit, jakmile se stanu templáøem.
-	AI_Output (self, other,"DIA_GorNaToth_AngarTalked_Normal_11_01"); //To by znamenalo, e má o tobì vysoké mínìní. To neøíká kadému.
-	AI_Output (self, other,"DIA_GorNaToth_AngarTalked_Normal_11_02"); //Je èest, kdy si nìkoho vùbec všimne. Ke MNÌ naposledy promluvil asi pøed dvìma mìsíci.
+	AI_Output (other, self,"DIA_GorNaToth_AngarTalked_Normal_15_00"); //Å˜Ã­kal, Å¾e se mÃ¡m vrÃ¡tit, jakmile se stanu templÃ¡Å™em.
+	AI_Output (self, other,"DIA_GorNaToth_AngarTalked_Normal_11_01"); //To by znamenalo, Å¾e mÃ¡ o tobÄ› vysokÃ© mÃ­nÄ›nÃ­. To neÅ™Ã­kÃ¡ kaÅ¾dÃ©mu.
+	AI_Output (self, other,"DIA_GorNaToth_AngarTalked_Normal_11_02"); //Je Äest, kdyÅ¾ si nÄ›koho vÅ¯bec vÅ¡imne. Ke MNÄš naposledy promluvil asi pÅ™ed dvÄ›ma mÄ›sÃ­ci.
 	Info_ClearChoices		(DIA_GorNaToth_AngarTalked);
 };
 
 func void DIA_GorNaToth_AngarTalked_Shark()
 {
-	AI_Output (other, self,"DIA_GorNaToth_AngarTalked_Shark_15_00"); //Øíkal, e vdycky nesnášel moèálové raloky.
-	AI_Output (self, other,"DIA_GorNaToth_AngarTalked_Shark_11_01"); //Coe...? (rozhodnì) Èeká na mì svatı úkol.
-	AI_Output (self, other,"DIA_GorNaToth_AngarTalked_Shark_11_02"); //Pøání mého pána je mi rozkazem.
+	AI_Output (other, self,"DIA_GorNaToth_AngarTalked_Shark_15_00"); //Å˜Ã­kal, Å¾e vÅ¾dycky nesnÃ¡Å¡el moÄÃ¡lovÃ© Å¾raloky.
+	AI_Output (self, other,"DIA_GorNaToth_AngarTalked_Shark_11_01"); //CoÅ¾e...? (rozhodnÄ›) ÄŒekÃ¡ na mÄ› svatÃ½ Ãºkol.
+	AI_Output (self, other,"DIA_GorNaToth_AngarTalked_Shark_11_02"); //PÅ™Ã¡nÃ­ mÃ©ho pÃ¡na je mi rozkazem.
 	Info_ClearChoices		(DIA_GorNaToth_AngarTalked);
 };
 
 func void DIA_GorNaToth_AngarTalked_Unworthy()
 {
-	AI_Output (other, self,"DIA_GorNaToth_AngarTalked_Unworthy_15_00"); //Øíká, e nejsi hoden nosit templáøskou zbroj.
-	AI_Output (self, other,"DIA_GorNaToth_AngarTalked_Unworthy_11_01"); //Nikdy! To nemìl øíkat! Ne MNÌ!
+	AI_Output (other, self,"DIA_GorNaToth_AngarTalked_Unworthy_15_00"); //Å˜Ã­kÃ¡, Å¾e nejsi hoden nosit templÃ¡Å™skou zbroj.
+	AI_Output (self, other,"DIA_GorNaToth_AngarTalked_Unworthy_11_01"); //Nikdy! To nemÄ›l Å™Ã­kat! Ne MNÄš!
 	Info_ClearChoices		(DIA_GorNaToth_AngarTalked);
 	AI_StopProcessInfos	( self );
 	Npc_SetTarget(self,other);
@@ -118,7 +118,7 @@ instance  TPL_1402_GorNaToth_GETSTUFF (C_INFO)
 	information		= TPL_1402_GorNaToth_GETSTUFF_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Chtìl bych si vzít svoji templáøskou zbroj."; 
+	description		= "ChtÄ›l bych si vzÃ­t svoji templÃ¡Å™skou zbroj."; 
 };
 
 FUNC int  TPL_1402_GorNaToth_GETSTUFF_Condition()
@@ -132,14 +132,14 @@ FUNC int  TPL_1402_GorNaToth_GETSTUFF_Condition()
 };
 FUNC void  TPL_1402_GorNaToth_GETSTUFF_Info()
 {
-	AI_Output			(other, self,"TPL_1402_GorNaToth_GETSTUFF_Info_15_01"); //Chtìl bych si vzít svoji templáøskou zbroj.
-	AI_Output			(self, other,"TPL_1402_GorNaToth_GETSTUFF_Info_11_02"); //Je mi potìšením mít tu èest pøedat naši zbroj mui,kterı našel vajíèka dùlního èerva.
-	AI_Output			(self, other,"TPL_1402_GorNaToth_GETSTUFF_Info_11_03"); //A tì tahle zbroj ochraòuje tak, jako Spáè chrání Bratrstvo!
+	AI_Output			(other, self,"TPL_1402_GorNaToth_GETSTUFF_Info_15_01"); //ChtÄ›l bych si vzÃ­t svoji templÃ¡Å™skou zbroj.
+	AI_Output			(self, other,"TPL_1402_GorNaToth_GETSTUFF_Info_11_02"); //Je mi potÄ›Å¡enÃ­m mÃ­t tu Äest pÅ™edat naÅ¡i zbroj muÅ¾i,kterÃ½ naÅ¡el vajÃ­Äka dÅ¯lnÃ­ho Äerva.
+	AI_Output			(self, other,"TPL_1402_GorNaToth_GETSTUFF_Info_11_03"); //AÅ¥ tÄ› tahle zbroj ochraÅˆuje tak, jako SpÃ¡Ä chrÃ¡nÃ­ Bratrstvo!
 	
-	B_LogEntry			(GE_BecomeTemplar,"Gor Na Toth mi dal moji první templáøskou zbroj. Právì jsem se stal øádnım èlenem rodu bojovníkù!");
+	B_LogEntry			(GE_BecomeTemplar,"Gor Na Toth mi dal moji prvnÃ­ templÃ¡Å™skou zbroj. PrÃ¡vÄ› jsem se stal Å™Ã¡dnÃ½m Älenem rodu bojovnÃ­kÅ¯!");
 
 	Log_CreateTopic		(GE_TraderPSI,		LOG_NOTE);
-	B_LogEntry			(GE_TraderPSI,"Gor Na Toth má k dispozici lepší templáøskou ZBROJ. Vımìnou oèekává velkorysou dotaci Bratrstvu. Pøes den ho najdu na cvièišti.");
+	B_LogEntry			(GE_TraderPSI,"Gor Na Toth mÃ¡ k dispozici lepÅ¡Ã­ templÃ¡Å™skou ZBROJ. VÃ½mÄ›nou oÄekÃ¡vÃ¡ velkorysou dotaci Bratrstvu. PÅ™es den ho najdu na cviÄiÅ¡ti.");
 	
 	CreateInvItem		(hero, TPL_ARMOR_L);
 	
@@ -160,7 +160,7 @@ instance  TPL_1402_GorNaToth_ARMOR (C_INFO)
 	information		= TPL_1402_GorNaToth_ARMOR_Info;
 	important		= 0;
 	permanent		= 1;
-	description		= "Potøebuju lepší zbroj."; 
+	description		= "PotÅ™ebuju lepÅ¡Ã­ zbroj."; 
 };
 
 FUNC int  TPL_1402_GorNaToth_ARMOR_Condition()
@@ -173,8 +173,8 @@ FUNC int  TPL_1402_GorNaToth_ARMOR_Condition()
 };
 FUNC void  TPL_1402_GorNaToth_ARMOR_Info()
 {
-	AI_Output				(other, self,"Info_GorNaToth_ARMOR_15_01"); //Potøebuji lepší zbroj.
-	AI_Output				(self, other,"Info_GorNaToth_ARMOR_11_02"); //Mohl bych ti dát lepší zbroj, ale musíš poskytnout Bratrstvu šlechetnı pøíspìvek.
+	AI_Output				(other, self,"Info_GorNaToth_ARMOR_15_01"); //PotÅ™ebuji lepÅ¡Ã­ zbroj.
+	AI_Output				(self, other,"Info_GorNaToth_ARMOR_11_02"); //Mohl bych ti dÃ¡t lepÅ¡Ã­ zbroj, ale musÃ­Å¡ poskytnout Bratrstvu Å¡lechetnÃ½ pÅ™Ã­spÄ›vek.
 
 	Info_ClearChoices		(TPL_1402_GorNaToth_ARMOR);
 	Info_AddChoice			(TPL_1402_GorNaToth_ARMOR,	DIALOG_BACK	,	TPL_1402_GorNaToth_ARMOR_BACK);	
@@ -186,19 +186,19 @@ FUNC void  TPL_1402_GorNaToth_ARMOR_Info()
 
 func void TPL_1402_GorNaToth_ARMOR_M ()
 {
-	AI_Output				(hero, self,"Info_GorNaToth_ARMOR_M_15_01"); //Chtìl bych støední templáøskou zbroj.
+	AI_Output				(hero, self,"Info_GorNaToth_ARMOR_M_15_01"); //ChtÄ›l bych stÅ™ednÃ­ templÃ¡Å™skou zbroj.
 
 	if (Kapitel < 3)
 	{
-		AI_Output			(self, hero,"Info_GorNaToth_ARMOR_M_11_02"); //Ještì nemáš dost zkušeností! Proka svou vánost jako templáø a pak budeš hoden nosit lepší zbroj.
+		AI_Output			(self, hero,"Info_GorNaToth_ARMOR_M_11_02"); //JeÅ¡tÄ› nemÃ¡Å¡ dost zkuÅ¡enostÃ­! ProkaÅ¾ svou vÃ¡Å¾nost jako templÃ¡Å™ a pak budeÅ¡ hoden nosit lepÅ¡Ã­ zbroj.
 	}
 	else if (Npc_HasItems(hero, ItMiNugget)<VALUE_TPL_ARMOR_M)
 	{
-		AI_Output			(self, hero,"Info_GorNaToth_ARMOR_M_11_03"); //Jakmile budeš schopen naší komunitì poskytnout pøíslušnı dar, budeš mít lepší zbroj!
+		AI_Output			(self, hero,"Info_GorNaToth_ARMOR_M_11_03"); //Jakmile budeÅ¡ schopen naÅ¡Ã­ komunitÄ› poskytnout pÅ™Ã­sluÅ¡nÃ½ dar, budeÅ¡ mÃ­t lepÅ¡Ã­ zbroj!
 	}
 	else
 	{
-		AI_Output			(self, hero,"Info_GorNaToth_ARMOR_M_11_04"); //Teï, kdy jsi schopen poskytnout pøíslušnı dar, bude tì chránit nová zbroj.
+		AI_Output			(self, hero,"Info_GorNaToth_ARMOR_M_11_04"); //TeÄ, kdyÅ¾ jsi schopen poskytnout pÅ™Ã­sluÅ¡nÃ½ dar, bude tÄ› chrÃ¡nit novÃ¡ zbroj.
 		B_GiveInvItems	    (hero, self, ItMiNugget,	VALUE_TPL_ARMOR_M);
 		
 		CreateInvItem		(hero, TPL_ARMOR_M);
@@ -215,23 +215,23 @@ func void TPL_1402_GorNaToth_ARMOR_M ()
 
 func void TPL_1402_GorNaToth_ARMOR_H ()
 {
-	AI_Output				(hero, self,"Info_GorNaToth_ARMOR_H_15_01"); //Rád bych tìkou templáøskou zbroj.
+	AI_Output				(hero, self,"Info_GorNaToth_ARMOR_H_15_01"); //RÃ¡d bych tÄ›Å¾kou templÃ¡Å™skou zbroj.
 
 	if (Kapitel < 4)
 	{
-		AI_Output			(self, hero,"Info_GorNaToth_ARMOR_H_11_02"); //Ještì nemáš dost zkušeností! Proka svou vánost jako èlen naší komunity a pak budeš hoden nosit takovouto vybranou zbroj.
+		AI_Output			(self, hero,"Info_GorNaToth_ARMOR_H_11_02"); //JeÅ¡tÄ› nemÃ¡Å¡ dost zkuÅ¡enostÃ­! ProkaÅ¾ svou vÃ¡Å¾nost jako Älen naÅ¡Ã­ komunity a pak budeÅ¡ hoden nosit takovouto vybranou zbroj.
 	}
 	else if (Npc_HasItems(hero, ItMiNugget)<VALUE_TPL_ARMOR_H)
 	{
-		AI_Output			(self, hero,"Info_GorNaToth_ARMOR_H_11_03"); //Zaslouil sis nosit takovouhle zbroj, ale v tomto okamiku nejsi schopen poskytnout komunitì pøíslušnı dar.
+		AI_Output			(self, hero,"Info_GorNaToth_ARMOR_H_11_03"); //ZaslouÅ¾il sis nosit takovouhle zbroj, ale v tomto okamÅ¾iku nejsi schopen poskytnout komunitÄ› pÅ™Ã­sluÅ¡nÃ½ dar.
 	}
 	else
 	{
-		AI_Output			(self, hero,"Info_GorNaToth_ARMOR_H_11_04"); //On tohohle okamiku nos tuto zbroj jako znamení nejvyšší cti!
+		AI_Output			(self, hero,"Info_GorNaToth_ARMOR_H_11_04"); //On tohohle okamÅ¾iku nos tuto zbroj jako znamenÃ­ nejvyÅ¡Å¡Ã­ cti!
 
 		B_GiveInvItems  	(hero, self, ItMiNugget,VALUE_TPL_ARMOR_H);
 
-		CreateInvItem		(self, ItAmArrow);				//SN: Kronkelgegenstand, damit die Bildschrimausgabe "1 Gegenstand erhalten" stimmt (Rüstung geht nicht, da dann immer Gor Na Toth seine eigene erst auszieht, und eine Sekunde nackt dasteht)
+		CreateInvItem		(self, ItAmArrow);				//SN: Kronkelgegenstand, damit die Bildschrimausgabe "1 Gegenstand erhalten" stimmt (RÃ¼stung geht nicht, da dann immer Gor Na Toth seine eigene erst auszieht, und eine Sekunde nackt dasteht)
 		B_GiveInvItems  	(self, hero, ItAmArrow, 1);
 		Npc_RemoveInvItem	(hero,	ItAmArrow);
 
@@ -245,7 +245,7 @@ func void TPL_1402_GorNaToth_ARMOR_H ()
 func void TPL_1402_GorNaToth_ARMOR_BACK ()
 {
 	AI_Output				(hero, self,"Info_GorNaToth_ARMOR_BACK_15_01"); //Rozmyslel jsem se!
-	AI_Output				(self, hero,"Info_GorNaToth_ARMOR_BACK_11_02"); //Jak chceš. Víš, kde mì najdeš!
+	AI_Output				(self, hero,"Info_GorNaToth_ARMOR_BACK_11_02"); //Jak chceÅ¡. VÃ­Å¡, kde mÄ› najdeÅ¡!
 
 	Info_ClearChoices		(TPL_1402_GorNaToth_ARMOR);
 };
@@ -261,7 +261,7 @@ INSTANCE TPL_1402_GorNaToth_Teach(C_INFO)
 	condition	= TPL_1402_GorNaToth_Teach_Condition;
 	information	= TPL_1402_GorNaToth_Teach_Info;
 	permanent	= 1;
-	description = "Mùeš mì cvièit?";
+	description = "MÅ¯Å¾eÅ¡ mÄ› cviÄit?";
 };                       
 
 FUNC INT TPL_1402_GorNaToth_Teach_Condition()
@@ -274,8 +274,8 @@ FUNC INT TPL_1402_GorNaToth_Teach_Condition()
 
 FUNC VOID TPL_1402_GorNaToth_Teach_Info()
 {
-	AI_Output			(other,self,"TPL_1402_GorNaToth_Teach_15_00"); //Mùeš mì cvièit?
-	AI_Output			(self,other,"TPL_1402_GorNaToth_Teach_11_01"); //Síla a obratnost jsou zrovna tak dùleité jako síla mysli.
+	AI_Output			(other,self,"TPL_1402_GorNaToth_Teach_15_00"); //MÅ¯Å¾eÅ¡ mÄ› cviÄit?
+	AI_Output			(self,other,"TPL_1402_GorNaToth_Teach_11_01"); //SÃ­la a obratnost jsou zrovna tak dÅ¯leÅ¾itÃ© jako sÃ­la mysli.
 	
 	Info_ClearChoices	(TPL_1402_GorNaToth_Teach);
 	Info_AddChoice		(TPL_1402_GorNaToth_Teach,DIALOG_BACK									,TPL_1402_GorNaToth_Teach_BACK);
@@ -289,7 +289,7 @@ FUNC VOID TPL_1402_GorNaToth_Teach_Info()
 	if (log_gornatothtrain == FALSE)
 	{
 		Log_CreateTopic   	(GE_TeacherPSI,LOG_NOTE);
-		B_LogEntry			(GE_TeacherPSI,"Templáø Gor Na Toth mi mùe pomoci zvıšit moji SÍLU, OBRATNOST a MAGICKOU ENERGII.");
+		B_LogEntry			(GE_TeacherPSI,"TemplÃ¡Å™ Gor Na Toth mi mÅ¯Å¾e pomoci zvÃ½Å¡it moji SÃLU, OBRATNOST a MAGICKOU ENERGII.");
 		log_gornatothtrain = TRUE;
 	};
 };
@@ -404,20 +404,20 @@ FUNC void  TPL_1402_GorNaToth_TRAIN_Info()
 	if	(log_gornatothfight == FALSE) 
 	{
 		Log_CreateTopic   	(GE_TeacherPSI,LOG_NOTE);
-		B_LogEntry			(GE_TeacherPSI,"Templáø Gor Na Toth mì mùe nauèit bojovat s JEDNORUÈNÍMI zbranìmi.");
+		B_LogEntry			(GE_TeacherPSI,"TemplÃ¡Å™ Gor Na Toth mÄ› mÅ¯Å¾e nauÄit bojovat s JEDNORUÄŒNÃMI zbranÄ›mi.");
 		log_gornatothfight = TRUE;
 	};
-	AI_Output (other, self,"TPL_1402_GorNaToth_TRAIN_Info_15_00"); //Chci se zlepšit v ovládání jednoruèního meèe.
+	AI_Output (other, self,"TPL_1402_GorNaToth_TRAIN_Info_15_00"); //Chci se zlepÅ¡it v ovlÃ¡dÃ¡nÃ­ jednoruÄnÃ­ho meÄe.
 	
 	if B_GiveSkill(hero,NPC_TALENT_1H,1,LPCOST_TALENT_1H_1)
 	{
-		AI_Output			(self,other,"TPL_1402_GorNaToth_TRAIN_11_01"); //To je dobré rozhodnutí! Ještì ne se zaèneš uèit techniku, musíš se nauèit správnì dret zbraò.
-		AI_Output			(self,other,"TPL_1402_GorNaToth_TRAIN_11_02"); //Zaèáteèníci obyèejnì mívají snahu dret jednoruèní meè obìma rukama. Tímto zpùsobem rozhodnì nezaèínej, to není dobré.
-		AI_Output			(self,other,"TPL_1402_GorNaToth_TRAIN_11_03"); //Dr zbraò v jedné ruce, èepelí vzhùru a šermuj s ní.
-		AI_Output			(self,other,"TPL_1402_GorNaToth_TRAIN_11_04"); //Musíš se nauèit sladit pohyb zbranì s pohybem svého tìla. Tak budeš pøi útoku rychlejší.
-		AI_Output			(self,other,"TPL_1402_GorNaToth_TRAIN_11_05"); //Kdy si zapamatuješ, co jsem tì nauèil, tak bude tvùj boj v budoucnu elegantnìjší a rychlejší.
-		AI_Output			(self,other,"TPL_1402_GorNaToth_TRAIN_11_06"); //Ovšem, ještì jednu vìc: Nìkteré údery zpùsobí vìtší škodu ne ostatní. Jako zaèáteèníkovi se ti nebude èasto dostávat šance rozhodujících úderù.
-		AI_Output			(self,other,"TPL_1402_GorNaToth_TRAIN_11_07"); //Ale èasem budeš dìlat pokroky a zlepšíš se.
+		AI_Output			(self,other,"TPL_1402_GorNaToth_TRAIN_11_01"); //To je dobrÃ© rozhodnutÃ­! JeÅ¡tÄ› neÅ¾ se zaÄneÅ¡ uÄit techniku, musÃ­Å¡ se nauÄit sprÃ¡vnÄ› drÅ¾et zbraÅˆ.
+		AI_Output			(self,other,"TPL_1402_GorNaToth_TRAIN_11_02"); //ZaÄÃ¡teÄnÃ­ci obyÄejnÄ› mÃ­vajÃ­ snahu drÅ¾et jednoruÄnÃ­ meÄ obÄ›ma rukama. TÃ­mto zpÅ¯sobem rozhodnÄ› nezaÄÃ­nej, to nenÃ­ dobrÃ©.
+		AI_Output			(self,other,"TPL_1402_GorNaToth_TRAIN_11_03"); //DrÅ¾ zbraÅˆ v jednÃ© ruce, ÄepelÃ­ vzhÅ¯ru a Å¡ermuj s nÃ­.
+		AI_Output			(self,other,"TPL_1402_GorNaToth_TRAIN_11_04"); //MusÃ­Å¡ se nauÄit sladit pohyb zbranÄ› s pohybem svÃ©ho tÄ›la. Tak budeÅ¡ pÅ™i Ãºtoku rychlejÅ¡Ã­.
+		AI_Output			(self,other,"TPL_1402_GorNaToth_TRAIN_11_05"); //KdyÅ¾ si zapamatujeÅ¡, co jsem tÄ› nauÄil, tak bude tvÅ¯j boj v budoucnu elegantnÄ›jÅ¡Ã­ a rychlejÅ¡Ã­.
+		AI_Output			(self,other,"TPL_1402_GorNaToth_TRAIN_11_06"); //OvÅ¡em, jeÅ¡tÄ› jednu vÄ›c: NÄ›kterÃ© Ãºdery zpÅ¯sobÃ­ vÄ›tÅ¡Ã­ Å¡kodu neÅ¾ ostatnÃ­. Jako zaÄÃ¡teÄnÃ­kovi se ti nebude Äasto dostÃ¡vat Å¡ance rozhodujÃ­cÃ­ch ÃºderÅ¯.
+		AI_Output			(self,other,"TPL_1402_GorNaToth_TRAIN_11_07"); //Ale Äasem budeÅ¡ dÄ›lat pokroky a zlepÅ¡Ã­Å¡ se.
 		TPL_1402_GorNaToth_TRAIN.permanent = 0;
 
 		AI_StopProcessInfos	(self);
@@ -449,13 +449,13 @@ FUNC int  TPL_1402_GorNaToth_TRAINAGAIN_Condition()
 };
 FUNC void  TPL_1402_GorNaToth_TRAINAGAIN_Info()
 {
-	AI_Output (other, self,"TPL_1402_GorNaToth_TRAINAGAIN_Info_15_01"); //Nauè mì ještì lépe ovládat jednoruèní meè.
+	AI_Output (other, self,"TPL_1402_GorNaToth_TRAINAGAIN_Info_15_01"); //NauÄ mÄ› jeÅ¡tÄ› lÃ©pe ovlÃ¡dat jednoruÄnÃ­ meÄ.
 	if B_GiveSkill(hero,NPC_TALENT_1H,2,LPCOST_TALENT_1H_2)
 	{
-		AI_Output (self, other,"TPL_1402_GorNaToth_TRAINAGAIN_Info_11_02"); //Dobrá, základy znáš. Kdy podríš zbraò ní, umoní ti to mnohem silnìji vést první švih.
-		AI_Output (self, other,"TPL_1402_GorNaToth_TRAINAGAIN_Info_11_03"); //Musíš se hıbat, pamatuješ? Dobøe, teï musíš ještì víc pracovat tìlem. Po druhém úderu se otoè. To protivníka zmate a tobì to umoní zaujmout optimální pozici.
-		AI_Output (self, other,"TPL_1402_GorNaToth_TRAINAGAIN_Info_11_04"); //Ještì jednou veï èepel zprava doleva.
-		AI_Output (self, other,"TPL_1402_GorNaToth_TRAINAGAIN_Info_11_05"); //A znovu kupøedu. Nezapomeò: cvièením k dokonalosti. Take vzhùru do toho, aby ses stal mistrem jednoruèního meèe.
+		AI_Output (self, other,"TPL_1402_GorNaToth_TRAINAGAIN_Info_11_02"); //DobrÃ¡, zÃ¡klady znÃ¡Å¡. KdyÅ¾ podrÅ¾Ã­Å¡ zbraÅˆ nÃ­Å¾, umoÅ¾nÃ­ ti to mnohem silnÄ›ji vÃ©st prvnÃ­ Å¡vih.
+		AI_Output (self, other,"TPL_1402_GorNaToth_TRAINAGAIN_Info_11_03"); //MusÃ­Å¡ se hÃ½bat, pamatujeÅ¡? DobÅ™e, teÄ musÃ­Å¡ jeÅ¡tÄ› vÃ­c pracovat tÄ›lem. Po druhÃ©m Ãºderu se otoÄ. To protivnÃ­ka zmate a tobÄ› to umoÅ¾nÃ­ zaujmout optimÃ¡lnÃ­ pozici.
+		AI_Output (self, other,"TPL_1402_GorNaToth_TRAINAGAIN_Info_11_04"); //JeÅ¡tÄ› jednou veÄ Äepel zprava doleva.
+		AI_Output (self, other,"TPL_1402_GorNaToth_TRAINAGAIN_Info_11_05"); //A znovu kupÅ™edu. NezapomeÅˆ: cviÄenÃ­m k dokonalosti. TakÅ¾e vzhÅ¯ru do toho, aby ses stal mistrem jednoruÄnÃ­ho meÄe.
 		TPL_1402_GorNaToth_TRAINAGAIN.permanent = 0;
 
 		AI_StopProcessInfos	(self);

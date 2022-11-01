@@ -30,7 +30,7 @@ FUNC VOID  Org_826_Mordrag_Exit_Info()
 };
 
 // **************************************************
-//					Erste Begrüssung
+//					Erste BegrÃ¼ssung
 // **************************************************
 
 instance  Org_826_Mordrag_Greet (C_INFO)
@@ -53,7 +53,7 @@ FUNC int  Org_826_Mordrag_Greet_Condition()
 
 FUNC VOID  Org_826_Mordrag_Greet_Info()
 {
-	AI_Output (self, other,"Org_826_Mordrag_Greet_11_00"); //Hej, ty novej! Já jsem Mordrag. To jméno by sis mìl zapamatovat - ode mì mùeš koupit jakékoliv zboí za dobrou cenu!
+	AI_Output (self, other,"Org_826_Mordrag_Greet_11_00"); //Hej, ty novej! JÃ¡ jsem Mordrag. To jmÃ©no by sis mÄ›l zapamatovat - ode mÄ› mÅ¯Å¾eÅ¡ koupit jakÃ©koliv zboÅ¾Ã­ za dobrou cenu!
 };
 
 // **************************************************
@@ -69,7 +69,7 @@ instance  Org_826_Mordrag_Trade (C_INFO)
 	condition	= Org_826_Mordrag_Trade_Condition;
 	information	= Org_826_Mordrag_Trade_Info;
 	permanent	= 1;
-	description = "Uka mi svoje zboí.";
+	description = "UkaÅ¾ mi svoje zboÅ¾Ã­.";
 	trade		= 1;
 };                       
 
@@ -80,18 +80,18 @@ func int  Org_826_Mordrag_Trade_Condition()
 
 FUNC VOID  Org_826_Mordrag_Trade_Info()
 {
-	AI_Output (other, self,"Org_826_Mordrag_Trade_15_00"); //Uka mi tvoje zboí.
-	AI_Output (self, other,"Org_826_Mordrag_Trade_11_01"); //Nìco si vyber...
+	AI_Output (other, self,"Org_826_Mordrag_Trade_15_00"); //UkaÅ¾ mi tvoje zboÅ¾Ã­.
+	AI_Output (self, other,"Org_826_Mordrag_Trade_11_01"); //NÄ›co si vyber...
 	if	(Mordrag_Traded==0)
 	{
 		Log_CreateTopic	(GE_TraderOC,	LOG_NOTE);
-		B_LogEntry		(GE_TraderOC,"Bandita Mordrag prodává na trišti kradené zboí.");
+		B_LogEntry		(GE_TraderOC,"Bandita Mordrag prodÃ¡vÃ¡ na trÅ¾iÅ¡ti kradenÃ© zboÅ¾Ã­.");
 		Mordrag_Traded=1;
 	};
 };
 
 // **************************************************
-//					KURIER FÜR MAGIER
+//					KURIER FÃœR MAGIER
 // **************************************************
 
 instance  Org_826_Mordrag_Courier (C_INFO)
@@ -101,7 +101,7 @@ instance  Org_826_Mordrag_Courier (C_INFO)
 	condition	= Org_826_Mordrag_Courier_Condition;
 	information	= Org_826_Mordrag_Courier_Info;
 	permanent	= 1;
-	description = "Jsi doopravdy kurır mágù?";
+	description = "Jsi doopravdy kurÃ½r mÃ¡gÅ¯?";
 };                       
 
 FUNC int  Org_826_Mordrag_Courier_Condition()
@@ -114,10 +114,10 @@ FUNC int  Org_826_Mordrag_Courier_Condition()
 
 FUNC VOID  Org_826_Mordrag_Courier_Info()
 {
-	AI_Output (other, self,"Org_826_Mordrag_Courier_15_00"); //Jsi doopravdy kurır mágù?
-	AI_Output (self, other,"Org_826_Mordrag_Courier_11_01"); //A co kdy jsem?
-	AI_Output (other, self,"Org_826_Mordrag_Courier_15_02"); //Potøeboval bych si promluvit s mágy. Musím se dostat do hradu.
-	AI_Output (self, other,"Org_826_Mordrag_Courier_11_03"); //Kurıøi mágù nosí znak, kterı jim umoní vstup na hrad. Jestli jsi jeden z nás, pak bys mìl mít takovı znak...
+	AI_Output (other, self,"Org_826_Mordrag_Courier_15_00"); //Jsi doopravdy kurÃ½r mÃ¡gÅ¯?
+	AI_Output (self, other,"Org_826_Mordrag_Courier_11_01"); //A co kdyÅ¾ jsem?
+	AI_Output (other, self,"Org_826_Mordrag_Courier_15_02"); //PotÅ™eboval bych si promluvit s mÃ¡gy. MusÃ­m se dostat do hradu.
+	AI_Output (self, other,"Org_826_Mordrag_Courier_11_03"); //KurÃ½Å™i mÃ¡gÅ¯ nosÃ­ znak, kterÃ½ jim umoÅ¾nÃ­ vstup na hrad. Jestli jsi jeden z nÃ¡s, pak bys mÄ›l mÃ­t takovÃ½ znak...
 };
 
 // **************************************************
@@ -131,7 +131,7 @@ instance  Org_826_Mordrag_Problem (C_INFO)
 	condition	= Org_826_Mordrag_Problem_Condition;
 	information	= Org_826_Mordrag_Problem_Info;
 	permanent	= 0;
-	description = "Máš problém.";
+	description = "MÃ¡Å¡ problÃ©m.";
 };                       
 
 FUNC int  Org_826_Mordrag_Problem_Condition()
@@ -144,13 +144,13 @@ FUNC int  Org_826_Mordrag_Problem_Condition()
 
 FUNC VOID  Org_826_Mordrag_Problem_Info()
 {
-	AI_Output (other, self,"Org_826_Mordrag_Problem_15_00"); //Máš problém.
-	AI_Output (self, other,"Org_826_Mordrag_Problem_11_01"); //Opravdu? Co se dìje?
-	AI_Output (other, self,"Org_826_Mordrag_Problem_15_02"); //Jsou tady lidi, kteøí se tì chtìjí zbavit.
-	AI_Output (self, other,"Org_826_Mordrag_Problem_11_03"); //Opravdu? Pak jim mùeš øíci, e by mìli nìkoho vyslat, aby jim splnil jejich pøání.
-	AI_Output (other, self,"Org_826_Mordrag_Problem_15_04"); //Jak si mùeš bıt tak jistı, e nejsem ten, kdo to má udìlat?
-	AI_Output (self, other,"Org_826_Mordrag_Problem_11_05"); //Protoe si myslím, e na to jsi pøíliš bystrı, chlapèe. Brzy si uvìdomíš, e je lepší stát proti Gomezovi, ne pro nìj pracovat.
-	AI_Output (self, other,"Org_826_Mordrag_Problem_11_06"); //V Novém táboøe hodnì potøebujeme schopné lidi a nikdo ti tam nebude pøikazovat, co máš dìlat.
+	AI_Output (other, self,"Org_826_Mordrag_Problem_15_00"); //MÃ¡Å¡ problÃ©m.
+	AI_Output (self, other,"Org_826_Mordrag_Problem_11_01"); //Opravdu? Co se dÄ›je?
+	AI_Output (other, self,"Org_826_Mordrag_Problem_15_02"); //Jsou tady lidi, kteÅ™Ã­ se tÄ› chtÄ›jÃ­ zbavit.
+	AI_Output (self, other,"Org_826_Mordrag_Problem_11_03"); //Opravdu? Pak jim mÅ¯Å¾eÅ¡ Å™Ã­ci, Å¾e by mÄ›li nÄ›koho vyslat, aby jim splnil jejich pÅ™Ã¡nÃ­.
+	AI_Output (other, self,"Org_826_Mordrag_Problem_15_04"); //Jak si mÅ¯Å¾eÅ¡ bÃ½t tak jistÃ½, Å¾e nejsem ten, kdo to mÃ¡ udÄ›lat?
+	AI_Output (self, other,"Org_826_Mordrag_Problem_11_05"); //ProtoÅ¾e si myslÃ­m, Å¾e na to jsi pÅ™Ã­liÅ¡ bystrÃ½, chlapÄe. Brzy si uvÄ›domÃ­Å¡, Å¾e je lepÅ¡Ã­ stÃ¡t proti Gomezovi, neÅ¾ pro nÄ›j pracovat.
+	AI_Output (self, other,"Org_826_Mordrag_Problem_11_06"); //V NovÃ©m tÃ¡boÅ™e hodnÄ› potÅ™ebujeme schopnÃ© lidi a nikdo ti tam nebude pÅ™ikazovat, co mÃ¡Å¡ dÄ›lat.
 };
 
 // **************************************************
@@ -164,7 +164,7 @@ instance  Org_826_Mordrag_NCInfo(C_INFO)
 	condition	= Org_826_Mordrag_NCInfo_Condition;
 	information	= Org_826_Mordrag_NCInfo_Info;
 	permanent	= 0;
-	description = "Povìz mi víc o Novém táboøe.";
+	description = "PovÄ›z mi vÃ­c o NovÃ©m tÃ¡boÅ™e.";
 };                       
 
 FUNC int  Org_826_Mordrag_NCInfo_Condition()
@@ -177,12 +177,12 @@ FUNC int  Org_826_Mordrag_NCInfo_Condition()
 
 FUNC VOID  Org_826_Mordrag_NCInfo_Info()
 {
-	AI_Output (other, self,"Org_826_Mordrag_NCInfo_15_00"); //Povìz mi víc o Novém táboøe.
-	AI_Output (self, other,"Org_826_Mordrag_NCInfo_11_01"); //Je to tábor, ve kterém máš nejvìtší svobodu v celé kolonii. Nemáme ádné Rudobarony ani Guru, kteøí by nám šéfovali.
-	AI_Output (self, other,"Org_826_Mordrag_NCInfo_11_02"); //Máme vlastní dùl. Ale ruda, kterou vyrábíme, neputuje k ádnému zpropadenému králi!
-	AI_Output (other, self,"Org_826_Mordrag_NCInfo_15_03"); //Tak k èemu se pouívá?
-	AI_Output (self, other,"Org_826_Mordrag_NCInfo_11_04"); //Naši mágové pracují na plánu, jak prolomit Bariéru. Všechna ruda se shromaïuje pro tento plán.
-	AI_Output (self, other,"Org_826_Mordrag_NCInfo_11_05"); //Zatímco se Gomez a jeho lidé povalují, my se døeme za svobodu - to je to, co se dìje.
+	AI_Output (other, self,"Org_826_Mordrag_NCInfo_15_00"); //PovÄ›z mi vÃ­c o NovÃ©m tÃ¡boÅ™e.
+	AI_Output (self, other,"Org_826_Mordrag_NCInfo_11_01"); //Je to tÃ¡bor, ve kterÃ©m mÃ¡Å¡ nejvÄ›tÅ¡Ã­ svobodu v celÃ© kolonii. NemÃ¡me Å¾Ã¡dnÃ© Rudobarony ani Guru, kteÅ™Ã­ by nÃ¡m Å¡Ã©fovali.
+	AI_Output (self, other,"Org_826_Mordrag_NCInfo_11_02"); //MÃ¡me vlastnÃ­ dÅ¯l. Ale ruda, kterou vyrÃ¡bÃ­me, neputuje k Å¾Ã¡dnÃ©mu zpropadenÃ©mu krÃ¡li!
+	AI_Output (other, self,"Org_826_Mordrag_NCInfo_15_03"); //Tak k Äemu se pouÅ¾Ã­vÃ¡?
+	AI_Output (self, other,"Org_826_Mordrag_NCInfo_11_04"); //NaÅ¡i mÃ¡govÃ© pracujÃ­ na plÃ¡nu, jak prolomit BariÃ©ru. VÅ¡echna ruda se shromaÅ¾Äuje pro tento plÃ¡n.
+	AI_Output (self, other,"Org_826_Mordrag_NCInfo_11_05"); //ZatÃ­mco se Gomez a jeho lidÃ© povalujÃ­, my se dÅ™eme za svobodu - to je to, co se dÄ›je.
 };
 
 // **************************************************
@@ -196,7 +196,7 @@ instance  Org_826_Mordrag_JoinNewcamp(C_INFO)
 	condition	= Org_826_Mordrag_JoinNewcamp_Condition;
 	information	= Org_826_Mordrag_JoinNewcamp_Info;
 	permanent	= 0;
-	description = "A kdybych se chtìl pøidat k Novému táboru... mohl bys mi pomoci?";//könntest du mir dabei helfen... ZU LANG
+	description = "A kdybych se chtÄ›l pÅ™idat k NovÃ©mu tÃ¡boru... mohl bys mi pomoci?";//kÃ¶nntest du mir dabei helfen... ZU LANG
 };                       
 
 FUNC int  Org_826_Mordrag_JoinNewcamp_Condition()
@@ -209,9 +209,9 @@ FUNC int  Org_826_Mordrag_JoinNewcamp_Condition()
 
 FUNC VOID  Org_826_Mordrag_JoinNewcamp_Info()
 {
-	AI_Output (other, self,"Org_826_Mordrag_JoinNewcamp_15_00"); //A kdybych se chtìl pøidat k Novému táboru... mohl bys mi pomoci?
-	AI_Output (self, other,"Org_826_Mordrag_JoinNewcamp_11_01"); //Jestli to myslíš vánì, mùeme hned jít! Zavedu tì k Laresovi. Je hlavou tlupy.
-	AI_Output (self, other,"Org_826_Mordrag_JoinNewcamp_11_02"); //Ale jestli mì chceš radìji zmlátit nìkde mimo tábor... Dobrá, do toho!
+	AI_Output (other, self,"Org_826_Mordrag_JoinNewcamp_15_00"); //A kdybych se chtÄ›l pÅ™idat k NovÃ©mu tÃ¡boru... mohl bys mi pomoci?
+	AI_Output (self, other,"Org_826_Mordrag_JoinNewcamp_11_01"); //Jestli to myslÃ­Å¡ vÃ¡Å¾nÄ›, mÅ¯Å¾eme hned jÃ­t! Zavedu tÄ› k Laresovi. Je hlavou tlupy.
+	AI_Output (self, other,"Org_826_Mordrag_JoinNewcamp_11_02"); //Ale jestli mÄ› chceÅ¡ radÄ›ji zmlÃ¡tit nÄ›kde mimo tÃ¡bor... DobrÃ¡, do toho!
 };
 
 
@@ -222,7 +222,7 @@ instance  Org_826_Mordrag_GotoNewcamp(C_INFO)
 	condition	= Org_826_Mordrag_GotoNewcamp_Condition;
 	information	= Org_826_Mordrag_GotoNewcamp_Info;
 	permanent	= 0;
-	description = "Tak pojïme do Nového tábora!";
+	description = "Tak pojÄme do NovÃ©ho tÃ¡bora!";
 };                       
 
 FUNC int  Org_826_Mordrag_GotoNewcamp_Condition()
@@ -235,8 +235,8 @@ FUNC int  Org_826_Mordrag_GotoNewcamp_Condition()
 
 FUNC VOID  Org_826_Mordrag_GotoNewcamp_Info()
 {
-	AI_Output (other, self,"Org_826_Mordrag_GotoNewcamp_15_00"); //Tak pojïme do Nového tábora!
-	AI_Output (self, other,"Org_826_Mordrag_GotoNewcamp_11_01"); //Dobøe! Následuj mì.
+	AI_Output (other, self,"Org_826_Mordrag_GotoNewcamp_15_00"); //Tak pojÄme do NovÃ©ho tÃ¡bora!
+	AI_Output (self, other,"Org_826_Mordrag_GotoNewcamp_11_01"); //DobÅ™e! NÃ¡sleduj mÄ›.
 	
 	Mordrag_GotoNC_Day = Wld_GetDay();
 	
@@ -249,7 +249,7 @@ FUNC VOID  Org_826_Mordrag_GotoNewcamp_Info()
 		Log_CreateTopic		(CH1_JoinNC, LOG_MISSION);
 		Log_SetTopicStatus	(CH1_JoinNC, LOG_RUNNING);
 	};
-	B_LogEntry				(CH1_JoinNC,"Mordrag mi slíbil, e mi ukáe cestu do Nového tábora. Doufám, e to není léèka!");
+	B_LogEntry				(CH1_JoinNC,"Mordrag mi slÃ­bil, Å¾e mi ukÃ¡Å¾e cestu do NovÃ©ho tÃ¡bora. DoufÃ¡m, Å¾e to nenÃ­ lÃ©Äka!");
 
 	self.aivar[AIV_PARTYMEMBER] = TRUE;
 	
@@ -287,19 +287,19 @@ FUNC VOID  Org_826_Mordrag_AtNewcamp_Info()
 	}
 	else
 	{
-		AI_Output (self, other,"Org_826_Mordrag_AtNewcamp_LATE_11_00"); //Myslel jsem, e u nikdy nepøijdeš! Nevadí - jsme tady!
+		AI_Output (self, other,"Org_826_Mordrag_AtNewcamp_LATE_11_00"); //Myslel jsem, Å¾e uÅ¾ nikdy nepÅ™ijdeÅ¡! NevadÃ­ - jsme tady!
 	};
-	AI_Output (self, other,"Org_826_Mordrag_AtNewcamp_11_01"); //Jakmile projdeš branou, budeš v Novém táboøe. Promluv si s Laresem. Pomùe ti. Dej mu tohle. Je to nádhernı prsten.
-	AI_Output (self, other,"Org_826_Mordrag_AtNewcamp_11_02"); //To je tvoje vstupenka k Laresovi. Musíš mít dobrı dùvod, abys ho mohl navštívit.
-	AI_Output (self, other,"Org_826_Mordrag_AtNewcamp_11_03"); //Dobrá, jak o tom pøemıšlím, myslím, e tady na nìjakı èas zùstanu. U jsem vydìlal dost a ve Starém táboøe je teï trochu dusno.
-	AI_Output (self, other,"Org_826_Mordrag_AtNewcamp_11_04"); //Jestli chceš, pøijï za mnou do baru - to je ta chatrè na jezeøe. Dávej pozor!
-	AI_Output (other, self,"Org_826_Mordrag_AtNewcamp_15_05"); //Uvidíme se!
+	AI_Output (self, other,"Org_826_Mordrag_AtNewcamp_11_01"); //Jakmile projdeÅ¡ branou, budeÅ¡ v NovÃ©m tÃ¡boÅ™e. Promluv si s Laresem. PomÅ¯Å¾e ti. Dej mu tohle. Je to nÃ¡dhernÃ½ prsten.
+	AI_Output (self, other,"Org_826_Mordrag_AtNewcamp_11_02"); //To je tvoje vstupenka k Laresovi. MusÃ­Å¡ mÃ­t dobrÃ½ dÅ¯vod, abys ho mohl navÅ¡tÃ­vit.
+	AI_Output (self, other,"Org_826_Mordrag_AtNewcamp_11_03"); //DobrÃ¡, jak o tom pÅ™emÃ½Å¡lÃ­m, myslÃ­m, Å¾e tady na nÄ›jakÃ½ Äas zÅ¯stanu. UÅ¾ jsem vydÄ›lal dost a ve StarÃ©m tÃ¡boÅ™e je teÄ trochu dusno.
+	AI_Output (self, other,"Org_826_Mordrag_AtNewcamp_11_04"); //Jestli chceÅ¡, pÅ™ijÄ za mnou do baru - to je ta chatrÄ na jezeÅ™e. DÃ¡vej pozor!
+	AI_Output (other, self,"Org_826_Mordrag_AtNewcamp_15_05"); //UvidÃ­me se!
 	
 	CreateInvItems  (self, MordragsRing, 1);
 	B_GiveInvItems	(self, other, MordragsRing, 1);
 
 	B_GiveXP		(XP_ArrivedWithMordrag);	
-	B_LogEntry		(CH1_JoinNC,"Stojíme u pøední brány Nového tábora a Mordrag mi dal prsten, kterı mám ukázat vùdci banditù Laresovi, pokud se chci pøidat k Novému táboru. Mordrag se chce na chvilku zastavit v baru na jezeøe.");
+	B_LogEntry		(CH1_JoinNC,"StojÃ­me u pÅ™ednÃ­ brÃ¡ny NovÃ©ho tÃ¡bora a Mordrag mi dal prsten, kterÃ½ mÃ¡m ukÃ¡zat vÅ¯dci banditÅ¯ Laresovi, pokud se chci pÅ™idat k NovÃ©mu tÃ¡boru. Mordrag se chce na chvilku zastavit v baru na jezeÅ™e.");
 	var C_NPC lares; lares = Hlp_GetNpc(Org_801_Lares);
 	Lares.aivar [AIV_FINDABLE]=TRUE;
 	
@@ -322,7 +322,7 @@ instance  Org_826_Mordrag_Fight (C_INFO)
 	condition	= Org_826_Mordrag_Fight_Condition;
 	information	= Org_826_Mordrag_Fight_Info;
 	permanent	= 0;
-	description = "Tenhle tábor není pro nás dva dost velkı!";
+	description = "Tenhle tÃ¡bor nenÃ­ pro nÃ¡s dva dost velkÃ½!";
 };                       
 
 FUNC int  Org_826_Mordrag_Fight_Condition()
@@ -335,19 +335,19 @@ FUNC int  Org_826_Mordrag_Fight_Condition()
 
 FUNC VOID  Org_826_Mordrag_Fight_Info()
 {
-	AI_Output (other, self,"Org_826_Mordrag_Fight_15_00"); //Tenhle tábor není pro nás dva dost velkı!
-	AI_Output (self, other,"Org_826_Mordrag_Fight_11_01"); //Co prosím?
+	AI_Output (other, self,"Org_826_Mordrag_Fight_15_00"); //Tenhle tÃ¡bor nenÃ­ pro nÃ¡s dva dost velkÃ½!
+	AI_Output (self, other,"Org_826_Mordrag_Fight_11_01"); //Co prosÃ­m?
 	
 	Info_ClearChoices(Org_826_Mordrag_Fight);
-	Info_AddChoice   (Org_826_Mordrag_Fight,"Prostì odsud vypadni!",Info_Mordrag_Fight_GetAway);
-	Info_AddChoice	 (Org_826_Mordrag_Fight,"Tady není místo pro lidi, kteøí kradou u Rudobaronù!",Info_Mordrag_Fight_OreBarons);
-	Info_AddChoice	 (Org_826_Mordrag_Fight,"Poslal mì Thorus. Chce, abych tì provdy odstranil.",Info_Mordrag_Fight_Thorus);
+	Info_AddChoice   (Org_826_Mordrag_Fight,"ProstÄ› odsud vypadni!",Info_Mordrag_Fight_GetAway);
+	Info_AddChoice	 (Org_826_Mordrag_Fight,"Tady nenÃ­ mÃ­sto pro lidi, kteÅ™Ã­ kradou u RudobaronÅ¯!",Info_Mordrag_Fight_OreBarons);
+	Info_AddChoice	 (Org_826_Mordrag_Fight,"Poslal mÄ› Thorus. Chce, abych tÄ› provÅ¾dy odstranil.",Info_Mordrag_Fight_Thorus);
 };
 
 FUNC VOID Info_Mordrag_Fight_GetAway()
 {
-	AI_Output (other, self,"Info_Mordrag_Fight_GetAway_15_00"); //Prostì odsud vypadni!
-	AI_Output (self, other,"Info_Mordrag_Fight_GetAway_11_01"); //Velkı slova malıho chlapa...
+	AI_Output (other, self,"Info_Mordrag_Fight_GetAway_15_00"); //ProstÄ› odsud vypadni!
+	AI_Output (self, other,"Info_Mordrag_Fight_GetAway_11_01"); //VelkÃ½ slova malÃ½ho chlapa...
 	
 	AI_StopProcessInfos(self);
 	Npc_SetTarget(self, other);
@@ -356,8 +356,8 @@ FUNC VOID Info_Mordrag_Fight_GetAway()
 
 FUNC VOID Info_Mordrag_Fight_OreBarons()
 {
-	AI_Output (other, self,"Info_Mordrag_Fight_OreBarons_15_00"); //Tady není místo pro lidi, kteøí kradou u Rudobaronù!
-	AI_Output (self, other,"Info_Mordrag_Fight_OreBarons_11_01"); //Á, tak tohle máš na mysli! Proè neøekneš rovnou...
+	AI_Output (other, self,"Info_Mordrag_Fight_OreBarons_15_00"); //Tady nenÃ­ mÃ­sto pro lidi, kteÅ™Ã­ kradou u RudobaronÅ¯!
+	AI_Output (self, other,"Info_Mordrag_Fight_OreBarons_11_01"); //Ã, tak tohle mÃ¡Å¡ na mysli! ProÄ neÅ™ekneÅ¡ rovnou...
 	
 	MordragKO_PlayerChoseOreBarons = TRUE;
 	
@@ -368,8 +368,8 @@ FUNC VOID Info_Mordrag_Fight_OreBarons()
 
 FUNC VOID Info_Mordrag_Fight_Thorus()
 {
-	AI_Output (other, self,"Info_Mordrag_Fight_Thorus_15_00"); //Poslal mì Thorus. Chce, abych tì provdy odstranil.
-	AI_Output (self, other,"Info_Mordrag_Fight_Thorus_11_01"); //Opravdu? Thorus? To je všechno, co jsem chtìl vìdìt...
+	AI_Output (other, self,"Info_Mordrag_Fight_Thorus_15_00"); //Poslal mÄ› Thorus. Chce, abych tÄ› provÅ¾dy odstranil.
+	AI_Output (self, other,"Info_Mordrag_Fight_Thorus_11_01"); //Opravdu? Thorus? To je vÅ¡echno, co jsem chtÄ›l vÄ›dÄ›t...
 	
 	MordragKO_PlayerChoseThorus = TRUE;
 	
@@ -411,7 +411,7 @@ FUNC VOID  Org_826_Mordrag_HauAb_Info()
 	
 	MordragKO_HauAb = TRUE;
 	
-	B_LogEntry    (CH1_MordragKO,"Vybìhl jsem s Mordragem a øekl mu, e ho u nikdy nechci ve Starém táboøe vidìt.");
+	B_LogEntry    (CH1_MordragKO,"VybÄ›hl jsem s Mordragem a Å™ekl mu, Å¾e ho uÅ¾ nikdy nechci ve StarÃ©m tÃ¡boÅ™e vidÄ›t.");
 
 	Npc_ExchangeRoutine	(self, "Start");
 };
@@ -427,7 +427,7 @@ instance  Org_826_Mordrag_GotoKalom(C_INFO)
 	condition	= Org_826_Mordrag_GotoKalom_Condition;
 	information	= Org_826_Mordrag_GotoKalom_Info;
 	permanent	= 0;
-	description = "Lares má pro tebe zprávu.";
+	description = "Lares mÃ¡ pro tebe zprÃ¡vu.";
 };                       
 
 FUNC int  Org_826_Mordrag_GotoKalom_Condition()
@@ -441,12 +441,12 @@ FUNC int  Org_826_Mordrag_GotoKalom_Condition()
 
 FUNC VOID  Org_826_Mordrag_GotoKalom_Info()
 {
-	AI_Output (other, self,"Org_826_Mordrag_GotoKalom_15_00"); //Lares má pro tebe zprávu.
-	AI_Output (self, other,"Org_826_Mordrag_GotoKalom_11_01"); //Øekni mi o tom.
-	AI_Output (other, self,"Org_826_Mordrag_GotoKalom_15_02"); //Chce vìdìt, co se dìje v Sektovním táboøe a chce, abys mu to zjistil ty.
-	AI_Output (self, other,"Org_826_Mordrag_GotoKalom_11_03"); //Mám pocit, e se ten problém vyøeší sám...
+	AI_Output (other, self,"Org_826_Mordrag_GotoKalom_15_00"); //Lares mÃ¡ pro tebe zprÃ¡vu.
+	AI_Output (self, other,"Org_826_Mordrag_GotoKalom_11_01"); //Å˜ekni mi o tom.
+	AI_Output (other, self,"Org_826_Mordrag_GotoKalom_15_02"); //Chce vÄ›dÄ›t, co se dÄ›je v SektovnÃ­m tÃ¡boÅ™e a chce, abys mu to zjistil ty.
+	AI_Output (self, other,"Org_826_Mordrag_GotoKalom_11_03"); //MÃ¡m pocit, Å¾e se ten problÃ©m vyÅ™eÅ¡Ã­ sÃ¡m...
 
-	B_LogEntry	(CH1_JoinNC,"Øekl jsem Mordragovi, co po mnì Lares chtìl. Mumlal nìco o tom, e se vìci vyvrbí samy. Nemám tušení, co tím mìl na mysli!");
+	B_LogEntry	(CH1_JoinNC,"Å˜ekl jsem Mordragovi, co po mnÄ› Lares chtÄ›l. Mumlal nÄ›co o tom, Å¾e se vÄ›ci vyvrbÃ­ samy. NemÃ¡m tuÅ¡enÃ­, co tÃ­m mÄ›l na mysli!");
 };
 
 // **************************************************
@@ -462,7 +462,7 @@ instance  Org_826_Mordrag_GotoKalomNOW(C_INFO)
 	condition	= Org_826_Mordrag_GotoKalomNOW_Condition;
 	information	= Org_826_Mordrag_GotoKalomNOW_Info;
 	permanent	= 0;
-	description = "Lares mi øekl, abych ti pomohl s tou sektáøskou záleitostí.";
+	description = "Lares mi Å™ekl, abych ti pomohl s tou sektÃ¡Å™skou zÃ¡leÅ¾itostÃ­.";
 };                       
 
 FUNC int  Org_826_Mordrag_GotoKalomNOW_Condition()
@@ -476,36 +476,36 @@ FUNC int  Org_826_Mordrag_GotoKalomNOW_Condition()
 
 FUNC VOID  Org_826_Mordrag_GotoKalomNOW_Info()
 {
-	AI_Output			(other, self,"Org_826_Mordrag_GotoKalomNOW_15_00"); //Lares mi øekl, abych ti pomohl s tou sektáøskou záleitostí.
-	AI_Output			(self, other,"Org_826_Mordrag_GotoKalomNOW_11_01"); //Vidíš... Vìdìl jsem, e se o to nebudu muset starat sám.
-	AI_Output			(other, self,"Org_826_Mordrag_GotoKalomNOW_15_02"); //Chceš, abych ten pøípad vyøešil celı já sám?
-	AI_Output			(self, other,"Org_826_Mordrag_GotoKalomNOW_11_03"); //Jsem si jistı, e to zvládneš. Poslouchej: dùleité je zjistit, co je pravdy na tìch povìstech o vzıvání.
-	AI_Output			(self, other,"Org_826_Mordrag_GotoKalomNOW_11_04"); //Vím, ti sektáøští blázni plánují velké vzıvání. Co se mì tıèe, já ve Spáèe nevìøím - jedna vìc je ale jistá:
-	AI_Output			(self, other,"Org_826_Mordrag_GotoKalomNOW_11_05"); //Guru mají ve své moci silná kouzla. Proto bude lepší vìdìt, o co pùjde. Rozumíš mi?
+	AI_Output			(other, self,"Org_826_Mordrag_GotoKalomNOW_15_00"); //Lares mi Å™ekl, abych ti pomohl s tou sektÃ¡Å™skou zÃ¡leÅ¾itostÃ­.
+	AI_Output			(self, other,"Org_826_Mordrag_GotoKalomNOW_11_01"); //VidÃ­Å¡... VÄ›dÄ›l jsem, Å¾e se o to nebudu muset starat sÃ¡m.
+	AI_Output			(other, self,"Org_826_Mordrag_GotoKalomNOW_15_02"); //ChceÅ¡, abych ten pÅ™Ã­pad vyÅ™eÅ¡il celÃ½ jÃ¡ sÃ¡m?
+	AI_Output			(self, other,"Org_826_Mordrag_GotoKalomNOW_11_03"); //Jsem si jistÃ½, Å¾e to zvlÃ¡dneÅ¡. Poslouchej: dÅ¯leÅ¾itÃ© je zjistit, co je pravdy na tÄ›ch povÄ›stech o vzÃ½vÃ¡nÃ­.
+	AI_Output			(self, other,"Org_826_Mordrag_GotoKalomNOW_11_04"); //VÃ­m, ti sektÃ¡Å™Å¡tÃ­ blÃ¡zni plÃ¡nujÃ­ velkÃ© vzÃ½vÃ¡nÃ­. Co se mÄ› tÃ½Äe, jÃ¡ ve SpÃ¡Äe nevÄ›Å™Ã­m - jedna vÄ›c je ale jistÃ¡:
+	AI_Output			(self, other,"Org_826_Mordrag_GotoKalomNOW_11_05"); //Guru majÃ­ ve svÃ© moci silnÃ¡ kouzla. Proto bude lepÅ¡Ã­ vÄ›dÄ›t, o co pÅ¯jde. RozumÃ­Å¡ mi?
 
-	B_LogEntry			(CH1_GotoPsiCamp,"Mordrag provedl svùj vızvìdnı úkol v táboøe v bainách docela chytøe. Guru se zøejmì pøipravují k velkému vzıvání, já bych chtìl ale znát další podrobnosti.");
+	B_LogEntry			(CH1_GotoPsiCamp,"Mordrag provedl svÅ¯j vÃ½zvÄ›dnÃ½ Ãºkol v tÃ¡boÅ™e v baÅ¾inÃ¡ch docela chytÅ™e. Guru se zÅ™ejmÄ› pÅ™ipravujÃ­ k velkÃ©mu vzÃ½vÃ¡nÃ­, jÃ¡ bych chtÄ›l ale znÃ¡t dalÅ¡Ã­ podrobnosti.");
 	B_GiveXP			(XP_AssistMordrag);	
 	
 	Lares_InformMordrag = LOG_SUCCESS;
 	Mordrag_GotoKalom = LOG_RUNNING;
 	
 	Info_ClearChoices	(Org_826_Mordrag_GotoKalomNOW);
-	Info_AddChoice		(Org_826_Mordrag_GotoKalomNOW,"Mùeš mi dát nìjaké podrobnìjší pokyny?",Org_826_Mordrag_GotoKalomNOW_Precise);
-	Info_AddChoice		(Org_826_Mordrag_GotoKalomNOW,"Uvidím, co budu moci udìlat.",Org_826_Mordrag_GotoKalomNOW_DoIt);
+	Info_AddChoice		(Org_826_Mordrag_GotoKalomNOW,"MÅ¯Å¾eÅ¡ mi dÃ¡t nÄ›jakÃ© podrobnÄ›jÅ¡Ã­ pokyny?",Org_826_Mordrag_GotoKalomNOW_Precise);
+	Info_AddChoice		(Org_826_Mordrag_GotoKalomNOW,"UvidÃ­m, co budu moci udÄ›lat.",Org_826_Mordrag_GotoKalomNOW_DoIt);
 
 };
 
 func void Org_826_Mordrag_GotoKalomNOW_Precise()
 {
-	AI_Output (other, self,"Org_826_Mordrag_GotoKalomNOW_Precise_15_00"); //Mùeš mi dát nìjaké podrobnìjší pokyny?
-	AI_Output (self, other,"Org_826_Mordrag_GotoKalomNOW_Precise_11_01"); //Øekni Lesterovi. Kdysi jsem strávil dlouhou dobu v Sektovním táboøe a on mi tam pomáhal. Patøí k tìm dobrım chlapùm.
-	B_LogEntry(CH1_GotoPsiCamp,"V táboøe Bratrstva si mám promluvit s novicem Lesterem. Zdá se, e je dùvìryhodnı, protoe kdysi pomohl Mordragovi.");
+	AI_Output (other, self,"Org_826_Mordrag_GotoKalomNOW_Precise_15_00"); //MÅ¯Å¾eÅ¡ mi dÃ¡t nÄ›jakÃ© podrobnÄ›jÅ¡Ã­ pokyny?
+	AI_Output (self, other,"Org_826_Mordrag_GotoKalomNOW_Precise_11_01"); //Å˜ekni Lesterovi. Kdysi jsem strÃ¡vil dlouhou dobu v SektovnÃ­m tÃ¡boÅ™e a on mi tam pomÃ¡hal. PatÅ™Ã­ k tÄ›m dobrÃ½m chlapÅ¯m.
+	B_LogEntry(CH1_GotoPsiCamp,"V tÃ¡boÅ™e Bratrstva si mÃ¡m promluvit s novicem Lesterem. ZdÃ¡ se, Å¾e je dÅ¯vÄ›ryhodnÃ½, protoÅ¾e kdysi pomohl Mordragovi.");
 };
 
 func void Org_826_Mordrag_GotoKalomNOW_DoIt()
 {
-	AI_Output (other, self,"Org_826_Mordrag_GotoKalomNOW_DoIt_15_00"); //Uvidím, co budu moci udìlat.
-	AI_Output (self, other,"Org_826_Mordrag_GotoKalomNOW_DoIt_11_01"); //Jakmile se dozvíš o jejich plánech, vra se a podej mi hlášení.
+	AI_Output (other, self,"Org_826_Mordrag_GotoKalomNOW_DoIt_15_00"); //UvidÃ­m, co budu moci udÄ›lat.
+	AI_Output (self, other,"Org_826_Mordrag_GotoKalomNOW_DoIt_11_01"); //Jakmile se dozvÃ­Å¡ o jejich plÃ¡nech, vraÅ¥ se a podej mi hlÃ¡Å¡enÃ­.
 	Info_ClearChoices	(Org_826_Mordrag_GotoKalomNOW);
 	AI_StopProcessInfos	(self);
 };
@@ -521,7 +521,7 @@ instance  Org_826_Mordrag_RUNNING (C_INFO)
 	condition	= Org_826_Mordrag_RUNNING_Condition;
 	information	= Org_826_Mordrag_RUNNING_Info;
 	permanent	= 1;
-	description = "O té sektáøské záleitosti...";
+	description = "O tÃ© sektÃ¡Å™skÃ© zÃ¡leÅ¾itosti...";
 };                       
 
 FUNC int  Org_826_Mordrag_RUNNING_Condition()
@@ -534,40 +534,40 @@ FUNC int  Org_826_Mordrag_RUNNING_Condition()
 
 FUNC VOID  Org_826_Mordrag_RUNNING_Info()
 {
-	AI_Output			(other, self,"Org_826_Mordrag_RUNNING_15_00"); //O té sektáøské záleitosti...
-	AI_Output			(self, other,"Org_826_Mordrag_RUNNING_11_01"); //Coe?
+	AI_Output			(other, self,"Org_826_Mordrag_RUNNING_15_00"); //O tÃ© sektÃ¡Å™skÃ© zÃ¡leÅ¾itosti...
+	AI_Output			(self, other,"Org_826_Mordrag_RUNNING_11_01"); //CoÅ¾e?
 
 	if	(CorKalom_BringMCQBalls == LOG_SUCCESS)
 	{
 		if (Kapitel >= 3)
 		{
-			AI_Output		(other, self,"Org_826_Mordrag_RUNNING_15_04"); //Nadešlo velké vzıvání.
-			AI_Output		(self, other,"Org_826_Mordrag_RUNNING_11_09"); //Ne! Zúèastnil ses toho jejich bláznovství?
+			AI_Output		(other, self,"Org_826_Mordrag_RUNNING_15_04"); //NadeÅ¡lo velkÃ© vzÃ½vÃ¡nÃ­.
+			AI_Output		(self, other,"Org_826_Mordrag_RUNNING_11_09"); //Ne! ZÃºÄastnil ses toho jejich blÃ¡znovstvÃ­?
 		}
 		else
 		{
-			AI_Output		(other, self,"Org_826_Mordrag_RUNNING_15_06"); //Mají v úmyslu kontaktovat Spáèe prostøednictvím lektvaru, kterı vyrobili z vajíèek dùlních èervù.
-			AI_Output		(self, other,"Org_826_Mordrag_RUNNING_11_07"); //Jak pošetilé! Ty šílené hlavy tomu všemu opravdu vìøí, e jo?
+			AI_Output		(other, self,"Org_826_Mordrag_RUNNING_15_06"); //MajÃ­ v Ãºmyslu kontaktovat SpÃ¡Äe prostÅ™ednictvÃ­m lektvaru, kterÃ½ vyrobili z vajÃ­Äek dÅ¯lnÃ­ch ÄervÅ¯.
+			AI_Output		(self, other,"Org_826_Mordrag_RUNNING_11_07"); //Jak poÅ¡etilÃ©! Ty Å¡Ã­lenÃ© hlavy tomu vÅ¡emu opravdu vÄ›Å™Ã­, Å¾e jo?
 		};
-		AI_Output		(other, self,"Org_826_Mordrag_RUNNING_15_10"); //Jsem zvìdavı, co z toho vzejde.
-		AI_Output		(self, other,"Org_826_Mordrag_RUNNING_11_11"); //Já taky. Dej mi vìdìt, a z toho Guru koneènì úplnì zešílí.
+		AI_Output		(other, self,"Org_826_Mordrag_RUNNING_15_10"); //Jsem zvÄ›davÃ½, co z toho vzejde.
+		AI_Output		(self, other,"Org_826_Mordrag_RUNNING_11_11"); //JÃ¡ taky. Dej mi vÄ›dÄ›t, aÅ¾ z toho Guru koneÄnÄ› ÃºplnÄ› zeÅ¡Ã­lÃ­.
 
 		Mordrag_GotoKalom = LOG_SUCCESS;
 		B_GiveXP			(XP_ReportToMordrag);
 		Log_SetTopicStatus	(CH1_GotoPsiCamp,	LOG_SUCCESS);
-		B_LogEntry			(CH1_GotoPsiCamp,"Mordrag se mohl potrhat smíchy, kdy jsem mu øekl o vajíèkách dùlního èerva. Vypadá to, e u ho vyzvídání u guru pøíliš nezajímá. Shledávám e záleitost je vyøešena!");
+		B_LogEntry			(CH1_GotoPsiCamp,"Mordrag se mohl potrhat smÃ­chy, kdyÅ¾ jsem mu Å™ekl o vajÃ­ÄkÃ¡ch dÅ¯lnÃ­ho Äerva. VypadÃ¡ to, Å¾e uÅ¾ ho vyzvÃ­dÃ¡nÃ­ u guru pÅ™Ã­liÅ¡ nezajÃ­mÃ¡. ShledÃ¡vÃ¡m Å¾e zÃ¡leÅ¾itost je vyÅ™eÅ¡ena!");
 	}
 	else
 	{
 		AI_Output		(other, self,"Org_826_Mordrag_RUNNING_15_02"); //Nic jsme neobjevil.
-		AI_Output		(self, other,"Org_826_Mordrag_RUNNING_11_03"); //Tak v tom pokraèuj...
+		AI_Output		(self, other,"Org_826_Mordrag_RUNNING_11_03"); //Tak v tom pokraÄuj...
 	};
 
 /*	
 	//SN: Werde nicht gebraucht, da sie nicht zur Kapitel 2-6-Story passen!!!
 		AI_Output		(other, self,"Org_826_Mordrag_RUNNING_15_08"); //Ich hab' die Eier bei mir.
 		
-		AI_Output		(self, other,"Org_826_Mordrag_RUNNING_11_05"); //(sarkastisch) Hab' ich auch gemerkt. Diese verdammten Sektenspinner haben Gomez die alte Mine gekostet. Wird nicht mehr lange dauern, dann stehen seine Gardisten bei UNS vor der Tür, um sich ihr Erz abzuholen...
+		AI_Output		(self, other,"Org_826_Mordrag_RUNNING_11_05"); //(sarkastisch) Hab' ich auch gemerkt. Diese verdammten Sektenspinner haben Gomez die alte Mine gekostet. Wird nicht mehr lange dauern, dann stehen seine Gardisten bei UNS vor der TÃ¼r, um sich ihr Erz abzuholen...
 */
 };
 	

@@ -34,24 +34,24 @@ FUNC INT Info_Grd_237_FirstWarn_Condition()
 
 FUNC VOID Info_Grd_237_FirstWarn_Info()
 {
-	AI_Output			(self, hero,"Info_Grd_237_FirstWarn_07_01"); //NemÏl bys tu z˘st·vat. Za tÌmhle z·tarasem zaËÌn· zemÏ sk¯et˘!
-	AI_Output			(hero, self,"Info_Grd_237_FirstWarn_15_02"); //Je to nebezpeËnÈ?
-	AI_Output			(self, hero,"Info_Grd_237_FirstWarn_07_03"); //ÿeknÏme to takhle: m˘ûeö mi d·t vöechnu svoji rudu, neû tam p˘jdeö a sk¯eti tÏ rozs·pou na kusy!
+	AI_Output			(self, hero,"Info_Grd_237_FirstWarn_07_01"); //Nemƒõl bys tu z≈Øst√°vat. Za t√≠mhle z√°tarasem zaƒç√≠n√° zemƒõ sk≈ôet≈Ø!
+	AI_Output			(hero, self,"Info_Grd_237_FirstWarn_15_02"); //Je to nebezpeƒçn√©?
+	AI_Output			(self, hero,"Info_Grd_237_FirstWarn_07_03"); //≈òeknƒõme to takhle: m≈Ø≈æe≈° mi d√°t v≈°echnu svoji rudu, ne≈æ tam p≈Øjde≈° a sk≈ôeti tƒõ rozs√°pou na kusy!
 
 	hero.aivar[AIV_LASTDISTTOWP] 		= Npc_GetDistToWP (hero,Grd_237_CHECKPOINT);
 
 	Info_ClearChoices	(Info_Grd_237_FirstWarn);
-	Info_AddChoice		(Info_Grd_237_FirstWarn,"NemyslÌm, ûe to chci udÏlat!",		Info_Grd_237_FirstWarn_Info_NO);	
-	Info_AddChoice		(Info_Grd_237_FirstWarn,"JistÏ, tady je moje ruda!",				Info_Grd_237_FirstWarn_Info_YES);	
-	Info_AddChoice		(Info_Grd_237_FirstWarn,"MyslÌm, ûe by bylo lepöÌ, kdybych se vr·til.",	Info_Grd_237_FirstWarn_Info_RETREAT);	
+	Info_AddChoice		(Info_Grd_237_FirstWarn,"Nemysl√≠m, ≈æe to chci udƒõlat!",		Info_Grd_237_FirstWarn_Info_NO);	
+	Info_AddChoice		(Info_Grd_237_FirstWarn,"Jistƒõ, tady je moje ruda!",				Info_Grd_237_FirstWarn_Info_YES);	
+	Info_AddChoice		(Info_Grd_237_FirstWarn,"Mysl√≠m, ≈æe by bylo lep≈°√≠, kdybych se vr√°til.",	Info_Grd_237_FirstWarn_Info_RETREAT);	
 };
 
 func void Info_Grd_237_FirstWarn_Info_RETREAT ()
 {
 	Info_ClearChoices	(Info_Grd_237_FirstWarn);
 
-	AI_Output			(hero, self,"Info_Grd_237_FirstWarn_15_04"); //MyslÌm, ûe by bylo lepöÌ, kdybych se vr·til.
-	AI_Output			(self, hero,"Info_Grd_237_FirstWarn_07_05"); //äkoda, r·d bych opatroval tvoji rudu.
+	AI_Output			(hero, self,"Info_Grd_237_FirstWarn_15_04"); //Mysl√≠m, ≈æe by bylo lep≈°√≠, kdybych se vr√°til.
+	AI_Output			(self, hero,"Info_Grd_237_FirstWarn_07_05"); //≈†koda, r√°d bych opatroval tvoji rudu.
 
 	hero.aivar[AIV_GUARDPASSAGE_STATUS] = AIV_GPS_FIRSTWARN;
 
@@ -62,8 +62,8 @@ func void Info_Grd_237_FirstWarn_Info_YES ()
 {
 	Info_ClearChoices	(Info_Grd_237_FirstWarn);
 
-	AI_Output			(hero, self,"Info_Grd_237_FirstWarn_15_06"); //JistÏ, tady je moje ruda!
-	AI_Output			(self, hero,"Info_Grd_237_FirstWarn_07_07"); //Och, to je od tebe nesmÌrnÏ zdvo¯ilÈ.
+	AI_Output			(hero, self,"Info_Grd_237_FirstWarn_15_06"); //Jistƒõ, tady je moje ruda!
+	AI_Output			(self, hero,"Info_Grd_237_FirstWarn_07_07"); //Och, to je od tebe nesm√≠rnƒõ zdvo≈ôil√©.
 	
 	var int ore;
 	ore = Npc_HasItems	(hero,	ItMiNugget);
@@ -79,8 +79,8 @@ func void Info_Grd_237_FirstWarn_Info_NO ()
 {
 	Info_ClearChoices	(Info_Grd_237_FirstWarn);
 
-	AI_Output			(hero, self,"Info_Grd_237_FirstWarn_15_08"); //NemyslÌm, ûe to chci udÏlat!
-	AI_Output			(self, hero,"Info_Grd_237_FirstWarn_07_09"); //V tom p¯ÌpadÏ bys uû nemÏl udÏlat ani krok!
+	AI_Output			(hero, self,"Info_Grd_237_FirstWarn_15_08"); //Nemysl√≠m, ≈æe to chci udƒõlat!
+	AI_Output			(self, hero,"Info_Grd_237_FirstWarn_07_09"); //V tom p≈ô√≠padƒõ bys u≈æ nemƒõl udƒõlat ani krok!
 
 	hero.aivar[AIV_GUARDPASSAGE_STATUS] = AIV_GPS_FIRSTWARN;
 
@@ -113,7 +113,7 @@ FUNC INT Info_Grd_237_LastWarn_Condition()
 
 func int Info_Grd_237_LastWarn_Info()
 {
-	AI_Output (self, hero,"Info_Grd_237_LastWarn_07_01"); 		//Jsi hluch˝? JeötÏ krok a je z tebe potrava pro Ëervy!
+	AI_Output (self, hero,"Info_Grd_237_LastWarn_07_01"); 		//Jsi hluch√Ω? Je≈°tƒõ krok a je z tebe potrava pro ƒçervy!
 
 	hero.aivar[AIV_LASTDISTTOWP] 		= Npc_GetDistToWP (hero,Grd_237_CHECKPOINT);
 	hero.aivar[AIV_GUARDPASSAGE_STATUS]	= AIV_GPS_LASTWARN;	
@@ -152,7 +152,7 @@ func int Info_Grd_237_Attack_Info()
 	hero.aivar[AIV_GUARDPASSAGE_STATUS]	= AIV_GPS_PUNISH;	
 	
 	B_FullStop			(self);	
-	AI_StopProcessInfos	(self);					//dem Spieler sofort wieder die Kontrolle zur¸ckgeben
+	AI_StopProcessInfos	(self);					//dem Spieler sofort wieder die Kontrolle zur√ºckgeben
 	B_SetAttackReason	(self,	AIV_AR_INTRUDER);
 	Npc_SetTarget		(self,	hero);
 	AI_StartState		(self,	ZS_Attack,	1,	"");
