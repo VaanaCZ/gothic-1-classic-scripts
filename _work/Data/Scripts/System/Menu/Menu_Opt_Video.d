@@ -32,7 +32,7 @@ INSTANCE MENU_OPT_VIDEO(C_MENU_DEF)
 
 INSTANCE MENUITEM_VID_HEADLINE(C_MENU_ITEM_DEF) 
 {
-	text[0]		=	"НАСТРОЙКИ ВИДЕО";
+	text[0]		=	"РќРђРЎРўР РћР™РљР Р’РР”Р•Рћ";
 	type		=	MENU_ITEM_TEXT;
 	// Position und Dimension	
 	posx		=	0;		posy		=	MENU_TITLE_Y;
@@ -50,8 +50,8 @@ INSTANCE MENUITEM_VID_HEADLINE(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_VID_DEVICE(C_MENU_ITEM_DEF)
 {
 	backpic		=	MENU_ITEM_BACK_PIC;
-	text[0]		=	"Видеокарта";
-	text[1]		=	"Перезапустите игру, чтобы использовать новые настройки."; // Kommentar
+	text[0]		=	"Р’РёРґРµРѕРєР°СЂС‚Р°";
+	text[1]		=	"РџРµСЂРµР·Р°РїСѓСЃС‚РёС‚Рµ РёРіСЂСѓ, С‡С‚РѕР±С‹ РёСЃРїРѕР»СЊР·РѕРІР°С‚СЊ РЅРѕРІС‹Рµ РЅР°СЃС‚СЂРѕР№РєРё."; // Kommentar
 	
 	// Position und Dimension	
 	posx		=	1000;	posy		=	MENU_START_Y + MENU_DY*0;
@@ -87,8 +87,8 @@ INSTANCE MENUITEM_VID_DEVICE_CHOICE(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_VID_RESOLUTION(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	text[0]		= "Разрешение";
-	text[1]		= "Нажмите ENTER, чтобы подтвердить выбор."; // Kommentar
+	text[0]		= "Р Р°Р·СЂРµС€РµРЅРёРµ";
+	text[1]		= "РќР°Р¶РјРёС‚Рµ ENTER, С‡С‚РѕР±С‹ РїРѕРґС‚РІРµСЂРґРёС‚СЊ РІС‹Р±РѕСЂ."; // Kommentar
 	
 	// Position und Dimension	
 	posx		= 1000;		posy		= MENU_START_Y + MENU_DY*1;
@@ -124,8 +124,8 @@ INSTANCE MENUITEM_VID_RESOLUTION_CHOICE(C_MENU_ITEM_DEF)
 instance MENUITEM_VID_BRIGHTNESS(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	text[0]		= "Яркость";
-	text[1]		= "Яркость"; // Kommentar
+	text[0]		= "РЇСЂРєРѕСЃС‚СЊ";
+	text[1]		= "РЇСЂРєРѕСЃС‚СЊ"; // Kommentar
 	
 	// Position und Dimension	
 	posx		=	1000;	posy		=	MENU_START_Y + MENU_DY*3;
@@ -159,8 +159,8 @@ INSTANCE MENUITEM_VID_BRIGHTNESS_SLIDER(C_MENU_ITEM_DEF)
 instance MENUITEM_VID_CONTRAST(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	text[0]		= "Контраст";
-	text[1]		= "Контраст"; // Kommentar
+	text[0]		= "РљРѕРЅС‚СЂР°СЃС‚";
+	text[1]		= "РљРѕРЅС‚СЂР°СЃС‚"; // Kommentar
 	
 	// Position und Dimension	
 	posx		=	1000;	posy		=	MENU_START_Y + MENU_DY*4;
@@ -194,8 +194,8 @@ INSTANCE MENUITEM_VID_CONTRAST_SLIDER(C_MENU_ITEM_DEF)
 instance MENUITEM_VID_GAMMA(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	text[0]		= "Гамма";
-	text[1]		= "Гамма"; // Kommentar
+	text[0]		= "Р“Р°РјРјР°";
+	text[1]		= "Р“Р°РјРјР°"; // Kommentar
 	
 	// Position und Dimension	
 	posx		=	1000;	posy		=	MENU_START_Y + MENU_DY*5;
@@ -227,7 +227,7 @@ INSTANCE MENUITEM_VID_GAMMA_SLIDER(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_VID_BACK(C_MENU_ITEM_DEF)
 {
 	backpic		=	MENU_ITEM_BACK_PIC;
-	text[0]		=	"Назад";
+	text[0]		=	"РќР°Р·Р°Рґ";
 	// Position und Dimension	
 	posx		=	1000;		posy		=	MENU_BACK_Y;
 	dimx		=	6192;		dimy		=	MENU_DY;

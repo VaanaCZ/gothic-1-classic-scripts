@@ -1,7 +1,7 @@
 instance GUR_1203_BaalTondral (Npc_Default)
 {
 	//-------- primary data --------
-	name 		=		"Идол Тондрал";
+	name 		=		"РРґРѕР» РўРѕРЅРґСЂР°Р»";
 	Npctype 		=		Npctype_Main;
 	guild 		=		GIL_GUR;
 	level 		=		28;

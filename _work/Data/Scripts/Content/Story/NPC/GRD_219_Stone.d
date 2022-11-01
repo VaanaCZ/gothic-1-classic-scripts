@@ -2,7 +2,7 @@ instance GRD_219_Stone (Npc_Default)
 {
 	//-------- primary data --------
 	
-	name 		=	"—ÚÓÛÌ";
+	name 		=	"–°—Ç–æ—É–Ω";
 	npctype		= 	npctype_main;
 	guild 		=	GIL_GRD;
 	level 		=	15;
@@ -47,7 +47,7 @@ instance GRD_219_Stone (Npc_Default)
 	CreateInvItem	(self, ItFoApple);
 	CreateInvItems	(self, ItMiNugget, 10);
 	CreateInvItem	(self, ItLsTorch);
-	//DEN SCHL‹SSEL HAT SKIP
+	//DEN SCHL–¨SSEL HAT SKIP
 	
 	//-------------Daily Routine-------------
 	daily_routine = Rtn_start_219;

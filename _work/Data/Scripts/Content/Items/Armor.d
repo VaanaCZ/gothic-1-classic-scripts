@@ -1,5 +1,5 @@
 /*******************************************************************************************
-**	Rьstungswert-Multiplikator	                                         				  **
+**	RСЊstungswert-Multiplikator	                                         				  **
 *******************************************************************************************/
 const int	ARMOR_VALUE_MULTIPLIER	= 30;	// wird mit Schutzwert gegen EDGE-Schaden multipliziert
 
@@ -48,7 +48,7 @@ const int VALUE_SFB_ARMOR_L = 250;
 
 INSTANCE VLK_ARMOR_L(C_Item)
 {
-	name 					=	"Простые штаны для рудокопа";
+	name 					=	"РџСЂРѕСЃС‚С‹Рµ С€С‚Р°РЅС‹ РґР»СЏ СЂСѓРґРѕРєРѕРїР°";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -80,7 +80,7 @@ INSTANCE VLK_ARMOR_L(C_Item)
 /******************************************************************************************/
 INSTANCE VLK_ARMOR_M(C_Item)
 {
-	name 					=	"Штаны для рудокопа";
+	name 					=	"РЁС‚Р°РЅС‹ РґР»СЏ СЂСѓРґРѕРєРѕРїР°";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -114,7 +114,7 @@ INSTANCE VLK_ARMOR_M(C_Item)
 
 INSTANCE STT_ARMOR_M(C_Item)
 {
-	name 					=	"Одеяние Призрака";
+	name 					=	"РћРґРµСЏРЅРёРµ РџСЂРёР·СЂР°РєР°";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -146,7 +146,7 @@ INSTANCE STT_ARMOR_M(C_Item)
 /******************************************************************************************/
 INSTANCE STT_ARMOR_H(C_Item)
 {
-	name 					=	"Доспехи Призрака";
+	name 					=	"Р”РѕСЃРїРµС…Рё РџСЂРёР·СЂР°РєР°";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -180,7 +180,7 @@ INSTANCE STT_ARMOR_H(C_Item)
 
 INSTANCE GRD_ARMOR_L(C_Item)
 {
-	name 					=	"Легкие доспехи стражника";
+	name 					=	"Р›РµРіРєРёРµ РґРѕСЃРїРµС…Рё СЃС‚СЂР°Р¶РЅРёРєР°";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -212,7 +212,7 @@ INSTANCE GRD_ARMOR_L(C_Item)
 /******************************************************************************************/
 INSTANCE GRD_ARMOR_M(C_Item)
 {
-	name 					=	"Доспехи стражника";
+	name 					=	"Р”РѕСЃРїРµС…Рё СЃС‚СЂР°Р¶РЅРёРєР°";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -244,7 +244,7 @@ INSTANCE GRD_ARMOR_M(C_Item)
 /******************************************************************************************/
 INSTANCE GRD_ARMOR_H(C_Item)
 {
-	name 					=	"Тяжелые доспехи стражника";
+	name 					=	"РўСЏР¶РµР»С‹Рµ РґРѕСЃРїРµС…Рё СЃС‚СЂР°Р¶РЅРёРєР°";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -278,7 +278,7 @@ INSTANCE GRD_ARMOR_H(C_Item)
 
 INSTANCE EBR_ARMOR_M(C_Item)
 {
-	name 					=	"Роскошная мантия";
+	name 					=	"Р РѕСЃРєРѕС€РЅР°СЏ РјР°РЅС‚РёСЏ";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -312,7 +312,7 @@ INSTANCE EBR_ARMOR_M(C_Item)
 /******************************************************************************************/
 INSTANCE EBR_ARMOR_H(C_Item)
 {
-	name 					=	"Доспехи Гомеза";
+	name 					=	"Р”РѕСЃРїРµС…Рё Р“РѕРјРµР·Р°";
 
 
 	mainflag 				=	ITEM_KAT_ARMOR;
@@ -347,7 +347,7 @@ INSTANCE EBR_ARMOR_H(C_Item)
 /******************************************************************************************/
 INSTANCE EBR_ARMOR_H2(C_Item)
 {
-	name 					=	"Тяжелые доспехи Барона";
+	name 					=	"РўСЏР¶РµР»С‹Рµ РґРѕСЃРїРµС…Рё Р‘Р°СЂРѕРЅР°";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -383,11 +383,11 @@ INSTANCE EBR_ARMOR_H2(C_Item)
 *******************************************************************************************/
 
 /******************************************************************************************/
-// Schьrferbund
+// SchСЊrferbund
 
 instance SFB_ARMOR_L(C_Item)
 {
-	name 					=	"Одеяние рудокопа";
+	name 					=	"РћРґРµСЏРЅРёРµ СЂСѓРґРѕРєРѕРїР°";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -421,7 +421,7 @@ instance SFB_ARMOR_L(C_Item)
 
 INSTANCE ORG_ARMOR_L(C_Item)
 {
-	name 					=	"Легкое одеяние вора";
+	name 					=	"Р›РµРіРєРѕРµ РѕРґРµСЏРЅРёРµ РІРѕСЂР°";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -453,7 +453,7 @@ INSTANCE ORG_ARMOR_L(C_Item)
 /******************************************************************************************/
 INSTANCE ORG_ARMOR_M(C_Item)
 {
-	name 					=	"Одеяние вора";
+	name 					=	"РћРґРµСЏРЅРёРµ РІРѕСЂР°";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -485,7 +485,7 @@ INSTANCE ORG_ARMOR_M(C_Item)
 /******************************************************************************************/
 INSTANCE ORG_ARMOR_H(C_Item)
 {
-	name 					=	"Тяжелое одеяние вора";
+	name 					=	"РўСЏР¶РµР»РѕРµ РѕРґРµСЏРЅРёРµ РІРѕСЂР°";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -517,7 +517,7 @@ INSTANCE ORG_ARMOR_H(C_Item)
 /******************************************************************************************/
 INSTANCE SLD_ARMOR_L(C_Item)
 {
-	name 					=	"Легкие доспехи наемника";
+	name 					=	"Р›РµРіРєРёРµ РґРѕСЃРїРµС…Рё РЅР°РµРјРЅРёРєР°";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -549,7 +549,7 @@ INSTANCE SLD_ARMOR_L(C_Item)
 /******************************************************************************************/
 instance SLD_ARMOR_M(C_Item)
 {
-	name 					=	"Доспехи наемника";
+	name 					=	"Р”РѕСЃРїРµС…Рё РЅР°РµРјРЅРёРєР°";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -581,7 +581,7 @@ instance SLD_ARMOR_M(C_Item)
 /******************************************************************************************/
 INSTANCE SLD_ARMOR_H(C_Item)
 {
-	name 					=	"Тяжелые доспехи наемника";
+	name 					=	"РўСЏР¶РµР»С‹Рµ РґРѕСЃРїРµС…Рё РЅР°РµРјРЅРёРєР°";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -620,7 +620,7 @@ INSTANCE SLD_ARMOR_H(C_Item)
 
 INSTANCE NOV_ARMOR_L(C_Item)
 {
-	name 					=	"Набедренная повязка послушника";
+	name 					=	"РќР°Р±РµРґСЂРµРЅРЅР°СЏ РїРѕРІСЏР·РєР° РїРѕСЃР»СѓС€РЅРёРєР°";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -652,7 +652,7 @@ INSTANCE NOV_ARMOR_L(C_Item)
 /******************************************************************************************/
 INSTANCE NOV_ARMOR_M(C_Item)
 {
-	name 					=	"Легкие доспехи послушника";
+	name 					=	"Р›РµРіРєРёРµ РґРѕСЃРїРµС…Рё РїРѕСЃР»СѓС€РЅРёРєР°";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -684,7 +684,7 @@ INSTANCE NOV_ARMOR_M(C_Item)
 /******************************************************************************************/
 INSTANCE NOV_ARMOR_H(C_Item)
 {
-	name 					=	"Доспехи послушника";
+	name 					=	"Р”РѕСЃРїРµС…Рё РїРѕСЃР»СѓС€РЅРёРєР°";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -718,7 +718,7 @@ INSTANCE NOV_ARMOR_H(C_Item)
 
 INSTANCE TPL_ARMOR_L(C_Item)
 {
-	name 					=	"Легкие доспехи Стража";
+	name 					=	"Р›РµРіРєРёРµ РґРѕСЃРїРµС…Рё РЎС‚СЂР°Р¶Р°";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -750,7 +750,7 @@ INSTANCE TPL_ARMOR_L(C_Item)
 /******************************************************************************************/
 INSTANCE TPL_ARMOR_M(C_Item)
 {
-	name 					=	"Доспехи Стража";
+	name 					=	"Р”РѕСЃРїРµС…Рё РЎС‚СЂР°Р¶Р°";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -782,7 +782,7 @@ INSTANCE TPL_ARMOR_M(C_Item)
 /******************************************************************************************/
 INSTANCE TPL_ARMOR_H(C_Item)
 {
-	name 					=	"Тяжелые доспехи Стража";
+	name 					=	"РўСЏР¶РµР»С‹Рµ РґРѕСЃРїРµС…Рё РЎС‚СЂР°Р¶Р°";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -816,7 +816,7 @@ INSTANCE TPL_ARMOR_H(C_Item)
 
 INSTANCE GUR_ARMOR_M(C_Item)
 {
-	name 					=	"Облачение Гуру";
+	name 					=	"РћР±Р»Р°С‡РµРЅРёРµ Р“СѓСЂСѓ";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -849,7 +849,7 @@ INSTANCE GUR_ARMOR_M(C_Item)
 /******************************************************************************************/
 INSTANCE GUR_ARMOR_H(C_Item)
 {
-	name 					=	"Облачение высших Гуру";
+	name 					=	"РћР±Р»Р°С‡РµРЅРёРµ РІС‹СЃС€РёС… Р“СѓСЂСѓ";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -888,7 +888,7 @@ INSTANCE GUR_ARMOR_H(C_Item)
 
 INSTANCE KDF_ARMOR_L(C_Item)
 {
-	name 					=	"Облачение магов огня";
+	name 					=	"РћР±Р»Р°С‡РµРЅРёРµ РјР°РіРѕРІ РѕРіРЅСЏ";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -919,7 +919,7 @@ INSTANCE KDF_ARMOR_L(C_Item)
 /******************************************************************************************/
 INSTANCE KDF_ARMOR_H(C_Item)
 {
-	name 					=	"Облачение высших магов огня";
+	name 					=	"РћР±Р»Р°С‡РµРЅРёРµ РІС‹СЃС€РёС… РјР°РіРѕРІ РѕРіРЅСЏ";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -952,7 +952,7 @@ INSTANCE KDF_ARMOR_H(C_Item)
 
 INSTANCE KDW_ARMOR_L(C_Item)
 {
-	name 					=	"Облачение магов воды";
+	name 					=	"РћР±Р»Р°С‡РµРЅРёРµ РјР°РіРѕРІ РІРѕРґС‹";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -984,7 +984,7 @@ INSTANCE KDW_ARMOR_L(C_Item)
 /******************************************************************************************/
 INSTANCE KDW_ARMOR_H(C_Item)
 {
-	name 					=	"Облачение высших магов воды";
+	name 					=	"РћР±Р»Р°С‡РµРЅРёРµ РІС‹СЃС€РёС… РјР°РіРѕРІ РІРѕРґС‹";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -1013,11 +1013,11 @@ INSTANCE KDW_ARMOR_H(C_Item)
 };
 
 /******************************************************************************************/
-// Dдmonenbeschwцrer
+// DРґmonenbeschwС†rer
 
 INSTANCE DMB_ARMOR_M(C_Item)
 {
-	name 					=	"Облачение темных искусств";
+	name 					=	"РћР±Р»Р°С‡РµРЅРёРµ С‚РµРјРЅС‹С… РёСЃРєСѓСЃСЃС‚РІ";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -1051,15 +1051,15 @@ INSTANCE DMB_ARMOR_M(C_Item)
 
 
 /*******************************************************************************************
-**	Spezial-Rьstungen                                                                     **
+**	Spezial-RСЊstungen                                                                     **
 *******************************************************************************************/
 
-// FIXME: hier fehlen noch die Visuals fьr die Erz-Rьstungen und das INV-Item fьr die CRAWLERPLATTEN-RЬSTUNG 
+// FIXME: hier fehlen noch die Visuals fСЊr die Erz-RСЊstungen und das INV-Item fСЊr die CRAWLERPLATTEN-RР¬STUNG 
 
-// Crawler-Plattenrьstung
+// Crawler-PlattenrСЊstung
 INSTANCE CRW_ARMOR_H(C_Item)
 {
-	name 					=	"Доспехи из пластин ползунов";
+	name 					=	"Р”РѕСЃРїРµС…Рё РёР· РїР»Р°СЃС‚РёРЅ РїРѕР»Р·СѓРЅРѕРІ";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -1090,10 +1090,10 @@ INSTANCE CRW_ARMOR_H(C_Item)
 
 
 /******************************************************************************************/
-// Erz-Rьstungen
+// Erz-RСЊstungen
 INSTANCE ORE_ARMOR_M(C_Item)
 {
-	name 					=	"Древние доспехи из руды";
+	name 					=	"Р”СЂРµРІРЅРёРµ РґРѕСЃРїРµС…Рё РёР· СЂСѓРґС‹";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -1114,7 +1114,7 @@ INSTANCE ORE_ARMOR_M(C_Item)
 	material 				=	MAT_WOOD;
 
 	description				=	name;
-	TEXT[0]					=	"Эти древние доспехи сделаны из магической руды.";
+	TEXT[0]					=	"Р­С‚Рё РґСЂРµРІРЅРёРµ РґРѕСЃРїРµС…Рё СЃРґРµР»Р°РЅС‹ РёР· РјР°РіРёС‡РµСЃРєРѕР№ СЂСѓРґС‹.";
 	TEXT[1]					=	NAME_Prot_Edge;			COUNT[1]	= protection	[PROT_EDGE];
 	TEXT[2]					=	NAME_Prot_Point;		COUNT[2]	= protection	[PROT_POINT];
 	TEXT[3] 				=	NAME_Prot_Fire;			COUNT[3]	= protection	[PROT_FIRE];
@@ -1124,7 +1124,7 @@ INSTANCE ORE_ARMOR_M(C_Item)
 
 INSTANCE ORE_ARMOR_H(C_Item)
 {
-	name 					=	"Улучшенные доспехи из руды";
+	name 					=	"РЈР»СѓС‡С€РµРЅРЅС‹Рµ РґРѕСЃРїРµС…Рё РёР· СЂСѓРґС‹";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -1145,7 +1145,7 @@ INSTANCE ORE_ARMOR_H(C_Item)
 	material 				=	MAT_WOOD;
 
 	description				=	name;
-	TEXT[0]					=	"Стоун, кузнец, сумел улучшить их!";
+	TEXT[0]					=	"РЎС‚РѕСѓРЅ, РєСѓР·РЅРµС†, СЃСѓРјРµР» СѓР»СѓС‡С€РёС‚СЊ РёС…!";
 	TEXT[1]					=	NAME_Prot_Edge;			COUNT[1]	= protection	[PROT_EDGE];
 	TEXT[2]					=	NAME_Prot_Point;		COUNT[2]	= protection	[PROT_POINT];
 	TEXT[3] 				=	NAME_Prot_Fire;			COUNT[3]	= protection	[PROT_FIRE];
@@ -1161,7 +1161,7 @@ INSTANCE ORE_ARMOR_H(C_Item)
 *******************************************************************************************/
 INSTANCE LAW_ARMOR (C_Item)
 {
-	name 					=	"Облачение судьи";
+	name 					=	"РћР±Р»Р°С‡РµРЅРёРµ СЃСѓРґСЊРё";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -1197,11 +1197,11 @@ INSTANCE LAW_ARMOR (C_Item)
 
 
 /*******************************************************************************************
-**	Wache fьr Intro-Cutscene                                                          **
+**	Wache fСЊr Intro-Cutscene                                                          **
 *******************************************************************************************/
 INSTANCE GRD_ARMOR_I(C_Item)
 {
-	name 					=	"Доспехи королевского стражника";
+	name 					=	"Р”РѕСЃРїРµС…Рё РєРѕСЂРѕР»РµРІСЃРєРѕРіРѕ СЃС‚СЂР°Р¶РЅРёРєР°";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -1238,7 +1238,7 @@ INSTANCE GRD_ARMOR_I(C_Item)
 *******************************************************************************************/
 INSTANCE BAB_ARMOR_NUDE (C_Item)
 {
-	name 					=	"Обнаженная девица";
+	name 					=	"РћР±РЅР°Р¶РµРЅРЅР°СЏ РґРµРІРёС†Р°";
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
 	value 					=	1;
@@ -1260,7 +1260,7 @@ INSTANCE BAB_ARMOR_NUDE (C_Item)
 /******************************************************************************************/
 INSTANCE BAB_ARMOR_BIKINI (C_Item)
 {
-	name 					=	"Девица в бикини";
+	name 					=	"Р”РµРІРёС†Р° РІ Р±РёРєРёРЅРё";
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
 	value 					=	1;

@@ -33,7 +33,7 @@ instance   VLK_583_Glen_INFO(C_INFO)
 	information		= VLK_583_Glen_INFO_Info;
 	important		= 0;
 	permanent		= 1;
-	description		= "Чего нужно опасаться в шахте?"; 
+	description		= "Р§РµРіРѕ РЅСѓР¶РЅРѕ РѕРїР°СЃР°С‚СЊСЃСЏ РІ С€Р°С…С‚Рµ?"; 
 };
 
 FUNC int  VLK_583_Glen_INFO_Condition()
@@ -44,11 +44,11 @@ FUNC int  VLK_583_Glen_INFO_Condition()
 
 FUNC void  VLK_583_Glen_INFO_Info()
 {
-	AI_Output (other, self,"VLK_583_Glen_INFO_Info_15_01"); //Чего нужно опасаться в шахте?
-	AI_Output (self, other,"VLK_583_Glen_INFO_Info_02_02"); //Держись подальше от ползунов.
-	AI_Output (self, other,"VLK_583_Glen_INFO_Info_02_03"); //Чем ниже ты спускаешься, тем больше будет вокруг этих тварей. Мерзкие порождения Бельджара!
-	AI_Output (self, other,"VLK_583_Glen_INFO_Info_02_04"); //Они таятся во тьме и поджидают свою добычу. Ты слышишь, как их коготки царапают камень, когда они подбираются все ближе и ближе. Я видел, как они убивают...
-	AI_Output (self, other,"VLK_583_Glen_INFO_Info_02_05"); //Они быстры и безжалостны. Если тебе дорога жизнь, лучше уноси отсюда ноги, пока еще цел.
+	AI_Output (other, self,"VLK_583_Glen_INFO_Info_15_01"); //Р§РµРіРѕ РЅСѓР¶РЅРѕ РѕРїР°СЃР°С‚СЊСЃСЏ РІ С€Р°С…С‚Рµ?
+	AI_Output (self, other,"VLK_583_Glen_INFO_Info_02_02"); //Р”РµСЂР¶РёСЃСЊ РїРѕРґР°Р»СЊС€Рµ РѕС‚ РїРѕР»Р·СѓРЅРѕРІ.
+	AI_Output (self, other,"VLK_583_Glen_INFO_Info_02_03"); //Р§РµРј РЅРёР¶Рµ С‚С‹ СЃРїСѓСЃРєР°РµС€СЊСЃСЏ, С‚РµРј Р±РѕР»СЊС€Рµ Р±СѓРґРµС‚ РІРѕРєСЂСѓРі СЌС‚РёС… С‚РІР°СЂРµР№. РњРµСЂР·РєРёРµ РїРѕСЂРѕР¶РґРµРЅРёСЏ Р‘РµР»СЊРґР¶Р°СЂР°!
+	AI_Output (self, other,"VLK_583_Glen_INFO_Info_02_04"); //РћРЅРё С‚Р°СЏС‚СЃСЏ РІРѕ С‚СЊРјРµ Рё РїРѕРґР¶РёРґР°СЋС‚ СЃРІРѕСЋ РґРѕР±С‹С‡Сѓ. РўС‹ СЃР»С‹С€РёС€СЊ, РєР°Рє РёС… РєРѕРіРѕС‚РєРё С†Р°СЂР°РїР°СЋС‚ РєР°РјРµРЅСЊ, РєРѕРіРґР° РѕРЅРё РїРѕРґР±РёСЂР°СЋС‚СЃСЏ РІСЃРµ Р±Р»РёР¶Рµ Рё Р±Р»РёР¶Рµ. РЇ РІРёРґРµР», РєР°Рє РѕРЅРё СѓР±РёРІР°СЋС‚...
+	AI_Output (self, other,"VLK_583_Glen_INFO_Info_02_05"); //РћРЅРё Р±С‹СЃС‚СЂС‹ Рё Р±РµР·Р¶Р°Р»РѕСЃС‚РЅС‹. Р•СЃР»Рё С‚РµР±Рµ РґРѕСЂРѕРіР° Р¶РёР·РЅСЊ, Р»СѓС‡С€Рµ СѓРЅРѕСЃРё РѕС‚СЃСЋРґР° РЅРѕРіРё, РїРѕРєР° РµС‰Рµ С†РµР».
 };  
 // ***************** Infos *****************************
 
@@ -59,7 +59,7 @@ instance  VLK_583_Glen_LOCKPICK (C_INFO)
 	information	=  VLK_583_Glen_LOCKPICK_Info;
 	important	= 0;	
 	permanent	= 0;
-	description = "Говорят, здесь можно купить отмычки.";
+	description = "Р“РѕРІРѕСЂСЏС‚, Р·РґРµСЃСЊ РјРѕР¶РЅРѕ РєСѓРїРёС‚СЊ РѕС‚РјС‹С‡РєРё.";
 };                       
 
 FUNC int  VLK_583_Glen_LOCKPICK_Condition()
@@ -72,8 +72,8 @@ FUNC int  VLK_583_Glen_LOCKPICK_Condition()
 
 FUNC VOID  VLK_583_Glen_LOCKPICK_Info()
 {
-	AI_Output (other, self,"VLK_583_Glen_LOCKPICK_15_01"); //Говорят, здесь можно купить отмычки.
-	AI_Output (self, other,"VLK_583_Glen_LOCKPICK_02_02"); //Ну, от такого проныры, как ты, ничего не скроешь, верно? По 10 кусков руды за штуку.
+	AI_Output (other, self,"VLK_583_Glen_LOCKPICK_15_01"); //Р“РѕРІРѕСЂСЏС‚, Р·РґРµСЃСЊ РјРѕР¶РЅРѕ РєСѓРїРёС‚СЊ РѕС‚РјС‹С‡РєРё.
+	AI_Output (self, other,"VLK_583_Glen_LOCKPICK_02_02"); //РќСѓ, РѕС‚ С‚Р°РєРѕРіРѕ РїСЂРѕРЅС‹СЂС‹, РєР°Рє С‚С‹, РЅРёС‡РµРіРѕ РЅРµ СЃРєСЂРѕРµС€СЊ, РІРµСЂРЅРѕ? РџРѕ 10 РєСѓСЃРєРѕРІ СЂСѓРґС‹ Р·Р° С€С‚СѓРєСѓ.
 	
 	
 };
@@ -86,7 +86,7 @@ instance  VLK_583_Glen_BUY (C_INFO)
 	information	=  VLK_583_Glen_BUY_Info;
 	important	= 0;	
 	permanent	= 1;
-	description = "(купить отмычки)";
+	description = "(РєСѓРїРёС‚СЊ РѕС‚РјС‹С‡РєРё)";
 	trade		= 1;
 };                       
 
@@ -99,7 +99,7 @@ FUNC int  VLK_583_Glen_BUY_Condition()
 };
 FUNC VOID  VLK_583_Glen_BUY_Info()
 {
-	AI_Output (other, self,"VLK_583_Glen_BUY_Info_15_01"); //Мне нужны отмычки.
+	AI_Output (other, self,"VLK_583_Glen_BUY_Info_15_01"); //РњРЅРµ РЅСѓР¶РЅС‹ РѕС‚РјС‹С‡РєРё.
 	
 	
 	

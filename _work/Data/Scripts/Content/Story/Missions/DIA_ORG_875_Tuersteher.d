@@ -33,7 +33,7 @@ INSTANCE DIA_Org_875_PERM (C_INFO)
 	condition	= DIA_Org_875_PERM_Condition;
 	information	= DIA_Org_875_PERM_Info;
 	permanent	= 1;
-	description = "Вы пропускаете только воров и рудокопов? ";
+	description = "Р’С‹ РїСЂРѕРїСѓСЃРєР°РµС‚Рµ С‚РѕР»СЊРєРѕ РІРѕСЂРѕРІ Рё СЂСѓРґРѕРєРѕРїРѕРІ? ";
 };                       
 
 FUNC INT DIA_Org_875_PERM_Condition()
@@ -43,7 +43,7 @@ FUNC INT DIA_Org_875_PERM_Condition()
 
 FUNC VOID DIA_Org_875_PERM_Info()
 {	
-	AI_Output (other, self,"DIA_Org_875_PERM_15_00"); //Вы пропускаете только воров и рудокопов? 
-	AI_Output (self, other,"DIA_Org_875_PERM_13_01"); //Против братьев из секты мы тоже ничего не имеем.
-	AI_Output (self, other,"DIA_Org_875_PERM_13_02"); //Но кроме них здесь не пройдет никто.
+	AI_Output (other, self,"DIA_Org_875_PERM_15_00"); //Р’С‹ РїСЂРѕРїСѓСЃРєР°РµС‚Рµ С‚РѕР»СЊРєРѕ РІРѕСЂРѕРІ Рё СЂСѓРґРѕРєРѕРїРѕРІ? 
+	AI_Output (self, other,"DIA_Org_875_PERM_13_01"); //РџСЂРѕС‚РёРІ Р±СЂР°С‚СЊРµРІ РёР· СЃРµРєС‚С‹ РјС‹ С‚РѕР¶Рµ РЅРёС‡РµРіРѕ РЅРµ РёРјРµРµРј.
+	AI_Output (self, other,"DIA_Org_875_PERM_13_02"); //РќРѕ РєСЂРѕРјРµ РЅРёС… Р·РґРµСЃСЊ РЅРµ РїСЂРѕР№РґРµС‚ РЅРёРєС‚Рѕ.
 };

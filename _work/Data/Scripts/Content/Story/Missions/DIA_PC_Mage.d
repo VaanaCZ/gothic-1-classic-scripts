@@ -20,11 +20,11 @@ func VOID DIA_Milten_EXIT_Info()
 {
 	if (self.aivar[AIV_PARTYMEMBER])
 	{
-		AI_Output 		(self, hero,"DIA_Milten_EXIT_02_00"); //Идем.
+		AI_Output 		(self, hero,"DIA_Milten_EXIT_02_00"); //РРґРµРј.
 	}
 	else
 	{
-		AI_Output 		(self, hero,"DIA_Milten_EXIT_02_01"); //Увидимся.
+		AI_Output 		(self, hero,"DIA_Milten_EXIT_02_01"); //РЈРІРёРґРёРјСЃСЏ.
 	};
 	AI_StopProcessInfos	(self);
 };
@@ -54,7 +54,7 @@ FUNC INT DIA_Milten_First_Condition()
 
 func VOID DIA_Milten_First_Info()
 {
-	AI_Output (self, other,"DIA_Milten_First_02_00"); //Ты не должен переступать этот порог до тех пор, пока не получишь разрешение от господина Корристо.
+	AI_Output (self, other,"DIA_Milten_First_02_00"); //РўС‹ РЅРµ РґРѕР»Р¶РµРЅ РїРµСЂРµСЃС‚СѓРїР°С‚СЊ СЌС‚РѕС‚ РїРѕСЂРѕРі РґРѕ С‚РµС… РїРѕСЂ, РїРѕРєР° РЅРµ РїРѕР»СѓС‡РёС€СЊ СЂР°Р·СЂРµС€РµРЅРёРµ РѕС‚ РіРѕСЃРїРѕРґРёРЅР° РљРѕСЂСЂРёСЃС‚Рѕ.
 };
 
 //*********************************************
@@ -68,7 +68,7 @@ instance DIA_Milten_Hello (C_INFO)
 	condition	= DIA_Milten_Hello_Condition;
 	information	= DIA_Milten_Hello_Info;
 	permanent	= 0;
-	description = "Я ищу Верховного Мага Круга Огня.";
+	description = "РЇ РёС‰Сѓ Р’РµСЂС…РѕРІРЅРѕРіРѕ РњР°РіР° РљСЂСѓРіР° РћРіРЅСЏ.";
 };                       
 
 FUNC INT DIA_Milten_Hello_Condition()
@@ -81,8 +81,8 @@ FUNC INT DIA_Milten_Hello_Condition()
 
 func VOID DIA_Milten_Hello_Info()
 {
-	AI_Output (other, self,"DIA_Milten_Hello_15_00"); //Я ищу Верховного Мага Круга Огня.
-	AI_Output (self, other,"DIA_Milten_Hello_02_01"); //Это Корристо. Зачем он тебе нужен?
+	AI_Output (other, self,"DIA_Milten_Hello_15_00"); //РЇ РёС‰Сѓ Р’РµСЂС…РѕРІРЅРѕРіРѕ РњР°РіР° РљСЂСѓРіР° РћРіРЅСЏ.
+	AI_Output (self, other,"DIA_Milten_Hello_02_01"); //Р­С‚Рѕ РљРѕСЂСЂРёСЃС‚Рѕ. Р—Р°С‡РµРј РѕРЅ С‚РµР±Рµ РЅСѓР¶РµРЅ?
 };
 
 //*********************************************
@@ -113,13 +113,13 @@ func VOID DIA_Milten_GotoCorristo_Info()
 	if ( (Npc_HasItems(other,ItWr_Fire_Letter_01)>=1) || (Npc_HasItems(other,ItWr_Fire_Letter_02)>=1) )
 	{
 		//***kopierte AI_outputs, falls SC Brief noch hat***
-		AI_Output (other, self,"DIA_Milten_Hello_15_00"); //Я ищу Верховного Мага Круга Огня.
-		AI_Output (self, other,"DIA_Milten_Hello_02_01"); //Это Корристо. Зачем он тебе нужен?
-		AI_Output (other, self,"DIA_Milten_Letter_15_00"); //У меня письмо для Верховного Мага Круга Огня.
-		//AI_Output (self, other,"DIA_Milten_Letter_02_01"); //Bist du ein Bote aus der AuЯenwelt?
+		AI_Output (other, self,"DIA_Milten_Hello_15_00"); //РЇ РёС‰Сѓ Р’РµСЂС…РѕРІРЅРѕРіРѕ РњР°РіР° РљСЂСѓРіР° РћРіРЅСЏ.
+		AI_Output (self, other,"DIA_Milten_Hello_02_01"); //Р­С‚Рѕ РљРѕСЂСЂРёСЃС‚Рѕ. Р—Р°С‡РµРј РѕРЅ С‚РµР±Рµ РЅСѓР¶РµРЅ?
+		AI_Output (other, self,"DIA_Milten_Letter_15_00"); //РЈ РјРµРЅСЏ РїРёСЃСЊРјРѕ РґР»СЏ Р’РµСЂС…РѕРІРЅРѕРіРѕ РњР°РіР° РљСЂСѓРіР° РћРіРЅСЏ.
+		//AI_Output (self, other,"DIA_Milten_Letter_02_01"); //Bist du ein Bote aus der AuРЇenwelt?
 		//AI_Output (other, self,"DIA_Milten_Letter_15_02"); //Ja. Ein Magier gab mir den Brief, kurz bevor sie mich in die Kolonie geworfen haben.
-		AI_Output (self, other,"DIA_Milten_Letter_02_03"); //Покажи мне это письмо.
-		AI_Output (other, self,"DIA_Milten_Letter_Give_15_00"); //Вот оно.
+		AI_Output (self, other,"DIA_Milten_Letter_02_03"); //РџРѕРєР°Р¶Рё РјРЅРµ СЌС‚Рѕ РїРёСЃСЊРјРѕ.
+		AI_Output (other, self,"DIA_Milten_Letter_Give_15_00"); //Р’РѕС‚ РѕРЅРѕ.
 		B_GiveXP(XP_XardasLetter);
 		if		Npc_HasItems(other,ItWr_Fire_Letter_01)
 		{ 
@@ -129,13 +129,13 @@ func VOID DIA_Milten_GotoCorristo_Info()
 		{ 
 			B_GiveInvItems(other, self, ItWr_Fire_Letter_02, 1);
 		};
-		AI_Output (other, self,"GUR_1200_Yberion_EARN_Info_15_01"); //А как насчет небольшой награды?
-		AI_Output (self,hero,"Info_Milten_SHSEAL_02_05"); //В этом больше нет необходимости.
+		AI_Output (other, self,"GUR_1200_Yberion_EARN_Info_15_01"); //Рђ РєР°Рє РЅР°СЃС‡РµС‚ РЅРµР±РѕР»СЊС€РѕР№ РЅР°РіСЂР°РґС‹?
+		AI_Output (self,hero,"Info_Milten_SHSEAL_02_05"); //Р’ СЌС‚РѕРј Р±РѕР»СЊС€Рµ РЅРµС‚ РЅРµРѕР±С…РѕРґРёРјРѕСЃС‚Рё.
 		//***kopierte AI_outputs ENDE***
 	};
 	
-	AI_Output (self, other,"DIA_Milten_GotoCorristo_02_01"); //Мы слышали о твоих подвигах в Старой Шахте. Без ползунов добыча руды идет гораздо спокойнее.
-	AI_Output (self, other,"DIA_Milten_GotoCorristo_02_02"); //Корристо тоже слышал о тебе. Он хочет поговорить с тобой. Иди к нему.
+	AI_Output (self, other,"DIA_Milten_GotoCorristo_02_01"); //РњС‹ СЃР»С‹С€Р°Р»Рё Рѕ С‚РІРѕРёС… РїРѕРґРІРёРіР°С… РІ РЎС‚Р°СЂРѕР№ РЁР°С…С‚Рµ. Р‘РµР· РїРѕР»Р·СѓРЅРѕРІ РґРѕР±С‹С‡Р° СЂСѓРґС‹ РёРґРµС‚ РіРѕСЂР°Р·РґРѕ СЃРїРѕРєРѕР№РЅРµРµ.
+	AI_Output (self, other,"DIA_Milten_GotoCorristo_02_02"); //РљРѕСЂСЂРёСЃС‚Рѕ С‚РѕР¶Рµ СЃР»С‹С€Р°Р» Рѕ С‚РµР±Рµ. РћРЅ С…РѕС‡РµС‚ РїРѕРіРѕРІРѕСЂРёС‚СЊ СЃ С‚РѕР±РѕР№. РРґРё Рє РЅРµРјСѓ.
 };
 
 //*********************************************
@@ -151,7 +151,7 @@ instance DIA_Milten_Letter (C_INFO)
 	condition	= DIA_Milten_Letter_Condition;
 	information	= DIA_Milten_Letter_Info;
 	permanent	= 0;
-	description = "У меня есть письмо Верховному Магу Круга Огня.";
+	description = "РЈ РјРµРЅСЏ РµСЃС‚СЊ РїРёСЃСЊРјРѕ Р’РµСЂС…РѕРІРЅРѕРјСѓ РњР°РіСѓ РљСЂСѓРіР° РћРіРЅСЏ.";
 };                       
 
 FUNC INT DIA_Milten_Letter_Condition()
@@ -165,28 +165,28 @@ FUNC INT DIA_Milten_Letter_Condition()
 
 func VOID DIA_Milten_Letter_Info()
 {
-	AI_Output			(other, self,"DIA_Milten_Letter_15_00"); //У меня письмо для Верховного Мага Круга Огня.
-	AI_Output			(self, other,"DIA_Milten_Letter_02_01"); //Ты гонец из Внешнего Мира?
-	AI_Output			(other, self,"DIA_Milten_Letter_15_02"); //Да. Один из магов дал мне это письмо, прежде чем меня забросили в колонию.
-	AI_Output			(self, other,"DIA_Milten_Letter_02_03"); //Покажи мне это письмо.
+	AI_Output			(other, self,"DIA_Milten_Letter_15_00"); //РЈ РјРµРЅСЏ РїРёСЃСЊРјРѕ РґР»СЏ Р’РµСЂС…РѕРІРЅРѕРіРѕ РњР°РіР° РљСЂСѓРіР° РћРіРЅСЏ.
+	AI_Output			(self, other,"DIA_Milten_Letter_02_01"); //РўС‹ РіРѕРЅРµС† РёР· Р’РЅРµС€РЅРµРіРѕ РњРёСЂР°?
+	AI_Output			(other, self,"DIA_Milten_Letter_15_02"); //Р”Р°. РћРґРёРЅ РёР· РјР°РіРѕРІ РґР°Р» РјРЅРµ СЌС‚Рѕ РїРёСЃСЊРјРѕ, РїСЂРµР¶РґРµ С‡РµРј РјРµРЅСЏ Р·Р°Р±СЂРѕСЃРёР»Рё РІ РєРѕР»РѕРЅРёСЋ.
+	AI_Output			(self, other,"DIA_Milten_Letter_02_03"); //РџРѕРєР°Р¶Рё РјРЅРµ СЌС‚Рѕ РїРёСЃСЊРјРѕ.
 	Info_ClearChoices	(DIA_Milten_Letter);
-	Info_AddChoice		(DIA_Milten_Letter,"Прежде я хочу получить свою награду.",DIA_Milten_Letter_NO);
-	Info_AddChoice		(DIA_Milten_Letter,"Вот оно.",DIA_Milten_Letter_Give);
+	Info_AddChoice		(DIA_Milten_Letter,"РџСЂРµР¶РґРµ СЏ С…РѕС‡Сѓ РїРѕР»СѓС‡РёС‚СЊ СЃРІРѕСЋ РЅР°РіСЂР°РґСѓ.",DIA_Milten_Letter_NO);
+	Info_AddChoice		(DIA_Milten_Letter,"Р’РѕС‚ РѕРЅРѕ.",DIA_Milten_Letter_Give);
 };
 
 func void DIA_Milten_Letter_Give()
 {
-	AI_Output (other, self,"DIA_Milten_Letter_Give_15_00"); //Вот оно.
+	AI_Output (other, self,"DIA_Milten_Letter_Give_15_00"); //Р’РѕС‚ РѕРЅРѕ.
 	B_UseFakeScroll();
 	
 	B_GiveXP(XP_XardasLetter);
-	AI_Output (self, other,"DIA_Milten_Letter_Give_02_03"); //Это письмо адресовано Ксардасу!
-	AI_Output (other, self,"DIA_Milten_Letter_Give_15_04"); //И что в этом такого?
-	AI_Output (self, other,"DIA_Milten_Letter_Give_02_05"); //Ксардас оставил служение Инносу много лет назад. Он ушел отсюда и посвятил свою жизнь черной магии.
-	AI_Output (self, other,"DIA_Milten_Letter_Give_02_06"); //Он живет в башне в центре земель орков и занимается только своими исследованиями. 
-	AI_Output (self, other,"DIA_Milten_Letter_Give_02_07"); //Он сказал, что выяснит сам, что пошло не так при возведении Барьера.
+	AI_Output (self, other,"DIA_Milten_Letter_Give_02_03"); //Р­С‚Рѕ РїРёСЃСЊРјРѕ Р°РґСЂРµСЃРѕРІР°РЅРѕ РљСЃР°СЂРґР°СЃСѓ!
+	AI_Output (other, self,"DIA_Milten_Letter_Give_15_04"); //Р С‡С‚Рѕ РІ СЌС‚РѕРј С‚Р°РєРѕРіРѕ?
+	AI_Output (self, other,"DIA_Milten_Letter_Give_02_05"); //РљСЃР°СЂРґР°СЃ РѕСЃС‚Р°РІРёР» СЃР»СѓР¶РµРЅРёРµ РРЅРЅРѕСЃСѓ РјРЅРѕРіРѕ Р»РµС‚ РЅР°Р·Р°Рґ. РћРЅ СѓС€РµР» РѕС‚СЃСЋРґР° Рё РїРѕСЃРІСЏС‚РёР» СЃРІРѕСЋ Р¶РёР·РЅСЊ С‡РµСЂРЅРѕР№ РјР°РіРёРё.
+	AI_Output (self, other,"DIA_Milten_Letter_Give_02_06"); //РћРЅ Р¶РёРІРµС‚ РІ Р±Р°С€РЅРµ РІ С†РµРЅС‚СЂРµ Р·РµРјРµР»СЊ РѕСЂРєРѕРІ Рё Р·Р°РЅРёРјР°РµС‚СЃСЏ С‚РѕР»СЊРєРѕ СЃРІРѕРёРјРё РёСЃСЃР»РµРґРѕРІР°РЅРёСЏРјРё. 
+	AI_Output (self, other,"DIA_Milten_Letter_Give_02_07"); //РћРЅ СЃРєР°Р·Р°Р», С‡С‚Рѕ РІС‹СЏСЃРЅРёС‚ СЃР°Рј, С‡С‚Рѕ РїРѕС€Р»Рѕ РЅРµ С‚Р°Рє РїСЂРё РІРѕР·РІРµРґРµРЅРёРё Р‘Р°СЂСЊРµСЂР°.
 	
-	AI_Output (self, other,"DIA_Milten_Letter_Give_02_08"); //Жди здесь. Я скоро вернусь.
+	AI_Output (self, other,"DIA_Milten_Letter_Give_02_08"); //Р–РґРё Р·РґРµСЃСЊ. РЇ СЃРєРѕСЂРѕ РІРµСЂРЅСѓСЃСЊ.
 	AI_StopProcessInfos	(self);
 	AI_GotoWP (self, "OCC_CHAPEL_STAIRCASE_TOP");
 	AI_GotoWP (self, "OCC_CHAPEL_ENTRANCE");
@@ -205,20 +205,20 @@ func void DIA_Milten_Letter_Give()
 
 func void DIA_Milten_Letter_NO()
 {
-	AI_Output (other, self,"DIA_Milten_Letter_NO_15_00"); //Прежде я хочу получить свою награду.
-	AI_Output (self, other,"DIA_Milten_Letter_NO_02_01"); //Корристо прикажет Торрезу выдать ее тебе, как только получит письмо.
-	AI_Output (self, other,"DIA_Milten_Letter_NO_02_02"); //Я служитель Инноса, я никогда не лгу. Теперь ты можешь отдать мне письмо.
+	AI_Output (other, self,"DIA_Milten_Letter_NO_15_00"); //РџСЂРµР¶РґРµ СЏ С…РѕС‡Сѓ РїРѕР»СѓС‡РёС‚СЊ СЃРІРѕСЋ РЅР°РіСЂР°РґСѓ.
+	AI_Output (self, other,"DIA_Milten_Letter_NO_02_01"); //РљРѕСЂСЂРёСЃС‚Рѕ РїСЂРёРєР°Р¶РµС‚ РўРѕСЂСЂРµР·Сѓ РІС‹РґР°С‚СЊ РµРµ С‚РµР±Рµ, РєР°Рє С‚РѕР»СЊРєРѕ РїРѕР»СѓС‡РёС‚ РїРёСЃСЊРјРѕ.
+	AI_Output (self, other,"DIA_Milten_Letter_NO_02_02"); //РЇ СЃР»СѓР¶РёС‚РµР»СЊ РРЅРЅРѕСЃР°, СЏ РЅРёРєРѕРіРґР° РЅРµ Р»РіСѓ. РўРµРїРµСЂСЊ С‚С‹ РјРѕР¶РµС€СЊ РѕС‚РґР°С‚СЊ РјРЅРµ РїРёСЃСЊРјРѕ.
 	Info_ClearChoices	(DIA_Milten_Letter);
-	Info_AddChoice		(DIA_Milten_Letter,"Я бы предпочел сам отдать письмо Торрезу.",DIA_Milten_Letter_NO_AGAIN);
-	Info_AddChoice		(DIA_Milten_Letter,"Вот оно.",DIA_Milten_Letter_Give);
+	Info_AddChoice		(DIA_Milten_Letter,"РЇ Р±С‹ РїСЂРµРґРїРѕС‡РµР» СЃР°Рј РѕС‚РґР°С‚СЊ РїРёСЃСЊРјРѕ РўРѕСЂСЂРµР·Сѓ.",DIA_Milten_Letter_NO_AGAIN);
+	Info_AddChoice		(DIA_Milten_Letter,"Р’РѕС‚ РѕРЅРѕ.",DIA_Milten_Letter_Give);
 };
 
 func void DIA_Milten_Letter_NO_AGAIN()
 {
-	AI_Output (other, self,"DIA_Milten_Letter_NO_AGAIN_15_00"); //Я бы предпочел сам отдать письмо Торрезу.
-	AI_Output (self, other,"DIA_Milten_Letter_NO_AGAIN_02_01"); //Смогу ли я тебя переубедить?
-	AI_Output (other, self,"DIA_Milten_Letter_NO_AGAIN_15_02"); //Нет. Я хочу получить свою награду.
-	AI_Output (self, other,"DIA_Milten_Letter_NO_AGAIN_02_03"); //Хорошо. Если ты этого хочешь. Жди здесь.
+	AI_Output (other, self,"DIA_Milten_Letter_NO_AGAIN_15_00"); //РЇ Р±С‹ РїСЂРµРґРїРѕС‡РµР» СЃР°Рј РѕС‚РґР°С‚СЊ РїРёСЃСЊРјРѕ РўРѕСЂСЂРµР·Сѓ.
+	AI_Output (self, other,"DIA_Milten_Letter_NO_AGAIN_02_01"); //РЎРјРѕРіСѓ Р»Рё СЏ С‚РµР±СЏ РїРµСЂРµСѓР±РµРґРёС‚СЊ?
+	AI_Output (other, self,"DIA_Milten_Letter_NO_AGAIN_15_02"); //РќРµС‚. РЇ С…РѕС‡Сѓ РїРѕР»СѓС‡РёС‚СЊ СЃРІРѕСЋ РЅР°РіСЂР°РґСѓ.
+	AI_Output (self, other,"DIA_Milten_Letter_NO_AGAIN_02_03"); //РҐРѕСЂРѕС€Рѕ. Р•СЃР»Рё С‚С‹ СЌС‚РѕРіРѕ С…РѕС‡РµС€СЊ. Р–РґРё Р·РґРµСЃСЊ.
 
 	Info_ClearChoices	(DIA_Milten_Letter);
 	AI_StopProcessInfos	(self);
@@ -255,12 +255,12 @@ func VOID DIA_Milten_ComesBack_Info()
 {
 	if (milten_HasLetter==FALSE)
 	{
-		AI_Output (self, other,"DIA_Milten_ComesBack_02_00"); //Корристо огорчило известие о том, что ты не доверяешь служителям Инноса.
-		AI_Output (self, other,"DIA_Milten_ComesBack_02_01"); //Но он позволил тебе встретиться с Торрезом и получить обычную награду.
+		AI_Output (self, other,"DIA_Milten_ComesBack_02_00"); //РљРѕСЂСЂРёСЃС‚Рѕ РѕРіРѕСЂС‡РёР»Рѕ РёР·РІРµСЃС‚РёРµ Рѕ С‚РѕРј, С‡С‚Рѕ С‚С‹ РЅРµ РґРѕРІРµСЂСЏРµС€СЊ СЃР»СѓР¶РёС‚РµР»СЏРј РРЅРЅРѕСЃР°.
+		AI_Output (self, other,"DIA_Milten_ComesBack_02_01"); //РќРѕ РѕРЅ РїРѕР·РІРѕР»РёР» С‚РµР±Рµ РІСЃС‚СЂРµС‚РёС‚СЊСЃСЏ СЃ РўРѕСЂСЂРµР·РѕРј Рё РїРѕР»СѓС‡РёС‚СЊ РѕР±С‹С‡РЅСѓСЋ РЅР°РіСЂР°РґСѓ.
 	}
 	else
 	{
-		AI_Output (self, other,"DIA_Milten_ComesBack_02_02"); //Корристо был в полном восторге. Он сказал, что ты можешь встретиться с Торрезом и выбрать себе награду.
+		AI_Output (self, other,"DIA_Milten_ComesBack_02_02"); //РљРѕСЂСЂРёСЃС‚Рѕ Р±С‹Р» РІ РїРѕР»РЅРѕРј РІРѕСЃС‚РѕСЂРіРµ. РћРЅ СЃРєР°Р·Р°Р», С‡С‚Рѕ С‚С‹ РјРѕР¶РµС€СЊ РІСЃС‚СЂРµС‚РёС‚СЊСЃСЏ СЃ РўРѕСЂСЂРµР·РѕРј Рё РІС‹Р±СЂР°С‚СЊ СЃРµР±Рµ РЅР°РіСЂР°РґСѓ.
 	};
 };
 
@@ -275,7 +275,7 @@ instance DIA_Milten_WoTorrez (C_INFO)
 	condition	= DIA_Milten_WoTorrez_Condition;
 	information	= DIA_Milten_WoTorrez_Info;
 	permanent	= 0;
-	description	= "Где мне искать Торреза?";
+	description	= "Р“РґРµ РјРЅРµ РёСЃРєР°С‚СЊ РўРѕСЂСЂРµР·Р°?";
 };                       
 
 FUNC INT DIA_Milten_WoTorrez_Condition()
@@ -288,9 +288,9 @@ FUNC INT DIA_Milten_WoTorrez_Condition()
 
 func VOID DIA_Milten_WoTorrez_Info()
 {
-	AI_Output (other, self,"DIA_Milten_WoTorrez_15_00"); //Где мне искать Торреза?
-	AI_Output (self, other,"DIA_Milten_WoTorrez_02_01"); //Весь день он стоит перед храмом.
-	AI_Output (self, other,"DIA_Milten_WoTorrez_02_02"); //Ночи же он проводит в своей келье. Поскольку лишь маги могут войти в храм, тебе придется поговорить с ним днем.
+	AI_Output (other, self,"DIA_Milten_WoTorrez_15_00"); //Р“РґРµ РјРЅРµ РёСЃРєР°С‚СЊ РўРѕСЂСЂРµР·Р°?
+	AI_Output (self, other,"DIA_Milten_WoTorrez_02_01"); //Р’РµСЃСЊ РґРµРЅСЊ РѕРЅ СЃС‚РѕРёС‚ РїРµСЂРµРґ С…СЂР°РјРѕРј.
+	AI_Output (self, other,"DIA_Milten_WoTorrez_02_02"); //РќРѕС‡Рё Р¶Рµ РѕРЅ РїСЂРѕРІРѕРґРёС‚ РІ СЃРІРѕРµР№ РєРµР»СЊРµ. РџРѕСЃРєРѕР»СЊРєСѓ Р»РёС€СЊ РјР°РіРё РјРѕРіСѓС‚ РІРѕР№С‚Рё РІ С…СЂР°Рј, С‚РµР±Рµ РїСЂРёРґРµС‚СЃСЏ РїРѕРіРѕРІРѕСЂРёС‚СЊ СЃ РЅРёРј РґРЅРµРј.
 };
 
 //*********************************************
@@ -304,7 +304,7 @@ instance DIA_Milten_NochEinBrief (C_INFO)
 	condition	= DIA_Milten_NochEinBrief_Condition;
 	information	= DIA_Milten_NochEinBrief_Info;
 	permanent	= 0;
-	description = "У меня письмо от магов Воды.";
+	description = "РЈ РјРµРЅСЏ РїРёСЃСЊРјРѕ РѕС‚ РјР°РіРѕРІ Р’РѕРґС‹.";
 };                       
 
 FUNC INT DIA_Milten_NochEinBrief_Condition()
@@ -317,9 +317,9 @@ FUNC INT DIA_Milten_NochEinBrief_Condition()
 
 func VOID DIA_Milten_NochEinBrief_Info()
 {
-	AI_Output (other, self,"DIA_Milten_NochEinBrief_15_00"); //У меня письмо от магов Воды.
-	AI_Output (self, other,"DIA_Milten_NochEinBrief_02_01"); //А! Очень хорошо! Я передам его Корристо.
-	AI_Output (self, other,"DIA_Milten_NochEinBrief_02_02"); //Когда вернешься в Новый Лагерь, маги Воды вознаградят тебя за труды.
+	AI_Output (other, self,"DIA_Milten_NochEinBrief_15_00"); //РЈ РјРµРЅСЏ РїРёСЃСЊРјРѕ РѕС‚ РјР°РіРѕРІ Р’РѕРґС‹.
+	AI_Output (self, other,"DIA_Milten_NochEinBrief_02_01"); //Рђ! РћС‡РµРЅСЊ С…РѕСЂРѕС€Рѕ! РЇ РїРµСЂРµРґР°Рј РµРіРѕ РљРѕСЂСЂРёСЃС‚Рѕ.
+	AI_Output (self, other,"DIA_Milten_NochEinBrief_02_02"); //РљРѕРіРґР° РІРµСЂРЅРµС€СЊСЃСЏ РІ РќРѕРІС‹Р№ Р›Р°РіРµСЂСЊ, РјР°РіРё Р’РѕРґС‹ РІРѕР·РЅР°РіСЂР°РґСЏС‚ С‚РµР±СЏ Р·Р° С‚СЂСѓРґС‹.
 	
 	Cronos_Messenger = LOG_SUCCESS;
 	B_GiveInvItems (other,self,Cronos_Brief,1);
@@ -336,7 +336,7 @@ instance DIA_Milten_PERM (C_INFO)
 	condition	= DIA_Milten_PERM_Condition;
 	information	= DIA_Milten_PERM_Info;
 	permanent	= 0;
-	description = "Расскажи мне о магах Огня.";
+	description = "Р Р°СЃСЃРєР°Р¶Рё РјРЅРµ Рѕ РјР°РіР°С… РћРіРЅСЏ.";
 };                       
 
 FUNC INT DIA_Milten_PERM_Condition()
@@ -349,11 +349,11 @@ FUNC INT DIA_Milten_PERM_Condition()
 
 func VOID DIA_Milten_PERM_Info()
 {
-	AI_Output (other, self,"DIA_Milten_PERM_15_00"); //Расскажи мне о магах Огня.
-	AI_Output (self, other,"DIA_Milten_PERM_02_01"); //Круг Огня обретает свою силу с благословения Инноса. Бог света и истины благоволит нам.
-	AI_Output (self, other,"DIA_Milten_PERM_02_02"); //Маги считают себя избранными - ну и ко всем остальным относятся соответственно.
-	AI_Output (self, other,"DIA_Milten_PERM_02_03"); //Мне повезло, что меня приняли. Корристо сделал меня своим учеником. По-моему, он просто хотел немного развлечься.
-	AI_Output (self, other,"DIA_Milten_PERM_02_04"); //С тех пор я ежедневно совершенствую свои магические навыки, чтобы быть допущенным в следующий Круг.
+	AI_Output (other, self,"DIA_Milten_PERM_15_00"); //Р Р°СЃСЃРєР°Р¶Рё РјРЅРµ Рѕ РјР°РіР°С… РћРіРЅСЏ.
+	AI_Output (self, other,"DIA_Milten_PERM_02_01"); //РљСЂСѓРі РћРіРЅСЏ РѕР±СЂРµС‚Р°РµС‚ СЃРІРѕСЋ СЃРёР»Сѓ СЃ Р±Р»Р°РіРѕСЃР»РѕРІРµРЅРёСЏ РРЅРЅРѕСЃР°. Р‘РѕРі СЃРІРµС‚Р° Рё РёСЃС‚РёРЅС‹ Р±Р»Р°РіРѕРІРѕР»РёС‚ РЅР°Рј.
+	AI_Output (self, other,"DIA_Milten_PERM_02_02"); //РњР°РіРё СЃС‡РёС‚Р°СЋС‚ СЃРµР±СЏ РёР·Р±СЂР°РЅРЅС‹РјРё - РЅСѓ Рё РєРѕ РІСЃРµРј РѕСЃС‚Р°Р»СЊРЅС‹Рј РѕС‚РЅРѕСЃСЏС‚СЃСЏ СЃРѕРѕС‚РІРµС‚СЃС‚РІРµРЅРЅРѕ.
+	AI_Output (self, other,"DIA_Milten_PERM_02_03"); //РњРЅРµ РїРѕРІРµР·Р»Рѕ, С‡С‚Рѕ РјРµРЅСЏ РїСЂРёРЅСЏР»Рё. РљРѕСЂСЂРёСЃС‚Рѕ СЃРґРµР»Р°Р» РјРµРЅСЏ СЃРІРѕРёРј СѓС‡РµРЅРёРєРѕРј. РџРѕ-РјРѕРµРјСѓ, РѕРЅ РїСЂРѕСЃС‚Рѕ С…РѕС‚РµР» РЅРµРјРЅРѕРіРѕ СЂР°Р·РІР»РµС‡СЊСЃСЏ.
+	AI_Output (self, other,"DIA_Milten_PERM_02_04"); //РЎ С‚РµС… РїРѕСЂ СЏ РµР¶РµРґРЅРµРІРЅРѕ СЃРѕРІРµСЂС€РµРЅСЃС‚РІСѓСЋ СЃРІРѕРё РјР°РіРёС‡РµСЃРєРёРµ РЅР°РІС‹РєРё, С‡С‚РѕР±С‹ Р±С‹С‚СЊ РґРѕРїСѓС‰РµРЅРЅС‹Рј РІ СЃР»РµРґСѓСЋС‰РёР№ РљСЂСѓРі.
 };
 
 //*********************************************
@@ -367,7 +367,7 @@ instance DIA_Milten_WannaMage (C_INFO)
 	condition	= DIA_Milten_WannaMage_Condition;
 	information	= DIA_Milten_WannaMage_Info;
 	permanent	= 1;
-	description = "Я тоже хочу стать учеником мага, как ты.";
+	description = "РЇ С‚РѕР¶Рµ С…РѕС‡Сѓ СЃС‚Р°С‚СЊ СѓС‡РµРЅРёРєРѕРј РјР°РіР°, РєР°Рє С‚С‹.";
 };                       
 
 FUNC INT DIA_Milten_WannaMage_Condition()
@@ -380,10 +380,10 @@ FUNC INT DIA_Milten_WannaMage_Condition()
 
 func VOID DIA_Milten_WannaMage_Info()
 {
-	AI_Output (other, self,"DIA_Milten_WannaMage_15_00"); //Я тоже хочу стать учеником мага, как ты.
-	AI_Output (self, other,"DIA_Milten_WannaMage_02_01"); //Корристо выбрал меня, потому что я помогал Баронам.
-	AI_Output (self, other,"DIA_Milten_WannaMage_02_02"); //До тех пор, пока ты не сделаешь что-нибудь исключительное, он и разговаривать не захочет о твоем обучении.
-	AI_Output (self, other,"DIA_Milten_WannaMage_02_03"); //Помимо этого, ты должен принадлежать к Старому Лагерю. Сомневаюсь, что Корристо возьмет себе в ученики человека из другой части колонии.
+	AI_Output (other, self,"DIA_Milten_WannaMage_15_00"); //РЇ С‚РѕР¶Рµ С…РѕС‡Сѓ СЃС‚Р°С‚СЊ СѓС‡РµРЅРёРєРѕРј РјР°РіР°, РєР°Рє С‚С‹.
+	AI_Output (self, other,"DIA_Milten_WannaMage_02_01"); //РљРѕСЂСЂРёСЃС‚Рѕ РІС‹Р±СЂР°Р» РјРµРЅСЏ, РїРѕС‚РѕРјСѓ С‡С‚Рѕ СЏ РїРѕРјРѕРіР°Р» Р‘Р°СЂРѕРЅР°Рј.
+	AI_Output (self, other,"DIA_Milten_WannaMage_02_02"); //Р”Рѕ С‚РµС… РїРѕСЂ, РїРѕРєР° С‚С‹ РЅРµ СЃРґРµР»Р°РµС€СЊ С‡С‚Рѕ-РЅРёР±СѓРґСЊ РёСЃРєР»СЋС‡РёС‚РµР»СЊРЅРѕРµ, РѕРЅ Рё СЂР°Р·РіРѕРІР°СЂРёРІР°С‚СЊ РЅРµ Р·Р°С…РѕС‡РµС‚ Рѕ С‚РІРѕРµРј РѕР±СѓС‡РµРЅРёРё.
+	AI_Output (self, other,"DIA_Milten_WannaMage_02_03"); //РџРѕРјРёРјРѕ СЌС‚РѕРіРѕ, С‚С‹ РґРѕР»Р¶РµРЅ РїСЂРёРЅР°РґР»РµР¶Р°С‚СЊ Рє РЎС‚Р°СЂРѕРјСѓ Р›Р°РіРµСЂСЋ. РЎРѕРјРЅРµРІР°СЋСЃСЊ, С‡С‚Рѕ РљРѕСЂСЂРёСЃС‚Рѕ РІРѕР·СЊРјРµС‚ СЃРµР±Рµ РІ СѓС‡РµРЅРёРєРё С‡РµР»РѕРІРµРєР° РёР· РґСЂСѓРіРѕР№ С‡Р°СЃС‚Рё РєРѕР»РѕРЅРёРё.
 };
 
 
@@ -431,10 +431,10 @@ func void Info_Milten_SHWAIT_Info()
 {
 	AI_GotoNpc		(self,hero);
 	
-	AI_Output		(self,hero,"Info_Milten_SHWAIT_02_01"); //Приветствую! Мой друг Лестер из Болотного Лагеря рассказал мне о тебе.
-	AI_Output		(self,hero,"Info_Milten_SHWAIT_02_02"); //Я поражен. Ты стал очень сильным.
-	AI_Output		(hero,self,"Info_Milten_SHWAIT_15_03"); //Стараюсь.
-	AI_Output		(self,hero,"Info_Milten_SHWAIT_02_04"); //Ах, да. Как всегда откровенен, да?
+	AI_Output		(self,hero,"Info_Milten_SHWAIT_02_01"); //РџСЂРёРІРµС‚СЃС‚РІСѓСЋ! РњРѕР№ РґСЂСѓРі Р›РµСЃС‚РµСЂ РёР· Р‘РѕР»РѕС‚РЅРѕРіРѕ Р›Р°РіРµСЂСЏ СЂР°СЃСЃРєР°Р·Р°Р» РјРЅРµ Рѕ С‚РµР±Рµ.
+	AI_Output		(self,hero,"Info_Milten_SHWAIT_02_02"); //РЇ РїРѕСЂР°Р¶РµРЅ. РўС‹ СЃС‚Р°Р» РѕС‡РµРЅСЊ СЃРёР»СЊРЅС‹Рј.
+	AI_Output		(hero,self,"Info_Milten_SHWAIT_15_03"); //РЎС‚Р°СЂР°СЋСЃСЊ.
+	AI_Output		(self,hero,"Info_Milten_SHWAIT_02_04"); //РђС…, РґР°. РљР°Рє РІСЃРµРіРґР° РѕС‚РєСЂРѕРІРµРЅРµРЅ, РґР°?
 };
 
 //***************************************************************************
@@ -447,7 +447,7 @@ instance Info_Milten_SHGORN (C_INFO)
 	information	= Info_Milten_SHGORN_Info;
 	important	= 0;
 	permanent	= 0;
-	description	= "Я видел Горна.";
+	description	= "РЇ РІРёРґРµР» Р“РѕСЂРЅР°.";
 };
 
 FUNC int Info_Milten_SHGORN_Condition()
@@ -460,10 +460,10 @@ FUNC int Info_Milten_SHGORN_Condition()
 
 func void Info_Milten_SHGORN_Info()
 {
-	AI_Output		(hero,self,"Info_Milten_SHGORN_15_01"); //Я видел Горна.
-	AI_Output		(self,hero,"Info_Milten_SHGORN_02_02"); //В самом деле? И где?
-	AI_Output		(hero,self,"Info_Milten_SHGORN_15_03"); //В разрушенном монастыре у моря. Мы с ним вдвоем обыскивали развалины в поисках сокровищ.
-	AI_Output		(self,hero,"Info_Milten_SHGORN_02_04"); //Уверен, что он расскажет мне обо всем, когда мы встретимся вновь.
+	AI_Output		(hero,self,"Info_Milten_SHGORN_15_01"); //РЇ РІРёРґРµР» Р“РѕСЂРЅР°.
+	AI_Output		(self,hero,"Info_Milten_SHGORN_02_02"); //Р’ СЃР°РјРѕРј РґРµР»Рµ? Р РіРґРµ?
+	AI_Output		(hero,self,"Info_Milten_SHGORN_15_03"); //Р’ СЂР°Р·СЂСѓС€РµРЅРЅРѕРј РјРѕРЅР°СЃС‚С‹СЂРµ Сѓ РјРѕСЂСЏ. РњС‹ СЃ РЅРёРј РІРґРІРѕРµРј РѕР±С‹СЃРєРёРІР°Р»Рё СЂР°Р·РІР°Р»РёРЅС‹ РІ РїРѕРёСЃРєР°С… СЃРѕРєСЂРѕРІРёС‰.
+	AI_Output		(self,hero,"Info_Milten_SHGORN_02_04"); //РЈРІРµСЂРµРЅ, С‡С‚Рѕ РѕРЅ СЂР°СЃСЃРєР°Р¶РµС‚ РјРЅРµ РѕР±Рѕ РІСЃРµРј, РєРѕРіРґР° РјС‹ РІСЃС‚СЂРµС‚РёРјСЃСЏ РІРЅРѕРІСЊ.
 };
 
 //***************************************************************************
@@ -476,7 +476,7 @@ instance Info_Milten_SHLESTER (C_INFO)
 	information	= Info_Milten_SHLESTER_Info;
 	important	= 0;
 	permanent	= 0;
-	description	= "Мы с Лестером осмотрели форт в горах.";
+	description	= "РњС‹ СЃ Р›РµСЃС‚РµСЂРѕРј РѕСЃРјРѕС‚СЂРµР»Рё С„РѕСЂС‚ РІ РіРѕСЂР°С….";
 };
 
 FUNC int Info_Milten_SHLESTER_Condition()
@@ -489,10 +489,10 @@ FUNC int Info_Milten_SHLESTER_Condition()
 
 func void Info_Milten_SHLESTER_Info()
 {
-	AI_Output		(hero,self,"Info_Milten_SHLESTER_15_01"); //Мы с Лестером осмотрели форт в горах.
-	AI_Output		(self,hero,"Info_Milten_SHLESTER_02_02"); //Он говорил мне об этом. Похоже, тебе можно доверять.
-	AI_Output		(hero,self,"Info_Milten_SHLESTER_15_03"); //Так где же вы четверо уже встречались?
-	AI_Output		(self,hero,"Info_Milten_SHLESTER_02_04"); //О, здесь и там - в самых разных местах.
+	AI_Output		(hero,self,"Info_Milten_SHLESTER_15_01"); //РњС‹ СЃ Р›РµСЃС‚РµСЂРѕРј РѕСЃРјРѕС‚СЂРµР»Рё С„РѕСЂС‚ РІ РіРѕСЂР°С….
+	AI_Output		(self,hero,"Info_Milten_SHLESTER_02_02"); //РћРЅ РіРѕРІРѕСЂРёР» РјРЅРµ РѕР± СЌС‚РѕРј. РџРѕС…РѕР¶Рµ, С‚РµР±Рµ РјРѕР¶РЅРѕ РґРѕРІРµСЂСЏС‚СЊ.
+	AI_Output		(hero,self,"Info_Milten_SHLESTER_15_03"); //РўР°Рє РіРґРµ Р¶Рµ РІС‹ С‡РµС‚РІРµСЂРѕ СѓР¶Рµ РІСЃС‚СЂРµС‡Р°Р»РёСЃСЊ?
+	AI_Output		(self,hero,"Info_Milten_SHLESTER_02_04"); //Рћ, Р·РґРµСЃСЊ Рё С‚Р°Рј - РІ СЃР°РјС‹С… СЂР°Р·РЅС‹С… РјРµСЃС‚Р°С….
 };
 
 //***************************************************************************
@@ -505,7 +505,7 @@ instance Info_Milten_SHYOU (C_INFO)
 	information	= Info_Milten_SHYOU_Info;
 	important	= 0;
 	permanent	= 0;
-	description	= "Чем ты занимаешься?";
+	description	= "Р§РµРј С‚С‹ Р·Р°РЅРёРјР°РµС€СЊСЃСЏ?";
 };
 
 FUNC int Info_Milten_SHYOU_Condition()
@@ -518,11 +518,11 @@ FUNC int Info_Milten_SHYOU_Condition()
 
 func void Info_Milten_SHYOU_Info()
 {
-	AI_Output		(hero,self,"Info_Milten_SHYOU_15_01"); //Что ты здесь делаешь?
-	AI_Output		(self,hero,"Info_Milten_SHYOU_02_02"); //Неподалеку отсюда находится древнее каменное кольцо, в центре которого есть вход в подземелье.
-	AI_Output		(hero,self,"Info_Milten_SHYOU_15_03"); //Что-то вроде склепа?
-	AI_Output		(self,hero,"Info_Milten_SHYOU_02_04"); //Да, что-то вроде.
-	AI_Output		(self,hero,"Info_Milten_SHYOU_02_05"); //Мне нужно кое-что добыть из этого склепа.
+	AI_Output		(hero,self,"Info_Milten_SHYOU_15_01"); //Р§С‚Рѕ С‚С‹ Р·РґРµСЃСЊ РґРµР»Р°РµС€СЊ?
+	AI_Output		(self,hero,"Info_Milten_SHYOU_02_02"); //РќРµРїРѕРґР°Р»РµРєСѓ РѕС‚СЃСЋРґР° РЅР°С…РѕРґРёС‚СЃСЏ РґСЂРµРІРЅРµРµ РєР°РјРµРЅРЅРѕРµ РєРѕР»СЊС†Рѕ, РІ С†РµРЅС‚СЂРµ РєРѕС‚РѕСЂРѕРіРѕ РµСЃС‚СЊ РІС…РѕРґ РІ РїРѕРґР·РµРјРµР»СЊРµ.
+	AI_Output		(hero,self,"Info_Milten_SHYOU_15_03"); //Р§С‚Рѕ-С‚Рѕ РІСЂРѕРґРµ СЃРєР»РµРїР°?
+	AI_Output		(self,hero,"Info_Milten_SHYOU_02_04"); //Р”Р°, С‡С‚Рѕ-С‚Рѕ РІСЂРѕРґРµ.
+	AI_Output		(self,hero,"Info_Milten_SHYOU_02_05"); //РњРЅРµ РЅСѓР¶РЅРѕ РєРѕРµ-С‡С‚Рѕ РґРѕР±С‹С‚СЊ РёР· СЌС‚РѕРіРѕ СЃРєР»РµРїР°.
 };
 
 //***************************************************************************
@@ -535,7 +535,7 @@ instance Info_Milten_SHME (C_INFO)
 	information	= Info_Milten_SHME_Info;
 	important	= 0;
 	permanent	= 0;
-	description	= "Я ищу юнитор. ";
+	description	= "РЇ РёС‰Сѓ СЋРЅРёС‚РѕСЂ. ";
 };
 
 FUNC int Info_Milten_SHME_Condition()
@@ -549,8 +549,8 @@ FUNC int Info_Milten_SHME_Condition()
 
 func void Info_Milten_SHME_Info()
 {
-	AI_Output		(hero,self,"Info_Milten_SHME_15_01"); //Я ищу юнитор. Он должен быть где-то здесь.
-	AI_Output		(self,hero,"Info_Milten_SHME_02_02"); //Похоже, нам обоим нужно попасть в одно и то же место.
+	AI_Output		(hero,self,"Info_Milten_SHME_15_01"); //РЇ РёС‰Сѓ СЋРЅРёС‚РѕСЂ. РћРЅ РґРѕР»Р¶РµРЅ Р±С‹С‚СЊ РіРґРµ-С‚Рѕ Р·РґРµСЃСЊ.
+	AI_Output		(self,hero,"Info_Milten_SHME_02_02"); //РџРѕС…РѕР¶Рµ, РЅР°Рј РѕР±РѕРёРј РЅСѓР¶РЅРѕ РїРѕРїР°СЃС‚СЊ РІ РѕРґРЅРѕ Рё С‚Рѕ Р¶Рµ РјРµСЃС‚Рѕ.
 };
 
 //***************************************************************************
@@ -563,7 +563,7 @@ instance Info_Milten_SHPROBLEM (C_INFO)
 	information	= Info_Milten_SHPROBLEM_Info;
 	important	= 0;
 	permanent	= 0;
-	description	= "Почему ты сам не спустишься в этот склеп?";
+	description	= "РџРѕС‡РµРјСѓ С‚С‹ СЃР°Рј РЅРµ СЃРїСѓСЃС‚РёС€СЊСЃСЏ РІ СЌС‚РѕС‚ СЃРєР»РµРї?";
 };
 
 FUNC int Info_Milten_SHPROBLEM_Condition()
@@ -576,11 +576,11 @@ FUNC int Info_Milten_SHPROBLEM_Condition()
 
 func void Info_Milten_SHPROBLEM_Info()
 {
-	AI_Output			(hero,self,"Info_Milten_SHPROBLEM_15_01"); //Почему ты сам не спустишься в этот склеп и не заберешь то, что тебе нужно?
-	AI_Output			(self,hero,"Info_Milten_SHPROBLEM_02_02"); //А, долгая история. Слишком многое придется рассказывать, чтобы объяснить.
-	AI_Output			(hero,self,"Info_Milten_SHPROBLEM_15_03"); //Валяй, я не тороплюсь.
-	AI_Output			(self,hero,"Info_Milten_SHPROBLEM_02_04"); //Хорошо! После сотворения магического Барьера, поработившего всех нас...
-	AI_Output			(self,hero,"Info_Milten_SHPROBLEM_02_05"); //... один из магов укрыл там магический артефакт.
+	AI_Output			(hero,self,"Info_Milten_SHPROBLEM_15_01"); //РџРѕС‡РµРјСѓ С‚С‹ СЃР°Рј РЅРµ СЃРїСѓСЃС‚РёС€СЊСЃСЏ РІ СЌС‚РѕС‚ СЃРєР»РµРї Рё РЅРµ Р·Р°Р±РµСЂРµС€СЊ С‚Рѕ, С‡С‚Рѕ С‚РµР±Рµ РЅСѓР¶РЅРѕ?
+	AI_Output			(self,hero,"Info_Milten_SHPROBLEM_02_02"); //Рђ, РґРѕР»РіР°СЏ РёСЃС‚РѕСЂРёСЏ. РЎР»РёС€РєРѕРј РјРЅРѕРіРѕРµ РїСЂРёРґРµС‚СЃСЏ СЂР°СЃСЃРєР°Р·С‹РІР°С‚СЊ, С‡С‚РѕР±С‹ РѕР±СЉСЏСЃРЅРёС‚СЊ.
+	AI_Output			(hero,self,"Info_Milten_SHPROBLEM_15_03"); //Р’Р°Р»СЏР№, СЏ РЅРµ С‚РѕСЂРѕРїР»СЋСЃСЊ.
+	AI_Output			(self,hero,"Info_Milten_SHPROBLEM_02_04"); //РҐРѕСЂРѕС€Рѕ! РџРѕСЃР»Рµ СЃРѕС‚РІРѕСЂРµРЅРёСЏ РјР°РіРёС‡РµСЃРєРѕРіРѕ Р‘Р°СЂСЊРµСЂР°, РїРѕСЂР°Р±РѕС‚РёРІС€РµРіРѕ РІСЃРµС… РЅР°СЃ...
+	AI_Output			(self,hero,"Info_Milten_SHPROBLEM_02_05"); //... РѕРґРёРЅ РёР· РјР°РіРѕРІ СѓРєСЂС‹Р» С‚Р°Рј РјР°РіРёС‡РµСЃРєРёР№ Р°СЂС‚РµС„Р°РєС‚.
 };
 
 //***************************************************************************
@@ -593,7 +593,7 @@ instance Info_Milten_SHFOCUS (C_INFO)
 	information	= Info_Milten_SHFOCUS_Info;
 	important	= 0;
 	permanent	= 0;
-	description	= "Так это один из пяти камней-юниторов?";
+	description	= "РўР°Рє СЌС‚Рѕ РѕРґРёРЅ РёР· РїСЏС‚Рё РєР°РјРЅРµР№-СЋРЅРёС‚РѕСЂРѕРІ?";
 };
 
 FUNC int Info_Milten_SHFOCUS_Condition()
@@ -606,10 +606,10 @@ FUNC int Info_Milten_SHFOCUS_Condition()
 
 func void Info_Milten_SHFOCUS_Info()
 {
-	AI_Output			(hero,self,"Info_Milten_SHFOCUS_15_01"); //Так это один из пяти камней-юниторов?
-	AI_Output			(self,hero,"Info_Milten_SHFOCUS_02_02"); //Точно! Так ты уже знаешь историю об этих пяти камнях?
-	AI_Output			(hero,self,"Info_Milten_SHFOCUS_15_03"); //Только не говори мне, что тебе тоже нужен юнитор!
-	AI_Output			(self,hero,"Info_Milten_SHFOCUS_02_04"); //Нет, юнитор мне не нужен, но зато я ищу талисман орков.
+	AI_Output			(hero,self,"Info_Milten_SHFOCUS_15_01"); //РўР°Рє СЌС‚Рѕ РѕРґРёРЅ РёР· РїСЏС‚Рё РєР°РјРЅРµР№-СЋРЅРёС‚РѕСЂРѕРІ?
+	AI_Output			(self,hero,"Info_Milten_SHFOCUS_02_02"); //РўРѕС‡РЅРѕ! РўР°Рє С‚С‹ СѓР¶Рµ Р·РЅР°РµС€СЊ РёСЃС‚РѕСЂРёСЋ РѕР± СЌС‚РёС… РїСЏС‚Рё РєР°РјРЅСЏС…?
+	AI_Output			(hero,self,"Info_Milten_SHFOCUS_15_03"); //РўРѕР»СЊРєРѕ РЅРµ РіРѕРІРѕСЂРё РјРЅРµ, С‡С‚Рѕ С‚РµР±Рµ С‚РѕР¶Рµ РЅСѓР¶РµРЅ СЋРЅРёС‚РѕСЂ!
+	AI_Output			(self,hero,"Info_Milten_SHFOCUS_02_04"); //РќРµС‚, СЋРЅРёС‚РѕСЂ РјРЅРµ РЅРµ РЅСѓР¶РµРЅ, РЅРѕ Р·Р°С‚Рѕ СЏ РёС‰Сѓ С‚Р°Р»РёСЃРјР°РЅ РѕСЂРєРѕРІ.
 };
 
 //***************************************************************************
@@ -622,7 +622,7 @@ instance Info_Milten_SHSEAL (C_INFO)
 	information	= Info_Milten_SHSEAL_Info;
 	important	= 0;
 	permanent	= 0;
-	description	= "Артефакт был замурован в склепе?";
+	description	= "РђСЂС‚РµС„Р°РєС‚ Р±С‹Р» Р·Р°РјСѓСЂРѕРІР°РЅ РІ СЃРєР»РµРїРµ?";
 };
 
 FUNC int Info_Milten_SHSEAL_Condition()
@@ -635,13 +635,13 @@ FUNC int Info_Milten_SHSEAL_Condition()
 
 func void Info_Milten_SHSEAL_Info()
 {
-	AI_Output			(hero,self,"Info_Milten_SHSEAL_15_01"); //Артефакт был замурован в склепе?
-	AI_Output			(self,hero,"Info_Milten_SHSEAL_02_02"); //Да. Его защищает могущественная магия. Первый из воров, кто попытается стянуть юнитор...
-	AI_Output			(self,hero,"Info_Milten_SHSEAL_02_03"); //... будет проклят и обречен в облике нежити охранять гробницу от других воров... Вечно.
-	AI_Output			(hero,self,"Info_Milten_SHSEAL_15_04"); //Как обойти это заклятье?
-	AI_Output			(self,hero,"Info_Milten_SHSEAL_02_05"); //В этом больше нет необходимости.
-	AI_Output			(self,hero,"Info_Milten_SHSEAL_02_06"); //Несколько лет назад один из Баронов, развлекавшихся охотой на орков, решил заглянуть в гробницу.
-	AI_Output			(self,hero,"Info_Milten_SHSEAL_02_07"); //И теперь ОН стережет там сокровища.
+	AI_Output			(hero,self,"Info_Milten_SHSEAL_15_01"); //РђСЂС‚РµС„Р°РєС‚ Р±С‹Р» Р·Р°РјСѓСЂРѕРІР°РЅ РІ СЃРєР»РµРїРµ?
+	AI_Output			(self,hero,"Info_Milten_SHSEAL_02_02"); //Р”Р°. Р•РіРѕ Р·Р°С‰РёС‰Р°РµС‚ РјРѕРіСѓС‰РµСЃС‚РІРµРЅРЅР°СЏ РјР°РіРёСЏ. РџРµСЂРІС‹Р№ РёР· РІРѕСЂРѕРІ, РєС‚Рѕ РїРѕРїС‹С‚Р°РµС‚СЃСЏ СЃС‚СЏРЅСѓС‚СЊ СЋРЅРёС‚РѕСЂ...
+	AI_Output			(self,hero,"Info_Milten_SHSEAL_02_03"); //... Р±СѓРґРµС‚ РїСЂРѕРєР»СЏС‚ Рё РѕР±СЂРµС‡РµРЅ РІ РѕР±Р»РёРєРµ РЅРµР¶РёС‚Рё РѕС…СЂР°РЅСЏС‚СЊ РіСЂРѕР±РЅРёС†Сѓ РѕС‚ РґСЂСѓРіРёС… РІРѕСЂРѕРІ... Р’РµС‡РЅРѕ.
+	AI_Output			(hero,self,"Info_Milten_SHSEAL_15_04"); //РљР°Рє РѕР±РѕР№С‚Рё СЌС‚Рѕ Р·Р°РєР»СЏС‚СЊРµ?
+	AI_Output			(self,hero,"Info_Milten_SHSEAL_02_05"); //Р’ СЌС‚РѕРј Р±РѕР»СЊС€Рµ РЅРµС‚ РЅРµРѕР±С…РѕРґРёРјРѕСЃС‚Рё.
+	AI_Output			(self,hero,"Info_Milten_SHSEAL_02_06"); //РќРµСЃРєРѕР»СЊРєРѕ Р»РµС‚ РЅР°Р·Р°Рґ РѕРґРёРЅ РёР· Р‘Р°СЂРѕРЅРѕРІ, СЂР°Р·РІР»РµРєР°РІС€РёС…СЃСЏ РѕС…РѕС‚РѕР№ РЅР° РѕСЂРєРѕРІ, СЂРµС€РёР» Р·Р°РіР»СЏРЅСѓС‚СЊ РІ РіСЂРѕР±РЅРёС†Сѓ.
+	AI_Output			(self,hero,"Info_Milten_SHSEAL_02_07"); //Р С‚РµРїРµСЂСЊ РћРќ СЃС‚РµСЂРµР¶РµС‚ С‚Р°Рј СЃРѕРєСЂРѕРІРёС‰Р°.
 };
 
 //***************************************************************************
@@ -654,7 +654,7 @@ instance Info_Milten_SHTALISMAN (C_INFO)
 	information	= Info_Milten_SHTALISMAN_Info;
 	important	= 0;
 	permanent	= 0;
-	description	= "Что это за талисман?";
+	description	= "Р§С‚Рѕ СЌС‚Рѕ Р·Р° С‚Р°Р»РёСЃРјР°РЅ?";
 };
 
 FUNC int Info_Milten_SHTALISMAN_Condition()
@@ -667,9 +667,9 @@ FUNC int Info_Milten_SHTALISMAN_Condition()
 
 func void Info_Milten_SHTALISMAN_Info()
 {
-	AI_Output			(hero,self,"Info_Milten_SHTALISMAN_15_01"); //Что это за талисман?
-	AI_Output			(self,hero,"Info_Milten_SHTALISMAN_02_02"); //Я думаю, последний владелец использовал его для защиты от злобных орков.
-	AI_Output			(self,hero,"Info_Milten_SHTALISMAN_02_03"); //Если я прав, этот талисман может оказаться очень полезным.
+	AI_Output			(hero,self,"Info_Milten_SHTALISMAN_15_01"); //Р§С‚Рѕ СЌС‚Рѕ Р·Р° С‚Р°Р»РёСЃРјР°РЅ?
+	AI_Output			(self,hero,"Info_Milten_SHTALISMAN_02_02"); //РЇ РґСѓРјР°СЋ, РїРѕСЃР»РµРґРЅРёР№ РІР»Р°РґРµР»РµС† РёСЃРїРѕР»СЊР·РѕРІР°Р» РµРіРѕ РґР»СЏ Р·Р°С‰РёС‚С‹ РѕС‚ Р·Р»РѕР±РЅС‹С… РѕСЂРєРѕРІ.
+	AI_Output			(self,hero,"Info_Milten_SHTALISMAN_02_03"); //Р•СЃР»Рё СЏ РїСЂР°РІ, СЌС‚РѕС‚ С‚Р°Р»РёСЃРјР°РЅ РјРѕР¶РµС‚ РѕРєР°Р·Р°С‚СЊСЃСЏ РѕС‡РµРЅСЊ РїРѕР»РµР·РЅС‹Рј.
 };
 
 //***************************************************************************
@@ -682,7 +682,7 @@ instance Info_Milten_SHOFFER (C_INFO)
 	information	= Info_Milten_SHOFFER_Info;
 	important	= 0;
 	permanent	= 0;
-	description	= "Мы можем осмотреть эту гробницу вместе.";
+	description	= "РњС‹ РјРѕР¶РµРј РѕСЃРјРѕС‚СЂРµС‚СЊ СЌС‚Сѓ РіСЂРѕР±РЅРёС†Сѓ РІРјРµСЃС‚Рµ.";
 };
 
 FUNC int Info_Milten_SHOFFER_Condition()
@@ -696,14 +696,14 @@ FUNC int Info_Milten_SHOFFER_Condition()
 
 func void Info_Milten_SHOFFER_Info()
 {
-	AI_Output			(hero,self,"Info_Milten_SHOFFER_15_01"); //Мы можем осмотреть эту гробницу вместе. Ты заберешь талисман, а я найду юнитор.
-	AI_Output			(self,hero,"Info_Milten_SHOFFER_02_02"); //Все это хорошо, но есть одна проблема...
-	AI_Output			(hero,self,"Info_Milten_SHOFFER_15_03"); //Проблема?
-	AI_Output			(self,hero,"Info_Milten_SHOFFER_02_04"); //Да. Тот, кто охраняет эту гробницу.
-	AI_Output			(hero,self,"Info_Milten_SHOFFER_15_05"); //Думаю, можно просто порубить его на куски.
-	AI_Output			(self,hero,"Info_Milten_SHOFFER_02_06"); //Это не так-то просто. Кажется, он не вполне поддается обычному оружию.
-	AI_Output			(hero,self,"Info_Milten_SHOFFER_15_07"); //Но у тебя, как я понимаю, уже есть план.
-	AI_Output			(self,hero,"Info_Milten_SHOFFER_02_08"); //Х-м... ну... план-то есть, но одному мне не справиться.
+	AI_Output			(hero,self,"Info_Milten_SHOFFER_15_01"); //РњС‹ РјРѕР¶РµРј РѕСЃРјРѕС‚СЂРµС‚СЊ СЌС‚Сѓ РіСЂРѕР±РЅРёС†Сѓ РІРјРµСЃС‚Рµ. РўС‹ Р·Р°Р±РµСЂРµС€СЊ С‚Р°Р»РёСЃРјР°РЅ, Р° СЏ РЅР°Р№РґСѓ СЋРЅРёС‚РѕСЂ.
+	AI_Output			(self,hero,"Info_Milten_SHOFFER_02_02"); //Р’СЃРµ СЌС‚Рѕ С…РѕСЂРѕС€Рѕ, РЅРѕ РµСЃС‚СЊ РѕРґРЅР° РїСЂРѕР±Р»РµРјР°...
+	AI_Output			(hero,self,"Info_Milten_SHOFFER_15_03"); //РџСЂРѕР±Р»РµРјР°?
+	AI_Output			(self,hero,"Info_Milten_SHOFFER_02_04"); //Р”Р°. РўРѕС‚, РєС‚Рѕ РѕС…СЂР°РЅСЏРµС‚ СЌС‚Сѓ РіСЂРѕР±РЅРёС†Сѓ.
+	AI_Output			(hero,self,"Info_Milten_SHOFFER_15_05"); //Р”СѓРјР°СЋ, РјРѕР¶РЅРѕ РїСЂРѕСЃС‚Рѕ РїРѕСЂСѓР±РёС‚СЊ РµРіРѕ РЅР° РєСѓСЃРєРё.
+	AI_Output			(self,hero,"Info_Milten_SHOFFER_02_06"); //Р­С‚Рѕ РЅРµ С‚Р°Рє-С‚Рѕ РїСЂРѕСЃС‚Рѕ. РљР°Р¶РµС‚СЃСЏ, РѕРЅ РЅРµ РІРїРѕР»РЅРµ РїРѕРґРґР°РµС‚СЃСЏ РѕР±С‹С‡РЅРѕРјСѓ РѕСЂСѓР¶РёСЋ.
+	AI_Output			(hero,self,"Info_Milten_SHOFFER_15_07"); //РќРѕ Сѓ С‚РµР±СЏ, РєР°Рє СЏ РїРѕРЅРёРјР°СЋ, СѓР¶Рµ РµСЃС‚СЊ РїР»Р°РЅ.
+	AI_Output			(self,hero,"Info_Milten_SHOFFER_02_08"); //РҐ-Рј... РЅСѓ... РїР»Р°РЅ-С‚Рѕ РµСЃС‚СЊ, РЅРѕ РѕРґРЅРѕРјСѓ РјРЅРµ РЅРµ СЃРїСЂР°РІРёС‚СЊСЃСЏ.
 };
 
 //***************************************************************************
@@ -716,7 +716,7 @@ instance Info_Milten_SHOFFER2 (C_INFO)
 	information	= Info_Milten_SHOFFER2_Info;
 	important	= 0;
 	permanent	= 0;
-	description	= "Рассказывай!";
+	description	= "Р Р°СЃСЃРєР°Р·С‹РІР°Р№!";
 };
 
 FUNC int Info_Milten_SHOFFER2_Condition()
@@ -729,13 +729,13 @@ FUNC int Info_Milten_SHOFFER2_Condition()
 
 func void Info_Milten_SHOFFER2_Info()
 {
-	AI_Output			(hero,self,"Info_Milten_SHOFFER2_15_01"); //Рассказывай!
-	AI_Output			(self,hero,"Info_Milten_SHOFFER2_02_02"); //У меня есть свиток с очень мощным заклинанием.
-	AI_Output			(self,hero,"Info_Milten_SHOFFER2_02_03"); //Оно способно уничтожить любую нежить.
-	AI_Output			(hero,self,"Info_Milten_SHOFFER2_15_04"); //Но тогда мы запросто сможем осмотреть гробницу!
-	AI_Output			(self,hero,"Info_Milten_SHOFFER2_02_05"); //М-м-м... Ну... Не совсем. С некоторых пор там обитает не только страж.
-	AI_Output			(self,hero,"Info_Milten_SHOFFER2_02_06"); //Все те грабители, что были после него... и оказались столь же невезучими.
-	AI_Output			(self,hero,"Info_Milten_SHOFFER2_02_07"); //Я уже один раз спускался туда и едва не погиб. Одному там не справиться.
+	AI_Output			(hero,self,"Info_Milten_SHOFFER2_15_01"); //Р Р°СЃСЃРєР°Р·С‹РІР°Р№!
+	AI_Output			(self,hero,"Info_Milten_SHOFFER2_02_02"); //РЈ РјРµРЅСЏ РµСЃС‚СЊ СЃРІРёС‚РѕРє СЃ РѕС‡РµРЅСЊ РјРѕС‰РЅС‹Рј Р·Р°РєР»РёРЅР°РЅРёРµРј.
+	AI_Output			(self,hero,"Info_Milten_SHOFFER2_02_03"); //РћРЅРѕ СЃРїРѕСЃРѕР±РЅРѕ СѓРЅРёС‡С‚РѕР¶РёС‚СЊ Р»СЋР±СѓСЋ РЅРµР¶РёС‚СЊ.
+	AI_Output			(hero,self,"Info_Milten_SHOFFER2_15_04"); //РќРѕ С‚РѕРіРґР° РјС‹ Р·Р°РїСЂРѕСЃС‚Рѕ СЃРјРѕР¶РµРј РѕСЃРјРѕС‚СЂРµС‚СЊ РіСЂРѕР±РЅРёС†Сѓ!
+	AI_Output			(self,hero,"Info_Milten_SHOFFER2_02_05"); //Рњ-Рј-Рј... РќСѓ... РќРµ СЃРѕРІСЃРµРј. РЎ РЅРµРєРѕС‚РѕСЂС‹С… РїРѕСЂ С‚Р°Рј РѕР±РёС‚Р°РµС‚ РЅРµ С‚РѕР»СЊРєРѕ СЃС‚СЂР°Р¶.
+	AI_Output			(self,hero,"Info_Milten_SHOFFER2_02_06"); //Р’СЃРµ С‚Рµ РіСЂР°Р±РёС‚РµР»Рё, С‡С‚Рѕ Р±С‹Р»Рё РїРѕСЃР»Рµ РЅРµРіРѕ... Рё РѕРєР°Р·Р°Р»РёСЃСЊ СЃС‚РѕР»СЊ Р¶Рµ РЅРµРІРµР·СѓС‡РёРјРё.
+	AI_Output			(self,hero,"Info_Milten_SHOFFER2_02_07"); //РЇ СѓР¶Рµ РѕРґРёРЅ СЂР°Р· СЃРїСѓСЃРєР°Р»СЃСЏ С‚СѓРґР° Рё РµРґРІР° РЅРµ РїРѕРіРёР±. РћРґРЅРѕРјСѓ С‚Р°Рј РЅРµ СЃРїСЂР°РІРёС‚СЊСЃСЏ.
 };
 
 //***************************************************************************
@@ -748,7 +748,7 @@ instance Info_Milten_SHACCEPT (C_INFO)
 	information	= Info_Milten_SHACCEPT_Info;
 	important	= 0;
 	permanent	= 0;
-	description	= "Дай мне этот свиток, и мы пойдем туда вместе!";
+	description	= "Р”Р°Р№ РјРЅРµ СЌС‚РѕС‚ СЃРІРёС‚РѕРє, Рё РјС‹ РїРѕР№РґРµРј С‚СѓРґР° РІРјРµСЃС‚Рµ!";
 };
 
 FUNC int Info_Milten_SHACCEPT_Condition()
@@ -761,17 +761,17 @@ FUNC int Info_Milten_SHACCEPT_Condition()
 
 func void Info_Milten_SHACCEPT_Info()
 {
-	AI_Output			(hero,self,"Info_Milten_SHACCEPT_15_01"); //Дай мне этот свиток, и мы пойдем туда вместе!
-	AI_Output			(self,hero,"Info_Milten_SHACCEPT_02_02"); //Хорошо! Я надеялся, что ты это скажешь!
-	AI_Output			(self,hero,"Info_Milten_SHACCEPT_02_03"); //Но у нас всего один свиток. Необходимо приберечь его для стража.
-	AI_Output			(self,hero,"Info_Milten_SHACCEPT_02_04"); //С остальной нежитью придется сражаться обычным оружием.
-	AI_Output			(hero,self,"Info_Milten_SHACCEPT_15_05"); //Понятно. Как пройти к кругу камней?
-	AI_Output			(self,hero,"Info_Milten_SHACCEPT_02_06"); //Иди за мной.
+	AI_Output			(hero,self,"Info_Milten_SHACCEPT_15_01"); //Р”Р°Р№ РјРЅРµ СЌС‚РѕС‚ СЃРІРёС‚РѕРє, Рё РјС‹ РїРѕР№РґРµРј С‚СѓРґР° РІРјРµСЃС‚Рµ!
+	AI_Output			(self,hero,"Info_Milten_SHACCEPT_02_02"); //РҐРѕСЂРѕС€Рѕ! РЇ РЅР°РґРµСЏР»СЃСЏ, С‡С‚Рѕ С‚С‹ СЌС‚Рѕ СЃРєР°Р¶РµС€СЊ!
+	AI_Output			(self,hero,"Info_Milten_SHACCEPT_02_03"); //РќРѕ Сѓ РЅР°СЃ РІСЃРµРіРѕ РѕРґРёРЅ СЃРІРёС‚РѕРє. РќРµРѕР±С…РѕРґРёРјРѕ РїСЂРёР±РµСЂРµС‡СЊ РµРіРѕ РґР»СЏ СЃС‚СЂР°Р¶Р°.
+	AI_Output			(self,hero,"Info_Milten_SHACCEPT_02_04"); //РЎ РѕСЃС‚Р°Р»СЊРЅРѕР№ РЅРµР¶РёС‚СЊСЋ РїСЂРёРґРµС‚СЃСЏ СЃСЂР°Р¶Р°С‚СЊСЃСЏ РѕР±С‹С‡РЅС‹Рј РѕСЂСѓР¶РёРµРј.
+	AI_Output			(hero,self,"Info_Milten_SHACCEPT_15_05"); //РџРѕРЅСЏС‚РЅРѕ. РљР°Рє РїСЂРѕР№С‚Рё Рє РєСЂСѓРіСѓ РєР°РјРЅРµР№?
+	AI_Output			(self,hero,"Info_Milten_SHACCEPT_02_06"); //РРґРё Р·Р° РјРЅРѕР№.
 
 	Log_CreateTopic		(CH3_Stonehenge,	LOG_MISSION);
 	Log_SetTopicStatus	(CH3_Stonehenge,	LOG_RUNNING);
-	B_LogEntry		(CH3_Stonehenge,"Я встретил Мильтена, мага огня, рядом с каменным кругом. Он рассказал, что один из камней-юниторов находится в склепе под этим кругом.");
-	B_LogEntry		(CH3_Stonehenge,"Мильтен дал мне свиток, чтобы я смог победить стерегущего склеп умертвия. Мы пойдем в этот склеп вместе.");
+	B_LogEntry		(CH3_Stonehenge,"РЇ РІСЃС‚СЂРµС‚РёР» РњРёР»СЊС‚РµРЅР°, РјР°РіР° РѕРіРЅСЏ, СЂСЏРґРѕРј СЃ РєР°РјРµРЅРЅС‹Рј РєСЂСѓРіРѕРј. РћРЅ СЂР°СЃСЃРєР°Р·Р°Р», С‡С‚Рѕ РѕРґРёРЅ РёР· РєР°РјРЅРµР№-СЋРЅРёС‚РѕСЂРѕРІ РЅР°С…РѕРґРёС‚СЃСЏ РІ СЃРєР»РµРїРµ РїРѕРґ СЌС‚РёРј РєСЂСѓРіРѕРј.");
+	B_LogEntry		(CH3_Stonehenge,"РњРёР»СЊС‚РµРЅ РґР°Р» РјРЅРµ СЃРІРёС‚РѕРє, С‡С‚РѕР±С‹ СЏ СЃРјРѕРі РїРѕР±РµРґРёС‚СЊ СЃС‚РµСЂРµРіСѓС‰РµРіРѕ СЃРєР»РµРї СѓРјРµСЂС‚РІРёСЏ. РњС‹ РїРѕР№РґРµРј РІ СЌС‚РѕС‚ СЃРєР»РµРї РІРјРµСЃС‚Рµ.");
 	
 	CreateInvItem		(self,	ItArScrollDestroyUndead);
 	B_GiveInvItems  (self, hero, ItArScrollDestroyUndead, 1);
@@ -805,8 +805,8 @@ func void Info_Milten_SHARRIVED_Info()
 {
 	AI_GotoNpc			(self,hero);
 
-	AI_Output			(self,hero,"Info_Milten_SHARRIVED_02_01"); //Вот мы и пришли. Этот туннель ведет прямиком в гробницу. 
-	AI_Output			(hero,self,"Info_Milten_SHARRIVED_15_02"); //Ну, пойдем нанесем визит стражу!
+	AI_Output			(self,hero,"Info_Milten_SHARRIVED_02_01"); //Р’РѕС‚ РјС‹ Рё РїСЂРёС€Р»Рё. Р­С‚РѕС‚ С‚СѓРЅРЅРµР»СЊ РІРµРґРµС‚ РїСЂСЏРјРёРєРѕРј РІ РіСЂРѕР±РЅРёС†Сѓ. 
+	AI_Output			(hero,self,"Info_Milten_SHARRIVED_15_02"); //РќСѓ, РїРѕР№РґРµРј РЅР°РЅРµСЃРµРј РІРёР·РёС‚ СЃС‚СЂР°Р¶Сѓ!
 
   	self.aivar[AIV_PARTYMEMBER] =	TRUE;
 	Npc_ExchangeRoutine	(self,	"SHFollow");
@@ -823,7 +823,7 @@ instance Info_Milten_SHHEAL (C_INFO)
 	information	= Info_Milten_SHHEAL_Info;
 	important	= 0;
 	permanent	= 0;
-	description	= "Я ранен. Помоги мне!";
+	description	= "РЇ СЂР°РЅРµРЅ. РџРѕРјРѕРіРё РјРЅРµ!";
 };
 
 FUNC int Info_Milten_SHHEAL_Condition()
@@ -839,16 +839,16 @@ FUNC int Info_Milten_SHHEAL_Condition()
 
 func void Info_Milten_SHHEAL_Info()
 {
-	AI_Output				(hero,self,"Info_Milten_SHHEAL_15_01"); //Я ранен. Помоги мне!
+	AI_Output				(hero,self,"Info_Milten_SHHEAL_15_01"); //РЇ СЂР°РЅРµРЅ. РџРѕРјРѕРіРё РјРЅРµ!
 
 	if (	(Npc_HasItems(self,ItFo_Potion_Health_02) >  0)		)
 	{
-		AI_Output			(self,hero,"Info_Milten_SHHEAL_02_02"); //Возьми целебный эликсир.
+		AI_Output			(self,hero,"Info_Milten_SHHEAL_02_02"); //Р’РѕР·СЊРјРё С†РµР»РµР±РЅС‹Р№ СЌР»РёРєСЃРёСЂ.
 		B_GiveInvItems	    (self, hero,	ItFo_Potion_Health_02,	1);
 	}
 	else
 	{
-		AI_Output			(self,hero,"Info_Milten_SHHEAL_02_03"); //У меня больше нет целебных эликсиров.
+		AI_Output			(self,hero,"Info_Milten_SHHEAL_02_03"); //РЈ РјРµРЅСЏ Р±РѕР»СЊС€Рµ РЅРµС‚ С†РµР»РµР±РЅС‹С… СЌР»РёРєСЃРёСЂРѕРІ.
 	};	
 
 	AI_StopProcessInfos		(self);
@@ -864,7 +864,7 @@ instance Info_Milten_SHRUNNING (C_INFO)
 	information	= Info_Milten_SHRUNNING_Info;
 	important	= 0;
 	permanent	= 1;
-	description	= "Страж все еще жив!";
+	description	= "РЎС‚СЂР°Р¶ РІСЃРµ РµС‰Рµ Р¶РёРІ!";
 };
 
 FUNC int Info_Milten_SHRUNNING_Condition()
@@ -874,7 +874,7 @@ FUNC int Info_Milten_SHRUNNING_Condition()
 	keeperFound = Wld_DetectNpc(self, ZombieTheKeeper, NOFUNC, -1);
 
 	if	Npc_KnowsInfo(hero,Info_Milten_SHACCEPT)
-	&&	(keeperFound && !Npc_IsDead(other))							// Wдchter noch nicht besiegt...
+	&&	(keeperFound && !Npc_IsDead(other))							// WРґchter noch nicht besiegt...
 	{
 		return TRUE;
 	};	
@@ -882,8 +882,8 @@ FUNC int Info_Milten_SHRUNNING_Condition()
 
 func void Info_Milten_SHRUNNING_Info()
 {
-	AI_Output			(hero,self,"Info_Milten_SHRUNNING_15_01"); 	//Страж все еще жив!
-	AI_Output			(self,hero,"Info_Milten_SHRUNNING_02_02"); 	//Так уничтожь его заклинанием!
+	AI_Output			(hero,self,"Info_Milten_SHRUNNING_15_01"); 	//РЎС‚СЂР°Р¶ РІСЃРµ РµС‰Рµ Р¶РёРІ!
+	AI_Output			(self,hero,"Info_Milten_SHRUNNING_02_02"); 	//РўР°Рє СѓРЅРёС‡С‚РѕР¶СЊ РµРіРѕ Р·Р°РєР»РёРЅР°РЅРёРµРј!
 };
 
 //***************************************************************************
@@ -896,7 +896,7 @@ instance Info_Milten_SHSCROLL (C_INFO)
 	information	= Info_Milten_SHSCROLL_Info;
 	important	= 0;
 	permanent	= 0;
-	description	= "Я использовал магический свиток.";
+	description	= "РЇ РёСЃРїРѕР»СЊР·РѕРІР°Р» РјР°РіРёС‡РµСЃРєРёР№ СЃРІРёС‚РѕРє.";
 };
 
 FUNC int Info_Milten_SHSCROLL_Condition()
@@ -904,7 +904,7 @@ FUNC int Info_Milten_SHSCROLL_Condition()
 	var int keeperFound;
 	Npc_PerceiveAll(self);
 	keeperFound = Wld_DetectNpc(self, ZombieTheKeeper, NOFUNC, -1);
-	if (	(keeperFound && !Npc_IsDead(other))							// Wдchter noch nicht besiegt...
+	if (	(keeperFound && !Npc_IsDead(other))							// WРґchter noch nicht besiegt...
 	&&		Npc_KnowsInfo(hero, Info_Milten_SHACCEPT)
 	&&		(Npc_HasItems(hero, ItArScrollDestroyUndead)==0)	
 	&&		(Npc_HasItems(hero, ItArRuneDestroyUndead)==0)	)
@@ -915,10 +915,10 @@ FUNC int Info_Milten_SHSCROLL_Condition()
 
 func void Info_Milten_SHSCROLL_Info()
 {
-	AI_Output			(hero,self,"Info_Milten_SHSCROLL_15_01"); //Я потратил заклинание - но не на стража!
-	AI_Output			(self,hero,"Info_Milten_SHSCROLL_02_02"); //Только не это! Придумай, как еще можно победить его!
-	AI_Output			(self,hero,"Info_Milten_SHSCROLL_02_03"); //Может быть мы сможем купить еще один свиток или какую-нибудь руну в одном из Лагерей?
-	AI_Output			(self,hero,"Info_Milten_SHSCROLL_02_04"); //Я буду ждать тебя там, где мы встретились в прошлый раз.
+	AI_Output			(hero,self,"Info_Milten_SHSCROLL_15_01"); //РЇ РїРѕС‚СЂР°С‚РёР» Р·Р°РєР»РёРЅР°РЅРёРµ - РЅРѕ РЅРµ РЅР° СЃС‚СЂР°Р¶Р°!
+	AI_Output			(self,hero,"Info_Milten_SHSCROLL_02_02"); //РўРѕР»СЊРєРѕ РЅРµ СЌС‚Рѕ! РџСЂРёРґСѓРјР°Р№, РєР°Рє РµС‰Рµ РјРѕР¶РЅРѕ РїРѕР±РµРґРёС‚СЊ РµРіРѕ!
+	AI_Output			(self,hero,"Info_Milten_SHSCROLL_02_03"); //РњРѕР¶РµС‚ Р±С‹С‚СЊ РјС‹ СЃРјРѕР¶РµРј РєСѓРїРёС‚СЊ РµС‰Рµ РѕРґРёРЅ СЃРІРёС‚РѕРє РёР»Рё РєР°РєСѓСЋ-РЅРёР±СѓРґСЊ СЂСѓРЅСѓ РІ РѕРґРЅРѕРј РёР· Р›Р°РіРµСЂРµР№?
+	AI_Output			(self,hero,"Info_Milten_SHSCROLL_02_04"); //РЇ Р±СѓРґСѓ Р¶РґР°С‚СЊ С‚РµР±СЏ С‚Р°Рј, РіРґРµ РјС‹ РІСЃС‚СЂРµС‚РёР»РёСЃСЊ РІ РїСЂРѕС€Р»С‹Р№ СЂР°Р·.
 
   	self.aivar[AIV_PARTYMEMBER] =	FALSE;
 
@@ -936,7 +936,7 @@ instance Info_Milten_SHNEWSCROLL (C_INFO)
 	information	= Info_Milten_SHNEWSCROLL_Info;
 	important	= 0;
 	permanent	= 0;
-	description	= "Я достал еще один свиток с Заклинанием Ужас Мертвых!";
+	description	= "РЇ РґРѕСЃС‚Р°Р» РµС‰Рµ РѕРґРёРЅ СЃРІРёС‚РѕРє СЃ Р—Р°РєР»РёРЅР°РЅРёРµРј РЈР¶Р°СЃ РњРµСЂС‚РІС‹С…!";
 };
 
 FUNC int Info_Milten_SHNEWSCROLL_Condition()
@@ -951,9 +951,9 @@ FUNC int Info_Milten_SHNEWSCROLL_Condition()
 
 func void Info_Milten_SHNEWSCROLL_Info()
 {
-	AI_Output			(hero,self,"Info_Milten_SHNEWSCROLL_15_01"); //Я достал еще один свиток с Заклинанием Ужас Мертвых!
-	AI_Output			(self,hero,"Info_Milten_SHNEWSCROLL_02_02"); //Хорошо. Значит, мы можем еще раз наведаться в гости к стражу.
-	AI_Output			(self,hero,"Info_Milten_SHNEWSCROLL_02_03"); //Иди вперед, я пойду за тобой.
+	AI_Output			(hero,self,"Info_Milten_SHNEWSCROLL_15_01"); //РЇ РґРѕСЃС‚Р°Р» РµС‰Рµ РѕРґРёРЅ СЃРІРёС‚РѕРє СЃ Р—Р°РєР»РёРЅР°РЅРёРµРј РЈР¶Р°СЃ РњРµСЂС‚РІС‹С…!
+	AI_Output			(self,hero,"Info_Milten_SHNEWSCROLL_02_02"); //РҐРѕСЂРѕС€Рѕ. Р—РЅР°С‡РёС‚, РјС‹ РјРѕР¶РµРј РµС‰Рµ СЂР°Р· РЅР°РІРµРґР°С‚СЊСЃСЏ РІ РіРѕСЃС‚Рё Рє СЃС‚СЂР°Р¶Сѓ.
+	AI_Output			(self,hero,"Info_Milten_SHNEWSCROLL_02_03"); //РРґРё РІРїРµСЂРµРґ, СЏ РїРѕР№РґСѓ Р·Р° С‚РѕР±РѕР№.
 
   	self.aivar[AIV_PARTYMEMBER] =	TRUE;
 	AI_StopProcessInfos	(self);
@@ -987,8 +987,8 @@ func void Info_Milten_SHLEAVE_Info()
 {
 	AI_GotoNpc			(self,hero);
 
-	AI_Output			(self,hero,"Info_Milten_SHLEAVE_02_01"); 	//Похоже, гробница тебя больше не интересует.
-	AI_Output			(self,hero,"Info_Milten_SHLEAVE_02_02"); 	//Если все-таки передумаешь, ты можешь найти меня там, где мы встретились с тобой в прошлый раз.
+	AI_Output			(self,hero,"Info_Milten_SHLEAVE_02_01"); 	//РџРѕС…РѕР¶Рµ, РіСЂРѕР±РЅРёС†Р° С‚РµР±СЏ Р±РѕР»СЊС€Рµ РЅРµ РёРЅС‚РµСЂРµСЃСѓРµС‚.
+	AI_Output			(self,hero,"Info_Milten_SHLEAVE_02_02"); 	//Р•СЃР»Рё РІСЃРµ-С‚Р°РєРё РїРµСЂРµРґСѓРјР°РµС€СЊ, С‚С‹ РјРѕР¶РµС€СЊ РЅР°Р№С‚Рё РјРµРЅСЏ С‚Р°Рј, РіРґРµ РјС‹ РІСЃС‚СЂРµС‚РёР»РёСЃСЊ СЃ С‚РѕР±РѕР№ РІ РїСЂРѕС€Р»С‹Р№ СЂР°Р·.
 
   	self.aivar[AIV_PARTYMEMBER] =	FALSE;
 	Npc_ExchangeRoutine	(self,	"SHWait");
@@ -1005,7 +1005,7 @@ instance Info_Milten_SHCONTINUE (C_INFO)
 	information	= Info_Milten_SHCONTINUE_Info;
 	important	= 0;
 	permanent	= 1;
-	description = "Как ты думаешь, стоит нам еще разок наведаться к стражу?";
+	description = "РљР°Рє С‚С‹ РґСѓРјР°РµС€СЊ, СЃС‚РѕРёС‚ РЅР°Рј РµС‰Рµ СЂР°Р·РѕРє РЅР°РІРµРґР°С‚СЊСЃСЏ Рє СЃС‚СЂР°Р¶Сѓ?";
 };
 
 FUNC int Info_Milten_SHCONTINUE_Condition()
@@ -1023,8 +1023,8 @@ func void Info_Milten_SHCONTINUE_Info()
 {
 	AI_GotoNpc			(self,hero);
 
-	AI_Output			(hero,self,"Info_Milten_SHCONTINUE_15_01"); //Как ты думаешь, может быть, нам стоит еще разок наведаться к стражу?
-	AI_Output			(self,hero,"Info_Milten_SHCONTINUE_02_02"); //Я готов. Иди вперед, я пойду следом.
+	AI_Output			(hero,self,"Info_Milten_SHCONTINUE_15_01"); //РљР°Рє С‚С‹ РґСѓРјР°РµС€СЊ, РјРѕР¶РµС‚ Р±С‹С‚СЊ, РЅР°Рј СЃС‚РѕРёС‚ РµС‰Рµ СЂР°Р·РѕРє РЅР°РІРµРґР°С‚СЊСЃСЏ Рє СЃС‚СЂР°Р¶Сѓ?
+	AI_Output			(self,hero,"Info_Milten_SHCONTINUE_02_02"); //РЇ РіРѕС‚РѕРІ. РРґРё РІРїРµСЂРµРґ, СЏ РїРѕР№РґСѓ СЃР»РµРґРѕРј.
 
   	self.aivar[AIV_PARTYMEMBER] = TRUE;
 	Npc_ExchangeRoutine	(self,	"SHFollow");
@@ -1055,15 +1055,15 @@ func void Info_Milten_SHSUCCESS_Info()
 {
 	AI_GotoNpc			(self,hero);
 
-	AI_Output			(self,hero,"Info_Milten_SHSUCCESS_02_01"); //Хорошо. Теперь у тебя есть талисман.
-	AI_Output			(hero,self,"Info_Milten_SHSUCCESS_15_02"); //Вот он, держи. Как мы и договорились.
-	AI_Output			(self,hero,"Info_Milten_SHSUCCESS_02_03"); //Спасибо, друг. Я никогда не забываю тех, кто помог мне.
-	AI_Output			(self,hero,"Info_Milten_SHSUCCESS_02_04"); //Я возвращаюсь в Старый Лагерь. Может быть, мы там еще встретимся.
+	AI_Output			(self,hero,"Info_Milten_SHSUCCESS_02_01"); //РҐРѕСЂРѕС€Рѕ. РўРµРїРµСЂСЊ Сѓ С‚РµР±СЏ РµСЃС‚СЊ С‚Р°Р»РёСЃРјР°РЅ.
+	AI_Output			(hero,self,"Info_Milten_SHSUCCESS_15_02"); //Р’РѕС‚ РѕРЅ, РґРµСЂР¶Рё. РљР°Рє РјС‹ Рё РґРѕРіРѕРІРѕСЂРёР»РёСЃСЊ.
+	AI_Output			(self,hero,"Info_Milten_SHSUCCESS_02_03"); //РЎРїР°СЃРёР±Рѕ, РґСЂСѓРі. РЇ РЅРёРєРѕРіРґР° РЅРµ Р·Р°Р±С‹РІР°СЋ С‚РµС…, РєС‚Рѕ РїРѕРјРѕРі РјРЅРµ.
+	AI_Output			(self,hero,"Info_Milten_SHSUCCESS_02_04"); //РЇ РІРѕР·РІСЂР°С‰Р°СЋСЃСЊ РІ РЎС‚Р°СЂС‹Р№ Р›Р°РіРµСЂСЊ. РњРѕР¶РµС‚ Р±С‹С‚СЊ, РјС‹ С‚Р°Рј РµС‰Рµ РІСЃС‚СЂРµС‚РёРјСЃСЏ.
 	
 	B_GiveInvItems	(hero,self,	ItMi_OrcTalisman, 1);
 	
-	B_LogEntry		(CH3_Stonehenge,"Вместе мы победили стража под кольцом из камней. Мильтен взял свою часть добычи и вернулся в Старый Лагерь.");
-	B_LogEntry		(CH3_Stonehenge,"Сатурас будет рад, что я нашел этот юнитор!");
+	B_LogEntry		(CH3_Stonehenge,"Р’РјРµСЃС‚Рµ РјС‹ РїРѕР±РµРґРёР»Рё СЃС‚СЂР°Р¶Р° РїРѕРґ РєРѕР»СЊС†РѕРј РёР· РєР°РјРЅРµР№. РњРёР»СЊС‚РµРЅ РІР·СЏР» СЃРІРѕСЋ С‡Р°СЃС‚СЊ РґРѕР±С‹С‡Рё Рё РІРµСЂРЅСѓР»СЃСЏ РІ РЎС‚Р°СЂС‹Р№ Р›Р°РіРµСЂСЊ.");
+	B_LogEntry		(CH3_Stonehenge,"РЎР°С‚СѓСЂР°СЃ Р±СѓРґРµС‚ СЂР°Рґ, С‡С‚Рѕ СЏ РЅР°С€РµР» СЌС‚РѕС‚ СЋРЅРёС‚РѕСЂ!");
 	
   	self.aivar[AIV_PARTYMEMBER] =	FALSE;
 	Npc_ExchangeRoutine	(self, "ReturnToOC");
@@ -1106,27 +1106,27 @@ func void Info_Milten_OCWARN_Info()
 {
 	AI_GotoNpc			(self,hero);
 
-	AI_Output			(self,hero,"Info_Milten_OCWARN_02_01"); //Они... Они все мертвы... Все МЕРТВЫ. Я не мог им помочь... Я был... Меня там не было... Я...
+	AI_Output			(self,hero,"Info_Milten_OCWARN_02_01"); //РћРЅРё... РћРЅРё РІСЃРµ РјРµСЂС‚РІС‹... Р’СЃРµ РњР•Р РўР’Р«. РЇ РЅРµ РјРѕРі РёРј РїРѕРјРѕС‡СЊ... РЇ Р±С‹Р»... РњРµРЅСЏ С‚Р°Рј РЅРµ Р±С‹Р»Рѕ... РЇ...
 
 	if (Npc_KnowsInfo(hero, Info_Diego_OCRETREAT))
 	{
-		AI_Output		(hero,self,"Info_Milten_OCWARN_15_02"); //Успокойся, Мильтен, я уже встретил Диего на другом конце Лагеря.
-		AI_Output		(self,hero,"Info_Milten_OCWARN_02_03"); //Тогда ты должен знать... Что сказал Диего?
-		AI_Output		(hero,self,"Info_Milten_OCWARN_15_04"); //Если я смогу найти Горна и Лестера, я предупрежу их и отправлю тебе навстречу.
-		AI_Output		(self,hero,"Info_Milten_OCWARN_02_05"); //Удачи! Будь осторожен!
-		B_LogEntry		(CH4_Firemages,"Как и Диего, Мильтен прячется рядом со Старым Лагерем. Маги огня предупреждают заранее всех тех, кто приближается к главным воротам, чтобы они не попали в руки стражников.");
+		AI_Output		(hero,self,"Info_Milten_OCWARN_15_02"); //РЈСЃРїРѕРєРѕР№СЃСЏ, РњРёР»СЊС‚РµРЅ, СЏ СѓР¶Рµ РІСЃС‚СЂРµС‚РёР» Р”РёРµРіРѕ РЅР° РґСЂСѓРіРѕРј РєРѕРЅС†Рµ Р›Р°РіРµСЂСЏ.
+		AI_Output		(self,hero,"Info_Milten_OCWARN_02_03"); //РўРѕРіРґР° С‚С‹ РґРѕР»Р¶РµРЅ Р·РЅР°С‚СЊ... Р§С‚Рѕ СЃРєР°Р·Р°Р» Р”РёРµРіРѕ?
+		AI_Output		(hero,self,"Info_Milten_OCWARN_15_04"); //Р•СЃР»Рё СЏ СЃРјРѕРіСѓ РЅР°Р№С‚Рё Р“РѕСЂРЅР° Рё Р›РµСЃС‚РµСЂР°, СЏ РїСЂРµРґСѓРїСЂРµР¶Сѓ РёС… Рё РѕС‚РїСЂР°РІР»СЋ С‚РµР±Рµ РЅР°РІСЃС‚СЂРµС‡Сѓ.
+		AI_Output		(self,hero,"Info_Milten_OCWARN_02_05"); //РЈРґР°С‡Рё! Р‘СѓРґСЊ РѕСЃС‚РѕСЂРѕР¶РµРЅ!
+		B_LogEntry		(CH4_Firemages,"РљР°Рє Рё Р”РёРµРіРѕ, РњРёР»СЊС‚РµРЅ РїСЂСЏС‡РµС‚СЃСЏ СЂСЏРґРѕРј СЃРѕ РЎС‚Р°СЂС‹Рј Р›Р°РіРµСЂРµРј. РњР°РіРё РѕРіРЅСЏ РїСЂРµРґСѓРїСЂРµР¶РґР°СЋС‚ Р·Р°СЂР°РЅРµРµ РІСЃРµС… С‚РµС…, РєС‚Рѕ РїСЂРёР±Р»РёР¶Р°РµС‚СЃСЏ Рє РіР»Р°РІРЅС‹Рј РІРѕСЂРѕС‚Р°Рј, С‡С‚РѕР±С‹ РѕРЅРё РЅРµ РїРѕРїР°Р»Рё РІ СЂСѓРєРё СЃС‚СЂР°Р¶РЅРёРєРѕРІ.");
 		AI_StopProcessInfos(self);
 	}
 	else
 	{
-		AI_Output		(hero,self,"Info_Milten_OCWARN_15_06"); //Успокойся, Мильтен, что случилось?
-		AI_Output		(self,hero,"Info_Milten_OCWARN_02_07"); //Все маги Огня мертвы! Все, кроме меня, и я тоже был на волосок от смерти.
-		AI_Output		(hero,self,"Info_Milten_OCWARN_15_08"); //Лучше расскажи мне все по порядку, с самого начала.
-		AI_Output		(self,hero,"Info_Milten_OCWARN_02_09"); //Ладно. Спокойно, Мильтен, спокойно...
-		AI_Output		(self,hero,"Info_Milten_OCWARN_02_10"); //Все началось с того, что обрушилась Старая Шахта...
-		AI_Output		(hero,self,"Info_Milten_OCWARN_15_11"); //Старая Шахта ОБРУШИЛАСЬ???
-		AI_Output		(self,hero,"Info_Milten_OCWARN_02_12"); //Да. Все произошло очень быстро. Никто не уцелел.
-		AI_Output		(self,hero,"Info_Milten_OCWARN_02_13"); //Вход в шахту блокировали стражники.
+		AI_Output		(hero,self,"Info_Milten_OCWARN_15_06"); //РЈСЃРїРѕРєРѕР№СЃСЏ, РњРёР»СЊС‚РµРЅ, С‡С‚Рѕ СЃР»СѓС‡РёР»РѕСЃСЊ?
+		AI_Output		(self,hero,"Info_Milten_OCWARN_02_07"); //Р’СЃРµ РјР°РіРё РћРіРЅСЏ РјРµСЂС‚РІС‹! Р’СЃРµ, РєСЂРѕРјРµ РјРµРЅСЏ, Рё СЏ С‚РѕР¶Рµ Р±С‹Р» РЅР° РІРѕР»РѕСЃРѕРє РѕС‚ СЃРјРµСЂС‚Рё.
+		AI_Output		(hero,self,"Info_Milten_OCWARN_15_08"); //Р›СѓС‡С€Рµ СЂР°СЃСЃРєР°Р¶Рё РјРЅРµ РІСЃРµ РїРѕ РїРѕСЂСЏРґРєСѓ, СЃ СЃР°РјРѕРіРѕ РЅР°С‡Р°Р»Р°.
+		AI_Output		(self,hero,"Info_Milten_OCWARN_02_09"); //Р›Р°РґРЅРѕ. РЎРїРѕРєРѕР№РЅРѕ, РњРёР»СЊС‚РµРЅ, СЃРїРѕРєРѕР№РЅРѕ...
+		AI_Output		(self,hero,"Info_Milten_OCWARN_02_10"); //Р’СЃРµ РЅР°С‡Р°Р»РѕСЃСЊ СЃ С‚РѕРіРѕ, С‡С‚Рѕ РѕР±СЂСѓС€РёР»Р°СЃСЊ РЎС‚Р°СЂР°СЏ РЁР°С…С‚Р°...
+		AI_Output		(hero,self,"Info_Milten_OCWARN_15_11"); //РЎС‚Р°СЂР°СЏ РЁР°С…С‚Р° РћР‘Р РЈРЁРР›РђРЎР¬???
+		AI_Output		(self,hero,"Info_Milten_OCWARN_02_12"); //Р”Р°. Р’СЃРµ РїСЂРѕРёР·РѕС€Р»Рѕ РѕС‡РµРЅСЊ Р±С‹СЃС‚СЂРѕ. РќРёРєС‚Рѕ РЅРµ СѓС†РµР»РµР».
+		AI_Output		(self,hero,"Info_Milten_OCWARN_02_13"); //Р’С…РѕРґ РІ С€Р°С…С‚Сѓ Р±Р»РѕРєРёСЂРѕРІР°Р»Рё СЃС‚СЂР°Р¶РЅРёРєРё.
 	};
 };
 
@@ -1140,7 +1140,7 @@ instance Info_Milten_OCMINE (C_INFO)
 	information	= Info_Milten_OCMINE_Info;
 	important	= 0;
 	permanent	= 0;
-	description = "Как могла обрушиться целая шахта?";
+	description = "РљР°Рє РјРѕРіР»Р° РѕР±СЂСѓС€РёС‚СЊСЃСЏ С†РµР»Р°СЏ С€Р°С…С‚Р°?";
 };
 
 FUNC int Info_Milten_OCMINE_Condition()
@@ -1153,10 +1153,10 @@ FUNC int Info_Milten_OCMINE_Condition()
 
 func void Info_Milten_OCMINE_Info()
 {
-	AI_Output			(hero,self,"Info_Milten_OCMINE_15_01"); //Как могла обрушиться целая шахта?
-	AI_Output			(self,hero,"Info_Milten_OCMINE_02_02"); //Понятия не имею. Те из рудокопов, кто был в тот момент у входа, потом говорили, что началось что-то вроде землетрясения, а потом из туннеля вырвалось огромное облако пыли.
-	AI_Output			(hero,self,"Info_Milten_OCMINE_15_03"); //Ты был там?
-	AI_Output			(self,hero,"Info_Milten_OCMINE_02_04"); //Да. Там я и узнал, что шахта обрушилась.
+	AI_Output			(hero,self,"Info_Milten_OCMINE_15_01"); //РљР°Рє РјРѕРіР»Р° РѕР±СЂСѓС€РёС‚СЊСЃСЏ С†РµР»Р°СЏ С€Р°С…С‚Р°?
+	AI_Output			(self,hero,"Info_Milten_OCMINE_02_02"); //РџРѕРЅСЏС‚РёСЏ РЅРµ РёРјРµСЋ. РўРµ РёР· СЂСѓРґРѕРєРѕРїРѕРІ, РєС‚Рѕ Р±С‹Р» РІ С‚РѕС‚ РјРѕРјРµРЅС‚ Сѓ РІС…РѕРґР°, РїРѕС‚РѕРј РіРѕРІРѕСЂРёР»Рё, С‡С‚Рѕ РЅР°С‡Р°Р»РѕСЃСЊ С‡С‚Рѕ-С‚Рѕ РІСЂРѕРґРµ Р·РµРјР»РµС‚СЂСЏСЃРµРЅРёСЏ, Р° РїРѕС‚РѕРј РёР· С‚СѓРЅРЅРµР»СЏ РІС‹СЂРІР°Р»РѕСЃСЊ РѕРіСЂРѕРјРЅРѕРµ РѕР±Р»Р°РєРѕ РїС‹Р»Рё.
+	AI_Output			(hero,self,"Info_Milten_OCMINE_15_03"); //РўС‹ Р±С‹Р» С‚Р°Рј?
+	AI_Output			(self,hero,"Info_Milten_OCMINE_02_04"); //Р”Р°. РўР°Рј СЏ Рё СѓР·РЅР°Р», С‡С‚Рѕ С€Р°С…С‚Р° РѕР±СЂСѓС€РёР»Р°СЃСЊ.
 };
 
 //***************************************************************************
@@ -1169,7 +1169,7 @@ instance Info_Milten_OCKDW (C_INFO)
 	information	= Info_Milten_OCKDW_Info;
 	important	= 0;
 	permanent	= 0;
-	description = "Что ты говорил по поводу магов Огня?";
+	description = "Р§С‚Рѕ С‚С‹ РіРѕРІРѕСЂРёР» РїРѕ РїРѕРІРѕРґСѓ РјР°РіРѕРІ РћРіРЅСЏ?";
 };
 
 FUNC int Info_Milten_OCKDW_Condition()
@@ -1182,10 +1182,10 @@ FUNC int Info_Milten_OCKDW_Condition()
 
 func void Info_Milten_OCKDW_Info()
 {
-	AI_Output			(hero,self,"Info_Milten_OCKDW_15_01"); //Что ты говорил по поводу магов Огня?
-	AI_Output			(self,hero,"Info_Milten_OCKDW_02_02"); //Я знаю только, что вскоре после того, как шахта обрушилась, их всех убили Бароны.
-	AI_Output			(self,hero,"Info_Milten_OCKDW_02_03"); //Когда я вернулся от гробницы, стражники у ворот внезапно напали на меня.
-	AI_Output			(self,hero,"Info_Milten_OCKDW_02_04"); //Они называли меня 'предателем'. Мне едва удалось уйти.
+	AI_Output			(hero,self,"Info_Milten_OCKDW_15_01"); //Р§С‚Рѕ С‚С‹ РіРѕРІРѕСЂРёР» РїРѕ РїРѕРІРѕРґСѓ РјР°РіРѕРІ РћРіРЅСЏ?
+	AI_Output			(self,hero,"Info_Milten_OCKDW_02_02"); //РЇ Р·РЅР°СЋ С‚РѕР»СЊРєРѕ, С‡С‚Рѕ РІСЃРєРѕСЂРµ РїРѕСЃР»Рµ С‚РѕРіРѕ, РєР°Рє С€Р°С…С‚Р° РѕР±СЂСѓС€РёР»Р°СЃСЊ, РёС… РІСЃРµС… СѓР±РёР»Рё Р‘Р°СЂРѕРЅС‹.
+	AI_Output			(self,hero,"Info_Milten_OCKDW_02_03"); //РљРѕРіРґР° СЏ РІРµСЂРЅСѓР»СЃСЏ РѕС‚ РіСЂРѕР±РЅРёС†С‹, СЃС‚СЂР°Р¶РЅРёРєРё Сѓ РІРѕСЂРѕС‚ РІРЅРµР·Р°РїРЅРѕ РЅР°РїР°Р»Рё РЅР° РјРµРЅСЏ.
+	AI_Output			(self,hero,"Info_Milten_OCKDW_02_04"); //РћРЅРё РЅР°Р·С‹РІР°Р»Рё РјРµРЅСЏ 'РїСЂРµРґР°С‚РµР»РµРј'. РњРЅРµ РµРґРІР° СѓРґР°Р»РѕСЃСЊ СѓР№С‚Рё.
 };
 
 //***************************************************************************
@@ -1198,7 +1198,7 @@ instance Info_Milten_OCWHY (C_INFO)
 	information	= Info_Milten_OCWHY_Info;
 	important	= 0;
 	permanent	= 0;
-	description = "Зачем Баронам понадобилось убивать магов? Это же глупо...";
+	description = "Р—Р°С‡РµРј Р‘Р°СЂРѕРЅР°Рј РїРѕРЅР°РґРѕР±РёР»РѕСЃСЊ СѓР±РёРІР°С‚СЊ РјР°РіРѕРІ? Р­С‚Рѕ Р¶Рµ РіР»СѓРїРѕ...";
 };
 
 FUNC int Info_Milten_OCWHY_Condition()
@@ -1211,9 +1211,9 @@ FUNC int Info_Milten_OCWHY_Condition()
 
 func void Info_Milten_OCWHY_Info()
 {
-	AI_Output			(hero,self,"Info_Milten_OCWHY_15_01"); //Зачем Баронам понадобилось убивать магов? Это же глупо...
-	AI_Output			(self,hero,"Info_Milten_OCWHY_02_02"); //Ты прав. Но у меня не было шанса спросить об этом у стражников. Они сразу же взялись за мечи.
-	AI_Output			(self,hero,"Info_Milten_OCWHY_02_03"); //Возможно, Диего что-то знает. Как раз в то время он был в Лагере.
+	AI_Output			(hero,self,"Info_Milten_OCWHY_15_01"); //Р—Р°С‡РµРј Р‘Р°СЂРѕРЅР°Рј РїРѕРЅР°РґРѕР±РёР»РѕСЃСЊ СѓР±РёРІР°С‚СЊ РјР°РіРѕРІ? Р­С‚Рѕ Р¶Рµ РіР»СѓРїРѕ...
+	AI_Output			(self,hero,"Info_Milten_OCWHY_02_02"); //РўС‹ РїСЂР°РІ. РќРѕ Сѓ РјРµРЅСЏ РЅРµ Р±С‹Р»Рѕ С€Р°РЅСЃР° СЃРїСЂРѕСЃРёС‚СЊ РѕР± СЌС‚РѕРј Сѓ СЃС‚СЂР°Р¶РЅРёРєРѕРІ. РћРЅРё СЃСЂР°Р·Сѓ Р¶Рµ РІР·СЏР»РёСЃСЊ Р·Р° РјРµС‡Рё.
+	AI_Output			(self,hero,"Info_Milten_OCWHY_02_03"); //Р’РѕР·РјРѕР¶РЅРѕ, Р”РёРµРіРѕ С‡С‚Рѕ-С‚Рѕ Р·РЅР°РµС‚. РљР°Рє СЂР°Р· РІ С‚Рѕ РІСЂРµРјСЏ РѕРЅ Р±С‹Р» РІ Р›Р°РіРµСЂРµ.
 };
 
 //***************************************************************************
@@ -1226,7 +1226,7 @@ instance Info_Milten_OCYOU (C_INFO)
 	information	= Info_Milten_OCYOU_Info;
 	important	= 0;
 	permanent	= 0;
-	description = "Тебе нужно спрятаться. Где-нибудь подальше отсюда.";
+	description = "РўРµР±Рµ РЅСѓР¶РЅРѕ СЃРїСЂСЏС‚Р°С‚СЊСЃСЏ. Р“РґРµ-РЅРёР±СѓРґСЊ РїРѕРґР°Р»СЊС€Рµ РѕС‚СЃСЋРґР°.";
 };
 
 FUNC int Info_Milten_OCYOU_Condition()
@@ -1239,16 +1239,16 @@ FUNC int Info_Milten_OCYOU_Condition()
 
 func void Info_Milten_OCYOU_Info()
 {
-	AI_Output			(hero,self,"Info_Milten_OCYOU_15_01"); //Тебе нужно спрятаться. Где-нибудь подальше отсюда.
-	AI_Output			(self,hero,"Info_Milten_OCYOU_02_02"); //Нет. Мы с Диего договорились приглядывать за воротами и предупреждать наших друзей из других Лагерей - они ведь ничего не подозревают!
+	AI_Output			(hero,self,"Info_Milten_OCYOU_15_01"); //РўРµР±Рµ РЅСѓР¶РЅРѕ СЃРїСЂСЏС‚Р°С‚СЊСЃСЏ. Р“РґРµ-РЅРёР±СѓРґСЊ РїРѕРґР°Р»СЊС€Рµ РѕС‚СЃСЋРґР°.
+	AI_Output			(self,hero,"Info_Milten_OCYOU_02_02"); //РќРµС‚. РњС‹ СЃ Р”РёРµРіРѕ РґРѕРіРѕРІРѕСЂРёР»РёСЃСЊ РїСЂРёРіР»СЏРґС‹РІР°С‚СЊ Р·Р° РІРѕСЂРѕС‚Р°РјРё Рё РїСЂРµРґСѓРїСЂРµР¶РґР°С‚СЊ РЅР°С€РёС… РґСЂСѓР·РµР№ РёР· РґСЂСѓРіРёС… Р›Р°РіРµСЂРµР№ - РѕРЅРё РІРµРґСЊ РЅРёС‡РµРіРѕ РЅРµ РїРѕРґРѕР·СЂРµРІР°СЋС‚!
 
 	if (!Npc_KnowsInfo(hero, Info_Diego_OCSTORY))
 	{	
-		AI_Output		(self,hero,"Info_Milten_OCYOU_02_03"); //Пожалуйста, поговори с Диего!
+		AI_Output		(self,hero,"Info_Milten_OCYOU_02_03"); //РџРѕР¶Р°Р»СѓР№СЃС‚Р°, РїРѕРіРѕРІРѕСЂРё СЃ Р”РёРµРіРѕ!
 	}
 	else
 	{
-		B_LogEntry		(CH4_Firemages,"После того как Диего рассказал мне о произошедшем, я встретил Мильтена перед Старым Лагерем. Надеюсь, их не поймают");
+		B_LogEntry		(CH4_Firemages,"РџРѕСЃР»Рµ С‚РѕРіРѕ РєР°Рє Р”РёРµРіРѕ СЂР°СЃСЃРєР°Р·Р°Р» РјРЅРµ Рѕ РїСЂРѕРёР·РѕС€РµРґС€РµРј, СЏ РІСЃС‚СЂРµС‚РёР» РњРёР»СЊС‚РµРЅР° РїРµСЂРµРґ РЎС‚Р°СЂС‹Рј Р›Р°РіРµСЂРµРј. РќР°РґРµСЋСЃСЊ, РёС… РЅРµ РїРѕР№РјР°СЋС‚");
 	};
 };
 
@@ -1262,7 +1262,7 @@ instance Info_Milten_OCDIEGO (C_INFO)
 	information	= Info_Milten_OCDIEGO_Info;
 	important	= 0;
 	permanent	= 0;
-	description = "Где искать Диего?";
+	description = "Р“РґРµ РёСЃРєР°С‚СЊ Р”РёРµРіРѕ?";
 };
 
 FUNC int Info_Milten_OCDIEGO_Condition()
@@ -1277,12 +1277,12 @@ FUNC int Info_Milten_OCDIEGO_Condition()
 
 func void Info_Milten_OCDIEGO_Info()
 {
-	AI_Output			(hero,self,"Info_Milten_OCDIEGO_15_01"); //Где искать Диего?
-	AI_Output			(self,hero,"Info_Milten_OCDIEGO_02_02"); //Он скрывается у вторых ворот, на другом конце Лагеря.
-	AI_Output			(self,hero,"Info_Milten_OCDIEGO_02_03"); //Пожалуйста, поговори с ним!
+	AI_Output			(hero,self,"Info_Milten_OCDIEGO_15_01"); //Р“РґРµ РёСЃРєР°С‚СЊ Р”РёРµРіРѕ?
+	AI_Output			(self,hero,"Info_Milten_OCDIEGO_02_02"); //РћРЅ СЃРєСЂС‹РІР°РµС‚СЃСЏ Сѓ РІС‚РѕСЂС‹С… РІРѕСЂРѕС‚, РЅР° РґСЂСѓРіРѕРј РєРѕРЅС†Рµ Р›Р°РіРµСЂСЏ.
+	AI_Output			(self,hero,"Info_Milten_OCDIEGO_02_03"); //РџРѕР¶Р°Р»СѓР№СЃС‚Р°, РїРѕРіРѕРІРѕСЂРё СЃ РЅРёРј!
 
-	B_LogEntry			(CH4_Firemages,"Мильтен перехватил меня перед Старым Лагерем и рассказал об обвале Старой Шахты и убийстве магов огня.");
-	B_LogEntry			(CH4_Firemages,"Диего остался на другой стороне Старого Лагеря, неподалеку от задних ворот. Надо бы поговорить с ним: он знает больше о том, что случилось.");
+	B_LogEntry			(CH4_Firemages,"РњРёР»СЊС‚РµРЅ РїРµСЂРµС…РІР°С‚РёР» РјРµРЅСЏ РїРµСЂРµРґ РЎС‚Р°СЂС‹Рј Р›Р°РіРµСЂРµРј Рё СЂР°СЃСЃРєР°Р·Р°Р» РѕР± РѕР±РІР°Р»Рµ РЎС‚Р°СЂРѕР№ РЁР°С…С‚С‹ Рё СѓР±РёР№СЃС‚РІРµ РјР°РіРѕРІ РѕРіРЅСЏ.");
+	B_LogEntry			(CH4_Firemages,"Р”РёРµРіРѕ РѕСЃС‚Р°Р»СЃСЏ РЅР° РґСЂСѓРіРѕР№ СЃС‚РѕСЂРѕРЅРµ РЎС‚Р°СЂРѕРіРѕ Р›Р°РіРµСЂСЏ, РЅРµРїРѕРґР°Р»РµРєСѓ РѕС‚ Р·Р°РґРЅРёС… РІРѕСЂРѕС‚. РќР°РґРѕ Р±С‹ РїРѕРіРѕРІРѕСЂРёС‚СЊ СЃ РЅРёРј: РѕРЅ Р·РЅР°РµС‚ Р±РѕР»СЊС€Рµ Рѕ С‚РѕРј, С‡С‚Рѕ СЃР»СѓС‡РёР»РѕСЃСЊ.");
 };
 
 
@@ -1326,9 +1326,9 @@ func void Info_Milten_LOADSWORD_Info()
 {
 	AI_GotoNpc			(self, hero);
 
-	AI_Output			(self, hero,"Info_Milten_LOADSWORD_02_01"); //Приветствую тебя, мой друг. Много воды утекло с тех пор, как мы виделись последний раз.
-	AI_Output			(hero, self,"Info_Milten_LOADSWORD_15_02"); //Привет, Мильтен. Да, с тех пор многое изменилось.
-	AI_Output			(hero, self,"Info_Milten_LOADSWORD_15_03"); //Я бы с удовольствием рассказал тебе обо всем, но сейчас я спешу - время поджимает.
+	AI_Output			(self, hero,"Info_Milten_LOADSWORD_02_01"); //РџСЂРёРІРµС‚СЃС‚РІСѓСЋ С‚РµР±СЏ, РјРѕР№ РґСЂСѓРі. РњРЅРѕРіРѕ РІРѕРґС‹ СѓС‚РµРєР»Рѕ СЃ С‚РµС… РїРѕСЂ, РєР°Рє РјС‹ РІРёРґРµР»РёСЃСЊ РїРѕСЃР»РµРґРЅРёР№ СЂР°Р·.
+	AI_Output			(hero, self,"Info_Milten_LOADSWORD_15_02"); //РџСЂРёРІРµС‚, РњРёР»СЊС‚РµРЅ. Р”Р°, СЃ С‚РµС… РїРѕСЂ РјРЅРѕРіРѕРµ РёР·РјРµРЅРёР»РѕСЃСЊ.
+	AI_Output			(hero, self,"Info_Milten_LOADSWORD_15_03"); //РЇ Р±С‹ СЃ СѓРґРѕРІРѕР»СЊСЃС‚РІРёРµРј СЂР°СЃСЃРєР°Р·Р°Р» С‚РµР±Рµ РѕР±Рѕ РІСЃРµРј, РЅРѕ СЃРµР№С‡Р°СЃ СЏ СЃРїРµС€Сѓ - РІСЂРµРјСЏ РїРѕРґР¶РёРјР°РµС‚.
 };
 
 //---------------------------------------------------------------------
@@ -1341,7 +1341,7 @@ instance Info_Milten_LOADSWORD1 (C_INFO)
 	information		= Info_Milten_LOADSWORD1_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Мильтен, мне нужна твоя помощь!"; 
+	description		= "РњРёР»СЊС‚РµРЅ, РјРЅРµ РЅСѓР¶РЅР° С‚РІРѕСЏ РїРѕРјРѕС‰СЊ!"; 
 };
 
 FUNC int Info_Milten_LOADSWORD1_Condition()
@@ -1354,10 +1354,10 @@ FUNC int Info_Milten_LOADSWORD1_Condition()
 
 func void Info_Milten_LOADSWORD1_Info()
 {
-	AI_Output			(hero, self,"Info_Milten_LOADSWORD1_15_01"); //Мильтен, мне нужна твоя помощь!
-	AI_Output			(self, hero,"Info_Milten_LOADSWORD1_02_02"); //Что случилось? Чем я могу тебе помочь?
-	AI_Output			(hero, self,"Info_Milten_LOADSWORD1_15_03"); //Нам нужно где-то поговорить.
-	AI_Output			(self, hero,"Info_Milten_LOADSWORD1_02_04"); //Хорошо. Иди за мной.
+	AI_Output			(hero, self,"Info_Milten_LOADSWORD1_15_01"); //РњРёР»СЊС‚РµРЅ, РјРЅРµ РЅСѓР¶РЅР° С‚РІРѕСЏ РїРѕРјРѕС‰СЊ!
+	AI_Output			(self, hero,"Info_Milten_LOADSWORD1_02_02"); //Р§С‚Рѕ СЃР»СѓС‡РёР»РѕСЃСЊ? Р§РµРј СЏ РјРѕРіСѓ С‚РµР±Рµ РїРѕРјРѕС‡СЊ?
+	AI_Output			(hero, self,"Info_Milten_LOADSWORD1_15_03"); //РќР°Рј РЅСѓР¶РЅРѕ РіРґРµ-С‚Рѕ РїРѕРіРѕРІРѕСЂРёС‚СЊ.
+	AI_Output			(self, hero,"Info_Milten_LOADSWORD1_02_04"); //РҐРѕСЂРѕС€Рѕ. РРґРё Р·Р° РјРЅРѕР№.
 
 	Npc_ExchangeRoutine	(self,	"LSAway");
 	AI_StopProcessInfos	(self);
@@ -1388,19 +1388,19 @@ func void Info_Milten_LSAWAY_Info()
 {
 	AI_GotoNpc			(self, hero);
 
-	AI_Output			(self, hero,"Info_Milten_LSAWAY_02_01"); //Теперь рассказывай, что стряслось?
-	AI_Output			(hero, self,"Info_Milten_LSAWAY_15_02"); //Мне нужно воспользоваться силой железной горы, и я не думаю, что мне стоит обращаться с такой просьбой к другим магам Воды.
-	AI_Output			(self, hero,"Info_Milten_LSAWAY_02_03"); //Ты шутишь?
-	AI_Output			(hero, self,"Info_Milten_LSAWAY_15_04"); //Для шуток нет времени. Я серьезен, как никогда.
-	AI_Output			(hero, self,"Info_Milten_LSAWAY_15_05"); //Я виделся с некромантом Ксардасом.
-	AI_Output			(hero, self,"Info_Milten_LSAWAY_15_06"); //Я действую по его приказу.
-	AI_Output			(self, hero,"Info_Milten_LSAWAY_02_07"); //КСАРДАС??? Ты меня пугаешь!
-	AI_Output			(self, hero,"Info_Milten_LSAWAY_02_08"); //Никто не разговаривал с ним с тех самых пор, как он покинул Старый Лагерь.
-	AI_Output			(hero, self,"Info_Milten_LSAWAY_15_09"); //Я виделся с ним!
-	AI_Output			(self, hero,"Info_Milten_LSAWAY_02_10"); //Зачем тебе понадобилась сила железной горы?
-	AI_Output			(hero, self,"Info_Milten_LSAWAY_15_11"); //Я хочу передать ее этому мечу.
-	AI_Output			(self, hero,"Info_Milten_LSAWAY_02_12"); //Ух ты! Вот это клинок!
-	AI_Output			(hero, self,"Info_Milten_LSAWAY_15_13"); //Его имя - УРИЗЕЛЬ!
+	AI_Output			(self, hero,"Info_Milten_LSAWAY_02_01"); //РўРµРїРµСЂСЊ СЂР°СЃСЃРєР°Р·С‹РІР°Р№, С‡С‚Рѕ СЃС‚СЂСЏСЃР»РѕСЃСЊ?
+	AI_Output			(hero, self,"Info_Milten_LSAWAY_15_02"); //РњРЅРµ РЅСѓР¶РЅРѕ РІРѕСЃРїРѕР»СЊР·РѕРІР°С‚СЊСЃСЏ СЃРёР»РѕР№ Р¶РµР»РµР·РЅРѕР№ РіРѕСЂС‹, Рё СЏ РЅРµ РґСѓРјР°СЋ, С‡С‚Рѕ РјРЅРµ СЃС‚РѕРёС‚ РѕР±СЂР°С‰Р°С‚СЊСЃСЏ СЃ С‚Р°РєРѕР№ РїСЂРѕСЃСЊР±РѕР№ Рє РґСЂСѓРіРёРј РјР°РіР°Рј Р’РѕРґС‹.
+	AI_Output			(self, hero,"Info_Milten_LSAWAY_02_03"); //РўС‹ С€СѓС‚РёС€СЊ?
+	AI_Output			(hero, self,"Info_Milten_LSAWAY_15_04"); //Р”Р»СЏ С€СѓС‚РѕРє РЅРµС‚ РІСЂРµРјРµРЅРё. РЇ СЃРµСЂСЊРµР·РµРЅ, РєР°Рє РЅРёРєРѕРіРґР°.
+	AI_Output			(hero, self,"Info_Milten_LSAWAY_15_05"); //РЇ РІРёРґРµР»СЃСЏ СЃ РЅРµРєСЂРѕРјР°РЅС‚РѕРј РљСЃР°СЂРґР°СЃРѕРј.
+	AI_Output			(hero, self,"Info_Milten_LSAWAY_15_06"); //РЇ РґРµР№СЃС‚РІСѓСЋ РїРѕ РµРіРѕ РїСЂРёРєР°Р·Сѓ.
+	AI_Output			(self, hero,"Info_Milten_LSAWAY_02_07"); //РљРЎРђР Р”РђРЎ??? РўС‹ РјРµРЅСЏ РїСѓРіР°РµС€СЊ!
+	AI_Output			(self, hero,"Info_Milten_LSAWAY_02_08"); //РќРёРєС‚Рѕ РЅРµ СЂР°Р·РіРѕРІР°СЂРёРІР°Р» СЃ РЅРёРј СЃ С‚РµС… СЃР°РјС‹С… РїРѕСЂ, РєР°Рє РѕРЅ РїРѕРєРёРЅСѓР» РЎС‚Р°СЂС‹Р№ Р›Р°РіРµСЂСЊ.
+	AI_Output			(hero, self,"Info_Milten_LSAWAY_15_09"); //РЇ РІРёРґРµР»СЃСЏ СЃ РЅРёРј!
+	AI_Output			(self, hero,"Info_Milten_LSAWAY_02_10"); //Р—Р°С‡РµРј С‚РµР±Рµ РїРѕРЅР°РґРѕР±РёР»Р°СЃСЊ СЃРёР»Р° Р¶РµР»РµР·РЅРѕР№ РіРѕСЂС‹?
+	AI_Output			(hero, self,"Info_Milten_LSAWAY_15_11"); //РЇ С…РѕС‡Сѓ РїРµСЂРµРґР°С‚СЊ РµРµ СЌС‚РѕРјСѓ РјРµС‡Сѓ.
+	AI_Output			(self, hero,"Info_Milten_LSAWAY_02_12"); //РЈС… С‚С‹! Р’РѕС‚ СЌС‚Рѕ РєР»РёРЅРѕРє!
+	AI_Output			(hero, self,"Info_Milten_LSAWAY_15_13"); //Р•РіРѕ РёРјСЏ - РЈР РР—Р•Р›Р¬!
 };
 
 
@@ -1414,7 +1414,7 @@ instance Info_Milten_LOADSWORD4 (C_INFO)
 	information		= Info_Milten_LOADSWORD4_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Это заклинание мне дал Ксардас!"; 
+	description		= "Р­С‚Рѕ Р·Р°РєР»РёРЅР°РЅРёРµ РјРЅРµ РґР°Р» РљСЃР°СЂРґР°СЃ!"; 
 };
 
 FUNC int Info_Milten_LOADSWORD4_Condition()
@@ -1427,11 +1427,11 @@ FUNC int Info_Milten_LOADSWORD4_Condition()
 
 func void Info_Milten_LOADSWORD4_Info()
 {
-	AI_Output			(hero, self,"Info_Milten_LOADSWORD4_15_01"); //Ксардас дал мне заклинание для переноса силы.
-	AI_Output			(hero, self,"Info_Milten_LOADSWORD4_15_02"); //Тебе нужно будет прочесть его, когда я поднесу меч к железной горе.
+	AI_Output			(hero, self,"Info_Milten_LOADSWORD4_15_01"); //РљСЃР°СЂРґР°СЃ РґР°Р» РјРЅРµ Р·Р°РєР»РёРЅР°РЅРёРµ РґР»СЏ РїРµСЂРµРЅРѕСЃР° СЃРёР»С‹.
+	AI_Output			(hero, self,"Info_Milten_LOADSWORD4_15_02"); //РўРµР±Рµ РЅСѓР¶РЅРѕ Р±СѓРґРµС‚ РїСЂРѕС‡РµСЃС‚СЊ РµРіРѕ, РєРѕРіРґР° СЏ РїРѕРґРЅРµСЃСѓ РјРµС‡ Рє Р¶РµР»РµР·РЅРѕР№ РіРѕСЂРµ.
 	B_UseFakeScroll		();
-	AI_Output			(self, hero,"Info_Milten_LOADSWORD4_02_03"); //М-мм. М-мм... Ну, если мне нужно только прочесть заклинание...
-	AI_Output			(self, hero,"Info_Milten_LOADSWORD4_02_04"); //Но у нас возникнут проблемы с Сатурасом и другими магами!
+	AI_Output			(self, hero,"Info_Milten_LOADSWORD4_02_03"); //Рњ-РјРј. Рњ-РјРј... РќСѓ, РµСЃР»Рё РјРЅРµ РЅСѓР¶РЅРѕ С‚РѕР»СЊРєРѕ РїСЂРѕС‡РµСЃС‚СЊ Р·Р°РєР»РёРЅР°РЅРёРµ...
+	AI_Output			(self, hero,"Info_Milten_LOADSWORD4_02_04"); //РќРѕ Сѓ РЅР°СЃ РІРѕР·РЅРёРєРЅСѓС‚ РїСЂРѕР±Р»РµРјС‹ СЃ РЎР°С‚СѓСЂР°СЃРѕРј Рё РґСЂСѓРіРёРјРё РјР°РіР°РјРё!
 };
 
 
@@ -1450,7 +1450,7 @@ instance Info_Milten_LSRISK (C_INFO)
 	information		= Info_Milten_LSRISK_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Придется рискнуть!"; 
+	description		= "РџСЂРёРґРµС‚СЃСЏ СЂРёСЃРєРЅСѓС‚СЊ!"; 
 };
 
 FUNC int Info_Milten_LSRISK_Condition()
@@ -1463,17 +1463,17 @@ FUNC int Info_Milten_LSRISK_Condition()
 
 func void Info_Milten_LSRISK_Info()
 {
-	AI_Output			(hero, self,"Info_Milten_LSRISK_15_01"); //Придется рискнуть!
-	AI_Output			(hero, self,"Info_Milten_LSRISK_15_02"); //Это на самом деле ОЧЕНЬ, ОЧЕНЬ важно!
-	AI_Output			(hero, self,"Info_Milten_LSRISK_15_03"); //Важно для ВСЕХ жителей колонии.
-	AI_Output			(self, hero,"Info_Milten_LSRISK_02_04"); //Я не понимаю...
-	AI_Output			(hero, self,"Info_Milten_LSRISK_15_05"); //Так мы сможем выбраться отсюда! Ты должен мне доверять!
-	AI_Output			(self, hero,"Info_Milten_LSRISK_02_06"); //Ну, хорошо. После всего того, что ты для нас сделал, я не могу относиться к тебе иначе как с полным доверием.
-	AI_Output			(self, hero,"Info_Milten_LSRISK_02_07"); //Помимо этого, похоже, и Ксардас тебе доверяет.
-	AI_Output			(self, hero,"Info_Milten_LSRISK_02_08"); //Встретимся возле железной горы, и... Никому не говори об этом!
-	AI_Output			(hero, self,"Info_Milten_LSRISK_15_09"); //Хорошо, я буду ждать тебя у железной горы. До встречи!
+	AI_Output			(hero, self,"Info_Milten_LSRISK_15_01"); //РџСЂРёРґРµС‚СЃСЏ СЂРёСЃРєРЅСѓС‚СЊ!
+	AI_Output			(hero, self,"Info_Milten_LSRISK_15_02"); //Р­С‚Рѕ РЅР° СЃР°РјРѕРј РґРµР»Рµ РћР§Р•РќР¬, РћР§Р•РќР¬ РІР°Р¶РЅРѕ!
+	AI_Output			(hero, self,"Info_Milten_LSRISK_15_03"); //Р’Р°Р¶РЅРѕ РґР»СЏ Р’РЎР•РҐ Р¶РёС‚РµР»РµР№ РєРѕР»РѕРЅРёРё.
+	AI_Output			(self, hero,"Info_Milten_LSRISK_02_04"); //РЇ РЅРµ РїРѕРЅРёРјР°СЋ...
+	AI_Output			(hero, self,"Info_Milten_LSRISK_15_05"); //РўР°Рє РјС‹ СЃРјРѕР¶РµРј РІС‹Р±СЂР°С‚СЊСЃСЏ РѕС‚СЃСЋРґР°! РўС‹ РґРѕР»Р¶РµРЅ РјРЅРµ РґРѕРІРµСЂСЏС‚СЊ!
+	AI_Output			(self, hero,"Info_Milten_LSRISK_02_06"); //РќСѓ, С…РѕСЂРѕС€Рѕ. РџРѕСЃР»Рµ РІСЃРµРіРѕ С‚РѕРіРѕ, С‡С‚Рѕ С‚С‹ РґР»СЏ РЅР°СЃ СЃРґРµР»Р°Р», СЏ РЅРµ РјРѕРіСѓ РѕС‚РЅРѕСЃРёС‚СЊСЃСЏ Рє С‚РµР±Рµ РёРЅР°С‡Рµ РєР°Рє СЃ РїРѕР»РЅС‹Рј РґРѕРІРµСЂРёРµРј.
+	AI_Output			(self, hero,"Info_Milten_LSRISK_02_07"); //РџРѕРјРёРјРѕ СЌС‚РѕРіРѕ, РїРѕС…РѕР¶Рµ, Рё РљСЃР°СЂРґР°СЃ С‚РµР±Рµ РґРѕРІРµСЂСЏРµС‚.
+	AI_Output			(self, hero,"Info_Milten_LSRISK_02_08"); //Р’СЃС‚СЂРµС‚РёРјСЃСЏ РІРѕР·Р»Рµ Р¶РµР»РµР·РЅРѕР№ РіРѕСЂС‹, Рё... РќРёРєРѕРјСѓ РЅРµ РіРѕРІРѕСЂРё РѕР± СЌС‚РѕРј!
+	AI_Output			(hero, self,"Info_Milten_LSRISK_15_09"); //РҐРѕСЂРѕС€Рѕ, СЏ Р±СѓРґСѓ Р¶РґР°С‚СЊ С‚РµР±СЏ Сѓ Р¶РµР»РµР·РЅРѕР№ РіРѕСЂС‹. Р”Рѕ РІСЃС‚СЂРµС‡Рё!
 	
-	B_LogEntry			(CH5_Uriziel,"Я сумел уговорить своего друга Мильтена помочь в передаче энергии мечу. Мы встретимся внизу, у горы руды, принадлежащей магам круга воды.");
+	B_LogEntry			(CH5_Uriziel,"РЇ СЃСѓРјРµР» СѓРіРѕРІРѕСЂРёС‚СЊ СЃРІРѕРµРіРѕ РґСЂСѓРіР° РњРёР»СЊС‚РµРЅР° РїРѕРјРѕС‡СЊ РІ РїРµСЂРµРґР°С‡Рµ СЌРЅРµСЂРіРёРё РјРµС‡Сѓ. РњС‹ РІСЃС‚СЂРµС‚РёРјСЃСЏ РІРЅРёР·Сѓ, Сѓ РіРѕСЂС‹ СЂСѓРґС‹, РїСЂРёРЅР°РґР»РµР¶Р°С‰РµР№ РјР°РіР°Рј РєСЂСѓРіР° РІРѕРґС‹.");
 	Npc_ExchangeRoutine	(self,	"LSOreHeap");
 	B_ExchangeRoutine	(Sld_726_Soeldner,	"loadsword");
 
@@ -1506,7 +1506,7 @@ func void Info_Milten_LSOREHEAP_Info()
 {
 	//AI_GotoNpc			(self, hero);
 
-	AI_Output			(self, hero,"Info_Milten_LSOREHEAP_02_01"); //Ты принес меч и заклинание?
+	AI_Output			(self, hero,"Info_Milten_LSOREHEAP_02_01"); //РўС‹ РїСЂРёРЅРµСЃ РјРµС‡ Рё Р·Р°РєР»РёРЅР°РЅРёРµ?
 };
 	
 //***************************************************************************
@@ -1519,7 +1519,7 @@ instance Info_Milten_LSNOW (C_INFO)
 	information		= Info_Milten_LSNOW_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Вот, держи заклинание!"; 
+	description		= "Р’РѕС‚, РґРµСЂР¶Рё Р·Р°РєР»РёРЅР°РЅРёРµ!"; 
 };
 
 FUNC int Info_Milten_LSNOW_Condition()
@@ -1535,10 +1535,10 @@ FUNC int Info_Milten_LSNOW_Condition()
 
 func void Info_Milten_LSNOW_Info()
 {
-	AI_Output			(hero, self,"Info_Milten_LSNOW_15_01"); //Вот, держи заклинание!
-	AI_Output			(hero, self,"Info_Milten_LSNOW_15_02"); //Ты готов?
-	AI_Output			(self, hero,"Info_Milten_LSNOW_02_03"); //Если только кто-нибудь может быть готов к этому...
-	AI_Output			(hero, self,"Info_Milten_LSNOW_15_04"); //Поехали!
+	AI_Output			(hero, self,"Info_Milten_LSNOW_15_01"); //Р’РѕС‚, РґРµСЂР¶Рё Р·Р°РєР»РёРЅР°РЅРёРµ!
+	AI_Output			(hero, self,"Info_Milten_LSNOW_15_02"); //РўС‹ РіРѕС‚РѕРІ?
+	AI_Output			(self, hero,"Info_Milten_LSNOW_02_03"); //Р•СЃР»Рё С‚РѕР»СЊРєРѕ РєС‚Рѕ-РЅРёР±СѓРґСЊ РјРѕР¶РµС‚ Р±С‹С‚СЊ РіРѕС‚РѕРІ Рє СЌС‚РѕРјСѓ...
+	AI_Output			(hero, self,"Info_Milten_LSNOW_15_04"); //РџРѕРµС…Р°Р»Рё!
 
 	B_GiveInvItems 	(hero, self, Scroll4Milten, 1);	
 	B_GiveInvItems 	(hero, self, Mythrilklinge01, 1);	
@@ -1599,19 +1599,19 @@ func void Info_Milten_LSDONE_Info()
 {
 	//AI_GotoNpc				(self, hero);
 
-	AI_Output				(self, hero,"Info_Milten_LSDONE_02_01"); //Готово!
-	AI_Output				(hero, self,"Info_Milten_LSDONE_15_02"); //Невероятно! Обычный серый камень теперь светится синим!
+	AI_Output				(self, hero,"Info_Milten_LSDONE_02_01"); //Р“РѕС‚РѕРІРѕ!
+	AI_Output				(hero, self,"Info_Milten_LSDONE_15_02"); //РќРµРІРµСЂРѕСЏС‚РЅРѕ! РћР±С‹С‡РЅС‹Р№ СЃРµСЂС‹Р№ РєР°РјРµРЅСЊ С‚РµРїРµСЂСЊ СЃРІРµС‚РёС‚СЃСЏ СЃРёРЅРёРј!
 
 	AI_EquipBestMeleeWeapon	(hero);
 	AI_ReadyMeleeWeapon		(hero);
 	AI_PlayAni				(hero, "T_1HSINSPECT");
 	AI_RemoveWeapon			(hero);
 
-	AI_Output				(self, hero,"Info_Milten_LSDONE_02_03"); //Похоже, у нас получилось! Магическая сила всей этой руды теперь заключена в одном старом мече.
-	AI_Output				(self, hero,"Info_Milten_LSDONE_02_04"); //Но кажется, мы привлекли к себе слишком много внимания.
-	AI_Output				(self, hero,"Info_Milten_LSDONE_02_05"); //Тебе придется воспользоваться Заклинанием Портал, для того чтобы убраться отсюда!
-	AI_Output				(hero, self,"Info_Milten_LSDONE_15_06"); //А как же ты? 
-	AI_Output				(self, hero,"Info_Milten_LSDONE_02_07"); //Обо мне не волнуйся, я что-нибудь придумаю. Уходи!
+	AI_Output				(self, hero,"Info_Milten_LSDONE_02_03"); //РџРѕС…РѕР¶Рµ, Сѓ РЅР°СЃ РїРѕР»СѓС‡РёР»РѕСЃСЊ! РњР°РіРёС‡РµСЃРєР°СЏ СЃРёР»Р° РІСЃРµР№ СЌС‚РѕР№ СЂСѓРґС‹ С‚РµРїРµСЂСЊ Р·Р°РєР»СЋС‡РµРЅР° РІ РѕРґРЅРѕРј СЃС‚Р°СЂРѕРј РјРµС‡Рµ.
+	AI_Output				(self, hero,"Info_Milten_LSDONE_02_04"); //РќРѕ РєР°Р¶РµС‚СЃСЏ, РјС‹ РїСЂРёРІР»РµРєР»Рё Рє СЃРµР±Рµ СЃР»РёС€РєРѕРј РјРЅРѕРіРѕ РІРЅРёРјР°РЅРёСЏ.
+	AI_Output				(self, hero,"Info_Milten_LSDONE_02_05"); //РўРµР±Рµ РїСЂРёРґРµС‚СЃСЏ РІРѕСЃРїРѕР»СЊР·РѕРІР°С‚СЊСЃСЏ Р—Р°РєР»РёРЅР°РЅРёРµРј РџРѕСЂС‚Р°Р», РґР»СЏ С‚РѕРіРѕ С‡С‚РѕР±С‹ СѓР±СЂР°С‚СЊСЃСЏ РѕС‚СЃСЋРґР°!
+	AI_Output				(hero, self,"Info_Milten_LSDONE_15_06"); //Рђ РєР°Рє Р¶Рµ С‚С‹? 
+	AI_Output				(self, hero,"Info_Milten_LSDONE_02_07"); //РћР±Рѕ РјРЅРµ РЅРµ РІРѕР»РЅСѓР№СЃСЏ, СЏ С‡С‚Рѕ-РЅРёР±СѓРґСЊ РїСЂРёРґСѓРјР°СЋ. РЈС…РѕРґРё!
 
 	B_Story_UrizielLoaded	();
 	

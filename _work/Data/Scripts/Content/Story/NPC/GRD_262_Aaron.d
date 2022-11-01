@@ -2,7 +2,7 @@ instance GRD_262_Aaron (Npc_Default)
 {
 	//-------- primary data --------
 	
-	name 		=	"Арон";
+	name 		=	"РђСЂРѕРЅ";
 	npctype		=	npctype_Main;
 	guild 		=	GIL_GRD;
 	level 		=	15;

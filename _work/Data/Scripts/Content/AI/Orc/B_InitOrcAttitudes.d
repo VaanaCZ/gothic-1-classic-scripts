@@ -1,10 +1,10 @@
 //////////////////////////////////////////////////////////////////////////
 //	B_InitOrcAttitudes
 //	==================
-//	Initialisiert die Attitüde aller Ork-Rassen zu allen anderen
-//	Wesen im Spiel.	für	Menschen und Orks können die Sammelbezeichner
+//	Initialisiert die AttitÑŒde aller Ork-Rassen zu allen anderen
+//	Wesen im Spiel.	fÑŒr	Menschen und Orks kÑ†nnen die Sammelbezeichner
 //	GIL_SEPERATOR_HUM bzw. GIL_SEPERATOR_ORC verwendet werden.
-//	- 	'OrcsvsHuman' gibt das Attitüden der Orks gegenüber den Menschenan
+//	- 	'OrcsvsHuman' gibt das AttitÑŒden der Orks gegenÑŒber den Menschenan
 //		1 = friendly
 //		2 = neutral
 //		3 = angry
@@ -14,14 +14,14 @@ func void B_InitOrcAttitudes (var int OrcsvsHuman)
 {
 	if (OrcsvsHuman == 1)
 	{
-		//-------- Orks gegenüber Menschen --------
+		//-------- Orks gegenÑŒber Menschen --------
 		B_SETGUILDATTITUDE	( GIL_ORCSHAMAN ,	ATT_FRIENDLY,		GIL_SEPERATOR_HUM	);
 		B_SETGUILDATTITUDE	( GIL_ORCWARRIOR,	ATT_FRIENDLY,		GIL_SEPERATOR_HUM	);
 		B_SETGUILDATTITUDE	( GIL_ORCSCOUT  ,	ATT_FRIENDLY,		GIL_SEPERATOR_HUM	);
 		B_SETGUILDATTITUDE	( GIL_ORCSLAVE  ,	ATT_FRIENDLY,		GIL_SEPERATOR_HUM	);
 
                                         	 	
-		//-------- Orks gegenüber Monster --------
+		//-------- Orks gegenÑŒber Monster --------
 	}
 	else if (OrcsvsHuman == 2)
 	{

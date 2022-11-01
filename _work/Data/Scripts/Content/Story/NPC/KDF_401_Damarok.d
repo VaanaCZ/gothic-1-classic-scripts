@@ -2,7 +2,7 @@ instance KDF_401_Damarok (Npc_Default)
 {
 	//-------- primary data --------
 	
-	name 		=	"Дамарок";
+	name 		=	"Р”Р°РјР°СЂРѕРє";
 	npctype		=	npctype_main;
 	guild 		=	GIL_KDF;      
 	level 		=	27;

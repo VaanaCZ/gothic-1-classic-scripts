@@ -4,7 +4,7 @@
 instance InExtremo_DrPymonte(Npc_Default)
 {
 	//-------- primary data --------
-	name 						=	"Доктор Пимонтэ";
+	name 						=	"Р”РѕРєС‚РѕСЂ РџРёРјРѕРЅС‚СЌ";
    	npctype						= 	npctype_main;
    	guild 						=	GIL_NONE;
 	level 						=	4;
@@ -62,7 +62,7 @@ instance InExtremo_TheFlail(Npc_Default)
 {
 	//-------- primary data --------
 	
-	name =					"Цеп";
+	name =					"Р¦РµРї";
 	npctype		= 	npctype_main;
    	guild =					GIL_NONE;
 	level =					4;
@@ -117,7 +117,7 @@ instance InExtremo_ThomasTheForger(Npc_Default)
 {
 	//-------- primary data --------
 	
-	name =					"Кузнец Томас";
+	name =					"РљСѓР·РЅРµС† РўРѕРјР°СЃ";
    	npctype	= npctype_main;
    	guild =					GIL_NONE;
 	level =					4;
@@ -175,7 +175,7 @@ instance InExtremo_Unicorn(Npc_Default)
 {
 	//-------- primary data --------
 	
-	name =					"Единорог";
+	name =					"Р•РґРёРЅРѕСЂРѕРі";
 	npctype		= 	npctype_main;
    	guild =					GIL_NONE;
 	level =					4;
@@ -231,7 +231,7 @@ instance InExtremo_YellowPfeiffer(Npc_Default)
 {
 	//-------- primary data --------
 	
-	name =					"Желтый трубач";
+	name =					"Р–РµР»С‚С‹Р№ С‚СЂСѓР±Р°С‡";
    	npctype		= 	npctype_main;
    	guild =					GIL_NONE;
 	level =					4;
@@ -285,7 +285,7 @@ instance InExtremo_Lutter(Npc_Default)
 {
 	//-------- primary data --------
 	
-	name =					"Лютер";
+	name =					"Р›СЋС‚РµСЂ";
    	npctype		= 	npctype_main;
    	guild =					GIL_NONE;
 	level =					4;
@@ -339,7 +339,7 @@ instance InExtremo_Flex(Npc_Default)
 {
 	//-------- primary data --------
 	
-	name =					"Флекс";
+	name =					"Р¤Р»РµРєСЃ";
    	npctype		= 	npctype_main;
    	guild =					GIL_NONE;
 	level =					4;
@@ -389,15 +389,15 @@ FUNC VOID Rtn_off_396 ()
 
 
 /////////////////////////////////////////
-// STEVE GДTCHEN	  ///////////////////
+// STEVE GР”TCHEN	  ///////////////////
 /////////////////////////////////////////
 
-// Ansager fьr In Extremo
+// Ansager fСЊr In Extremo
 
 instance IE_397_Announcer(Npc_Default)
 {
 	//-------- primary data --------
-	name 						=	"Стив";
+	name 						=	"РЎС‚РёРІ";
    	npctype						= 	npctype_main;
    	guild 						=	GIL_NONE;
 	level 						=	4;
@@ -460,7 +460,7 @@ instance Charlotte (Npc_Default)
 {
 	//-------- primary data --------
 	
-	name 						=	"Шарлотта";
+	name 						=	"РЁР°СЂР»РѕС‚С‚Р°";
 	npctype						= 	npctype_main;
 	guild 						=	GIL_BAB;
 	level 						=	1;

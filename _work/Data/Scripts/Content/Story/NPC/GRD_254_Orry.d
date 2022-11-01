@@ -2,7 +2,7 @@ instance GRD_254_Orry (Npc_Default)
 {
 	//-------- primary data --------
 	
-	name 		=	"Îððè";
+	name 		=	"ÐžÑ€Ñ€Ð¸";
 	npctype		= 	npctype_main;
 	guild 		=	GIL_GRD;
 	level 		=	10;

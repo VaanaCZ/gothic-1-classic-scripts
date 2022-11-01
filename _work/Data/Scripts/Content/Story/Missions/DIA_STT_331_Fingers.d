@@ -35,7 +35,7 @@ INSTANCE DIA_Fingers_BecomeShadow (C_INFO)
 	condition		= DIA_Fingers_BecomeShadow_Condition;
 	information		= DIA_Fingers_BecomeShadow_Info;
 	permanent		= 1;
-	description		= "Я хочу стать Призраком!"; 
+	description		= "РЇ С…РѕС‡Сѓ СЃС‚Р°С‚СЊ РџСЂРёР·СЂР°РєРѕРј!"; 
 };
 
 FUNC INT DIA_Fingers_BecomeShadow_Condition()
@@ -49,15 +49,15 @@ FUNC INT DIA_Fingers_BecomeShadow_Condition()
 
 FUNC VOID DIA_Fingers_BecomeShadow_Info()
 {
-	AI_Output (other, self,"DIA_Fingers_BecomeShadow_15_00"); //Я хочу стать Призраком!
-	AI_Output (self, other,"DIA_Fingers_BecomeShadow_05_01"); //И что с того?
+	AI_Output (other, self,"DIA_Fingers_BecomeShadow_15_00"); //РЇ С…РѕС‡Сѓ СЃС‚Р°С‚СЊ РџСЂРёР·СЂР°РєРѕРј!
+	AI_Output (self, other,"DIA_Fingers_BecomeShadow_05_01"); //Р С‡С‚Рѕ СЃ С‚РѕРіРѕ?
 	Info_ClearChoices	(DIA_Fingers_BecomeShadow );
 	Info_AddChoice		(DIA_Fingers_BecomeShadow,DIALOG_BACK										,DIA_Fingers_BecomeShadow_BACK);
 	if (Npc_KnowsInfo(hero,Info_Diego_Teachers))
 	{
-		Info_AddChoice		(DIA_Fingers_BecomeShadow,"Мне нужно чему-нибудь научиться. ",DIA_Fingers_BecomeShadow_TeachMe);
+		Info_AddChoice		(DIA_Fingers_BecomeShadow,"РњРЅРµ РЅСѓР¶РЅРѕ С‡РµРјСѓ-РЅРёР±СѓРґСЊ РЅР°СѓС‡РёС‚СЊСЃСЏ. ",DIA_Fingers_BecomeShadow_TeachMe);
 	};
-	Info_AddChoice		(DIA_Fingers_BecomeShadow,"Ты можешь мне помочь?",DIA_Fingers_BecomeShadow_AnyTips);
+	Info_AddChoice		(DIA_Fingers_BecomeShadow,"РўС‹ РјРѕР¶РµС€СЊ РјРЅРµ РїРѕРјРѕС‡СЊ?",DIA_Fingers_BecomeShadow_AnyTips);
 };
 
 func void DIA_Fingers_BecomeShadow_BACK()
@@ -67,23 +67,23 @@ func void DIA_Fingers_BecomeShadow_BACK()
 
 func void DIA_Fingers_BecomeShadow_AnyTips()
 {
-	AI_Output (other, self,"DIA_Fingers_BecomeShadow_AnyTips_15_00"); //Ты можешь мне помочь?
-	AI_Output (self, other,"DIA_Fingers_BecomeShadow_AnyTips_05_01"); //Если бы я знал, как...
+	AI_Output (other, self,"DIA_Fingers_BecomeShadow_AnyTips_15_00"); //РўС‹ РјРѕР¶РµС€СЊ РјРЅРµ РїРѕРјРѕС‡СЊ?
+	AI_Output (self, other,"DIA_Fingers_BecomeShadow_AnyTips_05_01"); //Р•СЃР»Рё Р±С‹ СЏ Р·РЅР°Р», РєР°Рє...
 };
 
 func void DIA_Fingers_BecomeShadow_TeachMe()
 {
-	AI_Output (other, self,"DIA_Fingers_BecomeShadow_TeachMe_15_00"); //Мне нужно чему-нибудь научиться. 
-	AI_Output (self, other,"DIA_Fingers_BecomeShadow_TeachMe_05_01"); //Кто прислал тебя ко мне?
-	AI_Output (other, self,"DIA_Fingers_BecomeShadow_TeachMe_15_02"); //Диего.
-	AI_Output (self, other,"DIA_Fingers_BecomeShadow_TeachMe_05_03"); //С этого нужно было начинать.
-	AI_Output (self, other,"DIA_Fingers_BecomeShadow_TeachMe_05_04"); //Если хочешь присоединиться к этому Лагерю, ты должен быть хорошим бойцом - или хорошим вором.
-	AI_Output (self, other,"DIA_Fingers_BecomeShadow_TeachMe_05_05"); //Призраки буду испытывать тебя. Они дадут задание, на котором ты не должен попасться.
-	AI_Output (self, other,"DIA_Fingers_BecomeShadow_TeachMe_05_06"); //Поэтому начать тебе стоит с воровской науки.
-	AI_Output (self, other,"DIA_Fingers_BecomeShadow_TeachMe_05_07"); //Так уж получилось, что я - лучший вор во всем Старом Лагере.
+	AI_Output (other, self,"DIA_Fingers_BecomeShadow_TeachMe_15_00"); //РњРЅРµ РЅСѓР¶РЅРѕ С‡РµРјСѓ-РЅРёР±СѓРґСЊ РЅР°СѓС‡РёС‚СЊСЃСЏ. 
+	AI_Output (self, other,"DIA_Fingers_BecomeShadow_TeachMe_05_01"); //РљС‚Рѕ РїСЂРёСЃР»Р°Р» С‚РµР±СЏ РєРѕ РјРЅРµ?
+	AI_Output (other, self,"DIA_Fingers_BecomeShadow_TeachMe_15_02"); //Р”РёРµРіРѕ.
+	AI_Output (self, other,"DIA_Fingers_BecomeShadow_TeachMe_05_03"); //РЎ СЌС‚РѕРіРѕ РЅСѓР¶РЅРѕ Р±С‹Р»Рѕ РЅР°С‡РёРЅР°С‚СЊ.
+	AI_Output (self, other,"DIA_Fingers_BecomeShadow_TeachMe_05_04"); //Р•СЃР»Рё С…РѕС‡РµС€СЊ РїСЂРёСЃРѕРµРґРёРЅРёС‚СЊСЃСЏ Рє СЌС‚РѕРјСѓ Р›Р°РіРµСЂСЋ, С‚С‹ РґРѕР»Р¶РµРЅ Р±С‹С‚СЊ С…РѕСЂРѕС€РёРј Р±РѕР№С†РѕРј - РёР»Рё С…РѕСЂРѕС€РёРј РІРѕСЂРѕРј.
+	AI_Output (self, other,"DIA_Fingers_BecomeShadow_TeachMe_05_05"); //РџСЂРёР·СЂР°РєРё Р±СѓРґСѓ РёСЃРїС‹С‚С‹РІР°С‚СЊ С‚РµР±СЏ. РћРЅРё РґР°РґСѓС‚ Р·Р°РґР°РЅРёРµ, РЅР° РєРѕС‚РѕСЂРѕРј С‚С‹ РЅРµ РґРѕР»Р¶РµРЅ РїРѕРїР°СЃС‚СЊСЃСЏ.
+	AI_Output (self, other,"DIA_Fingers_BecomeShadow_TeachMe_05_06"); //РџРѕСЌС‚РѕРјСѓ РЅР°С‡Р°С‚СЊ С‚РµР±Рµ СЃС‚РѕРёС‚ СЃ РІРѕСЂРѕРІСЃРєРѕР№ РЅР°СѓРєРё.
+	AI_Output (self, other,"DIA_Fingers_BecomeShadow_TeachMe_05_07"); //РўР°Рє СѓР¶ РїРѕР»СѓС‡РёР»РѕСЃСЊ, С‡С‚Рѕ СЏ - Р»СѓС‡С€РёР№ РІРѕСЂ РІРѕ РІСЃРµРј РЎС‚Р°СЂРѕРј Р›Р°РіРµСЂРµ.
 	Fingers_CanTeach = TRUE;
 	Log_CreateTopic   	(GE_TeacherOC,LOG_NOTE);
-	B_LogEntry			(GE_TeacherOC,"Фингерс может обучить карманным кражам и вскрыванию замков.");
+	B_LogEntry			(GE_TeacherOC,"Р¤РёРЅРіРµСЂСЃ РјРѕР¶РµС‚ РѕР±СѓС‡РёС‚СЊ РєР°СЂРјР°РЅРЅС‹Рј РєСЂР°Р¶Р°Рј Рё РІСЃРєСЂС‹РІР°РЅРёСЋ Р·Р°РјРєРѕРІ.");
 	Info_ClearChoices	(DIA_Fingers_BecomeShadow );
 };
 
@@ -99,7 +99,7 @@ INSTANCE DIA_Fingers_Lehrer (C_INFO)
 	condition		= DIA_Fingers_Lehrer_Condition;
 	information		= DIA_Fingers_Lehrer_Info;
 	permanent		= 1;
-	description		= "Чему ты можешь меня научить?"; 
+	description		= "Р§РµРјСѓ С‚С‹ РјРѕР¶РµС€СЊ РјРµРЅСЏ РЅР°СѓС‡РёС‚СЊ?"; 
 };
 
 FUNC INT DIA_Fingers_Lehrer_Condition()
@@ -112,8 +112,8 @@ FUNC INT DIA_Fingers_Lehrer_Condition()
 
 FUNC VOID DIA_Fingers_Lehrer_Info()
 {
-	AI_Output (other, self,"DIA_Fingers_Lehrer_15_00"); //Чему ты можешь меня научить?
-	AI_Output (self, other,"DIA_Fingers_Lehrer_05_02"); //Это зависит от того, что ты хочешь узнать.
+	AI_Output (other, self,"DIA_Fingers_Lehrer_15_00"); //Р§РµРјСѓ С‚С‹ РјРѕР¶РµС€СЊ РјРµРЅСЏ РЅР°СѓС‡РёС‚СЊ?
+	AI_Output (self, other,"DIA_Fingers_Lehrer_05_02"); //Р­С‚Рѕ Р·Р°РІРёСЃРёС‚ РѕС‚ С‚РѕРіРѕ, С‡С‚Рѕ С‚С‹ С…РѕС‡РµС€СЊ СѓР·РЅР°С‚СЊ.
 
 
 
@@ -123,70 +123,70 @@ FUNC VOID DIA_Fingers_Lehrer_Info()
 	Info_AddChoice		(DIA_Fingers_Lehrer,B_BuildLearnString(NAME_LearnPickpocket_1	,	LPCOST_TALENT_PICKPOCKET_1,0)	,DIA_Fingers_Lehrer_Pickpocket);
 	Info_AddChoice		(DIA_Fingers_Lehrer,B_BuildLearnString(NAME_LearnPicklock_2		,	LPCOST_TALENT_PICKLOCK_2,0)	,DIA_Fingers_Lehrer_Lockpick2);
 	Info_AddChoice		(DIA_Fingers_Lehrer,B_BuildLearnString(NAME_LearnPicklock_1		,	LPCOST_TALENT_PICKLOCK_1,0)	,DIA_Fingers_Lehrer_Lockpick);
-	Info_AddChoice		(DIA_Fingers_Lehrer,"Я хочу научиться передвигаться без шума. ",DIA_Fingers_Lehrer_Schleichen);
+	Info_AddChoice		(DIA_Fingers_Lehrer,"РЇ С…РѕС‡Сѓ РЅР°СѓС‡РёС‚СЊСЃСЏ РїРµСЂРµРґРІРёРіР°С‚СЊСЃСЏ Р±РµР· С€СѓРјР°. ",DIA_Fingers_Lehrer_Schleichen);
 };
 
 
 func void DIA_Fingers_Lehrer_Schleichen()
 {
-	AI_Output (other, self,"DIA_Fingers_Lehrer_Schleichen_15_00"); //Я хочу научиться передвигаться без шума. 
-	AI_Output (self, other,"DIA_Fingers_Lehrer_Schleichen_05_01"); //Скажу без ложной скромности, что я - один из лучших воров, которых забрасывали в эту колонию.
-	AI_Output (self, other,"DIA_Fingers_Lehrer_Schleichen_05_02"); //Но когда речь идет об обучении искусству красться, тебе лучше обратиться к Кавалорну.
+	AI_Output (other, self,"DIA_Fingers_Lehrer_Schleichen_15_00"); //РЇ С…РѕС‡Сѓ РЅР°СѓС‡РёС‚СЊСЃСЏ РїРµСЂРµРґРІРёРіР°С‚СЊСЃСЏ Р±РµР· С€СѓРјР°. 
+	AI_Output (self, other,"DIA_Fingers_Lehrer_Schleichen_05_01"); //РЎРєР°Р¶Сѓ Р±РµР· Р»РѕР¶РЅРѕР№ СЃРєСЂРѕРјРЅРѕСЃС‚Рё, С‡С‚Рѕ СЏ - РѕРґРёРЅ РёР· Р»СѓС‡С€РёС… РІРѕСЂРѕРІ, РєРѕС‚РѕСЂС‹С… Р·Р°Р±СЂР°СЃС‹РІР°Р»Рё РІ СЌС‚Сѓ РєРѕР»РѕРЅРёСЋ.
+	AI_Output (self, other,"DIA_Fingers_Lehrer_Schleichen_05_02"); //РќРѕ РєРѕРіРґР° СЂРµС‡СЊ РёРґРµС‚ РѕР± РѕР±СѓС‡РµРЅРёРё РёСЃРєСѓСЃСЃС‚РІСѓ РєСЂР°СЃС‚СЊСЃСЏ, С‚РµР±Рµ Р»СѓС‡С€Рµ РѕР±СЂР°С‚РёС‚СЊСЃСЏ Рє РљР°РІР°Р»РѕСЂРЅСѓ.
 	Fingers_Wherecavalorn = TRUE;
 };
 
 func void DIA_Fingers_Lehrer_Lockpick()
 {
-	AI_Output (other, self,"DIA_Fingers_Lehrer_Lockpick_15_00"); //Как научиться работать с отмычкой?
+	AI_Output (other, self,"DIA_Fingers_Lehrer_Lockpick_15_00"); //РљР°Рє РЅР°СѓС‡РёС‚СЊСЃСЏ СЂР°Р±РѕС‚Р°С‚СЊ СЃ РѕС‚РјС‹С‡РєРѕР№?
 	
 	if (B_GiveSkill(other, NPC_TALENT_PICKLOCK, 1, LPCOST_TALENT_PICKLOCK_1))
 	{
-		AI_Output (self, other,"DIA_Fingers_Lehrer_Lockpick_05_01"); //Хочешь узнать, а? Это не так уж сложно для новичка.
-		AI_Output (self, other,"DIA_Fingers_Lehrer_Lockpick_05_02"); //Прежде всего нужно следить за тем, чтобы не сломать отмычку.
-		AI_Output (self, other,"DIA_Fingers_Lehrer_Lockpick_05_03"); //В будущем, когда у тебя будет побольше терпения и опыта, поймешь, что куча отмычек тебе просто не нужна.
+		AI_Output (self, other,"DIA_Fingers_Lehrer_Lockpick_05_01"); //РҐРѕС‡РµС€СЊ СѓР·РЅР°С‚СЊ, Р°? Р­С‚Рѕ РЅРµ С‚Р°Рє СѓР¶ СЃР»РѕР¶РЅРѕ РґР»СЏ РЅРѕРІРёС‡РєР°.
+		AI_Output (self, other,"DIA_Fingers_Lehrer_Lockpick_05_02"); //РџСЂРµР¶РґРµ РІСЃРµРіРѕ РЅСѓР¶РЅРѕ СЃР»РµРґРёС‚СЊ Р·Р° С‚РµРј, С‡С‚РѕР±С‹ РЅРµ СЃР»РѕРјР°С‚СЊ РѕС‚РјС‹С‡РєСѓ.
+		AI_Output (self, other,"DIA_Fingers_Lehrer_Lockpick_05_03"); //Р’ Р±СѓРґСѓС‰РµРј, РєРѕРіРґР° Сѓ С‚РµР±СЏ Р±СѓРґРµС‚ РїРѕР±РѕР»СЊС€Рµ С‚РµСЂРїРµРЅРёСЏ Рё РѕРїС‹С‚Р°, РїРѕР№РјРµС€СЊ, С‡С‚Рѕ РєСѓС‡Р° РѕС‚РјС‹С‡РµРє С‚РµР±Рµ РїСЂРѕСЃС‚Рѕ РЅРµ РЅСѓР¶РЅР°.
 	};
 };
 
 func void DIA_Fingers_Lehrer_Lockpick2()
 {
-	AI_Output (other, self,"DIA_Fingers_Lehrer_Lockpick2_15_00"); //Работа взломщика мне по душе. Я хочу стать экспертом!
+	AI_Output (other, self,"DIA_Fingers_Lehrer_Lockpick2_15_00"); //Р Р°Р±РѕС‚Р° РІР·Р»РѕРјС‰РёРєР° РјРЅРµ РїРѕ РґСѓС€Рµ. РЇ С…РѕС‡Сѓ СЃС‚Р°С‚СЊ СЌРєСЃРїРµСЂС‚РѕРј!
 	
 	if (B_GiveSkill(other, NPC_TALENT_PICKLOCK, 2, LPCOST_TALENT_PICKLOCK_2))
 	{
-		AI_Output (self, other,"DIA_Fingers_Lehrer_Lockpick2_05_01"); //Когда поднаберешься опыта, начнешь чувствовать момент, когда отмычка готова вот-вот сломаться. У нее тогда звук меняется!
-		AI_Output (self, other,"DIA_Fingers_Lehrer_Lockpick2_05_02"); //Думаю, у тебя получится. Приучай себя вслушиваться в тихое пощелкивание замка, и в будущем ты сбережешь себе кучу отмычек.
-		AI_Output (self, other,"DIA_Fingers_Lehrer_Lockpick2_05_03"); //У настоящего профессионала всегда есть шанс открыть сундук, не испортив при этом инструмент.
+		AI_Output (self, other,"DIA_Fingers_Lehrer_Lockpick2_05_01"); //РљРѕРіРґР° РїРѕРґРЅР°Р±РµСЂРµС€СЊСЃСЏ РѕРїС‹С‚Р°, РЅР°С‡РЅРµС€СЊ С‡СѓРІСЃС‚РІРѕРІР°С‚СЊ РјРѕРјРµРЅС‚, РєРѕРіРґР° РѕС‚РјС‹С‡РєР° РіРѕС‚РѕРІР° РІРѕС‚-РІРѕС‚ СЃР»РѕРјР°С‚СЊСЃСЏ. РЈ РЅРµРµ С‚РѕРіРґР° Р·РІСѓРє РјРµРЅСЏРµС‚СЃСЏ!
+		AI_Output (self, other,"DIA_Fingers_Lehrer_Lockpick2_05_02"); //Р”СѓРјР°СЋ, Сѓ С‚РµР±СЏ РїРѕР»СѓС‡РёС‚СЃСЏ. РџСЂРёСѓС‡Р°Р№ СЃРµР±СЏ РІСЃР»СѓС€РёРІР°С‚СЊСЃСЏ РІ С‚РёС…РѕРµ РїРѕС‰РµР»РєРёРІР°РЅРёРµ Р·Р°РјРєР°, Рё РІ Р±СѓРґСѓС‰РµРј С‚С‹ СЃР±РµСЂРµР¶РµС€СЊ СЃРµР±Рµ РєСѓС‡Сѓ РѕС‚РјС‹С‡РµРє.
+		AI_Output (self, other,"DIA_Fingers_Lehrer_Lockpick2_05_03"); //РЈ РЅР°СЃС‚РѕСЏС‰РµРіРѕ РїСЂРѕС„РµСЃСЃРёРѕРЅР°Р»Р° РІСЃРµРіРґР° РµСЃС‚СЊ С€Р°РЅСЃ РѕС‚РєСЂС‹С‚СЊ СЃСѓРЅРґСѓРє, РЅРµ РёСЃРїРѕСЂС‚РёРІ РїСЂРё СЌС‚РѕРј РёРЅСЃС‚СЂСѓРјРµРЅС‚.
 	};
 };
 
 func void DIA_Fingers_Lehrer_Pickpocket()
 {
-	AI_Output (other, self,"DIA_Fingers_Lehrer_PICKPOCKET_15_00"); //Я хочу стать опытным карманником.
+	AI_Output (other, self,"DIA_Fingers_Lehrer_PICKPOCKET_15_00"); //РЇ С…РѕС‡Сѓ СЃС‚Р°С‚СЊ РѕРїС‹С‚РЅС‹Рј РєР°СЂРјР°РЅРЅРёРєРѕРј.
 	if (Npc_GetTalentSkill(other, NPC_TALENT_SNEAK) == 1)
 	{
 		if (B_GiveSkill(other, NPC_TALENT_PICKPOCKET, 1, LPCOST_TALENT_PICKPOCKET_1))
 		{
-			AI_Output (self, other,"DIA_Fingers_Lehrer_PICKPOCKET_05_01"); //Собираешься избавлять народ от его сбережений? Ладно.
-			AI_Output (self, other,"DIA_Fingers_Lehrer_PICKPOCKET_05_02"); //Я помогу улучшить твои навыки, но шанс, что тебя поймают, все равно велик.
-			AI_Output (self, other,"DIA_Fingers_Lehrer_PICKPOCKET_05_03"); //Рисковать стоит лишь в том случае, когда кроме твоей жертвы никого нет поблизости.
-			AI_Output (self, other,"DIA_Fingers_Lehrer_PICKPOCKET_05_04"); //Только эксперт может шарить по карманам так, что человек ничего не заметит.
+			AI_Output (self, other,"DIA_Fingers_Lehrer_PICKPOCKET_05_01"); //РЎРѕР±РёСЂР°РµС€СЊСЃСЏ РёР·Р±Р°РІР»СЏС‚СЊ РЅР°СЂРѕРґ РѕС‚ РµРіРѕ СЃР±РµСЂРµР¶РµРЅРёР№? Р›Р°РґРЅРѕ.
+			AI_Output (self, other,"DIA_Fingers_Lehrer_PICKPOCKET_05_02"); //РЇ РїРѕРјРѕРіСѓ СѓР»СѓС‡С€РёС‚СЊ С‚РІРѕРё РЅР°РІС‹РєРё, РЅРѕ С€Р°РЅСЃ, С‡С‚Рѕ С‚РµР±СЏ РїРѕР№РјР°СЋС‚, РІСЃРµ СЂР°РІРЅРѕ РІРµР»РёРє.
+			AI_Output (self, other,"DIA_Fingers_Lehrer_PICKPOCKET_05_03"); //Р РёСЃРєРѕРІР°С‚СЊ СЃС‚РѕРёС‚ Р»РёС€СЊ РІ С‚РѕРј СЃР»СѓС‡Р°Рµ, РєРѕРіРґР° РєСЂРѕРјРµ С‚РІРѕРµР№ Р¶РµСЂС‚РІС‹ РЅРёРєРѕРіРѕ РЅРµС‚ РїРѕР±Р»РёР·РѕСЃС‚Рё.
+			AI_Output (self, other,"DIA_Fingers_Lehrer_PICKPOCKET_05_04"); //РўРѕР»СЊРєРѕ СЌРєСЃРїРµСЂС‚ РјРѕР¶РµС‚ С€Р°СЂРёС‚СЊ РїРѕ РєР°СЂРјР°РЅР°Рј С‚Р°Рє, С‡С‚Рѕ С‡РµР»РѕРІРµРє РЅРёС‡РµРіРѕ РЅРµ Р·Р°РјРµС‚РёС‚.
 		};
 	}
 	else
 	{
-		AI_Output (self, other,"DIA_Fingers_lehrer_Pickpocket_05_05"); //Забудь об этом! Ты никогда не станешь опытным вором, пока не научишься бесшумно передвигаться.
+		AI_Output (self, other,"DIA_Fingers_lehrer_Pickpocket_05_05"); //Р—Р°Р±СѓРґСЊ РѕР± СЌС‚РѕРј! РўС‹ РЅРёРєРѕРіРґР° РЅРµ СЃС‚Р°РЅРµС€СЊ РѕРїС‹С‚РЅС‹Рј РІРѕСЂРѕРј, РїРѕРєР° РЅРµ РЅР°СѓС‡РёС€СЊСЃСЏ Р±РµСЃС€СѓРјРЅРѕ РїРµСЂРµРґРІРёРіР°С‚СЊСЃСЏ.
 	};
 };
 
 func void DIA_Fingers_Lehrer_Pickpocket2()
 {
-	AI_Output (other, self,"DIA_Fingers_Lehrer_Pickpocket2_15_00"); //Работа карманника мне по душе. Я хочу стать экспертом!
+	AI_Output (other, self,"DIA_Fingers_Lehrer_Pickpocket2_15_00"); //Р Р°Р±РѕС‚Р° РєР°СЂРјР°РЅРЅРёРєР° РјРЅРµ РїРѕ РґСѓС€Рµ. РЇ С…РѕС‡Сѓ СЃС‚Р°С‚СЊ СЌРєСЃРїРµСЂС‚РѕРј!
 	
 	if (B_GiveSkill(other, NPC_TALENT_PICKPOCKET, 2, LPCOST_TALENT_PICKPOCKET_2))
 	{		
-		AI_Output (self, other,"DIA_Fingers_Lehrer_Pickpocket2_05_01"); //Думаю, ты уже достаточно опытен, чтобы постичь последние тонкости этого ремесла.
-		AI_Output (self, other,"DIA_Fingers_Lehrer_Pickpocket2_05_02"); //Но ты должен знать, что время от времени попадаются даже лучшие из лучших.
-		AI_Output (self, other,"DIA_Fingers_Lehrer_Pickpocket2_05_03"); //Береги себя.
+		AI_Output (self, other,"DIA_Fingers_Lehrer_Pickpocket2_05_01"); //Р”СѓРјР°СЋ, С‚С‹ СѓР¶Рµ РґРѕСЃС‚Р°С‚РѕС‡РЅРѕ РѕРїС‹С‚РµРЅ, С‡С‚РѕР±С‹ РїРѕСЃС‚РёС‡СЊ РїРѕСЃР»РµРґРЅРёРµ С‚РѕРЅРєРѕСЃС‚Рё СЌС‚РѕРіРѕ СЂРµРјРµСЃР»Р°.
+		AI_Output (self, other,"DIA_Fingers_Lehrer_Pickpocket2_05_02"); //РќРѕ С‚С‹ РґРѕР»Р¶РµРЅ Р·РЅР°С‚СЊ, С‡С‚Рѕ РІСЂРµРјСЏ РѕС‚ РІСЂРµРјРµРЅРё РїРѕРїР°РґР°СЋС‚СЃСЏ РґР°Р¶Рµ Р»СѓС‡С€РёРµ РёР· Р»СѓС‡С€РёС….
+		AI_Output (self, other,"DIA_Fingers_Lehrer_Pickpocket2_05_03"); //Р‘РµСЂРµРіРё СЃРµР±СЏ.
 	};
 };
 
@@ -206,7 +206,7 @@ INSTANCE DIA_Fingers_WhereCavalorn (C_INFO)
 	condition		= DIA_Fingers_WhereCavalorn_Condition;
 	information		= DIA_Fingers_WhereCavalorn_Info;
 	permanent		= 1;
-	description		= "Где мне искать Кавалорна?"; 
+	description		= "Р“РґРµ РјРЅРµ РёСЃРєР°С‚СЊ РљР°РІР°Р»РѕСЂРЅР°?"; 
 };
 
 FUNC INT DIA_Fingers_WhereCavalorn_Condition()
@@ -219,11 +219,11 @@ FUNC INT DIA_Fingers_WhereCavalorn_Condition()
 
 FUNC VOID DIA_Fingers_WhereCavalorn_Info()
 {
-	AI_Output (other, self,"DIA_Fingers_WhereCavalorn_15_00"); //Где мне искать Кавалорна?
-	AI_Output (self, other,"DIA_Fingers_WhereCavalorn_05_01"); //Он промышляет не здесь. Ты найдешь его на пути к Новому Лагерю. К западу от Старого Лагеря, там, где широкое ущелье.
-	AI_Output (self, other,"DIA_Fingers_WhereCavalorn_05_02"); //В этом ущелье есть старая хижина лесорубов. Он живет там.
+	AI_Output (other, self,"DIA_Fingers_WhereCavalorn_15_00"); //Р“РґРµ РјРЅРµ РёСЃРєР°С‚СЊ РљР°РІР°Р»РѕСЂРЅР°?
+	AI_Output (self, other,"DIA_Fingers_WhereCavalorn_05_01"); //РћРЅ РїСЂРѕРјС‹С€Р»СЏРµС‚ РЅРµ Р·РґРµСЃСЊ. РўС‹ РЅР°Р№РґРµС€СЊ РµРіРѕ РЅР° РїСѓС‚Рё Рє РќРѕРІРѕРјСѓ Р›Р°РіРµСЂСЋ. Рљ Р·Р°РїР°РґСѓ РѕС‚ РЎС‚Р°СЂРѕРіРѕ Р›Р°РіРµСЂСЏ, С‚Р°Рј, РіРґРµ С€РёСЂРѕРєРѕРµ СѓС‰РµР»СЊРµ.
+	AI_Output (self, other,"DIA_Fingers_WhereCavalorn_05_02"); //Р’ СЌС‚РѕРј СѓС‰РµР»СЊРµ РµСЃС‚СЊ СЃС‚Р°СЂР°СЏ С…РёР¶РёРЅР° Р»РµСЃРѕСЂСѓР±РѕРІ. РћРЅ Р¶РёРІРµС‚ С‚Р°Рј.
 	
-	B_LogEntry( GE_TeacherOW,"Кавалорн может научить меня подкрадываться. Его хижина находится в каньоне к западу от Старого Лагеря.");
+	B_LogEntry( GE_TeacherOW,"РљР°РІР°Р»РѕСЂРЅ РјРѕР¶РµС‚ РЅР°СѓС‡РёС‚СЊ РјРµРЅСЏ РїРѕРґРєСЂР°РґС‹РІР°С‚СЊСЃСЏ. Р•РіРѕ С…РёР¶РёРЅР° РЅР°С…РѕРґРёС‚СЃСЏ РІ РєР°РЅСЊРѕРЅРµ Рє Р·Р°РїР°РґСѓ РѕС‚ РЎС‚Р°СЂРѕРіРѕ Р›Р°РіРµСЂСЏ.");
 };
 
 // **************************************************
@@ -239,7 +239,7 @@ INSTANCE DIA_Fingers_Learnt (C_INFO)
 	condition		= DIA_Fingers_Learnt_Condition;
 	information		= DIA_Fingers_Learnt_Info;
 	permanent		= 1;
-	description		= "Ты ведь замолвишь за меня словечко перед Диего?"; 
+	description		= "РўС‹ РІРµРґСЊ Р·Р°РјРѕР»РІРёС€СЊ Р·Р° РјРµРЅСЏ СЃР»РѕРІРµС‡РєРѕ РїРµСЂРµРґ Р”РёРµРіРѕ?"; 
 };
 
 FUNC INT DIA_Fingers_Learnt_Condition()
@@ -253,26 +253,26 @@ FUNC INT DIA_Fingers_Learnt_Condition()
 
 FUNC VOID DIA_Fingers_Learnt_Info()
 {
-	AI_Output (other, self,"DIA_Fingers_Learnt_15_00"); //Ты ведь замолвишь за меня словечко перед Диего?
+	AI_Output (other, self,"DIA_Fingers_Learnt_15_00"); //РўС‹ РІРµРґСЊ Р·Р°РјРѕР»РІРёС€СЊ Р·Р° РјРµРЅСЏ СЃР»РѕРІРµС‡РєРѕ РїРµСЂРµРґ Р”РёРµРіРѕ?
 
 	if ( Npc_GetTalentSkill(other, NPC_TALENT_PICKLOCK)+Npc_GetTalentSkill(other, NPC_TALENT_PICKPOCKET)+Npc_GetTalentSkill(other, NPC_TALENT_SNEAK)	> 0)
 	{
-		AI_Output (self, other,"DIA_Fingers_Learnt_05_01"); //Да. Ты уже многому научился и сможешь принести пользу этому Лагерю.
-		AI_Output (self, other,"DIA_Fingers_Learnt_05_02"); //Нам нужны опытные воры. Я поддержу тебя.
+		AI_Output (self, other,"DIA_Fingers_Learnt_05_01"); //Р”Р°. РўС‹ СѓР¶Рµ РјРЅРѕРіРѕРјСѓ РЅР°СѓС‡РёР»СЃСЏ Рё СЃРјРѕР¶РµС€СЊ РїСЂРёРЅРµСЃС‚Рё РїРѕР»СЊР·Сѓ СЌС‚РѕРјСѓ Р›Р°РіРµСЂСЋ.
+		AI_Output (self, other,"DIA_Fingers_Learnt_05_02"); //РќР°Рј РЅСѓР¶РЅС‹ РѕРїС‹С‚РЅС‹Рµ РІРѕСЂС‹. РЇ РїРѕРґРґРµСЂР¶Сѓ С‚РµР±СЏ.
 		Fingers_Learnt = LOG_SUCCESS;
 		
 		B_GiveXP (XP_Fingerstrain);
-		B_LogEntry( CH1_JoinOC,"Фингерс остался доволен тем, как я справился.");
+		B_LogEntry( CH1_JoinOC,"Р¤РёРЅРіРµСЂСЃ РѕСЃС‚Р°Р»СЃСЏ РґРѕРІРѕР»РµРЅ С‚РµРј, РєР°Рє СЏ СЃРїСЂР°РІРёР»СЃСЏ.");
 	}
 	else
 	{
-		AI_Output (self, other,"DIA_Fingers_Learnt_05_03"); //Ну...
-		AI_Output (self, other,"DIA_Fingers_Learnt_05_04"); //Если ты докажешь, что чего-то стоишь как вор, мы найдем для тебя дело!
-		AI_Output (other, self,"DIA_Fingers_Learnt_15_05"); //Как это сделать?
-		AI_Output (self, other,"DIA_Fingers_Learnt_05_06"); //Учись воровскому делу! Когда у тебя будет больше опыта в искусстве передвигаться бесшумно, в работе с отмычкой и в деле карманника, я поддержу тебя.
+		AI_Output (self, other,"DIA_Fingers_Learnt_05_03"); //РќСѓ...
+		AI_Output (self, other,"DIA_Fingers_Learnt_05_04"); //Р•СЃР»Рё С‚С‹ РґРѕРєР°Р¶РµС€СЊ, С‡С‚Рѕ С‡РµРіРѕ-С‚Рѕ СЃС‚РѕРёС€СЊ РєР°Рє РІРѕСЂ, РјС‹ РЅР°Р№РґРµРј РґР»СЏ С‚РµР±СЏ РґРµР»Рѕ!
+		AI_Output (other, self,"DIA_Fingers_Learnt_15_05"); //РљР°Рє СЌС‚Рѕ СЃРґРµР»Р°С‚СЊ?
+		AI_Output (self, other,"DIA_Fingers_Learnt_05_06"); //РЈС‡РёСЃСЊ РІРѕСЂРѕРІСЃРєРѕРјСѓ РґРµР»Сѓ! РљРѕРіРґР° Сѓ С‚РµР±СЏ Р±СѓРґРµС‚ Р±РѕР»СЊС€Рµ РѕРїС‹С‚Р° РІ РёСЃРєСѓСЃСЃС‚РІРµ РїРµСЂРµРґРІРёРіР°С‚СЊСЃСЏ Р±РµСЃС€СѓРјРЅРѕ, РІ СЂР°Р±РѕС‚Рµ СЃ РѕС‚РјС‹С‡РєРѕР№ Рё РІ РґРµР»Рµ РєР°СЂРјР°РЅРЅРёРєР°, СЏ РїРѕРґРґРµСЂР¶Сѓ С‚РµР±СЏ.
 		Fingers_Learnt = LOG_RUNNING;
 		
-		B_LogEntry( CH1_JoinOC,"Фингерс выскажется в мою пользу, как только я овладею одним из воровских умений.");
+		B_LogEntry( CH1_JoinOC,"Р¤РёРЅРіРµСЂСЃ РІС‹СЃРєР°Р¶РµС‚СЃСЏ РІ РјРѕСЋ РїРѕР»СЊР·Сѓ, РєР°Рє С‚РѕР»СЊРєРѕ СЏ РѕРІР»Р°РґРµСЋ РѕРґРЅРёРј РёР· РІРѕСЂРѕРІСЃРєРёС… СѓРјРµРЅРёР№.");
 	};
 };
 

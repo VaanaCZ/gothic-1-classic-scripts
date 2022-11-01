@@ -3,14 +3,14 @@
 **		C_Functions.D													**
 **		=============													**
 **																		**
-**		Enthält eine Reihe von Checks für die Master-AI					**
+**		EnthÐ´lt eine Reihe von Checks fÑŒr die Master-AI					**
 **																		**
 *************************************************************************/
 
 //////////////////////////////////////////////////////////////////////////
 //	C_AmIStronger
 //	=============
-//	Überfrüft, ob der NSC 'slf' stärker als der NSC 'oth' ist. Diese
+//	Ð¬berfrÑŒft, ob der NSC 'slf' stÐ´rker als der NSC 'oth' ist. Diese
 //	Funktion ist genau das gegenteil von C_AmIWeaker().
 //////////////////////////////////////////////////////////////////////////
 func int C_AmIStronger (var C_Npc slf, var C_Npc oth)
@@ -32,7 +32,7 @@ func int C_AmIStronger (var C_Npc slf, var C_Npc oth)
 //////////////////////////////////////////////////////////////////////////
 //	C_AmIWeaker
 //	===========
-//	Überfrüft, ob der NSC 'slf' schwächer als der NSC 'oth' ist. Diese
+//	Ð¬berfrÑŒft, ob der NSC 'slf' schwÐ´cher als der NSC 'oth' ist. Diese
 //	Funktion ist genau das gegenteil von C_AmIStronger().
 //////////////////////////////////////////////////////////////////////////
 func int C_AmIWeaker (var C_Npc slf, var C_Npc oth)
@@ -54,8 +54,8 @@ func int C_AmIWeaker (var C_Npc slf, var C_Npc oth)
 //////////////////////////////////////////////////////////////////////////
 //	C_NpcIsInFightMode
 //	==================
-//	Überfrüft, ob der SC/NSC eine Waffe bzw. einen aggresiven Zauber 
-//	in der Hand hält. (Durchgangswachen interpretieren auch die sonst
+//	Ð¬berfrÑŒft, ob der SC/NSC eine Waffe bzw. einen aggresiven Zauber 
+//	in der Hand hÐ´lt. (Durchgangswachen interpretieren auch die sonst
 //	neutralen Zauber CHARME und SLEEP als feindlich)
 //////////////////////////////////////////////////////////////////////////
 func int C_NpcIsInFightMode (var C_NPC oth)
@@ -90,8 +90,8 @@ func int C_NpcIsInFightMode (var C_NPC oth)
 //////////////////////////////////////////////////////////////////////////
 //	C_NpcIsInNeutralSpellMode
 //	=========================
-//	Überfrüft, ob der SC/NSC einen neutralen oder benevolenten Zauber 
-//	in der Hand hält.
+//	Ð¬berfrÑŒft, ob der SC/NSC einen neutralen oder benevolenten Zauber 
+//	in der Hand hÐ´lt.
 //////////////////////////////////////////////////////////////////////////
 func int C_NpcIsInNeutralSpellMode (var C_NPC oth)
 {
@@ -203,7 +203,7 @@ func int C_NpcIsMonsterMage(var C_NPC slf)
 	PrintDebugNpc		(PD_ZS_DETAIL,	"C_NpcIsMonsterMage");
 
 	if ((slf.fight_tactic==FAI_HUMAN_MAGE)
-	&&	((slf.guild==GIL_DEMON		) 	||			// Skelett-Mage (hat aus SPECIES.D-technischen Gründen Dämonen-Gilde!)
+	&&	((slf.guild==GIL_DEMON		) 	||			// Skelett-Mage (hat aus SPECIES.D-technischen GrÑŒnden DÐ´monen-Gilde!)
 		 (slf.guild==GIL_ORCSHAMAN	)	||			// Ork-Shamane
 		 (slf.guild==GIL_UNDEADORC	)	||			// Untoter Ork-Priester
 		 (slf.guild==GIL_GOLEM		))		)		// Eisgolem der einen "Ice-Cube"-Angriff hat
@@ -245,9 +245,9 @@ func int  Npc_GetTempAttitude (var C_NPC slf, VAR C_NPC oth)
 //
 //		if (Npc_GetBodyState(self) == BS_SIT) 
 //
-//	werden false ergeben, wenn zusätzlich zu BS_SIT auch noch
+//	werden false ergeben, wenn zusÐ´tzlich zu BS_SIT auch noch
 //	BS_MOD_BURNING oder andere gesetzt sind (Charakter sitzt UND brennt)
-//	Abfragen auf Bodystates müssen also so aussehen:
+//	Abfragen auf Bodystates mÑŒssen also so aussehen:
 //
 //		if (C_BodyStateContains(self,BS_SIT))
 //		
@@ -261,8 +261,8 @@ func int  	C_BodyStateContains	(var C_NPC slf, var int bodystate)
 	PrintDebugInt	(PD_ZS_DETAIL, "Npc_GetBodyState(slf): ", Npc_GetBodyState(slf));
 	PrintDebugInt	(PD_ZS_DETAIL, "Npc_GetBodyState(slf)&(BS_MAX|BS_FLAG_INTERRUPTABLE|BS_FLAG_FREEHANDS): ", Npc_GetBodyState(slf)&(BS_MAX|BS_FLAG_INTERRUPTABLE|BS_FLAG_FREEHANDS));
 
-	//SN: Finger weg von dieser Formel!!! Ich weiß genau was ich tue!
-	if ((Npc_GetBodyState(slf)&(BS_MAX|BS_FLAG_INTERRUPTABLE|BS_FLAG_FREEHANDS)) == (bodystate&(BS_MAX|BS_FLAG_INTERRUPTABLE|BS_FLAG_FREEHANDS)))			// sowohl bei der Abfrage als auch beim Vergleichswert die höhren Bits ausmaskieren!
+	//SN: Finger weg von dieser Formel!!! Ich weiÐ¯ genau was ich tue!
+	if ((Npc_GetBodyState(slf)&(BS_MAX|BS_FLAG_INTERRUPTABLE|BS_FLAG_FREEHANDS)) == (bodystate&(BS_MAX|BS_FLAG_INTERRUPTABLE|BS_FLAG_FREEHANDS)))			// sowohl bei der Abfrage als auch beim Vergleichswert die hÑ†hren Bits ausmaskieren!
 	{																// ...ja!
 		PrintDebugNpc( PD_ZS_DETAIL, "...true" );
 		return TRUE;
@@ -279,7 +279,7 @@ func int  	C_BodyStateContains	(var C_NPC slf, var int bodystate)
 //	=================
 //	Ermittelt, ob der NSC vom Typ FRIEND und 'other' der Spieler ist
 //	Ist 'other' nicht der Spieler, so ist es auch unwichtig ob der
-//	NSC einen NPCTYPE_FRIEND hat und es wird FALSE zurückgegeben.
+//	NSC einen NPCTYPE_FRIEND hat und es wird FALSE zurÑŒckgegeben.
 //////////////////////////////////////////////////////////////////////////
 func int 	C_NpcTypeIsFriend(var C_NPC slf, var C_NPC oth)
 {
@@ -329,7 +329,7 @@ func int 	C_NpcIsGuard(var C_NPC slf)
 //	C_NpcIsGuardArcher
 //	==================
 //	Ermittelt, ob der NSC eine Wache ist, die nur im Fernkampf-Modus
-//	kämpfen und dabei den eigenen Posten nicht verlassen soll
+//	kÐ´mpfen und dabei den eigenen Posten nicht verlassen soll
 //////////////////////////////////////////////////////////////////////////
 func int 	C_NpcIsGuardArcher(var C_NPC slf)
 {
@@ -354,7 +354,7 @@ func int 	C_NpcIsGuardArcher(var C_NPC slf)
 //////////////////////////////////////////////////////////////////////////
 //	C_NpcIsBoss
 //	===========
-//	Ermittelt, ob der NSC zu einer der BOSS-Gilden gehört:
+//	Ermittelt, ob der NSC zu einer der BOSS-Gilden gehÑ†rt:
 //	- Erzbarone
 //	- Feuermagier
 //	- Wassermagier
@@ -382,9 +382,9 @@ func int C_NpcIsBoss(var C_NPC slf)
 //////////////////////////////////////////////////////////////////////////
 //	C_NpcIsWorker
 //	=============
-//	Ermittelt, ob der NSC zu einer der Arbeiter-Gilden gehört:
+//	Ermittelt, ob der NSC zu einer der Arbeiter-Gilden gehÑ†rt:
 //	- Altes Lager: Buddler, Schatten
-//	- Neues Lager: Schürfer, Bauern, Banditen
+//	- Neues Lager: SchÑŒrfer, Bauern, Banditen
 //	- Sektentempel: Novizen
 //////////////////////////////////////////////////////////////////////////
 func int C_NpcIsWorker(var C_NPC slf)
@@ -411,7 +411,7 @@ func int C_NpcIsWorker(var C_NPC slf)
 //////////////////////////////////////////////////////////////////////////
 //	C_NpcIsMage
 //	===========
-//	Ermittelt, ob der NSC über Magie verfügt
+//	Ermittelt, ob der NSC ÑŒber Magie verfÑŒgt
 //////////////////////////////////////////////////////////////////////////
 func int C_NpcIsMage(var C_NPC slf)
 {
@@ -432,7 +432,7 @@ func int C_NpcIsMage(var C_NPC slf)
 //////////////////////////////////////////////////////////////////////////
 //	C_NpcBelongsToOldCamp
 //	=====================
-//	Ermittelt, ob der NSC einer Gilde des Alten Lagers angehört!
+//	Ermittelt, ob der NSC einer Gilde des Alten Lagers angehÑ†rt!
 //////////////////////////////////////////////////////////////////////////
 func int C_NpcBelongsToOldCamp	(VAR C_NPC slf)
 {
@@ -457,7 +457,7 @@ func int C_NpcBelongsToOldCamp	(VAR C_NPC slf)
 //////////////////////////////////////////////////////////////////////////
 //	C_NpcBelongsToNewCamp
 //	=====================
-//	Ermittelt, ob der NSC einer Gilde des Neuen Lagers angehört!
+//	Ermittelt, ob der NSC einer Gilde des Neuen Lagers angehÑ†rt!
 //////////////////////////////////////////////////////////////////////////
 func int C_NpcBelongsToNewCamp	(VAR C_NPC slf)
 {
@@ -482,7 +482,7 @@ func int C_NpcBelongsToNewCamp	(VAR C_NPC slf)
 //////////////////////////////////////////////////////////////////////////
 //	C_NpcBelongsToPsiCamp
 //	=====================
-//	Ermittelt, ob der NSC einer Gilde des Sektenlagers angehört!
+//	Ermittelt, ob der NSC einer Gilde des Sektenlagers angehÑ†rt!
 //////////////////////////////////////////////////////////////////////////
 func int C_NpcBelongsToPsiCamp	(VAR C_NPC slf)
 {
@@ -505,7 +505,7 @@ func int C_NpcBelongsToPsiCamp	(VAR C_NPC slf)
 //////////////////////////////////////////////////////////////////////////
 //	C_ChargeWasAttacked
 //	===================
-//	Ermittelt, ob ein Schützling der NSC-Wache attackiert wurde.
+//	Ermittelt, ob ein SchÑŒtzling der NSC-Wache attackiert wurde.
 //////////////////////////////////////////////////////////////////////////
 func int C_ChargeWasAttacked(var C_NPC guard, var C_NPC charge, var C_NPC attacker)
 {
@@ -533,7 +533,7 @@ func int C_ChargeWasAttacked(var C_NPC guard, var C_NPC charge, var C_NPC attack
 //////////////////////////////////////////////////////////////////////////
 //	C_NpcHasSpell
 //	=============
-//	Überfrüft, ob der angegebene NSC den Zauberspruch 'spell'
+//	Ð¬berfrÑŒft, ob der angegebene NSC den Zauberspruch 'spell'
 //	im Inventory hat. 
 //////////////////////////////////////////////////////////////////////////
 func int	C_NpcHasSpell(var C_NPC slf, var int spell)
@@ -544,7 +544,7 @@ func int	C_NpcHasSpell(var C_NPC slf, var int spell)
 //////////////////////////////////////////////////////////////////////////
 //	C_NpcHasAmmo
 //	============
-//	Überfrüft, ob der angegebene NSC Munition der angegebenen Kategorie
+//	Ð¬berfrÑŒft, ob der angegebene NSC Munition der angegebenen Kategorie
 //	im Inventory hat. 
 //	->	'category' kann sein : ITAMARROW oder ITAMBOLT
 //	->	return: Anzahl der gefundenen Geschosse (0, wenn keine gefunden)
@@ -558,7 +558,7 @@ func int	C_NpcHasAmmo(var C_NPC slf, var int category)
 	//-------- Sicherheitsabfrage --------
 	if (category!= ITAMARROW && category!=ITAMBOLT)
 	{
-		PrintDebugNpc	(PD_ZS_DETAIL, "...ungültige Kategorie !!!");
+		PrintDebugNpc	(PD_ZS_DETAIL, "...ungÑŒltige Kategorie !!!");
 		return 0;
 	};
 
@@ -641,9 +641,9 @@ func int	C_NpcHasAmmo(var C_NPC slf, var int category)
 //////////////////////////////////////////////////////////////////////////
 //	C_NpcHasWeapon
 //	==============
-//	Überfrüft, ob der angegebene NSC eine Waffe der angegebenen Kategorie
+//	Ð¬berfrÑŒft, ob der angegebene NSC eine Waffe der angegebenen Kategorie
 //	im Inventory hat. Wird nach einer Fernkampfwaffe gefragt, so wird
-//	nur "ja" zurückgegeben, wenn auch passende Munition vorhanden ist
+//	nur "ja" zurÑŒckgegeben, wenn auch passende Munition vorhanden ist
 //	- category kann sein : ITEM_KAT_NF oder ITEM_KAT_FF
 //////////////////////////////////////////////////////////////////////////
 func int	C_NpcHasWeapon(var C_NPC slf, var int category)
@@ -653,7 +653,7 @@ func int	C_NpcHasWeapon(var C_NPC slf, var int category)
 	//-------- Sicherheitsabfrage --------
 	if (category!= ITEM_KAT_NF && category!=ITEM_KAT_FF)
 	{
-		PrintDebugNpc	(PD_ZS_CHECK, "...ungültige Kategorie !!!");
+		PrintDebugNpc	(PD_ZS_CHECK, "...ungÑŒltige Kategorie !!!");
 		return FALSE;
 	};
 
@@ -784,7 +784,7 @@ func int	C_NpcHasWeapon(var C_NPC slf, var int category)
 //////////////////////////////////////////////////////////////////////////
 //	C_GetAttackReason
 //	=================
-//	Erfragt den Grund des Angriffs eines NSCs, damit später darauf 
+//	Erfragt den Grund des Angriffs eines NSCs, damit spÐ´ter darauf 
 //	abgefragt werden kann.
 //	Konstanten sind in AI_CONSTANTS.D zu finden
 //////////////////////////////////////////////////////////////////////////
@@ -798,7 +798,7 @@ func int C_GetAttackReason(var C_NPC slf)
 //////////////////////////////////////////////////////////////////////////
 //	C_OtherIsToleratedEnemy
 //	=======================
-//	Stellt fest, ob der feindliche NSC aus irgendwelchen Gründen
+//	Stellt fest, ob der feindliche NSC aus irgendwelchen GrÑŒnden
 //	zwar nicht angegriffen, wird.
 //////////////////////////////////////////////////////////////////////////
 func int C_OtherIsToleratedEnemy(var C_NPC slf, var C_NPC oth)

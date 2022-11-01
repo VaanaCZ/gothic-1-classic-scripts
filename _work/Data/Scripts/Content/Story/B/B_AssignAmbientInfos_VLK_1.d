@@ -14,7 +14,7 @@ INSTANCE Info_Vlk_1_EXIT(C_INFO)
 	condition	= Info_Vlk_1_EXIT_Condition;
 	information	= Info_Vlk_1_EXIT_Info;
 	permanent	= 1;
-	description = "ЗАКОНЧИТЬ";
+	description = "Р—РђРљРћРќР§РРўР¬";
 };                       
 
 FUNC INT Info_Vlk_1_EXIT_Condition()
@@ -37,7 +37,7 @@ INSTANCE Info_Vlk_1_EinerVonEuchWerden (C_INFO) // E1
 	condition	= Info_Vlk_1_EinerVonEuchWerden_Condition;
 	information	= Info_Vlk_1_EinerVonEuchWerden_Info;
 	permanent	= 1;
-	description = "Как мне присоединиться к этому Лагерю?";
+	description = "РљР°Рє РјРЅРµ РїСЂРёСЃРѕРµРґРёРЅРёС‚СЊСЃСЏ Рє СЌС‚РѕРјСѓ Р›Р°РіРµСЂСЋ?";
 };                       
 
 FUNC INT Info_Vlk_1_EinerVonEuchWerden_Condition()
@@ -50,9 +50,9 @@ FUNC INT Info_Vlk_1_EinerVonEuchWerden_Condition()
 
 FUNC VOID Info_Vlk_1_EinerVonEuchWerden_Info()
 {
-	AI_Output(other,self,"Info_Vlk_1_EinerVonEuchWerden_15_00"); //Как мне присоединиться к этому Лагерю?
-	AI_Output(self,other,"Info_Vlk_1_EinerVonEuchWerden_01_01"); //Это очень просто. Хватаешь кирку и отправляешься в шахту. Половину добытой руды придется отдать за защиту, ну а оставшейся как раз хватит на то, чтобы не протянуть ноги с голода. 
-	AI_Output(self,other,"Info_Vlk_1_EinerVonEuchWerden_01_02"); //Гомез заламывает за свои припасы просто грабительскую цену. Но все равно это лучше, чем целыми днями жевать рис, как это делают в Новом Лагере.
+	AI_Output(other,self,"Info_Vlk_1_EinerVonEuchWerden_15_00"); //РљР°Рє РјРЅРµ РїСЂРёСЃРѕРµРґРёРЅРёС‚СЊСЃСЏ Рє СЌС‚РѕРјСѓ Р›Р°РіРµСЂСЋ?
+	AI_Output(self,other,"Info_Vlk_1_EinerVonEuchWerden_01_01"); //Р­С‚Рѕ РѕС‡РµРЅСЊ РїСЂРѕСЃС‚Рѕ. РҐРІР°С‚Р°РµС€СЊ РєРёСЂРєСѓ Рё РѕС‚РїСЂР°РІР»СЏРµС€СЊСЃСЏ РІ С€Р°С…С‚Сѓ. РџРѕР»РѕРІРёРЅСѓ РґРѕР±С‹С‚РѕР№ СЂСѓРґС‹ РїСЂРёРґРµС‚СЃСЏ РѕС‚РґР°С‚СЊ Р·Р° Р·Р°С‰РёС‚Сѓ, РЅСѓ Р° РѕСЃС‚Р°РІС€РµР№СЃСЏ РєР°Рє СЂР°Р· С…РІР°С‚РёС‚ РЅР° С‚Рѕ, С‡С‚РѕР±С‹ РЅРµ РїСЂРѕС‚СЏРЅСѓС‚СЊ РЅРѕРіРё СЃ РіРѕР»РѕРґР°. 
+	AI_Output(self,other,"Info_Vlk_1_EinerVonEuchWerden_01_02"); //Р“РѕРјРµР· Р·Р°Р»Р°РјС‹РІР°РµС‚ Р·Р° СЃРІРѕРё РїСЂРёРїР°СЃС‹ РїСЂРѕСЃС‚Рѕ РіСЂР°Р±РёС‚РµР»СЊСЃРєСѓСЋ С†РµРЅСѓ. РќРѕ РІСЃРµ СЂР°РІРЅРѕ СЌС‚Рѕ Р»СѓС‡С€Рµ, С‡РµРј С†РµР»С‹РјРё РґРЅСЏРјРё Р¶РµРІР°С‚СЊ СЂРёСЃ, РєР°Рє СЌС‚Рѕ РґРµР»Р°СЋС‚ РІ РќРѕРІРѕРј Р›Р°РіРµСЂРµ.
 };
 
 // *************************************************************************
@@ -65,7 +65,7 @@ INSTANCE Info_Vlk_1_WichtigePersonen(C_INFO)
 	condition	= Info_Vlk_1_WichtigePersonen_Condition;
 	information	= Info_Vlk_1_WichtigePersonen_Info;
 	permanent	= 1;
-	description = "Кто здесь командует?";
+	description = "РљС‚Рѕ Р·РґРµСЃСЊ РєРѕРјР°РЅРґСѓРµС‚?";
 };                       
 
 FUNC INT Info_Vlk_1_WichtigePersonen_Condition()
@@ -75,8 +75,8 @@ FUNC INT Info_Vlk_1_WichtigePersonen_Condition()
 
 FUNC VOID Info_Vlk_1_WichtigePersonen_Info()
 {
-	AI_Output(other,self,"Info_Vlk_1_WichtigePersonen_15_00"); //Кто здесь главный?
-	AI_Output(self,other,"Info_Vlk_1_WichtigePersonen_01_01"); //Бароны рудника. Они наладили обмен с королем. Естественно, чем ты важнее, тем больше ты получаешь.
+	AI_Output(other,self,"Info_Vlk_1_WichtigePersonen_15_00"); //РљС‚Рѕ Р·РґРµСЃСЊ РіР»Р°РІРЅС‹Р№?
+	AI_Output(self,other,"Info_Vlk_1_WichtigePersonen_01_01"); //Р‘Р°СЂРѕРЅС‹ СЂСѓРґРЅРёРєР°. РћРЅРё РЅР°Р»Р°РґРёР»Рё РѕР±РјРµРЅ СЃ РєРѕСЂРѕР»РµРј. Р•СЃС‚РµСЃС‚РІРµРЅРЅРѕ, С‡РµРј С‚С‹ РІР°Р¶РЅРµРµ, С‚РµРј Р±РѕР»СЊС€Рµ С‚С‹ РїРѕР»СѓС‡Р°РµС€СЊ.
 };
 
 // *************************************************************************
@@ -89,7 +89,7 @@ INSTANCE Info_Vlk_1_DasLager(C_INFO)
 	condition	= Info_Vlk_1_DasLager_Condition;
 	information	= Info_Vlk_1_DasLager_Info;
 	permanent	= 1;
-	description = "Здесь есть что-нибудь, кроме этих хижин?";
+	description = "Р—РґРµСЃСЊ РµСЃС‚СЊ С‡С‚Рѕ-РЅРёР±СѓРґСЊ, РєСЂРѕРјРµ СЌС‚РёС… С…РёР¶РёРЅ?";
 };                       
 
 FUNC INT Info_Vlk_1_DasLager_Condition()
@@ -99,9 +99,9 @@ FUNC INT Info_Vlk_1_DasLager_Condition()
 
 FUNC VOID Info_Vlk_1_DasLager_Info()
 {
-	AI_Output(other,self,"Info_Vlk_1_DasLager_15_00"); //Здесь есть что-нибудь, кроме этих хижин?
-	AI_Output(self,other,"Info_Vlk_1_DasLager_01_01"); //Ну, вечером можно пойти на арену и посмотреть, как стражники сворачивают друг другу челюсти.
-	AI_Output(self,other,"Info_Vlk_1_DasLager_01_02"); //Поистине, это стоит своих денег.
+	AI_Output(other,self,"Info_Vlk_1_DasLager_15_00"); //Р—РґРµСЃСЊ РµСЃС‚СЊ С‡С‚Рѕ-РЅРёР±СѓРґСЊ, РєСЂРѕРјРµ СЌС‚РёС… С…РёР¶РёРЅ?
+	AI_Output(self,other,"Info_Vlk_1_DasLager_01_01"); //РќСѓ, РІРµС‡РµСЂРѕРј РјРѕР¶РЅРѕ РїРѕР№С‚Рё РЅР° Р°СЂРµРЅСѓ Рё РїРѕСЃРјРѕС‚СЂРµС‚СЊ, РєР°Рє СЃС‚СЂР°Р¶РЅРёРєРё СЃРІРѕСЂР°С‡РёРІР°СЋС‚ РґСЂСѓРі РґСЂСѓРіСѓ С‡РµР»СЋСЃС‚Рё.
+	AI_Output(self,other,"Info_Vlk_1_DasLager_01_02"); //РџРѕРёСЃС‚РёРЅРµ, СЌС‚Рѕ СЃС‚РѕРёС‚ СЃРІРѕРёС… РґРµРЅРµРі.
 };
 
 // *************************************************************************
@@ -114,7 +114,7 @@ INSTANCE Info_Vlk_1_DieLage(C_INFO) // E1
 	condition	= Info_Vlk_1_DieLage_Condition;
 	information	= Info_Vlk_1_DieLage_Info;
 	permanent	= 1;
-	description = "Как дела?";
+	description = "РљР°Рє РґРµР»Р°?";
 };                       
 
 FUNC INT Info_Vlk_1_DieLage_Condition()
@@ -124,8 +124,8 @@ FUNC INT Info_Vlk_1_DieLage_Condition()
 
 FUNC VOID Info_Vlk_1_DieLage_Info()
 {
-	AI_Output(other,self,"Info_Vlk_1_DieLage_15_00"); //Как дела?
-	AI_Output(self,other,"Info_Vlk_1_DieLage_01_01"); //Последние две недели я провел в шахте. Все, чего я сейчас хочу, это покой, так что убирайся с глаз моих. 
+	AI_Output(other,self,"Info_Vlk_1_DieLage_15_00"); //РљР°Рє РґРµР»Р°?
+	AI_Output(self,other,"Info_Vlk_1_DieLage_01_01"); //РџРѕСЃР»РµРґРЅРёРµ РґРІРµ РЅРµРґРµР»Рё СЏ РїСЂРѕРІРµР» РІ С€Р°С…С‚Рµ. Р’СЃРµ, С‡РµРіРѕ СЏ СЃРµР№С‡Р°СЃ С…РѕС‡Сѓ, СЌС‚Рѕ РїРѕРєРѕР№, С‚Р°Рє С‡С‚Рѕ СѓР±РёСЂР°Р№СЃСЏ СЃ РіР»Р°Р· РјРѕРёС…. 
 };
 	
 // *************************************************************************

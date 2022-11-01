@@ -3,7 +3,7 @@ instance Non_1502_Wegelagerer (Npc_Default)
 {
 	//-------- primary data --------
 	
-	name 		=		"Бродяга";
+	name 		=		"Р‘СЂРѕРґСЏРіР°";
 	npctype 	=		npctype_ambient;
 	guild 		=		GIL_NONE;      
 	level 		=		9;

@@ -23,7 +23,7 @@ FUNC VOID DIA_STT_315_Sly_Exit_Info()
 };
 
 // **************************************************
-// 					Erste Begrьssung 
+// 					Erste BegrСЊssung 
 // **************************************************
 
 instance DIA_STT_315_Sly (C_INFO)
@@ -48,12 +48,12 @@ func void DIA_STT_315_Sly_Info()
 {
 	AI_SetWalkmode	(self, NPC_WALK);
 	AI_GotoNpc		(self, other);
-	AI_Output		(self, other,"DIA_STT_315_Sly_10_01"); //Ты новенький, да? Я тебя здесь еще не видел.
-	AI_Output		(self, other,"DIA_STT_315_Sly_10_02"); //Меня зовут Слай. Я предлагаю новичкам работу.
+	AI_Output		(self, other,"DIA_STT_315_Sly_10_01"); //РўС‹ РЅРѕРІРµРЅСЊРєРёР№, РґР°? РЇ С‚РµР±СЏ Р·РґРµСЃСЊ РµС‰Рµ РЅРµ РІРёРґРµР».
+	AI_Output		(self, other,"DIA_STT_315_Sly_10_02"); //РњРµРЅСЏ Р·РѕРІСѓС‚ РЎР»Р°Р№. РЇ РїСЂРµРґР»Р°РіР°СЋ РЅРѕРІРёС‡РєР°Рј СЂР°Р±РѕС‚Сѓ.
 };
 
 // **************************************************
-// 					Erste Begrьssung 
+// 					Erste BegrСЊssung 
 // **************************************************
 	var int Sly_LostNek;
 // **************************************************
@@ -65,7 +65,7 @@ INSTANCE DIA_STT_315_LostNek (C_INFO)
 	condition		= DIA_STT_315_LostNek_Condition;
 	information		= DIA_STT_315_LostNek_Info;
 	permanent		= 0;
-	description		= "У тебя есть для меня работа? Какая?";
+	description		= "РЈ С‚РµР±СЏ РµСЃС‚СЊ РґР»СЏ РјРµРЅСЏ СЂР°Р±РѕС‚Р°? РљР°РєР°СЏ?";
 };
 
 FUNC INT DIA_STT_315_LostNek_Condition()
@@ -75,49 +75,49 @@ FUNC INT DIA_STT_315_LostNek_Condition()
 
 func VOID DIA_STT_315_LostNek_Info()
 {
-	AI_Output (other, self,"DIA_STT_315_LostNek_15_00"); //У тебя есть для меня работа? Какая?
-	AI_Output (self, other,"DIA_STT_315_LostNek_10_01"); //Пропал один из наших стражников. Его зовут Нек. Он мог переметнуться к Новому Лагерю!
-	AI_Output (self, other,"DIA_STT_315_LostNek_10_02"); //Ты новенький, ходишь повсюду и не вызываешь подозрений. Так что смотри в оба.
+	AI_Output (other, self,"DIA_STT_315_LostNek_15_00"); //РЈ С‚РµР±СЏ РµСЃС‚СЊ РґР»СЏ РјРµРЅСЏ СЂР°Р±РѕС‚Р°? РљР°РєР°СЏ?
+	AI_Output (self, other,"DIA_STT_315_LostNek_10_01"); //РџСЂРѕРїР°Р» РѕРґРёРЅ РёР· РЅР°С€РёС… СЃС‚СЂР°Р¶РЅРёРєРѕРІ. Р•РіРѕ Р·РѕРІСѓС‚ РќРµРє. РћРЅ РјРѕРі РїРµСЂРµРјРµС‚РЅСѓС‚СЊСЃСЏ Рє РќРѕРІРѕРјСѓ Р›Р°РіРµСЂСЋ!
+	AI_Output (self, other,"DIA_STT_315_LostNek_10_02"); //РўС‹ РЅРѕРІРµРЅСЊРєРёР№, С…РѕРґРёС€СЊ РїРѕРІСЃСЋРґСѓ Рё РЅРµ РІС‹Р·С‹РІР°РµС€СЊ РїРѕРґРѕР·СЂРµРЅРёР№. РўР°Рє С‡С‚Рѕ СЃРјРѕС‚СЂРё РІ РѕР±Р°.
 	
 	if (Npc_GetTrueGuild (hero) == GIL_NONE)
 	{
-	AI_Output (self, other,"DIA_STT_315_LostNek_10_03"); //Найдешь его, и я замолвлю за тебя словечко в Лагере.
+	AI_Output (self, other,"DIA_STT_315_LostNek_10_03"); //РќР°Р№РґРµС€СЊ РµРіРѕ, Рё СЏ Р·Р°РјРѕР»РІР»СЋ Р·Р° С‚РµР±СЏ СЃР»РѕРІРµС‡РєРѕ РІ Р›Р°РіРµСЂРµ.
 	};
 	Info_ClearChoices	(DIA_STT_315_LostNek);
-	Info_AddChoice		(DIA_STT_315_LostNek,"Я постараюсь найти его.",DIA_STT_315_LostNek_DoIt);
+	Info_AddChoice		(DIA_STT_315_LostNek,"РЇ РїРѕСЃС‚Р°СЂР°СЋСЃСЊ РЅР°Р№С‚Рё РµРіРѕ.",DIA_STT_315_LostNek_DoIt);
 	
 	if (Npc_GetTrueGuild (hero) == GIL_NONE)
 	{
-		Info_AddChoice		(DIA_STT_315_LostNek,"Что мне с того, что ты замолвишь за меня словечко?",DIA_STT_315_LostNek_Why);
+		Info_AddChoice		(DIA_STT_315_LostNek,"Р§С‚Рѕ РјРЅРµ СЃ С‚РѕРіРѕ, С‡С‚Рѕ С‚С‹ Р·Р°РјРѕР»РІРёС€СЊ Р·Р° РјРµРЅСЏ СЃР»РѕРІРµС‡РєРѕ?",DIA_STT_315_LostNek_Why);
 	};
 };
 
 func void DIA_STT_315_LostNek_Why()
 {
-	AI_Output (other, self,"DIA_STT_315_LostNek_Why_15_00"); //Что мне с того, что ты замолвишь за меня словечко?
-	AI_Output (self, other,"DIA_STT_315_LostNek_Why_10_01"); //Для того чтобы присоединиться к нашему Лагерю, нужно заручиться поддержкой многих.
-	AI_Output (self, other,"DIA_STT_315_LostNek_Why_10_02"); //Если я поговорю с Диего, тебе это очень поможет.
+	AI_Output (other, self,"DIA_STT_315_LostNek_Why_15_00"); //Р§С‚Рѕ РјРЅРµ СЃ С‚РѕРіРѕ, С‡С‚Рѕ С‚С‹ Р·Р°РјРѕР»РІРёС€СЊ Р·Р° РјРµРЅСЏ СЃР»РѕРІРµС‡РєРѕ?
+	AI_Output (self, other,"DIA_STT_315_LostNek_Why_10_01"); //Р”Р»СЏ С‚РѕРіРѕ С‡С‚РѕР±С‹ РїСЂРёСЃРѕРµРґРёРЅРёС‚СЊСЃСЏ Рє РЅР°С€РµРјСѓ Р›Р°РіРµСЂСЋ, РЅСѓР¶РЅРѕ Р·Р°СЂСѓС‡РёС‚СЊСЃСЏ РїРѕРґРґРµСЂР¶РєРѕР№ РјРЅРѕРіРёС….
+	AI_Output (self, other,"DIA_STT_315_LostNek_Why_10_02"); //Р•СЃР»Рё СЏ РїРѕРіРѕРІРѕСЂСЋ СЃ Р”РёРµРіРѕ, С‚РµР±Рµ СЌС‚Рѕ РѕС‡РµРЅСЊ РїРѕРјРѕР¶РµС‚.
 };
 
 func void DIA_STT_315_LostNek_DoIt()
 {
-	AI_Output (other, self,"DIA_STT_315_LostNek_DoIt_15_00"); //Я постараюсь найти его.
-	AI_Output (self, other,"DIA_STT_315_LostNek_DoIt_10_01"); //Если встретишь Флетчера, расспроси его про Нека. Флетчер забрал его район, с тех пор как Нек исчез.
-	AI_Output (other, self,"DIA_STT_315_LostNek_DoIt_15_02"); //Где мне его искать?
-	AI_Output (self, other,"DIA_STT_315_LostNek_DoIt_10_03"); //Его район находится возле арены.
+	AI_Output (other, self,"DIA_STT_315_LostNek_DoIt_15_00"); //РЇ РїРѕСЃС‚Р°СЂР°СЋСЃСЊ РЅР°Р№С‚Рё РµРіРѕ.
+	AI_Output (self, other,"DIA_STT_315_LostNek_DoIt_10_01"); //Р•СЃР»Рё РІСЃС‚СЂРµС‚РёС€СЊ Р¤Р»РµС‚С‡РµСЂР°, СЂР°СЃСЃРїСЂРѕСЃРё РµРіРѕ РїСЂРѕ РќРµРєР°. Р¤Р»РµС‚С‡РµСЂ Р·Р°Р±СЂР°Р» РµРіРѕ СЂР°Р№РѕРЅ, СЃ С‚РµС… РїРѕСЂ РєР°Рє РќРµРє РёСЃС‡РµР·.
+	AI_Output (other, self,"DIA_STT_315_LostNek_DoIt_15_02"); //Р“РґРµ РјРЅРµ РµРіРѕ РёСЃРєР°С‚СЊ?
+	AI_Output (self, other,"DIA_STT_315_LostNek_DoIt_10_03"); //Р•РіРѕ СЂР°Р№РѕРЅ РЅР°С…РѕРґРёС‚СЃСЏ РІРѕР·Р»Рµ Р°СЂРµРЅС‹.
 	Sly_LostNek = LOG_RUNNING;
 	
 	if (Npc_GetTrueGuild (hero) == GIL_NONE)
 	{
 		Log_CreateTopic( CH1_LostNek, LOG_MISSION);
 		Log_SetTopicStatus( CH1_LostNek, LOG_RUNNING);
-		B_LogEntry( CH1_LostNek,"Призрак по имени Слай обещал поговорить с Диего, если я сумею отыскать Нека. Этот стражник, должно быть, присоединился к Новому Лагерю. Надо сходить к арене и спросить о нем Флетчера.");
+		B_LogEntry( CH1_LostNek,"РџСЂРёР·СЂР°Рє РїРѕ РёРјРµРЅРё РЎР»Р°Р№ РѕР±РµС‰Р°Р» РїРѕРіРѕРІРѕСЂРёС‚СЊ СЃ Р”РёРµРіРѕ, РµСЃР»Рё СЏ СЃСѓРјРµСЋ РѕС‚С‹СЃРєР°С‚СЊ РќРµРєР°. Р­С‚РѕС‚ СЃС‚СЂР°Р¶РЅРёРє, РґРѕР»Р¶РЅРѕ Р±С‹С‚СЊ, РїСЂРёСЃРѕРµРґРёРЅРёР»СЃСЏ Рє РќРѕРІРѕРјСѓ Р›Р°РіРµСЂСЋ. РќР°РґРѕ СЃС…РѕРґРёС‚СЊ Рє Р°СЂРµРЅРµ Рё СЃРїСЂРѕСЃРёС‚СЊ Рѕ РЅРµРј Р¤Р»РµС‚С‡РµСЂР°.");
 	}
 	else
 	{
 		Log_CreateTopic( CH1_LostNek, LOG_MISSION);
 		Log_SetTopicStatus( CH1_LostNek, LOG_RUNNING);
-		B_LogEntry( CH1_LostNek,"Призрак по имени Слай попросил меня найти пропавшего стражника Нека. Возможно, что он присоединился к Новому Лагерю. Надо сходить к арене и поговорить об этом с Флетчером.");
+		B_LogEntry( CH1_LostNek,"РџСЂРёР·СЂР°Рє РїРѕ РёРјРµРЅРё РЎР»Р°Р№ РїРѕРїСЂРѕСЃРёР» РјРµРЅСЏ РЅР°Р№С‚Рё РїСЂРѕРїР°РІС€РµРіРѕ СЃС‚СЂР°Р¶РЅРёРєР° РќРµРєР°. Р’РѕР·РјРѕР¶РЅРѕ, С‡С‚Рѕ РѕРЅ РїСЂРёСЃРѕРµРґРёРЅРёР»СЃСЏ Рє РќРѕРІРѕРјСѓ Р›Р°РіРµСЂСЋ. РќР°РґРѕ СЃС…РѕРґРёС‚СЊ Рє Р°СЂРµРЅРµ Рё РїРѕРіРѕРІРѕСЂРёС‚СЊ РѕР± СЌС‚РѕРј СЃ Р¤Р»РµС‚С‡РµСЂРѕРј.");
 	};
 	Info_ClearChoices	(DIA_STT_315_LostNek );
 	AI_StopProcessInfos	(self);
@@ -134,7 +134,7 @@ INSTANCE DIA_STT_315_LostNekSuccess (C_INFO)
 	condition		= DIA_STT_315_LostNekSuccess_Condition;
 	information		= DIA_STT_315_LostNekSuccess_Info;
 	permanent		= 1;
-	description		= "Я нашел Нека.";
+	description		= "РЇ РЅР°С€РµР» РќРµРєР°.";
 };
 
 FUNC INT DIA_STT_315_LostNekSuccess_Condition()
@@ -147,43 +147,43 @@ FUNC INT DIA_STT_315_LostNekSuccess_Condition()
 
 func VOID DIA_STT_315_LostNekSuccess_Info()
 {
-	AI_Output (other, self,"DIA_STT_315_LostNekSuccess_15_00"); //Я нашел Нека.
-	AI_Output (self, other,"DIA_STT_315_LostNekSuccess_10_01"); //Хорошо! И ты можешь это доказать?
+	AI_Output (other, self,"DIA_STT_315_LostNekSuccess_15_00"); //РЇ РЅР°С€РµР» РќРµРєР°.
+	AI_Output (self, other,"DIA_STT_315_LostNekSuccess_10_01"); //РҐРѕСЂРѕС€Рѕ! Р С‚С‹ РјРѕР¶РµС€СЊ СЌС‚Рѕ РґРѕРєР°Р·Р°С‚СЊ?
 	
 	Info_ClearChoices	(DIA_STT_315_LostNekSuccess );
-	Info_AddChoice		(DIA_STT_315_LostNekSuccess,"Нет, боюсь, что нет.",DIA_STT_315_LostNekSuccess_NoProof);
-	Info_AddChoice		(DIA_STT_315_LostNekSuccess,"На нем был этот амулет - смотри.",DIA_STT_315_LostNekSuccess_Proof);
+	Info_AddChoice		(DIA_STT_315_LostNekSuccess,"РќРµС‚, Р±РѕСЋСЃСЊ, С‡С‚Рѕ РЅРµС‚.",DIA_STT_315_LostNekSuccess_NoProof);
+	Info_AddChoice		(DIA_STT_315_LostNekSuccess,"РќР° РЅРµРј Р±С‹Р» СЌС‚РѕС‚ Р°РјСѓР»РµС‚ - СЃРјРѕС‚СЂРё.",DIA_STT_315_LostNekSuccess_Proof);
 };
 
 func void DIA_STT_315_LostNekSuccess_Proof()
 {
-	AI_Output (other, self,"DIA_STT_315_LostNekSuccess_Proof_15_00"); //На нем был этот амулет - смотри.
-	AI_Output (self, other,"DIA_STT_315_LostNekSuccess_Proof_10_01"); //Собственно, из-за этого амулета все и затевалось. Ты умный парень.
-	AI_Output (self, other,"DIA_STT_315_LostNekSuccess_Proof_10_02"); //Думаю, ты хотел оставить амулет себе, но в итоге ты поступил верно.
+	AI_Output (other, self,"DIA_STT_315_LostNekSuccess_Proof_15_00"); //РќР° РЅРµРј Р±С‹Р» СЌС‚РѕС‚ Р°РјСѓР»РµС‚ - СЃРјРѕС‚СЂРё.
+	AI_Output (self, other,"DIA_STT_315_LostNekSuccess_Proof_10_01"); //РЎРѕР±СЃС‚РІРµРЅРЅРѕ, РёР·-Р·Р° СЌС‚РѕРіРѕ Р°РјСѓР»РµС‚Р° РІСЃРµ Рё Р·Р°С‚РµРІР°Р»РѕСЃСЊ. РўС‹ СѓРјРЅС‹Р№ РїР°СЂРµРЅСЊ.
+	AI_Output (self, other,"DIA_STT_315_LostNekSuccess_Proof_10_02"); //Р”СѓРјР°СЋ, С‚С‹ С…РѕС‚РµР» РѕСЃС‚Р°РІРёС‚СЊ Р°РјСѓР»РµС‚ СЃРµР±Рµ, РЅРѕ РІ РёС‚РѕРіРµ С‚С‹ РїРѕСЃС‚СѓРїРёР» РІРµСЂРЅРѕ.
 	if (Npc_GetTrueGuild (hero) == GIL_NONE)
 	&& hero.guild == GIL_NONE
 	{
-		AI_Output (self, other,"DIA_STT_315_LostNekSuccess_Proof_10_03"); //Если Диего спросит меня, я выскажусь в твою поддержку.
+		AI_Output (self, other,"DIA_STT_315_LostNekSuccess_Proof_10_03"); //Р•СЃР»Рё Р”РёРµРіРѕ СЃРїСЂРѕСЃРёС‚ РјРµРЅСЏ, СЏ РІС‹СЃРєР°Р¶СѓСЃСЊ РІ С‚РІРѕСЋ РїРѕРґРґРµСЂР¶РєСѓ.
 	};
 	Sly_LostNek = LOG_SUCCESS;
 	
 	B_GiveInvItems (other, self, Neks_Amulett, 1);
 	
 	Log_SetTopicStatus		(CH1_LostNek, LOG_SUCCESS);
-	B_LogEntry				(CH1_LostNek,"Я отдал амулет Нека Слаю. Он был очень удивлен моей честностью.");
+	B_LogEntry				(CH1_LostNek,"РЇ РѕС‚РґР°Р» Р°РјСѓР»РµС‚ РќРµРєР° РЎР»Р°СЋ. РћРЅ Р±С‹Р» РѕС‡РµРЅСЊ СѓРґРёРІР»РµРЅ РјРѕРµР№ С‡РµСЃС‚РЅРѕСЃС‚СЊСЋ.");
 	
 	B_GiveXP (XP_Slysearchfornek);		
 	if (Npc_GetTrueGuild (hero) == GIL_NONE)
 	{
 		Log_CreateTopic		(CH1_JoinOC, LOG_MISSION);
 		Log_SetTopicStatus	(CH1_JoinOC, LOG_RUNNING);
-		B_LogEntry			(CH1_JoinOC,"Я отдал Слаю амулет Нека. Теперь он поговорит обо мне с Диего.");
+		B_LogEntry			(CH1_JoinOC,"РЇ РѕС‚РґР°Р» РЎР»Р°СЋ Р°РјСѓР»РµС‚ РќРµРєР°. РўРµРїРµСЂСЊ РѕРЅ РїРѕРіРѕРІРѕСЂРёС‚ РѕР±Рѕ РјРЅРµ СЃ Р”РёРµРіРѕ.");
 	}
 	else
 	{	
 		Log_CreateTopic		(CH1_JoinOC, LOG_MISSION);
 		Log_SetTopicStatus  (CH1_JoinOC, LOG_FAILED);
-		B_LogEntry			(CH1_JoinOC,"Я отдал Слаю амулет Нека. Сделал я это просто так, не из корысти - ведь Старый Лагерь все равно не позволит мне к ним присоединиться.");
+		B_LogEntry			(CH1_JoinOC,"РЇ РѕС‚РґР°Р» РЎР»Р°СЋ Р°РјСѓР»РµС‚ РќРµРєР°. РЎРґРµР»Р°Р» СЏ СЌС‚Рѕ РїСЂРѕСЃС‚Рѕ С‚Р°Рє, РЅРµ РёР· РєРѕСЂС‹СЃС‚Рё - РІРµРґСЊ РЎС‚Р°СЂС‹Р№ Р›Р°РіРµСЂСЊ РІСЃРµ СЂР°РІРЅРѕ РЅРµ РїРѕР·РІРѕР»РёС‚ РјРЅРµ Рє РЅРёРј РїСЂРёСЃРѕРµРґРёРЅРёС‚СЊСЃСЏ.");
 	};
 	Info_ClearChoices	(DIA_STT_315_LostNekSuccess );
 	AI_StopProcessInfos	( self );
@@ -192,12 +192,12 @@ func void DIA_STT_315_LostNekSuccess_Proof()
 
 func void DIA_STT_315_LostNekSuccess_NoProof()
 {
-	AI_Output (other, self,"DIA_STT_315_LostNekSuccess_NoProof_15_00"); //Нет, боюсь, что нет.
-	AI_Output (self, other,"DIA_STT_315_LostNekSuccess_NoProof_10_01"); //Да? Ты ведь ничего от меня не скрываешь, правда? У Нека был один амулет...
-	AI_Output (self, other,"DIA_STT_315_LostNekSuccess_NoProof_10_02"); //Не люблю, когда у кого-то оказываются мои вещи. Если найдешь этот амулет, принеси его мне!
-	AI_Output (other, self,"DIA_STT_315_LostNekSuccess_NoProof_15_03"); //Если я найду амулет, ты будешь первым, кому я скажу об этом.
+	AI_Output (other, self,"DIA_STT_315_LostNekSuccess_NoProof_15_00"); //РќРµС‚, Р±РѕСЋСЃСЊ, С‡С‚Рѕ РЅРµС‚.
+	AI_Output (self, other,"DIA_STT_315_LostNekSuccess_NoProof_10_01"); //Р”Р°? РўС‹ РІРµРґСЊ РЅРёС‡РµРіРѕ РѕС‚ РјРµРЅСЏ РЅРµ СЃРєСЂС‹РІР°РµС€СЊ, РїСЂР°РІРґР°? РЈ РќРµРєР° Р±С‹Р» РѕРґРёРЅ Р°РјСѓР»РµС‚...
+	AI_Output (self, other,"DIA_STT_315_LostNekSuccess_NoProof_10_02"); //РќРµ Р»СЋР±Р»СЋ, РєРѕРіРґР° Сѓ РєРѕРіРѕ-С‚Рѕ РѕРєР°Р·С‹РІР°СЋС‚СЃСЏ РјРѕРё РІРµС‰Рё. Р•СЃР»Рё РЅР°Р№РґРµС€СЊ СЌС‚РѕС‚ Р°РјСѓР»РµС‚, РїСЂРёРЅРµСЃРё РµРіРѕ РјРЅРµ!
+	AI_Output (other, self,"DIA_STT_315_LostNekSuccess_NoProof_15_03"); //Р•СЃР»Рё СЏ РЅР°Р№РґСѓ Р°РјСѓР»РµС‚, С‚С‹ Р±СѓРґРµС€СЊ РїРµСЂРІС‹Рј, РєРѕРјСѓ СЏ СЃРєР°Р¶Сѓ РѕР± СЌС‚РѕРј.
 	
-	B_LogEntry( CH1_LostNek,"Слаю нужен амулет Нека.");
+	B_LogEntry( CH1_LostNek,"РЎР»Р°СЋ РЅСѓР¶РµРЅ Р°РјСѓР»РµС‚ РќРµРєР°.");
 	
 	Info_ClearChoices	(DIA_STT_315_LostNekSuccess );
 	AI_StopProcessInfos	( self );
@@ -214,7 +214,7 @@ instance DIA_STT_315_Sly_AfterSuccess (C_INFO)
 	condition		= DIA_STT_315_Sly_AfterSuccess_Condition;
 	information		= DIA_STT_315_Sly_AfterSuccess_Info;
 	permanent		= 1;
-	description		= "Как дела?";
+	description		= "РљР°Рє РґРµР»Р°?";
 	
 };
 
@@ -229,10 +229,10 @@ FUNC int DIA_STT_315_Sly_AfterSuccess_Condition()
 
 func void DIA_STT_315_Sly_AfterSuccess_Info()
 {
-	AI_Output (other, self,"DIA_STT_315_Sly_AfterSuccess_15_00"); //Как дела?
-	AI_Output (self, other,"DIA_STT_315_Sly_AfterSuccess_10_01"); //Хорошо! Со мной ты можешь больше не волноваться по поводу Диего!
-	AI_Output (other, self,"DIA_STT_315_Sly_AfterSuccess_15_02"); //Услуга за услугу, а?
-	AI_Output (self, other,"DIA_STT_315_Sly_AfterSuccess_10_03"); //На том жизнь и стоит.
+	AI_Output (other, self,"DIA_STT_315_Sly_AfterSuccess_15_00"); //РљР°Рє РґРµР»Р°?
+	AI_Output (self, other,"DIA_STT_315_Sly_AfterSuccess_10_01"); //РҐРѕСЂРѕС€Рѕ! РЎРѕ РјРЅРѕР№ С‚С‹ РјРѕР¶РµС€СЊ Р±РѕР»СЊС€Рµ РЅРµ РІРѕР»РЅРѕРІР°С‚СЊСЃСЏ РїРѕ РїРѕРІРѕРґСѓ Р”РёРµРіРѕ!
+	AI_Output (other, self,"DIA_STT_315_Sly_AfterSuccess_15_02"); //РЈСЃР»СѓРіР° Р·Р° СѓСЃР»СѓРіСѓ, Р°?
+	AI_Output (self, other,"DIA_STT_315_Sly_AfterSuccess_10_03"); //РќР° С‚РѕРј Р¶РёР·РЅСЊ Рё СЃС‚РѕРёС‚.
 };
 
 

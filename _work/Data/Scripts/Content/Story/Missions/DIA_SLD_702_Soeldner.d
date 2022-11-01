@@ -46,9 +46,9 @@ FUNC int DIA_Sld_702_First_Condition()
 
 FUNC VOID  DIA_Sld_702_First_Info()
 {
-	AI_Output (self, other,"DIA_Sld_702_First_04_00"); //Ты хоть знаешь, куда направляешься?
-	AI_Output (other, self,"DIA_Sld_702_First_15_01"); //Куда?
-	AI_Output (self, other,"DIA_Sld_702_First_04_02"); //Ты идешь к нашему предводителю Ли.
+	AI_Output (self, other,"DIA_Sld_702_First_04_00"); //РўС‹ С…РѕС‚СЊ Р·РЅР°РµС€СЊ, РєСѓРґР° РЅР°РїСЂР°РІР»СЏРµС€СЊСЃСЏ?
+	AI_Output (other, self,"DIA_Sld_702_First_15_01"); //РљСѓРґР°?
+	AI_Output (self, other,"DIA_Sld_702_First_04_02"); //РўС‹ РёРґРµС€СЊ Рє РЅР°С€РµРјСѓ РїСЂРµРґРІРѕРґРёС‚РµР»СЋ Р›Рё.
 };
 
 // ********************************
@@ -62,7 +62,7 @@ instance DIA_Sld_702_PERM (C_INFO)
 	condition	= DIA_Sld_702_PERM_Condition;
 	information	= DIA_Sld_702_PERM_Info;
 	permanent	= 1;
-	description = "Что нужно сделать, чтобы ты пропустил меня к нему?";
+	description = "Р§С‚Рѕ РЅСѓР¶РЅРѕ СЃРґРµР»Р°С‚СЊ, С‡С‚РѕР±С‹ С‚С‹ РїСЂРѕРїСѓСЃС‚РёР» РјРµРЅСЏ Рє РЅРµРјСѓ?";
 };                       
 
 FUNC int DIA_Sld_702_PERM_Condition()
@@ -72,11 +72,11 @@ FUNC int DIA_Sld_702_PERM_Condition()
 
 FUNC VOID  DIA_Sld_702_PERM_Info()
 {
-	AI_Output (other, self,"DIA_Sld_702_PERM_15_00"); //Что нужно сделать, чтобы ты пропустил меня к нему?
-	AI_Output (self, other,"DIA_Sld_702_PERM_04_01"); //Ничего!
-	AI_Output (self, other,"DIA_Sld_702_PERM_04_02"); //Здесь не Старый Лагерь, да и Ли совсем не такой, как Гомез.
-	AI_Output (self, other,"DIA_Sld_702_PERM_04_03"); //Ему не нужна армия головорезов за спиной. Он сам способен защитить себя.
-	AI_Output (self, other,"DIA_Sld_702_PERM_04_04"); //МЫ здесь лишь затем, чтобы помогать ему.
+	AI_Output (other, self,"DIA_Sld_702_PERM_15_00"); //Р§С‚Рѕ РЅСѓР¶РЅРѕ СЃРґРµР»Р°С‚СЊ, С‡С‚РѕР±С‹ С‚С‹ РїСЂРѕРїСѓСЃС‚РёР» РјРµРЅСЏ Рє РЅРµРјСѓ?
+	AI_Output (self, other,"DIA_Sld_702_PERM_04_01"); //РќРёС‡РµРіРѕ!
+	AI_Output (self, other,"DIA_Sld_702_PERM_04_02"); //Р—РґРµСЃСЊ РЅРµ РЎС‚Р°СЂС‹Р№ Р›Р°РіРµСЂСЊ, РґР° Рё Р›Рё СЃРѕРІСЃРµРј РЅРµ С‚Р°РєРѕР№, РєР°Рє Р“РѕРјРµР·.
+	AI_Output (self, other,"DIA_Sld_702_PERM_04_03"); //Р•РјСѓ РЅРµ РЅСѓР¶РЅР° Р°СЂРјРёСЏ РіРѕР»РѕРІРѕСЂРµР·РѕРІ Р·Р° СЃРїРёРЅРѕР№. РћРЅ СЃР°Рј СЃРїРѕСЃРѕР±РµРЅ Р·Р°С‰РёС‚РёС‚СЊ СЃРµР±СЏ.
+	AI_Output (self, other,"DIA_Sld_702_PERM_04_04"); //РњР« Р·РґРµСЃСЊ Р»РёС€СЊ Р·Р°С‚РµРј, С‡С‚РѕР±С‹ РїРѕРјРѕРіР°С‚СЊ РµРјСѓ.
 };
 
 

@@ -2,7 +2,7 @@ instance ORG_826_Mordrag (Npc_Default)
 {
 	//-------- primary data --------
 	
-	name =					"Мордраг";
+	name =					"РњРѕСЂРґСЂР°Рі";
 	Npctype =				Npctype_Main;
 	guild =					GIL_ORG;      
 	level =					10;

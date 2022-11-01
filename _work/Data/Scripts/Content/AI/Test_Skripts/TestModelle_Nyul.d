@@ -159,7 +159,7 @@ INSTANCE Nyul_16(NPC_DEFAULT)
 // PlayerInstanz
 {
 	//-------- primary data --------
-	name 			= "ß";
+	name 			= "Ð¯";
 	Npctype			= Npctype_Main;
 	guild			= GIL_GRD;
 	level			= 16;
@@ -227,7 +227,7 @@ INSTANCE Nyul_21(NPC_DEFAULT)
 // PlayerInstanz
 {
 	//-------- primary data --------
-	name 			= "ß";
+	name 			= "Ð¯";
 	Npctype			= Npctype_Main;
 	guild			= GIL_SLD;
 	level			= 21;

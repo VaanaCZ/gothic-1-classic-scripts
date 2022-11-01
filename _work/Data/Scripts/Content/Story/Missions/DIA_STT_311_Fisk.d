@@ -43,9 +43,9 @@ FUNC int  Stt_311_Fisk_First_Condition()
 
 FUNC VOID  Stt_311_Fisk_First_Info()
 {
-	AI_Output		(self, other,"Stt_311_Fisk_First_12_00"); //Привет, парень! Я Фиск. У меня есть товар на любой вкус и кошелек. Если тебе когда-нибудь что-нибудь понадобится, обращайся ко мне.
+	AI_Output		(self, other,"Stt_311_Fisk_First_12_00"); //РџСЂРёРІРµС‚, РїР°СЂРµРЅСЊ! РЇ Р¤РёСЃРє. РЈ РјРµРЅСЏ РµСЃС‚СЊ С‚РѕРІР°СЂ РЅР° Р»СЋР±РѕР№ РІРєСѓСЃ Рё РєРѕС€РµР»РµРє. Р•СЃР»Рё С‚РµР±Рµ РєРѕРіРґР°-РЅРёР±СѓРґСЊ С‡С‚Рѕ-РЅРёР±СѓРґСЊ РїРѕРЅР°РґРѕР±РёС‚СЃСЏ, РѕР±СЂР°С‰Р°Р№СЃСЏ РєРѕ РјРЅРµ.
 	Log_CreateTopic (GE_TraderOC,LOG_NOTE);
-	B_LogEntry		(GE_TraderOC,"Призрак по имени Фиск торгует всякими товарами, но в особенности оружием. Обычно его можно найти на рынке."); 
+	B_LogEntry		(GE_TraderOC,"РџСЂРёР·СЂР°Рє РїРѕ РёРјРµРЅРё Р¤РёСЃРє С‚РѕСЂРіСѓРµС‚ РІСЃСЏРєРёРјРё С‚РѕРІР°СЂР°РјРё, РЅРѕ РІ РѕСЃРѕР±РµРЅРЅРѕСЃС‚Рё РѕСЂСѓР¶РёРµРј. РћР±С‹С‡РЅРѕ РµРіРѕ РјРѕР¶РЅРѕ РЅР°Р№С‚Рё РЅР° СЂС‹РЅРєРµ."); 
 	
 };
 
@@ -60,7 +60,7 @@ instance  Stt_311_Fisk_Trade (C_INFO)
 	condition	= Stt_311_Fisk_Trade_Condition;
 	information	= Stt_311_Fisk_Trade_Info;
 	permanent	= 1;
-	description = "Покажи мне, что у тебя есть.";
+	description = "РџРѕРєР°Р¶Рё РјРЅРµ, С‡С‚Рѕ Сѓ С‚РµР±СЏ РµСЃС‚СЊ.";
 	trade		= 1;
 };                       
 
@@ -71,7 +71,7 @@ FUNC int  Stt_311_Fisk_Trade_Condition()
 
 FUNC VOID  Stt_311_Fisk_Trade_Info()
 {
-	AI_Output (other, self,"Stt_311_Fisk_Trade_15_00"); //Покажи мне, что у тебя есть.
+	AI_Output (other, self,"Stt_311_Fisk_Trade_15_00"); //РџРѕРєР°Р¶Рё РјРЅРµ, С‡С‚Рѕ Сѓ С‚РµР±СЏ РµСЃС‚СЊ.
 };
 
 
@@ -83,7 +83,7 @@ instance  Stt_311_Fisk_WhistlersSword (C_INFO)
 	condition	= Stt_311_Fisk_WhistlersSword_Condition;
 	information	= Stt_311_Fisk_WhistlersSword_Info;
 	permanent	= 1;
-	description = "Я хочу купить меч. Но не простой - с какими-нибудь украшениями.";
+	description = "РЇ С…РѕС‡Сѓ РєСѓРїРёС‚СЊ РјРµС‡. РќРѕ РЅРµ РїСЂРѕСЃС‚РѕР№ - СЃ РєР°РєРёРјРё-РЅРёР±СѓРґСЊ СѓРєСЂР°С€РµРЅРёСЏРјРё.";
 };                       
 
 FUNC int  Stt_311_Fisk_WhistlersSword_Condition()
@@ -96,29 +96,29 @@ FUNC int  Stt_311_Fisk_WhistlersSword_Condition()
 
 FUNC VOID  Stt_311_Fisk_WhistlersSword_Info()
 {
-	AI_Output (other, self,"Stt_311_Fisk_WhistlersSword_15_00"); //Я хочу купить меч. Но не простой - с какими-нибудь украшениями.
-	AI_Output (self, other,"Stt_311_Fisk_WhistlersSword_12_01"); //Этот тебе должен понравиться. Призрак, который присмотрел его для себя, больше уже не придет.
-	AI_Output (self, other,"Stt_311_Fisk_WhistlersSword_12_02"); //Он стоит 110 кусков руды. Показать?
+	AI_Output (other, self,"Stt_311_Fisk_WhistlersSword_15_00"); //РЇ С…РѕС‡Сѓ РєСѓРїРёС‚СЊ РјРµС‡. РќРѕ РЅРµ РїСЂРѕСЃС‚РѕР№ - СЃ РєР°РєРёРјРё-РЅРёР±СѓРґСЊ СѓРєСЂР°С€РµРЅРёСЏРјРё.
+	AI_Output (self, other,"Stt_311_Fisk_WhistlersSword_12_01"); //Р­С‚РѕС‚ С‚РµР±Рµ РґРѕР»Р¶РµРЅ РїРѕРЅСЂР°РІРёС‚СЊСЃСЏ. РџСЂРёР·СЂР°Рє, РєРѕС‚РѕСЂС‹Р№ РїСЂРёСЃРјРѕС‚СЂРµР» РµРіРѕ РґР»СЏ СЃРµР±СЏ, Р±РѕР»СЊС€Рµ СѓР¶Рµ РЅРµ РїСЂРёРґРµС‚.
+	AI_Output (self, other,"Stt_311_Fisk_WhistlersSword_12_02"); //РћРЅ СЃС‚РѕРёС‚ 110 РєСѓСЃРєРѕРІ СЂСѓРґС‹. РџРѕРєР°Р·Р°С‚СЊ?
 	Fisk_SCknows110 = TRUE;
 
 	Info_ClearChoices	(Stt_311_Fisk_WhistlersSword );
-	Info_AddChoice		(Stt_311_Fisk_WhistlersSword,"В другой раз.",Stt_311_Fisk_WhistlersSword_BACK);
-	Info_AddChoice		(Stt_311_Fisk_WhistlersSword,"Уистлеру ты хотел продать его за сотню...",Stt_311_Fisk_WhistlersSword_Fault);
-	Info_AddChoice		(Stt_311_Fisk_WhistlersSword,"Беру.",Stt_311_Fisk_WhistlersSword_TakeIt);
+	Info_AddChoice		(Stt_311_Fisk_WhistlersSword,"Р’ РґСЂСѓРіРѕР№ СЂР°Р·.",Stt_311_Fisk_WhistlersSword_BACK);
+	Info_AddChoice		(Stt_311_Fisk_WhistlersSword,"РЈРёСЃС‚Р»РµСЂСѓ С‚С‹ С…РѕС‚РµР» РїСЂРѕРґР°С‚СЊ РµРіРѕ Р·Р° СЃРѕС‚РЅСЋ...",Stt_311_Fisk_WhistlersSword_Fault);
+	Info_AddChoice		(Stt_311_Fisk_WhistlersSword,"Р‘РµСЂСѓ.",Stt_311_Fisk_WhistlersSword_TakeIt);
 };
 
 func void Stt_311_Fisk_WhistlersSword_BACK()
 {
-	AI_Output (other, self,"Org_826_Mordrag_WhistlersSword_BACK_15_00"); //В другой раз.
+	AI_Output (other, self,"Org_826_Mordrag_WhistlersSword_BACK_15_00"); //Р’ РґСЂСѓРіРѕР№ СЂР°Р·.
 	Info_ClearChoices	(Stt_311_Fisk_WhistlersSword );
 };
 
 func void Stt_311_Fisk_WhistlersSword_Fault()
 {
-	AI_Output (other, self,"Stt_311_Fisk_WhistlersSword_Fault_15_00"); //Уистлеру ты хотел продать его за сотню...
-	AI_Output (self, other,"Stt_311_Fisk_WhistlersSword_Fault_12_01"); //А! Постой-ка... Да, верно, я назвал тебе не ту цену. Конечно, я хотел сказать 500 кусков!
-	AI_Output (other, self,"Stt_311_Fisk_WhistlersSword_Fault_15_02"); //Пять сотен???
-	AI_Output (self, other,"Stt_311_Fisk_WhistlersSword_Fault_12_03"); //Слишком мало? Предпочитаешь 1000? Буду только рад. А вообще знаешь - я наверное просто оставлю его себе!
+	AI_Output (other, self,"Stt_311_Fisk_WhistlersSword_Fault_15_00"); //РЈРёСЃС‚Р»РµСЂСѓ С‚С‹ С…РѕС‚РµР» РїСЂРѕРґР°С‚СЊ РµРіРѕ Р·Р° СЃРѕС‚РЅСЋ...
+	AI_Output (self, other,"Stt_311_Fisk_WhistlersSword_Fault_12_01"); //Рђ! РџРѕСЃС‚РѕР№-РєР°... Р”Р°, РІРµСЂРЅРѕ, СЏ РЅР°Р·РІР°Р» С‚РµР±Рµ РЅРµ С‚Сѓ С†РµРЅСѓ. РљРѕРЅРµС‡РЅРѕ, СЏ С…РѕС‚РµР» СЃРєР°Р·Р°С‚СЊ 500 РєСѓСЃРєРѕРІ!
+	AI_Output (other, self,"Stt_311_Fisk_WhistlersSword_Fault_15_02"); //РџСЏС‚СЊ СЃРѕС‚РµРЅ???
+	AI_Output (self, other,"Stt_311_Fisk_WhistlersSword_Fault_12_03"); //РЎР»РёС€РєРѕРј РјР°Р»Рѕ? РџСЂРµРґРїРѕС‡РёС‚Р°РµС€СЊ 1000? Р‘СѓРґСѓ С‚РѕР»СЊРєРѕ СЂР°Рґ. Рђ РІРѕРѕР±С‰Рµ Р·РЅР°РµС€СЊ - СЏ РЅР°РІРµСЂРЅРѕРµ РїСЂРѕСЃС‚Рѕ РѕСЃС‚Р°РІР»СЋ РµРіРѕ СЃРµР±Рµ!
 	
 	Fisk_ForgetSword = TRUE;
 	Info_ClearChoices	(Stt_311_Fisk_WhistlersSword );
@@ -126,11 +126,11 @@ func void Stt_311_Fisk_WhistlersSword_Fault()
 
 func void Stt_311_Fisk_WhistlersSword_TakeIt()
 {
-	AI_Output (other, self,"Stt_311_Fisk_WhistlersSword_TakeIt_15_00"); //Беру.
+	AI_Output (other, self,"Stt_311_Fisk_WhistlersSword_TakeIt_15_00"); //Р‘РµСЂСѓ.
 	
 	if (Npc_HasItems(other,itminugget) >= 110)
 	{
-		AI_Output (self, other,"Stt_311_Fisk_WhistlersSword_TakeIt_12_01"); //По рукам!
+		AI_Output (self, other,"Stt_311_Fisk_WhistlersSword_TakeIt_12_01"); //РџРѕ СЂСѓРєР°Рј!
 		B_GiveInvItems(other, self,itminugget,110);
 		CreateInvItem (self,Whistlers_Schwert);
 		B_GiveInvItems(self, other,Whistlers_Schwert,1);
@@ -140,7 +140,7 @@ func void Stt_311_Fisk_WhistlersSword_TakeIt()
 	}
 	else
 	{
-		AI_Output (self, other,"Stt_311_Fisk_WhistlersSword_TakeIt_12_02"); //Боюсь, у тебя не хватает руды. Я придержу его немного, но ты лучше поторопись.
+		AI_Output (self, other,"Stt_311_Fisk_WhistlersSword_TakeIt_12_02"); //Р‘РѕСЋСЃСЊ, Сѓ С‚РµР±СЏ РЅРµ С…РІР°С‚Р°РµС‚ СЂСѓРґС‹. РЇ РїСЂРёРґРµСЂР¶Сѓ РµРіРѕ РЅРµРјРЅРѕРіРѕ, РЅРѕ С‚С‹ Р»СѓС‡С€Рµ РїРѕС‚РѕСЂРѕРїРёСЃСЊ.
 	};
 };
 
@@ -155,7 +155,7 @@ instance  Stt_311_Fisk_ForgetSword (C_INFO)
 	condition	= Stt_311_Fisk_ForgetSword_Condition;
 	information	= Stt_311_Fisk_ForgetSword_Info;
 	permanent	= 1;
-	description = "По поводу меча Уистлера...";
+	description = "РџРѕ РїРѕРІРѕРґСѓ РјРµС‡Р° РЈРёСЃС‚Р»РµСЂР°...";
 };                       
 
 FUNC int  Stt_311_Fisk_ForgetSword_Condition()
@@ -168,8 +168,8 @@ FUNC int  Stt_311_Fisk_ForgetSword_Condition()
 
 FUNC VOID  Stt_311_Fisk_ForgetSword_Info()
 {
-	AI_Output (other, self,"Stt_311_Fisk_ForgetSword_15_00"); //Возвращаясь к разговору о мече Уистлера...
-	AI_Output (self, other,"Stt_311_Fisk_ForgetSword_12_01"); //Можешь передать ему, что этот меч он никогда не получит!
+	AI_Output (other, self,"Stt_311_Fisk_ForgetSword_15_00"); //Р’РѕР·РІСЂР°С‰Р°СЏСЃСЊ Рє СЂР°Р·РіРѕРІРѕСЂСѓ Рѕ РјРµС‡Рµ РЈРёСЃС‚Р»РµСЂР°...
+	AI_Output (self, other,"Stt_311_Fisk_ForgetSword_12_01"); //РњРѕР¶РµС€СЊ РїРµСЂРµРґР°С‚СЊ РµРјСѓ, С‡С‚Рѕ СЌС‚РѕС‚ РјРµС‡ РѕРЅ РЅРёРєРѕРіРґР° РЅРµ РїРѕР»СѓС‡РёС‚!
 };
 
 // **************************************************
@@ -199,33 +199,33 @@ FUNC int  Stt_311_Fisk_MordragKO_Condition()
 
 FUNC VOID  Stt_311_Fisk_MordragKO_Info()
 {
-	AI_Output (self, other,"Stt_311_Fisk_MordragKO_12_00"); //Эй, ты!
-	AI_Output (self, other,"Stt_311_Fisk_MordragKO_12_01"); //Мордраг был одним из моих главных поставщиков, ты, идиот!
-	AI_Output (self, other,"Stt_311_Fisk_MordragKO_12_02"); //Если ты хочешь присоединиться к этому Лагерю, тебе будет очень сложно заручиться МОЕЙ поддержкой!
+	AI_Output (self, other,"Stt_311_Fisk_MordragKO_12_00"); //Р­Р№, С‚С‹!
+	AI_Output (self, other,"Stt_311_Fisk_MordragKO_12_01"); //РњРѕСЂРґСЂР°Рі Р±С‹Р» РѕРґРЅРёРј РёР· РјРѕРёС… РіР»Р°РІРЅС‹С… РїРѕСЃС‚Р°РІС‰РёРєРѕРІ, С‚С‹, РёРґРёРѕС‚!
+	AI_Output (self, other,"Stt_311_Fisk_MordragKO_12_02"); //Р•СЃР»Рё С‚С‹ С…РѕС‡РµС€СЊ РїСЂРёСЃРѕРµРґРёРЅРёС‚СЊСЃСЏ Рє СЌС‚РѕРјСѓ Р›Р°РіРµСЂСЋ, С‚РµР±Рµ Р±СѓРґРµС‚ РѕС‡РµРЅСЊ СЃР»РѕР¶РЅРѕ Р·Р°СЂСѓС‡РёС‚СЊСЃСЏ РњРћР•Р™ РїРѕРґРґРµСЂР¶РєРѕР№!
 
 	Info_ClearChoices(Stt_311_Fisk_MordragKO);
-	Info_AddChoice   (Stt_311_Fisk_MordragKO,"Торгуешь вещами Баронов! Торуса это заинтересует...",Stt_311_Fisk_MordragKO_Petze);
-	Info_AddChoice   (Stt_311_Fisk_MordragKO,"Расслабься! Может быть я смогу все уладить?",Stt_311_Fisk_MordragKO_Relax);
-	Info_AddChoice	 (Stt_311_Fisk_MordragKO,"В таком случае, шел бы ты...",Stt_311_Fisk_MordragKO_FuckOff);
+	Info_AddChoice   (Stt_311_Fisk_MordragKO,"РўРѕСЂРіСѓРµС€СЊ РІРµС‰Р°РјРё Р‘Р°СЂРѕРЅРѕРІ! РўРѕСЂСѓСЃР° СЌС‚Рѕ Р·Р°РёРЅС‚РµСЂРµСЃСѓРµС‚...",Stt_311_Fisk_MordragKO_Petze);
+	Info_AddChoice   (Stt_311_Fisk_MordragKO,"Р Р°СЃСЃР»Р°Р±СЊСЃСЏ! РњРѕР¶РµС‚ Р±С‹С‚СЊ СЏ СЃРјРѕРіСѓ РІСЃРµ СѓР»Р°РґРёС‚СЊ?",Stt_311_Fisk_MordragKO_Relax);
+	Info_AddChoice	 (Stt_311_Fisk_MordragKO,"Р’ С‚Р°РєРѕРј СЃР»СѓС‡Р°Рµ, С€РµР» Р±С‹ С‚С‹...",Stt_311_Fisk_MordragKO_FuckOff);
 };
 
 func void Stt_311_Fisk_MordragKO_Relax()
 {
-	AI_Output (other, self,"Stt_311_Fisk_MordragKO_Relax_15_00"); //Расслабься! Может быть я смогу все уладить?
-	AI_Output (self, other,"Stt_311_Fisk_MordragKO_Relax_12_01"); //Не вижу способа. Если, конечно, ты не найдешь мне другого поставщика в Новом Лагере!
-	AI_Output (other, self,"Stt_311_Fisk_MordragKO_Relax_15_02"); //Где же мне его искать?
-	AI_Output (self, other,"Stt_311_Fisk_MordragKO_Relax_12_03"); //Не моя забота. Я же сказал, что тебе нелегко будет наладить со мной отношения.
+	AI_Output (other, self,"Stt_311_Fisk_MordragKO_Relax_15_00"); //Р Р°СЃСЃР»Р°Р±СЊСЃСЏ! РњРѕР¶РµС‚ Р±С‹С‚СЊ СЏ СЃРјРѕРіСѓ РІСЃРµ СѓР»Р°РґРёС‚СЊ?
+	AI_Output (self, other,"Stt_311_Fisk_MordragKO_Relax_12_01"); //РќРµ РІРёР¶Сѓ СЃРїРѕСЃРѕР±Р°. Р•СЃР»Рё, РєРѕРЅРµС‡РЅРѕ, С‚С‹ РЅРµ РЅР°Р№РґРµС€СЊ РјРЅРµ РґСЂСѓРіРѕРіРѕ РїРѕСЃС‚Р°РІС‰РёРєР° РІ РќРѕРІРѕРј Р›Р°РіРµСЂРµ!
+	AI_Output (other, self,"Stt_311_Fisk_MordragKO_Relax_15_02"); //Р“РґРµ Р¶Рµ РјРЅРµ РµРіРѕ РёСЃРєР°С‚СЊ?
+	AI_Output (self, other,"Stt_311_Fisk_MordragKO_Relax_12_03"); //РќРµ РјРѕСЏ Р·Р°Р±РѕС‚Р°. РЇ Р¶Рµ СЃРєР°Р·Р°Р», С‡С‚Рѕ С‚РµР±Рµ РЅРµР»РµРіРєРѕ Р±СѓРґРµС‚ РЅР°Р»Р°РґРёС‚СЊ СЃРѕ РјРЅРѕР№ РѕС‚РЅРѕС€РµРЅРёСЏ.
 	
 	Log_CreateTopic(CH1_FiskNewDealer, LOG_MISSION);
 	Log_SetTopicStatus(CH1_FiskNewDealer, LOG_RUNNING);
-	B_LogEntry( CH1_FiskNewDealer,"Торговец Фиск на рынке в Старом Лагере хочет, чтобы я подыскал ему новую крышу взамен побитого мной Мордрага.");
+	B_LogEntry( CH1_FiskNewDealer,"РўРѕСЂРіРѕРІРµС† Р¤РёСЃРє РЅР° СЂС‹РЅРєРµ РІ РЎС‚Р°СЂРѕРј Р›Р°РіРµСЂРµ С…РѕС‡РµС‚, С‡С‚РѕР±С‹ СЏ РїРѕРґС‹СЃРєР°Р» РµРјСѓ РЅРѕРІСѓСЋ РєСЂС‹С€Сѓ РІР·Р°РјРµРЅ РїРѕР±РёС‚РѕРіРѕ РјРЅРѕР№ РњРѕСЂРґСЂР°РіР°.");
 	
 	Fisk_GetNewHehler = LOG_RUNNING;
 };
 
 func void Stt_311_Fisk_MordragKO_FuckOff()
 {
-	AI_Output (other, self,"Stt_311_Fisk_MordragKO_FuckOff_15_00"); //В таком случае, шел бы ты...
+	AI_Output (other, self,"Stt_311_Fisk_MordragKO_FuckOff_15_00"); //Р’ С‚Р°РєРѕРј СЃР»СѓС‡Р°Рµ, С€РµР» Р±С‹ С‚С‹...
 	Info_ClearChoices(Stt_311_Fisk_MordragKO);
 	
 	AI_StopProcessInfos	(self);
@@ -233,8 +233,8 @@ func void Stt_311_Fisk_MordragKO_FuckOff()
 
 func void Stt_311_Fisk_MordragKO_Petze()
 {
-	AI_Output (other, self,"Stt_311_Fisk_MordragKO_Petze_15_00"); //Ты продаешь товар, который принадлежит Баронам. Уверен, Торусу интересно будет узнать об этом...
-	AI_Output (self, other,"Stt_311_Fisk_MordragKO_Petze_12_01"); //Даже не пытайся сыграть на этом, парень!
+	AI_Output (other, self,"Stt_311_Fisk_MordragKO_Petze_15_00"); //РўС‹ РїСЂРѕРґР°РµС€СЊ С‚РѕРІР°СЂ, РєРѕС‚РѕСЂС‹Р№ РїСЂРёРЅР°РґР»РµР¶РёС‚ Р‘Р°СЂРѕРЅР°Рј. РЈРІРµСЂРµРЅ, РўРѕСЂСѓСЃСѓ РёРЅС‚РµСЂРµСЃРЅРѕ Р±СѓРґРµС‚ СѓР·РЅР°С‚СЊ РѕР± СЌС‚РѕРј...
+	AI_Output (self, other,"Stt_311_Fisk_MordragKO_Petze_12_01"); //Р”Р°Р¶Рµ РЅРµ РїС‹С‚Р°Р№СЃСЏ СЃС‹РіСЂР°С‚СЊ РЅР° СЌС‚РѕРј, РїР°СЂРµРЅСЊ!
 };
 
 // **************************************************
@@ -248,7 +248,7 @@ instance  Stt_311_Fisk_HehlerSuccess (C_INFO)
 	condition	= Stt_311_Fisk_HehlerSuccess_Condition;
 	information	= Stt_311_Fisk_HehlerSuccess_Info;
 	permanent	= 0;
-	description	= "Кое-кто из Нового Лагеря хочет вести с тобой дело.";
+	description	= "РљРѕРµ-РєС‚Рѕ РёР· РќРѕРІРѕРіРѕ Р›Р°РіРµСЂСЏ С…РѕС‡РµС‚ РІРµСЃС‚Рё СЃ С‚РѕР±РѕР№ РґРµР»Рѕ.";
 };                       
 
 FUNC int  Stt_311_Fisk_HehlerSuccess_Condition()
@@ -261,21 +261,21 @@ FUNC int  Stt_311_Fisk_HehlerSuccess_Condition()
 
 FUNC VOID  Stt_311_Fisk_HehlerSuccess_Info()
 {
-	AI_Output (other, self,"Stt_311_Fisk_HehlerSuccess_15_00"); //Кое-кто из Нового Лагеря хочет вести с тобой дело.
-	AI_Output (self, other,"Stt_311_Fisk_HehlerSuccess_12_01"); //Кто бы мог подумать. Похоже, ты вновь завоевываешь друзей...
-	AI_Output (self, other,"Stt_311_Fisk_HehlerSuccess_12_02"); //Не знаю, как тебе это удалось. Как его зовут?
-	AI_Output (other, self,"Stt_311_Fisk_HehlerSuccess_15_03"); //Его зовут Шарки.
-	AI_Output (self, other,"Stt_311_Fisk_HehlerSuccess_12_04"); //Шарки? Это еще хуже, чем Мордраг.
-	AI_Output (self, other,"Stt_311_Fisk_HehlerSuccess_12_05"); //По поводу Диего... Ты можешь больше не волноваться.
+	AI_Output (other, self,"Stt_311_Fisk_HehlerSuccess_15_00"); //РљРѕРµ-РєС‚Рѕ РёР· РќРѕРІРѕРіРѕ Р›Р°РіРµСЂСЏ С…РѕС‡РµС‚ РІРµСЃС‚Рё СЃ С‚РѕР±РѕР№ РґРµР»Рѕ.
+	AI_Output (self, other,"Stt_311_Fisk_HehlerSuccess_12_01"); //РљС‚Рѕ Р±С‹ РјРѕРі РїРѕРґСѓРјР°С‚СЊ. РџРѕС…РѕР¶Рµ, С‚С‹ РІРЅРѕРІСЊ Р·Р°РІРѕРµРІС‹РІР°РµС€СЊ РґСЂСѓР·РµР№...
+	AI_Output (self, other,"Stt_311_Fisk_HehlerSuccess_12_02"); //РќРµ Р·РЅР°СЋ, РєР°Рє С‚РµР±Рµ СЌС‚Рѕ СѓРґР°Р»РѕСЃСЊ. РљР°Рє РµРіРѕ Р·РѕРІСѓС‚?
+	AI_Output (other, self,"Stt_311_Fisk_HehlerSuccess_15_03"); //Р•РіРѕ Р·РѕРІСѓС‚ РЁР°СЂРєРё.
+	AI_Output (self, other,"Stt_311_Fisk_HehlerSuccess_12_04"); //РЁР°СЂРєРё? Р­С‚Рѕ РµС‰Рµ С…СѓР¶Рµ, С‡РµРј РњРѕСЂРґСЂР°Рі.
+	AI_Output (self, other,"Stt_311_Fisk_HehlerSuccess_12_05"); //РџРѕ РїРѕРІРѕРґСѓ Р”РёРµРіРѕ... РўС‹ РјРѕР¶РµС€СЊ Р±РѕР»СЊС€Рµ РЅРµ РІРѕР»РЅРѕРІР°С‚СЊСЃСЏ.
 	
 	Fisk_GetNewHehler = LOG_SUCCESS;
 	B_GiveXP(XP_fiskdealer);
 
 	Log_SetTopicStatus(CH1_FiskNewDealer, LOG_SUCCESS);
-	B_LogEntry( CH1_FiskNewDealer,"Фиск доволен, потому что Шарки займется тем, чем занимался Мордраг.");
+	B_LogEntry( CH1_FiskNewDealer,"Р¤РёСЃРє РґРѕРІРѕР»РµРЅ, РїРѕС‚РѕРјСѓ С‡С‚Рѕ РЁР°СЂРєРё Р·Р°Р№РјРµС‚СЃСЏ С‚РµРј, С‡РµРј Р·Р°РЅРёРјР°Р»СЃСЏ РњРѕСЂРґСЂР°Рі.");
 };
 /*------------------------------------------------------------------------
-							RЬSTUNG									
+							RР¬STUNG									
 ------------------------------------------------------------------------*/
 
 instance  Stt_311_Fisk_ARMOR (C_INFO)
@@ -285,7 +285,7 @@ instance  Stt_311_Fisk_ARMOR (C_INFO)
 	information		= Stt_311_Fisk_ARMOR_Info;
 	important		= 0;
 	permanent		= 1;
-	description		= "У тебя есть для меня доспехи?"; 
+	description		= "РЈ С‚РµР±СЏ РµСЃС‚СЊ РґР»СЏ РјРµРЅСЏ РґРѕСЃРїРµС…Рё?"; 
 };
 
 FUNC int  Stt_311_Fisk_ARMOR_Condition()
@@ -299,8 +299,8 @@ FUNC int  Stt_311_Fisk_ARMOR_Condition()
 };
 FUNC void  Stt_311_Fisk_ARMOR_Info()
 {
-	AI_Output (other, self,"Stt_311_Fisk_ARMOR_Info_15_01"); //У тебя есть для меня доспехи?
-	AI_Output (self, other,"Stt_311_Fisk_ARMOR_Info_12_02"); //Уверен, что мы что-нибудь обязательно подыщем.
+	AI_Output (other, self,"Stt_311_Fisk_ARMOR_Info_15_01"); //РЈ С‚РµР±СЏ РµСЃС‚СЊ РґР»СЏ РјРµРЅСЏ РґРѕСЃРїРµС…Рё?
+	AI_Output (self, other,"Stt_311_Fisk_ARMOR_Info_12_02"); //РЈРІРµСЂРµРЅ, С‡С‚Рѕ РјС‹ С‡С‚Рѕ-РЅРёР±СѓРґСЊ РѕР±СЏР·Р°С‚РµР»СЊРЅРѕ РїРѕРґС‹С‰РµРј.
 	Info_ClearChoices (Stt_311_Fisk_ARMOR);
 	Info_Addchoice (Stt_311_Fisk_ARMOR,DIALOG_BACK,Stt_311_Fisk_ARMOR_BACK);
 	Info_Addchoice (Stt_311_Fisk_ARMOR,B_BuildBuyArmorString(NAME_FiskLightDiggers,VALUE_VLK_ARMOR_L),Stt_311_Fisk_ARMOR_L);
@@ -315,15 +315,15 @@ func void Stt_311_Fisk_ARMOR_BACK()
 
 func void Stt_311_Fisk_ARMOR_L()
 {
-	AI_Output (other, self,"Stt_311_Fisk_ARMOR_L_Info_15_01"); //У тебя есть простые штаны для рудокопа?
+	AI_Output (other, self,"Stt_311_Fisk_ARMOR_L_Info_15_01"); //РЈ С‚РµР±СЏ РµСЃС‚СЊ РїСЂРѕСЃС‚С‹Рµ С€С‚Р°РЅС‹ РґР»СЏ СЂСѓРґРѕРєРѕРїР°?
 	
 	if (Npc_HasItems (hero,ItMiNugget) <  VALUE_VLK_ARMOR_L)
 	{
-		AI_Output (self, other,"Stt_311_Fisk_ARMOR_L_Info_12_02"); //Возвращайся, когда у тебя будет руда!
+		AI_Output (self, other,"Stt_311_Fisk_ARMOR_L_Info_12_02"); //Р’РѕР·РІСЂР°С‰Р°Р№СЃСЏ, РєРѕРіРґР° Сѓ С‚РµР±СЏ Р±СѓРґРµС‚ СЂСѓРґР°!
 	}
 	else
 	{
-		AI_Output		(self,	other,	"Stt_311_Fisk_ARMOR_L_Info_12_03"); //Хороший выбор!
+		AI_Output		(self,	other,	"Stt_311_Fisk_ARMOR_L_Info_12_03"); //РҐРѕСЂРѕС€РёР№ РІС‹Р±РѕСЂ!
 		B_GiveInvItems	(hero,	self,	ItMinugget, VALUE_VLK_ARMOR_L);
 		CreateInvItem	(self,			VLK_ARMOR_L);
 		B_GiveInvItems	(self,	hero,	VLK_ARMOR_L, 1);
@@ -332,14 +332,14 @@ func void Stt_311_Fisk_ARMOR_L()
 
 func void Stt_311_Fisk_ARMOR_M()
 {
-	AI_Output (other, self,"Stt_311_Fisk_ARMOR_M_Info_15_01"); //У тебя есть штаны для рудокопа?
+	AI_Output (other, self,"Stt_311_Fisk_ARMOR_M_Info_15_01"); //РЈ С‚РµР±СЏ РµСЃС‚СЊ С€С‚Р°РЅС‹ РґР»СЏ СЂСѓРґРѕРєРѕРїР°?
 	if (Npc_HasItems (hero,ItMiNugget) <  VALUE_VLK_ARMOR_M)
 	{
-		AI_Output (self, other,"Stt_311_Fisk_ARMOR_M_Info_12_02"); //Возвращайся, когда у тебя будет руда!
+		AI_Output (self, other,"Stt_311_Fisk_ARMOR_M_Info_12_02"); //Р’РѕР·РІСЂР°С‰Р°Р№СЃСЏ, РєРѕРіРґР° Сѓ С‚РµР±СЏ Р±СѓРґРµС‚ СЂСѓРґР°!
 	}
 	else
 	{
-		AI_Output		(self, other,"Stt_311_Fisk_ARMOR_M_Info_12_03"); //Хороший выбор!
+		AI_Output		(self, other,"Stt_311_Fisk_ARMOR_M_Info_12_03"); //РҐРѕСЂРѕС€РёР№ РІС‹Р±РѕСЂ!
 		B_GiveInvItems	(hero, self, ItMinugget, VALUE_VLK_ARMOR_M);
 		CreateInvItem	(self, VLK_ARMOR_M);
 		B_GiveInvItems	(self,hero, VLK_ARMOR_M, 1);

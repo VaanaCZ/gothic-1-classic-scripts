@@ -23,7 +23,7 @@ FUNC VOID  DIA_Rodriguez_Exit_Info()
 };
 
 //***********************************************
-//				Hallo und tschьЯ
+//				Hallo und tschСЊРЇ
 //***********************************************
 
 instance  DIA_Rodriguez_Hello (C_INFO)
@@ -33,7 +33,7 @@ instance  DIA_Rodriguez_Hello (C_INFO)
 	condition	=  DIA_Rodriguez_Hello_Condition;
 	information	=  DIA_Rodriguez_Hello_Info;
 	permanent	=  1;
-	description =  "Я ищу Верховного Мага Круга Огня!";
+	description =  "РЇ РёС‰Сѓ Р’РµСЂС…РѕРІРЅРѕРіРѕ РњР°РіР° РљСЂСѓРіР° РћРіРЅСЏ!";
 };                       
 
 FUNC int  DIA_Rodriguez_Hello_Condition()
@@ -46,7 +46,7 @@ FUNC int  DIA_Rodriguez_Hello_Condition()
 
 FUNC VOID  DIA_Rodriguez_Hello_Info()
 {
-	AI_Output (other, self,"DIA_Rodriguez_Hello_15_00"); //Я ищу Верховного Мага Круга Огня!
-	AI_Output (self, other,"DIA_Rodriguez_Hello_12_01"); //Отправляйся к Мильтену. Он у нас занимается посыльными.
+	AI_Output (other, self,"DIA_Rodriguez_Hello_15_00"); //РЇ РёС‰Сѓ Р’РµСЂС…РѕРІРЅРѕРіРѕ РњР°РіР° РљСЂСѓРіР° РћРіРЅСЏ!
+	AI_Output (self, other,"DIA_Rodriguez_Hello_12_01"); //РћС‚РїСЂР°РІР»СЏР№СЃСЏ Рє РњРёР»СЊС‚РµРЅСѓ. РћРЅ Сѓ РЅР°СЃ Р·Р°РЅРёРјР°РµС‚СЃСЏ РїРѕСЃС‹Р»СЊРЅС‹РјРё.
 	AI_StopProcessInfos	( self );
 };

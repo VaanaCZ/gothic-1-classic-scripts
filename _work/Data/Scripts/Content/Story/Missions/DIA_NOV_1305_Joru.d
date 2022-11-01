@@ -33,7 +33,7 @@ instance  DIA_Joru_Greet (C_INFO)
 	condition	= DIA_Joru_Greet_Condition;
 	information	= DIA_Joru_Greet_Info;
 	permanent	= 0;
-	description = "Чем ты занимаешься?";
+	description = "Р§РµРј С‚С‹ Р·Р°РЅРёРјР°РµС€СЊСЃСЏ?";
 };                       
 
 FUNC int  DIA_Joru_Greet_Condition()
@@ -43,12 +43,12 @@ FUNC int  DIA_Joru_Greet_Condition()
 
 FUNC VOID  DIA_Joru_Greet_Info()
 {
-	AI_Output (other, self,"DIA_Joru_Greet_15_00"); //Чем ты занимаешься?
-	AI_Output (self, other,"DIA_Joru_Greet_07_01"); //Я несу ученикам слово Спящего.
-	AI_Output (self, other,"DIA_Joru_Greet_07_02"); //Я сам пока еще учусь, но скоро я буду Идолом - одним из Гуру.
-	AI_Output (self, other,"DIA_Joru_Greet_07_03"); //Я даже говорил с самим Ю`Берионом. Он - Избранный. Он сказал мне, что если я буду много трудиться, я вскоре сам стану господином.
-	AI_Output (self, other,"DIA_Joru_Greet_07_04"); //Но я не тороплюсь с этим. Господином я могу стать в любой момент, понимаешь?
-	AI_Output (self, other,"DIA_Joru_Greet_07_05"); //А пока мне нравится то дело, которым я занимаюсь сейчас.
+	AI_Output (other, self,"DIA_Joru_Greet_15_00"); //Р§РµРј С‚С‹ Р·Р°РЅРёРјР°РµС€СЊСЃСЏ?
+	AI_Output (self, other,"DIA_Joru_Greet_07_01"); //РЇ РЅРµСЃСѓ СѓС‡РµРЅРёРєР°Рј СЃР»РѕРІРѕ РЎРїСЏС‰РµРіРѕ.
+	AI_Output (self, other,"DIA_Joru_Greet_07_02"); //РЇ СЃР°Рј РїРѕРєР° РµС‰Рµ СѓС‡СѓСЃСЊ, РЅРѕ СЃРєРѕСЂРѕ СЏ Р±СѓРґСѓ РРґРѕР»РѕРј - РѕРґРЅРёРј РёР· Р“СѓСЂСѓ.
+	AI_Output (self, other,"DIA_Joru_Greet_07_03"); //РЇ РґР°Р¶Рµ РіРѕРІРѕСЂРёР» СЃ СЃР°РјРёРј Р®`Р‘РµСЂРёРѕРЅРѕРј. РћРЅ - РР·Р±СЂР°РЅРЅС‹Р№. РћРЅ СЃРєР°Р·Р°Р» РјРЅРµ, С‡С‚Рѕ РµСЃР»Рё СЏ Р±СѓРґСѓ РјРЅРѕРіРѕ С‚СЂСѓРґРёС‚СЊСЃСЏ, СЏ РІСЃРєРѕСЂРµ СЃР°Рј СЃС‚Р°РЅСѓ РіРѕСЃРїРѕРґРёРЅРѕРј.
+	AI_Output (self, other,"DIA_Joru_Greet_07_04"); //РќРѕ СЏ РЅРµ С‚РѕСЂРѕРїР»СЋСЃСЊ СЃ СЌС‚РёРј. Р“РѕСЃРїРѕРґРёРЅРѕРј СЏ РјРѕРіСѓ СЃС‚Р°С‚СЊ РІ Р»СЋР±РѕР№ РјРѕРјРµРЅС‚, РїРѕРЅРёРјР°РµС€СЊ?
+	AI_Output (self, other,"DIA_Joru_Greet_07_05"); //Рђ РїРѕРєР° РјРЅРµ РЅСЂР°РІРёС‚СЃСЏ С‚Рѕ РґРµР»Рѕ, РєРѕС‚РѕСЂС‹Рј СЏ Р·Р°РЅРёРјР°СЋСЃСЊ СЃРµР№С‡Р°СЃ.
 };
 
 // **************************************************
@@ -62,7 +62,7 @@ instance  DIA_Joru_Tester (C_INFO)
 	condition	= DIA_Joru_Tester_Condition;
 	information	= DIA_Joru_Tester_Info;
 	permanent	= 0;
-	description = "Чем ты занимаешься?";
+	description = "Р§РµРј С‚С‹ Р·Р°РЅРёРјР°РµС€СЊСЃСЏ?";
 };                       
 
 FUNC int  DIA_Joru_Tester_Condition()
@@ -75,10 +75,10 @@ FUNC int  DIA_Joru_Tester_Condition()
 
 FUNC VOID  DIA_Joru_Tester_Info()
 {
-	AI_Output (other, self,"DIA_Joru_Tester_15_00"); //Чем ты занимаешься?
-	AI_Output (self, other,"DIA_Joru_Tester_07_01"); //Вместе с моими друзьями я испытываю новые эликсиры, которые Кор Галом создает в своей лаборатории.
-	AI_Output (self, other,"DIA_Joru_Tester_07_02"); //Раз в несколько дней его помощник выдает нам новые образцы. И мы испытываем их.
-	AI_Output (self, other,"DIA_Joru_Tester_07_03"); //Эта трава раскрывает твое сознание. Приняв правильную дозу, ты можешь говорить со Спящим.
+	AI_Output (other, self,"DIA_Joru_Tester_15_00"); //Р§РµРј С‚С‹ Р·Р°РЅРёРјР°РµС€СЊСЃСЏ?
+	AI_Output (self, other,"DIA_Joru_Tester_07_01"); //Р’РјРµСЃС‚Рµ СЃ РјРѕРёРјРё РґСЂСѓР·СЊСЏРјРё СЏ РёСЃРїС‹С‚С‹РІР°СЋ РЅРѕРІС‹Рµ СЌР»РёРєСЃРёСЂС‹, РєРѕС‚РѕСЂС‹Рµ РљРѕСЂ Р“Р°Р»РѕРј СЃРѕР·РґР°РµС‚ РІ СЃРІРѕРµР№ Р»Р°Р±РѕСЂР°С‚РѕСЂРёРё.
+	AI_Output (self, other,"DIA_Joru_Tester_07_02"); //Р Р°Р· РІ РЅРµСЃРєРѕР»СЊРєРѕ РґРЅРµР№ РµРіРѕ РїРѕРјРѕС‰РЅРёРє РІС‹РґР°РµС‚ РЅР°Рј РЅРѕРІС‹Рµ РѕР±СЂР°Р·С†С‹. Р РјС‹ РёСЃРїС‹С‚С‹РІР°РµРј РёС….
+	AI_Output (self, other,"DIA_Joru_Tester_07_03"); //Р­С‚Р° С‚СЂР°РІР° СЂР°СЃРєСЂС‹РІР°РµС‚ С‚РІРѕРµ СЃРѕР·РЅР°РЅРёРµ. РџСЂРёРЅСЏРІ РїСЂР°РІРёР»СЊРЅСѓСЋ РґРѕР·Сѓ, С‚С‹ РјРѕР¶РµС€СЊ РіРѕРІРѕСЂРёС‚СЊ СЃРѕ РЎРїСЏС‰РёРј.
 };
 
 // **************************************************
@@ -92,7 +92,7 @@ instance  DIA_Joru_SleeperContact (C_INFO)
 	condition	= DIA_Joru_SleeperContact_Condition;
 	information	= DIA_Joru_SleeperContact_Info;
 	permanent	= 0;
-	description = "И ты когда-нибудь говорил со Спящим?";
+	description = "Р С‚С‹ РєРѕРіРґР°-РЅРёР±СѓРґСЊ РіРѕРІРѕСЂРёР» СЃРѕ РЎРїСЏС‰РёРј?";
 };                       
 
 FUNC int  DIA_Joru_SleeperContact_Condition()
@@ -105,11 +105,11 @@ FUNC int  DIA_Joru_SleeperContact_Condition()
 
 FUNC VOID  DIA_Joru_SleeperContact_Info()
 {
-	AI_Output (other, self,"DIA_Joru_SleeperContact_15_00"); //И ты когда-нибудь говорил со Спящим?
-	AI_Output (self, other,"DIA_Joru_SleeperContact_07_01"); //Нет. Еще нет. И все потому, что нам не хватает этого снадобья.
-	AI_Output (self, other,"DIA_Joru_SleeperContact_07_02"); //Кор Галома интересует только результат, а мое мнение, как мне кажется, его не занимает вовсе.
-	AI_Output (self, other,"DIA_Joru_SleeperContact_07_03"); //Если состав оказывает должное действие, он сразу передает его Гуру...
-	AI_Output (self, other,"DIA_Joru_SleeperContact_07_04"); //Но скоро я и сам стану Гуру, и тогда, расширив сознание до предела, я тоже смогу услышать голос Спящего.
+	AI_Output (other, self,"DIA_Joru_SleeperContact_15_00"); //Р С‚С‹ РєРѕРіРґР°-РЅРёР±СѓРґСЊ РіРѕРІРѕСЂРёР» СЃРѕ РЎРїСЏС‰РёРј?
+	AI_Output (self, other,"DIA_Joru_SleeperContact_07_01"); //РќРµС‚. Р•С‰Рµ РЅРµС‚. Р РІСЃРµ РїРѕС‚РѕРјСѓ, С‡С‚Рѕ РЅР°Рј РЅРµ С…РІР°С‚Р°РµС‚ СЌС‚РѕРіРѕ СЃРЅР°РґРѕР±СЊСЏ.
+	AI_Output (self, other,"DIA_Joru_SleeperContact_07_02"); //РљРѕСЂ Р“Р°Р»РѕРјР° РёРЅС‚РµСЂРµСЃСѓРµС‚ С‚РѕР»СЊРєРѕ СЂРµР·СѓР»СЊС‚Р°С‚, Р° РјРѕРµ РјРЅРµРЅРёРµ, РєР°Рє РјРЅРµ РєР°Р¶РµС‚СЃСЏ, РµРіРѕ РЅРµ Р·Р°РЅРёРјР°РµС‚ РІРѕРІСЃРµ.
+	AI_Output (self, other,"DIA_Joru_SleeperContact_07_03"); //Р•СЃР»Рё СЃРѕСЃС‚Р°РІ РѕРєР°Р·С‹РІР°РµС‚ РґРѕР»Р¶РЅРѕРµ РґРµР№СЃС‚РІРёРµ, РѕРЅ СЃСЂР°Р·Сѓ РїРµСЂРµРґР°РµС‚ РµРіРѕ Р“СѓСЂСѓ...
+	AI_Output (self, other,"DIA_Joru_SleeperContact_07_04"); //РќРѕ СЃРєРѕСЂРѕ СЏ Рё СЃР°Рј СЃС‚Р°РЅСѓ Р“СѓСЂСѓ, Рё С‚РѕРіРґР°, СЂР°СЃС€РёСЂРёРІ СЃРѕР·РЅР°РЅРёРµ РґРѕ РїСЂРµРґРµР»Р°, СЏ С‚РѕР¶Рµ СЃРјРѕРіСѓ СѓСЃР»С‹С€Р°С‚СЊ РіРѕР»РѕСЃ РЎРїСЏС‰РµРіРѕ.
 };
 
 
@@ -126,7 +126,7 @@ instance  DIA_Joru_JoinPsi (C_INFO)
 	condition	= DIA_Joru_JoinPsi_Condition;
 	information	= DIA_Joru_JoinPsi_Info;
 	permanent	= 0;
-	description = "Я хотел бы присоединиться к вашему Лагерю. Ты мог бы мне помочь?";
+	description = "РЇ С…РѕС‚РµР» Р±С‹ РїСЂРёСЃРѕРµРґРёРЅРёС‚СЊСЃСЏ Рє РІР°С€РµРјСѓ Р›Р°РіРµСЂСЋ. РўС‹ РјРѕРі Р±С‹ РјРЅРµ РїРѕРјРѕС‡СЊ?";
 };                       
 
 FUNC int  DIA_Joru_JoinPsi_Condition()
@@ -140,20 +140,20 @@ FUNC int  DIA_Joru_JoinPsi_Condition()
 
 FUNC VOID  DIA_Joru_JoinPsi_Info()
 {
-	AI_Output (other, self,"DIA_Joru_JoinPsi_15_00"); //Я хотел бы присоединиться к вашему Лагерю. Ты мог бы мне помочь?
-	AI_Output (self, other,"DIA_Joru_JoinPsi_07_01"); //Ты хочешь присоединиться к нам? Хорошо! Постой-ка... да, думаю, что я смогу тебе помочь.
-	AI_Output (self, other,"DIA_Joru_JoinPsi_07_02"); //Я пока что не Гуру, но обладаю определенным влиянием в Братстве.
-	AI_Output (self, other,"DIA_Joru_JoinPsi_07_03"); //Сделай мне одолжение. Ты ведь уже говорил с Фортуно?
+	AI_Output (other, self,"DIA_Joru_JoinPsi_15_00"); //РЇ С…РѕС‚РµР» Р±С‹ РїСЂРёСЃРѕРµРґРёРЅРёС‚СЊСЃСЏ Рє РІР°С€РµРјСѓ Р›Р°РіРµСЂСЋ. РўС‹ РјРѕРі Р±С‹ РјРЅРµ РїРѕРјРѕС‡СЊ?
+	AI_Output (self, other,"DIA_Joru_JoinPsi_07_01"); //РўС‹ С…РѕС‡РµС€СЊ РїСЂРёСЃРѕРµРґРёРЅРёС‚СЊСЃСЏ Рє РЅР°Рј? РҐРѕСЂРѕС€Рѕ! РџРѕСЃС‚РѕР№-РєР°... РґР°, РґСѓРјР°СЋ, С‡С‚Рѕ СЏ СЃРјРѕРіСѓ С‚РµР±Рµ РїРѕРјРѕС‡СЊ.
+	AI_Output (self, other,"DIA_Joru_JoinPsi_07_02"); //РЇ РїРѕРєР° С‡С‚Рѕ РЅРµ Р“СѓСЂСѓ, РЅРѕ РѕР±Р»Р°РґР°СЋ РѕРїСЂРµРґРµР»РµРЅРЅС‹Рј РІР»РёСЏРЅРёРµРј РІ Р‘СЂР°С‚СЃС‚РІРµ.
+	AI_Output (self, other,"DIA_Joru_JoinPsi_07_03"); //РЎРґРµР»Р°Р№ РјРЅРµ РѕРґРѕР»Р¶РµРЅРёРµ. РўС‹ РІРµРґСЊ СѓР¶Рµ РіРѕРІРѕСЂРёР» СЃ Р¤РѕСЂС‚СѓРЅРѕ?
 	
 	Info_ClearChoices	(DIA_Joru_JoinPsi );
-	Info_AddChoice		(DIA_Joru_JoinPsi,"Нет.",DIA_Joru_JoinPsi_Nein);
-	Info_AddChoice		(DIA_Joru_JoinPsi,"Да.",DIA_Joru_JoinPsi_Ja);
+	Info_AddChoice		(DIA_Joru_JoinPsi,"РќРµС‚.",DIA_Joru_JoinPsi_Nein);
+	Info_AddChoice		(DIA_Joru_JoinPsi,"Р”Р°.",DIA_Joru_JoinPsi_Ja);
 };
 
 func void DIA_Joru_JoinPsi_Ja()
 {
-	AI_Output (self, other,"DIA_Joru_JoinPsi_Ja_07_00"); //Тогда ты должен был получить свою дневную дозу. Если ты отдашь ее мне, я постараюсь тебе помочь.
-	AI_Output (other, self,"DIA_Joru_JoinPsi_Ja_15_01"); //Я подумаю об этом.
+	AI_Output (self, other,"DIA_Joru_JoinPsi_Ja_07_00"); //РўРѕРіРґР° С‚С‹ РґРѕР»Р¶РµРЅ Р±С‹Р» РїРѕР»СѓС‡РёС‚СЊ СЃРІРѕСЋ РґРЅРµРІРЅСѓСЋ РґРѕР·Сѓ. Р•СЃР»Рё С‚С‹ РѕС‚РґР°С€СЊ РµРµ РјРЅРµ, СЏ РїРѕСЃС‚Р°СЂР°СЋСЃСЊ С‚РµР±Рµ РїРѕРјРѕС‡СЊ.
+	AI_Output (other, self,"DIA_Joru_JoinPsi_Ja_15_01"); //РЇ РїРѕРґСѓРјР°СЋ РѕР± СЌС‚РѕРј.
 	Joru_BringJoints = LOG_RUNNING; 
 	
 	Info_ClearChoices	(DIA_Joru_JoinPsi );
@@ -161,13 +161,13 @@ func void DIA_Joru_JoinPsi_Ja()
 
 func void DIA_Joru_JoinPsi_Nein()
 {
-	AI_Output (self, other,"DIA_Joru_JoinPsi_Nein_07_00"); //Так иди к нему и забери свою дневную дозу. Если ты отдашь мне свой болотник, я постараюсь помочь тебе.
-	AI_Output (other, self,"DIA_Joru_JoinPsi_Nein_15_01"); //Я подумаю об этом.
+	AI_Output (self, other,"DIA_Joru_JoinPsi_Nein_07_00"); //РўР°Рє РёРґРё Рє РЅРµРјСѓ Рё Р·Р°Р±РµСЂРё СЃРІРѕСЋ РґРЅРµРІРЅСѓСЋ РґРѕР·Сѓ. Р•СЃР»Рё С‚С‹ РѕС‚РґР°С€СЊ РјРЅРµ СЃРІРѕР№ Р±РѕР»РѕС‚РЅРёРє, СЏ РїРѕСЃС‚Р°СЂР°СЋСЃСЊ РїРѕРјРѕС‡СЊ С‚РµР±Рµ.
+	AI_Output (other, self,"DIA_Joru_JoinPsi_Nein_15_01"); //РЇ РїРѕРґСѓРјР°СЋ РѕР± СЌС‚РѕРј.
 	Joru_BringJoints = LOG_RUNNING; 
 
 	Log_CreateTopic		(CH1_JoinPsi,	LOG_MISSION);
 	Log_SetTopicStatus	(CH1_JoinPsi,	LOG_RUNNING);
-	B_LogEntry			(CH1_JoinPsi,"Йору хотел бы получить мою порцию болотника, которую я взял у Фортуно.");
+	B_LogEntry			(CH1_JoinPsi,"Р™РѕСЂСѓ С…РѕС‚РµР» Р±С‹ РїРѕР»СѓС‡РёС‚СЊ РјРѕСЋ РїРѕСЂС†РёСЋ Р±РѕР»РѕС‚РЅРёРєР°, РєРѕС‚РѕСЂСѓСЋ СЏ РІР·СЏР» Сѓ Р¤РѕСЂС‚СѓРЅРѕ.");
 	
 	Info_ClearChoices	(DIA_Joru_JoinPsi );
 };
@@ -183,7 +183,7 @@ instance  DIA_Joru_JointsRunning (C_INFO)
 	condition	= DIA_Joru_JointsRunning_Condition;
 	information	= DIA_Joru_JointsRunning_Info;
 	permanent	= 1;
-	description = "Болотник у меня. Можешь забирать.";
+	description = "Р‘РѕР»РѕС‚РЅРёРє Сѓ РјРµРЅСЏ. РњРѕР¶РµС€СЊ Р·Р°Р±РёСЂР°С‚СЊ.";
 };                       
 
 FUNC int  DIA_Joru_JointsRunning_Condition()
@@ -196,12 +196,12 @@ FUNC int  DIA_Joru_JointsRunning_Condition()
 
 FUNC VOID  DIA_Joru_JointsRunning_Info()
 {
-	AI_Output				(other, self,"DIA_Joru_JointsRunning_15_00"); //Болотник у меня. Можешь забирать.
+	AI_Output				(other, self,"DIA_Joru_JointsRunning_15_00"); //Р‘РѕР»РѕС‚РЅРёРє Сѓ РјРµРЅСЏ. РњРѕР¶РµС€СЊ Р·Р°Р±РёСЂР°С‚СЊ.
 		
 	if (Npc_HasItems(other,itmijoint_2)>=3)
 	{
-		AI_Output			(self, other,"DIA_Joru_JointsRunning_07_01"); //Хорошо! Ты, должно быть, заметил, что никто из Гуру не хочет с тобой разговаривать.
-		AI_Output			(self, other,"DIA_Joru_JointsRunning_07_02"); //Чтобы добиться своего, нужно произвести на них впечатление. Я расскажу тебе, как это сделать.
+		AI_Output			(self, other,"DIA_Joru_JointsRunning_07_01"); //РҐРѕСЂРѕС€Рѕ! РўС‹, РґРѕР»Р¶РЅРѕ Р±С‹С‚СЊ, Р·Р°РјРµС‚РёР», С‡С‚Рѕ РЅРёРєС‚Рѕ РёР· Р“СѓСЂСѓ РЅРµ С…РѕС‡РµС‚ СЃ С‚РѕР±РѕР№ СЂР°Р·РіРѕРІР°СЂРёРІР°С‚СЊ.
+		AI_Output			(self, other,"DIA_Joru_JointsRunning_07_02"); //Р§С‚РѕР±С‹ РґРѕР±РёС‚СЊСЃСЏ СЃРІРѕРµРіРѕ, РЅСѓР¶РЅРѕ РїСЂРѕРёР·РІРµСЃС‚Рё РЅР° РЅРёС… РІРїРµС‡Р°С‚Р»РµРЅРёРµ. РЇ СЂР°СЃСЃРєР°Р¶Сѓ С‚РµР±Рµ, РєР°Рє СЌС‚Рѕ СЃРґРµР»Р°С‚СЊ.
 		
 		B_GiveInvItems		(other, self, itmijoint_2, 3);
 		
@@ -210,7 +210,7 @@ FUNC VOID  DIA_Joru_JointsRunning_Info()
 	}
 	else
 	{
-		AI_Output			(self, other,"DIA_Joru_JointsRunning_NO_JOINTS_07_00"); //Кажется, мы сошлись на трех стеблях 'северного темного'?! Отдай мне болотник, и ТОГДА я помогу тебе!
+		AI_Output			(self, other,"DIA_Joru_JointsRunning_NO_JOINTS_07_00"); //РљР°Р¶РµС‚СЃСЏ, РјС‹ СЃРѕС€Р»РёСЃСЊ РЅР° С‚СЂРµС… СЃС‚РµР±Р»СЏС… 'СЃРµРІРµСЂРЅРѕРіРѕ С‚РµРјРЅРѕРіРѕ'?! РћС‚РґР°Р№ РјРЅРµ Р±РѕР»РѕС‚РЅРёРє, Рё РўРћР“Р”Рђ СЏ РїРѕРјРѕРіСѓ С‚РµР±Рµ!
 	}; 
 };
 
@@ -227,7 +227,7 @@ instance  DIA_Joru_ImpressGurus (C_INFO)
 	condition	= DIA_Joru_ImpressGurus_Condition;
 	information	= DIA_Joru_ImpressGurus_Info;
 	permanent	= 1;
-	description = "Как произвести впечатление на Гуру?";
+	description = "РљР°Рє РїСЂРѕРёР·РІРµСЃС‚Рё РІРїРµС‡Р°С‚Р»РµРЅРёРµ РЅР° Р“СѓСЂСѓ?";
 };                       
 
 FUNC int  DIA_Joru_ImpressGurus_Condition()
@@ -240,19 +240,19 @@ FUNC int  DIA_Joru_ImpressGurus_Condition()
 
 FUNC VOID  DIA_Joru_ImpressGurus_Info()
 {
-	AI_Output (other, self,"DIA_Joru_ImpressGurus_15_00"); //Как произвести впечатление на Гуру?
-	AI_Output (self, other,"DIA_Joru_ImpressGurus_07_01"); //Идол Кадар наставляет учеников в магии Спящего.
-	AI_Output (self, other,"DIA_Joru_ImpressGurus_07_02"); //Если хочешь, чтобы он обратил на тебя внимание, используй магию.
-	AI_Output (self, other,"DIA_Joru_ImpressGurus_07_03"); //Только не вздумай опробовать на нем Кулак Ветра! Погрузи кого-нибудь из учеников в сон или сделай еще что-нибудь вроде этого.
-	AI_Output (self, other,"DIA_Joru_ImpressGurus_07_04"); //Сложнее всего будет с Идолом Намибом - это тот тип у главных ворот. Думаю, здесь тебе сможет помочь Лестер. Поговори с ним, когда его господина не будет поблизости.
-	AI_Output (self, other,"DIA_Joru_ImpressGurus_07_05"); //Зато с остальными Гуру проблем быть не должно - просто постарайся быть полезным.
-	AI_Output (other, self,"DIA_Joru_ImpressGurus_15_06"); //Благодарю за совет.
-	AI_Output (self, other,"DIA_Joru_ImpressGurus_07_07"); //Хей - сделка есть сделка!
+	AI_Output (other, self,"DIA_Joru_ImpressGurus_15_00"); //РљР°Рє РїСЂРѕРёР·РІРµСЃС‚Рё РІРїРµС‡Р°С‚Р»РµРЅРёРµ РЅР° Р“СѓСЂСѓ?
+	AI_Output (self, other,"DIA_Joru_ImpressGurus_07_01"); //РРґРѕР» РљР°РґР°СЂ РЅР°СЃС‚Р°РІР»СЏРµС‚ СѓС‡РµРЅРёРєРѕРІ РІ РјР°РіРёРё РЎРїСЏС‰РµРіРѕ.
+	AI_Output (self, other,"DIA_Joru_ImpressGurus_07_02"); //Р•СЃР»Рё С…РѕС‡РµС€СЊ, С‡С‚РѕР±С‹ РѕРЅ РѕР±СЂР°С‚РёР» РЅР° С‚РµР±СЏ РІРЅРёРјР°РЅРёРµ, РёСЃРїРѕР»СЊР·СѓР№ РјР°РіРёСЋ.
+	AI_Output (self, other,"DIA_Joru_ImpressGurus_07_03"); //РўРѕР»СЊРєРѕ РЅРµ РІР·РґСѓРјР°Р№ РѕРїСЂРѕР±РѕРІР°С‚СЊ РЅР° РЅРµРј РљСѓР»Р°Рє Р’РµС‚СЂР°! РџРѕРіСЂСѓР·Рё РєРѕРіРѕ-РЅРёР±СѓРґСЊ РёР· СѓС‡РµРЅРёРєРѕРІ РІ СЃРѕРЅ РёР»Рё СЃРґРµР»Р°Р№ РµС‰Рµ С‡С‚Рѕ-РЅРёР±СѓРґСЊ РІСЂРѕРґРµ СЌС‚РѕРіРѕ.
+	AI_Output (self, other,"DIA_Joru_ImpressGurus_07_04"); //РЎР»РѕР¶РЅРµРµ РІСЃРµРіРѕ Р±СѓРґРµС‚ СЃ РРґРѕР»РѕРј РќР°РјРёР±РѕРј - СЌС‚Рѕ С‚РѕС‚ С‚РёРї Сѓ РіР»Р°РІРЅС‹С… РІРѕСЂРѕС‚. Р”СѓРјР°СЋ, Р·РґРµСЃСЊ С‚РµР±Рµ СЃРјРѕР¶РµС‚ РїРѕРјРѕС‡СЊ Р›РµСЃС‚РµСЂ. РџРѕРіРѕРІРѕСЂРё СЃ РЅРёРј, РєРѕРіРґР° РµРіРѕ РіРѕСЃРїРѕРґРёРЅР° РЅРµ Р±СѓРґРµС‚ РїРѕР±Р»РёР·РѕСЃС‚Рё.
+	AI_Output (self, other,"DIA_Joru_ImpressGurus_07_05"); //Р—Р°С‚Рѕ СЃ РѕСЃС‚Р°Р»СЊРЅС‹РјРё Р“СѓСЂСѓ РїСЂРѕР±Р»РµРј Р±С‹С‚СЊ РЅРµ РґРѕР»Р¶РЅРѕ - РїСЂРѕСЃС‚Рѕ РїРѕСЃС‚Р°СЂР°Р№СЃСЏ Р±С‹С‚СЊ РїРѕР»РµР·РЅС‹Рј.
+	AI_Output (other, self,"DIA_Joru_ImpressGurus_15_06"); //Р‘Р»Р°РіРѕРґР°СЂСЋ Р·Р° СЃРѕРІРµС‚.
+	AI_Output (self, other,"DIA_Joru_ImpressGurus_07_07"); //РҐРµР№ - СЃРґРµР»РєР° РµСЃС‚СЊ СЃРґРµР»РєР°!
 	
 	if ( Joru_JoinPsi == FALSE)
 	{
-		B_LogEntry	(CH1_JoinPsi,"Идол Кадар будет удивлен, если я смогу произнести заклинание сна на его слушателя.");
-		B_LogEntry	(CH1_JoinPsi,"Надо спросить у Лестера, как мне удивить Идола Намиба. Его можно найти у главных ворот. Надо убедиться, что рядом нет ни одного Гуру.");
+		B_LogEntry	(CH1_JoinPsi,"РРґРѕР» РљР°РґР°СЂ Р±СѓРґРµС‚ СѓРґРёРІР»РµРЅ, РµСЃР»Рё СЏ СЃРјРѕРіСѓ РїСЂРѕРёР·РЅРµСЃС‚Рё Р·Р°РєР»РёРЅР°РЅРёРµ СЃРЅР° РЅР° РµРіРѕ СЃР»СѓС€Р°С‚РµР»СЏ.");
+		B_LogEntry	(CH1_JoinPsi,"РќР°РґРѕ СЃРїСЂРѕСЃРёС‚СЊ Сѓ Р›РµСЃС‚РµСЂР°, РєР°Рє РјРЅРµ СѓРґРёРІРёС‚СЊ РРґРѕР»Р° РќР°РјРёР±Р°. Р•РіРѕ РјРѕР¶РЅРѕ РЅР°Р№С‚Рё Сѓ РіР»Р°РІРЅС‹С… РІРѕСЂРѕС‚. РќР°РґРѕ СѓР±РµРґРёС‚СЊСЃСЏ, С‡С‚Рѕ СЂСЏРґРѕРј РЅРµС‚ РЅРё РѕРґРЅРѕРіРѕ Р“СѓСЂСѓ.");
 		Joru_JoinPsi = TRUE;
 	};
 	
@@ -270,7 +270,7 @@ instance  DIA_Joru_GetMagic (C_INFO)
 	condition	= DIA_Joru_GetMagic_Condition;
 	information	= DIA_Joru_GetMagic_Info;
 	permanent	= 1;
-	description = "Как научиться магии Спящего?";
+	description = "РљР°Рє РЅР°СѓС‡РёС‚СЊСЃСЏ РјР°РіРёРё РЎРїСЏС‰РµРіРѕ?";
 };                       
 
 FUNC int  DIA_Joru_GetMagic_Condition()
@@ -286,12 +286,12 @@ FUNC VOID  DIA_Joru_GetMagic_Info()
 	if (Joru_Tips_Mage == FALSE)
 	{
 		Log_CreateTopic	(GE_TraderPSI,	LOG_NOTE);
-		B_LogEntry		(GE_TraderPSI,"Идол Кадар продает руны и свитки.");
+		B_LogEntry		(GE_TraderPSI,"РРґРѕР» РљР°РґР°СЂ РїСЂРѕРґР°РµС‚ СЂСѓРЅС‹ Рё СЃРІРёС‚РєРё.");
 		Joru_Tips_Mage	=TRUE;
 	};
-	AI_Output (other, self,"DIA_Joru_GetMagic_15_00"); //Как научиться магии Спящего?
-	AI_Output (self, other,"DIA_Joru_GetMagic_07_01"); //Идол Кадар продает руны и магические свитки. Правда, если он не желает с тобой разговаривать, толку от этого не много.
-	AI_Output (self, other,"DIA_Joru_GetMagic_07_02"); //Возможно, тебе сможет помочь другой Гуру.
+	AI_Output (other, self,"DIA_Joru_GetMagic_15_00"); //РљР°Рє РЅР°СѓС‡РёС‚СЊСЃСЏ РјР°РіРёРё РЎРїСЏС‰РµРіРѕ?
+	AI_Output (self, other,"DIA_Joru_GetMagic_07_01"); //РРґРѕР» РљР°РґР°СЂ РїСЂРѕРґР°РµС‚ СЂСѓРЅС‹ Рё РјР°РіРёС‡РµСЃРєРёРµ СЃРІРёС‚РєРё. РџСЂР°РІРґР°, РµСЃР»Рё РѕРЅ РЅРµ Р¶РµР»Р°РµС‚ СЃ С‚РѕР±РѕР№ СЂР°Р·РіРѕРІР°СЂРёРІР°С‚СЊ, С‚РѕР»РєСѓ РѕС‚ СЌС‚РѕРіРѕ РЅРµ РјРЅРѕРіРѕ.
+	AI_Output (self, other,"DIA_Joru_GetMagic_07_02"); //Р’РѕР·РјРѕР¶РЅРѕ, С‚РµР±Рµ СЃРјРѕР¶РµС‚ РїРѕРјРѕС‡СЊ РґСЂСѓРіРѕР№ Р“СѓСЂСѓ.
 };
 
 
@@ -304,8 +304,8 @@ FUNC VOID  DIA_Joru_GetMagic_Info()
 Sit_1_PSI_Joru_SmokingTeacher
 
 Joru: Du bist neu hier. Hast Du schon unser Kraut genossen?
-Das solltest du unbedingt tun. WeiЯt du, es ist ziemlich gut. Es цffnet deinen Geist fьr die Worte des Schlдfers.
-Komm, komm zu uns und lasse deinen Geist frei. Mach dich bereit fьr eine Reise.
+Das solltest du unbedingt tun. WeiРЇt du, es ist ziemlich gut. Es С†ffnet deinen Geist fСЊr die Worte des SchlРґfers.
+Komm, komm zu uns und lasse deinen Geist frei. Mach dich bereit fСЊr eine Reise.
 Eine spirituelle Reise. Lerne die Macht des Geistes zu nutzen. Lerne sie zu kontrollieren.
 Komm zu uns in die Gemeinschaft der Erwachten und gleichzeitig Erwecker. Teile mit uns deine Kraft, wie wir unsere Kraft mit dir teilen.
 Mach dich frei von Suche und beginne zu finden. Entdecke die Wahrheit. Das alles kannst du erreichen, wenn du zu uns kommst.

@@ -46,11 +46,11 @@ FUNC INT DIA_Herek_Bully_Condition()
 
 FUNC VOID DIA_Herek_Bully_Info()
 {
-	AI_Output (self, other,"DIA_Herek_Bully_01_00"); //Подожди-ка! Я слышал, ты разговаривал с Бладвином? 
-	AI_Output (other, self,"DIA_Herek_Bully_15_01"); //Ну и что с того?
-	AI_Output (self, other,"DIA_Herek_Bully_01_02"); //Ты должно быть крут, если отказался платить ему деньги за защиту.
-	AI_Output (self, other,"DIA_Herek_Bully_01_03"); //И это значит, что нам придется внести за тебя твою долю.
-	AI_Output (self, other,"DIA_Herek_Bully_01_04"); //Я постараюсь, чтобы ты запомнил следующий разговор с ним.
+	AI_Output (self, other,"DIA_Herek_Bully_01_00"); //РџРѕРґРѕР¶РґРё-РєР°! РЇ СЃР»С‹С€Р°Р», С‚С‹ СЂР°Р·РіРѕРІР°СЂРёРІР°Р» СЃ Р‘Р»Р°РґРІРёРЅРѕРј? 
+	AI_Output (other, self,"DIA_Herek_Bully_15_01"); //РќСѓ Рё С‡С‚Рѕ СЃ С‚РѕРіРѕ?
+	AI_Output (self, other,"DIA_Herek_Bully_01_02"); //РўС‹ РґРѕР»Р¶РЅРѕ Р±С‹С‚СЊ РєСЂСѓС‚, РµСЃР»Рё РѕС‚РєР°Р·Р°Р»СЃСЏ РїР»Р°С‚РёС‚СЊ РµРјСѓ РґРµРЅСЊРіРё Р·Р° Р·Р°С‰РёС‚Сѓ.
+	AI_Output (self, other,"DIA_Herek_Bully_01_03"); //Р СЌС‚Рѕ Р·РЅР°С‡РёС‚, С‡С‚Рѕ РЅР°Рј РїСЂРёРґРµС‚СЃСЏ РІРЅРµСЃС‚Рё Р·Р° С‚РµР±СЏ С‚РІРѕСЋ РґРѕР»СЋ.
+	AI_Output (self, other,"DIA_Herek_Bully_01_04"); //РЇ РїРѕСЃС‚Р°СЂР°СЋСЃСЊ, С‡С‚РѕР±С‹ С‚С‹ Р·Р°РїРѕРјРЅРёР» СЃР»РµРґСѓСЋС‰РёР№ СЂР°Р·РіРѕРІРѕСЂ СЃ РЅРёРј.
 	
 	Npc_SetPermAttitude (self,ATT_ANGRY);
 	
@@ -71,7 +71,7 @@ INSTANCE DIA_Herek_Motz (C_INFO)
 	condition		= DIA_Herek_Motz_Condition;
 	information		= DIA_Herek_Motz_Info;
 	permanent		= 0;
-	description		= "Как дела?";
+	description		= "РљР°Рє РґРµР»Р°?";
 };
 
 FUNC INT DIA_Herek_Motz_Condition()
@@ -84,11 +84,11 @@ FUNC INT DIA_Herek_Motz_Condition()
 
 FUNC VOID DIA_Herek_Motz_Info()
 {
-	AI_Output (other, self,"DIA_Herek_Motz_15_00"); //Как дела?
-	AI_Output (self, other,"DIA_Herek_Motz_01_01"); //В этом Лагере есть место только для одного из нас!
-	AI_Output (other, self,"DIA_Herek_Motz_15_02"); //Прошу прощения?
-	AI_Output (self, other,"DIA_Herek_Motz_01_03"); //Если бы это зависело от меня, ты бы здесь долго не продержался!
-	AI_Output (self, other,"DIA_Herek_Motz_01_04"); //Знаешь, почему я здесь? За одну ночь я убил двенадцать человек, вот так... Хе-хе-хе!
+	AI_Output (other, self,"DIA_Herek_Motz_15_00"); //РљР°Рє РґРµР»Р°?
+	AI_Output (self, other,"DIA_Herek_Motz_01_01"); //Р’ СЌС‚РѕРј Р›Р°РіРµСЂРµ РµСЃС‚СЊ РјРµСЃС‚Рѕ С‚РѕР»СЊРєРѕ РґР»СЏ РѕРґРЅРѕРіРѕ РёР· РЅР°СЃ!
+	AI_Output (other, self,"DIA_Herek_Motz_15_02"); //РџСЂРѕС€Сѓ РїСЂРѕС‰РµРЅРёСЏ?
+	AI_Output (self, other,"DIA_Herek_Motz_01_03"); //Р•СЃР»Рё Р±С‹ СЌС‚Рѕ Р·Р°РІРёСЃРµР»Рѕ РѕС‚ РјРµРЅСЏ, С‚С‹ Р±С‹ Р·РґРµСЃСЊ РґРѕР»РіРѕ РЅРµ РїСЂРѕРґРµСЂР¶Р°Р»СЃСЏ!
+	AI_Output (self, other,"DIA_Herek_Motz_01_04"); //Р—РЅР°РµС€СЊ, РїРѕС‡РµРјСѓ СЏ Р·РґРµСЃСЊ? Р—Р° РѕРґРЅСѓ РЅРѕС‡СЊ СЏ СѓР±РёР» РґРІРµРЅР°РґС†Р°С‚СЊ С‡РµР»РѕРІРµРє, РІРѕС‚ С‚Р°Рє... РҐРµ-С…Рµ-С…Рµ!
 	
 	Npc_SetPermAttitude (self,ATT_ANGRY);
 		
@@ -106,7 +106,7 @@ INSTANCE DIA_Herek_Anlegen (C_INFO)
 	condition		= DIA_Herek_Anlegen_Condition;
 	information		= DIA_Herek_Anlegen_Info;
 	permanent		= 1;
-	description		= "Похоже, ты считаешь себя крутым парнем.";
+	description		= "РџРѕС…РѕР¶Рµ, С‚С‹ СЃС‡РёС‚Р°РµС€СЊ СЃРµР±СЏ РєСЂСѓС‚С‹Рј РїР°СЂРЅРµРј.";
 };
 
 FUNC INT DIA_Herek_Anlegen_Condition()
@@ -119,8 +119,8 @@ FUNC INT DIA_Herek_Anlegen_Condition()
 
 FUNC VOID DIA_Herek_Anlegen_Info()
 {
-	AI_Output (other, self,"DIA_Herek_Anlegen_15_00"); //Похоже, ты считаешь себя крутым парнем. Почему бы тебе не опробовать свои... Х-мм... Навыки на мне?
-	AI_Output (self, other,"DIA_Herek_Anlegen_01_01"); //Жить надоело? Ладно, если ты этого хочешь!
+	AI_Output (other, self,"DIA_Herek_Anlegen_15_00"); //РџРѕС…РѕР¶Рµ, С‚С‹ СЃС‡РёС‚Р°РµС€СЊ СЃРµР±СЏ РєСЂСѓС‚С‹Рј РїР°СЂРЅРµРј. РџРѕС‡РµРјСѓ Р±С‹ С‚РµР±Рµ РЅРµ РѕРїСЂРѕР±РѕРІР°С‚СЊ СЃРІРѕРё... РҐ-РјРј... РќР°РІС‹РєРё РЅР° РјРЅРµ?
+	AI_Output (self, other,"DIA_Herek_Anlegen_01_01"); //Р–РёС‚СЊ РЅР°РґРѕРµР»Рѕ? Р›Р°РґРЅРѕ, РµСЃР»Рё С‚С‹ СЌС‚РѕРіРѕ С…РѕС‡РµС€СЊ!
 	
 	AI_StopProcessInfos	(self);
 	

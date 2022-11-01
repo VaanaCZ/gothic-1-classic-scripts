@@ -18,7 +18,7 @@ FUNC int  Tpl_1433_GorNaVid_Exit_Condition()
 
 FUNC VOID  Tpl_1433_GorNaVid_Exit_Info()
 {
-	AI_Output (self, other,"Tpl_1433_GorNaVid_Exit_Info_13_02"); //Да пробудится Спящий!
+	AI_Output (self, other,"Tpl_1433_GorNaVid_Exit_Info_13_02"); //Р”Р° РїСЂРѕР±СѓРґРёС‚СЃСЏ РЎРїСЏС‰РёР№!
 	AI_StopProcessInfos	( self );
 };
 
@@ -31,7 +31,7 @@ instance  Tpl_1433_GorNaVid_HEALTH (C_INFO)
 	information		= Tpl_1433_GorNaVid_HEALTH_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Мне нужна твоя помощь."; 
+	description		= "РњРЅРµ РЅСѓР¶РЅР° С‚РІРѕСЏ РїРѕРјРѕС‰СЊ."; 
 };
 
 FUNC int  Tpl_1433_GorNaVid_HEALTH_Condition()
@@ -45,10 +45,10 @@ FUNC int  Tpl_1433_GorNaVid_HEALTH_Condition()
 
 FUNC void  Tpl_1433_GorNaVid_HEALTH_Info()
 {
-	AI_Output (other, self,"Tpl_1433_GorNaVid_HEALTH_Info_15_01"); //Мне нужна твоя помощь.
-	AI_Output (other, self,"Tpl_1433_GorNaVid_HEALTH_Info_15_02"); //Я ищу кое-что для Кор Галома, и я знаю, где находится логово ползунов.
-	AI_Output (other, self,"Tpl_1433_GorNaVid_HEALTH_Info_15_03"); //Ты поможешь мне, когда я открою проход?
-	AI_Output (self, other,"Tpl_1433_GorNaVid_HEALTH_Info_13_04"); //Охота на ползунов обычно дается нелегко. Если ты принесешь мне целебный эликсир, то можешь на меня рассчитывать.
+	AI_Output (other, self,"Tpl_1433_GorNaVid_HEALTH_Info_15_01"); //РњРЅРµ РЅСѓР¶РЅР° С‚РІРѕСЏ РїРѕРјРѕС‰СЊ.
+	AI_Output (other, self,"Tpl_1433_GorNaVid_HEALTH_Info_15_02"); //РЇ РёС‰Сѓ РєРѕРµ-С‡С‚Рѕ РґР»СЏ РљРѕСЂ Р“Р°Р»РѕРјР°, Рё СЏ Р·РЅР°СЋ, РіРґРµ РЅР°С…РѕРґРёС‚СЃСЏ Р»РѕРіРѕРІРѕ РїРѕР»Р·СѓРЅРѕРІ.
+	AI_Output (other, self,"Tpl_1433_GorNaVid_HEALTH_Info_15_03"); //РўС‹ РїРѕРјРѕР¶РµС€СЊ РјРЅРµ, РєРѕРіРґР° СЏ РѕС‚РєСЂРѕСЋ РїСЂРѕС…РѕРґ?
+	AI_Output (self, other,"Tpl_1433_GorNaVid_HEALTH_Info_13_04"); //РћС…РѕС‚Р° РЅР° РїРѕР»Р·СѓРЅРѕРІ РѕР±С‹С‡РЅРѕ РґР°РµС‚СЃСЏ РЅРµР»РµРіРєРѕ. Р•СЃР»Рё С‚С‹ РїСЂРёРЅРµСЃРµС€СЊ РјРЅРµ С†РµР»РµР±РЅС‹Р№ СЌР»РёРєСЃРёСЂ, С‚Рѕ РјРѕР¶РµС€СЊ РЅР° РјРµРЅСЏ СЂР°СЃСЃС‡РёС‚С‹РІР°С‚СЊ.
 
 };  
 // ***************** Infos *****************************
@@ -60,7 +60,7 @@ instance  Tpl_1433_GorNaVid_IAN (C_INFO)
 	information		= Tpl_1433_GorNaVid_IAN_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Я ищу логово ползунов."; 
+	description		= "РЇ РёС‰Сѓ Р»РѕРіРѕРІРѕ РїРѕР»Р·СѓРЅРѕРІ."; 
 };
 
 FUNC int  Tpl_1433_GorNaVid_IAN_Condition()
@@ -74,8 +74,8 @@ FUNC int  Tpl_1433_GorNaVid_IAN_Condition()
 
 FUNC void  Tpl_1433_GorNaVid_IAN_Info()
 {
-	AI_Output (other, self,"Tpl_1433_GorNaVid_IAN_Info_15_01"); //Я ищу логово ползунов.
-	AI_Output (self, other,"Tpl_1433_GorNaVid_IAN_Info_13_02"); //От главной шахты отходит множество пещер, но логова там нет.
+	AI_Output (other, self,"Tpl_1433_GorNaVid_IAN_Info_15_01"); //РЇ РёС‰Сѓ Р»РѕРіРѕРІРѕ РїРѕР»Р·СѓРЅРѕРІ.
+	AI_Output (self, other,"Tpl_1433_GorNaVid_IAN_Info_13_02"); //РћС‚ РіР»Р°РІРЅРѕР№ С€Р°С…С‚С‹ РѕС‚С…РѕРґРёС‚ РјРЅРѕР¶РµСЃС‚РІРѕ РїРµС‰РµСЂ, РЅРѕ Р»РѕРіРѕРІР° С‚Р°Рј РЅРµС‚.
 };  
 
 // ***************** Infos *****************************
@@ -86,7 +86,7 @@ instance  Tpl_1433_GorNaVid_HEALTH_SUC (C_INFO)
 	information		= Tpl_1433_GorNaVid_HEALTH_SUC_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "(дает целебный эликсир)"; 
+	description		= "(РґР°РµС‚ С†РµР»РµР±РЅС‹Р№ СЌР»РёРєСЃРёСЂ)"; 
 };
 
 FUNC int  Tpl_1433_GorNaVid_HEALTH_SUC_Condition()
@@ -102,9 +102,9 @@ FUNC int  Tpl_1433_GorNaVid_HEALTH_SUC_Condition()
 };
 FUNC void  Tpl_1433_GorNaVid_HEALTH_SUC_Info()
 {
-	AI_Output (other, self,"Tpl_1433_GorNaVid_HEALTH_SUC_Info_15_01"); //Вот, может быть, это поможет.
-	AI_Output (self, other,"Tpl_1433_GorNaVid_HEALTH_SUC_Info_13_02"); //Спасибо. Можешь на меня рассчитывать.  Мы встречаемся внизу с Асгханом.
-	AI_Output (other, self,"Tpl_1433_GorNaVid_HEALTH_SUC_Info_15_03"); //Я тоже буду.
+	AI_Output (other, self,"Tpl_1433_GorNaVid_HEALTH_SUC_Info_15_01"); //Р’РѕС‚, РјРѕР¶РµС‚ Р±С‹С‚СЊ, СЌС‚Рѕ РїРѕРјРѕР¶РµС‚.
+	AI_Output (self, other,"Tpl_1433_GorNaVid_HEALTH_SUC_Info_13_02"); //РЎРїР°СЃРёР±Рѕ. РњРѕР¶РµС€СЊ РЅР° РјРµРЅСЏ СЂР°СЃСЃС‡РёС‚С‹РІР°С‚СЊ.  РњС‹ РІСЃС‚СЂРµС‡Р°РµРјСЃСЏ РІРЅРёР·Сѓ СЃ РђСЃРіС…Р°РЅРѕРј.
+	AI_Output (other, self,"Tpl_1433_GorNaVid_HEALTH_SUC_Info_15_03"); //РЇ С‚РѕР¶Рµ Р±СѓРґСѓ.
 	
 	if Npc_HasItems (hero,Itfo_Potion_Health_01)
 	{
@@ -120,13 +120,13 @@ FUNC void  Tpl_1433_GorNaVid_HEALTH_SUC_Info()
 	}
 	else 
 	{
-		PrintDebugNpc (PD_MISSION, "KEINE POTION= UNMЦGLICH");
+		PrintDebugNpc (PD_MISSION, "KEINE POTION= UNMР¦GLICH");
 	};
 
 	Npc_ExchangeRoutine (self,"GATE"); 
 	Npc_SetPermAttitude	(self,ATT_FRIENDLY); 
 	B_GiveXP			(XP_HireGorNaVid);
-	B_LogEntry		(CH2_MCEggs,"Мне надо отдать целебный эликсир Гор На Виду. Тогда он присоединится к нашим силам у ворот Асгхана.");	
+	B_LogEntry		(CH2_MCEggs,"РњРЅРµ РЅР°РґРѕ РѕС‚РґР°С‚СЊ С†РµР»РµР±РЅС‹Р№ СЌР»РёРєСЃРёСЂ Р“РѕСЂ РќР° Р’РёРґСѓ. РўРѕРіРґР° РѕРЅ РїСЂРёСЃРѕРµРґРёРЅРёС‚СЃСЏ Рє РЅР°С€РёРј СЃРёР»Р°Рј Сѓ РІРѕСЂРѕС‚ РђСЃРіС…Р°РЅР°.");	
 
 	AI_StopProcessInfos	(self);
 };
@@ -139,7 +139,7 @@ instance  Tpl_1433_GorNavid_VICTORY (C_INFO)
 	information		= Tpl_1433_GorNavid_VICTORY_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Я нашел логово королевы ползунов!"; 
+	description		= "РЇ РЅР°С€РµР» Р»РѕРіРѕРІРѕ РєРѕСЂРѕР»РµРІС‹ РїРѕР»Р·СѓРЅРѕРІ!"; 
 };
 
 FUNC int  Tpl_1433_GorNavid_VICTORY_Condition()
@@ -152,8 +152,8 @@ FUNC int  Tpl_1433_GorNavid_VICTORY_Condition()
 };
 FUNC void  Tpl_1433_GorNavid_VICTORY_Info()
 {
-	AI_Output (other, self,"Tpl_1433_GorNavid_VICTORY_Info_15_01"); //Я нашел логово королевы ползунов!
-	AI_Output (self, other,"Tpl_1433_GorNavid_VICTORY_Info_13_02"); //Я благодарю тебя от имени всего Братства!
-	AI_Output (self, other,"Tpl_1433_GorNavid_VICTORY_Info_13_03"); //Да убережет тебя незримая рука Спящего!
+	AI_Output (other, self,"Tpl_1433_GorNavid_VICTORY_Info_15_01"); //РЇ РЅР°С€РµР» Р»РѕРіРѕРІРѕ РєРѕСЂРѕР»РµРІС‹ РїРѕР»Р·СѓРЅРѕРІ!
+	AI_Output (self, other,"Tpl_1433_GorNavid_VICTORY_Info_13_02"); //РЇ Р±Р»Р°РіРѕРґР°СЂСЋ С‚РµР±СЏ РѕС‚ РёРјРµРЅРё РІСЃРµРіРѕ Р‘СЂР°С‚СЃС‚РІР°!
+	AI_Output (self, other,"Tpl_1433_GorNavid_VICTORY_Info_13_03"); //Р”Р° СѓР±РµСЂРµР¶РµС‚ С‚РµР±СЏ РЅРµР·СЂРёРјР°СЏ СЂСѓРєР° РЎРїСЏС‰РµРіРѕ!
 };     
  

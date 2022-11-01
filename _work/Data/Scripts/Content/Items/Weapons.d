@@ -1,5 +1,5 @@
 //------------------------------------------------------------------
-//PERSЦNLICHE WAFFEN
+//PERSР¦NLICHE WAFFEN
 /***********************************************************/
 //ALTES LAGER
 /***********************************************************/
@@ -7,7 +7,7 @@
 //------------------------------------------------------------------
 INSTANCE Thorus_Schwert (C_Item)
 {
-	name 				=	"Меч Торуса";
+	name 				=	"РњРµС‡ РўРѕСЂСѓСЃР°";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_SWD;
@@ -37,7 +37,7 @@ INSTANCE Thorus_Schwert (C_Item)
 //-----------------------------------------------------------
 INSTANCE Innos_Zorn (C_Item)
 {
-	name 				=	"Гнев Инноса";
+	name 				=	"Р“РЅРµРІ РРЅРЅРѕСЃР°";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_SWD;
@@ -67,7 +67,7 @@ INSTANCE Innos_Zorn (C_Item)
 //-----------------------------------------------------------
 INSTANCE Scars_Schwert (C_Item)
 {
-	name 				=	"Меч Скара";
+	name 				=	"РњРµС‡ РЎРєР°СЂР°";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;
@@ -98,7 +98,7 @@ INSTANCE Scars_Schwert (C_Item)
 //-----------------------------------------------------------
 INSTANCE Artos_Schwert (C_Item)
 {
-	name 				=	"Меч Арто";
+	name 				=	"РњРµС‡ РђСЂС‚Рѕ";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;
@@ -128,7 +128,7 @@ INSTANCE Artos_Schwert (C_Item)
 //-----------------------------------------------------------
 INSTANCE Rabenrecht (C_Item)
 {
-	name 				=	"Суд Равена";
+	name 				=	"РЎСѓРґ Р Р°РІРµРЅР°";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;
@@ -158,7 +158,7 @@ INSTANCE Rabenrecht (C_Item)
 //-----------------------------------------------------------
 INSTANCE Prankenhieb (C_Item)
 {
-	name 				=	"Удар лапы";
+	name 				=	"РЈРґР°СЂ Р»Р°РїС‹";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;
@@ -188,7 +188,7 @@ INSTANCE Prankenhieb (C_Item)
 //-----------------------------------------------------------
 INSTANCE Diegos_Bogen (C_Item)
 {
-	name 				= "Лук Диего";
+	name 				= "Р›СѓРє Р”РёРµРіРѕ";
 
 	mainflag 			= ITEM_KAT_FF;
 	flags 				= ITEM_BOW;
@@ -217,7 +217,7 @@ INSTANCE Diegos_Bogen (C_Item)
 //-----------------------------------------------------------
 INSTANCE Whistlers_Schwert (C_Item)
 {
-	name 				=	"Меч Уистлера";
+	name 				=	"РњРµС‡ РЈРёСЃС‚Р»РµСЂР°";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;
@@ -250,7 +250,7 @@ INSTANCE Whistlers_Schwert (C_Item)
 //-----------------------------------------------------------
 INSTANCE Stab_des_Lichts (C_Item)
 {
-	name 				=	"Посох света";
+	name 				=	"РџРѕСЃРѕС… СЃРІРµС‚Р°";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_AXE;
@@ -280,7 +280,7 @@ INSTANCE Stab_des_Lichts (C_Item)
 //-----------------------------------------------------------
 INSTANCE Kaloms_Schwert (C_Item)
 {
-	name 				=	"Меч Галома";
+	name 				=	"РњРµС‡ Р“Р°Р»РѕРјР°";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;
@@ -310,7 +310,7 @@ INSTANCE Kaloms_Schwert (C_Item)
 //-----------------------------------------------------------
 INSTANCE Streitschlichter (C_Item)
 {
-	name 				=	"Уравниватель Лестера";
+	name 				=	"РЈСЂР°РІРЅРёРІР°С‚РµР»СЊ Р›РµСЃС‚РµСЂР°";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_AXE;
@@ -340,7 +340,7 @@ INSTANCE Streitschlichter (C_Item)
 //-----------------------------------------------------------
 INSTANCE Roter_Wind (C_Item)
 {
-	name 				=	"Красный ветер";
+	name 				=	"РљСЂР°СЃРЅС‹Р№ РІРµС‚РµСЂ";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_SWD;
@@ -370,7 +370,7 @@ INSTANCE Roter_Wind (C_Item)
 //-----------------------------------------------------------
 INSTANCE Namibs_Keule (C_Item)
 {
-	name 				=	"Дубина Намиба";
+	name 				=	"Р”СѓР±РёРЅР° РќР°РјРёР±Р°";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_AXE;
@@ -400,7 +400,7 @@ INSTANCE Namibs_Keule (C_Item)
 //-----------------------------------------------------------
 INSTANCE Oruns_Keule (C_Item)
 {
-	name 				=	"Дубина Орана";
+	name 				=	"Р”СѓР±РёРЅР° РћСЂР°РЅР°";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_AXE;
@@ -430,7 +430,7 @@ INSTANCE Oruns_Keule (C_Item)
 //-----------------------------------------------------------
 INSTANCE Fortunos_Keule (C_Item)
 {
-	name 				=	"Дубина Фортуно";
+	name 				=	"Р”СѓР±РёРЅР° Р¤РѕСЂС‚СѓРЅРѕ";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_AXE;
@@ -463,7 +463,7 @@ INSTANCE Fortunos_Keule (C_Item)
 //-----------------------------------------------------------
 INSTANCE Lees_Axt (C_Item)
 {
-	name 				=	"Топор Ли";
+	name 				=	"РўРѕРїРѕСЂ Р›Рё";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_AXE;
@@ -493,7 +493,7 @@ INSTANCE Lees_Axt (C_Item)
 //-----------------------------------------------------------
 INSTANCE Oriks_Axt (C_Item)
 {
-	name 				=	"Топор Орика";
+	name 				=	"РўРѕРїРѕСЂ РћСЂРёРєР°";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_AXE;
@@ -523,7 +523,7 @@ INSTANCE Oriks_Axt (C_Item)
 //-----------------------------------------------------------
 INSTANCE Torlofs_Axt (C_Item)
 {
-	name 				=	"Топор Торлофа";
+	name 				=	"РўРѕРїРѕСЂ РўРѕСЂР»РѕС„Р°";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_AXE;
@@ -553,7 +553,7 @@ INSTANCE Torlofs_Axt (C_Item)
 //-----------------------------------------------------------
 INSTANCE Cords_Spalter (C_Item)
 {
-	name 				=	"Раскалыватель Корда";
+	name 				=	"Р Р°СЃРєР°Р»С‹РІР°С‚РµР»СЊ РљРѕСЂРґР°";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_AXE;
@@ -583,7 +583,7 @@ INSTANCE Cords_Spalter (C_Item)
 //-----------------------------------------------------------
 INSTANCE Gorns_Rache (C_Item)
 {
-	name 				=	"Месть Горна";
+	name 				=	"РњРµСЃС‚СЊ Р“РѕСЂРЅР°";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_AXE;
@@ -613,7 +613,7 @@ INSTANCE Gorns_Rache (C_Item)
 //-----------------------------------------------------------
 INSTANCE Lares_Axt (C_Item)
 {
-	name 				=	"Топор Ларса";
+	name 				=	"РўРѕРїРѕСЂ Р›Р°СЂСЃР°";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_AXE;
@@ -643,7 +643,7 @@ INSTANCE Lares_Axt (C_Item)
 //-----------------------------------------------------------
 INSTANCE Wolfs_Bogen (C_Item)
 {
-	name 				=	"Лук Волка";
+	name 				=	"Р›СѓРє Р’РѕР»РєР°";
 
 	mainflag 			=	ITEM_KAT_FF;
 	flags 				=	ITEM_BOW;
@@ -672,7 +672,7 @@ INSTANCE Wolfs_Bogen (C_Item)
 //-----------------------------------------------------------
 INSTANCE Silas_Axt (C_Item)
 {
-	name 				=	"Топор Силаса";
+	name 				=	"РўРѕРїРѕСЂ РЎРёР»Р°СЃР°";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_AXE;
@@ -702,7 +702,7 @@ INSTANCE Silas_Axt (C_Item)
 //-----------------------------------------------------------
 INSTANCE Heerscherstab (C_Item)
 {
-	name 				=	"Скипетр";
+	name 				=	"РЎРєРёРїРµС‚СЂ";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_AXE;

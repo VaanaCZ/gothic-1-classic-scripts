@@ -33,7 +33,7 @@ instance DIA_Roscoe_BringList (C_INFO)
 	condition		= DIA_Roscoe_BringList_Condition;
 	information		= DIA_Roscoe_BringList_Info;
 	permanent		= 0;
-	description		= "У меня список припасов для Старой Шахты.";
+	description		= "РЈ РјРµРЅСЏ СЃРїРёСЃРѕРє РїСЂРёРїР°СЃРѕРІ РґР»СЏ РЎС‚Р°СЂРѕР№ РЁР°С…С‚С‹.";
 };
 
 FUNC int  DIA_Roscoe_BringList_Condition()
@@ -46,14 +46,14 @@ FUNC int  DIA_Roscoe_BringList_Condition()
 
 func void  DIA_Roscoe_BringList_Info()
 {
-	AI_Output (other, self,"DIA_Roscoe_BringList_15_00"); //У меня список припасов для Старой Шахты.
-	AI_Output (self, other,"DIA_Roscoe_BringList_10_01"); //Недурно. Где ты его взял?
-	AI_Output (other, self,"DIA_Roscoe_BringList_15_02"); //Его мне дал Ян.
-	AI_Output (self, other,"DIA_Roscoe_BringList_10_03"); //Ты храбрый парень! Тебя прислали, чтобы испытать меня, верно? Торус уже сходит с ума, я уверен.
-	AI_Output (other, self,"DIA_Roscoe_BringList_15_04"); //Мне приказал Диего.
-	AI_Output (self, other,"DIA_Roscoe_BringList_10_05"); //Диего делает то, что приказывает ему Торус. Он бы умер от смеха, если бы узнал, что ты был здесь.
-	AI_Output (other, self,"DIA_Roscoe_BringList_15_06"); //Так я могу зайти или нет?
-	AI_Output (self, other,"DIA_Roscoe_BringList_10_07"); //Да заходи! Ларс не поверит своим глазам.
+	AI_Output (other, self,"DIA_Roscoe_BringList_15_00"); //РЈ РјРµРЅСЏ СЃРїРёСЃРѕРє РїСЂРёРїР°СЃРѕРІ РґР»СЏ РЎС‚Р°СЂРѕР№ РЁР°С…С‚С‹.
+	AI_Output (self, other,"DIA_Roscoe_BringList_10_01"); //РќРµРґСѓСЂРЅРѕ. Р“РґРµ С‚С‹ РµРіРѕ РІР·СЏР»?
+	AI_Output (other, self,"DIA_Roscoe_BringList_15_02"); //Р•РіРѕ РјРЅРµ РґР°Р» РЇРЅ.
+	AI_Output (self, other,"DIA_Roscoe_BringList_10_03"); //РўС‹ С…СЂР°Р±СЂС‹Р№ РїР°СЂРµРЅСЊ! РўРµР±СЏ РїСЂРёСЃР»Р°Р»Рё, С‡С‚РѕР±С‹ РёСЃРїС‹С‚Р°С‚СЊ РјРµРЅСЏ, РІРµСЂРЅРѕ? РўРѕСЂСѓСЃ СѓР¶Рµ СЃС…РѕРґРёС‚ СЃ СѓРјР°, СЏ СѓРІРµСЂРµРЅ.
+	AI_Output (other, self,"DIA_Roscoe_BringList_15_04"); //РњРЅРµ РїСЂРёРєР°Р·Р°Р» Р”РёРµРіРѕ.
+	AI_Output (self, other,"DIA_Roscoe_BringList_10_05"); //Р”РёРµРіРѕ РґРµР»Р°РµС‚ С‚Рѕ, С‡С‚Рѕ РїСЂРёРєР°Р·С‹РІР°РµС‚ РµРјСѓ РўРѕСЂСѓСЃ. РћРЅ Р±С‹ СѓРјРµСЂ РѕС‚ СЃРјРµС…Р°, РµСЃР»Рё Р±С‹ СѓР·РЅР°Р», С‡С‚Рѕ С‚С‹ Р±С‹Р» Р·РґРµСЃСЊ.
+	AI_Output (other, self,"DIA_Roscoe_BringList_15_06"); //РўР°Рє СЏ РјРѕРіСѓ Р·Р°Р№С‚Рё РёР»Рё РЅРµС‚?
+	AI_Output (self, other,"DIA_Roscoe_BringList_10_07"); //Р”Р° Р·Р°С…РѕРґРё! Р›Р°СЂСЃ РЅРµ РїРѕРІРµСЂРёС‚ СЃРІРѕРёРј РіР»Р°Р·Р°Рј.
 	self.aivar[AIV_PASSGATE] = TRUE;
 };
 
@@ -68,7 +68,7 @@ instance DIA_Roscoe_Mordrag (C_INFO)
 	condition		= DIA_Roscoe_Mordrag_Condition;
 	information		= DIA_Roscoe_Mordrag_Info;
 	important		= 0;
-	description		= "Меня прислал Мордраг. ";
+	description		= "РњРµРЅСЏ РїСЂРёСЃР»Р°Р» РњРѕСЂРґСЂР°Рі. ";
 };
 
 FUNC int  DIA_Roscoe_Mordrag_Condition()
@@ -82,14 +82,14 @@ FUNC int  DIA_Roscoe_Mordrag_Condition()
 
 func void  DIA_Roscoe_Mordrag_Info()
 {
-	AI_Output (other, self,"DIA_Roscoe_Mordrag_15_00"); //Меня прислал Мордраг. 
-	AI_Output (self, other,"DIA_Roscoe_Mordrag_10_01"); //Давненько его здесь не было. Похоже, он переметнулся к Старому Лагерю.
-	AI_Output (other, self,"DIA_Roscoe_Mordrag_15_02"); //Мы пришли сюда вместе.
-	AI_Output (self, other,"DIA_Roscoe_Mordrag_10_03"); //Мордраг вернулся? Если встретишь его, скажи, что его разыскивает Ларс.
-	AI_Output (other, self,"DIA_Roscoe_Mordrag_15_04"); //Мордраг передал мне кое-что для Ларса.
-	AI_Output (self, other,"DIA_Roscoe_Mordrag_10_05"); //Что именно?
-	AI_Output (other, self,"DIA_Roscoe_Mordrag_15_06"); //Кольцо.
-	AI_Output (self, other,"DIA_Roscoe_Mordrag_10_07"); //Дорогая штуковина... Ладно, ты можешь увидеться с ним.
+	AI_Output (other, self,"DIA_Roscoe_Mordrag_15_00"); //РњРµРЅСЏ РїСЂРёСЃР»Р°Р» РњРѕСЂРґСЂР°Рі. 
+	AI_Output (self, other,"DIA_Roscoe_Mordrag_10_01"); //Р”Р°РІРЅРµРЅСЊРєРѕ РµРіРѕ Р·РґРµСЃСЊ РЅРµ Р±С‹Р»Рѕ. РџРѕС…РѕР¶Рµ, РѕРЅ РїРµСЂРµРјРµС‚РЅСѓР»СЃСЏ Рє РЎС‚Р°СЂРѕРјСѓ Р›Р°РіРµСЂСЋ.
+	AI_Output (other, self,"DIA_Roscoe_Mordrag_15_02"); //РњС‹ РїСЂРёС€Р»Рё СЃСЋРґР° РІРјРµСЃС‚Рµ.
+	AI_Output (self, other,"DIA_Roscoe_Mordrag_10_03"); //РњРѕСЂРґСЂР°Рі РІРµСЂРЅСѓР»СЃСЏ? Р•СЃР»Рё РІСЃС‚СЂРµС‚РёС€СЊ РµРіРѕ, СЃРєР°Р¶Рё, С‡С‚Рѕ РµРіРѕ СЂР°Р·С‹СЃРєРёРІР°РµС‚ Р›Р°СЂСЃ.
+	AI_Output (other, self,"DIA_Roscoe_Mordrag_15_04"); //РњРѕСЂРґСЂР°Рі РїРµСЂРµРґР°Р» РјРЅРµ РєРѕРµ-С‡С‚Рѕ РґР»СЏ Р›Р°СЂСЃР°.
+	AI_Output (self, other,"DIA_Roscoe_Mordrag_10_05"); //Р§С‚Рѕ РёРјРµРЅРЅРѕ?
+	AI_Output (other, self,"DIA_Roscoe_Mordrag_15_06"); //РљРѕР»СЊС†Рѕ.
+	AI_Output (self, other,"DIA_Roscoe_Mordrag_10_07"); //Р”РѕСЂРѕРіР°СЏ С€С‚СѓРєРѕРІРёРЅР°... Р›Р°РґРЅРѕ, С‚С‹ РјРѕР¶РµС€СЊ СѓРІРёРґРµС‚СЊСЃСЏ СЃ РЅРёРј.
 	self.aivar[AIV_PASSGATE] = TRUE;
 };
 
@@ -104,7 +104,7 @@ instance DIA_Roscoe_WannaJoin (C_INFO)
 	condition		= DIA_Roscoe_WannaJoin_Condition;
 	information		= DIA_Roscoe_WannaJoin_Info;
 	permanent		= 0;
-	description		= "Я хотел бы присоединиться к вашей шайке.";
+	description		= "РЇ С…РѕС‚РµР» Р±С‹ РїСЂРёСЃРѕРµРґРёРЅРёС‚СЊСЃСЏ Рє РІР°С€РµР№ С€Р°Р№РєРµ.";
 };
 
 FUNC int  DIA_Roscoe_WannaJoin_Condition()
@@ -120,8 +120,8 @@ FUNC int  DIA_Roscoe_WannaJoin_Condition()
 
 func void  DIA_Roscoe_WannaJoin_Info()
 {
-	AI_Output (other, self,"DIA_Roscoe_WannaJoin_15_00"); //Я хотел бы присоединиться к вашей шайке.
-	AI_Output (self, other,"DIA_Roscoe_WannaJoin_10_01"); //Многие хотят присоединиться к нам. Если хочешь пройти через эти ворота, тебе придется предложить нечто особенное.
+	AI_Output (other, self,"DIA_Roscoe_WannaJoin_15_00"); //РЇ С…РѕС‚РµР» Р±С‹ РїСЂРёСЃРѕРµРґРёРЅРёС‚СЊСЃСЏ Рє РІР°С€РµР№ С€Р°Р№РєРµ.
+	AI_Output (self, other,"DIA_Roscoe_WannaJoin_10_01"); //РњРЅРѕРіРёРµ С…РѕС‚СЏС‚ РїСЂРёСЃРѕРµРґРёРЅРёС‚СЊСЃСЏ Рє РЅР°Рј. Р•СЃР»Рё С…РѕС‡РµС€СЊ РїСЂРѕР№С‚Рё С‡РµСЂРµР· СЌС‚Рё РІРѕСЂРѕС‚Р°, С‚РµР±Рµ РїСЂРёРґРµС‚СЃСЏ РїСЂРµРґР»РѕР¶РёС‚СЊ РЅРµС‡С‚Рѕ РѕСЃРѕР±РµРЅРЅРѕРµ.
 	
 };
 
@@ -153,7 +153,7 @@ FUNC int  DIA_Roscoe_ComeAgain_Condition()
 
 func void  DIA_Roscoe_ComeAgain_Info()
 {
-	AI_Output (self, other,"DIA_Roscoe_ComeAgain_10_00"); //Снова ты. 
+	AI_Output (self, other,"DIA_Roscoe_ComeAgain_10_00"); //РЎРЅРѕРІР° С‚С‹. 
 };
 
 //////////////////////////////////////////////////////////////////////////
@@ -191,9 +191,9 @@ func void Info_Roscoe_FirstWarn_Info()
 {
 	PrintGlobals	(PD_MISSION);
 
-	AI_Output (self, hero,"Info_Roscoe_FirstWarn_Info_10_00"); //Куда собрался?
-	AI_Output (hero, self,"Info_Roscoe_FirstWarn_Info_15_01"); //Я хочу встретиться с Ларсом.
-	AI_Output (self, hero,"Info_Roscoe_FirstWarn_Info_10_02"); //Ларс здесь, но понадобится веский повод, чтобы оторвать его от дел.
+	AI_Output (self, hero,"Info_Roscoe_FirstWarn_Info_10_00"); //РљСѓРґР° СЃРѕР±СЂР°Р»СЃСЏ?
+	AI_Output (hero, self,"Info_Roscoe_FirstWarn_Info_15_01"); //РЇ С…РѕС‡Сѓ РІСЃС‚СЂРµС‚РёС‚СЊСЃСЏ СЃ Р›Р°СЂСЃРѕРј.
+	AI_Output (self, hero,"Info_Roscoe_FirstWarn_Info_10_02"); //Р›Р°СЂСЃ Р·РґРµСЃСЊ, РЅРѕ РїРѕРЅР°РґРѕР±РёС‚СЃСЏ РІРµСЃРєРёР№ РїРѕРІРѕРґ, С‡С‚РѕР±С‹ РѕС‚РѕСЂРІР°С‚СЊ РµРіРѕ РѕС‚ РґРµР».
 
 	hero.aivar[AIV_LASTDISTTOWP] 		= Npc_GetDistToWP(hero,Roscoe_CHECKPOINT);
 	hero.aivar[AIV_GUARDPASSAGE_STATUS]	= AIV_GPS_FIRSTWARN;	
@@ -226,7 +226,7 @@ func int Info_Roscoe_LastWarn_Condition()
 
 func int Info_Roscoe_LastWarn_Info()
 {
-	AI_Output (self, hero,"Info_Roscoe_LastWarn_10_00"); //Ты что, оглох?
+	AI_Output (self, hero,"Info_Roscoe_LastWarn_10_00"); //РўС‹ С‡С‚Рѕ, РѕРіР»РѕС…?
 
 	hero.aivar[AIV_LASTDISTTOWP] 		= Npc_GetDistToWP (hero,Roscoe_CHECKPOINT);
 	hero.aivar[AIV_GUARDPASSAGE_STATUS]	= AIV_GPS_LASTWARN;	
@@ -266,7 +266,7 @@ func int Info_Roscoe_Attack_Info()
 	hero.aivar[AIV_GUARDPASSAGE_STATUS]	= AIV_GPS_PUNISH;	
 	
 	B_FullStop			(self);	
-	AI_StopProcessInfos	(self);					// dem Spieler sofort wieder die Kontrolle zurьckgeben
+	AI_StopProcessInfos	(self);					// dem Spieler sofort wieder die Kontrolle zurСЊckgeben
 	B_IntruderAlert		(self,	other);
 	B_SetAttackReason	(self,	AIV_AR_INTRUDER);
 	Npc_SetTarget		(self,	hero);

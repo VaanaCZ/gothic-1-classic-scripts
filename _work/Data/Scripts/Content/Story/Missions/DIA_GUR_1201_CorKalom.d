@@ -23,7 +23,7 @@ FUNC int  GUR_1201_CorKalom_FIRST_Condition()
 
 FUNC void  GUR_1201_CorKalom_FIRST_Info()
 {
-	AI_Output (self, other,"GUR_1201_CorKalom_FIRST_10_00"); //Что тебе нужно?
+	AI_Output (self, other,"GUR_1201_CorKalom_FIRST_10_00"); //Р§С‚Рѕ С‚РµР±Рµ РЅСѓР¶РЅРѕ?
 	Kalom_TalkedTo = TRUE;
 };  
 
@@ -38,7 +38,7 @@ instance  GUR_1201_CorKalom_WannaJoin (C_INFO)
 	condition		= GUR_1201_CorKalom_WannaJoin_Condition;
 	information		= GUR_1201_CorKalom_WannaJoin_Info;
 	permanent		= 0;
-	description		= "Я хочу стать одним из членов Братства."; 
+	description		= "РЇ С…РѕС‡Сѓ СЃС‚Р°С‚СЊ РѕРґРЅРёРј РёР· С‡Р»РµРЅРѕРІ Р‘СЂР°С‚СЃС‚РІР°."; 
 };
 
 FUNC int  GUR_1201_CorKalom_WannaJoin_Condition()
@@ -52,15 +52,15 @@ FUNC int  GUR_1201_CorKalom_WannaJoin_Condition()
 
 FUNC void  GUR_1201_CorKalom_WannaJoin_Info()
 {
-	AI_Output (other, self,"GUR_1201_CorKalom_WannaJoin_15_00"); //Я хочу стать одним из членов Братства.
-	AI_Output (other, self,"GUR_1201_CorKalom_WannaJoin_15_01"); //Я слышал, ты командуешь послушниками и выбираешь среди них достойных.
-	AI_Output (self, other,"GUR_1201_CorKalom_WannaJoin_10_02"); //У меня нет времени! Мои эксперименты слишком важны, я не могу сейчас тратить время на новичков.
-	AI_Output (self, other,"GUR_1201_CorKalom_WannaJoin_10_03"); //Я соглашусь с решением Идолов. Возвращайся, когда они скажут, что ты готов носить носить робу послушника.
+	AI_Output (other, self,"GUR_1201_CorKalom_WannaJoin_15_00"); //РЇ С…РѕС‡Сѓ СЃС‚Р°С‚СЊ РѕРґРЅРёРј РёР· С‡Р»РµРЅРѕРІ Р‘СЂР°С‚СЃС‚РІР°.
+	AI_Output (other, self,"GUR_1201_CorKalom_WannaJoin_15_01"); //РЇ СЃР»С‹С€Р°Р», С‚С‹ РєРѕРјР°РЅРґСѓРµС€СЊ РїРѕСЃР»СѓС€РЅРёРєР°РјРё Рё РІС‹Р±РёСЂР°РµС€СЊ СЃСЂРµРґРё РЅРёС… РґРѕСЃС‚РѕР№РЅС‹С….
+	AI_Output (self, other,"GUR_1201_CorKalom_WannaJoin_10_02"); //РЈ РјРµРЅСЏ РЅРµС‚ РІСЂРµРјРµРЅРё! РњРѕРё СЌРєСЃРїРµСЂРёРјРµРЅС‚С‹ СЃР»РёС€РєРѕРј РІР°Р¶РЅС‹, СЏ РЅРµ РјРѕРіСѓ СЃРµР№С‡Р°СЃ С‚СЂР°С‚РёС‚СЊ РІСЂРµРјСЏ РЅР° РЅРѕРІРёС‡РєРѕРІ.
+	AI_Output (self, other,"GUR_1201_CorKalom_WannaJoin_10_03"); //РЇ СЃРѕРіР»Р°С€СѓСЃСЊ СЃ СЂРµС€РµРЅРёРµРј РРґРѕР»РѕРІ. Р’РѕР·РІСЂР°С‰Р°Р№СЃСЏ, РєРѕРіРґР° РѕРЅРё СЃРєР°Р¶СѓС‚, С‡С‚Рѕ С‚С‹ РіРѕС‚РѕРІ РЅРѕСЃРёС‚СЊ РЅРѕСЃРёС‚СЊ СЂРѕР±Сѓ РїРѕСЃР»СѓС€РЅРёРєР°.
 	AI_StopProcessInfos	(self);
 
 	Log_CreateTopic		(CH1_JoinPsi,	LOG_MISSION);
 	Log_SetTopicStatus	(CH1_JoinPsi,	LOG_RUNNING);
-	B_LogEntry			(CH1_JoinPsi,"Кор Галом позволит мне присоединиться к Братству в качестве послушника, если я смогу уговорить четырех Идолов выступить в мою пользу.");
+	B_LogEntry			(CH1_JoinPsi,"РљРѕСЂ Р“Р°Р»РѕРј РїРѕР·РІРѕР»РёС‚ РјРЅРµ РїСЂРёСЃРѕРµРґРёРЅРёС‚СЊСЃСЏ Рє Р‘СЂР°С‚СЃС‚РІСѓ РІ РєР°С‡РµСЃС‚РІРµ РїРѕСЃР»СѓС€РЅРёРєР°, РµСЃР»Рё СЏ СЃРјРѕРіСѓ СѓРіРѕРІРѕСЂРёС‚СЊ С‡РµС‚С‹СЂРµС… РРґРѕР»РѕРІ РІС‹СЃС‚СѓРїРёС‚СЊ РІ РјРѕСЋ РїРѕР»СЊР·Сѓ.");
 };  
 
 // ****************************************
@@ -74,7 +74,7 @@ instance  GUR_1201_CorKalom_Recipe (C_INFO)
 	condition		= GUR_1201_CorKalom_Recipe_Condition;
 	information		= GUR_1201_CorKalom_Recipe_Info;
 	permanent		= 0;
-	description		= "Один торговец из Старого Лагеря ищет рецепт."; 
+	description		= "РћРґРёРЅ С‚РѕСЂРіРѕРІРµС† РёР· РЎС‚Р°СЂРѕРіРѕ Р›Р°РіРµСЂСЏ РёС‰РµС‚ СЂРµС†РµРїС‚."; 
 };
 
 FUNC int  GUR_1201_CorKalom_Recipe_Condition()
@@ -88,10 +88,10 @@ FUNC int  GUR_1201_CorKalom_Recipe_Condition()
 
 FUNC void  GUR_1201_CorKalom_Recipe_Info()
 {
-	AI_Output (other, self,"GUR_1201_CorKalom_Recipe_15_00"); //Один торговец из Старого Лагеря ищет рецепт целебного эликсира.
-	AI_Output (self, other,"GUR_1201_CorKalom_Recipe_10_01"); //Мои рецепты не продаются!
+	AI_Output (other, self,"GUR_1201_CorKalom_Recipe_15_00"); //РћРґРёРЅ С‚РѕСЂРіРѕРІРµС† РёР· РЎС‚Р°СЂРѕРіРѕ Р›Р°РіРµСЂСЏ РёС‰РµС‚ СЂРµС†РµРїС‚ С†РµР»РµР±РЅРѕРіРѕ СЌР»РёРєСЃРёСЂР°.
+	AI_Output (self, other,"GUR_1201_CorKalom_Recipe_10_01"); //РњРѕРё СЂРµС†РµРїС‚С‹ РЅРµ РїСЂРѕРґР°СЋС‚СЃСЏ!
 
-	B_LogEntry	(CH1_KalomsRecipe,"Кор Галом не даст мне рецепта. Но в его лаборатории есть сундуки… А он так увлечен другими делами…");
+	B_LogEntry	(CH1_KalomsRecipe,"РљРѕСЂ Р“Р°Р»РѕРј РЅРµ РґР°СЃС‚ РјРЅРµ СЂРµС†РµРїС‚Р°. РќРѕ РІ РµРіРѕ Р»Р°Р±РѕСЂР°С‚РѕСЂРёРё РµСЃС‚СЊ СЃСѓРЅРґСѓРєРёвЂ¦ Рђ РѕРЅ С‚Р°Рє СѓРІР»РµС‡РµРЅ РґСЂСѓРіРёРјРё РґРµР»Р°РјРёвЂ¦");
 };  
 
 // ****************************************
@@ -105,7 +105,7 @@ instance  GUR_1201_CorKalom_Experimente (C_INFO)
 	condition		= GUR_1201_CorKalom_Experimente_Condition;
 	information		= GUR_1201_CorKalom_Experimente_Info;
 	permanent		= 1;
-	description		= "Что за эксперименты ты проводишь?"; 
+	description		= "Р§С‚Рѕ Р·Р° СЌРєСЃРїРµСЂРёРјРµРЅС‚С‹ С‚С‹ РїСЂРѕРІРѕРґРёС€СЊ?"; 
 };
 
 FUNC int  GUR_1201_CorKalom_Experimente_Condition()
@@ -119,8 +119,8 @@ FUNC int  GUR_1201_CorKalom_Experimente_Condition()
 
 FUNC void  GUR_1201_CorKalom_Experimente_Info()
 {
-	AI_Output (other, self,"GUR_1201_CorKalom_Experimente_15_00"); //Что за эксперименты ты проводишь?
-	AI_Output (self, other,"GUR_1201_CorKalom_Experimente_10_01"); //Мои исследования находятся на уровне, недоступном для твоего понимания, мальчик. Не трать попусту мое время!
+	AI_Output (other, self,"GUR_1201_CorKalom_Experimente_15_00"); //Р§С‚Рѕ Р·Р° СЌРєСЃРїРµСЂРёРјРµРЅС‚С‹ С‚С‹ РїСЂРѕРІРѕРґРёС€СЊ?
+	AI_Output (self, other,"GUR_1201_CorKalom_Experimente_10_01"); //РњРѕРё РёСЃСЃР»РµРґРѕРІР°РЅРёСЏ РЅР°С…РѕРґСЏС‚СЃСЏ РЅР° СѓСЂРѕРІРЅРµ, РЅРµРґРѕСЃС‚СѓРїРЅРѕРј РґР»СЏ С‚РІРѕРµРіРѕ РїРѕРЅРёРјР°РЅРёСЏ, РјР°Р»СЊС‡РёРє. РќРµ С‚СЂР°С‚СЊ РїРѕРїСѓСЃС‚Сѓ РјРѕРµ РІСЂРµРјСЏ!
 };  
 
 // ****************************************
@@ -134,7 +134,7 @@ instance  GUR_1201_CorKalom_BRINGWEED (C_INFO)
 	condition		= GUR_1201_CorKalom_BRINGWEED_Condition;
 	information		= GUR_1201_CorKalom_BRINGWEED_Info;
 	permanent		= 1;
-	description		= "Я принес дневной сбор болотника!"; 
+	description		= "РЇ РїСЂРёРЅРµСЃ РґРЅРµРІРЅРѕР№ СЃР±РѕСЂ Р±РѕР»РѕС‚РЅРёРєР°!"; 
 };
 
 FUNC int  GUR_1201_CorKalom_BRINGWEED_Condition()
@@ -147,21 +147,21 @@ FUNC int  GUR_1201_CorKalom_BRINGWEED_Condition()
 
 FUNC void  GUR_1201_CorKalom_BRINGWEED_Info()
 {
-	AI_Output				(other, self,"GUR_1201_CorKalom_BRINGWEED_15_00"); //Я принес дневной сбор болотника!
+	AI_Output				(other, self,"GUR_1201_CorKalom_BRINGWEED_15_00"); //РЇ РїСЂРёРЅРµСЃ РґРЅРµРІРЅРѕР№ СЃР±РѕСЂ Р±РѕР»РѕС‚РЅРёРєР°!
 
 	if	(Npc_HasItems(hero, ItMi_Plants_Swampherb_01) < 100)
 	{
-		AI_Output			(self, other,"GUR_1201_CorKalom_BRINGWEED_10_01"); //И ЭТО - все?! Мне нужен ПОЛНЫЙ сбор - минимум сотня стеблей!!!
+		AI_Output			(self, other,"GUR_1201_CorKalom_BRINGWEED_10_01"); //Р Р­РўРћ - РІСЃРµ?! РњРЅРµ РЅСѓР¶РµРЅ РџРћР›РќР«Р™ СЃР±РѕСЂ - РјРёРЅРёРјСѓРј СЃРѕС‚РЅСЏ СЃС‚РµР±Р»РµР№!!!
 		AI_StopProcessInfos	(self);
 	}
 	else
 	{
-		AI_Output			(self, other,"GUR_1201_CorKalom_BRINGWEED_10_02"); //А, давай сюда. И убирайся с глаз моих!
+		AI_Output			(self, other,"GUR_1201_CorKalom_BRINGWEED_10_02"); //Рђ, РґР°РІР°Р№ СЃСЋРґР°. Р СѓР±РёСЂР°Р№СЃСЏ СЃ РіР»Р°Р· РјРѕРёС…!
 
 		B_GiveInvItems	(hero, self, ItMi_Plants_Swampherb_01, 100);
         Npc_RemoveInvItems (self, ItMi_Plants_Swampherb_01, 100);
 		BaalOrun_FetchWeed = LOG_SUCCESS;
-		B_LogEntry			(CH1_DeliverWeed,"Когда я вручал ему сегодняшний урожай, Кор Галом был снова просто невыносим.");
+		B_LogEntry			(CH1_DeliverWeed,"РљРѕРіРґР° СЏ РІСЂСѓС‡Р°Р» РµРјСѓ СЃРµРіРѕРґРЅСЏС€РЅРёР№ СѓСЂРѕР¶Р°Р№, РљРѕСЂ Р“Р°Р»РѕРј Р±С‹Р» СЃРЅРѕРІР° РїСЂРѕСЃС‚Рѕ РЅРµРІС‹РЅРѕСЃРёРј.");
 		Log_SetTopicStatus	(CH1_DeliverWeed,	LOG_SUCCESS);
 		B_GiveXP			(XP_DeliveredWeedHarvest);
 		
@@ -181,7 +181,7 @@ instance  GUR_1201_CorKalom_Crawlerzangen (C_INFO)
 	condition		= GUR_1201_CorKalom_Crawlerzangen_Condition;
 	information		= GUR_1201_CorKalom_Crawlerzangen_Info;
 	permanent		= 1;
-	description		= "Я принес тебе жвалы ползунов..."; 
+	description		= "РЇ РїСЂРёРЅРµСЃ С‚РµР±Рµ Р¶РІР°Р»С‹ РїРѕР»Р·СѓРЅРѕРІ..."; 
 };
 
 FUNC int  GUR_1201_CorKalom_Crawlerzangen_Condition()
@@ -194,23 +194,23 @@ FUNC int  GUR_1201_CorKalom_Crawlerzangen_Condition()
 
 FUNC void  GUR_1201_CorKalom_Crawlerzangen_Info()
 {
-	AI_Output (other, self,"GUR_1201_CorKalom_Crawlerzangen_15_00"); //Я принес тебе жвалы ползунов...
+	AI_Output (other, self,"GUR_1201_CorKalom_Crawlerzangen_15_00"); //РЇ РїСЂРёРЅРµСЃ С‚РµР±Рµ Р¶РІР°Р»С‹ РїРѕР»Р·СѓРЅРѕРІ...
 	
 	if (Npc_HasItems(other,ItAt_Crawler_01) > 9)
 	{
-		AI_Output (self, other,"GUR_1201_CorKalom_Crawlerzangen_10_01"); //Очень хорошо. В награду я дам тебе несколько лучших эликсиров.
+		AI_Output (self, other,"GUR_1201_CorKalom_Crawlerzangen_10_01"); //РћС‡РµРЅСЊ С…РѕСЂРѕС€Рѕ. Р’ РЅР°РіСЂР°РґСѓ СЏ РґР°Рј С‚РµР±Рµ РЅРµСЃРєРѕР»СЊРєРѕ Р»СѓС‡С€РёС… СЌР»РёРєСЃРёСЂРѕРІ.
 		CreateInvItems(self, ItFo_Potion_Mana_03, 3);
 		B_GiveInvItems(self, hero,ItFo_Potion_Mana_03, 3);
 	}
 	else if (Npc_HasItems(other,ItAt_Crawler_01) > 2)
 	{
-		AI_Output (self, other,"GUR_1201_CorKalom_Crawlerzangen_10_02"); //Хорошо. В награду я дам тебе несколько эликсиров.
+		AI_Output (self, other,"GUR_1201_CorKalom_Crawlerzangen_10_02"); //РҐРѕСЂРѕС€Рѕ. Р’ РЅР°РіСЂР°РґСѓ СЏ РґР°Рј С‚РµР±Рµ РЅРµСЃРєРѕР»СЊРєРѕ СЌР»РёРєСЃРёСЂРѕРІ.
 		CreateInvItems(self, ItFo_Potion_Mana_02, 2);
 		B_GiveInvItems(self, hero,ItFo_Potion_Mana_02, 2);
 	}
 	else
 	{
-		AI_Output (self, other,"GUR_1201_CorKalom_Crawlerzangen_10_03"); //Х-м. И это все? Вот, забирай магический эликсир и проваливай.
+		AI_Output (self, other,"GUR_1201_CorKalom_Crawlerzangen_10_03"); //РҐ-Рј. Р СЌС‚Рѕ РІСЃРµ? Р’РѕС‚, Р·Р°Р±РёСЂР°Р№ РјР°РіРёС‡РµСЃРєРёР№ СЌР»РёРєСЃРёСЂ Рё РїСЂРѕРІР°Р»РёРІР°Р№.
 		CreateInvItems(self, ItFo_Potion_Mana_01, 1);
 		B_GiveInvItems(self, hero,ItFo_Potion_Mana_01, 1);
 		AI_StopProcessInfos(self);
@@ -233,7 +233,7 @@ instance  GUR_1201_CorKalom_JoinPSI (C_INFO)
 	condition		= GUR_1201_CorKalom_JoinPSI_Condition;
 	information		= GUR_1201_CorKalom_JoinPSI_Info;
 	permanent		= 1;
-	description		= "Похоже, мне удалось убедить Идолов!"; 
+	description		= "РџРѕС…РѕР¶Рµ, РјРЅРµ СѓРґР°Р»РѕСЃСЊ СѓР±РµРґРёС‚СЊ РРґРѕР»РѕРІ!"; 
 };
 
 FUNC int  GUR_1201_CorKalom_JoinPSI_Condition()
@@ -248,35 +248,35 @@ FUNC int  GUR_1201_CorKalom_JoinPSI_Condition()
 func void  GUR_1201_CorKalom_JoinPSI_Info()
 {
 	var int counter;
-	counter = 0;	//Counter lцschen, da er noch den Stand der letzten Analyse hat!
+	counter = 0;	//Counter lС†schen, da er noch den Stand der letzten Analyse hat!
 	
-	AI_Output (other, self,"GUR_1201_CorKalom_JoinPSI_15_00"); //Похоже, мне удалось убедить Идолов!
+	AI_Output (other, self,"GUR_1201_CorKalom_JoinPSI_15_00"); //РџРѕС…РѕР¶Рµ, РјРЅРµ СѓРґР°Р»РѕСЃСЊ СѓР±РµРґРёС‚СЊ РРґРѕР»РѕРІ!
 	
 	if (Npc_KnowsInfo(hero,DIA_BaalOrun_GotWeed))
 	{
-		AI_Output (other, self,"GUR_1201_CorKalom_JoinPSI_15_01"); //Идол Оран сказал, что я достоин стать верным слугой Спящего.
+		AI_Output (other, self,"GUR_1201_CorKalom_JoinPSI_15_01"); //РРґРѕР» РћСЂР°РЅ СЃРєР°Р·Р°Р», С‡С‚Рѕ СЏ РґРѕСЃС‚РѕРёРЅ СЃС‚Р°С‚СЊ РІРµСЂРЅС‹Рј СЃР»СѓРіРѕР№ РЎРїСЏС‰РµРіРѕ.
 		counter = counter + 1;
 	};
 	if (Npc_KnowsInfo(hero,	DIA_BaalCadar_SleepSpell))
 	{
-		AI_Output (self, other,"GUR_1201_CorKalom_JoinPSI_10_02"); //Продолжай...
-		AI_Output (other, self,"GUR_1201_CorKalom_JoinPSI_15_03"); //Идол Кадар считает меня способным учеником.
+		AI_Output (self, other,"GUR_1201_CorKalom_JoinPSI_10_02"); //РџСЂРѕРґРѕР»Р¶Р°Р№...
+		AI_Output (other, self,"GUR_1201_CorKalom_JoinPSI_15_03"); //РРґРѕР» РљР°РґР°СЂ СЃС‡РёС‚Р°РµС‚ РјРµРЅСЏ СЃРїРѕСЃРѕР±РЅС‹Рј СѓС‡РµРЅРёРєРѕРј.
 		counter = counter + 1;
 	};
 	if (Npc_KnowsInfo(hero,	DIA_BaalNamib_FirstTalk))
 	{
-		AI_Output (other, self,"GUR_1201_CorKalom_JoinPSI_15_04"); //Идол Намиб называет меня истинно верующим.
+		AI_Output (other, self,"GUR_1201_CorKalom_JoinPSI_15_04"); //РРґРѕР» РќР°РјРёР± РЅР°Р·С‹РІР°РµС‚ РјРµРЅСЏ РёСЃС‚РёРЅРЅРѕ РІРµСЂСѓСЋС‰РёРј.
 		counter = counter + 1;
 	};
 	if (Npc_KnowsInfo(hero,	DIA_BaalTyon_Vision))
 	{
-		AI_Output (other, self,"GUR_1201_CorKalom_JoinPSI_15_05"); //Благодаря мне Идола Тиона посетило видение.
+		AI_Output (other, self,"GUR_1201_CorKalom_JoinPSI_15_05"); //Р‘Р»Р°РіРѕРґР°СЂСЏ РјРЅРµ РРґРѕР»Р° РўРёРѕРЅР° РїРѕСЃРµС‚РёР»Рѕ РІРёРґРµРЅРёРµ.
 		counter = counter + 1;
 	};
 	if (Npc_KnowsInfo(hero,	DIA_BaalTondral_SendToKalom))
 	{
-		AI_Output (self, other,"GUR_1201_CorKalom_JoinPSI_10_06"); //И?
-		AI_Output (other, self,"GUR_1201_CorKalom_JoinPSI_15_07"); //Идол Тондрал сказал, что я должен получить робу. Я привел к нему нового ученика.
+		AI_Output (self, other,"GUR_1201_CorKalom_JoinPSI_10_06"); //Р?
+		AI_Output (other, self,"GUR_1201_CorKalom_JoinPSI_15_07"); //РРґРѕР» РўРѕРЅРґСЂР°Р» СЃРєР°Р·Р°Р», С‡С‚Рѕ СЏ РґРѕР»Р¶РµРЅ РїРѕР»СѓС‡РёС‚СЊ СЂРѕР±Сѓ. РЇ РїСЂРёРІРµР» Рє РЅРµРјСѓ РЅРѕРІРѕРіРѕ СѓС‡РµРЅРёРєР°.
 		counter = counter + 1;
 	};
 	//-------------------------------------	
@@ -284,8 +284,8 @@ func void  GUR_1201_CorKalom_JoinPSI_Info()
 	{	
 		if (counter >= 4)
 		{
-			AI_Output			(self, other,"GUR_1201_CorKalom_JoinPSI_10_08"); //Хорошо. Для меня вполне достаточно того, что тебя поддерживают Идолы.
-			AI_Output			(self, other,"GUR_1201_CorKalom_JoinPSI_10_09"); //Вот, надень это. А теперь ступай и постарайся приносить пользу.
+			AI_Output			(self, other,"GUR_1201_CorKalom_JoinPSI_10_08"); //РҐРѕСЂРѕС€Рѕ. Р”Р»СЏ РјРµРЅСЏ РІРїРѕР»РЅРµ РґРѕСЃС‚Р°С‚РѕС‡РЅРѕ С‚РѕРіРѕ, С‡С‚Рѕ С‚РµР±СЏ РїРѕРґРґРµСЂР¶РёРІР°СЋС‚ РРґРѕР»С‹.
+			AI_Output			(self, other,"GUR_1201_CorKalom_JoinPSI_10_09"); //Р’РѕС‚, РЅР°РґРµРЅСЊ СЌС‚Рѕ. Рђ С‚РµРїРµСЂСЊ СЃС‚СѓРїР°Р№ Рё РїРѕСЃС‚Р°СЂР°Р№СЃСЏ РїСЂРёРЅРѕСЃРёС‚СЊ РїРѕР»СЊР·Сѓ.
 	
 			// Ernennung zum Novizen
 			CreateInvItem		(self, NOV_ARMOR_M);
@@ -293,19 +293,19 @@ func void  GUR_1201_CorKalom_JoinPSI_Info()
 			AI_EquipBestArmor	(other);
 			Npc_SetTrueGuild	(hero,GIL_NOV);
 			hero.guild = GIL_NOV;
-			B_LogEntry			(CH1_JoinPsi,"Сегодня Кор Галом принял меня послушником. Конечно, он снова был непередаваемо невыносим, однако теперь я принадлежу к Братству Спящего.");
-			B_LogEntry			(GE_TraderPSI,"Я могу получить более хорошие доспехи от Идола Намиба.");
+			B_LogEntry			(CH1_JoinPsi,"РЎРµРіРѕРґРЅСЏ РљРѕСЂ Р“Р°Р»РѕРј РїСЂРёРЅСЏР» РјРµРЅСЏ РїРѕСЃР»СѓС€РЅРёРєРѕРј. РљРѕРЅРµС‡РЅРѕ, РѕРЅ СЃРЅРѕРІР° Р±С‹Р» РЅРµРїРµСЂРµРґР°РІР°РµРјРѕ РЅРµРІС‹РЅРѕСЃРёРј, РѕРґРЅР°РєРѕ С‚РµРїРµСЂСЊ СЏ РїСЂРёРЅР°РґР»РµР¶Сѓ Рє Р‘СЂР°С‚СЃС‚РІСѓ РЎРїСЏС‰РµРіРѕ.");
+			B_LogEntry			(GE_TraderPSI,"РЇ РјРѕРіСѓ РїРѕР»СѓС‡РёС‚СЊ Р±РѕР»РµРµ С…РѕСЂРѕС€РёРµ РґРѕСЃРїРµС…Рё РѕС‚ РРґРѕР»Р° РќР°РјРёР±Р°.");
 			Log_SetTopicStatus	(CH1_JoinPsi,	LOG_SUCCESS);
 			B_GiveXP			(XP_BecomeNovice);
 	
 			// Canceln der anderen Aufnahmen
 			Log_CreateTopic		(CH1_JoinOC,	LOG_MISSION);
 			Log_SetTopicStatus	(CH1_JoinOC,	LOG_FAILED);
-			B_LogEntry			(CH1_JoinOC,"Поскольку я всерьез решил примкнуть к Братству, то я не могу больше претендовать на звание одного из людей Гомеза.");
+			B_LogEntry			(CH1_JoinOC,"РџРѕСЃРєРѕР»СЊРєСѓ СЏ РІСЃРµСЂСЊРµР· СЂРµС€РёР» РїСЂРёРјРєРЅСѓС‚СЊ Рє Р‘СЂР°С‚СЃС‚РІСѓ, С‚Рѕ СЏ РЅРµ РјРѕРіСѓ Р±РѕР»СЊС€Рµ РїСЂРµС‚РµРЅРґРѕРІР°С‚СЊ РЅР° Р·РІР°РЅРёРµ РѕРґРЅРѕРіРѕ РёР· Р»СЋРґРµР№ Р“РѕРјРµР·Р°.");
 			
 			Log_CreateTopic		(CH1_JoinNC,	LOG_MISSION);
 			Log_SetTopicStatus	(CH1_JoinNC,	LOG_FAILED);
-			B_LogEntry			(CH1_JoinNC,"Поскольку я всерьез решил примкнуть к Братству, то я не могу больше претендовать на звание одного из воров Нового Лагеря.");
+			B_LogEntry			(CH1_JoinNC,"РџРѕСЃРєРѕР»СЊРєСѓ СЏ РІСЃРµСЂСЊРµР· СЂРµС€РёР» РїСЂРёРјРєРЅСѓС‚СЊ Рє Р‘СЂР°С‚СЃС‚РІСѓ, С‚Рѕ СЏ РЅРµ РјРѕРіСѓ Р±РѕР»СЊС€Рµ РїСЂРµС‚РµРЅРґРѕРІР°С‚СЊ РЅР° Р·РІР°РЅРёРµ РѕРґРЅРѕРіРѕ РёР· РІРѕСЂРѕРІ РќРѕРІРѕРіРѕ Р›Р°РіРµСЂСЏ.");
 			
 			//Log_SetTopicStatus	(CH1_LostNek,	LOG_FAILED);
 			//Log_SetTopicStatus	(CH1_FiskNewDealer,	LOG_FAILED);
@@ -315,9 +315,9 @@ func void  GUR_1201_CorKalom_JoinPSI_Info()
 		}
 		else
 		{
-			AI_Output (self, other,"GUR_1201_CorKalom_JoinPSI_NOT_10_00"); //И?
-			AI_Output (other, self,"GUR_1201_CorKalom_JoinPSI_NOT_15_01"); //Это все.
-			AI_Output (self, other,"GUR_1201_CorKalom_JoinPSI_NOT_10_02"); //Ты попусту тратишь мое драгоценное время. Возвращайся, когда хотя бы четверо Идолов признают тебя достойным!
+			AI_Output (self, other,"GUR_1201_CorKalom_JoinPSI_NOT_10_00"); //Р?
+			AI_Output (other, self,"GUR_1201_CorKalom_JoinPSI_NOT_15_01"); //Р­С‚Рѕ РІСЃРµ.
+			AI_Output (self, other,"GUR_1201_CorKalom_JoinPSI_NOT_10_02"); //РўС‹ РїРѕРїСѓСЃС‚Сѓ С‚СЂР°С‚РёС€СЊ РјРѕРµ РґСЂР°РіРѕС†РµРЅРЅРѕРµ РІСЂРµРјСЏ. Р’РѕР·РІСЂР°С‰Р°Р№СЃСЏ, РєРѕРіРґР° С…РѕС‚СЏ Р±С‹ С‡РµС‚РІРµСЂРѕ РРґРѕР»РѕРІ РїСЂРёР·РЅР°СЋС‚ С‚РµР±СЏ РґРѕСЃС‚РѕР№РЅС‹Рј!
 		};
 	}
 	else
@@ -337,7 +337,7 @@ instance  GUR_1201_CorKalom_JoinPSI2 (C_INFO)
 	condition		= GUR_1201_CorKalom_JoinPSI2_Condition;
 	information		= GUR_1201_CorKalom_JoinPSI2_Info;
 	permanent		= 0;
-	description		= "Значит, так? Ни приветствий, ни добрых пожеланий - ничего?!"; 
+	description		= "Р—РЅР°С‡РёС‚, С‚Р°Рє? РќРё РїСЂРёРІРµС‚СЃС‚РІРёР№, РЅРё РґРѕР±СЂС‹С… РїРѕР¶РµР»Р°РЅРёР№ - РЅРёС‡РµРіРѕ?!"; 
 };
 
 FUNC int  GUR_1201_CorKalom_JoinPSI2_Condition()
@@ -350,11 +350,11 @@ FUNC int  GUR_1201_CorKalom_JoinPSI2_Condition()
 
 func void  GUR_1201_CorKalom_JoinPSI2_Info()
 {
-	AI_Output			(other, self,"GUR_1201_CorKalom_JoinPSI_15_10"); //Значит, так? Ни тебе 'добро пожаловать', ни добрых пожеланий - ничего?!
-	AI_Output			(self, other,"GUR_1201_CorKalom_JoinPSI_10_11"); //Добро пожаловать.
-	AI_Output			(other, self,"GUR_1201_CorKalom_JoinPSI_15_12"); //Уже лучше.
-	AI_Output			(self, other,"GUR_1201_CorKalom_JoinPSI_10_13"); //Перестань шляться без дела! Займись чем-нибудь. Вот, возьми этот болотник и отнеси его в Старый Лагерь, Гомезу.
-	AI_Output			(self, other,"GUR_1201_CorKalom_JoinPSI_10_14"); //Если его головорезы откажутся пропустить тебя, скажи им, что тебя послал Кор Галом.
+	AI_Output			(other, self,"GUR_1201_CorKalom_JoinPSI_15_10"); //Р—РЅР°С‡РёС‚, С‚Р°Рє? РќРё С‚РµР±Рµ 'РґРѕР±СЂРѕ РїРѕР¶Р°Р»РѕРІР°С‚СЊ', РЅРё РґРѕР±СЂС‹С… РїРѕР¶РµР»Р°РЅРёР№ - РЅРёС‡РµРіРѕ?!
+	AI_Output			(self, other,"GUR_1201_CorKalom_JoinPSI_10_11"); //Р”РѕР±СЂРѕ РїРѕР¶Р°Р»РѕРІР°С‚СЊ.
+	AI_Output			(other, self,"GUR_1201_CorKalom_JoinPSI_15_12"); //РЈР¶Рµ Р»СѓС‡С€Рµ.
+	AI_Output			(self, other,"GUR_1201_CorKalom_JoinPSI_10_13"); //РџРµСЂРµСЃС‚Р°РЅСЊ С€Р»СЏС‚СЊСЃСЏ Р±РµР· РґРµР»Р°! Р—Р°Р№РјРёСЃСЊ С‡РµРј-РЅРёР±СѓРґСЊ. Р’РѕС‚, РІРѕР·СЊРјРё СЌС‚РѕС‚ Р±РѕР»РѕС‚РЅРёРє Рё РѕС‚РЅРµСЃРё РµРіРѕ РІ РЎС‚Р°СЂС‹Р№ Р›Р°РіРµСЂСЊ, Р“РѕРјРµР·Сѓ.
+	AI_Output			(self, other,"GUR_1201_CorKalom_JoinPSI_10_14"); //Р•СЃР»Рё РµРіРѕ РіРѕР»РѕРІРѕСЂРµР·С‹ РѕС‚РєР°Р¶СѓС‚СЃСЏ РїСЂРѕРїСѓСЃС‚РёС‚СЊ С‚РµР±СЏ, СЃРєР°Р¶Рё РёРј, С‡С‚Рѕ С‚РµР±СЏ РїРѕСЃР»Р°Р» РљРѕСЂ Р“Р°Р»РѕРј.
 	
 	CreateInvItems		(self, itmijoint_3, 30);
 	B_GiveInvItems      (self, hero, itmijoint_3, 30);
@@ -362,9 +362,9 @@ func void  GUR_1201_CorKalom_JoinPSI2_Info()
 	KALOM_KRAUTBOTE = LOG_RUNNING;
 	Log_CreateTopic		(CH1_KrautBote,	LOG_MISSION);
 	Log_SetTopicStatus	(CH1_KrautBote,	LOG_RUNNING);
-	B_LogEntry			(CH1_KrautBote,"Кор Галом послал меня к Гомезу в Старый Лагерь, чтобы я доставил болотник."); 
+	B_LogEntry			(CH1_KrautBote,"РљРѕСЂ Р“Р°Р»РѕРј РїРѕСЃР»Р°Р» РјРµРЅСЏ Рє Р“РѕРјРµР·Сѓ РІ РЎС‚Р°СЂС‹Р№ Р›Р°РіРµСЂСЊ, С‡С‚РѕР±С‹ СЏ РґРѕСЃС‚Р°РІРёР» Р±РѕР»РѕС‚РЅРёРє."); 
 	
-	AI_Output			(self, other,"GUR_1201_CorKalom_JoinPSI_10_15"); //Как, ты еще здесь?
+	AI_Output			(self, other,"GUR_1201_CorKalom_JoinPSI_10_15"); //РљР°Рє, С‚С‹ РµС‰Рµ Р·РґРµСЃСЊ?
 	AI_StopProcessInfos	(self);
 };  
 
@@ -382,7 +382,7 @@ INSTANCE Info_Kalom_DrugMonopol (C_INFO)
 	condition	= Info_Kalom_DrugMonopol_Condition;
 	information	= Info_Kalom_DrugMonopol_Info;
 	permanent 	= 0; 
-	description = "У тебя есть для меня другое задание?";
+	description = "РЈ С‚РµР±СЏ РµСЃС‚СЊ РґР»СЏ РјРµРЅСЏ РґСЂСѓРіРѕРµ Р·Р°РґР°РЅРёРµ?";
 };
 
 
@@ -396,18 +396,18 @@ FUNC INT Info_Kalom_DrugMonopol_Condition()
 
 FUNC VOID Info_Kalom_DrugMonopol_Info()
 {
-	AI_Output (other, self,"Mis_1_Psi_Kalom_DrugMonopol_15_00"); //У тебя есть для меня другое задание?
-	AI_Output (self, other,"Mis_1_Psi_Kalom_DrugMonopol_10_01"); //Несколько умников в Новом Лагере начали сами добывать болотник.
+	AI_Output (other, self,"Mis_1_Psi_Kalom_DrugMonopol_15_00"); //РЈ С‚РµР±СЏ РµСЃС‚СЊ РґР»СЏ РјРµРЅСЏ РґСЂСѓРіРѕРµ Р·Р°РґР°РЅРёРµ?
+	AI_Output (self, other,"Mis_1_Psi_Kalom_DrugMonopol_10_01"); //РќРµСЃРєРѕР»СЊРєРѕ СѓРјРЅРёРєРѕРІ РІ РќРѕРІРѕРј Р›Р°РіРµСЂРµ РЅР°С‡Р°Р»Рё СЃР°РјРё РґРѕР±С‹РІР°С‚СЊ Р±РѕР»РѕС‚РЅРёРє.
 	//AI_Output (self, other,"Mis_1_Psi_Kalom_DrugMonopol_10_02"); //Sie wollen unsere Kunden im Neuen Lager abwerben, Das werden wir nicht zulassen.
-	AI_Output (self, other,"Mis_1_Psi_Kalom_DrugMonopol_10_03"); //Проследи за тем, чтобы они прекратили производство.
-	AI_Output (other, self,"Mis_1_Psi_Kalom_DrugMonopol_15_04"); //Как...
-	AI_Output (self, other,"Mis_1_Psi_Kalom_DrugMonopol_10_05"); //Детали меня не интересуют!
-	AI_Output (self, other,"Mis_1_Psi_Kalom_DrugMonopol_10_06"); //Их Лагерь должен находиться где-то за пределами Нового Лагеря. Ты знаешь, что делать.
+	AI_Output (self, other,"Mis_1_Psi_Kalom_DrugMonopol_10_03"); //РџСЂРѕСЃР»РµРґРё Р·Р° С‚РµРј, С‡С‚РѕР±С‹ РѕРЅРё РїСЂРµРєСЂР°С‚РёР»Рё РїСЂРѕРёР·РІРѕРґСЃС‚РІРѕ.
+	AI_Output (other, self,"Mis_1_Psi_Kalom_DrugMonopol_15_04"); //РљР°Рє...
+	AI_Output (self, other,"Mis_1_Psi_Kalom_DrugMonopol_10_05"); //Р”РµС‚Р°Р»Рё РјРµРЅСЏ РЅРµ РёРЅС‚РµСЂРµСЃСѓСЋС‚!
+	AI_Output (self, other,"Mis_1_Psi_Kalom_DrugMonopol_10_06"); //РС… Р›Р°РіРµСЂСЊ РґРѕР»Р¶РµРЅ РЅР°С…РѕРґРёС‚СЊСЃСЏ РіРґРµ-С‚Рѕ Р·Р° РїСЂРµРґРµР»Р°РјРё РќРѕРІРѕРіРѕ Р›Р°РіРµСЂСЏ. РўС‹ Р·РЅР°РµС€СЊ, С‡С‚Рѕ РґРµР»Р°С‚СЊ.
 
 	Kalom_DrugMonopol = LOG_RUNNING;
 	Log_CreateTopic		(CH1_DrugMonopol,	LOG_MISSION);
 	Log_SetTopicStatus	(CH1_DrugMonopol,	LOG_RUNNING);
-	B_LogEntry			(CH1_DrugMonopol,"Кор Галом хочет, чтобы я разобрался с конкурирующим производством болотника в Новом Лагере. Я не представляю себе, где начать. Видимо, придется просто пойти в Новый Лагерь.");
+	B_LogEntry			(CH1_DrugMonopol,"РљРѕСЂ Р“Р°Р»РѕРј С…РѕС‡РµС‚, С‡С‚РѕР±С‹ СЏ СЂР°Р·РѕР±СЂР°Р»СЃСЏ СЃ РєРѕРЅРєСѓСЂРёСЂСѓСЋС‰РёРј РїСЂРѕРёР·РІРѕРґСЃС‚РІРѕРј Р±РѕР»РѕС‚РЅРёРєР° РІ РќРѕРІРѕРј Р›Р°РіРµСЂРµ. РЇ РЅРµ РїСЂРµРґСЃС‚Р°РІР»СЏСЋ СЃРµР±Рµ, РіРґРµ РЅР°С‡Р°С‚СЊ. Р’РёРґРёРјРѕ, РїСЂРёРґРµС‚СЃСЏ РїСЂРѕСЃС‚Рѕ РїРѕР№С‚Рё РІ РќРѕРІС‹Р№ Р›Р°РіРµСЂСЊ.");
 
 	var C_NPC Renyu; 	
 	Renyu = Hlp_GetNpc(ORG_860_Renyu);
@@ -428,7 +428,7 @@ INSTANCE Info_Kalom_Success (C_INFO)
 	condition	= Info_Kalom_Success_Condition;
 	information	= Info_Kalom_Success_Info;
 	permanent	= 1;
-	description = "По поводу болотника в Новом Лагере...";
+	description = "РџРѕ РїРѕРІРѕРґСѓ Р±РѕР»РѕС‚РЅРёРєР° РІ РќРѕРІРѕРј Р›Р°РіРµСЂРµ...";
 };
 
 
@@ -446,30 +446,30 @@ FUNC VOID Info_Kalom_Success_Info()
 	var C_NPC Renyu; 	Renyu = Hlp_GetNpc(ORG_860_Renyu);
 	var C_NPC Jacko; 	Jacko = Hlp_GetNpc(ORG_862_Jacko);
 		
-	AI_Output (other, self,"Mis_1_Psi_Kalom_Success_15_00"); //По поводу болотника в Новом Лагере...
-	AI_Output (self, other,"Mis_1_Psi_Kalom_Success_10_01"); //Да?
+	AI_Output (other, self,"Mis_1_Psi_Kalom_Success_15_00"); //РџРѕ РїРѕРІРѕРґСѓ Р±РѕР»РѕС‚РЅРёРєР° РІ РќРѕРІРѕРј Р›Р°РіРµСЂРµ...
+	AI_Output (self, other,"Mis_1_Psi_Kalom_Success_10_01"); //Р”Р°?
 	
 	if (Stooges_Fled != TRUE)
 	{
-		AI_Output (other, self,"Mis_1_Psi_Kalom_Success_15_02"); //Я не нашел этих людей.
-		AI_Output (self, other,"Mis_1_Psi_Kalom_Success_10_03"); //Ничего другого я от тебя и не ожидал.
+		AI_Output (other, self,"Mis_1_Psi_Kalom_Success_15_02"); //РЇ РЅРµ РЅР°С€РµР» СЌС‚РёС… Р»СЋРґРµР№.
+		AI_Output (self, other,"Mis_1_Psi_Kalom_Success_10_03"); //РќРёС‡РµРіРѕ РґСЂСѓРіРѕРіРѕ СЏ РѕС‚ С‚РµР±СЏ Рё РЅРµ РѕР¶РёРґР°Р».
 	}
 	else if (Stooges_Fled == TRUE)
 	||		(Npc_IsDead(Jacko)&&Npc_IsDead(Renyu)&&Npc_IsDead(Killian))
  	{
-		AI_Output (other, self,"Mis_1_Psi_Kalom_Success_15_04"); //Вопрос решен.
-		AI_Output (self, other,"Mis_1_Psi_Kalom_Success_10_05"); //Ты удивляешь меня. Я недооценивал твои способности. Похоже, ты можешь быть полезным.
+		AI_Output (other, self,"Mis_1_Psi_Kalom_Success_15_04"); //Р’РѕРїСЂРѕСЃ СЂРµС€РµРЅ.
+		AI_Output (self, other,"Mis_1_Psi_Kalom_Success_10_05"); //РўС‹ СѓРґРёРІР»СЏРµС€СЊ РјРµРЅСЏ. РЇ РЅРµРґРѕРѕС†РµРЅРёРІР°Р» С‚РІРѕРё СЃРїРѕСЃРѕР±РЅРѕСЃС‚Рё. РџРѕС…РѕР¶Рµ, С‚С‹ РјРѕР¶РµС€СЊ Р±С‹С‚СЊ РїРѕР»РµР·РЅС‹Рј.
 		//AI_Output (self, other,"Mis_1_Psi_Kalom_Success_10_06"); //Rede mit den Baals.
 		
 		Kalom_DrugMonopol = LOG_SUCCESS;
-		B_LogEntry			(CH1_DrugMonopol,"Я проинформировал Кор Галома, что про конкурентов из Нового Лагеря он может забыть. Он снова был очень 'дружелюбен'.");
+		B_LogEntry			(CH1_DrugMonopol,"РЇ РїСЂРѕРёРЅС„РѕСЂРјРёСЂРѕРІР°Р» РљРѕСЂ Р“Р°Р»РѕРјР°, С‡С‚Рѕ РїСЂРѕ РєРѕРЅРєСѓСЂРµРЅС‚РѕРІ РёР· РќРѕРІРѕРіРѕ Р›Р°РіРµСЂСЏ РѕРЅ РјРѕР¶РµС‚ Р·Р°Р±С‹С‚СЊ. РћРЅ СЃРЅРѕРІР° Р±С‹Р» РѕС‡РµРЅСЊ 'РґСЂСѓР¶РµР»СЋР±РµРЅ'.");
 		Log_SetTopicStatus	(CH1_DrugMonopol,	LOG_SUCCESS);
 		B_GiveXP			(XP_DrugMonopol);
 	};
 };
 
 // ****************************************************************
-// 							KRAUTBOTE ZURЬCK
+// 							KRAUTBOTE ZURР¬CK
 // ****************************************************************
 
 INSTANCE Info_Kalom_KrautboteBACK(C_INFO)
@@ -479,7 +479,7 @@ INSTANCE Info_Kalom_KrautboteBACK(C_INFO)
 	condition	= Info_Kalom_KrautboteBACK_Condition;
 	information	= Info_Kalom_KrautboteBACK_Info;
 	permanent 	= 1;
-	description = "Я доставил болотник.";
+	description = "РЇ РґРѕСЃС‚Р°РІРёР» Р±РѕР»РѕС‚РЅРёРє.";
 };
 
 func INT Info_Kalom_KrautboteBACK_Condition()
@@ -492,14 +492,14 @@ func INT Info_Kalom_KrautboteBACK_Condition()
 
 FUNC VOID Info_Kalom_KrautboteBACK_Info()
 {
-	AI_Output (other, self,"Mis_1_Psi_Kalom_KrautboteBACK_15_00"); //Я доставил болотник.
+	AI_Output (other, self,"Mis_1_Psi_Kalom_KrautboteBACK_15_00"); //РЇ РґРѕСЃС‚Р°РІРёР» Р±РѕР»РѕС‚РЅРёРє.
 	
 	if (Npc_HasItems (hero,itminugget)>=500)
 	{
-		AI_Output (self, other,"Mis_1_Psi_Kalom_KrautboteBACK_10_01"); //Хорошо. Найди себе другое задание.
+		AI_Output (self, other,"Mis_1_Psi_Kalom_KrautboteBACK_10_01"); //РҐРѕСЂРѕС€Рѕ. РќР°Р№РґРё СЃРµР±Рµ РґСЂСѓРіРѕРµ Р·Р°РґР°РЅРёРµ.
 
 		Kalom_DrugMonopol = LOG_SUCCESS;
-		B_LogEntry			(CH1_KrautBote,"Кор Галом получил деньги за доставленный Баронам болотник.");
+		B_LogEntry			(CH1_KrautBote,"РљРѕСЂ Р“Р°Р»РѕРј РїРѕР»СѓС‡РёР» РґРµРЅСЊРіРё Р·Р° РґРѕСЃС‚Р°РІР»РµРЅРЅС‹Р№ Р‘Р°СЂРѕРЅР°Рј Р±РѕР»РѕС‚РЅРёРє.");
 		Log_SetTopicStatus	(CH1_KrautBote,	LOG_SUCCESS);
 		B_GiveInvItems		(hero, self, ItMiNugget, 500);
 		B_GiveXP			(XP_WeedShipmentReported);
@@ -508,7 +508,7 @@ FUNC VOID Info_Kalom_KrautboteBACK_Info()
 	}
 	else
 	{
-		AI_Output (self, other,"Mis_1_Psi_Kalom_KrautboteBACK_10_02"); //Где пять сотен кусков руды, мальчик? Постарайся, чтобы я получил их как можно быстрее!
+		AI_Output (self, other,"Mis_1_Psi_Kalom_KrautboteBACK_10_02"); //Р“РґРµ РїСЏС‚СЊ СЃРѕС‚РµРЅ РєСѓСЃРєРѕРІ СЂСѓРґС‹, РјР°Р»СЊС‡РёРє? РџРѕСЃС‚Р°СЂР°Р№СЃСЏ, С‡С‚РѕР±С‹ СЏ РїРѕР»СѓС‡РёР» РёС… РєР°Рє РјРѕР¶РЅРѕ Р±С‹СЃС‚СЂРµРµ!
 	}; 
 };
 
@@ -537,7 +537,7 @@ instance Info_CorKalom_BringFocus (C_INFO)
 	information	= Info_CorKalom_BringFocus_Info;
 	permanent	= 0;
 	important 	= 0;
-	description = "Меня прислал Ю`Берион. Я принес юнитор.";
+	description = "РњРµРЅСЏ РїСЂРёСЃР»Р°Р» Р®`Р‘РµСЂРёРѕРЅ. РЇ РїСЂРёРЅРµСЃ СЋРЅРёС‚РѕСЂ.";
 };
 
 FUNC INT Info_CorKalom_BringFocus_Condition()
@@ -550,11 +550,11 @@ FUNC INT Info_CorKalom_BringFocus_Condition()
 
 FUNC VOID Info_CorKalom_BringFocus_Info()
 {
-	AI_Output			(other, self,"Sit_2_PSI_Yberion_BringFocus_Info3_15_01"); //Меня прислал Ю`Берион. Я принес юнитор.
-	AI_Output			(self, other,"Sit_2_PSI_Yberion_BringFocus_Info3_10_02"); //А-ааа, юнитор... Наконец-то. Теперь я смогу постичь магическую сущность этих артефактов.
-	AI_Output			(self, other,"Sit_2_PSI_Yberion_BringFocus_Info3_10_03"); //Если бы только у меня было достаточно слюны ползунов... черт!
+	AI_Output			(other, self,"Sit_2_PSI_Yberion_BringFocus_Info3_15_01"); //РњРµРЅСЏ РїСЂРёСЃР»Р°Р» Р®`Р‘РµСЂРёРѕРЅ. РЇ РїСЂРёРЅРµСЃ СЋРЅРёС‚РѕСЂ.
+	AI_Output			(self, other,"Sit_2_PSI_Yberion_BringFocus_Info3_10_02"); //Рђ-Р°Р°Р°, СЋРЅРёС‚РѕСЂ... РќР°РєРѕРЅРµС†-С‚Рѕ. РўРµРїРµСЂСЊ СЏ СЃРјРѕРіСѓ РїРѕСЃС‚РёС‡СЊ РјР°РіРёС‡РµСЃРєСѓСЋ СЃСѓС‰РЅРѕСЃС‚СЊ СЌС‚РёС… Р°СЂС‚РµС„Р°РєС‚РѕРІ.
+	AI_Output			(self, other,"Sit_2_PSI_Yberion_BringFocus_Info3_10_03"); //Р•СЃР»Рё Р±С‹ С‚РѕР»СЊРєРѕ Сѓ РјРµРЅСЏ Р±С‹Р»Рѕ РґРѕСЃС‚Р°С‚РѕС‡РЅРѕ СЃР»СЋРЅС‹ РїРѕР»Р·СѓРЅРѕРІ... С‡РµСЂС‚!
 	
-	B_LogEntry		(CH2_Focus,"Я доставил юнитор Кор Галому!");		
+	B_LogEntry		(CH2_Focus,"РЇ РґРѕСЃС‚Р°РІРёР» СЋРЅРёС‚РѕСЂ РљРѕСЂ Р“Р°Р»РѕРјСѓ!");		
 	Log_SetTopicStatus	(CH2_Focus,	LOG_SUCCESS);
 	
 	B_GiveInvItems	    (hero, self, Focus_1, 1);
@@ -562,7 +562,7 @@ FUNC VOID Info_CorKalom_BringFocus_Info()
 	B_GiveXP			(XP_BringFocusToCorKalom);
 };
 
-// ------------------------------ 2. Belohnung fьr Fokus ergaunern ----------------------------------
+// ------------------------------ 2. Belohnung fСЊr Fokus ergaunern ----------------------------------
 instance Info_CorKalom_BLUFF (C_INFO)
 {
 	npc			= GUR_1201_CorKalom;
@@ -570,7 +570,7 @@ instance Info_CorKalom_BLUFF (C_INFO)
 	condition	= Info_CorKalom_BLUFF_Condition;
 	information	= Info_CorKalom_BLUFF_Info;
 	permanent	= 0;
-	description = "Ю`Берион сказал, что ты заплатишь мне за юнитор.";
+	description = "Р®`Р‘РµСЂРёРѕРЅ СЃРєР°Р·Р°Р», С‡С‚Рѕ С‚С‹ Р·Р°РїР»Р°С‚РёС€СЊ РјРЅРµ Р·Р° СЋРЅРёС‚РѕСЂ.";
 };
 
 FUNC INT Info_CorKalom_BLUFF_Condition()
@@ -584,8 +584,8 @@ FUNC INT Info_CorKalom_BLUFF_Condition()
 
 FUNC VOID Info_CorKalom_BLUFF_Info()
 {
-	AI_Output			(other, self,"Sit_2_PSI_Yberion_BLUFF_Info3_15_01"); //Ю`Берион сказал, что ты заплатишь мне за юнитор.
-	AI_Output			(self, other,"Sit_2_PSI_Yberion_BLUFF_Info3_10_02"); //В самом деле? Он так сказал? Ну, хорошо. Думаю, пятидесяти кусков руды будет вполне достаточно!
+	AI_Output			(other, self,"Sit_2_PSI_Yberion_BLUFF_Info3_15_01"); //Р®`Р‘РµСЂРёРѕРЅ СЃРєР°Р·Р°Р», С‡С‚Рѕ С‚С‹ Р·Р°РїР»Р°С‚РёС€СЊ РјРЅРµ Р·Р° СЋРЅРёС‚РѕСЂ.
+	AI_Output			(self, other,"Sit_2_PSI_Yberion_BLUFF_Info3_10_02"); //Р’ СЃР°РјРѕРј РґРµР»Рµ? РћРЅ С‚Р°Рє СЃРєР°Р·Р°Р»? РќСѓ, С…РѕСЂРѕС€Рѕ. Р”СѓРјР°СЋ, РїСЏС‚РёРґРµСЃСЏС‚Рё РєСѓСЃРєРѕРІ СЂСѓРґС‹ Р±СѓРґРµС‚ РІРїРѕР»РЅРµ РґРѕСЃС‚Р°С‚РѕС‡РЅРѕ!
 	
 	CreateInvItems (self,Itminugget,50);
 	B_GiveInvItems (self, other, Itminugget,50);
@@ -599,7 +599,7 @@ instance  GUR_1201_CorKalom_SACHE (C_INFO)
 	information		= GUR_1201_CorKalom_SACHE_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Слюны?"; 
+	description		= "РЎР»СЋРЅС‹?"; 
 };
 
 FUNC int  GUR_1201_CorKalom_SACHE_Condition()
@@ -612,28 +612,28 @@ FUNC int  GUR_1201_CorKalom_SACHE_Condition()
 };
 FUNC VOID  GUR_1201_CorKalom_SACHE_Info()
 {
-	AI_Output			(other, self,"GUR_1201_CorKalom_SACHE_Info_15_01"); //Слюны?
-	AI_Output			(self, other,"GUR_1201_CorKalom_SACHE_Info_10_02"); //Да. Ты должен знать, что я готовлю магические эликсиры для вызова Спящего. Для этого мне нужна слюна, которая выделяется из жвал ползунов.
-	AI_Output			(self, other,"GUR_1201_CorKalom_SACHE_Info_10_03"); //Ты знаешь, кто такие ползуны, ведь так?
+	AI_Output			(other, self,"GUR_1201_CorKalom_SACHE_Info_15_01"); //РЎР»СЋРЅС‹?
+	AI_Output			(self, other,"GUR_1201_CorKalom_SACHE_Info_10_02"); //Р”Р°. РўС‹ РґРѕР»Р¶РµРЅ Р·РЅР°С‚СЊ, С‡С‚Рѕ СЏ РіРѕС‚РѕРІР»СЋ РјР°РіРёС‡РµСЃРєРёРµ СЌР»РёРєСЃРёСЂС‹ РґР»СЏ РІС‹Р·РѕРІР° РЎРїСЏС‰РµРіРѕ. Р”Р»СЏ СЌС‚РѕРіРѕ РјРЅРµ РЅСѓР¶РЅР° СЃР»СЋРЅР°, РєРѕС‚РѕСЂР°СЏ РІС‹РґРµР»СЏРµС‚СЃСЏ РёР· Р¶РІР°Р» РїРѕР»Р·СѓРЅРѕРІ.
+	AI_Output			(self, other,"GUR_1201_CorKalom_SACHE_Info_10_03"); //РўС‹ Р·РЅР°РµС€СЊ, РєС‚Рѕ С‚Р°РєРёРµ РїРѕР»Р·СѓРЅС‹, РІРµРґСЊ С‚Р°Рє?
 
 	Info_Clearchoices	(GUR_1201_CorKalom_SACHE);
-	Info_Addchoice		(GUR_1201_CorKalom_SACHE,"Нет.",GUR_1201_CorKalom_SACHE_NEIN);
-	Info_Addchoice		(GUR_1201_CorKalom_SACHE,"Да.",GUR_1201_CorKalom_SACHE_JA);
+	Info_Addchoice		(GUR_1201_CorKalom_SACHE,"РќРµС‚.",GUR_1201_CorKalom_SACHE_NEIN);
+	Info_Addchoice		(GUR_1201_CorKalom_SACHE,"Р”Р°.",GUR_1201_CorKalom_SACHE_JA);
 };  
 //------------------------------------------------------
 FUNC VOID GUR_1201_CorKalom_SACHE_NEIN ()
 {
-	AI_Output			(other, self,"GUR_1201_CorKalom_SACHE_NEIN_15_01"); //Нет.
-	AI_Output			(self, other,"GUR_1201_CorKalom_SACHE_NEIN_10_02"); //Эти жуткие твари обитают во тьме пещер и пожирают человеческую плоть.
-	AI_Output			(self, other,"GUR_1201_CorKalom_SACHE_NEIN_10_03"); //Их жвалы выделяют особую жидкость.
-	AI_Output			(self, other,"GUR_1201_CorKalom_SACHE_NEIN_10_04"); //Я использую ее для приготовления эликсира, который открывает спиритическую связь со Спящим.
+	AI_Output			(other, self,"GUR_1201_CorKalom_SACHE_NEIN_15_01"); //РќРµС‚.
+	AI_Output			(self, other,"GUR_1201_CorKalom_SACHE_NEIN_10_02"); //Р­С‚Рё Р¶СѓС‚РєРёРµ С‚РІР°СЂРё РѕР±РёС‚Р°СЋС‚ РІРѕ С‚СЊРјРµ РїРµС‰РµСЂ Рё РїРѕР¶РёСЂР°СЋС‚ С‡РµР»РѕРІРµС‡РµСЃРєСѓСЋ РїР»РѕС‚СЊ.
+	AI_Output			(self, other,"GUR_1201_CorKalom_SACHE_NEIN_10_03"); //РС… Р¶РІР°Р»С‹ РІС‹РґРµР»СЏСЋС‚ РѕСЃРѕР±СѓСЋ Р¶РёРґРєРѕСЃС‚СЊ.
+	AI_Output			(self, other,"GUR_1201_CorKalom_SACHE_NEIN_10_04"); //РЇ РёСЃРїРѕР»СЊР·СѓСЋ РµРµ РґР»СЏ РїСЂРёРіРѕС‚РѕРІР»РµРЅРёСЏ СЌР»РёРєСЃРёСЂР°, РєРѕС‚РѕСЂС‹Р№ РѕС‚РєСЂС‹РІР°РµС‚ СЃРїРёСЂРёС‚РёС‡РµСЃРєСѓСЋ СЃРІСЏР·СЊ СЃРѕ РЎРїСЏС‰РёРј.
 	Info_ClearChoices (GUR_1201_CorKalom_SACHE);
 };
 //------------------------------------------------------
 func void GUR_1201_CorKalom_SACHE_JA()
 {
-	AI_Output			(other, self,"GUR_1201_CorKalom_SACHE_JA_15_01"); //Да.
-	AI_Output			(self, other,"GUR_1201_CorKalom_SACHE_JA_10_02"); //Очень хорошо!
+	AI_Output			(other, self,"GUR_1201_CorKalom_SACHE_JA_15_01"); //Р”Р°.
+	AI_Output			(self, other,"GUR_1201_CorKalom_SACHE_JA_10_02"); //РћС‡РµРЅСЊ С…РѕСЂРѕС€Рѕ!
 	Info_ClearChoices (GUR_1201_CorKalom_SACHE);
 };
 // ***************************** INFOS ****************************************//
@@ -644,7 +644,7 @@ instance  GUR_1201_CorKalom_VISION (C_INFO)
 	information		= GUR_1201_CorKalom_VISION_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Продолжай!"; 
+	description		= "РџСЂРѕРґРѕР»Р¶Р°Р№!"; 
 };
 
 FUNC int  GUR_1201_CorKalom_VISION_Condition()
@@ -657,15 +657,15 @@ FUNC int  GUR_1201_CorKalom_VISION_Condition()
 };
 FUNC void  GUR_1201_CorKalom_VISION_Info()
 {
-	AI_Output			(other, self,"GUR_1201_CorKalom_VISION_Info_15_01"); //Продолжай!
-	AI_Output			(self, other,"GUR_1201_CorKalom_VISION_Info_10_02"); //Совсем недавно меня посетило видение. Сам Спящий подал мне знак.
-	AI_Output			(self, other,"GUR_1201_CorKalom_VISION_Info_10_03"); //И я понял, что помимо слюны ползунов есть и другие средства.
-	AI_Output			(self, other,"GUR_1201_CorKalom_VISION_Info_10_04"); //И он избрал меня для этой миссии. Ты получаешь ее не от меня. Ты получаешь задание от самого Спящего!
-	AI_Output			(other, self,"GUR_1201_CorKalom_VISION_Info_15_05"); //Невероятно!
-	AI_Output			(self, other,"GUR_1201_CorKalom_VISION_Info_10_06"); //Молчи, глупец!
-	AI_Output			(self, other,"GUR_1201_CorKalom_VISION_Info_10_07"); //И понял я, что нахожусь на правильном пути, но мои средства недостаточно сильны.
-	AI_Output			(self, other,"GUR_1201_CorKalom_VISION_Info_10_08"); //Ответ кроется в ползунах, но жвал их явно недостаточно.
-	AI_Output			(self, other,"GUR_1201_CorKalom_VISION_Info_10_09"); //Должно быть что-то еще.
+	AI_Output			(other, self,"GUR_1201_CorKalom_VISION_Info_15_01"); //РџСЂРѕРґРѕР»Р¶Р°Р№!
+	AI_Output			(self, other,"GUR_1201_CorKalom_VISION_Info_10_02"); //РЎРѕРІСЃРµРј РЅРµРґР°РІРЅРѕ РјРµРЅСЏ РїРѕСЃРµС‚РёР»Рѕ РІРёРґРµРЅРёРµ. РЎР°Рј РЎРїСЏС‰РёР№ РїРѕРґР°Р» РјРЅРµ Р·РЅР°Рє.
+	AI_Output			(self, other,"GUR_1201_CorKalom_VISION_Info_10_03"); //Р СЏ РїРѕРЅСЏР», С‡С‚Рѕ РїРѕРјРёРјРѕ СЃР»СЋРЅС‹ РїРѕР»Р·СѓРЅРѕРІ РµСЃС‚СЊ Рё РґСЂСѓРіРёРµ СЃСЂРµРґСЃС‚РІР°.
+	AI_Output			(self, other,"GUR_1201_CorKalom_VISION_Info_10_04"); //Р РѕРЅ РёР·Р±СЂР°Р» РјРµРЅСЏ РґР»СЏ СЌС‚РѕР№ РјРёСЃСЃРёРё. РўС‹ РїРѕР»СѓС‡Р°РµС€СЊ РµРµ РЅРµ РѕС‚ РјРµРЅСЏ. РўС‹ РїРѕР»СѓС‡Р°РµС€СЊ Р·Р°РґР°РЅРёРµ РѕС‚ СЃР°РјРѕРіРѕ РЎРїСЏС‰РµРіРѕ!
+	AI_Output			(other, self,"GUR_1201_CorKalom_VISION_Info_15_05"); //РќРµРІРµСЂРѕСЏС‚РЅРѕ!
+	AI_Output			(self, other,"GUR_1201_CorKalom_VISION_Info_10_06"); //РњРѕР»С‡Рё, РіР»СѓРїРµС†!
+	AI_Output			(self, other,"GUR_1201_CorKalom_VISION_Info_10_07"); //Р РїРѕРЅСЏР» СЏ, С‡С‚Рѕ РЅР°С…РѕР¶СѓСЃСЊ РЅР° РїСЂР°РІРёР»СЊРЅРѕРј РїСѓС‚Рё, РЅРѕ РјРѕРё СЃСЂРµРґСЃС‚РІР° РЅРµРґРѕСЃС‚Р°С‚РѕС‡РЅРѕ СЃРёР»СЊРЅС‹.
+	AI_Output			(self, other,"GUR_1201_CorKalom_VISION_Info_10_08"); //РћС‚РІРµС‚ РєСЂРѕРµС‚СЃСЏ РІ РїРѕР»Р·СѓРЅР°С…, РЅРѕ Р¶РІР°Р» РёС… СЏРІРЅРѕ РЅРµРґРѕСЃС‚Р°С‚РѕС‡РЅРѕ.
+	AI_Output			(self, other,"GUR_1201_CorKalom_VISION_Info_10_09"); //Р”РѕР»Р¶РЅРѕ Р±С‹С‚СЊ С‡С‚Рѕ-С‚Рѕ РµС‰Рµ.
 };  
 
 // ***************************** INFOS ****************************************//
@@ -676,7 +676,7 @@ instance  GUR_1201_CorKalom_NEST (C_INFO)
 	information		= GUR_1201_CorKalom_NEST_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Ты что, никогда не изучал ползунов?"; 
+	description		= "РўС‹ С‡С‚Рѕ, РЅРёРєРѕРіРґР° РЅРµ РёР·СѓС‡Р°Р» РїРѕР»Р·СѓРЅРѕРІ?"; 
 };
 
 FUNC int  GUR_1201_CorKalom_NEST_Condition()
@@ -689,9 +689,9 @@ FUNC int  GUR_1201_CorKalom_NEST_Condition()
 };
 func void  GUR_1201_CorKalom_NEST_Info()
 {
-	AI_Output			(other, self,"GUR_1201_CorKalom_NEST_Info_15_01"); //Ты что, никогда не изучал ползунов? Я имею в виду - возможно, в какой-то другой части их тела содержится больше этого вещества.
-	AI_Output			(self, other,"GUR_1201_CorKalom_NEST_Info_10_02"); //Разумеется, я препарировал ползунов, но похоже лишь в их жвалах содержатся необходимые нам выделения.
-	AI_Output			(self, other,"GUR_1201_CorKalom_NEST_Info_10_03"); //Но должно быть что-то еще... Найди их логово и мы получим ответ!
+	AI_Output			(other, self,"GUR_1201_CorKalom_NEST_Info_15_01"); //РўС‹ С‡С‚Рѕ, РЅРёРєРѕРіРґР° РЅРµ РёР·СѓС‡Р°Р» РїРѕР»Р·СѓРЅРѕРІ? РЇ РёРјРµСЋ РІ РІРёРґСѓ - РІРѕР·РјРѕР¶РЅРѕ, РІ РєР°РєРѕР№-С‚Рѕ РґСЂСѓРіРѕР№ С‡Р°СЃС‚Рё РёС… С‚РµР»Р° СЃРѕРґРµСЂР¶РёС‚СЃСЏ Р±РѕР»СЊС€Рµ СЌС‚РѕРіРѕ РІРµС‰РµСЃС‚РІР°.
+	AI_Output			(self, other,"GUR_1201_CorKalom_NEST_Info_10_02"); //Р Р°Р·СѓРјРµРµС‚СЃСЏ, СЏ РїСЂРµРїР°СЂРёСЂРѕРІР°Р» РїРѕР»Р·СѓРЅРѕРІ, РЅРѕ РїРѕС…РѕР¶Рµ Р»РёС€СЊ РІ РёС… Р¶РІР°Р»Р°С… СЃРѕРґРµСЂР¶Р°С‚СЃСЏ РЅРµРѕР±С…РѕРґРёРјС‹Рµ РЅР°Рј РІС‹РґРµР»РµРЅРёСЏ.
+	AI_Output			(self, other,"GUR_1201_CorKalom_NEST_Info_10_03"); //РќРѕ РґРѕР»Р¶РЅРѕ Р±С‹С‚СЊ С‡С‚Рѕ-С‚Рѕ РµС‰Рµ... РќР°Р№РґРё РёС… Р»РѕРіРѕРІРѕ Рё РјС‹ РїРѕР»СѓС‡РёРј РѕС‚РІРµС‚!
 
 	CorKalom_BringMCQBalls = LOG_RUNNING;
 
@@ -703,7 +703,7 @@ func void GUR_1201_CorKalom_WEG_ACCEPT()
 {
 	Log_CreateTopic		(CH2_MCEggs,	LOG_MISSION);
 	Log_SetTopicStatus	(CH2_MCEggs,	LOG_RUNNING);
-	B_LogEntry		(CH2_MCEggs,"Гуру Кор Галом попросил меня поискать источник слюны ползунов в Старой Шахте. До сих пор использовались челюсти этих монстров, но мне надо найти источник более концентрированной жидкости.");
+	B_LogEntry		(CH2_MCEggs,"Р“СѓСЂСѓ РљРѕСЂ Р“Р°Р»РѕРј РїРѕРїСЂРѕСЃРёР» РјРµРЅСЏ РїРѕРёСЃРєР°С‚СЊ РёСЃС‚РѕС‡РЅРёРє СЃР»СЋРЅС‹ РїРѕР»Р·СѓРЅРѕРІ РІ РЎС‚Р°СЂРѕР№ РЁР°С…С‚Рµ. Р”Рѕ СЃРёС… РїРѕСЂ РёСЃРїРѕР»СЊР·РѕРІР°Р»РёСЃСЊ С‡РµР»СЋСЃС‚Рё СЌС‚РёС… РјРѕРЅСЃС‚СЂРѕРІ, РЅРѕ РјРЅРµ РЅР°РґРѕ РЅР°Р№С‚Рё РёСЃС‚РѕС‡РЅРёРє Р±РѕР»РµРµ РєРѕРЅС†РµРЅС‚СЂРёСЂРѕРІР°РЅРЅРѕР№ Р¶РёРґРєРѕСЃС‚Рё.");
 
 	if (PresseTourJanuar2001)
 	{
@@ -721,7 +721,7 @@ instance  GUR_1201_CorKalom_WEG (C_INFO)
 	nr				= 21;
 	important		= 0;
 	permanent		= 0;
-	description		= "Поиски во тьме - дело нелегкое и опасное!"; 
+	description		= "РџРѕРёСЃРєРё РІРѕ С‚СЊРјРµ - РґРµР»Рѕ РЅРµР»РµРіРєРѕРµ Рё РѕРїР°СЃРЅРѕРµ!"; 
 };
 
 FUNC int  GUR_1201_CorKalom_WEG_Condition()
@@ -734,10 +734,10 @@ FUNC int  GUR_1201_CorKalom_WEG_Condition()
 
 FUNC void  GUR_1201_CorKalom_WEG_Info()
 {
-	AI_Output			(other, self,"GUR_1201_CorKalom_WEG_Info_15_01"); //Поиски во тьме - дело нелегкое и опасное!
-	AI_Output			(self, other,"GUR_1201_CorKalom_WEG_Info_10_02"); //Возьми эти свитки с Заклинанием Света и используй их во тьме пещер.
-	AI_Output			(self, other,"GUR_1201_CorKalom_WEG_Info_10_03"); //Стражи в шахтах помогут тебе.
-	AI_Output			(self, other,"GUR_1201_CorKalom_WEG_Info_10_04"); //Да придаст тебе сил Спящий, и да прольется свет его на твой путь, и просветит он дух твой и укрепит веру твою!
+	AI_Output			(other, self,"GUR_1201_CorKalom_WEG_Info_15_01"); //РџРѕРёСЃРєРё РІРѕ С‚СЊРјРµ - РґРµР»Рѕ РЅРµР»РµРіРєРѕРµ Рё РѕРїР°СЃРЅРѕРµ!
+	AI_Output			(self, other,"GUR_1201_CorKalom_WEG_Info_10_02"); //Р’РѕР·СЊРјРё СЌС‚Рё СЃРІРёС‚РєРё СЃ Р—Р°РєР»РёРЅР°РЅРёРµРј РЎРІРµС‚Р° Рё РёСЃРїРѕР»СЊР·СѓР№ РёС… РІРѕ С‚СЊРјРµ РїРµС‰РµСЂ.
+	AI_Output			(self, other,"GUR_1201_CorKalom_WEG_Info_10_03"); //РЎС‚СЂР°Р¶Рё РІ С€Р°С…С‚Р°С… РїРѕРјРѕРіСѓС‚ С‚РµР±Рµ.
+	AI_Output			(self, other,"GUR_1201_CorKalom_WEG_Info_10_04"); //Р”Р° РїСЂРёРґР°СЃС‚ С‚РµР±Рµ СЃРёР» РЎРїСЏС‰РёР№, Рё РґР° РїСЂРѕР»СЊРµС‚СЃСЏ СЃРІРµС‚ РµРіРѕ РЅР° С‚РІРѕР№ РїСѓС‚СЊ, Рё РїСЂРѕСЃРІРµС‚РёС‚ РѕРЅ РґСѓС… С‚РІРѕР№ Рё СѓРєСЂРµРїРёС‚ РІРµСЂСѓ С‚РІРѕСЋ!
 
 	CreateInvItems		(self, ItArScrollLight, 5);
 	B_GiveInvItems      (self, other, ItArScrollLight, 5);
@@ -755,7 +755,7 @@ instance  GUR_1201_CorKalom_RAT (C_INFO)
 	nr				= 20;
 	important		= 0;
 	permanent		= 0;
-	description		= "Бой обещает быть трудным..."; 
+	description		= "Р‘РѕР№ РѕР±РµС‰Р°РµС‚ Р±С‹С‚СЊ С‚СЂСѓРґРЅС‹Рј..."; 
 };
 
 FUNC int  GUR_1201_CorKalom_RAT_Condition()
@@ -768,9 +768,9 @@ FUNC int  GUR_1201_CorKalom_RAT_Condition()
 };
 func void  GUR_1201_CorKalom_RAT_Info()
 {
-	AI_Output			(other, self,"GUR_1201_CorKalom_RAT_Info_15_01"); //Бой обещает быть трудным...
-	AI_Output			(self, other,"GUR_1201_CorKalom_RAT_Info_10_02"); //Возьми эти целебные эликсиры.
-	AI_Output			(self, other,"GUR_1201_CorKalom_RAT_Info_10_03"); //Я даю их тебе не потому, что хочу, чтобы ты уцелел, но потому, что миссия, возложенная на тебя, должна быть выполнена.
+	AI_Output			(other, self,"GUR_1201_CorKalom_RAT_Info_15_01"); //Р‘РѕР№ РѕР±РµС‰Р°РµС‚ Р±С‹С‚СЊ С‚СЂСѓРґРЅС‹Рј...
+	AI_Output			(self, other,"GUR_1201_CorKalom_RAT_Info_10_02"); //Р’РѕР·СЊРјРё СЌС‚Рё С†РµР»РµР±РЅС‹Рµ СЌР»РёРєСЃРёСЂС‹.
+	AI_Output			(self, other,"GUR_1201_CorKalom_RAT_Info_10_03"); //РЇ РґР°СЋ РёС… С‚РµР±Рµ РЅРµ РїРѕС‚РѕРјСѓ, С‡С‚Рѕ С…РѕС‡Сѓ, С‡С‚РѕР±С‹ С‚С‹ СѓС†РµР»РµР», РЅРѕ РїРѕС‚РѕРјСѓ, С‡С‚Рѕ РјРёСЃСЃРёСЏ, РІРѕР·Р»РѕР¶РµРЅРЅР°СЏ РЅР° С‚РµР±СЏ, РґРѕР»Р¶РЅР° Р±С‹С‚СЊ РІС‹РїРѕР»РЅРµРЅР°.
 
 	CreateInvItems		(self, ItFo_Potion_Health_02, 5);
 	B_GiveInvItems      (self, other, ItFo_Potion_Health_02, 5);
@@ -786,7 +786,7 @@ instance  GUR_1201_CorKalom_RUN (C_INFO)
 	information		= GUR_1201_CorKalom_RUN_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Где мне искать ползунов?"; 
+	description		= "Р“РґРµ РјРЅРµ РёСЃРєР°С‚СЊ РїРѕР»Р·СѓРЅРѕРІ?"; 
 };
 
 FUNC int  GUR_1201_CorKalom_RUN_Condition()
@@ -800,13 +800,13 @@ FUNC int  GUR_1201_CorKalom_RUN_Condition()
 
 FUNC void  GUR_1201_CorKalom_RUN_Info()
 {
-	AI_Output			(other, self,"GUR_1201_CorKalom_RUN_Info_15_01"); //Где мне искать ползунов?
-	AI_Output			(self, other,"GUR_1201_CorKalom_RUN_Info_10_02"); //В Старой Шахте.
+	AI_Output			(other, self,"GUR_1201_CorKalom_RUN_Info_15_01"); //Р“РґРµ РјРЅРµ РёСЃРєР°С‚СЊ РїРѕР»Р·СѓРЅРѕРІ?
+	AI_Output			(self, other,"GUR_1201_CorKalom_RUN_Info_10_02"); //Р’ РЎС‚Р°СЂРѕР№ РЁР°С…С‚Рµ.
 
 	if	!EnteredOldMine
 	{
-		AI_Output		(other, self,"GUR_1201_CorKalom_RUN_Info_15_03"); //Где находится Старая Шахта?
-		AI_Output		(self, other,"GUR_1201_CorKalom_RUN_Info_10_04"); //Возьми эту карту. На ней отмечены все важные места, которые находятся внутри Барьера.
+		AI_Output		(other, self,"GUR_1201_CorKalom_RUN_Info_15_03"); //Р“РґРµ РЅР°С…РѕРґРёС‚СЃСЏ РЎС‚Р°СЂР°СЏ РЁР°С…С‚Р°?
+		AI_Output		(self, other,"GUR_1201_CorKalom_RUN_Info_10_04"); //Р’РѕР·СЊРјРё СЌС‚Сѓ РєР°СЂС‚Сѓ. РќР° РЅРµР№ РѕС‚РјРµС‡РµРЅС‹ РІСЃРµ РІР°Р¶РЅС‹Рµ РјРµСЃС‚Р°, РєРѕС‚РѕСЂС‹Рµ РЅР°С…РѕРґСЏС‚СЃСЏ РІРЅСѓС‚СЂРё Р‘Р°СЂСЊРµСЂР°.
 		CreateInvItem	(self,ItWrWorldmap);   
 		B_GiveInvItems  (self, other, ItWrWorldmap, 1);
 	};
@@ -820,7 +820,7 @@ instance  GUR_1201_CorKalom_CRAWLER (C_INFO)
 	information		= GUR_1201_CorKalom_CRAWLER_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Как победить ползунов?"; 
+	description		= "РљР°Рє РїРѕР±РµРґРёС‚СЊ РїРѕР»Р·СѓРЅРѕРІ?"; 
 };
 
 FUNC int  GUR_1201_CorKalom_CRAWLER_Condition()
@@ -835,8 +835,8 @@ FUNC int  GUR_1201_CorKalom_CRAWLER_Condition()
 
 FUNC void  GUR_1201_CorKalom_CRAWLER_Info()
 {
-	AI_Output			(other, self,"GUR_1201_CorKalom_CRAWLER_Info_15_01"); //Как победить ползунов?
-	AI_Output			(self,other, "GUR_1201_CorKalom_CRAWLER_Info_10_02"); //В шахте ты встретишь Стражей. Они охотятся на позунов и добывают для меня их жвалы. Поговори с Гор На Витом - он поможет тебе.
+	AI_Output			(other, self,"GUR_1201_CorKalom_CRAWLER_Info_15_01"); //РљР°Рє РїРѕР±РµРґРёС‚СЊ РїРѕР»Р·СѓРЅРѕРІ?
+	AI_Output			(self,other, "GUR_1201_CorKalom_CRAWLER_Info_10_02"); //Р’ С€Р°С…С‚Рµ С‚С‹ РІСЃС‚СЂРµС‚РёС€СЊ РЎС‚СЂР°Р¶РµР№. РћРЅРё РѕС…РѕС‚СЏС‚СЃСЏ РЅР° РїРѕР·СѓРЅРѕРІ Рё РґРѕР±С‹РІР°СЋС‚ РґР»СЏ РјРµРЅСЏ РёС… Р¶РІР°Р»С‹. РџРѕРіРѕРІРѕСЂРё СЃ Р“РѕСЂ РќР° Р’РёС‚РѕРј - РѕРЅ РїРѕРјРѕР¶РµС‚ С‚РµР±Рµ.
 };
 
 // ***************************** INFOS ****************************************//
@@ -847,7 +847,7 @@ instance  GUR_1201_CorKalom_FIND (C_INFO)
 	information		= GUR_1201_CorKalom_FIND_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Как отыскать логово ползунов в шахте?"; 
+	description		= "РљР°Рє РѕС‚С‹СЃРєР°С‚СЊ Р»РѕРіРѕРІРѕ РїРѕР»Р·СѓРЅРѕРІ РІ С€Р°С…С‚Рµ?"; 
 };
 
 FUNC int  GUR_1201_CorKalom_FIND_Condition()
@@ -861,9 +861,9 @@ FUNC int  GUR_1201_CorKalom_FIND_Condition()
 
 FUNC void  GUR_1201_CorKalom_FIND_Info()
 {
-	AI_Output			(other, self,"GUR_1201_CorKalom_FIND_Info_15_01"); //Как отыскать логово ползунов в шахте?
-	AI_Output			(self,other, "GUR_1201_CorKalom_FIND_Info_10_02"); //Это будет самой сложной частью твоей миссии. Я не могу сказать тебе, где и что ты должен искать. Но рядом с тобой будет незримо присутствовать Спящий.
-	AI_Output			(other, self,"GUR_1201_CorKalom_FIND_Info_15_03"); //Да, мне сразу стало легче.
+	AI_Output			(other, self,"GUR_1201_CorKalom_FIND_Info_15_01"); //РљР°Рє РѕС‚С‹СЃРєР°С‚СЊ Р»РѕРіРѕРІРѕ РїРѕР»Р·СѓРЅРѕРІ РІ С€Р°С…С‚Рµ?
+	AI_Output			(self,other, "GUR_1201_CorKalom_FIND_Info_10_02"); //Р­С‚Рѕ Р±СѓРґРµС‚ СЃР°РјРѕР№ СЃР»РѕР¶РЅРѕР№ С‡Р°СЃС‚СЊСЋ С‚РІРѕРµР№ РјРёСЃСЃРёРё. РЇ РЅРµ РјРѕРіСѓ СЃРєР°Р·Р°С‚СЊ С‚РµР±Рµ, РіРґРµ Рё С‡С‚Рѕ С‚С‹ РґРѕР»Р¶РµРЅ РёСЃРєР°С‚СЊ. РќРѕ СЂСЏРґРѕРј СЃ С‚РѕР±РѕР№ Р±СѓРґРµС‚ РЅРµР·СЂРёРјРѕ РїСЂРёСЃСѓС‚СЃС‚РІРѕРІР°С‚СЊ РЎРїСЏС‰РёР№.
+	AI_Output			(other, self,"GUR_1201_CorKalom_FIND_Info_15_03"); //Р”Р°, РјРЅРµ СЃСЂР°Р·Сѓ СЃС‚Р°Р»Рѕ Р»РµРіС‡Рµ.
 };
 // ------------------------------ SUCCESS ----------------------------------
 
@@ -873,7 +873,7 @@ INSTANCE Info_CorKalom_BringMCQBalls_Success (C_INFO)
 	condition	= Info_CorKalom_BringMCQBalls_Success_Condition;
 	information	= Info_CorKalom_BringMCQBalls_Success_Info;
 	permanent	= 0;
-	description	= "Я нашел яйца из кладки королевы ползунов.";
+	description	= "РЇ РЅР°С€РµР» СЏР№С†Р° РёР· РєР»Р°РґРєРё РєРѕСЂРѕР»РµРІС‹ РїРѕР»Р·СѓРЅРѕРІ.";
 };                       
 
 FUNC INT Info_CorKalom_BringMCQBalls_Success_Condition()
@@ -885,34 +885,34 @@ FUNC INT Info_CorKalom_BringMCQBalls_Success_Condition()
 };
 FUNC VOID Info_CorKalom_BringMCQBalls_Success_Info()
 {	
-	AI_Output			(other, self,"Mis_2_PSI_Kalom_BringMCQEggs_Success_15_01"); //Я нашел яйца из кладки королевы ползунов.
-	AI_Output			(self, other,"Mis_2_PSI_Kalom_BringMCQEggs_Success_10_02"); //Я знал это! Мое видение было знаком Спящего! В них концентрация этого вещества должна быть очень высокой! 
-	AI_Output			(self, other,"Mis_2_PSI_Kalom_BringMCQEggs_Success_10_03"); //Великолепно! Теперь я смогу создать эликсир, который поможет нам призвать Спящего!
-	AI_Output			(other, self,"Mis_2_PSI_Kalom_BringMCQEggs_Success_15_04"); //А что насчет награды?
-	AI_Output			(self, other,"Mis_2_PSI_Kalom_BringMCQEggs_Success_10_05"); //Ах, да... Благодарю тебя!
-	AI_Output			(other, self,"Mis_2_PSI_Kalom_BringMCQEggs_Success_15_06"); //Я имел в виду нечто более материальное...
-	AI_Output			(self, other,"Mis_2_PSI_Kalom_BringMCQEggs_Success_10_07"); //Хорошо, хорошо. Чего ты хочешь?
+	AI_Output			(other, self,"Mis_2_PSI_Kalom_BringMCQEggs_Success_15_01"); //РЇ РЅР°С€РµР» СЏР№С†Р° РёР· РєР»Р°РґРєРё РєРѕСЂРѕР»РµРІС‹ РїРѕР»Р·СѓРЅРѕРІ.
+	AI_Output			(self, other,"Mis_2_PSI_Kalom_BringMCQEggs_Success_10_02"); //РЇ Р·РЅР°Р» СЌС‚Рѕ! РњРѕРµ РІРёРґРµРЅРёРµ Р±С‹Р»Рѕ Р·РЅР°РєРѕРј РЎРїСЏС‰РµРіРѕ! Р’ РЅРёС… РєРѕРЅС†РµРЅС‚СЂР°С†РёСЏ СЌС‚РѕРіРѕ РІРµС‰РµСЃС‚РІР° РґРѕР»Р¶РЅР° Р±С‹С‚СЊ РѕС‡РµРЅСЊ РІС‹СЃРѕРєРѕР№! 
+	AI_Output			(self, other,"Mis_2_PSI_Kalom_BringMCQEggs_Success_10_03"); //Р’РµР»РёРєРѕР»РµРїРЅРѕ! РўРµРїРµСЂСЊ СЏ СЃРјРѕРіСѓ СЃРѕР·РґР°С‚СЊ СЌР»РёРєСЃРёСЂ, РєРѕС‚РѕСЂС‹Р№ РїРѕРјРѕР¶РµС‚ РЅР°Рј РїСЂРёР·РІР°С‚СЊ РЎРїСЏС‰РµРіРѕ!
+	AI_Output			(other, self,"Mis_2_PSI_Kalom_BringMCQEggs_Success_15_04"); //Рђ С‡С‚Рѕ РЅР°СЃС‡РµС‚ РЅР°РіСЂР°РґС‹?
+	AI_Output			(self, other,"Mis_2_PSI_Kalom_BringMCQEggs_Success_10_05"); //РђС…, РґР°... Р‘Р»Р°РіРѕРґР°СЂСЋ С‚РµР±СЏ!
+	AI_Output			(other, self,"Mis_2_PSI_Kalom_BringMCQEggs_Success_15_06"); //РЇ РёРјРµР» РІ РІРёРґСѓ РЅРµС‡С‚Рѕ Р±РѕР»РµРµ РјР°С‚РµСЂРёР°Р»СЊРЅРѕРµ...
+	AI_Output			(self, other,"Mis_2_PSI_Kalom_BringMCQEggs_Success_10_07"); //РҐРѕСЂРѕС€Рѕ, С…РѕСЂРѕС€Рѕ. Р§РµРіРѕ С‚С‹ С…РѕС‡РµС€СЊ?
 	CorKalom_BringMCQBalls = LOG_SUCCESS;
 	B_GiveInvItems	(hero, self, ItAt_Crawlerqueen,3);
 	Npc_RemoveInvItems(self, ItAt_Crawlerqueen,3);
 	B_GiveXP			(XP_BringMCEggs);
-	B_LogEntry		(CH2_MCEggs,"Я дал Кор Галому три яйца ползунов. Он был весьма недружелюбен: мне пришлось просто выпрашивать свою награду!");
+	B_LogEntry		(CH2_MCEggs,"РЇ РґР°Р» РљРѕСЂ Р“Р°Р»РѕРјСѓ С‚СЂРё СЏР№С†Р° РїРѕР»Р·СѓРЅРѕРІ. РћРЅ Р±С‹Р» РІРµСЃСЊРјР° РЅРµРґСЂСѓР¶РµР»СЋР±РµРЅ: РјРЅРµ РїСЂРёС€Р»РѕСЃСЊ РїСЂРѕСЃС‚Рѕ РІС‹РїСЂР°С€РёРІР°С‚СЊ СЃРІРѕСЋ РЅР°РіСЂР°РґСѓ!");
 	Log_SetTopicStatus	(CH2_MCEggs,	LOG_SUCCESS);
 	
-	B_LogEntry	(CH1_GotoPsiCamp,"Я уверен, что теперь знаю достаточно о делах секты. Можно возвращаться к Мордрагу.");
-	B_LogEntry	(CH1_GotoPsi,"Я уверен, что теперь знаю достаточно о делах секты. Надо рассказать Равену обо всем, как только окажусь в Старом Лагере.");
+	B_LogEntry	(CH1_GotoPsiCamp,"РЇ СѓРІРµСЂРµРЅ, С‡С‚Рѕ С‚РµРїРµСЂСЊ Р·РЅР°СЋ РґРѕСЃС‚Р°С‚РѕС‡РЅРѕ Рѕ РґРµР»Р°С… СЃРµРєС‚С‹. РњРѕР¶РЅРѕ РІРѕР·РІСЂР°С‰Р°С‚СЊСЃСЏ Рє РњРѕСЂРґСЂР°РіСѓ.");
+	B_LogEntry	(CH1_GotoPsi,"РЇ СѓРІРµСЂРµРЅ, С‡С‚Рѕ С‚РµРїРµСЂСЊ Р·РЅР°СЋ РґРѕСЃС‚Р°С‚РѕС‡РЅРѕ Рѕ РґРµР»Р°С… СЃРµРєС‚С‹. РќР°РґРѕ СЂР°СЃСЃРєР°Р·Р°С‚СЊ Р Р°РІРµРЅСѓ РѕР±Рѕ РІСЃРµРј, РєР°Рє С‚РѕР»СЊРєРѕ РѕРєР°Р¶СѓСЃСЊ РІ РЎС‚Р°СЂРѕРј Р›Р°РіРµСЂРµ.");
 	
 	Info_ClearChoices (Info_CorKalom_BringMCQBalls_Success);
-	Info_Addchoice(Info_CorKalom_BringMCQBalls_Success,"Руна.",Info_CorKalom_BringMCQBalls_Success_RUNE);
-	Info_Addchoice(Info_CorKalom_BringMCQBalls_Success,"Оружие.",Info_CorKalom_BringMCQBalls_Success_WAFFE);
-	Info_Addchoice(Info_CorKalom_BringMCQBalls_Success,"Целебный эликсир.",Info_CorKalom_BringMCQBalls_Success_HEAL);
-	Info_Addchoice(Info_CorKalom_BringMCQBalls_Success,"Руда.",Info_CorKalom_BringMCQBalls_Success_ORE);
-	Info_Addchoice(Info_CorKalom_BringMCQBalls_Success,"Мана.",Info_CorKalom_BringMCQBalls_Success_MANA);
+	Info_Addchoice(Info_CorKalom_BringMCQBalls_Success,"Р СѓРЅР°.",Info_CorKalom_BringMCQBalls_Success_RUNE);
+	Info_Addchoice(Info_CorKalom_BringMCQBalls_Success,"РћСЂСѓР¶РёРµ.",Info_CorKalom_BringMCQBalls_Success_WAFFE);
+	Info_Addchoice(Info_CorKalom_BringMCQBalls_Success,"Р¦РµР»РµР±РЅС‹Р№ СЌР»РёРєСЃРёСЂ.",Info_CorKalom_BringMCQBalls_Success_HEAL);
+	Info_Addchoice(Info_CorKalom_BringMCQBalls_Success,"Р СѓРґР°.",Info_CorKalom_BringMCQBalls_Success_ORE);
+	Info_Addchoice(Info_CorKalom_BringMCQBalls_Success,"РњР°РЅР°.",Info_CorKalom_BringMCQBalls_Success_MANA);
 };
 func void Info_CorKalom_BringMCQBalls_Success_RUNE ()
 {
-	AI_Output			(other, self,"Mis_2_PSI_Kalom_BringMCQEggs_Success_RUNE_15_01"); //Руну.
-	AI_Output			(self, other,"Mis_2_PSI_Kalom_BringMCQEggs_Success_RUNE_10_02"); //Пусть руна эта осветит твой путь!
+	AI_Output			(other, self,"Mis_2_PSI_Kalom_BringMCQEggs_Success_RUNE_15_01"); //Р СѓРЅСѓ.
+	AI_Output			(self, other,"Mis_2_PSI_Kalom_BringMCQEggs_Success_RUNE_10_02"); //РџСѓСЃС‚СЊ СЂСѓРЅР° СЌС‚Р° РѕСЃРІРµС‚РёС‚ С‚РІРѕР№ РїСѓС‚СЊ!
 	CreateInvItem		(self,ItArRuneLight);
 	B_GiveInvItems      (self, hero, ItArRuneLight, 1);
 	Info_ClearChoices	(Info_CorKalom_BringMCQBalls_Success);
@@ -920,32 +920,32 @@ func void Info_CorKalom_BringMCQBalls_Success_RUNE ()
 };	
 func void Info_CorKalom_BringMCQBalls_Success_WAFFE ()
 {
-	AI_Output			(other, self,"Mis_2_PSI_Kalom_BringMCQEggs_Success_WAFFE_15_01"); //Оружие.
-	AI_Output			(self, other,"Mis_2_PSI_Kalom_BringMCQEggs_Success_WAFFE_10_02"); //Пусть это оружие сокрушит всех твоих врагов!
+	AI_Output			(other, self,"Mis_2_PSI_Kalom_BringMCQEggs_Success_WAFFE_15_01"); //РћСЂСѓР¶РёРµ.
+	AI_Output			(self, other,"Mis_2_PSI_Kalom_BringMCQEggs_Success_WAFFE_10_02"); //РџСѓСЃС‚СЊ СЌС‚Рѕ РѕСЂСѓР¶РёРµ СЃРѕРєСЂСѓС€РёС‚ РІСЃРµС… С‚РІРѕРёС… РІСЂР°РіРѕРІ!
 	CreateInvItem		(self, ItMw_1H_Mace_War_03);
 	B_GiveInvItems      (self, hero, ItMw_1H_Mace_War_03, 1);
 	Info_ClearChoices	(Info_CorKalom_BringMCQBalls_Success);
 };	
 func void Info_CorKalom_BringMCQBalls_Success_HEAL()
 {
-	AI_Output			(other, self,"Mis_2_PSI_Kalom_BringMCQEggs_Success_HEAL_15_01"); //Целебный эликсир.
-	AI_Output			(self, other,"Mis_2_PSI_Kalom_BringMCQEggs_Success_HEAL_10_02"); //Да продлит он твою жизнь в минуту опасности!
+	AI_Output			(other, self,"Mis_2_PSI_Kalom_BringMCQEggs_Success_HEAL_15_01"); //Р¦РµР»РµР±РЅС‹Р№ СЌР»РёРєСЃРёСЂ.
+	AI_Output			(self, other,"Mis_2_PSI_Kalom_BringMCQEggs_Success_HEAL_10_02"); //Р”Р° РїСЂРѕРґР»РёС‚ РѕРЅ С‚РІРѕСЋ Р¶РёР·РЅСЊ РІ РјРёРЅСѓС‚Сѓ РѕРїР°СЃРЅРѕСЃС‚Рё!
 	CreateInvItem		(self,ItFo_Potion_Health_Perma_01);
 	B_GiveInvItems      (self, hero, ItFo_Potion_Health_Perma_01, 1);
 	Info_ClearChoices	(Info_CorKalom_BringMCQBalls_Success);
 };	
 func void Info_CorKalom_BringMCQBalls_Success_ORE ()
 {
-	AI_Output			(other, self,"Mis_2_PSI_Kalom_BringMCQEggs_Success_ORE_15_01"); //Руду.
-	AI_Output			(self, other,"Mis_2_PSI_Kalom_BringMCQEggs_Success_ORE_10_02"); //Прими эту руду в знак признательности всего Братства!
+	AI_Output			(other, self,"Mis_2_PSI_Kalom_BringMCQEggs_Success_ORE_15_01"); //Р СѓРґСѓ.
+	AI_Output			(self, other,"Mis_2_PSI_Kalom_BringMCQEggs_Success_ORE_10_02"); //РџСЂРёРјРё СЌС‚Сѓ СЂСѓРґСѓ РІ Р·РЅР°Рє РїСЂРёР·РЅР°С‚РµР»СЊРЅРѕСЃС‚Рё РІСЃРµРіРѕ Р‘СЂР°С‚СЃС‚РІР°!
 	CreateInvItems		(self,ItMinugget,100);
 	B_GiveInvItems      (self, hero, ItMinugget, 100);
 	Info_ClearChoices	(Info_CorKalom_BringMCQBalls_Success);
 };	
 func void Info_CorKalom_BringMCQBalls_Success_MANA()
 {
-	AI_Output			(other, self,"Mis_2_PSI_Kalom_BringMCQEggs_Success_MANA_15_01"); //Ману.
-	AI_Output			(self, other,"Mis_2_PSI_Kalom_BringMCQEggs_Success_MANA_10_02"); //Пусть этот эликсир усилит магический поток, струящийся внутри тебя!
+	AI_Output			(other, self,"Mis_2_PSI_Kalom_BringMCQEggs_Success_MANA_15_01"); //РњР°РЅСѓ.
+	AI_Output			(self, other,"Mis_2_PSI_Kalom_BringMCQEggs_Success_MANA_10_02"); //РџСѓСЃС‚СЊ СЌС‚РѕС‚ СЌР»РёРєСЃРёСЂ СѓСЃРёР»РёС‚ РјР°РіРёС‡РµСЃРєРёР№ РїРѕС‚РѕРє, СЃС‚СЂСѓСЏС‰РёР№СЃСЏ РІРЅСѓС‚СЂРё С‚РµР±СЏ!
 	CreateInvItem		(self,ItFo_Potion_Mana_Perma_01);
 	B_GiveInvItems      (self, hero, ItFo_Potion_Mana_Perma_01, 1);
 	Info_ClearChoices	(Info_CorKalom_BringMCQBalls_Success);
@@ -960,7 +960,7 @@ INSTANCE Info_CorKalom_BringBook (C_INFO)
 	condition	= Info_CorKalom_BringBook_Condition;
 	information	= Info_CorKalom_BringBook_Info;
 	permanent	= 0;
-	description = "Может, мы начнем призывать Спящего прямо сейчас?";
+	description = "РњРѕР¶РµС‚, РјС‹ РЅР°С‡РЅРµРј РїСЂРёР·С‹РІР°С‚СЊ РЎРїСЏС‰РµРіРѕ РїСЂСЏРјРѕ СЃРµР№С‡Р°СЃ?";
 };
 
 func INT Info_CorKalom_BringBook_Condition()
@@ -972,28 +972,28 @@ func INT Info_CorKalom_BringBook_Condition()
 };
 func VOID Info_CorKalom_BringBook_Info()
 {
-	AI_Output			(other, self,"Info_CorKalom_BringBook_Info_15_01"); //Может, мы начнем призывать Спящего прямо сейчас?
-	AI_Output			(self, other,"Info_CorKalom_BringBook_Info_10_02"); //Нет! Я еще не нашел способа зарядить юнитор.
-	AI_Output			(self, other,"Info_CorKalom_BringBook_Info_10_03"); //Древние знания об этих артефактах утеряны.
-	AI_Output			(other, self,"Info_CorKalom_BringBook_Info_15_04"); //Ты хочешь сказать, что я собирал эти яйца впустую?
-	AI_Output			(self, other,"Info_CorKalom_BringBook_Info_10_05"); //Нет, послушай меня. Есть альманах, в котором содержатся все необходимые нам знания.
-	AI_Output			(self, other,"Info_CorKalom_BringBook_Info_10_06"); //Я купил эту книгу у Корристо, мага Огня из Старого Лагеря.
-	AI_Output			(self, other,"Info_CorKalom_BringBook_Info_10_07"); //Но она была украдена по пути из Старого Лагеря в лабораторию.
-	AI_Output			(self, other,"Info_CorKalom_BringBook_Info_10_08"); //За книгой я отрядил Таласа, новичка. Его ограбили.
-	AI_Output			(self, other,"Info_CorKalom_BringBook_Info_10_09"); //Он подвел меня, но я дал ему еще один шанс. Он должен вернуть утерянный альманах.
-	AI_Output			(self, other,"Info_CorKalom_BringBook_Info_10_10"); //Поговори с ним. Ему сейчас нужна любая помощь.
+	AI_Output			(other, self,"Info_CorKalom_BringBook_Info_15_01"); //РњРѕР¶РµС‚, РјС‹ РЅР°С‡РЅРµРј РїСЂРёР·С‹РІР°С‚СЊ РЎРїСЏС‰РµРіРѕ РїСЂСЏРјРѕ СЃРµР№С‡Р°СЃ?
+	AI_Output			(self, other,"Info_CorKalom_BringBook_Info_10_02"); //РќРµС‚! РЇ РµС‰Рµ РЅРµ РЅР°С€РµР» СЃРїРѕСЃРѕР±Р° Р·Р°СЂСЏРґРёС‚СЊ СЋРЅРёС‚РѕСЂ.
+	AI_Output			(self, other,"Info_CorKalom_BringBook_Info_10_03"); //Р”СЂРµРІРЅРёРµ Р·РЅР°РЅРёСЏ РѕР± СЌС‚РёС… Р°СЂС‚РµС„Р°РєС‚Р°С… СѓС‚РµСЂСЏРЅС‹.
+	AI_Output			(other, self,"Info_CorKalom_BringBook_Info_15_04"); //РўС‹ С…РѕС‡РµС€СЊ СЃРєР°Р·Р°С‚СЊ, С‡С‚Рѕ СЏ СЃРѕР±РёСЂР°Р» СЌС‚Рё СЏР№С†Р° РІРїСѓСЃС‚СѓСЋ?
+	AI_Output			(self, other,"Info_CorKalom_BringBook_Info_10_05"); //РќРµС‚, РїРѕСЃР»СѓС€Р°Р№ РјРµРЅСЏ. Р•СЃС‚СЊ Р°Р»СЊРјР°РЅР°С…, РІ РєРѕС‚РѕСЂРѕРј СЃРѕРґРµСЂР¶Р°С‚СЃСЏ РІСЃРµ РЅРµРѕР±С…РѕРґРёРјС‹Рµ РЅР°Рј Р·РЅР°РЅРёСЏ.
+	AI_Output			(self, other,"Info_CorKalom_BringBook_Info_10_06"); //РЇ РєСѓРїРёР» СЌС‚Сѓ РєРЅРёРіСѓ Сѓ РљРѕСЂСЂРёСЃС‚Рѕ, РјР°РіР° РћРіРЅСЏ РёР· РЎС‚Р°СЂРѕРіРѕ Р›Р°РіРµСЂСЏ.
+	AI_Output			(self, other,"Info_CorKalom_BringBook_Info_10_07"); //РќРѕ РѕРЅР° Р±С‹Р»Р° СѓРєСЂР°РґРµРЅР° РїРѕ РїСѓС‚Рё РёР· РЎС‚Р°СЂРѕРіРѕ Р›Р°РіРµСЂСЏ РІ Р»Р°Р±РѕСЂР°С‚РѕСЂРёСЋ.
+	AI_Output			(self, other,"Info_CorKalom_BringBook_Info_10_08"); //Р—Р° РєРЅРёРіРѕР№ СЏ РѕС‚СЂСЏРґРёР» РўР°Р»Р°СЃР°, РЅРѕРІРёС‡РєР°. Р•РіРѕ РѕРіСЂР°Р±РёР»Рё.
+	AI_Output			(self, other,"Info_CorKalom_BringBook_Info_10_09"); //РћРЅ РїРѕРґРІРµР» РјРµРЅСЏ, РЅРѕ СЏ РґР°Р» РµРјСѓ РµС‰Рµ РѕРґРёРЅ С€Р°РЅСЃ. РћРЅ РґРѕР»Р¶РµРЅ РІРµСЂРЅСѓС‚СЊ СѓС‚РµСЂСЏРЅРЅС‹Р№ Р°Р»СЊРјР°РЅР°С….
+	AI_Output			(self, other,"Info_CorKalom_BringBook_Info_10_10"); //РџРѕРіРѕРІРѕСЂРё СЃ РЅРёРј. Р•РјСѓ СЃРµР№С‡Р°СЃ РЅСѓР¶РЅР° Р»СЋР±Р°СЏ РїРѕРјРѕС‰СЊ.
 	
 	CorKalom_BringBook = LOG_RUNNING;
 	Log_CreateTopic		(CH2_Book,	LOG_MISSION);
 	Log_SetTopicStatus	(CH2_Book,	LOG_RUNNING);
-	B_LogEntry		(CH2_Book,"Кор Галому нужен последний предмет для проведения церемонии. Это книга об использовании камней-юниторов. Послушник Талас не смог ее уберечь, и гоблины утащили альманах. Сейчас он ищет на храмовой площади кого-нибудь, кто помог бы ему вернуть книгу.");
+	B_LogEntry		(CH2_Book,"РљРѕСЂ Р“Р°Р»РѕРјСѓ РЅСѓР¶РµРЅ РїРѕСЃР»РµРґРЅРёР№ РїСЂРµРґРјРµС‚ РґР»СЏ РїСЂРѕРІРµРґРµРЅРёСЏ С†РµСЂРµРјРѕРЅРёРё. Р­С‚Рѕ РєРЅРёРіР° РѕР± РёСЃРїРѕР»СЊР·РѕРІР°РЅРёРё РєР°РјРЅРµР№-СЋРЅРёС‚РѕСЂРѕРІ. РџРѕСЃР»СѓС€РЅРёРє РўР°Р»Р°СЃ РЅРµ СЃРјРѕРі РµРµ СѓР±РµСЂРµС‡СЊ, Рё РіРѕР±Р»РёРЅС‹ СѓС‚Р°С‰РёР»Рё Р°Р»СЊРјР°РЅР°С…. РЎРµР№С‡Р°СЃ РѕРЅ РёС‰РµС‚ РЅР° С…СЂР°РјРѕРІРѕР№ РїР»РѕС‰Р°РґРё РєРѕРіРѕ-РЅРёР±СѓРґСЊ, РєС‚Рѕ РїРѕРјРѕРі Р±С‹ РµРјСѓ РІРµСЂРЅСѓС‚СЊ РєРЅРёРіСѓ.");
 
 	Info_ClearChoices (Info_CorKalom_BringBook);
 	
 	Info_Addchoice(Info_CorKalom_BringBook,DIALOG_BACK						,Info_CorKalom_BringBook_BACK);
-	Info_Addchoice(Info_CorKalom_BringBook,"Что я получу за это?",Info_CorKalom_BringBook_EARN);
-	Info_Addchoice(Info_CorKalom_BringBook,"Кто похитил альманах?",Info_CorKalom_BringBook_WHO);
-	Info_Addchoice(Info_CorKalom_BringBook,"Где я могу найти Таласа?",Info_CorKalom_BringBook_WHERE);
+	Info_Addchoice(Info_CorKalom_BringBook,"Р§С‚Рѕ СЏ РїРѕР»СѓС‡Сѓ Р·Р° СЌС‚Рѕ?",Info_CorKalom_BringBook_EARN);
+	Info_Addchoice(Info_CorKalom_BringBook,"РљС‚Рѕ РїРѕС…РёС‚РёР» Р°Р»СЊРјР°РЅР°С…?",Info_CorKalom_BringBook_WHO);
+	Info_Addchoice(Info_CorKalom_BringBook,"Р“РґРµ СЏ РјРѕРіСѓ РЅР°Р№С‚Рё РўР°Р»Р°СЃР°?",Info_CorKalom_BringBook_WHERE);
 };
 func void Info_CorKalom_BringBook_BACK ()
 {
@@ -1002,18 +1002,18 @@ func void Info_CorKalom_BringBook_BACK ()
 
 func void Info_CorKalom_BringBook_WHERE ()
 {
-	AI_Output			(other, self,"Info_CorKalom_BringBook_Where_15_01"); //Где я могу найти Таласа?
-	AI_Output			(self, other,"Info_CorKalom_BringBook_Where_10_02"); //Ты найдешь его у подножия Холма - там он пытается уговорить людей помочь ему.
+	AI_Output			(other, self,"Info_CorKalom_BringBook_Where_15_01"); //Р“РґРµ СЏ РјРѕРіСѓ РЅР°Р№С‚Рё РўР°Р»Р°СЃР°?
+	AI_Output			(self, other,"Info_CorKalom_BringBook_Where_10_02"); //РўС‹ РЅР°Р№РґРµС€СЊ РµРіРѕ Сѓ РїРѕРґРЅРѕР¶РёСЏ РҐРѕР»РјР° - С‚Р°Рј РѕРЅ РїС‹С‚Р°РµС‚СЃСЏ СѓРіРѕРІРѕСЂРёС‚СЊ Р»СЋРґРµР№ РїРѕРјРѕС‡СЊ РµРјСѓ.
 };
 func void Info_CorKalom_BringBook_WHO ()
 {
-	AI_Output			(other, self,"Info_CorKalom_BringBook_Who_15_01"); //Кто похитил альманах?
-	AI_Output			(self, other,"Info_CorKalom_BringBook_Who_10_02"); //Талас сказал, что на него напали черные гоблины. Это несколько странно, но все же вполне правдоподобно. 
+	AI_Output			(other, self,"Info_CorKalom_BringBook_Who_15_01"); //РљС‚Рѕ РїРѕС…РёС‚РёР» Р°Р»СЊРјР°РЅР°С…?
+	AI_Output			(self, other,"Info_CorKalom_BringBook_Who_10_02"); //РўР°Р»Р°СЃ СЃРєР°Р·Р°Р», С‡С‚Рѕ РЅР° РЅРµРіРѕ РЅР°РїР°Р»Рё С‡РµСЂРЅС‹Рµ РіРѕР±Р»РёРЅС‹. Р­С‚Рѕ РЅРµСЃРєРѕР»СЊРєРѕ СЃС‚СЂР°РЅРЅРѕ, РЅРѕ РІСЃРµ Р¶Рµ РІРїРѕР»РЅРµ РїСЂР°РІРґРѕРїРѕРґРѕР±РЅРѕ. 
 };
 func void Info_CorKalom_BringBook_EARN ()
 {
-	AI_Output			(other, self,"Info_CorKalom_BringBook_Earn_15_01"); //Что я получу за это?
-	AI_Output			(self, other,"Info_CorKalom_BringBook_Earn_10_02"); //Разве я уже не доказал тебе свою щедрость? Ты получишь достойную награду.
+	AI_Output			(other, self,"Info_CorKalom_BringBook_Earn_15_01"); //Р§С‚Рѕ СЏ РїРѕР»СѓС‡Сѓ Р·Р° СЌС‚Рѕ?
+	AI_Output			(self, other,"Info_CorKalom_BringBook_Earn_10_02"); //Р Р°Р·РІРµ СЏ СѓР¶Рµ РЅРµ РґРѕРєР°Р·Р°Р» С‚РµР±Рµ СЃРІРѕСЋ С‰РµРґСЂРѕСЃС‚СЊ? РўС‹ РїРѕР»СѓС‡РёС€СЊ РґРѕСЃС‚РѕР№РЅСѓСЋ РЅР°РіСЂР°РґСѓ.
 };
 
 // ------------------------------ SUCCESS ----------------------------------
@@ -1024,7 +1024,7 @@ INSTANCE Info_CorKalom_BringBook_Success (C_INFO)
 	condition	= Info_CorKalom_BringBook_Success_Condition;
 	information	= Info_CorKalom_BringBook_Success_Info;
 	permanent	= 0;
-	description	= "Я нашел книгу.";
+	description	= "РЇ РЅР°С€РµР» РєРЅРёРіСѓ.";
 };                       
 
 FUNC INT Info_CorKalom_BringBook_Success_Condition()
@@ -1037,18 +1037,18 @@ FUNC INT Info_CorKalom_BringBook_Success_Condition()
 };
 FUNC VOID Info_CorKalom_BringBook_Success_Info()
 {	
-	AI_Output			(other, self,"Info_CorKalom_BringBook_Success_15_01"); //Я нашел книгу.
-	AI_Output			(self, other,"Info_CorKalom_BringBook_Success_10_02"); //Отличная работа! Теперь у нас есть все, что нужно.
-	AI_Output			(self, other,"Info_CorKalom_BringBook_Success_10_03"); //Сейчас я завершу последние приготовления.
-	AI_Output			(other, self,"Info_CorKalom_BringBook_Success_15_04"); //Где состоится церемония?
-	AI_Output			(self, other,"Info_CorKalom_BringBook_Success_10_05"); //Дождись ночи и приходи во двор храма. Мы соберемся там, для того чтобы призвать великого Спящего.
+	AI_Output			(other, self,"Info_CorKalom_BringBook_Success_15_01"); //РЇ РЅР°С€РµР» РєРЅРёРіСѓ.
+	AI_Output			(self, other,"Info_CorKalom_BringBook_Success_10_02"); //РћС‚Р»РёС‡РЅР°СЏ СЂР°Р±РѕС‚Р°! РўРµРїРµСЂСЊ Сѓ РЅР°СЃ РµСЃС‚СЊ РІСЃРµ, С‡С‚Рѕ РЅСѓР¶РЅРѕ.
+	AI_Output			(self, other,"Info_CorKalom_BringBook_Success_10_03"); //РЎРµР№С‡Р°СЃ СЏ Р·Р°РІРµСЂС€Сѓ РїРѕСЃР»РµРґРЅРёРµ РїСЂРёРіРѕС‚РѕРІР»РµРЅРёСЏ.
+	AI_Output			(other, self,"Info_CorKalom_BringBook_Success_15_04"); //Р“РґРµ СЃРѕСЃС‚РѕРёС‚СЃСЏ С†РµСЂРµРјРѕРЅРёСЏ?
+	AI_Output			(self, other,"Info_CorKalom_BringBook_Success_10_05"); //Р”РѕР¶РґРёСЃСЊ РЅРѕС‡Рё Рё РїСЂРёС…РѕРґРё РІРѕ РґРІРѕСЂ С…СЂР°РјР°. РњС‹ СЃРѕР±РµСЂРµРјСЃСЏ С‚Р°Рј, РґР»СЏ С‚РѕРіРѕ С‡С‚РѕР±С‹ РїСЂРёР·РІР°С‚СЊ РІРµР»РёРєРѕРіРѕ РЎРїСЏС‰РµРіРѕ.
 
 	B_GiveInvItems	    (hero, self, ItWrFokusbuch, 1);
 	Npc_RemoveInvItem   (self,ItWrFokusbuch);
 	B_GiveXP			(XP_BringBook);
 	CorKalom_BringBook = LOG_SUCCESS;
 
-	B_LogEntry		(CH2_Book,"После того как я принес альманах Кор Галому, он  начал готовиться к вызову Спящего. Церемония должна состояться на храмовой площади. Ночью.");
+	B_LogEntry		(CH2_Book,"РџРѕСЃР»Рµ С‚РѕРіРѕ РєР°Рє СЏ РїСЂРёРЅРµСЃ Р°Р»СЊРјР°РЅР°С… РљРѕСЂ Р“Р°Р»РѕРјСѓ, РѕРЅ  РЅР°С‡Р°Р» РіРѕС‚РѕРІРёС‚СЊСЃСЏ Рє РІС‹Р·РѕРІСѓ РЎРїСЏС‰РµРіРѕ. Р¦РµСЂРµРјРѕРЅРёСЏ РґРѕР»Р¶РЅР° СЃРѕСЃС‚РѕСЏС‚СЊСЃСЏ РЅР° С…СЂР°РјРѕРІРѕР№ РїР»РѕС‰Р°РґРё. РќРѕС‡СЊСЋ.");
 	Log_SetTopicStatus	(CH2_Book,	LOG_SUCCESS);
 
 	//-------- Gurus und Novizen auf dem Tempelvorplatz versammeln --------
@@ -1066,7 +1066,7 @@ instance Info_CorKalom_Belohnung (C_INFO)
 	condition	= Info_CorKalom_Belohnung_Condition;
 	information	= Info_CorKalom_Belohnung_Info;
 	permanent	= 0;
-	description = "Как насчет оплаты?";
+	description = "РљР°Рє РЅР°СЃС‡РµС‚ РѕРїР»Р°С‚С‹?";
 };                       
 
 FUNC INT Info_CorKalom_Belohnung_Condition()
@@ -1079,35 +1079,35 @@ FUNC INT Info_CorKalom_Belohnung_Condition()
 
 FUNC VOID Info_CorKalom_Belohnung_Info()
 {
-	AI_Output			(other, self,"Info_CorKalom_Belohnung_15_00");//Как насчет оплаты?
-	AI_Output			(self, other,"Info_CorKalom_Belohnung_10_01");//Чего ты хочешь?
+	AI_Output			(other, self,"Info_CorKalom_Belohnung_15_00");//РљР°Рє РЅР°СЃС‡РµС‚ РѕРїР»Р°С‚С‹?
+	AI_Output			(self, other,"Info_CorKalom_Belohnung_10_01");//Р§РµРіРѕ С‚С‹ С…РѕС‡РµС€СЊ?
 	
 	Info_ClearChoices (Info_CorKalom_Belohnung);
-	Info_Addchoice(Info_CorKalom_Belohnung,"Магический свиток.",Info_CorKalom_Belohnung_SCROLL);
-	Info_Addchoice(Info_CorKalom_Belohnung,"Руда.",Info_CorKalom_Belohnung_ORE);
-	Info_Addchoice(Info_CorKalom_Belohnung,"Магический эликсир.",Info_CorKalom_Belohnung_MANA);
+	Info_Addchoice(Info_CorKalom_Belohnung,"РњР°РіРёС‡РµСЃРєРёР№ СЃРІРёС‚РѕРє.",Info_CorKalom_Belohnung_SCROLL);
+	Info_Addchoice(Info_CorKalom_Belohnung,"Р СѓРґР°.",Info_CorKalom_Belohnung_ORE);
+	Info_Addchoice(Info_CorKalom_Belohnung,"РњР°РіРёС‡РµСЃРєРёР№ СЌР»РёРєСЃРёСЂ.",Info_CorKalom_Belohnung_MANA);
 
 };
 func void Info_CorKalom_Belohnung_SCROLL()
 {
-	AI_Output			(other, self,"Info_CorKalom_Belohnung_SCROLL_15_00");//Отдай мне эти свитки с заклинаниями.
-	AI_Output			(self, other,"Info_CorKalom_Belohnung_SCROLL_10_01");//Используй эти заклинания мудро.
+	AI_Output			(other, self,"Info_CorKalom_Belohnung_SCROLL_15_00");//РћС‚РґР°Р№ РјРЅРµ СЌС‚Рё СЃРІРёС‚РєРё СЃ Р·Р°РєР»РёРЅР°РЅРёСЏРјРё.
+	AI_Output			(self, other,"Info_CorKalom_Belohnung_SCROLL_10_01");//РСЃРїРѕР»СЊР·СѓР№ СЌС‚Рё Р·Р°РєР»РёРЅР°РЅРёСЏ РјСѓРґСЂРѕ.
 	CreateInvItems (self,ItArScrollSleep,3);
 	B_GiveInvItems  (self,hero,ItArScrollSleep,3);
 	Info_ClearChoices (Info_CorKalom_Belohnung);
 };
 func void Info_CorKalom_Belohnung_ORE ()
 {
-	AI_Output			(other, self,"Info_CorKalom_Belohnung_ORE_15_00");//Мне бы пригодилась руда.
-	AI_Output			(self, other,"Info_CorKalom_Belohnung_ORE_10_01");//Это удовлетворит твою страсть к богаству.
+	AI_Output			(other, self,"Info_CorKalom_Belohnung_ORE_15_00");//РњРЅРµ Р±С‹ РїСЂРёРіРѕРґРёР»Р°СЃСЊ СЂСѓРґР°.
+	AI_Output			(self, other,"Info_CorKalom_Belohnung_ORE_10_01");//Р­С‚Рѕ СѓРґРѕРІР»РµС‚РІРѕСЂРёС‚ С‚РІРѕСЋ СЃС‚СЂР°СЃС‚СЊ Рє Р±РѕРіР°СЃС‚РІСѓ.
 	CreateInvItems  (self,ItMinugget,300);
 	B_GiveInvItems  (self,hero,ItMinugget,300);
 	Info_ClearChoices (Info_CorKalom_Belohnung);
 };
 func void Info_CorKalom_Belohnung_MANA()
 {
-	AI_Output						(other, self,"Info_CorKalom_Belohnung_MANA_15_00");//Мне нужны магические эликсиры.
-	AI_Output						(self, other,"Info_CorKalom_Belohnung_MANA_10_01");//Да придадут они тебе силы!
+	AI_Output						(other, self,"Info_CorKalom_Belohnung_MANA_15_00");//РњРЅРµ РЅСѓР¶РЅС‹ РјР°РіРёС‡РµСЃРєРёРµ СЌР»РёРєСЃРёСЂС‹.
+	AI_Output						(self, other,"Info_CorKalom_Belohnung_MANA_10_01");//Р”Р° РїСЂРёРґР°РґСѓС‚ РѕРЅРё С‚РµР±Рµ СЃРёР»С‹!
 	CreateInvItems 		(self,ItFo_Potion_Mana_02,5);
 	B_GiveInvItems      (self,hero,ItFo_Potion_Mana_02,5);
 	Info_ClearChoices	(Info_CorKalom_Belohnung);
@@ -1133,8 +1133,8 @@ FUNC int  GUR_1201_CorKalom_Exit_Condition()
 
 FUNC VOID  GUR_1201_CorKalom_Exit_Info()
 {
-	AI_Output			(other, self,"GUR_1201_CorKalom_Exit_15_01"); //До встречи!
-	AI_Output			(self, other,"GUR_1201_CorKalom_Exit_10_02"); //Да просветит тебя Спящий!
+	AI_Output			(other, self,"GUR_1201_CorKalom_Exit_15_01"); //Р”Рѕ РІСЃС‚СЂРµС‡Рё!
+	AI_Output			(self, other,"GUR_1201_CorKalom_Exit_10_02"); //Р”Р° РїСЂРѕСЃРІРµС‚РёС‚ С‚РµР±СЏ РЎРїСЏС‰РёР№!
 	
 	AI_StopProcessInfos	( self );
 };

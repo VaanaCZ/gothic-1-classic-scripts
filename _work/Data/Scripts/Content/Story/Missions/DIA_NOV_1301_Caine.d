@@ -34,7 +34,7 @@ instance  DIA_Caine_Hallo (C_INFO)
 	condition	= DIA_Caine_Hallo_Condition;
 	information	= DIA_Caine_Hallo_Info;
 	permanent	= 0;
-	description	= "Привет! Я здесь новенький.";
+	description	= "РџСЂРёРІРµС‚! РЇ Р·РґРµСЃСЊ РЅРѕРІРµРЅСЊРєРёР№.";
 };                       
 
 FUNC int  DIA_Caine_Hallo_Condition()
@@ -44,26 +44,26 @@ FUNC int  DIA_Caine_Hallo_Condition()
 
 FUNC VOID  DIA_Caine_Hallo_Info()
 {
-	AI_Output (other, self,"DIA_Caine_Hallo_15_00"); //Привет! Я здесь новенький!
-	AI_Output (self, other,"DIA_Caine_Hallo_13_01"); //Я... я... я Каин, ученик Кор Галома. Ты ведь слышал о нем, да?
+	AI_Output (other, self,"DIA_Caine_Hallo_15_00"); //РџСЂРёРІРµС‚! РЇ Р·РґРµСЃСЊ РЅРѕРІРµРЅСЊРєРёР№!
+	AI_Output (self, other,"DIA_Caine_Hallo_13_01"); //РЇ... СЏ... СЏ РљР°РёРЅ, СѓС‡РµРЅРёРє РљРѕСЂ Р“Р°Р»РѕРјР°. РўС‹ РІРµРґСЊ СЃР»С‹С€Р°Р» Рѕ РЅРµРј, РґР°?
 			
 	Info_ClearChoices	(DIA_Caine_Hallo );
-	Info_AddChoice		(DIA_Caine_Hallo,"Нет.",DIA_Caine_Hallo_Nein);
-	Info_AddChoice		(DIA_Caine_Hallo,"Да.",DIA_Caine_Hallo_Ja);
+	Info_AddChoice		(DIA_Caine_Hallo,"РќРµС‚.",DIA_Caine_Hallo_Nein);
+	Info_AddChoice		(DIA_Caine_Hallo,"Р”Р°.",DIA_Caine_Hallo_Ja);
 };
 
 func void DIA_Caine_Hallo_Ja()
 {
-	AI_Output (other, self,"DIA_Caine_Hallo_Ja_15_00"); //А-га.
-	AI_Output (self, other,"DIA_Caine_Hallo_Ja_13_01"); //Тогда ты знаешь, что он второй человек в этом Лагере... п-после Ю`Бериона.
+	AI_Output (other, self,"DIA_Caine_Hallo_Ja_15_00"); //Рђ-РіР°.
+	AI_Output (self, other,"DIA_Caine_Hallo_Ja_13_01"); //РўРѕРіРґР° С‚С‹ Р·РЅР°РµС€СЊ, С‡С‚Рѕ РѕРЅ РІС‚РѕСЂРѕР№ С‡РµР»РѕРІРµРє РІ СЌС‚РѕРј Р›Р°РіРµСЂРµ... Рї-РїРѕСЃР»Рµ Р®`Р‘РµСЂРёРѕРЅР°.
 	Info_ClearChoices	(DIA_Caine_Hallo );
 };
 
 func void DIA_Caine_Hallo_Nein()
 {
-	AI_Output (other, self,"DIA_Caine_Hallo_Nein_15_00"); //Нет.
-	AI_Output (self, other,"DIA_Caine_Hallo_Nein_13_01"); //Нет?! Ты здесь недавно, не так ли?
-	AI_Output (self, other,"DIA_Caine_Hallo_Nein_13_02"); //Кор Галом в этом Лагере - второй человек после Ю`Бериона. Он решает, кого принимать к нам, а кого нет.
+	AI_Output (other, self,"DIA_Caine_Hallo_Nein_15_00"); //РќРµС‚.
+	AI_Output (self, other,"DIA_Caine_Hallo_Nein_13_01"); //РќРµС‚?! РўС‹ Р·РґРµСЃСЊ РЅРµРґР°РІРЅРѕ, РЅРµ С‚Р°Рє Р»Рё?
+	AI_Output (self, other,"DIA_Caine_Hallo_Nein_13_02"); //РљРѕСЂ Р“Р°Р»РѕРј РІ СЌС‚РѕРј Р›Р°РіРµСЂРµ - РІС‚РѕСЂРѕР№ С‡РµР»РѕРІРµРє РїРѕСЃР»Рµ Р®`Р‘РµСЂРёРѕРЅР°. РћРЅ СЂРµС€Р°РµС‚, РєРѕРіРѕ РїСЂРёРЅРёРјР°С‚СЊ Рє РЅР°Рј, Р° РєРѕРіРѕ РЅРµС‚.
 	Info_ClearChoices	(DIA_Caine_Hallo );
 };
 
@@ -79,7 +79,7 @@ instance  DIA_Caine_WaysToKalom (C_INFO)
 	condition	= DIA_Caine_WaysToKalom_Condition;
 	information	= DIA_Caine_WaysToKalom_Info;
 	permanent	= 0;
-	description	= "Ich wьrde gerne mit Cor Kalom reden - kannst du mir dabei helfen?";
+	description	= "Ich wСЊrde gerne mit Cor Kalom reden - kannst du mir dabei helfen?";
 };                       
 
 FUNC int  DIA_Caine_WaysToKalom_Condition()
@@ -92,8 +92,8 @@ FUNC int  DIA_Caine_WaysToKalom_Condition()
 
 FUNC VOID  DIA_Caine_WaysToKalom_Info()
 {
-	AI_Output (other, self,"DIA_Caine_WaysToKalom_15_00"); //Ich wьrde gerne mit Cor Kalom reden - kannst du mir dabei helfen?
-	AI_Output (self, other,"DIA_Caine_WaysToKalom_13_01"); //Wenn du zu Cor Kalom willst, muЯt du einen guten Grund haben.
+	AI_Output (other, self,"DIA_Caine_WaysToKalom_15_00"); //Ich wСЊrde gerne mit Cor Kalom reden - kannst du mir dabei helfen?
+	AI_Output (self, other,"DIA_Caine_WaysToKalom_13_01"); //Wenn du zu Cor Kalom willst, muРЇt du einen guten Grund haben.
 	AI_Output (self, other,"DIA_Caine_WaysToKalom_13_02"); //Die Wache hat Anweisung, nur die vorzulassen, die Alchimistische Substanzen bringen oder von einen der Gurus geschickt wurden.
 };
 
@@ -108,7 +108,7 @@ instance  DIA_Caine_Alchemies (C_INFO)
 	condition	= DIA_Caine_Alchemies_Condition;
 	information	= DIA_Caine_Alchemies_Info;
 	permanent	= 0;
-	description	= "Was fьr alchimistische Substanzen kann ich Kalom bringen?";
+	description	= "Was fСЊr alchimistische Substanzen kann ich Kalom bringen?";
 };                       
 
 FUNC int  DIA_Caine_Alchemies_Condition()
@@ -121,8 +121,8 @@ FUNC int  DIA_Caine_Alchemies_Condition()
 
 FUNC VOID  DIA_Caine_Alchemies_Info()
 {
-	AI_Output (other, self,"DIA_Caine_Alchemies_15_00"); //Was fьr alchimistische Substanzen kann ich Kalom bringen?
-	AI_Output (self, other,"DIA_Caine_Alchemies_13_01"); //Kalom benцtigt vor allem das Sekret der Minecrawler. Wenn du ihm genug davon beschaffst, wird dich die Wache sicher vorlassen.
+	AI_Output (other, self,"DIA_Caine_Alchemies_15_00"); //Was fСЊr alchimistische Substanzen kann ich Kalom bringen?
+	AI_Output (self, other,"DIA_Caine_Alchemies_13_01"); //Kalom benС†tigt vor allem das Sekret der Minecrawler. Wenn du ihm genug davon beschaffst, wird dich die Wache sicher vorlassen.
 	AI_Output (self, other,"DIA_Caine_Alchemies_13_02"); //Er braucht zwar auch Pflanzen und Beeren, die man zwischen den Lagern findet, aber die nimmt Fortuno unten an.
 };
 
@@ -139,7 +139,7 @@ instance  DIA_Caine_Job (C_INFO)
 	condition	= DIA_Caine_Job_Condition;
 	information	= DIA_Caine_Job_Info;
 	permanent	= 0;
-	description	= "А ты чем занимаешься?";
+	description	= "Рђ С‚С‹ С‡РµРј Р·Р°РЅРёРјР°РµС€СЊСЃСЏ?";
 };                       
 
 FUNC int  DIA_Caine_Job_Condition()
@@ -152,9 +152,9 @@ FUNC int  DIA_Caine_Job_Condition()
 
 FUNC VOID  DIA_Caine_Job_Info()
 {
-	AI_Output (other, self,"DIA_Caine_Job_15_00"); //А ты чем занимаешься?
-	AI_Output (self, other,"DIA_Caine_Job_13_01"); //Я... я... я помогаю ему готовить снадобья.
-	AI_Output (self, other,"DIA_Caine_Job_13_02"); //В основном б-болотник и слюна ползунов. С-слюна нужна больше всего.
+	AI_Output (other, self,"DIA_Caine_Job_15_00"); //Рђ С‚С‹ С‡РµРј Р·Р°РЅРёРјР°РµС€СЊСЃСЏ?
+	AI_Output (self, other,"DIA_Caine_Job_13_01"); //РЇ... СЏ... СЏ РїРѕРјРѕРіР°СЋ РµРјСѓ РіРѕС‚РѕРІРёС‚СЊ СЃРЅР°РґРѕР±СЊСЏ.
+	AI_Output (self, other,"DIA_Caine_Job_13_02"); //Р’ РѕСЃРЅРѕРІРЅРѕРј Р±-Р±РѕР»РѕС‚РЅРёРє Рё СЃР»СЋРЅР° РїРѕР»Р·СѓРЅРѕРІ. РЎ-СЃР»СЋРЅР° РЅСѓР¶РЅР° Р±РѕР»СЊС€Рµ РІСЃРµРіРѕ.
 };
 
 // **************************************************
@@ -168,7 +168,7 @@ instance  DIA_Caine_WoSekret (C_INFO)
 	condition	= DIA_Caine_WoSekret_Condition;
 	information	= DIA_Caine_WoSekret_Info;
 	permanent	= 0;
-	description	= "Как добывается слюна ползунов?";
+	description	= "РљР°Рє РґРѕР±С‹РІР°РµС‚СЃСЏ СЃР»СЋРЅР° РїРѕР»Р·СѓРЅРѕРІ?";
 };                       
 
 FUNC int  DIA_Caine_WoSekret_Condition()
@@ -181,10 +181,10 @@ FUNC int  DIA_Caine_WoSekret_Condition()
 
 FUNC VOID  DIA_Caine_WoSekret_Info()
 {
-	AI_Output (other, self,"DIA_Caine_WoSekret_15_00"); //Как добывается слюна ползунов?
-	AI_Output (self, other,"DIA_Caine_WoSekret_13_01"); //Ползунов ты можешь найти в Старой Шахте. Но нужно еще знать, как добывается слюна.
-	AI_Output (self, other,"DIA_Caine_WoSekret_13_02"); //Если ты и в самом деле хочешь поохотиться на этих тварей, поговори лучше со Стражами, кто поопытнее. С Гор На Драком, например.
-	AI_Output (self, other,"DIA_Caine_WoSekret_13_03"); //Он ходит между Старой Шахтой и... и Лагерем каждый день. А п-по утрам ты можешь застать его в лаборатории.
+	AI_Output (other, self,"DIA_Caine_WoSekret_15_00"); //РљР°Рє РґРѕР±С‹РІР°РµС‚СЃСЏ СЃР»СЋРЅР° РїРѕР»Р·СѓРЅРѕРІ?
+	AI_Output (self, other,"DIA_Caine_WoSekret_13_01"); //РџРѕР»Р·СѓРЅРѕРІ С‚С‹ РјРѕР¶РµС€СЊ РЅР°Р№С‚Рё РІ РЎС‚Р°СЂРѕР№ РЁР°С…С‚Рµ. РќРѕ РЅСѓР¶РЅРѕ РµС‰Рµ Р·РЅР°С‚СЊ, РєР°Рє РґРѕР±С‹РІР°РµС‚СЃСЏ СЃР»СЋРЅР°.
+	AI_Output (self, other,"DIA_Caine_WoSekret_13_02"); //Р•СЃР»Рё С‚С‹ Рё РІ СЃР°РјРѕРј РґРµР»Рµ С…РѕС‡РµС€СЊ РїРѕРѕС…РѕС‚РёС‚СЊСЃСЏ РЅР° СЌС‚РёС… С‚РІР°СЂРµР№, РїРѕРіРѕРІРѕСЂРё Р»СѓС‡С€Рµ СЃРѕ РЎС‚СЂР°Р¶Р°РјРё, РєС‚Рѕ РїРѕРѕРїС‹С‚РЅРµРµ. РЎ Р“РѕСЂ РќР° Р”СЂР°РєРѕРј, РЅР°РїСЂРёРјРµСЂ.
+	AI_Output (self, other,"DIA_Caine_WoSekret_13_03"); //РћРЅ С…РѕРґРёС‚ РјРµР¶РґСѓ РЎС‚Р°СЂРѕР№ РЁР°С…С‚РѕР№ Рё... Рё Р›Р°РіРµСЂРµРј РєР°Р¶РґС‹Р№ РґРµРЅСЊ. Рђ Рї-РїРѕ СѓС‚СЂР°Рј С‚С‹ РјРѕР¶РµС€СЊ Р·Р°СЃС‚Р°С‚СЊ РµРіРѕ РІ Р»Р°Р±РѕСЂР°С‚РѕСЂРёРё.
 };
 
 // **************************************************
@@ -198,7 +198,7 @@ instance  DIA_Caine_AddInfoKalom (C_INFO)
 	condition	= DIA_Caine_AddInfoKalom_Condition;
 	information	= DIA_Caine_AddInfoKalom_Info;
 	permanent	= 0;
-	description	= "Что еще ты можешь рассказать о своем господине?";
+	description	= "Р§С‚Рѕ РµС‰Рµ С‚С‹ РјРѕР¶РµС€СЊ СЂР°СЃСЃРєР°Р·Р°С‚СЊ Рѕ СЃРІРѕРµРј РіРѕСЃРїРѕРґРёРЅРµ?";
 };                       
 
 FUNC int  DIA_Caine_AddInfoKalom_Condition()
@@ -211,8 +211,8 @@ FUNC int  DIA_Caine_AddInfoKalom_Condition()
 
 FUNC VOID  DIA_Caine_AddInfoKalom_Info()
 {
-	AI_Output (other, self,"DIA_Caine_AddInfoKalom_15_00"); //Что еще ты можешь рассказать о своем господине?
-	AI_Output (self, other,"DIA_Caine_AddInfoKalom_13_01"); //Он... он не такой, как... как все Гуру. К нему может обратиться любой, но... но НИКОМУ не позволено попусту тратить его драгоценное время.
+	AI_Output (other, self,"DIA_Caine_AddInfoKalom_15_00"); //Р§С‚Рѕ РµС‰Рµ С‚С‹ РјРѕР¶РµС€СЊ СЂР°СЃСЃРєР°Р·Р°С‚СЊ Рѕ СЃРІРѕРµРј РіРѕСЃРїРѕРґРёРЅРµ?
+	AI_Output (self, other,"DIA_Caine_AddInfoKalom_13_01"); //РћРЅ... РѕРЅ РЅРµ С‚Р°РєРѕР№, РєР°Рє... РєР°Рє РІСЃРµ Р“СѓСЂСѓ. Рљ РЅРµРјСѓ РјРѕР¶РµС‚ РѕР±СЂР°С‚РёС‚СЊСЃСЏ Р»СЋР±РѕР№, РЅРѕ... РЅРѕ РќРРљРћРњРЈ РЅРµ РїРѕР·РІРѕР»РµРЅРѕ РїРѕРїСѓСЃС‚Сѓ С‚СЂР°С‚РёС‚СЊ РµРіРѕ РґСЂР°РіРѕС†РµРЅРЅРѕРµ РІСЂРµРјСЏ.
 };
 
 
@@ -242,8 +242,8 @@ FUNC int  DIA_Caine_WieGuruSend_Condition()
 FUNC VOID  DIA_Caine_WieGuruSend_Info()
 {
 	AI_Output (other, self,"DIA_Caine_WieGuruSend_15_00"); //Wie bringe ich einen Guru dazu, dass er mich zu Kalom schickt.
-	AI_Output (self, other,"DIA_Caine_WieGuruSend_13_01"); //Darьber kann die Lester mehr erzдhlen.
-	AI_Output (self, other,"DIA_Caine_WieGuruSend_13_02"); //Bis vor kurzen hat er noch fьr Cor Kalom gearbeitet, jetzt kьmmert er sich zusammen mit den Gurus um die Neuen.
+	AI_Output (self, other,"DIA_Caine_WieGuruSend_13_01"); //DarСЊber kann die Lester mehr erzРґhlen.
+	AI_Output (self, other,"DIA_Caine_WieGuruSend_13_02"); //Bis vor kurzen hat er noch fСЊr Cor Kalom gearbeitet, jetzt kСЊmmert er sich zusammen mit den Gurus um die Neuen.
 };
 */
 
@@ -258,7 +258,7 @@ instance  Nov_1301_Caine_CHEST (C_INFO)
 	information		= Nov_1301_Caine_CHEST_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Как добыть рецепт эликсира Кор Галома?"; 
+	description		= "РљР°Рє РґРѕР±С‹С‚СЊ СЂРµС†РµРїС‚ СЌР»РёРєСЃРёСЂР° РљРѕСЂ Р“Р°Р»РѕРјР°?"; 
 };
 
 FUNC int  Nov_1301_Caine_CHEST_Condition()
@@ -271,6 +271,6 @@ FUNC int  Nov_1301_Caine_CHEST_Condition()
 };
 FUNC void  Nov_1301_Caine_CHEST_Info()
 {
-	AI_Output (other, self,"Nov_1301_Caine_CHEST_Info_15_01"); //Как добыть рецепт эликсира Кор Галома?
-	AI_Output (self, other,"Nov_1301_Caine_CHEST_Info_13_02"); //Никак. Он хранит его в запертом сундуке и не отдаст никому ни за какие деньги. 
+	AI_Output (other, self,"Nov_1301_Caine_CHEST_Info_15_01"); //РљР°Рє РґРѕР±С‹С‚СЊ СЂРµС†РµРїС‚ СЌР»РёРєСЃРёСЂР° РљРѕСЂ Р“Р°Р»РѕРјР°?
+	AI_Output (self, other,"Nov_1301_Caine_CHEST_Info_13_02"); //РќРёРєР°Рє. РћРЅ С…СЂР°РЅРёС‚ РµРіРѕ РІ Р·Р°РїРµСЂС‚РѕРј СЃСѓРЅРґСѓРєРµ Рё РЅРµ РѕС‚РґР°СЃС‚ РЅРёРєРѕРјСѓ РЅРё Р·Р° РєР°РєРёРµ РґРµРЅСЊРіРё. 
 };  

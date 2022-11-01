@@ -30,7 +30,7 @@ instance  Tpl_1437_Templer_NERV (C_INFO)
 	information		= Tpl_1437_Templer_NERV_Info;
 	important		= 0;
 	permanent		= 1;
-	description		= "Как жизнь?"; 
+	description		= "РљР°Рє Р¶РёР·РЅСЊ?"; 
 };
 
 FUNC int  Tpl_1437_Templer_NERV_Condition()
@@ -41,8 +41,8 @@ FUNC int  Tpl_1437_Templer_NERV_Condition()
 
 FUNC void  Tpl_1437_Templer_NERV_Info()
 {
-	AI_Output (other, self,"Tpl_1437_Templer_NERV_Info_15_01"); //Как жизнь?
-	AI_Output (self, other,"Tpl_1437_Templer_NERV_Info_13_02"); //Послушай, ты собрался доставать здесь всех или только меня?
+	AI_Output (other, self,"Tpl_1437_Templer_NERV_Info_15_01"); //РљР°Рє Р¶РёР·РЅСЊ?
+	AI_Output (self, other,"Tpl_1437_Templer_NERV_Info_13_02"); //РџРѕСЃР»СѓС€Р°Р№, С‚С‹ СЃРѕР±СЂР°Р»СЃСЏ РґРѕСЃС‚Р°РІР°С‚СЊ Р·РґРµСЃСЊ РІСЃРµС… РёР»Рё С‚РѕР»СЊРєРѕ РјРµРЅСЏ?
 	AI_StopProcessInfos	( self );
 };  
 // ERNEUTES ANSPRECHEN ------------------------------------
@@ -53,7 +53,7 @@ instance  Tpl_1437_Templer_LEAVE (C_INFO)
 	information		= Tpl_1437_Templer_LEAVE_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Все в порядке?"; 
+	description		= "Р’СЃРµ РІ РїРѕСЂСЏРґРєРµ?"; 
 };
 
 FUNC int  Tpl_1437_Templer_LEAVE_Condition()
@@ -66,8 +66,8 @@ FUNC int  Tpl_1437_Templer_LEAVE_Condition()
 };
 FUNC void  Tpl_1437_Templer_LEAVE_Info()
 {
-	AI_Output (other, self,"Tpl_1437_Templer_LEAVE_Info_15_01"); //Все в порядке?
-	AI_Output (self, other,"Tpl_1437_Templer_LEAVE_Info_13_02"); //Минуту покоя, ладно? Исчезни и поговори с кем-нибудь еще - с кем угодно, только не со мной!
+	AI_Output (other, self,"Tpl_1437_Templer_LEAVE_Info_15_01"); //Р’СЃРµ РІ РїРѕСЂСЏРґРєРµ?
+	AI_Output (self, other,"Tpl_1437_Templer_LEAVE_Info_13_02"); //РњРёРЅСѓС‚Сѓ РїРѕРєРѕСЏ, Р»Р°РґРЅРѕ? РСЃС‡РµР·РЅРё Рё РїРѕРіРѕРІРѕСЂРё СЃ РєРµРј-РЅРёР±СѓРґСЊ РµС‰Рµ - СЃ РєРµРј СѓРіРѕРґРЅРѕ, С‚РѕР»СЊРєРѕ РЅРµ СЃРѕ РјРЅРѕР№!
 	AI_StopProcessInfos	( self );
 };
 // ERNEUTES ANSPRECHEN ------------------------------------
@@ -78,7 +78,7 @@ instance  Tpl_1437_Templer_LEAVENOW (C_INFO)
 	information		= Tpl_1437_Templer_LEAVENOW_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Нет, я просто тебя не понимаю!"; 
+	description		= "РќРµС‚, СЏ РїСЂРѕСЃС‚Рѕ С‚РµР±СЏ РЅРµ РїРѕРЅРёРјР°СЋ!"; 
 };
 
 FUNC int  Tpl_1437_Templer_LEAVENOW_Condition()
@@ -91,13 +91,13 @@ FUNC int  Tpl_1437_Templer_LEAVENOW_Condition()
 };
 FUNC void  Tpl_1437_Templer_LEAVENOW_Info()
 {
-	AI_Output (other, self,"Tpl_1437_Templer_LEAVENOW_Info_15_01"); //Нет, я просто тебя не понимаю!
-	AI_Output (self, other,"Tpl_1437_Templer_LEAVENOW_Info_13_02"); //Ладно, я попробую тебе объяснить!
-	AI_Output (self, other,"Tpl_1437_Templer_LEAVENOW_Info_13_03"); //Катись отсюда!
-	AI_Output (self, other,"Tpl_1437_Templer_LEAVENOW_Info_13_04"); //Проваливай из этой шахты!
-	AI_Output (self, other,"Tpl_1437_Templer_LEAVENOW_Info_13_05"); //Больше НИКОГДА не подходи ко мне!
-	AI_Output (self, other,"Tpl_1437_Templer_LEAVENOW_Info_13_06"); //Исчезни! Оставь меня в покое!
-	AI_Output (self, other,"Tpl_1437_Templer_LEAVENOW_Info_13_07"); //ПРОВАЛИВАЙ!
+	AI_Output (other, self,"Tpl_1437_Templer_LEAVENOW_Info_15_01"); //РќРµС‚, СЏ РїСЂРѕСЃС‚Рѕ С‚РµР±СЏ РЅРµ РїРѕРЅРёРјР°СЋ!
+	AI_Output (self, other,"Tpl_1437_Templer_LEAVENOW_Info_13_02"); //Р›Р°РґРЅРѕ, СЏ РїРѕРїСЂРѕР±СѓСЋ С‚РµР±Рµ РѕР±СЉСЏСЃРЅРёС‚СЊ!
+	AI_Output (self, other,"Tpl_1437_Templer_LEAVENOW_Info_13_03"); //РљР°С‚РёСЃСЊ РѕС‚СЃСЋРґР°!
+	AI_Output (self, other,"Tpl_1437_Templer_LEAVENOW_Info_13_04"); //РџСЂРѕРІР°Р»РёРІР°Р№ РёР· СЌС‚РѕР№ С€Р°С…С‚С‹!
+	AI_Output (self, other,"Tpl_1437_Templer_LEAVENOW_Info_13_05"); //Р‘РѕР»СЊС€Рµ РќРРљРћР“Р”Рђ РЅРµ РїРѕРґС…РѕРґРё РєРѕ РјРЅРµ!
+	AI_Output (self, other,"Tpl_1437_Templer_LEAVENOW_Info_13_06"); //РСЃС‡РµР·РЅРё! РћСЃС‚Р°РІСЊ РјРµРЅСЏ РІ РїРѕРєРѕРµ!
+	AI_Output (self, other,"Tpl_1437_Templer_LEAVENOW_Info_13_07"); //РџР РћР’РђР›РР’РђР™!
 	AI_StopProcessInfos	( self );
 };
 

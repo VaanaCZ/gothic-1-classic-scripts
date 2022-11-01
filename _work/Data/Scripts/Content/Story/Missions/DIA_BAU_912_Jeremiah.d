@@ -33,7 +33,7 @@ instance DIA_Jeremiah_Hallo (C_INFO)
 	condition	= DIA_Jeremiah_Hallo_Condition;
 	information	= DIA_Jeremiah_Hallo_Info;
 	permanent	= 0;
-	description = "Чем ты занимаешься?";
+	description = "Р§РµРј С‚С‹ Р·Р°РЅРёРјР°РµС€СЊСЃСЏ?";
 };                       
 
 FUNC int DIA_Jeremiah_Hallo_Condition()
@@ -43,9 +43,9 @@ FUNC int DIA_Jeremiah_Hallo_Condition()
 
 FUNC VOID  DIA_Jeremiah_Hallo_Info()
 {
-	AI_Output (other, self,"DIA_Jeremiah_Hallo_15_00"); //Что ты делаешь?
-	AI_Output (self, other,"DIA_Jeremiah_Hallo_04_01"); //Готовлю рисовый шнапс, парень.
-	AI_Output (self, other,"DIA_Jeremiah_Hallo_04_02"); //Вот, возьми бутыку. Только не говори Силасу.
+	AI_Output (other, self,"DIA_Jeremiah_Hallo_15_00"); //Р§С‚Рѕ С‚С‹ РґРµР»Р°РµС€СЊ?
+	AI_Output (self, other,"DIA_Jeremiah_Hallo_04_01"); //Р“РѕС‚РѕРІР»СЋ СЂРёСЃРѕРІС‹Р№ С€РЅР°РїСЃ, РїР°СЂРµРЅСЊ.
+	AI_Output (self, other,"DIA_Jeremiah_Hallo_04_02"); //Р’РѕС‚, РІРѕР·СЊРјРё Р±СѓС‚С‹РєСѓ. РўРѕР»СЊРєРѕ РЅРµ РіРѕРІРѕСЂРё РЎРёР»Р°СЃСѓ.
 	
 	CreateInvItems	(self, ItFoBooze, 1);
 	B_GiveInvItems	(self, other, ItFoBooze, 1);
@@ -64,7 +64,7 @@ instance DIA_Jeremiah_PERM (C_INFO)
 	condition	= DIA_Jeremiah_PERM_Condition;
 	information	= DIA_Jeremiah_PERM_Info;
 	permanent	= 1;
-	description = "Как идут дела?";
+	description = "РљР°Рє РёРґСѓС‚ РґРµР»Р°?";
 };                       
 
 FUNC int DIA_Jeremiah_PERM_Condition()
@@ -74,9 +74,9 @@ FUNC int DIA_Jeremiah_PERM_Condition()
 
 FUNC VOID  DIA_Jeremiah_PERM_Info()
 {
-	AI_Output (other, self,"DIA_Jeremiah_PERM_15_00"); //Как идут дела?
-	AI_Output (self, other,"DIA_Jeremiah_PERM_04_01"); //Я едва поспеваю с этими типами. Боже, сколько же они пьют!
-	AI_Output (self, other,"DIA_Jeremiah_PERM_04_02"); //Но это к лучшему. Пока я занят делом, шакалы нашего Лорда стараются мне не мешать.
+	AI_Output (other, self,"DIA_Jeremiah_PERM_15_00"); //РљР°Рє РёРґСѓС‚ РґРµР»Р°?
+	AI_Output (self, other,"DIA_Jeremiah_PERM_04_01"); //РЇ РµРґРІР° РїРѕСЃРїРµРІР°СЋ СЃ СЌС‚РёРјРё С‚РёРїР°РјРё. Р‘РѕР¶Рµ, СЃРєРѕР»СЊРєРѕ Р¶Рµ РѕРЅРё РїСЊСЋС‚!
+	AI_Output (self, other,"DIA_Jeremiah_PERM_04_02"); //РќРѕ СЌС‚Рѕ Рє Р»СѓС‡С€РµРјСѓ. РџРѕРєР° СЏ Р·Р°РЅСЏС‚ РґРµР»РѕРј, С€Р°РєР°Р»С‹ РЅР°С€РµРіРѕ Р›РѕСЂРґР° СЃС‚Р°СЂР°СЋС‚СЃСЏ РјРЅРµ РЅРµ РјРµС€Р°С‚СЊ.
 	
 	Jeremiah_Bauer = TRUE;
 };
@@ -92,7 +92,7 @@ instance DIA_Jeremiah_Horatio (C_INFO)
 	condition	= DIA_Jeremiah_Horatio_Condition;
 	information	= DIA_Jeremiah_Horatio_Info;
 	permanent	= 0;
-	description = "Расскажи мне о Лорде.";
+	description = "Р Р°СЃСЃРєР°Р¶Рё РјРЅРµ Рѕ Р›РѕСЂРґРµ.";
 };                       
 
 FUNC int DIA_Jeremiah_Horatio_Condition()
@@ -105,10 +105,10 @@ FUNC int DIA_Jeremiah_Horatio_Condition()
 
 FUNC VOID  DIA_Jeremiah_Horatio_Info()
 {
-	AI_Output (other, self,"DIA_Jeremiah_Horatio_15_00"); //Расскажи мне о Лорде.
-	AI_Output (self, other,"DIA_Jeremiah_Horatio_04_01"); //Проклятая свинья! Его головорезы выбирают тех, кто послабее, и заставляют их работать на полях.
-	AI_Output (self, other,"DIA_Jeremiah_Horatio_04_02"); //Единственный, кто мог бы противостоять ему, - это Горацио.
-	AI_Output (self, other,"DIA_Jeremiah_Horatio_04_03"); //Я слышал однажды, как он говорил, что с удовольствием вбил бы тупую голову нашего Лорда в плечи по самые уши... Но он никогда этого не сделает.
-	AI_Output (self, other,"DIA_Jeremiah_Horatio_04_04"); //Это против его убеждений.
+	AI_Output (other, self,"DIA_Jeremiah_Horatio_15_00"); //Р Р°СЃСЃРєР°Р¶Рё РјРЅРµ Рѕ Р›РѕСЂРґРµ.
+	AI_Output (self, other,"DIA_Jeremiah_Horatio_04_01"); //РџСЂРѕРєР»СЏС‚Р°СЏ СЃРІРёРЅСЊСЏ! Р•РіРѕ РіРѕР»РѕРІРѕСЂРµР·С‹ РІС‹Р±РёСЂР°СЋС‚ С‚РµС…, РєС‚Рѕ РїРѕСЃР»Р°Р±РµРµ, Рё Р·Р°СЃС‚Р°РІР»СЏСЋС‚ РёС… СЂР°Р±РѕС‚Р°С‚СЊ РЅР° РїРѕР»СЏС….
+	AI_Output (self, other,"DIA_Jeremiah_Horatio_04_02"); //Р•РґРёРЅСЃС‚РІРµРЅРЅС‹Р№, РєС‚Рѕ РјРѕРі Р±С‹ РїСЂРѕС‚РёРІРѕСЃС‚РѕСЏС‚СЊ РµРјСѓ, - СЌС‚Рѕ Р“РѕСЂР°С†РёРѕ.
+	AI_Output (self, other,"DIA_Jeremiah_Horatio_04_03"); //РЇ СЃР»С‹С€Р°Р» РѕРґРЅР°Р¶РґС‹, РєР°Рє РѕРЅ РіРѕРІРѕСЂРёР», С‡С‚Рѕ СЃ СѓРґРѕРІРѕР»СЊСЃС‚РІРёРµРј РІР±РёР» Р±С‹ С‚СѓРїСѓСЋ РіРѕР»РѕРІСѓ РЅР°С€РµРіРѕ Р›РѕСЂРґР° РІ РїР»РµС‡Рё РїРѕ СЃР°РјС‹Рµ СѓС€Рё... РќРѕ РѕРЅ РЅРёРєРѕРіРґР° СЌС‚РѕРіРѕ РЅРµ СЃРґРµР»Р°РµС‚.
+	AI_Output (self, other,"DIA_Jeremiah_Horatio_04_04"); //Р­С‚Рѕ РїСЂРѕС‚РёРІ РµРіРѕ СѓР±РµР¶РґРµРЅРёР№.
 };
 

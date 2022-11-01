@@ -1,6 +1,6 @@
 /****************************************************
 *               personalisierter TA                 *
-*   Y´Berion liegt nach großer Beschwörung 		    *
+*   YÒ‘Berion liegt nach groÐ¯er BeschwÑ†rung 		    *
 *   am Boden 										*
 ****************************************************/
 func void ZS_Drained_YBerion () 

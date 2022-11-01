@@ -33,7 +33,7 @@ INSTANCE Info_ORG_830_Hello (C_INFO)
 	condition	= Info_ORG_830_Hello_Condition;
 	information	= Info_ORG_830_Hello_Info;
 	permanent	= 0;
-	description	= "Привет! Я здесь новенький.";
+	description	= "РџСЂРёРІРµС‚! РЇ Р·РґРµСЃСЊ РЅРѕРІРµРЅСЊРєРёР№.";
 };                       
 
 FUNC INT Info_ORG_830_Hello_Condition()
@@ -43,8 +43,8 @@ FUNC INT Info_ORG_830_Hello_Condition()
 
 FUNC VOID Info_ORG_830_Hello_Info()
 {	
-	AI_Output (other, self,"Info_ORG_830_Hello_15_00"); //Привет! Я здесь новенький.
-	AI_Output (self, other,"Info_ORG_830_Hello_13_01"); //И что с того?
+	AI_Output (other, self,"Info_ORG_830_Hello_15_00"); //РџСЂРёРІРµС‚! РЇ Р·РґРµСЃСЊ РЅРѕРІРµРЅСЊРєРёР№.
+	AI_Output (self, other,"Info_ORG_830_Hello_13_01"); //Р С‡С‚Рѕ СЃ С‚РѕРіРѕ?
 };
 
 // ************************************************************
@@ -58,7 +58,7 @@ INSTANCE Info_ORG_830_What (C_INFO)
 	condition	= Info_ORG_830_What_Condition;
 	information	= Info_ORG_830_What_Info;
 	permanent	= 0;
-	description	= "Чем ты занимаешься?";
+	description	= "Р§РµРј С‚С‹ Р·Р°РЅРёРјР°РµС€СЊСЃСЏ?";
 };                       
 
 FUNC INT Info_ORG_830_What_Condition()
@@ -71,9 +71,9 @@ FUNC INT Info_ORG_830_What_Condition()
 
 FUNC VOID Info_ORG_830_What_Info()
 {	
-	AI_Output (other, self,"Info_ORG_830_What_15_00"); //Что ты делаешь?
-	AI_Output (self, other,"Info_ORG_830_What_13_01"); //А на что это, по-твоему, похоже? Курю, разумеется.
-	AI_Output (self, other,"Info_ORG_830_What_13_02"); //Только не думай, что я позволю тебе затянуться!
+	AI_Output (other, self,"Info_ORG_830_What_15_00"); //Р§С‚Рѕ С‚С‹ РґРµР»Р°РµС€СЊ?
+	AI_Output (self, other,"Info_ORG_830_What_13_01"); //Рђ РЅР° С‡С‚Рѕ СЌС‚Рѕ, РїРѕ-С‚РІРѕРµРјСѓ, РїРѕС…РѕР¶Рµ? РљСѓСЂСЋ, СЂР°Р·СѓРјРµРµС‚СЃСЏ.
+	AI_Output (self, other,"Info_ORG_830_What_13_02"); //РўРѕР»СЊРєРѕ РЅРµ РґСѓРјР°Р№, С‡С‚Рѕ СЏ РїРѕР·РІРѕР»СЋ С‚РµР±Рµ Р·Р°С‚СЏРЅСѓС‚СЊСЃСЏ!
 };
 
 // ************************************************************
@@ -87,7 +87,7 @@ INSTANCE Info_ORG_830_Aufhalten (C_INFO)
 	condition	= Info_ORG_830_Aufhalten_Condition;
 	information	= Info_ORG_830_Aufhalten_Info;
 	permanent	= 0;
-	description	= "Разве ты не попытаешься остановить меня? Спросить о чем-нибудь?";
+	description	= "Р Р°Р·РІРµ С‚С‹ РЅРµ РїРѕРїС‹С‚Р°РµС€СЊСЃСЏ РѕСЃС‚Р°РЅРѕРІРёС‚СЊ РјРµРЅСЏ? РЎРїСЂРѕСЃРёС‚СЊ Рѕ С‡РµРј-РЅРёР±СѓРґСЊ?";
 };                       
 
 FUNC INT Info_ORG_830_Aufhalten_Condition()
@@ -100,8 +100,8 @@ FUNC INT Info_ORG_830_Aufhalten_Condition()
 
 FUNC VOID Info_ORG_830_Aufhalten_Info()
 {	
-	AI_Output (other, self,"Info_ORG_830_Aufhalten_15_00"); //Разве ты не попытаешься остановить меня? Спросить о чем-нибудь?
-	AI_Output (self, other,"Info_ORG_830_Aufhalten_13_01"); //Не-а. Слишком много возни. Потом, от таких как ты все равно не стоит ждать неприятностей.
+	AI_Output (other, self,"Info_ORG_830_Aufhalten_15_00"); //Р Р°Р·РІРµ С‚С‹ РЅРµ РїРѕРїС‹С‚Р°РµС€СЊСЃСЏ РѕСЃС‚Р°РЅРѕРІРёС‚СЊ РјРµРЅСЏ? РЎРїСЂРѕСЃРёС‚СЊ Рѕ С‡РµРј-РЅРёР±СѓРґСЊ?
+	AI_Output (self, other,"Info_ORG_830_Aufhalten_13_01"); //РќРµ-Р°. РЎР»РёС€РєРѕРј РјРЅРѕРіРѕ РІРѕР·РЅРё. РџРѕС‚РѕРј, РѕС‚ С‚Р°РєРёС… РєР°Рє С‚С‹ РІСЃРµ СЂР°РІРЅРѕ РЅРµ СЃС‚РѕРёС‚ Р¶РґР°С‚СЊ РЅРµРїСЂРёСЏС‚РЅРѕСЃС‚РµР№.
 };
 
 // ************************************************************
@@ -115,7 +115,7 @@ INSTANCE Info_ORG_830_Perm (C_INFO)
 	condition	= Info_ORG_830_Perm_Condition;
 	information	= Info_ORG_830_Perm_Info;
 	permanent	= 1;
-	description	= "Как там, внутри?";
+	description	= "РљР°Рє С‚Р°Рј, РІРЅСѓС‚СЂРё?";
 };                       
 
 FUNC INT Info_ORG_830_Perm_Condition()
@@ -128,6 +128,6 @@ FUNC INT Info_ORG_830_Perm_Condition()
 
 FUNC VOID Info_ORG_830_Perm_Info()
 {	
-	AI_Output (other, self,"Info_ORG_830_Perm_15_00"); //Как там, внутри?
-	AI_Output (self, other,"Info_ORG_830_Perm_13_01"); //Как всегда - все тихо, спокойно, несколько драк.
+	AI_Output (other, self,"Info_ORG_830_Perm_15_00"); //РљР°Рє С‚Р°Рј, РІРЅСѓС‚СЂРё?
+	AI_Output (self, other,"Info_ORG_830_Perm_13_01"); //РљР°Рє РІСЃРµРіРґР° - РІСЃРµ С‚РёС…Рѕ, СЃРїРѕРєРѕР№РЅРѕ, РЅРµСЃРєРѕР»СЊРєРѕ РґСЂР°Рє.
 };

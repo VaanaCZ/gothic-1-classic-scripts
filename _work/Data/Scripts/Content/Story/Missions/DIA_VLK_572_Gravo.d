@@ -33,7 +33,7 @@ instance DIA_Gravo_Hallo(C_INFO)
 	condition		= DIA_Gravo_Hallo_Condition;
 	information		= DIA_Gravo_Hallo_Info;
 	permanent		= 0;
-	description 	= "Как идут дела?";
+	description 	= "РљР°Рє РёРґСѓС‚ РґРµР»Р°?";
 };                       
 
 FUNC INT DIA_Gravo_Hallo_Condition()
@@ -43,11 +43,11 @@ FUNC INT DIA_Gravo_Hallo_Condition()
 
 func VOID DIA_Gravo_Hallo_Info()
 {
-	AI_Output (other, self,"DIA_Gravo_Hallo_15_00"); //Как идут дела?
-	AI_Output (self, other,"DIA_Gravo_Hallo_04_01"); //С тех пор как я перестал гнуть спину на шахте, пожаловаться не на что.
-	AI_Output (other, self,"DIA_Gravo_Hallo_15_02"); //На что же ты живешь?
-	AI_Output (self, other,"DIA_Gravo_Hallo_04_03"); //Я помогаю людям решать их проблемы.
-	AI_Output (self, other,"DIA_Gravo_Hallo_04_04"); //Если ты перейдешь дорогу кому-нибудь из больших шишек здесь, в Лагере, я постараюсь уладить это.
+	AI_Output (other, self,"DIA_Gravo_Hallo_15_00"); //РљР°Рє РёРґСѓС‚ РґРµР»Р°?
+	AI_Output (self, other,"DIA_Gravo_Hallo_04_01"); //РЎ С‚РµС… РїРѕСЂ РєР°Рє СЏ РїРµСЂРµСЃС‚Р°Р» РіРЅСѓС‚СЊ СЃРїРёРЅСѓ РЅР° С€Р°С…С‚Рµ, РїРѕР¶Р°Р»РѕРІР°С‚СЊСЃСЏ РЅРµ РЅР° С‡С‚Рѕ.
+	AI_Output (other, self,"DIA_Gravo_Hallo_15_02"); //РќР° С‡С‚Рѕ Р¶Рµ С‚С‹ Р¶РёРІРµС€СЊ?
+	AI_Output (self, other,"DIA_Gravo_Hallo_04_03"); //РЇ РїРѕРјРѕРіР°СЋ Р»СЋРґСЏРј СЂРµС€Р°С‚СЊ РёС… РїСЂРѕР±Р»РµРјС‹.
+	AI_Output (self, other,"DIA_Gravo_Hallo_04_04"); //Р•СЃР»Рё С‚С‹ РїРµСЂРµР№РґРµС€СЊ РґРѕСЂРѕРіСѓ РєРѕРјСѓ-РЅРёР±СѓРґСЊ РёР· Р±РѕР»СЊС€РёС… С€РёС€РµРє Р·РґРµСЃСЊ, РІ Р›Р°РіРµСЂРµ, СЏ РїРѕСЃС‚Р°СЂР°СЋСЃСЊ СѓР»Р°РґРёС‚СЊ СЌС‚Рѕ.
 };
 
 // **************************************************
@@ -61,7 +61,7 @@ instance DIA_Gravo_HelpHow(C_INFO)
 	condition		= DIA_Gravo_HelpHow_Condition;
 	information		= DIA_Gravo_HelpHow_Info;
 	permanent		= 0;
-	description 	= "То есть, если возникнут проблемы, ты сможешь помочь? Но как?";
+	description 	= "РўРѕ РµСЃС‚СЊ, РµСЃР»Рё РІРѕР·РЅРёРєРЅСѓС‚ РїСЂРѕР±Р»РµРјС‹, С‚С‹ СЃРјРѕР¶РµС€СЊ РїРѕРјРѕС‡СЊ? РќРѕ РєР°Рє?";
 };                       
 
 FUNC INT DIA_Gravo_HelpHow_Condition()
@@ -74,14 +74,14 @@ FUNC INT DIA_Gravo_HelpHow_Condition()
 
 func VOID DIA_Gravo_HelpHow_Info()
 {
-	AI_Output (other, self,"DIA_Gravo_HelpHow_15_00"); //То есть, если возникнут проблемы, ты сможешь помочь? Но как?
-	AI_Output (self, other,"DIA_Gravo_HelpHow_04_01"); //Ну, допустим, ты поссорился с Торусом. Вообще-то, ссориться с ним совсем не стоит, но не будем зарекаться.
-	AI_Output (self, other,"DIA_Gravo_HelpHow_04_02"); //Торус у нас довольно упрямый: если ты хоть один раз подвел его, он ставит на тебе крест. А это плохо.
-	AI_Output (self, other,"DIA_Gravo_HelpHow_04_03"); //Ты новичок, ты от него зависишь. И вот ты приходишь ко мне и просишь помочь. А я знаю многих людей, к чьему мнению Торус прислушивается.
-	AI_Output (self, other,"DIA_Gravo_HelpHow_04_04"); //Они замолвят за тебя словечко, и вот вы с Торусом снова друзья. Разумеется, делать они это будут не бесплатно, так что тебе придется раскошелиться.
-	AI_Output (self, other,"DIA_Gravo_HelpHow_04_05"); //Ну а я забочусь о том, чтобы твоя руда попала в нужные руки...
+	AI_Output (other, self,"DIA_Gravo_HelpHow_15_00"); //РўРѕ РµСЃС‚СЊ, РµСЃР»Рё РІРѕР·РЅРёРєРЅСѓС‚ РїСЂРѕР±Р»РµРјС‹, С‚С‹ СЃРјРѕР¶РµС€СЊ РїРѕРјРѕС‡СЊ? РќРѕ РєР°Рє?
+	AI_Output (self, other,"DIA_Gravo_HelpHow_04_01"); //РќСѓ, РґРѕРїСѓСЃС‚РёРј, С‚С‹ РїРѕСЃСЃРѕСЂРёР»СЃСЏ СЃ РўРѕСЂСѓСЃРѕРј. Р’РѕРѕР±С‰Рµ-С‚Рѕ, СЃСЃРѕСЂРёС‚СЊСЃСЏ СЃ РЅРёРј СЃРѕРІСЃРµРј РЅРµ СЃС‚РѕРёС‚, РЅРѕ РЅРµ Р±СѓРґРµРј Р·Р°СЂРµРєР°С‚СЊСЃСЏ.
+	AI_Output (self, other,"DIA_Gravo_HelpHow_04_02"); //РўРѕСЂСѓСЃ Сѓ РЅР°СЃ РґРѕРІРѕР»СЊРЅРѕ СѓРїСЂСЏРјС‹Р№: РµСЃР»Рё С‚С‹ С…РѕС‚СЊ РѕРґРёРЅ СЂР°Р· РїРѕРґРІРµР» РµРіРѕ, РѕРЅ СЃС‚Р°РІРёС‚ РЅР° С‚РµР±Рµ РєСЂРµСЃС‚. Рђ СЌС‚Рѕ РїР»РѕС…Рѕ.
+	AI_Output (self, other,"DIA_Gravo_HelpHow_04_03"); //РўС‹ РЅРѕРІРёС‡РѕРє, С‚С‹ РѕС‚ РЅРµРіРѕ Р·Р°РІРёСЃРёС€СЊ. Р РІРѕС‚ С‚С‹ РїСЂРёС…РѕРґРёС€СЊ РєРѕ РјРЅРµ Рё РїСЂРѕСЃРёС€СЊ РїРѕРјРѕС‡СЊ. Рђ СЏ Р·РЅР°СЋ РјРЅРѕРіРёС… Р»СЋРґРµР№, Рє С‡СЊРµРјСѓ РјРЅРµРЅРёСЋ РўРѕСЂСѓСЃ РїСЂРёСЃР»СѓС€РёРІР°РµС‚СЃСЏ.
+	AI_Output (self, other,"DIA_Gravo_HelpHow_04_04"); //РћРЅРё Р·Р°РјРѕР»РІСЏС‚ Р·Р° С‚РµР±СЏ СЃР»РѕРІРµС‡РєРѕ, Рё РІРѕС‚ РІС‹ СЃ РўРѕСЂСѓСЃРѕРј СЃРЅРѕРІР° РґСЂСѓР·СЊСЏ. Р Р°Р·СѓРјРµРµС‚СЃСЏ, РґРµР»Р°С‚СЊ РѕРЅРё СЌС‚Рѕ Р±СѓРґСѓС‚ РЅРµ Р±РµСЃРїР»Р°С‚РЅРѕ, С‚Р°Рє С‡С‚Рѕ С‚РµР±Рµ РїСЂРёРґРµС‚СЃСЏ СЂР°СЃРєРѕС€РµР»РёС‚СЊСЃСЏ.
+	AI_Output (self, other,"DIA_Gravo_HelpHow_04_05"); //РќСѓ Р° СЏ Р·Р°Р±РѕС‡СѓСЃСЊ Рѕ С‚РѕРј, С‡С‚РѕР±С‹ С‚РІРѕСЏ СЂСѓРґР° РїРѕРїР°Р»Р° РІ РЅСѓР¶РЅС‹Рµ СЂСѓРєРё...
 
-	B_LogEntry(GE_TraderOC,"Рудокоп Граво предлагает специальные услуги. Если я попаду в неприятности в Лагере, то я могу заплатить ему за их решение.");
+	B_LogEntry(GE_TraderOC,"Р СѓРґРѕРєРѕРї Р“СЂР°РІРѕ РїСЂРµРґР»Р°РіР°РµС‚ СЃРїРµС†РёР°Р»СЊРЅС‹Рµ СѓСЃР»СѓРіРё. Р•СЃР»Рё СЏ РїРѕРїР°РґСѓ РІ РЅРµРїСЂРёСЏС‚РЅРѕСЃС‚Рё РІ Р›Р°РіРµСЂРµ, С‚Рѕ СЏ РјРѕРіСѓ Р·Р°РїР»Р°С‚РёС‚СЊ РµРјСѓ Р·Р° РёС… СЂРµС€РµРЅРёРµ.");
 };
 
 // **************************************************
@@ -93,12 +93,12 @@ func void B_Gravo_HelpAttitude(var C_NPC prob)
 {
 	if (Npc_GetPermAttitude(prob, other)==ATT_ANGRY)
 	{
-		AI_Output (self, other,"B_Gravo_HelpAttitude_ANGRY_04_00"); //Да, ты у него на плохом счету.
-		AI_Output (self, other,"B_Gravo_HelpAttitude_ANGRY_04_01"); //Есть у меня пара человек... В общем, за 100 кусков руды можно решить эту проблему.
+		AI_Output (self, other,"B_Gravo_HelpAttitude_ANGRY_04_00"); //Р”Р°, С‚С‹ Сѓ РЅРµРіРѕ РЅР° РїР»РѕС…РѕРј СЃС‡РµС‚Сѓ.
+		AI_Output (self, other,"B_Gravo_HelpAttitude_ANGRY_04_01"); //Р•СЃС‚СЊ Сѓ РјРµРЅСЏ РїР°СЂР° С‡РµР»РѕРІРµРє... Р’ РѕР±С‰РµРј, Р·Р° 100 РєСѓСЃРєРѕРІ СЂСѓРґС‹ РјРѕР¶РЅРѕ СЂРµС€РёС‚СЊ СЌС‚Сѓ РїСЂРѕР±Р»РµРјСѓ.
 		if (Npc_HasItems(other,itminugget)>=100)
 		{
-			AI_Output (self, other,"B_Gravo_HelpAttitude_ANGRY_04_02"); //Посмотрим, что у тебя есть... Ага! Этого должно хватить. Можешь считать, что вопрос решен.
-			AI_Output (self, other,"B_Gravo_HelpAttitude_ANGRY_04_03"); //И никому не говори об этом! Веди себя так, будто ничего не случилось.
+			AI_Output (self, other,"B_Gravo_HelpAttitude_ANGRY_04_02"); //РџРѕСЃРјРѕС‚СЂРёРј, С‡С‚Рѕ Сѓ С‚РµР±СЏ РµСЃС‚СЊ... РђРіР°! Р­С‚РѕРіРѕ РґРѕР»Р¶РЅРѕ С…РІР°С‚РёС‚СЊ. РњРѕР¶РµС€СЊ СЃС‡РёС‚Р°С‚СЊ, С‡С‚Рѕ РІРѕРїСЂРѕСЃ СЂРµС€РµРЅ.
+			AI_Output (self, other,"B_Gravo_HelpAttitude_ANGRY_04_03"); //Р РЅРёРєРѕРјСѓ РЅРµ РіРѕРІРѕСЂРё РѕР± СЌС‚РѕРј! Р’РµРґРё СЃРµР±СЏ С‚Р°Рє, Р±СѓРґС‚Рѕ РЅРёС‡РµРіРѕ РЅРµ СЃР»СѓС‡РёР»РѕСЃСЊ.
 			B_GiveInvItems (hero, self, itminugget, 100);
 			Npc_SetPermAttitude(prob,ATT_NEUTRAL);
 		}
@@ -111,24 +111,24 @@ func void B_Gravo_HelpAttitude(var C_NPC prob)
 	}
 	else if (Npc_GetPermAttitude(prob, other)==ATT_HOSTILE)
 	{
-		AI_Output (self, other,"B_Gravo_HelpAttitude_HOSTILE_04_00"); //И ты называешь это 'проблемой'?! Слабо сказано, приятель! За это он порубит тебя на куски.
-		AI_Output (self, other,"B_Gravo_HelpAttitude_HOSTILE_04_01"); //Убедить людей встать на твою защиту в таком деле - это будет нелегко. И недешево. Готовь как минимум пять сотен.
+		AI_Output (self, other,"B_Gravo_HelpAttitude_HOSTILE_04_00"); //Р С‚С‹ РЅР°Р·С‹РІР°РµС€СЊ СЌС‚Рѕ 'РїСЂРѕР±Р»РµРјРѕР№'?! РЎР»Р°Р±Рѕ СЃРєР°Р·Р°РЅРѕ, РїСЂРёСЏС‚РµР»СЊ! Р—Р° СЌС‚Рѕ РѕРЅ РїРѕСЂСѓР±РёС‚ С‚РµР±СЏ РЅР° РєСѓСЃРєРё.
+		AI_Output (self, other,"B_Gravo_HelpAttitude_HOSTILE_04_01"); //РЈР±РµРґРёС‚СЊ Р»СЋРґРµР№ РІСЃС‚Р°С‚СЊ РЅР° С‚РІРѕСЋ Р·Р°С‰РёС‚Сѓ РІ С‚Р°РєРѕРј РґРµР»Рµ - СЌС‚Рѕ Р±СѓРґРµС‚ РЅРµР»РµРіРєРѕ. Р РЅРµРґРµС€РµРІРѕ. Р“РѕС‚РѕРІСЊ РєР°Рє РјРёРЅРёРјСѓРј РїСЏС‚СЊ СЃРѕС‚РµРЅ.
 		if (Npc_HasItems(other,itminugget)>=500)
 		{
-			AI_Output (self, other,"B_Gravo_HelpAttitude_HOSTILE_04_02"); //Посмотрим, что у тебя есть... Парень, да ты богат! Я забираю 500 кусков и улаживаю твою проблему.
-			AI_Output (self, other,"B_Gravo_HelpAttitude_HOSTILE_04_03"); //И запомни: никто не должен об этом знать. 
+			AI_Output (self, other,"B_Gravo_HelpAttitude_HOSTILE_04_02"); //РџРѕСЃРјРѕС‚СЂРёРј, С‡С‚Рѕ Сѓ С‚РµР±СЏ РµСЃС‚СЊ... РџР°СЂРµРЅСЊ, РґР° С‚С‹ Р±РѕРіР°С‚! РЇ Р·Р°Р±РёСЂР°СЋ 500 РєСѓСЃРєРѕРІ Рё СѓР»Р°Р¶РёРІР°СЋ С‚РІРѕСЋ РїСЂРѕР±Р»РµРјСѓ.
+			AI_Output (self, other,"B_Gravo_HelpAttitude_HOSTILE_04_03"); //Р Р·Р°РїРѕРјРЅРё: РЅРёРєС‚Рѕ РЅРµ РґРѕР»Р¶РµРЅ РѕР± СЌС‚РѕРј Р·РЅР°С‚СЊ. 
 			B_GiveInvItems (hero, self, itminugget, 500);
 			Npc_SetPermAttitude(prob,ATT_NEUTRAL);
 		}
 		else
 		{
-			AI_Output (other, self,"B_Gravo_HelpAttitude_NoOre_15_01"); //У меня столько нет...
-			AI_Output (self, other,"B_Gravo_HelpAttitude_NoOre_04_02"); //Мне очень жаль, парень, но тогда я ничего не смогу для тебя сделать.
+			AI_Output (other, self,"B_Gravo_HelpAttitude_NoOre_15_01"); //РЈ РјРµРЅСЏ СЃС‚РѕР»СЊРєРѕ РЅРµС‚...
+			AI_Output (self, other,"B_Gravo_HelpAttitude_NoOre_04_02"); //РњРЅРµ РѕС‡РµРЅСЊ Р¶Р°Р»СЊ, РїР°СЂРµРЅСЊ, РЅРѕ С‚РѕРіРґР° СЏ РЅРёС‡РµРіРѕ РЅРµ СЃРјРѕРіСѓ РґР»СЏ С‚РµР±СЏ СЃРґРµР»Р°С‚СЊ.
 		};
 	}
 	else
 	{
-		AI_Output (self, other,"B_Gravo_HelpAttitude_NoProb_04_00"); //Насколько мне известно, у вас и так все в порядке. Не волнуйся попусту, парень.
+		AI_Output (self, other,"B_Gravo_HelpAttitude_NoProb_04_00"); //РќР°СЃРєРѕР»СЊРєРѕ РјРЅРµ РёР·РІРµСЃС‚РЅРѕ, Сѓ РІР°СЃ Рё С‚Р°Рє РІСЃРµ РІ РїРѕСЂСЏРґРєРµ. РќРµ РІРѕР»РЅСѓР№СЃСЏ РїРѕРїСѓСЃС‚Сѓ, РїР°СЂРµРЅСЊ.
 	};
 };
 
@@ -141,7 +141,7 @@ instance DIA_Gravo_HelpAngryNow(C_INFO)
 	condition		= DIA_Gravo_HelpAngryNow_Condition;
 	information		= DIA_Gravo_HelpAngryNow_Info;
 	permanent		= 1;
-	description 	= "Кажется, у меня возникла проблема. Ты можешь мне помочь?";
+	description 	= "РљР°Р¶РµС‚СЃСЏ, Сѓ РјРµРЅСЏ РІРѕР·РЅРёРєР»Р° РїСЂРѕР±Р»РµРјР°. РўС‹ РјРѕР¶РµС€СЊ РјРЅРµ РїРѕРјРѕС‡СЊ?";
 };                       
 
 FUNC INT DIA_Gravo_HelpAngryNow_Condition()
@@ -154,14 +154,14 @@ FUNC INT DIA_Gravo_HelpAngryNow_Condition()
 
 func VOID DIA_Gravo_HelpAngryNow_Info()
 {
-	AI_Output (other, self,"DIA_Gravo_HelpAngryNow_15_00"); //Кажется, у меня возникла проблема. Ты можешь мне помочь?
-	AI_Output (self, other,"DIA_Gravo_HelpAngryNow_04_01"); //Думаю, что да. Но моя помощь стоит недешево - от 100 до 500 кусков руды.
+	AI_Output (other, self,"DIA_Gravo_HelpAngryNow_15_00"); //РљР°Р¶РµС‚СЃСЏ, Сѓ РјРµРЅСЏ РІРѕР·РЅРёРєР»Р° РїСЂРѕР±Р»РµРјР°. РўС‹ РјРѕР¶РµС€СЊ РјРЅРµ РїРѕРјРѕС‡СЊ?
+	AI_Output (self, other,"DIA_Gravo_HelpAngryNow_04_01"); //Р”СѓРјР°СЋ, С‡С‚Рѕ РґР°. РќРѕ РјРѕСЏ РїРѕРјРѕС‰СЊ СЃС‚РѕРёС‚ РЅРµРґРµС€РµРІРѕ - РѕС‚ 100 РґРѕ 500 РєСѓСЃРєРѕРІ СЂСѓРґС‹.
 	
 	Info_ClearChoices(DIA_Gravo_HelpAngryNow );
 	Info_AddChoice	 (DIA_Gravo_HelpAngryNow, DIALOG_BACK			,DIA_Gravo_HelpAngryNow_BACK);
-	Info_AddChoice	 (DIA_Gravo_HelpAngryNow,"Я поссорился с Диего.",DIA_Gravo_HelpAngryNow_Diego);
-	Info_AddChoice	 (DIA_Gravo_HelpAngryNow,"Я поссорился с Торусом.",DIA_Gravo_HelpAngryNow_Thorus);
-	Info_AddChoice	 (DIA_Gravo_HelpAngryNow,"Я поссорился с Гомезом.",DIA_Gravo_HelpAngryNow_Gomez);
+	Info_AddChoice	 (DIA_Gravo_HelpAngryNow,"РЇ РїРѕСЃСЃРѕСЂРёР»СЃСЏ СЃ Р”РёРµРіРѕ.",DIA_Gravo_HelpAngryNow_Diego);
+	Info_AddChoice	 (DIA_Gravo_HelpAngryNow,"РЇ РїРѕСЃСЃРѕСЂРёР»СЃСЏ СЃ РўРѕСЂСѓСЃРѕРј.",DIA_Gravo_HelpAngryNow_Thorus);
+	Info_AddChoice	 (DIA_Gravo_HelpAngryNow,"РЇ РїРѕСЃСЃРѕСЂРёР»СЃСЏ СЃ Р“РѕРјРµР·РѕРј.",DIA_Gravo_HelpAngryNow_Gomez);
 };
 
 func void DIA_Gravo_HelpAngryNow_BACK()
@@ -171,7 +171,7 @@ func void DIA_Gravo_HelpAngryNow_BACK()
 
 func void DIA_Gravo_HelpAngryNow_Diego()
 {
-	AI_Output (other, self,"DIA_Gravo_HelpAngryNow_Diego_15_00"); //Я поссорился с Диего.
+	AI_Output (other, self,"DIA_Gravo_HelpAngryNow_Diego_15_00"); //РЇ РїРѕСЃСЃРѕСЂРёР»СЃСЏ СЃ Р”РёРµРіРѕ.
 	var C_NPC diego; diego = Hlp_GetNpc (PC_Thief);
 	B_Gravo_HelpAttitude(diego);
 	
@@ -180,7 +180,7 @@ func void DIA_Gravo_HelpAngryNow_Diego()
 
 func void DIA_Gravo_HelpAngryNow_Thorus()
 {
-	AI_Output (other, self,"DIA_Gravo_HelpAngryNow_Thorus_15_00"); //Я поссорился с Торусом.
+	AI_Output (other, self,"DIA_Gravo_HelpAngryNow_Thorus_15_00"); //РЇ РїРѕСЃСЃРѕСЂРёР»СЃСЏ СЃ РўРѕСЂСѓСЃРѕРј.
 	var C_NPC thorus; thorus = Hlp_GetNpc (Grd_200_Thorus);
 	B_Gravo_HelpAttitude(thorus);
 	
@@ -189,7 +189,7 @@ func void DIA_Gravo_HelpAngryNow_Thorus()
 
 func void DIA_Gravo_HelpAngryNow_Gomez()
 {
-	AI_Output (other, self,"DIA_Gravo_HelpAngryNow_Gomez_15_00"); //Я поссорился с Гомезом.
+	AI_Output (other, self,"DIA_Gravo_HelpAngryNow_Gomez_15_00"); //РЇ РїРѕСЃСЃРѕСЂРёР»СЃСЏ СЃ Р“РѕРјРµР·РѕРј.
 	var C_NPC gomez; gomez = Hlp_GetNpc (Ebr_100_Gomez);
 	B_Gravo_HelpAttitude(gomez);
 	
@@ -207,7 +207,7 @@ instance DIA_Gravo_Influence(C_INFO)
 	condition		= DIA_Gravo_Influence_Condition;
 	information		= DIA_Gravo_Influence_Info;
 	permanent		= 1;
-	description 	= "Ты можешь сказать мне, кто из Призраков здесь самый главный?";
+	description 	= "РўС‹ РјРѕР¶РµС€СЊ СЃРєР°Р·Р°С‚СЊ РјРЅРµ, РєС‚Рѕ РёР· РџСЂРёР·СЂР°РєРѕРІ Р·РґРµСЃСЊ СЃР°РјС‹Р№ РіР»Р°РІРЅС‹Р№?";
 };                       
 
 FUNC INT DIA_Gravo_Influence_Condition()
@@ -220,14 +220,14 @@ FUNC INT DIA_Gravo_Influence_Condition()
 
 func VOID DIA_Gravo_Influence_Info()
 {
-	AI_Output (other, self,"DIA_Gravo_Influence_15_00"); //Ты можешь сказать мне, кто из Призраков здесь самый главный?
-	AI_Output (self, other,"DIA_Gravo_Influence_04_01"); //Хочешь произвести впечатление на нужных людей, а?
-	AI_Output (self, other,"DIA_Gravo_Influence_04_02"); //Главный среди Призраков - Диего. Он доверяет Фингерсу, Уистлеру и Слаю.
-	AI_Output (self, other,"DIA_Gravo_Influence_04_03"); //Декстер и Фиск продают свой товар на рыночной площади. Среди их покупателей попадаются даже стражники, так что их тоже можно назвать влиятельными людьми.
-	AI_Output (self, other,"DIA_Gravo_Influence_04_04"); //Еще есть Скатти. Он присматривает за ареной и назначает бои. Здесь многие должны ему, так что он тоже важная персона.
+	AI_Output (other, self,"DIA_Gravo_Influence_15_00"); //РўС‹ РјРѕР¶РµС€СЊ СЃРєР°Р·Р°С‚СЊ РјРЅРµ, РєС‚Рѕ РёР· РџСЂРёР·СЂР°РєРѕРІ Р·РґРµСЃСЊ СЃР°РјС‹Р№ РіР»Р°РІРЅС‹Р№?
+	AI_Output (self, other,"DIA_Gravo_Influence_04_01"); //РҐРѕС‡РµС€СЊ РїСЂРѕРёР·РІРµСЃС‚Рё РІРїРµС‡Р°С‚Р»РµРЅРёРµ РЅР° РЅСѓР¶РЅС‹С… Р»СЋРґРµР№, Р°?
+	AI_Output (self, other,"DIA_Gravo_Influence_04_02"); //Р“Р»Р°РІРЅС‹Р№ СЃСЂРµРґРё РџСЂРёР·СЂР°РєРѕРІ - Р”РёРµРіРѕ. РћРЅ РґРѕРІРµСЂСЏРµС‚ Р¤РёРЅРіРµСЂСЃСѓ, РЈРёСЃС‚Р»РµСЂСѓ Рё РЎР»Р°СЋ.
+	AI_Output (self, other,"DIA_Gravo_Influence_04_03"); //Р”РµРєСЃС‚РµСЂ Рё Р¤РёСЃРє РїСЂРѕРґР°СЋС‚ СЃРІРѕР№ С‚РѕРІР°СЂ РЅР° СЂС‹РЅРѕС‡РЅРѕР№ РїР»РѕС‰Р°РґРё. РЎСЂРµРґРё РёС… РїРѕРєСѓРїР°С‚РµР»РµР№ РїРѕРїР°РґР°СЋС‚СЃСЏ РґР°Р¶Рµ СЃС‚СЂР°Р¶РЅРёРєРё, С‚Р°Рє С‡С‚Рѕ РёС… С‚РѕР¶Рµ РјРѕР¶РЅРѕ РЅР°Р·РІР°С‚СЊ РІР»РёСЏС‚РµР»СЊРЅС‹РјРё Р»СЋРґСЊРјРё.
+	AI_Output (self, other,"DIA_Gravo_Influence_04_04"); //Р•С‰Рµ РµСЃС‚СЊ РЎРєР°С‚С‚Рё. РћРЅ РїСЂРёСЃРјР°С‚СЂРёРІР°РµС‚ Р·Р° Р°СЂРµРЅРѕР№ Рё РЅР°Р·РЅР°С‡Р°РµС‚ Р±РѕРё. Р—РґРµСЃСЊ РјРЅРѕРіРёРµ РґРѕР»Р¶РЅС‹ РµРјСѓ, С‚Р°Рє С‡С‚Рѕ РѕРЅ С‚РѕР¶Рµ РІР°Р¶РЅР°СЏ РїРµСЂСЃРѕРЅР°.
 	
 	Log_CreateTopic (GE_TraderOC, LOG_NOTE);
-	B_LogEntry (GE_TraderOC,"Декстер и Фиск торгуют различными товарами на рыночной площади.");
+	B_LogEntry (GE_TraderOC,"Р”РµРєСЃС‚РµСЂ Рё Р¤РёСЃРє С‚РѕСЂРіСѓСЋС‚ СЂР°Р·Р»РёС‡РЅС‹РјРё С‚РѕРІР°СЂР°РјРё РЅР° СЂС‹РЅРѕС‡РЅРѕР№ РїР»РѕС‰Р°РґРё.");
 
 	
 };

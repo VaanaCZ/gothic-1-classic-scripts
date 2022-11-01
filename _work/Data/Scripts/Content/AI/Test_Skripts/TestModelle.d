@@ -483,8 +483,8 @@ FUNC VOID Rtn_start_3009 ()
 	TA_SitAround	(04,00,06,00,"WP_REPAIR");//###Was macht sie da? Da steht Scar
 	TA_StandAround	(06,00,08,00,"WP_IDOL");
 	TA_WashSelf		(08,00,09,00,"WP_REPAIR");	//Bei Gomez
-	TA_Babe_Sweep	(09,00,20,00,"WP_LAB");		//Luftzufächeln?
-	TA_SitAround	(20,00,23,00,"WP_IDOL");		//Später Tanz
+	TA_Babe_Sweep	(09,00,20,00,"WP_LAB");		//LuftzufÐ´cheln?
+	TA_SitAround	(20,00,23,00,"WP_IDOL");		//SpÐ´ter Tanz
 };
 
 instance JTestmodell (Npc_TestDefault)
@@ -894,9 +894,9 @@ FUNC INT GRD1_Testmodell_Trade_01_Info_01_Condition()
 
 FUNC VOID GRD1_Testmodell_Trade_01_Info_01_Info()
 {
-	B_say(self,other,"BAU_900_Ricelord01_Trade_01_Info_01_Satz_01"); //Hey Freundchen hör mal:
+	B_say(self,other,"BAU_900_Ricelord01_Trade_01_Info_01_Satz_01"); //Hey Freundchen hÑ†r mal:
 	Print ("Gardisten Info");
-	B_say(self,other,"BAU_900_Ricelord01_Trade_01_Info_01_Satz_02"); //Ich geb' Dir 10 Portionen Reis, wenn Du mir dafür 'ne ordentliche Hammelkeule gibst..
+	B_say(self,other,"BAU_900_Ricelord01_Trade_01_Info_01_Satz_02"); //Ich geb' Dir 10 Portionen Reis, wenn Du mir dafÑŒr 'ne ordentliche Hammelkeule gibst..
 	B_say(self,other,"BAU_900_Ricelord01_Trade_01_Info_01_Satz_03"); //Oder hast Du vielleicht 'n Bier dabei? Oder Wein?
 	
 };

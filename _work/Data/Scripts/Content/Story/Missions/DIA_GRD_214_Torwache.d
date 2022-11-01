@@ -33,7 +33,7 @@ INSTANCE DIA_Grd_214_Torwache_job (C_INFO)
 	condition		= DIA_Grd_214_Torwache_job_Condition;
 	information		= DIA_Grd_214_Torwache_job_Info;
 	permanent		= 1;
-	description		= "Чем ты занимаешься?"; 
+	description		= "Р§РµРј С‚С‹ Р·Р°РЅРёРјР°РµС€СЊСЃСЏ?"; 
 };
 
 FUNC INT DIA_Grd_214_Torwache_job_Condition()
@@ -43,9 +43,9 @@ FUNC INT DIA_Grd_214_Torwache_job_Condition()
 
 FUNC VOID DIA_Grd_214_Torwache_job_Info()
 {
-	AI_Output (other, self,"DIA_Grd_214_Torwache_job_15_00"); //Чем ты занимаешься весь день?
-	AI_Output (self, other,"DIA_Grd_214_Torwache_job_07_01"); //Слежу за тем, чтобы никто не заходил внутрь без приказа Гомеза.
-	AI_Output (self, other,"DIA_Grd_214_Torwache_job_07_02"); //Так что постарайся без глупостей, а то никуда не пойдешь.
+	AI_Output (other, self,"DIA_Grd_214_Torwache_job_15_00"); //Р§РµРј С‚С‹ Р·Р°РЅРёРјР°РµС€СЊСЃСЏ РІРµСЃСЊ РґРµРЅСЊ?
+	AI_Output (self, other,"DIA_Grd_214_Torwache_job_07_01"); //РЎР»РµР¶Сѓ Р·Р° С‚РµРј, С‡С‚РѕР±С‹ РЅРёРєС‚Рѕ РЅРµ Р·Р°С…РѕРґРёР» РІРЅСѓС‚СЂСЊ Р±РµР· РїСЂРёРєР°Р·Р° Р“РѕРјРµР·Р°.
+	AI_Output (self, other,"DIA_Grd_214_Torwache_job_07_02"); //РўР°Рє С‡С‚Рѕ РїРѕСЃС‚Р°СЂР°Р№СЃСЏ Р±РµР· РіР»СѓРїРѕСЃС‚РµР№, Р° С‚Рѕ РЅРёРєСѓРґР° РЅРµ РїРѕР№РґРµС€СЊ.
 };
 
 //-----------------------------------------------------------------
@@ -72,9 +72,9 @@ FUNC int  Grd_214_Torwache_SEETHORUS_Condition()
 };
 func void  Grd_214_Torwache_SEETHORUS_Info()
 {
-	AI_Output (self, other,"Grd_214_Torwache_SEETHORUS_Info_07_01"); //Эй, хорошо что ты здесь. Тебя искал Торус!
-	AI_Output (other, self,"Grd_214_Torwache_SEETHORUS_Info_15_02"); //Что ему нужно?
-	AI_Output (self, other,"Grd_214_Torwache_SEETHORUS_Info_07_03"); //Уверен, он сам тебе скажет.
+	AI_Output (self, other,"Grd_214_Torwache_SEETHORUS_Info_07_01"); //Р­Р№, С…РѕСЂРѕС€Рѕ С‡С‚Рѕ С‚С‹ Р·РґРµСЃСЊ. РўРµР±СЏ РёСЃРєР°Р» РўРѕСЂСѓСЃ!
+	AI_Output (other, self,"Grd_214_Torwache_SEETHORUS_Info_15_02"); //Р§С‚Рѕ РµРјСѓ РЅСѓР¶РЅРѕ?
+	AI_Output (self, other,"Grd_214_Torwache_SEETHORUS_Info_07_03"); //РЈРІРµСЂРµРЅ, РѕРЅ СЃР°Рј С‚РµР±Рµ СЃРєР°Р¶РµС‚.
 };
 
 //-----------------------------------------------------------------
@@ -100,9 +100,9 @@ FUNC int  Grd_214_Torwache_NODUSTY_Condition()
 };
 func void  Grd_214_Torwache_NODUSTY_Info()
 {
-	AI_Output			(self, other,"Grd_214_Torwache_NODUSTY_Info_07_01"); //ЭЙ! Ты же не собираешься утащить его отсюда, верно?!
-	AI_Output			(other, self,"Grd_214_Torwache_NODUSTY_Info_15_02"); //Мы просто хотели...
-	AI_Output			(self, other,"Grd_214_Torwache_NODUSTY_Info_07_03"); //Скоро ты уже ничего не захочешь!
+	AI_Output			(self, other,"Grd_214_Torwache_NODUSTY_Info_07_01"); //Р­Р™! РўС‹ Р¶Рµ РЅРµ СЃРѕР±РёСЂР°РµС€СЊСЃСЏ СѓС‚Р°С‰РёС‚СЊ РµРіРѕ РѕС‚СЃСЋРґР°, РІРµСЂРЅРѕ?!
+	AI_Output			(other, self,"Grd_214_Torwache_NODUSTY_Info_15_02"); //РњС‹ РїСЂРѕСЃС‚Рѕ С…РѕС‚РµР»Рё...
+	AI_Output			(self, other,"Grd_214_Torwache_NODUSTY_Info_07_03"); //РЎРєРѕСЂРѕ С‚С‹ СѓР¶Рµ РЅРёС‡РµРіРѕ РЅРµ Р·Р°С…РѕС‡РµС€СЊ!
 
 	AI_StopProcessInfos	(self);
 	Npc_SetTarget		(self,other);
@@ -111,6 +111,6 @@ func void  Grd_214_Torwache_NODUSTY_Info()
 	B_ExchangeRoutine	(Vlk_524_Dusty,"start");
 	var C_NPC dusty;	dusty = Hlp_GetNpc(Vlk_524_Dusty);
 	dusty.aivar[AIV_PARTYMEMBER] = FALSE;
-	dusty.flags = 0;	// Immortal lцschen
+	dusty.flags = 0;	// Immortal lС†schen
 };
 

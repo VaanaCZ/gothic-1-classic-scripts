@@ -2,7 +2,7 @@
 //##
 //##							KAPITEL 6
 //##							=========
-//##	Plaziert die Charaktere für den Showdown
+//##	Plaziert die Charaktere fÑŒr den Showdown
 //##
 //#####################################################################
 func void B_Story_PrepareShowdown()

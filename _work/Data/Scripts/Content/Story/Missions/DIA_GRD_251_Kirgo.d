@@ -33,7 +33,7 @@ instance Info_Kirgo_What(C_INFO)
 	condition		= Info_Kirgo_What_Condition;
 	information		= Info_Kirgo_What_Info;
 	permanent		= 0;
-	description 	= "Привет! Я здесь новенький.";
+	description 	= "РџСЂРёРІРµС‚! РЇ Р·РґРµСЃСЊ РЅРѕРІРµРЅСЊРєРёР№.";
 };                       
 
 FUNC INT Info_Kirgo_What_Condition()
@@ -45,9 +45,9 @@ FUNC INT Info_Kirgo_What_Condition()
 };
 func VOID Info_Kirgo_What_Info()
 {
-	AI_Output (other, self,"Info_Kirgo_What_15_00"); //Привет! Я здесь новенький. 
-	AI_Output (self, other,"Info_Kirgo_What_05_01"); //Мог бы и не говорить! Расскажи мне, что делается во внешнем мире. Уже больше месяца нет никаких новостей оттуда.
-	AI_Output (self, other,"Info_Kirgo_What_05_02"); //Меня зовут Кирго. Я дерусь на арене.
+	AI_Output (other, self,"Info_Kirgo_What_15_00"); //РџСЂРёРІРµС‚! РЇ Р·РґРµСЃСЊ РЅРѕРІРµРЅСЊРєРёР№. 
+	AI_Output (self, other,"Info_Kirgo_What_05_01"); //РњРѕРі Р±С‹ Рё РЅРµ РіРѕРІРѕСЂРёС‚СЊ! Р Р°СЃСЃРєР°Р¶Рё РјРЅРµ, С‡С‚Рѕ РґРµР»Р°РµС‚СЃСЏ РІРѕ РІРЅРµС€РЅРµРј РјРёСЂРµ. РЈР¶Рµ Р±РѕР»СЊС€Рµ РјРµСЃСЏС†Р° РЅРµС‚ РЅРёРєР°РєРёС… РЅРѕРІРѕСЃС‚РµР№ РѕС‚С‚СѓРґР°.
+	AI_Output (self, other,"Info_Kirgo_What_05_02"); //РњРµРЅСЏ Р·РѕРІСѓС‚ РљРёСЂРіРѕ. РЇ РґРµСЂСѓСЃСЊ РЅР° Р°СЂРµРЅРµ.
 };
 
 // **************************************************
@@ -61,7 +61,7 @@ instance Info_Kirgo_Good (C_INFO)
 	condition		= Info_Kirgo_Good_Condition;
 	information		= Info_Kirgo_Good_Info;
 	permanent		= 0;
-	description 	= "И насколько ты хорош? Я имею ввиду - в бою.";
+	description 	= "Р РЅР°СЃРєРѕР»СЊРєРѕ С‚С‹ С…РѕСЂРѕС€? РЇ РёРјРµСЋ РІРІРёРґСѓ - РІ Р±РѕСЋ.";
 };                       
 
 FUNC INT Info_Kirgo_Good_Condition()
@@ -74,8 +74,8 @@ FUNC INT Info_Kirgo_Good_Condition()
 
 func VOID Info_Kirgo_Good_Info()
 {
-	AI_Output (other, self,"Info_Kirgo_Good_15_00"); //И как, успешно?
-	AI_Output (self, other,"Info_Kirgo_Good_05_01"); //Дерусь-то? Я уже давно этим не занимался, но однажды я победил!
+	AI_Output (other, self,"Info_Kirgo_Good_15_00"); //Р РєР°Рє, СѓСЃРїРµС€РЅРѕ?
+	AI_Output (self, other,"Info_Kirgo_Good_05_01"); //Р”РµСЂСѓСЃСЊ-С‚Рѕ? РЇ СѓР¶Рµ РґР°РІРЅРѕ СЌС‚РёРј РЅРµ Р·Р°РЅРёРјР°Р»СЃСЏ, РЅРѕ РѕРґРЅР°Р¶РґС‹ СЏ РїРѕР±РµРґРёР»!
 };
 
 // **************************************
@@ -89,12 +89,12 @@ instance Info_Kirgo_Charge(C_INFO)
 	condition		= Info_Kirgo_Charge_Condition;
 	information		= Info_Kirgo_Charge_Info;
 	permanent		= 0;
-	description 	= "Я хочу вызвать тебя на бой!";
+	description 	= "РЇ С…РѕС‡Сѓ РІС‹Р·РІР°С‚СЊ С‚РµР±СЏ РЅР° Р±РѕР№!";
 };                       
 
 FUNC INT Info_Kirgo_Charge_Condition()
 {
-	if (Npc_KnowsInfo (hero,DIA_Scatty_JoinOC) && Npc_KnowsInfo (hero,Info_Kirgo_What) && (Kapitel <= 1))	// Kapitelfix   ***Bjцrn***
+	if (Npc_KnowsInfo (hero,DIA_Scatty_JoinOC) && Npc_KnowsInfo (hero,Info_Kirgo_What) && (Kapitel <= 1))	// Kapitelfix   ***BjС†rn***
 	{
 		return 1;
 	};
@@ -102,32 +102,32 @@ FUNC INT Info_Kirgo_Charge_Condition()
 
 func VOID Info_Kirgo_Charge_Info()
 {
-	AI_Output (other, self,"Info_Kirgo_Charge_15_00"); //Я хочу вызвать тебя на бой!
-	AI_Output (self, other,"Info_Kirgo_Charge_05_01"); //Что? Но я не хочу драться. Может, просто выпьем по пиву и поговорим о внешнем мире?
+	AI_Output (other, self,"Info_Kirgo_Charge_15_00"); //РЇ С…РѕС‡Сѓ РІС‹Р·РІР°С‚СЊ С‚РµР±СЏ РЅР° Р±РѕР№!
+	AI_Output (self, other,"Info_Kirgo_Charge_05_01"); //Р§С‚Рѕ? РќРѕ СЏ РЅРµ С…РѕС‡Сѓ РґСЂР°С‚СЊСЃСЏ. РњРѕР¶РµС‚, РїСЂРѕСЃС‚Рѕ РІС‹РїСЊРµРј РїРѕ РїРёРІСѓ Рё РїРѕРіРѕРІРѕСЂРёРј Рѕ РІРЅРµС€РЅРµРј РјРёСЂРµ?
 	Info_ClearChoices	(Info_Kirgo_Charge );
-	Info_AddChoice		(Info_Kirgo_Charge,"Нет! Я хочу драться. Сейчас!",Info_Kirgo_Charge_NOW);
-	Info_AddChoice		(Info_Kirgo_Charge,"Ладно, давай твое пиво!",Info_Kirgo_Charge_Beer);
+	Info_AddChoice		(Info_Kirgo_Charge,"РќРµС‚! РЇ С…РѕС‡Сѓ РґСЂР°С‚СЊСЃСЏ. РЎРµР№С‡Р°СЃ!",Info_Kirgo_Charge_NOW);
+	Info_AddChoice		(Info_Kirgo_Charge,"Р›Р°РґРЅРѕ, РґР°РІР°Р№ С‚РІРѕРµ РїРёРІРѕ!",Info_Kirgo_Charge_Beer);
 };
 
 func void Info_Kirgo_Charge_NOW()
 {
-	AI_Output (other, self,"Info_Kirgo_Charge_NOW_15_00"); //Нет! Я хочу драться. Сейчас!
-	AI_Output (self, other,"Info_Kirgo_Charge_NOW_05_01"); //Раз так... я готов.
+	AI_Output (other, self,"Info_Kirgo_Charge_NOW_15_00"); //РќРµС‚! РЇ С…РѕС‡Сѓ РґСЂР°С‚СЊСЃСЏ. РЎРµР№С‡Р°СЃ!
+	AI_Output (self, other,"Info_Kirgo_Charge_NOW_05_01"); //Р Р°Р· С‚Р°Рє... СЏ РіРѕС‚РѕРІ.
 	Info_ClearChoices	(Info_Kirgo_Charge );
 };
 
 func void Info_Kirgo_Charge_Beer()
 {
-	AI_Output (other, self,"Info_Kirgo_Charge_Beer_15_00"); //Ладно, давай твое пиво!
-	AI_Output (self, other,"Info_Kirgo_Charge_Beer_05_01"); //Держи!
-	AI_Output (other, self,"Info_Kirgo_Charge_Beer_15_02"); //Спасибо! Боюсь, я не много смогу рассказать о внешнем мире - меня два месяца держали в грязной яме, прежде чем бросить сюда.
-	AI_Output (self, other,"Info_Kirgo_Charge_Beer_05_03"); //Жалко... Ну ладно, ничего... Для парня, которого два месяца продержали в яме, ты выглядишь очень даже ничего.
-	AI_Output (other, self,"Info_Kirgo_Charge_Beer_15_04"); //Хотелось бы и дальше таким оставаться.
-	AI_Output (self, other,"Info_Kirgo_Charge_Beer_05_05"); //Почему ты хочешь драться с одним из нас?
-	AI_Output (other, self,"Info_Kirgo_Charge_Beer_15_06"); //Я хочу, чтобы обо мне узнали в Лагере!
-	AI_Output (self, other,"Info_Kirgo_Charge_Beer_05_07"); //От Скатти что ли? Х-м, он один из самых влиятельных людей во Внешнем Кольце... Победив меня, ты мог бы произвести на него впечатление...
-	AI_Output (self, other,"Info_Kirgo_Charge_Beer_05_08"); //Но если ты на самом деле хочешь удивить его, тебе стоит побить Харима. Но боюсь, тебе он не по зубам!
-	AI_Output (self, other,"Info_Kirgo_Charge_Beer_05_09"); //Если все еще хочешь драться, дай мне знать. Но знаешь, мне совсем не хочется вышибать из тебя дух.
+	AI_Output (other, self,"Info_Kirgo_Charge_Beer_15_00"); //Р›Р°РґРЅРѕ, РґР°РІР°Р№ С‚РІРѕРµ РїРёРІРѕ!
+	AI_Output (self, other,"Info_Kirgo_Charge_Beer_05_01"); //Р”РµСЂР¶Рё!
+	AI_Output (other, self,"Info_Kirgo_Charge_Beer_15_02"); //РЎРїР°СЃРёР±Рѕ! Р‘РѕСЋСЃСЊ, СЏ РЅРµ РјРЅРѕРіРѕ СЃРјРѕРіСѓ СЂР°СЃСЃРєР°Р·Р°С‚СЊ Рѕ РІРЅРµС€РЅРµРј РјРёСЂРµ - РјРµРЅСЏ РґРІР° РјРµСЃСЏС†Р° РґРµСЂР¶Р°Р»Рё РІ РіСЂСЏР·РЅРѕР№ СЏРјРµ, РїСЂРµР¶РґРµ С‡РµРј Р±СЂРѕСЃРёС‚СЊ СЃСЋРґР°.
+	AI_Output (self, other,"Info_Kirgo_Charge_Beer_05_03"); //Р–Р°Р»РєРѕ... РќСѓ Р»Р°РґРЅРѕ, РЅРёС‡РµРіРѕ... Р”Р»СЏ РїР°СЂРЅСЏ, РєРѕС‚РѕСЂРѕРіРѕ РґРІР° РјРµСЃСЏС†Р° РїСЂРѕРґРµСЂР¶Р°Р»Рё РІ СЏРјРµ, С‚С‹ РІС‹РіР»СЏРґРёС€СЊ РѕС‡РµРЅСЊ РґР°Р¶Рµ РЅРёС‡РµРіРѕ.
+	AI_Output (other, self,"Info_Kirgo_Charge_Beer_15_04"); //РҐРѕС‚РµР»РѕСЃСЊ Р±С‹ Рё РґР°Р»СЊС€Рµ С‚Р°РєРёРј РѕСЃС‚Р°РІР°С‚СЊСЃСЏ.
+	AI_Output (self, other,"Info_Kirgo_Charge_Beer_05_05"); //РџРѕС‡РµРјСѓ С‚С‹ С…РѕС‡РµС€СЊ РґСЂР°С‚СЊСЃСЏ СЃ РѕРґРЅРёРј РёР· РЅР°СЃ?
+	AI_Output (other, self,"Info_Kirgo_Charge_Beer_15_06"); //РЇ С…РѕС‡Сѓ, С‡С‚РѕР±С‹ РѕР±Рѕ РјРЅРµ СѓР·РЅР°Р»Рё РІ Р›Р°РіРµСЂРµ!
+	AI_Output (self, other,"Info_Kirgo_Charge_Beer_05_07"); //РћС‚ РЎРєР°С‚С‚Рё С‡С‚Рѕ Р»Рё? РҐ-Рј, РѕРЅ РѕРґРёРЅ РёР· СЃР°РјС‹С… РІР»РёСЏС‚РµР»СЊРЅС‹С… Р»СЋРґРµР№ РІРѕ Р’РЅРµС€РЅРµРј РљРѕР»СЊС†Рµ... РџРѕР±РµРґРёРІ РјРµРЅСЏ, С‚С‹ РјРѕРі Р±С‹ РїСЂРѕРёР·РІРµСЃС‚Рё РЅР° РЅРµРіРѕ РІРїРµС‡Р°С‚Р»РµРЅРёРµ...
+	AI_Output (self, other,"Info_Kirgo_Charge_Beer_05_08"); //РќРѕ РµСЃР»Рё С‚С‹ РЅР° СЃР°РјРѕРј РґРµР»Рµ С…РѕС‡РµС€СЊ СѓРґРёРІРёС‚СЊ РµРіРѕ, С‚РµР±Рµ СЃС‚РѕРёС‚ РїРѕР±РёС‚СЊ РҐР°СЂРёРјР°. РќРѕ Р±РѕСЋСЃСЊ, С‚РµР±Рµ РѕРЅ РЅРµ РїРѕ Р·СѓР±Р°Рј!
+	AI_Output (self, other,"Info_Kirgo_Charge_Beer_05_09"); //Р•СЃР»Рё РІСЃРµ РµС‰Рµ С…РѕС‡РµС€СЊ РґСЂР°С‚СЊСЃСЏ, РґР°Р№ РјРЅРµ Р·РЅР°С‚СЊ. РќРѕ Р·РЅР°РµС€СЊ, РјРЅРµ СЃРѕРІСЃРµРј РЅРµ С…РѕС‡РµС‚СЃСЏ РІС‹С€РёР±Р°С‚СЊ РёР· С‚РµР±СЏ РґСѓС….
 	
 	CreateInvItem (other, ItFoBeer);
 	B_GiveInvItems (other, self, ItFoBeer, 1);
@@ -150,12 +150,12 @@ instance Info_Kirgo_ChargeREAL(C_INFO)
 	condition		= Info_Kirgo_ChargeREAL_Condition;
 	information		= Info_Kirgo_ChargeREAL_Info;
 	permanent		= 0;
-	description 	= "Мы будем драться - ты готов?";
+	description 	= "РњС‹ Р±СѓРґРµРј РґСЂР°С‚СЊСЃСЏ - С‚С‹ РіРѕС‚РѕРІ?";
 };                       
 
 FUNC INT Info_Kirgo_ChargeREAL_Condition()
 {
-	if (Npc_KnowsInfo (hero,Info_Kirgo_Charge) &&  (Kapitel <= 1))	//Kapitelfix	****Bjцrn****
+	if (Npc_KnowsInfo (hero,Info_Kirgo_Charge) &&  (Kapitel <= 1))	//Kapitelfix	****BjС†rn****
 	{
 		return 1;
 	};
@@ -163,8 +163,8 @@ FUNC INT Info_Kirgo_ChargeREAL_Condition()
 
 func VOID Info_Kirgo_ChargeREAL_Info()
 {
-	AI_Output (other, self,"Info_Kirgo_ChargeREAL_15_00"); //Мы будем драться - ты готов?
-	AI_Output (self, other,"Info_Kirgo_ChargeREAL_05_01"); //Иди за мной!
+	AI_Output (other, self,"Info_Kirgo_ChargeREAL_15_00"); //РњС‹ Р±СѓРґРµРј РґСЂР°С‚СЊСЃСЏ - С‚С‹ РіРѕС‚РѕРІ?
+	AI_Output (self, other,"Info_Kirgo_ChargeREAL_05_01"); //РРґРё Р·Р° РјРЅРѕР№!
 	
 	AI_StopProcessInfos	( self );
 	
@@ -197,9 +197,9 @@ FUNC INT Info_Kirgo_InArena_Condition()
 
 func VOID Info_Kirgo_InArena_Info()
 {
-	if (Kapitel <= 1)			//Fix fьr spдtere Kapitel ****Bjцrn****
+	if (Kapitel <= 1)			//Fix fСЊr spРґtere Kapitel ****BjС†rn****
 	{
-		AI_Output (self, other,"Info_Kirgo_InArena_05_00"); //Ладно, поехали. Пусть победит сильнейший!
+		AI_Output (self, other,"Info_Kirgo_InArena_05_00"); //Р›Р°РґРЅРѕ, РїРѕРµС…Р°Р»Рё. РџСѓСЃС‚СЊ РїРѕР±РµРґРёС‚ СЃРёР»СЊРЅРµР№С€РёР№!
 		
 		AI_StopProcessInfos	( self );
 			

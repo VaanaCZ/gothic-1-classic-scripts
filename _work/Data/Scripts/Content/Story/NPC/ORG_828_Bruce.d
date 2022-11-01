@@ -2,7 +2,7 @@ instance ORG_828_Bruce (Npc_Default)
 {
 	//-------- primary data --------
 	
-	name =							"Απώρ";
+	name =							"Π‘Ρ€ΡΡ";
 	Npctype =						NPCTYPE_AMBIENT;
 	guild =							GIL_ORG;      
 	level =							11;

@@ -23,17 +23,17 @@ FUNC INT Info_Erpresser_Condition()
 
 FUNC VOID Info_Erpresser_Info()
 {
-	AI_Output (self, other,"Info_Erpresser_Info_13_01"); //Вот что, парень, если хочешь пройти, тебе придется заплатить 10 кусков руды. Или начнутся сплошные неприятности, усек?
+	AI_Output (self, other,"Info_Erpresser_Info_13_01"); //Р’РѕС‚ С‡С‚Рѕ, РїР°СЂРµРЅСЊ, РµСЃР»Рё С…РѕС‡РµС€СЊ РїСЂРѕР№С‚Рё, С‚РµР±Рµ РїСЂРёРґРµС‚СЃСЏ Р·Р°РїР»Р°С‚РёС‚СЊ 10 РєСѓСЃРєРѕРІ СЂСѓРґС‹. РР»Рё РЅР°С‡РЅСѓС‚СЃСЏ СЃРїР»РѕС€РЅС‹Рµ РЅРµРїСЂРёСЏС‚РЅРѕСЃС‚Рё, СѓСЃРµРє?
 	
 	Info_ClearChoices( Info_Erpresser );
-	Info_AddChoice	 ( Info_Erpresser,"Ну, почему бы тебе не подойти сюда и не забрать свою руду?", Info_Erpresser_Choice_AufsMaul );
-	Info_AddChoice	 ( Info_Erpresser,"Три куска руды? Не так уж много. Вот...", Info_Erpresser_Choice_Zahlen );
+	Info_AddChoice	 ( Info_Erpresser,"РќСѓ, РїРѕС‡РµРјСѓ Р±С‹ С‚РµР±Рµ РЅРµ РїРѕРґРѕР№С‚Рё СЃСЋРґР° Рё РЅРµ Р·Р°Р±СЂР°С‚СЊ СЃРІРѕСЋ СЂСѓРґСѓ?", Info_Erpresser_Choice_AufsMaul );
+	Info_AddChoice	 ( Info_Erpresser,"РўСЂРё РєСѓСЃРєР° СЂСѓРґС‹? РќРµ С‚Р°Рє СѓР¶ РјРЅРѕРіРѕ. Р’РѕС‚...", Info_Erpresser_Choice_Zahlen );
 };
 
 FUNC VOID Info_Erpresser_Choice_AufsMaul()
 {
-	AI_Output (other, self,"Info_Erpresser_Choice_AufsMaul_15_01"); //Ну, почему бы тебе не подойти сюда и не забрать свою руду?
-	AI_Output (self, other,"Info_Erpresser_Choice_AufsMaul_13_02"); //Спасибо, парень. Выручил.
+	AI_Output (other, self,"Info_Erpresser_Choice_AufsMaul_15_01"); //РќСѓ, РїРѕС‡РµРјСѓ Р±С‹ С‚РµР±Рµ РЅРµ РїРѕРґРѕР№С‚Рё СЃСЋРґР° Рё РЅРµ Р·Р°Р±СЂР°С‚СЊ СЃРІРѕСЋ СЂСѓРґСѓ?
+	AI_Output (self, other,"Info_Erpresser_Choice_AufsMaul_13_02"); //РЎРїР°СЃРёР±Рѕ, РїР°СЂРµРЅСЊ. Р’С‹СЂСѓС‡РёР».
 	
 	self.aivar[AIV_HAS_ERPRESSED] = 2;
 	
@@ -47,15 +47,15 @@ FUNC VOID Info_Erpresser_Choice_Zahlen()
 {
 	if (Npc_HasItems (other,ITMINUGGET) >= 3)
 	{
-		AI_Output (other, self,"Info_Erpresser_Choice_Zahlen_15_01"); //Вот, 10 кусков.
-		AI_Output (self, other,"Info_Erpresser_Choice_Zahlen_13_02"); //Вот досада.
+		AI_Output (other, self,"Info_Erpresser_Choice_Zahlen_15_01"); //Р’РѕС‚, 10 РєСѓСЃРєРѕРІ.
+		AI_Output (self, other,"Info_Erpresser_Choice_Zahlen_13_02"); //Р’РѕС‚ РґРѕСЃР°РґР°.
 	
 		self.aivar[AIV_HAS_ERPRESSED] = 1;
 	}
 	else // SC hat keine 3 Erz
 	{
-		AI_Output (other, self,"Info_Erpresser_Choice_Zahlen_15_03"); //У-мм... Кажется, у меня сейчас нет 10 кусков...
-		AI_Output (self, other,"Info_Erpresser_Choice_Zahlen_13_04"); //Какая жалость...
+		AI_Output (other, self,"Info_Erpresser_Choice_Zahlen_15_03"); //РЈ-РјРј... РљР°Р¶РµС‚СЃСЏ, Сѓ РјРµРЅСЏ СЃРµР№С‡Р°СЃ РЅРµС‚ 10 РєСѓСЃРєРѕРІ...
+		AI_Output (self, other,"Info_Erpresser_Choice_Zahlen_13_04"); //РљР°РєР°СЏ Р¶Р°Р»РѕСЃС‚СЊ...
 	
 		self.aivar[AIV_HAS_ERPRESSED] = 2;
 	
@@ -66,7 +66,7 @@ FUNC VOID Info_Erpresser_Choice_Zahlen()
 	AI_StopProcessInfos	(self);
 };
 
-// ****************** fьr HAS_ERPRESSED == 1 (gezahlt) *********************
+// ****************** fСЊr HAS_ERPRESSED == 1 (gezahlt) *********************
 
 INSTANCE Info_BereitsErpresst (C_INFO)
 {
@@ -88,10 +88,10 @@ FUNC INT Info_BereitsErpresst_Condition()
 
 FUNC VOID Info_BereitsErpresst_Info()
 {
-	AI_Output (self, other,"Info_BereitsErpresst_Info_13_02"); //Ты заплатил. Можешь пройти, пока я не передумал.
+	AI_Output (self, other,"Info_BereitsErpresst_Info_13_02"); //РўС‹ Р·Р°РїР»Р°С‚РёР». РњРѕР¶РµС€СЊ РїСЂРѕР№С‚Рё, РїРѕРєР° СЏ РЅРµ РїРµСЂРµРґСѓРјР°Р».
 };
 
-// ****************** fьr HAS_ERPRESSED == 2 (Aufs Maul) *********************
+// ****************** fСЊr HAS_ERPRESSED == 2 (Aufs Maul) *********************
 
 INSTANCE Info_BereitsAufsMaul (C_INFO)
 {
@@ -115,7 +115,7 @@ FUNC INT Info_BereitsAufsMaul_Condition()
 
 FUNC VOID Info_BereitsAufsMaul_Info()
 {
-	AI_Output (self, other,"Info_BereitsAufsMaul_Info_13_02"); //Исчезни, пока я не начистил твою тупую рожу!
+	AI_Output (self, other,"Info_BereitsAufsMaul_Info_13_02"); //РСЃС‡РµР·РЅРё, РїРѕРєР° СЏ РЅРµ РЅР°С‡РёСЃС‚РёР» С‚РІРѕСЋ С‚СѓРїСѓСЋ СЂРѕР¶Сѓ!
 };
 
 // ************************ EXIT **************************

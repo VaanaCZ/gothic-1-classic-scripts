@@ -14,7 +14,7 @@ INSTANCE Info_Mine_Grd_7_EXIT(C_INFO)
 	condition	= Info_Mine_Grd_7_EXIT_Condition;
 	information	= Info_Mine_Grd_7_EXIT_Info;
 	permanent	= 1;
-	description = "ЗАКОНЧИТЬ";
+	description = "Р—РђРљРћРќР§РРўР¬";
 };                       
 
 FUNC INT Info_Mine_Grd_7_EXIT_Condition()
@@ -37,7 +37,7 @@ INSTANCE Info_Mine_Grd_7_Mine (C_INFO) // E1
 	condition	= Info_Mine_Grd_7_Mine_Condition;
 	information	= Info_Mine_Grd_7_Mine_Info;
 	permanent	= 1;
-	description = "Расскажи мне о шахте.";
+	description = "Р Р°СЃСЃРєР°Р¶Рё РјРЅРµ Рѕ С€Р°С…С‚Рµ.";
 };                       
 
 FUNC INT Info_Mine_Grd_7_Mine_Condition()
@@ -50,8 +50,8 @@ FUNC INT Info_Mine_Grd_7_Mine_Condition()
 
 FUNC VOID Info_Mine_Grd_7_Mine_Info()
 {
-	AI_Output(other,self,"Info_Mine_Grd_7_Mine_15_00"); //Расскажи мне про шахту.
-	AI_Output(self,other,"Info_Mine_Grd_7_Mine_07_01"); //Рудокопы добывают руду, а мы защищаем их от ползунов.
+	AI_Output(other,self,"Info_Mine_Grd_7_Mine_15_00"); //Р Р°СЃСЃРєР°Р¶Рё РјРЅРµ РїСЂРѕ С€Р°С…С‚Сѓ.
+	AI_Output(self,other,"Info_Mine_Grd_7_Mine_07_01"); //Р СѓРґРѕРєРѕРїС‹ РґРѕР±С‹РІР°СЋС‚ СЂСѓРґСѓ, Р° РјС‹ Р·Р°С‰РёС‰Р°РµРј РёС… РѕС‚ РїРѕР»Р·СѓРЅРѕРІ.
 	
 };
 
@@ -65,7 +65,7 @@ INSTANCE Info_Mine_Grd_7_WichtigePersonen(C_INFO)
 	condition	= Info_Mine_Grd_7_WichtigePersonen_Condition;
 	information	= Info_Mine_Grd_7_WichtigePersonen_Info;
 	permanent	= 1;
-	description = "Кто здесь командует?";
+	description = "РљС‚Рѕ Р·РґРµСЃСЊ РєРѕРјР°РЅРґСѓРµС‚?";
 };                       
 
 FUNC INT Info_Mine_Grd_7_WichtigePersonen_Condition()
@@ -78,8 +78,8 @@ FUNC INT Info_Mine_Grd_7_WichtigePersonen_Condition()
 
 FUNC VOID Info_Mine_Grd_7_WichtigePersonen_Info()
 {
-	AI_Output(other,self,"Info_Mine_Grd_7_WichtigePersonen_15_00"); //Кто здесь главный?
-	AI_Output(self,other,"Info_Mine_Grd_7_WichtigePersonen_07_01"); //Ян и Асгхан. Если тебе что-нибудь нужно, поговори с ними.
+	AI_Output(other,self,"Info_Mine_Grd_7_WichtigePersonen_15_00"); //РљС‚Рѕ Р·РґРµСЃСЊ РіР»Р°РІРЅС‹Р№?
+	AI_Output(self,other,"Info_Mine_Grd_7_WichtigePersonen_07_01"); //РЇРЅ Рё РђСЃРіС…Р°РЅ. Р•СЃР»Рё С‚РµР±Рµ С‡С‚Рѕ-РЅРёР±СѓРґСЊ РЅСѓР¶РЅРѕ, РїРѕРіРѕРІРѕСЂРё СЃ РЅРёРјРё.
 	
 };
 
@@ -93,7 +93,7 @@ INSTANCE Info_Mine_Grd_7_Minecrawler(C_INFO)
 	condition	= Info_Mine_Grd_7_Minecrawler_Condition;
 	information	= Info_Mine_Grd_7_Minecrawler_Info;
 	permanent	= 1;
-	description = "Что ты знаешь о ползунах?";
+	description = "Р§С‚Рѕ С‚С‹ Р·РЅР°РµС€СЊ Рѕ РїРѕР»Р·СѓРЅР°С…?";
 };                       
 
 FUNC INT Info_Mine_Grd_7_Minecrawler_Condition()
@@ -106,8 +106,8 @@ FUNC INT Info_Mine_Grd_7_Minecrawler_Condition()
 
 FUNC VOID Info_Mine_Grd_7_Minecrawler_Info()
 {
-	AI_Output(other,self,"Info_Mine_Grd_7_Minecrawler_15_00"); //Что ты знаешь о ползунах?
-	AI_Output(self,other,"Info_Mine_Grd_7_Minecrawler_07_01"); //Если тебя интересует мое мнение - их всех нужно перебить, и чем скорее, тем лучше.
+	AI_Output(other,self,"Info_Mine_Grd_7_Minecrawler_15_00"); //Р§С‚Рѕ С‚С‹ Р·РЅР°РµС€СЊ Рѕ РїРѕР»Р·СѓРЅР°С…?
+	AI_Output(self,other,"Info_Mine_Grd_7_Minecrawler_07_01"); //Р•СЃР»Рё С‚РµР±СЏ РёРЅС‚РµСЂРµСЃСѓРµС‚ РјРѕРµ РјРЅРµРЅРёРµ - РёС… РІСЃРµС… РЅСѓР¶РЅРѕ РїРµСЂРµР±РёС‚СЊ, Рё С‡РµРј СЃРєРѕСЂРµРµ, С‚РµРј Р»СѓС‡С€Рµ.
 	
 	
 };
@@ -121,7 +121,7 @@ INSTANCE Info_Mine_Grd_7_DieLage(C_INFO) // E1
 	condition	= Info_Mine_Grd_7_DieLage_Condition;
 	information	= Info_Mine_Grd_7_DieLage_Info;
 	permanent	= 1;
-	description = "Как дела?";
+	description = "РљР°Рє РґРµР»Р°?";
 };                       
 
 FUNC INT Info_Mine_Grd_7_DieLage_Condition()
@@ -134,8 +134,8 @@ FUNC INT Info_Mine_Grd_7_DieLage_Condition()
 
 FUNC VOID Info_Mine_Grd_7_DieLage_Info()
 {
-	AI_Output(other,self,"Info_Mine_Grd_7_DieLage_15_00"); //Ты как?
-	AI_Output(self,other,"Info_Mine_Grd_7_DieLage_07_01"); //Парень, ты начинаешь действовать мне на нервы. 
+	AI_Output(other,self,"Info_Mine_Grd_7_DieLage_15_00"); //РўС‹ РєР°Рє?
+	AI_Output(self,other,"Info_Mine_Grd_7_DieLage_07_01"); //РџР°СЂРµРЅСЊ, С‚С‹ РЅР°С‡РёРЅР°РµС€СЊ РґРµР№СЃС‚РІРѕРІР°С‚СЊ РјРЅРµ РЅР° РЅРµСЂРІС‹. 
 };
 	
 // *************************************************************************

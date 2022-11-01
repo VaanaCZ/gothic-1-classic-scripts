@@ -4,7 +4,7 @@
 
 PROTOTYPE Mst_Default_UndeadOrcWarrior (C_Npc)			
 {
-	name							=	"Храмовый страж";
+	name							=	"РҐСЂР°РјРѕРІС‹Р№ СЃС‚СЂР°Р¶";
 	guild							=	GIL_UNDEADORC;
 	aivar[AIV_MM_REAL_ID]			= 	ID_UNDEADORCWARRIOR;
 	level							=	25;
@@ -75,7 +75,7 @@ INSTANCE UndeadOrcWarrior (Mst_Default_UndeadOrcWarrior)
 
 INSTANCE UndeadOWH (Mst_Default_UndeadOrcWarrior)
 {
-	name							=	"Высший храмовый страж";
+	name							=	"Р’С‹СЃС€РёР№ С…СЂР°РјРѕРІС‹Р№ СЃС‚СЂР°Р¶";
 	level							=	40;
 
 	attribute	[ATR_STRENGTH]		=	120;

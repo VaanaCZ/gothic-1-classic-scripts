@@ -1,7 +1,7 @@
 instance STT_311_Fisk (Npc_Default)
 {
 	//-------- primary data --------
-	name 		=		"‘ËÒÍ";
+	name 		=		"–§–∏—Å–∫";
 	npctype 	=		NPCTYPE_MAIN;
 	guild 		=		GIL_STT;
 	level 		=		7;
@@ -45,7 +45,7 @@ instance STT_311_Fisk (Npc_Default)
 	daily_routine = Rtn_start_311;
 };
 
-FUNC VOID Rtn_start_311 () //H‰ndler
+FUNC VOID Rtn_start_311 () //H–¥ndler
 {
 	TA_Sleep		(22,30,07,30,"OCR_HUT_49");
 	TA_SitAround	(07,30,22,30,"OCR_OUTSIDE_HUT_49");

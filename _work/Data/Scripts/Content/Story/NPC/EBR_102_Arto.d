@@ -2,7 +2,7 @@ instance EBR_102_Arto (Npc_Default)
 {
 	//-------- primary data --------
 	
-	name 		=	"Арто";
+	name 		=	"РђСЂС‚Рѕ";
 	npctype 	= 	npctype_main;
    	guild 		=	GIL_EBR;
 	level 		=	80;

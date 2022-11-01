@@ -37,13 +37,13 @@ func void B_BuyAttributePoints (var C_NPC typ, var int ATR, var int AtrPlus)
 		}
 		else
 		{
-			PrintScreen	("Повышение выше 100 невозможно!", -1,-1,"FONT_OLD_20_WHITE.TGA",1);
+			PrintScreen	("РџРѕРІС‹С€РµРЅРёРµ РІС‹С€Рµ 100 РЅРµРІРѕР·РјРѕР¶РЅРѕ!", -1,-1,"FONT_OLD_20_WHITE.TGA",1);
 			B_Say (self, other, "$NOLEARNOVERMAX");
 		};
 	}
 	else 
 	{
-		PrintScreen	("Недостаточно очков обучения!", -1,-1,"FONT_OLD_20_WHITE.TGA",1);
+		PrintScreen	("РќРµРґРѕСЃС‚Р°С‚РѕС‡РЅРѕ РѕС‡РєРѕРІ РѕР±СѓС‡РµРЅРёСЏ!", -1,-1,"FONT_OLD_20_WHITE.TGA",1);
 		B_Say (self, other, "$NOLEARNNOPOINTS");
 	};
 };

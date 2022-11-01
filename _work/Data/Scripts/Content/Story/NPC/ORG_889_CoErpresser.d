@@ -2,7 +2,7 @@ instance ORG_889_CoErpresser (Npc_Default)
 {
 	//-------- primary data --------
 	
-	name =					"Помощник шантажиста";
+	name =					"РџРѕРјРѕС‰РЅРёРє С€Р°РЅС‚Р°Р¶РёСЃС‚Р°";
 	Npctype =				Npctype_Ambient;
 	guild =					GIL_ORG;      
 	level =					11;

@@ -33,7 +33,7 @@ INSTANCE DIA_Scatty_WhatDoYouDo (C_INFO)
 	condition	= DIA_Scatty_WhatDoYouDo_Condition;
 	information	= DIA_Scatty_WhatDoYouDo_Info;
 	permanent	= 0;
-	description = "Чем ты занимаешься?";
+	description = "Р§РµРј С‚С‹ Р·Р°РЅРёРјР°РµС€СЊСЃСЏ?";
 };                       
 
 FUNC INT DIA_Scatty_WhatDoYouDo_Condition()
@@ -43,8 +43,8 @@ FUNC INT DIA_Scatty_WhatDoYouDo_Condition()
 
 FUNC VOID DIA_Scatty_WhatDoYouDo_Info()
 {
-	AI_Output (other,self,"DIA_Scatty_WhatDoYouDo_15_00"); //В чем заключается твоя работа?
-	AI_Output (self,other,"DIA_Scatty_WhatDoYouDo_01_01"); //Я отвечаю за арену - организую ставки, нанимаю новых бойцов... и все такое.
+	AI_Output (other,self,"DIA_Scatty_WhatDoYouDo_15_00"); //Р’ С‡РµРј Р·Р°РєР»СЋС‡Р°РµС‚СЃСЏ С‚РІРѕСЏ СЂР°Р±РѕС‚Р°?
+	AI_Output (self,other,"DIA_Scatty_WhatDoYouDo_01_01"); //РЇ РѕС‚РІРµС‡Р°СЋ Р·Р° Р°СЂРµРЅСѓ - РѕСЂРіР°РЅРёР·СѓСЋ СЃС‚Р°РІРєРё, РЅР°РЅРёРјР°СЋ РЅРѕРІС‹С… Р±РѕР№С†РѕРІ... Рё РІСЃРµ С‚Р°РєРѕРµ.
 };
 
 // **************************************************
@@ -62,7 +62,7 @@ INSTANCE DIA_Scatty_JoinOC (C_INFO)
 	condition	= DIA_Scatty_JoinOC_Condition;
 	information	= DIA_Scatty_JoinOC_Info;
 	permanent	= 0;
-	description = "Я хочу присоединиться к этому Лагерю. Ты можешь мне помочь?";
+	description = "РЇ С…РѕС‡Сѓ РїСЂРёСЃРѕРµРґРёРЅРёС‚СЊСЃСЏ Рє СЌС‚РѕРјСѓ Р›Р°РіРµСЂСЋ. РўС‹ РјРѕР¶РµС€СЊ РјРЅРµ РїРѕРјРѕС‡СЊ?";
 };                       
 
 FUNC INT DIA_Scatty_JoinOC_Condition()
@@ -74,10 +74,10 @@ FUNC INT DIA_Scatty_JoinOC_Condition()
 };
 FUNC VOID DIA_Scatty_JoinOC_Info()
 {
-	AI_Output (other,self,"DIA_Scatty_JoinOC_15_00"); //Я хочу присоединиться к этому Лагерю. Ты можешь мне помочь?
-	AI_Output (self,other,"DIA_Scatty_JoinOC_01_01"); //Мог бы, если тебе удастся произвести на меня впечатление.
-	AI_Output (self,other,"DIA_Scatty_JoinOC_01_02"); //Здесь соревнуются лучшие бойцы всех трех Лагерей.
-	AI_Output (self,other,"DIA_Scatty_JoinOC_01_03"); //Вызови на бой одного из них. Поглядим, насколько ты хорош, и, может быть, я подумаю о твоей просьбе.
+	AI_Output (other,self,"DIA_Scatty_JoinOC_15_00"); //РЇ С…РѕС‡Сѓ РїСЂРёСЃРѕРµРґРёРЅРёС‚СЊСЃСЏ Рє СЌС‚РѕРјСѓ Р›Р°РіРµСЂСЋ. РўС‹ РјРѕР¶РµС€СЊ РјРЅРµ РїРѕРјРѕС‡СЊ?
+	AI_Output (self,other,"DIA_Scatty_JoinOC_01_01"); //РњРѕРі Р±С‹, РµСЃР»Рё С‚РµР±Рµ СѓРґР°СЃС‚СЃСЏ РїСЂРѕРёР·РІРµСЃС‚Рё РЅР° РјРµРЅСЏ РІРїРµС‡Р°С‚Р»РµРЅРёРµ.
+	AI_Output (self,other,"DIA_Scatty_JoinOC_01_02"); //Р—РґРµСЃСЊ СЃРѕСЂРµРІРЅСѓСЋС‚СЃСЏ Р»СѓС‡С€РёРµ Р±РѕР№С†С‹ РІСЃРµС… С‚СЂРµС… Р›Р°РіРµСЂРµР№.
+	AI_Output (self,other,"DIA_Scatty_JoinOC_01_03"); //Р’С‹Р·РѕРІРё РЅР° Р±РѕР№ РѕРґРЅРѕРіРѕ РёР· РЅРёС…. РџРѕРіР»СЏРґРёРј, РЅР°СЃРєРѕР»СЊРєРѕ С‚С‹ С…РѕСЂРѕС€, Рё, РјРѕР¶РµС‚ Р±С‹С‚СЊ, СЏ РїРѕРґСѓРјР°СЋ Рѕ С‚РІРѕРµР№ РїСЂРѕСЃСЊР±Рµ.
 	
 	Scatty_ChargeKirgo = LOG_RUNNING;
 	Scatty_ChargeKharim = LOG_RUNNING;
@@ -86,7 +86,7 @@ FUNC VOID DIA_Scatty_JoinOC_Info()
 	var C_NPC Kharim;	Kharim = Hlp_GetNpc(Sld_729_Kharim);		Kharim.aivar[AIV_WASDEFEATEDBYSC] = FALSE;		Kharim.aivar[AIV_HASDEFEATEDSC] = FALSE;
 	var C_NPC GorHanis;	GorHanis = Hlp_GetNpc(Tpl_1422_GorHanis);	GorHanis.aivar[AIV_WASDEFEATEDBYSC] = FALSE;	GorHanis.aivar[AIV_HASDEFEATEDSC] = FALSE;
 	
-	B_LogEntry( CH1_JoinOC,"На Скатти, мастера арены, произведет впечатление, если я вызову на бой одного из воинов.");
+	B_LogEntry( CH1_JoinOC,"РќР° РЎРєР°С‚С‚Рё, РјР°СЃС‚РµСЂР° Р°СЂРµРЅС‹, РїСЂРѕРёР·РІРµРґРµС‚ РІРїРµС‡Р°С‚Р»РµРЅРёРµ, РµСЃР»Рё СЏ РІС‹Р·РѕРІСѓ РЅР° Р±РѕР№ РѕРґРЅРѕРіРѕ РёР· РІРѕРёРЅРѕРІ.");
 };
 
 // **************************************************
@@ -100,7 +100,7 @@ INSTANCE DIA_Scatty_KirgoSuccess (C_INFO)
 	condition	= DIA_Scatty_KirgoSuccess_Condition;
 	information	= DIA_Scatty_KirgoSuccess_Info;
 	permanent	= 0;
-	description = "Я дрался с Кирго!";
+	description = "РЇ РґСЂР°Р»СЃСЏ СЃ РљРёСЂРіРѕ!";
 };                       
 
 FUNC INT DIA_Scatty_KirgoSuccess_Condition()
@@ -117,21 +117,21 @@ FUNC VOID DIA_Scatty_KirgoSuccess_Info()
 {
 	var C_NPC Kirgo; 	Kirgo = Hlp_GetNpc(Grd_251_Kirgo);	
 	
-	AI_Output (other,self,"DIA_Scatty_KirgoSuccess_15_00"); //Я дрался с Кирго!
+	AI_Output (other,self,"DIA_Scatty_KirgoSuccess_15_00"); //РЇ РґСЂР°Р»СЃСЏ СЃ РљРёСЂРіРѕ!
 	if (Kirgo.aivar[AIV_HASDEFEATEDSC] == TRUE)
 	{
-		AI_Output (self,other,"DIA_Scatty_KirgoSuccess_01_01"); //Да, и проиграл!
-		AI_Output (self,other,"DIA_Scatty_KirgoSuccess_01_02"); //Думаю, ты не надеялся удивить меня этим...
+		AI_Output (self,other,"DIA_Scatty_KirgoSuccess_01_01"); //Р”Р°, Рё РїСЂРѕРёРіСЂР°Р»!
+		AI_Output (self,other,"DIA_Scatty_KirgoSuccess_01_02"); //Р”СѓРјР°СЋ, С‚С‹ РЅРµ РЅР°РґРµСЏР»СЃСЏ СѓРґРёРІРёС‚СЊ РјРµРЅСЏ СЌС‚РёРј...
 		Scatty_ChargeKirgo = LOG_FAILED;
 		
-		B_LogEntry( CH1_JoinOC,"Победа Кирго надо мной вряд ли произвела на Скатти впечатление.");
+		B_LogEntry( CH1_JoinOC,"РџРѕР±РµРґР° РљРёСЂРіРѕ РЅР°РґРѕ РјРЅРѕР№ РІСЂСЏРґ Р»Рё РїСЂРѕРёР·РІРµР»Р° РЅР° РЎРєР°С‚С‚Рё РІРїРµС‡Р°С‚Р»РµРЅРёРµ.");
 	}
 	else if (Kirgo.aivar[AIV_WASDEFEATEDBYSC] == TRUE)
 	{
-		AI_Output (self,other,"DIA_Scatty_KirgoSuccess_01_03"); //И ты победил его! Совсем неплохо для новичка! Я удивлен!
+		AI_Output (self,other,"DIA_Scatty_KirgoSuccess_01_03"); //Р С‚С‹ РїРѕР±РµРґРёР» РµРіРѕ! РЎРѕРІСЃРµРј РЅРµРїР»РѕС…Рѕ РґР»СЏ РЅРѕРІРёС‡РєР°! РЇ СѓРґРёРІР»РµРЅ!
 		Scatty_ChargeKirgo = LOG_SUCCESS;
 		
-		B_LogEntry( CH1_JoinOC,"Мой бой против Кирго произвел на Скатти впечатление.");
+		B_LogEntry( CH1_JoinOC,"РњРѕР№ Р±РѕР№ РїСЂРѕС‚РёРІ РљРёСЂРіРѕ РїСЂРѕРёР·РІРµР» РЅР° РЎРєР°С‚С‚Рё РІРїРµС‡Р°С‚Р»РµРЅРёРµ.");
 		B_GiveXP (XP_kirgovictory);
 	};
 };
@@ -147,7 +147,7 @@ INSTANCE DIA_Scatty_KHARIMSuccess (C_INFO)
 	condition	= DIA_Scatty_KHARIMSuccess_Condition;
 	information	= DIA_Scatty_KHARIMSuccess_Info;
 	permanent	= 0;
-	description = "Я сражался с Харимом!";
+	description = "РЇ СЃСЂР°Р¶Р°Р»СЃСЏ СЃ РҐР°СЂРёРјРѕРј!";
 };                       
 
 FUNC INT DIA_Scatty_KHARIMSuccess_Condition()
@@ -164,34 +164,34 @@ FUNC VOID DIA_Scatty_KHARIMSuccess_Info()
 {
 	var C_NPC KHARIM; 	KHARIM = Hlp_GetNpc(Sld_729_Kharim);	
 	
-	AI_Output (other,self,"DIA_Scatty_KHARIMSuccess_15_00"); //Я сражался с Харимом!
+	AI_Output (other,self,"DIA_Scatty_KHARIMSuccess_15_00"); //РЇ СЃСЂР°Р¶Р°Р»СЃСЏ СЃ РҐР°СЂРёРјРѕРј!
 	if (KHARIM.aivar[AIV_HASDEFEATEDSC] == TRUE)
 	{
-		AI_Output (self,other,"DIA_Scatty_KHARIMSuccess_01_01"); //Да, и он надрал тебе задницу!
+		AI_Output (self,other,"DIA_Scatty_KHARIMSuccess_01_01"); //Р”Р°, Рё РѕРЅ РЅР°РґСЂР°Р» С‚РµР±Рµ Р·Р°РґРЅРёС†Сѓ!
 		if (Npc_GetTrueGuild (hero) == GIL_NONE)
 		{
-			AI_Output (self,other,"DIA_Scatty_KHARIMSuccess_01_02"); //Ты правильно выбрал противника. Нельзя терпеть этих ублюдков из Нового Лагеря.
-			AI_Output (self,other,"DIA_Scatty_KHARIMSuccess_01_03"); //Похоже, ты это понимаешь - как раз такие люди нужны нам!
+			AI_Output (self,other,"DIA_Scatty_KHARIMSuccess_01_02"); //РўС‹ РїСЂР°РІРёР»СЊРЅРѕ РІС‹Р±СЂР°Р» РїСЂРѕС‚РёРІРЅРёРєР°. РќРµР»СЊР·СЏ С‚РµСЂРїРµС‚СЊ СЌС‚РёС… СѓР±Р»СЋРґРєРѕРІ РёР· РќРѕРІРѕРіРѕ Р›Р°РіРµСЂСЏ.
+			AI_Output (self,other,"DIA_Scatty_KHARIMSuccess_01_03"); //РџРѕС…РѕР¶Рµ, С‚С‹ СЌС‚Рѕ РїРѕРЅРёРјР°РµС€СЊ - РєР°Рє СЂР°Р· С‚Р°РєРёРµ Р»СЋРґРё РЅСѓР¶РЅС‹ РЅР°Рј!
 		};
 		Scatty_ChargeKHARIM = LOG_FAILED;
 		B_GiveXP(XP_Kharimlost);
-		B_LogEntry( CH1_JoinOC,"Харим побил меня! Моя смелость понравилась Скатти, но вот мой бой - нет.");
+		B_LogEntry( CH1_JoinOC,"РҐР°СЂРёРј РїРѕР±РёР» РјРµРЅСЏ! РњРѕСЏ СЃРјРµР»РѕСЃС‚СЊ РїРѕРЅСЂР°РІРёР»Р°СЃСЊ РЎРєР°С‚С‚Рё, РЅРѕ РІРѕС‚ РјРѕР№ Р±РѕР№ - РЅРµС‚.");
 		
 	}
 	else if (KHARIM.aivar[AIV_WASDEFEATEDBYSC] == TRUE)
 	{
-		AI_Output (self,other,"DIA_Scatty_KHARIMSuccess_01_04"); //И ты победил его! Должен признать, это было неплохо. Его всегда считали одним из лучших бойцов.
-		AI_Output (self,other,"DIA_Scatty_KHARIMSuccess_01_05"); //Ты удивил меня!
+		AI_Output (self,other,"DIA_Scatty_KHARIMSuccess_01_04"); //Р С‚С‹ РїРѕР±РµРґРёР» РµРіРѕ! Р”РѕР»Р¶РµРЅ РїСЂРёР·РЅР°С‚СЊ, СЌС‚Рѕ Р±С‹Р»Рѕ РЅРµРїР»РѕС…Рѕ. Р•РіРѕ РІСЃРµРіРґР° СЃС‡РёС‚Р°Р»Рё РѕРґРЅРёРј РёР· Р»СѓС‡С€РёС… Р±РѕР№С†РѕРІ.
+		AI_Output (self,other,"DIA_Scatty_KHARIMSuccess_01_05"); //РўС‹ СѓРґРёРІРёР» РјРµРЅСЏ!
 		Scatty_ChargeKHARIM = LOG_SUCCESS;
 		
-		B_LogEntry( CH1_JoinOC,"Я надавал Хариму! Скатти остался под впечатлением.");
+		B_LogEntry( CH1_JoinOC,"РЇ РЅР°РґР°РІР°Р» РҐР°СЂРёРјСѓ! РЎРєР°С‚С‚Рё РѕСЃС‚Р°Р»СЃСЏ РїРѕРґ РІРїРµС‡Р°С‚Р»РµРЅРёРµРј.");
 		B_GiveXP(XP_kharimvictory);
 	};
 };
 
 
 // **************************************************
-// 				 Warum andere Lager Kдmpfer
+// 				 Warum andere Lager KРґmpfer
 // **************************************************
 
 INSTANCE DIA_Scatty_OtherCamps (C_INFO)
@@ -201,7 +201,7 @@ INSTANCE DIA_Scatty_OtherCamps (C_INFO)
 	condition	= DIA_Scatty_OtherCamps_Condition;
 	information	= DIA_Scatty_OtherCamps_Info;
 	permanent	= 0;
-	description = "Почему ты позволяешь бойцам из других Лагерей драться здесь?";
+	description = "РџРѕС‡РµРјСѓ С‚С‹ РїРѕР·РІРѕР»СЏРµС€СЊ Р±РѕР№С†Р°Рј РёР· РґСЂСѓРіРёС… Р›Р°РіРµСЂРµР№ РґСЂР°С‚СЊСЃСЏ Р·РґРµСЃСЊ?";
 };                       
 
 FUNC INT DIA_Scatty_OtherCamps_Condition()
@@ -214,10 +214,10 @@ FUNC INT DIA_Scatty_OtherCamps_Condition()
 
 FUNC VOID DIA_Scatty_OtherCamps_Info()
 {
-	AI_Output (other,self,"DIA_Scatty_OtherCamps_15_00"); //Мне казалось, что Новый Лагерь и Старый Лагерь не очень-то ладят между собой - так почему же ты позволяешь этим людям сражаться здесь?
-	AI_Output (self,other,"DIA_Scatty_OtherCamps_01_01"); //Все очень просто: они дерутся здесь один раз в неделю, и рудокопам очень нравится смотреть, как раскатывают по земле воров из Нового Лагеря.
-	AI_Output (self,other,"DIA_Scatty_OtherCamps_01_02"); //Когда дерется один из них, люди делают больше ставок - и это, как ты понимаешь, совсем не плохо.
-	AI_Output (self,other,"DIA_Scatty_OtherCamps_01_03"); //Лично я терпеть не могу этих наглецов из Нового Лагеря - но бизнес есть бизнес...
+	AI_Output (other,self,"DIA_Scatty_OtherCamps_15_00"); //РњРЅРµ РєР°Р·Р°Р»РѕСЃСЊ, С‡С‚Рѕ РќРѕРІС‹Р№ Р›Р°РіРµСЂСЊ Рё РЎС‚Р°СЂС‹Р№ Р›Р°РіРµСЂСЊ РЅРµ РѕС‡РµРЅСЊ-С‚Рѕ Р»Р°РґСЏС‚ РјРµР¶РґСѓ СЃРѕР±РѕР№ - С‚Р°Рє РїРѕС‡РµРјСѓ Р¶Рµ С‚С‹ РїРѕР·РІРѕР»СЏРµС€СЊ СЌС‚РёРј Р»СЋРґСЏРј СЃСЂР°Р¶Р°С‚СЊСЃСЏ Р·РґРµСЃСЊ?
+	AI_Output (self,other,"DIA_Scatty_OtherCamps_01_01"); //Р’СЃРµ РѕС‡РµРЅСЊ РїСЂРѕСЃС‚Рѕ: РѕРЅРё РґРµСЂСѓС‚СЃСЏ Р·РґРµСЃСЊ РѕРґРёРЅ СЂР°Р· РІ РЅРµРґРµР»СЋ, Рё СЂСѓРґРѕРєРѕРїР°Рј РѕС‡РµРЅСЊ РЅСЂР°РІРёС‚СЃСЏ СЃРјРѕС‚СЂРµС‚СЊ, РєР°Рє СЂР°СЃРєР°С‚С‹РІР°СЋС‚ РїРѕ Р·РµРјР»Рµ РІРѕСЂРѕРІ РёР· РќРѕРІРѕРіРѕ Р›Р°РіРµСЂСЏ.
+	AI_Output (self,other,"DIA_Scatty_OtherCamps_01_02"); //РљРѕРіРґР° РґРµСЂРµС‚СЃСЏ РѕРґРёРЅ РёР· РЅРёС…, Р»СЋРґРё РґРµР»Р°СЋС‚ Р±РѕР»СЊС€Рµ СЃС‚Р°РІРѕРє - Рё СЌС‚Рѕ, РєР°Рє С‚С‹ РїРѕРЅРёРјР°РµС€СЊ, СЃРѕРІСЃРµРј РЅРµ РїР»РѕС…Рѕ.
+	AI_Output (self,other,"DIA_Scatty_OtherCamps_01_03"); //Р›РёС‡РЅРѕ СЏ С‚РµСЂРїРµС‚СЊ РЅРµ РјРѕРіСѓ СЌС‚РёС… РЅР°РіР»РµС†РѕРІ РёР· РќРѕРІРѕРіРѕ Р›Р°РіРµСЂСЏ - РЅРѕ Р±РёР·РЅРµСЃ РµСЃС‚СЊ Р±РёР·РЅРµСЃ...
 };
 
 // **************************************************
@@ -231,7 +231,7 @@ INSTANCE DIA_Scatty_WannaBet (C_INFO)
 	condition	= DIA_Scatty_WannaBet_Condition;
 	information	= DIA_Scatty_WannaBet_Info;
 	permanent	= 1;
-	description = "Я хочу сделать ставку.";
+	description = "РЇ С…РѕС‡Сѓ СЃРґРµР»Р°С‚СЊ СЃС‚Р°РІРєСѓ.";
 };                       
 
 FUNC INT DIA_Scatty_WannaBet_Condition()
@@ -244,14 +244,14 @@ FUNC INT DIA_Scatty_WannaBet_Condition()
 
 FUNC VOID DIA_Scatty_WannaBet_Info()
 {
-	AI_Output (other,self,"DIA_Scatty_WannaBet_15_00"); //Я хочу сделать ставку.
-	AI_Output (self,other,"DIA_Scatty_WannaBet_01_01"); //Но сейчас же никто не дерется.
-	AI_Output (self,other,"DIA_Scatty_WannaBet_01_02"); //Следующий бой состоится через несколько дней. Будет дополнительное сообщение.
+	AI_Output (other,self,"DIA_Scatty_WannaBet_15_00"); //РЇ С…РѕС‡Сѓ СЃРґРµР»Р°С‚СЊ СЃС‚Р°РІРєСѓ.
+	AI_Output (self,other,"DIA_Scatty_WannaBet_01_01"); //РќРѕ СЃРµР№С‡Р°СЃ Р¶Рµ РЅРёРєС‚Рѕ РЅРµ РґРµСЂРµС‚СЃСЏ.
+	AI_Output (self,other,"DIA_Scatty_WannaBet_01_02"); //РЎР»РµРґСѓСЋС‰РёР№ Р±РѕР№ СЃРѕСЃС‚РѕРёС‚СЃСЏ С‡РµСЂРµР· РЅРµСЃРєРѕР»СЊРєРѕ РґРЅРµР№. Р‘СѓРґРµС‚ РґРѕРїРѕР»РЅРёС‚РµР»СЊРЅРѕРµ СЃРѕРѕР±С‰РµРЅРёРµ.
 	
 };
 
 // **************************************************
-// 					Will Kдmpfen
+// 					Will KРґmpfen
 // **************************************************
 
 INSTANCE DIA_Scatty_WannaFight (C_INFO)
@@ -261,7 +261,7 @@ INSTANCE DIA_Scatty_WannaFight (C_INFO)
 	condition	= DIA_Scatty_WannaFight_Condition;
 	information	= DIA_Scatty_WannaFight_Info;
 	permanent	= 1;
-	description = "Я хочу сражаться на арене!";
+	description = "РЇ С…РѕС‡Сѓ СЃСЂР°Р¶Р°С‚СЊСЃСЏ РЅР° Р°СЂРµРЅРµ!";
 };                       
 
 FUNC INT DIA_Scatty_WannaFight_Condition()
@@ -274,9 +274,9 @@ FUNC INT DIA_Scatty_WannaFight_Condition()
 
 FUNC VOID DIA_Scatty_WannaFight_Info()
 {
-	AI_Output (other,self,"DIA_Scatty_WannaFight_15_00"); //Я хочу сражаться на арене!
-	AI_Output (self,other,"DIA_Scatty_WannaFight_01_01"); //Я не могу позволить тебе этого, пока ты не присоединишься к одному из Лагерей!
-	AI_Output (self,other,"DIA_Scatty_WannaFight_01_02"); //Никому не нужны независимые бойцы-одиночки!
+	AI_Output (other,self,"DIA_Scatty_WannaFight_15_00"); //РЇ С…РѕС‡Сѓ СЃСЂР°Р¶Р°С‚СЊСЃСЏ РЅР° Р°СЂРµРЅРµ!
+	AI_Output (self,other,"DIA_Scatty_WannaFight_01_01"); //РЇ РЅРµ РјРѕРіСѓ РїРѕР·РІРѕР»РёС‚СЊ С‚РµР±Рµ СЌС‚РѕРіРѕ, РїРѕРєР° С‚С‹ РЅРµ РїСЂРёСЃРѕРµРґРёРЅРёС€СЊСЃСЏ Рє РѕРґРЅРѕРјСѓ РёР· Р›Р°РіРµСЂРµР№!
+	AI_Output (self,other,"DIA_Scatty_WannaFight_01_02"); //РќРёРєРѕРјСѓ РЅРµ РЅСѓР¶РЅС‹ РЅРµР·Р°РІРёСЃРёРјС‹Рµ Р±РѕР№С†С‹-РѕРґРёРЅРѕС‡РєРё!
 };
 
 // **************************************************
@@ -290,7 +290,7 @@ INSTANCE DIA_Scatty_TRAIN (C_INFO)
 	condition	= DIA_Scatty_TRAIN_Condition;
 	information	= DIA_Scatty_TRAIN_Info;
 	permanent	= 1;
-	description = "А вы вообще тренируете бойцов?";
+	description = "Рђ РІС‹ РІРѕРѕР±С‰Рµ С‚СЂРµРЅРёСЂСѓРµС‚Рµ Р±РѕР№С†РѕРІ?";
 };                       
 
 FUNC INT DIA_Scatty_TRAIN_Condition()
@@ -306,11 +306,11 @@ FUNC VOID DIA_Scatty_TRAIN_Info()
 	if( log_scattytrain == FALSE)
 	{
 	Log_CreateTopic   	(GE_TeacherOC,LOG_NOTE);
-    B_LogEntry(GE_TeacherOC,"Скатти, мастер арены, может научить меня сражаться одноручным оружием.");
+    B_LogEntry(GE_TeacherOC,"РЎРєР°С‚С‚Рё, РјР°СЃС‚РµСЂ Р°СЂРµРЅС‹, РјРѕР¶РµС‚ РЅР°СѓС‡РёС‚СЊ РјРµРЅСЏ СЃСЂР°Р¶Р°С‚СЊСЃСЏ РѕРґРЅРѕСЂСѓС‡РЅС‹Рј РѕСЂСѓР¶РёРµРј.");
     log_scattytrain = TRUE;
     };
-	AI_Output (other,self,"DIA_Scatty_TRAIN_15_00"); //А вы вообще тренируете бойцов?
-	AI_Output (self,other,"DIA_Scatty_TRAIN_01_01"); //Да, но не ради развлечения. Если ты хочешь, чтобы я учил тебя, тебе придется заплатить.
+	AI_Output (other,self,"DIA_Scatty_TRAIN_15_00"); //Рђ РІС‹ РІРѕРѕР±С‰Рµ С‚СЂРµРЅРёСЂСѓРµС‚Рµ Р±РѕР№С†РѕРІ?
+	AI_Output (self,other,"DIA_Scatty_TRAIN_01_01"); //Р”Р°, РЅРѕ РЅРµ СЂР°РґРё СЂР°Р·РІР»РµС‡РµРЅРёСЏ. Р•СЃР»Рё С‚С‹ С…РѕС‡РµС€СЊ, С‡С‚РѕР±С‹ СЏ СѓС‡РёР» С‚РµР±СЏ, С‚РµР±Рµ РїСЂРёРґРµС‚СЃСЏ Р·Р°РїР»Р°С‚РёС‚СЊ.
 
 
 	Info_ClearChoices	(DIA_Scatty_TRAIN );
@@ -332,45 +332,45 @@ func void DIA_Scatty_TRAIN_BACK()
 
 func void DIA_Scatty_TRAIN_1h()
 {
-	AI_Output (other,self,"DIA_Scatty_TRAIN_1h_15_00"); //Я хотел бы потренироваться с одноручным оружием.
+	AI_Output (other,self,"DIA_Scatty_TRAIN_1h_15_00"); //РЇ С…РѕС‚РµР» Р±С‹ РїРѕС‚СЂРµРЅРёСЂРѕРІР°С‚СЊСЃСЏ СЃ РѕРґРЅРѕСЂСѓС‡РЅС‹Рј РѕСЂСѓР¶РёРµРј.
 	
 	if (Npc_HasItems(other,itminugget) >= 50)
 	{
 		if (B_GiveSkill(other, NPC_TALENT_1H, 1, LPCOST_TALENT_1H_1))
 		{
-			AI_Output (self,other,"DIA_Scatty_TRAIN_1h_01_01"); //Хорошая мысль! Но прежде чем заниматься техникой, тебе нужно научиться правильно держать оружие.
-			AI_Output (self,other,"DIA_Scatty_TRAIN_1h_01_02"); //Новички часто держатся за рукоять двумя руками. Это неправильно, к этому лучше не привыкать.
-			AI_Output (self,other,"DIA_Scatty_TRAIN_1h_01_03"); //Возьмись за рукоять одной рукой. Лезвие вверх, и не держи его неподвижно.
-			AI_Output (self,other,"DIA_Scatty_TRAIN_1h_01_04"); //Оружие должно стать продолжением твоей руки, вписываться в твои движения. Это поможет ускорить атаку.
-			AI_Output (self,other,"DIA_Scatty_TRAIN_1h_01_05"); //Если запомнишь все, о чем я тебе говорил, твои удары станут более изящными и быстрыми.
-			AI_Output (self,other,"DIA_Scatty_TRAIN_1h_01_06"); //Да, и вот еще что: некоторые удары куда эффективнее остальных. У новичка не так много шансов выполнить их.
-			AI_Output (self,other,"DIA_Scatty_TRAIN_1h_01_07"); //Но чем больше ты будешь тренироваться, тем лучше они у тебя будут получаться.
+			AI_Output (self,other,"DIA_Scatty_TRAIN_1h_01_01"); //РҐРѕСЂРѕС€Р°СЏ РјС‹СЃР»СЊ! РќРѕ РїСЂРµР¶РґРµ С‡РµРј Р·Р°РЅРёРјР°С‚СЊСЃСЏ С‚РµС…РЅРёРєРѕР№, С‚РµР±Рµ РЅСѓР¶РЅРѕ РЅР°СѓС‡РёС‚СЊСЃСЏ РїСЂР°РІРёР»СЊРЅРѕ РґРµСЂР¶Р°С‚СЊ РѕСЂСѓР¶РёРµ.
+			AI_Output (self,other,"DIA_Scatty_TRAIN_1h_01_02"); //РќРѕРІРёС‡РєРё С‡Р°СЃС‚Рѕ РґРµСЂР¶Р°С‚СЃСЏ Р·Р° СЂСѓРєРѕСЏС‚СЊ РґРІСѓРјСЏ СЂСѓРєР°РјРё. Р­С‚Рѕ РЅРµРїСЂР°РІРёР»СЊРЅРѕ, Рє СЌС‚РѕРјСѓ Р»СѓС‡С€Рµ РЅРµ РїСЂРёРІС‹РєР°С‚СЊ.
+			AI_Output (self,other,"DIA_Scatty_TRAIN_1h_01_03"); //Р’РѕР·СЊРјРёСЃСЊ Р·Р° СЂСѓРєРѕСЏС‚СЊ РѕРґРЅРѕР№ СЂСѓРєРѕР№. Р›РµР·РІРёРµ РІРІРµСЂС…, Рё РЅРµ РґРµСЂР¶Рё РµРіРѕ РЅРµРїРѕРґРІРёР¶РЅРѕ.
+			AI_Output (self,other,"DIA_Scatty_TRAIN_1h_01_04"); //РћСЂСѓР¶РёРµ РґРѕР»Р¶РЅРѕ СЃС‚Р°С‚СЊ РїСЂРѕРґРѕР»Р¶РµРЅРёРµРј С‚РІРѕРµР№ СЂСѓРєРё, РІРїРёСЃС‹РІР°С‚СЊСЃСЏ РІ С‚РІРѕРё РґРІРёР¶РµРЅРёСЏ. Р­С‚Рѕ РїРѕРјРѕР¶РµС‚ СѓСЃРєРѕСЂРёС‚СЊ Р°С‚Р°РєСѓ.
+			AI_Output (self,other,"DIA_Scatty_TRAIN_1h_01_05"); //Р•СЃР»Рё Р·Р°РїРѕРјРЅРёС€СЊ РІСЃРµ, Рѕ С‡РµРј СЏ С‚РµР±Рµ РіРѕРІРѕСЂРёР», С‚РІРѕРё СѓРґР°СЂС‹ СЃС‚Р°РЅСѓС‚ Р±РѕР»РµРµ РёР·СЏС‰РЅС‹РјРё Рё Р±С‹СЃС‚СЂС‹РјРё.
+			AI_Output (self,other,"DIA_Scatty_TRAIN_1h_01_06"); //Р”Р°, Рё РІРѕС‚ РµС‰Рµ С‡С‚Рѕ: РЅРµРєРѕС‚РѕСЂС‹Рµ СѓРґР°СЂС‹ РєСѓРґР° СЌС„С„РµРєС‚РёРІРЅРµРµ РѕСЃС‚Р°Р»СЊРЅС‹С…. РЈ РЅРѕРІРёС‡РєР° РЅРµ С‚Р°Рє РјРЅРѕРіРѕ С€Р°РЅСЃРѕРІ РІС‹РїРѕР»РЅРёС‚СЊ РёС….
+			AI_Output (self,other,"DIA_Scatty_TRAIN_1h_01_07"); //РќРѕ С‡РµРј Р±РѕР»СЊС€Рµ С‚С‹ Р±СѓРґРµС€СЊ С‚СЂРµРЅРёСЂРѕРІР°С‚СЊСЃСЏ, С‚РµРј Р»СѓС‡С€Рµ РѕРЅРё Сѓ С‚РµР±СЏ Р±СѓРґСѓС‚ РїРѕР»СѓС‡Р°С‚СЊСЃСЏ.
 			B_GiveInvItems(other,self,itminugget,50);
 		};
 	}
 	else
 	{
-		AI_Output (self,other,"DIA_Scatty_TRAIN_1h_NoOre_01_00"); //У тебя недостаточно руды!
+		AI_Output (self,other,"DIA_Scatty_TRAIN_1h_NoOre_01_00"); //РЈ С‚РµР±СЏ РЅРµРґРѕСЃС‚Р°С‚РѕС‡РЅРѕ СЂСѓРґС‹!
 	};
 };
 
 func void DIA_Scatty_TRAIN_2h()
 {
-	AI_Output (other,self,"DIA_Scatty_TRAIN_2h_15_01"); //Расскажи мне еще что-нибудь про одноручное оружие.
+	AI_Output (other,self,"DIA_Scatty_TRAIN_2h_15_01"); //Р Р°СЃСЃРєР°Р¶Рё РјРЅРµ РµС‰Рµ С‡С‚Рѕ-РЅРёР±СѓРґСЊ РїСЂРѕ РѕРґРЅРѕСЂСѓС‡РЅРѕРµ РѕСЂСѓР¶РёРµ.
 	
 	if (Npc_HasItems(other,itminugget) >= 150)
 	{
 		if (B_GiveSkill(other, NPC_TALENT_1H, 2, LPCOST_TALENT_1H_2))
 		{
-			AI_Output (self, other,"DIA_Scatty_TRAIN_2h_Info_01_02"); //Ладно, ты уже знаешь главное. Если держать клинок немного ниже, первый удар получится более сильным.
-			AI_Output (self, other,"DIA_Scatty_TRAIN_2h_Info_01_03"); //Рубящий удар, помнишь? Ладно, теперь о том, как нужно двигаться. Нанеси два удара и разворачивайся - враг наверняка растеряется, а ты окажешься в выгодном положении.
-			AI_Output (self, other,"DIA_Scatty_TRAIN_2h_Info_01_04"); //Еще один взмах клинком справа налево...
-			AI_Output (self, other,"DIA_Scatty_TRAIN_2h_Info_01_05"); //...и возвращаешься в исходную стойку. Главное, не забывай тренироваться. Иди, отрабатывай технику.
+			AI_Output (self, other,"DIA_Scatty_TRAIN_2h_Info_01_02"); //Р›Р°РґРЅРѕ, С‚С‹ СѓР¶Рµ Р·РЅР°РµС€СЊ РіР»Р°РІРЅРѕРµ. Р•СЃР»Рё РґРµСЂР¶Р°С‚СЊ РєР»РёРЅРѕРє РЅРµРјРЅРѕРіРѕ РЅРёР¶Рµ, РїРµСЂРІС‹Р№ СѓРґР°СЂ РїРѕР»СѓС‡РёС‚СЃСЏ Р±РѕР»РµРµ СЃРёР»СЊРЅС‹Рј.
+			AI_Output (self, other,"DIA_Scatty_TRAIN_2h_Info_01_03"); //Р СѓР±СЏС‰РёР№ СѓРґР°СЂ, РїРѕРјРЅРёС€СЊ? Р›Р°РґРЅРѕ, С‚РµРїРµСЂСЊ Рѕ С‚РѕРј, РєР°Рє РЅСѓР¶РЅРѕ РґРІРёРіР°С‚СЊСЃСЏ. РќР°РЅРµСЃРё РґРІР° СѓРґР°СЂР° Рё СЂР°Р·РІРѕСЂР°С‡РёРІР°Р№СЃСЏ - РІСЂР°Рі РЅР°РІРµСЂРЅСЏРєР° СЂР°СЃС‚РµСЂСЏРµС‚СЃСЏ, Р° С‚С‹ РѕРєР°Р¶РµС€СЊСЃСЏ РІ РІС‹РіРѕРґРЅРѕРј РїРѕР»РѕР¶РµРЅРёРё.
+			AI_Output (self, other,"DIA_Scatty_TRAIN_2h_Info_01_04"); //Р•С‰Рµ РѕРґРёРЅ РІР·РјР°С… РєР»РёРЅРєРѕРј СЃРїСЂР°РІР° РЅР°Р»РµРІРѕ...
+			AI_Output (self, other,"DIA_Scatty_TRAIN_2h_Info_01_05"); //...Рё РІРѕР·РІСЂР°С‰Р°РµС€СЊСЃСЏ РІ РёСЃС…РѕРґРЅСѓСЋ СЃС‚РѕР№РєСѓ. Р“Р»Р°РІРЅРѕРµ, РЅРµ Р·Р°Р±С‹РІР°Р№ С‚СЂРµРЅРёСЂРѕРІР°С‚СЊСЃСЏ. РРґРё, РѕС‚СЂР°Р±Р°С‚С‹РІР°Р№ С‚РµС…РЅРёРєСѓ.
 			B_GiveInvItems(other,self,itminugget,150);
 		};
 	}
 	else
 	{
-		AI_Output (self,other,"DIA_Scatty_TRAIN_2h_NoOre_01_00"); //Возвращайся, когда наберешь достаточно руды!
+		AI_Output (self,other,"DIA_Scatty_TRAIN_2h_NoOre_01_00"); //Р’РѕР·РІСЂР°С‰Р°Р№СЃСЏ, РєРѕРіРґР° РЅР°Р±РµСЂРµС€СЊ РґРѕСЃС‚Р°С‚РѕС‡РЅРѕ СЂСѓРґС‹!
 	};
 };

@@ -47,23 +47,23 @@ FUNC INT DIA_Grd_215_Torwache_First_Condition()
 
 FUNC VOID DIA_Grd_215_Torwache_First_Info()
 {
-	AI_Output (self, other,"DIA_Grd_215_Torwache_First_06_00"); //Куда это ты направляешься?
-	AI_Output (other, self,"DIA_Grd_215_Torwache_First_15_01"); //В Лагерь.
-	AI_Output (self, other,"DIA_Grd_215_Torwache_First_06_02"); //От тебя не будет проблем, ведь так?
+	AI_Output (self, other,"DIA_Grd_215_Torwache_First_06_00"); //РљСѓРґР° СЌС‚Рѕ С‚С‹ РЅР°РїСЂР°РІР»СЏРµС€СЊСЃСЏ?
+	AI_Output (other, self,"DIA_Grd_215_Torwache_First_15_01"); //Р’ Р›Р°РіРµСЂСЊ.
+	AI_Output (self, other,"DIA_Grd_215_Torwache_First_06_02"); //РћС‚ С‚РµР±СЏ РЅРµ Р±СѓРґРµС‚ РїСЂРѕР±Р»РµРј, РІРµРґСЊ С‚Р°Рє?
 	
 	Info_ClearChoices	(DIA_Grd_215_Torwache_First );
-	Info_AddChoice		(DIA_Grd_215_Torwache_First,"Вообще-то я планировал взорвать весь Лагерь...",DIA_Grd_215_Torwache_First_Trouble);
-	Info_AddChoice		(DIA_Grd_215_Torwache_First,"Просто хотел немного осмотреться.",DIA_Grd_215_Torwache_First_JustLooking);
+	Info_AddChoice		(DIA_Grd_215_Torwache_First,"Р’РѕРѕР±С‰Рµ-С‚Рѕ СЏ РїР»Р°РЅРёСЂРѕРІР°Р» РІР·РѕСЂРІР°С‚СЊ РІРµСЃСЊ Р›Р°РіРµСЂСЊ...",DIA_Grd_215_Torwache_First_Trouble);
+	Info_AddChoice		(DIA_Grd_215_Torwache_First,"РџСЂРѕСЃС‚Рѕ С…РѕС‚РµР» РЅРµРјРЅРѕРіРѕ РѕСЃРјРѕС‚СЂРµС‚СЊСЃСЏ.",DIA_Grd_215_Torwache_First_JustLooking);
 	if (Npc_KnowsInfo(hero,Info_Diego_Kolonie))
 	{
-		Info_AddChoice		(DIA_Grd_215_Torwache_First,"Диего сказал, что я должен встретиться с ним в Лагере.",DIA_Grd_215_Torwache_First_Diego);
+		Info_AddChoice		(DIA_Grd_215_Torwache_First,"Р”РёРµРіРѕ СЃРєР°Р·Р°Р», С‡С‚Рѕ СЏ РґРѕР»Р¶РµРЅ РІСЃС‚СЂРµС‚РёС‚СЊСЃСЏ СЃ РЅРёРј РІ Р›Р°РіРµСЂРµ.",DIA_Grd_215_Torwache_First_Diego);
 	};
 };
 
 func void DIA_Grd_215_Torwache_First_Trouble()
 {
-	AI_Output (other, self,"DIA_Grd_215_Torwache_First_Trouble_15_00"); //Вообще-то я планировал взорвать весь Лагерь...
-	AI_Output (self, other,"DIA_Grd_215_Torwache_First_Trouble_06_01"); //Эй, да ты забавный парень... Не люблю забавных парней.
+	AI_Output (other, self,"DIA_Grd_215_Torwache_First_Trouble_15_00"); //Р’РѕРѕР±С‰Рµ-С‚Рѕ СЏ РїР»Р°РЅРёСЂРѕРІР°Р» РІР·РѕСЂРІР°С‚СЊ РІРµСЃСЊ Р›Р°РіРµСЂСЊ...
+	AI_Output (self, other,"DIA_Grd_215_Torwache_First_Trouble_06_01"); //Р­Р№, РґР° С‚С‹ Р·Р°Р±Р°РІРЅС‹Р№ РїР°СЂРµРЅСЊ... РќРµ Р»СЋР±Р»СЋ Р·Р°Р±Р°РІРЅС‹С… РїР°СЂРЅРµР№.
 	Info_ClearChoices	(DIA_Grd_215_Torwache_First );
 	
 	AI_StopProcessInfos	( self );
@@ -73,25 +73,25 @@ func void DIA_Grd_215_Torwache_First_Trouble()
 
 func void DIA_Grd_215_Torwache_First_JustLooking()
 {
-	AI_Output (other, self,"DIA_Grd_215_Torwache_First_JustLooking_15_00"); //Просто хотел немного осмотреться.
-	AI_Output (self, other,"DIA_Grd_215_Torwache_First_JustLooking_06_01"); //Это обойдется тебе в десять кусков руды.
+	AI_Output (other, self,"DIA_Grd_215_Torwache_First_JustLooking_15_00"); //РџСЂРѕСЃС‚Рѕ С…РѕС‚РµР» РЅРµРјРЅРѕРіРѕ РѕСЃРјРѕС‚СЂРµС‚СЊСЃСЏ.
+	AI_Output (self, other,"DIA_Grd_215_Torwache_First_JustLooking_06_01"); //Р­С‚Рѕ РѕР±РѕР№РґРµС‚СЃСЏ С‚РµР±Рµ РІ РґРµСЃСЏС‚СЊ РєСѓСЃРєРѕРІ СЂСѓРґС‹.
 	
 	Info_ClearChoices	(DIA_Grd_215_Torwache_First );
-	Info_AddChoice		(DIA_Grd_215_Torwache_First,"Забудь об этом.",DIA_Grd_215_Torwache_First_NoPay);
-	Info_AddChoice		(DIA_Grd_215_Torwache_First,"Ладно, вот тебе десять кусков.",DIA_Grd_215_Torwache_First_Pay);
+	Info_AddChoice		(DIA_Grd_215_Torwache_First,"Р—Р°Р±СѓРґСЊ РѕР± СЌС‚РѕРј.",DIA_Grd_215_Torwache_First_NoPay);
+	Info_AddChoice		(DIA_Grd_215_Torwache_First,"Р›Р°РґРЅРѕ, РІРѕС‚ С‚РµР±Рµ РґРµСЃСЏС‚СЊ РєСѓСЃРєРѕРІ.",DIA_Grd_215_Torwache_First_Pay);
 };
 
 func void DIA_Grd_215_Torwache_First_Diego()
 {
-	AI_Output (other, self,"DIA_Grd_215_Torwache_First_Diego_15_00"); //Диего сказал, что я должен встретиться с ним в Лагере.
-	AI_Output (self, other,"DIA_Grd_215_Torwache_First_Diego_06_01"); //Ладно, тогда проходи.
+	AI_Output (other, self,"DIA_Grd_215_Torwache_First_Diego_15_00"); //Р”РёРµРіРѕ СЃРєР°Р·Р°Р», С‡С‚Рѕ СЏ РґРѕР»Р¶РµРЅ РІСЃС‚СЂРµС‚РёС‚СЊСЃСЏ СЃ РЅРёРј РІ Р›Р°РіРµСЂРµ.
+	AI_Output (self, other,"DIA_Grd_215_Torwache_First_Diego_06_01"); //Р›Р°РґРЅРѕ, С‚РѕРіРґР° РїСЂРѕС…РѕРґРё.
 	Info_ClearChoices	(DIA_Grd_215_Torwache_First );
 };
 
 func void DIA_Grd_215_Torwache_First_NoPay()
 {
-	AI_Output (other, self,"DIA_Grd_215_Torwache_First_NoPay_15_00"); //Да я просто так.
-	AI_Output (self, other,"DIA_Grd_215_Torwache_First_NoPay_06_01"); //Тогда проваливай.
+	AI_Output (other, self,"DIA_Grd_215_Torwache_First_NoPay_15_00"); //Р”Р° СЏ РїСЂРѕСЃС‚Рѕ С‚Р°Рє.
+	AI_Output (self, other,"DIA_Grd_215_Torwache_First_NoPay_06_01"); //РўРѕРіРґР° РїСЂРѕРІР°Р»РёРІР°Р№.
 	Info_ClearChoices	(DIA_Grd_215_Torwache_First );
 };
 
@@ -99,14 +99,14 @@ func void DIA_Grd_215_Torwache_First_Pay()
 {
 	if (Npc_HasItems(other, itminugget) >= 10)
 	{
-		AI_Output (other, self,"DIA_Grd_215_Torwache_First_Pay_15_00"); //Ладно, вот тебе десять кусков.
-		AI_Output (self, other,"DIA_Grd_215_Torwache_First_Pay_06_01"); //Ну заходи.
+		AI_Output (other, self,"DIA_Grd_215_Torwache_First_Pay_15_00"); //Р›Р°РґРЅРѕ, РІРѕС‚ С‚РµР±Рµ РґРµСЃСЏС‚СЊ РєСѓСЃРєРѕРІ.
+		AI_Output (self, other,"DIA_Grd_215_Torwache_First_Pay_06_01"); //РќСѓ Р·Р°С…РѕРґРё.
 		B_GiveInvItems 	(other,self, itminugget,10);CreateInvItems 		(self,  itminugget,10);
 	}
 	else
 	{
-		AI_Output (other, self,"DIA_Grd_215_Torwache_First_Pay_NoOre_15_00"); //У меня с собой столько нет.
-		AI_Output (self, other,"DIA_Grd_215_Torwache_First_Pay_NoOre_06_01"); //Я могу сделать исключение - только один раз и только потому, что ты здесь новенький.
+		AI_Output (other, self,"DIA_Grd_215_Torwache_First_Pay_NoOre_15_00"); //РЈ РјРµРЅСЏ СЃ СЃРѕР±РѕР№ СЃС‚РѕР»СЊРєРѕ РЅРµС‚.
+		AI_Output (self, other,"DIA_Grd_215_Torwache_First_Pay_NoOre_06_01"); //РЇ РјРѕРіСѓ СЃРґРµР»Р°С‚СЊ РёСЃРєР»СЋС‡РµРЅРёРµ - С‚РѕР»СЊРєРѕ РѕРґРёРЅ СЂР°Р· Рё С‚РѕР»СЊРєРѕ РїРѕС‚РѕРјСѓ, С‡С‚Рѕ С‚С‹ Р·РґРµСЃСЊ РЅРѕРІРµРЅСЊРєРёР№.
 		
 	};
 		
@@ -125,7 +125,7 @@ INSTANCE DIA_Grd_215_Torwache_PERM (C_INFO)
 	condition	= DIA_Grd_215_Torwache_PERM_Condition;
 	information	= DIA_Grd_215_Torwache_PERM_Info;
 	permanent	= 1;
-	description = "Есть новости?";
+	description = "Р•СЃС‚СЊ РЅРѕРІРѕСЃС‚Рё?";
 };                       
 
 FUNC INT DIA_Grd_215_Torwache_PERM_Condition()
@@ -135,6 +135,6 @@ FUNC INT DIA_Grd_215_Torwache_PERM_Condition()
 
 FUNC VOID DIA_Grd_215_Torwache_PERM_Info()
 {
-	AI_Output (other, self,"DIA_Grd_215_Torwache_PERM_15_00"); //Есть новости?
-	AI_Output (self, other,"DIA_Grd_215_Torwache_PERM_06_01"); //Не-а. Все, как обычно.
+	AI_Output (other, self,"DIA_Grd_215_Torwache_PERM_15_00"); //Р•СЃС‚СЊ РЅРѕРІРѕСЃС‚Рё?
+	AI_Output (self, other,"DIA_Grd_215_Torwache_PERM_06_01"); //РќРµ-Р°. Р’СЃРµ, РєР°Рє РѕР±С‹С‡РЅРѕ.
 };

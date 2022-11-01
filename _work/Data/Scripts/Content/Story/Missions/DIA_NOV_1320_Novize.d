@@ -1,4 +1,4 @@
-// ------------------------------ Groﬂe Beschwˆrung starten ----------------------------------
+// ------------------------------ Gro–Øe Beschw—Ürung starten ----------------------------------
 instance  NOV_1320_Novize_CALLSLEEPER (C_INFO)
 {
 	npc				= NOV_1320_Novize;
@@ -22,7 +22,7 @@ FUNC int  NOV_1320_Novize_CALLSLEEPER_Condition()
 	&&      (Npc_GetDisttoWP (Kalom,"PSI_TEMPLE_STAIRS_RIGHT") < 300)	)
 	{
 		return TRUE;
-		PrintScreen	("œŒÿÀ»!", -1,-1,"font_old_20_white.tga",3);
+		PrintScreen	("–ü–û–®–õ–ò!", -1,-1,"font_old_20_white.tga",3);
 	};
 };
 FUNC void  NOV_1320_Novize_CALLSLEEPER_Info()

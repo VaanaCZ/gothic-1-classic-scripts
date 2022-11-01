@@ -14,7 +14,7 @@ INSTANCE Info_Vlk_4_EXIT(C_INFO)
 	condition	= Info_Vlk_4_EXIT_Condition;
 	information	= Info_Vlk_4_EXIT_Info;
 	permanent	= 1;
-	description = "ЗАКОНЧИТЬ";
+	description = "Р—РђРљРћРќР§РРўР¬";
 };                       
 
 FUNC INT Info_Vlk_4_EXIT_Condition()
@@ -24,8 +24,8 @@ FUNC INT Info_Vlk_4_EXIT_Condition()
 
 FUNC VOID Info_Vlk_4_EXIT_Info()
 {	
-	AI_Output(other,self,"Info_Vlk_4_EinerVonEuchWerden_15_00"); //Спасибо. Удачи!
-	AI_Output(self,other,"Info_Vlk_4_EinerVonEuchWerden_04_01"); //Выше нос, приятель.
+	AI_Output(other,self,"Info_Vlk_4_EinerVonEuchWerden_15_00"); //РЎРїР°СЃРёР±Рѕ. РЈРґР°С‡Рё!
+	AI_Output(self,other,"Info_Vlk_4_EinerVonEuchWerden_04_01"); //Р’С‹С€Рµ РЅРѕСЃ, РїСЂРёСЏС‚РµР»СЊ.
 	AI_StopProcessInfos	(self);
 };
 
@@ -39,7 +39,7 @@ INSTANCE Info_Vlk_4_EinerVonEuchWerden (C_INFO) // E1
 	condition	= Info_Vlk_4_EinerVonEuchWerden_Condition;
 	information	= Info_Vlk_4_EinerVonEuchWerden_Info;
 	permanent	= 1;
-	description = "Что нужно сделать, для того чтобы присоединиться к этому Лагерю?";
+	description = "Р§С‚Рѕ РЅСѓР¶РЅРѕ СЃРґРµР»Р°С‚СЊ, РґР»СЏ С‚РѕРіРѕ С‡С‚РѕР±С‹ РїСЂРёСЃРѕРµРґРёРЅРёС‚СЊСЃСЏ Рє СЌС‚РѕРјСѓ Р›Р°РіРµСЂСЋ?";
 };                       
 
 FUNC INT Info_Vlk_4_EinerVonEuchWerden_Condition()
@@ -52,10 +52,10 @@ FUNC INT Info_Vlk_4_EinerVonEuchWerden_Condition()
 
 FUNC VOID Info_Vlk_4_EinerVonEuchWerden_Info()
 {
-	AI_Output(other,self,"Info_Vlk_4_EinerVonEuchWerden_15_01"); //Что нужно сделать, чтобы присоединиться к этому Лагерю?
-	AI_Output(self,other,"Info_Vlk_4_EinerVonEuchWerden_04_04"); //Ты хочешь стать стражником или Призраком? Это будет нелегко, приятель. Тебе придется пройти несколько испытаний прежде чем старый Торус позволит тебе встретиться с Гомезом.
-	AI_Output(self,other,"Info_Vlk_4_EinerVonEuchWerden_04_02"); //Тебе нужно знать, с кем из местных стоит заводить знакомство, а с кем - враждовать. Но пока ты не присоединишься к одному из Лагерей, никто не будет воспринимать тебя всерьез.
-	AI_Output(self,other,"Info_Vlk_4_EinerVonEuchWerden_04_03"); //Если бы я был на твоем месте, я бы поговорил с кем-нибудь из Призраков. Может быть среди них найдется тот, кто захочет помочь тебе. Не даром,  разумеется.
+	AI_Output(other,self,"Info_Vlk_4_EinerVonEuchWerden_15_01"); //Р§С‚Рѕ РЅСѓР¶РЅРѕ СЃРґРµР»Р°С‚СЊ, С‡С‚РѕР±С‹ РїСЂРёСЃРѕРµРґРёРЅРёС‚СЊСЃСЏ Рє СЌС‚РѕРјСѓ Р›Р°РіРµСЂСЋ?
+	AI_Output(self,other,"Info_Vlk_4_EinerVonEuchWerden_04_04"); //РўС‹ С…РѕС‡РµС€СЊ СЃС‚Р°С‚СЊ СЃС‚СЂР°Р¶РЅРёРєРѕРј РёР»Рё РџСЂРёР·СЂР°РєРѕРј? Р­С‚Рѕ Р±СѓРґРµС‚ РЅРµР»РµРіРєРѕ, РїСЂРёСЏС‚РµР»СЊ. РўРµР±Рµ РїСЂРёРґРµС‚СЃСЏ РїСЂРѕР№С‚Рё РЅРµСЃРєРѕР»СЊРєРѕ РёСЃРїС‹С‚Р°РЅРёР№ РїСЂРµР¶РґРµ С‡РµРј СЃС‚Р°СЂС‹Р№ РўРѕСЂСѓСЃ РїРѕР·РІРѕР»РёС‚ С‚РµР±Рµ РІСЃС‚СЂРµС‚РёС‚СЊСЃСЏ СЃ Р“РѕРјРµР·РѕРј.
+	AI_Output(self,other,"Info_Vlk_4_EinerVonEuchWerden_04_02"); //РўРµР±Рµ РЅСѓР¶РЅРѕ Р·РЅР°С‚СЊ, СЃ РєРµРј РёР· РјРµСЃС‚РЅС‹С… СЃС‚РѕРёС‚ Р·Р°РІРѕРґРёС‚СЊ Р·РЅР°РєРѕРјСЃС‚РІРѕ, Р° СЃ РєРµРј - РІСЂР°Р¶РґРѕРІР°С‚СЊ. РќРѕ РїРѕРєР° С‚С‹ РЅРµ РїСЂРёСЃРѕРµРґРёРЅРёС€СЊСЃСЏ Рє РѕРґРЅРѕРјСѓ РёР· Р›Р°РіРµСЂРµР№, РЅРёРєС‚Рѕ РЅРµ Р±СѓРґРµС‚ РІРѕСЃРїСЂРёРЅРёРјР°С‚СЊ С‚РµР±СЏ РІСЃРµСЂСЊРµР·.
+	AI_Output(self,other,"Info_Vlk_4_EinerVonEuchWerden_04_03"); //Р•СЃР»Рё Р±С‹ СЏ Р±С‹Р» РЅР° С‚РІРѕРµРј РјРµСЃС‚Рµ, СЏ Р±С‹ РїРѕРіРѕРІРѕСЂРёР» СЃ РєРµРј-РЅРёР±СѓРґСЊ РёР· РџСЂРёР·СЂР°РєРѕРІ. РњРѕР¶РµС‚ Р±С‹С‚СЊ СЃСЂРµРґРё РЅРёС… РЅР°Р№РґРµС‚СЃСЏ С‚РѕС‚, РєС‚Рѕ Р·Р°С…РѕС‡РµС‚ РїРѕРјРѕС‡СЊ С‚РµР±Рµ. РќРµ РґР°СЂРѕРј,  СЂР°Р·СѓРјРµРµС‚СЃСЏ.
 	
 	var C_NPC Thorus;		Thorus 	= Hlp_GetNpc(GRD_200_Thorus);
 	Thorus.aivar[AIV_FINDABLE] = TRUE;
@@ -71,7 +71,7 @@ INSTANCE Info_Vlk_4_WichtigePersonen(C_INFO)
 	condition	= Info_Vlk_4_WichtigePersonen_Condition;
 	information	= Info_Vlk_4_WichtigePersonen_Info;
 	permanent	= 1;
-	description = "На кого еще из местных мне стоит обратить внимание?";
+	description = "РќР° РєРѕРіРѕ РµС‰Рµ РёР· РјРµСЃС‚РЅС‹С… РјРЅРµ СЃС‚РѕРёС‚ РѕР±СЂР°С‚РёС‚СЊ РІРЅРёРјР°РЅРёРµ?";
 };                       
 
 FUNC INT Info_Vlk_4_WichtigePersonen_Condition()
@@ -81,9 +81,9 @@ FUNC INT Info_Vlk_4_WichtigePersonen_Condition()
 
 FUNC VOID Info_Vlk_4_WichtigePersonen_Info()
 {
-	AI_Output(other,self,"Info_Vlk_4_WichtigePersonen_15_00"); //На кого еще из местных мне стоит обратить внимание?
-	AI_Output(self,other,"Info_Vlk_4_WichtigePersonen_04_01"); //Для новичка очень важно не испортить отношения с Граво. Может быть, он всего лишь рудокоп, но зато он знает, как вести дела с Баронами.
-	AI_Output(self,other,"Info_Vlk_4_WichtigePersonen_04_02"); //Если у тебя возникнут проблемы с компанией Гомеза, он поможет тебе и из этого выпутаться.
+	AI_Output(other,self,"Info_Vlk_4_WichtigePersonen_15_00"); //РќР° РєРѕРіРѕ РµС‰Рµ РёР· РјРµСЃС‚РЅС‹С… РјРЅРµ СЃС‚РѕРёС‚ РѕР±СЂР°С‚РёС‚СЊ РІРЅРёРјР°РЅРёРµ?
+	AI_Output(self,other,"Info_Vlk_4_WichtigePersonen_04_01"); //Р”Р»СЏ РЅРѕРІРёС‡РєР° РѕС‡РµРЅСЊ РІР°Р¶РЅРѕ РЅРµ РёСЃРїРѕСЂС‚РёС‚СЊ РѕС‚РЅРѕС€РµРЅРёСЏ СЃ Р“СЂР°РІРѕ. РњРѕР¶РµС‚ Р±С‹С‚СЊ, РѕРЅ РІСЃРµРіРѕ Р»РёС€СЊ СЂСѓРґРѕРєРѕРї, РЅРѕ Р·Р°С‚Рѕ РѕРЅ Р·РЅР°РµС‚, РєР°Рє РІРµСЃС‚Рё РґРµР»Р° СЃ Р‘Р°СЂРѕРЅР°РјРё.
+	AI_Output(self,other,"Info_Vlk_4_WichtigePersonen_04_02"); //Р•СЃР»Рё Сѓ С‚РµР±СЏ РІРѕР·РЅРёРєРЅСѓС‚ РїСЂРѕР±Р»РµРјС‹ СЃ РєРѕРјРїР°РЅРёРµР№ Р“РѕРјРµР·Р°, РѕРЅ РїРѕРјРѕР¶РµС‚ С‚РµР±Рµ Рё РёР· СЌС‚РѕРіРѕ РІС‹РїСѓС‚Р°С‚СЊСЃСЏ.
 };
 
 // *************************************************************************
@@ -96,7 +96,7 @@ INSTANCE Info_Vlk_4_DasLager(C_INFO)
 	condition	= Info_Vlk_4_DasLager_Condition;
 	information	= Info_Vlk_4_DasLager_Info;
 	permanent	= 1;
-	description = "На что здесь стоит обратить внимание? ";
+	description = "РќР° С‡С‚Рѕ Р·РґРµСЃСЊ СЃС‚РѕРёС‚ РѕР±СЂР°С‚РёС‚СЊ РІРЅРёРјР°РЅРёРµ? ";
 };                       
 
 FUNC INT Info_Vlk_4_DasLager_Condition()
@@ -108,12 +108,12 @@ FUNC INT Info_Vlk_4_DasLager_Condition()
 };
 FUNC VOID Info_Vlk_4_DasLager_Info()
 {
-	AI_Output(other,self,"Info_Vlk_4_DasLager_15_00"); //На что здесь стоит обратить внимание? 
-	AI_Output(self,other,"Info_Vlk_4_DasLager_04_01"); //Если тебе не улыбается идея копаться в шахте, попробуй побродить между северными воротами и воротами замка.
-	AI_Output(self,other,"Info_Vlk_4_DasLager_04_02"); //Если тебе повезет, Торус или Диего могут дать тебе какое-нибудь поручение - а это хороший шанс завоевать их расположение. Никому не помешает дружба с людьми Гомеза.
-	AI_Output(self,other,"Info_Vlk_4_DasLager_04_03"); //Или ты можешь встретить мага. Иногда они тоже дают поручения и хорошо платят за это.
-	AI_Output(other,self,"Info_Vlk_4_DasLager_15_04"); //Маги выходят из замка? Когда?
-	AI_Output(self,other,"Info_Vlk_4_DasLager_04_05"); //Если бы я знал. Спроси у тех, кто там живет.
+	AI_Output(other,self,"Info_Vlk_4_DasLager_15_00"); //РќР° С‡С‚Рѕ Р·РґРµСЃСЊ СЃС‚РѕРёС‚ РѕР±СЂР°С‚РёС‚СЊ РІРЅРёРјР°РЅРёРµ? 
+	AI_Output(self,other,"Info_Vlk_4_DasLager_04_01"); //Р•СЃР»Рё С‚РµР±Рµ РЅРµ СѓР»С‹Р±Р°РµС‚СЃСЏ РёРґРµСЏ РєРѕРїР°С‚СЊСЃСЏ РІ С€Р°С…С‚Рµ, РїРѕРїСЂРѕР±СѓР№ РїРѕР±СЂРѕРґРёС‚СЊ РјРµР¶РґСѓ СЃРµРІРµСЂРЅС‹РјРё РІРѕСЂРѕС‚Р°РјРё Рё РІРѕСЂРѕС‚Р°РјРё Р·Р°РјРєР°.
+	AI_Output(self,other,"Info_Vlk_4_DasLager_04_02"); //Р•СЃР»Рё С‚РµР±Рµ РїРѕРІРµР·РµС‚, РўРѕСЂСѓСЃ РёР»Рё Р”РёРµРіРѕ РјРѕРіСѓС‚ РґР°С‚СЊ С‚РµР±Рµ РєР°РєРѕРµ-РЅРёР±СѓРґСЊ РїРѕСЂСѓС‡РµРЅРёРµ - Р° СЌС‚Рѕ С…РѕСЂРѕС€РёР№ С€Р°РЅСЃ Р·Р°РІРѕРµРІР°С‚СЊ РёС… СЂР°СЃРїРѕР»РѕР¶РµРЅРёРµ. РќРёРєРѕРјСѓ РЅРµ РїРѕРјРµС€Р°РµС‚ РґСЂСѓР¶Р±Р° СЃ Р»СЋРґСЊРјРё Р“РѕРјРµР·Р°.
+	AI_Output(self,other,"Info_Vlk_4_DasLager_04_03"); //РР»Рё С‚С‹ РјРѕР¶РµС€СЊ РІСЃС‚СЂРµС‚РёС‚СЊ РјР°РіР°. РРЅРѕРіРґР° РѕРЅРё С‚РѕР¶Рµ РґР°СЋС‚ РїРѕСЂСѓС‡РµРЅРёСЏ Рё С…РѕСЂРѕС€Рѕ РїР»Р°С‚СЏС‚ Р·Р° СЌС‚Рѕ.
+	AI_Output(other,self,"Info_Vlk_4_DasLager_15_04"); //РњР°РіРё РІС‹С…РѕРґСЏС‚ РёР· Р·Р°РјРєР°? РљРѕРіРґР°?
+	AI_Output(self,other,"Info_Vlk_4_DasLager_04_05"); //Р•СЃР»Рё Р±С‹ СЏ Р·РЅР°Р». РЎРїСЂРѕСЃРё Сѓ С‚РµС…, РєС‚Рѕ С‚Р°Рј Р¶РёРІРµС‚.
 };
 
 // *************************************************************************
@@ -126,7 +126,7 @@ INSTANCE Info_Vlk_4_DieLage(C_INFO) // E1
 	condition	= Info_Vlk_4_DieLage_Condition;
 	information	= Info_Vlk_4_DieLage_Info;
 	permanent	= 1;
-	description = "Все в порядке?";
+	description = "Р’СЃРµ РІ РїРѕСЂСЏРґРєРµ?";
 };                       
 
 FUNC INT Info_Vlk_4_DieLage_Condition()
@@ -136,8 +136,8 @@ FUNC INT Info_Vlk_4_DieLage_Condition()
 
 FUNC VOID Info_Vlk_4_DieLage_Info()
 {
-	AI_Output(other,self,"Info_Vlk_4_DieLage_15_00"); //Все в порядке?
-	AI_Output(self,other,"Info_Vlk_4_DieLage_04_01"); //В полном, как и двадцать лет назад. С тех пор все не слишком-то изменилось.
+	AI_Output(other,self,"Info_Vlk_4_DieLage_15_00"); //Р’СЃРµ РІ РїРѕСЂСЏРґРєРµ?
+	AI_Output(self,other,"Info_Vlk_4_DieLage_04_01"); //Р’ РїРѕР»РЅРѕРј, РєР°Рє Рё РґРІР°РґС†Р°С‚СЊ Р»РµС‚ РЅР°Р·Р°Рґ. РЎ С‚РµС… РїРѕСЂ РІСЃРµ РЅРµ СЃР»РёС€РєРѕРј-С‚Рѕ РёР·РјРµРЅРёР»РѕСЃСЊ.
 };
 	
 // *************************************************************************

@@ -30,7 +30,7 @@ FUNC VOID  Org_826_Mordrag_Exit_Info()
 };
 
 // **************************************************
-//					Erste Begrьssung
+//					Erste BegrСЊssung
 // **************************************************
 
 instance  Org_826_Mordrag_Greet (C_INFO)
@@ -53,7 +53,7 @@ FUNC int  Org_826_Mordrag_Greet_Condition()
 
 FUNC VOID  Org_826_Mordrag_Greet_Info()
 {
-	AI_Output (self, other,"Org_826_Mordrag_Greet_11_00"); //Эй, новенький! Меня зовут Мордраг. Запомни это имя - у меня ты можешь купить все, что тебе нужно, и по хорошей цене!
+	AI_Output (self, other,"Org_826_Mordrag_Greet_11_00"); //Р­Р№, РЅРѕРІРµРЅСЊРєРёР№! РњРµРЅСЏ Р·РѕРІСѓС‚ РњРѕСЂРґСЂР°Рі. Р—Р°РїРѕРјРЅРё СЌС‚Рѕ РёРјСЏ - Сѓ РјРµРЅСЏ С‚С‹ РјРѕР¶РµС€СЊ РєСѓРїРёС‚СЊ РІСЃРµ, С‡С‚Рѕ С‚РµР±Рµ РЅСѓР¶РЅРѕ, Рё РїРѕ С…РѕСЂРѕС€РµР№ С†РµРЅРµ!
 };
 
 // **************************************************
@@ -69,7 +69,7 @@ instance  Org_826_Mordrag_Trade (C_INFO)
 	condition	= Org_826_Mordrag_Trade_Condition;
 	information	= Org_826_Mordrag_Trade_Info;
 	permanent	= 1;
-	description = "Покажи мне, что у тебя есть.";
+	description = "РџРѕРєР°Р¶Рё РјРЅРµ, С‡С‚Рѕ Сѓ С‚РµР±СЏ РµСЃС‚СЊ.";
 	trade		= 1;
 };                       
 
@@ -80,18 +80,18 @@ func int  Org_826_Mordrag_Trade_Condition()
 
 FUNC VOID  Org_826_Mordrag_Trade_Info()
 {
-	AI_Output (other, self,"Org_826_Mordrag_Trade_15_00"); //Покажи мне, что у тебя есть.
-	AI_Output (self, other,"Org_826_Mordrag_Trade_11_01"); //Выбирай...
+	AI_Output (other, self,"Org_826_Mordrag_Trade_15_00"); //РџРѕРєР°Р¶Рё РјРЅРµ, С‡С‚Рѕ Сѓ С‚РµР±СЏ РµСЃС‚СЊ.
+	AI_Output (self, other,"Org_826_Mordrag_Trade_11_01"); //Р’С‹Р±РёСЂР°Р№...
 	if	(Mordrag_Traded==0)
 	{
 		Log_CreateTopic	(GE_TraderOC,	LOG_NOTE);
-		B_LogEntry		(GE_TraderOC,"Вор Мордраг продает краденное на рынке.");
+		B_LogEntry		(GE_TraderOC,"Р’РѕСЂ РњРѕСЂРґСЂР°Рі РїСЂРѕРґР°РµС‚ РєСЂР°РґРµРЅРЅРѕРµ РЅР° СЂС‹РЅРєРµ.");
 		Mordrag_Traded=1;
 	};
 };
 
 // **************************************************
-//					KURIER FЬR MAGIER
+//					KURIER FР¬R MAGIER
 // **************************************************
 
 instance  Org_826_Mordrag_Courier (C_INFO)
@@ -101,7 +101,7 @@ instance  Org_826_Mordrag_Courier (C_INFO)
 	condition	= Org_826_Mordrag_Courier_Condition;
 	information	= Org_826_Mordrag_Courier_Info;
 	permanent	= 1;
-	description = "Ты действительно один из гонцов магов?";
+	description = "РўС‹ РґРµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ РѕРґРёРЅ РёР· РіРѕРЅС†РѕРІ РјР°РіРѕРІ?";
 };                       
 
 FUNC int  Org_826_Mordrag_Courier_Condition()
@@ -114,10 +114,10 @@ FUNC int  Org_826_Mordrag_Courier_Condition()
 
 FUNC VOID  Org_826_Mordrag_Courier_Info()
 {
-	AI_Output (other, self,"Org_826_Mordrag_Courier_15_00"); //Ты действительно один из гонцов магов?
-	AI_Output (self, other,"Org_826_Mordrag_Courier_11_01"); //А что если так?
-	AI_Output (other, self,"Org_826_Mordrag_Courier_15_02"); //Я должен поговорить с магами. Мне необходимо пробраться в замок.
-	AI_Output (self, other,"Org_826_Mordrag_Courier_11_03"); //Курьеры носят печать, которая служит пропуском в замок. Если ты станешь одним из нас, ты тоже получишь ее.
+	AI_Output (other, self,"Org_826_Mordrag_Courier_15_00"); //РўС‹ РґРµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ РѕРґРёРЅ РёР· РіРѕРЅС†РѕРІ РјР°РіРѕРІ?
+	AI_Output (self, other,"Org_826_Mordrag_Courier_11_01"); //Рђ С‡С‚Рѕ РµСЃР»Рё С‚Р°Рє?
+	AI_Output (other, self,"Org_826_Mordrag_Courier_15_02"); //РЇ РґРѕР»Р¶РµРЅ РїРѕРіРѕРІРѕСЂРёС‚СЊ СЃ РјР°РіР°РјРё. РњРЅРµ РЅРµРѕР±С…РѕРґРёРјРѕ РїСЂРѕР±СЂР°С‚СЊСЃСЏ РІ Р·Р°РјРѕРє.
+	AI_Output (self, other,"Org_826_Mordrag_Courier_11_03"); //РљСѓСЂСЊРµСЂС‹ РЅРѕСЃСЏС‚ РїРµС‡Р°С‚СЊ, РєРѕС‚РѕСЂР°СЏ СЃР»СѓР¶РёС‚ РїСЂРѕРїСѓСЃРєРѕРј РІ Р·Р°РјРѕРє. Р•СЃР»Рё С‚С‹ СЃС‚Р°РЅРµС€СЊ РѕРґРЅРёРј РёР· РЅР°СЃ, С‚С‹ С‚РѕР¶Рµ РїРѕР»СѓС‡РёС€СЊ РµРµ.
 };
 
 // **************************************************
@@ -131,7 +131,7 @@ instance  Org_826_Mordrag_Problem (C_INFO)
 	condition	= Org_826_Mordrag_Problem_Condition;
 	information	= Org_826_Mordrag_Problem_Info;
 	permanent	= 0;
-	description = "У тебя есть проблема.";
+	description = "РЈ С‚РµР±СЏ РµСЃС‚СЊ РїСЂРѕР±Р»РµРјР°.";
 };                       
 
 FUNC int  Org_826_Mordrag_Problem_Condition()
@@ -144,13 +144,13 @@ FUNC int  Org_826_Mordrag_Problem_Condition()
 
 FUNC VOID  Org_826_Mordrag_Problem_Info()
 {
-	AI_Output (other, self,"Org_826_Mordrag_Problem_15_00"); //У тебя есть проблема.
-	AI_Output (self, other,"Org_826_Mordrag_Problem_11_01"); //Да? А у кого их нет?
-	AI_Output (other, self,"Org_826_Mordrag_Problem_15_02"); //Есть люди, которые хотят избавиться от тебя.
-	AI_Output (self, other,"Org_826_Mordrag_Problem_11_03"); //В самом деле? Тогда скажи им, что само по себе их желание не исполнится.
-	AI_Output (other, self,"Org_826_Mordrag_Problem_15_04"); //А почему ты уверен, что они не прислали для этого меня?
-	AI_Output (self, other,"Org_826_Mordrag_Problem_11_05"); //Потому что ты мне кажешься умным парнем. Ты должен понимать, что есть в колонии более выгодные дела, чем работа на Гомеза.
-	AI_Output (self, other,"Org_826_Mordrag_Problem_11_06"); //Нам, в Новом Лагере, нужны разумные люди, и там никто не будет тебе приказывать.
+	AI_Output (other, self,"Org_826_Mordrag_Problem_15_00"); //РЈ С‚РµР±СЏ РµСЃС‚СЊ РїСЂРѕР±Р»РµРјР°.
+	AI_Output (self, other,"Org_826_Mordrag_Problem_11_01"); //Р”Р°? Рђ Сѓ РєРѕРіРѕ РёС… РЅРµС‚?
+	AI_Output (other, self,"Org_826_Mordrag_Problem_15_02"); //Р•СЃС‚СЊ Р»СЋРґРё, РєРѕС‚РѕСЂС‹Рµ С…РѕС‚СЏС‚ РёР·Р±Р°РІРёС‚СЊСЃСЏ РѕС‚ С‚РµР±СЏ.
+	AI_Output (self, other,"Org_826_Mordrag_Problem_11_03"); //Р’ СЃР°РјРѕРј РґРµР»Рµ? РўРѕРіРґР° СЃРєР°Р¶Рё РёРј, С‡С‚Рѕ СЃР°РјРѕ РїРѕ СЃРµР±Рµ РёС… Р¶РµР»Р°РЅРёРµ РЅРµ РёСЃРїРѕР»РЅРёС‚СЃСЏ.
+	AI_Output (other, self,"Org_826_Mordrag_Problem_15_04"); //Рђ РїРѕС‡РµРјСѓ С‚С‹ СѓРІРµСЂРµРЅ, С‡С‚Рѕ РѕРЅРё РЅРµ РїСЂРёСЃР»Р°Р»Рё РґР»СЏ СЌС‚РѕРіРѕ РјРµРЅСЏ?
+	AI_Output (self, other,"Org_826_Mordrag_Problem_11_05"); //РџРѕС‚РѕРјСѓ С‡С‚Рѕ С‚С‹ РјРЅРµ РєР°Р¶РµС€СЊСЃСЏ СѓРјРЅС‹Рј РїР°СЂРЅРµРј. РўС‹ РґРѕР»Р¶РµРЅ РїРѕРЅРёРјР°С‚СЊ, С‡С‚Рѕ РµСЃС‚СЊ РІ РєРѕР»РѕРЅРёРё Р±РѕР»РµРµ РІС‹РіРѕРґРЅС‹Рµ РґРµР»Р°, С‡РµРј СЂР°Р±РѕС‚Р° РЅР° Р“РѕРјРµР·Р°.
+	AI_Output (self, other,"Org_826_Mordrag_Problem_11_06"); //РќР°Рј, РІ РќРѕРІРѕРј Р›Р°РіРµСЂРµ, РЅСѓР¶РЅС‹ СЂР°Р·СѓРјРЅС‹Рµ Р»СЋРґРё, Рё С‚Р°Рј РЅРёРєС‚Рѕ РЅРµ Р±СѓРґРµС‚ С‚РµР±Рµ РїСЂРёРєР°Р·С‹РІР°С‚СЊ.
 };
 
 // **************************************************
@@ -164,7 +164,7 @@ instance  Org_826_Mordrag_NCInfo(C_INFO)
 	condition	= Org_826_Mordrag_NCInfo_Condition;
 	information	= Org_826_Mordrag_NCInfo_Info;
 	permanent	= 0;
-	description = "Расскажи мне о Новом Лагере.";
+	description = "Р Р°СЃСЃРєР°Р¶Рё РјРЅРµ Рѕ РќРѕРІРѕРј Р›Р°РіРµСЂРµ.";
 };                       
 
 FUNC int  Org_826_Mordrag_NCInfo_Condition()
@@ -177,12 +177,12 @@ FUNC int  Org_826_Mordrag_NCInfo_Condition()
 
 FUNC VOID  Org_826_Mordrag_NCInfo_Info()
 {
-	AI_Output (other, self,"Org_826_Mordrag_NCInfo_15_00"); //Расскажи мне о Новом Лагере.
-	AI_Output (self, other,"Org_826_Mordrag_NCInfo_11_01"); //Это самый свободный Лагерь во всей колонии. Никаких Баронов или Гуру - там ты делаешь то, что хочешь.
-	AI_Output (self, other,"Org_826_Mordrag_NCInfo_11_02"); //И у нас есть своя шахта. Правда, добытую в ней руду мы не отдаем этому проклятому королю!
-	AI_Output (other, self,"Org_826_Mordrag_NCInfo_15_03"); //И как вы ее используете?
-	AI_Output (self, other,"Org_826_Mordrag_NCInfo_11_04"); //Наши маги разработали план, как можно выбраться отсюда. Мы собираем руду для его осуществления.
-	AI_Output (self, other,"Org_826_Mordrag_NCInfo_11_05"); //Вот что я тебе скажу, парень: пока Гомез и его люди бездельничают, мы трудимся во имя свободы!
+	AI_Output (other, self,"Org_826_Mordrag_NCInfo_15_00"); //Р Р°СЃСЃРєР°Р¶Рё РјРЅРµ Рѕ РќРѕРІРѕРј Р›Р°РіРµСЂРµ.
+	AI_Output (self, other,"Org_826_Mordrag_NCInfo_11_01"); //Р­С‚Рѕ СЃР°РјС‹Р№ СЃРІРѕР±РѕРґРЅС‹Р№ Р›Р°РіРµСЂСЊ РІРѕ РІСЃРµР№ РєРѕР»РѕРЅРёРё. РќРёРєР°РєРёС… Р‘Р°СЂРѕРЅРѕРІ РёР»Рё Р“СѓСЂСѓ - С‚Р°Рј С‚С‹ РґРµР»Р°РµС€СЊ С‚Рѕ, С‡С‚Рѕ С…РѕС‡РµС€СЊ.
+	AI_Output (self, other,"Org_826_Mordrag_NCInfo_11_02"); //Р Сѓ РЅР°СЃ РµСЃС‚СЊ СЃРІРѕСЏ С€Р°С…С‚Р°. РџСЂР°РІРґР°, РґРѕР±С‹С‚СѓСЋ РІ РЅРµР№ СЂСѓРґСѓ РјС‹ РЅРµ РѕС‚РґР°РµРј СЌС‚РѕРјСѓ РїСЂРѕРєР»СЏС‚РѕРјСѓ РєРѕСЂРѕР»СЋ!
+	AI_Output (other, self,"Org_826_Mordrag_NCInfo_15_03"); //Р РєР°Рє РІС‹ РµРµ РёСЃРїРѕР»СЊР·СѓРµС‚Рµ?
+	AI_Output (self, other,"Org_826_Mordrag_NCInfo_11_04"); //РќР°С€Рё РјР°РіРё СЂР°Р·СЂР°Р±РѕС‚Р°Р»Рё РїР»Р°РЅ, РєР°Рє РјРѕР¶РЅРѕ РІС‹Р±СЂР°С‚СЊСЃСЏ РѕС‚СЃСЋРґР°. РњС‹ СЃРѕР±РёСЂР°РµРј СЂСѓРґСѓ РґР»СЏ РµРіРѕ РѕСЃСѓС‰РµСЃС‚РІР»РµРЅРёСЏ.
+	AI_Output (self, other,"Org_826_Mordrag_NCInfo_11_05"); //Р’РѕС‚ С‡С‚Рѕ СЏ С‚РµР±Рµ СЃРєР°Р¶Сѓ, РїР°СЂРµРЅСЊ: РїРѕРєР° Р“РѕРјРµР· Рё РµРіРѕ Р»СЋРґРё Р±РµР·РґРµР»СЊРЅРёС‡Р°СЋС‚, РјС‹ С‚СЂСѓРґРёРјСЃСЏ РІРѕ РёРјСЏ СЃРІРѕР±РѕРґС‹!
 };
 
 // **************************************************
@@ -196,7 +196,7 @@ instance  Org_826_Mordrag_JoinNewcamp(C_INFO)
 	condition	= Org_826_Mordrag_JoinNewcamp_Condition;
 	information	= Org_826_Mordrag_JoinNewcamp_Info;
 	permanent	= 0;
-	description = "А если я захочу присоединиться к Новому Лагерю...";//kцnntest du mir dabei helfen... ZU LANG
+	description = "Рђ РµСЃР»Рё СЏ Р·Р°С…РѕС‡Сѓ РїСЂРёСЃРѕРµРґРёРЅРёС‚СЊСЃСЏ Рє РќРѕРІРѕРјСѓ Р›Р°РіРµСЂСЋ...";//kС†nntest du mir dabei helfen... ZU LANG
 };                       
 
 FUNC int  Org_826_Mordrag_JoinNewcamp_Condition()
@@ -209,9 +209,9 @@ FUNC int  Org_826_Mordrag_JoinNewcamp_Condition()
 
 FUNC VOID  Org_826_Mordrag_JoinNewcamp_Info()
 {
-	AI_Output (other, self,"Org_826_Mordrag_JoinNewcamp_15_00"); //А если я захочу присоединиться к Новому Лагерю... ты поможешь мне?
-	AI_Output (self, other,"Org_826_Mordrag_JoinNewcamp_11_01"); //Если ты это серьезно, мы можем отправиться туда прямо сейчас. Я отведу тебя к Ларсу - он у нас за главного.
-	AI_Output (self, other,"Org_826_Mordrag_JoinNewcamp_11_02"); //Но если ты по-прежнему хочешь вышвырнуть меня из Лагеря... что ж, давай, действуй!
+	AI_Output (other, self,"Org_826_Mordrag_JoinNewcamp_15_00"); //Рђ РµСЃР»Рё СЏ Р·Р°С…РѕС‡Сѓ РїСЂРёСЃРѕРµРґРёРЅРёС‚СЊСЃСЏ Рє РќРѕРІРѕРјСѓ Р›Р°РіРµСЂСЋ... С‚С‹ РїРѕРјРѕР¶РµС€СЊ РјРЅРµ?
+	AI_Output (self, other,"Org_826_Mordrag_JoinNewcamp_11_01"); //Р•СЃР»Рё С‚С‹ СЌС‚Рѕ СЃРµСЂСЊРµР·РЅРѕ, РјС‹ РјРѕР¶РµРј РѕС‚РїСЂР°РІРёС‚СЊСЃСЏ С‚СѓРґР° РїСЂСЏРјРѕ СЃРµР№С‡Р°СЃ. РЇ РѕС‚РІРµРґСѓ С‚РµР±СЏ Рє Р›Р°СЂСЃСѓ - РѕРЅ Сѓ РЅР°СЃ Р·Р° РіР»Р°РІРЅРѕРіРѕ.
+	AI_Output (self, other,"Org_826_Mordrag_JoinNewcamp_11_02"); //РќРѕ РµСЃР»Рё С‚С‹ РїРѕ-РїСЂРµР¶РЅРµРјСѓ С…РѕС‡РµС€СЊ РІС‹С€РІС‹СЂРЅСѓС‚СЊ РјРµРЅСЏ РёР· Р›Р°РіРµСЂСЏ... С‡С‚Рѕ Р¶, РґР°РІР°Р№, РґРµР№СЃС‚РІСѓР№!
 };
 
 
@@ -222,7 +222,7 @@ instance  Org_826_Mordrag_GotoNewcamp(C_INFO)
 	condition	= Org_826_Mordrag_GotoNewcamp_Condition;
 	information	= Org_826_Mordrag_GotoNewcamp_Info;
 	permanent	= 0;
-	description = "Мы пойдем в Новый Лагерь.";
+	description = "РњС‹ РїРѕР№РґРµРј РІ РќРѕРІС‹Р№ Р›Р°РіРµСЂСЊ.";
 };                       
 
 FUNC int  Org_826_Mordrag_GotoNewcamp_Condition()
@@ -235,8 +235,8 @@ FUNC int  Org_826_Mordrag_GotoNewcamp_Condition()
 
 FUNC VOID  Org_826_Mordrag_GotoNewcamp_Info()
 {
-	AI_Output (other, self,"Org_826_Mordrag_GotoNewcamp_15_00"); //Мы пойдем в Новый Лагерь.
-	AI_Output (self, other,"Org_826_Mordrag_GotoNewcamp_11_01"); //Хорошо! Иди за мной.
+	AI_Output (other, self,"Org_826_Mordrag_GotoNewcamp_15_00"); //РњС‹ РїРѕР№РґРµРј РІ РќРѕРІС‹Р№ Р›Р°РіРµСЂСЊ.
+	AI_Output (self, other,"Org_826_Mordrag_GotoNewcamp_11_01"); //РҐРѕСЂРѕС€Рѕ! РРґРё Р·Р° РјРЅРѕР№.
 	
 	Mordrag_GotoNC_Day = Wld_GetDay();
 	
@@ -249,7 +249,7 @@ FUNC VOID  Org_826_Mordrag_GotoNewcamp_Info()
 		Log_CreateTopic		(CH1_JoinNC, LOG_MISSION);
 		Log_SetTopicStatus	(CH1_JoinNC, LOG_RUNNING);
 	};
-	B_LogEntry				(CH1_JoinNC,"Мордраг согласился показать мне дорогу в Новый Лагерь. Надеюсь, это не ловушка.");
+	B_LogEntry				(CH1_JoinNC,"РњРѕСЂРґСЂР°Рі СЃРѕРіР»Р°СЃРёР»СЃСЏ РїРѕРєР°Р·Р°С‚СЊ РјРЅРµ РґРѕСЂРѕРіСѓ РІ РќРѕРІС‹Р№ Р›Р°РіРµСЂСЊ. РќР°РґРµСЋСЃСЊ, СЌС‚Рѕ РЅРµ Р»РѕРІСѓС€РєР°.");
 
 	self.aivar[AIV_PARTYMEMBER] = TRUE;
 	
@@ -283,23 +283,23 @@ FUNC VOID  Org_826_Mordrag_AtNewcamp_Info()
 {
 	if (Mordrag_GotoNC_Day > (Wld_GetDay()-2))
 	{	
-		AI_Output (self, other,"Org_826_Mordrag_AtNewcamp_11_00"); //Ну, вот мы и пришли.
+		AI_Output (self, other,"Org_826_Mordrag_AtNewcamp_11_00"); //РќСѓ, РІРѕС‚ РјС‹ Рё РїСЂРёС€Р»Рё.
 	}
 	else
 	{
-		AI_Output (self, other,"Org_826_Mordrag_AtNewcamp_LATE_11_00"); //Я уж думал, что не дождусь тебя. Неважно - наконец-то мы здесь!
+		AI_Output (self, other,"Org_826_Mordrag_AtNewcamp_LATE_11_00"); //РЇ СѓР¶ РґСѓРјР°Р», С‡С‚Рѕ РЅРµ РґРѕР¶РґСѓСЃСЊ С‚РµР±СЏ. РќРµРІР°Р¶РЅРѕ - РЅР°РєРѕРЅРµС†-С‚Рѕ РјС‹ Р·РґРµСЃСЊ!
 	};
-	AI_Output (self, other,"Org_826_Mordrag_AtNewcamp_11_01"); //За этими воротами находится Новый Лагерь. Поговори с Ларсом - он поможет тебе. Отдашь ему это кольцо.
-	AI_Output (self, other,"Org_826_Mordrag_AtNewcamp_11_02"); //Понадобится серьезный довод, чтобы Ларс принял тебя. Эта дорогая безделушка будет для тебя пропуском.
-	AI_Output (self, other,"Org_826_Mordrag_AtNewcamp_11_03"); //Подумав, я решил остаться здесь на некоторое время. Я уже заработал достаточно, а в Старом Лагере сейчас становится жарковато.
-	AI_Output (self, other,"Org_826_Mordrag_AtNewcamp_11_04"); //Если понадоблюсь, ты сможешь найти меня в баре - это дом на берегу озера. Береги себя!
-	AI_Output (other, self,"Org_826_Mordrag_AtNewcamp_15_05"); //Увидимся!
+	AI_Output (self, other,"Org_826_Mordrag_AtNewcamp_11_01"); //Р—Р° СЌС‚РёРјРё РІРѕСЂРѕС‚Р°РјРё РЅР°С…РѕРґРёС‚СЃСЏ РќРѕРІС‹Р№ Р›Р°РіРµСЂСЊ. РџРѕРіРѕРІРѕСЂРё СЃ Р›Р°СЂСЃРѕРј - РѕРЅ РїРѕРјРѕР¶РµС‚ С‚РµР±Рµ. РћС‚РґР°С€СЊ РµРјСѓ СЌС‚Рѕ РєРѕР»СЊС†Рѕ.
+	AI_Output (self, other,"Org_826_Mordrag_AtNewcamp_11_02"); //РџРѕРЅР°РґРѕР±РёС‚СЃСЏ СЃРµСЂСЊРµР·РЅС‹Р№ РґРѕРІРѕРґ, С‡С‚РѕР±С‹ Р›Р°СЂСЃ РїСЂРёРЅСЏР» С‚РµР±СЏ. Р­С‚Р° РґРѕСЂРѕРіР°СЏ Р±РµР·РґРµР»СѓС€РєР° Р±СѓРґРµС‚ РґР»СЏ С‚РµР±СЏ РїСЂРѕРїСѓСЃРєРѕРј.
+	AI_Output (self, other,"Org_826_Mordrag_AtNewcamp_11_03"); //РџРѕРґСѓРјР°РІ, СЏ СЂРµС€РёР» РѕСЃС‚Р°С‚СЊСЃСЏ Р·РґРµСЃСЊ РЅР° РЅРµРєРѕС‚РѕСЂРѕРµ РІСЂРµРјСЏ. РЇ СѓР¶Рµ Р·Р°СЂР°Р±РѕС‚Р°Р» РґРѕСЃС‚Р°С‚РѕС‡РЅРѕ, Р° РІ РЎС‚Р°СЂРѕРј Р›Р°РіРµСЂРµ СЃРµР№С‡Р°СЃ СЃС‚Р°РЅРѕРІРёС‚СЃСЏ Р¶Р°СЂРєРѕРІР°С‚Рѕ.
+	AI_Output (self, other,"Org_826_Mordrag_AtNewcamp_11_04"); //Р•СЃР»Рё РїРѕРЅР°РґРѕР±Р»СЋСЃСЊ, С‚С‹ СЃРјРѕР¶РµС€СЊ РЅР°Р№С‚Рё РјРµРЅСЏ РІ Р±Р°СЂРµ - СЌС‚Рѕ РґРѕРј РЅР° Р±РµСЂРµРіСѓ РѕР·РµСЂР°. Р‘РµСЂРµРіРё СЃРµР±СЏ!
+	AI_Output (other, self,"Org_826_Mordrag_AtNewcamp_15_05"); //РЈРІРёРґРёРјСЃСЏ!
 	
 	CreateInvItems  (self, MordragsRing, 1);
 	B_GiveInvItems	(self, other, MordragsRing, 1);
 
 	B_GiveXP		(XP_ArrivedWithMordrag);	
-	B_LogEntry		(CH1_JoinNC,"Вот мы и стоим перед воротами Нового Лагеря. Мордраг дал мне кольцо, которое я должен передать Ларсу, лидеру воров, если решу присоединиться к этому Лагерю. Сам же Мордраг останется в баре.");
+	B_LogEntry		(CH1_JoinNC,"Р’РѕС‚ РјС‹ Рё СЃС‚РѕРёРј РїРµСЂРµРґ РІРѕСЂРѕС‚Р°РјРё РќРѕРІРѕРіРѕ Р›Р°РіРµСЂСЏ. РњРѕСЂРґСЂР°Рі РґР°Р» РјРЅРµ РєРѕР»СЊС†Рѕ, РєРѕС‚РѕСЂРѕРµ СЏ РґРѕР»Р¶РµРЅ РїРµСЂРµРґР°С‚СЊ Р›Р°СЂСЃСѓ, Р»РёРґРµСЂСѓ РІРѕСЂРѕРІ, РµСЃР»Рё СЂРµС€Сѓ РїСЂРёСЃРѕРµРґРёРЅРёС‚СЊСЃСЏ Рє СЌС‚РѕРјСѓ Р›Р°РіРµСЂСЋ. РЎР°Рј Р¶Рµ РњРѕСЂРґСЂР°Рі РѕСЃС‚Р°РЅРµС‚СЃСЏ РІ Р±Р°СЂРµ.");
 	var C_NPC lares; lares = Hlp_GetNpc(Org_801_Lares);
 	Lares.aivar [AIV_FINDABLE]=TRUE;
 	
@@ -322,7 +322,7 @@ instance  Org_826_Mordrag_Fight (C_INFO)
 	condition	= Org_826_Mordrag_Fight_Condition;
 	information	= Org_826_Mordrag_Fight_Info;
 	permanent	= 0;
-	description = "В этом Лагере есть место только для одного из нас!";
+	description = "Р’ СЌС‚РѕРј Р›Р°РіРµСЂРµ РµСЃС‚СЊ РјРµСЃС‚Рѕ С‚РѕР»СЊРєРѕ РґР»СЏ РѕРґРЅРѕРіРѕ РёР· РЅР°СЃ!";
 };                       
 
 FUNC int  Org_826_Mordrag_Fight_Condition()
@@ -335,19 +335,19 @@ FUNC int  Org_826_Mordrag_Fight_Condition()
 
 FUNC VOID  Org_826_Mordrag_Fight_Info()
 {
-	AI_Output (other, self,"Org_826_Mordrag_Fight_15_00"); //В этом Лагере останется только один из нас!
-	AI_Output (self, other,"Org_826_Mordrag_Fight_11_01"); //Прошу прощения?
+	AI_Output (other, self,"Org_826_Mordrag_Fight_15_00"); //Р’ СЌС‚РѕРј Р›Р°РіРµСЂРµ РѕСЃС‚Р°РЅРµС‚СЃСЏ С‚РѕР»СЊРєРѕ РѕРґРёРЅ РёР· РЅР°СЃ!
+	AI_Output (self, other,"Org_826_Mordrag_Fight_11_01"); //РџСЂРѕС€Сѓ РїСЂРѕС‰РµРЅРёСЏ?
 	
 	Info_ClearChoices(Org_826_Mordrag_Fight);
-	Info_AddChoice   (Org_826_Mordrag_Fight,"Я сказал, выметайся отсюда!",Info_Mordrag_Fight_GetAway);
-	Info_AddChoice	 (Org_826_Mordrag_Fight,"Здесь нет места тем, кто крадет у Баронов!",Info_Mordrag_Fight_OreBarons);
-	Info_AddChoice	 (Org_826_Mordrag_Fight,"Меня послал Торус. Он хочет избавиться от тебя раз и навсегда.",Info_Mordrag_Fight_Thorus);
+	Info_AddChoice   (Org_826_Mordrag_Fight,"РЇ СЃРєР°Р·Р°Р», РІС‹РјРµС‚Р°Р№СЃСЏ РѕС‚СЃСЋРґР°!",Info_Mordrag_Fight_GetAway);
+	Info_AddChoice	 (Org_826_Mordrag_Fight,"Р—РґРµСЃСЊ РЅРµС‚ РјРµСЃС‚Р° С‚РµРј, РєС‚Рѕ РєСЂР°РґРµС‚ Сѓ Р‘Р°СЂРѕРЅРѕРІ!",Info_Mordrag_Fight_OreBarons);
+	Info_AddChoice	 (Org_826_Mordrag_Fight,"РњРµРЅСЏ РїРѕСЃР»Р°Р» РўРѕСЂСѓСЃ. РћРЅ С…РѕС‡РµС‚ РёР·Р±Р°РІРёС‚СЊСЃСЏ РѕС‚ С‚РµР±СЏ СЂР°Р· Рё РЅР°РІСЃРµРіРґР°.",Info_Mordrag_Fight_Thorus);
 };
 
 FUNC VOID Info_Mordrag_Fight_GetAway()
 {
-	AI_Output (other, self,"Info_Mordrag_Fight_GetAway_15_00"); //Я сказал, выметайся отсюда!
-	AI_Output (self, other,"Info_Mordrag_Fight_GetAway_11_01"); //Большие слова маленького человека...
+	AI_Output (other, self,"Info_Mordrag_Fight_GetAway_15_00"); //РЇ СЃРєР°Р·Р°Р», РІС‹РјРµС‚Р°Р№СЃСЏ РѕС‚СЃСЋРґР°!
+	AI_Output (self, other,"Info_Mordrag_Fight_GetAway_11_01"); //Р‘РѕР»СЊС€РёРµ СЃР»РѕРІР° РјР°Р»РµРЅСЊРєРѕРіРѕ С‡РµР»РѕРІРµРєР°...
 	
 	AI_StopProcessInfos(self);
 	Npc_SetTarget(self, other);
@@ -356,8 +356,8 @@ FUNC VOID Info_Mordrag_Fight_GetAway()
 
 FUNC VOID Info_Mordrag_Fight_OreBarons()
 {
-	AI_Output (other, self,"Info_Mordrag_Fight_OreBarons_15_00"); //Здесь нет места тем, кто крадет у Баронов!
-	AI_Output (self, other,"Info_Mordrag_Fight_OreBarons_11_01"); //А, так ты об этом! Что же ты сразу не сказал?..
+	AI_Output (other, self,"Info_Mordrag_Fight_OreBarons_15_00"); //Р—РґРµСЃСЊ РЅРµС‚ РјРµСЃС‚Р° С‚РµРј, РєС‚Рѕ РєСЂР°РґРµС‚ Сѓ Р‘Р°СЂРѕРЅРѕРІ!
+	AI_Output (self, other,"Info_Mordrag_Fight_OreBarons_11_01"); //Рђ, С‚Р°Рє С‚С‹ РѕР± СЌС‚РѕРј! Р§С‚Рѕ Р¶Рµ С‚С‹ СЃСЂР°Р·Сѓ РЅРµ СЃРєР°Р·Р°Р»?..
 	
 	MordragKO_PlayerChoseOreBarons = TRUE;
 	
@@ -368,8 +368,8 @@ FUNC VOID Info_Mordrag_Fight_OreBarons()
 
 FUNC VOID Info_Mordrag_Fight_Thorus()
 {
-	AI_Output (other, self,"Info_Mordrag_Fight_Thorus_15_00"); //Меня послал Торус. Он хочет избавиться от тебя раз и навсегда.
-	AI_Output (self, other,"Info_Mordrag_Fight_Thorus_11_01"); //В самом деле? Торус? Х-м, это все, что я хотел знать...
+	AI_Output (other, self,"Info_Mordrag_Fight_Thorus_15_00"); //РњРµРЅСЏ РїРѕСЃР»Р°Р» РўРѕСЂСѓСЃ. РћРЅ С…РѕС‡РµС‚ РёР·Р±Р°РІРёС‚СЊСЃСЏ РѕС‚ С‚РµР±СЏ СЂР°Р· Рё РЅР°РІСЃРµРіРґР°.
+	AI_Output (self, other,"Info_Mordrag_Fight_Thorus_11_01"); //Р’ СЃР°РјРѕРј РґРµР»Рµ? РўРѕСЂСѓСЃ? РҐ-Рј, СЌС‚Рѕ РІСЃРµ, С‡С‚Рѕ СЏ С…РѕС‚РµР» Р·РЅР°С‚СЊ...
 	
 	MordragKO_PlayerChoseThorus = TRUE;
 	
@@ -405,13 +405,13 @@ FUNC int  Org_826_Mordrag_HauAb_Condition()
 
 FUNC VOID  Org_826_Mordrag_HauAb_Info()
 {
-	AI_Output (other, self,"Org_826_HauAb_GotoNewcamp_15_00"); //Убирайся!..
+	AI_Output (other, self,"Org_826_HauAb_GotoNewcamp_15_00"); //РЈР±РёСЂР°Р№СЃСЏ!..
 	
 	AI_StopProcessInfos	(self);
 	
 	MordragKO_HauAb = TRUE;
 	
-	B_LogEntry    (CH1_MordragKO,"Я хорошенько объяснил Мордрагу, что в Старом Лагере ему появляться не следует.");
+	B_LogEntry    (CH1_MordragKO,"РЇ С…РѕСЂРѕС€РµРЅСЊРєРѕ РѕР±СЉСЏСЃРЅРёР» РњРѕСЂРґСЂР°РіСѓ, С‡С‚Рѕ РІ РЎС‚Р°СЂРѕРј Р›Р°РіРµСЂРµ РµРјСѓ РїРѕСЏРІР»СЏС‚СЊСЃСЏ РЅРµ СЃР»РµРґСѓРµС‚.");
 
 	Npc_ExchangeRoutine	(self, "Start");
 };
@@ -427,7 +427,7 @@ instance  Org_826_Mordrag_GotoKalom(C_INFO)
 	condition	= Org_826_Mordrag_GotoKalom_Condition;
 	information	= Org_826_Mordrag_GotoKalom_Info;
 	permanent	= 0;
-	description = "У меня послание от Ларса.";
+	description = "РЈ РјРµРЅСЏ РїРѕСЃР»Р°РЅРёРµ РѕС‚ Р›Р°СЂСЃР°.";
 };                       
 
 FUNC int  Org_826_Mordrag_GotoKalom_Condition()
@@ -441,12 +441,12 @@ FUNC int  Org_826_Mordrag_GotoKalom_Condition()
 
 FUNC VOID  Org_826_Mordrag_GotoKalom_Info()
 {
-	AI_Output (other, self,"Org_826_Mordrag_GotoKalom_15_00"); //У меня послание от Ларса.
-	AI_Output (self, other,"Org_826_Mordrag_GotoKalom_11_01"); //Говори.
-	AI_Output (other, self,"Org_826_Mordrag_GotoKalom_15_02"); //Ларс хочет знать, что происходит в Лагере Сектантов. Он поручил это задание тебе.
-	AI_Output (self, other,"Org_826_Mordrag_GotoKalom_11_03"); //Мне кажется, все это как-то разрешится само собой...
+	AI_Output (other, self,"Org_826_Mordrag_GotoKalom_15_00"); //РЈ РјРµРЅСЏ РїРѕСЃР»Р°РЅРёРµ РѕС‚ Р›Р°СЂСЃР°.
+	AI_Output (self, other,"Org_826_Mordrag_GotoKalom_11_01"); //Р“РѕРІРѕСЂРё.
+	AI_Output (other, self,"Org_826_Mordrag_GotoKalom_15_02"); //Р›Р°СЂСЃ С…РѕС‡РµС‚ Р·РЅР°С‚СЊ, С‡С‚Рѕ РїСЂРѕРёСЃС…РѕРґРёС‚ РІ Р›Р°РіРµСЂРµ РЎРµРєС‚Р°РЅС‚РѕРІ. РћРЅ РїРѕСЂСѓС‡РёР» СЌС‚Рѕ Р·Р°РґР°РЅРёРµ С‚РµР±Рµ.
+	AI_Output (self, other,"Org_826_Mordrag_GotoKalom_11_03"); //РњРЅРµ РєР°Р¶РµС‚СЃСЏ, РІСЃРµ СЌС‚Рѕ РєР°Рє-С‚Рѕ СЂР°Р·СЂРµС€РёС‚СЃСЏ СЃР°РјРѕ СЃРѕР±РѕР№...
 
-	B_LogEntry	(CH1_JoinNC,"Я передал Мордрагу слова Ларса. Он что-то пробормотал в ответ. Что-то о том, что все само собой улаживается. Понятия не имею, о чем это он!");
+	B_LogEntry	(CH1_JoinNC,"РЇ РїРµСЂРµРґР°Р» РњРѕСЂРґСЂР°РіСѓ СЃР»РѕРІР° Р›Р°СЂСЃР°. РћРЅ С‡С‚Рѕ-С‚Рѕ РїСЂРѕР±РѕСЂРјРѕС‚Р°Р» РІ РѕС‚РІРµС‚. Р§С‚Рѕ-С‚Рѕ Рѕ С‚РѕРј, С‡С‚Рѕ РІСЃРµ СЃР°РјРѕ СЃРѕР±РѕР№ СѓР»Р°Р¶РёРІР°РµС‚СЃСЏ. РџРѕРЅСЏС‚РёСЏ РЅРµ РёРјРµСЋ, Рѕ С‡РµРј СЌС‚Рѕ РѕРЅ!");
 };
 
 // **************************************************
@@ -462,7 +462,7 @@ instance  Org_826_Mordrag_GotoKalomNOW(C_INFO)
 	condition	= Org_826_Mordrag_GotoKalomNOW_Condition;
 	information	= Org_826_Mordrag_GotoKalomNOW_Info;
 	permanent	= 0;
-	description = "Ларс велел мне помочь тебе в деле сектантов.";
+	description = "Р›Р°СЂСЃ РІРµР»РµР» РјРЅРµ РїРѕРјРѕС‡СЊ С‚РµР±Рµ РІ РґРµР»Рµ СЃРµРєС‚Р°РЅС‚РѕРІ.";
 };                       
 
 FUNC int  Org_826_Mordrag_GotoKalomNOW_Condition()
@@ -476,36 +476,36 @@ FUNC int  Org_826_Mordrag_GotoKalomNOW_Condition()
 
 FUNC VOID  Org_826_Mordrag_GotoKalomNOW_Info()
 {
-	AI_Output			(other, self,"Org_826_Mordrag_GotoKalomNOW_15_00"); //Ларс велел мне помочь тебе в деле сектантов.
-	AI_Output			(self, other,"Org_826_Mordrag_GotoKalomNOW_11_01"); //Видишь... Я знал, что мне не придется заниматься этим самому.
-	AI_Output			(other, self,"Org_826_Mordrag_GotoKalomNOW_15_02"); //Ты хочешь, чтобы я сделал все от начала до конца?
-	AI_Output			(self, other,"Org_826_Mordrag_GotoKalomNOW_11_03"); //Я уверен, ты справишься. Слушай: очень важно выяснить правду в этой истории с Церемонией.
-	AI_Output			(self, other,"Org_826_Mordrag_GotoKalomNOW_11_04"); //Я знаю, что  придурки собираются призывать духа. Лично я не верю во все эти россказни о Спящем, но ясно одно:
-	AI_Output			(self, other,"Org_826_Mordrag_GotoKalomNOW_11_05"); //Гуру обладают большой силой. Мы должны знать о том, что происходит. Ты следишь за моей мыслью?
+	AI_Output			(other, self,"Org_826_Mordrag_GotoKalomNOW_15_00"); //Р›Р°СЂСЃ РІРµР»РµР» РјРЅРµ РїРѕРјРѕС‡СЊ С‚РµР±Рµ РІ РґРµР»Рµ СЃРµРєС‚Р°РЅС‚РѕРІ.
+	AI_Output			(self, other,"Org_826_Mordrag_GotoKalomNOW_11_01"); //Р’РёРґРёС€СЊ... РЇ Р·РЅР°Р», С‡С‚Рѕ РјРЅРµ РЅРµ РїСЂРёРґРµС‚СЃСЏ Р·Р°РЅРёРјР°С‚СЊСЃСЏ СЌС‚РёРј СЃР°РјРѕРјСѓ.
+	AI_Output			(other, self,"Org_826_Mordrag_GotoKalomNOW_15_02"); //РўС‹ С…РѕС‡РµС€СЊ, С‡С‚РѕР±С‹ СЏ СЃРґРµР»Р°Р» РІСЃРµ РѕС‚ РЅР°С‡Р°Р»Р° РґРѕ РєРѕРЅС†Р°?
+	AI_Output			(self, other,"Org_826_Mordrag_GotoKalomNOW_11_03"); //РЇ СѓРІРµСЂРµРЅ, С‚С‹ СЃРїСЂР°РІРёС€СЊСЃСЏ. РЎР»СѓС€Р°Р№: РѕС‡РµРЅСЊ РІР°Р¶РЅРѕ РІС‹СЏСЃРЅРёС‚СЊ РїСЂР°РІРґСѓ РІ СЌС‚РѕР№ РёСЃС‚РѕСЂРёРё СЃ Р¦РµСЂРµРјРѕРЅРёРµР№.
+	AI_Output			(self, other,"Org_826_Mordrag_GotoKalomNOW_11_04"); //РЇ Р·РЅР°СЋ, С‡С‚Рѕ  РїСЂРёРґСѓСЂРєРё СЃРѕР±РёСЂР°СЋС‚СЃСЏ РїСЂРёР·С‹РІР°С‚СЊ РґСѓС…Р°. Р›РёС‡РЅРѕ СЏ РЅРµ РІРµСЂСЋ РІРѕ РІСЃРµ СЌС‚Рё СЂРѕСЃСЃРєР°Р·РЅРё Рѕ РЎРїСЏС‰РµРј, РЅРѕ СЏСЃРЅРѕ РѕРґРЅРѕ:
+	AI_Output			(self, other,"Org_826_Mordrag_GotoKalomNOW_11_05"); //Р“СѓСЂСѓ РѕР±Р»Р°РґР°СЋС‚ Р±РѕР»СЊС€РѕР№ СЃРёР»РѕР№. РњС‹ РґРѕР»Р¶РЅС‹ Р·РЅР°С‚СЊ Рѕ С‚РѕРј, С‡С‚Рѕ РїСЂРѕРёСЃС…РѕРґРёС‚. РўС‹ СЃР»РµРґРёС€СЊ Р·Р° РјРѕРµР№ РјС‹СЃР»СЊСЋ?
 
-	B_LogEntry			(CH1_GotoPsiCamp,"Мордраг решил предоставить мне возможность заняться разведкой в Болотном Лагере. Гуру готовятся к большой церемонии, но мне нужно узнать больше деталей.");
+	B_LogEntry			(CH1_GotoPsiCamp,"РњРѕСЂРґСЂР°Рі СЂРµС€РёР» РїСЂРµРґРѕСЃС‚Р°РІРёС‚СЊ РјРЅРµ РІРѕР·РјРѕР¶РЅРѕСЃС‚СЊ Р·Р°РЅСЏС‚СЊСЃСЏ СЂР°Р·РІРµРґРєРѕР№ РІ Р‘РѕР»РѕС‚РЅРѕРј Р›Р°РіРµСЂРµ. Р“СѓСЂСѓ РіРѕС‚РѕРІСЏС‚СЃСЏ Рє Р±РѕР»СЊС€РѕР№ С†РµСЂРµРјРѕРЅРёРё, РЅРѕ РјРЅРµ РЅСѓР¶РЅРѕ СѓР·РЅР°С‚СЊ Р±РѕР»СЊС€Рµ РґРµС‚Р°Р»РµР№.");
 	B_GiveXP			(XP_AssistMordrag);	
 	
 	Lares_InformMordrag = LOG_SUCCESS;
 	Mordrag_GotoKalom = LOG_RUNNING;
 	
 	Info_ClearChoices	(Org_826_Mordrag_GotoKalomNOW);
-	Info_AddChoice		(Org_826_Mordrag_GotoKalomNOW,"Ты можешь говорить более конкретно?",Org_826_Mordrag_GotoKalomNOW_Precise);
-	Info_AddChoice		(Org_826_Mordrag_GotoKalomNOW,"Посмотрим, что мне удастся сделать.",Org_826_Mordrag_GotoKalomNOW_DoIt);
+	Info_AddChoice		(Org_826_Mordrag_GotoKalomNOW,"РўС‹ РјРѕР¶РµС€СЊ РіРѕРІРѕСЂРёС‚СЊ Р±РѕР»РµРµ РєРѕРЅРєСЂРµС‚РЅРѕ?",Org_826_Mordrag_GotoKalomNOW_Precise);
+	Info_AddChoice		(Org_826_Mordrag_GotoKalomNOW,"РџРѕСЃРјРѕС‚СЂРёРј, С‡С‚Рѕ РјРЅРµ СѓРґР°СЃС‚СЃСЏ СЃРґРµР»Р°С‚СЊ.",Org_826_Mordrag_GotoKalomNOW_DoIt);
 
 };
 
 func void Org_826_Mordrag_GotoKalomNOW_Precise()
 {
-	AI_Output (other, self,"Org_826_Mordrag_GotoKalomNOW_Precise_15_00"); //Ты можешь говорить более конкретно?
-	AI_Output (self, other,"Org_826_Mordrag_GotoKalomNOW_Precise_11_01"); //Пообщайся с Лестером. Однажды я довольно долго жил в Лагере Сектантов, и  тогда он помогал мне. Лестер - наш человек.
-	B_LogEntry(CH1_GotoPsiCamp,"Я должен поговорить с Лестером в Лагере Братства. Похоже, ему можно доверять, к тому же он и раньше помогал Мордрагу.");
+	AI_Output (other, self,"Org_826_Mordrag_GotoKalomNOW_Precise_15_00"); //РўС‹ РјРѕР¶РµС€СЊ РіРѕРІРѕСЂРёС‚СЊ Р±РѕР»РµРµ РєРѕРЅРєСЂРµС‚РЅРѕ?
+	AI_Output (self, other,"Org_826_Mordrag_GotoKalomNOW_Precise_11_01"); //РџРѕРѕР±С‰Р°Р№СЃСЏ СЃ Р›РµСЃС‚РµСЂРѕРј. РћРґРЅР°Р¶РґС‹ СЏ РґРѕРІРѕР»СЊРЅРѕ РґРѕР»РіРѕ Р¶РёР» РІ Р›Р°РіРµСЂРµ РЎРµРєС‚Р°РЅС‚РѕРІ, Рё  С‚РѕРіРґР° РѕРЅ РїРѕРјРѕРіР°Р» РјРЅРµ. Р›РµСЃС‚РµСЂ - РЅР°С€ С‡РµР»РѕРІРµРє.
+	B_LogEntry(CH1_GotoPsiCamp,"РЇ РґРѕР»Р¶РµРЅ РїРѕРіРѕРІРѕСЂРёС‚СЊ СЃ Р›РµСЃС‚РµСЂРѕРј РІ Р›Р°РіРµСЂРµ Р‘СЂР°С‚СЃС‚РІР°. РџРѕС…РѕР¶Рµ, РµРјСѓ РјРѕР¶РЅРѕ РґРѕРІРµСЂСЏС‚СЊ, Рє С‚РѕРјСѓ Р¶Рµ РѕРЅ Рё СЂР°РЅСЊС€Рµ РїРѕРјРѕРіР°Р» РњРѕСЂРґСЂР°РіСѓ.");
 };
 
 func void Org_826_Mordrag_GotoKalomNOW_DoIt()
 {
-	AI_Output (other, self,"Org_826_Mordrag_GotoKalomNOW_DoIt_15_00"); //Посмотрим, что мне удастся сделать.
-	AI_Output (self, other,"Org_826_Mordrag_GotoKalomNOW_DoIt_11_01"); //Как только ты узнаешь об их планах, немедленно возвращайся.
+	AI_Output (other, self,"Org_826_Mordrag_GotoKalomNOW_DoIt_15_00"); //РџРѕСЃРјРѕС‚СЂРёРј, С‡С‚Рѕ РјРЅРµ СѓРґР°СЃС‚СЃСЏ СЃРґРµР»Р°С‚СЊ.
+	AI_Output (self, other,"Org_826_Mordrag_GotoKalomNOW_DoIt_11_01"); //РљР°Рє С‚РѕР»СЊРєРѕ С‚С‹ СѓР·РЅР°РµС€СЊ РѕР± РёС… РїР»Р°РЅР°С…, РЅРµРјРµРґР»РµРЅРЅРѕ РІРѕР·РІСЂР°С‰Р°Р№СЃСЏ.
 	Info_ClearChoices	(Org_826_Mordrag_GotoKalomNOW);
 	AI_StopProcessInfos	(self);
 };
@@ -521,7 +521,7 @@ instance  Org_826_Mordrag_RUNNING (C_INFO)
 	condition	= Org_826_Mordrag_RUNNING_Condition;
 	information	= Org_826_Mordrag_RUNNING_Info;
 	permanent	= 1;
-	description = "По поводу сектантов...";
+	description = "РџРѕ РїРѕРІРѕРґСѓ СЃРµРєС‚Р°РЅС‚РѕРІ...";
 };                       
 
 FUNC int  Org_826_Mordrag_RUNNING_Condition()
@@ -534,40 +534,40 @@ FUNC int  Org_826_Mordrag_RUNNING_Condition()
 
 FUNC VOID  Org_826_Mordrag_RUNNING_Info()
 {
-	AI_Output			(other, self,"Org_826_Mordrag_RUNNING_15_00"); //По поводу сектантов...
-	AI_Output			(self, other,"Org_826_Mordrag_RUNNING_11_01"); //Что?
+	AI_Output			(other, self,"Org_826_Mordrag_RUNNING_15_00"); //РџРѕ РїРѕРІРѕРґСѓ СЃРµРєС‚Р°РЅС‚РѕРІ...
+	AI_Output			(self, other,"Org_826_Mordrag_RUNNING_11_01"); //Р§С‚Рѕ?
 
 	if	(CorKalom_BringMCQBalls == LOG_SUCCESS)
 	{
 		if (Kapitel >= 3)
 		{
-			AI_Output		(other, self,"Org_826_Mordrag_RUNNING_15_04"); //Состоялась Великая Церемония.
-			AI_Output		(self, other,"Org_826_Mordrag_RUNNING_11_09"); //Да ну?! Ты хочешь сказать, что побывал на этом сборище?
+			AI_Output		(other, self,"Org_826_Mordrag_RUNNING_15_04"); //РЎРѕСЃС‚РѕСЏР»Р°СЃСЊ Р’РµР»РёРєР°СЏ Р¦РµСЂРµРјРѕРЅРёСЏ.
+			AI_Output		(self, other,"Org_826_Mordrag_RUNNING_11_09"); //Р”Р° РЅСѓ?! РўС‹ С…РѕС‡РµС€СЊ СЃРєР°Р·Р°С‚СЊ, С‡С‚Рѕ РїРѕР±С‹РІР°Р» РЅР° СЌС‚РѕРј СЃР±РѕСЂРёС‰Рµ?
 		}
 		else
 		{
-			AI_Output		(other, self,"Org_826_Mordrag_RUNNING_15_06"); //Они попытались укрепить свой дух и призвать Спящего с помощью эликсира, полученного из яиц ползунов.
-			AI_Output		(self, other,"Org_826_Mordrag_RUNNING_11_07"); //Что за бред! Эти придурки действительно верят во все это, так ведь?
+			AI_Output		(other, self,"Org_826_Mordrag_RUNNING_15_06"); //РћРЅРё РїРѕРїС‹С‚Р°Р»РёСЃСЊ СѓРєСЂРµРїРёС‚СЊ СЃРІРѕР№ РґСѓС… Рё РїСЂРёР·РІР°С‚СЊ РЎРїСЏС‰РµРіРѕ СЃ РїРѕРјРѕС‰СЊСЋ СЌР»РёРєСЃРёСЂР°, РїРѕР»СѓС‡РµРЅРЅРѕРіРѕ РёР· СЏРёС† РїРѕР»Р·СѓРЅРѕРІ.
+			AI_Output		(self, other,"Org_826_Mordrag_RUNNING_11_07"); //Р§С‚Рѕ Р·Р° Р±СЂРµРґ! Р­С‚Рё РїСЂРёРґСѓСЂРєРё РґРµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ РІРµСЂСЏС‚ РІРѕ РІСЃРµ СЌС‚Рѕ, С‚Р°Рє РІРµРґСЊ?
 		};
-		AI_Output		(other, self,"Org_826_Mordrag_RUNNING_15_10"); //Посмотрим на результат.
-		AI_Output		(self, other,"Org_826_Mordrag_RUNNING_11_11"); //Верно. Дай знать, когда Гуру закончат выставлять себя идиотами.
+		AI_Output		(other, self,"Org_826_Mordrag_RUNNING_15_10"); //РџРѕСЃРјРѕС‚СЂРёРј РЅР° СЂРµР·СѓР»СЊС‚Р°С‚.
+		AI_Output		(self, other,"Org_826_Mordrag_RUNNING_11_11"); //Р’РµСЂРЅРѕ. Р”Р°Р№ Р·РЅР°С‚СЊ, РєРѕРіРґР° Р“СѓСЂСѓ Р·Р°РєРѕРЅС‡Р°С‚ РІС‹СЃС‚Р°РІР»СЏС‚СЊ СЃРµР±СЏ РёРґРёРѕС‚Р°РјРё.
 
 		Mordrag_GotoKalom = LOG_SUCCESS;
 		B_GiveXP			(XP_ReportToMordrag);
 		Log_SetTopicStatus	(CH1_GotoPsiCamp,	LOG_SUCCESS);
-		B_LogEntry			(CH1_GotoPsiCamp,"Мордраг чуть от смеха не лопнул, когда я ему рассказал о яйцах ползунов. Похоже, что теперь он окончательно потерял интерес к подглядыванию за Гуру. Будем считать, что дело улажено!");
+		B_LogEntry			(CH1_GotoPsiCamp,"РњРѕСЂРґСЂР°Рі С‡СѓС‚СЊ РѕС‚ СЃРјРµС…Р° РЅРµ Р»РѕРїРЅСѓР», РєРѕРіРґР° СЏ РµРјСѓ СЂР°СЃСЃРєР°Р·Р°Р» Рѕ СЏР№С†Р°С… РїРѕР»Р·СѓРЅРѕРІ. РџРѕС…РѕР¶Рµ, С‡С‚Рѕ С‚РµРїРµСЂСЊ РѕРЅ РѕРєРѕРЅС‡Р°С‚РµР»СЊРЅРѕ РїРѕС‚РµСЂСЏР» РёРЅС‚РµСЂРµСЃ Рє РїРѕРґРіР»СЏРґС‹РІР°РЅРёСЋ Р·Р° Р“СѓСЂСѓ. Р‘СѓРґРµРј СЃС‡РёС‚Р°С‚СЊ, С‡С‚Рѕ РґРµР»Рѕ СѓР»Р°Р¶РµРЅРѕ!");
 	}
 	else
 	{
-		AI_Output		(other, self,"Org_826_Mordrag_RUNNING_15_02"); //Пока ничего нового.
-		AI_Output		(self, other,"Org_826_Mordrag_RUNNING_11_03"); //Займись делом.
+		AI_Output		(other, self,"Org_826_Mordrag_RUNNING_15_02"); //РџРѕРєР° РЅРёС‡РµРіРѕ РЅРѕРІРѕРіРѕ.
+		AI_Output		(self, other,"Org_826_Mordrag_RUNNING_11_03"); //Р—Р°Р№РјРёСЃСЊ РґРµР»РѕРј.
 	};
 
 /*	
 	//SN: Werde nicht gebraucht, da sie nicht zur Kapitel 2-6-Story passen!!!
 		AI_Output		(other, self,"Org_826_Mordrag_RUNNING_15_08"); //Ich hab' die Eier bei mir.
 		
-		AI_Output		(self, other,"Org_826_Mordrag_RUNNING_11_05"); //(sarkastisch) Hab' ich auch gemerkt. Diese verdammten Sektenspinner haben Gomez die alte Mine gekostet. Wird nicht mehr lange dauern, dann stehen seine Gardisten bei UNS vor der Tьr, um sich ihr Erz abzuholen...
+		AI_Output		(self, other,"Org_826_Mordrag_RUNNING_11_05"); //(sarkastisch) Hab' ich auch gemerkt. Diese verdammten Sektenspinner haben Gomez die alte Mine gekostet. Wird nicht mehr lange dauern, dann stehen seine Gardisten bei UNS vor der TСЊr, um sich ihr Erz abzuholen...
 */
 };
 	

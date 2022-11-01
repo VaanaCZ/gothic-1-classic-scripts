@@ -21,11 +21,11 @@ FUNC VOID  PC_Psionic_Exit_Info()
 {
 	if (self.aivar[AIV_PARTYMEMBER])
 	{
-		AI_Output 	(self, hero,"Info_Lester_EXIT_05_01"); //Идем!
+		AI_Output 	(self, hero,"Info_Lester_EXIT_05_01"); //РРґРµРј!
 	}
 	else
 	{
-		AI_Output 	(self, hero,"Info_Lester_EXIT_05_02"); //Да хранит тебя Спящий!
+		AI_Output 	(self, hero,"Info_Lester_EXIT_05_02"); //Р”Р° С…СЂР°РЅРёС‚ С‚РµР±СЏ РЎРїСЏС‰РёР№!
 	};
 	
 	AI_StopProcessInfos	( self );
@@ -54,7 +54,7 @@ FUNC int  DIA_Lester_Sakrileg_Condition()
 
 FUNC VOID  DIA_Lester_Sakrileg_Info()
 {
-	AI_Output (self, other,"DIA_Lester_Sakrileg_05_00"); //Ты обратился к Гуру! Никогда больше не делай этого! Это большой грех! Если господин захочет поговорить с тобой, он САМ обратится к тебе.
+	AI_Output (self, other,"DIA_Lester_Sakrileg_05_00"); //РўС‹ РѕР±СЂР°С‚РёР»СЃСЏ Рє Р“СѓСЂСѓ! РќРёРєРѕРіРґР° Р±РѕР»СЊС€Рµ РЅРµ РґРµР»Р°Р№ СЌС‚РѕРіРѕ! Р­С‚Рѕ Р±РѕР»СЊС€РѕР№ РіСЂРµС…! Р•СЃР»Рё РіРѕСЃРїРѕРґРёРЅ Р·Р°С…РѕС‡РµС‚ РїРѕРіРѕРІРѕСЂРёС‚СЊ СЃ С‚РѕР±РѕР№, РѕРЅ РЎРђРњ РѕР±СЂР°С‚РёС‚СЃСЏ Рє С‚РµР±Рµ.
 };
 
 // **************************************************
@@ -68,7 +68,7 @@ instance  DIA_Lester_Hallo (C_INFO)
 	condition	=  DIA_Lester_Hallo_Condition;
 	information	=  DIA_Lester_Hallo_Info;
 	permanent	=  0;
-	description = "Как тебя зовут?";
+	description = "РљР°Рє С‚РµР±СЏ Р·РѕРІСѓС‚?";
 };                       
 
 FUNC int  DIA_Lester_Hallo_Condition()
@@ -81,11 +81,11 @@ FUNC int  DIA_Lester_Hallo_Condition()
 
 FUNC VOID  DIA_Lester_Hallo_Info()
 {
-	AI_Output (other, self,"DIA_Lester_Hallo_15_00"); //Кто ты?
-	AI_Output (self, other,"DIA_Lester_Hallo_05_01"); //Меня зовут Лестер. Я занимаюсь прибывающими сюда чужеземцами.
+	AI_Output (other, self,"DIA_Lester_Hallo_15_00"); //РљС‚Рѕ С‚С‹?
+	AI_Output (self, other,"DIA_Lester_Hallo_05_01"); //РњРµРЅСЏ Р·РѕРІСѓС‚ Р›РµСЃС‚РµСЂ. РЇ Р·Р°РЅРёРјР°СЋСЃСЊ РїСЂРёР±С‹РІР°СЋС‰РёРјРё СЃСЋРґР° С‡СѓР¶РµР·РµРјС†Р°РјРё.
 	if (BaalNamib_Sakrileg == FALSE)
 	{
-		AI_Output (self, other,"DIA_Lester_Hallo_05_02"); //Хорошо, что ты не заговорил с Идолом Намибом. Посторонним не позволено обращаться к Гуру.
+		AI_Output (self, other,"DIA_Lester_Hallo_05_02"); //РҐРѕСЂРѕС€Рѕ, С‡С‚Рѕ С‚С‹ РЅРµ Р·Р°РіРѕРІРѕСЂРёР» СЃ РРґРѕР»РѕРј РќР°РјРёР±РѕРј. РџРѕСЃС‚РѕСЂРѕРЅРЅРёРј РЅРµ РїРѕР·РІРѕР»РµРЅРѕ РѕР±СЂР°С‰Р°С‚СЊСЃСЏ Рє Р“СѓСЂСѓ.
 	};
 };
 
@@ -100,7 +100,7 @@ instance  DIA_Lester_WannaTalkToMaster (C_INFO) //E2
 	condition	= DIA_Lester_WannaTalkToMaster_Condition;
 	information	= DIA_Lester_WannaTalkToMaster_Info;
 	permanent	= 0;
-	description	= "Но я хочу поговорить с твоим господином.";
+	description	= "РќРѕ СЏ С…РѕС‡Сѓ РїРѕРіРѕРІРѕСЂРёС‚СЊ СЃ С‚РІРѕРёРј РіРѕСЃРїРѕРґРёРЅРѕРј.";
 };                       
 
 FUNC int  DIA_Lester_WannaTalkToMaster_Condition()
@@ -115,8 +115,8 @@ FUNC int  DIA_Lester_WannaTalkToMaster_Condition()
 
 FUNC VOID  DIA_Lester_WannaTalkToMaster_Info()
 {
-	AI_Output (other, self,"DIA_Lester_WannaTalkToMaster_15_00"); //Но я хочу поговорить с твоим господином.
-	AI_Output (self, other,"DIA_Lester_WannaTalkToMaster_05_01"); //Лучше забудь об этом! Уверен, что я смогу помочь тебе не хуже.
+	AI_Output (other, self,"DIA_Lester_WannaTalkToMaster_15_00"); //РќРѕ СЏ С…РѕС‡Сѓ РїРѕРіРѕРІРѕСЂРёС‚СЊ СЃ С‚РІРѕРёРј РіРѕСЃРїРѕРґРёРЅРѕРј.
+	AI_Output (self, other,"DIA_Lester_WannaTalkToMaster_05_01"); //Р›СѓС‡С€Рµ Р·Р°Р±СѓРґСЊ РѕР± СЌС‚РѕРј! РЈРІРµСЂРµРЅ, С‡С‚Рѕ СЏ СЃРјРѕРіСѓ РїРѕРјРѕС‡СЊ С‚РµР±Рµ РЅРµ С…СѓР¶Рµ.
 };
 
 // **************************************************
@@ -130,7 +130,7 @@ instance  DIA_Lester_CampInfo (C_INFO) //E2
 	condition	= DIA_Lester_CampInfo_Condition;
 	information	= DIA_Lester_CampInfo_Info;
 	permanent	= 1;
-	description	= "Расскажи мне об этом Лагере.";
+	description	= "Р Р°СЃСЃРєР°Р¶Рё РјРЅРµ РѕР± СЌС‚РѕРј Р›Р°РіРµСЂРµ.";
 };                       
 
 FUNC int  DIA_Lester_CampInfo_Condition()
@@ -144,13 +144,13 @@ FUNC int  DIA_Lester_CampInfo_Condition()
 
 FUNC VOID  DIA_Lester_CampInfo_Info()
 {
-	AI_Output (other, self,"DIA_Lester_CampInfo_15_00"); //Расскажи мне об этом Лагере.
-	AI_Output (self, other,"DIA_Lester_CampInfo_05_01"); //Что ты хочешь узнать?
+	AI_Output (other, self,"DIA_Lester_CampInfo_15_00"); //Р Р°СЃСЃРєР°Р¶Рё РјРЅРµ РѕР± СЌС‚РѕРј Р›Р°РіРµСЂРµ.
+	AI_Output (self, other,"DIA_Lester_CampInfo_05_01"); //Р§С‚Рѕ С‚С‹ С…РѕС‡РµС€СЊ СѓР·РЅР°С‚СЊ?
 	Info_Clearchoices (DIA_Lester_CampInfo);
 	Info_Addchoice (DIA_Lester_CampInfo,DIALOG_BACK,DIA_Lester_CampInfo_BACK); 
-	Info_Addchoice (DIA_Lester_CampInfo,"Расскажи мне о гильдиях.",DIA_Lester_CampInfo_GIL);
-	Info_Addchoice (DIA_Lester_CampInfo,"Расскажи мне о Спящем.",DIA_Lester_CampInfo_SLEEPER);
-	Info_Addchoice (DIA_Lester_CampInfo,"Расскажи мне о болотнике.",DIA_Lester_CampInfo_HERB);
+	Info_Addchoice (DIA_Lester_CampInfo,"Р Р°СЃСЃРєР°Р¶Рё РјРЅРµ Рѕ РіРёР»СЊРґРёСЏС….",DIA_Lester_CampInfo_GIL);
+	Info_Addchoice (DIA_Lester_CampInfo,"Р Р°СЃСЃРєР°Р¶Рё РјРЅРµ Рѕ РЎРїСЏС‰РµРј.",DIA_Lester_CampInfo_SLEEPER);
+	Info_Addchoice (DIA_Lester_CampInfo,"Р Р°СЃСЃРєР°Р¶Рё РјРЅРµ Рѕ Р±РѕР»РѕС‚РЅРёРєРµ.",DIA_Lester_CampInfo_HERB);
 };
 func void DIA_Lester_CampInfo_BACK()
 {
@@ -159,27 +159,27 @@ func void DIA_Lester_CampInfo_BACK()
 
 func void DIA_Lester_CampInfo_GIL()
 {
-	AI_Output (other, self,"DIA_Lester_CampInfo_GIL_15_00"); //Расскажи мне о гильдиях.
-	AI_Output (self, other,"DIA_Lester_CampInfo_GIL_05_01"); //Верховную гильдию представляют Гуру. В них живет дух нашего Лагеря, им дарована великая сила. Следом идут Стражи. Их сила находит применение в боях во славу Спящего.
-	AI_Output (self, other,"DIA_Lester_CampInfo_GIL_05_02"); //Стражи славятся неукротимой силой духа. БОЙСЯ встать у них на пути! Я же являюсь послушником. Мы молимся Спящему и выполняем всю работу по Лагерю.
-	AI_Output (self, other,"DIA_Lester_CampInfo_GIL_05_03"); //Некоторым послушникам удается стать Гуру, но для того чтобы достичь этого, необходимо учиться долгие годы.
+	AI_Output (other, self,"DIA_Lester_CampInfo_GIL_15_00"); //Р Р°СЃСЃРєР°Р¶Рё РјРЅРµ Рѕ РіРёР»СЊРґРёСЏС….
+	AI_Output (self, other,"DIA_Lester_CampInfo_GIL_05_01"); //Р’РµСЂС…РѕРІРЅСѓСЋ РіРёР»СЊРґРёСЋ РїСЂРµРґСЃС‚Р°РІР»СЏСЋС‚ Р“СѓСЂСѓ. Р’ РЅРёС… Р¶РёРІРµС‚ РґСѓС… РЅР°С€РµРіРѕ Р›Р°РіРµСЂСЏ, РёРј РґР°СЂРѕРІР°РЅР° РІРµР»РёРєР°СЏ СЃРёР»Р°. РЎР»РµРґРѕРј РёРґСѓС‚ РЎС‚СЂР°Р¶Рё. РС… СЃРёР»Р° РЅР°С…РѕРґРёС‚ РїСЂРёРјРµРЅРµРЅРёРµ РІ Р±РѕСЏС… РІРѕ СЃР»Р°РІСѓ РЎРїСЏС‰РµРіРѕ.
+	AI_Output (self, other,"DIA_Lester_CampInfo_GIL_05_02"); //РЎС‚СЂР°Р¶Рё СЃР»Р°РІСЏС‚СЃСЏ РЅРµСѓРєСЂРѕС‚РёРјРѕР№ СЃРёР»РѕР№ РґСѓС…Р°. Р‘РћР™РЎРЇ РІСЃС‚Р°С‚СЊ Сѓ РЅРёС… РЅР° РїСѓС‚Рё! РЇ Р¶Рµ СЏРІР»СЏСЋСЃСЊ РїРѕСЃР»СѓС€РЅРёРєРѕРј. РњС‹ РјРѕР»РёРјСЃСЏ РЎРїСЏС‰РµРјСѓ Рё РІС‹РїРѕР»РЅСЏРµРј РІСЃСЋ СЂР°Р±РѕС‚Сѓ РїРѕ Р›Р°РіРµСЂСЋ.
+	AI_Output (self, other,"DIA_Lester_CampInfo_GIL_05_03"); //РќРµРєРѕС‚РѕСЂС‹Рј РїРѕСЃР»СѓС€РЅРёРєР°Рј СѓРґР°РµС‚СЃСЏ СЃС‚Р°С‚СЊ Р“СѓСЂСѓ, РЅРѕ РґР»СЏ С‚РѕРіРѕ С‡С‚РѕР±С‹ РґРѕСЃС‚РёС‡СЊ СЌС‚РѕРіРѕ, РЅРµРѕР±С…РѕРґРёРјРѕ СѓС‡РёС‚СЊСЃСЏ РґРѕР»РіРёРµ РіРѕРґС‹.
 };
 func void DIA_Lester_CampInfo_SLEEPER()
 {
-	AI_Output (other, self,"DIA_Lester_CampInfo_SLEEPER_15_00"); //Расскажи мне о Спящем.
-	AI_Output (self, other,"DIA_Lester_CampInfo_SLEEPER_05_01"); //Спящий - божественное существо. Он дарует людям видения - правда, этой чести удостаиваются лишь Гуру.
-	AI_Output (self, other,"DIA_Lester_CampInfo_SLEEPER_05_02"); //Мы молимся ему, и он ниспошлет нам свободу.
-	AI_Output (other, self,"DIA_Lester_CampInfo_SLEEPER_15_03"); //И ты веришь во все это?
-	AI_Output (self, other,"DIA_Lester_CampInfo_SLEEPER_05_04"); //Послушай, я пробыл здесь уже два года. Знаешь ли ты, каково это - прожить ДВА ГОДА внутри Барьера?
-	AI_Output (self, other,"DIA_Lester_CampInfo_SLEEPER_05_05"); //Ты просто не представляешь, во что я готов поверить, ради того чтобы убраться отсюда!
+	AI_Output (other, self,"DIA_Lester_CampInfo_SLEEPER_15_00"); //Р Р°СЃСЃРєР°Р¶Рё РјРЅРµ Рѕ РЎРїСЏС‰РµРј.
+	AI_Output (self, other,"DIA_Lester_CampInfo_SLEEPER_05_01"); //РЎРїСЏС‰РёР№ - Р±РѕР¶РµСЃС‚РІРµРЅРЅРѕРµ СЃСѓС‰РµСЃС‚РІРѕ. РћРЅ РґР°СЂСѓРµС‚ Р»СЋРґСЏРј РІРёРґРµРЅРёСЏ - РїСЂР°РІРґР°, СЌС‚РѕР№ С‡РµСЃС‚Рё СѓРґРѕСЃС‚Р°РёРІР°СЋС‚СЃСЏ Р»РёС€СЊ Р“СѓСЂСѓ.
+	AI_Output (self, other,"DIA_Lester_CampInfo_SLEEPER_05_02"); //РњС‹ РјРѕР»РёРјСЃСЏ РµРјСѓ, Рё РѕРЅ РЅРёСЃРїРѕС€Р»РµС‚ РЅР°Рј СЃРІРѕР±РѕРґСѓ.
+	AI_Output (other, self,"DIA_Lester_CampInfo_SLEEPER_15_03"); //Р С‚С‹ РІРµСЂРёС€СЊ РІРѕ РІСЃРµ СЌС‚Рѕ?
+	AI_Output (self, other,"DIA_Lester_CampInfo_SLEEPER_05_04"); //РџРѕСЃР»СѓС€Р°Р№, СЏ РїСЂРѕР±С‹Р» Р·РґРµСЃСЊ СѓР¶Рµ РґРІР° РіРѕРґР°. Р—РЅР°РµС€СЊ Р»Рё С‚С‹, РєР°РєРѕРІРѕ СЌС‚Рѕ - РїСЂРѕР¶РёС‚СЊ Р”Р’Рђ Р“РћР”Рђ РІРЅСѓС‚СЂРё Р‘Р°СЂСЊРµСЂР°?
+	AI_Output (self, other,"DIA_Lester_CampInfo_SLEEPER_05_05"); //РўС‹ РїСЂРѕСЃС‚Рѕ РЅРµ РїСЂРµРґСЃС‚Р°РІР»СЏРµС€СЊ, РІРѕ С‡С‚Рѕ СЏ РіРѕС‚РѕРІ РїРѕРІРµСЂРёС‚СЊ, СЂР°РґРё С‚РѕРіРѕ С‡С‚РѕР±С‹ СѓР±СЂР°С‚СЊСЃСЏ РѕС‚СЃСЋРґР°!
 };
 func void DIA_Lester_CampInfo_HERB()
 {
-	AI_Output (other, self,"DIA_Lester_CampInfo_HERB_15_00"); //Расскажи мне о болотнике.
-	AI_Output (self, other,"DIA_Lester_CampInfo_HERB_05_01"); //Болотник растет на болотах - это все знают. Разумеется, прежде чем курить, его нужно обработать должным образом. Этим как раз занимаются послушники.
-	AI_Output (self, other,"DIA_Lester_CampInfo_HERB_05_02"); //Болотник расслабляет тело и успокаивает сознание, помогает сосредоточиться на главном и способствует познанию истины. 
-	AI_Output (self, other,"DIA_Lester_CampInfo_HERB_05_03"); //Мы обмениваем его на товары из Старого Лагеря и нанимаем с его помощью новых людей.
-	AI_Output (self, other,"DIA_Lester_CampInfo_HERB_05_04"); //Конечно, кто-то присоединяется к нам только из-за болотника. Что ж, по крайней мере, они помогают нам в работе по Лагерю.
+	AI_Output (other, self,"DIA_Lester_CampInfo_HERB_15_00"); //Р Р°СЃСЃРєР°Р¶Рё РјРЅРµ Рѕ Р±РѕР»РѕС‚РЅРёРєРµ.
+	AI_Output (self, other,"DIA_Lester_CampInfo_HERB_05_01"); //Р‘РѕР»РѕС‚РЅРёРє СЂР°СЃС‚РµС‚ РЅР° Р±РѕР»РѕС‚Р°С… - СЌС‚Рѕ РІСЃРµ Р·РЅР°СЋС‚. Р Р°Р·СѓРјРµРµС‚СЃСЏ, РїСЂРµР¶РґРµ С‡РµРј РєСѓСЂРёС‚СЊ, РµРіРѕ РЅСѓР¶РЅРѕ РѕР±СЂР°Р±РѕС‚Р°С‚СЊ РґРѕР»Р¶РЅС‹Рј РѕР±СЂР°Р·РѕРј. Р­С‚РёРј РєР°Рє СЂР°Р· Р·Р°РЅРёРјР°СЋС‚СЃСЏ РїРѕСЃР»СѓС€РЅРёРєРё.
+	AI_Output (self, other,"DIA_Lester_CampInfo_HERB_05_02"); //Р‘РѕР»РѕС‚РЅРёРє СЂР°СЃСЃР»Р°Р±Р»СЏРµС‚ С‚РµР»Рѕ Рё СѓСЃРїРѕРєР°РёРІР°РµС‚ СЃРѕР·РЅР°РЅРёРµ, РїРѕРјРѕРіР°РµС‚ СЃРѕСЃСЂРµРґРѕС‚РѕС‡РёС‚СЊСЃСЏ РЅР° РіР»Р°РІРЅРѕРј Рё СЃРїРѕСЃРѕР±СЃС‚РІСѓРµС‚ РїРѕР·РЅР°РЅРёСЋ РёСЃС‚РёРЅС‹. 
+	AI_Output (self, other,"DIA_Lester_CampInfo_HERB_05_03"); //РњС‹ РѕР±РјРµРЅРёРІР°РµРј РµРіРѕ РЅР° С‚РѕРІР°СЂС‹ РёР· РЎС‚Р°СЂРѕРіРѕ Р›Р°РіРµСЂСЏ Рё РЅР°РЅРёРјР°РµРј СЃ РµРіРѕ РїРѕРјРѕС‰СЊСЋ РЅРѕРІС‹С… Р»СЋРґРµР№.
+	AI_Output (self, other,"DIA_Lester_CampInfo_HERB_05_04"); //РљРѕРЅРµС‡РЅРѕ, РєС‚Рѕ-С‚Рѕ РїСЂРёСЃРѕРµРґРёРЅСЏРµС‚СЃСЏ Рє РЅР°Рј С‚РѕР»СЊРєРѕ РёР·-Р·Р° Р±РѕР»РѕС‚РЅРёРєР°. Р§С‚Рѕ Р¶, РїРѕ РєСЂР°Р№РЅРµР№ РјРµСЂРµ, РѕРЅРё РїРѕРјРѕРіР°СЋС‚ РЅР°Рј РІ СЂР°Р±РѕС‚Рµ РїРѕ Р›Р°РіРµСЂСЋ.
 };
 
 // **************************************************
@@ -193,7 +193,7 @@ instance  DIA_Lester_WannaJoin (C_INFO) //E2
 	condition	= DIA_Lester_WannaJoin_Condition;
 	information	= DIA_Lester_WannaJoin_Info;
 	permanent	= 0;
-	description	= "Я хочу стать членом Братства!";
+	description	= "РЇ С…РѕС‡Сѓ СЃС‚Р°С‚СЊ С‡Р»РµРЅРѕРј Р‘СЂР°С‚СЃС‚РІР°!";
 };                       
 
 FUNC int  DIA_Lester_WannaJoin_Condition()
@@ -207,10 +207,10 @@ FUNC int  DIA_Lester_WannaJoin_Condition()
 
 FUNC VOID  DIA_Lester_WannaJoin_Info()
 {
-	AI_Output (other, self,"DIA_Lester_WannaJoin_15_00"); //Я хочу стать членом Братства!
-	AI_Output (self, other,"DIA_Lester_WannaJoin_05_01"); //Готов ты к этому или нет, будет решать Кор Галом.
-	AI_Output (self, other,"DIA_Lester_WannaJoin_05_02"); //Но он прислушивается и к мнению других Гуру - Идола Намиба, например. 
-	AI_Output (self, other,"DIA_Lester_WannaJoin_05_03"); //Ты должен доказать свою преданность, и рано или поздно кто-то из Гуру направит тебя к Кор Галому.
+	AI_Output (other, self,"DIA_Lester_WannaJoin_15_00"); //РЇ С…РѕС‡Сѓ СЃС‚Р°С‚СЊ С‡Р»РµРЅРѕРј Р‘СЂР°С‚СЃС‚РІР°!
+	AI_Output (self, other,"DIA_Lester_WannaJoin_05_01"); //Р“РѕС‚РѕРІ С‚С‹ Рє СЌС‚РѕРјСѓ РёР»Рё РЅРµС‚, Р±СѓРґРµС‚ СЂРµС€Р°С‚СЊ РљРѕСЂ Р“Р°Р»РѕРј.
+	AI_Output (self, other,"DIA_Lester_WannaJoin_05_02"); //РќРѕ РѕРЅ РїСЂРёСЃР»СѓС€РёРІР°РµС‚СЃСЏ Рё Рє РјРЅРµРЅРёСЋ РґСЂСѓРіРёС… Р“СѓСЂСѓ - РРґРѕР»Р° РќР°РјРёР±Р°, РЅР°РїСЂРёРјРµСЂ. 
+	AI_Output (self, other,"DIA_Lester_WannaJoin_05_03"); //РўС‹ РґРѕР»Р¶РµРЅ РґРѕРєР°Р·Р°С‚СЊ СЃРІРѕСЋ РїСЂРµРґР°РЅРЅРѕСЃС‚СЊ, Рё СЂР°РЅРѕ РёР»Рё РїРѕР·РґРЅРѕ РєС‚Рѕ-С‚Рѕ РёР· Р“СѓСЂСѓ РЅР°РїСЂР°РІРёС‚ С‚РµР±СЏ Рє РљРѕСЂ Р“Р°Р»РѕРјСѓ.
 };
 
 // **************************************************
@@ -224,7 +224,7 @@ instance  DIA_Lester_HowProofWorthy (C_INFO) //E2
 	condition	= DIA_Lester_HowProofWorthy_Condition;
 	information	= DIA_Lester_HowProofWorthy_Info;
 	permanent	= 0;
-	description	= "Но что я могу сделать, если никто из Гуру не говорит со мной?";
+	description	= "РќРѕ С‡С‚Рѕ СЏ РјРѕРіСѓ СЃРґРµР»Р°С‚СЊ, РµСЃР»Рё РЅРёРєС‚Рѕ РёР· Р“СѓСЂСѓ РЅРµ РіРѕРІРѕСЂРёС‚ СЃРѕ РјРЅРѕР№?";
 };                       
 
 FUNC int  DIA_Lester_HowProofWorthy_Condition()
@@ -238,14 +238,14 @@ FUNC int  DIA_Lester_HowProofWorthy_Condition()
 
 FUNC VOID  DIA_Lester_HowProofWorthy_Info()
 {
-	AI_Output (other, self,"DIA_Lester_HowProofWorthy_15_00"); //Но что я могу сделать, если никто из Гуру не желает со мной разговаривать?
-	AI_Output (self, other,"DIA_Lester_HowProofWorthy_05_01"); //Тебе только так кажется. Гуру наблюдают за всем, что происходит в Лагере.
-	AI_Output (self, other,"DIA_Lester_HowProofWorthy_05_02"); //Если они решат, что ты достоин стать членом Братства, они заговорят с тобой.
-	AI_Output (self, other,"DIA_Lester_HowProofWorthy_05_03"); //Тебе придется ждать подходящего случая, чтобы доказать им свою преданность.
+	AI_Output (other, self,"DIA_Lester_HowProofWorthy_15_00"); //РќРѕ С‡С‚Рѕ СЏ РјРѕРіСѓ СЃРґРµР»Р°С‚СЊ, РµСЃР»Рё РЅРёРєС‚Рѕ РёР· Р“СѓСЂСѓ РЅРµ Р¶РµР»Р°РµС‚ СЃРѕ РјРЅРѕР№ СЂР°Р·РіРѕРІР°СЂРёРІР°С‚СЊ?
+	AI_Output (self, other,"DIA_Lester_HowProofWorthy_05_01"); //РўРµР±Рµ С‚РѕР»СЊРєРѕ С‚Р°Рє РєР°Р¶РµС‚СЃСЏ. Р“СѓСЂСѓ РЅР°Р±Р»СЋРґР°СЋС‚ Р·Р° РІСЃРµРј, С‡С‚Рѕ РїСЂРѕРёСЃС…РѕРґРёС‚ РІ Р›Р°РіРµСЂРµ.
+	AI_Output (self, other,"DIA_Lester_HowProofWorthy_05_02"); //Р•СЃР»Рё РѕРЅРё СЂРµС€Р°С‚, С‡С‚Рѕ С‚С‹ РґРѕСЃС‚РѕРёРЅ СЃС‚Р°С‚СЊ С‡Р»РµРЅРѕРј Р‘СЂР°С‚СЃС‚РІР°, РѕРЅРё Р·Р°РіРѕРІРѕСЂСЏС‚ СЃ С‚РѕР±РѕР№.
+	AI_Output (self, other,"DIA_Lester_HowProofWorthy_05_03"); //РўРµР±Рµ РїСЂРёРґРµС‚СЃСЏ Р¶РґР°С‚СЊ РїРѕРґС…РѕРґСЏС‰РµРіРѕ СЃР»СѓС‡Р°СЏ, С‡С‚РѕР±С‹ РґРѕРєР°Р·Р°С‚СЊ РёРј СЃРІРѕСЋ РїСЂРµРґР°РЅРЅРѕСЃС‚СЊ.
 
 	Log_CreateTopic		(CH1_JoinPsi,	LOG_MISSION);
 	Log_SetTopicStatus	(CH1_JoinPsi,	LOG_RUNNING);
-	B_LogEntry			(CH1_JoinPsi,"Если я хочу присоединиться к Братству Болотного Лагеря, то мне нужно произвести впечатление на Гуру. К сожалению, они не разговаривают с незнакомцами. Лестер, тоже новичок, сказал мне, что они будут наблюдать за мной, и поэтому надо стараться произвести на них впечатление. Не имею ни малейшего представления, как это сделать! Пока же стоит осмотреться получше в Лагере.");
+	B_LogEntry			(CH1_JoinPsi,"Р•СЃР»Рё СЏ С…РѕС‡Сѓ РїСЂРёСЃРѕРµРґРёРЅРёС‚СЊСЃСЏ Рє Р‘СЂР°С‚СЃС‚РІСѓ Р‘РѕР»РѕС‚РЅРѕРіРѕ Р›Р°РіРµСЂСЏ, С‚Рѕ РјРЅРµ РЅСѓР¶РЅРѕ РїСЂРѕРёР·РІРµСЃС‚Рё РІРїРµС‡Р°С‚Р»РµРЅРёРµ РЅР° Р“СѓСЂСѓ. Рљ СЃРѕР¶Р°Р»РµРЅРёСЋ, РѕРЅРё РЅРµ СЂР°Р·РіРѕРІР°СЂРёРІР°СЋС‚ СЃ РЅРµР·РЅР°РєРѕРјС†Р°РјРё. Р›РµСЃС‚РµСЂ, С‚РѕР¶Рµ РЅРѕРІРёС‡РѕРє, СЃРєР°Р·Р°Р» РјРЅРµ, С‡С‚Рѕ РѕРЅРё Р±СѓРґСѓС‚ РЅР°Р±Р»СЋРґР°С‚СЊ Р·Р° РјРЅРѕР№, Рё РїРѕСЌС‚РѕРјСѓ РЅР°РґРѕ СЃС‚Р°СЂР°С‚СЊСЃСЏ РїСЂРѕРёР·РІРµСЃС‚Рё РЅР° РЅРёС… РІРїРµС‡Р°С‚Р»РµРЅРёРµ. РќРµ РёРјРµСЋ РЅРё РјР°Р»РµР№С€РµРіРѕ РїСЂРµРґСЃС‚Р°РІР»РµРЅРёСЏ, РєР°Рє СЌС‚Рѕ СЃРґРµР»Р°С‚СЊ! РџРѕРєР° Р¶Рµ СЃС‚РѕРёС‚ РѕСЃРјРѕС‚СЂРµС‚СЊСЃСЏ РїРѕР»СѓС‡С€Рµ РІ Р›Р°РіРµСЂРµ.");
 
 };
 
@@ -262,7 +262,7 @@ instance  DIA_Lester_WeitWeg (C_INFO) //E2
 	condition	= DIA_Lester_WeitWeg_Condition;
 	information	= DIA_Lester_WeitWeg_Info;
 	permanent	= 0;
-	description	= "Как заставить твоего господина заговорить со мной?";
+	description	= "РљР°Рє Р·Р°СЃС‚Р°РІРёС‚СЊ С‚РІРѕРµРіРѕ РіРѕСЃРїРѕРґРёРЅР° Р·Р°РіРѕРІРѕСЂРёС‚СЊ СЃРѕ РјРЅРѕР№?";
 };                       
 
 FUNC int  DIA_Lester_WeitWeg_Condition()
@@ -278,17 +278,17 @@ FUNC int  DIA_Lester_WeitWeg_Condition()
 
 FUNC VOID  DIA_Lester_WeitWeg_Info()
 {
-	AI_Output (other, self,"DIA_Lester_WeitWeg_15_00"); //Как заставить твоего господина заговорить со мной?
-	AI_Output (self, other,"DIA_Lester_WeitWeg_05_01"); //Нужно знать, что он хочет от тебя услышать.
-	AI_Output (other, self,"DIA_Lester_WeitWeg_15_02"); //И что же?
-	AI_Output (self, other,"DIA_Lester_WeitWeg_05_03"); //Слушай. Когда в следующий раз увидишь нас вместе, заговори со мной.
-	AI_Output (self, other,"DIA_Lester_WeitWeg_05_04"); //Идол Намиб беспокоится из-за того, что многие послушники молятся не только Спящему, но и своим старым богам.
-	AI_Output (self, other,"DIA_Lester_WeitWeg_05_05"); //Ты скажешь мне, что отрекся от старых богов, и что отныне ты будешь молиться только Спящему. 
-	AI_Output (self, other,"DIA_Lester_WeitWeg_05_06"); //Когда я спрошу, почему ты решил так поступить, ответишь, что тебе было видение, в котором Спящий призвал тебя.
-	AI_Output (self, other,"DIA_Lester_WeitWeg_05_07"); //Его это заинтересует. Ты справишься?
-	AI_Output (other, self,"DIA_Lester_WeitWeg_15_08"); //Без проблем.
+	AI_Output (other, self,"DIA_Lester_WeitWeg_15_00"); //РљР°Рє Р·Р°СЃС‚Р°РІРёС‚СЊ С‚РІРѕРµРіРѕ РіРѕСЃРїРѕРґРёРЅР° Р·Р°РіРѕРІРѕСЂРёС‚СЊ СЃРѕ РјРЅРѕР№?
+	AI_Output (self, other,"DIA_Lester_WeitWeg_05_01"); //РќСѓР¶РЅРѕ Р·РЅР°С‚СЊ, С‡С‚Рѕ РѕРЅ С…РѕС‡РµС‚ РѕС‚ С‚РµР±СЏ СѓСЃР»С‹С€Р°С‚СЊ.
+	AI_Output (other, self,"DIA_Lester_WeitWeg_15_02"); //Р С‡С‚Рѕ Р¶Рµ?
+	AI_Output (self, other,"DIA_Lester_WeitWeg_05_03"); //РЎР»СѓС€Р°Р№. РљРѕРіРґР° РІ СЃР»РµРґСѓСЋС‰РёР№ СЂР°Р· СѓРІРёРґРёС€СЊ РЅР°СЃ РІРјРµСЃС‚Рµ, Р·Р°РіРѕРІРѕСЂРё СЃРѕ РјРЅРѕР№.
+	AI_Output (self, other,"DIA_Lester_WeitWeg_05_04"); //РРґРѕР» РќР°РјРёР± Р±РµСЃРїРѕРєРѕРёС‚СЃСЏ РёР·-Р·Р° С‚РѕРіРѕ, С‡С‚Рѕ РјРЅРѕРіРёРµ РїРѕСЃР»СѓС€РЅРёРєРё РјРѕР»СЏС‚СЃСЏ РЅРµ С‚РѕР»СЊРєРѕ РЎРїСЏС‰РµРјСѓ, РЅРѕ Рё СЃРІРѕРёРј СЃС‚Р°СЂС‹Рј Р±РѕРіР°Рј.
+	AI_Output (self, other,"DIA_Lester_WeitWeg_05_05"); //РўС‹ СЃРєР°Р¶РµС€СЊ РјРЅРµ, С‡С‚Рѕ РѕС‚СЂРµРєСЃСЏ РѕС‚ СЃС‚Р°СЂС‹С… Р±РѕРіРѕРІ, Рё С‡С‚Рѕ РѕС‚РЅС‹РЅРµ С‚С‹ Р±СѓРґРµС€СЊ РјРѕР»РёС‚СЊСЃСЏ С‚РѕР»СЊРєРѕ РЎРїСЏС‰РµРјСѓ. 
+	AI_Output (self, other,"DIA_Lester_WeitWeg_05_06"); //РљРѕРіРґР° СЏ СЃРїСЂРѕС€Сѓ, РїРѕС‡РµРјСѓ С‚С‹ СЂРµС€РёР» С‚Р°Рє РїРѕСЃС‚СѓРїРёС‚СЊ, РѕС‚РІРµС‚РёС€СЊ, С‡С‚Рѕ С‚РµР±Рµ Р±С‹Р»Рѕ РІРёРґРµРЅРёРµ, РІ РєРѕС‚РѕСЂРѕРј РЎРїСЏС‰РёР№ РїСЂРёР·РІР°Р» С‚РµР±СЏ.
+	AI_Output (self, other,"DIA_Lester_WeitWeg_05_07"); //Р•РіРѕ СЌС‚Рѕ Р·Р°РёРЅС‚РµСЂРµСЃСѓРµС‚. РўС‹ СЃРїСЂР°РІРёС€СЊСЃСЏ?
+	AI_Output (other, self,"DIA_Lester_WeitWeg_15_08"); //Р‘РµР· РїСЂРѕР±Р»РµРј.
 	
-	B_LogEntry	(CH1_JoinPsi,"Чтобы произвести впечатление на Идола Намиба, надо завести с с Лестером разговор о старых богах и Спящем, когда он будет рядом.");
+	B_LogEntry	(CH1_JoinPsi,"Р§С‚РѕР±С‹ РїСЂРѕРёР·РІРµСЃС‚Рё РІРїРµС‡Р°С‚Р»РµРЅРёРµ РЅР° РРґРѕР»Р° РќР°РјРёР±Р°, РЅР°РґРѕ Р·Р°РІРµСЃС‚Рё СЃ СЃ Р›РµСЃС‚РµСЂРѕРј СЂР°Р·РіРѕРІРѕСЂ Рѕ СЃС‚Р°СЂС‹С… Р±РѕРіР°С… Рё РЎРїСЏС‰РµРј, РєРѕРіРґР° РѕРЅ Р±СѓРґРµС‚ СЂСЏРґРѕРј.");
 
 	Lester_Show = TRUE;
 };
@@ -321,7 +321,7 @@ FUNC int  DIA_Lester_ShowHallo_Condition()
 
 FUNC VOID  DIA_Lester_ShowHallo_Info()
 {
-	AI_Output (self, other,"DIA_Lester_ShowHallo_05_00"); //А-А! РАД ВИДЕТЬ ТЕБЯ СНОВА. КАК ТВОИ ДЕЛА?
+	AI_Output (self, other,"DIA_Lester_ShowHallo_05_00"); //Рђ-Рђ! Р РђР” Р’РР”Р•РўР¬ РўР•Р‘РЇ РЎРќРћР’Рђ. РљРђРљ РўР’РћР Р”Р•Р›Рђ?
 };
 
 // **************************************************
@@ -335,7 +335,7 @@ instance  DIA_Lester_Show (C_INFO) //E2
 	condition	= DIA_Lester_Show_Condition;
 	information	= DIA_Lester_Show_Info;
 	permanent	= 0;
-	description	= "Я ОТРЕКСЯ ОТ СТАРЫХ БОГОВ.";
+	description	= "РЇ РћРўР Р•РљРЎРЇ РћРў РЎРўРђР Р«РҐ Р‘РћР“РћР’.";
 };                       
 
 FUNC int  DIA_Lester_Show_Condition()
@@ -349,12 +349,12 @@ FUNC int  DIA_Lester_Show_Condition()
 
 FUNC VOID  DIA_Lester_Show_Info()
 {
-	AI_Output (other, self,"DIA_Lester_Show_15_00"); //Я ОТРЕКСЯ ОТ СТАРЫХ БОГОВ.
-	AI_Output (self, other,"DIA_Lester_Show_05_01"); //В САМОМ ДЕЛЕ? ПОЧЕМУ ТЫ РЕШИЛ ТАК ПОСТУПИТЬ?
-	AI_Output (other, self,"DIA_Lester_Show_15_02"); //МНЕ БЫЛО ВИДЕНИЕ: СПЯЩИЙ ГОВОРИЛ СО МНОЙ.
-	AI_Output (self, other,"DIA_Lester_Show_05_03"); //ЧТО ОН СКАЗАЛ?
-	AI_Output (other, self,"DIA_Lester_Show_15_04"); //ОН СКАЗАЛ: ИДИ В ЛАГЕРЬ НА БОЛОТАХ И СТАНЬ ЧЛЕНОМ БРАТСТВА.
-	AI_Output (self, other,"DIA_Lester_Show_05_05"); //ТЫ СКАЗОЧНО БОГАТ, НЕЗНАКОМЕЦ: НЕМНОГИМ ЛЮДЯМ СПЯЩИЙ ДАРУЕТ ТАКУЮ НАГРАДУ.
+	AI_Output (other, self,"DIA_Lester_Show_15_00"); //РЇ РћРўР Р•РљРЎРЇ РћРў РЎРўРђР Р«РҐ Р‘РћР“РћР’.
+	AI_Output (self, other,"DIA_Lester_Show_05_01"); //Р’ РЎРђРњРћРњ Р”Р•Р›Р•? РџРћР§Р•РњРЈ РўР« Р Р•РЁРР› РўРђРљ РџРћРЎРўРЈРџРРўР¬?
+	AI_Output (other, self,"DIA_Lester_Show_15_02"); //РњРќР• Р‘Р«Р›Рћ Р’РР”Р•РќРР•: РЎРџРЇР©РР™ Р“РћР’РћР РР› РЎРћ РњРќРћР™.
+	AI_Output (self, other,"DIA_Lester_Show_05_03"); //Р§РўРћ РћРќ РЎРљРђР—РђР›?
+	AI_Output (other, self,"DIA_Lester_Show_15_04"); //РћРќ РЎРљРђР—РђР›: РР”Р Р’ Р›РђР“Р•Р Р¬ РќРђ Р‘РћР›РћРўРђРҐ Р РЎРўРђРќР¬ Р§Р›Р•РќРћРњ Р‘Р РђРўРЎРўР’Рђ.
+	AI_Output (self, other,"DIA_Lester_Show_05_05"); //РўР« РЎРљРђР—РћР§РќРћ Р‘РћР“РђРў, РќР•Р—РќРђРљРћРњР•Р¦: РќР•РњРќРћР“РРњ Р›Р®Р”РЇРњ РЎРџРЇР©РР™ Р”РђР РЈР•Рў РўРђРљРЈР® РќРђР“Р РђР”РЈ.
 
 	BaalNamib_Ansprechbar = TRUE;
 
@@ -372,7 +372,7 @@ instance  DIA_Lester_GuideOffer (C_INFO) //E3
 	condition	= DIA_Lester_GuideOffer_Condition;
 	information	= DIA_Lester_GuideOffer_Info;
 	permanent	= 0;
-	description	= "Как ориентироваться здесь, в Лагере?";
+	description	= "РљР°Рє РѕСЂРёРµРЅС‚РёСЂРѕРІР°С‚СЊСЃСЏ Р·РґРµСЃСЊ, РІ Р›Р°РіРµСЂРµ?";
 };
 
 FUNC int  DIA_Lester_GuideOffer_Condition()
@@ -386,12 +386,12 @@ FUNC int  DIA_Lester_GuideOffer_Condition()
 
 FUNC VOID  DIA_Lester_GuideOffer_Info()
 {
-	AI_Output (other, self,"DIA_Lester_GuideOffer_15_00"); //Как ориентироваться здесь, в Лагере?
-	AI_Output (self, other,"DIA_Lester_GuideOffer_05_01"); //Я могу показать тебе основные места.
+	AI_Output (other, self,"DIA_Lester_GuideOffer_15_00"); //РљР°Рє РѕСЂРёРµРЅС‚РёСЂРѕРІР°С‚СЊСЃСЏ Р·РґРµСЃСЊ, РІ Р›Р°РіРµСЂРµ?
+	AI_Output (self, other,"DIA_Lester_GuideOffer_05_01"); //РЇ РјРѕРіСѓ РїРѕРєР°Р·Р°С‚СЊ С‚РµР±Рµ РѕСЃРЅРѕРІРЅС‹Рµ РјРµСЃС‚Р°.
 };
 
 // **************************************************
-//				FЬHRUNG DURCHS PSI-CAMP
+//				FР¬HRUNG DURCHS PSI-CAMP
 // **************************************************
 
 
@@ -403,7 +403,7 @@ instance  PC_Psionic_SOON (C_INFO)
 	information	=  PC_Psionic_SOON_Info;
 	important	=  0;	
 	permanent	=  1;
-	description = "Мы уже пришли?";
+	description = "РњС‹ СѓР¶Рµ РїСЂРёС€Р»Рё?";
 };                       
 
 FUNC int  PC_Psionic_SOON_Condition()
@@ -417,11 +417,11 @@ FUNC int  PC_Psionic_SOON_Condition()
 };
 FUNC VOID  PC_Psionic_SOON_Info()
 {
-	AI_Output (other, self,"PC_Psionic_SOON_Info_15_01"); //Мы уже пришли?
-	AI_Output (self, other,"PC_Psionic_SOON_Info_05_02"); //Если ты будешь каждую минуту останавливать меня, мы никогда туда не доберемся.
+	AI_Output (other, self,"PC_Psionic_SOON_Info_15_01"); //РњС‹ СѓР¶Рµ РїСЂРёС€Р»Рё?
+	AI_Output (self, other,"PC_Psionic_SOON_Info_05_02"); //Р•СЃР»Рё С‚С‹ Р±СѓРґРµС€СЊ РєР°Р¶РґСѓСЋ РјРёРЅСѓС‚Сѓ РѕСЃС‚Р°РЅР°РІР»РёРІР°С‚СЊ РјРµРЅСЏ, РјС‹ РЅРёРєРѕРіРґР° С‚СѓРґР° РЅРµ РґРѕР±РµСЂРµРјСЃСЏ.
 	AI_StopProcessInfos	( self );
 };
-//------ UNTERWEGS IM SUMPFLAGER UND ROUTE ДNDERN ----------------
+//------ UNTERWEGS IM SUMPFLAGER UND ROUTE Р”NDERN ----------------
 instance  PC_Psionic_CHANGE (C_INFO)
 {
 	npc			=  PC_Psionic;
@@ -429,7 +429,7 @@ instance  PC_Psionic_CHANGE (C_INFO)
 	information	=  PC_Psionic_CHANGE_Info;
 	important	=  0;	
 	permanent	=  1;
-	description = "Я передумал.";
+	description = "РЇ РїРµСЂРµРґСѓРјР°Р».";
 };                       
 
 FUNC int  PC_Psionic_CHANGE_Condition()
@@ -443,15 +443,15 @@ FUNC int  PC_Psionic_CHANGE_Condition()
 };
 FUNC VOID  PC_Psionic_CHANGE_Info()
 {
-	AI_Output (other, self,"PC_Psionic_CHANGE_Info_15_01"); //Я передумал.
-	AI_Output (self, other,"PC_Psionic_CHANGE_Info_05_02"); //Если что, ты знаешь, где меня найти.
+	AI_Output (other, self,"PC_Psionic_CHANGE_Info_15_01"); //РЇ РїРµСЂРµРґСѓРјР°Р».
+	AI_Output (self, other,"PC_Psionic_CHANGE_Info_05_02"); //Р•СЃР»Рё С‡С‚Рѕ, С‚С‹ Р·РЅР°РµС€СЊ, РіРґРµ РјРµРЅСЏ РЅР°Р№С‚Рё.
 	AI_StopProcessInfos	( self );
 	LesterGuide = 0;
 	Npc_ExchangeRoutine (self,"START");
 
 };
 
-//------------------FЬHRUNG DURCH DAS LAGER
+//------------------FР¬HRUNG DURCH DAS LAGER
 instance  PC_Psionic_GUIDEFIRST (C_INFO)
 {
 	npc				= PC_Psionic;
@@ -460,7 +460,7 @@ instance  PC_Psionic_GUIDEFIRST (C_INFO)
 	information		= PC_Psionic_GUIDEFIRST_Info;
 	important		= 0;
 	permanent		= 1;
-	description		= "Где находится..."; 
+	description		= "Р“РґРµ РЅР°С…РѕРґРёС‚СЃСЏ..."; 
 };
 
 FUNC int  PC_Psionic_GUIDEFIRST_Condition()
@@ -476,17 +476,17 @@ FUNC int  PC_Psionic_GUIDEFIRST_Condition()
 };
 FUNC void  PC_Psionic_GUIDEFIRST_Info()
 {
-	AI_Output (other, self,"PC_Psionic_GUIDEFIRST_Info_15_01"); //Где находится...
+	AI_Output (other, self,"PC_Psionic_GUIDEFIRST_Info_15_01"); //Р“РґРµ РЅР°С…РѕРґРёС‚СЃСЏ...
 //	AI_Output (self, other,"PC_Psionic_GUIDEFIRST_Info_05_02"); //Klar, wohin willst du?
 	
 	Info_ClearChoices (PC_Psionic_GUIDEFIRST);
 	
 	Info_Addchoice (PC_Psionic_GUIDEFIRST, DIALOG_BACK, PC_Psionic_GUIDEFIRST_BACK);
-	Info_Addchoice (PC_Psionic_GUIDEFIRST,"... вход в Лагерь?",PC_Psionic_GUIDEFIRST_MAINGATE);
-	Info_Addchoice (PC_Psionic_GUIDEFIRST,"... кузница?",PC_Psionic_GUIDEFIRST_SMITH);
-	Info_Addchoice (PC_Psionic_GUIDEFIRST,"... храм?",PC_Psionic_GUIDEFIRST_TEMPEL);
-	Info_Addchoice (PC_Psionic_GUIDEFIRST,"... обитель наставников?",PC_Psionic_GUIDEFIRST_TRAIN);
-	Info_Addchoice (PC_Psionic_GUIDEFIRST,"... лаборатория?",PC_Psionic_GUIDEFIRST_HERB);
+	Info_Addchoice (PC_Psionic_GUIDEFIRST,"... РІС…РѕРґ РІ Р›Р°РіРµСЂСЊ?",PC_Psionic_GUIDEFIRST_MAINGATE);
+	Info_Addchoice (PC_Psionic_GUIDEFIRST,"... РєСѓР·РЅРёС†Р°?",PC_Psionic_GUIDEFIRST_SMITH);
+	Info_Addchoice (PC_Psionic_GUIDEFIRST,"... С…СЂР°Рј?",PC_Psionic_GUIDEFIRST_TEMPEL);
+	Info_Addchoice (PC_Psionic_GUIDEFIRST,"... РѕР±РёС‚РµР»СЊ РЅР°СЃС‚Р°РІРЅРёРєРѕРІ?",PC_Psionic_GUIDEFIRST_TRAIN);
+	Info_Addchoice (PC_Psionic_GUIDEFIRST,"... Р»Р°Р±РѕСЂР°С‚РѕСЂРёСЏ?",PC_Psionic_GUIDEFIRST_HERB);
 
 };  
 
@@ -501,8 +501,8 @@ func void PC_Psionic_GUIDEFIRST_MAINGATE()
 
 func void PC_Psionic_GUIDEFIRST_SMITH()
 {
-	AI_Output (other, self,"PC_Psionic_GUIDEFIRST_SMITH_Info_15_01"); //... кузница.
-	AI_Output (self, other,"PC_Psionic_GUIDEFIRST_SMITH_Info_05_02"); //Иди за мной!
+	AI_Output (other, self,"PC_Psionic_GUIDEFIRST_SMITH_Info_15_01"); //... РєСѓР·РЅРёС†Р°.
+	AI_Output (self, other,"PC_Psionic_GUIDEFIRST_SMITH_Info_05_02"); //РРґРё Р·Р° РјРЅРѕР№!
 	LesterGuide = 1;
 	AI_StopProcessInfos (self);
 	Npc_ExchangeRoutine(self,"GUIDETOSMITH");
@@ -510,8 +510,8 @@ func void PC_Psionic_GUIDEFIRST_SMITH()
 
 func void PC_Psionic_GUIDEFIRST_TEMPEL()
 {
-	AI_Output (other, self,"PC_Psionic_GUIDEFIRST_TEMPEL_Info_15_01"); //... храм.
-	AI_Output (self, other,"PC_Psionic_GUIDEFIRST_TEMPEL_Info_05_02"); //Иди за мной!
+	AI_Output (other, self,"PC_Psionic_GUIDEFIRST_TEMPEL_Info_15_01"); //... С…СЂР°Рј.
+	AI_Output (self, other,"PC_Psionic_GUIDEFIRST_TEMPEL_Info_05_02"); //РРґРё Р·Р° РјРЅРѕР№!
 	LesterGuide = 2;
 	AI_StopProcessInfos (self);
 	Npc_ExchangeRoutine(self,"GUIDETOTEMPEL");
@@ -519,8 +519,8 @@ func void PC_Psionic_GUIDEFIRST_TEMPEL()
 
 func void PC_Psionic_GUIDEFIRST_TRAIN()
 {
-	AI_Output (other, self,"PC_Psionic_GUIDEFIRST_TRAIN_Info_15_01"); //... наставники.
-	AI_Output (self, other,"PC_Psionic_GUIDEFIRST_TARIN_Info_05_02"); //Иди за мной!
+	AI_Output (other, self,"PC_Psionic_GUIDEFIRST_TRAIN_Info_15_01"); //... РЅР°СЃС‚Р°РІРЅРёРєРё.
+	AI_Output (self, other,"PC_Psionic_GUIDEFIRST_TARIN_Info_05_02"); //РРґРё Р·Р° РјРЅРѕР№!
 	LesterGuide = 3;
 	AI_StopProcessInfos (self);
 	Npc_ExchangeRoutine(self,"GUIDETOTRAIN");
@@ -528,8 +528,8 @@ func void PC_Psionic_GUIDEFIRST_TRAIN()
 
 func void PC_Psionic_GUIDEFIRST_HERB()
 {
-	AI_Output (other, self,"PC_Psionic_GUIDEFIRST_HERB_Info_15_01"); //... лаборатория.
-	AI_Output (self, other,"PC_Psionic_GUIDEFIRST_HERB_Info_05_02"); //Иди за мной!
+	AI_Output (other, self,"PC_Psionic_GUIDEFIRST_HERB_Info_15_01"); //... Р»Р°Р±РѕСЂР°С‚РѕСЂРёСЏ.
+	AI_Output (self, other,"PC_Psionic_GUIDEFIRST_HERB_Info_05_02"); //РРґРё Р·Р° РјРЅРѕР№!
 	LesterGuide = 4;
 	AI_StopProcessInfos (self);
 	Npc_ExchangeRoutine(self,"GUIDETOHERB");
@@ -562,10 +562,10 @@ FUNC int  PC_Psionic_TRAIN_Condition()
 
 FUNC void  PC_Psionic_TRAIN_Info()
 {
-	AI_Output (self, other,"PC_Psionic_TRAIN_Info_05_01"); //Здесь ты найдешь Идола Кадара. Он обучает послушников.
+	AI_Output (self, other,"PC_Psionic_TRAIN_Info_05_01"); //Р—РґРµСЃСЊ С‚С‹ РЅР°Р№РґРµС€СЊ РРґРѕР»Р° РљР°РґР°СЂР°. РћРЅ РѕР±СѓС‡Р°РµС‚ РїРѕСЃР»СѓС€РЅРёРєРѕРІ.
 	AI_PointAt(self,"PSI_PATH_9_14");
 	AI_StopPointAt (self);
-	AI_Output (self, other,"PC_Psionic_TRAIN_Info_05_02"); //Поднимайся по лестнице к тренировочной площадке Стражей. Я буду ждать тебя здесь. Если опоздаешь, ищи меня у входа в Лагерь - я буду там с Идолом Намибом.
+	AI_Output (self, other,"PC_Psionic_TRAIN_Info_05_02"); //РџРѕРґРЅРёРјР°Р№СЃСЏ РїРѕ Р»РµСЃС‚РЅРёС†Рµ Рє С‚СЂРµРЅРёСЂРѕРІРѕС‡РЅРѕР№ РїР»РѕС‰Р°РґРєРµ РЎС‚СЂР°Р¶РµР№. РЇ Р±СѓРґСѓ Р¶РґР°С‚СЊ С‚РµР±СЏ Р·РґРµСЃСЊ. Р•СЃР»Рё РѕРїРѕР·РґР°РµС€СЊ, РёС‰Рё РјРµРЅСЏ Сѓ РІС…РѕРґР° РІ Р›Р°РіРµСЂСЊ - СЏ Р±СѓРґСѓ С‚Р°Рј СЃ РРґРѕР»РѕРј РќР°РјРёР±РѕРј.
 
 	LesterGuide = 0;
 	Npc_ExchangeRoutine (self,"START");
@@ -596,7 +596,7 @@ FUNC int  PC_Psionic_TEMPEL_Condition()
 
 FUNC void  PC_Psionic_TEMPEL_Info()
 {
-	AI_Output (self, other,"PC_Psionic_TEMPEL_Info_05_01"); //Это храм. Я подожду тебя, но если ты задержишься надолго, мне придется вернуться к Идолу Намибу.
+	AI_Output (self, other,"PC_Psionic_TEMPEL_Info_05_01"); //Р­С‚Рѕ С…СЂР°Рј. РЇ РїРѕРґРѕР¶РґСѓ С‚РµР±СЏ, РЅРѕ РµСЃР»Рё С‚С‹ Р·Р°РґРµСЂР¶РёС€СЊСЃСЏ РЅР°РґРѕР»РіРѕ, РјРЅРµ РїСЂРёРґРµС‚СЃСЏ РІРµСЂРЅСѓС‚СЊСЃСЏ Рє РРґРѕР»Сѓ РќР°РјРёР±Сѓ.
 
 	LesterGuide = 0;
 	
@@ -629,7 +629,7 @@ FUNC int  PC_Psionic_SMITH_Condition()
 
 FUNC void  PC_Psionic_SMITH_Info()
 {
-	AI_Output (self, other,"PC_Psionic_SMITH_Info_05_01"); //Это кузница. Я могу ждать тебя не больше часа, потом мне придется уйти.
+	AI_Output (self, other,"PC_Psionic_SMITH_Info_05_01"); //Р­С‚Рѕ РєСѓР·РЅРёС†Р°. РЇ РјРѕРіСѓ Р¶РґР°С‚СЊ С‚РµР±СЏ РЅРµ Р±РѕР»СЊС€Рµ С‡Р°СЃР°, РїРѕС‚РѕРј РјРЅРµ РїСЂРёРґРµС‚СЃСЏ СѓР№С‚Рё.
 	LesterGuide = 0;
 	
 	
@@ -641,7 +641,7 @@ FUNC void  PC_Psionic_SMITH_Info()
 	
 	
 };   
-// ***************************** Beim Krauthдndler ****************************************// 
+// ***************************** Beim KrauthРґndler ****************************************// 
 instance  PC_Psionic_HERB (C_INFO)
 {
 	npc				= PC_Psionic;                       
@@ -661,8 +661,8 @@ FUNC int  PC_Psionic_HERB_Condition()
 };
 FUNC void  PC_Psionic_HERB_Info()
 {
-	AI_Output      (self, other,"PC_Psionic_HERB_Info_05_01"); //Если поднимешься по этой лестнице, то попадешь к Кор Галому, алхимику. Внизу живет Фортуно, он торгует болотником.
-	AI_Output      (self, other,"PC_Psionic_HERB_Info_05_02"); //Я буду ждать тебя здесь. Только не долго, а то мне нужно уходить.
+	AI_Output      (self, other,"PC_Psionic_HERB_Info_05_01"); //Р•СЃР»Рё РїРѕРґРЅРёРјРµС€СЊСЃСЏ РїРѕ СЌС‚РѕР№ Р»РµСЃС‚РЅРёС†Рµ, С‚Рѕ РїРѕРїР°РґРµС€СЊ Рє РљРѕСЂ Р“Р°Р»РѕРјСѓ, Р°Р»С…РёРјРёРєСѓ. Р’РЅРёР·Сѓ Р¶РёРІРµС‚ Р¤РѕСЂС‚СѓРЅРѕ, РѕРЅ С‚РѕСЂРіСѓРµС‚ Р±РѕР»РѕС‚РЅРёРєРѕРј.
+	AI_Output      (self, other,"PC_Psionic_HERB_Info_05_02"); //РЇ Р±СѓРґСѓ Р¶РґР°С‚СЊ С‚РµР±СЏ Р·РґРµСЃСЊ. РўРѕР»СЊРєРѕ РЅРµ РґРѕР»РіРѕ, Р° С‚Рѕ РјРЅРµ РЅСѓР¶РЅРѕ СѓС…РѕРґРёС‚СЊ.
 	
 	LesterGuide = 0;
 	
@@ -701,7 +701,7 @@ instance  PC_Psionic_SEND (C_INFO)// PC muss im ersten Kapitel schon mal mit Les
 
 FUNC int  PC_Psionic_SEND_Condition()
 {
-	//SN: NICHT auf Kapitel 2 abfragen, Kapitelwechel geschieht erst unten zentral fьr alle SC-Gilden!!!
+	//SN: NICHT auf Kapitel 2 abfragen, Kapitelwechel geschieht erst unten zentral fСЊr alle SC-Gilden!!!
 	if	(Npc_GetTrueGuild(hero) != GIL_NONE)
 	&&	(YBerion_BringFocus != LOG_RUNNING)
 	&&	(YBerion_BringFocus != LOG_SUCCESS)
@@ -715,14 +715,14 @@ func void  PC_Psionic_SEND_Info()
 	AI_GotoNpc			(self,hero);
 	if (Npc_KnowsInfo(hero,DIA_Lester_Hallo))
 	{
-		AI_Output		(self, other,"PC_Psionic_SEND_Info_05_00"); //Как хорошо, что ты здесь. У меня для тебя есть новости.
-		AI_Output		(other, self,"PC_Psionic_SEND_Info_15_01"); //Хорошие новости, я надеюсь.
+		AI_Output		(self, other,"PC_Psionic_SEND_Info_05_00"); //РљР°Рє С…РѕСЂРѕС€Рѕ, С‡С‚Рѕ С‚С‹ Р·РґРµСЃСЊ. РЈ РјРµРЅСЏ РґР»СЏ С‚РµР±СЏ РµСЃС‚СЊ РЅРѕРІРѕСЃС‚Рё.
+		AI_Output		(other, self,"PC_Psionic_SEND_Info_15_01"); //РҐРѕСЂРѕС€РёРµ РЅРѕРІРѕСЃС‚Рё, СЏ РЅР°РґРµСЋСЃСЊ.
 	};
-	AI_Output			(self, other,"PC_Psionic_SEND_Info_05_02"); //У Братства есть большие планы.
-	AI_Output			(other, self,"PC_Psionic_SEND_Info_15_03"); //Планы? Какие? Вырваться на свободу?
-	AI_Output			(self, other,"PC_Psionic_SEND_Info_05_04"); //Гуру пытаются призвать спящего. Но необходимо нечто, что объединит их усилия.
-	AI_Output			(other, self,"PC_Psionic_SEND_Info_15_05"); //Да, и...
-	AI_Output			(self, other,"PC_Psionic_SEND_Info_05_06"); //Им нужен магический артефакт, называемый юнитор.
+	AI_Output			(self, other,"PC_Psionic_SEND_Info_05_02"); //РЈ Р‘СЂР°С‚СЃС‚РІР° РµСЃС‚СЊ Р±РѕР»СЊС€РёРµ РїР»Р°РЅС‹.
+	AI_Output			(other, self,"PC_Psionic_SEND_Info_15_03"); //РџР»Р°РЅС‹? РљР°РєРёРµ? Р’С‹СЂРІР°С‚СЊСЃСЏ РЅР° СЃРІРѕР±РѕРґСѓ?
+	AI_Output			(self, other,"PC_Psionic_SEND_Info_05_04"); //Р“СѓСЂСѓ РїС‹С‚Р°СЋС‚СЃСЏ РїСЂРёР·РІР°С‚СЊ СЃРїСЏС‰РµРіРѕ. РќРѕ РЅРµРѕР±С…РѕРґРёРјРѕ РЅРµС‡С‚Рѕ, С‡С‚Рѕ РѕР±СЉРµРґРёРЅРёС‚ РёС… СѓСЃРёР»РёСЏ.
+	AI_Output			(other, self,"PC_Psionic_SEND_Info_15_05"); //Р”Р°, Рё...
+	AI_Output			(self, other,"PC_Psionic_SEND_Info_05_06"); //РРј РЅСѓР¶РµРЅ РјР°РіРёС‡РµСЃРєРёР№ Р°СЂС‚РµС„Р°РєС‚, РЅР°Р·С‹РІР°РµРјС‹Р№ СЋРЅРёС‚РѕСЂ.
 
 	B_Kapitelwechsel	(2);
 };  
@@ -737,7 +737,7 @@ instance  PC_Psionic_BROTHERHOOD_TODO (C_INFO)
 	information		= PC_Psionic_BROTHERHOOD_TODO_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Но какое отношение это имеет ко мне?"; 
+	description		= "РќРѕ РєР°РєРѕРµ РѕС‚РЅРѕС€РµРЅРёРµ СЌС‚Рѕ РёРјРµРµС‚ РєРѕ РјРЅРµ?"; 
 };
 
 FUNC int  PC_Psionic_BROTHERHOOD_TODO_Condition()
@@ -750,14 +750,14 @@ FUNC int  PC_Psionic_BROTHERHOOD_TODO_Condition()
 };
 FUNC void  PC_Psionic_BROTHERHOOD_TODO_Info()
 {
-	AI_Output			(other, self,"PC_Psionic_BROTHERHOOD_TODO_15_01"); //Но какое отношение это имеет ко мне?
-	AI_Output			(self, other,"PC_Psionic_BROTHERHOOD_TODO_05_02"); //Поговори с Ю`Берионом. Он самый могущественный человек в Братстве. Используй эту возможность, чтобы завоевать его расположение.
-	AI_Output			(other, self,"PC_Psionic_BROTHERHOOD_TODO_15_03"); //Где мне его искать?
-	AI_Output			(self, other,"PC_Psionic_BROTHERHOOD_TODO_05_04"); //Отправляйся в храм. Он редко покидает его. Возможно, он чувствует себя ближе к Спящему среди холодных камней.
+	AI_Output			(other, self,"PC_Psionic_BROTHERHOOD_TODO_15_01"); //РќРѕ РєР°РєРѕРµ РѕС‚РЅРѕС€РµРЅРёРµ СЌС‚Рѕ РёРјРµРµС‚ РєРѕ РјРЅРµ?
+	AI_Output			(self, other,"PC_Psionic_BROTHERHOOD_TODO_05_02"); //РџРѕРіРѕРІРѕСЂРё СЃ Р®`Р‘РµСЂРёРѕРЅРѕРј. РћРЅ СЃР°РјС‹Р№ РјРѕРіСѓС‰РµСЃС‚РІРµРЅРЅС‹Р№ С‡РµР»РѕРІРµРє РІ Р‘СЂР°С‚СЃС‚РІРµ. РСЃРїРѕР»СЊР·СѓР№ СЌС‚Сѓ РІРѕР·РјРѕР¶РЅРѕСЃС‚СЊ, С‡С‚РѕР±С‹ Р·Р°РІРѕРµРІР°С‚СЊ РµРіРѕ СЂР°СЃРїРѕР»РѕР¶РµРЅРёРµ.
+	AI_Output			(other, self,"PC_Psionic_BROTHERHOOD_TODO_15_03"); //Р“РґРµ РјРЅРµ РµРіРѕ РёСЃРєР°С‚СЊ?
+	AI_Output			(self, other,"PC_Psionic_BROTHERHOOD_TODO_05_04"); //РћС‚РїСЂР°РІР»СЏР№СЃСЏ РІ С…СЂР°Рј. РћРЅ СЂРµРґРєРѕ РїРѕРєРёРґР°РµС‚ РµРіРѕ. Р’РѕР·РјРѕР¶РЅРѕ, РѕРЅ С‡СѓРІСЃС‚РІСѓРµС‚ СЃРµР±СЏ Р±Р»РёР¶Рµ Рє РЎРїСЏС‰РµРјСѓ СЃСЂРµРґРё С…РѕР»РѕРґРЅС‹С… РєР°РјРЅРµР№.
 
 	Log_CreateTopic		(CH2_Focus,	LOG_MISSION);
 	Log_SetTopicStatus	(CH2_Focus,	LOG_RUNNING);
-	B_LogEntry			(CH2_Focus,"Лестер сказал мне, что Ю'Берион ищет магический камень-юнитор. Гуру можно найти внутри храмовой горы.");
+	B_LogEntry			(CH2_Focus,"Р›РµСЃС‚РµСЂ СЃРєР°Р·Р°Р» РјРЅРµ, С‡С‚Рѕ Р®'Р‘РµСЂРёРѕРЅ РёС‰РµС‚ РјР°РіРёС‡РµСЃРєРёР№ РєР°РјРµРЅСЊ-СЋРЅРёС‚РѕСЂ. Р“СѓСЂСѓ РјРѕР¶РЅРѕ РЅР°Р№С‚Рё РІРЅСѓС‚СЂРё С…СЂР°РјРѕРІРѕР№ РіРѕСЂС‹.");
 
 	var C_NPC YBerion;
 	YBerion = Hlp_GetNpc(Gur_1200_YBerion);
@@ -799,14 +799,14 @@ FUNC int  PC_Psionic_FOLLOWME_Condition()
 func void  PC_Psionic_FOLLOWME_Info()
 {
 	AI_GotoNpc(self,hero);
-	AI_Output (self, other,"PC_Psionic_FOLLOWME_Info_05_01"); //Эй, что ты здесь делаешь?
-	AI_Output (other, self,"PC_Psionic_FOLLOWME_Info_15_02"); //Я здесь по приказу магов Воды. Я ищу магические камни, называемые также юниторами.
-	AI_Output (self, other,"PC_Psionic_FOLLOWME_Info_05_03"); //Ты ищешь юниторы? Храбрый парень.
-	AI_Output (other, self,"PC_Psionic_FOLLOWME_Info_15_04"); //Сатурас и другие маги из Нового Лагеря хотят использовать их для того, чтобы взорвать Барьер и освободить нас из заточения.
-	AI_Output (self, other,"PC_Psionic_FOLLOWME_Info_05_05"); //Я поверю в это, только когда увижу своими собственными глазами.
-	AI_Output (other, self,"PC_Psionic_FOLLOWME_Info_15_06"); //Могу сказать то же самое. Но как ты оказался здесь?
-	AI_Output (self, other,"PC_Psionic_FOLLOWME_Info_05_07"); //Я тут размышляю, не зглянуть ли мне в старый форт в горах.
-	AI_Output (self, other,"PC_Psionic_FOLLOWME_Info_05_08"); //Знаешь... Мне бы весьма пригодился один документ... С другой стороны, отправляться туда одному довольно опасно. 
+	AI_Output (self, other,"PC_Psionic_FOLLOWME_Info_05_01"); //Р­Р№, С‡С‚Рѕ С‚С‹ Р·РґРµСЃСЊ РґРµР»Р°РµС€СЊ?
+	AI_Output (other, self,"PC_Psionic_FOLLOWME_Info_15_02"); //РЇ Р·РґРµСЃСЊ РїРѕ РїСЂРёРєР°Р·Сѓ РјР°РіРѕРІ Р’РѕРґС‹. РЇ РёС‰Сѓ РјР°РіРёС‡РµСЃРєРёРµ РєР°РјРЅРё, РЅР°Р·С‹РІР°РµРјС‹Рµ С‚Р°РєР¶Рµ СЋРЅРёС‚РѕСЂР°РјРё.
+	AI_Output (self, other,"PC_Psionic_FOLLOWME_Info_05_03"); //РўС‹ РёС‰РµС€СЊ СЋРЅРёС‚РѕСЂС‹? РҐСЂР°Р±СЂС‹Р№ РїР°СЂРµРЅСЊ.
+	AI_Output (other, self,"PC_Psionic_FOLLOWME_Info_15_04"); //РЎР°С‚СѓСЂР°СЃ Рё РґСЂСѓРіРёРµ РјР°РіРё РёР· РќРѕРІРѕРіРѕ Р›Р°РіРµСЂСЏ С…РѕС‚СЏС‚ РёСЃРїРѕР»СЊР·РѕРІР°С‚СЊ РёС… РґР»СЏ С‚РѕРіРѕ, С‡С‚РѕР±С‹ РІР·РѕСЂРІР°С‚СЊ Р‘Р°СЂСЊРµСЂ Рё РѕСЃРІРѕР±РѕРґРёС‚СЊ РЅР°СЃ РёР· Р·Р°С‚РѕС‡РµРЅРёСЏ.
+	AI_Output (self, other,"PC_Psionic_FOLLOWME_Info_05_05"); //РЇ РїРѕРІРµСЂСЋ РІ СЌС‚Рѕ, С‚РѕР»СЊРєРѕ РєРѕРіРґР° СѓРІРёР¶Сѓ СЃРІРѕРёРјРё СЃРѕР±СЃС‚РІРµРЅРЅС‹РјРё РіР»Р°Р·Р°РјРё.
+	AI_Output (other, self,"PC_Psionic_FOLLOWME_Info_15_06"); //РњРѕРіСѓ СЃРєР°Р·Р°С‚СЊ С‚Рѕ Р¶Рµ СЃР°РјРѕРµ. РќРѕ РєР°Рє С‚С‹ РѕРєР°Р·Р°Р»СЃСЏ Р·РґРµСЃСЊ?
+	AI_Output (self, other,"PC_Psionic_FOLLOWME_Info_05_07"); //РЇ С‚СѓС‚ СЂР°Р·РјС‹С€Р»СЏСЋ, РЅРµ Р·РіР»СЏРЅСѓС‚СЊ Р»Рё РјРЅРµ РІ СЃС‚Р°СЂС‹Р№ С„РѕСЂС‚ РІ РіРѕСЂР°С….
+	AI_Output (self, other,"PC_Psionic_FOLLOWME_Info_05_08"); //Р—РЅР°РµС€СЊ... РњРЅРµ Р±С‹ РІРµСЃСЊРјР° РїСЂРёРіРѕРґРёР»СЃСЏ РѕРґРёРЅ РґРѕРєСѓРјРµРЅС‚... РЎ РґСЂСѓРіРѕР№ СЃС‚РѕСЂРѕРЅС‹, РѕС‚РїСЂР°РІР»СЏС‚СЊСЃСЏ С‚СѓРґР° РѕРґРЅРѕРјСѓ РґРѕРІРѕР»СЊРЅРѕ РѕРїР°СЃРЅРѕ. 
 };
 
 // ***************************** INFOS ****************************************//
@@ -817,7 +817,7 @@ instance  PC_Psionic_GOLEM (C_INFO)
 	information		= PC_Psionic_GOLEM_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Как ты сумел миновать эту живую гору?"; 
+	description		= "РљР°Рє С‚С‹ СЃСѓРјРµР» РјРёРЅРѕРІР°С‚СЊ СЌС‚Сѓ Р¶РёРІСѓСЋ РіРѕСЂСѓ?"; 
 };
 
 FUNC int  PC_Psionic_GOLEM_Condition()
@@ -831,8 +831,8 @@ FUNC int  PC_Psionic_GOLEM_Condition()
 };
 FUNC void  PC_Psionic_GOLEM_Info()
 {
-	AI_Output (other, self,"PC_Psionic_NORMAL_Info_15_01"); //Как ты сумел миновать эту живую гору?
-	AI_Output (self, other,"PC_Psionic_NORMAL_Info_05_02"); //Я многому научился у Гуру. Мне поможет магия.
+	AI_Output (other, self,"PC_Psionic_NORMAL_Info_15_01"); //РљР°Рє С‚С‹ СЃСѓРјРµР» РјРёРЅРѕРІР°С‚СЊ СЌС‚Сѓ Р¶РёРІСѓСЋ РіРѕСЂСѓ?
+	AI_Output (self, other,"PC_Psionic_NORMAL_Info_05_02"); //РЇ РјРЅРѕРіРѕРјСѓ РЅР°СѓС‡РёР»СЃСЏ Сѓ Р“СѓСЂСѓ. РњРЅРµ РїРѕРјРѕР¶РµС‚ РјР°РіРёСЏ.
 };  
 
 //------------GESCHICHTE WARUM LESTER ZUR BERGFESTUNG GEHT--------------------
@@ -843,7 +843,7 @@ instance  PC_Psionic_STORY (C_INFO)
 	information		= PC_Psionic_STORY_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Что за документ ты разыскиваешь?"; 
+	description		= "Р§С‚Рѕ Р·Р° РґРѕРєСѓРјРµРЅС‚ С‚С‹ СЂР°Р·С‹СЃРєРёРІР°РµС€СЊ?"; 
 };
 
 FUNC int  PC_Psionic_STORY_Condition()
@@ -857,11 +857,11 @@ FUNC int  PC_Psionic_STORY_Condition()
 };
 FUNC void  PC_Psionic_STORY_Info()
 {
-	AI_Output (other, self,"PC_Psionic_STORY_Info_15_01"); //Что за документ ты разыскиваешь?
-	AI_Output (self, other,"PC_Psionic_STORY_Info_05_02"); //Много лет назад в форте жил правитель этих земель. Он владел землей и всеми шахтами.
-	AI_Output (self, other,"PC_Psionic_STORY_Info_05_03"); //Разумеется, у него был документ, подтверждающий право владения - как и у любого аристократа. Эту бумагу я и хочу отыскать.
-	AI_Output (other, self,"PC_Psionic_STORY_Info_15_04"); //Но здесь, внутри Барьера, от нее не будет никакого прока.
-	AI_Output (self, other,"PC_Psionic_STORY_Info_05_05"); //Верно. Но если магам Воды удастся уничтожить Барьер, этот документ вновь обретет свою цену.
+	AI_Output (other, self,"PC_Psionic_STORY_Info_15_01"); //Р§С‚Рѕ Р·Р° РґРѕРєСѓРјРµРЅС‚ С‚С‹ СЂР°Р·С‹СЃРєРёРІР°РµС€СЊ?
+	AI_Output (self, other,"PC_Psionic_STORY_Info_05_02"); //РњРЅРѕРіРѕ Р»РµС‚ РЅР°Р·Р°Рґ РІ С„РѕСЂС‚Рµ Р¶РёР» РїСЂР°РІРёС‚РµР»СЊ СЌС‚РёС… Р·РµРјРµР»СЊ. РћРЅ РІР»Р°РґРµР» Р·РµРјР»РµР№ Рё РІСЃРµРјРё С€Р°С…С‚Р°РјРё.
+	AI_Output (self, other,"PC_Psionic_STORY_Info_05_03"); //Р Р°Р·СѓРјРµРµС‚СЃСЏ, Сѓ РЅРµРіРѕ Р±С‹Р» РґРѕРєСѓРјРµРЅС‚, РїРѕРґС‚РІРµСЂР¶РґР°СЋС‰РёР№ РїСЂР°РІРѕ РІР»Р°РґРµРЅРёСЏ - РєР°Рє Рё Сѓ Р»СЋР±РѕРіРѕ Р°СЂРёСЃС‚РѕРєСЂР°С‚Р°. Р­С‚Сѓ Р±СѓРјР°РіСѓ СЏ Рё С…РѕС‡Сѓ РѕС‚С‹СЃРєР°С‚СЊ.
+	AI_Output (other, self,"PC_Psionic_STORY_Info_15_04"); //РќРѕ Р·РґРµСЃСЊ, РІРЅСѓС‚СЂРё Р‘Р°СЂСЊРµСЂР°, РѕС‚ РЅРµРµ РЅРµ Р±СѓРґРµС‚ РЅРёРєР°РєРѕРіРѕ РїСЂРѕРєР°.
+	AI_Output (self, other,"PC_Psionic_STORY_Info_05_05"); //Р’РµСЂРЅРѕ. РќРѕ РµСЃР»Рё РјР°РіР°Рј Р’РѕРґС‹ СѓРґР°СЃС‚СЃСЏ СѓРЅРёС‡С‚РѕР¶РёС‚СЊ Р‘Р°СЂСЊРµСЂ, СЌС‚РѕС‚ РґРѕРєСѓРјРµРЅС‚ РІРЅРѕРІСЊ РѕР±СЂРµС‚РµС‚ СЃРІРѕСЋ С†РµРЅСѓ.
 };  
 
 // ***************************** INFOS ****************************************//
@@ -872,7 +872,7 @@ instance  PC_Psionic_COMEWITHME (C_INFO)
 	information		= PC_Psionic_COMEWITHME_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Мы могли бы заглянуть в форт вместе!"; 
+	description		= "РњС‹ РјРѕРіР»Рё Р±С‹ Р·Р°РіР»СЏРЅСѓС‚СЊ РІ С„РѕСЂС‚ РІРјРµСЃС‚Рµ!"; 
 };
 
 FUNC int  PC_Psionic_COMEWITHME_Condition()
@@ -886,12 +886,12 @@ FUNC int  PC_Psionic_COMEWITHME_Condition()
 
 FUNC void  PC_Psionic_COMEWITHME_Info()
 {
-	AI_Output (other, self,"PC_Psionic_COMEWITHME_Info_15_01"); //Мы могли бы заглянуть в форт вместе!
-	AI_Output (self, other,"PC_Psionic_COMEWITHME_Info_05_02"); //Хорошая идея. Иди вперед, я буду рядом.
+	AI_Output (other, self,"PC_Psionic_COMEWITHME_Info_15_01"); //РњС‹ РјРѕРіР»Рё Р±С‹ Р·Р°РіР»СЏРЅСѓС‚СЊ РІ С„РѕСЂС‚ РІРјРµСЃС‚Рµ!
+	AI_Output (self, other,"PC_Psionic_COMEWITHME_Info_05_02"); //РҐРѕСЂРѕС€Р°СЏ РёРґРµСЏ. РРґРё РІРїРµСЂРµРґ, СЏ Р±СѓРґСѓ СЂСЏРґРѕРј.
 
 	Log_CreateTopic		(CH3_Fortress,	LOG_MISSION);
 	Log_SetTopicStatus	(CH3_Fortress,	LOG_RUNNING);
-	B_LogEntry		(CH3_Fortress,"Я встретил Лестера из Болотного Лагеря перед крепостью, которая просто вросла в гору. Он разыскивает в здании документ и присоединился к моим поискам юнитора.");
+	B_LogEntry		(CH3_Fortress,"РЇ РІСЃС‚СЂРµС‚РёР» Р›РµСЃС‚РµСЂР° РёР· Р‘РѕР»РѕС‚РЅРѕРіРѕ Р›Р°РіРµСЂСЏ РїРµСЂРµРґ РєСЂРµРїРѕСЃС‚СЊСЋ, РєРѕС‚РѕСЂР°СЏ РїСЂРѕСЃС‚Рѕ РІСЂРѕСЃР»Р° РІ РіРѕСЂСѓ. РћРЅ СЂР°Р·С‹СЃРєРёРІР°РµС‚ РІ Р·РґР°РЅРёРё РґРѕРєСѓРјРµРЅС‚ Рё РїСЂРёСЃРѕРµРґРёРЅРёР»СЃСЏ Рє РјРѕРёРј РїРѕРёСЃРєР°Рј СЋРЅРёС‚РѕСЂР°.");
 
   	self.aivar[AIV_PARTYMEMBER] =	TRUE;
 	Npc_ExchangeRoutine (self,"FORTRESSFOLLOW");
@@ -919,18 +919,18 @@ func void  PC_Psionic_FOKUSPLACE_Info()
 {
 	AI_GotoNpc(self,hero);
 	//AI_PointAt(FOKUSWP)
-	AI_Output (self, other,"PC_Psionic_FOKUSPLACE_Info_05_01"); //Похоже, твой юнитор там, наверху.
-	AI_Output (other, self,"PC_Psionic_FOKUSPLACE_Info_15_02"); //Да, действительно похоже. Х-м... Добраться до него не так-то легко...
+	AI_Output (self, other,"PC_Psionic_FOKUSPLACE_Info_05_01"); //РџРѕС…РѕР¶Рµ, С‚РІРѕР№ СЋРЅРёС‚РѕСЂ С‚Р°Рј, РЅР°РІРµСЂС…Сѓ.
+	AI_Output (other, self,"PC_Psionic_FOKUSPLACE_Info_15_02"); //Р”Р°, РґРµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ РїРѕС…РѕР¶Рµ. РҐ-Рј... Р”РѕР±СЂР°С‚СЊСЃСЏ РґРѕ РЅРµРіРѕ РЅРµ С‚Р°Рє-С‚Рѕ Р»РµРіРєРѕ...
 	AI_StopProcessInfos(self);
 
-	B_LogEntry		(CH3_Fortress,"Юнитор, который я разыскивал, покоится на пьедестале. Он слишком высок, чтобы на него взобраться. Надо найти другой путь.");	
+	B_LogEntry		(CH3_Fortress,"Р®РЅРёС‚РѕСЂ, РєРѕС‚РѕСЂС‹Р№ СЏ СЂР°Р·С‹СЃРєРёРІР°Р», РїРѕРєРѕРёС‚СЃСЏ РЅР° РїСЊРµРґРµСЃС‚Р°Р»Рµ. РћРЅ СЃР»РёС€РєРѕРј РІС‹СЃРѕРє, С‡С‚РѕР±С‹ РЅР° РЅРµРіРѕ РІР·РѕР±СЂР°С‚СЊСЃСЏ. РќР°РґРѕ РЅР°Р№С‚Рё РґСЂСѓРіРѕР№ РїСѓС‚СЊ.");	
 	
 	Wld_InsertNpc		(Harpie,"LOCATION_19_03_ENTRANCE_HARPYE");
 	Wld_InsertNpc		(Harpie,"LOCATION_19_03_ENTRANCE_HARPYE2");
 	Wld_InsertNpc		(Harpie,"LOCATION_19_03_ENTRANCE_HARPYE3");
 };
 
-// ---------SPIELER WILL ЬBER DIE BRЬCKE OHNE DEN AUFTRAG ERFЬLLT ZU HABEN--------
+// ---------SPIELER WILL Р¬BER DIE BRР¬CKE OHNE DEN AUFTRAG ERFР¬LLT ZU HABEN--------
 instance PC_Psionic_COMEBACK (C_INFO)
 {
 	npc				= PC_Psionic;
@@ -952,7 +952,7 @@ FUNC int  PC_Psionic_COMEBACK_Condition()
 func void  PC_Psionic_COMEBACK_Info()
 {
 	AI_GotoNpc(self,hero);
-	AI_Output (self, other,"PC_Psionic_COMEBACK_Info_05_01"); //Куда ты? Мы еще не закончили поиски.
+	AI_Output (self, other,"PC_Psionic_COMEBACK_Info_05_01"); //РљСѓРґР° С‚С‹? РњС‹ РµС‰Рµ РЅРµ Р·Р°РєРѕРЅС‡РёР»Рё РїРѕРёСЃРєРё.
 	
   	self.aivar[AIV_PARTYMEMBER] =	FALSE;
 	Npc_ExchangeRoutine (self,"FORTRESSWAIT");
@@ -967,7 +967,7 @@ instance  PC_Psionic_IAMHURT (C_INFO)
 	information		= PC_Psionic_IAMHURT_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Я ранен. Ты можешь мне помочь?"; 
+	description		= "РЇ СЂР°РЅРµРЅ. РўС‹ РјРѕР¶РµС€СЊ РјРЅРµ РїРѕРјРѕС‡СЊ?"; 
 };
 
 FUNC int  PC_Psionic_IAMHURT_Condition()
@@ -981,14 +981,14 @@ FUNC int  PC_Psionic_IAMHURT_Condition()
 };
 FUNC void  PC_Psionic_IAMHURT_Info()
 {
-	AI_Output (other, self,"PC_Psionic_IAMHURT_Info_15_01"); //Я ранен. Ты можешь мне помочь?
-	AI_Output (self, other,"PC_Psionic_IAMHURT_Info_05_02"); //Возьми целебный эликсир.
+	AI_Output (other, self,"PC_Psionic_IAMHURT_Info_15_01"); //РЇ СЂР°РЅРµРЅ. РўС‹ РјРѕР¶РµС€СЊ РјРЅРµ РїРѕРјРѕС‡СЊ?
+	AI_Output (self, other,"PC_Psionic_IAMHURT_Info_05_02"); //Р’РѕР·СЊРјРё С†РµР»РµР±РЅС‹Р№ СЌР»РёРєСЃРёСЂ.
 	
 	CreateInvItem (self,ItFo_Potion_Health_02);
 	B_GiveInvItems 	(self, hero,ItFo_Potion_Health_02, 1);
 };  
 
-//------------- SPIELER HAT DIE URKUNDE FЬR LESTER GEFUNDEN-----------------------
+//------------- SPIELER HAT DIE URKUNDE FР¬R LESTER GEFUNDEN-----------------------
 instance  PC_Psionic_URKUNDE (C_INFO)
 {
 	npc				= PC_Psionic;
@@ -996,7 +996,7 @@ instance  PC_Psionic_URKUNDE (C_INFO)
 	information		= PC_Psionic_URKUNDE_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Я нашел твою бумагу."; 
+	description		= "РЇ РЅР°С€РµР» С‚РІРѕСЋ Р±СѓРјР°РіСѓ."; 
 };
 
 FUNC int  PC_Psionic_URKUNDE_Condition()
@@ -1010,11 +1010,11 @@ FUNC int  PC_Psionic_URKUNDE_Condition()
 };
 FUNC void  PC_Psionic_URKUNDE_Info()
 {
-	AI_Output			(other, self,"PC_Psionic_URKUNDE_Info_15_01"); //Я нашел твою бумагу.
-	AI_Output			(self, other,"PC_Psionic_URKUNDE_Info_05_02"); //Отлично! Возьми эти свитки. Они помогут тебе добраться до юнитора.
-	AI_Output			(self, other,"PC_Psionic_URKUNDE_Info_05_03"); //Я буду ждать тебя внизу, у пьедестала.
+	AI_Output			(other, self,"PC_Psionic_URKUNDE_Info_15_01"); //РЇ РЅР°С€РµР» С‚РІРѕСЋ Р±СѓРјР°РіСѓ.
+	AI_Output			(self, other,"PC_Psionic_URKUNDE_Info_05_02"); //РћС‚Р»РёС‡РЅРѕ! Р’РѕР·СЊРјРё СЌС‚Рё СЃРІРёС‚РєРё. РћРЅРё РїРѕРјРѕРіСѓС‚ С‚РµР±Рµ РґРѕР±СЂР°С‚СЊСЃСЏ РґРѕ СЋРЅРёС‚РѕСЂР°.
+	AI_Output			(self, other,"PC_Psionic_URKUNDE_Info_05_03"); //РЇ Р±СѓРґСѓ Р¶РґР°С‚СЊ С‚РµР±СЏ РІРЅРёР·Сѓ, Сѓ РїСЊРµРґРµСЃС‚Р°Р»Р°.
 
-	B_LogEntry		(CH3_Fortress,"Документ на право собственности, который искал Лестер, был в сундуке. В обмен на него парень дал мне четыре свитка с заклинанием телекинеза. Я смогу использовать их, чтобы добраться до юнитора.");
+	B_LogEntry		(CH3_Fortress,"Р”РѕРєСѓРјРµРЅС‚ РЅР° РїСЂР°РІРѕ СЃРѕР±СЃС‚РІРµРЅРЅРѕСЃС‚Рё, РєРѕС‚РѕСЂС‹Р№ РёСЃРєР°Р» Р›РµСЃС‚РµСЂ, Р±С‹Р» РІ СЃСѓРЅРґСѓРєРµ. Р’ РѕР±РјРµРЅ РЅР° РЅРµРіРѕ РїР°СЂРµРЅСЊ РґР°Р» РјРЅРµ С‡РµС‚С‹СЂРµ СЃРІРёС‚РєР° СЃ Р·Р°РєР»РёРЅР°РЅРёРµРј С‚РµР»РµРєРёРЅРµР·Р°. РЇ СЃРјРѕРіСѓ РёСЃРїРѕР»СЊР·РѕРІР°С‚СЊ РёС…, С‡С‚РѕР±С‹ РґРѕР±СЂР°С‚СЊСЃСЏ РґРѕ СЋРЅРёС‚РѕСЂР°.");
 	
 	CreateInvItems		(self,ItArScrollTelekinesis,4);
 	B_GiveInvItems 	(self, hero, ItArScrollTelekinesis,4);
@@ -1032,7 +1032,7 @@ instance  PC_Psionic_TIP (C_INFO)
 	information		= PC_Psionic_TIP_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Как добраться до юнитора?"; 
+	description		= "РљР°Рє РґРѕР±СЂР°С‚СЊСЃСЏ РґРѕ СЋРЅРёС‚РѕСЂР°?"; 
 };
 
 FUNC int  PC_Psionic_TIP_Condition()
@@ -1046,8 +1046,8 @@ FUNC int  PC_Psionic_TIP_Condition()
 };
 FUNC void  PC_Psionic_TIP_Info()
 {
-	AI_Output (other, self,"PC_Psionic_TIP_Info_15_01"); //Как добраться до юнитора?
-	AI_Output (self, other,"PC_Psionic_TIP_Info_05_02"); //Господин Ю`Берион однажды сказал: 'Невежда передвигает предметы руками, а мастер - силой своего духа'.
+	AI_Output (other, self,"PC_Psionic_TIP_Info_15_01"); //РљР°Рє РґРѕР±СЂР°С‚СЊСЃСЏ РґРѕ СЋРЅРёС‚РѕСЂР°?
+	AI_Output (self, other,"PC_Psionic_TIP_Info_05_02"); //Р“РѕСЃРїРѕРґРёРЅ Р®`Р‘РµСЂРёРѕРЅ РѕРґРЅР°Р¶РґС‹ СЃРєР°Р·Р°Р»: 'РќРµРІРµР¶РґР° РїРµСЂРµРґРІРёРіР°РµС‚ РїСЂРµРґРјРµС‚С‹ СЂСѓРєР°РјРё, Р° РјР°СЃС‚РµСЂ - СЃРёР»РѕР№ СЃРІРѕРµРіРѕ РґСѓС…Р°'.
 // 	AI_Output (self, other,"PC_Psionic_TIP_Info_05_03"); //Hier ist ein guter Ort, um die Kraft des Geistes zu nutzen!
 };  
 
@@ -1073,7 +1073,7 @@ FUNC int  PC_Psionic_LEAVE_Condition()
 func void  PC_Psionic_LEAVE_Info()
 {
 	AI_GotoNpc(self,hero);
-	AI_Output (self, other,"PC_Psionic_LEAVE_Info_05_01"); //Я останусь здесь и поищу бумагу.
+	AI_Output (self, other,"PC_Psionic_LEAVE_Info_05_01"); //РЇ РѕСЃС‚Р°РЅСѓСЃСЊ Р·РґРµСЃСЊ Рё РїРѕРёС‰Сѓ Р±СѓРјР°РіСѓ.
 	
   	self.aivar[AIV_PARTYMEMBER] =	FALSE;
 
@@ -1103,7 +1103,7 @@ FUNC int  PC_Psionic_BALKON_Condition()
 func void  PC_Psionic_BALKON_Info()
 {
 	AI_GotoNpc(self,hero);
-	AI_Output (self, other,"PC_Psionic_BALKON_Info_05_01"); //Пойду поищу наверху.
+	AI_Output (self, other,"PC_Psionic_BALKON_Info_05_01"); //РџРѕР№РґСѓ РїРѕРёС‰Сѓ РЅР°РІРµСЂС…Сѓ.
 	
 	AI_StopProcessInfos(self);
 	Npc_ExchangeRoutine (self,"BALKON");
@@ -1129,10 +1129,10 @@ FUNC int  PC_Psionic_FINISH_Condition()
 };
 func void  PC_Psionic_FINISH_Info()
 {
-	AI_Output (self, other,"PC_Psionic_FINISH_Info_05_01"); //Теперь мы оба нашли то, что хотели. Я останусь здесь и буду изучать старые книги.
-	AI_Output (other, self,"PC_Psionic_FINISH_Info_15_02"); //Мы еще встретимся.
+	AI_Output (self, other,"PC_Psionic_FINISH_Info_05_01"); //РўРµРїРµСЂСЊ РјС‹ РѕР±Р° РЅР°С€Р»Рё С‚Рѕ, С‡С‚Рѕ С…РѕС‚РµР»Рё. РЇ РѕСЃС‚Р°РЅСѓСЃСЊ Р·РґРµСЃСЊ Рё Р±СѓРґСѓ РёР·СѓС‡Р°С‚СЊ СЃС‚Р°СЂС‹Рµ РєРЅРёРіРё.
+	AI_Output (other, self,"PC_Psionic_FINISH_Info_15_02"); //РњС‹ РµС‰Рµ РІСЃС‚СЂРµС‚РёРјСЃСЏ.
 
-	B_LogEntry		(CH3_Fortress,"Юнитор в моих руках. Лестер хочет еще немного побродить по библиотеке крепости. Интересно, когда наши пути вновь пересекутся?");
+	B_LogEntry		(CH3_Fortress,"Р®РЅРёС‚РѕСЂ РІ РјРѕРёС… СЂСѓРєР°С…. Р›РµСЃС‚РµСЂ С…РѕС‡РµС‚ РµС‰Рµ РЅРµРјРЅРѕРіРѕ РїРѕР±СЂРѕРґРёС‚СЊ РїРѕ Р±РёР±Р»РёРѕС‚РµРєРµ РєСЂРµРїРѕСЃС‚Рё. РРЅС‚РµСЂРµСЃРЅРѕ, РєРѕРіРґР° РЅР°С€Рё РїСѓС‚Рё РІРЅРѕРІСЊ РїРµСЂРµСЃРµРєСѓС‚СЃСЏ?");
 
  	self.aivar[AIV_PARTYMEMBER] = FALSE;
 	Npc_ExchangeRoutine (self,"BOOK");
@@ -1148,7 +1148,7 @@ instance  PC_Psionic_CHESTCLOSED (C_INFO)
 	information		= PC_Psionic_CHESTCLOSED_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Нашел что-нибудь?"; 
+	description		= "РќР°С€РµР» С‡С‚Рѕ-РЅРёР±СѓРґСЊ?"; 
 };
 
 FUNC int  PC_Psionic_CHESTCLOSED_Condition()
@@ -1163,11 +1163,11 @@ FUNC int  PC_Psionic_CHESTCLOSED_Condition()
 };
 FUNC void  PC_Psionic_CHESTCLOSED_Info()
 {
-	AI_Output (other, self,"PC_Psionic_CHESTCLOSED_Info_15_01"); //Нашел что-нибудь?
-	AI_Output (self, other,"PC_Psionic_CHESTCLOSED_Info_05_02"); //Этот сундук закрыт. Может быть мы сможем найти ключ в форте.
-	AI_Output (self, other,"PC_Psionic_CHESTCLOSED_Info_05_03"); //Еще не нашел свою бумагу?
-	AI_Output (other, self,"PC_Psionic_CHESTCLOSED_Info_15_04"); //Нет, пока еще нет...
-	AI_Output (self, other,"PC_Psionic_CHESTCLOSED_Info_05_05"); //Ты уже был в библиотеке?
+	AI_Output (other, self,"PC_Psionic_CHESTCLOSED_Info_15_01"); //РќР°С€РµР» С‡С‚Рѕ-РЅРёР±СѓРґСЊ?
+	AI_Output (self, other,"PC_Psionic_CHESTCLOSED_Info_05_02"); //Р­С‚РѕС‚ СЃСѓРЅРґСѓРє Р·Р°РєСЂС‹С‚. РњРѕР¶РµС‚ Р±С‹С‚СЊ РјС‹ СЃРјРѕР¶РµРј РЅР°Р№С‚Рё РєР»СЋС‡ РІ С„РѕСЂС‚Рµ.
+	AI_Output (self, other,"PC_Psionic_CHESTCLOSED_Info_05_03"); //Р•С‰Рµ РЅРµ РЅР°С€РµР» СЃРІРѕСЋ Р±СѓРјР°РіСѓ?
+	AI_Output (other, self,"PC_Psionic_CHESTCLOSED_Info_15_04"); //РќРµС‚, РїРѕРєР° РµС‰Рµ РЅРµС‚...
+	AI_Output (self, other,"PC_Psionic_CHESTCLOSED_Info_05_05"); //РўС‹ СѓР¶Рµ Р±С‹Р» РІ Р±РёР±Р»РёРѕС‚РµРєРµ?
 	AI_StopProcessInfos(self);
 };  
 /*------------------------------------------------------------------------
@@ -1181,7 +1181,7 @@ instance  PC_Psionic_COMEAGAIN (C_INFO)
 	information		= PC_Psionic_COMEAGAIN_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Давай осмотрим форт вместе."; 
+	description		= "Р”Р°РІР°Р№ РѕСЃРјРѕС‚СЂРёРј С„РѕСЂС‚ РІРјРµСЃС‚Рµ."; 
 };
 
 FUNC int  PC_Psionic_COMEAGAIN_Condition()
@@ -1195,8 +1195,8 @@ FUNC int  PC_Psionic_COMEAGAIN_Condition()
 };
 FUNC void  PC_Psionic_COMEAGAIN_Info()
 {
-	AI_Output (other, self,"PC_Psionic_COMEAGAIN_Info_15_01"); //Давай осмотрим форт вместе.
-	AI_Output (self, other,"PC_Psionic_COMEAGAIN_Info_05_02"); //Хорошо, иди первым.
+	AI_Output (other, self,"PC_Psionic_COMEAGAIN_Info_15_01"); //Р”Р°РІР°Р№ РѕСЃРјРѕС‚СЂРёРј С„РѕСЂС‚ РІРјРµСЃС‚Рµ.
+	AI_Output (self, other,"PC_Psionic_COMEAGAIN_Info_05_02"); //РҐРѕСЂРѕС€Рѕ, РёРґРё РїРµСЂРІС‹Рј.
  
  	self.aivar[AIV_PARTYMEMBER] =	TRUE;
 	Npc_ExchangeRoutine (self,"FORTRESSFOLLOW");
@@ -1205,7 +1205,7 @@ FUNC void  PC_Psionic_COMEAGAIN_Info()
 };  
 
 //---------------------------------------------------------------------
-//	Info DIEGOMILTEN      ******Bjцrn****** Patch2
+//	Info DIEGOMILTEN      ******BjС†rn****** Patch2
 //---------------------------------------------------------------------
 INSTANCE Info_Lester_DIEGOMILTEN (C_INFO)
 {
@@ -1214,7 +1214,7 @@ INSTANCE Info_Lester_DIEGOMILTEN (C_INFO)
 	information	= Info_Lester_DIEGOMILTEN_Info;
 	important	= 0;	
 	permanent	= 0;
-	description = "Возле Старого Лагеря я встретил Диего и Мильтена!";
+	description = "Р’РѕР·Р»Рµ РЎС‚Р°СЂРѕРіРѕ Р›Р°РіРµСЂСЏ СЏ РІСЃС‚СЂРµС‚РёР» Р”РёРµРіРѕ Рё РњРёР»СЊС‚РµРЅР°!";
 };                       
 
 FUNC INT Info_Lester_DIEGOMILTEN_Condition()
@@ -1228,24 +1228,24 @@ FUNC INT Info_Lester_DIEGOMILTEN_Condition()
 func VOID Info_Lester_DIEGOMILTEN_Info()
 {
 	
-	AI_Output	(hero,self,"Info_SFB_1_DieLage_15_00"); 				//Как дела?
-	AI_Output 	(self, hero,"PC_Psionic_FOLLOWME_Info_05_01"); 			//Эй, что ты здесь делаешь?
-	AI_Output	(hero,self,"Info_Saturas_COLLAPSE_15_01"); 				//Старую Шахту залило водой, и она обрушилась!
-	AI_Output 	(self, hero,"DIA_Fingers_BecomeShadow_05_01"); 			//И что с того?
-	AI_Output 	(hero, self,"Info_Xardas_KDW_15_01"); 					//Все маги Огня мертвы.
-	AI_Output 	(hero, self,"Info_Xardas_KDW_15_02"); 					//Их убил Гомез.
-	AI_Output 	(self, hero,"SVM_5_GetThingsRight"); 					//Тебе будет нелегко оправдаться!
-	AI_Output 	(hero,self,"Info_Gorn_DIEGOMILTEN_15_01"); 				//Возле Старого Лагеря я встретил Диего и Мильтена!
-	AI_Output 	(hero, self,"Info_lester_DIEGOMILTEN_15_01"); 			//Они хотят встретиться с тобой и с Лестером. Там же, где и всегда.
-	AI_Output 	(self, hero,"SVM_5_YeahWellDone"); 						//Как раз вовремя!
-	AI_Output 	(other, self,"Info_Gorn_RUINWALLWHAT_15_01"); 			//Что случилось?
-	AI_Output 	(self, hero,"Info_lester_DIEGOMILTEN_05_02"); 			//Я останусь здесь и буду изучать старые книги.
-	AI_Output	(hero, self,"KDW_600_Saturas_OATH_Info_15_06"); 		//Ух... Я не понимаю...
-	AI_Output 	(self, hero,"PC_Psionic_TIP_Info_05_02"); 				//Господин Ю`Берион однажды сказал: 'Невежда передвигает предметы руками, а мастер - силой своего духа'.
-	AI_Output	(hero,self,"Info_Grd_6_DasLager_WasIstAerger_15_04"); 	//Ладно, ладно, я все понял.
-	AI_Output 	(self, hero,"DIA_Fingers_Lehrer_Pickpocket2_05_03"); 	//Береги себя.
-	AI_Output	(hero, self,"Info_FreemineOrc_EXIT_15_03"); 			//Спасибо. Я пойду.
-	AI_Output 	(self, hero,"Info_Lester_EXIT_05_02"); 					//Да хранит тебя Спящий!
+	AI_Output	(hero,self,"Info_SFB_1_DieLage_15_00"); 				//РљР°Рє РґРµР»Р°?
+	AI_Output 	(self, hero,"PC_Psionic_FOLLOWME_Info_05_01"); 			//Р­Р№, С‡С‚Рѕ С‚С‹ Р·РґРµСЃСЊ РґРµР»Р°РµС€СЊ?
+	AI_Output	(hero,self,"Info_Saturas_COLLAPSE_15_01"); 				//РЎС‚Р°СЂСѓСЋ РЁР°С…С‚Сѓ Р·Р°Р»РёР»Рѕ РІРѕРґРѕР№, Рё РѕРЅР° РѕР±СЂСѓС€РёР»Р°СЃСЊ!
+	AI_Output 	(self, hero,"DIA_Fingers_BecomeShadow_05_01"); 			//Р С‡С‚Рѕ СЃ С‚РѕРіРѕ?
+	AI_Output 	(hero, self,"Info_Xardas_KDW_15_01"); 					//Р’СЃРµ РјР°РіРё РћРіРЅСЏ РјРµСЂС‚РІС‹.
+	AI_Output 	(hero, self,"Info_Xardas_KDW_15_02"); 					//РС… СѓР±РёР» Р“РѕРјРµР·.
+	AI_Output 	(self, hero,"SVM_5_GetThingsRight"); 					//РўРµР±Рµ Р±СѓРґРµС‚ РЅРµР»РµРіРєРѕ РѕРїСЂР°РІРґР°С‚СЊСЃСЏ!
+	AI_Output 	(hero,self,"Info_Gorn_DIEGOMILTEN_15_01"); 				//Р’РѕР·Р»Рµ РЎС‚Р°СЂРѕРіРѕ Р›Р°РіРµСЂСЏ СЏ РІСЃС‚СЂРµС‚РёР» Р”РёРµРіРѕ Рё РњРёР»СЊС‚РµРЅР°!
+	AI_Output 	(hero, self,"Info_lester_DIEGOMILTEN_15_01"); 			//РћРЅРё С…РѕС‚СЏС‚ РІСЃС‚СЂРµС‚РёС‚СЊСЃСЏ СЃ С‚РѕР±РѕР№ Рё СЃ Р›РµСЃС‚РµСЂРѕРј. РўР°Рј Р¶Рµ, РіРґРµ Рё РІСЃРµРіРґР°.
+	AI_Output 	(self, hero,"SVM_5_YeahWellDone"); 						//РљР°Рє СЂР°Р· РІРѕРІСЂРµРјСЏ!
+	AI_Output 	(other, self,"Info_Gorn_RUINWALLWHAT_15_01"); 			//Р§С‚Рѕ СЃР»СѓС‡РёР»РѕСЃСЊ?
+	AI_Output 	(self, hero,"Info_lester_DIEGOMILTEN_05_02"); 			//РЇ РѕСЃС‚Р°РЅСѓСЃСЊ Р·РґРµСЃСЊ Рё Р±СѓРґСѓ РёР·СѓС‡Р°С‚СЊ СЃС‚Р°СЂС‹Рµ РєРЅРёРіРё.
+	AI_Output	(hero, self,"KDW_600_Saturas_OATH_Info_15_06"); 		//РЈС…... РЇ РЅРµ РїРѕРЅРёРјР°СЋ...
+	AI_Output 	(self, hero,"PC_Psionic_TIP_Info_05_02"); 				//Р“РѕСЃРїРѕРґРёРЅ Р®`Р‘РµСЂРёРѕРЅ РѕРґРЅР°Р¶РґС‹ СЃРєР°Р·Р°Р»: 'РќРµРІРµР¶РґР° РїРµСЂРµРґРІРёРіР°РµС‚ РїСЂРµРґРјРµС‚С‹ СЂСѓРєР°РјРё, Р° РјР°СЃС‚РµСЂ - СЃРёР»РѕР№ СЃРІРѕРµРіРѕ РґСѓС…Р°'.
+	AI_Output	(hero,self,"Info_Grd_6_DasLager_WasIstAerger_15_04"); 	//Р›Р°РґРЅРѕ, Р»Р°РґРЅРѕ, СЏ РІСЃРµ РїРѕРЅСЏР».
+	AI_Output 	(self, hero,"DIA_Fingers_Lehrer_Pickpocket2_05_03"); 	//Р‘РµСЂРµРіРё СЃРµР±СЏ.
+	AI_Output	(hero, self,"Info_FreemineOrc_EXIT_15_03"); 			//РЎРїР°СЃРёР±Рѕ. РЇ РїРѕР№РґСѓ.
+	AI_Output 	(self, hero,"Info_Lester_EXIT_05_02"); 					//Р”Р° С…СЂР°РЅРёС‚ С‚РµР±СЏ РЎРїСЏС‰РёР№!
 		
 	B_GiveXP			(XP_MessageForGorn);
 
@@ -1255,7 +1255,7 @@ func VOID Info_Lester_DIEGOMILTEN_Info()
 	}
 	else
 	{
-		B_LogEntry			(CH4_4Friends,		"Я рассказал Лестеру и Горну о встрече с их друзьями. Дальше это уже не мое дело. Они сами разберутся, что делать теперь…"); 
+		B_LogEntry			(CH4_4Friends,		"РЇ СЂР°СЃСЃРєР°Р·Р°Р» Р›РµСЃС‚РµСЂСѓ Рё Р“РѕСЂРЅСѓ Рѕ РІСЃС‚СЂРµС‡Рµ СЃ РёС… РґСЂСѓР·СЊСЏРјРё. Р”Р°Р»СЊС€Рµ СЌС‚Рѕ СѓР¶Рµ РЅРµ РјРѕРµ РґРµР»Рѕ. РћРЅРё СЃР°РјРё СЂР°Р·Р±РµСЂСѓС‚СЃСЏ, С‡С‚Рѕ РґРµР»Р°С‚СЊ С‚РµРїРµСЂСЊвЂ¦"); 
 		Log_SetTopicStatus	(CH4_4Friends,		LOG_SUCCESS);
 	};
 

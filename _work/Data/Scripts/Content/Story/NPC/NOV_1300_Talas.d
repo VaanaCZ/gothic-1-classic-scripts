@@ -1,7 +1,7 @@
 instance NOV_1300_Talas (Npc_Default)
 {
 	//-------- primary data --------
-	name 		=		"“‡Î‡Ò";
+	name 		=		"–¢–∞–ª–∞—Å";
 	Npctype 	=		NPCTYPE_FRIEND;
 	guild 		=	    GIL_NOV;
 	level 		=	    4;

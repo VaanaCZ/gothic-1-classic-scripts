@@ -22,7 +22,7 @@ FUNC INT Info_GRD_275_PreExit_Condition()
 
 FUNC VOID Info_GRD_275_PreExit_Info()
 {
-	AI_Output(self,other,"Info_GRD_275_PreExit_06_01"); //Не забудь заглянуть в Старый Лагерь - у них уже есть для тебя кирка. Ха-ха-ха-ха!
+	AI_Output(self,other,"Info_GRD_275_PreExit_06_01"); //РќРµ Р·Р°Р±СѓРґСЊ Р·Р°РіР»СЏРЅСѓС‚СЊ РІ РЎС‚Р°СЂС‹Р№ Р›Р°РіРµСЂСЊ - Сѓ РЅРёС… СѓР¶Рµ РµСЃС‚СЊ РґР»СЏ С‚РµР±СЏ РєРёСЂРєР°. РҐР°-С…Р°-С…Р°-С…Р°!
 	AI_StopProcessInfos(self);
 };
 
@@ -62,7 +62,7 @@ INSTANCE Info_GRD_275_WasMachtIhrHier (C_INFO)
 	condition	= Info_GRD_275_WasMachtIhrHier_Condition;
 	information	= Info_GRD_275_WasMachtIhrHier_Info;
 	permanent	= 1;
-	description = "Чем ты занимаешься?";
+	description = "Р§РµРј С‚С‹ Р·Р°РЅРёРјР°РµС€СЊСЃСЏ?";
 };                       
 
 FUNC INT Info_GRD_275_WasMachtIhrHier_Condition()
@@ -72,9 +72,9 @@ FUNC INT Info_GRD_275_WasMachtIhrHier_Condition()
 
 FUNC VOID Info_GRD_275_WasMachtIhrHier_Info()
 {
-	AI_Output (other,self,"Info_GRD_275_WasMachtIhrHier_15_00"); //Что вы здесь делаете?
-	AI_Output (self,other,"Info_GRD_275_WasMachtIhrHier_06_01"); //А как по-твоему? Охраняем мост, конечно!
-	AI_Output (self,other,"Info_GRD_275_WasMachtIhrHier_06_02"); //Мы следим за тем, чтобы ни одна хищная тварь не перебралась на другую сторону реки.
+	AI_Output (other,self,"Info_GRD_275_WasMachtIhrHier_15_00"); //Р§С‚Рѕ РІС‹ Р·РґРµСЃСЊ РґРµР»Р°РµС‚Рµ?
+	AI_Output (self,other,"Info_GRD_275_WasMachtIhrHier_06_01"); //Рђ РєР°Рє РїРѕ-С‚РІРѕРµРјСѓ? РћС…СЂР°РЅСЏРµРј РјРѕСЃС‚, РєРѕРЅРµС‡РЅРѕ!
+	AI_Output (self,other,"Info_GRD_275_WasMachtIhrHier_06_02"); //РњС‹ СЃР»РµРґРёРј Р·Р° С‚РµРј, С‡С‚РѕР±С‹ РЅРё РѕРґРЅР° С…РёС‰РЅР°СЏ С‚РІР°СЂСЊ РЅРµ РїРµСЂРµР±СЂР°Р»Р°СЃСЊ РЅР° РґСЂСѓРіСѓСЋ СЃС‚РѕСЂРѕРЅСѓ СЂРµРєРё.
 };
 
 // *****************************************************************
@@ -88,7 +88,7 @@ INSTANCE Info_GRD_275_Tips(C_INFO)
 	condition	= Info_GRD_275_Tips_Condition;
 	information	= Info_GRD_275_Tips_Info;
 	permanent	= 1;
-	description = "Возможно, у вас есть для меня какой-то совет?";
+	description = "Р’РѕР·РјРѕР¶РЅРѕ, Сѓ РІР°СЃ РµСЃС‚СЊ РґР»СЏ РјРµРЅСЏ РєР°РєРѕР№-С‚Рѕ СЃРѕРІРµС‚?";
 };                       
 
 FUNC INT Info_GRD_275_Tips_Condition()
@@ -98,9 +98,9 @@ FUNC INT Info_GRD_275_Tips_Condition()
 
 FUNC VOID Info_GRD_275_Tips_Info()
 {
-	AI_Output (other,self,"Info_GRD_275_Tips_15_00"); //Возможно, у вас есть для меня какой-то совет?
-	AI_Output (self,other,"Info_GRD_275_Tips_06_01"); //Ага. Никогда не ходи в лес в одиночку...
-	AI_Output (self,other,"Info_GRD_275_Tips_06_02"); //…Если, конечно, не собираешься перебить всех тварей, которые там обитают.
+	AI_Output (other,self,"Info_GRD_275_Tips_15_00"); //Р’РѕР·РјРѕР¶РЅРѕ, Сѓ РІР°СЃ РµСЃС‚СЊ РґР»СЏ РјРµРЅСЏ РєР°РєРѕР№-С‚Рѕ СЃРѕРІРµС‚?
+	AI_Output (self,other,"Info_GRD_275_Tips_06_01"); //РђРіР°. РќРёРєРѕРіРґР° РЅРµ С…РѕРґРё РІ Р»РµСЃ РІ РѕРґРёРЅРѕС‡РєСѓ...
+	AI_Output (self,other,"Info_GRD_275_Tips_06_02"); //вЂ¦Р•СЃР»Рё, РєРѕРЅРµС‡РЅРѕ, РЅРµ СЃРѕР±РёСЂР°РµС€СЊСЃСЏ РїРµСЂРµР±РёС‚СЊ РІСЃРµС… С‚РІР°СЂРµР№, РєРѕС‚РѕСЂС‹Рµ С‚Р°Рј РѕР±РёС‚Р°СЋС‚.
 };
 
 
@@ -110,8 +110,8 @@ FUNC VOID Info_GRD_275_Tips_Info()
 
 
 /*
-	AI_Output(other,self,"Info_GRD_275_PreExit_15_02"); //Ich werde bestimmt nicht in den Minen fьr euch schuften.
-	AI_Output(self,other,"Info_GRD_275_PreExit_06_03"); //In dem Fall bist du wohl unser zukьnftiger Kollege? Dann sei schцn lieb zu uns, wir sind nдmlich morgen auch noch da, hehe.
-	AI_Output(other,self,"Info_GRD_275_PreExit_15_04"); //Ich habe gehцrt es gibt auch noch andere Lager...
-	AI_Output(self,other,"Info_GRD_275_PreExit_06_05"); //So wie du rumlдufst schaffst Du es nicht mal bis dahin zu kommen. Und jetzt weg mit dir.
+	AI_Output(other,self,"Info_GRD_275_PreExit_15_02"); //Ich werde bestimmt nicht in den Minen fСЊr euch schuften.
+	AI_Output(self,other,"Info_GRD_275_PreExit_06_03"); //In dem Fall bist du wohl unser zukСЊnftiger Kollege? Dann sei schС†n lieb zu uns, wir sind nРґmlich morgen auch noch da, hehe.
+	AI_Output(other,self,"Info_GRD_275_PreExit_15_04"); //Ich habe gehС†rt es gibt auch noch andere Lager...
+	AI_Output(self,other,"Info_GRD_275_PreExit_06_05"); //So wie du rumlРґufst schaffst Du es nicht mal bis dahin zu kommen. Und jetzt weg mit dir.
 */

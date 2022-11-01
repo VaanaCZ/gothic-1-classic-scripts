@@ -22,14 +22,14 @@ FUNC INT Info_Bloodwyn_EXIT_Schutzgeld_Condition()
 
 FUNC VOID Info_Bloodwyn_EXIT_Schutzgeld_Info()
 {	
-	AI_Output (other,self,"Info_Bloodwyn_EXIT_Schutzgeld_15_00"); //Увидимся.
+	AI_Output (other,self,"Info_Bloodwyn_EXIT_Schutzgeld_15_00"); //РЈРІРёРґРёРјСЃСЏ.
 	if (Bloodwyn_ProtectionPaid == FALSE)
 	{
-		AI_Output (self, other,"Info_Bloodwyn_EXIT_Schutzgeld_08_01"); //Береги себя, малыш.
+		AI_Output (self, other,"Info_Bloodwyn_EXIT_Schutzgeld_08_01"); //Р‘РµСЂРµРіРё СЃРµР±СЏ, РјР°Р»С‹С€.
 	}
 	else
 	{
-		AI_Output (self, other,"Info_Bloodwyn_EXIT_Schutzgeld_08_02"); //Ты теперь ни о чем не волнуйся. Мы приглядим за тобой.
+		AI_Output (self, other,"Info_Bloodwyn_EXIT_Schutzgeld_08_02"); //РўС‹ С‚РµРїРµСЂСЊ РЅРё Рѕ С‡РµРј РЅРµ РІРѕР»РЅСѓР№СЃСЏ. РњС‹ РїСЂРёРіР»СЏРґРёРј Р·Р° С‚РѕР±РѕР№.
 	};
 	
 	AI_StopProcessInfos	(self);
@@ -57,24 +57,24 @@ FUNC INT Info_Bloodwyn_Hello_Condition()
 };
 FUNC VOID Info_Bloodwyn_Hello_Info()
 {	
-	AI_Output (self, other,"Info_Bloodwyn_Hello_08_00"); //Эй, ты!
-	AI_Output (other, self,"Info_Bloodwyn_Hello_15_01"); //Это ты мне говоришь?
-	AI_Output (self, other,"Info_Bloodwyn_Hello_08_02"); //Я предупреждаю тебя! Такие типы, как ты, очень быстро попадают здесь в неприятности!
-	AI_Output (self, other,"Info_Bloodwyn_Hello_08_03"); //Сюда бросают, в основном, законченных ублюдков.
-	AI_Output (self, other,"Info_Bloodwyn_Hello_08_04"); //И они думают, что могут делать с тобой все, что хотят. Но мы им этого не позволим.
-	AI_Output (self, other,"Info_Bloodwyn_Hello_08_05"); //Гомез хочет, чтобы в Лагере был мир, и мы, стражники, следим за этим. Но эта работа обходится нам недешево.
-	AI_Output (self, other,"Info_Bloodwyn_Hello_08_06"); //Вот почему я предлагаю тебе поделиться запасом руды. Скажем так, в знак дружбы. Ты помогаешь нам, мы помогаем тебе. И если у тебя будут проблемы, мы придем на помощь.
+	AI_Output (self, other,"Info_Bloodwyn_Hello_08_00"); //Р­Р№, С‚С‹!
+	AI_Output (other, self,"Info_Bloodwyn_Hello_15_01"); //Р­С‚Рѕ С‚С‹ РјРЅРµ РіРѕРІРѕСЂРёС€СЊ?
+	AI_Output (self, other,"Info_Bloodwyn_Hello_08_02"); //РЇ РїСЂРµРґСѓРїСЂРµР¶РґР°СЋ С‚РµР±СЏ! РўР°РєРёРµ С‚РёРїС‹, РєР°Рє С‚С‹, РѕС‡РµРЅСЊ Р±С‹СЃС‚СЂРѕ РїРѕРїР°РґР°СЋС‚ Р·РґРµСЃСЊ РІ РЅРµРїСЂРёСЏС‚РЅРѕСЃС‚Рё!
+	AI_Output (self, other,"Info_Bloodwyn_Hello_08_03"); //РЎСЋРґР° Р±СЂРѕСЃР°СЋС‚, РІ РѕСЃРЅРѕРІРЅРѕРј, Р·Р°РєРѕРЅС‡РµРЅРЅС‹С… СѓР±Р»СЋРґРєРѕРІ.
+	AI_Output (self, other,"Info_Bloodwyn_Hello_08_04"); //Р РѕРЅРё РґСѓРјР°СЋС‚, С‡С‚Рѕ РјРѕРіСѓС‚ РґРµР»Р°С‚СЊ СЃ С‚РѕР±РѕР№ РІСЃРµ, С‡С‚Рѕ С…РѕС‚СЏС‚. РќРѕ РјС‹ РёРј СЌС‚РѕРіРѕ РЅРµ РїРѕР·РІРѕР»РёРј.
+	AI_Output (self, other,"Info_Bloodwyn_Hello_08_05"); //Р“РѕРјРµР· С…РѕС‡РµС‚, С‡С‚РѕР±С‹ РІ Р›Р°РіРµСЂРµ Р±С‹Р» РјРёСЂ, Рё РјС‹, СЃС‚СЂР°Р¶РЅРёРєРё, СЃР»РµРґРёРј Р·Р° СЌС‚РёРј. РќРѕ СЌС‚Р° СЂР°Р±РѕС‚Р° РѕР±С…РѕРґРёС‚СЃСЏ РЅР°Рј РЅРµРґРµС€РµРІРѕ.
+	AI_Output (self, other,"Info_Bloodwyn_Hello_08_06"); //Р’РѕС‚ РїРѕС‡РµРјСѓ СЏ РїСЂРµРґР»Р°РіР°СЋ С‚РµР±Рµ РїРѕРґРµР»РёС‚СЊСЃСЏ Р·Р°РїР°СЃРѕРј СЂСѓРґС‹. РЎРєР°Р¶РµРј С‚Р°Рє, РІ Р·РЅР°Рє РґСЂСѓР¶Р±С‹. РўС‹ РїРѕРјРѕРіР°РµС€СЊ РЅР°Рј, РјС‹ РїРѕРјРѕРіР°РµРј С‚РµР±Рµ. Р РµСЃР»Рё Сѓ С‚РµР±СЏ Р±СѓРґСѓС‚ РїСЂРѕР±Р»РµРјС‹, РјС‹ РїСЂРёРґРµРј РЅР° РїРѕРјРѕС‰СЊ.
 
 	Info_ClearChoices	(Info_Bloodwyn_Hello );
-	Info_AddChoice		(Info_Bloodwyn_Hello,"Почему бы и нет? Сколько ты хочешь получить?",Info_Bloodwyn_Hello_HowMuch);
-	Info_AddChoice		(Info_Bloodwyn_Hello,"Я сам могу о себе позаботиться!",Info_Bloodwyn_Hello_ForgetIt);
-	Info_AddChoice		(Info_Bloodwyn_Hello,"Это угроза?",Info_Bloodwyn_Hello_SollDrohungSein);
+	Info_AddChoice		(Info_Bloodwyn_Hello,"РџРѕС‡РµРјСѓ Р±С‹ Рё РЅРµС‚? РЎРєРѕР»СЊРєРѕ С‚С‹ С…РѕС‡РµС€СЊ РїРѕР»СѓС‡РёС‚СЊ?",Info_Bloodwyn_Hello_HowMuch);
+	Info_AddChoice		(Info_Bloodwyn_Hello,"РЇ СЃР°Рј РјРѕРіСѓ Рѕ СЃРµР±Рµ РїРѕР·Р°Р±РѕС‚РёС‚СЊСЃСЏ!",Info_Bloodwyn_Hello_ForgetIt);
+	Info_AddChoice		(Info_Bloodwyn_Hello,"Р­С‚Рѕ СѓРіСЂРѕР·Р°?",Info_Bloodwyn_Hello_SollDrohungSein);
 };
 
 func void Info_Bloodwyn_Hello_ForgetIt()
 {
-	AI_Output (other, self,"Info_Bloodwyn_ForgetIt_15_00"); //Ты предлагаешь мне платить деньги за защиту? Нет, спасибо, я сам могу о себе позаботиться!
-	AI_Output (self, other,"Info_Bloodwyn_ForgetIt_08_01"); //Решать тебе, малыш. Скоро ты пожалеешь о том, что отверг мое дружеское предложение.
+	AI_Output (other, self,"Info_Bloodwyn_ForgetIt_15_00"); //РўС‹ РїСЂРµРґР»Р°РіР°РµС€СЊ РјРЅРµ РїР»Р°С‚РёС‚СЊ РґРµРЅСЊРіРё Р·Р° Р·Р°С‰РёС‚Сѓ? РќРµС‚, СЃРїР°СЃРёР±Рѕ, СЏ СЃР°Рј РјРѕРіСѓ Рѕ СЃРµР±Рµ РїРѕР·Р°Р±РѕС‚РёС‚СЊСЃСЏ!
+	AI_Output (self, other,"Info_Bloodwyn_ForgetIt_08_01"); //Р РµС€Р°С‚СЊ С‚РµР±Рµ, РјР°Р»С‹С€. РЎРєРѕСЂРѕ С‚С‹ РїРѕР¶Р°Р»РµРµС€СЊ Рѕ С‚РѕРј, С‡С‚Рѕ РѕС‚РІРµСЂРі РјРѕРµ РґСЂСѓР¶РµСЃРєРѕРµ РїСЂРµРґР»РѕР¶РµРЅРёРµ.
 	Bloodwyn_ProtectionPaid = FALSE;
 	Herek_ProtectionBully = TRUE;
 	Grim_ProtectionBully = TRUE;
@@ -84,28 +84,28 @@ func void Info_Bloodwyn_Hello_ForgetIt()
 
 func void Info_Bloodwyn_Hello_SollDrohungSein()
 {
-	AI_Output (other, self,"Info_Bloodwyn_SollDrohungSein_15_00"); //Это угроза?
-	AI_Output (self, other,"Info_Bloodwyn_SollDrohungSein_08_01"); //Совсем наоборот! Это предложение дружбы!
+	AI_Output (other, self,"Info_Bloodwyn_SollDrohungSein_15_00"); //Р­С‚Рѕ СѓРіСЂРѕР·Р°?
+	AI_Output (self, other,"Info_Bloodwyn_SollDrohungSein_08_01"); //РЎРѕРІСЃРµРј РЅР°РѕР±РѕСЂРѕС‚! Р­С‚Рѕ РїСЂРµРґР»РѕР¶РµРЅРёРµ РґСЂСѓР¶Р±С‹!
 };
 
 func void Info_Bloodwyn_Hello_HowMuch()
 {
-	AI_Output (other, self,"Info_Bloodwyn_Hello_HowMuch_15_01"); //Почему бы и нет? Сколько ты хочешь получить?
-	AI_Output (self, other,"Info_Bloodwyn_Hello_HowMuch_08_02"); //Немного. Десять кусков будет вполне достаточно.
+	AI_Output (other, self,"Info_Bloodwyn_Hello_HowMuch_15_01"); //РџРѕС‡РµРјСѓ Р±С‹ Рё РЅРµС‚? РЎРєРѕР»СЊРєРѕ С‚С‹ С…РѕС‡РµС€СЊ РїРѕР»СѓС‡РёС‚СЊ?
+	AI_Output (self, other,"Info_Bloodwyn_Hello_HowMuch_08_02"); //РќРµРјРЅРѕРіРѕ. Р”РµСЃСЏС‚СЊ РєСѓСЃРєРѕРІ Р±СѓРґРµС‚ РІРїРѕР»РЅРµ РґРѕСЃС‚Р°С‚РѕС‡РЅРѕ.
 	
 	Info_ClearChoices	(Info_Bloodwyn_Hello );
-	Info_AddChoice		(Info_Bloodwyn_Hello,"У меня нет десяти кусков руды.",Info_Bloodwyn_Hello_NotNow);
+	Info_AddChoice		(Info_Bloodwyn_Hello,"РЈ РјРµРЅСЏ РЅРµС‚ РґРµСЃСЏС‚Рё РєСѓСЃРєРѕРІ СЂСѓРґС‹.",Info_Bloodwyn_Hello_NotNow);
 	if (Npc_HasItems(other,itminugget)>=10)
 	{
-		Info_AddChoice	(Info_Bloodwyn_Hello,"Вот твоя руда. Дружба всегда в цене.",Info_Bloodwyn_Hello_OkTakeIt);
+		Info_AddChoice	(Info_Bloodwyn_Hello,"Р’РѕС‚ С‚РІРѕСЏ СЂСѓРґР°. Р”СЂСѓР¶Р±Р° РІСЃРµРіРґР° РІ С†РµРЅРµ.",Info_Bloodwyn_Hello_OkTakeIt);
 	};
 };
 // -------------------------------------------------------
 func void Info_Bloodwyn_Hello_OkTakeIt()
 {
-	AI_Output (other, self,"Info_Bloodwyn_Hello_OkTakeIt_15_00"); //Вот твоя руда. Дружба всегда в цене.
-	AI_Output (self, other,"Info_Bloodwyn_Hello_OkTakeIt_08_01"); //Похоже, ты умный парень. С этого момента мы будем защищать тебя.
-	AI_Output (self, other,"Info_Bloodwyn_Hello_OkTakeIt_08_02"); //Но это не значит, что ты можешь делать все, что захочешь - из некоторых неприятностей даже мы не сможем тебя вытащить.
+	AI_Output (other, self,"Info_Bloodwyn_Hello_OkTakeIt_15_00"); //Р’РѕС‚ С‚РІРѕСЏ СЂСѓРґР°. Р”СЂСѓР¶Р±Р° РІСЃРµРіРґР° РІ С†РµРЅРµ.
+	AI_Output (self, other,"Info_Bloodwyn_Hello_OkTakeIt_08_01"); //РџРѕС…РѕР¶Рµ, С‚С‹ СѓРјРЅС‹Р№ РїР°СЂРµРЅСЊ. РЎ СЌС‚РѕРіРѕ РјРѕРјРµРЅС‚Р° РјС‹ Р±СѓРґРµРј Р·Р°С‰РёС‰Р°С‚СЊ С‚РµР±СЏ.
+	AI_Output (self, other,"Info_Bloodwyn_Hello_OkTakeIt_08_02"); //РќРѕ СЌС‚Рѕ РЅРµ Р·РЅР°С‡РёС‚, С‡С‚Рѕ С‚С‹ РјРѕР¶РµС€СЊ РґРµР»Р°С‚СЊ РІСЃРµ, С‡С‚Рѕ Р·Р°С…РѕС‡РµС€СЊ - РёР· РЅРµРєРѕС‚РѕСЂС‹С… РЅРµРїСЂРёСЏС‚РЅРѕСЃС‚РµР№ РґР°Р¶Рµ РјС‹ РЅРµ СЃРјРѕР¶РµРј С‚РµР±СЏ РІС‹С‚Р°С‰РёС‚СЊ.
 	
 	B_GiveInvItems 	    (other, self, itminugget, 10);
 	Bloodwyn_ProtectionPaid = TRUE;
@@ -118,27 +118,27 @@ func void Info_Bloodwyn_Hello_OkTakeIt()
 
 func void Info_Bloodwyn_Hello_NotNow()
 {
-	AI_Output (other, self,"Info_Bloodwyn_Hello_NotNow_15_00"); //У меня нет десяти кусков руды.
-	AI_Output (self, other,"Info_Bloodwyn_Hello_NotNow_08_01"); //Давай сколько есть, а остальное отдашь потом.
+	AI_Output (other, self,"Info_Bloodwyn_Hello_NotNow_15_00"); //РЈ РјРµРЅСЏ РЅРµС‚ РґРµСЃСЏС‚Рё РєСѓСЃРєРѕРІ СЂСѓРґС‹.
+	AI_Output (self, other,"Info_Bloodwyn_Hello_NotNow_08_01"); //Р”Р°РІР°Р№ СЃРєРѕР»СЊРєРѕ РµСЃС‚СЊ, Р° РѕСЃС‚Р°Р»СЊРЅРѕРµ РѕС‚РґР°С€СЊ РїРѕС‚РѕРј.
 	AI_GotoNpc (self,other);
-	AI_Output (self, other,"Info_Bloodwyn_Hello_NotNow_08_02"); //Посмотрим...
+	AI_Output (self, other,"Info_Bloodwyn_Hello_NotNow_08_02"); //РџРѕСЃРјРѕС‚СЂРёРј...
 		
 	if (Npc_HasItems(other, itminugget) > 0)
 	{
 		if (Npc_HasItems(other, itminugget) > 9)
 		{
-			AI_Output (self, other,"Info_Bloodwyn_Hello_NotNow_TenOreMore_08_00"); //Ты только поглади на это... Похоже, кто-то не умеет считать до десяти, а?
-			AI_Output (self, other,"Info_Bloodwyn_Hello_NotNow_TenOreMore_08_01"); //Пожалуй, я заберу все, что у тебя есть. Может быть тогда я сумею забыть, что ты пытался обмануть меня.
+			AI_Output (self, other,"Info_Bloodwyn_Hello_NotNow_TenOreMore_08_00"); //РўС‹ С‚РѕР»СЊРєРѕ РїРѕРіР»Р°РґРё РЅР° СЌС‚Рѕ... РџРѕС…РѕР¶Рµ, РєС‚Рѕ-С‚Рѕ РЅРµ СѓРјРµРµС‚ СЃС‡РёС‚Р°С‚СЊ РґРѕ РґРµСЃСЏС‚Рё, Р°?
+			AI_Output (self, other,"Info_Bloodwyn_Hello_NotNow_TenOreMore_08_01"); //РџРѕР¶Р°Р»СѓР№, СЏ Р·Р°Р±РµСЂСѓ РІСЃРµ, С‡С‚Рѕ Сѓ С‚РµР±СЏ РµСЃС‚СЊ. РњРѕР¶РµС‚ Р±С‹С‚СЊ С‚РѕРіРґР° СЏ СЃСѓРјРµСЋ Р·Р°Р±С‹С‚СЊ, С‡С‚Рѕ С‚С‹ РїС‹С‚Р°Р»СЃСЏ РѕР±РјР°РЅСѓС‚СЊ РјРµРЅСЏ.
 		}
 		else
 		{
-			AI_Output (self, other,"Info_Bloodwyn_Hello_NotNow_LessThanTen_08_00"); //Мало - лучше, чем ничего. Спасибо за руду, малыш!
-			AI_Output (self, other,"Info_Bloodwyn_Hello_NotNow_LessThanTen_08_01"); //С этого момента я буду приглядывать за тобой, пока ты находишься в Лагере.
+			AI_Output (self, other,"Info_Bloodwyn_Hello_NotNow_LessThanTen_08_00"); //РњР°Р»Рѕ - Р»СѓС‡С€Рµ, С‡РµРј РЅРёС‡РµРіРѕ. РЎРїР°СЃРёР±Рѕ Р·Р° СЂСѓРґСѓ, РјР°Р»С‹С€!
+			AI_Output (self, other,"Info_Bloodwyn_Hello_NotNow_LessThanTen_08_01"); //РЎ СЌС‚РѕРіРѕ РјРѕРјРµРЅС‚Р° СЏ Р±СѓРґСѓ РїСЂРёРіР»СЏРґС‹РІР°С‚СЊ Р·Р° С‚РѕР±РѕР№, РїРѕРєР° С‚С‹ РЅР°С…РѕРґРёС€СЊСЃСЏ РІ Р›Р°РіРµСЂРµ.
 		};
 	}
 	else
 	{
-		AI_Output (self, other,"Info_Bloodwyn_Hello_NotNow_NoOre_08_00"); //Похоже, у тебя сейчас не лучшие времена, приятель. Ну ничего, как-нибудь в другой раз...
+		AI_Output (self, other,"Info_Bloodwyn_Hello_NotNow_NoOre_08_00"); //РџРѕС…РѕР¶Рµ, Сѓ С‚РµР±СЏ СЃРµР№С‡Р°СЃ РЅРµ Р»СѓС‡С€РёРµ РІСЂРµРјРµРЅР°, РїСЂРёСЏС‚РµР»СЊ. РќСѓ РЅРёС‡РµРіРѕ, РєР°Рє-РЅРёР±СѓРґСЊ РІ РґСЂСѓРіРѕР№ СЂР°Р·...
 	};
 	
 	B_GiveInvItems		(other, self, itminugget, Npc_HasItems(other, itminugget) );//Alle Nuggets entfernen
@@ -176,27 +176,27 @@ FUNC VOID Info_Bloodwyn_PayDay_Info()
 {	
 	if (Bloodwyn_ProtectionPaid == TRUE)
 	{
-		AI_Output (self, other,"Info_Bloodwyn_PayDay_08_00"); //А, рад тебя видеть, дружище!
-		AI_Output (self, other,"Info_Bloodwyn_PayDay_08_01"); //Как насчет дневной платы? Ты должен десять кусков, помнишь?
+		AI_Output (self, other,"Info_Bloodwyn_PayDay_08_00"); //Рђ, СЂР°Рґ С‚РµР±СЏ РІРёРґРµС‚СЊ, РґСЂСѓР¶РёС‰Рµ!
+		AI_Output (self, other,"Info_Bloodwyn_PayDay_08_01"); //РљР°Рє РЅР°СЃС‡РµС‚ РґРЅРµРІРЅРѕР№ РїР»Р°С‚С‹? РўС‹ РґРѕР»Р¶РµРЅ РґРµСЃСЏС‚СЊ РєСѓСЃРєРѕРІ, РїРѕРјРЅРёС€СЊ?
 		
 		Info_ClearChoices	(Info_Bloodwyn_PayDay );
-		Info_AddChoice		(Info_Bloodwyn_PayDay,"Вот, возьми. Для друга и 10 кусков не жалко.",Info_Bloodwyn_PayDay_PayAgain);
-		Info_AddChoice		(Info_Bloodwyn_PayDay,"Я не буду платить.",Info_Bloodwyn_PayDay_PayNoMore);
+		Info_AddChoice		(Info_Bloodwyn_PayDay,"Р’РѕС‚, РІРѕР·СЊРјРё. Р”Р»СЏ РґСЂСѓРіР° Рё 10 РєСѓСЃРєРѕРІ РЅРµ Р¶Р°Р»РєРѕ.",Info_Bloodwyn_PayDay_PayAgain);
+		Info_AddChoice		(Info_Bloodwyn_PayDay,"РЇ РЅРµ Р±СѓРґСѓ РїР»Р°С‚РёС‚СЊ.",Info_Bloodwyn_PayDay_PayNoMore);
 	}
 	else if (Bloodwyn_ProtectionPaid == FALSE)
 	{
-		AI_Output (self, other,"Info_Bloodwyn_PayDay_Den_08_00"); //Эй, ты!
-		AI_Output (other, self,"Info_Bloodwyn_PayDay_Den_15_01"); //Что еще?
-		AI_Output (self, other,"Info_Bloodwyn_PayDay_Den_08_02"); //Пришло время доказать, что мы на самом деле друзья.
-		AI_Output (self, other,"Info_Bloodwyn_PayDay_Den_08_03"); //Всего десять кусков руды - что скажешь?
+		AI_Output (self, other,"Info_Bloodwyn_PayDay_Den_08_00"); //Р­Р№, С‚С‹!
+		AI_Output (other, self,"Info_Bloodwyn_PayDay_Den_15_01"); //Р§С‚Рѕ РµС‰Рµ?
+		AI_Output (self, other,"Info_Bloodwyn_PayDay_Den_08_02"); //РџСЂРёС€Р»Рѕ РІСЂРµРјСЏ РґРѕРєР°Р·Р°С‚СЊ, С‡С‚Рѕ РјС‹ РЅР° СЃР°РјРѕРј РґРµР»Рµ РґСЂСѓР·СЊСЏ.
+		AI_Output (self, other,"Info_Bloodwyn_PayDay_Den_08_03"); //Р’СЃРµРіРѕ РґРµСЃСЏС‚СЊ РєСѓСЃРєРѕРІ СЂСѓРґС‹ - С‡С‚Рѕ СЃРєР°Р¶РµС€СЊ?
 	};
 	Bloodwyn_PayDay = B_SetDayTolerance();
 };
 
 func void Info_Bloodwyn_PayDay_PayAgain()
 {
-	AI_Output (other, self,"Info_Bloodwyn_PayDay_PayAgain_15_00"); //Вот, возьми. Для друга и десяти кусков не жалко.
-	AI_Output (self, other,"Info_Bloodwyn_PayDay_PayAgain_08_01"); //Я так и думал - мы друзья!
+	AI_Output (other, self,"Info_Bloodwyn_PayDay_PayAgain_15_00"); //Р’РѕС‚, РІРѕР·СЊРјРё. Р”Р»СЏ РґСЂСѓРіР° Рё РґРµСЃСЏС‚Рё РєСѓСЃРєРѕРІ РЅРµ Р¶Р°Р»РєРѕ.
+	AI_Output (self, other,"Info_Bloodwyn_PayDay_PayAgain_08_01"); //РЇ С‚Р°Рє Рё РґСѓРјР°Р» - РјС‹ РґСЂСѓР·СЊСЏ!
 	
 	Bloodwyn_ProtectionPaid = TRUE;
 	Herek_ProtectionBully = FALSE;
@@ -207,10 +207,10 @@ func void Info_Bloodwyn_PayDay_PayAgain()
 
 func void Info_Bloodwyn_PayDay_PayNoMore()
 {
-	AI_Output (other, self,"Info_Bloodwyn_PayDay_PayNoMore_15_00"); //Я не буду платить - ты и так получил с меня более чем достаточно.
-	AI_Output (self, other,"Info_Bloodwyn_PayDay_PayNoMore_08_01"); //Ты меня разочаровал. Больше мы не друзья. Сам гляди теперь, чтобы никто тебя не обидел и не ограбил.
-	AI_Output (other, self,"Info_Bloodwyn_PayDay_PayNoMore_15_02"); //Не волнуйся, я могу о себе позаботиться.
-	AI_Output (self, other,"Info_Bloodwyn_PayDay_PayNoMore_08_03"); //Посмотрим...
+	AI_Output (other, self,"Info_Bloodwyn_PayDay_PayNoMore_15_00"); //РЇ РЅРµ Р±СѓРґСѓ РїР»Р°С‚РёС‚СЊ - С‚С‹ Рё С‚Р°Рє РїРѕР»СѓС‡РёР» СЃ РјРµРЅСЏ Р±РѕР»РµРµ С‡РµРј РґРѕСЃС‚Р°С‚РѕС‡РЅРѕ.
+	AI_Output (self, other,"Info_Bloodwyn_PayDay_PayNoMore_08_01"); //РўС‹ РјРµРЅСЏ СЂР°Р·РѕС‡Р°СЂРѕРІР°Р». Р‘РѕР»СЊС€Рµ РјС‹ РЅРµ РґСЂСѓР·СЊСЏ. РЎР°Рј РіР»СЏРґРё С‚РµРїРµСЂСЊ, С‡С‚РѕР±С‹ РЅРёРєС‚Рѕ С‚РµР±СЏ РЅРµ РѕР±РёРґРµР» Рё РЅРµ РѕРіСЂР°Р±РёР».
+	AI_Output (other, self,"Info_Bloodwyn_PayDay_PayNoMore_15_02"); //РќРµ РІРѕР»РЅСѓР№СЃСЏ, СЏ РјРѕРіСѓ Рѕ СЃРµР±Рµ РїРѕР·Р°Р±РѕС‚РёС‚СЊСЃСЏ.
+	AI_Output (self, other,"Info_Bloodwyn_PayDay_PayNoMore_08_03"); //РџРѕСЃРјРѕС‚СЂРёРј...
 	
 	Bloodwyn_ProtectionPaid = FALSE;
 	Herek_ProtectionBully = TRUE;
@@ -230,7 +230,7 @@ INSTANCE Info_Bloodwyn_Doch (C_INFO)
 	condition	= Info_Bloodwyn_Doch_Condition;
 	information	= Info_Bloodwyn_Doch_Info;
 	permanent	= 1;
-	description = "Я передумал. Вот десять кусков руды. ";
+	description = "РЇ РїРµСЂРµРґСѓРјР°Р». Р’РѕС‚ РґРµСЃСЏС‚СЊ РєСѓСЃРєРѕРІ СЂСѓРґС‹. ";
 };                       
 
 FUNC INT Info_Bloodwyn_Doch_Condition()
@@ -243,11 +243,11 @@ FUNC INT Info_Bloodwyn_Doch_Condition()
 
 FUNC VOID Info_Bloodwyn_Doch_Info()
 {	
-	AI_Output (other, self,"Info_Bloodwyn_Doch_15_00"); //Я передумал. Вот десять кусков руды. 
+	AI_Output (other, self,"Info_Bloodwyn_Doch_15_00"); //РЇ РїРµСЂРµРґСѓРјР°Р». Р’РѕС‚ РґРµСЃСЏС‚СЊ РєСѓСЃРєРѕРІ СЂСѓРґС‹. 
 	if (Npc_HasItems(other, itminugget)>=10)
 	{
-		AI_Output (self, other,"Info_Bloodwyn_Doch_08_01"); //Вот это другое дело! Видишь - ты МОЖЕШЬ принимать правильные решения.
-		AI_Output (self, other,"Info_Bloodwyn_Doch_08_02"); //Теперь ты будешь платить мне каждый день, так?
+		AI_Output (self, other,"Info_Bloodwyn_Doch_08_01"); //Р’РѕС‚ СЌС‚Рѕ РґСЂСѓРіРѕРµ РґРµР»Рѕ! Р’РёРґРёС€СЊ - С‚С‹ РњРћР–Р•РЁР¬ РїСЂРёРЅРёРјР°С‚СЊ РїСЂР°РІРёР»СЊРЅС‹Рµ СЂРµС€РµРЅРёСЏ.
+		AI_Output (self, other,"Info_Bloodwyn_Doch_08_02"); //РўРµРїРµСЂСЊ С‚С‹ Р±СѓРґРµС€СЊ РїР»Р°С‚РёС‚СЊ РјРЅРµ РєР°Р¶РґС‹Р№ РґРµРЅСЊ, С‚Р°Рє?
 		Bloodwyn_ProtectionPaid = TRUE;
 		Herek_ProtectionBully = FALSE;
 		Grim_ProtectionBully = FALSE;
@@ -256,7 +256,7 @@ FUNC VOID Info_Bloodwyn_Doch_Info()
 	}
 	else
 	{
-		AI_Output (self, other,"Info_Bloodwyn_Doch_NoOre_08_00"); //Возвращайся, когда у тебя будет чем заплатить.
+		AI_Output (self, other,"Info_Bloodwyn_Doch_NoOre_08_00"); //Р’РѕР·РІСЂР°С‰Р°Р№СЃСЏ, РєРѕРіРґР° Сѓ С‚РµР±СЏ Р±СѓРґРµС‚ С‡РµРј Р·Р°РїР»Р°С‚РёС‚СЊ.
 		AI_StopProcessInfos	(self);
 	};
 };
@@ -271,7 +271,7 @@ INSTANCE Info_Bloodwyn_PayForJesse (C_INFO)
 	condition	= Info_Bloodwyn_PayForJesse_Condition;
 	information	= Info_Bloodwyn_PayForJesse_Info;
 	permanent	= 1;
-	description = "Джесс просил заплатить за него десять кусков руды.";
+	description = "Р”Р¶РµСЃСЃ РїСЂРѕСЃРёР» Р·Р°РїР»Р°С‚РёС‚СЊ Р·Р° РЅРµРіРѕ РґРµСЃСЏС‚СЊ РєСѓСЃРєРѕРІ СЂСѓРґС‹.";
 };                       
 
 FUNC INT Info_Bloodwyn_PayForJesse_Condition()
@@ -284,22 +284,22 @@ FUNC INT Info_Bloodwyn_PayForJesse_Condition()
 
 FUNC VOID Info_Bloodwyn_PayForJesse_Info()
 {	
-	AI_Output (other, self,"Info_Bloodwyn_PayForJesse_15_00"); //Джесс просил заплатить за него десять кусков руды.
+	AI_Output (other, self,"Info_Bloodwyn_PayForJesse_15_00"); //Р”Р¶РµСЃСЃ РїСЂРѕСЃРёР» Р·Р°РїР»Р°С‚РёС‚СЊ Р·Р° РЅРµРіРѕ РґРµСЃСЏС‚СЊ РєСѓСЃРєРѕРІ СЂСѓРґС‹.
 	if  (Bloodwyn_ProtectionPaid == FALSE)
 	{
-		AI_Output (self, other,"Info_Bloodwyn_PayForJesse_08_01"); //Мне кажется, прежде ты должен заплатить СВОИ десять кусков.
+		AI_Output (self, other,"Info_Bloodwyn_PayForJesse_08_01"); //РњРЅРµ РєР°Р¶РµС‚СЃСЏ, РїСЂРµР¶РґРµ С‚С‹ РґРѕР»Р¶РµРЅ Р·Р°РїР»Р°С‚РёС‚СЊ РЎР’РћР РґРµСЃСЏС‚СЊ РєСѓСЃРєРѕРІ.
 	};
-	AI_Output (self, other,"Info_Bloodwyn_PayForJesse_08_02"); //Забудь про Джесса. Он неудачник и все равно долго не протянет.
+	AI_Output (self, other,"Info_Bloodwyn_PayForJesse_08_02"); //Р—Р°Р±СѓРґСЊ РїСЂРѕ Р”Р¶РµСЃСЃР°. РћРЅ РЅРµСѓРґР°С‡РЅРёРє Рё РІСЃРµ СЂР°РІРЅРѕ РґРѕР»РіРѕ РЅРµ РїСЂРѕС‚СЏРЅРµС‚.
 	if (Npc_HasItems(other,itminugget) >= 10)
 	{
-		AI_Output (other, self,"Info_Bloodwyn_PayForJesse_15_03"); //Нет, я заплачу за него. Возьми десять кусков и оставь его в покое.
-		AI_Output (self, other,"Info_Bloodwyn_PayForJesse_08_04"); //Ладно, парень, как хочешь.
+		AI_Output (other, self,"Info_Bloodwyn_PayForJesse_15_03"); //РќРµС‚, СЏ Р·Р°РїР»Р°С‡Сѓ Р·Р° РЅРµРіРѕ. Р’РѕР·СЊРјРё РґРµСЃСЏС‚СЊ РєСѓСЃРєРѕРІ Рё РѕСЃС‚Р°РІСЊ РµРіРѕ РІ РїРѕРєРѕРµ.
+		AI_Output (self, other,"Info_Bloodwyn_PayForJesse_08_04"); //Р›Р°РґРЅРѕ, РїР°СЂРµРЅСЊ, РєР°Рє С…РѕС‡РµС€СЊ.
 		Jesse_PayForMe = LOG_SUCCESS;
 	}
 	else
 	{
-		AI_Output (other, self,"Info_Bloodwyn_PayForJesse_15_05"); //Черт! Кажется, у меня не хватает руды.
-		AI_Output (self, other,"Info_Bloodwyn_PayForJesse_08_06"); //Это знак свыше, парень! Подумай еще раз! Зачем тебе тратить руду на этого лодыря?
+		AI_Output (other, self,"Info_Bloodwyn_PayForJesse_15_05"); //Р§РµСЂС‚! РљР°Р¶РµС‚СЃСЏ, Сѓ РјРµРЅСЏ РЅРµ С…РІР°С‚Р°РµС‚ СЂСѓРґС‹.
+		AI_Output (self, other,"Info_Bloodwyn_PayForJesse_08_06"); //Р­С‚Рѕ Р·РЅР°Рє СЃРІС‹С€Рµ, РїР°СЂРµРЅСЊ! РџРѕРґСѓРјР°Р№ РµС‰Рµ СЂР°Р·! Р—Р°С‡РµРј С‚РµР±Рµ С‚СЂР°С‚РёС‚СЊ СЂСѓРґСѓ РЅР° СЌС‚РѕРіРѕ Р»РѕРґС‹СЂСЏ?
 	};
 };
 /*------------------------------------------------------------------------
@@ -324,7 +324,7 @@ FUNC int  GRD_233_Bloodwyn_WELCOME_Condition()
 };
 func void  GRD_233_Bloodwyn_WELCOME_Info()
 {
-	AI_Output (self, other,"GRD_233_Bloodwyn_WELCOME_Info_08_01"); //Теперь ты один из нас. Хорошо. Страже нужны такие парни, как ты.
+	AI_Output (self, other,"GRD_233_Bloodwyn_WELCOME_Info_08_01"); //РўРµРїРµСЂСЊ С‚С‹ РѕРґРёРЅ РёР· РЅР°СЃ. РҐРѕСЂРѕС€Рѕ. РЎС‚СЂР°Р¶Рµ РЅСѓР¶РЅС‹ С‚Р°РєРёРµ РїР°СЂРЅРё, РєР°Рє С‚С‹.
 };
 
 
@@ -369,63 +369,63 @@ FUNC VOID Info_Bloodwyn_DIE_Info()
 	{
 		if (oldHeroGuild == GIL_GRD)
 		{
-			AI_Output	(self,hero,"Info_Bloodwyn_DIE_08_01"); //Предатель в наших рядах! ТЬФУ! И мы называли тебя стражником!
+			AI_Output	(self,hero,"Info_Bloodwyn_DIE_08_01"); //РџСЂРµРґР°С‚РµР»СЊ РІ РЅР°С€РёС… СЂСЏРґР°С…! РўР¬Р¤РЈ! Р РјС‹ РЅР°Р·С‹РІР°Р»Рё С‚РµР±СЏ СЃС‚СЂР°Р¶РЅРёРєРѕРј!
 		}
 		else if (oldHeroGuild == GIL_KDF)
 		{
-			AI_Output	(self,hero,"Info_Bloodwyn_DIE_08_02"); //Похоже, мы засекли одного из мятежных магов Огня!
+			AI_Output	(self,hero,"Info_Bloodwyn_DIE_08_02"); //РџРѕС…РѕР¶Рµ, РјС‹ Р·Р°СЃРµРєР»Рё РѕРґРЅРѕРіРѕ РёР· РјСЏС‚РµР¶РЅС‹С… РјР°РіРѕРІ РћРіРЅСЏ!
 		}
 		else
 		{
-			AI_Output	(self,hero,"Info_Bloodwyn_DIE_08_03"); //Нас предал один из Призраков!
+			AI_Output	(self,hero,"Info_Bloodwyn_DIE_08_03"); //РќР°СЃ РїСЂРµРґР°Р» РѕРґРёРЅ РёР· РџСЂРёР·СЂР°РєРѕРІ!
 		};			
 
-		AI_Output		(hero,self,"Info_Bloodwyn_DIE_15_04"); //Погоди. О чем ты говоришь, Бладвин?
-		AI_Output		(self,hero,"Info_Bloodwyn_DIE_08_05"); //Связался с Новым Лагерем, да?
-		AI_Output		(hero,self,"Info_Bloodwyn_DIE_15_06"); //Нет, постой, я...
-		AI_Output		(self,hero,"Info_Bloodwyn_DIE_08_07"); //Похоже. ты думал, что сможешь бесконечно пудрить нам мозги.
-		AI_Output		(hero,self,"Info_Bloodwyn_DIE_15_08"); //Что за чушь...
-		AI_Output		(self,hero,"Info_Bloodwyn_DIE_08_09"); //Предатели должны умереть.
-		AI_Output		(self,hero,"Info_Bloodwyn_DIE_08_10"); //УМРИ, ПРЕДАТЕЛЬ!!!
+		AI_Output		(hero,self,"Info_Bloodwyn_DIE_15_04"); //РџРѕРіРѕРґРё. Рћ С‡РµРј С‚С‹ РіРѕРІРѕСЂРёС€СЊ, Р‘Р»Р°РґРІРёРЅ?
+		AI_Output		(self,hero,"Info_Bloodwyn_DIE_08_05"); //РЎРІСЏР·Р°Р»СЃСЏ СЃ РќРѕРІС‹Рј Р›Р°РіРµСЂРµРј, РґР°?
+		AI_Output		(hero,self,"Info_Bloodwyn_DIE_15_06"); //РќРµС‚, РїРѕСЃС‚РѕР№, СЏ...
+		AI_Output		(self,hero,"Info_Bloodwyn_DIE_08_07"); //РџРѕС…РѕР¶Рµ. С‚С‹ РґСѓРјР°Р», С‡С‚Рѕ СЃРјРѕР¶РµС€СЊ Р±РµСЃРєРѕРЅРµС‡РЅРѕ РїСѓРґСЂРёС‚СЊ РЅР°Рј РјРѕР·РіРё.
+		AI_Output		(hero,self,"Info_Bloodwyn_DIE_15_08"); //Р§С‚Рѕ Р·Р° С‡СѓС€СЊ...
+		AI_Output		(self,hero,"Info_Bloodwyn_DIE_08_09"); //РџСЂРµРґР°С‚РµР»Рё РґРѕР»Р¶РЅС‹ СѓРјРµСЂРµС‚СЊ.
+		AI_Output		(self,hero,"Info_Bloodwyn_DIE_08_10"); //РЈРњР Р, РџР Р•Р”РђРўР•Р›Р¬!!!
 
 		if	Npc_KnowsInfo(hero, Info_Fletcher_DIE)
 		{
-			B_LogEntry			(CH4_BannedFromOC,"Флетчер, охраняющий основные ворота, отреагировал так же, как и Бладвин. Не знаю точно, почему, но, должно быть, это как-то связано с моими поисками юнитора для Нового Лагеря.");
+			B_LogEntry			(CH4_BannedFromOC,"Р¤Р»РµС‚С‡РµСЂ, РѕС…СЂР°РЅСЏСЋС‰РёР№ РѕСЃРЅРѕРІРЅС‹Рµ РІРѕСЂРѕС‚Р°, РѕС‚СЂРµР°РіРёСЂРѕРІР°Р» С‚Р°Рє Р¶Рµ, РєР°Рє Рё Р‘Р»Р°РґРІРёРЅ. РќРµ Р·РЅР°СЋ С‚РѕС‡РЅРѕ, РїРѕС‡РµРјСѓ, РЅРѕ, РґРѕР»Р¶РЅРѕ Р±С‹С‚СЊ, СЌС‚Рѕ РєР°Рє-С‚Рѕ СЃРІСЏР·Р°РЅРѕ СЃ РјРѕРёРјРё РїРѕРёСЃРєР°РјРё СЋРЅРёС‚РѕСЂР° РґР»СЏ РќРѕРІРѕРіРѕ Р›Р°РіРµСЂСЏ.");
 		}
 		else if	(Npc_GetTrueGuild(hero) == GIL_NONE)
 		{
 			Log_CreateTopic		(CH4_BannedFromOC,	LOG_MISSION);
 			Log_SetTopicStatus	(CH4_BannedFromOC,	LOG_RUNNING);
-			B_LogEntry			(CH4_BannedFromOC,"Бладвин, охраняющий задние ворота Старого Лагеря, назвал меня предателем и перебежчиком. Он не хотел слушать меня и сразу же напал!");
-			B_LogEntry			(CH4_BannedFromOC,"Похоже, меня изгнали из Старого Лагеря!");
+			B_LogEntry			(CH4_BannedFromOC,"Р‘Р»Р°РґРІРёРЅ, РѕС…СЂР°РЅСЏСЋС‰РёР№ Р·Р°РґРЅРёРµ РІРѕСЂРѕС‚Р° РЎС‚Р°СЂРѕРіРѕ Р›Р°РіРµСЂСЏ, РЅР°Р·РІР°Р» РјРµРЅСЏ РїСЂРµРґР°С‚РµР»РµРј Рё РїРµСЂРµР±РµР¶С‡РёРєРѕРј. РћРЅ РЅРµ С…РѕС‚РµР» СЃР»СѓС€Р°С‚СЊ РјРµРЅСЏ Рё СЃСЂР°Р·Сѓ Р¶Рµ РЅР°РїР°Р»!");
+			B_LogEntry			(CH4_BannedFromOC,"РџРѕС…РѕР¶Рµ, РјРµРЅСЏ РёР·РіРЅР°Р»Рё РёР· РЎС‚Р°СЂРѕРіРѕ Р›Р°РіРµСЂСЏ!");
 		};
 	}
 	else
 	{
 		if (C_NpcBelongsToNewCamp(hero))
 		{
-			AI_Output	(self,hero,"Info_Bloodwyn_DIE_08_11"); //Так ты решил высунуть нос из своего Нового Лагеря? Это было очень глупо с твоей стороны!
+			AI_Output	(self,hero,"Info_Bloodwyn_DIE_08_11"); //РўР°Рє С‚С‹ СЂРµС€РёР» РІС‹СЃСѓРЅСѓС‚СЊ РЅРѕСЃ РёР· СЃРІРѕРµРіРѕ РќРѕРІРѕРіРѕ Р›Р°РіРµСЂСЏ? Р­С‚Рѕ Р±С‹Р»Рѕ РѕС‡РµРЅСЊ РіР»СѓРїРѕ СЃ С‚РІРѕРµР№ СЃС‚РѕСЂРѕРЅС‹!
 		}
 		else
 		{
-			AI_Output	(self,hero,"Info_Bloodwyn_DIE_08_12"); //О, так ты решил высунуть нос из своего болота? Это было очень глупо с твоей стороны!
+			AI_Output	(self,hero,"Info_Bloodwyn_DIE_08_12"); //Рћ, С‚Р°Рє С‚С‹ СЂРµС€РёР» РІС‹СЃСѓРЅСѓС‚СЊ РЅРѕСЃ РёР· СЃРІРѕРµРіРѕ Р±РѕР»РѕС‚Р°? Р­С‚Рѕ Р±С‹Р»Рѕ РѕС‡РµРЅСЊ РіР»СѓРїРѕ СЃ С‚РІРѕРµР№ СЃС‚РѕСЂРѕРЅС‹!
 		};
 
-		AI_Output		(hero,self,"Info_Bloodwyn_DIE_15_13"); //Что?! Что ты имеешь в виду?
-		AI_Output		(self,hero,"Info_Bloodwyn_DIE_08_14"); //Ты что, не слышал о нападении на шахте?
-		AI_Output		(hero,self,"Info_Bloodwyn_DIE_15_15"); //Что...
-		AI_Output		(self,hero,"Info_Bloodwyn_DIE_08_16"); //Прости, но мы не можем позволить тебе болтать об этом направо и налево.
-		AI_Output		(hero,self,"Info_Bloodwyn_DIE_15_17"); //Эй, я не хочу неприятностей...
-		AI_Output		(self,hero,"Info_Bloodwyn_DIE_08_18"); //Тебе стоило подумать об этом раньше!
-		AI_Output		(hero,self,"Info_Bloodwyn_DIE_15_19"); //Все, с меня довольно...
-		AI_Output		(self,hero,"Info_Bloodwyn_DIE_08_20"); //С меня тоже! УБЕЙТЕ ЕГО!
+		AI_Output		(hero,self,"Info_Bloodwyn_DIE_15_13"); //Р§С‚Рѕ?! Р§С‚Рѕ С‚С‹ РёРјРµРµС€СЊ РІ РІРёРґСѓ?
+		AI_Output		(self,hero,"Info_Bloodwyn_DIE_08_14"); //РўС‹ С‡С‚Рѕ, РЅРµ СЃР»С‹С€Р°Р» Рѕ РЅР°РїР°РґРµРЅРёРё РЅР° С€Р°С…С‚Рµ?
+		AI_Output		(hero,self,"Info_Bloodwyn_DIE_15_15"); //Р§С‚Рѕ...
+		AI_Output		(self,hero,"Info_Bloodwyn_DIE_08_16"); //РџСЂРѕСЃС‚Рё, РЅРѕ РјС‹ РЅРµ РјРѕР¶РµРј РїРѕР·РІРѕР»РёС‚СЊ С‚РµР±Рµ Р±РѕР»С‚Р°С‚СЊ РѕР± СЌС‚РѕРј РЅР°РїСЂР°РІРѕ Рё РЅР°Р»РµРІРѕ.
+		AI_Output		(hero,self,"Info_Bloodwyn_DIE_15_17"); //Р­Р№, СЏ РЅРµ С…РѕС‡Сѓ РЅРµРїСЂРёСЏС‚РЅРѕСЃС‚РµР№...
+		AI_Output		(self,hero,"Info_Bloodwyn_DIE_08_18"); //РўРµР±Рµ СЃС‚РѕРёР»Рѕ РїРѕРґСѓРјР°С‚СЊ РѕР± СЌС‚РѕРј СЂР°РЅСЊС€Рµ!
+		AI_Output		(hero,self,"Info_Bloodwyn_DIE_15_19"); //Р’СЃРµ, СЃ РјРµРЅСЏ РґРѕРІРѕР»СЊРЅРѕ...
+		AI_Output		(self,hero,"Info_Bloodwyn_DIE_08_20"); //РЎ РјРµРЅСЏ С‚РѕР¶Рµ! РЈР‘Р•Р™РўР• Р•Р“Рћ!
 	};
 	
-	Npc_ExchangeRoutine	(self,				"FMTaken2");	// Verstдrkung vor das Hinterem Tor (Anfьhrer)
-	B_ExchangeRoutine	(GRD_232_Gardist,	"FMTaken2");	// Verstдrkung vor das Hinterem Tor
-	B_ExchangeRoutine	(GRD_229_Gardist,	"FMTaken2");	// Verstдrkung vor das Hinterem Tor (Fernkдmpfer)
-	B_ExchangeRoutine	(GRD_216_Torwache,	"FMTaken2");	// regulдre Wache am Hinteren Tor
-	B_ExchangeRoutine	(GRD_217_Torwache,	"FMTaken2");	// regulдre Wache am Hinteren Tor
+	Npc_ExchangeRoutine	(self,				"FMTaken2");	// VerstРґrkung vor das Hinterem Tor (AnfСЊhrer)
+	B_ExchangeRoutine	(GRD_232_Gardist,	"FMTaken2");	// VerstРґrkung vor das Hinterem Tor
+	B_ExchangeRoutine	(GRD_229_Gardist,	"FMTaken2");	// VerstРґrkung vor das Hinterem Tor (FernkРґmpfer)
+	B_ExchangeRoutine	(GRD_216_Torwache,	"FMTaken2");	// regulРґre Wache am Hinteren Tor
+	B_ExchangeRoutine	(GRD_217_Torwache,	"FMTaken2");	// regulРґre Wache am Hinteren Tor
 
 	B_SetPermAttitude	(GRD_233_Bloodwyn,	ATT_HOSTILE);
 	B_SetPermAttitude	(GRD_232_Gardist,	ATT_HOSTILE);	
@@ -436,7 +436,7 @@ FUNC VOID Info_Bloodwyn_DIE_Info()
 	
 	if	!Npc_KnowsInfo(hero, Info_Fletcher_DIE)
 	{
-		B_LogEntry		(CH4_Firemages,"Ворота Старого Лагеря теперь закрыты и охраняются стражниками. Они атакуют любого, кто подходит близко.");
+		B_LogEntry		(CH4_Firemages,"Р’РѕСЂРѕС‚Р° РЎС‚Р°СЂРѕРіРѕ Р›Р°РіРµСЂСЏ С‚РµРїРµСЂСЊ Р·Р°РєСЂС‹С‚С‹ Рё РѕС…СЂР°РЅСЏСЋС‚СЃСЏ СЃС‚СЂР°Р¶РЅРёРєР°РјРё. РћРЅРё Р°С‚Р°РєСѓСЋС‚ Р»СЋР±РѕРіРѕ, РєС‚Рѕ РїРѕРґС…РѕРґРёС‚ Р±Р»РёР·РєРѕ.");
 	};
 	
 	AI_StopProcessInfos	(self);

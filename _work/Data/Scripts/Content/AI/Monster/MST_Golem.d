@@ -4,7 +4,7 @@
 
 PROTOTYPE Mst_Default_Golem(C_Npc)			
 {
-	name							=	"Голем";
+	name							=	"Р“РѕР»РµРј";
 	guild							=	GIL_GOLEM;
 	// REAL_ID in Instanzen !!!
 	level							=	100;
@@ -82,7 +82,7 @@ func void Set_IceGolem_Visuals()
 
 INSTANCE StoneGolem	(Mst_Default_Golem)
 {
-	name	=	"Каменный голем";
+	name	=	"РљР°РјРµРЅРЅС‹Р№ РіРѕР»РµРј";
 	aivar[AIV_MM_REAL_ID]			= 	ID_STONEGOLEM;
 	protection	[PROT_BLUNT]		=	75;
 //--------------------------------------------
@@ -99,7 +99,7 @@ INSTANCE StoneGolem	(Mst_Default_Golem)
 INSTANCE SummonedByPC_StoneGolem (Mst_Default_Golem)
 {
 	//-------- general --------
-	name	=	"Голем";
+	name	=	"Р“РѕР»РµРј";
 	aivar[AIV_MM_REAL_ID]			= 	ID_STONEGOLEM;
 
 	//-------- visual --------
@@ -121,7 +121,7 @@ INSTANCE SummonedByPC_StoneGolem (Mst_Default_Golem)
 INSTANCE SummonedByNPC_StoneGolem (Mst_Default_Golem)
 {
 	//-------- general --------
-	name	=	"Каменный голем";
+	name	=	"РљР°РјРµРЅРЅС‹Р№ РіРѕР»РµРј";
 	aivar[AIV_MM_REAL_ID]			= 	ID_STONEGOLEM;
 
 	//-------- visual --------
@@ -142,7 +142,7 @@ INSTANCE SummonedByNPC_StoneGolem (Mst_Default_Golem)
 INSTANCE FireGolem	(Mst_Default_Golem)
 {
 	//-------- general --------
-	name	=	"Огненный голем";
+	name	=	"РћРіРЅРµРЅРЅС‹Р№ РіРѕР»РµРј";
 	aivar		[AIV_MM_REAL_ID]	= 	ID_FIREGOLEM;
 
 	//-------- visual --------
@@ -152,7 +152,7 @@ INSTANCE FireGolem	(Mst_Default_Golem)
 	//-------- attributes --------
 	attribute	[ATR_STRENGTH]		=	50;	// da Feuerschaden
 	protection	[PROT_MAGIC]		=	0;	// betrifft im wesentlichen die Blitz- und Eiszauber
-	attribute	[ATR_HITPOINTS_MAX]	=	150;// da er nur durch Blitz- und Eiszauber verwundbar ist, muЯ dieser Wert hier sehr viel niedriger sein 
+	attribute	[ATR_HITPOINTS_MAX]	=	150;// da er nur durch Blitz- und Eiszauber verwundbar ist, muРЇ dieser Wert hier sehr viel niedriger sein 
 	attribute	[ATR_HITPOINTS]		=	150;
 	damagetype 						=	DAM_FIRE;
 
@@ -169,7 +169,7 @@ INSTANCE FireGolem	(Mst_Default_Golem)
 INSTANCE IceGolem	(Mst_Default_Golem)
 {
 	//-------- general --------
-	name	=	"Ледяной голем";
+	name	=	"Р›РµРґСЏРЅРѕР№ РіРѕР»РµРј";
 	aivar[AIV_MM_REAL_ID]			= 	ID_ICEGOLEM;
 
 	//-------- visual --------
@@ -195,12 +195,12 @@ INSTANCE IceGolem	(Mst_Default_Golem)
 /*************************************************************************
 **	Bridge Golem   														**
 *************************************************************************/
-// bewacht die Brьcke zur Bergfestung
+// bewacht die BrСЊcke zur Bergfestung
 // Hinweis im Spiel: sollte mit Keulenwaffen bezwungen werden!
 INSTANCE BridgeGolem	(Mst_Default_Golem)
 {
 	//-------- general --------
-	name	=	"Мостовой голем";
+	name	=	"РњРѕСЃС‚РѕРІРѕР№ РіРѕР»РµРј";
 	level	=	50;
 
 	//-------- visuals --------

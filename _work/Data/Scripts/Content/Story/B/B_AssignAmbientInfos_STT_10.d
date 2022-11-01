@@ -14,7 +14,7 @@ INSTANCE Info_Stt_10_EXIT(C_INFO)
 	condition	= Info_Stt_10_EXIT_Condition;
 	information	= Info_Stt_10_EXIT_Info;
 	permanent	= 1;
-	description = "ЗАКОНЧИТЬ";
+	description = "Р—РђРљРћРќР§РРўР¬";
 };                       
 
 FUNC INT Info_Stt_10_EXIT_Condition()
@@ -37,7 +37,7 @@ INSTANCE Info_Stt_10_EinerVonEuchWerden (C_INFO) // E1
 	condition	= Info_Stt_10_EinerVonEuchWerden_Condition;
 	information	= Info_Stt_10_EinerVonEuchWerden_Info;
 	permanent	= 1;
-	description = "Я хочу стать Призраком.";
+	description = "РЇ С…РѕС‡Сѓ СЃС‚Р°С‚СЊ РџСЂРёР·СЂР°РєРѕРј.";
 };                       
 
 FUNC INT Info_Stt_10_EinerVonEuchWerden_Condition()
@@ -50,28 +50,28 @@ FUNC INT Info_Stt_10_EinerVonEuchWerden_Condition()
 
 FUNC VOID Info_Stt_10_EinerVonEuchWerden_Info()
 {
-	AI_Output(other,self,"Info_Stt_10_EinerVonEuchWerden_15_00"); //Я хочу стать Призраком.
-	AI_Output(self,other,"Info_Stt_10_EinerVonEuchWerden_10_01"); //Да? Ты уже поговорил с Диего?
+	AI_Output(other,self,"Info_Stt_10_EinerVonEuchWerden_15_00"); //РЇ С…РѕС‡Сѓ СЃС‚Р°С‚СЊ РџСЂРёР·СЂР°РєРѕРј.
+	AI_Output(self,other,"Info_Stt_10_EinerVonEuchWerden_10_01"); //Р”Р°? РўС‹ СѓР¶Рµ РїРѕРіРѕРІРѕСЂРёР» СЃ Р”РёРµРіРѕ?
 	
 	var C_NPC Diego;		Diego 	= Hlp_GetNpc(PC_Thief);
 	Diego.aivar[AIV_FINDABLE] = TRUE;
 	
 	Info_ClearChoices(Info_Stt_10_EinerVonEuchWerden);
-	Info_AddChoice(Info_Stt_10_EinerVonEuchWerden,"Нет.", Info_Stt_10_EinerVonEuchWerden_Nein);
-	Info_AddChoice(Info_Stt_10_EinerVonEuchWerden,"Да.", Info_Stt_10_EinerVonEuchWerden_Ja);
+	Info_AddChoice(Info_Stt_10_EinerVonEuchWerden,"РќРµС‚.", Info_Stt_10_EinerVonEuchWerden_Nein);
+	Info_AddChoice(Info_Stt_10_EinerVonEuchWerden,"Р”Р°.", Info_Stt_10_EinerVonEuchWerden_Ja);
 };
 
 FUNC VOID Info_Stt_10_EinerVonEuchWerden_Nein()
 {
-	AI_Output(other,self,"Info_Stt_10_EinerVonEuchWerden_Nein_15_00"); //Еще нет.
-	AI_Output(self,other,"Info_Stt_10_EinerVonEuchWerden_Nein_10_01"); //Так сделай это. Ты найдешь его перед входом в замок.
+	AI_Output(other,self,"Info_Stt_10_EinerVonEuchWerden_Nein_15_00"); //Р•С‰Рµ РЅРµС‚.
+	AI_Output(self,other,"Info_Stt_10_EinerVonEuchWerden_Nein_10_01"); //РўР°Рє СЃРґРµР»Р°Р№ СЌС‚Рѕ. РўС‹ РЅР°Р№РґРµС€СЊ РµРіРѕ РїРµСЂРµРґ РІС…РѕРґРѕРј РІ Р·Р°РјРѕРє.
 	Info_ClearChoices(Info_Stt_10_EinerVonEuchWerden);
 };
 
 FUNC VOID Info_Stt_10_EinerVonEuchWerden_Ja()
 {
-	AI_Output(other,self,"Info_Stt_10_EinerVonEuchWerden_Ja_15_00"); //Я так и сделаю.
-	AI_Output(self,other,"Info_Stt_10_EinerVonEuchWerden_Ja_10_01"); //Хорошо. Мне от этого все равно хуже не будет. Хотя, кто знает...
+	AI_Output(other,self,"Info_Stt_10_EinerVonEuchWerden_Ja_15_00"); //РЇ С‚Р°Рє Рё СЃРґРµР»Р°СЋ.
+	AI_Output(self,other,"Info_Stt_10_EinerVonEuchWerden_Ja_10_01"); //РҐРѕСЂРѕС€Рѕ. РњРЅРµ РѕС‚ СЌС‚РѕРіРѕ РІСЃРµ СЂР°РІРЅРѕ С…СѓР¶Рµ РЅРµ Р±СѓРґРµС‚. РҐРѕС‚СЏ, РєС‚Рѕ Р·РЅР°РµС‚...
 	Info_ClearChoices(Info_Stt_10_EinerVonEuchWerden);
 };
 
@@ -85,7 +85,7 @@ INSTANCE Info_Stt_10_WichtigePersonen(C_INFO)
 	condition	= Info_Stt_10_WichtigePersonen_Condition;
 	information	= Info_Stt_10_WichtigePersonen_Info;
 	permanent	= 1;
-	description = "Кто еще здесь может быть мне полезен?";
+	description = "РљС‚Рѕ РµС‰Рµ Р·РґРµСЃСЊ РјРѕР¶РµС‚ Р±С‹С‚СЊ РјРЅРµ РїРѕР»РµР·РµРЅ?";
 };                       
 
 FUNC INT Info_Stt_10_WichtigePersonen_Condition()
@@ -95,8 +95,8 @@ FUNC INT Info_Stt_10_WichtigePersonen_Condition()
 
 FUNC VOID Info_Stt_10_WichtigePersonen_Info()
 {
-	AI_Output(other,self,"Info_Stt_10_WichtigePersonen_15_00"); //Кто еще здесь может быть мне полезен?
-	AI_Output(self,other,"Info_Stt_10_WichtigePersonen_10_01"); //Если у тебя возникнут проблемы со стражниками, поговори с Граво. Ты найдешь его в купальне рядом с воротами замка. Он занимается теми, кто попал в неприятности - а это случается чаще, чем ты думаешь, особенно с новичками.
+	AI_Output(other,self,"Info_Stt_10_WichtigePersonen_15_00"); //РљС‚Рѕ РµС‰Рµ Р·РґРµСЃСЊ РјРѕР¶РµС‚ Р±С‹С‚СЊ РјРЅРµ РїРѕР»РµР·РµРЅ?
+	AI_Output(self,other,"Info_Stt_10_WichtigePersonen_10_01"); //Р•СЃР»Рё Сѓ С‚РµР±СЏ РІРѕР·РЅРёРєРЅСѓС‚ РїСЂРѕР±Р»РµРјС‹ СЃРѕ СЃС‚СЂР°Р¶РЅРёРєР°РјРё, РїРѕРіРѕРІРѕСЂРё СЃ Р“СЂР°РІРѕ. РўС‹ РЅР°Р№РґРµС€СЊ РµРіРѕ РІ РєСѓРїР°Р»СЊРЅРµ СЂСЏРґРѕРј СЃ РІРѕСЂРѕС‚Р°РјРё Р·Р°РјРєР°. РћРЅ Р·Р°РЅРёРјР°РµС‚СЃСЏ С‚РµРјРё, РєС‚Рѕ РїРѕРїР°Р» РІ РЅРµРїСЂРёСЏС‚РЅРѕСЃС‚Рё - Р° СЌС‚Рѕ СЃР»СѓС‡Р°РµС‚СЃСЏ С‡Р°С‰Рµ, С‡РµРј С‚С‹ РґСѓРјР°РµС€СЊ, РѕСЃРѕР±РµРЅРЅРѕ СЃ РЅРѕРІРёС‡РєР°РјРё.
 };
 
 // *************************************************************************
@@ -109,7 +109,7 @@ INSTANCE Info_Stt_10_DasLager(C_INFO)
 	condition	= Info_Stt_10_DasLager_Condition;
 	information	= Info_Stt_10_DasLager_Info;
 	permanent	= 1;
-	description = "Расскажи мне о Лагере.";
+	description = "Р Р°СЃСЃРєР°Р¶Рё РјРЅРµ Рѕ Р›Р°РіРµСЂРµ.";
 };                       
 
 FUNC INT Info_Stt_10_DasLager_Condition()
@@ -119,9 +119,9 @@ FUNC INT Info_Stt_10_DasLager_Condition()
 
 FUNC VOID Info_Stt_10_DasLager_Info()
 {
-	AI_Output(other,self,"Info_Stt_10_DasLager_15_00"); //Расскажи мне о Лагере.
-	AI_Output(self,other,"Info_Stt_10_DasLager_10_01"); //Я думаю, самое интересное место - это рынок. Обязательно загляни туда, если тебе что-то понадобится.
-	AI_Output(self,other,"Info_Stt_10_DasLager_10_02"); //Он находится под большой крышей к югу от Внешнего Кольца.
+	AI_Output(other,self,"Info_Stt_10_DasLager_15_00"); //Р Р°СЃСЃРєР°Р¶Рё РјРЅРµ Рѕ Р›Р°РіРµСЂРµ.
+	AI_Output(self,other,"Info_Stt_10_DasLager_10_01"); //РЇ РґСѓРјР°СЋ, СЃР°РјРѕРµ РёРЅС‚РµСЂРµСЃРЅРѕРµ РјРµСЃС‚Рѕ - СЌС‚Рѕ СЂС‹РЅРѕРє. РћР±СЏР·Р°С‚РµР»СЊРЅРѕ Р·Р°РіР»СЏРЅРё С‚СѓРґР°, РµСЃР»Рё С‚РµР±Рµ С‡С‚Рѕ-С‚Рѕ РїРѕРЅР°РґРѕР±РёС‚СЃСЏ.
+	AI_Output(self,other,"Info_Stt_10_DasLager_10_02"); //РћРЅ РЅР°С…РѕРґРёС‚СЃСЏ РїРѕРґ Р±РѕР»СЊС€РѕР№ РєСЂС‹С€РµР№ Рє СЋРіСѓ РѕС‚ Р’РЅРµС€РЅРµРіРѕ РљРѕР»СЊС†Р°.
 };
 
 // *************************************************************************
@@ -134,7 +134,7 @@ INSTANCE Info_Stt_10_DieLage(C_INFO) // E1
 	condition	= Info_Stt_10_DieLage_Condition;
 	information	= Info_Stt_10_DieLage_Info;
 	permanent	= 1;
-	description = "Привет!";
+	description = "РџСЂРёРІРµС‚!";
 };                       
 
 FUNC INT Info_Stt_10_DieLage_Condition()
@@ -144,8 +144,8 @@ FUNC INT Info_Stt_10_DieLage_Condition()
 
 FUNC VOID Info_Stt_10_DieLage_Info()
 {
-	AI_Output(other,self,"Info_Stt_10_DieLage_15_00"); //Привет!
-	AI_Output(self,other,"Info_Stt_10_DieLage_10_01"); //Что тебе нужно?
+	AI_Output(other,self,"Info_Stt_10_DieLage_15_00"); //РџСЂРёРІРµС‚!
+	AI_Output(self,other,"Info_Stt_10_DieLage_10_01"); //Р§С‚Рѕ С‚РµР±Рµ РЅСѓР¶РЅРѕ?
 };
 	
 // *************************************************************************

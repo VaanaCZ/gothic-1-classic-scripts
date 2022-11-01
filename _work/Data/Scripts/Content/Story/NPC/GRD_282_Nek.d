@@ -2,7 +2,7 @@ instance GRD_282_Nek (Npc_Default)
 {
 	//-------- primary data --------
 	
-	name 		=	"Мертвый стражник";  //Nek
+	name 		=	"РњРµСЂС‚РІС‹Р№ СЃС‚СЂР°Р¶РЅРёРє";  //Nek
 	npctype		= 	npctype_main;
 	guild 		=	GIL_GRD;
 	level 		=	10;

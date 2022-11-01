@@ -33,7 +33,7 @@ INSTANCE Info_Rufus_Wasser(C_INFO) // E1
 	condition	= Info_Rufus_Wasser_Condition;
 	information	= Info_Rufus_Wasser_Info;
 	permanent	= 1;
-	description = "Меня послал Лефти. Я принес тебе воды.";
+	description = "РњРµРЅСЏ РїРѕСЃР»Р°Р» Р›РµС„С‚Рё. РЇ РїСЂРёРЅРµСЃ С‚РµР±Рµ РІРѕРґС‹.";
 };                       
 
 FUNC INT Info_Rufus_Wasser_Condition()
@@ -47,10 +47,10 @@ FUNC INT Info_Rufus_Wasser_Condition()
 
 FUNC VOID Info_Rufus_Wasser_Info()
 {
-	AI_Output(other,self,"Info_Rufus_Wasser_15_00"); //Меня послал Лефти. Я принес тебе воды.
+	AI_Output(other,self,"Info_Rufus_Wasser_15_00"); //РњРµРЅСЏ РїРѕСЃР»Р°Р» Р›РµС„С‚Рё. РЇ РїСЂРёРЅРµСЃ С‚РµР±Рµ РІРѕРґС‹.
 	if (Npc_HasItems(other, ItFo_Potion_Water_01)>=1)
 	{
-		AI_Output(self,other,"Info_Rufus_Wasser_02_01"); //Спасибо, приятель! В глотке у меня сухо, как в пустыне!
+		AI_Output(self,other,"Info_Rufus_Wasser_02_01"); //РЎРїР°СЃРёР±Рѕ, РїСЂРёСЏС‚РµР»СЊ! Р’ РіР»РѕС‚РєРµ Сѓ РјРµРЅСЏ СЃСѓС…Рѕ, РєР°Рє РІ РїСѓСЃС‚С‹РЅРµ!
 		B_GiveInvItems(other,self,ItFo_Potion_Water_01,1);
 		if ( C_BodystateContains(self, BS_SIT) )
 		{
@@ -67,7 +67,7 @@ FUNC VOID Info_Rufus_Wasser_Info()
 	}
 	else
 	{
-		AI_Output(self,other,"Info_Rufus_Wasser_NOWATER_02_00"); //Вода! Эй, парень! Да у тебя же совсем ничего не осталось! Только не говори мне, что ты напоил всех, кроме меня!
+		AI_Output(self,other,"Info_Rufus_Wasser_NOWATER_02_00"); //Р’РѕРґР°! Р­Р№, РїР°СЂРµРЅСЊ! Р”Р° Сѓ С‚РµР±СЏ Р¶Рµ СЃРѕРІСЃРµРј РЅРёС‡РµРіРѕ РЅРµ РѕСЃС‚Р°Р»РѕСЃСЊ! РўРѕР»СЊРєРѕ РЅРµ РіРѕРІРѕСЂРё РјРЅРµ, С‡С‚Рѕ С‚С‹ РЅР°РїРѕРёР» РІСЃРµС…, РєСЂРѕРјРµ РјРµРЅСЏ!
 	};
 };
 
@@ -82,7 +82,7 @@ INSTANCE DIA_Rufus_Hello (C_INFO)
 	condition	= DIA_Rufus_Hello_Condition;
 	information	= DIA_Rufus_Hello_Info;
 	permanent	= 0;
-	description	= "Привет! Я здесь новенький.";
+	description	= "РџСЂРёРІРµС‚! РЇ Р·РґРµСЃСЊ РЅРѕРІРµРЅСЊРєРёР№.";
 };                       
 
 FUNC INT DIA_Rufus_Hello_Condition()
@@ -92,9 +92,9 @@ FUNC INT DIA_Rufus_Hello_Condition()
 
 FUNC VOID DIA_Rufus_Hello_Info()
 {	
-	AI_Output (other, self,"DIA_Rufus_Hello_15_00"); //Привет! Я здесь новенький. Просто хотел узнать, что происходит вокруг.
-	AI_Output (self, other,"DIA_Rufus_Hello_02_01"); //Спроси кого-нибудь еще, а? Я просто работаю в поле и ничего не знаю.
-	AI_Output (self, other,"DIA_Rufus_Hello_02_02"); //Эх, парень, я бы с удовольствием предложил нашему Лорду самому заниматься этой чертовой работой!
+	AI_Output (other, self,"DIA_Rufus_Hello_15_00"); //РџСЂРёРІРµС‚! РЇ Р·РґРµСЃСЊ РЅРѕРІРµРЅСЊРєРёР№. РџСЂРѕСЃС‚Рѕ С…РѕС‚РµР» СѓР·РЅР°С‚СЊ, С‡С‚Рѕ РїСЂРѕРёСЃС…РѕРґРёС‚ РІРѕРєСЂСѓРі.
+	AI_Output (self, other,"DIA_Rufus_Hello_02_01"); //РЎРїСЂРѕСЃРё РєРѕРіРѕ-РЅРёР±СѓРґСЊ РµС‰Рµ, Р°? РЇ РїСЂРѕСЃС‚Рѕ СЂР°Р±РѕС‚Р°СЋ РІ РїРѕР»Рµ Рё РЅРёС‡РµРіРѕ РЅРµ Р·РЅР°СЋ.
+	AI_Output (self, other,"DIA_Rufus_Hello_02_02"); //Р­С…, РїР°СЂРµРЅСЊ, СЏ Р±С‹ СЃ СѓРґРѕРІРѕР»СЊСЃС‚РІРёРµРј РїСЂРµРґР»РѕР¶РёР» РЅР°С€РµРјСѓ Р›РѕСЂРґСѓ СЃР°РјРѕРјСѓ Р·Р°РЅРёРјР°С‚СЊСЃСЏ СЌС‚РѕР№ С‡РµСЂС‚РѕРІРѕР№ СЂР°Р±РѕС‚РѕР№!
 };
 
 // ************************************************************
@@ -108,7 +108,7 @@ INSTANCE DIA_Rufus_Why (C_INFO)
 	condition	= DIA_Rufus_Why_Condition;
 	information	= DIA_Rufus_Why_Info;
 	permanent	= 0;
-	description	= "Если тебе не нравится эта работа, почему ты здесь?";
+	description	= "Р•СЃР»Рё С‚РµР±Рµ РЅРµ РЅСЂР°РІРёС‚СЃСЏ СЌС‚Р° СЂР°Р±РѕС‚Р°, РїРѕС‡РµРјСѓ С‚С‹ Р·РґРµСЃСЊ?";
 };                       
 
 FUNC INT DIA_Rufus_Why_Condition()
@@ -121,15 +121,15 @@ FUNC INT DIA_Rufus_Why_Condition()
 
 FUNC VOID DIA_Rufus_Why_Info()
 {	
-	AI_Output (other, self,"DIA_Rufus_Why_15_00"); //Если тебе не нравится эта работа, почему ты здесь?
-	AI_Output (self, other,"DIA_Rufus_Why_02_01"); //Это случилось в первый же день, после того как я попал сюда. Лефти, один из головорезов Лорда, пришел ко мне и предложил поработать на полях.
-	AI_Output (self, other,"DIA_Rufus_Why_02_02"); //Конечно, сказал я. Я был новичком и хотел стать хоть в чем-то полезным.
-	AI_Output (self, other,"DIA_Rufus_Why_02_03"); //На следующий день, когда я остановился немного передохнуть, этот тип появился снова.
-	AI_Output (self, other,"DIA_Rufus_Why_02_04"); //Ты же не хочешь, чтобы твои товарищи делали всю работу за тебя, так?' - спросил он.
-	AI_Output (self, other,"DIA_Rufus_Why_02_05"); //Я сказал ему, что окончательно вымотался в первый же день, что мне нужен отдых и все такое... Но он даже не слушал.
-	AI_Output (self, other,"DIA_Rufus_Why_02_06"); //Просто ухватил меня за воротник и потащил обратно на поле.
-	AI_Output (self, other,"DIA_Rufus_Why_02_07"); //С того случая он каждый день поджидал меня возле двери - до тех пор, пока я сам не стал ходить на работу. Не хочу ссориться с этими типами.
-	AI_Output (self, other,"DIA_Rufus_Why_02_08"); //Это настоящие головорезы, и лучше держаться от них подальше.
+	AI_Output (other, self,"DIA_Rufus_Why_15_00"); //Р•СЃР»Рё С‚РµР±Рµ РЅРµ РЅСЂР°РІРёС‚СЃСЏ СЌС‚Р° СЂР°Р±РѕС‚Р°, РїРѕС‡РµРјСѓ С‚С‹ Р·РґРµСЃСЊ?
+	AI_Output (self, other,"DIA_Rufus_Why_02_01"); //Р­С‚Рѕ СЃР»СѓС‡РёР»РѕСЃСЊ РІ РїРµСЂРІС‹Р№ Р¶Рµ РґРµРЅСЊ, РїРѕСЃР»Рµ С‚РѕРіРѕ РєР°Рє СЏ РїРѕРїР°Р» СЃСЋРґР°. Р›РµС„С‚Рё, РѕРґРёРЅ РёР· РіРѕР»РѕРІРѕСЂРµР·РѕРІ Р›РѕСЂРґР°, РїСЂРёС€РµР» РєРѕ РјРЅРµ Рё РїСЂРµРґР»РѕР¶РёР» РїРѕСЂР°Р±РѕС‚Р°С‚СЊ РЅР° РїРѕР»СЏС….
+	AI_Output (self, other,"DIA_Rufus_Why_02_02"); //РљРѕРЅРµС‡РЅРѕ, СЃРєР°Р·Р°Р» СЏ. РЇ Р±С‹Р» РЅРѕРІРёС‡РєРѕРј Рё С…РѕС‚РµР» СЃС‚Р°С‚СЊ С…РѕС‚СЊ РІ С‡РµРј-С‚Рѕ РїРѕР»РµР·РЅС‹Рј.
+	AI_Output (self, other,"DIA_Rufus_Why_02_03"); //РќР° СЃР»РµРґСѓСЋС‰РёР№ РґРµРЅСЊ, РєРѕРіРґР° СЏ РѕСЃС‚Р°РЅРѕРІРёР»СЃСЏ РЅРµРјРЅРѕРіРѕ РїРµСЂРµРґРѕС…РЅСѓС‚СЊ, СЌС‚РѕС‚ С‚РёРї РїРѕСЏРІРёР»СЃСЏ СЃРЅРѕРІР°.
+	AI_Output (self, other,"DIA_Rufus_Why_02_04"); //РўС‹ Р¶Рµ РЅРµ С…РѕС‡РµС€СЊ, С‡С‚РѕР±С‹ С‚РІРѕРё С‚РѕРІР°СЂРёС‰Рё РґРµР»Р°Р»Рё РІСЃСЋ СЂР°Р±РѕС‚Сѓ Р·Р° С‚РµР±СЏ, С‚Р°Рє?' - СЃРїСЂРѕСЃРёР» РѕРЅ.
+	AI_Output (self, other,"DIA_Rufus_Why_02_05"); //РЇ СЃРєР°Р·Р°Р» РµРјСѓ, С‡С‚Рѕ РѕРєРѕРЅС‡Р°С‚РµР»СЊРЅРѕ РІС‹РјРѕС‚Р°Р»СЃСЏ РІ РїРµСЂРІС‹Р№ Р¶Рµ РґРµРЅСЊ, С‡С‚Рѕ РјРЅРµ РЅСѓР¶РµРЅ РѕС‚РґС‹С… Рё РІСЃРµ С‚Р°РєРѕРµ... РќРѕ РѕРЅ РґР°Р¶Рµ РЅРµ СЃР»СѓС€Р°Р».
+	AI_Output (self, other,"DIA_Rufus_Why_02_06"); //РџСЂРѕСЃС‚Рѕ СѓС…РІР°С‚РёР» РјРµРЅСЏ Р·Р° РІРѕСЂРѕС‚РЅРёРє Рё РїРѕС‚Р°С‰РёР» РѕР±СЂР°С‚РЅРѕ РЅР° РїРѕР»Рµ.
+	AI_Output (self, other,"DIA_Rufus_Why_02_07"); //РЎ С‚РѕРіРѕ СЃР»СѓС‡Р°СЏ РѕРЅ РєР°Р¶РґС‹Р№ РґРµРЅСЊ РїРѕРґР¶РёРґР°Р» РјРµРЅСЏ РІРѕР·Р»Рµ РґРІРµСЂРё - РґРѕ С‚РµС… РїРѕСЂ, РїРѕРєР° СЏ СЃР°Рј РЅРµ СЃС‚Р°Р» С…РѕРґРёС‚СЊ РЅР° СЂР°Р±РѕС‚Сѓ. РќРµ С…РѕС‡Сѓ СЃСЃРѕСЂРёС‚СЊСЃСЏ СЃ СЌС‚РёРјРё С‚РёРїР°РјРё.
+	AI_Output (self, other,"DIA_Rufus_Why_02_08"); //Р­С‚Рѕ РЅР°СЃС‚РѕСЏС‰РёРµ РіРѕР»РѕРІРѕСЂРµР·С‹, Рё Р»СѓС‡С€Рµ РґРµСЂР¶Р°С‚СЊСЃСЏ РѕС‚ РЅРёС… РїРѕРґР°Р»СЊС€Рµ.
 	var C_NPC Ricelord;			Ricelord	= Hlp_GetNpc(Bau_900_Ricelord);
 	Ricelord.aivar[AIV_FINDABLE] = TRUE;	
 };
@@ -145,7 +145,7 @@ INSTANCE DIA_Rufus_Ricelord (C_INFO)
 	condition	= DIA_Rufus_Ricelord_Condition;
 	information	= DIA_Rufus_Ricelord_Info;
 	permanent	= 1;
-	description	= "Кто такой Лорд?";
+	description	= "РљС‚Рѕ С‚Р°РєРѕР№ Р›РѕСЂРґ?";
 };                       
 
 FUNC INT DIA_Rufus_Ricelord_Condition()
@@ -158,9 +158,9 @@ FUNC INT DIA_Rufus_Ricelord_Condition()
 
 FUNC VOID DIA_Rufus_Ricelord_Info()
 {	
-	AI_Output (other, self,"DIA_Rufus_Ricelord_15_00"); //Кто такой Лорд?
-	AI_Output (self, other,"DIA_Rufus_Ricelord_02_01"); //Он появился здесь одним из первых, помог основать Лагерь и заложить рисовые поля.
-	AI_Output (self, other,"DIA_Rufus_Ricelord_02_02"); //Сейчас он просто сидит у себя в амбаре и почесывает живот, свинья жирная!
+	AI_Output (other, self,"DIA_Rufus_Ricelord_15_00"); //РљС‚Рѕ С‚Р°РєРѕР№ Р›РѕСЂРґ?
+	AI_Output (self, other,"DIA_Rufus_Ricelord_02_01"); //РћРЅ РїРѕСЏРІРёР»СЃСЏ Р·РґРµСЃСЊ РѕРґРЅРёРј РёР· РїРµСЂРІС‹С…, РїРѕРјРѕРі РѕСЃРЅРѕРІР°С‚СЊ Р›Р°РіРµСЂСЊ Рё Р·Р°Р»РѕР¶РёС‚СЊ СЂРёСЃРѕРІС‹Рµ РїРѕР»СЏ.
+	AI_Output (self, other,"DIA_Rufus_Ricelord_02_02"); //РЎРµР№С‡Р°СЃ РѕРЅ РїСЂРѕСЃС‚Рѕ СЃРёРґРёС‚ Сѓ СЃРµР±СЏ РІ Р°РјР±Р°СЂРµ Рё РїРѕС‡РµСЃС‹РІР°РµС‚ Р¶РёРІРѕС‚, СЃРІРёРЅСЊСЏ Р¶РёСЂРЅР°СЏ!
 	var C_NPC Ricelord;			Ricelord	= Hlp_GetNpc(Bau_900_Ricelord);
 	Ricelord.aivar[AIV_FINDABLE] = TRUE;	
 };

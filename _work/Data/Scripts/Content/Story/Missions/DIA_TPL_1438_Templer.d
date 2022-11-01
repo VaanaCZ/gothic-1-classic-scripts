@@ -16,8 +16,8 @@ FUNC int  Tpl_1438_Templer_Exit_Condition()
 
 FUNC VOID  Tpl_1438_Templer_Exit_Info()
 {
-	AI_Output			(other, self,"Tpl_1438_Templer_Exit_Info_15_01"); //Увидимся.
-	AI_Output			(self, other,"Tpl_1438_Templer_Exit_Info_13_02"); //Да пробудится Спящий!
+	AI_Output			(other, self,"Tpl_1438_Templer_Exit_Info_15_01"); //РЈРІРёРґРёРјСЃСЏ.
+	AI_Output			(self, other,"Tpl_1438_Templer_Exit_Info_13_02"); //Р”Р° РїСЂРѕР±СѓРґРёС‚СЃСЏ РЎРїСЏС‰РёР№!
 	
 	AI_StopProcessInfos	( self );
 };
@@ -30,7 +30,7 @@ instance  Tpl_1438_Templer_INFO (C_INFO)
 	information		= Tpl_1438_Templer_INFO_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Что делают Стражи в шахте?"; 
+	description		= "Р§С‚Рѕ РґРµР»Р°СЋС‚ РЎС‚СЂР°Р¶Рё РІ С€Р°С…С‚Рµ?"; 
 };
 
 FUNC int  Tpl_1438_Templer_INFO_Condition()
@@ -44,8 +44,8 @@ FUNC int  Tpl_1438_Templer_INFO_Condition()
 
 FUNC void  Tpl_1438_Templer_INFO_Info()
 {
-	AI_Output			(other, self,"Tpl_1438_Templer_INFO_Info_15_01"); //Что делают Стражи в шахте?
-	AI_Output			(self, other,"Tpl_1438_Templer_INFO_Info_13_02"); //Мы охотимся на ползунов. Ты лучше возвращайся в Лагерь - там безопаснее.
+	AI_Output			(other, self,"Tpl_1438_Templer_INFO_Info_15_01"); //Р§С‚Рѕ РґРµР»Р°СЋС‚ РЎС‚СЂР°Р¶Рё РІ С€Р°С…С‚Рµ?
+	AI_Output			(self, other,"Tpl_1438_Templer_INFO_Info_13_02"); //РњС‹ РѕС…РѕС‚РёРјСЃСЏ РЅР° РїРѕР»Р·СѓРЅРѕРІ. РўС‹ Р»СѓС‡С€Рµ РІРѕР·РІСЂР°С‰Р°Р№СЃСЏ РІ Р›Р°РіРµСЂСЊ - С‚Р°Рј Р±РµР·РѕРїР°СЃРЅРµРµ.
 }; 
 
 // ***************** SEKRET *****************************
@@ -57,7 +57,7 @@ instance  Tpl_1438_Templer_WHY (C_INFO)
 	information		= Tpl_1438_Templer_WHY_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Зачем вы охотитесь на ползунов?"; 
+	description		= "Р—Р°С‡РµРј РІС‹ РѕС…РѕС‚РёС‚РµСЃСЊ РЅР° РїРѕР»Р·СѓРЅРѕРІ?"; 
 };
 
 FUNC int  Tpl_1438_Templer_WHY_Condition()
@@ -70,10 +70,10 @@ FUNC int  Tpl_1438_Templer_WHY_Condition()
 };
 FUNC void  Tpl_1438_Templer_WHY_Info()
 {
-	AI_Output			(other, self,"Tpl_1438_Templer_WHY_Info_15_01"); //Зачем вы охотитесь на ползунов?
-	AI_Output			(self, other,"Tpl_1438_Templer_WHY_Info_13_02"); //Нам нужны их челюсти. У ползунов очень ценная слюна.
-	AI_Output			(other, self,"Tpl_1438_Templer_WHY_Info_15_03"); //Какая такая слюна?
-	AI_Output			(self, other,"Tpl_1438_Templer_WHY_Info_13_04"); //Ядовитая. И только Кор Галом знает, как готовить из нее эликсиры.
+	AI_Output			(other, self,"Tpl_1438_Templer_WHY_Info_15_01"); //Р—Р°С‡РµРј РІС‹ РѕС…РѕС‚РёС‚РµСЃСЊ РЅР° РїРѕР»Р·СѓРЅРѕРІ?
+	AI_Output			(self, other,"Tpl_1438_Templer_WHY_Info_13_02"); //РќР°Рј РЅСѓР¶РЅС‹ РёС… С‡РµР»СЋСЃС‚Рё. РЈ РїРѕР»Р·СѓРЅРѕРІ РѕС‡РµРЅСЊ С†РµРЅРЅР°СЏ СЃР»СЋРЅР°.
+	AI_Output			(other, self,"Tpl_1438_Templer_WHY_Info_15_03"); //РљР°РєР°СЏ С‚Р°РєР°СЏ СЃР»СЋРЅР°?
+	AI_Output			(self, other,"Tpl_1438_Templer_WHY_Info_13_04"); //РЇРґРѕРІРёС‚Р°СЏ. Р С‚РѕР»СЊРєРѕ РљРѕСЂ Р“Р°Р»РѕРј Р·РЅР°РµС‚, РєР°Рє РіРѕС‚РѕРІРёС‚СЊ РёР· РЅРµРµ СЌР»РёРєСЃРёСЂС‹.
 };
 // ***************** KALOM *****************************
 
@@ -84,7 +84,7 @@ instance  Tpl_1438_Templer_KALOM (C_INFO)
 	information		= Tpl_1438_Templer_KALOM_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Кто такой Кор Галом?"; 
+	description		= "РљС‚Рѕ С‚Р°РєРѕР№ РљРѕСЂ Р“Р°Р»РѕРј?"; 
 };
 
 FUNC int  Tpl_1438_Templer_KALOM_Condition()
@@ -98,12 +98,12 @@ FUNC int  Tpl_1438_Templer_KALOM_Condition()
 
 FUNC void  Tpl_1438_Templer_KALOM_Info()
 {
-	AI_Output			(other, self,"Tpl_1438_Templer_KALOM_Info_15_01"); //Кто такой Кор Галом?
-	AI_Output			(self, other,"Tpl_1438_Templer_KALOM_Info_13_02"); //Это один из самых влиятельных людей во всем Братстве. Он знает множество тайн. Говорят, он даже может читать мысли людей.
-	AI_Output			(self, other,"Tpl_1438_Templer_KALOM_Info_13_03"); //Но помимо всего этого, он еще и алхимик. Он готовит эликсиры, благодаря которым души посвященных могут говорить со Спящим. Да ты просто загляни в Лагерь! Нам всегда нужны новые люди.
-	AI_Output			(other, self,"Tpl_1438_Templer_KALOM_Info_15_04"); //Я подумаю об этом.
+	AI_Output			(other, self,"Tpl_1438_Templer_KALOM_Info_15_01"); //РљС‚Рѕ С‚Р°РєРѕР№ РљРѕСЂ Р“Р°Р»РѕРј?
+	AI_Output			(self, other,"Tpl_1438_Templer_KALOM_Info_13_02"); //Р­С‚Рѕ РѕРґРёРЅ РёР· СЃР°РјС‹С… РІР»РёСЏС‚РµР»СЊРЅС‹С… Р»СЋРґРµР№ РІРѕ РІСЃРµРј Р‘СЂР°С‚СЃС‚РІРµ. РћРЅ Р·РЅР°РµС‚ РјРЅРѕР¶РµСЃС‚РІРѕ С‚Р°Р№РЅ. Р“РѕРІРѕСЂСЏС‚, РѕРЅ РґР°Р¶Рµ РјРѕР¶РµС‚ С‡РёС‚Р°С‚СЊ РјС‹СЃР»Рё Р»СЋРґРµР№.
+	AI_Output			(self, other,"Tpl_1438_Templer_KALOM_Info_13_03"); //РќРѕ РїРѕРјРёРјРѕ РІСЃРµРіРѕ СЌС‚РѕРіРѕ, РѕРЅ РµС‰Рµ Рё Р°Р»С…РёРјРёРє. РћРЅ РіРѕС‚РѕРІРёС‚ СЌР»РёРєСЃРёСЂС‹, Р±Р»Р°РіРѕРґР°СЂСЏ РєРѕС‚РѕСЂС‹Рј РґСѓС€Рё РїРѕСЃРІСЏС‰РµРЅРЅС‹С… РјРѕРіСѓС‚ РіРѕРІРѕСЂРёС‚СЊ СЃРѕ РЎРїСЏС‰РёРј. Р”Р° С‚С‹ РїСЂРѕСЃС‚Рѕ Р·Р°РіР»СЏРЅРё РІ Р›Р°РіРµСЂСЊ! РќР°Рј РІСЃРµРіРґР° РЅСѓР¶РЅС‹ РЅРѕРІС‹Рµ Р»СЋРґРё.
+	AI_Output			(other, self,"Tpl_1438_Templer_KALOM_Info_15_04"); //РЇ РїРѕРґСѓРјР°СЋ РѕР± СЌС‚РѕРј.
 };  
-//---------------------WENN DIE EIERSUCHE LДUFT-------------------------------  
+//---------------------WENN DIE EIERSUCHE LР”UFT-------------------------------  
 instance  Tpl_1438_Templer_EGGSEARCH (C_INFO)
 {
 	npc				= Tpl_1438_Templer;
@@ -111,7 +111,7 @@ instance  Tpl_1438_Templer_EGGSEARCH (C_INFO)
 	information		= Tpl_1438_Templer_EGGSEARCH_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Я ищу логово ползунов."; 
+	description		= "РЇ РёС‰Сѓ Р»РѕРіРѕРІРѕ РїРѕР»Р·СѓРЅРѕРІ."; 
 };
 
 FUNC int  Tpl_1438_Templer_EGGSEARCH_Condition()
@@ -124,10 +124,10 @@ FUNC int  Tpl_1438_Templer_EGGSEARCH_Condition()
 };
 FUNC void  Tpl_1438_Templer_EGGSEARCH_Info()
 {
-	AI_Output			(other, self,"Tpl_1438_Templer_EGGSEARCH_Info_15_01"); //Я ищу логово ползунов.
-	AI_Output			(self, other,"Tpl_1438_Templer_EGGSEARCH_Info_13_02"); //Поговори с Гор На Видом, Гор На Кошем и Гор На Баром. Они знают о ползунах куда больше, чем я.
+	AI_Output			(other, self,"Tpl_1438_Templer_EGGSEARCH_Info_15_01"); //РЇ РёС‰Сѓ Р»РѕРіРѕРІРѕ РїРѕР»Р·СѓРЅРѕРІ.
+	AI_Output			(self, other,"Tpl_1438_Templer_EGGSEARCH_Info_13_02"); //РџРѕРіРѕРІРѕСЂРё СЃ Р“РѕСЂ РќР° Р’РёРґРѕРј, Р“РѕСЂ РќР° РљРѕС€РµРј Рё Р“РѕСЂ РќР° Р‘Р°СЂРѕРј. РћРЅРё Р·РЅР°СЋС‚ Рѕ РїРѕР»Р·СѓРЅР°С… РєСѓРґР° Р±РѕР»СЊС€Рµ, С‡РµРј СЏ.
 
-	B_LogEntry		(CH2_MCEggs,"Я спросил у стража у входа в Старую Шахту о логове ползунов. Он отослал меня к другим стражам: Гор На Виду, Гор На Кошу и Гор На Бару. Интересно, кто же из Братства занимается придумыванием таких заковыристых имен?");  
+	B_LogEntry		(CH2_MCEggs,"РЇ СЃРїСЂРѕСЃРёР» Сѓ СЃС‚СЂР°Р¶Р° Сѓ РІС…РѕРґР° РІ РЎС‚Р°СЂСѓСЋ РЁР°С…С‚Сѓ Рѕ Р»РѕРіРѕРІРµ РїРѕР»Р·СѓРЅРѕРІ. РћРЅ РѕС‚РѕСЃР»Р°Р» РјРµРЅСЏ Рє РґСЂСѓРіРёРј СЃС‚СЂР°Р¶Р°Рј: Р“РѕСЂ РќР° Р’РёРґСѓ, Р“РѕСЂ РќР° РљРѕС€Сѓ Рё Р“РѕСЂ РќР° Р‘Р°СЂСѓ. РРЅС‚РµСЂРµСЃРЅРѕ, РєС‚Рѕ Р¶Рµ РёР· Р‘СЂР°С‚СЃС‚РІР° Р·Р°РЅРёРјР°РµС‚СЃСЏ РїСЂРёРґСѓРјС‹РІР°РЅРёРµРј С‚Р°РєРёС… Р·Р°РєРѕРІС‹СЂРёСЃС‚С‹С… РёРјРµРЅ?");  
 };  
 /*------------------------------------------------------------------------
 //							ZANGEN FREISCHALTEN						    //
@@ -140,7 +140,7 @@ instance  Tpl_1438_Templer_ZANGEN (C_INFO)
 	information		= Tpl_1438_Templer_ZANGEN_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Как добываются челюсти ползунов?"; 
+	description		= "РљР°Рє РґРѕР±С‹РІР°СЋС‚СЃСЏ С‡РµР»СЋСЃС‚Рё РїРѕР»Р·СѓРЅРѕРІ?"; 
 };
 
 FUNC int  Tpl_1438_Templer_ZANGEN_Condition()
@@ -154,8 +154,8 @@ FUNC int  Tpl_1438_Templer_ZANGEN_Condition()
 };
 FUNC void  Tpl_1438_Templer_ZANGEN_Info()
 {
-	AI_Output			(other, self,"Tpl_1438_Templer_ZANGEN_Info_15_01"); //Как добываются челюсти ползунов?
-	AI_Output			(self, other,"Tpl_1438_Templer_ZANGEN_Info_13_02"); //Это не так-то просто. Но я могу тебя научить.
+	AI_Output			(other, self,"Tpl_1438_Templer_ZANGEN_Info_15_01"); //РљР°Рє РґРѕР±С‹РІР°СЋС‚СЃСЏ С‡РµР»СЋСЃС‚Рё РїРѕР»Р·СѓРЅРѕРІ?
+	AI_Output			(self, other,"Tpl_1438_Templer_ZANGEN_Info_13_02"); //Р­С‚Рѕ РЅРµ С‚Р°Рє-С‚Рѕ РїСЂРѕСЃС‚Рѕ. РќРѕ СЏ РјРѕРіСѓ С‚РµР±СЏ РЅР°СѓС‡РёС‚СЊ.
 }; 
 /*------------------------------------------------------------------------
 //							LERNEN ZANGEN ZU ENTFERNEN					//
@@ -168,7 +168,7 @@ instance  Tpl_1438_Templer_TEACHZANGEN (C_INFO)
 	information		= Tpl_1438_Templer_TEACHZANGEN_Info;
 	important		= 0;
 	permanent		= 1;
-	description		= "Научиться вырезать челюсти (1 ед. обучения)"; 
+	description		= "РќР°СѓС‡РёС‚СЊСЃСЏ РІС‹СЂРµР·Р°С‚СЊ С‡РµР»СЋСЃС‚Рё (1 РµРґ. РѕР±СѓС‡РµРЅРёСЏ)"; 
 };
 
 FUNC int  Tpl_1438_Templer_TEACHZANGEN_Condition()
@@ -183,24 +183,24 @@ FUNC int  Tpl_1438_Templer_TEACHZANGEN_Condition()
 FUNC void  Tpl_1438_Templer_TEACHZANGEN_Info()
 {
 	
-	AI_Output			(other, self,"Tpl_1438_Templer_TEACHZANGEN_Info_15_01"); //Ты можешь научить меня добывать челюсти ползунов?
+	AI_Output			(other, self,"Tpl_1438_Templer_TEACHZANGEN_Info_15_01"); //РўС‹ РјРѕР¶РµС€СЊ РЅР°СѓС‡РёС‚СЊ РјРµРЅСЏ РґРѕР±С‹РІР°С‚СЊ С‡РµР»СЋСЃС‚Рё РїРѕР»Р·СѓРЅРѕРІ?
 	
 	if (hero.lp >= 1)
 	{
 		hero.lp = hero.lp - 1;
-		AI_Output		(self, other,"Tpl_1438_Templer_TEACHZANGEN_Info_13_01"); //Прежде всего нужно сделать глубокий надрез. Но будь осторожен, чтобы не повредить железы, - слюна может попасть тебе на руки.
-		AI_Output		(other, self,"Tpl_1438_Templer_TEACHZANGEN_Info_15_02"); //Это должно быть неприятно.
-		AI_Output		(self, other,"Tpl_1438_Templer_TEACHZANGEN_Info_13_03"); //Так и есть. Ты встречал когда-нибудь Коргура Трехпалого, знаменитого охотника на ползунов? Ах да, это же было еще до того, как ты появился здесь. Ладно, идем дальше...
-		AI_Output		(self, other,"Tpl_1438_Templer_TEACHZANGEN_Info_13_04"); //Делаешь надрез вокруг слюнных желез, оставляя довольно большой промежуток, а затем вынимаешь их вместе с челюстями. Если сделаешь все, как я сказал, проблем быть не должно.
+		AI_Output		(self, other,"Tpl_1438_Templer_TEACHZANGEN_Info_13_01"); //РџСЂРµР¶РґРµ РІСЃРµРіРѕ РЅСѓР¶РЅРѕ СЃРґРµР»Р°С‚СЊ РіР»СѓР±РѕРєРёР№ РЅР°РґСЂРµР·. РќРѕ Р±СѓРґСЊ РѕСЃС‚РѕСЂРѕР¶РµРЅ, С‡С‚РѕР±С‹ РЅРµ РїРѕРІСЂРµРґРёС‚СЊ Р¶РµР»РµР·С‹, - СЃР»СЋРЅР° РјРѕР¶РµС‚ РїРѕРїР°СЃС‚СЊ С‚РµР±Рµ РЅР° СЂСѓРєРё.
+		AI_Output		(other, self,"Tpl_1438_Templer_TEACHZANGEN_Info_15_02"); //Р­С‚Рѕ РґРѕР»Р¶РЅРѕ Р±С‹С‚СЊ РЅРµРїСЂРёСЏС‚РЅРѕ.
+		AI_Output		(self, other,"Tpl_1438_Templer_TEACHZANGEN_Info_13_03"); //РўР°Рє Рё РµСЃС‚СЊ. РўС‹ РІСЃС‚СЂРµС‡Р°Р» РєРѕРіРґР°-РЅРёР±СѓРґСЊ РљРѕСЂРіСѓСЂР° РўСЂРµС…РїР°Р»РѕРіРѕ, Р·РЅР°РјРµРЅРёС‚РѕРіРѕ РѕС…РѕС‚РЅРёРєР° РЅР° РїРѕР»Р·СѓРЅРѕРІ? РђС… РґР°, СЌС‚Рѕ Р¶Рµ Р±С‹Р»Рѕ РµС‰Рµ РґРѕ С‚РѕРіРѕ, РєР°Рє С‚С‹ РїРѕСЏРІРёР»СЃСЏ Р·РґРµСЃСЊ. Р›Р°РґРЅРѕ, РёРґРµРј РґР°Р»СЊС€Рµ...
+		AI_Output		(self, other,"Tpl_1438_Templer_TEACHZANGEN_Info_13_04"); //Р”РµР»Р°РµС€СЊ РЅР°РґСЂРµР· РІРѕРєСЂСѓРі СЃР»СЋРЅРЅС‹С… Р¶РµР»РµР·, РѕСЃС‚Р°РІР»СЏСЏ РґРѕРІРѕР»СЊРЅРѕ Р±РѕР»СЊС€РѕР№ РїСЂРѕРјРµР¶СѓС‚РѕРє, Р° Р·Р°С‚РµРј РІС‹РЅРёРјР°РµС€СЊ РёС… РІРјРµСЃС‚Рµ СЃ С‡РµР»СЋСЃС‚СЏРјРё. Р•СЃР»Рё СЃРґРµР»Р°РµС€СЊ РІСЃРµ, РєР°Рє СЏ СЃРєР°Р·Р°Р», РїСЂРѕР±Р»РµРј Р±С‹С‚СЊ РЅРµ РґРѕР»Р¶РЅРѕ.
 		Knows_GetMCMandibles = TRUE;
 		Log_CreateTopic (GE_AnimalTrophies,LOG_NOTE);
-		B_LogEntry		(GE_AnimalTrophies,"Как удалять челюсти ползунов");
+		B_LogEntry		(GE_AnimalTrophies,"РљР°Рє СѓРґР°Р»СЏС‚СЊ С‡РµР»СЋСЃС‚Рё РїРѕР»Р·СѓРЅРѕРІ");
 		Tpl_1438_Templer_TEACHZANGEN.permanent		= 0;
-		PrintScreen		("Изучить: Удаление челюстей ползунов", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
+		PrintScreen		("РР·СѓС‡РёС‚СЊ: РЈРґР°Р»РµРЅРёРµ С‡РµР»СЋСЃС‚РµР№ РїРѕР»Р·СѓРЅРѕРІ", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
 	}
 	else 
 	{
-		PrintScreen		("Недостаточно очков обучения!", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
+		PrintScreen		("РќРµРґРѕСЃС‚Р°С‚РѕС‡РЅРѕ РѕС‡РєРѕРІ РѕР±СѓС‡РµРЅРёСЏ!", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
 		B_Say			(self, other, "$NOLEARNNOPOINTS");
 	};
 };   

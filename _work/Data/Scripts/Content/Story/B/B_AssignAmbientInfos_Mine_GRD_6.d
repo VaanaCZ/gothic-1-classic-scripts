@@ -14,7 +14,7 @@ INSTANCE Info_Mine_Grd_6_EXIT(C_INFO)
 	condition	= Info_Mine_Grd_6_EXIT_Condition;
 	information	= Info_Mine_Grd_6_EXIT_Info;
 	permanent	= 1;
-	description = "ЗАКОНЧИТЬ";
+	description = "Р—РђРљРћРќР§РРўР¬";
 };                       
 
 FUNC INT Info_Mine_Grd_6_EXIT_Condition()
@@ -37,7 +37,7 @@ INSTANCE Info_Mine_Grd_6_Mine (C_INFO) // E1
 	condition	= Info_Mine_Grd_6_Mine_Condition;
 	information	= Info_Mine_Grd_6_Mine_Info;
 	permanent	= 1;
-	description = "Как дела на шахте?";
+	description = "РљР°Рє РґРµР»Р° РЅР° С€Р°С…С‚Рµ?";
 };                       
 
 FUNC INT Info_Mine_Grd_6_Mine_Condition()
@@ -50,8 +50,8 @@ FUNC INT Info_Mine_Grd_6_Mine_Condition()
 
 FUNC VOID Info_Mine_Grd_6_Mine_Info()
 {
-	AI_Output(other,self,"Info_Mine_Grd_6_Mine_15_00"); //Что происходит на шахте?
-	AI_Output(self,other,"Info_Mine_Grd_6_Mine_06_01"); //Рудокопы добывают руду - все как всегда. Если остановятся, их ждет хорошая взбучка.
+	AI_Output(other,self,"Info_Mine_Grd_6_Mine_15_00"); //Р§С‚Рѕ РїСЂРѕРёСЃС…РѕРґРёС‚ РЅР° С€Р°С…С‚Рµ?
+	AI_Output(self,other,"Info_Mine_Grd_6_Mine_06_01"); //Р СѓРґРѕРєРѕРїС‹ РґРѕР±С‹РІР°СЋС‚ СЂСѓРґСѓ - РІСЃРµ РєР°Рє РІСЃРµРіРґР°. Р•СЃР»Рё РѕСЃС‚Р°РЅРѕРІСЏС‚СЃСЏ, РёС… Р¶РґРµС‚ С…РѕСЂРѕС€Р°СЏ РІР·Р±СѓС‡РєР°.
 	
 };
 
@@ -65,7 +65,7 @@ INSTANCE Info_Mine_Grd_6_WichtigePersonen(C_INFO)
 	condition	= Info_Mine_Grd_6_WichtigePersonen_Condition;
 	information	= Info_Mine_Grd_6_WichtigePersonen_Info;
 	permanent	= 1;
-	description = "Кто здесь командует?";
+	description = "РљС‚Рѕ Р·РґРµСЃСЊ РєРѕРјР°РЅРґСѓРµС‚?";
 };                       
 
 FUNC INT Info_Mine_Grd_6_WichtigePersonen_Condition()
@@ -78,8 +78,8 @@ FUNC INT Info_Mine_Grd_6_WichtigePersonen_Condition()
 
 FUNC VOID Info_Mine_Grd_6_WichtigePersonen_Info()
 {
-	AI_Output(other,self,"Info_Mine_Grd_6_WichtigePersonen_15_00"); //Кто здесь главный?
-	AI_Output(self,other,"Info_Mine_Grd_6_WichtigePersonen_06_01"); //Нами командует Асгхан, а Ян заправляет делами - приглядывает за рудокопами, организует добычу руды.
+	AI_Output(other,self,"Info_Mine_Grd_6_WichtigePersonen_15_00"); //РљС‚Рѕ Р·РґРµСЃСЊ РіР»Р°РІРЅС‹Р№?
+	AI_Output(self,other,"Info_Mine_Grd_6_WichtigePersonen_06_01"); //РќР°РјРё РєРѕРјР°РЅРґСѓРµС‚ РђСЃРіС…Р°РЅ, Р° РЇРЅ Р·Р°РїСЂР°РІР»СЏРµС‚ РґРµР»Р°РјРё - РїСЂРёРіР»СЏРґС‹РІР°РµС‚ Р·Р° СЂСѓРґРѕРєРѕРїР°РјРё, РѕСЂРіР°РЅРёР·СѓРµС‚ РґРѕР±С‹С‡Сѓ СЂСѓРґС‹.
 	
 };
 
@@ -93,7 +93,7 @@ INSTANCE Info_Mine_Grd_6_Minecrawler(C_INFO)
 	condition	= Info_Mine_Grd_6_Minecrawler_Condition;
 	information	= Info_Mine_Grd_6_Minecrawler_Info;
 	permanent	= 1;
-	description = "Расскажи мне о ползунах.";
+	description = "Р Р°СЃСЃРєР°Р¶Рё РјРЅРµ Рѕ РїРѕР»Р·СѓРЅР°С….";
 };                       
 
 FUNC INT Info_Mine_Grd_6_Minecrawler_Condition()
@@ -106,8 +106,8 @@ FUNC INT Info_Mine_Grd_6_Minecrawler_Condition()
 
 FUNC VOID Info_Mine_Grd_6_Minecrawler_Info()
 {
-	AI_Output(other,self,"Info_Mine_Grd_6_Minecrawler_15_00"); //Кто такие ползуны?
-	AI_Output(self,other,"Info_Mine_Grd_6_Minecrawler_06_01"); //От этих тварей одни неприятности. Даже не знаю, от кого больше головной боли - от ползунов или от рудокопов.
+	AI_Output(other,self,"Info_Mine_Grd_6_Minecrawler_15_00"); //РљС‚Рѕ С‚Р°РєРёРµ РїРѕР»Р·СѓРЅС‹?
+	AI_Output(self,other,"Info_Mine_Grd_6_Minecrawler_06_01"); //РћС‚ СЌС‚РёС… С‚РІР°СЂРµР№ РѕРґРЅРё РЅРµРїСЂРёСЏС‚РЅРѕСЃС‚Рё. Р”Р°Р¶Рµ РЅРµ Р·РЅР°СЋ, РѕС‚ РєРѕРіРѕ Р±РѕР»СЊС€Рµ РіРѕР»РѕРІРЅРѕР№ Р±РѕР»Рё - РѕС‚ РїРѕР»Р·СѓРЅРѕРІ РёР»Рё РѕС‚ СЂСѓРґРѕРєРѕРїРѕРІ.
 	
 };	
 
@@ -121,7 +121,7 @@ INSTANCE Info_Mine_Grd_6_DieLage(C_INFO) // E1
 	condition	= Info_Mine_Grd_6_DieLage_Condition;
 	information	= Info_Mine_Grd_6_DieLage_Info;
 	permanent	= 1;
-	description = "Как дела?";
+	description = "РљР°Рє РґРµР»Р°?";
 };                       
 
 FUNC INT Info_Mine_Grd_6_DieLage_Condition()
@@ -134,8 +134,8 @@ FUNC INT Info_Mine_Grd_6_DieLage_Condition()
 
 FUNC VOID Info_Mine_Grd_6_DieLage_Info()
 {
-	AI_Output(other,self,"Info_Mine_Grd_6_DieLage_15_00"); //Как жизнь?
- 	AI_Output(self,other,"Info_Mine_Grd_6_DieLage_06_01"); //Ну, а ты как думаешь?
+	AI_Output(other,self,"Info_Mine_Grd_6_DieLage_15_00"); //РљР°Рє Р¶РёР·РЅСЊ?
+ 	AI_Output(self,other,"Info_Mine_Grd_6_DieLage_06_01"); //РќСѓ, Р° С‚С‹ РєР°Рє РґСѓРјР°РµС€СЊ?
 };
 	
 // *************************************************************************

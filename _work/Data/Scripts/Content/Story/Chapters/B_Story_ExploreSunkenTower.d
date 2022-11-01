@@ -2,14 +2,14 @@
 // Dort findet er die eine Teleportationsrune in das Alte Lager hinein.
 func void B_Story_ExploreSunkenTower ()
 {
-	//-------- Schlьssel fьr versunkenen Turm --------
+	//-------- SchlСЊssel fСЊr versunkenen Turm --------
 	CreateInvItem		(hero,	ItKe_SunkenTower);
 
-	//-------- Tagebucheintrдge --------
-	B_LogEntry			(CH5_Uriziel,"Пока Ксардас занят изготовлением магической формулы, которая восстановит силу УРИЗЕЛЯ, я проникну в затопленную башню некромантов и постараюсь найти артефакты для боя против Спящего.");
+	//-------- TagebucheintrРґge --------
+	B_LogEntry			(CH5_Uriziel,"РџРѕРєР° РљСЃР°СЂРґР°СЃ Р·Р°РЅСЏС‚ РёР·РіРѕС‚РѕРІР»РµРЅРёРµРј РјР°РіРёС‡РµСЃРєРѕР№ С„РѕСЂРјСѓР»С‹, РєРѕС‚РѕСЂР°СЏ РІРѕСЃСЃС‚Р°РЅРѕРІРёС‚ СЃРёР»Сѓ РЈР РР—Р•Р›РЇ, СЏ РїСЂРѕРЅРёРєРЅСѓ РІ Р·Р°С‚РѕРїР»РµРЅРЅСѓСЋ Р±Р°С€РЅСЋ РЅРµРєСЂРѕРјР°РЅС‚РѕРІ Рё РїРѕСЃС‚Р°СЂР°СЋСЃСЊ РЅР°Р№С‚Рё Р°СЂС‚РµС„Р°РєС‚С‹ РґР»СЏ Р±РѕСЏ РїСЂРѕС‚РёРІ РЎРїСЏС‰РµРіРѕ.");
 
 	// ************************************************	
-	// Neue TAs fьr NPCs des inneren Ringes
+	// Neue TAs fСЊr NPCs des inneren Ringes
 	// ************************************************		
 	var C_NPC Bartholo	; Bartholo 	= Hlp_GetNpc (EBR_106_Bartholo	);
 	var C_NPC Skip		; Skip 		= Hlp_GetNpc (GRD_211_Skip		);
@@ -46,26 +46,26 @@ func void B_Story_ExploreSunkenTower ()
 	Npc_ExchangeRoutine		(Grd_239	,"OT"); 
 	Npc_ExchangeRoutine		(Grd_245	,"OT"); 
 
-	// Gilden Дnderung, damit SC nicht angegriffen wird
+	// Gilden Р”nderung, damit SC nicht angegriffen wird
 	Stone.guild 	= GIL_NONE;		Npc_SetTrueGuild	(Stone, 	GIL_NONE);	
 	Skip.guild 		= GIL_NONE;		Npc_SetTrueGuild	(Skip, 		GIL_NONE);	
 	Bullit.guild 	= GIL_NONE;		Npc_SetTrueGuild	(Bullit,	GIL_NONE);	
 	Bartholo.guild 	= GIL_NONE;		Npc_SetTrueGuild	(Bartholo,	GIL_NONE);	
 	Gomez.guild 	= GIL_NONE;		Npc_SetTrueGuild	(Gomez, 	GIL_NONE);	
 	
-	// Attitьde Дnderung
+	// AttitСЊde Р”nderung
 	Npc_SetPermAttitude	(Stone,		ATT_NEUTRAL);	Npc_SetTempAttitude	(Stone,		ATT_NEUTRAL);
 	Npc_SetPermAttitude	(Skip,		ATT_NEUTRAL);	Npc_SetTempAttitude	(Skip,		ATT_NEUTRAL); 	         	
 	Npc_SetPermAttitude	(Bullit,	ATT_NEUTRAL);	Npc_SetTempAttitude	(Bullit,	ATT_NEUTRAL); 	         	
 	Npc_SetPermAttitude	(Bartholo,	ATT_NEUTRAL);	Npc_SetTempAttitude	(Bartholo,	ATT_NEUTRAL); 	         	
 	Npc_SetPermAttitude	(Gomez,		ATT_NEUTRAL);	Npc_SetTempAttitude	(Gomez,		ATT_NEUTRAL); 	         	
 	 
-	//-------- Immortals lцschen --------
+	//-------- Immortals lС†schen --------
 	Thorus.flags	= 0;
 	Gomez.flags 	= 0;
 	Bartholo.flags = 0;
 	
-	// Schlьssel um die Tьr zum Kerker zu цffnen
+	// SchlСЊssel um die TСЊr zum Kerker zu С†ffnen
 	CreateInvItem ( Gomez, DungeonKey );
     
 	//-------- globale Variable --------

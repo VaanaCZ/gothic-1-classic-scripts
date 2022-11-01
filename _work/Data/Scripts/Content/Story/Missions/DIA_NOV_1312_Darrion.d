@@ -34,7 +34,7 @@ instance  DIA_Darrion_Hello (C_INFO)
 	condition	= DIA_Darrion_Hello_Condition;
 	information	= DIA_Darrion_Hello_Info;
 	permanent	= 0;
-	description	= "Привет! Я здесь новенький - расскажи мне о Лагере.";
+	description	= "РџСЂРёРІРµС‚! РЇ Р·РґРµСЃСЊ РЅРѕРІРµРЅСЊРєРёР№ - СЂР°СЃСЃРєР°Р¶Рё РјРЅРµ Рѕ Р›Р°РіРµСЂРµ.";
 };                       
 
 FUNC int  DIA_Darrion_Hello_Condition()
@@ -44,12 +44,12 @@ FUNC int  DIA_Darrion_Hello_Condition()
 
 FUNC VOID  DIA_Darrion_Hello_Info()
 {
-	AI_Output (other, self,"DIA_Darrion_Hello_15_00"); //Привет! Я здесь новенький, и мне нужно, чтобы кто-нибудь рассказал мне о Лагере.
-	AI_Output (self, other,"DIA_Darrion_Hello_11_01"); //Ты выбрал не самое удачное время. Стражи готовятся к бою, и мы работаем день и ночь.
-	AI_Output (self, other,"DIA_Darrion_Hello_11_02"); //У меня нет времени на болтовню. Так что не отвлекай меня - если, конечно, ты не хочешь что-нибудь купить.
+	AI_Output (other, self,"DIA_Darrion_Hello_15_00"); //РџСЂРёРІРµС‚! РЇ Р·РґРµСЃСЊ РЅРѕРІРµРЅСЊРєРёР№, Рё РјРЅРµ РЅСѓР¶РЅРѕ, С‡С‚РѕР±С‹ РєС‚Рѕ-РЅРёР±СѓРґСЊ СЂР°СЃСЃРєР°Р·Р°Р» РјРЅРµ Рѕ Р›Р°РіРµСЂРµ.
+	AI_Output (self, other,"DIA_Darrion_Hello_11_01"); //РўС‹ РІС‹Р±СЂР°Р» РЅРµ СЃР°РјРѕРµ СѓРґР°С‡РЅРѕРµ РІСЂРµРјСЏ. РЎС‚СЂР°Р¶Рё РіРѕС‚РѕРІСЏС‚СЃСЏ Рє Р±РѕСЋ, Рё РјС‹ СЂР°Р±РѕС‚Р°РµРј РґРµРЅСЊ Рё РЅРѕС‡СЊ.
+	AI_Output (self, other,"DIA_Darrion_Hello_11_02"); //РЈ РјРµРЅСЏ РЅРµС‚ РІСЂРµРјРµРЅРё РЅР° Р±РѕР»С‚РѕРІРЅСЋ. РўР°Рє С‡С‚Рѕ РЅРµ РѕС‚РІР»РµРєР°Р№ РјРµРЅСЏ - РµСЃР»Рё, РєРѕРЅРµС‡РЅРѕ, С‚С‹ РЅРµ С…РѕС‡РµС€СЊ С‡С‚Рѕ-РЅРёР±СѓРґСЊ РєСѓРїРёС‚СЊ.
 	
 	Log_CreateTopic	(GE_TraderPSI,	LOG_NOTE);
-	B_LogEntry		(GE_TraderPSI,"Новичок Даррион занимается оружием. Практически все время он сидит в кузнице.");
+	B_LogEntry		(GE_TraderPSI,"РќРѕРІРёС‡РѕРє Р”Р°СЂСЂРёРѕРЅ Р·Р°РЅРёРјР°РµС‚СЃСЏ РѕСЂСѓР¶РёРµРј. РџСЂР°РєС‚РёС‡РµСЃРєРё РІСЃРµ РІСЂРµРјСЏ РѕРЅ СЃРёРґРёС‚ РІ РєСѓР·РЅРёС†Рµ.");
 };
 
 // **************************************************
@@ -63,7 +63,7 @@ instance  DIA_Darrion_Trade (C_INFO)
 	condition	= DIA_Darrion_Trade_Condition;
 	information	= DIA_Darrion_Trade_Info;
 	permanent	= 1;
-	description	= "Покажи, что у тебя есть.";
+	description	= "РџРѕРєР°Р¶Рё, С‡С‚Рѕ Сѓ С‚РµР±СЏ РµСЃС‚СЊ.";
 	trade 		= 1;
 };                       
 
@@ -77,8 +77,8 @@ FUNC int  DIA_Darrion_Trade_Condition()
 
 FUNC VOID  DIA_Darrion_Trade_Info()
 {
-	AI_Output (other, self,"DIA_Darrion_Trade_15_00"); //Покажи, что у тебя есть.
-	AI_Output (self, other,"DIA_Darrion_Trade_11_01"); //Другое дело. Вот, здесь все, что есть у меня сегодня.
+	AI_Output (other, self,"DIA_Darrion_Trade_15_00"); //РџРѕРєР°Р¶Рё, С‡С‚Рѕ Сѓ С‚РµР±СЏ РµСЃС‚СЊ.
+	AI_Output (self, other,"DIA_Darrion_Trade_11_01"); //Р”СЂСѓРіРѕРµ РґРµР»Рѕ. Р’РѕС‚, Р·РґРµСЃСЊ РІСЃРµ, С‡С‚Рѕ РµСЃС‚СЊ Сѓ РјРµРЅСЏ СЃРµРіРѕРґРЅСЏ.
 
 	if	(Npc_HasItems(self,ItMiSwordRaw		) < 5)		{	CreateInvItems(self,ItMiSwordRaw,		5);	};
 	if	(Npc_HasItems(self,ItMiSwordRawHot	) < 5)		{	CreateInvItems(self,ItMiSwordRawHot,	5);	};

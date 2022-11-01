@@ -1,7 +1,7 @@
 instance GUR_1204_BaalNamib (Npc_Default)
 {
 	//-------- primary data --------
-	name 		=	"Идол Намиб";
+	name 		=	"РРґРѕР» РќР°РјРёР±";
 	Npctype 	=	NPCTYPE_MAIN;
 	guild 		=	GIL_GUR;
 	level 		=	29;

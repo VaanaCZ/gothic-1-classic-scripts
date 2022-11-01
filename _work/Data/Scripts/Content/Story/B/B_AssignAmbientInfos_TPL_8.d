@@ -14,7 +14,7 @@ INSTANCE Info_Tpl_8_EXIT(C_INFO)
 	condition	= Info_Tpl_8_EXIT_Condition;
 	information	= Info_Tpl_8_EXIT_Info;
 	permanent	= 1;
-	description = "ЗАКОНЧИТЬ";
+	description = "Р—РђРљРћРќР§РРўР¬";
 };                       
 
 FUNC INT Info_Tpl_8_EXIT_Condition()
@@ -37,7 +37,7 @@ INSTANCE Info_Tpl_8_EinerVonEuchWerden (C_INFO) // E1
 	condition	= Info_Tpl_8_EinerVonEuchWerden_Condition;
 	information	= Info_Tpl_8_EinerVonEuchWerden_Info;
 	permanent	= 1;
-	description = "Нужны ли вам верные люди?";
+	description = "РќСѓР¶РЅС‹ Р»Рё РІР°Рј РІРµСЂРЅС‹Рµ Р»СЋРґРё?";
 };                       
 
 FUNC INT Info_Tpl_8_EinerVonEuchWerden_Condition()
@@ -52,9 +52,9 @@ FUNC INT Info_Tpl_8_EinerVonEuchWerden_Condition()
 
 FUNC VOID Info_Tpl_8_EinerVonEuchWerden_Info()
 {
-	AI_Output(other,self,"Info_Tpl_8_EinerVonEuchWerden_15_00"); //Нужны ли вам верные люди?
-	AI_Output(self,other,"Info_Tpl_8_EinerVonEuchWerden_08_01"); //Верные люди нужны всегда. Но тебе придется серьезно поработать над собой. Только лучшие из лучших могут стать Стражами.
-	AI_Output(self,other,"Info_Tpl_8_EinerVonEuchWerden_08_02"); //Это высочайшая честь для любого последователя Братства Спящего.
+	AI_Output(other,self,"Info_Tpl_8_EinerVonEuchWerden_15_00"); //РќСѓР¶РЅС‹ Р»Рё РІР°Рј РІРµСЂРЅС‹Рµ Р»СЋРґРё?
+	AI_Output(self,other,"Info_Tpl_8_EinerVonEuchWerden_08_01"); //Р’РµСЂРЅС‹Рµ Р»СЋРґРё РЅСѓР¶РЅС‹ РІСЃРµРіРґР°. РќРѕ С‚РµР±Рµ РїСЂРёРґРµС‚СЃСЏ СЃРµСЂСЊРµР·РЅРѕ РїРѕСЂР°Р±РѕС‚Р°С‚СЊ РЅР°Рґ СЃРѕР±РѕР№. РўРѕР»СЊРєРѕ Р»СѓС‡С€РёРµ РёР· Р»СѓС‡С€РёС… РјРѕРіСѓС‚ СЃС‚Р°С‚СЊ РЎС‚СЂР°Р¶Р°РјРё.
+	AI_Output(self,other,"Info_Tpl_8_EinerVonEuchWerden_08_02"); //Р­С‚Рѕ РІС‹СЃРѕС‡Р°Р№С€Р°СЏ С‡РµСЃС‚СЊ РґР»СЏ Р»СЋР±РѕРіРѕ РїРѕСЃР»РµРґРѕРІР°С‚РµР»СЏ Р‘СЂР°С‚СЃС‚РІР° РЎРїСЏС‰РµРіРѕ.
 };
 
 // *************************************************************************
@@ -67,7 +67,7 @@ INSTANCE Info_Tpl_8_WichtigePersonen(C_INFO)
 	condition	= Info_Tpl_8_WichtigePersonen_Condition;
 	information	= Info_Tpl_8_WichtigePersonen_Info;
 	permanent	= 1;
-	description = "Кто здесь командует?";
+	description = "РљС‚Рѕ Р·РґРµСЃСЊ РєРѕРјР°РЅРґСѓРµС‚?";
 };                       
 
 FUNC INT Info_Tpl_8_WichtigePersonen_Condition()
@@ -77,10 +77,10 @@ FUNC INT Info_Tpl_8_WichtigePersonen_Condition()
 
 FUNC VOID Info_Tpl_8_WichtigePersonen_Info()
 {
-	AI_Output(other,self,"Info_Tpl_8_WichtigePersonen_15_00"); //Кто здесь командует?
-	AI_Output(self,other,"Info_Tpl_8_WichtigePersonen_08_01"); //Мы подчиняемся Гуру. Служить им - наш почетный долг.
-	AI_Output(other,self,"Info_Tpl_8_WichtigePersonen_15_02"); //Кто они, эти Гуру?
-	AI_Output(self,other,"Info_Tpl_8_WichtigePersonen_08_03"); //Главный Гуру - Ю`Берион Просвещенный. Ему помогают Кор Галом, Кор Ангар и остальные.
+	AI_Output(other,self,"Info_Tpl_8_WichtigePersonen_15_00"); //РљС‚Рѕ Р·РґРµСЃСЊ РєРѕРјР°РЅРґСѓРµС‚?
+	AI_Output(self,other,"Info_Tpl_8_WichtigePersonen_08_01"); //РњС‹ РїРѕРґС‡РёРЅСЏРµРјСЃСЏ Р“СѓСЂСѓ. РЎР»СѓР¶РёС‚СЊ РёРј - РЅР°С€ РїРѕС‡РµС‚РЅС‹Р№ РґРѕР»Рі.
+	AI_Output(other,self,"Info_Tpl_8_WichtigePersonen_15_02"); //РљС‚Рѕ РѕРЅРё, СЌС‚Рё Р“СѓСЂСѓ?
+	AI_Output(self,other,"Info_Tpl_8_WichtigePersonen_08_03"); //Р“Р»Р°РІРЅС‹Р№ Р“СѓСЂСѓ - Р®`Р‘РµСЂРёРѕРЅ РџСЂРѕСЃРІРµС‰РµРЅРЅС‹Р№. Р•РјСѓ РїРѕРјРѕРіР°СЋС‚ РљРѕСЂ Р“Р°Р»РѕРј, РљРѕСЂ РђРЅРіР°СЂ Рё РѕСЃС‚Р°Р»СЊРЅС‹Рµ.
 	var C_NPC YBerion;		YBerion	= Hlp_GetNpc(Gur_1200_Yberion);
 	var C_NPC CorKalom;		CorKalom= Hlp_GetNpc(Gur_1201_CorKalom);
 	var C_NPC CorAngar;		CorAngar= Hlp_GetNpc(Gur_1202_CorAngar);
@@ -99,7 +99,7 @@ INSTANCE Info_Tpl_8_DasLager(C_INFO)
 	condition	= Info_Tpl_8_DasLager_Condition;
 	information	= Info_Tpl_8_DasLager_Info;
 	permanent	= 1;
-	description = "Расскажи мне об этом Лагере.";
+	description = "Р Р°СЃСЃРєР°Р¶Рё РјРЅРµ РѕР± СЌС‚РѕРј Р›Р°РіРµСЂРµ.";
 };                       
 
 FUNC INT Info_Tpl_8_DasLager_Condition()
@@ -112,9 +112,9 @@ FUNC INT Info_Tpl_8_DasLager_Condition()
 
 FUNC VOID Info_Tpl_8_DasLager_Info()
 {
-	AI_Output(other,self,"Info_Tpl_8_DasLager_15_00"); //Расскажи мне об этом Лагере.
-	AI_Output(self,other,"Info_Tpl_8_DasLager_08_01"); //Ты новичок и можешь ходить где тебе вздумается. Для неверующих закрыт лишь храм Спящего.
-	AI_Output(self,other,"Info_Tpl_8_DasLager_08_02"); //Постарайся не нарушать эти правила. И не беспокой наших наставников во время медитации.
+	AI_Output(other,self,"Info_Tpl_8_DasLager_15_00"); //Р Р°СЃСЃРєР°Р¶Рё РјРЅРµ РѕР± СЌС‚РѕРј Р›Р°РіРµСЂРµ.
+	AI_Output(self,other,"Info_Tpl_8_DasLager_08_01"); //РўС‹ РЅРѕРІРёС‡РѕРє Рё РјРѕР¶РµС€СЊ С…РѕРґРёС‚СЊ РіРґРµ С‚РµР±Рµ РІР·РґСѓРјР°РµС‚СЃСЏ. Р”Р»СЏ РЅРµРІРµСЂСѓСЋС‰РёС… Р·Р°РєСЂС‹С‚ Р»РёС€СЊ С…СЂР°Рј РЎРїСЏС‰РµРіРѕ.
+	AI_Output(self,other,"Info_Tpl_8_DasLager_08_02"); //РџРѕСЃС‚Р°СЂР°Р№СЃСЏ РЅРµ РЅР°СЂСѓС€Р°С‚СЊ СЌС‚Рё РїСЂР°РІРёР»Р°. Р РЅРµ Р±РµСЃРїРѕРєРѕР№ РЅР°С€РёС… РЅР°СЃС‚Р°РІРЅРёРєРѕРІ РІРѕ РІСЂРµРјСЏ РјРµРґРёС‚Р°С†РёРё.
 };
 
 // *************************************************************************
@@ -127,7 +127,7 @@ INSTANCE Info_Tpl_8_DieLage(C_INFO) // E1
 	condition	= Info_Tpl_8_DieLage_Condition;
 	information	= Info_Tpl_8_DieLage_Info;
 	permanent	= 1;
-	description = "Как идут дела?";
+	description = "РљР°Рє РёРґСѓС‚ РґРµР»Р°?";
 };                       
 
 FUNC INT Info_Tpl_8_DieLage_Condition()
@@ -140,8 +140,8 @@ FUNC INT Info_Tpl_8_DieLage_Condition()
 
 FUNC VOID Info_Tpl_8_DieLage_Info()
 {
-	AI_Output(other,self,"Info_Tpl_8_DieLage_15_00"); //Как жизнь?
-	AI_Output(self,other,"Info_Tpl_8_DieLage_08_01"); //Предупреждаю тебя: я не потерплю неуважения. Ты разговариваешь с одним из избранных стражей пророков.
+	AI_Output(other,self,"Info_Tpl_8_DieLage_15_00"); //РљР°Рє Р¶РёР·РЅСЊ?
+	AI_Output(self,other,"Info_Tpl_8_DieLage_08_01"); //РџСЂРµРґСѓРїСЂРµР¶РґР°СЋ С‚РµР±СЏ: СЏ РЅРµ РїРѕС‚РµСЂРїР»СЋ РЅРµСѓРІР°Р¶РµРЅРёСЏ. РўС‹ СЂР°Р·РіРѕРІР°СЂРёРІР°РµС€СЊ СЃ РѕРґРЅРёРј РёР· РёР·Р±СЂР°РЅРЅС‹С… СЃС‚СЂР°Р¶РµР№ РїСЂРѕСЂРѕРєРѕРІ.
 };
 	
 // *************************************************************************

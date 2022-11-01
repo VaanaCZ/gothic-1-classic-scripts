@@ -2,7 +2,7 @@ instance KDF_400_Rodriguez (Npc_Default)
 {
 	//-------- primary data --------
 	
-	name 		=	"Родригез";
+	name 		=	"Р РѕРґСЂРёРіРµР·";
 	npctype		=	npctype_main;
 	guild 		=	GIL_KDF;      
 	level 		=	25;

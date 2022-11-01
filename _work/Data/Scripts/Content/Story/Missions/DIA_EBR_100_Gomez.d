@@ -33,7 +33,7 @@ instance DIA_Gomez_Fault (C_INFO)
 	condition	= DIA_Gomez_Fault_Condition;
 	information	= DIA_Gomez_Fault_Info;
 	permanent	= 0;
-	description	= "Я пришел, чтобы предложить свои услуги.";
+	description	= "РЇ РїСЂРёС€РµР», С‡С‚РѕР±С‹ РїСЂРµРґР»РѕР¶РёС‚СЊ СЃРІРѕРё СѓСЃР»СѓРіРё.";
 };                       
 
 FUNC int DIA_Gomez_Fault_Condition()
@@ -46,8 +46,8 @@ FUNC int DIA_Gomez_Fault_Condition()
 
 FUNC VOID DIA_Gomez_Fault_Info()
 {
-	AI_Output (other, self,"DIA_Gomez_Fault_15_00"); //Я пришел, чтобы предложить свои услуги.
-	AI_Output (self, other,"DIA_Gomez_Fault_11_01"); //Ты ворвался сюда и надеешься, что я буду слушать тебя, червяк?! СТРАЖА!
+	AI_Output (other, self,"DIA_Gomez_Fault_15_00"); //РЇ РїСЂРёС€РµР», С‡С‚РѕР±С‹ РїСЂРµРґР»РѕР¶РёС‚СЊ СЃРІРѕРё СѓСЃР»СѓРіРё.
+	AI_Output (self, other,"DIA_Gomez_Fault_11_01"); //РўС‹ РІРѕСЂРІР°Р»СЃСЏ СЃСЋРґР° Рё РЅР°РґРµРµС€СЊСЃСЏ, С‡С‚Рѕ СЏ Р±СѓРґСѓ СЃР»СѓС€Р°С‚СЊ С‚РµР±СЏ, С‡РµСЂРІСЏРє?! РЎРўР РђР–Рђ!
 	
 	AI_StopProcessInfos	(self);
 	Npc_SetPermAttitude	(self, ATT_HOSTILE);
@@ -69,7 +69,7 @@ instance DIA_Gomez_Hello (C_INFO)
 	condition	= DIA_Gomez_Hello_Condition;
 	information	= DIA_Gomez_Hello_Info;
 	permanent	= 1;
-	description	= "Я пришел, чтобы предложить свои услуги.";
+	description	= "РЇ РїСЂРёС€РµР», С‡С‚РѕР±С‹ РїСЂРµРґР»РѕР¶РёС‚СЊ СЃРІРѕРё СѓСЃР»СѓРіРё.";
 };                       
 
 FUNC int DIA_Gomez_Hello_Condition()
@@ -82,52 +82,52 @@ FUNC int DIA_Gomez_Hello_Condition()
 
 FUNC VOID DIA_Gomez_Hello_Info()
 {
-	AI_Output (other, self,"DIA_Gomez_Hello_15_00"); //Я пришел, чтобы предложить свои услуги.
-	AI_Output (self, other,"DIA_Gomez_Hello_11_01"); //А почему ты думаешь, что твои услуги нужны мне?
+	AI_Output (other, self,"DIA_Gomez_Hello_15_00"); //РЇ РїСЂРёС€РµР», С‡С‚РѕР±С‹ РїСЂРµРґР»РѕР¶РёС‚СЊ СЃРІРѕРё СѓСЃР»СѓРіРё.
+	AI_Output (self, other,"DIA_Gomez_Hello_11_01"); //Рђ РїРѕС‡РµРјСѓ С‚С‹ РґСѓРјР°РµС€СЊ, С‡С‚Рѕ С‚РІРѕРё СѓСЃР»СѓРіРё РЅСѓР¶РЅС‹ РјРЅРµ?
 	
 	Info_ClearChoices	(DIA_Gomez_Hello);																			
-	Info_AddChoice		(DIA_Gomez_Hello,"Надеюсь, мне не понадобится отрывать тебе голову.",DIA_Gomez_Hello_KopfAb);
-	Info_AddChoice		(DIA_Gomez_Hello,"Кругом одни болваны.",DIA_Gomez_Hello_Spinner);
-	Info_AddChoice		(DIA_Gomez_Hello,"У меня есть связи во всех Лагерях.",DIA_Gomez_Hello_Kontakte);
-	Info_AddChoice		(DIA_Gomez_Hello,"Я прошел испытание.",DIA_Gomez_Hello_ThorusSays);
+	Info_AddChoice		(DIA_Gomez_Hello,"РќР°РґРµСЋСЃСЊ, РјРЅРµ РЅРµ РїРѕРЅР°РґРѕР±РёС‚СЃСЏ РѕС‚СЂС‹РІР°С‚СЊ С‚РµР±Рµ РіРѕР»РѕРІСѓ.",DIA_Gomez_Hello_KopfAb);
+	Info_AddChoice		(DIA_Gomez_Hello,"РљСЂСѓРіРѕРј РѕРґРЅРё Р±РѕР»РІР°РЅС‹.",DIA_Gomez_Hello_Spinner);
+	Info_AddChoice		(DIA_Gomez_Hello,"РЈ РјРµРЅСЏ РµСЃС‚СЊ СЃРІСЏР·Рё РІРѕ РІСЃРµС… Р›Р°РіРµСЂСЏС….",DIA_Gomez_Hello_Kontakte);
+	Info_AddChoice		(DIA_Gomez_Hello,"РЇ РїСЂРѕС€РµР» РёСЃРїС‹С‚Р°РЅРёРµ.",DIA_Gomez_Hello_ThorusSays);
 	
 };
 
 func void DIA_Gomez_Hello_ThorusSays()
 {
-	AI_Output (other, self,"DIA_Gomez_Hello_ThorusSays_15_00"); //Я прошел испытание на преданность, и Торус сказал, что я достоин этого.
-	AI_Output (self, other,"DIA_Gomez_Hello_ThorusSays_11_01"); //Если бы это было не так, ты не прошел бы сюда живым. Но хочется верить, что ты способен на большее.
+	AI_Output (other, self,"DIA_Gomez_Hello_ThorusSays_15_00"); //РЇ РїСЂРѕС€РµР» РёСЃРїС‹С‚Р°РЅРёРµ РЅР° РїСЂРµРґР°РЅРЅРѕСЃС‚СЊ, Рё РўРѕСЂСѓСЃ СЃРєР°Р·Р°Р», С‡С‚Рѕ СЏ РґРѕСЃС‚РѕРёРЅ СЌС‚РѕРіРѕ.
+	AI_Output (self, other,"DIA_Gomez_Hello_ThorusSays_11_01"); //Р•СЃР»Рё Р±С‹ СЌС‚Рѕ Р±С‹Р»Рѕ РЅРµ С‚Р°Рє, С‚С‹ РЅРµ РїСЂРѕС€РµР» Р±С‹ СЃСЋРґР° Р¶РёРІС‹Рј. РќРѕ С…РѕС‡РµС‚СЃСЏ РІРµСЂРёС‚СЊ, С‡С‚Рѕ С‚С‹ СЃРїРѕСЃРѕР±РµРЅ РЅР° Р±РѕР»СЊС€РµРµ.
 };
 
 func void DIA_Gomez_Hello_Kontakte()
 {
 	gomez_kontakte = 0;
-	AI_Output (other, self,"DIA_Gomez_Hello_Kontakte_15_00"); //Я много путешествовал по колонии, и у меня есть связи во всех Лагерях.
-	AI_Output (self, other,"DIA_Gomez_Hello_Kontakte_11_01"); //Это может оказаться полезным. С кем, говоришь, ты знаком?
+	AI_Output (other, self,"DIA_Gomez_Hello_Kontakte_15_00"); //РЇ РјРЅРѕРіРѕ РїСѓС‚РµС€РµСЃС‚РІРѕРІР°Р» РїРѕ РєРѕР»РѕРЅРёРё, Рё Сѓ РјРµРЅСЏ РµСЃС‚СЊ СЃРІСЏР·Рё РІРѕ РІСЃРµС… Р›Р°РіРµСЂСЏС….
+	AI_Output (self, other,"DIA_Gomez_Hello_Kontakte_11_01"); //Р­С‚Рѕ РјРѕР¶РµС‚ РѕРєР°Р·Р°С‚СЊСЃСЏ РїРѕР»РµР·РЅС‹Рј. РЎ РєРµРј, РіРѕРІРѕСЂРёС€СЊ, С‚С‹ Р·РЅР°РєРѕРј?
 	Info_ClearChoices	(DIA_Gomez_Hello);
-	Info_AddChoice		(DIA_Gomez_Hello,"Это были самые влиятельные люди.",DIA_Gomez_Hello_Kontakte_ThatsAll);
-	Info_AddChoice		(DIA_Gomez_Hello,"Несколько фехтовальщиков в Новом Лагере.",DIA_Gomez_Hello_Kontakte_NLHehler);
-	Info_AddChoice		(DIA_Gomez_Hello,"К Ларсу.",DIA_Gomez_Hello_Kontakte_Lares);
+	Info_AddChoice		(DIA_Gomez_Hello,"Р­С‚Рѕ Р±С‹Р»Рё СЃР°РјС‹Рµ РІР»РёСЏС‚РµР»СЊРЅС‹Рµ Р»СЋРґРё.",DIA_Gomez_Hello_Kontakte_ThatsAll);
+	Info_AddChoice		(DIA_Gomez_Hello,"РќРµСЃРєРѕР»СЊРєРѕ С„РµС…С‚РѕРІР°Р»СЊС‰РёРєРѕРІ РІ РќРѕРІРѕРј Р›Р°РіРµСЂРµ.",DIA_Gomez_Hello_Kontakte_NLHehler);
+	Info_AddChoice		(DIA_Gomez_Hello,"Рљ Р›Р°СЂСЃСѓ.",DIA_Gomez_Hello_Kontakte_Lares);
 	//Info_AddChoice		(DIA_Gomez_Hello,"Zu Lee."	,DIA_Gomez_Hello_Kontakte_Lee);
-	Info_AddChoice		(DIA_Gomez_Hello,"Несколько Идолов в Лагере Братства.",DIA_Gomez_Hello_Kontakte_Baals);
-	Info_AddChoice		(DIA_Gomez_Hello,"Кор Галом.",DIA_Gomez_Hello_Kontakte_Kalom);
+	Info_AddChoice		(DIA_Gomez_Hello,"РќРµСЃРєРѕР»СЊРєРѕ РРґРѕР»РѕРІ РІ Р›Р°РіРµСЂРµ Р‘СЂР°С‚СЃС‚РІР°.",DIA_Gomez_Hello_Kontakte_Baals);
+	Info_AddChoice		(DIA_Gomez_Hello,"РљРѕСЂ Р“Р°Р»РѕРј.",DIA_Gomez_Hello_Kontakte_Kalom);
 	
 	if (gomez_kontakte < 3)
 	{
-	Info_AddChoice		(DIA_Gomez_Hello,"Ю`Берион.",DIA_Gomez_Hello_Kontakte_YBerion);
+	Info_AddChoice		(DIA_Gomez_Hello,"Р®`Р‘РµСЂРёРѕРЅ.",DIA_Gomez_Hello_Kontakte_YBerion);
 	};
 };
 
 func void DIA_Gomez_Hello_Spinner()
 {
-	AI_Output (other, self,"DIA_Gomez_Hello_Spinner_15_00"); //Кругом одни болваны, которые только и делают, что пытаются переложить свою работу на плечи новичков, вместо того чтобы выполнять ее самим.
-	AI_Output (self, other,"DIA_Gomez_Hello_Spinner_11_01"); //За небольшим исключением, это действительно так. Но я все равно не вижу причины нанимать еще одного болвана.
+	AI_Output (other, self,"DIA_Gomez_Hello_Spinner_15_00"); //РљСЂСѓРіРѕРј РѕРґРЅРё Р±РѕР»РІР°РЅС‹, РєРѕС‚РѕСЂС‹Рµ С‚РѕР»СЊРєРѕ Рё РґРµР»Р°СЋС‚, С‡С‚Рѕ РїС‹С‚Р°СЋС‚СЃСЏ РїРµСЂРµР»РѕР¶РёС‚СЊ СЃРІРѕСЋ СЂР°Р±РѕС‚Сѓ РЅР° РїР»РµС‡Рё РЅРѕРІРёС‡РєРѕРІ, РІРјРµСЃС‚Рѕ С‚РѕРіРѕ С‡С‚РѕР±С‹ РІС‹РїРѕР»РЅСЏС‚СЊ РµРµ СЃР°РјРёРј.
+	AI_Output (self, other,"DIA_Gomez_Hello_Spinner_11_01"); //Р—Р° РЅРµР±РѕР»СЊС€РёРј РёСЃРєР»СЋС‡РµРЅРёРµРј, СЌС‚Рѕ РґРµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ С‚Р°Рє. РќРѕ СЏ РІСЃРµ СЂР°РІРЅРѕ РЅРµ РІРёР¶Сѓ РїСЂРёС‡РёРЅС‹ РЅР°РЅРёРјР°С‚СЊ РµС‰Рµ РѕРґРЅРѕРіРѕ Р±РѕР»РІР°РЅР°.
 };
 
 func void DIA_Gomez_Hello_KopfAb()
 {
-	AI_Output (other, self,"DIA_Gomez_Hello_KopfAb_15_00"); //Надеюсь, мне не придется отрубать вам голову, чтобы доказать, что я хорошо владею оружием.
-	AI_Output (self, other,"DIA_Gomez_Hello_KopfAb_11_01"); //Фраза, достойная храбреца... или безумца.
+	AI_Output (other, self,"DIA_Gomez_Hello_KopfAb_15_00"); //РќР°РґРµСЋСЃСЊ, РјРЅРµ РЅРµ РїСЂРёРґРµС‚СЃСЏ РѕС‚СЂСѓР±Р°С‚СЊ РІР°Рј РіРѕР»РѕРІСѓ, С‡С‚РѕР±С‹ РґРѕРєР°Р·Р°С‚СЊ, С‡С‚Рѕ СЏ С…РѕСЂРѕС€Рѕ РІР»Р°РґРµСЋ РѕСЂСѓР¶РёРµРј.
+	AI_Output (self, other,"DIA_Gomez_Hello_KopfAb_11_01"); //Р¤СЂР°Р·Р°, РґРѕСЃС‚РѕР№РЅР°СЏ С…СЂР°Р±СЂРµС†Р°... РёР»Рё Р±РµР·СѓРјС†Р°.
 	
 	AI_StopProcessInfos	(self);
 	Npc_SetPermAttitude	(self, ATT_HOSTILE);
@@ -140,11 +140,11 @@ func void DIA_Gomez_Hello_KopfAb()
 
 func void DIA_Gomez_Hello_Kontakte_YBerion()
 {
-	AI_Output (other, self,"DIA_Gomez_Hello_Kontakte_YBerion_15_00"); //Ю`Берион.
-	AI_Output (self, other,"DIA_Gomez_Hello_Kontakte_YBerion_11_01"); //Ю`Берион не станет тратить время на типов вроде тебя.
-	AI_Output (self, other,"DIA_Gomez_Hello_Kontakte_YBerion_11_02"); //Ты солгал мне. Похоже, ты думаешь, что я идиот.
-	AI_Output (self, other,"DIA_Gomez_Hello_Kontakte_YBerion_11_03"); //Я очень огорчен тем, что ты считаешь меня глупцом.
-	AI_Output (self, other,"DIA_Gomez_Hello_Kontakte_YBerion_11_04"); //И знаешь что? Я ненавижу огорчаться.
+	AI_Output (other, self,"DIA_Gomez_Hello_Kontakte_YBerion_15_00"); //Р®`Р‘РµСЂРёРѕРЅ.
+	AI_Output (self, other,"DIA_Gomez_Hello_Kontakte_YBerion_11_01"); //Р®`Р‘РµСЂРёРѕРЅ РЅРµ СЃС‚Р°РЅРµС‚ С‚СЂР°С‚РёС‚СЊ РІСЂРµРјСЏ РЅР° С‚РёРїРѕРІ РІСЂРѕРґРµ С‚РµР±СЏ.
+	AI_Output (self, other,"DIA_Gomez_Hello_Kontakte_YBerion_11_02"); //РўС‹ СЃРѕР»РіР°Р» РјРЅРµ. РџРѕС…РѕР¶Рµ, С‚С‹ РґСѓРјР°РµС€СЊ, С‡С‚Рѕ СЏ РёРґРёРѕС‚.
+	AI_Output (self, other,"DIA_Gomez_Hello_Kontakte_YBerion_11_03"); //РЇ РѕС‡РµРЅСЊ РѕРіРѕСЂС‡РµРЅ С‚РµРј, С‡С‚Рѕ С‚С‹ СЃС‡РёС‚Р°РµС€СЊ РјРµРЅСЏ РіР»СѓРїС†РѕРј.
+	AI_Output (self, other,"DIA_Gomez_Hello_Kontakte_YBerion_11_04"); //Р Р·РЅР°РµС€СЊ С‡С‚Рѕ? РЇ РЅРµРЅР°РІРёР¶Сѓ РѕРіРѕСЂС‡Р°С‚СЊСЃСЏ.
 	AI_StopProcessInfos	(self);
 	Npc_SetPermAttitude	(self, ATT_HOSTILE);
 	Npc_SetTarget (self,other);
@@ -153,15 +153,15 @@ func void DIA_Gomez_Hello_Kontakte_YBerion()
 
 func void DIA_Gomez_Hello_Kontakte_Kalom()
 {
-	AI_Output (other, self,"DIA_Gomez_Hello_Kontakte_Kalom_15_00"); //Кор Галом.
-	AI_Output (self, other,"DIA_Gomez_Hello_Kontakte_Kalom_11_01"); //И?
+	AI_Output (other, self,"DIA_Gomez_Hello_Kontakte_Kalom_15_00"); //РљРѕСЂ Р“Р°Р»РѕРј.
+	AI_Output (self, other,"DIA_Gomez_Hello_Kontakte_Kalom_11_01"); //Р?
 	gomez_kontakte = gomez_kontakte + 1;
 };
 
 func void DIA_Gomez_Hello_Kontakte_Baals()
 {
-	AI_Output (other, self,"DIA_Gomez_Hello_Kontakte_Baals_15_00"); //Несколько Идолов в Лагере Братства.
-	AI_Output (self, other,"DIA_Gomez_Hello_Kontakte_Baals_11_01"); //И?
+	AI_Output (other, self,"DIA_Gomez_Hello_Kontakte_Baals_15_00"); //РќРµСЃРєРѕР»СЊРєРѕ РРґРѕР»РѕРІ РІ Р›Р°РіРµСЂРµ Р‘СЂР°С‚СЃС‚РІР°.
+	AI_Output (self, other,"DIA_Gomez_Hello_Kontakte_Baals_11_01"); //Р?
 	gomez_kontakte = gomez_kontakte + 1;
 };
 
@@ -170,7 +170,7 @@ func void DIA_Gomez_Hello_Kontakte_Lee()
 {
 	AI_Output (other, self,"DIA_Gomez_Hello_Kontakte_Lee_15_00"); //Zu Lee.
 	AI_Output (self, other,"DIA_Gomez_Hello_Kontakte_Lee_11_01"); //Lee ist also ein guter Freund von dir, ja?
-	AI_Output (self, other,"DIA_Gomez_Hello_Kontakte_Lee_11_02"); //Dann sieht die Sache natьrlich ANDERS AUS (zornig am ENDE)
+	AI_Output (self, other,"DIA_Gomez_Hello_Kontakte_Lee_11_02"); //Dann sieht die Sache natСЊrlich ANDERS AUS (zornig am ENDE)
 
 	AI_StopProcessInfos	(self);
 	Npc_SetPermAttitude	(self, ATT_HOSTILE);
@@ -180,30 +180,30 @@ func void DIA_Gomez_Hello_Kontakte_Lee()
 */
 func void DIA_Gomez_Hello_Kontakte_Lares()
 {
-	AI_Output (other, self,"DIA_Gomez_Hello_Kontakte_Lares_15_00"); //Ларс.
-	AI_Output (self, other,"DIA_Gomez_Hello_Kontakte_Lares_11_01"); //И еще?
+	AI_Output (other, self,"DIA_Gomez_Hello_Kontakte_Lares_15_00"); //Р›Р°СЂСЃ.
+	AI_Output (self, other,"DIA_Gomez_Hello_Kontakte_Lares_11_01"); //Р РµС‰Рµ?
 	gomez_kontakte = gomez_kontakte + 1;
 };
 
 func void DIA_Gomez_Hello_Kontakte_NLHehler()
 {
-	AI_Output (other, self,"DIA_Gomez_Hello_Kontakte_NLHehler_15_00"); //Несколько фехтовальщиков в Новом Лагере.
-	AI_Output (self, other,"DIA_Gomez_Hello_Kontakte_NLHehler_11_01"); //Еще.
+	AI_Output (other, self,"DIA_Gomez_Hello_Kontakte_NLHehler_15_00"); //РќРµСЃРєРѕР»СЊРєРѕ С„РµС…С‚РѕРІР°Р»СЊС‰РёРєРѕРІ РІ РќРѕРІРѕРј Р›Р°РіРµСЂРµ.
+	AI_Output (self, other,"DIA_Gomez_Hello_Kontakte_NLHehler_11_01"); //Р•С‰Рµ.
 	gomez_kontakte = gomez_kontakte + 1;
 };
 
 func void DIA_Gomez_Hello_Kontakte_ThatsAll()
 {
-	AI_Output (other, self,"DIA_Gomez_Hello_Kontakte_ThatsAll_15_00"); //Это были самые влиятельные люди.
+	AI_Output (other, self,"DIA_Gomez_Hello_Kontakte_ThatsAll_15_00"); //Р­С‚Рѕ Р±С‹Р»Рё СЃР°РјС‹Рµ РІР»РёСЏС‚РµР»СЊРЅС‹Рµ Р»СЋРґРё.
 	if (gomez_kontakte >= 4)	
 	{
-		AI_Output (self, other,"DIA_Gomez_Hello_Kontakte_ThatsAll_11_01"); //Не так уж плохо для новичка...
-		AI_Output (self, other,"DIA_Gomez_Hello_Kontakte_ThatsAll_11_02"); //У тебя будет шанс.
+		AI_Output (self, other,"DIA_Gomez_Hello_Kontakte_ThatsAll_11_01"); //РќРµ С‚Р°Рє СѓР¶ РїР»РѕС…Рѕ РґР»СЏ РЅРѕРІРёС‡РєР°...
+		AI_Output (self, other,"DIA_Gomez_Hello_Kontakte_ThatsAll_11_02"); //РЈ С‚РµР±СЏ Р±СѓРґРµС‚ С€Р°РЅСЃ.
 		Info_ClearChoices	(DIA_Gomez_Hello);
 	}
 	else
 	{
-		AI_Output (self, other,"DIA_Gomez_Hello_Kontakte_ThatsAll_INSUFF_11_00"); //Ты надеешься удивить меня ЭТИМ? У нас есть РУДОКОПЫ с лучшими связями!
+		AI_Output (self, other,"DIA_Gomez_Hello_Kontakte_ThatsAll_INSUFF_11_00"); //РўС‹ РЅР°РґРµРµС€СЊСЃСЏ СѓРґРёРІРёС‚СЊ РјРµРЅСЏ Р­РўРРњ? РЈ РЅР°СЃ РµСЃС‚СЊ Р РЈР”РћРљРћРџР« СЃ Р»СѓС‡С€РёРјРё СЃРІСЏР·СЏРјРё!
 		Info_ClearChoices	(DIA_Gomez_Hello);
 	};
 };
@@ -219,7 +219,7 @@ instance DIA_Gomez_Dabei (C_INFO)
 	condition	= DIA_Gomez_Dabei_Condition;
 	information	= DIA_Gomez_Dabei_Info;
 	permanent	= 0;
-	description	= "Так что же - я в деле?";
+	description	= "РўР°Рє С‡С‚Рѕ Р¶Рµ - СЏ РІ РґРµР»Рµ?";
 };                       
 
 FUNC int DIA_Gomez_Dabei_Condition()
@@ -233,24 +233,24 @@ FUNC int DIA_Gomez_Dabei_Condition()
 
 FUNC VOID DIA_Gomez_Dabei_Info()
 {
-	AI_Output (other, self,"DIA_Gomez_Dabei_15_00"); //Так что же - я в деле?
-	AI_Output (self, other,"DIA_Gomez_Dabei_11_01"); //Точно так. Теперь ты один из нас, малыш.
-	AI_Output (self, other,"DIA_Gomez_Dabei_11_02"); //Равен введет тебя в курс дела.
+	AI_Output (other, self,"DIA_Gomez_Dabei_15_00"); //РўР°Рє С‡С‚Рѕ Р¶Рµ - СЏ РІ РґРµР»Рµ?
+	AI_Output (self, other,"DIA_Gomez_Dabei_11_01"); //РўРѕС‡РЅРѕ С‚Р°Рє. РўРµРїРµСЂСЊ С‚С‹ РѕРґРёРЅ РёР· РЅР°СЃ, РјР°Р»С‹С€.
+	AI_Output (self, other,"DIA_Gomez_Dabei_11_02"); //Р Р°РІРµРЅ РІРІРµРґРµС‚ С‚РµР±СЏ РІ РєСѓСЂСЃ РґРµР»Р°.
 	
 	Npc_SetTrueGuild (hero,GIL_STT );
 	hero.guild = GIL_STT;
 	B_GiveXP (XP_BecomeShadow);
-	B_LogEntry			(CH1_JoinOC,"С сегодняшнего дня я работаю на Гомеза и Старый Лагерь. Детали мне расскажет Равен.");
+	B_LogEntry			(CH1_JoinOC,"РЎ СЃРµРіРѕРґРЅСЏС€РЅРµРіРѕ РґРЅСЏ СЏ СЂР°Р±РѕС‚Р°СЋ РЅР° Р“РѕРјРµР·Р° Рё РЎС‚Р°СЂС‹Р№ Р›Р°РіРµСЂСЊ. Р”РµС‚Р°Р»Рё РјРЅРµ СЂР°СЃСЃРєР°Р¶РµС‚ Р Р°РІРµРЅ.");
 	Log_SetTopicStatus	(CH1_JoinOC,	LOG_SUCCESS);
 
 	// Canceln der anderen Aufnahmen
 	Log_CreateTopic		(CH1_JoinNC,	LOG_MISSION);
 	Log_SetTopicStatus	(CH1_JoinNC,	LOG_FAILED);
-	B_LogEntry			(CH1_JoinNC,"Поскольку я принадлежу к людям Гомеза, банда Ларса теперь не для меня!");
+	B_LogEntry			(CH1_JoinNC,"РџРѕСЃРєРѕР»СЊРєСѓ СЏ РїСЂРёРЅР°РґР»РµР¶Сѓ Рє Р»СЋРґСЏРј Р“РѕРјРµР·Р°, Р±Р°РЅРґР° Р›Р°СЂСЃР° С‚РµРїРµСЂСЊ РЅРµ РґР»СЏ РјРµРЅСЏ!");
 	
 	Log_CreateTopic		(CH1_JoinPsi,	LOG_MISSION);
 	Log_SetTopicStatus	(CH1_JoinPsi,	LOG_FAILED);
-	B_LogEntry			(CH1_JoinPsi,"С сегодняшнего дня Старый Лагерь становится моим домом. Братству придется как-то обходиться без меня.");
+	B_LogEntry			(CH1_JoinPsi,"РЎ СЃРµРіРѕРґРЅСЏС€РЅРµРіРѕ РґРЅСЏ РЎС‚Р°СЂС‹Р№ Р›Р°РіРµСЂСЊ СЃС‚Р°РЅРѕРІРёС‚СЃСЏ РјРѕРёРј РґРѕРјРѕРј. Р‘СЂР°С‚СЃС‚РІСѓ РїСЂРёРґРµС‚СЃСЏ РєР°Рє-С‚Рѕ РѕР±С…РѕРґРёС‚СЊСЃСЏ Р±РµР· РјРµРЅСЏ.");
 	
 	AI_StopProcessInfos	(self);
 };
@@ -266,7 +266,7 @@ instance DIA_Gomez_NurSo (C_INFO)
 	condition	= DIA_Gomez_NurSo_Condition;
 	information	= DIA_Gomez_NurSo_Info;
 	permanent	= 1;
-	description	= "Я подумал, мне стоит доложить о прибытии. ";
+	description	= "РЇ РїРѕРґСѓРјР°Р», РјРЅРµ СЃС‚РѕРёС‚ РґРѕР»РѕР¶РёС‚СЊ Рѕ РїСЂРёР±С‹С‚РёРё. ";
 };                       
 
 FUNC int DIA_Gomez_NurSo_Condition()
@@ -279,8 +279,8 @@ FUNC int DIA_Gomez_NurSo_Condition()
 
 FUNC VOID DIA_Gomez_NurSo_Info()
 {
-	AI_Output (other, self,"DIA_Gomez_NurSo_15_00"); //Я хотел доложить о прибытии. 
-	AI_Output (self, other,"DIA_Gomez_NurSo_11_00"); //Доложи Равену. Никогда не обращайся ко мне без разрешения!
+	AI_Output (other, self,"DIA_Gomez_NurSo_15_00"); //РЇ С…РѕС‚РµР» РґРѕР»РѕР¶РёС‚СЊ Рѕ РїСЂРёР±С‹С‚РёРё. 
+	AI_Output (self, other,"DIA_Gomez_NurSo_11_00"); //Р”РѕР»РѕР¶Рё Р Р°РІРµРЅСѓ. РќРёРєРѕРіРґР° РЅРµ РѕР±СЂР°С‰Р°Р№СЃСЏ РєРѕ РјРЅРµ Р±РµР· СЂР°Р·СЂРµС€РµРЅРёСЏ!
 };
 
 
@@ -313,11 +313,11 @@ FUNC int  DIA_EBR_100_Gomez_Wait4SC_Condition()
 };
 FUNC void  DIA_EBR_100_Gomez_Wait4SC_Info()
 {
-	AI_Output (self, other,"DIA_EBR_100_Gomez_Wait4SC_11_01"); //Как ты сюда попал?
-	AI_Output (self, other,"DIA_EBR_100_Gomez_Wait4SC_11_02"); //Подожди-ка! Уж не ты ли сражался с моими людьми в Свободной Шахте?
-	AI_Output (other, self,"DIA_EBR_100_Gomez_Wait4SC_15_03"); //Твоим людям не стоило вторгаться туда. Я просто излечил их от мании величия.
-	AI_Output (self, other,"DIA_EBR_100_Gomez_Wait4SC_11_04"); //Разговаривать таким тоном со мной, ГОМЕЗОМ, - это смелый поступок. Но с твоей стороны все равно было большой глупостью появляться здесь.
-	AI_Output (self, other,"DIA_EBR_100_Gomez_Wait4SC_11_05"); //Я лично позабочусь о том, чтобы больше наши пути не пересекались.
+	AI_Output (self, other,"DIA_EBR_100_Gomez_Wait4SC_11_01"); //РљР°Рє С‚С‹ СЃСЋРґР° РїРѕРїР°Р»?
+	AI_Output (self, other,"DIA_EBR_100_Gomez_Wait4SC_11_02"); //РџРѕРґРѕР¶РґРё-РєР°! РЈР¶ РЅРµ С‚С‹ Р»Рё СЃСЂР°Р¶Р°Р»СЃСЏ СЃ РјРѕРёРјРё Р»СЋРґСЊРјРё РІ РЎРІРѕР±РѕРґРЅРѕР№ РЁР°С…С‚Рµ?
+	AI_Output (other, self,"DIA_EBR_100_Gomez_Wait4SC_15_03"); //РўРІРѕРёРј Р»СЋРґСЏРј РЅРµ СЃС‚РѕРёР»Рѕ РІС‚РѕСЂРіР°С‚СЊСЃСЏ С‚СѓРґР°. РЇ РїСЂРѕСЃС‚Рѕ РёР·Р»РµС‡РёР» РёС… РѕС‚ РјР°РЅРёРё РІРµР»РёС‡РёСЏ.
+	AI_Output (self, other,"DIA_EBR_100_Gomez_Wait4SC_11_04"); //Р Р°Р·РіРѕРІР°СЂРёРІР°С‚СЊ С‚Р°РєРёРј С‚РѕРЅРѕРј СЃРѕ РјРЅРѕР№, Р“РћРњР•Р—РћРњ, - СЌС‚Рѕ СЃРјРµР»С‹Р№ РїРѕСЃС‚СѓРїРѕРє. РќРѕ СЃ С‚РІРѕРµР№ СЃС‚РѕСЂРѕРЅС‹ РІСЃРµ СЂР°РІРЅРѕ Р±С‹Р»Рѕ Р±РѕР»СЊС€РѕР№ РіР»СѓРїРѕСЃС‚СЊСЋ РїРѕСЏРІР»СЏС‚СЊСЃСЏ Р·РґРµСЃСЊ.
+	AI_Output (self, other,"DIA_EBR_100_Gomez_Wait4SC_11_05"); //РЇ Р»РёС‡РЅРѕ РїРѕР·Р°Р±РѕС‡СѓСЃСЊ Рѕ С‚РѕРј, С‡С‚РѕР±С‹ Р±РѕР»СЊС€Рµ РЅР°С€Рё РїСѓС‚Рё РЅРµ РїРµСЂРµСЃРµРєР°Р»РёСЃСЊ.
 	
 	AI_StopProcessInfos	( self );
 

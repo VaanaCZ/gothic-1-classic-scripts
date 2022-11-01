@@ -25,10 +25,10 @@ FUNC INT Info_Diego_Gamestart_Condition()
 
 FUNC VOID Info_Diego_Gamestart_Info()
 {
-	AI_Output(self,hero,"Info_Diego_Gamestart_11_00"); //Меня зовут Диего.
-	AI_Output(hero,self,"Info_Diego_Gamestart_15_01"); //Я...
-	AI_Output(self,hero,"Info_Diego_Gamestart_11_02"); //Я не хочу знать, кто ты такой. Ты только что появился здесь. Я присматриваю за новичками. Это все.
-	AI_Output(self,hero,"Info_Diego_Gamestart_11_03"); //Если ты хочешь пожить еще немного, тебе придется поговорить со мной. Но конечно, я не собираюсь мешать тебе покончить с собой. Так что ты думаешь?
+	AI_Output(self,hero,"Info_Diego_Gamestart_11_00"); //РњРµРЅСЏ Р·РѕРІСѓС‚ Р”РёРµРіРѕ.
+	AI_Output(hero,self,"Info_Diego_Gamestart_15_01"); //РЇ...
+	AI_Output(self,hero,"Info_Diego_Gamestart_11_02"); //РЇ РЅРµ С…РѕС‡Сѓ Р·РЅР°С‚СЊ, РєС‚Рѕ С‚С‹ С‚Р°РєРѕР№. РўС‹ С‚РѕР»СЊРєРѕ С‡С‚Рѕ РїРѕСЏРІРёР»СЃСЏ Р·РґРµСЃСЊ. РЇ РїСЂРёСЃРјР°С‚СЂРёРІР°СЋ Р·Р° РЅРѕРІРёС‡РєР°РјРё. Р­С‚Рѕ РІСЃРµ.
+	AI_Output(self,hero,"Info_Diego_Gamestart_11_03"); //Р•СЃР»Рё С‚С‹ С…РѕС‡РµС€СЊ РїРѕР¶РёС‚СЊ РµС‰Рµ РЅРµРјРЅРѕРіРѕ, С‚РµР±Рµ РїСЂРёРґРµС‚СЃСЏ РїРѕРіРѕРІРѕСЂРёС‚СЊ СЃРѕ РјРЅРѕР№. РќРѕ РєРѕРЅРµС‡РЅРѕ, СЏ РЅРµ СЃРѕР±РёСЂР°СЋСЃСЊ РјРµС€Р°С‚СЊ С‚РµР±Рµ РїРѕРєРѕРЅС‡РёС‚СЊ СЃ СЃРѕР±РѕР№. РўР°Рє С‡С‚Рѕ С‚С‹ РґСѓРјР°РµС€СЊ?
 	
 	B_Kapitelwechsel(1); //WICHTIG!!!
 };
@@ -54,15 +54,15 @@ FUNC INT Info_Diego_EXIT_Gamestart_Condition()
 
 FUNC VOID Info_Diego_EXIT_Gamestart_Info()
 {
-	AI_Output(hero,self,"Info_Diego_EXIT_Gamestart_15_00"); //Я благодарю тебя за помощь.
+	AI_Output(hero,self,"Info_Diego_EXIT_Gamestart_15_00"); //РЇ Р±Р»Р°РіРѕРґР°СЂСЋ С‚РµР±СЏ Р·Р° РїРѕРјРѕС‰СЊ.
 	
 	if (!Npc_KnowsInfo (hero, Info_Diego_Kolonie)) 
 	{
-		AI_Output(self,hero,"Info_Diego_EXIT_Gamestart_11_01"); //Это твое решение. Рад был познакомиться.
+		AI_Output(self,hero,"Info_Diego_EXIT_Gamestart_11_01"); //Р­С‚Рѕ С‚РІРѕРµ СЂРµС€РµРЅРёРµ. Р Р°Рґ Р±С‹Р» РїРѕР·РЅР°РєРѕРјРёС‚СЊСЃСЏ.
 	}
 	else
 	{
-		AI_Output(self,hero,"Info_Diego_EXIT_Gamestart_11_02"); //Мы встретимся в Старом Лагере.
+		AI_Output(self,hero,"Info_Diego_EXIT_Gamestart_11_02"); //РњС‹ РІСЃС‚СЂРµС‚РёРјСЃСЏ РІ РЎС‚Р°СЂРѕРј Р›Р°РіРµСЂРµ.
 	};
 
 	AI_StopProcessInfos	(self);
@@ -98,11 +98,11 @@ FUNC VOID Info_Diego_EXIT_Later_Info()
 {	
 	if (self.aivar[AIV_PARTYMEMBER])
 	{
-		AI_Output 	(self, hero,"Info_Diego_EXIT_11_01"); //Идем.
+		AI_Output 	(self, hero,"Info_Diego_EXIT_11_01"); //РРґРµРј.
 	}
 	else
 	{
-	 	AI_Output	(hero,self,"Info_Diego_EXIT_15_00"); //Береги себя.
+	 	AI_Output	(hero,self,"Info_Diego_EXIT_15_00"); //Р‘РµСЂРµРіРё СЃРµР±СЏ.
 	};
 	
 	AI_StopProcessInfos	(self);
@@ -119,7 +119,7 @@ INSTANCE Info_Diego_Brief (C_INFO) // E1
 	condition	= Info_Diego_Brief_Condition;
 	information	= Info_Diego_Brief_Info;
 	permanent	= 0;
-	description = "У меня есть письмо Верховному Магу Круга Огня.";
+	description = "РЈ РјРµРЅСЏ РµСЃС‚СЊ РїРёСЃСЊРјРѕ Р’РµСЂС…РѕРІРЅРѕРјСѓ РњР°РіСѓ РљСЂСѓРіР° РћРіРЅСЏ.";
 };                       
 
 FUNC INT Info_Diego_Brief_Condition()
@@ -132,14 +132,14 @@ FUNC INT Info_Diego_Brief_Condition()
 
 FUNC VOID Info_Diego_Brief_Info()
 {
-	AI_Output(hero,self,"Info_Diego_Brief_15_00"); //У меня есть письмо Верховному Магу Круга Огня.
-	AI_Output(self,hero,"Info_Diego_Brief_11_01"); //Правда...?
-	AI_Output(hero,self,"Info_Diego_Brief_15_02"); //Его отдал мне какой-то маг, перед тем как стражники сбросили меня со скалы.
-	AI_Output(self,hero,"Info_Diego_Brief_11_03"); //Тебе повезло, что больше я не могу показываться на глаза магам. Любой другой с радостью перерезал бы тебе глотку за это письмо.
-	AI_Output(self,hero,"Info_Diego_Brief_11_04"); //Маги хорошо платят своим гонцам, а большинство людей здесь не имеет за душой и гроша.
-	AI_Output(self,hero,"Info_Diego_Brief_11_05"); //На твоем месте я бы держал рот на замке до тех пор, пока не встретил бы кого-нибудь из магов. Правда, тебе на это не стоит надеяться.
-	AI_Output(hero,self,"Info_Diego_Brief_15_06");	//Почему?
-	AI_Output(self,hero,"Info_Diego_Brief_11_07"); //Маги живут в Старом Лагере, но только людям Гомеза дозволено входить в их замок.
+	AI_Output(hero,self,"Info_Diego_Brief_15_00"); //РЈ РјРµРЅСЏ РµСЃС‚СЊ РїРёСЃСЊРјРѕ Р’РµСЂС…РѕРІРЅРѕРјСѓ РњР°РіСѓ РљСЂСѓРіР° РћРіРЅСЏ.
+	AI_Output(self,hero,"Info_Diego_Brief_11_01"); //РџСЂР°РІРґР°...?
+	AI_Output(hero,self,"Info_Diego_Brief_15_02"); //Р•РіРѕ РѕС‚РґР°Р» РјРЅРµ РєР°РєРѕР№-С‚Рѕ РјР°Рі, РїРµСЂРµРґ С‚РµРј РєР°Рє СЃС‚СЂР°Р¶РЅРёРєРё СЃР±СЂРѕСЃРёР»Рё РјРµРЅСЏ СЃРѕ СЃРєР°Р»С‹.
+	AI_Output(self,hero,"Info_Diego_Brief_11_03"); //РўРµР±Рµ РїРѕРІРµР·Р»Рѕ, С‡С‚Рѕ Р±РѕР»СЊС€Рµ СЏ РЅРµ РјРѕРіСѓ РїРѕРєР°Р·С‹РІР°С‚СЊСЃСЏ РЅР° РіР»Р°Р·Р° РјР°РіР°Рј. Р›СЋР±РѕР№ РґСЂСѓРіРѕР№ СЃ СЂР°РґРѕСЃС‚СЊСЋ РїРµСЂРµСЂРµР·Р°Р» Р±С‹ С‚РµР±Рµ РіР»РѕС‚РєСѓ Р·Р° СЌС‚Рѕ РїРёСЃСЊРјРѕ.
+	AI_Output(self,hero,"Info_Diego_Brief_11_04"); //РњР°РіРё С…РѕСЂРѕС€Рѕ РїР»Р°С‚СЏС‚ СЃРІРѕРёРј РіРѕРЅС†Р°Рј, Р° Р±РѕР»СЊС€РёРЅСЃС‚РІРѕ Р»СЋРґРµР№ Р·РґРµСЃСЊ РЅРµ РёРјРµРµС‚ Р·Р° РґСѓС€РѕР№ Рё РіСЂРѕС€Р°.
+	AI_Output(self,hero,"Info_Diego_Brief_11_05"); //РќР° С‚РІРѕРµРј РјРµСЃС‚Рµ СЏ Р±С‹ РґРµСЂР¶Р°Р» СЂРѕС‚ РЅР° Р·Р°РјРєРµ РґРѕ С‚РµС… РїРѕСЂ, РїРѕРєР° РЅРµ РІСЃС‚СЂРµС‚РёР» Р±С‹ РєРѕРіРѕ-РЅРёР±СѓРґСЊ РёР· РјР°РіРѕРІ. РџСЂР°РІРґР°, С‚РµР±Рµ РЅР° СЌС‚Рѕ РЅРµ СЃС‚РѕРёС‚ РЅР°РґРµСЏС‚СЊСЃСЏ.
+	AI_Output(hero,self,"Info_Diego_Brief_15_06");	//РџРѕС‡РµРјСѓ?
+	AI_Output(self,hero,"Info_Diego_Brief_11_07"); //РњР°РіРё Р¶РёРІСѓС‚ РІ РЎС‚Р°СЂРѕРј Р›Р°РіРµСЂРµ, РЅРѕ С‚РѕР»СЊРєРѕ Р»СЋРґСЏРј Р“РѕРјРµР·Р° РґРѕР·РІРѕР»РµРЅРѕ РІС…РѕРґРёС‚СЊ РІ РёС… Р·Р°РјРѕРє.
 };
 
 // **********************************************************
@@ -153,7 +153,7 @@ INSTANCE Info_Diego_WarumGeholfen (C_INFO) // E1
 	condition	= Info_Diego_WarumGeholfen_Condition;
 	information	= Info_Diego_WarumGeholfen_Info;
 	permanent	= 0;
-	description = "Почему ты помогаешь мне?";
+	description = "РџРѕС‡РµРјСѓ С‚С‹ РїРѕРјРѕРіР°РµС€СЊ РјРЅРµ?";
 };                       
 
 FUNC INT Info_Diego_WarumGeholfen_Condition()
@@ -167,13 +167,13 @@ FUNC INT Info_Diego_WarumGeholfen_Condition()
 
 FUNC VOID Info_Diego_WarumGeholfen_Info()
 {
-	AI_Output(hero,self,"Info_Diego_WarumGeholfen_15_00"); //Почему ты помогаешь мне?
-	AI_Output(self,hero,"Info_Diego_WarumGeholfen_11_01"); //Потому что тебе нужна была моя помощь. Буллит со своими парнями мог запросто убить тебя.
-	AI_Output(self,hero,"Info_Diego_WarumGeholfen_11_02"); //А я не мог просто стоять в стороне и смотреть. Я проделал этот долгий путь для того, чтобы сделать тебе одно предложение.
-	AI_Output(hero,self,"Info_Diego_WarumGeholfen_15_03"); //Предложение?
-	AI_Output(self,hero,"Info_Diego_WarumGeholfen_11_04"); //Да. Я думаю, после знакомства с шайкой Буллита ты понял, что тебе нужна защита.
-	AI_Output(self,hero,"Info_Diego_WarumGeholfen_11_05"); //Каждый, кто попадает сюда, имеет выбор. В колонии есть три Лагеря, и ты должен будешь присоединиться к одному из них. 
-	AI_Output(self,hero,"Info_Diego_WarumGeholfen_11_06"); //Я здесь для того, чтобы показать новичкам, что Старый Лагерь - лучшее место для них.
+	AI_Output(hero,self,"Info_Diego_WarumGeholfen_15_00"); //РџРѕС‡РµРјСѓ С‚С‹ РїРѕРјРѕРіР°РµС€СЊ РјРЅРµ?
+	AI_Output(self,hero,"Info_Diego_WarumGeholfen_11_01"); //РџРѕС‚РѕРјСѓ С‡С‚Рѕ С‚РµР±Рµ РЅСѓР¶РЅР° Р±С‹Р»Р° РјРѕСЏ РїРѕРјРѕС‰СЊ. Р‘СѓР»Р»РёС‚ СЃРѕ СЃРІРѕРёРјРё РїР°СЂРЅСЏРјРё РјРѕРі Р·Р°РїСЂРѕСЃС‚Рѕ СѓР±РёС‚СЊ С‚РµР±СЏ.
+	AI_Output(self,hero,"Info_Diego_WarumGeholfen_11_02"); //Рђ СЏ РЅРµ РјРѕРі РїСЂРѕСЃС‚Рѕ СЃС‚РѕСЏС‚СЊ РІ СЃС‚РѕСЂРѕРЅРµ Рё СЃРјРѕС‚СЂРµС‚СЊ. РЇ РїСЂРѕРґРµР»Р°Р» СЌС‚РѕС‚ РґРѕР»РіРёР№ РїСѓС‚СЊ РґР»СЏ С‚РѕРіРѕ, С‡С‚РѕР±С‹ СЃРґРµР»Р°С‚СЊ С‚РµР±Рµ РѕРґРЅРѕ РїСЂРµРґР»РѕР¶РµРЅРёРµ.
+	AI_Output(hero,self,"Info_Diego_WarumGeholfen_15_03"); //РџСЂРµРґР»РѕР¶РµРЅРёРµ?
+	AI_Output(self,hero,"Info_Diego_WarumGeholfen_11_04"); //Р”Р°. РЇ РґСѓРјР°СЋ, РїРѕСЃР»Рµ Р·РЅР°РєРѕРјСЃС‚РІР° СЃ С€Р°Р№РєРѕР№ Р‘СѓР»Р»РёС‚Р° С‚С‹ РїРѕРЅСЏР», С‡С‚Рѕ С‚РµР±Рµ РЅСѓР¶РЅР° Р·Р°С‰РёС‚Р°.
+	AI_Output(self,hero,"Info_Diego_WarumGeholfen_11_05"); //РљР°Р¶РґС‹Р№, РєС‚Рѕ РїРѕРїР°РґР°РµС‚ СЃСЋРґР°, РёРјРµРµС‚ РІС‹Р±РѕСЂ. Р’ РєРѕР»РѕРЅРёРё РµСЃС‚СЊ С‚СЂРё Р›Р°РіРµСЂСЏ, Рё С‚С‹ РґРѕР»Р¶РµРЅ Р±СѓРґРµС€СЊ РїСЂРёСЃРѕРµРґРёРЅРёС‚СЊСЃСЏ Рє РѕРґРЅРѕРјСѓ РёР· РЅРёС…. 
+	AI_Output(self,hero,"Info_Diego_WarumGeholfen_11_06"); //РЇ Р·РґРµСЃСЊ РґР»СЏ С‚РѕРіРѕ, С‡С‚РѕР±С‹ РїРѕРєР°Р·Р°С‚СЊ РЅРѕРІРёС‡РєР°Рј, С‡С‚Рѕ РЎС‚Р°СЂС‹Р№ Р›Р°РіРµСЂСЊ - Р»СѓС‡С€РµРµ РјРµСЃС‚Рѕ РґР»СЏ РЅРёС….
 };
 
 // -------------------------------------------------------------
@@ -185,7 +185,7 @@ INSTANCE Info_Diego_Bullit (C_INFO) // E2
 	condition	= Info_Diego_Bullit_Condition;
 	information	= Info_Diego_Bullit_Info;
 	permanent	= 0;
-	description = "А где сейчас Буллит?";
+	description = "Рђ РіРґРµ СЃРµР№С‡Р°СЃ Р‘СѓР»Р»РёС‚?";
 };                       
 
 FUNC INT Info_Diego_Bullit_Condition()
@@ -198,9 +198,9 @@ FUNC INT Info_Diego_Bullit_Condition()
 
 FUNC VOID Info_Diego_Bullit_Info()
 {
-	AI_Output(hero,self,"Info_Diego_Bullit_15_02"); //А где сейчас Буллит?
-	AI_Output(self,hero,"Info_Diego_Bullit_11_03"); //Вместе с остальными тащит припасы из внешнего мира в Лагерь. Ты встретишь его там.
-	AI_Output(self,hero,"Info_Diego_Bullit_11_04"); //Но если ты хочешь сразиться с ним, будь осторожен. Буллит - неплохой боец.
+	AI_Output(hero,self,"Info_Diego_Bullit_15_02"); //Рђ РіРґРµ СЃРµР№С‡Р°СЃ Р‘СѓР»Р»РёС‚?
+	AI_Output(self,hero,"Info_Diego_Bullit_11_03"); //Р’РјРµСЃС‚Рµ СЃ РѕСЃС‚Р°Р»СЊРЅС‹РјРё С‚Р°С‰РёС‚ РїСЂРёРїР°СЃС‹ РёР· РІРЅРµС€РЅРµРіРѕ РјРёСЂР° РІ Р›Р°РіРµСЂСЊ. РўС‹ РІСЃС‚СЂРµС‚РёС€СЊ РµРіРѕ С‚Р°Рј.
+	AI_Output(self,hero,"Info_Diego_Bullit_11_04"); //РќРѕ РµСЃР»Рё С‚С‹ С…РѕС‡РµС€СЊ СЃСЂР°Р·РёС‚СЊСЃСЏ СЃ РЅРёРј, Р±СѓРґСЊ РѕСЃС‚РѕСЂРѕР¶РµРЅ. Р‘СѓР»Р»РёС‚ - РЅРµРїР»РѕС…РѕР№ Р±РѕРµС†.
 };
 
 
@@ -215,7 +215,7 @@ INSTANCE Info_Diego_Kolonie (C_INFO)
 	condition	= Info_Diego_Kolonie_Condition;
 	information	= Info_Diego_Kolonie_Info;
 	permanent	= 0;
-	description = "Хорошо, что я должен узнать об этом месте?";
+	description = "РҐРѕСЂРѕС€Рѕ, С‡С‚Рѕ СЏ РґРѕР»Р¶РµРЅ СѓР·РЅР°С‚СЊ РѕР± СЌС‚РѕРј РјРµСЃС‚Рµ?";
 };                       
 
 FUNC INT Info_Diego_Kolonie_Condition()
@@ -228,10 +228,10 @@ FUNC INT Info_Diego_Kolonie_Condition()
 
 FUNC VOID Info_Diego_Kolonie_Info()
 {
-	AI_Output(hero,self,"Info_Diego_Kolonie_15_00"); //Хорошо, что я должен узнать об этом месте?
-	AI_Output(self,hero,"Info_Diego_Kolonie_11_01"); //Мы называем его колонией. Ты уже знаешь, что мы добываем руду для короля. 
-	AI_Output(self,hero,"Info_Diego_Kolonie_11_02"); //По крайней мере, в Старом Лагере...
-	AI_Output(self,hero,"Info_Diego_Kolonie_11_03"); //Внутри Барьера есть три Лагеря. Старый Лагерь - самый большой. Он был первым.
+	AI_Output(hero,self,"Info_Diego_Kolonie_15_00"); //РҐРѕСЂРѕС€Рѕ, С‡С‚Рѕ СЏ РґРѕР»Р¶РµРЅ СѓР·РЅР°С‚СЊ РѕР± СЌС‚РѕРј РјРµСЃС‚Рµ?
+	AI_Output(self,hero,"Info_Diego_Kolonie_11_01"); //РњС‹ РЅР°Р·С‹РІР°РµРј РµРіРѕ РєРѕР»РѕРЅРёРµР№. РўС‹ СѓР¶Рµ Р·РЅР°РµС€СЊ, С‡С‚Рѕ РјС‹ РґРѕР±С‹РІР°РµРј СЂСѓРґСѓ РґР»СЏ РєРѕСЂРѕР»СЏ. 
+	AI_Output(self,hero,"Info_Diego_Kolonie_11_02"); //РџРѕ РєСЂР°Р№РЅРµР№ РјРµСЂРµ, РІ РЎС‚Р°СЂРѕРј Р›Р°РіРµСЂРµ...
+	AI_Output(self,hero,"Info_Diego_Kolonie_11_03"); //Р’РЅСѓС‚СЂРё Р‘Р°СЂСЊРµСЂР° РµСЃС‚СЊ С‚СЂРё Р›Р°РіРµСЂСЏ. РЎС‚Р°СЂС‹Р№ Р›Р°РіРµСЂСЊ - СЃР°РјС‹Р№ Р±РѕР»СЊС€РѕР№. РћРЅ Р±С‹Р» РїРµСЂРІС‹Рј.
 };
 
 // -----------------------------------------------------------------------
@@ -243,7 +243,7 @@ INSTANCE Info_Diego_Barriere (C_INFO) // E2
 	condition	= Info_Diego_Barriere_Condition;
 	information	= Info_Diego_Barriere_Info;
 	permanent	= 0;
-	description = "Расскажи мне про Барьер.";
+	description = "Р Р°СЃСЃРєР°Р¶Рё РјРЅРµ РїСЂРѕ Р‘Р°СЂСЊРµСЂ.";
 };                       
 
 FUNC INT Info_Diego_Barriere_Condition()
@@ -256,12 +256,12 @@ FUNC INT Info_Diego_Barriere_Condition()
 
 FUNC VOID Info_Diego_Barriere_Info()
 {
-	AI_Output(hero,self,"Info_Diego_Barriere_15_00"); //Расскажи мне про Барьер.
-	AI_Output(self,hero,"Info_Diego_Barriere_11_01"); //Тут нечего рассказывать. Для людей он непроницаем.
-	AI_Output(hero,self,"Info_Diego_Barriere_15_02"); //И что будет, если я просто попробую уйти отсюда?
-	AI_Output(self,hero,"Info_Diego_Barriere_11_03"); //Последний, кто пытался выбраться наружу, очень быстро превратился в покойника. Эта чертова штуковина легко впускает тебя внутрь и держит тебя здесь до конца твоих дней.
-	AI_Output(hero,self,"Info_Diego_Barriere_15_04"); //Если есть способ выбраться наружу, я найду его.
-	AI_Output(self,hero,"Info_Diego_Barriere_11_05"); //Ты уже торопишься убраться отсюда, а? А ведь ты только что прибыл!
+	AI_Output(hero,self,"Info_Diego_Barriere_15_00"); //Р Р°СЃСЃРєР°Р¶Рё РјРЅРµ РїСЂРѕ Р‘Р°СЂСЊРµСЂ.
+	AI_Output(self,hero,"Info_Diego_Barriere_11_01"); //РўСѓС‚ РЅРµС‡РµРіРѕ СЂР°СЃСЃРєР°Р·С‹РІР°С‚СЊ. Р”Р»СЏ Р»СЋРґРµР№ РѕРЅ РЅРµРїСЂРѕРЅРёС†Р°РµРј.
+	AI_Output(hero,self,"Info_Diego_Barriere_15_02"); //Р С‡С‚Рѕ Р±СѓРґРµС‚, РµСЃР»Рё СЏ РїСЂРѕСЃС‚Рѕ РїРѕРїСЂРѕР±СѓСЋ СѓР№С‚Рё РѕС‚СЃСЋРґР°?
+	AI_Output(self,hero,"Info_Diego_Barriere_11_03"); //РџРѕСЃР»РµРґРЅРёР№, РєС‚Рѕ РїС‹С‚Р°Р»СЃСЏ РІС‹Р±СЂР°С‚СЊСЃСЏ РЅР°СЂСѓР¶Сѓ, РѕС‡РµРЅСЊ Р±С‹СЃС‚СЂРѕ РїСЂРµРІСЂР°С‚РёР»СЃСЏ РІ РїРѕРєРѕР№РЅРёРєР°. Р­С‚Р° С‡РµСЂС‚РѕРІР° С€С‚СѓРєРѕРІРёРЅР° Р»РµРіРєРѕ РІРїСѓСЃРєР°РµС‚ С‚РµР±СЏ РІРЅСѓС‚СЂСЊ Рё РґРµСЂР¶РёС‚ С‚РµР±СЏ Р·РґРµСЃСЊ РґРѕ РєРѕРЅС†Р° С‚РІРѕРёС… РґРЅРµР№.
+	AI_Output(hero,self,"Info_Diego_Barriere_15_04"); //Р•СЃР»Рё РµСЃС‚СЊ СЃРїРѕСЃРѕР± РІС‹Р±СЂР°С‚СЊСЃСЏ РЅР°СЂСѓР¶Сѓ, СЏ РЅР°Р№РґСѓ РµРіРѕ.
+	AI_Output(self,hero,"Info_Diego_Barriere_11_05"); //РўС‹ СѓР¶Рµ С‚РѕСЂРѕРїРёС€СЊСЃСЏ СѓР±СЂР°С‚СЊСЃСЏ РѕС‚СЃСЋРґР°, Р°? Рђ РІРµРґСЊ С‚С‹ С‚РѕР»СЊРєРѕ С‡С‚Рѕ РїСЂРёР±С‹Р»!
 };
 
 // -----------------------------------------------------------------------
@@ -273,7 +273,7 @@ INSTANCE Info_Diego_OtherCamps (C_INFO) // E2
 	condition	= Info_Diego_OtherCamps_Condition;
 	information	= Info_Diego_OtherCamps_Info;
 	permanent	= 0;
-	description = "А другие два Лагеря?";
+	description = "Рђ РґСЂСѓРіРёРµ РґРІР° Р›Р°РіРµСЂСЏ?";
 };                       
 
 FUNC INT Info_Diego_OtherCamps_Condition()
@@ -287,12 +287,12 @@ FUNC INT Info_Diego_OtherCamps_Condition()
 
 FUNC VOID Info_Diego_OtherCamps_Info()
 {
-	AI_Output(hero,self,"Info_Diego_OtherCamps_15_00"); //А другие два Лагеря?
-	AI_Output(self,hero,"Info_Diego_OtherCamps_11_01"); //Они разделились, пытаясь осуществить свои безумные планы побега.
-	AI_Output(self,hero,"Info_Diego_OtherCamps_11_02"); //Новый Лагерь находится в западной части колонии. Они думают, что смогут просто взорвать Барьер, если соберут достаточно много руды.
-	AI_Output(self,hero,"Info_Diego_OtherCamps_11_03"); //Есть еще секта безумцев на востоке. Они выстроили Лагерь посреди болота и молятся своему идолу, чтобы он освободил их.
-	AI_Output(self,hero,"Info_Diego_OtherCamps_11_04"); //Пока он им ничем не помог.
-	AI_Output(self,hero,"Info_Diego_OtherCamps_11_05"); //На твоем месте я бы не стал тратить время на этих сумасбродов.
+	AI_Output(hero,self,"Info_Diego_OtherCamps_15_00"); //Рђ РґСЂСѓРіРёРµ РґРІР° Р›Р°РіРµСЂСЏ?
+	AI_Output(self,hero,"Info_Diego_OtherCamps_11_01"); //РћРЅРё СЂР°Р·РґРµР»РёР»РёСЃСЊ, РїС‹С‚Р°СЏСЃСЊ РѕСЃСѓС‰РµСЃС‚РІРёС‚СЊ СЃРІРѕРё Р±РµР·СѓРјРЅС‹Рµ РїР»Р°РЅС‹ РїРѕР±РµРіР°.
+	AI_Output(self,hero,"Info_Diego_OtherCamps_11_02"); //РќРѕРІС‹Р№ Р›Р°РіРµСЂСЊ РЅР°С…РѕРґРёС‚СЃСЏ РІ Р·Р°РїР°РґРЅРѕР№ С‡Р°СЃС‚Рё РєРѕР»РѕРЅРёРё. РћРЅРё РґСѓРјР°СЋС‚, С‡С‚Рѕ СЃРјРѕРіСѓС‚ РїСЂРѕСЃС‚Рѕ РІР·РѕСЂРІР°С‚СЊ Р‘Р°СЂСЊРµСЂ, РµСЃР»Рё СЃРѕР±РµСЂСѓС‚ РґРѕСЃС‚Р°С‚РѕС‡РЅРѕ РјРЅРѕРіРѕ СЂСѓРґС‹.
+	AI_Output(self,hero,"Info_Diego_OtherCamps_11_03"); //Р•СЃС‚СЊ РµС‰Рµ СЃРµРєС‚Р° Р±РµР·СѓРјС†РµРІ РЅР° РІРѕСЃС‚РѕРєРµ. РћРЅРё РІС‹СЃС‚СЂРѕРёР»Рё Р›Р°РіРµСЂСЊ РїРѕСЃСЂРµРґРё Р±РѕР»РѕС‚Р° Рё РјРѕР»СЏС‚СЃСЏ СЃРІРѕРµРјСѓ РёРґРѕР»Сѓ, С‡С‚РѕР±С‹ РѕРЅ РѕСЃРІРѕР±РѕРґРёР» РёС….
+	AI_Output(self,hero,"Info_Diego_OtherCamps_11_04"); //РџРѕРєР° РѕРЅ РёРј РЅРёС‡РµРј РЅРµ РїРѕРјРѕРі.
+	AI_Output(self,hero,"Info_Diego_OtherCamps_11_05"); //РќР° С‚РІРѕРµРј РјРµСЃС‚Рµ СЏ Р±С‹ РЅРµ СЃС‚Р°Р» С‚СЂР°С‚РёС‚СЊ РІСЂРµРјСЏ РЅР° СЌС‚РёС… СЃСѓРјР°СЃР±СЂРѕРґРѕРІ.
 };
 
 // -----------------------------------------------------------------------
@@ -304,7 +304,7 @@ INSTANCE Info_Diego_OldCamp (C_INFO) // E2
 	condition	= Info_Diego_OldCamp_Condition;
 	information	= Info_Diego_OldCamp_Info;
 	permanent	= 0;
-	description = "Расскажи мне о Старом Лагере.";
+	description = "Р Р°СЃСЃРєР°Р¶Рё РјРЅРµ Рѕ РЎС‚Р°СЂРѕРј Р›Р°РіРµСЂРµ.";
 };                       
 
 FUNC INT Info_Diego_OldCamp_Condition()
@@ -317,14 +317,14 @@ FUNC INT Info_Diego_OldCamp_Condition()
 
 FUNC VOID Info_Diego_OldCamp_Info()
 {
-	AI_Output(hero,self,"Info_Diego_OldCamp_15_00"); //Расскажи мне о Старом Лагере.
-	AI_Output(self,hero,"Info_Diego_OldCamp_11_01"); //Это самый большой и сильный из трех Лагерей. Гомез и его люди контролируют Старый Лагерь - а значит и все поставки руды.
-	AI_Output(self,hero,"Info_Diego_OldCamp_11_02"); //Раз в месяц король присылает нам все, что мы ни попросим. Мы держим старика в кулаке, понятно?
-	AI_Output(self,hero,"Info_Diego_OldCamp_11_03"); //Он присылает нам вино, хлеб, мясо, оружие... все.
+	AI_Output(hero,self,"Info_Diego_OldCamp_15_00"); //Р Р°СЃСЃРєР°Р¶Рё РјРЅРµ Рѕ РЎС‚Р°СЂРѕРј Р›Р°РіРµСЂРµ.
+	AI_Output(self,hero,"Info_Diego_OldCamp_11_01"); //Р­С‚Рѕ СЃР°РјС‹Р№ Р±РѕР»СЊС€РѕР№ Рё СЃРёР»СЊРЅС‹Р№ РёР· С‚СЂРµС… Р›Р°РіРµСЂРµР№. Р“РѕРјРµР· Рё РµРіРѕ Р»СЋРґРё РєРѕРЅС‚СЂРѕР»РёСЂСѓСЋС‚ РЎС‚Р°СЂС‹Р№ Р›Р°РіРµСЂСЊ - Р° Р·РЅР°С‡РёС‚ Рё РІСЃРµ РїРѕСЃС‚Р°РІРєРё СЂСѓРґС‹.
+	AI_Output(self,hero,"Info_Diego_OldCamp_11_02"); //Р Р°Р· РІ РјРµСЃСЏС† РєРѕСЂРѕР»СЊ РїСЂРёСЃС‹Р»Р°РµС‚ РЅР°Рј РІСЃРµ, С‡С‚Рѕ РјС‹ РЅРё РїРѕРїСЂРѕСЃРёРј. РњС‹ РґРµСЂР¶РёРј СЃС‚Р°СЂРёРєР° РІ РєСѓР»Р°РєРµ, РїРѕРЅСЏС‚РЅРѕ?
+	AI_Output(self,hero,"Info_Diego_OldCamp_11_03"); //РћРЅ РїСЂРёСЃС‹Р»Р°РµС‚ РЅР°Рј РІРёРЅРѕ, С…Р»РµР±, РјСЏСЃРѕ, РѕСЂСѓР¶РёРµ... РІСЃРµ.
 	
 	if (Npc_GetTrueGuild (hero) == GIL_NONE)
 	{ 
-	AI_Output(self,hero,"Info_Diego_OldCamp_11_04"); //Ты тоже можешь рассчитывать на часть добычи. Все что тебе нужно - это присоединиться к людям Гомеза.
+	AI_Output(self,hero,"Info_Diego_OldCamp_11_04"); //РўС‹ С‚РѕР¶Рµ РјРѕР¶РµС€СЊ СЂР°СЃСЃС‡РёС‚С‹РІР°С‚СЊ РЅР° С‡Р°СЃС‚СЊ РґРѕР±С‹С‡Рё. Р’СЃРµ С‡С‚Рѕ С‚РµР±Рµ РЅСѓР¶РЅРѕ - СЌС‚Рѕ РїСЂРёСЃРѕРµРґРёРЅРёС‚СЊСЃСЏ Рє Р»СЋРґСЏРј Р“РѕРјРµР·Р°.
 	};
 };
 
@@ -339,7 +339,7 @@ INSTANCE Info_Diego_WhosGomez (C_INFO) // E2/E3
 	condition	= Info_Diego_WhosGomez_Condition;
 	information	= Info_Diego_WhosGomez_Info;
 	permanent	= 0;
-	description = "Кто такой Гомез?";
+	description = "РљС‚Рѕ С‚Р°РєРѕР№ Р“РѕРјРµР·?";
 };                       
 
 FUNC INT Info_Diego_WhosGomez_Condition()
@@ -352,8 +352,8 @@ FUNC INT Info_Diego_WhosGomez_Condition()
 
 FUNC VOID Info_Diego_WhosGomez_Info()
 {
-	AI_Output(hero,self,"Info_Diego_WhosGomez_15_00"); //Кто такой Гомез?
-	AI_Output(self,hero,"Info_Diego_WhosGomez_11_01"); //Гомез - самый влиятельный из Баронов. Он правит Старым Лагерем на правах самого сильного человека в колонии.
+	AI_Output(hero,self,"Info_Diego_WhosGomez_15_00"); //РљС‚Рѕ С‚Р°РєРѕР№ Р“РѕРјРµР·?
+	AI_Output(self,hero,"Info_Diego_WhosGomez_11_01"); //Р“РѕРјРµР· - СЃР°РјС‹Р№ РІР»РёСЏС‚РµР»СЊРЅС‹Р№ РёР· Р‘Р°СЂРѕРЅРѕРІ. РћРЅ РїСЂР°РІРёС‚ РЎС‚Р°СЂС‹Рј Р›Р°РіРµСЂРµРј РЅР° РїСЂР°РІР°С… СЃР°РјРѕРіРѕ СЃРёР»СЊРЅРѕРіРѕ С‡РµР»РѕРІРµРєР° РІ РєРѕР»РѕРЅРёРё.
 };	
 
 // ************************************************************
@@ -367,7 +367,7 @@ INSTANCE Info_Diego_JoinOldcamp (C_INFO) // E2/E3
 	condition	= Info_Diego_JoinOldcamp_Condition;
 	information	= Info_Diego_JoinOldcamp_Info;
 	permanent	= 0;
-	description = "Предположим, я хочу стать одним из его людей.";
+	description = "РџСЂРµРґРїРѕР»РѕР¶РёРј, СЏ С…РѕС‡Сѓ СЃС‚Р°С‚СЊ РѕРґРЅРёРј РёР· РµРіРѕ Р»СЋРґРµР№.";
 };                       
 
 FUNC INT Info_Diego_JoinOldcamp_Condition()
@@ -382,14 +382,14 @@ FUNC INT Info_Diego_JoinOldcamp_Condition()
 
 FUNC VOID Info_Diego_JoinOldcamp_Info()
 {
-	AI_Output(hero,self,"Info_Diego_JoinOldcamp_15_00"); //Предположим, я хочу стать одним из его людей. Что мне нужно делать?
-	AI_Output(self,hero,"Info_Diego_JoinOldcamp_11_01"); //Возле ворот замка ты найдешь человека по имени Торус. Скажи ему, что тебя послал Диего.
+	AI_Output(hero,self,"Info_Diego_JoinOldcamp_15_00"); //РџСЂРµРґРїРѕР»РѕР¶РёРј, СЏ С…РѕС‡Сѓ СЃС‚Р°С‚СЊ РѕРґРЅРёРј РёР· РµРіРѕ Р»СЋРґРµР№. Р§С‚Рѕ РјРЅРµ РЅСѓР¶РЅРѕ РґРµР»Р°С‚СЊ?
+	AI_Output(self,hero,"Info_Diego_JoinOldcamp_11_01"); //Р’РѕР·Р»Рµ РІРѕСЂРѕС‚ Р·Р°РјРєР° С‚С‹ РЅР°Р№РґРµС€СЊ С‡РµР»РѕРІРµРєР° РїРѕ РёРјРµРЅРё РўРѕСЂСѓСЃ. РЎРєР°Р¶Рё РµРјСѓ, С‡С‚Рѕ С‚РµР±СЏ РїРѕСЃР»Р°Р» Р”РёРµРіРѕ.
 	VAR C_NPC Thorus; Thorus = Hlp_GetNpc(GRD_200_THORUS);
 	Thorus.aivar[AIV_FINDABLE]=TRUE;
 	
 	Log_CreateTopic(CH1_JoinOC, LOG_MISSION);
 	Log_SetTopicStatus(CH1_JoinOC, LOG_RUNNING);
-	B_LogEntry( CH1_JoinOC,"Чтобы присоединиться к людям Гомеза в Старом Лагере, мне нужно увидеться с Торусом.");
+	B_LogEntry( CH1_JoinOC,"Р§С‚РѕР±С‹ РїСЂРёСЃРѕРµРґРёРЅРёС‚СЊСЃСЏ Рє Р»СЋРґСЏРј Р“РѕРјРµР·Р° РІ РЎС‚Р°СЂРѕРј Р›Р°РіРµСЂРµ, РјРЅРµ РЅСѓР¶РЅРѕ СѓРІРёРґРµС‚СЊСЃСЏ СЃ РўРѕСЂСѓСЃРѕРј.");
 };	
 
 // ************************************************************
@@ -403,7 +403,7 @@ INSTANCE Info_Diego_WayToOldcamp (C_INFO) // E2/E3
 	condition	= Info_Diego_WayToOldcamp_Condition;
 	information	= Info_Diego_WayToOldcamp_Info;
 	permanent	= 0;
-	description = "Как добраться до Старого Лагеря?";
+	description = "РљР°Рє РґРѕР±СЂР°С‚СЊСЃСЏ РґРѕ РЎС‚Р°СЂРѕРіРѕ Р›Р°РіРµСЂСЏ?";
 };                       
 
 FUNC INT Info_Diego_WayToOldcamp_Condition()
@@ -416,9 +416,9 @@ FUNC INT Info_Diego_WayToOldcamp_Condition()
 
 FUNC VOID Info_Diego_WayToOldcamp_Info()
 {
-	AI_Output(hero,self,"Info_Diego_WayToOldcamp_15_00"); //Как добраться до Старого Лагеря?
-	AI_Output(self,hero,"Info_Diego_WayToOldcamp_11_01"); //Дорога выведет тебя сама. Старый Лагерь - ближайшее поселение, которое встретится тебе на пути.
-	AI_Output(self,hero,"Info_Diego_WayToOldcamp_11_02"); //На подступах к Лагерю бродит немало диких тварей. Нужно быть безумцем, чтобы разгуливать окрест без оружия.
+	AI_Output(hero,self,"Info_Diego_WayToOldcamp_15_00"); //РљР°Рє РґРѕР±СЂР°С‚СЊСЃСЏ РґРѕ РЎС‚Р°СЂРѕРіРѕ Р›Р°РіРµСЂСЏ?
+	AI_Output(self,hero,"Info_Diego_WayToOldcamp_11_01"); //Р”РѕСЂРѕРіР° РІС‹РІРµРґРµС‚ С‚РµР±СЏ СЃР°РјР°. РЎС‚Р°СЂС‹Р№ Р›Р°РіРµСЂСЊ - Р±Р»РёР¶Р°Р№С€РµРµ РїРѕСЃРµР»РµРЅРёРµ, РєРѕС‚РѕСЂРѕРµ РІСЃС‚СЂРµС‚РёС‚СЃСЏ С‚РµР±Рµ РЅР° РїСѓС‚Рё.
+	AI_Output(self,hero,"Info_Diego_WayToOldcamp_11_02"); //РќР° РїРѕРґСЃС‚СѓРїР°С… Рє Р›Р°РіРµСЂСЋ Р±СЂРѕРґРёС‚ РЅРµРјР°Р»Рѕ РґРёРєРёС… С‚РІР°СЂРµР№. РќСѓР¶РЅРѕ Р±С‹С‚СЊ Р±РµР·СѓРјС†РµРј, С‡С‚РѕР±С‹ СЂР°Р·РіСѓР»РёРІР°С‚СЊ РѕРєСЂРµСЃС‚ Р±РµР· РѕСЂСѓР¶РёСЏ.
 };
 	
 // ************************************************************
@@ -432,7 +432,7 @@ INSTANCE Info_Diego_WoWaffe (C_INFO) // E2/E3
 	condition	= Info_Diego_WoWaffe_Condition;
 	information	= Info_Diego_WoWaffe_Info;
 	permanent	= 0;
-	description = "А где мне взять оружие?";
+	description = "Рђ РіРґРµ РјРЅРµ РІР·СЏС‚СЊ РѕСЂСѓР¶РёРµ?";
 };                       
 
 FUNC INT Info_Diego_WoWaffe_Condition()
@@ -445,9 +445,9 @@ FUNC INT Info_Diego_WoWaffe_Condition()
 
 FUNC VOID Info_Diego_WoWaffe_Info()
 {
-	AI_Output(hero,self,"Info_Diego_WoWaffe_15_00"); //А где мне взять оружие?
-	AI_Output(self,hero,"Info_Diego_WoWaffe_11_01"); //Когда доберешься до Старой Шахты, внимательно посмотри вокруг. Уверен, ты найдешь что-нибудь полезное.
-	AI_Output(self,hero,"Info_Diego_WoWaffe_11_02"); //Шахту легко найти - она находится в двух десятках шагов отсюда. 
+	AI_Output(hero,self,"Info_Diego_WoWaffe_15_00"); //Рђ РіРґРµ РјРЅРµ РІР·СЏС‚СЊ РѕСЂСѓР¶РёРµ?
+	AI_Output(self,hero,"Info_Diego_WoWaffe_11_01"); //РљРѕРіРґР° РґРѕР±РµСЂРµС€СЊСЃСЏ РґРѕ РЎС‚Р°СЂРѕР№ РЁР°С…С‚С‹, РІРЅРёРјР°С‚РµР»СЊРЅРѕ РїРѕСЃРјРѕС‚СЂРё РІРѕРєСЂСѓРі. РЈРІРµСЂРµРЅ, С‚С‹ РЅР°Р№РґРµС€СЊ С‡С‚Рѕ-РЅРёР±СѓРґСЊ РїРѕР»РµР·РЅРѕРµ.
+	AI_Output(self,hero,"Info_Diego_WoWaffe_11_02"); //РЁР°С…С‚Сѓ Р»РµРіРєРѕ РЅР°Р№С‚Рё - РѕРЅР° РЅР°С…РѕРґРёС‚СЃСЏ РІ РґРІСѓС… РґРµСЃСЏС‚РєР°С… С€Р°РіРѕРІ РѕС‚СЃСЋРґР°. 
 };
 
 // ************************************************************
@@ -461,7 +461,7 @@ INSTANCE Info_Diego_ThorusSays(C_INFO) // E2/E3
 	condition	= Info_Diego_ThorusSays_Condition;
 	information	= Info_Diego_ThorusSays_Info;
 	permanent	= 0;
-	description = "Я поговорил с Торусом.";
+	description = "РЇ РїРѕРіРѕРІРѕСЂРёР» СЃ РўРѕСЂСѓСЃРѕРј.";
 };                       
 
 FUNC INT Info_Diego_ThorusSays_Condition()
@@ -474,12 +474,12 @@ FUNC INT Info_Diego_ThorusSays_Condition()
 
 FUNC VOID Info_Diego_ThorusSays_Info()
 {
-	AI_Output(hero,self,"Info_Diego_ThorusSays_15_00"); //Я поговорил с Торусом.
-	AI_Output(self,hero,"Info_Diego_ThorusSays_11_01"); //И что он сказал?
-	AI_Output(hero,self,"Info_Diego_ThorusSays_15_02"); //Он сказал, что если ТЫ дашь свое согласие, я смогу присоединиться к Старому Лагерю.
-	AI_Output(self,hero,"Info_Diego_ThorusSays_11_03"); //Похоже, я нашел себе новую работенку.
-	AI_Output(hero,self,"Info_Diego_ThorusSays_15_04"); //Мы можем начать прямо сейчас?
-	AI_Output(self,hero,"Info_Diego_ThorusSays_11_05"); //Прежде всего тебе нужно кое-что понять.
+	AI_Output(hero,self,"Info_Diego_ThorusSays_15_00"); //РЇ РїРѕРіРѕРІРѕСЂРёР» СЃ РўРѕСЂСѓСЃРѕРј.
+	AI_Output(self,hero,"Info_Diego_ThorusSays_11_01"); //Р С‡С‚Рѕ РѕРЅ СЃРєР°Р·Р°Р»?
+	AI_Output(hero,self,"Info_Diego_ThorusSays_15_02"); //РћРЅ СЃРєР°Р·Р°Р», С‡С‚Рѕ РµСЃР»Рё РўР« РґР°С€СЊ СЃРІРѕРµ СЃРѕРіР»Р°СЃРёРµ, СЏ СЃРјРѕРіСѓ РїСЂРёСЃРѕРµРґРёРЅРёС‚СЊСЃСЏ Рє РЎС‚Р°СЂРѕРјСѓ Р›Р°РіРµСЂСЋ.
+	AI_Output(self,hero,"Info_Diego_ThorusSays_11_03"); //РџРѕС…РѕР¶Рµ, СЏ РЅР°С€РµР» СЃРµР±Рµ РЅРѕРІСѓСЋ СЂР°Р±РѕС‚РµРЅРєСѓ.
+	AI_Output(hero,self,"Info_Diego_ThorusSays_15_04"); //РњС‹ РјРѕР¶РµРј РЅР°С‡Р°С‚СЊ РїСЂСЏРјРѕ СЃРµР№С‡Р°СЃ?
+	AI_Output(self,hero,"Info_Diego_ThorusSays_11_05"); //РџСЂРµР¶РґРµ РІСЃРµРіРѕ С‚РµР±Рµ РЅСѓР¶РЅРѕ РєРѕРµ-С‡С‚Рѕ РїРѕРЅСЏС‚СЊ.
 };
 
 // ************************************************************
@@ -493,7 +493,7 @@ INSTANCE Info_Diego_Rules(C_INFO) // E2/E3
 	condition	= Info_Diego_Rules_Condition;
 	information	= Info_Diego_Rules_Info;
 	permanent	= 0;
-	description = "Что нужно знать, для того чтобы присоединиться в вашему Лагерю?";
+	description = "Р§С‚Рѕ РЅСѓР¶РЅРѕ Р·РЅР°С‚СЊ, РґР»СЏ С‚РѕРіРѕ С‡С‚РѕР±С‹ РїСЂРёСЃРѕРµРґРёРЅРёС‚СЊСЃСЏ РІ РІР°С€РµРјСѓ Р›Р°РіРµСЂСЋ?";
 };                       
 
 FUNC INT Info_Diego_Rules_Condition()
@@ -506,13 +506,13 @@ FUNC INT Info_Diego_Rules_Condition()
 
 FUNC VOID Info_Diego_Rules_Info()
 {
-	AI_Output(hero,self,"Info_Diego_Rules_15_00"); //Что нужно знать, для того чтобы присоединиться в вашему Лагерю?
-	AI_Output(self,hero,"Info_Diego_Rules_11_01"); //Если хочешь стать одним из нас, прежде всего ты должен показать себя полезным.
-	AI_Output(self,hero,"Info_Diego_Rules_11_02"); //Во Внешнем Кольце есть несколько очень влиятельных людей - в основном, Призраки. Если сумеешь произвести на них впечатление - считай, полдела сделано.
-	AI_Output(self,hero,"Info_Diego_Rules_11_03"); //Затем тебя ждет испытание веры: ты должен будешь доказать, что искренне предан этому Лагерю.
-	AI_Output(self,hero,"Info_Diego_Rules_11_04"); //Помимо этого, новичкам приходится многому учиться. Чем больше ты будешь знать, тем ценнее ты будешь для нашего Лагеря.
+	AI_Output(hero,self,"Info_Diego_Rules_15_00"); //Р§С‚Рѕ РЅСѓР¶РЅРѕ Р·РЅР°С‚СЊ, РґР»СЏ С‚РѕРіРѕ С‡С‚РѕР±С‹ РїСЂРёСЃРѕРµРґРёРЅРёС‚СЊСЃСЏ РІ РІР°С€РµРјСѓ Р›Р°РіРµСЂСЋ?
+	AI_Output(self,hero,"Info_Diego_Rules_11_01"); //Р•СЃР»Рё С…РѕС‡РµС€СЊ СЃС‚Р°С‚СЊ РѕРґРЅРёРј РёР· РЅР°СЃ, РїСЂРµР¶РґРµ РІСЃРµРіРѕ С‚С‹ РґРѕР»Р¶РµРЅ РїРѕРєР°Р·Р°С‚СЊ СЃРµР±СЏ РїРѕР»РµР·РЅС‹Рј.
+	AI_Output(self,hero,"Info_Diego_Rules_11_02"); //Р’Рѕ Р’РЅРµС€РЅРµРј РљРѕР»СЊС†Рµ РµСЃС‚СЊ РЅРµСЃРєРѕР»СЊРєРѕ РѕС‡РµРЅСЊ РІР»РёСЏС‚РµР»СЊРЅС‹С… Р»СЋРґРµР№ - РІ РѕСЃРЅРѕРІРЅРѕРј, РџСЂРёР·СЂР°РєРё. Р•СЃР»Рё СЃСѓРјРµРµС€СЊ РїСЂРѕРёР·РІРµСЃС‚Рё РЅР° РЅРёС… РІРїРµС‡Р°С‚Р»РµРЅРёРµ - СЃС‡РёС‚Р°Р№, РїРѕР»РґРµР»Р° СЃРґРµР»Р°РЅРѕ.
+	AI_Output(self,hero,"Info_Diego_Rules_11_03"); //Р—Р°С‚РµРј С‚РµР±СЏ Р¶РґРµС‚ РёСЃРїС‹С‚Р°РЅРёРµ РІРµСЂС‹: С‚С‹ РґРѕР»Р¶РµРЅ Р±СѓРґРµС€СЊ РґРѕРєР°Р·Р°С‚СЊ, С‡С‚Рѕ РёСЃРєСЂРµРЅРЅРµ РїСЂРµРґР°РЅ СЌС‚РѕРјСѓ Р›Р°РіРµСЂСЋ.
+	AI_Output(self,hero,"Info_Diego_Rules_11_04"); //РџРѕРјРёРјРѕ СЌС‚РѕРіРѕ, РЅРѕРІРёС‡РєР°Рј РїСЂРёС…РѕРґРёС‚СЃСЏ РјРЅРѕРіРѕРјСѓ СѓС‡РёС‚СЊСЃСЏ. Р§РµРј Р±РѕР»СЊС€Рµ С‚С‹ Р±СѓРґРµС€СЊ Р·РЅР°С‚СЊ, С‚РµРј С†РµРЅРЅРµРµ С‚С‹ Р±СѓРґРµС€СЊ РґР»СЏ РЅР°С€РµРіРѕ Р›Р°РіРµСЂСЏ.
 	
-	B_LogEntry( CH1_JoinOC,"Чтобы мне позволили присоединиться, мне нужно произвести впечатление на людей из внешнего круга и пройти испытание на верность Диего.");
+	B_LogEntry( CH1_JoinOC,"Р§С‚РѕР±С‹ РјРЅРµ РїРѕР·РІРѕР»РёР»Рё РїСЂРёСЃРѕРµРґРёРЅРёС‚СЊСЃСЏ, РјРЅРµ РЅСѓР¶РЅРѕ РїСЂРѕРёР·РІРµСЃС‚Рё РІРїРµС‡Р°С‚Р»РµРЅРёРµ РЅР° Р»СЋРґРµР№ РёР· РІРЅРµС€РЅРµРіРѕ РєСЂСѓРіР° Рё РїСЂРѕР№С‚Рё РёСЃРїС‹С‚Р°РЅРёРµ РЅР° РІРµСЂРЅРѕСЃС‚СЊ Р”РёРµРіРѕ.");
 };
 
 // ************************************************************
@@ -526,7 +526,7 @@ INSTANCE Info_Diego_Celebs(C_INFO) // E2/E3
 	condition	= Info_Diego_Celebs_Condition;
 	information	= Info_Diego_Celebs_Info;
 	permanent	= 0;
-	description = "Где искать этих влиятельных людей?";
+	description = "Р“РґРµ РёСЃРєР°С‚СЊ СЌС‚РёС… РІР»РёСЏС‚РµР»СЊРЅС‹С… Р»СЋРґРµР№?";
 };                       
 
 FUNC INT Info_Diego_Celebs_Condition()
@@ -539,10 +539,10 @@ FUNC INT Info_Diego_Celebs_Condition()
 
 FUNC VOID Info_Diego_Celebs_Info()
 {
-	AI_Output(hero,self,"Info_Diego_Celebs_15_00"); //Где искать этих влиятельных людей?
-	AI_Output(self,hero,"Info_Diego_Celebs_11_01"); //Ну, одного из них ты видишь перед собой. Есть еще Торус... Ты его уже знаешь.
-	AI_Output(self,hero,"Info_Diego_Celebs_11_02"); //Что до остальных... Их тебе придется поискать самому. Если ты не сможешь справиться с этим, то тебе нечего делать среди нас.
-	AI_Output(self,hero,"Info_Diego_Celebs_11_03"); //Погуляй по Внешнему Кольцу, поговори с людьми, и ты поймешь, кто есть кто.
+	AI_Output(hero,self,"Info_Diego_Celebs_15_00"); //Р“РґРµ РёСЃРєР°С‚СЊ СЌС‚РёС… РІР»РёСЏС‚РµР»СЊРЅС‹С… Р»СЋРґРµР№?
+	AI_Output(self,hero,"Info_Diego_Celebs_11_01"); //РќСѓ, РѕРґРЅРѕРіРѕ РёР· РЅРёС… С‚С‹ РІРёРґРёС€СЊ РїРµСЂРµРґ СЃРѕР±РѕР№. Р•СЃС‚СЊ РµС‰Рµ РўРѕСЂСѓСЃ... РўС‹ РµРіРѕ СѓР¶Рµ Р·РЅР°РµС€СЊ.
+	AI_Output(self,hero,"Info_Diego_Celebs_11_02"); //Р§С‚Рѕ РґРѕ РѕСЃС‚Р°Р»СЊРЅС‹С…... РС… С‚РµР±Рµ РїСЂРёРґРµС‚СЃСЏ РїРѕРёСЃРєР°С‚СЊ СЃР°РјРѕРјСѓ. Р•СЃР»Рё С‚С‹ РЅРµ СЃРјРѕР¶РµС€СЊ СЃРїСЂР°РІРёС‚СЊСЃСЏ СЃ СЌС‚РёРј, С‚Рѕ С‚РµР±Рµ РЅРµС‡РµРіРѕ РґРµР»Р°С‚СЊ СЃСЂРµРґРё РЅР°СЃ.
+	AI_Output(self,hero,"Info_Diego_Celebs_11_03"); //РџРѕРіСѓР»СЏР№ РїРѕ Р’РЅРµС€РЅРµРјСѓ РљРѕР»СЊС†Сѓ, РїРѕРіРѕРІРѕСЂРё СЃ Р»СЋРґСЊРјРё, Рё С‚С‹ РїРѕР№РјРµС€СЊ, РєС‚Рѕ РµСЃС‚СЊ РєС‚Рѕ.
 };
 
 // ************************************************************
@@ -556,7 +556,7 @@ INSTANCE Info_Diego_Teachers(C_INFO) // E2/E3
 	condition	= Info_Diego_Teachers_Condition;
 	information	= Info_Diego_Teachers_Info;
 	permanent	= 0;
-	description = "Кто может стать моим наставником?";
+	description = "РљС‚Рѕ РјРѕР¶РµС‚ СЃС‚Р°С‚СЊ РјРѕРёРј РЅР°СЃС‚Р°РІРЅРёРєРѕРј?";
 };                       
 
 FUNC INT Info_Diego_Teachers_Condition()
@@ -569,17 +569,17 @@ FUNC INT Info_Diego_Teachers_Condition()
 
 FUNC VOID Info_Diego_Teachers_Info()
 {
-	AI_Output		(hero,self,"Info_Diego_Teachers_15_00"); //Кто может стать моим наставником?
-	AI_Output		(self,hero,"Info_Diego_Teachers_11_01"); //Начни с Фингерса. Он у нас самый опытный.
-	AI_Output		(self,hero,"Info_Diego_Teachers_11_02"); //А потом, если посмотришь по сторонам, увидишь, что многие могут тебя чему-нибудь научить.
-	AI_Output		(hero,self,"Info_Diego_Teachers_15_03"); //Где живет Фингерс?
-	AI_Output		(self,hero,"Info_Diego_Teachers_11_04"); //О, его дом надежно укрыт от посторонних глаз. Дом Фингерса находится у стены замка. Начни отсюда и иди по направлению к арене.
-	AI_Output		(self,hero,"Info_Diego_Teachers_11_05"); //Когда окажешься у ворот, поверни налево и спускайся вниз по направлению к арене.
+	AI_Output		(hero,self,"Info_Diego_Teachers_15_00"); //РљС‚Рѕ РјРѕР¶РµС‚ СЃС‚Р°С‚СЊ РјРѕРёРј РЅР°СЃС‚Р°РІРЅРёРєРѕРј?
+	AI_Output		(self,hero,"Info_Diego_Teachers_11_01"); //РќР°С‡РЅРё СЃ Р¤РёРЅРіРµСЂСЃР°. РћРЅ Сѓ РЅР°СЃ СЃР°РјС‹Р№ РѕРїС‹С‚РЅС‹Р№.
+	AI_Output		(self,hero,"Info_Diego_Teachers_11_02"); //Рђ РїРѕС‚РѕРј, РµСЃР»Рё РїРѕСЃРјРѕС‚СЂРёС€СЊ РїРѕ СЃС‚РѕСЂРѕРЅР°Рј, СѓРІРёРґРёС€СЊ, С‡С‚Рѕ РјРЅРѕРіРёРµ РјРѕРіСѓС‚ С‚РµР±СЏ С‡РµРјСѓ-РЅРёР±СѓРґСЊ РЅР°СѓС‡РёС‚СЊ.
+	AI_Output		(hero,self,"Info_Diego_Teachers_15_03"); //Р“РґРµ Р¶РёРІРµС‚ Р¤РёРЅРіРµСЂСЃ?
+	AI_Output		(self,hero,"Info_Diego_Teachers_11_04"); //Рћ, РµРіРѕ РґРѕРј РЅР°РґРµР¶РЅРѕ СѓРєСЂС‹С‚ РѕС‚ РїРѕСЃС‚РѕСЂРѕРЅРЅРёС… РіР»Р°Р·. Р”РѕРј Р¤РёРЅРіРµСЂСЃР° РЅР°С…РѕРґРёС‚СЃСЏ Сѓ СЃС‚РµРЅС‹ Р·Р°РјРєР°. РќР°С‡РЅРё РѕС‚СЃСЋРґР° Рё РёРґРё РїРѕ РЅР°РїСЂР°РІР»РµРЅРёСЋ Рє Р°СЂРµРЅРµ.
+	AI_Output		(self,hero,"Info_Diego_Teachers_11_05"); //РљРѕРіРґР° РѕРєР°Р¶РµС€СЊСЃСЏ Сѓ РІРѕСЂРѕС‚, РїРѕРІРµСЂРЅРё РЅР°Р»РµРІРѕ Рё СЃРїСѓСЃРєР°Р№СЃСЏ РІРЅРёР· РїРѕ РЅР°РїСЂР°РІР»РµРЅРёСЋ Рє Р°СЂРµРЅРµ.
 
 	if	(Fingers_CanTeach == FALSE)
 	{
 		Log_CreateTopic (GE_TeacherOC,	LOG_NOTE);
-		B_LogEntry		(GE_TeacherOC,"Фингерс может обучить карманным кражам и вскрыванию замков. Он живет в доме у арены, слегка на отшибе, у стены замка.");
+		B_LogEntry		(GE_TeacherOC,"Р¤РёРЅРіРµСЂСЃ РјРѕР¶РµС‚ РѕР±СѓС‡РёС‚СЊ РєР°СЂРјР°РЅРЅС‹Рј РєСЂР°Р¶Р°Рј Рё РІСЃРєСЂС‹РІР°РЅРёСЋ Р·Р°РјРєРѕРІ. РћРЅ Р¶РёРІРµС‚ РІ РґРѕРјРµ Сѓ Р°СЂРµРЅС‹, СЃР»РµРіРєР° РЅР° РѕС‚С€РёР±Рµ, Сѓ СЃС‚РµРЅС‹ Р·Р°РјРєР°.");
 	};
 };
 
@@ -597,7 +597,7 @@ INSTANCE Info_Diego_Teach(C_INFO)
 	condition	= Info_Diego_Teach_Condition;
 	information	= Info_Diego_Teach_Info;
 	permanent	= 1;
-	description = "Ты можешь чему-нибудь научить меня?";
+	description = "РўС‹ РјРѕР¶РµС€СЊ С‡РµРјСѓ-РЅРёР±СѓРґСЊ РЅР°СѓС‡РёС‚СЊ РјРµРЅСЏ?";
 };                       
 
 FUNC INT Info_Diego_Teach_Condition()
@@ -613,11 +613,11 @@ FUNC VOID Info_Diego_Teach_Info()
 	if	(log_diegotrain == FALSE)
 	{	
 		Log_CreateTopic (GE_TeacherOC,LOG_NOTE);
-		B_LogEntry		(GE_TeacherOC,"Диего может помочь мне стать сильнее и гораздо более ловким.");
+		B_LogEntry		(GE_TeacherOC,"Р”РёРµРіРѕ РјРѕР¶РµС‚ РїРѕРјРѕС‡СЊ РјРЅРµ СЃС‚Р°С‚СЊ СЃРёР»СЊРЅРµРµ Рё РіРѕСЂР°Р·РґРѕ Р±РѕР»РµРµ Р»РѕРІРєРёРј.");
 		log_diegotrain	= TRUE;
 	};
-	AI_Output(hero,self,"Info_Diego_Teach_15_00"); //А ты можешь меня чему-нибудь научить?
-	AI_Output(self,hero,"Info_Diego_Teach_11_01"); //Да. Я могу показать тебе, как увеличить силу или повысить ловкость.
+	AI_Output(hero,self,"Info_Diego_Teach_15_00"); //Рђ С‚С‹ РјРѕР¶РµС€СЊ РјРµРЅСЏ С‡РµРјСѓ-РЅРёР±СѓРґСЊ РЅР°СѓС‡РёС‚СЊ?
+	AI_Output(self,hero,"Info_Diego_Teach_11_01"); //Р”Р°. РЇ РјРѕРіСѓ РїРѕРєР°Р·Р°С‚СЊ С‚РµР±Рµ, РєР°Рє СѓРІРµР»РёС‡РёС‚СЊ СЃРёР»Сѓ РёР»Рё РїРѕРІС‹СЃРёС‚СЊ Р»РѕРІРєРѕСЃС‚СЊ.
 	
 	Diego_Merke_STR = hero.attribute[ATR_STRENGTH];
 	Diego_Merke_DEX = hero.attribute[ATR_DEXTERITY];
@@ -636,13 +636,13 @@ func void Info_Diego_Teach_BACK()
 {
 	if (Diego_Merke_STR < hero.attribute[ATR_STRENGTH])
 	{
-		AI_Output(self,hero,"Info_Diego_Teach_BACK_11_00"); //Видишь - ты стал намного сильнее.
+		AI_Output(self,hero,"Info_Diego_Teach_BACK_11_00"); //Р’РёРґРёС€СЊ - С‚С‹ СЃС‚Р°Р» РЅР°РјРЅРѕРіРѕ СЃРёР»СЊРЅРµРµ.
 	};
 	if (Diego_Merke_DEX < hero.attribute[ATR_DEXTERITY])
 	{
-		AI_Output(self,hero,"Info_Diego_Teach_BACK_11_01"); //Теперь ты будешь точнее стрелять из лука и арбалета.
+		AI_Output(self,hero,"Info_Diego_Teach_BACK_11_01"); //РўРµРїРµСЂСЊ С‚С‹ Р±СѓРґРµС€СЊ С‚РѕС‡РЅРµРµ СЃС‚СЂРµР»СЏС‚СЊ РёР· Р»СѓРєР° Рё Р°СЂР±Р°Р»РµС‚Р°.
 	};
-	AI_Output(self,hero,"Info_Diego_Teach_BACK_11_02"); //Возвращайся скорее - тебе еще многому предстоит научиться!
+	AI_Output(self,hero,"Info_Diego_Teach_BACK_11_02"); //Р’РѕР·РІСЂР°С‰Р°Р№СЃСЏ СЃРєРѕСЂРµРµ - С‚РµР±Рµ РµС‰Рµ РјРЅРѕРіРѕРјСѓ РїСЂРµРґСЃС‚РѕРёС‚ РЅР°СѓС‡РёС‚СЊСЃСЏ!
 	Info_ClearChoices	(Info_Diego_Teach);
 };
 
@@ -705,7 +705,7 @@ INSTANCE Info_Diego_BringList_Offer (C_INFO)
 	condition	= Info_Diego_BringList_Offer_Condition;
 	information	= Info_Diego_BringList_Offer_Info;
 	permanent	= 0;
-	description = "Что такое испытание веры?";
+	description = "Р§С‚Рѕ С‚Р°РєРѕРµ РёСЃРїС‹С‚Р°РЅРёРµ РІРµСЂС‹?";
 };                       
 
 FUNC INT Info_Diego_BringList_Offer_Condition()
@@ -718,19 +718,19 @@ FUNC INT Info_Diego_BringList_Offer_Condition()
 
 FUNC VOID Info_Diego_BringList_Offer_Info()
 {
-	AI_Output (hero, self,"Info_Diego_BringList_Offer_15_00"); //Что такое испытание веры?
-	AI_Output (self, hero,"Info_Diego_BringList_Offer_11_01"); //Ты должен отправиться в Старую Шахту. Там ты встретишь одного парня, его зовут Ян. Он даст тебе список.
-	AI_Output (self, hero,"Info_Diego_BringList_Offer_11_02"); //Это очень важная бумага - список всех припасов, которые нужны для нормальной работы шахты.
-	AI_Output (self, hero,"Info_Diego_BringList_Offer_11_03"); //Рудокопы получат их со следующим караваном.
-	AI_Output (hero, self,"Info_Diego_BringList_Offer_15_04"); //Без проблем!
-	AI_Output (self, hero,"Info_Diego_BringList_Offer_11_05"); //Нет, проблема все-таки есть. Этот список не должен попасть в руки бандитов из Нового Лагеря!
-	AI_Output (self, hero,"Info_Diego_BringList_Offer_11_06"); //Как я уже говорил, это очень важно. Если ты хорошо справишься, тогда мы пойдем дальше.
+	AI_Output (hero, self,"Info_Diego_BringList_Offer_15_00"); //Р§С‚Рѕ С‚Р°РєРѕРµ РёСЃРїС‹С‚Р°РЅРёРµ РІРµСЂС‹?
+	AI_Output (self, hero,"Info_Diego_BringList_Offer_11_01"); //РўС‹ РґРѕР»Р¶РµРЅ РѕС‚РїСЂР°РІРёС‚СЊСЃСЏ РІ РЎС‚Р°СЂСѓСЋ РЁР°С…С‚Сѓ. РўР°Рј С‚С‹ РІСЃС‚СЂРµС‚РёС€СЊ РѕРґРЅРѕРіРѕ РїР°СЂРЅСЏ, РµРіРѕ Р·РѕРІСѓС‚ РЇРЅ. РћРЅ РґР°СЃС‚ С‚РµР±Рµ СЃРїРёСЃРѕРє.
+	AI_Output (self, hero,"Info_Diego_BringList_Offer_11_02"); //Р­С‚Рѕ РѕС‡РµРЅСЊ РІР°Р¶РЅР°СЏ Р±СѓРјР°РіР° - СЃРїРёСЃРѕРє РІСЃРµС… РїСЂРёРїР°СЃРѕРІ, РєРѕС‚РѕСЂС‹Рµ РЅСѓР¶РЅС‹ РґР»СЏ РЅРѕСЂРјР°Р»СЊРЅРѕР№ СЂР°Р±РѕС‚С‹ С€Р°С…С‚С‹.
+	AI_Output (self, hero,"Info_Diego_BringList_Offer_11_03"); //Р СѓРґРѕРєРѕРїС‹ РїРѕР»СѓС‡Р°С‚ РёС… СЃРѕ СЃР»РµРґСѓСЋС‰РёРј РєР°СЂР°РІР°РЅРѕРј.
+	AI_Output (hero, self,"Info_Diego_BringList_Offer_15_04"); //Р‘РµР· РїСЂРѕР±Р»РµРј!
+	AI_Output (self, hero,"Info_Diego_BringList_Offer_11_05"); //РќРµС‚, РїСЂРѕР±Р»РµРјР° РІСЃРµ-С‚Р°РєРё РµСЃС‚СЊ. Р­С‚РѕС‚ СЃРїРёСЃРѕРє РЅРµ РґРѕР»Р¶РµРЅ РїРѕРїР°СЃС‚СЊ РІ СЂСѓРєРё Р±Р°РЅРґРёС‚РѕРІ РёР· РќРѕРІРѕРіРѕ Р›Р°РіРµСЂСЏ!
+	AI_Output (self, hero,"Info_Diego_BringList_Offer_11_06"); //РљР°Рє СЏ СѓР¶Рµ РіРѕРІРѕСЂРёР», СЌС‚Рѕ РѕС‡РµРЅСЊ РІР°Р¶РЅРѕ. Р•СЃР»Рё С‚С‹ С…РѕСЂРѕС€Рѕ СЃРїСЂР°РІРёС€СЊСЃСЏ, С‚РѕРіРґР° РјС‹ РїРѕР№РґРµРј РґР°Р»СЊС€Рµ.
 	
 	Diego_BringList = LOG_RUNNING;
     
     Log_CreateTopic (CH1_BringList,LOG_MISSION);
     Log_SetTopicStatus(CH1_BringList,LOG_RUNNING);
-    B_LogEntry    (CH1_BringList,"Диего послал меня в Старую Шахту. Я должен забрать список у парня по имени Ян. Эта бумага не должна попасть в руки Нового Лагеря.");
+    B_LogEntry    (CH1_BringList,"Р”РёРµРіРѕ РїРѕСЃР»Р°Р» РјРµРЅСЏ РІ РЎС‚Р°СЂСѓСЋ РЁР°С…С‚Сѓ. РЇ РґРѕР»Р¶РµРЅ Р·Р°Р±СЂР°С‚СЊ СЃРїРёСЃРѕРє Сѓ РїР°СЂРЅСЏ РїРѕ РёРјРµРЅРё РЇРЅ. Р­С‚Р° Р±СѓРјР°РіР° РЅРµ РґРѕР»Р¶РЅР° РїРѕРїР°СЃС‚СЊ РІ СЂСѓРєРё РќРѕРІРѕРіРѕ Р›Р°РіРµСЂСЏ.");
     
 	VAR C_NPC Ian; Ian = Hlp_GetNpc (STT_301_IAN);	
 	CreateInvItem (STT_301_IAN, TheList);
@@ -745,7 +745,7 @@ INSTANCE Info_Diego_IanPassword (C_INFO)
 	condition	= Info_Diego_IanPassword_Condition;
 	information	= Info_Diego_IanPassword_Info;
 	permanent	= 0;
-	description = "Если этот список настолько важен, почему Ян отдаст его МНЕ?";
+	description = "Р•СЃР»Рё СЌС‚РѕС‚ СЃРїРёСЃРѕРє РЅР°СЃС‚РѕР»СЊРєРѕ РІР°Р¶РµРЅ, РїРѕС‡РµРјСѓ РЇРЅ РѕС‚РґР°СЃС‚ РµРіРѕ РњРќР•?";
 };                       
 
 FUNC INT Info_Diego_IanPassword_Condition()
@@ -758,11 +758,11 @@ FUNC INT Info_Diego_IanPassword_Condition()
 
 FUNC VOID Info_Diego_IanPassword_Info()
 {
-	AI_Output (hero, self,"Info_Diego_IanPassword_Info_15_01"); //Если этот список настолько важен, почему ты думаешь, что Ян отдаст его МНЕ?
-	AI_Output (self, hero,"Info_Diego_IanPassword_Info_11_02"); //Потому что ты скажешь ему, что тебя прислал Диего.
-	AI_Output (hero, self,"Info_Diego_IanPassword_Info_15_03"); //Я скажу.
+	AI_Output (hero, self,"Info_Diego_IanPassword_Info_15_01"); //Р•СЃР»Рё СЌС‚РѕС‚ СЃРїРёСЃРѕРє РЅР°СЃС‚РѕР»СЊРєРѕ РІР°Р¶РµРЅ, РїРѕС‡РµРјСѓ С‚С‹ РґСѓРјР°РµС€СЊ, С‡С‚Рѕ РЇРЅ РѕС‚РґР°СЃС‚ РµРіРѕ РњРќР•?
+	AI_Output (self, hero,"Info_Diego_IanPassword_Info_11_02"); //РџРѕС‚РѕРјСѓ С‡С‚Рѕ С‚С‹ СЃРєР°Р¶РµС€СЊ РµРјСѓ, С‡С‚Рѕ С‚РµР±СЏ РїСЂРёСЃР»Р°Р» Р”РёРµРіРѕ.
+	AI_Output (hero, self,"Info_Diego_IanPassword_Info_15_03"); //РЇ СЃРєР°Р¶Сѓ.
 	
-	B_LogEntry    (CH1_BringList,"Ян отдаст мне список, если я скажу ему, что меня послал Диего.");
+	B_LogEntry    (CH1_BringList,"РЇРЅ РѕС‚РґР°СЃС‚ РјРЅРµ СЃРїРёСЃРѕРє, РµСЃР»Рё СЏ СЃРєР°Р¶Сѓ РµРјСѓ, С‡С‚Рѕ РјРµРЅСЏ РїРѕСЃР»Р°Р» Р”РёРµРіРѕ.");
 };
 
 // ----------------------------------------------------------------------------------
@@ -774,7 +774,7 @@ INSTANCE Info_Diego_MapToOldMine (C_INFO)
 	condition	= Info_Diego_MapToOldMine_Condition;
 	information	= Info_Diego_MapToOldMine_Info;
 	permanent	= 0;
-	description = "Где находится Старая Шахта? ";
+	description = "Р“РґРµ РЅР°С…РѕРґРёС‚СЃСЏ РЎС‚Р°СЂР°СЏ РЁР°С…С‚Р°? ";
 };                       
 
 FUNC INT Info_Diego_MapToOldMine_Condition()
@@ -787,11 +787,11 @@ FUNC INT Info_Diego_MapToOldMine_Condition()
 
 FUNC VOID Info_Diego_MapToOldMine_Info()
 {
-	AI_Output (hero, self,"Info_Diego_MapToOldMine_Info_15_00"); //Где находится Старая Шахта? 
-	AI_Output (self, hero,"Info_Diego_MapToOldMine_Info_11_01"); //Зайди к Грехэму. Он у нас занимается картами. Скажи, что я послал тебя и что тебе нужна карта. На ней ты найдешь путь к шахте.
-	AI_Output (self, hero,"Info_Diego_MapToOldMine_Info_11_02"); //Он живет слева от северных ворот.
+	AI_Output (hero, self,"Info_Diego_MapToOldMine_Info_15_00"); //Р“РґРµ РЅР°С…РѕРґРёС‚СЃСЏ РЎС‚Р°СЂР°СЏ РЁР°С…С‚Р°? 
+	AI_Output (self, hero,"Info_Diego_MapToOldMine_Info_11_01"); //Р—Р°Р№РґРё Рє Р“СЂРµС…СЌРјСѓ. РћРЅ Сѓ РЅР°СЃ Р·Р°РЅРёРјР°РµС‚СЃСЏ РєР°СЂС‚Р°РјРё. РЎРєР°Р¶Рё, С‡С‚Рѕ СЏ РїРѕСЃР»Р°Р» С‚РµР±СЏ Рё С‡С‚Рѕ С‚РµР±Рµ РЅСѓР¶РЅР° РєР°СЂС‚Р°. РќР° РЅРµР№ С‚С‹ РЅР°Р№РґРµС€СЊ РїСѓС‚СЊ Рє С€Р°С…С‚Рµ.
+	AI_Output (self, hero,"Info_Diego_MapToOldMine_Info_11_02"); //РћРЅ Р¶РёРІРµС‚ СЃР»РµРІР° РѕС‚ СЃРµРІРµСЂРЅС‹С… РІРѕСЂРѕС‚.
 	
-	B_LogEntry    (CH1_BringList,"Грехэм даст мне карту. Я могу найти его слева от северных ворот.");
+	B_LogEntry    (CH1_BringList,"Р“СЂРµС…СЌРј РґР°СЃС‚ РјРЅРµ РєР°СЂС‚Сѓ. РЇ РјРѕРіСѓ РЅР°Р№С‚Рё РµРіРѕ СЃР»РµРІР° РѕС‚ СЃРµРІРµСЂРЅС‹С… РІРѕСЂРѕС‚.");
 };
 
 // ------------------------------ SUCCESS ----------------------------------
@@ -803,7 +803,7 @@ INSTANCE Info_Diego_BringList_Success (C_INFO)
 	condition	= Info_Diego_BringList_Success_Condition;
 	information	= Info_Diego_BringList_Success_Info;
 	permanent	= 0;
-	description = "Я получил список от Яна.";
+	description = "РЇ РїРѕР»СѓС‡РёР» СЃРїРёСЃРѕРє РѕС‚ РЇРЅР°.";
 };                       
 
 FUNC INT Info_Diego_BringList_Success_Condition()
@@ -816,21 +816,21 @@ FUNC INT Info_Diego_BringList_Success_Condition()
 
 FUNC VOID Info_Diego_BringList_Success_Info()
 {
-	AI_Output (hero, self,"Info_Diego_BringList_Success_15_00"); //Я получил список от Яна.
+	AI_Output (hero, self,"Info_Diego_BringList_Success_15_00"); //РЇ РїРѕР»СѓС‡РёР» СЃРїРёСЃРѕРє РѕС‚ РЇРЅР°.
 		
 	if	Npc_HasItems(hero,TheList)
 	{
 		B_GiveInvItems	(hero, self, TheList, 1);
-		B_LogEntry    	(CH1_BringList,"Диего был просто счастлив, когда я дал ему список Яна.");
+		B_LogEntry    	(CH1_BringList,"Р”РёРµРіРѕ Р±С‹Р» РїСЂРѕСЃС‚Рѕ СЃС‡Р°СЃС‚Р»РёРІ, РєРѕРіРґР° СЏ РґР°Р» РµРјСѓ СЃРїРёСЃРѕРє РЇРЅР°.");
 	}
 	else if	Npc_HasItems(hero,TheListNC)
 	{
 		B_GiveInvItems	(hero, self, TheListNC, 1);
-		B_LogEntry    	(CH1_BringList,"Диего был очень доволен, когда я дал ему список Яна. Похоже, он не заметил подделки Ларса… Хотя… Что это за странный блеск был в его глазах?");
+		B_LogEntry    	(CH1_BringList,"Р”РёРµРіРѕ Р±С‹Р» РѕС‡РµРЅСЊ РґРѕРІРѕР»РµРЅ, РєРѕРіРґР° СЏ РґР°Р» РµРјСѓ СЃРїРёСЃРѕРє РЇРЅР°. РџРѕС…РѕР¶Рµ, РѕРЅ РЅРµ Р·Р°РјРµС‚РёР» РїРѕРґРґРµР»РєРё Р›Р°СЂСЃР°вЂ¦ РҐРѕС‚СЏвЂ¦ Р§С‚Рѕ СЌС‚Рѕ Р·Р° СЃС‚СЂР°РЅРЅС‹Р№ Р±Р»РµСЃРє Р±С‹Р» РІ РµРіРѕ РіР»Р°Р·Р°С…?");
 	};
 	B_UseFakeScroll();
 	
-	AI_Output (self, hero,"Info_Diego_BringList_Success_11_01"); //Отлично! Ты хорошо начал, парень!
+	AI_Output (self, hero,"Info_Diego_BringList_Success_11_01"); //РћС‚Р»РёС‡РЅРѕ! РўС‹ С…РѕСЂРѕС€Рѕ РЅР°С‡Р°Р», РїР°СЂРµРЅСЊ!
 
 	Diego_BringList = LOG_SUCCESS;
 	B_GiveXP(XP_DiegoBringlist);
@@ -853,7 +853,7 @@ INSTANCE Info_Diego_JoinAnalyze(C_INFO)
 	condition	= Info_Diego_JoinAnalyze_Condition;
 	information	= Info_Diego_JoinAnalyze_Info;
 	permanent	= 1;
-	description = "Что говорят обо мне в Лагере?";
+	description = "Р§С‚Рѕ РіРѕРІРѕСЂСЏС‚ РѕР±Рѕ РјРЅРµ РІ Р›Р°РіРµСЂРµ?";
 };                       
 
 FUNC INT Info_Diego_JoinAnalyze_Condition()
@@ -868,132 +868,132 @@ FUNC INT Info_Diego_JoinAnalyze_Condition()
 
 FUNC VOID Info_Diego_JoinAnalyze_Info()
 {	
-	AI_Output(hero, self,"Info_Diego_JoinAnalyze_15_00"); //Что говорят обо мне в Лагере?
-	AI_Output(self, hero,"Info_Diego_JoinAnalyze_11_01"); //Ну, я поговорил с несколькими людьми...
-	AI_Output(hero, self,"Info_Diego_JoinAnalyze_15_02"); //И?
+	AI_Output(hero, self,"Info_Diego_JoinAnalyze_15_00"); //Р§С‚Рѕ РіРѕРІРѕСЂСЏС‚ РѕР±Рѕ РјРЅРµ РІ Р›Р°РіРµСЂРµ?
+	AI_Output(self, hero,"Info_Diego_JoinAnalyze_11_01"); //РќСѓ, СЏ РїРѕРіРѕРІРѕСЂРёР» СЃ РЅРµСЃРєРѕР»СЊРєРёРјРё Р»СЋРґСЊРјРё...
+	AI_Output(hero, self,"Info_Diego_JoinAnalyze_15_02"); //Р?
 	// -----------------------------------------------------------
 	Points_OC = 0;
 	// -----------------------------------------------------------
 	if (Scatty_ChargeKirgo == LOG_SUCCESS)
 	{
-		AI_Output(self,hero,"Info_Diego_JoinAnalyze_Scatty_11_01"); //Скатти сказал, что ты победил Кирго.
+		AI_Output(self,hero,"Info_Diego_JoinAnalyze_Scatty_11_01"); //РЎРєР°С‚С‚Рё СЃРєР°Р·Р°Р», С‡С‚Рѕ С‚С‹ РїРѕР±РµРґРёР» РљРёСЂРіРѕ.
 		Points_OC = Points_OC + 2;
 	}
 	else if (Scatty_ChargeKirgo == LOG_FAILED)
 	{
-		AI_Output(self,hero,"Info_Diego_JoinAnalyze_Scatty_11_02"); //Скатти сказал, что Кирго побил тебя. Кажется, он был слегка разочарован.
+		AI_Output(self,hero,"Info_Diego_JoinAnalyze_Scatty_11_02"); //РЎРєР°С‚С‚Рё СЃРєР°Р·Р°Р», С‡С‚Рѕ РљРёСЂРіРѕ РїРѕР±РёР» С‚РµР±СЏ. РљР°Р¶РµС‚СЃСЏ, РѕРЅ Р±С‹Р» СЃР»РµРіРєР° СЂР°Р·РѕС‡Р°СЂРѕРІР°РЅ.
 		Points_OC = Points_OC - 1;
 	}
 	else if (Scatty_ChargeKirgo == LOG_RUNNING)
 	{
-		AI_Output(self,hero,"Info_Diego_JoinAnalyze_Scatty_11_03"); //Скатти сказал, что он хочет посмотреть, сможешь ли ты потягаться с Кирго.
+		AI_Output(self,hero,"Info_Diego_JoinAnalyze_Scatty_11_03"); //РЎРєР°С‚С‚Рё СЃРєР°Р·Р°Р», С‡С‚Рѕ РѕРЅ С…РѕС‡РµС‚ РїРѕСЃРјРѕС‚СЂРµС‚СЊ, СЃРјРѕР¶РµС€СЊ Р»Рё С‚С‹ РїРѕС‚СЏРіР°С‚СЊСЃСЏ СЃ РљРёСЂРіРѕ.
 	};
 	
 	if (Scatty_ChargeKharim == LOG_FAILED)
 	{
-		AI_Output(self,hero,"Info_Diego_JoinAnalyze_Scatty_11_04"); //Но ему понравилось то, что ты не побоялся драться с Харимом - пусть даже ты и проиграл.
+		AI_Output(self,hero,"Info_Diego_JoinAnalyze_Scatty_11_04"); //РќРѕ РµРјСѓ РїРѕРЅСЂР°РІРёР»РѕСЃСЊ С‚Рѕ, С‡С‚Рѕ С‚С‹ РЅРµ РїРѕР±РѕСЏР»СЃСЏ РґСЂР°С‚СЊСЃСЏ СЃ РҐР°СЂРёРјРѕРј - РїСѓСЃС‚СЊ РґР°Р¶Рµ С‚С‹ Рё РїСЂРѕРёРіСЂР°Р».
 		Points_OC = Points_OC + 2;
 	}
 	else if (Scatty_ChargeKharim == LOG_SUCCESS)
 	{
-		AI_Output(self,hero,"Info_Diego_JoinAnalyze_Scatty_11_05"); //Но он был в полном восторге от того, что тебе удалось победить Харима. Он только об этом и говорит. 
+		AI_Output(self,hero,"Info_Diego_JoinAnalyze_Scatty_11_05"); //РќРѕ РѕРЅ Р±С‹Р» РІ РїРѕР»РЅРѕРј РІРѕСЃС‚РѕСЂРіРµ РѕС‚ С‚РѕРіРѕ, С‡С‚Рѕ С‚РµР±Рµ СѓРґР°Р»РѕСЃСЊ РїРѕР±РµРґРёС‚СЊ РҐР°СЂРёРјР°. РћРЅ С‚РѕР»СЊРєРѕ РѕР± СЌС‚РѕРј Рё РіРѕРІРѕСЂРёС‚. 
 		Points_OC = Points_OC + 5;
 	}
 	else if (Scatty_ChargeKharim == LOG_RUNNING)
 	{
-		AI_Output(self,hero,"Info_Diego_JoinAnalyze_Scatty_11_06"); //И он очень хочет посмотреть, как ты будешь драться с Харимом.
+		AI_Output(self,hero,"Info_Diego_JoinAnalyze_Scatty_11_06"); //Р РѕРЅ РѕС‡РµРЅСЊ С…РѕС‡РµС‚ РїРѕСЃРјРѕС‚СЂРµС‚СЊ, РєР°Рє С‚С‹ Р±СѓРґРµС€СЊ РґСЂР°С‚СЊСЃСЏ СЃ РҐР°СЂРёРјРѕРј.
 	};
 	// -----------------------------------------------------------
 	if (Whistler_BuyMySword == LOG_SUCCESS)
 	{
-		AI_Output(self,hero,"Info_Diego_JoinAnalyze_Whistler_11_01"); //Уистлер рассказал мне о Фиске... Знаешь, на твоем месте я бы забрал руду и смотался. Но как бы то ни было, теперь он о тебе очень высокого мнения.
+		AI_Output(self,hero,"Info_Diego_JoinAnalyze_Whistler_11_01"); //РЈРёСЃС‚Р»РµСЂ СЂР°СЃСЃРєР°Р·Р°Р» РјРЅРµ Рѕ Р¤РёСЃРєРµ... Р—РЅР°РµС€СЊ, РЅР° С‚РІРѕРµРј РјРµСЃС‚Рµ СЏ Р±С‹ Р·Р°Р±СЂР°Р» СЂСѓРґСѓ Рё СЃРјРѕС‚Р°Р»СЃСЏ. РќРѕ РєР°Рє Р±С‹ С‚Рѕ РЅРё Р±С‹Р»Рѕ, С‚РµРїРµСЂСЊ РѕРЅ Рѕ С‚РµР±Рµ РѕС‡РµРЅСЊ РІС‹СЃРѕРєРѕРіРѕ РјРЅРµРЅРёСЏ.
 		Points_OC = Points_OC + 3;
 	}
 	else if ( (Whistler_BuyMySword == LOG_FAILED) || ( (Whistler_BuyMySword==LOG_RUNNING)&&(Whistler_BuyMySword_Day<=(Wld_GetDay()-2)) ) )
 	{
-		AI_Output(self,hero,"Info_Diego_JoinAnalyze_Whistler_11_02"); //Я поговорил с Уистлером. Ты спер у него руду, наглец! Должен признать, что в храбрости тебе не откажешь!
+		AI_Output(self,hero,"Info_Diego_JoinAnalyze_Whistler_11_02"); //РЇ РїРѕРіРѕРІРѕСЂРёР» СЃ РЈРёСЃС‚Р»РµСЂРѕРј. РўС‹ СЃРїРµСЂ Сѓ РЅРµРіРѕ СЂСѓРґСѓ, РЅР°РіР»РµС†! Р”РѕР»Р¶РµРЅ РїСЂРёР·РЅР°С‚СЊ, С‡С‚Рѕ РІ С…СЂР°Р±СЂРѕСЃС‚Рё С‚РµР±Рµ РЅРµ РѕС‚РєР°Р¶РµС€СЊ!
 		Points_OC = Points_OC + 2;
 	}
 	else if (Whistler_BuyMySword == LOG_RUNNING)
 	{
-		AI_Output(self,hero,"Info_Diego_JoinAnalyze_Whistler_11_03"); //Уистлер все еще ждет свой меч. Тебе стоит побыстрее решить, хочешь ты отдавать его или нет, в противном случае он наверняка подумает, что ты попросту смотался с его рудой!
+		AI_Output(self,hero,"Info_Diego_JoinAnalyze_Whistler_11_03"); //РЈРёСЃС‚Р»РµСЂ РІСЃРµ РµС‰Рµ Р¶РґРµС‚ СЃРІРѕР№ РјРµС‡. РўРµР±Рµ СЃС‚РѕРёС‚ РїРѕР±С‹СЃС‚СЂРµРµ СЂРµС€РёС‚СЊ, С…РѕС‡РµС€СЊ С‚С‹ РѕС‚РґР°РІР°С‚СЊ РµРіРѕ РёР»Рё РЅРµС‚, РІ РїСЂРѕС‚РёРІРЅРѕРј СЃР»СѓС‡Р°Рµ РѕРЅ РЅР°РІРµСЂРЅСЏРєР° РїРѕРґСѓРјР°РµС‚, С‡С‚Рѕ С‚С‹ РїРѕРїСЂРѕСЃС‚Сѓ СЃРјРѕС‚Р°Р»СЃСЏ СЃ РµРіРѕ СЂСѓРґРѕР№!
 		
 	};
 	// -----------------------------------------------------------
 	if (Sly_LostNek == LOG_SUCCESS)			
 	{
-		AI_Output(self,hero,"Info_Diego_JoinAnalyze_Sly_11_01"); //Слай рассказал мне, что ты нашел Нека. Похоже, он тобой доволен.
+		AI_Output(self,hero,"Info_Diego_JoinAnalyze_Sly_11_01"); //РЎР»Р°Р№ СЂР°СЃСЃРєР°Р·Р°Р» РјРЅРµ, С‡С‚Рѕ С‚С‹ РЅР°С€РµР» РќРµРєР°. РџРѕС…РѕР¶Рµ, РѕРЅ С‚РѕР±РѕР№ РґРѕРІРѕР»РµРЅ.
 		Points_OC = Points_OC + 4;
 	}
 	else if (Sly_LostNek == LOG_RUNNING)					
 	{
-		AI_Output(self,hero,"Info_Diego_JoinAnalyze_Sly_11_02"); //Мне кажется, Слай неправ насчет Нека. Конечно, этот парень был настоящей занозой в заднице, но все же я не думаю, что он перешел в Новый Лагерь.
+		AI_Output(self,hero,"Info_Diego_JoinAnalyze_Sly_11_02"); //РњРЅРµ РєР°Р¶РµС‚СЃСЏ, РЎР»Р°Р№ РЅРµРїСЂР°РІ РЅР°СЃС‡РµС‚ РќРµРєР°. РљРѕРЅРµС‡РЅРѕ, СЌС‚РѕС‚ РїР°СЂРµРЅСЊ Р±С‹Р» РЅР°СЃС‚РѕСЏС‰РµР№ Р·Р°РЅРѕР·РѕР№ РІ Р·Р°РґРЅРёС†Рµ, РЅРѕ РІСЃРµ Р¶Рµ СЏ РЅРµ РґСѓРјР°СЋ, С‡С‚Рѕ РѕРЅ РїРµСЂРµС€РµР» РІ РќРѕРІС‹Р№ Р›Р°РіРµСЂСЊ.
 	};
 	// -----------------------------------------------------------
 	if (Fingers_Learnt == LOG_RUNNING)
 	{
-		AI_Output(self,hero,"Info_Diego_JoinAnalyze_Fingers_11_01"); //Я уже посылал тебя к Фингерсу - он действительно может тебя чему-нибудь научить!
+		AI_Output(self,hero,"Info_Diego_JoinAnalyze_Fingers_11_01"); //РЇ СѓР¶Рµ РїРѕСЃС‹Р»Р°Р» С‚РµР±СЏ Рє Р¤РёРЅРіРµСЂСЃСѓ - РѕРЅ РґРµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ РјРѕР¶РµС‚ С‚РµР±СЏ С‡РµРјСѓ-РЅРёР±СѓРґСЊ РЅР°СѓС‡РёС‚СЊ!
 	}
 	else if (Fingers_Learnt == LOG_SUCCESS)
 	{
-		AI_Output(self,hero,"Info_Diego_JoinAnalyze_Fingers_11_02"); //Фингерс рассказал мне, что ты уже кое-чему научился, но он считает, что тебе еще нужно оттачивать свои навыки.
+		AI_Output(self,hero,"Info_Diego_JoinAnalyze_Fingers_11_02"); //Р¤РёРЅРіРµСЂСЃ СЂР°СЃСЃРєР°Р·Р°Р» РјРЅРµ, С‡С‚Рѕ С‚С‹ СѓР¶Рµ РєРѕРµ-С‡РµРјСѓ РЅР°СѓС‡РёР»СЃСЏ, РЅРѕ РѕРЅ СЃС‡РёС‚Р°РµС‚, С‡С‚Рѕ С‚РµР±Рµ РµС‰Рµ РЅСѓР¶РЅРѕ РѕС‚С‚Р°С‡РёРІР°С‚СЊ СЃРІРѕРё РЅР°РІС‹РєРё.
 		Points_OC = Points_OC + 3;
 	};
 	// -----------------------------------------------------------
 	if (Dexter_GetKalomsRecipe == LOG_RUNNING)
 	{
-		AI_Output(self,hero,"Info_Diego_JoinAnalyze_Dexter_11_01"); //Я должен поговорить с Дексером. Он использует тебя для своих собственных нужд.
-		AI_Output(self,hero,"Info_Diego_JoinAnalyze_Dexter_11_02"); //С другой стороны, касательно испытания нет никаких правил. Если ты справишься с ЭТИМ заданием, это будет большим шагом вперед.
+		AI_Output(self,hero,"Info_Diego_JoinAnalyze_Dexter_11_01"); //РЇ РґРѕР»Р¶РµРЅ РїРѕРіРѕРІРѕСЂРёС‚СЊ СЃ Р”РµРєСЃРµСЂРѕРј. РћРЅ РёСЃРїРѕР»СЊР·СѓРµС‚ С‚РµР±СЏ РґР»СЏ СЃРІРѕРёС… СЃРѕР±СЃС‚РІРµРЅРЅС‹С… РЅСѓР¶Рґ.
+		AI_Output(self,hero,"Info_Diego_JoinAnalyze_Dexter_11_02"); //РЎ РґСЂСѓРіРѕР№ СЃС‚РѕСЂРѕРЅС‹, РєР°СЃР°С‚РµР»СЊРЅРѕ РёСЃРїС‹С‚Р°РЅРёСЏ РЅРµС‚ РЅРёРєР°РєРёС… РїСЂР°РІРёР». Р•СЃР»Рё С‚С‹ СЃРїСЂР°РІРёС€СЊСЃСЏ СЃ Р­РўРРњ Р·Р°РґР°РЅРёРµРј, СЌС‚Рѕ Р±СѓРґРµС‚ Р±РѕР»СЊС€РёРј С€Р°РіРѕРј РІРїРµСЂРµРґ.
 		
 	}
 	else if (Dexter_GetKalomsRecipe == LOG_SUCCESS)
 	{
-		AI_Output(self,hero,"Info_Diego_JoinAnalyze_Dexter_11_03"); //Ты действительно сумел добыть этот рецепт у Кор Галома! Декстер удивлен, да и я тоже. Молодец!
+		AI_Output(self,hero,"Info_Diego_JoinAnalyze_Dexter_11_03"); //РўС‹ РґРµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ СЃСѓРјРµР» РґРѕР±С‹С‚СЊ СЌС‚РѕС‚ СЂРµС†РµРїС‚ Сѓ РљРѕСЂ Р“Р°Р»РѕРјР°! Р”РµРєСЃС‚РµСЂ СѓРґРёРІР»РµРЅ, РґР° Рё СЏ С‚РѕР¶Рµ. РњРѕР»РѕРґРµС†!
 		Points_OC = Points_OC + 5;
 	};
 	// -----------------------------------------------------------
 	if (Thorus_MordragKo == LOG_RUNNING)
 	{
-		AI_Output(self,hero,"Info_Diego_JoinAnalyze_Thorus_11_01"); //По поводу Мордрага - то еще дельце. Он не такой уж плохой воин. Тебе нужно тренироваться, если ты действительно хочешь победить его.
+		AI_Output(self,hero,"Info_Diego_JoinAnalyze_Thorus_11_01"); //РџРѕ РїРѕРІРѕРґСѓ РњРѕСЂРґСЂР°РіР° - С‚Рѕ РµС‰Рµ РґРµР»СЊС†Рµ. РћРЅ РЅРµ С‚Р°РєРѕР№ СѓР¶ РїР»РѕС…РѕР№ РІРѕРёРЅ. РўРµР±Рµ РЅСѓР¶РЅРѕ С‚СЂРµРЅРёСЂРѕРІР°С‚СЊСЃСЏ, РµСЃР»Рё С‚С‹ РґРµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ С…РѕС‡РµС€СЊ РїРѕР±РµРґРёС‚СЊ РµРіРѕ.
 	}
 	else if (Thorus_MordragKo == LOG_SUCCESS)
 	{
-		AI_Output(self,hero,"Info_Diego_JoinAnalyze_Thorus_11_02"); //Торус сказал, что нам нужны такие, как ты. Это хороший знак.
+		AI_Output(self,hero,"Info_Diego_JoinAnalyze_Thorus_11_02"); //РўРѕСЂСѓСЃ СЃРєР°Р·Р°Р», С‡С‚Рѕ РЅР°Рј РЅСѓР¶РЅС‹ С‚Р°РєРёРµ, РєР°Рє С‚С‹. Р­С‚Рѕ С…РѕСЂРѕС€РёР№ Р·РЅР°Рє.
 		Points_OC = Points_OC + 5;
 	}
 	else if (Thorus_MordragKo == LOG_FAILED)
 	{
-		AI_Output(self,hero,"Info_Diego_JoinAnalyze_Thorus_11_03"); //Торус чуть не лопнул от ярости. Как ты умудрился провалить ТАКОЕ дело?!
+		AI_Output(self,hero,"Info_Diego_JoinAnalyze_Thorus_11_03"); //РўРѕСЂСѓСЃ С‡СѓС‚СЊ РЅРµ Р»РѕРїРЅСѓР» РѕС‚ СЏСЂРѕСЃС‚Рё. РљР°Рє С‚С‹ СѓРјСѓРґСЂРёР»СЃСЏ РїСЂРѕРІР°Р»РёС‚СЊ РўРђРљРћР• РґРµР»Рѕ?!
 		Points_OC = Points_OC - 5;						
 	}
 	// ----WEITER-------------------------------------------------------
 	if (Fisk_GetNewHehler == LOG_SUCCESS)
 	{
-		AI_Output(self,hero,"Info_Diego_JoinAnalyze_Fisk_11_01"); //Фиск сказал мне, что ты его удивил. В любом случае, он будет на твоей стороне.
+		AI_Output(self,hero,"Info_Diego_JoinAnalyze_Fisk_11_01"); //Р¤РёСЃРє СЃРєР°Р·Р°Р» РјРЅРµ, С‡С‚Рѕ С‚С‹ РµРіРѕ СѓРґРёРІРёР». Р’ Р»СЋР±РѕРј СЃР»СѓС‡Р°Рµ, РѕРЅ Р±СѓРґРµС‚ РЅР° С‚РІРѕРµР№ СЃС‚РѕСЂРѕРЅРµ.
 		Points_OC = Points_OC + 5;
 	}
 	else if ( (MordragKO_HauAb==TRUE) || (MordragKO_StayAtNC==TRUE) )
 	{
-		AI_Output(self,hero,"Info_Diego_JoinAnalyze_Fisk_11_02"); //Сам понимаешь, Фиск теперь от тебя не в восторге. На твоем месте я бы быстренько подыскал кого-нибудь на замену Мордрагу.
+		AI_Output(self,hero,"Info_Diego_JoinAnalyze_Fisk_11_02"); //РЎР°Рј РїРѕРЅРёРјР°РµС€СЊ, Р¤РёСЃРє С‚РµРїРµСЂСЊ РѕС‚ С‚РµР±СЏ РЅРµ РІ РІРѕСЃС‚РѕСЂРіРµ. РќР° С‚РІРѕРµРј РјРµСЃС‚Рµ СЏ Р±С‹ Р±С‹СЃС‚СЂРµРЅСЊРєРѕ РїРѕРґС‹СЃРєР°Р» РєРѕРіРѕ-РЅРёР±СѓРґСЊ РЅР° Р·Р°РјРµРЅСѓ РњРѕСЂРґСЂР°РіСѓ.
 	};
 	// -----------------------------------------------------------
 	if (points_oc > 15)// runtergesetzt!! // Bei 20 + BringList = Aufnahme
 	{
-		AI_Output (self, hero,"Info_Diego_Points_11_00"); //Многие в этом Лагере уже готовы поддержать тебя.
+		AI_Output (self, hero,"Info_Diego_Points_11_00"); //РњРЅРѕРіРёРµ РІ СЌС‚РѕРј Р›Р°РіРµСЂРµ СѓР¶Рµ РіРѕС‚РѕРІС‹ РїРѕРґРґРµСЂР¶Р°С‚СЊ С‚РµР±СЏ.
 		
 		if hero.level >= 5
 		{
 			if (Diego_BringList == LOG_SUCCESS)
 			{
-				AI_Output (self, hero,"Info_Diego_Points_11_01"); //И ты выдержал испытание. Иди к Торусу. Я уже все ему рассказал. Он пропустит тебя к Гомезу.
+				AI_Output (self, hero,"Info_Diego_Points_11_01"); //Р С‚С‹ РІС‹РґРµСЂР¶Р°Р» РёСЃРїС‹С‚Р°РЅРёРµ. РРґРё Рє РўРѕСЂСѓСЃСѓ. РЇ СѓР¶Рµ РІСЃРµ РµРјСѓ СЂР°СЃСЃРєР°Р·Р°Р». РћРЅ РїСЂРѕРїСѓСЃС‚РёС‚ С‚РµР±СЏ Рє Р“РѕРјРµР·Сѓ.
 				Diego_GomezAudience = TRUE;
 				
 				Log_SetTopicStatus(CH1_JoinOC, LOG_SUCCESS);
-				B_LogEntry(CH1_JoinOC,"Диего устроил мне аудиенцию у Гомеза. Теперь я могу стать человеком Гомеза и входить в замок. Надо только сначала поговорить с Торусом.");
+				B_LogEntry(CH1_JoinOC,"Р”РёРµРіРѕ СѓСЃС‚СЂРѕРёР» РјРЅРµ Р°СѓРґРёРµРЅС†РёСЋ Сѓ Р“РѕРјРµР·Р°. РўРµРїРµСЂСЊ СЏ РјРѕРіСѓ СЃС‚Р°С‚СЊ С‡РµР»РѕРІРµРєРѕРј Р“РѕРјРµР·Р° Рё РІС…РѕРґРёС‚СЊ РІ Р·Р°РјРѕРє. РќР°РґРѕ С‚РѕР»СЊРєРѕ СЃРЅР°С‡Р°Р»Р° РїРѕРіРѕРІРѕСЂРёС‚СЊ СЃ РўРѕСЂСѓСЃРѕРј.");
 			}
 			else
 			{
-				AI_Output (self, hero,"Info_Diego_Points_11_02"); //Но тебе еще нужно пройти испытание.
+				AI_Output (self, hero,"Info_Diego_Points_11_02"); //РќРѕ С‚РµР±Рµ РµС‰Рµ РЅСѓР¶РЅРѕ РїСЂРѕР№С‚Рё РёСЃРїС‹С‚Р°РЅРёРµ.
 			};
 		}
 		else
@@ -1003,11 +1003,11 @@ FUNC VOID Info_Diego_JoinAnalyze_Info()
 	}
 	else if (points_oc > 10)
 	{
-		AI_Output (self, hero,"Info_Diego_Points_11_10"); //В итоге можно сказать, не так уж плохо для новичка.
+		AI_Output (self, hero,"Info_Diego_Points_11_10"); //Р’ РёС‚РѕРіРµ РјРѕР¶РЅРѕ СЃРєР°Р·Р°С‚СЊ, РЅРµ С‚Р°Рє СѓР¶ РїР»РѕС…Рѕ РґР»СЏ РЅРѕРІРёС‡РєР°.
 	}
 	else if points_oc >= 0
 	{
-		AI_Output (self, hero,"Info_Diego_Points_11_20"); //Займись делом! Тебе еще многое нужно успеть, если ты хочешь добиться чего-нибудь в этом Лагере.
+		AI_Output (self, hero,"Info_Diego_Points_11_20"); //Р—Р°Р№РјРёСЃСЊ РґРµР»РѕРј! РўРµР±Рµ РµС‰Рµ РјРЅРѕРіРѕРµ РЅСѓР¶РЅРѕ СѓСЃРїРµС‚СЊ, РµСЃР»Рё С‚С‹ С…РѕС‡РµС€СЊ РґРѕР±РёС‚СЊСЃСЏ С‡РµРіРѕ-РЅРёР±СѓРґСЊ РІ СЌС‚РѕРј Р›Р°РіРµСЂРµ.
 	};
 	/*else
 	{
@@ -1053,7 +1053,7 @@ INSTANCE Info_Diego_WhatToSayToGomez (C_INFO)
 	condition	= Info_Diego_WhatToSayToGomez_Condition;
 	information	= Info_Diego_WhatToSayToGomez_Info;
 	permanent	= 0;
-	description = "Что мне говорить, когда я встречусь с Гомезом?";
+	description = "Р§С‚Рѕ РјРЅРµ РіРѕРІРѕСЂРёС‚СЊ, РєРѕРіРґР° СЏ РІСЃС‚СЂРµС‡СѓСЃСЊ СЃ Р“РѕРјРµР·РѕРј?";
 };                       
 
 FUNC INT Info_Diego_WhatToSayToGomez_Condition()
@@ -1066,9 +1066,9 @@ FUNC INT Info_Diego_WhatToSayToGomez_Condition()
 
 FUNC VOID Info_Diego_WhatToSayToGomez_Info()
 {
-	AI_Output (hero, self,"Info_Diego_WhatToSayToGomez_Info_15_00"); //Что мне говорить, когда я встречусь с Гомезом?
-	AI_Output (self, hero,"Info_Diego_WhatToSayToGomez_Info_11_01"); //В своих решениях Гомез руководствуется инстинктом. Он такие вещи чувствует. Посмотрит на твою физиономию и решит, принимать тебя или нет. 
-	AI_Output (self, hero,"Info_Diego_WhatToSayToGomez_Info_11_02"); //Дальше ты будешь действовать сам, так что соберись. Удачи тебе!
+	AI_Output (hero, self,"Info_Diego_WhatToSayToGomez_Info_15_00"); //Р§С‚Рѕ РјРЅРµ РіРѕРІРѕСЂРёС‚СЊ, РєРѕРіРґР° СЏ РІСЃС‚СЂРµС‡СѓСЃСЊ СЃ Р“РѕРјРµР·РѕРј?
+	AI_Output (self, hero,"Info_Diego_WhatToSayToGomez_Info_11_01"); //Р’ СЃРІРѕРёС… СЂРµС€РµРЅРёСЏС… Р“РѕРјРµР· СЂСѓРєРѕРІРѕРґСЃС‚РІСѓРµС‚СЃСЏ РёРЅСЃС‚РёРЅРєС‚РѕРј. РћРЅ С‚Р°РєРёРµ РІРµС‰Рё С‡СѓРІСЃС‚РІСѓРµС‚. РџРѕСЃРјРѕС‚СЂРёС‚ РЅР° С‚РІРѕСЋ С„РёР·РёРѕРЅРѕРјРёСЋ Рё СЂРµС€РёС‚, РїСЂРёРЅРёРјР°С‚СЊ С‚РµР±СЏ РёР»Рё РЅРµС‚. 
+	AI_Output (self, hero,"Info_Diego_WhatToSayToGomez_Info_11_02"); //Р”Р°Р»СЊС€Рµ С‚С‹ Р±СѓРґРµС€СЊ РґРµР№СЃС‚РІРѕРІР°С‚СЊ СЃР°Рј, С‚Р°Рє С‡С‚Рѕ СЃРѕР±РµСЂРёСЃСЊ. РЈРґР°С‡Рё С‚РµР±Рµ!
 };
 
 
@@ -1109,20 +1109,20 @@ FUNC void  PC_Thief_ARMOR_Info()
 	
 	if (Npc_HasItems (hero,ItMinugget) >= VALUE_STT_ARMOR_H)
 	{
-		AI_Output			(hero, self,"PC_Thief_ARMOR_Info_15_01"); //А я могу получить такие же доспехи, как у тебя?
-		AI_Output			(self, hero,"PC_Thief_ARMOR_Info_11_02"); //А руды у тебя хватит?
+		AI_Output			(hero, self,"PC_Thief_ARMOR_Info_15_01"); //Рђ СЏ РјРѕРіСѓ РїРѕР»СѓС‡РёС‚СЊ С‚Р°РєРёРµ Р¶Рµ РґРѕСЃРїРµС…Рё, РєР°Рє Сѓ С‚РµР±СЏ?
+		AI_Output			(self, hero,"PC_Thief_ARMOR_Info_11_02"); //Рђ СЂСѓРґС‹ Сѓ С‚РµР±СЏ С…РІР°С‚РёС‚?
 
 		CreateInvItem 		(hero,			STT_ARMOR_H);
 		B_GiveInvItems		(hero, self,	ItMinugget,	VALUE_STT_ARMOR_H);
 		
-		//hier nur ein Text fьr die Bildschirmausgabe
+		//hier nur ein Text fСЊr die Bildschirmausgabe
 		CreateInvItem		(self, 			ItAmArrow);
 		B_GiveInvItems		(self, hero,	ItAmArrow,	1);
 		Npc_RemoveInvItem	(hero,			ItAmArrow);
 	}
 	else
 	{
-		AI_Output (self, hero,"PC_Thief_ARMOR_Info_11_03"); //Будет руда - будут и доспехи.
+		AI_Output (self, hero,"PC_Thief_ARMOR_Info_11_03"); //Р‘СѓРґРµС‚ СЂСѓРґР° - Р±СѓРґСѓС‚ Рё РґРѕСЃРїРµС…Рё.
 	};
 };  
 
@@ -1161,26 +1161,26 @@ FUNC int  PC_Thief_MEETAGAIN_Condition()
 func void  PC_Thief_MEETAGAIN_Info()
 {
 	AI_GotoNpc(self,hero);
-	AI_Output (self, hero,"PC_Thief_MEETAGAIN_Info_11_00"); //Эй, я уж не надеялся увидеть тебя живым.
-	AI_Output (hero, self,"PC_Thief_MEETAGAIN_Info_15_01"); //Порой я и сам уже не надеялся.
-	AI_Output (self, hero,"PC_Thief_MEETAGAIN_Info_11_02"); //Много чего произошло с тех пор, как мы виделись в последний раз. Я слышал, ты внес большой вклад в последнюю Церемонию.
-	AI_Output (hero, self,"PC_Thief_MEETAGAIN_Info_15_03"); //Все-то ты знаешь.
-	AI_Output (self, hero,"PC_Thief_MEETAGAIN_Info_11_04"); //Даже больше, чем ты думаешь... Теперь ты ищешь юнитор?
-	AI_Output (hero, self,"PC_Thief_MEETAGAIN_Info_15_05"); //Да. Один из них должен быть где-то здесь.
-	AI_Output (self, hero,"PC_Thief_MEETAGAIN_Info_11_06"); //Я знаю, где его искать. Но есть одна проблема.
-	AI_Output (hero, self,"PC_Thief_MEETAGAIN_Info_15_07"); //Понятно. Сколько ты хочешь?
-	AI_Output (self, hero,"PC_Thief_MEETAGAIN_Info_11_08"); //Не зря я тебя учил. Но сейчас дело не в этом.
-	AI_Output (hero, self,"PC_Thief_MEETAGAIN_Info_15_09"); //Не в этом? Так в чем же тогда проблема?
-	AI_Output (self, hero,"PC_Thief_MEETAGAIN_Info_11_10"); //Проблема тонны на три весом.
-	AI_Output (self, hero,"PC_Thief_MEETAGAIN_Info_11_11"); //Идем. Ты сам все увидишь.
+	AI_Output (self, hero,"PC_Thief_MEETAGAIN_Info_11_00"); //Р­Р№, СЏ СѓР¶ РЅРµ РЅР°РґРµСЏР»СЃСЏ СѓРІРёРґРµС‚СЊ С‚РµР±СЏ Р¶РёРІС‹Рј.
+	AI_Output (hero, self,"PC_Thief_MEETAGAIN_Info_15_01"); //РџРѕСЂРѕР№ СЏ Рё СЃР°Рј СѓР¶Рµ РЅРµ РЅР°РґРµСЏР»СЃСЏ.
+	AI_Output (self, hero,"PC_Thief_MEETAGAIN_Info_11_02"); //РњРЅРѕРіРѕ С‡РµРіРѕ РїСЂРѕРёР·РѕС€Р»Рѕ СЃ С‚РµС… РїРѕСЂ, РєР°Рє РјС‹ РІРёРґРµР»РёСЃСЊ РІ РїРѕСЃР»РµРґРЅРёР№ СЂР°Р·. РЇ СЃР»С‹С€Р°Р», С‚С‹ РІРЅРµСЃ Р±РѕР»СЊС€РѕР№ РІРєР»Р°Рґ РІ РїРѕСЃР»РµРґРЅСЋСЋ Р¦РµСЂРµРјРѕРЅРёСЋ.
+	AI_Output (hero, self,"PC_Thief_MEETAGAIN_Info_15_03"); //Р’СЃРµ-С‚Рѕ С‚С‹ Р·РЅР°РµС€СЊ.
+	AI_Output (self, hero,"PC_Thief_MEETAGAIN_Info_11_04"); //Р”Р°Р¶Рµ Р±РѕР»СЊС€Рµ, С‡РµРј С‚С‹ РґСѓРјР°РµС€СЊ... РўРµРїРµСЂСЊ С‚С‹ РёС‰РµС€СЊ СЋРЅРёС‚РѕСЂ?
+	AI_Output (hero, self,"PC_Thief_MEETAGAIN_Info_15_05"); //Р”Р°. РћРґРёРЅ РёР· РЅРёС… РґРѕР»Р¶РµРЅ Р±С‹С‚СЊ РіРґРµ-С‚Рѕ Р·РґРµСЃСЊ.
+	AI_Output (self, hero,"PC_Thief_MEETAGAIN_Info_11_06"); //РЇ Р·РЅР°СЋ, РіРґРµ РµРіРѕ РёСЃРєР°С‚СЊ. РќРѕ РµСЃС‚СЊ РѕРґРЅР° РїСЂРѕР±Р»РµРјР°.
+	AI_Output (hero, self,"PC_Thief_MEETAGAIN_Info_15_07"); //РџРѕРЅСЏС‚РЅРѕ. РЎРєРѕР»СЊРєРѕ С‚С‹ С…РѕС‡РµС€СЊ?
+	AI_Output (self, hero,"PC_Thief_MEETAGAIN_Info_11_08"); //РќРµ Р·СЂСЏ СЏ С‚РµР±СЏ СѓС‡РёР». РќРѕ СЃРµР№С‡Р°СЃ РґРµР»Рѕ РЅРµ РІ СЌС‚РѕРј.
+	AI_Output (hero, self,"PC_Thief_MEETAGAIN_Info_15_09"); //РќРµ РІ СЌС‚РѕРј? РўР°Рє РІ С‡РµРј Р¶Рµ С‚РѕРіРґР° РїСЂРѕР±Р»РµРјР°?
+	AI_Output (self, hero,"PC_Thief_MEETAGAIN_Info_11_10"); //РџСЂРѕР±Р»РµРјР° С‚РѕРЅРЅС‹ РЅР° С‚СЂРё РІРµСЃРѕРј.
+	AI_Output (self, hero,"PC_Thief_MEETAGAIN_Info_11_11"); //РРґРµРј. РўС‹ СЃР°Рј РІСЃРµ СѓРІРёРґРёС€СЊ.
 
  	self.aivar[AIV_PARTYMEMBER] = TRUE;
 	Npc_ExchangeRoutine (self,"GuideTroll");
 
 	Log_CreateTopic		(CH3_TrollCanyon,	LOG_MISSION);
 	Log_SetTopicStatus	(CH3_TrollCanyon,	LOG_RUNNING);
-	B_LogEntry		(CH3_TrollCanyon,"Когда я подходил к месту юнитора на севере, то  неожиданно столкнулся с Диего. Он предупредил, что в конце каньона меня поджидает большой сюрприз.");
-	B_LogEntry		(CH3_TrollCanyon,"Он как-то разузнал о моей деятельности в Болотном Лагере, а заодно и о поисках юнитора. Дальше мы пойдем вместе.");
+	B_LogEntry		(CH3_TrollCanyon,"РљРѕРіРґР° СЏ РїРѕРґС…РѕРґРёР» Рє РјРµСЃС‚Сѓ СЋРЅРёС‚РѕСЂР° РЅР° СЃРµРІРµСЂРµ, С‚Рѕ  РЅРµРѕР¶РёРґР°РЅРЅРѕ СЃС‚РѕР»РєРЅСѓР»СЃСЏ СЃ Р”РёРµРіРѕ. РћРЅ РїСЂРµРґСѓРїСЂРµРґРёР», С‡С‚Рѕ РІ РєРѕРЅС†Рµ РєР°РЅСЊРѕРЅР° РјРµРЅСЏ РїРѕРґР¶РёРґР°РµС‚ Р±РѕР»СЊС€РѕР№ СЃСЋСЂРїСЂРёР·.");
+	B_LogEntry		(CH3_TrollCanyon,"РћРЅ РєР°Рє-С‚Рѕ СЂР°Р·СѓР·РЅР°Р» Рѕ РјРѕРµР№ РґРµСЏС‚РµР»СЊРЅРѕСЃС‚Рё РІ Р‘РѕР»РѕС‚РЅРѕРј Р›Р°РіРµСЂРµ, Р° Р·Р°РѕРґРЅРѕ Рё Рѕ РїРѕРёСЃРєР°С… СЋРЅРёС‚РѕСЂР°. Р”Р°Р»СЊС€Рµ РјС‹ РїРѕР№РґРµРј РІРјРµСЃС‚Рµ.");
 
 	AI_StopProcessInfos	(self);
 };
@@ -1211,12 +1211,12 @@ func void  PC_Thief_SHOWFOCUS_Info()
 	//AI_PointAt (self, );
 	//AI_StopPointAt (self);
 	
-	AI_Output (self, hero,"PC_Thief_SHOWFOCUS_Info_11_01"); //По левую сторону ущелья расположен вход в пещеру, где хранится юнитор.
-	AI_Output (hero, self,"PC_Thief_SHOWFOCUS_Info_15_02"); //Понятно. Но прежде нам нужно избавиться от этой твари.
-	AI_Output (self, hero,"PC_Thief_SHOWFOCUS_Info_11_03"); //Чтобы победить тролля, тебе придется отыскать у него слабое место... или придумать что-нибудь еще.
-	AI_Output (self, hero,"PC_Thief_SHOWFOCUS_Info_11_04"); //Я отвлеку его.
+	AI_Output (self, hero,"PC_Thief_SHOWFOCUS_Info_11_01"); //РџРѕ Р»РµРІСѓСЋ СЃС‚РѕСЂРѕРЅСѓ СѓС‰РµР»СЊСЏ СЂР°СЃРїРѕР»РѕР¶РµРЅ РІС…РѕРґ РІ РїРµС‰РµСЂСѓ, РіРґРµ С…СЂР°РЅРёС‚СЃСЏ СЋРЅРёС‚РѕСЂ.
+	AI_Output (hero, self,"PC_Thief_SHOWFOCUS_Info_15_02"); //РџРѕРЅСЏС‚РЅРѕ. РќРѕ РїСЂРµР¶РґРµ РЅР°Рј РЅСѓР¶РЅРѕ РёР·Р±Р°РІРёС‚СЊСЃСЏ РѕС‚ СЌС‚РѕР№ С‚РІР°СЂРё.
+	AI_Output (self, hero,"PC_Thief_SHOWFOCUS_Info_11_03"); //Р§С‚РѕР±С‹ РїРѕР±РµРґРёС‚СЊ С‚СЂРѕР»Р»СЏ, С‚РµР±Рµ РїСЂРёРґРµС‚СЃСЏ РѕС‚С‹СЃРєР°С‚СЊ Сѓ РЅРµРіРѕ СЃР»Р°Р±РѕРµ РјРµСЃС‚Рѕ... РёР»Рё РїСЂРёРґСѓРјР°С‚СЊ С‡С‚Рѕ-РЅРёР±СѓРґСЊ РµС‰Рµ.
+	AI_Output (self, hero,"PC_Thief_SHOWFOCUS_Info_11_04"); //РЇ РѕС‚РІР»РµРєСѓ РµРіРѕ.
 
-	B_LogEntry		(CH3_TrollCanyon,"Мы вышли на огромного тролля, загораживающего дорогу. Диего хотел обойти его, а я предложил разобраться с ним.");
+	B_LogEntry		(CH3_TrollCanyon,"РњС‹ РІС‹С€Р»Рё РЅР° РѕРіСЂРѕРјРЅРѕРіРѕ С‚СЂРѕР»Р»СЏ, Р·Р°РіРѕСЂР°Р¶РёРІР°СЋС‰РµРіРѕ РґРѕСЂРѕРіСѓ. Р”РёРµРіРѕ С…РѕС‚РµР» РѕР±РѕР№С‚Рё РµРіРѕ, Р° СЏ РїСЂРµРґР»РѕР¶РёР» СЂР°Р·РѕР±СЂР°С‚СЊСЃСЏ СЃ РЅРёРј.");
 
 	Npc_ExchangeRoutine	(self,	"WaitAtWheel");
 
@@ -1252,10 +1252,10 @@ FUNC int  PC_Thief_AFTERTROLL_Condition()
 func void  PC_Thief_AFTERTROLL_Info()
 {
 	AI_GotoNpc			(self, hero);
-	AI_Output			(self, hero,"PC_Thief_AFTERTROLL_Info_11_01"); //Просто фантастика! Да, ты даром времени не терял! Что ж, идем за юнитором.
-	AI_Output			(self, hero,"PC_Thief_AFTERTROLL_Info_11_02"); //Я присмотрю за тем, чтобы больше не было никаких неприятных сюрпризов.
+	AI_Output			(self, hero,"PC_Thief_AFTERTROLL_Info_11_01"); //РџСЂРѕСЃС‚Рѕ С„Р°РЅС‚Р°СЃС‚РёРєР°! Р”Р°, С‚С‹ РґР°СЂРѕРј РІСЂРµРјРµРЅРё РЅРµ С‚РµСЂСЏР»! Р§С‚Рѕ Р¶, РёРґРµРј Р·Р° СЋРЅРёС‚РѕСЂРѕРј.
+	AI_Output			(self, hero,"PC_Thief_AFTERTROLL_Info_11_02"); //РЇ РїСЂРёСЃРјРѕС‚СЂСЋ Р·Р° С‚РµРј, С‡С‚РѕР±С‹ Р±РѕР»СЊС€Рµ РЅРµ Р±С‹Р»Рѕ РЅРёРєР°РєРёС… РЅРµРїСЂРёСЏС‚РЅС‹С… СЃСЋСЂРїСЂРёР·РѕРІ.
 
-	B_LogEntry		(CH3_TrollCanyon,"Тролль повержен. Теперь я могу заняться лебедкой, которая двигает решетку к платформе с юнитором.");
+	B_LogEntry		(CH3_TrollCanyon,"РўСЂРѕР»Р»СЊ РїРѕРІРµСЂР¶РµРЅ. РўРµРїРµСЂСЊ СЏ РјРѕРіСѓ Р·Р°РЅСЏС‚СЊСЃСЏ Р»РµР±РµРґРєРѕР№, РєРѕС‚РѕСЂР°СЏ РґРІРёРіР°РµС‚ СЂРµС€РµС‚РєСѓ Рє РїР»Р°С‚С„РѕСЂРјРµ СЃ СЋРЅРёС‚РѕСЂРѕРј.");
 
 	AI_StopProcessInfos	(self);
 };
@@ -1282,8 +1282,8 @@ FUNC int  PC_Thief_WHEEL_Condition()
 };
 FUNC void  PC_Thief_WHEEL_Info()
 {
-	AI_Output 			(self, hero,"PC_Thief_WHEEL_Info_11_01"); //Похоже, заклинило.
-	AI_Output 			(self, hero,"PC_Thief_WHEEL_Info_11_02"); //Дай-ка посмотрю, может быть, удастся исправить.
+	AI_Output 			(self, hero,"PC_Thief_WHEEL_Info_11_01"); //РџРѕС…РѕР¶Рµ, Р·Р°РєР»РёРЅРёР»Рѕ.
+	AI_Output 			(self, hero,"PC_Thief_WHEEL_Info_11_02"); //Р”Р°Р№-РєР° РїРѕСЃРјРѕС‚СЂСЋ, РјРѕР¶РµС‚ Р±С‹С‚СЊ, СѓРґР°СЃС‚СЃСЏ РёСЃРїСЂР°РІРёС‚СЊ.
 
 	AI_StopProcessInfos	(self);
 	AI_GotoWP 			(self,	"LOCATION_12_14_WHEEL");
@@ -1312,10 +1312,10 @@ FUNC int  PC_Thief_FIXWHEEL_Condition()
 };
 func void  PC_Thief_FIXWHEEL_Info()
 {
-	AI_Output 			(self, hero,"PC_Thief_FIXWHEEL_Info_11_01"); //Вот и заработала.
+	AI_Output 			(self, hero,"PC_Thief_FIXWHEEL_Info_11_01"); //Р’РѕС‚ Рё Р·Р°СЂР°Р±РѕС‚Р°Р»Р°.
 	Troll_Wheel = 2;	// Winde repariert!
 
-	B_LogEntry		(CH3_TrollCanyon,"Диего починил заевшую лебедку. Теперь путь свободен.");
+	B_LogEntry		(CH3_TrollCanyon,"Р”РёРµРіРѕ РїРѕС‡РёРЅРёР» Р·Р°РµРІС€СѓСЋ Р»РµР±РµРґРєСѓ. РўРµРїРµСЂСЊ РїСѓС‚СЊ СЃРІРѕР±РѕРґРµРЅ.");
 
 	Npc_ExchangeRoutine (self, "WaitAtFocus");
 
@@ -1346,7 +1346,7 @@ func void  PC_Thief_WAITATFOCUS_Info()
 {
 	AI_GotoNpc			(self, hero);
 
-	AI_Output 			(self, hero,"PC_Thief_WAITATFOCUS_Info_11_01"); //Забери юнитор. Я буду ждать тебя здесь.
+	AI_Output 			(self, hero,"PC_Thief_WAITATFOCUS_Info_11_01"); //Р—Р°Р±РµСЂРё СЋРЅРёС‚РѕСЂ. РЇ Р±СѓРґСѓ Р¶РґР°С‚СЊ С‚РµР±СЏ Р·РґРµСЃСЊ.
 
 	AI_StopProcessInfos	(self);
 };
@@ -1376,13 +1376,13 @@ FUNC void  PC_Thief_GOTIT_Info()
 {
 	AI_GotoNpc			(self, hero);
 
-	AI_Output			(self, hero,"PC_Thief_GOTIT_Info_11_01"); //Нашел юнитор? Молодец.
-	AI_Output			(self, hero,"PC_Thief_GOTIT_Info_11_02"); //Думаю, теперь мне пора возвращаться в Старый Лагерь. Удачи тебе!
-	AI_Output			(hero, self,"PC_Thief_GOTIT_Info_15_03"); //Будь осторожен.
-	AI_Output			(self, hero,"PC_Thief_GOTIT_Info_11_04"); //Мы еще встретимся.
+	AI_Output			(self, hero,"PC_Thief_GOTIT_Info_11_01"); //РќР°С€РµР» СЋРЅРёС‚РѕСЂ? РњРѕР»РѕРґРµС†.
+	AI_Output			(self, hero,"PC_Thief_GOTIT_Info_11_02"); //Р”СѓРјР°СЋ, С‚РµРїРµСЂСЊ РјРЅРµ РїРѕСЂР° РІРѕР·РІСЂР°С‰Р°С‚СЊСЃСЏ РІ РЎС‚Р°СЂС‹Р№ Р›Р°РіРµСЂСЊ. РЈРґР°С‡Рё С‚РµР±Рµ!
+	AI_Output			(hero, self,"PC_Thief_GOTIT_Info_15_03"); //Р‘СѓРґСЊ РѕСЃС‚РѕСЂРѕР¶РµРЅ.
+	AI_Output			(self, hero,"PC_Thief_GOTIT_Info_11_04"); //РњС‹ РµС‰Рµ РІСЃС‚СЂРµС‚РёРјСЃСЏ.
 
-	B_LogEntry		(CH3_TrollCanyon,"Юнитор у меня. Но мне еще надо убедить нескольких гарпий, что у меня есть право его у себя и оставить.");
-	B_LogEntry		(CH3_TrollCanyon,"Диего возвращается в Старый Лагерь. Я почему-то уверен, что это не последняя наша встреча.");
+	B_LogEntry		(CH3_TrollCanyon,"Р®РЅРёС‚РѕСЂ Сѓ РјРµРЅСЏ. РќРѕ РјРЅРµ РµС‰Рµ РЅР°РґРѕ СѓР±РµРґРёС‚СЊ РЅРµСЃРєРѕР»СЊРєРёС… РіР°СЂРїРёР№, С‡С‚Рѕ Сѓ РјРµРЅСЏ РµСЃС‚СЊ РїСЂР°РІРѕ РµРіРѕ Сѓ СЃРµР±СЏ Рё РѕСЃС‚Р°РІРёС‚СЊ.");
+	B_LogEntry		(CH3_TrollCanyon,"Р”РёРµРіРѕ РІРѕР·РІСЂР°С‰Р°РµС‚СЃСЏ РІ РЎС‚Р°СЂС‹Р№ Р›Р°РіРµСЂСЊ. РЇ РїРѕС‡РµРјСѓ-С‚Рѕ СѓРІРµСЂРµРЅ, С‡С‚Рѕ СЌС‚Рѕ РЅРµ РїРѕСЃР»РµРґРЅСЏСЏ РЅР°С€Р° РІСЃС‚СЂРµС‡Р°.");
 
  	self.aivar[AIV_PARTYMEMBER] = FALSE;
 
@@ -1431,20 +1431,20 @@ func void Info_Diego_OCWARN_Info()
 {
 	AI_GotoNpc			(self,hero);
 
-	AI_Output			(self,hero,"Info_Diego_OCWARN_11_01"); //Эй... Т-ссс... Тише!
+	AI_Output			(self,hero,"Info_Diego_OCWARN_11_01"); //Р­Р№... Рў-СЃСЃСЃ... РўРёС€Рµ!
 	if (Npc_KnowsInfo(hero, Info_Milten_OCWARN))
 	{
-		AI_Output		(hero,self,"Info_Diego_OCWARN_15_02"); //Привет, Диего! Я встретил Мильтена на другом конце Лагеря.
-		AI_Output		(self,hero,"Info_Diego_OCWARN_11_03"); //Тогда ты уже знаешь, что здесь произошло.
-		AI_Output		(self,hero,"Info_Diego_OCWARN_11_04"); //А слышал ли ты о готовящемся нападении на Свободную Шахту?
+		AI_Output		(hero,self,"Info_Diego_OCWARN_15_02"); //РџСЂРёРІРµС‚, Р”РёРµРіРѕ! РЇ РІСЃС‚СЂРµС‚РёР» РњРёР»СЊС‚РµРЅР° РЅР° РґСЂСѓРіРѕРј РєРѕРЅС†Рµ Р›Р°РіРµСЂСЏ.
+		AI_Output		(self,hero,"Info_Diego_OCWARN_11_03"); //РўРѕРіРґР° С‚С‹ СѓР¶Рµ Р·РЅР°РµС€СЊ, С‡С‚Рѕ Р·РґРµСЃСЊ РїСЂРѕРёР·РѕС€Р»Рѕ.
+		AI_Output		(self,hero,"Info_Diego_OCWARN_11_04"); //Рђ СЃР»С‹С€Р°Р» Р»Рё С‚С‹ Рѕ РіРѕС‚РѕРІСЏС‰РµРјСЃСЏ РЅР°РїР°РґРµРЅРёРё РЅР° РЎРІРѕР±РѕРґРЅСѓСЋ РЁР°С…С‚Сѓ?
 	}
 	else
 	{
-		AI_Output		(hero,self,"Info_Diego_OCWARN_15_05"); //Привет, Диего! Что это за игра в прятки?
-		AI_Output		(self,hero,"Info_Diego_OCWARN_11_06"); //Ты разве еще не слышал?
-		AI_Output		(hero,self,"Info_Diego_OCWARN_15_07"); //Слышал что?
-		AI_Output		(self,hero,"Info_Diego_OCWARN_11_08"); //Старая Шахта обрушилась, перебили всех магов Огня, и готовится нападение на Свободную Шахту.
-		AI_Output		(hero,self,"Info_Diego_OCWARN_15_09"); //ЧТООО??? О чем ты говоришь?
+		AI_Output		(hero,self,"Info_Diego_OCWARN_15_05"); //РџСЂРёРІРµС‚, Р”РёРµРіРѕ! Р§С‚Рѕ СЌС‚Рѕ Р·Р° РёРіСЂР° РІ РїСЂСЏС‚РєРё?
+		AI_Output		(self,hero,"Info_Diego_OCWARN_11_06"); //РўС‹ СЂР°Р·РІРµ РµС‰Рµ РЅРµ СЃР»С‹С€Р°Р»?
+		AI_Output		(hero,self,"Info_Diego_OCWARN_15_07"); //РЎР»С‹С€Р°Р» С‡С‚Рѕ?
+		AI_Output		(self,hero,"Info_Diego_OCWARN_11_08"); //РЎС‚Р°СЂР°СЏ РЁР°С…С‚Р° РѕР±СЂСѓС€РёР»Р°СЃСЊ, РїРµСЂРµР±РёР»Рё РІСЃРµС… РјР°РіРѕРІ РћРіРЅСЏ, Рё РіРѕС‚РѕРІРёС‚СЃСЏ РЅР°РїР°РґРµРЅРёРµ РЅР° РЎРІРѕР±РѕРґРЅСѓСЋ РЁР°С…С‚Сѓ.
+		AI_Output		(hero,self,"Info_Diego_OCWARN_15_09"); //Р§РўРћРћРћ??? Рћ С‡РµРј С‚С‹ РіРѕРІРѕСЂРёС€СЊ?
 	};
 };
 
@@ -1458,7 +1458,7 @@ instance Info_Diego_OCMINE (C_INFO)
 	information	= Info_Diego_OCMINE_Info;
 	important	= 0;
 	permanent	= 0;
-	description = "Как могла обрушиться Старая Шахта?";
+	description = "РљР°Рє РјРѕРіР»Р° РѕР±СЂСѓС€РёС‚СЊСЃСЏ РЎС‚Р°СЂР°СЏ РЁР°С…С‚Р°?";
 };
 
 FUNC int Info_Diego_OCMINE_Condition()
@@ -1471,10 +1471,10 @@ FUNC int Info_Diego_OCMINE_Condition()
 
 func void Info_Diego_OCMINE_Info()
 {
-	AI_Output		(hero,self,"Info_Diego_OCMINE_15_01"); //Как могла обрушиться Старая Шахта?
-	AI_Output		(self,hero,"Info_Diego_OCMINE_11_02"); //Один из уцелевших рудокопов говорит, что они наткнулись на подземную реку на нижнем уровне.
-	AI_Output		(self,hero,"Info_Diego_OCMINE_11_03"); //Когда вода хлынула в шахту, сломалась одна из подпорок, и верхний уровень обрушился.
-	AI_Output		(self,hero,"Info_Diego_OCMINE_11_04"); //Уцелела лишь горстка людей.
+	AI_Output		(hero,self,"Info_Diego_OCMINE_15_01"); //РљР°Рє РјРѕРіР»Р° РѕР±СЂСѓС€РёС‚СЊСЃСЏ РЎС‚Р°СЂР°СЏ РЁР°С…С‚Р°?
+	AI_Output		(self,hero,"Info_Diego_OCMINE_11_02"); //РћРґРёРЅ РёР· СѓС†РµР»РµРІС€РёС… СЂСѓРґРѕРєРѕРїРѕРІ РіРѕРІРѕСЂРёС‚, С‡С‚Рѕ РѕРЅРё РЅР°С‚РєРЅСѓР»РёСЃСЊ РЅР° РїРѕРґР·РµРјРЅСѓСЋ СЂРµРєСѓ РЅР° РЅРёР¶РЅРµРј СѓСЂРѕРІРЅРµ.
+	AI_Output		(self,hero,"Info_Diego_OCMINE_11_03"); //РљРѕРіРґР° РІРѕРґР° С…Р»С‹РЅСѓР»Р° РІ С€Р°С…С‚Сѓ, СЃР»РѕРјР°Р»Р°СЃСЊ РѕРґРЅР° РёР· РїРѕРґРїРѕСЂРѕРє, Рё РІРµСЂС…РЅРёР№ СѓСЂРѕРІРµРЅСЊ РѕР±СЂСѓС€РёР»СЃСЏ.
+	AI_Output		(self,hero,"Info_Diego_OCMINE_11_04"); //РЈС†РµР»РµР»Р° Р»РёС€СЊ РіРѕСЂСЃС‚РєР° Р»СЋРґРµР№.
 };
 
 //***************************************************************************
@@ -1487,7 +1487,7 @@ instance Info_Diego_OCKDF (C_INFO)
 	information	= Info_Diego_OCKDF_Info;
 	important	= 0;
 	permanent	= 0;
-	description = "Что случилось с магами Огня?";
+	description = "Р§С‚Рѕ СЃР»СѓС‡РёР»РѕСЃСЊ СЃ РјР°РіР°РјРё РћРіРЅСЏ?";
 };
 
 FUNC int Info_Diego_OCKDF_Condition()
@@ -1500,8 +1500,8 @@ FUNC int Info_Diego_OCKDF_Condition()
 
 func void Info_Diego_OCKDF_Info()
 {
-	AI_Output		(hero,self,"Info_Diego_OCKDF_15_01"); //Что случилось с магами Огня?
-	AI_Output		(self,hero,"Info_Diego_OCKDF_11_02"); //Это долгая история.
+	AI_Output		(hero,self,"Info_Diego_OCKDF_15_01"); //Р§С‚Рѕ СЃР»СѓС‡РёР»РѕСЃСЊ СЃ РјР°РіР°РјРё РћРіРЅСЏ?
+	AI_Output		(self,hero,"Info_Diego_OCKDF_11_02"); //Р­С‚Рѕ РґРѕР»РіР°СЏ РёСЃС‚РѕСЂРёСЏ.
 };
 
 //***************************************************************************
@@ -1514,7 +1514,7 @@ instance Info_Diego_OCFM (C_INFO)
 	information	= Info_Diego_OCFM_Info;
 	important	= 0;
 	permanent	= 0;
-	description = "Нападение на Свободную Шахту?";
+	description = "РќР°РїР°РґРµРЅРёРµ РЅР° РЎРІРѕР±РѕРґРЅСѓСЋ РЁР°С…С‚Сѓ?";
 };
 
 FUNC int Info_Diego_OCFM_Condition()
@@ -1527,8 +1527,8 @@ FUNC int Info_Diego_OCFM_Condition()
 
 func void Info_Diego_OCFM_Info()
 {
-	AI_Output		(hero,self,"Info_Diego_OCFM_15_01"); //Нападение на Свободную Шахту?
-	AI_Output		(self,hero,"Info_Diego_OCFM_11_02"); //Это долгая история.
+	AI_Output		(hero,self,"Info_Diego_OCFM_15_01"); //РќР°РїР°РґРµРЅРёРµ РЅР° РЎРІРѕР±РѕРґРЅСѓСЋ РЁР°С…С‚Сѓ?
+	AI_Output		(self,hero,"Info_Diego_OCFM_11_02"); //Р­С‚Рѕ РґРѕР»РіР°СЏ РёСЃС‚РѕСЂРёСЏ.
 };
 
 //***************************************************************************
@@ -1541,7 +1541,7 @@ instance Info_Diego_OCSTORY (C_INFO)
 	information	= Info_Diego_OCSTORY_Info;
 	important	= 0;
 	permanent	= 0;
-	description = "Просто скажи!";
+	description = "РџСЂРѕСЃС‚Рѕ СЃРєР°Р¶Рё!";
 };
 
 FUNC int Info_Diego_OCSTORY_Condition()
@@ -1554,15 +1554,15 @@ FUNC int Info_Diego_OCSTORY_Condition()
 
 func void Info_Diego_OCSTORY_Info()
 {
-	AI_Output		(hero,self,"Info_Diego_OCSTORY_15_01"); //Расскажи мне. Это уже не первая долгая история из тех, что мне приходилось слышать.
-	AI_Output		(self,hero,"Info_Diego_OCSTORY_11_02"); //Ну, хорошо. По счастью я оказался в особняке Баронов, когда пришло сообщение о том, что шахта обрушилась.
-	AI_Output		(self,hero,"Info_Diego_OCSTORY_11_03"); //Когда Гомез услышал это, он чуть с ума не сошел.
-	AI_Output		(hero,self,"Info_Diego_OCSTORY_15_04"); //Еще бы. Тот, кто контролирует добычу руды, по сути владеет всей колонией.
-	AI_Output		(self,hero,"Info_Diego_OCSTORY_11_05"); //Верно. Поскольку источник дохода иссяк, товары из внешнего мира тоже перестанут поступать.
-	AI_Output		(self,hero,"Info_Diego_OCSTORY_11_06"); //Если он быстро не найдет новый источник дохода,  на него никто не будет работать.
-	AI_Output		(hero,self,"Info_Diego_OCSTORY_15_07"); //И зачем понадобилось нападать на Свободную Шахту?
-	AI_Output		(self,hero,"Info_Diego_OCSTORY_11_08"); //Если быть честным, это единственны шанс Гомеза удержать власть в своих руках.
-	AI_Output		(self,hero,"Info_Diego_OCSTORY_11_09"); //Пару часов назад к Свободной Шахте отправили два десятка стражников.
+	AI_Output		(hero,self,"Info_Diego_OCSTORY_15_01"); //Р Р°СЃСЃРєР°Р¶Рё РјРЅРµ. Р­С‚Рѕ СѓР¶Рµ РЅРµ РїРµСЂРІР°СЏ РґРѕР»РіР°СЏ РёСЃС‚РѕСЂРёСЏ РёР· С‚РµС…, С‡С‚Рѕ РјРЅРµ РїСЂРёС…РѕРґРёР»РѕСЃСЊ СЃР»С‹С€Р°С‚СЊ.
+	AI_Output		(self,hero,"Info_Diego_OCSTORY_11_02"); //РќСѓ, С…РѕСЂРѕС€Рѕ. РџРѕ СЃС‡Р°СЃС‚СЊСЋ СЏ РѕРєР°Р·Р°Р»СЃСЏ РІ РѕСЃРѕР±РЅСЏРєРµ Р‘Р°СЂРѕРЅРѕРІ, РєРѕРіРґР° РїСЂРёС€Р»Рѕ СЃРѕРѕР±С‰РµРЅРёРµ Рѕ С‚РѕРј, С‡С‚Рѕ С€Р°С…С‚Р° РѕР±СЂСѓС€РёР»Р°СЃСЊ.
+	AI_Output		(self,hero,"Info_Diego_OCSTORY_11_03"); //РљРѕРіРґР° Р“РѕРјРµР· СѓСЃР»С‹С€Р°Р» СЌС‚Рѕ, РѕРЅ С‡СѓС‚СЊ СЃ СѓРјР° РЅРµ СЃРѕС€РµР».
+	AI_Output		(hero,self,"Info_Diego_OCSTORY_15_04"); //Р•С‰Рµ Р±С‹. РўРѕС‚, РєС‚Рѕ РєРѕРЅС‚СЂРѕР»РёСЂСѓРµС‚ РґРѕР±С‹С‡Сѓ СЂСѓРґС‹, РїРѕ СЃСѓС‚Рё РІР»Р°РґРµРµС‚ РІСЃРµР№ РєРѕР»РѕРЅРёРµР№.
+	AI_Output		(self,hero,"Info_Diego_OCSTORY_11_05"); //Р’РµСЂРЅРѕ. РџРѕСЃРєРѕР»СЊРєСѓ РёСЃС‚РѕС‡РЅРёРє РґРѕС…РѕРґР° РёСЃСЃСЏРє, С‚РѕРІР°СЂС‹ РёР· РІРЅРµС€РЅРµРіРѕ РјРёСЂР° С‚РѕР¶Рµ РїРµСЂРµСЃС‚Р°РЅСѓС‚ РїРѕСЃС‚СѓРїР°С‚СЊ.
+	AI_Output		(self,hero,"Info_Diego_OCSTORY_11_06"); //Р•СЃР»Рё РѕРЅ Р±С‹СЃС‚СЂРѕ РЅРµ РЅР°Р№РґРµС‚ РЅРѕРІС‹Р№ РёСЃС‚РѕС‡РЅРёРє РґРѕС…РѕРґР°,  РЅР° РЅРµРіРѕ РЅРёРєС‚Рѕ РЅРµ Р±СѓРґРµС‚ СЂР°Р±РѕС‚Р°С‚СЊ.
+	AI_Output		(hero,self,"Info_Diego_OCSTORY_15_07"); //Р Р·Р°С‡РµРј РїРѕРЅР°РґРѕР±РёР»РѕСЃСЊ РЅР°РїР°РґР°С‚СЊ РЅР° РЎРІРѕР±РѕРґРЅСѓСЋ РЁР°С…С‚Сѓ?
+	AI_Output		(self,hero,"Info_Diego_OCSTORY_11_08"); //Р•СЃР»Рё Р±С‹С‚СЊ С‡РµСЃС‚РЅС‹Рј, СЌС‚Рѕ РµРґРёРЅСЃС‚РІРµРЅРЅС‹ С€Р°РЅСЃ Р“РѕРјРµР·Р° СѓРґРµСЂР¶Р°С‚СЊ РІР»Р°СЃС‚СЊ РІ СЃРІРѕРёС… СЂСѓРєР°С….
+	AI_Output		(self,hero,"Info_Diego_OCSTORY_11_09"); //РџР°СЂСѓ С‡Р°СЃРѕРІ РЅР°Р·Р°Рґ Рє РЎРІРѕР±РѕРґРЅРѕР№ РЁР°С…С‚Рµ РѕС‚РїСЂР°РІРёР»Рё РґРІР° РґРµСЃСЏС‚РєР° СЃС‚СЂР°Р¶РЅРёРєРѕРІ.
 
 	B_Story_FMTaken	();
 };
@@ -1577,7 +1577,7 @@ instance Info_Diego_OCWARNNC (C_INFO)
 	information	= Info_Diego_OCWARNNC_Info;
 	important	= 0;
 	permanent	= 0;
-	description = "Это какое-то безумие! Я должен предупредить Новый Лагерь!";
+	description = "Р­С‚Рѕ РєР°РєРѕРµ-С‚Рѕ Р±РµР·СѓРјРёРµ! РЇ РґРѕР»Р¶РµРЅ РїСЂРµРґСѓРїСЂРµРґРёС‚СЊ РќРѕРІС‹Р№ Р›Р°РіРµСЂСЊ!";
 };
 
 FUNC int Info_Diego_OCWARNNC_Condition()
@@ -1590,10 +1590,10 @@ FUNC int Info_Diego_OCWARNNC_Condition()
 
 func void Info_Diego_OCWARNNC_Info()
 {
-	AI_Output		(hero,self,"Info_Diego_OCWARNNC_15_01"); //Это какое-то безумие! Я должен предупредить Новый Лагерь!
-	AI_Output		(self,hero,"Info_Diego_OCWARNNC_11_02"); //Тогда тебе нужно торопиться! Они уже почти добрались до Свободной Шахты.
-	AI_Output		(hero,self,"Info_Diego_OCWARNNC_15_03"); //Но им не прорваться через укрепления Нового Лагеря!
-	AI_Output		(self,hero,"Info_Diego_OCWARNNC_11_04"); //А это им и не нужно. Несколько месяцев назад они нашли путь, который ведет через горы прямо к Свободной Шахте, - и никто о нем не знает.
+	AI_Output		(hero,self,"Info_Diego_OCWARNNC_15_01"); //Р­С‚Рѕ РєР°РєРѕРµ-С‚Рѕ Р±РµР·СѓРјРёРµ! РЇ РґРѕР»Р¶РµРЅ РїСЂРµРґСѓРїСЂРµРґРёС‚СЊ РќРѕРІС‹Р№ Р›Р°РіРµСЂСЊ!
+	AI_Output		(self,hero,"Info_Diego_OCWARNNC_11_02"); //РўРѕРіРґР° С‚РµР±Рµ РЅСѓР¶РЅРѕ С‚РѕСЂРѕРїРёС‚СЊСЃСЏ! РћРЅРё СѓР¶Рµ РїРѕС‡С‚Рё РґРѕР±СЂР°Р»РёСЃСЊ РґРѕ РЎРІРѕР±РѕРґРЅРѕР№ РЁР°С…С‚С‹.
+	AI_Output		(hero,self,"Info_Diego_OCWARNNC_15_03"); //РќРѕ РёРј РЅРµ РїСЂРѕСЂРІР°С‚СЊСЃСЏ С‡РµСЂРµР· СѓРєСЂРµРїР»РµРЅРёСЏ РќРѕРІРѕРіРѕ Р›Р°РіРµСЂСЏ!
+	AI_Output		(self,hero,"Info_Diego_OCWARNNC_11_04"); //Рђ СЌС‚Рѕ РёРј Рё РЅРµ РЅСѓР¶РЅРѕ. РќРµСЃРєРѕР»СЊРєРѕ РјРµСЃСЏС†РµРІ РЅР°Р·Р°Рґ РѕРЅРё РЅР°С€Р»Рё РїСѓС‚СЊ, РєРѕС‚РѕСЂС‹Р№ РІРµРґРµС‚ С‡РµСЂРµР· РіРѕСЂС‹ РїСЂСЏРјРѕ Рє РЎРІРѕР±РѕРґРЅРѕР№ РЁР°С…С‚Рµ, - Рё РЅРёРєС‚Рѕ Рѕ РЅРµРј РЅРµ Р·РЅР°РµС‚.
 };
 
 //***************************************************************************
@@ -1606,7 +1606,7 @@ instance Info_Diego_OCGUARDS (C_INFO)
 	information	= Info_Diego_OCGUARDS_Info;
 	important	= 0;
 	permanent	= 0;
-	description = "Ворота закрыты, и перед ними стоят стражники.";
+	description = "Р’РѕСЂРѕС‚Р° Р·Р°РєСЂС‹С‚С‹, Рё РїРµСЂРµРґ РЅРёРјРё СЃС‚РѕСЏС‚ СЃС‚СЂР°Р¶РЅРёРєРё.";
 };
 
 FUNC int Info_Diego_OCGUARDS_Condition()
@@ -1619,9 +1619,9 @@ FUNC int Info_Diego_OCGUARDS_Condition()
 
 func void Info_Diego_OCGUARDS_Info()
 {
-	AI_Output		(hero,self,"Info_Diego_OCGUARDS_15_01"); //Ворота закрыты, и перед ними стоят стражники.
-	AI_Output		(self,hero,"Info_Diego_OCGUARDS_11_02"); //Держись от них подальше. Они убьют всякого, кто подойдет к Лагерю.
-	AI_Output		(self,hero,"Info_Diego_OCGUARDS_11_03"); //Они боятся, что кто-нибудь захочет отомстить за нападение на Свободную Шахту.
+	AI_Output		(hero,self,"Info_Diego_OCGUARDS_15_01"); //Р’РѕСЂРѕС‚Р° Р·Р°РєСЂС‹С‚С‹, Рё РїРµСЂРµРґ РЅРёРјРё СЃС‚РѕСЏС‚ СЃС‚СЂР°Р¶РЅРёРєРё.
+	AI_Output		(self,hero,"Info_Diego_OCGUARDS_11_02"); //Р”РµСЂР¶РёСЃСЊ РѕС‚ РЅРёС… РїРѕРґР°Р»СЊС€Рµ. РћРЅРё СѓР±СЊСЋС‚ РІСЃСЏРєРѕРіРѕ, РєС‚Рѕ РїРѕРґРѕР№РґРµС‚ Рє Р›Р°РіРµСЂСЋ.
+	AI_Output		(self,hero,"Info_Diego_OCGUARDS_11_03"); //РћРЅРё Р±РѕСЏС‚СЃСЏ, С‡С‚Рѕ РєС‚Рѕ-РЅРёР±СѓРґСЊ Р·Р°С…РѕС‡РµС‚ РѕС‚РѕРјСЃС‚РёС‚СЊ Р·Р° РЅР°РїР°РґРµРЅРёРµ РЅР° РЎРІРѕР±РѕРґРЅСѓСЋ РЁР°С…С‚Сѓ.
 };
 
 //***************************************************************************
@@ -1634,7 +1634,7 @@ instance Info_Diego_OCMURDER (C_INFO)
 	information	= Info_Diego_OCMURDER_Info;
 	important	= 0;
 	permanent	= 0;
-	description = "Но что случилось с магами Огня?";
+	description = "РќРѕ С‡С‚Рѕ СЃР»СѓС‡РёР»РѕСЃСЊ СЃ РјР°РіР°РјРё РћРіРЅСЏ?";
 };
 
 FUNC int Info_Diego_OCMURDER_Condition()
@@ -1647,11 +1647,11 @@ FUNC int Info_Diego_OCMURDER_Condition()
 
 func void Info_Diego_OCMURDER_Info()
 {
-	AI_Output		(hero,self,"Info_Diego_OCMURDER_15_01"); //Но что случилось с магами Огня?
-	AI_Output		(self,hero,"Info_Diego_OCMURDER_11_02"); //Корристо и остальные маги оставались единственными в Лагере, кто сохранил рассудок в подобной ситуации. 
-	AI_Output		(self,hero,"Info_Diego_OCMURDER_11_03"); //Они запретили нападать на Свободную Шахту и потребовали связаться с двумя остальными Лагерями.
-	AI_Output		(hero,self,"Info_Diego_OCMURDER_15_04"); //Они ЗАПРЕТИЛИ Гомезу нападать на Свободную Шахту?
-	AI_Output		(self,hero,"Info_Diego_OCMURDER_11_05"); //Ну да. Корристо не должен был быть настолько самоуверенным. Гомез перестал доверять магам и предательски убил их всех.
+	AI_Output		(hero,self,"Info_Diego_OCMURDER_15_01"); //РќРѕ С‡С‚Рѕ СЃР»СѓС‡РёР»РѕСЃСЊ СЃ РјР°РіР°РјРё РћРіРЅСЏ?
+	AI_Output		(self,hero,"Info_Diego_OCMURDER_11_02"); //РљРѕСЂСЂРёСЃС‚Рѕ Рё РѕСЃС‚Р°Р»СЊРЅС‹Рµ РјР°РіРё РѕСЃС‚Р°РІР°Р»РёСЃСЊ РµРґРёРЅСЃС‚РІРµРЅРЅС‹РјРё РІ Р›Р°РіРµСЂРµ, РєС‚Рѕ СЃРѕС…СЂР°РЅРёР» СЂР°СЃСЃСѓРґРѕРє РІ РїРѕРґРѕР±РЅРѕР№ СЃРёС‚СѓР°С†РёРё. 
+	AI_Output		(self,hero,"Info_Diego_OCMURDER_11_03"); //РћРЅРё Р·Р°РїСЂРµС‚РёР»Рё РЅР°РїР°РґР°С‚СЊ РЅР° РЎРІРѕР±РѕРґРЅСѓСЋ РЁР°С…С‚Сѓ Рё РїРѕС‚СЂРµР±РѕРІР°Р»Рё СЃРІСЏР·Р°С‚СЊСЃСЏ СЃ РґРІСѓРјСЏ РѕСЃС‚Р°Р»СЊРЅС‹РјРё Р›Р°РіРµСЂСЏРјРё.
+	AI_Output		(hero,self,"Info_Diego_OCMURDER_15_04"); //РћРЅРё Р—РђРџР Р•РўРР›Р Р“РѕРјРµР·Сѓ РЅР°РїР°РґР°С‚СЊ РЅР° РЎРІРѕР±РѕРґРЅСѓСЋ РЁР°С…С‚Сѓ?
+	AI_Output		(self,hero,"Info_Diego_OCMURDER_11_05"); //РќСѓ РґР°. РљРѕСЂСЂРёСЃС‚Рѕ РЅРµ РґРѕР»Р¶РµРЅ Р±С‹Р» Р±С‹С‚СЊ РЅР°СЃС‚РѕР»СЊРєРѕ СЃР°РјРѕСѓРІРµСЂРµРЅРЅС‹Рј. Р“РѕРјРµР· РїРµСЂРµСЃС‚Р°Р» РґРѕРІРµСЂСЏС‚СЊ РјР°РіР°Рј Рё РїСЂРµРґР°С‚РµР»СЊСЃРєРё СѓР±РёР» РёС… РІСЃРµС….
 };
 
 //***************************************************************************
@@ -1664,7 +1664,7 @@ instance Info_Diego_OCRETREAT (C_INFO)
 	information	= Info_Diego_OCRETREAT_Info;
 	important	= 0;
 	permanent	= 0;
-	description = "Что вы с Мильтеном теперь собираетесь делать?";
+	description = "Р§С‚Рѕ РІС‹ СЃ РњРёР»СЊС‚РµРЅРѕРј С‚РµРїРµСЂСЊ СЃРѕР±РёСЂР°РµС‚РµСЃСЊ РґРµР»Р°С‚СЊ?";
 };
 
 FUNC int Info_Diego_OCRETREAT_Condition()
@@ -1677,9 +1677,9 @@ FUNC int Info_Diego_OCRETREAT_Condition()
 
 func void Info_Diego_OCRETREAT_Info()
 {
-	AI_Output		(hero,self,"Info_Diego_OCRETREAT_15_01"); //Что вы с Мильтеном теперь собираетесь делать?
-	AI_Output		(self,hero,"Info_Diego_OCRETREAT_11_02"); //Мы еще немного побудем здесь. Нужно предупредить наших друзей, чтобы они не наткнулись ненароком на стражу.
-	AI_Output		(self,hero,"Info_Diego_OCRETREAT_11_03"); //Ты бы мог оказать нам услугу.
+	AI_Output		(hero,self,"Info_Diego_OCRETREAT_15_01"); //Р§С‚Рѕ РІС‹ СЃ РњРёР»СЊС‚РµРЅРѕРј С‚РµРїРµСЂСЊ СЃРѕР±РёСЂР°РµС‚РµСЃСЊ РґРµР»Р°С‚СЊ?
+	AI_Output		(self,hero,"Info_Diego_OCRETREAT_11_02"); //РњС‹ РµС‰Рµ РЅРµРјРЅРѕРіРѕ РїРѕР±СѓРґРµРј Р·РґРµСЃСЊ. РќСѓР¶РЅРѕ РїСЂРµРґСѓРїСЂРµРґРёС‚СЊ РЅР°С€РёС… РґСЂСѓР·РµР№, С‡С‚РѕР±С‹ РѕРЅРё РЅРµ РЅР°С‚РєРЅСѓР»РёСЃСЊ РЅРµРЅР°СЂРѕРєРѕРј РЅР° СЃС‚СЂР°Р¶Сѓ.
+	AI_Output		(self,hero,"Info_Diego_OCRETREAT_11_03"); //РўС‹ Р±С‹ РјРѕРі РѕРєР°Р·Р°С‚СЊ РЅР°Рј СѓСЃР»СѓРіСѓ.
 };
 
 //***************************************************************************
@@ -1692,7 +1692,7 @@ instance Info_Diego_OCFAVOR (C_INFO)
 	information	= Info_Diego_OCFAVOR_Info;
 	important	= 0;
 	permanent	= 0;
-	description = "Считай, что все уже сделано! Что тебе нужно?";
+	description = "РЎС‡РёС‚Р°Р№, С‡С‚Рѕ РІСЃРµ СѓР¶Рµ СЃРґРµР»Р°РЅРѕ! Р§С‚Рѕ С‚РµР±Рµ РЅСѓР¶РЅРѕ?";
 };
 
 FUNC int Info_Diego_OCFAVOR_Condition()
@@ -1705,15 +1705,15 @@ FUNC int Info_Diego_OCFAVOR_Condition()
 
 func void Info_Diego_OCFAVOR_Info()
 {
-	AI_Output		(hero,self,"Info_Diego_OCFAVOR_15_01"); //Считай, что все уже сделано! Что тебе нужно?
-	AI_Output		(self,hero,"Info_Diego_OCFAVOR_11_02"); //Разыщи Лестера и Горна. Нужно рассказать им о том, что здесь происходит.
-	AI_Output		(self,hero,"Info_Diego_OCFAVOR_11_03"); //Скажи им, что мы четверо встречаемся там же, где и всегда.
-	AI_Output		(hero,self,"Info_Diego_OCFAVOR_15_04"); //Если я найду их раньше, чем ты, я предупрежу их и отправлю вам навстречу.
-	AI_Output		(self,hero,"Info_Diego_OCFAVOR_11_05"); //Спасибо, друг! Ты отличный парень! Надеюсь, мы еще встретимся.
+	AI_Output		(hero,self,"Info_Diego_OCFAVOR_15_01"); //РЎС‡РёС‚Р°Р№, С‡С‚Рѕ РІСЃРµ СѓР¶Рµ СЃРґРµР»Р°РЅРѕ! Р§С‚Рѕ С‚РµР±Рµ РЅСѓР¶РЅРѕ?
+	AI_Output		(self,hero,"Info_Diego_OCFAVOR_11_02"); //Р Р°Р·С‹С‰Рё Р›РµСЃС‚РµСЂР° Рё Р“РѕСЂРЅР°. РќСѓР¶РЅРѕ СЂР°СЃСЃРєР°Р·Р°С‚СЊ РёРј Рѕ С‚РѕРј, С‡С‚Рѕ Р·РґРµСЃСЊ РїСЂРѕРёСЃС…РѕРґРёС‚.
+	AI_Output		(self,hero,"Info_Diego_OCFAVOR_11_03"); //РЎРєР°Р¶Рё РёРј, С‡С‚Рѕ РјС‹ С‡РµС‚РІРµСЂРѕ РІСЃС‚СЂРµС‡Р°РµРјСЃСЏ С‚Р°Рј Р¶Рµ, РіРґРµ Рё РІСЃРµРіРґР°.
+	AI_Output		(hero,self,"Info_Diego_OCFAVOR_15_04"); //Р•СЃР»Рё СЏ РЅР°Р№РґСѓ РёС… СЂР°РЅСЊС€Рµ, С‡РµРј С‚С‹, СЏ РїСЂРµРґСѓРїСЂРµР¶Сѓ РёС… Рё РѕС‚РїСЂР°РІР»СЋ РІР°Рј РЅР°РІСЃС‚СЂРµС‡Сѓ.
+	AI_Output		(self,hero,"Info_Diego_OCFAVOR_11_05"); //РЎРїР°СЃРёР±Рѕ, РґСЂСѓРі! РўС‹ РѕС‚Р»РёС‡РЅС‹Р№ РїР°СЂРµРЅСЊ! РќР°РґРµСЋСЃСЊ, РјС‹ РµС‰Рµ РІСЃС‚СЂРµС‚РёРјСЃСЏ.
 				
 	Log_CreateTopic		(CH4_4Friends,		LOG_MISSION);
 	Log_SetTopicStatus	(CH4_4Friends,		LOG_RUNNING);
-	B_LogEntry			(CH4_4Friends,		"Все маги огня мертвы, а ситуация выходит из-под контроля. Диего хочет, чтобы я рассказал Лестеру и Горну о их секретном встрече с Мильтоном. Похоже на то, что они делают так уже далеко не в первый раз."); 
+	B_LogEntry			(CH4_4Friends,		"Р’СЃРµ РјР°РіРё РѕРіРЅСЏ РјРµСЂС‚РІС‹, Р° СЃРёС‚СѓР°С†РёСЏ РІС‹С…РѕРґРёС‚ РёР·-РїРѕРґ РєРѕРЅС‚СЂРѕР»СЏ. Р”РёРµРіРѕ С…РѕС‡РµС‚, С‡С‚РѕР±С‹ СЏ СЂР°СЃСЃРєР°Р·Р°Р» Р›РµСЃС‚РµСЂСѓ Рё Р“РѕСЂРЅСѓ Рѕ РёС… СЃРµРєСЂРµС‚РЅРѕРј РІСЃС‚СЂРµС‡Рµ СЃ РњРёР»СЊС‚РѕРЅРѕРј. РџРѕС…РѕР¶Рµ РЅР° С‚Рѕ, С‡С‚Рѕ РѕРЅРё РґРµР»Р°СЋС‚ С‚Р°Рє СѓР¶Рµ РґР°Р»РµРєРѕ РЅРµ РІ РїРµСЂРІС‹Р№ СЂР°Р·."); 
 };
 
 
@@ -1765,8 +1765,8 @@ func void Info_Diego_OCFAVOR_Info()
 	AI_Output(self,hero,"Info_Diego_Gamestart_11_01"); //Warum haben sie dich hier reingeworfen?
 	
 	Info_ClearChoices(Info_Diego_Gamestart );
-	Info_AddChoice	 (Info_Diego_Gamestart, "Gewitzter Ьberfall            (+3 Geschicklichkeit)"	,Info_Diego_Gamestart_Choice_Dex);
-	Info_AddChoice	 (Info_Diego_Gamestart, "Schlдgerei mit Folgen         (+3 Stдrke)"				,Info_Diego_Gamestart_Choice_Str);
+	Info_AddChoice	 (Info_Diego_Gamestart, "Gewitzter Р¬berfall            (+3 Geschicklichkeit)"	,Info_Diego_Gamestart_Choice_Dex);
+	Info_AddChoice	 (Info_Diego_Gamestart, "SchlРґgerei mit Folgen         (+3 StРґrke)"				,Info_Diego_Gamestart_Choice_Str);
 	Info_AddChoice	 (Info_Diego_Gamestart, "Wahre Worte zum falschen Mann (+3 Mana)"				,Info_Diego_Gamestart_Choice_Man);
 	Info_AddChoice	 (Info_Diego_Gamestart, "Unschuldig                    (+1 auf alle Attribute)"	,Info_Diego_Gamestart_Choice_All);
 };
@@ -1774,7 +1774,7 @@ func void Info_Diego_OCFAVOR_Info()
 FUNC VOID Info_Diego_Gamestart_Choice_Dex()
 {
 	AI_Output(hero,self,"Info_Diego_Gamestart_Choice_Dex_15_00"); //Ich habe ne Ladung Erz verschwinden lassen.
-	AI_Output(hero,self,"Info_Diego_Gamestart_Choice_Dex_15_01"); //Dummerweise hat der Typ bei dem ich sie versteckt habe, lieber die Belohnung fьr mich kassiert, anstatt mit mir das Erz zu teilen.
+	AI_Output(hero,self,"Info_Diego_Gamestart_Choice_Dex_15_01"); //Dummerweise hat der Typ bei dem ich sie versteckt habe, lieber die Belohnung fСЊr mich kassiert, anstatt mit mir das Erz zu teilen.
 	PrintScreen	("Geschicklichkeit +3", -1,-1,"FONT_OLD_20_WHITE.TGA",3);
 	hero.attribute[ATR_DEXTERITY] = hero.attribute[ATR_DEXTERITY]+3;
 	Info_ClearChoices(Info_Diego_Gamestart );
@@ -1782,17 +1782,17 @@ FUNC VOID Info_Diego_Gamestart_Choice_Dex()
 
 FUNC VOID Info_Diego_Gamestart_Choice_Str()
 {
-	AI_Output(hero,self,"Info_Diego_Gamestart_Choice_Str_15_00"); //Eine Herausforderung konnte ich noch nie abschlagen. Auch nicht von des Kцnigs Gardisten. dummerweise hat der Kцnig viele Gardisten.
+	AI_Output(hero,self,"Info_Diego_Gamestart_Choice_Str_15_00"); //Eine Herausforderung konnte ich noch nie abschlagen. Auch nicht von des KС†nigs Gardisten. dummerweise hat der KС†nig viele Gardisten.
 	AI_Output(hero,self,"Info_Diego_Gamestart_Choice_Str_15_01"); //Zu viele.	
-	PrintScreen	("Stдrke +3", -1,-1,"FONT_OLD_20_WHITE.TGA",3);
+	PrintScreen	("StРґrke +3", -1,-1,"FONT_OLD_20_WHITE.TGA",3);
 	hero.attribute[ATR_STRENGTH] = hero.attribute[ATR_STRENGTH]+3;
 	Info_ClearChoices(Info_Diego_Gamestart );
 };
 
 FUNC VOID Info_Diego_Gamestart_Choice_Man()
 {
-	AI_Output(hero,self,"Info_Diego_Gamestart_Choice_Man_15_00"); //Ich saЯ in der Kneipe und habe meine Meinung ьber Kцnig, Krieg und Steuern gesagt. 
-	AI_Output(hero,self,"Info_Diego_Gamestart_Choice_Man_15_01"); //Ich hab' mich nur zu spдt daran erinnert, dass der, der die Wahrheit spricht, ein schnelles Pferd braucht.
+	AI_Output(hero,self,"Info_Diego_Gamestart_Choice_Man_15_00"); //Ich saРЇ in der Kneipe und habe meine Meinung СЊber KС†nig, Krieg und Steuern gesagt. 
+	AI_Output(hero,self,"Info_Diego_Gamestart_Choice_Man_15_01"); //Ich hab' mich nur zu spРґt daran erinnert, dass der, der die Wahrheit spricht, ein schnelles Pferd braucht.
 	PrintScreen	("Mana +3", -1,-1,"FONT_OLD_20_WHITE.TGA",3);
 	hero.attribute[ATR_MANA] 		= hero.attribute[ATR_MANA]+3;
 	hero.attribute[ATR_MANA_MAX] 	= hero.attribute[ATR_MANA_MAX]+3;
@@ -1803,10 +1803,10 @@ FUNC VOID Info_Diego_Gamestart_Choice_All()
 {
 	AI_Output(hero,self,"Info_Diego_Gamestart_Choice_All_15_00"); //Ich bin unschuldig!
 	AI_Output(self,hero,"Info_Diego_Gamestart_Choice_All_11_01"); //Du solltest eins wissen: Hier drin ist niemand unschuldig. 
-	AI_Output(self,hero,"Info_Diego_Gamestart_Choice_All_11_02"); //Hier findest du Mдnner die so ziemlich jedes mцgliche Verbrechen begangen haben. Und einen unschuldigen nehmen die nur zu gerne auseinander. 
+	AI_Output(self,hero,"Info_Diego_Gamestart_Choice_All_11_02"); //Hier findest du MРґnner die so ziemlich jedes mС†gliche Verbrechen begangen haben. Und einen unschuldigen nehmen die nur zu gerne auseinander. 
 	AI_Output(self,hero,"Info_Diego_Gamestart_Choice_All_11_03"); //Ich gebe dir nen Tipp, und der ist ganz umsonst. 
 	AI_Output(self,hero,"Info_Diego_Gamestart_Choice_All_11_04"); //Wenn dich jemand fragt, warum du hier bist, sag ihm, du hast einen Typen gekillt, der dich gefragt hat, warum du hier bist. 
-	PrintScreen	("Stдrke, Geschick und Mana +1", -1,-1,"FONT_OLD_20_WHITE.TGA",3);
+	PrintScreen	("StРґrke, Geschick und Mana +1", -1,-1,"FONT_OLD_20_WHITE.TGA",3);
 	hero.attribute[ATR_DEXTERITY] 	= hero.attribute[ATR_DEXTERITY]+1;
 	hero.attribute[ATR_STRENGTH] 	= hero.attribute[ATR_STRENGTH]	+1;
 	hero.attribute[ATR_MANA] 		= hero.attribute[ATR_MANA]		+1;

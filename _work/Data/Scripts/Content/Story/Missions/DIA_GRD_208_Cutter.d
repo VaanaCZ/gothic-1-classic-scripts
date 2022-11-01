@@ -33,7 +33,7 @@ instance  DIA_Cutter_Hello (C_INFO)
 	condition	= DIA_Cutter_Hello_Condition;
 	information	= DIA_Cutter_Hello_Info;
 	permanent	= 0;
-	description = "Какой большой замок.";
+	description = "РљР°РєРѕР№ Р±РѕР»СЊС€РѕР№ Р·Р°РјРѕРє.";
 };                       
 
 FUNC int  DIA_Cutter_Hello_Condition()
@@ -45,9 +45,9 @@ FUNC int  DIA_Cutter_Hello_Condition()
 };
 FUNC VOID  DIA_Cutter_Hello_Info()
 {
-	AI_Output (other, self,"DIA_Cutter_Hello_15_00"); //Какой большой замок.
-	AI_Output (self, other,"DIA_Cutter_Hello_08_01"); //Кажется, раньше я тебя не видел. Ты кто?
-	AI_Output (other, self,"DIA_Cutter_Hello_15_02"); //Я новенький. Просто хотел немного осмотреться.
+	AI_Output (other, self,"DIA_Cutter_Hello_15_00"); //РљР°РєРѕР№ Р±РѕР»СЊС€РѕР№ Р·Р°РјРѕРє.
+	AI_Output (self, other,"DIA_Cutter_Hello_08_01"); //РљР°Р¶РµС‚СЃСЏ, СЂР°РЅСЊС€Рµ СЏ С‚РµР±СЏ РЅРµ РІРёРґРµР». РўС‹ РєС‚Рѕ?
+	AI_Output (other, self,"DIA_Cutter_Hello_15_02"); //РЇ РЅРѕРІРµРЅСЊРєРёР№. РџСЂРѕСЃС‚Рѕ С…РѕС‚РµР» РЅРµРјРЅРѕРіРѕ РѕСЃРјРѕС‚СЂРµС‚СЊСЃСЏ.
 };
 
 //******************************************
@@ -61,7 +61,7 @@ instance  DIA_Cutter_Burg (C_INFO)
 	condition	= DIA_Cutter_Burg_Condition;
 	information	= DIA_Cutter_Burg_Info;
 	permanent	= 10;
-	description = "Ты можешь рассказать мне о замке?";
+	description = "РўС‹ РјРѕР¶РµС€СЊ СЂР°СЃСЃРєР°Р·Р°С‚СЊ РјРЅРµ Рѕ Р·Р°РјРєРµ?";
 };                       
 
 FUNC int  DIA_Cutter_Burg_Condition()
@@ -74,12 +74,12 @@ FUNC int  DIA_Cutter_Burg_Condition()
 
 FUNC VOID  DIA_Cutter_Burg_Info()
 {
-	AI_Output (other, self,"DIA_Cutter_Burg_15_00"); //Ты можешь рассказать мне о замке?
-	AI_Output (self, other,"DIA_Cutter_Burg_08_01"); //После Восстания его занял Гомез со своей шайкой.
-	AI_Output (self, other,"DIA_Cutter_Burg_08_02"); //Сейчас лучше быть на их стороне - это я знаю точно.
-	AI_Output (self, other,"DIA_Cutter_Burg_08_03"); //Даже когда мы сидели в подземельях и горбатились в шахтах, большинство каторжников подчинялось его приказам.
-	AI_Output (other, self,"DIA_Cutter_Burg_15_04"); //Значит, под замком есть подземелья?
-	AI_Output (self, other,"DIA_Cutter_Burg_08_05"); //Да, но сейчас они пустуют. Туда даже никто не спускался после Восстания.
+	AI_Output (other, self,"DIA_Cutter_Burg_15_00"); //РўС‹ РјРѕР¶РµС€СЊ СЂР°СЃСЃРєР°Р·Р°С‚СЊ РјРЅРµ Рѕ Р·Р°РјРєРµ?
+	AI_Output (self, other,"DIA_Cutter_Burg_08_01"); //РџРѕСЃР»Рµ Р’РѕСЃСЃС‚Р°РЅРёСЏ РµРіРѕ Р·Р°РЅСЏР» Р“РѕРјРµР· СЃРѕ СЃРІРѕРµР№ С€Р°Р№РєРѕР№.
+	AI_Output (self, other,"DIA_Cutter_Burg_08_02"); //РЎРµР№С‡Р°СЃ Р»СѓС‡С€Рµ Р±С‹С‚СЊ РЅР° РёС… СЃС‚РѕСЂРѕРЅРµ - СЌС‚Рѕ СЏ Р·РЅР°СЋ С‚РѕС‡РЅРѕ.
+	AI_Output (self, other,"DIA_Cutter_Burg_08_03"); //Р”Р°Р¶Рµ РєРѕРіРґР° РјС‹ СЃРёРґРµР»Рё РІ РїРѕРґР·РµРјРµР»СЊСЏС… Рё РіРѕСЂР±Р°С‚РёР»РёСЃСЊ РІ С€Р°С…С‚Р°С…, Р±РѕР»СЊС€РёРЅСЃС‚РІРѕ РєР°С‚РѕСЂР¶РЅРёРєРѕРІ РїРѕРґС‡РёРЅСЏР»РѕСЃСЊ РµРіРѕ РїСЂРёРєР°Р·Р°Рј.
+	AI_Output (other, self,"DIA_Cutter_Burg_15_04"); //Р—РЅР°С‡РёС‚, РїРѕРґ Р·Р°РјРєРѕРј РµСЃС‚СЊ РїРѕРґР·РµРјРµР»СЊСЏ?
+	AI_Output (self, other,"DIA_Cutter_Burg_08_05"); //Р”Р°, РЅРѕ СЃРµР№С‡Р°СЃ РѕРЅРё РїСѓСЃС‚СѓСЋС‚. РўСѓРґР° РґР°Р¶Рµ РЅРёРєС‚Рѕ РЅРµ СЃРїСѓСЃРєР°Р»СЃСЏ РїРѕСЃР»Рµ Р’РѕСЃСЃС‚Р°РЅРёСЏ.
 };
 
 //******************************************
@@ -93,7 +93,7 @@ instance  DIA_Cutter_PERM (C_INFO)
 	condition	= DIA_Cutter_PERM_Condition;
 	information	= DIA_Cutter_PERM_Info;
 	permanent	= 1;
-	description = "Каково это - быть стражником?";
+	description = "РљР°РєРѕРІРѕ СЌС‚Рѕ - Р±С‹С‚СЊ СЃС‚СЂР°Р¶РЅРёРєРѕРј?";
 };                       
 
 FUNC int  DIA_Cutter_PERM_Condition()
@@ -106,9 +106,9 @@ FUNC int  DIA_Cutter_PERM_Condition()
 
 FUNC VOID  DIA_Cutter_PERM_Info()
 {
-	AI_Output (other, self,"DIA_Cutter_PERM_15_00"); //Каково это - быть стражником?
-	AI_Output (self, other,"DIA_Cutter_PERM_08_01"); //Довольно тихое местечко. Мы живем в самом большом и сильном Лагере колонии. Никто не смеет напасть на нас.
-	AI_Output (other, self,"DIA_Cutter_PERM_15_02"); //Понятно.
+	AI_Output (other, self,"DIA_Cutter_PERM_15_00"); //РљР°РєРѕРІРѕ СЌС‚Рѕ - Р±С‹С‚СЊ СЃС‚СЂР°Р¶РЅРёРєРѕРј?
+	AI_Output (self, other,"DIA_Cutter_PERM_08_01"); //Р”РѕРІРѕР»СЊРЅРѕ С‚РёС…РѕРµ РјРµСЃС‚РµС‡РєРѕ. РњС‹ Р¶РёРІРµРј РІ СЃР°РјРѕРј Р±РѕР»СЊС€РѕРј Рё СЃРёР»СЊРЅРѕРј Р›Р°РіРµСЂРµ РєРѕР»РѕРЅРёРё. РќРёРєС‚Рѕ РЅРµ СЃРјРµРµС‚ РЅР°РїР°СЃС‚СЊ РЅР° РЅР°СЃ.
+	AI_Output (other, self,"DIA_Cutter_PERM_15_02"); //РџРѕРЅСЏС‚РЅРѕ.
 	AI_StopProcessInfos	(self);
 };
 
@@ -148,6 +148,6 @@ FUNC int  GRD_208_Cutter_WELCOME_Condition()
 };
 func void  GRD_208_Cutter_WELCOME_Info()
 {
-	AI_Output (self, other,"GRD_208_Cutter_WELCOME_Info_08_01"); //Ты сделал правильный выбор. Тебе понравится быть стражником!
+	AI_Output (self, other,"GRD_208_Cutter_WELCOME_Info_08_01"); //РўС‹ СЃРґРµР»Р°Р» РїСЂР°РІРёР»СЊРЅС‹Р№ РІС‹Р±РѕСЂ. РўРµР±Рµ РїРѕРЅСЂР°РІРёС‚СЃСЏ Р±С‹С‚СЊ СЃС‚СЂР°Р¶РЅРёРєРѕРј!
 	AI_StopProcessInfos	(self);
 };

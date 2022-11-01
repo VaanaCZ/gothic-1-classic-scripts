@@ -2,7 +2,7 @@ instance SLD_700_Lee (Npc_Default)
 {
 	//-------- primary data --------
 	
-	name =					"Ëè";
+	name =					"Ð›Ð¸";
 	Npctype =				Npctype_Main;
 	guild =					GIL_SLD;   
 	level =					19;

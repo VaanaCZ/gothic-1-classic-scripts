@@ -21,11 +21,11 @@ func VOID Info_GornFM_EXIT_Info()
 {
 	if	self.aivar[AIV_PARTYMEMBER]
 	{
-		AI_Output (self, other,"Info_GornFM_EXIT_09_01"); //Защищайся!
+		AI_Output (self, other,"Info_GornFM_EXIT_09_01"); //Р—Р°С‰РёС‰Р°Р№СЃСЏ!
 	}
 	else
 	{
-		AI_Output (self, other,"Info_GornFM_EXIT_09_02"); //Увидимся.
+		AI_Output (self, other,"Info_GornFM_EXIT_09_02"); //РЈРІРёРґРёРјСЃСЏ.
 	};
 	
 	AI_StopProcessInfos	(self);
@@ -53,7 +53,7 @@ INSTANCE Info_GornFM_WAIT (C_INFO)
 	information	= Info_GornFM_WAIT_Info;
 	important	= 0;	
 	permanent	= 1;
-	description	= "Никуда не уходи, я посмотрю, что там происходит!";
+	description	= "РќРёРєСѓРґР° РЅРµ СѓС…РѕРґРё, СЏ РїРѕСЃРјРѕС‚СЂСЋ, С‡С‚Рѕ С‚Р°Рј РїСЂРѕРёСЃС…РѕРґРёС‚!";
 };                       
 
 FUNC INT Info_GornFM_WAIT_Condition()
@@ -66,8 +66,8 @@ FUNC INT Info_GornFM_WAIT_Condition()
 
 func VOID Info_GornFM_WAIT_Info()
 {
-	AI_Output 			(hero,self,"Info_GornFM_WAIT_15_01"); //Никуда не уходи, я посмотрю, что там происходит!
-	AI_Output 			(self,hero,"Info_GornFM_WAIT_09_02"); //Хорошо. Я буду ждать у входа в шахту и прослежу за тем, чтобы все было тихо.
+	AI_Output 			(hero,self,"Info_GornFM_WAIT_15_01"); //РќРёРєСѓРґР° РЅРµ СѓС…РѕРґРё, СЏ РїРѕСЃРјРѕС‚СЂСЋ, С‡С‚Рѕ С‚Р°Рј РїСЂРѕРёСЃС…РѕРґРёС‚!
+	AI_Output 			(self,hero,"Info_GornFM_WAIT_09_02"); //РҐРѕСЂРѕС€Рѕ. РЇ Р±СѓРґСѓ Р¶РґР°С‚СЊ Сѓ РІС…РѕРґР° РІ С€Р°С…С‚Сѓ Рё РїСЂРѕСЃР»РµР¶Сѓ Р·Р° С‚РµРј, С‡С‚РѕР±С‹ РІСЃРµ Р±С‹Р»Рѕ С‚РёС…Рѕ.
 
 	self.aivar[AIV_PARTYMEMBER] = FALSE;
 	Npc_ExchangeRoutine	(self,	"wait");
@@ -83,7 +83,7 @@ INSTANCE Info_GornFM_FOLLOW (C_INFO)
 	information	= Info_GornFM_FOLLOW_Info;
 	important	= 0;	
 	permanent	= 1;
-	description	= "Идем, мне нужна твоя помощь.";
+	description	= "РРґРµРј, РјРЅРµ РЅСѓР¶РЅР° С‚РІРѕСЏ РїРѕРјРѕС‰СЊ.";
 };                       
 
 FUNC INT Info_GornFM_FOLLOW_Condition()
@@ -96,8 +96,8 @@ FUNC INT Info_GornFM_FOLLOW_Condition()
 
 func VOID Info_GornFM_FOLLOW_Info()
 {
-	AI_Output 			(hero,self,"Info_GornFM_FOLLOW_15_01"); //Идем, мне нужна твоя помощь.
-	AI_Output 			(self,hero,"Info_GornFM_FOLLOW_09_02"); //Наконец-то мы двигаемся! Иди первым, я пойду сзади.
+	AI_Output 			(hero,self,"Info_GornFM_FOLLOW_15_01"); //РРґРµРј, РјРЅРµ РЅСѓР¶РЅР° С‚РІРѕСЏ РїРѕРјРѕС‰СЊ.
+	AI_Output 			(self,hero,"Info_GornFM_FOLLOW_09_02"); //РќР°РєРѕРЅРµС†-С‚Рѕ РјС‹ РґРІРёРіР°РµРјСЃСЏ! РРґРё РїРµСЂРІС‹Рј, СЏ РїРѕР№РґСѓ СЃР·Р°РґРё.
 
 	self.aivar[AIV_PARTYMEMBER] = TRUE;
 	Npc_ExchangeRoutine	(self,	"follow");

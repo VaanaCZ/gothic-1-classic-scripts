@@ -14,7 +14,7 @@ INSTANCE Info_Org_7_EXIT(C_INFO)
 	condition	= Info_Org_7_EXIT_Condition;
 	information	= Info_Org_7_EXIT_Info;
 	permanent	= 1;
-	description = "ЗАКОНЧИТЬ";
+	description = "Р—РђРљРћРќР§РРўР¬";
 };                       
 
 FUNC INT Info_Org_7_EXIT_Condition()
@@ -37,7 +37,7 @@ INSTANCE Info_Org_7_EinerVonEuchWerden (C_INFO) // E1
 	condition	= Info_Org_7_EinerVonEuchWerden_Condition;
 	information	= Info_Org_7_EinerVonEuchWerden_Info;
 	permanent	= 1;
-	description = "Что нужно сделать, для того чтобы присоединиться к этому Лагерю?";
+	description = "Р§С‚Рѕ РЅСѓР¶РЅРѕ СЃРґРµР»Р°С‚СЊ, РґР»СЏ С‚РѕРіРѕ С‡С‚РѕР±С‹ РїСЂРёСЃРѕРµРґРёРЅРёС‚СЊСЃСЏ Рє СЌС‚РѕРјСѓ Р›Р°РіРµСЂСЋ?";
 };                       
 
 FUNC INT Info_Org_7_EinerVonEuchWerden_Condition()
@@ -50,10 +50,10 @@ FUNC INT Info_Org_7_EinerVonEuchWerden_Condition()
 
 FUNC VOID Info_Org_7_EinerVonEuchWerden_Info()
 {
-	AI_Output(other,self,"Info_Org_7_EinerVonEuchWerden_15_00"); //Что я должен сделать, чтобы присоединиться к Лагерю?
-	AI_Output(self,other,"Info_Org_7_EinerVonEuchWerden_07_01"); //Ты можешь присоединиться к нашей шайке. Но прежде мы должны убедиться, что ты против Гомеза.
-	AI_Output(other,self,"Info_Org_7_EinerVonEuchWerden_15_02"); //Что я должен сделать?
-	AI_Output(self,other,"Info_Org_7_EinerVonEuchWerden_07_03"); //Если бы я был на твоем месте, я бы стащил что-нибудь важное из Старого Лагеря или из Старой Шахты и принес Ларсу.
+	AI_Output(other,self,"Info_Org_7_EinerVonEuchWerden_15_00"); //Р§С‚Рѕ СЏ РґРѕР»Р¶РµРЅ СЃРґРµР»Р°С‚СЊ, С‡С‚РѕР±С‹ РїСЂРёСЃРѕРµРґРёРЅРёС‚СЊСЃСЏ Рє Р›Р°РіРµСЂСЋ?
+	AI_Output(self,other,"Info_Org_7_EinerVonEuchWerden_07_01"); //РўС‹ РјРѕР¶РµС€СЊ РїСЂРёСЃРѕРµРґРёРЅРёС‚СЊСЃСЏ Рє РЅР°С€РµР№ С€Р°Р№РєРµ. РќРѕ РїСЂРµР¶РґРµ РјС‹ РґРѕР»Р¶РЅС‹ СѓР±РµРґРёС‚СЊСЃСЏ, С‡С‚Рѕ С‚С‹ РїСЂРѕС‚РёРІ Р“РѕРјРµР·Р°.
+	AI_Output(other,self,"Info_Org_7_EinerVonEuchWerden_15_02"); //Р§С‚Рѕ СЏ РґРѕР»Р¶РµРЅ СЃРґРµР»Р°С‚СЊ?
+	AI_Output(self,other,"Info_Org_7_EinerVonEuchWerden_07_03"); //Р•СЃР»Рё Р±С‹ СЏ Р±С‹Р» РЅР° С‚РІРѕРµРј РјРµСЃС‚Рµ, СЏ Р±С‹ СЃС‚Р°С‰РёР» С‡С‚Рѕ-РЅРёР±СѓРґСЊ РІР°Р¶РЅРѕРµ РёР· РЎС‚Р°СЂРѕРіРѕ Р›Р°РіРµСЂСЏ РёР»Рё РёР· РЎС‚Р°СЂРѕР№ РЁР°С…С‚С‹ Рё РїСЂРёРЅРµСЃ Р›Р°СЂСЃСѓ.
 	var C_NPC Lares;		Lares	= Hlp_GetNpc(Org_801_Lares);
 	Lares.aivar[AIV_FINDABLE] = TRUE;
 };
@@ -68,7 +68,7 @@ INSTANCE Info_Org_7_WichtigePersonen(C_INFO)
 	condition	= Info_Org_7_WichtigePersonen_Condition;
 	information	= Info_Org_7_WichtigePersonen_Info;
 	permanent	= 1;
-	description = "Кто у вас главный?";
+	description = "РљС‚Рѕ Сѓ РІР°СЃ РіР»Р°РІРЅС‹Р№?";
 };                       
 
 FUNC INT Info_Org_7_WichtigePersonen_Condition()
@@ -78,9 +78,9 @@ FUNC INT Info_Org_7_WichtigePersonen_Condition()
 
 FUNC VOID Info_Org_7_WichtigePersonen_Info()
 {
-	AI_Output(other,self,"Info_Org_7_WichtigePersonen_15_00"); //Кто у вас главный?
-	AI_Output(self,other,"Info_Org_7_WichtigePersonen_07_01"); //Глава шайки - Ларс. Большинству из наших он по душе.
-	AI_Output(self,other,"Info_Org_7_WichtigePersonen_07_02"); //Но он никогда не указывает нам, что делать.
+	AI_Output(other,self,"Info_Org_7_WichtigePersonen_15_00"); //РљС‚Рѕ Сѓ РІР°СЃ РіР»Р°РІРЅС‹Р№?
+	AI_Output(self,other,"Info_Org_7_WichtigePersonen_07_01"); //Р“Р»Р°РІР° С€Р°Р№РєРё - Р›Р°СЂСЃ. Р‘РѕР»СЊС€РёРЅСЃС‚РІСѓ РёР· РЅР°С€РёС… РѕРЅ РїРѕ РґСѓС€Рµ.
+	AI_Output(self,other,"Info_Org_7_WichtigePersonen_07_02"); //РќРѕ РѕРЅ РЅРёРєРѕРіРґР° РЅРµ СѓРєР°Р·С‹РІР°РµС‚ РЅР°Рј, С‡С‚Рѕ РґРµР»Р°С‚СЊ.
 	var C_NPC Lares;		Lares	= Hlp_GetNpc(Org_801_Lares);
 	Lares.aivar[AIV_FINDABLE] = TRUE;
 };
@@ -95,7 +95,7 @@ INSTANCE Info_Org_7_DasLager(C_INFO)
 	condition	= Info_Org_7_DasLager_Condition;
 	information	= Info_Org_7_DasLager_Info;
 	permanent	= 1;
-	description = "Расскажи мне об этом Лагере.";
+	description = "Р Р°СЃСЃРєР°Р¶Рё РјРЅРµ РѕР± СЌС‚РѕРј Р›Р°РіРµСЂРµ.";
 };                       
 
 FUNC INT Info_Org_7_DasLager_Condition()
@@ -105,11 +105,11 @@ FUNC INT Info_Org_7_DasLager_Condition()
 
 FUNC VOID Info_Org_7_DasLager_Info()
 {
-	AI_Output(other,self,"Info_Org_7_DasLager_15_00"); //Расскажи мне об этом Лагере.
-	AI_Output(self,other,"Info_Org_7_DasLager_07_01"); //Это такое общество ради общества, если ты понимаешь, о чем я говорю. Мы все здесь сами по себе, но нас так много, что Гомезу нелегко от нас избавиться.
-	AI_Output(self,other,"Info_Org_7_DasLager_07_02"); //Правда, только об этом он и мечтает.
-	AI_Output(other,self,"Info_Org_7_DasLager_15_03"); //Чем вы так досадили Гомезу?
-	AI_Output(self,other,"Info_Org_7_DasLager_07_04"); //Мы воруем у него!
+	AI_Output(other,self,"Info_Org_7_DasLager_15_00"); //Р Р°СЃСЃРєР°Р¶Рё РјРЅРµ РѕР± СЌС‚РѕРј Р›Р°РіРµСЂРµ.
+	AI_Output(self,other,"Info_Org_7_DasLager_07_01"); //Р­С‚Рѕ С‚Р°РєРѕРµ РѕР±С‰РµСЃС‚РІРѕ СЂР°РґРё РѕР±С‰РµСЃС‚РІР°, РµСЃР»Рё С‚С‹ РїРѕРЅРёРјР°РµС€СЊ, Рѕ С‡РµРј СЏ РіРѕРІРѕСЂСЋ. РњС‹ РІСЃРµ Р·РґРµСЃСЊ СЃР°РјРё РїРѕ СЃРµР±Рµ, РЅРѕ РЅР°СЃ С‚Р°Рє РјРЅРѕРіРѕ, С‡С‚Рѕ Р“РѕРјРµР·Сѓ РЅРµР»РµРіРєРѕ РѕС‚ РЅР°СЃ РёР·Р±Р°РІРёС‚СЊСЃСЏ.
+	AI_Output(self,other,"Info_Org_7_DasLager_07_02"); //РџСЂР°РІРґР°, С‚РѕР»СЊРєРѕ РѕР± СЌС‚РѕРј РѕРЅ Рё РјРµС‡С‚Р°РµС‚.
+	AI_Output(other,self,"Info_Org_7_DasLager_15_03"); //Р§РµРј РІС‹ С‚Р°Рє РґРѕСЃР°РґРёР»Рё Р“РѕРјРµР·Сѓ?
+	AI_Output(self,other,"Info_Org_7_DasLager_07_04"); //РњС‹ РІРѕСЂСѓРµРј Сѓ РЅРµРіРѕ!
 };
 
 // *************************************************************************
@@ -122,7 +122,7 @@ INSTANCE Info_Org_7_DieLage(C_INFO) // E1
 	condition	= Info_Org_7_DieLage_Condition;
 	information	= Info_Org_7_DieLage_Info;
 	permanent	= 1;
-	description = "Что здесь происходит?";
+	description = "Р§С‚Рѕ Р·РґРµСЃСЊ РїСЂРѕРёСЃС…РѕРґРёС‚?";
 };                       
 
 FUNC INT Info_Org_7_DieLage_Condition()
@@ -132,10 +132,10 @@ FUNC INT Info_Org_7_DieLage_Condition()
 
 FUNC VOID Info_Org_7_DieLage_Info()
 {
-	AI_Output(other,self,"Info_Org_7_DieLage_15_00"); //Что здесь происходит?
-	AI_Output(self,other,"Info_Org_7_DieLage_07_01"); //Ты здесь давно не был, да?
-	AI_Output(self,other,"Info_Org_7_DieLage_07_02"); //Долгие годы маги готовились взорвать гору руды. Они говорят, что ждать осталось уже недолго.
-	AI_Output(self,other,"Info_Org_7_DieLage_07_03"); //Похоже на правду, если судить по размерам кучи, которую рудокопы уже успели собрать. 
+	AI_Output(other,self,"Info_Org_7_DieLage_15_00"); //Р§С‚Рѕ Р·РґРµСЃСЊ РїСЂРѕРёСЃС…РѕРґРёС‚?
+	AI_Output(self,other,"Info_Org_7_DieLage_07_01"); //РўС‹ Р·РґРµСЃСЊ РґР°РІРЅРѕ РЅРµ Р±С‹Р», РґР°?
+	AI_Output(self,other,"Info_Org_7_DieLage_07_02"); //Р”РѕР»РіРёРµ РіРѕРґС‹ РјР°РіРё РіРѕС‚РѕРІРёР»РёСЃСЊ РІР·РѕСЂРІР°С‚СЊ РіРѕСЂСѓ СЂСѓРґС‹. РћРЅРё РіРѕРІРѕСЂСЏС‚, С‡С‚Рѕ Р¶РґР°С‚СЊ РѕСЃС‚Р°Р»РѕСЃСЊ СѓР¶Рµ РЅРµРґРѕР»РіРѕ.
+	AI_Output(self,other,"Info_Org_7_DieLage_07_03"); //РџРѕС…РѕР¶Рµ РЅР° РїСЂР°РІРґСѓ, РµСЃР»Рё СЃСѓРґРёС‚СЊ РїРѕ СЂР°Р·РјРµСЂР°Рј РєСѓС‡Рё, РєРѕС‚РѕСЂСѓСЋ СЂСѓРґРѕРєРѕРїС‹ СѓР¶Рµ СѓСЃРїРµР»Рё СЃРѕР±СЂР°С‚СЊ. 
 };
 
 // *************************************************************************
@@ -148,7 +148,7 @@ INSTANCE Info_Org_7_Krautprobe (C_INFO) // E1
 	condition	= Info_Org_7_Krautprobe_Condition;
 	information	= Info_Org_7_Krautprobe_Info;
 	permanent	= 1;
-	description = "Хочешь болотника?";
+	description = "РҐРѕС‡РµС€СЊ Р±РѕР»РѕС‚РЅРёРєР°?";
 };                       
 
 FUNC INT Info_Org_7_Krautprobe_Condition()
@@ -162,7 +162,7 @@ FUNC INT Info_Org_7_Krautprobe_Condition()
 
 FUNC VOID Info_Org_7_Krautprobe_Info()
 {
-	AI_Output(other,self,"Info_Org_7_Krautprobe_15_00"); //Хочешь болотника?
+	AI_Output(other,self,"Info_Org_7_Krautprobe_15_00"); //РҐРѕС‡РµС€СЊ Р±РѕР»РѕС‚РЅРёРєР°?
 	
 	if ( (Npc_HasItems(other,ItMiJoint_1)>0) || (Npc_HasItems(other,ItMiJoint_2)>0) || (Npc_HasItems(other,ItMiJoint_3)>0) )
 	{
@@ -173,8 +173,8 @@ FUNC VOID Info_Org_7_Krautprobe_Info()
 		else if (Npc_HasItems(other,ItMiJoint_3))
 		{	B_GiveInvItems(other,self,ItMiJoint_3,1);	 };
 		
-		AI_Output(self,other,"Info_Org_7_Krautprobe_07_01"); //Я дам тебе 10 кусков руды - вот, держи.
-		AI_Output(self,other,"Info_Org_7_Krautprobe_07_02"); //Заходи, если появится еще лишняя горстка.
+		AI_Output(self,other,"Info_Org_7_Krautprobe_07_01"); //РЇ РґР°Рј С‚РµР±Рµ 10 РєСѓСЃРєРѕРІ СЂСѓРґС‹ - РІРѕС‚, РґРµСЂР¶Рё.
+		AI_Output(self,other,"Info_Org_7_Krautprobe_07_02"); //Р—Р°С…РѕРґРё, РµСЃР»Рё РїРѕСЏРІРёС‚СЃСЏ РµС‰Рµ Р»РёС€РЅСЏСЏ РіРѕСЂСЃС‚РєР°.
 		
 		CreateInvItems(self,itminugget,10);
 		B_GiveInvItems(self,other,itminugget,10);
@@ -183,7 +183,7 @@ FUNC VOID Info_Org_7_Krautprobe_Info()
 	}
 	else
 	{
-		AI_Output (self, other,"Info_Org_7_Krautprobe_No_Joint_07_00"); //Где? Я не вижу ни стебелька.
+		AI_Output (self, other,"Info_Org_7_Krautprobe_No_Joint_07_00"); //Р“РґРµ? РЇ РЅРµ РІРёР¶Сѓ РЅРё СЃС‚РµР±РµР»СЊРєР°.
 	};
 };
 

@@ -14,7 +14,7 @@ INSTANCE Info_Sld_8_EXIT(C_INFO)
 	condition	= Info_Sld_8_EXIT_Condition;
 	information	= Info_Sld_8_EXIT_Info;
 	permanent	= 1;
-	description = "ЗАКОНЧИТЬ";
+	description = "Р—РђРљРћРќР§РРўР¬";
 };                       
 
 FUNC INT Info_Sld_8_EXIT_Condition()
@@ -37,7 +37,7 @@ INSTANCE Info_Sld_8_EinerVonEuchWerden (C_INFO) // E1
 	condition	= Info_Sld_8_EinerVonEuchWerden_Condition;
 	information	= Info_Sld_8_EinerVonEuchWerden_Info;
 	permanent	= 1;
-	description = "Нужны ли вам верные люди?";
+	description = "РќСѓР¶РЅС‹ Р»Рё РІР°Рј РІРµСЂРЅС‹Рµ Р»СЋРґРё?";
 };                       
 
 FUNC INT Info_Sld_8_EinerVonEuchWerden_Condition()
@@ -53,9 +53,9 @@ FUNC INT Info_Sld_8_EinerVonEuchWerden_Condition()
 
 FUNC VOID Info_Sld_8_EinerVonEuchWerden_Info()
 {
-	AI_Output(other,self,"Info_Sld_8_EinerVonEuchWerden_15_00"); //Вам нужны люди?
-	AI_Output(self,other,"Info_Sld_8_EinerVonEuchWerden_08_01"); //Ли считает, что прежде чем стать наемником, человек должен прожить здесь несколько лет и набраться опыта.
-	AI_Output(self,other,"Info_Sld_8_EinerVonEuchWerden_08_02"); //Если хочешь остаться в Лагере, поначалу тебе придется общаться с ворами.
+	AI_Output(other,self,"Info_Sld_8_EinerVonEuchWerden_15_00"); //Р’Р°Рј РЅСѓР¶РЅС‹ Р»СЋРґРё?
+	AI_Output(self,other,"Info_Sld_8_EinerVonEuchWerden_08_01"); //Р›Рё СЃС‡РёС‚Р°РµС‚, С‡С‚Рѕ РїСЂРµР¶РґРµ С‡РµРј СЃС‚Р°С‚СЊ РЅР°РµРјРЅРёРєРѕРј, С‡РµР»РѕРІРµРє РґРѕР»Р¶РµРЅ РїСЂРѕР¶РёС‚СЊ Р·РґРµСЃСЊ РЅРµСЃРєРѕР»СЊРєРѕ Р»РµС‚ Рё РЅР°Р±СЂР°С‚СЊСЃСЏ РѕРїС‹С‚Р°.
+	AI_Output(self,other,"Info_Sld_8_EinerVonEuchWerden_08_02"); //Р•СЃР»Рё С…РѕС‡РµС€СЊ РѕСЃС‚Р°С‚СЊСЃСЏ РІ Р›Р°РіРµСЂРµ, РїРѕРЅР°С‡Р°Р»Сѓ С‚РµР±Рµ РїСЂРёРґРµС‚СЃСЏ РѕР±С‰Р°С‚СЊСЃСЏ СЃ РІРѕСЂР°РјРё.
 };
 
 // *************************************************************************
@@ -68,7 +68,7 @@ INSTANCE Info_Sld_8_WichtigePersonen(C_INFO)
 	condition	= Info_Sld_8_WichtigePersonen_Condition;
 	information	= Info_Sld_8_WichtigePersonen_Info;
 	permanent	= 1;
-	description = "Кто здесь командует?";
+	description = "РљС‚Рѕ Р·РґРµСЃСЊ РєРѕРјР°РЅРґСѓРµС‚?";
 };                       
 
 FUNC INT Info_Sld_8_WichtigePersonen_Condition()
@@ -78,11 +78,11 @@ FUNC INT Info_Sld_8_WichtigePersonen_Condition()
 
 FUNC VOID Info_Sld_8_WichtigePersonen_Info()
 {
-	AI_Output(other,self,"Info_Sld_8_WichtigePersonen_15_00"); //Кто здесь командует?
-	AI_Output(self,other,"Info_Sld_8_WichtigePersonen_08_01"); //Мы, наемники, подчиняемся Ли. Он заключил с магами сделку: мы защищаем их, а они должны вытащить нас отсюда.
-	AI_Output(other,self,"Info_Sld_8_WichtigePersonen_15_02"); //Значит, маги главнее всех?
-	AI_Output(self,other,"Info_Sld_8_WichtigePersonen_08_03"); //Нет. В Лагере нет главного. Большинство людей здесь - те, кто не смог или не захотел остаться в Старом Лагере.
-	AI_Output(self,other,"Info_Sld_8_WichtigePersonen_08_04"); //Каждый здесь занимается своим делом, и сходимся мы только в одном: лучше собрать руду в кучу и взорвать ее, чем послать хоть кусок этому королю!
+	AI_Output(other,self,"Info_Sld_8_WichtigePersonen_15_00"); //РљС‚Рѕ Р·РґРµСЃСЊ РєРѕРјР°РЅРґСѓРµС‚?
+	AI_Output(self,other,"Info_Sld_8_WichtigePersonen_08_01"); //РњС‹, РЅР°РµРјРЅРёРєРё, РїРѕРґС‡РёРЅСЏРµРјСЃСЏ Р›Рё. РћРЅ Р·Р°РєР»СЋС‡РёР» СЃ РјР°РіР°РјРё СЃРґРµР»РєСѓ: РјС‹ Р·Р°С‰РёС‰Р°РµРј РёС…, Р° РѕРЅРё РґРѕР»Р¶РЅС‹ РІС‹С‚Р°С‰РёС‚СЊ РЅР°СЃ РѕС‚СЃСЋРґР°.
+	AI_Output(other,self,"Info_Sld_8_WichtigePersonen_15_02"); //Р—РЅР°С‡РёС‚, РјР°РіРё РіР»Р°РІРЅРµРµ РІСЃРµС…?
+	AI_Output(self,other,"Info_Sld_8_WichtigePersonen_08_03"); //РќРµС‚. Р’ Р›Р°РіРµСЂРµ РЅРµС‚ РіР»Р°РІРЅРѕРіРѕ. Р‘РѕР»СЊС€РёРЅСЃС‚РІРѕ Р»СЋРґРµР№ Р·РґРµСЃСЊ - С‚Рµ, РєС‚Рѕ РЅРµ СЃРјРѕРі РёР»Рё РЅРµ Р·Р°С…РѕС‚РµР» РѕСЃС‚Р°С‚СЊСЃСЏ РІ РЎС‚Р°СЂРѕРј Р›Р°РіРµСЂРµ.
+	AI_Output(self,other,"Info_Sld_8_WichtigePersonen_08_04"); //РљР°Р¶РґС‹Р№ Р·РґРµСЃСЊ Р·Р°РЅРёРјР°РµС‚СЃСЏ СЃРІРѕРёРј РґРµР»РѕРј, Рё СЃС…РѕРґРёРјСЃСЏ РјС‹ С‚РѕР»СЊРєРѕ РІ РѕРґРЅРѕРј: Р»СѓС‡С€Рµ СЃРѕР±СЂР°С‚СЊ СЂСѓРґСѓ РІ РєСѓС‡Сѓ Рё РІР·РѕСЂРІР°С‚СЊ РµРµ, С‡РµРј РїРѕСЃР»Р°С‚СЊ С…РѕС‚СЊ РєСѓСЃРѕРє СЌС‚РѕРјСѓ РєРѕСЂРѕР»СЋ!
 	var C_NPC Lee;			Lee		= Hlp_GetNpc(Sld_700_Lee);
 	Lee.aivar[AIV_FINDABLE] = TRUE;
 	var C_NPC Cronos;		Cronos  = Hlp_GetNpc(KdW_604_Cronos);
@@ -99,7 +99,7 @@ INSTANCE Info_Sld_8_DasLager(C_INFO)
 	condition	= Info_Sld_8_DasLager_Condition;
 	information	= Info_Sld_8_DasLager_Info;
 	permanent	= 1;
-	description = "Расскажи мне об этом Лагере.";
+	description = "Р Р°СЃСЃРєР°Р¶Рё РјРЅРµ РѕР± СЌС‚РѕРј Р›Р°РіРµСЂРµ.";
 };                       
 
 FUNC INT Info_Sld_8_DasLager_Condition()
@@ -111,11 +111,11 @@ FUNC INT Info_Sld_8_DasLager_Condition()
 };
 FUNC VOID Info_Sld_8_DasLager_Info()
 {
-	AI_Output(other,self,"Info_Sld_8_DasLager_15_00"); //Расскажи мне об этом Лагере.
-	AI_Output(self,other,"Info_Sld_8_DasLager_08_01"); //Будь здесь повнимательнее. В Лагере полно головорезов.
-	AI_Output(self,other,"Info_Sld_8_DasLager_08_02"); //Здесь есть несколько неписанных законов. Первый: к магам не заходит никто, кроме наемников.
-	AI_Output(self,other,"Info_Sld_8_DasLager_08_03"); //Второй: если попытаешься подобраться к нашей руде, ты покойник. Третий: лучше не заходить в бар на озере.
-	AI_Output(self,other,"Info_Sld_8_DasLager_08_04"); //Видишь ли, этот бар принадлежит ворам, и им не нравится когда новенькие, вроде тебя, туда заходят.
+	AI_Output(other,self,"Info_Sld_8_DasLager_15_00"); //Р Р°СЃСЃРєР°Р¶Рё РјРЅРµ РѕР± СЌС‚РѕРј Р›Р°РіРµСЂРµ.
+	AI_Output(self,other,"Info_Sld_8_DasLager_08_01"); //Р‘СѓРґСЊ Р·РґРµСЃСЊ РїРѕРІРЅРёРјР°С‚РµР»СЊРЅРµРµ. Р’ Р›Р°РіРµСЂРµ РїРѕР»РЅРѕ РіРѕР»РѕРІРѕСЂРµР·РѕРІ.
+	AI_Output(self,other,"Info_Sld_8_DasLager_08_02"); //Р—РґРµСЃСЊ РµСЃС‚СЊ РЅРµСЃРєРѕР»СЊРєРѕ РЅРµРїРёСЃР°РЅРЅС‹С… Р·Р°РєРѕРЅРѕРІ. РџРµСЂРІС‹Р№: Рє РјР°РіР°Рј РЅРµ Р·Р°С…РѕРґРёС‚ РЅРёРєС‚Рѕ, РєСЂРѕРјРµ РЅР°РµРјРЅРёРєРѕРІ.
+	AI_Output(self,other,"Info_Sld_8_DasLager_08_03"); //Р’С‚РѕСЂРѕР№: РµСЃР»Рё РїРѕРїС‹С‚Р°РµС€СЊСЃСЏ РїРѕРґРѕР±СЂР°С‚СЊСЃСЏ Рє РЅР°С€РµР№ СЂСѓРґРµ, С‚С‹ РїРѕРєРѕР№РЅРёРє. РўСЂРµС‚РёР№: Р»СѓС‡С€Рµ РЅРµ Р·Р°С…РѕРґРёС‚СЊ РІ Р±Р°СЂ РЅР° РѕР·РµСЂРµ.
+	AI_Output(self,other,"Info_Sld_8_DasLager_08_04"); //Р’РёРґРёС€СЊ Р»Рё, СЌС‚РѕС‚ Р±Р°СЂ РїСЂРёРЅР°РґР»РµР¶РёС‚ РІРѕСЂР°Рј, Рё РёРј РЅРµ РЅСЂР°РІРёС‚СЃСЏ РєРѕРіРґР° РЅРѕРІРµРЅСЊРєРёРµ, РІСЂРѕРґРµ С‚РµР±СЏ, С‚СѓРґР° Р·Р°С…РѕРґСЏС‚.
 	var C_NPC Cronos;		Cronos  = Hlp_GetNpc(KdW_604_Cronos);
 	Cronos.aivar[AIV_FINDABLE] = TRUE;
 };
@@ -130,7 +130,7 @@ INSTANCE Info_Sld_8_DieLage(C_INFO) // E1
 	condition	= Info_Sld_8_DieLage_Condition;
 	information	= Info_Sld_8_DieLage_Info;
 	permanent	= 1;
-	description = "Как дела?";
+	description = "РљР°Рє РґРµР»Р°?";
 };                       
 
 FUNC INT Info_Sld_8_DieLage_Condition()
@@ -140,8 +140,8 @@ FUNC INT Info_Sld_8_DieLage_Condition()
 
 FUNC VOID Info_Sld_8_DieLage_Info()
 {
-	AI_Output(other,self,"Info_Sld_8_DieLage_15_00"); //Как дела?
-	AI_Output(self,other,"Info_Sld_8_DieLage_08_01"); //Как всегда. Слежу за тем, чтобы никто не подобрался к магам, да и к руде тоже.
+	AI_Output(other,self,"Info_Sld_8_DieLage_15_00"); //РљР°Рє РґРµР»Р°?
+	AI_Output(self,other,"Info_Sld_8_DieLage_08_01"); //РљР°Рє РІСЃРµРіРґР°. РЎР»РµР¶Сѓ Р·Р° С‚РµРј, С‡С‚РѕР±С‹ РЅРёРєС‚Рѕ РЅРµ РїРѕРґРѕР±СЂР°Р»СЃСЏ Рє РјР°РіР°Рј, РґР° Рё Рє СЂСѓРґРµ С‚РѕР¶Рµ.
 	var C_NPC Cronos;		Cronos  = Hlp_GetNpc(KdW_604_Cronos);
 	Cronos.aivar[AIV_FINDABLE] = TRUE;
 };
@@ -156,7 +156,7 @@ INSTANCE Info_Sld_8_Krautprobe (C_INFO) // E1
 	condition	= Info_Sld_8_Krautprobe_Condition;
 	information	= Info_Sld_8_Krautprobe_Info;
 	permanent	= 1;
-	description = "У меня есть болотник. Хочешь?";
+	description = "РЈ РјРµРЅСЏ РµСЃС‚СЊ Р±РѕР»РѕС‚РЅРёРє. РҐРѕС‡РµС€СЊ?";
 };                       
 
 FUNC INT Info_Sld_8_Krautprobe_Condition()
@@ -170,7 +170,7 @@ FUNC INT Info_Sld_8_Krautprobe_Condition()
 
 FUNC VOID Info_Sld_8_Krautprobe_Info()
 {
-	AI_Output(other,self,"Info_Sld_8_Krautprobe_15_00"); //У меня есть болотник. Хочешь?
+	AI_Output(other,self,"Info_Sld_8_Krautprobe_15_00"); //РЈ РјРµРЅСЏ РµСЃС‚СЊ Р±РѕР»РѕС‚РЅРёРє. РҐРѕС‡РµС€СЊ?
 	
 	if ( (Npc_HasItems(other,ItMiJoint_1)>0) || (Npc_HasItems(other,ItMiJoint_2)>0) || (Npc_HasItems(other,ItMiJoint_3)>0) )
 	{
@@ -181,8 +181,8 @@ FUNC VOID Info_Sld_8_Krautprobe_Info()
 		else if (Npc_HasItems(other,ItMiJoint_3))
 		{	B_GiveInvItems(other,self,ItMiJoint_3,1);	 };
 		
-		AI_Output(self,other,"Info_Sld_8_Krautprobe_08_01"); //Почему бы и нет? Я дам тебе за него 10 кусков руды.
-		AI_Output(self,other,"Info_Sld_8_Krautprobe_08_02"); //Спроси остальных - думаю, они тоже будут не против.
+		AI_Output(self,other,"Info_Sld_8_Krautprobe_08_01"); //РџРѕС‡РµРјСѓ Р±С‹ Рё РЅРµС‚? РЇ РґР°Рј С‚РµР±Рµ Р·Р° РЅРµРіРѕ 10 РєСѓСЃРєРѕРІ СЂСѓРґС‹.
+		AI_Output(self,other,"Info_Sld_8_Krautprobe_08_02"); //РЎРїСЂРѕСЃРё РѕСЃС‚Р°Р»СЊРЅС‹С… - РґСѓРјР°СЋ, РѕРЅРё С‚РѕР¶Рµ Р±СѓРґСѓС‚ РЅРµ РїСЂРѕС‚РёРІ.
 		
 		CreateInvItems(self,itminugget,10);
 		B_GiveInvItems(self,other,itminugget,10);
@@ -191,7 +191,7 @@ FUNC VOID Info_Sld_8_Krautprobe_Info()
 	}
 	else
 	{
-		AI_Output (self, other,"Info_Sld_8_Krautprobe_No_Joint_08_00"); //Сперва покажи его. У тебя ведь нет ни стебля, так?
+		AI_Output (self, other,"Info_Sld_8_Krautprobe_No_Joint_08_00"); //РЎРїРµСЂРІР° РїРѕРєР°Р¶Рё РµРіРѕ. РЈ С‚РµР±СЏ РІРµРґСЊ РЅРµС‚ РЅРё СЃС‚РµР±Р»СЏ, С‚Р°Рє?
 	};
 };
 	

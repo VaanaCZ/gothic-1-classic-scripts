@@ -2,7 +2,7 @@ instance Gur_1205_Chani (Npc_Default)
 {
 	//-------- primary data --------
 
-	name 		=	"×àíè";
+	name 		=	"Ð§Ð°Ð½Ð¸";
 	npctype		= 	npctype_main;
 	guild 		=	GIL_BAB;
 	level 		=	1;

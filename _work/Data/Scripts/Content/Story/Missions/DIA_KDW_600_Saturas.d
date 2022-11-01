@@ -18,7 +18,7 @@ FUNC int  Info_Saturas_EXIT_Condition()
 
 FUNC VOID  Info_Saturas_EXIT_Info()
 {
-	AI_Output			(self, other,"Info_Saturas_EXIT_14_01"); //Надеюсь, ты вернешься целым и невредимым!
+	AI_Output			(self, other,"Info_Saturas_EXIT_14_01"); //РќР°РґРµСЋСЃСЊ, С‚С‹ РІРµСЂРЅРµС€СЊСЃСЏ С†РµР»С‹Рј Рё РЅРµРІСЂРµРґРёРјС‹Рј!
 
 	AI_StopProcessInfos	(self);
 };
@@ -46,7 +46,7 @@ FUNC int  Info_Saturas_Intruder_Condition()
 
 FUNC VOID  Info_Saturas_Intruder_Info()
 {
-	AI_Output			(self, other,"Info_Saturas_Intruder_14_00"); //Что ты здесь делаешь? Тебе здесь нечего делать! Убирайся!
+	AI_Output			(self, other,"Info_Saturas_Intruder_14_00"); //Р§С‚Рѕ С‚С‹ Р·РґРµСЃСЊ РґРµР»Р°РµС€СЊ? РўРµР±Рµ Р·РґРµСЃСЊ РЅРµС‡РµРіРѕ РґРµР»Р°С‚СЊ! РЈР±РёСЂР°Р№СЃСЏ!
 
 	AI_StopProcessInfos	(self);
 };
@@ -71,7 +71,7 @@ instance Info_Saturas_NEWS (C_INFO)
 	information	= Info_Saturas_NEWS_Info;
 	permanent	= 0;
 	IMPORTANT 	= 0;
-	description = "У меня есть важные новости из Лагеря Братства!";
+	description = "РЈ РјРµРЅСЏ РµСЃС‚СЊ РІР°Р¶РЅС‹Рµ РЅРѕРІРѕСЃС‚Рё РёР· Р›Р°РіРµСЂСЏ Р‘СЂР°С‚СЃС‚РІР°!";
 };
 
 FUNC INT Info_Saturas_NEWS_Condition()
@@ -84,8 +84,8 @@ FUNC INT Info_Saturas_NEWS_Condition()
 
 FUNC VOID Info_Saturas_NEWS_Info()
 {
-	AI_Output			(other, self,"Info_Saturas_NEWS_15_01"); //У меня есть важные новости из Лагеря Братства!
-	AI_Output			(self, other,"Info_Saturas_NEWS_14_02"); //Это должны быть действительно важные новости, если Кронос позволил тебе встретиться со мной!
+	AI_Output			(other, self,"Info_Saturas_NEWS_15_01"); //РЈ РјРµРЅСЏ РµСЃС‚СЊ РІР°Р¶РЅС‹Рµ РЅРѕРІРѕСЃС‚Рё РёР· Р›Р°РіРµСЂСЏ Р‘СЂР°С‚СЃС‚РІР°!
+	AI_Output			(self, other,"Info_Saturas_NEWS_14_02"); //Р­С‚Рѕ РґРѕР»Р¶РЅС‹ Р±С‹С‚СЊ РґРµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ РІР°Р¶РЅС‹Рµ РЅРѕРІРѕСЃС‚Рё, РµСЃР»Рё РљСЂРѕРЅРѕСЃ РїРѕР·РІРѕР»РёР» С‚РµР±Рµ РІСЃС‚СЂРµС‚РёС‚СЊСЃСЏ СЃРѕ РјРЅРѕР№!
 };
 
 //***************************************************************************
@@ -98,7 +98,7 @@ instance Info_Saturas_YBERION (C_INFO)
 	information	= Info_Saturas_YBERION_Info;
 	permanent	= 0;
 	IMPORTANT = 0;
-	description = "Ю`Берион мертв! ";
+	description = "Р®`Р‘РµСЂРёРѕРЅ РјРµСЂС‚РІ! ";
 };
 
 FUNC INT Info_Saturas_YBERION_Condition()
@@ -111,18 +111,18 @@ FUNC INT Info_Saturas_YBERION_Condition()
 
 FUNC VOID Info_Saturas_YBERION_Info()
 {
-	AI_Output			(other, self,"Info_Saturas_YBERION_15_01"); //Ю`Берион мертв! Он умер во время церемонии вызова Спящего!
-	AI_Output			(self, other,"Info_Saturas_YBERION_14_02"); //Ю`Берион умер? Поистине, это худшая новость из тех, что ты мог принести!
-	AI_Output			(self, other,"Info_Saturas_YBERION_14_03"); //Кто же теперь возглавляет Братство? Этот властолюбец и лжец Кор Галом?
-	AI_Output			(other, self,"Info_Saturas_YBERION_15_04"); //Нет! Галом отрекся от Братства. Он забрал нескольких Стражей, и никто не знает, где они теперь.
-	AI_Output			(self, other,"Info_Saturas_YBERION_14_05"); //Но зачем? Ведь после гибели Ю`Бериона он должен был стать главным!
-	AI_Output			(other, self,"Info_Saturas_YBERION_15_06"); //События последних дней убедили Гуру в том, что они избрали неправильный путь. Похоже, их бог оказался всего лишь злым демоном.
-	AI_Output			(other, self,"Info_Saturas_YBERION_15_07"); //Под влиянием Спящего один из Гуру чуть не убил меня, несмотря на то, что незадолго до этого я спас ему жизнь.
-	AI_Output			(other, self,"Info_Saturas_YBERION_15_08"); //Единственным из Гуру, кто отказался признать истинную сущность этого адского создания, был Кор Галом. Вот почему он покинул Болотный Лагерь.
-	AI_Output			(self, other,"Info_Saturas_YBERION_14_09"); //Понятно. Что ж, для нас это только к лучшему. Кор Ангар - хороший человек, упрямый, но честный.
-	AI_Output			(self, other,"Info_Saturas_YBERION_14_10"); //Никто кроме него не сможет удержать Братство от распада после этой духовной катастрофы.
+	AI_Output			(other, self,"Info_Saturas_YBERION_15_01"); //Р®`Р‘РµСЂРёРѕРЅ РјРµСЂС‚РІ! РћРЅ СѓРјРµСЂ РІРѕ РІСЂРµРјСЏ С†РµСЂРµРјРѕРЅРёРё РІС‹Р·РѕРІР° РЎРїСЏС‰РµРіРѕ!
+	AI_Output			(self, other,"Info_Saturas_YBERION_14_02"); //Р®`Р‘РµСЂРёРѕРЅ СѓРјРµСЂ? РџРѕРёСЃС‚РёРЅРµ, СЌС‚Рѕ С…СѓРґС€Р°СЏ РЅРѕРІРѕСЃС‚СЊ РёР· С‚РµС…, С‡С‚Рѕ С‚С‹ РјРѕРі РїСЂРёРЅРµСЃС‚Рё!
+	AI_Output			(self, other,"Info_Saturas_YBERION_14_03"); //РљС‚Рѕ Р¶Рµ С‚РµРїРµСЂСЊ РІРѕР·РіР»Р°РІР»СЏРµС‚ Р‘СЂР°С‚СЃС‚РІРѕ? Р­С‚РѕС‚ РІР»Р°СЃС‚РѕР»СЋР±РµС† Рё Р»Р¶РµС† РљРѕСЂ Р“Р°Р»РѕРј?
+	AI_Output			(other, self,"Info_Saturas_YBERION_15_04"); //РќРµС‚! Р“Р°Р»РѕРј РѕС‚СЂРµРєСЃСЏ РѕС‚ Р‘СЂР°С‚СЃС‚РІР°. РћРЅ Р·Р°Р±СЂР°Р» РЅРµСЃРєРѕР»СЊРєРёС… РЎС‚СЂР°Р¶РµР№, Рё РЅРёРєС‚Рѕ РЅРµ Р·РЅР°РµС‚, РіРґРµ РѕРЅРё С‚РµРїРµСЂСЊ.
+	AI_Output			(self, other,"Info_Saturas_YBERION_14_05"); //РќРѕ Р·Р°С‡РµРј? Р’РµРґСЊ РїРѕСЃР»Рµ РіРёР±РµР»Рё Р®`Р‘РµСЂРёРѕРЅР° РѕРЅ РґРѕР»Р¶РµРЅ Р±С‹Р» СЃС‚Р°С‚СЊ РіР»Р°РІРЅС‹Рј!
+	AI_Output			(other, self,"Info_Saturas_YBERION_15_06"); //РЎРѕР±С‹С‚РёСЏ РїРѕСЃР»РµРґРЅРёС… РґРЅРµР№ СѓР±РµРґРёР»Рё Р“СѓСЂСѓ РІ С‚РѕРј, С‡С‚Рѕ РѕРЅРё РёР·Р±СЂР°Р»Рё РЅРµРїСЂР°РІРёР»СЊРЅС‹Р№ РїСѓС‚СЊ. РџРѕС…РѕР¶Рµ, РёС… Р±РѕРі РѕРєР°Р·Р°Р»СЃСЏ РІСЃРµРіРѕ Р»РёС€СЊ Р·Р»С‹Рј РґРµРјРѕРЅРѕРј.
+	AI_Output			(other, self,"Info_Saturas_YBERION_15_07"); //РџРѕРґ РІР»РёСЏРЅРёРµРј РЎРїСЏС‰РµРіРѕ РѕРґРёРЅ РёР· Р“СѓСЂСѓ С‡СѓС‚СЊ РЅРµ СѓР±РёР» РјРµРЅСЏ, РЅРµСЃРјРѕС‚СЂСЏ РЅР° С‚Рѕ, С‡С‚Рѕ РЅРµР·Р°РґРѕР»РіРѕ РґРѕ СЌС‚РѕРіРѕ СЏ СЃРїР°СЃ РµРјСѓ Р¶РёР·РЅСЊ.
+	AI_Output			(other, self,"Info_Saturas_YBERION_15_08"); //Р•РґРёРЅСЃС‚РІРµРЅРЅС‹Рј РёР· Р“СѓСЂСѓ, РєС‚Рѕ РѕС‚РєР°Р·Р°Р»СЃСЏ РїСЂРёР·РЅР°С‚СЊ РёСЃС‚РёРЅРЅСѓСЋ СЃСѓС‰РЅРѕСЃС‚СЊ СЌС‚РѕРіРѕ Р°РґСЃРєРѕРіРѕ СЃРѕР·РґР°РЅРёСЏ, Р±С‹Р» РљРѕСЂ Р“Р°Р»РѕРј. Р’РѕС‚ РїРѕС‡РµРјСѓ РѕРЅ РїРѕРєРёРЅСѓР» Р‘РѕР»РѕС‚РЅС‹Р№ Р›Р°РіРµСЂСЊ.
+	AI_Output			(self, other,"Info_Saturas_YBERION_14_09"); //РџРѕРЅСЏС‚РЅРѕ. Р§С‚Рѕ Р¶, РґР»СЏ РЅР°СЃ СЌС‚Рѕ С‚РѕР»СЊРєРѕ Рє Р»СѓС‡С€РµРјСѓ. РљРѕСЂ РђРЅРіР°СЂ - С…РѕСЂРѕС€РёР№ С‡РµР»РѕРІРµРє, СѓРїСЂСЏРјС‹Р№, РЅРѕ С‡РµСЃС‚РЅС‹Р№.
+	AI_Output			(self, other,"Info_Saturas_YBERION_14_10"); //РќРёРєС‚Рѕ РєСЂРѕРјРµ РЅРµРіРѕ РЅРµ СЃРјРѕР¶РµС‚ СѓРґРµСЂР¶Р°С‚СЊ Р‘СЂР°С‚СЃС‚РІРѕ РѕС‚ СЂР°СЃРїР°РґР° РїРѕСЃР»Рµ СЌС‚РѕР№ РґСѓС…РѕРІРЅРѕР№ РєР°С‚Р°СЃС‚СЂРѕС„С‹.
 
-	B_LogEntry		(CH3_EscapePlanNC,"Я рассказал Сатурасу о случае в Болотном Лагере. Он был очень доволен тем, что Кор Ангар теперь возглавляет Братство.");
+	B_LogEntry		(CH3_EscapePlanNC,"РЇ СЂР°СЃСЃРєР°Р·Р°Р» РЎР°С‚СѓСЂР°СЃСѓ Рѕ СЃР»СѓС‡Р°Рµ РІ Р‘РѕР»РѕС‚РЅРѕРј Р›Р°РіРµСЂРµ. РћРЅ Р±С‹Р» РѕС‡РµРЅСЊ РґРѕРІРѕР»РµРЅ С‚РµРј, С‡С‚Рѕ РљРѕСЂ РђРЅРіР°СЂ С‚РµРїРµСЂСЊ РІРѕР·РіР»Р°РІР»СЏРµС‚ Р‘СЂР°С‚СЃС‚РІРѕ.");
 };
 
 //***************************************************************************
@@ -135,7 +135,7 @@ instance Info_Saturas_BOOK (C_INFO)
 	information	= Info_Saturas_BOOK_Info;
 	permanent	= 0;
 	IMPORTANT 	= 0;
-	description = "У меня есть альманах...";
+	description = "РЈ РјРµРЅСЏ РµСЃС‚СЊ Р°Р»СЊРјР°РЅР°С…...";
 };
 
 FUNC INT Info_Saturas_BOOK_Condition()
@@ -148,10 +148,10 @@ FUNC INT Info_Saturas_BOOK_Condition()
 
 FUNC VOID Info_Saturas_BOOK_Info()
 {
-	AI_Output			(other, self,"Info_Saturas_BOOK_15_01"); //У меня есть альманах...
-	AI_Output			(other, self,"Info_Saturas_BOOK_15_02"); //Ю`Берион использовал его, для того чтобы зарядить юнитор.
-	AI_Output			(self, other,"Info_Saturas_BOOK_14_03"); //Отлично! Знание, которое содержится в этой книге, поможет нам зарядить пять главных камней-юниторов.
-	AI_Output			(self, other,"Info_Saturas_BOOK_14_04"); //Я возьму этот альманах.
+	AI_Output			(other, self,"Info_Saturas_BOOK_15_01"); //РЈ РјРµРЅСЏ РµСЃС‚СЊ Р°Р»СЊРјР°РЅР°С…...
+	AI_Output			(other, self,"Info_Saturas_BOOK_15_02"); //Р®`Р‘РµСЂРёРѕРЅ РёСЃРїРѕР»СЊР·РѕРІР°Р» РµРіРѕ, РґР»СЏ С‚РѕРіРѕ С‡С‚РѕР±С‹ Р·Р°СЂСЏРґРёС‚СЊ СЋРЅРёС‚РѕСЂ.
+	AI_Output			(self, other,"Info_Saturas_BOOK_14_03"); //РћС‚Р»РёС‡РЅРѕ! Р—РЅР°РЅРёРµ, РєРѕС‚РѕСЂРѕРµ СЃРѕРґРµСЂР¶РёС‚СЃСЏ РІ СЌС‚РѕР№ РєРЅРёРіРµ, РїРѕРјРѕР¶РµС‚ РЅР°Рј Р·Р°СЂСЏРґРёС‚СЊ РїСЏС‚СЊ РіР»Р°РІРЅС‹С… РєР°РјРЅРµР№-СЋРЅРёС‚РѕСЂРѕРІ.
+	AI_Output			(self, other,"Info_Saturas_BOOK_14_04"); //РЇ РІРѕР·СЊРјСѓ СЌС‚РѕС‚ Р°Р»СЊРјР°РЅР°С….
 
 	B_GiveInvItems		(hero,self,ItWrFokusbuch,1);
 	Npc_RemoveInvItem	(self,ItWrFokusbuch);
@@ -168,7 +168,7 @@ instance Info_Saturas_FOCUS (C_INFO)
 	information	= Info_Saturas_FOCUS_Info;
 	permanent	= 0;
 	important 	= 0;
-	description = "У меня есть юнитор...";
+	description = "РЈ РјРµРЅСЏ РµСЃС‚СЊ СЋРЅРёС‚РѕСЂ...";
 };
 
 FUNC INT Info_Saturas_FOCUS_Condition()
@@ -181,16 +181,16 @@ FUNC INT Info_Saturas_FOCUS_Condition()
 
 FUNC VOID Info_Saturas_FOCUS_Info()
 {
-	AI_Output			(other, self,"Info_Saturas_FOCUS_15_01"); //У меня есть юнитор...
-	AI_Output			(self, other,"Info_Saturas_FOCUS_14_02"); //Ты держишь ключ от наших оков.
-	AI_Output			(self, other,"Info_Saturas_FOCUS_14_03"); //Это один из пяти камней-юниторов, с помощью которых был создан магический Барьер.
-	AI_Output			(self, other,"Info_Saturas_FOCUS_14_04"); //Их же сила поможет нам обрушить эту гигантскую стену.
-	AI_Output			(other, self,"Info_Saturas_FOCUS_15_05"); //Но для этого же потребуется чертова уйма энергии?!
-	AI_Output			(self, other,"Info_Saturas_FOCUS_14_06"); //Верно. Все эти годы мы неустанно копили руду, вместо того чтобы выменивать на нее предметы роскоши у наших тюремщиков.
-	AI_Output			(self, other,"Info_Saturas_FOCUS_14_07"); //Тебе, должно быть, известно, что в каждом куске руды заключена небольшая частица магии. Силы, которая содержится в нашей железной горе, должно быть достаточно, чтобы уничтожить Барьер. 
-	AI_Output			(other, self,"Info_Saturas_FOCUS_15_08"); //Это рискованно.
-	AI_Output			(self, other,"Info_Saturas_FOCUS_14_09"); //Это будет магический взрыв, не обычный, и опасен он лишь для магии внутри Барьера. Нам, людям, он не причинит вреда.
-	AI_Output			(other, self,"Info_Saturas_FOCUS_15_10"); //Вот, возьми юнитор. Надеюсь, ты найдешь ему применение в своих планах.
+	AI_Output			(other, self,"Info_Saturas_FOCUS_15_01"); //РЈ РјРµРЅСЏ РµСЃС‚СЊ СЋРЅРёС‚РѕСЂ...
+	AI_Output			(self, other,"Info_Saturas_FOCUS_14_02"); //РўС‹ РґРµСЂР¶РёС€СЊ РєР»СЋС‡ РѕС‚ РЅР°С€РёС… РѕРєРѕРІ.
+	AI_Output			(self, other,"Info_Saturas_FOCUS_14_03"); //Р­С‚Рѕ РѕРґРёРЅ РёР· РїСЏС‚Рё РєР°РјРЅРµР№-СЋРЅРёС‚РѕСЂРѕРІ, СЃ РїРѕРјРѕС‰СЊСЋ РєРѕС‚РѕСЂС‹С… Р±С‹Р» СЃРѕР·РґР°РЅ РјР°РіРёС‡РµСЃРєРёР№ Р‘Р°СЂСЊРµСЂ.
+	AI_Output			(self, other,"Info_Saturas_FOCUS_14_04"); //РС… Р¶Рµ СЃРёР»Р° РїРѕРјРѕР¶РµС‚ РЅР°Рј РѕР±СЂСѓС€РёС‚СЊ СЌС‚Сѓ РіРёРіР°РЅС‚СЃРєСѓСЋ СЃС‚РµРЅСѓ.
+	AI_Output			(other, self,"Info_Saturas_FOCUS_15_05"); //РќРѕ РґР»СЏ СЌС‚РѕРіРѕ Р¶Рµ РїРѕС‚СЂРµР±СѓРµС‚СЃСЏ С‡РµСЂС‚РѕРІР° СѓР№РјР° СЌРЅРµСЂРіРёРё?!
+	AI_Output			(self, other,"Info_Saturas_FOCUS_14_06"); //Р’РµСЂРЅРѕ. Р’СЃРµ СЌС‚Рё РіРѕРґС‹ РјС‹ РЅРµСѓСЃС‚Р°РЅРЅРѕ РєРѕРїРёР»Рё СЂСѓРґСѓ, РІРјРµСЃС‚Рѕ С‚РѕРіРѕ С‡С‚РѕР±С‹ РІС‹РјРµРЅРёРІР°С‚СЊ РЅР° РЅРµРµ РїСЂРµРґРјРµС‚С‹ СЂРѕСЃРєРѕС€Рё Сѓ РЅР°С€РёС… С‚СЋСЂРµРјС‰РёРєРѕРІ.
+	AI_Output			(self, other,"Info_Saturas_FOCUS_14_07"); //РўРµР±Рµ, РґРѕР»Р¶РЅРѕ Р±С‹С‚СЊ, РёР·РІРµСЃС‚РЅРѕ, С‡С‚Рѕ РІ РєР°Р¶РґРѕРј РєСѓСЃРєРµ СЂСѓРґС‹ Р·Р°РєР»СЋС‡РµРЅР° РЅРµР±РѕР»СЊС€Р°СЏ С‡Р°СЃС‚РёС†Р° РјР°РіРёРё. РЎРёР»С‹, РєРѕС‚РѕСЂР°СЏ СЃРѕРґРµСЂР¶РёС‚СЃСЏ РІ РЅР°С€РµР№ Р¶РµР»РµР·РЅРѕР№ РіРѕСЂРµ, РґРѕР»Р¶РЅРѕ Р±С‹С‚СЊ РґРѕСЃС‚Р°С‚РѕС‡РЅРѕ, С‡С‚РѕР±С‹ СѓРЅРёС‡С‚РѕР¶РёС‚СЊ Р‘Р°СЂСЊРµСЂ. 
+	AI_Output			(other, self,"Info_Saturas_FOCUS_15_08"); //Р­С‚Рѕ СЂРёСЃРєРѕРІР°РЅРЅРѕ.
+	AI_Output			(self, other,"Info_Saturas_FOCUS_14_09"); //Р­С‚Рѕ Р±СѓРґРµС‚ РјР°РіРёС‡РµСЃРєРёР№ РІР·СЂС‹РІ, РЅРµ РѕР±С‹С‡РЅС‹Р№, Рё РѕРїР°СЃРµРЅ РѕРЅ Р»РёС€СЊ РґР»СЏ РјР°РіРёРё РІРЅСѓС‚СЂРё Р‘Р°СЂСЊРµСЂР°. РќР°Рј, Р»СЋРґСЏРј, РѕРЅ РЅРµ РїСЂРёС‡РёРЅРёС‚ РІСЂРµРґР°.
+	AI_Output			(other, self,"Info_Saturas_FOCUS_15_10"); //Р’РѕС‚, РІРѕР·СЊРјРё СЋРЅРёС‚РѕСЂ. РќР°РґРµСЋСЃСЊ, С‚С‹ РЅР°Р№РґРµС€СЊ РµРјСѓ РїСЂРёРјРµРЅРµРЅРёРµ РІ СЃРІРѕРёС… РїР»Р°РЅР°С….
 
 	B_GiveInvItems		(hero, self, Focus_1, 1);
 	Npc_RemoveInvItem	(self, Focus_1);
@@ -207,7 +207,7 @@ instance Info_Saturas_WHATNOW (C_INFO)
 	information	= Info_Saturas_WHATNOW_Info;
 	permanent	= 0;
 	important 	= 0;
-	description = "Как ты собираешься использовать юнитор и альманах?";
+	description = "РљР°Рє С‚С‹ СЃРѕР±РёСЂР°РµС€СЊСЃСЏ РёСЃРїРѕР»СЊР·РѕРІР°С‚СЊ СЋРЅРёС‚РѕСЂ Рё Р°Р»СЊРјР°РЅР°С…?";
 };
 
 FUNC INT Info_Saturas_WHATNOW_Condition()
@@ -220,9 +220,9 @@ FUNC INT Info_Saturas_WHATNOW_Condition()
 
 FUNC VOID Info_Saturas_WHATNOW_Info()
 {
-	AI_Output			(other, self,"Info_Saturas_WHATNOW_15_01"); //Как ты собираешься использовать юнитор и альманах?
-	AI_Output			(self, other,"Info_Saturas_WHATNOW_14_03"); //Пока никак. Нам нужны еще четыре камня-юнитора.
-	AI_Output			(self, other,"Info_Saturas_WHATNOW_14_04"); //К сожалению, пока у нас нет ни одного.
+	AI_Output			(other, self,"Info_Saturas_WHATNOW_15_01"); //РљР°Рє С‚С‹ СЃРѕР±РёСЂР°РµС€СЊСЃСЏ РёСЃРїРѕР»СЊР·РѕРІР°С‚СЊ СЋРЅРёС‚РѕСЂ Рё Р°Р»СЊРјР°РЅР°С…?
+	AI_Output			(self, other,"Info_Saturas_WHATNOW_14_03"); //РџРѕРєР° РЅРёРєР°Рє. РќР°Рј РЅСѓР¶РЅС‹ РµС‰Рµ С‡РµС‚С‹СЂРµ РєР°РјРЅСЏ-СЋРЅРёС‚РѕСЂР°.
+	AI_Output			(self, other,"Info_Saturas_WHATNOW_14_04"); //Рљ СЃРѕР¶Р°Р»РµРЅРёСЋ, РїРѕРєР° Сѓ РЅР°СЃ РЅРµС‚ РЅРё РѕРґРЅРѕРіРѕ.
 };
 
 //***************************************************************************
@@ -235,7 +235,7 @@ instance Info_Saturas_OFFER (C_INFO)
 	information	= Info_Saturas_OFFER_Info;
 	permanent	= 0;
 	important 	= 0;
-	description = "Я готов найти для тебя четыре камня-юнитора!";
+	description = "РЇ РіРѕС‚РѕРІ РЅР°Р№С‚Рё РґР»СЏ С‚РµР±СЏ С‡РµС‚С‹СЂРµ РєР°РјРЅСЏ-СЋРЅРёС‚РѕСЂР°!";
 };
 
 FUNC INT Info_Saturas_OFFER_Condition()
@@ -248,17 +248,17 @@ FUNC INT Info_Saturas_OFFER_Condition()
 
 FUNC VOID Info_Saturas_OFFER_Info()
 {
-	AI_Output			(other, self,"Info_Saturas_OFFER_15_01"); //Я готов найти для тебя четыре камня-юнитора!
-	AI_Output			(other, self,"Info_Saturas_OFFER_15_02"); //Ведь я и сам не прочь убраться отсюда.
-	AI_Output			(self, other,"Info_Saturas_OFFER_14_03"); //Должен предупредить тебя: поиски будут нелегкими и даже опасными.
-	AI_Output			(self, other,"Info_Saturas_OFFER_14_04"); //Наши отношения со Старым Лагерем портятся с каждым днем, и каждый человек на счету - я не могу дать никого тебе в помощь.
-	AI_Output			(self, other,"Info_Saturas_OFFER_14_05"); //Тебе придется действовать в одиночку.
-	AI_Output			(other, self,"Info_Saturas_OFFER_15_06"); //Ну... Ничего нового. Обычно я справлялся и так.
-	AI_Output			(self, other,"Info_Saturas_OFFER_14_07"); //Твоя уверенность делает тебе честь, но кое-что тебе все-таки понадобится.
-	AI_Output			(self, other,"Info_Saturas_OFFER_14_08"); //Возьми эту старую карту. На ней отмечены места, где находились юниторы в момент сотворения Барьера.
-	AI_Output			(self, other,"Info_Saturas_OFFER_14_09"); //Кроме того, заклинание, записанное в этом магическом свитке, поможет тебе быстро вернуться в наш Лагерь.
-	AI_Output			(self, other,"Info_Saturas_OFFER_14_10"); //Наконец, поговори с Риорданом - он готовит для нашего Лагеря эликсиры.
-	AI_Output			(self, other,"Info_Saturas_OFFER_14_11"); //Ты найдешь его дом здесь же, на верхнем уровне.
+	AI_Output			(other, self,"Info_Saturas_OFFER_15_01"); //РЇ РіРѕС‚РѕРІ РЅР°Р№С‚Рё РґР»СЏ С‚РµР±СЏ С‡РµС‚С‹СЂРµ РєР°РјРЅСЏ-СЋРЅРёС‚РѕСЂР°!
+	AI_Output			(other, self,"Info_Saturas_OFFER_15_02"); //Р’РµРґСЊ СЏ Рё СЃР°Рј РЅРµ РїСЂРѕС‡СЊ СѓР±СЂР°С‚СЊСЃСЏ РѕС‚СЃСЋРґР°.
+	AI_Output			(self, other,"Info_Saturas_OFFER_14_03"); //Р”РѕР»Р¶РµРЅ РїСЂРµРґСѓРїСЂРµРґРёС‚СЊ С‚РµР±СЏ: РїРѕРёСЃРєРё Р±СѓРґСѓС‚ РЅРµР»РµРіРєРёРјРё Рё РґР°Р¶Рµ РѕРїР°СЃРЅС‹РјРё.
+	AI_Output			(self, other,"Info_Saturas_OFFER_14_04"); //РќР°С€Рё РѕС‚РЅРѕС€РµРЅРёСЏ СЃРѕ РЎС‚Р°СЂС‹Рј Р›Р°РіРµСЂРµРј РїРѕСЂС‚СЏС‚СЃСЏ СЃ РєР°Р¶РґС‹Рј РґРЅРµРј, Рё РєР°Р¶РґС‹Р№ С‡РµР»РѕРІРµРє РЅР° СЃС‡РµС‚Сѓ - СЏ РЅРµ РјРѕРіСѓ РґР°С‚СЊ РЅРёРєРѕРіРѕ С‚РµР±Рµ РІ РїРѕРјРѕС‰СЊ.
+	AI_Output			(self, other,"Info_Saturas_OFFER_14_05"); //РўРµР±Рµ РїСЂРёРґРµС‚СЃСЏ РґРµР№СЃС‚РІРѕРІР°С‚СЊ РІ РѕРґРёРЅРѕС‡РєСѓ.
+	AI_Output			(other, self,"Info_Saturas_OFFER_15_06"); //РќСѓ... РќРёС‡РµРіРѕ РЅРѕРІРѕРіРѕ. РћР±С‹С‡РЅРѕ СЏ СЃРїСЂР°РІР»СЏР»СЃСЏ Рё С‚Р°Рє.
+	AI_Output			(self, other,"Info_Saturas_OFFER_14_07"); //РўРІРѕСЏ СѓРІРµСЂРµРЅРЅРѕСЃС‚СЊ РґРµР»Р°РµС‚ С‚РµР±Рµ С‡РµСЃС‚СЊ, РЅРѕ РєРѕРµ-С‡С‚Рѕ С‚РµР±Рµ РІСЃРµ-С‚Р°РєРё РїРѕРЅР°РґРѕР±РёС‚СЃСЏ.
+	AI_Output			(self, other,"Info_Saturas_OFFER_14_08"); //Р’РѕР·СЊРјРё СЌС‚Сѓ СЃС‚Р°СЂСѓСЋ РєР°СЂС‚Сѓ. РќР° РЅРµР№ РѕС‚РјРµС‡РµРЅС‹ РјРµСЃС‚Р°, РіРґРµ РЅР°С…РѕРґРёР»РёСЃСЊ СЋРЅРёС‚РѕСЂС‹ РІ РјРѕРјРµРЅС‚ СЃРѕС‚РІРѕСЂРµРЅРёСЏ Р‘Р°СЂСЊРµСЂР°.
+	AI_Output			(self, other,"Info_Saturas_OFFER_14_09"); //РљСЂРѕРјРµ С‚РѕРіРѕ, Р·Р°РєР»РёРЅР°РЅРёРµ, Р·Р°РїРёСЃР°РЅРЅРѕРµ РІ СЌС‚РѕРј РјР°РіРёС‡РµСЃРєРѕРј СЃРІРёС‚РєРµ, РїРѕРјРѕР¶РµС‚ С‚РµР±Рµ Р±С‹СЃС‚СЂРѕ РІРµСЂРЅСѓС‚СЊСЃСЏ РІ РЅР°С€ Р›Р°РіРµСЂСЊ.
+	AI_Output			(self, other,"Info_Saturas_OFFER_14_10"); //РќР°РєРѕРЅРµС†, РїРѕРіРѕРІРѕСЂРё СЃ Р РёРѕСЂРґР°РЅРѕРј - РѕРЅ РіРѕС‚РѕРІРёС‚ РґР»СЏ РЅР°С€РµРіРѕ Р›Р°РіРµСЂСЏ СЌР»РёРєСЃРёСЂС‹.
+	AI_Output			(self, other,"Info_Saturas_OFFER_14_11"); //РўС‹ РЅР°Р№РґРµС€СЊ РµРіРѕ РґРѕРј Р·РґРµСЃСЊ Р¶Рµ, РЅР° РІРµСЂС…РЅРµРј СѓСЂРѕРІРЅРµ.
 
 	B_Story_BringFoci	();
 };
@@ -271,9 +271,9 @@ func void B_DeliverFocus()
 	//-------- 2. Fokus abliefern --------
 	if 		(Saturas_BringFoci == 1)
 	{
-		AI_Output		(self, other,"Info_Saturas_BRINGFOCUS_14_01"); //Х-м, дело продвигается. Ты молодец!
-		AI_Output		(self, other,"Info_Saturas_BRINGFOCUS_14_02"); //Для осуществления нашего плана нужны еще три камня.
-		AI_Output		(self, other,"Info_Saturas_BRINGFOCUS_14_03"); //Принеси мне оставшиеся юниторы.
+		AI_Output		(self, other,"Info_Saturas_BRINGFOCUS_14_01"); //РҐ-Рј, РґРµР»Рѕ РїСЂРѕРґРІРёРіР°РµС‚СЃСЏ. РўС‹ РјРѕР»РѕРґРµС†!
+		AI_Output		(self, other,"Info_Saturas_BRINGFOCUS_14_02"); //Р”Р»СЏ РѕСЃСѓС‰РµСЃС‚РІР»РµРЅРёСЏ РЅР°С€РµРіРѕ РїР»Р°РЅР° РЅСѓР¶РЅС‹ РµС‰Рµ С‚СЂРё РєР°РјРЅСЏ.
+		AI_Output		(self, other,"Info_Saturas_BRINGFOCUS_14_03"); //РџСЂРёРЅРµСЃРё РјРЅРµ РѕСЃС‚Р°РІС€РёРµСЃСЏ СЋРЅРёС‚РѕСЂС‹.
 		Saturas_BringFoci = 2;	
 		B_GiveXP  		(XP_DeliverSecondFocus);
 	}
@@ -281,9 +281,9 @@ func void B_DeliverFocus()
 	//-------- 3. Fokus abliefern --------
 	else if	(Saturas_BringFoci == 2)
 	{
-		AI_Output		(self, other,"Info_Saturas_BRINGFOCUS_14_04"); //Хорошо! Ты принес нам второй камень.
-		AI_Output		(self, other,"Info_Saturas_BRINGFOCUS_14_05"); //Мы все ближе и ближе к цели.
-		AI_Output		(self, other,"Info_Saturas_BRINGFOCUS_14_06"); //Наберись храбрости и терпения и достань еще два юнитора.
+		AI_Output		(self, other,"Info_Saturas_BRINGFOCUS_14_04"); //РҐРѕСЂРѕС€Рѕ! РўС‹ РїСЂРёРЅРµСЃ РЅР°Рј РІС‚РѕСЂРѕР№ РєР°РјРµРЅСЊ.
+		AI_Output		(self, other,"Info_Saturas_BRINGFOCUS_14_05"); //РњС‹ РІСЃРµ Р±Р»РёР¶Рµ Рё Р±Р»РёР¶Рµ Рє С†РµР»Рё.
+		AI_Output		(self, other,"Info_Saturas_BRINGFOCUS_14_06"); //РќР°Р±РµСЂРёСЃСЊ С…СЂР°Р±СЂРѕСЃС‚Рё Рё С‚РµСЂРїРµРЅРёСЏ Рё РґРѕСЃС‚Р°РЅСЊ РµС‰Рµ РґРІР° СЋРЅРёС‚РѕСЂР°.
 		Saturas_BringFoci = 3;	
 		B_GiveXP  		(XP_DeliverThirdFocus);
 	}
@@ -291,9 +291,9 @@ func void B_DeliverFocus()
 	//-------- 4. Fokus abliefern --------
 	else if	(Saturas_BringFoci == 3)
 	{
-		AI_Output		(self, other,"Info_Saturas_BRINGFOCUS_14_07"); //Невероятно: теперь у нас есть уже четыре камня!
-		AI_Output		(self, other,"Info_Saturas_BRINGFOCUS_14_08"); //Осталось найти всего один, и тогда у нас будет все необходимое для осуществления нашего плана.
-		AI_Output		(self, other,"Info_Saturas_BRINGFOCUS_14_09"); //Ты уже оказал всем нам великую услугу. Найди же и пятый камень, и тогда вскоре все мы будем свободны.
+		AI_Output		(self, other,"Info_Saturas_BRINGFOCUS_14_07"); //РќРµРІРµСЂРѕСЏС‚РЅРѕ: С‚РµРїРµСЂСЊ Сѓ РЅР°СЃ РµСЃС‚СЊ СѓР¶Рµ С‡РµС‚С‹СЂРµ РєР°РјРЅСЏ!
+		AI_Output		(self, other,"Info_Saturas_BRINGFOCUS_14_08"); //РћСЃС‚Р°Р»РѕСЃСЊ РЅР°Р№С‚Рё РІСЃРµРіРѕ РѕРґРёРЅ, Рё С‚РѕРіРґР° Сѓ РЅР°СЃ Р±СѓРґРµС‚ РІСЃРµ РЅРµРѕР±С…РѕРґРёРјРѕРµ РґР»СЏ РѕСЃСѓС‰РµСЃС‚РІР»РµРЅРёСЏ РЅР°С€РµРіРѕ РїР»Р°РЅР°.
+		AI_Output		(self, other,"Info_Saturas_BRINGFOCUS_14_09"); //РўС‹ СѓР¶Рµ РѕРєР°Р·Р°Р» РІСЃРµРј РЅР°Рј РІРµР»РёРєСѓСЋ СѓСЃР»СѓРіСѓ. РќР°Р№РґРё Р¶Рµ Рё РїСЏС‚С‹Р№ РєР°РјРµРЅСЊ, Рё С‚РѕРіРґР° РІСЃРєРѕСЂРµ РІСЃРµ РјС‹ Р±СѓРґРµРј СЃРІРѕР±РѕРґРЅС‹.
 		Saturas_BringFoci = 4;	
 		B_GiveXP  		(XP_DeliverFourthFocus);
 	}
@@ -301,19 +301,19 @@ func void B_DeliverFocus()
 	//-------- 5. Fokus abliefern --------
 	else if	(Saturas_BringFoci == 4)
 	{
-		AI_Output		(self, other,"Info_Saturas_BRINGFOCUS_14_10"); //Великолепно: теперь у нас есть все пять камней!
-		AI_Output		(self, other,"Info_Saturas_BRINGFOCUS_14_11"); //Ты оказал нашему Лагерю неоценимую помощь. Прими же уверения в моей бесконечной признательности.
-		AI_Output		(self, other,"Info_Saturas_BRINGFOCUS_14_12"); //И загляни к Риордану. Он знает, чем вознаградить тебя за труды.
-		AI_Output		(self, other,"Info_Saturas_BRINGFOCUS_14_13"); //Еще поговори с Кроносом, хранителем руды. У него также приготовлен для тебя подарок.
+		AI_Output		(self, other,"Info_Saturas_BRINGFOCUS_14_10"); //Р’РµР»РёРєРѕР»РµРїРЅРѕ: С‚РµРїРµСЂСЊ Сѓ РЅР°СЃ РµСЃС‚СЊ РІСЃРµ РїСЏС‚СЊ РєР°РјРЅРµР№!
+		AI_Output		(self, other,"Info_Saturas_BRINGFOCUS_14_11"); //РўС‹ РѕРєР°Р·Р°Р» РЅР°С€РµРјСѓ Р›Р°РіРµСЂСЋ РЅРµРѕС†РµРЅРёРјСѓСЋ РїРѕРјРѕС‰СЊ. РџСЂРёРјРё Р¶Рµ СѓРІРµСЂРµРЅРёСЏ РІ РјРѕРµР№ Р±РµСЃРєРѕРЅРµС‡РЅРѕР№ РїСЂРёР·РЅР°С‚РµР»СЊРЅРѕСЃС‚Рё.
+		AI_Output		(self, other,"Info_Saturas_BRINGFOCUS_14_12"); //Р Р·Р°РіР»СЏРЅРё Рє Р РёРѕСЂРґР°РЅСѓ. РћРЅ Р·РЅР°РµС‚, С‡РµРј РІРѕР·РЅР°РіСЂР°РґРёС‚СЊ С‚РµР±СЏ Р·Р° С‚СЂСѓРґС‹.
+		AI_Output		(self, other,"Info_Saturas_BRINGFOCUS_14_13"); //Р•С‰Рµ РїРѕРіРѕРІРѕСЂРё СЃ РљСЂРѕРЅРѕСЃРѕРј, С…СЂР°РЅРёС‚РµР»РµРј СЂСѓРґС‹. РЈ РЅРµРіРѕ С‚Р°РєР¶Рµ РїСЂРёРіРѕС‚РѕРІР»РµРЅ РґР»СЏ С‚РµР±СЏ РїРѕРґР°СЂРѕРє.
 
 		Saturas_BringFoci = 5;	
 		B_GiveXP  			(XP_DeliverFifthFocus);
 
-		B_LogEntry		(CH3_BringFoci,"Я сумел отыскать все четыре юнитора. Сатурас счастлив без меры. Думаю, теперь Болотный Лагерь в долгу передо мной.");
-		B_LogEntry		(CH3_BringFoci,"Маги воды Кронос и Риордан пообещали мне награду за все юниторы. Возможно, стоит пойти поговорить с ними.");
+		B_LogEntry		(CH3_BringFoci,"РЇ СЃСѓРјРµР» РѕС‚С‹СЃРєР°С‚СЊ РІСЃРµ С‡РµС‚С‹СЂРµ СЋРЅРёС‚РѕСЂР°. РЎР°С‚СѓСЂР°СЃ СЃС‡Р°СЃС‚Р»РёРІ Р±РµР· РјРµСЂС‹. Р”СѓРјР°СЋ, С‚РµРїРµСЂСЊ Р‘РѕР»РѕС‚РЅС‹Р№ Р›Р°РіРµСЂСЊ РІ РґРѕР»РіСѓ РїРµСЂРµРґРѕ РјРЅРѕР№.");
+		B_LogEntry		(CH3_BringFoci,"РњР°РіРё РІРѕРґС‹ РљСЂРѕРЅРѕСЃ Рё Р РёРѕСЂРґР°РЅ РїРѕРѕР±РµС‰Р°Р»Рё РјРЅРµ РЅР°РіСЂР°РґСѓ Р·Р° РІСЃРµ СЋРЅРёС‚РѕСЂС‹. Р’РѕР·РјРѕР¶РЅРѕ, СЃС‚РѕРёС‚ РїРѕР№С‚Рё РїРѕРіРѕРІРѕСЂРёС‚СЊ СЃ РЅРёРјРё.");
 
 		
-		// Aufhebung des Log_running_Status, wenn die Foki schon vorher abgegeben wurden, bevor SC die einzelnen Auftrдge bekam.    ***Bjцrn***
+		// Aufhebung des Log_running_Status, wenn die Foki schon vorher abgegeben wurden, bevor SC die einzelnen AuftrРґge bekam.    ***BjС†rn***
 		
 		Log_SetTopicStatus	(CH3_MonasteryRuin,	LOG_SUCCESS);
 		Log_SetTopicStatus	(CH3_Stonehenge,	LOG_SUCCESS);
@@ -325,7 +325,7 @@ func void B_DeliverFocus()
 	//-------- Neuer Teleportzauber ? --------
 	if ( !Npc_HasItems(hero, ItArScrollTeleport2) && (Saturas_BringFoci < 5) )	
 	{
-		AI_Output		(self, other,"Info_Saturas_BRINGFOCUS_14_14"); //Я вижу, ты воспользовался свитком с Заклинанием Портал. Вот, возьми еще один.
+		AI_Output		(self, other,"Info_Saturas_BRINGFOCUS_14_14"); //РЇ РІРёР¶Сѓ, С‚С‹ РІРѕСЃРїРѕР»СЊР·РѕРІР°Р»СЃСЏ СЃРІРёС‚РєРѕРј СЃ Р—Р°РєР»РёРЅР°РЅРёРµРј РџРѕСЂС‚Р°Р». Р’РѕС‚, РІРѕР·СЊРјРё РµС‰Рµ РѕРґРёРЅ.
 		CreateInvItem	(self,	ItArScrollTeleport2);
 		B_GiveInvItems	(self, other, ItArScrollTeleport2, 1);
 	};
@@ -341,7 +341,7 @@ instance Info_Saturas_BRINGFOCUS2 (C_INFO)
 	information	= Info_Saturas_BRINGFOCUS2_Info;
 	permanent	= 0;
 	important	= 0;
-	description = "Я нашел юнитор в ущелье троллей!";
+	description = "РЇ РЅР°С€РµР» СЋРЅРёС‚РѕСЂ РІ СѓС‰РµР»СЊРµ С‚СЂРѕР»Р»РµР№!";
 };
 
 FUNC INT Info_Saturas_BRINGFOCUS2_Condition()
@@ -354,9 +354,9 @@ FUNC INT Info_Saturas_BRINGFOCUS2_Condition()
 
 FUNC VOID Info_Saturas_BRINGFOCUS2_Info()
 {
-	AI_Output			(other, self,"Info_Saturas_BRINGFOCUS2_15_01"); //Я нашел юнитор в ущелье троллей!
+	AI_Output			(other, self,"Info_Saturas_BRINGFOCUS2_15_01"); //РЇ РЅР°С€РµР» СЋРЅРёС‚РѕСЂ РІ СѓС‰РµР»СЊРµ С‚СЂРѕР»Р»РµР№!
 
-	B_LogEntry		(CH3_TrollCanyon,"Юнитор из каньона тролля теперь находится у Сатураса.");
+	B_LogEntry		(CH3_TrollCanyon,"Р®РЅРёС‚РѕСЂ РёР· РєР°РЅСЊРѕРЅР° С‚СЂРѕР»Р»СЏ С‚РµРїРµСЂСЊ РЅР°С…РѕРґРёС‚СЃСЏ Сѓ РЎР°С‚СѓСЂР°СЃР°.");
 	Log_SetTopicStatus	(CH3_TrollCanyon,	LOG_SUCCESS);
 
 	//-------- Fokus abliefern ! --------
@@ -375,7 +375,7 @@ instance Info_Saturas_BRINGFOCUS3 (C_INFO)
 	information	= Info_Saturas_BRINGFOCUS3_Info;
 	permanent	= 0;
 	important 	= 0;
-	description = "Я нашел юнитор в форте на горе!";
+	description = "РЇ РЅР°С€РµР» СЋРЅРёС‚РѕСЂ РІ С„РѕСЂС‚Рµ РЅР° РіРѕСЂРµ!";
 };
 
 FUNC INT Info_Saturas_BRINGFOCUS3_Condition()
@@ -388,9 +388,9 @@ FUNC INT Info_Saturas_BRINGFOCUS3_Condition()
 
 FUNC VOID Info_Saturas_BRINGFOCUS3_Info()
 {
-	AI_Output			(other, self,"Info_Saturas_BRINGFOCUS3_15_01"); //Я нашел юнитор в форте на горе!
+	AI_Output			(other, self,"Info_Saturas_BRINGFOCUS3_15_01"); //РЇ РЅР°С€РµР» СЋРЅРёС‚РѕСЂ РІ С„РѕСЂС‚Рµ РЅР° РіРѕСЂРµ!
 
-	B_LogEntry		(CH3_Fortress,"Сатурас получил от меня юнитор из форта.");
+	B_LogEntry		(CH3_Fortress,"РЎР°С‚СѓСЂР°СЃ РїРѕР»СѓС‡РёР» РѕС‚ РјРµРЅСЏ СЋРЅРёС‚РѕСЂ РёР· С„РѕСЂС‚Р°.");
 	Log_SetTopicStatus	(CH3_Fortress,		LOG_SUCCESS);
 
 	//-------- Fokus abliefern ! --------
@@ -409,7 +409,7 @@ instance Info_Saturas_BRINGFOCUS4 (C_INFO)
 	information	= Info_Saturas_BRINGFOCUS4_Info;
 	permanent	= 0;
 	important 	= 0;
-	description = "Я нашел юнитор в разрушенном монастыре!";
+	description = "РЇ РЅР°С€РµР» СЋРЅРёС‚РѕСЂ РІ СЂР°Р·СЂСѓС€РµРЅРЅРѕРј РјРѕРЅР°СЃС‚С‹СЂРµ!";
 };
 
 FUNC INT Info_Saturas_BRINGFOCUS4_Condition()
@@ -422,10 +422,10 @@ FUNC INT Info_Saturas_BRINGFOCUS4_Condition()
 
 FUNC VOID Info_Saturas_BRINGFOCUS4_Info()
 {
-	AI_Output			(other, self,"Info_Saturas_BRINGFOCUS4_15_01"); //Я нашел юнитор в разрушенном монастыре!
-	AI_Output			(other, self,"Info_Saturas_BRINGFOCUS4_15_02"); //Там был Горн, наемник, он помогал мне в поисках.
+	AI_Output			(other, self,"Info_Saturas_BRINGFOCUS4_15_01"); //РЇ РЅР°С€РµР» СЋРЅРёС‚РѕСЂ РІ СЂР°Р·СЂСѓС€РµРЅРЅРѕРј РјРѕРЅР°СЃС‚С‹СЂРµ!
+	AI_Output			(other, self,"Info_Saturas_BRINGFOCUS4_15_02"); //РўР°Рј Р±С‹Р» Р“РѕСЂРЅ, РЅР°РµРјРЅРёРє, РѕРЅ РїРѕРјРѕРіР°Р» РјРЅРµ РІ РїРѕРёСЃРєР°С….
 
-	B_LogEntry		(CH3_MonasteryRuin,"Наконец-то я смог отдать юнитор из монастыря Сатурасу.");
+	B_LogEntry		(CH3_MonasteryRuin,"РќР°РєРѕРЅРµС†-С‚Рѕ СЏ СЃРјРѕРі РѕС‚РґР°С‚СЊ СЋРЅРёС‚РѕСЂ РёР· РјРѕРЅР°СЃС‚С‹СЂСЏ РЎР°С‚СѓСЂР°СЃСѓ.");
 	Log_SetTopicStatus	(CH3_MonasteryRuin,	LOG_SUCCESS);
 
 	//-------- Fokus abliefern ! --------
@@ -444,7 +444,7 @@ instance Info_Saturas_BRINGFOCUS5 (C_INFO)
 	information	= Info_Saturas_BRINGFOCUS5_Info;
 	permanent	= 0;
 	important 	= 0;
-	description = "Я нашел юнитор под каменным кольцом!";
+	description = "РЇ РЅР°С€РµР» СЋРЅРёС‚РѕСЂ РїРѕРґ РєР°РјРµРЅРЅС‹Рј РєРѕР»СЊС†РѕРј!";
 };
 
 FUNC INT Info_Saturas_BRINGFOCUS5_Condition()
@@ -457,9 +457,9 @@ FUNC INT Info_Saturas_BRINGFOCUS5_Condition()
 
 FUNC VOID Info_Saturas_BRINGFOCUS5_Info()
 {
-	AI_Output			(other, self,"Info_Saturas_BRINGFOCUS5_15_01"); //Я нашел юнитор под каменным кольцом!
+	AI_Output			(other, self,"Info_Saturas_BRINGFOCUS5_15_01"); //РЇ РЅР°С€РµР» СЋРЅРёС‚РѕСЂ РїРѕРґ РєР°РјРµРЅРЅС‹Рј РєРѕР»СЊС†РѕРј!
 
-	B_LogEntry		(CH3_Stonehenge,"Я отдал Сатурасу юнитор из склепа под кругом камней.");
+	B_LogEntry		(CH3_Stonehenge,"РЇ РѕС‚РґР°Р» РЎР°С‚СѓСЂР°СЃСѓ СЋРЅРёС‚РѕСЂ РёР· СЃРєР»РµРїР° РїРѕРґ РєСЂСѓРіРѕРј РєР°РјРЅРµР№.");
 	Log_SetTopicStatus	(CH3_Stonehenge,	LOG_SUCCESS);
 
 	//-------- Fokus abliefern ! --------
@@ -478,7 +478,7 @@ instance Info_Saturas_ALLFOCI (C_INFO)
 	information	= Info_Saturas_ALLFOCI_Info;
 	permanent	= 0;
 	important 	= 0;
-	description = "Теперь ты можешь взорвать железную гору?";
+	description = "РўРµРїРµСЂСЊ С‚С‹ РјРѕР¶РµС€СЊ РІР·РѕСЂРІР°С‚СЊ Р¶РµР»РµР·РЅСѓСЋ РіРѕСЂСѓ?";
 };
 
 FUNC INT Info_Saturas_ALLFOCI_Condition()
@@ -492,13 +492,13 @@ FUNC INT Info_Saturas_ALLFOCI_Condition()
 
 FUNC VOID Info_Saturas_ALLFOCI_Info()
 {
-	AI_Output			(other, self,"Info_Saturas_ALLFOCI_15_01"); //Теперь ты можешь взорвать железную гору?
-	AI_Output			(self, other,"Info_Saturas_ALLFOCI_14_02"); //Теперь у нас есть все для осуществления нашего плана.
-	AI_Output			(self, other,"Info_Saturas_ALLFOCI_14_03"); //Но Барьер был сотворен двенадцатью магами.
-	AI_Output			(self, other,"Info_Saturas_ALLFOCI_14_04"); //В Круге Воды недостаточно магов, чтобы управлять столь могущественной силой и направлять ее в нужное русло.
-	AI_Output			(other, self,"Info_Saturas_ALLFOCI_15_05"); //Что мы можем сделать?
-	AI_Output			(self, other,"Info_Saturas_ALLFOCI_14_06"); //Я понимаю, что мы уже и так в неоплатном долгу перед тобой за все, что ты для нас сделал...
-	AI_Output			(self, other,"Info_Saturas_ALLFOCI_14_07"); //... но в интересах всех жителей колонии я должен попросить тебя оказать нам еще одну услугу.
+	AI_Output			(other, self,"Info_Saturas_ALLFOCI_15_01"); //РўРµРїРµСЂСЊ С‚С‹ РјРѕР¶РµС€СЊ РІР·РѕСЂРІР°С‚СЊ Р¶РµР»РµР·РЅСѓСЋ РіРѕСЂСѓ?
+	AI_Output			(self, other,"Info_Saturas_ALLFOCI_14_02"); //РўРµРїРµСЂСЊ Сѓ РЅР°СЃ РµСЃС‚СЊ РІСЃРµ РґР»СЏ РѕСЃСѓС‰РµСЃС‚РІР»РµРЅРёСЏ РЅР°С€РµРіРѕ РїР»Р°РЅР°.
+	AI_Output			(self, other,"Info_Saturas_ALLFOCI_14_03"); //РќРѕ Р‘Р°СЂСЊРµСЂ Р±С‹Р» СЃРѕС‚РІРѕСЂРµРЅ РґРІРµРЅР°РґС†Р°С‚СЊСЋ РјР°РіР°РјРё.
+	AI_Output			(self, other,"Info_Saturas_ALLFOCI_14_04"); //Р’ РљСЂСѓРіРµ Р’РѕРґС‹ РЅРµРґРѕСЃС‚Р°С‚РѕС‡РЅРѕ РјР°РіРѕРІ, С‡С‚РѕР±С‹ СѓРїСЂР°РІР»СЏС‚СЊ СЃС‚РѕР»СЊ РјРѕРіСѓС‰РµСЃС‚РІРµРЅРЅРѕР№ СЃРёР»РѕР№ Рё РЅР°РїСЂР°РІР»СЏС‚СЊ РµРµ РІ РЅСѓР¶РЅРѕРµ СЂСѓСЃР»Рѕ.
+	AI_Output			(other, self,"Info_Saturas_ALLFOCI_15_05"); //Р§С‚Рѕ РјС‹ РјРѕР¶РµРј СЃРґРµР»Р°С‚СЊ?
+	AI_Output			(self, other,"Info_Saturas_ALLFOCI_14_06"); //РЇ РїРѕРЅРёРјР°СЋ, С‡С‚Рѕ РјС‹ СѓР¶Рµ Рё С‚Р°Рє РІ РЅРµРѕРїР»Р°С‚РЅРѕРј РґРѕР»РіСѓ РїРµСЂРµРґ С‚РѕР±РѕР№ Р·Р° РІСЃРµ, С‡С‚Рѕ С‚С‹ РґР»СЏ РЅР°СЃ СЃРґРµР»Р°Р»...
+	AI_Output			(self, other,"Info_Saturas_ALLFOCI_14_07"); //... РЅРѕ РІ РёРЅС‚РµСЂРµСЃР°С… РІСЃРµС… Р¶РёС‚РµР»РµР№ РєРѕР»РѕРЅРёРё СЏ РґРѕР»Р¶РµРЅ РїРѕРїСЂРѕСЃРёС‚СЊ С‚РµР±СЏ РѕРєР°Р·Р°С‚СЊ РЅР°Рј РµС‰Рµ РѕРґРЅСѓ СѓСЃР»СѓРіСѓ.
 };
 
 //***************************************************************************
@@ -511,7 +511,7 @@ instance Info_Saturas_FAVOR (C_INFO)
 	information	= Info_Saturas_FAVOR_Info;
 	permanent	= 0;
 	important 	= 0;
-	description = "Еще одну услугу?";
+	description = "Р•С‰Рµ РѕРґРЅСѓ СѓСЃР»СѓРіСѓ?";
 };
 
 FUNC INT Info_Saturas_FAVOR_Condition()
@@ -524,12 +524,12 @@ FUNC INT Info_Saturas_FAVOR_Condition()
 
 FUNC VOID Info_Saturas_FAVOR_Info()
 {
-	AI_Output			(other, self,"Info_Saturas_FAVOR_15_01"); //Еще одну услугу?
-	AI_Output			(self, other,"Info_Saturas_FAVOR_14_02"); //Да. Отправляйся в Старый Лагерь и попытайся убедить магов Круга Огня помочь нам.
-	AI_Output			(other, self,"Info_Saturas_FAVOR_15_03"); //МАГОВ ОГНЯ??? Почему ты думаешь, что они будут рисковать своим положением ради кого-то еще?
-	AI_Output			(other, self,"Info_Saturas_FAVOR_15_04"); //Уничтожив Барьер, они потеряют все, к чему так привыкли, лишатся своей силы и власти!
-	AI_Output			(self, other,"Info_Saturas_FAVOR_14_05"); //Именно поэтому ТЫ должен взяться за выполнение этой миссии. У тебя есть друзья во всех Лагерях колонии.
-	AI_Output			(self, other,"Info_Saturas_FAVOR_14_06"); //Напомни магам Огня про то старое доброе время, когда мы вместе постигали искусство магии.
+	AI_Output			(other, self,"Info_Saturas_FAVOR_15_01"); //Р•С‰Рµ РѕРґРЅСѓ СѓСЃР»СѓРіСѓ?
+	AI_Output			(self, other,"Info_Saturas_FAVOR_14_02"); //Р”Р°. РћС‚РїСЂР°РІР»СЏР№СЃСЏ РІ РЎС‚Р°СЂС‹Р№ Р›Р°РіРµСЂСЊ Рё РїРѕРїС‹С‚Р°Р№СЃСЏ СѓР±РµРґРёС‚СЊ РјР°РіРѕРІ РљСЂСѓРіР° РћРіРЅСЏ РїРѕРјРѕС‡СЊ РЅР°Рј.
+	AI_Output			(other, self,"Info_Saturas_FAVOR_15_03"); //РњРђР“РћР’ РћР“РќРЇ??? РџРѕС‡РµРјСѓ С‚С‹ РґСѓРјР°РµС€СЊ, С‡С‚Рѕ РѕРЅРё Р±СѓРґСѓС‚ СЂРёСЃРєРѕРІР°С‚СЊ СЃРІРѕРёРј РїРѕР»РѕР¶РµРЅРёРµРј СЂР°РґРё РєРѕРіРѕ-С‚Рѕ РµС‰Рµ?
+	AI_Output			(other, self,"Info_Saturas_FAVOR_15_04"); //РЈРЅРёС‡С‚РѕР¶РёРІ Р‘Р°СЂСЊРµСЂ, РѕРЅРё РїРѕС‚РµСЂСЏСЋС‚ РІСЃРµ, Рє С‡РµРјСѓ С‚Р°Рє РїСЂРёРІС‹РєР»Рё, Р»РёС€Р°С‚СЃСЏ СЃРІРѕРµР№ СЃРёР»С‹ Рё РІР»Р°СЃС‚Рё!
+	AI_Output			(self, other,"Info_Saturas_FAVOR_14_05"); //РРјРµРЅРЅРѕ РїРѕСЌС‚РѕРјСѓ РўР« РґРѕР»Р¶РµРЅ РІР·СЏС‚СЊСЃСЏ Р·Р° РІС‹РїРѕР»РЅРµРЅРёРµ СЌС‚РѕР№ РјРёСЃСЃРёРё. РЈ С‚РµР±СЏ РµСЃС‚СЊ РґСЂСѓР·СЊСЏ РІРѕ РІСЃРµС… Р›Р°РіРµСЂСЏС… РєРѕР»РѕРЅРёРё.
+	AI_Output			(self, other,"Info_Saturas_FAVOR_14_06"); //РќР°РїРѕРјРЅРё РјР°РіР°Рј РћРіРЅСЏ РїСЂРѕ С‚Рѕ СЃС‚Р°СЂРѕРµ РґРѕР±СЂРѕРµ РІСЂРµРјСЏ, РєРѕРіРґР° РјС‹ РІРјРµСЃС‚Рµ РїРѕСЃС‚РёРіР°Р»Рё РёСЃРєСѓСЃСЃС‚РІРѕ РјР°РіРёРё.
 };	
 
 //***************************************************************************
@@ -542,7 +542,7 @@ instance Info_Saturas_ACCEPT (C_INFO)
 	information	= Info_Saturas_ACCEPT_Info;
 	permanent	= 0;
 	important 	= 0;
-	description = "Ладно, я постараюсь убедить магов Огня.";
+	description = "Р›Р°РґРЅРѕ, СЏ РїРѕСЃС‚Р°СЂР°СЋСЃСЊ СѓР±РµРґРёС‚СЊ РјР°РіРѕРІ РћРіРЅСЏ.";
 };
 
 FUNC INT Info_Saturas_ACCEPT_Condition()
@@ -555,15 +555,15 @@ FUNC INT Info_Saturas_ACCEPT_Condition()
 
 FUNC VOID Info_Saturas_ACCEPT_Info()
 {
-	AI_Output			(other, self,"Info_Saturas_ACCEPT_15_01"); //Ладно, я постараюсь убедить магов Огня.
-	AI_Output			(other, self,"Info_Saturas_ACCEPT_15_02"); //Но я ничего не обещаю! Я по-прежнему считаю эту затею чистым безумием.
-	AI_Output			(self, other,"Info_Saturas_ACCEPT_14_03"); //Ты должен попробовать. Если ты не добьешься успеха, останется только один...
-	AI_Output			(self, other,"Info_Saturas_ACCEPT_14_04"); //Только один...
-	AI_Output			(other, self,"Info_Saturas_ACCEPT_15_05"); //... один ЧТО?
-	AI_Output			(self, other,"Info_Saturas_ACCEPT_14_06"); //Не важно. У тебя ДОЛЖНО получиться!
-	AI_Output			(self, other,"Info_Saturas_ACCEPT_14_07"); //Вот, возьми эту магическую руну. Передай ее Корристо, Верховному Магу Круга Огня, в знак нашего доверия.
-	AI_Output			(self, other,"Info_Saturas_ACCEPT_14_08"); //С ее помощью он сможет в любой момент, минуя стражу, перенестись сюда, в эту комнату.
-	AI_Output			(self, other,"Info_Saturas_ACCEPT_14_09"); //Это должно убедить наших бывших друзей в наших добрых намерениях.
+	AI_Output			(other, self,"Info_Saturas_ACCEPT_15_01"); //Р›Р°РґРЅРѕ, СЏ РїРѕСЃС‚Р°СЂР°СЋСЃСЊ СѓР±РµРґРёС‚СЊ РјР°РіРѕРІ РћРіРЅСЏ.
+	AI_Output			(other, self,"Info_Saturas_ACCEPT_15_02"); //РќРѕ СЏ РЅРёС‡РµРіРѕ РЅРµ РѕР±РµС‰Р°СЋ! РЇ РїРѕ-РїСЂРµР¶РЅРµРјСѓ СЃС‡РёС‚Р°СЋ СЌС‚Сѓ Р·Р°С‚РµСЋ С‡РёСЃС‚С‹Рј Р±РµР·СѓРјРёРµРј.
+	AI_Output			(self, other,"Info_Saturas_ACCEPT_14_03"); //РўС‹ РґРѕР»Р¶РµРЅ РїРѕРїСЂРѕР±РѕРІР°С‚СЊ. Р•СЃР»Рё С‚С‹ РЅРµ РґРѕР±СЊРµС€СЊСЃСЏ СѓСЃРїРµС…Р°, РѕСЃС‚Р°РЅРµС‚СЃСЏ С‚РѕР»СЊРєРѕ РѕРґРёРЅ...
+	AI_Output			(self, other,"Info_Saturas_ACCEPT_14_04"); //РўРѕР»СЊРєРѕ РѕРґРёРЅ...
+	AI_Output			(other, self,"Info_Saturas_ACCEPT_15_05"); //... РѕРґРёРЅ Р§РўРћ?
+	AI_Output			(self, other,"Info_Saturas_ACCEPT_14_06"); //РќРµ РІР°Р¶РЅРѕ. РЈ С‚РµР±СЏ Р”РћР›Р–РќРћ РїРѕР»СѓС‡РёС‚СЊСЃСЏ!
+	AI_Output			(self, other,"Info_Saturas_ACCEPT_14_07"); //Р’РѕС‚, РІРѕР·СЊРјРё СЌС‚Сѓ РјР°РіРёС‡РµСЃРєСѓСЋ СЂСѓРЅСѓ. РџРµСЂРµРґР°Р№ РµРµ РљРѕСЂСЂРёСЃС‚Рѕ, Р’РµСЂС…РѕРІРЅРѕРјСѓ РњР°РіСѓ РљСЂСѓРіР° РћРіРЅСЏ, РІ Р·РЅР°Рє РЅР°С€РµРіРѕ РґРѕРІРµСЂРёСЏ.
+	AI_Output			(self, other,"Info_Saturas_ACCEPT_14_08"); //РЎ РµРµ РїРѕРјРѕС‰СЊСЋ РѕРЅ СЃРјРѕР¶РµС‚ РІ Р»СЋР±РѕР№ РјРѕРјРµРЅС‚, РјРёРЅСѓСЏ СЃС‚СЂР°Р¶Сѓ, РїРµСЂРµРЅРµСЃС‚РёСЃСЊ СЃСЋРґР°, РІ СЌС‚Сѓ РєРѕРјРЅР°С‚Сѓ.
+	AI_Output			(self, other,"Info_Saturas_ACCEPT_14_09"); //Р­С‚Рѕ РґРѕР»Р¶РЅРѕ СѓР±РµРґРёС‚СЊ РЅР°С€РёС… Р±С‹РІС€РёС… РґСЂСѓР·РµР№ РІ РЅР°С€РёС… РґРѕР±СЂС‹С… РЅР°РјРµСЂРµРЅРёСЏС….
 
 	B_KapitelWechsel	(4);
 };	
@@ -609,12 +609,12 @@ FUNC VOID Info_Saturas_AMBUSH_Info()
 	gorn = Hlp_GetNpc(PC_FIGHTER);
 	AI_TurnToNpc		(gorn,hero);
 	
-	AI_Output			(self,hero,"Info_Saturas_AMBUSH_14_01"); //Я рад, что ты вернулся. Случилось нечто ужасное!
-	AI_Output			(hero,self,"Info_Saturas_AMBUSH_15_02"); //Дай-ка я угадаю: на Свободную Шахту напали стражники из Старого Лагеря. Никто не видел, откуда они появились?..
-	AI_Output			(self,hero,"Info_Saturas_AMBUSH_14_03"); //Постой... как... но конечно... Ты узнал об этом еще в Старом Лагере!
-	AI_Output	 		(self,hero,"Info_Saturas_AMBUSH_14_04"); //Горн прибыл сюда незадолго до тебя.
-	AI_Output			(self,hero,"Info_Saturas_AMBUSH_14_05"); //Что заставило Гомеза пойти на столь агрессивный шаг? 
-	AI_Output			(self,hero,"Info_Saturas_AMBUSH_14_06"); //Он должен отдавать себе отчет в том, что этот гнусный поступок станет причиной войны!
+	AI_Output			(self,hero,"Info_Saturas_AMBUSH_14_01"); //РЇ СЂР°Рґ, С‡С‚Рѕ С‚С‹ РІРµСЂРЅСѓР»СЃСЏ. РЎР»СѓС‡РёР»РѕСЃСЊ РЅРµС‡С‚Рѕ СѓР¶Р°СЃРЅРѕРµ!
+	AI_Output			(hero,self,"Info_Saturas_AMBUSH_15_02"); //Р”Р°Р№-РєР° СЏ СѓРіР°РґР°СЋ: РЅР° РЎРІРѕР±РѕРґРЅСѓСЋ РЁР°С…С‚Сѓ РЅР°РїР°Р»Рё СЃС‚СЂР°Р¶РЅРёРєРё РёР· РЎС‚Р°СЂРѕРіРѕ Р›Р°РіРµСЂСЏ. РќРёРєС‚Рѕ РЅРµ РІРёРґРµР», РѕС‚РєСѓРґР° РѕРЅРё РїРѕСЏРІРёР»РёСЃСЊ?..
+	AI_Output			(self,hero,"Info_Saturas_AMBUSH_14_03"); //РџРѕСЃС‚РѕР№... РєР°Рє... РЅРѕ РєРѕРЅРµС‡РЅРѕ... РўС‹ СѓР·РЅР°Р» РѕР± СЌС‚РѕРј РµС‰Рµ РІ РЎС‚Р°СЂРѕРј Р›Р°РіРµСЂРµ!
+	AI_Output	 		(self,hero,"Info_Saturas_AMBUSH_14_04"); //Р“РѕСЂРЅ РїСЂРёР±С‹Р» СЃСЋРґР° РЅРµР·Р°РґРѕР»РіРѕ РґРѕ С‚РµР±СЏ.
+	AI_Output			(self,hero,"Info_Saturas_AMBUSH_14_05"); //Р§С‚Рѕ Р·Р°СЃС‚Р°РІРёР»Рѕ Р“РѕРјРµР·Р° РїРѕР№С‚Рё РЅР° СЃС‚РѕР»СЊ Р°РіСЂРµСЃСЃРёРІРЅС‹Р№ С€Р°Рі? 
+	AI_Output			(self,hero,"Info_Saturas_AMBUSH_14_06"); //РћРЅ РґРѕР»Р¶РµРЅ РѕС‚РґР°РІР°С‚СЊ СЃРµР±Рµ РѕС‚С‡РµС‚ РІ С‚РѕРј, С‡С‚Рѕ СЌС‚РѕС‚ РіРЅСѓСЃРЅС‹Р№ РїРѕСЃС‚СѓРїРѕРє СЃС‚Р°РЅРµС‚ РїСЂРёС‡РёРЅРѕР№ РІРѕР№РЅС‹!
 };	
 
 //---------------------------------------------------------------------
@@ -627,7 +627,7 @@ instance Info_Saturas_COLLAPSE (C_INFO)
 	information	= Info_Saturas_COLLAPSE_Info;
 	permanent	= 0;
 	important 	= 0;
-	description = "Старую Шахту залило водой, и она обрушилась!";
+	description = "РЎС‚Р°СЂСѓСЋ РЁР°С…С‚Сѓ Р·Р°Р»РёР»Рѕ РІРѕРґРѕР№, Рё РѕРЅР° РѕР±СЂСѓС€РёР»Р°СЃСЊ!";
 };
 
 FUNC INT Info_Saturas_COLLAPSE_Condition()
@@ -640,9 +640,9 @@ FUNC INT Info_Saturas_COLLAPSE_Condition()
 
 FUNC VOID Info_Saturas_COLLAPSE_Info()
 {
-	AI_Output			(hero,self,"Info_Saturas_COLLAPSE_15_01"); //Старую Шахту залило водой, и она обрушилась!
-	AI_Output			(self,hero,"Info_Saturas_COLLAPSE_14_02"); //... Обрушилась... конечно же... это проясняет дело.
-	AI_Output			(self,hero,"Info_Saturas_COLLAPSE_14_03"); //Мы загнали Гомеза в угол, и теперь он опаснее, чем когда бы то ни было. Ему нечего терять, и он пойдет на все!
+	AI_Output			(hero,self,"Info_Saturas_COLLAPSE_15_01"); //РЎС‚Р°СЂСѓСЋ РЁР°С…С‚Сѓ Р·Р°Р»РёР»Рѕ РІРѕРґРѕР№, Рё РѕРЅР° РѕР±СЂСѓС€РёР»Р°СЃСЊ!
+	AI_Output			(self,hero,"Info_Saturas_COLLAPSE_14_02"); //... РћР±СЂСѓС€РёР»Р°СЃСЊ... РєРѕРЅРµС‡РЅРѕ Р¶Рµ... СЌС‚Рѕ РїСЂРѕСЏСЃРЅСЏРµС‚ РґРµР»Рѕ.
+	AI_Output			(self,hero,"Info_Saturas_COLLAPSE_14_03"); //РњС‹ Р·Р°РіРЅР°Р»Рё Р“РѕРјРµР·Р° РІ СѓРіРѕР», Рё С‚РµРїРµСЂСЊ РѕРЅ РѕРїР°СЃРЅРµРµ, С‡РµРј РєРѕРіРґР° Р±С‹ С‚Рѕ РЅРё Р±С‹Р»Рѕ. Р•РјСѓ РЅРµС‡РµРіРѕ С‚РµСЂСЏС‚СЊ, Рё РѕРЅ РїРѕР№РґРµС‚ РЅР° РІСЃРµ!
 };
 
 //---------------------------------------------------------------------
@@ -655,7 +655,7 @@ instance Info_Saturas_MURDER (C_INFO)
 	information	= Info_Saturas_MURDER_Info;
 	permanent	= 0;
 	important 	= 0;
-	description = "Гомез расправился с магами Огня!";
+	description = "Р“РѕРјРµР· СЂР°СЃРїСЂР°РІРёР»СЃСЏ СЃ РјР°РіР°РјРё РћРіРЅСЏ!";
 };
 
 FUNC INT Info_Saturas_MURDER_Condition()
@@ -668,15 +668,15 @@ FUNC INT Info_Saturas_MURDER_Condition()
 
 FUNC VOID Info_Saturas_MURDER_Info()
 {
-	AI_Output			(hero,self,"Info_Saturas_MURDER_15_01"); //Гомез избавился от всех магов Огня!
-	AI_Output			(self,hero,"Info_Saturas_MURDER_14_02"); //УБИЛ ИХ??? Но во имя Бельджара, зачем ему это понадобилось?
-	AI_Output			(hero,self,"Info_Saturas_MURDER_15_03"); //Они выступили против нападения на Свободную Шахту, против Гомеза.
-	AI_Output			(self,hero,"Info_Saturas_MURDER_14_04"); //Тогда все мы обречены. Без этих шестерых магов мы не сможем контролировать магическую силу при взрыве железной горы.
-	AI_Output			(self,hero,"Info_Saturas_MURDER_14_05"); //Но несмотря ни на что, я благодарю тебя за скорбную весть, которую ты, невзирая на опасность, принес в нашу обитель.
+	AI_Output			(hero,self,"Info_Saturas_MURDER_15_01"); //Р“РѕРјРµР· РёР·Р±Р°РІРёР»СЃСЏ РѕС‚ РІСЃРµС… РјР°РіРѕРІ РћРіРЅСЏ!
+	AI_Output			(self,hero,"Info_Saturas_MURDER_14_02"); //РЈР‘РР› РРҐ??? РќРѕ РІРѕ РёРјСЏ Р‘РµР»СЊРґР¶Р°СЂР°, Р·Р°С‡РµРј РµРјСѓ СЌС‚Рѕ РїРѕРЅР°РґРѕР±РёР»РѕСЃСЊ?
+	AI_Output			(hero,self,"Info_Saturas_MURDER_15_03"); //РћРЅРё РІС‹СЃС‚СѓРїРёР»Рё РїСЂРѕС‚РёРІ РЅР°РїР°РґРµРЅРёСЏ РЅР° РЎРІРѕР±РѕРґРЅСѓСЋ РЁР°С…С‚Сѓ, РїСЂРѕС‚РёРІ Р“РѕРјРµР·Р°.
+	AI_Output			(self,hero,"Info_Saturas_MURDER_14_04"); //РўРѕРіРґР° РІСЃРµ РјС‹ РѕР±СЂРµС‡РµРЅС‹. Р‘РµР· СЌС‚РёС… С€РµСЃС‚РµСЂС‹С… РјР°РіРѕРІ РјС‹ РЅРµ СЃРјРѕР¶РµРј РєРѕРЅС‚СЂРѕР»РёСЂРѕРІР°С‚СЊ РјР°РіРёС‡РµСЃРєСѓСЋ СЃРёР»Сѓ РїСЂРё РІР·СЂС‹РІРµ Р¶РµР»РµР·РЅРѕР№ РіРѕСЂС‹.
+	AI_Output			(self,hero,"Info_Saturas_MURDER_14_05"); //РќРѕ РЅРµСЃРјРѕС‚СЂСЏ РЅРё РЅР° С‡С‚Рѕ, СЏ Р±Р»Р°РіРѕРґР°СЂСЋ С‚РµР±СЏ Р·Р° СЃРєРѕСЂР±РЅСѓСЋ РІРµСЃС‚СЊ, РєРѕС‚РѕСЂСѓСЋ С‚С‹, РЅРµРІР·РёСЂР°СЏ РЅР° РѕРїР°СЃРЅРѕСЃС‚СЊ, РїСЂРёРЅРµСЃ РІ РЅР°С€Сѓ РѕР±РёС‚РµР»СЊ.
 
 	B_GiveXP			(XP_ReportToSaturas);
 	
-	B_LogEntry			(CH4_Firemages,"Сатурас вовсе не был счастлив историей о происшествии в Старом Лагере. Как бы дальше ни шел их план побега, теперь им придется осуществлять его без магов огня.");
+	B_LogEntry			(CH4_Firemages,"РЎР°С‚СѓСЂР°СЃ РІРѕРІСЃРµ РЅРµ Р±С‹Р» СЃС‡Р°СЃС‚Р»РёРІ РёСЃС‚РѕСЂРёРµР№ Рѕ РїСЂРѕРёСЃС€РµСЃС‚РІРёРё РІ РЎС‚Р°СЂРѕРј Р›Р°РіРµСЂРµ. РљР°Рє Р±С‹ РґР°Р»СЊС€Рµ РЅРё С€РµР» РёС… РїР»Р°РЅ РїРѕР±РµРіР°, С‚РµРїРµСЂСЊ РёРј РїСЂРёРґРµС‚СЃСЏ РѕСЃСѓС‰РµСЃС‚РІР»СЏС‚СЊ РµРіРѕ Р±РµР· РјР°РіРѕРІ РѕРіРЅСЏ.");
 	Log_SetTopicStatus	(CH4_Firemages,	LOG_SUCCESS);
 };
 
@@ -692,7 +692,7 @@ instance  KDW_600_Saturas_NOMOREOC (C_INFO)
 	information		= KDW_600_Saturas_NOMOREOC_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "За помощь вам меня изгнали из Старого Лагеря!"; 
+	description		= "Р—Р° РїРѕРјРѕС‰СЊ РІР°Рј РјРµРЅСЏ РёР·РіРЅР°Р»Рё РёР· РЎС‚Р°СЂРѕРіРѕ Р›Р°РіРµСЂСЏ!"; 
 };
 
 FUNC int  KDW_600_Saturas_NOMOREOC_Condition()
@@ -706,13 +706,13 @@ FUNC int  KDW_600_Saturas_NOMOREOC_Condition()
 
 FUNC void  KDW_600_Saturas_NOMOREOC_Info()
 {
-	AI_Output			(other, self,"KDW_600_Saturas_NOMOREOC_Info_15_01"); //За помощь вам меня изгнали из Старого Лагеря!
-	AI_Output			(self, other,"KDW_600_Saturas_NOMOREOC_Info_14_02"); //Ты больше не принадлежишь к Старому Лагерю?
-	AI_Output			(self, other,"KDW_600_Saturas_NOMOREOC_Info_14_03"); //Тогда добро пожаловать к нам!
+	AI_Output			(other, self,"KDW_600_Saturas_NOMOREOC_Info_15_01"); //Р—Р° РїРѕРјРѕС‰СЊ РІР°Рј РјРµРЅСЏ РёР·РіРЅР°Р»Рё РёР· РЎС‚Р°СЂРѕРіРѕ Р›Р°РіРµСЂСЏ!
+	AI_Output			(self, other,"KDW_600_Saturas_NOMOREOC_Info_14_02"); //РўС‹ Р±РѕР»СЊС€Рµ РЅРµ РїСЂРёРЅР°РґР»РµР¶РёС€СЊ Рє РЎС‚Р°СЂРѕРјСѓ Р›Р°РіРµСЂСЋ?
+	AI_Output			(self, other,"KDW_600_Saturas_NOMOREOC_Info_14_03"); //РўРѕРіРґР° РґРѕР±СЂРѕ РїРѕР¶Р°Р»РѕРІР°С‚СЊ Рє РЅР°Рј!
 
 	Log_CreateTopic		(CH4_BannedFromOC,	LOG_MISSION);
 	Log_SetTopicStatus	(CH4_BannedFromOC,	LOG_RUNNING);
-	B_LogEntry			(CH4_BannedFromOC,"После моего изгнания из Старого Лагеря Сатурас пригласил меня в Новый Лагерь.");
+	B_LogEntry			(CH4_BannedFromOC,"РџРѕСЃР»Рµ РјРѕРµРіРѕ РёР·РіРЅР°РЅРёСЏ РёР· РЎС‚Р°СЂРѕРіРѕ Р›Р°РіРµСЂСЏ РЎР°С‚СѓСЂР°СЃ РїСЂРёРіР»Р°СЃРёР» РјРµРЅСЏ РІ РќРѕРІС‹Р№ Р›Р°РіРµСЂСЊ.");
 }; 
 
 /*------------------------------------------------------------------------
@@ -726,7 +726,7 @@ instance  KDW_600_Saturas_GOTOLEE (C_INFO)
 	information		= KDW_600_Saturas_GOTOLEE_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Ты хочешь сказать, что наемники примут меня к себе?"; 
+	description		= "РўС‹ С…РѕС‡РµС€СЊ СЃРєР°Р·Р°С‚СЊ, С‡С‚Рѕ РЅР°РµРјРЅРёРєРё РїСЂРёРјСѓС‚ РјРµРЅСЏ Рє СЃРµР±Рµ?"; 
 };
 
 FUNC int  KDW_600_Saturas_GOTOLEE_Condition()
@@ -740,10 +740,10 @@ FUNC int  KDW_600_Saturas_GOTOLEE_Condition()
 };
 FUNC void  KDW_600_Saturas_GOTOLEE_Info()
 {
-	AI_Output			(other, self,"KDW_600_Saturas_GOTOLEE_Info_15_01"); //Ты хочешь сказать, что наемники примут меня к себе?
-	AI_Output			(self, other,"KDW_600_Saturas_GOTOLEE_Info_14_02"); //Поговори с Ли. Он будет решать. А затем возвращайся ко мне.
+	AI_Output			(other, self,"KDW_600_Saturas_GOTOLEE_Info_15_01"); //РўС‹ С…РѕС‡РµС€СЊ СЃРєР°Р·Р°С‚СЊ, С‡С‚Рѕ РЅР°РµРјРЅРёРєРё РїСЂРёРјСѓС‚ РјРµРЅСЏ Рє СЃРµР±Рµ?
+	AI_Output			(self, other,"KDW_600_Saturas_GOTOLEE_Info_14_02"); //РџРѕРіРѕРІРѕСЂРё СЃ Р›Рё. РћРЅ Р±СѓРґРµС‚ СЂРµС€Р°С‚СЊ. Рђ Р·Р°С‚РµРј РІРѕР·РІСЂР°С‰Р°Р№СЃСЏ РєРѕ РјРЅРµ.
 
-	B_LogEntry			(CH4_BannedFromOC,"Ли, лидер наемников, хочет поговорить со мной. Я должен повидаться с ним и вернуться к Сатурасу."); 
+	B_LogEntry			(CH4_BannedFromOC,"Р›Рё, Р»РёРґРµСЂ РЅР°РµРјРЅРёРєРѕРІ, С…РѕС‡РµС‚ РїРѕРіРѕРІРѕСЂРёС‚СЊ СЃРѕ РјРЅРѕР№. РЇ РґРѕР»Р¶РµРЅ РїРѕРІРёРґР°С‚СЊСЃСЏ СЃ РЅРёРј Рё РІРµСЂРЅСѓС‚СЊСЃСЏ Рє РЎР°С‚СѓСЂР°СЃСѓ."); 
 };  
  
 /*------------------------------------------------------------------------
@@ -757,7 +757,7 @@ instance  KDW_600_Saturas_OATH (C_INFO)
 	information		= KDW_600_Saturas_OATH_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Означает ли это, что теперь я принадлежу к гильдии магов Воды?"; 
+	description		= "РћР·РЅР°С‡Р°РµС‚ Р»Рё СЌС‚Рѕ, С‡С‚Рѕ С‚РµРїРµСЂСЊ СЏ РїСЂРёРЅР°РґР»РµР¶Сѓ Рє РіРёР»СЊРґРёРё РјР°РіРѕРІ Р’РѕРґС‹?"; 
 };
 
 FUNC int  KDW_600_Saturas_OATH_Condition()
@@ -771,16 +771,16 @@ FUNC int  KDW_600_Saturas_OATH_Condition()
 };
 FUNC void  KDW_600_Saturas_OATH_Info()
 {
-	AI_Output			(other, self,"KDW_600_Saturas_OATH_Info_15_01"); //Означает ли это, что теперь я принадлежу к гильдии магов Воды?
-	AI_Output			(self, other,"KDW_600_Saturas_OATH_Info_14_02"); //Пока еще нет. Прежде ты должен принести клятву Воде.
-	AI_Output			(other, self,"KDW_600_Saturas_OATH_Info_15_03"); //Но я уже приносил клятву Огню!
-	AI_Output			(self, other,"KDW_600_Saturas_OATH_Info_14_04"); //Х-ммм...
-	AI_Output			(self, other,"KDW_600_Saturas_OATH_Info_14_05"); //Это не значит, что ты должен нарушить старый обет!
-	AI_Output			(other, self,"KDW_600_Saturas_OATH_Info_15_06"); //Ух... Я не понимаю...
-	AI_Output			(self, other,"KDW_600_Saturas_OATH_Info_14_07"); //Твой обет просто расширится, и ты станешь магом сразу двух стихий!
-	AI_Output			(self, other,"KDW_600_Saturas_OATH_Info_14_08"); //Тебе будут подвластны и сила Огня, и мудрость Воды!
+	AI_Output			(other, self,"KDW_600_Saturas_OATH_Info_15_01"); //РћР·РЅР°С‡Р°РµС‚ Р»Рё СЌС‚Рѕ, С‡С‚Рѕ С‚РµРїРµСЂСЊ СЏ РїСЂРёРЅР°РґР»РµР¶Сѓ Рє РіРёР»СЊРґРёРё РјР°РіРѕРІ Р’РѕРґС‹?
+	AI_Output			(self, other,"KDW_600_Saturas_OATH_Info_14_02"); //РџРѕРєР° РµС‰Рµ РЅРµС‚. РџСЂРµР¶РґРµ С‚С‹ РґРѕР»Р¶РµРЅ РїСЂРёРЅРµСЃС‚Рё РєР»СЏС‚РІСѓ Р’РѕРґРµ.
+	AI_Output			(other, self,"KDW_600_Saturas_OATH_Info_15_03"); //РќРѕ СЏ СѓР¶Рµ РїСЂРёРЅРѕСЃРёР» РєР»СЏС‚РІСѓ РћРіРЅСЋ!
+	AI_Output			(self, other,"KDW_600_Saturas_OATH_Info_14_04"); //РҐ-РјРјРј...
+	AI_Output			(self, other,"KDW_600_Saturas_OATH_Info_14_05"); //Р­С‚Рѕ РЅРµ Р·РЅР°С‡РёС‚, С‡С‚Рѕ С‚С‹ РґРѕР»Р¶РµРЅ РЅР°СЂСѓС€РёС‚СЊ СЃС‚Р°СЂС‹Р№ РѕР±РµС‚!
+	AI_Output			(other, self,"KDW_600_Saturas_OATH_Info_15_06"); //РЈС…... РЇ РЅРµ РїРѕРЅРёРјР°СЋ...
+	AI_Output			(self, other,"KDW_600_Saturas_OATH_Info_14_07"); //РўРІРѕР№ РѕР±РµС‚ РїСЂРѕСЃС‚Рѕ СЂР°СЃС€РёСЂРёС‚СЃСЏ, Рё С‚С‹ СЃС‚Р°РЅРµС€СЊ РјР°РіРѕРј СЃСЂР°Р·Сѓ РґРІСѓС… СЃС‚РёС…РёР№!
+	AI_Output			(self, other,"KDW_600_Saturas_OATH_Info_14_08"); //РўРµР±Рµ Р±СѓРґСѓС‚ РїРѕРґРІР»Р°СЃС‚РЅС‹ Рё СЃРёР»Р° РћРіРЅСЏ, Рё РјСѓРґСЂРѕСЃС‚СЊ Р’РѕРґС‹!
 
-	B_LogEntry			(CH4_BannedFromOC,"Сатурас позволит мне присоединиться к кругу воды, и мне не надо разрывать клятву огню."); 
+	B_LogEntry			(CH4_BannedFromOC,"РЎР°С‚СѓСЂР°СЃ РїРѕР·РІРѕР»РёС‚ РјРЅРµ РїСЂРёСЃРѕРµРґРёРЅРёС‚СЊСЃСЏ Рє РєСЂСѓРіСѓ РІРѕРґС‹, Рё РјРЅРµ РЅРµ РЅР°РґРѕ СЂР°Р·СЂС‹РІР°С‚СЊ РєР»СЏС‚РІСѓ РѕРіРЅСЋ."); 
 };  
 
 /*------------------------------------------------------------------------
@@ -793,7 +793,7 @@ instance KDW_600_Saturas_KDWAUFNAHME (C_INFO)
 	information		= KDW_600_Saturas_KDWAUFNAHME_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Я готов принести клятву."; 
+	description		= "РЇ РіРѕС‚РѕРІ РїСЂРёРЅРµСЃС‚Рё РєР»СЏС‚РІСѓ."; 
 };
 
 FUNC int  KDW_600_Saturas_KDWAUFNAHME_Condition()
@@ -807,21 +807,21 @@ func void  KDW_600_Saturas_KDWAUFNAHME_Info()
 {
 	
 	AI_GotoNpc 			(hero,self);
-	AI_Output			(other, self,"KDW_600_Saturas_KDWAUFNAHME_Info_15_01"); //Я готов принести клятву.
-	AI_Output			(self, other,"KDW_600_Saturas_KDWAUFNAHME_Info_14_02"); //Верный служитель Огня, отныне ты получишь благословение Воды!
-	AI_Output			(self, other,"KDW_600_Saturas_KDWAUFNAHME_Info_14_03"); //Повторяй за мной слова клятвы:
-	AI_Output			(self, other,"KDW_600_Saturas_KDWAUFNAHME_Info_14_04"); //Мощью богов я клянусь...
-	AI_Output			(other, self,"KDW_600_Saturas_KDWAUFNAHME_Info_15_05"); //Мощью богов я клянусь...
-	AI_Output			(self, other,"KDW_600_Saturas_KDWAUFNAHME_Info_14_06"); //... и силой священной Воды...
-	AI_Output			(other, self,"KDW_600_Saturas_KDWAUFNAHME_Info_15_07"); //... и силой священной Воды...
-	AI_Output			(self, other,"KDW_600_Saturas_KDWAUFNAHME_Info_14_08"); //... что знания мои и поступки мои с этого дня и вовеки веков будут едины с Водой...
-	AI_Output			(other, self,"KDW_600_Saturas_KDWAUFNAHME_Info_15_09"); //... что знания мои и поступки мои с этого дня и вовеки веков будут едины с Водой...
-	AI_Output			(self, other,"KDW_600_Saturas_KDWAUFNAHME_Info_14_10"); //... до тех пор, пока тело мое не вернется в чертоги Бельджара и не иссякнет источник моей жизни.
-	AI_Output			(other, self,"KDW_600_Saturas_KDWAUFNAHME_Info_15_11"); //... до тех пор пока тело мое не вернется в чертоги Бельджара и не иссякнет источник моей жизни.
+	AI_Output			(other, self,"KDW_600_Saturas_KDWAUFNAHME_Info_15_01"); //РЇ РіРѕС‚РѕРІ РїСЂРёРЅРµСЃС‚Рё РєР»СЏС‚РІСѓ.
+	AI_Output			(self, other,"KDW_600_Saturas_KDWAUFNAHME_Info_14_02"); //Р’РµСЂРЅС‹Р№ СЃР»СѓР¶РёС‚РµР»СЊ РћРіРЅСЏ, РѕС‚РЅС‹РЅРµ С‚С‹ РїРѕР»СѓС‡РёС€СЊ Р±Р»Р°РіРѕСЃР»РѕРІРµРЅРёРµ Р’РѕРґС‹!
+	AI_Output			(self, other,"KDW_600_Saturas_KDWAUFNAHME_Info_14_03"); //РџРѕРІС‚РѕСЂСЏР№ Р·Р° РјРЅРѕР№ СЃР»РѕРІР° РєР»СЏС‚РІС‹:
+	AI_Output			(self, other,"KDW_600_Saturas_KDWAUFNAHME_Info_14_04"); //РњРѕС‰СЊСЋ Р±РѕРіРѕРІ СЏ РєР»СЏРЅСѓСЃСЊ...
+	AI_Output			(other, self,"KDW_600_Saturas_KDWAUFNAHME_Info_15_05"); //РњРѕС‰СЊСЋ Р±РѕРіРѕРІ СЏ РєР»СЏРЅСѓСЃСЊ...
+	AI_Output			(self, other,"KDW_600_Saturas_KDWAUFNAHME_Info_14_06"); //... Рё СЃРёР»РѕР№ СЃРІСЏС‰РµРЅРЅРѕР№ Р’РѕРґС‹...
+	AI_Output			(other, self,"KDW_600_Saturas_KDWAUFNAHME_Info_15_07"); //... Рё СЃРёР»РѕР№ СЃРІСЏС‰РµРЅРЅРѕР№ Р’РѕРґС‹...
+	AI_Output			(self, other,"KDW_600_Saturas_KDWAUFNAHME_Info_14_08"); //... С‡С‚Рѕ Р·РЅР°РЅРёСЏ РјРѕРё Рё РїРѕСЃС‚СѓРїРєРё РјРѕРё СЃ СЌС‚РѕРіРѕ РґРЅСЏ Рё РІРѕРІРµРєРё РІРµРєРѕРІ Р±СѓРґСѓС‚ РµРґРёРЅС‹ СЃ Р’РѕРґРѕР№...
+	AI_Output			(other, self,"KDW_600_Saturas_KDWAUFNAHME_Info_15_09"); //... С‡С‚Рѕ Р·РЅР°РЅРёСЏ РјРѕРё Рё РїРѕСЃС‚СѓРїРєРё РјРѕРё СЃ СЌС‚РѕРіРѕ РґРЅСЏ Рё РІРѕРІРµРєРё РІРµРєРѕРІ Р±СѓРґСѓС‚ РµРґРёРЅС‹ СЃ Р’РѕРґРѕР№...
+	AI_Output			(self, other,"KDW_600_Saturas_KDWAUFNAHME_Info_14_10"); //... РґРѕ С‚РµС… РїРѕСЂ, РїРѕРєР° С‚РµР»Рѕ РјРѕРµ РЅРµ РІРµСЂРЅРµС‚СЃСЏ РІ С‡РµСЂС‚РѕРіРё Р‘РµР»СЊРґР¶Р°СЂР° Рё РЅРµ РёСЃСЃСЏРєРЅРµС‚ РёСЃС‚РѕС‡РЅРёРє РјРѕРµР№ Р¶РёР·РЅРё.
+	AI_Output			(other, self,"KDW_600_Saturas_KDWAUFNAHME_Info_15_11"); //... РґРѕ С‚РµС… РїРѕСЂ РїРѕРєР° С‚РµР»Рѕ РјРѕРµ РЅРµ РІРµСЂРЅРµС‚СЃСЏ РІ С‡РµСЂС‚РѕРіРё Р‘РµР»СЊРґР¶Р°СЂР° Рё РЅРµ РёСЃСЃСЏРєРЅРµС‚ РёСЃС‚РѕС‡РЅРёРє РјРѕРµР№ Р¶РёР·РЅРё.
 	
-	AI_Output			(self, other,"KDW_600_Saturas_KDWAUFNAHME_Info_14_12"); //Этой клятвой ты объединил в себе силу Огня и благословение Воды.
-	AI_Output			(self, other,"KDW_600_Saturas_KDWAUFNAHME_Info_14_13"); //Ты связал воедино две противоположности. Так пусть же жизнь твоя послужит знаком объединения стихий!
-	AI_Output			(self, other,"KDW_600_Saturas_KDWAUFNAHME_Info_14_14"); //Носи это облачение в знак связи со священной Водой и Аданосом.
+	AI_Output			(self, other,"KDW_600_Saturas_KDWAUFNAHME_Info_14_12"); //Р­С‚РѕР№ РєР»СЏС‚РІРѕР№ С‚С‹ РѕР±СЉРµРґРёРЅРёР» РІ СЃРµР±Рµ СЃРёР»Сѓ РћРіРЅСЏ Рё Р±Р»Р°РіРѕСЃР»РѕРІРµРЅРёРµ Р’РѕРґС‹.
+	AI_Output			(self, other,"KDW_600_Saturas_KDWAUFNAHME_Info_14_13"); //РўС‹ СЃРІСЏР·Р°Р» РІРѕРµРґРёРЅРѕ РґРІРµ РїСЂРѕС‚РёРІРѕРїРѕР»РѕР¶РЅРѕСЃС‚Рё. РўР°Рє РїСѓСЃС‚СЊ Р¶Рµ Р¶РёР·РЅСЊ С‚РІРѕСЏ РїРѕСЃР»СѓР¶РёС‚ Р·РЅР°РєРѕРј РѕР±СЉРµРґРёРЅРµРЅРёСЏ СЃС‚РёС…РёР№!
+	AI_Output			(self, other,"KDW_600_Saturas_KDWAUFNAHME_Info_14_14"); //РќРѕСЃРё СЌС‚Рѕ РѕР±Р»Р°С‡РµРЅРёРµ РІ Р·РЅР°Рє СЃРІСЏР·Рё СЃРѕ СЃРІСЏС‰РµРЅРЅРѕР№ Р’РѕРґРѕР№ Рё РђРґР°РЅРѕСЃРѕРј.
 
 	CreateInvItem		(self,KDW_ARMOR_L);
 	B_GiveInvItems		(self,other,KDW_ARMOR_L,1);
@@ -830,7 +830,7 @@ func void  KDW_600_Saturas_KDWAUFNAHME_Info()
 	Npc_SetTrueGuild	(hero,GIL_KDW);
 	hero.guild = GIL_KDW;
 
-	B_LogEntry			(CH4_BannedFromOC,"Я присоединился к кругу воды. Теперь у меня есть доступ к обеим школам магии."); 
+	B_LogEntry			(CH4_BannedFromOC,"РЇ РїСЂРёСЃРѕРµРґРёРЅРёР»СЃСЏ Рє РєСЂСѓРіСѓ РІРѕРґС‹. РўРµРїРµСЂСЊ Сѓ РјРµРЅСЏ РµСЃС‚СЊ РґРѕСЃС‚СѓРї Рє РѕР±РµРёРј С€РєРѕР»Р°Рј РјР°РіРёРё."); 
 	Log_SetTopicStatus	(CH4_BannedFromOC,	LOG_SUCCESS);
 
 	AI_StopProcessInfos	(self);
@@ -847,7 +847,7 @@ instance  KDW_600_Saturas_LESSON (C_INFO)
 	information		= KDW_600_Saturas_LESSON_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Ты будешь моим наставником?"; 
+	description		= "РўС‹ Р±СѓРґРµС€СЊ РјРѕРёРј РЅР°СЃС‚Р°РІРЅРёРєРѕРј?"; 
 };
 
 FUNC int  KDW_600_Saturas_LESSON_Condition()
@@ -860,24 +860,24 @@ FUNC int  KDW_600_Saturas_LESSON_Condition()
 };
 FUNC void  KDW_600_Saturas_LESSON_Info()
 {
-	AI_Output			(other, self,"KDW_600_Saturas_LESSON_Info_15_01"); //Ты будешь моим наставником?
+	AI_Output			(other, self,"KDW_600_Saturas_LESSON_Info_15_01"); //РўС‹ Р±СѓРґРµС€СЊ РјРѕРёРј РЅР°СЃС‚Р°РІРЅРёРєРѕРј?
 	
 	if (Npc_GetTalentSkill (hero,NPC_TALENT_MAGE ) <= 3)
 	{
-		AI_Output		(self, other,"KDW_600_Saturas_LESSON_Info_14_02"); //Тебе предстоит многому научиться. Мы приступим, как только ты будешь готов.
+		AI_Output		(self, other,"KDW_600_Saturas_LESSON_Info_14_02"); //РўРµР±Рµ РїСЂРµРґСЃС‚РѕРёС‚ РјРЅРѕРіРѕРјСѓ РЅР°СѓС‡РёС‚СЊСЃСЏ. РњС‹ РїСЂРёСЃС‚СѓРїРёРј, РєР°Рє С‚РѕР»СЊРєРѕ С‚С‹ Р±СѓРґРµС€СЊ РіРѕС‚РѕРІ.
 	}
 	else if (Npc_GetTalentSkill (hero,NPC_TALENT_MAGE ) == 4)
 	{
-		AI_Output		(self, other,"KDW_600_Saturas_LESSON_Info_14_03"); //Есть еще один Круг, до сих пор не пройденный тобою. Мы приступим, как только ты будешь готов.
+		AI_Output		(self, other,"KDW_600_Saturas_LESSON_Info_14_03"); //Р•СЃС‚СЊ РµС‰Рµ РѕРґРёРЅ РљСЂСѓРі, РґРѕ СЃРёС… РїРѕСЂ РЅРµ РїСЂРѕР№РґРµРЅРЅС‹Р№ С‚РѕР±РѕСЋ. РњС‹ РїСЂРёСЃС‚СѓРїРёРј, РєР°Рє С‚РѕР»СЊРєРѕ С‚С‹ Р±СѓРґРµС€СЊ РіРѕС‚РѕРІ.
 	}
 	else
 	{
-		AI_Output		(self, other,"KDW_600_Saturas_LESSON_Info_14_04"); //Ты уже прошел Пятый Круг магии. Ты знаешь то же, что знаю я.
-		AI_Output		(self, other,"KDW_600_Saturas_LESSON_Info_14_05"); //Я не могу больше учить тебя.
+		AI_Output		(self, other,"KDW_600_Saturas_LESSON_Info_14_04"); //РўС‹ СѓР¶Рµ РїСЂРѕС€РµР» РџСЏС‚С‹Р№ РљСЂСѓРі РјР°РіРёРё. РўС‹ Р·РЅР°РµС€СЊ С‚Рѕ Р¶Рµ, С‡С‚Рѕ Р·РЅР°СЋ СЏ.
+		AI_Output		(self, other,"KDW_600_Saturas_LESSON_Info_14_05"); //РЇ РЅРµ РјРѕРіСѓ Р±РѕР»СЊС€Рµ СѓС‡РёС‚СЊ С‚РµР±СЏ.
 	};
 
 	Log_CreateTopic		(GE_TeacherNC,	LOG_NOTE);
-	B_LogEntry			(GE_TeacherNC,"Сатурас, лидер магов воды, может посвятить меня в новые круги магии. Его всегда можно найти рядом с пентаграммой, наверху.");
+	B_LogEntry			(GE_TeacherNC,"РЎР°С‚СѓСЂР°СЃ, Р»РёРґРµСЂ РјР°РіРѕРІ РІРѕРґС‹, РјРѕР¶РµС‚ РїРѕСЃРІСЏС‚РёС‚СЊ РјРµРЅСЏ РІ РЅРѕРІС‹Рµ РєСЂСѓРіРё РјР°РіРёРё. Р•РіРѕ РІСЃРµРіРґР° РјРѕР¶РЅРѕ РЅР°Р№С‚Рё СЂСЏРґРѕРј СЃ РїРµРЅС‚Р°РіСЂР°РјРјРѕР№, РЅР°РІРµСЂС…Сѓ.");
 };  
 //--------------------------------------------------------------------------
 // 							DER ERSTE KREIS
@@ -905,18 +905,18 @@ FUNC int  KDW_600_Saturas_KREIS1_Condition()
 };
 FUNC void  KDW_600_Saturas_KREIS1_Info()
 {
-	AI_Output			(other, self,"KDW_600_Saturas_KREIS1_Info_15_01"); //Я готов вступить в Первый Круг.
+	AI_Output			(other, self,"KDW_600_Saturas_KREIS1_Info_15_01"); //РЇ РіРѕС‚РѕРІ РІСЃС‚СѓРїРёС‚СЊ РІ РџРµСЂРІС‹Р№ РљСЂСѓРі.
 	
 	if (B_GiveSkill(other,NPC_TALENT_MAGE , 1, LPCOST_TALENT_MAGE_1))
 	{
-		AI_Output			(self, other,"KDW_600_Saturas_KREIS1_Info_14_02"); //Вступив в Первый Круг, ты научишься использовать магические руны.
-		AI_Output			(self, other,"KDW_600_Saturas_KREIS1_Info_14_03"); //Каждая руна содержит структуру особого магического заклинания.
-		AI_Output			(self, other,"KDW_600_Saturas_KREIS1_Info_14_04"); //Использовав свою собственную магическую силу, ты сможешь высвободить магию руны.
-		AI_Output			(self, other,"KDW_600_Saturas_KREIS1_Info_14_05"); //Но в отличие от свитков, которые по сути являются магическими формулами, магия рун поддерживает структуру заклинания всегда. 
-		AI_Output			(self, other,"KDW_600_Saturas_KREIS1_Info_14_06"); //Каждая руна таит в себе магическую силу, воспользоваться которой ты можешь в любой момент.
-		AI_Output			(self, other,"KDW_600_Saturas_KREIS1_Info_14_07"); //Так же, как и со свитком, в момент, когда ты используешь руну, расходуется твоя собственная магическая сила.
-		AI_Output			(self, other,"KDW_600_Saturas_KREIS1_Info_14_08"); //С каждым новым Кругом ты будешь узнавать о рунах все больше и больше.
-		AI_Output			(self, other,"KDW_600_Saturas_KREIS1_Info_14_09"); //Используй их силу, для того чтобы познать себя.
+		AI_Output			(self, other,"KDW_600_Saturas_KREIS1_Info_14_02"); //Р’СЃС‚СѓРїРёРІ РІ РџРµСЂРІС‹Р№ РљСЂСѓРі, С‚С‹ РЅР°СѓС‡РёС€СЊСЃСЏ РёСЃРїРѕР»СЊР·РѕРІР°С‚СЊ РјР°РіРёС‡РµСЃРєРёРµ СЂСѓРЅС‹.
+		AI_Output			(self, other,"KDW_600_Saturas_KREIS1_Info_14_03"); //РљР°Р¶РґР°СЏ СЂСѓРЅР° СЃРѕРґРµСЂР¶РёС‚ СЃС‚СЂСѓРєС‚СѓСЂСѓ РѕСЃРѕР±РѕРіРѕ РјР°РіРёС‡РµСЃРєРѕРіРѕ Р·Р°РєР»РёРЅР°РЅРёСЏ.
+		AI_Output			(self, other,"KDW_600_Saturas_KREIS1_Info_14_04"); //РСЃРїРѕР»СЊР·РѕРІР°РІ СЃРІРѕСЋ СЃРѕР±СЃС‚РІРµРЅРЅСѓСЋ РјР°РіРёС‡РµСЃРєСѓСЋ СЃРёР»Сѓ, С‚С‹ СЃРјРѕР¶РµС€СЊ РІС‹СЃРІРѕР±РѕРґРёС‚СЊ РјР°РіРёСЋ СЂСѓРЅС‹.
+		AI_Output			(self, other,"KDW_600_Saturas_KREIS1_Info_14_05"); //РќРѕ РІ РѕС‚Р»РёС‡РёРµ РѕС‚ СЃРІРёС‚РєРѕРІ, РєРѕС‚РѕСЂС‹Рµ РїРѕ СЃСѓС‚Рё СЏРІР»СЏСЋС‚СЃСЏ РјР°РіРёС‡РµСЃРєРёРјРё С„РѕСЂРјСѓР»Р°РјРё, РјР°РіРёСЏ СЂСѓРЅ РїРѕРґРґРµСЂР¶РёРІР°РµС‚ СЃС‚СЂСѓРєС‚СѓСЂСѓ Р·Р°РєР»РёРЅР°РЅРёСЏ РІСЃРµРіРґР°. 
+		AI_Output			(self, other,"KDW_600_Saturas_KREIS1_Info_14_06"); //РљР°Р¶РґР°СЏ СЂСѓРЅР° С‚Р°РёС‚ РІ СЃРµР±Рµ РјР°РіРёС‡РµСЃРєСѓСЋ СЃРёР»Сѓ, РІРѕСЃРїРѕР»СЊР·РѕРІР°С‚СЊСЃСЏ РєРѕС‚РѕСЂРѕР№ С‚С‹ РјРѕР¶РµС€СЊ РІ Р»СЋР±РѕР№ РјРѕРјРµРЅС‚.
+		AI_Output			(self, other,"KDW_600_Saturas_KREIS1_Info_14_07"); //РўР°Рє Р¶Рµ, РєР°Рє Рё СЃРѕ СЃРІРёС‚РєРѕРј, РІ РјРѕРјРµРЅС‚, РєРѕРіРґР° С‚С‹ РёСЃРїРѕР»СЊР·СѓРµС€СЊ СЂСѓРЅСѓ, СЂР°СЃС…РѕРґСѓРµС‚СЃСЏ С‚РІРѕСЏ СЃРѕР±СЃС‚РІРµРЅРЅР°СЏ РјР°РіРёС‡РµСЃРєР°СЏ СЃРёР»Р°.
+		AI_Output			(self, other,"KDW_600_Saturas_KREIS1_Info_14_08"); //РЎ РєР°Р¶РґС‹Рј РЅРѕРІС‹Рј РљСЂСѓРіРѕРј С‚С‹ Р±СѓРґРµС€СЊ СѓР·РЅР°РІР°С‚СЊ Рѕ СЂСѓРЅР°С… РІСЃРµ Р±РѕР»СЊС€Рµ Рё Р±РѕР»СЊС€Рµ.
+		AI_Output			(self, other,"KDW_600_Saturas_KREIS1_Info_14_09"); //РСЃРїРѕР»СЊР·СѓР№ РёС… СЃРёР»Сѓ, РґР»СЏ С‚РѕРіРѕ С‡С‚РѕР±С‹ РїРѕР·РЅР°С‚СЊ СЃРµР±СЏ.
 		KDW_600_Saturas_KREIS1.permanent = 0;
 	};
 };  
@@ -947,17 +947,17 @@ FUNC int  KDW_600_Saturas_KREIS2_Condition()
 };
 FUNC void  KDW_600_Saturas_KREIS2_Info()
 {
-	AI_Output			(other, self,"KDW_600_Saturas_KREIS2_Info_15_01"); //Я готов вступить во Второй Круг.
+	AI_Output			(other, self,"KDW_600_Saturas_KREIS2_Info_15_01"); //РЇ РіРѕС‚РѕРІ РІСЃС‚СѓРїРёС‚СЊ РІРѕ Р’С‚РѕСЂРѕР№ РљСЂСѓРі.
 	
 	if (B_GiveSkill(other,NPC_TALENT_MAGE , 2, LPCOST_TALENT_MAGE_2))
 	{
-		AI_Output			(self, other,"KDW_600_Saturas_KREIS2_Info_14_02"); //Ты уже научился понимать руны. Пришло время углубить твои познания.
-		AI_Output			(self, other,"KDW_600_Saturas_KREIS2_Info_14_03"); //Вступив во Второй Круг, ты постигнешь основы мощных боевых заклятий и познаешь все секреты целительства.
-		AI_Output			(self, other,"KDW_600_Saturas_KREIS2_Info_14_04"); //Но для того чтобы познать истинные секреты магии, тебе предстоит многому научиться.
-		AI_Output			(self, other,"KDW_600_Saturas_KREIS2_Info_14_05"); //Ты уже знаешь о том, что можешь использовать любую руну бессчетное число раз, но лишь до тех пор, пока не израсходуешь всю свою магическую силу.
-		AI_Output			(self, other,"KDW_600_Saturas_KREIS2_Info_14_06"); //Но прежде чем сделать что-либо, подумай о том, есть ли в этом смысл. Ты обладаешь силой, которая позволяет с легкостью сеять смерть и разрушения.  
-		AI_Output			(self, other,"KDW_600_Saturas_KREIS2_Info_14_07"); //Но истинный маг использует ее лишь по необходимости.
-		AI_Output			(self, other,"KDW_600_Saturas_KREIS2_Info_14_08"); //Научись оценивать ситуацию, и ты познаешь истинную силу рун.
+		AI_Output			(self, other,"KDW_600_Saturas_KREIS2_Info_14_02"); //РўС‹ СѓР¶Рµ РЅР°СѓС‡РёР»СЃСЏ РїРѕРЅРёРјР°С‚СЊ СЂСѓРЅС‹. РџСЂРёС€Р»Рѕ РІСЂРµРјСЏ СѓРіР»СѓР±РёС‚СЊ С‚РІРѕРё РїРѕР·РЅР°РЅРёСЏ.
+		AI_Output			(self, other,"KDW_600_Saturas_KREIS2_Info_14_03"); //Р’СЃС‚СѓРїРёРІ РІРѕ Р’С‚РѕСЂРѕР№ РљСЂСѓРі, С‚С‹ РїРѕСЃС‚РёРіРЅРµС€СЊ РѕСЃРЅРѕРІС‹ РјРѕС‰РЅС‹С… Р±РѕРµРІС‹С… Р·Р°РєР»СЏС‚РёР№ Рё РїРѕР·РЅР°РµС€СЊ РІСЃРµ СЃРµРєСЂРµС‚С‹ С†РµР»РёС‚РµР»СЊСЃС‚РІР°.
+		AI_Output			(self, other,"KDW_600_Saturas_KREIS2_Info_14_04"); //РќРѕ РґР»СЏ С‚РѕРіРѕ С‡С‚РѕР±С‹ РїРѕР·РЅР°С‚СЊ РёСЃС‚РёРЅРЅС‹Рµ СЃРµРєСЂРµС‚С‹ РјР°РіРёРё, С‚РµР±Рµ РїСЂРµРґСЃС‚РѕРёС‚ РјРЅРѕРіРѕРјСѓ РЅР°СѓС‡РёС‚СЊСЃСЏ.
+		AI_Output			(self, other,"KDW_600_Saturas_KREIS2_Info_14_05"); //РўС‹ СѓР¶Рµ Р·РЅР°РµС€СЊ Рѕ С‚РѕРј, С‡С‚Рѕ РјРѕР¶РµС€СЊ РёСЃРїРѕР»СЊР·РѕРІР°С‚СЊ Р»СЋР±СѓСЋ СЂСѓРЅСѓ Р±РµСЃСЃС‡РµС‚РЅРѕРµ С‡РёСЃР»Рѕ СЂР°Р·, РЅРѕ Р»РёС€СЊ РґРѕ С‚РµС… РїРѕСЂ, РїРѕРєР° РЅРµ РёР·СЂР°СЃС…РѕРґСѓРµС€СЊ РІСЃСЋ СЃРІРѕСЋ РјР°РіРёС‡РµСЃРєСѓСЋ СЃРёР»Сѓ.
+		AI_Output			(self, other,"KDW_600_Saturas_KREIS2_Info_14_06"); //РќРѕ РїСЂРµР¶РґРµ С‡РµРј СЃРґРµР»Р°С‚СЊ С‡С‚Рѕ-Р»РёР±Рѕ, РїРѕРґСѓРјР°Р№ Рѕ С‚РѕРј, РµСЃС‚СЊ Р»Рё РІ СЌС‚РѕРј СЃРјС‹СЃР». РўС‹ РѕР±Р»Р°РґР°РµС€СЊ СЃРёР»РѕР№, РєРѕС‚РѕСЂР°СЏ РїРѕР·РІРѕР»СЏРµС‚ СЃ Р»РµРіРєРѕСЃС‚СЊСЋ СЃРµСЏС‚СЊ СЃРјРµСЂС‚СЊ Рё СЂР°Р·СЂСѓС€РµРЅРёСЏ.  
+		AI_Output			(self, other,"KDW_600_Saturas_KREIS2_Info_14_07"); //РќРѕ РёСЃС‚РёРЅРЅС‹Р№ РјР°Рі РёСЃРїРѕР»СЊР·СѓРµС‚ РµРµ Р»РёС€СЊ РїРѕ РЅРµРѕР±С…РѕРґРёРјРѕСЃС‚Рё.
+		AI_Output			(self, other,"KDW_600_Saturas_KREIS2_Info_14_08"); //РќР°СѓС‡РёСЃСЊ РѕС†РµРЅРёРІР°С‚СЊ СЃРёС‚СѓР°С†РёСЋ, Рё С‚С‹ РїРѕР·РЅР°РµС€СЊ РёСЃС‚РёРЅРЅСѓСЋ СЃРёР»Сѓ СЂСѓРЅ.
 		KDW_600_Saturas_KREIS2.permanent = 0;
 	};
 
@@ -989,15 +989,15 @@ FUNC int  KDW_600_Saturas_KREIS3_Condition()
 };
 FUNC void  KDW_600_Saturas_KREIS3_Info()
 {
-	AI_Output			(other, self,"KDW_600_Saturas_KREIS3_Info_15_01"); //Какие знания сопутствуют Третьему Кругу?
+	AI_Output			(other, self,"KDW_600_Saturas_KREIS3_Info_15_01"); //РљР°РєРёРµ Р·РЅР°РЅРёСЏ СЃРѕРїСѓС‚СЃС‚РІСѓСЋС‚ РўСЂРµС‚СЊРµРјСѓ РљСЂСѓРіСѓ?
 	if (B_GiveSkill(other,NPC_TALENT_MAGE , 3, LPCOST_TALENT_MAGE_3))
 	{
-		AI_Output			(self, other,"KDW_600_Saturas_KREIS3_Info_14_02"); //Третий Круг является одним из важнейших этапов в жизни каждого мага. Достигнув его, ты завершаешь свой поиск.
-		AI_Output			(self, other,"KDW_600_Saturas_KREIS3_Info_14_03"); //Ты уже преодолел значительный этап на пути магии. Ты научился использовать руны.
-		AI_Output			(self, other,"KDW_600_Saturas_KREIS3_Info_14_04"); //Это знание послужит основой для следующего этапа. Используй руны осмотрительно.
-		AI_Output			(self, other,"KDW_600_Saturas_KREIS3_Info_14_05"); //Ты можешь использовать их или нет. Но ты должен определиться с выбором.
-		AI_Output			(self, other,"KDW_600_Saturas_KREIS3_Info_14_06"); //Сделав выбор, используй свою силу без колебаний.
-		AI_Output			(self, other,"KDW_600_Saturas_KREIS3_Info_14_07"); //Найди свой путь, и тогда ты познаешь силу решения.
+		AI_Output			(self, other,"KDW_600_Saturas_KREIS3_Info_14_02"); //РўСЂРµС‚РёР№ РљСЂСѓРі СЏРІР»СЏРµС‚СЃСЏ РѕРґРЅРёРј РёР· РІР°Р¶РЅРµР№С€РёС… СЌС‚Р°РїРѕРІ РІ Р¶РёР·РЅРё РєР°Р¶РґРѕРіРѕ РјР°РіР°. Р”РѕСЃС‚РёРіРЅСѓРІ РµРіРѕ, С‚С‹ Р·Р°РІРµСЂС€Р°РµС€СЊ СЃРІРѕР№ РїРѕРёСЃРє.
+		AI_Output			(self, other,"KDW_600_Saturas_KREIS3_Info_14_03"); //РўС‹ СѓР¶Рµ РїСЂРµРѕРґРѕР»РµР» Р·РЅР°С‡РёС‚РµР»СЊРЅС‹Р№ СЌС‚Р°Рї РЅР° РїСѓС‚Рё РјР°РіРёРё. РўС‹ РЅР°СѓС‡РёР»СЃСЏ РёСЃРїРѕР»СЊР·РѕРІР°С‚СЊ СЂСѓРЅС‹.
+		AI_Output			(self, other,"KDW_600_Saturas_KREIS3_Info_14_04"); //Р­С‚Рѕ Р·РЅР°РЅРёРµ РїРѕСЃР»СѓР¶РёС‚ РѕСЃРЅРѕРІРѕР№ РґР»СЏ СЃР»РµРґСѓСЋС‰РµРіРѕ СЌС‚Р°РїР°. РСЃРїРѕР»СЊР·СѓР№ СЂСѓРЅС‹ РѕСЃРјРѕС‚СЂРёС‚РµР»СЊРЅРѕ.
+		AI_Output			(self, other,"KDW_600_Saturas_KREIS3_Info_14_05"); //РўС‹ РјРѕР¶РµС€СЊ РёСЃРїРѕР»СЊР·РѕРІР°С‚СЊ РёС… РёР»Рё РЅРµС‚. РќРѕ С‚С‹ РґРѕР»Р¶РµРЅ РѕРїСЂРµРґРµР»РёС‚СЊСЃСЏ СЃ РІС‹Р±РѕСЂРѕРј.
+		AI_Output			(self, other,"KDW_600_Saturas_KREIS3_Info_14_06"); //РЎРґРµР»Р°РІ РІС‹Р±РѕСЂ, РёСЃРїРѕР»СЊР·СѓР№ СЃРІРѕСЋ СЃРёР»Сѓ Р±РµР· РєРѕР»РµР±Р°РЅРёР№.
+		AI_Output			(self, other,"KDW_600_Saturas_KREIS3_Info_14_07"); //РќР°Р№РґРё СЃРІРѕР№ РїСѓС‚СЊ, Рё С‚РѕРіРґР° С‚С‹ РїРѕР·РЅР°РµС€СЊ СЃРёР»Сѓ СЂРµС€РµРЅРёСЏ.
 		KDW_600_Saturas_KREIS3.permanent = 0;
 	};
 
@@ -1029,20 +1029,20 @@ FUNC int  KDW_600_Saturas_KREIS4_Condition()
 };
 FUNC void  KDW_600_Saturas_KREIS4_Info()
 {
-	AI_Output			(other, self,"KDW_600_Saturas_KREIS4_Info_15_01"); //Я готов вступить в Четвертый Круг.
+	AI_Output			(other, self,"KDW_600_Saturas_KREIS4_Info_15_01"); //РЇ РіРѕС‚РѕРІ РІСЃС‚СѓРїРёС‚СЊ РІ Р§РµС‚РІРµСЂС‚С‹Р№ РљСЂСѓРі.
 	if (B_GiveSkill(other,NPC_TALENT_MAGE , 4, LPCOST_TALENT_MAGE_4))
 	{
-		AI_Output			(self, other,"KDW_600_Saturas_KREIS4_Info_14_02"); //Ты завершил первые три Круга. Пришло время постичь секреты магии.
-		AI_Output			(self, other,"KDW_600_Saturas_KREIS4_Info_14_03"); //Основа магии рун - камень. Магический камень, добытый из магической руды.
-		AI_Output			(self, other,"KDW_600_Saturas_KREIS4_Info_14_04"); //Это та самая руда, которую добывают в шахтах. В храмах она наделяется магическими формулами, и там же руны превращаются в орудия нашей силы.
-		AI_Output			(self, other,"KDW_600_Saturas_KREIS4_Info_14_05"); //С рунами, которыми ты сейчас владеешь, ты обрел знание храмов этого мира.
+		AI_Output			(self, other,"KDW_600_Saturas_KREIS4_Info_14_02"); //РўС‹ Р·Р°РІРµСЂС€РёР» РїРµСЂРІС‹Рµ С‚СЂРё РљСЂСѓРіР°. РџСЂРёС€Р»Рѕ РІСЂРµРјСЏ РїРѕСЃС‚РёС‡СЊ СЃРµРєСЂРµС‚С‹ РјР°РіРёРё.
+		AI_Output			(self, other,"KDW_600_Saturas_KREIS4_Info_14_03"); //РћСЃРЅРѕРІР° РјР°РіРёРё СЂСѓРЅ - РєР°РјРµРЅСЊ. РњР°РіРёС‡РµСЃРєРёР№ РєР°РјРµРЅСЊ, РґРѕР±С‹С‚С‹Р№ РёР· РјР°РіРёС‡РµСЃРєРѕР№ СЂСѓРґС‹.
+		AI_Output			(self, other,"KDW_600_Saturas_KREIS4_Info_14_04"); //Р­С‚Рѕ С‚Р° СЃР°РјР°СЏ СЂСѓРґР°, РєРѕС‚РѕСЂСѓСЋ РґРѕР±С‹РІР°СЋС‚ РІ С€Р°С…С‚Р°С…. Р’ С…СЂР°РјР°С… РѕРЅР° РЅР°РґРµР»СЏРµС‚СЃСЏ РјР°РіРёС‡РµСЃРєРёРјРё С„РѕСЂРјСѓР»Р°РјРё, Рё С‚Р°Рј Р¶Рµ СЂСѓРЅС‹ РїСЂРµРІСЂР°С‰Р°СЋС‚СЃСЏ РІ РѕСЂСѓРґРёСЏ РЅР°С€РµР№ СЃРёР»С‹.
+		AI_Output			(self, other,"KDW_600_Saturas_KREIS4_Info_14_05"); //РЎ СЂСѓРЅР°РјРё, РєРѕС‚РѕСЂС‹РјРё С‚С‹ СЃРµР№С‡Р°СЃ РІР»Р°РґРµРµС€СЊ, С‚С‹ РѕР±СЂРµР» Р·РЅР°РЅРёРµ С…СЂР°РјРѕРІ СЌС‚РѕРіРѕ РјРёСЂР°.
 		//AI_Output			(self, other,"KDW_600_Saturas_KREIS4_Info_14_06"); //Du hast jetzt alles gelernt, was ich dir beibringen kann.
-		AI_Output			(self, other,"KDW_600_Saturas_KREIS4_Info_14_07"); //Пойми магию, и ты откроешь для себя секрет силы.
+		AI_Output			(self, other,"KDW_600_Saturas_KREIS4_Info_14_07"); //РџРѕР№РјРё РјР°РіРёСЋ, Рё С‚С‹ РѕС‚РєСЂРѕРµС€СЊ РґР»СЏ СЃРµР±СЏ СЃРµРєСЂРµС‚ СЃРёР»С‹.
 		KDW_600_Saturas_KREIS4.permanent = 0;
 	};
 };  
 /*------------------------------------------------------------------------
-							DER FЬNFTE KREIS							
+							DER FР¬NFTE KREIS							
 ------------------------------------------------------------------------*/
 
 instance  KDW_600_Saturas_KREIS5 (C_INFO)
@@ -1068,15 +1068,15 @@ FUNC int  KDW_600_Saturas_KREIS5_Condition()
 };
 FUNC void  KDW_600_Saturas_KREIS5_Info()
 {
-	AI_Output			(other, self,"KDW_600_Saturas_KREIS5_Info_15_01"); //Я готов вступить в Пятый Круг.
+	AI_Output			(other, self,"KDW_600_Saturas_KREIS5_Info_15_01"); //РЇ РіРѕС‚РѕРІ РІСЃС‚СѓРїРёС‚СЊ РІ РџСЏС‚С‹Р№ РљСЂСѓРі.
 	if (B_GiveSkill(other,NPC_TALENT_MAGE , 5, LPCOST_TALENT_MAGE_5))
 	{
-		AI_Output		(self, other,"KDW_600_Saturas_KREIS5_Info_14_02"); //Да будет так. Я открою тебе истинный смысл Пятого Круга.
-		AI_Output		(self, other,"KDW_600_Saturas_KREIS5_Info_14_03"); //Огненный Шторм и Ледяная Волна - так называются руны, магия которых отныне подвластна тебе, как и способность истреблять нежить.
-		AI_Output		(self, other,"KDW_600_Saturas_KREIS5_Info_14_04"); //Но самое сильное заклинание Пятого Круга - Смертельная Зыбь. Завладев этой руной, ты получишь великую и очень опасную силу.
-		AI_Output		(self, other,"KDW_600_Saturas_KREIS5_Info_14_05"); //Используй ее как можно реже, ибо дар этот - от богов Тьмы.
-		AI_Output		(self, other,"KDW_600_Saturas_KREIS4_Info_14_06"); //Теперь ты научился всему, что знаю я сам.
-		AI_Output		(self, other,"KDW_600_Saturas_KREIS5_Info_14_06"); //Познай предел своих возможностей, и ты познаешь свою истинную силу.
+		AI_Output		(self, other,"KDW_600_Saturas_KREIS5_Info_14_02"); //Р”Р° Р±СѓРґРµС‚ С‚Р°Рє. РЇ РѕС‚РєСЂРѕСЋ С‚РµР±Рµ РёСЃС‚РёРЅРЅС‹Р№ СЃРјС‹СЃР» РџСЏС‚РѕРіРѕ РљСЂСѓРіР°.
+		AI_Output		(self, other,"KDW_600_Saturas_KREIS5_Info_14_03"); //РћРіРЅРµРЅРЅС‹Р№ РЁС‚РѕСЂРј Рё Р›РµРґСЏРЅР°СЏ Р’РѕР»РЅР° - С‚Р°Рє РЅР°Р·С‹РІР°СЋС‚СЃСЏ СЂСѓРЅС‹, РјР°РіРёСЏ РєРѕС‚РѕСЂС‹С… РѕС‚РЅС‹РЅРµ РїРѕРґРІР»Р°СЃС‚РЅР° С‚РµР±Рµ, РєР°Рє Рё СЃРїРѕСЃРѕР±РЅРѕСЃС‚СЊ РёСЃС‚СЂРµР±Р»СЏС‚СЊ РЅРµР¶РёС‚СЊ.
+		AI_Output		(self, other,"KDW_600_Saturas_KREIS5_Info_14_04"); //РќРѕ СЃР°РјРѕРµ СЃРёР»СЊРЅРѕРµ Р·Р°РєР»РёРЅР°РЅРёРµ РџСЏС‚РѕРіРѕ РљСЂСѓРіР° - РЎРјРµСЂС‚РµР»СЊРЅР°СЏ Р—С‹Р±СЊ. Р—Р°РІР»Р°РґРµРІ СЌС‚РѕР№ СЂСѓРЅРѕР№, С‚С‹ РїРѕР»СѓС‡РёС€СЊ РІРµР»РёРєСѓСЋ Рё РѕС‡РµРЅСЊ РѕРїР°СЃРЅСѓСЋ СЃРёР»Сѓ.
+		AI_Output		(self, other,"KDW_600_Saturas_KREIS5_Info_14_05"); //РСЃРїРѕР»СЊР·СѓР№ РµРµ РєР°Рє РјРѕР¶РЅРѕ СЂРµР¶Рµ, РёР±Рѕ РґР°СЂ СЌС‚РѕС‚ - РѕС‚ Р±РѕРіРѕРІ РўСЊРјС‹.
+		AI_Output		(self, other,"KDW_600_Saturas_KREIS4_Info_14_06"); //РўРµРїРµСЂСЊ С‚С‹ РЅР°СѓС‡РёР»СЃСЏ РІСЃРµРјСѓ, С‡С‚Рѕ Р·РЅР°СЋ СЏ СЃР°Рј.
+		AI_Output		(self, other,"KDW_600_Saturas_KREIS5_Info_14_06"); //РџРѕР·РЅР°Р№ РїСЂРµРґРµР» СЃРІРѕРёС… РІРѕР·РјРѕР¶РЅРѕСЃС‚РµР№, Рё С‚С‹ РїРѕР·РЅР°РµС€СЊ СЃРІРѕСЋ РёСЃС‚РёРЅРЅСѓСЋ СЃРёР»Сѓ.
 		KDW_600_Saturas_KREIS5.permanent = 0;
 	};
 };  
@@ -1105,20 +1105,20 @@ FUNC int  KDW_600_Saturas_HEAVYARMOR_Condition()
 };
 FUNC void  KDW_600_Saturas_HEAVYARMOR_Info()
 {
-	AI_Output				(other, self,"KDW_600_Saturas_HEAVYARMOR_Info_15_01"); //Я хочу носить облачение высших магов Воды.
+	AI_Output				(other, self,"KDW_600_Saturas_HEAVYARMOR_Info_15_01"); //РЇ С…РѕС‡Сѓ РЅРѕСЃРёС‚СЊ РѕР±Р»Р°С‡РµРЅРёРµ РІС‹СЃС€РёС… РјР°РіРѕРІ Р’РѕРґС‹.
 	
 	if (Npc_GetTalentSkill (hero,NPC_TALENT_MAGE ) < 4)
 	&& (Kapitel < 5)
 	{
-		AI_Output			(self, other,"KDW_600_Saturas_HEAVYARMOR_Info_14_02"); //Твое время еще не пришло.
+		AI_Output			(self, other,"KDW_600_Saturas_HEAVYARMOR_Info_14_02"); //РўРІРѕРµ РІСЂРµРјСЏ РµС‰Рµ РЅРµ РїСЂРёС€Р»Рѕ.
 	}
 	else if (Npc_HasItems (hero,ItMinugget) < VALUE_KDW_ARMOR_H)
 	{
-		AI_Output			(self, other,"KDW_600_Saturas_HEAVYARMOR_Info_14_03"); //Твоих запасов руды не хватит даже на то, чтобы заплатить за ткань.
+		AI_Output			(self, other,"KDW_600_Saturas_HEAVYARMOR_Info_14_03"); //РўРІРѕРёС… Р·Р°РїР°СЃРѕРІ СЂСѓРґС‹ РЅРµ С…РІР°С‚РёС‚ РґР°Р¶Рµ РЅР° С‚Рѕ, С‡С‚РѕР±С‹ Р·Р°РїР»Р°С‚РёС‚СЊ Р·Р° С‚РєР°РЅСЊ.
 	}
 	else
 	{
-		AI_Output			(self, other,"KDW_600_Saturas_HEAVYARMOR_Info_14_04"); //Время пришло. Ты достоин носить облачение высших магов Воды.
+		AI_Output			(self, other,"KDW_600_Saturas_HEAVYARMOR_Info_14_04"); //Р’СЂРµРјСЏ РїСЂРёС€Р»Рѕ. РўС‹ РґРѕСЃС‚РѕРёРЅ РЅРѕСЃРёС‚СЊ РѕР±Р»Р°С‡РµРЅРёРµ РІС‹СЃС€РёС… РјР°РіРѕРІ Р’РѕРґС‹.
 		KDW_600_Saturas_HEAVYARMOR.permanent = 0;
 
 		B_GiveInvItems		(hero,self,	ItMinugget,VALUE_KDW_ARMOR_H);
@@ -1142,7 +1142,7 @@ instance Info_Saturas_NOWSLD (C_INFO)
 	information	= Info_Saturas_NOWSLD_Info;
 	permanent	= 0;
 	important	= 0;
-	description = "Ли принял меня в наемники.";
+	description = "Р›Рё РїСЂРёРЅСЏР» РјРµРЅСЏ РІ РЅР°РµРјРЅРёРєРё.";
 };
 
 FUNC INT Info_Saturas_NOWSLD_Condition()
@@ -1155,11 +1155,11 @@ FUNC INT Info_Saturas_NOWSLD_Condition()
 
 FUNC VOID Info_Saturas_NOWSLD_Info()
 {
-	AI_Output			(hero,self,"Info_Saturas_NOWSLD_15_01"); //Ли принял меня в наемники.
-	AI_Output			(self,hero,"Info_Saturas_NOWSLD_14_02"); //Хорошо. Очень хорошо. Теперь ты стал членом нашего Лагеря.
-	AI_Output			(self,hero,"Info_Saturas_NOWSLD_14_03"); //Добро пожаловать!
+	AI_Output			(hero,self,"Info_Saturas_NOWSLD_15_01"); //Р›Рё РїСЂРёРЅСЏР» РјРµРЅСЏ РІ РЅР°РµРјРЅРёРєРё.
+	AI_Output			(self,hero,"Info_Saturas_NOWSLD_14_02"); //РҐРѕСЂРѕС€Рѕ. РћС‡РµРЅСЊ С…РѕСЂРѕС€Рѕ. РўРµРїРµСЂСЊ С‚С‹ СЃС‚Р°Р» С‡Р»РµРЅРѕРј РЅР°С€РµРіРѕ Р›Р°РіРµСЂСЏ.
+	AI_Output			(self,hero,"Info_Saturas_NOWSLD_14_03"); //Р”РѕР±СЂРѕ РїРѕР¶Р°Р»РѕРІР°С‚СЊ!
 
-	B_LogEntry			(CH4_BannedFromOC,"Сатурас официально приветствовал меня в качестве наемника.");
+	B_LogEntry			(CH4_BannedFromOC,"РЎР°С‚СѓСЂР°СЃ РѕС„РёС†РёР°Р»СЊРЅРѕ РїСЂРёРІРµС‚СЃС‚РІРѕРІР°Р» РјРµРЅСЏ РІ РєР°С‡РµСЃС‚РІРµ РЅР°РµРјРЅРёРєР°.");
 	Log_SetTopicStatus	(CH4_BannedFromOC,	LOG_SUCCESS);	
 };
 
@@ -1173,14 +1173,14 @@ instance Info_Saturas_XARDAS (C_INFO)
 	information	= Info_Saturas_XARDAS_Info;
 	permanent	= 0;
 	important	= 0;
-	description = "Отправляя меня к магам Огня, ты упомянул... КОГО-ТО.";
+	description = "РћС‚РїСЂР°РІР»СЏСЏ РјРµРЅСЏ Рє РјР°РіР°Рј РћРіРЅСЏ, С‚С‹ СѓРїРѕРјСЏРЅСѓР»... РљРћР“Рћ-РўРћ.";
 };
 
 FUNC INT Info_Saturas_XARDAS_Condition()
 {	
 	if	Npc_KnowsInfo(hero, Info_Saturas_COLLAPSE)
 	&&	Npc_KnowsInfo(hero, Info_Saturas_MURDER)
-	{		 										//***Bjцrn***>
+	{		 										//***BjС†rn***>
 
 		if( (Npc_GetTrueGuild(hero)!=GIL_GRD)  &&  (Npc_GetTrueGuild(hero)!=GIL_KDF)  )
 		{
@@ -1205,7 +1205,7 @@ FUNC INT Info_Saturas_XARDAS_Condition()
 		else
 		{
 			return TRUE;
-		}; 											<***Bjцrn***
+		}; 											<***BjС†rn***
 */												
 
 	};	
@@ -1213,17 +1213,17 @@ FUNC INT Info_Saturas_XARDAS_Condition()
 
 FUNC VOID Info_Saturas_XARDAS_Info()
 {
-	AI_Output			(hero,self,"Info_Saturas_XARDAS_15_01"); //Отправляя меня к магам Огня, ты упомянул... КОЕ-КОГО.
-	AI_Output			(self,hero,"Info_Saturas_XARDAS_14_02"); //Ну, я надеялся, что мы справимся и без его помощи, но судя по тому, как развиваются события...
-	AI_Output			(hero,self,"Info_Saturas_XARDAS_15_03"); //Кто ОН?
-	AI_Output			(self,hero,"Info_Saturas_XARDAS_14_04"); //Хорошо, хорошо!
-	AI_Output			(self,hero,"Info_Saturas_XARDAS_14_05"); //Много, много лет назад...
-	AI_Output			(hero,self,"Info_Saturas_XARDAS_15_06"); //Нельзя ли подсократить историю, а?
-	AI_Output			(self,hero,"Info_Saturas_XARDAS_14_07"); //Терпение! Итак, когда все мы, двенадцать магов, создавали магический Барьер, наша сила направлялась и контролировалась тринадцатым.
-	AI_Output			(hero,self,"Info_Saturas_XARDAS_15_08"); //Тринадцатый маг? Я думал, вас была только дюжина!
-	AI_Output			(self,hero,"Info_Saturas_XARDAS_14_09"); //Большинство из тех, кто не застал основания колонии, думают точно так же.
-	AI_Output			(self,hero,"Info_Saturas_XARDAS_14_10"); //Тринадцатый маг руководил нами, и было это еще до того, как мы разделились на Круги Огня и Воды.
-	AI_Output			(self,hero,"Info_Saturas_XARDAS_14_11"); //Но он покинул Старый Лагерь, который когда-то был единственным Лагерем в колонии.
+	AI_Output			(hero,self,"Info_Saturas_XARDAS_15_01"); //РћС‚РїСЂР°РІР»СЏСЏ РјРµРЅСЏ Рє РјР°РіР°Рј РћРіРЅСЏ, С‚С‹ СѓРїРѕРјСЏРЅСѓР»... РљРћР•-РљРћР“Рћ.
+	AI_Output			(self,hero,"Info_Saturas_XARDAS_14_02"); //РќСѓ, СЏ РЅР°РґРµСЏР»СЃСЏ, С‡С‚Рѕ РјС‹ СЃРїСЂР°РІРёРјСЃСЏ Рё Р±РµР· РµРіРѕ РїРѕРјРѕС‰Рё, РЅРѕ СЃСѓРґСЏ РїРѕ С‚РѕРјСѓ, РєР°Рє СЂР°Р·РІРёРІР°СЋС‚СЃСЏ СЃРѕР±С‹С‚РёСЏ...
+	AI_Output			(hero,self,"Info_Saturas_XARDAS_15_03"); //РљС‚Рѕ РћРќ?
+	AI_Output			(self,hero,"Info_Saturas_XARDAS_14_04"); //РҐРѕСЂРѕС€Рѕ, С…РѕСЂРѕС€Рѕ!
+	AI_Output			(self,hero,"Info_Saturas_XARDAS_14_05"); //РњРЅРѕРіРѕ, РјРЅРѕРіРѕ Р»РµС‚ РЅР°Р·Р°Рґ...
+	AI_Output			(hero,self,"Info_Saturas_XARDAS_15_06"); //РќРµР»СЊР·СЏ Р»Рё РїРѕРґСЃРѕРєСЂР°С‚РёС‚СЊ РёСЃС‚РѕСЂРёСЋ, Р°?
+	AI_Output			(self,hero,"Info_Saturas_XARDAS_14_07"); //РўРµСЂРїРµРЅРёРµ! РС‚Р°Рє, РєРѕРіРґР° РІСЃРµ РјС‹, РґРІРµРЅР°РґС†Р°С‚СЊ РјР°РіРѕРІ, СЃРѕР·РґР°РІР°Р»Рё РјР°РіРёС‡РµСЃРєРёР№ Р‘Р°СЂСЊРµСЂ, РЅР°С€Р° СЃРёР»Р° РЅР°РїСЂР°РІР»СЏР»Р°СЃСЊ Рё РєРѕРЅС‚СЂРѕР»РёСЂРѕРІР°Р»Р°СЃСЊ С‚СЂРёРЅР°РґС†Р°С‚С‹Рј.
+	AI_Output			(hero,self,"Info_Saturas_XARDAS_15_08"); //РўСЂРёРЅР°РґС†Р°С‚С‹Р№ РјР°Рі? РЇ РґСѓРјР°Р», РІР°СЃ Р±С‹Р»Р° С‚РѕР»СЊРєРѕ РґСЋР¶РёРЅР°!
+	AI_Output			(self,hero,"Info_Saturas_XARDAS_14_09"); //Р‘РѕР»СЊС€РёРЅСЃС‚РІРѕ РёР· С‚РµС…, РєС‚Рѕ РЅРµ Р·Р°СЃС‚Р°Р» РѕСЃРЅРѕРІР°РЅРёСЏ РєРѕР»РѕРЅРёРё, РґСѓРјР°СЋС‚ С‚РѕС‡РЅРѕ С‚Р°Рє Р¶Рµ.
+	AI_Output			(self,hero,"Info_Saturas_XARDAS_14_10"); //РўСЂРёРЅР°РґС†Р°С‚С‹Р№ РјР°Рі СЂСѓРєРѕРІРѕРґРёР» РЅР°РјРё, Рё Р±С‹Р»Рѕ СЌС‚Рѕ РµС‰Рµ РґРѕ С‚РѕРіРѕ, РєР°Рє РјС‹ СЂР°Р·РґРµР»РёР»РёСЃСЊ РЅР° РљСЂСѓРіРё РћРіРЅСЏ Рё Р’РѕРґС‹.
+	AI_Output			(self,hero,"Info_Saturas_XARDAS_14_11"); //РќРѕ РѕРЅ РїРѕРєРёРЅСѓР» РЎС‚Р°СЂС‹Р№ Р›Р°РіРµСЂСЊ, РєРѕС‚РѕСЂС‹Р№ РєРѕРіРґР°-С‚Рѕ Р±С‹Р» РµРґРёРЅСЃС‚РІРµРЅРЅС‹Рј Р›Р°РіРµСЂРµРј РІ РєРѕР»РѕРЅРёРё.
 };
 
 //---------------------------------------------------------------------
@@ -1236,7 +1236,7 @@ instance Info_Saturas_XARDASWHO (C_INFO)
 	information	= Info_Saturas_XARDASWHO_Info;
 	permanent	= 0;
 	important 	= 0;
-	description = "Как зовут этого тринадцатого мага?";
+	description = "РљР°Рє Р·РѕРІСѓС‚ СЌС‚РѕРіРѕ С‚СЂРёРЅР°РґС†Р°С‚РѕРіРѕ РјР°РіР°?";
 };
 
 FUNC INT Info_Saturas_XARDASWHO_Condition()
@@ -1249,9 +1249,9 @@ FUNC INT Info_Saturas_XARDASWHO_Condition()
 
 FUNC VOID Info_Saturas_XARDASWHO_Info()
 {
-	AI_Output			(hero,self,"Info_Saturas_XARDASWHO_15_01"); //Как зовут этого тринадцатого мага?
-	AI_Output			(self,hero,"Info_Saturas_XARDASWHO_14_02"); //Эго имя Ксардас. Едва ли сейчас кто-нибудь помнит о нем.
-	AI_Output			(self,hero,"Info_Saturas_XARDASWHO_14_03"); //А те, кто помнит, называют его не иначе как НЕКРОМАНТОМ!
+	AI_Output			(hero,self,"Info_Saturas_XARDASWHO_15_01"); //РљР°Рє Р·РѕРІСѓС‚ СЌС‚РѕРіРѕ С‚СЂРёРЅР°РґС†Р°С‚РѕРіРѕ РјР°РіР°?
+	AI_Output			(self,hero,"Info_Saturas_XARDASWHO_14_02"); //Р­РіРѕ РёРјСЏ РљСЃР°СЂРґР°СЃ. Р•РґРІР° Р»Рё СЃРµР№С‡Р°СЃ РєС‚Рѕ-РЅРёР±СѓРґСЊ РїРѕРјРЅРёС‚ Рѕ РЅРµРј.
+	AI_Output			(self,hero,"Info_Saturas_XARDASWHO_14_03"); //Рђ С‚Рµ, РєС‚Рѕ РїРѕРјРЅРёС‚, РЅР°Р·С‹РІР°СЋС‚ РµРіРѕ РЅРµ РёРЅР°С‡Рµ РєР°Рє РќР•РљР РћРњРђРќРўРћРњ!
 };
 
 //---------------------------------------------------------------------
@@ -1264,7 +1264,7 @@ instance Info_Saturas_XARDASWHY (C_INFO)
 	information	= Info_Saturas_XARDASWHY_Info;
 	permanent	= 0;
 	important 	= 0;
-	description = "Почему он покинул Старый Лагерь?";
+	description = "РџРѕС‡РµРјСѓ РѕРЅ РїРѕРєРёРЅСѓР» РЎС‚Р°СЂС‹Р№ Р›Р°РіРµСЂСЊ?";
 };
 
 FUNC INT Info_Saturas_XARDASWHY_Condition()
@@ -1277,11 +1277,11 @@ FUNC INT Info_Saturas_XARDASWHY_Condition()
 
 FUNC VOID Info_Saturas_XARDASWHY_Info()
 {
-	AI_Output			(hero,self,"Info_Saturas_XARDASWHY_15_01"); //Почему он покинул Старый Лагерь?
-	AI_Output			(self,hero,"Info_Saturas_XARDASWHY_14_02"); //Он начал изучать магию, позволявшую призывать магических существ... нежить.
-	AI_Output			(self,hero,"Info_Saturas_XARDASWHY_14_03"); //Гомез был не единственным из тех, кто начал беспокоиться. Большинство других магов выступило против Ксардаса и его нечестивых экспериментов.
-	AI_Output			(hero,self,"Info_Saturas_XARDASWHY_15_04"); //И что было потом?
-	AI_Output			(self,hero,"Info_Saturas_XARDASWHY_14_05"); //В отличие от мясника-Гомеза, Ксардас решил избежать конфликта и просто ушел.
+	AI_Output			(hero,self,"Info_Saturas_XARDASWHY_15_01"); //РџРѕС‡РµРјСѓ РѕРЅ РїРѕРєРёРЅСѓР» РЎС‚Р°СЂС‹Р№ Р›Р°РіРµСЂСЊ?
+	AI_Output			(self,hero,"Info_Saturas_XARDASWHY_14_02"); //РћРЅ РЅР°С‡Р°Р» РёР·СѓС‡Р°С‚СЊ РјР°РіРёСЋ, РїРѕР·РІРѕР»СЏРІС€СѓСЋ РїСЂРёР·С‹РІР°С‚СЊ РјР°РіРёС‡РµСЃРєРёС… СЃСѓС‰РµСЃС‚РІ... РЅРµР¶РёС‚СЊ.
+	AI_Output			(self,hero,"Info_Saturas_XARDASWHY_14_03"); //Р“РѕРјРµР· Р±С‹Р» РЅРµ РµРґРёРЅСЃС‚РІРµРЅРЅС‹Рј РёР· С‚РµС…, РєС‚Рѕ РЅР°С‡Р°Р» Р±РµСЃРїРѕРєРѕРёС‚СЊСЃСЏ. Р‘РѕР»СЊС€РёРЅСЃС‚РІРѕ РґСЂСѓРіРёС… РјР°РіРѕРІ РІС‹СЃС‚СѓРїРёР»Рѕ РїСЂРѕС‚РёРІ РљСЃР°СЂРґР°СЃР° Рё РµРіРѕ РЅРµС‡РµСЃС‚РёРІС‹С… СЌРєСЃРїРµСЂРёРјРµРЅС‚РѕРІ.
+	AI_Output			(hero,self,"Info_Saturas_XARDASWHY_15_04"); //Р С‡С‚Рѕ Р±С‹Р»Рѕ РїРѕС‚РѕРј?
+	AI_Output			(self,hero,"Info_Saturas_XARDASWHY_14_05"); //Р’ РѕС‚Р»РёС‡РёРµ РѕС‚ РјСЏСЃРЅРёРєР°-Р“РѕРјРµР·Р°, РљСЃР°СЂРґР°СЃ СЂРµС€РёР» РёР·Р±РµР¶Р°С‚СЊ РєРѕРЅС„Р»РёРєС‚Р° Рё РїСЂРѕСЃС‚Рѕ СѓС€РµР».
 };
 
 //---------------------------------------------------------------------
@@ -1294,7 +1294,7 @@ instance Info_Saturas_XARDASWHERE (C_INFO)
 	information	= Info_Saturas_XARDASWHERE_Info;
 	permanent	= 0;
 	important 	= 0;
-	description = "Где этот маг теперь?";
+	description = "Р“РґРµ СЌС‚РѕС‚ РјР°Рі С‚РµРїРµСЂСЊ?";
 };
 
 FUNC INT Info_Saturas_XARDASWHERE_Condition()
@@ -1307,9 +1307,9 @@ FUNC INT Info_Saturas_XARDASWHERE_Condition()
 
 FUNC VOID Info_Saturas_XARDASWHERE_Info()
 {
-	AI_Output			(hero,self,"Info_Saturas_XARDASWHERE_15_01"); //Где этот маг теперь?
-	AI_Output			(self,hero,"Info_Saturas_XARDASWHERE_14_02"); //Он живет в уединении в своей башне посреди земель орков.
-	AI_Output			(self,hero,"Info_Saturas_XARDASWHERE_14_03"); //Она находится в самой южной части колонии.
+	AI_Output			(hero,self,"Info_Saturas_XARDASWHERE_15_01"); //Р“РґРµ СЌС‚РѕС‚ РјР°Рі С‚РµРїРµСЂСЊ?
+	AI_Output			(self,hero,"Info_Saturas_XARDASWHERE_14_02"); //РћРЅ Р¶РёРІРµС‚ РІ СѓРµРґРёРЅРµРЅРёРё РІ СЃРІРѕРµР№ Р±Р°С€РЅРµ РїРѕСЃСЂРµРґРё Р·РµРјРµР»СЊ РѕСЂРєРѕРІ.
+	AI_Output			(self,hero,"Info_Saturas_XARDASWHERE_14_03"); //РћРЅР° РЅР°С…РѕРґРёС‚СЃСЏ РІ СЃР°РјРѕР№ СЋР¶РЅРѕР№ С‡Р°СЃС‚Рё РєРѕР»РѕРЅРёРё.
 };
 
 //---------------------------------------------------------------------
@@ -1322,7 +1322,7 @@ instance Info_Saturas_XARDASHELP (C_INFO)
 	information	= Info_Saturas_XARDASHELP_Info;
 	permanent	= 0;
 	important 	= 0;
-	description = "Я отправлюсь к Ксардасу и попрошу его о помощи!";
+	description = "РЇ РѕС‚РїСЂР°РІР»СЋСЃСЊ Рє РљСЃР°СЂРґР°СЃСѓ Рё РїРѕРїСЂРѕС€Сѓ РµРіРѕ Рѕ РїРѕРјРѕС‰Рё!";
 };
 
 FUNC INT Info_Saturas_XARDASHELP_Condition()
@@ -1337,11 +1337,11 @@ FUNC INT Info_Saturas_XARDASHELP_Condition()
 
 FUNC VOID Info_Saturas_XARDASHELP_Info()
 {
-	AI_Output			(hero,self,"Info_Saturas_XARDASHELP_15_01"); //Я отправлюсь к Ксардасу и попрошу его о помощи!
-	AI_Output			(self,hero,"Info_Saturas_XARDASHELP_14_02"); //Он единственный, кто теперь может нам помочь.
-	AI_Output			(self,hero,"Info_Saturas_XARDASHELP_14_03"); //Но если он не знает способа или не захочет помогать нам...
-	AI_Output			(hero,self,"Info_Saturas_XARDASHELP_15_04"); //ЗАХОЧЕТ!
-	AI_Output			(self,hero,"Info_Saturas_XARDASHELP_14_05"); //Есть и другая проблема...
+	AI_Output			(hero,self,"Info_Saturas_XARDASHELP_15_01"); //РЇ РѕС‚РїСЂР°РІР»СЋСЃСЊ Рє РљСЃР°СЂРґР°СЃСѓ Рё РїРѕРїСЂРѕС€Сѓ РµРіРѕ Рѕ РїРѕРјРѕС‰Рё!
+	AI_Output			(self,hero,"Info_Saturas_XARDASHELP_14_02"); //РћРЅ РµРґРёРЅСЃС‚РІРµРЅРЅС‹Р№, РєС‚Рѕ С‚РµРїРµСЂСЊ РјРѕР¶РµС‚ РЅР°Рј РїРѕРјРѕС‡СЊ.
+	AI_Output			(self,hero,"Info_Saturas_XARDASHELP_14_03"); //РќРѕ РµСЃР»Рё РѕРЅ РЅРµ Р·РЅР°РµС‚ СЃРїРѕСЃРѕР±Р° РёР»Рё РЅРµ Р·Р°С…РѕС‡РµС‚ РїРѕРјРѕРіР°С‚СЊ РЅР°Рј...
+	AI_Output			(hero,self,"Info_Saturas_XARDASHELP_15_04"); //Р—РђРҐРћР§Р•Рў!
+	AI_Output			(self,hero,"Info_Saturas_XARDASHELP_14_05"); //Р•СЃС‚СЊ Рё РґСЂСѓРіР°СЏ РїСЂРѕР±Р»РµРјР°...
 	
 	B_Story_FindXardas	();
 };
@@ -1356,7 +1356,7 @@ instance Info_Saturas_XARDASPROBLEM (C_INFO)
 	information	= Info_Saturas_XARDASPROBLEM_Info;
 	permanent	= 0;
 	important 	= 0;
-	description = "Проблема?";
+	description = "РџСЂРѕР±Р»РµРјР°?";
 };
 
 FUNC INT Info_Saturas_XARDASPROBLEM_Condition()
@@ -1369,15 +1369,15 @@ FUNC INT Info_Saturas_XARDASPROBLEM_Condition()
 
 FUNC VOID Info_Saturas_XARDASPROBLEM_Info()
 {
-	AI_Output			(hero,self,"Info_Saturas_XARDASPROBLEM_15_01"); //Проблема?
-	AI_Output			(self,hero,"Info_Saturas_XARDASPROBLEM_14_02"); //Да. За прошедшие годы мы несколько раз пытались связаться с Ксардасом.
-	AI_Output			(self,hero,"Info_Saturas_XARDASPROBLEM_14_03"); //Похоже, он не хочет, чтобы его беспокоили.
-	AI_Output			(hero,self,"Info_Saturas_XARDASPROBLEM_15_04"); //Что это значит?
-	AI_Output			(self,hero,"Info_Saturas_XARDASPROBLEM_14_05"); //Никто из гонцов не вернулся из его башни.
-	AI_Output			(self,hero,"Info_Saturas_XARDASPROBLEM_14_06"); //Тебе придется найти способ, как обмануть его созданий.
-	AI_Output			(hero,self,"Info_Saturas_XARDASPROBLEM_15_07"); //Это должно быть забавно!
+	AI_Output			(hero,self,"Info_Saturas_XARDASPROBLEM_15_01"); //РџСЂРѕР±Р»РµРјР°?
+	AI_Output			(self,hero,"Info_Saturas_XARDASPROBLEM_14_02"); //Р”Р°. Р—Р° РїСЂРѕС€РµРґС€РёРµ РіРѕРґС‹ РјС‹ РЅРµСЃРєРѕР»СЊРєРѕ СЂР°Р· РїС‹С‚Р°Р»РёСЃСЊ СЃРІСЏР·Р°С‚СЊСЃСЏ СЃ РљСЃР°СЂРґР°СЃРѕРј.
+	AI_Output			(self,hero,"Info_Saturas_XARDASPROBLEM_14_03"); //РџРѕС…РѕР¶Рµ, РѕРЅ РЅРµ С…РѕС‡РµС‚, С‡С‚РѕР±С‹ РµРіРѕ Р±РµСЃРїРѕРєРѕРёР»Рё.
+	AI_Output			(hero,self,"Info_Saturas_XARDASPROBLEM_15_04"); //Р§С‚Рѕ СЌС‚Рѕ Р·РЅР°С‡РёС‚?
+	AI_Output			(self,hero,"Info_Saturas_XARDASPROBLEM_14_05"); //РќРёРєС‚Рѕ РёР· РіРѕРЅС†РѕРІ РЅРµ РІРµСЂРЅСѓР»СЃСЏ РёР· РµРіРѕ Р±Р°С€РЅРё.
+	AI_Output			(self,hero,"Info_Saturas_XARDASPROBLEM_14_06"); //РўРµР±Рµ РїСЂРёРґРµС‚СЃСЏ РЅР°Р№С‚Рё СЃРїРѕСЃРѕР±, РєР°Рє РѕР±РјР°РЅСѓС‚СЊ РµРіРѕ СЃРѕР·РґР°РЅРёР№.
+	AI_Output			(hero,self,"Info_Saturas_XARDASPROBLEM_15_07"); //Р­С‚Рѕ РґРѕР»Р¶РЅРѕ Р±С‹С‚СЊ Р·Р°Р±Р°РІРЅРѕ!
 	
-	B_LogEntry			(CH4_FindXardas,"Сатурас предостерег меня о магических созданиях Ксардаса, некроманта. По поводу их сильных и слабых сторон в библиотеке магов воды имеются записи. Мне следует найти время и как следует их просмотреть.");	
+	B_LogEntry			(CH4_FindXardas,"РЎР°С‚СѓСЂР°СЃ РїСЂРµРґРѕСЃС‚РµСЂРµРі РјРµРЅСЏ Рѕ РјР°РіРёС‡РµСЃРєРёС… СЃРѕР·РґР°РЅРёСЏС… РљСЃР°СЂРґР°СЃР°, РЅРµРєСЂРѕРјР°РЅС‚Р°. РџРѕ РїРѕРІРѕРґСѓ РёС… СЃРёР»СЊРЅС‹С… Рё СЃР»Р°Р±С‹С… СЃС‚РѕСЂРѕРЅ РІ Р±РёР±Р»РёРѕС‚РµРєРµ РјР°РіРѕРІ РІРѕРґС‹ РёРјРµСЋС‚СЃСЏ Р·Р°РїРёСЃРё. РњРЅРµ СЃР»РµРґСѓРµС‚ РЅР°Р№С‚Рё РІСЂРµРјСЏ Рё РєР°Рє СЃР»РµРґСѓРµС‚ РёС… РїСЂРѕСЃРјРѕС‚СЂРµС‚СЊ.");	
 };
 
 //---------------------------------------------------------------------
@@ -1390,7 +1390,7 @@ instance Info_Saturas_XARDASGO (C_INFO)
 	information	= Info_Saturas_XARDASGO_Info;
 	permanent	= 0;
 	important 	= 0;
-	description = "Как пройти мимо этих тварей?";
+	description = "РљР°Рє РїСЂРѕР№С‚Рё РјРёРјРѕ СЌС‚РёС… С‚РІР°СЂРµР№?";
 };
 
 FUNC INT Info_Saturas_XARDASGO_Condition()
@@ -1403,19 +1403,19 @@ FUNC INT Info_Saturas_XARDASGO_Condition()
 
 FUNC VOID Info_Saturas_XARDASGO_Info()
 {
-	AI_Output			(hero,self,"Info_Saturas_XARDASGO_15_01"); //Как пройти мимо этих тварей?
-	AI_Output			(self,hero,"Info_Saturas_XARDASGO_14_02"); //Если бы я знал, то непременно сказал бы тебе!
-	AI_Output			(self,hero,"Info_Saturas_XARDASGO_14_03"); //Советую тебе поискать ответ в нашей библиотеке.
-	AI_Output			(self,hero,"Info_Saturas_XARDASGO_14_04"); //Быть может, в старых книгах есть упоминания о сильных и слабых сторонах существ, порожденых магией.
-	AI_Output			(hero,self,"Info_Saturas_XARDASGO_15_05"); //Я перерою всю библиотеку. И не волнуйся...
-	AI_Output			(hero,self,"Info_Saturas_XARDASGO_15_06"); //Я вернусь!
+	AI_Output			(hero,self,"Info_Saturas_XARDASGO_15_01"); //РљР°Рє РїСЂРѕР№С‚Рё РјРёРјРѕ СЌС‚РёС… С‚РІР°СЂРµР№?
+	AI_Output			(self,hero,"Info_Saturas_XARDASGO_14_02"); //Р•СЃР»Рё Р±С‹ СЏ Р·РЅР°Р», С‚Рѕ РЅРµРїСЂРµРјРµРЅРЅРѕ СЃРєР°Р·Р°Р» Р±С‹ С‚РµР±Рµ!
+	AI_Output			(self,hero,"Info_Saturas_XARDASGO_14_03"); //РЎРѕРІРµС‚СѓСЋ С‚РµР±Рµ РїРѕРёСЃРєР°С‚СЊ РѕС‚РІРµС‚ РІ РЅР°С€РµР№ Р±РёР±Р»РёРѕС‚РµРєРµ.
+	AI_Output			(self,hero,"Info_Saturas_XARDASGO_14_04"); //Р‘С‹С‚СЊ РјРѕР¶РµС‚, РІ СЃС‚Р°СЂС‹С… РєРЅРёРіР°С… РµСЃС‚СЊ СѓРїРѕРјРёРЅР°РЅРёСЏ Рѕ СЃРёР»СЊРЅС‹С… Рё СЃР»Р°Р±С‹С… СЃС‚РѕСЂРѕРЅР°С… СЃСѓС‰РµСЃС‚РІ, РїРѕСЂРѕР¶РґРµРЅС‹С… РјР°РіРёРµР№.
+	AI_Output			(hero,self,"Info_Saturas_XARDASGO_15_05"); //РЇ РїРµСЂРµСЂРѕСЋ РІСЃСЋ Р±РёР±Р»РёРѕС‚РµРєСѓ. Р РЅРµ РІРѕР»РЅСѓР№СЃСЏ...
+	AI_Output			(hero,self,"Info_Saturas_XARDASGO_15_06"); //РЇ РІРµСЂРЅСѓСЃСЊ!
 
-	B_LogEntry			(CH4_FindXardas,"По поводу сильных и слабых сторон этих созданий в библиотеке магов воды имеются записи. Мне следует найти время и как следует их просмотреть.");
+	B_LogEntry			(CH4_FindXardas,"РџРѕ РїРѕРІРѕРґСѓ СЃРёР»СЊРЅС‹С… Рё СЃР»Р°Р±С‹С… СЃС‚РѕСЂРѕРЅ СЌС‚РёС… СЃРѕР·РґР°РЅРёР№ РІ Р±РёР±Р»РёРѕС‚РµРєРµ РјР°РіРѕРІ РІРѕРґС‹ РёРјРµСЋС‚СЃСЏ Р·Р°РїРёСЃРё. РњРЅРµ СЃР»РµРґСѓРµС‚ РЅР°Р№С‚Рё РІСЂРµРјСЏ Рё РєР°Рє СЃР»РµРґСѓРµС‚ РёС… РїСЂРѕСЃРјРѕС‚СЂРµС‚СЊ.");
 	
 };
 
 /*------------------------------------------------------------------------
-//	TIMESUP- Xardas ist die Schlьsselperson, Saturas ist nicht mehr wichtig									
+//	TIMESUP- Xardas ist die SchlСЊsselperson, Saturas ist nicht mehr wichtig									
 ------------------------------------------------------------------------*/
 instance KDW_600_Saturas_TIMESUP (C_INFO)
 {
@@ -1436,37 +1436,37 @@ FUNC int  KDW_600_Saturas_TIMESUP_Condition()
 };
 func void  KDW_600_Saturas_TIMESUP_Info()
 {
-	AI_Output			(self, other,"KDW_600_Saturas_TIMESUP_Info_14_00"); //Ты говорил с Ксардасом?
+	AI_Output			(self, other,"KDW_600_Saturas_TIMESUP_Info_14_00"); //РўС‹ РіРѕРІРѕСЂРёР» СЃ РљСЃР°СЂРґР°СЃРѕРј?
 	Info_ClearChoices	(KDW_600_Saturas_TIMESUP);
-	Info_AddChoice		(KDW_600_Saturas_TIMESUP,"Ну...",KDW_600_Saturas_TIMESUP_JA1);
-	Info_AddChoice		(KDW_600_Saturas_TIMESUP,"Нет...",KDW_600_Saturas_TIMESUP_JA2);
-	Info_AddChoice		(KDW_600_Saturas_TIMESUP,"Все не так, как ты думаешь...",KDW_600_Saturas_TIMESUP_JA3);
+	Info_AddChoice		(KDW_600_Saturas_TIMESUP,"РќСѓ...",KDW_600_Saturas_TIMESUP_JA1);
+	Info_AddChoice		(KDW_600_Saturas_TIMESUP,"РќРµС‚...",KDW_600_Saturas_TIMESUP_JA2);
+	Info_AddChoice		(KDW_600_Saturas_TIMESUP,"Р’СЃРµ РЅРµ С‚Р°Рє, РєР°Рє С‚С‹ РґСѓРјР°РµС€СЊ...",KDW_600_Saturas_TIMESUP_JA3);
 
 };
 func void KDW_600_Saturas_TIMESUP_JA1()
 {
-	AI_Output			(other, self,"KDW_600_Saturas_TIMESUP_Info_15_01"); //Ну...
-	AI_Output			(self, other,"KDW_600_Saturas_TIMESUP_Info_14_02"); //Ну?.. Ну - что?
-	//AI_Output			(other, self,"KDW_600_Saturas_TIMESUP_Info_15_03"); //Дh ... noch nicht ... ich bin aber schon unterwegs ...
-	//AI_Output			(self, other,"KDW_600_Saturas_TIMESUP_Info_14_04"); //Beeile dich, wir dьrfen keine Zeit mehr verlieren!
+	AI_Output			(other, self,"KDW_600_Saturas_TIMESUP_Info_15_01"); //РќСѓ...
+	AI_Output			(self, other,"KDW_600_Saturas_TIMESUP_Info_14_02"); //РќСѓ?.. РќСѓ - С‡С‚Рѕ?
+	//AI_Output			(other, self,"KDW_600_Saturas_TIMESUP_Info_15_03"); //Р”h ... noch nicht ... ich bin aber schon unterwegs ...
+	//AI_Output			(self, other,"KDW_600_Saturas_TIMESUP_Info_14_04"); //Beeile dich, wir dСЊrfen keine Zeit mehr verlieren!
 	//B_Story_CancelFindXardas();
 	//AI_StopProcessInfos(self);
 };
 func void KDW_600_Saturas_TIMESUP_JA2()
 {
-	AI_Output			(other, self,"KDW_600_Saturas_TIMESUP_Info_15_05"); //Нет...
-	AI_Output			(self, other,"KDW_600_Saturas_TIMESUP_Info_14_06"); //Почему?
-	AI_Output			(other, self,"KDW_600_Saturas_TIMESUP_Info_15_07"); //Я еще не добрался до башни...
-	AI_Output			(self, other,"KDW_600_Saturas_TIMESUP_Info_14_08"); //Ты должен найти его и спросить у него совета!
+	AI_Output			(other, self,"KDW_600_Saturas_TIMESUP_Info_15_05"); //РќРµС‚...
+	AI_Output			(self, other,"KDW_600_Saturas_TIMESUP_Info_14_06"); //РџРѕС‡РµРјСѓ?
+	AI_Output			(other, self,"KDW_600_Saturas_TIMESUP_Info_15_07"); //РЇ РµС‰Рµ РЅРµ РґРѕР±СЂР°Р»СЃСЏ РґРѕ Р±Р°С€РЅРё...
+	AI_Output			(self, other,"KDW_600_Saturas_TIMESUP_Info_14_08"); //РўС‹ РґРѕР»Р¶РµРЅ РЅР°Р№С‚Рё РµРіРѕ Рё СЃРїСЂРѕСЃРёС‚СЊ Сѓ РЅРµРіРѕ СЃРѕРІРµС‚Р°!
 	B_Story_CancelFindXardas();
 	AI_StopProcessInfos	(self);
 };
 func void KDW_600_Saturas_TIMESUP_JA3()
 {
-	AI_Output			(other, self,"KDW_600_Saturas_TIMESUP_Info_15_09"); //Все не так, как ты думаешь...
-	AI_Output			(self, other,"KDW_600_Saturas_TIMESUP_Info_14_10"); //О чем это ты? Он должен знать, как взорвать железную гору!
-	AI_Output			(other, self,"KDW_600_Saturas_TIMESUP_Info_15_11"); //Железная гора... ох... ух-м... Она уже очень высокая!
-	AI_Output			(self, other,"KDW_600_Saturas_TIMESUP_Info_14_12"); //Найди Ксардаса, нам нужна его помощь!
+	AI_Output			(other, self,"KDW_600_Saturas_TIMESUP_Info_15_09"); //Р’СЃРµ РЅРµ С‚Р°Рє, РєР°Рє С‚С‹ РґСѓРјР°РµС€СЊ...
+	AI_Output			(self, other,"KDW_600_Saturas_TIMESUP_Info_14_10"); //Рћ С‡РµРј СЌС‚Рѕ С‚С‹? РћРЅ РґРѕР»Р¶РµРЅ Р·РЅР°С‚СЊ, РєР°Рє РІР·РѕСЂРІР°С‚СЊ Р¶РµР»РµР·РЅСѓСЋ РіРѕСЂСѓ!
+	AI_Output			(other, self,"KDW_600_Saturas_TIMESUP_Info_15_11"); //Р–РµР»РµР·РЅР°СЏ РіРѕСЂР°... РѕС…... СѓС…-Рј... РћРЅР° СѓР¶Рµ РѕС‡РµРЅСЊ РІС‹СЃРѕРєР°СЏ!
+	AI_Output			(self, other,"KDW_600_Saturas_TIMESUP_Info_14_12"); //РќР°Р№РґРё РљСЃР°СЂРґР°СЃР°, РЅР°Рј РЅСѓР¶РЅР° РµРіРѕ РїРѕРјРѕС‰СЊ!
 	B_Story_CancelFindXardas();
 	AI_StopProcessInfos	(self);
 };
@@ -1491,7 +1491,7 @@ instance KDW_600_Saturas_HogeAUFNAHME (C_INFO)
 	condition		= KDW_600_Saturas_HogeAUFNAHME_Condition;
 	information		= KDW_600_Saturas_HogeAUFNAHME_Info;
 	permanent		= 0;
-	description		= "Нефариус сказал, что я готов носить облачение Мага Воды."; 
+	description		= "РќРµС„Р°СЂРёСѓСЃ СЃРєР°Р·Р°Р», С‡С‚Рѕ СЏ РіРѕС‚РѕРІ РЅРѕСЃРёС‚СЊ РѕР±Р»Р°С‡РµРЅРёРµ РњР°РіР° Р’РѕРґС‹."; 
 };
 
 FUNC int  KDW_600_Saturas_HogeAUFNAHME_Condition()
@@ -1504,13 +1504,13 @@ FUNC int  KDW_600_Saturas_HogeAUFNAHME_Condition()
 
 func void  KDW_600_Saturas_HogeAUFNAHME_Info()
 {
-	AI_Output(other, self,"KDW_600_Saturas_HogeAUFNAHME_15_00"); //Нефариус сказал, что я готов носить облачение Мага Воды.
+	AI_Output(other, self,"KDW_600_Saturas_HogeAUFNAHME_15_00"); //РќРµС„Р°СЂРёСѓСЃ СЃРєР°Р·Р°Р», С‡С‚Рѕ СЏ РіРѕС‚РѕРІ РЅРѕСЃРёС‚СЊ РѕР±Р»Р°С‡РµРЅРёРµ РњР°РіР° Р’РѕРґС‹.
 	
 	/* AB HIER IST ALLES DOPPELT - geklaut aus der KdF-KdW-Aufnahme */
 	
-	AI_Output(self, other,"KDW_600_Saturas_NOMOREOC_Info_14_03"); //Тогда добро пожаловать к нам!
-	AI_Output(other, self,"KDW_600_Saturas_OATH_Info_15_01"); //Означает ли это, что теперь я принадлежу к гильдии магов Воды?
-	AI_Output(self, other,"KDW_600_Saturas_OATH_Info_14_02"); //Пока еще нет. Прежде ты должен принести клятву Воде.
+	AI_Output(self, other,"KDW_600_Saturas_NOMOREOC_Info_14_03"); //РўРѕРіРґР° РґРѕР±СЂРѕ РїРѕР¶Р°Р»РѕРІР°С‚СЊ Рє РЅР°Рј!
+	AI_Output(other, self,"KDW_600_Saturas_OATH_Info_15_01"); //РћР·РЅР°С‡Р°РµС‚ Р»Рё СЌС‚Рѕ, С‡С‚Рѕ С‚РµРїРµСЂСЊ СЏ РїСЂРёРЅР°РґР»РµР¶Сѓ Рє РіРёР»СЊРґРёРё РјР°РіРѕРІ Р’РѕРґС‹?
+	AI_Output(self, other,"KDW_600_Saturas_OATH_Info_14_02"); //РџРѕРєР° РµС‰Рµ РЅРµС‚. РџСЂРµР¶РґРµ С‚С‹ РґРѕР»Р¶РµРЅ РїСЂРёРЅРµСЃС‚Рё РєР»СЏС‚РІСѓ Р’РѕРґРµ.
 };
 	
 // ****************************************
@@ -1523,7 +1523,7 @@ instance KDW_600_Saturas_HogeAUFNAHMETeil2 (C_INFO)
 	condition		= KDW_600_Saturas_HogeAUFNAHMETeil2_Condition;
 	information		= KDW_600_Saturas_HogeAUFNAHMETeil2_Info;
 	permanent		= 0;
-	description		= "Я готов принести клятву."; 
+	description		= "РЇ РіРѕС‚РѕРІ РїСЂРёРЅРµСЃС‚Рё РєР»СЏС‚РІСѓ."; 
 };
 
 FUNC int  KDW_600_Saturas_HogeAUFNAHMETeil2_Condition()
@@ -1537,18 +1537,18 @@ FUNC int  KDW_600_Saturas_HogeAUFNAHMETeil2_Condition()
 func void  KDW_600_Saturas_HogeAUFNAHMETeil2_Info()
 {
 	AI_GotoNpc 			(hero,self);
-	AI_Output			(other, self,"KDW_600_Saturas_KDWAUFNAHME_Info_15_01"); //Я готов принести клятву.
-	AI_Output			(self, other,"KDW_600_Saturas_KDWAUFNAHME_Info_14_03"); //Повторяй за мной слова клятвы:
-	AI_Output			(self, other,"KDW_600_Saturas_KDWAUFNAHME_Info_14_04"); //Мощью богов я клянусь...
-	AI_Output			(other, self,"KDW_600_Saturas_KDWAUFNAHME_Info_15_05"); //Мощью богов я клянусь...
-	AI_Output			(self, other,"KDW_600_Saturas_KDWAUFNAHME_Info_14_06"); //... и силой священной Воды...
-	AI_Output			(other, self,"KDW_600_Saturas_KDWAUFNAHME_Info_15_07"); //... и силой священной Воды...
-	AI_Output			(self, other,"KDW_600_Saturas_KDWAUFNAHME_Info_14_08"); //... что знания мои и поступки мои с этого дня и вовеки веков будут едины с Водой...
-	AI_Output			(other, self,"KDW_600_Saturas_KDWAUFNAHME_Info_15_09"); //... что знания мои и поступки мои с этого дня и вовеки веков будут едины с Водой...
-	AI_Output			(self, other,"KDW_600_Saturas_KDWAUFNAHME_Info_14_10"); //... до тех пор, пока тело мое не вернется в чертоги Бельджара и не иссякнет источник моей жизни.
-	AI_Output			(other, self,"KDW_600_Saturas_KDWAUFNAHME_Info_15_11"); //... до тех пор пока тело мое не вернется в чертоги Бельджара и не иссякнет источник моей жизни.
+	AI_Output			(other, self,"KDW_600_Saturas_KDWAUFNAHME_Info_15_01"); //РЇ РіРѕС‚РѕРІ РїСЂРёРЅРµСЃС‚Рё РєР»СЏС‚РІСѓ.
+	AI_Output			(self, other,"KDW_600_Saturas_KDWAUFNAHME_Info_14_03"); //РџРѕРІС‚РѕСЂСЏР№ Р·Р° РјРЅРѕР№ СЃР»РѕРІР° РєР»СЏС‚РІС‹:
+	AI_Output			(self, other,"KDW_600_Saturas_KDWAUFNAHME_Info_14_04"); //РњРѕС‰СЊСЋ Р±РѕРіРѕРІ СЏ РєР»СЏРЅСѓСЃСЊ...
+	AI_Output			(other, self,"KDW_600_Saturas_KDWAUFNAHME_Info_15_05"); //РњРѕС‰СЊСЋ Р±РѕРіРѕРІ СЏ РєР»СЏРЅСѓСЃСЊ...
+	AI_Output			(self, other,"KDW_600_Saturas_KDWAUFNAHME_Info_14_06"); //... Рё СЃРёР»РѕР№ СЃРІСЏС‰РµРЅРЅРѕР№ Р’РѕРґС‹...
+	AI_Output			(other, self,"KDW_600_Saturas_KDWAUFNAHME_Info_15_07"); //... Рё СЃРёР»РѕР№ СЃРІСЏС‰РµРЅРЅРѕР№ Р’РѕРґС‹...
+	AI_Output			(self, other,"KDW_600_Saturas_KDWAUFNAHME_Info_14_08"); //... С‡С‚Рѕ Р·РЅР°РЅРёСЏ РјРѕРё Рё РїРѕСЃС‚СѓРїРєРё РјРѕРё СЃ СЌС‚РѕРіРѕ РґРЅСЏ Рё РІРѕРІРµРєРё РІРµРєРѕРІ Р±СѓРґСѓС‚ РµРґРёРЅС‹ СЃ Р’РѕРґРѕР№...
+	AI_Output			(other, self,"KDW_600_Saturas_KDWAUFNAHME_Info_15_09"); //... С‡С‚Рѕ Р·РЅР°РЅРёСЏ РјРѕРё Рё РїРѕСЃС‚СѓРїРєРё РјРѕРё СЃ СЌС‚РѕРіРѕ РґРЅСЏ Рё РІРѕРІРµРєРё РІРµРєРѕРІ Р±СѓРґСѓС‚ РµРґРёРЅС‹ СЃ Р’РѕРґРѕР№...
+	AI_Output			(self, other,"KDW_600_Saturas_KDWAUFNAHME_Info_14_10"); //... РґРѕ С‚РµС… РїРѕСЂ, РїРѕРєР° С‚РµР»Рѕ РјРѕРµ РЅРµ РІРµСЂРЅРµС‚СЃСЏ РІ С‡РµСЂС‚РѕРіРё Р‘РµР»СЊРґР¶Р°СЂР° Рё РЅРµ РёСЃСЃСЏРєРЅРµС‚ РёСЃС‚РѕС‡РЅРёРє РјРѕРµР№ Р¶РёР·РЅРё.
+	AI_Output			(other, self,"KDW_600_Saturas_KDWAUFNAHME_Info_15_11"); //... РґРѕ С‚РµС… РїРѕСЂ РїРѕРєР° С‚РµР»Рѕ РјРѕРµ РЅРµ РІРµСЂРЅРµС‚СЃСЏ РІ С‡РµСЂС‚РѕРіРё Р‘РµР»СЊРґР¶Р°СЂР° Рё РЅРµ РёСЃСЃСЏРєРЅРµС‚ РёСЃС‚РѕС‡РЅРёРє РјРѕРµР№ Р¶РёР·РЅРё.
 	
-	AI_Output			(self, other,"KDW_600_Saturas_KDWAUFNAHME_Info_14_14"); //Носи это облачение в знак связи со священной Водой и Аданосом.
+	AI_Output			(self, other,"KDW_600_Saturas_KDWAUFNAHME_Info_14_14"); //РќРѕСЃРё СЌС‚Рѕ РѕР±Р»Р°С‡РµРЅРёРµ РІ Р·РЅР°Рє СЃРІСЏР·Рё СЃРѕ СЃРІСЏС‰РµРЅРЅРѕР№ Р’РѕРґРѕР№ Рё РђРґР°РЅРѕСЃРѕРј.
 
 	CreateInvItem		(self,KDW_ARMOR_L);
 	B_GiveInvItems		(self,other,KDW_ARMOR_L,1);
@@ -1558,7 +1558,7 @@ func void  KDW_600_Saturas_HogeAUFNAHMETeil2_Info()
 	hero.guild = GIL_KDW;
 
 	Log_CreateTopic		(CH4_SldToKdW,	LOG_NOTE);
-	B_LogEntry			(CH4_SldToKdW,"Сатурас принял меня в круг магов воды.");
+	B_LogEntry			(CH4_SldToKdW,"РЎР°С‚СѓСЂР°СЃ РїСЂРёРЅСЏР» РјРµРЅСЏ РІ РєСЂСѓРі РјР°РіРѕРІ РІРѕРґС‹.");
 
 	AI_StopProcessInfos	(self);
 };

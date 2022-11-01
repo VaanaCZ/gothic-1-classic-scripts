@@ -33,7 +33,7 @@ INSTANCE DIA_Grd_217_First (C_INFO)
 	condition		= DIA_Grd_217_First_Condition;
 	information		= DIA_Grd_217_First_Info;
 	permanent		= 1;
-	description		= "Привет!";
+	description		= "РџСЂРёРІРµС‚!";
 };
 
 FUNC INT DIA_Grd_217_First_Condition()
@@ -43,7 +43,7 @@ FUNC INT DIA_Grd_217_First_Condition()
 
 FUNC VOID DIA_Grd_217_First_Info()
 {
-	AI_Output (other, self,"DIA_Grd_217_First_15_00"); //Привет!
-	AI_Output (self, other,"DIA_Grd_217_First_06_01"); //Шевели задницей! Заходи или проваливай - мне все равно. Просто убирайся с моих глаз.
+	AI_Output (other, self,"DIA_Grd_217_First_15_00"); //РџСЂРёРІРµС‚!
+	AI_Output (self, other,"DIA_Grd_217_First_06_01"); //РЁРµРІРµР»Рё Р·Р°РґРЅРёС†РµР№! Р—Р°С…РѕРґРё РёР»Рё РїСЂРѕРІР°Р»РёРІР°Р№ - РјРЅРµ РІСЃРµ СЂР°РІРЅРѕ. РџСЂРѕСЃС‚Рѕ СѓР±РёСЂР°Р№СЃСЏ СЃ РјРѕРёС… РіР»Р°Р·.
 	AI_StopProcessInfos	( self );
 };

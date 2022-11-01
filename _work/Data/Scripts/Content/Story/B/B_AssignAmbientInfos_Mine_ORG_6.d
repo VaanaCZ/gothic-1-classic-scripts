@@ -14,7 +14,7 @@ INSTANCE Info_Mine_Org_6_EXIT(C_INFO)
 	condition	= Info_Mine_Org_6_EXIT_Condition;
 	information	= Info_Mine_Org_6_EXIT_Info;
 	permanent	= 1;
-	description = "ЗАКОНЧИТЬ";
+	description = "Р—РђРљРћРќР§РРўР¬";
 };                       
 
 FUNC INT Info_Mine_Org_6_EXIT_Condition()
@@ -37,7 +37,7 @@ INSTANCE Info_Mine_Org_6_Mine (C_INFO) // E1
 	condition	= Info_Mine_Org_6_Mine_Condition;
 	information	= Info_Mine_Org_6_Mine_Info;
 	permanent	= 1;
-	description = "Как дела на шахте?";
+	description = "РљР°Рє РґРµР»Р° РЅР° С€Р°С…С‚Рµ?";
 };                       
 
 FUNC INT Info_Mine_Org_6_Mine_Condition()
@@ -47,9 +47,9 @@ FUNC INT Info_Mine_Org_6_Mine_Condition()
 
 FUNC VOID Info_Mine_Org_6_Mine_Info()
 {
-	AI_Output(other,self,"Info_Mine_Org_6_Mine_15_00"); //Как дела на шахте?
-	AI_Output(self,other,"Info_Mine_Org_6_Mine_06_01"); //На шахте? Все кто был там, там и остаются. Новеньких нет, наружу тоже никто не выходил.
-	AI_Output(self,other,"Info_Mine_Org_6_Mine_06_02"); //Радуйся, что ты сейчас не внутри.
+	AI_Output(other,self,"Info_Mine_Org_6_Mine_15_00"); //РљР°Рє РґРµР»Р° РЅР° С€Р°С…С‚Рµ?
+	AI_Output(self,other,"Info_Mine_Org_6_Mine_06_01"); //РќР° С€Р°С…С‚Рµ? Р’СЃРµ РєС‚Рѕ Р±С‹Р» С‚Р°Рј, С‚Р°Рј Рё РѕСЃС‚Р°СЋС‚СЃСЏ. РќРѕРІРµРЅСЊРєРёС… РЅРµС‚, РЅР°СЂСѓР¶Сѓ С‚РѕР¶Рµ РЅРёРєС‚Рѕ РЅРµ РІС‹С…РѕРґРёР».
+	AI_Output(self,other,"Info_Mine_Org_6_Mine_06_02"); //Р Р°РґСѓР№СЃСЏ, С‡С‚Рѕ С‚С‹ СЃРµР№С‡Р°СЃ РЅРµ РІРЅСѓС‚СЂРё.
 	
 };
 
@@ -63,7 +63,7 @@ INSTANCE Info_Mine_Org_6_WichtigePersonen(C_INFO)
 	condition	= Info_Mine_Org_6_WichtigePersonen_Condition;
 	information	= Info_Mine_Org_6_WichtigePersonen_Info;
 	permanent	= 1;
-	description = "Кто здесь командует?";
+	description = "РљС‚Рѕ Р·РґРµСЃСЊ РєРѕРјР°РЅРґСѓРµС‚?";
 };                       
 
 FUNC INT Info_Mine_Org_6_WichtigePersonen_Condition()
@@ -73,10 +73,10 @@ FUNC INT Info_Mine_Org_6_WichtigePersonen_Condition()
 
 FUNC VOID Info_Mine_Org_6_WichtigePersonen_Info()
 {
-	AI_Output(other,self,"Info_Mine_Org_6_WichtigePersonen_15_00"); //Кто здесь командует?
-	AI_Output(self,other,"Info_Mine_Org_6_WichtigePersonen_06_01"); //Мной никто не командует, но нужно еще знать, как попасть на это место.
-	AI_Output(other,self,"Info_Mine_Org_6_WichtigePersonen_15_01"); //И как же сюда попасть?
-	AI_Output(self,other,"Info_Mine_Org_6_WichtigePersonen_06_02"); //А это уже секрет! Но, между нами, это не так уж сложно для вора.
+	AI_Output(other,self,"Info_Mine_Org_6_WichtigePersonen_15_00"); //РљС‚Рѕ Р·РґРµСЃСЊ РєРѕРјР°РЅРґСѓРµС‚?
+	AI_Output(self,other,"Info_Mine_Org_6_WichtigePersonen_06_01"); //РњРЅРѕР№ РЅРёРєС‚Рѕ РЅРµ РєРѕРјР°РЅРґСѓРµС‚, РЅРѕ РЅСѓР¶РЅРѕ РµС‰Рµ Р·РЅР°С‚СЊ, РєР°Рє РїРѕРїР°СЃС‚СЊ РЅР° СЌС‚Рѕ РјРµСЃС‚Рѕ.
+	AI_Output(other,self,"Info_Mine_Org_6_WichtigePersonen_15_01"); //Р РєР°Рє Р¶Рµ СЃСЋРґР° РїРѕРїР°СЃС‚СЊ?
+	AI_Output(self,other,"Info_Mine_Org_6_WichtigePersonen_06_02"); //Рђ СЌС‚Рѕ СѓР¶Рµ СЃРµРєСЂРµС‚! РќРѕ, РјРµР¶РґСѓ РЅР°РјРё, СЌС‚Рѕ РЅРµ С‚Р°Рє СѓР¶ СЃР»РѕР¶РЅРѕ РґР»СЏ РІРѕСЂР°.
 };
 
 
@@ -90,7 +90,7 @@ INSTANCE Info_Mine_Org_6_DieLage(C_INFO) // E1
 	condition	= Info_Mine_Org_6_DieLage_Condition;
 	information	= Info_Mine_Org_6_DieLage_Info;
 	permanent	= 1;
-	description = "Похоже, ты не перегружаешь себя работой.";
+	description = "РџРѕС…РѕР¶Рµ, С‚С‹ РЅРµ РїРµСЂРµРіСЂСѓР¶Р°РµС€СЊ СЃРµР±СЏ СЂР°Р±РѕС‚РѕР№.";
 };                       
 
 FUNC INT Info_Mine_Org_6_DieLage_Condition()
@@ -100,8 +100,8 @@ FUNC INT Info_Mine_Org_6_DieLage_Condition()
 
 FUNC VOID Info_Mine_Org_6_DieLage_Info()
 {
-	AI_Output(other,self,"Info_Mine_Org_6_DieLage_15_00"); //Похоже, ты не перегружаешь себя работой.
- 	AI_Output(self,other,"Info_Mine_Org_6_DieLage_06_01"); //Я - работой? Если бы я был работягой, я бы не оказался под Куполом, если ты, конечно, понимаешь, о чем я.
+	AI_Output(other,self,"Info_Mine_Org_6_DieLage_15_00"); //РџРѕС…РѕР¶Рµ, С‚С‹ РЅРµ РїРµСЂРµРіСЂСѓР¶Р°РµС€СЊ СЃРµР±СЏ СЂР°Р±РѕС‚РѕР№.
+ 	AI_Output(self,other,"Info_Mine_Org_6_DieLage_06_01"); //РЇ - СЂР°Р±РѕС‚РѕР№? Р•СЃР»Рё Р±С‹ СЏ Р±С‹Р» СЂР°Р±РѕС‚СЏРіРѕР№, СЏ Р±С‹ РЅРµ РѕРєР°Р·Р°Р»СЃСЏ РїРѕРґ РљСѓРїРѕР»РѕРј, РµСЃР»Рё С‚С‹, РєРѕРЅРµС‡РЅРѕ, РїРѕРЅРёРјР°РµС€СЊ, Рѕ С‡РµРј СЏ.
 };
 	
 // *************************************************************************

@@ -2,7 +2,7 @@ instance VLK_573_Graham (Npc_Default)
 {
 	//-------- primary data --------
 	
-	name =							"Γπευύμ";
+	name =							"Π“Ρ€ΠµΡ…ΡΠΌ";
 	npctype =						npctype_main;
 	guild =							GIL_VLK;      
 	level =							4;

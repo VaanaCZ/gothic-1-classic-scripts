@@ -7,11 +7,11 @@
 //	Uhrzeit:
 //
 //	Es passiert folgendes:
-//	1.	Nдhert sich der Spieler dem Durchgang, so wird er in diesen
+//	1.	NРґhert sich der Spieler dem Durchgang, so wird er in diesen
 //		Dialog gezwungen und einmal gewarnt
-//	2.	Nдhert sich der SC trotzdem weiter, so wird er ein ZWEITES Mal
+//	2.	NРґhert sich der SC trotzdem weiter, so wird er ein ZWEITES Mal
 //		gewarnt (aggressiver mit Waffe ziehen)
-//	3.	Nдhert er sich trotzdem wieder, wird er angegriffen
+//	3.	NРґhert er sich trotzdem wieder, wird er angegriffen
 //////////////////////////////////////////////////////////////////////////
 const string	SLD_732_CHECKPOINT		= "NC_PLACE02";
 
@@ -42,7 +42,7 @@ func void Info_SLD_732_FirstWarn_Info()
 {
 	PrintGlobals	(PD_MISSION);
 
-	AI_Output 		(self, hero,"Info_SLD_732_FirstWarn_08_01"); //СТОЙ! Прежде чем я пропущу тебя, ты должен назвать пароль!
+	AI_Output 		(self, hero,"Info_SLD_732_FirstWarn_08_01"); //РЎРўРћР™! РџСЂРµР¶РґРµ С‡РµРј СЏ РїСЂРѕРїСѓС‰Сѓ С‚РµР±СЏ, С‚С‹ РґРѕР»Р¶РµРЅ РЅР°Р·РІР°С‚СЊ РїР°СЂРѕР»СЊ!
 
 	hero.aivar[AIV_LASTDISTTOWP] 		= Npc_GetDistToWP(hero,SLD_732_CHECKPOINT);
 	hero.aivar[AIV_GUARDPASSAGE_STATUS]	= AIV_GPS_FIRSTWARN;	
@@ -50,11 +50,11 @@ func void Info_SLD_732_FirstWarn_Info()
 	if (Npc_KnowsInfo(hero, Info_Cronos_SLEEPER))
 	{
 		Info_Clearchoices 	(Info_SLD_732_FirstWarn);
-		Info_Addchoice 		(Info_SLD_732_FirstWarn,"Я здесь с разрешения Кроноса!",	Info_SLD_732_Parole_CRONOS);  
-		Info_Addchoice 		(Info_SLD_732_FirstWarn,"Черт, я забыл его!",	Info_SLD_732_Parole_FORGOT);  
-		Info_Addchoice 		(Info_SLD_732_FirstWarn,"Пароль: 'ТЕРИАНТРОХ'.",	Info_SLD_732_Parole_FALSE2);  
-		Info_Addchoice 		(Info_SLD_732_FirstWarn,"Пароль: 'ТЕТРИАНДОХ'.",	Info_SLD_732_Parole_TRUE);  
-		Info_Addchoice 		(Info_SLD_732_FirstWarn,"Пароль: 'ТЕТРИДАНОХ'.",	Info_SLD_732_Parole_FALSE1);  
+		Info_Addchoice 		(Info_SLD_732_FirstWarn,"РЇ Р·РґРµСЃСЊ СЃ СЂР°Р·СЂРµС€РµРЅРёСЏ РљСЂРѕРЅРѕСЃР°!",	Info_SLD_732_Parole_CRONOS);  
+		Info_Addchoice 		(Info_SLD_732_FirstWarn,"Р§РµСЂС‚, СЏ Р·Р°Р±С‹Р» РµРіРѕ!",	Info_SLD_732_Parole_FORGOT);  
+		Info_Addchoice 		(Info_SLD_732_FirstWarn,"РџР°СЂРѕР»СЊ: 'РўР•Р РРђРќРўР РћРҐ'.",	Info_SLD_732_Parole_FALSE2);  
+		Info_Addchoice 		(Info_SLD_732_FirstWarn,"РџР°СЂРѕР»СЊ: 'РўР•РўР РРђРќР”РћРҐ'.",	Info_SLD_732_Parole_TRUE);  
+		Info_Addchoice 		(Info_SLD_732_FirstWarn,"РџР°СЂРѕР»СЊ: 'РўР•РўР РР”РђРќРћРҐ'.",	Info_SLD_732_Parole_FALSE1);  
 	}
 	else
 	{
@@ -64,36 +64,36 @@ func void Info_SLD_732_FirstWarn_Info()
 
 func void Info_SLD_732_Parole_CRONOS ()
 {
-	AI_Output 			(hero, self,"Info_SLD_732_Parole_CRONOS_15_01"); //Я здесь с разрешения Кроноса!
-	AI_Output 			(self, hero,"Info_SLD_732_Parole_CRONOS_08_02"); //Если бы это было так, то он назвал бы тебе пароль. Убирайся отсюда, лжец!
+	AI_Output 			(hero, self,"Info_SLD_732_Parole_CRONOS_15_01"); //РЇ Р·РґРµСЃСЊ СЃ СЂР°Р·СЂРµС€РµРЅРёСЏ РљСЂРѕРЅРѕСЃР°!
+	AI_Output 			(self, hero,"Info_SLD_732_Parole_CRONOS_08_02"); //Р•СЃР»Рё Р±С‹ СЌС‚Рѕ Р±С‹Р»Рѕ С‚Р°Рє, С‚Рѕ РѕРЅ РЅР°Р·РІР°Р» Р±С‹ С‚РµР±Рµ РїР°СЂРѕР»СЊ. РЈР±РёСЂР°Р№СЃСЏ РѕС‚СЃСЋРґР°, Р»Р¶РµС†!
 	AI_StopProcessInfos	(self);
 };
 
 func void Info_SLD_732_Parole_FORGOT ()
 {
-	AI_Output 			(hero, self,"Info_SLD_732_Parole_FORGOT_15_01"); //Черт, я забыл его!
-	AI_Output 			(self, hero,"Info_SLD_732_Parole_FORGOT_08_02"); //Возвращайся, когда вспомнишь, и не трать попусту мое время!
+	AI_Output 			(hero, self,"Info_SLD_732_Parole_FORGOT_15_01"); //Р§РµСЂС‚, СЏ Р·Р°Р±С‹Р» РµРіРѕ!
+	AI_Output 			(self, hero,"Info_SLD_732_Parole_FORGOT_08_02"); //Р’РѕР·РІСЂР°С‰Р°Р№СЃСЏ, РєРѕРіРґР° РІСЃРїРѕРјРЅРёС€СЊ, Рё РЅРµ С‚СЂР°С‚СЊ РїРѕРїСѓСЃС‚Сѓ РјРѕРµ РІСЂРµРјСЏ!
 	AI_StopProcessInfos	(self);
 };
 
 func void Info_SLD_732_Parole_FALSE1 ()
 {
-	AI_Output 			(hero, self,"Info_SLD_732_Parole_FALSE1_15_01"); //Пароль: 'ТЕТРИДАНОХ'.
-	AI_Output 			(self, hero,"Info_SLD_732_Parole_FALSE1_08_02"); //НЕВЕРНО!
+	AI_Output 			(hero, self,"Info_SLD_732_Parole_FALSE1_15_01"); //РџР°СЂРѕР»СЊ: 'РўР•РўР РР”РђРќРћРҐ'.
+	AI_Output 			(self, hero,"Info_SLD_732_Parole_FALSE1_08_02"); //РќР•Р’Р•Р РќРћ!
 	AI_StopProcessInfos	(self);
 };
 
 func void Info_SLD_732_Parole_FALSE2 ()
 {
-	AI_Output 			(hero, self,"Info_SLD_732_Parole_FALSE2_15_01"); //Пароль: 'ТЕРИАНТРОХ'.
-	AI_Output 			(self, hero,"Info_SLD_732_Parole_FALSE2_08_02"); //НЕВЕРНО!
+	AI_Output 			(hero, self,"Info_SLD_732_Parole_FALSE2_15_01"); //РџР°СЂРѕР»СЊ: 'РўР•Р РРђРќРўР РћРҐ'.
+	AI_Output 			(self, hero,"Info_SLD_732_Parole_FALSE2_08_02"); //РќР•Р’Р•Р РќРћ!
 	AI_StopProcessInfos	(self);
 };
 
 func void Info_SLD_732_Parole_TRUE ()
 {
-	AI_Output 			(hero, self,"Info_SLD_732_Parole_TRUE_15_01"); //Пароль: 'ТЕТРИАНДОХ'.
-	AI_Output 			(self, hero,"Info_SLD_732_Parole_TRUE_08_02"); //Верно. Ты можешь пройти.
+	AI_Output 			(hero, self,"Info_SLD_732_Parole_TRUE_15_01"); //РџР°СЂРѕР»СЊ: 'РўР•РўР РРђРќР”РћРҐ'.
+	AI_Output 			(self, hero,"Info_SLD_732_Parole_TRUE_08_02"); //Р’РµСЂРЅРѕ. РўС‹ РјРѕР¶РµС€СЊ РїСЂРѕР№С‚Рё.
 	AI_StopProcessInfos	(self);
 
 	//---- beide Wachen auf passieren schalten ----
@@ -132,7 +132,7 @@ func int Info_SLD_732_LastWarn_Condition()
 
 func int Info_SLD_732_LastWarn_Info()
 {
-	AI_Output 		(self, hero,"Info_SLD_732_LastWarn_08_01"); 		//НИ ШАГУ ДАЛЬШЕ! Повторять не буду!
+	AI_Output 		(self, hero,"Info_SLD_732_LastWarn_08_01"); 		//РќР РЁРђР“РЈ Р”РђР›Р¬РЁР•! РџРѕРІС‚РѕСЂСЏС‚СЊ РЅРµ Р±СѓРґСѓ!
 
 	hero.aivar[AIV_LASTDISTTOWP] 		= Npc_GetDistToWP(hero,SLD_732_CHECKPOINT);
 	hero.aivar[AIV_GUARDPASSAGE_STATUS]	= AIV_GPS_LASTWARN;
@@ -171,7 +171,7 @@ func int Info_SLD_732_Attack_Info()
 	hero.aivar[AIV_GUARDPASSAGE_STATUS]	= AIV_GPS_PUNISH;	
 	
 	B_FullStop			(self);	
-	AI_StopProcessInfos	(self);					// dem Spieler sofort wieder die Kontrolle zurьckgeben
+	AI_StopProcessInfos	(self);					// dem Spieler sofort wieder die Kontrolle zurСЊckgeben
 	B_IntruderAlert		(self,	other);
 	B_SetAttackReason	(self,	AIV_AR_INTRUDER);
 	Npc_SetTarget		(self,	hero);
@@ -189,7 +189,7 @@ instance Info_SLD_732_PAROLE (C_INFO)
 	information	= Info_SLD_732_PAROLE_Info;
 	permanent	= 1;
 	important	= 0;
-	description	= "(назвать пароль)";
+	description	= "(РЅР°Р·РІР°С‚СЊ РїР°СЂРѕР»СЊ)";
 };                       
 
 func int Info_SLD_732_PAROLE_Condition()
@@ -204,9 +204,9 @@ func int Info_SLD_732_PAROLE_Condition()
 func int Info_SLD_732_PAROLE_Info()
 {
 	Info_ClearChoices 	(Info_SLD_732_PAROLE);
-	Info_AddChoice 		(Info_SLD_732_PAROLE,"Я здесь с разрешения Кроноса!",	Info_SLD_732_Parole_CRONOS);  
-	Info_AddChoice 		(Info_SLD_732_PAROLE,"Черт, я забыл его!",	Info_SLD_732_Parole_FORGOT);  
-	Info_AddChoice 		(Info_SLD_732_PAROLE,"Пароль: 'ТЕРИАНТРОХ'.",	Info_SLD_732_Parole_FALSE2);  
-	Info_AddChoice 		(Info_SLD_732_PAROLE,"Пароль: 'ТЕТРИАНДОХ'.",	Info_SLD_732_Parole_TRUE);  
-	Info_AddChoice 		(Info_SLD_732_PAROLE,"Пароль: 'ТЕТРИДАНОХ'.",	Info_SLD_732_Parole_FALSE1);  
+	Info_AddChoice 		(Info_SLD_732_PAROLE,"РЇ Р·РґРµСЃСЊ СЃ СЂР°Р·СЂРµС€РµРЅРёСЏ РљСЂРѕРЅРѕСЃР°!",	Info_SLD_732_Parole_CRONOS);  
+	Info_AddChoice 		(Info_SLD_732_PAROLE,"Р§РµСЂС‚, СЏ Р·Р°Р±С‹Р» РµРіРѕ!",	Info_SLD_732_Parole_FORGOT);  
+	Info_AddChoice 		(Info_SLD_732_PAROLE,"РџР°СЂРѕР»СЊ: 'РўР•Р РРђРќРўР РћРҐ'.",	Info_SLD_732_Parole_FALSE2);  
+	Info_AddChoice 		(Info_SLD_732_PAROLE,"РџР°СЂРѕР»СЊ: 'РўР•РўР РРђРќР”РћРҐ'.",	Info_SLD_732_Parole_TRUE);  
+	Info_AddChoice 		(Info_SLD_732_PAROLE,"РџР°СЂРѕР»СЊ: 'РўР•РўР РР”РђРќРћРҐ'.",	Info_SLD_732_Parole_FALSE1);  
 };

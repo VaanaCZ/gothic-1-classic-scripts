@@ -25,72 +25,72 @@ func int B_GiveSkill(var C_NPC typ, var int TAL, var int NEW_Wert, var int LP_Co
 			{	
 				Npc_SetTalentSkill(typ, NPC_TALENT_1H, NEW_Wert);
 				Npc_SetTalentValue(typ, NPC_TALENT_1H, Npc_GetTalentValue(typ, NPC_TALENT_1H)+5);
-				PrintScreen	("Обучен владению одноручным оружием", -1,-1,"FONT_OLD_10_WHITE.TGA",2);
+				PrintScreen	("РћР±СѓС‡РµРЅ РІР»Р°РґРµРЅРёСЋ РѕРґРЅРѕСЂСѓС‡РЅС‹Рј РѕСЂСѓР¶РёРµРј", -1,-1,"FONT_OLD_10_WHITE.TGA",2);
 				return 1;
 			}
 			else if (tal == NPC_TALENT_2H)
 			{
 				Npc_SetTalentSkill(typ, NPC_TALENT_2H, NEW_Wert);
 				Npc_SetTalentValue(typ, NPC_TALENT_2H, Npc_GetTalentValue(typ, NPC_TALENT_2H)+5);
-				PrintScreen	("Обучен владению двуручным оружием", -1,-1,"FONT_OLD_10_WHITE.TGA",2);
+				PrintScreen	("РћР±СѓС‡РµРЅ РІР»Р°РґРµРЅРёСЋ РґРІСѓСЂСѓС‡РЅС‹Рј РѕСЂСѓР¶РёРµРј", -1,-1,"FONT_OLD_10_WHITE.TGA",2);
 				return 1;
 			}
 			else if (tal == NPC_TALENT_BOW)
 			{
 				Npc_SetTalentSkill(typ, NPC_TALENT_BOW, NEW_Wert);
 				Npc_SetTalentValue(typ, NPC_TALENT_BOW, Npc_GetTalentValue(typ, NPC_TALENT_BOW)+15);
-				PrintScreen	("Обучен стрельбе из лука", -1,-1,"FONT_OLD_10_WHITE.TGA",2);
+				PrintScreen	("РћР±СѓС‡РµРЅ СЃС‚СЂРµР»СЊР±Рµ РёР· Р»СѓРєР°", -1,-1,"FONT_OLD_10_WHITE.TGA",2);
 				return 1;
 			}
 			else if (tal == NPC_TALENT_CROSSBOW)
 			{
 				Npc_SetTalentSkill(typ, NPC_TALENT_CROSSBOW, NEW_Wert);
 				Npc_SetTalentValue(typ, NPC_TALENT_CROSSBOW, Npc_GetTalentValue(typ, NPC_TALENT_CROSSBOW)+20);
-				PrintScreen	("Обучен стрельбе из арбалета", -1,-1,"FONT_OLD_10_WHITE.TGA",2);
+				PrintScreen	("РћР±СѓС‡РµРЅ СЃС‚СЂРµР»СЊР±Рµ РёР· Р°СЂР±Р°Р»РµС‚Р°", -1,-1,"FONT_OLD_10_WHITE.TGA",2);
 				return 1;
 			}
 			else if (tal == NPC_TALENT_PICKLOCK)
 			{
 				Npc_SetTalentSkill(typ, NPC_TALENT_PICKLOCK, NEW_Wert);
 				Npc_SetTalentValue(typ, NPC_TALENT_PICKLOCK, Npc_GetTalentValue(typ, NPC_TALENT_PICKLOCK)-40);
-				PrintScreen	("Обучен открыванию замков", -1,-1,"FONT_OLD_10_WHITE.TGA",2);
+				PrintScreen	("РћР±СѓС‡РµРЅ РѕС‚РєСЂС‹РІР°РЅРёСЋ Р·Р°РјРєРѕРІ", -1,-1,"FONT_OLD_10_WHITE.TGA",2);
 				return 1;
 			}
 			else if (tal == NPC_TALENT_PICKPOCKET)
 			{
 				Npc_SetTalentSkill(typ, NPC_TALENT_PICKPOCKET, NEW_Wert);
 				Npc_SetTalentValue(typ, NPC_TALENT_PICKPOCKET, Npc_GetTalentValue(typ, NPC_TALENT_PICKPOCKET)-40);
-				PrintScreen	("Обучен карманной краже", -1,-1,"FONT_OLD_10_WHITE.TGA",2);
+				PrintScreen	("РћР±СѓС‡РµРЅ РєР°СЂРјР°РЅРЅРѕР№ РєСЂР°Р¶Рµ", -1,-1,"FONT_OLD_10_WHITE.TGA",2);
 				return 1;
 			}
 			else if (tal == NPC_TALENT_MAGE)
 			{
 				Npc_SetTalentSkill(typ, NPC_TALENT_MAGE, NEW_Wert);
-				PrintScreen	("Обучен следующему кругу магии", -1,-1,"FONT_OLD_10_WHITE.TGA",2);
+				PrintScreen	("РћР±СѓС‡РµРЅ СЃР»РµРґСѓСЋС‰РµРјСѓ РєСЂСѓРіСѓ РјР°РіРёРё", -1,-1,"FONT_OLD_10_WHITE.TGA",2);
 				return 1;
 			}
 			else if (tal == NPC_TALENT_SNEAK)
 			{
 				Npc_SetTalentSkill(typ, NPC_TALENT_SNEAK, NEW_Wert);
-				PrintScreen	("Обучен подкрадыванию", -1,-1,"FONT_OLD_10_WHITE.TGA",2);
+				PrintScreen	("РћР±СѓС‡РµРЅ РїРѕРґРєСЂР°РґС‹РІР°РЅРёСЋ", -1,-1,"FONT_OLD_10_WHITE.TGA",2);
 				return 1;
 			}
 			else if (tal == NPC_TALENT_REGENERATE)
 			{
 				Npc_SetTalentSkill(typ, NPC_TALENT_REGENERATE, NEW_Wert);
-				PrintScreen	("Увеличить уровень восстановления сил", -1,-1,"FONT_OLD_10_WHITE.TGA",2);
+				PrintScreen	("РЈРІРµР»РёС‡РёС‚СЊ СѓСЂРѕРІРµРЅСЊ РІРѕСЃСЃС‚Р°РЅРѕРІР»РµРЅРёСЏ СЃРёР»", -1,-1,"FONT_OLD_10_WHITE.TGA",2);
 				return 1;
 			}
 			else if (tal == NPC_TALENT_FIREMASTER)
 			{
 				Npc_SetTalentSkill(typ, NPC_TALENT_FIREMASTER, NEW_Wert);
-				PrintScreen	("Обучен искусству Повелителя Огня", -1,-1,"FONT_OLD_10_WHITE.TGA",2);
+				PrintScreen	("РћР±СѓС‡РµРЅ РёСЃРєСѓСЃСЃС‚РІСѓ РџРѕРІРµР»РёС‚РµР»СЏ РћРіРЅСЏ", -1,-1,"FONT_OLD_10_WHITE.TGA",2);
 				return 1;
 			}
 			else if (tal == NPC_TALENT_ACROBAT)
 			{
 				Npc_SetTalentSkill(typ, NPC_TALENT_ACROBAT, NEW_Wert);
-				PrintScreen	("Обучен акробатике", -1,-1,"FONT_OLD_10_WHITE.TGA",2);
+				PrintScreen	("РћР±СѓС‡РµРЅ Р°РєСЂРѕР±Р°С‚РёРєРµ", -1,-1,"FONT_OLD_10_WHITE.TGA",2);
 				return 1;
 			}
 			else
@@ -100,7 +100,7 @@ func int B_GiveSkill(var C_NPC typ, var int TAL, var int NEW_Wert, var int LP_Co
 		}
 		else 
 		{
-			PrintScreen	("Недостаточно очков обучения!", -1,-1,"FONT_OLD_10_WHITE.TGA",2);
+			PrintScreen	("РќРµРґРѕСЃС‚Р°С‚РѕС‡РЅРѕ РѕС‡РєРѕРІ РѕР±СѓС‡РµРЅРёСЏ!", -1,-1,"FONT_OLD_10_WHITE.TGA",2);
 			B_Say (self, other, "$NOLEARNNOPOINTS");
 			return 0;
 		};
@@ -112,9 +112,9 @@ func int B_GiveSkill(var C_NPC typ, var int TAL, var int NEW_Wert, var int LP_Co
 			B_Say (self, other, "$NOLEARNYOUREBETTER"); //Du bist jetzt schon besser!
 			return 0;
 		}
-		else if ((TAL_Wert+1) < NEW_Wert) //d.h. i.d.R. TAL_Wert=2 und NEW_Wert=0, auЯer bei TALENT_MAGE
+		else if ((TAL_Wert+1) < NEW_Wert) //d.h. i.d.R. TAL_Wert=2 und NEW_Wert=0, auРЇer bei TALENT_MAGE
 		{
-			B_Say (self, other, "$NOLEARNYOUALREADYKNOW"); //Du muЯt erst Fortgeschritten sein, bevor du ein Meister werden kannst!
+			B_Say (self, other, "$NOLEARNYOUALREADYKNOW"); //Du muРЇt erst Fortgeschritten sein, bevor du ein Meister werden kannst!
 			return 0;
 		};
 	};	

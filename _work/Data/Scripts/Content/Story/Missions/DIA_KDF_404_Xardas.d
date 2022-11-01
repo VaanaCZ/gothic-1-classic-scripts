@@ -65,10 +65,10 @@ FUNC int  Info_Xardas_DISTURB_Condition()
 FUNC void  Info_Xardas_DISTURB_Info()
 {
 	B_WhirlAround	(self, hero);
-	AI_Output 		(self, hero,"Info_Xardas_DISTURB_14_01"); //КТО ПОСМЕЛ ОТВЛЕЧЬ МЕНЯ ОТ МОИХ ИССЛЕДОВАНИЙ?
-	AI_Output 		(hero, self,"Info_Xardas_DISTURB_15_02"); //Меня зовут...
-	AI_Output 		(self, hero,"Info_Xardas_DISTURB_14_03"); //Я не желаю знать твое имя. Это несущественно.
-	AI_Output 		(self, hero,"Info_Xardas_DISTURB_14_04"); //Куда важнее то, что за долгие годы ты - первый, кто сумел разгадать загадки моего голема.
+	AI_Output 		(self, hero,"Info_Xardas_DISTURB_14_01"); //РљРўРћ РџРћРЎРњР•Р› РћРўР’Р›Р•Р§Р¬ РњР•РќРЇ РћРў РњРћРРҐ РРЎРЎР›Р•Р”РћР’РђРќРР™?
+	AI_Output 		(hero, self,"Info_Xardas_DISTURB_15_02"); //РњРµРЅСЏ Р·РѕРІСѓС‚...
+	AI_Output 		(self, hero,"Info_Xardas_DISTURB_14_03"); //РЇ РЅРµ Р¶РµР»Р°СЋ Р·РЅР°С‚СЊ С‚РІРѕРµ РёРјСЏ. Р­С‚Рѕ РЅРµСЃСѓС‰РµСЃС‚РІРµРЅРЅРѕ.
+	AI_Output 		(self, hero,"Info_Xardas_DISTURB_14_04"); //РљСѓРґР° РІР°Р¶РЅРµРµ С‚Рѕ, С‡С‚Рѕ Р·Р° РґРѕР»РіРёРµ РіРѕРґС‹ С‚С‹ - РїРµСЂРІС‹Р№, РєС‚Рѕ СЃСѓРјРµР» СЂР°Р·РіР°РґР°С‚СЊ Р·Р°РіР°РґРєРё РјРѕРµРіРѕ РіРѕР»РµРјР°.
 }; 
 
 //---------------------------------------------------------------------
@@ -81,7 +81,7 @@ instance  Info_Xardas_OTHERS (C_INFO)
 	information	= Info_Xardas_OTHERS_Info;
 	important	= 0;
 	permanent	= 0;
-	description = "А были и другие?";
+	description = "Рђ Р±С‹Р»Рё Рё РґСЂСѓРіРёРµ?";
 };
 
 FUNC int  Info_Xardas_OTHERS_Condition()
@@ -94,9 +94,9 @@ FUNC int  Info_Xardas_OTHERS_Condition()
 };
 FUNC void  Info_Xardas_OTHERS_Info()
 {
-	AI_Output 		(hero, self,"Info_Xardas_OTHERS_15_01"); //А были и другие?
-	AI_Output 		(self, hero,"Info_Xardas_OTHERS_14_02"); //Их было немного, и когда они надоедали мне, я знакомил их со своими сверхъестественными созданиями.
-	AI_Output 		(hero, self,"Info_Xardas_OTHERS_15_03"); //Похоже, ты ценишь свое уединение.
+	AI_Output 		(hero, self,"Info_Xardas_OTHERS_15_01"); //Рђ Р±С‹Р»Рё Рё РґСЂСѓРіРёРµ?
+	AI_Output 		(self, hero,"Info_Xardas_OTHERS_14_02"); //РС… Р±С‹Р»Рѕ РЅРµРјРЅРѕРіРѕ, Рё РєРѕРіРґР° РѕРЅРё РЅР°РґРѕРµРґР°Р»Рё РјРЅРµ, СЏ Р·РЅР°РєРѕРјРёР» РёС… СЃРѕ СЃРІРѕРёРјРё СЃРІРµСЂС…СЉРµСЃС‚РµСЃС‚РІРµРЅРЅС‹РјРё СЃРѕР·РґР°РЅРёСЏРјРё.
+	AI_Output 		(hero, self,"Info_Xardas_OTHERS_15_03"); //РџРѕС…РѕР¶Рµ, С‚С‹ С†РµРЅРёС€СЊ СЃРІРѕРµ СѓРµРґРёРЅРµРЅРёРµ.
 }; 
 
 //---------------------------------------------------------------------
@@ -109,7 +109,7 @@ instance  Info_Xardas_SATURAS (C_INFO)
 	information	= Info_Xardas_SATURAS_Info;
 	important	= 0;
 	permanent	= 0;
-	description = "Меня прислал Сатурас. Нам нужна твоя помощь!";
+	description = "РњРµРЅСЏ РїСЂРёСЃР»Р°Р» РЎР°С‚СѓСЂР°СЃ. РќР°Рј РЅСѓР¶РЅР° С‚РІРѕСЏ РїРѕРјРѕС‰СЊ!";
 };
 
 FUNC int  Info_Xardas_SATURAS_Condition()
@@ -122,11 +122,11 @@ FUNC int  Info_Xardas_SATURAS_Condition()
 };
 FUNC void  Info_Xardas_SATURAS_Info()
 {
-	AI_Output 		(hero, self,"Info_Xardas_SATURAS_15_01"); //Меня прислал Сатурас. Нам нужна твоя помощь!
-	AI_Output 		(hero, self,"Info_Xardas_SATURAS_15_02"); //Маги Воды хотят использовать свои запасы руды...
-	AI_Output 		(self, hero,"Info_Xardas_SATURAS_14_03"); //Решение кроется не в ЭТОМ!
-	AI_Output 		(hero, self,"Info_Xardas_SATURAS_15_04"); //Не в этом?
-	AI_Output 		(self, hero,"Info_Xardas_SATURAS_14_05"); //НЕТ!
+	AI_Output 		(hero, self,"Info_Xardas_SATURAS_15_01"); //РњРµРЅСЏ РїСЂРёСЃР»Р°Р» РЎР°С‚СѓСЂР°СЃ. РќР°Рј РЅСѓР¶РЅР° С‚РІРѕСЏ РїРѕРјРѕС‰СЊ!
+	AI_Output 		(hero, self,"Info_Xardas_SATURAS_15_02"); //РњР°РіРё Р’РѕРґС‹ С…РѕС‚СЏС‚ РёСЃРїРѕР»СЊР·РѕРІР°С‚СЊ СЃРІРѕРё Р·Р°РїР°СЃС‹ СЂСѓРґС‹...
+	AI_Output 		(self, hero,"Info_Xardas_SATURAS_14_03"); //Р РµС€РµРЅРёРµ РєСЂРѕРµС‚СЃСЏ РЅРµ РІ Р­РўРћРњ!
+	AI_Output 		(hero, self,"Info_Xardas_SATURAS_15_04"); //РќРµ РІ СЌС‚РѕРј?
+	AI_Output 		(self, hero,"Info_Xardas_SATURAS_14_05"); //РќР•Рў!
 }; 
 
 //---------------------------------------------------------------------
@@ -139,7 +139,7 @@ instance  Info_Xardas_KDW (C_INFO)
 	information	= Info_Xardas_KDW_Info;
 	important	= 0;
 	permanent	= 0;
-	description = "Все маги Огня мертвы!";
+	description = "Р’СЃРµ РјР°РіРё РћРіРЅСЏ РјРµСЂС‚РІС‹!";
 };
 
 FUNC int  Info_Xardas_KDW_Condition()
@@ -152,10 +152,10 @@ FUNC int  Info_Xardas_KDW_Condition()
 
 FUNC void  Info_Xardas_KDW_Info()
 {
-	AI_Output 		(hero, self,"Info_Xardas_KDW_15_01"); //Все маги Огня мертвы.
-	AI_Output 		(hero, self,"Info_Xardas_KDW_15_02"); //Их убил Гомез.
-	AI_Output 		(self, hero,"Info_Xardas_KDW_14_03"); //Это меня не удивляет. Тупые мясники-варвары в замке - им нельзя было доверять. 
-	AI_Output 		(self, hero,"Info_Xardas_KDW_14_04"); //Помогая Гомезу захватить власть, Корристо и остальные сами сунули голову в петлю.
+	AI_Output 		(hero, self,"Info_Xardas_KDW_15_01"); //Р’СЃРµ РјР°РіРё РћРіРЅСЏ РјРµСЂС‚РІС‹.
+	AI_Output 		(hero, self,"Info_Xardas_KDW_15_02"); //РС… СѓР±РёР» Р“РѕРјРµР·.
+	AI_Output 		(self, hero,"Info_Xardas_KDW_14_03"); //Р­С‚Рѕ РјРµРЅСЏ РЅРµ СѓРґРёРІР»СЏРµС‚. РўСѓРїС‹Рµ РјСЏСЃРЅРёРєРё-РІР°СЂРІР°СЂС‹ РІ Р·Р°РјРєРµ - РёРј РЅРµР»СЊР·СЏ Р±С‹Р»Рѕ РґРѕРІРµСЂСЏС‚СЊ. 
+	AI_Output 		(self, hero,"Info_Xardas_KDW_14_04"); //РџРѕРјРѕРіР°СЏ Р“РѕРјРµР·Сѓ Р·Р°С…РІР°С‚РёС‚СЊ РІР»Р°СЃС‚СЊ, РљРѕСЂСЂРёСЃС‚Рѕ Рё РѕСЃС‚Р°Р»СЊРЅС‹Рµ СЃР°РјРё СЃСѓРЅСѓР»Рё РіРѕР»РѕРІСѓ РІ РїРµС‚Р»СЋ.
 }; 
 
 //---------------------------------------------------------------------
@@ -168,7 +168,7 @@ instance  Info_Xardas_SLEEPER (C_INFO)
 	information	= Info_Xardas_SLEEPER_Info;
 	important	= 0;
 	permanent	= 0;
-	description = "Говорят, что `Спящий` на самом деле является злым демоном.";
+	description = "Р“РѕРІРѕСЂСЏС‚, С‡С‚Рѕ `РЎРїСЏС‰РёР№` РЅР° СЃР°РјРѕРј РґРµР»Рµ СЏРІР»СЏРµС‚СЃСЏ Р·Р»С‹Рј РґРµРјРѕРЅРѕРј.";
 };
 
 FUNC int  Info_Xardas_SLEEPER_Condition()
@@ -181,10 +181,10 @@ FUNC int  Info_Xardas_SLEEPER_Condition()
 };
 FUNC void  Info_Xardas_SLEEPER_Info()
 {
-	AI_Output 		(hero, self,"Info_Xardas_SLEEPER_15_01"); //Говорят, что так называемый 'Спящий' на самом деле является злым демоном.
-	AI_Output 		(hero, self,"Info_Xardas_SLEEPER_15_02"); //Это выяснили члены болотного Братства.
-	AI_Output 		(hero, self,"Info_Xardas_SLEEPER_15_03"); //Маги Воды уверены, что вся колония находится под угрозой.
-	AI_Output 		(self, hero,"Info_Xardas_SLEEPER_14_04"); //Эта опасность больше, чем может себе представить любой, кто находится внутри Барьера. 
+	AI_Output 		(hero, self,"Info_Xardas_SLEEPER_15_01"); //Р“РѕРІРѕСЂСЏС‚, С‡С‚Рѕ С‚Р°Рє РЅР°Р·С‹РІР°РµРјС‹Р№ 'РЎРїСЏС‰РёР№' РЅР° СЃР°РјРѕРј РґРµР»Рµ СЏРІР»СЏРµС‚СЃСЏ Р·Р»С‹Рј РґРµРјРѕРЅРѕРј.
+	AI_Output 		(hero, self,"Info_Xardas_SLEEPER_15_02"); //Р­С‚Рѕ РІС‹СЏСЃРЅРёР»Рё С‡Р»РµРЅС‹ Р±РѕР»РѕС‚РЅРѕРіРѕ Р‘СЂР°С‚СЃС‚РІР°.
+	AI_Output 		(hero, self,"Info_Xardas_SLEEPER_15_03"); //РњР°РіРё Р’РѕРґС‹ СѓРІРµСЂРµРЅС‹, С‡С‚Рѕ РІСЃСЏ РєРѕР»РѕРЅРёСЏ РЅР°С…РѕРґРёС‚СЃСЏ РїРѕРґ СѓРіСЂРѕР·РѕР№.
+	AI_Output 		(self, hero,"Info_Xardas_SLEEPER_14_04"); //Р­С‚Р° РѕРїР°СЃРЅРѕСЃС‚СЊ Р±РѕР»СЊС€Рµ, С‡РµРј РјРѕР¶РµС‚ СЃРµР±Рµ РїСЂРµРґСЃС‚Р°РІРёС‚СЊ Р»СЋР±РѕР№, РєС‚Рѕ РЅР°С…РѕРґРёС‚СЃСЏ РІРЅСѓС‚СЂРё Р‘Р°СЂСЊРµСЂР°. 
 }; 
 
 //---------------------------------------------------------------------
@@ -197,7 +197,7 @@ instance  Info_Xardas_DANGER (C_INFO)
 	information	= Info_Xardas_DANGER_Info;
 	important	= 0;
 	permanent	= 0;
-	description = "Если взрыв железной горы не предотвратит угрозу...";
+	description = "Р•СЃР»Рё РІР·СЂС‹РІ Р¶РµР»РµР·РЅРѕР№ РіРѕСЂС‹ РЅРµ РїСЂРµРґРѕС‚РІСЂР°С‚РёС‚ СѓРіСЂРѕР·Сѓ...";
 };
 
 FUNC int  Info_Xardas_DANGER_Condition()
@@ -210,11 +210,11 @@ FUNC int  Info_Xardas_DANGER_Condition()
 };
 FUNC void  Info_Xardas_DANGER_Info()
 {
-	AI_Output 		(hero, self,"Info_Xardas_DANGER_15_01"); //Если взрыв железной горы не предотвратит угрозу...
-	AI_Output 		(self, hero,"Info_Xardas_DANGER_14_02"); //... Забудь о руде! Она не в силах обрушить Барьер.
-	AI_Output 		(self, hero,"Info_Xardas_DANGER_14_03"); //Если бы Корристо и Сатурас не тратили свое время на решение пустых и никчемных вопросов все эти годы, сейчас они бы знали то же, что и я.
-	AI_Output 		(hero, self,"Info_Xardas_DANGER_15_04"); //Что именно?
-	AI_Output 		(self, hero,"Info_Xardas_DANGER_14_05"); //Ни один из двенадцати магов не прекращал ломать голову над вопросом, почему они не в состоянии контролировать Барьер и почему он разросся до таких гигантских размеров.
+	AI_Output 		(hero, self,"Info_Xardas_DANGER_15_01"); //Р•СЃР»Рё РІР·СЂС‹РІ Р¶РµР»РµР·РЅРѕР№ РіРѕСЂС‹ РЅРµ РїСЂРµРґРѕС‚РІСЂР°С‚РёС‚ СѓРіСЂРѕР·Сѓ...
+	AI_Output 		(self, hero,"Info_Xardas_DANGER_14_02"); //... Р—Р°Р±СѓРґСЊ Рѕ СЂСѓРґРµ! РћРЅР° РЅРµ РІ СЃРёР»Р°С… РѕР±СЂСѓС€РёС‚СЊ Р‘Р°СЂСЊРµСЂ.
+	AI_Output 		(self, hero,"Info_Xardas_DANGER_14_03"); //Р•СЃР»Рё Р±С‹ РљРѕСЂСЂРёСЃС‚Рѕ Рё РЎР°С‚СѓСЂР°СЃ РЅРµ С‚СЂР°С‚РёР»Рё СЃРІРѕРµ РІСЂРµРјСЏ РЅР° СЂРµС€РµРЅРёРµ РїСѓСЃС‚С‹С… Рё РЅРёРєС‡РµРјРЅС‹С… РІРѕРїСЂРѕСЃРѕРІ РІСЃРµ СЌС‚Рё РіРѕРґС‹, СЃРµР№С‡Р°СЃ РѕРЅРё Р±С‹ Р·РЅР°Р»Рё С‚Рѕ Р¶Рµ, С‡С‚Рѕ Рё СЏ.
+	AI_Output 		(hero, self,"Info_Xardas_DANGER_15_04"); //Р§С‚Рѕ РёРјРµРЅРЅРѕ?
+	AI_Output 		(self, hero,"Info_Xardas_DANGER_14_05"); //РќРё РѕРґРёРЅ РёР· РґРІРµРЅР°РґС†Р°С‚Рё РјР°РіРѕРІ РЅРµ РїСЂРµРєСЂР°С‰Р°Р» Р»РѕРјР°С‚СЊ РіРѕР»РѕРІСѓ РЅР°Рґ РІРѕРїСЂРѕСЃРѕРј, РїРѕС‡РµРјСѓ РѕРЅРё РЅРµ РІ СЃРѕСЃС‚РѕСЏРЅРёРё РєРѕРЅС‚СЂРѕР»РёСЂРѕРІР°С‚СЊ Р‘Р°СЂСЊРµСЂ Рё РїРѕС‡РµРјСѓ РѕРЅ СЂР°Р·СЂРѕСЃСЃСЏ РґРѕ С‚Р°РєРёС… РіРёРіР°РЅС‚СЃРєРёС… СЂР°Р·РјРµСЂРѕРІ.
 };
 
 //---------------------------------------------------------------------
@@ -227,7 +227,7 @@ instance  Info_Xardas_BARRIER (C_INFO)
 	information	= Info_Xardas_BARRIER_Info;
 	important	= 0;
 	permanent	= 0;
-	description = "И ты нашел ответ?";
+	description = "Р С‚С‹ РЅР°С€РµР» РѕС‚РІРµС‚?";
 };
 
 FUNC int  Info_Xardas_BARRIER_Condition()
@@ -239,13 +239,13 @@ FUNC int  Info_Xardas_BARRIER_Condition()
 };
 FUNC void  Info_Xardas_BARRIER_Info()
 {
-	AI_Output 		(hero, self,"Info_Xardas_BARRIER_15_01"); //И ты нашел ответ? 
-	AI_Output 		(self, hero,"Info_Xardas_BARRIER_14_02"); //Ну, ясно одно: ответ находится под городом орков.
-	AI_Output 		(hero, self,"Info_Xardas_BARRIER_15_03"); //Город орков?
-	AI_Output 		(self, hero,"Info_Xardas_BARRIER_14_04"); //Орки - вовсе не звери, как думает большинство людей. Их культура насчитывает столько же лет, сколько и человеческая.
-	AI_Output 		(self, hero,"Info_Xardas_BARRIER_14_05"); //Несколько веков назад пять орков-шаманов призвали древнего демона, в надежде, что он поможет им победить всех врагов.
-	AI_Output 		(hero, self,"Info_Xardas_BARRIER_15_06"); //Этот демон - это и есть Спящий?
-	AI_Output 		(self, hero,"Info_Xardas_BARRIER_14_07"); //Это имя орки дали ему намного позже. Но я не скажу тебе, почему они его так прозвали и почему сейчас это сверхъестественное создание внушает им такой ужас.
+	AI_Output 		(hero, self,"Info_Xardas_BARRIER_15_01"); //Р С‚С‹ РЅР°С€РµР» РѕС‚РІРµС‚? 
+	AI_Output 		(self, hero,"Info_Xardas_BARRIER_14_02"); //РќСѓ, СЏСЃРЅРѕ РѕРґРЅРѕ: РѕС‚РІРµС‚ РЅР°С…РѕРґРёС‚СЃСЏ РїРѕРґ РіРѕСЂРѕРґРѕРј РѕСЂРєРѕРІ.
+	AI_Output 		(hero, self,"Info_Xardas_BARRIER_15_03"); //Р“РѕСЂРѕРґ РѕСЂРєРѕРІ?
+	AI_Output 		(self, hero,"Info_Xardas_BARRIER_14_04"); //РћСЂРєРё - РІРѕРІСЃРµ РЅРµ Р·РІРµСЂРё, РєР°Рє РґСѓРјР°РµС‚ Р±РѕР»СЊС€РёРЅСЃС‚РІРѕ Р»СЋРґРµР№. РС… РєСѓР»СЊС‚СѓСЂР° РЅР°СЃС‡РёС‚С‹РІР°РµС‚ СЃС‚РѕР»СЊРєРѕ Р¶Рµ Р»РµС‚, СЃРєРѕР»СЊРєРѕ Рё С‡РµР»РѕРІРµС‡РµСЃРєР°СЏ.
+	AI_Output 		(self, hero,"Info_Xardas_BARRIER_14_05"); //РќРµСЃРєРѕР»СЊРєРѕ РІРµРєРѕРІ РЅР°Р·Р°Рґ РїСЏС‚СЊ РѕСЂРєРѕРІ-С€Р°РјР°РЅРѕРІ РїСЂРёР·РІР°Р»Рё РґСЂРµРІРЅРµРіРѕ РґРµРјРѕРЅР°, РІ РЅР°РґРµР¶РґРµ, С‡С‚Рѕ РѕРЅ РїРѕРјРѕР¶РµС‚ РёРј РїРѕР±РµРґРёС‚СЊ РІСЃРµС… РІСЂР°РіРѕРІ.
+	AI_Output 		(hero, self,"Info_Xardas_BARRIER_15_06"); //Р­С‚РѕС‚ РґРµРјРѕРЅ - СЌС‚Рѕ Рё РµСЃС‚СЊ РЎРїСЏС‰РёР№?
+	AI_Output 		(self, hero,"Info_Xardas_BARRIER_14_07"); //Р­С‚Рѕ РёРјСЏ РѕСЂРєРё РґР°Р»Рё РµРјСѓ РЅР°РјРЅРѕРіРѕ РїРѕР·Р¶Рµ. РќРѕ СЏ РЅРµ СЃРєР°Р¶Сѓ С‚РµР±Рµ, РїРѕС‡РµРјСѓ РѕРЅРё РµРіРѕ С‚Р°Рє РїСЂРѕР·РІР°Р»Рё Рё РїРѕС‡РµРјСѓ СЃРµР№С‡Р°СЃ СЌС‚Рѕ СЃРІРµСЂС…СЉРµСЃС‚РµСЃС‚РІРµРЅРЅРѕРµ СЃРѕР·РґР°РЅРёРµ РІРЅСѓС€Р°РµС‚ РёРј С‚Р°РєРѕР№ СѓР¶Р°СЃ.
 }; 
 
 //---------------------------------------------------------------------
@@ -258,7 +258,7 @@ instance  Info_Xardas_EVENT (C_INFO)
 	information	= Info_Xardas_EVENT_Info;
 	important	= 0;
 	permanent	= 0;
-	description = "Почему?";
+	description = "РџРѕС‡РµРјСѓ?";
 };
 
 FUNC int  Info_Xardas_EVENT_Condition()
@@ -270,10 +270,10 @@ FUNC int  Info_Xardas_EVENT_Condition()
 };
 FUNC void  Info_Xardas_EVENT_Info()
 {
-	AI_Output 		(hero, self,"Info_Xardas_EVENT_15_01"); //Не скажешь? Но почему?
-	AI_Output 		(self, hero,"Info_Xardas_EVENT_14_02"); //Я думаю, что ты можешь быть... НЕТ, для того чтобы убедиться в этом окончательно, я дам тебе одно задание.
-	AI_Output 		(hero, self,"Info_Xardas_EVENT_15_03"); //Какое?
-	AI_Output 		(self, hero,"Info_Xardas_EVENT_14_04"); //Слушай внимательно. Орки изгнали одного шамана из города.
+	AI_Output 		(hero, self,"Info_Xardas_EVENT_15_01"); //РќРµ СЃРєР°Р¶РµС€СЊ? РќРѕ РїРѕС‡РµРјСѓ?
+	AI_Output 		(self, hero,"Info_Xardas_EVENT_14_02"); //РЇ РґСѓРјР°СЋ, С‡С‚Рѕ С‚С‹ РјРѕР¶РµС€СЊ Р±С‹С‚СЊ... РќР•Рў, РґР»СЏ С‚РѕРіРѕ С‡С‚РѕР±С‹ СѓР±РµРґРёС‚СЊСЃСЏ РІ СЌС‚РѕРј РѕРєРѕРЅС‡Р°С‚РµР»СЊРЅРѕ, СЏ РґР°Рј С‚РµР±Рµ РѕРґРЅРѕ Р·Р°РґР°РЅРёРµ.
+	AI_Output 		(hero, self,"Info_Xardas_EVENT_15_03"); //РљР°РєРѕРµ?
+	AI_Output 		(self, hero,"Info_Xardas_EVENT_14_04"); //РЎР»СѓС€Р°Р№ РІРЅРёРјР°С‚РµР»СЊРЅРѕ. РћСЂРєРё РёР·РіРЅР°Р»Рё РѕРґРЅРѕРіРѕ С€Р°РјР°РЅР° РёР· РіРѕСЂРѕРґР°.
 }; 
 
 //---------------------------------------------------------------------
@@ -286,7 +286,7 @@ instance  Info_Xardas_EVENTWHY (C_INFO)
 	information	= Info_Xardas_EVENTWHY_Info;
 	important	= 0;
 	permanent	= 0;
-	description = "За что они изгнали его?";
+	description = "Р—Р° С‡С‚Рѕ РѕРЅРё РёР·РіРЅР°Р»Рё РµРіРѕ?";
 };
 
 FUNC int  Info_Xardas_EVENTWHY_Condition()
@@ -298,8 +298,8 @@ FUNC int  Info_Xardas_EVENTWHY_Condition()
 };
 FUNC void  Info_Xardas_EVENTWHY_Info()
 {
-	AI_Output 		(hero, self,"Info_Xardas_EVENTWHY_15_01"); //За что они изгнали его?
-	AI_Output 		(self, hero,"Info_Xardas_EVENTWHY_14_02"); //Когда один из моих демонов пытал оркского воина, тот уже умирал и был не в состоянии ответить на этот вопрос.
+	AI_Output 		(hero, self,"Info_Xardas_EVENTWHY_15_01"); //Р—Р° С‡С‚Рѕ РѕРЅРё РёР·РіРЅР°Р»Рё РµРіРѕ?
+	AI_Output 		(self, hero,"Info_Xardas_EVENTWHY_14_02"); //РљРѕРіРґР° РѕРґРёРЅ РёР· РјРѕРёС… РґРµРјРѕРЅРѕРІ РїС‹С‚Р°Р» РѕСЂРєСЃРєРѕРіРѕ РІРѕРёРЅР°, С‚РѕС‚ СѓР¶Рµ СѓРјРёСЂР°Р» Рё Р±С‹Р» РЅРµ РІ СЃРѕСЃС‚РѕСЏРЅРёРё РѕС‚РІРµС‚РёС‚СЊ РЅР° СЌС‚РѕС‚ РІРѕРїСЂРѕСЃ.
 }; 
 
 //---------------------------------------------------------------------
@@ -312,7 +312,7 @@ instance  Info_Xardas_EVENTHOW (C_INFO)
 	information	= Info_Xardas_EVENTHOW_Info;
 	important	= 0;
 	permanent	= 0;
-	description = "Какое отношение этот шаман имеет к моему заданию?";
+	description = "РљР°РєРѕРµ РѕС‚РЅРѕС€РµРЅРёРµ СЌС‚РѕС‚ С€Р°РјР°РЅ РёРјРµРµС‚ Рє РјРѕРµРјСѓ Р·Р°РґР°РЅРёСЋ?";
 };
 
 FUNC int  Info_Xardas_EVENTHOW_Condition()
@@ -324,14 +324,14 @@ FUNC int  Info_Xardas_EVENTHOW_Condition()
 };
 FUNC void  Info_Xardas_EVENTHOW_Info()
 {
-	AI_Output 		(hero, self,"Info_Xardas_EVENTHOW_15_01"); //Какое отношение этот шаман имеет к моему заданию?
-	AI_Output 		(self, hero,"Info_Xardas_EVENTHOW_14_02"); //Он расскажет тебе вторую часть истории о Спящем.
-	AI_Output 		(hero, self,"Info_Xardas_EVENTHOW_15_03"); //Едва ли шаман орков захочет говорить со мной!
-	AI_Output 		(self, hero,"Info_Xardas_EVENTHOW_14_04"); //Ты хочешь, чтобы я помог тебе, или нет?
-	AI_Output 		(hero, self,"Info_Xardas_EVENTHOW_15_05"); //Вообще-то, да, но...
-	AI_Output 		(self, hero,"Info_Xardas_EVENTHOW_14_06"); //Тогда больше никогда не подвергай сомнению мои слова!
-	AI_Output 		(self, hero,"Info_Xardas_EVENTHOW_14_07"); //Найди шамана. Он не слишком ладит со своими сородичами из города орков, так что, возможно, он выслушает незванного гостя, прежде чем превратить его в живой факел.
-	AI_Output 		(hero, self,"Info_Xardas_EVENTHOW_15_08"); //Звучит обнадеживающе!
+	AI_Output 		(hero, self,"Info_Xardas_EVENTHOW_15_01"); //РљР°РєРѕРµ РѕС‚РЅРѕС€РµРЅРёРµ СЌС‚РѕС‚ С€Р°РјР°РЅ РёРјРµРµС‚ Рє РјРѕРµРјСѓ Р·Р°РґР°РЅРёСЋ?
+	AI_Output 		(self, hero,"Info_Xardas_EVENTHOW_14_02"); //РћРЅ СЂР°СЃСЃРєР°Р¶РµС‚ С‚РµР±Рµ РІС‚РѕСЂСѓСЋ С‡Р°СЃС‚СЊ РёСЃС‚РѕСЂРёРё Рѕ РЎРїСЏС‰РµРј.
+	AI_Output 		(hero, self,"Info_Xardas_EVENTHOW_15_03"); //Р•РґРІР° Р»Рё С€Р°РјР°РЅ РѕСЂРєРѕРІ Р·Р°С…РѕС‡РµС‚ РіРѕРІРѕСЂРёС‚СЊ СЃРѕ РјРЅРѕР№!
+	AI_Output 		(self, hero,"Info_Xardas_EVENTHOW_14_04"); //РўС‹ С…РѕС‡РµС€СЊ, С‡С‚РѕР±С‹ СЏ РїРѕРјРѕРі С‚РµР±Рµ, РёР»Рё РЅРµС‚?
+	AI_Output 		(hero, self,"Info_Xardas_EVENTHOW_15_05"); //Р’РѕРѕР±С‰Рµ-С‚Рѕ, РґР°, РЅРѕ...
+	AI_Output 		(self, hero,"Info_Xardas_EVENTHOW_14_06"); //РўРѕРіРґР° Р±РѕР»СЊС€Рµ РЅРёРєРѕРіРґР° РЅРµ РїРѕРґРІРµСЂРіР°Р№ СЃРѕРјРЅРµРЅРёСЋ РјРѕРё СЃР»РѕРІР°!
+	AI_Output 		(self, hero,"Info_Xardas_EVENTHOW_14_07"); //РќР°Р№РґРё С€Р°РјР°РЅР°. РћРЅ РЅРµ СЃР»РёС€РєРѕРј Р»Р°РґРёС‚ СЃРѕ СЃРІРѕРёРјРё СЃРѕСЂРѕРґРёС‡Р°РјРё РёР· РіРѕСЂРѕРґР° РѕСЂРєРѕРІ, С‚Р°Рє С‡С‚Рѕ, РІРѕР·РјРѕР¶РЅРѕ, РѕРЅ РІС‹СЃР»СѓС€Р°РµС‚ РЅРµР·РІР°РЅРЅРѕРіРѕ РіРѕСЃС‚СЏ, РїСЂРµР¶РґРµ С‡РµРј РїСЂРµРІСЂР°С‚РёС‚СЊ РµРіРѕ РІ Р¶РёРІРѕР№ С„Р°РєРµР».
+	AI_Output 		(hero, self,"Info_Xardas_EVENTHOW_15_08"); //Р—РІСѓС‡РёС‚ РѕР±РЅР°РґРµР¶РёРІР°СЋС‰Рµ!
 }; 
 
 //---------------------------------------------------------------------
@@ -344,7 +344,7 @@ instance  Info_Xardas_EVENTWHERE (C_INFO)
 	information	= Info_Xardas_EVENTWHERE_Info;
 	important	= 0;
 	permanent	= 0;
-	description = "Где живет этот изгнанный шаман?";
+	description = "Р“РґРµ Р¶РёРІРµС‚ СЌС‚РѕС‚ РёР·РіРЅР°РЅРЅС‹Р№ С€Р°РјР°РЅ?";
 };
 
 FUNC int  Info_Xardas_EVENTWHERE_Condition()
@@ -356,10 +356,10 @@ FUNC int  Info_Xardas_EVENTWHERE_Condition()
 };
 FUNC void  Info_Xardas_EVENTWHERE_Info()
 {
-	AI_Output 		(hero, self,"Info_Xardas_EVENTWHERE_15_01"); //Где живет этот изгнанный шаман?
-	AI_Output 		(self, hero,"Info_Xardas_EVENTWHERE_14_02"); //Отправляйся на восток, к старой крепости. Ты не заблудишься - она стоит на вершине горы, и ее видно издалека.
-	AI_Output 		(hero, self,"Info_Xardas_EVENTWHERE_15_03"); //В нее можно зайти?
-	AI_Output 		(self, hero,"Info_Xardas_EVENTWHERE_14_04"); //На самом деле, от старой крепости остались лишь обломки стен. Она была разрушена еще несколько десятилетий назад.
+	AI_Output 		(hero, self,"Info_Xardas_EVENTWHERE_15_01"); //Р“РґРµ Р¶РёРІРµС‚ СЌС‚РѕС‚ РёР·РіРЅР°РЅРЅС‹Р№ С€Р°РјР°РЅ?
+	AI_Output 		(self, hero,"Info_Xardas_EVENTWHERE_14_02"); //РћС‚РїСЂР°РІР»СЏР№СЃСЏ РЅР° РІРѕСЃС‚РѕРє, Рє СЃС‚Р°СЂРѕР№ РєСЂРµРїРѕСЃС‚Рё. РўС‹ РЅРµ Р·Р°Р±Р»СѓРґРёС€СЊСЃСЏ - РѕРЅР° СЃС‚РѕРёС‚ РЅР° РІРµСЂС€РёРЅРµ РіРѕСЂС‹, Рё РµРµ РІРёРґРЅРѕ РёР·РґР°Р»РµРєР°.
+	AI_Output 		(hero, self,"Info_Xardas_EVENTWHERE_15_03"); //Р’ РЅРµРµ РјРѕР¶РЅРѕ Р·Р°Р№С‚Рё?
+	AI_Output 		(self, hero,"Info_Xardas_EVENTWHERE_14_04"); //РќР° СЃР°РјРѕРј РґРµР»Рµ, РѕС‚ СЃС‚Р°СЂРѕР№ РєСЂРµРїРѕСЃС‚Рё РѕСЃС‚Р°Р»РёСЃСЊ Р»РёС€СЊ РѕР±Р»РѕРјРєРё СЃС‚РµРЅ. РћРЅР° Р±С‹Р»Р° СЂР°Р·СЂСѓС€РµРЅР° РµС‰Рµ РЅРµСЃРєРѕР»СЊРєРѕ РґРµСЃСЏС‚РёР»РµС‚РёР№ РЅР°Р·Р°Рґ.
 }; 
 
 //---------------------------------------------------------------------
@@ -372,7 +372,7 @@ instance  Info_Xardas_ACCEPT (C_INFO)
 	information	= Info_Xardas_ACCEPT_Info;
 	important	= 0;
 	permanent	= 0;
-	description = "Я добьюсь ответов от этого шамана!";
+	description = "РЇ РґРѕР±СЊСЋСЃСЊ РѕС‚РІРµС‚РѕРІ РѕС‚ СЌС‚РѕРіРѕ С€Р°РјР°РЅР°!";
 };
 
 FUNC int  Info_Xardas_ACCEPT_Condition()
@@ -386,9 +386,9 @@ FUNC int  Info_Xardas_ACCEPT_Condition()
 };
 FUNC void  Info_Xardas_ACCEPT_Info()
 {
-	AI_Output 		(hero, self,"Info_Xardas_ACCEPT_15_01"); //Я добьюсь ответов от этого шамана!
-	AI_Output 		(self, hero,"Info_Xardas_ACCEPT_14_02"); //Мой слуга уже отдал тебе Руну Телепортации. В любой момент она перенесет тебя в пентаграмму, которая находится в нижнем зале.
-	AI_Output 		(self, hero,"Info_Xardas_ACCEPT_14_03"); //У тебя не будет проблем с возвращением.
+	AI_Output 		(hero, self,"Info_Xardas_ACCEPT_15_01"); //РЇ РґРѕР±СЊСЋСЃСЊ РѕС‚РІРµС‚РѕРІ РѕС‚ СЌС‚РѕРіРѕ С€Р°РјР°РЅР°!
+	AI_Output 		(self, hero,"Info_Xardas_ACCEPT_14_02"); //РњРѕР№ СЃР»СѓРіР° СѓР¶Рµ РѕС‚РґР°Р» С‚РµР±Рµ Р СѓРЅСѓ РўРµР»РµРїРѕСЂС‚Р°С†РёРё. Р’ Р»СЋР±РѕР№ РјРѕРјРµРЅС‚ РѕРЅР° РїРµСЂРµРЅРµСЃРµС‚ С‚РµР±СЏ РІ РїРµРЅС‚Р°РіСЂР°РјРјСѓ, РєРѕС‚РѕСЂР°СЏ РЅР°С…РѕРґРёС‚СЃСЏ РІ РЅРёР¶РЅРµРј Р·Р°Р»Рµ.
+	AI_Output 		(self, hero,"Info_Xardas_ACCEPT_14_03"); //РЈ С‚РµР±СЏ РЅРµ Р±СѓРґРµС‚ РїСЂРѕР±Р»РµРј СЃ РІРѕР·РІСЂР°С‰РµРЅРёРµРј.
 
 	B_Story_CordsPost();		// Falls Spieler Gorn am Wassermagier-Pentragramm nicht angesprochen hat!
 	B_Story_FindOrcShaman();
@@ -407,7 +407,7 @@ instance  Kdf_404_Xardas_SELLMAGICSTUFF (C_INFO)
 	important		= 0;
 	permanent		= 1;
 	trade			= 1;
-	description		= "Я хочу постигать суть магии."; 
+	description		= "РЇ С…РѕС‡Сѓ РїРѕСЃС‚РёРіР°С‚СЊ СЃСѓС‚СЊ РјР°РіРёРё."; 
 	
 };
 
@@ -421,7 +421,7 @@ FUNC int  Kdf_404_Xardas_SELLMAGICSTUFF_Condition()
 };
 FUNC void  Kdf_404_Xardas_SELLMAGICSTUFF_Info()
 {
-	AI_Output (other, self,"Kdf_404_Xardas_SELLMAGICSTUFF_Info_15_01"); //Я хочу постигать суть магии.
+	AI_Output (other, self,"Kdf_404_Xardas_SELLMAGICSTUFF_Info_15_01"); //РЇ С…РѕС‡Сѓ РїРѕСЃС‚РёРіР°С‚СЊ СЃСѓС‚СЊ РјР°РіРёРё.
 };
 
 //---------------------------------------------------------------------
@@ -434,7 +434,7 @@ instance  Info_Xardas_RETURN (C_INFO)
 	information	= Info_Xardas_RETURN_Info;
 	important	= 0;
 	permanent	= 0;
-	description = "Я добился ответов от шамана орков!";
+	description = "РЇ РґРѕР±РёР»СЃСЏ РѕС‚РІРµС‚РѕРІ РѕС‚ С€Р°РјР°РЅР° РѕСЂРєРѕРІ!";
 };
 
 FUNC int  Info_Xardas_RETURN_Condition()
@@ -447,20 +447,20 @@ FUNC int  Info_Xardas_RETURN_Condition()
 };
 FUNC void  Info_Xardas_RETURN_Info()
 {
-	AI_Output 		(hero, self,"Info_Xardas_RETURN_15_01"); //Я добился ответов от шамана орков!
-	AI_Output 		(self, hero,"Info_Xardas_RETURN_14_02"); //Ну, так говори же!
-	AI_Output 		(hero, self,"Info_Xardas_RETURN_15_03"); //Пять шаманов призвали Спящего и выстроили для него подземный храм, вход в который находится в городе орков.
-	AI_Output 		(self, hero,"Info_Xardas_RETURN_14_04"); //Все верно.
-	AI_Output 		(hero, self,"Info_Xardas_RETURN_15_05"); //Но демоны не знают благодарности - и Спящий вырвал их сердца и обрек строителей храма на вечное служение ему в облике нежити.
-	AI_Output 		(self, hero,"Info_Xardas_RETURN_14_06"); //Хорошо, очень хорошо!
-	AI_Output 		(hero, self,"Info_Xardas_RETURN_15_07"); //Орки запечатали храм и начали приносить жертвы, дабы умиротворить демона.
-	AI_Output 		(self, hero,"Info_Xardas_RETURN_14_08"); //Нашел ли ты путь ко входу в храм?
-	AI_Output 		(hero, self,"Info_Xardas_RETURN_15_09"); //Да, есть орк, который...
-	AI_Output 		(self, hero,"Info_Xardas_RETURN_14_10"); //Избавь меня от подробностей! Отправляйся в подземный храм! Там сокрыт наш единственный шанс уничтожить Барьер!
-	AI_Output 		(hero, self,"Info_Xardas_RETURN_15_11"); //Но я не понимаю!
-	AI_Output 		(self, hero,"Info_Xardas_RETURN_14_12"); //Не ты ли взывал ко мне о помощи, желая уничтожить Барьер?
-	AI_Output 		(hero, self,"Info_Xardas_RETURN_15_13"); //Это так, но...
-	AI_Output 		(self, hero,"Info_Xardas_RETURN_14_14"); //ТАК ИДИ ЖЕ! Мы и так уже потратили впустую немало времени! Отправляйся в подземный храм и найди там ответ!
+	AI_Output 		(hero, self,"Info_Xardas_RETURN_15_01"); //РЇ РґРѕР±РёР»СЃСЏ РѕС‚РІРµС‚РѕРІ РѕС‚ С€Р°РјР°РЅР° РѕСЂРєРѕРІ!
+	AI_Output 		(self, hero,"Info_Xardas_RETURN_14_02"); //РќСѓ, С‚Р°Рє РіРѕРІРѕСЂРё Р¶Рµ!
+	AI_Output 		(hero, self,"Info_Xardas_RETURN_15_03"); //РџСЏС‚СЊ С€Р°РјР°РЅРѕРІ РїСЂРёР·РІР°Р»Рё РЎРїСЏС‰РµРіРѕ Рё РІС‹СЃС‚СЂРѕРёР»Рё РґР»СЏ РЅРµРіРѕ РїРѕРґР·РµРјРЅС‹Р№ С…СЂР°Рј, РІС…РѕРґ РІ РєРѕС‚РѕСЂС‹Р№ РЅР°С…РѕРґРёС‚СЃСЏ РІ РіРѕСЂРѕРґРµ РѕСЂРєРѕРІ.
+	AI_Output 		(self, hero,"Info_Xardas_RETURN_14_04"); //Р’СЃРµ РІРµСЂРЅРѕ.
+	AI_Output 		(hero, self,"Info_Xardas_RETURN_15_05"); //РќРѕ РґРµРјРѕРЅС‹ РЅРµ Р·РЅР°СЋС‚ Р±Р»Р°РіРѕРґР°СЂРЅРѕСЃС‚Рё - Рё РЎРїСЏС‰РёР№ РІС‹СЂРІР°Р» РёС… СЃРµСЂРґС†Р° Рё РѕР±СЂРµРє СЃС‚СЂРѕРёС‚РµР»РµР№ С…СЂР°РјР° РЅР° РІРµС‡РЅРѕРµ СЃР»СѓР¶РµРЅРёРµ РµРјСѓ РІ РѕР±Р»РёРєРµ РЅРµР¶РёС‚Рё.
+	AI_Output 		(self, hero,"Info_Xardas_RETURN_14_06"); //РҐРѕСЂРѕС€Рѕ, РѕС‡РµРЅСЊ С…РѕСЂРѕС€Рѕ!
+	AI_Output 		(hero, self,"Info_Xardas_RETURN_15_07"); //РћСЂРєРё Р·Р°РїРµС‡Р°С‚Р°Р»Рё С…СЂР°Рј Рё РЅР°С‡Р°Р»Рё РїСЂРёРЅРѕСЃРёС‚СЊ Р¶РµСЂС‚РІС‹, РґР°Р±С‹ СѓРјРёСЂРѕС‚РІРѕСЂРёС‚СЊ РґРµРјРѕРЅР°.
+	AI_Output 		(self, hero,"Info_Xardas_RETURN_14_08"); //РќР°С€РµР» Р»Рё С‚С‹ РїСѓС‚СЊ РєРѕ РІС…РѕРґСѓ РІ С…СЂР°Рј?
+	AI_Output 		(hero, self,"Info_Xardas_RETURN_15_09"); //Р”Р°, РµСЃС‚СЊ РѕСЂРє, РєРѕС‚РѕСЂС‹Р№...
+	AI_Output 		(self, hero,"Info_Xardas_RETURN_14_10"); //РР·Р±Р°РІСЊ РјРµРЅСЏ РѕС‚ РїРѕРґСЂРѕР±РЅРѕСЃС‚РµР№! РћС‚РїСЂР°РІР»СЏР№СЃСЏ РІ РїРѕРґР·РµРјРЅС‹Р№ С…СЂР°Рј! РўР°Рј СЃРѕРєСЂС‹С‚ РЅР°С€ РµРґРёРЅСЃС‚РІРµРЅРЅС‹Р№ С€Р°РЅСЃ СѓРЅРёС‡С‚РѕР¶РёС‚СЊ Р‘Р°СЂСЊРµСЂ!
+	AI_Output 		(hero, self,"Info_Xardas_RETURN_15_11"); //РќРѕ СЏ РЅРµ РїРѕРЅРёРјР°СЋ!
+	AI_Output 		(self, hero,"Info_Xardas_RETURN_14_12"); //РќРµ С‚С‹ Р»Рё РІР·С‹РІР°Р» РєРѕ РјРЅРµ Рѕ РїРѕРјРѕС‰Рё, Р¶РµР»Р°СЏ СѓРЅРёС‡С‚РѕР¶РёС‚СЊ Р‘Р°СЂСЊРµСЂ?
+	AI_Output 		(hero, self,"Info_Xardas_RETURN_15_13"); //Р­С‚Рѕ С‚Р°Рє, РЅРѕ...
+	AI_Output 		(self, hero,"Info_Xardas_RETURN_14_14"); //РўРђРљ РР”Р Р–Р•! РњС‹ Рё С‚Р°Рє СѓР¶Рµ РїРѕС‚СЂР°С‚РёР»Рё РІРїСѓСЃС‚СѓСЋ РЅРµРјР°Р»Рѕ РІСЂРµРјРµРЅРё! РћС‚РїСЂР°РІР»СЏР№СЃСЏ РІ РїРѕРґР·РµРјРЅС‹Р№ С…СЂР°Рј Рё РЅР°Р№РґРё С‚Р°Рј РѕС‚РІРµС‚!
 
 	B_Story_ReturnedFromUrShak();
 }; 
@@ -483,7 +483,7 @@ instance  Info_Xardas_FOUNDTEMPLE (C_INFO)
 	information		= Info_Xardas_FOUNDTEMPLE_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Я нашел путь в подземный храм!"; 
+	description		= "РЇ РЅР°С€РµР» РїСѓС‚СЊ РІ РїРѕРґР·РµРјРЅС‹Р№ С…СЂР°Рј!"; 
 };
 
 FUNC int  Info_Xardas_FOUNDTEMPLE_Condition()
@@ -496,10 +496,10 @@ FUNC int  Info_Xardas_FOUNDTEMPLE_Condition()
 
 FUNC void  Info_Xardas_FOUNDTEMPLE_Info()
 {
-	AI_Output (other, self,"Info_Xardas_FOUNDTEMPLE_15_01"); //Я нашел путь в подземный храм!
-	AI_Output (self, other,"Info_Xardas_FOUNDTEMPLE_14_02"); //ТЕБЕ УДАЛОСЬ... Это невероятно!
-	AI_Output (self, other,"Info_Xardas_FOUNDTEMPLE_14_03"); //Сила твоя растет, и уже сейчас с тобой не может сравниться ни один из живущих в плену Барьера.
-	AI_Output (self, other,"Info_Xardas_FOUNDTEMPLE_14_04"); //Быть может, именно о тебе говорят оркские пророчества!
+	AI_Output (other, self,"Info_Xardas_FOUNDTEMPLE_15_01"); //РЇ РЅР°С€РµР» РїСѓС‚СЊ РІ РїРѕРґР·РµРјРЅС‹Р№ С…СЂР°Рј!
+	AI_Output (self, other,"Info_Xardas_FOUNDTEMPLE_14_02"); //РўР•Р‘Р• РЈР”РђР›РћРЎР¬... Р­С‚Рѕ РЅРµРІРµСЂРѕСЏС‚РЅРѕ!
+	AI_Output (self, other,"Info_Xardas_FOUNDTEMPLE_14_03"); //РЎРёР»Р° С‚РІРѕСЏ СЂР°СЃС‚РµС‚, Рё СѓР¶Рµ СЃРµР№С‡Р°СЃ СЃ С‚РѕР±РѕР№ РЅРµ РјРѕР¶РµС‚ СЃСЂР°РІРЅРёС‚СЊСЃСЏ РЅРё РѕРґРёРЅ РёР· Р¶РёРІСѓС‰РёС… РІ РїР»РµРЅСѓ Р‘Р°СЂСЊРµСЂР°.
+	AI_Output (self, other,"Info_Xardas_FOUNDTEMPLE_14_04"); //Р‘С‹С‚СЊ РјРѕР¶РµС‚, РёРјРµРЅРЅРѕ Рѕ С‚РµР±Рµ РіРѕРІРѕСЂСЏС‚ РѕСЂРєСЃРєРёРµ РїСЂРѕСЂРѕС‡РµСЃС‚РІР°!
 };
 
 //---------------------------------------------------------------------
@@ -512,7 +512,7 @@ instance  Info_Xardas_PROPHECY (C_INFO)
 	information		= Info_Xardas_PROPHECY_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Пророчества? Какие пророчества?"; 
+	description		= "РџСЂРѕСЂРѕС‡РµСЃС‚РІР°? РљР°РєРёРµ РїСЂРѕСЂРѕС‡РµСЃС‚РІР°?"; 
 };
 
 FUNC int  Info_Xardas_PROPHECY_Condition()
@@ -525,12 +525,12 @@ FUNC int  Info_Xardas_PROPHECY_Condition()
 
 FUNC void  Info_Xardas_PROPHECY_Info()
 {
-	AI_Output (other, self,"Info_Xardas_PROPHECY_15_01"); //Пророчества? Какие пророчества?
-	AI_Output (self, other,"Info_Xardas_PROPHECY_14_02"); //В древних книгах орков, написанных вскоре после того как был запечатан подземный храм, упоминается 'Священный Враг'.
-	AI_Output (other, self,"Info_Xardas_PROPHECY_15_03"); //Священный враг?
-	AI_Output (self, other,"Info_Xardas_PROPHECY_14_04"); //Человек, который придет, чтобы навсегда избавить этот мир от Спящего!
-	AI_Output (other, self,"Info_Xardas_PROPHECY_15_05"); //И обо мне говорят древние пророчества??? Ты, должно быть, ошибся!
-	AI_Output (self, other,"Info_Xardas_PROPHECY_14_06"); //Может быть... А может быть и нет!
+	AI_Output (other, self,"Info_Xardas_PROPHECY_15_01"); //РџСЂРѕСЂРѕС‡РµСЃС‚РІР°? РљР°РєРёРµ РїСЂРѕСЂРѕС‡РµСЃС‚РІР°?
+	AI_Output (self, other,"Info_Xardas_PROPHECY_14_02"); //Р’ РґСЂРµРІРЅРёС… РєРЅРёРіР°С… РѕСЂРєРѕРІ, РЅР°РїРёСЃР°РЅРЅС‹С… РІСЃРєРѕСЂРµ РїРѕСЃР»Рµ С‚РѕРіРѕ РєР°Рє Р±С‹Р» Р·Р°РїРµС‡Р°С‚Р°РЅ РїРѕРґР·РµРјРЅС‹Р№ С…СЂР°Рј, СѓРїРѕРјРёРЅР°РµС‚СЃСЏ 'РЎРІСЏС‰РµРЅРЅС‹Р№ Р’СЂР°Рі'.
+	AI_Output (other, self,"Info_Xardas_PROPHECY_15_03"); //РЎРІСЏС‰РµРЅРЅС‹Р№ РІСЂР°Рі?
+	AI_Output (self, other,"Info_Xardas_PROPHECY_14_04"); //Р§РµР»РѕРІРµРє, РєРѕС‚РѕСЂС‹Р№ РїСЂРёРґРµС‚, С‡С‚РѕР±С‹ РЅР°РІСЃРµРіРґР° РёР·Р±Р°РІРёС‚СЊ СЌС‚РѕС‚ РјРёСЂ РѕС‚ РЎРїСЏС‰РµРіРѕ!
+	AI_Output (other, self,"Info_Xardas_PROPHECY_15_05"); //Р РѕР±Рѕ РјРЅРµ РіРѕРІРѕСЂСЏС‚ РґСЂРµРІРЅРёРµ РїСЂРѕСЂРѕС‡РµСЃС‚РІР°??? РўС‹, РґРѕР»Р¶РЅРѕ Р±С‹С‚СЊ, РѕС€РёР±СЃСЏ!
+	AI_Output (self, other,"Info_Xardas_PROPHECY_14_06"); //РњРѕР¶РµС‚ Р±С‹С‚СЊ... Рђ РјРѕР¶РµС‚ Р±С‹С‚СЊ Рё РЅРµС‚!
 };
 
 //---------------------------------------------------------------------
@@ -543,7 +543,7 @@ instance  Info_Xardas_LOADSWORD (C_INFO)
 	information		= Info_Xardas_LOADSWORD_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Я нашел этот странный меч."; 
+	description		= "РЇ РЅР°С€РµР» СЌС‚РѕС‚ СЃС‚СЂР°РЅРЅС‹Р№ РјРµС‡."; 
 };
 
 FUNC int  Info_Xardas_LOADSWORD_Condition()
@@ -556,8 +556,8 @@ FUNC int  Info_Xardas_LOADSWORD_Condition()
 
 FUNC void  Info_Xardas_LOADSWORD_Info()
 {
-	AI_Output				(other, self,"Info_Xardas_LOADSWORD_15_01"); //Я нашел этот странный меч.
-	AI_Output				(self, other,"Info_Xardas_LOADSWORD_14_02"); //Покажи мне его.
+	AI_Output				(other, self,"Info_Xardas_LOADSWORD_15_01"); //РЇ РЅР°С€РµР» СЌС‚РѕС‚ СЃС‚СЂР°РЅРЅС‹Р№ РјРµС‡.
+	AI_Output				(self, other,"Info_Xardas_LOADSWORD_14_02"); //РџРѕРєР°Р¶Рё РјРЅРµ РµРіРѕ.
 
 	CreateInvItem 			(self, Mythrilklinge01);
 	AI_EquipBestMeleeWeapon	(self);
@@ -566,10 +566,10 @@ FUNC void  Info_Xardas_LOADSWORD_Info()
 	AI_RemoveWeapon			(self);
 	AI_UnequipWeapons		(self);
 
-	AI_Output				(self, other,"Info_Xardas_LOADSWORD_14_03"); //Как интересно... На нем выбито слово 'УРИЗЕЛЬ'.
-	AI_Output				(self, other,"Info_Xardas_LOADSWORD_14_04"); //Я слышал об этом мече. Он пришел из тех дней, которые принято называть зарей человечества.
-	AI_Output				(self, other,"Info_Xardas_LOADSWORD_14_05"); //Меч этот выкован из неведомого металла, и в древних книгах нет ни строчки о его создателях.
-	AI_Output				(self, other,"Info_Xardas_LOADSWORD_14_06"); //Говорят, что он обладает невероятной силой, но я даже не чувствую в нем магии. 
+	AI_Output				(self, other,"Info_Xardas_LOADSWORD_14_03"); //РљР°Рє РёРЅС‚РµСЂРµСЃРЅРѕ... РќР° РЅРµРј РІС‹Р±РёС‚Рѕ СЃР»РѕРІРѕ 'РЈР РР—Р•Р›Р¬'.
+	AI_Output				(self, other,"Info_Xardas_LOADSWORD_14_04"); //РЇ СЃР»С‹С€Р°Р» РѕР± СЌС‚РѕРј РјРµС‡Рµ. РћРЅ РїСЂРёС€РµР» РёР· С‚РµС… РґРЅРµР№, РєРѕС‚РѕСЂС‹Рµ РїСЂРёРЅСЏС‚Рѕ РЅР°Р·С‹РІР°С‚СЊ Р·Р°СЂРµР№ С‡РµР»РѕРІРµС‡РµСЃС‚РІР°.
+	AI_Output				(self, other,"Info_Xardas_LOADSWORD_14_05"); //РњРµС‡ СЌС‚РѕС‚ РІС‹РєРѕРІР°РЅ РёР· РЅРµРІРµРґРѕРјРѕРіРѕ РјРµС‚Р°Р»Р»Р°, Рё РІ РґСЂРµРІРЅРёС… РєРЅРёРіР°С… РЅРµС‚ РЅРё СЃС‚СЂРѕС‡РєРё Рѕ РµРіРѕ СЃРѕР·РґР°С‚РµР»СЏС….
+	AI_Output				(self, other,"Info_Xardas_LOADSWORD_14_06"); //Р“РѕРІРѕСЂСЏС‚, С‡С‚Рѕ РѕРЅ РѕР±Р»Р°РґР°РµС‚ РЅРµРІРµСЂРѕСЏС‚РЅРѕР№ СЃРёР»РѕР№, РЅРѕ СЏ РґР°Р¶Рµ РЅРµ С‡СѓРІСЃС‚РІСѓСЋ РІ РЅРµРј РјР°РіРёРё. 
 	
 	Npc_RemoveInvItem 		(hero, Mythrilklinge);	
 	CreateInvItem 			(hero, Mythrilklinge01);
@@ -585,7 +585,7 @@ instance  Info_Xardas_LOADSWORD01 (C_INFO)
 	information		= Info_Xardas_LOADSWORD01_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "УРИЗЕЛЬ обладает невероятной силой?"; 
+	description		= "РЈР РР—Р•Р›Р¬ РѕР±Р»Р°РґР°РµС‚ РЅРµРІРµСЂРѕСЏС‚РЅРѕР№ СЃРёР»РѕР№?"; 
 };
 
 FUNC int  Info_Xardas_LOADSWORD01_Condition()
@@ -601,11 +601,11 @@ FUNC void  Info_Xardas_LOADSWORD01_Info()
 {
 	Npc_RemoveInvItem 	(self, Mythrilklinge01);
 
-	AI_Output 			(other, self,"Info_Xardas_LOADSWORD01_15_01"); //УРИЗЕЛЬ обладает невероятной силой?
-	AI_Output 			(self, other,"Info_Xardas_LOADSWORD01_14_02"); //Встречаются упоминания о том, что меч этот без труда пронзает любые доспехи и разрушает самые мощные защитные заклинания.
-	AI_Output 			(other, self,"Info_Xardas_LOADSWORD01_15_03"); //Как могло оружие такой силы попасть в лапы орков?
-	AI_Output 			(self, other,"Info_Xardas_LOADSWORD01_14_04"); //Утверждают, что орки забрали его у могучего воина. Не зная, как владеть таким мечом, они просто спрятали его!
-	AI_Output 			(other, self,"Info_Xardas_LOADSWORD01_15_05"); //Но спрятали недостаточно хорошо!
+	AI_Output 			(other, self,"Info_Xardas_LOADSWORD01_15_01"); //РЈР РР—Р•Р›Р¬ РѕР±Р»Р°РґР°РµС‚ РЅРµРІРµСЂРѕСЏС‚РЅРѕР№ СЃРёР»РѕР№?
+	AI_Output 			(self, other,"Info_Xardas_LOADSWORD01_14_02"); //Р’СЃС‚СЂРµС‡Р°СЋС‚СЃСЏ СѓРїРѕРјРёРЅР°РЅРёСЏ Рѕ С‚РѕРј, С‡С‚Рѕ РјРµС‡ СЌС‚РѕС‚ Р±РµР· С‚СЂСѓРґР° РїСЂРѕРЅР·Р°РµС‚ Р»СЋР±С‹Рµ РґРѕСЃРїРµС…Рё Рё СЂР°Р·СЂСѓС€Р°РµС‚ СЃР°РјС‹Рµ РјРѕС‰РЅС‹Рµ Р·Р°С‰РёС‚РЅС‹Рµ Р·Р°РєР»РёРЅР°РЅРёСЏ.
+	AI_Output 			(other, self,"Info_Xardas_LOADSWORD01_15_03"); //РљР°Рє РјРѕРіР»Рѕ РѕСЂСѓР¶РёРµ С‚Р°РєРѕР№ СЃРёР»С‹ РїРѕРїР°СЃС‚СЊ РІ Р»Р°РїС‹ РѕСЂРєРѕРІ?
+	AI_Output 			(self, other,"Info_Xardas_LOADSWORD01_14_04"); //РЈС‚РІРµСЂР¶РґР°СЋС‚, С‡С‚Рѕ РѕСЂРєРё Р·Р°Р±СЂР°Р»Рё РµРіРѕ Сѓ РјРѕРіСѓС‡РµРіРѕ РІРѕРёРЅР°. РќРµ Р·РЅР°СЏ, РєР°Рє РІР»Р°РґРµС‚СЊ С‚Р°РєРёРј РјРµС‡РѕРј, РѕРЅРё РїСЂРѕСЃС‚Рѕ СЃРїСЂСЏС‚Р°Р»Рё РµРіРѕ!
+	AI_Output 			(other, self,"Info_Xardas_LOADSWORD01_15_05"); //РќРѕ СЃРїСЂСЏС‚Р°Р»Рё РЅРµРґРѕСЃС‚Р°С‚РѕС‡РЅРѕ С…РѕСЂРѕС€Рѕ!
 };
 
 //---------------------------------------------------------------------
@@ -618,7 +618,7 @@ instance  Info_Xardas_LOADSWORD02 (C_INFO)
 	information		= Info_Xardas_LOADSWORD02_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Можно ли вернуть былую силу этого оружия?"; 
+	description		= "РњРѕР¶РЅРѕ Р»Рё РІРµСЂРЅСѓС‚СЊ Р±С‹Р»СѓСЋ СЃРёР»Сѓ СЌС‚РѕРіРѕ РѕСЂСѓР¶РёСЏ?"; 
 };
 
 FUNC int  Info_Xardas_LOADSWORD02_Condition()
@@ -631,12 +631,12 @@ FUNC int  Info_Xardas_LOADSWORD02_Condition()
 
 FUNC void  Info_Xardas_LOADSWORD02_Info()
 {
-	AI_Output 			(other, self,"Info_Xardas_LOADSWORD02_15_01"); //Можно ли вернуть былую силу этого оружия?
-	AI_Output 			(self, other,"Info_Xardas_LOADSWORD02_14_02"); //Для этого тебе понадобится очень сильный источник магической энергии.
-	AI_Output 			(other, self,"Info_Xardas_LOADSWORD02_15_03"); //Такой, что способен разрушить даже магический Барьер?
-	AI_Output 			(self, other,"Info_Xardas_LOADSWORD02_14_04"); //Примерно такой...
-	AI_Output 			(self, other,"Info_Xardas_LOADSWORD02_14_05"); //Помимо этого тебе потребуется довольно необычное заклинание для переноса энергии.
-	AI_Output			(self, other,"Info_Xardas_LOADSWORD02_14_06"); //Через некоторое время я подготовлю его для тебя.
+	AI_Output 			(other, self,"Info_Xardas_LOADSWORD02_15_01"); //РњРѕР¶РЅРѕ Р»Рё РІРµСЂРЅСѓС‚СЊ Р±С‹Р»СѓСЋ СЃРёР»Сѓ СЌС‚РѕРіРѕ РѕСЂСѓР¶РёСЏ?
+	AI_Output 			(self, other,"Info_Xardas_LOADSWORD02_14_02"); //Р”Р»СЏ СЌС‚РѕРіРѕ С‚РµР±Рµ РїРѕРЅР°РґРѕР±РёС‚СЃСЏ РѕС‡РµРЅСЊ СЃРёР»СЊРЅС‹Р№ РёСЃС‚РѕС‡РЅРёРє РјР°РіРёС‡РµСЃРєРѕР№ СЌРЅРµСЂРіРёРё.
+	AI_Output 			(other, self,"Info_Xardas_LOADSWORD02_15_03"); //РўР°РєРѕР№, С‡С‚Рѕ СЃРїРѕСЃРѕР±РµРЅ СЂР°Р·СЂСѓС€РёС‚СЊ РґР°Р¶Рµ РјР°РіРёС‡РµСЃРєРёР№ Р‘Р°СЂСЊРµСЂ?
+	AI_Output 			(self, other,"Info_Xardas_LOADSWORD02_14_04"); //РџСЂРёРјРµСЂРЅРѕ С‚Р°РєРѕР№...
+	AI_Output 			(self, other,"Info_Xardas_LOADSWORD02_14_05"); //РџРѕРјРёРјРѕ СЌС‚РѕРіРѕ С‚РµР±Рµ РїРѕС‚СЂРµР±СѓРµС‚СЃСЏ РґРѕРІРѕР»СЊРЅРѕ РЅРµРѕР±С‹С‡РЅРѕРµ Р·Р°РєР»РёРЅР°РЅРёРµ РґР»СЏ РїРµСЂРµРЅРѕСЃР° СЌРЅРµСЂРіРёРё.
+	AI_Output			(self, other,"Info_Xardas_LOADSWORD02_14_06"); //Р§РµСЂРµР· РЅРµРєРѕС‚РѕСЂРѕРµ РІСЂРµРјСЏ СЏ РїРѕРґРіРѕС‚РѕРІР»СЋ РµРіРѕ РґР»СЏ С‚РµР±СЏ.
 
 	B_Story_ShowedUrizielToXardas();
 };
@@ -652,7 +652,7 @@ instance  Info_Xardas_BETTERARMOR (C_INFO)
 	information		= Info_Xardas_BETTERARMOR_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "А я тем временем поищу себе доспехи получше!"; 
+	description		= "Рђ СЏ С‚РµРј РІСЂРµРјРµРЅРµРј РїРѕРёС‰Сѓ СЃРµР±Рµ РґРѕСЃРїРµС…Рё РїРѕР»СѓС‡С€Рµ!"; 
 };
 
 FUNC int  Info_Xardas_BETTERARMOR_Condition()
@@ -665,30 +665,30 @@ FUNC int  Info_Xardas_BETTERARMOR_Condition()
 
 FUNC void  Info_Xardas_BETTERARMOR_Info()
 {
-	AI_Output		(other, self,"Info_Xardas_BETTERARMOR_15_01"); //А я тем временем поищу себе доспехи получше!
+	AI_Output		(other, self,"Info_Xardas_BETTERARMOR_15_01"); //Рђ СЏ С‚РµРј РІСЂРµРјРµРЅРµРј РїРѕРёС‰Сѓ СЃРµР±Рµ РґРѕСЃРїРµС…Рё РїРѕР»СѓС‡С€Рµ!
 
 	var C_ITEM	armor;			armor 			= Npc_GetEquippedArmor	(hero);
 	var int		armorInstance;	armorInstance	= Hlp_GetInstanceID		(armor);
 	if (armorInstance == CRW_ARMOR_H)
 	{
-		AI_Output	(other, self,"Info_Xardas_BETTERARMOR_15_02"); //В подземном храме эту кольчугу из панцирей ползунов дырявили слишком часто.
+		AI_Output	(other, self,"Info_Xardas_BETTERARMOR_15_02"); //Р’ РїРѕРґР·РµРјРЅРѕРј С…СЂР°РјРµ СЌС‚Сѓ РєРѕР»СЊС‡СѓРіСѓ РёР· РїР°РЅС†РёСЂРµР№ РїРѕР»Р·СѓРЅРѕРІ РґС‹СЂСЏРІРёР»Рё СЃР»РёС€РєРѕРј С‡Р°СЃС‚Рѕ.
 	}
 	else if (armorInstance == KDW_ARMOR_H) || (armorInstance == KDW_ARMOR_L)		
 	{
-		AI_Output	(other, self,"Info_Xardas_BETTERARMOR_15_03"); //Эта голубая рвань не слишком хорошо защищала меня в подземном храме. 
+		AI_Output	(other, self,"Info_Xardas_BETTERARMOR_15_03"); //Р­С‚Р° РіРѕР»СѓР±Р°СЏ СЂРІР°РЅСЊ РЅРµ СЃР»РёС€РєРѕРј С…РѕСЂРѕС€Рѕ Р·Р°С‰РёС‰Р°Р»Р° РјРµРЅСЏ РІ РїРѕРґР·РµРјРЅРѕРј С…СЂР°РјРµ. 
 	}
 	else
 	{
-		AI_Output	(other, self,"Info_Xardas_BETTERARMOR_15_04"); //Нежить буквально изрешетила мои старые доспехи.
+		AI_Output	(other, self,"Info_Xardas_BETTERARMOR_15_04"); //РќРµР¶РёС‚СЊ Р±СѓРєРІР°Р»СЊРЅРѕ РёР·СЂРµС€РµС‚РёР»Р° РјРѕРё СЃС‚Р°СЂС‹Рµ РґРѕСЃРїРµС…Рё.
 	};
 	
-	AI_Output		(self, other,"Info_Xardas_BETTERARMOR_14_05"); //Ты должен будешь пойти в мою старую башню.
-	AI_Output		(other, self,"Info_Xardas_BETTERARMOR_15_06"); //Твою старую башню?
-	AI_Output		(self, other,"Info_Xardas_BETTERARMOR_14_07"); //После землетрясения она оказалась на дне одного из восточных озер. Шпиль до сих пор торчит из воды.
-	AI_Output		(self, other,"Info_Xardas_BETTERARMOR_14_08"); //А внутри по-прежнему есть несколько ценных артефактов. Я ни разу не пытался вернуть их. 
-	AI_Output		(other, self,"Info_Xardas_BETTERARMOR_15_09"); //Как я туда попаду?
-	AI_Output		(self, other,"Info_Xardas_BETTERARMOR_14_10"); //Я не был там после землетрясения, так что вход тебе придется искать самому.
-	AI_Output		(self, other,"Info_Xardas_BETTERARMOR_14_11"); //Но возьми этот ключ. Им ты сможешь открыть сундук, в котором я хранил несколько чрезвычайно редких магических вещиц.
+	AI_Output		(self, other,"Info_Xardas_BETTERARMOR_14_05"); //РўС‹ РґРѕР»Р¶РµРЅ Р±СѓРґРµС€СЊ РїРѕР№С‚Рё РІ РјРѕСЋ СЃС‚Р°СЂСѓСЋ Р±Р°С€РЅСЋ.
+	AI_Output		(other, self,"Info_Xardas_BETTERARMOR_15_06"); //РўРІРѕСЋ СЃС‚Р°СЂСѓСЋ Р±Р°С€РЅСЋ?
+	AI_Output		(self, other,"Info_Xardas_BETTERARMOR_14_07"); //РџРѕСЃР»Рµ Р·РµРјР»РµС‚СЂСЏСЃРµРЅРёСЏ РѕРЅР° РѕРєР°Р·Р°Р»Р°СЃСЊ РЅР° РґРЅРµ РѕРґРЅРѕРіРѕ РёР· РІРѕСЃС‚РѕС‡РЅС‹С… РѕР·РµСЂ. РЁРїРёР»СЊ РґРѕ СЃРёС… РїРѕСЂ С‚РѕСЂС‡РёС‚ РёР· РІРѕРґС‹.
+	AI_Output		(self, other,"Info_Xardas_BETTERARMOR_14_08"); //Рђ РІРЅСѓС‚СЂРё РїРѕ-РїСЂРµР¶РЅРµРјСѓ РµСЃС‚СЊ РЅРµСЃРєРѕР»СЊРєРѕ С†РµРЅРЅС‹С… Р°СЂС‚РµС„Р°РєС‚РѕРІ. РЇ РЅРё СЂР°Р·Сѓ РЅРµ РїС‹С‚Р°Р»СЃСЏ РІРµСЂРЅСѓС‚СЊ РёС…. 
+	AI_Output		(other, self,"Info_Xardas_BETTERARMOR_15_09"); //РљР°Рє СЏ С‚СѓРґР° РїРѕРїР°РґСѓ?
+	AI_Output		(self, other,"Info_Xardas_BETTERARMOR_14_10"); //РЇ РЅРµ Р±С‹Р» С‚Р°Рј РїРѕСЃР»Рµ Р·РµРјР»РµС‚СЂСЏСЃРµРЅРёСЏ, С‚Р°Рє С‡С‚Рѕ РІС…РѕРґ С‚РµР±Рµ РїСЂРёРґРµС‚СЃСЏ РёСЃРєР°С‚СЊ СЃР°РјРѕРјСѓ.
+	AI_Output		(self, other,"Info_Xardas_BETTERARMOR_14_11"); //РќРѕ РІРѕР·СЊРјРё СЌС‚РѕС‚ РєР»СЋС‡. РРј С‚С‹ СЃРјРѕР¶РµС€СЊ РѕС‚РєСЂС‹С‚СЊ СЃСѓРЅРґСѓРє, РІ РєРѕС‚РѕСЂРѕРј СЏ С…СЂР°РЅРёР» РЅРµСЃРєРѕР»СЊРєРѕ С‡СЂРµР·РІС‹С‡Р°Р№РЅРѕ СЂРµРґРєРёС… РјР°РіРёС‡РµСЃРєРёС… РІРµС‰РёС†.
 
 	B_Story_ExploreSunkenTower();
 };
@@ -722,15 +722,15 @@ FUNC void  Info_Xardas_OREARMOR_Info()
 	if	(armorInstance == ORE_ARMOR_M)
 	||	(armorInstance == ORE_ARMOR_H)
 	{
-		AI_Output	(self, other,"Info_Xardas_OREARMOR_14_01"); //Я вижу на тебе железные доспехи.
+		AI_Output	(self, other,"Info_Xardas_OREARMOR_14_01"); //РЇ РІРёР¶Сѓ РЅР° С‚РµР±Рµ Р¶РµР»РµР·РЅС‹Рµ РґРѕСЃРїРµС…Рё.
 	}
 	else
 	{
-		AI_Output	(self, other,"Info_Xardas_OREARMOR_14_02"); //Я вижу, ты нашел железные доспехи.
+		AI_Output	(self, other,"Info_Xardas_OREARMOR_14_02"); //РЇ РІРёР¶Сѓ, С‚С‹ РЅР°С€РµР» Р¶РµР»РµР·РЅС‹Рµ РґРѕСЃРїРµС…Рё.
 	};
-	AI_Output		(other, self,"Info_Xardas_OREARMOR_15_03"); //Я нашел его в одном из старых сундуков в затонувшей башне.
-	AI_Output		(self, other,"Info_Xardas_OREARMOR_14_04"); //Когда-то он принадлежал тому же воину, который сражался против орков с УРИЗЕЛЕМ в руках.
-	AI_Output		(other, self,"Info_Xardas_OREARMOR_15_05"); //Надеюсь, он принесет мне больше удачи, чем своему прежнему хозяину.
+	AI_Output		(other, self,"Info_Xardas_OREARMOR_15_03"); //РЇ РЅР°С€РµР» РµРіРѕ РІ РѕРґРЅРѕРј РёР· СЃС‚Р°СЂС‹С… СЃСѓРЅРґСѓРєРѕРІ РІ Р·Р°С‚РѕРЅСѓРІС€РµР№ Р±Р°С€РЅРµ.
+	AI_Output		(self, other,"Info_Xardas_OREARMOR_14_04"); //РљРѕРіРґР°-С‚Рѕ РѕРЅ РїСЂРёРЅР°РґР»РµР¶Р°Р» С‚РѕРјСѓ Р¶Рµ РІРѕРёРЅСѓ, РєРѕС‚РѕСЂС‹Р№ СЃСЂР°Р¶Р°Р»СЃСЏ РїСЂРѕС‚РёРІ РѕСЂРєРѕРІ СЃ РЈР РР—Р•Р›Р•Рњ РІ СЂСѓРєР°С….
+	AI_Output		(other, self,"Info_Xardas_OREARMOR_15_05"); //РќР°РґРµСЋСЃСЊ, РѕРЅ РїСЂРёРЅРµСЃРµС‚ РјРЅРµ Р±РѕР»СЊС€Рµ СѓРґР°С‡Рё, С‡РµРј СЃРІРѕРµРјСѓ РїСЂРµР¶РЅРµРјСѓ С…РѕР·СЏРёРЅСѓ.
 };
 
 //---------------------------------------------------------------------
@@ -743,7 +743,7 @@ instance  Info_Xardas_FORMULA (C_INFO)
 	information		= Info_Xardas_FORMULA_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Ты подготовил заклинание, для возвращения силы УРИЗЕЛЯ?";
+	description		= "РўС‹ РїРѕРґРіРѕС‚РѕРІРёР» Р·Р°РєР»РёРЅР°РЅРёРµ, РґР»СЏ РІРѕР·РІСЂР°С‰РµРЅРёСЏ СЃРёР»С‹ РЈР РР—Р•Р›РЇ?";
 };
 
 FUNC int  Info_Xardas_FORMULA_Condition()
@@ -758,12 +758,12 @@ FUNC int  Info_Xardas_FORMULA_Condition()
 
 FUNC void  Info_Xardas_FORMULA_Info()
 {
-	AI_Output		(other, self,"Info_Xardas_FORMULA_15_01"); //Ты подготовил заклинание, для того чтобы вернуть былую силу УРИЗЕЛЯ?
-	AI_Output		(self, other,"Info_Xardas_FORMULA_14_02"); //Оно готово. Но ты не сможешь воспользоваться им.
-	AI_Output		(other, self,"Info_Xardas_FORMULA_15_03"); //Почему?
-	AI_Output		(self, other,"Info_Xardas_FORMULA_14_04"); //Его должен произносить маг, пока ты будешь касаться мечом источника магической энергии.
-	AI_Output		(other, self,"Info_Xardas_FORMULA_15_05"); //Что ж, придется позвать кого-нибудь на помощь.
-	AI_Output		(self, other,"Info_Xardas_FORMULA_14_06"); //Возьми заклинание и верни былую силу этого меча. Она тебе потребуется!
+	AI_Output		(other, self,"Info_Xardas_FORMULA_15_01"); //РўС‹ РїРѕРґРіРѕС‚РѕРІРёР» Р·Р°РєР»РёРЅР°РЅРёРµ, РґР»СЏ С‚РѕРіРѕ С‡С‚РѕР±С‹ РІРµСЂРЅСѓС‚СЊ Р±С‹Р»СѓСЋ СЃРёР»Сѓ РЈР РР—Р•Р›РЇ?
+	AI_Output		(self, other,"Info_Xardas_FORMULA_14_02"); //РћРЅРѕ РіРѕС‚РѕРІРѕ. РќРѕ С‚С‹ РЅРµ СЃРјРѕР¶РµС€СЊ РІРѕСЃРїРѕР»СЊР·РѕРІР°С‚СЊСЃСЏ РёРј.
+	AI_Output		(other, self,"Info_Xardas_FORMULA_15_03"); //РџРѕС‡РµРјСѓ?
+	AI_Output		(self, other,"Info_Xardas_FORMULA_14_04"); //Р•РіРѕ РґРѕР»Р¶РµРЅ РїСЂРѕРёР·РЅРѕСЃРёС‚СЊ РјР°Рі, РїРѕРєР° С‚С‹ Р±СѓРґРµС€СЊ РєР°СЃР°С‚СЊСЃСЏ РјРµС‡РѕРј РёСЃС‚РѕС‡РЅРёРєР° РјР°РіРёС‡РµСЃРєРѕР№ СЌРЅРµСЂРіРёРё.
+	AI_Output		(other, self,"Info_Xardas_FORMULA_15_05"); //Р§С‚Рѕ Р¶, РїСЂРёРґРµС‚СЃСЏ РїРѕР·РІР°С‚СЊ РєРѕРіРѕ-РЅРёР±СѓРґСЊ РЅР° РїРѕРјРѕС‰СЊ.
+	AI_Output		(self, other,"Info_Xardas_FORMULA_14_06"); //Р’РѕР·СЊРјРё Р·Р°РєР»РёРЅР°РЅРёРµ Рё РІРµСЂРЅРё Р±С‹Р»СѓСЋ СЃРёР»Сѓ СЌС‚РѕРіРѕ РјРµС‡Р°. РћРЅР° С‚РµР±Рµ РїРѕС‚СЂРµР±СѓРµС‚СЃСЏ!
 
 	B_Story_LoadSword();
 };
@@ -778,7 +778,7 @@ instance  Info_Xardas_ALTRUNE (C_INFO)
 	information		= Info_Xardas_ALTRUNE_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Но я же маг! Мне нелего будет управляться с мечом!";
+	description		= "РќРѕ СЏ Р¶Рµ РјР°Рі! РњРЅРµ РЅРµР»РµРіРѕ Р±СѓРґРµС‚ СѓРїСЂР°РІР»СЏС‚СЊСЃСЏ СЃ РјРµС‡РѕРј!";
 };
 
 FUNC int  Info_Xardas_ALTRUNE_Condition()
@@ -792,9 +792,9 @@ FUNC int  Info_Xardas_ALTRUNE_Condition()
 
 FUNC void  Info_Xardas_ALTRUNE_Info()
 {
-	AI_Output		(other, self,"Info_Xardas_ALTRUNE_15_01"); //Но я же маг! Мне нелего будет управляться с мечом!
-	AI_Output		(self, other,"Info_Xardas_ALTRUNE_14_02"); //Есть один способ...
-	AI_Output		(self, other,"Info_Xardas_ALTRUNE_14_03"); //Но прежде восстанови силу меча - и затем возвращайся!
+	AI_Output		(other, self,"Info_Xardas_ALTRUNE_15_01"); //РќРѕ СЏ Р¶Рµ РјР°Рі! РњРЅРµ РЅРµР»РµРіРѕ Р±СѓРґРµС‚ СѓРїСЂР°РІР»СЏС‚СЊСЃСЏ СЃ РјРµС‡РѕРј!
+	AI_Output		(self, other,"Info_Xardas_ALTRUNE_14_02"); //Р•СЃС‚СЊ РѕРґРёРЅ СЃРїРѕСЃРѕР±...
+	AI_Output		(self, other,"Info_Xardas_ALTRUNE_14_03"); //РќРѕ РїСЂРµР¶РґРµ РІРѕСЃСЃС‚Р°РЅРѕРІРё СЃРёР»Сѓ РјРµС‡Р° - Рё Р·Р°С‚РµРј РІРѕР·РІСЂР°С‰Р°Р№СЃСЏ!
 };
 
 
@@ -808,7 +808,7 @@ instance  Info_Xardas_SWORDLOADED (C_INFO)
 	information		= Info_Xardas_SWORDLOADED_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Я восстановил УРИЗЕЛЬ!"; 
+	description		= "РЇ РІРѕСЃСЃС‚Р°РЅРѕРІРёР» РЈР РР—Р•Р›Р¬!"; 
 };
 
 FUNC int  Info_Xardas_SWORDLOADED_Condition()
@@ -821,10 +821,10 @@ FUNC int  Info_Xardas_SWORDLOADED_Condition()
 
 FUNC void  Info_Xardas_SWORDLOADED_Info()
 {
-	AI_Output		(other, self,"Info_Xardas_SWORDLOADED_15_01"); //Я восстановил УРИЗЕЛЬ!
-	AI_Output		(self, other,"Info_Xardas_SWORDLOADED_14_02"); //Невероятно: меч вновь обрел былую силу! Теперь в твоих руках действительно мощное оружие! 
+	AI_Output		(other, self,"Info_Xardas_SWORDLOADED_15_01"); //РЇ РІРѕСЃСЃС‚Р°РЅРѕРІРёР» РЈР РР—Р•Р›Р¬!
+	AI_Output		(self, other,"Info_Xardas_SWORDLOADED_14_02"); //РќРµРІРµСЂРѕСЏС‚РЅРѕ: РјРµС‡ РІРЅРѕРІСЊ РѕР±СЂРµР» Р±С‹Р»СѓСЋ СЃРёР»Сѓ! РўРµРїРµСЂСЊ РІ С‚РІРѕРёС… СЂСѓРєР°С… РґРµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ РјРѕС‰РЅРѕРµ РѕСЂСѓР¶РёРµ! 
 
-	Wld_InsertItem			(ItArScrollTeleport4,"OW_ORC_SHAMAN_ROOM2");	//Unblutige Lцsung fьrґs Ich-brauch-Orc-Statue-Massaker ***Bjцrn***
+	Wld_InsertItem			(ItArScrollTeleport4,"OW_ORC_SHAMAN_ROOM2");	//Unblutige LС†sung fСЊrТ‘s Ich-brauch-Orc-Statue-Massaker ***BjС†rn***
 
 };
 
@@ -838,7 +838,7 @@ instance  Info_Xardas_MAKERUNE (C_INFO)
 	information		= Info_Xardas_MAKERUNE_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Ты говорил, что даже маг сможет воспользоваться этим мечом."; 
+	description		= "РўС‹ РіРѕРІРѕСЂРёР», С‡С‚Рѕ РґР°Р¶Рµ РјР°Рі СЃРјРѕР¶РµС‚ РІРѕСЃРїРѕР»СЊР·РѕРІР°С‚СЊСЃСЏ СЌС‚РёРј РјРµС‡РѕРј."; 
 };
 
 FUNC int  Info_Xardas_MAKERUNE_Condition()
@@ -852,13 +852,13 @@ FUNC int  Info_Xardas_MAKERUNE_Condition()
 
 FUNC void  Info_Xardas_MAKERUNE_Info()
 {
-	AI_Output		(other, self,"Info_Xardas_MAKERUNE_15_01"); //Ты говорил, что даже маг сможет воспользоваться этим мечом.
-	AI_Output		(self, other,"Info_Xardas_MAKERUNE_14_02"); //Присмотрись к нему повнимательнее. Видишь этот синий камень в основании клинка?
-	AI_Output		(self, other,"Info_Xardas_MAKERUNE_14_03"); //В нем заключена вся магическая сила УРИЗЕЛЯ.
-	AI_Output		(self, other,"Info_Xardas_MAKERUNE_14_04"); //Если забрать его оттуда, я смогу создать магическую руну с теми же свойствами.
-	AI_Output		(other, self,"Info_Xardas_MAKERUNE_15_05"); //Сделать из меча магическую руну?
-	AI_Output		(self, other,"Info_Xardas_MAKERUNE_14_06"); //В бою сила ее не уступит силе УРИЗЕЛЯ!
-	AI_Output		(self, other,"Info_Xardas_MAKERUNE_14_07"); //Но помни: лишь магу Шестого Круга посвящения под силу будет управиться с этой могущественной руной!
+	AI_Output		(other, self,"Info_Xardas_MAKERUNE_15_01"); //РўС‹ РіРѕРІРѕСЂРёР», С‡С‚Рѕ РґР°Р¶Рµ РјР°Рі СЃРјРѕР¶РµС‚ РІРѕСЃРїРѕР»СЊР·РѕРІР°С‚СЊСЃСЏ СЌС‚РёРј РјРµС‡РѕРј.
+	AI_Output		(self, other,"Info_Xardas_MAKERUNE_14_02"); //РџСЂРёСЃРјРѕС‚СЂРёСЃСЊ Рє РЅРµРјСѓ РїРѕРІРЅРёРјР°С‚РµР»СЊРЅРµРµ. Р’РёРґРёС€СЊ СЌС‚РѕС‚ СЃРёРЅРёР№ РєР°РјРµРЅСЊ РІ РѕСЃРЅРѕРІР°РЅРёРё РєР»РёРЅРєР°?
+	AI_Output		(self, other,"Info_Xardas_MAKERUNE_14_03"); //Р’ РЅРµРј Р·Р°РєР»СЋС‡РµРЅР° РІСЃСЏ РјР°РіРёС‡РµСЃРєР°СЏ СЃРёР»Р° РЈР РР—Р•Р›РЇ.
+	AI_Output		(self, other,"Info_Xardas_MAKERUNE_14_04"); //Р•СЃР»Рё Р·Р°Р±СЂР°С‚СЊ РµРіРѕ РѕС‚С‚СѓРґР°, СЏ СЃРјРѕРіСѓ СЃРѕР·РґР°С‚СЊ РјР°РіРёС‡РµСЃРєСѓСЋ СЂСѓРЅСѓ СЃ С‚РµРјРё Р¶Рµ СЃРІРѕР№СЃС‚РІР°РјРё.
+	AI_Output		(other, self,"Info_Xardas_MAKERUNE_15_05"); //РЎРґРµР»Р°С‚СЊ РёР· РјРµС‡Р° РјР°РіРёС‡РµСЃРєСѓСЋ СЂСѓРЅСѓ?
+	AI_Output		(self, other,"Info_Xardas_MAKERUNE_14_06"); //Р’ Р±РѕСЋ СЃРёР»Р° РµРµ РЅРµ СѓСЃС‚СѓРїРёС‚ СЃРёР»Рµ РЈР РР—Р•Р›РЇ!
+	AI_Output		(self, other,"Info_Xardas_MAKERUNE_14_07"); //РќРѕ РїРѕРјРЅРё: Р»РёС€СЊ РјР°РіСѓ РЁРµСЃС‚РѕРіРѕ РљСЂСѓРіР° РїРѕСЃРІСЏС‰РµРЅРёСЏ РїРѕРґ СЃРёР»Сѓ Р±СѓРґРµС‚ СѓРїСЂР°РІРёС‚СЊСЃСЏ СЃ СЌС‚РѕР№ РјРѕРіСѓС‰РµСЃС‚РІРµРЅРЅРѕР№ СЂСѓРЅРѕР№!
 };
 
 //---------------------------------------------------------------------
@@ -871,7 +871,7 @@ instance  Info_Xardas_MAKERUNEDOIT (C_INFO)
 	information		= Info_Xardas_MAKERUNEDOIT_Info;
 	important		= 0;
 	permanent		= 1;
-	description		= "Возьми камень из УРИЗЕЛЯ!"; 
+	description		= "Р’РѕР·СЊРјРё РєР°РјРµРЅСЊ РёР· РЈР РР—Р•Р›РЇ!"; 
 };
 
 FUNC int  Info_Xardas_MAKERUNEDOIT_Condition()
@@ -885,38 +885,38 @@ FUNC int  Info_Xardas_MAKERUNEDOIT_Condition()
 
 FUNC void  Info_Xardas_MAKERUNEDOIT_Info()
 {
-	AI_Output			(other, self,"Info_Xardas_MAKERUNEDOIT_15_01"); //Возьми камень из УРИЗЕЛЯ!
+	AI_Output			(other, self,"Info_Xardas_MAKERUNEDOIT_15_01"); //Р’РѕР·СЊРјРё РєР°РјРµРЅСЊ РёР· РЈР РР—Р•Р›РЇ!
 	if (Npc_GetTalentSkill(hero, NPC_TALENT_MAGE) < 6)
 	{
-		AI_Output		(self, other,"Info_Xardas_MAKERUNEDOIT_14_02"); //Но ты еще не прошел Шестой Круг магии!
+		AI_Output		(self, other,"Info_Xardas_MAKERUNEDOIT_14_02"); //РќРѕ С‚С‹ РµС‰Рµ РЅРµ РїСЂРѕС€РµР» РЁРµСЃС‚РѕР№ РљСЂСѓРі РјР°РіРёРё!
 	};
-	AI_Output			(self, other,"Info_Xardas_MAKERUNEDOIT_14_03"); //Это твое окончательное решение. Ты действительно хочешь, чтобы я забрал этот камень?
+	AI_Output			(self, other,"Info_Xardas_MAKERUNEDOIT_14_03"); //Р­С‚Рѕ С‚РІРѕРµ РѕРєРѕРЅС‡Р°С‚РµР»СЊРЅРѕРµ СЂРµС€РµРЅРёРµ. РўС‹ РґРµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ С…РѕС‡РµС€СЊ, С‡С‚РѕР±С‹ СЏ Р·Р°Р±СЂР°Р» СЌС‚РѕС‚ РєР°РјРµРЅСЊ?
 
 	Info_ClearChoices	(Info_Xardas_MAKERUNEDOIT);
-	Info_AddChoice		(Info_Xardas_MAKERUNEDOIT,"ДА, сделай это!",	Info_Xardas_MAKERUNE_YES);
-	Info_AddChoice		(Info_Xardas_MAKERUNEDOIT,"НЕТ, не делай этого!",	Info_Xardas_MAKERUNE_NO);
+	Info_AddChoice		(Info_Xardas_MAKERUNEDOIT,"Р”Рђ, СЃРґРµР»Р°Р№ СЌС‚Рѕ!",	Info_Xardas_MAKERUNE_YES);
+	Info_AddChoice		(Info_Xardas_MAKERUNEDOIT,"РќР•Рў, РЅРµ РґРµР»Р°Р№ СЌС‚РѕРіРѕ!",	Info_Xardas_MAKERUNE_NO);
 };
 
 func void Info_Xardas_MAKERUNE_YES ()
 {
 	Info_ClearChoices	(Info_Xardas_MAKERUNEDOIT);
-	AI_Output			(other, self,"Info_Xardas_MAKERUNEDOIT_15_04"); //ДА, сделай это!
-	AI_Output			(self, other,"Info_Xardas_MAKERUNEDOIT_14_05"); //Как пожелаешь... Вот, возьми пустой меч и руну!
+	AI_Output			(other, self,"Info_Xardas_MAKERUNEDOIT_15_04"); //Р”Рђ, СЃРґРµР»Р°Р№ СЌС‚Рѕ!
+	AI_Output			(self, other,"Info_Xardas_MAKERUNEDOIT_14_05"); //РљР°Рє РїРѕР¶РµР»Р°РµС€СЊ... Р’РѕС‚, РІРѕР·СЊРјРё РїСѓСЃС‚РѕР№ РјРµС‡ Рё СЂСѓРЅСѓ!
 
 	Npc_RemoveInvItem 	(hero, Mythrilklinge02);
 	CreateInvItems 		(self, UrizielRune, 2);	
-	B_GiveInvItems      (self, hero, UrizielRune, 2);// Wegen Ausgabe "2 Items ьbergeben", wird direkt angeglichen
+	B_GiveInvItems      (self, hero, UrizielRune, 2);// Wegen Ausgabe "2 Items СЊbergeben", wird direkt angeglichen
 	Npc_RemoveInvItem	(hero, UrizielRune);
 	CreateInvItem		(hero, Mythrilklinge03);
-	B_LogEntry			(CH5_Uriziel,"Ксардас удалил магический камень из меча УРИЗЕЛЯ. Теперь сила меча заключена в магической руне несказанной мощи.");
+	B_LogEntry			(CH5_Uriziel,"РљСЃР°СЂРґР°СЃ СѓРґР°Р»РёР» РјР°РіРёС‡РµСЃРєРёР№ РєР°РјРµРЅСЊ РёР· РјРµС‡Р° РЈР РР—Р•Р›РЇ. РўРµРїРµСЂСЊ СЃРёР»Р° РјРµС‡Р° Р·Р°РєР»СЋС‡РµРЅР° РІ РјР°РіРёС‡РµСЃРєРѕР№ СЂСѓРЅРµ РЅРµСЃРєР°Р·Р°РЅРЅРѕР№ РјРѕС‰Рё.");
 	Log_SetTopicStatus	(CH5_Uriziel,	LOG_SUCCESS);
 };	
 
 func void Info_Xardas_MAKERUNE_NO ()
 {
 	Info_ClearChoices	(Info_Xardas_MAKERUNEDOIT);
-	AI_Output			(other, self,"Info_Xardas_MAKERUNEDOIT_15_06"); //НЕТ, не делай этого!
-	AI_Output			(self, other,"Info_Xardas_MAKERUNEDOIT_14_07"); //Как пожелаешь. Магическая сила останется в этом мече!
+	AI_Output			(other, self,"Info_Xardas_MAKERUNEDOIT_15_06"); //РќР•Рў, РЅРµ РґРµР»Р°Р№ СЌС‚РѕРіРѕ!
+	AI_Output			(self, other,"Info_Xardas_MAKERUNEDOIT_14_07"); //РљР°Рє РїРѕР¶РµР»Р°РµС€СЊ. РњР°РіРёС‡РµСЃРєР°СЏ СЃРёР»Р° РѕСЃС‚Р°РЅРµС‚СЃСЏ РІ СЌС‚РѕРј РјРµС‡Рµ!
 };	
 	
 
@@ -943,23 +943,23 @@ FUNC int  Info_Xardas_LOADSWORD09_Condition()
 };
 func void  Info_Xardas_LOADSWORD09_Info()
 {
-	AI_Output (other, self,"Info_Xardas_LOADSWORD09_15_01");		//Ты научишь меня?
+	AI_Output (other, self,"Info_Xardas_LOADSWORD09_15_01");		//РўС‹ РЅР°СѓС‡РёС€СЊ РјРµРЅСЏ?
 	
 	if ( Npc_GetTalentSkill	( hero,	NPC_TALENT_MAGE ) == 5) 
 	{
 		
 		if (B_GiveSkill(other, NPC_TALENT_MAGE, 6, LPCOST_TALENT_MAGE_6))
 		{
-			AI_Output (self, other,"Info_Xardas_LOADSWORD09_14_02"); //Я подниму тебя в Шестой Круг магии.
-			AI_Output (self, other,"Info_Xardas_LOADSWORD09_14_03"); //Заметь, в Шестой Круг могут вступить лишь самые могущественные из магов. Он предназначен для тех, чья жизнь - это знак.
-			AI_Output (self, other,"Info_Xardas_LOADSWORD09_14_04"); //Твой знак - в объединении стихий.
-			AI_Output (self, other,"Info_Xardas_LOADSWORD09_14_05"); //Шестой Круг позволит тебе использовать магию любой руны.
-			AI_Output (self, other,"Info_Xardas_LOADSWORD09_14_06"); //И не забудь: не захватывать силу, но быть ее источником.
+			AI_Output (self, other,"Info_Xardas_LOADSWORD09_14_02"); //РЇ РїРѕРґРЅРёРјСѓ С‚РµР±СЏ РІ РЁРµСЃС‚РѕР№ РљСЂСѓРі РјР°РіРёРё.
+			AI_Output (self, other,"Info_Xardas_LOADSWORD09_14_03"); //Р—Р°РјРµС‚СЊ, РІ РЁРµСЃС‚РѕР№ РљСЂСѓРі РјРѕРіСѓС‚ РІСЃС‚СѓРїРёС‚СЊ Р»РёС€СЊ СЃР°РјС‹Рµ РјРѕРіСѓС‰РµСЃС‚РІРµРЅРЅС‹Рµ РёР· РјР°РіРѕРІ. РћРЅ РїСЂРµРґРЅР°Р·РЅР°С‡РµРЅ РґР»СЏ С‚РµС…, С‡СЊСЏ Р¶РёР·РЅСЊ - СЌС‚Рѕ Р·РЅР°Рє.
+			AI_Output (self, other,"Info_Xardas_LOADSWORD09_14_04"); //РўРІРѕР№ Р·РЅР°Рє - РІ РѕР±СЉРµРґРёРЅРµРЅРёРё СЃС‚РёС…РёР№.
+			AI_Output (self, other,"Info_Xardas_LOADSWORD09_14_05"); //РЁРµСЃС‚РѕР№ РљСЂСѓРі РїРѕР·РІРѕР»РёС‚ С‚РµР±Рµ РёСЃРїРѕР»СЊР·РѕРІР°С‚СЊ РјР°РіРёСЋ Р»СЋР±РѕР№ СЂСѓРЅС‹.
+			AI_Output (self, other,"Info_Xardas_LOADSWORD09_14_06"); //Р РЅРµ Р·Р°Р±СѓРґСЊ: РЅРµ Р·Р°С…РІР°С‚С‹РІР°С‚СЊ СЃРёР»Сѓ, РЅРѕ Р±С‹С‚СЊ РµРµ РёСЃС‚РѕС‡РЅРёРєРѕРј.
 			
-			CreateInvItem 		(hero, DMB_ARMOR_M);		// SN: kann nicht mit B_GiveInvItem() ьbergeben werden, da Xardas sonst nackt dasteht!
+			CreateInvItem 		(hero, DMB_ARMOR_M);		// SN: kann nicht mit B_GiveInvItem() СЊbergeben werden, da Xardas sonst nackt dasteht!
 			AI_EquipBestArmor	(hero);
 
-			//Fakeitem fьr Bildschirmausgabe
+			//Fakeitem fСЊr Bildschirmausgabe
 			CreateInvItem		(self,			ItAmArrow);
 			B_GiveInvItems		(self, hero,	ItAmArrow, 1);
 			Npc_RemoveInvItem	(hero,			ItAmArrow);
@@ -972,7 +972,7 @@ func void  Info_Xardas_LOADSWORD09_Info()
 	}
 	else 
 	{
-		AI_Output (self, other,"Info_Xardas_LOADSWORD09_14_07"); 	//Не сейчас. У тебя есть все навыки, но ты еще недостаточно опытен. Пусть сначала с тобой позанимается Сатурас.
+		AI_Output (self, other,"Info_Xardas_LOADSWORD09_14_07"); 	//РќРµ СЃРµР№С‡Р°СЃ. РЈ С‚РµР±СЏ РµСЃС‚СЊ РІСЃРµ РЅР°РІС‹РєРё, РЅРѕ С‚С‹ РµС‰Рµ РЅРµРґРѕСЃС‚Р°С‚РѕС‡РЅРѕ РѕРїС‹С‚РµРЅ. РџСѓСЃС‚СЊ СЃРЅР°С‡Р°Р»Р° СЃ С‚РѕР±РѕР№ РїРѕР·Р°РЅРёРјР°РµС‚СЃСЏ РЎР°С‚СѓСЂР°СЃ.
 		
 		AI_StopProcessInfos	( self );
 	};

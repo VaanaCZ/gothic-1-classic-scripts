@@ -2,7 +2,7 @@ instance ORG_818_Ratford (Npc_Default)
 {
 	//-------- primary data --------
 	
-	name =					"Рэтфорд";
+	name =					"Р СЌС‚С„РѕСЂРґ";
 	Npctype =				Npctype_Main;	
 	guild =					GIL_ORG;      
 	level =					8;

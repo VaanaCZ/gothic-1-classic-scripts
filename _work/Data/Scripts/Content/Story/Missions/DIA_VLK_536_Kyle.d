@@ -47,7 +47,7 @@ FUNC INT DIA_Kyle_HutRage_Condition()
 
 FUNC VOID DIA_Kyle_HutRage_Info()
 {
-	AI_Output (self, other,"DIA_Kyle_HutRage_10_00"); //Сколько раз я говорил вам, ублюдкам, не проходить через мой дом?!
+	AI_Output (self, other,"DIA_Kyle_HutRage_10_00"); //РЎРєРѕР»СЊРєРѕ СЂР°Р· СЏ РіРѕРІРѕСЂРёР» РІР°Рј, СѓР±Р»СЋРґРєР°Рј, РЅРµ РїСЂРѕС…РѕРґРёС‚СЊ С‡РµСЂРµР· РјРѕР№ РґРѕРј?!
 };
 
 // **************************************************
@@ -61,7 +61,7 @@ INSTANCE DIA_Kyle_Problem (C_INFO)
 	condition		= DIA_Kyle_Problem_Condition;
 	information		= DIA_Kyle_Problem_Info;
 	permanent		= 1;
-	description		= "Эй, в чем проблема?";
+	description		= "Р­Р№, РІ С‡РµРј РїСЂРѕР±Р»РµРјР°?";
 };
 
 FUNC INT DIA_Kyle_Problem_Condition()
@@ -71,14 +71,14 @@ FUNC INT DIA_Kyle_Problem_Condition()
 
 FUNC VOID DIA_Kyle_Problem_Info()
 {
-	AI_Output (other, self,"DIA_Kyle_Problem_15_00"); //Эй, в чем проблема?
-	AI_Output (self, other,"DIA_Kyle_Problem_10_01"); //Оставь меня в покое, парень! Для МЕНЯ вы все - проблема.
-	AI_Output (self, other,"DIA_Kyle_Problem_10_02"); //Как они все пялились, когда я строил свой дом!
-	AI_Output (self, other,"DIA_Kyle_Problem_10_03"); //`Не строй дом так близко к котловану`, - говорили они.
-	AI_Output (self, other,"DIA_Kyle_Problem_10_04"); //Но ни один из этих ублюдков не сказал мне, что будет, если я все-таки построю его здесь.
-	AI_Output (self, other,"DIA_Kyle_Problem_10_05"); //Когда я вернулся из шахты несколько дней назад, у меня появилась вторая дверь.
-	AI_Output (self, other,"DIA_Kyle_Problem_10_06"); //Эти свиньи! Я их ненавижу! Ты даже представить себе не можешь, как я их ненавижу!
-	AI_Output (self, other,"DIA_Kyle_Problem_10_07"); //Теперь все проходят через мой дом. Каждый идиот.
+	AI_Output (other, self,"DIA_Kyle_Problem_15_00"); //Р­Р№, РІ С‡РµРј РїСЂРѕР±Р»РµРјР°?
+	AI_Output (self, other,"DIA_Kyle_Problem_10_01"); //РћСЃС‚Р°РІСЊ РјРµРЅСЏ РІ РїРѕРєРѕРµ, РїР°СЂРµРЅСЊ! Р”Р»СЏ РњР•РќРЇ РІС‹ РІСЃРµ - РїСЂРѕР±Р»РµРјР°.
+	AI_Output (self, other,"DIA_Kyle_Problem_10_02"); //РљР°Рє РѕРЅРё РІСЃРµ РїСЏР»РёР»РёСЃСЊ, РєРѕРіРґР° СЏ СЃС‚СЂРѕРёР» СЃРІРѕР№ РґРѕРј!
+	AI_Output (self, other,"DIA_Kyle_Problem_10_03"); //`РќРµ СЃС‚СЂРѕР№ РґРѕРј С‚Р°Рє Р±Р»РёР·РєРѕ Рє РєРѕС‚Р»РѕРІР°РЅСѓ`, - РіРѕРІРѕСЂРёР»Рё РѕРЅРё.
+	AI_Output (self, other,"DIA_Kyle_Problem_10_04"); //РќРѕ РЅРё РѕРґРёРЅ РёР· СЌС‚РёС… СѓР±Р»СЋРґРєРѕРІ РЅРµ СЃРєР°Р·Р°Р» РјРЅРµ, С‡С‚Рѕ Р±СѓРґРµС‚, РµСЃР»Рё СЏ РІСЃРµ-С‚Р°РєРё РїРѕСЃС‚СЂРѕСЋ РµРіРѕ Р·РґРµСЃСЊ.
+	AI_Output (self, other,"DIA_Kyle_Problem_10_05"); //РљРѕРіРґР° СЏ РІРµСЂРЅСѓР»СЃСЏ РёР· С€Р°С…С‚С‹ РЅРµСЃРєРѕР»СЊРєРѕ РґРЅРµР№ РЅР°Р·Р°Рґ, Сѓ РјРµРЅСЏ РїРѕСЏРІРёР»Р°СЃСЊ РІС‚РѕСЂР°СЏ РґРІРµСЂСЊ.
+	AI_Output (self, other,"DIA_Kyle_Problem_10_06"); //Р­С‚Рё СЃРІРёРЅСЊРё! РЇ РёС… РЅРµРЅР°РІРёР¶Сѓ! РўС‹ РґР°Р¶Рµ РїСЂРµРґСЃС‚Р°РІРёС‚СЊ СЃРµР±Рµ РЅРµ РјРѕР¶РµС€СЊ, РєР°Рє СЏ РёС… РЅРµРЅР°РІРёР¶Сѓ!
+	AI_Output (self, other,"DIA_Kyle_Problem_10_07"); //РўРµРїРµСЂСЊ РІСЃРµ РїСЂРѕС…РѕРґСЏС‚ С‡РµСЂРµР· РјРѕР№ РґРѕРј. РљР°Р¶РґС‹Р№ РёРґРёРѕС‚.
 };
 
 	

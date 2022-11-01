@@ -10,7 +10,7 @@ instance  Nov_1371_BaalNetbek_Exit (C_INFO)
 	information	=  Nov_1371_BaalNetbek_Exit_Info;
 	important	=  0;	
 	permanent	=  1;
-	description = "ЗАКОНЧИТЬ";
+	description = "Р—РђРљРћРќР§РРўР¬";
 };                       
 
 FUNC int  Nov_1371_BaalNetbek_Exit_Condition()
@@ -23,7 +23,7 @@ FUNC VOID  Nov_1371_BaalNetbek_Exit_Info()
 	AI_StopProcessInfos	( self );
 };
 /*------------------------------------------------------------------------
-							GДRTNER								
+							GР”RTNER								
 ------------------------------------------------------------------------*/
 
 instance  Nov_1371_BaalNetbek_CRAZY (C_INFO)
@@ -33,7 +33,7 @@ instance  Nov_1371_BaalNetbek_CRAZY (C_INFO)
 	information		= Nov_1371_BaalNetbek_CRAZY_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Как тебя зовут?"; 
+	description		= "РљР°Рє С‚РµР±СЏ Р·РѕРІСѓС‚?"; 
 };
 
 FUNC int  Nov_1371_BaalNetbek_CRAZY_Condition()
@@ -44,15 +44,15 @@ FUNC int  Nov_1371_BaalNetbek_CRAZY_Condition()
 
 FUNC void  Nov_1371_BaalNetbek_CRAZY_Info()
 {
-	AI_Output (other, self,"Nov_1371_BaalNetbek_CRAZY_Info_15_01"); //Кто ты?
-	AI_Output (self, other,"Nov_1371_BaalNetbek_CRAZY_Info_03_02"); //Я Гуру, Гуру болота. Мои слуги зовут меня Идол Нетбек.
-	AI_Output (other, self,"Nov_1371_BaalNetbek_CRAZY_Info_15_03"); //Слуги? Я не вижу никаких слуг!
-	AI_Output (self, other,"Nov_1371_BaalNetbek_CRAZY_Info_03_04"); //Они повсюду. Деревья! Они ходят и поют, и танцуют...
-	AI_Output (other, self,"Nov_1371_BaalNetbek_CRAZY_Info_15_05"); //... А, понятно. Ладно, мне пора...
-	AI_Output (self, other,"Nov_1371_BaalNetbek_CRAZY_Info_03_06"); //Постой, ты должен помочь мне! Я собираюсь превратить это болото в гигантский цветущий луг!
-	AI_Output (other, self,"Nov_1371_BaalNetbek_CRAZY_Info_15_07"); //Ладно, ты пока начинай без меня, а я... я скоро вернусь.
+	AI_Output (other, self,"Nov_1371_BaalNetbek_CRAZY_Info_15_01"); //РљС‚Рѕ С‚С‹?
+	AI_Output (self, other,"Nov_1371_BaalNetbek_CRAZY_Info_03_02"); //РЇ Р“СѓСЂСѓ, Р“СѓСЂСѓ Р±РѕР»РѕС‚Р°. РњРѕРё СЃР»СѓРіРё Р·РѕРІСѓС‚ РјРµРЅСЏ РРґРѕР» РќРµС‚Р±РµРє.
+	AI_Output (other, self,"Nov_1371_BaalNetbek_CRAZY_Info_15_03"); //РЎР»СѓРіРё? РЇ РЅРµ РІРёР¶Сѓ РЅРёРєР°РєРёС… СЃР»СѓРі!
+	AI_Output (self, other,"Nov_1371_BaalNetbek_CRAZY_Info_03_04"); //РћРЅРё РїРѕРІСЃСЋРґСѓ. Р”РµСЂРµРІСЊСЏ! РћРЅРё С…РѕРґСЏС‚ Рё РїРѕСЋС‚, Рё С‚Р°РЅС†СѓСЋС‚...
+	AI_Output (other, self,"Nov_1371_BaalNetbek_CRAZY_Info_15_05"); //... Рђ, РїРѕРЅСЏС‚РЅРѕ. Р›Р°РґРЅРѕ, РјРЅРµ РїРѕСЂР°...
+	AI_Output (self, other,"Nov_1371_BaalNetbek_CRAZY_Info_03_06"); //РџРѕСЃС‚РѕР№, С‚С‹ РґРѕР»Р¶РµРЅ РїРѕРјРѕС‡СЊ РјРЅРµ! РЇ СЃРѕР±РёСЂР°СЋСЃСЊ РїСЂРµРІСЂР°С‚РёС‚СЊ СЌС‚Рѕ Р±РѕР»РѕС‚Рѕ РІ РіРёРіР°РЅС‚СЃРєРёР№ С†РІРµС‚СѓС‰РёР№ Р»СѓРі!
+	AI_Output (other, self,"Nov_1371_BaalNetbek_CRAZY_Info_15_07"); //Р›Р°РґРЅРѕ, С‚С‹ РїРѕРєР° РЅР°С‡РёРЅР°Р№ Р±РµР· РјРµРЅСЏ, Р° СЏ... СЏ СЃРєРѕСЂРѕ РІРµСЂРЅСѓСЃСЊ.
 	AI_TurnAway (hero,self);
-	AI_Output (other, self,"Nov_1371_BaalNetbek_CRAZY_Info_15_08"); //Он не собирается меня никуда вести...
+	AI_Output (other, self,"Nov_1371_BaalNetbek_CRAZY_Info_15_08"); //РћРЅ РЅРµ СЃРѕР±РёСЂР°РµС‚СЃСЏ РјРµРЅСЏ РЅРёРєСѓРґР° РІРµСЃС‚Рё...
 	AI_StopProcessInfos	( self );
 };  
 /*------------------------------------------------------------------------
@@ -66,7 +66,7 @@ instance  Nov_1371_BaalNetbek_AGAIN (C_INFO)
 	information		= Nov_1371_BaalNetbek_AGAIN_Info;
 	important		= 0;
 	permanent		= 1;
-	description		= "Эй, как дела?"; 
+	description		= "Р­Р№, РєР°Рє РґРµР»Р°?"; 
 };
 
 FUNC int  Nov_1371_BaalNetbek_AGAIN_Condition()
@@ -79,6 +79,6 @@ FUNC int  Nov_1371_BaalNetbek_AGAIN_Condition()
 };
 FUNC void  Nov_1371_BaalNetbek_AGAIN_Info()
 {
-	AI_Output (other, self,"Nov_1371_BaalNetbek_AGAIN_Info_15_01"); //Эй, как дела?
-	AI_Output (self, other,"Nov_1371_BaalNetbek_AGAIN_Info_03_02"); //Постарайся не причинять вреда моим деревьям!
+	AI_Output (other, self,"Nov_1371_BaalNetbek_AGAIN_Info_15_01"); //Р­Р№, РєР°Рє РґРµР»Р°?
+	AI_Output (self, other,"Nov_1371_BaalNetbek_AGAIN_Info_03_02"); //РџРѕСЃС‚Р°СЂР°Р№СЃСЏ РЅРµ РїСЂРёС‡РёРЅСЏС‚СЊ РІСЂРµРґР° РјРѕРёРј РґРµСЂРµРІСЊСЏРј!
 };  

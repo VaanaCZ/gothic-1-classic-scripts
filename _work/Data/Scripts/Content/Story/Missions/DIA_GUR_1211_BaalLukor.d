@@ -41,7 +41,7 @@ FUNC INT Info_BaalLukor_MEET_Condition()
 
 FUNC VOID Info_BaalLukor_MEET_Info()
 {
-	AI_Output 		(self, other,"Info_BaalLukor_MEET_13_01"); //Благодарю за помощь. Ты прибыл как раз вовремя.
+	AI_Output 		(self, other,"Info_BaalLukor_MEET_13_01"); //Р‘Р»Р°РіРѕРґР°СЂСЋ Р·Р° РїРѕРјРѕС‰СЊ. РўС‹ РїСЂРёР±С‹Р» РєР°Рє СЂР°Р· РІРѕРІСЂРµРјСЏ.
 	
 	B_GiveXP		(XP_SaveBaalLukor);
 };
@@ -57,7 +57,7 @@ INSTANCE Info_BaalLukor_DEAD (C_INFO)
 	nr			= 20;
 	permanent	= 0;
 	important 	= 0;
-	description = "По дороге сюда я видел мертвых Стражей. Что случилось?";
+	description = "РџРѕ РґРѕСЂРѕРіРµ СЃСЋРґР° СЏ РІРёРґРµР» РјРµСЂС‚РІС‹С… РЎС‚СЂР°Р¶РµР№. Р§С‚Рѕ СЃР»СѓС‡РёР»РѕСЃСЊ?";
 };
 
 FUNC INT Info_BaalLukor_DEAD_Condition()
@@ -67,14 +67,14 @@ FUNC INT Info_BaalLukor_DEAD_Condition()
 
 FUNC VOID Info_BaalLukor_DEAD_Info()
 {
-	AI_Output 			(other, self,"Info_BaalLukor_DEAD_15_01"); //По дороге сюда я видел нескольких мертвых Стражей. Что случилось?
-	AI_Output 			(self, other,"Info_BaalLukor_DEAD_13_02"); //Господин Кор Ангар отправил нас обследовать пещеры.
-	AI_Output 			(self, other,"Info_BaalLukor_DEAD_13_03"); //Мы ожидали увидеть ряды могил и полуразложившиеся мумии.
-	AI_Output 			(self, other,"Info_BaalLukor_DEAD_13_04"); //Но внезапно тьма рассеялась, и орки были повсюду! Я не знаю, чего они искали здесь, но их появление было более чем неожиданным.
-	AI_Output 			(other, self,"Info_BaalLukor_DEAD_15_05"); //А где остальные Стражи?
-	AI_Output 			(self, other,"Info_BaalLukor_DEAD_13_06"); //Мертвы! Я невольно стал причиной их гибели. Надеюсь, Спящий простит меня за это.
+	AI_Output 			(other, self,"Info_BaalLukor_DEAD_15_01"); //РџРѕ РґРѕСЂРѕРіРµ СЃСЋРґР° СЏ РІРёРґРµР» РЅРµСЃРєРѕР»СЊРєРёС… РјРµСЂС‚РІС‹С… РЎС‚СЂР°Р¶РµР№. Р§С‚Рѕ СЃР»СѓС‡РёР»РѕСЃСЊ?
+	AI_Output 			(self, other,"Info_BaalLukor_DEAD_13_02"); //Р“РѕСЃРїРѕРґРёРЅ РљРѕСЂ РђРЅРіР°СЂ РѕС‚РїСЂР°РІРёР» РЅР°СЃ РѕР±СЃР»РµРґРѕРІР°С‚СЊ РїРµС‰РµСЂС‹.
+	AI_Output 			(self, other,"Info_BaalLukor_DEAD_13_03"); //РњС‹ РѕР¶РёРґР°Р»Рё СѓРІРёРґРµС‚СЊ СЂСЏРґС‹ РјРѕРіРёР» Рё РїРѕР»СѓСЂР°Р·Р»РѕР¶РёРІС€РёРµСЃСЏ РјСѓРјРёРё.
+	AI_Output 			(self, other,"Info_BaalLukor_DEAD_13_04"); //РќРѕ РІРЅРµР·Р°РїРЅРѕ С‚СЊРјР° СЂР°СЃСЃРµСЏР»Р°СЃСЊ, Рё РѕСЂРєРё Р±С‹Р»Рё РїРѕРІСЃСЋРґСѓ! РЇ РЅРµ Р·РЅР°СЋ, С‡РµРіРѕ РѕРЅРё РёСЃРєР°Р»Рё Р·РґРµСЃСЊ, РЅРѕ РёС… РїРѕСЏРІР»РµРЅРёРµ Р±С‹Р»Рѕ Р±РѕР»РµРµ С‡РµРј РЅРµРѕР¶РёРґР°РЅРЅС‹Рј.
+	AI_Output 			(other, self,"Info_BaalLukor_DEAD_15_05"); //Рђ РіРґРµ РѕСЃС‚Р°Р»СЊРЅС‹Рµ РЎС‚СЂР°Р¶Рё?
+	AI_Output 			(self, other,"Info_BaalLukor_DEAD_13_06"); //РњРµСЂС‚РІС‹! РЇ РЅРµРІРѕР»СЊРЅРѕ СЃС‚Р°Р» РїСЂРёС‡РёРЅРѕР№ РёС… РіРёР±РµР»Рё. РќР°РґРµСЋСЃСЊ, РЎРїСЏС‰РёР№ РїСЂРѕСЃС‚РёС‚ РјРµРЅСЏ Р·Р° СЌС‚Рѕ.
 
-	B_LogEntry		(CH3_OrcGraveyard,"Я спас жизнь Гуру Идолу Люкору на орочьем кладбище, когда орки атаковали его. Все стражи Люкора были убиты этими существами.");
+	B_LogEntry		(CH3_OrcGraveyard,"РЇ СЃРїР°СЃ Р¶РёР·РЅСЊ Р“СѓСЂСѓ РРґРѕР»Сѓ Р›СЋРєРѕСЂСѓ РЅР° РѕСЂРѕС‡СЊРµРј РєР»Р°РґР±РёС‰Рµ, РєРѕРіРґР° РѕСЂРєРё Р°С‚Р°РєРѕРІР°Р»Рё РµРіРѕ. Р’СЃРµ СЃС‚СЂР°Р¶Рё Р›СЋРєРѕСЂР° Р±С‹Р»Рё СѓР±РёС‚С‹ СЌС‚РёРјРё СЃСѓС‰РµСЃС‚РІР°РјРё.");
 };
 
 //**************************************************************************
@@ -88,7 +88,7 @@ INSTANCE Info_BaalLukor_SUMMONING (C_INFO)
 	nr			= 10;
 	permanent	= 0;
 	important 	= 0;
-	description = "Меня прислал Кор Ангар! ";
+	description = "РњРµРЅСЏ РїСЂРёСЃР»Р°Р» РљРѕСЂ РђРЅРіР°СЂ! ";
 };
 
 FUNC INT Info_BaalLukor_SUMMONING_Condition()
@@ -98,12 +98,12 @@ FUNC INT Info_BaalLukor_SUMMONING_Condition()
 
 FUNC VOID Info_BaalLukor_SUMMONING_Info()
 {
-	AI_Output 		(other, self,"Info_BaalLukor_SUMMONING_15_01"); //Меня прислал Кор Ангар! Вы нашли что-нибудь?
-	AI_Output 		(self, other,"Info_BaalLukor_SUMMONING_13_02"); //Пока еще нет. Что с Ю`Берионом? Он пришел в себя?
-	AI_Output 		(other, self,"Info_BaalLukor_SUMMONING_15_03"); //Нет, он все еще без сознания.
-	AI_Output 		(self, other,"Info_BaalLukor_SUMMONING_13_04"); //Мы должны разгадать загадку этих пещер. После таких чудоищных потерь я не могу вернуться к братьям с пустыми руками.
-	AI_Output 		(self, other,"Info_BaalLukor_SUMMONING_13_05"); //Но я не слишком силен в бою, а орки не так поддаются моей магии, как эти доверчивые глупцы из Старого Лагеря.
-	AI_Output 		(self, other,"Info_BaalLukor_SUMMONING_13_06"); //Если ты служишь Братству, ты должен помочь мне исследовать эту гробницу.
+	AI_Output 		(other, self,"Info_BaalLukor_SUMMONING_15_01"); //РњРµРЅСЏ РїСЂРёСЃР»Р°Р» РљРѕСЂ РђРЅРіР°СЂ! Р’С‹ РЅР°С€Р»Рё С‡С‚Рѕ-РЅРёР±СѓРґСЊ?
+	AI_Output 		(self, other,"Info_BaalLukor_SUMMONING_13_02"); //РџРѕРєР° РµС‰Рµ РЅРµС‚. Р§С‚Рѕ СЃ Р®`Р‘РµСЂРёРѕРЅРѕРј? РћРЅ РїСЂРёС€РµР» РІ СЃРµР±СЏ?
+	AI_Output 		(other, self,"Info_BaalLukor_SUMMONING_15_03"); //РќРµС‚, РѕРЅ РІСЃРµ РµС‰Рµ Р±РµР· СЃРѕР·РЅР°РЅРёСЏ.
+	AI_Output 		(self, other,"Info_BaalLukor_SUMMONING_13_04"); //РњС‹ РґРѕР»Р¶РЅС‹ СЂР°Р·РіР°РґР°С‚СЊ Р·Р°РіР°РґРєСѓ СЌС‚РёС… РїРµС‰РµСЂ. РџРѕСЃР»Рµ С‚Р°РєРёС… С‡СѓРґРѕРёС‰РЅС‹С… РїРѕС‚РµСЂСЊ СЏ РЅРµ РјРѕРіСѓ РІРµСЂРЅСѓС‚СЊСЃСЏ Рє Р±СЂР°С‚СЊСЏРј СЃ РїСѓСЃС‚С‹РјРё СЂСѓРєР°РјРё.
+	AI_Output 		(self, other,"Info_BaalLukor_SUMMONING_13_05"); //РќРѕ СЏ РЅРµ СЃР»РёС€РєРѕРј СЃРёР»РµРЅ РІ Р±РѕСЋ, Р° РѕСЂРєРё РЅРµ С‚Р°Рє РїРѕРґРґР°СЋС‚СЃСЏ РјРѕРµР№ РјР°РіРёРё, РєР°Рє СЌС‚Рё РґРѕРІРµСЂС‡РёРІС‹Рµ РіР»СѓРїС†С‹ РёР· РЎС‚Р°СЂРѕРіРѕ Р›Р°РіРµСЂСЏ.
+	AI_Output 		(self, other,"Info_BaalLukor_SUMMONING_13_06"); //Р•СЃР»Рё С‚С‹ СЃР»СѓР¶РёС€СЊ Р‘СЂР°С‚СЃС‚РІСѓ, С‚С‹ РґРѕР»Р¶РµРЅ РїРѕРјРѕС‡СЊ РјРЅРµ РёСЃСЃР»РµРґРѕРІР°С‚СЊ СЌС‚Сѓ РіСЂРѕР±РЅРёС†Сѓ.
 };
 
 //**************************************************************************
@@ -116,7 +116,7 @@ INSTANCE Info_BaalLukor_HELP (C_INFO)
 	information	= Info_BaalLukor_HELP_Info;
 	permanent	= 0;
 	important 	= 0;
-	description = "Я помогу тебе.";
+	description = "РЇ РїРѕРјРѕРіСѓ С‚РµР±Рµ.";
 };
 
 FUNC INT Info_BaalLukor_HELP_Condition()
@@ -126,11 +126,11 @@ FUNC INT Info_BaalLukor_HELP_Condition()
 
 FUNC VOID Info_BaalLukor_HELP_Info()
 {
-	AI_Output 			(other, self,"Info_BaalLukor_HELP_15_01"); //Я помогу тебе.
-	AI_Output 			(self, other,"Info_BaalLukor_HELP_13_02"); //Хорошо. Отлично. От этого зала отходят три туннеля. Мы должны осмотреть их все.
-	AI_Output 			(self, other,"Info_BaalLukor_HELP_13_03"); //Иди вперед. Я пойду следом!
+	AI_Output 			(other, self,"Info_BaalLukor_HELP_15_01"); //РЇ РїРѕРјРѕРіСѓ С‚РµР±Рµ.
+	AI_Output 			(self, other,"Info_BaalLukor_HELP_13_02"); //РҐРѕСЂРѕС€Рѕ. РћС‚Р»РёС‡РЅРѕ. РћС‚ СЌС‚РѕРіРѕ Р·Р°Р»Р° РѕС‚С…РѕРґСЏС‚ С‚СЂРё С‚СѓРЅРЅРµР»СЏ. РњС‹ РґРѕР»Р¶РЅС‹ РѕСЃРјРѕС‚СЂРµС‚СЊ РёС… РІСЃРµ.
+	AI_Output 			(self, other,"Info_BaalLukor_HELP_13_03"); //РРґРё РІРїРµСЂРµРґ. РЇ РїРѕР№РґСѓ СЃР»РµРґРѕРј!
 
-	B_LogEntry		(CH3_OrcGraveyard,"Идол Люкор присоединился ко мне. Вместе мы сможем раскрыть секрет этого древнего места!");
+	B_LogEntry		(CH3_OrcGraveyard,"РРґРѕР» Р›СЋРєРѕСЂ РїСЂРёСЃРѕРµРґРёРЅРёР»СЃСЏ РєРѕ РјРЅРµ. Р’РјРµСЃС‚Рµ РјС‹ СЃРјРѕР¶РµРј СЂР°СЃРєСЂС‹С‚СЊ СЃРµРєСЂРµС‚ СЌС‚РѕРіРѕ РґСЂРµРІРЅРµРіРѕ РјРµСЃС‚Р°!");
 
 	AI_StopProcessInfos	(self);
 	Npc_ExchangeRoutine	(self, "Follow");
@@ -146,7 +146,7 @@ INSTANCE Info_BaalLukor_FOUNDNONE (C_INFO)
 	information	= Info_BaalLukor_FOUNDNONE_Info;
 	permanent	= 1;
 	important 	= 0;
-	description = "Я ничего не могу найти!";
+	description = "РЇ РЅРёС‡РµРіРѕ РЅРµ РјРѕРіСѓ РЅР°Р№С‚Рё!";
 };
 
 FUNC INT Info_BaalLukor_FOUNDNONE_Condition()
@@ -162,11 +162,11 @@ FUNC INT Info_BaalLukor_FOUNDNONE_Condition()
 
 FUNC VOID Info_BaalLukor_FOUNDNONE_Info()
 {
-	AI_Output 		(other, self,"Info_BaalLukor_FOUNDNONE_15_01"); //Я ничего не могу найти!
-	AI_Output 		(self, other,"Info_BaalLukor_FOUNDNONE_13_02"); //Мы должны осмотреть все три туннеля.
+	AI_Output 		(other, self,"Info_BaalLukor_FOUNDNONE_15_01"); //РЇ РЅРёС‡РµРіРѕ РЅРµ РјРѕРіСѓ РЅР°Р№С‚Рё!
+	AI_Output 		(self, other,"Info_BaalLukor_FOUNDNONE_13_02"); //РњС‹ РґРѕР»Р¶РЅС‹ РѕСЃРјРѕС‚СЂРµС‚СЊ РІСЃРµ С‚СЂРё С‚СѓРЅРЅРµР»СЏ.
 	
 	
-	Npc_ExchangeRoutine	(self, "Follow"); //Bjцrn: Patch2
+	Npc_ExchangeRoutine	(self, "Follow"); //BjС†rn: Patch2
 };
 
 //**************************************************************************
@@ -179,7 +179,7 @@ INSTANCE Info_BaalLukor_FOUNDONE (C_INFO)
 	information	= Info_BaalLukor_FOUNDONE_Info;
 	permanent	= 1;
 	important 	= 0;
-	description = "Очевидно, второй половины свитка попросту не существует!";
+	description = "РћС‡РµРІРёРґРЅРѕ, РІС‚РѕСЂРѕР№ РїРѕР»РѕРІРёРЅС‹ СЃРІРёС‚РєР° РїРѕРїСЂРѕСЃС‚Сѓ РЅРµ СЃСѓС‰РµСЃС‚РІСѓРµС‚!";
 };
 
 FUNC INT Info_BaalLukor_FOUNDONE_Condition()
@@ -193,10 +193,10 @@ FUNC INT Info_BaalLukor_FOUNDONE_Condition()
 
 FUNC VOID Info_BaalLukor_FOUNDONE_Info()
 {
-	AI_Output 		(other, self,"Info_BaalLukor_FOUNDONE_15_01"); //Очевидно, второй половины свитка попросту не существует!
-	AI_Output 		(self, other,"Info_BaalLukor_FOUNDONE_13_02"); //Должна быть вторая половина. Давай осмотрим все три туннеля!
+	AI_Output 		(other, self,"Info_BaalLukor_FOUNDONE_15_01"); //РћС‡РµРІРёРґРЅРѕ, РІС‚РѕСЂРѕР№ РїРѕР»РѕРІРёРЅС‹ СЃРІРёС‚РєР° РїРѕРїСЂРѕСЃС‚Сѓ РЅРµ СЃСѓС‰РµСЃС‚РІСѓРµС‚!
+	AI_Output 		(self, other,"Info_BaalLukor_FOUNDONE_13_02"); //Р”РѕР»Р¶РЅР° Р±С‹С‚СЊ РІС‚РѕСЂР°СЏ РїРѕР»РѕРІРёРЅР°. Р”Р°РІР°Р№ РѕСЃРјРѕС‚СЂРёРј РІСЃРµ С‚СЂРё С‚СѓРЅРЅРµР»СЏ!
 	
-	Npc_ExchangeRoutine	(self, "Follow"); //Bjцrn: Patch2
+	Npc_ExchangeRoutine	(self, "Follow"); //BjС†rn: Patch2
 };
 
 //**************************************************************************
@@ -225,7 +225,7 @@ FUNC VOID Info_BaalLukor_FIRSTWAIT_Info()
 	B_FullStop		(hero);
 	AI_GotoNpc		(self, hero);
 
-	AI_Output 		(self, other,"Info_BaalLukor_FIRSTWAIT_13_01"); //Мы в тупике! Возможно, разгадка кроется в этих нишах.
+	AI_Output 		(self, other,"Info_BaalLukor_FIRSTWAIT_13_01"); //РњС‹ РІ С‚СѓРїРёРєРµ! Р’РѕР·РјРѕР¶РЅРѕ, СЂР°Р·РіР°РґРєР° РєСЂРѕРµС‚СЃСЏ РІ СЌС‚РёС… РЅРёС€Р°С….
 
 	AI_StopProcessInfos	(self);
 	Npc_ExchangeRoutine	(self, "WaitInSideTunnelOne");
@@ -241,7 +241,7 @@ INSTANCE Info_BaalLukor_FIRSTSCROLL (C_INFO)
 	information	= Info_BaalLukor_FIRSTSCROLL_Info;
 	permanent	= 0;
 	important 	= 0;
-	description = "Я нашел свиток!";
+	description = "РЇ РЅР°С€РµР» СЃРІРёС‚РѕРє!";
 };
 
 FUNC INT Info_BaalLukor_FIRSTSCROLL_Condition()
@@ -255,17 +255,17 @@ FUNC INT Info_BaalLukor_FIRSTSCROLL_Condition()
 
 FUNC VOID Info_BaalLukor_FIRSTSCROLL_Info()
 {
-	AI_Output 		(other, self,"Info_BaalLukor_FIRSTSCROLL_15_01"); //Я нашел свиток!
-	B_GiveInvItems 	(hero, self, OrkParchmentOne,1); //Pergament1 ьbergeben
+	AI_Output 		(other, self,"Info_BaalLukor_FIRSTSCROLL_15_01"); //РЇ РЅР°С€РµР» СЃРІРёС‚РѕРє!
+	B_GiveInvItems 	(hero, self, OrkParchmentOne,1); //Pergament1 СЊbergeben
 	if (BaalLukor_BringParchment == 2)
 	{
-		AI_Output	(self, other,"Info_BaalLukor_FIRSTSCROLL_13_02"); //Очень хорошо! Это вторая половина магического заклинания орков.
+		AI_Output	(self, other,"Info_BaalLukor_FIRSTSCROLL_13_02"); //РћС‡РµРЅСЊ С…РѕСЂРѕС€Рѕ! Р­С‚Рѕ РІС‚РѕСЂР°СЏ РїРѕР»РѕРІРёРЅР° РјР°РіРёС‡РµСЃРєРѕРіРѕ Р·Р°РєР»РёРЅР°РЅРёСЏ РѕСЂРєРѕРІ.
 		BaalLukor_BringParchment = 3;
 	}
 	else
 	{
-		AI_Output	(self, other,"Info_BaalLukor_FIRSTSCROLL_13_03"); //Это похоже на свиток с заклинанием орков, порванный на две части.
-		AI_Output 	(self, other,"Info_BaalLukor_FIRSTSCROLL_13_04"); //Где-то должна быть вторая часть.
+		AI_Output	(self, other,"Info_BaalLukor_FIRSTSCROLL_13_03"); //Р­С‚Рѕ РїРѕС…РѕР¶Рµ РЅР° СЃРІРёС‚РѕРє СЃ Р·Р°РєР»РёРЅР°РЅРёРµРј РѕСЂРєРѕРІ, РїРѕСЂРІР°РЅРЅС‹Р№ РЅР° РґРІРµ С‡Р°СЃС‚Рё.
+		AI_Output 	(self, other,"Info_BaalLukor_FIRSTSCROLL_13_04"); //Р“РґРµ-С‚Рѕ РґРѕР»Р¶РЅР° Р±С‹С‚СЊ РІС‚РѕСЂР°СЏ С‡Р°СЃС‚СЊ.
 		AI_StopProcessInfos	(self);
 		BaalLukor_BringParchment = 1;
 	};
@@ -299,7 +299,7 @@ FUNC VOID Info_BaalLukor_SECONDWAIT_Info()
 	B_FullStop		(hero);
 	AI_GotoNpc		(self, hero);
 
-	AI_Output 		(self, other,"Info_BaalLukor_SECONDWAIT_13_01"); //Х-ммм... этот туннель заканчивается тупиком. Возможно, здесь ты найдешь что-то, что пригодится нам в дальнейшем.
+	AI_Output 		(self, other,"Info_BaalLukor_SECONDWAIT_13_01"); //РҐ-РјРјРј... СЌС‚РѕС‚ С‚СѓРЅРЅРµР»СЊ Р·Р°РєР°РЅС‡РёРІР°РµС‚СЃСЏ С‚СѓРїРёРєРѕРј. Р’РѕР·РјРѕР¶РЅРѕ, Р·РґРµСЃСЊ С‚С‹ РЅР°Р№РґРµС€СЊ С‡С‚Рѕ-С‚Рѕ, С‡С‚Рѕ РїСЂРёРіРѕРґРёС‚СЃСЏ РЅР°Рј РІ РґР°Р»СЊРЅРµР№С€РµРј.
 
 	if (!Npc_HasItems	(hero, OrkParchmentTwo)	) 
 	{	
@@ -317,7 +317,7 @@ INSTANCE Info_BaalLukor_SECONDSCROLL (C_INFO)
 	condition	= Info_BaalLukor_SECONDSCROLL_Condition;
 	information	= Info_BaalLukor_SECONDSCROLL_Info;
 	permanent	= 0;
-	description = "Здесь лежит обрывок свитка!";
+	description = "Р—РґРµСЃСЊ Р»РµР¶РёС‚ РѕР±СЂС‹РІРѕРє СЃРІРёС‚РєР°!";
 };
 
 FUNC INT Info_BaalLukor_SECONDSCROLL_Condition()
@@ -334,17 +334,17 @@ FUNC VOID Info_BaalLukor_SECONDSCROLL_Info()
 	B_FullStop		(hero);
 	AI_GotoNpc		(self,	hero);
 
-	AI_Output 		(other, self,"Info_BaalLukor_SECONDSCROLL_15_01"); //Здесь лежит обрывок свитка!
-	B_GiveInvItems 	(hero, self, OrkParchmentTwo,1); //Pergament2 ьbergeben
+	AI_Output 		(other, self,"Info_BaalLukor_SECONDSCROLL_15_01"); //Р—РґРµСЃСЊ Р»РµР¶РёС‚ РѕР±СЂС‹РІРѕРє СЃРІРёС‚РєР°!
+	B_GiveInvItems 	(hero, self, OrkParchmentTwo,1); //Pergament2 СЊbergeben
 	if (BaalLukor_BringParchment == 1)
 	{
-		AI_Output	(self, other,"Info_BaalLukor_SECONDSCROLL_13_02"); //Очень хорошо! Это вторая половина магического заклинания орков.
+		AI_Output	(self, other,"Info_BaalLukor_SECONDSCROLL_13_02"); //РћС‡РµРЅСЊ С…РѕСЂРѕС€Рѕ! Р­С‚Рѕ РІС‚РѕСЂР°СЏ РїРѕР»РѕРІРёРЅР° РјР°РіРёС‡РµСЃРєРѕРіРѕ Р·Р°РєР»РёРЅР°РЅРёСЏ РѕСЂРєРѕРІ.
 		BaalLukor_BringParchment = 3;
 	}
 	else
 	{
-		AI_Output	(self, other,"Info_BaalLukor_SECONDSCROLL_13_03"); //Это похоже на свиток с заклинанием орков, порванный на две части.
-		AI_Output 	(self, other,"Info_BaalLukor_SECONDSCROLL_13_04"); //Где-то должна быть вторая часть.
+		AI_Output	(self, other,"Info_BaalLukor_SECONDSCROLL_13_03"); //Р­С‚Рѕ РїРѕС…РѕР¶Рµ РЅР° СЃРІРёС‚РѕРє СЃ Р·Р°РєР»РёРЅР°РЅРёРµРј РѕСЂРєРѕРІ, РїРѕСЂРІР°РЅРЅС‹Р№ РЅР° РґРІРµ С‡Р°СЃС‚Рё.
+		AI_Output 	(self, other,"Info_BaalLukor_SECONDSCROLL_13_04"); //Р“РґРµ-С‚Рѕ РґРѕР»Р¶РЅР° Р±С‹С‚СЊ РІС‚РѕСЂР°СЏ С‡Р°СЃС‚СЊ.
 		AI_StopProcessInfos	(self);
 		BaalLukor_BringParchment = 2;
 	};
@@ -362,7 +362,7 @@ INSTANCE Info_BaalLukor_BOTHSCROLLS (C_INFO)
 	information	= Info_BaalLukor_BOTHSCROLLS_Info;
 	permanent	= 0;
 	important 	= 0;
-	description = "Что мы будем делать с этими двумя частями?";
+	description = "Р§С‚Рѕ РјС‹ Р±СѓРґРµРј РґРµР»Р°С‚СЊ СЃ СЌС‚РёРјРё РґРІСѓРјСЏ С‡Р°СЃС‚СЏРјРё?";
 };
 
 FUNC INT Info_BaalLukor_BOTHSCROLLS_Condition()
@@ -376,12 +376,12 @@ FUNC INT Info_BaalLukor_BOTHSCROLLS_Condition()
 
 FUNC VOID Info_BaalLukor_BOTHSCROLLS_Info()
 {
-	AI_Output 			(other, self,"Info_BaalLukor_BOTHSCROLLS_15_01"); //Что мы будем делать с этими двумя частями?
-	AI_Output			(self, other,"Info_BaalLukor_BOTHSCROLLS_13_02"); //Обрывки свитка совпадают друг с другом. Но я не могу расшифровать эти оркские символы.
+	AI_Output 			(other, self,"Info_BaalLukor_BOTHSCROLLS_15_01"); //Р§С‚Рѕ РјС‹ Р±СѓРґРµРј РґРµР»Р°С‚СЊ СЃ СЌС‚РёРјРё РґРІСѓРјСЏ С‡Р°СЃС‚СЏРјРё?
+	AI_Output			(self, other,"Info_BaalLukor_BOTHSCROLLS_13_02"); //РћР±СЂС‹РІРєРё СЃРІРёС‚РєР° СЃРѕРІРїР°РґР°СЋС‚ РґСЂСѓРі СЃ РґСЂСѓРіРѕРј. РќРѕ СЏ РЅРµ РјРѕРіСѓ СЂР°СЃС€РёС„СЂРѕРІР°С‚СЊ СЌС‚Рё РѕСЂРєСЃРєРёРµ СЃРёРјРІРѕР»С‹.
 
-	B_LogEntry		(CH3_OrcGraveyard,"Мы нашли две половинки орочьего свитка с заклинанием, но Люкор не может прочесть его. Продолжим свои поиски.");
+	B_LogEntry		(CH3_OrcGraveyard,"РњС‹ РЅР°С€Р»Рё РґРІРµ РїРѕР»РѕРІРёРЅРєРё РѕСЂРѕС‡СЊРµРіРѕ СЃРІРёС‚РєР° СЃ Р·Р°РєР»РёРЅР°РЅРёРµРј, РЅРѕ Р›СЋРєРѕСЂ РЅРµ РјРѕР¶РµС‚ РїСЂРѕС‡РµСЃС‚СЊ РµРіРѕ. РџСЂРѕРґРѕР»Р¶РёРј СЃРІРѕРё РїРѕРёСЃРєРё.");
 
-	Npc_ExchangeRoutine	(self, "Follow"); //Bjцrn: Patch2
+	Npc_ExchangeRoutine	(self, "Follow"); //BjС†rn: Patch2
 };
 
 //**************************************************************************
@@ -410,23 +410,23 @@ FUNC VOID Info_BaalLukor_RUNES_Info()
 	B_FullStop		(hero);
 	AI_GotoNpc		(self, hero);
 
-	AI_Output		(self, other,"Info_BaalLukor_RUNES_13_01"); //Минутку! Это уже интересно...
-	AI_Output 		(other, self,"Info_BaalLukor_RUNES_15_02"); //Ну, я не вижу здесь ничего интересного.
-	AI_Output		(self, other,"Info_BaalLukor_RUNES_13_03"); //Помолчи немного и присмотрись к рунам в этой пещере.
-	AI_Output		(self, other,"Info_BaalLukor_RUNES_13_04"); //Да, этого должно быть достаточно для того, чтобы перевести обе половины свитка.
+	AI_Output		(self, other,"Info_BaalLukor_RUNES_13_01"); //РњРёРЅСѓС‚РєСѓ! Р­С‚Рѕ СѓР¶Рµ РёРЅС‚РµСЂРµСЃРЅРѕ...
+	AI_Output 		(other, self,"Info_BaalLukor_RUNES_15_02"); //РќСѓ, СЏ РЅРµ РІРёР¶Сѓ Р·РґРµСЃСЊ РЅРёС‡РµРіРѕ РёРЅС‚РµСЂРµСЃРЅРѕРіРѕ.
+	AI_Output		(self, other,"Info_BaalLukor_RUNES_13_03"); //РџРѕРјРѕР»С‡Рё РЅРµРјРЅРѕРіРѕ Рё РїСЂРёСЃРјРѕС‚СЂРёСЃСЊ Рє СЂСѓРЅР°Рј РІ СЌС‚РѕР№ РїРµС‰РµСЂРµ.
+	AI_Output		(self, other,"Info_BaalLukor_RUNES_13_04"); //Р”Р°, СЌС‚РѕРіРѕ РґРѕР»Р¶РЅРѕ Р±С‹С‚СЊ РґРѕСЃС‚Р°С‚РѕС‡РЅРѕ РґР»СЏ С‚РѕРіРѕ, С‡С‚РѕР±С‹ РїРµСЂРµРІРµСЃС‚Рё РѕР±Рµ РїРѕР»РѕРІРёРЅС‹ СЃРІРёС‚РєР°.
 	B_UseFakeScroll ();
 	//AI_Output		(self, other,"Info_BaalLukor_RUNES_13_05"); //...(murmel)...(murmel)...(murmel)... 
-	AI_Output		(self, other,"Info_BaalLukor_RUNES_13_06"); //Получилось! Это Заклинание Портала. Похоже, оно срабатывает только в определенных местах.
-	AI_Output		(self, other,"Info_BaalLukor_RUNES_13_07"); //Странно!
+	AI_Output		(self, other,"Info_BaalLukor_RUNES_13_06"); //РџРѕР»СѓС‡РёР»РѕСЃСЊ! Р­С‚Рѕ Р—Р°РєР»РёРЅР°РЅРёРµ РџРѕСЂС‚Р°Р»Р°. РџРѕС…РѕР¶Рµ, РѕРЅРѕ СЃСЂР°Р±Р°С‚С‹РІР°РµС‚ С‚РѕР»СЊРєРѕ РІ РѕРїСЂРµРґРµР»РµРЅРЅС‹С… РјРµСЃС‚Р°С….
+	AI_Output		(self, other,"Info_BaalLukor_RUNES_13_07"); //РЎС‚СЂР°РЅРЅРѕ!
 
 	Npc_RemoveInvItems	(self,			OrkParchmentOne, 1); //Pergament 1 entfernen
 	Npc_RemoveInvItems	(self,			OrkParchmentTwo, 1); //Pergament 2 entfernen
-	//Hier Teleport-Ьbergabe entfernt --> erst wenn vor wand!
+	//Hier Teleport-Р¬bergabe entfernt --> erst wenn vor wand!
 
-	B_LogEntry			(CH3_OrcGraveyard,"Идол Люкор смог перевести свиток при помощи надписей на стенах в одном из залов. Похоже, это заклинание телепортации на очень короткую дистанцию."); 
+	B_LogEntry			(CH3_OrcGraveyard,"РРґРѕР» Р›СЋРєРѕСЂ СЃРјРѕРі РїРµСЂРµРІРµСЃС‚Рё СЃРІРёС‚РѕРє РїСЂРё РїРѕРјРѕС‰Рё РЅР°РґРїРёСЃРµР№ РЅР° СЃС‚РµРЅР°С… РІ РѕРґРЅРѕРј РёР· Р·Р°Р»РѕРІ. РџРѕС…РѕР¶Рµ, СЌС‚Рѕ Р·Р°РєР»РёРЅР°РЅРёРµ С‚РµР»РµРїРѕСЂС‚Р°С†РёРё РЅР° РѕС‡РµРЅСЊ РєРѕСЂРѕС‚РєСѓСЋ РґРёСЃС‚Р°РЅС†РёСЋ."); 
 
 
-	Npc_ExchangeRoutine	(self, "Follow"); //Bjцrn: Patch2
+	Npc_ExchangeRoutine	(self, "Follow"); //BjС†rn: Patch2
 
 };
 
@@ -440,7 +440,7 @@ INSTANCE Info_BaalLukor_WHATNOW (C_INFO)
 	information	= Info_BaalLukor_WHATNOW_Info;
 	permanent	= 1;
 	important 	= 0;
-	description = "В каких это 'определенных' местах?";
+	description = "Р’ РєР°РєРёС… СЌС‚Рѕ 'РѕРїСЂРµРґРµР»РµРЅРЅС‹С…' РјРµСЃС‚Р°С…?";
 };
 
 FUNC INT Info_BaalLukor_WHATNOW_Condition()
@@ -455,10 +455,10 @@ FUNC INT Info_BaalLukor_WHATNOW_Condition()
 
 FUNC VOID Info_BaalLukor_WHATNOW_Info()
 {
-	AI_Output 		(other, self,"Info_BaalLukor_WHATNOW_15_01"); //В каких это 'определенных' местах?
-	AI_Output 		(self, other,"Info_BaalLukor_WHATNOW_13_02"); //Большой зал, через который мы проходили, показался мне очень... странным... местом. Вернемся туда!
+	AI_Output 		(other, self,"Info_BaalLukor_WHATNOW_15_01"); //Р’ РєР°РєРёС… СЌС‚Рѕ 'РѕРїСЂРµРґРµР»РµРЅРЅС‹С…' РјРµСЃС‚Р°С…?
+	AI_Output 		(self, other,"Info_BaalLukor_WHATNOW_13_02"); //Р‘РѕР»СЊС€РѕР№ Р·Р°Р», С‡РµСЂРµР· РєРѕС‚РѕСЂС‹Р№ РјС‹ РїСЂРѕС…РѕРґРёР»Рё, РїРѕРєР°Р·Р°Р»СЃСЏ РјРЅРµ РѕС‡РµРЅСЊ... СЃС‚СЂР°РЅРЅС‹Рј... РјРµСЃС‚РѕРј. Р’РµСЂРЅРµРјСЃСЏ С‚СѓРґР°!
 
-	Npc_ExchangeRoutine	(self, "Follow"); //Bjцrn: Patch2
+	Npc_ExchangeRoutine	(self, "Follow"); //BjС†rn: Patch2
 
 };
 
@@ -490,12 +490,12 @@ FUNC VOID Info_BaalLukor_HALLWITHOUT_Info()
 	AI_SetWalkmode	(self,	NPC_WALK);
 	AI_GotoNpc		(self, hero);
 
-	AI_Output		(self, other,"Info_BaalLukor_HALLWITHOUT_13_01"); //Это место... Я не могу этого объяснить, но это место...
-	AI_Output		(self, other,"Info_BaalLukor_HALLWITHOUT_13_02"); //О, не обращай внимания. Должно быть, у меня разыгралось воображение.
+	AI_Output		(self, other,"Info_BaalLukor_HALLWITHOUT_13_01"); //Р­С‚Рѕ РјРµСЃС‚Рѕ... РЇ РЅРµ РјРѕРіСѓ СЌС‚РѕРіРѕ РѕР±СЉСЏСЃРЅРёС‚СЊ, РЅРѕ СЌС‚Рѕ РјРµСЃС‚Рѕ...
+	AI_Output		(self, other,"Info_BaalLukor_HALLWITHOUT_13_02"); //Рћ, РЅРµ РѕР±СЂР°С‰Р°Р№ РІРЅРёРјР°РЅРёСЏ. Р”РѕР»Р¶РЅРѕ Р±С‹С‚СЊ, Сѓ РјРµРЅСЏ СЂР°Р·С‹РіСЂР°Р»РѕСЃСЊ РІРѕРѕР±СЂР°Р¶РµРЅРёРµ.
 
-	B_LogEntry	(CH3_OrcGraveyard,"Как только мы вошли в большой прямоугольный зал, Гуру почувствовал что-то. Но точнее он пока сказать не может.");
+	B_LogEntry	(CH3_OrcGraveyard,"РљР°Рє С‚РѕР»СЊРєРѕ РјС‹ РІРѕС€Р»Рё РІ Р±РѕР»СЊС€РѕР№ РїСЂСЏРјРѕСѓРіРѕР»СЊРЅС‹Р№ Р·Р°Р», Р“СѓСЂСѓ РїРѕС‡СѓРІСЃС‚РІРѕРІР°Р» С‡С‚Рѕ-С‚Рѕ. РќРѕ С‚РѕС‡РЅРµРµ РѕРЅ РїРѕРєР° СЃРєР°Р·Р°С‚СЊ РЅРµ РјРѕР¶РµС‚.");
 
-	Npc_ExchangeRoutine	(self, "Follow"); //Bjцrn: Patch2
+	Npc_ExchangeRoutine	(self, "Follow"); //BjС†rn: Patch2
 };
 
 //**************************************************************************
@@ -525,11 +525,11 @@ FUNC VOID Info_BaalLukor_HALLWITH_Info()
 	AI_SetWalkmode		(self,	NPC_WALK);
 	AI_GotoNpc			(self, hero);
 
-	AI_Output			(self, other,"Info_BaalLukor_HALLWITH_13_01"); //У этого места особая аура... Аура чего-то тайного.
-	AI_Output			(other, self,"Info_BaalLukor_HALLWITH_15_02"); //Этот зал напомнил мне образ из моего видения.
-	AI_Output			(self, other,"Info_BaalLukor_HALLWITH_13_03"); //Видение... Мы очень близки к цели...
+	AI_Output			(self, other,"Info_BaalLukor_HALLWITH_13_01"); //РЈ СЌС‚РѕРіРѕ РјРµСЃС‚Р° РѕСЃРѕР±Р°СЏ Р°СѓСЂР°... РђСѓСЂР° С‡РµРіРѕ-С‚Рѕ С‚Р°Р№РЅРѕРіРѕ.
+	AI_Output			(other, self,"Info_BaalLukor_HALLWITH_15_02"); //Р­С‚РѕС‚ Р·Р°Р» РЅР°РїРѕРјРЅРёР» РјРЅРµ РѕР±СЂР°Р· РёР· РјРѕРµРіРѕ РІРёРґРµРЅРёСЏ.
+	AI_Output			(self, other,"Info_BaalLukor_HALLWITH_13_03"); //Р’РёРґРµРЅРёРµ... РњС‹ РѕС‡РµРЅСЊ Р±Р»РёР·РєРё Рє С†РµР»Рё...
 
-	B_LogEntry		(CH3_OrcGraveyard,"Идол Люкор, ведомый неведомой силой, подошел к одной из стен большого зала.");
+	B_LogEntry		(CH3_OrcGraveyard,"РРґРѕР» Р›СЋРєРѕСЂ, РІРµРґРѕРјС‹Р№ РЅРµРІРµРґРѕРјРѕР№ СЃРёР»РѕР№, РїРѕРґРѕС€РµР» Рє РѕРґРЅРѕР№ РёР· СЃС‚РµРЅ Р±РѕР»СЊС€РѕРіРѕ Р·Р°Р»Р°.");
 
 	AI_StopProcessInfos	(self);
 	Npc_ExchangeRoutine	(self, "DOOR");
@@ -562,12 +562,12 @@ FUNC VOID Info_BaalLukor_DOOR_Info()
 	AI_SetWalkmode		(self,	NPC_WALK);
 	AI_GotoNpc			(self, hero);
 
-	AI_Output			(self, other,"Info_BaalLukor_DOOR_13_01"); //За этой стеной... Кажется, здесь!
-	AI_Output			(self, other,"Info_BaalLukor_DOOR_13_02"); //Я пока не набрал достаточной магической силы.
-	AI_Output			(self, other,"Info_BaalLukor_DOOR_13_03"); //Используй Заклинание Портала здесь, перед этой стеной.
+	AI_Output			(self, other,"Info_BaalLukor_DOOR_13_01"); //Р—Р° СЌС‚РѕР№ СЃС‚РµРЅРѕР№... РљР°Р¶РµС‚СЃСЏ, Р·РґРµСЃСЊ!
+	AI_Output			(self, other,"Info_BaalLukor_DOOR_13_02"); //РЇ РїРѕРєР° РЅРµ РЅР°Р±СЂР°Р» РґРѕСЃС‚Р°С‚РѕС‡РЅРѕР№ РјР°РіРёС‡РµСЃРєРѕР№ СЃРёР»С‹.
+	AI_Output			(self, other,"Info_BaalLukor_DOOR_13_03"); //РСЃРїРѕР»СЊР·СѓР№ Р—Р°РєР»РёРЅР°РЅРёРµ РџРѕСЂС‚Р°Р»Р° Р·РґРµСЃСЊ, РїРµСЂРµРґ СЌС‚РѕР№ СЃС‚РµРЅРѕР№.
 	
 	CreateInvItem		(self,			ItArScrollTeleport4); //Teleport erschaffen
-	B_GiveInvItems  	(self, hero,	ItArScrollTeleport4, 1); //Teleport ьbergeben
+	B_GiveInvItems  	(self, hero,	ItArScrollTeleport4, 1); //Teleport СЊbergeben
 	
 	AI_StopProcessInfos	(self);
 };
@@ -600,13 +600,13 @@ FUNC VOID Info_BaalLukor_TELEPORT_Info()
 	AI_SetWalkmode		(self,	NPC_WALK);
 	AI_GotoNpc			(self, hero);
 
-	AI_Output			(self, other,"Info_BaalLukor_TELEPORT_13_01"); //Оно приведет тебя в какое-то тайное место. Моя интуиция еще никогда не подводила меня.
-	AI_Output			(other, self,"Info_BaalLukor_TELEPORT_15_02"); //Неужели мы действительно найдем здесь ответ на вопрос, как призвать Спящего???
-	AI_Output			(other, self,"Info_BaalLukor_TELEPORT_15_03"); //Это место больше похоже на похоронный зал.
-	AI_Output			(self, other,"Info_BaalLukor_TELEPORT_13_04"); //Идем дальше.
-	AI_Output 			(self, other,"Info_BaalLukor_HELP_13_03"); //Иди вперед. Я пойду следом!
+	AI_Output			(self, other,"Info_BaalLukor_TELEPORT_13_01"); //РћРЅРѕ РїСЂРёРІРµРґРµС‚ С‚РµР±СЏ РІ РєР°РєРѕРµ-С‚Рѕ С‚Р°Р№РЅРѕРµ РјРµСЃС‚Рѕ. РњРѕСЏ РёРЅС‚СѓРёС†РёСЏ РµС‰Рµ РЅРёРєРѕРіРґР° РЅРµ РїРѕРґРІРѕРґРёР»Р° РјРµРЅСЏ.
+	AI_Output			(other, self,"Info_BaalLukor_TELEPORT_15_02"); //РќРµСѓР¶РµР»Рё РјС‹ РґРµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ РЅР°Р№РґРµРј Р·РґРµСЃСЊ РѕС‚РІРµС‚ РЅР° РІРѕРїСЂРѕСЃ, РєР°Рє РїСЂРёР·РІР°С‚СЊ РЎРїСЏС‰РµРіРѕ???
+	AI_Output			(other, self,"Info_BaalLukor_TELEPORT_15_03"); //Р­С‚Рѕ РјРµСЃС‚Рѕ Р±РѕР»СЊС€Рµ РїРѕС…РѕР¶Рµ РЅР° РїРѕС…РѕСЂРѕРЅРЅС‹Р№ Р·Р°Р».
+	AI_Output			(self, other,"Info_BaalLukor_TELEPORT_13_04"); //РРґРµРј РґР°Р»СЊС€Рµ.
+	AI_Output 			(self, other,"Info_BaalLukor_HELP_13_03"); //РРґРё РІРїРµСЂРµРґ. РЇ РїРѕР№РґСѓ СЃР»РµРґРѕРј!
 
-	B_LogEntry		(CH3_OrcGraveyard,"При помощи заклинания телепортации я обнаружил туннель, ведущий прочь от большого зала.");
+	B_LogEntry		(CH3_OrcGraveyard,"РџСЂРё РїРѕРјРѕС‰Рё Р·Р°РєР»РёРЅР°РЅРёСЏ С‚РµР»РµРїРѕСЂС‚Р°С†РёРё СЏ РѕР±РЅР°СЂСѓР¶РёР» С‚СѓРЅРЅРµР»СЊ, РІРµРґСѓС‰РёР№ РїСЂРѕС‡СЊ РѕС‚ Р±РѕР»СЊС€РѕРіРѕ Р·Р°Р»Р°.");
 
 	AI_StopProcessInfos	(self);
 	Npc_ExchangeRoutine	(self,	"TELEPORT");
@@ -641,27 +641,27 @@ FUNC VOID Info_BaalLukor_ALTAR_Info()
 	AI_AlignToWP		(hero);
 
 	AI_GotoNpc			(self, hero);
-	AI_Output			(self, hero,"Info_BaalLukor_ALTAR_13_01"); //НЕТ! Этого не может быть! Здесь ничего нет... ничего, кроме костей... и пыли.
+	AI_Output			(self, hero,"Info_BaalLukor_ALTAR_13_01"); //РќР•Рў! Р­С‚РѕРіРѕ РЅРµ РјРѕР¶РµС‚ Р±С‹С‚СЊ! Р—РґРµСЃСЊ РЅРёС‡РµРіРѕ РЅРµС‚... РЅРёС‡РµРіРѕ, РєСЂРѕРјРµ РєРѕСЃС‚РµР№... Рё РїС‹Р»Рё.
 
 	AI_SetWalkmode		(self, NPC_RUN);
 	AI_GotoWP			(self, "GRYD_082");
 
 	AI_PlayAniBS		(self, "T_STAND_2_PRAY", BS_SIT);
-	AI_Output			(self, hero,"Info_BaalLukor_ALTAR_13_02"); //НЕТ!
-	AI_Output			(self, hero,"Info_BaalLukor_ALTAR_13_03"); //ГОСПОДИН, ОТВЕТЬ МНЕ!!!
-	AI_Output			(self, hero,"Info_BaalLukor_ALTAR_13_04"); //ЯВИ СЕБЯ, СПЯЩИЙ!!!
-	AI_Output			(self, hero,"Info_BaalLukor_ALTAR_13_05"); //НЕЕЕЕЕЕТ!!!
+	AI_Output			(self, hero,"Info_BaalLukor_ALTAR_13_02"); //РќР•Рў!
+	AI_Output			(self, hero,"Info_BaalLukor_ALTAR_13_03"); //Р“РћРЎРџРћР”РРќ, РћРўР’Р•РўР¬ РњРќР•!!!
+	AI_Output			(self, hero,"Info_BaalLukor_ALTAR_13_04"); //РЇР’Р РЎР•Р‘РЇ, РЎРџРЇР©РР™!!!
+	AI_Output			(self, hero,"Info_BaalLukor_ALTAR_13_05"); //РќР•Р•Р•Р•Р•Р•Рў!!!
 
-	AI_Output			(hero, self,"Info_BaalLukor_ALTAR_15_06"); //Ну вот. Он окончательно сошел с ума!
+	AI_Output			(hero, self,"Info_BaalLukor_ALTAR_15_06"); //РќСѓ РІРѕС‚. РћРЅ РѕРєРѕРЅС‡Р°С‚РµР»СЊРЅРѕ СЃРѕС€РµР» СЃ СѓРјР°!
 
 	AI_StandUp			(self);
 	B_WhirlAround		(self, hero);
-	AI_Output			(self, hero,"Info_BaalLukor_ALTAR_13_07"); //Это все твоя вина. Твое нечестивое присутствие разозлило всемогущего Спящего!
-	AI_Output			(self, hero,"Info_BaalLukor_ALTAR_13_08"); //И теперь я должен расплачиваться за твое святотатство!
-	AI_Output			(self, hero,"Info_BaalLukor_ALTAR_13_09"); //Я должен принести жертву своему господину. ЧЕЛОВЕЧЕСКУЮ ЖЕРТВУ!!!
-	AI_Output			(self, hero,"Info_BaalLukor_ALTAR_13_10"); //И тогда он точно просвятит меня и сделает меня своим слугой.
-	AI_Output			(self, hero,"Info_BaalLukor_ALTAR_13_11"); //УМРИ, НЕВЕРНЫЙ!!!
-	AI_Output			(self, hero,"Info_BaalLukor_ALTAR_13_12"); //АЙЙЙЕЕЕЕХХХХХХ!!!!!!
+	AI_Output			(self, hero,"Info_BaalLukor_ALTAR_13_07"); //Р­С‚Рѕ РІСЃРµ С‚РІРѕСЏ РІРёРЅР°. РўРІРѕРµ РЅРµС‡РµСЃС‚РёРІРѕРµ РїСЂРёСЃСѓС‚СЃС‚РІРёРµ СЂР°Р·РѕР·Р»РёР»Рѕ РІСЃРµРјРѕРіСѓС‰РµРіРѕ РЎРїСЏС‰РµРіРѕ!
+	AI_Output			(self, hero,"Info_BaalLukor_ALTAR_13_08"); //Р С‚РµРїРµСЂСЊ СЏ РґРѕР»Р¶РµРЅ СЂР°СЃРїР»Р°С‡РёРІР°С‚СЊСЃСЏ Р·Р° С‚РІРѕРµ СЃРІСЏС‚РѕС‚Р°С‚СЃС‚РІРѕ!
+	AI_Output			(self, hero,"Info_BaalLukor_ALTAR_13_09"); //РЇ РґРѕР»Р¶РµРЅ РїСЂРёРЅРµСЃС‚Рё Р¶РµСЂС‚РІСѓ СЃРІРѕРµРјСѓ РіРѕСЃРїРѕРґРёРЅСѓ. Р§Р•Р›РћР’Р•Р§Р•РЎРљРЈР® Р–Р•Р РўР’РЈ!!!
+	AI_Output			(self, hero,"Info_BaalLukor_ALTAR_13_10"); //Р С‚РѕРіРґР° РѕРЅ С‚РѕС‡РЅРѕ РїСЂРѕСЃРІСЏС‚РёС‚ РјРµРЅСЏ Рё СЃРґРµР»Р°РµС‚ РјРµРЅСЏ СЃРІРѕРёРј СЃР»СѓРіРѕР№.
+	AI_Output			(self, hero,"Info_BaalLukor_ALTAR_13_11"); //РЈРњР Р, РќР•Р’Р•Р РќР«Р™!!!
+	AI_Output			(self, hero,"Info_BaalLukor_ALTAR_13_12"); //РђР™Р™Р™Р•Р•Р•Р•РҐРҐРҐРҐРҐРҐ!!!!!!
 
 	self.flags = 0;
 	self.npctype = NPCTYPE_MAIN;
@@ -670,7 +670,7 @@ FUNC VOID Info_BaalLukor_ALTAR_Info()
 	Npc_SetPermAttitude	(self,	ATT_HOSTILE);
 	//CreateInvItems		(self,	ItArScrollPyrokinesis,	3);
 
-	B_LogEntry		(CH3_OrcGraveyard,"Идол Люкор просто сошел с ума, когда понял, что там внизу нет абсолютно ничего. В припадке ярости он даже напал на меня. Кор Ангар будет очень расстроен, услышав эту историю.");
+	B_LogEntry		(CH3_OrcGraveyard,"РРґРѕР» Р›СЋРєРѕСЂ РїСЂРѕСЃС‚Рѕ СЃРѕС€РµР» СЃ СѓРјР°, РєРѕРіРґР° РїРѕРЅСЏР», С‡С‚Рѕ С‚Р°Рј РІРЅРёР·Сѓ РЅРµС‚ Р°Р±СЃРѕР»СЋС‚РЅРѕ РЅРёС‡РµРіРѕ. Р’ РїСЂРёРїР°РґРєРµ СЏСЂРѕСЃС‚Рё РѕРЅ РґР°Р¶Рµ РЅР°РїР°Р» РЅР° РјРµРЅСЏ. РљРѕСЂ РђРЅРіР°СЂ Р±СѓРґРµС‚ РѕС‡РµРЅСЊ СЂР°СЃСЃС‚СЂРѕРµРЅ, СѓСЃР»С‹С€Р°РІ СЌС‚Сѓ РёСЃС‚РѕСЂРёСЋ.");
 
 	AI_StopProcessInfos	(self);
 

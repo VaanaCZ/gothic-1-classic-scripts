@@ -2,7 +2,7 @@ INSTANCE PC_Thief(NPC_DEFAULT)
 
 {
 	//-------- primary data --------
-	name 			= "Диего";
+	name 			= "Р”РёРµРіРѕ";
 	Npctype			= NPCTYPE_FRIEND;
 	guild			= GIL_STT;
 	level			= 999;			// real 25, aber 999 damit er nicht vor dem Troll flieht!

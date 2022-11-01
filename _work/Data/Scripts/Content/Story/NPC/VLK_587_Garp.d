@@ -2,7 +2,7 @@ instance VLK_587_Garp (Npc_Default)
 {
 	//-------- primary data --------
 	
-	name =							"Γΰπο";
+	name =							"Π“Π°Ρ€ΠΏ";
 	npctype =						npctype_main;
 	guild =							GIL_VLK;      
 	level =							5;

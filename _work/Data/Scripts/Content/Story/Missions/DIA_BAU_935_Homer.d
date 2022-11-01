@@ -33,7 +33,7 @@ INSTANCE DIA_Homer_Hello (C_INFO)
 	condition	= DIA_Homer_Hello_Condition;
 	information	= DIA_Homer_Hello_Info;
 	permanent	= 0;
-	description = "Что-нибудь ищешь?";
+	description = "Р§С‚Рѕ-РЅРёР±СѓРґСЊ РёС‰РµС€СЊ?";
 };                       
 
 FUNC INT DIA_Homer_Hello_Condition()
@@ -43,10 +43,10 @@ FUNC INT DIA_Homer_Hello_Condition()
 
 FUNC VOID DIA_Homer_Hello_Info()
 {	
-	AI_Output (other, self,"DIA_Homer_Hello_15_00"); //Что-нибудь ищешь?
-	AI_Output (self, other,"DIA_Homer_Hello_02_01"); //Я ищу течь в плотине. Похоже, над основанием поработал шныг.
-	AI_Output (self, other,"DIA_Homer_Hello_02_02"); //Эта тварь своими зубами и когтями подтачивает камни и деревянные балки под водой.
-	AI_Output (self, other,"DIA_Homer_Hello_02_03"); //Если так будет продолжаться, плотина вскоре разрушится.  
+	AI_Output (other, self,"DIA_Homer_Hello_15_00"); //Р§С‚Рѕ-РЅРёР±СѓРґСЊ РёС‰РµС€СЊ?
+	AI_Output (self, other,"DIA_Homer_Hello_02_01"); //РЇ РёС‰Сѓ С‚РµС‡СЊ РІ РїР»РѕС‚РёРЅРµ. РџРѕС…РѕР¶Рµ, РЅР°Рґ РѕСЃРЅРѕРІР°РЅРёРµРј РїРѕСЂР°Р±РѕС‚Р°Р» С€РЅС‹Рі.
+	AI_Output (self, other,"DIA_Homer_Hello_02_02"); //Р­С‚Р° С‚РІР°СЂСЊ СЃРІРѕРёРјРё Р·СѓР±Р°РјРё Рё РєРѕРіС‚СЏРјРё РїРѕРґС‚Р°С‡РёРІР°РµС‚ РєР°РјРЅРё Рё РґРµСЂРµРІСЏРЅРЅС‹Рµ Р±Р°Р»РєРё РїРѕРґ РІРѕРґРѕР№.
+	AI_Output (self, other,"DIA_Homer_Hello_02_03"); //Р•СЃР»Рё С‚Р°Рє Р±СѓРґРµС‚ РїСЂРѕРґРѕР»Р¶Р°С‚СЊСЃСЏ, РїР»РѕС‚РёРЅР° РІСЃРєРѕСЂРµ СЂР°Р·СЂСѓС€РёС‚СЃСЏ.  
 };
 
 // ************************************************************
@@ -60,7 +60,7 @@ INSTANCE DIA_Homer_BuiltDam (C_INFO)
 	condition	= DIA_Homer_BuiltDam_Condition;
 	information	= DIA_Homer_BuiltDam_Info;
 	permanent	= 0;
-	description = "Это ТЫ построил плотину?";
+	description = "Р­С‚Рѕ РўР« РїРѕСЃС‚СЂРѕРёР» РїР»РѕС‚РёРЅСѓ?";
 };                       
 
 FUNC INT DIA_Homer_BuiltDam_Condition()
@@ -73,9 +73,9 @@ FUNC INT DIA_Homer_BuiltDam_Condition()
 
 FUNC VOID DIA_Homer_BuiltDam_Info()
 {	
-	AI_Output (other, self,"DIA_Homer_BuiltDam_15_00"); //Это ТЫ построил плотину?
-	AI_Output (self, other,"DIA_Homer_BuiltDam_02_01"); //Да. Я построил эту плотину, когда мы основали Новый Лагерь.
-	AI_Output (self, other,"DIA_Homer_BuiltDam_02_02"); //Конечно, все помогали, но я был главным строителем.
+	AI_Output (other, self,"DIA_Homer_BuiltDam_15_00"); //Р­С‚Рѕ РўР« РїРѕСЃС‚СЂРѕРёР» РїР»РѕС‚РёРЅСѓ?
+	AI_Output (self, other,"DIA_Homer_BuiltDam_02_01"); //Р”Р°. РЇ РїРѕСЃС‚СЂРѕРёР» СЌС‚Сѓ РїР»РѕС‚РёРЅСѓ, РєРѕРіРґР° РјС‹ РѕСЃРЅРѕРІР°Р»Рё РќРѕРІС‹Р№ Р›Р°РіРµСЂСЊ.
+	AI_Output (self, other,"DIA_Homer_BuiltDam_02_02"); //РљРѕРЅРµС‡РЅРѕ, РІСЃРµ РїРѕРјРѕРіР°Р»Рё, РЅРѕ СЏ Р±С‹Р» РіР»Р°РІРЅС‹Рј СЃС‚СЂРѕРёС‚РµР»РµРј.
 };
 
 // ************************************************************
@@ -91,7 +91,7 @@ INSTANCE DIA_Homer_WannaHelp (C_INFO)
 	condition	= DIA_Homer_WannaHelp_Condition;
 	information	= DIA_Homer_WannaHelp_Info;
 	permanent	= 0;
-	description = "Могу ли я чем-то помочь? ";
+	description = "РњРѕРіСѓ Р»Рё СЏ С‡РµРј-С‚Рѕ РїРѕРјРѕС‡СЊ? ";
 };                       
 
 FUNC INT DIA_Homer_WannaHelp_Condition()
@@ -104,14 +104,14 @@ FUNC INT DIA_Homer_WannaHelp_Condition()
 
 FUNC VOID DIA_Homer_WannaHelp_Info()
 {	
-	AI_Output (other, self,"DIA_Homer_WannaHelp_15_00"); //Могу ли я чем-то помочь? 
-	AI_Output (self, other,"DIA_Homer_WannaHelp_02_01"); //Конечно. Просто убеди эту тварь не подтачивать мою плотину.
+	AI_Output (other, self,"DIA_Homer_WannaHelp_15_00"); //РњРѕРіСѓ Р»Рё СЏ С‡РµРј-С‚Рѕ РїРѕРјРѕС‡СЊ? 
+	AI_Output (self, other,"DIA_Homer_WannaHelp_02_01"); //РљРѕРЅРµС‡РЅРѕ. РџСЂРѕСЃС‚Рѕ СѓР±РµРґРё СЌС‚Сѓ С‚РІР°СЂСЊ РЅРµ РїРѕРґС‚Р°С‡РёРІР°С‚СЊ РјРѕСЋ РїР»РѕС‚РёРЅСѓ.
 	
 	Homer_DamLurker = LOG_RUNNING;
 	
 	Log_CreateTopic		(CH1_DamLurker, LOG_MISSION);
 	Log_SetTopicStatus	(CH1_DamLurker, LOG_RUNNING);
-	B_LogEntry			(CH1_DamLurker,"Гомер сказал мне, что одна из шныг портит плотину. Если я смогу остановить ее, то смогу и плотину починить.");
+	B_LogEntry			(CH1_DamLurker,"Р“РѕРјРµСЂ СЃРєР°Р·Р°Р» РјРЅРµ, С‡С‚Рѕ РѕРґРЅР° РёР· С€РЅС‹Рі РїРѕСЂС‚РёС‚ РїР»РѕС‚РёРЅСѓ. Р•СЃР»Рё СЏ СЃРјРѕРіСѓ РѕСЃС‚Р°РЅРѕРІРёС‚СЊ РµРµ, С‚Рѕ СЃРјРѕРіСѓ Рё РїР»РѕС‚РёРЅСѓ РїРѕС‡РёРЅРёС‚СЊ.");
 
 };
 
@@ -126,7 +126,7 @@ INSTANCE DIA_Homer_Running (C_INFO)
 	condition	= DIA_Homer_Running_Condition;
 	information	= DIA_Homer_Running_Info;
 	permanent	= 0;
-	description = "Где я могу найти этого шныга?";
+	description = "Р“РґРµ СЏ РјРѕРіСѓ РЅР°Р№С‚Рё СЌС‚РѕРіРѕ С€РЅС‹РіР°?";
 };                       
 
 FUNC INT DIA_Homer_Running_Condition()
@@ -139,11 +139,11 @@ FUNC INT DIA_Homer_Running_Condition()
 
 FUNC VOID DIA_Homer_Running_Info()
 {	
-	AI_Output (other, self,"DIA_Homer_Running_15_00"); //Где я могу найти этого шныга?
-	AI_Output (self, other,"DIA_Homer_Running_02_01"); //Я бы поискал на другой стороне озера. Туда никто не ходит. Скорее всего, именно там находится логово шныга.
+	AI_Output (other, self,"DIA_Homer_Running_15_00"); //Р“РґРµ СЏ РјРѕРіСѓ РЅР°Р№С‚Рё СЌС‚РѕРіРѕ С€РЅС‹РіР°?
+	AI_Output (self, other,"DIA_Homer_Running_02_01"); //РЇ Р±С‹ РїРѕРёСЃРєР°Р» РЅР° РґСЂСѓРіРѕР№ СЃС‚РѕСЂРѕРЅРµ РѕР·РµСЂР°. РўСѓРґР° РЅРёРєС‚Рѕ РЅРµ С…РѕРґРёС‚. РЎРєРѕСЂРµРµ РІСЃРµРіРѕ, РёРјРµРЅРЅРѕ С‚Р°Рј РЅР°С…РѕРґРёС‚СЃСЏ Р»РѕРіРѕРІРѕ С€РЅС‹РіР°.
 	
 	Homer_DamLurker = LOG_RUNNING;
-	B_LogEntry	(CH1_DamLurker,"У шныги должна быть нора или другое укрытие где-то у дальнего края запруды.");
+	B_LogEntry	(CH1_DamLurker,"РЈ С€РЅС‹РіРё РґРѕР»Р¶РЅР° Р±С‹С‚СЊ РЅРѕСЂР° РёР»Рё РґСЂСѓРіРѕРµ СѓРєСЂС‹С‚РёРµ РіРґРµ-С‚Рѕ Сѓ РґР°Р»СЊРЅРµРіРѕ РєСЂР°СЏ Р·Р°РїСЂСѓРґС‹.");
 	
 };
 
@@ -158,7 +158,7 @@ INSTANCE DIA_Homer_Success (C_INFO)
 	condition	= DIA_Homer_Success_Condition;
 	information	= DIA_Homer_Success_Info;
 	permanent	= 0;
-	description = "Я убил шныга!";
+	description = "РЇ СѓР±РёР» С€РЅС‹РіР°!";
 };                       
 
 FUNC INT DIA_Homer_Success_Condition()
@@ -176,13 +176,13 @@ FUNC INT DIA_Homer_Success_Condition()
 
 FUNC VOID DIA_Homer_Success_Info()
 {	
-	AI_Output			(other, self,"DIA_Homer_Success_15_00"); //Я убил шныга!
-	AI_Output			(self, other,"DIA_Homer_Success_02_01"); //Молодец! Лорд прислал мне в помощь несколько людей, чтобы починить плотину.
-	AI_Output			(self, other,"DIA_Homer_Success_02_02"); //Теперь, наконец-то, я смогу немного поспать.
+	AI_Output			(other, self,"DIA_Homer_Success_15_00"); //РЇ СѓР±РёР» С€РЅС‹РіР°!
+	AI_Output			(self, other,"DIA_Homer_Success_02_01"); //РњРѕР»РѕРґРµС†! Р›РѕСЂРґ РїСЂРёСЃР»Р°Р» РјРЅРµ РІ РїРѕРјРѕС‰СЊ РЅРµСЃРєРѕР»СЊРєРѕ Р»СЋРґРµР№, С‡С‚РѕР±С‹ РїРѕС‡РёРЅРёС‚СЊ РїР»РѕС‚РёРЅСѓ.
+	AI_Output			(self, other,"DIA_Homer_Success_02_02"); //РўРµРїРµСЂСЊ, РЅР°РєРѕРЅРµС†-С‚Рѕ, СЏ СЃРјРѕРіСѓ РЅРµРјРЅРѕРіРѕ РїРѕСЃРїР°С‚СЊ.
 		
 	Homer_DamLurker = 	LOG_SUCCESS;
 	Log_SetTopicStatus	(CH1_DamLurker,	LOG_SUCCESS);
-	B_LogEntry			(CH1_DamLurker,"Со шныгой покончено, Гомер снова может спать спокойно.");
+	B_LogEntry			(CH1_DamLurker,"РЎРѕ С€РЅС‹РіРѕР№ РїРѕРєРѕРЅС‡РµРЅРѕ, Р“РѕРјРµСЂ СЃРЅРѕРІР° РјРѕР¶РµС‚ СЃРїР°С‚СЊ СЃРїРѕРєРѕР№РЅРѕ.");
 	B_GiveXP			(XP_ReportDeadDamLurker);
 	
 	AI_StopProcessInfos	(self);
@@ -200,7 +200,7 @@ INSTANCE DIA_Homer_PERM (C_INFO)
 	condition	= DIA_Homer_PERM_Condition;
 	information	= DIA_Homer_PERM_Info;
 	permanent	= 1;
-	description = "Все в порядке с плотиной?";
+	description = "Р’СЃРµ РІ РїРѕСЂСЏРґРєРµ СЃ РїР»РѕС‚РёРЅРѕР№?";
 };                       
 
 FUNC INT DIA_Homer_PERM_Condition()
@@ -213,7 +213,7 @@ FUNC INT DIA_Homer_PERM_Condition()
 
 FUNC VOID DIA_Homer_PERM_Info()
 {	
-	AI_Output (other, self,"DIA_Homer_PERM_15_00"); //Все в порядке с плотиной?
-	AI_Output (self, other,"DIA_Homer_PERM_02_01"); //Она надежна, как крепость, которую никто не может разрушить.
+	AI_Output (other, self,"DIA_Homer_PERM_15_00"); //Р’СЃРµ РІ РїРѕСЂСЏРґРєРµ СЃ РїР»РѕС‚РёРЅРѕР№?
+	AI_Output (self, other,"DIA_Homer_PERM_02_01"); //РћРЅР° РЅР°РґРµР¶РЅР°, РєР°Рє РєСЂРµРїРѕСЃС‚СЊ, РєРѕС‚РѕСЂСѓСЋ РЅРёРєС‚Рѕ РЅРµ РјРѕР¶РµС‚ СЂР°Р·СЂСѓС€РёС‚СЊ.
 };
 

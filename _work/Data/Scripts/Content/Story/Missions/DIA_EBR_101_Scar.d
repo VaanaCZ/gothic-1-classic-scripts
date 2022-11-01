@@ -33,7 +33,7 @@ INSTANCE DIA_SCAR_Hello (C_INFO)
 	condition	= DIA_SCAR_Hello_Condition;
 	information	= DIA_SCAR_Hello_Info;
 	permanent	= 0;
-	description = "Как тебя зовут?";
+	description = "РљР°Рє С‚РµР±СЏ Р·РѕРІСѓС‚?";
 };                       
 
 FUNC INT DIA_SCAR_Hello_Condition()
@@ -43,8 +43,8 @@ FUNC INT DIA_SCAR_Hello_Condition()
 
 FUNC VOID DIA_SCAR_Hello_Info()
 {	
-	AI_Output (other, self,"DIA_SCAR_Hello_15_00"); //Кто ты?
-	AI_Output (self, other,"DIA_SCAR_Hello_08_01"); //Меня называют Шрам.
+	AI_Output (other, self,"DIA_SCAR_Hello_15_00"); //РљС‚Рѕ С‚С‹?
+	AI_Output (self, other,"DIA_SCAR_Hello_08_01"); //РњРµРЅСЏ РЅР°Р·С‹РІР°СЋС‚ РЁСЂР°Рј.
 };
 
 // ************************************************************
@@ -58,7 +58,7 @@ INSTANCE DIA_SCAR_What (C_INFO)
 	condition	= DIA_SCAR_What_Condition;
 	information	= DIA_SCAR_What_Info;
 	permanent	= 0;
-	description = "Чем ты занимаешься?";
+	description = "Р§РµРј С‚С‹ Р·Р°РЅРёРјР°РµС€СЊСЃСЏ?";
 };                       
 
 FUNC INT DIA_SCAR_What_Condition()
@@ -71,9 +71,9 @@ FUNC INT DIA_SCAR_What_Condition()
 
 FUNC VOID DIA_SCAR_What_Info()
 {	
-	AI_Output (other, self,"DIA_SCAR_What_15_00"); //Чем ты занимаешься?
-	AI_Output (self, other,"DIA_SCAR_What_08_01"); //Мы с Арто следим за тем, чтобы никто не заходил к Гомезу без приглашения.
-	AI_Output (self, other,"DIA_SCAR_What_08_02"); //И еще я слежу за тем, чтобы никто не беспокоил женщин.
+	AI_Output (other, self,"DIA_SCAR_What_15_00"); //Р§РµРј С‚С‹ Р·Р°РЅРёРјР°РµС€СЊСЃСЏ?
+	AI_Output (self, other,"DIA_SCAR_What_08_01"); //РњС‹ СЃ РђСЂС‚Рѕ СЃР»РµРґРёРј Р·Р° С‚РµРј, С‡С‚РѕР±С‹ РЅРёРєС‚Рѕ РЅРµ Р·Р°С…РѕРґРёР» Рє Р“РѕРјРµР·Сѓ Р±РµР· РїСЂРёРіР»Р°С€РµРЅРёСЏ.
+	AI_Output (self, other,"DIA_SCAR_What_08_02"); //Р РµС‰Рµ СЏ СЃР»РµР¶Сѓ Р·Р° С‚РµРј, С‡С‚РѕР±С‹ РЅРёРєС‚Рѕ РЅРµ Р±РµСЃРїРѕРєРѕРёР» Р¶РµРЅС‰РёРЅ.
 };
 
 // ************************************************************
@@ -87,7 +87,7 @@ INSTANCE DIA_SCAR_Frau (C_INFO)
 	condition	= DIA_SCAR_Frau_Condition;
 	information	= DIA_SCAR_Frau_Info;
 	permanent	= 0;
-	description = "Когда меня зашвырнули сюда, я видел женщину...";
+	description = "РљРѕРіРґР° РјРµРЅСЏ Р·Р°С€РІС‹СЂРЅСѓР»Рё СЃСЋРґР°, СЏ РІРёРґРµР» Р¶РµРЅС‰РёРЅСѓ...";
 };                       
 
 FUNC INT DIA_SCAR_Frau_Condition()
@@ -100,12 +100,12 @@ FUNC INT DIA_SCAR_Frau_Condition()
 
 FUNC VOID DIA_SCAR_Frau_Info()
 {	
-	AI_Output (other, self,"DIA_SCAR_Frau_15_00"); //Когда меня зашвырнули сюда, я видел женщину, которую отправляли на платформе с товарами.
-	AI_Output (self, other,"DIA_SCAR_Frau_08_01"); //И что?
-	AI_Output (other, self,"DIA_SCAR_Frau_15_02"); //Она здесь?
-	AI_Output (self, other,"DIA_SCAR_Frau_08_03"); //Послушай, на тот случай, если она заинтересовала тебя, позволь дать небольшой совет: забудь о ней.
-	AI_Output (self, other,"DIA_SCAR_Frau_08_04"); //Как только эта женщина появилась здесь, Гомез запер ее в своей комнате.
-	AI_Output (self, other,"DIA_SCAR_Frau_08_05"); //Когда она ему надоест, Гомез может просто отправить ее вниз. Но пока она принадлежит ЕМУ, так что не забивай себе голову всякой ерундой, понял?
+	AI_Output (other, self,"DIA_SCAR_Frau_15_00"); //РљРѕРіРґР° РјРµРЅСЏ Р·Р°С€РІС‹СЂРЅСѓР»Рё СЃСЋРґР°, СЏ РІРёРґРµР» Р¶РµРЅС‰РёРЅСѓ, РєРѕС‚РѕСЂСѓСЋ РѕС‚РїСЂР°РІР»СЏР»Рё РЅР° РїР»Р°С‚С„РѕСЂРјРµ СЃ С‚РѕРІР°СЂР°РјРё.
+	AI_Output (self, other,"DIA_SCAR_Frau_08_01"); //Р С‡С‚Рѕ?
+	AI_Output (other, self,"DIA_SCAR_Frau_15_02"); //РћРЅР° Р·РґРµСЃСЊ?
+	AI_Output (self, other,"DIA_SCAR_Frau_08_03"); //РџРѕСЃР»СѓС€Р°Р№, РЅР° С‚РѕС‚ СЃР»СѓС‡Р°Р№, РµСЃР»Рё РѕРЅР° Р·Р°РёРЅС‚РµСЂРµСЃРѕРІР°Р»Р° С‚РµР±СЏ, РїРѕР·РІРѕР»СЊ РґР°С‚СЊ РЅРµР±РѕР»СЊС€РѕР№ СЃРѕРІРµС‚: Р·Р°Р±СѓРґСЊ Рѕ РЅРµР№.
+	AI_Output (self, other,"DIA_SCAR_Frau_08_04"); //РљР°Рє С‚РѕР»СЊРєРѕ СЌС‚Р° Р¶РµРЅС‰РёРЅР° РїРѕСЏРІРёР»Р°СЃСЊ Р·РґРµСЃСЊ, Р“РѕРјРµР· Р·Р°РїРµСЂ РµРµ РІ СЃРІРѕРµР№ РєРѕРјРЅР°С‚Рµ.
+	AI_Output (self, other,"DIA_SCAR_Frau_08_05"); //РљРѕРіРґР° РѕРЅР° РµРјСѓ РЅР°РґРѕРµСЃС‚, Р“РѕРјРµР· РјРѕР¶РµС‚ РїСЂРѕСЃС‚Рѕ РѕС‚РїСЂР°РІРёС‚СЊ РµРµ РІРЅРёР·. РќРѕ РїРѕРєР° РѕРЅР° РїСЂРёРЅР°РґР»РµР¶РёС‚ Р•РњРЈ, С‚Р°Рє С‡С‚Рѕ РЅРµ Р·Р°Р±РёРІР°Р№ СЃРµР±Рµ РіРѕР»РѕРІСѓ РІСЃСЏРєРѕР№ РµСЂСѓРЅРґРѕР№, РїРѕРЅСЏР»?
 };
 
 // ************************************************************
@@ -119,7 +119,7 @@ INSTANCE DIA_SCAR_PERM (C_INFO)
 	condition	= DIA_SCAR_PERM_Condition;
 	information	= DIA_SCAR_PERM_Info;
 	permanent	= 1;
-	description = "Что ты можешь сказать о Гомезе?";
+	description = "Р§С‚Рѕ С‚С‹ РјРѕР¶РµС€СЊ СЃРєР°Р·Р°С‚СЊ Рѕ Р“РѕРјРµР·Рµ?";
 };                       
 
 FUNC INT DIA_SCAR_PERM_Condition()
@@ -132,8 +132,8 @@ FUNC INT DIA_SCAR_PERM_Condition()
 
 FUNC VOID DIA_SCAR_PERM_Info()
 {	
-	AI_Output (other, self,"DIA_SCAR_PERM_15_00"); //Что ты можешь сказать о Гомезе?
-	AI_Output (self, other,"DIA_SCAR_PERM_08_01"); //Главное, что тебе нужно знать: он самый влиятельный человек в колонии.
-	AI_Output (self, other,"DIA_SCAR_PERM_08_02"); //Он получает все, чего хочет, а больше всего он хочет власти.
+	AI_Output (other, self,"DIA_SCAR_PERM_15_00"); //Р§С‚Рѕ С‚С‹ РјРѕР¶РµС€СЊ СЃРєР°Р·Р°С‚СЊ Рѕ Р“РѕРјРµР·Рµ?
+	AI_Output (self, other,"DIA_SCAR_PERM_08_01"); //Р“Р»Р°РІРЅРѕРµ, С‡С‚Рѕ С‚РµР±Рµ РЅСѓР¶РЅРѕ Р·РЅР°С‚СЊ: РѕРЅ СЃР°РјС‹Р№ РІР»РёСЏС‚РµР»СЊРЅС‹Р№ С‡РµР»РѕРІРµРє РІ РєРѕР»РѕРЅРёРё.
+	AI_Output (self, other,"DIA_SCAR_PERM_08_02"); //РћРЅ РїРѕР»СѓС‡Р°РµС‚ РІСЃРµ, С‡РµРіРѕ С…РѕС‡РµС‚, Р° Р±РѕР»СЊС€Рµ РІСЃРµРіРѕ РѕРЅ С…РѕС‡РµС‚ РІР»Р°СЃС‚Рё.
 };
 

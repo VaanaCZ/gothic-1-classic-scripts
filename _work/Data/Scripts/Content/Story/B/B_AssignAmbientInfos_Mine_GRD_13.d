@@ -14,7 +14,7 @@ INSTANCE Info_Mine_Grd_13_EXIT(C_INFO)
 	condition	= Info_Mine_Grd_13_EXIT_Condition;
 	information	= Info_Mine_Grd_13_EXIT_Info;
 	permanent	= 1;
-	description = "ЗАКОНЧИТЬ";
+	description = "Р—РђРљРћРќР§РРўР¬";
 };                       
 
 FUNC INT Info_Mine_Grd_13_EXIT_Condition()
@@ -37,7 +37,7 @@ INSTANCE Info_Mine_Grd_13_Mine (C_INFO) // E1
 	condition	= Info_Mine_Grd_13_Mine_Condition;
 	information	= Info_Mine_Grd_13_Mine_Info;
 	permanent	= 1;
-	description = "Как дела на шахте?";
+	description = "РљР°Рє РґРµР»Р° РЅР° С€Р°С…С‚Рµ?";
 };                       
 
 FUNC INT Info_Mine_Grd_13_Mine_Condition()
@@ -50,8 +50,8 @@ FUNC INT Info_Mine_Grd_13_Mine_Condition()
 
 FUNC VOID Info_Mine_Grd_13_Mine_Info()
 {
-	AI_Output(other,self,"Info_Mine_Grd_13_Mine_15_00"); //Что происходит на шахте?
-	AI_Output(self,other,"Info_Mine_Grd_13_Mine_13_01"); //Шахта - сердце Старого Лагеря. Нет шахты - нет руды. Нет руды - нет товаров из внешнего мира. Понятно?
+	AI_Output(other,self,"Info_Mine_Grd_13_Mine_15_00"); //Р§С‚Рѕ РїСЂРѕРёСЃС…РѕРґРёС‚ РЅР° С€Р°С…С‚Рµ?
+	AI_Output(self,other,"Info_Mine_Grd_13_Mine_13_01"); //РЁР°С…С‚Р° - СЃРµСЂРґС†Рµ РЎС‚Р°СЂРѕРіРѕ Р›Р°РіРµСЂСЏ. РќРµС‚ С€Р°С…С‚С‹ - РЅРµС‚ СЂСѓРґС‹. РќРµС‚ СЂСѓРґС‹ - РЅРµС‚ С‚РѕРІР°СЂРѕРІ РёР· РІРЅРµС€РЅРµРіРѕ РјРёСЂР°. РџРѕРЅСЏС‚РЅРѕ?
 };
 
 // *************************************************************************
@@ -64,7 +64,7 @@ INSTANCE Info_Mine_Grd_13_WichtigePersonen(C_INFO)
 	condition	= Info_Mine_Grd_13_WichtigePersonen_Condition;
 	information	= Info_Mine_Grd_13_WichtigePersonen_Info;
 	permanent	= 1;
-	description = "Кто здесь командует?";
+	description = "РљС‚Рѕ Р·РґРµСЃСЊ РєРѕРјР°РЅРґСѓРµС‚?";
 };                       
 
 FUNC INT Info_Mine_Grd_13_WichtigePersonen_Condition()
@@ -77,8 +77,8 @@ FUNC INT Info_Mine_Grd_13_WichtigePersonen_Condition()
 
 FUNC VOID Info_Mine_Grd_13_WichtigePersonen_Info()
 {
-	AI_Output(other,self,"Info_Mine_Grd_13_WichtigePersonen_15_00"); //Кто здесь главный?
-	AI_Output(self,other,"Info_Mine_Grd_13_WichtigePersonen_13_01"); //Наш босс - Асгхан. Но ты к нему не лезь. Ян занимается парнями типа тебя.
+	AI_Output(other,self,"Info_Mine_Grd_13_WichtigePersonen_15_00"); //РљС‚Рѕ Р·РґРµСЃСЊ РіР»Р°РІРЅС‹Р№?
+	AI_Output(self,other,"Info_Mine_Grd_13_WichtigePersonen_13_01"); //РќР°С€ Р±РѕСЃСЃ - РђСЃРіС…Р°РЅ. РќРѕ С‚С‹ Рє РЅРµРјСѓ РЅРµ Р»РµР·СЊ. РЇРЅ Р·Р°РЅРёРјР°РµС‚СЃСЏ РїР°СЂРЅСЏРјРё С‚РёРїР° С‚РµР±СЏ.
 };
 
 // *************************************************************************
@@ -91,7 +91,7 @@ INSTANCE Info_Mine_Grd_13_DasLager(C_INFO)
 	condition	= Info_Mine_Grd_13_DasLager_Condition;
 	information	= Info_Mine_Grd_13_DasLager_Info;
 	permanent	= 1;
-	description = "Расскажи мне о ползунах.";
+	description = "Р Р°СЃСЃРєР°Р¶Рё РјРЅРµ Рѕ РїРѕР»Р·СѓРЅР°С….";
 };                       
 
 FUNC INT Info_Mine_Grd_13_DasLager_Condition()
@@ -104,8 +104,8 @@ FUNC INT Info_Mine_Grd_13_DasLager_Condition()
 
 FUNC VOID Info_Mine_Grd_13_DasLager_Info()
 {
-	AI_Output(other,self,"Info_Mine_Grd_13_DasLager_15_00"); //Расскажи мне о ползунах.
-	AI_Output(self,other,"Info_Mine_Grd_13_DasLager_13_01"); //Члены Братства отдают Старому Лагерю немало болотника, и им позволяют охотиться на ползунов в шахте.
+	AI_Output(other,self,"Info_Mine_Grd_13_DasLager_15_00"); //Р Р°СЃСЃРєР°Р¶Рё РјРЅРµ Рѕ РїРѕР»Р·СѓРЅР°С….
+	AI_Output(self,other,"Info_Mine_Grd_13_DasLager_13_01"); //Р§Р»РµРЅС‹ Р‘СЂР°С‚СЃС‚РІР° РѕС‚РґР°СЋС‚ РЎС‚Р°СЂРѕРјСѓ Р›Р°РіРµСЂСЋ РЅРµРјР°Р»Рѕ Р±РѕР»РѕС‚РЅРёРєР°, Рё РёРј РїРѕР·РІРѕР»СЏСЋС‚ РѕС…РѕС‚РёС‚СЊСЃСЏ РЅР° РїРѕР»Р·СѓРЅРѕРІ РІ С€Р°С…С‚Рµ.
 	
 };
 
@@ -119,7 +119,7 @@ INSTANCE Info_Mine_Grd_13_DieLage(C_INFO) // E1
 	condition	= Info_Mine_Grd_13_DieLage_Condition;
 	information	= Info_Mine_Grd_13_DieLage_Info;
 	permanent	= 1;
-	description = "Как жизнь?";
+	description = "РљР°Рє Р¶РёР·РЅСЊ?";
 };                       
 
 FUNC INT Info_Mine_Grd_13_DieLage_Condition()
@@ -132,8 +132,8 @@ FUNC INT Info_Mine_Grd_13_DieLage_Condition()
 
 FUNC VOID Info_Mine_Grd_13_DieLage_Info()
 {
-	AI_Output(other,self,"Info_Mine_Grd_13_DieLage_15_00"); //Как жизнь?
-	AI_Output(self,other,"Info_Mine_Grd_13_DieLage_13_01"); //Я ни с кем не дрался уже целую вечность!
+	AI_Output(other,self,"Info_Mine_Grd_13_DieLage_15_00"); //РљР°Рє Р¶РёР·РЅСЊ?
+	AI_Output(self,other,"Info_Mine_Grd_13_DieLage_13_01"); //РЇ РЅРё СЃ РєРµРј РЅРµ РґСЂР°Р»СЃСЏ СѓР¶Рµ С†РµР»СѓСЋ РІРµС‡РЅРѕСЃС‚СЊ!
 	
 };
 	

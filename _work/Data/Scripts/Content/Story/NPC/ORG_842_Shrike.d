@@ -2,7 +2,7 @@ instance ORG_842_Shrike (Npc_Default)
 {
 	//-------- primary data --------
 	
-	name =					"Ψπΰικ";
+	name =					"Π¨Ρ€Π°ΠΉΠΊ";
 	Npctype =				Npctype_Main;
 	guild =					GIL_ORG;      
 	level =					6;
