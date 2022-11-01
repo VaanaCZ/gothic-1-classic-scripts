@@ -15,7 +15,7 @@ FUNC int Info_TPL_1455_GorBoba_Condition()
 
 func void Info_TPL_1455_GorBoba_Info()
 {
-	AI_Output (self, other,"Info_TPL_1455_GorBoba_08_01"); //Ztra se, nikdo tì tady nechce.
+	AI_Output (self, other,"Info_TPL_1455_GorBoba_08_01"); //ZtraÅ¥ se, nikdo tÄ› tady nechce.
 };
 
 
@@ -26,7 +26,7 @@ instance Info_TPL_1455_GorBoba1 (C_INFO)
 	information		= Info_TPL_1455_GorBoba1_Info;
 	important		= 0;
 	permanent		= 0;
-	description 	= "A TY mì chceš zastavit?";	
+	description 	= "A TY mÄ› chceÅ¡ zastavit?";	
 };
 
 FUNC int Info_TPL_1455_GorBoba1_Condition()
@@ -38,16 +38,16 @@ FUNC int Info_TPL_1455_GorBoba1_Condition()
 
 func void Info_TPL_1455_GorBoba1_Info()
 {
-	AI_Output (other, self,"Info_TPL_1455_GorBoba1_15_01"); //A TY mì chceš zastavit?
-	AI_Output (self, other,"Info_TPL_1455_GorBoba1_08_02"); //ANO! Zastavím tì - nebudeš rušit mistra Kaloma pøi probouzení Spáèe.
-	AI_Output (self, other,"Info_TPL_1455_GorBoba1_08_03"); //Nepokoušej se mì napadnout, nejvyšší knìz pøenesl èást svıch sil na mistra Kaloma a na nás. Jsme teï nesmrtelní.
-	AI_Output (other, self,"Info_TPL_1455_GorBoba1_15_04"); //Ukáu ti, jak jsi nesmrtelnı!
-	AI_Output (self, other,"Info_TPL_1455_GorBoba1_08_05"); //Pøiprav se na setkání se Stvoøitelem!
+	AI_Output (other, self,"Info_TPL_1455_GorBoba1_15_01"); //A TY mÄ› chceÅ¡ zastavit?
+	AI_Output (self, other,"Info_TPL_1455_GorBoba1_08_02"); //ANO! ZastavÃ­m tÄ› - nebudeÅ¡ ruÅ¡it mistra Kaloma pÅ™i probouzenÃ­ SpÃ¡Äe.
+	AI_Output (self, other,"Info_TPL_1455_GorBoba1_08_03"); //NepokouÅ¡ej se mÄ› napadnout, nejvyÅ¡Å¡Ã­ knÄ›z pÅ™enesl ÄÃ¡st svÃ½ch sil na mistra Kaloma a na nÃ¡s. Jsme teÄ nesmrtelnÃ­.
+	AI_Output (other, self,"Info_TPL_1455_GorBoba1_15_04"); //UkÃ¡Å¾u ti, jak jsi nesmrtelnÃ½!
+	AI_Output (self, other,"Info_TPL_1455_GorBoba1_08_05"); //PÅ™iprav se na setkÃ¡nÃ­ se StvoÅ™itelem!
 
 	AI_StopProcessInfos	( self );
 	
 	Log_CreateTopic        ( "Orktempel", LOG_NOTE );
-	B_LogEntry            ( "Orktempel","Zastavil mì GorBoba a snail se odradit od cesty. Øíkal, e Kalom a jeho stoupenci byli vysokım knìzem obdaøeni silou, která je èiní nezranitelnımi bìnımi lidskımi zbranìmi. "); 
+	B_LogEntry            ( "Orktempel","Zastavil mÄ› GorBoba a snaÅ¾il se odradit od cesty. Å˜Ã­kal, Å¾e Kalom a jeho stoupenci byli vysokÃ½m knÄ›zem obdaÅ™eni silou, kterÃ¡ je ÄinÃ­ nezranitelnÃ½mi bÄ›Å¾nÃ½mi lidskÃ½mi zbranÄ›mi. "); 
 
 	Npc_SetAttitude 		( self, ATT_HOSTILE );
 	Npc_SetTempAttitude 	( self, ATT_HOSTILE );	

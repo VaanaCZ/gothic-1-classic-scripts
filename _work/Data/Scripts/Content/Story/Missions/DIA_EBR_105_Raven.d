@@ -47,7 +47,7 @@ FUNC int DIA_Raven_FirstIn_Condition()
 
 FUNC VOID DIA_Raven_FirstIn_Info()
 {
-	AI_Output (self, other,"DIA_Raven_FirstIn_10_00"); //Co pro tebe mùu udìlat?
+	AI_Output (self, other,"DIA_Raven_FirstIn_10_00"); //Co pro tebe mÅ¯Å¾u udÄ›lat?
 };
 
 // **************************************
@@ -72,7 +72,7 @@ FUNC int DIA_Raven_Who_Condition()
 FUNC VOID DIA_Raven_Who_Info()
 {
 	AI_Output (other, self,"DIA_Raven_Who_15_00"); //Kdo jsi?
-	AI_Output (self, other,"DIA_Raven_Who_10_01"); //Jsem Raven. Gomezova pravá ruka. Kadı, kdo chce navštívit Gomeze, to musí øíci nejdøív MNÌ.
+	AI_Output (self, other,"DIA_Raven_Who_10_01"); //Jsem Raven. Gomezova pravÃ¡ ruka. KaÅ¾dÃ½, kdo chce navÅ¡tÃ­vit Gomeze, to musÃ­ Å™Ã­ci nejdÅ™Ã­v MNÄš.
 };
 
 // **************************************
@@ -86,7 +86,7 @@ instance DIA_Raven_Krautbote (C_INFO)
 	condition	= DIA_Raven_Krautbote_Condition;
 	information	= DIA_Raven_Krautbote_Info;
 	permanent	= 0;
-	description	= "Mám pro Gomeze trochu drogy z bain od Cora Kaloma.";
+	description	= "MÃ¡m pro Gomeze trochu drogy z baÅ¾in od Cora Kaloma.";
 };                       
 
 FUNC int DIA_Raven_Krautbote_Condition()
@@ -99,12 +99,12 @@ FUNC int DIA_Raven_Krautbote_Condition()
 
 FUNC VOID DIA_Raven_Krautbote_Info()
 {
-	AI_Output			(other, self,"DIA_Raven_Krautbote_15_00"); //Mám pro Gomeze trochu drogy z bain od Cora Kaloma.
-	AI_Output			(self, other,"DIA_Raven_Krautbote_10_01"); //Tyhle vìci domlouvá Bartholo. Gomez se s poslíèky nebaví.
-	AI_Output			(self, other,"DIA_Raven_Krautbote_10_02"); //Najdeš ho v místnosti hned vpravo za vchodem. Nebo v kuchyni ve velké vìi.
-	AI_Output			(self, other,"DIA_Raven_Krautbote_10_03"); //V noci samozøejmì spí. Bıt tebou, tak bych ho nevyrušoval.
+	AI_Output			(other, self,"DIA_Raven_Krautbote_15_00"); //MÃ¡m pro Gomeze trochu drogy z baÅ¾in od Cora Kaloma.
+	AI_Output			(self, other,"DIA_Raven_Krautbote_10_01"); //Tyhle vÄ›ci domlouvÃ¡ Bartholo. Gomez se s poslÃ­Äky nebavÃ­.
+	AI_Output			(self, other,"DIA_Raven_Krautbote_10_02"); //NajdeÅ¡ ho v mÃ­stnosti hned vpravo za vchodem. Nebo v kuchyni ve velkÃ© vÄ›Å¾i.
+	AI_Output			(self, other,"DIA_Raven_Krautbote_10_03"); //V noci samozÅ™ejmÄ› spÃ­. BÃ½t tebou, tak bych ho nevyruÅ¡oval.
 
-	B_LogEntry			(CH1_KrautBote,"Dodávka drogy pro Gomeze se musí odevzdat u Barthola. Najdu ho v domì Rudobaronù.");
+	B_LogEntry			(CH1_KrautBote,"DodÃ¡vka drogy pro Gomeze se musÃ­ odevzdat u Barthola. Najdu ho v domÄ› RudobaronÅ¯.");
 };
 
 // **************************************
@@ -118,7 +118,7 @@ instance DIA_Raven_Aufnahme (C_INFO)
 	condition	= DIA_Raven_Aufnahme_Condition;
 	information	= DIA_Raven_Aufnahme_Info;
 	permanent	= 0;
-	description	= "Chci vidìt Gomeze. Thorus øíká, e patøím ke Stínùm.";
+	description	= "Chci vidÄ›t Gomeze. Thorus Å™Ã­kÃ¡, Å¾e patÅ™Ã­m ke StÃ­nÅ¯m.";
 };                       
 
 FUNC int DIA_Raven_Aufnahme_Condition()
@@ -132,9 +132,9 @@ FUNC int DIA_Raven_Aufnahme_Condition()
 
 FUNC VOID DIA_Raven_Aufnahme_Info()
 {
-	AI_Output (other, self,"DIA_Raven_Aufnahme_15_00"); //Chci vidìt Gomeze. Thorus øíká, e patøím ke Stínùm.
-	AI_Output (self, other,"DIA_Raven_Aufnahme_10_01"); //Vdycky rozpoznáme poctivé mue. Vypadáš, e takovı jseš. Jsi v pohodì.
-	AI_Output (self, other,"DIA_Raven_Aufnahme_10_02"); //Zavedu tì ke Gomezovi. A na nic nesahej!
+	AI_Output (other, self,"DIA_Raven_Aufnahme_15_00"); //Chci vidÄ›t Gomeze. Thorus Å™Ã­kÃ¡, Å¾e patÅ™Ã­m ke StÃ­nÅ¯m.
+	AI_Output (self, other,"DIA_Raven_Aufnahme_10_01"); //VÅ¾dycky rozpoznÃ¡me poctivÃ© muÅ¾e. VypadÃ¡Å¡, Å¾e takovÃ½ jseÅ¡. Jsi v pohodÄ›.
+	AI_Output (self, other,"DIA_Raven_Aufnahme_10_02"); //Zavedu tÄ› ke Gomezovi. A na nic nesahej!
 	
 	AI_StopProcessInfos	(self);
 	Npc_ExchangeRoutine(self, "GUIDE");
@@ -164,7 +164,7 @@ FUNC int DIA_Raven_There_Condition()
 
 FUNC VOID DIA_Raven_There_Info()
 {
-	AI_Output (self, other,"DIA_Raven_There_10_01"); //Gomez tì oèekává. Jestli k nìmu se k nìmu nebudeš chovat uctivì, bude mi potìšením tì to nauèit, je ti to jasné?
+	AI_Output (self, other,"DIA_Raven_There_10_01"); //Gomez tÄ› oÄekÃ¡vÃ¡. Jestli k nÄ›mu se k nÄ›mu nebudeÅ¡ chovat uctivÄ›, bude mi potÄ›Å¡enÃ­m tÄ› to nauÄit, je ti to jasnÃ©?
 	AI_StopProcessInfos	(self);
 		
 	Npc_ExchangeRoutine(self, "START");
@@ -196,7 +196,7 @@ FUNC int DIA_Raven_PERM_Condition()
 FUNC VOID DIA_Raven_PERM_Info()
 {
 	AI_Output (other, self,"DIA_Raven_PERM_15_00"); //Jak jde obchod s rudou?
-	AI_Output (self, other,"DIA_Raven_PERM_10_01"); //Ve Starém dolu to jde dobøe. Poslední dodávka zásob z vnìjšího svìta byla obrovská.
+	AI_Output (self, other,"DIA_Raven_PERM_10_01"); //Ve StarÃ©m dolu to jde dobÅ™e. PoslednÃ­ dodÃ¡vka zÃ¡sob z vnÄ›jÅ¡Ã­ho svÄ›ta byla obrovskÃ¡.
 };
 
 // **************************************
@@ -210,7 +210,7 @@ instance DIA_Raven_BinDabei (C_INFO)
 	condition	= DIA_Raven_BinDabei_Condition;
 	information	= DIA_Raven_BinDabei_Info;
 	permanent	= 0;
-	description	= "Gomez øíká, e jsem v poøádku.";
+	description	= "Gomez Å™Ã­kÃ¡, Å¾e jsem v poÅ™Ã¡dku.";
 };                       
 
 FUNC int DIA_Raven_BinDabei_Condition()
@@ -229,9 +229,9 @@ FUNC VOID DIA_Raven_BinDabei_Info()
 	B_GiveInvItems      (self, hero, ItAmArrow, 1);
 	Npc_RemoveInvItem	(hero, ItAmArrow);
 	
-	AI_Output			(other, self,"DIA_Raven_BinDabei_15_00"); //Gomez øíká, e jsem v poøádku.
-	AI_Output			(self, other,"DIA_Raven_BinDabei_10_01"); //Vıbornì! V tom pøípadì to mùeš dokázat svım prvním úkolem.
-	AI_Output			(self, other,"DIA_Raven_BinDabei_10_02"); //Kdy øíkáš, e jsou tvé kontakty tak dobré, nemìlo by to pro tebe bıt tìké.
+	AI_Output			(other, self,"DIA_Raven_BinDabei_15_00"); //Gomez Å™Ã­kÃ¡, Å¾e jsem v poÅ™Ã¡dku.
+	AI_Output			(self, other,"DIA_Raven_BinDabei_10_01"); //VÃ½bornÄ›! V tom pÅ™Ã­padÄ› to mÅ¯Å¾eÅ¡ dokÃ¡zat svÃ½m prvnÃ­m Ãºkolem.
+	AI_Output			(self, other,"DIA_Raven_BinDabei_10_02"); //KdyÅ¾ Å™Ã­kÃ¡Å¡, Å¾e jsou tvÃ© kontakty tak dobrÃ©, nemÄ›lo by to pro tebe bÃ½t tÄ›Å¾kÃ©.
 
 	AI_EquipBestArmor	(hero); 
 };
@@ -249,7 +249,7 @@ INSTANCE DIA_Raven_SpySect (C_INFO)
 	condition	= DIA_Raven_SpySect_Condition;
 	information	= DIA_Raven_SpySect_Info;
 	permanent	= 0;
-	description	= "Co mám pro tebe udìlat?";
+	description	= "Co mÃ¡m pro tebe udÄ›lat?";
 };
 
 FUNC INT DIA_Raven_SpySect_Condition()
@@ -262,23 +262,23 @@ FUNC INT DIA_Raven_SpySect_Condition()
 
 FUNC VOID DIA_Raven_SpySect_Info()
 {
-	AI_Output (other, self,"DIA_Raven_SpySect_15_00"); //Co mám pro tebe udìlat?
-	AI_Output (self, other,"DIA_Raven_SpySect_10_01"); //Dìláme hodnì obchodù s Bratrstvem. To ale neznamená, e jsme s nimi ve svazku.
-	AI_Output (self, other,"DIA_Raven_SpySect_10_02"); //Jdi do moèálù.
-	AI_Output (self, other,"DIA_Raven_SpySect_10_03"); //A dorazíš do tábora, mìj uši nastraené. Vše, co se dozvíš, se nám mùe hodit.
-	AI_Output (self, other,"DIA_Raven_SpySect_10_04"); //Èím víc toho zjistíš, tím líp. Mìl bys bıt opatrnı, jestli chápeš, co tím myslím.
-	AI_Output (other, self,"DIA_Raven_SpySect_15_05"); //Buï v klidu, nemám v úmyslu je naštvat.
-	AI_Output (self, other,"DIA_Raven_SpySect_10_06"); //Vìdìl jsem, e mi budeš rozumìt.
+	AI_Output (other, self,"DIA_Raven_SpySect_15_00"); //Co mÃ¡m pro tebe udÄ›lat?
+	AI_Output (self, other,"DIA_Raven_SpySect_10_01"); //DÄ›lÃ¡me hodnÄ› obchodÅ¯ s Bratrstvem. To ale neznamenÃ¡, Å¾e jsme s nimi ve svazku.
+	AI_Output (self, other,"DIA_Raven_SpySect_10_02"); //Jdi do moÄÃ¡lÅ¯.
+	AI_Output (self, other,"DIA_Raven_SpySect_10_03"); //AÅ¾ dorazÃ­Å¡ do tÃ¡bora, mÄ›j uÅ¡i nastraÅ¾enÃ©. VÅ¡e, co se dozvÃ­Å¡, se nÃ¡m mÅ¯Å¾e hodit.
+	AI_Output (self, other,"DIA_Raven_SpySect_10_04"); //ÄŒÃ­m vÃ­c toho zjistÃ­Å¡, tÃ­m lÃ­p. MÄ›l bys bÃ½t opatrnÃ½, jestli chÃ¡peÅ¡, co tÃ­m myslÃ­m.
+	AI_Output (other, self,"DIA_Raven_SpySect_15_05"); //BuÄ v klidu, nemÃ¡m v Ãºmyslu je naÅ¡tvat.
+	AI_Output (self, other,"DIA_Raven_SpySect_10_06"); //VÄ›dÄ›l jsem, Å¾e mi budeÅ¡ rozumÄ›t.
 	
 	Raven_SpySect = LOG_RUNNING;
 	
 	Log_CreateTopic	(CH1_GoToPsi,	LOG_MISSION);
 	Log_SetTopicStatus (CH1_GoToPsi,	LOG_RUNNING);
-	B_LogEntry (CH1_GoToPsi,"Raven mì vyslal jako zástupce Starého tábora k Bratrstvu do bain. Musím se tam porozhlédnout a mít nastraené uši. Moná se mi tu podaøí získat nìjaké uiteèné informace pro Rudobarony.");
+	B_LogEntry (CH1_GoToPsi,"Raven mÄ› vyslal jako zÃ¡stupce StarÃ©ho tÃ¡bora k Bratrstvu do baÅ¾in. MusÃ­m se tam porozhlÃ©dnout a mÃ­t nastraÅ¾enÃ© uÅ¡i. MoÅ¾nÃ¡ se mi tu podaÅ™Ã­ zÃ­skat nÄ›jakÃ© uÅ¾iteÄnÃ© informace pro Rudobarony.");
 };
 
 // *********************************************
-// 				Ausrüstung
+// 				AusrÃ¼stung
 // *********************************************
 
 INSTANCE DIA_Raven_Equipment (C_INFO)
@@ -288,7 +288,7 @@ INSTANCE DIA_Raven_Equipment (C_INFO)
 	condition	= DIA_Raven_Equipment_Condition;
 	information	= DIA_Raven_Equipment_Info;
 	permanent	= 0;
-	description	= "Kde dostanu lepší vıbavu?";
+	description	= "Kde dostanu lepÅ¡Ã­ vÃ½bavu?";
 };
 
 FUNC INT DIA_Raven_Equipment_Condition()
@@ -301,16 +301,16 @@ FUNC INT DIA_Raven_Equipment_Condition()
 
 FUNC VOID DIA_Raven_Equipment_Info()
 {
-	AI_Output	(other, self,"DIA_Raven_Equipment_15_00"); //Kde dostanu lepší vıbavu?
-	AI_Output	(self, other,"DIA_Raven_Equipment_10_01"); //Jdi za Diegem, dá ti nìjakou vızbroj. S ní nebudeš tak rychle mrtvı a zároveò ti poslouí jako prùkaz.
-	AI_Output	(self, other,"DIA_Raven_Equipment_10_02"); //Tvoje vızbroj ti umoní pøístup do všech míst, kam se budeš potøebovat dostat.
-	AI_Output	(self, other,"DIA_Raven_Equipment_10_03"); //Jestli budeš potøebovat jakékoliv zbranì, zajdi za Skipem. Najdeš ho v té velké dílnì pøímo vzadu, nalevo od hradního nádvoøí.
+	AI_Output	(other, self,"DIA_Raven_Equipment_15_00"); //Kde dostanu lepÅ¡Ã­ vÃ½bavu?
+	AI_Output	(self, other,"DIA_Raven_Equipment_10_01"); //Jdi za Diegem, dÃ¡ ti nÄ›jakou vÃ½zbroj. S nÃ­ nebudeÅ¡ tak rychle mrtvÃ½ a zÃ¡roveÅˆ ti poslouÅ¾Ã­ jako prÅ¯kaz.
+	AI_Output	(self, other,"DIA_Raven_Equipment_10_02"); //Tvoje vÃ½zbroj ti umoÅ¾nÃ­ pÅ™Ã­stup do vÅ¡ech mÃ­st, kam se budeÅ¡ potÅ™ebovat dostat.
+	AI_Output	(self, other,"DIA_Raven_Equipment_10_03"); //Jestli budeÅ¡ potÅ™ebovat jakÃ©koliv zbranÄ›, zajdi za Skipem. NajdeÅ¡ ho v tÃ© velkÃ© dÃ­lnÄ› pÅ™Ã­mo vzadu, nalevo od hradnÃ­ho nÃ¡dvoÅ™Ã­.
 
 	Log_CreateTopic	(GE_TraderOC,	LOG_NOTE);
-	B_LogEntry		(GE_TraderOC,"Diego má lepší ZBROJ pro Gomezovy Stíny. Je u hradní brány.");
+	B_LogEntry		(GE_TraderOC,"Diego mÃ¡ lepÅ¡Ã­ ZBROJ pro Gomezovy StÃ­ny. Je u hradnÃ­ brÃ¡ny.");
 	if	!Npc_KnowsInfo(hero, DIA_Skip_First)
 	{
-		B_LogEntry	(GE_TraderOC,"Stráce Skip prodává v zadní èásti nádvoøí ZBRANÌ. Avšak jen Gomezovım muùm.");
+		B_LogEntry	(GE_TraderOC,"StrÃ¡Å¾ce Skip prodÃ¡vÃ¡ v zadnÃ­ ÄÃ¡sti nÃ¡dvoÅ™Ã­ ZBRANÄš. AvÅ¡ak jen GomezovÃ½m muÅ¾Å¯m.");
 	};
 };
 
@@ -331,7 +331,7 @@ INSTANCE DIA_Raven_SpyBericht (C_INFO)
 	condition	= DIA_Raven_SpyBericht_Condition;
 	information	= DIA_Raven_SpyBericht_Info;
 	permanent	= 1;
-	description	= "Chci ti podat hlášení.";
+	description	= "Chci ti podat hlÃ¡Å¡enÃ­.";
 };
 
 FUNC INT DIA_Raven_SpyBericht_Condition()
@@ -344,41 +344,41 @@ FUNC INT DIA_Raven_SpyBericht_Condition()
 
 FUNC VOID DIA_Raven_SpyBericht_Info()
 {
-	AI_Output (other, self,"DIA_Raven_SpyBericht_15_00"); //Chci podat hlášení.
-	AI_Output (self, other,"DIA_Raven_SpyBericht_10_01"); //Dobøe. Rád dostávám ty nejnovìjší informace.
+	AI_Output (other, self,"DIA_Raven_SpyBericht_15_00"); //Chci podat hlÃ¡Å¡enÃ­.
+	AI_Output (self, other,"DIA_Raven_SpyBericht_10_01"); //DobÅ™e. RÃ¡d dostÃ¡vÃ¡m ty nejnovÄ›jÅ¡Ã­ informace.
 	if (Npc_HasItems (other, itat_Crawlerqueen)>=1)
 	|| (CorKalom_BringMCQBalls == LOG_SUCCESS)
 	{
 		if (Kapitel >= 3)
 		{
-			AI_Output (other, self,"Org_826_Mordrag_RUNNING_15_04"); //Nadešlo velké vzıvání.
-			AI_Output (self, other,"DIA_Raven_SpyBericht_10_04"); //Dobrá práce.
+			AI_Output (other, self,"Org_826_Mordrag_RUNNING_15_04"); //NadeÅ¡lo velkÃ© vzÃ½vÃ¡nÃ­.
+			AI_Output (self, other,"DIA_Raven_SpyBericht_10_04"); //DobrÃ¡ prÃ¡ce.
 			Raven_SpySect=LOG_SUCCESS;
 			B_GiveXP (XP_ReportToRaven);
 			Log_SetTopicStatus (CH1_GoToPsi,	LOG_SUCCESS);
-			B_LogEntry (CH1_GoToPsi,"Raven mì nakrmil lacinımi øeèièkami. Takovéhle zpùsoby jsem neoèekával. Od teïka si pùjdu svojí vlastní cestou.");
+			B_LogEntry (CH1_GoToPsi,"Raven mÄ› nakrmil lacinÃ½mi Å™eÄiÄkami. TakovÃ©hle zpÅ¯soby jsem neoÄekÃ¡val. Od teÄka si pÅ¯jdu svojÃ­ vlastnÃ­ cestou.");
 		}
 		else
 		{
-			AI_Output (other, self,"DIA_Raven_SpyBericht_15_02"); //Chtìjí vajíèka královny dùlních èervù. Vaøí z nich lektvar, kterım jim umoní spojit se se Spáèem. Mám ta vajíèka sebou.
+			AI_Output (other, self,"DIA_Raven_SpyBericht_15_02"); //ChtÄ›jÃ­ vajÃ­Äka krÃ¡lovny dÅ¯lnÃ­ch ÄervÅ¯. VaÅ™Ã­ z nich lektvar, kterÃ½m jim umoÅ¾nÃ­ spojit se se SpÃ¡Äem. MÃ¡m ta vajÃ­Äka sebou.
 			if (CorKalom_BringMCQBalls != LOG_SUCCESS)
 			{
-				AI_Output (self, other,"DIA_Raven_SpyBericht_10_03"); //Zajímavé. Jsem zvìdavı, jestli to bude fungovat. Dones ta vajíèka do chrámu.
+				AI_Output (self, other,"DIA_Raven_SpyBericht_10_03"); //ZajÃ­mavÃ©. Jsem zvÄ›davÃ½, jestli to bude fungovat. Dones ta vajÃ­Äka do chrÃ¡mu.
 			}
 			else
 			{
-				AI_Output (self, other,"DIA_Raven_SpyBericht_10_04"); //Dobrá práce.
+				AI_Output (self, other,"DIA_Raven_SpyBericht_10_04"); //DobrÃ¡ prÃ¡ce.
 				Raven_SpySect=LOG_SUCCESS;
 				B_GiveXP (XP_ReportToRaven);
 				Log_SetTopicStatus (CH1_GoToPsi,	LOG_SUCCESS);
-				B_LogEntry (CH1_GoToPsi,"Raven mì nakrmil lacinımi øeèièkami. Takovéhle zpùsoby jsem neoèekával. Od teïka si pùjdu svojí vlastní cestou.");
+				B_LogEntry (CH1_GoToPsi,"Raven mÄ› nakrmil lacinÃ½mi Å™eÄiÄkami. TakovÃ©hle zpÅ¯soby jsem neoÄekÃ¡val. Od teÄka si pÅ¯jdu svojÃ­ vlastnÃ­ cestou.");
 			};
 		};
 	}
 	else
 	{
-		AI_Output (other, self,"DIA_Raven_SpyBericht_15_05"); //Vlastnì ve skuteènosti nevím, co plánují.
-		AI_Output (self, other,"DIA_Raven_SpyBericht_10_06"); //Tak proè mì obtìuješ?
+		AI_Output (other, self,"DIA_Raven_SpyBericht_15_05"); //VlastnÄ› ve skuteÄnosti nevÃ­m, co plÃ¡nujÃ­.
+		AI_Output (self, other,"DIA_Raven_SpyBericht_10_06"); //Tak proÄ mÄ› obtÄ›Å¾ujeÅ¡?
 	};
 };
 

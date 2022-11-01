@@ -2,7 +2,7 @@ instance ORG_860_Renyu (Npc_Default)
 {
 	//-------- primary data --------
 	
-	name =					"MÌsiË drogy";
+	name =					"M√≠siƒç drogy";
 	Npctype =				Npctype_Main;
 	guild =					GIL_ORG;      
 	level =					8;

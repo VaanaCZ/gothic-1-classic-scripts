@@ -37,13 +37,13 @@ func void B_BuyAttributePoints (var C_NPC typ, var int ATR, var int AtrPlus)
 		}
 		else
 		{
-			PrintScreen	("Nelze zvýšit maximum 100!", -1,-1,"FONT_OLD_20_WHITE.TGA",1);
+			PrintScreen	("Nelze zvÃ½Å¡it maximum 100!", -1,-1,"FONT_OLD_20_WHITE.TGA",1);
 			B_Say (self, other, "$NOLEARNOVERMAX");
 		};
 	}
 	else 
 	{
-		PrintScreen	("Nedostatek zkušenostních bodù!", -1,-1,"FONT_OLD_20_WHITE.TGA",1);
+		PrintScreen	("Nedostatek zkuÅ¡enostnÃ­ch bodÅ¯!", -1,-1,"FONT_OLD_20_WHITE.TGA",1);
 		B_Say (self, other, "$NOLEARNNOPOINTS");
 	};
 };

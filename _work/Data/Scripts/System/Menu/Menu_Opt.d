@@ -31,7 +31,7 @@ const int MENU_OPT_START_Y	= 2200;
 
 INSTANCE MENUITEM_OPT_HEADING(C_MENU_ITEM_DEF) 
 {
-	text[0]		=	"NASTAVENÕ";
+	text[0]		=	"NASTAVEN√ç";
 	type		=	MENU_ITEM_TEXT;
 	// Position und Dimension	
 	posx		=	0;		posy		=	MENU_TITLE_Y;
@@ -45,7 +45,7 @@ INSTANCE MENUITEM_OPT_GAME(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
 	text[0]		= "Hra";
-	text[1]		= "Upravit nastavenÌ hry.";  // Kommentar
+	text[1]		= "Upravit nastaven√≠ hry.";  // Kommentar
 	
 	// Position und Dimension	
 	posx		= 0;		posy		= MENU_OPT_START_Y + MENU_OPT_DY*0;
@@ -62,7 +62,7 @@ INSTANCE MENUITEM_OPT_GRAPHICS(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
 	text[0]		= "Grafika";
-	text[1]		= "Viditelnost v hracÌm oknÏ, detaily a efekty.";  // Kommentar
+	text[1]		= "Viditelnost v hrac√≠m oknƒõ, detaily a efekty.";  // Kommentar
 	
 	// Position und Dimension	
 	posx		= 0;		posy		= MENU_OPT_START_Y + MENU_OPT_DY*1;
@@ -79,7 +79,7 @@ instance MENUITEM_OPT_VIDEO(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
 	text[0]		=	"Video";
-	text[1]		=	"Grafick˝ adaptÈr, rozliöenÌ a ostrost obrazu.";  // Kommentar
+	text[1]		=	"Grafick√Ω adapt√©r, rozli≈°en√≠ a ostrost obrazu.";  // Kommentar
 	
 	// Position und Dimension	
 	posx		= 0;		posy		= MENU_OPT_START_Y + MENU_OPT_DY*2;
@@ -96,7 +96,7 @@ INSTANCE MENUITEM_OPT_AUDIO(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
 	text[0]		= "Zvuk";
-	text[1]		= "Hudba, jazyk a zvukovÈ efekty.";  // Kommentar
+	text[1]		= "Hudba, jazyk a zvukov√© efekty.";  // Kommentar
 	
 	// Position und Dimension
 	posx		= 0;		posy		= MENU_OPT_START_Y + MENU_OPT_DY*3;
@@ -113,8 +113,8 @@ INSTANCE MENUITEM_OPT_AUDIO(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_OPT_CONTROLS(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	text[0]		= "Kl·vesnice";
-	text[1]		= "NastavenÌ kl·vesnice.";  // Kommentar
+	text[0]		= "Kl√°vesnice";
+	text[1]		= "Nastaven√≠ kl√°vesnice.";  // Kommentar
 	
 	// Position und Dimension	
 	posx		= 0;		posy		= MENU_OPT_START_Y + MENU_OPT_DY*4;
@@ -132,8 +132,8 @@ INSTANCE MENUITEM_OPT_CONTROLS(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_PERF(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	text[0]		= "V˝kon/kvalita";
-	text[1]		= "Optimalizovat v˝kon a kvalitu.";  // Kommentar
+	text[0]		= "V√Ωkon/kvalita";
+	text[1]		= "Optimalizovat v√Ωkon a kvalitu.";  // Kommentar
 	
 	// Position und Dimension	
 	posx		= 0;		posy		= MENU_OPT_START_Y + MENU_OPT_DY*5;
@@ -149,7 +149,7 @@ INSTANCE MENUITEM_PERF(C_MENU_ITEM_DEF)
 instance MENUITEM_PERF_CHOICE(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_CHOICE_BACK_PIC;
-	text[0]		= "uûivatelskÈ nastavenÌ#vysok˝ v˝kon|st¯ednÌ kvalita|vysok· kvalita";	// # trennt die UnDef-Option von der auswaehlbaren Optionen
+	text[0]		= "u≈æivatelsk√© nastaven√≠#vysok√Ω v√Ωkon|st≈ôedn√≠ kvalita|vysok√° kvalita";	// # trennt die UnDef-Option von der auswaehlbaren Optionen
 	type		= MENU_ITEM_CHOICEBOX;
 	fontName	= MENU_FONT_SMALL;
 	// Position und Dimension	
@@ -167,7 +167,7 @@ instance MENUITEM_PERF_CHOICE(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_OPT_BACK(C_MENU_ITEM_DEF)
 {
 	backpic		=	MENU_ITEM_BACK_PIC;
-	text[0]		=	"ZpÏt";
+	text[0]		=	"Zpƒõt";
 	// Position und Dimension	
 	posx		=	1000;			posy		=	MENU_BACK_Y;
 	dimx		=	6192;		dimy		=	MENU_OPT_DY;

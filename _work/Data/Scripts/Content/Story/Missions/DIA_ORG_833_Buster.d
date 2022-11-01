@@ -17,7 +17,7 @@ FUNC int DIA_ORG_833_Buster_Condition()
 
 func void DIA_ORG_833_Buster_Info()
 {
-	AI_Output (self, other,"DIA_ORG_833_Buster_02_01"); //Nevypadáš moc hbitì. Mohl bych ti pomoci.
+	AI_Output (self, other,"DIA_ORG_833_Buster_02_01"); //NevypadÃ¡Å¡ moc hbitÄ›. Mohl bych ti pomoci.
 };
 
 
@@ -54,7 +54,7 @@ INSTANCE DIA_ORG_833_Buster3 (C_INFO)
 	information		= DIA_ORG_833_Buster3_Info;
 	important		= 0;
 	permanent		= 1;
-	description		= "Jak mi mùeš pomoci?"; 
+	description		= "Jak mi mÅ¯Å¾eÅ¡ pomoci?"; 
 };
 
 FUNC INT DIA_ORG_833_Buster3_Condition()
@@ -64,14 +64,14 @@ FUNC INT DIA_ORG_833_Buster3_Condition()
 
 func VOID DIA_ORG_833_Buster3_Info()
 {
-	AI_Output (self, other,"DIA_ORG_833_Buster3_02_01"); //Mùu ti ukázat, jak ovládat své tìlo. To je umìní AKROBACIE.
+	AI_Output (self, other,"DIA_ORG_833_Buster3_02_01"); //MÅ¯Å¾u ti ukÃ¡zat, jak ovlÃ¡dat svÃ© tÄ›lo. To je umÄ›nÃ­ AKROBACIE.
 
 	Info_ClearChoices	( DIA_ORG_833_Buster3 );
 	Info_AddChoice		( DIA_ORG_833_Buster3, DIALOG_BACK													, DIA_ORG_833_Buster_Back );
 	Info_AddChoice		( DIA_ORG_833_Buster3, B_BuildLearnString(NAME_LearnAcrobat, LPCOST_TALENT_ACROBAT,0)	, DIA_ORG_833_Buster_Train1 );
 
 	Log_CreateTopic   	(GE_TeacherNC,	LOG_NOTE);
-	B_LogEntry			(GE_TeacherNC,"Bandita Buster mì nauèí umìní AKROBACIE.");
+	B_LogEntry			(GE_TeacherNC,"Bandita Buster mÄ› nauÄÃ­ umÄ›nÃ­ AKROBACIE.");
 };
 
 
@@ -82,9 +82,9 @@ FUNC void DIA_ORG_833_Buster_Train1()
 	
 	if (B_GiveSkill(other,NPC_TALENT_ACROBAT , 1, LPCOST_TALENT_ACROBAT))
 	{
-		AI_Output (self, other,"DIA_ORG_833_Buster3_02_02"); //Brzy získáš kontrolu nad svım tìlem a budeš schopen skákat mnohem dál.
-		AI_Output (self, other,"DIA_ORG_833_Buster3_02_03"); //Nauèil ses, jak se stoèit a jak nejlépe pøi pádu dopadnout na zem. Ale nezapomeò - nejsi nesmrtelnı!
-		AI_Output (self, other,"DIA_ORG_833_Buster3_02_04"); //Akrobacie mùe bıt také velmi uiteèná v boji. Mùeš velmi rychle mìnit vzdálenost mezi tebou a tvım nepøítelem. Hodnì štìstí!
+		AI_Output (self, other,"DIA_ORG_833_Buster3_02_02"); //Brzy zÃ­skÃ¡Å¡ kontrolu nad svÃ½m tÄ›lem a budeÅ¡ schopen skÃ¡kat mnohem dÃ¡l.
+		AI_Output (self, other,"DIA_ORG_833_Buster3_02_03"); //NauÄil ses, jak se stoÄit a jak nejlÃ©pe pÅ™i pÃ¡du dopadnout na zem. Ale nezapomeÅˆ - nejsi nesmrtelnÃ½!
+		AI_Output (self, other,"DIA_ORG_833_Buster3_02_04"); //Akrobacie mÅ¯Å¾e bÃ½t takÃ© velmi uÅ¾iteÄnÃ¡ v boji. MÅ¯Å¾eÅ¡ velmi rychle mÄ›nit vzdÃ¡lenost mezi tebou a tvÃ½m nepÅ™Ã­telem. HodnÄ› Å¡tÄ›stÃ­!
 	};		
 };  
 

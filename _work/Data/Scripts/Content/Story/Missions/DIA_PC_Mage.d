@@ -24,7 +24,7 @@ func VOID DIA_Milten_EXIT_Info()
 	}
 	else
 	{
-		AI_Output 		(self, hero,"DIA_Milten_EXIT_02_01"); //Ještì se uvidíme.
+		AI_Output 		(self, hero,"DIA_Milten_EXIT_02_01"); //JeÅ¡tÄ› se uvidÃ­me.
 	};
 	AI_StopProcessInfos	(self);
 };
@@ -54,7 +54,7 @@ FUNC INT DIA_Milten_First_Condition()
 
 func VOID DIA_Milten_First_Info()
 {
-	AI_Output (self, other,"DIA_Milten_First_02_00"); //Bez povolení mistra Corrista nesmíš pøekroèit tenhle práh.
+	AI_Output (self, other,"DIA_Milten_First_02_00"); //Bez povolenÃ­ mistra Corrista nesmÃ­Å¡ pÅ™ekroÄit tenhle prÃ¡h.
 };
 
 //*********************************************
@@ -68,7 +68,7 @@ instance DIA_Milten_Hello (C_INFO)
 	condition	= DIA_Milten_Hello_Condition;
 	information	= DIA_Milten_Hello_Info;
 	permanent	= 0;
-	description = "Hledám Velkého mága Kruhu ohnì.";
+	description = "HledÃ¡m VelkÃ©ho mÃ¡ga Kruhu ohnÄ›.";
 };                       
 
 FUNC INT DIA_Milten_Hello_Condition()
@@ -81,8 +81,8 @@ FUNC INT DIA_Milten_Hello_Condition()
 
 func VOID DIA_Milten_Hello_Info()
 {
-	AI_Output (other, self,"DIA_Milten_Hello_15_00"); //Hledám Velkého mága Kruhu ohnì.
-	AI_Output (self, other,"DIA_Milten_Hello_02_01"); //To je Corristo. Co mu chceš?
+	AI_Output (other, self,"DIA_Milten_Hello_15_00"); //HledÃ¡m VelkÃ©ho mÃ¡ga Kruhu ohnÄ›.
+	AI_Output (self, other,"DIA_Milten_Hello_02_01"); //To je Corristo. Co mu chceÅ¡?
 };
 
 //*********************************************
@@ -113,12 +113,12 @@ func VOID DIA_Milten_GotoCorristo_Info()
 	if ( (Npc_HasItems(other,ItWr_Fire_Letter_01)>=1) || (Npc_HasItems(other,ItWr_Fire_Letter_02)>=1) )
 	{
 		//***kopierte AI_outputs, falls SC Brief noch hat***
-		AI_Output (other, self,"DIA_Milten_Hello_15_00"); //Hledám Velkého mága Kruhu ohnì.
-		AI_Output (self, other,"DIA_Milten_Hello_02_01"); //To je Corristo. Co mu chceš?
-		AI_Output (other, self,"DIA_Milten_Letter_15_00"); //Mám dopis pro Velkého mága Kruhu ohnì.
-		//AI_Output (self, other,"DIA_Milten_Letter_02_01"); //Bist du ein Bote aus der Außenwelt?
+		AI_Output (other, self,"DIA_Milten_Hello_15_00"); //HledÃ¡m VelkÃ©ho mÃ¡ga Kruhu ohnÄ›.
+		AI_Output (self, other,"DIA_Milten_Hello_02_01"); //To je Corristo. Co mu chceÅ¡?
+		AI_Output (other, self,"DIA_Milten_Letter_15_00"); //MÃ¡m dopis pro VelkÃ©ho mÃ¡ga Kruhu ohnÄ›.
+		//AI_Output (self, other,"DIA_Milten_Letter_02_01"); //Bist du ein Bote aus der AuÃŸenwelt?
 		//AI_Output (other, self,"DIA_Milten_Letter_15_02"); //Ja. Ein Magier gab mir den Brief, kurz bevor sie mich in die Kolonie geworfen haben.
-		AI_Output (self, other,"DIA_Milten_Letter_02_03"); //Uka mi ten dopis.
+		AI_Output (self, other,"DIA_Milten_Letter_02_03"); //UkaÅ¾ mi ten dopis.
 		AI_Output (other, self,"DIA_Milten_Letter_Give_15_00"); //Tady je,
 		B_GiveXP(XP_XardasLetter);
 		if		Npc_HasItems(other,ItWr_Fire_Letter_01)
@@ -129,13 +129,13 @@ func VOID DIA_Milten_GotoCorristo_Info()
 		{ 
 			B_GiveInvItems(other, self, ItWr_Fire_Letter_02, 1);
 		};
-		AI_Output (other, self,"GUR_1200_Yberion_EARN_Info_15_01"); //A co takhle nìjakou odmìnu?
-		AI_Output (self,hero,"Info_Milten_SHSEAL_02_05"); //To u nebude tøeba.
+		AI_Output (other, self,"GUR_1200_Yberion_EARN_Info_15_01"); //A co takhle nÄ›jakou odmÄ›nu?
+		AI_Output (self,hero,"Info_Milten_SHSEAL_02_05"); //To uÅ¾ nebude tÅ™eba.
 		//***kopierte AI_outputs ENDE***
 	};
 	
-	AI_Output (self, other,"DIA_Milten_GotoCorristo_02_01"); //Slyšeli jsme, co jste dokázali ve Starém dole. Bez dùlních èervù se ruda získává daleko snadnìji.
-	AI_Output (self, other,"DIA_Milten_GotoCorristo_02_02"); //Corristo o vašem úspìchu taky ví. Chce s tebou mluvit. Jdi za ním.
+	AI_Output (self, other,"DIA_Milten_GotoCorristo_02_01"); //SlyÅ¡eli jsme, co jste dokÃ¡zali ve StarÃ©m dole. Bez dÅ¯lnÃ­ch ÄervÅ¯ se ruda zÃ­skÃ¡vÃ¡ daleko snadnÄ›ji.
+	AI_Output (self, other,"DIA_Milten_GotoCorristo_02_02"); //Corristo o vaÅ¡em ÃºspÄ›chu taky vÃ­. Chce s tebou mluvit. Jdi za nÃ­m.
 };
 
 //*********************************************
@@ -151,7 +151,7 @@ instance DIA_Milten_Letter (C_INFO)
 	condition	= DIA_Milten_Letter_Condition;
 	information	= DIA_Milten_Letter_Info;
 	permanent	= 0;
-	description = "Mám dopis pro Velkého mága Kruhu ohnì.";
+	description = "MÃ¡m dopis pro VelkÃ©ho mÃ¡ga Kruhu ohnÄ›.";
 };                       
 
 FUNC INT DIA_Milten_Letter_Condition()
@@ -165,12 +165,12 @@ FUNC INT DIA_Milten_Letter_Condition()
 
 func VOID DIA_Milten_Letter_Info()
 {
-	AI_Output			(other, self,"DIA_Milten_Letter_15_00"); //Mám dopis pro Velkého mága Kruhu ohnì.
-	AI_Output			(self, other,"DIA_Milten_Letter_02_01"); //Jsi kurır z vnìjšího svìta?
-	AI_Output			(other, self,"DIA_Milten_Letter_15_02"); //Ano. Mágové mi dali ten dopis krátce pøedtím, ne mì poslali do téhle kolonie.
-	AI_Output			(self, other,"DIA_Milten_Letter_02_03"); //Uka mi ten dopis.
+	AI_Output			(other, self,"DIA_Milten_Letter_15_00"); //MÃ¡m dopis pro VelkÃ©ho mÃ¡ga Kruhu ohnÄ›.
+	AI_Output			(self, other,"DIA_Milten_Letter_02_01"); //Jsi kurÃ½r z vnÄ›jÅ¡Ã­ho svÄ›ta?
+	AI_Output			(other, self,"DIA_Milten_Letter_15_02"); //Ano. MÃ¡govÃ© mi dali ten dopis krÃ¡tce pÅ™edtÃ­m, neÅ¾ mÄ› poslali do tÃ©hle kolonie.
+	AI_Output			(self, other,"DIA_Milten_Letter_02_03"); //UkaÅ¾ mi ten dopis.
 	Info_ClearChoices	(DIA_Milten_Letter);
-	Info_AddChoice		(DIA_Milten_Letter,"Nejdøív chci svoji odmìnu.",DIA_Milten_Letter_NO);
+	Info_AddChoice		(DIA_Milten_Letter,"NejdÅ™Ã­v chci svoji odmÄ›nu.",DIA_Milten_Letter_NO);
 	Info_AddChoice		(DIA_Milten_Letter,"Tady je,",DIA_Milten_Letter_Give);
 };
 
@@ -180,13 +180,13 @@ func void DIA_Milten_Letter_Give()
 	B_UseFakeScroll();
 	
 	B_GiveXP(XP_XardasLetter);
-	AI_Output (self, other,"DIA_Milten_Letter_Give_02_03"); //Ten dopis je adresován Xardasovi.
-	AI_Output (other, self,"DIA_Milten_Letter_Give_15_04"); //A co je na tom tak divného?
-	AI_Output (self, other,"DIA_Milten_Letter_Give_02_05"); //Xardas u není dlouho Innosùv sluebník. Odešel od nás u pøed celımi vìky a dal se na èernou magii.
-	AI_Output (self, other,"DIA_Milten_Letter_Give_02_06"); //ije ve vìi uprostøed skøetího území a soustøedí se na studium.
-	AI_Output (self, other,"DIA_Milten_Letter_Give_02_07"); //Øekl, e by mohl pøijít na to, co se pokazilo na Bariéøe.
+	AI_Output (self, other,"DIA_Milten_Letter_Give_02_03"); //Ten dopis je adresovÃ¡n Xardasovi.
+	AI_Output (other, self,"DIA_Milten_Letter_Give_15_04"); //A co je na tom tak divnÃ©ho?
+	AI_Output (self, other,"DIA_Milten_Letter_Give_02_05"); //Xardas uÅ¾ nenÃ­ dlouho InnosÅ¯v sluÅ¾ebnÃ­k. OdeÅ¡el od nÃ¡s uÅ¾ pÅ™ed celÃ½mi vÄ›ky a dal se na Äernou magii.
+	AI_Output (self, other,"DIA_Milten_Letter_Give_02_06"); //Å½ije ve vÄ›Å¾i uprostÅ™ed skÅ™etÃ­ho ÃºzemÃ­ a soustÅ™edÃ­ se na studium.
+	AI_Output (self, other,"DIA_Milten_Letter_Give_02_07"); //Å˜ekl, Å¾e by mohl pÅ™ijÃ­t na to, co se pokazilo na BariÃ©Å™e.
 	
-	AI_Output (self, other,"DIA_Milten_Letter_Give_02_08"); //Poèkej tu. Hned se vrátím.
+	AI_Output (self, other,"DIA_Milten_Letter_Give_02_08"); //PoÄkej tu. Hned se vrÃ¡tÃ­m.
 	AI_StopProcessInfos	(self);
 	AI_GotoWP (self, "OCC_CHAPEL_STAIRCASE_TOP");
 	AI_GotoWP (self, "OCC_CHAPEL_ENTRANCE");
@@ -205,20 +205,20 @@ func void DIA_Milten_Letter_Give()
 
 func void DIA_Milten_Letter_NO()
 {
-	AI_Output (other, self,"DIA_Milten_Letter_NO_15_00"); //Nejdøív chci svoji odmìnu.
-	AI_Output (self, other,"DIA_Milten_Letter_NO_02_01"); //Corristo øekne Torrezovi, aby ti ji dal, jakmile dostane ten dopis.
-	AI_Output (self, other,"DIA_Milten_Letter_NO_02_02"); //Jsem Innosùv sluebník - nikdy nelu. Teï mi dej ten dopis.
+	AI_Output (other, self,"DIA_Milten_Letter_NO_15_00"); //NejdÅ™Ã­v chci svoji odmÄ›nu.
+	AI_Output (self, other,"DIA_Milten_Letter_NO_02_01"); //Corristo Å™ekne Torrezovi, aby ti ji dal, jakmile dostane ten dopis.
+	AI_Output (self, other,"DIA_Milten_Letter_NO_02_02"); //Jsem InnosÅ¯v sluÅ¾ebnÃ­k - nikdy nelÅ¾u. TeÄ mi dej ten dopis.
 	Info_ClearChoices	(DIA_Milten_Letter);
-	Info_AddChoice		(DIA_Milten_Letter,"Radìji bych ten dopis dal Torrezovi sám.",DIA_Milten_Letter_NO_AGAIN);
+	Info_AddChoice		(DIA_Milten_Letter,"RadÄ›ji bych ten dopis dal Torrezovi sÃ¡m.",DIA_Milten_Letter_NO_AGAIN);
 	Info_AddChoice		(DIA_Milten_Letter,"Tady je,",DIA_Milten_Letter_Give);
 };
 
 func void DIA_Milten_Letter_NO_AGAIN()
 {
-	AI_Output (other, self,"DIA_Milten_Letter_NO_AGAIN_15_00"); //Radìji bych ten dopis dal Torrezovi sám.
-	AI_Output (self, other,"DIA_Milten_Letter_NO_AGAIN_02_01"); //Ty nechceš, abych ho èetl, viï?
-	AI_Output (other, self,"DIA_Milten_Letter_NO_AGAIN_15_02"); //Ne. Chci nejdøív vidìt odmìnu.
-	AI_Output (self, other,"DIA_Milten_Letter_NO_AGAIN_02_03"); //Dobrá. Kdy teda chceš. Poèkej tady.
+	AI_Output (other, self,"DIA_Milten_Letter_NO_AGAIN_15_00"); //RadÄ›ji bych ten dopis dal Torrezovi sÃ¡m.
+	AI_Output (self, other,"DIA_Milten_Letter_NO_AGAIN_02_01"); //Ty nechceÅ¡, abych ho Äetl, viÄ?
+	AI_Output (other, self,"DIA_Milten_Letter_NO_AGAIN_15_02"); //Ne. Chci nejdÅ™Ã­v vidÄ›t odmÄ›nu.
+	AI_Output (self, other,"DIA_Milten_Letter_NO_AGAIN_02_03"); //DobrÃ¡. KdyÅ¾ teda chceÅ¡. PoÄkej tady.
 
 	Info_ClearChoices	(DIA_Milten_Letter);
 	AI_StopProcessInfos	(self);
@@ -255,12 +255,12 @@ func VOID DIA_Milten_ComesBack_Info()
 {
 	if (milten_HasLetter==FALSE)
 	{
-		AI_Output (self, other,"DIA_Milten_ComesBack_02_00"); //Corristo nemìl moc velkou radost, kdy vidìl, jak malou dùvìru máš ve sluebníky Innosovy.
-		AI_Output (self, other,"DIA_Milten_ComesBack_02_01"); //Ale øíkal, e máš jít k Torrezovi a vzít si obvyklou odmìnu.
+		AI_Output (self, other,"DIA_Milten_ComesBack_02_00"); //Corristo nemÄ›l moc velkou radost, kdyÅ¾ vidÄ›l, jak malou dÅ¯vÄ›ru mÃ¡Å¡ ve sluÅ¾ebnÃ­ky Innosovy.
+		AI_Output (self, other,"DIA_Milten_ComesBack_02_01"); //Ale Å™Ã­kal, Å¾e mÃ¡Å¡ jÃ­t k Torrezovi a vzÃ­t si obvyklou odmÄ›nu.
 	}
 	else
 	{
-		AI_Output (self, other,"DIA_Milten_ComesBack_02_02"); //Corristo byl celı bez sebe potìšením. Øekl, e mùeš jít k Torrezovi a vybrat si svou odmìnu.
+		AI_Output (self, other,"DIA_Milten_ComesBack_02_02"); //Corristo byl celÃ½ bez sebe potÄ›Å¡enÃ­m. Å˜ekl, Å¾e mÅ¯Å¾eÅ¡ jÃ­t k Torrezovi a vybrat si svou odmÄ›nu.
 	};
 };
 
@@ -289,8 +289,8 @@ FUNC INT DIA_Milten_WoTorrez_Condition()
 func VOID DIA_Milten_WoTorrez_Info()
 {
 	AI_Output (other, self,"DIA_Milten_WoTorrez_15_00"); //Kde najdu Torreze?
-	AI_Output (self, other,"DIA_Milten_WoTorrez_02_01"); //Je celı den pøed budovou chrámu.
-	AI_Output (self, other,"DIA_Milten_WoTorrez_02_02"); //V noci je uvnitø jako všichni ostatní - ale do chrámu smìjí vstoupit jenom mágové, take s ním mùeš mluvit jedinì pøes den.
+	AI_Output (self, other,"DIA_Milten_WoTorrez_02_01"); //Je celÃ½ den pÅ™ed budovou chrÃ¡mu.
+	AI_Output (self, other,"DIA_Milten_WoTorrez_02_02"); //V noci je uvnitÅ™ jako vÅ¡ichni ostatnÃ­ - ale do chrÃ¡mu smÄ›jÃ­ vstoupit jenom mÃ¡govÃ©, takÅ¾e s nÃ­m mÅ¯Å¾eÅ¡ mluvit jedinÄ› pÅ™es den.
 };
 
 //*********************************************
@@ -304,7 +304,7 @@ instance DIA_Milten_NochEinBrief (C_INFO)
 	condition	= DIA_Milten_NochEinBrief_Condition;
 	information	= DIA_Milten_NochEinBrief_Info;
 	permanent	= 0;
-	description = "Mám dopis od mágù Kruhu vody.";
+	description = "MÃ¡m dopis od mÃ¡gÅ¯ Kruhu vody.";
 };                       
 
 FUNC INT DIA_Milten_NochEinBrief_Condition()
@@ -317,9 +317,9 @@ FUNC INT DIA_Milten_NochEinBrief_Condition()
 
 func VOID DIA_Milten_NochEinBrief_Info()
 {
-	AI_Output (other, self,"DIA_Milten_NochEinBrief_15_00"); //Mám dopis od mágù Kruhu vody.
-	AI_Output (self, other,"DIA_Milten_NochEinBrief_02_01"); //Ach! Vıbornì! Dám ho Corristovi.
-	AI_Output (self, other,"DIA_Milten_NochEinBrief_02_02"); //A se vrátíš do Nového tábora, mágové Vody tì jistì odmìní za tvoji snahu.
+	AI_Output (other, self,"DIA_Milten_NochEinBrief_15_00"); //MÃ¡m dopis od mÃ¡gÅ¯ Kruhu vody.
+	AI_Output (self, other,"DIA_Milten_NochEinBrief_02_01"); //Ach! VÃ½bornÄ›! DÃ¡m ho Corristovi.
+	AI_Output (self, other,"DIA_Milten_NochEinBrief_02_02"); //AÅ¾ se vrÃ¡tÃ­Å¡ do NovÃ©ho tÃ¡bora, mÃ¡govÃ© Vody tÄ› jistÄ› odmÄ›nÃ­ za tvoji snahu.
 	
 	Cronos_Messenger = LOG_SUCCESS;
 	B_GiveInvItems (other,self,Cronos_Brief,1);
@@ -336,7 +336,7 @@ instance DIA_Milten_PERM (C_INFO)
 	condition	= DIA_Milten_PERM_Condition;
 	information	= DIA_Milten_PERM_Info;
 	permanent	= 0;
-	description = "Øekni mi nìco o mázích Ohnì.";
+	description = "Å˜ekni mi nÄ›co o mÃ¡zÃ­ch OhnÄ›.";
 };                       
 
 FUNC INT DIA_Milten_PERM_Condition()
@@ -349,11 +349,11 @@ FUNC INT DIA_Milten_PERM_Condition()
 
 func VOID DIA_Milten_PERM_Info()
 {
-	AI_Output (other, self,"DIA_Milten_PERM_15_00"); //Øekni mi nìco o mázích Ohnì.
-	AI_Output (self, other,"DIA_Milten_PERM_02_01"); //Kruh ohnì èerpá moc z milosti Innos. Bùh svìtla, pravdy a spravedlnosti na nás dozírá.
-	AI_Output (self, other,"DIA_Milten_PERM_02_02"); //Mágové se sami rozhodli, e se stanou vyvolenımi - a takhle stanovili i ostatní.
-	AI_Output (self, other,"DIA_Milten_PERM_02_03"); //Mìl jsem štìstí, e jsem byl pøijatı. Stal jsem se Corristovım uèedníkem. Nejspíš potøeboval nìjakou zábavu.
-	AI_Output (self, other,"DIA_Milten_PERM_02_04"); //Od té doby jsem se pak snail kadı den zlepšovat v magickém umìní, abych byl pøijatı to dalšího Kruhu.
+	AI_Output (other, self,"DIA_Milten_PERM_15_00"); //Å˜ekni mi nÄ›co o mÃ¡zÃ­ch OhnÄ›.
+	AI_Output (self, other,"DIA_Milten_PERM_02_01"); //Kruh ohnÄ› ÄerpÃ¡ moc z milosti Innos. BÅ¯h svÄ›tla, pravdy a spravedlnosti na nÃ¡s dozÃ­rÃ¡.
+	AI_Output (self, other,"DIA_Milten_PERM_02_02"); //MÃ¡govÃ© se sami rozhodli, Å¾e se stanou vyvolenÃ½mi - a takhle stanovili i ostatnÃ­.
+	AI_Output (self, other,"DIA_Milten_PERM_02_03"); //MÄ›l jsem Å¡tÄ›stÃ­, Å¾e jsem byl pÅ™ijatÃ½. Stal jsem se CorristovÃ½m uÄednÃ­kem. NejspÃ­Å¡ potÅ™eboval nÄ›jakou zÃ¡bavu.
+	AI_Output (self, other,"DIA_Milten_PERM_02_04"); //Od tÃ© doby jsem se pak snaÅ¾il kaÅ¾dÃ½ den zlepÅ¡ovat v magickÃ©m umÄ›nÃ­, abych byl pÅ™ijatÃ½ to dalÅ¡Ã­ho Kruhu.
 };
 
 //*********************************************
@@ -367,7 +367,7 @@ instance DIA_Milten_WannaMage (C_INFO)
 	condition	= DIA_Milten_WannaMage_Condition;
 	information	= DIA_Milten_WannaMage_Info;
 	permanent	= 1;
-	description = "Chci se taky stát kouzelnickım uènìm - jako ty.";
+	description = "Chci se taky stÃ¡t kouzelnickÃ½m uÄnÄ›m - jako ty.";
 };                       
 
 FUNC INT DIA_Milten_WannaMage_Condition()
@@ -380,10 +380,10 @@ FUNC INT DIA_Milten_WannaMage_Condition()
 
 func VOID DIA_Milten_WannaMage_Info()
 {
-	AI_Output (other, self,"DIA_Milten_WannaMage_15_00"); //Chci se taky stát kouzelnickım uènìm - jako ty.
-	AI_Output (self, other,"DIA_Milten_WannaMage_02_01"); //Corristo mì vybral, protoe jsem vykonal nìco vıznamného pro Rudobarony.
-	AI_Output (self, other,"DIA_Milten_WannaMage_02_02"); //Dokud nevykonáš nìco opravdu vıznamného, nikdy tì do uèení nevezme.
-	AI_Output (self, other,"DIA_Milten_WannaMage_02_03"); //Kromì toho musíš patøit ke Starému táboru. Pochybuju, e by Corristo pøijal do uèení nìkoho, kdo je èlenem nìjakého jiného tábora.
+	AI_Output (other, self,"DIA_Milten_WannaMage_15_00"); //Chci se taky stÃ¡t kouzelnickÃ½m uÄnÄ›m - jako ty.
+	AI_Output (self, other,"DIA_Milten_WannaMage_02_01"); //Corristo mÄ› vybral, protoÅ¾e jsem vykonal nÄ›co vÃ½znamnÃ©ho pro Rudobarony.
+	AI_Output (self, other,"DIA_Milten_WannaMage_02_02"); //Dokud nevykonÃ¡Å¡ nÄ›co opravdu vÃ½znamnÃ©ho, nikdy tÄ› do uÄenÃ­ nevezme.
+	AI_Output (self, other,"DIA_Milten_WannaMage_02_03"); //KromÄ› toho musÃ­Å¡ patÅ™it ke StarÃ©mu tÃ¡boru. Pochybuju, Å¾e by Corristo pÅ™ijal do uÄenÃ­ nÄ›koho, kdo je Älenem nÄ›jakÃ©ho jinÃ©ho tÃ¡bora.
 };
 
 
@@ -431,10 +431,10 @@ func void Info_Milten_SHWAIT_Info()
 {
 	AI_GotoNpc		(self,hero);
 	
-	AI_Output		(self,hero,"Info_Milten_SHWAIT_02_01"); //Buï zdráv! Mùj pøítel Lester z tábora v bainách mi øekl o tvıch velkıch skutcích!
-	AI_Output		(self,hero,"Info_Milten_SHWAIT_02_02"); //Jsem ohromenı. Stal ses velmi silnı.
-	AI_Output		(hero,self,"Info_Milten_SHWAIT_15_03"); //Dìlám, jak umím.
-	AI_Output		(self,hero,"Info_Milten_SHWAIT_02_04"); //Jistì. Poøád skromnı, e ano?
+	AI_Output		(self,hero,"Info_Milten_SHWAIT_02_01"); //BuÄ zdrÃ¡v! MÅ¯j pÅ™Ã­tel Lester z tÃ¡bora v baÅ¾inÃ¡ch mi Å™ekl o tvÃ½ch velkÃ½ch skutcÃ­ch!
+	AI_Output		(self,hero,"Info_Milten_SHWAIT_02_02"); //Jsem ohromenÃ½. Stal ses velmi silnÃ½.
+	AI_Output		(hero,self,"Info_Milten_SHWAIT_15_03"); //DÄ›lÃ¡m, jak umÃ­m.
+	AI_Output		(self,hero,"Info_Milten_SHWAIT_02_04"); //JistÄ›. PoÅ™Ã¡d skromnÃ½, Å¾e ano?
 };
 
 //***************************************************************************
@@ -462,8 +462,8 @@ func void Info_Milten_SHGORN_Info()
 {
 	AI_Output		(hero,self,"Info_Milten_SHGORN_15_01"); //Potkal jsem Gorna.
 	AI_Output		(self,hero,"Info_Milten_SHGORN_02_02"); //Opravdu? Kde?
-	AI_Output		(hero,self,"Info_Milten_SHGORN_15_03"); //U staré rozvaliny kláštera u moøe. Hledali jsme tam oba poklad.
-	AI_Output		(self,hero,"Info_Milten_SHGORN_02_04"); //Jsem pøesvìdèenı, e mi všechno o tom bude vyprávìt, a se spolu zase setkáme.
+	AI_Output		(hero,self,"Info_Milten_SHGORN_15_03"); //U starÃ© rozvaliny klÃ¡Å¡tera u moÅ™e. Hledali jsme tam oba poklad.
+	AI_Output		(self,hero,"Info_Milten_SHGORN_02_04"); //Jsem pÅ™esvÄ›dÄenÃ½, Å¾e mi vÅ¡echno o tom bude vyprÃ¡vÄ›t, aÅ¾ se spolu zase setkÃ¡me.
 };
 
 //***************************************************************************
@@ -476,7 +476,7 @@ instance Info_Milten_SHLESTER (C_INFO)
 	information	= Info_Milten_SHLESTER_Info;
 	important	= 0;
 	permanent	= 0;
-	description	= "Byli jsme s Lesterem v horské pevnosti.";
+	description	= "Byli jsme s Lesterem v horskÃ© pevnosti.";
 };
 
 FUNC int Info_Milten_SHLESTER_Condition()
@@ -489,10 +489,10 @@ FUNC int Info_Milten_SHLESTER_Condition()
 
 func void Info_Milten_SHLESTER_Info()
 {
-	AI_Output		(hero,self,"Info_Milten_SHLESTER_15_01"); //Byli jsme s Lesterem v horské pevnosti.
-	AI_Output		(self,hero,"Info_Milten_SHLESTER_02_02"); //Øíkal mi o tom. Podle všeho je moné ti vìøit.
-	AI_Output		(hero,self,"Info_Milten_SHLESTER_15_03"); //Kde jste se vy ètyøi doposud setkávali?
-	AI_Output		(self,hero,"Info_Milten_SHLESTER_02_04"); //Och, tu i onde. Setkávali jsme se na nejrùznìjších místech.
+	AI_Output		(hero,self,"Info_Milten_SHLESTER_15_01"); //Byli jsme s Lesterem v horskÃ© pevnosti.
+	AI_Output		(self,hero,"Info_Milten_SHLESTER_02_02"); //Å˜Ã­kal mi o tom. Podle vÅ¡eho je moÅ¾nÃ© ti vÄ›Å™it.
+	AI_Output		(hero,self,"Info_Milten_SHLESTER_15_03"); //Kde jste se vy ÄtyÅ™i doposud setkÃ¡vali?
+	AI_Output		(self,hero,"Info_Milten_SHLESTER_02_04"); //Och, tu i onde. SetkÃ¡vali jsme se na nejrÅ¯znÄ›jÅ¡Ã­ch mÃ­stech.
 };
 
 //***************************************************************************
@@ -505,7 +505,7 @@ instance Info_Milten_SHYOU (C_INFO)
 	information	= Info_Milten_SHYOU_Info;
 	important	= 0;
 	permanent	= 0;
-	description	= "Co tady dìláš?";
+	description	= "Co tady dÄ›lÃ¡Å¡?";
 };
 
 FUNC int Info_Milten_SHYOU_Condition()
@@ -518,11 +518,11 @@ FUNC int Info_Milten_SHYOU_Condition()
 
 func void Info_Milten_SHYOU_Info()
 {
-	AI_Output		(hero,self,"Info_Milten_SHYOU_15_01"); //Co dìláš tady?
-	AI_Output		(self,hero,"Info_Milten_SHYOU_02_02"); //Nedaleko odtud je prastarı kamennı kruh. V jeho støedu leí vstup do podzemních prostor.
-	AI_Output		(hero,self,"Info_Milten_SHYOU_15_03"); //Nìjaká hrobka?
-	AI_Output		(self,hero,"Info_Milten_SHYOU_02_04"); //Ano, nìco takového.
-	AI_Output		(self,hero,"Info_Milten_SHYOU_02_05"); //V té hrobce je nìco, co bych chtìl mít.
+	AI_Output		(hero,self,"Info_Milten_SHYOU_15_01"); //Co dÄ›lÃ¡Å¡ tady?
+	AI_Output		(self,hero,"Info_Milten_SHYOU_02_02"); //Nedaleko odtud je prastarÃ½ kamennÃ½ kruh. V jeho stÅ™edu leÅ¾Ã­ vstup do podzemnÃ­ch prostor.
+	AI_Output		(hero,self,"Info_Milten_SHYOU_15_03"); //NÄ›jakÃ¡ hrobka?
+	AI_Output		(self,hero,"Info_Milten_SHYOU_02_04"); //Ano, nÄ›co takovÃ©ho.
+	AI_Output		(self,hero,"Info_Milten_SHYOU_02_05"); //V tÃ© hrobce je nÄ›co, co bych chtÄ›l mÃ­t.
 };
 
 //***************************************************************************
@@ -535,7 +535,7 @@ instance Info_Milten_SHME (C_INFO)
 	information	= Info_Milten_SHME_Info;
 	important	= 0;
 	permanent	= 0;
-	description	= "Hledám ohniskovı kámen. Nìkde musí bıt.";
+	description	= "HledÃ¡m ohniskovÃ½ kÃ¡men. NÄ›kde musÃ­ bÃ½t.";
 };
 
 FUNC int Info_Milten_SHME_Condition()
@@ -549,8 +549,8 @@ FUNC int Info_Milten_SHME_Condition()
 
 func void Info_Milten_SHME_Info()
 {
-	AI_Output		(hero,self,"Info_Milten_SHME_15_01"); //Hledám ohniskovı kámen. Nìkde musí bıt.
-	AI_Output		(self,hero,"Info_Milten_SHME_02_02"); //Vypadá to, jako bysme oba nìco hledali na stejném místì.
+	AI_Output		(hero,self,"Info_Milten_SHME_15_01"); //HledÃ¡m ohniskovÃ½ kÃ¡men. NÄ›kde musÃ­ bÃ½t.
+	AI_Output		(self,hero,"Info_Milten_SHME_02_02"); //VypadÃ¡ to, jako bysme oba nÄ›co hledali na stejnÃ©m mÃ­stÄ›.
 };
 
 //***************************************************************************
@@ -563,7 +563,7 @@ instance Info_Milten_SHPROBLEM (C_INFO)
 	information	= Info_Milten_SHPROBLEM_Info;
 	important	= 0;
 	permanent	= 0;
-	description	= "Proè nejdeš dolù do té hrobky a nevezmeš si to, co hledáš?";
+	description	= "ProÄ nejdeÅ¡ dolÅ¯ do tÃ© hrobky a nevezmeÅ¡ si to, co hledÃ¡Å¡?";
 };
 
 FUNC int Info_Milten_SHPROBLEM_Condition()
@@ -576,11 +576,11 @@ FUNC int Info_Milten_SHPROBLEM_Condition()
 
 func void Info_Milten_SHPROBLEM_Info()
 {
-	AI_Output			(hero,self,"Info_Milten_SHPROBLEM_15_01"); //Proè nejdeš dolù do té hrobky a nevezmeš si to, co hledáš?
-	AI_Output			(self,hero,"Info_Milten_SHPROBLEM_02_02"); //Och, to je dlouhı pøíbìh. Musel bych jít hodnì do minulosti, abych to mohl vysvìtlit.
-	AI_Output			(hero,self,"Info_Milten_SHPROBLEM_15_03"); //Vyprávìj, já nespìchám.
-	AI_Output			(self,hero,"Info_Milten_SHPROBLEM_02_04"); //Dobøe!  Po vytvoøení magické Bariéry, která nás všechny uvìznila...
-	AI_Output			(self,hero,"Info_Milten_SHPROBLEM_02_05"); //...jeden mág schoval tady dole nìjakı magickı artefakt.
+	AI_Output			(hero,self,"Info_Milten_SHPROBLEM_15_01"); //ProÄ nejdeÅ¡ dolÅ¯ do tÃ© hrobky a nevezmeÅ¡ si to, co hledÃ¡Å¡?
+	AI_Output			(self,hero,"Info_Milten_SHPROBLEM_02_02"); //Och, to je dlouhÃ½ pÅ™Ã­bÄ›h. Musel bych jÃ­t hodnÄ› do minulosti, abych to mohl vysvÄ›tlit.
+	AI_Output			(hero,self,"Info_Milten_SHPROBLEM_15_03"); //VyprÃ¡vÄ›j, jÃ¡ nespÄ›chÃ¡m.
+	AI_Output			(self,hero,"Info_Milten_SHPROBLEM_02_04"); //DobÅ™e!  Po vytvoÅ™enÃ­ magickÃ© BariÃ©ry, kterÃ¡ nÃ¡s vÅ¡echny uvÄ›znila...
+	AI_Output			(self,hero,"Info_Milten_SHPROBLEM_02_05"); //...jeden mÃ¡g schoval tady dole nÄ›jakÃ½ magickÃ½ artefakt.
 };
 
 //***************************************************************************
@@ -593,7 +593,7 @@ instance Info_Milten_SHFOCUS (C_INFO)
 	information	= Info_Milten_SHFOCUS_Info;
 	important	= 0;
 	permanent	= 0;
-	description	= "Není ten artefakt jeden z pìti ohniskovıch kamenù?";
+	description	= "NenÃ­ ten artefakt jeden z pÄ›ti ohniskovÃ½ch kamenÅ¯?";
 };
 
 FUNC int Info_Milten_SHFOCUS_Condition()
@@ -606,10 +606,10 @@ FUNC int Info_Milten_SHFOCUS_Condition()
 
 func void Info_Milten_SHFOCUS_Info()
 {
-	AI_Output			(hero,self,"Info_Milten_SHFOCUS_15_01"); //Není ten artefakt jeden z pìti ohniskovıch kamenù?
-	AI_Output			(self,hero,"Info_Milten_SHFOCUS_02_02"); //Pøesnì tak! Take ty u znáš pøíbìh pìti ohniskovıch kamenù?
-	AI_Output			(hero,self,"Info_Milten_SHFOCUS_15_03"); //Neøíkej mi, e taky hledáš ohnisko!
-	AI_Output			(self,hero,"Info_Milten_SHFOCUS_02_04"); //Ne. Mì ohniskovı kámen nezajímá. Já hledám skøetí talisman.
+	AI_Output			(hero,self,"Info_Milten_SHFOCUS_15_01"); //NenÃ­ ten artefakt jeden z pÄ›ti ohniskovÃ½ch kamenÅ¯?
+	AI_Output			(self,hero,"Info_Milten_SHFOCUS_02_02"); //PÅ™esnÄ› tak! TakÅ¾e ty uÅ¾ znÃ¡Å¡ pÅ™Ã­bÄ›h pÄ›ti ohniskovÃ½ch kamenÅ¯?
+	AI_Output			(hero,self,"Info_Milten_SHFOCUS_15_03"); //NeÅ™Ã­kej mi, Å¾e taky hledÃ¡Å¡ ohnisko!
+	AI_Output			(self,hero,"Info_Milten_SHFOCUS_02_04"); //Ne. MÄ› ohniskovÃ½ kÃ¡men nezajÃ­mÃ¡. JÃ¡ hledÃ¡m skÅ™etÃ­ talisman.
 };
 
 //***************************************************************************
@@ -622,7 +622,7 @@ instance Info_Milten_SHSEAL (C_INFO)
 	information	= Info_Milten_SHSEAL_Info;
 	important	= 0;
 	permanent	= 0;
-	description	= "Ten artefakt byl zapeèetìn?";
+	description	= "Ten artefakt byl zapeÄetÄ›n?";
 };
 
 FUNC int Info_Milten_SHSEAL_Condition()
@@ -635,13 +635,13 @@ FUNC int Info_Milten_SHSEAL_Condition()
 
 func void Info_Milten_SHSEAL_Info()
 {
-	AI_Output			(hero,self,"Info_Milten_SHSEAL_15_01"); //Ten artefakt byl zapeèetìn?
-	AI_Output			(self,hero,"Info_Milten_SHSEAL_02_02"); //Ano. Chrání ho mocné kouzlo. První vykradaè hrobù, kterı se pokusí ukrást ohnisko...
-	AI_Output			(self,hero,"Info_Milten_SHSEAL_02_03"); //...bude proklet a zaèarován do nesmrtelné bytosti, která nepozná odpoèinek a která bude støeit hrobku pøed dalšími vykradaèi hrobù.
-	AI_Output			(hero,self,"Info_Milten_SHSEAL_15_04"); //Jak se vymaníš z toho prokletí?
-	AI_Output			(self,hero,"Info_Milten_SHSEAL_02_05"); //To u nebude tøeba.
-	AI_Output			(self,hero,"Info_Milten_SHSEAL_02_06"); //Pøed nìkolika lety se jeden Rudobaron, kterı z dlouhé chvíle lovil skøety, neopatrnì pøiblíil k hrobce a vstoupil do ní.
-	AI_Output			(self,hero,"Info_Milten_SHSEAL_02_07"); //Teï je ON strácem toho pokladu tady dole.
+	AI_Output			(hero,self,"Info_Milten_SHSEAL_15_01"); //Ten artefakt byl zapeÄetÄ›n?
+	AI_Output			(self,hero,"Info_Milten_SHSEAL_02_02"); //Ano. ChrÃ¡nÃ­ ho mocnÃ© kouzlo. PrvnÃ­ vykradaÄ hrobÅ¯, kterÃ½ se pokusÃ­ ukrÃ¡st ohnisko...
+	AI_Output			(self,hero,"Info_Milten_SHSEAL_02_03"); //...bude proklet a zaÄarovÃ¡n do nesmrtelnÃ© bytosti, kterÃ¡ nepoznÃ¡ odpoÄinek a kterÃ¡ bude stÅ™eÅ¾it hrobku pÅ™ed dalÅ¡Ã­mi vykradaÄi hrobÅ¯.
+	AI_Output			(hero,self,"Info_Milten_SHSEAL_15_04"); //Jak se vymanÃ­Å¡ z toho prokletÃ­?
+	AI_Output			(self,hero,"Info_Milten_SHSEAL_02_05"); //To uÅ¾ nebude tÅ™eba.
+	AI_Output			(self,hero,"Info_Milten_SHSEAL_02_06"); //PÅ™ed nÄ›kolika lety se jeden Rudobaron, kterÃ½ z dlouhÃ© chvÃ­le lovil skÅ™ety, neopatrnÄ› pÅ™iblÃ­Å¾il k hrobce a vstoupil do nÃ­.
+	AI_Output			(self,hero,"Info_Milten_SHSEAL_02_07"); //TeÄ je ON strÃ¡Å¾cem toho pokladu tady dole.
 };
 
 //***************************************************************************
@@ -668,8 +668,8 @@ FUNC int Info_Milten_SHTALISMAN_Condition()
 func void Info_Milten_SHTALISMAN_Info()
 {
 	AI_Output			(hero,self,"Info_Milten_SHTALISMAN_15_01"); //A co ten talisman?
-	AI_Output			(self,hero,"Info_Milten_SHTALISMAN_02_02"); //Myslím, e ho jeho bıvalı majitel pouíval k vlastní obranì pøed rozzlobenımi skøety.
-	AI_Output			(self,hero,"Info_Milten_SHTALISMAN_02_03"); //Jestli mám pravdu, pak mùe bıt ten talisman velice uiteènı.
+	AI_Output			(self,hero,"Info_Milten_SHTALISMAN_02_02"); //MyslÃ­m, Å¾e ho jeho bÃ½valÃ½ majitel pouÅ¾Ã­val k vlastnÃ­ obranÄ› pÅ™ed rozzlobenÃ½mi skÅ™ety.
+	AI_Output			(self,hero,"Info_Milten_SHTALISMAN_02_03"); //Jestli mÃ¡m pravdu, pak mÅ¯Å¾e bÃ½t ten talisman velice uÅ¾iteÄnÃ½.
 };
 
 //***************************************************************************
@@ -682,7 +682,7 @@ instance Info_Milten_SHOFFER (C_INFO)
 	information	= Info_Milten_SHOFFER_Info;
 	important	= 0;
 	permanent	= 0;
-	description	= "Mìli bychom hrobku prohledat spoleènì.";
+	description	= "MÄ›li bychom hrobku prohledat spoleÄnÄ›.";
 };
 
 FUNC int Info_Milten_SHOFFER_Condition()
@@ -696,14 +696,14 @@ FUNC int Info_Milten_SHOFFER_Condition()
 
 func void Info_Milten_SHOFFER_Info()
 {
-	AI_Output			(hero,self,"Info_Milten_SHOFFER_15_01"); //Mìli bysme hrobku prohledat spoleènì. Ty dostaneš talisman a já ohniskovı kámen.
-	AI_Output			(self,hero,"Info_Milten_SHOFFER_02_02"); //Dobøe, je tu ale jeden malı problém...
-	AI_Output			(hero,self,"Info_Milten_SHOFFER_15_03"); //Problém?
-	AI_Output			(self,hero,"Info_Milten_SHOFFER_02_04"); //Ano. Ten stráce je dole v hrobce...
-	AI_Output			(hero,self,"Info_Milten_SHOFFER_15_05"); //Nemùeme ho rozsekat na kousky?
-	AI_Output			(self,hero,"Info_Milten_SHOFFER_02_06"); //To by nebylo moc snadné. Myslím, e je vıjimeènì necitlivı vùèi normálním zbraním.
-	AI_Output			(hero,self,"Info_Milten_SHOFFER_15_07"); //Nech mì hádat, ty u máš pøipravenı plán, viï?
-	AI_Output			(self,hero,"Info_Milten_SHOFFER_02_08"); //Ech... no... Mám plán, ale nedokáu ho provést sám.
+	AI_Output			(hero,self,"Info_Milten_SHOFFER_15_01"); //MÄ›li bysme hrobku prohledat spoleÄnÄ›. Ty dostaneÅ¡ talisman a jÃ¡ ohniskovÃ½ kÃ¡men.
+	AI_Output			(self,hero,"Info_Milten_SHOFFER_02_02"); //DobÅ™e, je tu ale jeden malÃ½ problÃ©m...
+	AI_Output			(hero,self,"Info_Milten_SHOFFER_15_03"); //ProblÃ©m?
+	AI_Output			(self,hero,"Info_Milten_SHOFFER_02_04"); //Ano. Ten strÃ¡Å¾ce je dole v hrobce...
+	AI_Output			(hero,self,"Info_Milten_SHOFFER_15_05"); //NemÅ¯Å¾eme ho rozsekat na kousky?
+	AI_Output			(self,hero,"Info_Milten_SHOFFER_02_06"); //To by nebylo moc snadnÃ©. MyslÃ­m, Å¾e je vÃ½jimeÄnÄ› necitlivÃ½ vÅ¯Äi normÃ¡lnÃ­m zbranÃ­m.
+	AI_Output			(hero,self,"Info_Milten_SHOFFER_15_07"); //Nech mÄ› hÃ¡dat, ty uÅ¾ mÃ¡Å¡ pÅ™ipravenÃ½ plÃ¡n, viÄ?
+	AI_Output			(self,hero,"Info_Milten_SHOFFER_02_08"); //Ech... no... MÃ¡m plÃ¡n, ale nedokÃ¡Å¾u ho provÃ©st sÃ¡m.
 };
 
 //***************************************************************************
@@ -716,7 +716,7 @@ instance Info_Milten_SHOFFER2 (C_INFO)
 	information	= Info_Milten_SHOFFER2_Info;
 	important	= 0;
 	permanent	= 0;
-	description	= "Povídej!";
+	description	= "PovÃ­dej!";
 };
 
 FUNC int Info_Milten_SHOFFER2_Condition()
@@ -729,13 +729,13 @@ FUNC int Info_Milten_SHOFFER2_Condition()
 
 func void Info_Milten_SHOFFER2_Info()
 {
-	AI_Output			(hero,self,"Info_Milten_SHOFFER2_15_01"); //Povídej!
-	AI_Output			(self,hero,"Info_Milten_SHOFFER2_02_02"); //Mám s sebou kouzelnı svitek s velmi mocnım zaøíkávadlem.
-	AI_Output			(self,hero,"Info_Milten_SHOFFER2_02_03"); //To kouzlo znièí všechny nemrtvé, které zasáhne.
-	AI_Output			(hero,self,"Info_Milten_SHOFFER2_15_04"); //Pak by mìlo bıt vybrání hrobky hraèka.
-	AI_Output			(self,hero,"Info_Milten_SHOFFER2_02_05"); //Hmmm... Dobøe... Ne tak docela! Ten stráce tam u není tak docela sám.
-	AI_Output			(self,hero,"Info_Milten_SHOFFER2_02_06"); //Nejspíš nìjakı pozdìjší vykradaè hrobù, kterı nebyl o moc úspìšnìjší ne ten první.
-	AI_Output			(self,hero,"Info_Milten_SHOFFER2_02_07"); //Jednou jsem sešel dolu a byl jsem málem zabit. Jeden mu tam sám jít nemùe.
+	AI_Output			(hero,self,"Info_Milten_SHOFFER2_15_01"); //PovÃ­dej!
+	AI_Output			(self,hero,"Info_Milten_SHOFFER2_02_02"); //MÃ¡m s sebou kouzelnÃ½ svitek s velmi mocnÃ½m zaÅ™Ã­kÃ¡vadlem.
+	AI_Output			(self,hero,"Info_Milten_SHOFFER2_02_03"); //To kouzlo zniÄÃ­ vÅ¡echny nemrtvÃ©, kterÃ© zasÃ¡hne.
+	AI_Output			(hero,self,"Info_Milten_SHOFFER2_15_04"); //Pak by mÄ›lo bÃ½t vybrÃ¡nÃ­ hrobky hraÄka.
+	AI_Output			(self,hero,"Info_Milten_SHOFFER2_02_05"); //Hmmm... DobÅ™e... Ne tak docela! Ten strÃ¡Å¾ce tam uÅ¾ nenÃ­ tak docela sÃ¡m.
+	AI_Output			(self,hero,"Info_Milten_SHOFFER2_02_06"); //NejspÃ­Å¡ nÄ›jakÃ½ pozdÄ›jÅ¡Ã­ vykradaÄ hrobÅ¯, kterÃ½ nebyl o moc ÃºspÄ›Å¡nÄ›jÅ¡Ã­ neÅ¾ ten prvnÃ­.
+	AI_Output			(self,hero,"Info_Milten_SHOFFER2_02_07"); //Jednou jsem seÅ¡el dolu a byl jsem mÃ¡lem zabit. Jeden muÅ¾ tam sÃ¡m jÃ­t nemÅ¯Å¾e.
 };
 
 //***************************************************************************
@@ -748,7 +748,7 @@ instance Info_Milten_SHACCEPT (C_INFO)
 	information	= Info_Milten_SHACCEPT_Info;
 	important	= 0;
 	permanent	= 0;
-	description	= "Dej mi ten kouzelnı svitek a udìláme to spoleènì!";
+	description	= "Dej mi ten kouzelnÃ½ svitek a udÄ›lÃ¡me to spoleÄnÄ›!";
 };
 
 FUNC int Info_Milten_SHACCEPT_Condition()
@@ -761,17 +761,17 @@ FUNC int Info_Milten_SHACCEPT_Condition()
 
 func void Info_Milten_SHACCEPT_Info()
 {
-	AI_Output			(hero,self,"Info_Milten_SHACCEPT_15_01"); //Dej mi ten kouzelnı svitek a udìláme to spoleènì!
-	AI_Output			(self,hero,"Info_Milten_SHACCEPT_02_02"); //Dobøe, velmi dobøe. Doufal jsem, e to øekneš!
-	AI_Output			(self,hero,"Info_Milten_SHACCEPT_02_03"); //Máme ale jenom jeden kouzelnı svitek. pouijeme ho na stráce!
-	AI_Output			(self,hero,"Info_Milten_SHACCEPT_02_04"); //Ten druhı nemrtvı mùe bıt zabit i v normálním boji.
-	AI_Output			(hero,self,"Info_Milten_SHACCEPT_15_05"); //Aha. Která cesta vede ke kamennému kruhu?
-	AI_Output			(self,hero,"Info_Milten_SHACCEPT_02_06"); //Pojï za mnou.
+	AI_Output			(hero,self,"Info_Milten_SHACCEPT_15_01"); //Dej mi ten kouzelnÃ½ svitek a udÄ›lÃ¡me to spoleÄnÄ›!
+	AI_Output			(self,hero,"Info_Milten_SHACCEPT_02_02"); //DobÅ™e, velmi dobÅ™e. Doufal jsem, Å¾e to Å™ekneÅ¡!
+	AI_Output			(self,hero,"Info_Milten_SHACCEPT_02_03"); //MÃ¡me ale jenom jeden kouzelnÃ½ svitek. pouÅ¾ijeme ho na strÃ¡Å¾ce!
+	AI_Output			(self,hero,"Info_Milten_SHACCEPT_02_04"); //Ten druhÃ½ nemrtvÃ½ mÅ¯Å¾e bÃ½t zabit i v normÃ¡lnÃ­m boji.
+	AI_Output			(hero,self,"Info_Milten_SHACCEPT_15_05"); //Aha. KterÃ¡ cesta vede ke kamennÃ©mu kruhu?
+	AI_Output			(self,hero,"Info_Milten_SHACCEPT_02_06"); //PojÄ za mnou.
 
 	Log_CreateTopic		(CH3_Stonehenge,	LOG_MISSION);
 	Log_SetTopicStatus	(CH3_Stonehenge,	LOG_RUNNING);
-	B_LogEntry		(CH3_Stonehenge,"Poblí kamenného kruhu jsem potkal Miltena, mága Ohnì. Øekl mi, e jeden z ohniskovıch kamenù, které hledám, je pod tímto kamennım útvarem.");
-	B_LogEntry		(CH3_Stonehenge,"Milten mi dal kouzelnı svitek, kterı mi pomùe porazit nemrtvého stráce krypty. Pùjdeme do krypty spoleènì.");
+	B_LogEntry		(CH3_Stonehenge,"PoblÃ­Å¾ kamennÃ©ho kruhu jsem potkal Miltena, mÃ¡ga OhnÄ›. Å˜ekl mi, Å¾e jeden z ohniskovÃ½ch kamenÅ¯, kterÃ© hledÃ¡m, je pod tÃ­mto kamennÃ½m Ãºtvarem.");
+	B_LogEntry		(CH3_Stonehenge,"Milten mi dal kouzelnÃ½ svitek, kterÃ½ mi pomÅ¯Å¾e porazit nemrtvÃ©ho strÃ¡Å¾ce krypty. PÅ¯jdeme do krypty spoleÄnÄ›.");
 	
 	CreateInvItem		(self,	ItArScrollDestroyUndead);
 	B_GiveInvItems  (self, hero, ItArScrollDestroyUndead, 1);
@@ -805,8 +805,8 @@ func void Info_Milten_SHARRIVED_Info()
 {
 	AI_GotoNpc			(self,hero);
 
-	AI_Output			(self,hero,"Info_Milten_SHARRIVED_02_01"); //Tak, jsme tady. Tenhle tunel vede pøímo do hrobky. 
-	AI_Output			(hero,self,"Info_Milten_SHARRIVED_15_02"); //Tak pojïme navštívit stráce!
+	AI_Output			(self,hero,"Info_Milten_SHARRIVED_02_01"); //Tak, jsme tady. Tenhle tunel vede pÅ™Ã­mo do hrobky. 
+	AI_Output			(hero,self,"Info_Milten_SHARRIVED_15_02"); //Tak pojÄme navÅ¡tÃ­vit strÃ¡Å¾ce!
 
   	self.aivar[AIV_PARTYMEMBER] =	TRUE;
 	Npc_ExchangeRoutine	(self,	"SHFollow");
@@ -823,7 +823,7 @@ instance Info_Milten_SHHEAL (C_INFO)
 	information	= Info_Milten_SHHEAL_Info;
 	important	= 0;
 	permanent	= 0;
-	description	= "Jsem zranìnı. Pomoz mi, prosím.";
+	description	= "Jsem zranÄ›nÃ½. Pomoz mi, prosÃ­m.";
 };
 
 FUNC int Info_Milten_SHHEAL_Condition()
@@ -839,16 +839,16 @@ FUNC int Info_Milten_SHHEAL_Condition()
 
 func void Info_Milten_SHHEAL_Info()
 {
-	AI_Output				(hero,self,"Info_Milten_SHHEAL_15_01"); //Jsem zranìnı. Pomoz mi, prosím.
+	AI_Output				(hero,self,"Info_Milten_SHHEAL_15_01"); //Jsem zranÄ›nÃ½. Pomoz mi, prosÃ­m.
 
 	if (	(Npc_HasItems(self,ItFo_Potion_Health_02) >  0)		)
 	{
-		AI_Output			(self,hero,"Info_Milten_SHHEAL_02_02"); //Vezmi si léèivı lektvar.
+		AI_Output			(self,hero,"Info_Milten_SHHEAL_02_02"); //Vezmi si lÃ©ÄivÃ½ lektvar.
 		B_GiveInvItems	    (self, hero,	ItFo_Potion_Health_02,	1);
 	}
 	else
 	{
-		AI_Output			(self,hero,"Info_Milten_SHHEAL_02_03"); //U mi ádnı léèivı lektvar nezbyl.
+		AI_Output			(self,hero,"Info_Milten_SHHEAL_02_03"); //UÅ¾ mi Å¾Ã¡dnÃ½ lÃ©ÄivÃ½ lektvar nezbyl.
 	};	
 
 	AI_StopProcessInfos		(self);
@@ -864,7 +864,7 @@ instance Info_Milten_SHRUNNING (C_INFO)
 	information	= Info_Milten_SHRUNNING_Info;
 	important	= 0;
 	permanent	= 1;
-	description	= "Stráce stále ije!";
+	description	= "StrÃ¡Å¾ce stÃ¡le Å¾ije!";
 };
 
 FUNC int Info_Milten_SHRUNNING_Condition()
@@ -874,7 +874,7 @@ FUNC int Info_Milten_SHRUNNING_Condition()
 	keeperFound = Wld_DetectNpc(self, ZombieTheKeeper, NOFUNC, -1);
 
 	if	Npc_KnowsInfo(hero,Info_Milten_SHACCEPT)
-	&&	(keeperFound && !Npc_IsDead(other))							// Wächter noch nicht besiegt...
+	&&	(keeperFound && !Npc_IsDead(other))							// WÃ¤chter noch nicht besiegt...
 	{
 		return TRUE;
 	};	
@@ -882,8 +882,8 @@ FUNC int Info_Milten_SHRUNNING_Condition()
 
 func void Info_Milten_SHRUNNING_Info()
 {
-	AI_Output			(hero,self,"Info_Milten_SHRUNNING_15_01"); 	//Stráce stále ije!
-	AI_Output			(self,hero,"Info_Milten_SHRUNNING_02_02"); 	//Tak ho zniè kouzelnım svitkem.
+	AI_Output			(hero,self,"Info_Milten_SHRUNNING_15_01"); 	//StrÃ¡Å¾ce stÃ¡le Å¾ije!
+	AI_Output			(self,hero,"Info_Milten_SHRUNNING_02_02"); 	//Tak ho zniÄ kouzelnÃ½m svitkem.
 };
 
 //***************************************************************************
@@ -896,7 +896,7 @@ instance Info_Milten_SHSCROLL (C_INFO)
 	information	= Info_Milten_SHSCROLL_Info;
 	important	= 0;
 	permanent	= 0;
-	description	= "Pouil jsem kouzelnı svitek!";
+	description	= "PouÅ¾il jsem kouzelnÃ½ svitek!";
 };
 
 FUNC int Info_Milten_SHSCROLL_Condition()
@@ -904,7 +904,7 @@ FUNC int Info_Milten_SHSCROLL_Condition()
 	var int keeperFound;
 	Npc_PerceiveAll(self);
 	keeperFound = Wld_DetectNpc(self, ZombieTheKeeper, NOFUNC, -1);
-	if (	(keeperFound && !Npc_IsDead(other))							// Wächter noch nicht besiegt...
+	if (	(keeperFound && !Npc_IsDead(other))							// WÃ¤chter noch nicht besiegt...
 	&&		Npc_KnowsInfo(hero, Info_Milten_SHACCEPT)
 	&&		(Npc_HasItems(hero, ItArScrollDestroyUndead)==0)	
 	&&		(Npc_HasItems(hero, ItArRuneDestroyUndead)==0)	)
@@ -915,10 +915,10 @@ FUNC int Info_Milten_SHSCROLL_Condition()
 
 func void Info_Milten_SHSCROLL_Info()
 {
-	AI_Output			(hero,self,"Info_Milten_SHSCROLL_15_01"); //Pouil jsem kouzelnı svitek - ale ne na stráce!
-	AI_Output			(self,hero,"Info_Milten_SHSCROLL_02_02"); //To je katastrofa! Pak ho musíš porazit nìjakım jinım zpùsobem!
-	AI_Output			(self,hero,"Info_Milten_SHSCROLL_02_03"); //Snad mùeš koupit další kouzelnı svitek nebo runu v jednom z táborù.
-	AI_Output			(self,hero,"Info_Milten_SHSCROLL_02_04"); //Poèkám tady na tebe. Tady se sejdeme.
+	AI_Output			(hero,self,"Info_Milten_SHSCROLL_15_01"); //PouÅ¾il jsem kouzelnÃ½ svitek - ale ne na strÃ¡Å¾ce!
+	AI_Output			(self,hero,"Info_Milten_SHSCROLL_02_02"); //To je katastrofa! Pak ho musÃ­Å¡ porazit nÄ›jakÃ½m jinÃ½m zpÅ¯sobem!
+	AI_Output			(self,hero,"Info_Milten_SHSCROLL_02_03"); //Snad mÅ¯Å¾eÅ¡ koupit dalÅ¡Ã­ kouzelnÃ½ svitek nebo runu v jednom z tÃ¡borÅ¯.
+	AI_Output			(self,hero,"Info_Milten_SHSCROLL_02_04"); //PoÄkÃ¡m tady na tebe. Tady se sejdeme.
 
   	self.aivar[AIV_PARTYMEMBER] =	FALSE;
 
@@ -936,7 +936,7 @@ instance Info_Milten_SHNEWSCROLL (C_INFO)
 	information	= Info_Milten_SHNEWSCROLL_Info;
 	important	= 0;
 	permanent	= 0;
-	description	= "Mám novı svitek 'Smrt nemrtvému'.";
+	description	= "MÃ¡m novÃ½ svitek 'Smrt nemrtvÃ©mu'.";
 };
 
 FUNC int Info_Milten_SHNEWSCROLL_Condition()
@@ -951,9 +951,9 @@ FUNC int Info_Milten_SHNEWSCROLL_Condition()
 
 func void Info_Milten_SHNEWSCROLL_Info()
 {
-	AI_Output			(hero,self,"Info_Milten_SHNEWSCROLL_15_01"); //Mám novı svitek 'Smrt Nemrtvému'.
-	AI_Output			(self,hero,"Info_Milten_SHNEWSCROLL_02_02"); //Vıbornì. Teï mùeme na další návštìvu k tomu stráci.
-	AI_Output			(self,hero,"Info_Milten_SHNEWSCROLL_02_03"); //Jdi první, pùjdu za tebou.
+	AI_Output			(hero,self,"Info_Milten_SHNEWSCROLL_15_01"); //MÃ¡m novÃ½ svitek 'Smrt NemrtvÃ©mu'.
+	AI_Output			(self,hero,"Info_Milten_SHNEWSCROLL_02_02"); //VÃ½bornÄ›. TeÄ mÅ¯Å¾eme na dalÅ¡Ã­ nÃ¡vÅ¡tÄ›vu k tomu strÃ¡Å¾ci.
+	AI_Output			(self,hero,"Info_Milten_SHNEWSCROLL_02_03"); //Jdi prvnÃ­, pÅ¯jdu za tebou.
 
   	self.aivar[AIV_PARTYMEMBER] =	TRUE;
 	AI_StopProcessInfos	(self);
@@ -987,8 +987,8 @@ func void Info_Milten_SHLEAVE_Info()
 {
 	AI_GotoNpc			(self,hero);
 
-	AI_Output			(self,hero,"Info_Milten_SHLEAVE_02_01"); 	//Vidím, e u jsi o hrobku ztratil zájem.
-	AI_Output			(self,hero,"Info_Milten_SHLEAVE_02_02"); 	//Jestli se rozmyslíš, mùem se setkat tam co pøedtím.
+	AI_Output			(self,hero,"Info_Milten_SHLEAVE_02_01"); 	//VidÃ­m, Å¾e uÅ¾ jsi o hrobku ztratil zÃ¡jem.
+	AI_Output			(self,hero,"Info_Milten_SHLEAVE_02_02"); 	//Jestli se rozmyslÃ­Å¡, mÅ¯Å¾em se setkat tam co pÅ™edtÃ­m.
 
   	self.aivar[AIV_PARTYMEMBER] =	FALSE;
 	Npc_ExchangeRoutine	(self,	"SHWait");
@@ -1005,7 +1005,7 @@ instance Info_Milten_SHCONTINUE (C_INFO)
 	information	= Info_Milten_SHCONTINUE_Info;
 	important	= 0;
 	permanent	= 1;
-	description = "Mùeme se znovu opováit jít do té hrobky?";
+	description = "MÅ¯Å¾eme se znovu opovÃ¡Å¾it jÃ­t do tÃ© hrobky?";
 };
 
 FUNC int Info_Milten_SHCONTINUE_Condition()
@@ -1023,8 +1023,8 @@ func void Info_Milten_SHCONTINUE_Info()
 {
 	AI_GotoNpc			(self,hero);
 
-	AI_Output			(hero,self,"Info_Milten_SHCONTINUE_15_01"); //Mùeme se znovu opováit jít do té hrobky?
-	AI_Output			(self,hero,"Info_Milten_SHCONTINUE_02_02"); //Jsem pøipraven. Jdi napøed, já pùjdu za tebou.
+	AI_Output			(hero,self,"Info_Milten_SHCONTINUE_15_01"); //MÅ¯Å¾eme se znovu opovÃ¡Å¾it jÃ­t do tÃ© hrobky?
+	AI_Output			(self,hero,"Info_Milten_SHCONTINUE_02_02"); //Jsem pÅ™ipraven. Jdi napÅ™ed, jÃ¡ pÅ¯jdu za tebou.
 
   	self.aivar[AIV_PARTYMEMBER] = TRUE;
 	Npc_ExchangeRoutine	(self,	"SHFollow");
@@ -1055,15 +1055,15 @@ func void Info_Milten_SHSUCCESS_Info()
 {
 	AI_GotoNpc			(self,hero);
 
-	AI_Output			(self,hero,"Info_Milten_SHSUCCESS_02_01"); //Dobøe. Máš talisman.
-	AI_Output			(hero,self,"Info_Milten_SHSUCCESS_15_02"); //Tady, vem si ho. To byla naše domluva!
-	AI_Output			(self,hero,"Info_Milten_SHSUCCESS_02_03"); //Dìkuju, pøíteli. Nikdy ti nezapomenu, jak jsi mi pomohl.
-	AI_Output			(self,hero,"Info_Milten_SHSUCCESS_02_04"); //Vrátím se do Starého tábora, snad se tam sejdeme.
+	AI_Output			(self,hero,"Info_Milten_SHSUCCESS_02_01"); //DobÅ™e. MÃ¡Å¡ talisman.
+	AI_Output			(hero,self,"Info_Milten_SHSUCCESS_15_02"); //Tady, vem si ho. To byla naÅ¡e domluva!
+	AI_Output			(self,hero,"Info_Milten_SHSUCCESS_02_03"); //DÄ›kuju, pÅ™Ã­teli. Nikdy ti nezapomenu, jak jsi mi pomohl.
+	AI_Output			(self,hero,"Info_Milten_SHSUCCESS_02_04"); //VrÃ¡tÃ­m se do StarÃ©ho tÃ¡bora, snad se tam sejdeme.
 	
 	B_GiveInvItems	(hero,self,	ItMi_OrcTalisman, 1);
 	
-	B_LogEntry		(CH3_Stonehenge,"Spoleènì jsme porazili nemrtvého STRÁCE pod kamennım kruhem. Milten si vzal svùj podíl koøisti a vrátil se zpátky do Starého tábora.");
-	B_LogEntry		(CH3_Stonehenge,"Saturas bude rád, e jsem tu našel ohniskovı kámen!");
+	B_LogEntry		(CH3_Stonehenge,"SpoleÄnÄ› jsme porazili nemrtvÃ©ho STRÃÅ½CE pod kamennÃ½m kruhem. Milten si vzal svÅ¯j podÃ­l koÅ™isti a vrÃ¡til se zpÃ¡tky do StarÃ©ho tÃ¡bora.");
+	B_LogEntry		(CH3_Stonehenge,"Saturas bude rÃ¡d, Å¾e jsem tu naÅ¡el ohniskovÃ½ kÃ¡men!");
 	
   	self.aivar[AIV_PARTYMEMBER] =	FALSE;
 	Npc_ExchangeRoutine	(self, "ReturnToOC");
@@ -1106,27 +1106,27 @@ func void Info_Milten_OCWARN_Info()
 {
 	AI_GotoNpc			(self,hero);
 
-	AI_Output			(self,hero,"Info_Milten_OCWARN_02_01"); //Oni... Oni jsou mrtví... všichni MRTVÍ. Nedokázal jsem jim pomoci... Já... nebyl jsem tam... Já...
+	AI_Output			(self,hero,"Info_Milten_OCWARN_02_01"); //Oni... Oni jsou mrtvÃ­... vÅ¡ichni MRTVÃ. NedokÃ¡zal jsem jim pomoci... JÃ¡... nebyl jsem tam... JÃ¡...
 
 	if (Npc_KnowsInfo(hero, Info_Diego_OCRETREAT))
 	{
-		AI_Output		(hero,self,"Info_Milten_OCWARN_15_02"); //Uklidni se, Miltene, u jsem se s Diegem potkal na druhé stranì tábora.
-		AI_Output		(self,hero,"Info_Milten_OCWARN_02_03"); //Dobøe, pak u to víš. Co øíkal Diego?
-		AI_Output		(hero,self,"Info_Milten_OCWARN_15_04"); //Jestli najdu Gorna a Lestera, budu je varovat a pošlu je na místo vašeho srazu.
-		AI_Output		(self,hero,"Info_Milten_OCWARN_02_05"); //Hodnì štìstí a dávej pozor!
-		B_LogEntry		(CH4_Firemages,"Milten se skrıvá nedaleko Starého tábora, stejnì jako Diego. Tento mág Ohnì varuje v bezpeèné vzdálenosti od hlavní brány pøíchozí, aby nepadli do rukou stráím.");
+		AI_Output		(hero,self,"Info_Milten_OCWARN_15_02"); //Uklidni se, Miltene, uÅ¾ jsem se s Diegem potkal na druhÃ© stranÄ› tÃ¡bora.
+		AI_Output		(self,hero,"Info_Milten_OCWARN_02_03"); //DobÅ™e, pak uÅ¾ to vÃ­Å¡. Co Å™Ã­kal Diego?
+		AI_Output		(hero,self,"Info_Milten_OCWARN_15_04"); //Jestli najdu Gorna a Lestera, budu je varovat a poÅ¡lu je na mÃ­sto vaÅ¡eho srazu.
+		AI_Output		(self,hero,"Info_Milten_OCWARN_02_05"); //HodnÄ› Å¡tÄ›stÃ­ a dÃ¡vej pozor!
+		B_LogEntry		(CH4_Firemages,"Milten se skrÃ½vÃ¡ nedaleko StarÃ©ho tÃ¡bora, stejnÄ› jako Diego. Tento mÃ¡g OhnÄ› varuje v bezpeÄnÃ© vzdÃ¡lenosti od hlavnÃ­ brÃ¡ny pÅ™Ã­chozÃ­, aby nepadli do rukou strÃ¡Å¾Ã­m.");
 		AI_StopProcessInfos(self);
 	}
 	else
 	{
 		AI_Output		(hero,self,"Info_Milten_OCWARN_15_06"); //Uklidni se, Miltene, co se stalo?
-		AI_Output		(self,hero,"Info_Milten_OCWARN_02_07"); //Zabili mágy Ohnì. VŠECHNY kromì mì, byl jsem taky v blízkosti smrti.
-		AI_Output		(hero,self,"Info_Milten_OCWARN_15_08"); //Radìji mi ten pøíbìh øekni celı od zaèátku, jedno po druhém.
-		AI_Output		(self,hero,"Info_Milten_OCWARN_02_09"); //Dobøe. Uklidni se, Miltene, klid.
-		AI_Output		(self,hero,"Info_Milten_OCWARN_02_10"); //Všechno zaèalo zavalením Starého dolu...
-		AI_Output		(hero,self,"Info_Milten_OCWARN_15_11"); //Starı dùl byl ZAVALEN???
+		AI_Output		(self,hero,"Info_Milten_OCWARN_02_07"); //Zabili mÃ¡gy OhnÄ›. VÅ ECHNY kromÄ› mÄ›, byl jsem taky v blÃ­zkosti smrti.
+		AI_Output		(hero,self,"Info_Milten_OCWARN_15_08"); //RadÄ›ji mi ten pÅ™Ã­bÄ›h Å™ekni celÃ½ od zaÄÃ¡tku, jedno po druhÃ©m.
+		AI_Output		(self,hero,"Info_Milten_OCWARN_02_09"); //DobÅ™e. Uklidni se, Miltene, klid.
+		AI_Output		(self,hero,"Info_Milten_OCWARN_02_10"); //VÅ¡echno zaÄalo zavalenÃ­m StarÃ©ho dolu...
+		AI_Output		(hero,self,"Info_Milten_OCWARN_15_11"); //StarÃ½ dÅ¯l byl ZAVALEN???
 		AI_Output		(self,hero,"Info_Milten_OCWARN_02_12"); //Ano. Stalo se to velmi rychle. Nikdo z dolu neunikl.
-		AI_Output		(self,hero,"Info_Milten_OCWARN_02_13"); //Stráe zablokovaly vchod do dolu.
+		AI_Output		(self,hero,"Info_Milten_OCWARN_02_13"); //StrÃ¡Å¾e zablokovaly vchod do dolu.
 	};
 };
 
@@ -1140,7 +1140,7 @@ instance Info_Milten_OCMINE (C_INFO)
 	information	= Info_Milten_OCMINE_Info;
 	important	= 0;
 	permanent	= 0;
-	description = "Jak se mohl dùl zavalit?";
+	description = "Jak se mohl dÅ¯l zavalit?";
 };
 
 FUNC int Info_Milten_OCMINE_Condition()
@@ -1153,10 +1153,10 @@ FUNC int Info_Milten_OCMINE_Condition()
 
 func void Info_Milten_OCMINE_Info()
 {
-	AI_Output			(hero,self,"Info_Milten_OCMINE_15_01"); //Jak se mohl dùl zavalit?
-	AI_Output			(self,hero,"Info_Milten_OCMINE_02_02"); //Nemám zdání. Nìkterı z kopáèù, kteøí èekali vpøedu u vchodu, øíkali nìco o silném zemìtøesení a velkém oblaku dımu, kterı vycházel z tunelu.
+	AI_Output			(hero,self,"Info_Milten_OCMINE_15_01"); //Jak se mohl dÅ¯l zavalit?
+	AI_Output			(self,hero,"Info_Milten_OCMINE_02_02"); //NemÃ¡m zdÃ¡nÃ­. NÄ›kterÃ½ z kopÃ¡ÄÅ¯, kteÅ™Ã­ Äekali vpÅ™edu u vchodu, Å™Ã­kali nÄ›co o silnÃ©m zemÄ›tÅ™esenÃ­ a velkÃ©m oblaku dÃ½mu, kterÃ½ vychÃ¡zel z tunelu.
 	AI_Output			(hero,self,"Info_Milten_OCMINE_15_03"); //Byl jsi tam?
-	AI_Output			(self,hero,"Info_Milten_OCMINE_02_04"); //Ano. Proto vím o tom závalu.
+	AI_Output			(self,hero,"Info_Milten_OCMINE_02_04"); //Ano. Proto vÃ­m o tom zÃ¡valu.
 };
 
 //***************************************************************************
@@ -1169,7 +1169,7 @@ instance Info_Milten_OCKDW (C_INFO)
 	information	= Info_Milten_OCKDW_Info;
 	important	= 0;
 	permanent	= 0;
-	description = "Proè by Rudobaroni chtìli zabít mágy Ohnì?";
+	description = "ProÄ by Rudobaroni chtÄ›li zabÃ­t mÃ¡gy OhnÄ›?";
 };
 
 FUNC int Info_Milten_OCKDW_Condition()
@@ -1182,10 +1182,10 @@ FUNC int Info_Milten_OCKDW_Condition()
 
 func void Info_Milten_OCKDW_Info()
 {
-	AI_Output			(hero,self,"Info_Milten_OCKDW_15_01"); //Cos to øíkal o mázích Ohnì?
-	AI_Output			(self,hero,"Info_Milten_OCKDW_02_02"); //Jenom vím, e byli všichni zabiti Rudobarony krátce po zavalení dolu.
-	AI_Output			(self,hero,"Info_Milten_OCKDW_02_03"); //Kdy jsem se vrátil po našem dobrodruství u kamenného kruhu, stráe u brány mì znenadání napadly.
-	AI_Output			(self,hero,"Info_Milten_OCKDW_02_04"); //Vykøikovaly na mì slova 'zrádce' a 'kolaborant'. Jen taktak, e se mi podaøilo uprchnout.
+	AI_Output			(hero,self,"Info_Milten_OCKDW_15_01"); //Cos to Å™Ã­kal o mÃ¡zÃ­ch OhnÄ›?
+	AI_Output			(self,hero,"Info_Milten_OCKDW_02_02"); //Jenom vÃ­m, Å¾e byli vÅ¡ichni zabiti Rudobarony krÃ¡tce po zavalenÃ­ dolu.
+	AI_Output			(self,hero,"Info_Milten_OCKDW_02_03"); //KdyÅ¾ jsem se vrÃ¡til po naÅ¡em dobrodruÅ¾stvÃ­ u kamennÃ©ho kruhu, strÃ¡Å¾e u brÃ¡ny mÄ› znenadÃ¡nÃ­ napadly.
+	AI_Output			(self,hero,"Info_Milten_OCKDW_02_04"); //VykÅ™ikovaly na mÄ› slova 'zrÃ¡dce' a 'kolaborant'. Jen taktak, Å¾e se mi podaÅ™ilo uprchnout.
 };
 
 //***************************************************************************
@@ -1198,7 +1198,7 @@ instance Info_Milten_OCWHY (C_INFO)
 	information	= Info_Milten_OCWHY_Info;
 	important	= 0;
 	permanent	= 0;
-	description = "Proè by Rudobaroni chtìli zabít mágy? To nedává smysl...";
+	description = "ProÄ by Rudobaroni chtÄ›li zabÃ­t mÃ¡gy? To nedÃ¡vÃ¡ smysl...";
 };
 
 FUNC int Info_Milten_OCWHY_Condition()
@@ -1211,9 +1211,9 @@ FUNC int Info_Milten_OCWHY_Condition()
 
 func void Info_Milten_OCWHY_Info()
 {
-	AI_Output			(hero,self,"Info_Milten_OCWHY_15_01"); //Proè by Rudobaroni chtìli zabít mágy? To nedává smysl...
-	AI_Output			(self,hero,"Info_Milten_OCWHY_02_02"); //To je pravda. Stráe mi nedaly monost se ani zeptat. Okamitì tasily meèe.
-	AI_Output			(self,hero,"Info_Milten_OCWHY_02_03"); //Snad ví Diego víc. Byl zrovna v táboøe, kdy se to všechno zaèalo hroutit.
+	AI_Output			(hero,self,"Info_Milten_OCWHY_15_01"); //ProÄ by Rudobaroni chtÄ›li zabÃ­t mÃ¡gy? To nedÃ¡vÃ¡ smysl...
+	AI_Output			(self,hero,"Info_Milten_OCWHY_02_02"); //To je pravda. StrÃ¡Å¾e mi nedaly moÅ¾nost se ani zeptat. OkamÅ¾itÄ› tasily meÄe.
+	AI_Output			(self,hero,"Info_Milten_OCWHY_02_03"); //Snad vÃ­ Diego vÃ­c. Byl zrovna v tÃ¡boÅ™e, kdyÅ¾ se to vÅ¡echno zaÄalo hroutit.
 };
 
 //***************************************************************************
@@ -1226,7 +1226,7 @@ instance Info_Milten_OCYOU (C_INFO)
 	information	= Info_Milten_OCYOU_Info;
 	important	= 0;
 	permanent	= 0;
-	description = "Mìl by ses ukrıt. Daleko odtud.";
+	description = "MÄ›l by ses ukrÃ½t. Daleko odtud.";
 };
 
 FUNC int Info_Milten_OCYOU_Condition()
@@ -1239,16 +1239,16 @@ FUNC int Info_Milten_OCYOU_Condition()
 
 func void Info_Milten_OCYOU_Info()
 {
-	AI_Output			(hero,self,"Info_Milten_OCYOU_15_01"); //Mìl by ses ukrıt. Daleko odtud.
-	AI_Output			(self,hero,"Info_Milten_OCYOU_02_02"); //Ne. Diego a já jsme se dohodli, e budeme hlídat obì brány a varovat naše nic netušící pøátele z jinıch táborù.
+	AI_Output			(hero,self,"Info_Milten_OCYOU_15_01"); //MÄ›l by ses ukrÃ½t. Daleko odtud.
+	AI_Output			(self,hero,"Info_Milten_OCYOU_02_02"); //Ne. Diego a jÃ¡ jsme se dohodli, Å¾e budeme hlÃ­dat obÄ› brÃ¡ny a varovat naÅ¡e nic netuÅ¡Ã­cÃ­ pÅ™Ã¡tele z jinÃ½ch tÃ¡borÅ¯.
 
 	if (!Npc_KnowsInfo(hero, Info_Diego_OCSTORY))
 	{	
-		AI_Output		(self,hero,"Info_Milten_OCYOU_02_03"); //Øekni to, prosím, Diegovi!
+		AI_Output		(self,hero,"Info_Milten_OCYOU_02_03"); //Å˜ekni to, prosÃ­m, Diegovi!
 	}
 	else
 	{
-		B_LogEntry		(CH4_Firemages,"Poté, co mi Diego øekl o neuvìøitelnıch událostech, potkal jsem pøed Starım táborem Miltena. Doufám, e je nechytí.");
+		B_LogEntry		(CH4_Firemages,"PotÃ©, co mi Diego Å™ekl o neuvÄ›Å™itelnÃ½ch udÃ¡lostech, potkal jsem pÅ™ed StarÃ½m tÃ¡borem Miltena. DoufÃ¡m, Å¾e je nechytÃ­.");
 	};
 };
 
@@ -1278,11 +1278,11 @@ FUNC int Info_Milten_OCDIEGO_Condition()
 func void Info_Milten_OCDIEGO_Info()
 {
 	AI_Output			(hero,self,"Info_Milten_OCDIEGO_15_01"); //Kde najdu Diega?
-	AI_Output			(self,hero,"Info_Milten_OCDIEGO_02_02"); //Ukrıvá se na druhé stranì Starého tábora, blízko zadní brány.
-	AI_Output			(self,hero,"Info_Milten_OCDIEGO_02_03"); //Øekni mu to, prosím!
+	AI_Output			(self,hero,"Info_Milten_OCDIEGO_02_02"); //UkrÃ½vÃ¡ se na druhÃ© stranÄ› StarÃ©ho tÃ¡bora, blÃ­zko zadnÃ­ brÃ¡ny.
+	AI_Output			(self,hero,"Info_Milten_OCDIEGO_02_03"); //Å˜ekni mu to, prosÃ­m!
 
-	B_LogEntry			(CH4_Firemages,"Milten mì zastavil pøed Starım táborem a øekl mi o zavalení Starého dolu a vyvradìní mágù Ohnì.");
-	B_LogEntry			(CH4_Firemages,"Diego se zdruje na druhé stranì Starého tábora, poblí zadní brány. Mìl bych si s ním promluvit, bude vìdìt více o tom, co se pøihodilo.");
+	B_LogEntry			(CH4_Firemages,"Milten mÄ› zastavil pÅ™ed StarÃ½m tÃ¡borem a Å™ekl mi o zavalenÃ­ StarÃ©ho dolu a vyvraÅ¾dÄ›nÃ­ mÃ¡gÅ¯ OhnÄ›.");
+	B_LogEntry			(CH4_Firemages,"Diego se zdrÅ¾uje na druhÃ© stranÄ› StarÃ©ho tÃ¡bora, poblÃ­Å¾ zadnÃ­ brÃ¡ny. MÄ›l bych si s nÃ­m promluvit, bude vÄ›dÄ›t vÃ­ce o tom, co se pÅ™ihodilo.");
 };
 
 
@@ -1326,9 +1326,9 @@ func void Info_Milten_LOADSWORD_Info()
 {
 	AI_GotoNpc			(self, hero);
 
-	AI_Output			(self, hero,"Info_Milten_LOADSWORD_02_01"); //Nazdar, pøíteli, u jsem tì nevidìl vìènost.
-	AI_Output			(hero, self,"Info_Milten_LOADSWORD_15_02"); //Nazdar, Miltene. Hodnì se toho stalo, co jsme se vidìli naposledy.
-	AI_Output			(hero, self,"Info_Milten_LOADSWORD_15_03"); //Chtìl bych ti všechno vyprávìt, ale nemám teï èas. Hroznì spìchám.
+	AI_Output			(self, hero,"Info_Milten_LOADSWORD_02_01"); //Nazdar, pÅ™Ã­teli, uÅ¾ jsem tÄ› nevidÄ›l vÄ›Änost.
+	AI_Output			(hero, self,"Info_Milten_LOADSWORD_15_02"); //Nazdar, Miltene. HodnÄ› se toho stalo, co jsme se vidÄ›li naposledy.
+	AI_Output			(hero, self,"Info_Milten_LOADSWORD_15_03"); //ChtÄ›l bych ti vÅ¡echno vyprÃ¡vÄ›t, ale nemÃ¡m teÄ Äas. HroznÄ› spÄ›chÃ¡m.
 };
 
 //---------------------------------------------------------------------
@@ -1341,7 +1341,7 @@ instance Info_Milten_LOADSWORD1 (C_INFO)
 	information		= Info_Milten_LOADSWORD1_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Miltene, potøebuju tvoji pomoc!"; 
+	description		= "Miltene, potÅ™ebuju tvoji pomoc!"; 
 };
 
 FUNC int Info_Milten_LOADSWORD1_Condition()
@@ -1354,10 +1354,10 @@ FUNC int Info_Milten_LOADSWORD1_Condition()
 
 func void Info_Milten_LOADSWORD1_Info()
 {
-	AI_Output			(hero, self,"Info_Milten_LOADSWORD1_15_01"); //Miltene, potøebuju tvoji pomoc!
-	AI_Output			(self, hero,"Info_Milten_LOADSWORD1_02_02"); //Co se dìje? Jak ti mùu pomoci?
-	AI_Output			(hero, self,"Info_Milten_LOADSWORD1_15_03"); //Pojïme nìkam, kde budeme moci mluvit.
-	AI_Output			(self, hero,"Info_Milten_LOADSWORD1_02_04"); //Dobøe. Pojï za mnou.
+	AI_Output			(hero, self,"Info_Milten_LOADSWORD1_15_01"); //Miltene, potÅ™ebuju tvoji pomoc!
+	AI_Output			(self, hero,"Info_Milten_LOADSWORD1_02_02"); //Co se dÄ›je? Jak ti mÅ¯Å¾u pomoci?
+	AI_Output			(hero, self,"Info_Milten_LOADSWORD1_15_03"); //PojÄme nÄ›kam, kde budeme moci mluvit.
+	AI_Output			(self, hero,"Info_Milten_LOADSWORD1_02_04"); //DobÅ™e. PojÄ za mnou.
 
 	Npc_ExchangeRoutine	(self,	"LSAway");
 	AI_StopProcessInfos	(self);
@@ -1388,18 +1388,18 @@ func void Info_Milten_LSAWAY_Info()
 {
 	AI_GotoNpc			(self, hero);
 
-	AI_Output			(self, hero,"Info_Milten_LSAWAY_02_01"); //No tak mi øekni, co se dìje?
-	AI_Output			(hero, self,"Info_Milten_LSAWAY_15_02"); //Potøebuju magické síly rudné haldy, ale mám pocit, e by nebylo rozumné poádat ostatní mágy Vody.
-	AI_Output			(self, hero,"Info_Milten_LSAWAY_02_03"); //Dìláš si legraci!
-	AI_Output			(hero, self,"Info_Milten_LSAWAY_15_04"); //Teï není na legraci èas. Myslím to smrtelnì vánì.
-	AI_Output			(hero, self,"Info_Milten_LSAWAY_15_05"); //Vidìl jsem Xardase, toho nekromanta!
-	AI_Output			(hero, self,"Info_Milten_LSAWAY_15_06"); //Pracoval jsem pod jeho velením!
-	AI_Output			(self, hero,"Info_Milten_LSAWAY_02_07"); //XARDAS??? Zaèínáš mì dìsit!
-	AI_Output			(self, hero,"Info_Milten_LSAWAY_02_08"); //Od té doby, co odešel ze Starého tábora, s ním nikdo nemluvil.
-	AI_Output			(hero, self,"Info_Milten_LSAWAY_15_09"); //Já ano!
-	AI_Output			(self, hero,"Info_Milten_LSAWAY_02_10"); //Na co potøebuješ ty síly ze rudné haldy?
-	AI_Output			(hero, self,"Info_Milten_LSAWAY_15_11"); //Chci je transformovat do tohoto meèe.
-	AI_Output			(self, hero,"Info_Milten_LSAWAY_02_12"); //Joj, to je ale zbraò!
+	AI_Output			(self, hero,"Info_Milten_LSAWAY_02_01"); //No tak mi Å™ekni, co se dÄ›je?
+	AI_Output			(hero, self,"Info_Milten_LSAWAY_15_02"); //PotÅ™ebuju magickÃ© sÃ­ly rudnÃ© haldy, ale mÃ¡m pocit, Å¾e by nebylo rozumnÃ© poÅ¾Ã¡dat ostatnÃ­ mÃ¡gy Vody.
+	AI_Output			(self, hero,"Info_Milten_LSAWAY_02_03"); //DÄ›lÃ¡Å¡ si legraci!
+	AI_Output			(hero, self,"Info_Milten_LSAWAY_15_04"); //TeÄ nenÃ­ na legraci Äas. MyslÃ­m to smrtelnÄ› vÃ¡Å¾nÄ›.
+	AI_Output			(hero, self,"Info_Milten_LSAWAY_15_05"); //VidÄ›l jsem Xardase, toho nekromanta!
+	AI_Output			(hero, self,"Info_Milten_LSAWAY_15_06"); //Pracoval jsem pod jeho velenÃ­m!
+	AI_Output			(self, hero,"Info_Milten_LSAWAY_02_07"); //XARDAS??? ZaÄÃ­nÃ¡Å¡ mÄ› dÄ›sit!
+	AI_Output			(self, hero,"Info_Milten_LSAWAY_02_08"); //Od tÃ© doby, co odeÅ¡el ze StarÃ©ho tÃ¡bora, s nÃ­m nikdo nemluvil.
+	AI_Output			(hero, self,"Info_Milten_LSAWAY_15_09"); //JÃ¡ ano!
+	AI_Output			(self, hero,"Info_Milten_LSAWAY_02_10"); //Na co potÅ™ebujeÅ¡ ty sÃ­ly ze rudnÃ© haldy?
+	AI_Output			(hero, self,"Info_Milten_LSAWAY_15_11"); //Chci je transformovat do tohoto meÄe.
+	AI_Output			(self, hero,"Info_Milten_LSAWAY_02_12"); //Joj, to je ale zbraÅˆ!
 	AI_Output			(hero, self,"Info_Milten_LSAWAY_15_13"); //Jmenuje se URIZIEL!
 };
 
@@ -1414,7 +1414,7 @@ instance Info_Milten_LOADSWORD4 (C_INFO)
 	information		= Info_Milten_LOADSWORD4_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Xardas mi dal kouzelné zaøíkávadlo!"; 
+	description		= "Xardas mi dal kouzelnÃ© zaÅ™Ã­kÃ¡vadlo!"; 
 };
 
 FUNC int Info_Milten_LOADSWORD4_Condition()
@@ -1427,11 +1427,11 @@ FUNC int Info_Milten_LOADSWORD4_Condition()
 
 func void Info_Milten_LOADSWORD4_Info()
 {
-	AI_Output			(hero, self,"Info_Milten_LOADSWORD4_15_01"); //Xardas mi dal kouzelné zaøíkávadlo, které provede tu transformaci.
-	AI_Output			(hero, self,"Info_Milten_LOADSWORD4_15_02"); //Budeš ho muset pøednést, zatímco já se budu meèem dotıkat té rudné haldy!
+	AI_Output			(hero, self,"Info_Milten_LOADSWORD4_15_01"); //Xardas mi dal kouzelnÃ© zaÅ™Ã­kÃ¡vadlo, kterÃ© provede tu transformaci.
+	AI_Output			(hero, self,"Info_Milten_LOADSWORD4_15_02"); //BudeÅ¡ ho muset pÅ™ednÃ©st, zatÃ­mco jÃ¡ se budu meÄem dotÃ½kat tÃ© rudnÃ© haldy!
 	B_UseFakeScroll		();
-	AI_Output			(self, hero,"Info_Milten_LOADSWORD4_02_03"); //Hmmm... Hmmm... To vypadá, jako bych musel jenom odøíkat to zaøíkávadlo...
-	AI_Output			(self, hero,"Info_Milten_LOADSWORD4_02_04"); //Dostaneme se ale do sváru se Saturasem a ostatními mágy!
+	AI_Output			(self, hero,"Info_Milten_LOADSWORD4_02_03"); //Hmmm... Hmmm... To vypadÃ¡, jako bych musel jenom odÅ™Ã­kat to zaÅ™Ã­kÃ¡vadlo...
+	AI_Output			(self, hero,"Info_Milten_LOADSWORD4_02_04"); //Dostaneme se ale do svÃ¡ru se Saturasem a ostatnÃ­mi mÃ¡gy!
 };
 
 
@@ -1450,7 +1450,7 @@ instance Info_Milten_LSRISK (C_INFO)
 	information		= Info_Milten_LSRISK_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Musíme to riskovat!"; 
+	description		= "MusÃ­me to riskovat!"; 
 };
 
 FUNC int Info_Milten_LSRISK_Condition()
@@ -1463,17 +1463,17 @@ FUNC int Info_Milten_LSRISK_Condition()
 
 func void Info_Milten_LSRISK_Info()
 {
-	AI_Output			(hero, self,"Info_Milten_LSRISK_15_01"); //Musíme to riskovat!
-	AI_Output			(hero, self,"Info_Milten_LSRISK_15_02"); //Je to VELMI, VELMI dùleité!
-	AI_Output			(hero, self,"Info_Milten_LSRISK_15_03"); //Dùleité pro VŠECHNY obyvatele kolonie.
-	AI_Output			(self, hero,"Info_Milten_LSRISK_02_04"); //Nerozumím.
-	AI_Output			(hero, self,"Info_Milten_LSRISK_15_05"); //Dostaneme se odtud ven! Musíš mi vìøit!
-	AI_Output			(self, hero,"Info_Milten_LSRISK_02_06"); //Dobrá! Musíš to pro nás udìlat, naprosto ti vìøím.
-	AI_Output			(self, hero,"Info_Milten_LSRISK_02_07"); //Kromì toho to vypadá, e Xardas ti také vìøí.
-	AI_Output			(self, hero,"Info_Milten_LSRISK_02_08"); //Pøijï za mnou dolu k haldì a... Nikomu ani muk!
-	AI_Output			(hero, self,"Info_Milten_LSRISK_15_09"); //Dobøe, sejdeme se teda u rudné haldy! Navidìnou!
+	AI_Output			(hero, self,"Info_Milten_LSRISK_15_01"); //MusÃ­me to riskovat!
+	AI_Output			(hero, self,"Info_Milten_LSRISK_15_02"); //Je to VELMI, VELMI dÅ¯leÅ¾itÃ©!
+	AI_Output			(hero, self,"Info_Milten_LSRISK_15_03"); //DÅ¯leÅ¾itÃ© pro VÅ ECHNY obyvatele kolonie.
+	AI_Output			(self, hero,"Info_Milten_LSRISK_02_04"); //NerozumÃ­m.
+	AI_Output			(hero, self,"Info_Milten_LSRISK_15_05"); //Dostaneme se odtud ven! MusÃ­Å¡ mi vÄ›Å™it!
+	AI_Output			(self, hero,"Info_Milten_LSRISK_02_06"); //DobrÃ¡! MusÃ­Å¡ to pro nÃ¡s udÄ›lat, naprosto ti vÄ›Å™Ã­m.
+	AI_Output			(self, hero,"Info_Milten_LSRISK_02_07"); //KromÄ› toho to vypadÃ¡, Å¾e Xardas ti takÃ© vÄ›Å™Ã­.
+	AI_Output			(self, hero,"Info_Milten_LSRISK_02_08"); //PÅ™ijÄ za mnou dolu k haldÄ› a... Nikomu ani muk!
+	AI_Output			(hero, self,"Info_Milten_LSRISK_15_09"); //DobÅ™e, sejdeme se teda u rudnÃ© haldy! NavidÄ›nou!
 	
-	B_LogEntry			(CH5_Uriziel,"Mìl bych pøesvìdèit svého pøítele Miltena, aby mi pomohl pøenést do meèe energii. Setkáme se u úpatí rudné haldy mágù Vody.");
+	B_LogEntry			(CH5_Uriziel,"MÄ›l bych pÅ™esvÄ›dÄit svÃ©ho pÅ™Ã­tele Miltena, aby mi pomohl pÅ™enÃ©st do meÄe energii. SetkÃ¡me se u ÃºpatÃ­ rudnÃ© haldy mÃ¡gÅ¯ Vody.");
 	Npc_ExchangeRoutine	(self,	"LSOreHeap");
 	B_ExchangeRoutine	(Sld_726_Soeldner,	"loadsword");
 
@@ -1506,7 +1506,7 @@ func void Info_Milten_LSOREHEAP_Info()
 {
 	//AI_GotoNpc			(self, hero);
 
-	AI_Output			(self, hero,"Info_Milten_LSOREHEAP_02_01"); //Máš meè a zaøíkávadlo?
+	AI_Output			(self, hero,"Info_Milten_LSOREHEAP_02_01"); //MÃ¡Å¡ meÄ a zaÅ™Ã­kÃ¡vadlo?
 };
 	
 //***************************************************************************
@@ -1519,7 +1519,7 @@ instance Info_Milten_LSNOW (C_INFO)
 	information		= Info_Milten_LSNOW_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Tady, vezmi si to zaøíkávadlo!"; 
+	description		= "Tady, vezmi si to zaÅ™Ã­kÃ¡vadlo!"; 
 };
 
 FUNC int Info_Milten_LSNOW_Condition()
@@ -1535,10 +1535,10 @@ FUNC int Info_Milten_LSNOW_Condition()
 
 func void Info_Milten_LSNOW_Info()
 {
-	AI_Output			(hero, self,"Info_Milten_LSNOW_15_01"); //Tady, vezmi si to zaøíkávadlo!
-	AI_Output			(hero, self,"Info_Milten_LSNOW_15_02"); //Jsi pøipraven?
-	AI_Output			(self, hero,"Info_Milten_LSNOW_02_03"); //Tak, jak se jen dá na tento bláznivı podnik!
-	AI_Output			(hero, self,"Info_Milten_LSNOW_15_04"); //Nue, do toho!
+	AI_Output			(hero, self,"Info_Milten_LSNOW_15_01"); //Tady, vezmi si to zaÅ™Ã­kÃ¡vadlo!
+	AI_Output			(hero, self,"Info_Milten_LSNOW_15_02"); //Jsi pÅ™ipraven?
+	AI_Output			(self, hero,"Info_Milten_LSNOW_02_03"); //Tak, jak se jen dÃ¡ na tento blÃ¡znivÃ½ podnik!
+	AI_Output			(hero, self,"Info_Milten_LSNOW_15_04"); //NuÅ¾e, do toho!
 
 	B_GiveInvItems 	(hero, self, Scroll4Milten, 1);	
 	B_GiveInvItems 	(hero, self, Mythrilklinge01, 1);	
@@ -1600,18 +1600,18 @@ func void Info_Milten_LSDONE_Info()
 	//AI_GotoNpc				(self, hero);
 
 	AI_Output				(self, hero,"Info_Milten_LSDONE_02_01"); //Hotovo!
-	AI_Output				(hero, self,"Info_Milten_LSDONE_15_02"); //Neuvìøitelné! Ten obyèejnı šedivı drahokam se teï tøpytí modravou barvou!
+	AI_Output				(hero, self,"Info_Milten_LSDONE_15_02"); //NeuvÄ›Å™itelnÃ©! Ten obyÄejnÃ½ Å¡edivÃ½ drahokam se teÄ tÅ™pytÃ­ modravou barvou!
 
 	AI_EquipBestMeleeWeapon	(hero);
 	AI_ReadyMeleeWeapon		(hero);
 	AI_PlayAni				(hero, "T_1HSINSPECT");
 	AI_RemoveWeapon			(hero);
 
-	AI_Output				(self, hero,"Info_Milten_LSDONE_02_03"); //To je dobré znamení! Magické síly rudné haldy jsou teï zøejmì v tom starém meèi!
-	AI_Output				(self, hero,"Info_Milten_LSDONE_02_04"); //Naše malé pøedstavení však zøejmì pøilákalo pár divákù!
-	AI_Output				(self, hero,"Info_Milten_LSDONE_02_05"); //Mìl by ses ihned teleportovat na nìjaké jiné místo!
+	AI_Output				(self, hero,"Info_Milten_LSDONE_02_03"); //To je dobrÃ© znamenÃ­! MagickÃ© sÃ­ly rudnÃ© haldy jsou teÄ zÅ™ejmÄ› v tom starÃ©m meÄi!
+	AI_Output				(self, hero,"Info_Milten_LSDONE_02_04"); //NaÅ¡e malÃ© pÅ™edstavenÃ­ vÅ¡ak zÅ™ejmÄ› pÅ™ilÃ¡kalo pÃ¡r divÃ¡kÅ¯!
+	AI_Output				(self, hero,"Info_Milten_LSDONE_02_05"); //MÄ›l by ses ihned teleportovat na nÄ›jakÃ© jinÃ© mÃ­sto!
 	AI_Output				(hero, self,"Info_Milten_LSDONE_15_06"); //A co ty?
-	AI_Output				(self, hero,"Info_Milten_LSDONE_02_07"); //O mì si strach nedìlej, nìco vymyslím. A teï u bì!
+	AI_Output				(self, hero,"Info_Milten_LSDONE_02_07"); //O mÄ› si strach nedÄ›lej, nÄ›co vymyslÃ­m. A teÄ uÅ¾ bÄ›Å¾!
 
 	B_Story_UrizielLoaded	();
 	

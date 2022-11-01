@@ -48,7 +48,7 @@ FUNC int  ORG_862_Jacko_GoAway_Condition()
 
 FUNC void  ORG_862_Jacko_GoAway_Info()
 {
-	AI_Output			(self, other,"ORG_862_Jacko_GoAway_Info_06_00"); //Co tady k Ëertu pohled·v·ö?
+	AI_Output			(self, other,"ORG_862_Jacko_GoAway_Info_06_00"); //Co tady k ƒçertu pohled√°v√°≈°?
 	AI_StopProcessInfos	(self);
 	Npc_SetTarget		(self,other);
 	AI_StartState		(self,ZS_ATTACK,1,"");
@@ -78,28 +78,28 @@ FUNC int  ORG_862_Jacko_GUARD_Condition()
 
 FUNC void  ORG_862_Jacko_GUARD_Info()
 {
-	AI_Output			(self, other,"ORG_862_Jacko_GUARD_Info_06_00"); //Zabloudili jsme, ûe ano?
-	AI_Output			(other, self,"ORG_862_Jacko_GUARD_Info_15_01"); //Cor Kalom vÌ o vaöem malÈm podniku.
-	AI_Output			(self, other,"ORG_862_Jacko_GUARD_Info_06_02"); //Coûe? ProË tady jsi?
+	AI_Output			(self, other,"ORG_862_Jacko_GUARD_Info_06_00"); //Zabloudili jsme, ≈æe ano?
+	AI_Output			(other, self,"ORG_862_Jacko_GUARD_Info_15_01"); //Cor Kalom v√≠ o va≈°em mal√©m podniku.
+	AI_Output			(self, other,"ORG_862_Jacko_GUARD_Info_06_02"); //Co≈æe? Proƒç tady jsi?
 	
-	B_LogEntry			(CH1_DrugMonopol,"Naöel jsem tajnou v˝robnu drogy z baûin. Jacko a dva dalöÌ banditÈ tu produkujÌ lodyhy drogy.");
+	B_LogEntry			(CH1_DrugMonopol,"Na≈°el jsem tajnou v√Ωrobnu drogy z ba≈æin. Jacko a dva dal≈°√≠ bandit√© tu produkuj√≠ lodyhy drogy.");
 
 	Info_Clearchoices	(ORG_862_Jacko_GUARD);
-	Info_Addchoice		(ORG_862_Jacko_GUARD,"Jsem tu, abych v·s varoval. Cor Kalom vyslal pÏt templ·¯˘, aby s v·mi skoncovali.",ORG_862_Jacko_GUARD_Templer);
-	Info_Addchoice		(ORG_862_Jacko_GUARD,"ZajÌmalo by mÏ, jakou cenu m· pro tebe tahle informace.",ORG_862_Jacko_GUARD_InfoWert);
-	Info_Addchoice		(ORG_862_Jacko_GUARD,"A vÏc se ch˝lÌ ke konci!",ORG_862_Jacko_GUARD_Angriff);
+	Info_Addchoice		(ORG_862_Jacko_GUARD,"Jsem tu, abych v√°s varoval. Cor Kalom vyslal pƒõt templ√°≈ô≈Ø, aby s v√°mi skoncovali.",ORG_862_Jacko_GUARD_Templer);
+	Info_Addchoice		(ORG_862_Jacko_GUARD,"Zaj√≠malo by mƒõ, jakou cenu m√° pro tebe tahle informace.",ORG_862_Jacko_GUARD_InfoWert);
+	Info_Addchoice		(ORG_862_Jacko_GUARD,"A vƒõc se ch√Ωl√≠ ke konci!",ORG_862_Jacko_GUARD_Angriff);
 };  
 
 func void ORG_862_Jacko_GUARD_Templer()
 {
-	AI_Output			(other, self,"ORG_862_Jacko_GUARD_Templer_Info_15_00"); //Jsem tu, abych tÏ varoval. Co Kalom vyslal pÏt templ·¯˘, aby tÏ zastavili.
-	AI_Output			(self, other,"ORG_862_Jacko_GUARD_Templer_Info_06_01"); //Coûe? To nemyslÌö v·ûnÏ!
-	AI_Output			(other, self,"ORG_862_Jacko_GUARD_Templer_Info_15_02"); //MÏli by dorazit bÏhem chvilky!
-	AI_Output			(self, other,"ORG_862_Jacko_GUARD_Templer_Info_06_03"); //Sakra! MusÌme zmizet!
+	AI_Output			(other, self,"ORG_862_Jacko_GUARD_Templer_Info_15_00"); //Jsem tu, abych tƒõ varoval. Co Kalom vyslal pƒõt templ√°≈ô≈Ø, aby tƒõ zastavili.
+	AI_Output			(self, other,"ORG_862_Jacko_GUARD_Templer_Info_06_01"); //Co≈æe? To nemysl√≠≈° v√°≈ænƒõ!
+	AI_Output			(other, self,"ORG_862_Jacko_GUARD_Templer_Info_15_02"); //Mƒõli by dorazit bƒõhem chvilky!
+	AI_Output			(self, other,"ORG_862_Jacko_GUARD_Templer_Info_06_03"); //Sakra! Mus√≠me zmizet!
 
 	Info_Clearchoices	(ORG_862_Jacko_GUARD);
 
-	B_LogEntry			(CH1_DrugMonopol,"Mal· lest s templ·¯i, kte¯Ì tu v˘bec nebyli, mi pomohla zbavit se tÏch zbabÏlc˘. ProblÈm by mÏl b˝t na chvilku vy¯eöen.");
+	B_LogEntry			(CH1_DrugMonopol,"Mal√° lest s templ√°≈ôi, kte≈ô√≠ tu v≈Øbec nebyli, mi pomohla zbavit se tƒõch zbabƒõlc≈Ø. Probl√©m by mƒõl b√Ωt na chvilku vy≈ôe≈°en.");
 	B_GiveXP			(XP_JackoRetired);
 
 	Npc_ExchangeRoutine (self,				"ARBEITSLOS");
@@ -113,9 +113,9 @@ func void ORG_862_Jacko_GUARD_Templer()
 
 func void ORG_862_Jacko_GUARD_InfoWert()
 {
-	AI_Output			(other, self,"ORG_862_Jacko_GUARD_InfoWert_Info_15_00"); //Chci vÏdÏt, jestli je tv· informace pravdiv·.
-	AI_Output			(self, other,"ORG_862_Jacko_GUARD_InfoWert_Info_06_01"); //Och, tak tohle teda chceö... Dobr·. Ruka ruku myje. Tady je ruda, kterou u sebe m·m.
-	AI_Output			(self, other,"ORG_862_Jacko_GUARD_InfoWert_Info_06_02"); //MusÌme jÌt! A ty bys mÏl zmizet taky.
+	AI_Output			(other, self,"ORG_862_Jacko_GUARD_InfoWert_Info_15_00"); //Chci vƒõdƒõt, jestli je tv√° informace pravdiv√°.
+	AI_Output			(self, other,"ORG_862_Jacko_GUARD_InfoWert_Info_06_01"); //Och, tak tohle teda chce≈°... Dobr√°. Ruka ruku myje. Tady je ruda, kterou u sebe m√°m.
+	AI_Output			(self, other,"ORG_862_Jacko_GUARD_InfoWert_Info_06_02"); //Mus√≠me j√≠t! A ty bys mƒõl zmizet taky.
 
 	B_GiveInvItems		(self, other,itminugget,95);
 
@@ -124,7 +124,7 @@ func void ORG_862_Jacko_GUARD_InfoWert()
 	B_ExchangeRoutine	(ORG_860_Renyu,		"ARBEITSLOS");
 
 	Stooges_Fled = TRUE;
-	B_LogEntry			(CH1_DrugMonopol,"Kr·tkou domluvou jsem vy¯eöil problÈm. Ta vÏc byla pro Jacka tak oûehav·, ûe se radÏji ztratil.");
+	B_LogEntry			(CH1_DrugMonopol,"Kr√°tkou domluvou jsem vy≈ôe≈°il probl√©m. Ta vƒõc byla pro Jacka tak o≈æehav√°, ≈æe se radƒõji ztratil.");
 	B_GiveXP			(XP_JackoRetired);
 
 	Info_Clearchoices	(ORG_862_Jacko_GUARD);
@@ -133,8 +133,8 @@ func void ORG_862_Jacko_GUARD_InfoWert()
 
 func void ORG_862_Jacko_GUARD_Angriff()
 {
-	AI_Output (other, self,"ORG_862_Jacko_GUARD_Angriff_Info_15_00"); //A vÏc se ch˝lÌ ke konci!
-	AI_Output (self, other,"ORG_862_Jacko_GUARD_Angriff_Info_06_01"); //Chlapi! PojÔte rychle sem.
+	AI_Output (other, self,"ORG_862_Jacko_GUARD_Angriff_Info_15_00"); //A vƒõc se ch√Ωl√≠ ke konci!
+	AI_Output (self, other,"ORG_862_Jacko_GUARD_Angriff_Info_06_01"); //Chlapi! Pojƒète rychle sem.
 
 	Info_Clearchoices	(ORG_862_Jacko_GUARD);
 	AI_StopProcessInfos	(self);
@@ -168,7 +168,7 @@ instance  ORG_862_Jacko_Banditencamp (C_INFO)
 	condition		= ORG_862_Jacko_Banditencamp_Condition;
 	information		= ORG_862_Jacko_Banditencamp_Info;
 	permanent		= 1;
-	description		= "MusÌte se odtud odplÌûit.";
+	description		= "Mus√≠te se odtud odpl√≠≈æit.";
 };
 
 FUNC int  ORG_862_Jacko_Banditencamp_Condition()
@@ -181,8 +181,8 @@ FUNC int  ORG_862_Jacko_Banditencamp_Condition()
 
 FUNC void  ORG_862_Jacko_Banditencamp_Info()
 {
-	AI_Output (other, self,"ORG_862_Jacko_Banditencamp_15_00"); //MusÌte se odtud odplÌûit.
-	AI_Output (self, other,"ORG_862_Jacko_Banditencamp_06_01"); //To bylo o fous. Sekt·¯ötÌ templ·¯i by n·s byli zabili.
+	AI_Output (other, self,"ORG_862_Jacko_Banditencamp_15_00"); //Mus√≠te se odtud odpl√≠≈æit.
+	AI_Output (self, other,"ORG_862_Jacko_Banditencamp_06_01"); //To bylo o fous. Sekt√°≈ô≈°t√≠ templ√°≈ôi by n√°s byli zabili.
 			
 	AI_StopProcessInfos	(self);
 }; 
@@ -273,9 +273,9 @@ FUNC int  ORG_862_Jacko_ANGEBOT_Condition()
 FUNC void  ORG_862_Jacko_ANGEBOT_Info()
 {
 	AI_Output (other, self,"ORG_862_Jacko_ANGEBOT_Info_15_01"); //Ich will euch ein Angebot machen!
-	AI_Output (self, other,"ORG_862_Jacko_ANGEBOT_Info_06_02"); //Was f¸r ein Angebot? 
+	AI_Output (self, other,"ORG_862_Jacko_ANGEBOT_Info_06_02"); //Was f√ºr ein Angebot? 
 	AI_Output (other, self,"ORG_862_Jacko_ANGEBOT_Info_15_03"); //Das werde ich mit demjenigen bereden,der hier das Sagen hat.  
-	AI_Output (self, other,"ORG_862_Jacko_ANGEBOT_Info_06_04"); //Na schˆn,dann rede mit Renyu. Aber keine faulen Tricks, sonst zerschlage ich jeden deiner Knochen einzeln!
+	AI_Output (self, other,"ORG_862_Jacko_ANGEBOT_Info_06_04"); //Na sch√∂n,dann rede mit Renyu. Aber keine faulen Tricks, sonst zerschlage ich jeden deiner Knochen einzeln!
 	AI_StopProcessInfos	(self);
 };  
 

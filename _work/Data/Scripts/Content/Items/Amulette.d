@@ -41,7 +41,7 @@ INSTANCE  Schutzamulett_Feuer(C_Item)
 	on_equip		=	Equip_Schutzamulett_Feuer;
 	on_unequip		=	UnEquip_Schutzamulett_Feuer;
 
-	description		= "Amulet plamen˘";
+	description		= "Amulet plamen≈Ø";
 	//TEXT[0]			= "";
 	TEXT[2]			= NAME_Prot_Fire;
 	COUNT[2]		= 10;
@@ -119,7 +119,7 @@ INSTANCE  Schutzamulett_Feuer(C_Item)
 	on_equip		=	Equip_Schutzamulett_Geschosse;
 	on_unequip		=	UnEquip_Schutzamulett_Geschosse;
 
-	description		= "Amulet dubovÈ k˘ry";
+	description		= "Amulet dubov√© k≈Øry";
 	//TEXT[0]			= "";
 	TEXT[2]			= NAME_Prot_Point;
 	COUNT[2]		= 15;
@@ -157,7 +157,7 @@ INSTANCE  Schutzamulett_Feuer(C_Item)
 	on_equip		=	Equip_Schutzamulett_Magie;
 	on_unequip		=	UnEquip_Schutzamulett_Magie;
 
-	description		= "Amulet duchovnÌ sÌly";
+	description		= "Amulet duchovn√≠ s√≠ly";
 	//TEXT[0]			= "";
 	TEXT[2]			= NAME_Prot_Magic;
 	COUNT[2]		= 8;
@@ -194,7 +194,7 @@ INSTANCE  Schutzamulett_Feuer(C_Item)
 	on_equip		=	Equip_Schutzamulett_Magie_Feuer;
 	on_unequip		=	UnEquip_Schutzamulett_Magie_Feuer;
 
-	description		= "Amulet oËisty";
+	description		= "Amulet oƒçisty";
 	//TEXT[0]			= "";
 	TEXT[2]			= NAME_Prot_Fire;
 	COUNT[2]		= 10;
@@ -235,7 +235,7 @@ INSTANCE  Schutzamulett_Feuer(C_Item)
 	on_equip		=	Equip_Schutzamulett_Waffen_Geschosse;
 	on_unequip		=	UnEquip_Schutzamulett_Waffen_Geschosse;
 
-	description		= "Amulet kamennÈ k˘ûe";
+	description		= "Amulet kamenn√© k≈Ø≈æe";
 	//TEXT[0]			= "";
 	TEXT[2]			= NAME_Prot_Edge;
 	COUNT[2]		= 15;
@@ -276,7 +276,7 @@ INSTANCE  Schutzamulett_Feuer(C_Item)
 	on_equip		=	Equip_Schutzamulett_Total;
 	on_unequip		=	UnEquip_Schutzamulett_Total;
 
-	description		= "Amulet k˘ûe z magickÈ rudy";
+	description		= "Amulet k≈Ø≈æe z magick√© rudy";
 	//TEXT[0]			= "";
 	TEXT[1]			= NAME_Prot_Fire;
 	COUNT[1]		= 10;
@@ -326,7 +326,7 @@ INSTANCE  Schutzamulett_Feuer(C_Item)
 	on_equip		=	Equip_Gewandtheitsamulett;
 	on_unequip		=	UnEquip_Gewandtheitsamulett;
 
-	description		= "Amulet Ëilosti";
+	description		= "Amulet ƒçilosti";
 	//TEXT[0]			= "";
 	//TEXT[1]			= "";
 	////COUNT[1]		= ;
@@ -450,7 +450,7 @@ INSTANCE  Schutzamulett_Feuer(C_Item)
 	on_equip		=	Equip_Staerkeamulett2;
 	on_unequip		=	UnEquip_Staerkeamulett2;
 
-	description		= "Amulet sÌly";
+	description		= "Amulet s√≠ly";
 	//TEXT[0]			= "";
 	//TEXT[1]			= "";
 	////COUNT[1]		= ;
@@ -492,7 +492,7 @@ INSTANCE  Schutzamulett_Feuer(C_Item)
 	on_equip		=	Equip_Lebensamulett;
 	on_unequip		=	UnEquip_Lebensamulett;
 
-	description		= "Amulet ûivota";
+	description		= "Amulet ≈æivota";
 	//TEXT[0]			= "";
 	//TEXT[1]			= "";
 	////COUNT[1]		= ;
@@ -617,7 +617,7 @@ INSTANCE  Schutzamulett_Feuer(C_Item)
 /******************************************************************************************/
 	INSTANCE  Amulett_der_Erleuchtung(C_Item)
 {
-	name 			=	"Amulet osvÌcenÌ";
+	name 			=	"Amulet osv√≠cen√≠";
 
 	mainflag 		=	ITEM_KAT_MAGIC;
 	flags 			=	ITEM_AMULET;
@@ -631,7 +631,7 @@ INSTANCE  Schutzamulett_Feuer(C_Item)
 	on_equip		=	Equip_Amulett_der_Erleuchtung;
 	on_unequip		=	UnEquip_Amulett_der_Erleuchtung;
 
-	description		= "Amulet osvÌcenÌ";
+	description		= "Amulet osv√≠cen√≠";
 	//TEXT[0]			= "";
 	//TEXT[1]			= "";
 	////COUNT[1]		= ;
@@ -674,8 +674,8 @@ INSTANCE  Schutzamulett_Feuer(C_Item)
 
 /******************************************************************************************/
 /*
-// FIXME: was soll das machen? D‰mon beschwˆren???
-	INSTANCE  Beschwˆrungsamulett(C_Item)
+// FIXME: was soll das machen? D√§mon beschw√∂ren???
+	INSTANCE  Beschw√∂rungsamulett(C_Item)
 {
 	name 			=	"Amulett der Erleuchtung";
 
@@ -688,13 +688,13 @@ INSTANCE  Schutzamulett_Feuer(C_Item)
 
 	visual_skin 		=	0;
 	material 		=	MAT_METAL;
-	on_equip		=	Equip_Beschwˆrungsamulett;
-	on_unequip		=	UnEquip_Beschwˆrungsamulett;
-	description		= "D‰monenbeschwˆrung";
+	on_equip		=	Equip_Beschw√∂rungsamulett;
+	on_unequip		=	UnEquip_Beschw√∂rungsamulett;
+	description		= "D√§monenbeschw√∂rung";
 	TEXT[0]			= "Schwarz wie die Seele";
 	TEXT[1]			= "Schwarz wie die Nacht";
 	////COUNT[1]		= ;
-	TEXT[2]			= "Schwarz wie das Bˆse";
+	TEXT[2]			= "Schwarz wie das B√∂se";
 	////COUNT[2]		= ;
 	TEXT[3] 		= "Schwarz verheisst Macht";
 	////COUNT[3]		= ;
@@ -704,14 +704,14 @@ INSTANCE  Schutzamulett_Feuer(C_Item)
 	COUNT[5]		= value;
 };
 
-	FUNC VOID Equip_Beschwˆrungsamulett()
+	FUNC VOID Equip_Beschw√∂rungsamulett()
 	{
 
 
 	};
 
 
-	FUNC VOID UnEquip_Beschwˆrungsamulett ()
+	FUNC VOID UnEquip_Beschw√∂rungsamulett ()
 	{
 
 

@@ -59,45 +59,45 @@ FUNC VOID Info_FindNPC_OC_Diego()
 		{
 			if (self.voice == 1)
 			{
-				AI_Output(self,other,"Info_FindNPC_OC_Diego_01_01"); //Pøes den bývá obvykle s Thorusem u vchodu do hradu.
+				AI_Output(self,other,"Info_FindNPC_OC_Diego_01_01"); //PÅ™es den bÃ½vÃ¡ obvykle s Thorusem u vchodu do hradu.
 			}
 			else if (self.voice == 2)
 			{
-				AI_Output(self,other,"Info_FindNPC_OC_Diego_02_01"); //Pøes den bývá obvykle s Thorusem u vchodu do hradu.
+				AI_Output(self,other,"Info_FindNPC_OC_Diego_02_01"); //PÅ™es den bÃ½vÃ¡ obvykle s Thorusem u vchodu do hradu.
 			}
 			else if (self.voice == 3)
 			{
-				AI_Output(self,other,"Info_FindNPC_OC_Diego_03_01"); //Pøes den bývá obvykle s Thorusem u vchodu do hradu.
+				AI_Output(self,other,"Info_FindNPC_OC_Diego_03_01"); //PÅ™es den bÃ½vÃ¡ obvykle s Thorusem u vchodu do hradu.
 			}
 			else if (self.voice == 4)
 			{
-				AI_Output(self,other,"Info_FindNPC_OC_Diego_04_01"); //Pøes den bývá obvykle s Thorusem u vchodu do hradu.
+				AI_Output(self,other,"Info_FindNPC_OC_Diego_04_01"); //PÅ™es den bÃ½vÃ¡ obvykle s Thorusem u vchodu do hradu.
 			};
 		}
 		else if (self.guild == GIL_GRD) 
 		{
 			if (self.voice == 6)
 			{
-				AI_Output(self,other,"Info_FindNPC_OC_Diego_06_01"); //Pøes den bývá obvykle s Thorusem u vchodu do hradu.
+				AI_Output(self,other,"Info_FindNPC_OC_Diego_06_01"); //PÅ™es den bÃ½vÃ¡ obvykle s Thorusem u vchodu do hradu.
 			}
 			else if (self.voice == 7)
 			{
-				AI_Output(self,other,"Info_FindNPC_OC_Diego_07_01"); //Pøes den bývá obvykle s Thorusem u vchodu do hradu.
+				AI_Output(self,other,"Info_FindNPC_OC_Diego_07_01"); //PÅ™es den bÃ½vÃ¡ obvykle s Thorusem u vchodu do hradu.
 			}
 			else if (self.voice == 13)
 			{
-				AI_Output(self,other,"Info_FindNPC_OC_Diego_13_01"); //Pøes den bývá obvykle s Thorusem u vchodu do hradu.
+				AI_Output(self,other,"Info_FindNPC_OC_Diego_13_01"); //PÅ™es den bÃ½vÃ¡ obvykle s Thorusem u vchodu do hradu.
 			};
 		}
 		else if (self.guild == GIL_STT) 
 		{
 			if (self.voice == 10)
 			{
-				AI_Output(self,other,"Info_FindNPC_OC_Diego_10_01"); //Pøes den bývá obvykle s Thorusem u vchodu do hradu.
+				AI_Output(self,other,"Info_FindNPC_OC_Diego_10_01"); //PÅ™es den bÃ½vÃ¡ obvykle s Thorusem u vchodu do hradu.
 			}
 			else if (self.voice == 12)
 			{
-				AI_Output(self,other,"Info_FindNPC_OC_Diego_12_01"); //Pøes den bývá obvykle s Thorusem u vchodu do hradu.
+				AI_Output(self,other,"Info_FindNPC_OC_Diego_12_01"); //PÅ™es den bÃ½vÃ¡ obvykle s Thorusem u vchodu do hradu.
 			};
 		};
 	};
@@ -125,45 +125,45 @@ FUNC VOID Info_FindNPC_OC_Thorus()
 		{
 			if (self.voice == 1)
 			{
-				AI_Output(self,other,"Info_FindNPC_OC_Thorus_01_01"); //Obvykle postává u vchodu do hradu.
+				AI_Output(self,other,"Info_FindNPC_OC_Thorus_01_01"); //Obvykle postÃ¡vÃ¡ u vchodu do hradu.
 			}
 			else if (self.voice == 2)
 			{
-				AI_Output(self,other,"Info_FindNPC_OC_Thorus_02_01"); //Obvykle postává u vchodu do hradu.
+				AI_Output(self,other,"Info_FindNPC_OC_Thorus_02_01"); //Obvykle postÃ¡vÃ¡ u vchodu do hradu.
 			}
 			else if (self.voice == 3)
 			{
-				AI_Output(self,other,"Info_FindNPC_OC_Thorus_03_01"); //Obvykle postává u vchodu do hradu.
+				AI_Output(self,other,"Info_FindNPC_OC_Thorus_03_01"); //Obvykle postÃ¡vÃ¡ u vchodu do hradu.
 			}
 			else if (self.voice == 4)
 			{
-				AI_Output(self,other,"Info_FindNPC_OC_Thorus_04_01"); //Obvykle postává u vchodu do hradu.
+				AI_Output(self,other,"Info_FindNPC_OC_Thorus_04_01"); //Obvykle postÃ¡vÃ¡ u vchodu do hradu.
 			};
 		}
 		else if (self.guild == GIL_GRD) 
 		{
 			if (self.voice == 6)
 			{
-				AI_Output(self,other,"Info_FindNPC_OC_Thorus_06_01"); //Obvykle postává u vchodu do hradu.
+				AI_Output(self,other,"Info_FindNPC_OC_Thorus_06_01"); //Obvykle postÃ¡vÃ¡ u vchodu do hradu.
 			}
 			else if (self.voice == 7)
 			{
-				AI_Output(self,other,"Info_FindNPC_OC_Thorus_07_01"); //Obvykle postává u vchodu do hradu.
+				AI_Output(self,other,"Info_FindNPC_OC_Thorus_07_01"); //Obvykle postÃ¡vÃ¡ u vchodu do hradu.
 			}
 			else if (self.voice == 13)
 			{
-				AI_Output(self,other,"Info_FindNPC_OC_Thorus_13_01"); //Obvykle postává u vchodu do hradu.
+				AI_Output(self,other,"Info_FindNPC_OC_Thorus_13_01"); //Obvykle postÃ¡vÃ¡ u vchodu do hradu.
 			};
 		}
 		else if (self.guild == GIL_STT) 
 		{
 			if (self.voice == 10)
 			{
-				AI_Output(self,other,"Info_FindNPC_OC_Thorus_10_01"); //Obvykle postává u vchodu do hradu.
+				AI_Output(self,other,"Info_FindNPC_OC_Thorus_10_01"); //Obvykle postÃ¡vÃ¡ u vchodu do hradu.
 			}
 			else if (self.voice == 12)
 			{
-				AI_Output(self,other,"Info_FindNPC_OC_Thorus_12_01"); //Obvykle postává u vchodu do hradu.
+				AI_Output(self,other,"Info_FindNPC_OC_Thorus_12_01"); //Obvykle postÃ¡vÃ¡ u vchodu do hradu.
 			};
 		};
 	};

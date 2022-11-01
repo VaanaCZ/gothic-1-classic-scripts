@@ -22,14 +22,14 @@ FUNC INT Info_Bloodwyn_EXIT_Schutzgeld_Condition()
 
 FUNC VOID Info_Bloodwyn_EXIT_Schutzgeld_Info()
 {	
-	AI_Output (other,self,"Info_Bloodwyn_EXIT_Schutzgeld_15_00"); //Ještì se uvidíme.
+	AI_Output (other,self,"Info_Bloodwyn_EXIT_Schutzgeld_15_00"); //JeÅ¡tÄ› se uvidÃ­me.
 	if (Bloodwyn_ProtectionPaid == FALSE)
 	{
-		AI_Output (self, other,"Info_Bloodwyn_EXIT_Schutzgeld_08_01"); //Dej na sebe pozor, chlapèe.
+		AI_Output (self, other,"Info_Bloodwyn_EXIT_Schutzgeld_08_01"); //Dej na sebe pozor, chlapÄe.
 	}
 	else
 	{
-		AI_Output (self, other,"Info_Bloodwyn_EXIT_Schutzgeld_08_02"); //Tady v táboøe se nièím neznepokojuj. Dohlédneme na tebe.
+		AI_Output (self, other,"Info_Bloodwyn_EXIT_Schutzgeld_08_02"); //Tady v tÃ¡boÅ™e se niÄÃ­m neznepokojuj. DohlÃ©dneme na tebe.
 	};
 	
 	AI_StopProcessInfos	(self);
@@ -58,23 +58,23 @@ FUNC INT Info_Bloodwyn_Hello_Condition()
 FUNC VOID Info_Bloodwyn_Hello_Info()
 {	
 	AI_Output (self, other,"Info_Bloodwyn_Hello_08_00"); //Hej, ty!
-	AI_Output (other, self,"Info_Bloodwyn_Hello_15_01"); //To mluvíš se mnou?
-	AI_Output (self, other,"Info_Bloodwyn_Hello_08_02"); //Varuju tì! Lidi jako ty se tady dostanou do problémù razdva!
-	AI_Output (self, other,"Info_Bloodwyn_Hello_08_03"); //A vìtšina chlapù, se kterımi se tu setkáš, jsou bastardi!
-	AI_Output (self, other,"Info_Bloodwyn_Hello_08_04"); //Myslí si, e si s tebou mùou dìlat, co je napadne. Ale my jim to nedovolíme.
-	AI_Output (self, other,"Info_Bloodwyn_Hello_08_05"); //Gomez chce, aby byl v táboøe klid, a tak ho my, stráe, zajišujeme. Je to ale práce, která není nijak laciná.
-	AI_Output (self, other,"Info_Bloodwyn_Hello_08_06"); //To je dùvod, proè ti øíkám o pár nugetù. Ber to jako jakısi projev pøátelství. Ty pomùeš nám, my pomùeme tobì. Kdy se dostaneš do maléru, my tì z nìj vytáhneme.
+	AI_Output (other, self,"Info_Bloodwyn_Hello_15_01"); //To mluvÃ­Å¡ se mnou?
+	AI_Output (self, other,"Info_Bloodwyn_Hello_08_02"); //Varuju tÄ›! Lidi jako ty se tady dostanou do problÃ©mÅ¯ razdva!
+	AI_Output (self, other,"Info_Bloodwyn_Hello_08_03"); //A vÄ›tÅ¡ina chlapÅ¯, se kterÃ½mi se tu setkÃ¡Å¡, jsou bastardi!
+	AI_Output (self, other,"Info_Bloodwyn_Hello_08_04"); //MyslÃ­ si, Å¾e si s tebou mÅ¯Å¾ou dÄ›lat, co je napadne. Ale my jim to nedovolÃ­me.
+	AI_Output (self, other,"Info_Bloodwyn_Hello_08_05"); //Gomez chce, aby byl v tÃ¡boÅ™e klid, a tak ho my, strÃ¡Å¾e, zajiÅ¡Å¥ujeme. Je to ale prÃ¡ce, kterÃ¡ nenÃ­ nijak lacinÃ¡.
+	AI_Output (self, other,"Info_Bloodwyn_Hello_08_06"); //To je dÅ¯vod, proÄ ti Å™Ã­kÃ¡m o pÃ¡r nugetÅ¯. Ber to jako jakÃ½si projev pÅ™Ã¡telstvÃ­. Ty pomÅ¯Å¾eÅ¡ nÃ¡m, my pomÅ¯Å¾eme tobÄ›. KdyÅ¾ se dostaneÅ¡ do malÃ©ru, my tÄ› z nÄ›j vytÃ¡hneme.
 
 	Info_ClearChoices	(Info_Bloodwyn_Hello );
-	Info_AddChoice		(Info_Bloodwyn_Hello,"Proè ne? Kolik nugetù máš na mysli?",Info_Bloodwyn_Hello_HowMuch);
-	Info_AddChoice		(Info_Bloodwyn_Hello,"Chceš, abych zaplatil peníze za ochranu? Postarám se o sebe sám!",Info_Bloodwyn_Hello_ForgetIt);
-	Info_AddChoice		(Info_Bloodwyn_Hello,"To má bıt pohrùka?",Info_Bloodwyn_Hello_SollDrohungSein);
+	Info_AddChoice		(Info_Bloodwyn_Hello,"ProÄ ne? Kolik nugetÅ¯ mÃ¡Å¡ na mysli?",Info_Bloodwyn_Hello_HowMuch);
+	Info_AddChoice		(Info_Bloodwyn_Hello,"ChceÅ¡, abych zaplatil penÃ­ze za ochranu? PostarÃ¡m se o sebe sÃ¡m!",Info_Bloodwyn_Hello_ForgetIt);
+	Info_AddChoice		(Info_Bloodwyn_Hello,"To mÃ¡ bÃ½t pohrÅ¯Å¾ka?",Info_Bloodwyn_Hello_SollDrohungSein);
 };
 
 func void Info_Bloodwyn_Hello_ForgetIt()
 {
-	AI_Output (other, self,"Info_Bloodwyn_ForgetIt_15_00"); //Myslíš, e ti mám zaplatit za ochranu? Ne, díky, postarám se o sebe sám!
-	AI_Output (self, other,"Info_Bloodwyn_ForgetIt_08_01"); //Dìlej, jak myslíš, hochu. Brzy budeš litovat, e jsi tuhle pøátelskou nabídku odmítl!
+	AI_Output (other, self,"Info_Bloodwyn_ForgetIt_15_00"); //MyslÃ­Å¡, Å¾e ti mÃ¡m zaplatit za ochranu? Ne, dÃ­ky, postarÃ¡m se o sebe sÃ¡m!
+	AI_Output (self, other,"Info_Bloodwyn_ForgetIt_08_01"); //DÄ›lej, jak myslÃ­Å¡, hochu. Brzy budeÅ¡ litovat, Å¾e jsi tuhle pÅ™Ã¡telskou nabÃ­dku odmÃ­tl!
 	Bloodwyn_ProtectionPaid = FALSE;
 	Herek_ProtectionBully = TRUE;
 	Grim_ProtectionBully = TRUE;
@@ -84,28 +84,28 @@ func void Info_Bloodwyn_Hello_ForgetIt()
 
 func void Info_Bloodwyn_Hello_SollDrohungSein()
 {
-	AI_Output (other, self,"Info_Bloodwyn_SollDrohungSein_15_00"); //To má bıt pohrùka?
-	AI_Output (self, other,"Info_Bloodwyn_SollDrohungSein_08_01"); //Naopak! Pøátelská nabídka!
+	AI_Output (other, self,"Info_Bloodwyn_SollDrohungSein_15_00"); //To mÃ¡ bÃ½t pohrÅ¯Å¾ka?
+	AI_Output (self, other,"Info_Bloodwyn_SollDrohungSein_08_01"); //Naopak! PÅ™Ã¡telskÃ¡ nabÃ­dka!
 };
 
 func void Info_Bloodwyn_Hello_HowMuch()
 {
-	AI_Output (other, self,"Info_Bloodwyn_Hello_HowMuch_15_01"); //Proè ne? Kolik nugetù máš na mysli?
-	AI_Output (self, other,"Info_Bloodwyn_Hello_HowMuch_08_02"); //Ne moc. 10 nugetù, víc nepotøebuju.
+	AI_Output (other, self,"Info_Bloodwyn_Hello_HowMuch_15_01"); //ProÄ ne? Kolik nugetÅ¯ mÃ¡Å¡ na mysli?
+	AI_Output (self, other,"Info_Bloodwyn_Hello_HowMuch_08_02"); //Ne moc. 10 nugetÅ¯, vÃ­c nepotÅ™ebuju.
 	
 	Info_ClearChoices	(Info_Bloodwyn_Hello );
-	Info_AddChoice		(Info_Bloodwyn_Hello,"Nemám 10 nugetù.",Info_Bloodwyn_Hello_NotNow);
+	Info_AddChoice		(Info_Bloodwyn_Hello,"NemÃ¡m 10 nugetÅ¯.",Info_Bloodwyn_Hello_NotNow);
 	if (Npc_HasItems(other,itminugget)>=10)
 	{
-		Info_AddChoice	(Info_Bloodwyn_Hello,"Tady je tvoje ruda. Jeden èi dva pøátelé se vdycky mùou hodit.",Info_Bloodwyn_Hello_OkTakeIt);
+		Info_AddChoice	(Info_Bloodwyn_Hello,"Tady je tvoje ruda. Jeden Äi dva pÅ™Ã¡telÃ© se vÅ¾dycky mÅ¯Å¾ou hodit.",Info_Bloodwyn_Hello_OkTakeIt);
 	};
 };
 // -------------------------------------------------------
 func void Info_Bloodwyn_Hello_OkTakeIt()
 {
-	AI_Output (other, self,"Info_Bloodwyn_Hello_OkTakeIt_15_00"); //Tady jsou. Pøítele nebo dva mùu vdycky potøebovat.
-	AI_Output (self, other,"Info_Bloodwyn_Hello_OkTakeIt_08_01"); //Vypadá to, e jsi rozumnı mladík. Od teïka tì budeme ochraòovat.
-	AI_Output (self, other,"Info_Bloodwyn_Hello_OkTakeIt_08_02"); //Tím jsem ale neøekl, e si tu mùeš dìlat, co se ti zlíbí, jasnı?
+	AI_Output (other, self,"Info_Bloodwyn_Hello_OkTakeIt_15_00"); //Tady jsou. PÅ™Ã­tele nebo dva mÅ¯Å¾u vÅ¾dycky potÅ™ebovat.
+	AI_Output (self, other,"Info_Bloodwyn_Hello_OkTakeIt_08_01"); //VypadÃ¡ to, Å¾e jsi rozumnÃ½ mladÃ­k. Od teÄka tÄ› budeme ochraÅˆovat.
+	AI_Output (self, other,"Info_Bloodwyn_Hello_OkTakeIt_08_02"); //TÃ­m jsem ale neÅ™ekl, Å¾e si tu mÅ¯Å¾eÅ¡ dÄ›lat, co se ti zlÃ­bÃ­, jasnÃ½?
 	
 	B_GiveInvItems 	    (other, self, itminugget, 10);
 	Bloodwyn_ProtectionPaid = TRUE;
@@ -118,27 +118,27 @@ func void Info_Bloodwyn_Hello_OkTakeIt()
 
 func void Info_Bloodwyn_Hello_NotNow()
 {
-	AI_Output (other, self,"Info_Bloodwyn_Hello_NotNow_15_00"); //Nemám 10 nugetù.
-	AI_Output (self, other,"Info_Bloodwyn_Hello_NotNow_08_01"); //Pak dej, co máš - to bude staèit. Zbytek mi mùeš dát, a se uvidíme pøíštì.
+	AI_Output (other, self,"Info_Bloodwyn_Hello_NotNow_15_00"); //NemÃ¡m 10 nugetÅ¯.
+	AI_Output (self, other,"Info_Bloodwyn_Hello_NotNow_08_01"); //Pak dej, co mÃ¡Å¡ - to bude staÄit. Zbytek mi mÅ¯Å¾eÅ¡ dÃ¡t, aÅ¾ se uvidÃ­me pÅ™Ã­Å¡tÄ›.
 	AI_GotoNpc (self,other);
-	AI_Output (self, other,"Info_Bloodwyn_Hello_NotNow_08_02"); //Ještì se uvidíme...
+	AI_Output (self, other,"Info_Bloodwyn_Hello_NotNow_08_02"); //JeÅ¡tÄ› se uvidÃ­me...
 		
 	if (Npc_HasItems(other, itminugget) > 0)
 	{
 		if (Npc_HasItems(other, itminugget) > 9)
 		{
-			AI_Output (self, other,"Info_Bloodwyn_Hello_NotNow_TenOreMore_08_00"); //Podívej se na to. Vypadá snad jako nìkdo, kdo nemùe zaplatit 10 nugetù, co?
-			AI_Output (self, other,"Info_Bloodwyn_Hello_NotNow_TenOreMore_08_01"); //Vezmu si všechno, co máš. To mi pomùe zapomenout, es mi lhal.
+			AI_Output (self, other,"Info_Bloodwyn_Hello_NotNow_TenOreMore_08_00"); //PodÃ­vej se na to. VypadÃ¡ snad jako nÄ›kdo, kdo nemÅ¯Å¾e zaplatit 10 nugetÅ¯, co?
+			AI_Output (self, other,"Info_Bloodwyn_Hello_NotNow_TenOreMore_08_01"); //Vezmu si vÅ¡echno, co mÃ¡Å¡. To mi pomÅ¯Å¾e zapomenout, Å¾es mi lhal.
 		}
 		else
 		{
-			AI_Output (self, other,"Info_Bloodwyn_Hello_NotNow_LessThanTen_08_00"); //Vezmu si také malı dárek. Dobrá vùle se poèítá. Díky za ty nugety, hochu!
-			AI_Output (self, other,"Info_Bloodwyn_Hello_NotNow_LessThanTen_08_01"); //Od teïka budu na tebe dávat pozor po celou dobu, co budeš v táboøe.
+			AI_Output (self, other,"Info_Bloodwyn_Hello_NotNow_LessThanTen_08_00"); //Vezmu si takÃ© malÃ½ dÃ¡rek. DobrÃ¡ vÅ¯le se poÄÃ­tÃ¡. DÃ­ky za ty nugety, hochu!
+			AI_Output (self, other,"Info_Bloodwyn_Hello_NotNow_LessThanTen_08_01"); //Od teÄka budu na tebe dÃ¡vat pozor po celou dobu, co budeÅ¡ v tÃ¡boÅ™e.
 		};
 	}
 	else
 	{
-		AI_Output (self, other,"Info_Bloodwyn_Hello_NotNow_NoOre_08_00"); //Hm, opravdu nic nemáš. Dobrá, tak øeknìme, e pøíštì...
+		AI_Output (self, other,"Info_Bloodwyn_Hello_NotNow_NoOre_08_00"); //Hm, opravdu nic nemÃ¡Å¡. DobrÃ¡, tak Å™eknÄ›me, Å¾e pÅ™Ã­Å¡tÄ›...
 	};
 	
 	B_GiveInvItems		(other, self, itminugget, Npc_HasItems(other, itminugget) );//Alle Nuggets entfernen
@@ -176,26 +176,26 @@ FUNC VOID Info_Bloodwyn_PayDay_Info()
 {	
 	if (Bloodwyn_ProtectionPaid == TRUE)
 	{
-		AI_Output (self, other,"Info_Bloodwyn_PayDay_08_00"); //Á, dobøe, e tì vidím, pøíteli!
-		AI_Output (self, other,"Info_Bloodwyn_PayDay_08_01"); //Co tvùj denní pøíspìvek? Dluíš 10 nugetù, však víš.
+		AI_Output (self, other,"Info_Bloodwyn_PayDay_08_00"); //Ã, dobÅ™e, Å¾e tÄ› vidÃ­m, pÅ™Ã­teli!
+		AI_Output (self, other,"Info_Bloodwyn_PayDay_08_01"); //Co tvÅ¯j dennÃ­ pÅ™Ã­spÄ›vek? DluÅ¾Ã­Å¡ 10 nugetÅ¯, vÅ¡ak vÃ­Å¡.
 		
 		Info_ClearChoices	(Info_Bloodwyn_PayDay );
-		Info_AddChoice		(Info_Bloodwyn_PayDay,"Tady jsou. 10 nugetù není mezi pøáteli mnoho.",Info_Bloodwyn_PayDay_PayAgain);
-		Info_AddChoice		(Info_Bloodwyn_PayDay,"Nezaplatím - u jste ze mì vytáhli dost.",Info_Bloodwyn_PayDay_PayNoMore);
+		Info_AddChoice		(Info_Bloodwyn_PayDay,"Tady jsou. 10 nugetÅ¯ nenÃ­ mezi pÅ™Ã¡teli mnoho.",Info_Bloodwyn_PayDay_PayAgain);
+		Info_AddChoice		(Info_Bloodwyn_PayDay,"NezaplatÃ­m - uÅ¾ jste ze mÄ› vytÃ¡hli dost.",Info_Bloodwyn_PayDay_PayNoMore);
 	}
 	else if (Bloodwyn_ProtectionPaid == FALSE)
 	{
 		AI_Output (self, other,"Info_Bloodwyn_PayDay_Den_08_00"); //Hej, ty!
 		AI_Output (other, self,"Info_Bloodwyn_PayDay_Den_15_01"); //No, co?
-		AI_Output (self, other,"Info_Bloodwyn_PayDay_Den_08_02"); //Máš novou pøíleitost dokázat, e jsi opravdovı pøítel.
-		AI_Output (self, other,"Info_Bloodwyn_PayDay_Den_08_03"); //Jen 10 nugetù a mùeš dovnitø - co ty na to?
+		AI_Output (self, other,"Info_Bloodwyn_PayDay_Den_08_02"); //MÃ¡Å¡ novou pÅ™Ã­leÅ¾itost dokÃ¡zat, Å¾e jsi opravdovÃ½ pÅ™Ã­tel.
+		AI_Output (self, other,"Info_Bloodwyn_PayDay_Den_08_03"); //Jen 10 nugetÅ¯ a mÅ¯Å¾eÅ¡ dovnitÅ™ - co ty na to?
 	};
 	Bloodwyn_PayDay = B_SetDayTolerance();
 };
 
 func void Info_Bloodwyn_PayDay_PayAgain()
 {
-	AI_Output (other, self,"Info_Bloodwyn_PayDay_PayAgain_15_00"); //Tady jsou. 10 nugetù není mezi pøáteli mnoho.
+	AI_Output (other, self,"Info_Bloodwyn_PayDay_PayAgain_15_00"); //Tady jsou. 10 nugetÅ¯ nenÃ­ mezi pÅ™Ã¡teli mnoho.
 	AI_Output (self, other,"Info_Bloodwyn_PayDay_PayAgain_08_01"); //Moje slova!
 	
 	Bloodwyn_ProtectionPaid = TRUE;
@@ -207,10 +207,10 @@ func void Info_Bloodwyn_PayDay_PayAgain()
 
 func void Info_Bloodwyn_PayDay_PayNoMore()
 {
-	AI_Output (other, self,"Info_Bloodwyn_PayDay_PayNoMore_15_00"); //Nezaplatím - u jste ze mì vytáhli dost.
-	AI_Output (self, other,"Info_Bloodwyn_PayDay_PayNoMore_08_01"); //Zklamal jsem se v tobì! Take u nejsme pøátelé. Uvidíš, e jsi udìlal chybu a okradl sám sebe!
-	AI_Output (other, self,"Info_Bloodwyn_PayDay_PayNoMore_15_02"); //Nemìj obavy, postarám se o sebe docela dobøe sám.
-	AI_Output (self, other,"Info_Bloodwyn_PayDay_PayNoMore_08_03"); //Dobrá, uvidíme...
+	AI_Output (other, self,"Info_Bloodwyn_PayDay_PayNoMore_15_00"); //NezaplatÃ­m - uÅ¾ jste ze mÄ› vytÃ¡hli dost.
+	AI_Output (self, other,"Info_Bloodwyn_PayDay_PayNoMore_08_01"); //Zklamal jsem se v tobÄ›! TakÅ¾e uÅ¾ nejsme pÅ™Ã¡telÃ©. UvidÃ­Å¡, Å¾e jsi udÄ›lal chybu a okradl sÃ¡m sebe!
+	AI_Output (other, self,"Info_Bloodwyn_PayDay_PayNoMore_15_02"); //NemÄ›j obavy, postarÃ¡m se o sebe docela dobÅ™e sÃ¡m.
+	AI_Output (self, other,"Info_Bloodwyn_PayDay_PayNoMore_08_03"); //DobrÃ¡, uvidÃ­me...
 	
 	Bloodwyn_ProtectionPaid = FALSE;
 	Herek_ProtectionBully = TRUE;
@@ -230,7 +230,7 @@ INSTANCE Info_Bloodwyn_Doch (C_INFO)
 	condition	= Info_Bloodwyn_Doch_Condition;
 	information	= Info_Bloodwyn_Doch_Info;
 	permanent	= 1;
-	description = "Rozmyslel jsem se. Pøece jen ti tìch 10 nugetù dám.";
+	description = "Rozmyslel jsem se. PÅ™ece jen ti tÄ›ch 10 nugetÅ¯ dÃ¡m.";
 };                       
 
 FUNC INT Info_Bloodwyn_Doch_Condition()
@@ -243,11 +243,11 @@ FUNC INT Info_Bloodwyn_Doch_Condition()
 
 FUNC VOID Info_Bloodwyn_Doch_Info()
 {	
-	AI_Output (other, self,"Info_Bloodwyn_Doch_15_00"); //Rozmyslel jsem se. Pøece jen ti tìch 10 nugetù dám.
+	AI_Output (other, self,"Info_Bloodwyn_Doch_15_00"); //Rozmyslel jsem se. PÅ™ece jen ti tÄ›ch 10 nugetÅ¯ dÃ¡m.
 	if (Npc_HasItems(other, itminugget)>=10)
 	{
-		AI_Output (self, other,"Info_Bloodwyn_Doch_08_01"); //Koneènì! Vidíš, e se UMÍŠ dobøe rozhodnout!
-		AI_Output (self, other,"Info_Bloodwyn_Doch_08_02"); //A od teïka mi budeš platit denní pøíspìvek, jasnı?
+		AI_Output (self, other,"Info_Bloodwyn_Doch_08_01"); //KoneÄnÄ›! VidÃ­Å¡, Å¾e se UMÃÅ  dobÅ™e rozhodnout!
+		AI_Output (self, other,"Info_Bloodwyn_Doch_08_02"); //A od teÄka mi budeÅ¡ platit dennÃ­ pÅ™Ã­spÄ›vek, jasnÃ½?
 		Bloodwyn_ProtectionPaid = TRUE;
 		Herek_ProtectionBully = FALSE;
 		Grim_ProtectionBully = FALSE;
@@ -256,7 +256,7 @@ FUNC VOID Info_Bloodwyn_Doch_Info()
 	}
 	else
 	{
-		AI_Output (self, other,"Info_Bloodwyn_Doch_NoOre_08_00"); //Tak pøijï, a budeš mít.
+		AI_Output (self, other,"Info_Bloodwyn_Doch_NoOre_08_00"); //Tak pÅ™ijÄ, aÅ¾ budeÅ¡ mÃ­t.
 		AI_StopProcessInfos	(self);
 	};
 };
@@ -271,7 +271,7 @@ INSTANCE Info_Bloodwyn_PayForJesse (C_INFO)
 	condition	= Info_Bloodwyn_PayForJesse_Condition;
 	information	= Info_Bloodwyn_PayForJesse_Info;
 	permanent	= 1;
-	description = "Jesse mì poslal, abych za nìj zaplatil 10 nugetù.";
+	description = "Jesse mÄ› poslal, abych za nÄ›j zaplatil 10 nugetÅ¯.";
 };                       
 
 FUNC INT Info_Bloodwyn_PayForJesse_Condition()
@@ -284,22 +284,22 @@ FUNC INT Info_Bloodwyn_PayForJesse_Condition()
 
 FUNC VOID Info_Bloodwyn_PayForJesse_Info()
 {	
-	AI_Output (other, self,"Info_Bloodwyn_PayForJesse_15_00"); //Jesse mì poslal, abych za nìj zaplatil 10 nugetù.
+	AI_Output (other, self,"Info_Bloodwyn_PayForJesse_15_00"); //Jesse mÄ› poslal, abych za nÄ›j zaplatil 10 nugetÅ¯.
 	if  (Bloodwyn_ProtectionPaid == FALSE)
 	{
-		AI_Output (self, other,"Info_Bloodwyn_PayForJesse_08_01"); //Mìl bys radìji zaplatit SVİCH 10 nugetù.
+		AI_Output (self, other,"Info_Bloodwyn_PayForJesse_08_01"); //MÄ›l bys radÄ›ji zaplatit SVÃCH 10 nugetÅ¯.
 	};
-	AI_Output (self, other,"Info_Bloodwyn_PayForJesse_08_02"); //O Jesse se nestarej. Je to ztroskotanec a stejnì tu u dlouho nezùstane.
+	AI_Output (self, other,"Info_Bloodwyn_PayForJesse_08_02"); //O Jesse se nestarej. Je to ztroskotanec a stejnÄ› tu uÅ¾ dlouho nezÅ¯stane.
 	if (Npc_HasItems(other,itminugget) >= 10)
 	{
-		AI_Output (other, self,"Info_Bloodwyn_PayForJesse_15_03"); //Ne - platím za nìj. Tak vem si tìch 10 nugetù a nech ho na pokoji!
-		AI_Output (self, other,"Info_Bloodwyn_PayForJesse_08_04"); //Dobrá, èlovìèe, kdy teda myslíš.
+		AI_Output (other, self,"Info_Bloodwyn_PayForJesse_15_03"); //Ne - platÃ­m za nÄ›j. Tak vem si tÄ›ch 10 nugetÅ¯ a nech ho na pokoji!
+		AI_Output (self, other,"Info_Bloodwyn_PayForJesse_08_04"); //DobrÃ¡, ÄlovÄ›Äe, kdyÅ¾ teda myslÃ­Å¡.
 		Jesse_PayForMe = LOG_SUCCESS;
 	}
 	else
 	{
-		AI_Output (other, self,"Info_Bloodwyn_PayForJesse_15_05"); //Och! Vypadá to, e u sebe tolik nemám.
-		AI_Output (self, other,"Info_Bloodwyn_PayForJesse_08_06"); //To je znamení, pøíteli! Ještì se rozmysli! Platit za toho pobudu je vyhazování penìz!
+		AI_Output (other, self,"Info_Bloodwyn_PayForJesse_15_05"); //Och! VypadÃ¡ to, Å¾e u sebe tolik nemÃ¡m.
+		AI_Output (self, other,"Info_Bloodwyn_PayForJesse_08_06"); //To je znamenÃ­, pÅ™Ã­teli! JeÅ¡tÄ› se rozmysli! Platit za toho pobudu je vyhazovÃ¡nÃ­ penÄ›z!
 	};
 };
 /*------------------------------------------------------------------------
@@ -324,7 +324,7 @@ FUNC int  GRD_233_Bloodwyn_WELCOME_Condition()
 };
 func void  GRD_233_Bloodwyn_WELCOME_Info()
 {
-	AI_Output (self, other,"GRD_233_Bloodwyn_WELCOME_Info_08_01"); //Jsi jedním z nás. Dobrá práce. Stráe potøebují mue jako jsi ty!
+	AI_Output (self, other,"GRD_233_Bloodwyn_WELCOME_Info_08_01"); //Jsi jednÃ­m z nÃ¡s. DobrÃ¡ prÃ¡ce. StrÃ¡Å¾e potÅ™ebujÃ­ muÅ¾e jako jsi ty!
 };
 
 
@@ -369,63 +369,63 @@ FUNC VOID Info_Bloodwyn_DIE_Info()
 	{
 		if (oldHeroGuild == GIL_GRD)
 		{
-			AI_Output	(self,hero,"Info_Bloodwyn_DIE_08_01"); //Mezi námi je zrádce! PCHÁ! A my jsme tì nazvali strácem!
+			AI_Output	(self,hero,"Info_Bloodwyn_DIE_08_01"); //Mezi nÃ¡mi je zrÃ¡dce! PCHÃ! A my jsme tÄ› nazvali strÃ¡Å¾cem!
 		}
 		else if (oldHeroGuild == GIL_KDF)
 		{
-			AI_Output	(self,hero,"Info_Bloodwyn_DIE_08_02"); //Vypadá to, jako bysme pøehlídli jednoho z tìch vzbouøenıch mágù Ohnì!
+			AI_Output	(self,hero,"Info_Bloodwyn_DIE_08_02"); //VypadÃ¡ to, jako bysme pÅ™ehlÃ­dli jednoho z tÄ›ch vzbouÅ™enÃ½ch mÃ¡gÅ¯ OhnÄ›!
 		}
 		else
 		{
-			AI_Output	(self,hero,"Info_Bloodwyn_DIE_08_03"); //To Stín nás zradil!
+			AI_Output	(self,hero,"Info_Bloodwyn_DIE_08_03"); //To StÃ­n nÃ¡s zradil!
 		};			
 
-		AI_Output		(hero,self,"Info_Bloodwyn_DIE_15_04"); //Poèkej. O èem jsi to mluvil, Bloodwyne?
-		AI_Output		(self,hero,"Info_Bloodwyn_DIE_08_05"); //Tak ty jsi ve spolèení s Novım táborem, jo?
-		AI_Output		(hero,self,"Info_Bloodwyn_DIE_15_06"); //Ne, poèkej, poøád jsem...
-		AI_Output		(self,hero,"Info_Bloodwyn_DIE_08_07"); //Asi sis myslel, e ti to bude procházet vìènì.
-		AI_Output		(hero,self,"Info_Bloodwyn_DIE_15_08"); //Pøestaò s tím nesmyslem...
-		AI_Output		(self,hero,"Info_Bloodwyn_DIE_08_09"); //Zrádce jako ty musí zemøít.
-		AI_Output		(self,hero,"Info_Bloodwyn_DIE_08_10"); //SMRT ZRÁDCI!!!
+		AI_Output		(hero,self,"Info_Bloodwyn_DIE_15_04"); //PoÄkej. O Äem jsi to mluvil, Bloodwyne?
+		AI_Output		(self,hero,"Info_Bloodwyn_DIE_08_05"); //Tak ty jsi ve spolÄenÃ­ s NovÃ½m tÃ¡borem, jo?
+		AI_Output		(hero,self,"Info_Bloodwyn_DIE_15_06"); //Ne, poÄkej, poÅ™Ã¡d jsem...
+		AI_Output		(self,hero,"Info_Bloodwyn_DIE_08_07"); //Asi sis myslel, Å¾e ti to bude prochÃ¡zet vÄ›ÄnÄ›.
+		AI_Output		(hero,self,"Info_Bloodwyn_DIE_15_08"); //PÅ™estaÅˆ s tÃ­m nesmyslem...
+		AI_Output		(self,hero,"Info_Bloodwyn_DIE_08_09"); //ZrÃ¡dce jako ty musÃ­ zemÅ™Ã­t.
+		AI_Output		(self,hero,"Info_Bloodwyn_DIE_08_10"); //SMRT ZRÃDCI!!!
 
 		if	Npc_KnowsInfo(hero, Info_Fletcher_DIE)
 		{
-			B_LogEntry			(CH4_BannedFromOC,"Fletcher, kterı teï støeí hlavní bránu, se zachoval stejnì jako Bloodwyn u zadní brány. Nevím sice jak, ale musí to nìjak souviset s mım hledáním ohniska pro Novı tábor.");
+			B_LogEntry			(CH4_BannedFromOC,"Fletcher, kterÃ½ teÄ stÅ™eÅ¾Ã­ hlavnÃ­ brÃ¡nu, se zachoval stejnÄ› jako Bloodwyn u zadnÃ­ brÃ¡ny. NevÃ­m sice jak, ale musÃ­ to nÄ›jak souviset s mÃ½m hledÃ¡nÃ­m ohniska pro NovÃ½ tÃ¡bor.");
 		}
 		else if	(Npc_GetTrueGuild(hero) == GIL_NONE)
 		{
 			Log_CreateTopic		(CH4_BannedFromOC,	LOG_MISSION);
 			Log_SetTopicStatus	(CH4_BannedFromOC,	LOG_RUNNING);
-			B_LogEntry			(CH4_BannedFromOC,"Bloodwyn, kterı se skupinou vojákù støeí zadní bránu Starého tábora, mì nazval zrádcem a odpadlíkem. Ani mì nevyslechl a zaútoèil na mì!");
-			B_LogEntry			(CH4_BannedFromOC,"Vypadá to, e jsem vyhoštìn ze Starého tábora.");
+			B_LogEntry			(CH4_BannedFromOC,"Bloodwyn, kterÃ½ se skupinou vojÃ¡kÅ¯ stÅ™eÅ¾Ã­ zadnÃ­ brÃ¡nu StarÃ©ho tÃ¡bora, mÄ› nazval zrÃ¡dcem a odpadlÃ­kem. Ani mÄ› nevyslechl a zaÃºtoÄil na mÄ›!");
+			B_LogEntry			(CH4_BannedFromOC,"VypadÃ¡ to, Å¾e jsem vyhoÅ¡tÄ›n ze StarÃ©ho tÃ¡bora.");
 		};
 	}
 	else
 	{
 		if (C_NpcBelongsToNewCamp(hero))
 		{
-			AI_Output	(self,hero,"Info_Bloodwyn_DIE_08_11"); //Tak ty ses odváil opustit Novı tábor? To byl hodnì stupidní nápad!
+			AI_Output	(self,hero,"Info_Bloodwyn_DIE_08_11"); //Tak ty ses odvÃ¡Å¾il opustit NovÃ½ tÃ¡bor? To byl hodnÄ› stupidnÃ­ nÃ¡pad!
 		}
 		else
 		{
-			AI_Output	(self,hero,"Info_Bloodwyn_DIE_08_12"); //Och, tak ty ses odváil opustit tábor u bain? To byl hodnì stupidní nápad!
+			AI_Output	(self,hero,"Info_Bloodwyn_DIE_08_12"); //Och, tak ty ses odvÃ¡Å¾il opustit tÃ¡bor u baÅ¾in? To byl hodnÄ› stupidnÃ­ nÃ¡pad!
 		};
 
-		AI_Output		(hero,self,"Info_Bloodwyn_DIE_15_13"); //Co? Co máš na mysli?
-		AI_Output		(self,hero,"Info_Bloodwyn_DIE_08_14"); //Neslyšel jsi o napadení vašeho dolu?
+		AI_Output		(hero,self,"Info_Bloodwyn_DIE_15_13"); //Co? Co mÃ¡Å¡ na mysli?
+		AI_Output		(self,hero,"Info_Bloodwyn_DIE_08_14"); //NeslyÅ¡el jsi o napadenÃ­ vaÅ¡eho dolu?
 		AI_Output		(hero,self,"Info_Bloodwyn_DIE_15_15"); //Co...
-		AI_Output		(self,hero,"Info_Bloodwyn_DIE_08_16"); //Je nám líto, ale nemùeme tì nechat pouštìt si takhle hubu na špacír!
-		AI_Output		(hero,self,"Info_Bloodwyn_DIE_15_17"); //Hej, nechci ádné problémy...
-		AI_Output		(self,hero,"Info_Bloodwyn_DIE_08_18"); //Na to's mìl myslet døív!
-		AI_Output		(hero,self,"Info_Bloodwyn_DIE_15_19"); //Poslyš, u toho mám dost...
-		AI_Output		(self,hero,"Info_Bloodwyn_DIE_08_20"); //I já! ZABIJTE HO!
+		AI_Output		(self,hero,"Info_Bloodwyn_DIE_08_16"); //Je nÃ¡m lÃ­to, ale nemÅ¯Å¾eme tÄ› nechat pouÅ¡tÄ›t si takhle hubu na Å¡pacÃ­r!
+		AI_Output		(hero,self,"Info_Bloodwyn_DIE_15_17"); //Hej, nechci Å¾Ã¡dnÃ© problÃ©my...
+		AI_Output		(self,hero,"Info_Bloodwyn_DIE_08_18"); //Na to's mÄ›l myslet dÅ™Ã­v!
+		AI_Output		(hero,self,"Info_Bloodwyn_DIE_15_19"); //PoslyÅ¡, uÅ¾ toho mÃ¡m dost...
+		AI_Output		(self,hero,"Info_Bloodwyn_DIE_08_20"); //I jÃ¡! ZABIJTE HO!
 	};
 	
-	Npc_ExchangeRoutine	(self,				"FMTaken2");	// Verstärkung vor das Hinterem Tor (Anführer)
-	B_ExchangeRoutine	(GRD_232_Gardist,	"FMTaken2");	// Verstärkung vor das Hinterem Tor
-	B_ExchangeRoutine	(GRD_229_Gardist,	"FMTaken2");	// Verstärkung vor das Hinterem Tor (Fernkämpfer)
-	B_ExchangeRoutine	(GRD_216_Torwache,	"FMTaken2");	// reguläre Wache am Hinteren Tor
-	B_ExchangeRoutine	(GRD_217_Torwache,	"FMTaken2");	// reguläre Wache am Hinteren Tor
+	Npc_ExchangeRoutine	(self,				"FMTaken2");	// VerstÃ¤rkung vor das Hinterem Tor (AnfÃ¼hrer)
+	B_ExchangeRoutine	(GRD_232_Gardist,	"FMTaken2");	// VerstÃ¤rkung vor das Hinterem Tor
+	B_ExchangeRoutine	(GRD_229_Gardist,	"FMTaken2");	// VerstÃ¤rkung vor das Hinterem Tor (FernkÃ¤mpfer)
+	B_ExchangeRoutine	(GRD_216_Torwache,	"FMTaken2");	// regulÃ¤re Wache am Hinteren Tor
+	B_ExchangeRoutine	(GRD_217_Torwache,	"FMTaken2");	// regulÃ¤re Wache am Hinteren Tor
 
 	B_SetPermAttitude	(GRD_233_Bloodwyn,	ATT_HOSTILE);
 	B_SetPermAttitude	(GRD_232_Gardist,	ATT_HOSTILE);	
@@ -436,7 +436,7 @@ FUNC VOID Info_Bloodwyn_DIE_Info()
 	
 	if	!Npc_KnowsInfo(hero, Info_Fletcher_DIE)
 	{
-		B_LogEntry		(CH4_Firemages,"Brány Starého tábora jsou nyní uzavøeny a hlídány stráemi. Napadají kadého, kdo se pøiblíí k táboru.");
+		B_LogEntry		(CH4_Firemages,"BrÃ¡ny StarÃ©ho tÃ¡bora jsou nynÃ­ uzavÅ™eny a hlÃ­dÃ¡ny strÃ¡Å¾emi. NapadajÃ­ kaÅ¾dÃ©ho, kdo se pÅ™iblÃ­Å¾Ã­ k tÃ¡boru.");
 	};
 	
 	AI_StopProcessInfos	(self);

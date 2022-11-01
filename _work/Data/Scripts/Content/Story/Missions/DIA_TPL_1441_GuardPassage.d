@@ -7,11 +7,11 @@
 //	Uhrzeit:
 //
 //	Es passiert folgendes:
-//	1.	Nähert sich der Spieler dem Durchgang, so wird er in diesen
+//	1.	NÃ¤hert sich der Spieler dem Durchgang, so wird er in diesen
 //		Dialog gezwungen und einmal gewarnt
-//	2.	Nähert sich der SC trotzdem weiter, so wird er ein ZWEITES Mal
+//	2.	NÃ¤hert sich der SC trotzdem weiter, so wird er ein ZWEITES Mal
 //		gewarnt (aggressiver mit Waffe ziehen)
-//	3.	Nähert er sich trotzdem wieder, wird er angegriffen
+//	3.	NÃ¤hert er sich trotzdem wieder, wird er angegriffen
 //////////////////////////////////////////////////////////////////////////
 const string	TPL_1441_CHECKPOINT		= "PSI_TEMPLE_IN";
 
@@ -42,7 +42,7 @@ func void Info_TPL_1441_FirstWarn_Info()
 {
 	PrintGlobals	(PD_MISSION);
 
-	AI_Output 		(self, hero,"Info_TPL_1441_FirstWarn_13_01"); //STÙJ! Na chrámový vrch smíš vstoupit jedinì s povolením od Guru!
+	AI_Output 		(self, hero,"Info_TPL_1441_FirstWarn_13_01"); //STÅ®J! Na chrÃ¡movÃ½ vrch smÃ­Å¡ vstoupit jedinÄ› s povolenÃ­m od Guru!
 
 	hero.aivar[AIV_LASTDISTTOWP] 		= Npc_GetDistToWP(hero,TPL_1441_CHECKPOINT);
 	hero.aivar[AIV_GUARDPASSAGE_STATUS]	= AIV_GPS_FIRSTWARN;	
@@ -50,8 +50,8 @@ func void Info_TPL_1441_FirstWarn_Info()
 	if (Npc_KnowsInfo(hero, PC_Psionic_SEND))
 	{
 		Info_Clearchoices 	(Info_TPL_1441_FirstWarn);
-		Info_Addchoice 		(Info_TPL_1441_FirstWarn,"Y´Berion mi dal povolení.",	Info_TPL_1441_FirstWarn_Condition_YBERION);  
-		Info_Addchoice 		(Info_TPL_1441_FirstWarn,"Poslal mì novic Lester.",	Info_TPL_1441_FirstWarn_Condition_LESTER);  
+		Info_Addchoice 		(Info_TPL_1441_FirstWarn,"YÂ´Berion mi dal povolenÃ­.",	Info_TPL_1441_FirstWarn_Condition_YBERION);  
+		Info_Addchoice 		(Info_TPL_1441_FirstWarn,"Poslal mÄ› novic Lester.",	Info_TPL_1441_FirstWarn_Condition_LESTER);  
 	}
 	else
 	{
@@ -61,14 +61,14 @@ func void Info_TPL_1441_FirstWarn_Info()
 
 func void Info_TPL_1441_FirstWarn_Condition_YBERION ()
 {
-	AI_Output (hero, self,"Info_TPL_1441_FirstWarn_Condition_YBERION_15_01"); //Y´Berion mi dal povolení.
-	AI_Output (self, hero,"Info_TPL_1441_FirstWarn_Condition_YBERION_13_02"); //Lháøi mùžou pøijít snadno o své jazyky, tak si dávej lepší pozor na to, co øíkáš.
+	AI_Output (hero, self,"Info_TPL_1441_FirstWarn_Condition_YBERION_15_01"); //YÂ´Berion mi dal povolenÃ­.
+	AI_Output (self, hero,"Info_TPL_1441_FirstWarn_Condition_YBERION_13_02"); //LhÃ¡Å™i mÅ¯Å¾ou pÅ™ijÃ­t snadno o svÃ© jazyky, tak si dÃ¡vej lepÅ¡Ã­ pozor na to, co Å™Ã­kÃ¡Å¡.
 };
 
 func void Info_TPL_1441_FirstWarn_Condition_LESTER ()
 {
-	AI_Output (hero, self,"Info_TPL_1441_FirstWarn_Condition_LESTER_15_01"); //Poslal mì novic Lester. Mám nabídnout Y´Berionovi své služby.
-	AI_Output (self, hero,"Info_TPL_1441_FirstWarn_Condition_LESTER_13_02"); //Lester je dùvìryhodný. Znám ho. Mùžeš jít.
+	AI_Output (hero, self,"Info_TPL_1441_FirstWarn_Condition_LESTER_15_01"); //Poslal mÄ› novic Lester. MÃ¡m nabÃ­dnout YÂ´Berionovi svÃ© sluÅ¾by.
+	AI_Output (self, hero,"Info_TPL_1441_FirstWarn_Condition_LESTER_13_02"); //Lester je dÅ¯vÄ›ryhodnÃ½. ZnÃ¡m ho. MÅ¯Å¾eÅ¡ jÃ­t.
 	Info_Clearchoices 	(Info_TPL_1441_FirstWarn);
 
 	//---- beide Wachen auf passieren schalten ----
@@ -104,7 +104,7 @@ func int Info_TPL_1441_LastWarn_Condition()
 
 func int Info_TPL_1441_LastWarn_Info()
 {
-	AI_Output 		(self, hero,"Info_TPL_1441_LastWarn_13_01"); 		//Ještì krok a je s tebou konec.
+	AI_Output 		(self, hero,"Info_TPL_1441_LastWarn_13_01"); 		//JeÅ¡tÄ› krok a je s tebou konec.
 
 	hero.aivar[AIV_LASTDISTTOWP] 		= Npc_GetDistToWP (hero,TPL_1441_CHECKPOINT);
 	hero.aivar[AIV_GUARDPASSAGE_STATUS]	= AIV_GPS_LASTWARN;	
@@ -143,7 +143,7 @@ func int Info_TPL_1441_Attack_Info()
 	hero.aivar[AIV_GUARDPASSAGE_STATUS]	= AIV_GPS_PUNISH;	
 	
 	B_FullStop			(self);	
-	AI_StopProcessInfos	(self);					// dem Spieler sofort wieder die Kontrolle zurückgeben
+	AI_StopProcessInfos	(self);					// dem Spieler sofort wieder die Kontrolle zurÃ¼ckgeben
 	B_IntruderAlert		(self,	other);
 	B_SetAttackReason	(self,	AIV_AR_INTRUDER);
 	Npc_SetTarget		(self,	hero);

@@ -1,14 +1,14 @@
 func void B_Story_ShowedUrizielToXardas()
 {
-	//-------- Missionsgegenstände --------
+	//-------- MissionsgegenstÃ¤nde --------
 	
-	//-------- Tagebucheinträge --------
-	B_LogEntry			(CH4_EnterTemple,"Xardas byl dost pøekvapen, e se mi podaøilo proniknout do podzemního chrámu. Díval se, jako by mì povaoval za ikonu ze starého skøetího proroctví.");
+	//-------- TagebucheintrÃ¤ge --------
+	B_LogEntry			(CH4_EnterTemple,"Xardas byl dost pÅ™ekvapen, Å¾e se mi podaÅ™ilo proniknout do podzemnÃ­ho chrÃ¡mu. DÃ­val se, jako by mÄ› povaÅ¾oval za ikonu ze starÃ©ho skÅ™etÃ­ho proroctvÃ­.");
 	Log_SetTopicStatus	(CH4_EnterTemple,	LOG_SUCCESS);
 	
 	Log_CreateTopic		(CH5_Uriziel,	LOG_MISSION);
 	Log_SetTopicStatus	(CH5_Uriziel,	LOG_RUNNING);
-	B_LogEntry			(CH5_Uriziel,"Xardas rozpoznal v podivném meèi, kterı jsem našel ve Spáèovì chrámu, URIZIEL. Tato prastará èepel mìla kdysi zøejmì nesmírnou moc, ale v prùbìhu èasu jí pozbyla. Potøebuji najít zpùsob, jak této zbrani vrátit její nìkdejší sílu. ");
+	B_LogEntry			(CH5_Uriziel,"Xardas rozpoznal v podivnÃ©m meÄi, kterÃ½ jsem naÅ¡el ve SpÃ¡ÄovÄ› chrÃ¡mu, URIZIEL. Tato prastarÃ¡ Äepel mÄ›la kdysi zÅ™ejmÄ› nesmÃ­rnou moc, ale v prÅ¯bÄ›hu Äasu jÃ­ pozbyla. PotÅ™ebuji najÃ­t zpÅ¯sob, jak tÃ©to zbrani vrÃ¡tit jejÃ­ nÄ›kdejÅ¡Ã­ sÃ­lu. ");
 	
 	//-------- Erfahrung --------
 	B_GiveXP			(XP_ShowUrizielToXardas);

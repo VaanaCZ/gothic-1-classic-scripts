@@ -34,7 +34,7 @@ instance  DIA_Viran_What (C_INFO)
 	condition	= DIA_Viran_What_Condition;
 	information	= DIA_Viran_What_Info;
 	permanent	= 0;
-	description	= "Co tady dìláš?";
+	description	= "Co tady dÄ›lÃ¡Å¡?";
 };                       
 
 FUNC int  DIA_Viran_What_Condition()
@@ -44,12 +44,12 @@ FUNC int  DIA_Viran_What_Condition()
 
 FUNC VOID  DIA_Viran_What_Info()
 {
-	AI_Output (other, self,"DIA_Viran_What_15_00"); //Co tady dìláte?
-	AI_Output (self, other,"DIA_Viran_What_07_01"); //Sbíráme tady drogu z bain, kterou zpracovávají naši bratøi, aby jí bylo potom moné kouøit.
-	AI_Output (self, other,"DIA_Viran_What_07_02"); //Sbìr v bainách je velmi nebezpeènı, ale ta droga neroste nikde jinde. A vlastnì je to tak dobøe.
-	AI_Output (other, self,"DIA_Viran_What_15_03"); //Proè?
-	AI_Output (self, other,"DIA_Viran_What_07_04"); //Protoe tak jí ostatní dva tábory nedostanou. Jsme jediní z kolonie, kdo mùe sbírat drogu z bain.
-	AI_Output (self, other,"DIA_Viran_What_07_05"); //Mùeme s ní obchodovat s ostatníma dvìma tábory - MY si mùeme stanovit cenu.
+	AI_Output (other, self,"DIA_Viran_What_15_00"); //Co tady dÄ›lÃ¡te?
+	AI_Output (self, other,"DIA_Viran_What_07_01"); //SbÃ­rÃ¡me tady drogu z baÅ¾in, kterou zpracovÃ¡vajÃ­ naÅ¡i bratÅ™i, aby jÃ­ bylo potom moÅ¾nÃ© kouÅ™it.
+	AI_Output (self, other,"DIA_Viran_What_07_02"); //SbÄ›r v baÅ¾inÃ¡ch je velmi nebezpeÄnÃ½, ale ta droga neroste nikde jinde. A vlastnÄ› je to tak dobÅ™e.
+	AI_Output (other, self,"DIA_Viran_What_15_03"); //ProÄ?
+	AI_Output (self, other,"DIA_Viran_What_07_04"); //ProtoÅ¾e tak jÃ­ ostatnÃ­ dva tÃ¡bory nedostanou. Jsme jedinÃ­ z kolonie, kdo mÅ¯Å¾e sbÃ­rat drogu z baÅ¾in.
+	AI_Output (self, other,"DIA_Viran_What_07_05"); //MÅ¯Å¾eme s nÃ­ obchodovat s ostatnÃ­ma dvÄ›ma tÃ¡bory - MY si mÅ¯Å¾eme stanovit cenu.
 };
 
 // **************************************************
@@ -63,7 +63,7 @@ instance  DIA_Viran_FetchWeed (C_INFO)
 	condition	= DIA_Viran_FetchWeed_Condition;
 	information	= DIA_Viran_FetchWeed_Info;
 	permanent	= 0;
-	description	= "Poslal mì Baal Orun. Mám pøedat celou sklizeò Kalomovi.";
+	description	= "Poslal mÄ› Baal Orun. MÃ¡m pÅ™edat celou sklizeÅˆ Kalomovi.";
 };                       
 
 FUNC int  DIA_Viran_FetchWeed_Condition()
@@ -76,25 +76,25 @@ FUNC int  DIA_Viran_FetchWeed_Condition()
 
 FUNC VOID  DIA_Viran_FetchWeed_Info()
 {
-	AI_Output (other, self,"DIA_Viran_FetchWeed_15_00"); //Poslal mì Baal Orun. Mám pøedat celou sklizeò Kalomovi.
-	AI_Output (self, other,"DIA_Viran_FetchWeed_07_01"); //Pøedstavuješ si to dost jednouše, co?
-	AI_Output (self, other,"DIA_Viran_FetchWeed_07_02"); //To by mohl øíci kadı: 'poslal mì Baal Orun' - fííí - a celá sklizeò je tatam.
+	AI_Output (other, self,"DIA_Viran_FetchWeed_15_00"); //Poslal mÄ› Baal Orun. MÃ¡m pÅ™edat celou sklizeÅˆ Kalomovi.
+	AI_Output (self, other,"DIA_Viran_FetchWeed_07_01"); //PÅ™edstavujeÅ¡ si to dost jednouÅ¡e, co?
+	AI_Output (self, other,"DIA_Viran_FetchWeed_07_02"); //To by mohl Å™Ã­ci kaÅ¾dÃ½: 'poslal mÄ› Baal Orun' - fÃ­Ã­Ã­ - a celÃ¡ sklizeÅˆ je tatam.
 	
 	Info_ClearChoices 	(DIA_Viran_FetchWeed);
-	Info_Addchoice 		(DIA_Viran_FetchWeed,"Jdi za ním a zeptej se ho, kdy mi nevìøíš!",DIA_Viran_FetchWeed_GotoHim);
-	Info_Addchoice 		(DIA_Viran_FetchWeed,"Ale Baal Orun mì skuteènì poslal!",DIA_Viran_FetchWeed_Really);
+	Info_Addchoice 		(DIA_Viran_FetchWeed,"Jdi za nÃ­m a zeptej se ho, kdyÅ¾ mi nevÄ›Å™Ã­Å¡!",DIA_Viran_FetchWeed_GotoHim);
+	Info_Addchoice 		(DIA_Viran_FetchWeed,"Ale Baal Orun mÄ› skuteÄnÄ› poslal!",DIA_Viran_FetchWeed_Really);
 };
 	
 func void DIA_Viran_FetchWeed_Really()
 {
-	AI_Output (other, self,"DIA_Viran_FetchWeed_Really_15_00"); //Ale Baal Orun mì skuteènì poslal!
-	AI_Output (self, other,"DIA_Viran_FetchWeed_Really_07_01"); //Jistì.
+	AI_Output (other, self,"DIA_Viran_FetchWeed_Really_15_00"); //Ale Baal Orun mÄ› skuteÄnÄ› poslal!
+	AI_Output (self, other,"DIA_Viran_FetchWeed_Really_07_01"); //JistÄ›.
 };
 
 func void DIA_Viran_FetchWeed_GotoHim()
 {
-	AI_Output (other, self,"DIA_Viran_FetchWeed_GotoHim_15_00"); //Jdi za ním a zeptej se ho, kdy mi nevìøíš!
-	AI_Output (self, other,"DIA_Viran_FetchWeed_GotoHim_07_01"); //Mám lepší nápad. Doka svou oddanost tím, e pro nás udìláš malou slubièku!
+	AI_Output (other, self,"DIA_Viran_FetchWeed_GotoHim_15_00"); //Jdi za nÃ­m a zeptej se ho, kdyÅ¾ mi nevÄ›Å™Ã­Å¡!
+	AI_Output (self, other,"DIA_Viran_FetchWeed_GotoHim_07_01"); //MÃ¡m lepÅ¡Ã­ nÃ¡pad. DokaÅ¾ svou oddanost tÃ­m, Å¾e pro nÃ¡s udÄ›lÃ¡Å¡ malou sluÅ¾biÄku!
 	Info_ClearChoices 	(DIA_Viran_FetchWeed);
 };
 
@@ -111,7 +111,7 @@ instance  DIA_Viran_Bloodflies (C_INFO)
 	condition	= DIA_Viran_Bloodflies_Condition;
 	information	= DIA_Viran_Bloodflies_Info;
 	permanent	= 0;
-	description	= "A co mám udìlat?";
+	description	= "A co mÃ¡m udÄ›lat?";
 };                       
 
 FUNC int  DIA_Viran_Bloodflies_Condition()
@@ -124,12 +124,12 @@ FUNC int  DIA_Viran_Bloodflies_Condition()
 
 FUNC VOID  DIA_Viran_Bloodflies_Info()
 {
-	AI_Output (other, self,"DIA_Viran_Bloodflies_15_00"); //A co mám udìlat?
-	AI_Output (self, other,"DIA_Viran_Bloodflies_07_01"); //Jenom malièkost. Práce v bainách je trochu nebezpeèná, a ještì ke všemu jsou tam ty proklaté krvavé mouchy.
-	AI_Output (self, other,"DIA_Viran_Bloodflies_07_02"); //Práce by byla daleko snazší bez nich! U chápeš?
+	AI_Output (other, self,"DIA_Viran_Bloodflies_15_00"); //A co mÃ¡m udÄ›lat?
+	AI_Output (self, other,"DIA_Viran_Bloodflies_07_01"); //Jenom maliÄkost. PrÃ¡ce v baÅ¾inÃ¡ch je trochu nebezpeÄnÃ¡, a jeÅ¡tÄ› ke vÅ¡emu jsou tam ty proklatÃ© krvavÃ© mouchy.
+	AI_Output (self, other,"DIA_Viran_Bloodflies_07_02"); //PrÃ¡ce by byla daleko snazÅ¡Ã­ bez nich! UÅ¾ chÃ¡peÅ¡?
 	Viran_Bloodflies = LOG_RUNNING;
 
-	B_LogEntry			(CH1_DeliverWeed,"Viran mi dal drogu z bain, kdy jsem vyhladil všechny krvavé mouchy v okruhu 20 krokù.");
+	B_LogEntry			(CH1_DeliverWeed,"Viran mi dal drogu z baÅ¾in, kdyÅ¾ jsem vyhladil vÅ¡echny krvavÃ© mouchy v okruhu 20 krokÅ¯.");
 };
 	
 // **************************************************
@@ -145,7 +145,7 @@ instance  DIA_Viran_Running (C_INFO)
 	condition	= DIA_Viran_Running_Condition;
 	information	= DIA_Viran_Running_Info;
 	permanent	= 1;
-	description	= "U tu ádné krvavé mouchy nevidím.";
+	description	= "UÅ¾ tu Å¾Ã¡dnÃ© krvavÃ© mouchy nevidÃ­m.";
 };                       
 
 FUNC int  DIA_Viran_Running_Condition()
@@ -158,31 +158,31 @@ FUNC int  DIA_Viran_Running_Condition()
 
 FUNC VOID  DIA_Viran_Running_Info()
 {
-	AI_Output (other, self,"DIA_Viran_Running_15_00"); //U tu ádné krvavé mouchy nevidím.
+	AI_Output (other, self,"DIA_Viran_Running_15_00"); //UÅ¾ tu Å¾Ã¡dnÃ© krvavÃ© mouchy nevidÃ­m.
 	Npc_PerceiveAll(self);
 	if ( Wld_DetectNpc(self,bloodfly,ZS_MM_Rtn_Wusel,-1) && (Npc_GetDistToNpc(self, other)<2000) ) //other = nearest Bloodfly (Instance/ZS/Guild)
-	//wenn keine Bloodfly in 40m, dann other noch unverändert (= hero)
+	//wenn keine Bloodfly in 40m, dann other noch unverÃ¤ndert (= hero)
 	{
-		AI_Output (self, hero,"DIA_Viran_Running_07_00"); //Na kadém dvanáctém kroku jsou ale další hovada!
-		AI_Output (self, hero,"DIA_Viran_Running_07_01"); //Ty se ti tak snadno odstranit nepodaøí!
+		AI_Output (self, hero,"DIA_Viran_Running_07_00"); //Na kaÅ¾dÃ©m dvanÃ¡ctÃ©m kroku jsou ale dalÅ¡Ã­ hovada!
+		AI_Output (self, hero,"DIA_Viran_Running_07_01"); //Ty se ti tak snadno odstranit nepodaÅ™Ã­!
 	}
 	else
 	{
-		AI_Output (self, hero,"DIA_Viran_Running_07_02"); //U tu nejsou ádné potvory. Odvedl jsi dobrou práci!
-		AI_Output (self, hero,"DIA_Viran_Running_07_03"); //Ten, kdo takhle pracuje, je buï na naší stranì, nebo je úplnı idiot!
-		AI_Output (self, hero,"DIA_Viran_Running_07_04"); //Ale idiot by byl pøíliš hloupı, aby mì pøelstil, nemám pravdu?
-		AI_Output (self, hero,"DIA_Viran_Running_07_05"); //Tak si vezmi tu sklizeò a pøedej ji Cor Kalomovi.
-		AI_Output (self, hero,"DIA_Viran_Running_07_06"); //Jestli si bude stìovat, e jí není dost, vzka mu, a pohne svım zadkem sem a já mu udìlám pøedstavu o tom, jak tìká je to práce.
+		AI_Output (self, hero,"DIA_Viran_Running_07_02"); //UÅ¾ tu nejsou Å¾Ã¡dnÃ© potvory. Odvedl jsi dobrou prÃ¡ci!
+		AI_Output (self, hero,"DIA_Viran_Running_07_03"); //Ten, kdo takhle pracuje, je buÄ na naÅ¡Ã­ stranÄ›, nebo je ÃºplnÃ½ idiot!
+		AI_Output (self, hero,"DIA_Viran_Running_07_04"); //Ale idiot by byl pÅ™Ã­liÅ¡ hloupÃ½, aby mÄ› pÅ™elstil, nemÃ¡m pravdu?
+		AI_Output (self, hero,"DIA_Viran_Running_07_05"); //Tak si vezmi tu sklizeÅˆ a pÅ™edej ji Cor Kalomovi.
+		AI_Output (self, hero,"DIA_Viran_Running_07_06"); //Jestli si bude stÄ›Å¾ovat, Å¾e jÃ­ nenÃ­ dost, vzkaÅ¾ mu, aÅ¥ pohne svÃ½m zadkem sem a jÃ¡ mu udÄ›lÃ¡m pÅ™edstavu o tom, jak tÄ›Å¾kÃ¡ je to prÃ¡ce.
 		
 		B_GiveInvItems  (self, hero, ItMi_Plants_Swampherb_01, 50);
 
 		if	Npc_KnowsInfo(hero, DIA_Balor_FetchWeed)
 		{
-			B_LogEntry	(CH1_DeliverWeed,"Viran mi pøedal druhou polovinu dnešní skliznì drogy z bain. Uvidíme, jestli bude Cor Kalom s tímto mnostvím spokojenı.");
+			B_LogEntry	(CH1_DeliverWeed,"Viran mi pÅ™edal druhou polovinu dneÅ¡nÃ­ skliznÄ› drogy z baÅ¾in. UvidÃ­me, jestli bude Cor Kalom s tÃ­mto mnoÅ¾stvÃ­m spokojenÃ½.");
 		}
 		else
 		{
-			B_LogEntry	(CH1_DeliverWeed,"Viran mi dal dnešní sklizeò drogy z bain. Nevypadá to, e je jí dost. Snad je tu ještì druhá skupina sbìraèù.");
+			B_LogEntry	(CH1_DeliverWeed,"Viran mi dal dneÅ¡nÃ­ sklizeÅˆ drogy z baÅ¾in. NevypadÃ¡ to, Å¾e je jÃ­ dost. Snad je tu jeÅ¡tÄ› druhÃ¡ skupina sbÄ›raÄÅ¯.");
 		};
 		B_GiveXP		(XP_WeedFromViran);
 				
@@ -203,7 +203,7 @@ instance  DIA_Viran_Perm (C_INFO)
 	condition	= DIA_Viran_Perm_Condition;
 	information	= DIA_Viran_Perm_Info;
 	permanent	= 1;
-	description	= "Jak jde sklízení?";
+	description	= "Jak jde sklÃ­zenÃ­?";
 };                       
 
 FUNC int  DIA_Viran_Perm_Condition()
@@ -216,9 +216,9 @@ FUNC int  DIA_Viran_Perm_Condition()
 
 FUNC VOID  DIA_Viran_Perm_Info()
 {
-	AI_Output (other, self,"DIA_Viran_Perm_15_00"); //Jak jde sklízení?
-	AI_Output (self, other,"DIA_Viran_Perm_07_01"); //Jasnì, jasnì, teï jsi mì pobavil. Jsem pøesvìdèenı, e jsi od Guru dostal nìco lepšího na práci.
-	AI_Output (self, other,"DIA_Viran_Perm_07_02"); //Jistì, aspoò tu špinavou práci nebudu muset dìlat sám. Od toho je 'pìchota' - hehehe!
+	AI_Output (other, self,"DIA_Viran_Perm_15_00"); //Jak jde sklÃ­zenÃ­?
+	AI_Output (self, other,"DIA_Viran_Perm_07_01"); //JasnÄ›, jasnÄ›, teÄ jsi mÄ› pobavil. Jsem pÅ™esvÄ›dÄenÃ½, Å¾e jsi od Guru dostal nÄ›co lepÅ¡Ã­ho na prÃ¡ci.
+	AI_Output (self, other,"DIA_Viran_Perm_07_02"); //JistÄ›, aspoÅˆ tu Å¡pinavou prÃ¡ci nebudu muset dÄ›lat sÃ¡m. Od toho je 'pÄ›chota' - hehehe!
 };
 
 // **************************************************
@@ -232,7 +232,7 @@ instance  DIA_Viran_RipOff (C_INFO)
 	condition	= DIA_Viran_RipOff_Condition;
 	information	= DIA_Viran_RipOff_Info;
 	permanent	= 0;
-	description	= "Jsem tu, abych pro Cora Kaloma znovu pøevzal celou sklizeò.";
+	description	= "Jsem tu, abych pro Cora Kaloma znovu pÅ™evzal celou sklizeÅˆ.";
 };                       
 
 FUNC int  DIA_Viran_RipOff_Condition()
@@ -245,10 +245,10 @@ FUNC int  DIA_Viran_RipOff_Condition()
 
 FUNC VOID  DIA_Viran_RipOff_Info()
 {
-	AI_Output (other, self,"DIA_Viran_RipOff_15_00"); //Jsem tu, abych pro Cora Kaloma znovu pøevzal celou sklizeò.
+	AI_Output (other, self,"DIA_Viran_RipOff_15_00"); //Jsem tu, abych pro Cora Kaloma znovu pÅ™evzal celou sklizeÅˆ.
 	AI_Output (self, other,"DIA_Viran_RipOff_07_01"); //Znovu?
-	AI_Output (other, self,"DIA_Viran_RipOff_15_02"); //Jen mi teï neøíkej, e mám zabít všechny ty moèálové raloky! Opravdu nemám moc èasu.
-	AI_Output (self, other,"DIA_Viran_RipOff_07_03"); //Dobøe, dobøe! Tady je ta zatracená sklizeò!
+	AI_Output (other, self,"DIA_Viran_RipOff_15_02"); //Jen mi teÄ neÅ™Ã­kej, Å¾e mÃ¡m zabÃ­t vÅ¡echny ty moÄÃ¡lovÃ© Å¾raloky! Opravdu nemÃ¡m moc Äasu.
+	AI_Output (self, other,"DIA_Viran_RipOff_07_03"); //DobÅ™e, dobÅ™e! Tady je ta zatracenÃ¡ sklizeÅˆ!
 	CreateInvItems (self, ItMi_Plants_Swampherb_01, 50);
 	B_GiveInvItems (self, hero, ItMi_Plants_Swampherb_01, 50);
 };

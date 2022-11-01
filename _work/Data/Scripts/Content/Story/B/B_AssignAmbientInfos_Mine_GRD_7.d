@@ -37,7 +37,7 @@ INSTANCE Info_Mine_Grd_7_Mine (C_INFO) // E1
 	condition	= Info_Mine_Grd_7_Mine_Condition;
 	information	= Info_Mine_Grd_7_Mine_Info;
 	permanent	= 1;
-	description = "ÿekni mi nÏco o dole.";
+	description = "≈òekni mi nƒõco o dole.";
 };                       
 
 FUNC INT Info_Mine_Grd_7_Mine_Condition()
@@ -50,8 +50,8 @@ FUNC INT Info_Mine_Grd_7_Mine_Condition()
 
 FUNC VOID Info_Mine_Grd_7_Mine_Info()
 {
-	AI_Output(other,self,"Info_Mine_Grd_7_Mine_15_00"); //PovÌdej mi o dole.
-	AI_Output(self,other,"Info_Mine_Grd_7_Mine_07_01"); //Kop·Ëi rubou rudu a my je chr·nÌme p¯ed Ëervy.
+	AI_Output(other,self,"Info_Mine_Grd_7_Mine_15_00"); //Pov√≠dej mi o dole.
+	AI_Output(self,other,"Info_Mine_Grd_7_Mine_07_01"); //Kop√°ƒçi rubou rudu a my je chr√°n√≠me p≈ôed ƒçervy.
 	
 };
 
@@ -79,7 +79,7 @@ FUNC INT Info_Mine_Grd_7_WichtigePersonen_Condition()
 FUNC VOID Info_Mine_Grd_7_WichtigePersonen_Info()
 {
 	AI_Output(other,self,"Info_Mine_Grd_7_WichtigePersonen_15_00"); //Kdo to tady vede?
-	AI_Output(self,other,"Info_Mine_Grd_7_WichtigePersonen_07_01"); //Ian a Asghan. Kdyû nÏco chceö, mÏl bys jim to ¯Ìci.
+	AI_Output(self,other,"Info_Mine_Grd_7_WichtigePersonen_07_01"); //Ian a Asghan. Kdy≈æ nƒõco chce≈°, mƒõl bys jim to ≈ô√≠ci.
 	
 };
 
@@ -93,7 +93,7 @@ INSTANCE Info_Mine_Grd_7_Minecrawler(C_INFO)
 	condition	= Info_Mine_Grd_7_Minecrawler_Condition;
 	information	= Info_Mine_Grd_7_Minecrawler_Info;
 	permanent	= 1;
-	description = "Co vÌö o Ëervech.";
+	description = "Co v√≠≈° o ƒçervech.";
 };                       
 
 FUNC INT Info_Mine_Grd_7_Minecrawler_Condition()
@@ -106,8 +106,8 @@ FUNC INT Info_Mine_Grd_7_Minecrawler_Condition()
 
 FUNC VOID Info_Mine_Grd_7_Minecrawler_Info()
 {
-	AI_Output(other,self,"Info_Mine_Grd_7_Minecrawler_15_00"); //Co si myslÌö o Ëervech?
-	AI_Output(self,other,"Info_Mine_Grd_7_Minecrawler_07_01"); //Spousta by jich mÏla b˝t vyhlazena, pokud se pt·ö mÏ!
+	AI_Output(other,self,"Info_Mine_Grd_7_Minecrawler_15_00"); //Co si mysl√≠≈° o ƒçervech?
+	AI_Output(self,other,"Info_Mine_Grd_7_Minecrawler_07_01"); //Spousta by jich mƒõla b√Ωt vyhlazena, pokud se pt√°≈° mƒõ!
 	
 	
 };
@@ -134,8 +134,8 @@ FUNC INT Info_Mine_Grd_7_DieLage_Condition()
 
 FUNC VOID Info_Mine_Grd_7_DieLage_Info()
 {
-	AI_Output(other,self,"Info_Mine_Grd_7_DieLage_15_00"); //Jak se m·ö?
-	AI_Output(self,other,"Info_Mine_Grd_7_DieLage_07_01"); //Chlape, hrajeö mi na nervy!
+	AI_Output(other,self,"Info_Mine_Grd_7_DieLage_15_00"); //Jak se m√°≈°?
+	AI_Output(self,other,"Info_Mine_Grd_7_DieLage_07_01"); //Chlape, hraje≈° mi na nervy!
 };
 	
 // *************************************************************************

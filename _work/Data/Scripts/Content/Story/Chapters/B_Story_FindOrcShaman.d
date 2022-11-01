@@ -3,14 +3,14 @@
 //*****************************************************************************
 func void B_Story_FindOrcShaman()
 {
-	//-------- Missionsgegenstände --------
+	//-------- MissionsgegenstÃ¤nde --------
 	
-	//-------- Tagebucheinträge --------
-	B_LogEntry			(CH4_FindXardas,"Koneènì jsem se setkal s Xardasem. Setkání se však vùbec nepodobalo tomu, co všichni oèekávali. Nemìl nejmenší zájem o rudnou haldu, ale vyprávìl první èást Spáèova pøíbìhu. Nevím, co Saturasovi o prùbìhu tohoto rozhovoru povím.");
+	//-------- TagebucheintrÃ¤ge --------
+	B_LogEntry			(CH4_FindXardas,"KoneÄnÄ› jsem se setkal s Xardasem. SetkÃ¡nÃ­ se vÅ¡ak vÅ¯bec nepodobalo tomu, co vÅ¡ichni oÄekÃ¡vali. NemÄ›l nejmenÅ¡Ã­ zÃ¡jem o rudnou haldu, ale vyprÃ¡vÄ›l prvnÃ­ ÄÃ¡st SpÃ¡Äova pÅ™Ã­bÄ›hu. NevÃ­m, co Saturasovi o prÅ¯bÄ›hu tohoto rozhovoru povÃ­m.");
 
 	Log_CreateTopic		(CH4_FindOrcShaman,	LOG_MISSION);
 	Log_SetTopicStatus	(CH4_FindOrcShaman,	LOG_RUNNING);
-	B_LogEntry			(CH4_FindOrcShaman,"Xardas si mì chtìl znovu vyzkoušet. Abych si mohl vyslechnout druhou èást Spáèova pøíbìhu, musím v rozvalinách chrámu navštívit vyhoštìného skøetího šamana. Nachází se blízko vrcholu kopce smìrem na vıchod od Xardasovy vìe. Opravdu nemám ponìtí, jak jej pøimìju, aby po mnì nemetal ohnivé koule. Nìco ale vymyslím.");
+	B_LogEntry			(CH4_FindOrcShaman,"Xardas si mÄ› chtÄ›l znovu vyzkouÅ¡et. Abych si mohl vyslechnout druhou ÄÃ¡st SpÃ¡Äova pÅ™Ã­bÄ›hu, musÃ­m v rozvalinÃ¡ch chrÃ¡mu navÅ¡tÃ­vit vyhoÅ¡tÄ›nÃ©ho skÅ™etÃ­ho Å¡amana. NachÃ¡zÃ­ se blÃ­zko vrcholu kopce smÄ›rem na vÃ½chod od Xardasovy vÄ›Å¾e. Opravdu nemÃ¡m ponÄ›tÃ­, jak jej pÅ™imÄ›ju, aby po mnÄ› nemetal ohnivÃ© koule. NÄ›co ale vymyslÃ­m.");
 	
 		
 	//-------- NSCs einsetzen --------

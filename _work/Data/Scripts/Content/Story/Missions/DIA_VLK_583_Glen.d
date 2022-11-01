@@ -33,7 +33,7 @@ instance   VLK_583_Glen_INFO(C_INFO)
 	information		= VLK_583_Glen_INFO_Info;
 	important		= 0;
 	permanent		= 1;
-	description		= "Na co bych mìl pamatovat, a budu v dole?"; 
+	description		= "Na co bych mÄ›l pamatovat, aÅ¾ budu v dole?"; 
 };
 
 FUNC int  VLK_583_Glen_INFO_Condition()
@@ -44,11 +44,11 @@ FUNC int  VLK_583_Glen_INFO_Condition()
 
 FUNC void  VLK_583_Glen_INFO_Info()
 {
-	AI_Output (other, self,"VLK_583_Glen_INFO_Info_15_01"); //Na co bych mìl pamatovat, a budu v dole?
-	AI_Output (self, other,"VLK_583_Glen_INFO_Info_02_02"); //Dávat si pozor na dùlní èervy.
-	AI_Output (self, other,"VLK_583_Glen_INFO_Info_02_03"); //Èím jdeš ní, tím blí se k tìm bestiím dostáváš. Ty prašivé pøíšery pøicházejí rovnou z Beliarova království!
-	AI_Output (self, other,"VLK_583_Glen_INFO_Info_02_04"); //Uslyšíš hrabání a škrábání. Drí se v temnotì a vyèkávají na tebe. Vidìl jsem je zabíjet...
-	AI_Output (self, other,"VLK_583_Glen_INFO_Info_02_05"); //Jsou nemilosrdní a rychlí. Jestli chceš zùstat naivu, nemìl bys chodit dolu. Mìl bys odejít, ne se ti nìco stane.
+	AI_Output (other, self,"VLK_583_Glen_INFO_Info_15_01"); //Na co bych mÄ›l pamatovat, aÅ¾ budu v dole?
+	AI_Output (self, other,"VLK_583_Glen_INFO_Info_02_02"); //DÃ¡vat si pozor na dÅ¯lnÃ­ Äervy.
+	AI_Output (self, other,"VLK_583_Glen_INFO_Info_02_03"); //ÄŒÃ­m jdeÅ¡ nÃ­Å¾, tÃ­m blÃ­Å¾ se k tÄ›m bestiÃ­m dostÃ¡vÃ¡Å¡. Ty praÅ¡ivÃ© pÅ™Ã­Å¡ery pÅ™ichÃ¡zejÃ­ rovnou z Beliarova krÃ¡lovstvÃ­!
+	AI_Output (self, other,"VLK_583_Glen_INFO_Info_02_04"); //UslyÅ¡Ã­Å¡ hrabÃ¡nÃ­ a Å¡krÃ¡bÃ¡nÃ­. DrÅ¾Ã­ se v temnotÄ› a vyÄkÃ¡vajÃ­ na tebe. VidÄ›l jsem je zabÃ­jet...
+	AI_Output (self, other,"VLK_583_Glen_INFO_Info_02_05"); //Jsou nemilosrdnÃ­ a rychlÃ­. Jestli chceÅ¡ zÅ¯stat naÅ¾ivu, nemÄ›l bys chodit dolu. MÄ›l bys odejÃ­t, neÅ¾ se ti nÄ›co stane.
 };  
 // ***************** Infos *****************************
 
@@ -59,7 +59,7 @@ instance  VLK_583_Glen_LOCKPICK (C_INFO)
 	information	=  VLK_583_Glen_LOCKPICK_Info;
 	important	= 0;	
 	permanent	= 0;
-	description = "Slyšel jsem, e bych tu dostal paklíèe?";
+	description = "SlyÅ¡el jsem, Å¾e bych tu dostal paklÃ­Äe?";
 };                       
 
 FUNC int  VLK_583_Glen_LOCKPICK_Condition()
@@ -72,8 +72,8 @@ FUNC int  VLK_583_Glen_LOCKPICK_Condition()
 
 FUNC VOID  VLK_583_Glen_LOCKPICK_Info()
 {
-	AI_Output (other, self,"VLK_583_Glen_LOCKPICK_15_01"); //Slyšel jsem, e bych tu dostal paklíèe?
-	AI_Output (self, other,"VLK_583_Glen_LOCKPICK_02_02"); //Jistì, protoe jsi dost bystrı, kdy jsi to našel, tak mùeš nìjakı dostat. 10 nugetù za kus.
+	AI_Output (other, self,"VLK_583_Glen_LOCKPICK_15_01"); //SlyÅ¡el jsem, Å¾e bych tu dostal paklÃ­Äe?
+	AI_Output (self, other,"VLK_583_Glen_LOCKPICK_02_02"); //JistÄ›, protoÅ¾e jsi dost bystrÃ½, kdyÅ¾ jsi to naÅ¡el, tak mÅ¯Å¾eÅ¡ nÄ›jakÃ½ dostat. 10 nugetÅ¯ za kus.
 	
 	
 };
@@ -86,7 +86,7 @@ instance  VLK_583_Glen_BUY (C_INFO)
 	information	=  VLK_583_Glen_BUY_Info;
 	important	= 0;	
 	permanent	= 1;
-	description = "(kup paklíèe)";
+	description = "(kup paklÃ­Äe)";
 	trade		= 1;
 };                       
 
@@ -99,7 +99,7 @@ FUNC int  VLK_583_Glen_BUY_Condition()
 };
 FUNC VOID  VLK_583_Glen_BUY_Info()
 {
-	AI_Output (other, self,"VLK_583_Glen_BUY_Info_15_01"); //Chci koupit paklíèe.
+	AI_Output (other, self,"VLK_583_Glen_BUY_Info_15_01"); //Chci koupit paklÃ­Äe.
 	
 	
 	

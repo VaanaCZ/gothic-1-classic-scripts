@@ -25,7 +25,7 @@ INSTANCE ItWrTemplemap(C_Item)
 	scemeName			=	"MAP";
 	on_state[0]			=	UseTemplemap;
 
-	description			= "Náèrt chrámu";
+	description			= "NÃ¡Ärt chrÃ¡mu";
 	TEXT[4]				= NAME_Value;					COUNT[4]	= value;
 };
 
@@ -74,7 +74,7 @@ INSTANCE ItMiAlarmhorn (C_Item)
 };
 
 //---------------------------------------------------------------------
-//	Statuette für Tür zum Alten Tempel
+//	Statuette fÃ¼r TÃ¼r zum Alten Tempel
 //---------------------------------------------------------------------
 INSTANCE ItMi_Stuff_Idol_Sleeper_01 (C_Item)
 {
@@ -89,17 +89,17 @@ INSTANCE ItMi_Stuff_Idol_Sleeper_01 (C_Item)
 	material 			=	MAT_CLAY;
 
 	description			=	name;
-	TEXT[0]				= "Toto je figurka znetvoøené";
+	TEXT[0]				= "Toto je figurka znetvoÅ™enÃ©";
 	TEXT[1]				= "bytosti s maskou.";
-	TEXT[2]				= "Maska je zakonèena šesti velkımi ostny.";
+	TEXT[2]				= "Maska je zakonÄena Å¡esti velkÃ½mi ostny.";
 };
 
 //---------------------------------------------------------------------
-//	Schläferschwert 1
+//	SchlÃ¤ferschwert 1
 //---------------------------------------------------------------------
 INSTANCE Weltenspalter (C_Item) 
 {	
-	name 				=	"Rozkol svìtù";
+	name 				=	"Rozkol svÄ›tÅ¯";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_2HD_SWD|ITEM_MISSION;
@@ -114,20 +114,20 @@ INSTANCE Weltenspalter (C_Item)
 	cond_value[2]  		= 	30;
 	visual 				=	"ItMi_SleeperKey_01.3DS";
 	description			= 	name;
-	TEXT[0]				=	"To byl meè nemrtvého";
-	TEXT[1]				=	"skøetího knìze Varrag-Hashora.";
-	TEXT[2]				=	"Bìhem èasu se tato zbraò";
-	TEXT[3]				=	"stala nepouitelnou.";
-	TEXT[4]				=	"Moná by ten meè bylo";
-	TEXT[5]				=	"moné pouít jinak.";
+	TEXT[0]				=	"To byl meÄ nemrtvÃ©ho";
+	TEXT[1]				=	"skÅ™etÃ­ho knÄ›ze Varrag-Hashora.";
+	TEXT[2]				=	"BÄ›hem Äasu se tato zbraÅˆ";
+	TEXT[3]				=	"stala nepouÅ¾itelnou.";
+	TEXT[4]				=	"MoÅ¾nÃ¡ by ten meÄ bylo";
+	TEXT[5]				=	"moÅ¾nÃ© pouÅ¾Ã­t jinak.";
 };
 
 //---------------------------------------------------------------------
-//	Schläferschwert 2
+//	SchlÃ¤ferschwert 2
 //---------------------------------------------------------------------
 INSTANCE Lichtbringer (C_Item) 
 {	
-	name 				=	"Ostøí blesku";
+	name 				=	"OstÅ™Ã­ blesku";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_2HD_SWD|ITEM_MISSION;	
@@ -142,20 +142,20 @@ INSTANCE Lichtbringer (C_Item)
 	cond_value[2]  		= 	30;
 	visual 				=	"ItMi_SleeperKey_01.3DS";
 	description			= 	name;
-	TEXT[0]				=	"To byl meè nemrtvého";
-	TEXT[1]				=	"skøetího knìze Varrag-Kasorga.";
-	TEXT[2]				=	"Bìhem èasu se tato zbraò";
-	TEXT[3]				=	"stala nepouitelnou.";
-	TEXT[4]				=	"Moná by ten meè bylo";
-	TEXT[5]				=	"moné pouít jinak.";
+	TEXT[0]				=	"To byl meÄ nemrtvÃ©ho";
+	TEXT[1]				=	"skÅ™etÃ­ho knÄ›ze Varrag-Kasorga.";
+	TEXT[2]				=	"BÄ›hem Äasu se tato zbraÅˆ";
+	TEXT[3]				=	"stala nepouÅ¾itelnou.";
+	TEXT[4]				=	"MoÅ¾nÃ¡ by ten meÄ bylo";
+	TEXT[5]				=	"moÅ¾nÃ© pouÅ¾Ã­t jinak.";
 };
 
 //---------------------------------------------------------------------
-//	Schläferschwert 3
+//	SchlÃ¤ferschwert 3
 //---------------------------------------------------------------------
 INSTANCE Zeitenklinge (C_Item) 
 {	
-	name 				=	"Ostøí èasu";
+	name 				=	"OstÅ™Ã­ Äasu";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_2HD_SWD|ITEM_MISSION;	
@@ -170,20 +170,20 @@ INSTANCE Zeitenklinge (C_Item)
 	cond_value[2]  		= 	30;
 	visual 				=	"ItMi_SleeperKey_01.3DS";
 	description			= 	name;
-	TEXT[0]				=	"To byl meè nemrtvého";
-	TEXT[1]				=	"skøetího knìze Varrag-Unhilqta.";
-	TEXT[2]				=	"Bìhem èasu se tato zbraò";
-	TEXT[3]				=	"stala nepouitelnou.";
-	TEXT[4]				=	"Moná by ten meè bylo";
-	TEXT[5]				=	"moné pouít jinak.";
+	TEXT[0]				=	"To byl meÄ nemrtvÃ©ho";
+	TEXT[1]				=	"skÅ™etÃ­ho knÄ›ze Varrag-Unhilqta.";
+	TEXT[2]				=	"BÄ›hem Äasu se tato zbraÅˆ";
+	TEXT[3]				=	"stala nepouÅ¾itelnou.";
+	TEXT[4]				=	"MoÅ¾nÃ¡ by ten meÄ bylo";
+	TEXT[5]				=	"moÅ¾nÃ© pouÅ¾Ã­t jinak.";
 };
 
 //---------------------------------------------------------------------
-//	Schläferschwert 4
+//	SchlÃ¤ferschwert 4
 //---------------------------------------------------------------------
 INSTANCE Daemonenstreich (C_Item) 
 {	
-	name 				=	"Úder démona";
+	name 				=	"Ãšder dÃ©mona";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_2HD_SWD|ITEM_MISSION;	
@@ -198,20 +198,20 @@ INSTANCE Daemonenstreich (C_Item)
 	cond_value[2]  		= 	30;
 	visual 				=	"ItMi_SleeperKey_01.3DS";
 	description			= 	name;
-	TEXT[0]				=	"To byl meè nemrtvého";
-	TEXT[1]				=	"skøetího knìze Varrag-Ruuushka.";
-	TEXT[2]				=	"Bìhem èasu se tato zbraò";
-	TEXT[3]				=	"stala nepouitelnou.";
-	TEXT[4]				=	"Moná by ten meè bylo";
-	TEXT[5]				=	"moné pouít jinak.";
+	TEXT[0]				=	"To byl meÄ nemrtvÃ©ho";
+	TEXT[1]				=	"skÅ™etÃ­ho knÄ›ze Varrag-Ruuushka.";
+	TEXT[2]				=	"BÄ›hem Äasu se tato zbraÅˆ";
+	TEXT[3]				=	"stala nepouÅ¾itelnou.";
+	TEXT[4]				=	"MoÅ¾nÃ¡ by ten meÄ bylo";
+	TEXT[5]				=	"moÅ¾nÃ© pouÅ¾Ã­t jinak.";
 };
 
 //---------------------------------------------------------------------
-//	Schläferschwert 5
+//	SchlÃ¤ferschwert 5
 //---------------------------------------------------------------------
 INSTANCE Bannklinge (C_Item) 
 {	
-	name 				=	"Ostøí vyhnanství";
+	name 				=	"OstÅ™Ã­ vyhnanstvÃ­";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_2HD_SWD|ITEM_MISSION;	
@@ -226,20 +226,20 @@ INSTANCE Bannklinge (C_Item)
 	cond_value[2]  		= 	30;
 	visual 				=	"ItMi_SleeperKey_01.3DS";
 	description			= 	name;
-	TEXT[0]				=	"To byl meè nemrtvého";
-	TEXT[1]				=	"To byl meè nemrtvého mocného";
-	TEXT[2]				=	"Bìhem èasu se tato zbraò";
-	TEXT[3]				=	"stala nepouitelnou.";
-	TEXT[4]				=	"Moná by ten meè bylo";
-	TEXT[5]				=	"moné pouít jinak.";
+	TEXT[0]				=	"To byl meÄ nemrtvÃ©ho";
+	TEXT[1]				=	"To byl meÄ nemrtvÃ©ho mocnÃ©ho";
+	TEXT[2]				=	"BÄ›hem Äasu se tato zbraÅˆ";
+	TEXT[3]				=	"stala nepouÅ¾itelnou.";
+	TEXT[4]				=	"MoÅ¾nÃ¡ by ten meÄ bylo";
+	TEXT[5]				=	"moÅ¾nÃ© pouÅ¾Ã­t jinak.";
 };
 
 //---------------------------------------------------------------------
-//	Schwert für den Untoten Ork-Hohepriester (unidentifiziert)
+//	Schwert fÃ¼r den Untoten Ork-Hohepriester (unidentifiziert)
 //---------------------------------------------------------------------
 INSTANCE Mythrilklinge (C_Item) 
 {	
-	name 				=	"Podivnı meè";
+	name 				=	"PodivnÃ½ meÄ";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_2HD_SWD|ITEM_MISSION;	
@@ -254,15 +254,15 @@ INSTANCE Mythrilklinge (C_Item)
 	cond_value[2]  		= 	30;
 	visual 				=	"ItMw_2H_Sword_Sleeper_01.3DS";
 	description			= 	name;
-	TEXT[0]				=	"Krásnì provedenı meè.";
-	TEXT[1]				=	"Jsou do nìj vyryty starodávné runy";
-	TEXT[2]				=	"Moná by ty runy dokázal rozluštit Xardas!";
-	TEXT[3]				=	"Dokud je nerozluští,";
-	TEXT[4]				=	" nebudu meè radìji pouívat!";
+	TEXT[0]				=	"KrÃ¡snÄ› provedenÃ½ meÄ.";
+	TEXT[1]				=	"Jsou do nÄ›j vyryty starodÃ¡vnÃ© runy";
+	TEXT[2]				=	"MoÅ¾nÃ¡ by ty runy dokÃ¡zal rozluÅ¡tit Xardas!";
+	TEXT[3]				=	"Dokud je nerozluÅ¡tÃ­,";
+	TEXT[4]				=	" nebudu meÄ radÄ›ji pouÅ¾Ã­vat!";
 };
 
 //---------------------------------------------------------------------
-//	Schwert für den Untoten Ork-Hohepriester (identifiziert)
+//	Schwert fÃ¼r den Untoten Ork-Hohepriester (identifiziert)
 //---------------------------------------------------------------------
 instance Mythrilklinge01 (C_Item) 
 {	
@@ -282,9 +282,9 @@ instance Mythrilklinge01 (C_Item)
 	visual 				=	"ItMw_2H_Sword_Sleeper_01.3DS";
 
 	description			= 	name;
-	TEXT[0]				=	"Xardas øekl, e se ten meè jmenuje URIZIEL a";
-	TEXT[1]				=	"pøedpokládá, e je velmi starı. Pøed dávnımi èasy";
-	TEXT[2]				=	"mìl velkou moc, ale u své kouzlo ztratil.";
+	TEXT[0]				=	"Xardas Å™ekl, Å¾e se ten meÄ jmenuje URIZIEL a";
+	TEXT[1]				=	"pÅ™edpoklÃ¡dÃ¡, Å¾e je velmi starÃ½. PÅ™ed dÃ¡vnÃ½mi Äasy";
+	TEXT[2]				=	"mÄ›l velkou moc, ale uÅ¾ svÃ© kouzlo ztratil.";
 
 	TEXT[3]				=	NAME_Damage;				COUNT[3] =	damageTotal;
 	TEXT[4] 			=	NAME_Str_needed;			COUNT[4] =	cond_value[2];
@@ -292,7 +292,7 @@ instance Mythrilklinge01 (C_Item)
 };
 
 //---------------------------------------------------------------------
-//	Schwert für den Untoten Ork-Hohepriester (aufgeladen)
+//	Schwert fÃ¼r den Untoten Ork-Hohepriester (aufgeladen)
 //---------------------------------------------------------------------
 instance Mythrilklinge02 (C_Item) 
 {	
@@ -317,8 +317,8 @@ instance Mythrilklinge02 (C_Item)
 	cond_value[2]  		= 	30;
 	visual 				=	"ItMw_2H_Sword_Sleeper_02.3DS";
 	description			= 	name;
-	TEXT[0]				=	"To je meè URIZIEL.";
-	TEXT[1]				= 	"Uriziel je obdaøen kouzlem.";
+	TEXT[0]				=	"To je meÄ URIZIEL.";
+	TEXT[1]				= 	"Uriziel je obdaÅ™en kouzlem.";
 	TEXT[2]				=	NAME_Dam_Magic;			COUNT[2]	=	damage[DAM_INDEX_MAGIC];
 	TEXT[3]				=	NAME_Dam_Fire;			COUNT[3]	=	damage[DAM_INDEX_FIRE];
 	TEXT[4] 			=	NAME_Str_needed;		COUNT[4]	=	cond_value[2];
@@ -346,20 +346,20 @@ instance Mythrilklinge03 (C_Item)
 	visual 				=	"ItMw_2H_Sword_Sleeper_01.3DS";
 
 	description			= 	name;
-	TEXT[0]				=	"Z jeho èepele byl odstranìn magickı";
-	TEXT[1]				=	"klenot. Je to stále vynikající zbraò, ale své";
-	TEXT[2]				=	"kouzlo ji ztratila.";
+	TEXT[0]				=	"Z jeho Äepele byl odstranÄ›n magickÃ½";
+	TEXT[1]				=	"klenot. Je to stÃ¡le vynikajÃ­cÃ­ zbraÅˆ, ale svÃ©";
+	TEXT[2]				=	"kouzlo jiÅ¾ ztratila.";
 	TEXT[3]				=	NAME_Damage;				COUNT[3] =	damageTotal;
 	TEXT[4] 			=	NAME_Str_needed;			COUNT[4] =	cond_value[2];
 	TEXT[5]				=	NAME_Value;					COUNT[5] =	value;
 };
 
 //---------------------------------------------------------------------
-//	Schriftrolle, um Schwert für den untoten Ork-Hohepriester zu laden
+//	Schriftrolle, um Schwert fÃ¼r den untoten Ork-Hohepriester zu laden
 //---------------------------------------------------------------------
 INSTANCE Scroll4Milten (C_Item)
 {	
-	name 				=	"Pøenos síly";
+	name 				=	"PÅ™enos sÃ­ly";
 
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION;
@@ -371,17 +371,17 @@ INSTANCE Scroll4Milten (C_Item)
 
 //	scemeName			=	"MAP";
 	description			= name;
-	TEXT[0]				= "Kouzlo pøenosu magické";
-	TEXT[1]				= "síly do Urizielu.";
- 	TEXT[2]				= "Nemùu jej pouít.";
+	TEXT[0]				= "Kouzlo pÅ™enosu magickÃ©";
+	TEXT[1]				= "sÃ­ly do Urizielu.";
+ 	TEXT[2]				= "NemÅ¯Å¾u jej pouÅ¾Ã­t.";
 };
 
 //---------------------------------------------------------------------
-//	Schlüssel zum Versunkenen Turm
+//	SchlÃ¼ssel zum Versunkenen Turm
 //---------------------------------------------------------------------
 INSTANCE ItKe_SunkenTower(C_Item)
 {
-	name 				=	"Klíè";
+	name 				=	"KlÃ­Ä";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MISSION;
@@ -392,16 +392,16 @@ INSTANCE ItKe_SunkenTower(C_Item)
 	material 			=	MAT_METAL;
 
 	description			=	name;
-	TEXT[0]				=	"Otevøe dveøe do";
-	TEXT[1]				=	"zatopené vìe.";
+	TEXT[0]				=	"OtevÅ™e dveÅ™e do";
+	TEXT[1]				=	"zatopenÃ© vÄ›Å¾e.";
 };
 
 //---------------------------------------------------------------------
-//	Kerkerschlüssel
+//	KerkerschlÃ¼ssel
 //---------------------------------------------------------------------
 INSTANCE DungeonKey(C_Item)
 {
-	name 				=	"Klíè od vìzení";
+	name 				=	"KlÃ­Ä od vÄ›zenÃ­";
 
 	mainflag 				=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MISSION;
@@ -412,8 +412,8 @@ INSTANCE DungeonKey(C_Item)
 	material 				=	MAT_METAL;
 
 	description			= name;
-	TEXT[0]				= "Otevøe vìzení";
-	TEXT[0]				= "Starého tábora.";
+	TEXT[0]				= "OtevÅ™e vÄ›zenÃ­";
+	TEXT[0]				= "StarÃ©ho tÃ¡bora.";
 };
 
 
@@ -422,7 +422,7 @@ INSTANCE DungeonKey(C_Item)
 //---------------------------------------------------------------------
 INSTANCE UrizielRune (C_Item)
 {
-	name 				=	"Smrtelná vlna URIZIELU";
+	name 				=	"SmrtelnÃ¡ vlna URIZIELU";
 
 	mainflag 			=	ITEM_KAT_RUNE;
 	flags 				=	ITEM_MISSION;
@@ -436,8 +436,8 @@ INSTANCE UrizielRune (C_Item)
 	mag_circle 			=	6;
 
 	description			=	name;
-	TEXT	[0]			=	"Tato mocná kouzelná runa obsahuje";
-	TEXT	[1]			=	"prastarou sílu meèe URIZIEL.";
+	TEXT	[0]			=	"Tato mocnÃ¡ kouzelnÃ¡ runa obsahuje";
+	TEXT	[1]			=	"prastarou sÃ­lu meÄe URIZIEL.";
 	TEXT	[2]			=	NAME_Mag_Circle;			COUNT	[2]		=	mag_circle;
 	TEXT	[3]			=	NAME_Manakosten;			COUNT	[3]		=	SPL_SENDCAST_MASSDEATH;
 	TEXT	[4]			=	NAME_Dam_Magic;				COUNT	[4]		=	SPL_DAMAGE_MASSDEATH;

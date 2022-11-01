@@ -46,11 +46,11 @@ FUNC INT DIA_Herek_Bully_Condition()
 
 FUNC VOID DIA_Herek_Bully_Info()
 {
-	AI_Output (self, other,"DIA_Herek_Bully_01_00"); //Zadr! Slyšel jsem, e jsi mluvil s Bloodwynem?
-	AI_Output (other, self,"DIA_Herek_Bully_15_01"); //Proè? Co chceš?
-	AI_Output (self, other,"DIA_Herek_Bully_01_02"); //To bylo vánì moudré, odmítnout mu zaplatit peníze za ochranu!
-	AI_Output (self, other,"DIA_Herek_Bully_01_03"); //To znamená, e my ostatní musíme platit tvùj podíl!
-	AI_Output (self, other,"DIA_Herek_Bully_01_04"); //Postarám se, aby sis na to pøíštì vzpomnìl, a s ním budeš zase mluvit...
+	AI_Output (self, other,"DIA_Herek_Bully_01_00"); //ZadrÅ¾! SlyÅ¡el jsem, Å¾e jsi mluvil s Bloodwynem?
+	AI_Output (other, self,"DIA_Herek_Bully_15_01"); //ProÄ? Co chceÅ¡?
+	AI_Output (self, other,"DIA_Herek_Bully_01_02"); //To bylo vÃ¡Å¾nÄ› moudrÃ©, odmÃ­tnout mu zaplatit penÃ­ze za ochranu!
+	AI_Output (self, other,"DIA_Herek_Bully_01_03"); //To znamenÃ¡, Å¾e my ostatnÃ­ musÃ­me platit tvÅ¯j podÃ­l!
+	AI_Output (self, other,"DIA_Herek_Bully_01_04"); //PostarÃ¡m se, aby sis na to pÅ™Ã­Å¡tÄ› vzpomnÄ›l, aÅ¾ s nÃ­m budeÅ¡ zase mluvit...
 	
 	Npc_SetPermAttitude (self,ATT_ANGRY);
 	
@@ -85,10 +85,10 @@ FUNC INT DIA_Herek_Motz_Condition()
 FUNC VOID DIA_Herek_Motz_Info()
 {
 	AI_Output (other, self,"DIA_Herek_Motz_15_00"); //A jak to jde?
-	AI_Output (self, other,"DIA_Herek_Motz_01_01"); //V tomhle táboøe není pro nás dva dost místa!
-	AI_Output (other, self,"DIA_Herek_Motz_15_02"); //Prosím?
-	AI_Output (self, other,"DIA_Herek_Motz_01_03"); //Kdyby bylo po mém, u bys tu pìknì dlouho nebyl!
-	AI_Output (self, other,"DIA_Herek_Motz_01_04"); //Víš, proè tady jsem? Bìhem jedné noci, jako je tahle, jsem zabil tucet lidí... hehehe!
+	AI_Output (self, other,"DIA_Herek_Motz_01_01"); //V tomhle tÃ¡boÅ™e nenÃ­ pro nÃ¡s dva dost mÃ­sta!
+	AI_Output (other, self,"DIA_Herek_Motz_15_02"); //ProsÃ­m?
+	AI_Output (self, other,"DIA_Herek_Motz_01_03"); //Kdyby bylo po mÃ©m, uÅ¾ bys tu pÄ›knÄ› dlouho nebyl!
+	AI_Output (self, other,"DIA_Herek_Motz_01_04"); //VÃ­Å¡, proÄ tady jsem? BÄ›hem jednÃ© noci, jako je tahle, jsem zabil tucet lidÃ­... hehehe!
 	
 	Npc_SetPermAttitude (self,ATT_ANGRY);
 		
@@ -106,7 +106,7 @@ INSTANCE DIA_Herek_Anlegen (C_INFO)
 	condition		= DIA_Herek_Anlegen_Condition;
 	information		= DIA_Herek_Anlegen_Info;
 	permanent		= 1;
-	description		= "Take si myslíš, e jsi jeden z tìch divokejch chlapíkù, ne? Proè to teda nezkusíš se mnou...";
+	description		= "TakÅ¾e si myslÃ­Å¡, Å¾e jsi jeden z tÄ›ch divokejch chlapÃ­kÅ¯, ne? ProÄ to teda nezkusÃ­Å¡ se mnou...";
 };
 
 FUNC INT DIA_Herek_Anlegen_Condition()
@@ -119,8 +119,8 @@ FUNC INT DIA_Herek_Anlegen_Condition()
 
 FUNC VOID DIA_Herek_Anlegen_Info()
 {
-	AI_Output (other, self,"DIA_Herek_Anlegen_15_00"); //Take si myslíš, e jsi jeden z tìch divokejch chlapíkù, ne? Proè to teda nezkusíš na mnì...
-	AI_Output (self, other,"DIA_Herek_Anlegen_01_01"); //Chceš dostat nakládaèku? Dobøe, jestli to opravdu chceš!
+	AI_Output (other, self,"DIA_Herek_Anlegen_15_00"); //TakÅ¾e si myslÃ­Å¡, Å¾e jsi jeden z tÄ›ch divokejch chlapÃ­kÅ¯, ne? ProÄ to teda nezkusÃ­Å¡ na mnÄ›...
+	AI_Output (self, other,"DIA_Herek_Anlegen_01_01"); //ChceÅ¡ dostat naklÃ¡daÄku? DobÅ™e, jestli to opravdu chceÅ¡!
 	
 	AI_StopProcessInfos	(self);
 	

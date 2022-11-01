@@ -26,14 +26,14 @@ func VOID Info_Gorn_EXIT_Info()
 	}
 	else
 	{
-		AI_Output (self, other,"Info_Gorn_EXIT_09_02"); //Ještì se uvidíme.
+		AI_Output (self, other,"Info_Gorn_EXIT_09_02"); //JeÅ¡tÄ› se uvidÃ­me.
 	};
 	
 	AI_StopProcessInfos	( self );
 };
 
 //*************************************
-//			1. Begrüßung
+//			1. BegrÃ¼ÃŸung
 //*************************************
 
 instance DIA_Gorn_First (C_INFO)
@@ -56,9 +56,9 @@ FUNC int DIA_Gorn_First_Condition()
 
 func void DIA_Gorn_First_Info()
 {
-	AI_Output (self, other,"DIA_Gorn_First_09_00"); //Hej. Nová tváø.
+	AI_Output (self, other,"DIA_Gorn_First_09_00"); //Hej. NovÃ¡ tvÃ¡Å™.
 	AI_Output (other, self,"DIA_Gorn_First_15_01"); //Kdo jsi?
-	AI_Output (self, other,"DIA_Gorn_First_09_02"); //Jsem Gorn, oldák mágù.
+	AI_Output (self, other,"DIA_Gorn_First_09_02"); //Jsem Gorn, Å¾oldÃ¡k mÃ¡gÅ¯.
 };
 
 //*************************************
@@ -72,7 +72,7 @@ instance DIA_Gorn_Leben (C_INFO)
 	condition		= Dia_Gorn_Leben_Condition;
 	information		= Dia_Gorn_Leben_Info;
 	permanent		= 0;
-	description		= "Co musíš dìlat jako oldák mágù?";
+	description		= "Co musÃ­Å¡ dÄ›lat jako Å¾oldÃ¡k mÃ¡gÅ¯?";
 };
 
 FUNC int DIA_Gorn_Leben_Condition()
@@ -85,14 +85,14 @@ FUNC int DIA_Gorn_Leben_Condition()
 
 func void DIA_Gorn_Leben_Info()
 {
-	AI_Output (other, self,"DIA_Gorn_Leben_15_00"); //Co musíš dìlat jako oldák mágù?
-	AI_Output (self, other,"DIA_Gorn_Leben_09_01"); //Lee uzavøel s mágy smlouvu. Pronajímá nejlepší bojovníky, jaké je moné v kolonii najít. Tedy nás.
-	AI_Output (self, other,"DIA_Gorn_Leben_09_02"); //Staráme se o to, aby rudaøi mohli tìit rudu a nebyli pøitom obtìováni a chráníme mágy pøed nesnázemi.
-	AI_Output (self, other,"DIA_Gorn_Leben_09_03"); //Mágové se postarají, abychom odsud mohli odejít. A my dostáváme malı podíl rudy jako plat.
+	AI_Output (other, self,"DIA_Gorn_Leben_15_00"); //Co musÃ­Å¡ dÄ›lat jako Å¾oldÃ¡k mÃ¡gÅ¯?
+	AI_Output (self, other,"DIA_Gorn_Leben_09_01"); //Lee uzavÅ™el s mÃ¡gy smlouvu. PronajÃ­mÃ¡ nejlepÅ¡Ã­ bojovnÃ­ky, jakÃ© je moÅ¾nÃ© v kolonii najÃ­t. Tedy nÃ¡s.
+	AI_Output (self, other,"DIA_Gorn_Leben_09_02"); //StarÃ¡me se o to, aby rudaÅ™i mohli tÄ›Å¾it rudu a nebyli pÅ™itom obtÄ›Å¾ovÃ¡ni a chrÃ¡nÃ­me mÃ¡gy pÅ™ed nesnÃ¡zemi.
+	AI_Output (self, other,"DIA_Gorn_Leben_09_03"); //MÃ¡govÃ© se postarajÃ­, abychom odsud mohli odejÃ­t. A my dostÃ¡vÃ¡me malÃ½ podÃ­l rudy jako plat.
 };
 
 //*************************************
-//			Hütte (Shrike)
+//			HÃ¼tte (Shrike)
 //*************************************
 	var int Gorn_ShrikesHut;
 //*************************************
@@ -104,7 +104,7 @@ instance DIA_Gorn_Hut (C_INFO)
 	condition		= Dia_Gorn_Hut_Condition;
 	information		= Dia_Gorn_Hut_Info;
 	permanent		= 0;
-	description		= "Mùu tu nìkde zùstat?";
+	description		= "MÅ¯Å¾u tu nÄ›kde zÅ¯stat?";
 };
 
 FUNC int DIA_Gorn_Hut_Condition()
@@ -117,21 +117,21 @@ FUNC int DIA_Gorn_Hut_Condition()
 
 func void DIA_Gorn_Hut_Info()
 {
-	AI_Output (other, self,"DIA_Gorn_Hut_15_00"); //Mùu tu nìkde zùstat, ani bych musel nìkoho vykopnout z jeho chatrèe?
-	AI_Output (self, other,"DIA_Gorn_Hut_09_01"); //Myslím, e ne. Ale jestli to opravdu chceš, zajdi za Shrikem.
-	AI_Output (self, other,"DIA_Gorn_Hut_09_02"); //Má chatrè úplnì vpøedu, u vchodu do jeskynì. Byla prázdná - ale vlastnì patøila nám.
-	AI_Output (other, self,"DIA_Gorn_Hut_15_03"); //Nám?
-	AI_Output (self, other,"DIA_Gorn_Hut_09_04"); //Ano, nám oldákùm. oldáci a bandité tu ijí zvláš. A nikdo z Laresovy tlupy by tady, na stranì velké propasti, nemìl co pohledávat.
-	AI_Output (self, other,"DIA_Gorn_Hut_09_05"); //Ve skuteènosti v tom není velkı rozdíl. On se ale nikoho nezeptal. A tìmhle banditùm nesmíš nechat úplnì všechno projít, protoe se z nich pak stanou opravdoví nafoukanci!
+	AI_Output (other, self,"DIA_Gorn_Hut_15_00"); //MÅ¯Å¾u tu nÄ›kde zÅ¯stat, aniÅ¾ bych musel nÄ›koho vykopnout z jeho chatrÄe?
+	AI_Output (self, other,"DIA_Gorn_Hut_09_01"); //MyslÃ­m, Å¾e ne. Ale jestli to opravdu chceÅ¡, zajdi za Shrikem.
+	AI_Output (self, other,"DIA_Gorn_Hut_09_02"); //MÃ¡ chatrÄ ÃºplnÄ› vpÅ™edu, u vchodu do jeskynÄ›. Byla prÃ¡zdnÃ¡ - ale vlastnÄ› patÅ™ila nÃ¡m.
+	AI_Output (other, self,"DIA_Gorn_Hut_15_03"); //NÃ¡m?
+	AI_Output (self, other,"DIA_Gorn_Hut_09_04"); //Ano, nÃ¡m Å¾oldÃ¡kÅ¯m. Å½oldÃ¡ci a banditÃ© tu Å¾ijÃ­ zvlÃ¡Å¡Å¥. A nikdo z Laresovy tlupy by tady, na stranÄ› velkÃ© propasti, nemÄ›l co pohledÃ¡vat.
+	AI_Output (self, other,"DIA_Gorn_Hut_09_05"); //Ve skuteÄnosti v tom nenÃ­ velkÃ½ rozdÃ­l. On se ale nikoho nezeptal. A tÄ›mhle banditÅ¯m nesmÃ­Å¡ nechat ÃºplnÄ› vÅ¡echno projÃ­t, protoÅ¾e se z nich pak stanou opravdovÃ­ nafoukanci!
 
 	Log_CreateTopic		(CH1_ShrikesHut,	LOG_MISSION);
 	Log_SetTopicStatus	(CH1_ShrikesHut,	LOG_RUNNING);
-	B_LogEntry			(CH1_ShrikesHut,"oldák Gorn mi øekl, e mu Shrike bez dovolení zabral jeho chatrè. Poádal jsem Gorna, aby nikdo ze oldákù nezasahoval, dokud 'nepøesvìdèím' Shrika, aby si našel jinou chatrè.");
+	B_LogEntry			(CH1_ShrikesHut,"Å½oldÃ¡k Gorn mi Å™ekl, Å¾e mu Shrike bez dovolenÃ­ zabral jeho chatrÄ. PoÅ¾Ã¡dal jsem Gorna, aby nikdo ze Å¾oldÃ¡kÅ¯ nezasahoval, dokud 'nepÅ™esvÄ›dÄÃ­m' Shrika, aby si naÅ¡el jinou chatrÄ.");
 	Gorn_ShrikesHut = LOG_RUNNING;
 };
 
 //*************************************
-//			Hütte LEER (Shrike)
+//			HÃ¼tte LEER (Shrike)
 //*************************************
 
 instance DIA_Gorn_HutFree (C_INFO)
@@ -141,7 +141,7 @@ instance DIA_Gorn_HutFree (C_INFO)
 	condition		= Dia_Gorn_HutFree_Condition;
 	information		= Dia_Gorn_HutFree_Info;
 	permanent		= 0;
-	description		= "Shrike se pøestìhoval do jiné chatrèe.";
+	description		= "Shrike se pÅ™estÄ›hoval do jinÃ© chatrÄe.";
 };
 
 FUNC int DIA_Gorn_HutFree_Condition()
@@ -154,17 +154,17 @@ FUNC int DIA_Gorn_HutFree_Condition()
 
 func void DIA_Gorn_HutFree_Info()
 {
-	AI_Output			(other, self,"DIA_Gorn_HutFree_15_00"); //Shrike se pøestìhoval do jiné chatrèe.
-	AI_Output			(self, other,"DIA_Gorn_HutFree_09_01"); //Dobøe. Torlof mi právì øekl, e by si chtìl s tím chlapíkem promluvit.
+	AI_Output			(other, self,"DIA_Gorn_HutFree_15_00"); //Shrike se pÅ™estÄ›hoval do jinÃ© chatrÄe.
+	AI_Output			(self, other,"DIA_Gorn_HutFree_09_01"); //DobÅ™e. Torlof mi prÃ¡vÄ› Å™ekl, Å¾e by si chtÄ›l s tÃ­m chlapÃ­kem promluvit.
 
 	Gorn_ShrikesHut = LOG_SUCCESS;
 	Log_SetTopicStatus	(CH1_ShrikesHut,	LOG_SUCCESS);
-	B_LogEntry			(CH1_ShrikesHut,"Gorn byl velmi potìšen, kdy jsem Shrika vyrazil z jeho chatrèe. Myslím, e je to ten nejèestnìjší chlapík. Mìl bych s ním v budoucnu dret.");
+	B_LogEntry			(CH1_ShrikesHut,"Gorn byl velmi potÄ›Å¡en, kdyÅ¾ jsem Shrika vyrazil z jeho chatrÄe. MyslÃ­m, Å¾e je to ten nejÄestnÄ›jÅ¡Ã­ chlapÃ­k. MÄ›l bych s nÃ­m v budoucnu drÅ¾et.");
 	B_GiveXP			(XP_ReportedKickedShrike);
 };
 
 //*************************************
-//			Söldner werden
+//			SÃ¶ldner werden
 //*************************************
 
 instance DIA_Gorn_BecomeSLD (C_INFO)
@@ -174,7 +174,7 @@ instance DIA_Gorn_BecomeSLD (C_INFO)
 	condition		= Dia_Gorn_BecomeSLD_Condition;
 	information		= Dia_Gorn_BecomeSLD_Info;
 	permanent		= 0;
-	description		= "Co musím udìlat, abych se mohl pøidat k Novému táboru?";
+	description		= "Co musÃ­m udÄ›lat, abych se mohl pÅ™idat k NovÃ©mu tÃ¡boru?";
 };
 
 FUNC int DIA_Gorn_BecomeSLD_Condition()
@@ -188,10 +188,10 @@ FUNC int DIA_Gorn_BecomeSLD_Condition()
 
 func void DIA_Gorn_BecomeSLD_Info()
 {
-	AI_Output (other, self,"DIA_Gorn_BecomeSLD_15_00"); //Co musím udìlat, abych se mohl pøidat k Novému táboru?
-	AI_Output (self, other,"DIA_Gorn_BecomeSLD_09_01"); //Ne tì Lee uzná, musíš se nauèit lépe bojovat. Nezáleí na tom, jakou zbraò pouíváš, ale ty sám musíš bıt dobrı.
-	AI_Output (self, other,"DIA_Gorn_BecomeSLD_09_02"); //Kromì toho bys mìl mít velké zkušenosti se zdejším ivotem a tak.
-	AI_Output (self, other,"DIA_Gorn_BecomeSLD_09_03"); //Jestli nebudeš chtít do jinıch táborù, mohl by ses zkusit pøidat k banditùm, ne zaèneš jako oldák.
+	AI_Output (other, self,"DIA_Gorn_BecomeSLD_15_00"); //Co musÃ­m udÄ›lat, abych se mohl pÅ™idat k NovÃ©mu tÃ¡boru?
+	AI_Output (self, other,"DIA_Gorn_BecomeSLD_09_01"); //NeÅ¾ tÄ› Lee uznÃ¡, musÃ­Å¡ se nauÄit lÃ©pe bojovat. NezÃ¡leÅ¾Ã­ na tom, jakou zbraÅˆ pouÅ¾Ã­vÃ¡Å¡, ale ty sÃ¡m musÃ­Å¡ bÃ½t dobrÃ½.
+	AI_Output (self, other,"DIA_Gorn_BecomeSLD_09_02"); //KromÄ› toho bys mÄ›l mÃ­t velkÃ© zkuÅ¡enosti se zdejÅ¡Ã­m Å¾ivotem a tak.
+	AI_Output (self, other,"DIA_Gorn_BecomeSLD_09_03"); //Jestli nebudeÅ¡ chtÃ­t do jinÃ½ch tÃ¡borÅ¯, mohl by ses zkusit pÅ™idat k banditÅ¯m, neÅ¾ zaÄneÅ¡ jako Å¾oldÃ¡k.
 };
 
 /*
@@ -248,8 +248,8 @@ FUNC int DIA_Gorn_TRADE_Condition()
 
 func void DIA_Gorn_TRADE_Info()
 {
-	AI_Output (other, self,"DIA_Gorn_TRADE_15_00"); //Máš ještì víc tohohle zboí?
-	AI_Output (self, other,"DIA_Gorn_TRADE_09_01"); //Spousty. Chceš udìlat obchod?
+	AI_Output (other, self,"DIA_Gorn_TRADE_15_00"); //MÃ¡Å¡ jeÅ¡tÄ› vÃ­c tohohle zboÅ¾Ã­?
+	AI_Output (self, other,"DIA_Gorn_TRADE_09_01"); //Spousty. ChceÅ¡ udÄ›lat obchod?
 };
 
 //*************************************
@@ -263,7 +263,7 @@ instance DIA_Gorn_DuHehler (C_INFO)
 	condition		= Dia_Gorn_DuHehler_Condition;
 	information		= Dia_Gorn_DuHehler_Info;
 	permanent		= 0;
-	description		= "Proè ses zúèastnil útoku té tlupy?";
+	description		= "ProÄ ses zÃºÄastnil Ãºtoku tÃ© tlupy?";
 };
 
 FUNC int DIA_Gorn_DuHehler_Condition()
@@ -276,16 +276,16 @@ FUNC int DIA_Gorn_DuHehler_Condition()
 
 func void DIA_Gorn_DuHehler_Info()
 {
-	AI_Output (other, self,"DIA_Gorn_DuHehler_15_00"); //Proè ses zúèastnil útoku té tlupy?
-	AI_Output (self, other,"DIA_Gorn_DuHehler_09_01"); //Kdo to øíkal?
-	AI_Output (other, self,"DIA_Gorn_DuHehler_15_02"); //Kde bys teda potom vzal tolik toho zboí, kdyby to nebyla pravda?
-	AI_Output (self, other,"DIA_Gorn_DuHehler_09_03"); //Nemysli si, e je to všechno z JEDNÉ várky.
-	AI_Output (other, self,"DIA_Gorn_DuHehler_15_04"); //Úèastnil ses útokù pravidelnì?
-	AI_Output (self, other,"DIA_Gorn_DuHehler_09_05"); //Kdyby ano, tak bych ti to stejnì neøekl. Leeovi by se to pranic nelíbilo.
+	AI_Output (other, self,"DIA_Gorn_DuHehler_15_00"); //ProÄ ses zÃºÄastnil Ãºtoku tÃ© tlupy?
+	AI_Output (self, other,"DIA_Gorn_DuHehler_09_01"); //Kdo to Å™Ã­kal?
+	AI_Output (other, self,"DIA_Gorn_DuHehler_15_02"); //Kde bys teda potom vzal tolik toho zboÅ¾Ã­, kdyby to nebyla pravda?
+	AI_Output (self, other,"DIA_Gorn_DuHehler_09_03"); //Nemysli si, Å¾e je to vÅ¡echno z JEDNÃ‰ vÃ¡rky.
+	AI_Output (other, self,"DIA_Gorn_DuHehler_15_04"); //ÃšÄastnil ses ÃºtokÅ¯ pravidelnÄ›?
+	AI_Output (self, other,"DIA_Gorn_DuHehler_09_05"); //Kdyby ano, tak bych ti to stejnÄ› neÅ™ekl. Leeovi by se to pranic nelÃ­bilo.
 	AI_Output (other, self,"DIA_Gorn_DuHehler_15_06"); //Aha.
 	
 	CreateInvItems(self, ItFoApple, 21);
-	B_GiveInvItems	(self,other, ItFoApple,21); //Notwendig für Screenausgabe
+	B_GiveInvItems	(self,other, ItFoApple,21); //Notwendig fÃ¼r Screenausgabe
 	Npc_RemoveInvItems (other, ItFoApple,21);
 	
 	CreateInvItems(other, ItMw_1H_LightGuardsSword_03, 1);
@@ -334,9 +334,9 @@ func VOID Info_Gorn_NCWAIT_Info()
 {
 	AI_GotoNpc	(self,	hero);
 
-	AI_Output (self, other,"Info_Gorn_NCWAIT_09_01"); //Áhh, to jsi ty! Mùj pøítel Lester z tábora z bain mi øekl všechno o tom, cos tam dìlal.
-	AI_Output (self, other,"Info_Gorn_NCWAIT_09_02"); //Na nìkoho, kdo tu ještì není dlouho, máš u docela rozhled.
-	AI_Output (other, self,"Info_Gorn_NCWAIT_15_03"); //U jsem mìl taky párkrát namále, abych se nestal rádlem pro èervy.
+	AI_Output (self, other,"Info_Gorn_NCWAIT_09_01"); //Ãhh, to jsi ty! MÅ¯j pÅ™Ã­tel Lester z tÃ¡bora z baÅ¾in mi Å™ekl vÅ¡echno o tom, cos tam dÄ›lal.
+	AI_Output (self, other,"Info_Gorn_NCWAIT_09_02"); //Na nÄ›koho, kdo tu jeÅ¡tÄ› nenÃ­ dlouho, mÃ¡Å¡ uÅ¾ docela rozhled.
+	AI_Output (other, self,"Info_Gorn_NCWAIT_15_03"); //UÅ¾ jsem mÄ›l taky pÃ¡rkrÃ¡t namÃ¡le, abych se nestal Å¾rÃ¡dlem pro Äervy.
 };
 
 //***************************************************************************
@@ -349,7 +349,7 @@ INSTANCE Info_Gorn_MAGES (C_INFO)
 	information	= Info_Gorn_MAGES_Info;
 	important	= 0;	
 	permanent	= 0;
-	description	= "Mám dùleitou zprávu pro mágy Vody!";
+	description	= "MÃ¡m dÅ¯leÅ¾itou zprÃ¡vu pro mÃ¡gy Vody!";
 };                       
 
 FUNC INT Info_Gorn_MAGES_Condition()
@@ -362,11 +362,11 @@ FUNC INT Info_Gorn_MAGES_Condition()
 
 func VOID Info_Gorn_MAGES_Info()
 {
-	AI_Output (other, self,"Info_Gorn_MAGES_15_01"); //Mám dùleitou zprávu pro mágy Vody!
-	AI_Output (self, other,"Info_Gorn_MAGES_09_02"); //Pak bys mìl mluvit se Saturasem. Je nejvyšší z mágù Vody a celé dny tráví studiemi nìjakıch písemností nebo tak.
-	AI_Output (self, other,"Info_Gorn_MAGES_09_03"); //Bez ohledu na závanost té zprávy tì však stráe z horní roviny za ním nepustí.
-	AI_Output (other, self,"Info_Gorn_MAGES_15_04"); //Nemùeš se za mì pøimluvit?
-	AI_Output (self, other,"Info_Gorn_MAGES_09_05"); //Já ne, ale Cronos, stráce rudy, by ti mohl udìlit povolení.
+	AI_Output (other, self,"Info_Gorn_MAGES_15_01"); //MÃ¡m dÅ¯leÅ¾itou zprÃ¡vu pro mÃ¡gy Vody!
+	AI_Output (self, other,"Info_Gorn_MAGES_09_02"); //Pak bys mÄ›l mluvit se Saturasem. Je nejvyÅ¡Å¡Ã­ z mÃ¡gÅ¯ Vody a celÃ© dny trÃ¡vÃ­ studiemi nÄ›jakÃ½ch pÃ­semnostÃ­ nebo tak.
+	AI_Output (self, other,"Info_Gorn_MAGES_09_03"); //Bez ohledu na zÃ¡vaÅ¾nost tÃ© zprÃ¡vy tÄ› vÅ¡ak strÃ¡Å¾e z hornÃ­ roviny za nÃ­m nepustÃ­.
+	AI_Output (other, self,"Info_Gorn_MAGES_15_04"); //NemÅ¯Å¾eÅ¡ se za mÄ› pÅ™imluvit?
+	AI_Output (self, other,"Info_Gorn_MAGES_09_05"); //JÃ¡ ne, ale Cronos, strÃ¡Å¾ce rudy, by ti mohl udÄ›lit povolenÃ­.
 };
 
 //***************************************************************************
@@ -379,7 +379,7 @@ INSTANCE Info_Gorn_CRONOS (C_INFO)
 	information	= Info_Gorn_CRONOS_Info;
 	important	= 0;	
 	permanent	= 0;
-	description	= "Kde najdu toho 'stráce rudy'?";
+	description	= "Kde najdu toho 'strÃ¡Å¾ce rudy'?";
 };                       
 
 FUNC INT Info_Gorn_CRONOS_Condition()
@@ -392,16 +392,16 @@ FUNC INT Info_Gorn_CRONOS_Condition()
 
 func VOID Info_Gorn_CRONOS_Info()
 {
-	AI_Output			(other, self,"Info_Gorn_CRONOS_15_01"); //Kde najdu toho 'stráce rudy'?
-	AI_Output			(self, other,"Info_Gorn_CRONOS_09_01a");//Kdy vyjdeš odtud, projdeš velkou obytnou jeskyní za hrází.
-	AI_Output			(self, other,"Info_Gorn_CRONOS_09_02"); //Cronos obvykle bıvá u møíe pøed velkou haldou rudy.
-	AI_Output			(self, other,"Info_Gorn_CRONOS_09_03"); //Je ale trochu arogantní. Budeš ho muset pøesvìdèit, e je tvá zpráva dùleitá.
+	AI_Output			(other, self,"Info_Gorn_CRONOS_15_01"); //Kde najdu toho 'strÃ¡Å¾ce rudy'?
+	AI_Output			(self, other,"Info_Gorn_CRONOS_09_01a");//KdyÅ¾ vyjdeÅ¡ odtud, projdeÅ¡ velkou obytnou jeskynÃ­ za hrÃ¡zÃ­.
+	AI_Output			(self, other,"Info_Gorn_CRONOS_09_02"); //Cronos obvykle bÃ½vÃ¡ u mÅ™Ã­Å¾e pÅ™ed velkou haldou rudy.
+	AI_Output			(self, other,"Info_Gorn_CRONOS_09_03"); //Je ale trochu arogantnÃ­. BudeÅ¡ ho muset pÅ™esvÄ›dÄit, Å¾e je tvÃ¡ zprÃ¡va dÅ¯leÅ¾itÃ¡.
 
 	VAR C_NPC Cronos;
 	Cronos = Hlp_GetNpc(KdW_604_Cronos);
 	Cronos.aivar[AIV_FINDABLE] = TRUE;
 	
-	B_LogEntry		(CH3_EscapePlanNC,"Gorn mi poradil, abych šel pøímo za nejvyšším mágem Vody, Saturasem. Cronos, dritel rudy, mì vyslechne. Cronose je moné najít v chrámu u møíe nad rudnou haldou."); 
+	B_LogEntry		(CH3_EscapePlanNC,"Gorn mi poradil, abych Å¡el pÅ™Ã­mo za nejvyÅ¡Å¡Ã­m mÃ¡gem Vody, Saturasem. Cronos, drÅ¾itel rudy, mÄ› vyslechne. Cronose je moÅ¾nÃ© najÃ­t v chrÃ¡mu u mÅ™Ã­Å¾e nad rudnou haldou."); 
 
 	Npc_ExchangeRoutine	(self, "start");
 };
@@ -431,8 +431,8 @@ func VOID Info_Gorn_RUINWAIT_Info()
 {
 	AI_GotoNpc	(self,	hero);
 
-	AI_Output	(self, other,"Info_Gorn_RUINWAIT_09_01"); //Zdar, zelenáèi. Jak vidíš, kolonie je malá vesnice.
-	AI_Output	(self, other,"Info_Gorn_RUINWAIT_09_02"); //Není moné jít a nikoho nepotkat.
+	AI_Output	(self, other,"Info_Gorn_RUINWAIT_09_01"); //Zdar, zelenÃ¡Äi. Jak vidÃ­Å¡, kolonie je malÃ¡ vesnice.
+	AI_Output	(self, other,"Info_Gorn_RUINWAIT_09_02"); //NenÃ­ moÅ¾nÃ© jÃ­t a nikoho nepotkat.
 };
 
 //***************************************************************************
@@ -445,7 +445,7 @@ INSTANCE Info_Gorn_RUINWHAT (C_INFO)
 	information	= Info_Gorn_RUINWHAT_Info;
 	important	= 0;	
 	permanent	= 0;
-	description = "Co tady dìláš?";
+	description = "Co tady dÄ›lÃ¡Å¡?";
 };                       
 
 FUNC INT Info_Gorn_RUINWHAT_Condition()
@@ -458,17 +458,17 @@ FUNC INT Info_Gorn_RUINWHAT_Condition()
 
 func VOID Info_Gorn_RUINWHAT_Info()
 {
-	AI_Output 		(other, self,"Info_Gorn_RUINWHAT_15_01"); //Co tady dìláš?
-	AI_Output		(self, other,"Info_Gorn_RUINWHAT_09_02"); //Och, pokouším se vystopovat starou legendu.
+	AI_Output 		(other, self,"Info_Gorn_RUINWHAT_15_01"); //Co tady dÄ›lÃ¡Å¡?
+	AI_Output		(self, other,"Info_Gorn_RUINWHAT_09_02"); //Och, pokouÅ¡Ã­m se vystopovat starou legendu.
 	AI_Output		(other, self,"Info_Gorn_RUINWHAT_15_03"); //Legendu?
-	AI_Output 		(self, other,"Info_Gorn_RUINWHAT_09_04"); //Ano, Milten, mùj kamarád ze Starého tábora, mi øekl, e tady kdysi ili mniši.
-	AI_Output 		(self, other,"Info_Gorn_RUINWHAT_09_05"); //Samozøejmì, u dávno pøedtím, ne tady byla Bariéra.
-	AI_Output 		(self, other,"Info_Gorn_RUINWHAT_09_06"); //Øíká se, e uctívali boha, kterı jim dával moc promìòovat se ve zvíøata.
-	AI_Output 		(self, other,"Info_Gorn_RUINWHAT_09_07"); //Jsem pøesvìdèenı, e tady jsou stále ty poklady ze starıch dob.
+	AI_Output 		(self, other,"Info_Gorn_RUINWHAT_09_04"); //Ano, Milten, mÅ¯j kamarÃ¡d ze StarÃ©ho tÃ¡bora, mi Å™ekl, Å¾e tady kdysi Å¾ili mniÅ¡i.
+	AI_Output 		(self, other,"Info_Gorn_RUINWHAT_09_05"); //SamozÅ™ejmÄ›, uÅ¾ dÃ¡vno pÅ™edtÃ­m, neÅ¾ tady byla BariÃ©ra.
+	AI_Output 		(self, other,"Info_Gorn_RUINWHAT_09_06"); //Å˜Ã­kÃ¡ se, Å¾e uctÃ­vali boha, kterÃ½ jim dÃ¡val moc promÄ›Åˆovat se ve zvÃ­Å™ata.
+	AI_Output 		(self, other,"Info_Gorn_RUINWHAT_09_07"); //Jsem pÅ™esvÄ›dÄenÃ½, Å¾e tady jsou stÃ¡le ty poklady ze starÃ½ch dob.
 
 	if (!Npc_KnowsInfo(hero, Info_Gorn_RUINFOCUS))
 	{	
-		AI_Output	(self, other,"Info_Gorn_RUINWHAT_09_08"); //Co tì sem pøivedlo?
+		AI_Output	(self, other,"Info_Gorn_RUINWHAT_09_08"); //Co tÄ› sem pÅ™ivedlo?
 	};
 };
 
@@ -482,7 +482,7 @@ INSTANCE Info_Gorn_RUINFOCUS (C_INFO)
 	information	= Info_Gorn_RUINFOCUS_Info;
 	important	= 0;	
 	permanent	= 0;
-	description = "Hledám magické ohnisko.";
+	description = "HledÃ¡m magickÃ© ohnisko.";
 };                       
 
 FUNC INT Info_Gorn_RUINFOCUS_Condition()
@@ -495,9 +495,9 @@ FUNC INT Info_Gorn_RUINFOCUS_Condition()
 
 func VOID Info_Gorn_RUINFOCUS_Info()
 {
-	AI_Output (other, self,"Info_Gorn_RUINFOCUS_15_01"); //Hledám magické ohnisko.
-	AI_Output (other, self,"Info_Gorn_RUINFOCUS_15_02"); //Musí tady nìkde bıt.
-	AI_Output (self, other,"Info_Gorn_RUINFOCUS_09_03"); //Ta vìc, kterou hledáš, by mohla bıt ve zøíceninì kláštera za kaòonem.
+	AI_Output (other, self,"Info_Gorn_RUINFOCUS_15_01"); //HledÃ¡m magickÃ© ohnisko.
+	AI_Output (other, self,"Info_Gorn_RUINFOCUS_15_02"); //MusÃ­ tady nÄ›kde bÃ½t.
+	AI_Output (self, other,"Info_Gorn_RUINFOCUS_09_03"); //Ta vÄ›c, kterou hledÃ¡Å¡, by mohla bÃ½t ve zÅ™Ã­ceninÄ› klÃ¡Å¡tera za kaÅˆonem.
 };
 
 //***************************************************************************
@@ -510,7 +510,7 @@ INSTANCE Info_Gorn_RUINJOIN (C_INFO)
 	information	= Info_Gorn_RUINJOIN_Info;
 	important	= 0;	
 	permanent	= 0;
-	description = "Mohli bychom pokraèovat spoleènì.";
+	description = "Mohli bychom pokraÄovat spoleÄnÄ›.";
 };                       
 
 FUNC INT Info_Gorn_RUINJOIN_Condition()
@@ -523,18 +523,18 @@ FUNC INT Info_Gorn_RUINJOIN_Condition()
 
 func VOID Info_Gorn_RUINJOIN_Info()
 {
-	AI_Output (other, self,"Info_Gorn_RUINJOIN_15_01"); //Mohli bysme pokraèovat spoleènì.
-	AI_Output (self, other,"Info_Gorn_RUINJOIN_09_02"); //Dobrı nápad. Tahle oblast se hemí kousavci.
-	AI_Output (self, other,"Info_Gorn_RUINJOIN_09_03"); //Samotní nejsou pro zkušeného lovce problém, ale vìtšinou loví ve smeèkách.
-	AI_Output (self, other,"Info_Gorn_RUINJOIN_09_04"); //Smeèka mùe dokonce i toho nejudatnìjšího šermíøe roztrhat na kusy.
-	AI_Output (other, self,"Info_Gorn_RUINJOIN_15_05"); //Tak pùjdeme spolu?
-	AI_Output (self, other,"Info_Gorn_RUINJOIN_09_06"); //Dobøe, ale ještì ne vyrazíme, chtìl bych prozkoumat ten kaòon. Rád vím, co mám za zádama.
-	AI_Output (self, other,"Info_Gorn_RUINJOIN_09_07"); //Pojï se mnou, našel jsem cestu, po které pùjdeme.
+	AI_Output (other, self,"Info_Gorn_RUINJOIN_15_01"); //Mohli bysme pokraÄovat spoleÄnÄ›.
+	AI_Output (self, other,"Info_Gorn_RUINJOIN_09_02"); //DobrÃ½ nÃ¡pad. Tahle oblast se hemÅ¾Ã­ kousavci.
+	AI_Output (self, other,"Info_Gorn_RUINJOIN_09_03"); //SamotnÃ­ nejsou pro zkuÅ¡enÃ©ho lovce problÃ©m, ale vÄ›tÅ¡inou lovÃ­ ve smeÄkÃ¡ch.
+	AI_Output (self, other,"Info_Gorn_RUINJOIN_09_04"); //SmeÄka mÅ¯Å¾e dokonce i toho nejudatnÄ›jÅ¡Ã­ho Å¡ermÃ­Å™e roztrhat na kusy.
+	AI_Output (other, self,"Info_Gorn_RUINJOIN_15_05"); //Tak pÅ¯jdeme spolu?
+	AI_Output (self, other,"Info_Gorn_RUINJOIN_09_06"); //DobÅ™e, ale jeÅ¡tÄ› neÅ¾ vyrazÃ­me, chtÄ›l bych prozkoumat ten kaÅˆon. RÃ¡d vÃ­m, co mÃ¡m za zÃ¡dama.
+	AI_Output (self, other,"Info_Gorn_RUINJOIN_09_07"); //PojÄ se mnou, naÅ¡el jsem cestu, po kterÃ© pÅ¯jdeme.
 
 	Log_CreateTopic		(CH3_MonasteryRuin,	LOG_MISSION);
 	Log_SetTopicStatus	(CH3_MonasteryRuin,	LOG_RUNNING);
-	B_LogEntry			(CH3_MonasteryRuin,"Kdy jsem se pøiblíil k rozvalinám kláštera, potkal jsem oldáka Gorna. Vypravil se sem, aby tu hledal  starı poklad.");
-	B_LogEntry			(CH3_MonasteryRuin,"Budeme pokraèovat v pátrání spoleènì. Gorn mì varoval pøed velkımi smeèkami chòapavcù, které se v této oblasti vyskytují.");
+	B_LogEntry			(CH3_MonasteryRuin,"KdyÅ¾ jsem se pÅ™iblÃ­Å¾il k rozvalinÃ¡m klÃ¡Å¡tera, potkal jsem Å¾oldÃ¡ka Gorna. Vypravil se sem, aby tu hledal  starÃ½ poklad.");
+	B_LogEntry			(CH3_MonasteryRuin,"Budeme pokraÄovat v pÃ¡trÃ¡nÃ­ spoleÄnÄ›. Gorn mÄ› varoval pÅ™ed velkÃ½mi smeÄkami chÅˆapavcÅ¯, kterÃ© se v tÃ©to oblasti vyskytujÃ­.");
 
 	self.aivar[AIV_PARTYMEMBER] = TRUE;
 	AI_StopProcessInfos(self);
@@ -565,10 +565,10 @@ func VOID Info_Gorn_RUINABYSS_Info()
 {
 	AI_GotoNpc			(self,	hero);
 
-	AI_Output			(self, other,"Info_Gorn_RUINABYSS_09_01"); //Tomu se øíká štìstí. Urèitì tu bıvala zásobní jeskynì.
-	AI_Output			(self, other,"Info_Gorn_RUINABYSS_09_02"); //Tak si teï pøevezmi vedení, chtìl bych mít jistotu, e na zpáteèní cestì nezaijeme nìjaké pøekvapení.
+	AI_Output			(self, other,"Info_Gorn_RUINABYSS_09_01"); //Tomu se Å™Ã­kÃ¡ Å¡tÄ›stÃ­. UrÄitÄ› tu bÃ½vala zÃ¡sobnÃ­ jeskynÄ›.
+	AI_Output			(self, other,"Info_Gorn_RUINABYSS_09_02"); //Tak si teÄ pÅ™evezmi vedenÃ­, chtÄ›l bych mÃ­t jistotu, Å¾e na zpÃ¡teÄnÃ­ cestÄ› nezaÅ¾ijeme nÄ›jakÃ© pÅ™ekvapenÃ­.
 
-	B_LogEntry		(CH3_MonasteryRuin,"Nalezli jsme tajnou zásobovací jeskyni. Kromì toho jeden klíè a dva kouzelné svitky, které vypadaly velmi zajímavì.");
+	B_LogEntry		(CH3_MonasteryRuin,"Nalezli jsme tajnou zÃ¡sobovacÃ­ jeskyni. KromÄ› toho jeden klÃ­Ä a dva kouzelnÃ© svitky, kterÃ© vypadaly velmi zajÃ­mavÄ›.");
 
 	AI_StopProcessInfos	(self);
 	Npc_ExchangeRoutine	(self,	"RuinFollow");
@@ -600,9 +600,9 @@ func VOID Info_Gorn_RUINLEAVE_Info()
 {
 	AI_GotoNpc	(self,	hero);
 
-	AI_Output (self, other,"Info_Gorn_RUINLEAVE_09_01"); //Myslím, e u tì ta zøícenina kláštera pøestala zajímat.
-	AI_Output (self, other,"Info_Gorn_RUINLEAVE_09_02"); //Budu pokraèovat sám.
-	AI_Output (self, other,"Info_Gorn_RUINLEAVE_09_03"); //Jestli si to rozmyslíš, tak jdi za mnou.
+	AI_Output (self, other,"Info_Gorn_RUINLEAVE_09_01"); //MyslÃ­m, Å¾e uÅ¾ tÄ› ta zÅ™Ã­cenina klÃ¡Å¡tera pÅ™estala zajÃ­mat.
+	AI_Output (self, other,"Info_Gorn_RUINLEAVE_09_02"); //Budu pokraÄovat sÃ¡m.
+	AI_Output (self, other,"Info_Gorn_RUINLEAVE_09_03"); //Jestli si to rozmyslÃ­Å¡, tak jdi za mnou.
 
 	self.aivar[AIV_PARTYMEMBER] = FALSE;
 	Npc_ExchangeRoutine(self,	"RuinWall");
@@ -634,10 +634,10 @@ func VOID Info_Gorn_RUINWALL_Info()
 {
 	AI_GotoNpc			(self,	hero);
 
-	AI_Output			(self, other,"Info_Gorn_RUINWALL_09_01"); //Ta proklatá brána. Øíkají, e ji nikdo z kolonie nedokáe otevøít.
-	AI_Output			(self, other,"Info_Gorn_RUINWALL_09_02"); //Ty malé bestie jsou zøejmì jediné, co se dokáe dostat do vnitøního prostoru.
+	AI_Output			(self, other,"Info_Gorn_RUINWALL_09_01"); //Ta proklatÃ¡ brÃ¡na. Å˜Ã­kajÃ­, Å¾e ji nikdo z kolonie nedokÃ¡Å¾e otevÅ™Ã­t.
+	AI_Output			(self, other,"Info_Gorn_RUINWALL_09_02"); //Ty malÃ© bestie jsou zÅ™ejmÄ› jedinÃ©, co se dokÃ¡Å¾e dostat do vnitÅ™nÃ­ho prostoru.
 
-	B_LogEntry		(CH3_MonasteryRuin,"Stojíme pøímo pøed zavøenou bránou. Vypadá to, e zvenèí nepùjde otevøít.");
+	B_LogEntry		(CH3_MonasteryRuin,"StojÃ­me pÅ™Ã­mo pÅ™ed zavÅ™enou brÃ¡nou. VypadÃ¡ to, Å¾e zvenÄÃ­ nepÅ¯jde otevÅ™Ã­t.");
 
 	AI_StopProcessInfos	(self);
 	Npc_ExchangeRoutine	(self,	"RuinWall");
@@ -667,8 +667,8 @@ FUNC INT Info_Gorn_RUINWALLWHAT_Condition()
 
 func VOID Info_Gorn_RUINWALLWHAT_Info()
 {
-	AI_Output (other, self,"Info_Gorn_RUINWALLWHAT_15_01"); //Co se dìje?
-	AI_Output (self, other,"Info_Gorn_RUINWALLWHAT_09_02"); //Musíš najít cestu na druhou stranu brány.
+	AI_Output (other, self,"Info_Gorn_RUINWALLWHAT_15_01"); //Co se dÄ›je?
+	AI_Output (self, other,"Info_Gorn_RUINWALLWHAT_09_02"); //MusÃ­Å¡ najÃ­t cestu na druhou stranu brÃ¡ny.
 };
 
 //***************************************************************************
@@ -697,8 +697,8 @@ func VOID Info_Gorn_RUINLEDGE_Info()
 {
 	AI_GotoNpc	(self,	hero);
 
-	AI_Output 	(self, other,"Info_Gorn_RUINLEDGE_09_01"); //Tamhle nahoøe je nìjaká plošina. Ale vypadá to, e je moc vysoko, aby se na ní dalo vyšplhat.
-	AI_Output 	(self, other,"Info_Gorn_RUINLEDGE_09_02"); //Musíme najít jinou cestu.
+	AI_Output 	(self, other,"Info_Gorn_RUINLEDGE_09_01"); //Tamhle nahoÅ™e je nÄ›jakÃ¡ ploÅ¡ina. Ale vypadÃ¡ to, Å¾e je moc vysoko, aby se na nÃ­ dalo vyÅ¡plhat.
+	AI_Output 	(self, other,"Info_Gorn_RUINLEDGE_09_02"); //MusÃ­me najÃ­t jinou cestu.
 
 	AI_StopProcessInfos(self);
 };
@@ -729,8 +729,8 @@ func VOID Info_Gorn_RUINPLATFORM_Info()
 {
 	AI_GotoNpc	(self,	hero);
 
-	AI_Output 	(self, other,"Info_Gorn_RUINPLATFORM_09_01"); //Vypadá to jako podstavec pro nìco.
-	AI_Output 	(self, other,"Info_Gorn_RUINPLATFORM_09_02"); //Snad ten artefakt, kterı hledáš, leel právì tady.
+	AI_Output 	(self, other,"Info_Gorn_RUINPLATFORM_09_01"); //VypadÃ¡ to jako podstavec pro nÄ›co.
+	AI_Output 	(self, other,"Info_Gorn_RUINPLATFORM_09_02"); //Snad ten artefakt, kterÃ½ hledÃ¡Å¡, leÅ¾el prÃ¡vÄ› tady.
 
 	AI_StopProcessInfos(self);
 };
@@ -760,11 +760,11 @@ func VOID Info_Gorn_RUINGATE_Info()
 {
 	AI_GotoNpc			(self,	hero);
 
-	AI_Output			(self, other,"Info_Gorn_RUINGATE_09_01"); //Doopravdy se podaøilo tu bránu otevøít. To tvoje kouzlo bylo skuteènì šikovné.
-	AI_Output			(other, self,"Info_Gorn_RUINGATE_15_02"); //A mùeme jít dál.
+	AI_Output			(self, other,"Info_Gorn_RUINGATE_09_01"); //Doopravdy se podaÅ™ilo tu brÃ¡nu otevÅ™Ã­t. To tvoje kouzlo bylo skuteÄnÄ› Å¡ikovnÃ©.
+	AI_Output			(other, self,"Info_Gorn_RUINGATE_15_02"); //A mÅ¯Å¾eme jÃ­t dÃ¡l.
 
-	B_LogEntry		(CH3_MonasteryRuin,"Pomocí kouzelného svitku ze zásobovací jeskynì jsem se promìnil ve ravou štìnici a mohl jsem proklouznout škvírou ve zdi.");
-	B_LogEntry		(CH3_MonasteryRuin,"Vrata jsou nyní otevøena.");
+	B_LogEntry		(CH3_MonasteryRuin,"PomocÃ­ kouzelnÃ©ho svitku ze zÃ¡sobovacÃ­ jeskynÄ› jsem se promÄ›nil ve Å¾ravou Å¡tÄ›nici a mohl jsem proklouznout Å¡kvÃ­rou ve zdi.");
+	B_LogEntry		(CH3_MonasteryRuin,"Vrata jsou nynÃ­ otevÅ™ena.");
 
 	self.aivar[AIV_PARTYMEMBER] = TRUE;
 	Npc_ExchangeRoutine	(self,	"RuinFollowInside");
@@ -797,9 +797,9 @@ func VOID Info_Gorn_RUINLEAVEINSIDE_Info()
 {
 	AI_GotoNpc	(self,	hero);
 
-	AI_Output (self, other,"Info_Gorn_RUINLEAVEINSIDE_09_01"); //Myslím, e u tì ta zøícenina kláštera pøestala zajímat.
-	AI_Output (self, other,"Info_Gorn_RUINLEAVEINSIDE_09_02"); //Budu pokraèovat sám.
-	AI_Output (self, other,"Info_Gorn_RUINLEAVEINSIDE_09_03"); //Jestli si to rozmyslíš, tak jdi za mnou.
+	AI_Output (self, other,"Info_Gorn_RUINLEAVEINSIDE_09_01"); //MyslÃ­m, Å¾e uÅ¾ tÄ› ta zÅ™Ã­cenina klÃ¡Å¡tera pÅ™estala zajÃ­mat.
+	AI_Output (self, other,"Info_Gorn_RUINLEAVEINSIDE_09_02"); //Budu pokraÄovat sÃ¡m.
+	AI_Output (self, other,"Info_Gorn_RUINLEAVEINSIDE_09_03"); //Jestli si to rozmyslÃ­Å¡, tak jdi za mnou.
 
 	self.aivar[AIV_PARTYMEMBER] = FALSE;
 	Npc_ExchangeRoutine(self,	"RuinStay");
@@ -831,11 +831,11 @@ func VOID Info_Gorn_RUINSUCCESS_Info()
 {
 	AI_GotoNpc			(self,	hero);
 
-	AI_Output 			(self, other,"Info_Gorn_RUINSUCCESS_09_01"); //Tak jsi našel svùj kouzelnı artefakt!
-	AI_Output 			(other, self,"Info_Gorn_RUINSUCCESS_15_02"); //Ano. Musím ohnisko pøedat mágùm Vody. Potøebují ho.
-	AI_Output 			(self, other,"Info_Gorn_RUINSUCCESS_09_03"); //Budu tì chvíli doprovázet.
+	AI_Output 			(self, other,"Info_Gorn_RUINSUCCESS_09_01"); //Tak jsi naÅ¡el svÅ¯j kouzelnÃ½ artefakt!
+	AI_Output 			(other, self,"Info_Gorn_RUINSUCCESS_15_02"); //Ano. MusÃ­m ohnisko pÅ™edat mÃ¡gÅ¯m Vody. PotÅ™ebujÃ­ ho.
+	AI_Output 			(self, other,"Info_Gorn_RUINSUCCESS_09_03"); //Budu tÄ› chvÃ­li doprovÃ¡zet.
 
-	B_LogEntry		(CH3_MonasteryRuin,"V jakési studovnì jsem našel ohnisko. Gorn mì bude ještì doprovázet.");
+	B_LogEntry		(CH3_MonasteryRuin,"V jakÃ©si studovnÄ› jsem naÅ¡el ohnisko. Gorn mÄ› bude jeÅ¡tÄ› doprovÃ¡zet.");
 
 	AI_StopProcessInfos	(self);
 	Npc_ExchangeRoutine	(self,	"RuinYard");
@@ -868,10 +868,10 @@ func VOID Info_Gorn_RUINTROLL_Info()
 {
 	AI_GotoNpc			(self,	hero);
 
-	AI_Output 			(self, other,"Info_Gorn_RUINTROLL_09_01"); //K ÈERTU!!! Co je to tady za pøíšeru?
+	AI_Output 			(self, other,"Info_Gorn_RUINTROLL_09_01"); //K ÄŒERTU!!! Co je to tady za pÅ™Ã­Å¡eru?
 	AI_Output 			(other, self,"Info_Gorn_RUINTROLL_15_02"); //Kde se TO tu vzalo?
-	AI_Output 			(self, other,"Info_Gorn_RUINTROLL_09_03"); //Vypadá to jako jeden z tìch nepøemoitelnıch trolù. Jen trochu menší!
-	AI_Output 			(self, other,"Info_Gorn_RUINTROLL_09_04"); //Jestli se ale chceme odtud dostat, musíme kadopádnì pøes tu pøíšeru pøejít.
+	AI_Output 			(self, other,"Info_Gorn_RUINTROLL_09_03"); //VypadÃ¡ to jako jeden z tÄ›ch nepÅ™emoÅ¾itelnÃ½ch trolÅ¯. Jen trochu menÅ¡Ã­!
+	AI_Output 			(self, other,"Info_Gorn_RUINTROLL_09_04"); //Jestli se ale chceme odtud dostat, musÃ­me kaÅ¾dopÃ¡dnÄ› pÅ™es tu pÅ™Ã­Å¡eru pÅ™ejÃ­t.
 
 	AI_StopProcessInfos	(self);
 
@@ -908,15 +908,15 @@ func VOID Info_Gorn_RUINVICTORY_Info()
 {
 	AI_GotoNpc			(self,	hero);
 
-	AI_Output 			(self, other,"Info_Gorn_RUINVICTORY_09_01"); //To byla døina.
-	AI_Output 			(other, self,"Info_Gorn_RUINVICTORY_15_02"); //Dobøe, porazili jsme tu pøíšeru. Jestli to ale byl jenom mladı trol...
-	AI_Output 			(self, other,"Info_Gorn_RUINVICTORY_09_03"); //...pak bysme se radìji nemìli potkat s jeho rodièi, co?
-	AI_Output 			(other, self,"Info_Gorn_RUINVICTORY_15_04"); //Tak nìjak.
-	AI_Output 			(self, other,"Info_Gorn_RUINVICTORY_09_05"); //Tady se naše cesty rozdìlí. Chci tady chvíli zùstat a porozhlédnout se kolem.
-	AI_Output 			(self, other,"Info_Gorn_RUINVICTORY_09_06"); //Jsem si ale jistı, e se ještì potkáme. Tak na vidìnou, pøíteli.
+	AI_Output 			(self, other,"Info_Gorn_RUINVICTORY_09_01"); //To byla dÅ™ina.
+	AI_Output 			(other, self,"Info_Gorn_RUINVICTORY_15_02"); //DobÅ™e, porazili jsme tu pÅ™Ã­Å¡eru. Jestli to ale byl jenom mladÃ½ trol...
+	AI_Output 			(self, other,"Info_Gorn_RUINVICTORY_09_03"); //...pak bysme se radÄ›ji nemÄ›li potkat s jeho rodiÄi, co?
+	AI_Output 			(other, self,"Info_Gorn_RUINVICTORY_15_04"); //Tak nÄ›jak.
+	AI_Output 			(self, other,"Info_Gorn_RUINVICTORY_09_05"); //Tady se naÅ¡e cesty rozdÄ›lÃ­. Chci tady chvÃ­li zÅ¯stat a porozhlÃ©dnout se kolem.
+	AI_Output 			(self, other,"Info_Gorn_RUINVICTORY_09_06"); //Jsem si ale jistÃ½, Å¾e se jeÅ¡tÄ› potkÃ¡me. Tak na vidÄ›nou, pÅ™Ã­teli.
 
-	B_LogEntry		(CH3_MonasteryRuin,"Na zpáteèní cestì na klášternímu nádvoøí jsme potkali mladého trola. Došlo k tvrdému boji, ve kterém jsme však zvítìzili.");
-	B_LogEntry		(CH3_MonasteryRuin,"Má pou s Gornem nyní skonèila. Mám pocit, e jej zase brzy potkám.");
+	B_LogEntry		(CH3_MonasteryRuin,"Na zpÃ¡teÄnÃ­ cestÄ› na klÃ¡Å¡ternÃ­mu nÃ¡dvoÅ™Ã­ jsme potkali mladÃ©ho trola. DoÅ¡lo k tvrdÃ©mu boji, ve kterÃ©m jsme vÅ¡ak zvÃ­tÄ›zili.");
+	B_LogEntry		(CH3_MonasteryRuin,"MÃ¡ pouÅ¥ s Gornem nynÃ­ skonÄila. MÃ¡m pocit, Å¾e jej zase brzy potkÃ¡m.");
 
 	self.aivar[AIV_PARTYMEMBER] = FALSE;
 	Npc_ExchangeRoutine	(self,	"RuinStay");
@@ -945,7 +945,7 @@ INSTANCE Info_Gorn_DIEGOMILTEN (C_INFO)
 	information	= Info_Gorn_DIEGOMILTEN_Info;
 	important	= 0;	
 	permanent	= 0;
-	description = "Potkal jsem pøes Starım táborem Diega a Miltena!";
+	description = "Potkal jsem pÅ™es StarÃ½m tÃ¡borem Diega a Miltena!";
 };                       
 
 FUNC INT Info_Gorn_DIEGOMILTEN_Condition()
@@ -958,11 +958,11 @@ FUNC INT Info_Gorn_DIEGOMILTEN_Condition()
 
 func VOID Info_Gorn_DIEGOMILTEN_Info()
 {
-	AI_Output 			(hero,self,"Info_Gorn_DIEGOMILTEN_15_01"); //Potkal jsem pøes Starım táborem Diega a Miltena!
-	AI_Output 			(self,hero,"Info_Gorn_DIEGOMILTEN_09_02"); //To jsou dobré zprávy!
-	AI_Output 			(hero,self,"Info_Gorn_DIEGOMILTEN_15_03"); //Chtìjí navštívit tebe a Lestera. Na vašem obvyklém místì.
-	AI_Output 			(self,hero,"Info_Gorn_DIEGOMILTEN_09_04"); //Díky. Ve špatnıch èasech, jako jsou teï, není nic cennìjšího ne dobøí pøátelé.
-	AI_Output 			(self,hero,"Info_Gorn_DIEGOMILTEN_09_05"); //Teï u jsi témìø jedním z nás. Jsi spolehlivı!
+	AI_Output 			(hero,self,"Info_Gorn_DIEGOMILTEN_15_01"); //Potkal jsem pÅ™es StarÃ½m tÃ¡borem Diega a Miltena!
+	AI_Output 			(self,hero,"Info_Gorn_DIEGOMILTEN_09_02"); //To jsou dobrÃ© zprÃ¡vy!
+	AI_Output 			(hero,self,"Info_Gorn_DIEGOMILTEN_15_03"); //ChtÄ›jÃ­ navÅ¡tÃ­vit tebe a Lestera. Na vaÅ¡em obvyklÃ©m mÃ­stÄ›.
+	AI_Output 			(self,hero,"Info_Gorn_DIEGOMILTEN_09_04"); //DÃ­ky. Ve Å¡patnÃ½ch Äasech, jako jsou teÄ, nenÃ­ nic cennÄ›jÅ¡Ã­ho neÅ¾ dobÅ™Ã­ pÅ™Ã¡telÃ©.
+	AI_Output 			(self,hero,"Info_Gorn_DIEGOMILTEN_09_05"); //TeÄ uÅ¾ jsi tÃ©mÄ›Å™ jednÃ­m z nÃ¡s. Jsi spolehlivÃ½!
 
 	B_GiveXP			(XP_MessageForGorn);
 	
@@ -972,7 +972,7 @@ func VOID Info_Gorn_DIEGOMILTEN_Info()
 	}
 	else 
 	{
-		B_LogEntry			(CH4_4Friends,		"Øekl jsem Lesterovi a Gornovi o setkání s jejich pøáteli. Teï u to není moje vìc. Dál si poradí sami..."); 
+		B_LogEntry			(CH4_4Friends,		"Å˜ekl jsem Lesterovi a Gornovi o setkÃ¡nÃ­ s jejich pÅ™Ã¡teli. TeÄ uÅ¾ to nenÃ­ moje vÄ›c. DÃ¡l si poradÃ­ sami..."); 
 		Log_SetTopicStatus	(CH4_4Friends,		LOG_SUCCESS);
 	};
 
@@ -988,7 +988,7 @@ INSTANCE Info_Gorn_FREEMINE (C_INFO)
 	information	= Info_Gorn_FREEMINE_Info;
 	important	= 0;	
 	permanent	= 0;
-	description = "Co jsi vidìl ve Svobodném dole?";
+	description = "Co jsi vidÄ›l ve SvobodnÃ©m dole?";
 };                       
 
 FUNC INT Info_Gorn_FREEMINE_Condition()
@@ -1002,13 +1002,13 @@ FUNC INT Info_Gorn_FREEMINE_Condition()
 
 func VOID Info_Gorn_FREEMINE_Info()
 {
-	AI_Output 			(hero,self,"Info_Gorn_FREEMINE_15_01"); //Co jsi vidìl ve Svobodném dole?
-	AI_Output 			(self,hero,"Info_Gorn_FREEMINE_09_02"); //Kdy jsem se vrátil z rozboøeného kláštera, chtìl jsem se zastavit u Okyla, šéfa Svobodného dolu.
-	AI_Output 			(self,hero,"Info_Gorn_FREEMINE_09_03"); //Kdy jsem ale pøišel, všude se povalovaly mrtvoly.
-	AI_Output 			(self,hero,"Info_Gorn_FREEMINE_09_04"); //Zahlédl jsem akorát nìkolik strácù, kteøí se opevnili u vchodu do dolu.
-	AI_Output 			(hero,self,"Info_Gorn_FREEMINE_15_05"); //Jak mohly pouhé dva tucty stráí porazit tolik oldákù?
-	AI_Output 			(self,hero,"Info_Gorn_FREEMINE_09_06"); //Pøipadalo mi to jako léèka. Nikdo nepøedpokládal, e by útoèníci pøekroèili hory.
-	AI_Output 			(self,hero,"Info_Gorn_FREEMINE_09_07"); //Prvek pøekvapení mùe mnohonásobnì zvıšit sílu bojovníka.
+	AI_Output 			(hero,self,"Info_Gorn_FREEMINE_15_01"); //Co jsi vidÄ›l ve SvobodnÃ©m dole?
+	AI_Output 			(self,hero,"Info_Gorn_FREEMINE_09_02"); //KdyÅ¾ jsem se vrÃ¡til z rozboÅ™enÃ©ho klÃ¡Å¡tera, chtÄ›l jsem se zastavit u Okyla, Å¡Ã©fa SvobodnÃ©ho dolu.
+	AI_Output 			(self,hero,"Info_Gorn_FREEMINE_09_03"); //KdyÅ¾ jsem ale pÅ™iÅ¡el, vÅ¡ude se povalovaly mrtvoly.
+	AI_Output 			(self,hero,"Info_Gorn_FREEMINE_09_04"); //ZahlÃ©dl jsem akorÃ¡t nÄ›kolik strÃ¡Å¾cÅ¯, kteÅ™Ã­ se opevnili u vchodu do dolu.
+	AI_Output 			(hero,self,"Info_Gorn_FREEMINE_15_05"); //Jak mohly pouhÃ© dva tucty strÃ¡Å¾Ã­ porazit tolik Å¾oldÃ¡kÅ¯?
+	AI_Output 			(self,hero,"Info_Gorn_FREEMINE_09_06"); //PÅ™ipadalo mi to jako lÃ©Äka. Nikdo nepÅ™edpoklÃ¡dal, Å¾e by ÃºtoÄnÃ­ci pÅ™ekroÄili hory.
+	AI_Output 			(self,hero,"Info_Gorn_FREEMINE_09_07"); //Prvek pÅ™ekvapenÃ­ mÅ¯Å¾e mnohonÃ¡sobnÄ› zvÃ½Å¡it sÃ­lu bojovnÃ­ka.
 };
 
 //---------------------------------------------------------------------
@@ -1021,7 +1021,7 @@ INSTANCE Info_Gorn_GUARDNC (C_INFO)
 	information	= Info_Gorn_GUARDNC_Info;
 	important	= 0;	
 	permanent	= 0;
-	description = "Co máš teï v plánu?";
+	description = "Co mÃ¡Å¡ teÄ v plÃ¡nu?";
 };                       
 
 FUNC INT Info_Gorn_GUARDNC_Condition()
@@ -1034,12 +1034,12 @@ FUNC INT Info_Gorn_GUARDNC_Condition()
 
 func VOID Info_Gorn_GUARDNC_Info()
 {
-	AI_Output 			(hero,self,"Info_Gorn_GUARDNC_15_01"); //Co máš teï v plánu?
-	AI_Output 			(self,hero,"Info_Gorn_GUARDNC_09_02"); //Celá naše obranná strategie se musí zmìnit. To zabere nìjakı èas.
-	AI_Output 			(self,hero,"Info_Gorn_GUARDNC_09_03"); //Dokud Lee a jeho lidé nebudou pøipraveni, pøidám se ke Cordovì provizorní strái.
-	AI_Output 			(hero,self,"Info_Gorn_GUARDNC_15_04"); //Chystáš protiútok?
-	AI_Output 			(self,hero,"Info_Gorn_GUARDNC_09_05"); //Zatím ne, ale ten den pøijde.
-	AI_Output 			(self,hero,"Info_Gorn_GUARDNC_09_06"); //Jestli mì nìkdy budeš hledat, jdi odtud smìrem k dolu. Budu tam na strái.
+	AI_Output 			(hero,self,"Info_Gorn_GUARDNC_15_01"); //Co mÃ¡Å¡ teÄ v plÃ¡nu?
+	AI_Output 			(self,hero,"Info_Gorn_GUARDNC_09_02"); //CelÃ¡ naÅ¡e obrannÃ¡ strategie se musÃ­ zmÄ›nit. To zabere nÄ›jakÃ½ Äas.
+	AI_Output 			(self,hero,"Info_Gorn_GUARDNC_09_03"); //Dokud Lee a jeho lidÃ© nebudou pÅ™ipraveni, pÅ™idÃ¡m se ke CordovÄ› provizornÃ­ strÃ¡Å¾i.
+	AI_Output 			(hero,self,"Info_Gorn_GUARDNC_15_04"); //ChystÃ¡Å¡ protiÃºtok?
+	AI_Output 			(self,hero,"Info_Gorn_GUARDNC_09_05"); //ZatÃ­m ne, ale ten den pÅ™ijde.
+	AI_Output 			(self,hero,"Info_Gorn_GUARDNC_09_06"); //Jestli mÄ› nÄ›kdy budeÅ¡ hledat, jdi odtud smÄ›rem k dolu. Budu tam na strÃ¡Å¾i.
 
 	B_Story_CordsPost	();
 
@@ -1071,8 +1071,8 @@ FUNC INT Info_Gorn_GUARDNCRUNNING_Condition()
 func VOID Info_Gorn_GUARDNCRUNNING_Info()
 {
 	AI_Output 			(hero,self,"Info_Gorn_GUARDNCRUNNING_15_01"); //Jak to jde?
-	AI_Output 			(self,hero,"Info_Gorn_GUARDNCRUNNING_09_02"); //Všude klid. Ve Svobodném dole se nic nedìje.
-	AI_Output 			(self,hero,"Info_Gorn_GUARDNCRUNNING_09_03"); //Lee je poøád zaneprázdnìnı organizací naší obrany.
+	AI_Output 			(self,hero,"Info_Gorn_GUARDNCRUNNING_09_02"); //VÅ¡ude klid. Ve SvobodnÃ©m dole se nic nedÄ›je.
+	AI_Output 			(self,hero,"Info_Gorn_GUARDNCRUNNING_09_03"); //Lee je poÅ™Ã¡d zaneprÃ¡zdnÄ›nÃ½ organizacÃ­ naÅ¡Ã­ obrany.
 };
 
 //---------------------------------------------------------------------
@@ -1099,8 +1099,8 @@ func VOID Info_Gorn_POST_Info()
 {
 	AI_GotoNpc			(self, hero);
 
-	AI_Output 			(self, hero,"Info_Gorn_POST_09_01"); //Jdeš právì vèas. Pøipravujeme protiútok.
-	AI_Output 			(self, hero,"Info_Gorn_POST_09_02"); //V první fázi pøevezmeme zpìt Svobodnı dùl.
+	AI_Output 			(self, hero,"Info_Gorn_POST_09_01"); //JdeÅ¡ prÃ¡vÄ› vÄas. PÅ™ipravujeme protiÃºtok.
+	AI_Output 			(self, hero,"Info_Gorn_POST_09_02"); //V prvnÃ­ fÃ¡zi pÅ™evezmeme zpÄ›t SvobodnÃ½ dÅ¯l.
 };
 
 //---------------------------------------------------------------------
@@ -1113,7 +1113,7 @@ INSTANCE Info_Gorn_TAKEBACK (C_INFO)
 	information	= Info_Gorn_TAKEBACK_Info;
 	important	= 0;	
 	permanent	= 0;
-	description = "Plánuješ jeho pøevzetí jenom se ètyømi mui? Kde jsou všichni oldáci?";
+	description = "PlÃ¡nujeÅ¡ jeho pÅ™evzetÃ­ jenom se ÄtyÅ™mi muÅ¾i? Kde jsou vÅ¡ichni Å¾oldÃ¡ci?";
 };                       
 
 FUNC INT Info_Gorn_TAKEBACK_Condition()
@@ -1126,31 +1126,31 @@ FUNC INT Info_Gorn_TAKEBACK_Condition()
 
 func VOID Info_Gorn_TAKEBACK_Info()
 {
-	AI_Output 			(hero, self,"Info_Gorn_TAKEBACK_15_01"); //Plánuješ jeho pøevzetí jenom se ètyømi mui? Kde jsou všichni oldáci?
-	AI_Output 			(self, hero,"Info_Gorn_TAKEBACK_09_02"); //Èelní útok není dobrı! Gomezovi lidé jsou na to pøíliš dobøe opevnìní!
-	AI_Output 			(self, hero,"Info_Gorn_TAKEBACK_09_03"); //Mohli bysme ale zahájit tajnou misi a likvidovat jednoho mue po druhém - to by fungovalo.
-	AI_Output 			(self, hero,"Info_Gorn_TAKEBACK_09_04"); //Lee mì poádal, abych ti pøedal zprávu.
+	AI_Output 			(hero, self,"Info_Gorn_TAKEBACK_15_01"); //PlÃ¡nujeÅ¡ jeho pÅ™evzetÃ­ jenom se ÄtyÅ™mi muÅ¾i? Kde jsou vÅ¡ichni Å¾oldÃ¡ci?
+	AI_Output 			(self, hero,"Info_Gorn_TAKEBACK_09_02"); //ÄŒelnÃ­ Ãºtok nenÃ­ dobrÃ½! Gomezovi lidÃ© jsou na to pÅ™Ã­liÅ¡ dobÅ™e opevnÄ›nÃ­!
+	AI_Output 			(self, hero,"Info_Gorn_TAKEBACK_09_03"); //Mohli bysme ale zahÃ¡jit tajnou misi a likvidovat jednoho muÅ¾e po druhÃ©m - to by fungovalo.
+	AI_Output 			(self, hero,"Info_Gorn_TAKEBACK_09_04"); //Lee mÄ› poÅ¾Ã¡dal, abych ti pÅ™edal zprÃ¡vu.
 
 	var int guild;
 	guild = Npc_GetTrueGuild(hero);
 	if 		(guild == GIL_SLD)
 	{
-		AI_Output 		(self, hero,"Info_Gorn_TAKEBACK_09_05"); //Jako jeden ze ètyø nejlepších oldákù jsi byl vybrán, abys vykonal tuhle misi.
+		AI_Output 		(self, hero,"Info_Gorn_TAKEBACK_09_05"); //Jako jeden ze ÄtyÅ™ nejlepÅ¡Ã­ch Å¾oldÃ¡kÅ¯ jsi byl vybrÃ¡n, abys vykonal tuhle misi.
 	}
 	else if	(guild == GIL_KDW)
 	{
-		AI_Output 		(self, hero,"Info_Gorn_TAKEBACK_09_06"); //Jako mág Kruhu vody a zkušenı bojovník jsi byl vybrán, abys vykonal tuhle misi.
+		AI_Output 		(self, hero,"Info_Gorn_TAKEBACK_09_06"); //Jako mÃ¡g Kruhu vody a zkuÅ¡enÃ½ bojovnÃ­k jsi byl vybrÃ¡n, abys vykonal tuhle misi.
 	}
 	else if (guild == GIL_ORG)
 	{
-		AI_Output 		(self, hero,"Info_Gorn_TAKEBACK_09_07"); //Jako jeden z nejlepších banditù jsi byl vybrán, abys vykonal tuhle misi.
+		AI_Output 		(self, hero,"Info_Gorn_TAKEBACK_09_07"); //Jako jeden z nejlepÅ¡Ã­ch banditÅ¯ jsi byl vybrÃ¡n, abys vykonal tuhle misi.
 	}
 	else
 	{
-		AI_Output 		(self, hero,"Info_Gorn_TAKEBACK_09_08"); //I kdy nejsi jedním z nás, vykonal jsi pro náš tábor velikou slubu a vícekrát jsi dokázal svou kvalitu.
-		AI_Output 		(self, hero,"Info_Gorn_TAKEBACK_09_09"); //Nabízíme ti pøíleitost, abys vykonal tuhle misi.
+		AI_Output 		(self, hero,"Info_Gorn_TAKEBACK_09_08"); //I kdyÅ¾ nejsi jednÃ­m z nÃ¡s, vykonal jsi pro nÃ¡Å¡ tÃ¡bor velikou sluÅ¾bu a vÃ­cekrÃ¡t jsi dokÃ¡zal svou kvalitu.
+		AI_Output 		(self, hero,"Info_Gorn_TAKEBACK_09_09"); //NabÃ­zÃ­me ti pÅ™Ã­leÅ¾itost, abys vykonal tuhle misi.
 	};
-	AI_Output 			(self, hero,"Info_Gorn_TAKEBACK_09_10"); //Pùjdu s tebou. Dohromady se nám to podaøí!
+	AI_Output 			(self, hero,"Info_Gorn_TAKEBACK_09_10"); //PÅ¯jdu s tebou. Dohromady se nÃ¡m to podaÅ™Ã­!
 };
 
 //---------------------------------------------------------------------
@@ -1163,7 +1163,7 @@ INSTANCE Info_Gorn_SECOND (C_INFO)
 	information	= Info_Gorn_SECOND_Info;
 	important	= 0;	
 	permanent	= 0;
-	description = "První fáze? Co bude druhá?";
+	description = "PrvnÃ­ fÃ¡ze? Co bude druhÃ¡?";
 };                       
 
 FUNC INT Info_Gorn_SECOND_Condition()
@@ -1176,9 +1176,9 @@ FUNC INT Info_Gorn_SECOND_Condition()
 
 func VOID Info_Gorn_SECOND_Info()
 {
-	AI_Output 			(hero, self,"Info_Gorn_SECOND_15_01"); //První fáze? Co bude druhá?
-	AI_Output 			(self, hero,"Info_Gorn_SECOND_09_02"); //Jakmile bude dùl zase náš, zaèneme hledat horskı prùsmyk, pøes kterı pøešli Gomezovi lidé, aby nás napadli!
-	AI_Output 			(self, hero,"Info_Gorn_SECOND_09_03"); //Kdy bude ten prùsmyk uzavøenı, situace bude zase pod naší kontrolou.
+	AI_Output 			(hero, self,"Info_Gorn_SECOND_15_01"); //PrvnÃ­ fÃ¡ze? Co bude druhÃ¡?
+	AI_Output 			(self, hero,"Info_Gorn_SECOND_09_02"); //Jakmile bude dÅ¯l zase nÃ¡Å¡, zaÄneme hledat horskÃ½ prÅ¯smyk, pÅ™es kterÃ½ pÅ™eÅ¡li Gomezovi lidÃ©, aby nÃ¡s napadli!
+	AI_Output 			(self, hero,"Info_Gorn_SECOND_09_03"); //KdyÅ¾ bude ten prÅ¯smyk uzavÅ™enÃ½, situace bude zase pod naÅ¡Ã­ kontrolou.
 	AI_Output 			(hero, self,"Info_Gorn_SECOND_15_04"); //Aha.
 };
 
@@ -1192,7 +1192,7 @@ INSTANCE Info_Gorn_WHYME (C_INFO)
 	information	= Info_Gorn_WHYME_Info;
 	important	= 0;	
 	permanent	= 0;
-	description = "Proè právì já?";
+	description = "ProÄ prÃ¡vÄ› jÃ¡?";
 };                       
 
 FUNC INT Info_Gorn_WHYME_Condition()
@@ -1205,10 +1205,10 @@ FUNC INT Info_Gorn_WHYME_Condition()
 
 func VOID Info_Gorn_WHYME_Info()
 {
-	AI_Output 			(hero, self,"Info_Gorn_WHYME_15_01"); //Proè právì já?
-	AI_Output 			(self, hero,"Info_Gorn_WHYME_09_02"); //U jsi vícekrát dokázal, e jsi souèasnì odvánı i chytrı!
-	AI_Output 			(self, hero,"Info_Gorn_WHYME_09_03"); //A kromì toho znáš Starı tábor a jeho stráe líp ne kdokoliv z nás.
-	AI_Output 			(self, hero,"Info_Gorn_WHYME_09_04"); //Pro tenhle úkol jsi nejlepší mu!
+	AI_Output 			(hero, self,"Info_Gorn_WHYME_15_01"); //ProÄ prÃ¡vÄ› jÃ¡?
+	AI_Output 			(self, hero,"Info_Gorn_WHYME_09_02"); //UÅ¾ jsi vÃ­cekrÃ¡t dokÃ¡zal, Å¾e jsi souÄasnÄ› odvÃ¡Å¾nÃ½ i chytrÃ½!
+	AI_Output 			(self, hero,"Info_Gorn_WHYME_09_03"); //A kromÄ› toho znÃ¡Å¡ StarÃ½ tÃ¡bor a jeho strÃ¡Å¾e lÃ­p neÅ¾ kdokoliv z nÃ¡s.
+	AI_Output 			(self, hero,"Info_Gorn_WHYME_09_04"); //Pro tenhle Ãºkol jsi nejlepÅ¡Ã­ muÅ¾!
 };
 
 //---------------------------------------------------------------------
@@ -1221,7 +1221,7 @@ INSTANCE Info_Gorn_KICKBUTT (C_INFO)
 	information	= Info_Gorn_KICKBUTT_Info;
 	important	= 0;	
 	permanent	= 0;
-	description = "Dobrá, tak pojïme dát našim nevítanım hostùm do dolu poøádnou lekci!";
+	description = "DobrÃ¡, tak pojÄme dÃ¡t naÅ¡im nevÃ­tanÃ½m hostÅ¯m do dolu poÅ™Ã¡dnou lekci!";
 };                       
 
 FUNC INT Info_Gorn_KICKBUTT_Condition()
@@ -1235,9 +1235,9 @@ FUNC INT Info_Gorn_KICKBUTT_Condition()
 
 func VOID Info_Gorn_KICKBUTT_Info()
 {
-	AI_Output 			(hero, self,"Info_Gorn_KICKBUTT_15_01"); //Dobrá, tak pojïme dát našim nevítanım hostùm do dolu poøádnou lekci!
-	AI_Output 			(self, hero,"Info_Gorn_KICKBUTT_09_02"); //Neèekal jsem, e øekneš nìco jiného!
-	AI_Output 			(self, hero,"Info_Gorn_KICKBUTT_09_03"); //Tady je klíè. Je od vrátnice pøed vstupem do dolu.
+	AI_Output 			(hero, self,"Info_Gorn_KICKBUTT_15_01"); //DobrÃ¡, tak pojÄme dÃ¡t naÅ¡im nevÃ­tanÃ½m hostÅ¯m do dolu poÅ™Ã¡dnou lekci!
+	AI_Output 			(self, hero,"Info_Gorn_KICKBUTT_09_02"); //NeÄekal jsem, Å¾e Å™ekneÅ¡ nÄ›co jinÃ©ho!
+	AI_Output 			(self, hero,"Info_Gorn_KICKBUTT_09_03"); //Tady je klÃ­Ä. Je od vrÃ¡tnice pÅ™ed vstupem do dolu.
 
 	B_Story_GornJoins	();
 };
@@ -1252,7 +1252,7 @@ INSTANCE Info_Gorn_MYWAY (C_INFO)
 	information	= Info_Gorn_MYWAY_Info;
 	important	= 0;	
 	permanent	= 0;
-	description = "Proè ne. Potøebuju se stejnì dostat do dolu!";
+	description = "ProÄ ne. PotÅ™ebuju se stejnÄ› dostat do dolu!";
 };                       
 
 FUNC INT Info_Gorn_MYWAY_Condition()
@@ -1266,9 +1266,9 @@ FUNC INT Info_Gorn_MYWAY_Condition()
 
 func VOID Info_Gorn_MYWAY_Info()
 {
-	AI_Output 			(hero, self,"Info_Gorn_MYWAY_15_01"); //Proè ne. Potøebuju se stejnì dostat do dolu!
-	AI_Output 			(self, hero,"Info_Gorn_MYWAY_09_02"); //A u máš k tomu jakıkoliv dùvod, jsem rád, e jsme se v téhle vìci spolu dohodli!
-	AI_Output 			(self, hero,"Info_Gorn_MYWAY_09_03"); //Tady je klíè. Je od vrátnice pøed vstupem do dolu.
+	AI_Output 			(hero, self,"Info_Gorn_MYWAY_15_01"); //ProÄ ne. PotÅ™ebuju se stejnÄ› dostat do dolu!
+	AI_Output 			(self, hero,"Info_Gorn_MYWAY_09_02"); //AÅ¥ uÅ¾ mÃ¡Å¡ k tomu jakÃ½koliv dÅ¯vod, jsem rÃ¡d, Å¾e jsme se v tÃ©hle vÄ›ci spolu dohodli!
+	AI_Output 			(self, hero,"Info_Gorn_MYWAY_09_03"); //Tady je klÃ­Ä. Je od vrÃ¡tnice pÅ™ed vstupem do dolu.
 
 	B_Story_GornJoins	();
 };
@@ -1298,28 +1298,28 @@ func VOID Info_Gorn_WOLF_Info()
 {
 	AI_GotoNpc			(self, hero);
 
-	AI_Output 			(self, hero,"Info_Gorn_WOLF_09_01"); //Och, málem jsem zapomnìl!
-	AI_Output 			(self, hero,"Info_Gorn_WOLF_09_02"); //Bandita Wolf chce s tebou nutnì mluvit, ještì ne odejdeš do dolu.
+	AI_Output 			(self, hero,"Info_Gorn_WOLF_09_01"); //Och, mÃ¡lem jsem zapomnÄ›l!
+	AI_Output 			(self, hero,"Info_Gorn_WOLF_09_02"); //Bandita Wolf chce s tebou nutnÄ› mluvit, jeÅ¡tÄ› neÅ¾ odejdeÅ¡ do dolu.
 
 	Info_ClearChoices	(Info_Gorn_WOLF);
-	Info_AddChoice		(Info_Gorn_WOLF,"Mùe poèkat, máme na práci dùleitìjší vìci.",	Info_Gorn_WOLF_FM);	
-	Info_AddChoice		(Info_Gorn_WOLF,"Pak tam radìji pùjdu hned.",		Info_Gorn_WOLF_WOLF);	
+	Info_AddChoice		(Info_Gorn_WOLF,"MÅ¯Å¾e poÄkat, mÃ¡me na prÃ¡ci dÅ¯leÅ¾itÄ›jÅ¡Ã­ vÄ›ci.",	Info_Gorn_WOLF_FM);	
+	Info_AddChoice		(Info_Gorn_WOLF,"Pak tam radÄ›ji pÅ¯jdu hned.",		Info_Gorn_WOLF_WOLF);	
 
-	B_LogEntry			(CH4_UluMulu,"Bandita Wolf chce se mnou mluvit ještì pøedtím, ne se vydáme na cestu do dolu. Pùjdu ho navštívit.");
+	B_LogEntry			(CH4_UluMulu,"Bandita Wolf chce se mnou mluvit jeÅ¡tÄ› pÅ™edtÃ­m, neÅ¾ se vydÃ¡me na cestu do dolu. PÅ¯jdu ho navÅ¡tÃ­vit.");
 	Gorn_GotoWolf = TRUE;
 };
 
 func void Info_Gorn_WOLF_FM ()
 {
-	AI_Output 			(hero, self,"Info_Gorn_WOLF_15_04"); //Mùe poèkat, máme na práci dùleitìjší vìci.
-	AI_Output 			(self, hero,"Info_Gorn_WOLF_09_05"); //Jak øíkáš!
+	AI_Output 			(hero, self,"Info_Gorn_WOLF_15_04"); //MÅ¯Å¾e poÄkat, mÃ¡me na prÃ¡ci dÅ¯leÅ¾itÄ›jÅ¡Ã­ vÄ›ci.
+	AI_Output 			(self, hero,"Info_Gorn_WOLF_09_05"); //Jak Å™Ã­kÃ¡Å¡!
 	AI_StopProcessInfos	(self);
 };
 
 func void Info_Gorn_WOLF_WOLF ()
 {
-	AI_Output 			(hero, self,"Info_Gorn_WOLF_15_06"); //Pak tam radìji pùjdu hned.
-	AI_Output 			(self, hero,"Info_Gorn_WOLF_09_07"); //Udìlej to. Poèkám tady na tebe.
+	AI_Output 			(hero, self,"Info_Gorn_WOLF_15_06"); //Pak tam radÄ›ji pÅ¯jdu hned.
+	AI_Output 			(self, hero,"Info_Gorn_WOLF_09_07"); //UdÄ›lej to. PoÄkÃ¡m tady na tebe.
 
 	Gorn_JoinedForFM = FALSE;
 	self.aivar[AIV_PARTYMEMBER] = FALSE;
@@ -1356,13 +1356,13 @@ func VOID Info_Gorn_LEAVEFORPOST_Info()
 
 	if (Npc_KnowsInfo(hero,Info_Gorn_WOLF))
 	{
-		AI_Output		(self, hero,"Info_Gorn_LEAVEFORPOST_09_01"); //Vypadá to, e chceš mluvit s Wolfem!
+		AI_Output		(self, hero,"Info_Gorn_LEAVEFORPOST_09_01"); //VypadÃ¡ to, Å¾e chceÅ¡ mluvit s Wolfem!
 	}
 	else
 	{
-		AI_Output		(self, hero,"Info_Gorn_LEAVEFORPOST_09_02"); //To je špatnı smìr! Musíme jít k dolu!
+		AI_Output		(self, hero,"Info_Gorn_LEAVEFORPOST_09_02"); //To je Å¡patnÃ½ smÄ›r! MusÃ­me jÃ­t k dolu!
 	};
-	AI_Output 			(self, hero,"Info_Gorn_LEAVEFORPOST_09_03"); //Poèkám na tebe u provizorní stránice!
+	AI_Output 			(self, hero,"Info_Gorn_LEAVEFORPOST_09_03"); //PoÄkÃ¡m na tebe u provizornÃ­ strÃ¡Å¾nice!
 
 	Gorn_JoinedForFM = FALSE;
 	self.aivar[AIV_PARTYMEMBER] = FALSE;
@@ -1380,7 +1380,7 @@ INSTANCE Info_Gorn_REJOINFORFM (C_INFO)
 	information	= Info_Gorn_REJOINFORFM_Info;
 	important	= 0;	
 	permanent	= 1;
-	description = "Pojïme k dolu!";
+	description = "PojÄme k dolu!";
 };                       
 
 FUNC INT Info_Gorn_REJOINFORFM_Condition()
@@ -1395,9 +1395,9 @@ FUNC INT Info_Gorn_REJOINFORFM_Condition()
 
 func VOID Info_Gorn_REJOINFORFM_Info()
 {
-	AI_Output 			(hero, self,"Info_Gorn_REJOINFORFM_15_01"); //Pojïme k dolu!
-	AI_Output 			(self, hero,"Info_Gorn_REJOINFORFM_09_02"); //Nejvyšší èas vyhnat odtud stráe!
-	AI_Output 			(self, hero,"Info_Gorn_REJOINFORFM_09_03"); //Jdi napøed, pùjdu za tebou!
+	AI_Output 			(hero, self,"Info_Gorn_REJOINFORFM_15_01"); //PojÄme k dolu!
+	AI_Output 			(self, hero,"Info_Gorn_REJOINFORFM_09_02"); //NejvyÅ¡Å¡Ã­ Äas vyhnat odtud strÃ¡Å¾e!
+	AI_Output 			(self, hero,"Info_Gorn_REJOINFORFM_09_03"); //Jdi napÅ™ed, pÅ¯jdu za tebou!
 
 	Gorn_JoinedForFM = TRUE;
 	self.aivar[AIV_PARTYMEMBER] = TRUE;
@@ -1430,9 +1430,9 @@ func VOID Info_Gorn_RAZOR_Info()
 {
 	AI_GotoNpc			(self, hero);
 
-	AI_Output 			(self, hero,"Info_Gorn_RAZOR_09_01"); //POZOR, NEBEZPEÈÍ!!!
-	AI_Output 			(self, hero,"Info_Gorn_RAZOR_09_02"); //Loví ve smeèkách jako kousavci, ale koušou daleko hùø!
-	AI_Output 			(self, hero,"Info_Gorn_RAZOR_09_03"); //Mìli bysme je sprovodit ze svìta. Znáš mì, mám rád, kdy vím, co mám za zády.
+	AI_Output 			(self, hero,"Info_Gorn_RAZOR_09_01"); //POZOR, NEBEZPEÄŒÃ!!!
+	AI_Output 			(self, hero,"Info_Gorn_RAZOR_09_02"); //LovÃ­ ve smeÄkÃ¡ch jako kousavci, ale kouÅ¡ou daleko hÅ¯Å™!
+	AI_Output 			(self, hero,"Info_Gorn_RAZOR_09_03"); //MÄ›li bysme je sprovodit ze svÄ›ta. ZnÃ¡Å¡ mÄ›, mÃ¡m rÃ¡d, kdyÅ¾ vÃ­m, co mÃ¡m za zÃ¡dy.
 
 	AI_StopProcessInfos	(self);
 };
@@ -1462,9 +1462,9 @@ func VOID Info_Gorn_FMCENTRANCE_Info()
 {
 	AI_GotoNpc			(self, hero);
 
-	AI_Output 			(self, hero,"Info_Gorn_FMCENTRANCE_09_01"); //Zadr, vidíš všechny ty mrtvoly?
-	AI_Output 			(self, hero,"Info_Gorn_FMCENTRANCE_09_02"); //Jdi ke vchodu do dolu, já zùstanu tady a ohlídám, abysme nebyli zezadu nemile zaskoèeni.
-	AI_Output 			(self, hero,"Info_Gorn_FMCENTRANCE_09_03"); //A budeš dole, pùjdu za tebou.
+	AI_Output 			(self, hero,"Info_Gorn_FMCENTRANCE_09_01"); //ZadrÅ¾, vidÃ­Å¡ vÅ¡echny ty mrtvoly?
+	AI_Output 			(self, hero,"Info_Gorn_FMCENTRANCE_09_02"); //Jdi ke vchodu do dolu, jÃ¡ zÅ¯stanu tady a ohlÃ­dÃ¡m, abysme nebyli zezadu nemile zaskoÄeni.
+	AI_Output 			(self, hero,"Info_Gorn_FMCENTRANCE_09_03"); //AÅ¾ budeÅ¡ dole, pÅ¯jdu za tebou.
 
 	Npc_ExchangeRoutine	(self,	"WaitFMC");
 	AI_StopProcessInfos	(self);
@@ -1496,9 +1496,9 @@ func VOID Info_Gorn_FMGATE_Info()
 {
 	AI_GotoNpc			(self, hero);
 
-	AI_Output 			(self, hero,"Info_Gorn_FMGATE_09_01"); //Slyšel jsem, jak bojuješ, a tak jsem za tebou ihned vyrazil.
-	AI_Output 			(hero, self,"Info_Gorn_FMGATE_15_02"); //Starı známı... Ale úèet je srovnanı!
-	AI_Output 			(self, hero,"Info_Gorn_FMGATE_09_03"); //Dobrá, otevøi ta vrata, já budu hlídat.
+	AI_Output 			(self, hero,"Info_Gorn_FMGATE_09_01"); //SlyÅ¡el jsem, jak bojujeÅ¡, a tak jsem za tebou ihned vyrazil.
+	AI_Output 			(hero, self,"Info_Gorn_FMGATE_15_02"); //StarÃ½ znÃ¡mÃ½... Ale ÃºÄet je srovnanÃ½!
+	AI_Output 			(self, hero,"Info_Gorn_FMGATE_09_03"); //DobrÃ¡, otevÅ™i ta vrata, jÃ¡ budu hlÃ­dat.
 
 	Npc_ExchangeRoutine	(self,	"WaitFM");
 	AI_StopProcessInfos	(self);
@@ -1528,14 +1528,14 @@ func VOID Info_Gorn_AFTERFM_Info()
 {
 	AI_GotoNpc			(self, hero);
 
-	AI_Output 			(self, hero,"Info_Gorn_AFTERFM_09_01"); //Ach, èlovìèe. To byl opravdu tvrdı boj.
-	AI_Output 			(self, hero,"Info_Gorn_AFTERFM_09_02"); //Nikdy bych si nebyl pomyslel, e by Gomezovy stráe dokázaly klást takovı odpor.
-	AI_Output 			(hero, self,"Info_Gorn_AFTERFM_15_03"); //Hlavní je, e jsme je vyhnali z našeho dolu.
-	AI_Output 			(self, hero,"Info_Gorn_AFTERFM_09_04"); //Jsem poøád tady a hlídám situaci!
+	AI_Output 			(self, hero,"Info_Gorn_AFTERFM_09_01"); //Ach, ÄlovÄ›Äe. To byl opravdu tvrdÃ½ boj.
+	AI_Output 			(self, hero,"Info_Gorn_AFTERFM_09_02"); //Nikdy bych si nebyl pomyslel, Å¾e by Gomezovy strÃ¡Å¾e dokÃ¡zaly klÃ¡st takovÃ½ odpor.
+	AI_Output 			(hero, self,"Info_Gorn_AFTERFM_15_03"); //HlavnÃ­ je, Å¾e jsme je vyhnali z naÅ¡eho dolu.
+	AI_Output 			(self, hero,"Info_Gorn_AFTERFM_09_04"); //Jsem poÅ™Ã¡d tady a hlÃ­dÃ¡m situaci!
 
 	B_Story_LeftFM		();
 	
-	Lee_freeminereport = 1;  //jetzt kann der SC Lee über die befreite Mine informieren.     ***Björn***
+	Lee_freeminereport = 1;  //jetzt kann der SC Lee Ã¼ber die befreite Mine informieren.     ***BjÃ¶rn***
 
 	AI_StopProcessInfos	(self);
 };
@@ -1550,7 +1550,7 @@ INSTANCE Info_Gorn_FMWATCH (C_INFO)
 	information	= Info_Gorn_FMWATCH_Info;
 	important	= 0;	
 	permanent	= 1;
-	description = "Jaká je situace?";
+	description = "JakÃ¡ je situace?";
 };                       
 
 FUNC INT Info_Gorn_FMWATCH_Condition()
@@ -1563,10 +1563,10 @@ FUNC INT Info_Gorn_FMWATCH_Condition()
 
 func VOID Info_Gorn_FMWATCH_Info()
 {
-	AI_Output 			(hero,self,"Info_Gorn_FMWATCH_15_01"); //Jaká je situace?
-	AI_Output 			(self,hero,"Info_Gorn_FMWATCH_09_02"); //Všude klid. Ve Svobodném dole se nic nedìje.
-	AI_Output 			(self,hero,"Info_Gorn_FMWATCH_09_03"); //U to nebude dlouho trvat, ne sem dorazí posily, které vyslal Lee.
-	AI_Output 			(self,hero,"Info_Gorn_FMWATCH_09_04"); //Do té doby bych u byl dávno doma.
+	AI_Output 			(hero,self,"Info_Gorn_FMWATCH_15_01"); //JakÃ¡ je situace?
+	AI_Output 			(self,hero,"Info_Gorn_FMWATCH_09_02"); //VÅ¡ude klid. Ve SvobodnÃ©m dole se nic nedÄ›je.
+	AI_Output 			(self,hero,"Info_Gorn_FMWATCH_09_03"); //UÅ¾ to nebude dlouho trvat, neÅ¾ sem dorazÃ­ posily, kterÃ© vyslal Lee.
+	AI_Output 			(self,hero,"Info_Gorn_FMWATCH_09_04"); //Do tÃ© doby bych uÅ¾ byl dÃ¡vno doma.
 };
 
 
@@ -1594,10 +1594,10 @@ func VOID Info_Gorn_FOUNDULUMULU_Info()
 {
 	AI_GotoNpc			(self, hero);
 
-	AI_Output 			(self, hero,"Info_Gorn_FOUNDULUMULU_09_01"); //To je zajímavá skøetí standarta, co tady máš.
-	AI_Output 			(self, hero,"Info_Gorn_FOUNDULUMULU_09_02"); //Patøila tomu skøetímu otrokovi z dolu?
-	AI_Output 			(hero, self,"Info_Gorn_FOUNDULUMULU_15_03"); //Je to skøetí symbol pøátelství. Chci s ním jít do skøetího mìsta.
-	AI_Output 			(self, hero,"Info_Gorn_FOUNDULUMULU_09_04"); //Doufám, e budeš mít štìstí a e budou skøeti respektovat tuhle... VÌC!
+	AI_Output 			(self, hero,"Info_Gorn_FOUNDULUMULU_09_01"); //To je zajÃ­mavÃ¡ skÅ™etÃ­ standarta, co tady mÃ¡Å¡.
+	AI_Output 			(self, hero,"Info_Gorn_FOUNDULUMULU_09_02"); //PatÅ™ila tomu skÅ™etÃ­mu otrokovi z dolu?
+	AI_Output 			(hero, self,"Info_Gorn_FOUNDULUMULU_15_03"); //Je to skÅ™etÃ­ symbol pÅ™Ã¡telstvÃ­. Chci s nÃ­m jÃ­t do skÅ™etÃ­ho mÄ›sta.
+	AI_Output 			(self, hero,"Info_Gorn_FOUNDULUMULU_09_04"); //DoufÃ¡m, Å¾e budeÅ¡ mÃ­t Å¡tÄ›stÃ­ a Å¾e budou skÅ™eti respektovat tuhle... VÄšC!
 
 	B_Kapitelwechsel	(5);
 

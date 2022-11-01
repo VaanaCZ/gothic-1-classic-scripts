@@ -23,7 +23,7 @@ FUNC VOID  DIA_BaalTaran_EXIT_Info()
 };
 
 // **************************************************
-//					Erste Begrüssung
+//					Erste BegrÃ¼ssung
 // **************************************************
 
 instance  DIA_BaalTaran_Greet (C_INFO)
@@ -33,7 +33,7 @@ instance  DIA_BaalTaran_Greet (C_INFO)
 	condition	= DIA_BaalTaran_Greet_Condition;
 	information	= DIA_BaalTaran_Greet_Info;
 	permanent	= 0;
-	description = "Jsem tady novı. Kdo jsi?";
+	description = "Jsem tady novÃ½. Kdo jsi?";
 };                       
 
 FUNC int  DIA_BaalTaran_Greet_Condition()
@@ -43,8 +43,8 @@ FUNC int  DIA_BaalTaran_Greet_Condition()
 
 FUNC VOID  DIA_BaalTaran_Greet_Info()
 {
-	AI_Output (other, self,"DIA_BaalTaran_Greet_15_00"); //Jsem tady novı. Kdo jsi?
-	AI_Output (self, other,"DIA_BaalTaran_Greet_05_01"); //Jsem Baal Taran ze Spáèova Bratrstva.
+	AI_Output (other, self,"DIA_BaalTaran_Greet_15_00"); //Jsem tady novÃ½. Kdo jsi?
+	AI_Output (self, other,"DIA_BaalTaran_Greet_05_01"); //Jsem Baal Taran ze SpÃ¡Äova Bratrstva.
 };
 
 // **************************************************
@@ -58,7 +58,7 @@ instance  DIA_BaalTaran_Bruderschaft (C_INFO)
 	condition	= DIA_BaalTaran_Bruderschaft_Condition;
 	information	= DIA_BaalTaran_Bruderschaft_Info;
 	permanent	= 0;
-	description = "Co to je Spáèovo Bratrstvo?";
+	description = "Co to je SpÃ¡Äovo Bratrstvo?";
 };                       
 
 FUNC int  DIA_BaalTaran_Bruderschaft_Condition()
@@ -71,13 +71,13 @@ FUNC int  DIA_BaalTaran_Bruderschaft_Condition()
 
 FUNC VOID  DIA_BaalTaran_Bruderschaft_Info()
 {
-	AI_Output (other, self,"DIA_BaalTaran_Bruderschaft_15_00"); //Co to je Spáèovo Bratrstvo?
-	AI_Output (self, other,"DIA_BaalTaran_Bruderschaft_05_01"); //Jsme komunita vyznavaèù nové víry.
-	AI_Output (self, other,"DIA_BaalTaran_Bruderschaft_05_02"); //Náš tábor se rozkládá na vıchodì v bainách. Pøišel jsem šíøit Spáèovo uèení cizincùm, jako jsi ty.
+	AI_Output (other, self,"DIA_BaalTaran_Bruderschaft_15_00"); //Co to je SpÃ¡Äovo Bratrstvo?
+	AI_Output (self, other,"DIA_BaalTaran_Bruderschaft_05_01"); //Jsme komunita vyznavaÄÅ¯ novÃ© vÃ­ry.
+	AI_Output (self, other,"DIA_BaalTaran_Bruderschaft_05_02"); //NÃ¡Å¡ tÃ¡bor se rozklÃ¡dÃ¡ na vÃ½chodÄ› v baÅ¾inÃ¡ch. PÅ™iÅ¡el jsem Å¡Ã­Å™it SpÃ¡Äovo uÄenÃ­ cizincÅ¯m, jako jsi ty.
 };
 
 // **************************************************
-//					Wer ist der Schläfer
+//					Wer ist der SchlÃ¤fer
 // **************************************************
 
 instance  DIA_BaalTaran_Sleeper (C_INFO)
@@ -87,7 +87,7 @@ instance  DIA_BaalTaran_Sleeper (C_INFO)
 	condition	= DIA_BaalTaran_Sleeper_Condition;
 	information	= DIA_BaalTaran_Sleeper_Info;
 	permanent	= 0;
-	description = "Kdo je ten Spáè?";
+	description = "Kdo je ten SpÃ¡Ä?";
 };                       
 
 FUNC int  DIA_BaalTaran_Sleeper_Condition()
@@ -100,14 +100,14 @@ FUNC int  DIA_BaalTaran_Sleeper_Condition()
 
 FUNC VOID  DIA_BaalTaran_Sleeper_Info()
 {
-	AI_Output (other, self,"DIA_BaalTaran_Sleeper_15_00"); //Kdo je ten Spáè?
-	AI_Output (self, other,"DIA_BaalTaran_Sleeper_05_01"); //Spáè je náš spasitel. Zjevil se pøed pìti lety skrze našeho mistra Y´Beriona.
-	AI_Output (self, other,"DIA_BaalTaran_Sleeper_05_02"); //Od té doby se zøíkáme tøí bohù. A ty bys to mìl udìlat také.
-	AI_Output (self, other,"DIA_BaalTaran_Sleeper_05_03"); //Bohové dopustili, abychom byli vykázáni do tohoto vìzení. Spáè nás ale dovede ke svobodì.
+	AI_Output (other, self,"DIA_BaalTaran_Sleeper_15_00"); //Kdo je ten SpÃ¡Ä?
+	AI_Output (self, other,"DIA_BaalTaran_Sleeper_05_01"); //SpÃ¡Ä je nÃ¡Å¡ spasitel. Zjevil se pÅ™ed pÄ›ti lety skrze naÅ¡eho mistra YÂ´Beriona.
+	AI_Output (self, other,"DIA_BaalTaran_Sleeper_05_02"); //Od tÃ© doby se zÅ™Ã­kÃ¡me tÅ™Ã­ bohÅ¯. A ty bys to mÄ›l udÄ›lat takÃ©.
+	AI_Output (self, other,"DIA_BaalTaran_Sleeper_05_03"); //BohovÃ© dopustili, abychom byli vykÃ¡zÃ¡ni do tohoto vÄ›zenÃ­. SpÃ¡Ä nÃ¡s ale dovede ke svobodÄ›.
 };
 
 // **************************************************
-//					Lehre des Schläfers
+//					Lehre des SchlÃ¤fers
 // **************************************************
 
 instance  DIA_BaalTaran_Lehre (C_INFO)
@@ -117,7 +117,7 @@ instance  DIA_BaalTaran_Lehre (C_INFO)
 	condition	= DIA_BaalTaran_Lehre_Condition;
 	information	= DIA_BaalTaran_Lehre_Info;
 	permanent	= 0;
-	description = "Povídej mi o Spáèovì uèení.";
+	description = "PovÃ­dej mi o SpÃ¡ÄovÄ› uÄenÃ­.";
 };                       
 
 FUNC int  DIA_BaalTaran_Lehre_Condition()
@@ -130,12 +130,12 @@ FUNC int  DIA_BaalTaran_Lehre_Condition()
 
 FUNC VOID  DIA_BaalTaran_Lehre_Info()
 {
-	AI_Output (other, self,"DIA_BaalTaran_Lehre_15_00"); //Povídej mi o Spáèovì uèení.
-	AI_Output (self, other,"DIA_BaalTaran_Lehre_05_01"); //Spáè je mocná bytost, moná ještì mocnìjší ne Innos, bùh svìtla.
-	AI_Output (self, other,"DIA_BaalTaran_Lehre_05_02"); //Je v naší duši. Jeho síla je však stále omezená. Spal po tisíce let, ale okamik jeho procitnutí je u blízko.
-	AI_Output (self, other,"DIA_BaalTaran_Lehre_05_03"); //Zvolil nás, abysme byli svìdky jeho procitnutí a šíøili jeho uèení.
-	AI_Output (self, other,"DIA_BaalTaran_Lehre_05_04"); //Tak poslouchej, všichni, kdo se pøidají ke Spáèovi, získají nesmrtelné duše, ale ti, kteøí se postaví proti nìmu, budou potrestáni.
-	AI_Output (self, other,"DIA_BaalTaran_Lehre_05_05"); //Spáè je však milosrdnı a poslal dùkaz své moci všem, kdo o nìm pochybovali.
+	AI_Output (other, self,"DIA_BaalTaran_Lehre_15_00"); //PovÃ­dej mi o SpÃ¡ÄovÄ› uÄenÃ­.
+	AI_Output (self, other,"DIA_BaalTaran_Lehre_05_01"); //SpÃ¡Ä je mocnÃ¡ bytost, moÅ¾nÃ¡ jeÅ¡tÄ› mocnÄ›jÅ¡Ã­ neÅ¾ Innos, bÅ¯h svÄ›tla.
+	AI_Output (self, other,"DIA_BaalTaran_Lehre_05_02"); //Je v naÅ¡Ã­ duÅ¡i. Jeho sÃ­la je vÅ¡ak stÃ¡le omezenÃ¡. Spal po tisÃ­ce let, ale okamÅ¾ik jeho procitnutÃ­ je uÅ¾ blÃ­zko.
+	AI_Output (self, other,"DIA_BaalTaran_Lehre_05_03"); //Zvolil nÃ¡s, abysme byli svÄ›dky jeho procitnutÃ­ a Å¡Ã­Å™ili jeho uÄenÃ­.
+	AI_Output (self, other,"DIA_BaalTaran_Lehre_05_04"); //Tak poslouchej, vÅ¡ichni, kdo se pÅ™idajÃ­ ke SpÃ¡Äovi, zÃ­skajÃ­ nesmrtelnÃ© duÅ¡e, ale ti, kteÅ™Ã­ se postavÃ­ proti nÄ›mu, budou potrestÃ¡ni.
+	AI_Output (self, other,"DIA_BaalTaran_Lehre_05_05"); //SpÃ¡Ä je vÅ¡ak milosrdnÃ½ a poslal dÅ¯kaz svÃ© moci vÅ¡em, kdo o nÄ›m pochybovali.
 };
 
 // **************************************************
@@ -149,7 +149,7 @@ instance  DIA_BaalTaran_Freiheit (C_INFO)
 	condition	= DIA_BaalTaran_Freiheit_Condition;
 	information	= DIA_BaalTaran_Freiheit_Info;
 	permanent	= 0;
-	description = "Jak vypadá cesta ke svobodì?";
+	description = "Jak vypadÃ¡ cesta ke svobodÄ›?";
 };                       
 
 FUNC int  DIA_BaalTaran_Freiheit_Condition()
@@ -162,9 +162,9 @@ FUNC int  DIA_BaalTaran_Freiheit_Condition()
 
 FUNC VOID  DIA_BaalTaran_Freiheit_Info()
 {
-	AI_Output (other, self,"DIA_BaalTaran_Freiheit_15_00"); //Jak vypadá cesta ke svobodì?
-	AI_Output (self, other,"DIA_BaalTaran_Freiheit_05_01"); //Pøipravujeme se na velké vzıvání Spáèe, pøi kterém vstoupí všichni novicové spoleènì ve spojení.
-	AI_Output (self, other,"DIA_BaalTaran_Freiheit_05_02"); //Pøi tomto vzıvání Spáè ukáe cestu ke svobodì.
+	AI_Output (other, self,"DIA_BaalTaran_Freiheit_15_00"); //Jak vypadÃ¡ cesta ke svobodÄ›?
+	AI_Output (self, other,"DIA_BaalTaran_Freiheit_05_01"); //PÅ™ipravujeme se na velkÃ© vzÃ½vÃ¡nÃ­ SpÃ¡Äe, pÅ™i kterÃ©m vstoupÃ­ vÅ¡ichni novicovÃ© spoleÄnÄ› ve spojenÃ­.
+	AI_Output (self, other,"DIA_BaalTaran_Freiheit_05_02"); //PÅ™i tomto vzÃ½vÃ¡nÃ­ SpÃ¡Ä ukÃ¡Å¾e cestu ke svobodÄ›.
 };
 
 // **************************************************
@@ -178,7 +178,7 @@ instance  DIA_BaalTaran_Beweis (C_INFO)
 	condition	= DIA_BaalTaran_Beweis_Condition;
 	information	= DIA_BaalTaran_Beweis_Info;
 	permanent	= 0;
-	description = "Jak váš bùh dokázal svou moc?";
+	description = "Jak vÃ¡Å¡ bÅ¯h dokÃ¡zal svou moc?";
 };                       
 
 FUNC int  DIA_BaalTaran_Beweis_Condition()
@@ -191,9 +191,9 @@ FUNC int  DIA_BaalTaran_Beweis_Condition()
 
 FUNC VOID  DIA_BaalTaran_Beweis_Info()
 {
-	AI_Output (other, self,"DIA_BaalTaran_Beweis_15_00"); //Jak váš bùh dokázal svou moc?
-	AI_Output (self, other,"DIA_BaalTaran_Beweis_05_01"); //Promluvil k nám skrze vize. Kdo slyšel jeho hlas, pøestal o jeho moci pochybovat.
-	AI_Output (self, other,"DIA_BaalTaran_Beweis_05_02"); //Kdy vezmeš drogu, která roste v bainách, budeš Spáèovi blí a budeš ho moci slyšet. Nìkteøí dokonce vidí obrazy.
+	AI_Output (other, self,"DIA_BaalTaran_Beweis_15_00"); //Jak vÃ¡Å¡ bÅ¯h dokÃ¡zal svou moc?
+	AI_Output (self, other,"DIA_BaalTaran_Beweis_05_01"); //Promluvil k nÃ¡m skrze vize. Kdo slyÅ¡el jeho hlas, pÅ™estal o jeho moci pochybovat.
+	AI_Output (self, other,"DIA_BaalTaran_Beweis_05_02"); //KdyÅ¾ vezmeÅ¡ drogu, kterÃ¡ roste v baÅ¾inÃ¡ch, budeÅ¡ SpÃ¡Äovi blÃ­Å¾ a budeÅ¡ ho moci slyÅ¡et. NÄ›kteÅ™Ã­ dokonce vidÃ­ obrazy.
 	AI_Output (other, self,"DIA_BaalTaran_Beweis_15_03"); //Aha.
 };
 
@@ -208,7 +208,7 @@ instance  DIA_BaalTaran_WayToST (C_INFO)
 	condition	= DIA_BaalTaran_WayToST_Condition;
 	information	= DIA_BaalTaran_WayToST_Info;
 	permanent	= 0;
-	description = "Jak se dostanu do tábora Bratrstva?";
+	description = "Jak se dostanu do tÃ¡bora Bratrstva?";
 };                       
 
 FUNC int  DIA_BaalTaran_WayToST_Condition()
@@ -221,16 +221,16 @@ FUNC int  DIA_BaalTaran_WayToST_Condition()
 
 FUNC VOID  DIA_BaalTaran_WayToST_Info()
 {
-	AI_Output (other, self,"DIA_BaalTaran_WayToST_15_00"); //Jak se dostanu do tábora Bratrstva?
-	AI_Output (self, other,"DIA_BaalTaran_WayToST_05_01"); //Nemám èas. Ale Baal Parvez by tu nìkde v táboøe mìl bıt také.
-	AI_Output (self, other,"DIA_BaalTaran_WayToST_05_02"); //Je poblí trištì, na druhé stranì od hradu. Myslím, e bude ve své chatrèi.
+	AI_Output (other, self,"DIA_BaalTaran_WayToST_15_00"); //Jak se dostanu do tÃ¡bora Bratrstva?
+	AI_Output (self, other,"DIA_BaalTaran_WayToST_05_01"); //NemÃ¡m Äas. Ale Baal Parvez by tu nÄ›kde v tÃ¡boÅ™e mÄ›l bÃ½t takÃ©.
+	AI_Output (self, other,"DIA_BaalTaran_WayToST_05_02"); //Je poblÃ­Å¾ trÅ¾iÅ¡tÄ›, na druhÃ© stranÄ› od hradu. MyslÃ­m, Å¾e bude ve svÃ© chatrÄi.
 
 	if (Npc_GetTrueGuild(hero) == GIL_NONE)
 	{
 		Log_CreateTopic		(CH1_JoinPsi, LOG_MISSION);
 		Log_SetTopicStatus	(CH1_JoinPsi, LOG_RUNNING);
 	};
-	B_LogEntry				(CH1_JoinPsi,"Novic jménem Baal Parvez mì mùe dovést do tábora Bratrstva v bainách. Najdu ho na trišti za hradem Starého tábora.");
+	B_LogEntry				(CH1_JoinPsi,"Novic jmÃ©nem Baal Parvez mÄ› mÅ¯Å¾e dovÃ©st do tÃ¡bora Bratrstva v baÅ¾inÃ¡ch. Najdu ho na trÅ¾iÅ¡ti za hradem StarÃ©ho tÃ¡bora.");
 };
 
 
@@ -245,7 +245,7 @@ instance  DIA_BaalTaran_IntoCastle (C_INFO)
 	condition	= DIA_BaalTaran_IntoCastle_Condition;
 	information	= DIA_BaalTaran_IntoCastle_Info;
 	permanent	= 1;
-	description = "Potøebuji se dostat do hradu. Mùeš mi pomoci?";
+	description = "PotÅ™ebuji se dostat do hradu. MÅ¯Å¾eÅ¡ mi pomoci?";
 };                       
 
 FUNC int  DIA_BaalTaran_IntoCastle_Condition()
@@ -258,58 +258,58 @@ FUNC int  DIA_BaalTaran_IntoCastle_Condition()
 
 FUNC VOID  DIA_BaalTaran_IntoCastle_Info()
 {
-	AI_Output (other, self,"DIA_BaalTaran_IntoCastle_15_00"); //Potøebuji se dostat do hradu. Mùeš mi pomoci?
-	AI_Output (self, other,"DIA_BaalTaran_IntoCastle_05_01"); //Obávám se, e ne, bratøe. Jen nìkteøí z nás smìjí vstoupit do hradu a to jsou ti, kteøí zásobují Gomeze drogou.
-	AI_Output (self, other,"DIA_BaalTaran_IntoCastle_05_02"); //Sbíráme tady drogu z bain a èást jí pak prodáme do Starého tábora a vymìníme za zboí z vnìjšího svìta.
-	AI_Output (self, other,"DIA_BaalTaran_IntoCastle_05_03"); //Kdybys byl jedním z kurırù, kteøí pracují pro Cor Kaloma, mohl by ses na hrad dostat. Ale to bys musel bıt jedním z nás.
-	AI_Output (self, other,"DIA_BaalTaran_IntoCastle_05_04"); //A co vùbec chceš na hradì dìlat?
+	AI_Output (other, self,"DIA_BaalTaran_IntoCastle_15_00"); //PotÅ™ebuji se dostat do hradu. MÅ¯Å¾eÅ¡ mi pomoci?
+	AI_Output (self, other,"DIA_BaalTaran_IntoCastle_05_01"); //ObÃ¡vÃ¡m se, Å¾e ne, bratÅ™e. Jen nÄ›kteÅ™Ã­ z nÃ¡s smÄ›jÃ­ vstoupit do hradu a to jsou ti, kteÅ™Ã­ zÃ¡sobujÃ­ Gomeze drogou.
+	AI_Output (self, other,"DIA_BaalTaran_IntoCastle_05_02"); //SbÃ­rÃ¡me tady drogu z baÅ¾in a ÄÃ¡st jÃ­ pak prodÃ¡me do StarÃ©ho tÃ¡bora a vymÄ›nÃ­me za zboÅ¾Ã­ z vnÄ›jÅ¡Ã­ho svÄ›ta.
+	AI_Output (self, other,"DIA_BaalTaran_IntoCastle_05_03"); //Kdybys byl jednÃ­m z kurÃ½rÅ¯, kteÅ™Ã­ pracujÃ­ pro Cor Kaloma, mohl by ses na hrad dostat. Ale to bys musel bÃ½t jednÃ­m z nÃ¡s.
+	AI_Output (self, other,"DIA_BaalTaran_IntoCastle_05_04"); //A co vÅ¯bec chceÅ¡ na hradÄ› dÄ›lat?
 	
 	Info_ClearChoices	(DIA_BaalTaran_IntoCastle );
-	Info_AddChoice		(DIA_BaalTaran_IntoCastle,"Chci se tam s nìkım setkat.",DIA_BaalTaran_IntoCastle_MeetSomeone);
-	Info_AddChoice		(DIA_BaalTaran_IntoCastle,"Mám dopis pro Velkého mága Kruhu ohnì.",DIA_BaalTaran_IntoCastle_Letter);
+	Info_AddChoice		(DIA_BaalTaran_IntoCastle,"Chci se tam s nÄ›kÃ½m setkat.",DIA_BaalTaran_IntoCastle_MeetSomeone);
+	Info_AddChoice		(DIA_BaalTaran_IntoCastle,"MÃ¡m dopis pro VelkÃ©ho mÃ¡ga Kruhu ohnÄ›.",DIA_BaalTaran_IntoCastle_Letter);
 };
 
 func void DIA_BaalTaran_IntoCastle_MeetSomeone()
 {
-	AI_Output (other, self,"DIA_BaalTaran_IntoCastle_MeetSomeone_15_00"); //Chci se tam s nìkım setkat.
-	AI_Output (self, other,"DIA_BaalTaran_IntoCastle_MeetSomeone_05_01"); //Tak? A s kım? A proè nepoèkáš, a dotyènı vyjde ven?
+	AI_Output (other, self,"DIA_BaalTaran_IntoCastle_MeetSomeone_15_00"); //Chci se tam s nÄ›kÃ½m setkat.
+	AI_Output (self, other,"DIA_BaalTaran_IntoCastle_MeetSomeone_05_01"); //Tak? A s kÃ½m? A proÄ nepoÄkÃ¡Å¡, aÅ¾ dotyÄnÃ½ vyjde ven?
 	Info_ClearChoices	(DIA_BaalTaran_IntoCastle );
-	Info_AddChoice		(DIA_BaalTaran_IntoCastle,"Do toho ti nic není.",DIA_BaalTaran_IntoCastle_ForgetIt);
-	Info_AddChoice		(DIA_BaalTaran_IntoCastle,"On je jedním z mágù.",DIA_BaalTaran_IntoCastle_Mage);
+	Info_AddChoice		(DIA_BaalTaran_IntoCastle,"Do toho ti nic nenÃ­.",DIA_BaalTaran_IntoCastle_ForgetIt);
+	Info_AddChoice		(DIA_BaalTaran_IntoCastle,"On je jednÃ­m z mÃ¡gÅ¯.",DIA_BaalTaran_IntoCastle_Mage);
 };
 
 func void DIA_BaalTaran_IntoCastle_Letter()
 {
-	AI_Output (other, self,"DIA_BaalTaran_IntoCastle_Letter_15_00"); //Mám dopis pro Velkého mága Kruhu ohnì.
-	AI_Output (self, other,"DIA_BaalTaran_IntoCastle_Letter_05_01"); //Och? A kde jsi k nìmu pøišel? Dali ti ho mágové, ještì ne tì sem vyhnali, co?
-	AI_Output (self, other,"DIA_BaalTaran_IntoCastle_Letter_05_02"); //Jsi hloupı, kdy o tom øíkáš lidem. Ale nemìj obavy - já to nikomu neøeknu!
-	AI_Output (self, other,"DIA_BaalTaran_IntoCastle_Letter_05_03"); //Ale pro svoje vlastní dobro to stejnì nikomu neøíkej. Zdejší lidi by za takovouhle vìc byli schopní komukoliv podøíznout krk!
-	AI_Output (self, other,"DIA_BaalTaran_IntoCastle_Letter_05_04"); //Vìtšina lidí by ráda dostala odmìnu za zprávu z vnìjšího svìta.
+	AI_Output (other, self,"DIA_BaalTaran_IntoCastle_Letter_15_00"); //MÃ¡m dopis pro VelkÃ©ho mÃ¡ga Kruhu ohnÄ›.
+	AI_Output (self, other,"DIA_BaalTaran_IntoCastle_Letter_05_01"); //Och? A kde jsi k nÄ›mu pÅ™iÅ¡el? Dali ti ho mÃ¡govÃ©, jeÅ¡tÄ› neÅ¾ tÄ› sem vyhnali, co?
+	AI_Output (self, other,"DIA_BaalTaran_IntoCastle_Letter_05_02"); //Jsi hloupÃ½, kdyÅ¾ o tom Å™Ã­kÃ¡Å¡ lidem. Ale nemÄ›j obavy - jÃ¡ to nikomu neÅ™eknu!
+	AI_Output (self, other,"DIA_BaalTaran_IntoCastle_Letter_05_03"); //Ale pro svoje vlastnÃ­ dobro to stejnÄ› nikomu neÅ™Ã­kej. ZdejÅ¡Ã­ lidi by za takovouhle vÄ›c byli schopnÃ­ komukoliv podÅ™Ã­znout krk!
+	AI_Output (self, other,"DIA_BaalTaran_IntoCastle_Letter_05_04"); //VÄ›tÅ¡ina lidÃ­ by rÃ¡da dostala odmÄ›nu za zprÃ¡vu z vnÄ›jÅ¡Ã­ho svÄ›ta.
 	Info_ClearChoices	(DIA_BaalTaran_IntoCastle );
 };
 //-----------------------------------------
 func void DIA_BaalTaran_IntoCastle_Mage()
 {
-	AI_Output (other, self,"DIA_BaalTaran_IntoCastle_Mage_15_00"); //On je jedním z mágù.
-	AI_Output (self, other,"DIA_BaalTaran_IntoCastle_Mage_05_01"); //Och! Dobøe, ti nikdy neopustí hrad. Opravdu se musíš dostat dovnitø.
-	AI_Output (self, other,"DIA_BaalTaran_IntoCastle_Mage_05_02"); //Co od nich vùbec chceš? Kouzelné runy? Nebo lektvary?
+	AI_Output (other, self,"DIA_BaalTaran_IntoCastle_Mage_15_00"); //On je jednÃ­m z mÃ¡gÅ¯.
+	AI_Output (self, other,"DIA_BaalTaran_IntoCastle_Mage_05_01"); //Och! DobÅ™e, ti nikdy neopustÃ­ hrad. Opravdu se musÃ­Å¡ dostat dovnitÅ™.
+	AI_Output (self, other,"DIA_BaalTaran_IntoCastle_Mage_05_02"); //Co od nich vÅ¯bec chceÅ¡? KouzelnÃ© runy? Nebo lektvary?
 	Info_ClearChoices	(DIA_BaalTaran_IntoCastle );
-	Info_AddChoice		(DIA_BaalTaran_IntoCastle,"Do toho ti nic není.",DIA_BaalTaran_IntoCastle_ForgetIt);
+	Info_AddChoice		(DIA_BaalTaran_IntoCastle,"Do toho ti nic nenÃ­.",DIA_BaalTaran_IntoCastle_ForgetIt);
 	Info_AddChoice		(DIA_BaalTaran_IntoCastle,"Ano.  ",DIA_BaalTaran_IntoCastle_Exactly);
 };
 
 func void DIA_BaalTaran_IntoCastle_ForgetIt()
 {
-	AI_Output (other, self,"DIA_BaalTaran_IntoCastle_ForgetIt_15_00"); //To není tvoje vìc.
-	AI_Output (self, other,"DIA_BaalTaran_IntoCastle_ForgetIt_05_01"); //Dobøe, èlovìèe. Jen jsem chtìl pomoci...
+	AI_Output (other, self,"DIA_BaalTaran_IntoCastle_ForgetIt_15_00"); //To nenÃ­ tvoje vÄ›c.
+	AI_Output (self, other,"DIA_BaalTaran_IntoCastle_ForgetIt_05_01"); //DobÅ™e, ÄlovÄ›Äe. Jen jsem chtÄ›l pomoci...
 	Info_ClearChoices	(DIA_BaalTaran_IntoCastle );
 };
 
 func void DIA_BaalTaran_IntoCastle_Exactly()
 {
 	AI_Output (other, self,"DIA_BaalTaran_IntoCastle_Exactly_15_00"); //Ano.
-	AI_Output (self, other,"DIA_BaalTaran_IntoCastle_Exactly_05_01"); //Vìdìl jsem to! Co jiného by mohl chlapík, jako ty, chtít od mágù.
-	AI_Output (self, other,"DIA_BaalTaran_IntoCastle_Exactly_05_02"); //Mùu ti dát jednu dobrou radu: zapomeò na mágy. Chtìjí za své zboí pøíliš rudy.
-	AI_Output (self, other,"DIA_BaalTaran_IntoCastle_Exactly_05_03"); //Kouzelné runy a lektvary jsou daleko levnìjší v našem táboøe.
+	AI_Output (self, other,"DIA_BaalTaran_IntoCastle_Exactly_05_01"); //VÄ›dÄ›l jsem to! Co jinÃ©ho by mohl chlapÃ­k, jako ty, chtÃ­t od mÃ¡gÅ¯.
+	AI_Output (self, other,"DIA_BaalTaran_IntoCastle_Exactly_05_02"); //MÅ¯Å¾u ti dÃ¡t jednu dobrou radu: zapomeÅˆ na mÃ¡gy. ChtÄ›jÃ­ za svÃ© zboÅ¾Ã­ pÅ™Ã­liÅ¡ rudy.
+	AI_Output (self, other,"DIA_BaalTaran_IntoCastle_Exactly_05_03"); //KouzelnÃ© runy a lektvary jsou daleko levnÄ›jÅ¡Ã­ v naÅ¡em tÃ¡boÅ™e.
 	Info_ClearChoices	(DIA_BaalTaran_IntoCastle);
 };

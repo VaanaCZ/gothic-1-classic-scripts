@@ -33,7 +33,7 @@ instance DIA_Jeremiah_Hallo (C_INFO)
 	condition	= DIA_Jeremiah_Hallo_Condition;
 	information	= DIA_Jeremiah_Hallo_Info;
 	permanent	= 0;
-	description = "Co dìláš?";
+	description = "Co dÄ›lÃ¡Å¡?";
 };                       
 
 FUNC int DIA_Jeremiah_Hallo_Condition()
@@ -43,9 +43,9 @@ FUNC int DIA_Jeremiah_Hallo_Condition()
 
 FUNC VOID  DIA_Jeremiah_Hallo_Info()
 {
-	AI_Output (other, self,"DIA_Jeremiah_Hallo_15_00"); //Co dìláš?
-	AI_Output (self, other,"DIA_Jeremiah_Hallo_04_01"); //Vyrábím rıovou pálenku, hochu.
-	AI_Output (self, other,"DIA_Jeremiah_Hallo_04_02"); //Tady - vezmi láhev. Ale neøíkej to Silasovi.
+	AI_Output (other, self,"DIA_Jeremiah_Hallo_15_00"); //Co dÄ›lÃ¡Å¡?
+	AI_Output (self, other,"DIA_Jeremiah_Hallo_04_01"); //VyrÃ¡bÃ­m rÃ½Å¾ovou pÃ¡lenku, hochu.
+	AI_Output (self, other,"DIA_Jeremiah_Hallo_04_02"); //Tady - vezmi lÃ¡hev. Ale neÅ™Ã­kej to Silasovi.
 	
 	CreateInvItems	(self, ItFoBooze, 1);
 	B_GiveInvItems	(self, other, ItFoBooze, 1);
@@ -64,7 +64,7 @@ instance DIA_Jeremiah_PERM (C_INFO)
 	condition	= DIA_Jeremiah_PERM_Condition;
 	information	= DIA_Jeremiah_PERM_Info;
 	permanent	= 1;
-	description = "Jak to chodí v palírnì?";
+	description = "Jak to chodÃ­ v palÃ­rnÄ›?";
 };                       
 
 FUNC int DIA_Jeremiah_PERM_Condition()
@@ -74,9 +74,9 @@ FUNC int DIA_Jeremiah_PERM_Condition()
 
 FUNC VOID  DIA_Jeremiah_PERM_Info()
 {
-	AI_Output (other, self,"DIA_Jeremiah_PERM_15_00"); //Jak to chodí v palírnì?
-	AI_Output (self, other,"DIA_Jeremiah_PERM_04_01"); //Jen stìí dokáu ty chlapy udret na uzdì. Èlovìèe, jen by pili!
-	AI_Output (self, other,"DIA_Jeremiah_PERM_04_02"); //Je to vánì dobré. Dokud mám co dìlat, poskoci Rıového Lorda mì nechávají na pokoji.
+	AI_Output (other, self,"DIA_Jeremiah_PERM_15_00"); //Jak to chodÃ­ v palÃ­rnÄ›?
+	AI_Output (self, other,"DIA_Jeremiah_PERM_04_01"); //Jen stÄ›Å¾Ã­ dokÃ¡Å¾u ty chlapy udrÅ¾et na uzdÄ›. ÄŒlovÄ›Äe, jen by pili!
+	AI_Output (self, other,"DIA_Jeremiah_PERM_04_02"); //Je to vÃ¡Å¾nÄ› dobrÃ©. Dokud mÃ¡m co dÄ›lat, poskoci RÃ½Å¾ovÃ©ho Lorda mÄ› nechÃ¡vajÃ­ na pokoji.
 	
 	Jeremiah_Bauer = TRUE;
 };
@@ -92,7 +92,7 @@ instance DIA_Jeremiah_Horatio (C_INFO)
 	condition	= DIA_Jeremiah_Horatio_Condition;
 	information	= DIA_Jeremiah_Horatio_Info;
 	permanent	= 0;
-	description = "Co mi mùeš øíci o Rıovém Lordovi?";
+	description = "Co mi mÅ¯Å¾eÅ¡ Å™Ã­ci o RÃ½Å¾ovÃ©m Lordovi?";
 };                       
 
 FUNC int DIA_Jeremiah_Horatio_Condition()
@@ -105,10 +105,10 @@ FUNC int DIA_Jeremiah_Horatio_Condition()
 
 FUNC VOID  DIA_Jeremiah_Horatio_Info()
 {
-	AI_Output (other, self,"DIA_Jeremiah_Horatio_15_00"); //Co mi mùeš øíci o Rıovém Lordovi?
-	AI_Output (self, other,"DIA_Jeremiah_Horatio_04_01"); //Je to zpropadenej gauner! Jeho lidi vyhledávají slabé, které pak nutí pracovat na polích.
-	AI_Output (self, other,"DIA_Jeremiah_Horatio_04_02"); //Jedinı, kdo by se mu mohl postavit, je Horatio. Ten ale nechce násilí.
-	AI_Output (self, other,"DIA_Jeremiah_Horatio_04_03"); //Jednou jsem ho slyšel øíkat, e by Rıového Lorda nejradìji praštil po hlavì, ale nikdy by to doopravdy neudìlal.
-	AI_Output (self, other,"DIA_Jeremiah_Horatio_04_04"); //Bylo by to proti jeho pøesvìdèení.
+	AI_Output (other, self,"DIA_Jeremiah_Horatio_15_00"); //Co mi mÅ¯Å¾eÅ¡ Å™Ã­ci o RÃ½Å¾ovÃ©m Lordovi?
+	AI_Output (self, other,"DIA_Jeremiah_Horatio_04_01"); //Je to zpropadenej gauner! Jeho lidi vyhledÃ¡vajÃ­ slabÃ©, kterÃ© pak nutÃ­ pracovat na polÃ­ch.
+	AI_Output (self, other,"DIA_Jeremiah_Horatio_04_02"); //JedinÃ½, kdo by se mu mohl postavit, je Horatio. Ten ale nechce nÃ¡silÃ­.
+	AI_Output (self, other,"DIA_Jeremiah_Horatio_04_03"); //Jednou jsem ho slyÅ¡el Å™Ã­kat, Å¾e by RÃ½Å¾ovÃ©ho Lorda nejradÄ›ji praÅ¡til po hlavÄ›, ale nikdy by to doopravdy neudÄ›lal.
+	AI_Output (self, other,"DIA_Jeremiah_Horatio_04_04"); //Bylo by to proti jeho pÅ™esvÄ›dÄenÃ­.
 };
 

@@ -47,52 +47,52 @@ FUNC INT DIA_Grim_Falle_Condition()
 
 FUNC VOID DIA_Grim_Falle_Info()
 {
-	AI_Output (self, other,"DIA_Grim_Falle_06_00"); //Hej, ty! Nejseš ty ten, co se chce pøidat k táboru?
-	AI_Output (other, self,"DIA_Grim_Falle_15_01"); //A co kdy jo?
+	AI_Output (self, other,"DIA_Grim_Falle_06_00"); //Hej, ty! NejseÅ¡ ty ten, co se chce pÅ™idat k tÃ¡boru?
+	AI_Output (other, self,"DIA_Grim_Falle_15_01"); //A co kdyÅ¾ jo?
 	AI_Output (self, other,"DIA_Grim_Falle_06_02"); //Mohl bych ti pomoci.
 	AI_Output (other, self,"DIA_Grim_Falle_15_03"); //A jak?
-	AI_Output (self, other,"DIA_Grim_Falle_06_04"); //Pøed táborem posedávají dva chlapíci a jeden z nich nìco ukradl Rudobaronùm. Je to znamenitı amulet, kterı mìl pøijet s posledním konvojem.
-	AI_Output (self, other,"DIA_Grim_Falle_06_05"); //Jeden z nich by ten amulet mìl mít poøád ještì u sebe. Jestlie je napadneme spoleènì, mohlo by se nám to podaøit - sám bych to nedokázal. Co ty na to?
+	AI_Output (self, other,"DIA_Grim_Falle_06_04"); //PÅ™ed tÃ¡borem posedÃ¡vajÃ­ dva chlapÃ­ci a jeden z nich nÄ›co ukradl RudobaronÅ¯m. Je to znamenitÃ½ amulet, kterÃ½ mÄ›l pÅ™ijet s poslednÃ­m konvojem.
+	AI_Output (self, other,"DIA_Grim_Falle_06_05"); //Jeden z nich by ten amulet mÄ›l mÃ­t poÅ™Ã¡d jeÅ¡tÄ› u sebe. JestliÅ¾e je napadneme spoleÄnÄ›, mohlo by se nÃ¡m to podaÅ™it - sÃ¡m bych to nedokÃ¡zal. Co ty na to?
 		
 	Info_ClearChoices	(DIA_Grim_Falle );
-	Info_AddChoice		(DIA_Grim_Falle,"Nemám zájem - budeš se muset poohlédnout po nìkom jiném.",DIA_Grim_Falle_Deny);
-	Info_AddChoice		(DIA_Grim_Falle,"Co se stane, a budeme mít ten amulet?",DIA_Grim_Falle_HowShare);
-	Info_AddChoice		(DIA_Grim_Falle,"Mùeš!",DIA_Grim_Falle_Accepr);
+	Info_AddChoice		(DIA_Grim_Falle,"NemÃ¡m zÃ¡jem - budeÅ¡ se muset poohlÃ©dnout po nÄ›kom jinÃ©m.",DIA_Grim_Falle_Deny);
+	Info_AddChoice		(DIA_Grim_Falle,"Co se stane, aÅ¾ budeme mÃ­t ten amulet?",DIA_Grim_Falle_HowShare);
+	Info_AddChoice		(DIA_Grim_Falle,"MÅ¯Å¾eÅ¡!",DIA_Grim_Falle_Accepr);
 };
 
 func void DIA_Grim_Falle_Deny()
 {
-	AI_Output (other, self,"DIA_Grim_Falle_Deny_15_00"); //Nemám zájem - budeš se muset poohlédnout po nìkom jiném.
-	AI_Output (self, other,"DIA_Grim_Falle_Deny_06_01"); //S tímhle pøístupem daleko nedojdeš -  øekni mi, kdyby sis to rozmyslel.
+	AI_Output (other, self,"DIA_Grim_Falle_Deny_15_00"); //NemÃ¡m zÃ¡jem - budeÅ¡ se muset poohlÃ©dnout po nÄ›kom jinÃ©m.
+	AI_Output (self, other,"DIA_Grim_Falle_Deny_06_01"); //S tÃ­mhle pÅ™Ã­stupem daleko nedojdeÅ¡ -  Å™ekni mi, kdyby sis to rozmyslel.
 	Info_ClearChoices	(DIA_Grim_Falle );
 };
 
 func void DIA_Grim_Falle_HowShare()
 {
-	AI_Output (other, self,"DIA_Grim_Falle_HowShare_15_00"); //Co se stane, a budeme mít ten amulet?
-	AI_Output (self, other,"DIA_Grim_Falle_HowShare_06_01"); //To je snadné! Vrátím ho a dostanu odmìnu. Øeknu jim, e jsi mi pomohl. Pak budeš mít u Gomeze jistì oko... 
+	AI_Output (other, self,"DIA_Grim_Falle_HowShare_15_00"); //Co se stane, aÅ¾ budeme mÃ­t ten amulet?
+	AI_Output (self, other,"DIA_Grim_Falle_HowShare_06_01"); //To je snadnÃ©! VrÃ¡tÃ­m ho a dostanu odmÄ›nu. Å˜eknu jim, Å¾e jsi mi pomohl. Pak budeÅ¡ mÃ­t u Gomeze jistÄ› oko... 
 	
 	Info_ClearChoices	(DIA_Grim_Falle );
-	Info_AddChoice		(DIA_Grim_Falle,"Nemám zájem - budeš se muset poohlédnout po nìkom jiném.",DIA_Grim_Falle_Deny);
-	Info_AddChoice		(DIA_Grim_Falle,"Ne! Buï to bude pùl na pùl, nebo si to udìlej sám!",DIA_Grim_Falle_HalfHalf);
-	Info_AddChoice		(DIA_Grim_Falle,"Mùeš!",DIA_Grim_Falle_Accepr);
+	Info_AddChoice		(DIA_Grim_Falle,"NemÃ¡m zÃ¡jem - budeÅ¡ se muset poohlÃ©dnout po nÄ›kom jinÃ©m.",DIA_Grim_Falle_Deny);
+	Info_AddChoice		(DIA_Grim_Falle,"Ne! BuÄ to bude pÅ¯l na pÅ¯l, nebo si to udÄ›lej sÃ¡m!",DIA_Grim_Falle_HalfHalf);
+	Info_AddChoice		(DIA_Grim_Falle,"MÅ¯Å¾eÅ¡!",DIA_Grim_Falle_Accepr);
 };
 
 func void DIA_Grim_Falle_HalfHalf()
 {
-	AI_Output (other, self,"DIA_Grim_Falle_HalfHalf_15_00"); //Ne! Buï to bude pùl na pùl, nebo si to udìlej sám!
-	AI_Output (self, other,"DIA_Grim_Falle_HalfHalf_06_01"); //Dobøe, dobøe, teda pùl na pùl. Doufám, e to bude pro oba dost. Tak - mùu s tebou poèítat?
+	AI_Output (other, self,"DIA_Grim_Falle_HalfHalf_15_00"); //Ne! BuÄ to bude pÅ¯l na pÅ¯l, nebo si to udÄ›lej sÃ¡m!
+	AI_Output (self, other,"DIA_Grim_Falle_HalfHalf_06_01"); //DobÅ™e, dobÅ™e, teda pÅ¯l na pÅ¯l. DoufÃ¡m, Å¾e to bude pro oba dost. Tak - mÅ¯Å¾u s tebou poÄÃ­tat?
 };
 
 func void DIA_Grim_Falle_Accepr()
 {
-	AI_Output (other, self,"DIA_Grim_Falle_Accepr_15_00"); //Mùeš!
-	AI_Output (self, other,"DIA_Grim_Falle_Accepr_06_01"); //Dobrá, øekni mi, kdy mùeme zaèít!
+	AI_Output (other, self,"DIA_Grim_Falle_Accepr_15_00"); //MÅ¯Å¾eÅ¡!
+	AI_Output (self, other,"DIA_Grim_Falle_Accepr_06_01"); //DobrÃ¡, Å™ekni mi, kdy mÅ¯Å¾eme zaÄÃ­t!
 	Info_ClearChoices	(DIA_Grim_Falle );
 };
 
 // **************************************************
-// 				Bereit für Falle
+// 				Bereit fÃ¼r Falle
 // **************************************************
 
 INSTANCE DIA_Grim_ReadyToGo (C_INFO)
@@ -102,7 +102,7 @@ INSTANCE DIA_Grim_ReadyToGo (C_INFO)
 	condition		= DIA_Grim_ReadyToGo_Condition;
 	information		= DIA_Grim_ReadyToGo_Info;
 	permanent		= 0;
-	description		= "Jsem pøipravenı jít s tebou - pojïme pro ten amulet!";
+	description		= "Jsem pÅ™ipravenÃ½ jÃ­t s tebou - pojÄme pro ten amulet!";
 };
 
 FUNC INT DIA_Grim_ReadyToGo_Condition()
@@ -115,8 +115,8 @@ FUNC INT DIA_Grim_ReadyToGo_Condition()
 
 FUNC VOID DIA_Grim_ReadyToGo_Info()
 {
-	AI_Output (other, self,"DIA_Grim_ReadyToGo_15_00"); //Jsem pøipravenı jít s tebou - pojïme pro ten amulet!
-	AI_Output (self, other,"DIA_Grim_ReadyToGo_06_01"); //Dobøe, pojïme do toho...
+	AI_Output (other, self,"DIA_Grim_ReadyToGo_15_00"); //Jsem pÅ™ipravenÃ½ jÃ­t s tebou - pojÄme pro ten amulet!
+	AI_Output (self, other,"DIA_Grim_ReadyToGo_06_01"); //DobÅ™e, pojÄme do toho...
 	
 	AI_StopProcessInfos	(self);
 	
@@ -147,14 +147,14 @@ FUNC int  DIA_Grim_AtOCdraussen_Condition()
 
 FUNC VOID  DIA_Grim_AtOCdraussen_Info()
 {
-	AI_Output (self, other,"DIA_Grim_AtOCdraussen_06_00"); //Tak, jsme tady - daleko od našeho pøítele Diega.
+	AI_Output (self, other,"DIA_Grim_AtOCdraussen_06_00"); //Tak, jsme tady - daleko od naÅ¡eho pÅ™Ã­tele Diega.
 	if ( ((Npc_GetDistToNpc(self,Bu520)<1000)&&(!Npc_IsDead(Bu520))) || ((Npc_GetDistToNpc(self,Bu534)<1000)&&(!Npc_IsDead(Bu534))) )
 	{
-		AI_Output (self, other,"DIA_Grim_AtOCdraussen_06_01"); //Máme vyøídit pozdravy od Bloodwyna!
+		AI_Output (self, other,"DIA_Grim_AtOCdraussen_06_01"); //MÃ¡me vyÅ™Ã­dit pozdravy od Bloodwyna!
 	}
 	else
 	{
-		AI_Output (self, other,"DIA_Grim_AtOCdraussen_06_02"); //Mám vyøídit pozdravy od Bloodwyna!
+		AI_Output (self, other,"DIA_Grim_AtOCdraussen_06_02"); //MÃ¡m vyÅ™Ã­dit pozdravy od Bloodwyna!
 	};
 
 	AI_StopProcessInfos	(self);
@@ -203,22 +203,22 @@ FUNC INT DIA_Grim_NACHFalle_Condition()
 
 FUNC VOID DIA_Grim_NACHFalle_Info()
 {
-	AI_Output (other, self,"DIA_Grim_NACHFalle_15_01"); //Ty idiote, chtìl jsi mì chytit do pasti...
-	AI_Output (self, other,"DIA_Grim_NACHFalle_06_02"); //Hej, èlovìèe! Jsme na stejné lodi! Nechce se mi rubat v dolech.
-	AI_Output (self, other,"DIA_Grim_NACHFalle_06_03"); //Udìlám, co mi øeknou stráe, pak mì pøijmou døíve.
-	AI_Output (self, other,"DIA_Grim_NACHFalle_06_04"); //Mìl bych TÌ praštit po tlamì a zarazit do zemì. Proè jsi proboha zaèal bojovat se stráemi?
-	AI_Output (self, other,"DIA_Grim_NACHFalle_06_05"); //Já proti tobì osobnì nic nemám. Tak co myslíš - mír nebo válka?
+	AI_Output (other, self,"DIA_Grim_NACHFalle_15_01"); //Ty idiote, chtÄ›l jsi mÄ› chytit do pasti...
+	AI_Output (self, other,"DIA_Grim_NACHFalle_06_02"); //Hej, ÄlovÄ›Äe! Jsme na stejnÃ© lodi! Nechce se mi rubat v dolech.
+	AI_Output (self, other,"DIA_Grim_NACHFalle_06_03"); //UdÄ›lÃ¡m, co mi Å™eknou strÃ¡Å¾e, pak mÄ› pÅ™ijmou dÅ™Ã­ve.
+	AI_Output (self, other,"DIA_Grim_NACHFalle_06_04"); //MÄ›l bych TÄš praÅ¡tit po tlamÄ› a zarazit do zemÄ›. ProÄ jsi proboha zaÄal bojovat se strÃ¡Å¾emi?
+	AI_Output (self, other,"DIA_Grim_NACHFalle_06_05"); //JÃ¡ proti tobÄ› osobnÄ› nic nemÃ¡m. Tak co myslÃ­Å¡ - mÃ­r nebo vÃ¡lka?
 	
 	Info_ClearChoices	(DIA_Grim_NACHFalle );
 	Info_AddChoice		(DIA_Grim_NACHFalle,"Do toho.",DIA_Grim_NACHFalle_Weiterpruegeln);
-	Info_AddChoice		(DIA_Grim_NACHFalle,"Mír.",DIA_Grim_NACHFalle_Frieden);
+	Info_AddChoice		(DIA_Grim_NACHFalle,"MÃ­r.",DIA_Grim_NACHFalle_Frieden);
 };
 
 
 func void DIA_Grim_NACHFalle_Weiterpruegeln()
 {
-	AI_Output (other, self,"DIA_Grim_NACHFalle_Weiterpruegeln_15_00"); //Já to vidím jako válku.
-	AI_Output (self, other,"DIA_Grim_NACHFalle_Weiterpruegeln_06_01"); //Och, èlovìèe, dostal jsi mì...
+	AI_Output (other, self,"DIA_Grim_NACHFalle_Weiterpruegeln_15_00"); //JÃ¡ to vidÃ­m jako vÃ¡lku.
+	AI_Output (self, other,"DIA_Grim_NACHFalle_Weiterpruegeln_06_01"); //Och, ÄlovÄ›Äe, dostal jsi mÄ›...
 	Info_ClearChoices	(DIA_Grim_NACHFalle );
 	AI_StopProcessInfos	(self);
 
@@ -228,9 +228,9 @@ func void DIA_Grim_NACHFalle_Weiterpruegeln()
 
 func void DIA_Grim_NACHFalle_Frieden()
 {
-	AI_Output (other, self,"DIA_Grim_NACHFalle_Frieden_15_00"); //Mír zní líp.
-	AI_Output (self, other,"DIA_Grim_NACHFalle_Frieden_06_01"); //Jsem rád, e jsme si to vyøíkali z oèí do oèí. Zapomeòme na to. Od teïka jsem na tvojí stranì.
-	AI_Output (self, other,"DIA_Grim_NACHFalle_Frieden_06_02"); //Kdybys mìl ještì nìkdy nìjaké problémy, mùeš se mnou poèítat - koneènì, nìco ti dluím.
+	AI_Output (other, self,"DIA_Grim_NACHFalle_Frieden_15_00"); //MÃ­r znÃ­ lÃ­p.
+	AI_Output (self, other,"DIA_Grim_NACHFalle_Frieden_06_01"); //Jsem rÃ¡d, Å¾e jsme si to vyÅ™Ã­kali z oÄÃ­ do oÄÃ­. ZapomeÅˆme na to. Od teÄka jsem na tvojÃ­ stranÄ›.
+	AI_Output (self, other,"DIA_Grim_NACHFalle_Frieden_06_02"); //Kdybys mÄ›l jeÅ¡tÄ› nÄ›kdy nÄ›jakÃ© problÃ©my, mÅ¯Å¾eÅ¡ se mnou poÄÃ­tat - koneÄnÄ›, nÄ›co ti dluÅ¾Ã­m.
 	Info_ClearChoices	(DIA_Grim_NACHFalle );
 
 	Npc_SetPermAttitude(self,ATT_FRIENDLY);
@@ -249,7 +249,7 @@ INSTANCE DIA_Grim_Hallo (C_INFO)
 	condition		= DIA_Grim_Hallo_Condition;
 	information		= DIA_Grim_Hallo_Info;
 	permanent		= 0;
-	description		= "Jsem tady novı.";
+	description		= "Jsem tady novÃ½.";
 };
 
 FUNC INT DIA_Grim_Hallo_Condition()
@@ -267,8 +267,8 @@ FUNC INT DIA_Grim_Hallo_Condition()
 
 FUNC VOID DIA_Grim_Hallo_Info()
 {
-	AI_Output (other, self,"DIA_Grim_Hallo_15_00"); //Jsem tady novı.
-	AI_Output (self, other,"DIA_Grim_Hallo_06_01"); //Právì jsi pøišel, viï? Já jsem Grim - nejsem tady ještì dlouho. Strèili mì sem se skupinou právì pøed tebou.
+	AI_Output (other, self,"DIA_Grim_Hallo_15_00"); //Jsem tady novÃ½.
+	AI_Output (self, other,"DIA_Grim_Hallo_06_01"); //PrÃ¡vÄ› jsi pÅ™iÅ¡el, viÄ? JÃ¡ jsem Grim - nejsem tady jeÅ¡tÄ› dlouho. StrÄili mÄ› sem se skupinou prÃ¡vÄ› pÅ™ed tebou.
 };
 
 // **************************************************
@@ -282,7 +282,7 @@ INSTANCE DIA_Grim_Leben (C_INFO)
 	condition		= DIA_Grim_Leben_Condition;
 	information		= DIA_Grim_Leben_Info;
 	permanent		= 0;
-	description		= "Jak se tady ije?";
+	description		= "Jak se tady Å¾ije?";
 };
 
 FUNC INT DIA_Grim_Leben_Condition()
@@ -292,8 +292,8 @@ FUNC INT DIA_Grim_Leben_Condition()
 
 FUNC VOID DIA_Grim_Leben_Info()
 {
-	AI_Output (other, self,"DIA_Grim_Leben_15_00"); //Jakı je tady ivot?
-	AI_Output (self, other,"DIA_Grim_Leben_06_01"); //Docela to ujde, pokud platíš stráím peníze za ochranu.
+	AI_Output (other, self,"DIA_Grim_Leben_15_00"); //JakÃ½ je tady Å¾ivot?
+	AI_Output (self, other,"DIA_Grim_Leben_06_01"); //Docela to ujde, pokud platÃ­Å¡ strÃ¡Å¾Ã­m penÃ­ze za ochranu.
 };
 
 // **************************************************
@@ -307,7 +307,7 @@ INSTANCE DIA_Grim_Aufnahme (C_INFO)
 	condition		= DIA_Grim_Aufnahme_Condition;
 	information		= DIA_Grim_Aufnahme_Info;
 	permanent		= 0;
-	description		= "Co musím udìlat, aby mì v táboøe uznávali?";
+	description		= "Co musÃ­m udÄ›lat, aby mÄ› v tÃ¡boÅ™e uznÃ¡vali?";
 };
 
 FUNC INT DIA_Grim_Aufnahme_Condition()
@@ -317,11 +317,11 @@ FUNC INT DIA_Grim_Aufnahme_Condition()
 
 FUNC VOID DIA_Grim_Aufnahme_Info()
 {
-	AI_Output (other, self,"DIA_Grim_Aufnahme_15_00"); //Co musím udìlat, kdy budu chtít, aby mì v táboøe uznávali?
-	AI_Output (self, other,"DIA_Grim_Aufnahme_06_01"); //Tak, nejdøív se musíš stát Stínem. Proto si musíš najít nìkoho, kdo tì bude podporovat. Nìkoho, kdo ti všechno vysvìtlí a bude za tebou stát.
-	AI_Output (self, other,"DIA_Grim_Aufnahme_06_02"); //Bıt tebou, zkusil bych se dostat k Diegovi - já to taky tak udìlal - je docela dobrı.
-	AI_Output (self, other,"DIA_Grim_Aufnahme_06_03"); //Udìlá s tebou zkoušku poctivosti - ta je pro kadého jiná. Pak splníš pár menších úkolù od ostatních Stínù.
-	AI_Output (self, other,"DIA_Grim_Aufnahme_06_04"); //Kdy se ti to podaøí, budeš patøit k nám.
+	AI_Output (other, self,"DIA_Grim_Aufnahme_15_00"); //Co musÃ­m udÄ›lat, kdyÅ¾ budu chtÃ­t, aby mÄ› v tÃ¡boÅ™e uznÃ¡vali?
+	AI_Output (self, other,"DIA_Grim_Aufnahme_06_01"); //Tak, nejdÅ™Ã­v se musÃ­Å¡ stÃ¡t StÃ­nem. Proto si musÃ­Å¡ najÃ­t nÄ›koho, kdo tÄ› bude podporovat. NÄ›koho, kdo ti vÅ¡echno vysvÄ›tlÃ­ a bude za tebou stÃ¡t.
+	AI_Output (self, other,"DIA_Grim_Aufnahme_06_02"); //BÃ½t tebou, zkusil bych se dostat k Diegovi - jÃ¡ to taky tak udÄ›lal - je docela dobrÃ½.
+	AI_Output (self, other,"DIA_Grim_Aufnahme_06_03"); //UdÄ›lÃ¡ s tebou zkouÅ¡ku poctivosti - ta je pro kaÅ¾dÃ©ho jinÃ¡. Pak splnÃ­Å¡ pÃ¡r menÅ¡Ã­ch ÃºkolÅ¯ od ostatnÃ­ch StÃ­nÅ¯.
+	AI_Output (self, other,"DIA_Grim_Aufnahme_06_04"); //KdyÅ¾ se ti to podaÅ™Ã­, budeÅ¡ patÅ™it k nÃ¡m.
 };
 
 // **************************************************
@@ -337,7 +337,7 @@ INSTANCE DIA_Grim_HowFarAreYou (C_INFO)
 	condition		= DIA_Grim_HowFarAreYou_Condition;
 	information		= DIA_Grim_HowFarAreYou_Info;
 	permanent		= 1;
-	description		= "A - jak daleko ses dostal se svımi zkouškami?";
+	description		= "A - jak daleko ses dostal se svÃ½mi zkouÅ¡kami?";
 };
 
 FUNC INT DIA_Grim_HowFarAreYou_Condition()
@@ -350,12 +350,12 @@ FUNC INT DIA_Grim_HowFarAreYou_Condition()
 
 FUNC VOID DIA_Grim_HowFarAreYou_Info()
 {
-	AI_Output (other, self,"DIA_Grim_HowFarAreYou_15_00"); //A - jak daleko ses dostal se svımi zkouškami?
-	AI_Output (self, other,"DIA_Grim_HowFarAreYou_06_01"); //U jsem mluvil s Dexterem, Slyem a Fingersem. Ti patøí k nejdùleitìjším lidem v táboøe.
+	AI_Output (other, self,"DIA_Grim_HowFarAreYou_15_00"); //A - jak daleko ses dostal se svÃ½mi zkouÅ¡kami?
+	AI_Output (self, other,"DIA_Grim_HowFarAreYou_06_01"); //UÅ¾ jsem mluvil s Dexterem, Slyem a Fingersem. Ti patÅ™Ã­ k nejdÅ¯leÅ¾itÄ›jÅ¡Ã­m lidem v tÃ¡boÅ™e.
 	
 	if	!Grim_Tests
 	{
-		B_LogEntry( CH1_JoinOC,"Dexter, Sly a Shadow jsou vlivní Stínové.");
+		B_LogEntry( CH1_JoinOC,"Dexter, Sly a Shadow jsou vlivnÃ­ StÃ­novÃ©.");
 		Grim_Tests = TRUE;
 	};
 };
@@ -371,7 +371,7 @@ INSTANCE DIA_Grim_YourPDV (C_INFO)
 	condition		= DIA_Grim_YourPDV_Condition;
 	information		= DIA_Grim_YourPDV_Info;
 	permanent		= 0;
-	description		= "Jaká byla TVOJE zkouška poctivosti?";
+	description		= "JakÃ¡ byla TVOJE zkouÅ¡ka poctivosti?";
 };
 
 FUNC INT DIA_Grim_YourPDV_Condition()
@@ -384,8 +384,8 @@ FUNC INT DIA_Grim_YourPDV_Condition()
 
 FUNC VOID DIA_Grim_YourPDV_Info()
 {
-	AI_Output (other, self,"DIA_Grim_YourPDV_15_00"); //Jaká byla TVOJE zkouška poctivosti?
-	AI_Output (self, other,"DIA_Grim_YourPDV_06_01"); //To ti, èlovìèe, nemùu øíci. O vìcech, jako je tahle, nesmíš mluvit.
+	AI_Output (other, self,"DIA_Grim_YourPDV_15_00"); //JakÃ¡ byla TVOJE zkouÅ¡ka poctivosti?
+	AI_Output (self, other,"DIA_Grim_YourPDV_06_01"); //To ti, ÄlovÄ›Äe, nemÅ¯Å¾u Å™Ã­ci. O vÄ›cech, jako je tahle, nesmÃ­Å¡ mluvit.
 };
 
 
@@ -418,9 +418,9 @@ FUNC int  DIA_Grim_INEXTREMO_Condition()
 
 FUNC VOID  DIA_Grim_INEXTREMO_Info()
 {
-	AI_Output		(self, other,"DIA_Grim_INEXTREMO_06_01"); //Hej, u si slyšel novinky?
-	AI_Output		(self, other,"DIA_Grim_INEXTREMO_06_02"); //Jsou tady In Extremo. Jsou právì na tribunì.
-	AI_Output		(self, other,"DIA_Grim_INEXTREMO_06_03"); //Pospìš, jinak tu štaci propásneme!
+	AI_Output		(self, other,"DIA_Grim_INEXTREMO_06_01"); //Hej, uÅ¾ si slyÅ¡el novinky?
+	AI_Output		(self, other,"DIA_Grim_INEXTREMO_06_02"); //Jsou tady In Extremo. Jsou prÃ¡vÄ› na tribunÄ›.
+	AI_Output		(self, other,"DIA_Grim_INEXTREMO_06_03"); //PospÄ›Å¡, jinak tu Å¡taci propÃ¡sneme!
 
 	Npc_ExchangeRoutine	(self,	"InExtremo");
 
@@ -461,7 +461,7 @@ FUNC int  DIA_Grim_INEXTREMOAWAY_Condition()
 FUNC VOID  DIA_Grim_INEXTREMOAWAY_Info()
 {
 	AI_Output			(hero, self,"DIA_Grim_INEXTREMOAWAY_15_01"); //Kde jsou In Extremo?
-	AI_Output			(self, hero,"DIA_Grim_INEXTREMOAWAY_06_02"); //U jsou pryè. To je škoda, obvykle bıvám po veèerech u tribuny.
+	AI_Output			(self, hero,"DIA_Grim_INEXTREMOAWAY_06_02"); //UÅ¾ jsou pryÄ. To je Å¡koda, obvykle bÃ½vÃ¡m po veÄerech u tribuny.
 
 	AI_StopProcessInfos	(self);
 };

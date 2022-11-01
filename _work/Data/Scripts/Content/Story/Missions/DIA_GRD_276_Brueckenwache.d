@@ -33,7 +33,7 @@ INSTANCE Info_GRD_276_Tips(C_INFO)
 	condition	= Info_GRD_276_Tips_Condition;
 	information	= Info_GRD_276_Tips_Info;
 	permanent	= 0;
-	description = "Zdar! Jsem tady nov˝.";
+	description = "Zdar! Jsem tady nov√Ω.";
 };                       
 
 FUNC INT Info_GRD_276_Tips_Condition()
@@ -46,7 +46,7 @@ FUNC INT Info_GRD_276_Tips_Condition()
 FUNC VOID Info_GRD_276_Tips_Info()
 {
 	AI_Output (other,self,"Info_GRD_276_Tips_15_00"); //Zdar! Jsem tady novej!
-	AI_Output (self,other,"Info_GRD_276_Tips_07_01"); //To se teda m·ö!
+	AI_Output (self,other,"Info_GRD_276_Tips_07_01"); //To se teda m√°≈°!
 };
 
 // *****************************************************************
@@ -60,7 +60,7 @@ INSTANCE Info_GRD_276_Bla(C_INFO)
 	condition	= Info_GRD_276_Bla_Condition;
 	information	= Info_GRD_276_Bla_Info;
 	permanent	= 1;
-	description = "Je t·mhleto Star˝ t·bor?";
+	description = "Je t√°mhleto Star√Ω t√°bor?";
 };                       
 
 FUNC INT Info_GRD_276_Bla_Condition()
@@ -73,7 +73,7 @@ FUNC INT Info_GRD_276_Bla_Condition()
 
 FUNC VOID Info_GRD_276_Bla_Info()
 {
-	AI_Output (other,self,"Info_GRD_276_Bla_15_00"); //Je t·mhleto Star˝ t·bor?
-	AI_Output (self,other,"Info_GRD_276_Bla_07_01"); //Ne, to je Nov˝ t·bor. Star˝ t·bor je za mostem.
+	AI_Output (other,self,"Info_GRD_276_Bla_15_00"); //Je t√°mhleto Star√Ω t√°bor?
+	AI_Output (self,other,"Info_GRD_276_Bla_07_01"); //Ne, to je Nov√Ω t√°bor. Star√Ω t√°bor je za mostem.
 	AI_StopProcessInfos(self);
 };

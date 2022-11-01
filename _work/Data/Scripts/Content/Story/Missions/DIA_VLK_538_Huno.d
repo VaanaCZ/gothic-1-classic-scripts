@@ -33,7 +33,7 @@ INSTANCE DIA_Huno_YouKnowYourJob (C_INFO)
 	information		= DIA_Huno_YouKnowYourJob_Info;
 	permanent		= 0;
 	important		= 0;
-	description		= "Zdá se, e své práci rozumíš.";
+	description		= "ZdÃ¡ se, Å¾e svÃ© prÃ¡ci rozumÃ­Å¡.";
 };
 
 FUNC INT DIA_Huno_YouKnowYourJob_Condition()
@@ -43,9 +43,9 @@ FUNC INT DIA_Huno_YouKnowYourJob_Condition()
 
 FUNC VOID DIA_Huno_YouKnowYourJob_Info()
 {
-	AI_Output (other,self,"DIA_Huno_YouKnowYourJob_15_00"); //Zdá se, e své práci rozumíš.
-	AI_Output (self,other,"DIA_Huno_YouKnowYourJob_09_01"); //Zatím si nikdo nestìoval.
-	AI_Output (self,other,"DIA_Huno_YouKnowYourJob_09_02"); //Rozhodnì to nebyl špatnı nápad. Kadı idiot tu potøebuje meè a to je vìc, kterou dostane ode mì.
+	AI_Output (other,self,"DIA_Huno_YouKnowYourJob_15_00"); //ZdÃ¡ se, Å¾e svÃ© prÃ¡ci rozumÃ­Å¡.
+	AI_Output (self,other,"DIA_Huno_YouKnowYourJob_09_01"); //ZatÃ­m si nikdo nestÄ›Å¾oval.
+	AI_Output (self,other,"DIA_Huno_YouKnowYourJob_09_02"); //RozhodnÄ› to nebyl Å¡patnÃ½ nÃ¡pad. KaÅ¾dÃ½ idiot tu potÅ™ebuje meÄ a to je vÄ›c, kterou dostane ode mÄ›.
 };
 
 
@@ -60,7 +60,7 @@ INSTANCE DIA_Huno_HowLong (C_INFO)
 	information		= DIA_Huno_HowLong_Info;
 	permanent		= 0;
 	important		= 0;
-	description		= "Jak dlouho ti trvá vıroba jedné èepele?";
+	description		= "Jak dlouho ti trvÃ¡ vÃ½roba jednÃ© Äepele?";
 };
 
 FUNC INT DIA_Huno_HowLong_Condition()
@@ -73,14 +73,14 @@ FUNC INT DIA_Huno_HowLong_Condition()
 
 FUNC VOID DIA_Huno_HowLong_Info()
 {
-	AI_Output (other,self,"DIA_Huno_HowLong_15_00"); //Jak dlouho ti trvá vıroba jedné èepele?
-	AI_Output (self,other,"DIA_Huno_HowLong_09_01"); //Záleí na typu. Jednoruèní meèe dìlám rychle jako hurikán.
-	AI_Output (self,other,"DIA_Huno_HowLong_09_02"); //Samozøejmì v pøípadì, kdy mì motivuje cena.
-	AI_Output (self,other,"DIA_Huno_HowLong_09_03"); //Podivín jako Whistler obvykle musí èekat na svou hraèku déle ne ostatní lidi.
-	AI_Output (other,self,"DIA_Huno_HowLong_15_04"); //Proè? Neplatí dost?
-	AI_Output (self,other,"DIA_Huno_HowLong_09_05"); //Ne, naopak. Za poslední meè dal 150 nugetù.
-	AI_Output (self,other,"DIA_Huno_HowLong_09_06"); //Ten chlapík má zálibu v ozdobách a lákadlech na holky, proto to není levné.
-	AI_Output (self,other,"DIA_Huno_HowLong_09_07"); //Hele, nejsi trochu moc zvìdavı, pøíteli?
+	AI_Output (other,self,"DIA_Huno_HowLong_15_00"); //Jak dlouho ti trvÃ¡ vÃ½roba jednÃ© Äepele?
+	AI_Output (self,other,"DIA_Huno_HowLong_09_01"); //ZÃ¡leÅ¾Ã­ na typu. JednoruÄnÃ­ meÄe dÄ›lÃ¡m rychle jako hurikÃ¡n.
+	AI_Output (self,other,"DIA_Huno_HowLong_09_02"); //SamozÅ™ejmÄ› v pÅ™Ã­padÄ›, kdy mÄ› motivuje cena.
+	AI_Output (self,other,"DIA_Huno_HowLong_09_03"); //PodivÃ­n jako Whistler obvykle musÃ­ Äekat na svou hraÄku dÃ©le neÅ¾ ostatnÃ­ lidi.
+	AI_Output (other,self,"DIA_Huno_HowLong_15_04"); //ProÄ? NeplatÃ­ dost?
+	AI_Output (self,other,"DIA_Huno_HowLong_09_05"); //Ne, naopak. Za poslednÃ­ meÄ dal 150 nugetÅ¯.
+	AI_Output (self,other,"DIA_Huno_HowLong_09_06"); //Ten chlapÃ­k mÃ¡ zÃ¡libu v ozdobÃ¡ch a lÃ¡kadlech na holky, proto to nenÃ­ levnÃ©.
+	AI_Output (self,other,"DIA_Huno_HowLong_09_07"); //Hele, nejsi trochu moc zvÄ›davÃ½, pÅ™Ã­teli?
 };
 
 // **************************************************
@@ -94,7 +94,7 @@ INSTANCE DIA_Huno_HowsYourBusiness (C_INFO)
 	information		= DIA_Huno_HowsYourBusiness_Info;
 	permanent		= 1;
 	important		= 0;
-	description		= "Tak co, kováøi, jak jdou obchody?";
+	description		= "Tak co, kovÃ¡Å™i, jak jdou obchody?";
 };
 
 FUNC INT DIA_Huno_HowsYourBusiness_Condition()
@@ -107,12 +107,12 @@ FUNC INT DIA_Huno_HowsYourBusiness_Condition()
 
 FUNC VOID DIA_Huno_HowsYourBusiness_Info()
 {
-	AI_Output (other,self,"DIA_Huno_HowsYourBusiness_15_00"); //Tak co, kováøi, jak jdou obchody?
-	AI_Output (self,other,"DIA_Huno_HowsYourBusiness_09_01"); //Proè to chceš vìdìt?
-	AI_Output (other,self,"DIA_Huno_HowsYourBusiness_15_02"); //Mìl bych pro tebe zakázku.
+	AI_Output (other,self,"DIA_Huno_HowsYourBusiness_15_00"); //Tak co, kovÃ¡Å™i, jak jdou obchody?
+	AI_Output (self,other,"DIA_Huno_HowsYourBusiness_09_01"); //ProÄ to chceÅ¡ vÄ›dÄ›t?
+	AI_Output (other,self,"DIA_Huno_HowsYourBusiness_15_02"); //MÄ›l bych pro tebe zakÃ¡zku.
 	AI_Output (self,other,"DIA_Huno_HowsYourBusiness_09_03"); //Opravdu? A jakou?
-	AI_Output (other,self,"DIA_Huno_HowsYourBusiness_15_04"); //Budu o tom pøemıšlet.
-	AI_Output (self,other,"DIA_Huno_HowsYourBusiness_09_05"); //Pøijï, a budeš nìco opravdu potøebovat a pøestaò mi lézt na nervy.
+	AI_Output (other,self,"DIA_Huno_HowsYourBusiness_15_04"); //Budu o tom pÅ™emÃ½Å¡let.
+	AI_Output (self,other,"DIA_Huno_HowsYourBusiness_09_05"); //PÅ™ijÄ, aÅ¾ budeÅ¡ nÄ›co opravdu potÅ™ebovat a pÅ™estaÅˆ mi lÃ©zt na nervy.
 };
 
 // **************************************************
@@ -129,7 +129,7 @@ INSTANCE DIA_Huno_LEARNSMITH (C_INFO)
 	information		= DIA_Huno_LEARNSMITH_Info;
 	permanent		= 1;
 	important		= 0;
-	description		= "Chtìl bych tu zkusit pracovat.";
+	description		= "ChtÄ›l bych tu zkusit pracovat.";
 };
 
 FUNC INT DIA_Huno_LEARNSMITH_Condition()
@@ -142,15 +142,15 @@ FUNC INT DIA_Huno_LEARNSMITH_Condition()
 
 FUNC VOID DIA_Huno_LEARNSMITH_Info()
 {
-	AI_Output (other,self,"DIA_Huno_LEARNSMITH_15_00"); //Chtìl bych tu zkusit pracovat.
-	AI_Output (self,other,"DIA_Huno_LEARNSMITH_09_01"); //Och, ale nemysli si, e tì nechám dìlat vıstøední èepele!
-	AI_Output (other,self,"DIA_Huno_LEARNSMITH_15_02"); //Co musím dìlat?
-	AI_Output (self,other,"DIA_Huno_LEARNSMITH_09_03"); //Dobøe, vezmi ocel a vlo ji do vıhnì.
-	AI_Output (self,other,"DIA_Huno_LEARNSMITH_09_04"); //Potom musíš do ruda rozhavenou ocel poloit na kovadlinu.
-	AI_Output (self,other,"DIA_Huno_LEARNSMITH_09_05"); //Kdy budeš hotovı, vloíš horkou ocel do támhletoho kbelíku s vodou, aby se ochladila.
-	AI_Output (self,other,"DIA_Huno_LEARNSMITH_09_06"); //Vychladlá èepel se musí nakonec nabrousit na brusu.
+	AI_Output (other,self,"DIA_Huno_LEARNSMITH_15_00"); //ChtÄ›l bych tu zkusit pracovat.
+	AI_Output (self,other,"DIA_Huno_LEARNSMITH_09_01"); //Och, ale nemysli si, Å¾e tÄ› nechÃ¡m dÄ›lat vÃ½stÅ™ednÃ­ Äepele!
+	AI_Output (other,self,"DIA_Huno_LEARNSMITH_15_02"); //Co musÃ­m dÄ›lat?
+	AI_Output (self,other,"DIA_Huno_LEARNSMITH_09_03"); //DobÅ™e, vezmi ocel a vloÅ¾ ji do vÃ½hnÄ›.
+	AI_Output (self,other,"DIA_Huno_LEARNSMITH_09_04"); //Potom musÃ­Å¡ do ruda rozÅ¾havenou ocel poloÅ¾it na kovadlinu.
+	AI_Output (self,other,"DIA_Huno_LEARNSMITH_09_05"); //KdyÅ¾ budeÅ¡ hotovÃ½, vloÅ¾Ã­Å¡ horkou ocel do tÃ¡mhletoho kbelÃ­ku s vodou, aby se ochladila.
+	AI_Output (self,other,"DIA_Huno_LEARNSMITH_09_06"); //VychladlÃ¡ Äepel se musÃ­ nakonec nabrousit na brusu.
 	AI_Output (other,self,"DIA_Huno_LEARNSMITH_15_07"); //Aha.
-	AI_Output (self,other,"DIA_Huno_LEARNSMITH_09_08"); //Budeš k tomu samozøejmì potøebovat nìjaké vìci, které ti mùu prodat.
+	AI_Output (self,other,"DIA_Huno_LEARNSMITH_09_08"); //BudeÅ¡ k tomu samozÅ™ejmÄ› potÅ™ebovat nÄ›jakÃ© vÄ›ci, kterÃ© ti mÅ¯Å¾u prodat.
 
 	Huno_LearnSmith = TRUE;
 };
@@ -166,7 +166,7 @@ INSTANCE DIA_Huno_BUYSMITH (C_INFO)
 	information		= DIA_Huno_BUYSMITH_Info;
 	permanent		= 1;
 	important		= 0;
-	description		= "Chtìl bych koupit kováøskou vıbavu.";
+	description		= "ChtÄ›l bych koupit kovÃ¡Å™skou vÃ½bavu.";
 	trade			= 1;
 };
 
@@ -180,7 +180,7 @@ FUNC INT DIA_Huno_BUYSMITH_Condition()
 
 FUNC VOID DIA_Huno_BUYSMITH_Info()
 {
-	AI_Output (other,self,"DIA_Huno_BUYSMITH_15_00"); //Chtìl bych koupit kováøskou vıbavu.
+	AI_Output (other,self,"DIA_Huno_BUYSMITH_15_00"); //ChtÄ›l bych koupit kovÃ¡Å™skou vÃ½bavu.
 
 	if	(Npc_HasItems(self,ItMiSwordRaw		) < 5)		{	CreateInvItems(self,ItMiSwordRaw,		5);	};
 	if	(Npc_HasItems(self,ItMiSwordRawHot	) < 5)		{	CreateInvItems(self,ItMiSwordRawHot,	5);	};

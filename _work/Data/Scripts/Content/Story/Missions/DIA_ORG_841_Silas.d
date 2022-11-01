@@ -44,8 +44,8 @@ FUNC INT DIA_Silas_Hehler_Condition()
 FUNC VOID DIA_Silas_Hehler_Info()
 {	
 	AI_Output (other, self,"DIA_Silas_Hehler_15_00"); //Jak to jde?
-	AI_Output (self, other,"DIA_Silas_Hehler_06_01"); //Dob¯e! Obchodujeme p·lenkou z naöÌ dom·cÌ r˝ûe a mÏnÌme ji za rudu.
-	AI_Output (self, other,"DIA_Silas_Hehler_06_02"); //Dobr·, ti hoöi p¯inesli dost rudy. Kde je utratÌ, kdyû ne tady?
+	AI_Output (self, other,"DIA_Silas_Hehler_06_01"); //Dob≈ôe! Obchodujeme p√°lenkou z na≈°√≠ dom√°c√≠ r√Ω≈æe a mƒõn√≠me ji za rudu.
+	AI_Output (self, other,"DIA_Silas_Hehler_06_02"); //Dobr√°, ti ho≈°i p≈ôinesli dost rudy. Kde je utrat√≠, kdy≈æ ne tady?
 };
 
 // ************************************************************
@@ -59,7 +59,7 @@ INSTANCE DIA_Silas_Trade(C_Info)
 	condition	= DIA_Silas_Trade_Condition;
 	information	= DIA_Silas_Trade_Info;
 	permanent	= 0;
-	description = "Chci se napÌt.";
+	description = "Chci se nap√≠t.";
 	trade		= 1;
 };                       
 
@@ -70,6 +70,6 @@ FUNC INT DIA_Silas_Trade_Condition()
 
 FUNC VOID DIA_Silas_Trade_Info()
 {	
-	AI_Output (other, self,"DIA_Silas_Trade_15_00"); //Chci se napÌt.
-	AI_Output (self, other,"DIA_Silas_Trade_06_01"); //Budeö za to muset zaplatit.
+	AI_Output (other, self,"DIA_Silas_Trade_15_00"); //Chci se nap√≠t.
+	AI_Output (self, other,"DIA_Silas_Trade_06_01"); //Bude≈° za to muset zaplatit.
 };

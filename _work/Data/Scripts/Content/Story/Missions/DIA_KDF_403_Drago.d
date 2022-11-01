@@ -16,7 +16,7 @@ FUNC int  KDF_403_Drago_RUNE_Condition()
 };
 func void  KDF_403_Drago_RUNE_Info()
 {
-	AI_Output (self, other,"KDF_403_Drago_RUNE_Info_13_01"); //Vezmi si tuto runu, dar od Innose. Kéž tì ochraòuje na tvé cestì.
+	AI_Output (self, other,"KDF_403_Drago_RUNE_Info_13_01"); //Vezmi si tuto runu, dar od Innose. KÃ©Å¾ tÄ› ochraÅˆuje na tvÃ© cestÄ›.
 	CreateInvItem (self,ItArRuneFirebolt);
 	B_GiveInvItems (self, other, ItArRuneFirebolt, 1);
 	AI_StopProcessInfos	( self );

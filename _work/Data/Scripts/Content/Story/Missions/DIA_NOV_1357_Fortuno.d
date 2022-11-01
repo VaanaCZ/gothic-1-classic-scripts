@@ -23,7 +23,7 @@ FUNC VOID  DIA_Fortuno_EXIT_Info()
 };
 
 // **************************************************
-//					Erste Begrüssung
+//					Erste BegrÃ¼ssung
 // **************************************************
 
 instance  DIA_Fortuno_Greet (C_INFO)
@@ -46,7 +46,7 @@ FUNC int  DIA_Fortuno_Greet_Condition()
 
 FUNC VOID  DIA_Fortuno_Greet_Info()
 {
-	AI_Output (self, other,"DIA_Fortuno_Greet_05_00"); //Pojï blí! Kadı novı pøíchozí dostane na pøivítanou dárek!
+	AI_Output (self, other,"DIA_Fortuno_Greet_05_00"); //PojÄ blÃ­Å¾! KaÅ¾dÃ½ novÃ½ pÅ™Ã­chozÃ­ dostane na pÅ™ivÃ­tanou dÃ¡rek!
 };
 
 // **************************************************
@@ -62,7 +62,7 @@ instance  DIA_Fortuno_GetGeschenk (C_INFO)
 	condition	= DIA_Fortuno_GetGeschenk_Condition;
 	information	= DIA_Fortuno_GetGeschenk_Info;
 	permanent	= 0;
-	description = "Co pro mì máš?";
+	description = "Co pro mÄ› mÃ¡Å¡?";
 };                       
 
 FUNC int  DIA_Fortuno_GetGeschenk_Condition()
@@ -72,21 +72,21 @@ FUNC int  DIA_Fortuno_GetGeschenk_Condition()
 
 FUNC VOID  DIA_Fortuno_GetGeschenk_Info()
 {
-	AI_Output (other, self,"DIA_Fortuno_GetGeschenk_15_00"); //Co pro mì máš?
-	AI_Output (self, other,"DIA_Fortuno_GetGeschenk_05_01"); //Tady jsou tøi rolièky drogy z bain. Je to Severní soumrak. Dobrı materiál.
-	AI_Output (self, other,"DIA_Fortuno_GetGeschenk_05_02"); //Kadı den mùeš dostat další, ale pokud budeš chtít víc ne denní pøídìl, musíš zaplatit.
-	AI_Output (self, other,"DIA_Fortuno_GetGeschenk_05_03"); //Kdy najdeš na cestì mezi tábory bobule a byliny, mùeš mi je pøinést a já je od tebe koupím.
+	AI_Output (other, self,"DIA_Fortuno_GetGeschenk_15_00"); //Co pro mÄ› mÃ¡Å¡?
+	AI_Output (self, other,"DIA_Fortuno_GetGeschenk_05_01"); //Tady jsou tÅ™i roliÄky drogy z baÅ¾in. Je to SevernÃ­ soumrak. DobrÃ½ materiÃ¡l.
+	AI_Output (self, other,"DIA_Fortuno_GetGeschenk_05_02"); //KaÅ¾dÃ½ den mÅ¯Å¾eÅ¡ dostat dalÅ¡Ã­, ale pokud budeÅ¡ chtÃ­t vÃ­c neÅ¾ dennÃ­ pÅ™Ã­dÄ›l, musÃ­Å¡ zaplatit.
+	AI_Output (self, other,"DIA_Fortuno_GetGeschenk_05_03"); //KdyÅ¾ najdeÅ¡ na cestÄ› mezi tÃ¡bory bobule a byliny, mÅ¯Å¾eÅ¡ mi je pÅ™inÃ©st a jÃ¡ je od tebe koupÃ­m.
 
 	CreateInvItems(self, itmijoint_2, 3);
 	B_GiveInvItems(self, other, itmijoint_2, 3);
 	Fortuno_RationDay = Wld_GetDay();
 	
 	Log_CreateTopic	(GE_TraderPSI,	LOG_NOTE);
-	B_LogEntry		(GE_TraderPSI,"Fortuno obchoduje s bylinami pod alchymistickou dílnou.");
+	B_LogEntry		(GE_TraderPSI,"Fortuno obchoduje s bylinami pod alchymistickou dÃ­lnou.");
 };
 
 // **************************************************
-//				Tägliche Ration
+//				TÃ¤gliche Ration
 // **************************************************
 
 instance  DIA_Fortuno_DailyRation (C_INFO)
@@ -96,7 +96,7 @@ instance  DIA_Fortuno_DailyRation (C_INFO)
 	condition	= DIA_Fortuno_DailyRation_Condition;
 	information	= DIA_Fortuno_DailyRation_Info;
 	permanent	= 1;
-	description = "Pøišel jsem si vyzvednout svùj denní pøídìl.";
+	description = "PÅ™iÅ¡el jsem si vyzvednout svÅ¯j dennÃ­ pÅ™Ã­dÄ›l.";
 };                       
 
 FUNC int  DIA_Fortuno_DailyRation_Condition()
@@ -109,17 +109,17 @@ FUNC int  DIA_Fortuno_DailyRation_Condition()
 
 FUNC VOID  DIA_Fortuno_DailyRation_Info()
 {
-	AI_Output (other, self,"DIA_Fortuno_DailyRation_15_00"); //Pøišel jsem si vyzvednout svùj denní pøídìl.
+	AI_Output (other, self,"DIA_Fortuno_DailyRation_15_00"); //PÅ™iÅ¡el jsem si vyzvednout svÅ¯j dennÃ­ pÅ™Ã­dÄ›l.
 	if (Fortuno_RationDay!=Wld_GetDay())
  	{
- 		AI_Output (self, other,"DIA_Fortuno_DailyRation_05_01"); //Tady je. Tøikrát Severní soumrak - nevykuø ale všechno najednou.
+ 		AI_Output (self, other,"DIA_Fortuno_DailyRation_05_01"); //Tady je. TÅ™ikrÃ¡t SevernÃ­ soumrak - nevykuÅ™ ale vÅ¡echno najednou.
 		CreateInvItems(self, itmijoint_2, 3);
 		B_GiveInvItems(self, other, itmijoint_2, 3);
 		Fortuno_RationDay = Wld_GetDay();
 	}
 	else
 	{
-		AI_Output (self, other,"DIA_Fortuno_DailyRation_05_02"); //U jsi svùj denní pøídìl dostal. Jestli chceš další, musíš pøijít zítra nebo si nìco koupit.
+		AI_Output (self, other,"DIA_Fortuno_DailyRation_05_02"); //UÅ¾ jsi svÅ¯j dennÃ­ pÅ™Ã­dÄ›l dostal. Jestli chceÅ¡ dalÅ¡Ã­, musÃ­Å¡ pÅ™ijÃ­t zÃ­tra nebo si nÄ›co koupit.
 	};
 };
 
@@ -149,7 +149,7 @@ FUNC int  DIA_Fortuno_BuyJoints_Condition()
 FUNC VOID  DIA_Fortuno_BuyJoints_Info()
 {
 	AI_Output (other, self,"DIA_Fortuno_BuyJoints_15_00"); //Chci obchodovat.
-	AI_Output (self, other,"DIA_Fortuno_BuyJoints_05_01"); //Co ode mì chceš? Nebo chceš nìco prodat?
+	AI_Output (self, other,"DIA_Fortuno_BuyJoints_05_01"); //Co ode mÄ› chceÅ¡? Nebo chceÅ¡ nÄ›co prodat?
 };
 
 

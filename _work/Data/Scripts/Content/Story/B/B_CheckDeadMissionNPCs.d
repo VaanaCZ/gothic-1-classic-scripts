@@ -5,7 +5,7 @@ func void B_CheckDeadMissionNPCs ()
 	{
 		if (Lefty_Mission == LOG_RUNNING)
 		{
-			B_LogEntry	(CH1_CarryWater,	"Teï kdy je Lefty mrtev, by se mìla vyøešit ta záleitost s vodou. Nikdy jsem toho chlapa nemìl rád.");
+			B_LogEntry	(CH1_CarryWater,	"TeÄ kdyÅ¾ je Lefty mrtev, by se mÄ›la vyÅ™eÅ¡it ta zÃ¡leÅ¾itost s vodou. Nikdy jsem toho chlapa nemÄ›l rÃ¡d.");
 			Log_SetTopicStatus	(CH1_CarryWater,	LOG_SUCCESS);
 			LeftyDead = TRUE;
 		};

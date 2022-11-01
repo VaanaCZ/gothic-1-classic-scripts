@@ -44,7 +44,7 @@ FUNC INT DIA_SCAR_Hello_Condition()
 FUNC VOID DIA_SCAR_Hello_Info()
 {	
 	AI_Output (other, self,"DIA_SCAR_Hello_15_00"); //Kdo jsi?
-	AI_Output (self, other,"DIA_SCAR_Hello_08_01"); //ÿÌkajÌ mi Scar.
+	AI_Output (self, other,"DIA_SCAR_Hello_08_01"); //≈ò√≠kaj√≠ mi Scar.
 };
 
 // ************************************************************
@@ -58,7 +58,7 @@ INSTANCE DIA_SCAR_What (C_INFO)
 	condition	= DIA_SCAR_What_Condition;
 	information	= DIA_SCAR_What_Info;
 	permanent	= 0;
-	description = "Co je tv· pr·ce?";
+	description = "Co je tv√° pr√°ce?";
 };                       
 
 FUNC INT DIA_SCAR_What_Condition()
@@ -71,9 +71,9 @@ FUNC INT DIA_SCAR_What_Condition()
 
 FUNC VOID DIA_SCAR_What_Info()
 {	
-	AI_Output (other, self,"DIA_SCAR_What_15_00"); //Co je tv· pr·ce?
-	AI_Output (self, other,"DIA_SCAR_What_08_01"); //Spolu s Artem d·v·me pozor, aby se nikdo nedostal ke Gomezovi bez pozv·nÌ.
-	AI_Output (self, other,"DIA_SCAR_What_08_02"); //A j· d·v·m pozor na ûeny, aby je nikdo neruöil.
+	AI_Output (other, self,"DIA_SCAR_What_15_00"); //Co je tv√° pr√°ce?
+	AI_Output (self, other,"DIA_SCAR_What_08_01"); //Spolu s Artem d√°v√°me pozor, aby se nikdo nedostal ke Gomezovi bez pozv√°n√≠.
+	AI_Output (self, other,"DIA_SCAR_What_08_02"); //A j√° d√°v√°m pozor na ≈æeny, aby je nikdo neru≈°il.
 };
 
 // ************************************************************
@@ -87,7 +87,7 @@ INSTANCE DIA_SCAR_Frau (C_INFO)
 	condition	= DIA_SCAR_Frau_Condition;
 	information	= DIA_SCAR_Frau_Info;
 	permanent	= 0;
-	description = "Kdyû mÏ sem uvrhli, vidÏl jsem jednu ûenu, jak ji posÌlajÌ dol˘ se zboûÌm.";
+	description = "Kdy≈æ mƒõ sem uvrhli, vidƒõl jsem jednu ≈æenu, jak ji pos√≠laj√≠ dol≈Ø se zbo≈æ√≠m.";
 };                       
 
 FUNC INT DIA_SCAR_Frau_Condition()
@@ -100,12 +100,12 @@ FUNC INT DIA_SCAR_Frau_Condition()
 
 FUNC VOID DIA_SCAR_Frau_Info()
 {	
-	AI_Output (other, self,"DIA_SCAR_Frau_15_00"); //Kdyû mÏ sem uvrhli, vidÏl jsem jednu ûenu, jak ji posÌlajÌ dol˘ se zboûÌm.
+	AI_Output (other, self,"DIA_SCAR_Frau_15_00"); //Kdy≈æ mƒõ sem uvrhli, vidƒõl jsem jednu ≈æenu, jak ji pos√≠laj√≠ dol≈Ø se zbo≈æ√≠m.
 	AI_Output (self, other,"DIA_SCAR_Frau_08_01"); //A co?
 	AI_Output (other, self,"DIA_SCAR_Frau_15_02"); //Je tady?
-	AI_Output (self, other,"DIA_SCAR_Frau_08_03"); //Poslyö, jestli se ti lÌbÌ, d·m ti jednu radu. ZapomeÚ na ni.
-	AI_Output (self, other,"DIA_SCAR_Frau_08_04"); //Jenom sem p¯iöla a Gomez ji zamkl v mÌstnosti.
-	AI_Output (self, other,"DIA_SCAR_Frau_08_05"); //Aû s nÌ bude hotov˝, mohl by ji poslat dolu. Ale teÔ je JEHO - takûe bude lepöÌ, kdyû na ni zapomeneö.
+	AI_Output (self, other,"DIA_SCAR_Frau_08_03"); //Posly≈°, jestli se ti l√≠b√≠, d√°m ti jednu radu. Zapome≈à na ni.
+	AI_Output (self, other,"DIA_SCAR_Frau_08_04"); //Jenom sem p≈ôi≈°la a Gomez ji zamkl v m√≠stnosti.
+	AI_Output (self, other,"DIA_SCAR_Frau_08_05"); //A≈æ s n√≠ bude hotov√Ω, mohl by ji poslat dolu. Ale teƒè je JEHO - tak≈æe bude lep≈°√≠, kdy≈æ na ni zapomene≈°.
 };
 
 // ************************************************************
@@ -119,7 +119,7 @@ INSTANCE DIA_SCAR_PERM (C_INFO)
 	condition	= DIA_SCAR_PERM_Condition;
 	information	= DIA_SCAR_PERM_Info;
 	permanent	= 1;
-	description = "M˘ûeö mi nÏco ¯Ìci o Gomezovi?";
+	description = "M≈Ø≈æe≈° mi nƒõco ≈ô√≠ci o Gomezovi?";
 };                       
 
 FUNC INT DIA_SCAR_PERM_Condition()
@@ -132,8 +132,8 @@ FUNC INT DIA_SCAR_PERM_Condition()
 
 FUNC VOID DIA_SCAR_PERM_Info()
 {	
-	AI_Output (other, self,"DIA_SCAR_PERM_15_00"); //M˘ûeö mi nÏco ¯Ìci o Gomezovi?
-	AI_Output (self, other,"DIA_SCAR_PERM_08_01"); //Vöechno, co pot¯ebujeö vÏdÏt je to, ûe je to nejmocnÏjöÌ muû v kolonii.
-	AI_Output (self, other,"DIA_SCAR_PERM_08_02"); //Dostane, co chce, ale to, co chce nejvÌc, je moc.
+	AI_Output (other, self,"DIA_SCAR_PERM_15_00"); //M≈Ø≈æe≈° mi nƒõco ≈ô√≠ci o Gomezovi?
+	AI_Output (self, other,"DIA_SCAR_PERM_08_01"); //V≈°echno, co pot≈ôebuje≈° vƒõdƒõt je to, ≈æe je to nejmocnƒõj≈°√≠ mu≈æ v kolonii.
+	AI_Output (self, other,"DIA_SCAR_PERM_08_02"); //Dostane, co chce, ale to, co chce nejv√≠c, je moc.
 };
 

@@ -8,7 +8,7 @@
 //#####################################################################
 func void B_Story_BringFoci()
 {
-	//-------- Ausrüstung für Spieler --------
+	//-------- AusrÃ¼stung fÃ¼r Spieler --------
 	CreateInvItems		(self,			ItWrFocimap,	2);		// 2, damit die Bildschirmausgabe stimmt!
 	B_GiveInvItems		(self,	hero,	ItWrFocimap,	2);	
 	Npc_RemoveInvItem	(hero,			ItWrFocimap);
@@ -59,15 +59,15 @@ func void B_Story_BringFoci()
 	var C_NPC sld723;		sld723 = Hlp_GetNpc	(SLD_723_Soeldner);		sld723.aivar[AIV_PASSGATE] = TRUE;
 	var C_NPC sld732;		sld732 = Hlp_GetNpc	(SLD_732_Soeldner);		sld732.aivar[AIV_PASSGATE] = TRUE;
 
-	//-------- Tagebucheinträge --------
-	B_LogEntry			(CH3_EscapePlanNC,"Nabídl jsem Saturasovi pomoc pøi dokonèení plánu úniku. Mùj další úkol je najít zbıvající ètyøi ohniskové kameny.");
+	//-------- TagebucheintrÃ¤ge --------
+	B_LogEntry			(CH3_EscapePlanNC,"NabÃ­dl jsem Saturasovi pomoc pÅ™i dokonÄenÃ­ plÃ¡nu Ãºniku. MÅ¯j dalÅ¡Ã­ Ãºkol je najÃ­t zbÃ½vajÃ­cÃ­ ÄtyÅ™i ohniskovÃ© kameny.");
 	Log_SetTopicStatus	(CH3_EscapePlanNC,	LOG_SUCCESS);
 	
 	Log_CreateTopic		(CH3_BringFoci,		LOG_MISSION);
 	Log_SetTopicStatus	(CH3_BringFoci,		LOG_RUNNING);
-	B_LogEntry			(CH3_BringFoci,"Poté, co jsem Saturasovi pøedal ohnisko a rukopis z Tábora v bainách, poádal mì, abych našel zbıvající ètyøi ohniskové kameny, které ji nejsou ve vlastnictví mágù Vody.");
-	B_LogEntry			(CH3_BringFoci,"Saturas mi dal starou mapu s posledními známımi polohami ohniskovıch kamenù a zároveò také kouzelnı svitek, kterı mì pøenese zpìt ke mágùm Vody.");
-	B_LogEntry			(CH3_BringFoci,"Riordian, jeden z mágù Vody, mi na cestu pøipravil pár lektvarù. Mùu si je vyzvednout v jeho alchymistické dílnì v horní èásti Nového tábora.");
+	B_LogEntry			(CH3_BringFoci,"PotÃ©, co jsem Saturasovi pÅ™edal ohnisko a rukopis z TÃ¡bora v baÅ¾inÃ¡ch, poÅ¾Ã¡dal mÄ›, abych naÅ¡el zbÃ½vajÃ­cÃ­ ÄtyÅ™i ohniskovÃ© kameny, kterÃ© jiÅ¾ nejsou ve vlastnictvÃ­ mÃ¡gÅ¯ Vody.");
+	B_LogEntry			(CH3_BringFoci,"Saturas mi dal starou mapu s poslednÃ­mi znÃ¡mÃ½mi polohami ohniskovÃ½ch kamenÅ¯ a zÃ¡roveÅˆ takÃ© kouzelnÃ½ svitek, kterÃ½ mÄ› pÅ™enese zpÄ›t ke mÃ¡gÅ¯m Vody.");
+	B_LogEntry			(CH3_BringFoci,"Riordian, jeden z mÃ¡gÅ¯ Vody, mi na cestu pÅ™ipravil pÃ¡r lektvarÅ¯. MÅ¯Å¾u si je vyzvednout v jeho alchymistickÃ© dÃ­lnÄ› v hornÃ­ ÄÃ¡sti NovÃ©ho tÃ¡bora.");
 
 	//-------- Mission auf RUNNING setzen --------
 	Saturas_BringFoci = 1;

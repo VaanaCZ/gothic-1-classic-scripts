@@ -41,7 +41,7 @@ FUNC INT Info_BaalLukor_MEET_Condition()
 
 FUNC VOID Info_BaalLukor_MEET_Info()
 {
-	AI_Output 		(self, other,"Info_BaalLukor_MEET_13_01"); //Díky za tvojí pomoc. Pøišel jsi opravdu v poslední chvíli.
+	AI_Output 		(self, other,"Info_BaalLukor_MEET_13_01"); //DÃ­ky za tvojÃ­ pomoc. PÅ™iÅ¡el jsi opravdu v poslednÃ­ chvÃ­li.
 	
 	B_GiveXP		(XP_SaveBaalLukor);
 };
@@ -57,7 +57,7 @@ INSTANCE Info_BaalLukor_DEAD (C_INFO)
 	nr			= 20;
 	permanent	= 0;
 	important 	= 0;
-	description = "Na cestì sem jsem vidìl nìkolik mrtvıch templáøù. Co se pøihodilo?";
+	description = "Na cestÄ› sem jsem vidÄ›l nÄ›kolik mrtvÃ½ch templÃ¡Å™Å¯. Co se pÅ™ihodilo?";
 };
 
 FUNC INT Info_BaalLukor_DEAD_Condition()
@@ -67,14 +67,14 @@ FUNC INT Info_BaalLukor_DEAD_Condition()
 
 FUNC VOID Info_BaalLukor_DEAD_Info()
 {
-	AI_Output 			(other, self,"Info_BaalLukor_DEAD_15_01"); //Na cestì sem jsem vidìl nìkolik mrtvıch templáøù. Co se pøihodilo?
-	AI_Output 			(self, other,"Info_BaalLukor_DEAD_13_02"); //Mistr Cor Angar nás sem vyslal na prohlídku jeskyní.
-	AI_Output 			(self, other,"Info_BaalLukor_DEAD_13_03"); //Oèekávali jsme, e najdeme pár zatuchlıch hrobù a polorozpadlé mumie.
-	AI_Output 			(self, other,"Info_BaalLukor_DEAD_13_04"); //Najednou se setmìlo a všude byli skøeti. Nevím co tady hledali, ale jejich pøítomnost v tìchto místech je víc ne neobvyklá!
-	AI_Output 			(other, self,"Info_BaalLukor_DEAD_15_05"); //Kde jsou ostatní templáøi?
-	AI_Output 			(self, other,"Info_BaalLukor_DEAD_13_06"); //Mrtví! Nevìdomky jsem je pøivedl do záhuby. Snad mi to Spáè promine.
+	AI_Output 			(other, self,"Info_BaalLukor_DEAD_15_01"); //Na cestÄ› sem jsem vidÄ›l nÄ›kolik mrtvÃ½ch templÃ¡Å™Å¯. Co se pÅ™ihodilo?
+	AI_Output 			(self, other,"Info_BaalLukor_DEAD_13_02"); //Mistr Cor Angar nÃ¡s sem vyslal na prohlÃ­dku jeskynÃ­.
+	AI_Output 			(self, other,"Info_BaalLukor_DEAD_13_03"); //OÄekÃ¡vali jsme, Å¾e najdeme pÃ¡r zatuchlÃ½ch hrobÅ¯ a polorozpadlÃ© mumie.
+	AI_Output 			(self, other,"Info_BaalLukor_DEAD_13_04"); //Najednou se setmÄ›lo a vÅ¡ude byli skÅ™eti. NevÃ­m co tady hledali, ale jejich pÅ™Ã­tomnost v tÄ›chto mÃ­stech je vÃ­c neÅ¾ neobvyklÃ¡!
+	AI_Output 			(other, self,"Info_BaalLukor_DEAD_15_05"); //Kde jsou ostatnÃ­ templÃ¡Å™i?
+	AI_Output 			(self, other,"Info_BaalLukor_DEAD_13_06"); //MrtvÃ­! NevÄ›domky jsem je pÅ™ivedl do zÃ¡huby. Snad mi to SpÃ¡Ä promine.
 
-	B_LogEntry		(CH3_OrcGraveyard,"Pøi útoku skøetù  na skøetím høbitovì jsem zachránil guru Baalu Lukorovi ivot. Všichni templáøi v boji s hroznımi netvory zahynuli.");
+	B_LogEntry		(CH3_OrcGraveyard,"PÅ™i Ãºtoku skÅ™etÅ¯  na skÅ™etÃ­m hÅ™bitovÄ› jsem zachrÃ¡nil guru Baalu Lukorovi Å¾ivot. VÅ¡ichni templÃ¡Å™i v boji s hroznÃ½mi netvory zahynuli.");
 };
 
 //**************************************************************************
@@ -88,7 +88,7 @@ INSTANCE Info_BaalLukor_SUMMONING (C_INFO)
 	nr			= 10;
 	permanent	= 0;
 	important 	= 0;
-	description = "Cor Angar mì vyslal!";
+	description = "Cor Angar mÄ› vyslal!";
 };
 
 FUNC INT Info_BaalLukor_SUMMONING_Condition()
@@ -98,12 +98,12 @@ FUNC INT Info_BaalLukor_SUMMONING_Condition()
 
 FUNC VOID Info_BaalLukor_SUMMONING_Info()
 {
-	AI_Output 		(other, self,"Info_BaalLukor_SUMMONING_15_01"); //Cor Angar mì vyslal! Našli jste nìjaké Spáèovo znamení?
-	AI_Output 		(self, other,"Info_BaalLukor_SUMMONING_13_02"); //Zatím ne. Ale co Y´Berion? U procitnul?
-	AI_Output 		(other, self,"Info_BaalLukor_SUMMONING_15_03"); //Ne, je poøád v bezvìdomí.
-	AI_Output 		(self, other,"Info_BaalLukor_SUMMONING_13_04"); //Potøebujeme vyøešit hádanku tìch jeskyní. Po všech tìch hroznıch ztrátách se nemùu do komunity vrátit s prázdnıma rukama.
-	AI_Output 		(self, other,"Info_BaalLukor_SUMMONING_13_05"); //Moje bojové umìní je omezené a skøeti nejsou vnímaví na moje magická zaøíkávadla jako ti lehkovìrní lidé ze Starého tábora.
-	AI_Output 		(self, other,"Info_BaalLukor_SUMMONING_13_06"); //Jestlie tì vyslalo naše Bratrstvo, snad bys mi mohl pomoci s dalším pátráním v téhle hrobce.
+	AI_Output 		(other, self,"Info_BaalLukor_SUMMONING_15_01"); //Cor Angar mÄ› vyslal! NaÅ¡li jste nÄ›jakÃ© SpÃ¡Äovo znamenÃ­?
+	AI_Output 		(self, other,"Info_BaalLukor_SUMMONING_13_02"); //ZatÃ­m ne. Ale co YÂ´Berion? UÅ¾ procitnul?
+	AI_Output 		(other, self,"Info_BaalLukor_SUMMONING_15_03"); //Ne, je poÅ™Ã¡d v bezvÄ›domÃ­.
+	AI_Output 		(self, other,"Info_BaalLukor_SUMMONING_13_04"); //PotÅ™ebujeme vyÅ™eÅ¡it hÃ¡danku tÄ›ch jeskynÃ­. Po vÅ¡ech tÄ›ch hroznÃ½ch ztrÃ¡tÃ¡ch se nemÅ¯Å¾u do komunity vrÃ¡tit s prÃ¡zdnÃ½ma rukama.
+	AI_Output 		(self, other,"Info_BaalLukor_SUMMONING_13_05"); //Moje bojovÃ© umÄ›nÃ­ je omezenÃ© a skÅ™eti nejsou vnÃ­mavÃ­ na moje magickÃ¡ zaÅ™Ã­kÃ¡vadla jako ti lehkovÄ›rnÃ­ lidÃ© ze StarÃ©ho tÃ¡bora.
+	AI_Output 		(self, other,"Info_BaalLukor_SUMMONING_13_06"); //JestliÅ¾e tÄ› vyslalo naÅ¡e Bratrstvo, snad bys mi mohl pomoci s dalÅ¡Ã­m pÃ¡trÃ¡nÃ­m v tÃ©hle hrobce.
 };
 
 //**************************************************************************
@@ -116,7 +116,7 @@ INSTANCE Info_BaalLukor_HELP (C_INFO)
 	information	= Info_BaalLukor_HELP_Info;
 	permanent	= 0;
 	important 	= 0;
-	description = "Pomùu ti.";
+	description = "PomÅ¯Å¾u ti.";
 };
 
 FUNC INT Info_BaalLukor_HELP_Condition()
@@ -126,11 +126,11 @@ FUNC INT Info_BaalLukor_HELP_Condition()
 
 FUNC VOID Info_BaalLukor_HELP_Info()
 {
-	AI_Output 			(other, self,"Info_BaalLukor_HELP_15_01"); //Pomùu ti.
-	AI_Output 			(self, other,"Info_BaalLukor_HELP_13_02"); //Dobøe. Skvìle. Z tohoto sálu vedou tøi tunely. Mìli bysme je všechny prozkoumat.
-	AI_Output 			(self, other,"Info_BaalLukor_HELP_13_03"); //Jdi napøed. Pùjdu za tebou!
+	AI_Output 			(other, self,"Info_BaalLukor_HELP_15_01"); //PomÅ¯Å¾u ti.
+	AI_Output 			(self, other,"Info_BaalLukor_HELP_13_02"); //DobÅ™e. SkvÄ›le. Z tohoto sÃ¡lu vedou tÅ™i tunely. MÄ›li bysme je vÅ¡echny prozkoumat.
+	AI_Output 			(self, other,"Info_BaalLukor_HELP_13_03"); //Jdi napÅ™ed. PÅ¯jdu za tebou!
 
-	B_LogEntry		(CH3_OrcGraveyard,"Baal Lukor mì vzal s sebou, abychom spoleènì vyøešili tajemství tohoto starého místa!");
+	B_LogEntry		(CH3_OrcGraveyard,"Baal Lukor mÄ› vzal s sebou, abychom spoleÄnÄ› vyÅ™eÅ¡ili tajemstvÃ­ tohoto starÃ©ho mÃ­sta!");
 
 	AI_StopProcessInfos	(self);
 	Npc_ExchangeRoutine	(self, "Follow");
@@ -146,7 +146,7 @@ INSTANCE Info_BaalLukor_FOUNDNONE (C_INFO)
 	information	= Info_BaalLukor_FOUNDNONE_Info;
 	permanent	= 1;
 	important 	= 0;
-	description = "Nedokáu se tu orientovat!";
+	description = "NedokÃ¡Å¾u se tu orientovat!";
 };
 
 FUNC INT Info_BaalLukor_FOUNDNONE_Condition()
@@ -162,11 +162,11 @@ FUNC INT Info_BaalLukor_FOUNDNONE_Condition()
 
 FUNC VOID Info_BaalLukor_FOUNDNONE_Info()
 {
-	AI_Output 		(other, self,"Info_BaalLukor_FOUNDNONE_15_01"); //Nedokáu se tu orientovat!
-	AI_Output 		(self, other,"Info_BaalLukor_FOUNDNONE_13_02"); //Musíme prozkoumat ty tøi tunely.
+	AI_Output 		(other, self,"Info_BaalLukor_FOUNDNONE_15_01"); //NedokÃ¡Å¾u se tu orientovat!
+	AI_Output 		(self, other,"Info_BaalLukor_FOUNDNONE_13_02"); //MusÃ­me prozkoumat ty tÅ™i tunely.
 	
 	
-	Npc_ExchangeRoutine	(self, "Follow"); //Björn: Patch2
+	Npc_ExchangeRoutine	(self, "Follow"); //BjÃ¶rn: Patch2
 };
 
 //**************************************************************************
@@ -179,7 +179,7 @@ INSTANCE Info_BaalLukor_FOUNDONE (C_INFO)
 	information	= Info_BaalLukor_FOUNDONE_Info;
 	permanent	= 1;
 	important 	= 0;
-	description = "Zøejmì u neexistuje druhá polovina pergamenu!";
+	description = "ZÅ™ejmÄ› uÅ¾ neexistuje druhÃ¡ polovina pergamenu!";
 };
 
 FUNC INT Info_BaalLukor_FOUNDONE_Condition()
@@ -193,10 +193,10 @@ FUNC INT Info_BaalLukor_FOUNDONE_Condition()
 
 FUNC VOID Info_BaalLukor_FOUNDONE_Info()
 {
-	AI_Output 		(other, self,"Info_BaalLukor_FOUNDONE_15_01"); //Zøejmì u neexistuje druhá polovina pergamenu!
-	AI_Output 		(self, other,"Info_BaalLukor_FOUNDONE_13_02"); //Musí bıt druhá polovina. Mìli bysme prohledat všechny tøi tunely!
+	AI_Output 		(other, self,"Info_BaalLukor_FOUNDONE_15_01"); //ZÅ™ejmÄ› uÅ¾ neexistuje druhÃ¡ polovina pergamenu!
+	AI_Output 		(self, other,"Info_BaalLukor_FOUNDONE_13_02"); //MusÃ­ bÃ½t druhÃ¡ polovina. MÄ›li bysme prohledat vÅ¡echny tÅ™i tunely!
 	
-	Npc_ExchangeRoutine	(self, "Follow"); //Björn: Patch2
+	Npc_ExchangeRoutine	(self, "Follow"); //BjÃ¶rn: Patch2
 };
 
 //**************************************************************************
@@ -225,7 +225,7 @@ FUNC VOID Info_BaalLukor_FIRSTWAIT_Info()
 	B_FullStop		(hero);
 	AI_GotoNpc		(self, hero);
 
-	AI_Output 		(self, other,"Info_BaalLukor_FIRSTWAIT_13_01"); //Tudy nemùeme pokraèovat! Moná tyhle vıklenky znaèí cestu.
+	AI_Output 		(self, other,"Info_BaalLukor_FIRSTWAIT_13_01"); //Tudy nemÅ¯Å¾eme pokraÄovat! MoÅ¾nÃ¡ tyhle vÃ½klenky znaÄÃ­ cestu.
 
 	AI_StopProcessInfos	(self);
 	Npc_ExchangeRoutine	(self, "WaitInSideTunnelOne");
@@ -241,7 +241,7 @@ INSTANCE Info_BaalLukor_FIRSTSCROLL (C_INFO)
 	information	= Info_BaalLukor_FIRSTSCROLL_Info;
 	permanent	= 0;
 	important 	= 0;
-	description = "Našel jsem kus pergamenu!";
+	description = "NaÅ¡el jsem kus pergamenu!";
 };
 
 FUNC INT Info_BaalLukor_FIRSTSCROLL_Condition()
@@ -255,17 +255,17 @@ FUNC INT Info_BaalLukor_FIRSTSCROLL_Condition()
 
 FUNC VOID Info_BaalLukor_FIRSTSCROLL_Info()
 {
-	AI_Output 		(other, self,"Info_BaalLukor_FIRSTSCROLL_15_01"); //Našel jsem kus pergamenu!
-	B_GiveInvItems 	(hero, self, OrkParchmentOne,1); //Pergament1 übergeben
+	AI_Output 		(other, self,"Info_BaalLukor_FIRSTSCROLL_15_01"); //NaÅ¡el jsem kus pergamenu!
+	B_GiveInvItems 	(hero, self, OrkParchmentOne,1); //Pergament1 Ã¼bergeben
 	if (BaalLukor_BringParchment == 2)
 	{
-		AI_Output	(self, other,"Info_BaalLukor_FIRSTSCROLL_13_02"); //Vıbornì! To je druhá polovina Skøetího kouzelného zaøíkávadla.
+		AI_Output	(self, other,"Info_BaalLukor_FIRSTSCROLL_13_02"); //VÃ½bornÄ›! To je druhÃ¡ polovina SkÅ™etÃ­ho kouzelnÃ©ho zaÅ™Ã­kÃ¡vadla.
 		BaalLukor_BringParchment = 3;
 	}
 	else
 	{
-		AI_Output	(self, other,"Info_BaalLukor_FIRSTSCROLL_13_03"); //Vypadá to jako Skøetí kouzelné zaøíkávadlo, ale je to roztrené vejpùl.
-		AI_Output 	(self, other,"Info_BaalLukor_FIRSTSCROLL_13_04"); //Nìkde tu musí bıt druhá polovina.
+		AI_Output	(self, other,"Info_BaalLukor_FIRSTSCROLL_13_03"); //VypadÃ¡ to jako SkÅ™etÃ­ kouzelnÃ© zaÅ™Ã­kÃ¡vadlo, ale je to roztrÅ¾enÃ© vejpÅ¯l.
+		AI_Output 	(self, other,"Info_BaalLukor_FIRSTSCROLL_13_04"); //NÄ›kde tu musÃ­ bÃ½t druhÃ¡ polovina.
 		AI_StopProcessInfos	(self);
 		BaalLukor_BringParchment = 1;
 	};
@@ -299,7 +299,7 @@ FUNC VOID Info_BaalLukor_SECONDWAIT_Info()
 	B_FullStop		(hero);
 	AI_GotoNpc		(self, hero);
 
-	AI_Output 		(self, other,"Info_BaalLukor_SECONDWAIT_13_01"); //Hmmm... tenhle tunel je slepı! Ale moná tu najdeme nìjaké znamení, které nám pomùe dál.
+	AI_Output 		(self, other,"Info_BaalLukor_SECONDWAIT_13_01"); //Hmmm... tenhle tunel je slepÃ½! Ale moÅ¾nÃ¡ tu najdeme nÄ›jakÃ© znamenÃ­, kterÃ© nÃ¡m pomÅ¯Å¾e dÃ¡l.
 
 	if (!Npc_HasItems	(hero, OrkParchmentTwo)	) 
 	{	
@@ -317,7 +317,7 @@ INSTANCE Info_BaalLukor_SECONDSCROLL (C_INFO)
 	condition	= Info_BaalLukor_SECONDSCROLL_Condition;
 	information	= Info_BaalLukor_SECONDSCROLL_Info;
 	permanent	= 0;
-	description = "Tady je roztrenı kus pergamenu!";
+	description = "Tady je roztrÅ¾enÃ½ kus pergamenu!";
 };
 
 FUNC INT Info_BaalLukor_SECONDSCROLL_Condition()
@@ -334,17 +334,17 @@ FUNC VOID Info_BaalLukor_SECONDSCROLL_Info()
 	B_FullStop		(hero);
 	AI_GotoNpc		(self,	hero);
 
-	AI_Output 		(other, self,"Info_BaalLukor_SECONDSCROLL_15_01"); //Tady je roztrenı kus pergamenu!
-	B_GiveInvItems 	(hero, self, OrkParchmentTwo,1); //Pergament2 übergeben
+	AI_Output 		(other, self,"Info_BaalLukor_SECONDSCROLL_15_01"); //Tady je roztrÅ¾enÃ½ kus pergamenu!
+	B_GiveInvItems 	(hero, self, OrkParchmentTwo,1); //Pergament2 Ã¼bergeben
 	if (BaalLukor_BringParchment == 1)
 	{
-		AI_Output	(self, other,"Info_BaalLukor_SECONDSCROLL_13_02"); //Vıbornì! To je druhá polovina Skøetího kouzelného zaøíkávadla.
+		AI_Output	(self, other,"Info_BaalLukor_SECONDSCROLL_13_02"); //VÃ½bornÄ›! To je druhÃ¡ polovina SkÅ™etÃ­ho kouzelnÃ©ho zaÅ™Ã­kÃ¡vadla.
 		BaalLukor_BringParchment = 3;
 	}
 	else
 	{
-		AI_Output	(self, other,"Info_BaalLukor_SECONDSCROLL_13_03"); //Vypadá to jako Skøetí kouzelné zaøíkávadlo, ale je to roztrené vejpùl.
-		AI_Output 	(self, other,"Info_BaalLukor_SECONDSCROLL_13_04"); //Nìkde tu musí bıt druhá polovina.
+		AI_Output	(self, other,"Info_BaalLukor_SECONDSCROLL_13_03"); //VypadÃ¡ to jako SkÅ™etÃ­ kouzelnÃ© zaÅ™Ã­kÃ¡vadlo, ale je to roztrÅ¾enÃ© vejpÅ¯l.
+		AI_Output 	(self, other,"Info_BaalLukor_SECONDSCROLL_13_04"); //NÄ›kde tu musÃ­ bÃ½t druhÃ¡ polovina.
 		AI_StopProcessInfos	(self);
 		BaalLukor_BringParchment = 2;
 	};
@@ -362,7 +362,7 @@ INSTANCE Info_BaalLukor_BOTHSCROLLS (C_INFO)
 	information	= Info_BaalLukor_BOTHSCROLLS_Info;
 	permanent	= 0;
 	important 	= 0;
-	description = "Co teï s tìma dvìma kusy udìláme?";
+	description = "Co teÄ s tÄ›ma dvÄ›ma kusy udÄ›lÃ¡me?";
 };
 
 FUNC INT Info_BaalLukor_BOTHSCROLLS_Condition()
@@ -376,12 +376,12 @@ FUNC INT Info_BaalLukor_BOTHSCROLLS_Condition()
 
 FUNC VOID Info_BaalLukor_BOTHSCROLLS_Info()
 {
-	AI_Output 			(other, self,"Info_BaalLukor_BOTHSCROLLS_15_01"); //Co teï s tìmi dvìma kusy udìláme?
-	AI_Output			(self, other,"Info_BaalLukor_BOTHSCROLLS_13_02"); //Obì pùlky k sobì sedí. Neumím ale pøeloit ty skøetí znaky.
+	AI_Output 			(other, self,"Info_BaalLukor_BOTHSCROLLS_15_01"); //Co teÄ s tÄ›mi dvÄ›ma kusy udÄ›lÃ¡me?
+	AI_Output			(self, other,"Info_BaalLukor_BOTHSCROLLS_13_02"); //ObÄ› pÅ¯lky k sobÄ› sedÃ­. NeumÃ­m ale pÅ™eloÅ¾it ty skÅ™etÃ­ znaky.
 
-	B_LogEntry		(CH3_OrcGraveyard,"Našli jsme dvì poloviny skøetího svitku, ale Baal Lukor je nedokázal rozluštit. Budeme pokraèovat v pátrání.");
+	B_LogEntry		(CH3_OrcGraveyard,"NaÅ¡li jsme dvÄ› poloviny skÅ™etÃ­ho svitku, ale Baal Lukor je nedokÃ¡zal rozluÅ¡tit. Budeme pokraÄovat v pÃ¡trÃ¡nÃ­.");
 
-	Npc_ExchangeRoutine	(self, "Follow"); //Björn: Patch2
+	Npc_ExchangeRoutine	(self, "Follow"); //BjÃ¶rn: Patch2
 };
 
 //**************************************************************************
@@ -410,23 +410,23 @@ FUNC VOID Info_BaalLukor_RUNES_Info()
 	B_FullStop		(hero);
 	AI_GotoNpc		(self, hero);
 
-	AI_Output		(self, other,"Info_BaalLukor_RUNES_13_01"); //Poèkej! To je zajímavé...
-	AI_Output 		(other, self,"Info_BaalLukor_RUNES_15_02"); //Dobrá, nic zajímavého tady nevidím.
-	AI_Output		(self, other,"Info_BaalLukor_RUNES_13_03"); //Buï ticho a dívej se na ty ozdobné runy v jeskyni.
-	AI_Output		(self, other,"Info_BaalLukor_RUNES_13_04"); //To by mìlo postaèit k pøekladu tìch dvou pùlek pergamenu.
+	AI_Output		(self, other,"Info_BaalLukor_RUNES_13_01"); //PoÄkej! To je zajÃ­mavÃ©...
+	AI_Output 		(other, self,"Info_BaalLukor_RUNES_15_02"); //DobrÃ¡, nic zajÃ­mavÃ©ho tady nevidÃ­m.
+	AI_Output		(self, other,"Info_BaalLukor_RUNES_13_03"); //BuÄ ticho a dÃ­vej se na ty ozdobnÃ© runy v jeskyni.
+	AI_Output		(self, other,"Info_BaalLukor_RUNES_13_04"); //To by mÄ›lo postaÄit k pÅ™ekladu tÄ›ch dvou pÅ¯lek pergamenu.
 	B_UseFakeScroll ();
 	//AI_Output		(self, other,"Info_BaalLukor_RUNES_13_05"); //...(murmel)...(murmel)...(murmel)... 
-	AI_Output		(self, other,"Info_BaalLukor_RUNES_13_06"); //Mám to! Je to zaøíkávadlo pro pøenos. Zdá se, e jeho sílu jde vyuít pouze na urèitém místì!
-	AI_Output		(self, other,"Info_BaalLukor_RUNES_13_07"); //Divné!
+	AI_Output		(self, other,"Info_BaalLukor_RUNES_13_06"); //MÃ¡m to! Je to zaÅ™Ã­kÃ¡vadlo pro pÅ™enos. ZdÃ¡ se, Å¾e jeho sÃ­lu jde vyuÅ¾Ã­t pouze na urÄitÃ©m mÃ­stÄ›!
+	AI_Output		(self, other,"Info_BaalLukor_RUNES_13_07"); //DivnÃ©!
 
 	Npc_RemoveInvItems	(self,			OrkParchmentOne, 1); //Pergament 1 entfernen
 	Npc_RemoveInvItems	(self,			OrkParchmentTwo, 1); //Pergament 2 entfernen
-	//Hier Teleport-Übergabe entfernt --> erst wenn vor wand!
+	//Hier Teleport-Ãœbergabe entfernt --> erst wenn vor wand!
 
-	B_LogEntry			(CH3_OrcGraveyard,"S pomocí nástìnnıch nápisù v jednom ze sálù se Baalovi Lukorovi podaøilo rozluštit ten svitek. Vypadá jako teleportaèní kouzlo pro malé vzdálenosti."); 
+	B_LogEntry			(CH3_OrcGraveyard,"S pomocÃ­ nÃ¡stÄ›nnÃ½ch nÃ¡pisÅ¯ v jednom ze sÃ¡lÅ¯ se Baalovi Lukorovi podaÅ™ilo rozluÅ¡tit ten svitek. VypadÃ¡ jako teleportaÄnÃ­ kouzlo pro malÃ© vzdÃ¡lenosti."); 
 
 
-	Npc_ExchangeRoutine	(self, "Follow"); //Björn: Patch2
+	Npc_ExchangeRoutine	(self, "Follow"); //BjÃ¶rn: Patch2
 
 };
 
@@ -440,7 +440,7 @@ INSTANCE Info_BaalLukor_WHATNOW (C_INFO)
 	information	= Info_BaalLukor_WHATNOW_Info;
 	permanent	= 1;
 	important 	= 0;
-	description = "Na jakém 'urèitém' místì?";
+	description = "Na jakÃ©m 'urÄitÃ©m' mÃ­stÄ›?";
 };
 
 FUNC INT Info_BaalLukor_WHATNOW_Condition()
@@ -455,10 +455,10 @@ FUNC INT Info_BaalLukor_WHATNOW_Condition()
 
 FUNC VOID Info_BaalLukor_WHATNOW_Info()
 {
-	AI_Output 		(other, self,"Info_BaalLukor_WHATNOW_15_01"); //Na jakém 'urèitém' místì?
-	AI_Output 		(self, other,"Info_BaalLukor_WHATNOW_13_02"); //Velkı sál, kterım jsme pøed chvíli prošli, se zdál jako velmi... zvláštní... místo. Pojïme se tam vrátit!
+	AI_Output 		(other, self,"Info_BaalLukor_WHATNOW_15_01"); //Na jakÃ©m 'urÄitÃ©m' mÃ­stÄ›?
+	AI_Output 		(self, other,"Info_BaalLukor_WHATNOW_13_02"); //VelkÃ½ sÃ¡l, kterÃ½m jsme pÅ™ed chvÃ­li proÅ¡li, se zdÃ¡l jako velmi... zvlÃ¡Å¡tnÃ­... mÃ­sto. PojÄme se tam vrÃ¡tit!
 
-	Npc_ExchangeRoutine	(self, "Follow"); //Björn: Patch2
+	Npc_ExchangeRoutine	(self, "Follow"); //BjÃ¶rn: Patch2
 
 };
 
@@ -490,12 +490,12 @@ FUNC VOID Info_BaalLukor_HALLWITHOUT_Info()
 	AI_SetWalkmode	(self,	NPC_WALK);
 	AI_GotoNpc		(self, hero);
 
-	AI_Output		(self, other,"Info_BaalLukor_HALLWITHOUT_13_01"); //Tohle místo... Nedokáu to vysvìtlit, ale tohle místo...
-	AI_Output		(self, other,"Info_BaalLukor_HALLWITHOUT_13_02"); //Och, zapomeò na to. To jen ta moje pøedstavivost.
+	AI_Output		(self, other,"Info_BaalLukor_HALLWITHOUT_13_01"); //Tohle mÃ­sto... NedokÃ¡Å¾u to vysvÄ›tlit, ale tohle mÃ­sto...
+	AI_Output		(self, other,"Info_BaalLukor_HALLWITHOUT_13_02"); //Och, zapomeÅˆ na to. To jen ta moje pÅ™edstavivost.
 
-	B_LogEntry	(CH3_OrcGraveyard,"Kdy jsme vstoupili do velkého obdélníkového sálu se sloupovím, guru cosi pocítil. Nebyl si však jistı, co to bylo.");
+	B_LogEntry	(CH3_OrcGraveyard,"KdyÅ¾ jsme vstoupili do velkÃ©ho obdÃ©lnÃ­kovÃ©ho sÃ¡lu se sloupovÃ­m, guru cosi pocÃ­til. Nebyl si vÅ¡ak jistÃ½, co to bylo.");
 
-	Npc_ExchangeRoutine	(self, "Follow"); //Björn: Patch2
+	Npc_ExchangeRoutine	(self, "Follow"); //BjÃ¶rn: Patch2
 };
 
 //**************************************************************************
@@ -525,11 +525,11 @@ FUNC VOID Info_BaalLukor_HALLWITH_Info()
 	AI_SetWalkmode		(self,	NPC_WALK);
 	AI_GotoNpc			(self, hero);
 
-	AI_Output			(self, other,"Info_BaalLukor_HALLWITH_13_01"); //Tohle místo má zvláštní auru... auru zmizení.
-	AI_Output			(other, self,"Info_BaalLukor_HALLWITH_15_02"); //Tenhle sál mi pøipomíná obraz z té vidiny.
-	AI_Output			(self, other,"Info_BaalLukor_HALLWITH_13_03"); //Ta vidina... Jsme velmi blízko u cíle...
+	AI_Output			(self, other,"Info_BaalLukor_HALLWITH_13_01"); //Tohle mÃ­sto mÃ¡ zvlÃ¡Å¡tnÃ­ auru... auru zmizenÃ­.
+	AI_Output			(other, self,"Info_BaalLukor_HALLWITH_15_02"); //Tenhle sÃ¡l mi pÅ™ipomÃ­nÃ¡ obraz z tÃ© vidiny.
+	AI_Output			(self, other,"Info_BaalLukor_HALLWITH_13_03"); //Ta vidina... Jsme velmi blÃ­zko u cÃ­le...
 
-	B_LogEntry		(CH3_OrcGraveyard,"Baal Lukor byl veden neviditelnou silou, která míøila pøímo k jedné ze stìn velkého sloupového sálu.");
+	B_LogEntry		(CH3_OrcGraveyard,"Baal Lukor byl veden neviditelnou silou, kterÃ¡ mÃ­Å™ila pÅ™Ã­mo k jednÃ© ze stÄ›n velkÃ©ho sloupovÃ©ho sÃ¡lu.");
 
 	AI_StopProcessInfos	(self);
 	Npc_ExchangeRoutine	(self, "DOOR");
@@ -562,12 +562,12 @@ FUNC VOID Info_BaalLukor_DOOR_Info()
 	AI_SetWalkmode		(self,	NPC_WALK);
 	AI_GotoNpc			(self, hero);
 
-	AI_Output			(self, other,"Info_BaalLukor_DOOR_13_01"); //Za tou stìnou... to musí bıt!
-	AI_Output			(self, other,"Info_BaalLukor_DOOR_13_02"); //Má kouzelná síla je poøád velmi slabá.
-	AI_Output			(self, other,"Info_BaalLukor_DOOR_13_03"); //Pouij to skøetí zaøíkávadlo pro pøenos tady, naproti té stìnì.
+	AI_Output			(self, other,"Info_BaalLukor_DOOR_13_01"); //Za tou stÄ›nou... to musÃ­ bÃ½t!
+	AI_Output			(self, other,"Info_BaalLukor_DOOR_13_02"); //MÃ¡ kouzelnÃ¡ sÃ­la je poÅ™Ã¡d velmi slabÃ¡.
+	AI_Output			(self, other,"Info_BaalLukor_DOOR_13_03"); //PouÅ¾ij to skÅ™etÃ­ zaÅ™Ã­kÃ¡vadlo pro pÅ™enos tady, naproti tÃ© stÄ›nÄ›.
 	
 	CreateInvItem		(self,			ItArScrollTeleport4); //Teleport erschaffen
-	B_GiveInvItems  	(self, hero,	ItArScrollTeleport4, 1); //Teleport übergeben
+	B_GiveInvItems  	(self, hero,	ItArScrollTeleport4, 1); //Teleport Ã¼bergeben
 	
 	AI_StopProcessInfos	(self);
 };
@@ -600,13 +600,13 @@ FUNC VOID Info_BaalLukor_TELEPORT_Info()
 	AI_SetWalkmode		(self,	NPC_WALK);
 	AI_GotoNpc			(self, hero);
 
-	AI_Output			(self, other,"Info_BaalLukor_TELEPORT_13_01"); //Našli jsme skryté místo. Mé instinkty mì nezradily.
-	AI_Output			(other, self,"Info_BaalLukor_TELEPORT_15_02"); //A ta odpovìï na to záhadné vzıvání Spáèe leí skuteènì tady???
-	AI_Output			(other, self,"Info_BaalLukor_TELEPORT_15_03"); //Pøipadá mi to spíše jako zakopaná komora.
-	AI_Output			(self, other,"Info_BaalLukor_TELEPORT_13_04"); //Musíme pokraèovat.
-	AI_Output 			(self, other,"Info_BaalLukor_HELP_13_03"); //Jdi napøed. Pùjdu za tebou!
+	AI_Output			(self, other,"Info_BaalLukor_TELEPORT_13_01"); //NaÅ¡li jsme skrytÃ© mÃ­sto. MÃ© instinkty mÄ› nezradily.
+	AI_Output			(other, self,"Info_BaalLukor_TELEPORT_15_02"); //A ta odpovÄ›Ä na to zÃ¡hadnÃ© vzÃ½vÃ¡nÃ­ SpÃ¡Äe leÅ¾Ã­ skuteÄnÄ› tady???
+	AI_Output			(other, self,"Info_BaalLukor_TELEPORT_15_03"); //PÅ™ipadÃ¡ mi to spÃ­Å¡e jako zakopanÃ¡ komora.
+	AI_Output			(self, other,"Info_BaalLukor_TELEPORT_13_04"); //MusÃ­me pokraÄovat.
+	AI_Output 			(self, other,"Info_BaalLukor_HELP_13_03"); //Jdi napÅ™ed. PÅ¯jdu za tebou!
 
-	B_LogEntry		(CH3_OrcGraveyard,"S pomocí skøetího teleportaèního kouzla jsem objevil tajnou chodbu vedoucí ven ze sloupového sálu.");
+	B_LogEntry		(CH3_OrcGraveyard,"S pomocÃ­ skÅ™etÃ­ho teleportaÄnÃ­ho kouzla jsem objevil tajnou chodbu vedoucÃ­ ven ze sloupovÃ©ho sÃ¡lu.");
 
 	AI_StopProcessInfos	(self);
 	Npc_ExchangeRoutine	(self,	"TELEPORT");
@@ -641,27 +641,27 @@ FUNC VOID Info_BaalLukor_ALTAR_Info()
 	AI_AlignToWP		(hero);
 
 	AI_GotoNpc			(self, hero);
-	AI_Output			(self, hero,"Info_BaalLukor_ALTAR_13_01"); //NE! To není moné! Není tu nic ne... ne prach a... kosti.
+	AI_Output			(self, hero,"Info_BaalLukor_ALTAR_13_01"); //NE! To nenÃ­ moÅ¾nÃ©! NenÃ­ tu nic neÅ¾... neÅ¾ prach a... kosti.
 
 	AI_SetWalkmode		(self, NPC_RUN);
 	AI_GotoWP			(self, "GRYD_082");
 
 	AI_PlayAniBS		(self, "T_STAND_2_PRAY", BS_SIT);
 	AI_Output			(self, hero,"Info_BaalLukor_ALTAR_13_02"); //NE!
-	AI_Output			(self, hero,"Info_BaalLukor_ALTAR_13_03"); //PANE, PROMLUV KE MNÌ!!!
-	AI_Output			(self, hero,"Info_BaalLukor_ALTAR_13_04"); //SPÁÈI, ZJEV SE!!!
+	AI_Output			(self, hero,"Info_BaalLukor_ALTAR_13_03"); //PANE, PROMLUV KE MNÄš!!!
+	AI_Output			(self, hero,"Info_BaalLukor_ALTAR_13_04"); //SPÃÄŒI, ZJEV SE!!!
 	AI_Output			(self, hero,"Info_BaalLukor_ALTAR_13_05"); //NEEEEE!!!
 
-	AI_Output			(hero, self,"Info_BaalLukor_ALTAR_15_06"); //A je to. Musel se úplnì pominout!
+	AI_Output			(hero, self,"Info_BaalLukor_ALTAR_15_06"); //A je to. Musel se ÃºplnÄ› pominout!
 
 	AI_StandUp			(self);
 	B_WhirlAround		(self, hero);
-	AI_Output			(self, hero,"Info_BaalLukor_ALTAR_13_07"); //To všechno je tvoje chyba. Tvoje bezboná pøítomnost rozrušila všemocného Spáèe!
-	AI_Output			(self, hero,"Info_BaalLukor_ALTAR_13_08"); //Teï budu muset trpìt za tvoje svatokrádené chování!
-	AI_Output			(self, hero,"Info_BaalLukor_ALTAR_13_09"); //Musím velkému pánovi vzdát obì. LIDSKOU OBÌ!!!
-	AI_Output			(self, hero,"Info_BaalLukor_ALTAR_13_10"); //Pak budu urèitì osvícen a stanu se jeho sluebníkem.
-	AI_Output			(self, hero,"Info_BaalLukor_ALTAR_13_11"); //ZEMØI, NEVÌRÈE!!!
-	AI_Output			(self, hero,"Info_BaalLukor_ALTAR_13_12"); //AAJEEEEÉÉÉHHH!!!!!
+	AI_Output			(self, hero,"Info_BaalLukor_ALTAR_13_07"); //To vÅ¡echno je tvoje chyba. Tvoje bezboÅ¾nÃ¡ pÅ™Ã­tomnost rozruÅ¡ila vÅ¡emocnÃ©ho SpÃ¡Äe!
+	AI_Output			(self, hero,"Info_BaalLukor_ALTAR_13_08"); //TeÄ budu muset trpÄ›t za tvoje svatokrÃ¡deÅ¾nÃ© chovÃ¡nÃ­!
+	AI_Output			(self, hero,"Info_BaalLukor_ALTAR_13_09"); //MusÃ­m velkÃ©mu pÃ¡novi vzdÃ¡t obÄ›Å¥. LIDSKOU OBÄšÅ¤!!!
+	AI_Output			(self, hero,"Info_BaalLukor_ALTAR_13_10"); //Pak budu urÄitÄ› osvÃ­cen a stanu se jeho sluÅ¾ebnÃ­kem.
+	AI_Output			(self, hero,"Info_BaalLukor_ALTAR_13_11"); //ZEMÅ˜I, NEVÄšRÄŒE!!!
+	AI_Output			(self, hero,"Info_BaalLukor_ALTAR_13_12"); //AAJEEEEÃ‰Ã‰Ã‰HHH!!!!!
 
 	self.flags = 0;
 	self.npctype = NPCTYPE_MAIN;
@@ -670,7 +670,7 @@ FUNC VOID Info_BaalLukor_ALTAR_Info()
 	Npc_SetPermAttitude	(self,	ATT_HOSTILE);
 	//CreateInvItems		(self,	ItArScrollPyrokinesis,	3);
 
-	B_LogEntry		(CH3_OrcGraveyard,"Baala Lukora mohla trefit mrtvice, kdy pochopil, e tady dole není ABSOLUTNÌ NIC. Nakonec si na mnì dokonce vylil zlost. Kdy Cor Angar uslyšel tento pøíbìh, pojal obavy.");
+	B_LogEntry		(CH3_OrcGraveyard,"Baala Lukora mohla trefit mrtvice, kdyÅ¾ pochopil, Å¾e tady dole nenÃ­ ABSOLUTNÄš NIC. Nakonec si na mnÄ› dokonce vylil zlost. KdyÅ¾ Cor Angar uslyÅ¡el tento pÅ™Ã­bÄ›h, pojal obavy.");
 
 	AI_StopProcessInfos	(self);
 

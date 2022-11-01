@@ -7,11 +7,11 @@
 //#####################################################################
 
 //---------------------------------------------------------------------
-//	1. Pergamenthälfte der Ork-Schriftrolle
+//	1. PergamenthÃ¤lfte der Ork-Schriftrolle
 //---------------------------------------------------------------------
 INSTANCE OrkParchmentOne(C_Item)
 {	
-	name 				=	"Pùlka pergamenu";
+	name 				=	"PÅ¯lka pergamenu";
 
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION;	
@@ -26,18 +26,18 @@ INSTANCE OrkParchmentOne(C_Item)
 	
 	scemeName			=	"MAP";	
 	description			= name;
-	TEXT[0]				= "Èást starého pergamenu.";
-	TEXT[1]				= "Vypadá to, jako by spodní èást byla utrena.";
-	TEXT[2]				= "Nápis se podobá runám";
-	TEXT[3] 			= "na stìnách jeskynì.";
+	TEXT[0]				= "ÄŒÃ¡st starÃ©ho pergamenu.";
+	TEXT[1]				= "VypadÃ¡ to, jako by spodnÃ­ ÄÃ¡st byla utrÅ¾ena.";
+	TEXT[2]				= "NÃ¡pis se podobÃ¡ runÃ¡m";
+	TEXT[3] 			= "na stÄ›nÃ¡ch jeskynÄ›.";
 };
 
 //---------------------------------------------------------------------
-//	2. Pergamenthälfte der Ork-Schriftrolle
+//	2. PergamenthÃ¤lfte der Ork-Schriftrolle
 //---------------------------------------------------------------------
 INSTANCE OrkParchmentTwo(C_Item)
 {	
-	name 				=	"Pùlka pergamenu";
+	name 				=	"PÅ¯lka pergamenu";
 
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION;	
@@ -52,18 +52,18 @@ INSTANCE OrkParchmentTwo(C_Item)
 	
 	scemeName			=	"MAP";	
 	description			= name;
-	TEXT[0]				= "Èást starého pergamenu.";
-	TEXT[1]				= "Vypadá to, jako by horní èást byla utrena.";
-	TEXT[2]				= "Nápis se podobá runám";
-	TEXT[3] 			= "na stìnách jeskynì.";
+	TEXT[0]				= "ÄŒÃ¡st starÃ©ho pergamenu.";
+	TEXT[1]				= "VypadÃ¡ to, jako by hornÃ­ ÄÃ¡st byla utrÅ¾ena.";
+	TEXT[2]				= "NÃ¡pis se podobÃ¡ runÃ¡m";
+	TEXT[3] 			= "na stÄ›nÃ¡ch jeskynÄ›.";
 };
 
 //---------------------------------------------------------------------
-//	Schlüssel zu Kaloms Truhe
+//	SchlÃ¼ssel zu Kaloms Truhe
 //---------------------------------------------------------------------
 INSTANCE ITKE_PSI_KALOM_01(C_Item)
 {	
-	name 				=	"Klíè";
+	name 				=	"KlÃ­Ä";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	0;	
@@ -72,9 +72,9 @@ INSTANCE ITKE_PSI_KALOM_01(C_Item)
 
 	visual 				=	"ItKe_Key_04.3ds";
 	material 			=	MAT_METAL;
-	description			= "Klíè od dílny";
-	TEXT[0]				= "Otevøe truhlici v alchymistické dílnì";
-	TEXT[1]				= "v Táboøe v bainách.";
+	description			= "KlÃ­Ä od dÃ­lny";
+	TEXT[0]				= "OtevÅ™e truhlici v alchymistickÃ© dÃ­lnÄ›";
+	TEXT[1]				= "v TÃ¡boÅ™e v baÅ¾inÃ¡ch.";
 	//TEXT[1]				= "";
 	TEXT[5]				= NAME_Value;
 	COUNT[5]			= value;
@@ -85,7 +85,7 @@ INSTANCE ITKE_PSI_KALOM_01(C_Item)
 //---------------------------------------------------------------------
 INSTANCE ItWrFocimap(C_Item)
 {	
-	name 					=	"Saturasova mapa ohniskovıch kamenù";
+	name 					=	"Saturasova mapa ohniskovÃ½ch kamenÅ¯";
 	
 	mainflag 				=	ITEM_KAT_DOCS;
 	flags 					=	ITEM_MISSION;
@@ -99,12 +99,12 @@ INSTANCE ItWrFocimap(C_Item)
 	on_state[0]				=	UseFocimap;
 
 	description				= name;
-	TEXT[0]					= "Cípy pergamenu";
-	TEXT[1]					= "prozrazují umístìní všech pìti";
-	TEXT[2]					= "ohniskovıch kamenù, které byly pouity k ";
-	TEXT[3]					= "vytvoøení magické Bariéry. Mapa je však ";
-	TEXT[4]					= "u stará a kameny mohly bıt zatím ";
-	TEXT[5]					= "pøemístìny z pùvodních míst jinam.";
+	TEXT[0]					= "CÃ­py pergamenu";
+	TEXT[1]					= "prozrazujÃ­ umÃ­stÄ›nÃ­ vÅ¡ech pÄ›ti";
+	TEXT[2]					= "ohniskovÃ½ch kamenÅ¯, kterÃ© byly pouÅ¾ity k ";
+	TEXT[3]					= "vytvoÅ™enÃ­ magickÃ© BariÃ©ry. Mapa je vÅ¡ak ";
+	TEXT[4]					= "uÅ¾ starÃ¡ a kameny mohly bÃ½t zatÃ­m ";
+	TEXT[5]					= "pÅ™emÃ­stÄ›ny z pÅ¯vodnÃ­ch mÃ­st jinam.";
 };
 
 FUNC VOID UseFocimap()
@@ -124,7 +124,7 @@ FUNC VOID UseFocimap()
 //---------------------------------------------------------------------
 INSTANCE ItWr_Troll_01(C_Item)
 {	
-	name 				=	"List z deníku";
+	name 				=	"List z denÃ­ku";
 	
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION;
@@ -138,10 +138,10 @@ INSTANCE ItWr_Troll_01(C_Item)
 	on_state[0]			=	UseTroll;
 
 	description			=	name;
-	TEXT[1]				=	"Velmi omšelá stránka a písmo v ní";
-	TEXT[2]				=	"lze jen tìko rozeznat.";
-	TEXT[3]				=	"Ten, komu deník patøil, byl zøejmì";
-	TEXT[4]				=	"lovec trolù.";
+	TEXT[1]				=	"Velmi omÅ¡elÃ¡ strÃ¡nka a pÃ­smo v nÃ­";
+	TEXT[2]				=	"lze jen tÄ›Å¾ko rozeznat.";
+	TEXT[3]				=	"Ten, komu denÃ­k patÅ™il, byl zÅ™ejmÄ›";
+	TEXT[4]				=	"lovec trolÅ¯.";
 };
 
 FUNC VOID UseTroll()
@@ -157,9 +157,9 @@ FUNC VOID UseTroll()
 				Doc_SetFont 	(nDocID, -1, "font_10_book.tga");
 				Doc_PrintLine	(nDocID,  0, "");
 				Doc_PrintLine	(nDocID,  0, "");
-				Doc_PrintLines	(nDocID,  0,"Dnes to udìlám. Vím to. Bohové budou stát pøi mnì. Zkoušel jsem u vše, abych zabil trola. Nepomohl ani ten nejpevnìjší meè a šípy se odráely od jeho kùe, jako by byla z kamene.");
+				Doc_PrintLines	(nDocID,  0,"Dnes to udÄ›lÃ¡m. VÃ­m to. BohovÃ© budou stÃ¡t pÅ™i mnÄ›. ZkouÅ¡el jsem uÅ¾ vÅ¡e, abych zabil trola. Nepomohl ani ten nejpevnÄ›jÅ¡Ã­ meÄ a Å¡Ã­py se odrÃ¡Å¾ely od jeho kÅ¯Å¾e, jako by byla z kamene.");
 				Doc_PrintLine	(nDocID,  0, "");
-				Doc_PrintLines	(nDocID,  0,"Ještì zkusím pouít magickı svitek, kterı mi prodal obchodník v Khorinisu. Stál sice 50 nugetù, ale se ziskem, kterı mi tato koøist pøinese, budu boháè.");
+				Doc_PrintLines	(nDocID,  0,"JeÅ¡tÄ› zkusÃ­m pouÅ¾Ã­t magickÃ½ svitek, kterÃ½ mi prodal obchodnÃ­k v Khorinisu. StÃ¡l sice 50 nugetÅ¯, ale se ziskem, kterÃ½ mi tato koÅ™ist pÅ™inese, budu bohÃ¡Ä.");
 				Doc_PrintLine	(nDocID,  0, "");
 				Doc_PrintLines	(nDocID,  0,"Dnes zabiju trola.");
 				Doc_Show		(nDocID);
@@ -170,7 +170,7 @@ FUNC VOID UseTroll()
 //---------------------------------------------------------------------
 INSTANCE Focus_2(C_Item)
 {	
-	name 				=	"Ohnisko z Trolího kaòonu";
+	name 				=	"Ohnisko z TrolÃ­ho kaÅˆonu";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MISSION;	
@@ -184,16 +184,16 @@ INSTANCE Focus_2(C_Item)
 	material 			=	MAT_STONE;
 
 	description			=	name;
-	TEXT[1]				=	"Jeden z pìti ohniskovıch kamenù, které ";
-	TEXT[2]				=	"byly pouity k vytvoøení magické Bariéry.";
+	TEXT[1]				=	"Jeden z pÄ›ti ohniskovÃ½ch kamenÅ¯, kterÃ© ";
+	TEXT[2]				=	"byly pouÅ¾ity k vytvoÅ™enÃ­ magickÃ© BariÃ©ry.";
 };
 
 //---------------------------------------------------------------------
-//	Truhenschlüssel in der Bergfestung
+//	TruhenschlÃ¼ssel in der Bergfestung
 //---------------------------------------------------------------------
 INSTANCE ItKe_BERG_01(C_Item)
 {	
-	name 				=	"Klíè od truhlice";
+	name 				=	"KlÃ­Ä od truhlice";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	0;	
@@ -203,9 +203,9 @@ INSTANCE ItKe_BERG_01(C_Item)
 	visual 				=	"ItKe_Key_01.3ds";
 	material 			=	MAT_METAL;
 	description			= name;
-	TEXT[0]				= "Stará horská pevnost.";
-	TEXT[1]				= "Starı rezavı klíè od truhlice.";
-	TEXT[2]				= "patøil k jedné truhlici";
+	TEXT[0]				= "StarÃ¡ horskÃ¡ pevnost.";
+	TEXT[1]				= "StarÃ½ rezavÃ½ klÃ­Ä od truhlice.";
+	TEXT[2]				= "patÅ™il k jednÃ© truhlici";
 	TEXT[5]				= NAME_Value;
 	COUNT[5]			= value;
 };
@@ -227,10 +227,10 @@ INSTANCE ItWr_Urkunde_01(C_Item)
 
 	scemeName		=	"MAP";	
 	on_state[0]		=	UseUrkunde;
-	description		=	"Dritel listiny";
-	TEXT[0]			=	"Opravòuje dritele k nároku na";
-	TEXT[1]			=	"na území horské pevnosti.";
-	TEXT[2]			=	"platná k provedení.";
+	description		=	"DrÅ¾itel listiny";
+	TEXT[0]			=	"OpravÅˆuje drÅ¾itele k nÃ¡roku na";
+	TEXT[1]			=	"na ÃºzemÃ­ horskÃ© pevnosti.";
+	TEXT[2]			=	"platnÃ¡ k provedenÃ­.";
 	TEXT[5]			=	"Cena                                  400 liber rudy";
 };
 
@@ -247,7 +247,7 @@ FUNC VOID UseUrkunde()
 				Doc_SetFont 	(nDocID, -1, "font_10_book.tga");
 				Doc_PrintLine	(nDocID,  0, "");
 				Doc_PrintLine	(nDocID,  0, "");
-				Doc_PrintLines	(nDocID,  0,"Já, Bergmar, purkrabí Západních polí a pøedsedající soudce zemí mého pána Tymorisina, oblastí pøiléhajícím ke Khorinisu, ... prohlašuji tímto... e já ... podstupuji a prodávám driteli této listiny... a rodu Innosovu léno horské pevnosti (spolu s další desetinou mého vlastnictví, jen je její souèástí) za 400 liber rudy.");
+				Doc_PrintLines	(nDocID,  0,"JÃ¡, Bergmar, purkrabÃ­ ZÃ¡padnÃ­ch polÃ­ a pÅ™edsedajÃ­cÃ­ soudce zemÃ­ mÃ©ho pÃ¡na Tymorisina, oblastÃ­ pÅ™ilÃ©hajÃ­cÃ­m ke Khorinisu, ... prohlaÅ¡uji tÃ­mto... Å¾e jÃ¡ ... podstupuji a prodÃ¡vÃ¡m drÅ¾iteli tÃ©to listiny... a rodu Innosovu lÃ©no horskÃ© pevnosti (spolu s dalÅ¡Ã­ desetinou mÃ©ho vlastnictvÃ­, jenÅ¾ je jejÃ­ souÄÃ¡stÃ­) za 400 liber rudy.");
 				Doc_Show		(nDocID );
 };
 	
@@ -281,7 +281,7 @@ INSTANCE Fakescroll(C_Item)
 //---------------------------------------------------------------------
 INSTANCE Focus_3(C_Item)
 {	
-	name 				=	"Ohniskovı kámen z horské pevnosti";
+	name 				=	"OhniskovÃ½ kÃ¡men z horskÃ© pevnosti";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MISSION;	
@@ -295,16 +295,16 @@ INSTANCE Focus_3(C_Item)
 	material 			=	MAT_STONE;
 
 	description			=	name;
-	TEXT[1]				=	"Jeden z pìti ohniskovıch kamenù, které ";
-	TEXT[2]				=	"byly pouity k vytvoøení magické Bariéry.";
+	TEXT[1]				=	"Jeden z pÄ›ti ohniskovÃ½ch kamenÅ¯, kterÃ© ";
+	TEXT[2]				=	"byly pouÅ¾ity k vytvoÅ™enÃ­ magickÃ© BariÃ©ry.";
 };
 
 //---------------------------------------------------------------------
-//	Schlüssel zum Bonusraum in der Klosterruine
+//	SchlÃ¼ssel zum Bonusraum in der Klosterruine
 //---------------------------------------------------------------------
 INSTANCE ItKe_Focus4(C_Item)
 {
-	name 				=	"Klíè";
+	name 				=	"KlÃ­Ä";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MISSION;
@@ -315,8 +315,8 @@ INSTANCE ItKe_Focus4(C_Item)
 	material 			=	MAT_METAL;
 
 	description			= name;
-	TEXT[1]				= "Tento klíè pochází z jeskynì v ";
-	TEXT[2]				= "rozvalinách kláštera.";
+	TEXT[1]				= "Tento klÃ­Ä pochÃ¡zÃ­ z jeskynÄ› v ";
+	TEXT[2]				= "rozvalinÃ¡ch klÃ¡Å¡tera.";
 };
 
 //---------------------------------------------------------------------
@@ -324,7 +324,7 @@ INSTANCE ItKe_Focus4(C_Item)
 //---------------------------------------------------------------------
 INSTANCE Focus_4(C_Item)
 {	
-	name 				=	"Ohniskovı kámen z rozvalin kláštera";
+	name 				=	"OhniskovÃ½ kÃ¡men z rozvalin klÃ¡Å¡tera";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MISSION;	
@@ -337,8 +337,8 @@ INSTANCE Focus_4(C_Item)
 	visual 				=	"ItMi_Focus_01.3ds";
 	material 			=	MAT_STONE;
 	description			=	name;
-	TEXT[1]				=	"Jeden z pìti ohniskovıch kamenù, které ";
-	TEXT[2]				=	"byly pouity k vytvoøení magické Bariéry.";
+	TEXT[1]				=	"Jeden z pÄ›ti ohniskovÃ½ch kamenÅ¯, kterÃ© ";
+	TEXT[2]				=	"byly pouÅ¾ity k vytvoÅ™enÃ­ magickÃ© BariÃ©ry.";
 };
 
 //---------------------------------------------------------------------
@@ -346,7 +346,7 @@ INSTANCE Focus_4(C_Item)
 //---------------------------------------------------------------------
 INSTANCE  ItMi_OrcTalisman(C_Item)
 {
-	name 			= "Skøetí talisman";
+	name 			= "SkÅ™etÃ­ talisman";
 
 	mainflag 		= ITEM_KAT_MAGIC;
 	flags 			= ITEM_AMULET|ITEM_MISSION;
@@ -381,11 +381,11 @@ FUNC VOID UnEquip_OrcTalisman()
 
 
 //---------------------------------------------------------------------
-//	Schlüssel unter dem Steinkreis
+//	SchlÃ¼ssel unter dem Steinkreis
 //---------------------------------------------------------------------
 INSTANCE ItKe_Focus5(C_Item)
 {
-	name 				=	"Klíè";
+	name 				=	"KlÃ­Ä";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MISSION;
@@ -396,8 +396,8 @@ INSTANCE ItKe_Focus5(C_Item)
 	material 			=	MAT_METAL;
 
 	description			= name;
-	TEXT[1]				= "Tento klíè je z krypty";
-	TEXT[2]				= "pod kamennım kruhem.";
+	TEXT[1]				= "Tento klÃ­Ä je z krypty";
+	TEXT[2]				= "pod kamennÃ½m kruhem.";
 };
 
 //---------------------------------------------------------------------
@@ -405,7 +405,7 @@ INSTANCE ItKe_Focus5(C_Item)
 //---------------------------------------------------------------------
 INSTANCE Focus_5(C_Item)
 {	
-	name 				=	"Ohniskovı kámen zpod kamenného kruhu";
+	name 				=	"OhniskovÃ½ kÃ¡men zpod kamennÃ©ho kruhu";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MISSION;	
@@ -418,7 +418,7 @@ INSTANCE Focus_5(C_Item)
 	visual 				=	"ItMi_Focus_01.3ds";
 	material 			=	MAT_STONE;
 	description			=	name;
-	TEXT[1]				=	"Jeden z pìti ohniskovıch kamenù, které ";
-	TEXT[2]				=	"byly pouity k vytvoøení magické Bariéry.";
+	TEXT[1]				=	"Jeden z pÄ›ti ohniskovÃ½ch kamenÅ¯, kterÃ© ";
+	TEXT[2]				=	"byly pouÅ¾ity k vytvoÅ™enÃ­ magickÃ© BariÃ©ry.";
 };
 

@@ -1,16 +1,16 @@
 //*****************************************************************************
-//***			Diese Funktion tötet alle Bewohner des FMC					***
+//***			Diese Funktion tÃ¶tet alle Bewohner des FMC					***
 //*****************************************************************************
 func void B_Story_FindXardas()
 {
-	//-------- Tagebucheinträge --------
+	//-------- TagebucheintrÃ¤ge --------
 	Log_CreateTopic		(CH4_FindXardas,	LOG_MISSION);
 	Log_SetTopicStatus	(CH4_FindXardas,	LOG_RUNNING);
-	B_LogEntry			(CH4_FindXardas,"Poté, co byli mágové Ohnì vyvradìni, zbıvá u jen JEDINİ, kterı mùe pomoci s odpálením rudné haldy. Saturas mi øekl, e vytváøení magické Bariéry vedl tøináctı mág.");
-	B_LogEntry			(CH4_FindXardas,"Tento tøináctı mág jménem Xardas ije osamocen ve vìi stojící uprostøed skøetího území. Souhlasil jsem, e se tam za ním vydám a poádám jej o pomoc.");
+	B_LogEntry			(CH4_FindXardas,"PotÃ©, co byli mÃ¡govÃ© OhnÄ› vyvraÅ¾dÄ›ni, zbÃ½vÃ¡ uÅ¾ jen JEDINÃ, kterÃ½ mÅ¯Å¾e pomoci s odpÃ¡lenÃ­m rudnÃ© haldy. Saturas mi Å™ekl, Å¾e vytvÃ¡Å™enÃ­ magickÃ© BariÃ©ry vedl tÅ™inÃ¡ctÃ½ mÃ¡g.");
+	B_LogEntry			(CH4_FindXardas,"Tento tÅ™inÃ¡ctÃ½ mÃ¡g jmÃ©nem Xardas Å¾ije osamocen ve vÄ›Å¾i stojÃ­cÃ­ uprostÅ™ed skÅ™etÃ­ho ÃºzemÃ­. Souhlasil jsem, Å¾e se tam za nÃ­m vydÃ¡m a poÅ¾Ã¡dÃ¡m jej o pomoc.");
 	
 
-	//-------- Missionsgegenstände --------
+	//-------- MissionsgegenstÃ¤nde --------
 	
 	//-------- NSCs einsetzen --------
 	Wld_InsertNpc	(XardasDemon,	"DT_E1_06");

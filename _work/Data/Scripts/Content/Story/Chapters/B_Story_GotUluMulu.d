@@ -1,10 +1,10 @@
 func void B_Story_GotUluMulu()
 {
-	//-------- Missionsgegenstände --------
+	//-------- MissionsgegenstÃ¤nde --------
 	CreateInvItem		(hero, UluMulu);
 	
-	//-------- Tagebucheinträge --------
-	B_LogEntry			(CH4_UluMulu,"Vše je hotovo. Tarrok dostal všechny ètyøi èásti a zhotovil z nich ULU-MULU. Doufám jen, skøeti z mìsta nad Spáèovım chrámem budou tento odznak respektovat.");
+	//-------- TagebucheintrÃ¤ge --------
+	B_LogEntry			(CH4_UluMulu,"VÅ¡e je hotovo. Tarrok dostal vÅ¡echny ÄtyÅ™i ÄÃ¡sti a zhotovil z nich ULU-MULU. DoufÃ¡m jen, skÅ™eti z mÄ›sta nad SpÃ¡ÄovÃ½m chrÃ¡mem budou tento odznak respektovat.");
 	Log_SetTopicStatus	(CH4_UluMulu,	LOG_SUCCESS);
 	
 	//-------- Erfahrung --------

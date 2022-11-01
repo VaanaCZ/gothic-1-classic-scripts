@@ -21,7 +21,7 @@ FUNC int DIA_SLD_760_Soeldner_INTRO_CONDITION()
 
 func void DIA_SLD_760_Soeldner_INTRO_INFO()
 {
-	AI_Output (self, other,"DIA_SLD_760_Soeldner_INTRO_INFO_13_01"); //Co se tu potlouk·ö? ÿeknu ti jedno: kliÔ se od m˝ch dve¯Ì!
+	AI_Output (self, other,"DIA_SLD_760_Soeldner_INTRO_INFO_13_01"); //Co se tu potlouk√°≈°? ≈òeknu ti jedno: kliƒè se od m√Ωch dve≈ô√≠!
 };
 
 //-------------------- Exit 1 -----------------------------
@@ -34,7 +34,7 @@ instance DIA_SLD_760_Soeldner_EXIT_1 (C_INFO)
 	information		= DIA_SLD_760_Soeldner_EXIT_1_INFO;
 	important		= 0;
 	permanent		= 0;
-	description 	= "RadÏji p˘jdu!";
+	description 	= "Radƒõji p≈Øjdu!";
 };
 
 FUNC int DIA_SLD_760_Soeldner_EXIT_1_CONDITION()
@@ -44,8 +44,8 @@ FUNC int DIA_SLD_760_Soeldner_EXIT_1_CONDITION()
 
 func void DIA_SLD_760_Soeldner_EXIT_1_INFO()
 {
-	AI_Output (other, self,"DIA_SLD_760_Soeldner_EXIT_1_INFO_15_01"); //RadÏji p˘jdu!
-	AI_Output (self, other,"DIA_SLD_760_Soeldner_EXIT_1_INFO_13_02");//To douf·m.
+	AI_Output (other, self,"DIA_SLD_760_Soeldner_EXIT_1_INFO_15_01"); //Radƒõji p≈Øjdu!
+	AI_Output (self, other,"DIA_SLD_760_Soeldner_EXIT_1_INFO_13_02");//To douf√°m.
 	AI_StopProcessInfos	( self );
 };
 
@@ -59,7 +59,7 @@ instance DIA_SLD_760_Soeldner_EXIT_2 (C_INFO)
 	information		= DIA_SLD_760_Soeldner_EXIT_2_INFO;
 	important		= 0;
 	permanent		= 1;
-	description 	= "MusÌm jÌt d·l.";
+	description 	= "Mus√≠m j√≠t d√°l.";
 };
 
 FUNC int DIA_SLD_760_Soeldner_EXIT_2_CONDITION()
@@ -72,8 +72,8 @@ FUNC int DIA_SLD_760_Soeldner_EXIT_2_CONDITION()
 
 func void DIA_SLD_760_Soeldner_EXIT_2_INFO()
 {
-	AI_Output (other, self,"DIA_SLD_760_Soeldner_EXIT_2_INFO_15_01"); //Pot¯ebuju jÌt d·l.
-	AI_Output (self, other,"DIA_SLD_760_Soeldner_EXIT_2_INFO_13_02");//Tak bÏû.
+	AI_Output (other, self,"DIA_SLD_760_Soeldner_EXIT_2_INFO_15_01"); //Pot≈ôebuju j√≠t d√°l.
+	AI_Output (self, other,"DIA_SLD_760_Soeldner_EXIT_2_INFO_13_02");//Tak bƒõ≈æ.
 	AI_StopProcessInfos	( self );
 };
 
@@ -86,7 +86,7 @@ instance DIA_SLD_760_Soeldner_UMSEHEN (C_INFO)
 	information		= DIA_SLD_760_Soeldner_UMSEHEN_INFO;
 	important		= 0;
 	permanent		= 0;
-	description 	= "ChtÏl bych se tady porozhlÈdnout.";
+	description 	= "Chtƒõl bych se tady porozhl√©dnout.";
 };
 
 FUNC int DIA_SLD_760_Soeldner_UMSEHEN_CONDITION()
@@ -96,8 +96,8 @@ FUNC int DIA_SLD_760_Soeldner_UMSEHEN_CONDITION()
 
 func void DIA_SLD_760_Soeldner_UMSEHEN_INFO()
 {
-	AI_Output (other, self,"DIA_SLD_760_Soeldner_UMSEHEN_INFO_15_01"); //ChtÏl bych se tady porozhlÈdnout.
-	AI_Output (self, other,"DIA_SLD_760_Soeldner_UMSEHEN_INFO_13_02");//Vyndej si ruce z kapes nebo ti je urazÌm!
+	AI_Output (other, self,"DIA_SLD_760_Soeldner_UMSEHEN_INFO_15_01"); //Chtƒõl bych se tady porozhl√©dnout.
+	AI_Output (self, other,"DIA_SLD_760_Soeldner_UMSEHEN_INFO_13_02");//Vyndej si ruce z kapes nebo ti je uraz√≠m!
 };
 
 
@@ -110,7 +110,7 @@ instance DIA_SLD_760_Soeldner_INMINE (C_INFO)
 	information		= DIA_SLD_760_Soeldner_INMINE_INFO;
 	important		= 0;
 	permanent		= 0;
-	description 	= "Chci jÌt do dolu.";
+	description 	= "Chci j√≠t do dolu.";
 };
 
 FUNC int DIA_SLD_760_Soeldner_INMINE_CONDITION()
@@ -120,8 +120,8 @@ FUNC int DIA_SLD_760_Soeldner_INMINE_CONDITION()
 
 func void DIA_SLD_760_Soeldner_INMINE_INFO()
 {
-	AI_Output (other, self,"DIA_SLD_760_Soeldner_INMINE_INFO_15_01"); //Chci jÌt do dolu.
-	AI_Output (self, other,"DIA_SLD_760_Soeldner_INMINE_INFO_13_02");//Do dolu? Bez Okylova povolenÌ nikoho dovnit¯ nepustÌm.
+	AI_Output (other, self,"DIA_SLD_760_Soeldner_INMINE_INFO_15_01"); //Chci j√≠t do dolu.
+	AI_Output (self, other,"DIA_SLD_760_Soeldner_INMINE_INFO_13_02");//Do dolu? Bez Okylova povolen√≠ nikoho dovnit≈ô nepust√≠m.
 
 	if	(!Npc_KnowsInfo	(hero, DIA_SLD_752_OKYL_WERBISTDU))
 	{
@@ -129,12 +129,12 @@ func void DIA_SLD_760_Soeldner_INMINE_INFO()
 	}
 	else
 	{
-		AI_Output (other, self,"DIA_SLD_760_Soeldner_INMINE_INFO_15_08");//Okyl, nenÌ to ten chlapÌk s velkou sekyrou a tÏûkou zbrojÌ?
+		AI_Output (other, self,"DIA_SLD_760_Soeldner_INMINE_INFO_15_08");//Okyl, nen√≠ to ten chlap√≠k s velkou sekyrou a tƒõ≈ækou zbroj√≠?
 	};
-	AI_Output (self, other,"DIA_SLD_760_Soeldner_INMINE_INFO_13_04");//D·vej pozor na to, co ¯Ìk·ö a jak mluvÌö o naöem öÈfovi.
-	AI_Output (self, other,"DIA_SLD_760_Soeldner_INMINE_INFO_13_05");//ÿeknu ti nÏco o Okylovi, je to nejtvrdöÌ chlap z celÈho t·bora. Jednou se dokonce vplÌûil na hrad ve StarÈm t·bo¯e a ukradl tam Rudobaron˘m hromadu rudy.
-	AI_Output (self, other,"DIA_SLD_760_Soeldner_INMINE_INFO_13_06");//Tak zachovej trochu ˙cty, prosÌm.
-	AI_Output (self, other,"DIA_SLD_760_Soeldner_INMINE_INFO_13_07");//NevÌm kde je, ale jestli ho potk·ö, mÏl bys mÌt tuhle vÏc st·le na pamÏti.
+	AI_Output (self, other,"DIA_SLD_760_Soeldner_INMINE_INFO_13_04");//D√°vej pozor na to, co ≈ô√≠k√°≈° a jak mluv√≠≈° o na≈°em ≈°√©fovi.
+	AI_Output (self, other,"DIA_SLD_760_Soeldner_INMINE_INFO_13_05");//≈òeknu ti nƒõco o Okylovi, je to nejtvrd≈°√≠ chlap z cel√©ho t√°bora. Jednou se dokonce vpl√≠≈æil na hrad ve Star√©m t√°bo≈ôe a ukradl tam Rudobaron≈Øm hromadu rudy.
+	AI_Output (self, other,"DIA_SLD_760_Soeldner_INMINE_INFO_13_06");//Tak zachovej trochu √∫cty, pros√≠m.
+	AI_Output (self, other,"DIA_SLD_760_Soeldner_INMINE_INFO_13_07");//Nev√≠m kde je, ale jestli ho potk√°≈°, mƒõl bys m√≠t tuhle vƒõc st√°le na pamƒõti.
 };
 
 

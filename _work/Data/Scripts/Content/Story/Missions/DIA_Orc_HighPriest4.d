@@ -22,11 +22,11 @@ FUNC VOID Info_HighPriest4_Info()
 	AI_SetWalkmode		(self, NPC_WALK);
 	AI_GotoNpc			(self, other);
 	
-	AI_Output			(self, other,"Info_HighPriest4_17_01"); //TVOOOJE DLOOUHÁÁÁ CEESTAA JEEE UU KOONCEEE!!!
-	AI_Output			(self, other,"Info_HighPriest4_17_02"); //TVÉÉÉ SMRRTEELNÉÉÉ TÌÌLOOO SHOOØÍÍÍ!!!
-	AI_Output			(other, self,"Info_HighPriest4_15_03"); //Teï u si pøestávám myslet, e to byl dobrı nápad!
+	AI_Output			(self, other,"Info_HighPriest4_17_01"); //TVOOOJE DLOOUHÃÃÃ CEESTAA JEEE UU KOONCEEE!!!
+	AI_Output			(self, other,"Info_HighPriest4_17_02"); //TVÃ‰Ã‰Ã‰ SMRRTEELNÃ‰Ã‰Ã‰ TÄšÄšLOOO SHOOÅ˜ÃÃÃ!!!
+	AI_Output			(other, self,"Info_HighPriest4_15_03"); //TeÄ uÅ¾ si pÅ™estÃ¡vÃ¡m myslet, Å¾e to byl dobrÃ½ nÃ¡pad!
 	
-	B_LogEntry			(CH4_EnterTemple,"Varrag-Ruuushk, jeden z pìti nemrtvıch šamanù vzıvajících Spáèe, mi zkøíil cestu. Nezastaví mì, tím jsme si jist!");
+	B_LogEntry			(CH4_EnterTemple,"Varrag-Ruuushk, jeden z pÄ›ti nemrtvÃ½ch Å¡amanÅ¯ vzÃ½vajÃ­cÃ­ch SpÃ¡Äe, mi zkÅ™Ã­Å¾il cestu. NezastavÃ­ mÄ›, tÃ­m jsme si jist!");
 	AI_StopProcessInfos	(self);
 
 	Npc_SetAttitude 	(self, ATT_HOSTILE);

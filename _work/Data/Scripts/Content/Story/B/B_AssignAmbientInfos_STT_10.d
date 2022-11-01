@@ -37,7 +37,7 @@ INSTANCE Info_Stt_10_EinerVonEuchWerden (C_INFO) // E1
 	condition	= Info_Stt_10_EinerVonEuchWerden_Condition;
 	information	= Info_Stt_10_EinerVonEuchWerden_Info;
 	permanent	= 1;
-	description = "Chci bıt Stínem.";
+	description = "Chci bÃ½t StÃ­nem.";
 };                       
 
 FUNC INT Info_Stt_10_EinerVonEuchWerden_Condition()
@@ -50,8 +50,8 @@ FUNC INT Info_Stt_10_EinerVonEuchWerden_Condition()
 
 FUNC VOID Info_Stt_10_EinerVonEuchWerden_Info()
 {
-	AI_Output(other,self,"Info_Stt_10_EinerVonEuchWerden_15_00"); //Chci bıt Stínem.
-	AI_Output(self,other,"Info_Stt_10_EinerVonEuchWerden_10_01"); //He? U jsi to øíkal Diegovi?
+	AI_Output(other,self,"Info_Stt_10_EinerVonEuchWerden_15_00"); //Chci bÃ½t StÃ­nem.
+	AI_Output(self,other,"Info_Stt_10_EinerVonEuchWerden_10_01"); //He? UÅ¾ jsi to Å™Ã­kal Diegovi?
 	
 	var C_NPC Diego;		Diego 	= Hlp_GetNpc(PC_Thief);
 	Diego.aivar[AIV_FINDABLE] = TRUE;
@@ -63,15 +63,15 @@ FUNC VOID Info_Stt_10_EinerVonEuchWerden_Info()
 
 FUNC VOID Info_Stt_10_EinerVonEuchWerden_Nein()
 {
-	AI_Output(other,self,"Info_Stt_10_EinerVonEuchWerden_Nein_15_00"); //Ještì ne.
-	AI_Output(self,other,"Info_Stt_10_EinerVonEuchWerden_Nein_10_01"); //Tak to udìlej, najdeš ho u vstupu do hradu.
+	AI_Output(other,self,"Info_Stt_10_EinerVonEuchWerden_Nein_15_00"); //JeÅ¡tÄ› ne.
+	AI_Output(self,other,"Info_Stt_10_EinerVonEuchWerden_Nein_10_01"); //Tak to udÄ›lej, najdeÅ¡ ho u vstupu do hradu.
 	Info_ClearChoices(Info_Stt_10_EinerVonEuchWerden);
 };
 
 FUNC VOID Info_Stt_10_EinerVonEuchWerden_Ja()
 {
-	AI_Output(other,self,"Info_Stt_10_EinerVonEuchWerden_Ja_15_00"); //Jo, udìlám.
-	AI_Output(self,other,"Info_Stt_10_EinerVonEuchWerden_Ja_10_01"); //Dobøe. Jednoduše udìlej, co ti øekne. Mnì se nic nestane. Tedy, doopravdy ne.
+	AI_Output(other,self,"Info_Stt_10_EinerVonEuchWerden_Ja_15_00"); //Jo, udÄ›lÃ¡m.
+	AI_Output(self,other,"Info_Stt_10_EinerVonEuchWerden_Ja_10_01"); //DobÅ™e. JednoduÅ¡e udÄ›lej, co ti Å™ekne. MnÄ› se nic nestane. Tedy, doopravdy ne.
 	Info_ClearChoices(Info_Stt_10_EinerVonEuchWerden);
 };
 
@@ -85,7 +85,7 @@ INSTANCE Info_Stt_10_WichtigePersonen(C_INFO)
 	condition	= Info_Stt_10_WichtigePersonen_Condition;
 	information	= Info_Stt_10_WichtigePersonen_Info;
 	permanent	= 1;
-	description = "Jaké lidi bych tu mìl znát?";
+	description = "JakÃ© lidi bych tu mÄ›l znÃ¡t?";
 };                       
 
 FUNC INT Info_Stt_10_WichtigePersonen_Condition()
@@ -95,8 +95,8 @@ FUNC INT Info_Stt_10_WichtigePersonen_Condition()
 
 FUNC VOID Info_Stt_10_WichtigePersonen_Info()
 {
-	AI_Output(other,self,"Info_Stt_10_WichtigePersonen_15_00"); //Jaké lidi bych tu mìl znát?
-	AI_Output(self,other,"Info_Stt_10_WichtigePersonen_10_01"); //Jestli se dostaneš do problémù se stráí, jdi za Gravem. Najdeš ho u koupalištì nedaleko hradní brány. Ten to urovná s tím, s kım bys mìl problémy. Nováèkùm se to stane rychleji, ne by je to napadlo.
+	AI_Output(other,self,"Info_Stt_10_WichtigePersonen_15_00"); //JakÃ© lidi bych tu mÄ›l znÃ¡t?
+	AI_Output(self,other,"Info_Stt_10_WichtigePersonen_10_01"); //Jestli se dostaneÅ¡ do problÃ©mÅ¯ se strÃ¡Å¾Ã­, jdi za Gravem. NajdeÅ¡ ho u koupaliÅ¡tÄ› nedaleko hradnÃ­ brÃ¡ny. Ten to urovnÃ¡ s tÃ­m, s kÃ½m bys mÄ›l problÃ©my. NovÃ¡ÄkÅ¯m se to stane rychleji, neÅ¾ by je to napadlo.
 };
 
 // *************************************************************************
@@ -109,7 +109,7 @@ INSTANCE Info_Stt_10_DasLager(C_INFO)
 	condition	= Info_Stt_10_DasLager_Condition;
 	information	= Info_Stt_10_DasLager_Info;
 	permanent	= 1;
-	description = "Mùeš mi øíci nìco o táboøe?";
+	description = "MÅ¯Å¾eÅ¡ mi Å™Ã­ci nÄ›co o tÃ¡boÅ™e?";
 };                       
 
 FUNC INT Info_Stt_10_DasLager_Condition()
@@ -119,9 +119,9 @@ FUNC INT Info_Stt_10_DasLager_Condition()
 
 FUNC VOID Info_Stt_10_DasLager_Info()
 {
-	AI_Output(other,self,"Info_Stt_10_DasLager_15_00"); //Co mi mùeš øíci o táboru?
-	AI_Output(self,other,"Info_Stt_10_DasLager_10_01"); //Myslím, e nejzajímavìjší místo je trištì. Kdy budeš shánìt nìco speciálního, tam to urèitì najdeš.
-	AI_Output(self,other,"Info_Stt_10_DasLager_10_02"); //To je to místo pod velkou jiní støechou Vnìjšího okruhu.
+	AI_Output(other,self,"Info_Stt_10_DasLager_15_00"); //Co mi mÅ¯Å¾eÅ¡ Å™Ã­ci o tÃ¡boru?
+	AI_Output(self,other,"Info_Stt_10_DasLager_10_01"); //MyslÃ­m, Å¾e nejzajÃ­mavÄ›jÅ¡Ã­ mÃ­sto je trÅ¾iÅ¡tÄ›. KdyÅ¾ budeÅ¡ shÃ¡nÄ›t nÄ›co speciÃ¡lnÃ­ho, tam to urÄitÄ› najdeÅ¡.
+	AI_Output(self,other,"Info_Stt_10_DasLager_10_02"); //To je to mÃ­sto pod velkou jiÅ¾nÃ­ stÅ™echou VnÄ›jÅ¡Ã­ho okruhu.
 };
 
 // *************************************************************************
@@ -145,7 +145,7 @@ FUNC INT Info_Stt_10_DieLage_Condition()
 FUNC VOID Info_Stt_10_DieLage_Info()
 {
 	AI_Output(other,self,"Info_Stt_10_DieLage_15_00"); //Zdar!
-	AI_Output(self,other,"Info_Stt_10_DieLage_10_01"); //Co chceš?
+	AI_Output(self,other,"Info_Stt_10_DieLage_10_01"); //Co chceÅ¡?
 };
 	
 // *************************************************************************

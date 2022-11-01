@@ -18,7 +18,7 @@ FUNC int  Tpl_1433_GorNaVid_Exit_Condition()
 
 FUNC VOID  Tpl_1433_GorNaVid_Exit_Info()
 {
-	AI_Output (self, other,"Tpl_1433_GorNaVid_Exit_Info_13_02"); //KÈû Sp·Ë procitne!
+	AI_Output (self, other,"Tpl_1433_GorNaVid_Exit_Info_13_02"); //K√©≈æ Sp√°ƒç procitne!
 	AI_StopProcessInfos	( self );
 };
 
@@ -31,7 +31,7 @@ instance  Tpl_1433_GorNaVid_HEALTH (C_INFO)
 	information		= Tpl_1433_GorNaVid_HEALTH_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Pot¯ebuju tvoji pomoc."; 
+	description		= "Pot≈ôebuju tvoji pomoc."; 
 };
 
 FUNC int  Tpl_1433_GorNaVid_HEALTH_Condition()
@@ -45,10 +45,10 @@ FUNC int  Tpl_1433_GorNaVid_HEALTH_Condition()
 
 FUNC void  Tpl_1433_GorNaVid_HEALTH_Info()
 {
-	AI_Output (other, self,"Tpl_1433_GorNaVid_HEALTH_Info_15_01"); //Pot¯ebuju tvoji pomoc.
-	AI_Output (other, self,"Tpl_1433_GorNaVid_HEALTH_Info_15_02"); //Hled·m pro Kaloma v˝mÏöek a asi vÌm, kde je ËervÌ hnÌzdo.
-	AI_Output (other, self,"Tpl_1433_GorNaVid_HEALTH_Info_15_03"); //Jestli otev¯eme chodbu, budeö tam taky?
-	AI_Output (self, other,"Tpl_1433_GorNaVid_HEALTH_Info_13_04"); //Kdyû bojujeme s Ëervy, Ëasto to znamen· spousty krve. Kdyû mi p¯ineseö hojiv˝ lektvar, m˘ûeö se mnou poËÌtat.
+	AI_Output (other, self,"Tpl_1433_GorNaVid_HEALTH_Info_15_01"); //Pot≈ôebuju tvoji pomoc.
+	AI_Output (other, self,"Tpl_1433_GorNaVid_HEALTH_Info_15_02"); //Hled√°m pro Kaloma v√Ωmƒõ≈°ek a asi v√≠m, kde je ƒçerv√≠ hn√≠zdo.
+	AI_Output (other, self,"Tpl_1433_GorNaVid_HEALTH_Info_15_03"); //Jestli otev≈ôeme chodbu, bude≈° tam taky?
+	AI_Output (self, other,"Tpl_1433_GorNaVid_HEALTH_Info_13_04"); //Kdy≈æ bojujeme s ƒçervy, ƒçasto to znamen√° spousty krve. Kdy≈æ mi p≈ôinese≈° hojiv√Ω lektvar, m≈Ø≈æe≈° se mnou poƒç√≠tat.
 
 };  
 // ***************** Infos *****************************
@@ -60,7 +60,7 @@ instance  Tpl_1433_GorNaVid_IAN (C_INFO)
 	information		= Tpl_1433_GorNaVid_IAN_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Hled·m hnÌzdo d˘lnÌch Ëerv˘."; 
+	description		= "Hled√°m hn√≠zdo d≈Øln√≠ch ƒçerv≈Ø."; 
 };
 
 FUNC int  Tpl_1433_GorNaVid_IAN_Condition()
@@ -74,8 +74,8 @@ FUNC int  Tpl_1433_GorNaVid_IAN_Condition()
 
 FUNC void  Tpl_1433_GorNaVid_IAN_Info()
 {
-	AI_Output (other, self,"Tpl_1433_GorNaVid_IAN_Info_15_01"); //Hled·m hnÌzdo d˘lnÌch Ëerv˘.
-	AI_Output (self, other,"Tpl_1433_GorNaVid_IAN_Info_13_02"); //Vedle hlavnÌ öachty dolu je mnoho jeskynÌ, ale nenaöli jsme tam û·dnÈ hnÌzdo.
+	AI_Output (other, self,"Tpl_1433_GorNaVid_IAN_Info_15_01"); //Hled√°m hn√≠zdo d≈Øln√≠ch ƒçerv≈Ø.
+	AI_Output (self, other,"Tpl_1433_GorNaVid_IAN_Info_13_02"); //Vedle hlavn√≠ ≈°achty dolu je mnoho jeskyn√≠, ale nena≈°li jsme tam ≈æ√°dn√© hn√≠zdo.
 };  
 
 // ***************** Infos *****************************
@@ -86,7 +86,7 @@ instance  Tpl_1433_GorNaVid_HEALTH_SUC (C_INFO)
 	information		= Tpl_1433_GorNaVid_HEALTH_SUC_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "(podej hojiv˝ lektvar)"; 
+	description		= "(podej hojiv√Ω lektvar)"; 
 };
 
 FUNC int  Tpl_1433_GorNaVid_HEALTH_SUC_Condition()
@@ -102,8 +102,8 @@ FUNC int  Tpl_1433_GorNaVid_HEALTH_SUC_Condition()
 };
 FUNC void  Tpl_1433_GorNaVid_HEALTH_SUC_Info()
 {
-	AI_Output (other, self,"Tpl_1433_GorNaVid_HEALTH_SUC_Info_15_01"); //Tady, to pom˘ûe.
-	AI_Output (self, other,"Tpl_1433_GorNaVid_HEALTH_SUC_Info_13_02"); //DÌky, m˘ûeö se mnou poËÌtat. Sejdeme se dole s Asghanem.
+	AI_Output (other, self,"Tpl_1433_GorNaVid_HEALTH_SUC_Info_15_01"); //Tady, to pom≈Ø≈æe.
+	AI_Output (self, other,"Tpl_1433_GorNaVid_HEALTH_SUC_Info_13_02"); //D√≠ky, m≈Ø≈æe≈° se mnou poƒç√≠tat. Sejdeme se dole s Asghanem.
 	AI_Output (other, self,"Tpl_1433_GorNaVid_HEALTH_SUC_Info_15_03"); //Budu tam.
 	
 	if Npc_HasItems (hero,Itfo_Potion_Health_01)
@@ -120,13 +120,13 @@ FUNC void  Tpl_1433_GorNaVid_HEALTH_SUC_Info()
 	}
 	else 
 	{
-		PrintDebugNpc (PD_MISSION, "KEINE POTION= UNM÷GLICH");
+		PrintDebugNpc (PD_MISSION, "KEINE POTION= UNM√ñGLICH");
 	};
 
 	Npc_ExchangeRoutine (self,"GATE"); 
 	Npc_SetPermAttitude	(self,ATT_FRIENDLY); 
 	B_GiveXP			(XP_HireGorNaVid);
-	B_LogEntry		(CH2_MCEggs,"Neû Gor Na Vid souhlasil, ûe se p¯id· k posile u Asghanov˝ch vrat, musel jsem mu d·t hojiv˝ lektvar.");	
+	B_LogEntry		(CH2_MCEggs,"Ne≈æ Gor Na Vid souhlasil, ≈æe se p≈ôid√° k posile u Asghanov√Ωch vrat, musel jsem mu d√°t hojiv√Ω lektvar.");	
 
 	AI_StopProcessInfos	(self);
 };
@@ -139,7 +139,7 @@ instance  Tpl_1433_GorNavid_VICTORY (C_INFO)
 	information		= Tpl_1433_GorNavid_VICTORY_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Naöel jsem hnÌzdo kr·lovny!"; 
+	description		= "Na≈°el jsem hn√≠zdo kr√°lovny!"; 
 };
 
 FUNC int  Tpl_1433_GorNavid_VICTORY_Condition()
@@ -152,8 +152,8 @@ FUNC int  Tpl_1433_GorNavid_VICTORY_Condition()
 };
 FUNC void  Tpl_1433_GorNavid_VICTORY_Info()
 {
-	AI_Output (other, self,"Tpl_1433_GorNavid_VICTORY_Info_15_01"); //Naöel jsem hnÌzdo kr·lovny!
-	AI_Output (self, other,"Tpl_1433_GorNavid_VICTORY_Info_13_02"); //DÏkuju ti ve jmÈnu celÈho Bratrstva!
-	AI_Output (self, other,"Tpl_1433_GorNavid_VICTORY_Info_13_03"); //Nechù Sp·Ë st·le nad tebou drûÌ ochrannou ruku!
+	AI_Output (other, self,"Tpl_1433_GorNavid_VICTORY_Info_15_01"); //Na≈°el jsem hn√≠zdo kr√°lovny!
+	AI_Output (self, other,"Tpl_1433_GorNavid_VICTORY_Info_13_02"); //Dƒõkuju ti ve jm√©nu cel√©ho Bratrstva!
+	AI_Output (self, other,"Tpl_1433_GorNavid_VICTORY_Info_13_03"); //Nech≈• Sp√°ƒç st√°le nad tebou dr≈æ√≠ ochrannou ruku!
 };     
  

@@ -35,7 +35,7 @@ INSTANCE DIA_Fingers_BecomeShadow (C_INFO)
 	condition		= DIA_Fingers_BecomeShadow_Condition;
 	information		= DIA_Fingers_BecomeShadow_Info;
 	permanent		= 1;
-	description		= "Chci se stát Stínem!"; 
+	description		= "Chci se stÃ¡t StÃ­nem!"; 
 };
 
 FUNC INT DIA_Fingers_BecomeShadow_Condition()
@@ -49,15 +49,15 @@ FUNC INT DIA_Fingers_BecomeShadow_Condition()
 
 FUNC VOID DIA_Fingers_BecomeShadow_Info()
 {
-	AI_Output (other, self,"DIA_Fingers_BecomeShadow_15_00"); //Chci se stát Stínem!
+	AI_Output (other, self,"DIA_Fingers_BecomeShadow_15_00"); //Chci se stÃ¡t StÃ­nem!
 	AI_Output (self, other,"DIA_Fingers_BecomeShadow_05_01"); //No a?
 	Info_ClearChoices	(DIA_Fingers_BecomeShadow );
 	Info_AddChoice		(DIA_Fingers_BecomeShadow,DIALOG_BACK										,DIA_Fingers_BecomeShadow_BACK);
 	if (Npc_KnowsInfo(hero,Info_Diego_Teachers))
 	{
-		Info_AddChoice		(DIA_Fingers_BecomeShadow,"Hledám nìkoho, kdo mì nìco nauèí.",DIA_Fingers_BecomeShadow_TeachMe);
+		Info_AddChoice		(DIA_Fingers_BecomeShadow,"HledÃ¡m nÄ›koho, kdo mÄ› nÄ›co nauÄÃ­.",DIA_Fingers_BecomeShadow_TeachMe);
 	};
-	Info_AddChoice		(DIA_Fingers_BecomeShadow,"Mùeš mi pomoci?",DIA_Fingers_BecomeShadow_AnyTips);
+	Info_AddChoice		(DIA_Fingers_BecomeShadow,"MÅ¯Å¾eÅ¡ mi pomoci?",DIA_Fingers_BecomeShadow_AnyTips);
 };
 
 func void DIA_Fingers_BecomeShadow_BACK()
@@ -67,23 +67,23 @@ func void DIA_Fingers_BecomeShadow_BACK()
 
 func void DIA_Fingers_BecomeShadow_AnyTips()
 {
-	AI_Output (other, self,"DIA_Fingers_BecomeShadow_AnyTips_15_00"); //Mùeš mi pomoci?
-	AI_Output (self, other,"DIA_Fingers_BecomeShadow_AnyTips_05_01"); //Nevím jak...
+	AI_Output (other, self,"DIA_Fingers_BecomeShadow_AnyTips_15_00"); //MÅ¯Å¾eÅ¡ mi pomoci?
+	AI_Output (self, other,"DIA_Fingers_BecomeShadow_AnyTips_05_01"); //NevÃ­m jak...
 };
 
 func void DIA_Fingers_BecomeShadow_TeachMe()
 {
-	AI_Output (other, self,"DIA_Fingers_BecomeShadow_TeachMe_15_00"); //Hledám nìkoho, kdo mì nìco nauèí.
-	AI_Output (self, other,"DIA_Fingers_BecomeShadow_TeachMe_05_01"); //Proè jsi ke mnì pøišel?
-	AI_Output (other, self,"DIA_Fingers_BecomeShadow_TeachMe_15_02"); //Poslal mì Diego.
-	AI_Output (self, other,"DIA_Fingers_BecomeShadow_TeachMe_05_03"); //To jsi mìl øíci rovnou.
-	AI_Output (self, other,"DIA_Fingers_BecomeShadow_TeachMe_05_04"); //Jestli se chceš pøidat k táboru, pak je vıhodné bıt dobrı bojovník nebo zlodìj.
-	AI_Output (self, other,"DIA_Fingers_BecomeShadow_TeachMe_05_05"); //Jestli tì budou tady v táboøe zkoušet nezávislé Stíny, dají ti takové úkoly, které nebudeš nejspíš schopnı splnit.
-	AI_Output (self, other,"DIA_Fingers_BecomeShadow_TeachMe_05_06"); //Proto by ses pro zaèátek mohl stát zlodìjem.
-	AI_Output (self, other,"DIA_Fingers_BecomeShadow_TeachMe_05_07"); //Mimochodem, já jsem nejlepší zlodìj z celého Starého tábora.
+	AI_Output (other, self,"DIA_Fingers_BecomeShadow_TeachMe_15_00"); //HledÃ¡m nÄ›koho, kdo mÄ› nÄ›co nauÄÃ­.
+	AI_Output (self, other,"DIA_Fingers_BecomeShadow_TeachMe_05_01"); //ProÄ jsi ke mnÄ› pÅ™iÅ¡el?
+	AI_Output (other, self,"DIA_Fingers_BecomeShadow_TeachMe_15_02"); //Poslal mÄ› Diego.
+	AI_Output (self, other,"DIA_Fingers_BecomeShadow_TeachMe_05_03"); //To jsi mÄ›l Å™Ã­ci rovnou.
+	AI_Output (self, other,"DIA_Fingers_BecomeShadow_TeachMe_05_04"); //Jestli se chceÅ¡ pÅ™idat k tÃ¡boru, pak je vÃ½hodnÃ© bÃ½t dobrÃ½ bojovnÃ­k nebo zlodÄ›j.
+	AI_Output (self, other,"DIA_Fingers_BecomeShadow_TeachMe_05_05"); //Jestli tÄ› budou tady v tÃ¡boÅ™e zkouÅ¡et nezÃ¡vislÃ© StÃ­ny, dajÃ­ ti takovÃ© Ãºkoly, kterÃ© nebudeÅ¡ nejspÃ­Å¡ schopnÃ½ splnit.
+	AI_Output (self, other,"DIA_Fingers_BecomeShadow_TeachMe_05_06"); //Proto by ses pro zaÄÃ¡tek mohl stÃ¡t zlodÄ›jem.
+	AI_Output (self, other,"DIA_Fingers_BecomeShadow_TeachMe_05_07"); //Mimochodem, jÃ¡ jsem nejlepÅ¡Ã­ zlodÄ›j z celÃ©ho StarÃ©ho tÃ¡bora.
 	Fingers_CanTeach = TRUE;
 	Log_CreateTopic   	(GE_TeacherOC,LOG_NOTE);
-	B_LogEntry			(GE_TeacherOC,"Fingers mì mùe nauèit dovednost VYBÍRÁNÍ KAPES a OTEVÍRÁNÍ ZÁMKÙ.");
+	B_LogEntry			(GE_TeacherOC,"Fingers mÄ› mÅ¯Å¾e nauÄit dovednost VYBÃRÃNÃ KAPES a OTEVÃRÃNÃ ZÃMKÅ®.");
 	Info_ClearChoices	(DIA_Fingers_BecomeShadow );
 };
 
@@ -99,7 +99,7 @@ INSTANCE DIA_Fingers_Lehrer (C_INFO)
 	condition		= DIA_Fingers_Lehrer_Condition;
 	information		= DIA_Fingers_Lehrer_Info;
 	permanent		= 1;
-	description		= "Co mì mùeš nauèit?"; 
+	description		= "Co mÄ› mÅ¯Å¾eÅ¡ nauÄit?"; 
 };
 
 FUNC INT DIA_Fingers_Lehrer_Condition()
@@ -112,8 +112,8 @@ FUNC INT DIA_Fingers_Lehrer_Condition()
 
 FUNC VOID DIA_Fingers_Lehrer_Info()
 {
-	AI_Output (other, self,"DIA_Fingers_Lehrer_15_00"); //Co mì mùeš nauèit?
-	AI_Output (self, other,"DIA_Fingers_Lehrer_05_02"); //To záleí na tom, co chceš umìt.
+	AI_Output (other, self,"DIA_Fingers_Lehrer_15_00"); //Co mÄ› mÅ¯Å¾eÅ¡ nauÄit?
+	AI_Output (self, other,"DIA_Fingers_Lehrer_05_02"); //To zÃ¡leÅ¾Ã­ na tom, co chceÅ¡ umÄ›t.
 
 
 
@@ -123,69 +123,69 @@ FUNC VOID DIA_Fingers_Lehrer_Info()
 	Info_AddChoice		(DIA_Fingers_Lehrer,B_BuildLearnString(NAME_LearnPickpocket_1	,	LPCOST_TALENT_PICKPOCKET_1,0)	,DIA_Fingers_Lehrer_Pickpocket);
 	Info_AddChoice		(DIA_Fingers_Lehrer,B_BuildLearnString(NAME_LearnPicklock_2		,	LPCOST_TALENT_PICKLOCK_2,0)	,DIA_Fingers_Lehrer_Lockpick2);
 	Info_AddChoice		(DIA_Fingers_Lehrer,B_BuildLearnString(NAME_LearnPicklock_1		,	LPCOST_TALENT_PICKLOCK_1,0)	,DIA_Fingers_Lehrer_Lockpick);
-	Info_AddChoice		(DIA_Fingers_Lehrer,"Chci se nauèit plíit.",DIA_Fingers_Lehrer_Schleichen);
+	Info_AddChoice		(DIA_Fingers_Lehrer,"Chci se nauÄit plÃ­Å¾it.",DIA_Fingers_Lehrer_Schleichen);
 };
 
 
 func void DIA_Fingers_Lehrer_Schleichen()
 {
-	AI_Output (other, self,"DIA_Fingers_Lehrer_Schleichen_15_00"); //Chci se nauèit plíit.
-	AI_Output (self, other,"DIA_Fingers_Lehrer_Schleichen_05_01"); //Vìøím, a to bez nadsázky, e jsem jeden z nejlepších zlodìjù, jaké kdy tahle kolonie spatøila.
-	AI_Output (self, other,"DIA_Fingers_Lehrer_Schleichen_05_02"); //Jestli se chceš ale nauèit plíit, Cavalorn bude lepší uèitel ne já!
+	AI_Output (other, self,"DIA_Fingers_Lehrer_Schleichen_15_00"); //Chci se nauÄit plÃ­Å¾it.
+	AI_Output (self, other,"DIA_Fingers_Lehrer_Schleichen_05_01"); //VÄ›Å™Ã­m, a to bez nadsÃ¡zky, Å¾e jsem jeden z nejlepÅ¡Ã­ch zlodÄ›jÅ¯, jakÃ© kdy tahle kolonie spatÅ™ila.
+	AI_Output (self, other,"DIA_Fingers_Lehrer_Schleichen_05_02"); //Jestli se chceÅ¡ ale nauÄit plÃ­Å¾it, Cavalorn bude lepÅ¡Ã­ uÄitel neÅ¾ jÃ¡!
 	Fingers_Wherecavalorn = TRUE;
 };
 
 func void DIA_Fingers_Lehrer_Lockpick()
 {
-	AI_Output (other, self,"DIA_Fingers_Lehrer_Lockpick_15_00"); //Jak mùu vylepšit své umìní v otevírání zámkù?
+	AI_Output (other, self,"DIA_Fingers_Lehrer_Lockpick_15_00"); //Jak mÅ¯Å¾u vylepÅ¡it svÃ© umÄ›nÃ­ v otevÃ­rÃ¡nÃ­ zÃ¡mkÅ¯?
 	
 	if (B_GiveSkill(other, NPC_TALENT_PICKLOCK, 1, LPCOST_TALENT_PICKLOCK_1))
 	{
-		AI_Output (self, other,"DIA_Fingers_Lehrer_Lockpick_05_01"); //To bys rád vìdìl, co? Není tìké s tím zaèít.
-		AI_Output (self, other,"DIA_Fingers_Lehrer_Lockpick_05_02"); //Pøedevším se musíš ujistit, e se tvùj paklíè nezlomí.
-		AI_Output (self, other,"DIA_Fingers_Lehrer_Lockpick_05_03"); //Kdy budeš v budoucnu trochu trpìlivìjší, uvidíš, e nebudeš potøebovat tolik paklíèù!
+		AI_Output (self, other,"DIA_Fingers_Lehrer_Lockpick_05_01"); //To bys rÃ¡d vÄ›dÄ›l, co? NenÃ­ tÄ›Å¾kÃ© s tÃ­m zaÄÃ­t.
+		AI_Output (self, other,"DIA_Fingers_Lehrer_Lockpick_05_02"); //PÅ™edevÅ¡Ã­m se musÃ­Å¡ ujistit, Å¾e se tvÅ¯j paklÃ­Ä nezlomÃ­.
+		AI_Output (self, other,"DIA_Fingers_Lehrer_Lockpick_05_03"); //KdyÅ¾ budeÅ¡ v budoucnu trochu trpÄ›livÄ›jÅ¡Ã­, uvidÃ­Å¡, Å¾e nebudeÅ¡ potÅ™ebovat tolik paklÃ­ÄÅ¯!
 	};
 };
 
 func void DIA_Fingers_Lehrer_Lockpick2()
 {
-	AI_Output (other, self,"DIA_Fingers_Lehrer_Lockpick2_15_00"); //Jak se ze mì stane odborník na vylamování zámkù?
+	AI_Output (other, self,"DIA_Fingers_Lehrer_Lockpick2_15_00"); //Jak se ze mÄ› stane odbornÃ­k na vylamovÃ¡nÃ­ zÃ¡mkÅ¯?
 	
 	if (B_GiveSkill(other, NPC_TALENT_PICKLOCK, 2, LPCOST_TALENT_PICKLOCK_2))
 	{
-		AI_Output (self, other,"DIA_Fingers_Lehrer_Lockpick2_05_01"); //Jedinì kdy získáš nìjaké zkušenosti, budeš moci øíci, jestli se paklíè zlomí. Vydává jinı zvuk!
-		AI_Output (self, other,"DIA_Fingers_Lehrer_Lockpick2_05_02"); //Myslím, e to máš. Nauè se poslouchat to jemné cvaknutí zámku a pak u nebudeš pøicházet o tolik paklíèù.
-		AI_Output (self, other,"DIA_Fingers_Lehrer_Lockpick2_05_03"); //Odborník v tomto smìru má velkou šanci, e otevøe zámek, ani by zlomil svùj paklíè.
+		AI_Output (self, other,"DIA_Fingers_Lehrer_Lockpick2_05_01"); //JedinÄ› kdyÅ¾ zÃ­skÃ¡Å¡ nÄ›jakÃ© zkuÅ¡enosti, budeÅ¡ moci Å™Ã­ci, jestli se paklÃ­Ä zlomÃ­. VydÃ¡vÃ¡ jinÃ½ zvuk!
+		AI_Output (self, other,"DIA_Fingers_Lehrer_Lockpick2_05_02"); //MyslÃ­m, Å¾e to mÃ¡Å¡. NauÄ se poslouchat to jemnÃ© cvaknutÃ­ zÃ¡mku a pak uÅ¾ nebudeÅ¡ pÅ™ichÃ¡zet o tolik paklÃ­ÄÅ¯.
+		AI_Output (self, other,"DIA_Fingers_Lehrer_Lockpick2_05_03"); //OdbornÃ­k v tomto smÄ›ru mÃ¡ velkou Å¡anci, Å¾e otevÅ™e zÃ¡mek, aniÅ¾ by zlomil svÅ¯j paklÃ­Ä.
 	};
 };
 
 func void DIA_Fingers_Lehrer_Pickpocket()
 {
-	AI_Output (other, self,"DIA_Fingers_Lehrer_PICKPOCKET_15_00"); //Chci se stát zbìhlım kapsáøem.
+	AI_Output (other, self,"DIA_Fingers_Lehrer_PICKPOCKET_15_00"); //Chci se stÃ¡t zbÄ›hlÃ½m kapsÃ¡Å™em.
 	if (Npc_GetTalentSkill(other, NPC_TALENT_SNEAK) == 1)
 	{
 		if (B_GiveSkill(other, NPC_TALENT_PICKPOCKET, 1, LPCOST_TALENT_PICKPOCKET_1))
 		{
-			AI_Output (self, other,"DIA_Fingers_Lehrer_PICKPOCKET_05_01"); //Take chceš pár lidem odlehèit o jejich majetek? Dobrá teda.
-			AI_Output (self, other,"DIA_Fingers_Lehrer_PICKPOCKET_05_02"); //Nauèím tì, jak zlepšit své umìní, ale pøesto bude dost pravdìpodobné, e tì pøitom chytnou.
-			AI_Output (self, other,"DIA_Fingers_Lehrer_PICKPOCKET_05_03"); //Mìl bys to zkoušet pouze tehdy, a nebude kolem nikdo, ne ty a tvoje obì.
-			AI_Output (self, other,"DIA_Fingers_Lehrer_PICKPOCKET_05_04"); //Jedinì odborník dokáe vzít lidem vìci z kapes, ani by si toho všimli!
+			AI_Output (self, other,"DIA_Fingers_Lehrer_PICKPOCKET_05_01"); //TakÅ¾e chceÅ¡ pÃ¡r lidem odlehÄit o jejich majetek? DobrÃ¡ teda.
+			AI_Output (self, other,"DIA_Fingers_Lehrer_PICKPOCKET_05_02"); //NauÄÃ­m tÄ›, jak zlepÅ¡it svÃ© umÄ›nÃ­, ale pÅ™esto bude dost pravdÄ›podobnÃ©, Å¾e tÄ› pÅ™itom chytnou.
+			AI_Output (self, other,"DIA_Fingers_Lehrer_PICKPOCKET_05_03"); //MÄ›l bys to zkouÅ¡et pouze tehdy, aÅ¾ nebude kolem nikdo, neÅ¾ ty a tvoje obÄ›Å¥.
+			AI_Output (self, other,"DIA_Fingers_Lehrer_PICKPOCKET_05_04"); //JedinÄ› odbornÃ­k dokÃ¡Å¾e vzÃ­t lidem vÄ›ci z kapes, aniÅ¾ by si toho vÅ¡imli!
 		};
 	}
 	else
 	{
-		AI_Output (self, other,"DIA_Fingers_lehrer_Pickpocket_05_05"); //Zapomeò na to! Nikdy z tebe nebude zkušenı zlodìj, dokud se nebudeš umìt plíit.
+		AI_Output (self, other,"DIA_Fingers_lehrer_Pickpocket_05_05"); //ZapomeÅˆ na to! Nikdy z tebe nebude zkuÅ¡enÃ½ zlodÄ›j, dokud se nebudeÅ¡ umÄ›t plÃ­Å¾it.
 	};
 };
 
 func void DIA_Fingers_Lehrer_Pickpocket2()
 {
-	AI_Output (other, self,"DIA_Fingers_Lehrer_Pickpocket2_15_00"); //Chci se stát kapsáøskım odborníkem!
+	AI_Output (other, self,"DIA_Fingers_Lehrer_Pickpocket2_15_00"); //Chci se stÃ¡t kapsÃ¡Å™skÃ½m odbornÃ­kem!
 	
 	if (B_GiveSkill(other, NPC_TALENT_PICKPOCKET, 2, LPCOST_TALENT_PICKPOCKET_2))
 	{		
-		AI_Output (self, other,"DIA_Fingers_Lehrer_Pickpocket2_05_01"); //Myslím, e jsi pokroèil tak daleko, e tì mùu nauèit poslední triky tohohle øemesla.
-		AI_Output (self, other,"DIA_Fingers_Lehrer_Pickpocket2_05_02"); //Mìl bys ale vìdìt, e i ten nejlepší mùe bıt nìkdy pøistien.
+		AI_Output (self, other,"DIA_Fingers_Lehrer_Pickpocket2_05_01"); //MyslÃ­m, Å¾e jsi pokroÄil tak daleko, Å¾e tÄ› mÅ¯Å¾u nauÄit poslednÃ­ triky tohohle Å™emesla.
+		AI_Output (self, other,"DIA_Fingers_Lehrer_Pickpocket2_05_02"); //MÄ›l bys ale vÄ›dÄ›t, Å¾e i ten nejlepÅ¡Ã­ mÅ¯Å¾e bÃ½t nÄ›kdy pÅ™istiÅ¾en.
 		AI_Output (self, other,"DIA_Fingers_Lehrer_Pickpocket2_05_03"); //Opatruj se.
 	};
 };
@@ -220,10 +220,10 @@ FUNC INT DIA_Fingers_WhereCavalorn_Condition()
 FUNC VOID DIA_Fingers_WhereCavalorn_Info()
 {
 	AI_Output (other, self,"DIA_Fingers_WhereCavalorn_15_00"); //Kde najdu Cavalorna?
-	AI_Output (self, other,"DIA_Fingers_WhereCavalorn_05_01"); //Právì je na lovu v divoèinì. Najdeš ho po cestì do Nového tábora. Západnì od Starého tábora je širokı kaòon.
-	AI_Output (self, other,"DIA_Fingers_WhereCavalorn_05_02"); //V tom kaòonu je stará døevorubecká chata. Najdeš ho v ní.
+	AI_Output (self, other,"DIA_Fingers_WhereCavalorn_05_01"); //PrÃ¡vÄ› je na lovu v divoÄinÄ›. NajdeÅ¡ ho po cestÄ› do NovÃ©ho tÃ¡bora. ZÃ¡padnÄ› od StarÃ©ho tÃ¡bora je Å¡irokÃ½ kaÅˆon.
+	AI_Output (self, other,"DIA_Fingers_WhereCavalorn_05_02"); //V tom kaÅˆonu je starÃ¡ dÅ™evorubeckÃ¡ chata. NajdeÅ¡ ho v nÃ­.
 	
-	B_LogEntry( GE_TeacherOW,"Cavalorm mì mùe nauèit plíení. Jeho chatrè stojí na západ od Starého tábora, smìrem k Novému táboru.");
+	B_LogEntry( GE_TeacherOW,"Cavalorm mÄ› mÅ¯Å¾e nauÄit plÃ­Å¾enÃ­. Jeho chatrÄ stojÃ­ na zÃ¡pad od StarÃ©ho tÃ¡bora, smÄ›rem k NovÃ©mu tÃ¡boru.");
 };
 
 // **************************************************
@@ -239,7 +239,7 @@ INSTANCE DIA_Fingers_Learnt (C_INFO)
 	condition		= DIA_Fingers_Learnt_Condition;
 	information		= DIA_Fingers_Learnt_Info;
 	permanent		= 1;
-	description		= "Nepøimluvil by ses za mì u Diega?"; 
+	description		= "NepÅ™imluvil by ses za mÄ› u Diega?"; 
 };
 
 FUNC INT DIA_Fingers_Learnt_Condition()
@@ -253,26 +253,26 @@ FUNC INT DIA_Fingers_Learnt_Condition()
 
 FUNC VOID DIA_Fingers_Learnt_Info()
 {
-	AI_Output (other, self,"DIA_Fingers_Learnt_15_00"); //Nepøimluvil by ses za mì u Diega?
+	AI_Output (other, self,"DIA_Fingers_Learnt_15_00"); //NepÅ™imluvil by ses za mÄ› u Diega?
 
 	if ( Npc_GetTalentSkill(other, NPC_TALENT_PICKLOCK)+Npc_GetTalentSkill(other, NPC_TALENT_PICKPOCKET)+Npc_GetTalentSkill(other, NPC_TALENT_SNEAK)	> 0)
 	{
-		AI_Output (self, other,"DIA_Fingers_Learnt_05_01"); //Ano. Nauèil ses nìco, díky èemu budeš pro nás docela uiteènı.
-		AI_Output (self, other,"DIA_Fingers_Learnt_05_02"); //Potøebujeme tady v táboøe zkušené zlodìje. Dostaneš mùj hlas.
+		AI_Output (self, other,"DIA_Fingers_Learnt_05_01"); //Ano. NauÄil ses nÄ›co, dÃ­ky Äemu budeÅ¡ pro nÃ¡s docela uÅ¾iteÄnÃ½.
+		AI_Output (self, other,"DIA_Fingers_Learnt_05_02"); //PotÅ™ebujeme tady v tÃ¡boÅ™e zkuÅ¡enÃ© zlodÄ›je. DostaneÅ¡ mÅ¯j hlas.
 		Fingers_Learnt = LOG_SUCCESS;
 		
 		B_GiveXP (XP_Fingerstrain);
-		B_LogEntry( CH1_JoinOC,"Fingers je doopravdy spokojen s mımi pokroky.");
+		B_LogEntry( CH1_JoinOC,"Fingers je doopravdy spokojen s mÃ½mi pokroky.");
 	}
 	else
 	{
-		AI_Output (self, other,"DIA_Fingers_Learnt_05_03"); //Zaleí to na...
-		AI_Output (self, other,"DIA_Fingers_Learnt_05_04"); //Jestli dokáeš, e ses nauèil nìco ze zlodìjského øemesla, mohl bys bıt pro nás uiteènı!
-		AI_Output (other, self,"DIA_Fingers_Learnt_15_05"); //Co bych mìl udìlat?
-		AI_Output (self, other,"DIA_Fingers_Learnt_05_06"); //Nauè se zlodìjskému øemeslu! Potøebuješ se vypracovat v plíení, kapsáøství nebo otevírání zámkù. Pak dostaneš mùj hlas.
+		AI_Output (self, other,"DIA_Fingers_Learnt_05_03"); //ZaleÅ¾Ã­ to na...
+		AI_Output (self, other,"DIA_Fingers_Learnt_05_04"); //Jestli dokÃ¡Å¾eÅ¡, Å¾e ses nauÄil nÄ›co ze zlodÄ›jskÃ©ho Å™emesla, mohl bys bÃ½t pro nÃ¡s uÅ¾iteÄnÃ½!
+		AI_Output (other, self,"DIA_Fingers_Learnt_15_05"); //Co bych mÄ›l udÄ›lat?
+		AI_Output (self, other,"DIA_Fingers_Learnt_05_06"); //NauÄ se zlodÄ›jskÃ©mu Å™emeslu! PotÅ™ebujeÅ¡ se vypracovat v plÃ­Å¾enÃ­, kapsÃ¡Å™stvÃ­ nebo otevÃ­rÃ¡nÃ­ zÃ¡mkÅ¯. Pak dostaneÅ¡ mÅ¯j hlas.
 		Fingers_Learnt = LOG_RUNNING;
 		
-		B_LogEntry( CH1_JoinOC,"Jakmile získám zlodìjskou dovednost, Fingers se za mì pøimluví.");
+		B_LogEntry( CH1_JoinOC,"Jakmile zÃ­skÃ¡m zlodÄ›jskou dovednost, Fingers se za mÄ› pÅ™imluvÃ­.");
 	};
 };
 

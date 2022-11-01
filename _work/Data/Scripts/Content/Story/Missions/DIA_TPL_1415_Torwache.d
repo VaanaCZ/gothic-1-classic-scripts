@@ -56,33 +56,33 @@ FUNC INT DIA_Tpl_1415_Torwache_First_Condition()
 
 FUNC VOID DIA_Tpl_1415_Torwache_First_Info()
 {
-	AI_Output (self, other,"DIA_Tpl_1415_Torwache_First_13_00"); //BuÔ zdr·v, cizinËe!
-	AI_Output (self, other,"DIA_Tpl_1415_Torwache_First_13_01"); //älapeö po svatÈ p˘dÏ. Tohle je Bratrstvo Sp·Ëe.
-	AI_Output (self, other,"DIA_Tpl_1415_Torwache_First_13_02"); //Co n·m p¯in·öÌö?
+	AI_Output (self, other,"DIA_Tpl_1415_Torwache_First_13_00"); //Buƒè zdr√°v, cizinƒçe!
+	AI_Output (self, other,"DIA_Tpl_1415_Torwache_First_13_01"); //≈†lape≈° po svat√© p≈Ødƒõ. Tohle je Bratrstvo Sp√°ƒçe.
+	AI_Output (self, other,"DIA_Tpl_1415_Torwache_First_13_02"); //Co n√°m p≈ôin√°≈°√≠≈°?
 	
 	Info_ClearChoices	(DIA_Tpl_1415_Torwache_First);
-	Info_AddChoice		(DIA_Tpl_1415_Torwache_First,"Jsem tady nov˝. Chci si prohlÈdnout v·ö t·bor.",DIA_Tpl_1415_Torwache_First_JustLooking);
+	Info_AddChoice		(DIA_Tpl_1415_Torwache_First,"Jsem tady nov√Ω. Chci si prohl√©dnout v√°≈° t√°bor.",DIA_Tpl_1415_Torwache_First_JustLooking);
 	
 	if (Npc_GetTrueGuild (hero) == GIL_NONE)
 	{
-		Info_AddChoice		(DIA_Tpl_1415_Torwache_First,"Chci s k v·m p¯idat.",DIA_Tpl_1415_Torwache_First_Join);
+		Info_AddChoice		(DIA_Tpl_1415_Torwache_First,"Chci s k v√°m p≈ôidat.",DIA_Tpl_1415_Torwache_First_Join);
 	};
 };
 
 func void DIA_Tpl_1415_Torwache_First_Join()
 {
-	AI_Output (other, self,"DIA_Tpl_1415_Torwache_First_Join_15_00"); //Slyöel jsem, ûe hled·te novÈ lidi. Chci se k v·m p¯idat.
-	AI_Output (self, other,"DIA_Tpl_1415_Torwache_First_Join_13_01"); //Pak buÔ vÌt·n. Bratrstvo Sp·Ëe m· mÌsto pro kaûdÈho, kdo se chce nechat vÈst duchem Sp·Ëe.
-	AI_Output (self, other,"DIA_Tpl_1415_Torwache_First_Join_13_02"); //Jestli to myslÌö v·ûnÏ, mÏl by ses pokusit upoutat pozornost Baala Namiba. P¯eb˝v· na dvo¯e, hned za branou.
-	AI_Output (self, other,"DIA_Tpl_1415_Torwache_First_Join_13_04"); //NesmÌö na nÏj ale mluvit. PoËkej, aû tÏ s·m vyzve.
+	AI_Output (other, self,"DIA_Tpl_1415_Torwache_First_Join_15_00"); //Sly≈°el jsem, ≈æe hled√°te nov√© lidi. Chci se k v√°m p≈ôidat.
+	AI_Output (self, other,"DIA_Tpl_1415_Torwache_First_Join_13_01"); //Pak buƒè v√≠t√°n. Bratrstvo Sp√°ƒçe m√° m√≠sto pro ka≈æd√©ho, kdo se chce nechat v√©st duchem Sp√°ƒçe.
+	AI_Output (self, other,"DIA_Tpl_1415_Torwache_First_Join_13_02"); //Jestli to mysl√≠≈° v√°≈ænƒõ, mƒõl by ses pokusit upoutat pozornost Baala Namiba. P≈ôeb√Ωv√° na dvo≈ôe, hned za branou.
+	AI_Output (self, other,"DIA_Tpl_1415_Torwache_First_Join_13_04"); //Nesm√≠≈° na nƒõj ale mluvit. Poƒçkej, a≈æ tƒõ s√°m vyzve.
 	Info_ClearChoices	(DIA_Tpl_1415_Torwache_First);
 };
 
 func void DIA_Tpl_1415_Torwache_First_JustLooking()
 {
-	AI_Output (other, self,"DIA_Tpl_1415_Torwache_First_JustLooking_15_00"); //Jsem tady nov˝. Chci si prohlÈdnout v·ö t·bor.
-	AI_Output (self, other,"DIA_Tpl_1415_Torwache_First_JustLooking_13_01"); //Cizinci jsou tu vÌt·ni.
-	AI_Output (self, other,"DIA_Tpl_1415_Torwache_First_JustLooking_13_02"); //Je ale d˘leûitÈ dodrûovat pravidla. Jsou urËitÈ oblasti, do kter˝ch cizinci nesmÏjÌ.
+	AI_Output (other, self,"DIA_Tpl_1415_Torwache_First_JustLooking_15_00"); //Jsem tady nov√Ω. Chci si prohl√©dnout v√°≈° t√°bor.
+	AI_Output (self, other,"DIA_Tpl_1415_Torwache_First_JustLooking_13_01"); //Cizinci jsou tu v√≠t√°ni.
+	AI_Output (self, other,"DIA_Tpl_1415_Torwache_First_JustLooking_13_02"); //Je ale d≈Øle≈æit√© dodr≈æovat pravidla. Jsou urƒçit√© oblasti, do kter√Ωch cizinci nesmƒõj√≠.
 	Info_ClearChoices	(DIA_Tpl_1415_Torwache_First);
 };
 
@@ -97,7 +97,7 @@ INSTANCE DIA_Tpl_1415_Torwache_Sit (C_INFO)
 	condition		= DIA_Tpl_1415_Torwache_Sit_Condition;
 	information		= DIA_Tpl_1415_Torwache_Sit_Info;
 	permanent		= 1;
-	description		= "Jak to v t·bo¯e jde?";
+	description		= "Jak to v t√°bo≈ôe jde?";
 };
 
 FUNC INT DIA_Tpl_1415_Torwache_Sit_Condition()
@@ -107,8 +107,8 @@ FUNC INT DIA_Tpl_1415_Torwache_Sit_Condition()
 
 FUNC VOID DIA_Tpl_1415_Torwache_Sit_Info()
 {
-	AI_Output (other, self,"DIA_Tpl_1415_Torwache_Sit_15_00"); //Jak to v t·bo¯e jde?
-	AI_Output (self, other,"DIA_Tpl_1415_Torwache_Sit_13_01"); //Vöude klid. Tak pojÔ.
+	AI_Output (other, self,"DIA_Tpl_1415_Torwache_Sit_15_00"); //Jak to v t√°bo≈ôe jde?
+	AI_Output (self, other,"DIA_Tpl_1415_Torwache_Sit_13_01"); //V≈°ude klid. Tak pojƒè.
 };
 /*------------------------------------------------------------------------
 //						TEMPLERAUFNAHME							//
@@ -135,16 +135,16 @@ FUNC int  Tpl_1415_Torwache_TEMPLERAUFNAHME_Condition()
 func void  Tpl_1415_Torwache_TEMPLERAUFNAHME_Info()
 {
 	AI_GotoNpc (hero,self); 
-	AI_Output (self, other,"Tpl_1415_Torwache_IMPORTANT_Info_13_01"); //Hej, slyöel jsem, co se stalo v dole. BoûÌ dÌlo. ZaslouûÌö si b˝t jmenov·n templ·¯em!
+	AI_Output (self, other,"Tpl_1415_Torwache_IMPORTANT_Info_13_01"); //Hej, sly≈°el jsem, co se stalo v dole. Bo≈æ√≠ d√≠lo. Zaslou≈æ√≠≈° si b√Ωt jmenov√°n templ√°≈ôem!
 	AI_Output (self, other,"Tpl_1415_Torwache_IMPORTANT_Info_13_02"); //Promluv si s Corem Angarem!
 
 	Log_CreateTopic (GE_BecomeTemplar,LOG_NOTE);
-	B_LogEntry (GE_BecomeTemplar,"MÏl bych si promluvit s Corem Angarem. Moûn· mi dovolÌ p¯idat se k templ·¯˘m.");
+	B_LogEntry (GE_BecomeTemplar,"Mƒõl bych si promluvit s Corem Angarem. Mo≈æn√° mi dovol√≠ p≈ôidat se k templ√°≈ô≈Øm.");
 };
 
 
 /*------------------------------------------------------------------------
-						Novizenrˆckchen							
+						Novizenr√∂ckchen							
 ------------------------------------------------------------------------*/
 
 instance  Tpl_1415_Templer_ROCK (C_INFO)
@@ -154,7 +154,7 @@ instance  Tpl_1415_Templer_ROCK (C_INFO)
 	information		= Tpl_1415_Templer_ROCK_Info;
 	important		= 0;
 	permanent		= 1;
-	description		= "Pot¯ebuji zbroj."; 
+	description		= "Pot≈ôebuji zbroj."; 
 };
 
 FUNC int  Tpl_1415_Templer_ROCK_Condition()
@@ -167,10 +167,10 @@ FUNC int  Tpl_1415_Templer_ROCK_Condition()
 };
 FUNC void  Tpl_1415_Templer_ROCK_Info()
 {
-	AI_Output (other, self,"Tpl_1415_Templer_ROCK_Info_15_01"); //Pot¯ebuji zbroj.
-	AI_Output (self, other,"Tpl_1415_Templer_ROCK_Info_13_02"); //Templ·¯skou zbroj jako nosÌm j· si musÌö nejd¯Ìve zaslouûit. Ale m˘ûeö mÌt bedernÌ rouöku novice.
-	AI_Output (other, self,"Tpl_1415_Templer_ROCK_Info_15_03"); //LepöÌ neû nic...
-	AI_Output (self, other,"Tpl_1415_Templer_ROCK_Info_13_04"); //Za takovÈ volnomyölenk·¯stvÌ ji nedostaneö!
+	AI_Output (other, self,"Tpl_1415_Templer_ROCK_Info_15_01"); //Pot≈ôebuji zbroj.
+	AI_Output (self, other,"Tpl_1415_Templer_ROCK_Info_13_02"); //Templ√°≈ôskou zbroj jako nos√≠m j√° si mus√≠≈° nejd≈ô√≠ve zaslou≈æit. Ale m≈Ø≈æe≈° m√≠t bedern√≠ rou≈°ku novice.
+	AI_Output (other, self,"Tpl_1415_Templer_ROCK_Info_15_03"); //Lep≈°√≠ ne≈æ nic...
+	AI_Output (self, other,"Tpl_1415_Templer_ROCK_Info_13_04"); //Za takov√© volnomy≈°lenk√°≈ôstv√≠ ji nedostane≈°!
 
 	Info_ClearChoices (Tpl_1415_Templer_ROCK);
 	Info_Addchoice (Tpl_1415_Templer_ROCK,DIALOG_BACK,Tpl_1415_Templer_ROCK_BACK);
@@ -184,14 +184,14 @@ func void Tpl_1415_Templer_ROCK_BACK()
 
 func void Tpl_1415_Templer_ROCK_BUY()
 {
-	AI_Output (other, self,"Tpl_1415_Templer_ROCK_BUY_15_01"); //Dob¯e, dej mi tu bedernÌ pokr˝vku.
+	AI_Output (other, self,"Tpl_1415_Templer_ROCK_BUY_15_01"); //Dob≈ôe, dej mi tu bedern√≠ pokr√Ωvku.
 	if (Npc_HasItems (hero,ItMiNugget) <  VALUE_NOV_ARMOR_L)
 	{
-		AI_Output (self, other,"Tpl_1415_Templer_ROCK_BUY_13_02"); //Vraù se, aû budeö mÌt dost rudy!
+		AI_Output (self, other,"Tpl_1415_Templer_ROCK_BUY_13_02"); //Vra≈• se, a≈æ bude≈° m√≠t dost rudy!
 	}
 	else
 	{
-		AI_Output (self, other,"Tpl_1415_Templer_ROCK_BUY_13_03"); //Tenhle kousek odÏvu ti m˘ûe zachr·nit ûivot!
+		AI_Output (self, other,"Tpl_1415_Templer_ROCK_BUY_13_03"); //Tenhle kousek odƒõvu ti m≈Ø≈æe zachr√°nit ≈æivot!
 		B_GiveInvItems (hero, self, ItMinugget, VALUE_NOV_ARMOR_L);
 		CreateInvItem (self, NOV_ARMOR_L);
 		B_GiveInvItems (self, hero, NOV_ARMOR_L, 1);

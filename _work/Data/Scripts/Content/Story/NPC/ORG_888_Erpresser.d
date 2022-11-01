@@ -2,7 +2,7 @@ instance ORG_888_Erpresser (Npc_Default)
 {
 	//-------- primary data --------
 	
-	name =					"Vydìraè";
+	name =					"VydÄ›raÄ";
 	Npctype =				Npctype_Main;
 	guild =					GIL_ORG;      
 	level =					15;

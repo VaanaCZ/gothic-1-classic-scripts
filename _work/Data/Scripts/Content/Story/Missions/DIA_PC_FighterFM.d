@@ -25,7 +25,7 @@ func VOID Info_GornFM_EXIT_Info()
 	}
 	else
 	{
-		AI_Output (self, other,"Info_GornFM_EXIT_09_02"); //JeötÏ se uvidÌme.
+		AI_Output (self, other,"Info_GornFM_EXIT_09_02"); //Je≈°tƒõ se uvid√≠me.
 	};
 	
 	AI_StopProcessInfos	(self);
@@ -53,7 +53,7 @@ INSTANCE Info_GornFM_WAIT (C_INFO)
 	information	= Info_GornFM_WAIT_Info;
 	important	= 0;	
 	permanent	= 1;
-	description	= "HlÌdej tuhle pozici, j· obhlÈdnu situaci!";
+	description	= "Hl√≠dej tuhle pozici, j√° obhl√©dnu situaci!";
 };                       
 
 FUNC INT Info_GornFM_WAIT_Condition()
@@ -66,8 +66,8 @@ FUNC INT Info_GornFM_WAIT_Condition()
 
 func VOID Info_GornFM_WAIT_Info()
 {
-	AI_Output 			(hero,self,"Info_GornFM_WAIT_15_01"); //HlÌdej tuhle pozici, j· obhlÈdnu situaci!
-	AI_Output 			(self,hero,"Info_GornFM_WAIT_09_02"); //Dob¯e. PoËk·m u vchodu do dolu a ty dohlÌdni, aby se nikdo o nic nepokusil.
+	AI_Output 			(hero,self,"Info_GornFM_WAIT_15_01"); //Hl√≠dej tuhle pozici, j√° obhl√©dnu situaci!
+	AI_Output 			(self,hero,"Info_GornFM_WAIT_09_02"); //Dob≈ôe. Poƒçk√°m u vchodu do dolu a ty dohl√≠dni, aby se nikdo o nic nepokusil.
 
 	self.aivar[AIV_PARTYMEMBER] = FALSE;
 	Npc_ExchangeRoutine	(self,	"wait");
@@ -83,7 +83,7 @@ INSTANCE Info_GornFM_FOLLOW (C_INFO)
 	information	= Info_GornFM_FOLLOW_Info;
 	important	= 0;	
 	permanent	= 1;
-	description	= "PojÔ, pot¯ebuji tvou pomoc.";
+	description	= "Pojƒè, pot≈ôebuji tvou pomoc.";
 };                       
 
 FUNC INT Info_GornFM_FOLLOW_Condition()
@@ -96,8 +96,8 @@ FUNC INT Info_GornFM_FOLLOW_Condition()
 
 func VOID Info_GornFM_FOLLOW_Info()
 {
-	AI_Output 			(hero,self,"Info_GornFM_FOLLOW_15_01"); //PojÔ, pot¯ebuji tvou pomoc.
-	AI_Output 			(self,hero,"Info_GornFM_FOLLOW_09_02"); //KoneËnÏ se pohneme! Jdi prvnÌ, j· p˘jdu za tebou!
+	AI_Output 			(hero,self,"Info_GornFM_FOLLOW_15_01"); //Pojƒè, pot≈ôebuji tvou pomoc.
+	AI_Output 			(self,hero,"Info_GornFM_FOLLOW_09_02"); //Koneƒçnƒõ se pohneme! Jdi prvn√≠, j√° p≈Øjdu za tebou!
 
 	self.aivar[AIV_PARTYMEMBER] = TRUE;
 	Npc_ExchangeRoutine	(self,	"follow");

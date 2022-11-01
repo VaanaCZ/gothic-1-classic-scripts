@@ -45,10 +45,10 @@ FUNC int  Grd_264_Gardist_GARDEAUFNAHME_Condition()
 };
 func void  Grd_264_Gardist_GARDEAUFNAHME_Info()
 {
-	AI_Output (self, other,"Grd_264_Gardist_GARDEAUFNAHME_Info_07_01"); //Poslyš, to byla dobrá práce, cos provedl s tìmi èervy! Zaslouíš si své místo mezi stráemi!
-	AI_Output (self, other,"Grd_264_Gardist_GARDEAUFNAHME_Info_07_02"); //Jdi do Starého tábora a promluv si o tom s Thorusem!
+	AI_Output (self, other,"Grd_264_Gardist_GARDEAUFNAHME_Info_07_01"); //PoslyÅ¡, to byla dobrÃ¡ prÃ¡ce, cos provedl s tÄ›mi Äervy! ZaslouÅ¾Ã­Å¡ si svÃ© mÃ­sto mezi strÃ¡Å¾emi!
+	AI_Output (self, other,"Grd_264_Gardist_GARDEAUFNAHME_Info_07_02"); //Jdi do StarÃ©ho tÃ¡bora a promluv si o tom s Thorusem!
 	
 	Log_CreateTopic (GE_BecomeGuard,LOG_NOTE);
-	B_LogEntry (GE_BecomeGuard,"Jakmile pøinesu ta vajíèka, musím si promluvit s Thorusem. Moná mì pøijme ke stráím.");
+	B_LogEntry (GE_BecomeGuard,"Jakmile pÅ™inesu ta vajÃ­Äka, musÃ­m si promluvit s Thorusem. MoÅ¾nÃ¡ mÄ› pÅ™ijme ke strÃ¡Å¾Ã­m.");
 
 };

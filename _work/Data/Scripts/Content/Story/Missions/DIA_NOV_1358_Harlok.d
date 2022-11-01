@@ -34,7 +34,7 @@ instance  DIA_Harlok_FetchHarlok (C_INFO)
 	condition	= DIA_Harlok_FetchHarlok_Condition;
 	information	= DIA_Harlok_FetchHarlok_Info;
 	permanent	= 0;
-	description	= "Poslal mì Ghorim.";
+	description	= "Poslal mÄ› Ghorim.";
 };                       
 
 FUNC int  DIA_Harlok_FetchHarlok_Condition()
@@ -47,37 +47,37 @@ FUNC int  DIA_Harlok_FetchHarlok_Condition()
 
 FUNC VOID  DIA_Harlok_FetchHarlok_Info()
 {
-	AI_Output (other, self,"DIA_Harlok_FetchHarlok_15_00"); //Poslal mì Ghorim.
-	AI_Output (self, other,"DIA_Harlok_FetchHarlok_01_01"); //Coe?
+	AI_Output (other, self,"DIA_Harlok_FetchHarlok_15_00"); //Poslal mÄ› Ghorim.
+	AI_Output (self, other,"DIA_Harlok_FetchHarlok_01_01"); //CoÅ¾e?
 	Info_ClearChoices 	(DIA_Harlok_FetchHarlok);
 	Info_Addchoice 		(DIA_Harlok_FetchHarlok,DIALOG_BACK															,DIA_Harlok_FetchHarlok_BACK);
-	Info_Addchoice 		(DIA_Harlok_FetchHarlok,"Pohni svım zadkem k mísièùm drogy, nebo uvidíš.",DIA_Harlok_FetchHarlok_OrElse);
-	Info_Addchoice 		(DIA_Harlok_FetchHarlok,"Mám ti pøipomenout, e ho máš vystøídat.",DIA_Harlok_FetchHarlok_Please);
+	Info_Addchoice 		(DIA_Harlok_FetchHarlok,"Pohni svÃ½m zadkem k mÃ­siÄÅ¯m drogy, nebo uvidÃ­Å¡.",DIA_Harlok_FetchHarlok_OrElse);
+	Info_Addchoice 		(DIA_Harlok_FetchHarlok,"MÃ¡m ti pÅ™ipomenout, Å¾e ho mÃ¡Å¡ vystÅ™Ã­dat.",DIA_Harlok_FetchHarlok_Please);
 };
 
 func int DIA_Harlok_FetchHarlok_Please()
 {
-	AI_Output (other, self,"DIA_Harlok_FetchHarlok_Please_15_00"); //Mám ti pøipomenout, e ho máš vystøídat.
-	AI_Output (self, other,"DIA_Harlok_FetchHarlok_Please_01_01"); //To je od tebe hezké. Pøipomeò mi to znova, a budu spát, jo?
+	AI_Output (other, self,"DIA_Harlok_FetchHarlok_Please_15_00"); //MÃ¡m ti pÅ™ipomenout, Å¾e ho mÃ¡Å¡ vystÅ™Ã­dat.
+	AI_Output (self, other,"DIA_Harlok_FetchHarlok_Please_01_01"); //To je od tebe hezkÃ©. PÅ™ipomeÅˆ mi to znova, aÅ¾ budu spÃ¡t, jo?
 };
 
 func int DIA_Harlok_FetchHarlok_OrElse()
 {
-	AI_Output (other, self,"DIA_Harlok_FetchHarlok_OrElse_15_00"); //Pohni svım zadkem k mísièùm drogy, nebo uvidíš.
-	AI_Output (self, other,"DIA_Harlok_FetchHarlok_OrElse_01_01"); //ZKUS mì s tím ještì jednou otravovat, cucáku!
+	AI_Output (other, self,"DIA_Harlok_FetchHarlok_OrElse_15_00"); //Pohni svÃ½m zadkem k mÃ­siÄÅ¯m drogy, nebo uvidÃ­Å¡.
+	AI_Output (self, other,"DIA_Harlok_FetchHarlok_OrElse_01_01"); //ZKUS mÄ› s tÃ­m jeÅ¡tÄ› jednou otravovat, cucÃ¡ku!
 	
 	AI_StopProcessInfos(self);
 };
 
 func int DIA_Harlok_FetchHarlok_BACK()
 {
-	AI_Output (other, self,"DIA_Harlok_FetchHarlok_BACK_15_00"); //Dobøe, dobøe...
+	AI_Output (other, self,"DIA_Harlok_FetchHarlok_BACK_15_00"); //DobÅ™e, dobÅ™e...
 	Info_ClearChoices (DIA_Harlok_FetchHarlok);
 };
 
 
 // **************************************************
-//				Harlok NOCHMAL überzeugen
+//				Harlok NOCHMAL Ã¼berzeugen
 // **************************************************
 
 instance  DIA_Harlok_HarlokAgain (C_INFO)
@@ -87,7 +87,7 @@ instance  DIA_Harlok_HarlokAgain (C_INFO)
 	condition	= DIA_Harlok_HarlokAgain_Condition;
 	information	= DIA_Harlok_HarlokAgain_Info;
 	permanent	= 0;
-	description	= "Chtìl jsem ti jenom pøipomenout, e bys mìl ihned vystøídat svého kamaráda!";
+	description	= "ChtÄ›l jsem ti jenom pÅ™ipomenout, Å¾e bys mÄ›l ihned vystÅ™Ã­dat svÃ©ho kamarÃ¡da!";
 };                       
 
 FUNC int  DIA_Harlok_HarlokAgain_Condition()
@@ -100,10 +100,10 @@ FUNC int  DIA_Harlok_HarlokAgain_Condition()
 
 FUNC VOID  DIA_Harlok_HarlokAgain_Info()
 {
-	AI_Output (other, self,"DIA_Harlok_HarlokAgain_15_00"); //Chtìl jsem ti jenom pøipomenout, e bys mìl ihned vystøídat svého kamaráda!
-	AI_Output (self, other,"DIA_Harlok_HarlokAgain_01_01"); //Poslouchej! Øekl jsem ti, aby ses ztratil!
+	AI_Output (other, self,"DIA_Harlok_HarlokAgain_15_00"); //ChtÄ›l jsem ti jenom pÅ™ipomenout, Å¾e bys mÄ›l ihned vystÅ™Ã­dat svÃ©ho kamarÃ¡da!
+	AI_Output (self, other,"DIA_Harlok_HarlokAgain_01_01"); //Poslouchej! Å˜ekl jsem ti, aby ses ztratil!
 
-	B_LogEntry(CH1_GhorimsRelief,"Vypadá to, e je Harlok nejen línı, ale také tvrdohlavı. Snad bych mu mìl pomoci...");
+	B_LogEntry(CH1_GhorimsRelief,"VypadÃ¡ to, Å¾e je Harlok nejen lÃ­nÃ½, ale takÃ© tvrdohlavÃ½. Snad bych mu mÄ›l pomoci...");
 };
 
 
@@ -118,7 +118,7 @@ instance  DIA_Harlok_SendHarlok (C_INFO)
 	condition	= DIA_Harlok_SendHarlok_Condition;
 	information	= DIA_Harlok_SendHarlok_Info;
 	permanent	= 0;
-	description	= "Dobrá, nemáš pocit, e bys mìl taky nechat svého kamaráda odpoèinout?";
+	description	= "DobrÃ¡, nemÃ¡Å¡ pocit, Å¾e bys mÄ›l taky nechat svÃ©ho kamarÃ¡da odpoÄinout?";
 };                       
 
 FUNC int  DIA_Harlok_SendHarlok_Condition()
@@ -131,12 +131,12 @@ FUNC int  DIA_Harlok_SendHarlok_Condition()
 
 FUNC VOID  DIA_Harlok_SendHarlok_Info()
 {
-	AI_Output	(other, self,"DIA_Harlok_SendHarlok_15_00"); //Dobrá, nemáš pocit, e bys mìl taky nechat svého kamaráda odpoèinout?
-	AI_Output	(self, other,"DIA_Harlok_SendHarlok_01_01"); //Ty zatracenej otrapo! Proè se musíš plést do mıch vìcí?
-	AI_Output	(other, self,"DIA_Harlok_SendHarlok_15_02"); //Akorát tì chci vidìt pracovat.
-	AI_Output	(self, other,"DIA_Harlok_SendHarlok_01_03"); //Dobøe, dobøe - u jdu... cucáku!
+	AI_Output	(other, self,"DIA_Harlok_SendHarlok_15_00"); //DobrÃ¡, nemÃ¡Å¡ pocit, Å¾e bys mÄ›l taky nechat svÃ©ho kamarÃ¡da odpoÄinout?
+	AI_Output	(self, other,"DIA_Harlok_SendHarlok_01_01"); //Ty zatracenej otrapo! ProÄ se musÃ­Å¡ plÃ©st do mÃ½ch vÄ›cÃ­?
+	AI_Output	(other, self,"DIA_Harlok_SendHarlok_15_02"); //AkorÃ¡t tÄ› chci vidÄ›t pracovat.
+	AI_Output	(self, other,"DIA_Harlok_SendHarlok_01_03"); //DobÅ™e, dobÅ™e - uÅ¾ jdu... cucÃ¡ku!
 
-	B_LogEntry	(CH1_GhorimsRelief,"Harlokovi to koneènì došlo. Teï u vystøídá Ghorima.");
+	B_LogEntry	(CH1_GhorimsRelief,"Harlokovi to koneÄnÄ› doÅ¡lo. TeÄ uÅ¾ vystÅ™Ã­dÃ¡ Ghorima.");
 	B_GiveXP	(XP_SentHarlok);
 	
 	Npc_ExchangeRoutine(self,"START");
@@ -172,7 +172,7 @@ FUNC int  DIA_Harlok_Angry_Condition()
 
 FUNC VOID  DIA_Harlok_Angry_Info()
 {
-	AI_Output (self, other,"DIA_Harlok_Angry_01_00"); //Nech mì na pokoji! Vdy u dìlám...
+	AI_Output (self, other,"DIA_Harlok_Angry_01_00"); //Nech mÄ› na pokoji! VÅ¾dyÅ¥ uÅ¾ dÄ›lÃ¡m...
 
 	AI_StopProcessInfos	(self);
 };

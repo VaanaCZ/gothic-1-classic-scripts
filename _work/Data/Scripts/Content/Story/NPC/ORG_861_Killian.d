@@ -2,7 +2,7 @@ instance ORG_861_Killian (Npc_Default)
 {
 	//-------- primary data --------
 	
-	name =					"Mísiè drogy";
+	name =					"MÃ­siÄ drogy";
 	Npctype =				Npctype_Main;
 	guild =					GIL_ORG;      
 	level =					8;

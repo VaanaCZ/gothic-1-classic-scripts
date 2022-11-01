@@ -2,7 +2,7 @@ instance ORG_889_CoErpresser (Npc_Default)
 {
 	//-------- primary data --------
 	
-	name =					"Kumpán vydìraèe";
+	name =					"KumpÃ¡n vydÄ›raÄe";
 	Npctype =				Npctype_Ambient;
 	guild =					GIL_ORG;      
 	level =					11;

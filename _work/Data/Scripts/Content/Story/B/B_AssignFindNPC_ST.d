@@ -36,7 +36,7 @@ FUNC VOID Info_FindNPC_ST_Info()
 	VAR C_NPC YBerion;		YBerion	= Hlp_GetNpc(Gur_1200_Yberion);
 	if ( (YBerion.aivar[AIV_FINDABLE] == TRUE) && (Kapitel < 3) )
 	{
-		Info_AddChoice(Info_FindNPC_ST,"...Y´Beriona?", Info_FindNPC_ST_YBerion);
+		Info_AddChoice(Info_FindNPC_ST,"...YÂ´Beriona?", Info_FindNPC_ST_YBerion);
 	};
 };
 
@@ -65,26 +65,26 @@ FUNC VOID Info_FindNPC_ST_CorAngar()
 		{
 			if (self.voice == 2)
 			{
-				AI_Output(self,other,"Info_FindNPC_ST_CorAngar_02_01"); //Templáøské cvièištì je na druhé úrovni. Pøes den bývá obyèejnì tam.
+				AI_Output(self,other,"Info_FindNPC_ST_CorAngar_02_01"); //TemplÃ¡Å™skÃ© cviÄiÅ¡tÄ› je na druhÃ© Ãºrovni. PÅ™es den bÃ½vÃ¡ obyÄejnÄ› tam.
 			}
 			else if (self.voice == 3)
 			{
-				AI_Output(self,other,"Info_FindNPC_ST_CorAngar_03_01"); //Templáøské cvièištì je na druhé úrovni. Pøes den tam obyèejnì bývá.
+				AI_Output(self,other,"Info_FindNPC_ST_CorAngar_03_01"); //TemplÃ¡Å™skÃ© cviÄiÅ¡tÄ› je na druhÃ© Ãºrovni. PÅ™es den tam obyÄejnÄ› bÃ½vÃ¡.
 			}
 			else if (self.voice == 5)
 			{
-				AI_Output(self,other,"Info_FindNPC_ST_CorAngar_05_01"); //Templáøské cvièištì je na druhé úrovni. Pøes den tam obyèejnì bývá.
+				AI_Output(self,other,"Info_FindNPC_ST_CorAngar_05_01"); //TemplÃ¡Å™skÃ© cviÄiÅ¡tÄ› je na druhÃ© Ãºrovni. PÅ™es den tam obyÄejnÄ› bÃ½vÃ¡.
 			};
 		}
 		else if (self.guild == GIL_TPL) 
 		{
 			if (self.voice == 8)
 			{
-				AI_Output(self,other,"Info_FindNPC_ST_CorAngar_08_01"); //Templáøské cvièištì je na druhé úrovni. Pøes den tam obyèejnì bývá.
+				AI_Output(self,other,"Info_FindNPC_ST_CorAngar_08_01"); //TemplÃ¡Å™skÃ© cviÄiÅ¡tÄ› je na druhÃ© Ãºrovni. PÅ™es den tam obyÄejnÄ› bÃ½vÃ¡.
 			}
 			else if (self.voice == 13)
 			{
-				AI_Output(self,other,"Info_FindNPC_ST_CorAngar_13_01"); //Templáøské cvièištì je na druhé úrovni. Pøes den tam obyèejnì bývá.
+				AI_Output(self,other,"Info_FindNPC_ST_CorAngar_13_01"); //TemplÃ¡Å™skÃ© cviÄiÅ¡tÄ› je na druhÃ© Ãºrovni. PÅ™es den tam obyÄejnÄ› bÃ½vÃ¡.
 			};
 		};
 	};
@@ -112,26 +112,26 @@ FUNC VOID Info_FindNPC_ST_CorKalom()
 		{
 			if (self.voice == 2)
 			{
-				AI_Output(self,other,"Info_FindNPC_ST_CorKalom_02_01"); //Alchymistická dílna je na druhé úrovni, poblíž chrámového vrchu. Pracuje ve dne v noci.
+				AI_Output(self,other,"Info_FindNPC_ST_CorKalom_02_01"); //AlchymistickÃ¡ dÃ­lna je na druhÃ© Ãºrovni, poblÃ­Å¾ chrÃ¡movÃ©ho vrchu. Pracuje ve dne v noci.
 			}
 			else if (self.voice == 3)
 			{
-				AI_Output(self,other,"Info_FindNPC_ST_CorKalom_03_01"); //Alchymistická dílna je na druhé úrovni, poblíž chrámového vrchu. Pracuje ve dne v noci.
+				AI_Output(self,other,"Info_FindNPC_ST_CorKalom_03_01"); //AlchymistickÃ¡ dÃ­lna je na druhÃ© Ãºrovni, poblÃ­Å¾ chrÃ¡movÃ©ho vrchu. Pracuje ve dne v noci.
 			}
 			else if (self.voice == 5)
 			{
-				AI_Output(self,other,"Info_FindNPC_ST_CorKalom_05_01"); //Alchymistická dílna je na druhé úrovni, poblíž chrámového vrchu. Pracuje ve dne v noci.
+				AI_Output(self,other,"Info_FindNPC_ST_CorKalom_05_01"); //AlchymistickÃ¡ dÃ­lna je na druhÃ© Ãºrovni, poblÃ­Å¾ chrÃ¡movÃ©ho vrchu. Pracuje ve dne v noci.
 			};
 		}
 		else if (self.guild == GIL_TPL) 
 		{
 			if (self.voice == 8)
 			{
-				AI_Output(self,other,"Info_FindNPC_ST_CorKalom_08_01"); //Alchymistická dílna je na druhé úrovni, poblíž chrámového vrchu. Pracuje ve dne v noci.
+				AI_Output(self,other,"Info_FindNPC_ST_CorKalom_08_01"); //AlchymistickÃ¡ dÃ­lna je na druhÃ© Ãºrovni, poblÃ­Å¾ chrÃ¡movÃ©ho vrchu. Pracuje ve dne v noci.
 			}
 			else if (self.voice == 13)
 			{
-				AI_Output(self,other,"Info_FindNPC_ST_CorKalom_13_01"); //Alchymistická dílna je na druhé úrovni, poblíž chrámového vrchu. Pracuje ve dne v noci.
+				AI_Output(self,other,"Info_FindNPC_ST_CorKalom_13_01"); //AlchymistickÃ¡ dÃ­lna je na druhÃ© Ãºrovni, poblÃ­Å¾ chrÃ¡movÃ©ho vrchu. Pracuje ve dne v noci.
 			};
 		};
 	};
@@ -145,7 +145,7 @@ FUNC VOID Info_FindNPC_ST_CorKalom()
 
 FUNC VOID Info_FindNPC_ST_YBerion()
 {
-	AI_Output(other,self,"Info_FindNPC_ST_YBerion_15_00"); //Kde najdu Y´Beriona?
+	AI_Output(other,self,"Info_FindNPC_ST_YBerion_15_00"); //Kde najdu YÂ´Beriona?
 
 	VAR C_NPC YBerion;		YBerion = Hlp_GetNpc(Gur_1200_YBerion);
 	
@@ -159,26 +159,26 @@ FUNC VOID Info_FindNPC_ST_YBerion()
 		{
 			if (self.voice == 2)
 			{
-				AI_Output(self,other,"Info_FindNPC_ST_YBerion_02_01"); //Osvícený žije stranou, v bezpeèí chrámového vrchu. Vychází ven jen pøi výjimeèných pøíležitostech.
+				AI_Output(self,other,"Info_FindNPC_ST_YBerion_02_01"); //OsvÃ­cenÃ½ Å¾ije stranou, v bezpeÄÃ­ chrÃ¡movÃ©ho vrchu. VychÃ¡zÃ­ ven jen pÅ™i vÃ½jimeÄnÃ½ch pÅ™Ã­leÅ¾itostech.
 			}
 			else if (self.voice == 3)
 			{
-				AI_Output(self,other,"Info_FindNPC_ST_YBerion_03_01"); //Osvícený žije stranou, v bezpeèí chrámového vrchu. Vychází ven jen pøi výjimeèných pøíležitostech.
+				AI_Output(self,other,"Info_FindNPC_ST_YBerion_03_01"); //OsvÃ­cenÃ½ Å¾ije stranou, v bezpeÄÃ­ chrÃ¡movÃ©ho vrchu. VychÃ¡zÃ­ ven jen pÅ™i vÃ½jimeÄnÃ½ch pÅ™Ã­leÅ¾itostech.
 			}
 			else if (self.voice == 5)
 			{
-				AI_Output(self,other,"Info_FindNPC_ST_YBerion_05_01"); //Osvícený žije stranou, v bezpeèí chrámového vrchu. Vychází ven jen pøi výjimeèných pøíležitostech.
+				AI_Output(self,other,"Info_FindNPC_ST_YBerion_05_01"); //OsvÃ­cenÃ½ Å¾ije stranou, v bezpeÄÃ­ chrÃ¡movÃ©ho vrchu. VychÃ¡zÃ­ ven jen pÅ™i vÃ½jimeÄnÃ½ch pÅ™Ã­leÅ¾itostech.
 			};
 		}
 		else if (self.guild == GIL_TPL) 
 		{
 			if (self.voice == 8)
 			{
-				AI_Output(self,other,"Info_FindNPC_ST_YBerion_08_01"); //Osvícený žije stranou, v bezpeèí chrámového vrchu. Vychází ven jen pøi výjimeèných pøíležitostech.
+				AI_Output(self,other,"Info_FindNPC_ST_YBerion_08_01"); //OsvÃ­cenÃ½ Å¾ije stranou, v bezpeÄÃ­ chrÃ¡movÃ©ho vrchu. VychÃ¡zÃ­ ven jen pÅ™i vÃ½jimeÄnÃ½ch pÅ™Ã­leÅ¾itostech.
 			}
 			else if (self.voice == 13)
 			{
-				AI_Output(self,other,"Info_FindNPC_ST_YBerion_13_01"); //Osvícený žije stranou, v bezpeèí chrámového vrchu. Vychází ven jen pøi výjimeèných pøíležitostech.
+				AI_Output(self,other,"Info_FindNPC_ST_YBerion_13_01"); //OsvÃ­cenÃ½ Å¾ije stranou, v bezpeÄÃ­ chrÃ¡movÃ©ho vrchu. VychÃ¡zÃ­ ven jen pÅ™i vÃ½jimeÄnÃ½ch pÅ™Ã­leÅ¾itostech.
 			};
 		};
 	};

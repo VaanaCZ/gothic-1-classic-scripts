@@ -23,7 +23,7 @@ FUNC int  GUR_1201_CorKalom_FIRST_Condition()
 
 FUNC void  GUR_1201_CorKalom_FIRST_Info()
 {
-	AI_Output (self, other,"GUR_1201_CorKalom_FIRST_10_00"); //Co chceš?
+	AI_Output (self, other,"GUR_1201_CorKalom_FIRST_10_00"); //Co chceÅ¡?
 	Kalom_TalkedTo = TRUE;
 };  
 
@@ -38,7 +38,7 @@ instance  GUR_1201_CorKalom_WannaJoin (C_INFO)
 	condition		= GUR_1201_CorKalom_WannaJoin_Condition;
 	information		= GUR_1201_CorKalom_WannaJoin_Info;
 	permanent		= 0;
-	description		= "Chci se pøidat k Bratrstvu."; 
+	description		= "Chci se pÅ™idat k Bratrstvu."; 
 };
 
 FUNC int  GUR_1201_CorKalom_WannaJoin_Condition()
@@ -52,15 +52,15 @@ FUNC int  GUR_1201_CorKalom_WannaJoin_Condition()
 
 FUNC void  GUR_1201_CorKalom_WannaJoin_Info()
 {
-	AI_Output (other, self,"GUR_1201_CorKalom_WannaJoin_15_00"); //Chci se pøidat k Bratrstvu.
-	AI_Output (other, self,"GUR_1201_CorKalom_WannaJoin_15_01"); //Slyšel jsem, e jsi vedoucí novicù a e rozhoduješ o tom, kdo se mùe pøidat.
-	AI_Output (self, other,"GUR_1201_CorKalom_WannaJoin_10_02"); //Nemám èas! Mé experimenty jsou pøíliš dùleité, ne abych ztrácel èas s novımi novici.
-	AI_Output (self, other,"GUR_1201_CorKalom_WannaJoin_10_03"); //Budu spoléhat na názor Baalù. A øeknou, e jsi hoden nosit roucho novice, pøijï znovu.
+	AI_Output (other, self,"GUR_1201_CorKalom_WannaJoin_15_00"); //Chci se pÅ™idat k Bratrstvu.
+	AI_Output (other, self,"GUR_1201_CorKalom_WannaJoin_15_01"); //SlyÅ¡el jsem, Å¾e jsi vedoucÃ­ novicÅ¯ a Å¾e rozhodujeÅ¡ o tom, kdo se mÅ¯Å¾e pÅ™idat.
+	AI_Output (self, other,"GUR_1201_CorKalom_WannaJoin_10_02"); //NemÃ¡m Äas! MÃ© experimenty jsou pÅ™Ã­liÅ¡ dÅ¯leÅ¾itÃ©, neÅ¾ abych ztrÃ¡cel Äas s novÃ½mi novici.
+	AI_Output (self, other,"GUR_1201_CorKalom_WannaJoin_10_03"); //Budu spolÃ©hat na nÃ¡zor BaalÅ¯. AÅ¾ Å™eknou, Å¾e jsi hoden nosit roucho novice, pÅ™ijÄ znovu.
 	AI_StopProcessInfos	(self);
 
 	Log_CreateTopic		(CH1_JoinPsi,	LOG_MISSION);
 	Log_SetTopicStatus	(CH1_JoinPsi,	LOG_RUNNING);
-	B_LogEntry			(CH1_JoinPsi,"Cor Kalom mì nechá pøidat se k Bratrstvu, pokud se mi podaøí pøesvìdèit ètyøi z Baalù, aby se za mì pøimluvili.");
+	B_LogEntry			(CH1_JoinPsi,"Cor Kalom mÄ› nechÃ¡ pÅ™idat se k Bratrstvu, pokud se mi podaÅ™Ã­ pÅ™esvÄ›dÄit ÄtyÅ™i z BaalÅ¯, aby se za mÄ› pÅ™imluvili.");
 };  
 
 // ****************************************
@@ -74,7 +74,7 @@ instance  GUR_1201_CorKalom_Recipe (C_INFO)
 	condition		= GUR_1201_CorKalom_Recipe_Condition;
 	information		= GUR_1201_CorKalom_Recipe_Info;
 	permanent		= 0;
-	description		= "Jeden z obchodníkù ze Starého tábora by chtìl recept na hojivı lektvar."; 
+	description		= "Jeden z obchodnÃ­kÅ¯ ze StarÃ©ho tÃ¡bora by chtÄ›l recept na hojivÃ½ lektvar."; 
 };
 
 FUNC int  GUR_1201_CorKalom_Recipe_Condition()
@@ -88,10 +88,10 @@ FUNC int  GUR_1201_CorKalom_Recipe_Condition()
 
 FUNC void  GUR_1201_CorKalom_Recipe_Info()
 {
-	AI_Output (other, self,"GUR_1201_CorKalom_Recipe_15_00"); //Jeden z obchodníkù ze Starého tábora by chtìl recept na hojivı lektvar.
-	AI_Output (self, other,"GUR_1201_CorKalom_Recipe_10_01"); //Mé recepty nejsou na prodej!
+	AI_Output (other, self,"GUR_1201_CorKalom_Recipe_15_00"); //Jeden z obchodnÃ­kÅ¯ ze StarÃ©ho tÃ¡bora by chtÄ›l recept na hojivÃ½ lektvar.
+	AI_Output (self, other,"GUR_1201_CorKalom_Recipe_10_01"); //MÃ© recepty nejsou na prodej!
 
-	B_LogEntry	(CH1_KalomsRecipe,"Cor Kalom mi nedá ten recept. V jeho dílnì jsou však truhlice... a vypadá, e bude mít docela rušno...");
+	B_LogEntry	(CH1_KalomsRecipe,"Cor Kalom mi nedÃ¡ ten recept. V jeho dÃ­lnÄ› jsou vÅ¡ak truhlice... a vypadÃ¡, Å¾e bude mÃ­t docela ruÅ¡no...");
 };  
 
 // ****************************************
@@ -105,7 +105,7 @@ instance  GUR_1201_CorKalom_Experimente (C_INFO)
 	condition		= GUR_1201_CorKalom_Experimente_Condition;
 	information		= GUR_1201_CorKalom_Experimente_Info;
 	permanent		= 1;
-	description		= "Jakı druh experimentù provádíš?"; 
+	description		= "JakÃ½ druh experimentÅ¯ provÃ¡dÃ­Å¡?"; 
 };
 
 FUNC int  GUR_1201_CorKalom_Experimente_Condition()
@@ -119,8 +119,8 @@ FUNC int  GUR_1201_CorKalom_Experimente_Condition()
 
 FUNC void  GUR_1201_CorKalom_Experimente_Info()
 {
-	AI_Output (other, self,"GUR_1201_CorKalom_Experimente_15_00"); //Jakı druh experimentù provádíš?
-	AI_Output (self, other,"GUR_1201_CorKalom_Experimente_10_01"); //Mé vızkumy jsou na takové úrovni, e bys jim sotva porozumìl, chlapèe. Tak mì pøestaò zdrovat!
+	AI_Output (other, self,"GUR_1201_CorKalom_Experimente_15_00"); //JakÃ½ druh experimentÅ¯ provÃ¡dÃ­Å¡?
+	AI_Output (self, other,"GUR_1201_CorKalom_Experimente_10_01"); //MÃ© vÃ½zkumy jsou na takovÃ© Ãºrovni, Å¾e bys jim sotva porozumÄ›l, chlapÄe. Tak mÄ› pÅ™estaÅˆ zdrÅ¾ovat!
 };  
 
 // ****************************************
@@ -134,7 +134,7 @@ instance  GUR_1201_CorKalom_BRINGWEED (C_INFO)
 	condition		= GUR_1201_CorKalom_BRINGWEED_Condition;
 	information		= GUR_1201_CorKalom_BRINGWEED_Info;
 	permanent		= 1;
-	description		= "Nesu denní sklizeò drogy z bain!"; 
+	description		= "Nesu dennÃ­ sklizeÅˆ drogy z baÅ¾in!"; 
 };
 
 FUNC int  GUR_1201_CorKalom_BRINGWEED_Condition()
@@ -147,21 +147,21 @@ FUNC int  GUR_1201_CorKalom_BRINGWEED_Condition()
 
 FUNC void  GUR_1201_CorKalom_BRINGWEED_Info()
 {
-	AI_Output				(other, self,"GUR_1201_CorKalom_BRINGWEED_15_00"); //Nesu denní sklizeò drogy z bain!
+	AI_Output				(other, self,"GUR_1201_CorKalom_BRINGWEED_15_00"); //Nesu dennÃ­ sklizeÅˆ drogy z baÅ¾in!
 
 	if	(Npc_HasItems(hero, ItMi_Plants_Swampherb_01) < 100)
 	{
-		AI_Output			(self, other,"GUR_1201_CorKalom_BRINGWEED_10_01"); //A TOMUHLE ty øíkáš nìjaké mnoství??? Oèekávám CELOU sklizeò, co znamená aspoò 100 lodyh!!!
+		AI_Output			(self, other,"GUR_1201_CorKalom_BRINGWEED_10_01"); //A TOMUHLE ty Å™Ã­kÃ¡Å¡ nÄ›jakÃ© mnoÅ¾stvÃ­??? OÄekÃ¡vÃ¡m CELOU sklizeÅˆ, coÅ¾ znamenÃ¡ aspoÅˆ 100 lodyh!!!
 		AI_StopProcessInfos	(self);
 	}
 	else
 	{
-		AI_Output			(self, other,"GUR_1201_CorKalom_BRINGWEED_10_02"); //Ach jo, dej mi to. A teï se mi ztra z oèí!
+		AI_Output			(self, other,"GUR_1201_CorKalom_BRINGWEED_10_02"); //Ach jo, dej mi to. A teÄ se mi ztraÅ¥ z oÄÃ­!
 
 		B_GiveInvItems	(hero, self, ItMi_Plants_Swampherb_01, 100);
         Npc_RemoveInvItems (self, ItMi_Plants_Swampherb_01, 100);
 		BaalOrun_FetchWeed = LOG_SUCCESS;
-		B_LogEntry			(CH1_DeliverWeed,"Cor Kalom byl jako obvykle nesnesitelnı, kdy jsem mu pøedával sklizeò drogy z bain.");
+		B_LogEntry			(CH1_DeliverWeed,"Cor Kalom byl jako obvykle nesnesitelnÃ½, kdyÅ¾ jsem mu pÅ™edÃ¡val sklizeÅˆ drogy z baÅ¾in.");
 		Log_SetTopicStatus	(CH1_DeliverWeed,	LOG_SUCCESS);
 		B_GiveXP			(XP_DeliveredWeedHarvest);
 		
@@ -181,7 +181,7 @@ instance  GUR_1201_CorKalom_Crawlerzangen (C_INFO)
 	condition		= GUR_1201_CorKalom_Crawlerzangen_Condition;
 	information		= GUR_1201_CorKalom_Crawlerzangen_Info;
 	permanent		= 1;
-	description		= "Mám pro tebe èelisti èervù..."; 
+	description		= "MÃ¡m pro tebe Äelisti ÄervÅ¯..."; 
 };
 
 FUNC int  GUR_1201_CorKalom_Crawlerzangen_Condition()
@@ -194,23 +194,23 @@ FUNC int  GUR_1201_CorKalom_Crawlerzangen_Condition()
 
 FUNC void  GUR_1201_CorKalom_Crawlerzangen_Info()
 {
-	AI_Output (other, self,"GUR_1201_CorKalom_Crawlerzangen_15_00"); //Mám pro tebe èelisti èervù...
+	AI_Output (other, self,"GUR_1201_CorKalom_Crawlerzangen_15_00"); //MÃ¡m pro tebe Äelisti ÄervÅ¯...
 	
 	if (Npc_HasItems(other,ItAt_Crawler_01) > 9)
 	{
-		AI_Output (self, other,"GUR_1201_CorKalom_Crawlerzangen_10_01"); //Vıbornì. Dám ti za nì pár svıch nejlepších lektvarù.
+		AI_Output (self, other,"GUR_1201_CorKalom_Crawlerzangen_10_01"); //VÃ½bornÄ›. DÃ¡m ti za nÄ› pÃ¡r svÃ½ch nejlepÅ¡Ã­ch lektvarÅ¯.
 		CreateInvItems(self, ItFo_Potion_Mana_03, 3);
 		B_GiveInvItems(self, hero,ItFo_Potion_Mana_03, 3);
 	}
 	else if (Npc_HasItems(other,ItAt_Crawler_01) > 2)
 	{
-		AI_Output (self, other,"GUR_1201_CorKalom_Crawlerzangen_10_02"); //Dobøe. Dám ti za to pár lektvarù.
+		AI_Output (self, other,"GUR_1201_CorKalom_Crawlerzangen_10_02"); //DobÅ™e. DÃ¡m ti za to pÃ¡r lektvarÅ¯.
 		CreateInvItems(self, ItFo_Potion_Mana_02, 2);
 		B_GiveInvItems(self, hero,ItFo_Potion_Mana_02, 2);
 	}
 	else
 	{
-		AI_Output (self, other,"GUR_1201_CorKalom_Crawlerzangen_10_03"); //Hmm. To je všechno? Tady je lektvar many a zmiz.
+		AI_Output (self, other,"GUR_1201_CorKalom_Crawlerzangen_10_03"); //Hmm. To je vÅ¡echno? Tady je lektvar many a zmiz.
 		CreateInvItems(self, ItFo_Potion_Mana_01, 1);
 		B_GiveInvItems(self, hero,ItFo_Potion_Mana_01, 1);
 		AI_StopProcessInfos(self);
@@ -233,7 +233,7 @@ instance  GUR_1201_CorKalom_JoinPSI (C_INFO)
 	condition		= GUR_1201_CorKalom_JoinPSI_Condition;
 	information		= GUR_1201_CorKalom_JoinPSI_Info;
 	permanent		= 1;
-	description		= "Myslím, e jsem pøesvìdèil Baaly!"; 
+	description		= "MyslÃ­m, Å¾e jsem pÅ™esvÄ›dÄil Baaly!"; 
 };
 
 FUNC int  GUR_1201_CorKalom_JoinPSI_Condition()
@@ -248,35 +248,35 @@ FUNC int  GUR_1201_CorKalom_JoinPSI_Condition()
 func void  GUR_1201_CorKalom_JoinPSI_Info()
 {
 	var int counter;
-	counter = 0;	//Counter löschen, da er noch den Stand der letzten Analyse hat!
+	counter = 0;	//Counter lÃ¶schen, da er noch den Stand der letzten Analyse hat!
 	
-	AI_Output (other, self,"GUR_1201_CorKalom_JoinPSI_15_00"); //Myslím, e jsem pøesvìdèil Baaly!
+	AI_Output (other, self,"GUR_1201_CorKalom_JoinPSI_15_00"); //MyslÃ­m, Å¾e jsem pÅ™esvÄ›dÄil Baaly!
 	
 	if (Npc_KnowsInfo(hero,DIA_BaalOrun_GotWeed))
 	{
-		AI_Output (other, self,"GUR_1201_CorKalom_JoinPSI_15_01"); //Baal Orun øíká, e jsem uspìl jako dobrı sluebník Spáèe.
+		AI_Output (other, self,"GUR_1201_CorKalom_JoinPSI_15_01"); //Baal Orun Å™Ã­kÃ¡, Å¾e jsem uspÄ›l jako dobrÃ½ sluÅ¾ebnÃ­k SpÃ¡Äe.
 		counter = counter + 1;
 	};
 	if (Npc_KnowsInfo(hero,	DIA_BaalCadar_SleepSpell))
 	{
-		AI_Output (self, other,"GUR_1201_CorKalom_JoinPSI_10_02"); //Pokraèuj...
-		AI_Output (other, self,"GUR_1201_CorKalom_JoinPSI_15_03"); //Baal Cadar mì povauje za vnímavého áka.
+		AI_Output (self, other,"GUR_1201_CorKalom_JoinPSI_10_02"); //PokraÄuj...
+		AI_Output (other, self,"GUR_1201_CorKalom_JoinPSI_15_03"); //Baal Cadar mÄ› povaÅ¾uje za vnÃ­mavÃ©ho Å¾Ã¡ka.
 		counter = counter + 1;
 	};
 	if (Npc_KnowsInfo(hero,	DIA_BaalNamib_FirstTalk))
 	{
-		AI_Output (other, self,"GUR_1201_CorKalom_JoinPSI_15_04"); //Baal Namib mì povauje za pravovìrce.
+		AI_Output (other, self,"GUR_1201_CorKalom_JoinPSI_15_04"); //Baal Namib mÄ› povaÅ¾uje za pravovÄ›rce.
 		counter = counter + 1;
 	};
 	if (Npc_KnowsInfo(hero,	DIA_BaalTyon_Vision))
 	{
-		AI_Output (other, self,"GUR_1201_CorKalom_JoinPSI_15_05"); //Díky mnì mìl Baal Tyon vidinu.
+		AI_Output (other, self,"GUR_1201_CorKalom_JoinPSI_15_05"); //DÃ­ky mnÄ› mÄ›l Baal Tyon vidinu.
 		counter = counter + 1;
 	};
 	if (Npc_KnowsInfo(hero,	DIA_BaalTondral_SendToKalom))
 	{
 		AI_Output (self, other,"GUR_1201_CorKalom_JoinPSI_10_06"); //No a?
-		AI_Output (other, self,"GUR_1201_CorKalom_JoinPSI_15_07"); //Baal Tondral øíká, e bych mìl obdret roucho. Pøivedl jsem mu nového áka.
+		AI_Output (other, self,"GUR_1201_CorKalom_JoinPSI_15_07"); //Baal Tondral Å™Ã­kÃ¡, Å¾e bych mÄ›l obdrÅ¾et roucho. PÅ™ivedl jsem mu novÃ©ho Å¾Ã¡ka.
 		counter = counter + 1;
 	};
 	//-------------------------------------	
@@ -284,8 +284,8 @@ func void  GUR_1201_CorKalom_JoinPSI_Info()
 	{	
 		if (counter >= 4)
 		{
-			AI_Output			(self, other,"GUR_1201_CorKalom_JoinPSI_10_08"); //Dobøe. Jestli máš podporu Baalù, tak mi to staèí.
-			AI_Output			(self, other,"GUR_1201_CorKalom_JoinPSI_10_09"); //Tady, vem si to. A teï bì a sna se bıt uiteènı.
+			AI_Output			(self, other,"GUR_1201_CorKalom_JoinPSI_10_08"); //DobÅ™e. Jestli mÃ¡Å¡ podporu BaalÅ¯, tak mi to staÄÃ­.
+			AI_Output			(self, other,"GUR_1201_CorKalom_JoinPSI_10_09"); //Tady, vem si to. A teÄ bÄ›Å¾ a snaÅ¾ se bÃ½t uÅ¾iteÄnÃ½.
 	
 			// Ernennung zum Novizen
 			CreateInvItem		(self, NOV_ARMOR_M);
@@ -293,19 +293,19 @@ func void  GUR_1201_CorKalom_JoinPSI_Info()
 			AI_EquipBestArmor	(other);
 			Npc_SetTrueGuild	(hero,GIL_NOV);
 			hero.guild = GIL_NOV;
-			B_LogEntry			(CH1_JoinPsi,"Dnes mì Cor Kalom pøijal jako novice. Byl jako obvykle nesnesitelnı, ale koneènì patøím mezi Bratrstvo Spáèe z Tábora v bainách.");
-			B_LogEntry			(GE_TraderPSI,"Dostanu od Baala Namiba lepší NOVICKOU ZBROJ.");
+			B_LogEntry			(CH1_JoinPsi,"Dnes mÄ› Cor Kalom pÅ™ijal jako novice. Byl jako obvykle nesnesitelnÃ½, ale koneÄnÄ› patÅ™Ã­m mezi Bratrstvo SpÃ¡Äe z TÃ¡bora v baÅ¾inÃ¡ch.");
+			B_LogEntry			(GE_TraderPSI,"Dostanu od Baala Namiba lepÅ¡Ã­ NOVICKOU ZBROJ.");
 			Log_SetTopicStatus	(CH1_JoinPsi,	LOG_SUCCESS);
 			B_GiveXP			(XP_BecomeNovice);
 	
 			// Canceln der anderen Aufnahmen
 			Log_CreateTopic		(CH1_JoinOC,	LOG_MISSION);
 			Log_SetTopicStatus	(CH1_JoinOC,	LOG_FAILED);
-			B_LogEntry			(CH1_JoinOC,"Protoe jsem se nakonec rozhodl pøidat k Bratrstvu Spáèe Tábora v bainách, nemohu se stát jedním z Gomezovıch Stínù.");
+			B_LogEntry			(CH1_JoinOC,"ProtoÅ¾e jsem se nakonec rozhodl pÅ™idat k Bratrstvu SpÃ¡Äe TÃ¡bora v baÅ¾inÃ¡ch, nemohu se stÃ¡t jednÃ­m z GomezovÃ½ch StÃ­nÅ¯.");
 			
 			Log_CreateTopic		(CH1_JoinNC,	LOG_MISSION);
 			Log_SetTopicStatus	(CH1_JoinNC,	LOG_FAILED);
-			B_LogEntry			(CH1_JoinNC,"Nemohu se u pøidat k tlupì Nového tábora, protoe moje nové místo je teï v Bratrstvu Spáèe.");
+			B_LogEntry			(CH1_JoinNC,"Nemohu se uÅ¾ pÅ™idat k tlupÄ› NovÃ©ho tÃ¡bora, protoÅ¾e moje novÃ© mÃ­sto je teÄ v Bratrstvu SpÃ¡Äe.");
 			
 			//Log_SetTopicStatus	(CH1_LostNek,	LOG_FAILED);
 			//Log_SetTopicStatus	(CH1_FiskNewDealer,	LOG_FAILED);
@@ -316,8 +316,8 @@ func void  GUR_1201_CorKalom_JoinPSI_Info()
 		else
 		{
 			AI_Output (self, other,"GUR_1201_CorKalom_JoinPSI_NOT_10_00"); //No a?
-			AI_Output (other, self,"GUR_1201_CorKalom_JoinPSI_NOT_15_01"); //To bylo všechno.
-			AI_Output (self, other,"GUR_1201_CorKalom_JoinPSI_NOT_10_02"); //Okrádáš mì o drahocennı èas! Vra se, a ètyøi z Baalù rozhodnou, e jsi zpùsobilı.
+			AI_Output (other, self,"GUR_1201_CorKalom_JoinPSI_NOT_15_01"); //To bylo vÅ¡echno.
+			AI_Output (self, other,"GUR_1201_CorKalom_JoinPSI_NOT_10_02"); //OkrÃ¡dÃ¡Å¡ mÄ› o drahocennÃ½ Äas! VraÅ¥ se, aÅ¾ ÄtyÅ™i z BaalÅ¯ rozhodnou, Å¾e jsi zpÅ¯sobilÃ½.
 		};
 	}
 	else
@@ -337,7 +337,7 @@ instance  GUR_1201_CorKalom_JoinPSI2 (C_INFO)
 	condition		= GUR_1201_CorKalom_JoinPSI2_Condition;
 	information		= GUR_1201_CorKalom_JoinPSI2_Info;
 	permanent		= 0;
-	description		= "To bylo všechno? ádné pøivítání, nic?"; 
+	description		= "To bylo vÅ¡echno? Å½Ã¡dnÃ© pÅ™ivÃ­tÃ¡nÃ­, nic?"; 
 };
 
 FUNC int  GUR_1201_CorKalom_JoinPSI2_Condition()
@@ -350,11 +350,11 @@ FUNC int  GUR_1201_CorKalom_JoinPSI2_Condition()
 
 func void  GUR_1201_CorKalom_JoinPSI2_Info()
 {
-	AI_Output			(other, self,"GUR_1201_CorKalom_JoinPSI_15_10"); //To bylo všechno? ádné pøivítání, nic?
-	AI_Output			(self, other,"GUR_1201_CorKalom_JoinPSI_10_11"); //Vítej.
-	AI_Output			(other, self,"GUR_1201_CorKalom_JoinPSI_15_12"); //To zní líp.
-	AI_Output			(self, other,"GUR_1201_CorKalom_JoinPSI_10_13"); //Nemotej se tady! Dìlej nìco! Vezmi tuhle drogu a dones ji Gomezovi do Starého tábora.
-	AI_Output			(self, other,"GUR_1201_CorKalom_JoinPSI_10_14"); //Kdy tì jeho posluhovaèi nebudou chtít pustit, øekni, e tì posílá Cor Kalom.
+	AI_Output			(other, self,"GUR_1201_CorKalom_JoinPSI_15_10"); //To bylo vÅ¡echno? Å½Ã¡dnÃ© pÅ™ivÃ­tÃ¡nÃ­, nic?
+	AI_Output			(self, other,"GUR_1201_CorKalom_JoinPSI_10_11"); //VÃ­tej.
+	AI_Output			(other, self,"GUR_1201_CorKalom_JoinPSI_15_12"); //To znÃ­ lÃ­p.
+	AI_Output			(self, other,"GUR_1201_CorKalom_JoinPSI_10_13"); //Nemotej se tady! DÄ›lej nÄ›co! Vezmi tuhle drogu a dones ji Gomezovi do StarÃ©ho tÃ¡bora.
+	AI_Output			(self, other,"GUR_1201_CorKalom_JoinPSI_10_14"); //KdyÅ¾ tÄ› jeho posluhovaÄi nebudou chtÃ­t pustit, Å™ekni, Å¾e tÄ› posÃ­lÃ¡ Cor Kalom.
 	
 	CreateInvItems		(self, itmijoint_3, 30);
 	B_GiveInvItems      (self, hero, itmijoint_3, 30);
@@ -362,9 +362,9 @@ func void  GUR_1201_CorKalom_JoinPSI2_Info()
 	KALOM_KRAUTBOTE = LOG_RUNNING;
 	Log_CreateTopic		(CH1_KrautBote,	LOG_MISSION);
 	Log_SetTopicStatus	(CH1_KrautBote,	LOG_RUNNING);
-	B_LogEntry			(CH1_KrautBote,"Cor Kalom mì vyslal s dodávkou drogy z bain za Gomezem do Starého tábora."); 
+	B_LogEntry			(CH1_KrautBote,"Cor Kalom mÄ› vyslal s dodÃ¡vkou drogy z baÅ¾in za Gomezem do StarÃ©ho tÃ¡bora."); 
 	
-	AI_Output			(self, other,"GUR_1201_CorKalom_JoinPSI_10_15"); //Coe, ty jsi ještì tady?
+	AI_Output			(self, other,"GUR_1201_CorKalom_JoinPSI_10_15"); //CoÅ¾e, ty jsi jeÅ¡tÄ› tady?
 	AI_StopProcessInfos	(self);
 };  
 
@@ -382,7 +382,7 @@ INSTANCE Info_Kalom_DrugMonopol (C_INFO)
 	condition	= Info_Kalom_DrugMonopol_Condition;
 	information	= Info_Kalom_DrugMonopol_Info;
 	permanent 	= 0; 
-	description = "Máš pro mì ještì jinı úkol?";
+	description = "MÃ¡Å¡ pro mÄ› jeÅ¡tÄ› jinÃ½ Ãºkol?";
 };
 
 
@@ -396,18 +396,18 @@ FUNC INT Info_Kalom_DrugMonopol_Condition()
 
 FUNC VOID Info_Kalom_DrugMonopol_Info()
 {
-	AI_Output (other, self,"Mis_1_Psi_Kalom_DrugMonopol_15_00"); //Máš pro mì ještì jinı úkol?
-	AI_Output (self, other,"Mis_1_Psi_Kalom_DrugMonopol_10_01"); //V Novém táboøe je malá skupinka lidí, kteøí zaèali vyrábìt svoji vlastní drogu z bain.
+	AI_Output (other, self,"Mis_1_Psi_Kalom_DrugMonopol_15_00"); //MÃ¡Å¡ pro mÄ› jeÅ¡tÄ› jinÃ½ Ãºkol?
+	AI_Output (self, other,"Mis_1_Psi_Kalom_DrugMonopol_10_01"); //V NovÃ©m tÃ¡boÅ™e je malÃ¡ skupinka lidÃ­, kteÅ™Ã­ zaÄali vyrÃ¡bÄ›t svoji vlastnÃ­ drogu z baÅ¾in.
 	//AI_Output (self, other,"Mis_1_Psi_Kalom_DrugMonopol_10_02"); //Sie wollen unsere Kunden im Neuen Lager abwerben, Das werden wir nicht zulassen.
-	AI_Output (self, other,"Mis_1_Psi_Kalom_DrugMonopol_10_03"); //Dohlédni na to, aby tu produkci ukonèili.
+	AI_Output (self, other,"Mis_1_Psi_Kalom_DrugMonopol_10_03"); //DohlÃ©dni na to, aby tu produkci ukonÄili.
 	AI_Output (other, self,"Mis_1_Psi_Kalom_DrugMonopol_15_04"); //Jak...
-	AI_Output (self, other,"Mis_1_Psi_Kalom_DrugMonopol_10_05"); //Neobtìuj mì s podrobnostmi!
-	AI_Output (self, other,"Mis_1_Psi_Kalom_DrugMonopol_10_06"); //Tábor míchaèù drogy musí bıt nìkde mimo Novı tábor. Víš, co máš dìlat.
+	AI_Output (self, other,"Mis_1_Psi_Kalom_DrugMonopol_10_05"); //NeobtÄ›Å¾uj mÄ› s podrobnostmi!
+	AI_Output (self, other,"Mis_1_Psi_Kalom_DrugMonopol_10_06"); //TÃ¡bor mÃ­chaÄÅ¯ drogy musÃ­ bÃ½t nÄ›kde mimo NovÃ½ tÃ¡bor. VÃ­Å¡, co mÃ¡Å¡ dÄ›lat.
 
 	Kalom_DrugMonopol = LOG_RUNNING;
 	Log_CreateTopic		(CH1_DrugMonopol,	LOG_MISSION);
 	Log_SetTopicStatus	(CH1_DrugMonopol,	LOG_RUNNING);
-	B_LogEntry			(CH1_DrugMonopol,"Cor Kalom chce, abych zastavil konkurenèní produkci drogy v Novém táboøe. Nevím pøesnì kde mám hledat, ale snad bych mohl zaèít PØED Novım táborem.");
+	B_LogEntry			(CH1_DrugMonopol,"Cor Kalom chce, abych zastavil konkurenÄnÃ­ produkci drogy v NovÃ©m tÃ¡boÅ™e. NevÃ­m pÅ™esnÄ› kde mÃ¡m hledat, ale snad bych mohl zaÄÃ­t PÅ˜ED NovÃ½m tÃ¡borem.");
 
 	var C_NPC Renyu; 	
 	Renyu = Hlp_GetNpc(ORG_860_Renyu);
@@ -428,7 +428,7 @@ INSTANCE Info_Kalom_Success (C_INFO)
 	condition	= Info_Kalom_Success_Condition;
 	information	= Info_Kalom_Success_Info;
 	permanent	= 1;
-	description = "Co se tıká produkce drogy v Novém táboøe...";
+	description = "Co se tÃ½kÃ¡ produkce drogy v NovÃ©m tÃ¡boÅ™e...";
 };
 
 
@@ -446,30 +446,30 @@ FUNC VOID Info_Kalom_Success_Info()
 	var C_NPC Renyu; 	Renyu = Hlp_GetNpc(ORG_860_Renyu);
 	var C_NPC Jacko; 	Jacko = Hlp_GetNpc(ORG_862_Jacko);
 		
-	AI_Output (other, self,"Mis_1_Psi_Kalom_Success_15_00"); //Co se tıká produkce drogy v Novém táboøe...
+	AI_Output (other, self,"Mis_1_Psi_Kalom_Success_15_00"); //Co se tÃ½kÃ¡ produkce drogy v NovÃ©m tÃ¡boÅ™e...
 	AI_Output (self, other,"Mis_1_Psi_Kalom_Success_10_01"); //Ano?
 	
 	if (Stooges_Fled != TRUE)
 	{
-		AI_Output (other, self,"Mis_1_Psi_Kalom_Success_15_02"); //Nemùu ty mue najít.
-		AI_Output (self, other,"Mis_1_Psi_Kalom_Success_10_03"); //Nic jiného jsem od tebe neoèekával.
+		AI_Output (other, self,"Mis_1_Psi_Kalom_Success_15_02"); //NemÅ¯Å¾u ty muÅ¾e najÃ­t.
+		AI_Output (self, other,"Mis_1_Psi_Kalom_Success_10_03"); //Nic jinÃ©ho jsem od tebe neoÄekÃ¡val.
 	}
 	else if (Stooges_Fled == TRUE)
 	||		(Npc_IsDead(Jacko)&&Npc_IsDead(Renyu)&&Npc_IsDead(Killian))
  	{
-		AI_Output (other, self,"Mis_1_Psi_Kalom_Success_15_04"); //Jsou pryè.
-		AI_Output (self, other,"Mis_1_Psi_Kalom_Success_10_05"); //Pøekvapuješ mì. Podcenil jsem tvoje kvality. Moná bys pøece jen mohl bıt uiteènı.
+		AI_Output (other, self,"Mis_1_Psi_Kalom_Success_15_04"); //Jsou pryÄ.
+		AI_Output (self, other,"Mis_1_Psi_Kalom_Success_10_05"); //PÅ™ekvapujeÅ¡ mÄ›. Podcenil jsem tvoje kvality. MoÅ¾nÃ¡ bys pÅ™ece jen mohl bÃ½t uÅ¾iteÄnÃ½.
 		//AI_Output (self, other,"Mis_1_Psi_Kalom_Success_10_06"); //Rede mit den Baals.
 		
 		Kalom_DrugMonopol = LOG_SUCCESS;
-		B_LogEntry			(CH1_DrugMonopol,"Informoval jsem Cora Kaloma, e konkurenèní produkce drogy v Novém táboøe je zastavena. Jeho odezva byla 'pøátelská' jako vdy.");
+		B_LogEntry			(CH1_DrugMonopol,"Informoval jsem Cora Kaloma, Å¾e konkurenÄnÃ­ produkce drogy v NovÃ©m tÃ¡boÅ™e je zastavena. Jeho odezva byla 'pÅ™Ã¡telskÃ¡' jako vÅ¾dy.");
 		Log_SetTopicStatus	(CH1_DrugMonopol,	LOG_SUCCESS);
 		B_GiveXP			(XP_DrugMonopol);
 	};
 };
 
 // ****************************************************************
-// 							KRAUTBOTE ZURÜCK
+// 							KRAUTBOTE ZURÃœCK
 // ****************************************************************
 
 INSTANCE Info_Kalom_KrautboteBACK(C_INFO)
@@ -479,7 +479,7 @@ INSTANCE Info_Kalom_KrautboteBACK(C_INFO)
 	condition	= Info_Kalom_KrautboteBACK_Condition;
 	information	= Info_Kalom_KrautboteBACK_Info;
 	permanent 	= 1;
-	description = "Doruèil jsem tu drogu.";
+	description = "DoruÄil jsem tu drogu.";
 };
 
 func INT Info_Kalom_KrautboteBACK_Condition()
@@ -492,14 +492,14 @@ func INT Info_Kalom_KrautboteBACK_Condition()
 
 FUNC VOID Info_Kalom_KrautboteBACK_Info()
 {
-	AI_Output (other, self,"Mis_1_Psi_Kalom_KrautboteBACK_15_00"); //Doruèil jsem tu drogu.
+	AI_Output (other, self,"Mis_1_Psi_Kalom_KrautboteBACK_15_00"); //DoruÄil jsem tu drogu.
 	
 	if (Npc_HasItems (hero,itminugget)>=500)
 	{
-		AI_Output (self, other,"Mis_1_Psi_Kalom_KrautboteBACK_10_01"); //Dobøe. Dostaneš další úkol nìkde jinde.
+		AI_Output (self, other,"Mis_1_Psi_Kalom_KrautboteBACK_10_01"); //DobÅ™e. DostaneÅ¡ dalÅ¡Ã­ Ãºkol nÄ›kde jinde.
 
 		Kalom_DrugMonopol = LOG_SUCCESS;
-		B_LogEntry			(CH1_KrautBote,"Cor Kalom pøijal peníze za dodávku drogy Rudobaronùm.");
+		B_LogEntry			(CH1_KrautBote,"Cor Kalom pÅ™ijal penÃ­ze za dodÃ¡vku drogy RudobaronÅ¯m.");
 		Log_SetTopicStatus	(CH1_KrautBote,	LOG_SUCCESS);
 		B_GiveInvItems		(hero, self, ItMiNugget, 500);
 		B_GiveXP			(XP_WeedShipmentReported);
@@ -508,7 +508,7 @@ FUNC VOID Info_Kalom_KrautboteBACK_Info()
 	}
 	else
 	{
-		AI_Output (self, other,"Mis_1_Psi_Kalom_KrautboteBACK_10_02"); //Kde je tìch 500 nugetù, chlapèe? Zajisti, abych je hodnì rychle dostal!
+		AI_Output (self, other,"Mis_1_Psi_Kalom_KrautboteBACK_10_02"); //Kde je tÄ›ch 500 nugetÅ¯, chlapÄe? Zajisti, abych je hodnÄ› rychle dostal!
 	}; 
 };
 
@@ -537,7 +537,7 @@ instance Info_CorKalom_BringFocus (C_INFO)
 	information	= Info_CorKalom_BringFocus_Info;
 	permanent	= 0;
 	important 	= 0;
-	description = "Poslal mì Y´Berion. Mám to ohnisko.";
+	description = "Poslal mÄ› YÂ´Berion. MÃ¡m to ohnisko.";
 };
 
 FUNC INT Info_CorKalom_BringFocus_Condition()
@@ -550,11 +550,11 @@ FUNC INT Info_CorKalom_BringFocus_Condition()
 
 FUNC VOID Info_CorKalom_BringFocus_Info()
 {
-	AI_Output			(other, self,"Sit_2_PSI_Yberion_BringFocus_Info3_15_01"); //Poslal mì Y´Berion. Mám to ohnisko.
-	AI_Output			(self, other,"Sit_2_PSI_Yberion_BringFocus_Info3_10_02"); //Aaahh - to ohnisko... Koneènì. Teï mùu studovat kouzlo tìchto artefaktù.
-	AI_Output			(self, other,"Sit_2_PSI_Yberion_BringFocus_Info3_10_03"); //Kdybych jen mìl dostatek vımìšku... sakra!
+	AI_Output			(other, self,"Sit_2_PSI_Yberion_BringFocus_Info3_15_01"); //Poslal mÄ› YÂ´Berion. MÃ¡m to ohnisko.
+	AI_Output			(self, other,"Sit_2_PSI_Yberion_BringFocus_Info3_10_02"); //Aaahh - to ohnisko... KoneÄnÄ›. TeÄ mÅ¯Å¾u studovat kouzlo tÄ›chto artefaktÅ¯.
+	AI_Output			(self, other,"Sit_2_PSI_Yberion_BringFocus_Info3_10_03"); //Kdybych jen mÄ›l dostatek vÃ½mÄ›Å¡ku... sakra!
 	
-	B_LogEntry		(CH2_Focus,"Nechal jsem u Cora Kaloma zlovìstné ohnisko!");		
+	B_LogEntry		(CH2_Focus,"Nechal jsem u Cora Kaloma zlovÄ›stnÃ© ohnisko!");		
 	Log_SetTopicStatus	(CH2_Focus,	LOG_SUCCESS);
 	
 	B_GiveInvItems	    (hero, self, Focus_1, 1);
@@ -562,7 +562,7 @@ FUNC VOID Info_CorKalom_BringFocus_Info()
 	B_GiveXP			(XP_BringFocusToCorKalom);
 };
 
-// ------------------------------ 2. Belohnung für Fokus ergaunern ----------------------------------
+// ------------------------------ 2. Belohnung fÃ¼r Fokus ergaunern ----------------------------------
 instance Info_CorKalom_BLUFF (C_INFO)
 {
 	npc			= GUR_1201_CorKalom;
@@ -570,7 +570,7 @@ instance Info_CorKalom_BLUFF (C_INFO)
 	condition	= Info_CorKalom_BLUFF_Condition;
 	information	= Info_CorKalom_BLUFF_Info;
 	permanent	= 0;
-	description = "Y´Berion øekl, e mi máš zaplatit, a ti to ohnisko donesu!";
+	description = "YÂ´Berion Å™ekl, Å¾e mi mÃ¡Å¡ zaplatit, aÅ¾ ti to ohnisko donesu!";
 };
 
 FUNC INT Info_CorKalom_BLUFF_Condition()
@@ -584,8 +584,8 @@ FUNC INT Info_CorKalom_BLUFF_Condition()
 
 FUNC VOID Info_CorKalom_BLUFF_Info()
 {
-	AI_Output			(other, self,"Sit_2_PSI_Yberion_BLUFF_Info3_15_01"); //Y´Berion øekl, e mi máš zaplatit, a ti to ohnisko donesu!
-	AI_Output			(self, other,"Sit_2_PSI_Yberion_BLUFF_Info3_10_02"); //Opravdu? To, e øekl? Dobrá tedy. Pøedpokládám, e 50 nugetù by mìlo staèit!
+	AI_Output			(other, self,"Sit_2_PSI_Yberion_BLUFF_Info3_15_01"); //YÂ´Berion Å™ekl, Å¾e mi mÃ¡Å¡ zaplatit, aÅ¾ ti to ohnisko donesu!
+	AI_Output			(self, other,"Sit_2_PSI_Yberion_BLUFF_Info3_10_02"); //Opravdu? To, Å¾e Å™ekl? DobrÃ¡ tedy. PÅ™edpoklÃ¡dÃ¡m, Å¾e 50 nugetÅ¯ by mÄ›lo staÄit!
 	
 	CreateInvItems (self,Itminugget,50);
 	B_GiveInvItems (self, other, Itminugget,50);
@@ -599,7 +599,7 @@ instance  GUR_1201_CorKalom_SACHE (C_INFO)
 	information		= GUR_1201_CorKalom_SACHE_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Vımìšek?"; 
+	description		= "VÃ½mÄ›Å¡ek?"; 
 };
 
 FUNC int  GUR_1201_CorKalom_SACHE_Condition()
@@ -612,9 +612,9 @@ FUNC int  GUR_1201_CorKalom_SACHE_Condition()
 };
 FUNC VOID  GUR_1201_CorKalom_SACHE_Info()
 {
-	AI_Output			(other, self,"GUR_1201_CorKalom_SACHE_Info_15_01"); //Vımìšek?
-	AI_Output			(self, other,"GUR_1201_CorKalom_SACHE_Info_10_02"); //Ano... Jak jistì víš, vyrábím magickı lektvar pro vzıvání Spáèe. Pro tento úèel potøebuji vımìšek z èelistí dùlních èervù.
-	AI_Output			(self, other,"GUR_1201_CorKalom_SACHE_Info_10_03"); //Víš pøece, co jsou dùlní èervi, ne?
+	AI_Output			(other, self,"GUR_1201_CorKalom_SACHE_Info_15_01"); //VÃ½mÄ›Å¡ek?
+	AI_Output			(self, other,"GUR_1201_CorKalom_SACHE_Info_10_02"); //Ano... Jak jistÄ› vÃ­Å¡, vyrÃ¡bÃ­m magickÃ½ lektvar pro vzÃ½vÃ¡nÃ­ SpÃ¡Äe. Pro tento ÃºÄel potÅ™ebuji vÃ½mÄ›Å¡ek z ÄelistÃ­ dÅ¯lnÃ­ch ÄervÅ¯.
+	AI_Output			(self, other,"GUR_1201_CorKalom_SACHE_Info_10_03"); //VÃ­Å¡ pÅ™ece, co jsou dÅ¯lnÃ­ Äervi, ne?
 
 	Info_Clearchoices	(GUR_1201_CorKalom_SACHE);
 	Info_Addchoice		(GUR_1201_CorKalom_SACHE,"Ne",GUR_1201_CorKalom_SACHE_NEIN);
@@ -624,16 +624,16 @@ FUNC VOID  GUR_1201_CorKalom_SACHE_Info()
 FUNC VOID GUR_1201_CorKalom_SACHE_NEIN ()
 {
 	AI_Output			(other, self,"GUR_1201_CorKalom_SACHE_NEIN_15_01"); //Ne.
-	AI_Output			(self, other,"GUR_1201_CorKalom_SACHE_NEIN_10_02"); //Jsou to nebezpeèné bestie, které se plíí temnımi doly a seerou všechno lidské maso, na které pøijdou.
-	AI_Output			(self, other,"GUR_1201_CorKalom_SACHE_NEIN_10_03"); //Jejich èelisti obsahují zvláštní vımìšek.
-	AI_Output			(self, other,"GUR_1201_CorKalom_SACHE_NEIN_10_04"); //Pouívám ho k vırobì lektvaru, kterı provádí po duchovní cestì ke Spáèovi.
+	AI_Output			(self, other,"GUR_1201_CorKalom_SACHE_NEIN_10_02"); //Jsou to nebezpeÄnÃ© bestie, kterÃ© se plÃ­Å¾Ã­ temnÃ½mi doly a seÅ¾erou vÅ¡echno lidskÃ© maso, na kterÃ© pÅ™ijdou.
+	AI_Output			(self, other,"GUR_1201_CorKalom_SACHE_NEIN_10_03"); //Jejich Äelisti obsahujÃ­ zvlÃ¡Å¡tnÃ­ vÃ½mÄ›Å¡ek.
+	AI_Output			(self, other,"GUR_1201_CorKalom_SACHE_NEIN_10_04"); //PouÅ¾Ã­vÃ¡m ho k vÃ½robÄ› lektvaru, kterÃ½ provÃ¡dÃ­ po duchovnÃ­ cestÄ› ke SpÃ¡Äovi.
 	Info_ClearChoices (GUR_1201_CorKalom_SACHE);
 };
 //------------------------------------------------------
 func void GUR_1201_CorKalom_SACHE_JA()
 {
 	AI_Output			(other, self,"GUR_1201_CorKalom_SACHE_JA_15_01"); //Ano.
-	AI_Output			(self, other,"GUR_1201_CorKalom_SACHE_JA_10_02"); //Vıbornì!
+	AI_Output			(self, other,"GUR_1201_CorKalom_SACHE_JA_10_02"); //VÃ½bornÄ›!
 	Info_ClearChoices (GUR_1201_CorKalom_SACHE);
 };
 // ***************************** INFOS ****************************************//
@@ -657,15 +657,15 @@ FUNC int  GUR_1201_CorKalom_VISION_Condition()
 };
 FUNC void  GUR_1201_CorKalom_VISION_Info()
 {
-	AI_Output			(other, self,"GUR_1201_CorKalom_VISION_Info_15_01"); //Mluv dál!
-	AI_Output			(self, other,"GUR_1201_CorKalom_VISION_Info_10_02"); //Dobrá, pøed nedávnem jsem mìl sám vidinu Spáèe. Dal mi znamení.
-	AI_Output			(self, other,"GUR_1201_CorKalom_VISION_Info_10_03"); //Sdìlil mi, e existuje ještì jinı prostøedek, ne ten vımìšek z èelistí.
-	AI_Output			(self, other,"GUR_1201_CorKalom_VISION_Info_10_04"); //A vybral mì, abych pøedal toto poselství. Toto poselství není ode mì. Toto poselství je od Spáèe!
-	AI_Output			(other, self,"GUR_1201_CorKalom_VISION_Info_15_05"); //To není moné!
-	AI_Output			(self, other,"GUR_1201_CorKalom_VISION_Info_10_06"); //Ticho, hlupáku!
-	AI_Output			(self, other,"GUR_1201_CorKalom_VISION_Info_10_07"); //Srozumìl mì, e cesta, na kterou jsem se dal, je ta pravá, ale ten prostøedek v lektvaru není dostateènì silnı.
-	AI_Output			(self, other,"GUR_1201_CorKalom_VISION_Info_10_08"); //Správnı prostøedek mùeme najít v èervech, ale èelisti na to nestaèí.
-	AI_Output			(self, other,"GUR_1201_CorKalom_VISION_Info_10_09"); //Musí tu bıt ještì nìco jiného.
+	AI_Output			(other, self,"GUR_1201_CorKalom_VISION_Info_15_01"); //Mluv dÃ¡l!
+	AI_Output			(self, other,"GUR_1201_CorKalom_VISION_Info_10_02"); //DobrÃ¡, pÅ™ed nedÃ¡vnem jsem mÄ›l sÃ¡m vidinu SpÃ¡Äe. Dal mi znamenÃ­.
+	AI_Output			(self, other,"GUR_1201_CorKalom_VISION_Info_10_03"); //SdÄ›lil mi, Å¾e existuje jeÅ¡tÄ› jinÃ½ prostÅ™edek, neÅ¾ ten vÃ½mÄ›Å¡ek z ÄelistÃ­.
+	AI_Output			(self, other,"GUR_1201_CorKalom_VISION_Info_10_04"); //A vybral mÄ›, abych pÅ™edal toto poselstvÃ­. Toto poselstvÃ­ nenÃ­ ode mÄ›. Toto poselstvÃ­ je od SpÃ¡Äe!
+	AI_Output			(other, self,"GUR_1201_CorKalom_VISION_Info_15_05"); //To nenÃ­ moÅ¾nÃ©!
+	AI_Output			(self, other,"GUR_1201_CorKalom_VISION_Info_10_06"); //Ticho, hlupÃ¡ku!
+	AI_Output			(self, other,"GUR_1201_CorKalom_VISION_Info_10_07"); //SrozumÄ›l mÄ›, Å¾e cesta, na kterou jsem se dal, je ta pravÃ¡, ale ten prostÅ™edek v lektvaru nenÃ­ dostateÄnÄ› silnÃ½.
+	AI_Output			(self, other,"GUR_1201_CorKalom_VISION_Info_10_08"); //SprÃ¡vnÃ½ prostÅ™edek mÅ¯Å¾eme najÃ­t v Äervech, ale Äelisti na to nestaÄÃ­.
+	AI_Output			(self, other,"GUR_1201_CorKalom_VISION_Info_10_09"); //MusÃ­ tu bÃ½t jeÅ¡tÄ› nÄ›co jinÃ©ho.
 };  
 
 // ***************************** INFOS ****************************************//
@@ -676,7 +676,7 @@ instance  GUR_1201_CorKalom_NEST (C_INFO)
 	information		= GUR_1201_CorKalom_NEST_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Vy jste dùlní èervy nikdy nezkoumali?"; 
+	description		= "Vy jste dÅ¯lnÃ­ Äervy nikdy nezkoumali?"; 
 };
 
 FUNC int  GUR_1201_CorKalom_NEST_Condition()
@@ -689,9 +689,9 @@ FUNC int  GUR_1201_CorKalom_NEST_Condition()
 };
 func void  GUR_1201_CorKalom_NEST_Info()
 {
-	AI_Output			(other, self,"GUR_1201_CorKalom_NEST_Info_15_01"); //Vy jste dùlní èervy nikdy nezkoumali? Myslím, e ještì nìjaká jiná èást jejich tìla obsahuje více toho vımìšku.
-	AI_Output			(self, other,"GUR_1201_CorKalom_NEST_Info_10_02"); //Samozøejmì jsme nìkolik dùlních èervù pitvali, ale zdá se, e jedinì èelisti obsahují ten vımìšek.
-	AI_Output			(self, other,"GUR_1201_CorKalom_NEST_Info_10_03"); //Musí tu bıt ještì nìco jiného. Najdi jejich hnízdo a tam najdeš odpovìï!
+	AI_Output			(other, self,"GUR_1201_CorKalom_NEST_Info_15_01"); //Vy jste dÅ¯lnÃ­ Äervy nikdy nezkoumali? MyslÃ­m, Å¾e jeÅ¡tÄ› nÄ›jakÃ¡ jinÃ¡ ÄÃ¡st jejich tÄ›la obsahuje vÃ­ce toho vÃ½mÄ›Å¡ku.
+	AI_Output			(self, other,"GUR_1201_CorKalom_NEST_Info_10_02"); //SamozÅ™ejmÄ› jsme nÄ›kolik dÅ¯lnÃ­ch ÄervÅ¯ pitvali, ale zdÃ¡ se, Å¾e jedinÄ› Äelisti obsahujÃ­ ten vÃ½mÄ›Å¡ek.
+	AI_Output			(self, other,"GUR_1201_CorKalom_NEST_Info_10_03"); //MusÃ­ tu bÃ½t jeÅ¡tÄ› nÄ›co jinÃ©ho. Najdi jejich hnÃ­zdo a tam najdeÅ¡ odpovÄ›Ä!
 
 	CorKalom_BringMCQBalls = LOG_RUNNING;
 
@@ -703,7 +703,7 @@ func void GUR_1201_CorKalom_WEG_ACCEPT()
 {
 	Log_CreateTopic		(CH2_MCEggs,	LOG_MISSION);
 	Log_SetTopicStatus	(CH2_MCEggs,	LOG_RUNNING);
-	B_LogEntry		(CH2_MCEggs,"Guru Cor Kalom mì poádal, abych nalezl zdroj vımìšku dùlních èervù ve Starém dole. Doposud se pouívaly èelisti tìch oblud a já mám objevit jinı zdroj, kterı obsahuje silnìjší vımìšek.");
+	B_LogEntry		(CH2_MCEggs,"Guru Cor Kalom mÄ› poÅ¾Ã¡dal, abych nalezl zdroj vÃ½mÄ›Å¡ku dÅ¯lnÃ­ch ÄervÅ¯ ve StarÃ©m dole. Doposud se pouÅ¾Ã­valy Äelisti tÄ›ch oblud a jÃ¡ mÃ¡m objevit jinÃ½ zdroj, kterÃ½ obsahuje silnÄ›jÅ¡Ã­ vÃ½mÄ›Å¡ek.");
 
 	if (PresseTourJanuar2001)
 	{
@@ -721,7 +721,7 @@ instance  GUR_1201_CorKalom_WEG (C_INFO)
 	nr				= 21;
 	important		= 0;
 	permanent		= 0;
-	description		= "To vypadá na temné a zlovìstné pátrání!"; 
+	description		= "To vypadÃ¡ na temnÃ© a zlovÄ›stnÃ© pÃ¡trÃ¡nÃ­!"; 
 };
 
 FUNC int  GUR_1201_CorKalom_WEG_Condition()
@@ -734,10 +734,10 @@ FUNC int  GUR_1201_CorKalom_WEG_Condition()
 
 FUNC void  GUR_1201_CorKalom_WEG_Info()
 {
-	AI_Output			(other, self,"GUR_1201_CorKalom_WEG_Info_15_01"); //To vypadá na temné a zlovìstné pátrání!
-	AI_Output			(self, other,"GUR_1201_CorKalom_WEG_Info_10_02"); //Vezmi si tyhle kouzelné svìtelné svitky - v temnıch šachtách ti mùou bıt velmi uiteèné.
-	AI_Output			(self, other,"GUR_1201_CorKalom_WEG_Info_10_03"); //Templáøi v dolech ti pomùou.
-	AI_Output			(self, other,"GUR_1201_CorKalom_WEG_Info_10_04"); //A ti Spáè dodá sílu, a ti svítí na cestu a osvítí ducha a nech posílí tvoji mysl!
+	AI_Output			(other, self,"GUR_1201_CorKalom_WEG_Info_15_01"); //To vypadÃ¡ na temnÃ© a zlovÄ›stnÃ© pÃ¡trÃ¡nÃ­!
+	AI_Output			(self, other,"GUR_1201_CorKalom_WEG_Info_10_02"); //Vezmi si tyhle kouzelnÃ© svÄ›telnÃ© svitky - v temnÃ½ch Å¡achtÃ¡ch ti mÅ¯Å¾ou bÃ½t velmi uÅ¾iteÄnÃ©.
+	AI_Output			(self, other,"GUR_1201_CorKalom_WEG_Info_10_03"); //TemplÃ¡Å™i v dolech ti pomÅ¯Å¾ou.
+	AI_Output			(self, other,"GUR_1201_CorKalom_WEG_Info_10_04"); //AÅ¥ ti SpÃ¡Ä dodÃ¡ sÃ­lu, aÅ¥ ti svÃ­tÃ­ na cestu a osvÃ­tÃ­ ducha a nechÅ¥ posÃ­lÃ­ tvoji mysl!
 
 	CreateInvItems		(self, ItArScrollLight, 5);
 	B_GiveInvItems      (self, other, ItArScrollLight, 5);
@@ -755,7 +755,7 @@ instance  GUR_1201_CorKalom_RAT (C_INFO)
 	nr				= 20;
 	important		= 0;
 	permanent		= 0;
-	description		= "Uvìdom si, e by to mohlo bıt docela krvavé dobrodruství!"; 
+	description		= "UvÄ›dom si, Å¾e by to mohlo bÃ½t docela krvavÃ© dobrodruÅ¾stvÃ­!"; 
 };
 
 FUNC int  GUR_1201_CorKalom_RAT_Condition()
@@ -768,9 +768,9 @@ FUNC int  GUR_1201_CorKalom_RAT_Condition()
 };
 func void  GUR_1201_CorKalom_RAT_Info()
 {
-	AI_Output			(other, self,"GUR_1201_CorKalom_RAT_Info_15_01"); //Uvìdom si, e by to mohlo bıt docela krvavé dobrodruství!
+	AI_Output			(other, self,"GUR_1201_CorKalom_RAT_Info_15_01"); //UvÄ›dom si, Å¾e by to mohlo bÃ½t docela krvavÃ© dobrodruÅ¾stvÃ­!
 	AI_Output			(self, other,"GUR_1201_CorKalom_RAT_Info_10_02"); //Vezmi si sebou tyhle lektvary.
-	AI_Output			(self, other,"GUR_1201_CorKalom_RAT_Info_10_03"); //Nedávám ti je, protoe bych chtìl, abys zùstal naivu, ale protoe se tento úkol musí splnit.
+	AI_Output			(self, other,"GUR_1201_CorKalom_RAT_Info_10_03"); //NedÃ¡vÃ¡m ti je, protoÅ¾e bych chtÄ›l, abys zÅ¯stal naÅ¾ivu, ale protoÅ¾e se tento Ãºkol musÃ­ splnit.
 
 	CreateInvItems		(self, ItFo_Potion_Health_02, 5);
 	B_GiveInvItems      (self, other, ItFo_Potion_Health_02, 5);
@@ -786,7 +786,7 @@ instance  GUR_1201_CorKalom_RUN (C_INFO)
 	information		= GUR_1201_CorKalom_RUN_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Kde najdu dùlní èervy?"; 
+	description		= "Kde najdu dÅ¯lnÃ­ Äervy?"; 
 };
 
 FUNC int  GUR_1201_CorKalom_RUN_Condition()
@@ -800,13 +800,13 @@ FUNC int  GUR_1201_CorKalom_RUN_Condition()
 
 FUNC void  GUR_1201_CorKalom_RUN_Info()
 {
-	AI_Output			(other, self,"GUR_1201_CorKalom_RUN_Info_15_01"); //Kde najdu dùlní èervy?
-	AI_Output			(self, other,"GUR_1201_CorKalom_RUN_Info_10_02"); //Ve Starém dole.
+	AI_Output			(other, self,"GUR_1201_CorKalom_RUN_Info_15_01"); //Kde najdu dÅ¯lnÃ­ Äervy?
+	AI_Output			(self, other,"GUR_1201_CorKalom_RUN_Info_10_02"); //Ve StarÃ©m dole.
 
 	if	!EnteredOldMine
 	{
-		AI_Output		(other, self,"GUR_1201_CorKalom_RUN_Info_15_03"); //Kde je Starı dùl?
-		AI_Output		(self, other,"GUR_1201_CorKalom_RUN_Info_10_04"); //Vem si tuhle mapu! Jsou na ní vyznaèena všechna dùleitá místa uvnitø Bariéry.
+		AI_Output		(other, self,"GUR_1201_CorKalom_RUN_Info_15_03"); //Kde je StarÃ½ dÅ¯l?
+		AI_Output		(self, other,"GUR_1201_CorKalom_RUN_Info_10_04"); //Vem si tuhle mapu! Jsou na nÃ­ vyznaÄena vÅ¡echna dÅ¯leÅ¾itÃ¡ mÃ­sta uvnitÅ™ BariÃ©ry.
 		CreateInvItem	(self,ItWrWorldmap);   
 		B_GiveInvItems  (self, other, ItWrWorldmap, 1);
 	};
@@ -820,7 +820,7 @@ instance  GUR_1201_CorKalom_CRAWLER (C_INFO)
 	information		= GUR_1201_CorKalom_CRAWLER_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Jakı je nejlepší zpùsob boje s dùlními èervy?"; 
+	description		= "JakÃ½ je nejlepÅ¡Ã­ zpÅ¯sob boje s dÅ¯lnÃ­mi Äervy?"; 
 };
 
 FUNC int  GUR_1201_CorKalom_CRAWLER_Condition()
@@ -835,8 +835,8 @@ FUNC int  GUR_1201_CorKalom_CRAWLER_Condition()
 
 FUNC void  GUR_1201_CorKalom_CRAWLER_Info()
 {
-	AI_Output			(other, self,"GUR_1201_CorKalom_CRAWLER_Info_15_01"); //Jakı je nejlepší zpùsob boje s dùlními èervy?
-	AI_Output			(self,other, "GUR_1201_CorKalom_CRAWLER_Info_10_02"); //V dole jsou templáøi. Loví èervy kvùli èelistem. Zeptej se Gora Na Vida. Pomùe ti.
+	AI_Output			(other, self,"GUR_1201_CorKalom_CRAWLER_Info_15_01"); //JakÃ½ je nejlepÅ¡Ã­ zpÅ¯sob boje s dÅ¯lnÃ­mi Äervy?
+	AI_Output			(self,other, "GUR_1201_CorKalom_CRAWLER_Info_10_02"); //V dole jsou templÃ¡Å™i. LovÃ­ Äervy kvÅ¯li Äelistem. Zeptej se Gora Na Vida. PomÅ¯Å¾e ti.
 };
 
 // ***************************** INFOS ****************************************//
@@ -847,7 +847,7 @@ instance  GUR_1201_CorKalom_FIND (C_INFO)
 	information		= GUR_1201_CorKalom_FIND_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Jak najdu v dole hnízdo?"; 
+	description		= "Jak najdu v dole hnÃ­zdo?"; 
 };
 
 FUNC int  GUR_1201_CorKalom_FIND_Condition()
@@ -861,9 +861,9 @@ FUNC int  GUR_1201_CorKalom_FIND_Condition()
 
 FUNC void  GUR_1201_CorKalom_FIND_Info()
 {
-	AI_Output			(other, self,"GUR_1201_CorKalom_FIND_Info_15_01"); //Jak najdu v dole hnízdo?
-	AI_Output			(self,other, "GUR_1201_CorKalom_FIND_Info_10_02"); //To je nejobtínìjší bod tvého poslání. Neøeknu ti, kde je hledat, ani co v nich hledat. Spáè však bude pøi tobì.
-	AI_Output			(other, self,"GUR_1201_CorKalom_FIND_Info_15_03"); //Dobrá, to je útìcha.
+	AI_Output			(other, self,"GUR_1201_CorKalom_FIND_Info_15_01"); //Jak najdu v dole hnÃ­zdo?
+	AI_Output			(self,other, "GUR_1201_CorKalom_FIND_Info_10_02"); //To je nejobtÃ­Å¾nÄ›jÅ¡Ã­ bod tvÃ©ho poslÃ¡nÃ­. NeÅ™eknu ti, kde je hledat, ani co v nich hledat. SpÃ¡Ä vÅ¡ak bude pÅ™i tobÄ›.
+	AI_Output			(other, self,"GUR_1201_CorKalom_FIND_Info_15_03"); //DobrÃ¡, to je ÃºtÄ›cha.
 };
 // ------------------------------ SUCCESS ----------------------------------
 
@@ -873,7 +873,7 @@ INSTANCE Info_CorKalom_BringMCQBalls_Success (C_INFO)
 	condition	= Info_CorKalom_BringMCQBalls_Success_Condition;
 	information	= Info_CorKalom_BringMCQBalls_Success_Info;
 	permanent	= 0;
-	description	= "Našel jsem vajíèka èerví královny.";
+	description	= "NaÅ¡el jsem vajÃ­Äka ÄervÃ­ krÃ¡lovny.";
 };                       
 
 FUNC INT Info_CorKalom_BringMCQBalls_Success_Condition()
@@ -885,34 +885,34 @@ FUNC INT Info_CorKalom_BringMCQBalls_Success_Condition()
 };
 FUNC VOID Info_CorKalom_BringMCQBalls_Success_Info()
 {	
-	AI_Output			(other, self,"Mis_2_PSI_Kalom_BringMCQEggs_Success_15_01"); //Našel jsem vajíèka èerví královny.
-	AI_Output			(self, other,"Mis_2_PSI_Kalom_BringMCQEggs_Success_10_02"); //Znám je. Má vidina byla znamení. Královnina vajíèka musí obsahovat ten vımìšek.
-	AI_Output			(self, other,"Mis_2_PSI_Kalom_BringMCQEggs_Success_10_03"); //Vıbornì, s tím vytvoøím ten lektvar pro spojení se Spáèem.
-	AI_Output			(other, self,"Mis_2_PSI_Kalom_BringMCQEggs_Success_15_04"); //A co má odmìna?
-	AI_Output			(self, other,"Mis_2_PSI_Kalom_BringMCQEggs_Success_10_05"); //Správnì... Dìkuju ti.
-	AI_Output			(other, self,"Mis_2_PSI_Kalom_BringMCQEggs_Success_15_06"); //Myslel jsem HMATATELNOU odmìnu.
-	AI_Output			(self, other,"Mis_2_PSI_Kalom_BringMCQEggs_Success_10_07"); //Dobøe, dobøe. Co bys chtìl?
+	AI_Output			(other, self,"Mis_2_PSI_Kalom_BringMCQEggs_Success_15_01"); //NaÅ¡el jsem vajÃ­Äka ÄervÃ­ krÃ¡lovny.
+	AI_Output			(self, other,"Mis_2_PSI_Kalom_BringMCQEggs_Success_10_02"); //ZnÃ¡m je. MÃ¡ vidina byla znamenÃ­. KrÃ¡lovnina vajÃ­Äka musÃ­ obsahovat ten vÃ½mÄ›Å¡ek.
+	AI_Output			(self, other,"Mis_2_PSI_Kalom_BringMCQEggs_Success_10_03"); //VÃ½bornÄ›, s tÃ­m vytvoÅ™Ã­m ten lektvar pro spojenÃ­ se SpÃ¡Äem.
+	AI_Output			(other, self,"Mis_2_PSI_Kalom_BringMCQEggs_Success_15_04"); //A co mÃ¡ odmÄ›na?
+	AI_Output			(self, other,"Mis_2_PSI_Kalom_BringMCQEggs_Success_10_05"); //SprÃ¡vnÄ›... DÄ›kuju ti.
+	AI_Output			(other, self,"Mis_2_PSI_Kalom_BringMCQEggs_Success_15_06"); //Myslel jsem HMATATELNOU odmÄ›nu.
+	AI_Output			(self, other,"Mis_2_PSI_Kalom_BringMCQEggs_Success_10_07"); //DobÅ™e, dobÅ™e. Co bys chtÄ›l?
 	CorKalom_BringMCQBalls = LOG_SUCCESS;
 	B_GiveInvItems	(hero, self, ItAt_Crawlerqueen,3);
 	Npc_RemoveInvItems(self, ItAt_Crawlerqueen,3);
 	B_GiveXP			(XP_BringMCEggs);
-	B_LogEntry		(CH2_MCEggs,"Dal jsem Cor Kalomovi tøi vajíèka dùlních èervù. Tváøil se velmi nepøátelsky a já ho musel poádat o svoji hubenou odmìnu.");
+	B_LogEntry		(CH2_MCEggs,"Dal jsem Cor Kalomovi tÅ™i vajÃ­Äka dÅ¯lnÃ­ch ÄervÅ¯. TvÃ¡Å™il se velmi nepÅ™Ã¡telsky a jÃ¡ ho musel poÅ¾Ã¡dat o svoji hubenou odmÄ›nu.");
 	Log_SetTopicStatus	(CH2_MCEggs,	LOG_SUCCESS);
 	
-	B_LogEntry	(CH1_GotoPsiCamp,"Myslím, e toho o zámìrech sekty vím ji dost, a tak o tom mùu podat zprávu Mordragovi. ");
-	B_LogEntry	(CH1_GotoPsi,"Myslím, e toho o zámìrech sekty vím ji dost. Jakmile budu ve Starém táboøe, mìl bych se o tom zmínit Ravenovi.");
+	B_LogEntry	(CH1_GotoPsiCamp,"MyslÃ­m, Å¾e toho o zÃ¡mÄ›rech sekty vÃ­m jiÅ¾ dost, a tak o tom mÅ¯Å¾u podat zprÃ¡vu Mordragovi. ");
+	B_LogEntry	(CH1_GotoPsi,"MyslÃ­m, Å¾e toho o zÃ¡mÄ›rech sekty vÃ­m jiÅ¾ dost. Jakmile budu ve StarÃ©m tÃ¡boÅ™e, mÄ›l bych se o tom zmÃ­nit Ravenovi.");
 	
 	Info_ClearChoices (Info_CorKalom_BringMCQBalls_Success);
 	Info_Addchoice(Info_CorKalom_BringMCQBalls_Success,"Runu.",Info_CorKalom_BringMCQBalls_Success_RUNE);
-	Info_Addchoice(Info_CorKalom_BringMCQBalls_Success,"Nìjakou zbraò.",Info_CorKalom_BringMCQBalls_Success_WAFFE);
-	Info_Addchoice(Info_CorKalom_BringMCQBalls_Success,"Hojivı lektvar.",Info_CorKalom_BringMCQBalls_Success_HEAL);
+	Info_Addchoice(Info_CorKalom_BringMCQBalls_Success,"NÄ›jakou zbraÅˆ.",Info_CorKalom_BringMCQBalls_Success_WAFFE);
+	Info_Addchoice(Info_CorKalom_BringMCQBalls_Success,"HojivÃ½ lektvar.",Info_CorKalom_BringMCQBalls_Success_HEAL);
 	Info_Addchoice(Info_CorKalom_BringMCQBalls_Success,"Rudu.",Info_CorKalom_BringMCQBalls_Success_ORE);
 	Info_Addchoice(Info_CorKalom_BringMCQBalls_Success,"Manu.",Info_CorKalom_BringMCQBalls_Success_MANA);
 };
 func void Info_CorKalom_BringMCQBalls_Success_RUNE ()
 {
 	AI_Output			(other, self,"Mis_2_PSI_Kalom_BringMCQEggs_Success_RUNE_15_01"); //Runu.
-	AI_Output			(self, other,"Mis_2_PSI_Kalom_BringMCQEggs_Success_RUNE_10_02"); //A ti tato runa osvítí cestu!
+	AI_Output			(self, other,"Mis_2_PSI_Kalom_BringMCQEggs_Success_RUNE_10_02"); //AÅ¥ ti tato runa osvÃ­tÃ­ cestu!
 	CreateInvItem		(self,ItArRuneLight);
 	B_GiveInvItems      (self, hero, ItArRuneLight, 1);
 	Info_ClearChoices	(Info_CorKalom_BringMCQBalls_Success);
@@ -920,16 +920,16 @@ func void Info_CorKalom_BringMCQBalls_Success_RUNE ()
 };	
 func void Info_CorKalom_BringMCQBalls_Success_WAFFE ()
 {
-	AI_Output			(other, self,"Mis_2_PSI_Kalom_BringMCQEggs_Success_WAFFE_15_01"); //Nìjakou zbraò.
-	AI_Output			(self, other,"Mis_2_PSI_Kalom_BringMCQEggs_Success_WAFFE_10_02"); //Ké tato zbraò znièí tvé nepøátele!
+	AI_Output			(other, self,"Mis_2_PSI_Kalom_BringMCQEggs_Success_WAFFE_15_01"); //NÄ›jakou zbraÅˆ.
+	AI_Output			(self, other,"Mis_2_PSI_Kalom_BringMCQEggs_Success_WAFFE_10_02"); //KÃ©Å¾ tato zbraÅˆ zniÄÃ­ tvÃ© nepÅ™Ã¡tele!
 	CreateInvItem		(self, ItMw_1H_Mace_War_03);
 	B_GiveInvItems      (self, hero, ItMw_1H_Mace_War_03, 1);
 	Info_ClearChoices	(Info_CorKalom_BringMCQBalls_Success);
 };	
 func void Info_CorKalom_BringMCQBalls_Success_HEAL()
 {
-	AI_Output			(other, self,"Mis_2_PSI_Kalom_BringMCQEggs_Success_HEAL_15_01"); //Hojivı lektvar.
-	AI_Output			(self, other,"Mis_2_PSI_Kalom_BringMCQEggs_Success_HEAL_10_02"); //Ké ti tento lektvar prodlouí ivot!
+	AI_Output			(other, self,"Mis_2_PSI_Kalom_BringMCQEggs_Success_HEAL_15_01"); //HojivÃ½ lektvar.
+	AI_Output			(self, other,"Mis_2_PSI_Kalom_BringMCQEggs_Success_HEAL_10_02"); //KÃ©Å¾ ti tento lektvar prodlouÅ¾Ã­ Å¾ivot!
 	CreateInvItem		(self,ItFo_Potion_Health_Perma_01);
 	B_GiveInvItems      (self, hero, ItFo_Potion_Health_Perma_01, 1);
 	Info_ClearChoices	(Info_CorKalom_BringMCQBalls_Success);
@@ -937,7 +937,7 @@ func void Info_CorKalom_BringMCQBalls_Success_HEAL()
 func void Info_CorKalom_BringMCQBalls_Success_ORE ()
 {
 	AI_Output			(other, self,"Mis_2_PSI_Kalom_BringMCQEggs_Success_ORE_15_01"); //Ruda.
-	AI_Output			(self, other,"Mis_2_PSI_Kalom_BringMCQEggs_Success_ORE_10_02"); //Vem si tuhle rudu jako znamení vdìènosti celého Bratrstva!
+	AI_Output			(self, other,"Mis_2_PSI_Kalom_BringMCQEggs_Success_ORE_10_02"); //Vem si tuhle rudu jako znamenÃ­ vdÄ›Änosti celÃ©ho Bratrstva!
 	CreateInvItems		(self,ItMinugget,100);
 	B_GiveInvItems      (self, hero, ItMinugget, 100);
 	Info_ClearChoices	(Info_CorKalom_BringMCQBalls_Success);
@@ -945,7 +945,7 @@ func void Info_CorKalom_BringMCQBalls_Success_ORE ()
 func void Info_CorKalom_BringMCQBalls_Success_MANA()
 {
 	AI_Output			(other, self,"Mis_2_PSI_Kalom_BringMCQEggs_Success_MANA_15_01"); //Manu.
-	AI_Output			(self, other,"Mis_2_PSI_Kalom_BringMCQEggs_Success_MANA_10_02"); //Ké tento lektvar probudí kouzlo, které v tobì døímá!
+	AI_Output			(self, other,"Mis_2_PSI_Kalom_BringMCQEggs_Success_MANA_10_02"); //KÃ©Å¾ tento lektvar probudÃ­ kouzlo, kterÃ© v tobÄ› dÅ™Ã­mÃ¡!
 	CreateInvItem		(self,ItFo_Potion_Mana_Perma_01);
 	B_GiveInvItems      (self, hero, ItFo_Potion_Mana_Perma_01, 1);
 	Info_ClearChoices	(Info_CorKalom_BringMCQBalls_Success);
@@ -960,7 +960,7 @@ INSTANCE Info_CorKalom_BringBook (C_INFO)
 	condition	= Info_CorKalom_BringBook_Condition;
 	information	= Info_CorKalom_BringBook_Info;
 	permanent	= 0;
-	description = "Mùeme zaèít vzıvat Spáèe?";
+	description = "MÅ¯Å¾eme zaÄÃ­t vzÃ½vat SpÃ¡Äe?";
 };
 
 func INT Info_CorKalom_BringBook_Condition()
@@ -972,21 +972,21 @@ func INT Info_CorKalom_BringBook_Condition()
 };
 func VOID Info_CorKalom_BringBook_Info()
 {
-	AI_Output			(other, self,"Info_CorKalom_BringBook_Info_15_01"); //Mùeme zaèít vzıvat Spáèe?
-	AI_Output			(self, other,"Info_CorKalom_BringBook_Info_10_02"); //Ne! Nenašel jsem ještì zpùsob, jak pouívat to ohnisko.
-	AI_Output			(self, other,"Info_CorKalom_BringBook_Info_10_03"); //Pozbyli jsme prastaré znalosti o tìchto artefaktech.
-	AI_Output			(other, self,"Info_CorKalom_BringBook_Info_15_04"); //Chceš øíci, e jsem sbíral ta vajíèka nadarmo?
-	AI_Output			(self, other,"Info_CorKalom_BringBook_Info_10_05"); //Ne, poslouchej mì. Existuje jeden almanach, ve kterém je vše, co potøebujeme vìdìt.
-	AI_Output			(self, other,"Info_CorKalom_BringBook_Info_10_06"); //Koupili jsme tu knihu od mága Corrista ze Starého tábora.
-	AI_Output			(self, other,"Info_CorKalom_BringBook_Info_10_07"); //Byla však ukradena, kdy se jí sem pokoušeli ze Starého tábor pøinést.
-	AI_Output			(self, other,"Info_CorKalom_BringBook_Info_10_08"); //Povìøil jsem novice Talase, aby ji pro mì vyzvedl, ale on byl pøepaden.
-	AI_Output			(self, other,"Info_CorKalom_BringBook_Info_10_09"); //Zklamal mì, ale já mu dal ještì jednu šanci. Musí pøinést ukradenı almanach zpátky.
-	AI_Output			(self, other,"Info_CorKalom_BringBook_Info_10_10"); //Promluv si s ním. Bude potøebovat kadou pomocnou ruku.
+	AI_Output			(other, self,"Info_CorKalom_BringBook_Info_15_01"); //MÅ¯Å¾eme zaÄÃ­t vzÃ½vat SpÃ¡Äe?
+	AI_Output			(self, other,"Info_CorKalom_BringBook_Info_10_02"); //Ne! NenaÅ¡el jsem jeÅ¡tÄ› zpÅ¯sob, jak pouÅ¾Ã­vat to ohnisko.
+	AI_Output			(self, other,"Info_CorKalom_BringBook_Info_10_03"); //Pozbyli jsme prastarÃ© znalosti o tÄ›chto artefaktech.
+	AI_Output			(other, self,"Info_CorKalom_BringBook_Info_15_04"); //ChceÅ¡ Å™Ã­ci, Å¾e jsem sbÃ­ral ta vajÃ­Äka nadarmo?
+	AI_Output			(self, other,"Info_CorKalom_BringBook_Info_10_05"); //Ne, poslouchej mÄ›. Existuje jeden almanach, ve kterÃ©m je vÅ¡e, co potÅ™ebujeme vÄ›dÄ›t.
+	AI_Output			(self, other,"Info_CorKalom_BringBook_Info_10_06"); //Koupili jsme tu knihu od mÃ¡ga Corrista ze StarÃ©ho tÃ¡bora.
+	AI_Output			(self, other,"Info_CorKalom_BringBook_Info_10_07"); //Byla vÅ¡ak ukradena, kdyÅ¾ se jÃ­ sem pokouÅ¡eli ze StarÃ©ho tÃ¡bor pÅ™inÃ©st.
+	AI_Output			(self, other,"Info_CorKalom_BringBook_Info_10_08"); //PovÄ›Å™il jsem novice Talase, aby ji pro mÄ› vyzvedl, ale on byl pÅ™epaden.
+	AI_Output			(self, other,"Info_CorKalom_BringBook_Info_10_09"); //Zklamal mÄ›, ale jÃ¡ mu dal jeÅ¡tÄ› jednu Å¡anci. MusÃ­ pÅ™inÃ©st ukradenÃ½ almanach zpÃ¡tky.
+	AI_Output			(self, other,"Info_CorKalom_BringBook_Info_10_10"); //Promluv si s nÃ­m. Bude potÅ™ebovat kaÅ¾dou pomocnou ruku.
 	
 	CorKalom_BringBook = LOG_RUNNING;
 	Log_CreateTopic		(CH2_Book,	LOG_MISSION);
 	Log_SetTopicStatus	(CH2_Book,	LOG_RUNNING);
-	B_LogEntry		(CH2_Book,"Cor Kalom potøebuje pro vzıvání Spáèe poslední pøedmìt. Je to kniha o pouití ohniskovıch kamenù. Novic Talas byl tak neopatrnı, e si ten rukopis nechal ukrást gobliny. Nyní hledá v chrámovém dvoøe nìkoho, kdo by mu pomohl získat knihu zpìt.");
+	B_LogEntry		(CH2_Book,"Cor Kalom potÅ™ebuje pro vzÃ½vÃ¡nÃ­ SpÃ¡Äe poslednÃ­ pÅ™edmÄ›t. Je to kniha o pouÅ¾itÃ­ ohniskovÃ½ch kamenÅ¯. Novic Talas byl tak neopatrnÃ½, Å¾e si ten rukopis nechal ukrÃ¡st gobliny. NynÃ­ hledÃ¡ v chrÃ¡movÃ©m dvoÅ™e nÄ›koho, kdo by mu pomohl zÃ­skat knihu zpÄ›t.");
 
 	Info_ClearChoices (Info_CorKalom_BringBook);
 	
@@ -1003,17 +1003,17 @@ func void Info_CorKalom_BringBook_BACK ()
 func void Info_CorKalom_BringBook_WHERE ()
 {
 	AI_Output			(other, self,"Info_CorKalom_BringBook_Where_15_01"); //Kde najdu Talase?
-	AI_Output			(self, other,"Info_CorKalom_BringBook_Where_10_02"); //Je na nádvoøí u chrámového vršku, kde se snaí získat lidi, aby mu pomohli.
+	AI_Output			(self, other,"Info_CorKalom_BringBook_Where_10_02"); //Je na nÃ¡dvoÅ™Ã­ u chrÃ¡movÃ©ho vrÅ¡ku, kde se snaÅ¾Ã­ zÃ­skat lidi, aby mu pomohli.
 };
 func void Info_CorKalom_BringBook_WHO ()
 {
 	AI_Output			(other, self,"Info_CorKalom_BringBook_Who_15_01"); //Kdo ukradl ten almanach?
-	AI_Output			(self, other,"Info_CorKalom_BringBook_Who_10_02"); //Talas øíkal, e mu ho ukradl èernı goblin. Zní to podivnì, ale není to nemoné.
+	AI_Output			(self, other,"Info_CorKalom_BringBook_Who_10_02"); //Talas Å™Ã­kal, Å¾e mu ho ukradl ÄernÃ½ goblin. ZnÃ­ to podivnÄ›, ale nenÃ­ to nemoÅ¾nÃ©.
 };
 func void Info_CorKalom_BringBook_EARN ()
 {
 	AI_Output			(other, self,"Info_CorKalom_BringBook_Earn_15_01"); //Co za to dostanu?
-	AI_Output			(self, other,"Info_CorKalom_BringBook_Earn_10_02"); //To jsem ti ještì neprokázal dost velkomyslnosti? Dostaneš odmìnu.
+	AI_Output			(self, other,"Info_CorKalom_BringBook_Earn_10_02"); //To jsem ti jeÅ¡tÄ› neprokÃ¡zal dost velkomyslnosti? DostaneÅ¡ odmÄ›nu.
 };
 
 // ------------------------------ SUCCESS ----------------------------------
@@ -1024,7 +1024,7 @@ INSTANCE Info_CorKalom_BringBook_Success (C_INFO)
 	condition	= Info_CorKalom_BringBook_Success_Condition;
 	information	= Info_CorKalom_BringBook_Success_Info;
 	permanent	= 0;
-	description	= "Našel jsem tu knihu.";
+	description	= "NaÅ¡el jsem tu knihu.";
 };                       
 
 FUNC INT Info_CorKalom_BringBook_Success_Condition()
@@ -1037,18 +1037,18 @@ FUNC INT Info_CorKalom_BringBook_Success_Condition()
 };
 FUNC VOID Info_CorKalom_BringBook_Success_Info()
 {	
-	AI_Output			(other, self,"Info_CorKalom_BringBook_Success_15_01"); //Našel jsem tu knihu.
-	AI_Output			(self, other,"Info_CorKalom_BringBook_Success_10_02"); //Vıborná práce. Máme vše, co potøebujeme.
-	AI_Output			(self, other,"Info_CorKalom_BringBook_Success_10_03"); //Teï dokonèím pøípravy.
-	AI_Output			(other, self,"Info_CorKalom_BringBook_Success_15_04"); //Kdy bude probíhat vzıvání?
-	AI_Output			(self, other,"Info_CorKalom_BringBook_Success_10_05"); //Pøijï v noci na chrámové nádvoøí. Budeme se soustøedit na vyvolání všemohoucího Spáèe.
+	AI_Output			(other, self,"Info_CorKalom_BringBook_Success_15_01"); //NaÅ¡el jsem tu knihu.
+	AI_Output			(self, other,"Info_CorKalom_BringBook_Success_10_02"); //VÃ½bornÃ¡ prÃ¡ce. MÃ¡me vÅ¡e, co potÅ™ebujeme.
+	AI_Output			(self, other,"Info_CorKalom_BringBook_Success_10_03"); //TeÄ dokonÄÃ­m pÅ™Ã­pravy.
+	AI_Output			(other, self,"Info_CorKalom_BringBook_Success_15_04"); //Kdy bude probÃ­hat vzÃ½vÃ¡nÃ­?
+	AI_Output			(self, other,"Info_CorKalom_BringBook_Success_10_05"); //PÅ™ijÄ v noci na chrÃ¡movÃ© nÃ¡dvoÅ™Ã­. Budeme se soustÅ™edit na vyvolÃ¡nÃ­ vÅ¡emohoucÃ­ho SpÃ¡Äe.
 
 	B_GiveInvItems	    (hero, self, ItWrFokusbuch, 1);
 	Npc_RemoveInvItem   (self,ItWrFokusbuch);
 	B_GiveXP			(XP_BringBook);
 	CorKalom_BringBook = LOG_SUCCESS;
 
-	B_LogEntry		(CH2_Book,"Pøedal jsem rukopis Coru Kalomovi, kterı teï Bratrstvo pøipravuje na velké vzıvání Spáèe. To se bude se odehrávat na nádvoøí chrámu.");
+	B_LogEntry		(CH2_Book,"PÅ™edal jsem rukopis Coru Kalomovi, kterÃ½ teÄ Bratrstvo pÅ™ipravuje na velkÃ© vzÃ½vÃ¡nÃ­ SpÃ¡Äe. To se bude se odehrÃ¡vat na nÃ¡dvoÅ™Ã­ chrÃ¡mu.");
 	Log_SetTopicStatus	(CH2_Book,	LOG_SUCCESS);
 
 	//-------- Gurus und Novizen auf dem Tempelvorplatz versammeln --------
@@ -1066,7 +1066,7 @@ instance Info_CorKalom_Belohnung (C_INFO)
 	condition	= Info_CorKalom_Belohnung_Condition;
 	information	= Info_CorKalom_Belohnung_Info;
 	permanent	= 0;
-	description = "A co moje odmìna?";
+	description = "A co moje odmÄ›na?";
 };                       
 
 FUNC INT Info_CorKalom_Belohnung_Condition()
@@ -1079,19 +1079,19 @@ FUNC INT Info_CorKalom_Belohnung_Condition()
 
 FUNC VOID Info_CorKalom_Belohnung_Info()
 {
-	AI_Output			(other, self,"Info_CorKalom_Belohnung_15_00");//A co moje odmìna?
-	AI_Output			(self, other,"Info_CorKalom_Belohnung_10_01");//Co bys chtìl?
+	AI_Output			(other, self,"Info_CorKalom_Belohnung_15_00");//A co moje odmÄ›na?
+	AI_Output			(self, other,"Info_CorKalom_Belohnung_10_01");//Co bys chtÄ›l?
 	
 	Info_ClearChoices (Info_CorKalom_Belohnung);
-	Info_Addchoice(Info_CorKalom_Belohnung,"Kouzelnı svitek",Info_CorKalom_Belohnung_SCROLL);
+	Info_Addchoice(Info_CorKalom_Belohnung,"KouzelnÃ½ svitek",Info_CorKalom_Belohnung_SCROLL);
 	Info_Addchoice(Info_CorKalom_Belohnung,"Ruda",Info_CorKalom_Belohnung_ORE);
 	Info_Addchoice(Info_CorKalom_Belohnung,"Lektvar many",Info_CorKalom_Belohnung_MANA);
 
 };
 func void Info_CorKalom_Belohnung_SCROLL()
 {
-	AI_Output			(other, self,"Info_CorKalom_Belohnung_SCROLL_15_00");//Dej mi tyhle èarovné svitky.
-	AI_Output			(self, other,"Info_CorKalom_Belohnung_SCROLL_10_01");//Uívej tyto svitky moudøe.
+	AI_Output			(other, self,"Info_CorKalom_Belohnung_SCROLL_15_00");//Dej mi tyhle ÄarovnÃ© svitky.
+	AI_Output			(self, other,"Info_CorKalom_Belohnung_SCROLL_10_01");//UÅ¾Ã­vej tyto svitky moudÅ™e.
 	CreateInvItems (self,ItArScrollSleep,3);
 	B_GiveInvItems  (self,hero,ItArScrollSleep,3);
 	Info_ClearChoices (Info_CorKalom_Belohnung);
@@ -1099,7 +1099,7 @@ func void Info_CorKalom_Belohnung_SCROLL()
 func void Info_CorKalom_Belohnung_ORE ()
 {
 	AI_Output			(other, self,"Info_CorKalom_Belohnung_ORE_15_00");//Dej mi rudu.
-	AI_Output			(self, other,"Info_CorKalom_Belohnung_ORE_10_01");//To by mìlo nasytit tvùj hlad po rudì.
+	AI_Output			(self, other,"Info_CorKalom_Belohnung_ORE_10_01");//To by mÄ›lo nasytit tvÅ¯j hlad po rudÄ›.
 	CreateInvItems  (self,ItMinugget,300);
 	B_GiveInvItems  (self,hero,ItMinugget,300);
 	Info_ClearChoices (Info_CorKalom_Belohnung);
@@ -1107,7 +1107,7 @@ func void Info_CorKalom_Belohnung_ORE ()
 func void Info_CorKalom_Belohnung_MANA()
 {
 	AI_Output						(other, self,"Info_CorKalom_Belohnung_MANA_15_00");//Lektvar many.
-	AI_Output						(self, other,"Info_CorKalom_Belohnung_MANA_10_01");//Ké ti tento lektvar dá sílu!
+	AI_Output						(self, other,"Info_CorKalom_Belohnung_MANA_10_01");//KÃ©Å¾ ti tento lektvar dÃ¡ sÃ­lu!
 	CreateInvItems 		(self,ItFo_Potion_Mana_02,5);
 	B_GiveInvItems      (self,hero,ItFo_Potion_Mana_02,5);
 	Info_ClearChoices	(Info_CorKalom_Belohnung);
@@ -1133,8 +1133,8 @@ FUNC int  GUR_1201_CorKalom_Exit_Condition()
 
 FUNC VOID  GUR_1201_CorKalom_Exit_Info()
 {
-	AI_Output			(other, self,"GUR_1201_CorKalom_Exit_15_01"); //Uvidíme se.
-	AI_Output			(self, other,"GUR_1201_CorKalom_Exit_10_02"); //Ké tì Spáè osvítí.
+	AI_Output			(other, self,"GUR_1201_CorKalom_Exit_15_01"); //UvidÃ­me se.
+	AI_Output			(self, other,"GUR_1201_CorKalom_Exit_10_02"); //KÃ©Å¾ tÄ› SpÃ¡Ä osvÃ­tÃ­.
 	
 	AI_StopProcessInfos	( self );
 };

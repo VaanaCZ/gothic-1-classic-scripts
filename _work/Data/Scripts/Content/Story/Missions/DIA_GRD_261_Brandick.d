@@ -33,7 +33,7 @@ instance  GRD_261_Brandick_ALEPH (C_INFO)
 	information		= GRD_261_Brandick_ALEPH_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "(stÏûuj si na Alepha)"; 
+	description		= "(stƒõ≈æuj si na Alepha)"; 
 };
 
 FUNC int  GRD_261_Brandick_ALEPH_Condition()
@@ -46,9 +46,9 @@ FUNC int  GRD_261_Brandick_ALEPH_Condition()
 };
 FUNC void  GRD_261_Brandick_ALEPH_Info()
 {
-	AI_Output			(other, self,"GRD_261_Brandick_ALEPH_Info_15_01"); //Poslyö, kdyû tady nejsi, Aleph tu akor·t cel˝ den posed·v· a ani nepohne prstem.
+	AI_Output			(other, self,"GRD_261_Brandick_ALEPH_Info_15_01"); //Posly≈°, kdy≈æ tady nejsi, Aleph tu akor√°t cel√Ω den posed√°v√° a ani nepohne prstem.
 	AI_Output			(self, other,"GRD_261_Brandick_ALEPH_Info_06_02"); //Je to pravda?
-	AI_Output			(self, other,"GRD_261_Brandick_ALEPH_Info_06_03"); //VÌö, k˝m opovrhuju jeötÏ vÌc neû lÌnou k˘ûÌ? Zr·dcema! Ztraù se!
+	AI_Output			(self, other,"GRD_261_Brandick_ALEPH_Info_06_03"); //V√≠≈°, k√Ωm opovrhuju je≈°tƒõ v√≠c ne≈æ l√≠nou k≈Ø≈æ√≠? Zr√°dcema! Ztra≈• se!
 	
 	AI_StopProcessInfos	(self);
 };  

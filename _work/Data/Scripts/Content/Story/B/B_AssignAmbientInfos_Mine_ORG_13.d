@@ -37,7 +37,7 @@ INSTANCE Info_Mine_Org_13_Mine (C_INFO) // E1
 	condition	= Info_Mine_Org_13_Mine_Condition;
 	information	= Info_Mine_Org_13_Mine_Info;
 	permanent	= 1;
-	description = "ÿekni mi nÏco o t·bo¯e.";
+	description = "≈òekni mi nƒõco o t√°bo≈ôe.";
 };                       
 
 FUNC INT Info_Mine_Org_13_Mine_Condition()
@@ -47,8 +47,8 @@ FUNC INT Info_Mine_Org_13_Mine_Condition()
 
 FUNC VOID Info_Mine_Org_13_Mine_Info()
 {
-	AI_Output(other,self,"Info_Mine_Org_13_Mine_15_00"); //ÿekni mi nÏco o t·bo¯e.
-	AI_Output(self,other,"Info_Mine_Org_13_Mine_13_01"); //Ta dÌra ve sk·le n·s odsud dostane. Jakmile budeme mÌt dost rudy, m˘ûe n·m b˝t Star˝ t·bor ukraden˝.
+	AI_Output(other,self,"Info_Mine_Org_13_Mine_15_00"); //≈òekni mi nƒõco o t√°bo≈ôe.
+	AI_Output(self,other,"Info_Mine_Org_13_Mine_13_01"); //Ta d√≠ra ve sk√°le n√°s odsud dostane. Jakmile budeme m√≠t dost rudy, m≈Ø≈æe n√°m b√Ωt Star√Ω t√°bor ukraden√Ω.
 	
 };
 
@@ -62,7 +62,7 @@ INSTANCE Info_Mine_Org_13_WichtigePersonen(C_INFO)
 	condition	= Info_Mine_Org_13_WichtigePersonen_Condition;
 	information	= Info_Mine_Org_13_WichtigePersonen_Info;
 	permanent	= 1;
-	description = "Kdo tady d·v· rozkazy?";
+	description = "Kdo tady d√°v√° rozkazy?";
 };                       
 
 FUNC INT Info_Mine_Org_13_WichtigePersonen_Condition()
@@ -72,9 +72,9 @@ FUNC INT Info_Mine_Org_13_WichtigePersonen_Condition()
 
 FUNC VOID Info_Mine_Org_13_WichtigePersonen_Info()
 {
-	AI_Output(other,self,"Info_Mine_Org_13_WichtigePersonen_15_00"); //Kdo tady d·v· rozkazy?
+	AI_Output(other,self,"Info_Mine_Org_13_WichtigePersonen_15_00"); //Kdo tady d√°v√° rozkazy?
 	AI_Output(self,other,"Info_Mine_Org_13_WichtigePersonen_13_01"); //Okyl to tady vede.
-	AI_Output(self,other,"Info_Mine_Org_13_WichtigePersonen_13_02"); //N·s bandity ale obvykle nech·v· na pokoji.
+	AI_Output(self,other,"Info_Mine_Org_13_WichtigePersonen_13_02"); //N√°s bandity ale obvykle nech√°v√° na pokoji.
 	
 };
 
@@ -88,7 +88,7 @@ INSTANCE Info_Mine_Org_13_DieLage(C_INFO) // E1
 	condition	= Info_Mine_Org_13_DieLage_Condition;
 	information	= Info_Mine_Org_13_DieLage_Info;
 	permanent	= 1;
-	description = "Jsi v po¯·dku?";
+	description = "Jsi v po≈ô√°dku?";
 };                       
 
 FUNC INT Info_Mine_Org_13_DieLage_Condition()
@@ -98,8 +98,8 @@ FUNC INT Info_Mine_Org_13_DieLage_Condition()
 
 FUNC VOID Info_Mine_Org_13_DieLage_Info()
 {
-	AI_Output(other,self,"Info_Mine_Org_13_DieLage_15_00"); //Jsi  v po¯·dku?
-	AI_Output(self,other,"Info_Mine_Org_13_DieLage_13_01");//VËera bylo h˘¯.
+	AI_Output(other,self,"Info_Mine_Org_13_DieLage_15_00"); //Jsi  v po≈ô√°dku?
+	AI_Output(self,other,"Info_Mine_Org_13_DieLage_13_01");//Vƒçera bylo h≈Ø≈ô.
 };
 	
 // *************************************************************************

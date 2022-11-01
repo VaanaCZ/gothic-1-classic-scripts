@@ -22,7 +22,7 @@ FUNC INT Info_GRD_275_PreExit_Condition()
 
 FUNC VOID Info_GRD_275_PreExit_Info()
 {
-	AI_Output(self,other,"Info_GRD_275_PreExit_06_01"); //Urèitì se musíš zastavit ve Starém táboøe, mají tam pro tebe krumpáè, haha!
+	AI_Output(self,other,"Info_GRD_275_PreExit_06_01"); //UrÄitÄ› se musÃ­Å¡ zastavit ve StarÃ©m tÃ¡boÅ™e, majÃ­ tam pro tebe krumpÃ¡Ä, haha!
 	AI_StopProcessInfos(self);
 };
 
@@ -62,7 +62,7 @@ INSTANCE Info_GRD_275_WasMachtIhrHier (C_INFO)
 	condition	= Info_GRD_275_WasMachtIhrHier_Condition;
 	information	= Info_GRD_275_WasMachtIhrHier_Info;
 	permanent	= 1;
-	description = "Co tady dìláš?";
+	description = "Co tady dÄ›lÃ¡Å¡?";
 };                       
 
 FUNC INT Info_GRD_275_WasMachtIhrHier_Condition()
@@ -72,9 +72,9 @@ FUNC INT Info_GRD_275_WasMachtIhrHier_Condition()
 
 FUNC VOID Info_GRD_275_WasMachtIhrHier_Info()
 {
-	AI_Output (other,self,"Info_GRD_275_WasMachtIhrHier_15_00"); //Co tady dìláte?
-	AI_Output (self,other,"Info_GRD_275_WasMachtIhrHier_06_01"); //Co myslíš? Hlídáme tady pøece most!
-	AI_Output (self,other,"Info_GRD_275_WasMachtIhrHier_06_02"); //Dáváme pozor, aby tu pøes nìj nepøešly ty bestie.
+	AI_Output (other,self,"Info_GRD_275_WasMachtIhrHier_15_00"); //Co tady dÄ›lÃ¡te?
+	AI_Output (self,other,"Info_GRD_275_WasMachtIhrHier_06_01"); //Co myslÃ­Å¡? HlÃ­dÃ¡me tady pÅ™ece most!
+	AI_Output (self,other,"Info_GRD_275_WasMachtIhrHier_06_02"); //DÃ¡vÃ¡me pozor, aby tu pÅ™es nÄ›j nepÅ™eÅ¡ly ty bestie.
 };
 
 // *****************************************************************
@@ -88,7 +88,7 @@ INSTANCE Info_GRD_275_Tips(C_INFO)
 	condition	= Info_GRD_275_Tips_Condition;
 	information	= Info_GRD_275_Tips_Info;
 	permanent	= 1;
-	description = "Nemìl bys pro mì nìjakou radu?";
+	description = "NemÄ›l bys pro mÄ› nÄ›jakou radu?";
 };                       
 
 FUNC INT Info_GRD_275_Tips_Condition()
@@ -98,9 +98,9 @@ FUNC INT Info_GRD_275_Tips_Condition()
 
 FUNC VOID Info_GRD_275_Tips_Info()
 {
-	AI_Output (other,self,"Info_GRD_275_Tips_15_00"); //Nemìl bys pro mì nìjakou radu?
-	AI_Output (self,other,"Info_GRD_275_Tips_06_01"); //Jistì. Nechoï sám do lesa.
-	AI_Output (self,other,"Info_GRD_275_Tips_06_02"); //Dokud nebudeš natolik silnı, abys pøemohl ty bestie.
+	AI_Output (other,self,"Info_GRD_275_Tips_15_00"); //NemÄ›l bys pro mÄ› nÄ›jakou radu?
+	AI_Output (self,other,"Info_GRD_275_Tips_06_01"); //JistÄ›. NechoÄ sÃ¡m do lesa.
+	AI_Output (self,other,"Info_GRD_275_Tips_06_02"); //Dokud nebudeÅ¡ natolik silnÃ½, abys pÅ™emohl ty bestie.
 };
 
 
@@ -110,8 +110,8 @@ FUNC VOID Info_GRD_275_Tips_Info()
 
 
 /*
-	AI_Output(other,self,"Info_GRD_275_PreExit_15_02"); //Ich werde bestimmt nicht in den Minen für euch schuften.
-	AI_Output(self,other,"Info_GRD_275_PreExit_06_03"); //In dem Fall bist du wohl unser zukünftiger Kollege? Dann sei schön lieb zu uns, wir sind nämlich morgen auch noch da, hehe.
-	AI_Output(other,self,"Info_GRD_275_PreExit_15_04"); //Ich habe gehört es gibt auch noch andere Lager...
-	AI_Output(self,other,"Info_GRD_275_PreExit_06_05"); //So wie du rumläufst schaffst Du es nicht mal bis dahin zu kommen. Und jetzt weg mit dir.
+	AI_Output(other,self,"Info_GRD_275_PreExit_15_02"); //Ich werde bestimmt nicht in den Minen fÃ¼r euch schuften.
+	AI_Output(self,other,"Info_GRD_275_PreExit_06_03"); //In dem Fall bist du wohl unser zukÃ¼nftiger Kollege? Dann sei schÃ¶n lieb zu uns, wir sind nÃ¤mlich morgen auch noch da, hehe.
+	AI_Output(other,self,"Info_GRD_275_PreExit_15_04"); //Ich habe gehÃ¶rt es gibt auch noch andere Lager...
+	AI_Output(self,other,"Info_GRD_275_PreExit_06_05"); //So wie du rumlÃ¤ufst schaffst Du es nicht mal bis dahin zu kommen. Und jetzt weg mit dir.
 */

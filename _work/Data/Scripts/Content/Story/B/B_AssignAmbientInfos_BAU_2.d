@@ -37,7 +37,7 @@ INSTANCE Info_Bau_2_WichtigePersonen(C_INFO)
 	condition	= Info_Bau_2_WichtigePersonen_Condition;
 	information	= Info_Bau_2_WichtigePersonen_Info;
 	permanent	= 1;
-	description = "Pracujeö na r˝ûov˝ch polÌch dobrovolnÏ?";
+	description = "Pracuje≈° na r√Ω≈æov√Ωch pol√≠ch dobrovolnƒõ?";
 };                       
 
 FUNC INT Info_Bau_2_WichtigePersonen_Condition()
@@ -47,8 +47,8 @@ FUNC INT Info_Bau_2_WichtigePersonen_Condition()
 
 FUNC VOID Info_Bau_2_WichtigePersonen_Info()
 {
-	AI_Output(other,self,"Info_Bau_2_WichtigePersonen_15_00"); //Pracujeö na r˝ûov˝ch polÌch dobrovolnÏ?
-	AI_Output(self,other,"Info_Bau_2_WichtigePersonen_02_01"); //JasnÏ. V pohodÏ. LepöÌ tu pracovat ze svÈ vlastnÌ v˘le, neû k tomu b˝t donucen hrdlo¯ezy R˝ûovÈho Lorda.
+	AI_Output(other,self,"Info_Bau_2_WichtigePersonen_15_00"); //Pracuje≈° na r√Ω≈æov√Ωch pol√≠ch dobrovolnƒõ?
+	AI_Output(self,other,"Info_Bau_2_WichtigePersonen_02_01"); //Jasnƒõ. V pohodƒõ. Lep≈°√≠ tu pracovat ze sv√© vlastn√≠ v≈Øle, ne≈æ k tomu b√Ωt donucen hrdlo≈ôezy R√Ω≈æov√©ho Lorda.
 	AI_Output(other,self,"Info_Bau_2_WichtigePersonen_15_02"); //Aha...
 	var C_NPC Ricelord;			Ricelord	= Hlp_GetNpc(Bau_900_Ricelord);
 	Ricelord.aivar[AIV_FINDABLE] = TRUE;	
@@ -64,7 +64,7 @@ INSTANCE Info_Bau_2_DasLager(C_INFO)
 	condition	= Info_Bau_2_DasLager_Condition;
 	information	= Info_Bau_2_DasLager_Info;
 	permanent	= 1;
-	description = "M˘ûeö mi ¯Ìci nÏco o t·bo¯e?";
+	description = "M≈Ø≈æe≈° mi ≈ô√≠ci nƒõco o t√°bo≈ôe?";
 };                       
 
 FUNC INT Info_Bau_2_DasLager_Condition()
@@ -74,8 +74,8 @@ FUNC INT Info_Bau_2_DasLager_Condition()
 
 FUNC VOID Info_Bau_2_DasLager_Info()
 {
-	AI_Output(other,self,"Info_Bau_2_DasLager_15_00"); //M˘ûeö mi nÏco ¯Ìci o t·bo¯e?
-	AI_Output(self,other,"Info_Bau_2_DasLager_02_01"); //Je nebezpeËnÈ tam chodit. Leeovi ûold·ci a m·govÈ jsou docela dob¯Ì, ale p¯ed gaunery se musÌö mÌt na pozoru!
+	AI_Output(other,self,"Info_Bau_2_DasLager_15_00"); //M≈Ø≈æe≈° mi nƒõco ≈ô√≠ci o t√°bo≈ôe?
+	AI_Output(self,other,"Info_Bau_2_DasLager_02_01"); //Je nebezpeƒçn√© tam chodit. Leeovi ≈æold√°ci a m√°gov√© jsou docela dob≈ô√≠, ale p≈ôed gaunery se mus√≠≈° m√≠t na pozoru!
 	var C_NPC Lee;			Lee		= Hlp_GetNpc(Sld_700_Lee);
 	Lee.aivar[AIV_FINDABLE] = TRUE;	
 	var C_NPC Cronos;		Cronos  = Hlp_GetNpc(KdW_604_Cronos);
@@ -92,7 +92,7 @@ INSTANCE Info_Bau_2_DieLage(C_INFO) // E1
 	condition	= Info_Bau_2_DieLage_Condition;
 	information	= Info_Bau_2_DieLage_Info;
 	permanent	= 1;
-	description = "Jsi v po¯·dku?";
+	description = "Jsi v po≈ô√°dku?";
 };                       
 
 FUNC INT Info_Bau_2_DieLage_Condition()
@@ -102,9 +102,9 @@ FUNC INT Info_Bau_2_DieLage_Condition()
 
 FUNC VOID Info_Bau_2_DieLage_Info()
 {
-	AI_Output(other,self,"Info_Bau_2_DieLage_15_00"); //Jsi v po¯·dku?
-	AI_Output(self,other,"Info_Bau_2_DieLage_02_01"); //Co chceö? Poslal tÏ R˝ûov˝ Lord? Pracuju, jak nejlÈpe m˘ûu.
-	AI_Output(other,self,"Info_Bau_2_DieLage_15_02"); //Nikdo mÏ neposlal, jen jsem si chtÏl popovÌdat.
+	AI_Output(other,self,"Info_Bau_2_DieLage_15_00"); //Jsi v po≈ô√°dku?
+	AI_Output(self,other,"Info_Bau_2_DieLage_02_01"); //Co chce≈°? Poslal tƒõ R√Ω≈æov√Ω Lord? Pracuju, jak nejl√©pe m≈Ø≈æu.
+	AI_Output(other,self,"Info_Bau_2_DieLage_15_02"); //Nikdo mƒõ neposlal, jen jsem si chtƒõl popov√≠dat.
 	var C_NPC Ricelord;			Ricelord	= Hlp_GetNpc(Bau_900_Ricelord);
 	Ricelord.aivar[AIV_FINDABLE] = TRUE;	
 };
@@ -119,7 +119,7 @@ INSTANCE Info_Bau_2_Wasser(C_INFO) // E1
 	condition	= Info_Bau_2_Wasser_Condition;
 	information	= Info_Bau_2_Wasser_Info;
 	permanent	= 1;
-	description = "Lefty mÏ poslal. P¯inesl jsem ti trochu vody.";
+	description = "Lefty mƒõ poslal. P≈ôinesl jsem ti trochu vody.";
 };                       
 
 FUNC INT Info_Bau_2_Wasser_Condition()
@@ -133,10 +133,10 @@ FUNC INT Info_Bau_2_Wasser_Condition()
 
 FUNC VOID Info_Bau_2_Wasser_Info()
 {
-	AI_Output(other,self,"Info_Bau_2_Wasser_15_00"); //Lefty mÏ poslal. P¯inesl jsem ti trochu vody.
+	AI_Output(other,self,"Info_Bau_2_Wasser_15_00"); //Lefty mƒõ poslal. P≈ôinesl jsem ti trochu vody.
 	if (Npc_HasItems(other, ItFo_Potion_Water_01)>=1)
 	{
-		AI_Output			(self,other,"Info_Bau_2_Wasser_02_01"); //DÌky, kamar·de. UmÌr·m ûÌznÌ!
+		AI_Output			(self,other,"Info_Bau_2_Wasser_02_01"); //D√≠ky, kamar√°de. Um√≠r√°m ≈æ√≠zn√≠!
 
 		B_GiveInvItems		(other, self,	ItFo_Potion_Water_01, 1);
 		if ( C_BodystateContains(self, BS_SIT) )
@@ -155,7 +155,7 @@ FUNC VOID Info_Bau_2_Wasser_Info()
 	}
 	else
 	{
-		AI_Output(self,other,"Info_Bau_2_Wasser_NOWATER_02_00"); //Voda! Poslyö, uû ti û·dn· nezbyla! Ne¯Ìkej mi, ûe vöichni kromÏ mÏ dostali?
+		AI_Output(self,other,"Info_Bau_2_Wasser_NOWATER_02_00"); //Voda! Posly≈°, u≈æ ti ≈æ√°dn√° nezbyla! Ne≈ô√≠kej mi, ≈æe v≈°ichni kromƒõ mƒõ dostali?
 	};
 };
 	

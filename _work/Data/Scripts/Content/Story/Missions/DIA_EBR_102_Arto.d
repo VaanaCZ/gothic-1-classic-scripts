@@ -58,7 +58,7 @@ INSTANCE DIA_ARTO_What (C_INFO)
 	condition	= DIA_ARTO_What_Condition;
 	information	= DIA_ARTO_What_Info;
 	permanent	= 0;
-	description = "Co tady máš na práci?";
+	description = "Co tady mÃ¡Å¡ na prÃ¡ci?";
 };                       
 
 FUNC INT DIA_ARTO_What_Condition()
@@ -71,8 +71,8 @@ FUNC INT DIA_ARTO_What_Condition()
 
 FUNC VOID DIA_ARTO_What_Info()
 {	
-	AI_Output (other, self,"DIA_ARTO_What_15_00"); //Co tady dìláš?
-	AI_Output (self, other,"DIA_ARTO_What_13_01"); //Jsem Gomezùv osobní strážce.
+	AI_Output (other, self,"DIA_ARTO_What_15_00"); //Co tady dÄ›lÃ¡Å¡?
+	AI_Output (self, other,"DIA_ARTO_What_13_01"); //Jsem GomezÅ¯v osobnÃ­ strÃ¡Å¾ce.
 };
 
 // ************************************************************
@@ -86,7 +86,7 @@ INSTANCE DIA_ARTO_PERM (C_INFO)
 	condition	= DIA_ARTO_PERM_Condition;
 	information	= DIA_ARTO_PERM_Info;
 	permanent	= 1;
-	description = "Ty toho moc nenamluvíš, co?";
+	description = "Ty toho moc nenamluvÃ­Å¡, co?";
 };                       
 
 FUNC INT DIA_ARTO_PERM_Condition()
@@ -99,7 +99,7 @@ FUNC INT DIA_ARTO_PERM_Condition()
 
 FUNC VOID DIA_ARTO_PERM_Info()
 {	
-	AI_Output (other, self,"DIA_ARTO_PERM_15_00"); //Ty toho moc nenamluvíš, co?
+	AI_Output (other, self,"DIA_ARTO_PERM_15_00"); //Ty toho moc nenamluvÃ­Å¡, co?
 	AI_Output (self, other,"DIA_ARTO_PERM_13_01"); //Moc ne.
 };
 

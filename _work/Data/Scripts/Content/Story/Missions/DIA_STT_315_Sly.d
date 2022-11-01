@@ -23,7 +23,7 @@ FUNC VOID DIA_STT_315_Sly_Exit_Info()
 };
 
 // **************************************************
-// 					Erste Begr¸ssung 
+// 					Erste Begr√ºssung 
 // **************************************************
 
 instance DIA_STT_315_Sly (C_INFO)
@@ -48,12 +48,12 @@ func void DIA_STT_315_Sly_Info()
 {
 	AI_SetWalkmode	(self, NPC_WALK);
 	AI_GotoNpc		(self, other);
-	AI_Output		(self, other,"DIA_STT_315_Sly_10_01"); //Jsi tady nov˝, ûe jo? Nezn·m tvou tv·¯.
-	AI_Output		(self, other,"DIA_STT_315_Sly_10_02"); //Jsem Sly. NabÌzÌm nov·Ëk˘m pr·ci.
+	AI_Output		(self, other,"DIA_STT_315_Sly_10_01"); //Jsi tady nov√Ω, ≈æe jo? Nezn√°m tvou tv√°≈ô.
+	AI_Output		(self, other,"DIA_STT_315_Sly_10_02"); //Jsem Sly. Nab√≠z√≠m nov√°ƒçk≈Øm pr√°ci.
 };
 
 // **************************************************
-// 					Erste Begr¸ssung 
+// 					Erste Begr√ºssung 
 // **************************************************
 	var int Sly_LostNek;
 // **************************************************
@@ -65,7 +65,7 @@ INSTANCE DIA_STT_315_LostNek (C_INFO)
 	condition		= DIA_STT_315_LostNek_Condition;
 	information		= DIA_STT_315_LostNek_Info;
 	permanent		= 0;
-	description		= "M·ö pro mÏ pr·ci? Jakou?";
+	description		= "M√°≈° pro mƒõ pr√°ci? Jakou?";
 };
 
 FUNC INT DIA_STT_315_LostNek_Condition()
@@ -75,49 +75,49 @@ FUNC INT DIA_STT_315_LostNek_Condition()
 
 func VOID DIA_STT_315_LostNek_Info()
 {
-	AI_Output (other, self,"DIA_STT_315_LostNek_15_00"); //M·ö pro mÏ pr·ci? Jakou?
-	AI_Output (self, other,"DIA_STT_315_LostNek_10_01"); //Jeden z naöich str·ûÌ zmizel! Jmenoval se Nek. Moûn· odeöel do NovÈho t·bora.
-	AI_Output (self, other,"DIA_STT_315_LostNek_10_02"); //Jsi tady nov˝ a uû ses stal docela zn·m˝. Takûe mÏj po¯·d oËi na stopk·ch.
+	AI_Output (other, self,"DIA_STT_315_LostNek_15_00"); //M√°≈° pro mƒõ pr√°ci? Jakou?
+	AI_Output (self, other,"DIA_STT_315_LostNek_10_01"); //Jeden z na≈°ich str√°≈æ√≠ zmizel! Jmenoval se Nek. Mo≈æn√° ode≈°el do Nov√©ho t√°bora.
+	AI_Output (self, other,"DIA_STT_315_LostNek_10_02"); //Jsi tady nov√Ω a u≈æ ses stal docela zn√°m√Ω. Tak≈æe mƒõj po≈ô√°d oƒçi na stopk√°ch.
 	
 	if (Npc_GetTrueGuild (hero) == GIL_NONE)
 	{
-	AI_Output (self, other,"DIA_STT_315_LostNek_10_03"); //Jestli ho najdeö, p¯imluvÌm se za tebe v t·bo¯e.
+	AI_Output (self, other,"DIA_STT_315_LostNek_10_03"); //Jestli ho najde≈°, p≈ôimluv√≠m se za tebe v t√°bo≈ôe.
 	};
 	Info_ClearChoices	(DIA_STT_315_LostNek);
-	Info_AddChoice		(DIA_STT_315_LostNek,"UvidÌm, jestli ho dok·ûu najÌt.",DIA_STT_315_LostNek_DoIt);
+	Info_AddChoice		(DIA_STT_315_LostNek,"Uvid√≠m, jestli ho dok√°≈æu naj√≠t.",DIA_STT_315_LostNek_DoIt);
 	
 	if (Npc_GetTrueGuild (hero) == GIL_NONE)
 	{
-		Info_AddChoice		(DIA_STT_315_LostNek,"Co m·m udÏlat, aby ses za mÏ p¯imluvil?",DIA_STT_315_LostNek_Why);
+		Info_AddChoice		(DIA_STT_315_LostNek,"Co m√°m udƒõlat, aby ses za mƒõ p≈ôimluvil?",DIA_STT_315_LostNek_Why);
 	};
 };
 
 func void DIA_STT_315_LostNek_Why()
 {
-	AI_Output (other, self,"DIA_STT_315_LostNek_Why_15_00"); //Co m·m udÏlat, aby ses za mÏ p¯imluvil?
-	AI_Output (self, other,"DIA_STT_315_LostNek_Why_10_01"); //Jestli se chceö p¯idat do t·bora, budeö pot¯ebovat lidi, kte¯Ì se za tebe p¯imluvÌ.
-	AI_Output (self, other,"DIA_STT_315_LostNek_Why_10_02"); //Kdyû se za tebe u Diega p¯imluvÌm, velice ti to pom˘ûe.
+	AI_Output (other, self,"DIA_STT_315_LostNek_Why_15_00"); //Co m√°m udƒõlat, aby ses za mƒõ p≈ôimluvil?
+	AI_Output (self, other,"DIA_STT_315_LostNek_Why_10_01"); //Jestli se chce≈° p≈ôidat do t√°bora, bude≈° pot≈ôebovat lidi, kte≈ô√≠ se za tebe p≈ôimluv√≠.
+	AI_Output (self, other,"DIA_STT_315_LostNek_Why_10_02"); //Kdy≈æ se za tebe u Diega p≈ôimluv√≠m, velice ti to pom≈Ø≈æe.
 };
 
 func void DIA_STT_315_LostNek_DoIt()
 {
-	AI_Output (other, self,"DIA_STT_315_LostNek_DoIt_15_00"); //UvidÌm, jestli ho dok·ûu najÌt.
-	AI_Output (self, other,"DIA_STT_315_LostNek_DoIt_10_01"); //Jestli potk·ö Fletchera, zeptej se ho na Neka. DohlÌûÌ na jeho obvod od doby, co Nek zmizel.
+	AI_Output (other, self,"DIA_STT_315_LostNek_DoIt_15_00"); //Uvid√≠m, jestli ho dok√°≈æu naj√≠t.
+	AI_Output (self, other,"DIA_STT_315_LostNek_DoIt_10_01"); //Jestli potk√°≈° Fletchera, zeptej se ho na Neka. Dohl√≠≈æ√≠ na jeho obvod od doby, co Nek zmizel.
 	AI_Output (other, self,"DIA_STT_315_LostNek_DoIt_15_02"); //Kde ho najdu?
-	AI_Output (self, other,"DIA_STT_315_LostNek_DoIt_10_03"); //Jeho obvod je kolem arÈny.
+	AI_Output (self, other,"DIA_STT_315_LostNek_DoIt_10_03"); //Jeho obvod je kolem ar√©ny.
 	Sly_LostNek = LOG_RUNNING;
 	
 	if (Npc_GetTrueGuild (hero) == GIL_NONE)
 	{
 		Log_CreateTopic( CH1_LostNek, LOG_MISSION);
 		Log_SetTopicStatus( CH1_LostNek, LOG_RUNNING);
-		B_LogEntry( CH1_LostNek,"Sly, jeden ze StÌn˘, slÌbil, ûe jestli najdu Neka, tak se za mÏ p¯imluvÌ u Diega. Tento str·ûce se mÏl p¯idat k NovÈmu t·boru. Zept·m se na Neka Fletchera z obvodu arÈny.");
+		B_LogEntry( CH1_LostNek,"Sly, jeden ze St√≠n≈Ø, sl√≠bil, ≈æe jestli najdu Neka, tak se za mƒõ p≈ôimluv√≠ u Diega. Tento str√°≈æce se mƒõl p≈ôidat k Nov√©mu t√°boru. Zept√°m se na Neka Fletchera z obvodu ar√©ny.");
 	}
 	else
 	{
 		Log_CreateTopic( CH1_LostNek, LOG_MISSION);
 		Log_SetTopicStatus( CH1_LostNek, LOG_RUNNING);
-		B_LogEntry( CH1_LostNek,"Sly, jeden ze StÌn˘, mÏ poû·dal, abych naöel nezvÏstnÈho str·ûce Neka. Tento str·ûce se mÏl p¯idat k NovÈmu t·boru. Zept·m se na Neka Fletchera z obvodu arÈny.");
+		B_LogEntry( CH1_LostNek,"Sly, jeden ze St√≠n≈Ø, mƒõ po≈æ√°dal, abych na≈°el nezvƒõstn√©ho str√°≈æce Neka. Tento str√°≈æce se mƒõl p≈ôidat k Nov√©mu t√°boru. Zept√°m se na Neka Fletchera z obvodu ar√©ny.");
 	};
 	Info_ClearChoices	(DIA_STT_315_LostNek );
 	AI_StopProcessInfos	(self);
@@ -134,7 +134,7 @@ INSTANCE DIA_STT_315_LostNekSuccess (C_INFO)
 	condition		= DIA_STT_315_LostNekSuccess_Condition;
 	information		= DIA_STT_315_LostNekSuccess_Info;
 	permanent		= 1;
-	description		= "Naöel jsem Neka.";
+	description		= "Na≈°el jsem Neka.";
 };
 
 FUNC INT DIA_STT_315_LostNekSuccess_Condition()
@@ -147,43 +147,43 @@ FUNC INT DIA_STT_315_LostNekSuccess_Condition()
 
 func VOID DIA_STT_315_LostNekSuccess_Info()
 {
-	AI_Output (other, self,"DIA_STT_315_LostNekSuccess_15_00"); //Naöel jsem Neka.
-	AI_Output (self, other,"DIA_STT_315_LostNekSuccess_10_01"); //Dob¯e! M·ö pro to nÏjakÈ d˘kazy?
+	AI_Output (other, self,"DIA_STT_315_LostNekSuccess_15_00"); //Na≈°el jsem Neka.
+	AI_Output (self, other,"DIA_STT_315_LostNekSuccess_10_01"); //Dob≈ôe! M√°≈° pro to nƒõjak√© d≈Økazy?
 	
 	Info_ClearChoices	(DIA_STT_315_LostNekSuccess );
-	Info_AddChoice		(DIA_STT_315_LostNekSuccess,"Ob·v·m se, ûe ne.",DIA_STT_315_LostNekSuccess_NoProof);
-	Info_AddChoice		(DIA_STT_315_LostNekSuccess,"Naöel jsem u nÏj jeho amulet - tady.",DIA_STT_315_LostNekSuccess_Proof);
+	Info_AddChoice		(DIA_STT_315_LostNekSuccess,"Ob√°v√°m se, ≈æe ne.",DIA_STT_315_LostNekSuccess_NoProof);
+	Info_AddChoice		(DIA_STT_315_LostNekSuccess,"Na≈°el jsem u nƒõj jeho amulet - tady.",DIA_STT_315_LostNekSuccess_Proof);
 };
 
 func void DIA_STT_315_LostNekSuccess_Proof()
 {
-	AI_Output (other, self,"DIA_STT_315_LostNekSuccess_Proof_15_00"); //Naöel jsem u nÏho jeho amulet - tady.
-	AI_Output (self, other,"DIA_STT_315_LostNekSuccess_Proof_10_01"); //Ten amulet bylo skuteËnÏ vöechno, co u sebe mÏl. Jsi öikovn˝ chlapÌk.
-	AI_Output (self, other,"DIA_STT_315_LostNekSuccess_Proof_10_02"); //Moûn· sis mohl pomyslet, ûe by sis ten amulet nechal, ale rozhodl ses spr·vnÏ.
+	AI_Output (other, self,"DIA_STT_315_LostNekSuccess_Proof_15_00"); //Na≈°el jsem u nƒõho jeho amulet - tady.
+	AI_Output (self, other,"DIA_STT_315_LostNekSuccess_Proof_10_01"); //Ten amulet bylo skuteƒçnƒõ v≈°echno, co u sebe mƒõl. Jsi ≈°ikovn√Ω chlap√≠k.
+	AI_Output (self, other,"DIA_STT_315_LostNekSuccess_Proof_10_02"); //Mo≈æn√° sis mohl pomyslet, ≈æe by sis ten amulet nechal, ale rozhodl ses spr√°vnƒõ.
 	if (Npc_GetTrueGuild (hero) == GIL_NONE)
 	&& hero.guild == GIL_NONE
 	{
-		AI_Output (self, other,"DIA_STT_315_LostNekSuccess_Proof_10_03"); //Jestli se mÏ Diego na tebe zept·, vyslovÌm se ve tv˘j prospÏch.
+		AI_Output (self, other,"DIA_STT_315_LostNekSuccess_Proof_10_03"); //Jestli se mƒõ Diego na tebe zept√°, vyslov√≠m se ve tv≈Øj prospƒõch.
 	};
 	Sly_LostNek = LOG_SUCCESS;
 	
 	B_GiveInvItems (other, self, Neks_Amulett, 1);
 	
 	Log_SetTopicStatus		(CH1_LostNek, LOG_SUCCESS);
-	B_LogEntry				(CH1_LostNek,"Dal jsem Slyovi Nek˘v amulet. Byl ohromen mojÌ poctivostÌ.");
+	B_LogEntry				(CH1_LostNek,"Dal jsem Slyovi Nek≈Øv amulet. Byl ohromen moj√≠ poctivost√≠.");
 	
 	B_GiveXP (XP_Slysearchfornek);		
 	if (Npc_GetTrueGuild (hero) == GIL_NONE)
 	{
 		Log_CreateTopic		(CH1_JoinOC, LOG_MISSION);
 		Log_SetTopicStatus	(CH1_JoinOC, LOG_RUNNING);
-		B_LogEntry			(CH1_JoinOC,"Dal jsem Slyovi Nek˘v amulet. P¯imluvÌ se za mÏ u Diega.");
+		B_LogEntry			(CH1_JoinOC,"Dal jsem Slyovi Nek≈Øv amulet. P≈ôimluv√≠ se za mƒõ u Diega.");
 	}
 	else
 	{	
 		Log_CreateTopic		(CH1_JoinOC, LOG_MISSION);
 		Log_SetTopicStatus  (CH1_JoinOC, LOG_FAILED);
-		B_LogEntry			(CH1_JoinOC,"Dal jsem Slyovi Nek˘v amulet. Bohuûel vöak z toho nebudu mÌt nic - Ke StarÈmu t·boru se uû nemohu p¯idat.");
+		B_LogEntry			(CH1_JoinOC,"Dal jsem Slyovi Nek≈Øv amulet. Bohu≈æel v≈°ak z toho nebudu m√≠t nic - Ke Star√©mu t√°boru se u≈æ nemohu p≈ôidat.");
 	};
 	Info_ClearChoices	(DIA_STT_315_LostNekSuccess );
 	AI_StopProcessInfos	( self );
@@ -192,12 +192,12 @@ func void DIA_STT_315_LostNekSuccess_Proof()
 
 func void DIA_STT_315_LostNekSuccess_NoProof()
 {
-	AI_Output (other, self,"DIA_STT_315_LostNekSuccess_NoProof_15_00"); //Ob·v·m se, ûe ne.
-	AI_Output (self, other,"DIA_STT_315_LostNekSuccess_NoProof_10_01"); //Och? P¯ede mnou nic neschov·ö, jasn˝? Nek mÏl u sebe amulet.
-	AI_Output (self, other,"DIA_STT_315_LostNekSuccess_NoProof_10_02"); //Nem·m r·d lidi, kte¯Ì mi berou moje vÏci. Kdybys ten amulet naöel, p¯ines mi ho!
-	AI_Output (other, self,"DIA_STT_315_LostNekSuccess_NoProof_15_03"); //Budu na tebe myslet, aû budu mÌt ten amulet v ruce.
+	AI_Output (other, self,"DIA_STT_315_LostNekSuccess_NoProof_15_00"); //Ob√°v√°m se, ≈æe ne.
+	AI_Output (self, other,"DIA_STT_315_LostNekSuccess_NoProof_10_01"); //Och? P≈ôede mnou nic neschov√°≈°, jasn√Ω? Nek mƒõl u sebe amulet.
+	AI_Output (self, other,"DIA_STT_315_LostNekSuccess_NoProof_10_02"); //Nem√°m r√°d lidi, kte≈ô√≠ mi berou moje vƒõci. Kdybys ten amulet na≈°el, p≈ôines mi ho!
+	AI_Output (other, self,"DIA_STT_315_LostNekSuccess_NoProof_15_03"); //Budu na tebe myslet, a≈æ budu m√≠t ten amulet v ruce.
 	
-	B_LogEntry( CH1_LostNek,"Sly chce Nek˘v amulet.");
+	B_LogEntry( CH1_LostNek,"Sly chce Nek≈Øv amulet.");
 	
 	Info_ClearChoices	(DIA_STT_315_LostNekSuccess );
 	AI_StopProcessInfos	( self );
@@ -230,7 +230,7 @@ FUNC int DIA_STT_315_Sly_AfterSuccess_Condition()
 func void DIA_STT_315_Sly_AfterSuccess_Info()
 {
 	AI_Output (other, self,"DIA_STT_315_Sly_AfterSuccess_15_00"); //Jak to jde?
-	AI_Output (self, other,"DIA_STT_315_Sly_AfterSuccess_10_01"); //Dob¯e! Se mnou si uû nemusÌö dÏlat s Diegem û·dnÈ starosti.
+	AI_Output (self, other,"DIA_STT_315_Sly_AfterSuccess_10_01"); //Dob≈ôe! Se mnou si u≈æ nemus√≠≈° dƒõlat s Diegem ≈æ√°dn√© starosti.
 	AI_Output (other, self,"DIA_STT_315_Sly_AfterSuccess_15_02"); //Ruka ruku myje, co?
 	AI_Output (self, other,"DIA_STT_315_Sly_AfterSuccess_10_03"); //Tak to je.
 };

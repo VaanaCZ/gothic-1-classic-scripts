@@ -35,7 +35,7 @@ instance  DIA_Skip_First (C_INFO)
 	condition	=  DIA_Skip_First_Condition;
 	information	=  DIA_Skip_First_Info;
 	permanent	=  0;
-	description = "Co tady dìláš?";
+	description = "Co tady dÄ›lÃ¡Å¡?";
 };                       
 
 FUNC int  DIA_Skip_First_Condition()
@@ -48,80 +48,80 @@ FUNC int  DIA_Skip_First_Condition()
 
 FUNC VOID  DIA_Skip_First_Info()
 {
-	AI_Output (other, self,"DIA_Skip_First_15_00"); //Co tady dìláš?
-	AI_Output (self, other,"DIA_Skip_First_12_01"); //Starám se o zbranì stráí.
-	AI_Output (other, self,"DIA_Skip_First_15_02"); //Prodáváš zbranì?
-	AI_Output (self, other,"DIA_Skip_First_12_03"); //Jen Gomezovi a jeho muùm.
+	AI_Output (other, self,"DIA_Skip_First_15_00"); //Co tady dÄ›lÃ¡Å¡?
+	AI_Output (self, other,"DIA_Skip_First_12_01"); //StarÃ¡m se o zbranÄ› strÃ¡Å¾Ã­.
+	AI_Output (other, self,"DIA_Skip_First_15_02"); //ProdÃ¡vÃ¡Å¡ zbranÄ›?
+	AI_Output (self, other,"DIA_Skip_First_12_03"); //Jen Gomezovi a jeho muÅ¾Å¯m.
 
 	if	!Npc_KnowsInfo(hero, DIA_Raven_Equipment)
 	{
 		Log_CreateTopic	(GE_TraderOC,	LOG_NOTE);
-		B_LogEntry		(GE_TraderOC,"Stráce Skip prodává v zadní èásti nádvoøí ZBRANÌ. Avšak jen Gomezovım muùm.");
+		B_LogEntry		(GE_TraderOC,"StrÃ¡Å¾ce Skip prodÃ¡vÃ¡ v zadnÃ­ ÄÃ¡sti nÃ¡dvoÅ™Ã­ ZBRANÄš. AvÅ¡ak jen GomezovÃ½m muÅ¾Å¯m.");
 	};
 	
 	Info_ClearChoices 	(DIA_Skip_First);
-	Info_Addchoice 		(DIA_Skip_First,"Jistì si rozumíme.",DIA_Skip_First_BACK);
-	Info_Addchoice 		(DIA_Skip_First,"Poslal mì Thorus. Øíkal mi, abych si vzal zbraò.",DIA_Skip_First_Thorus);
-	Info_Addchoice 		(DIA_Skip_First,"Gomez mì poslal. Máš mi dát nìjakou zbroj.",DIA_Skip_First_Gomez);
+	Info_Addchoice 		(DIA_Skip_First,"JistÄ› si rozumÃ­me.",DIA_Skip_First_BACK);
+	Info_Addchoice 		(DIA_Skip_First,"Poslal mÄ› Thorus. Å˜Ã­kal mi, abych si vzal zbraÅˆ.",DIA_Skip_First_Thorus);
+	Info_Addchoice 		(DIA_Skip_First,"Gomez mÄ› poslal. MÃ¡Å¡ mi dÃ¡t nÄ›jakou zbroj.",DIA_Skip_First_Gomez);
 		
 };
 
 func void DIA_Skip_First_Gomez()
 {
-	AI_Output (other, self,"DIA_Skip_First_Gomez_15_00"); //Gomez mì poslal. Máš mi dát nìjakou zbroj.
-	AI_Output (self, other,"DIA_Skip_First_Gomez_12_01"); //Jako obvykle, co? Mám na skladì novou zbroj a nejlepší zbranì.
-	AI_Output (self, other,"DIA_Skip_First_Gomez_12_02"); //Teï dìlej, a jsi pryè. Nebo ti napráskám.
+	AI_Output (other, self,"DIA_Skip_First_Gomez_15_00"); //Gomez mÄ› poslal. MÃ¡Å¡ mi dÃ¡t nÄ›jakou zbroj.
+	AI_Output (self, other,"DIA_Skip_First_Gomez_12_01"); //Jako obvykle, co? MÃ¡m na skladÄ› novou zbroj a nejlepÅ¡Ã­ zbranÄ›.
+	AI_Output (self, other,"DIA_Skip_First_Gomez_12_02"); //TeÄ dÄ›lej, aÅ¥ jsi pryÄ. Nebo ti naprÃ¡skÃ¡m.
 	Info_ClearChoices 	(DIA_Skip_First);
 	AI_StopProcessInfos	(self);
 };
 
 func void DIA_Skip_First_Thorus()
 {
-	AI_Output (other, self,"DIA_Skip_First_Thorus_15_00"); //Poslal mì Thorus. Øíkal mi, abych si vzal zbraò.
+	AI_Output (other, self,"DIA_Skip_First_Thorus_15_00"); //Poslal mÄ› Thorus. Å˜Ã­kal mi, abych si vzal zbraÅˆ.
 	AI_Output (self, other,"DIA_Skip_First_Thorus_12_01"); //Och?
 	Info_ClearChoices 	(DIA_Skip_First);
-	Info_Addchoice 		(DIA_Skip_First,"Tak proè nejdeš a nezeptáš se ho? ",DIA_Skip_First_Thorus_AskHim);
-	Info_Addchoice 		(DIA_Skip_First,"Øíkal, e kdy mi nedáš zbraò, tak tì mám poøádnì nakopat do zadku.",DIA_Skip_First_Thorus_KickAss);
-	Info_Addchoice 		(DIA_Skip_First,"Chce po mnì, abych pro nìj udìlal nìco, co nikdo z vás udìlat nemùe, chápeš?",DIA_Skip_First_Thorus_Stranger);
+	Info_Addchoice 		(DIA_Skip_First,"Tak proÄ nejdeÅ¡ a nezeptÃ¡Å¡ se ho? ",DIA_Skip_First_Thorus_AskHim);
+	Info_Addchoice 		(DIA_Skip_First,"Å˜Ã­kal, Å¾e kdyÅ¾ mi nedÃ¡Å¡ zbraÅˆ, tak tÄ› mÃ¡m poÅ™Ã¡dnÄ› nakopat do zadku.",DIA_Skip_First_Thorus_KickAss);
+	Info_Addchoice 		(DIA_Skip_First,"Chce po mnÄ›, abych pro nÄ›j udÄ›lal nÄ›co, co nikdo z vÃ¡s udÄ›lat nemÅ¯Å¾e, chÃ¡peÅ¡?",DIA_Skip_First_Thorus_Stranger);
 };
 
 func void DIA_Skip_First_BACK()
 {
-	AI_Output (other, self,"DIA_Skip_First_BACK_15_00"); //Jistì si rozumíme.
+	AI_Output (other, self,"DIA_Skip_First_BACK_15_00"); //JistÄ› si rozumÃ­me.
 	Info_ClearChoices 	(DIA_Skip_First);
 	AI_StopProcessInfos	(self);
 };
 //------------------------------------------------------
 func void DIA_Skip_First_Thorus_Stranger()
 {
-	AI_Output (other, self,"DIA_Skip_First_Thorus_Stranger_15_00"); //Chce po mnì, abych pro nìj udìlal nìco, co nikdo z vás udìlat nemùe, chápeš?
-	AI_Output (self, other,"DIA_Skip_First_Thorus_Stranger_12_01"); //Tak? A pøedpokládám, e ho nenapadlo nic lepšího, ne tì za mnou poslat, e jo?
+	AI_Output (other, self,"DIA_Skip_First_Thorus_Stranger_15_00"); //Chce po mnÄ›, abych pro nÄ›j udÄ›lal nÄ›co, co nikdo z vÃ¡s udÄ›lat nemÅ¯Å¾e, chÃ¡peÅ¡?
+	AI_Output (self, other,"DIA_Skip_First_Thorus_Stranger_12_01"); //Tak? A pÅ™edpoklÃ¡dÃ¡m, Å¾e ho nenapadlo nic lepÅ¡Ã­ho, neÅ¾ tÄ› za mnou poslat, Å¾e jo?
 	Info_ClearChoices 	(DIA_Skip_First);
-	Info_Addchoice 		(DIA_Skip_First,"Tak proè nejdeš a nezeptáš se ho? ",DIA_Skip_First_Thorus_AskHim);
-	Info_Addchoice 		(DIA_Skip_First,"Øíkal, e kdy mi nedáš zbraò, tak tì mám poøádnì nakopat do zadku.",DIA_Skip_First_Thorus_KickAssAGAIN);
+	Info_Addchoice 		(DIA_Skip_First,"Tak proÄ nejdeÅ¡ a nezeptÃ¡Å¡ se ho? ",DIA_Skip_First_Thorus_AskHim);
+	Info_Addchoice 		(DIA_Skip_First,"Å˜Ã­kal, Å¾e kdyÅ¾ mi nedÃ¡Å¡ zbraÅˆ, tak tÄ› mÃ¡m poÅ™Ã¡dnÄ› nakopat do zadku.",DIA_Skip_First_Thorus_KickAssAGAIN);
 };
 
 func void DIA_Skip_First_Thorus_KickAss()
 {
-	AI_Output (other, self,"DIA_Skip_First_Thorus_KickAss_15_00"); //Øíkal, e kdy mi nedáš zbraò, tak tì mám poøádnì nakopat do zadku.
-	AI_Output (self, other,"DIA_Skip_First_Thorus_KickAss_12_01"); //Tak? No a já to vidím tak, e pokud se odtud okamitì neztratíš, tak nakopu zadek já TOBÌ!
+	AI_Output (other, self,"DIA_Skip_First_Thorus_KickAss_15_00"); //Å˜Ã­kal, Å¾e kdyÅ¾ mi nedÃ¡Å¡ zbraÅˆ, tak tÄ› mÃ¡m poÅ™Ã¡dnÄ› nakopat do zadku.
+	AI_Output (self, other,"DIA_Skip_First_Thorus_KickAss_12_01"); //Tak? No a jÃ¡ to vidÃ­m tak, Å¾e pokud se odtud okamÅ¾itÄ› neztratÃ­Å¡, tak nakopu zadek jÃ¡ TOBÄš!
 	Info_ClearChoices 	(DIA_Skip_First);
 	AI_StopProcessInfos	(self);
 };
 
 func void DIA_Skip_First_Thorus_AskHim()
 {
-	AI_Output (other, self,"DIA_Skip_First_Thorus_AskHim_15_00"); //Tak proè nejdeš a nezeptáš se ho?
-	AI_Output (self, other,"DIA_Skip_First_Thorus_AskHim_12_01"); //To si piš, e to udìlám. Ale ne teï. Vsadím se, e ho pobaví, a uslyší ty pohádky, cos o nìm vyprávìl.
-	AI_Output (self, other,"DIA_Skip_First_Thorus_AskHim_12_02"); //Nevím sice, kdo tì sem vpustil, ale udìláš nejlíp, kdy se odtud co nejrychleji ztratíš!
+	AI_Output (other, self,"DIA_Skip_First_Thorus_AskHim_15_00"); //Tak proÄ nejdeÅ¡ a nezeptÃ¡Å¡ se ho?
+	AI_Output (self, other,"DIA_Skip_First_Thorus_AskHim_12_01"); //To si piÅ¡, Å¾e to udÄ›lÃ¡m. Ale ne teÄ. VsadÃ­m se, Å¾e ho pobavÃ­, aÅ¾ uslyÅ¡Ã­ ty pohÃ¡dky, cos o nÄ›m vyprÃ¡vÄ›l.
+	AI_Output (self, other,"DIA_Skip_First_Thorus_AskHim_12_02"); //NevÃ­m sice, kdo tÄ› sem vpustil, ale udÄ›lÃ¡Å¡ nejlÃ­p, kdyÅ¾ se odtud co nejrychleji ztratÃ­Å¡!
 	Info_ClearChoices 	(DIA_Skip_First);
 	AI_StopProcessInfos	(self);
 };
 
 func void DIA_Skip_First_Thorus_KickAssAGAIN()
 {
-	AI_Output (other, self,"DIA_Skip_First_Thorus_KickAssAGAIN_15_00"); //Øíkal, e kdy mi nedáš zbraò, tak tì mám poøádnì nakopat do zadku.
-	AI_Output (self, other,"DIA_Skip_First_Thorus_KickAssAGAIN_12_01"); //No, dobøe. A co bys potøeboval?
+	AI_Output (other, self,"DIA_Skip_First_Thorus_KickAssAGAIN_15_00"); //Å˜Ã­kal, Å¾e kdyÅ¾ mi nedÃ¡Å¡ zbraÅˆ, tak tÄ› mÃ¡m poÅ™Ã¡dnÄ› nakopat do zadku.
+	AI_Output (self, other,"DIA_Skip_First_Thorus_KickAssAGAIN_12_01"); //No, dobÅ™e. A co bys potÅ™eboval?
 	Info_ClearChoices 	(DIA_Skip_First);
 	Skip_TradeFree = TRUE;
 };
@@ -137,7 +137,7 @@ instance  DIA_Skip_VERPATZT (C_INFO)
 	condition	=  DIA_Skip_VERPATZT_Condition;
 	information	=  DIA_Skip_VERPATZT_Info;
 	permanent	=  1;
-	description = "Øíkal jsem si, e bych se ještì jednou zeptal na tu zbroj...";
+	description = "Å˜Ã­kal jsem si, Å¾e bych se jeÅ¡tÄ› jednou zeptal na tu zbroj...";
 };                       
 
 FUNC int  DIA_Skip_VERPATZT_Condition()
@@ -153,7 +153,7 @@ FUNC int  DIA_Skip_VERPATZT_Condition()
 
 FUNC VOID  DIA_Skip_VERPATZT_Info()
 {
-	AI_Output (other, self,"DIA_Skip_VERPATZT_15_00"); //Øíkal jsem si, e bych se ještì jednou zeptal na tu zbroj...
+	AI_Output (other, self,"DIA_Skip_VERPATZT_15_00"); //Å˜Ã­kal jsem si, Å¾e bych se jeÅ¡tÄ› jednou zeptal na tu zbroj...
 	AI_Output (self, other,"DIA_Skip_VERPATZT_12_01"); //Vypadni!
 };
 
@@ -167,7 +167,7 @@ instance  GRD_211_Skip_TRADE (C_INFO)
 	condition		= GRD_211_Skip_TRADE_Condition;
 	information		= GRD_211_Skip_TRADE_Info;
 	permanent		= 1;
-	description		= "Potøeboval bych pár vìcí."; 
+	description		= "PotÅ™eboval bych pÃ¡r vÄ›cÃ­."; 
 	trade 			= 1;
 };
 
@@ -183,8 +183,8 @@ FUNC int  GRD_211_Skip_TRADE_Condition()
 
 FUNC void  GRD_211_Skip_TRADE_Info()
 {
-	AI_Output (other, self,"GRD_211_Skip_TRADE_Info_15_01"); //Potøeboval bych pár vìcí.
-	AI_Output (self, other,"GRD_211_Skip_TRADE_Info_12_02"); //Mohl bych ti prodat pár vìcí.
+	AI_Output (other, self,"GRD_211_Skip_TRADE_Info_15_01"); //PotÅ™eboval bych pÃ¡r vÄ›cÃ­.
+	AI_Output (self, other,"GRD_211_Skip_TRADE_Info_12_02"); //Mohl bych ti prodat pÃ¡r vÄ›cÃ­.
 };  
 
 /*------------------------------------------------------------------------
@@ -209,5 +209,5 @@ FUNC int  GRD_211_Skip_WELCOME_Condition()
 };
 func void  GRD_211_Skip_WELCOME_Info()
 {
-	AI_Output (self, other,"GRD_211_Skip_WELCOME_Info_12_01"); //Poslyš, musel jsi bıt pìknì daleko, kdy ses tu tak dlouho neukázal!
+	AI_Output (self, other,"GRD_211_Skip_WELCOME_Info_12_01"); //PoslyÅ¡, musel jsi bÃ½t pÄ›knÄ› daleko, kdyÅ¾ ses tu tak dlouho neukÃ¡zal!
 };

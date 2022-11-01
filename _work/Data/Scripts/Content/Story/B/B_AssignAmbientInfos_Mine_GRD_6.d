@@ -37,7 +37,7 @@ INSTANCE Info_Mine_Grd_6_Mine (C_INFO) // E1
 	condition	= Info_Mine_Grd_6_Mine_Condition;
 	information	= Info_Mine_Grd_6_Mine_Info;
 	permanent	= 1;
-	description = "Co se v tom dole dÏje?";
+	description = "Co se v tom dole dƒõje?";
 };                       
 
 FUNC INT Info_Mine_Grd_6_Mine_Condition()
@@ -50,8 +50,8 @@ FUNC INT Info_Mine_Grd_6_Mine_Condition()
 
 FUNC VOID Info_Mine_Grd_6_Mine_Info()
 {
-	AI_Output(other,self,"Info_Mine_Grd_6_Mine_15_00"); //Co se v tom dole dÏje?
-	AI_Output(self,other,"Info_Mine_Grd_6_Mine_06_01"); //Kop·Ëi rubou rudu a pokud ne, dostanou nakl·daËku!
+	AI_Output(other,self,"Info_Mine_Grd_6_Mine_15_00"); //Co se v tom dole dƒõje?
+	AI_Output(self,other,"Info_Mine_Grd_6_Mine_06_01"); //Kop√°ƒçi rubou rudu a pokud ne, dostanou nakl√°daƒçku!
 	
 };
 
@@ -79,7 +79,7 @@ FUNC INT Info_Mine_Grd_6_WichtigePersonen_Condition()
 FUNC VOID Info_Mine_Grd_6_WichtigePersonen_Info()
 {
 	AI_Output(other,self,"Info_Mine_Grd_6_WichtigePersonen_15_00"); //Kdo to tady vede?
-	AI_Output(self,other,"Info_Mine_Grd_6_WichtigePersonen_06_01"); //Asghan je n·ö öÈf, ale Ian se star· o vÏci jako jsou kop·Ëi a ruda.
+	AI_Output(self,other,"Info_Mine_Grd_6_WichtigePersonen_06_01"); //Asghan je n√°≈° ≈°√©f, ale Ian se star√° o vƒõci jako jsou kop√°ƒçi a ruda.
 	
 };
 
@@ -93,7 +93,7 @@ INSTANCE Info_Mine_Grd_6_Minecrawler(C_INFO)
 	condition	= Info_Mine_Grd_6_Minecrawler_Condition;
 	information	= Info_Mine_Grd_6_Minecrawler_Info;
 	permanent	= 1;
-	description = "ÿekni mi nÏco o Ëervech.";
+	description = "≈òekni mi nƒõco o ƒçervech.";
 };                       
 
 FUNC INT Info_Mine_Grd_6_Minecrawler_Condition()
@@ -106,8 +106,8 @@ FUNC INT Info_Mine_Grd_6_Minecrawler_Condition()
 
 FUNC VOID Info_Mine_Grd_6_Minecrawler_Info()
 {
-	AI_Output(other,self,"Info_Mine_Grd_6_Minecrawler_15_00"); //ÿekni mi nÏco o Ëervech.
-	AI_Output(self,other,"Info_Mine_Grd_6_Minecrawler_06_01"); //Ty bestie p¯edstavujÌ jenom problÈmy. NevÌm, co n·m p¯idÏl·v· vÌc pr·ce, jestli ty potvory nebo kop·Ëi.
+	AI_Output(other,self,"Info_Mine_Grd_6_Minecrawler_15_00"); //≈òekni mi nƒõco o ƒçervech.
+	AI_Output(self,other,"Info_Mine_Grd_6_Minecrawler_06_01"); //Ty bestie p≈ôedstavuj√≠ jenom probl√©my. Nev√≠m, co n√°m p≈ôidƒõl√°v√° v√≠c pr√°ce, jestli ty potvory nebo kop√°ƒçi.
 	
 };	
 
@@ -135,7 +135,7 @@ FUNC INT Info_Mine_Grd_6_DieLage_Condition()
 FUNC VOID Info_Mine_Grd_6_DieLage_Info()
 {
 	AI_Output(other,self,"Info_Mine_Grd_6_DieLage_15_00"); //Jak to jde?
- 	AI_Output(self,other,"Info_Mine_Grd_6_DieLage_06_01"); //No, co si myslÌö?
+ 	AI_Output(self,other,"Info_Mine_Grd_6_DieLage_06_01"); //No, co si mysl√≠≈°?
 };
 	
 // *************************************************************************

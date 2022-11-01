@@ -4,7 +4,7 @@
 
 PROTOTYPE Mst_Default_Lurker(C_Npc)			
 {
-	name							=	"Èíhavec";
+	name							=	"ÄŒÃ­havec";
 	guild							=	GIL_LURKER;
 	aivar[AIV_MM_REAL_ID]			= 	ID_LURKER;
 	level							=	17;
@@ -77,7 +77,7 @@ INSTANCE Lurker	(Mst_Default_Lurker)
 
 INSTANCE DamLurker(Mst_Default_Lurker)										
 {
-	name	=	"Pøehradní èíhavec";
+	name	=	"PÅ™ehradnÃ­ ÄÃ­havec";
 	ID 		=	MID_DAMLURKER;
 	level	=	20;
 

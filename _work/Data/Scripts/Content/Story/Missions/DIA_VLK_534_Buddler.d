@@ -33,7 +33,7 @@ INSTANCE DIA_Vlk_534_LeaveMe (C_INFO)
 	condition		= DIA_Vlk_534_LeaveMe_Condition;
 	information		= DIA_Vlk_534_LeaveMe_Info;
 	permanent		= 1;
-	description		= "Proè jsi tady a ne v táboøe?";
+	description		= "ProÄ jsi tady a ne v tÃ¡boÅ™e?";
 };
 
 FUNC INT DIA_Vlk_534_LeaveMe_Condition()
@@ -43,9 +43,9 @@ FUNC INT DIA_Vlk_534_LeaveMe_Condition()
 
 FUNC VOID DIA_Vlk_534_LeaveMe_Info()
 {
-	AI_Output (other, self,"DIA_Vlk_534_LeaveMe_15_00"); //Proè jsi tady a ne v táboøe?
-	AI_Output (self, other,"DIA_Vlk_534_LeaveMe_02_01"); //Èekám na pøítele, a se vrátí z dolu. Dluí mi nìjakou rudu.
-	AI_Output (self, other,"DIA_Vlk_534_LeaveMe_02_02"); //Nemùu pøijít do tábora bez rudy - nemohl bych stráím zaplatit peníze za ochranu a to by mi dost vìcí zkomplikovalo.
+	AI_Output (other, self,"DIA_Vlk_534_LeaveMe_15_00"); //ProÄ jsi tady a ne v tÃ¡boÅ™e?
+	AI_Output (self, other,"DIA_Vlk_534_LeaveMe_02_01"); //ÄŒekÃ¡m na pÅ™Ã­tele, aÅ¾ se vrÃ¡tÃ­ z dolu. DluÅ¾Ã­ mi nÄ›jakou rudu.
+	AI_Output (self, other,"DIA_Vlk_534_LeaveMe_02_02"); //NemÅ¯Å¾u pÅ™ijÃ­t do tÃ¡bora bez rudy - nemohl bych strÃ¡Å¾Ã­m zaplatit penÃ­ze za ochranu a to by mi dost vÄ›cÃ­ zkomplikovalo.
 
 	AI_StopProcessInfos	(self);
 };

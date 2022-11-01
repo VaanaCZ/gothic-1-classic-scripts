@@ -41,17 +41,17 @@ FUNC int  DIA_Ghorim_MissingHarlok_Condition()
 FUNC VOID  DIA_Ghorim_MissingHarlok_Info()
 {
 	AI_Output (other, self,"DIA_Ghorim_MissingHarlok_15_00"); //Zdar! Jak to jde?
-	AI_Output (self, other,"DIA_Ghorim_MissingHarlok_02_01"); //Padám únavou, èlovìèe. Pracoval jsem dva dny bez pøestávky.
-	AI_Output (self, other,"DIA_Ghorim_MissingHarlok_02_02"); //Harlok mì mìl bìhem té doby vystøídat. Ale tak je to s tìma chlapama poøád.
-	AI_Output (self, other,"DIA_Ghorim_MissingHarlok_02_03"); //Nejspíš se vyvaluje ve své chatrèi a spí!
-	AI_Output (other, self,"DIA_Ghorim_MissingHarlok_15_04"); //Proè tam za ním nezajdeš a poøádnì ho nekopneš do zadku?
-	AI_Output (self, other,"DIA_Ghorim_MissingHarlok_02_05"); //Nemùu odsud odejít, dokud tu hlídá Baal Orun - práce se musí za kadou cenu dodìlat!
-	AI_Output (self, other,"DIA_Ghorim_MissingHarlok_02_06"); //Ale ty bys za ním mohl kvùli mnì zajít - bydlí hned pod alchymistickou dílnou Cora Kaloma, u Fortuna.
-	AI_Output (self, other,"DIA_Ghorim_MissingHarlok_02_07"); //Øekni mu, a hejbne zadkem a pøijde sem.
+	AI_Output (self, other,"DIA_Ghorim_MissingHarlok_02_01"); //PadÃ¡m Ãºnavou, ÄlovÄ›Äe. Pracoval jsem dva dny bez pÅ™estÃ¡vky.
+	AI_Output (self, other,"DIA_Ghorim_MissingHarlok_02_02"); //Harlok mÄ› mÄ›l bÄ›hem tÃ© doby vystÅ™Ã­dat. Ale tak je to s tÄ›ma chlapama poÅ™Ã¡d.
+	AI_Output (self, other,"DIA_Ghorim_MissingHarlok_02_03"); //NejspÃ­Å¡ se vyvaluje ve svÃ© chatrÄi a spÃ­!
+	AI_Output (other, self,"DIA_Ghorim_MissingHarlok_15_04"); //ProÄ tam za nÃ­m nezajdeÅ¡ a poÅ™Ã¡dnÄ› ho nekopneÅ¡ do zadku?
+	AI_Output (self, other,"DIA_Ghorim_MissingHarlok_02_05"); //NemÅ¯Å¾u odsud odejÃ­t, dokud tu hlÃ­dÃ¡ Baal Orun - prÃ¡ce se musÃ­ za kaÅ¾dou cenu dodÄ›lat!
+	AI_Output (self, other,"DIA_Ghorim_MissingHarlok_02_06"); //Ale ty bys za nÃ­m mohl kvÅ¯li mnÄ› zajÃ­t - bydlÃ­ hned pod alchymistickou dÃ­lnou Cora Kaloma, u Fortuna.
+	AI_Output (self, other,"DIA_Ghorim_MissingHarlok_02_07"); //Å˜ekni mu, aÅ¥ hejbne zadkem a pÅ™ijde sem.
 		
 	Log_CreateTopic		(CH1_GhorimsRelief,	LOG_MISSION);
 	Log_SetTopicStatus	(CH1_GhorimsRelief,	LOG_RUNNING);
-	B_LogEntry			(CH1_GhorimsRelief,"Novic Ghorim mì poádal, abych ho zbavil zahálèivého Harloka. Harlok se obvykle potlouká kolem Fortunova drogového obchodu.");
+	B_LogEntry			(CH1_GhorimsRelief,"Novic Ghorim mÄ› poÅ¾Ã¡dal, abych ho zbavil zahÃ¡lÄivÃ©ho Harloka. Harlok se obvykle potloukÃ¡ kolem Fortunova drogovÃ©ho obchodu.");
 
 	Ghorim_KickHarlok = LOG_RUNNING;
 };
@@ -67,7 +67,7 @@ instance  DIA_Ghorim_SUCCESS (C_INFO)
 	condition	= DIA_Ghorim_SUCCESS_Condition;
 	information	= DIA_Ghorim_SUCCESS_Info;
 	permanent	= 1;
-	description	= "Tak? Vystøídá mì?";
+	description	= "Tak? VystÅ™Ã­dÃ¡ mÄ›?";
 };                       
 
 FUNC int  DIA_Ghorim_SUCCESS_Condition()
@@ -80,8 +80,8 @@ FUNC int  DIA_Ghorim_SUCCESS_Condition()
 
 FUNC VOID  DIA_Ghorim_SUCCESS_Info()
 {
-	AI_Output (other, self,"DIA_Ghorim_SUCCESS_15_00"); //Tak? Vystøídá mì?
-	AI_Output (self, other,"DIA_Ghorim_SUCCESS_02_01"); //Dobøe - koneènì se budu moci vyspat. Díky, èlovìèe!
+	AI_Output (other, self,"DIA_Ghorim_SUCCESS_15_00"); //Tak? VystÅ™Ã­dÃ¡ mÄ›?
+	AI_Output (self, other,"DIA_Ghorim_SUCCESS_02_01"); //DobÅ™e - koneÄnÄ› se budu moci vyspat. DÃ­ky, ÄlovÄ›Äe!
 };
 
 

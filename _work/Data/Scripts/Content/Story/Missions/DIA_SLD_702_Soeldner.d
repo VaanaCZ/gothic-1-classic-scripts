@@ -46,9 +46,9 @@ FUNC int DIA_Sld_702_First_Condition()
 
 FUNC VOID  DIA_Sld_702_First_Info()
 {
-	AI_Output (self, other,"DIA_Sld_702_First_04_00"); //Víš, kam jdeš?
+	AI_Output (self, other,"DIA_Sld_702_First_04_00"); //VÃ­Å¡, kam jdeÅ¡?
 	AI_Output (other, self,"DIA_Sld_702_First_15_01"); //Kam?
-	AI_Output (self, other,"DIA_Sld_702_First_04_02"); //Jdeš pøímo k Leeovi, našemu vùdci.
+	AI_Output (self, other,"DIA_Sld_702_First_04_02"); //JdeÅ¡ pÅ™Ã­mo k Leeovi, naÅ¡emu vÅ¯dci.
 };
 
 // ********************************
@@ -62,7 +62,7 @@ instance DIA_Sld_702_PERM (C_INFO)
 	condition	= DIA_Sld_702_PERM_Condition;
 	information	= DIA_Sld_702_PERM_Info;
 	permanent	= 1;
-	description = "Co musím udìlat, abys mì pustil k Leeovi?";
+	description = "Co musÃ­m udÄ›lat, abys mÄ› pustil k Leeovi?";
 };                       
 
 FUNC int DIA_Sld_702_PERM_Condition()
@@ -72,11 +72,11 @@ FUNC int DIA_Sld_702_PERM_Condition()
 
 FUNC VOID  DIA_Sld_702_PERM_Info()
 {
-	AI_Output (other, self,"DIA_Sld_702_PERM_15_00"); //Co musím udìlat, abys mì pustil k Leeovi?
+	AI_Output (other, self,"DIA_Sld_702_PERM_15_00"); //Co musÃ­m udÄ›lat, abys mÄ› pustil k Leeovi?
 	AI_Output (self, other,"DIA_Sld_702_PERM_04_01"); //Nic!
-	AI_Output (self, other,"DIA_Sld_702_PERM_04_02"); //Tohle není Starý tábor a Lee není Gomez!
-	AI_Output (self, other,"DIA_Sld_702_PERM_04_03"); //Nepotøebuje žádnou armádu lokajù, za které by se schovával. Dokáže se ubránit sám!
-	AI_Output (self, other,"DIA_Sld_702_PERM_04_04"); //MY jsme tady jen pro pøípad, kdyby nás potøeboval.
+	AI_Output (self, other,"DIA_Sld_702_PERM_04_02"); //Tohle nenÃ­ StarÃ½ tÃ¡bor a Lee nenÃ­ Gomez!
+	AI_Output (self, other,"DIA_Sld_702_PERM_04_03"); //NepotÅ™ebuje Å¾Ã¡dnou armÃ¡du lokajÅ¯, za kterÃ© by se schovÃ¡val. DokÃ¡Å¾e se ubrÃ¡nit sÃ¡m!
+	AI_Output (self, other,"DIA_Sld_702_PERM_04_04"); //MY jsme tady jen pro pÅ™Ã­pad, kdyby nÃ¡s potÅ™eboval.
 };
 
 

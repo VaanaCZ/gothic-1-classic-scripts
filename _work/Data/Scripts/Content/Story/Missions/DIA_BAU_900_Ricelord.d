@@ -33,7 +33,7 @@ INSTANCE DIA_Ricelord_Hello (C_INFO)
 	condition	= DIA_Ricelord_Hello_Condition;
 	information	= DIA_Ricelord_Hello_Info;
 	permanent	= 0;
-	description	= "Star·ö se o r˝ûov· pole, ûe jo?";
+	description	= "Star√°≈° se o r√Ω≈æov√° pole, ≈æe jo?";
 };                       
 
 FUNC INT DIA_Ricelord_Hello_Condition()
@@ -43,8 +43,8 @@ FUNC INT DIA_Ricelord_Hello_Condition()
 
 FUNC VOID DIA_Ricelord_Hello_Info()
 {	
-	AI_Output (other, self,"DIA_Ricelord_Hello_15_00"); //Star·ö se o r˝ûov· pole, ûe jo?
-	AI_Output (self, other,"DIA_Ricelord_Hello_12_01"); //ProË? Sh·nÌö pr·ci?
+	AI_Output (other, self,"DIA_Ricelord_Hello_15_00"); //Star√°≈° se o r√Ω≈æov√° pole, ≈æe jo?
+	AI_Output (self, other,"DIA_Ricelord_Hello_12_01"); //Proƒç? Sh√°n√≠≈° pr√°ci?
 };
 
 // ************************************************************
@@ -58,7 +58,7 @@ INSTANCE DIA_Ricelord_Arbeit (C_INFO)
 	condition	= DIA_Ricelord_Arbeit_Condition;
 	information	= DIA_Ricelord_Arbeit_Info;
 	permanent	= 0;
-	description	= "M·ö pro mÏ nÏjakou pr·ci?";
+	description	= "M√°≈° pro mƒõ nƒõjakou pr√°ci?";
 };                       
 
 FUNC INT DIA_Ricelord_Arbeit_Condition()
@@ -73,8 +73,8 @@ FUNC INT DIA_Ricelord_Arbeit_Condition()
 
 FUNC VOID DIA_Ricelord_Arbeit_Info()
 {	
-	AI_Output (other, self,"DIA_Ricelord_Arbeit_15_00"); //M·ö pro mÏ nÏjakou pr·ci?
-	AI_Output (self, other,"DIA_Ricelord_Arbeit_12_01"); //BÏû za Leem. Obvykle b˝v· napravo od haly.
+	AI_Output (other, self,"DIA_Ricelord_Arbeit_15_00"); //M√°≈° pro mƒõ nƒõjakou pr√°ci?
+	AI_Output (self, other,"DIA_Ricelord_Arbeit_12_01"); //Bƒõ≈æ za Leem. Obvykle b√Ωv√° napravo od haly.
 };
 
 // ************************************************************
@@ -88,7 +88,7 @@ INSTANCE DIA_Ricelord_TRADE (C_INFO)
 	condition	= DIA_Ricelord_TRADE_Condition;
 	information	= DIA_Ricelord_TRADE_Info;
 	permanent	= 1;
-	description	= "M˘ûeme uzav¯Ìt smlouvu.";
+	description	= "M≈Ø≈æeme uzav≈ô√≠t smlouvu.";
 	trade 		= 1;
 };                       
 
@@ -102,8 +102,8 @@ FUNC INT DIA_Ricelord_TRADE_Condition()
 
 FUNC VOID DIA_Ricelord_TRADE_Info()
 {	
-	AI_Output (other, self,"DIA_Ricelord_TRADE_15_00"); //M˘ûeme uzav¯Ìt smlouvu.
-	AI_Output (self, other,"DIA_Ricelord_TRADE_12_01"); //Co mi m˘ûeö nabÌdnout?
+	AI_Output (other, self,"DIA_Ricelord_TRADE_15_00"); //M≈Ø≈æeme uzav≈ô√≠t smlouvu.
+	AI_Output (self, other,"DIA_Ricelord_TRADE_12_01"); //Co mi m≈Ø≈æe≈° nab√≠dnout?
 };
 	
 // ************************************************************
@@ -116,7 +116,7 @@ INSTANCE DIA_Ricelord_LeftySentMe (C_INFO)
 	condition	= DIA_Ricelord_LeftySentMe_Condition;
 	information	= DIA_Ricelord_LeftySentMe_Info;
 	permanent	= 1;
-	description	= "Poslal mÏ Lefty.";
+	description	= "Poslal mƒõ Lefty.";
 };                       
 
 FUNC INT DIA_Ricelord_LeftySentMe_Condition()
@@ -132,8 +132,8 @@ FUNC INT DIA_Ricelord_LeftySentMe_Condition()
 
 FUNC VOID DIA_Ricelord_LeftySentMe_Info()
 {	
-	AI_Output (other, self,"DIA_Ricelord_LeftySentMe_15_00"); //Poslal mÏ Lefty.
-	AI_Output (self, other,"DIA_Ricelord_LeftySentMe_12_01"); //Aha. Co ¯Ìkal?
+	AI_Output (other, self,"DIA_Ricelord_LeftySentMe_15_00"); //Poslal mƒõ Lefty.
+	AI_Output (self, other,"DIA_Ricelord_LeftySentMe_12_01"); //Aha. Co ≈ô√≠kal?
 	Ricelord_AskedForWater = TRUE;
 };
 
@@ -148,7 +148,7 @@ INSTANCE DIA_Ricelord_GetWater (C_INFO)
 	condition	= DIA_Ricelord_GetWater_Condition;
 	information	= DIA_Ricelord_GetWater_Info;
 	permanent	= 1;
-	description	= "M·m p¯inÈst rolnÌk˘m vodu.";
+	description	= "M√°m p≈ôin√©st roln√≠k≈Øm vodu.";
 };                       
 
 FUNC INT DIA_Ricelord_GetWater_Condition()
@@ -161,29 +161,29 @@ FUNC INT DIA_Ricelord_GetWater_Condition()
 
 FUNC VOID DIA_Ricelord_GetWater_Info()
 {	
-	AI_Output (other, self,"DIA_Ricelord_GetWater_15_00"); //M·m p¯inÈst rolnÌk˘m vodu.
+	AI_Output (other, self,"DIA_Ricelord_GetWater_15_00"); //M√°m p≈ôin√©st roln√≠k≈Øm vodu.
 	
 	if(Lefty_WorkDay == Wld_GetDay())
 	{
-		AI_Output			(self, other,"DIA_Ricelord_GetWater_12_01"); //Dob¯e. Tady je tucet l·hvÌ vody.
-		AI_Output			(self, other,"DIA_Ricelord_GetWater_12_02"); //Je toho asi dvakr·t vÌc neû pot¯ebujÌ, tak d·vej pozor, aby se rozdÏlila rovnomÏrnÏ.
+		AI_Output			(self, other,"DIA_Ricelord_GetWater_12_01"); //Dob≈ôe. Tady je tucet l√°hv√≠ vody.
+		AI_Output			(self, other,"DIA_Ricelord_GetWater_12_02"); //Je toho asi dvakr√°t v√≠c ne≈æ pot≈ôebuj√≠, tak d√°vej pozor, aby se rozdƒõlila rovnomƒõrnƒõ.
 
 		CreateInvItems		(self, ItFo_Potion_Water_01, 12);
 		B_GiveInvItems		(self, other, ItFo_Potion_Water_01, 12);
 
 		Ricelord_AskedForWater = FALSE;
-		B_LogEntry			(CH1_CarryWater,"R˝ûov˝ lord mi dal tucet n·dob na vodu.");
+		B_LogEntry			(CH1_CarryWater,"R√Ω≈æov√Ω lord mi dal tucet n√°dob na vodu.");
 
 		AI_StopProcessInfos	(self);
 	}
 	else if (Lefty_WorkDay == Wld_GetDay()-1)
 	{
-		AI_Output (self, other,"DIA_Ricelord_GetWater_TooLate_12_00"); //To bylo vËera, hochu! Bude lepöÌ, kdyû za nÌm zajdeö. MusÌ ti nÏco ¯Ìci.
+		AI_Output (self, other,"DIA_Ricelord_GetWater_TooLate_12_00"); //To bylo vƒçera, hochu! Bude lep≈°√≠, kdy≈æ za n√≠m zajde≈°. Mus√≠ ti nƒõco ≈ô√≠ci.
 		AI_StopProcessInfos	(self);
 	}
 	else
 	{
-		AI_Output (self, other,"DIA_Ricelord_GetWater_TooLate_12_01"); //To bylo p¯ed p·r dny, hochu! MÏl bys za nÌm jÌt. MusÌ ti nÏco ¯Ìci.
+		AI_Output (self, other,"DIA_Ricelord_GetWater_TooLate_12_01"); //To bylo p≈ôed p√°r dny, hochu! Mƒõl bys za n√≠m j√≠t. Mus√≠ ti nƒõco ≈ô√≠ci.
 		AI_StopProcessInfos	(self);
 	};
 };

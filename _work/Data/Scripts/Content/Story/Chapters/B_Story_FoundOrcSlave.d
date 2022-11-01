@@ -3,10 +3,10 @@
 //*****************************************************************************
 func void B_Story_FoundOrcSlave()
 {
-	//-------- Missionsgegenstände --------
+	//-------- MissionsgegenstÃ¤nde --------
 	
-	//-------- Tagebucheinträge --------
-	B_LogEntry			(CH4_UluMulu,"Ve spodní štole Svobodného dolu jsem se setkal s jedním pøítelem Ur-Shaka. Jmenoval se Tarrok. Je otráven a okamitì potøebuje lahvièku speciálního skøetího léku, kterou ztratil pøi útìku. Je nìkde ve spodních štolách dolu. Musím ji najít, jinak zemøe.");
+	//-------- TagebucheintrÃ¤ge --------
+	B_LogEntry			(CH4_UluMulu,"Ve spodnÃ­ Å¡tole SvobodnÃ©ho dolu jsem se setkal s jednÃ­m pÅ™Ã­telem Ur-Shaka. Jmenoval se Tarrok. Je otrÃ¡ven a okamÅ¾itÄ› potÅ™ebuje lahviÄku speciÃ¡lnÃ­ho skÅ™etÃ­ho lÃ©ku, kterou ztratil pÅ™i ÃºtÄ›ku. Je nÄ›kde ve spodnÃ­ch Å¡tolÃ¡ch dolu. MusÃ­m ji najÃ­t, jinak zemÅ™e.");
 
 	//-------- Erfahrung --------
 	B_GiveXP			(XP_FoundOrcSlave);

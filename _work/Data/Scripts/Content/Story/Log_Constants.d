@@ -1,114 +1,114 @@
 //#############################################################################################
 //
-//	Konstanten für die Tagebucheinträge
+//	Konstanten fÃ¼r die TagebucheintrÃ¤ge
 //	-----------------------------------
-//	ALLE Tagebucheinträge über die Funktionen Log_... müssen für den ersten Parameter
+//	ALLE TagebucheintrÃ¤ge Ã¼ber die Funktionen Log_... mÃ¼ssen fÃ¼r den ersten Parameter
 //	eine String-Konstante verwenden, die hier eingetragen ist. Auf keinen Fall direkt
 //	Strings in die Dialog-Skripte schreiben!!!
 //
 //#############################################################################################
 
 
-const string  	Baloros_Waffe 			= 	"Balorova zbraò";
+const string  	Baloros_Waffe 			= 	"Balorova zbraÅˆ";
 const string  	theriddle_log 			= 	"Cizinec";
 //---------------------------------------------------------------------
 //	Gildenaufnahme/Wechsel
 //---------------------------------------------------------------------
-const string	GE_BecomeShadow			=	"Jmenování Stínem";
-const string	GE_BecomeTemplar		=	"Povıšení na templáøe";
-const string	GE_BecomeGuard			=	"Povıšení na stráce";
-const string	GE_BecomeFiremage		=	"Kruh mágù Ohnì";
-const string	GE_BecomeMercenary		=	"Povıšení na oldáka";
+const string	GE_BecomeShadow			=	"JmenovÃ¡nÃ­ StÃ­nem";
+const string	GE_BecomeTemplar		=	"PovÃ½Å¡enÃ­ na templÃ¡Å™e";
+const string	GE_BecomeGuard			=	"PovÃ½Å¡enÃ­ na strÃ¡Å¾ce";
+const string	GE_BecomeFiremage		=	"Kruh mÃ¡gÅ¯ OhnÄ›";
+const string	GE_BecomeMercenary		=	"PovÃ½Å¡enÃ­ na Å¾oldÃ¡ka";
 
 //---------------------------------------------------------------------
-//	Händler und Lehrer
+//	HÃ¤ndler und Lehrer
 //---------------------------------------------------------------------
-const string	GE_TraderOC				=	"Obchodník ve starém táboøe";
-const string	GE_TraderNC				=	"Obchodník v Novém táboøe";
-const string	GE_TraderPSI			=	"Obchodník v Táboøe v bainách";
-const string	GE_TraderOW				=	"Obchodník mimo oblast táborù";
+const string	GE_TraderOC				=	"ObchodnÃ­k ve starÃ©m tÃ¡boÅ™e";
+const string	GE_TraderNC				=	"ObchodnÃ­k v NovÃ©m tÃ¡boÅ™e";
+const string	GE_TraderPSI			=	"ObchodnÃ­k v TÃ¡boÅ™e v baÅ¾inÃ¡ch";
+const string	GE_TraderOW				=	"ObchodnÃ­k mimo oblast tÃ¡borÅ¯";
 
-const string	GE_TeacherOC			=	"Uèitel ve Starém táboøe";
-const string	GE_TeacherNC			=	"Uèitel v Novém táboøe";
-const string	GE_TeacherPSI			=	"Uèitel v Táboøe v bainách";
-const string	GE_TeacherOW			=	"Uèitel mimo oblast táborù";
+const string	GE_TeacherOC			=	"UÄitel ve StarÃ©m tÃ¡boÅ™e";
+const string	GE_TeacherNC			=	"UÄitel v NovÃ©m tÃ¡boÅ™e";
+const string	GE_TeacherPSI			=	"UÄitel v TÃ¡boÅ™e v baÅ¾inÃ¡ch";
+const string	GE_TeacherOW			=	"UÄitel mimo oblast tÃ¡borÅ¯";
 
-const string	GE_AnimalTrophies		=	"Vyuití koøisti";
+const string	GE_AnimalTrophies		=	"VyuÅ¾itÃ­ koÅ™isti";
 
 //---------------------------------------------------------------------
 //	KAPITEL 1
 //---------------------------------------------------------------------
 // Aufnahme Altes Lager
-const string	CH1_MordragKO			=	"Thorusova objednávka";
-const string	CH1_JoinOC			    =	"Pøijetí do Starého tábora";
-const string	CH1_SnafsRecipe			=	"Snafùv recept";
-const string	CH1_LostNek 			=	"Zmizelı stráce";
-const string	CH1_FiskNewDealer		=	"Novı pøechovávaè pro Fiska";
+const string	CH1_MordragKO			=	"Thorusova objednÃ¡vka";
+const string	CH1_JoinOC			    =	"PÅ™ijetÃ­ do StarÃ©ho tÃ¡bora";
+const string	CH1_SnafsRecipe			=	"SnafÅ¯v recept";
+const string	CH1_LostNek 			=	"ZmizelÃ½ strÃ¡Å¾ce";
+const string	CH1_FiskNewDealer		=	"NovÃ½ pÅ™echovÃ¡vaÄ pro Fiska";
 const string	CH1_KalomsRecipe		=	"Recept sekty";
-const string	CH1_BringList     		=	"Zkouška poctivosti";
-const string	CH1_GoToPsi     		=	"Velkı plán Bratrstva";
+const string	CH1_BringList     		=	"ZkouÅ¡ka poctivosti";
+const string	CH1_GoToPsi     		=	"VelkÃ½ plÃ¡n Bratrstva";
 //Aufnahme Neues Lager
-const string	CH1_JoinNC             	=   "Pøijetí do Nového tábora";    
-const string	CH1_CarryWater			=	"Roznašeè vody pro Leftyho";
-const string	CH1_DamLurker           =   "Èíhavec z hráze";
-const string	CH1_SpreadJoints        =   "Nábor zákazníkù"; 
-const string	CH1_DealerJob           =   "Obchodník s drogou";
-const string	CH1_ShrikesHut			=	"Shrikova chatrè";
-const string	CH1_HoratiosTeachings	=	"Rolník Horatio";
-const string	CH1_GotoPsiCamp			=	"Velkı plán Bratrstva";
+const string	CH1_JoinNC             	=   "PÅ™ijetÃ­ do NovÃ©ho tÃ¡bora";    
+const string	CH1_CarryWater			=	"RoznaÅ¡eÄ vody pro Leftyho";
+const string	CH1_DamLurker           =   "ÄŒÃ­havec z hrÃ¡ze";
+const string	CH1_SpreadJoints        =   "NÃ¡bor zÃ¡kaznÃ­kÅ¯"; 
+const string	CH1_DealerJob           =   "ObchodnÃ­k s drogou";
+const string	CH1_ShrikesHut			=	"Shrikova chatrÄ";
+const string	CH1_HoratiosTeachings	=	"RolnÃ­k Horatio";
+const string	CH1_GotoPsiCamp			=	"VelkÃ½ plÃ¡n Bratrstva";
 
 // Aufnahme Sumpflager
-const string	CH1_JoinPsi				=	"Pøijetí do Tábora v bainách";
-const string	CH1_GhorimsRelief		=	"Ghorimovo nahrazení";
-const string	CH1_DeliverWeed			=	"Sklizeò drogy z bain";
-const string	CH1_RecruitDusty		=	"Nové duše pro Bratrstvo";
-const string	CH1_KrautBote			=	"Pøedání drogy Gomezovi";
-const string	CH1_DrugMonopol			=	"Drogovı monopol";
+const string	CH1_JoinPsi				=	"PÅ™ijetÃ­ do TÃ¡bora v baÅ¾inÃ¡ch";
+const string	CH1_GhorimsRelief		=	"Ghorimovo nahrazenÃ­";
+const string	CH1_DeliverWeed			=	"SklizeÅˆ drogy z baÅ¾in";
+const string	CH1_RecruitDusty		=	"NovÃ© duÅ¡e pro Bratrstvo";
+const string	CH1_KrautBote			=	"PÅ™edÃ¡nÃ­ drogy Gomezovi";
+const string	CH1_DrugMonopol			=	"DrogovÃ½ monopol";
 
 //---------------------------------------------------------------------
 //	KAPITEL 2
 //---------------------------------------------------------------------
 const string	CH2_Focus				=	"Ohnisko pro guru";
-const string	CH2_MCEggs				=	"Vımìšek z dùlních èervù";
+const string	CH2_MCEggs				=	"VÃ½mÄ›Å¡ek z dÅ¯lnÃ­ch ÄervÅ¯";
 const string	CH2_Book				=	"Rukopis";
 const string	CH2_SnipesDeal			=	"Aaronova truhlice";
-const string	CH2_StorageShed			=	"Ulbertùv sklad";
+const string	CH2_StorageShed			=	"UlbertÅ¯v sklad";
 
 
 //---------------------------------------------------------------------
 //	KAPITEL 3
 //---------------------------------------------------------------------
-const string	CH3_OrcGraveyard		=	"Skøetí høbitov";
-const string	CH3_FindHerbs			=	"Léèivé byliny pro Y´Beriona";
-const string	CH3_EscapePlanNC		=	"Plán úniku Nového tábora";
-const string	CH3_BringFoci			=	"Hledání ohniskovıch kamenù";
-const string	CH3_Stonehenge			=	"Ohnisko pod kamennım kruhem";
-const string	CH3_Fortress			=	"Ohnisko v horské pevnosti";
-const string	CH3_MonasteryRuin		=	"Ohnisko v rozvalinách kláštera";
-const string	CH3_TrollCanyon			=	"Ohnisko v Trolím kaòonu";
+const string	CH3_OrcGraveyard		=	"SkÅ™etÃ­ hÅ™bitov";
+const string	CH3_FindHerbs			=	"LÃ©ÄivÃ© byliny pro YÂ´Beriona";
+const string	CH3_EscapePlanNC		=	"PlÃ¡n Ãºniku NovÃ©ho tÃ¡bora";
+const string	CH3_BringFoci			=	"HledÃ¡nÃ­ ohniskovÃ½ch kamenÅ¯";
+const string	CH3_Stonehenge			=	"Ohnisko pod kamennÃ½m kruhem";
+const string	CH3_Fortress			=	"Ohnisko v horskÃ© pevnosti";
+const string	CH3_MonasteryRuin		=	"Ohnisko v rozvalinÃ¡ch klÃ¡Å¡tera";
+const string	CH3_TrollCanyon			=	"Ohnisko v TrolÃ­m kaÅˆonu";
 
 
 //---------------------------------------------------------------------
 //	KAPITEL 4
 //---------------------------------------------------------------------
-const string	CH4_Firemages			=	"Pomoc mágù Ohnì";
-const string	CH4_4Friends			=	"Setkání";
-const string	CH4_BannedFromOC		=	"Vyhoštìní z Nového tábora";
+const string	CH4_Firemages			=	"Pomoc mÃ¡gÅ¯ OhnÄ›";
+const string	CH4_4Friends			=	"SetkÃ¡nÃ­";
+const string	CH4_BannedFromOC		=	"VyhoÅ¡tÄ›nÃ­ z NovÃ©ho tÃ¡bora";
 const string	CH4_FindXardas			=	"Xardas nekromant";
-const string	CH4_FindOrcShaman		=	"Vyhoštìnı skøetí šaman";
-const string	CH4_MCPlateArmor		=	"krunıø dùlního èerva";
-const string	CH4_UluMulu				=	"Hledání ULU-MULU";
-const string	CH4_EnterTemple			=	"Cesta do Spáèova chrámu";
-const string	CH4_SldToKdW			= 	"Pøijetí mezi mágy Vody";
+const string	CH4_FindOrcShaman		=	"VyhoÅ¡tÄ›nÃ½ skÅ™etÃ­ Å¡aman";
+const string	CH4_MCPlateArmor		=	"krunÃ½Å™ dÅ¯lnÃ­ho Äerva";
+const string	CH4_UluMulu				=	"HledÃ¡nÃ­ ULU-MULU";
+const string	CH4_EnterTemple			=	"Cesta do SpÃ¡Äova chrÃ¡mu";
+const string	CH4_SldToKdW			= 	"PÅ™ijetÃ­ mezi mÃ¡gy Vody";
 
 //---------------------------------------------------------------------
 //	KAPITEL 5
 //---------------------------------------------------------------------
-const string	CH5_Uriziel				=	"Kouzelnı meè URIZIEL";
+const string	CH5_Uriziel				=	"KouzelnÃ½ meÄ URIZIEL";
 
 
 
 //---------------------------------------------------------------------
 //	KAPITEL 6
 //---------------------------------------------------------------------
-const string	CH6_Sleeper				=	"Procitnutí Spáèe";
+const string	CH6_Sleeper				=	"ProcitnutÃ­ SpÃ¡Äe";

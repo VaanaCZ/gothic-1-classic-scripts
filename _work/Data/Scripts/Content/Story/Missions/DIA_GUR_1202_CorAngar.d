@@ -29,7 +29,7 @@ FUNC VOID DIA_GUR_1202_CorAngar_Exit_Info()
 };
 
 // ************************	
-//		Später Trainer 
+//		SpÃ¤ter Trainer 
 // ************************
 
 instance DIA_CorAngar_LaterTrainer (C_INFO)
@@ -39,7 +39,7 @@ instance DIA_CorAngar_LaterTrainer (C_INFO)
 	condition	= DIA_CorAngar_LaterTrainer_Condition;
 	information	= DIA_CorAngar_LaterTrainer_Info;
 	permanent	= 0;
-	description = "Budeš mì cvièit?";
+	description = "BudeÅ¡ mÄ› cviÄit?";
 };                       
 
 FUNC int DIA_CorAngar_LaterTrainer_Condition()
@@ -49,10 +49,10 @@ FUNC int DIA_CorAngar_LaterTrainer_Condition()
 
 FUNC VOID DIA_CorAngar_LaterTrainer_Info()
 {
-	AI_Output(other,self,"GUR_1202_CorAngar_LaterTrainer_15_00"); //Budeš mì cvièit?
-	AI_Output(self,other,"GUR_1202_CorAngar_LaterTrainer_08_01"); //Chceš se stát silnım bojovníkem, take hledáš nìkoho, kdo tì bude cvièit.
-	AI_Output(self,other,"GUR_1202_CorAngar_LaterTrainer_08_02"); //To je chvályhodné. Já ale nejsem ten, koho potøebuješ.
-	AI_Output(self,other,"GUR_1202_CorAngar_LaterTrainer_08_03"); //Svùj èas vìnuji jen pøíslušníkùm Svatého templáøského kruhu.
+	AI_Output(other,self,"GUR_1202_CorAngar_LaterTrainer_15_00"); //BudeÅ¡ mÄ› cviÄit?
+	AI_Output(self,other,"GUR_1202_CorAngar_LaterTrainer_08_01"); //ChceÅ¡ se stÃ¡t silnÃ½m bojovnÃ­kem, takÅ¾e hledÃ¡Å¡ nÄ›koho, kdo tÄ› bude cviÄit.
+	AI_Output(self,other,"GUR_1202_CorAngar_LaterTrainer_08_02"); //To je chvÃ¡lyhodnÃ©. JÃ¡ ale nejsem ten, koho potÅ™ebujeÅ¡.
+	AI_Output(self,other,"GUR_1202_CorAngar_LaterTrainer_08_03"); //SvÅ¯j Äas vÄ›nuji jen pÅ™Ã­sluÅ¡nÃ­kÅ¯m SvatÃ©ho templÃ¡Å™skÃ©ho kruhu.
 };
 
 // ************************	
@@ -66,7 +66,7 @@ instance DIA_CorAngar_WieTempler (C_INFO)
 	condition	= DIA_CorAngar_WieTempler_Condition;
 	information	= DIA_CorAngar_WieTempler_Info;
 	permanent	= 1;
-	description = "Jak se mùu stát templáøem?";
+	description = "Jak se mÅ¯Å¾u stÃ¡t templÃ¡Å™em?";
 };                       
 
 FUNC int DIA_CorAngar_WieTempler_Condition()
@@ -79,9 +79,9 @@ FUNC int DIA_CorAngar_WieTempler_Condition()
 
 FUNC VOID DIA_CorAngar_WieTempler_Info()
 {
-	AI_Output(other,self,"GUR_1202_CorAngar_WieTempler_15_00"); //Jak se mùu stát templáøem?
-	AI_Output(self,other,"GUR_1202_CorAngar_WieTempler_08_01"); //Zaprvé, musíš slouit jako novic do té doby, ne dokáeš, e upøímnì vìøíš ve Spáèe.
-	AI_Output(self,other,"GUR_1202_CorAngar_WieTempler_08_02"); //Pak se ke mnì vrátíš a já ti dám pokyny.
+	AI_Output(other,self,"GUR_1202_CorAngar_WieTempler_15_00"); //Jak se mÅ¯Å¾u stÃ¡t templÃ¡Å™em?
+	AI_Output(self,other,"GUR_1202_CorAngar_WieTempler_08_01"); //ZaprvÃ©, musÃ­Å¡ slouÅ¾it jako novic do tÃ© doby, neÅ¾ dokÃ¡Å¾eÅ¡, Å¾e upÅ™Ã­mnÄ› vÄ›Å™Ã­Å¡ ve SpÃ¡Äe.
+	AI_Output(self,other,"GUR_1202_CorAngar_WieTempler_08_02"); //Pak se ke mnÄ› vrÃ¡tÃ­Å¡ a jÃ¡ ti dÃ¡m pokyny.
 	AI_StopProcessInfos	( self );
 };
 
@@ -92,7 +92,7 @@ FUNC VOID DIA_CorAngar_WieTempler_Info()
 /////////////////////////////////
 
 //-------------------------------------------------------------------------
-//							STÄRKE UND DEX STEIGERN
+//							STÃ„RKE UND DEX STEIGERN
 //-------------------------------------------------------------------------
 INSTANCE GUR_1202_CorAngar_Teach(C_INFO)
 {
@@ -101,7 +101,7 @@ INSTANCE GUR_1202_CorAngar_Teach(C_INFO)
 	condition	= GUR_1202_CorAngar_Teach_Condition;
 	information	= GUR_1202_CorAngar_Teach_Info;
 	permanent	= 1;
-	description = "Mùeš cvièit mojí sílu a obratnost?";
+	description = "MÅ¯Å¾eÅ¡ cviÄit mojÃ­ sÃ­lu a obratnost?";
 };                       
 
 FUNC INT GUR_1202_CorAngar_Teach_Condition()
@@ -114,8 +114,8 @@ FUNC INT GUR_1202_CorAngar_Teach_Condition()
 
 FUNC VOID GUR_1202_CorAngar_Teach_Info()
 {
-	AI_Output(other,self,"GUR_1202_CorAngar_Teach_15_00"); //Mùeš cvièit mojí sílu a obratnost?
-	AI_Output(self,other,"GUR_1202_CorAngar_Teach_08_01"); //Kadı bojovník musí bıt silnı a obratnı.
+	AI_Output(other,self,"GUR_1202_CorAngar_Teach_15_00"); //MÅ¯Å¾eÅ¡ cviÄit mojÃ­ sÃ­lu a obratnost?
+	AI_Output(self,other,"GUR_1202_CorAngar_Teach_08_01"); //KaÅ¾dÃ½ bojovnÃ­k musÃ­ bÃ½t silnÃ½ a obratnÃ½.
 	
 	Info_ClearChoices	(GUR_1202_CorAngar_Teach);
 	Info_AddChoice		(GUR_1202_CorAngar_Teach,DIALOG_BACK									,GUR_1202_CorAngar_Teach_BACK);
@@ -184,7 +184,7 @@ instance  GUR_1202_CorAngar_WANNABETPL (C_INFO)
 	information		= GUR_1202_CorAngar_WANNABETPL_Info;
 	important		= 0;
 	permanent		= 1;
-	description		= "Chci se stát templáøem!"; 
+	description		= "Chci se stÃ¡t templÃ¡Å™em!"; 
 };
 
 FUNC int  GUR_1202_CorAngar_WANNABETPL_Condition()
@@ -198,29 +198,29 @@ FUNC int  GUR_1202_CorAngar_WANNABETPL_Condition()
 };
 FUNC void  GUR_1202_CorAngar_WANNABETPL_Info()
 {
-	AI_Output			(other, self,"GUR_1202_CorAngar_WANNABETPL_Info_15_01"); //Chci se stát templáøem!
+	AI_Output			(other, self,"GUR_1202_CorAngar_WANNABETPL_Info_15_01"); //Chci se stÃ¡t templÃ¡Å™em!
 	
 	if	(hero.level < 10)
 	{ 
-		AI_Output		(self, other,"GUR_1202_CorAngar_WANNABETPL_Info_08_02"); //Nejsi ještì pøipraven. Mùeš se k nám pøipojit, jakmile získáš víc zkušeností.
+		AI_Output		(self, other,"GUR_1202_CorAngar_WANNABETPL_Info_08_02"); //Nejsi jeÅ¡tÄ› pÅ™ipraven. MÅ¯Å¾eÅ¡ se k nÃ¡m pÅ™ipojit, jakmile zÃ­skÃ¡Å¡ vÃ­c zkuÅ¡enostÃ­.
 	    GUR_1202_CorAngar_WANNABETPL.permanent = 1;
     }
     else if	(hero.level >= 10)
     {
-	    AI_Output		(self, other,"GUR_1202_CorAngar_WANNABETPL_Info_08_03"); //Nadešel èas, aby ses k nám pøidal.
-		AI_Output		(self, other,"GUR_1202_CorAngar_WANNABETPL_Info_08_04"); //Pamatuj, e templáø není jen dobrım bojovníkem a strácem tábora. Jsme vyvolení stráci Spáèe. Stráci ducha.
-		AI_Output		(self, other,"GUR_1202_CorAngar_WANNABETPL_Info_08_05"); //Pouíváme jak fyzickou, tak duchovní sílu. Jen ti, jejich tìla i duše splıvají v jednotì, jsou praví templáøi.
-		AI_Output		(self, other,"GUR_1202_CorAngar_WANNABETPL_Info_08_06"); //Jsem opravdu potìšen, e jsi došel tak daleko v tak krátké dobì. Nyní jsi pøipraven se k nám pøidat.
-		AI_Output		(self, other,"GUR_1202_CorAngar_WANNABETPL_Info_08_07"); //Zapamatuj si: soustøedìná duše a trénované tìlo odolají kadé hrozbì.
-		AI_Output		(self, other,"GUR_1202_CorAngar_WANNABETPL_Info_08_08"); //Teï jdi na cvièištì za Gorem Na Tothem. Dá ti novou zbroj.
+	    AI_Output		(self, other,"GUR_1202_CorAngar_WANNABETPL_Info_08_03"); //NadeÅ¡el Äas, aby ses k nÃ¡m pÅ™idal.
+		AI_Output		(self, other,"GUR_1202_CorAngar_WANNABETPL_Info_08_04"); //Pamatuj, Å¾e templÃ¡Å™ nenÃ­ jen dobrÃ½m bojovnÃ­kem a strÃ¡Å¾cem tÃ¡bora. Jsme vyvolenÃ­ strÃ¡Å¾ci SpÃ¡Äe. StrÃ¡Å¾ci ducha.
+		AI_Output		(self, other,"GUR_1202_CorAngar_WANNABETPL_Info_08_05"); //PouÅ¾Ã­vÃ¡me jak fyzickou, tak duchovnÃ­ sÃ­lu. Jen ti, jejichÅ¾ tÄ›la i duÅ¡e splÃ½vajÃ­ v jednotÄ›, jsou pravÃ­ templÃ¡Å™i.
+		AI_Output		(self, other,"GUR_1202_CorAngar_WANNABETPL_Info_08_06"); //Jsem opravdu potÄ›Å¡en, Å¾e jsi doÅ¡el tak daleko v tak krÃ¡tkÃ© dobÄ›. NynÃ­ jsi pÅ™ipraven se k nÃ¡m pÅ™idat.
+		AI_Output		(self, other,"GUR_1202_CorAngar_WANNABETPL_Info_08_07"); //Zapamatuj si: soustÅ™edÄ›nÃ¡ duÅ¡e a trÃ©novanÃ© tÄ›lo odolajÃ­ kaÅ¾dÃ© hrozbÄ›.
+		AI_Output		(self, other,"GUR_1202_CorAngar_WANNABETPL_Info_08_08"); //TeÄ jdi na cviÄiÅ¡tÄ› za Gorem Na Tothem. DÃ¡ ti novou zbroj.
 		GUR_1202_CorAngar_WANNABETPL.permanent = 0;
 		Npc_SetTrueGuild(hero, GIL_TPL);
 		hero.guild = GIL_TPL;
 
 		Log_CreateTopic	(GE_BecomeTemplar,	LOG_NOTE);
-		B_LogEntry		(GE_BecomeTemplar,"Dnes mì Cor Kalom pasoval na templáøe. Gor Na Toth mi pøedá moji novou zbroj. Obvykle bıvá na cvièišti.");
+		B_LogEntry		(GE_BecomeTemplar,"Dnes mÄ› Cor Kalom pasoval na templÃ¡Å™e. Gor Na Toth mi pÅ™edÃ¡ moji novou zbroj. Obvykle bÃ½vÃ¡ na cviÄiÅ¡ti.");
 		Log_CreateTopic	(GE_TeacherPSI,		LOG_NOTE);
-		B_LogEntry		(GE_TeacherPSI,"Cor Angar cvièí SÍLU, OBRATNOST a boj s OBOURUÈNÍMI ZBRANÌMI. Bude mì uèit a tehdy, kdy se stanu mistrem boje s JEDNORUÈNÍMI ZBRANÌMI. Obvykle bıvá na cvièišti v druhé úrovni mùstkù.");
+		B_LogEntry		(GE_TeacherPSI,"Cor Angar cviÄÃ­ SÃLU, OBRATNOST a boj s OBOURUÄŒNÃMI ZBRANÄšMI. Bude mÄ› uÄit aÅ¾ tehdy, kdyÅ¾ se stanu mistrem boje s JEDNORUÄŒNÃMI ZBRANÄšMI. Obvykle bÃ½vÃ¡ na cviÄiÅ¡ti v druhÃ© Ãºrovni mÅ¯stkÅ¯.");
 	};
 
 };
@@ -250,14 +250,14 @@ FUNC int  GUR_1202_CorAngar_ZWEIHAND1_Condition()
 };
 FUNC void  GUR_1202_CorAngar_ZWEIHAND1_Info()
 {
-	AI_Output			(other, self,"GUR_1202_CorAngar_ZWEIHAND1_Info_15_01"); //Chci se nauèit zacházet s obouruèním meèem.
+	AI_Output			(other, self,"GUR_1202_CorAngar_ZWEIHAND1_Info_15_01"); //Chci se nauÄit zachÃ¡zet s obouruÄnÃ­m meÄem.
 	
 	if (B_GiveSkill(other,NPC_TALENT_2H , 1, LPCOST_TALENT_2H_1))
 	{
-		AI_Output			(self, other,"GUR_1202_CorAngar_ZWEIHAND1_Info_08_02"); //Boj s obouruèním meèem vyaduje urèitou sílu a obratnost.
-		AI_Output			(self, other,"GUR_1202_CorAngar_ZWEIHAND1_Info_08_03"); //Abys dokázal zacházet s obouruèním meèem, musíš bıt nejen pánem svého tìla, ale zrovna tak své mysli.
-		AI_Output			(self, other,"GUR_1202_CorAngar_ZWEIHAND1_Info_08_04"); //Jedinì kdy se staneš pánem svého tìla i mysli zároveò, mùeš se nauèit umìní boje.
-		AI_Output			(self, other,"GUR_1202_CorAngar_ZWEIHAND1_Info_08_05"); //Klíèem úspìchu je soustøedìní. Soustøedìná jednota tìla a mysli.
+		AI_Output			(self, other,"GUR_1202_CorAngar_ZWEIHAND1_Info_08_02"); //Boj s obouruÄnÃ­m meÄem vyÅ¾aduje urÄitou sÃ­lu a obratnost.
+		AI_Output			(self, other,"GUR_1202_CorAngar_ZWEIHAND1_Info_08_03"); //Abys dokÃ¡zal zachÃ¡zet s obouruÄnÃ­m meÄem, musÃ­Å¡ bÃ½t nejen pÃ¡nem svÃ©ho tÄ›la, ale zrovna tak svÃ© mysli.
+		AI_Output			(self, other,"GUR_1202_CorAngar_ZWEIHAND1_Info_08_04"); //JedinÄ› kdyÅ¾ se staneÅ¡ pÃ¡nem svÃ©ho tÄ›la i mysli zÃ¡roveÅˆ, mÅ¯Å¾eÅ¡ se nauÄit umÄ›nÃ­ boje.
+		AI_Output			(self, other,"GUR_1202_CorAngar_ZWEIHAND1_Info_08_05"); //KlÃ­Äem ÃºspÄ›chu je soustÅ™edÄ›nÃ­. SoustÅ™edÄ›nÃ¡ jednota tÄ›la a mysli.
 
 		GUR_1202_CorAngar_ZWEIHAND1.permanent		= 0;
 
@@ -289,17 +289,17 @@ FUNC int  GUR_1202_CorAngar_ZWEIHAND2_Condition()
 };
 FUNC void  GUR_1202_CorAngar_ZWEIHAND2_Info()
 {
-	AI_Output			(other, self,"GUR_1202_CorAngar_ZWEIHAND2_Info_15_01");		//Chci se nauèit víc o boji s obouruèními zbranìmi.
+	AI_Output			(other, self,"GUR_1202_CorAngar_ZWEIHAND2_Info_15_01");		//Chci se nauÄit vÃ­c o boji s obouruÄnÃ­mi zbranÄ›mi.
 	
 	if (B_GiveSkill(other,NPC_TALENT_2H , 2, LPCOST_TALENT_2H_2))
 	{
-		AI_Output			(self, other,"GUR_1202_CorAngar_ZWEIHAND2_Info_08_02"); //Teï ovládáš tanec s ostøím. Nauèím tì, jak se stát mistrem v boji.
-		AI_Output			(self, other,"GUR_1202_CorAngar_ZWEIHAND2_Info_08_03"); //Pouij duchovní sílu k tomu, abys vyèetl protivníkùv pohyb, ještì ne zaútoèí.
-		AI_Output			(self, other,"GUR_1202_CorAngar_ZWEIHAND2_Info_08_04"); //Znalost protivníkovy taktiky boje je polovièní vítìzství.
-		AI_Output			(self, other,"GUR_1202_CorAngar_ZWEIHAND2_Info_08_05"); //Buï rychlı, tvoje útoky musí bıt pøekvapující a plynulé, údery pøesné a tvrdé.
-		AI_Output			(self, other,"GUR_1202_CorAngar_ZWEIHAND2_Info_08_06"); //Nauè se nevnímat bolest. Vısledek zápasu vdy nakonec rozhodne síla tvojí vùle.
-		AI_Output			(self, other,"GUR_1202_CorAngar_ZWEIHAND2_Info_08_07"); //Zùstaò klidnı. Pøeiješ jen tehdy, kdy se pustíš do boje s klidem a soustøedìním.
-		AI_Output			(self, other,"GUR_1202_CorAngar_ZWEIHAND2_Info_08_08"); //Vyuívej své umìní obezøetnì. A zapamatuj si: vyprovokovat boj znamená toté, co v nìm zemøít.
+		AI_Output			(self, other,"GUR_1202_CorAngar_ZWEIHAND2_Info_08_02"); //TeÄ ovlÃ¡dÃ¡Å¡ tanec s ostÅ™Ã­m. NauÄÃ­m tÄ›, jak se stÃ¡t mistrem v boji.
+		AI_Output			(self, other,"GUR_1202_CorAngar_ZWEIHAND2_Info_08_03"); //PouÅ¾ij duchovnÃ­ sÃ­lu k tomu, abys vyÄetl protivnÃ­kÅ¯v pohyb, jeÅ¡tÄ› neÅ¾ zaÃºtoÄÃ­.
+		AI_Output			(self, other,"GUR_1202_CorAngar_ZWEIHAND2_Info_08_04"); //Znalost protivnÃ­kovy taktiky boje je poloviÄnÃ­ vÃ­tÄ›zstvÃ­.
+		AI_Output			(self, other,"GUR_1202_CorAngar_ZWEIHAND2_Info_08_05"); //BuÄ rychlÃ½, tvoje Ãºtoky musÃ­ bÃ½t pÅ™ekvapujÃ­cÃ­ a plynulÃ©, Ãºdery pÅ™esnÃ© a tvrdÃ©.
+		AI_Output			(self, other,"GUR_1202_CorAngar_ZWEIHAND2_Info_08_06"); //NauÄ se nevnÃ­mat bolest. VÃ½sledek zÃ¡pasu vÅ¾dy nakonec rozhodne sÃ­la tvojÃ­ vÅ¯le.
+		AI_Output			(self, other,"GUR_1202_CorAngar_ZWEIHAND2_Info_08_07"); //ZÅ¯staÅˆ klidnÃ½. PÅ™eÅ¾ijeÅ¡ jen tehdy, kdyÅ¾ se pustÃ­Å¡ do boje s klidem a soustÅ™edÄ›nÃ­m.
+		AI_Output			(self, other,"GUR_1202_CorAngar_ZWEIHAND2_Info_08_08"); //VyuÅ¾Ã­vej svÃ© umÄ›nÃ­ obezÅ™etnÄ›. A zapamatuj si: vyprovokovat boj znamenÃ¡ totÃ©Å¾, co v nÄ›m zemÅ™Ã­t.
 
 		GUR_1202_CorAngar_ZWEIHAND2.permanent = 0;
 
@@ -321,7 +321,7 @@ FUNC void  GUR_1202_CorAngar_ZWEIHAND2_Info()
 //#####################################################################
  
 // **************************************************************************
-// 				nach der großen Beschwörung
+// 				nach der groÃŸen BeschwÃ¶rung
 // **************************************************************************
 instance  GUR_1202_CorAngar_SENDS (C_INFO)
 {
@@ -345,32 +345,32 @@ FUNC int  GUR_1202_CorAngar_SENDS_Condition()
 FUNC void  GUR_1202_CorAngar_SENDS_Info()
 {
 	AI_Output			(other, self,"GUR_1202_CorAngar_SENDS_Info_15_01"); //Jak to dopadlo?
-	AI_Output			(self, other,"GUR_1202_CorAngar_SENDS_Info_08_02"); //Vidina byla pøíliš nejasná. Pøinesla nám víc hádanek ne odpovìdí.
-	AI_Output			(self, other,"GUR_1202_CorAngar_SENDS_Info_08_03"); //Jedna vìc je však docela jasná: vidìl jsem jednoho skøeta v jeskyni. Nedaleko je jedna stará opuštìná jeskynì skøetù, kterou  pouívali pro bohosluby.
-	AI_Output			(self, other,"GUR_1202_CorAngar_SENDS_Info_08_04"); //Skøeti tam pohøbívali své mrtvé, proto tomu systému jeskyní øíkáme Skøetí høbitov.
-	AI_Output			(self, other,"GUR_1202_CorAngar_SENDS_Info_08_05"); //Guru Baal Lukor tam odešel s nìkolika templáøi. Moná tam najdeme nìco, co by nám pomohlo porozumìt té vidinì.
-	AI_Output			(self, other,"GUR_1202_CorAngar_SENDS_Info_08_06"); //Potøebuji, aby se tam nìkdo porozhlédl a dal mi zprávu o stavu vìcí.
-	AI_Output			(other, self,"GUR_1202_CorAngar_SENDS_Info_15_07"); //Proè tam nejdeš sám? Jsi pøece vùdce templáøù!
-	AI_Output			(self, other,"GUR_1202_CorAngar_SENDS_Info_08_08"); //Mùj úkol je chránit Osvíceného. Musím tu zùstat s Y´Berionem a støeit ho.
-	AI_Output			(self, other,"GUR_1202_CorAngar_SENDS_Info_08_09"); //Odvedl jsi táboru dobré sluby. Vìøím ti víc ne komukoliv jinému odtud.
-	AI_Output			(self, other,"GUR_1202_CorAngar_SENDS_Info_08_10"); //Chci tì poádat, abys šel do Skøetího høbitova a podal mi zprávu, co tam templáøi našli.
+	AI_Output			(self, other,"GUR_1202_CorAngar_SENDS_Info_08_02"); //Vidina byla pÅ™Ã­liÅ¡ nejasnÃ¡. PÅ™inesla nÃ¡m vÃ­c hÃ¡danek neÅ¾ odpovÄ›dÃ­.
+	AI_Output			(self, other,"GUR_1202_CorAngar_SENDS_Info_08_03"); //Jedna vÄ›c je vÅ¡ak docela jasnÃ¡: vidÄ›l jsem jednoho skÅ™eta v jeskyni. Nedaleko je jedna starÃ¡ opuÅ¡tÄ›nÃ¡ jeskynÄ› skÅ™etÅ¯, kterou  pouÅ¾Ã­vali pro bohosluÅ¾by.
+	AI_Output			(self, other,"GUR_1202_CorAngar_SENDS_Info_08_04"); //SkÅ™eti tam pohÅ™bÃ­vali svÃ© mrtvÃ©, proto tomu systÃ©mu jeskynÃ­ Å™Ã­kÃ¡me SkÅ™etÃ­ hÅ™bitov.
+	AI_Output			(self, other,"GUR_1202_CorAngar_SENDS_Info_08_05"); //Guru Baal Lukor tam odeÅ¡el s nÄ›kolika templÃ¡Å™i. MoÅ¾nÃ¡ tam najdeme nÄ›co, co by nÃ¡m pomohlo porozumÄ›t tÃ© vidinÄ›.
+	AI_Output			(self, other,"GUR_1202_CorAngar_SENDS_Info_08_06"); //PotÅ™ebuji, aby se tam nÄ›kdo porozhlÃ©dl a dal mi zprÃ¡vu o stavu vÄ›cÃ­.
+	AI_Output			(other, self,"GUR_1202_CorAngar_SENDS_Info_15_07"); //ProÄ tam nejdeÅ¡ sÃ¡m? Jsi pÅ™ece vÅ¯dce templÃ¡Å™Å¯!
+	AI_Output			(self, other,"GUR_1202_CorAngar_SENDS_Info_08_08"); //MÅ¯j Ãºkol je chrÃ¡nit OsvÃ­cenÃ©ho. MusÃ­m tu zÅ¯stat s YÂ´Berionem a stÅ™eÅ¾it ho.
+	AI_Output			(self, other,"GUR_1202_CorAngar_SENDS_Info_08_09"); //Odvedl jsi tÃ¡boru dobrÃ© sluÅ¾by. VÄ›Å™Ã­m ti vÃ­c neÅ¾ komukoliv jinÃ©mu odtud.
+	AI_Output			(self, other,"GUR_1202_CorAngar_SENDS_Info_08_10"); //Chci tÄ› poÅ¾Ã¡dat, abys Å¡el do SkÅ™etÃ­ho hÅ™bitova a podal mi zprÃ¡vu, co tam templÃ¡Å™i naÅ¡li.
 	
 	Info_ClearChoices	(GUR_1202_CorAngar_SENDS);
-	Info_AddChoice		(GUR_1202_CorAngar_SENDS,"Co dostanu za odmìnu?",	GUR_1202_CorAngar_SENDS_EARN);
-	Info_AddChoice		(GUR_1202_CorAngar_SENDS,"Ihned se vydám na cestu!",	GUR_1202_CorAngar_SENDS_KNOW);
+	Info_AddChoice		(GUR_1202_CorAngar_SENDS,"Co dostanu za odmÄ›nu?",	GUR_1202_CorAngar_SENDS_EARN);
+	Info_AddChoice		(GUR_1202_CorAngar_SENDS,"Ihned se vydÃ¡m na cestu!",	GUR_1202_CorAngar_SENDS_KNOW);
 };  
 func void GUR_1202_CorAngar_SENDS_EARN()
 {
-	AI_Output			(other, self,"GUR_1202_CorAngar_SENDS_EARN_Info_15_01"); //Co dostanu za odmìnu?
-	AI_Output			(self, other,"GUR_1202_CorAngar_SENDS_EARN_Info_08_02"); //Chceš rudu? Vidím, e jsem se v tobì zmılil. Ale potøebuju tì. Tady je 100 nugetù. Víc u nedostaneš!
+	AI_Output			(other, self,"GUR_1202_CorAngar_SENDS_EARN_Info_15_01"); //Co dostanu za odmÄ›nu?
+	AI_Output			(self, other,"GUR_1202_CorAngar_SENDS_EARN_Info_08_02"); //ChceÅ¡ rudu? VidÃ­m, Å¾e jsem se v tobÄ› zmÃ½lil. Ale potÅ™ebuju tÄ›. Tady je 100 nugetÅ¯. VÃ­c uÅ¾ nedostaneÅ¡!
 	CreateInvItems		(self,ItMiNugget,100);
 	B_GiveInvItems      (self, hero, ItMiNugget,100);
 };
 
 func void GUR_1202_CorAngar_SENDS_KNOW()
 {
-	AI_Output			(other, self,"GUR_1202_CorAngar_SENDS_KNOW_Info_15_01"); //Ihned se vydám na cestu!
-	AI_Output			(self, other,"GUR_1202_CorAngar_SENDS_KNOW_Info_08_02"); //Ještì ne odejdeš, vem si tenhle prsten. A tì ochrání v boji!
+	AI_Output			(other, self,"GUR_1202_CorAngar_SENDS_KNOW_Info_15_01"); //Ihned se vydÃ¡m na cestu!
+	AI_Output			(self, other,"GUR_1202_CorAngar_SENDS_KNOW_Info_08_02"); //JeÅ¡tÄ› neÅ¾ odejdeÅ¡, vem si tenhle prsten. AÅ¥ tÄ› ochrÃ¡nÃ­ v boji!
 	
 	B_Story_GotoOrcGraveyard();
 
@@ -386,7 +386,7 @@ instance  GUR_1202_CorAngar_WHERE (C_INFO)
 	information		= GUR_1202_CorAngar_WHERE_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Kde je Skøetí høbitov?"; 
+	description		= "Kde je SkÅ™etÃ­ hÅ™bitov?"; 
 };
 
 FUNC int  GUR_1202_CorAngar_WHERE_Condition()
@@ -399,10 +399,10 @@ FUNC int  GUR_1202_CorAngar_WHERE_Condition()
 };
 FUNC void  GUR_1202_CorAngar_WHERE_Info()
 {
-	AI_Output			(other, self,"GUR_1202_CorAngar_WHERE_Info_15_01"); //Kde je Skøetí høbitov?
-	AI_Output			(self, other,"GUR_1202_CorAngar_WHERE_Info_08_02"); //Nedaleko odtud. Novic Talas zná cestu. Najdeš ho na dvoøe u chrámu. Dovede tì tam.
+	AI_Output			(other, self,"GUR_1202_CorAngar_WHERE_Info_15_01"); //Kde je SkÅ™etÃ­ hÅ™bitov?
+	AI_Output			(self, other,"GUR_1202_CorAngar_WHERE_Info_08_02"); //Nedaleko odtud. Novic Talas znÃ¡ cestu. NajdeÅ¡ ho na dvoÅ™e u chrÃ¡mu. Dovede tÄ› tam.
 
-	B_LogEntry		(CH3_OrcGraveyard,"Novic Talas mi ukáe cestu k skøetímu høbitovu. Poèká na mì na nádvoøí chrámu.");
+	B_LogEntry		(CH3_OrcGraveyard,"Novic Talas mi ukÃ¡Å¾e cestu k skÅ™etÃ­mu hÅ™bitovu. PoÄkÃ¡ na mÄ› na nÃ¡dvoÅ™Ã­ chrÃ¡mu.");
 };  
 
 // **************************************************************************
@@ -415,7 +415,7 @@ instance  GUR_1202_CorAngar_AFTER (C_INFO)
 	information		= GUR_1202_CorAngar_AFTER_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Byl jsem na Skøetím høbitovì. Není TAM NIC. ádnı Spáè, ádné znamení, prostì nic."; 
+	description		= "Byl jsem na SkÅ™etÃ­m hÅ™bitovÄ›. NenÃ­ TAM NIC. Å½Ã¡dnÃ½ SpÃ¡Ä, Å¾Ã¡dnÃ© znamenÃ­, prostÄ› nic."; 
 };
 
 FUNC int  GUR_1202_CorAngar_AFTER_Condition()
@@ -430,18 +430,18 @@ FUNC int  GUR_1202_CorAngar_AFTER_Condition()
 FUNC void  GUR_1202_CorAngar_AFTER_Info()
 {
 	
-	AI_Output			(other, self,"GUR_1202_CorAngar_AFTER_Info_15_01"); //Byl jsem na Skøetím høbitovì. Není TAM NIC. ádnı Spáè, ádné znamení, prostì nic.
-	AI_Output			(self, other,"GUR_1202_CorAngar_AFTER_Info_08_02"); //A co Baal Lukor a templáøi?
-	AI_Output			(other, self,"GUR_1202_CorAngar_AFTER_Info_15_03"); //Jsou mrtví.
-	AI_Output			(self, other,"GUR_1202_CorAngar_AFTER_Info_08_04"); //Mrtví? Ale proè? Jak se to stalo?
-	AI_Output			(other, self,"GUR_1202_CorAngar_AFTER_Info_15_05"); //Celı jeskynní systém se hemí skøety. Zabili všechny templáøe.
-	AI_Output			(other, self,"GUR_1202_CorAngar_AFTER_Info_15_06"); //Baal Lukor a já jsme pøeili, ale Lukor znenadání zešílel.
-	AI_Output			(other, self,"GUR_1202_CorAngar_AFTER_Info_15_07"); //Vykøikoval, e mu Spáè naøídil, aby mì zabil, a chystal se svùj rozkaz splnit.
-	AI_Output			(self, other,"GUR_1202_CorAngar_AFTER_Info_08_08"); //Vypadalo to, e se nemùe smíøit s tím, e nic nenašel.
-	AI_Output			(self, other,"GUR_1202_CorAngar_AFTER_Info_08_09"); //Nemùu uvìøit, e by Spáèùv vliv mohl vést k takovımhle násilnım èinùm.
-	AI_Output			(self, other,"GUR_1202_CorAngar_AFTER_Info_08_10"); //To nemùe bıt... nemùe bıt... JEN TAK!
-	AI_Output			(self, other,"GUR_1202_CorAngar_AFTER_Info_08_11"); //Nejdùleitìjší ale je, e se to Baalu Lukorovi v jeho šílenství nepodaøilo.
-	AI_Output			(self, other,"GUR_1202_CorAngar_AFTER_Info_08_12"); //Y´Berion je teï naše jediná nadìje.
+	AI_Output			(other, self,"GUR_1202_CorAngar_AFTER_Info_15_01"); //Byl jsem na SkÅ™etÃ­m hÅ™bitovÄ›. NenÃ­ TAM NIC. Å½Ã¡dnÃ½ SpÃ¡Ä, Å¾Ã¡dnÃ© znamenÃ­, prostÄ› nic.
+	AI_Output			(self, other,"GUR_1202_CorAngar_AFTER_Info_08_02"); //A co Baal Lukor a templÃ¡Å™i?
+	AI_Output			(other, self,"GUR_1202_CorAngar_AFTER_Info_15_03"); //Jsou mrtvÃ­.
+	AI_Output			(self, other,"GUR_1202_CorAngar_AFTER_Info_08_04"); //MrtvÃ­? Ale proÄ? Jak se to stalo?
+	AI_Output			(other, self,"GUR_1202_CorAngar_AFTER_Info_15_05"); //CelÃ½ jeskynnÃ­ systÃ©m se hemÅ¾Ã­ skÅ™ety. Zabili vÅ¡echny templÃ¡Å™e.
+	AI_Output			(other, self,"GUR_1202_CorAngar_AFTER_Info_15_06"); //Baal Lukor a jÃ¡ jsme pÅ™eÅ¾ili, ale Lukor znenadÃ¡nÃ­ zeÅ¡Ã­lel.
+	AI_Output			(other, self,"GUR_1202_CorAngar_AFTER_Info_15_07"); //VykÅ™ikoval, Å¾e mu SpÃ¡Ä naÅ™Ã­dil, aby mÄ› zabil, a chystal se svÅ¯j rozkaz splnit.
+	AI_Output			(self, other,"GUR_1202_CorAngar_AFTER_Info_08_08"); //Vypadalo to, Å¾e se nemÅ¯Å¾e smÃ­Å™it s tÃ­m, Å¾e nic nenaÅ¡el.
+	AI_Output			(self, other,"GUR_1202_CorAngar_AFTER_Info_08_09"); //NemÅ¯Å¾u uvÄ›Å™it, Å¾e by SpÃ¡ÄÅ¯v vliv mohl vÃ©st k takovÃ½mhle nÃ¡silnÃ½m ÄinÅ¯m.
+	AI_Output			(self, other,"GUR_1202_CorAngar_AFTER_Info_08_10"); //To nemÅ¯Å¾e bÃ½t... nemÅ¯Å¾e bÃ½t... JEN TAK!
+	AI_Output			(self, other,"GUR_1202_CorAngar_AFTER_Info_08_11"); //NejdÅ¯leÅ¾itÄ›jÅ¡Ã­ ale je, Å¾e se to Baalu Lukorovi v jeho Å¡Ã­lenstvÃ­ nepodaÅ™ilo.
+	AI_Output			(self, other,"GUR_1202_CorAngar_AFTER_Info_08_12"); //YÂ´Berion je teÄ naÅ¡e jedinÃ¡ nadÄ›je.
 	 
 
 	B_GiveXP			(XP_ReportToCorAngar);
@@ -458,7 +458,7 @@ INSTANCE Info_CorAngar_FindHerb (C_INFO)
 	information	= Info_CorAngar_FindHerb_Info;
 	permanent	= 0;
 	important 	= 0;
-	description = "Co je s Y´Berionem?";
+	description = "Co je s YÂ´Berionem?";
 };
 
 func INT Info_CorAngar_FindHerb_Condition()
@@ -472,17 +472,17 @@ func INT Info_CorAngar_FindHerb_Condition()
 
 FUNC VOID Info_CorAngar_FindHerb_Info()
 {
-	AI_Output			(other, self,"Mis_3_NC_CorAngar_FindHerb_15_01"); //Co je s Y´Berionem?
-	AI_Output			(self, other,"Mis_3_NC_CorAngar_FindHerb_08_02"); //Nedokáe se sám probudit. Je stále slabší a slabší. Vím, jak ho probudit, ale potøebuji tvou pomoc.
-	AI_Output			(other, self,"Mis_3_NC_CorAngar_FindHerb_15_03"); //Co mám udìlat?
-	AI_Output			(self, other,"Mis_3_NC_CorAngar_FindHerb_08_04"); //Pøines mi z bain léèivé byliny. Pìt nejsilnìjších druhù by mìlo staèit!
-	AI_Output			(self, other,"Mis_3_NC_CorAngar_FindHerb_08_05"); //Prosím rychle!
+	AI_Output			(other, self,"Mis_3_NC_CorAngar_FindHerb_15_01"); //Co je s YÂ´Berionem?
+	AI_Output			(self, other,"Mis_3_NC_CorAngar_FindHerb_08_02"); //NedokÃ¡Å¾e se sÃ¡m probudit. Je stÃ¡le slabÅ¡Ã­ a slabÅ¡Ã­. VÃ­m, jak ho probudit, ale potÅ™ebuji tvou pomoc.
+	AI_Output			(other, self,"Mis_3_NC_CorAngar_FindHerb_15_03"); //Co mÃ¡m udÄ›lat?
+	AI_Output			(self, other,"Mis_3_NC_CorAngar_FindHerb_08_04"); //PÅ™ines mi z baÅ¾in lÃ©ÄivÃ© byliny. PÄ›t nejsilnÄ›jÅ¡Ã­ch druhÅ¯ by mÄ›lo staÄit!
+	AI_Output			(self, other,"Mis_3_NC_CorAngar_FindHerb_08_05"); //ProsÃ­m rychle!
 	AI_StopProcessInfos	(self);
 	CorAngar_FindHerb = LOG_RUNNING;
 	
 	Log_CreateTopic		(CH3_FindHerbs,	LOG_MISSION);
 	Log_SetTopicStatus	(CH3_FindHerbs,	LOG_RUNNING);
-	B_LogEntry		(CH3_FindHerbs,"Y´Berion je stále v bezvìdomí. Cor Angar mì poádal, abych nasbíral pìt nejsilnìjších léèivıch bylin.");
+	B_LogEntry		(CH3_FindHerbs,"YÂ´Berion je stÃ¡le v bezvÄ›domÃ­. Cor Angar mÄ› poÅ¾Ã¡dal, abych nasbÃ­ral pÄ›t nejsilnÄ›jÅ¡Ã­ch lÃ©ÄivÃ½ch bylin.");
 };
 
 // ---------------------------- FindHerb - WHERE ---------------------------------------
@@ -508,11 +508,11 @@ FUNC INT Info_CorAngar_FindHerb_WHERE_Condition()
 FUNC VOID Info_CorAngar_FindHerb_WHERE_Info()
 {
 	AI_Output			(other, self,"Info_CorAngar_FindHerb_WHERE_15_01"); //Kde najdu ty byliny?
-	AI_Output			(self, other,"Info_CorAngar_FindHerb_WHERE_08_02"); //Hledej je v bainách za táborem. Musíš pro nì jít hluboko do moèálu, ale dávej pozor, a tì nedostanou moèáloví raloci.
-	AI_Output			(self, other,"Info_CorAngar_FindHerb_WHERE_08_03"); //A teï u mì nezdruj. Bì!
+	AI_Output			(self, other,"Info_CorAngar_FindHerb_WHERE_08_02"); //Hledej je v baÅ¾inÃ¡ch za tÃ¡borem. MusÃ­Å¡ pro nÄ› jÃ­t hluboko do moÄÃ¡lu, ale dÃ¡vej pozor, aÅ¥ tÄ› nedostanou moÄÃ¡lovÃ­ Å¾raloci.
+	AI_Output			(self, other,"Info_CorAngar_FindHerb_WHERE_08_03"); //A teÄ uÅ¾ mÄ› nezdrÅ¾uj. BÄ›Å¾!
 	AI_StopProcessInfos	(self);
 
-	B_LogEntry		(CH3_FindHerbs,"Léèivé byliny na lék pro Y´Beriona rostou hluboko v bainách za táborem Bratrstva. Jsou tam také nebezpeèní moèáloví raloci. Musím mít oèi na stopkách.");
+	B_LogEntry		(CH3_FindHerbs,"LÃ©ÄivÃ© byliny na lÃ©k pro YÂ´Beriona rostou hluboko v baÅ¾inÃ¡ch za tÃ¡borem Bratrstva. Jsou tam takÃ© nebezpeÄnÃ­ moÄÃ¡lovÃ­ Å¾raloci. MusÃ­m mÃ­t oÄi na stopkÃ¡ch.");
 };
 
 // ---------------------------- FindHerb - LOOK ---------------------------------------
@@ -524,7 +524,7 @@ INSTANCE Info_CorAngar_FindHerb_LOOK (C_INFO)
 	information	= Info_CorAngar_FindHerb_LOOK_Info;
 	permanent	= 0;
 	important	= 0; 
-	description = "Jak ty byliny poznám?";
+	description = "Jak ty byliny poznÃ¡m?";
 };                       
 
 FUNC INT Info_CorAngar_FindHerb_LOOK_Condition()
@@ -537,12 +537,12 @@ FUNC INT Info_CorAngar_FindHerb_LOOK_Condition()
 
 FUNC VOID Info_CorAngar_FindHerb_LOOK_Info()
 {
-	AI_Output			(other, self,"Info_CorAngar_FindHerb_LOOK_15_01"); //Jak ty byliny poznám?
-	AI_Output			(self, other,"Info_CorAngar_FindHerb_LOOK_08_02"); //Vypadají jako hvìzdy s osmi zelenımi a oranovımi cípy.
-	AI_Output			(self, other,"Info_CorAngar_FindHerb_LOOK_08_03"); //A teï se vydej na cestu.
+	AI_Output			(other, self,"Info_CorAngar_FindHerb_LOOK_15_01"); //Jak ty byliny poznÃ¡m?
+	AI_Output			(self, other,"Info_CorAngar_FindHerb_LOOK_08_02"); //VypadajÃ­ jako hvÄ›zdy s osmi zelenÃ½mi a oranÅ¾ovÃ½mi cÃ­py.
+	AI_Output			(self, other,"Info_CorAngar_FindHerb_LOOK_08_03"); //A teÄ se vydej na cestu.
 	AI_StopProcessInfos	(self);
 
-	B_LogEntry		(CH3_FindHerbs,"Léèivé byliny vypadají jako hvìzdice s ètyømi zelenımi a ètyømi oranovımi okvìtními lístky.");
+	B_LogEntry		(CH3_FindHerbs,"LÃ©ÄivÃ© byliny vypadajÃ­ jako hvÄ›zdice s ÄtyÅ™mi zelenÃ½mi a ÄtyÅ™mi oranÅ¾ovÃ½mi okvÄ›tnÃ­mi lÃ­stky.");
 };
 
 
@@ -556,7 +556,7 @@ INSTANCE Info_CorAngar_FindHerb_Running (C_INFO)
 	information	= Info_CorAngar_FindHerb_Running_Info;
 	permanent	= 1;
 	important	= 0; 
-	description = "Ještì jsem nenašel léèivıch bylin dost.";
+	description = "JeÅ¡tÄ› jsem nenaÅ¡el lÃ©ÄivÃ½ch bylin dost.";
 };                       
 
 FUNC INT Info_CorAngar_FindHerb_Running_Condition()
@@ -572,12 +572,12 @@ FUNC INT Info_CorAngar_FindHerb_Running_Condition()
 
 FUNC VOID Info_CorAngar_FindHerb_Running_Info()
 {
-	AI_Output			(other, self,"Info_CorAngar_FindHerb_Running_15_01");//Ještì jsem nenašel léèivıch bylin dost.
-	AI_Output			(self, other,"Info_CorAngar_FindHerb_Running_08_02");//Moná má nìjaké na skladì Fortuno, obchodník bylinami.
-	AI_Output			(self, other,"Info_CorAngar_FindHerb_Running_08_03");//Pospìš. Potøebuji jich pìt. Y´Berion ztratil pøíliš èasu.
+	AI_Output			(other, self,"Info_CorAngar_FindHerb_Running_15_01");//JeÅ¡tÄ› jsem nenaÅ¡el lÃ©ÄivÃ½ch bylin dost.
+	AI_Output			(self, other,"Info_CorAngar_FindHerb_Running_08_02");//MoÅ¾nÃ¡ mÃ¡ nÄ›jakÃ© na skladÄ› Fortuno, obchodnÃ­k bylinami.
+	AI_Output			(self, other,"Info_CorAngar_FindHerb_Running_08_03");//PospÄ›Å¡. PotÅ™ebuji jich pÄ›t. YÂ´Berion ztratil pÅ™Ã­liÅ¡ Äasu.
 	AI_StopProcessInfos	(self);
 
-	//-------- Fortuno die Kräuter "unterschieben" --------
+	//-------- Fortuno die KrÃ¤uter "unterschieben" --------
 	if	!Fortuno_HasYBerionHerbs
 	{
 		var C_NPC	fortuno;
@@ -585,7 +585,7 @@ FUNC VOID Info_CorAngar_FindHerb_Running_Info()
 		CreateInvItems		(fortuno,	ItFo_Plants_Herb_03,	5);	
 
 		Fortuno_HasYBerionHerbs = TRUE;
-		B_LogEntry		(CH3_FindHerbs,"Fortuno, obchodník s bylinkami z Bratrstva, by takové byliny mohl mít.");
+		B_LogEntry		(CH3_FindHerbs,"Fortuno, obchodnÃ­k s bylinkami z Bratrstva, by takovÃ© byliny mohl mÃ­t.");
 	};
 };
 
@@ -596,7 +596,7 @@ INSTANCE Info_CorAngar_FindHerb_Success (C_INFO)
 	condition	= Info_CorAngar_FindHerb_Success_Condition;
 	information	= Info_CorAngar_FindHerb_Success_Info;
 	permanent	= 0;
-	description	= "Mám léèivé byliny pro Y´Beriona.";
+	description	= "MÃ¡m lÃ©ÄivÃ© byliny pro YÂ´Beriona.";
 };                       
 
 FUNC INT Info_CorAngar_FindHerb_Success_Condition()
@@ -609,11 +609,11 @@ FUNC INT Info_CorAngar_FindHerb_Success_Condition()
 
 FUNC VOID Info_CorAngar_FindHerb_Success_Info()
 {	
-	AI_Output			(other, self,"Info_CorAngar_FindHerb_Success_15_01"); //Mám léèivé byliny pro Y´Beriona.
-	AI_Output			(self, other,"Info_CorAngar_FindHerb_Success_08_02"); //Vıbornì. Zatímco jsi byl pryè, Y´Berion na chvilku procitl.
-	AI_Output			(other, self,"Info_CorAngar_FindHerb_Success_15_03"); //Øíkal nìco?
-	AI_Output			(self, other,"Info_CorAngar_FindHerb_Success_08_04"); //Ano, øíkal, e Spáè není to, co si myslíme. Nesmíme se ho znovu pokoušet probudit.
-	AI_Output			(self, other,"Info_CorAngar_FindHerb_Success_08_05"); //Vše, co teï mùeme dìlat, je doufat, e pro Y´Beriona není ještì moc pozdì.
+	AI_Output			(other, self,"Info_CorAngar_FindHerb_Success_15_01"); //MÃ¡m lÃ©ÄivÃ© byliny pro YÂ´Beriona.
+	AI_Output			(self, other,"Info_CorAngar_FindHerb_Success_08_02"); //VÃ½bornÄ›. ZatÃ­mco jsi byl pryÄ, YÂ´Berion na chvilku procitl.
+	AI_Output			(other, self,"Info_CorAngar_FindHerb_Success_15_03"); //Å˜Ã­kal nÄ›co?
+	AI_Output			(self, other,"Info_CorAngar_FindHerb_Success_08_04"); //Ano, Å™Ã­kal, Å¾e SpÃ¡Ä nenÃ­ to, co si myslÃ­me. NesmÃ­me se ho znovu pokouÅ¡et probudit.
+	AI_Output			(self, other,"Info_CorAngar_FindHerb_Success_08_05"); //VÅ¡e, co teÄ mÅ¯Å¾eme dÄ›lat, je doufat, Å¾e pro YÂ´Beriona nenÃ­ jeÅ¡tÄ› moc pozdÄ›.
 	Yberion_dead = LOG_RUNNING;
 
 	B_GiveInvItems	(other, self, ItFo_Plants_Herb_03, 5 );
@@ -622,7 +622,7 @@ FUNC VOID Info_CorAngar_FindHerb_Success_Info()
 
 	CorAngar_FindHerb = LOG_SUCCESS;
 	
-	B_LogEntry		(CH3_FindHerbs,"Dodal jsem Coru Angarovi dostatek léèivıch bylin. Teï mùeme jen doufat, e nebylo pøíliš pozdì.");
+	B_LogEntry		(CH3_FindHerbs,"Dodal jsem Coru Angarovi dostatek lÃ©ÄivÃ½ch bylin. TeÄ mÅ¯Å¾eme jen doufat, Å¾e nebylo pÅ™Ã­liÅ¡ pozdÄ›.");
 	Log_SetTopicStatus	(CH3_FindHerbs,	LOG_SUCCESS);
 
 	//-------- Versuch YBerion zu heilen... --------
@@ -636,17 +636,17 @@ FUNC VOID Info_CorAngar_FindHerb_Success_Info()
 	//AI_StartState		(YBerion,	ZS_Dead,	0,	"");
 
 	//-------- ...scheitert. YBerion ist tot --------
-	AI_Output			(self, other,"GUR_1202_CorAngar_DEATH_Info_08_00"); //Y´BERION JE MRTEV. Náš duchovní vùdce nás opustil.
+	AI_Output			(self, other,"GUR_1202_CorAngar_DEATH_Info_08_00"); //YÂ´BERION JE MRTEV. NÃ¡Å¡ duchovnÃ­ vÅ¯dce nÃ¡s opustil.
 	AI_TurnToNpc		(self, other);
-	AI_Output			(self, other,"GUR_1202_CorAngar_DEATH_Info_08_01"); //Ani tvoje rychlá pomoc ho nestaèila zachránit.
-	AI_Output			(other, self,"GUR_1202_CorAngar_DEATH_Info_15_02"); //A co teï, Cor Angare?
-	AI_Output			(self, other,"GUR_1202_CorAngar_DEATH_Info_08_03"); //Vdycky jsem Y´Berionovi vìøil. Krátce pøed svou smrtí upínal všechny své nadìje na plán útìku mágù Vody.
-	AI_Output			(other, self,"GUR_1202_CorAngar_DEATH_Info_15_04"); //Pak bychom mìli mágùm Vody s jejich plánem pomoci.
-	AI_Output			(self, other,"GUR_1202_CorAngar_DEATH_Info_08_05"); //Potøebují ohnisko a almanach. Obì vìci jsou stále majetkem Cora Kaloma.
+	AI_Output			(self, other,"GUR_1202_CorAngar_DEATH_Info_08_01"); //Ani tvoje rychlÃ¡ pomoc ho nestaÄila zachrÃ¡nit.
+	AI_Output			(other, self,"GUR_1202_CorAngar_DEATH_Info_15_02"); //A co teÄ, Cor Angare?
+	AI_Output			(self, other,"GUR_1202_CorAngar_DEATH_Info_08_03"); //VÅ¾dycky jsem YÂ´Berionovi vÄ›Å™il. KrÃ¡tce pÅ™ed svou smrtÃ­ upÃ­nal vÅ¡echny svÃ© nadÄ›je na plÃ¡n ÃºtÄ›ku mÃ¡gÅ¯ Vody.
+	AI_Output			(other, self,"GUR_1202_CorAngar_DEATH_Info_15_04"); //Pak bychom mÄ›li mÃ¡gÅ¯m Vody s jejich plÃ¡nem pomoci.
+	AI_Output			(self, other,"GUR_1202_CorAngar_DEATH_Info_08_05"); //PotÅ™ebujÃ­ ohnisko a almanach. ObÄ› vÄ›ci jsou stÃ¡le majetkem Cora Kaloma.
 	AI_Output			(other, self,"GUR_1202_CorAngar_DEATH_Info_15_06"); //Kde je Cor Kalom?
-	AI_Output			(self, other,"GUR_1202_CorAngar_DEATH_Info_08_07"); //V hnìvu se vydal s nìkolika templáøi svou vlastní cestou ke Spáèovi.
-	AI_Output			(other, self,"GUR_1202_CorAngar_DEATH_Info_15_08"); //Sakra, jak teï to ohnisko dostaneme?
-	AI_Output			(self, other,"GUR_1202_CorAngar_DEATH_Info_08_09"); //Doufám, e to ohnisko i almanach nechal ve své dílnì. Tady je klíè k té truhle.
+	AI_Output			(self, other,"GUR_1202_CorAngar_DEATH_Info_08_07"); //V hnÄ›vu se vydal s nÄ›kolika templÃ¡Å™i svou vlastnÃ­ cestou ke SpÃ¡Äovi.
+	AI_Output			(other, self,"GUR_1202_CorAngar_DEATH_Info_15_08"); //Sakra, jak teÄ to ohnisko dostaneme?
+	AI_Output			(self, other,"GUR_1202_CorAngar_DEATH_Info_08_09"); //DoufÃ¡m, Å¾e to ohnisko i almanach nechal ve svÃ© dÃ­lnÄ›. Tady je klÃ­Ä k tÃ© truhle.
 
 	CreateInvItem		(self,			ITKE_PSI_KALOM_01); 
 	B_GiveInvItems		(self,	other,	ITKE_PSI_KALOM_01,	1);
@@ -673,11 +673,11 @@ FUNC INT Info_CorAngar_TELEPORT_Condition()
 FUNC VOID Info_CorAngar_TELEPORT_Info()
 {	
 	AI_GotoNpc			(self, hero);
-	AI_Output			(self, hero,"Info_CorAngar_TELEPORT_08_01"); //Ještì moment!
+	AI_Output			(self, hero,"Info_CorAngar_TELEPORT_08_01"); //JeÅ¡tÄ› moment!
 	AI_Output			(hero, self,"Info_CorAngar_TELEPORT_15_02"); //Ano?
-	AI_Output			(self, hero,"Info_CorAngar_TELEPORT_08_03"); //Vem si tuhle magickou runu jako vyjádøení našeho vdìku za tvoje velké èiny.
-	AI_Output			(self, hero,"Info_CorAngar_TELEPORT_08_04"); //Pomùe ti snadno a rychle se pøenést do chrámového dvora, kdykoliv to budeš potøebovat.
-	AI_Output			(hero, self,"Info_CorAngar_TELEPORT_15_05"); //Dìkuju!
+	AI_Output			(self, hero,"Info_CorAngar_TELEPORT_08_03"); //Vem si tuhle magickou runu jako vyjÃ¡dÅ™enÃ­ naÅ¡eho vdÄ›ku za tvoje velkÃ© Äiny.
+	AI_Output			(self, hero,"Info_CorAngar_TELEPORT_08_04"); //PomÅ¯Å¾e ti snadno a rychle se pÅ™enÃ©st do chrÃ¡movÃ©ho dvora, kdykoliv to budeÅ¡ potÅ™ebovat.
+	AI_Output			(hero, self,"Info_CorAngar_TELEPORT_15_05"); //DÄ›kuju!
 
 	//-------- Spieler wird losgeschickt --------
 	B_Story_SentToNC	();

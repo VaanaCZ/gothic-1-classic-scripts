@@ -30,7 +30,7 @@ instance  Stt_302_Viper_GREET (C_INFO)
 	information		= Stt_302_Viper_GREET_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Dovìdìl jsem se, e jsi taviè."; 
+	description		= "DovÄ›dÄ›l jsem se, Å¾e jsi taviÄ."; 
 };
 
 FUNC int  Stt_302_Viper_GREET_Condition()
@@ -41,8 +41,8 @@ FUNC int  Stt_302_Viper_GREET_Condition()
 
 FUNC void  Stt_302_Viper_GREET_Info()
 {
-	AI_Output (other, self,"Stt_302_Viper_GREET_Info_15_01"); //Dovìdìl jsem se, e jsi taviè.
-	AI_Output (self, other,"Stt_302_Viper_GREET_Info_11_02"); //To jsi ale bystrı hoch.
+	AI_Output (other, self,"Stt_302_Viper_GREET_Info_15_01"); //DovÄ›dÄ›l jsem se, Å¾e jsi taviÄ.
+	AI_Output (self, other,"Stt_302_Viper_GREET_Info_11_02"); //To jsi ale bystrÃ½ hoch.
 };  
 // ***************************** SCHMELZGESCHICHTE ****************************************//
 instance  Stt_302_Viper_MELT (C_INFO)
@@ -52,7 +52,7 @@ instance  Stt_302_Viper_MELT (C_INFO)
 	information		= Stt_302_Viper_MELT_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Dovìdìl jsem se, e tavíš jenom malou èást rudy."; 
+	description		= "DovÄ›dÄ›l jsem se, Å¾e tavÃ­Å¡ jenom malou ÄÃ¡st rudy."; 
 };
 
 FUNC int  Stt_302_Viper_MELT_Condition()
@@ -65,11 +65,11 @@ FUNC int  Stt_302_Viper_MELT_Condition()
 };
 FUNC void  Stt_302_Viper_MELT_Info()
 {
-	AI_Output (other, self,"Stt_302_Viper_MELT_Info_15_01"); //Dovìdìl jsem se, e tavíš jenom malou èást rudy.
-	AI_Output (self, other,"Stt_302_Viper_MELT_Info_11_02"); //Pøed nìjakou dobu jsme zaèali tavit o hodnì ménì. Gomez a jeho mágové z toho ale nemìli moc radost.
-	AI_Output (self, other,"Stt_302_Viper_MELT_Info_11_03"); //Celé tıdny se tady potloukali, aby zkoušeli rudu a tak.
-	AI_Output (self, other,"Stt_302_Viper_MELT_Info_11_04"); //Mleli o tom a strkali svoje nóbl nosy do vìcí, o kterıch nemìli ani pøedstavu.
-	AI_Output (self, other,"Stt_302_Viper_MELT_Info_11_05"); //Nakonec jsme pøetavili jenom èást rudy. Mágové u nikdy znovu nepøišli.
+	AI_Output (other, self,"Stt_302_Viper_MELT_Info_15_01"); //DovÄ›dÄ›l jsem se, Å¾e tavÃ­Å¡ jenom malou ÄÃ¡st rudy.
+	AI_Output (self, other,"Stt_302_Viper_MELT_Info_11_02"); //PÅ™ed nÄ›jakou dobu jsme zaÄali tavit o hodnÄ› mÃ©nÄ›. Gomez a jeho mÃ¡govÃ© z toho ale nemÄ›li moc radost.
+	AI_Output (self, other,"Stt_302_Viper_MELT_Info_11_03"); //CelÃ© tÃ½dny se tady potloukali, aby zkouÅ¡eli rudu a tak.
+	AI_Output (self, other,"Stt_302_Viper_MELT_Info_11_04"); //Mleli o tom a strkali svoje nÃ³bl nosy do vÄ›cÃ­, o kterÃ½ch nemÄ›li ani pÅ™edstavu.
+	AI_Output (self, other,"Stt_302_Viper_MELT_Info_11_05"); //Nakonec jsme pÅ™etavili jenom ÄÃ¡st rudy. MÃ¡govÃ© uÅ¾ nikdy znovu nepÅ™iÅ¡li.
 };
 // *****************************  ****************************************//
 instance  Stt_302_Viper_BUY (C_INFO)
@@ -79,7 +79,7 @@ instance  Stt_302_Viper_BUY (C_INFO)
 	information		= Stt_302_Viper_BUY_Info;
 	important		= 0;
 	permanent		= 1;
-	description		= "Mùeš mi dát rudu?"; 
+	description		= "MÅ¯Å¾eÅ¡ mi dÃ¡t rudu?"; 
 	trade           = 1;
 };
 
@@ -93,7 +93,7 @@ FUNC int  Stt_302_Viper_BUY_Condition()
 };
 FUNC void  Stt_302_Viper_BUY_Info()
 {
-	AI_Output (other, self,"Stt_302_Viper_BUY_Info_15_01"); //Mùeš mi dát rudu?
-	AI_Output (self, other,"Stt_302_Viper_BUY_Info_11_02"); //Kdy mi dáš nìjaké zboí.
+	AI_Output (other, self,"Stt_302_Viper_BUY_Info_15_01"); //MÅ¯Å¾eÅ¡ mi dÃ¡t rudu?
+	AI_Output (self, other,"Stt_302_Viper_BUY_Info_11_02"); //KdyÅ¾ mi dÃ¡Å¡ nÄ›jakÃ© zboÅ¾Ã­.
 };
 

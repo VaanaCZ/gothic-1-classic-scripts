@@ -4,7 +4,7 @@
 
 func void PC_Sleep (var int t)
 {
-	AI_StopProcessInfos(self);		// [SK] ->muss hier stehen um das update zu gew‰hrleisten
+	AI_StopProcessInfos(self);		// [SK] ->muss hier stehen um das update zu gew√§hrleisten
 	self.aivar[AIV_INVINCIBLE]=FALSE;
 	if	(Wld_IsTime(00,00,t,00))	
 	{
@@ -16,13 +16,13 @@ func void PC_Sleep (var int t)
 		Wld_SetTime	(t,00);
 	};
 	
-	PrintScreen	("Spal jsi dob¯e a cÌtÌö se lÈpe", -1,-1,"font_old_20_white.tga",3);
+	PrintScreen	("Spal jsi dob≈ôe a c√≠t√≠≈° se l√©pe", -1,-1,"font_old_20_white.tga",3);
 	hero.attribute[ATR_HITPOINTS] = hero.attribute[ATR_HITPOINTS_MAX];
 	hero.attribute[ATR_MANA] = hero.attribute[ATR_MANA_MAX];	
 
 	//-------- AssessEnterRoom-Wahrnehmung versenden --------
 	PrintGlobals		(PD_ITEM_MOBSI);
-	Npc_SendPassivePerc	(hero,	PERC_ASSESSENTERROOM, NULL, hero);		//...damit der Spieler dieses Feature nicht zum H¸ttepl¸ndern ausnutzt!
+	Npc_SendPassivePerc	(hero,	PERC_ASSESSENTERROOM, NULL, hero);		//...damit der Spieler dieses Feature nicht zum H√ºttepl√ºndern ausnutzt!
 };
 
 
@@ -32,7 +32,7 @@ func void SLEEPABIT_S1 ()
 	var C_NPC her; 	her = Hlp_GetNpc(PC_Hero); 
 	var C_NPC rock; rock = Hlp_GetNpc(PC_Rockefeller);
 	
-	//***ALT** if	(Hlp_GetInstanceID (self)== Hlp_GetInstanceID (Hero)) // MH: ge‰ndert, damit kontrollierte NSCs nicht schlafen kˆnnen!
+	//***ALT** if	(Hlp_GetInstanceID (self)== Hlp_GetInstanceID (Hero)) // MH: ge√§ndert, damit kontrollierte NSCs nicht schlafen k√∂nnen!
 	if ( (Hlp_GetInstanceID(self)==Hlp_GetInstanceID(her))||(Hlp_GetInstanceID(self)==Hlp_GetInstanceID(rock)) ) 
 	{	
 		self.aivar[AIV_INVINCIBLE]=TRUE;
@@ -80,7 +80,7 @@ INSTANCE PC_SleepTime_Morning (C_INFO)
 	information		= PC_SleepTime_Morning_Info;
 	important		= 0;
 	permanent		= 1;
-	description		= "Spi aû do r·na"; 
+	description		= "Spi a≈æ do r√°na"; 
 };
 
 FUNC INT PC_SleepTime_Morning_Condition()
@@ -90,7 +90,7 @@ FUNC INT PC_SleepTime_Morning_Condition()
 
 func void PC_SleepTime_Morning_Info ()
 {
-	PC_Sleep (8);	// SN: ge‰ndert, da um 7 Uhr noch keiner der NSCs wach ist!
+	PC_Sleep (8);	// SN: ge√§ndert, da um 7 Uhr noch keiner der NSCs wach ist!
 };
 
 //--------------------- mittags -----------------------------------------
@@ -102,7 +102,7 @@ INSTANCE PC_SleepTime_Noon (C_INFO)
 	information		= PC_SleepTime_Noon_Info;
 	important		= 0;
 	permanent		= 1;
-	description		= "Spi aû do odpoledne"; 
+	description		= "Spi a≈æ do odpoledne"; 
 };
 
 FUNC INT PC_SleepTime_Noon_Condition()
@@ -124,7 +124,7 @@ INSTANCE PC_SleepTime_Evening (C_INFO)
 	information		= PC_SleepTime_Evening_Info;
 	important		= 0;
 	permanent		= 1;
-	description		= "Spi aû do veËera"; 
+	description		= "Spi a≈æ do veƒçera"; 
 };
 
 FUNC INT PC_SleepTime_Evening_Condition()
@@ -146,7 +146,7 @@ instance PC_SleepTime_Midnight (C_INFO)
 	information		= PC_SleepTime_Midnight_Info;
 	important		= 0;
 	permanent		= 1;
-	description		= "Spi aû do p˘lnoci"; 
+	description		= "Spi a≈æ do p≈Ølnoci"; 
 };
 
 FUNC INT PC_SleepTime_Midnight_Condition()

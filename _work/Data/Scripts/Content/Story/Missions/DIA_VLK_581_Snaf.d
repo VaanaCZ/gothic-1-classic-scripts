@@ -44,10 +44,10 @@ FUNC INT DIA_Snaf_Hello_Condition()
 FUNC VOID DIA_Snaf_Hello_Info()
 {
 	AI_Output (other, self,"DIA_Snaf_Hello_15_00"); //Jak to jde?
-	AI_Output (self, other,"DIA_Snaf_Hello_01_01"); //Není to zlé. Kdy umíš dobøe vaøit, máš tady spoustu pøátel.
-	AI_Output (self, other,"DIA_Snaf_Hello_01_02");	//Nechceš nìjakı z mıch rıovıch nákypù?
-	AI_Output (other, self,"DIA_Snaf_Hello_15_03"); //Díky.
-	AI_Output (self, other,"DIA_Snaf_Hello_01_04");	//Mohl bys pro mì udìlat laskavost.
+	AI_Output (self, other,"DIA_Snaf_Hello_01_01"); //NenÃ­ to zlÃ©. KdyÅ¾ umÃ­Å¡ dobÅ™e vaÅ™it, mÃ¡Å¡ tady spoustu pÅ™Ã¡tel.
+	AI_Output (self, other,"DIA_Snaf_Hello_01_02");	//NechceÅ¡ nÄ›jakÃ½ z mÃ½ch rÃ½Å¾ovÃ½ch nÃ¡kypÅ¯?
+	AI_Output (other, self,"DIA_Snaf_Hello_15_03"); //DÃ­ky.
+	AI_Output (self, other,"DIA_Snaf_Hello_01_04");	//Mohl bys pro mÄ› udÄ›lat laskavost.
 	
 	CreateInvItem (self,ItFoRice);
 	B_GiveInvItems(self,other,ItFoRice,1);
@@ -67,7 +67,7 @@ INSTANCE DIA_Snaf_Zutaten (C_INFO)
 	condition		= DIA_Snaf_Zutaten_Condition;
 	information		= DIA_Snaf_Zutaten_Info;
 	permanent		= 0;
-	description		="Co pro tebe mùu udìlat?";
+	description		="Co pro tebe mÅ¯Å¾u udÄ›lat?";
 };
 
 FUNC INT DIA_Snaf_Zutaten_Condition()
@@ -80,40 +80,40 @@ FUNC INT DIA_Snaf_Zutaten_Condition()
 
 FUNC VOID DIA_Snaf_Zutaten_Info()
 {
-	AI_Output (other, self,"DIA_Snaf_Zutaten_15_00"); //Co bych mìl udìlat?
-	AI_Output (self, other,"DIA_Snaf_Zutaten_01_01"); //Musíš bıt zvyklı na dobré jídlo. Mám novı recept: ragú ze ravıch štìnic po zlodìjsku s rıí a houbami.
-	AI_Output (self, other,"DIA_Snaf_Zutaten_01_02"); //Mùeš mít, kolik si jen vzpomeneš, ale budeš potøebovat: 3 ravé štìnice a pár pekelnıch hub - 5 by mìlo staèit.
+	AI_Output (other, self,"DIA_Snaf_Zutaten_15_00"); //Co bych mÄ›l udÄ›lat?
+	AI_Output (self, other,"DIA_Snaf_Zutaten_01_01"); //MusÃ­Å¡ bÃ½t zvyklÃ½ na dobrÃ© jÃ­dlo. MÃ¡m novÃ½ recept: ragÃº ze Å¾ravÃ½ch Å¡tÄ›nic po zlodÄ›jsku s rÃ½Å¾Ã­ a houbami.
+	AI_Output (self, other,"DIA_Snaf_Zutaten_01_02"); //MÅ¯Å¾eÅ¡ mÃ­t, kolik si jen vzpomeneÅ¡, ale budeÅ¡ potÅ™ebovat: 3 Å¾ravÃ© Å¡tÄ›nice a pÃ¡r pekelnÃ½ch hub - 5 by mÄ›lo staÄit.
 	
 	Info_ClearChoices(DIA_Snaf_Zutaten);
-	Info_AddChoice	 (DIA_Snaf_Zutaten,"Chceš, abych se pozvracel?",DIA_Snaf_Zutaten_KOTZ);
-	Info_AddChoice	 (DIA_Snaf_Zutaten,"To zní dobøe.",DIA_Snaf_Zutaten_DoIt);
+	Info_AddChoice	 (DIA_Snaf_Zutaten,"ChceÅ¡, abych se pozvracel?",DIA_Snaf_Zutaten_KOTZ);
+	Info_AddChoice	 (DIA_Snaf_Zutaten,"To znÃ­ dobÅ™e.",DIA_Snaf_Zutaten_DoIt);
 };
 
 func void DIA_Snaf_Zutaten_KOTZ()
 {
-	AI_Output (other, self,"DIA_Snaf_Zutaten_KOTZ_15_00"); //Chceš, abych se pozvracel?
-	AI_Output (self, other,"DIA_Snaf_Zutaten_KOTZ_01_01"); //Nemusíš to sníst, ale mohl bys to aspoò zkusit! Jestli se ti podaøí ty vìci sehnat, vzpomeò si na mì.
-	AI_Output (self, other,"DIA_Snaf_Zutaten_KOTZ_01_02"); //U jsem nìkoho poslal, ale ještì se nevrátil - zøejmì zbìhl do Nového tábora.
+	AI_Output (other, self,"DIA_Snaf_Zutaten_KOTZ_15_00"); //ChceÅ¡, abych se pozvracel?
+	AI_Output (self, other,"DIA_Snaf_Zutaten_KOTZ_01_01"); //NemusÃ­Å¡ to snÃ­st, ale mohl bys to aspoÅˆ zkusit! Jestli se ti podaÅ™Ã­ ty vÄ›ci sehnat, vzpomeÅˆ si na mÄ›.
+	AI_Output (self, other,"DIA_Snaf_Zutaten_KOTZ_01_02"); //UÅ¾ jsem nÄ›koho poslal, ale jeÅ¡tÄ› se nevrÃ¡til - zÅ™ejmÄ› zbÄ›hl do NovÃ©ho tÃ¡bora.
 	Snaf_Zutaten = LOG_RUNNING;
 	
 	Log_CreateTopic(CH1_SnafsRecipe, LOG_MISSION);
 	Log_SetTopicStatus(CH1_SnafsRecipe, LOG_RUNNING);
-	B_LogEntry( CH1_SnafsRecipe,"Snaf, kuchaø kterı ije na Vnìjším okruhu, mì poslal, abych mu pro novı kuchaøskı recept opatøil 3 ravé štìnice a 5 pekelnıch hub.");
+	B_LogEntry( CH1_SnafsRecipe,"Snaf, kuchaÅ™ kterÃ½ Å¾ije na VnÄ›jÅ¡Ã­m okruhu, mÄ› poslal, abych mu pro novÃ½ kuchaÅ™skÃ½ recept opatÅ™il 3 Å¾ravÃ© Å¡tÄ›nice a 5 pekelnÃ½ch hub.");
 	
 	Info_ClearChoices(DIA_Snaf_Zutaten);
 };
 
 func void DIA_Snaf_Zutaten_DoIt()
 {
-	AI_Output (other, self,"DIA_Snaf_Zutaten_DoIt_15_00"); //To zní dobøe.
-	AI_Output (self, other,"DIA_Snaf_Zutaten_DoIt_01_01"); //Tak jdi a seeò mi ty vìci.
-	AI_Output (self, other,"DIA_Snaf_Zutaten_DoIt_01_02"); //Poslední, kterého jsem poslal, se ještì nevrátil - zøejmì zbìhl do Nového tábora.
+	AI_Output (other, self,"DIA_Snaf_Zutaten_DoIt_15_00"); //To znÃ­ dobÅ™e.
+	AI_Output (self, other,"DIA_Snaf_Zutaten_DoIt_01_01"); //Tak jdi a seÅ¾eÅˆ mi ty vÄ›ci.
+	AI_Output (self, other,"DIA_Snaf_Zutaten_DoIt_01_02"); //PoslednÃ­, kterÃ©ho jsem poslal, se jeÅ¡tÄ› nevrÃ¡til - zÅ™ejmÄ› zbÄ›hl do NovÃ©ho tÃ¡bora.
 	Snaf_Zutaten = LOG_RUNNING;
 	Snaf_FreeMBRagout = TRUE;
 		
     Log_CreateTopic(CH1_SnafsRecipe, LOG_MISSION);
 	Log_SetTopicStatus(CH1_SnafsRecipe, LOG_RUNNING);
-	B_LogEntry( CH1_SnafsRecipe,"Snaf, kuchaø ijící na Vnìjším okruhu, mì poslal, abych mu pro novı kuchaøskı recept opatøil 3 ravé štìnice a 5 pekelnıch hub. A to bude hotové, také z toho budu nìco mít.");		
+	B_LogEntry( CH1_SnafsRecipe,"Snaf, kuchaÅ™ Å¾ijÃ­cÃ­ na VnÄ›jÅ¡Ã­m okruhu, mÄ› poslal, abych mu pro novÃ½ kuchaÅ™skÃ½ recept opatÅ™il 3 Å¾ravÃ© Å¡tÄ›nice a 5 pekelnÃ½ch hub. AÅ¾ to bude hotovÃ©, takÃ© z toho budu nÄ›co mÃ­t.");		
 			
 	Info_ClearChoices(DIA_Snaf_Zutaten);	
 };
@@ -129,7 +129,7 @@ INSTANCE DIA_Snaf_ZutatenSuccess (C_INFO)
 	condition		= DIA_Snaf_ZutatenSuccess_Condition;
 	information		= DIA_Snaf_ZutatenSuccess_Info;
 	permanent		= 0;
-	description		= "Mám ty vìci, co jsi po mnì chtìl!";
+	description		= "MÃ¡m ty vÄ›ci, co jsi po mnÄ› chtÄ›l!";
 };
 
 FUNC INT DIA_Snaf_ZutatenSuccess_Condition()
@@ -142,11 +142,11 @@ FUNC INT DIA_Snaf_ZutatenSuccess_Condition()
 
 FUNC VOID DIA_Snaf_ZutatenSuccess_Info()
 {
-	AI_Output (other, self,"DIA_Snaf_ZutatenSuccess_15_00"); //Mám ty vìci, co jsi po mnì chtìl!
-	AI_Output (self, other,"DIA_Snaf_ZutatenSuccess_01_01"); //Vıbornì, musím je pøidat, pak bude to ragú hotové... Poèkej...
+	AI_Output (other, self,"DIA_Snaf_ZutatenSuccess_15_00"); //MÃ¡m ty vÄ›ci, co jsi po mnÄ› chtÄ›l!
+	AI_Output (self, other,"DIA_Snaf_ZutatenSuccess_01_01"); //VÃ½bornÄ›, musÃ­m je pÅ™idat, pak bude to ragÃº hotovÃ©... PoÄkej...
 	
 	CreateInvItems(other, ItFo_Plants_Mushroom_01, 3);
-	B_GiveInvItems(other,self,ItFo_Plants_Mushroom_01,8);//Notwendig zur Anzeige 8 Items übergeben, wird sofort angepasst
+	B_GiveInvItems(other,self,ItFo_Plants_Mushroom_01,8);//Notwendig zur Anzeige 8 Items Ã¼bergeben, wird sofort angepasst
 	
 	Npc_RemoveInvItems(self, ItFo_Plants_Mushroom_01, 8);//Alle Zutaten weg
 	Npc_RemoveInvItems(other, ItAt_MeatBug_01, 3);
@@ -157,11 +157,11 @@ FUNC VOID DIA_Snaf_ZutatenSuccess_Info()
 	Snaf_Zutaten = LOG_SUCCESS;
 	
 	Log_SetTopicStatus	(CH1_SnafsRecipe, LOG_SUCCESS);
-	B_LogEntry			(CH1_SnafsRecipe,"Snaf byl velmi spokojenı, kdy jsem mu pøinesl ty pøísady.");
+	B_LogEntry			(CH1_SnafsRecipe,"Snaf byl velmi spokojenÃ½, kdyÅ¾ jsem mu pÅ™inesl ty pÅ™Ã­sady.");
 	
 	if Snaf_FreeMBRagout==TRUE
 	{
-	    B_LogEntry( CH1_SnafsRecipe,"Ode dneška mi bude kadı den dávat ragú ze ravıch štìnic.");
+	    B_LogEntry( CH1_SnafsRecipe,"Ode dneÅ¡ka mi bude kaÅ¾dÃ½ den dÃ¡vat ragÃº ze Å¾ravÃ½ch Å¡tÄ›nic.");
 	};
 	
 	B_GiveXP(100);
@@ -182,7 +182,7 @@ INSTANCE DIA_Snaf_AfterSuccess (C_INFO)
 	condition		= DIA_Snaf_AfterSuccess_Condition;
 	information		= DIA_Snaf_AfterSuccess_Info;
 	permanent		= 1;
-	description		= "Øekl jsi mi, e mùu mít tolik ragú, kolik budu chtít...";
+	description		= "Å˜ekl jsi mi, Å¾e mÅ¯Å¾u mÃ­t tolik ragÃº, kolik budu chtÃ­t...";
 };
 
 FUNC INT DIA_Snaf_AfterSuccess_Condition()
@@ -195,18 +195,18 @@ FUNC INT DIA_Snaf_AfterSuccess_Condition()
 
 FUNC VOID DIA_Snaf_AfterSuccess_Info()
 {
- 	AI_Output (other, self,"DIA_Snaf_AfterSuccess_15_00"); //Øekl jsi mi, e mùu mít tolik ragú, kolik budu chtít...
+ 	AI_Output (other, self,"DIA_Snaf_AfterSuccess_15_00"); //Å˜ekl jsi mi, Å¾e mÅ¯Å¾u mÃ­t tolik ragÃº, kolik budu chtÃ­t...
  	
  	if (Snaf_RagoutDay!=Wld_GetDay())
  	{
- 		AI_Output (self, other,"DIA_Snaf_AfterSuccess_01_01"); //A to je pravda. Tady jsou tøi porce.
+ 		AI_Output (self, other,"DIA_Snaf_AfterSuccess_01_01"); //A to je pravda. Tady jsou tÅ™i porce.
 		CreateInvItems(self, ItFoMeatbugragout,3);
 		B_GiveInvItems(self, other,ItFoMeatbugragout,3);
 		Snaf_RagoutDay = Wld_GetDay();
 	}
 	else
 	{
-		AI_Output (self, other,"DIA_Snaf_AfterSuccess_01_02"); //Jistì! Ale dnes nic nezbylo. Pøijï zase zítra.
+		AI_Output (self, other,"DIA_Snaf_AfterSuccess_01_02"); //JistÄ›! Ale dnes nic nezbylo. PÅ™ijÄ zase zÃ­tra.
 	};
 };
 
@@ -221,7 +221,7 @@ INSTANCE DIA_Snaf_WhereMeatbugs (C_INFO)
 	condition		= DIA_Snaf_WhereMeatbugs_Condition;
 	information		= DIA_Snaf_WhereMeatbugs_Info;
 	permanent		= 0;
-	description		= "Kde najdu ravé štìnice?";
+	description		= "Kde najdu Å¾ravÃ© Å¡tÄ›nice?";
 };
 
 FUNC INT DIA_Snaf_WhereMeatbugs_Condition()
@@ -234,11 +234,11 @@ FUNC INT DIA_Snaf_WhereMeatbugs_Condition()
 
 FUNC VOID DIA_Snaf_WhereMeatbugs_Info()
 {
-	AI_Output (other, self,"DIA_Snaf_WhereMeatbugs_15_00"); //Kde najdu ravé štìnice?
-	AI_Output (self, other,"DIA_Snaf_WhereMeatbugs_01_01"); //Všude, kde se válí odpadky. Nìco bys mohl najít u té opuštìné chatrèe nedaleko hradní zdi.
-	AI_Output (self, other,"DIA_Snaf_WhereMeatbugs_01_02"); //Nedej se zmást jejich nevábnım vzhledem. Jakmile se uvaøí, jsou znamenité.
+	AI_Output (other, self,"DIA_Snaf_WhereMeatbugs_15_00"); //Kde najdu Å¾ravÃ© Å¡tÄ›nice?
+	AI_Output (self, other,"DIA_Snaf_WhereMeatbugs_01_01"); //VÅ¡ude, kde se vÃ¡lÃ­ odpadky. NÄ›co bys mohl najÃ­t u tÃ© opuÅ¡tÄ›nÃ© chatrÄe nedaleko hradnÃ­ zdi.
+	AI_Output (self, other,"DIA_Snaf_WhereMeatbugs_01_02"); //Nedej se zmÃ¡st jejich nevÃ¡bnÃ½m vzhledem. Jakmile se uvaÅ™Ã­, jsou znamenitÃ©.
 	
-    B_LogEntry( CH1_SnafsRecipe,"Poblí zpustlıch chatrèí u hradních zdí se vyskytují ravé štìnice.");			
+    B_LogEntry( CH1_SnafsRecipe,"PoblÃ­Å¾ zpustlÃ½ch chatrÄÃ­ u hradnÃ­ch zdÃ­ se vyskytujÃ­ Å¾ravÃ© Å¡tÄ›nice.");			
 };
 
 // **************************************************
@@ -266,9 +266,9 @@ FUNC INT DIA_Snaf_WhereMushrooms_Condition()
 FUNC VOID DIA_Snaf_WhereMushrooms_Info()
 {
 	AI_Output (other, self,"DIA_Snaf_WhereMushrooms_15_00"); //Kde najdu houby?
-	AI_Output (self, other,"DIA_Snaf_WhereMushrooms_01_01"); //Kdy projdeš jiní branou - to je ta zhroucená vì - uvidíš pøímo pøed sebou pláò. Tam rostou houby.
+	AI_Output (self, other,"DIA_Snaf_WhereMushrooms_01_01"); //KdyÅ¾ projdeÅ¡ jiÅ¾nÃ­ branou - to je ta zhroucenÃ¡ vÄ›Å¾ - uvidÃ­Å¡ pÅ™Ã­mo pÅ™ed sebou plÃ¡Åˆ. Tam rostou houby.
 	
-	B_LogEntry( CH1_SnafsRecipe,"Pekelné houby najdu na planinì pøed zøícenou vìí jiní brány.");			
+	B_LogEntry( CH1_SnafsRecipe,"PekelnÃ© houby najdu na planinÄ› pÅ™ed zÅ™Ã­cenou vÄ›Å¾Ã­ jiÅ¾nÃ­ brÃ¡ny.");			
 };
 
 // **************************************************
@@ -282,7 +282,7 @@ INSTANCE DIA_Snaf_WhereNek (C_INFO)
 	condition		= DIA_Snaf_WhereNek_Condition;
 	information		= DIA_Snaf_WhereNek_Info;
 	permanent		= 0;
-	description		= "Kdo byl ten chlapík, kterého jsi poslal pøede mnou?";
+	description		= "Kdo byl ten chlapÃ­k, kterÃ©ho jsi poslal pÅ™ede mnou?";
 };
 
 FUNC INT DIA_Snaf_WhereNek_Condition()
@@ -295,9 +295,9 @@ FUNC INT DIA_Snaf_WhereNek_Condition()
 
 FUNC VOID DIA_Snaf_WhereNek_Info()
 {
-	AI_Output (other, self,"DIA_Snaf_WhereNek_15_00"); //Kdo byl ten chlapík, kterého jsi poslal pøede mnou?
-	AI_Output (self, other,"DIA_Snaf_WhereNek_01_01"); //Jmenoval se Nek. Byl tady hroznì nespokojenı - myslím, e je teï v Novém táboøe.
-	AI_Output (self, other,"DIA_Snaf_WhereNek_01_02"); //Poslal jsem ho nasbírat houby - ale u se nevrátil zpátky...
+	AI_Output (other, self,"DIA_Snaf_WhereNek_15_00"); //Kdo byl ten chlapÃ­k, kterÃ©ho jsi poslal pÅ™ede mnou?
+	AI_Output (self, other,"DIA_Snaf_WhereNek_01_01"); //Jmenoval se Nek. Byl tady hroznÄ› nespokojenÃ½ - myslÃ­m, Å¾e je teÄ v NovÃ©m tÃ¡boÅ™e.
+	AI_Output (self, other,"DIA_Snaf_WhereNek_01_02"); //Poslal jsem ho nasbÃ­rat houby - ale uÅ¾ se nevrÃ¡til zpÃ¡tky...
 	
 	if	(Sly_LostNek != LOG_SUCCESS)
 	&&	(Npc_GetTrueGuild(hero) == GIL_NONE)
@@ -305,7 +305,7 @@ FUNC VOID DIA_Snaf_WhereNek_Info()
 		Log_CreateTopic		(CH1_LostNek,	LOG_MISSION);
 		Log_SetTopicStatus	(CH1_LostNek,	LOG_RUNNING);
 	};
-	B_LogEntry			(CH1_LostNek,"Kuchaø Snaf vidìl Neka naposledy, kdy odešel sbírat houby.");
+	B_LogEntry			(CH1_LostNek,"KuchaÅ™ Snaf vidÄ›l Neka naposledy, kdyÅ¾ odeÅ¡el sbÃ­rat houby.");
 };
 
 

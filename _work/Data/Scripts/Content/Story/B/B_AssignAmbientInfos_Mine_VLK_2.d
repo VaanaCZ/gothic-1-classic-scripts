@@ -37,7 +37,7 @@ INSTANCE Info_Mine_Vlk_2_Mine (C_INFO) // E1
 	condition	= Info_Mine_Vlk_2_Mine_Condition;
 	information	= Info_Mine_Vlk_2_Mine_Info;
 	permanent	= 1;
-	description = "Øekni mi nìco o dole.";
+	description = "Å˜ekni mi nÄ›co o dole.";
 };                       
 
 FUNC INT Info_Mine_Vlk_2_Mine_Condition()
@@ -50,9 +50,9 @@ FUNC INT Info_Mine_Vlk_2_Mine_Condition()
 
 FUNC VOID Info_Mine_Vlk_2_Mine_Info()
 {
-	AI_Output(other,self,"Info_Mine_Vlk_2_Mine_15_00"); //Povídej mi o dole.
-	AI_Output(self,other,"Info_Mine_Vlk_2_Mine_01_01"); //Je tu spousta jeskyní, kde ještì zùstala nìjaká ruda. Ale kvùli èervùm není moné se k ní dostat.
-	AI_Output(self,other,"Info_Mine_Vlk_2_Mine_01_02"); //Pøíliš útokù, pøíliš ztrát.
+	AI_Output(other,self,"Info_Mine_Vlk_2_Mine_15_00"); //PovÃ­dej mi o dole.
+	AI_Output(self,other,"Info_Mine_Vlk_2_Mine_01_01"); //Je tu spousta jeskynÃ­, kde jeÅ¡tÄ› zÅ¯stala nÄ›jakÃ¡ ruda. Ale kvÅ¯li ÄervÅ¯m nenÃ­ moÅ¾nÃ© se k nÃ­ dostat.
+	AI_Output(self,other,"Info_Mine_Vlk_2_Mine_01_02"); //PÅ™Ã­liÅ¡ ÃºtokÅ¯, pÅ™Ã­liÅ¡ ztrÃ¡t.
 };
 
 // *************************************************************************
@@ -65,7 +65,7 @@ INSTANCE Info_Mine_Vlk_2_WichtigePersonen(C_INFO)
 	condition	= Info_Mine_Vlk_2_WichtigePersonen_Condition;
 	information	= Info_Mine_Vlk_2_WichtigePersonen_Info;
 	permanent	= 1;
-	description = "Kdo tady má velení?";
+	description = "Kdo tady mÃ¡ velenÃ­?";
 };                       
 
 FUNC INT Info_Mine_Vlk_2_WichtigePersonen_Condition()
@@ -78,8 +78,8 @@ FUNC INT Info_Mine_Vlk_2_WichtigePersonen_Condition()
 
 FUNC VOID Info_Mine_Vlk_2_WichtigePersonen_Info()
 {
-	AI_Output(other,self,"Info_Mine_Vlk_2_WichtigePersonen_15_00"); //Kdo tady má velení?
-	AI_Output(self,other,"Info_Mine_Vlk_2_WichtigePersonen_01_01"); //Viper je taviè. Ví o pecích všechno a tìlo má jak z eleza. Vùbec neví, co je horko. Celı den stráví tavením rudy.
+	AI_Output(other,self,"Info_Mine_Vlk_2_WichtigePersonen_15_00"); //Kdo tady mÃ¡ velenÃ­?
+	AI_Output(self,other,"Info_Mine_Vlk_2_WichtigePersonen_01_01"); //Viper je taviÄ. VÃ­ o pecÃ­ch vÅ¡echno a tÄ›lo mÃ¡ jak z Å¾eleza. VÅ¯bec nevÃ­, co je horko. CelÃ½ den strÃ¡vÃ­ tavenÃ­m rudy.
 };
 
 // *************************************************************************
@@ -92,7 +92,7 @@ INSTANCE Info_Mine_Vlk_2_Minecrawler(C_INFO)
 	condition	= Info_Mine_Vlk_2_Minecrawler_Condition;
 	information	= Info_Mine_Vlk_2_Minecrawler_Info;
 	permanent	= 1;
-	description = "Co víš o èervech?";
+	description = "Co vÃ­Å¡ o Äervech?";
 };                       
 
 FUNC INT Info_Mine_Vlk_2_Minecrawler_Condition()
@@ -105,9 +105,9 @@ FUNC INT Info_Mine_Vlk_2_Minecrawler_Condition()
 
 FUNC VOID Info_Mine_Vlk_2_Minecrawler_Info()
 {
-	AI_Output(other,self,"Info_Mine_Vlk_2_Minecrawler_15_00"); //Co víš o dùlních èervech?
-	AI_Output(self,other,"Info_Mine_Vlk_2_Minecrawler_01_01"); //Musíme se dostat blí k té velké jámì u dna. Je to tam samı èerv.
-	AI_Output(self,other,"Info_Mine_Vlk_2_Minecrawler_01_02"); //Dùlní èervi jsou tady všude. Ty je neslyšíš? Já tedy jo!
+	AI_Output(other,self,"Info_Mine_Vlk_2_Minecrawler_15_00"); //Co vÃ­Å¡ o dÅ¯lnÃ­ch Äervech?
+	AI_Output(self,other,"Info_Mine_Vlk_2_Minecrawler_01_01"); //MusÃ­me se dostat blÃ­Å¾ k tÃ© velkÃ© jÃ¡mÄ› u dna. Je to tam samÃ½ Äerv.
+	AI_Output(self,other,"Info_Mine_Vlk_2_Minecrawler_01_02"); //DÅ¯lnÃ­ Äervi jsou tady vÅ¡ude. Ty je neslyÅ¡Ã­Å¡? JÃ¡ tedy jo!
 };
 
 // *************************************************************************
@@ -133,8 +133,8 @@ FUNC INT Info_Mine_Vlk_2_DieLage_Condition()
 
 FUNC VOID Info_Mine_Vlk_2_DieLage_Info()
 {
-	AI_Output(other,self,"Info_Mine_Vlk_2_DieLage_15_00"); //Jak se máš?
-	AI_Output(self,other,"Info_Mine_Vlk_2_DieLage_01_01"); //Mám moc práce. Jestli mì stráe nachytají, jak tady zahálím, zarazí mi pøídìly.
+	AI_Output(other,self,"Info_Mine_Vlk_2_DieLage_15_00"); //Jak se mÃ¡Å¡?
+	AI_Output(self,other,"Info_Mine_Vlk_2_DieLage_01_01"); //MÃ¡m moc prÃ¡ce. Jestli mÄ› strÃ¡Å¾e nachytajÃ­, jak tady zahÃ¡lÃ­m, zarazÃ­ mi pÅ™Ã­dÄ›ly.
 };
 	
 // *************************************************************************

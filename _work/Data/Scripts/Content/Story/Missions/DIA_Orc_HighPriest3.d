@@ -21,11 +21,11 @@ FUNC VOID Info_HighPriest3_Info()
 	AI_SetWalkmode		(self, NPC_WALK);
 	AI_GotoNpc			(self, other);
 	
-	AI_Output			(self, other,"Info_HighPriest3_17_01"); //SMMRRRTEEELLNNÍÍÍÍKKÙÙÙÙÙ!
-	AI_Output			(self, other,"Info_HighPriest3_17_02"); //TVÁÁÁÁ CEESTAAA KOONÈÍÍÍ TAADYYY UU MÌÌÌ!!
-	AI_Output 			(other, self,"Info_HighPriest3_15_03"); //Nejdøív pošlu na cestu já tebe, ty zatuchlá utkvìlá pøedstavo ráje!
+	AI_Output			(self, other,"Info_HighPriest3_17_01"); //SMMRRRTEEELLNNÃÃÃÃKKÅ®Å®Å®Å®Å®!
+	AI_Output			(self, other,"Info_HighPriest3_17_02"); //TVÃÃÃÃ CEESTAAA KOONÄŒÃÃÃ TAADYYY UU MÄšÄšÄš!!
+	AI_Output 			(other, self,"Info_HighPriest3_15_03"); //NejdÅ™Ã­v poÅ¡lu na cestu jÃ¡ tebe, ty zatuchlÃ¡ utkvÄ›lÃ¡ pÅ™edstavo rÃ¡je!
 
-	B_LogEntry			(CH4_EnterTemple,"Varrag-Unhilqt, jeden z pìti Spáèovıch šamanù, stojí pøede mnou. Jen jeden z nás vyjde z této komnaty ivı!");
+	B_LogEntry			(CH4_EnterTemple,"Varrag-Unhilqt, jeden z pÄ›ti SpÃ¡ÄovÃ½ch Å¡amanÅ¯, stojÃ­ pÅ™ede mnou. Jen jeden z nÃ¡s vyjde z tÃ©to komnaty Å¾ivÃ½!");
 
 	AI_StopProcessInfos	(self);
 	

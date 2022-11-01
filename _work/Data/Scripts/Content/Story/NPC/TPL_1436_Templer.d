@@ -1,7 +1,7 @@
 instance TPL_1436_Templer (Npc_Default)
 {
 	//-------- primary data --------
-	name =							"Templáø";
+	name =							"TemplÃ¡Å™";
 	npctype =						NPCTYPE_MAIN;// NO NAME Templer in der ALten Mine darf keine Ambient Infos haben/ M.F.
 	guild =							GIL_TPL;
 	level =							17;

@@ -37,7 +37,7 @@ INSTANCE Info_Mine_Sld_8_EinerVonEuchWerden (C_INFO) // E1
 	condition	= Info_Mine_Sld_8_EinerVonEuchWerden_Condition;
 	information	= Info_Mine_Sld_8_EinerVonEuchWerden_Info;
 	permanent	= 1;
-	description = "Jak se m˘ûu dostat k tÈhle ËetÏ?";
+	description = "Jak se m≈Ø≈æu dostat k t√©hle ƒçetƒõ?";
 };                       
 
 FUNC INT Info_Mine_Sld_8_EinerVonEuchWerden_Condition()
@@ -53,8 +53,8 @@ FUNC INT Info_Mine_Sld_8_EinerVonEuchWerden_Condition()
 
 FUNC VOID Info_Mine_Sld_8_EinerVonEuchWerden_Info()
 {
-	AI_Output(other,self,"Info_Mine_Sld_8_EinerVonEuchWerden_15_00"); //Jak se m˘ûu dostat k tÈhle ËetÏ?
-	AI_Output(self,other,"Info_Mine_Sld_8_EinerVonEuchWerden_08_01"); //Pokud pracujeö tady v KotlinÏ, nejprve se budeö muset propracovat do NovÈho t·bora.
+	AI_Output(other,self,"Info_Mine_Sld_8_EinerVonEuchWerden_15_00"); //Jak se m≈Ø≈æu dostat k t√©hle ƒçetƒõ?
+	AI_Output(self,other,"Info_Mine_Sld_8_EinerVonEuchWerden_08_01"); //Pokud pracuje≈° tady v Kotlinƒõ, nejprve se bude≈° muset propracovat do Nov√©ho t√°bora.
 	AI_Output(self,other,"Info_Mine_Sld_8_EinerVonEuchWerden_08_02"); //Zeptej se tam.
 };
 
@@ -79,8 +79,8 @@ FUNC INT Info_Mine_Sld_8_WichtigePersonen_Condition()
 FUNC VOID Info_Mine_Sld_8_WichtigePersonen_Info()
 {
 	AI_Output(other,self,"Info_Mine_Sld_8_WichtigePersonen_15_00"); //Kdo to tady vede?
-	AI_Output(self,other,"Info_Mine_Sld_8_WichtigePersonen_08_01"); //Okyl velÌ v KotlinÏ. Lee to ¯ÌdÌ v t·bo¯e.
-	AI_Output(self,other,"Info_Mine_Sld_8_WichtigePersonen_08_02"); //MÏl bys s obÏma promluvit.
+	AI_Output(self,other,"Info_Mine_Sld_8_WichtigePersonen_08_01"); //Okyl vel√≠ v Kotlinƒõ. Lee to ≈ô√≠d√≠ v t√°bo≈ôe.
+	AI_Output(self,other,"Info_Mine_Sld_8_WichtigePersonen_08_02"); //Mƒõl bys s obƒõma promluvit.
 };
 
 // *************************************************************************
@@ -93,7 +93,7 @@ INSTANCE Info_Mine_Sld_8_DasLager(C_INFO)
 	condition	= Info_Mine_Sld_8_DasLager_Condition;
 	information	= Info_Mine_Sld_8_DasLager_Info;
 	permanent	= 1;
-	description = "Co se dÏje v t·bo¯e?";
+	description = "Co se dƒõje v t√°bo≈ôe?";
 };                       
 
 FUNC INT Info_Mine_Sld_8_DasLager_Condition()
@@ -103,9 +103,9 @@ FUNC INT Info_Mine_Sld_8_DasLager_Condition()
 
 FUNC VOID Info_Mine_Sld_8_DasLager_Info()
 {
-	AI_Output(other,self,"Info_Mine_Sld_8_DasLager_15_00"); //Co se dÏje v t·bo¯e?
-	AI_Output(self,other,"Info_Mine_Sld_8_DasLager_08_01"); //St¯eûÌme vstup do dolu.
-	AI_Output(other,self,"Info_Mine_Sld_8_DasLager_08_02"); //Nikdo kromÏ naöich lidÌ tam nesmÌ.
+	AI_Output(other,self,"Info_Mine_Sld_8_DasLager_15_00"); //Co se dƒõje v t√°bo≈ôe?
+	AI_Output(self,other,"Info_Mine_Sld_8_DasLager_08_01"); //St≈ôe≈æ√≠me vstup do dolu.
+	AI_Output(other,self,"Info_Mine_Sld_8_DasLager_08_02"); //Nikdo kromƒõ na≈°ich lid√≠ tam nesm√≠.
 };
 
 // *************************************************************************
@@ -118,7 +118,7 @@ INSTANCE Info_Mine_Sld_8_DieLage(C_INFO) // E1
 	condition	= Info_Mine_Sld_8_DieLage_Condition;
 	information	= Info_Mine_Sld_8_DieLage_Info;
 	permanent	= 1;
-	description = "Vöechno v po¯·dku?";
+	description = "V≈°echno v po≈ô√°dku?";
 };                       
 
 FUNC INT Info_Mine_Sld_8_DieLage_Condition()
@@ -128,8 +128,8 @@ FUNC INT Info_Mine_Sld_8_DieLage_Condition()
 
 FUNC VOID Info_Mine_Sld_8_DieLage_Info()
 {
-	AI_Output(other,self,"Info_Mine_Sld_8_DieLage_15_00"); //Vöechno v po¯·dku?
-	AI_Output(self,other,"Info_Mine_Sld_8_DieLage_08_01"); //Na co ses ptal? M·me vöechno pod kontrolou.
+	AI_Output(other,self,"Info_Mine_Sld_8_DieLage_15_00"); //V≈°echno v po≈ô√°dku?
+	AI_Output(self,other,"Info_Mine_Sld_8_DieLage_08_01"); //Na co ses ptal? M√°me v≈°echno pod kontrolou.
 };
 	
 // *************************************************************************

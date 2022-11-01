@@ -1,5 +1,5 @@
 //------------------------------------------------------------------
-//PERS÷NLICHE WAFFEN
+//PERS√ñNLICHE WAFFEN
 /***********************************************************/
 //ALTES LAGER
 /***********************************************************/
@@ -7,7 +7,7 @@
 //------------------------------------------------------------------
 INSTANCE Thorus_Schwert (C_Item)
 {
-	name 				=	"Thorus˘v meË";
+	name 				=	"Thorus≈Øv meƒç";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_SWD;
@@ -37,7 +37,7 @@ INSTANCE Thorus_Schwert (C_Item)
 //-----------------------------------------------------------
 INSTANCE Innos_Zorn (C_Item)
 {
-	name 				=	"Innos˘v hnÏv";
+	name 				=	"Innos≈Øv hnƒõv";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_SWD;
@@ -67,7 +67,7 @@ INSTANCE Innos_Zorn (C_Item)
 //-----------------------------------------------------------
 INSTANCE Scars_Schwert (C_Item)
 {
-	name 				=	"Scar˘v meË";
+	name 				=	"Scar≈Øv meƒç";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;
@@ -98,7 +98,7 @@ INSTANCE Scars_Schwert (C_Item)
 //-----------------------------------------------------------
 INSTANCE Artos_Schwert (C_Item)
 {
-	name 				=	"Art˘v meË";
+	name 				=	"Art≈Øv meƒç";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;
@@ -128,7 +128,7 @@ INSTANCE Artos_Schwert (C_Item)
 //-----------------------------------------------------------
 INSTANCE Rabenrecht (C_Item)
 {
-	name 				=	"Ravenovo pr·vo";
+	name 				=	"Ravenovo pr√°vo";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;
@@ -158,7 +158,7 @@ INSTANCE Rabenrecht (C_Item)
 //-----------------------------------------------------------
 INSTANCE Prankenhieb (C_Item)
 {
-	name 				=	"⁄der tlapy";
+	name 				=	"√öder tlapy";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;
@@ -188,7 +188,7 @@ INSTANCE Prankenhieb (C_Item)
 //-----------------------------------------------------------
 INSTANCE Diegos_Bogen (C_Item)
 {
-	name 				= "Dieg˘v luk";
+	name 				= "Dieg≈Øv luk";
 
 	mainflag 			= ITEM_KAT_FF;
 	flags 				= ITEM_BOW;
@@ -217,7 +217,7 @@ INSTANCE Diegos_Bogen (C_Item)
 //-----------------------------------------------------------
 INSTANCE Whistlers_Schwert (C_Item)
 {
-	name 				=	"Whistler˘v meË";
+	name 				=	"Whistler≈Øv meƒç";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;
@@ -250,7 +250,7 @@ INSTANCE Whistlers_Schwert (C_Item)
 //-----------------------------------------------------------
 INSTANCE Stab_des_Lichts (C_Item)
 {
-	name 				=	"H˘l svÏtla";
+	name 				=	"H≈Øl svƒõtla";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_AXE;
@@ -280,7 +280,7 @@ INSTANCE Stab_des_Lichts (C_Item)
 //-----------------------------------------------------------
 INSTANCE Kaloms_Schwert (C_Item)
 {
-	name 				=	"Kalom˘v meË";
+	name 				=	"Kalom≈Øv meƒç";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD;
@@ -310,7 +310,7 @@ INSTANCE Kaloms_Schwert (C_Item)
 //-----------------------------------------------------------
 INSTANCE Streitschlichter (C_Item)
 {
-	name 				=	"Lester˘v uklidÚovaË";
+	name 				=	"Lester≈Øv uklid≈àovaƒç";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_AXE;
@@ -340,7 +340,7 @@ INSTANCE Streitschlichter (C_Item)
 //-----------------------------------------------------------
 INSTANCE Roter_Wind (C_Item)
 {
-	name 				=	"Rud˝ vÌtr";
+	name 				=	"Rud√Ω v√≠tr";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_SWD;
@@ -370,7 +370,7 @@ INSTANCE Roter_Wind (C_Item)
 //-----------------------------------------------------------
 INSTANCE Namibs_Keule (C_Item)
 {
-	name 				=	"Namib˘v kyj";
+	name 				=	"Namib≈Øv kyj";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_AXE;
@@ -400,7 +400,7 @@ INSTANCE Namibs_Keule (C_Item)
 //-----------------------------------------------------------
 INSTANCE Oruns_Keule (C_Item)
 {
-	name 				=	"Orun˘v kyj";
+	name 				=	"Orun≈Øv kyj";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_AXE;
@@ -430,7 +430,7 @@ INSTANCE Oruns_Keule (C_Item)
 //-----------------------------------------------------------
 INSTANCE Fortunos_Keule (C_Item)
 {
-	name 				=	"Fortun˘v kyj";
+	name 				=	"Fortun≈Øv kyj";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_AXE;
@@ -553,7 +553,7 @@ INSTANCE Torlofs_Axt (C_Item)
 //-----------------------------------------------------------
 INSTANCE Cords_Spalter (C_Item)
 {
-	name 				=	"Cord˘v rozkol";
+	name 				=	"Cord≈Øv rozkol";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_AXE;
@@ -643,7 +643,7 @@ INSTANCE Lares_Axt (C_Item)
 //-----------------------------------------------------------
 INSTANCE Wolfs_Bogen (C_Item)
 {
-	name 				=	"Wolf˘v luk";
+	name 				=	"Wolf≈Øv luk";
 
 	mainflag 			=	ITEM_KAT_FF;
 	flags 				=	ITEM_BOW;
@@ -702,7 +702,7 @@ INSTANCE Silas_Axt (C_Item)
 //-----------------------------------------------------------
 INSTANCE Heerscherstab (C_Item)
 {
-	name 				=	"éezlo";
+	name 				=	"≈Ωezlo";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_2HD_AXE;

@@ -1,7 +1,7 @@
 instance TPL_1406_Templer (Npc_Default)
 {
 	//-------- primary data --------
-	name =							"Kalomùv osobní strážce";
+	name =							"KalomÅ¯v osobnÃ­ strÃ¡Å¾ce";
 	npctype =						NPCTYPE_MAIN;
 	guild =							GIL_TPL;
 	level =							25;

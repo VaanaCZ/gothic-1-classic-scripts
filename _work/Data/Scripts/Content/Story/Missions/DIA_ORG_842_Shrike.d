@@ -45,10 +45,10 @@ FUNC int  DIA_Shrike_Hello_Condition()
 func void  DIA_Shrike_Hello_Info()
 {
 	AI_Output (other, self,"DIA_Shrike_Hello_15_00"); //Jak to jde?
-	AI_Output (self, other,"DIA_Shrike_Hello_07_01"); //Ztraù se!
+	AI_Output (self, other,"DIA_Shrike_Hello_07_01"); //Ztra≈• se!
 	
 	
-	//FMTaken = TRUE; 			//******* TEST - Helper f¸r Sld-KdW Aufnahme!!! *********************  
+	//FMTaken = TRUE; 			//******* TEST - Helper f√ºr Sld-KdW Aufnahme!!! *********************  
 	//Kapitel = 4;
 
 	
@@ -67,7 +67,7 @@ instance DIA_Shrike_GetLost (C_INFO)
 	condition		= DIA_Shrike_GetLost_Condition;
 	information		= DIA_Shrike_GetLost_Info;
 	important		= 0;
-	description		= "Ztraù se.";
+	description		= "Ztra≈• se.";
 };
 
 FUNC int  DIA_Shrike_GetLost_Condition()
@@ -80,12 +80,12 @@ FUNC int  DIA_Shrike_GetLost_Condition()
 
 func void  DIA_Shrike_GetLost_Info()
 {
-	AI_Output (other, self,"DIA_Shrike_GetLost_15_00"); //Ztraù se.
-	AI_Output (self, other,"DIA_Shrike_GetLost_07_01"); //JeötÏ si popovÌd·me!
+	AI_Output (other, self,"DIA_Shrike_GetLost_15_00"); //Ztra≈• se.
+	AI_Output (self, other,"DIA_Shrike_GetLost_07_01"); //Je≈°tƒõ si popov√≠d√°me!
 
 	Log_CreateTopic		(CH1_ShrikesHut,	LOG_MISSION);
 	Log_SetTopicStatus	(CH1_ShrikesHut,	LOG_RUNNING);
-	B_LogEntry			(CH1_ShrikesHut,"Poda¯ilo se p¯esvÏdËit Shrika, aby si naöel jinou chatrË. Jsem zvÏdav, co na to ¯ekne Gorn.");
+	B_LogEntry			(CH1_ShrikesHut,"Poda≈ôilo se p≈ôesvƒõdƒçit Shrika, aby si na≈°el jinou chatrƒç. Jsem zvƒõdav, co na to ≈ôekne Gorn.");
 	B_GiveXP			(XP_KickedShrike);
 
 	AI_StopProcessInfos	(self);	

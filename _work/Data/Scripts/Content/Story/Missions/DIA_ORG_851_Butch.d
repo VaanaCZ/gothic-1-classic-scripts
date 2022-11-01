@@ -45,7 +45,7 @@ FUNC int  DIA_Butch_Hello_Condition()
 func void  DIA_Butch_Hello_Info()
 {
 	AI_Output (other, self,"DIA_Butch_Hello_15_00"); //Zdar! Kdo jsi?
-	AI_Output (self, other,"DIA_Butch_Hello_13_01"); //Po tom ti nic není! Nelíbí se mi tvùj ciferník!
+	AI_Output (self, other,"DIA_Butch_Hello_13_01"); //Po tom ti nic nenÃ­! NelÃ­bÃ­ se mi tvÅ¯j cifernÃ­k!
 	AI_StopProcessInfos	( self );
 };
 

@@ -19,7 +19,7 @@ FUNC INT DIA_Jarvis_EXIT_Condition()
 
 FUNC VOID DIA_Jarvis_EXIT_Info()
 {	
-	AI_Output (self, other,"DIA_Jarvis_EXIT_08_00"); //Hlídej si záda!
+	AI_Output (self, other,"DIA_Jarvis_EXIT_08_00"); //HlÃ­dej si zÃ¡da!
 	AI_StopProcessInfos	(self);
 };
 
@@ -44,15 +44,15 @@ FUNC INT DIA_Jarvis_First_Condition()
 
 FUNC VOID DIA_Jarvis_First_Info()
 {	
-	AI_Output (self, other,"DIA_Jarvis_First_08_00"); //Máš v úmyslu projít touhle branou?
-	AI_Output (other, self,"DIA_Jarvis_First_15_01"); //Máš v úmyslu mì zastavit?
-	AI_Output (self, other,"DIA_Jarvis_First_08_02"); //Ne, ale mìl bys vìdìt, co tì èeká. Tady to není jako ve Starém táboøe nebo jako u tìch sektáøskıch bláznù!
-	AI_Output (other, self,"DIA_Jarvis_First_15_03"); //A co mì tu èeká?
-	AI_Output (self, other,"DIA_Jarvis_First_08_04"); //Tady nejsou ádní stráci ani templáøi, kteøí by na tebe dohlídli. Tady jedná kadı sám za sebe a jediní, kdo spolu drí, jsme my, oldáci.
+	AI_Output (self, other,"DIA_Jarvis_First_08_00"); //MÃ¡Å¡ v Ãºmyslu projÃ­t touhle branou?
+	AI_Output (other, self,"DIA_Jarvis_First_15_01"); //MÃ¡Å¡ v Ãºmyslu mÄ› zastavit?
+	AI_Output (self, other,"DIA_Jarvis_First_08_02"); //Ne, ale mÄ›l bys vÄ›dÄ›t, co tÄ› ÄekÃ¡. Tady to nenÃ­ jako ve StarÃ©m tÃ¡boÅ™e nebo jako u tÄ›ch sektÃ¡Å™skÃ½ch blÃ¡znÅ¯!
+	AI_Output (other, self,"DIA_Jarvis_First_15_03"); //A co mÄ› tu ÄekÃ¡?
+	AI_Output (self, other,"DIA_Jarvis_First_08_04"); //Tady nejsou Å¾Ã¡dnÃ­ strÃ¡Å¾ci ani templÃ¡Å™i, kteÅ™Ã­ by na tebe dohlÃ­dli. Tady jednÃ¡ kaÅ¾dÃ½ sÃ¡m za sebe a jedinÃ­, kdo spolu drÅ¾Ã­, jsme my, Å¾oldÃ¡ci.
 };
 
 // ************************************************************
-// 						Söldner
+// 						SÃ¶ldner
 // ************************************************************
 
 INSTANCE DIA_Jarvis_SldInfo (C_INFO)
@@ -62,7 +62,7 @@ INSTANCE DIA_Jarvis_SldInfo (C_INFO)
 	condition	= DIA_Jarvis_SldInfo_Condition;
 	information	= DIA_Jarvis_SldInfo_Info;
 	permanent	= 0;
-	description	= "Co dìlají oldáci?";
+	description	= "Co dÄ›lajÃ­ Å¾oldÃ¡ci?";
 };                       
 
 FUNC INT DIA_Jarvis_SldInfo_Condition()
@@ -75,10 +75,10 @@ FUNC INT DIA_Jarvis_SldInfo_Condition()
 
 FUNC VOID DIA_Jarvis_SldInfo_Info()
 {	
-	AI_Output (other, self,"DIA_Jarvis_SldInfo_15_00"); //Co dìlají oldáci?
-	AI_Output (self, other,"DIA_Jarvis_SldInfo_08_01"); //My - my jsme oldáci mágù Vody.
-	AI_Output (self, other,"DIA_Jarvis_SldInfo_08_02"); //Náš cíl je dostat se odtud. Tvrdì na tom pracujeme a nevidíme vìci tak snadno jako ti hoši ze Starého tábora, kteøí si uívají dobrıch èasù na zádech svıch kopáèù.
-	AI_Output (self, other,"DIA_Jarvis_SldInfo_08_03"); //Všichni jdeme za Leem. Je to velkı mu. Mu, kterı drí tenhle proklatı tábor pohromadì.
+	AI_Output (other, self,"DIA_Jarvis_SldInfo_15_00"); //Co dÄ›lajÃ­ Å¾oldÃ¡ci?
+	AI_Output (self, other,"DIA_Jarvis_SldInfo_08_01"); //My - my jsme Å¾oldÃ¡ci mÃ¡gÅ¯ Vody.
+	AI_Output (self, other,"DIA_Jarvis_SldInfo_08_02"); //NÃ¡Å¡ cÃ­l je dostat se odtud. TvrdÄ› na tom pracujeme a nevidÃ­me vÄ›ci tak snadno jako ti hoÅ¡i ze StarÃ©ho tÃ¡bora, kteÅ™Ã­ si uÅ¾Ã­vajÃ­ dobrÃ½ch ÄasÅ¯ na zÃ¡dech svÃ½ch kopÃ¡ÄÅ¯.
+	AI_Output (self, other,"DIA_Jarvis_SldInfo_08_03"); //VÅ¡ichni jdeme za Leem. Je to velkÃ½ muÅ¾. MuÅ¾, kterÃ½ drÅ¾Ã­ tenhle proklatÃ½ tÃ¡bor pohromadÄ›.
 };
 
 // ************************************************************
@@ -92,7 +92,7 @@ INSTANCE DIA_Jarvis_Magier (C_INFO)
 	condition	= DIA_Jarvis_Magier_Condition;
 	information	= DIA_Jarvis_Magier_Info;
 	permanent	= 0;
-	description	= "Co dìlají mágové?";
+	description	= "Co dÄ›lajÃ­ mÃ¡govÃ©?";
 };                       
 
 FUNC INT DIA_Jarvis_Magier_Condition()
@@ -105,11 +105,11 @@ FUNC INT DIA_Jarvis_Magier_Condition()
 
 FUNC VOID DIA_Jarvis_Magier_Info()
 {	
-	AI_Output (other, self,"DIA_Jarvis_Magier_15_00"); //Co dìlají mágové?
-	AI_Output (self, other,"DIA_Jarvis_Magier_08_01"); //Zkoumají magické vlastnosti rudy, kterou naši rudaøi vytìili v dolu.
-	AI_Output (self, other,"DIA_Jarvis_Magier_08_02"); //Co já vím, chtìjí vyhodit celou tu zpropadenou rudnou haldu do povìtøí, aby se osvobodili z Bariéry.
-	AI_Output (other, self,"DIA_Jarvis_Magier_15_03"); //To vypadá nebezpeènì.
-	AI_Output (self, other,"DIA_Jarvis_Magier_08_04"); //Øíkali, abysme se neznepokojovali.
+	AI_Output (other, self,"DIA_Jarvis_Magier_15_00"); //Co dÄ›lajÃ­ mÃ¡govÃ©?
+	AI_Output (self, other,"DIA_Jarvis_Magier_08_01"); //ZkoumajÃ­ magickÃ© vlastnosti rudy, kterou naÅ¡i rudaÅ™i vytÄ›Å¾ili v dolu.
+	AI_Output (self, other,"DIA_Jarvis_Magier_08_02"); //Co jÃ¡ vÃ­m, chtÄ›jÃ­ vyhodit celou tu zpropadenou rudnou haldu do povÄ›tÅ™Ã­, aby se osvobodili z BariÃ©ry.
+	AI_Output (other, self,"DIA_Jarvis_Magier_15_03"); //To vypadÃ¡ nebezpeÄnÄ›.
+	AI_Output (self, other,"DIA_Jarvis_Magier_08_04"); //Å˜Ã­kali, abysme se neznepokojovali.
 };
 
 // ************************************************************
@@ -123,7 +123,7 @@ INSTANCE DIA_Jarvis_Erzhaufen (C_INFO)
 	condition	= DIA_Jarvis_Erzhaufen_Condition;
 	information	= DIA_Jarvis_Erzhaufen_Info;
 	permanent	= 0;
-	description	= "Máte tady velkou rudnou haldu?";
+	description	= "MÃ¡te tady velkou rudnou haldu?";
 };                       
 
 FUNC INT DIA_Jarvis_Erzhaufen_Condition()
@@ -136,9 +136,9 @@ FUNC INT DIA_Jarvis_Erzhaufen_Condition()
 
 FUNC VOID DIA_Jarvis_Erzhaufen_Info()
 {	
-	AI_Output (other, self,"DIA_Jarvis_Erzhaufen_15_00"); //Máte tady velkou rudnou haldu?
-	AI_Output (self, other,"DIA_Jarvis_Erzhaufen_08_01"); //Dalo by se tak øíci. Mohli bysme za to koupit královu enu.
-	AI_Output (self, other,"DIA_Jarvis_Erzhaufen_08_02"); //My se ale nestaráme o ádnı proklatı obchod s rudou s tím starım páprdou. My se chceme ODTUD DOSTAT!
+	AI_Output (other, self,"DIA_Jarvis_Erzhaufen_15_00"); //MÃ¡te tady velkou rudnou haldu?
+	AI_Output (self, other,"DIA_Jarvis_Erzhaufen_08_01"); //Dalo by se tak Å™Ã­ci. Mohli bysme za to koupit krÃ¡lovu Å¾enu.
+	AI_Output (self, other,"DIA_Jarvis_Erzhaufen_08_02"); //My se ale nestarÃ¡me o Å¾Ã¡dnÃ½ proklatÃ½ obchod s rudou s tÃ­m starÃ½m pÃ¡prdou. My se chceme ODTUD DOSTAT!
 };
 
 // ************************************************************
@@ -152,7 +152,7 @@ INSTANCE DIA_Jarvis_WoHaufen (C_INFO)
 	condition	= DIA_Jarvis_WoHaufen_Condition;
 	information	= DIA_Jarvis_WoHaufen_Info;
 	permanent	= 0;
-	description	= "Kde je rudná halda?";
+	description	= "Kde je rudnÃ¡ halda?";
 };                       
 
 FUNC INT DIA_Jarvis_WoHaufen_Condition()
@@ -165,10 +165,10 @@ FUNC INT DIA_Jarvis_WoHaufen_Condition()
 
 FUNC VOID DIA_Jarvis_WoHaufen_Info()
 {	
-	AI_Output (other, self,"DIA_Jarvis_WoHaufen_15_00"); //Kde je rudná halda?
-	AI_Output (self, other,"DIA_Jarvis_WoHaufen_08_01"); //Chceš vidìt opravdovou haldu rudy, viï? Uprostøed jeskynì je velká díra, do které to všechno ukládají.
-	AI_Output (self, other,"DIA_Jarvis_WoHaufen_08_02"); //Ale blízko se k ní nedostaneš, to ti povídám. Mágové a naši lidé ji støeí ve dne v noci.
-	AI_Output (other, self,"DIA_Jarvis_WoHaufen_15_03"); //Byl jsem zvìdavı.
+	AI_Output (other, self,"DIA_Jarvis_WoHaufen_15_00"); //Kde je rudnÃ¡ halda?
+	AI_Output (self, other,"DIA_Jarvis_WoHaufen_08_01"); //ChceÅ¡ vidÄ›t opravdovou haldu rudy, viÄ? UprostÅ™ed jeskynÄ› je velkÃ¡ dÃ­ra, do kterÃ© to vÅ¡echno uklÃ¡dajÃ­.
+	AI_Output (self, other,"DIA_Jarvis_WoHaufen_08_02"); //Ale blÃ­zko se k nÃ­ nedostaneÅ¡, to ti povÃ­dÃ¡m. MÃ¡govÃ© a naÅ¡i lidÃ© ji stÅ™eÅ¾Ã­ ve dne v noci.
+	AI_Output (other, self,"DIA_Jarvis_WoHaufen_15_03"); //Byl jsem zvÄ›davÃ½.
 };
 
 // ************************************************************
@@ -182,7 +182,7 @@ INSTANCE DIA_Jarvis_Rest (C_INFO)
 	condition	= DIA_Jarvis_Rest_Condition;
 	information	= DIA_Jarvis_Rest_Info;
 	permanent	= 0;
-	description	= "A co zbytek lidí?";
+	description	= "A co zbytek lidÃ­?";
 };                       
 
 FUNC INT DIA_Jarvis_Rest_Condition()
@@ -195,8 +195,8 @@ FUNC INT DIA_Jarvis_Rest_Condition()
 
 FUNC VOID DIA_Jarvis_Rest_Info()
 {	
-	AI_Output (other, self,"DIA_Jarvis_Rest_15_00"); //A co zbytek lidí?
-	AI_Output (self, other,"DIA_Jarvis_Rest_08_01"); //Všechno darebáci. Ti se o ten zpropadenej tábor nestarají. Radìji bych mìl pøed branou rolnickou strá.
+	AI_Output (other, self,"DIA_Jarvis_Rest_15_00"); //A co zbytek lidÃ­?
+	AI_Output (self, other,"DIA_Jarvis_Rest_08_01"); //VÅ¡echno darebÃ¡ci. Ti se o ten zpropadenej tÃ¡bor nestarajÃ­. RadÄ›ji bych mÄ›l pÅ™ed branou rolnickou strÃ¡Å¾.
 };
 
 // ************************************************************
@@ -224,11 +224,11 @@ FUNC INT DIA_Jarvis_PERM_Condition()
 FUNC VOID DIA_Jarvis_PERM_Info()
 {	
 	AI_Output (other, self,"DIA_Jarvis_PERM_15_00"); //Tak jak to jde?
-	AI_Output (self, other,"DIA_Jarvis_PERM_08_01"); //Rudaøi poøád tìí. A budeme mít dost rudy, tak tu haldu odpálíme.
+	AI_Output (self, other,"DIA_Jarvis_PERM_08_01"); //RudaÅ™i poÅ™Ã¡d tÄ›Å¾Ã­. AÅ¾ budeme mÃ­t dost rudy, tak tu haldu odpÃ¡lÃ­me.
 };
 
 /*------------------------------------------------------------------------
-//							SÖLDNERAUFNAHME									//
+//							SÃ–LDNERAUFNAHME									//
 ------------------------------------------------------------------------*/
 instance Sld_728_Jarvis_AUFNAHMESOLDIER (C_INFO)
 {
@@ -251,13 +251,13 @@ FUNC int  Sld_728_Jarvis_AUFNAHMESOLDIER_Condition()
 func void  Sld_728_Jarvis_AUFNAHMESOLDIER_Info()
 {
 	AI_GotoNpc (hero,self); 
-	AI_Output (self, other,"Sld_728_Jarvis_AUFNAHMESOLDIER_Info_08_01"); //Hej, slyšel jsem, e jsi v dolech poøádnì zatopil dùlním èervùm.
-	AI_Output (self, other,"Sld_728_Jarvis_AUFNAHMESOLDIER_Info_08_02"); //Lee by tì byl docela ochotnı pøijmout za oldáka. Promluv s ním.
+	AI_Output (self, other,"Sld_728_Jarvis_AUFNAHMESOLDIER_Info_08_01"); //Hej, slyÅ¡el jsem, Å¾e jsi v dolech poÅ™Ã¡dnÄ› zatopil dÅ¯lnÃ­m ÄervÅ¯m.
+	AI_Output (self, other,"Sld_728_Jarvis_AUFNAHMESOLDIER_Info_08_02"); //Lee by tÄ› byl docela ochotnÃ½ pÅ™ijmout za Å¾oldÃ¡ka. Promluv s nÃ­m.
 
-	self.flags = 0;		// Immortal-Flag löschen
+	self.flags = 0;		// Immortal-Flag lÃ¶schen
 
 	Log_CreateTopic (GE_BecomeMercenary,LOG_NOTE);
-	B_LogEntry (GE_BecomeMercenary,"Mìl bych si promluvit s Leem. Moná mi dovolí pøidat se k oldákùm.");
+	B_LogEntry (GE_BecomeMercenary,"MÄ›l bych si promluvit s Leem. MoÅ¾nÃ¡ mi dovolÃ­ pÅ™idat se k Å¾oldÃ¡kÅ¯m.");
 };
 
 

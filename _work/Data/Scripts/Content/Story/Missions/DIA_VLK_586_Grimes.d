@@ -18,8 +18,8 @@ FUNC int  VLK_586_Grimes_Exit_Condition()
 
 FUNC VOID  VLK_586_Grimes_Exit_Info()
 {
-	AI_Output (other, self,"VLK_586_Grimes_Exit_Info_15_01"); //Hodnì štìstí!
-	AI_Output (self, other,"VLK_586_Grimes_Exit_Info_04_02"); //Tobì taky, chlapèe, tobì taky.
+	AI_Output (other, self,"VLK_586_Grimes_Exit_Info_15_01"); //HodnÄ› Å¡tÄ›stÃ­!
+	AI_Output (self, other,"VLK_586_Grimes_Exit_Info_04_02"); //TobÄ› taky, chlapÄe, tobÄ› taky.
 	
 	AI_StopProcessInfos	( self );
 };
@@ -36,7 +36,7 @@ instance  VLK_586_Grimes_STORY (C_INFO)
 	information		= VLK_586_Grimes_STORY_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Jsi tady u dlouho?"; 
+	description		= "Jsi tady uÅ¾ dlouho?"; 
 };
 
 FUNC int  VLK_586_Grimes_STORY_Condition()
@@ -51,11 +51,11 @@ FUNC int  VLK_586_Grimes_STORY_Condition()
 
 FUNC void  VLK_586_Grimes_STORY_Info()
 {
-	AI_Output (other, self,"VLK_586_Grimes_STORY_Info_15_01"); //Jsi tady u dlouho?
-	AI_Output (self, other,"VLK_586_Grimes_STORY_Info_04_02"); //Jsem tady u 10 let. Vìø mi, nauèil jsem se toho u dost a také jsem nabyl zkušenosti.
-	AI_Output (self, other,"VLK_586_Grimes_STORY_Info_04_03"); //Èelil jsem u mnoha nebezpeèím a podaøilo se mi pøeít.
-	AI_Output (self, other,"VLK_586_Grimes_STORY_Info_04_04"); //Za starıch èasù, kdy jsme pracovali v zavøeném dolu, v tom, kterı je teï opuštìnı,  se zhroutily nosné trámy...
-	AI_Output (self, other,"VLK_586_Grimes_STORY_Info_04_05"); //To je ale starı pøíbìh...
+	AI_Output (other, self,"VLK_586_Grimes_STORY_Info_15_01"); //Jsi tady uÅ¾ dlouho?
+	AI_Output (self, other,"VLK_586_Grimes_STORY_Info_04_02"); //Jsem tady uÅ¾ 10 let. VÄ›Å™ mi, nauÄil jsem se toho uÅ¾ dost a takÃ© jsem nabyl zkuÅ¡enosti.
+	AI_Output (self, other,"VLK_586_Grimes_STORY_Info_04_03"); //ÄŒelil jsem uÅ¾ mnoha nebezpeÄÃ­m a podaÅ™ilo se mi pÅ™eÅ¾Ã­t.
+	AI_Output (self, other,"VLK_586_Grimes_STORY_Info_04_04"); //Za starÃ½ch ÄasÅ¯, kdyÅ¾ jsme pracovali v zavÅ™enÃ©m dolu, v tom, kterÃ½ je teÄ opuÅ¡tÄ›nÃ½,  se zhroutily nosnÃ© trÃ¡my...
+	AI_Output (self, other,"VLK_586_Grimes_STORY_Info_04_05"); //To je ale starÃ½ pÅ™Ã­bÄ›h...
 };
 
 instance  VLK_586_Grimes_KNOW (C_INFO)
@@ -65,7 +65,7 @@ instance  VLK_586_Grimes_KNOW (C_INFO)
 	information		= VLK_586_Grimes_KNOW_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Urèitì jsi také slyšel o spoustì únikovıch cest."; 
+	description		= "UrÄitÄ› jsi takÃ© slyÅ¡el o spoustÄ› ÃºnikovÃ½ch cest."; 
 };
 
 FUNC int  VLK_586_Grimes_KNOW_Condition()
@@ -78,13 +78,13 @@ FUNC int  VLK_586_Grimes_KNOW_Condition()
 };
 FUNC void  VLK_586_Grimes_KNOW_Info()
 {
-	AI_Output (other, self,"VLK_586_Grimes_KNOW_Info_15_01"); //Urèitì jsi také slyšel o spoustì únikovıch cest.
-	AI_Output (self, other,"VLK_586_Grimes_KNOW_Info_04_02"); //Poslyš, hochu: vím, e odtud chceš pryè, ale na to zapomeò.
-	AI_Output (self, other,"VLK_586_Grimes_KNOW_Info_04_03"); //Lepší bude zapomenout na ty únikové cesty. Vidìl jsem tváøe tìch, co se pokoušeli dostat z Bariéry.
-	AI_Output (self, other,"VLK_586_Grimes_KNOW_Info_04_04"); //Neudìlej tu samou chybu, Bariéra zastaví kadého.
-	AI_Output (other, self,"VLK_586_Grimes_KNOW_Info_15_05"); //Nechci dalších deset let ivota rubat v dole!
-	AI_Output (self, other,"VLK_586_Grimes_KNOW_Info_04_06"); //Ne, nebudeš! Snad budeš jedním z tìch velkıch šéfù, kdo ví.
-	AI_Output (self, other,"VLK_586_Grimes_KNOW_Info_04_07"); //Vypracuješ se dál, ale bez ohledu na to jak vysoko, Bariéra tì vdycky nakonec zastaví.
+	AI_Output (other, self,"VLK_586_Grimes_KNOW_Info_15_01"); //UrÄitÄ› jsi takÃ© slyÅ¡el o spoustÄ› ÃºnikovÃ½ch cest.
+	AI_Output (self, other,"VLK_586_Grimes_KNOW_Info_04_02"); //PoslyÅ¡, hochu: vÃ­m, Å¾e odtud chceÅ¡ pryÄ, ale na to zapomeÅˆ.
+	AI_Output (self, other,"VLK_586_Grimes_KNOW_Info_04_03"); //LepÅ¡Ã­ bude zapomenout na ty ÃºnikovÃ© cesty. VidÄ›l jsem tvÃ¡Å™e tÄ›ch, co se pokouÅ¡eli dostat z BariÃ©ry.
+	AI_Output (self, other,"VLK_586_Grimes_KNOW_Info_04_04"); //NeudÄ›lej tu samou chybu, BariÃ©ra zastavÃ­ kaÅ¾dÃ©ho.
+	AI_Output (other, self,"VLK_586_Grimes_KNOW_Info_15_05"); //Nechci dalÅ¡Ã­ch deset let Å¾ivota rubat v dole!
+	AI_Output (self, other,"VLK_586_Grimes_KNOW_Info_04_06"); //Ne, nebudeÅ¡! Snad budeÅ¡ jednÃ­m z tÄ›ch velkÃ½ch Å¡Ã©fÅ¯, kdo vÃ­.
+	AI_Output (self, other,"VLK_586_Grimes_KNOW_Info_04_07"); //VypracujeÅ¡ se dÃ¡l, ale bez ohledu na to jak vysoko, BariÃ©ra tÄ› vÅ¾dycky nakonec zastavÃ­.
 };
 
 instance VLK_586_Grimes_FIRST (C_INFO)
@@ -103,5 +103,5 @@ FUNC int  VLK_586_Grimes_FIRST_Condition()
 
 func void  VLK_586_Grimes_FIRST_Info()
 {
-	AI_Output (self, other,"VLK_586_Grimes_FIRST_Info_04_02"); //Nová tváø. U si nìkdy kutal rudu, hochu?
+	AI_Output (self, other,"VLK_586_Grimes_FIRST_Info_04_02"); //NovÃ¡ tvÃ¡Å™. UÅ¾ si nÄ›kdy kutal rudu, hochu?
 };  

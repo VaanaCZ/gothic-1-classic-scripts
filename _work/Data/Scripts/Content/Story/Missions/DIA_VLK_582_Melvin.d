@@ -33,7 +33,7 @@ INSTANCE DIA_Melvin_Hello (C_INFO)
 	condition		= DIA_Melvin_Hello_Condition;
 	information		= DIA_Melvin_Hello_Info;
 	permanent		= 0;
-	description		= "Zdar! Ty nejsi z tohoto t·bora, ûe ne?";
+	description		= "Zdar! Ty nejsi z tohoto t√°bora, ≈æe ne?";
 };
 
 FUNC INT DIA_Melvin_Hello_Condition()
@@ -43,12 +43,12 @@ FUNC INT DIA_Melvin_Hello_Condition()
 
 FUNC VOID DIA_Melvin_Hello_Info()
 {
-	AI_Output (other, self,"DIA_Melvin_Hello_15_00"); //Zdar! Ty nejsi z tohoto t·bora, ûe ne?
-	AI_Output (self, other,"DIA_Melvin_Hello_03_01"); //Ano, jsem! P¯ed t˝dnem jsem opustil Star˝ t·bor. ÿekl jsem svÈmu kamar·dovi Dustymu, aby öel se mnou, ale chtÏl poËkat.
+	AI_Output (other, self,"DIA_Melvin_Hello_15_00"); //Zdar! Ty nejsi z tohoto t√°bora, ≈æe ne?
+	AI_Output (self, other,"DIA_Melvin_Hello_03_01"); //Ano, jsem! P≈ôed t√Ωdnem jsem opustil Star√Ω t√°bor. ≈òekl jsem sv√©mu kamar√°dovi Dustymu, aby ≈°el se mnou, ale chtƒõl poƒçkat.
 
 	Log_CreateTopic		(CH1_RecruitDusty,	LOG_MISSION);
 	Log_SetTopicStatus	(CH1_RecruitDusty,	LOG_RUNNING);
-	B_LogEntry			(CH1_RecruitDusty,"Kop·Ë Melvin se p¯idal k Bratrstvu. Jeho kamar·d Dusty st·le z˘st·v· ve StarÈm t·bo¯e, ale takÈ pom˝ölÌ na odchod.");
+	B_LogEntry			(CH1_RecruitDusty,"Kop√°ƒç Melvin se p≈ôidal k Bratrstvu. Jeho kamar√°d Dusty st√°le z≈Øst√°v√° ve Star√©m t√°bo≈ôe, ale tak√© pom√Ω≈°l√≠ na odchod.");
 };
 
 // **************************************************
@@ -62,7 +62,7 @@ INSTANCE DIA_Melvin_MetDusty (C_INFO)
 	condition		= DIA_Melvin_MetDusty_Condition;
 	information		= DIA_Melvin_MetDusty_Info;
 	permanent		= 0;
-	description		= "Zn·m Dustyho - p¯ed ned·vnem jsem s nÌm mluvil.";
+	description		= "Zn√°m Dustyho - p≈ôed ned√°vnem jsem s n√≠m mluvil.";
 };
 
 FUNC INT DIA_Melvin_MetDusty_Condition()
@@ -75,9 +75,9 @@ FUNC INT DIA_Melvin_MetDusty_Condition()
 
 FUNC VOID DIA_Melvin_MetDusty_Info()
 {
-	AI_Output (other, self,"DIA_Melvin_MetDusty_15_00"); //Zn·m Dustyho - p¯ed ned·vnem jsem s nÌm mluvil.
-	AI_Output (self, other,"DIA_Melvin_MetDusty_03_01"); //Kdybys ho potkal zase, ¯ekni mu, ûe byl tup˝, kdyû tam z˘stal. Je to desetkr·t lepöÌ, neû se nechat otravovat od str·ûÌ ve StarÈm t·bo¯e.
-	AI_Output (other, self,"DIA_Melvin_MetDusty_15_02"); //ÿeknu mu to, aû ho zase uvidÌm.
+	AI_Output (other, self,"DIA_Melvin_MetDusty_15_00"); //Zn√°m Dustyho - p≈ôed ned√°vnem jsem s n√≠m mluvil.
+	AI_Output (self, other,"DIA_Melvin_MetDusty_03_01"); //Kdybys ho potkal zase, ≈ôekni mu, ≈æe byl tup√Ω, kdy≈æ tam z≈Østal. Je to desetkr√°t lep≈°√≠, ne≈æ se nechat otravovat od str√°≈æ√≠ ve Star√©m t√°bo≈ôe.
+	AI_Output (other, self,"DIA_Melvin_MetDusty_15_02"); //≈òeknu mu to, a≈æ ho zase uvid√≠m.
 };
 
 

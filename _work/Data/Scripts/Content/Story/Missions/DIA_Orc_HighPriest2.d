@@ -21,11 +21,11 @@ FUNC VOID Info_HighPriest2_Info()
 	AI_SetWalkmode		(self, NPC_WALK);
 	AI_GotoNpc			(self, other);
 	
-	AI_Output			(self, other,"Info_HighPriest2_17_01"); //NEVÌREC V CHRÁMU PÁNÌ!!!!
-	AI_Output			(self, other,"Info_HighPriest2_17_02"); //BUÏ PROKLAAAAT!
-	AI_Output			(other, self,"Info_HighPriest2_15_03"); //TY buï proklat, ty plesnivá páchnoucí onuce!
+	AI_Output			(self, other,"Info_HighPriest2_17_01"); //NEVÄšREC V CHRÃMU PÃNÄš!!!!
+	AI_Output			(self, other,"Info_HighPriest2_17_02"); //BUÄ PROKLAAAAT!
+	AI_Output			(other, self,"Info_HighPriest2_15_03"); //TY buÄ proklat, ty plesnivÃ¡ pÃ¡chnoucÃ­ onuce!
 	
-	B_LogEntry			(CH4_EnterTemple,"Varrag-Kasorg, další z pìti skøetích šamanù, teï konèí svoji bídnou existenci u mıch nohou!");
+	B_LogEntry			(CH4_EnterTemple,"Varrag-Kasorg, dalÅ¡Ã­ z pÄ›ti skÅ™etÃ­ch Å¡amanÅ¯, teÄ konÄÃ­ svoji bÃ­dnou existenci u mÃ½ch nohou!");
 
 	AI_StopProcessInfos	(self );
 

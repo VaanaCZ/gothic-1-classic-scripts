@@ -32,7 +32,7 @@ instance  Org_843_Sharky_Fisk (C_INFO)
 	condition		= Org_843_Sharky_Fisk_Condition;
 	information		= Org_843_Sharky_Fisk_Info;
 	permanent		= 0;
-	description		= "Fisk ze Starého tábora hledá nového obchodního partnera."; 
+	description		= "Fisk ze StarÃ©ho tÃ¡bora hledÃ¡ novÃ©ho obchodnÃ­ho partnera."; 
 	trade 			= 1;
 };
 
@@ -46,10 +46,10 @@ FUNC int  Org_843_Sharky_Fisk_Condition()
 };
 FUNC void  Org_843_Sharky_Fisk_Info()
 {
-	AI_Output (other, self,"Org_843_Sharky_Fisk_Info_15_00"); //Fisk ze Starého tábora hledá nového obchodního partnera.
-	AI_Output (self, other,"Org_843_Sharky_Fisk_Info_10_01"); //A proè mi to øíkáš?
-	AI_Output (other, self,"Org_843_Sharky_Fisk_Info_15_02"); //Myslel jsem si, e bys mohl mít zájem vydìlat si nìjakou rudu.
-	AI_Output (self, other,"Org_843_Sharky_Fisk_Info_10_03"); //Proè ne... øekni Fiskovi, e se mnou mùe bìhem pár dní poèítat.
+	AI_Output (other, self,"Org_843_Sharky_Fisk_Info_15_00"); //Fisk ze StarÃ©ho tÃ¡bora hledÃ¡ novÃ©ho obchodnÃ­ho partnera.
+	AI_Output (self, other,"Org_843_Sharky_Fisk_Info_10_01"); //A proÄ mi to Å™Ã­kÃ¡Å¡?
+	AI_Output (other, self,"Org_843_Sharky_Fisk_Info_15_02"); //Myslel jsem si, Å¾e bys mohl mÃ­t zÃ¡jem vydÄ›lat si nÄ›jakou rudu.
+	AI_Output (self, other,"Org_843_Sharky_Fisk_Info_10_03"); //ProÄ ne... Å™ekni Fiskovi, Å¾e se mnou mÅ¯Å¾e bÄ›hem pÃ¡r dnÃ­ poÄÃ­tat.
 };  
 
 
@@ -64,7 +64,7 @@ instance  Org_843_Sharky_TRADE (C_INFO)
 	information		= Org_843_Sharky_TRADE_Info;
 	important		= 0;
 	permanent		= 1;
-	description		= "Potøebuji pár vìcí..."; 
+	description		= "PotÅ™ebuji pÃ¡r vÄ›cÃ­..."; 
 	trade 			= 1;
 };
 
@@ -78,11 +78,11 @@ FUNC int  Org_843_Sharky_TRADE_Condition()
 };
 FUNC void  Org_843_Sharky_TRADE_Info()
 {
-	AI_Output (other, self,"Org_843_Sharky_TRADE_Info_15_01"); //Potøebuji pár vìcí...
+	AI_Output (other, self,"Org_843_Sharky_TRADE_Info_15_01"); //PotÅ™ebuji pÃ¡r vÄ›cÃ­...
 };  
 
 /*------------------------------------------------------------------------
-							TRADE BEGRÜßUNG 								
+							TRADE BEGRÃœÃŸUNG 								
 ------------------------------------------------------------------------*/
 
 instance  Org_843_Sharky_GREET (C_INFO) 
@@ -104,9 +104,9 @@ FUNC int  Org_843_Sharky_GREET_Condition()
 FUNC void  Org_843_Sharky_GREET_Info()
 {
 	AI_Output		(other, self,"Org_843_Sharky_GREET_Info_15_01"); //Hej, jak to jde?
-	AI_Output		(self, other,"Org_843_Sharky_GREET_Info_10_02"); //Chceš si nìco koupit?
+	AI_Output		(self, other,"Org_843_Sharky_GREET_Info_10_02"); //ChceÅ¡ si nÄ›co koupit?
 	Log_CreateTopic (GE_TraderNC,LOG_NOTE);
-	B_LogEntry		(GE_TraderNC,"Bandita Sharky obchoduje se ZBRANÌMI a jinım zboím. Obvykle je k nalezení v Novém táboøe."); 
+	B_LogEntry		(GE_TraderNC,"Bandita Sharky obchoduje se ZBRANÄšMI a jinÃ½m zboÅ¾Ã­m. Obvykle je k nalezenÃ­ v NovÃ©m tÃ¡boÅ™e."); 
 };
 
 

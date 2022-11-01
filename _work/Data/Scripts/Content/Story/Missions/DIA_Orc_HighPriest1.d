@@ -21,12 +21,12 @@ FUNC VOID Info_HighPriest1_Info()
 	AI_SetWalkmode		(self, NPC_WALK);
 	AI_GotoNpc			(self, other);
 	
-	AI_Output 			(self, other,"Info_HighPriest1_17_01"); //SMMRRRTEEELLNNÍÍÍÍKKÙÙÙÙÙ!
-	AI_Output 			(self, other,"Info_HighPriest1_17_02"); //JAK SE OOPOOVAAUUJEEŠŠ RUUŠŠIIIT MÙÙÙJJ KLIIIIID?
-	AI_Output 			(self, other,"Info_HighPriest1_17_03"); //PØIIIPRAAAV SEE NAAA KOONEEC!
-	AI_Output 			(other, self,"Info_HighPriest1_15_04"); //Otázka je, èí konec nadchází, ty èervem okousaná hroudo masa!
+	AI_Output 			(self, other,"Info_HighPriest1_17_01"); //SMMRRRTEEELLNNÃÃÃÃKKÅ®Å®Å®Å®Å®!
+	AI_Output 			(self, other,"Info_HighPriest1_17_02"); //JAK SE OOPOOVAAÅ½UUJEEÅ Å  RUUÅ Å IIIT MÅ®Å®Å®JJ KLIIIIID?
+	AI_Output 			(self, other,"Info_HighPriest1_17_03"); //PÅ˜IIIPRAAAV SEE NAAA KOONEEC!
+	AI_Output 			(other, self,"Info_HighPriest1_15_04"); //OtÃ¡zka je, ÄÃ­ konec nadchÃ¡zÃ­, ty Äervem okousanÃ¡ hroudo masa!
 	
-	B_LogEntry			(CH4_EnterTemple,"Stojím tváøí v tváø Varrag-Hashorovi, jednomu z pìti skøetích šamanù, kteøí do tohoto svìta vnesli Spáèe. Skonèím jeho nemrtvou existenci.");
+	B_LogEntry			(CH4_EnterTemple,"StojÃ­m tvÃ¡Å™Ã­ v tvÃ¡Å™ Varrag-Hashorovi, jednomu z pÄ›ti skÅ™etÃ­ch Å¡amanÅ¯, kteÅ™Ã­ do tohoto svÄ›ta vnesli SpÃ¡Äe. SkonÄÃ­m jeho nemrtvou existenci.");
 
 	AI_StopProcessInfos	(self);
 

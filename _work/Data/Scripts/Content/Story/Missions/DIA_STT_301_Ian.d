@@ -19,8 +19,8 @@ FUNC int  STT_301_IAN_Exit_Condition()
 
 FUNC VOID  STT_301_IAN_Exit_Info()
 {
-	AI_Output			(other, self,"STT_301_IAN_Exit_Info_15_01"); //Jenom se tu rozhlíím.
-	AI_Output			(self, other,"STT_301_IAN_Exit_Info_13_02"); //Nedìlej problémy.
+	AI_Output			(other, self,"STT_301_IAN_Exit_Info_15_01"); //Jenom se tu rozhlÃ­Å¾Ã­m.
+	AI_Output			(self, other,"STT_301_IAN_Exit_Info_13_02"); //NedÄ›lej problÃ©my.
 	
 	AI_StopProcessInfos	( self );
 };
@@ -33,7 +33,7 @@ instance  STT_301_IAN_HI (C_INFO)
 	information		= STT_301_IAN_HI_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Ty jsi Ian, šéf toho dolu?"; 
+	description		= "Ty jsi Ian, Å¡Ã©f toho dolu?"; 
 };
 
 FUNC int  STT_301_IAN_HI_Condition()
@@ -45,8 +45,8 @@ FUNC int  STT_301_IAN_HI_Condition()
 };
 FUNC void  STT_301_IAN_HI_Info()
 {
-	AI_Output			(other, self,"STT_301_IAN_HI_Info_15_01"); //Ty jsi Ian, šéf toho dolu?
-	AI_Output			(self, other,"STT_301_IAN_HI_Info_13_02"); //Ano, jsem Ian. A tohle je mùj dùl. Nièeho se nedotıkej a nic nerozbij.
+	AI_Output			(other, self,"STT_301_IAN_HI_Info_15_01"); //Ty jsi Ian, Å¡Ã©f toho dolu?
+	AI_Output			(self, other,"STT_301_IAN_HI_Info_13_02"); //Ano, jsem Ian. A tohle je mÅ¯j dÅ¯l. NiÄeho se nedotÃ½kej a nic nerozbij.
 }; 
 // ***************** Infos *****************************
 instance STT_301_IAN_GOMEZ  (C_INFO)
@@ -56,7 +56,7 @@ instance STT_301_IAN_GOMEZ  (C_INFO)
 	information		= STT_301_IAN_GOMEZ_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Není to Gomezùv dùl?"; 
+	description		= "NenÃ­ to GomezÅ¯v dÅ¯l?"; 
 };
 
 FUNC int  STT_301_IAN_GOMEZ_Condition()
@@ -69,8 +69,8 @@ FUNC int  STT_301_IAN_GOMEZ_Condition()
 };
 FUNC void  STT_301_IAN_GOMEZ_Info()
 {
-	AI_Output			(other, self,"STT_301_IAN_GOMEZ_Info_15_01"); //Není to Gomezùv dùl?
-	AI_Output			(self, other,"STT_301_IAN_GOMEZ_Info_13_02"); //Ano, jistì, e je to dùl Starého tábora. Ale je tady jedinı šéf - a to jsem já.
+	AI_Output			(other, self,"STT_301_IAN_GOMEZ_Info_15_01"); //NenÃ­ to GomezÅ¯v dÅ¯l?
+	AI_Output			(self, other,"STT_301_IAN_GOMEZ_Info_13_02"); //Ano, jistÄ›, Å¾e je to dÅ¯l StarÃ©ho tÃ¡bora. Ale je tady jedinÃ½ Å¡Ã©f - a to jsem jÃ¡.
 }; 
 // ***************** Infos *****************************
 instance  STT_301_IAN_ORE (C_INFO)
@@ -80,7 +80,7 @@ instance  STT_301_IAN_ORE (C_INFO)
 	information		= STT_301_IAN_ORE_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Mùeš mi øíci nìco o zdejší produkci rudy?"; 
+	description		= "MÅ¯Å¾eÅ¡ mi Å™Ã­ci nÄ›co o zdejÅ¡Ã­ produkci rudy?"; 
 };
 
 FUNC int  STT_301_IAN_ORE_Condition()
@@ -93,9 +93,9 @@ FUNC int  STT_301_IAN_ORE_Condition()
 };
 FUNC void  STT_301_IAN_ORE_Info()
 {
-	AI_Output			(other, self,"STT_301_IAN_ORE_Info_15_01"); //Mùeš mi øíci nìco o zdejší produkci rudy?
-	AI_Output			(self, other,"STT_301_IAN_ORE_Info_13_02"); //Tìíme ve dne v noci. To znamená 200 pytlù mìsíènì do skladu a dalších 20 pytlù na pøetavení.
-	AI_Output			(self, other,"STT_301_IAN_ORE_Info_13_03"); //Z rudy, kterou dodáváme králi, se mùou ukovat stovky ostøí.
+	AI_Output			(other, self,"STT_301_IAN_ORE_Info_15_01"); //MÅ¯Å¾eÅ¡ mi Å™Ã­ci nÄ›co o zdejÅ¡Ã­ produkci rudy?
+	AI_Output			(self, other,"STT_301_IAN_ORE_Info_13_02"); //TÄ›Å¾Ã­me ve dne v noci. To znamenÃ¡ 200 pytlÅ¯ mÄ›sÃ­ÄnÄ› do skladu a dalÅ¡Ã­ch 20 pytlÅ¯ na pÅ™etavenÃ­.
+	AI_Output			(self, other,"STT_301_IAN_ORE_Info_13_03"); //Z rudy, kterou dodÃ¡vÃ¡me krÃ¡li, se mÅ¯Å¾ou ukovat stovky ostÅ™Ã­.
 	
 }; 
 // ***************** Infos *****************************   
@@ -106,7 +106,7 @@ instance  STT_301_IAN_MORE (C_INFO)
 	information		= STT_301_IAN_MORE_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Slyšel jsem, e ta ruda má kouzelnou moc. Øekni mi o tom nìco."; 
+	description		= "SlyÅ¡el jsem, Å¾e ta ruda mÃ¡ kouzelnou moc. Å˜ekni mi o tom nÄ›co."; 
 };
 
 FUNC int  STT_301_IAN_MORE_Condition()
@@ -117,9 +117,9 @@ FUNC int  STT_301_IAN_MORE_Condition()
 
 FUNC void  STT_301_IAN_MORE_Info()
 {
-	AI_Output			(other, self,"STT_301_IAN_MORE_Info_15_01"); //Slyšel jsem, e ta ruda má kouzelnou moc. Øekni mi o tom nìco.
-	AI_Output			(self, other,"STT_301_IAN_MORE_Info_13_02"); //Ta magická moc dodává kovu speciální vlastnosti. Zbranì, které jsou z nìj ukovány, se nelámou, jejich ostøí jsou ostøejší ne obyèejnì.
-	AI_Output			(self, other,"STT_301_IAN_MORE_Info_13_03"); //Armáda vybavená takovımi zbranìmi má rozhodující pøevahu v boji.
+	AI_Output			(other, self,"STT_301_IAN_MORE_Info_15_01"); //SlyÅ¡el jsem, Å¾e ta ruda mÃ¡ kouzelnou moc. Å˜ekni mi o tom nÄ›co.
+	AI_Output			(self, other,"STT_301_IAN_MORE_Info_13_02"); //Ta magickÃ¡ moc dodÃ¡vÃ¡ kovu speciÃ¡lnÃ­ vlastnosti. ZbranÄ›, kterÃ© jsou z nÄ›j ukovÃ¡ny, se nelÃ¡mou, jejich ostÅ™Ã­ jsou ostÅ™ejÅ¡Ã­ neÅ¾ obyÄejnÄ›.
+	AI_Output			(self, other,"STT_301_IAN_MORE_Info_13_03"); //ArmÃ¡da vybavenÃ¡ takovÃ½mi zbranÄ›mi mÃ¡ rozhodujÃ­cÃ­ pÅ™evahu v boji.
 	
 };   
 // ***************** Infos *****************************  
@@ -130,7 +130,7 @@ instance  STT_301_IAN_MAGIC (C_INFO)
 	information		= STT_301_IAN_MAGIC_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Øekni mi víc o té rudì."; 
+	description		= "Å˜ekni mi vÃ­c o tÃ© rudÄ›."; 
 };
 
 FUNC int  STT_301_IAN_MAGIC_Condition()
@@ -141,9 +141,9 @@ FUNC int  STT_301_IAN_MAGIC_Condition()
 
 FUNC void  STT_301_IAN_MAGIC_Info()
 {
-	AI_Output			(other, self,"STT_301_IAN_MAGIC_Info_15_01"); //Øekni mi víc o té rudì.
-	AI_Output			(self, other,"STT_301_IAN_MAGIC_Info_13_02"); //Naneštìstí bìhem procesu tavení magické kouzlo rudy vyprchává. V horkovzdušnıch tavicích pecích u Severního moøe znají správnou techniku tavení.
-	AI_Output			(self, other,"STT_301_IAN_MAGIC_Info_13_03"); //Ale zbranì vyrobené z téhle rudy jsou i bez magického kouzla vıjimeènì trvanlivé a mají daleko vìtší úèinek ne zbranì obyèejné.
+	AI_Output			(other, self,"STT_301_IAN_MAGIC_Info_15_01"); //Å˜ekni mi vÃ­c o tÃ© rudÄ›.
+	AI_Output			(self, other,"STT_301_IAN_MAGIC_Info_13_02"); //NaneÅ¡tÄ›stÃ­ bÄ›hem procesu tavenÃ­ magickÃ© kouzlo rudy vyprchÃ¡vÃ¡. V horkovzduÅ¡nÃ½ch tavicÃ­ch pecÃ­ch u SevernÃ­ho moÅ™e znajÃ­ sprÃ¡vnou techniku tavenÃ­.
+	AI_Output			(self, other,"STT_301_IAN_MAGIC_Info_13_03"); //Ale zbranÄ› vyrobenÃ© z tÃ©hle rudy jsou i bez magickÃ©ho kouzla vÃ½jimeÄnÄ› trvanlivÃ© a majÃ­ daleko vÄ›tÅ¡Ã­ ÃºÄinek neÅ¾ zbranÄ› obyÄejnÃ©.
 	
 };   
 // ***************** Infos *****************************   
@@ -154,7 +154,7 @@ instance  STT_301_IAN_MINE (C_INFO)
 	information		= STT_301_IAN_MINE_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Øekni mi nìco o dole."; 
+	description		= "Å˜ekni mi nÄ›co o dole."; 
 };
 
 FUNC int  STT_301_IAN_MINE_Condition()
@@ -168,12 +168,12 @@ FUNC int  STT_301_IAN_MINE_Condition()
 };
 func void  STT_301_IAN_MINE_Info()
 {
-	AI_Output			(other, self,"STT_301_IAN_MINE_Info_15_01"); //Povídej mi o dolu.
-	AI_Output			(self, other,"STT_301_IAN_MINE_Info_13_02"); //Jestli se chceš tady porozhlédnout, musíš bıt opatrnı. V jeskyních jsou dùlní èervi. Mìl bys radìji zùstat v hlavní šachtì.
-	AI_Output			(self, other,"STT_301_IAN_MINE_Info_13_03"); //A nechat templáøe na pokoji. Sice se vìtšinu èasu jen tak procházejí, ale kdy pøijdou èervi, jsou to nejlepší bojovníci, jaké vùbec mùeme na naší stranì mít.
+	AI_Output			(other, self,"STT_301_IAN_MINE_Info_15_01"); //PovÃ­dej mi o dolu.
+	AI_Output			(self, other,"STT_301_IAN_MINE_Info_13_02"); //Jestli se chceÅ¡ tady porozhlÃ©dnout, musÃ­Å¡ bÃ½t opatrnÃ½. V jeskynÃ­ch jsou dÅ¯lnÃ­ Äervi. MÄ›l bys radÄ›ji zÅ¯stat v hlavnÃ­ Å¡achtÄ›.
+	AI_Output			(self, other,"STT_301_IAN_MINE_Info_13_03"); //A nechat templÃ¡Å™e na pokoji. Sice se vÄ›tÅ¡inu Äasu jen tak prochÃ¡zejÃ­, ale kdyÅ¾ pÅ™ijdou Äervi, jsou to nejlepÅ¡Ã­ bojovnÃ­ci, jakÃ© vÅ¯bec mÅ¯Å¾eme na naÅ¡Ã­ stranÄ› mÃ­t.
 	AI_Output			(other, self,"STT_301_IAN_MINE_Info_15_04"); //Budu si to pamatovat.
-	AI_Output			(self, other,"STT_301_IAN_MINE_Info_13_05"); //Musím nìco dìlat. A neruš moje chlapy pøi práci.
-	AI_Output			(other, self,"STT_301_IAN_MINE_Info_15_06"); //Jen se tu rozhlíím.
+	AI_Output			(self, other,"STT_301_IAN_MINE_Info_13_05"); //MusÃ­m nÄ›co dÄ›lat. A neruÅ¡ moje chlapy pÅ™i prÃ¡ci.
+	AI_Output			(other, self,"STT_301_IAN_MINE_Info_15_06"); //Jen se tu rozhlÃ­Å¾Ã­m.
 };
 /*------------------------------------------------------------------------
 					BRING LIST									
@@ -186,7 +186,7 @@ instance  STT_301_IAN_WANTLIST (C_INFO)
 	information		= STT_301_IAN_WANTLIST_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Mám tady opatøit seznam vìcí pro tábor."; 
+	description		= "MÃ¡m tady opatÅ™it seznam vÄ›cÃ­ pro tÃ¡bor."; 
 };
 
 FUNC int  STT_301_IAN_WANTLIST_Condition()
@@ -200,8 +200,8 @@ FUNC int  STT_301_IAN_WANTLIST_Condition()
 };
 FUNC void  STT_301_IAN_WANTLIST_Info()
 {
-	AI_Output			(other, self,"STT_301_IAN_WANTLIST_Info_15_01"); //Mám tady opatøit seznam vìcí pro tábor.
-	AI_Output			(self, other,"STT_301_IAN_WANTLIST_Info_13_02"); //To by mohl øíci kadı. Ztra se.
+	AI_Output			(other, self,"STT_301_IAN_WANTLIST_Info_15_01"); //MÃ¡m tady opatÅ™it seznam vÄ›cÃ­ pro tÃ¡bor.
+	AI_Output			(self, other,"STT_301_IAN_WANTLIST_Info_13_02"); //To by mohl Å™Ã­ci kaÅ¾dÃ½. ZtraÅ¥ se.
 	 
 };  
 /*------------------------------------------------------------------------
@@ -215,7 +215,7 @@ instance  STT_301_IAN_GETLIST (C_INFO)
 	information		= STT_301_IAN_GETLIST_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Poslal mì Diego. Mám tady opatøit seznam."; 
+	description		= "Poslal mÄ› Diego. MÃ¡m tady opatÅ™it seznam."; 
 };
 
 FUNC int  STT_301_IAN_GETLIST_Condition()
@@ -229,9 +229,9 @@ FUNC int  STT_301_IAN_GETLIST_Condition()
 };
 FUNC void  STT_301_IAN_GETLIST_Info()
 {
-	AI_Output			(other, self,"STT_301_IAN_GETLIST_Info_15_01"); //Poslal mì Diego. Mám tady opatøit seznam.
-	AI_Output			(self, other,"STT_301_IAN_GETLIST_Info_13_02"); //Dobøe, tady je seznam. Øekni jim, aby si s dodávkou pospíšili.
-	B_LogEntry  (CH1_BringList,"Ian mi bez problémù vydal seznam.");
+	AI_Output			(other, self,"STT_301_IAN_GETLIST_Info_15_01"); //Poslal mÄ› Diego. MÃ¡m tady opatÅ™it seznam.
+	AI_Output			(self, other,"STT_301_IAN_GETLIST_Info_13_02"); //DobÅ™e, tady je seznam. Å˜ekni jim, aby si s dodÃ¡vkou pospÃ­Å¡ili.
+	B_LogEntry  (CH1_BringList,"Ian mi bez problÃ©mÅ¯ vydal seznam.");
 	B_GiveInvItems	(self,hero,TheList,1);
 };  
 // **************************************************************************
@@ -245,7 +245,7 @@ instance  STT_301_IAN_NEST (C_INFO)
 	information	=  STT_301_IAN_NEST_Info;
 	important	= 0;	
 	permanent	= 0;
-	description = "Musí tu nìkde bıt hnízdo dùlních èervù.";
+	description = "MusÃ­ tu nÄ›kde bÃ½t hnÃ­zdo dÅ¯lnÃ­ch ÄervÅ¯.";
 };                       
 
 FUNC int  STT_301_IAN_NEST_Condition()
@@ -258,14 +258,14 @@ FUNC int  STT_301_IAN_NEST_Condition()
 };
 FUNC VOID  STT_301_IAN_NEST_Info()
 {
-	AI_Output			(other, self,"STT_301_IAN_NEST_Info_15_01"); //Musí tu nìkde bıt hnízdo dùlních èervù.
-	AI_Output			(self, other,"STT_301_IAN_NEST_Info_13_02"); //Jsou tu zøejmì tucty jejich hnízd.
-	AI_Output			(other, self,"STT_301_IAN_NEST_Info_15_03"); //Poslyš, potøebuju se teï dostat do jejich hnízda...
-	AI_Output			(self, other,"STT_301_IAN_NEST_Info_13_04"); //Nemám èas se teï o to starat. Drtièka pøestala pracovat. Pøed nìkolika hodinami se rozbilo ozubené kolo.
-	AI_Output			(self, other,"STT_301_IAN_NEST_Info_13_05"); //Nemám potuchy, kde vzít nové.
-	AI_Output			(self, other,"STT_301_IAN_NEST_Info_13_06"); //Postarej se mi o to ozubené kolo a já se pak postarám o tvùj problém.
+	AI_Output			(other, self,"STT_301_IAN_NEST_Info_15_01"); //MusÃ­ tu nÄ›kde bÃ½t hnÃ­zdo dÅ¯lnÃ­ch ÄervÅ¯.
+	AI_Output			(self, other,"STT_301_IAN_NEST_Info_13_02"); //Jsou tu zÅ™ejmÄ› tucty jejich hnÃ­zd.
+	AI_Output			(other, self,"STT_301_IAN_NEST_Info_15_03"); //PoslyÅ¡, potÅ™ebuju se teÄ dostat do jejich hnÃ­zda...
+	AI_Output			(self, other,"STT_301_IAN_NEST_Info_13_04"); //NemÃ¡m Äas se teÄ o to starat. DrtiÄka pÅ™estala pracovat. PÅ™ed nÄ›kolika hodinami se rozbilo ozubenÃ© kolo.
+	AI_Output			(self, other,"STT_301_IAN_NEST_Info_13_05"); //NemÃ¡m potuchy, kde vzÃ­t novÃ©.
+	AI_Output			(self, other,"STT_301_IAN_NEST_Info_13_06"); //Postarej se mi o to ozubenÃ© kolo a jÃ¡ se pak postarÃ¡m o tvÅ¯j problÃ©m.
 
-	B_LogEntry		(CH2_MCEggs,"Ian, velitel dolu, mi nepomùe hledat hnízdo. Mìl bych mu obstarat nové ozubené kolo pro jeho rozbitou drtièku rudy. Zmínil se o opuštìné postranní štole, kde bych mohl najít starou drtièku.");
+	B_LogEntry		(CH2_MCEggs,"Ian, velitel dolu, mi nepomÅ¯Å¾e hledat hnÃ­zdo. MÄ›l bych mu obstarat novÃ© ozubenÃ© kolo pro jeho rozbitou drtiÄku rudy. ZmÃ­nil se o opuÅ¡tÄ›nÃ© postrannÃ­ Å¡tole, kde bych mohl najÃ­t starou drtiÄku.");
 
 	Ian_gearwheel = LOG_RUNNING;
 };
@@ -277,7 +277,7 @@ instance  STT_301_IAN_GEAR_RUN (C_INFO)
 	information	=  STT_301_IAN_GEAR_RUN_Info;
 	important	= 0;	
 	permanent	= 0;
-	description = "Ozubené kolo? Kde si myslíš, e ho vezmu?";
+	description = "OzubenÃ© kolo? Kde si myslÃ­Å¡, Å¾e ho vezmu?";
 };                       
 
 FUNC int  STT_301_IAN_GEAR_RUN_Condition()
@@ -292,9 +292,9 @@ FUNC int  STT_301_IAN_GEAR_RUN_Condition()
 };
 FUNC VOID  STT_301_IAN_GEAR_RUN_Info()
 {
-	AI_Output			(other, self,"STT_301_IAN_GEAR_RUN_Info_15_01"); //Ozubené kolo? Kde si myslíš, e ho vezmu?
-	AI_Output			(self, other,"STT_301_IAN_GEAR_RUN_Info_13_02"); //Nemám pøedstavu. Jsem stejnì bezradnı jako ty!
-	AI_Output			(self, other,"STT_301_IAN_GEAR_RUN_Info_13_03"); //V postranní šachtì je ale stará porouchaná drtièka. Moná by se dalo vzít tam.
+	AI_Output			(other, self,"STT_301_IAN_GEAR_RUN_Info_15_01"); //OzubenÃ© kolo? Kde si myslÃ­Å¡, Å¾e ho vezmu?
+	AI_Output			(self, other,"STT_301_IAN_GEAR_RUN_Info_13_02"); //NemÃ¡m pÅ™edstavu. Jsem stejnÄ› bezradnÃ½ jako ty!
+	AI_Output			(self, other,"STT_301_IAN_GEAR_RUN_Info_13_03"); //V postrannÃ­ Å¡achtÄ› je ale starÃ¡ porouchanÃ¡ drtiÄka. MoÅ¾nÃ¡ by se dalo vzÃ­t tam.
 };
 
 // ******************************MISSION SUCCESS********************************************  
@@ -305,7 +305,7 @@ instance  STT_301_IAN_GEAR_SUC (C_INFO)
 	information	=  STT_301_IAN_GEAR_SUC_Info;
 	important	= 0;	
 	permanent	= 0;
-	description = "Mám to ozubené kolo.";
+	description = "MÃ¡m to ozubenÃ© kolo.";
 };                       
 
 FUNC int  STT_301_IAN_GEAR_SUC_Condition()
@@ -328,12 +328,12 @@ FUNC VOID  STT_301_IAN_GEAR_SUC_Info()
 	Sklave = Hlp_GetNpc	(ORC_2001_SKLAVE);
 	Npc_ExchangeRoutine (Sklave,"Stomper");
 
-	AI_Output			(other, self,"STT_301_IAN_GEAR_SUC_Info_15_01"); //Mám to ozubené kolo.
-	AI_Output			(self, other,"STT_301_IAN_GEAR_SUC_Info_13_02"); //Hej, dobrá práce. Myslím, e funguje. No a teï ty, hledáš hnízdo dùlního èerva... hmmm...
-	AI_Output			(self, other,"STT_301_IAN_GEAR_SUC_Info_13_03"); //Bì za Asghanem a øekni mu, aby ti otevøel vrata, aby ses dostal do temnıch šachet.
-	AI_Output			(self, other,"STT_301_IAN_GEAR_SUC_Info_13_04"); //Øekni mu jenom 'Všechno jde dobøe'. Tím bude srozumìnı s tím, e jsem ti dal povolení.
+	AI_Output			(other, self,"STT_301_IAN_GEAR_SUC_Info_15_01"); //MÃ¡m to ozubenÃ© kolo.
+	AI_Output			(self, other,"STT_301_IAN_GEAR_SUC_Info_13_02"); //Hej, dobrÃ¡ prÃ¡ce. MyslÃ­m, Å¾e funguje. No a teÄ ty, hledÃ¡Å¡ hnÃ­zdo dÅ¯lnÃ­ho Äerva... hmmm...
+	AI_Output			(self, other,"STT_301_IAN_GEAR_SUC_Info_13_03"); //BÄ›Å¾ za Asghanem a Å™ekni mu, aby ti otevÅ™el vrata, aby ses dostal do temnÃ½ch Å¡achet.
+	AI_Output			(self, other,"STT_301_IAN_GEAR_SUC_Info_13_04"); //Å˜ekni mu jenom 'VÅ¡echno jde dobÅ™e'. TÃ­m bude srozumÄ›nÃ½ s tÃ­m, Å¾e jsem ti dal povolenÃ­.
 
-	B_LogEntry		(CH2_MCEggs,"Pøinesl jsem Ianovi ozubené kolo z vyøazené drtièky rudy. Ian prohlásil, e mám Asghanovi øíci VŠECHNO BUDE V POØÁDKU. Potom mi otevøe vrata do temnıch šachet.");
+	B_LogEntry		(CH2_MCEggs,"PÅ™inesl jsem Ianovi ozubenÃ© kolo z vyÅ™azenÃ© drtiÄky rudy. Ian prohlÃ¡sil, Å¾e mÃ¡m Asghanovi Å™Ã­ci VÅ ECHNO BUDE V POÅ˜ÃDKU. Potom mi otevÅ™e vrata do temnÃ½ch Å¡achet.");
 };
 
 // ******************************GOTO ASGHAN********************************************  
@@ -344,7 +344,7 @@ instance  STT_301_IAN_GOTOASGHAN (C_INFO)
 	information	=  STT_301_IAN_GOTOASGHAN_Info;
 	important	= 0;	
 	permanent	= 0;
-	description = "Poøád hledám èerví hnízdo.";
+	description = "PoÅ™Ã¡d hledÃ¡m ÄervÃ­ hnÃ­zdo.";
 };                       
 
 FUNC int  STT_301_IAN_GOTOASGHAN_Condition()
@@ -357,10 +357,10 @@ FUNC int  STT_301_IAN_GOTOASGHAN_Condition()
 };
 FUNC VOID  STT_301_IAN_GOTOASGHAN_Info()
 {
-	AI_Output			(other, self,"STT_301_IAN_GOTOASGHAN_Info_15_01"); //Poøád hledám èerví hnízdo.
-	AI_Output			(self, other,"STT_301_IAN_GOTOASGHAN_Info_13_02"); //U jsem ti øekl, abys šel za Asghanem. Je to velitel stráí. Najdeš ho nìkde na nejniší úrovni.
+	AI_Output			(other, self,"STT_301_IAN_GOTOASGHAN_Info_15_01"); //PoÅ™Ã¡d hledÃ¡m ÄervÃ­ hnÃ­zdo.
+	AI_Output			(self, other,"STT_301_IAN_GOTOASGHAN_Info_13_02"); //UÅ¾ jsem ti Å™ekl, abys Å¡el za Asghanem. Je to velitel strÃ¡Å¾Ã­. NajdeÅ¡ ho nÄ›kde na nejniÅ¾Å¡Ã­ Ãºrovni.
 
-	B_LogEntry		(CH2_MCEggs,"Pokud chci najít hnízdo dùlních èervù, musím si nejdøíve promluvit s Asghanem.");
+	B_LogEntry		(CH2_MCEggs,"Pokud chci najÃ­t hnÃ­zdo dÅ¯lnÃ­ch ÄervÅ¯, musÃ­m si nejdÅ™Ã­ve promluvit s Asghanem.");
 };
 
 //--SPIELER HAT DIE EIER AM START-------------------------
@@ -371,7 +371,7 @@ instance  STT_301_IAN_AFTERALL (C_INFO)
 	information	=  STT_301_IAN_AFTERALL_Info;
 	important	= 0;	
 	permanent	= 0;
-	description = "Našel jsem hnízdo!";
+	description = "NaÅ¡el jsem hnÃ­zdo!";
 };                       
 
 FUNC int  STT_301_IAN_AFTERALL_Condition()
@@ -383,9 +383,9 @@ FUNC int  STT_301_IAN_AFTERALL_Condition()
 };
 FUNC VOID  STT_301_IAN_AFTERALL_Info()
 {
-	AI_Output			(other, self,"STT_301_IAN_AFTERALL_Info_15_01"); //Našel jsem hnízdo!
-	AI_Output			(self, other,"STT_301_IAN_AFTERALL_Info_13_02"); //Tak u tady budeme koneènì mít mír a klid, hahaha!
-	AI_Output			(self, other,"STT_301_IAN_AFTERALL_Info_13_03"); //Bez uráky. Dobrá práce, hochu!
+	AI_Output			(other, self,"STT_301_IAN_AFTERALL_Info_15_01"); //NaÅ¡el jsem hnÃ­zdo!
+	AI_Output			(self, other,"STT_301_IAN_AFTERALL_Info_13_02"); //Tak uÅ¾ tady budeme koneÄnÄ› mÃ­t mÃ­r a klid, hahaha!
+	AI_Output			(self, other,"STT_301_IAN_AFTERALL_Info_13_03"); //Bez urÃ¡Å¾ky. DobrÃ¡ prÃ¡ce, hochu!
 	AI_Output			(self, other,"STT_301_IAN_AFTERALL_Info_13_04"); //Tady si vezmi basu piv za svoji snahu.
 	CreateInvItems		(self, ItFo_OM_Beer_01,6);
 	B_GiveInvItems      (self, hero, ItFo_OM_Beer_01,6);
@@ -399,7 +399,7 @@ instance  STT_301_IAN_NOTENOUGH (C_INFO)
 	information	=  STT_301_IAN_NOTENOUGH_Info;
 	important	= 0;	
 	permanent	= 0;
-	description = "Našel jsem hnízdo! A vajíèka královny dùlních èervù!";
+	description = "NaÅ¡el jsem hnÃ­zdo! A vajÃ­Äka krÃ¡lovny dÅ¯lnÃ­ch ÄervÅ¯!";
 };                       
 
 FUNC int  STT_301_IAN_NOTENOUGH_Condition()
@@ -412,6 +412,6 @@ FUNC int  STT_301_IAN_NOTENOUGH_Condition()
 };
 FUNC VOID  STT_301_IAN_NOTENOUGH_Info()
 {
-	AI_Output			(other, self,"STT_301_IAN_NOTENOUGH_Info_15_01"); //Našel jsem hnízdo! A vajíèka královny dùlních èervù!
-	AI_Output			(self, other,"STT_301_IAN_NOTENOUGH_Info_13_02"); //Coe? Tohle jsou všechna vajíèka, co jsi našel? Nu, co. Ukázal jsi, e umíš bojovat.
+	AI_Output			(other, self,"STT_301_IAN_NOTENOUGH_Info_15_01"); //NaÅ¡el jsem hnÃ­zdo! A vajÃ­Äka krÃ¡lovny dÅ¯lnÃ­ch ÄervÅ¯!
+	AI_Output			(self, other,"STT_301_IAN_NOTENOUGH_Info_13_02"); //CoÅ¾e? Tohle jsou vÅ¡echna vajÃ­Äka, co jsi naÅ¡el? Nu, co. UkÃ¡zal jsi, Å¾e umÃ­Å¡ bojovat.
 };

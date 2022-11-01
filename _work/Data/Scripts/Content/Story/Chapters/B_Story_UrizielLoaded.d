@@ -1,9 +1,9 @@
 func void B_Story_UrizielLoaded()
 {
-	//-------- Missionsgegenstände --------
+	//-------- MissionsgegenstÃ¤nde --------
 	
-	//-------- Tagebucheinträge --------
-	B_LogEntry			(CH5_Uriziel,"Je to hotovo. Vypadá to, e URIZIEL znovu nabyl své nìkdejší síly. Saturas a jeho mágové Vody jsou nyní velmi rozzuøení, take se teï pøed nimi nebudu radìji ukazovat. Nevadí, Spáè mì oèekává!");
+	//-------- TagebucheintrÃ¤ge --------
+	B_LogEntry			(CH5_Uriziel,"Je to hotovo. VypadÃ¡ to, Å¾e URIZIEL znovu nabyl svÃ© nÄ›kdejÅ¡Ã­ sÃ­ly. Saturas a jeho mÃ¡govÃ© Vody jsou nynÃ­ velmi rozzuÅ™enÃ­, takÅ¾e se teÄ pÅ™ed nimi nebudu radÄ›ji ukazovat. NevadÃ­, SpÃ¡Ä mÄ› oÄekÃ¡vÃ¡!");
 	
 	if (Npc_GetTrueGuild(hero) != GIL_KDW)
 	{
@@ -11,7 +11,7 @@ func void B_Story_UrizielLoaded()
 	}
 	else
 	{
-		B_LogEntry		(CH5_Uriziel,"Bìhem mé poslední návštìvy Xardas poznamenal, e by mìl existovat nìjakı zpùsob, jak bych mohl vyuít sílu URIZIELU, dokonce i jako mág. Chtìl si však meè znovu prohlédnout. Mìl bych ho navštívit.");
+		B_LogEntry		(CH5_Uriziel,"BÄ›hem mÃ© poslednÃ­ nÃ¡vÅ¡tÄ›vy Xardas poznamenal, Å¾e by mÄ›l existovat nÄ›jakÃ½ zpÅ¯sob, jak bych mohl vyuÅ¾Ã­t sÃ­lu URIZIELU, dokonce i jako mÃ¡g. ChtÄ›l si vÅ¡ak meÄ znovu prohlÃ©dnout. MÄ›l bych ho navÅ¡tÃ­vit.");
 	};
 	
 	//-------- Erfahrung --------

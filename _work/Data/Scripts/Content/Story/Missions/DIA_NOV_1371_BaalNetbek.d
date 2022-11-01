@@ -23,7 +23,7 @@ FUNC VOID  Nov_1371_BaalNetbek_Exit_Info()
 	AI_StopProcessInfos	( self );
 };
 /*------------------------------------------------------------------------
-							GƒRTNER								
+							G√ÑRTNER								
 ------------------------------------------------------------------------*/
 
 instance  Nov_1371_BaalNetbek_CRAZY (C_INFO)
@@ -45,14 +45,14 @@ FUNC int  Nov_1371_BaalNetbek_CRAZY_Condition()
 FUNC void  Nov_1371_BaalNetbek_CRAZY_Info()
 {
 	AI_Output (other, self,"Nov_1371_BaalNetbek_CRAZY_Info_15_01"); //Kdo jsi?
-	AI_Output (self, other,"Nov_1371_BaalNetbek_CRAZY_Info_03_02"); //Jsem Guru, Guru baûin. Moji sluûebnÌci mi ¯ÌkajÌ Baal Netbek.
-	AI_Output (other, self,"Nov_1371_BaalNetbek_CRAZY_Info_15_03"); //SluûebnÌci? NevidÌm û·dnÈ sluûebnÌky!
-	AI_Output (self, other,"Nov_1371_BaalNetbek_CRAZY_Info_03_04"); //Jsou vöude. Stromy! VykraËujou si, sk·Ëou a tancujou...
-	AI_Output (other, self,"Nov_1371_BaalNetbek_CRAZY_Info_15_05"); //...Och, aha. Dob¯e, pak si p˘jdu svou cestou...
-	AI_Output (self, other,"Nov_1371_BaalNetbek_CRAZY_Info_03_06"); //PoËkej, m˘ûeö mi pomoci zmÏnit tyhle baûiny v obrovskou louku plnou kvÏt˘!
-	AI_Output (other, self,"Nov_1371_BaalNetbek_CRAZY_Info_15_07"); //Dob¯e, jen musÌö zaËÌt. J·... vr·tÌm se pozdÏji.
+	AI_Output (self, other,"Nov_1371_BaalNetbek_CRAZY_Info_03_02"); //Jsem Guru, Guru ba≈æin. Moji slu≈æebn√≠ci mi ≈ô√≠kaj√≠ Baal Netbek.
+	AI_Output (other, self,"Nov_1371_BaalNetbek_CRAZY_Info_15_03"); //Slu≈æebn√≠ci? Nevid√≠m ≈æ√°dn√© slu≈æebn√≠ky!
+	AI_Output (self, other,"Nov_1371_BaalNetbek_CRAZY_Info_03_04"); //Jsou v≈°ude. Stromy! Vykraƒçujou si, sk√°ƒçou a tancujou...
+	AI_Output (other, self,"Nov_1371_BaalNetbek_CRAZY_Info_15_05"); //...Och, aha. Dob≈ôe, pak si p≈Øjdu svou cestou...
+	AI_Output (self, other,"Nov_1371_BaalNetbek_CRAZY_Info_03_06"); //Poƒçkej, m≈Ø≈æe≈° mi pomoci zmƒõnit tyhle ba≈æiny v obrovskou louku plnou kvƒõt≈Ø!
+	AI_Output (other, self,"Nov_1371_BaalNetbek_CRAZY_Info_15_07"); //Dob≈ôe, jen mus√≠≈° zaƒç√≠t. J√°... vr√°t√≠m se pozdƒõji.
 	AI_TurnAway (hero,self);
-	AI_Output (other, self,"Nov_1371_BaalNetbek_CRAZY_Info_15_08"); //S nÌm se nikam nedostanu...
+	AI_Output (other, self,"Nov_1371_BaalNetbek_CRAZY_Info_15_08"); //S n√≠m se nikam nedostanu...
 	AI_StopProcessInfos	( self );
 };  
 /*------------------------------------------------------------------------
@@ -80,5 +80,5 @@ FUNC int  Nov_1371_BaalNetbek_AGAIN_Condition()
 FUNC void  Nov_1371_BaalNetbek_AGAIN_Info()
 {
 	AI_Output (other, self,"Nov_1371_BaalNetbek_AGAIN_Info_15_01"); //Hej, jak to jde?
-	AI_Output (self, other,"Nov_1371_BaalNetbek_AGAIN_Info_03_02"); //Pamatuj, neubliûuj m˝m strom˘m!
+	AI_Output (self, other,"Nov_1371_BaalNetbek_AGAIN_Info_03_02"); //Pamatuj, neubli≈æuj m√Ωm strom≈Øm!
 };  

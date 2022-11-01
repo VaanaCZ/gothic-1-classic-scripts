@@ -4,7 +4,7 @@
 
 PROTOTYPE Mst_Default_UndeadOrcWarrior (C_Npc)			
 {
-	name							=	"Chr·mov· str·û";
+	name							=	"Chr√°mov√° str√°≈æ";
 	guild							=	GIL_UNDEADORC;
 	aivar[AIV_MM_REAL_ID]			= 	ID_UNDEADORCWARRIOR;
 	level							=	25;
@@ -75,7 +75,7 @@ INSTANCE UndeadOrcWarrior (Mst_Default_UndeadOrcWarrior)
 
 INSTANCE UndeadOWH (Mst_Default_UndeadOrcWarrior)
 {
-	name							=	"Vysoce postaven· chr·mov· str·û";
+	name							=	"Vysoce postaven√° chr√°mov√° str√°≈æ";
 	level							=	40;
 
 	attribute	[ATR_STRENGTH]		=	120;

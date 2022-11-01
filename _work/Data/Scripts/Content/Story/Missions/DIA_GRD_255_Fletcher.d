@@ -48,12 +48,12 @@ FUNC int  DIA_Fletcher_First_Condition()
 func void  DIA_Fletcher_First_Info()
 {
 	AI_Output (self, other,"DIA_Fletcher_First_06_00"); //Hej, ty!
-	AI_Output (other, self,"DIA_Fletcher_First_15_01"); //Kdo? Já?
-	AI_Output (self, other,"DIA_Fletcher_First_06_02"); //Však ty víš, s kım mluvím, zlatíèko!
-	AI_Output (self, other,"DIA_Fletcher_First_06_03"); //Musím ti nìco øíci. Tohle je MÙJ obvod a nechci tu ádné problémy!
-	AI_Output (self, other,"DIA_Fletcher_First_06_04"); //Nováèci jako ty mívají vdycky problémy. Obzvláš, kdy se tu motají v noci.
-	AI_Output (self, other,"DIA_Fletcher_First_06_05"); //Tak radìji bì, a a u tì tu nevidím! Naproti arénì je prázdná chatrè, v které je pelest. Trochu se vyspi.
-	AI_Output (self, other,"DIA_Fletcher_First_06_06"); //A jestli tì chytím v nìjaké jiné chatrèi, osobnì dohlídnu na to, abys toho litoval.
+	AI_Output (other, self,"DIA_Fletcher_First_15_01"); //Kdo? JÃ¡?
+	AI_Output (self, other,"DIA_Fletcher_First_06_02"); //VÅ¡ak ty vÃ­Å¡, s kÃ½m mluvÃ­m, zlatÃ­Äko!
+	AI_Output (self, other,"DIA_Fletcher_First_06_03"); //MusÃ­m ti nÄ›co Å™Ã­ci. Tohle je MÅ®J obvod a nechci tu Å¾Ã¡dnÃ© problÃ©my!
+	AI_Output (self, other,"DIA_Fletcher_First_06_04"); //NovÃ¡Äci jako ty mÃ­vajÃ­ vÅ¾dycky problÃ©my. ObzvlÃ¡Å¡Å¥, kdyÅ¾ se tu motajÃ­ v noci.
+	AI_Output (self, other,"DIA_Fletcher_First_06_05"); //Tak radÄ›ji bÄ›Å¾, a aÅ¥ uÅ¾ tÄ› tu nevidÃ­m! Naproti arÃ©nÄ› je prÃ¡zdnÃ¡ chatrÄ, v kterÃ© je pelest. Trochu se vyspi.
+	AI_Output (self, other,"DIA_Fletcher_First_06_06"); //A jestli tÄ› chytÃ­m v nÄ›jakÃ© jinÃ© chatrÄi, osobnÄ› dohlÃ­dnu na to, abys toho litoval.
 	
 	AI_StopProcessInfos	(self);
 };
@@ -85,27 +85,27 @@ FUNC int  DIA_Fletcher_Hello_Condition()
 func void  DIA_Fletcher_Hello_Info()
 {
 	AI_Output (other, self,"DIA_Fletcher_Hello_15_00"); //Hej, ty!
-	AI_Output (self, other,"DIA_Fletcher_Hello_06_01"); //Jestli jdeš dát peníze za ochranu - pak sis zvolil špatnı den.
-	AI_Output (other, self,"DIA_Fletcher_Hello_15_02"); //Tak? Co to má znamenat?
-	AI_Output (self, other,"DIA_Fletcher_Hello_06_03"); //Protoe u tady nejsem.
+	AI_Output (self, other,"DIA_Fletcher_Hello_06_01"); //Jestli jdeÅ¡ dÃ¡t penÃ­ze za ochranu - pak sis zvolil Å¡patnÃ½ den.
+	AI_Output (other, self,"DIA_Fletcher_Hello_15_02"); //Tak? Co to mÃ¡ znamenat?
+	AI_Output (self, other,"DIA_Fletcher_Hello_06_03"); //ProtoÅ¾e uÅ¾ tady nejsem.
 	
 	Info_ClearChoices	(DIA_Fletcher_Hello);
 	Info_AddChoice		(DIA_Fletcher_Hello,"Aha...",DIA_Fletcher_Hello_ISee);
-	Info_AddChoice		(DIA_Fletcher_Hello,"Tak jak to, e tady s tebou mluvím?",DIA_Fletcher_Hello_WhyTalk);
+	Info_AddChoice		(DIA_Fletcher_Hello,"Tak jak to, Å¾e tady s tebou mluvÃ­m?",DIA_Fletcher_Hello_WhyTalk);
 	Info_AddChoice		(DIA_Fletcher_Hello,"Och, a kde teda potom jsi?",DIA_Fletcher_Hello_WhereElse);
 };
 
 func void DIA_Fletcher_Hello_WhereElse()
 {
 	AI_Output (other, self,"DIA_Fletcher_Hello_WhereElse_15_00"); //Och, a kde teda potom jsi?
-	AI_Output (self, other,"DIA_Fletcher_Hello_WhereElse_06_01"); //Momentálnì jsem na hradì, sedím u velkého táborového ohnì a piju dbánky piva.
+	AI_Output (self, other,"DIA_Fletcher_Hello_WhereElse_06_01"); //MomentÃ¡lnÄ› jsem na hradÄ›, sedÃ­m u velkÃ©ho tÃ¡borovÃ©ho ohnÄ› a piju dÅ¾bÃ¡nky piva.
 };
 
 func void DIA_Fletcher_Hello_WhyTalk()
 {
-	AI_Output (other, self,"DIA_Fletcher_Hello_WhyTalk_15_00"); //Tak jak to, e tady s tebou mluvím?
-	AI_Output (self, other,"DIA_Fletcher_Hello_WhyTalk_06_01"); //Zmizel Nek. Za tenhle obvod obvykle zodpovídá on.
-	AI_Output (self, other,"DIA_Fletcher_Hello_WhyTalk_06_02"); //A dokud se znovu neobjeví, Thorus MI pøikázal, abych tu dìlal strá.
+	AI_Output (other, self,"DIA_Fletcher_Hello_WhyTalk_15_00"); //Tak jak to, Å¾e tady s tebou mluvÃ­m?
+	AI_Output (self, other,"DIA_Fletcher_Hello_WhyTalk_06_01"); //Zmizel Nek. Za tenhle obvod obvykle zodpovÃ­dÃ¡ on.
+	AI_Output (self, other,"DIA_Fletcher_Hello_WhyTalk_06_02"); //A dokud se znovu neobjevÃ­, Thorus MI pÅ™ikÃ¡zal, abych tu dÄ›lal strÃ¡Å¾.
 	fletcher_whytalk = TRUE;
 	Info_ClearChoices	(DIA_Fletcher_Hello);
 };
@@ -127,7 +127,7 @@ instance DIA_Fletcher_WoNek (C_INFO)
 	condition		= DIA_Fletcher_WoNek_Condition;
 	information		= DIA_Fletcher_WoNek_Info;
 	permanent		= 0;
-	description		= "Víš, kam zmizel Nek?";
+	description		= "VÃ­Å¡, kam zmizel Nek?";
 };
 
 func int DIA_Fletcher_WoNek_Condition()
@@ -140,14 +140,14 @@ func int DIA_Fletcher_WoNek_Condition()
 
 func void  DIA_Fletcher_WoNek_Info()
 {
-	AI_Output (other, self,"DIA_Fletcher_WoNek_15_00"); //Víš, kam zmizel Nek?
+	AI_Output (other, self,"DIA_Fletcher_WoNek_15_00"); //VÃ­Å¡, kam zmizel Nek?
 	AI_Output (self, other,"DIA_Fletcher_WoNek_06_01"); //Ne, a ani ho nebudu hledat.
-	AI_Output (self, other,"DIA_Fletcher_WoNek_06_02"); //Pokud by o tom mohl v téhle ètvrti nìkdo nìco vìdìt, pak jsou to kopáèi. Ti ale se stráemi nemluví.
-	AI_Output (self, other,"DIA_Fletcher_WoNek_06_03"); //Obzvláš ne teï, kdy vìdí, jak já tuhle špinavou práci nenávidím. Vsadím se, e se mi vysmívají za zádama.
+	AI_Output (self, other,"DIA_Fletcher_WoNek_06_02"); //Pokud by o tom mohl v tÃ©hle Ätvrti nÄ›kdo nÄ›co vÄ›dÄ›t, pak jsou to kopÃ¡Äi. Ti ale se strÃ¡Å¾emi nemluvÃ­.
+	AI_Output (self, other,"DIA_Fletcher_WoNek_06_03"); //ObzvlÃ¡Å¡Å¥ ne teÄ, kdyÅ¾ vÄ›dÃ­, jak jÃ¡ tuhle Å¡pinavou prÃ¡ci nenÃ¡vidÃ­m. VsadÃ­m se, Å¾e se mi vysmÃ­vajÃ­ za zÃ¡dama.
 	
 	Log_CreateTopic		(CH1_LostNek,	LOG_MISSION);
 	Log_SetTopicStatus	(CH1_LostNek,	LOG_RUNNING);
-	B_LogEntry			(CH1_LostNek,"Moná budou kopáèi z oblasti arény vìdìt, kam zmizel Nek.");
+	B_LogEntry			(CH1_LostNek,"MoÅ¾nÃ¡ budou kopÃ¡Äi z oblasti arÃ©ny vÄ›dÄ›t, kam zmizel Nek.");
 };
 
 // ************************************************************
@@ -161,7 +161,7 @@ instance DIA_Fletcher_TroSchu (C_INFO)
 	condition		= DIA_Fletcher_TroSchu_Condition;
 	information		= DIA_Fletcher_TroSchu_Info;
 	permanent		= 0;
-	description		= "Proè pøesto nevybereš nìjaké peníze za ochranu?";
+	description		= "ProÄ pÅ™esto nevybereÅ¡ nÄ›jakÃ© penÃ­ze za ochranu?";
 };
 
 FUNC int  DIA_Fletcher_TroSchu_Condition()
@@ -174,8 +174,8 @@ FUNC int  DIA_Fletcher_TroSchu_Condition()
 
 func void  DIA_Fletcher_TroSchu_Info()
 {
-	AI_Output (other, self,"DIA_Fletcher_TroSchu_15_00"); //Proè pøesto nevybereš nìjaké peníze za ochranu?
-	AI_Output (self, other,"DIA_Fletcher_TroSchu_06_01"); //Nek u je vybral, ne zmizel. U toho moc nezbylo, aby se ještì vybíralo.
+	AI_Output (other, self,"DIA_Fletcher_TroSchu_15_00"); //ProÄ pÅ™esto nevybereÅ¡ nÄ›jakÃ© penÃ­ze za ochranu?
+	AI_Output (self, other,"DIA_Fletcher_TroSchu_06_01"); //Nek uÅ¾ je vybral, neÅ¾ zmizel. UÅ¾ toho moc nezbylo, aby se jeÅ¡tÄ› vybÃ­ralo.
 };
 
 // ************************************************************
@@ -191,7 +191,7 @@ instance DIA_Fletcher_WegenNek (C_INFO)
 	condition		= DIA_Fletcher_WegenNek_Condition;
 	information		= DIA_Fletcher_WegenNek_Info;
 	permanent		= 1;
-	description		= "Co se tıèe Neka...";
+	description		= "Co se tÃ½Äe Neka...";
 };
 
 FUNC int  DIA_Fletcher_WegenNek_Condition()
@@ -204,24 +204,24 @@ FUNC int  DIA_Fletcher_WegenNek_Condition()
 
 func void  DIA_Fletcher_WegenNek_Info()
 {
-	AI_Output (other, self,"DIA_Fletcher_WegenNek_15_00"); //Co se tıèe Neka...
-	AI_Output (self, other,"DIA_Fletcher_WegenNek_06_01"); //Jistì?
+	AI_Output (other, self,"DIA_Fletcher_WegenNek_15_00"); //Co se tÃ½Äe Neka...
+	AI_Output (self, other,"DIA_Fletcher_WegenNek_06_01"); //JistÄ›?
 	
 	var C_NPC Nek; Nek = Hlp_GetNpc(Grd_282_Nek);
 	
 	if ( (Sly_LostNek == LOG_SUCCESS) || (!Hlp_IsValidNpc(Nek)) )
 	{
-		AI_Output (other, self,"DIA_Fletcher_WegenNek_15_02"); //Myslím, e vím, kde je.
-		AI_Output (self, other,"DIA_Fletcher_WegenNek_06_03"); //Coe? A kde je?
-		AI_Output (other, self,"DIA_Fletcher_WegenNek_15_04"); //Je z nìj rádlo pro krysy...
-		AI_Output (self, other,"DIA_Fletcher_WegenNek_06_05"); //Ach ne! Sakra! To znamená, e se tu teï budu muset ukazovat. Doufal jsem, e se vrátí zpátky.
-		AI_Output (self, other,"DIA_Fletcher_WegenNek_06_06"); //A máme tu problém.
+		AI_Output (other, self,"DIA_Fletcher_WegenNek_15_02"); //MyslÃ­m, Å¾e vÃ­m, kde je.
+		AI_Output (self, other,"DIA_Fletcher_WegenNek_06_03"); //CoÅ¾e? A kde je?
+		AI_Output (other, self,"DIA_Fletcher_WegenNek_15_04"); //Je z nÄ›j Å¾rÃ¡dlo pro krysy...
+		AI_Output (self, other,"DIA_Fletcher_WegenNek_06_05"); //Ach ne! Sakra! To znamenÃ¡, Å¾e se tu teÄ budu muset ukazovat. Doufal jsem, Å¾e se vrÃ¡tÃ­ zpÃ¡tky.
+		AI_Output (self, other,"DIA_Fletcher_WegenNek_06_06"); //A mÃ¡me tu problÃ©m.
 		fletcher_foundNek = TRUE;
 	}
 	else
 	{
-		AI_Output (other, self,"DIA_Fletcher_WegenNek_15_07"); //ádné zprávy.
-		AI_Output (self, other,"DIA_Fletcher_WegenNek_06_08"); //Poøád mì informuj.
+		AI_Output (other, self,"DIA_Fletcher_WegenNek_15_07"); //Å½Ã¡dnÃ© zprÃ¡vy.
+		AI_Output (self, other,"DIA_Fletcher_WegenNek_06_08"); //PoÅ™Ã¡d mÄ› informuj.
 	};
 };
 
@@ -236,7 +236,7 @@ instance DIA_Fletcher_Problem (C_INFO)
 	condition		= DIA_Fletcher_Problem_Condition;
 	information		= DIA_Fletcher_Problem_Info;
 	permanent		= 0;
-	description		= "Co je to za problém?";
+	description		= "Co je to za problÃ©m?";
 };
 
 FUNC int  DIA_Fletcher_Problem_Condition()
@@ -249,8 +249,8 @@ FUNC int  DIA_Fletcher_Problem_Condition()
 
 func void  DIA_Fletcher_Problem_Info()
 {
-	AI_Output (other, self,"DIA_Fletcher_Problem_15_00"); //Co je to za problém?
-	AI_Output (self, other,"DIA_Fletcher_Problem_06_01"); //Jsem dlunı Scattymu, a to poøádnì. Teï se dozví, e dìlám Nekovu práci a bude sem chodit kadı den...
+	AI_Output (other, self,"DIA_Fletcher_Problem_15_00"); //Co je to za problÃ©m?
+	AI_Output (self, other,"DIA_Fletcher_Problem_06_01"); //Jsem dluÅ¾nÃ½ Scattymu, a to poÅ™Ã¡dnÄ›. TeÄ se dozvÃ­, Å¾e dÄ›lÃ¡m Nekovu prÃ¡ci a bude sem chodit kaÅ¾dÃ½ den...
 };	
 
 
@@ -294,7 +294,7 @@ FUNC int  Grd_255_Fletcher_WELCOME_Condition()
 };
 func void  Grd_255_Fletcher_WELCOME_Info()
 {
-	AI_Output (self, other,"Grd_255_Fletcher_WELCOME_Info_06_01"); //Pochopil jsi rychle, jak to tu chodí. Vítej mezi stráe!
+	AI_Output (self, other,"Grd_255_Fletcher_WELCOME_Info_06_01"); //Pochopil jsi rychle, jak to tu chodÃ­. VÃ­tej mezi strÃ¡Å¾e!
 };
 
 //#####################################################################
@@ -335,64 +335,64 @@ FUNC VOID Info_Fletcher_DIE_Info()
 	{
 		if (oldHeroGuild == GIL_GRD)
 		{
-			AI_Output	(self,hero,"Info_Fletcher_DIE_06_01"); //Zrádce! Myslet si, e necháme takové jako ty, aby se k nám pøidali. BRR!
+			AI_Output	(self,hero,"Info_Fletcher_DIE_06_01"); //ZrÃ¡dce! Myslet si, Å¾e nechÃ¡me takovÃ© jako ty, aby se k nÃ¡m pÅ™idali. BRR!
 		}
 		else if (oldHeroGuild == GIL_KDF)
 		{
-			AI_Output	(self,hero,"Info_Fletcher_DIE_06_02"); //Je to jeden z tìch zrádnıch mágù Ohnì! BRR!
+			AI_Output	(self,hero,"Info_Fletcher_DIE_06_02"); //Je to jeden z tÄ›ch zrÃ¡dnÃ½ch mÃ¡gÅ¯ OhnÄ›! BRR!
 		}
 		else
 		{
-			AI_Output	(self,hero,"Info_Fletcher_DIE_06_03"); //Zdar, zrádèe! To, es byl jedním z Gomezovıch Stínù, ti teï nepomùe!
+			AI_Output	(self,hero,"Info_Fletcher_DIE_06_03"); //Zdar, zrÃ¡dÄe! To, Å¾es byl jednÃ­m z GomezovÃ½ch StÃ­nÅ¯, ti teÄ nepomÅ¯Å¾e!
 		};			
 
-		AI_Output		(hero,self,"Info_Fletcher_DIE_15_04"); //Moment. Jak to myslíš, Fletchere?
-		AI_Output		(self,hero,"Info_Fletcher_DIE_06_05"); //Patøíš k té èeládce z Nového tábora, viï?
-		AI_Output		(hero,self,"Info_Fletcher_DIE_15_06"); //Zadr...
-		AI_Output		(self,hero,"Info_Fletcher_DIE_06_07"); //Myslel sis, e na to nepøijdeme, co?
-		AI_Output		(hero,self,"Info_Fletcher_DIE_15_08"); //No tak... Zadr!
-		AI_Output		(self,hero,"Info_Fletcher_DIE_06_09"); //Ne, TY zadr - a dr si pevnì hlavu! Protoe o ní co nevidìt pøijdeš!
-		AI_Output		(self,hero,"Info_Fletcher_DIE_06_10"); //SMRT ZRÁDCI!!!
+		AI_Output		(hero,self,"Info_Fletcher_DIE_15_04"); //Moment. Jak to myslÃ­Å¡, Fletchere?
+		AI_Output		(self,hero,"Info_Fletcher_DIE_06_05"); //PatÅ™Ã­Å¡ k tÃ© ÄelÃ¡dce z NovÃ©ho tÃ¡bora, viÄ?
+		AI_Output		(hero,self,"Info_Fletcher_DIE_15_06"); //ZadrÅ¾...
+		AI_Output		(self,hero,"Info_Fletcher_DIE_06_07"); //Myslel sis, Å¾e na to nepÅ™ijdeme, co?
+		AI_Output		(hero,self,"Info_Fletcher_DIE_15_08"); //No tak... ZadrÅ¾!
+		AI_Output		(self,hero,"Info_Fletcher_DIE_06_09"); //Ne, TY zadrÅ¾ - a drÅ¾ si pevnÄ› hlavu! ProtoÅ¾e o nÃ­ co nevidÄ›t pÅ™ijdeÅ¡!
+		AI_Output		(self,hero,"Info_Fletcher_DIE_06_10"); //SMRT ZRÃDCI!!!
 
 		if	Npc_KnowsInfo(hero, Info_Bloodwyn_DIE)
 		{
-			B_LogEntry			(CH4_BannedFromOC,"Bloodwyn se opevnil u zadní brány. Zachoval se stejnì jako Fletcher, kterı teï støeí hlavní bránu. Nevím sice jak, ale musí to nìjak souviset s mım hledáním ohniska v pro Novı tábor.");
+			B_LogEntry			(CH4_BannedFromOC,"Bloodwyn se opevnil u zadnÃ­ brÃ¡ny. Zachoval se stejnÄ› jako Fletcher, kterÃ½ teÄ stÅ™eÅ¾Ã­ hlavnÃ­ brÃ¡nu. NevÃ­m sice jak, ale musÃ­ to nÄ›jak souviset s mÃ½m hledÃ¡nÃ­m ohniska v pro NovÃ½ tÃ¡bor.");
 		}
 		else if	(Npc_GetTrueGuild(hero) == GIL_NONE)
 		{
 			Log_CreateTopic		(CH4_BannedFromOC,	LOG_MISSION);
 			Log_SetTopicStatus	(CH4_BannedFromOC,	LOG_RUNNING);
-			B_LogEntry			(CH4_BannedFromOC,"Fletcher, kterı se skupinou vojákù støeí hlavní bránu Starého tábora, mì nazval zrádcem a odpadlíkem. Ani mì nevyslechl a zaútoèil na mì!");
-			B_LogEntry			(CH4_BannedFromOC,"Vypadá to, e jsem vyhoštìn ze Starého tábora.");
+			B_LogEntry			(CH4_BannedFromOC,"Fletcher, kterÃ½ se skupinou vojÃ¡kÅ¯ stÅ™eÅ¾Ã­ hlavnÃ­ brÃ¡nu StarÃ©ho tÃ¡bora, mÄ› nazval zrÃ¡dcem a odpadlÃ­kem. Ani mÄ› nevyslechl a zaÃºtoÄil na mÄ›!");
+			B_LogEntry			(CH4_BannedFromOC,"VypadÃ¡ to, Å¾e jsem vyhoÅ¡tÄ›n ze StarÃ©ho tÃ¡bora.");
 		};
 	}
 	else
 	{
 		if (C_NpcBelongsToNewCamp(hero))
 		{
-			AI_Output	(self,hero,"Info_Fletcher_DIE_06_11"); //Podívej se na to. Je to chlap z Nového tábora!
+			AI_Output	(self,hero,"Info_Fletcher_DIE_06_11"); //PodÃ­vej se na to. Je to chlap z NovÃ©ho tÃ¡bora!
 		}
 		else
 		{
-			AI_Output	(self,hero,"Info_Fletcher_DIE_06_12"); //Podívej se na to. Je to chlap z tábora od bain!
+			AI_Output	(self,hero,"Info_Fletcher_DIE_06_12"); //PodÃ­vej se na to. Je to chlap z tÃ¡bora od baÅ¾in!
 		};
 
-		AI_Output		(hero,self,"Info_Fletcher_DIE_15_13"); //A co? Co tady pohledáváš?
-		AI_Output		(self,hero,"Info_Fletcher_DIE_06_14"); //Váš dùl bude zanedlouho náš.
-		AI_Output		(hero,self,"Info_Fletcher_DIE_15_15"); //Jo? Pìknı sen!
-		AI_Output		(self,hero,"Info_Fletcher_DIE_06_16"); //Promiò, ale nemùu riskovat, e to øekneš nìkomu dalšímu!
-		AI_Output		(hero,self,"Info_Fletcher_DIE_15_17"); //Zadr, nechci ádné problémy!
-		AI_Output		(self,hero,"Info_Fletcher_DIE_06_18"); //Na to's mìl myslet døív, ne ses tu ukázal!
-		AI_Output		(hero,self,"Info_Fletcher_DIE_15_19"); //Hej, co má tahle hádka...
-		AI_Output		(self,hero,"Info_Fletcher_DIE_06_20"); //Pojïte, hoši, chytneme ho!
+		AI_Output		(hero,self,"Info_Fletcher_DIE_15_13"); //A co? Co tady pohledÃ¡vÃ¡Å¡?
+		AI_Output		(self,hero,"Info_Fletcher_DIE_06_14"); //VÃ¡Å¡ dÅ¯l bude zanedlouho nÃ¡Å¡.
+		AI_Output		(hero,self,"Info_Fletcher_DIE_15_15"); //Jo? PÄ›knÃ½ sen!
+		AI_Output		(self,hero,"Info_Fletcher_DIE_06_16"); //PromiÅˆ, ale nemÅ¯Å¾u riskovat, Å¾e to Å™ekneÅ¡ nÄ›komu dalÅ¡Ã­mu!
+		AI_Output		(hero,self,"Info_Fletcher_DIE_15_17"); //ZadrÅ¾, nechci Å¾Ã¡dnÃ© problÃ©my!
+		AI_Output		(self,hero,"Info_Fletcher_DIE_06_18"); //Na to's mÄ›l myslet dÅ™Ã­v, neÅ¾ ses tu ukÃ¡zal!
+		AI_Output		(hero,self,"Info_Fletcher_DIE_15_19"); //Hej, co mÃ¡ tahle hÃ¡dka...
+		AI_Output		(self,hero,"Info_Fletcher_DIE_06_20"); //PojÄte, hoÅ¡i, chytneme ho!
 	};
 
-	Npc_ExchangeRoutine	(self,	"FMTaken2");				// Verstärkung vor das Haupttor (Anführer)
-	B_ExchangeRoutine	(GRD_252_Gardist,	"FMTaken2");	// Verstärkung vor das Haupttor
-	B_ExchangeRoutine	(GRD_253_Gardist,	"FMTaken2");	// Verstärkung vor das Haupttor
-	B_ExchangeRoutine	(GRD_244_Gardist,	"FMTaken2");	// Verstärkung vor das Haupttor (Fernkämpfer)
-	B_ExchangeRoutine	(GRD_214_Torwache,	"FMTaken2");	// reguläre Wache am Haupttor
-	B_ExchangeRoutine	(GRD_215_Torwache,	"FMTaken2");	// reguläre Wache am Haupttor
+	Npc_ExchangeRoutine	(self,	"FMTaken2");				// VerstÃ¤rkung vor das Haupttor (AnfÃ¼hrer)
+	B_ExchangeRoutine	(GRD_252_Gardist,	"FMTaken2");	// VerstÃ¤rkung vor das Haupttor
+	B_ExchangeRoutine	(GRD_253_Gardist,	"FMTaken2");	// VerstÃ¤rkung vor das Haupttor
+	B_ExchangeRoutine	(GRD_244_Gardist,	"FMTaken2");	// VerstÃ¤rkung vor das Haupttor (FernkÃ¤mpfer)
+	B_ExchangeRoutine	(GRD_214_Torwache,	"FMTaken2");	// regulÃ¤re Wache am Haupttor
+	B_ExchangeRoutine	(GRD_215_Torwache,	"FMTaken2");	// regulÃ¤re Wache am Haupttor
 
 	B_SetPermAttitude	(GRD_255_Fletcher,	ATT_HOSTILE);
 	B_SetPermAttitude	(GRD_252_Gardist,	ATT_HOSTILE);
@@ -403,7 +403,7 @@ FUNC VOID Info_Fletcher_DIE_Info()
 	
 	if	!Npc_KnowsInfo(hero, Info_Bloodwyn_DIE)
 	{
-		B_LogEntry		(CH4_Firemages,"Brány Starého tábora jsou nyní uzavøeny a hlídány stráemi. Napadají kadého, kdo se pøiblíí k táboru.");
+		B_LogEntry		(CH4_Firemages,"BrÃ¡ny StarÃ©ho tÃ¡bora jsou nynÃ­ uzavÅ™eny a hlÃ­dÃ¡ny strÃ¡Å¾emi. NapadajÃ­ kaÅ¾dÃ©ho, kdo se pÅ™iblÃ­Å¾Ã­ k tÃ¡boru.");
 	};
 	
 	AI_StopProcessInfos	(self);

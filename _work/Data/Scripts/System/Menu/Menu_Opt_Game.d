@@ -34,7 +34,7 @@ INSTANCE MENU_OPT_GAME(C_MENU_DEF)
 
 INSTANCE MENUITEM_GAME_HEADLINE(C_MENU_ITEM_DEF) 
 {
-	text[0]		=	"NASTAVENÕ HRY";
+	text[0]		=	"NASTAVEN√ç HRY";
 	type		=	MENU_ITEM_TEXT;
 	// Position und Dimension	
 	posx		=	0;		posy		=	MENU_TITLE_Y;
@@ -53,7 +53,7 @@ INSTANCE MENUITEM_GAME_SUB_TITLES(C_MENU_ITEM_DEF)
 {
 	backpic		=	MENU_ITEM_BACK_PIC;
 	text[0]		=	"Titulky";
-	text[1]		= 	"Vizu·lnÌ dialogy."; // Kommentar
+	text[1]		= 	"Vizu√°ln√≠ dialogy."; // Kommentar
 	// Position und Dimension	
 	posx		=	1000;	posy		=	MENU_START_Y + MENU_DY*0;
 	dimx		=	4000;	dimy		=	750;
@@ -88,8 +88,8 @@ instance MENUITEM_GAME_SUB_TITLES_CHOICE(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_GAME_ANIMATE_WINDOWS(C_MENU_ITEM_DEF)
 {
 	backpic		=	MENU_ITEM_BACK_PIC;
-	text[0]		=	"Animovan· okna";
-	text[1]		= 	"Animovan· dialogov· okna"; // Kommentar
+	text[0]		=	"Animovan√° okna";
+	text[1]		= 	"Animovan√° dialogov√° okna"; // Kommentar
 	// Position und Dimension	
 	posx		=	1000;	posy		=	MENU_START_Y + MENU_DY*1;
 	dimx		=	4000;	dimy		=	750;
@@ -125,8 +125,8 @@ instance MENUITEM_GAME_ANIMATE_WINDOWS_CHOICE(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_GAME_LOOKAROUND_INVERSE(C_MENU_ITEM_DEF)
 {
 	backpic		=	MENU_ITEM_BACK_PIC;
-	text[0]		=	"InverznÌ pohled";
-	text[1]		= 	"InverznÌ ovl·d·nÌ kamery."; // Kommentar
+	text[0]		=	"Inverzn√≠ pohled";
+	text[1]		= 	"Inverzn√≠ ovl√°d√°n√≠ kamery."; // Kommentar
 	// Position und Dimension	
 	posx		=	1000;	posy		=	MENU_START_Y + MENU_DY*2;
 	dimx		=	4000;	dimy		=	750;
@@ -161,8 +161,8 @@ instance MENUITEM_GAME_LOOKAROUND_INVERSE_CHOICE(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_M(C_MENU_ITEM_DEF)
 {
 	backpic		=	MENU_ITEM_BACK_PIC;
-	text[0]		=	"Myö";
-	text[1]		= 	"Aktivovat ovl·d·nÌ myöÌ."; // Kommentar
+	text[0]		=	"My≈°";
+	text[1]		= 	"Aktivovat ovl√°d√°n√≠ my≈°√≠."; // Kommentar
 	// Position und Dimension	
 	posx		=	1000;	posy		=	MENU_START_Y + MENU_DY*3;
 	dimx		=	4000;	dimy		=	750;
@@ -197,7 +197,7 @@ instance MENUITEM_M_CHOICE(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_MSENSITIVITY(C_MENU_ITEM_DEF)
 {
 	backpic		=	MENU_ITEM_BACK_PIC;
-	text[0]		=	"Citlivost myöi";
+	text[0]		=	"Citlivost my≈°i";
 	text[1]		= 	""; // Kommentar
 	// Position und Dimension	
 	posx		=	1000;	posy		=	MENU_START_Y + MENU_DY*4;
@@ -237,7 +237,7 @@ INSTANCE MENUITEM_GAME_BLOOD(C_MENU_ITEM_DEF)
 {
 	backpic		=	MENU_ITEM_BACK_PIC;
 	text[0]		=	"Krev";
-	text[1]		= 	"ZobrazenÌ efekt˘ s krvÌ."; // Kommentar
+	text[1]		= 	"Zobrazen√≠ efekt≈Ø s krv√≠."; // Kommentar
 	// Position und Dimension	
 	posx		=	1000;	posy		=	MENU_START_Y + MENU_DY*5;
 	dimx		=	4000;	dimy		=	750;
@@ -251,7 +251,7 @@ instance MENUITEM_GAME_BLOOD_CHOICE(C_MENU_ITEM_DEF)
 {
 	backPic		=	MENU_CHOICE_BACK_PIC;
 	type		=	MENU_ITEM_CHOICEBOX;	
-	text[0]		= 	"ne|m·lo|vÌce|vöechny";
+	text[0]		= 	"ne|m√°lo|v√≠ce|v≈°echny";
 	fontName	=   MENU_FONT_SMALL;
 	// Position und Dimension	
 	posx		= 5000;		posy		= MENU_START_Y + MENU_DY*5 + MENU_CHOICE_YPLUS;
@@ -269,7 +269,7 @@ instance MENUITEM_GAME_BLOOD_CHOICE(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_GAME_BACK(C_MENU_ITEM_DEF)
 {
 	backpic		=	MENU_ITEM_BACK_PIC;
-	text[0]		=	"ZpÏt";
+	text[0]		=	"Zpƒõt";
 	// Position und Dimension	
 	posx		=	1000;		posy		=	MENU_BACK_Y;
 	dimx		=	6192;		dimy		=	MENU_DY;

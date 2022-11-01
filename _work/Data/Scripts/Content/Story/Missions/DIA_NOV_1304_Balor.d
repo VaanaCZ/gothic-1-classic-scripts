@@ -36,7 +36,7 @@ instance  DIA_Balor_FetchWeed (C_INFO)
 	condition	= DIA_Balor_FetchWeed_Condition;
 	information	= DIA_Balor_FetchWeed_Info;
 	permanent	= 0;
-	description	= "Poslal mÏ Baal Orun. M·m p¯evzÌt celou sklizeÚ drogy z baûin.";
+	description	= "Poslal mƒõ Baal Orun. M√°m p≈ôevz√≠t celou sklize≈à drogy z ba≈æin.";
 };                       
 
 FUNC int  DIA_Balor_FetchWeed_Condition()
@@ -49,27 +49,27 @@ FUNC int  DIA_Balor_FetchWeed_Condition()
 
 FUNC VOID  DIA_Balor_FetchWeed_Info()
 {
-	AI_Output (other, self,"DIA_Balor_FetchWeed_15_00"); //Poslal mÏ Baal Orun. M·m p¯evzÌt celou sklizeÚ drogy z baûin.
-	AI_Output (self, other,"DIA_Balor_FetchWeed_01_01"); //Dob¯e. Pak tam nemusÌm chodit s·m. Tady je.
-	AI_Output (self, other,"DIA_Balor_FetchWeed_01_02"); //NezapomeÚ zajÌt za Viranem na druhou stranu baûin, pokud jsi tam jeötÏ nebyl.
-	AI_Output (self, other,"DIA_Balor_FetchWeed_01_03"); //Jinak by tv˘j n·klad mohl b˝t p¯Ìliö mal˝ a lidÈ by si mohli pomyslet, ûe jsi druhou p˘lku rozprodal, haha.
+	AI_Output (other, self,"DIA_Balor_FetchWeed_15_00"); //Poslal mƒõ Baal Orun. M√°m p≈ôevz√≠t celou sklize≈à drogy z ba≈æin.
+	AI_Output (self, other,"DIA_Balor_FetchWeed_01_01"); //Dob≈ôe. Pak tam nemus√≠m chodit s√°m. Tady je.
+	AI_Output (self, other,"DIA_Balor_FetchWeed_01_02"); //Nezapome≈à zaj√≠t za Viranem na druhou stranu ba≈æin, pokud jsi tam je≈°tƒõ nebyl.
+	AI_Output (self, other,"DIA_Balor_FetchWeed_01_03"); //Jinak by tv≈Øj n√°klad mohl b√Ωt p≈ô√≠li≈° mal√Ω a lid√© by si mohli pomyslet, ≈æe jsi druhou p≈Ølku rozprodal, haha.
 	
 	B_GiveInvItems 		(self, other, ItMi_Plants_Swampherb_01, 50);
 
-	B_LogEntry			(CH1_DeliverWeed,"Balor mi dal dneönÌ sklizeÚ drogy z baûin pro Cora Kaloma.");
+	B_LogEntry			(CH1_DeliverWeed,"Balor mi dal dne≈°n√≠ sklize≈à drogy z ba≈æin pro Cora Kaloma.");
 	B_GiveXP			(XP_WeedFromBalor);
 
 	if	!Npc_KnowsInfo(hero, DIA_Viran_What)
 	&&	!Npc_KnowsInfo(hero, DIA_Viran_FetchWeed)
 	{
-		 B_LogEntry		(CH1_DeliverWeed,"Podle Balora pracuje druh· skupina sbÏraË˘ na druhÈ stranÏ baûin. Protoûe nesmÌm kl·st Baalu Orunovi û·dnÈ ot·zky, musÌm prohledat baûiny, zda tam druh· skupina sbÏraË˘ doopravdy je."); 
+		 B_LogEntry		(CH1_DeliverWeed,"Podle Balora pracuje druh√° skupina sbƒõraƒç≈Ø na druh√© stranƒõ ba≈æin. Proto≈æe nesm√≠m kl√°st Baalu Orunovi ≈æ√°dn√© ot√°zky, mus√≠m prohledat ba≈æiny, zda tam druh√° skupina sbƒõraƒç≈Ø doopravdy je."); 
 	};
 	
 	Balor_BotenDay = Wld_GetDay(); 
 };
 
 // **************************************************
-//				Wem verhˆkern?
+//				Wem verh√∂kern?
 // **************************************************
 	var int Balor_PlayerCheating;
 // **************************************************
@@ -81,7 +81,7 @@ instance  DIA_Balor_SellUnder (C_INFO)
 	condition	= DIA_Balor_SellUnder_Condition;
 	information	= DIA_Balor_SellUnder_Info;
 	permanent	= 0;
-	description	= "Komu jinÈmu bych mohl tu drogu prodat?";
+	description	= "Komu jin√©mu bych mohl tu drogu prodat?";
 };                       
 
 FUNC int  DIA_Balor_SellUnder_Condition()
@@ -94,34 +94,34 @@ FUNC int  DIA_Balor_SellUnder_Condition()
 
 FUNC VOID  DIA_Balor_SellUnder_Info()
 {
-	AI_Output (other, self,"DIA_Balor_SellUnder_15_00"); //Komu jinÈmu bych mohl tu drogu prodat?
-	AI_Output (self, other,"DIA_Balor_SellUnder_01_01"); //O-hÛ! TeÔ jsem ti nasadil brouka do hlavy, viÔ?
+	AI_Output (other, self,"DIA_Balor_SellUnder_15_00"); //Komu jin√©mu bych mohl tu drogu prodat?
+	AI_Output (self, other,"DIA_Balor_SellUnder_01_01"); //O-h√≥! Teƒè jsem ti nasadil brouka do hlavy, viƒè?
 	
 	Info_ClearChoices 	(DIA_Balor_SellUnder);
-	Info_AddChoice 		(DIA_Balor_SellUnder,"ZapomeÚ na to, byla to jen ˙vaha.",DIA_Balor_SellUnder_ForgetIt);
-	Info_AddChoice 		(DIA_Balor_SellUnder,"Jestli nÏkoho zn·ö - mohli bysme se rozdÏlit.",DIA_Balor_SellUnder_HalfHalf);
-	Info_AddChoice 		(DIA_Balor_SellUnder,"Ne - ¯ekni mi - kdo?",DIA_Balor_SellUnder_ComeOn);
+	Info_AddChoice 		(DIA_Balor_SellUnder,"Zapome≈à na to, byla to jen √∫vaha.",DIA_Balor_SellUnder_ForgetIt);
+	Info_AddChoice 		(DIA_Balor_SellUnder,"Jestli nƒõkoho zn√°≈° - mohli bysme se rozdƒõlit.",DIA_Balor_SellUnder_HalfHalf);
+	Info_AddChoice 		(DIA_Balor_SellUnder,"Ne - ≈ôekni mi - kdo?",DIA_Balor_SellUnder_ComeOn);
 };
 
 func void DIA_Balor_SellUnder_ForgetIt()
 {
-	AI_Output (other, self,"DIA_Balor_SellUnder_ForgetIt_15_00"); //ZapomeÚ na to, to byla jen ˙vaha.
+	AI_Output (other, self,"DIA_Balor_SellUnder_ForgetIt_15_00"); //Zapome≈à na to, to byla jen √∫vaha.
 	Info_ClearChoices 	(DIA_Balor_SellUnder);
 };
 
 func void DIA_Balor_SellUnder_HalfHalf()
 {
-	AI_Output (other, self,"DIA_Balor_SellUnder_HalfHalf_15_00"); //Jestli nÏkoho zn·ö - mohli bysme se rozdÏlit.
-	AI_Output (self, other,"DIA_Balor_SellUnder_HalfHalf_01_01"); //Dobr·, vÏdÏl bych o nÏkom z NovÈho t·bora, koho by droga mohla zajÌmat...
-	AI_Output (self, other,"DIA_Balor_SellUnder_HalfHalf_01_02"); //Ale jestli tÏ p¯itom p¯istihnou Guru, hodÌ tÏ moË·lov˝m ûralok˘m! A j· nevÌm nic, jasn˝?
+	AI_Output (other, self,"DIA_Balor_SellUnder_HalfHalf_15_00"); //Jestli nƒõkoho zn√°≈° - mohli bysme se rozdƒõlit.
+	AI_Output (self, other,"DIA_Balor_SellUnder_HalfHalf_01_01"); //Dobr√°, vƒõdƒõl bych o nƒõkom z Nov√©ho t√°bora, koho by droga mohla zaj√≠mat...
+	AI_Output (self, other,"DIA_Balor_SellUnder_HalfHalf_01_02"); //Ale jestli tƒõ p≈ôitom p≈ôistihnou Guru, hod√≠ tƒõ moƒç√°lov√Ωm ≈æralok≈Øm! A j√° nev√≠m nic, jasn√Ω?
 	Balor_PlayerCheating = TRUE;
 	Info_ClearChoices 	(DIA_Balor_SellUnder);
 };
 
 func void DIA_Balor_SellUnder_ComeOn()
 {
-	AI_Output (other, self,"DIA_Balor_SellUnder_ComeOn_15_00"); //Ne - ¯ekni mi - kdo?
-	AI_Output (self, other,"DIA_Balor_SellUnder_ComeOn_01_01"); //Ty m·ö nÏco v ˙myslu! ÿeknu ti jedno: jestli se ta droga nedostane ke Corovu Kalomovi, dostaneme se oba do malÈru!
+	AI_Output (other, self,"DIA_Balor_SellUnder_ComeOn_15_00"); //Ne - ≈ôekni mi - kdo?
+	AI_Output (self, other,"DIA_Balor_SellUnder_ComeOn_01_01"); //Ty m√°≈° nƒõco v √∫myslu! ≈òeknu ti jedno: jestli se ta droga nedostane ke Corovu Kalomovi, dostaneme se oba do mal√©ru!
 };
 
 // **************************************************
@@ -137,7 +137,7 @@ instance  DIA_Balor_TellDealer (C_INFO)
 	condition	= DIA_Balor_TellDealer_Condition;
 	information	= DIA_Balor_TellDealer_Info;
 	permanent	= 1;
-	description	= "Dob¯e - kdo je ten p¯ekupnÌk z NovÈho t·bora?";
+	description	= "Dob≈ôe - kdo je ten p≈ôekupn√≠k z Nov√©ho t√°bora?";
 };                       
 
 FUNC int  DIA_Balor_TellDealer_Condition()
@@ -150,45 +150,45 @@ FUNC int  DIA_Balor_TellDealer_Condition()
 
 FUNC VOID  DIA_Balor_TellDealer_Info()
 {
-	AI_Output (other, self,"DIA_Balor_TellDealer_15_00"); //Dob¯e - kdo je ten p¯ekupnÌk z NovÈho t·bora?
-	AI_Output (self, other,"DIA_Balor_TellDealer_01_01"); //MyslÌö si, ûe ti ¯eknu to jmÈno a ty s tou drogou zmizÌö - takhle to teda nep˘jde!
-	AI_Output (self, other,"DIA_Balor_TellDealer_01_02"); //Chci 50 nuget˘ jako platbu p¯edem. Pak se uvidÌ.
+	AI_Output (other, self,"DIA_Balor_TellDealer_15_00"); //Dob≈ôe - kdo je ten p≈ôekupn√≠k z Nov√©ho t√°bora?
+	AI_Output (self, other,"DIA_Balor_TellDealer_01_01"); //Mysl√≠≈° si, ≈æe ti ≈ôeknu to jm√©no a ty s tou drogou zmiz√≠≈° - takhle to teda nep≈Øjde!
+	AI_Output (self, other,"DIA_Balor_TellDealer_01_02"); //Chci 50 nuget≈Ø jako platbu p≈ôedem. Pak se uvid√≠.
 	
 	Info_ClearChoices 	(DIA_Balor_TellDealer);
-	Info_Addchoice 		(DIA_Balor_TellDealer,"Na to zapomeÚ.",DIA_Balor_TellDealer_ForgetIt);
-	Info_Addchoice 		(DIA_Balor_TellDealer,"50, to je fÈr - tady jsou.",DIA_Balor_TellDealer_Pay);
+	Info_Addchoice 		(DIA_Balor_TellDealer,"Na to zapome≈à.",DIA_Balor_TellDealer_ForgetIt);
+	Info_Addchoice 		(DIA_Balor_TellDealer,"50, to je f√©r - tady jsou.",DIA_Balor_TellDealer_Pay);
 };
 
 func void DIA_Balor_TellDealer_Pay()
 {
-	AI_Output (other, self,"DIA_Balor_TellDealer_Pay_15_00"); //50, to je fÈr - tady jsou.
+	AI_Output (other, self,"DIA_Balor_TellDealer_Pay_15_00"); //50, to je f√©r - tady jsou.
 	if (Npc_HasItems(other, itminugget) >= 50)
 	{
-		AI_Output			(self, other,"DIA_Balor_TellDealer_Pay_01_01"); //Dob¯e... Poslouchej. Jmenuje se Cipher. Najdeö ho nejspÌö u baru na jeze¯e.
-		AI_Output			(self, other,"DIA_Balor_TellDealer_Pay_01_02"); //BuÔ opatrn˝ a nenech se od nikoho nap·lit.
+		AI_Output			(self, other,"DIA_Balor_TellDealer_Pay_01_01"); //Dob≈ôe... Poslouchej. Jmenuje se Cipher. Najde≈° ho nejsp√≠≈° u baru na jeze≈ôe.
+		AI_Output			(self, other,"DIA_Balor_TellDealer_Pay_01_02"); //Buƒè opatrn√Ω a nenech se od nikoho nap√°lit.
 		Info_ClearChoices 	(DIA_Balor_TellDealer);
 
 		B_GiveInvItems		(other, self,itminugget,50);
 		Balor_TellsNCDealer = TRUE;
 
-		B_LogEntry			(CH1_DeliverWeed,"Balor se zmÌnil o muûi jmÈnem Cipher, kter˝ by r·d koupil sklizeÚ drogy z baûin. M˘ûu ho najÌt v baru na jeze¯e v NovÈm t·bo¯e. Budu vöak mÌt nesmÌrnÈ potÌûe s guru.");
+		B_LogEntry			(CH1_DeliverWeed,"Balor se zm√≠nil o mu≈æi jm√©nem Cipher, kter√Ω by r√°d koupil sklize≈à drogy z ba≈æin. M≈Ø≈æu ho naj√≠t v baru na jeze≈ôe v Nov√©m t√°bo≈ôe. Budu v≈°ak m√≠t nesm√≠rn√© pot√≠≈æe s guru.");
 		B_GiveXP			(XP_BalorNamedCipher);
 
 		Log_CreateTopic		(GE_TraderNC, LOG_NOTE);
-		B_LogEntry			(GE_TraderNC,"Cipher skupuje a prod·v· v baru na jeze¯e veökerÈ zboûÌ. Obzvl·öù se zajÌm· o velkÈ dod·vky drogy z baûin.");
+		B_LogEntry			(GE_TraderNC,"Cipher skupuje a prod√°v√° v baru na jeze≈ôe ve≈°ker√© zbo≈æ√≠. Obzvl√°≈°≈• se zaj√≠m√° o velk√© dod√°vky drogy z ba≈æin.");
 	}
 	else
 	{
-		AI_Output (self, other,"DIA_Balor_TellDealer_Pay_NoOre_01_00"); //NevidÌm tÏch 50 nuget˘. Chci 50 nuget˘ a ani o jeden mÌÚ, jasn˝?
+		AI_Output (self, other,"DIA_Balor_TellDealer_Pay_NoOre_01_00"); //Nevid√≠m tƒõch 50 nuget≈Ø. Chci 50 nuget≈Ø a ani o jeden m√≠≈à, jasn√Ω?
 		Info_ClearChoices 	(DIA_Balor_TellDealer);
 	};
 };
 
 func void DIA_Balor_TellDealer_ForgetIt()
 {
-	AI_Output (other, self,"DIA_Balor_TellDealer_ForgetIt_15_00"); //ZapomeÚ na to.
-	AI_Output (self, other,"DIA_Balor_TellDealer_ForgetIt_01_01"); //Nemysli si, ûe m˘ûeö klidnÏ jÌt do NovÈho t·bora a prodat to kdekomu! Kdyû nebudeö zn·t spr·vnÈ jmÈno, nikdy se toho nezbavÌö!
-	AI_Output (self, other,"DIA_Balor_TellDealer_ForgetIt_01_02"); //Ledaûe bys nechal nÏjakÈho banditu, aby ti rozbil hlavu.
+	AI_Output (other, self,"DIA_Balor_TellDealer_ForgetIt_15_00"); //Zapome≈à na to.
+	AI_Output (self, other,"DIA_Balor_TellDealer_ForgetIt_01_01"); //Nemysli si, ≈æe m≈Ø≈æe≈° klidnƒõ j√≠t do Nov√©ho t√°bora a prodat to kdekomu! Kdy≈æ nebude≈° zn√°t spr√°vn√© jm√©no, nikdy se toho nezbav√≠≈°!
+	AI_Output (self, other,"DIA_Balor_TellDealer_ForgetIt_01_02"); //Leda≈æe bys nechal nƒõjak√©ho banditu, aby ti rozbil hlavu.
 	Info_ClearChoices 	(DIA_Balor_TellDealer);
 };
 
@@ -203,7 +203,7 @@ instance  DIA_Balor_RipOff (C_INFO)
 	condition	= DIA_Balor_RipOff_Condition;
 	information	= DIA_Balor_RipOff_Info;
 	permanent	= 0;
-	description	= "M·m tady vyzvednout dalöÌ dod·vku pro Cora Kaloma.";
+	description	= "M√°m tady vyzvednout dal≈°√≠ dod√°vku pro Cora Kaloma.";
 };                       
 
 FUNC int  DIA_Balor_RipOff_Condition()
@@ -216,15 +216,15 @@ FUNC int  DIA_Balor_RipOff_Condition()
 
 FUNC VOID  DIA_Balor_RipOff_Info()
 {
-	AI_Output (other, self,"DIA_Balor_RipOff_15_00"); //To jsem j·, jsem zp·tky. M·m p¯evzÌt dalöÌ v·rku.
+	AI_Output (other, self,"DIA_Balor_RipOff_15_00"); //To jsem j√°, jsem zp√°tky. M√°m p≈ôevz√≠t dal≈°√≠ v√°rku.
 	if (Balor_PlayerCheating == TRUE)
 	{
-		AI_Output (self, other,"DIA_Balor_RipOff_01_01"); //No jistÏ! A zase ji prodat v NovÈm t·bo¯e.
-		AI_Output (self, other,"DIA_Balor_RipOff_01_02"); //Chci 50 nuget˘ - moji obvyklou platbu.
+		AI_Output (self, other,"DIA_Balor_RipOff_01_01"); //No jistƒõ! A zase ji prodat v Nov√©m t√°bo≈ôe.
+		AI_Output (self, other,"DIA_Balor_RipOff_01_02"); //Chci 50 nuget≈Ø - moji obvyklou platbu.
 	}
 	else
 	{
-		AI_Output (self, other,"DIA_Balor_RipOff_01_03"); //Zase ty? Dobr·, tady je, vem si to, ale neproveÔ û·dnou hloupost, jasn˝?
+		AI_Output (self, other,"DIA_Balor_RipOff_01_03"); //Zase ty? Dobr√°, tady je, vem si to, ale neproveƒè ≈æ√°dnou hloupost, jasn√Ω?
 		AI_Output (other, self,"DIA_Balor_RipOff_15_04"); //To bych si nedovolil.
 		CreateInvItems (self, ItMi_Plants_Swampherb_01, 50);
 		B_GiveInvItems (self, hero, ItMi_Plants_Swampherb_01, 50);
@@ -242,7 +242,7 @@ instance  DIA_Balor_Perm (C_INFO)
 	condition	= DIA_Balor_Perm_Condition;
 	information	= DIA_Balor_Perm_Info;
 	permanent	= 1;
-	description	= "D·vej na to po¯·d pozor!";
+	description	= "D√°vej na to po≈ô√°d pozor!";
 };                       
 
 FUNC int  DIA_Balor_Perm_Condition()
@@ -255,6 +255,6 @@ FUNC int  DIA_Balor_Perm_Condition()
 
 FUNC VOID  DIA_Balor_Perm_Info()
 {
-	AI_Output (other, self,"DIA_Balor_Perm_15_00"); //D·vej na to po¯·d pozor!
-	AI_Output (self, other,"DIA_Balor_Perm_01_01"); //JistÏ, co myslÌö, ûe tu dÏl·m? ée leûÌm na b¯iöe a kopu se do zadku?
+	AI_Output (other, self,"DIA_Balor_Perm_15_00"); //D√°vej na to po≈ô√°d pozor!
+	AI_Output (self, other,"DIA_Balor_Perm_01_01"); //Jistƒõ, co mysl√≠≈°, ≈æe tu dƒõl√°m? ≈Ωe le≈æ√≠m na b≈ôi≈°e a kopu se do zadku?
 };

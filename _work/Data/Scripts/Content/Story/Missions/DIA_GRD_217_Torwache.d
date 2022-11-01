@@ -44,6 +44,6 @@ FUNC INT DIA_Grd_217_First_Condition()
 FUNC VOID DIA_Grd_217_First_Info()
 {
 	AI_Output (other, self,"DIA_Grd_217_First_15_00"); //Zdar!
-	AI_Output (self, other,"DIA_Grd_217_First_06_01"); //Pohni zadkem! Pojï dál, nebo vypadni.. to je mi jedno. Hlavnì kdy mi zmizíš z oèí.
+	AI_Output (self, other,"DIA_Grd_217_First_06_01"); //Pohni zadkem! PojÄ dÃ¡l, nebo vypadni.. to je mi jedno. HlavnÄ› kdyÅ¾ mi zmizÃ­Å¡ z oÄÃ­.
 	AI_StopProcessInfos	( self );
 };

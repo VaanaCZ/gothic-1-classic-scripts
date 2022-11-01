@@ -18,7 +18,7 @@ FUNC int  Tpl_1401_GorNaKosh_Exit_Condition()
 
 FUNC VOID  Tpl_1401_GorNaKosh_Exit_Info()
 {
-	AI_Output			(self, other,"Tpl_1401_GorNaKosh_Exit_Info_13_02"); //Ké Spáè procitne!
+	AI_Output			(self, other,"Tpl_1401_GorNaKosh_Exit_Info_13_02"); //KÃ©Å¾ SpÃ¡Ä procitne!
 	AI_StopProcessInfos	( self );
 };
 
@@ -34,7 +34,7 @@ instance  Tpl_1401_GorNaKosh_SUGGEST (C_INFO)
 	information		= Tpl_1401_GorNaKosh_SUGGEST_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Vím, kde je èerví hnízdo."; 
+	description		= "VÃ­m, kde je ÄervÃ­ hnÃ­zdo."; 
 };
 
 FUNC int  Tpl_1401_GorNaKosh_SUGGEST_Condition()
@@ -49,14 +49,14 @@ FUNC int  Tpl_1401_GorNaKosh_SUGGEST_Condition()
 
 FUNC void  Tpl_1401_GorNaKosh_SUGGEST_Info()
 {
-	AI_Output			(other, self,"Tpl_1401_GorNaKosh_SUGGEST_Info_15_01"); //Vím, kde je èerví hnízdo. Jdu tam vzít nìco pro Kaloma, aby mohl pøipravit silnìjší lektvar.
-	AI_Output			(self, other,"Tpl_1401_GorNaKosh_SUGGEST_Info_13_02"); //Pak budeš potøebovat mé ostøí. Pøidám se k tobì.
-	AI_Output			(other, self,"Tpl_1401_GorNaKosh_SUGGEST_Info_15_03"); //Dobøe. Sejdeme se u velké chodby.
+	AI_Output			(other, self,"Tpl_1401_GorNaKosh_SUGGEST_Info_15_01"); //VÃ­m, kde je ÄervÃ­ hnÃ­zdo. Jdu tam vzÃ­t nÄ›co pro Kaloma, aby mohl pÅ™ipravit silnÄ›jÅ¡Ã­ lektvar.
+	AI_Output			(self, other,"Tpl_1401_GorNaKosh_SUGGEST_Info_13_02"); //Pak budeÅ¡ potÅ™ebovat mÃ© ostÅ™Ã­. PÅ™idÃ¡m se k tobÄ›.
+	AI_Output			(other, self,"Tpl_1401_GorNaKosh_SUGGEST_Info_15_03"); //DobÅ™e. Sejdeme se u velkÃ© chodby.
 	
 	Npc_ExchangeRoutine (self,"GATE");
 	Npc_SetPermAttitude (self,ATT_FRIENDLY); 
 	B_GiveXP			(XP_HireGorNaKosh);
-	B_LogEntry		(CH2_MCEggs,"Pøesvìdèil jsem templáøe Gora Na Koshe, aby se pøidal k  posádce u Asghanovıch vrat. Bude tam na mì èekat.");	
+	B_LogEntry		(CH2_MCEggs,"PÅ™esvÄ›dÄil jsem templÃ¡Å™e Gora Na Koshe, aby se pÅ™idal k  posÃ¡dce u AsghanovÃ½ch vrat. Bude tam na mÄ› Äekat.");	
 
 	AI_StopProcessInfos	(self);
 };
@@ -70,7 +70,7 @@ instance  Tpl_1401_GorNaKosh_INFO (C_INFO)
 	information		= Tpl_1401_GorNaKosh_INFO_Info;
 	important		= 0;
 	permanent		= 1;
-	description		= "Co tady dìláš?"; 
+	description		= "Co tady dÄ›lÃ¡Å¡?"; 
 };
 
 FUNC int  Tpl_1401_GorNaKosh_INFO_Condition()
@@ -83,13 +83,13 @@ FUNC int  Tpl_1401_GorNaKosh_INFO_Condition()
 
 FUNC void  Tpl_1401_GorNaKosh_INFO_Info()
 {
-	AI_Output			(other, self,"Tpl_1401_GorNaKosh_INFO_Info_15_01"); //Co tady dìláš?
-	AI_Output			(self, other,"Tpl_1401_GorNaKosh_INFO_Info_13_02"); //Lovím dùlní èervy.
-	AI_Output			(other, self,"Tpl_1401_GorNaKosh_INFO_Info_15_03"); //Mùeš mi nìco øíci o lovu èervù?
-	AI_Output			(self, other,"Tpl_1401_GorNaKosh_INFO_Info_13_04"); //Pøi lovu èervù si musíš pamatovat jednoduché pravidlo: kdy je spatøíš, bì k nim a zabij je, jak nejrychleji umíš.
-	AI_Output			(self, other,"Tpl_1401_GorNaKosh_INFO_Info_13_05"); //Bojuj beze strachu a zabíjej bez milosti.
+	AI_Output			(other, self,"Tpl_1401_GorNaKosh_INFO_Info_15_01"); //Co tady dÄ›lÃ¡Å¡?
+	AI_Output			(self, other,"Tpl_1401_GorNaKosh_INFO_Info_13_02"); //LovÃ­m dÅ¯lnÃ­ Äervy.
+	AI_Output			(other, self,"Tpl_1401_GorNaKosh_INFO_Info_15_03"); //MÅ¯Å¾eÅ¡ mi nÄ›co Å™Ã­ci o lovu ÄervÅ¯?
+	AI_Output			(self, other,"Tpl_1401_GorNaKosh_INFO_Info_13_04"); //PÅ™i lovu ÄervÅ¯ si musÃ­Å¡ pamatovat jednoduchÃ© pravidlo: kdyÅ¾ je spatÅ™Ã­Å¡, bÄ›Å¾ k nim a zabij je, jak nejrychleji umÃ­Å¡.
+	AI_Output			(self, other,"Tpl_1401_GorNaKosh_INFO_Info_13_05"); //Bojuj beze strachu a zabÃ­jej bez milosti.
 
-	AI_StopProcessInfos(self);		// SN:nur für die Vermeidung des Bugs, dass der letzte Satz in roter Schrift erscheint, und der InfoManager danach defekt ist
+	AI_StopProcessInfos(self);		// SN:nur fÃ¼r die Vermeidung des Bugs, dass der letzte Satz in roter Schrift erscheint, und der InfoManager danach defekt ist
 };
 
 // ***************** Infos *****************************
@@ -101,7 +101,7 @@ instance  Tpl_1401_GorNaKosh_CRAWLER (C_INFO)
 	information		= Tpl_1401_GorNaKosh_CRAWLER_Info;
 	important		= 0;
 	permanent		= 1;
-	description		= "Mùeš mi øíci nìco o tìch èervech?"; 
+	description		= "MÅ¯Å¾eÅ¡ mi Å™Ã­ci nÄ›co o tÄ›ch Äervech?"; 
 };
 
 FUNC int  Tpl_1401_GorNaKosh_CRAWLER_Condition()
@@ -114,12 +114,12 @@ FUNC int  Tpl_1401_GorNaKosh_CRAWLER_Condition()
 
 FUNC void  Tpl_1401_GorNaKosh_CRAWLER_Info()
 {
-	AI_Output			(other, self,"Tpl_1401_GorNaKosh_CRAWLER_Info_15_01"); //Mùeš mi øíci nìco o tìch èervech?
-	AI_Output			(self, other,"Tpl_1401_GorNaKosh_CRAWLER_Info_13_02"); //Chovají se instinktivnì, vše, co není èerv,  zabíjejí.
-	AI_Output			(self, other,"Tpl_1401_GorNaKosh_CRAWLER_Info_13_03"); //Tyhle vìdomosti pouij v boji proti nim.
+	AI_Output			(other, self,"Tpl_1401_GorNaKosh_CRAWLER_Info_15_01"); //MÅ¯Å¾eÅ¡ mi Å™Ã­ci nÄ›co o tÄ›ch Äervech?
+	AI_Output			(self, other,"Tpl_1401_GorNaKosh_CRAWLER_Info_13_02"); //ChovajÃ­ se instinktivnÄ›, vÅ¡e, co nenÃ­ Äerv,  zabÃ­jejÃ­.
+	AI_Output			(self, other,"Tpl_1401_GorNaKosh_CRAWLER_Info_13_03"); //Tyhle vÄ›domosti pouÅ¾ij v boji proti nim.
 }; 
 
-// ***************************** Die Königin ist tot, lang lebe die Königin ****************************************//
+// ***************************** Die KÃ¶nigin ist tot, lang lebe die KÃ¶nigin ****************************************//
 
 instance  Tpl_1401_GorNaKosh_VICTORY (C_INFO)
 {
@@ -128,7 +128,7 @@ instance  Tpl_1401_GorNaKosh_VICTORY (C_INFO)
 	information		= Tpl_1401_GorNaKosh_VICTORY_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Našel jsem èerví hnízdo!"; 
+	description		= "NaÅ¡el jsem ÄervÃ­ hnÃ­zdo!"; 
 };
 
 FUNC int  Tpl_1401_GorNaKosh_VICTORY_Condition()
@@ -141,7 +141,7 @@ FUNC int  Tpl_1401_GorNaKosh_VICTORY_Condition()
 };
 FUNC void  Tpl_1401_GorNaKosh_VICTORY_Info()
 {
-	AI_Output			(other, self,"Tpl_1401_GorNaKosh_VICTORY_Info_15_01"); //Našel jsem èerví hnízdo!
-	AI_Output			(self, other,"Tpl_1401_GorNaKosh_VICTORY_Info_13_02"); //Vıbornì! Teï se vrátíme do tábora a dokonèíme úkol. Cor Kalom nás bude oèekávat!
-	B_LogEntry			(CH2_MCEggs,"Mìl bych dát Cor Kalomovi vajíèka, na která èeká.");
+	AI_Output			(other, self,"Tpl_1401_GorNaKosh_VICTORY_Info_15_01"); //NaÅ¡el jsem ÄervÃ­ hnÃ­zdo!
+	AI_Output			(self, other,"Tpl_1401_GorNaKosh_VICTORY_Info_13_02"); //VÃ½bornÄ›! TeÄ se vrÃ¡tÃ­me do tÃ¡bora a dokonÄÃ­me Ãºkol. Cor Kalom nÃ¡s bude oÄekÃ¡vat!
+	B_LogEntry			(CH2_MCEggs,"MÄ›l bych dÃ¡t Cor Kalomovi vajÃ­Äka, na kterÃ¡ ÄekÃ¡.");
 };  

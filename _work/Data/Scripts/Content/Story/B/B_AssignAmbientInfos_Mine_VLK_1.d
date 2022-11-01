@@ -37,7 +37,7 @@ INSTANCE Info_Mine_Vlk_1_Mine (C_INFO) // E1
 	condition	= Info_Mine_Vlk_1_Mine_Condition;
 	information	= Info_Mine_Vlk_1_Mine_Info;
 	permanent	= 1;
-	description = "Øekni mi nìco o dole.";
+	description = "Å˜ekni mi nÄ›co o dole.";
 };                       
 
 FUNC INT Info_Mine_Vlk_1_Mine_Condition()
@@ -50,9 +50,9 @@ FUNC INT Info_Mine_Vlk_1_Mine_Condition()
 
 FUNC VOID Info_Mine_Vlk_1_Mine_Info()
 {
-	AI_Output(other,self,"Info_Mine_Vlk_1_Mine_15_00"); //Øekni mi nìco o dole.
-	AI_Output(self,other,"Info_Mine_Vlk_1_Mine_01_01"); //V jeskyních rostou houby a byliny. Snadno se tráví, ale nikdy se tím nenacpeš tak krásnì jako poøádnou flákotou masa!
-	AI_Output(self,other,"Info_Mine_Vlk_1_Mine_01_02"); //Èervi tak dobøe nechutnají. Taková havì.
+	AI_Output(other,self,"Info_Mine_Vlk_1_Mine_15_00"); //Å˜ekni mi nÄ›co o dole.
+	AI_Output(self,other,"Info_Mine_Vlk_1_Mine_01_01"); //V jeskynÃ­ch rostou houby a byliny. Snadno se trÃ¡vÃ­, ale nikdy se tÃ­m nenacpeÅ¡ tak krÃ¡snÄ› jako poÅ™Ã¡dnou flÃ¡kotou masa!
+	AI_Output(self,other,"Info_Mine_Vlk_1_Mine_01_02"); //ÄŒervi tak dobÅ™e nechutnajÃ­. TakovÃ¡ havÄ›Å¥.
 };
 
 // *************************************************************************
@@ -65,7 +65,7 @@ INSTANCE Info_Mine_Vlk_1_WichtigePersonen(C_INFO)
 	condition	= Info_Mine_Vlk_1_WichtigePersonen_Condition;
 	information	= Info_Mine_Vlk_1_WichtigePersonen_Info;
 	permanent	= 1;
-	description = "Kdo to tady má na starosti?";
+	description = "Kdo to tady mÃ¡ na starosti?";
 };                       
 
 FUNC INT Info_Mine_Vlk_1_WichtigePersonen_Condition()
@@ -78,8 +78,8 @@ FUNC INT Info_Mine_Vlk_1_WichtigePersonen_Condition()
 
 FUNC VOID Info_Mine_Vlk_1_WichtigePersonen_Info()
 {
-	AI_Output(other,self,"Info_Mine_Vlk_1_WichtigePersonen_15_00"); //Kdo tady velí?
-	AI_Output(self,other,"Info_Mine_Vlk_1_WichtigePersonen_01_01"); //Ian je mùj šéf. Organizuje pracovní síly a vymìòuje zboí s táborem. Pokud nìco chceš, mìl bys mu to øíci.
+	AI_Output(other,self,"Info_Mine_Vlk_1_WichtigePersonen_15_00"); //Kdo tady velÃ­?
+	AI_Output(self,other,"Info_Mine_Vlk_1_WichtigePersonen_01_01"); //Ian je mÅ¯j Å¡Ã©f. Organizuje pracovnÃ­ sÃ­ly a vymÄ›Åˆuje zboÅ¾Ã­ s tÃ¡borem. Pokud nÄ›co chceÅ¡, mÄ›l bys mu to Å™Ã­ci.
 };
 
 // *************************************************************************
@@ -92,7 +92,7 @@ INSTANCE Info_Mine_Vlk_1_Minecrawler(C_INFO)
 	condition	= Info_Mine_Vlk_1_Minecrawler_Condition;
 	information	= Info_Mine_Vlk_1_Minecrawler_Info;
 	permanent	= 1;
-	description = "Co víš o èervech?";
+	description = "Co vÃ­Å¡ o Äervech?";
 };                       
 
 FUNC INT Info_Mine_Vlk_1_Minecrawler_Condition()
@@ -105,8 +105,8 @@ FUNC INT Info_Mine_Vlk_1_Minecrawler_Condition()
 
 FUNC VOID Info_Mine_Vlk_1_Minecrawler_Info()
 {
-	AI_Output(other,self,"Info_Mine_Vlk_1_Minecrawler_15_00"); //Co víš o dùlních èervech?
-	AI_Output(self,other,"Info_Mine_Vlk_1_Minecrawler_01_01"); //Templáøi udìlali s Gomezem smlouvu. Zabijí èervy a pak si budou moci nechat jejich èelisti.
+	AI_Output(other,self,"Info_Mine_Vlk_1_Minecrawler_15_00"); //Co vÃ­Å¡ o dÅ¯lnÃ­ch Äervech?
+	AI_Output(self,other,"Info_Mine_Vlk_1_Minecrawler_01_01"); //TemplÃ¡Å™i udÄ›lali s Gomezem smlouvu. ZabijÃ­ Äervy a pak si budou moci nechat jejich Äelisti.
 	
 };
 
@@ -134,7 +134,7 @@ FUNC INT Info_Mine_Vlk_1_DieLage_Condition()
 FUNC VOID Info_Mine_Vlk_1_DieLage_Info()
 {
 	AI_Output(other,self,"Info_Mine_Vlk_1_DieLage_15_00"); //Jak to jde?
-	AI_Output(self,other,"Info_Mine_Vlk_1_DieLage_01_01"); //Spousta práce, ádnı odpoèinek. Tak se rychle ptej. Mám moc práce.
+	AI_Output(self,other,"Info_Mine_Vlk_1_DieLage_01_01"); //Spousta prÃ¡ce, Å¾Ã¡dnÃ½ odpoÄinek. Tak se rychle ptej. MÃ¡m moc prÃ¡ce.
 };
 
 // *************************************************************************

@@ -23,7 +23,7 @@ FUNC VOID DIA_BaalCadar_Exit_Info()
 };
 
 // ************************************************************
-// 					NICHT ansprechbar (Ungläubiger) 
+// 					NICHT ansprechbar (UnglÃ¤ubiger) 
 // ************************************************************
 	var int BaalCadar_Ansprechbar;
 	var int BaalCadar_Sakrileg;
@@ -54,28 +54,28 @@ FUNC VOID DIA_BaalCadar_NoTalk_Info()
 {	
 	Info_ClearChoices 	(DIA_BaalCadar_NoTalk);
 	Info_Addchoice 		(DIA_BaalCadar_NoTalk,DIALOG_ENDE					,DIA_BaalCadar_NoTalk_ENDE);
-	Info_Addchoice 		(DIA_BaalCadar_NoTalk,"Je všechno v poøádku, pøíteli?",DIA_BaalCadar_NoTalk_Imp);
-	Info_Addchoice 		(DIA_BaalCadar_NoTalk,"Spáè buï s tebou!",DIA_BaalCadar_NoTalk_Sleeper);
-	Info_Addchoice 		(DIA_BaalCadar_NoTalk,"Zdar! Jsem tu novı!",DIA_BaalCadar_NoTalk_Hi);
+	Info_Addchoice 		(DIA_BaalCadar_NoTalk,"Je vÅ¡echno v poÅ™Ã¡dku, pÅ™Ã­teli?",DIA_BaalCadar_NoTalk_Imp);
+	Info_Addchoice 		(DIA_BaalCadar_NoTalk,"SpÃ¡Ä buÄ s tebou!",DIA_BaalCadar_NoTalk_Sleeper);
+	Info_Addchoice 		(DIA_BaalCadar_NoTalk,"Zdar! Jsem tu novÃ½!",DIA_BaalCadar_NoTalk_Hi);
 };
 
 func void DIA_BaalCadar_NoTalk_Hi()
 {
-	AI_Output (other, self,"DIA_BaalCadar_NoTalk_Hi_15_00"); //Zdar! Jsem tu novı!
+	AI_Output (other, self,"DIA_BaalCadar_NoTalk_Hi_15_00"); //Zdar! Jsem tu novÃ½!
 	AI_Output (self, other,"DIA_BaalCadar_NoTalk_Hi_02_01"); //(vzdech)
 	BaalCadar_Sakrileg = TRUE;
 };
 
 func void DIA_BaalCadar_NoTalk_Sleeper()
 {
-	AI_Output (other, self,"DIA_BaalCadar_NoTalk_Sleeper_15_00"); //Spáè buï s tebou!
+	AI_Output (other, self,"DIA_BaalCadar_NoTalk_Sleeper_15_00"); //SpÃ¡Ä buÄ s tebou!
 	AI_Output (self, other,"DIA_BaalCadar_NoTalk_Sleeper_02_01"); //(vzdech)
 	BaalCadar_Sakrileg = TRUE;
 };
 
 func void DIA_BaalCadar_NoTalk_Imp()
 {
-	AI_Output (other, self,"DIA_BaalCadar_NoTalk_Imp_15_00"); //Je všechno v poøádku, pøíteli?
+	AI_Output (other, self,"DIA_BaalCadar_NoTalk_Imp_15_00"); //Je vÅ¡echno v poÅ™Ã¡dku, pÅ™Ã­teli?
 	AI_Output (self, other,"DIA_BaalCadar_NoTalk_Imp_02_01"); //(vzdech)
 	BaalCadar_Sakrileg = TRUE;
 };
@@ -88,13 +88,13 @@ func void DIA_BaalCadar_NoTalk_ENDE()
 /*
 
 
-	AI_Output (self, other,"Sit_1_PSI_BaalCadar_HypnoticTeacher_2FuncNo_02_01"); //Du solltest deinen Weg mit Bedacht wählen und nach reiflicher Überlegung. 
+	AI_Output (self, other,"Sit_1_PSI_BaalCadar_HypnoticTeacher_2FuncNo_02_01"); //Du solltest deinen Weg mit Bedacht wÃ¤hlen und nach reiflicher Ãœberlegung. 
 	AI_Output (self, other,"Sit_1_PSI_BaalCadar_HypnoticTeacher_2FuncNo_02_02"); //Bedenke wie du entscheidest. In den anderen Lagern bekommst zwar Schutz und Nahrung, aber ist es das, was du willst?
-	AI_Output (self, other,"Sit_1_PSI_BaalCadar_HypnoticTeacher_2FuncNo_15_03"); //Was erwartet mich, was es wert wäre, zu euch zu kommen?
-	AI_Output (self, other,"Sit_1_PSI_BaalCadar_HypnoticTeacher_2FuncNo_02_04"); //Ich könnte dir jetzt erzählen, das die Templer einen unbezwinglichen Willen haben,das die magische Macht der Gurus, die Vorstellungskraft von Feuer- und Wassermagiern bei weitem übersteigt.
+	AI_Output (self, other,"Sit_1_PSI_BaalCadar_HypnoticTeacher_2FuncNo_15_03"); //Was erwartet mich, was es wert wÃ¤re, zu euch zu kommen?
+	AI_Output (self, other,"Sit_1_PSI_BaalCadar_HypnoticTeacher_2FuncNo_02_04"); //Ich kÃ¶nnte dir jetzt erzÃ¤hlen, das die Templer einen unbezwinglichen Willen haben,das die magische Macht der Gurus, die Vorstellungskraft von Feuer- und Wassermagiern bei weitem Ã¼bersteigt.
 	AI_Output (self, other,"Sit_1_PSI_BaalCadar_HypnoticTeacher_2FuncNo_02_05"); //Das unsere Nahrung auch satt macht. Aber das ist es nicht, was diese Gemeinschaft ausmacht.
 	AI_Output (self, other,"Sit_1_PSI_BaalCadar_HypnoticTeacher_2FuncNo_02_06"); //Was dich hier erwartet, ist die Gabe. Du wirst einen Weg beschreiten, der dir sehr viel abverlangt.
-	AI_Output (self, other,"Sit_1_PSI_BaalCadar_HypnoticTeacher_2FuncNo_02_07"); //Aber das was du erreichen wirst ist eine Größe, eine Macht die dir Erleuchtung schenkt. Eine Macht, die dich zur Freiheit führt.
+	AI_Output (self, other,"Sit_1_PSI_BaalCadar_HypnoticTeacher_2FuncNo_02_07"); //Aber das was du erreichen wirst ist eine GrÃ¶ÃŸe, eine Macht die dir Erleuchtung schenkt. Eine Macht, die dich zur Freiheit fÃ¼hrt.
 	AI_Output (self, other,"Sit_1_PSI_BaalCadar_HypnoticTeacher_2FuncNo_02_08"); //Ist es nicht das, was du willst?... Freiheit?
 	AI_Output (self, other,"Sit_1_PSI_BaalCadar_HypnoticTeacher_2FuncNo_02_09"); //Also solltest du nicht die Frage stellen, warum du her kommen solltest, die Frage ist viel mehr, warum solltest du nicht?
 	Log_CreateTopic (GE_TeacherPSI,LOG_NOTE);
@@ -129,10 +129,10 @@ FUNC INT DIA_BaalCadar_SleepSpell_Condition()
 
 FUNC VOID DIA_BaalCadar_SleepSpell_Info()
 {
-	AI_Output (self, other,"DIA_BaalCadar_SleepSpell_02_00"); //Co dìláš? Pokouším se meditovat se svımi áky.
-	AI_Output (self, other,"DIA_BaalCadar_SleepSpell_02_01"); //Kdo tì nauèil pouívat Spáèovu magickou moc?
-	AI_Output (other, self,"DIA_BaalCadar_SleepSpell_15_02"); //Nikdo. Bylo to snadné.
-	AI_Output (self, other,"DIA_BaalCadar_SleepSpell_02_03"); //Zdá se, e jsi bystrı ák. Budu tì uèit.
+	AI_Output (self, other,"DIA_BaalCadar_SleepSpell_02_00"); //Co dÄ›lÃ¡Å¡? PokouÅ¡Ã­m se meditovat se svÃ½mi Å¾Ã¡ky.
+	AI_Output (self, other,"DIA_BaalCadar_SleepSpell_02_01"); //Kdo tÄ› nauÄil pouÅ¾Ã­vat SpÃ¡Äovu magickou moc?
+	AI_Output (other, self,"DIA_BaalCadar_SleepSpell_15_02"); //Nikdo. Bylo to snadnÃ©.
+	AI_Output (self, other,"DIA_BaalCadar_SleepSpell_02_03"); //ZdÃ¡ se, Å¾e jsi bystrÃ½ Å¾Ã¡k. Budu tÄ› uÄit.
 
 	BaalCadar_Ansprechbar = TRUE;
 	if	(Npc_GetTrueGuild(hero) == GIL_NONE)
@@ -140,7 +140,7 @@ FUNC VOID DIA_BaalCadar_SleepSpell_Info()
 		Log_CreateTopic		(CH1_JoinPsi,	LOG_MISSION);
 		Log_SetTopicStatus	(CH1_JoinPsi,	LOG_RUNNING);
 	};
-	B_LogEntry		(CH1_JoinPsi,"Baal Cadar mì má za vnímavého uènì! ");
+	B_LogEntry		(CH1_JoinPsi,"Baal Cadar mÄ› mÃ¡ za vnÃ­mavÃ©ho uÄnÄ›! ");
 	B_GiveXP		(XP_ImpressBaalCadar);
 };
 
@@ -154,7 +154,7 @@ instance  Gur_1208_BaalCadar_Teach (C_INFO)
 	condition		= Gur_1208_BaalCadar_Teach_Condition;
 	information		= Gur_1208_BaalCadar_Teach_Info;
 	permanent		= 1;
-	description		= "Chtìl bych se nauèit, jak zvìtšit sílu svıch kouzel. "; 
+	description		= "ChtÄ›l bych se nauÄit, jak zvÄ›tÅ¡it sÃ­lu svÃ½ch kouzel. "; 
 };
 
 FUNC int  Gur_1208_BaalCadar_Teach_Condition()
@@ -167,13 +167,13 @@ FUNC int  Gur_1208_BaalCadar_Teach_Condition()
 };
 FUNC void  Gur_1208_BaalCadar_Teach_Info()
 {
-	AI_Output (other, self,"Gur_1208_BaalCadar_Teach_Info_15_01"); //Chtìl bych se nauèit, jak zvìtšit sílu svého kouzla.
-	AI_Output (self, other,"Gur_1208_BaalCadar_Teach_Info_02_02"); //Klíèem je síla tvojí duše.
+	AI_Output (other, self,"Gur_1208_BaalCadar_Teach_Info_15_01"); //ChtÄ›l bych se nauÄit, jak zvÄ›tÅ¡it sÃ­lu svÃ©ho kouzla.
+	AI_Output (self, other,"Gur_1208_BaalCadar_Teach_Info_02_02"); //KlÃ­Äem je sÃ­la tvojÃ­ duÅ¡e.
 	
 	if (log_baalcadartrain == FALSE) 
 	{
 		Log_CreateTopic   	(GE_TeacherPSI,LOG_NOTE);
-		B_LogEntry			(GE_TeacherPSI,"Guru Baal Cadar mi mùe pomoci vylepšit MAGICKOU ENERGII.");
+		B_LogEntry			(GE_TeacherPSI,"Guru Baal Cadar mi mÅ¯Å¾e pomoci vylepÅ¡it MAGICKOU ENERGII.");
 		log_baalcadartrain = TRUE;
 	};
 	Info_ClearChoices	(Gur_1208_BaalCadar_Teach);
@@ -216,7 +216,7 @@ instance  Gur_1208_BaalCadar_FIRSTTEST (C_INFO)
 	information		= Gur_1208_BaalCadar_FIRSTTEST_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Nauè mì magii run."; 
+	description		= "NauÄ mÄ› magii run."; 
 };
 
 FUNC int  Gur_1208_BaalCadar_FIRSTTEST_Condition()
@@ -229,12 +229,12 @@ FUNC int  Gur_1208_BaalCadar_FIRSTTEST_Condition()
 };
 FUNC void  Gur_1208_BaalCadar_FIRSTTEST_Info()
 {
-	AI_Output (other, self,"Gur_1208_BaalCadar_FIRSTTEST_Info_15_01"); //Nauè mì magii run.
-	AI_Output (self, other,"Gur_1208_BaalCadar_FIRSTTEST_Info_02_02"); //Mnozí se nauèili jazyku run, ale jen nìkteøí pochopili jejich kouzlo.
-	AI_Output (self, other,"Gur_1208_BaalCadar_FIRSTTEST_Info_02_03"); //Pokusím se tì to nauèit.
+	AI_Output (other, self,"Gur_1208_BaalCadar_FIRSTTEST_Info_15_01"); //NauÄ mÄ› magii run.
+	AI_Output (self, other,"Gur_1208_BaalCadar_FIRSTTEST_Info_02_02"); //MnozÃ­ se nauÄili jazyku run, ale jen nÄ›kteÅ™Ã­ pochopili jejich kouzlo.
+	AI_Output (self, other,"Gur_1208_BaalCadar_FIRSTTEST_Info_02_03"); //PokusÃ­m se tÄ› to nauÄit.
 	
 	Log_CreateTopic (GE_TeacherPSI,LOG_NOTE);
-	B_LogEntry    	(GE_TeacherPSI,"Baal Cadar mì mùe nauèit magické KRUHY runové magie.");
+	B_LogEntry    	(GE_TeacherPSI,"Baal Cadar mÄ› mÅ¯Å¾e nauÄit magickÃ© KRUHY runovÃ© magie.");
 		
 };
 
@@ -249,7 +249,7 @@ instance  Gur_1208_BaalCadar_KREIS1 (C_INFO)
 	information		= Gur_1208_BaalCadar_KREIS1_Info;
 	important		= 0;
 	permanent		= 1;
-	description		= "Jsem pøipraven vstoupit do Prvního kruhu."; 
+	description		= "Jsem pÅ™ipraven vstoupit do PrvnÃ­ho kruhu."; 
 };
 
 FUNC int  Gur_1208_BaalCadar_KREIS1_Condition()
@@ -264,14 +264,14 @@ FUNC int  Gur_1208_BaalCadar_KREIS1_Condition()
 };
 FUNC void  Gur_1208_BaalCadar_KREIS1_Info()
 {
-	AI_Output (other, self,"Gur_1208_BaalCadar_KREIS1_Info_15_01"); //Jsem pøipraven vstoupit do Prvního kruhu.
+	AI_Output (other, self,"Gur_1208_BaalCadar_KREIS1_Info_15_01"); //Jsem pÅ™ipraven vstoupit do PrvnÃ­ho kruhu.
 	if (B_GiveSkill(other,NPC_TALENT_MAGE , 1, LPCOST_TALENT_MAGE_1))
 	{
-		AI_Output (self, other,"Gur_1208_BaalCadar_KREIS1_Info_02_02"); //Poslouchej má slova.
-		AI_Output (self, other,"Gur_1208_BaalCadar_KREIS1_Info_02_03"); //Pøed dlouhou dobou se zjevil Spáè a seslal lidstvu vizi.
-		AI_Output (self, other,"Gur_1208_BaalCadar_KREIS1_Info_02_04"); //Mnozí lidé však odmítali jeho znamení vnímat, nebo byli pøíliš zaslepeni touhou po rudì.
-		AI_Output (self, other,"Gur_1208_BaalCadar_KREIS1_Info_02_05"); //Jen Y´Berion  s hrstkou dalších se sebral a zaloil Bratrstvo.
-		AI_Output (self, other,"Gur_1208_BaalCadar_KREIS1_Info_02_06"); //V okamiku, kdy vyslyšeli Spáèovo poselství, se zrodil První kruh. Kouzlu run porozumìl kadı, kdo následoval Spáèe.
+		AI_Output (self, other,"Gur_1208_BaalCadar_KREIS1_Info_02_02"); //Poslouchej mÃ¡ slova.
+		AI_Output (self, other,"Gur_1208_BaalCadar_KREIS1_Info_02_03"); //PÅ™ed dlouhou dobou se zjevil SpÃ¡Ä a seslal lidstvu vizi.
+		AI_Output (self, other,"Gur_1208_BaalCadar_KREIS1_Info_02_04"); //MnozÃ­ lidÃ© vÅ¡ak odmÃ­tali jeho znamenÃ­ vnÃ­mat, neboÅ¥ byli pÅ™Ã­liÅ¡ zaslepeni touhou po rudÄ›.
+		AI_Output (self, other,"Gur_1208_BaalCadar_KREIS1_Info_02_05"); //Jen YÂ´Berion  s hrstkou dalÅ¡Ã­ch se sebral a zaloÅ¾il Bratrstvo.
+		AI_Output (self, other,"Gur_1208_BaalCadar_KREIS1_Info_02_06"); //V okamÅ¾iku, kdy vyslyÅ¡eli SpÃ¡Äovo poselstvÃ­, se zrodil PrvnÃ­ kruh. Kouzlu run porozumÄ›l kaÅ¾dÃ½, kdo nÃ¡sledoval SpÃ¡Äe.
 		Gur_1208_BaalCadar_KREIS1.permanent = 0;
 	};
 	AI_StopProcessInfos	( self );
@@ -288,7 +288,7 @@ instance  Gur_1208_BaalCadar_KREIS2 (C_INFO)
 	information		= Gur_1208_BaalCadar_KREIS2_Info;
 	important		= 0;
 	permanent		= 1;
-	description		= "Jsem pøipraven vstoupit do Druhého kruhu."; 
+	description		= "Jsem pÅ™ipraven vstoupit do DruhÃ©ho kruhu."; 
 };
 
 FUNC int  Gur_1208_BaalCadar_KREIS2_Condition()
@@ -302,14 +302,14 @@ FUNC int  Gur_1208_BaalCadar_KREIS2_Condition()
 };
 FUNC void  Gur_1208_BaalCadar_KREIS2_Info()
 {
-	AI_Output (other, self,"Gur_1208_BaalCadar_KREIS2_Info_15_01"); //Jsem pøipraven vstoupit do Druhého kruhu.
+	AI_Output (other, self,"Gur_1208_BaalCadar_KREIS2_Info_15_01"); //Jsem pÅ™ipraven vstoupit do DruhÃ©ho kruhu.
 	if (B_GiveSkill(other,NPC_TALENT_MAGE , 2,LPCOST_TALENT_MAGE_2))
 	{
-		AI_Output (self, other,"Gur_1208_BaalCadar_KREIS2_Info_02_02"); //Pak naslouchej a vìz.
-		AI_Output (self, other,"Gur_1208_BaalCadar_KREIS2_Info_02_03"); //Spáè dovedl Y´Beriona a jeho vìøící áky na toto místo, kde se usadili.
-		AI_Output (self, other,"Gur_1208_BaalCadar_KREIS2_Info_02_04"); //Pracovali bez odpoèinku - dny, tıdny, mìsíce. Vyrostl Novı tábor. Pøidávali se k nìmu noví a noví lidé, kteøí následovali Spáèovo poselství.
-		AI_Output (self, other,"Gur_1208_BaalCadar_KREIS2_Info_02_05"); //Spoleènì se pak pokusili o spojení se Spáèem na duchovní úrovni.
-		AI_Output (self, other,"Gur_1208_BaalCadar_KREIS2_Info_02_06"); //Tak se zrodil Druhı kruh.
+		AI_Output (self, other,"Gur_1208_BaalCadar_KREIS2_Info_02_02"); //Pak naslouchej a vÄ›z.
+		AI_Output (self, other,"Gur_1208_BaalCadar_KREIS2_Info_02_03"); //SpÃ¡Ä dovedl YÂ´Beriona a jeho vÄ›Å™Ã­cÃ­ Å¾Ã¡ky na toto mÃ­sto, kde se usadili.
+		AI_Output (self, other,"Gur_1208_BaalCadar_KREIS2_Info_02_04"); //Pracovali bez odpoÄinku - dny, tÃ½dny, mÄ›sÃ­ce. Vyrostl NovÃ½ tÃ¡bor. PÅ™idÃ¡vali se k nÄ›mu novÃ­ a novÃ­ lidÃ©, kteÅ™Ã­ nÃ¡sledovali SpÃ¡Äovo poselstvÃ­.
+		AI_Output (self, other,"Gur_1208_BaalCadar_KREIS2_Info_02_05"); //SpoleÄnÄ› se pak pokusili o spojenÃ­ se SpÃ¡Äem na duchovnÃ­ Ãºrovni.
+		AI_Output (self, other,"Gur_1208_BaalCadar_KREIS2_Info_02_06"); //Tak se zrodil DruhÃ½ kruh.
 		Gur_1208_BaalCadar_KREIS2.permanent = 0;
 	};
 	AI_StopProcessInfos	( self );
@@ -325,7 +325,7 @@ instance  Gur_1208_BaalCadar_KREIS3 (C_INFO)
 	information		= Gur_1208_BaalCadar_KREIS3_Info;
 	important		= 0;
 	permanent		= 1;
-	description		= "Jsem pøipraven vstoupit do Tøetího kruhu."; 
+	description		= "Jsem pÅ™ipraven vstoupit do TÅ™etÃ­ho kruhu."; 
 };
 
 FUNC int  Gur_1208_BaalCadar_KREIS3_Condition()
@@ -339,14 +339,14 @@ FUNC int  Gur_1208_BaalCadar_KREIS3_Condition()
 };
 FUNC void  Gur_1208_BaalCadar_KREIS3_Info()
 {
-	AI_Output (other, self,"Gur_1208_BaalCadar_KREIS3_Info_15_01"); //Jsem pøipraven vstoupit do Tøetího kruhu.
+	AI_Output (other, self,"Gur_1208_BaalCadar_KREIS3_Info_15_01"); //Jsem pÅ™ipraven vstoupit do TÅ™etÃ­ho kruhu.
 	if (B_GiveSkill(other,NPC_TALENT_MAGE , 3, LPCOST_TALENT_MAGE_3))
 	{
 		AI_Output (self, other,"Gur_1208_BaalCadar_KREIS3_Info_02_02"); //Zapamatuj si toto:
-		AI_Output (self, other,"Gur_1208_BaalCadar_KREIS3_Info_02_03"); //Vize se staly jasnìjší, ale síla Bratrstva nestaèila pro navázání spojení.
-		AI_Output (self, other,"Gur_1208_BaalCadar_KREIS3_Info_02_04"); //Jeden z Guru, alchymista, ten problém vyøešil. Pøipravil lektvar extrahovanı z vımìšku z èelisti dùlního èerva. Bratøi pak spojili své modlitby a jejich duchovní síla se poprvé sjednotila.
-		AI_Output (self, other,"Gur_1208_BaalCadar_KREIS3_Info_02_05"); //V tu dobu se novicové vydali do táborù, aby tam zvìstovali Spáèovo uèení a pøesvìdèovali nevìrce o víøe.
-		AI_Output (self, other,"Gur_1208_BaalCadar_KREIS3_Info_02_06"); //Tak byl dovršen Tøetí kruh.
+		AI_Output (self, other,"Gur_1208_BaalCadar_KREIS3_Info_02_03"); //Vize se staly jasnÄ›jÅ¡Ã­, ale sÃ­la Bratrstva nestaÄila pro navÃ¡zÃ¡nÃ­ spojenÃ­.
+		AI_Output (self, other,"Gur_1208_BaalCadar_KREIS3_Info_02_04"); //Jeden z Guru, alchymista, ten problÃ©m vyÅ™eÅ¡il. PÅ™ipravil lektvar extrahovanÃ½ z vÃ½mÄ›Å¡ku z Äelisti dÅ¯lnÃ­ho Äerva. BratÅ™i pak spojili svÃ© modlitby a jejich duchovnÃ­ sÃ­la se poprvÃ© sjednotila.
+		AI_Output (self, other,"Gur_1208_BaalCadar_KREIS3_Info_02_05"); //V tu dobu se novicovÃ© vydali do tÃ¡borÅ¯, aby tam zvÄ›stovali SpÃ¡Äovo uÄenÃ­ a pÅ™esvÄ›dÄovali nevÄ›rce o vÃ­Å™e.
+		AI_Output (self, other,"Gur_1208_BaalCadar_KREIS3_Info_02_06"); //Tak byl dovrÅ¡en TÅ™etÃ­ kruh.
 	};
 	AI_StopProcessInfos	( self );
 };
@@ -361,7 +361,7 @@ instance  Gur_1208_BaalCadar_KREIS4 (C_INFO)
 	information		= Gur_1208_BaalCadar_KREIS4_Info;
 	important		= 0;
 	permanent		= 1;
-	description		= "Jsem pøipraven vstoupit do Pátého kruhu."; 
+	description		= "Jsem pÅ™ipraven vstoupit do PÃ¡tÃ©ho kruhu."; 
 };
 
 FUNC int  Gur_1208_BaalCadar_KREIS4_Condition()
@@ -375,14 +375,14 @@ FUNC int  Gur_1208_BaalCadar_KREIS4_Condition()
 };
 FUNC void  Gur_1208_BaalCadar_KREIS4_Info()
 {
-	AI_Output (other, self,"Gur_1208_BaalCadar_KREIS4_Info_15_01"); //Jsem pøipraven vstoupit do Pátého kruhu.
+	AI_Output (other, self,"Gur_1208_BaalCadar_KREIS4_Info_15_01"); //Jsem pÅ™ipraven vstoupit do PÃ¡tÃ©ho kruhu.
 	if (B_GiveSkill(other,NPC_TALENT_MAGE , 4, LPCOST_TALENT_MAGE_4))
 	{
-		AI_Output (self, other,"Gur_1208_BaalCadar_KREIS4_Info_02_02"); //Ubìhla dlouhá doba od zaloení tábora. Mnoho se toho zmìnilo.
-		AI_Output (self, other,"Gur_1208_BaalCadar_KREIS4_Info_02_03"); //Víra zesílila, byla upevòována a šíøena.
-		AI_Output (self, other,"Gur_1208_BaalCadar_KREIS4_Info_02_04"); //Nezapomnìli jsme však na naše poslání. Nevzdávali jsme se pokusù o vzıvání Spáèe.
-		AI_Output (self, other,"Gur_1208_BaalCadar_KREIS4_Info_02_05"); //Vytrvalost a síla víry pøedstavují Ètvrtı kruh.
-		AI_Output (self, other,"Gur_1208_BaalCadar_KREIS4_Info_02_06"); //Teï víš všechno, co bratr potøebuje o kouzlech vìdìt. Jsi dobrı ák.
+		AI_Output (self, other,"Gur_1208_BaalCadar_KREIS4_Info_02_02"); //UbÄ›hla dlouhÃ¡ doba od zaloÅ¾enÃ­ tÃ¡bora. Mnoho se toho zmÄ›nilo.
+		AI_Output (self, other,"Gur_1208_BaalCadar_KREIS4_Info_02_03"); //VÃ­ra zesÃ­lila, byla upevÅˆovÃ¡na a Å¡Ã­Å™ena.
+		AI_Output (self, other,"Gur_1208_BaalCadar_KREIS4_Info_02_04"); //NezapomnÄ›li jsme vÅ¡ak na naÅ¡e poslÃ¡nÃ­. NevzdÃ¡vali jsme se pokusÅ¯ o vzÃ½vÃ¡nÃ­ SpÃ¡Äe.
+		AI_Output (self, other,"Gur_1208_BaalCadar_KREIS4_Info_02_05"); //Vytrvalost a sÃ­la vÃ­ry pÅ™edstavujÃ­ ÄŒtvrtÃ½ kruh.
+		AI_Output (self, other,"Gur_1208_BaalCadar_KREIS4_Info_02_06"); //TeÄ vÃ­Å¡ vÅ¡echno, co bratr potÅ™ebuje o kouzlech vÄ›dÄ›t. Jsi dobrÃ½ Å¾Ã¡k.
 		Gur_1208_BaalCadar_KREIS4.permanent = 0;
 	};
 
@@ -414,10 +414,10 @@ FUNC void  Gur_1208_BaalCadar_SELLSTUFF_Info()
 	if  (log_baalcadarsell == FALSE)
 	{
 		Log_CreateTopic   	(GE_TraderPSI,LOG_NOTE);
-		B_LogEntry			(GE_TraderPSI,"Guru Baal Cadar prodává RUNY, KOUZELNÉ SVITKY, LEKTVARY, AMULETY a PRSTENY.");
+		B_LogEntry			(GE_TraderPSI,"Guru Baal Cadar prodÃ¡vÃ¡ RUNY, KOUZELNÃ‰ SVITKY, LEKTVARY, AMULETY a PRSTENY.");
 		log_baalcadarsell = TRUE;
 	};	
-	AI_Output (other, self,"Gur_1208_BaalCadar_SELLSTUFF_Info_15_01"); //Rád bych získal magické spisy.
+	AI_Output (other, self,"Gur_1208_BaalCadar_SELLSTUFF_Info_15_01"); //RÃ¡d bych zÃ­skal magickÃ© spisy.
 
 };  
 

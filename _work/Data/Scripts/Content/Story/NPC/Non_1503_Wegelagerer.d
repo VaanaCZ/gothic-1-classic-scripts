@@ -3,7 +3,7 @@ instance Non_1503_Wegelagerer (Npc_Default)
 {
 	//-------- primary data --------
 	
-	name 		=		"Tul·k";
+	name 		=		"Tul√°k";
 	npctype 	=		npctype_ambient;
 	guild 		=		GIL_NONE;      
 	level 		=		9;

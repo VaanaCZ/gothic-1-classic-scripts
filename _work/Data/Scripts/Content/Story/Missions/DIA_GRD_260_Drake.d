@@ -18,7 +18,7 @@ FUNC int  Grd_260_Drake_Exit_Condition()
 
 FUNC VOID  Grd_260_Drake_Exit_Info()
 {
-	AI_Output			(other,	self,"Info_Exit_Info_15_01"); //Ještì se uvidíme.
+	AI_Output			(other,	self,"Info_Exit_Info_15_01"); //JeÅ¡tÄ› se uvidÃ­me.
 	AI_StopProcessInfos	( self );
 };
 /**************** GEFAHREN *********************/
@@ -30,7 +30,7 @@ INSTANCE  Grd_260_Drake_Gefahr (C_INFO)	//E1
 	information		= Grd_260_Drake_Gefahr_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Na co si musím dát v dole pozor?";
+	description		= "Na co si musÃ­m dÃ¡t v dole pozor?";
 };
 
 FUNC INT  Grd_260_Drake_Gefahr_Condition()
@@ -41,12 +41,12 @@ FUNC INT  Grd_260_Drake_Gefahr_Condition()
 func VOID  Grd_260_Drake_Gefahr_Info()
 {
 
-	AI_Output			(other,self,"Grd_260_Drake_Gefahr_Info_15_01");//Na co si musím dát v dole pozor?
-	AI_Output			(self,other,"Grd_260_Drake_Gefahr_Info_11_02");//Hlavnì na dùlní èervy. Nebezpeèné bestie.
-	AI_Output			(self,other,"Grd_260_Drake_Gefahr_Info_11_03");//Museli jsme se kvùli nim vzdát dvou jeskyní. Serali u pár kopáèù.
-	AI_Output			(other,self,"Grd_260_Drake_Gefahr_Info_15_04");//Vyprávìj mi o tìch èervech.
-	AI_Output			(self,other,"Grd_260_Drake_Gefahr_Info_11_05");//Och, kdy já mám tak sucho na jazyku...
-	AI_Output			(self,other,"Grd_260_Drake_Gefahr_Info_11_06");//Pøines mi pivo a já ti za to povím nìco o tìch èervech.
+	AI_Output			(other,self,"Grd_260_Drake_Gefahr_Info_15_01");//Na co si musÃ­m dÃ¡t v dole pozor?
+	AI_Output			(self,other,"Grd_260_Drake_Gefahr_Info_11_02");//HlavnÄ› na dÅ¯lnÃ­ Äervy. NebezpeÄnÃ© bestie.
+	AI_Output			(self,other,"Grd_260_Drake_Gefahr_Info_11_03");//Museli jsme se kvÅ¯li nim vzdÃ¡t dvou jeskynÃ­. SeÅ¾rali uÅ¾ pÃ¡r kopÃ¡ÄÅ¯.
+	AI_Output			(other,self,"Grd_260_Drake_Gefahr_Info_15_04");//VyprÃ¡vÄ›j mi o tÄ›ch Äervech.
+	AI_Output			(self,other,"Grd_260_Drake_Gefahr_Info_11_05");//Och, kdyÅ¾ jÃ¡ mÃ¡m tak sucho na jazyku...
+	AI_Output			(self,other,"Grd_260_Drake_Gefahr_Info_11_06");//PÅ™ines mi pivo a jÃ¡ ti za to povÃ­m nÄ›co o tÄ›ch Äervech.
 
 
 };
@@ -73,7 +73,7 @@ FUNC void Grd_260_Drake_Crawler_Okay_Info()
 {
 	if	( Npc_HasItems (hero,ItFobeer) )
 	{
-		AI_Output			(hero,self,"Grd_260_Drake_Crawler_Okay_15_01");//Tady, napij se na moje zdraví!
+		AI_Output			(hero,self,"Grd_260_Drake_Crawler_Okay_15_01");//Tady, napij se na moje zdravÃ­!
 
 		B_GiveInvItems		(hero, self, ItFoBeer, 1);
 		if ( C_BodystateContains(self, BS_SIT) )
@@ -83,15 +83,15 @@ FUNC void Grd_260_Drake_Crawler_Okay_Info()
 		};
 		AI_UseItem			(self,ItFobeer);
 
-		AI_Output			(self,hero,"Grd_260_Drake_Crawler_Okay_11_02");//Díky. Tak dobøe. Èervi ijou ve velkıch skupinách, vìtšinou v postranních jeskyních.
-		AI_Output			(self,hero,"Grd_260_Drake_Crawler_Okay_11_03");//V hlavní šachtì na nás ještì nikdy nezaútoèili. Kdybys ale nìjakého vidìl, uteè!
-		AI_Output			(self,hero,"Grd_260_Drake_Crawler_Okay_11_04");//Nebo se postav zády ke stìnì. Jedinì tak máš šanci!
+		AI_Output			(self,hero,"Grd_260_Drake_Crawler_Okay_11_02");//DÃ­ky. Tak dobÅ™e. ÄŒervi Å¾ijou ve velkÃ½ch skupinÃ¡ch, vÄ›tÅ¡inou v postrannÃ­ch jeskynÃ­ch.
+		AI_Output			(self,hero,"Grd_260_Drake_Crawler_Okay_11_03");//V hlavnÃ­ Å¡achtÄ› na nÃ¡s jeÅ¡tÄ› nikdy nezaÃºtoÄili. Kdybys ale nÄ›jakÃ©ho vidÄ›l, uteÄ!
+		AI_Output			(self,hero,"Grd_260_Drake_Crawler_Okay_11_04");//Nebo se postav zÃ¡dy ke stÄ›nÄ›. JedinÄ› tak mÃ¡Å¡ Å¡anci!
 
 		//Grd_260_Drake_Crawler_Okay.permanent = 0;
 	}
 	else
 	{
-		AI_Output			(self,other,"Grd_260_Drake_Crawler_Okay_11_06");//Dìláš si ze mì blázny? Vra se, a budeš mít nìjaké pivo.
+		AI_Output			(self,other,"Grd_260_Drake_Crawler_Okay_11_06");//DÄ›lÃ¡Å¡ si ze mÄ› blÃ¡zny? VraÅ¥ se, aÅ¾ budeÅ¡ mÃ­t nÄ›jakÃ© pivo.
    		Grd_260_Drake_Crawler_Okay.permanent = 1;
    };
 };
@@ -104,7 +104,7 @@ instance  Grd_260_Drake_Mine (C_INFO) //E1
 	information		= Grd_260_Drake_Mine_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Mùeš mi øíci nìco o tom dole?";
+	description		= "MÅ¯Å¾eÅ¡ mi Å™Ã­ci nÄ›co o tom dole?";
 };
 
 FUNC int  Grd_260_Drake_Mine_Condition()
@@ -113,10 +113,10 @@ FUNC int  Grd_260_Drake_Mine_Condition()
 };
 func void Grd_260_Drake_Mine_Info ()
 {
-	AI_Output			(other,self,"Grd_260_Drake_Mine_Info_15_01");//Mùeš mi øíci nìco o tom dole?
-	AI_Output			(self,other,"Grd_260_Drake_Mine_Info_11_02");//Dobrá, ta èást, v které právì jsme, je v souèasnosti hlavní šachta. Po systému úzkıch mùstkù se dostaneš a na dno.
-	AI_Output			(self,other,"Grd_260_Drake_Mine_Info_11_03");//Magická ruda se kope všude. Musíš bıt ale opatrnı, je tady spousta dùlních èervù.
-	AI_Output			(self,other,"Grd_260_Drake_Mine_Info_11_04");//Pøímo na dnì je tavírna. Tady tavíme èást rudy pro místní pouití.
+	AI_Output			(other,self,"Grd_260_Drake_Mine_Info_15_01");//MÅ¯Å¾eÅ¡ mi Å™Ã­ci nÄ›co o tom dole?
+	AI_Output			(self,other,"Grd_260_Drake_Mine_Info_11_02");//DobrÃ¡, ta ÄÃ¡st, v kterÃ© prÃ¡vÄ› jsme, je v souÄasnosti hlavnÃ­ Å¡achta. Po systÃ©mu ÃºzkÃ½ch mÅ¯stkÅ¯ se dostaneÅ¡ aÅ¾ na dno.
+	AI_Output			(self,other,"Grd_260_Drake_Mine_Info_11_03");//MagickÃ¡ ruda se kope vÅ¡ude. MusÃ­Å¡ bÃ½t ale opatrnÃ½, je tady spousta dÅ¯lnÃ­ch ÄervÅ¯.
+	AI_Output			(self,other,"Grd_260_Drake_Mine_Info_11_04");//PÅ™Ã­mo na dnÄ› je tavÃ­rna. Tady tavÃ­me ÄÃ¡st rudy pro mÃ­stnÃ­ pouÅ¾itÃ­.
 
 
 };
@@ -128,7 +128,7 @@ instance  Grd_260_Drake_Mine_Mehr (C_INFO) //E1
 	information		= Grd_260_Drake_Mine_Mehr_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Øekni mi víc o tom dolu!";
+	description		= "Å˜ekni mi vÃ­c o tom dolu!";
 };
 
 FUNC int  Grd_260_Drake_Mine_Mehr_Condition()
@@ -140,9 +140,9 @@ FUNC int  Grd_260_Drake_Mine_Mehr_Condition()
 };
 func void  Grd_260_Drake_Mine_Mehr_Info	()
 {
-	AI_Output			(other,self,"Grd_260_Drake_Mine_Mehr_Info_15_01");//Øekni mi o tom ještì víc!
-	AI_Output			(self,other,"Grd_260_Drake_Mine_Mehr_Info_11_02");//Kdy chceš vìdìt víc, zajdi za Viperem. To je taviè.
-	AI_Output			(self,other,"Grd_260_Drake_Mine_Mehr_Info_11_03");//Nebo øekni Ianovi. To je šéf. Organizuje práci v celém dole.
+	AI_Output			(other,self,"Grd_260_Drake_Mine_Mehr_Info_15_01");//Å˜ekni mi o tom jeÅ¡tÄ› vÃ­c!
+	AI_Output			(self,other,"Grd_260_Drake_Mine_Mehr_Info_11_02");//KdyÅ¾ chceÅ¡ vÄ›dÄ›t vÃ­c, zajdi za Viperem. To je taviÄ.
+	AI_Output			(self,other,"Grd_260_Drake_Mine_Mehr_Info_11_03");//Nebo Å™ekni Ianovi. To je Å¡Ã©f. Organizuje prÃ¡ci v celÃ©m dole.
 	
 };
 
@@ -168,10 +168,10 @@ FUNC int  Grd_260_Drake_Ian_Condition()
 FUNC void  Grd_260_Drake_Ian_Info()
 {
 	AI_Output			(other,self,"Grd_260_Drake_Ian_Info_15_01");//Kde najdu Iana?
-	AI_Output			(self,other,"Grd_260_Drake_Ian_Info_11_02");//Je pøímo uprostøed hlavní šachty, za skladištìm.
-	AI_Output			(self,other,"Grd_260_Drake_Ian_Info_11_03");//Jo, a ještì nìco - znáš Thoruse, e jo? Pus't ho z hlavy!
-	AI_Output			(self,other,"Grd_260_Drake_Ian_Info_11_04");//Jedinı, kdo tady má co øíci, je Ian. On je tu šéf.
-	AI_Output			(self,other,"Grd_260_Drake_Ian_Info_11_05");//Pokud s ním budeš mít tìkosti, budeš je mít s náma se všema! Rozumíš?
+	AI_Output			(self,other,"Grd_260_Drake_Ian_Info_11_02");//Je pÅ™Ã­mo uprostÅ™ed hlavnÃ­ Å¡achty, za skladiÅ¡tÄ›m.
+	AI_Output			(self,other,"Grd_260_Drake_Ian_Info_11_03");//Jo, a jeÅ¡tÄ› nÄ›co - znÃ¡Å¡ Thoruse, Å¾e jo? Pus't ho z hlavy!
+	AI_Output			(self,other,"Grd_260_Drake_Ian_Info_11_04");//JedinÃ½, kdo tady mÃ¡ co Å™Ã­ci, je Ian. On je tu Å¡Ã©f.
+	AI_Output			(self,other,"Grd_260_Drake_Ian_Info_11_05");//Pokud s nÃ­m budeÅ¡ mÃ­t tÄ›Å¾kosti, budeÅ¡ je mÃ­t s nÃ¡ma se vÅ¡ema! RozumÃ­Å¡?
 };	 
 
 /*------------------------------------------------------------------------
@@ -197,10 +197,10 @@ FUNC int  Grd_260_Drake_GARDEAUFNAHME_Condition()
 };
 func void  Grd_260_Drake_GARDEAUFNAHME_Info()
 {
-	AI_Output (self, other,"Grd_260_Drake_GARDEAUFNAHME_Info_11_01"); //Hej, s tìmi èervy jsi odvedl skvìlou práci! Tím jsi si zaslouil jmenování ke stráím.
-	AI_Output (self, other,"Grd_260_Drake_GARDEAUFNAHME_Info_11_02"); //Bì do Starého tábora a øekni to Thorusovi!
+	AI_Output (self, other,"Grd_260_Drake_GARDEAUFNAHME_Info_11_01"); //Hej, s tÄ›mi Äervy jsi odvedl skvÄ›lou prÃ¡ci! TÃ­m jsi si zaslouÅ¾il jmenovÃ¡nÃ­ ke strÃ¡Å¾Ã­m.
+	AI_Output (self, other,"Grd_260_Drake_GARDEAUFNAHME_Info_11_02"); //BÄ›Å¾ do StarÃ©ho tÃ¡bora a Å™ekni to Thorusovi!
 
 	Log_CreateTopic (GE_BecomeGuard,LOG_NOTE);
-	B_LogEntry (GE_BecomeGuard,"Jakmile pøinesu ta vajíèka, musím si promluvit s Thorusem. Moná mì pøijme ke stráím.");
+	B_LogEntry (GE_BecomeGuard,"Jakmile pÅ™inesu ta vajÃ­Äka, musÃ­m si promluvit s Thorusem. MoÅ¾nÃ¡ mÄ› pÅ™ijme ke strÃ¡Å¾Ã­m.");
 };
 

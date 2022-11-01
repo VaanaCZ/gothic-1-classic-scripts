@@ -37,7 +37,7 @@ INSTANCE Info_Bau_4_WichtigePersonen(C_INFO)
 	condition	= Info_Bau_4_WichtigePersonen_Condition;
 	information	= Info_Bau_4_WichtigePersonen_Info;
 	permanent	= 1;
-	description = "Máte nìjakého vùdce?";
+	description = "MÃ¡te nÄ›jakÃ©ho vÅ¯dce?";
 };                       
 
 FUNC INT Info_Bau_4_WichtigePersonen_Condition()
@@ -47,9 +47,9 @@ FUNC INT Info_Bau_4_WichtigePersonen_Condition()
 
 FUNC VOID Info_Bau_4_WichtigePersonen_Info()
 {
-	AI_Output(other,self,"Info_Bau_4_WichtigePersonen_15_00"); //Máte nìjakého vùdce?
-	AI_Output(self,other,"Info_Bau_4_WichtigePersonen_04_01"); //Rıovı Lord je nìco jako náš vùdce. Ale vìtšina z nás pro nìj pracuje jen ze strachu z nìho a z jeho hrdloøezù.
-	AI_Output(self,other,"Info_Bau_4_WichtigePersonen_04_02"); //Já ale ne. U jsem tu nìjakıch pár let, protoe jsem mìl u dost vıpraskù od tìch lotrù z tábora... rıová pole jsou pro mì to pravé.
+	AI_Output(other,self,"Info_Bau_4_WichtigePersonen_15_00"); //MÃ¡te nÄ›jakÃ©ho vÅ¯dce?
+	AI_Output(self,other,"Info_Bau_4_WichtigePersonen_04_01"); //RÃ½Å¾ovÃ½ Lord je nÄ›co jako nÃ¡Å¡ vÅ¯dce. Ale vÄ›tÅ¡ina z nÃ¡s pro nÄ›j pracuje jen ze strachu z nÄ›ho a z jeho hrdloÅ™ezÅ¯.
+	AI_Output(self,other,"Info_Bau_4_WichtigePersonen_04_02"); //JÃ¡ ale ne. UÅ¾ jsem tu nÄ›jakÃ½ch pÃ¡r let, protoÅ¾e jsem mÄ›l uÅ¾ dost vÃ½praskÅ¯ od tÄ›ch lotrÅ¯ z tÃ¡bora... rÃ½Å¾ovÃ¡ pole jsou pro mÄ› to pravÃ©.
 	var C_NPC Ricelord;			Ricelord	= Hlp_GetNpc(Bau_900_Ricelord);
 	Ricelord.aivar[AIV_FINDABLE] = TRUE;	
 };
@@ -64,7 +64,7 @@ INSTANCE Info_Bau_4_DasLager(C_INFO)
 	condition	= Info_Bau_4_DasLager_Condition;
 	information	= Info_Bau_4_DasLager_Info;
 	permanent	= 1;
-	description = "Je nìco, co bych mìl vìdìt o tomhle místì?";
+	description = "Je nÄ›co, co bych mÄ›l vÄ›dÄ›t o tomhle mÃ­stÄ›?";
 };                       
 
 FUNC INT Info_Bau_4_DasLager_Condition()
@@ -74,8 +74,8 @@ FUNC INT Info_Bau_4_DasLager_Condition()
 
 FUNC VOID Info_Bau_4_DasLager_Info()
 {
-	AI_Output(other,self,"Info_Bau_4_DasLager_15_00"); //Je nìco, co bych mìl o tomhle místì vìdìt?
-	AI_Output(self,other,"Info_Bau_4_DasLager_04_01"); //Dávej si v táboøe pozor, chlapèe. Motá se tam spousta zabijákù, kteøí se nemohou doèkat, a si podají nováèky, jako jsi ty.
+	AI_Output(other,self,"Info_Bau_4_DasLager_15_00"); //Je nÄ›co, co bych mÄ›l o tomhle mÃ­stÄ› vÄ›dÄ›t?
+	AI_Output(self,other,"Info_Bau_4_DasLager_04_01"); //DÃ¡vej si v tÃ¡boÅ™e pozor, chlapÄe. MotÃ¡ se tam spousta zabijÃ¡kÅ¯, kteÅ™Ã­ se nemohou doÄkat, aÅ¾ si podajÃ­ novÃ¡Äky, jako jsi ty.
 };
 
 // *************************************************************************
@@ -99,7 +99,7 @@ FUNC INT Info_Bau_4_DieLage_Condition()
 FUNC VOID Info_Bau_4_DieLage_Info()
 {
 	AI_Output(other,self,"Info_Bau_4_DieLage_15_00"); //Jak to jde?
-	AI_Output(self,other,"Info_Bau_4_DieLage_04_01"); //Je tu spousta práce. Musíme dodávat hromady rıe na obivu všech tìch lidí.
+	AI_Output(self,other,"Info_Bau_4_DieLage_04_01"); //Je tu spousta prÃ¡ce. MusÃ­me dodÃ¡vat hromady rÃ½Å¾e na obÅ¾ivu vÅ¡ech tÄ›ch lidÃ­.
 };
 
 // *************************************************************************
@@ -112,7 +112,7 @@ INSTANCE Info_Bau_4_Wasser(C_INFO) // E1
 	condition	= Info_Bau_4_Wasser_Condition;
 	information	= Info_Bau_4_Wasser_Info;
 	permanent	= 1;
-	description = "Lefty mì poslal. Pøinesl jsem ti trochu vody.";
+	description = "Lefty mÄ› poslal. PÅ™inesl jsem ti trochu vody.";
 };                       
 
 FUNC INT Info_Bau_4_Wasser_Condition()
@@ -126,7 +126,7 @@ FUNC INT Info_Bau_4_Wasser_Condition()
 
 FUNC VOID Info_Bau_4_Wasser_Info()
 {
-	AI_Output(other,self,"Info_Bau_4_Wasser_15_00"); //Lefty mì poslal. Pøinesl jsem ti trochu vody.
+	AI_Output(other,self,"Info_Bau_4_Wasser_15_00"); //Lefty mÄ› poslal. PÅ™inesl jsem ti trochu vody.
 	if (Npc_HasItems(other, ItFo_Potion_Water_01)>=1)
 	{
 		B_GiveInvItems		(other, self,	ItFo_Potion_Water_01, 1);
@@ -137,7 +137,7 @@ FUNC VOID Info_Bau_4_Wasser_Info()
 		};
 		AI_UseItem			(self,	ItFo_Potion_Water_01);
 
-		AI_Output(self,other,"Info_Bau_4_Wasser_04_01"); //Díky, kamaráde. U jsem to potøeboval!
+		AI_Output(self,other,"Info_Bau_4_Wasser_04_01"); //DÃ­ky, kamarÃ¡de. UÅ¾ jsem to potÅ™eboval!
 		
 		An_Bauern_verteilt = An_Bauern_verteilt+1;
 		if (An_Bauern_verteilt>=DurstigeBauern)
@@ -148,7 +148,7 @@ FUNC VOID Info_Bau_4_Wasser_Info()
 	}
 	else
 	{
-		AI_Output(self,other,"Info_Bau_4_Wasser_NOWATER_04_00"); //Ale tobì u ádná nezùstala. Nezoufej, chlapèe. Øeknu nìkomu jinému.
+		AI_Output(self,other,"Info_Bau_4_Wasser_NOWATER_04_00"); //Ale tobÄ› uÅ¾ Å¾Ã¡dnÃ¡ nezÅ¯stala. Nezoufej, chlapÄe. Å˜eknu nÄ›komu jinÃ©mu.
 	};
 };
 

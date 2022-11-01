@@ -38,7 +38,7 @@ FUNC VOID  Info_Riordian_EXIT_Info()
 
 //***************************************************************************
 //	Info NEWS
-//***************************************************************************//Bist du der Wassermagier, der die Tr‰nke braut?
+//***************************************************************************//Bist du der Wassermagier, der die Tr√§nke braut?
 instance Info_Riordian_NEWS (C_INFO)
 {
 	npc			= KDW_605_Riordian;
@@ -46,7 +46,7 @@ instance Info_Riordian_NEWS (C_INFO)
 	information	= Info_Riordian_NEWS_Info;
 	permanent	= 0;
 	important 	= 0;
-	description = "Saturas mÏ poslal.";
+	description = "Saturas mƒõ poslal.";
 };
 
 FUNC INT Info_Riordian_NEWS_Condition()
@@ -59,13 +59,13 @@ FUNC INT Info_Riordian_NEWS_Condition()
 
 FUNC VOID Info_Riordian_NEWS_Info()
 {
-	AI_Output (other, self,"Info_Riordian_NEWS_15_01"); //Saturas mÏ poslal.
-	AI_Output (self, other,"Info_Riordian_NEWS_14_02"); //¡, tak pojÔ. Uû mi ¯Ìkali.
-	AI_Output (self, other,"Info_Riordian_NEWS_14_03"); //Tady si vezmi lektvar, ten vylÈËÌ vöechny neduhy.
-	AI_Output (self, other,"Info_Riordian_NEWS_14_04"); //TeÔ jdi a p¯ines n·m ohniskovÈ kameny. Ty jsou naöÌ jedinou nadÏjÌ.
+	AI_Output (other, self,"Info_Riordian_NEWS_15_01"); //Saturas mƒõ poslal.
+	AI_Output (self, other,"Info_Riordian_NEWS_14_02"); //√Å, tak pojƒè. U≈æ mi ≈ô√≠kali.
+	AI_Output (self, other,"Info_Riordian_NEWS_14_03"); //Tady si vezmi lektvar, ten vyl√©ƒç√≠ v≈°echny neduhy.
+	AI_Output (self, other,"Info_Riordian_NEWS_14_04"); //Teƒè jdi a p≈ôines n√°m ohniskov√© kameny. Ty jsou na≈°√≠ jedinou nadƒõj√≠.
 
 	CreateInvItems (self, ItFo_Potion_Health_01,	20); 
-	B_GiveInvItems (self,hero, ItFo_Potion_Health_01,	20); //Notwendig f¸r die Ausschrift "20 Items ¸bergeben", wird sofort ausgeglichen
+	B_GiveInvItems (self,hero, ItFo_Potion_Health_01,	20); //Notwendig f√ºr die Ausschrift "20 Items √ºbergeben", wird sofort ausgeglichen
 	Npc_RemoveInvItems(hero, ItFo_Potion_Health_01,	15);
 
 	CreateInvItems (hero, ItFo_Potion_Mana_01,		5);
@@ -88,7 +88,7 @@ instance Info_Riordian_REWARD (C_INFO)
 	information	= Info_Riordian_REWARD_Info;
 	permanent	= 0;
 	important 	= 0;
-	description = "Saturas ¯ekl, ûe mÏ m·ö odmÏnit.";
+	description = "Saturas ≈ôekl, ≈æe mƒõ m√°≈° odmƒõnit.";
 };
 
 FUNC INT Info_Riordian_REWARD_Condition()
@@ -101,14 +101,14 @@ FUNC INT Info_Riordian_REWARD_Condition()
 
 FUNC VOID Info_Riordian_REWARD_Info()
 {
-	AI_Output			(other, self,"Info_Riordian_REWARD_15_01"); //Saturas ¯ekl, ûe mÏ m·ö odmÏnit.
-	AI_Output			(self, other,"Info_Riordian_REWARD_14_02"); //¡, pojÔ d·l, pojÔ d·l.
-	AI_Output			(self, other,"Info_Riordian_REWARD_14_03"); //N·ö duchovnÌ v˘dce mi vypr·vÏl o tv˝ch hrdinsk˝ch Ëinech.
-	AI_Output			(self, other,"Info_Riordian_REWARD_14_04"); //Vöichni lidÈ v t·bo¯e - ne, v celÈ kolonii - jsou ti hluboce zav·zanÌ.
-	AI_Output			(self, other,"Info_Riordian_REWARD_14_05"); //P¯ijmi tuhle malou odmÏnu za vöechno tvoje ˙silÌ.
+	AI_Output			(other, self,"Info_Riordian_REWARD_15_01"); //Saturas ≈ôekl, ≈æe mƒõ m√°≈° odmƒõnit.
+	AI_Output			(self, other,"Info_Riordian_REWARD_14_02"); //√Å, pojƒè d√°l, pojƒè d√°l.
+	AI_Output			(self, other,"Info_Riordian_REWARD_14_03"); //N√°≈° duchovn√≠ v≈Ødce mi vypr√°vƒõl o tv√Ωch hrdinsk√Ωch ƒçinech.
+	AI_Output			(self, other,"Info_Riordian_REWARD_14_04"); //V≈°ichni lid√© v t√°bo≈ôe - ne, v cel√© kolonii - jsou ti hluboce zav√°zan√≠.
+	AI_Output			(self, other,"Info_Riordian_REWARD_14_05"); //P≈ôijmi tuhle malou odmƒõnu za v≈°echno tvoje √∫sil√≠.
 
 	CreateInvItems		(self, ItFo_Potion_Health_02,		20);
-	B_GiveInvItems      (self, hero, ItFo_Potion_Health_02, 20);//Notwenidg f¸r Ausschrift "20 Items ¸bergeben", wird sofort ausgeglichen
+	B_GiveInvItems      (self, hero, ItFo_Potion_Health_02, 20);//Notwenidg f√ºr Ausschrift "20 Items √ºbergeben", wird sofort ausgeglichen
 	Npc_RemoveInvItems  (hero, ItFo_Potion_Health_02, 		15);
 
 	CreateInvItems		(hero, ItFo_Potion_Mana_02,			5);
@@ -119,7 +119,7 @@ FUNC VOID Info_Riordian_REWARD_Info()
 	CreateInvItems		(hero, ItFo_Potion_Health_Perma_02,	1);
 	CreateInvItems		(hero, ItFo_Potion_Mana_Perma_02,	1);
 
-	B_LogEntry			(CH3_BringFoci,"Riordian byl  jako vûdy hlava otev¯en·. Dal mi spoustu lektvar˘. MyslÌm, ûe mi jich bude zapot¯ebÌ.");
+	B_LogEntry			(CH3_BringFoci,"Riordian byl  jako v≈ædy hlava otev≈ôen√°. Dal mi spoustu lektvar≈Ø. Mysl√≠m, ≈æe mi jich bude zapot≈ôeb√≠.");
 	if	Npc_KnowsInfo(hero, Info_Cronos_REWARD)
 	{
 		Log_SetTopicStatus(CH3_BringFoci,	LOG_SUCCESS);
@@ -159,7 +159,7 @@ FUNC INT Info_Riordian_MESSAGE_Condition()
 
 FUNC VOID Info_Riordian_MESSAGE_Info()
 {
-	AI_Output (self, hero,"Info_Riordian_MESSAGE_14_01"); //Jsem r·d, ûe jsi p¯iöel! OËek·val jsem tÏ!
+	AI_Output (self, hero,"Info_Riordian_MESSAGE_14_01"); //Jsem r√°d, ≈æe jsi p≈ôi≈°el! Oƒçek√°val jsem tƒõ!
 };
 
 //---------------------------------------------------------------------
@@ -172,7 +172,7 @@ instance Info_Riordian_MESSAGEWHY (C_INFO)
 	information	= Info_Riordian_MESSAGEWHY_Info;
 	permanent	= 0;
 	important 	= 0;
-	description = "OËek·val jsi mÏ? Jak to?";
+	description = "Oƒçek√°val jsi mƒõ? Jak to?";
 };
 
 FUNC INT Info_Riordian_MESSAGEWHY_Condition()
@@ -185,12 +185,12 @@ FUNC INT Info_Riordian_MESSAGEWHY_Condition()
 
 FUNC VOID Info_Riordian_MESSAGEWHY_Info()
 {
-	AI_Output (hero, self,"Info_Riordian_MESSAGEWHY_15_01"); //OËek·val jsi mÏ? Jak to?
-	AI_Output (self, hero,"Info_Riordian_MESSAGEWHY_14_02"); //Gorn mi ¯Ìkal, abych tÏ k nÏmu poslal ihned, jak p¯ijdeö!
-	AI_Output (hero, self,"Info_Riordian_MESSAGEWHY_15_03"); //Co se dÏje?
-	AI_Output (self, hero,"Info_Riordian_MESSAGEWHY_14_04"); //M· pl·n na osvobozenÌ obsazenÈho dolu.
-	AI_Output (hero, self,"Info_Riordian_MESSAGEWHY_15_05"); //St¯eûÌ po¯·d vchod toho dolu?
-	AI_Output (self, hero,"Info_Riordian_MESSAGEWHY_14_06"); //Ano! Zajdi za nÌm, prosÌm, co nejd¯Ìve!
+	AI_Output (hero, self,"Info_Riordian_MESSAGEWHY_15_01"); //Oƒçek√°val jsi mƒõ? Jak to?
+	AI_Output (self, hero,"Info_Riordian_MESSAGEWHY_14_02"); //Gorn mi ≈ô√≠kal, abych tƒõ k nƒõmu poslal ihned, jak p≈ôijde≈°!
+	AI_Output (hero, self,"Info_Riordian_MESSAGEWHY_15_03"); //Co se dƒõje?
+	AI_Output (self, hero,"Info_Riordian_MESSAGEWHY_14_04"); //M√° pl√°n na osvobozen√≠ obsazen√©ho dolu.
+	AI_Output (hero, self,"Info_Riordian_MESSAGEWHY_15_05"); //St≈ôe≈æ√≠ po≈ô√°d vchod toho dolu?
+	AI_Output (self, hero,"Info_Riordian_MESSAGEWHY_14_06"); //Ano! Zajdi za n√≠m, pros√≠m, co nejd≈ô√≠ve!
 };
 /*------------------------------------------------------------------------
 //							WELCOME							//
@@ -214,7 +214,7 @@ FUNC int  KDW_605_Riordian_WELCOME_Condition()
 };
 func void  KDW_605_Riordian_WELCOME_Info()
 {
-	AI_Output (self, other,"KDW_605_Riordian_WELCOME_Info_14_01"); //Jsem r·d, ûe ses dal k n·m.
+	AI_Output (self, other,"KDW_605_Riordian_WELCOME_Info_14_01"); //Jsem r√°d, ≈æe ses dal k n√°m.
 };
 //-----------------------------------------------------------
 instance KDW_605_Riordian_HEAL (C_INFO)
@@ -236,7 +236,7 @@ FUNC int  KDW_605_Riordian_HEAL_Condition()
 };
 func void  KDW_605_Riordian_HEAL_Info()
 {
-	AI_Output (self, other,"KDW_605_Riordian_HEAL_Info_14_01"); //Jestliûe budeö zranÏn, j· tÏ vyhojÌm.
+	AI_Output (self, other,"KDW_605_Riordian_HEAL_Info_14_01"); //Jestli≈æe bude≈° zranƒõn, j√° tƒõ vyhoj√≠m.
 };
 // ***************************** INFOS ****************************************//
 
@@ -248,7 +248,7 @@ instance  KDW_605_Riordian_HEALINFO (C_INFO)
 	information		= KDW_605_Riordian_HEALINFO_Info;
 	important		= 0;
 	permanent		= 1;
-	description		= "Jsem zranÏn. Dok·ûeö mÏ vyhojit?"; 
+	description		= "Jsem zranƒõn. Dok√°≈æe≈° mƒõ vyhojit?"; 
 };
 
 FUNC int  KDW_605_Riordian_HEALINFO_Condition()
@@ -262,8 +262,8 @@ FUNC int  KDW_605_Riordian_HEALINFO_Condition()
 };
 FUNC void  KDW_605_Riordian_HEALINFO_Info()
 {
-	AI_Output (other, self,"KDW_605_Riordian_HEALINFO_Info_15_01"); //Jsem zranÏn. Dok·ûeö mÏ vyhojit?
-	AI_Output (self, other,"KDW_605_Riordian_HEALINFO_Info_14_02"); //TÏmito slovy vyvol·v·m lÈËivÈ sÌly a tvoje tÏlo i duöe budou uzdraveny!
+	AI_Output (other, self,"KDW_605_Riordian_HEALINFO_Info_15_01"); //Jsem zranƒõn. Dok√°≈æe≈° mƒõ vyhojit?
+	AI_Output (self, other,"KDW_605_Riordian_HEALINFO_Info_14_02"); //Tƒõmito slovy vyvol√°v√°m l√©ƒçiv√© s√≠ly a tvoje tƒõlo i du≈°e budou uzdraveny!
 	 
 	hero.attribute [ATR_HITPOINTS] = hero.attribute [ATR_HITPOINTS_MAX];
 	Snd_Play  ("MFX_Heal_Cast");
@@ -279,7 +279,7 @@ instance  KDW_605_Riordian_GREET (C_INFO)
 	information		= KDW_605_Riordian_GREET_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "BuÔ pozdraven, m·gu."; 
+	description		= "Buƒè pozdraven, m√°gu."; 
 };
 
 FUNC int  KDW_605_Riordian_GREET_Condition()
@@ -290,10 +290,10 @@ FUNC int  KDW_605_Riordian_GREET_Condition()
 
 FUNC void  KDW_605_Riordian_GREET_Info()
 {
-	AI_Output 		(other, self,"KDW_605_Riordian_GREET_Info_15_01"); //BuÔ pozdraven, m·gu.
-	AI_Output 		(self, other,"KDW_605_Riordian_GREET_Info_14_02"); //Jsem Riordian, alchymista. Ty urËitÏ chceö nÏjak˝ lektvar?
+	AI_Output 		(other, self,"KDW_605_Riordian_GREET_Info_15_01"); //Buƒè pozdraven, m√°gu.
+	AI_Output 		(self, other,"KDW_605_Riordian_GREET_Info_14_02"); //Jsem Riordian, alchymista. Ty urƒçitƒõ chce≈° nƒõjak√Ω lektvar?
 	Log_CreateTopic (GE_TraderNC,LOG_NOTE);
-	B_LogEntry 		(GE_TraderNC,"Riordian, m·g Vody, obchoduje s LEKTVARY. B˝v· v alchymistickÈ dÌlnÏ v hornÌ rovinÏ.");
+	B_LogEntry 		(GE_TraderNC,"Riordian, m√°g Vody, obchoduje s LEKTVARY. B√Ωv√° v alchymistick√© d√≠lnƒõ v horn√≠ rovinƒõ.");
 	
 };  
 /*------------------------------------------------------------------------
@@ -307,7 +307,7 @@ instance  KDW_605_Riordian_TRADE (C_INFO)
 	information		= KDW_605_Riordian_TRADE_Info;
 	important		= 0;
 	permanent		= 1;
-	description		= "Ukaû mi svoje zboûÌ."; 
+	description		= "Uka≈æ mi svoje zbo≈æ√≠."; 
 	trade			= 1;
 };
 
@@ -321,6 +321,6 @@ FUNC int  KDW_605_Riordian_TRADE_Condition()
 };
 FUNC void  KDW_605_Riordian_TRADE_Info()
 {
-	AI_Output (other, self,"KDW_605_Riordian_TRADE_Info_15_01"); //Ukaû mi svoje zboûÌ.
+	AI_Output (other, self,"KDW_605_Riordian_TRADE_Info_15_01"); //Uka≈æ mi svoje zbo≈æ√≠.
 	
 };  

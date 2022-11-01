@@ -23,17 +23,17 @@ FUNC INT Info_Erpresser_Condition()
 
 FUNC VOID Info_Erpresser_Info()
 {
-	AI_Output (self, other,"Info_Erpresser_Info_13_01"); //Hej, hochu, jestli chceö d·l, musÌö zaplatit 10 nuget˘, jinak poletÌö, jasn˝?
+	AI_Output (self, other,"Info_Erpresser_Info_13_01"); //Hej, hochu, jestli chce≈° d√°l, mus√≠≈° zaplatit 10 nuget≈Ø, jinak polet√≠≈°, jasn√Ω?
 	
 	Info_ClearChoices( Info_Erpresser );
-	Info_AddChoice	 ( Info_Erpresser,"Tak pojÔ d·l a dej svoji rudu!", Info_Erpresser_Choice_AufsMaul );
-	Info_AddChoice	 ( Info_Erpresser,"T¯i nugety? To nenÌ moc. Tady, vezmi si...", Info_Erpresser_Choice_Zahlen );
+	Info_AddChoice	 ( Info_Erpresser,"Tak pojƒè d√°l a dej svoji rudu!", Info_Erpresser_Choice_AufsMaul );
+	Info_AddChoice	 ( Info_Erpresser,"T≈ôi nugety? To nen√≠ moc. Tady, vezmi si...", Info_Erpresser_Choice_Zahlen );
 };
 
 FUNC VOID Info_Erpresser_Choice_AufsMaul()
 {
-	AI_Output (other, self,"Info_Erpresser_Choice_AufsMaul_15_01"); //Tak pojÔ d·l a dej svoji rudu!
-	AI_Output (self, other,"Info_Erpresser_Choice_AufsMaul_13_02"); //DÌky, ËlovÏËe. Pr·vÏ jsi mi udÏlal hezkej den!
+	AI_Output (other, self,"Info_Erpresser_Choice_AufsMaul_15_01"); //Tak pojƒè d√°l a dej svoji rudu!
+	AI_Output (self, other,"Info_Erpresser_Choice_AufsMaul_13_02"); //D√≠ky, ƒçlovƒõƒçe. Pr√°vƒõ jsi mi udƒõlal hezkej den!
 	
 	self.aivar[AIV_HAS_ERPRESSED] = 2;
 	
@@ -47,15 +47,15 @@ FUNC VOID Info_Erpresser_Choice_Zahlen()
 {
 	if (Npc_HasItems (other,ITMINUGGET) >= 3)
 	{
-		AI_Output (other, self,"Info_Erpresser_Choice_Zahlen_15_01"); //Tady je 10 nuget˘.
+		AI_Output (other, self,"Info_Erpresser_Choice_Zahlen_15_01"); //Tady je 10 nuget≈Ø.
 		AI_Output (self, other,"Info_Erpresser_Choice_Zahlen_13_02"); //Hanba.
 	
 		self.aivar[AIV_HAS_ERPRESSED] = 1;
 	}
 	else // SC hat keine 3 Erz
 	{
-		AI_Output (other, self,"Info_Erpresser_Choice_Zahlen_15_03"); //Hmmm... TeÔ pr·vÏ nem·m 10 nuget˘...
-		AI_Output (self, other,"Info_Erpresser_Choice_Zahlen_13_04"); //To je ökoda...
+		AI_Output (other, self,"Info_Erpresser_Choice_Zahlen_15_03"); //Hmmm... Teƒè pr√°vƒõ nem√°m 10 nuget≈Ø...
+		AI_Output (self, other,"Info_Erpresser_Choice_Zahlen_13_04"); //To je ≈°koda...
 	
 		self.aivar[AIV_HAS_ERPRESSED] = 2;
 	
@@ -66,7 +66,7 @@ FUNC VOID Info_Erpresser_Choice_Zahlen()
 	AI_StopProcessInfos	(self);
 };
 
-// ****************** f¸r HAS_ERPRESSED == 1 (gezahlt) *********************
+// ****************** f√ºr HAS_ERPRESSED == 1 (gezahlt) *********************
 
 INSTANCE Info_BereitsErpresst (C_INFO)
 {
@@ -88,10 +88,10 @@ FUNC INT Info_BereitsErpresst_Condition()
 
 FUNC VOID Info_BereitsErpresst_Info()
 {
-	AI_Output (self, other,"Info_BereitsErpresst_Info_13_02"); //Zaplatil jsi. M˘ûeö d·l. Jdi, neû si to rozmyslÌm.
+	AI_Output (self, other,"Info_BereitsErpresst_Info_13_02"); //Zaplatil jsi. M≈Ø≈æe≈° d√°l. Jdi, ne≈æ si to rozmysl√≠m.
 };
 
-// ****************** f¸r HAS_ERPRESSED == 2 (Aufs Maul) *********************
+// ****************** f√ºr HAS_ERPRESSED == 2 (Aufs Maul) *********************
 
 INSTANCE Info_BereitsAufsMaul (C_INFO)
 {
@@ -115,7 +115,7 @@ FUNC INT Info_BereitsAufsMaul_Condition()
 
 FUNC VOID Info_BereitsAufsMaul_Info()
 {
-	AI_Output (self, other,"Info_BereitsAufsMaul_Info_13_02"); //Ztraù se, neû ti ten p¯ihlouplej cifernÌk rozm·znu!
+	AI_Output (self, other,"Info_BereitsAufsMaul_Info_13_02"); //Ztra≈• se, ne≈æ ti ten p≈ôihlouplej cifern√≠k rozm√°znu!
 };
 
 // ************************ EXIT **************************

@@ -20,7 +20,7 @@ INSTANCE MENU_LEAVE_GAME(C_MENU_DEF)
 
 INSTANCE MENUITEM_LEAVE_GAME_HEADLINE(C_MENU_ITEM_DEF) 
 {
-	text[0]		= "Opravdu ukonËit Gothic?";   		
+	text[0]		= "Opravdu ukonƒçit Gothic?";   		
 	type		= MENU_ITEM_TEXT;
 	// Position und Dimension	
 	posx		=    0;		posy		= 3400;
@@ -34,7 +34,7 @@ INSTANCE MENUITEM_LEAVE_GAME_YES(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
 	text[0]		= "Ano";
-	text[1]		= "Ano, chci ukonËit Gothic."; // Kommentar
+	text[1]		= "Ano, chci ukonƒçit Gothic."; // Kommentar
 	
 	// Position und Dimension	
 	posx		=    0;		posy		= 4400;	
@@ -50,7 +50,7 @@ INSTANCE MENUITEM_LEAVE_GAME_NO(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
 	text[0]		= "Ne";
-	text[1]		= "Ne, chci pokraËovat ve h¯e."; // Kommentar
+	text[1]		= "Ne, chci pokraƒçovat ve h≈ôe."; // Kommentar
 	
 	// Position und Dimension	
 	posx		=    0;		posy		= 5000;	

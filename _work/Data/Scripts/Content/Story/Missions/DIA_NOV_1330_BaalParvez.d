@@ -23,7 +23,7 @@ FUNC VOID  DIA_BaalParvez_EXIT_Info()
 };
 
 // **************************************************
-//					Erste Begrüssung
+//					Erste BegrÃ¼ssung
 // **************************************************
 
 instance  DIA_BaalParvez_Greet (C_INFO)
@@ -46,8 +46,8 @@ FUNC int  DIA_BaalParvez_Greet_Condition()
 
 FUNC VOID  DIA_BaalParvez_Greet_Info()
 {
-	AI_Output (self, other,"DIA_BaalParvez_Greet_10_00"); //Spáè s tebou, cizinèe!
-	AI_Output (self, other,"DIA_BaalParvez_Greet_10_01"); //Jsem tady, abych tì pøivedl na správnou cestu.
+	AI_Output (self, other,"DIA_BaalParvez_Greet_10_00"); //SpÃ¡Ä s tebou, cizinÄe!
+	AI_Output (self, other,"DIA_BaalParvez_Greet_10_01"); //Jsem tady, abych tÄ› pÅ™ivedl na sprÃ¡vnou cestu.
 };
 
 // **************************************************
@@ -61,7 +61,7 @@ instance  DIA_BaalParvez_RightWay (C_INFO)
 	condition	= DIA_BaalParvez_RightWay_Condition;
 	information	= DIA_BaalParvez_RightWay_Info;
 	permanent	= 0;
-	description = "A jaká je ta správná cesta?";
+	description = "A jakÃ¡ je ta sprÃ¡vnÃ¡ cesta?";
 };                       
 
 FUNC int  DIA_BaalParvez_RightWay_Condition()
@@ -74,16 +74,16 @@ FUNC int  DIA_BaalParvez_RightWay_Condition()
 
 FUNC VOID  DIA_BaalParvez_RightWay_Info()
 {
-	AI_Output (other, self,"DIA_BaalParvez_RightWay_15_00"); //A jaká je ta správná cesta?
-	AI_Output (self, other,"DIA_BaalParvez_RightWay_10_01"); //Cesta Spáèova. On sám je tou silou, která nás osvobodí.
-	AI_Output (self, other,"DIA_BaalParvez_RightWay_10_02"); //Guru pøipravují v našem táboøe velké vzıvání - chtìjí navázat spojení se Spáèem.
-	AI_Output (self, other,"DIA_BaalParvez_RightWay_10_03"); //Dosud k nám promlouval jen ve vizích - ale teï nastal èas, kdy s ním vstoupíme ve spojení.
-	AI_Output (self, other,"DIA_BaalParvez_RightWay_10_04"); //Budeme k tomu potøebovat co nejvíce pomocníkù. Kdy budem soustøedit své duchovní síly, pak se k nìmu jejich prostøednictvím dostaneme.
-	AI_Output (self, other,"DIA_BaalParvez_RightWay_10_05"); //Náš tábor je odsud dost daleko, v bainách - jestli chceš, mùu tì tam dovést.
+	AI_Output (other, self,"DIA_BaalParvez_RightWay_15_00"); //A jakÃ¡ je ta sprÃ¡vnÃ¡ cesta?
+	AI_Output (self, other,"DIA_BaalParvez_RightWay_10_01"); //Cesta SpÃ¡Äova. On sÃ¡m je tou silou, kterÃ¡ nÃ¡s osvobodÃ­.
+	AI_Output (self, other,"DIA_BaalParvez_RightWay_10_02"); //Guru pÅ™ipravujÃ­ v naÅ¡em tÃ¡boÅ™e velkÃ© vzÃ½vÃ¡nÃ­ - chtÄ›jÃ­ navÃ¡zat spojenÃ­ se SpÃ¡Äem.
+	AI_Output (self, other,"DIA_BaalParvez_RightWay_10_03"); //Dosud k nÃ¡m promlouval jen ve vizÃ­ch - ale teÄ nastal Äas, kdy s nÃ­m vstoupÃ­me ve spojenÃ­.
+	AI_Output (self, other,"DIA_BaalParvez_RightWay_10_04"); //Budeme k tomu potÅ™ebovat co nejvÃ­ce pomocnÃ­kÅ¯. KdyÅ¾ budem soustÅ™edit svÃ© duchovnÃ­ sÃ­ly, pak se k nÄ›mu jejich prostÅ™ednictvÃ­m dostaneme.
+	AI_Output (self, other,"DIA_BaalParvez_RightWay_10_05"); //NÃ¡Å¡ tÃ¡bor je odsud dost daleko, v baÅ¾inÃ¡ch - jestli chceÅ¡, mÅ¯Å¾u tÄ› tam dovÃ©st.
 };
 
 // **************************************************
-//					Vorteile für mich
+//					Vorteile fÃ¼r mich
 // **************************************************
 
 instance  DIA_BaalParvez_MyAdvantage (C_INFO)
@@ -93,7 +93,7 @@ instance  DIA_BaalParvez_MyAdvantage (C_INFO)
 	condition	= DIA_BaalParvez_MyAdvantage_Condition;
 	information	= DIA_BaalParvez_MyAdvantage_Info;
 	permanent	= 0;
-	description = "Co z toho budu mít, kdy se k vám pøidám?";
+	description = "Co z toho budu mÃ­t, kdyÅ¾ se k vÃ¡m pÅ™idÃ¡m?";
 };                       
 
 FUNC int  DIA_BaalParvez_MyAdvantage_Condition()
@@ -106,16 +106,16 @@ FUNC int  DIA_BaalParvez_MyAdvantage_Condition()
 
 FUNC VOID  DIA_BaalParvez_MyAdvantage_Info()
 {
-	AI_Output (other, self,"DIA_BaalParvez_MyAdvantage_15_00"); //Co z toho budu mít, kdy se k vám pøidám?
-	AI_Output (self, other,"DIA_BaalParvez_MyAdvantage_10_01"); //Moná se staneš jedním z vyvolenıch lidí, kteøí od Spáèe dostanou dar magie.
-	AI_Output (self, other,"DIA_BaalParvez_MyAdvantage_10_02"); //Nebo se ti moná dostane nejvyšší pocty a staneš se templáøem. Jen ti nejlepší bojovníci z nás mùou získat takové postavení.
-	AI_Output (self, other,"DIA_BaalParvez_MyAdvantage_10_03"); //Pokud bude Spáè s tebou, mùeš dokonce spojit obojí - nejlepší z templáøù dostanou také dar magie.
-	AI_Output (self, other,"DIA_BaalParvez_MyAdvantage_10_04"); //Vidíš, naše Bratrstvo ti nabízí spoustu pøíleitostí.
-	AI_Output (self, other,"DIA_BaalParvez_MyAdvantage_10_05"); //Mìl bys to zváit, ne se rozhodneš pro jinı tábor!
+	AI_Output (other, self,"DIA_BaalParvez_MyAdvantage_15_00"); //Co z toho budu mÃ­t, kdyÅ¾ se k vÃ¡m pÅ™idÃ¡m?
+	AI_Output (self, other,"DIA_BaalParvez_MyAdvantage_10_01"); //MoÅ¾nÃ¡ se staneÅ¡ jednÃ­m z vyvolenÃ½ch lidÃ­, kteÅ™Ã­ od SpÃ¡Äe dostanou dar magie.
+	AI_Output (self, other,"DIA_BaalParvez_MyAdvantage_10_02"); //Nebo se ti moÅ¾nÃ¡ dostane nejvyÅ¡Å¡Ã­ pocty a staneÅ¡ se templÃ¡Å™em. Jen ti nejlepÅ¡Ã­ bojovnÃ­ci z nÃ¡s mÅ¯Å¾ou zÃ­skat takovÃ© postavenÃ­.
+	AI_Output (self, other,"DIA_BaalParvez_MyAdvantage_10_03"); //Pokud bude SpÃ¡Ä s tebou, mÅ¯Å¾eÅ¡ dokonce spojit obojÃ­ - nejlepÅ¡Ã­ z templÃ¡Å™Å¯ dostanou takÃ© dar magie.
+	AI_Output (self, other,"DIA_BaalParvez_MyAdvantage_10_04"); //VidÃ­Å¡, naÅ¡e Bratrstvo ti nabÃ­zÃ­ spoustu pÅ™Ã­leÅ¾itostÃ­.
+	AI_Output (self, other,"DIA_BaalParvez_MyAdvantage_10_05"); //MÄ›l bys to zvÃ¡Å¾it, neÅ¾ se rozhodneÅ¡ pro jinÃ½ tÃ¡bor!
 };
 
 // **************************************************
-//					Schläfer
+//					SchlÃ¤fer
 // **************************************************
 
 instance  DIA_BaalParvez_Sleeper (C_INFO)
@@ -125,7 +125,7 @@ instance  DIA_BaalParvez_Sleeper (C_INFO)
 	condition	= DIA_BaalParvez_Sleeper_Condition;
 	information	= DIA_BaalParvez_Sleeper_Info;
 	permanent	= 0;
-	description = "Kdo je ten Spáè?";
+	description = "Kdo je ten SpÃ¡Ä?";
 };                       
 
 FUNC int  DIA_BaalParvez_Sleeper_Condition()
@@ -138,16 +138,16 @@ FUNC int  DIA_BaalParvez_Sleeper_Condition()
 
 FUNC VOID  DIA_BaalParvez_Sleeper_Info()
 {
-	AI_Output (other, self,"DIA_BaalParvez_Sleeper_15_00"); //Kdo je ten Spáè?
-	AI_Output (self, other,"DIA_BaalParvez_Sleeper_10_01"); //Spáè k nám promlouvá prostøednictvím snù a vidin.
-	AI_Output (self, other,"DIA_BaalParvez_Sleeper_10_02"); //Od té doby, co s ním Y´Berion poprvé pøed pìti lety vstoupil do spojení, nás stále vede.
-	AI_Output (self, other,"DIA_BaalParvez_Sleeper_10_03"); //Všichni pøívrenci Bratrstva se zøekli tøí bohù. Modlíme se za spásu jenom ke Spáèovi.
-	AI_Output (other, self,"DIA_BaalParvez_Sleeper_15_04"); //Spásu od èeho?
-	AI_Output (self, other,"DIA_BaalParvez_Sleeper_10_05"); //Od tohohle zpropadeného místa, pøece! Spáè nám ukáe cestu ke svobodì!
+	AI_Output (other, self,"DIA_BaalParvez_Sleeper_15_00"); //Kdo je ten SpÃ¡Ä?
+	AI_Output (self, other,"DIA_BaalParvez_Sleeper_10_01"); //SpÃ¡Ä k nÃ¡m promlouvÃ¡ prostÅ™ednictvÃ­m snÅ¯ a vidin.
+	AI_Output (self, other,"DIA_BaalParvez_Sleeper_10_02"); //Od tÃ© doby, co s nÃ­m YÂ´Berion poprvÃ© pÅ™ed pÄ›ti lety vstoupil do spojenÃ­, nÃ¡s stÃ¡le vede.
+	AI_Output (self, other,"DIA_BaalParvez_Sleeper_10_03"); //VÅ¡ichni pÅ™Ã­vrÅ¾enci Bratrstva se zÅ™ekli tÅ™Ã­ bohÅ¯. ModlÃ­me se za spÃ¡su jenom ke SpÃ¡Äovi.
+	AI_Output (other, self,"DIA_BaalParvez_Sleeper_15_04"); //SpÃ¡su od Äeho?
+	AI_Output (self, other,"DIA_BaalParvez_Sleeper_10_05"); //Od tohohle zpropadenÃ©ho mÃ­sta, pÅ™ece! SpÃ¡Ä nÃ¡m ukÃ¡Å¾e cestu ke svobodÄ›!
 };
 
 // **************************************************
-//			Was hat Schläfer zu euch gesagt?
+//			Was hat SchlÃ¤fer zu euch gesagt?
 // **************************************************
 
 instance  DIA_BaalParvez_SleeperSaid (C_INFO)
@@ -157,7 +157,7 @@ instance  DIA_BaalParvez_SleeperSaid (C_INFO)
 	condition	= DIA_BaalParvez_SleeperSaid_Condition;
 	information	= DIA_BaalParvez_SleeperSaid_Info;
 	permanent	= 0;
-	description = "Co vám Spáè øíká?";
+	description = "Co vÃ¡m SpÃ¡Ä Å™Ã­kÃ¡?";
 };                       
 
 FUNC int  DIA_BaalParvez_SleeperSaid_Condition()
@@ -170,15 +170,15 @@ FUNC int  DIA_BaalParvez_SleeperSaid_Condition()
 
 FUNC VOID  DIA_BaalParvez_SleeperSaid_Info()
 {
-	AI_Output (other, self,"DIA_BaalParvez_SleeperSaid_15_00"); //Co vám Spáè øíká?
-	AI_Output (self, other,"DIA_BaalParvez_SleeperSaid_10_01"); //Dovedl nás k bainám, ke zøíceninì starého chrámu. Tam jsme vybudovali náš tábor.
-	AI_Output (self, other,"DIA_BaalParvez_SleeperSaid_10_02"); //Dal nám nezávislost - nikdo z nás nemusí pracovat v dolech.
-	AI_Output (self, other,"DIA_BaalParvez_SleeperSaid_10_03"); //Ukázal nám, co dokáe droga z bain. Prodáváme ji do ostatních táborù a mìníme ji za to, co potøebujeme.
-	AI_Output (self, other,"DIA_BaalParvez_SleeperSaid_10_04"); //A nìkterım z nás pøedal dar magie. Stará a mocná kouzla, která se liší od tìch, která pouívají mágové této øíše.
+	AI_Output (other, self,"DIA_BaalParvez_SleeperSaid_15_00"); //Co vÃ¡m SpÃ¡Ä Å™Ã­kÃ¡?
+	AI_Output (self, other,"DIA_BaalParvez_SleeperSaid_10_01"); //Dovedl nÃ¡s k baÅ¾inÃ¡m, ke zÅ™Ã­ceninÄ› starÃ©ho chrÃ¡mu. Tam jsme vybudovali nÃ¡Å¡ tÃ¡bor.
+	AI_Output (self, other,"DIA_BaalParvez_SleeperSaid_10_02"); //Dal nÃ¡m nezÃ¡vislost - nikdo z nÃ¡s nemusÃ­ pracovat v dolech.
+	AI_Output (self, other,"DIA_BaalParvez_SleeperSaid_10_03"); //UkÃ¡zal nÃ¡m, co dokÃ¡Å¾e droga z baÅ¾in. ProdÃ¡vÃ¡me ji do ostatnÃ­ch tÃ¡borÅ¯ a mÄ›nÃ­me ji za to, co potÅ™ebujeme.
+	AI_Output (self, other,"DIA_BaalParvez_SleeperSaid_10_04"); //A nÄ›kterÃ½m z nÃ¡s pÅ™edal dar magie. StarÃ¡ a mocnÃ¡ kouzla, kterÃ¡ se liÅ¡Ã­ od tÄ›ch, kterÃ¡ pouÅ¾Ã­vajÃ­ mÃ¡govÃ© tÃ©to Å™Ã­Å¡e.
 };
 
 // **************************************************
-//		Erzähl mir von der MAgie des Schläfers
+//		ErzÃ¤hl mir von der MAgie des SchlÃ¤fers
 // **************************************************
 
 instance  DIA_BaalParvez_PSIMagic (C_INFO)
@@ -188,7 +188,7 @@ instance  DIA_BaalParvez_PSIMagic (C_INFO)
 	condition	= DIA_BaalParvez_PSIMagic_Condition;
 	information	= DIA_BaalParvez_PSIMagic_Info;
 	permanent	= 0;
-	description = "Povídej mi o Spáèovì magii.";
+	description = "PovÃ­dej mi o SpÃ¡ÄovÄ› magii.";
 };                       
 
 FUNC int  DIA_BaalParvez_PSIMagic_Condition()
@@ -201,9 +201,9 @@ FUNC int  DIA_BaalParvez_PSIMagic_Condition()
 
 FUNC VOID  DIA_BaalParvez_PSIMagic_Info()
 {
-	AI_Output (other, self,"DIA_BaalParvez_PSIMagic_15_00"); //Povídej mi o Spáèovì magii.
-	AI_Output (self, other,"DIA_BaalParvez_PSIMagic_10_01"); //Ten dar nám umoòuje øídit vìci silou vlastní mysli.
-	AI_Output (self, other,"DIA_BaalParvez_PSIMagic_10_02"); //Do tajù tohoto kouzla byli zasvìceni jen Guru našeho Bratrstva.
+	AI_Output (other, self,"DIA_BaalParvez_PSIMagic_15_00"); //PovÃ­dej mi o SpÃ¡ÄovÄ› magii.
+	AI_Output (self, other,"DIA_BaalParvez_PSIMagic_10_01"); //Ten dar nÃ¡m umoÅ¾Åˆuje Å™Ã­dit vÄ›ci silou vlastnÃ­ mysli.
+	AI_Output (self, other,"DIA_BaalParvez_PSIMagic_10_02"); //Do tajÅ¯ tohoto kouzla byli zasvÄ›ceni jen Guru naÅ¡eho Bratrstva.
 };
 
 // **************************************************
@@ -219,7 +219,7 @@ instance  DIA_BaalParvez_GotoPSI (C_INFO)
 	condition	= DIA_BaalParvez_GotoPSI_Condition;
 	information	= DIA_BaalParvez_GotoPSI_Info;
 	permanent	= 1;
-	description = "Vezmi mì do vašeho tábora. Chci si ho prohlédnout.";
+	description = "Vezmi mÄ› do vaÅ¡eho tÃ¡bora. Chci si ho prohlÃ©dnout.";
 };                       
 
 FUNC int  DIA_BaalParvez_GotoPSI_Condition()
@@ -235,7 +235,7 @@ FUNC int  DIA_BaalParvez_GotoPSI_Condition()
 
 FUNC VOID  DIA_BaalParvez_GotoPSI_Info()
 {
-	AI_Output (other, self,"DIA_BaalParvez_GotoPSI_15_00"); //Vezmi mì do vašeho tábora. Chci si ho prohlédnout.
+	AI_Output (other, self,"DIA_BaalParvez_GotoPSI_15_00"); //Vezmi mÄ› do vaÅ¡eho tÃ¡bora. Chci si ho prohlÃ©dnout.
 	if (Psi_Walk == 0)
 	{
 		if (Npc_GetTrueGuild(hero) == GIL_NONE)
@@ -243,10 +243,10 @@ FUNC VOID  DIA_BaalParvez_GotoPSI_Info()
 			Log_CreateTopic		(CH1_JoinPsi,	LOG_MISSION);
 			Log_SetTopicStatus	(CH1_JoinPsi,	LOG_RUNNING);
 		};
-		B_LogEntry				(CH1_JoinPsi,"Baal Parvez, misionáø Bratrstva, hledá ve Starém táboøe nové vìøící pro SPÁÈE! Nabídl mi doprovod do Tábora v bainách, domova bratrstva.");
+		B_LogEntry				(CH1_JoinPsi,"Baal Parvez, misionÃ¡Å™ Bratrstva, hledÃ¡ ve StarÃ©m tÃ¡boÅ™e novÃ© vÄ›Å™Ã­cÃ­ pro SPÃÄŒE! NabÃ­dl mi doprovod do TÃ¡bora v baÅ¾inÃ¡ch, domova bratrstva.");
 		Psi_Walk	= 1;
 	};
-	AI_Output (self, other,"DIA_BaalParvez_GotoPSI_10_01"); //Velmi dobøe! Pùjdu napøed. Následuj mì!
+	AI_Output (self, other,"DIA_BaalParvez_GotoPSI_10_01"); //Velmi dobÅ™e! PÅ¯jdu napÅ™ed. NÃ¡sleduj mÄ›!
 	
 	BaalParvez_GotoPSI_Day = Wld_GetDay();
 	self.aivar[AIV_PARTYMEMBER] = TRUE;
@@ -285,20 +285,20 @@ FUNC VOID  DIA_BaalParvez_AtPSI_Info()
 {
 	if (BaalParvez_GotoPSI_Day > (Wld_GetDay()-2))
 	{	
-		AI_Output (self, other,"DIA_BaalParvez_AtPSI_10_00"); //Tak tady jsme... Dole leí tábor Bratrstva.
+		AI_Output (self, other,"DIA_BaalParvez_AtPSI_10_00"); //Tak tady jsme... Dole leÅ¾Ã­ tÃ¡bor Bratrstva.
 	}
 	else
 	{
-		AI_Output (self, other,"DIA_BaalParvez_AtPSI_LATE_10_00"); //Dal sis na èas, bratøe! Támhle dole je tábor.
+		AI_Output (self, other,"DIA_BaalParvez_AtPSI_LATE_10_00"); //Dal sis na Äas, bratÅ™e! TÃ¡mhle dole je tÃ¡bor.
 	};
-	AI_Output 	(self, other,"DIA_BaalParvez_AtPSI_10_01"); //Projdi branou a promluv s mımi bratry. Doufám, es sem nepøišel pronic zanic.
-	AI_Output 	(self, other,"DIA_BaalParvez_AtPSI_10_02"); //Zeptej se na Cora Kaloma. Stará se o novice a áky.
-	AI_Output 	(self, other,"DIA_BaalParvez_AtPSI_10_03"); //Já se vrátím do Starého tábora - je tam poøád dost nevìrcù, kteøí potøebují navést na správnou cestu
-	AI_Output 	(other, self,"DIA_BaalParvez_AtPSI_15_04"); //Hodnì štìstí.
+	AI_Output 	(self, other,"DIA_BaalParvez_AtPSI_10_01"); //Projdi branou a promluv s mÃ½mi bratry. DoufÃ¡m, Å¾es sem nepÅ™iÅ¡el pronic zanic.
+	AI_Output 	(self, other,"DIA_BaalParvez_AtPSI_10_02"); //Zeptej se na Cora Kaloma. StarÃ¡ se o novice a Å¾Ã¡ky.
+	AI_Output 	(self, other,"DIA_BaalParvez_AtPSI_10_03"); //JÃ¡ se vrÃ¡tÃ­m do StarÃ©ho tÃ¡bora - je tam poÅ™Ã¡d dost nevÄ›rcÅ¯, kteÅ™Ã­ potÅ™ebujÃ­ navÃ©st na sprÃ¡vnou cestu
+	AI_Output 	(other, self,"DIA_BaalParvez_AtPSI_15_04"); //HodnÄ› Å¡tÄ›stÃ­.
 
 	self.aivar[AIV_PARTYMEMBER] = FALSE;
 
-	B_LogEntry	(CH1_JoinPsi,"Tábor v bainách je pode mnou. Mùj spoleèník mi poradil, abych si promluvil s Cor Kalomem. Je vùdcem a uèitelem novicù.");
+	B_LogEntry	(CH1_JoinPsi,"TÃ¡bor v baÅ¾inÃ¡ch je pode mnou. MÅ¯j spoleÄnÃ­k mi poradil, abych si promluvil s Cor Kalomem. Je vÅ¯dcem a uÄitelem novicÅ¯.");
 	B_GiveXP	(XP_ArrivedAtPsiCamp);
 
 	var C_NPC Kalom; Kalom = Hlp_GetNpc(Gur_1201_CorKalom);

@@ -9,7 +9,7 @@ instance  Grd_277_Gardist_SITTINGORK (C_INFO)
 	information		= Grd_277_Gardist_SITTINGORK_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Co je s tím skøetem?"; 
+	description		= "Co je s tÃ­m skÅ™etem?"; 
 };
 
 FUNC int  Grd_277_Gardist_SITTINGORK_Condition()
@@ -22,9 +22,9 @@ FUNC int  Grd_277_Gardist_SITTINGORK_Condition()
 };
 FUNC void  Grd_277_Gardist_SITTINGORK_Info()
 {
-	AI_Output (other, self,"Grd_277_Gardist_SITTINGORK_Info_15_01"); //Co je s tím skøetem?
-	AI_Output (self, other,"Grd_277_Gardist_SITTINGORK_Info_06_02"); //Je to náš vìzeò. Má štìstí, e ozubené kolo drtièky je rozbité. Proto si ten èubèí syn mùe dopøávat pøestávku.
-	AI_Output (self, other,"Grd_277_Gardist_SITTINGORK_Info_06_03"); //Jakmile bude drtièka opravená, bude zas pro nìj práce. Není tu od toho, aby tu celou dobu otálel!
+	AI_Output (other, self,"Grd_277_Gardist_SITTINGORK_Info_15_01"); //Co je s tÃ­m skÅ™etem?
+	AI_Output (self, other,"Grd_277_Gardist_SITTINGORK_Info_06_02"); //Je to nÃ¡Å¡ vÄ›zeÅˆ. MÃ¡ Å¡tÄ›stÃ­, Å¾e ozubenÃ© kolo drtiÄky je rozbitÃ©. Proto si ten ÄubÄÃ­ syn mÅ¯Å¾e dopÅ™Ã¡vat pÅ™estÃ¡vku.
+	AI_Output (self, other,"Grd_277_Gardist_SITTINGORK_Info_06_03"); //Jakmile bude drtiÄka opravenÃ¡, bude zas pro nÄ›j prÃ¡ce. NenÃ­ tu od toho, aby tu celou dobu otÃ¡lel!
 };  
 /*------------------------------------------------------------------------
 							WORKINGORK							
@@ -37,7 +37,7 @@ instance  Grd_277_Gardist_WORKINGORK (C_INFO)
 	information		= Grd_277_Gardist_WORKINGORK_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Myslím, e drtièka je u opravená."; 
+	description		= "MyslÃ­m, Å¾e drtiÄka je uÅ¾ opravenÃ¡."; 
 };
 
 FUNC int  Grd_277_Gardist_WORKINGORK_Condition()
@@ -50,6 +50,6 @@ FUNC int  Grd_277_Gardist_WORKINGORK_Condition()
 };
 FUNC void  Grd_277_Gardist_WORKINGORK_Info()
 {
-	AI_Output (other, self,"Grd_277_Gardist_WORKINGORK_Info_15_01"); //Myslím, e drtièka je u opravená.
-	AI_Output (self, other,"Grd_277_Gardist_WORKINGORK_Info_06_02"); //Jistì, kdy mají lidi pracovat, tak jsme rychlí.
+	AI_Output (other, self,"Grd_277_Gardist_WORKINGORK_Info_15_01"); //MyslÃ­m, Å¾e drtiÄka je uÅ¾ opravenÃ¡.
+	AI_Output (self, other,"Grd_277_Gardist_WORKINGORK_Info_06_02"); //JistÄ›, kdyÅ¾ majÃ­ lidi pracovat, tak jsme rychlÃ­.
 };  

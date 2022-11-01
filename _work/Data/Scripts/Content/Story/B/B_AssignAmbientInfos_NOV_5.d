@@ -37,7 +37,7 @@ INSTANCE Info_Nov_5_EinerVonEuchWerden (C_INFO) // E1
 	condition	= Info_Nov_5_EinerVonEuchWerden_Condition;
 	information	= Info_Nov_5_EinerVonEuchWerden_Info;
 	permanent	= 1;
-	description = "Jak se mùu pøidat k táboru?";
+	description = "Jak se mÅ¯Å¾u pÅ™idat k tÃ¡boru?";
 };                       
 
 FUNC INT Info_Nov_5_EinerVonEuchWerden_Condition()
@@ -50,9 +50,9 @@ FUNC INT Info_Nov_5_EinerVonEuchWerden_Condition()
 
 FUNC VOID Info_Nov_5_EinerVonEuchWerden_Info()
 {
-	AI_Output(other,self,"Info_Nov_5_EinerVonEuchWerden_15_00"); //Jak se mùu pøidat k táboru?
-	AI_Output(self,other,"Info_Nov_5_EinerVonEuchWerden_05_01"); //Není nic jednoduššího. Prostì øekneš pár mladım Guru. Pomùou ti.
-	AI_Output(self,other,"Info_Nov_5_EinerVonEuchWerden_05_02"); //Bude se ti tu líbit, uvidíš.
+	AI_Output(other,self,"Info_Nov_5_EinerVonEuchWerden_15_00"); //Jak se mÅ¯Å¾u pÅ™idat k tÃ¡boru?
+	AI_Output(self,other,"Info_Nov_5_EinerVonEuchWerden_05_01"); //NenÃ­ nic jednoduÅ¡Å¡Ã­ho. ProstÄ› Å™ekneÅ¡ pÃ¡r mladÃ½m Guru. PomÅ¯Å¾ou ti.
+	AI_Output(self,other,"Info_Nov_5_EinerVonEuchWerden_05_02"); //Bude se ti tu lÃ­bit, uvidÃ­Å¡.
 };
 
 // *************************************************************************
@@ -75,8 +75,8 @@ FUNC INT Info_Nov_5_WichtigePersonen_Condition()
 
 FUNC VOID Info_Nov_5_WichtigePersonen_Info()
 {
-	AI_Output(other,self,"Info_Nov_5_WichtigePersonen_15_00"); //Kdo tady má velení?
-	AI_Output(self,other,"Info_Nov_5_WichtigePersonen_05_01"); //Guru mají všechno pod kontrolou. Pokud ale na sebe nebudeš pøitahovat pozornost, nechají tì na pokoji
+	AI_Output(other,self,"Info_Nov_5_WichtigePersonen_15_00"); //Kdo tady mÃ¡ velenÃ­?
+	AI_Output(self,other,"Info_Nov_5_WichtigePersonen_05_01"); //Guru majÃ­ vÅ¡echno pod kontrolou. Pokud ale na sebe nebudeÅ¡ pÅ™itahovat pozornost, nechajÃ­ tÄ› na pokoji
 };
 
 // *************************************************************************
@@ -89,7 +89,7 @@ INSTANCE Info_Nov_5_DasLager(C_INFO)
 	condition	= Info_Nov_5_DasLager_Condition;
 	information	= Info_Nov_5_DasLager_Info;
 	permanent	= 1;
-	description = "Co mi mùeš øíci o táboøe?";
+	description = "Co mi mÅ¯Å¾eÅ¡ Å™Ã­ci o tÃ¡boÅ™e?";
 };                       
 
 FUNC INT Info_Nov_5_DasLager_Condition()
@@ -99,11 +99,11 @@ FUNC INT Info_Nov_5_DasLager_Condition()
 
 FUNC VOID Info_Nov_5_DasLager_Info()
 {
-	AI_Output(other,self,"Info_Nov_5_DasLager_15_00"); //Co mi mùeš øíci o táboru?
-	AI_Output(self,other,"Info_Nov_5_DasLager_05_01"); //Je to nejlepší místo v celé téhle proklaté kolonii.
-	AI_Output(self,other,"Info_Nov_5_DasLager_05_02"); //Dokonce i kdy nebudeš vìøit Spáèovu uèení, dostaneš svùj denní pøídìl drogy z bain. Všechno, co musíš udìlat, je øíci si Fortunovi.
+	AI_Output(other,self,"Info_Nov_5_DasLager_15_00"); //Co mi mÅ¯Å¾eÅ¡ Å™Ã­ci o tÃ¡boru?
+	AI_Output(self,other,"Info_Nov_5_DasLager_05_01"); //Je to nejlepÅ¡Ã­ mÃ­sto v celÃ© tÃ©hle proklatÃ© kolonii.
+	AI_Output(self,other,"Info_Nov_5_DasLager_05_02"); //Dokonce i kdyÅ¾ nebudeÅ¡ vÄ›Å™it SpÃ¡Äovu uÄenÃ­, dostaneÅ¡ svÅ¯j dennÃ­ pÅ™Ã­dÄ›l drogy z baÅ¾in. VÅ¡echno, co musÃ­Å¡ udÄ›lat, je Å™Ã­ci si Fortunovi.
 	AI_Output(other,self,"Info_Nov_5_DasLager_15_03"); //Kde ho najdu?
-	AI_Output(self,other,"Info_Nov_5_DasLager_05_04"); //Dole pod dílnou Cora Kaloma, kousek od velkého templáøského dvora.
+	AI_Output(self,other,"Info_Nov_5_DasLager_05_04"); //Dole pod dÃ­lnou Cora Kaloma, kousek od velkÃ©ho templÃ¡Å™skÃ©ho dvora.
 	
 	var C_NPC CorKalom;		CorKalom = Hlp_GetNpc(Gur_1201_CorKalom);
 	CorKalom.aivar[AIV_FINDABLE] = TRUE;
@@ -130,8 +130,8 @@ FUNC INT Info_Nov_5_DieLage_Condition()
 FUNC VOID Info_Nov_5_DieLage_Info()
 {
 	AI_Output(other,self,"Info_Nov_5_DieLage_15_00"); //Jak to jde?
-	AI_Output(self,other,"Info_Nov_5_DieLage_05_01"); //Nemùu si stìovat. Ty jsi tady novı?
-	AI_Output(other,self,"Info_Nov_5_DieLage_15_02"); //Jen jsem právì pøišel.
+	AI_Output(self,other,"Info_Nov_5_DieLage_05_01"); //NemÅ¯Å¾u si stÄ›Å¾ovat. Ty jsi tady novÃ½?
+	AI_Output(other,self,"Info_Nov_5_DieLage_15_02"); //Jen jsem prÃ¡vÄ› pÅ™iÅ¡el.
 };
 	
 // *************************************************************************

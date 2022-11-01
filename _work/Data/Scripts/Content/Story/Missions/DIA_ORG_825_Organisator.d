@@ -33,7 +33,7 @@ instance  Org_825_Organisator_PERM (C_INFO)
 	condition	= Org_825_Organisator_PERM_Condition;
 	information	= Org_825_Organisator_PERM_Info;
 	permanent	= 1;
-	description = "Co tady støežíte?";
+	description = "Co tady stÅ™eÅ¾Ã­te?";
 };                       
 
 FUNC int  Org_825_Organisator_PERM_Condition()
@@ -43,7 +43,7 @@ FUNC int  Org_825_Organisator_PERM_Condition()
 
 FUNC VOID  Org_825_Organisator_PERM_Info()
 {
-	AI_Output (other, self,"Org_825_Organisator_PERM_15_00"); //Co tady støežíte?
-	AI_Output (self, other,"Org_825_Organisator_PERM_07_01"); //Dáváme pozor, aby se Leeovi ani Gomezovi lidi nedostali pøíliš blízko k Laresovi.
+	AI_Output (other, self,"Org_825_Organisator_PERM_15_00"); //Co tady stÅ™eÅ¾Ã­te?
+	AI_Output (self, other,"Org_825_Organisator_PERM_07_01"); //DÃ¡vÃ¡me pozor, aby se Leeovi ani Gomezovi lidi nedostali pÅ™Ã­liÅ¡ blÃ­zko k Laresovi.
 	AI_StopProcessInfos	(self);
 };

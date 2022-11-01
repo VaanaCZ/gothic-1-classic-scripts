@@ -33,7 +33,7 @@ INSTANCE DIA_Senyan_Hello(C_INFO)
 	condition	= DIA_Senyan_Hello_Condition;
 	information	= DIA_Senyan_Hello_Info;
 	permanent	= 0;
-	description = "Ty jsi ze Svobodného dolu, že jo?";
+	description = "Ty jsi ze SvobodnÃ©ho dolu, Å¾e jo?";
 };                       
 
 FUNC INT DIA_Senyan_Hello_Condition()
@@ -43,8 +43,8 @@ FUNC INT DIA_Senyan_Hello_Condition()
 
 FUNC VOID DIA_Senyan_Hello_Info()
 {	
-	AI_Output (other, self,"DIA_Senyan_Hello_15_00"); //Ty jsi ze Svobodného dolu, že jo?
-	AI_Output (self, other,"DIA_Senyan_Hello_01_01"); //Ano. Jak jsi na to pøišel?
+	AI_Output (other, self,"DIA_Senyan_Hello_15_00"); //Ty jsi ze SvobodnÃ©ho dolu, Å¾e jo?
+	AI_Output (self, other,"DIA_Senyan_Hello_01_01"); //Ano. Jak jsi na to pÅ™iÅ¡el?
 	AI_StopProcessInfos	(self);
 };
 
@@ -73,6 +73,6 @@ FUNC INT DIA_Senyan_JustTalk_Condition()
 FUNC VOID DIA_Senyan_JustTalk_Info()
 {	
 	AI_Output (other, self,"DIA_Senyan_JustTalk_15_00"); //Chci s tebou mluvit.
-	AI_Output (self, other,"DIA_Senyan_JustTalk_01_01"); //Nejsem tu kvùli mluvení.
+	AI_Output (self, other,"DIA_Senyan_JustTalk_01_01"); //Nejsem tu kvÅ¯li mluvenÃ­.
 	AI_StopProcessInfos	(self);
 };

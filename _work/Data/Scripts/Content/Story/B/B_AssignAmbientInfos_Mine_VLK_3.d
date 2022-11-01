@@ -37,7 +37,7 @@ INSTANCE Info_Mine_Vlk_3_Mine (C_INFO) // E1
 	condition	= Info_Mine_Vlk_3_Mine_Condition;
 	information	= Info_Mine_Vlk_3_Mine_Info;
 	permanent	= 1;
-	description = "Øekni mi nìco o dole.";
+	description = "Å˜ekni mi nÄ›co o dole.";
 };                       
 
 FUNC INT Info_Mine_Vlk_3_Mine_Condition()
@@ -50,8 +50,8 @@ FUNC INT Info_Mine_Vlk_3_Mine_Condition()
 
 FUNC VOID Info_Mine_Vlk_3_Mine_Info()
 {
-	AI_Output(other,self,"Info_Mine_Vlk_3_Mine_15_00"); //Povídej mi o dole.
-	AI_Output(self,other,"Info_Mine_Vlk_3_Mine_01_01"); //Celı tıden musíme tvrdì pracovat a nikdy se nedoèkáme denního svìtla. Není úniku. Jediná cesta odtud je smrt.
+	AI_Output(other,self,"Info_Mine_Vlk_3_Mine_15_00"); //PovÃ­dej mi o dole.
+	AI_Output(self,other,"Info_Mine_Vlk_3_Mine_01_01"); //CelÃ½ tÃ½den musÃ­me tvrdÄ› pracovat a nikdy se nedoÄkÃ¡me dennÃ­ho svÄ›tla. NenÃ­ Ãºniku. JedinÃ¡ cesta odtud je smrt.
 	
 };
 
@@ -78,8 +78,8 @@ FUNC INT Info_Mine_Vlk_3_WichtigePersonen_Condition()
 
 FUNC VOID Info_Mine_Vlk_3_WichtigePersonen_Info()
 {
-	AI_Output(other,self,"Info_Mine_Vlk_3_WichtigePersonen_15_00"); //Kdo tady má velení?
-	AI_Output(self,other,"Info_Mine_Vlk_3_WichtigePersonen_01_01"); //Ian je mùj šéf. Asghan je velitel stráe.
+	AI_Output(other,self,"Info_Mine_Vlk_3_WichtigePersonen_15_00"); //Kdo tady mÃ¡ velenÃ­?
+	AI_Output(self,other,"Info_Mine_Vlk_3_WichtigePersonen_01_01"); //Ian je mÅ¯j Å¡Ã©f. Asghan je velitel strÃ¡Å¾e.
 };
 
 // *************************************************************************
@@ -92,7 +92,7 @@ INSTANCE Info_Mine_Vlk_3_Minecrawler(C_INFO)
 	condition	= Info_Mine_Vlk_3_Minecrawler_Condition;
 	information	= Info_Mine_Vlk_3_Minecrawler_Info;
 	permanent	= 1;
-	description = "Co víš o èervech?";
+	description = "Co vÃ­Å¡ o Äervech?";
 };                       
 
 FUNC INT Info_Mine_Vlk_3_Minecrawler_Condition()
@@ -105,9 +105,9 @@ FUNC INT Info_Mine_Vlk_3_Minecrawler_Condition()
 
 FUNC VOID Info_Mine_Vlk_3_Minecrawler_Info()
 {
-	AI_Output(other,self,"Info_Mine_Vlk_3_Minecrawler_15_00"); //Co víš o dùlních èervech?
-	AI_Output(self,other,"Info_Mine_Vlk_3_Minecrawler_01_01"); //Jak se nejlíp vypoøádat s èervy? Útìkem. Utíkat, co ti síly staèí.
-	AI_Output(self,other,"Info_Mine_Vlk_3_Minecrawler_01_02"); //Kdy se netrefíš, je konec. Take nesmíš nikdy minout.
+	AI_Output(other,self,"Info_Mine_Vlk_3_Minecrawler_15_00"); //Co vÃ­Å¡ o dÅ¯lnÃ­ch Äervech?
+	AI_Output(self,other,"Info_Mine_Vlk_3_Minecrawler_01_01"); //Jak se nejlÃ­p vypoÅ™Ã¡dat s Äervy? ÃštÄ›kem. UtÃ­kat, co ti sÃ­ly staÄÃ­.
+	AI_Output(self,other,"Info_Mine_Vlk_3_Minecrawler_01_02"); //KdyÅ¾ se netrefÃ­Å¡, je konec. TakÅ¾e nesmÃ­Å¡ nikdy minout.
 };
 
 // *************************************************************************
@@ -134,8 +134,8 @@ FUNC INT Info_Mine_Vlk_3_DieLage_Condition()
 FUNC VOID Info_Mine_Vlk_3_DieLage_Info()
 {
 	AI_Output(other,self,"Info_Mine_Vlk_3_DieLage_15_00"); //Jak to jde?
-	AI_Output(self,other,"Info_Mine_Vlk_3_DieLage_01_01"); //Skvìle, bolí mì záda, ruce jako by mi upadly, jazyk suchı jako troud a k tomu jsem na smrt unavenı.
-	AI_Output(self,other,"Info_Mine_Vlk_3_DieLage_01_02"); //A neustálé údery krumpáèe mì pomalu tvarují do oblouku.
+	AI_Output(self,other,"Info_Mine_Vlk_3_DieLage_01_01"); //SkvÄ›le, bolÃ­ mÄ› zÃ¡da, ruce jako by mi upadly, jazyk suchÃ½ jako troud a k tomu jsem na smrt unavenÃ½.
+	AI_Output(self,other,"Info_Mine_Vlk_3_DieLage_01_02"); //A neustÃ¡lÃ© Ãºdery krumpÃ¡Äe mÄ› pomalu tvarujÃ­ do oblouku.
 };
 	
 // *************************************************************************

@@ -37,7 +37,7 @@ INSTANCE Info_SFB_1_EinerVonEuchWerden (C_INFO)
 	condition	= Info_SFB_1_EinerVonEuchWerden_Condition;
 	information	= Info_SFB_1_EinerVonEuchWerden_Info;
 	permanent	= 1;
-	description = "Jak se mùu pøidat do spolku rudaøù?";
+	description = "Jak se mÅ¯Å¾u pÅ™idat do spolku rudaÅ™Å¯?";
 };                       
 
 FUNC INT Info_SFB_1_EinerVonEuchWerden_Condition()
@@ -50,10 +50,10 @@ FUNC INT Info_SFB_1_EinerVonEuchWerden_Condition()
 
 FUNC VOID Info_SFB_1_EinerVonEuchWerden_Info()
 {
-	AI_Output(other,self,"Info_SFB_1_EinerVonEuchWerden_15_00"); //Jak se mùu pøidat do spolku rudaøù?
-	AI_Output(self,other,"Info_SFB_1_EinerVonEuchWerden_01_01"); //Pøidat se k nám? Nemysli na to. Nepracujeme tu, pokud nás k tomu nìkdo nedonutí.
-	AI_Output(self,other,"Info_SFB_1_EinerVonEuchWerden_01_02"); //Jestli si myslíš, e se tu mùeš jen tak poflakovat, tak uvidíš, pøíteli.
-	AI_Output(self,other,"Info_SFB_1_EinerVonEuchWerden_01_03"); //Jestli si ještì myslíš, e je tohle místo pro tebe to pravé, pak by sis mìl promluvit se Swineym. To je ten rudaø, co tady celı den pokuøuje.
+	AI_Output(other,self,"Info_SFB_1_EinerVonEuchWerden_15_00"); //Jak se mÅ¯Å¾u pÅ™idat do spolku rudaÅ™Å¯?
+	AI_Output(self,other,"Info_SFB_1_EinerVonEuchWerden_01_01"); //PÅ™idat se k nÃ¡m? Nemysli na to. Nepracujeme tu, pokud nÃ¡s k tomu nÄ›kdo nedonutÃ­.
+	AI_Output(self,other,"Info_SFB_1_EinerVonEuchWerden_01_02"); //Jestli si myslÃ­Å¡, Å¾e se tu mÅ¯Å¾eÅ¡ jen tak poflakovat, tak uvidÃ­Å¡, pÅ™Ã­teli.
+	AI_Output(self,other,"Info_SFB_1_EinerVonEuchWerden_01_03"); //Jestli si jeÅ¡tÄ› myslÃ­Å¡, Å¾e je tohle mÃ­sto pro tebe to pravÃ©, pak by sis mÄ›l promluvit se Swineym. To je ten rudaÅ™, co tady celÃ½ den pokuÅ™uje.
 };
 
 // *************************************************************************
@@ -66,7 +66,7 @@ INSTANCE Info_SFB_1_WichtigePersonen(C_INFO)
 	condition	= Info_SFB_1_WichtigePersonen_Condition;
 	information	= Info_SFB_1_WichtigePersonen_Info;
 	permanent	= 1;
-	description = "Kdo tady má velení?";
+	description = "Kdo tady mÃ¡ velenÃ­?";
 };                       
 
 FUNC INT Info_SFB_1_WichtigePersonen_Condition()
@@ -76,8 +76,8 @@ FUNC INT Info_SFB_1_WichtigePersonen_Condition()
 
 FUNC VOID Info_SFB_1_WichtigePersonen_Info()
 {
-	AI_Output(other,self,"Info_SFB_1_WichtigePersonen_15_00"); //Kdo tady má velení?
-	AI_Output(self,other,"Info_SFB_1_WichtigePersonen_01_01"); //Velení? Rozhlédni se kolem. Urèitì nikdo, kdo by se døel do úmoru a sbíral rudu. To je jisté.
+	AI_Output(other,self,"Info_SFB_1_WichtigePersonen_15_00"); //Kdo tady mÃ¡ velenÃ­?
+	AI_Output(self,other,"Info_SFB_1_WichtigePersonen_01_01"); //VelenÃ­? RozhlÃ©dni se kolem. UrÄitÄ› nikdo, kdo by se dÅ™el do Ãºmoru a sbÃ­ral rudu. To je jistÃ©.
 };
 
 // *************************************************************************
@@ -101,8 +101,8 @@ FUNC INT Info_SFB_1_DasLager_Condition()
 FUNC VOID Info_SFB_1_DasLager_Info()
 {
 	AI_Output(other,self,"Info_SFB_1_DasLager_15_00"); //Co to je?
-	AI_Output(self,other,"Info_SFB_1_DasLager_01_01"); //Co takhle mùe vypadat? Královskı palác?
-	AI_Output(self,other,"Info_SFB_1_DasLager_01_02"); //Jestli chceš opravdu pracovat ve Svobodném dole, musíš se nejdøíve vypracovat v Kotlinì a ukázat, jestli máš pro nás cenu.
+	AI_Output(self,other,"Info_SFB_1_DasLager_01_01"); //Co takhle mÅ¯Å¾e vypadat? KrÃ¡lovskÃ½ palÃ¡c?
+	AI_Output(self,other,"Info_SFB_1_DasLager_01_02"); //Jestli chceÅ¡ opravdu pracovat ve SvobodnÃ©m dole, musÃ­Å¡ se nejdÅ™Ã­ve vypracovat v KotlinÄ› a ukÃ¡zat, jestli mÃ¡Å¡ pro nÃ¡s cenu.
 };
 
 // *************************************************************************
@@ -125,9 +125,9 @@ FUNC INT Info_SFB_1_DieLage_Condition()
 
 FUNC VOID Info_SFB_1_DieLage_Info()
 {
-	AI_Output(other,self,"Info_SFB_1_DieLage_15_00"); //Jak se máš?
-	AI_Output(self,other,"Info_SFB_1_DieLage_01_01"); //Jak to vidím? Špatnì jako vdycky. Nic k jídlu, spousta práce.
-	AI_Output(self,other,"Info_SFB_1_DieLage_01_02"); //Jedinı, kdo nic nedìlá, je Swiney. Okyl ho jmenoval mluvèím rudaøù. Teï se tu celı den rozhlíí a kontroluje, jestli nemá na rukou mozoly.
+	AI_Output(other,self,"Info_SFB_1_DieLage_15_00"); //Jak se mÃ¡Å¡?
+	AI_Output(self,other,"Info_SFB_1_DieLage_01_01"); //Jak to vidÃ­m? Å patnÄ› jako vÅ¾dycky. Nic k jÃ­dlu, spousta prÃ¡ce.
+	AI_Output(self,other,"Info_SFB_1_DieLage_01_02"); //JedinÃ½, kdo nic nedÄ›lÃ¡, je Swiney. Okyl ho jmenoval mluvÄÃ­m rudaÅ™Å¯. TeÄ se tu celÃ½ den rozhlÃ­Å¾Ã­ a kontroluje, jestli nemÃ¡ na rukou mozoly.
 };
 	
 // *************************************************************************

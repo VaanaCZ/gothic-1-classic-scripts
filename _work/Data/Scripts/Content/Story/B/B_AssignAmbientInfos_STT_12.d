@@ -37,7 +37,7 @@ INSTANCE Info_Stt_12_EinerVonEuchWerden (C_INFO) // E1
 	condition	= Info_Stt_12_EinerVonEuchWerden_Condition;
 	information	= Info_Stt_12_EinerVonEuchWerden_Info;
 	permanent	= 1;
-	description = "Chtìl bych se dát ke Stínùm.";
+	description = "ChtÄ›l bych se dÃ¡t ke StÃ­nÅ¯m.";
 };                       
 
 FUNC INT Info_Stt_12_EinerVonEuchWerden_Condition()
@@ -50,11 +50,11 @@ FUNC INT Info_Stt_12_EinerVonEuchWerden_Condition()
 
 FUNC VOID Info_Stt_12_EinerVonEuchWerden_Info()
 {
-	AI_Output(other,self,"Info_Stt_12_EinerVonEuchWerden_15_00"); //Chtìl bych se dát ke Stínùm.
-	AI_Output(self,other,"Info_Stt_12_EinerVonEuchWerden_12_01"); //Oh. Pak bys mìl vìdìt, e Gomez neodpouští chyby. Jestli chceš bıt jedním z nás, musíš bıt pøipravenı jít za ním do ohnì!
-	AI_Output(self,other,"Info_Stt_12_EinerVonEuchWerden_12_02"); //Pøijal jen polovinu tìch, co to zkoušeli.
-	AI_Output(other,self,"Info_Stt_12_EinerVonEuchWerden_15_03"); //Co se stalo s tìmi, kteøí neuspìli?
-	AI_Output(self,other,"Info_Stt_12_EinerVonEuchWerden_12_04"); //Nejspíš sedí v Novém táboøe a pøevykují rıi. Hahaha.
+	AI_Output(other,self,"Info_Stt_12_EinerVonEuchWerden_15_00"); //ChtÄ›l bych se dÃ¡t ke StÃ­nÅ¯m.
+	AI_Output(self,other,"Info_Stt_12_EinerVonEuchWerden_12_01"); //Oh. Pak bys mÄ›l vÄ›dÄ›t, Å¾e Gomez neodpouÅ¡tÃ­ chyby. Jestli chceÅ¡ bÃ½t jednÃ­m z nÃ¡s, musÃ­Å¡ bÃ½t pÅ™ipravenÃ½ jÃ­t za nÃ­m do ohnÄ›!
+	AI_Output(self,other,"Info_Stt_12_EinerVonEuchWerden_12_02"); //PÅ™ijal jen polovinu tÄ›ch, co to zkouÅ¡eli.
+	AI_Output(other,self,"Info_Stt_12_EinerVonEuchWerden_15_03"); //Co se stalo s tÄ›mi, kteÅ™Ã­ neuspÄ›li?
+	AI_Output(self,other,"Info_Stt_12_EinerVonEuchWerden_12_04"); //NejspÃ­Å¡ sedÃ­ v NovÃ©m tÃ¡boÅ™e a pÅ™eÅ¾vykujÃ­ rÃ½Å¾i. Hahaha.
 };
 
 // *************************************************************************
@@ -67,7 +67,7 @@ INSTANCE Info_Stt_12_WichtigePersonen(C_INFO)
 	condition	= Info_Stt_12_WichtigePersonen_Condition;
 	information	= Info_Stt_12_WichtigePersonen_Info;
 	permanent	= 1;
-	description = "Kdo je tady šéf?";
+	description = "Kdo je tady Å¡Ã©f?";
 };                       
 
 FUNC INT Info_Stt_12_WichtigePersonen_Condition()
@@ -77,8 +77,8 @@ FUNC INT Info_Stt_12_WichtigePersonen_Condition()
 
 FUNC VOID Info_Stt_12_WichtigePersonen_Info()
 {
-	AI_Output(other,self,"Info_Stt_12_WichtigePersonen_15_00"); //Kdo je tady šéf?
-	AI_Output(self,other,"Info_Stt_12_WichtigePersonen_12_01"); //Za hlavu Stínù se dá povaovat Diego. Ale o tom, kdo se mùe setkat s Gomezem, rozhoduje Thorus.
+	AI_Output(other,self,"Info_Stt_12_WichtigePersonen_15_00"); //Kdo je tady Å¡Ã©f?
+	AI_Output(self,other,"Info_Stt_12_WichtigePersonen_12_01"); //Za hlavu StÃ­nÅ¯ se dÃ¡ povaÅ¾ovat Diego. Ale o tom, kdo se mÅ¯Å¾e setkat s Gomezem, rozhoduje Thorus.
 	
 	var C_NPC Diego;		Diego 	= Hlp_GetNpc(PC_Thief);
 	Diego.aivar[AIV_FINDABLE] = TRUE;
@@ -96,7 +96,7 @@ INSTANCE Info_Stt_12_DasLager(C_INFO)
 	condition	= Info_Stt_12_DasLager_Condition;
 	information	= Info_Stt_12_DasLager_Info;
 	permanent	= 1;
-	description = "Chci vìdìt, co tenhle tábor mùe nabídnout.";
+	description = "Chci vÄ›dÄ›t, co tenhle tÃ¡bor mÅ¯Å¾e nabÃ­dnout.";
 };                       
 
 FUNC INT Info_Stt_12_DasLager_Condition()
@@ -106,8 +106,8 @@ FUNC INT Info_Stt_12_DasLager_Condition()
 
 FUNC VOID Info_Stt_12_DasLager_Info()
 {
-	AI_Output(other,self,"Info_Stt_12_DasLager_15_00"); //Chci vìdìt, co tenhle tábor mùe nabídnout.
-	AI_Output(self,other,"Info_Stt_12_DasLager_12_01"); //Pak se radìji zeptej kopáèù. Stejnì nemají celı den co na práci.
+	AI_Output(other,self,"Info_Stt_12_DasLager_15_00"); //Chci vÄ›dÄ›t, co tenhle tÃ¡bor mÅ¯Å¾e nabÃ­dnout.
+	AI_Output(self,other,"Info_Stt_12_DasLager_12_01"); //Pak se radÄ›ji zeptej kopÃ¡ÄÅ¯. StejnÄ› nemajÃ­ celÃ½ den co na prÃ¡ci.
 };
 
 // *************************************************************************
@@ -131,7 +131,7 @@ FUNC INT Info_Stt_12_DieLage_Condition()
 FUNC VOID Info_Stt_12_DieLage_Info()
 {
 	AI_Output(other,self,"Info_Stt_12_DieLage_15_00"); //Jak to jde?
-	AI_Output(self,other,"Info_Stt_12_DieLage_12_01"); //Co chceš?
+	AI_Output(self,other,"Info_Stt_12_DieLage_12_01"); //Co chceÅ¡?
 };
 	
 // *************************************************************************

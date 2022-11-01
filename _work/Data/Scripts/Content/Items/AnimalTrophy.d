@@ -1,9 +1,9 @@
 // ************************************************************************************************
-// Wert von Tiertroph‰en
+// Wert von Tiertroph√§en
 // ************************************************************************************************
 
-// FIXME: welche Troph‰e wann freigeschaltet? Wert tunen!
-const int	Value_Z‰hne				=	10;
+// FIXME: welche Troph√§e wann freigeschaltet? Wert tunen!
+const int	Value_Z√§hne				=	10;
 const int	Value_Krallen			=	15;
 
 const int	Value_Wolfsfell			=	10;
@@ -22,17 +22,17 @@ const int	Value_Sumpfhaihaut		=	200;
 const int	Value_Trollfell			=	300;
 
 // Bloodfly
-const int	Value_Fl¸gel			=	15;
+const int	Value_Fl√ºgel			=	15;
 const int	Value_Stachel			=	25;
 
 // Durch Ulu-Mulu freigeschaltet
 // bei Auftragsvergabe werden je 3 neue Monster gespawnt
 const int	Value_Feuerzunge		=	500;
-const int	Value_Sumpfhaiz‰hne		=	500;
+const int	Value_Sumpfhaiz√§hne		=	500;
 const int	Value_Shadowbeasthorn	=	500;
 const int	Value_Trollhauer		=	500;
 
-// Golems beim D‰monenbeschwˆrer
+// Golems beim D√§monenbeschw√∂rer
 const int	Value_Steinherz			=	1000;
 const int	Value_Feuerherz			=	1000;
 const int	Value_Eisherz			=	1000;
@@ -42,21 +42,21 @@ const int	Value_Eistueck			=	100;
 /*
 So in der Tasche
 ----------------
-ItAt_Meatbug_01 	//Meatbug			Kˆrper (Essen)		(Item-Instanz in Food.d)
+ItAt_Meatbug_01 	//Meatbug			K√∂rper (Essen)		(Item-Instanz in Food.d)
 ItFoMuttonRaw		//Scavenger			2 Bollen			OK
 					//Molerats			2 Bollen			OK
 					//Shadowbeast		4 Bollen			OK
 
-ItAt_Bloodfly_01 	//Bloodfly			Fl¸gel				OK
+ItAt_Bloodfly_01 	//Bloodfly			Fl√ºgel				OK
 
-Durch J‰ger freigeschaltet (noch nicht verteilt)
+Durch J√§ger freigeschaltet (noch nicht verteilt)
 --------------------------
-ItAt_Teeth_01 		//Wolf				2 Z‰hne				OK
-					//Schwarzer Wolf	2 Z‰hne				OK
-					//Snapper			10 Z‰hne			OK
-					//Orcbiter			2 Z‰hne				OK
-					//Shadowbeast		4 Z‰hne				OK
-					//Bloodhound		4 Z‰hne				OK
+ItAt_Teeth_01 		//Wolf				2 Z√§hne				OK
+					//Schwarzer Wolf	2 Z√§hne				OK
+					//Snapper			10 Z√§hne			OK
+					//Orcbiter			2 Z√§hne				OK
+					//Shadowbeast		4 Z√§hne				OK
+					//Bloodhound		4 Z√§hne				OK
 //--------------------------------------------------------------
 ItAt_Claws_01 		//Waran				4 Klauen			OK
 					//Feuerechse		4 Klauen			OK
@@ -85,7 +85,7 @@ ItAt_Crawler_02 	//Crawler			Panzerplatten		OK
 Durch Ulu-Mulu freigeschaltet
 -----------------------------
 ItAt_Waran_01 		//Feuerechse		Flammenzunge		OK
-ItAt_Swampshark_02 	//Sumpfhai			Z‰hne des Sumpfhais	OK
+ItAt_Swampshark_02 	//Sumpfhai			Z√§hne des Sumpfhais	OK
 ItAt_Shadow_02 		//Shadowbeast		Horn				OK
 ItAt_Troll_02 		//Troll				Hauer				OK
 */
@@ -98,19 +98,19 @@ INSTANCE ItAt_Teeth_01 (C_Item)
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
 
-	value 				=	Value_Z‰hne;
+	value 				=	Value_Z√§hne;
 
 	visual 				=	"ItAt_Teeth_01.3DS";
 	material 			=	MAT_LEATHER;
 
 	description			= name;
-	TEXT[4]				= NAME_Value;					COUNT[4]	= Value_Z‰hne;
+	TEXT[4]				= NAME_Value;					COUNT[4]	= Value_Z√§hne;
 };
 
 /******************************************************************************************/
 INSTANCE ItAt_Wolf_01 (C_Item)
 {
-	name 				=	"VlËÌ k˘ûe";
+	name 				=	"Vlƒç√≠ k≈Ø≈æe";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -126,7 +126,7 @@ INSTANCE ItAt_Wolf_01 (C_Item)
 /******************************************************************************************/
 INSTANCE ItAt_Wolf_02 (C_Item)
 {
-	name 				=	"K˘ûe ze sk¯etÌho psa";
+	name 				=	"K≈Ø≈æe ze sk≈ôet√≠ho psa";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -142,7 +142,7 @@ INSTANCE ItAt_Wolf_02 (C_Item)
 /******************************************************************************************/
 INSTANCE ItAt_Waran_01 (C_Item)
 {
-	name 				=	"Ohniv˝ jazyk";
+	name 				=	"Ohniv√Ω jazyk";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -158,7 +158,7 @@ INSTANCE ItAt_Waran_01 (C_Item)
 /******************************************************************************************/
 INSTANCE ItAt_Claws_01 (C_Item)
 {
-	name 				=	"Dr·py";
+	name 				=	"Dr√°py";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -174,7 +174,7 @@ INSTANCE ItAt_Claws_01 (C_Item)
 /******************************************************************************************/
 INSTANCE ItAt_Crawler_02 (C_Item)
 {
-	name 				=	"Pl·tov· zbroj";
+	name 				=	"Pl√°tov√° zbroj";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI|ITEM_MISSION;
@@ -184,14 +184,14 @@ INSTANCE ItAt_Crawler_02 (C_Item)
 	visual 				=	"ItAt_Crawler_02.3DS";
 	material 			=	MAT_WOOD;
 
-	description			= "Zbroj z krun˝¯e d˘lnÌho Ëerva";
+	description			= "Zbroj z krun√Ω≈ôe d≈Øln√≠ho ƒçerva";
 	TEXT[4]				= NAME_Value;					COUNT[4]	= Value_Panzerplatte;
 };
 
 /******************************************************************************************/
 INSTANCE ItAt_Crawler_01 (C_Item)
 {
-	name 				=	"»elisti d˘lnÌho Ëerva";
+	name 				=	"ƒåelisti d≈Øln√≠ho ƒçerva";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -208,7 +208,7 @@ INSTANCE ItAt_Crawler_01 (C_Item)
 /******************************************************************************************/
 INSTANCE ItAt_Shadow_01 (C_Item)
 {
-	name 				=	"K˘ûe";
+	name 				=	"K≈Ø≈æe";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -218,7 +218,7 @@ INSTANCE ItAt_Shadow_01 (C_Item)
 	visual 				=	"ItAt_Shadowbeast_01.3DS";
 	material 			=	MAT_LEATHER;
 
-	description			= "K˘ûe stÌnovÈ öelmy";
+	description			= "K≈Ø≈æe st√≠nov√© ≈°elmy";
 	TEXT[4]				= NAME_Value;					COUNT[4]	= Value_Shadowbeastfell;
 };
 
@@ -235,14 +235,14 @@ INSTANCE ItAt_Shadow_02 (C_Item)
 	visual 				=	"ItAt_Shadowbeast_02.3DS";
 	material 			=	MAT_LEATHER;
 
-	description			= "Roh stÌnovÈ öelmy";
+	description			= "Roh st√≠nov√© ≈°elmy";
 	TEXT[4]				= NAME_Value;					COUNT[4]	= Value_Shadowbeasthorn;
 };
 
 /******************************************************************************************/
 INSTANCE ItAt_Lurker_01 (C_Item)
 {
-	name 				=	"Dr·py ËÌhavce";
+	name 				=	"Dr√°py ƒç√≠havce";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -259,7 +259,7 @@ INSTANCE ItAt_Lurker_01 (C_Item)
 /******************************************************************************************/
 INSTANCE ItAt_Lurker_02 (C_Item)
 {
-	name 				=	"K˘ûe ËÌhavce";
+	name 				=	"K≈Ø≈æe ƒç√≠havce";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -276,7 +276,7 @@ INSTANCE ItAt_Lurker_02 (C_Item)
 /******************************************************************************************/
 INSTANCE ItAt_Troll_02 (C_Item)
 {
-	name 				=	"TrolÌ tes·k";
+	name 				=	"Trol√≠ tes√°k";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -293,7 +293,7 @@ INSTANCE ItAt_Troll_02 (C_Item)
 /******************************************************************************************/
 INSTANCE ItAt_Troll_01 (C_Item)
 {
-	name 				=	"TrolÌ k˘ûe";
+	name 				=	"Trol√≠ k≈Ø≈æe";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -309,7 +309,7 @@ INSTANCE ItAt_Troll_01 (C_Item)
 /******************************************************************************************/
 INSTANCE ItAt_Swampshark_01 (C_Item)
 {
-	name 				=	"K˘ûe baûinnÈho ûraloka";
+	name 				=	"K≈Ø≈æe ba≈æinn√©ho ≈æraloka";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -325,39 +325,39 @@ INSTANCE ItAt_Swampshark_01 (C_Item)
 /******************************************************************************************/
 INSTANCE ItAt_Swampshark_02 (C_Item)
 {
-	name 				=	"Zuby baûinnÈho ûraloka";
+	name 				=	"Zuby ba≈æinn√©ho ≈æraloka";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
 
-	value 				=	Value_Sumpfhaiz‰hne;
+	value 				=	Value_Sumpfhaiz√§hne;
 
 	visual 				=	"ItAt_Swampshark_02.3DS";
 	material 			=	MAT_LEATHER;
 
 	description			= name;
-	TEXT[4]				= NAME_Value;					COUNT[4]	= Value_Sumpfhaiz‰hne;
+	TEXT[4]				= NAME_Value;					COUNT[4]	= Value_Sumpfhaiz√§hne;
 };
 /******************************************************************************************/
 INSTANCE ItAt_Bloodfly_01 (C_Item)
 {
-	name 				=	"K¯Ìdla";
+	name 				=	"K≈ô√≠dla";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
 
-	value 				=	Value_Fl¸gel;
+	value 				=	Value_Fl√ºgel;
 
 	visual 				=	"ItAt_Bloodfly_01.3DS";
 	material 			=	MAT_LEATHER;
 
 	description			= name;
-	TEXT[4]				= NAME_Value;					COUNT[4]	= Value_Fl¸gel;
+	TEXT[4]				= NAME_Value;					COUNT[4]	= Value_Fl√ºgel;
 };
 /******************************************************************************************/
 INSTANCE ItAt_Bloodfly_02 (C_Item)
 {
-	name 				=	"éihadlo krvavÈ mouchy";
+	name 				=	"≈Ωihadlo krvav√© mouchy";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -376,7 +376,7 @@ INSTANCE ItAt_Bloodfly_02 (C_Item)
 /******************************************************************************************/
 INSTANCE ItAt_StoneGolem_01 (C_Item)
 {
-	name 				=	"Srdce kamennÈho golema";
+	name 				=	"Srdce kamenn√©ho golema";
 
 	mainflag 			=	ITEM_KAT_RUNE;
 	flags 				=	ITEM_MISSION;
@@ -388,9 +388,9 @@ INSTANCE ItAt_StoneGolem_01 (C_Item)
 	material 			=	MAT_STONE;
 
 	description			= name;
-	TEXT[0]				= "Toto je srdce vyjmutÈ ze zbytk˘";
-	TEXT[1]				= "poraûenÈho kamennÈho golema.";
-	TEXT[2]				= "M· moc odmrötit nep¯·tele"; 
+	TEXT[0]				= "Toto je srdce vyjmut√© ze zbytk≈Ø";
+	TEXT[1]				= "pora≈æen√©ho kamenn√©ho golema.";
+	TEXT[2]				= "M√° moc odmr≈°tit nep≈ô√°tele"; 
 	TEXT[3]				= "do vzduchu.";
 	TEXT[5]				= NAME_Value;					COUNT[5]	= Value_Steinherz;
 };
@@ -398,7 +398,7 @@ INSTANCE ItAt_StoneGolem_01 (C_Item)
 /******************************************************************************************/
 INSTANCE ItAt_FireGolem_01 (C_Item)
 {
-	name 				=	"Srdce ohnivÈho golema";
+	name 				=	"Srdce ohniv√©ho golema";
 
 	mainflag 			=	ITEM_KAT_RUNE;
 	flags 				=	ITEM_MISSION;
@@ -410,17 +410,17 @@ INSTANCE ItAt_FireGolem_01 (C_Item)
 	material 			=	MAT_STONE;
 
 	description			= name;
-	TEXT[0]				= "Toto je srdce vyjmutÈ ze zbytk˘";
-	TEXT[1]				= "poraûenÈho ohnivÈho golema.";
-	TEXT[2]				= "M· moc zap·lit";
-	TEXT[3]				= "nep¯Ìtele.";
+	TEXT[0]				= "Toto je srdce vyjmut√© ze zbytk≈Ø";
+	TEXT[1]				= "pora≈æen√©ho ohniv√©ho golema.";
+	TEXT[2]				= "M√° moc zap√°lit";
+	TEXT[3]				= "nep≈ô√≠tele.";
 	TEXT[5]				= NAME_Value;					COUNT[5]	= Value_Feuerherz;
 };
 
 /******************************************************************************************/
 INSTANCE ItAt_IceGolem_01 (C_Item)
 {
-	name 				=	"Srdce ledovÈho golema";
+	name 				=	"Srdce ledov√©ho golema";
 
 	mainflag 			=	ITEM_KAT_RUNE;
 	flags 				=	ITEM_MISSION;
@@ -432,9 +432,9 @@ INSTANCE ItAt_IceGolem_01 (C_Item)
 	material 			=	MAT_STONE;
 
 	description			= name;
-	TEXT[0]				= "Toto je srdce vyjmutÈ ze zbytk˘";
-	TEXT[1]				= "poraûenÈho ledovÈho golema.";
-	TEXT[2]				= "M· moc zmrazit nep¯Ìtele.";
+	TEXT[0]				= "Toto je srdce vyjmut√© ze zbytk≈Ø";
+	TEXT[1]				= "pora≈æen√©ho ledov√©ho golema.";
+	TEXT[2]				= "M√° moc zmrazit nep≈ô√≠tele.";
 	//TEXT[3]				= "zu Eis erstarren zu lassen.";
 	TEXT[5]				= NAME_Value;					COUNT[5]	= Value_Eisherz;
 };
@@ -442,7 +442,7 @@ INSTANCE ItAt_IceGolem_01 (C_Item)
 /******************************************************************************************/
 INSTANCE ItAt_IceGolem_02 (C_Item)
 {
-	name 				=	"Ë·st ledovÈho golema";
+	name 				=	"ƒç√°st ledov√©ho golema";
 
 	mainflag 			=	ITEM_KAT_RUNE;
 	flags 				=	0;
@@ -457,6 +457,6 @@ INSTANCE ItAt_IceGolem_02 (C_Item)
 
 	description			= name;
 	TEXT[0]				= "Toto je zbytek";
-	TEXT[1]				= "poraûenÈho ledovÈho golema.";
+	TEXT[1]				= "pora≈æen√©ho ledov√©ho golema.";
 	TEXT[4]				= NAME_Value;					COUNT[4]	= Value_Eistueck;
 };

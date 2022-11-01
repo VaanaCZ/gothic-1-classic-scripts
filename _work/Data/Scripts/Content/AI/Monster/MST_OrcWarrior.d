@@ -4,7 +4,7 @@
 
 PROTOTYPE Mst_Default_OrcWarrior(C_Npc)			
 {
-	name							=	"Sk¯etÌ bojovnÌk";
+	name							=	"Sk≈ôet√≠ bojovn√≠k";
 	guild							=	GIL_ORCWARRIOR;
 	npctype							=	NPCTYPE_GUARD;
 	voice							=	17;
@@ -66,7 +66,7 @@ func void Set_OrcWarrior_Visuals()
 INSTANCE OrcWarrior1	(Mst_Default_OrcWarrior)
 {
 	//-------- general --------
-	name							=	"Sk¯etÌ  ˙toËnÌk";
+	name							=	"Sk≈ôet√≠  √∫toƒçn√≠k";
 	level							=	25;
 
 	//-------- visual --------
@@ -93,7 +93,7 @@ INSTANCE OrcWarrior1	(Mst_Default_OrcWarrior)
 INSTANCE OrcWarrior2	(Mst_Default_OrcWarrior)
 {
 	//-------- general --------
-	name							=	"Sk¯etÌ bojovnÌk";
+	name							=	"Sk≈ôet√≠ bojovn√≠k";
 	level							=	30;
 
 	//-------- visual --------
@@ -120,7 +120,7 @@ INSTANCE OrcWarrior2	(Mst_Default_OrcWarrior)
 INSTANCE OrcWarrior3	(Mst_Default_OrcWarrior)
 {
 	//-------- general --------
-	name							=	"Sk¯etÌ  ¯adov˝ bojovnÌk";
+	name							=	"Sk≈ôet√≠  ≈ôadov√Ω bojovn√≠k";
 	level							=	35;
 
 	//-------- visual --------
@@ -147,7 +147,7 @@ INSTANCE OrcWarrior3	(Mst_Default_OrcWarrior)
 INSTANCE OrcWarrior4	(Mst_Default_OrcWarrior)
 {
 	//-------- general --------
-	name							=	"Sk¯etÌ chr·mov˝ bojovnÌk";
+	name							=	"Sk≈ôet√≠ chr√°mov√Ω bojovn√≠k";
 	level							=	40;
 
 	//-------- visual --------

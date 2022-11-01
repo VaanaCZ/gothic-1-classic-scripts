@@ -47,8 +47,8 @@ FUNC INT DIA_Jesse_Hallo_Condition()
 FUNC VOID DIA_Jesse_Hallo_Info()
 {
 	AI_Output (other, self,"DIA_Jesse_Hallo_15_00"); //Jak to jde?
-	AI_Output (self, other,"DIA_Jesse_Hallo_03_01"); //Jsi tu novı, viï? Mìl bys vìdìt, e se stráemi není dobré mít problémy.
-	AI_Output (self, other,"DIA_Jesse_Hallo_03_02"); //Kdy budou chtít peníze za ochranu, radìji zapla, jinak bude polovina tábora proti tobì.
+	AI_Output (self, other,"DIA_Jesse_Hallo_03_01"); //Jsi tu novÃ½, viÄ? MÄ›l bys vÄ›dÄ›t, Å¾e se strÃ¡Å¾emi nenÃ­ dobrÃ© mÃ­t problÃ©my.
+	AI_Output (self, other,"DIA_Jesse_Hallo_03_02"); //KdyÅ¾ budou chtÃ­t penÃ­ze za ochranu, radÄ›ji zaplaÅ¥, jinak bude polovina tÃ¡bora proti tobÄ›.
 };
 
 // **************************************************
@@ -75,12 +75,12 @@ FUNC INT DIA_Jesse_Warn_Condition()
 
 FUNC VOID DIA_Jesse_Warn_Info()
 {
-	AI_Output (self, other,"DIA_Jesse_Warn_03_00"); //Hej, ty! Slyšel jsem, e jsi nezaplatil Bloodwynovi peníze za ochranu?
-	AI_Output (other, self,"DIA_Jesse_Warn_15_01"); //Co chceš?
-	AI_Output (self, other,"DIA_Jesse_Warn_03_02"); //Varovat tì! Bloodwyn zaplatil pár lidem: ti po tobì pùjdou.
-	AI_Output (self, other,"DIA_Jesse_Warn_03_03"); //Vidìl jsem, jak mluví s lidmi jako Herek, a bùhví, koho si ještì najal!
-	AI_Output (other, self,"DIA_Jesse_Warn_15_04"); //Co se tıká Hereka, je tvé varování trochu opodìné.
-	AI_Output (self, other,"DIA_Jesse_Warn_03_05"); //Musel mluvit ještì s nìkım dalším, tolik toho vím. Tak buï opatrnı.
+	AI_Output (self, other,"DIA_Jesse_Warn_03_00"); //Hej, ty! SlyÅ¡el jsem, Å¾e jsi nezaplatil Bloodwynovi penÃ­ze za ochranu?
+	AI_Output (other, self,"DIA_Jesse_Warn_15_01"); //Co chceÅ¡?
+	AI_Output (self, other,"DIA_Jesse_Warn_03_02"); //Varovat tÄ›! Bloodwyn zaplatil pÃ¡r lidem: ti po tobÄ› pÅ¯jdou.
+	AI_Output (self, other,"DIA_Jesse_Warn_03_03"); //VidÄ›l jsem, jak mluvÃ­ s lidmi jako Herek, a bÅ¯hvÃ­, koho si jeÅ¡tÄ› najal!
+	AI_Output (other, self,"DIA_Jesse_Warn_15_04"); //Co se tÃ½kÃ¡ Hereka, je tvÃ© varovÃ¡nÃ­ trochu opoÅ¾dÄ›nÃ©.
+	AI_Output (self, other,"DIA_Jesse_Warn_03_05"); //Musel mluvit jeÅ¡tÄ› s nÄ›kÃ½m dalÅ¡Ã­m, tolik toho vÃ­m. Tak buÄ opatrnÃ½.
 };
 
 // **************************************************
@@ -96,7 +96,7 @@ INSTANCE DIA_Jesse_Mission (C_INFO)
 	condition		= DIA_Jesse_Mission_Condition;
 	information		= DIA_Jesse_Mission_Info;
 	permanent		= 0;
-	description		= "Proè jsi mi vyprávìl celou tu historku o Bloodwynovi?";
+	description		= "ProÄ jsi mi vyprÃ¡vÄ›l celou tu historku o Bloodwynovi?";
 };
 
 FUNC INT DIA_Jesse_Mission_Condition()
@@ -109,19 +109,19 @@ FUNC INT DIA_Jesse_Mission_Condition()
 
 FUNC VOID DIA_Jesse_Mission_Info()
 {
-	AI_Output (other, self,"DIA_Jesse_Mission_15_00"); //Proè jsi mi vyprávìl celou tu historku o Bloodwynovi?
-	AI_Output (self, other,"DIA_Jesse_Mission_03_01"); //Protoe slubièka by se mìla oplatit. A ty nevypadáš jako nìkdo, kdo by to nepochopil.
-	AI_Output (self, other,"DIA_Jesse_Mission_03_02"); //A protoe já jsem prokázal laskavost TOBÌ, rád bych ti dal pøíleitost mi to oplatit.
+	AI_Output (other, self,"DIA_Jesse_Mission_15_00"); //ProÄ jsi mi vyprÃ¡vÄ›l celou tu historku o Bloodwynovi?
+	AI_Output (self, other,"DIA_Jesse_Mission_03_01"); //ProtoÅ¾e sluÅ¾biÄka by se mÄ›la oplatit. A ty nevypadÃ¡Å¡ jako nÄ›kdo, kdo by to nepochopil.
+	AI_Output (self, other,"DIA_Jesse_Mission_03_02"); //A protoÅ¾e jÃ¡ jsem prokÃ¡zal laskavost TOBÄš, rÃ¡d bych ti dal pÅ™Ã­leÅ¾itost mi to oplatit.
 	
 	Info_ClearChoices	(DIA_Jesse_Mission );
-	Info_AddChoice		(DIA_Jesse_Mission,"Zapomeò na to! Nic ti nedluím!",DIA_Jesse_Mission_ForgetIt);
-	Info_AddChoice		(DIA_Jesse_Mission,"Co máš pøesnì na mysli?",DIA_Jesse_Mission_What);
+	Info_AddChoice		(DIA_Jesse_Mission,"ZapomeÅˆ na to! Nic ti nedluÅ¾Ã­m!",DIA_Jesse_Mission_ForgetIt);
+	Info_AddChoice		(DIA_Jesse_Mission,"Co mÃ¡Å¡ pÅ™esnÄ› na mysli?",DIA_Jesse_Mission_What);
 };
 
 func void DIA_Jesse_Mission_ForgetIt()
 {
-	AI_Output (other, self,"DIA_Jesse_Mission_ForgetIt_15_00"); //Nic ti nedluím!
-	AI_Output (self, other,"DIA_Jesse_Mission_ForgetIt_03_01"); //(kysele) Och! Pak se ztra!
+	AI_Output (other, self,"DIA_Jesse_Mission_ForgetIt_15_00"); //Nic ti nedluÅ¾Ã­m!
+	AI_Output (self, other,"DIA_Jesse_Mission_ForgetIt_03_01"); //(kysele) Och! Pak se ztraÅ¥!
 	Npc_SetPermAttitude(self,ATT_ANGRY);
 	Info_ClearChoices	(DIA_Jesse_Mission );
 	AI_StopProcessInfos	(self);
@@ -129,19 +129,19 @@ func void DIA_Jesse_Mission_ForgetIt()
 
 func void DIA_Jesse_Mission_What()
 {
-	AI_Output (other, self,"DIA_Jesse_Mission_What_15_00"); //Co máš pøesnì na mysli?
-	AI_Output (self, other,"DIA_Jesse_Mission_What_03_01"); //U mi nezbyla ádná ruda a Bloodwyn u mì taky obral.
-	AI_Output (self, other,"DIA_Jesse_Mission_What_03_02"); //Kdy jsem ti teï pomohl, mìl bys mu dát 10 nugetù, které mu dluím, jo? Øekni mu, e je to ode mì.
+	AI_Output (other, self,"DIA_Jesse_Mission_What_15_00"); //Co mÃ¡Å¡ pÅ™esnÄ› na mysli?
+	AI_Output (self, other,"DIA_Jesse_Mission_What_03_01"); //UÅ¾ mi nezbyla Å¾Ã¡dnÃ¡ ruda a Bloodwyn uÅ¾ mÄ› taky obral.
+	AI_Output (self, other,"DIA_Jesse_Mission_What_03_02"); //KdyÅ¾ jsem ti teÄ pomohl, mÄ›l bys mu dÃ¡t 10 nugetÅ¯, kterÃ© mu dluÅ¾Ã­m, jo? Å˜ekni mu, Å¾e je to ode mÄ›.
 	Npc_SetTrueGuild(self,GIL_NONE); //KEIN Schutzgeld
 	
-	Info_AddChoice		(DIA_Jesse_Mission,"Já, platit za tebe? Na to zapomeò!",DIA_Jesse_Mission_NO);
-	Info_AddChoice		(DIA_Jesse_Mission,"Uvidím, co budu moci udìlat.",DIA_Jesse_Mission_YES);
+	Info_AddChoice		(DIA_Jesse_Mission,"JÃ¡, platit za tebe? Na to zapomeÅˆ!",DIA_Jesse_Mission_NO);
+	Info_AddChoice		(DIA_Jesse_Mission,"UvidÃ­m, co budu moci udÄ›lat.",DIA_Jesse_Mission_YES);
 };
 //-------------------------------
 func void DIA_Jesse_Mission_YES()
 {
-	AI_Output (other, self,"DIA_Jesse_Mission_YES_15_00"); //Uvidím, co budu moci udìlat.
-	AI_Output (self, other,"DIA_Jesse_Mission_YES_03_01"); //Díky, èlovìèe! Zachránil jsi mì! Øekneš mi, a se vìci urovnají, viï?
+	AI_Output (other, self,"DIA_Jesse_Mission_YES_15_00"); //UvidÃ­m, co budu moci udÄ›lat.
+	AI_Output (self, other,"DIA_Jesse_Mission_YES_03_01"); //DÃ­ky, ÄlovÄ›Äe! ZachrÃ¡nil jsi mÄ›! Å˜ekneÅ¡ mi, aÅ¾ se vÄ›ci urovnajÃ­, viÄ?
 	Jesse_PayForMe = LOG_RUNNING;
 	
 	Info_ClearChoices	(DIA_Jesse_Mission );
@@ -149,8 +149,8 @@ func void DIA_Jesse_Mission_YES()
 
 func void DIA_Jesse_Mission_NO()
 {
-	AI_Output (other, self,"DIA_Jesse_Mission_NO_15_00"); //Já, platit za tebe? Na to zapomeò!
-	AI_Output (self, other,"DIA_Jesse_Mission_NO_03_01"); //Asi jsem se v tobì mılil. Pøíštì u se mnou nepoèítej.
+	AI_Output (other, self,"DIA_Jesse_Mission_NO_15_00"); //JÃ¡, platit za tebe? Na to zapomeÅˆ!
+	AI_Output (self, other,"DIA_Jesse_Mission_NO_03_01"); //Asi jsem se v tobÄ› mÃ½lil. PÅ™Ã­Å¡tÄ› uÅ¾ se mnou nepoÄÃ­tej.
 	//MUSS SO - Mike
 	Npc_SetPermAttitude(self,ATT_ANGRY);
 	Info_ClearChoices	(DIA_Jesse_Mission );
@@ -182,18 +182,18 @@ FUNC INT DIA_Jesse_MisSuccess_Condition()
 FUNC VOID DIA_Jesse_MisSuccess_Info()
 {
 	AI_Output (other, self,"DIA_Jesse_MisSuccess_15_00"); //Zaplatil jsem Bloodwynovi!
-	AI_Output (self, other,"DIA_Jesse_MisSuccess_03_01"); //Tak? Vıbornì! Tak jsme si kvit.
+	AI_Output (self, other,"DIA_Jesse_MisSuccess_03_01"); //Tak? VÃ½bornÄ›! Tak jsme si kvit.
 	Npc_SetTrueGuild(self,GIL_VLK); //Schutzgeld GEZAHLT
 	
 	Info_ClearChoices	(DIA_Jesse_MisSuccess );
-	Info_AddChoice		(DIA_Jesse_MisSuccess,"COEEE? Utratil jsem 10 nugetù za otrapu, kterého jsem ani neznal?",DIA_Jesse_MisSuccess_Waaas);
+	Info_AddChoice		(DIA_Jesse_MisSuccess,"COÅ½EEE? Utratil jsem 10 nugetÅ¯ za otrapu, kterÃ©ho jsem ani neznal?",DIA_Jesse_MisSuccess_Waaas);
 	Info_AddChoice		(DIA_Jesse_MisSuccess,"Tak. Ruka ruku myje.",DIA_Jesse_MisSuccess_Ok);
 };
 
 func void DIA_Jesse_MisSuccess_Waaas()
 {
-	AI_Output (other, self,"DIA_Jesse_MisSuccess_Waaas_15_00"); //COEEE? Utratil jsem 10 nugetù za otrapu, kterého jsem ani neznal?
-	AI_Output (self, other,"DIA_Jesse_MisSuccess_Waaas_03_01"); //Vypadá to tak.
+	AI_Output (other, self,"DIA_Jesse_MisSuccess_Waaas_15_00"); //COÅ½EEE? Utratil jsem 10 nugetÅ¯ za otrapu, kterÃ©ho jsem ani neznal?
+	AI_Output (self, other,"DIA_Jesse_MisSuccess_Waaas_03_01"); //VypadÃ¡ to tak.
 };
 
 func void DIA_Jesse_MisSuccess_Ok()

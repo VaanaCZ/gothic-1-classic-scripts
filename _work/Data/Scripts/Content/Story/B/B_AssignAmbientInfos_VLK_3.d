@@ -37,7 +37,7 @@ INSTANCE Info_Vlk_3_EinerVonEuchWerden (C_INFO) // E1
 	condition	= Info_Vlk_3_EinerVonEuchWerden_Condition;
 	information	= Info_Vlk_3_EinerVonEuchWerden_Info;
 	permanent	= 1;
-	description = "Jak se mùu pøidat k táboru?";
+	description = "Jak se mÅ¯Å¾u pÅ™idat k tÃ¡boru?";
 };                       
 
 FUNC INT Info_Vlk_3_EinerVonEuchWerden_Condition()
@@ -50,8 +50,8 @@ FUNC INT Info_Vlk_3_EinerVonEuchWerden_Condition()
 
 FUNC VOID Info_Vlk_3_EinerVonEuchWerden_Info()
 {
-	AI_Output(other,self,"Info_Vlk_3_EinerVonEuchWerden_15_00"); //Jak se mùu pøidat k táboru?
-	AI_Output(self,other,"Info_Vlk_3_EinerVonEuchWerden_03_01"); //Já jsem akorát kopáè, take ti k tomu nemám co øíct. Mìl by sis promluvit se stráemi nebo se Stíny.
+	AI_Output(other,self,"Info_Vlk_3_EinerVonEuchWerden_15_00"); //Jak se mÅ¯Å¾u pÅ™idat k tÃ¡boru?
+	AI_Output(self,other,"Info_Vlk_3_EinerVonEuchWerden_03_01"); //JÃ¡ jsem akorÃ¡t kopÃ¡Ä, takÅ¾e ti k tomu nemÃ¡m co Å™Ã­ct. MÄ›l by sis promluvit se strÃ¡Å¾emi nebo se StÃ­ny.
 };
 
 // *************************************************************************
@@ -64,7 +64,7 @@ INSTANCE Info_Vlk_3_WichtigePersonen(C_INFO)
 	condition	= Info_Vlk_3_WichtigePersonen_Condition;
 	information	= Info_Vlk_3_WichtigePersonen_Info;
 	permanent	= 1;
-	description = "Kdo je tady šéf?";
+	description = "Kdo je tady Å¡Ã©f?";
 };                       
 
 FUNC INT Info_Vlk_3_WichtigePersonen_Condition()
@@ -76,9 +76,9 @@ FUNC INT Info_Vlk_3_WichtigePersonen_Condition()
 };
 FUNC VOID Info_Vlk_3_WichtigePersonen_Info()
 {
-	AI_Output(other,self,"Info_Vlk_3_WichtigePersonen_15_00"); //Kdo je tady šéf?
-	AI_Output(self,other,"Info_Vlk_3_WichtigePersonen_03_01"); //Gomez. ije na hradì. Ale my kopáèi se máme poøádnì na pozoru pøed stráemi.
-	AI_Output(self,other,"Info_Vlk_3_WichtigePersonen_03_02"); //Nejlepší je, jít jim z cesty. Pokud tak neudìláš, máš malér.
+	AI_Output(other,self,"Info_Vlk_3_WichtigePersonen_15_00"); //Kdo je tady Å¡Ã©f?
+	AI_Output(self,other,"Info_Vlk_3_WichtigePersonen_03_01"); //Gomez. Å½ije na hradÄ›. Ale my kopÃ¡Äi se mÃ¡me poÅ™Ã¡dnÄ› na pozoru pÅ™ed strÃ¡Å¾emi.
+	AI_Output(self,other,"Info_Vlk_3_WichtigePersonen_03_02"); //NejlepÅ¡Ã­ je, jÃ­t jim z cesty. Pokud tak neudÄ›lÃ¡Å¡, mÃ¡Å¡ malÃ©r.
 };
 
 // *************************************************************************
@@ -91,7 +91,7 @@ INSTANCE Info_Vlk_3_DasLager(C_INFO)
 	condition	= Info_Vlk_3_DasLager_Condition;
 	information	= Info_Vlk_3_DasLager_Info;
 	permanent	= 1;
-	description = "Jakı jsou tady nejdùleitìjší místa?";
+	description = "JakÃ½ jsou tady nejdÅ¯leÅ¾itÄ›jÅ¡Ã­ mÃ­sta?";
 };                       
 
 FUNC INT Info_Vlk_3_DasLager_Condition()
@@ -101,9 +101,9 @@ FUNC INT Info_Vlk_3_DasLager_Condition()
 
 FUNC VOID Info_Vlk_3_DasLager_Info()
 {
-	AI_Output(other,self,"Info_Vlk_3_DasLager_15_00"); //Jakı jsou tady nejdùleitìjší místa?
-	AI_Output(self,other,"Info_Vlk_3_DasLager_03_01"); //Jestli rád sázíš, musíš zajít veèer do arény. Jestli si chceš nìco koupit, zajdi na trištì.
-	AI_Output(self,other,"Info_Vlk_3_DasLager_03_02"); //Prodávají tam prakticky všechno. Jestli chceš mapy, zajdi ke Grahamovi. Jeho chatrè je pøímo naproti hradní bránì.
+	AI_Output(other,self,"Info_Vlk_3_DasLager_15_00"); //JakÃ½ jsou tady nejdÅ¯leÅ¾itÄ›jÅ¡Ã­ mÃ­sta?
+	AI_Output(self,other,"Info_Vlk_3_DasLager_03_01"); //Jestli rÃ¡d sÃ¡zÃ­Å¡, musÃ­Å¡ zajÃ­t veÄer do arÃ©ny. Jestli si chceÅ¡ nÄ›co koupit, zajdi na trÅ¾iÅ¡tÄ›.
+	AI_Output(self,other,"Info_Vlk_3_DasLager_03_02"); //ProdÃ¡vajÃ­ tam prakticky vÅ¡echno. Jestli chceÅ¡ mapy, zajdi ke Grahamovi. Jeho chatrÄ je pÅ™Ã­mo naproti hradnÃ­ brÃ¡nÄ›.
 };
 
 // *************************************************************************
@@ -116,7 +116,7 @@ INSTANCE Info_Vlk_3_DieLage(C_INFO) // E1
 	condition	= Info_Vlk_3_DieLage_Condition;
 	information	= Info_Vlk_3_DieLage_Info;
 	permanent	= 1;
-	description = "Co se dìje?";
+	description = "Co se dÄ›je?";
 };                       
 
 FUNC INT Info_Vlk_3_DieLage_Condition()
@@ -126,9 +126,9 @@ FUNC INT Info_Vlk_3_DieLage_Condition()
 
 FUNC VOID Info_Vlk_3_DieLage_Info()
 {
-	AI_Output(other,self,"Info_Vlk_3_DieLage_15_00"); //Co se dìje?
-	AI_Output(self,other,"Info_Vlk_3_DieLage_03_01"); //Brzy se dozvíš víc. Mìj se poøád na pozoru. Hlavnì v noci.
-	AI_Output(self,other,"Info_Vlk_3_DieLage_03_02"); //U jsem se celé dny poøádnì nevyspal. Jestli nemùeš spát v kolonii, pak budeš mít dvakrát víc èasu!
+	AI_Output(other,self,"Info_Vlk_3_DieLage_15_00"); //Co se dÄ›je?
+	AI_Output(self,other,"Info_Vlk_3_DieLage_03_01"); //Brzy se dozvÃ­Å¡ vÃ­c. MÄ›j se poÅ™Ã¡d na pozoru. HlavnÄ› v noci.
+	AI_Output(self,other,"Info_Vlk_3_DieLage_03_02"); //UÅ¾ jsem se celÃ© dny poÅ™Ã¡dnÄ› nevyspal. Jestli nemÅ¯Å¾eÅ¡ spÃ¡t v kolonii, pak budeÅ¡ mÃ­t dvakrÃ¡t vÃ­c Äasu!
 };
 	
 // *************************************************************************

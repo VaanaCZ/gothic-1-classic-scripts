@@ -24,8 +24,8 @@ FUNC INT Info_Vlk_4_EXIT_Condition()
 
 FUNC VOID Info_Vlk_4_EXIT_Info()
 {	
-	AI_Output(other,self,"Info_Vlk_4_EinerVonEuchWerden_15_00"); //Díky. Hodnì štìstí.
-	AI_Output(self,other,"Info_Vlk_4_EinerVonEuchWerden_04_01"); //Hlavu vzhùru, hochu.
+	AI_Output(other,self,"Info_Vlk_4_EinerVonEuchWerden_15_00"); //DÃ­ky. HodnÄ› Å¡tÄ›stÃ­.
+	AI_Output(self,other,"Info_Vlk_4_EinerVonEuchWerden_04_01"); //Hlavu vzhÅ¯ru, hochu.
 	AI_StopProcessInfos	(self);
 };
 
@@ -39,7 +39,7 @@ INSTANCE Info_Vlk_4_EinerVonEuchWerden (C_INFO) // E1
 	condition	= Info_Vlk_4_EinerVonEuchWerden_Condition;
 	information	= Info_Vlk_4_EinerVonEuchWerden_Info;
 	permanent	= 1;
-	description = "Co musím udìlat, abych se mohl pøidat k táboru?";
+	description = "Co musÃ­m udÄ›lat, abych se mohl pÅ™idat k tÃ¡boru?";
 };                       
 
 FUNC INT Info_Vlk_4_EinerVonEuchWerden_Condition()
@@ -52,10 +52,10 @@ FUNC INT Info_Vlk_4_EinerVonEuchWerden_Condition()
 
 FUNC VOID Info_Vlk_4_EinerVonEuchWerden_Info()
 {
-	AI_Output(other,self,"Info_Vlk_4_EinerVonEuchWerden_15_01"); //Co musím udìlat, abych se mohl pøidat k táboru?
-	AI_Output(self,other,"Info_Vlk_4_EinerVonEuchWerden_04_04"); //Myslíš jako Stín nebo jako stráce? To nebude snadné, èlovìèe. Ne tì starı Thorus pustí za Gomezem, budeš muset sloit pár zkoušek.
-	AI_Output(self,other,"Info_Vlk_4_EinerVonEuchWerden_04_02"); //A budeš tu muset dobøe vyjít s lidmi Ale dokud nebudeš patøit k nìjakému táboru, nikdo tì nebude brát vánì.
-	AI_Output(self,other,"Info_Vlk_4_EinerVonEuchWerden_04_03"); //Bıt tebou, dal bych øeè s nìkterım ze Stínù. Moná bys našel nìkoho, kdo by ti mohl pomoci. Samozøejmì kdy nabídneš nìco na oplátku.
+	AI_Output(other,self,"Info_Vlk_4_EinerVonEuchWerden_15_01"); //Co musÃ­m udÄ›lat, abych se mohl pÅ™idat k tÃ¡boru?
+	AI_Output(self,other,"Info_Vlk_4_EinerVonEuchWerden_04_04"); //MyslÃ­Å¡ jako StÃ­n nebo jako strÃ¡Å¾ce? To nebude snadnÃ©, ÄlovÄ›Äe. NeÅ¾ tÄ› starÃ½ Thorus pustÃ­ za Gomezem, budeÅ¡ muset sloÅ¾it pÃ¡r zkouÅ¡ek.
+	AI_Output(self,other,"Info_Vlk_4_EinerVonEuchWerden_04_02"); //A budeÅ¡ tu muset dobÅ™e vyjÃ­t s lidmi Ale dokud nebudeÅ¡ patÅ™it k nÄ›jakÃ©mu tÃ¡boru, nikdo tÄ› nebude brÃ¡t vÃ¡Å¾nÄ›.
+	AI_Output(self,other,"Info_Vlk_4_EinerVonEuchWerden_04_03"); //BÃ½t tebou, dal bych Å™eÄ s nÄ›kterÃ½m ze StÃ­nÅ¯. MoÅ¾nÃ¡ bys naÅ¡el nÄ›koho, kdo by ti mohl pomoci. SamozÅ™ejmÄ› kdyÅ¾ nabÃ­dneÅ¡ nÄ›co na oplÃ¡tku.
 	
 	var C_NPC Thorus;		Thorus 	= Hlp_GetNpc(GRD_200_Thorus);
 	Thorus.aivar[AIV_FINDABLE] = TRUE;
@@ -71,7 +71,7 @@ INSTANCE Info_Vlk_4_WichtigePersonen(C_INFO)
 	condition	= Info_Vlk_4_WichtigePersonen_Condition;
 	information	= Info_Vlk_4_WichtigePersonen_Info;
 	permanent	= 1;
-	description = "Je tu nìco zvláštního, co bych mìl vìdìt?";
+	description = "Je tu nÄ›co zvlÃ¡Å¡tnÃ­ho, co bych mÄ›l vÄ›dÄ›t?";
 };                       
 
 FUNC INT Info_Vlk_4_WichtigePersonen_Condition()
@@ -81,9 +81,9 @@ FUNC INT Info_Vlk_4_WichtigePersonen_Condition()
 
 FUNC VOID Info_Vlk_4_WichtigePersonen_Info()
 {
-	AI_Output(other,self,"Info_Vlk_4_WichtigePersonen_15_00"); //Je tu nìkdo dùleitı, koho bych mìl znát?
-	AI_Output(self,other,"Info_Vlk_4_WichtigePersonen_04_01"); //Kdy jsi tu novı, nemìl by ses dostat do køíku s Gravem. I kdy je jenom kopáè, ví, jak jednat s Rudobarony.
-	AI_Output(self,other,"Info_Vlk_4_WichtigePersonen_04_02"); //Pokud se dostaneš do problémù s nìkım z Gomezovy party, mùe ti z toho pomoci ven.
+	AI_Output(other,self,"Info_Vlk_4_WichtigePersonen_15_00"); //Je tu nÄ›kdo dÅ¯leÅ¾itÃ½, koho bych mÄ›l znÃ¡t?
+	AI_Output(self,other,"Info_Vlk_4_WichtigePersonen_04_01"); //KdyÅ¾ jsi tu novÃ½, nemÄ›l by ses dostat do kÅ™Ã­Å¾ku s Gravem. I kdyÅ¾ je jenom kopÃ¡Ä, vÃ­, jak jednat s Rudobarony.
+	AI_Output(self,other,"Info_Vlk_4_WichtigePersonen_04_02"); //Pokud se dostaneÅ¡ do problÃ©mÅ¯ s nÄ›kÃ½m z Gomezovy party, mÅ¯Å¾e ti z toho pomoci ven.
 };
 
 // *************************************************************************
@@ -96,7 +96,7 @@ INSTANCE Info_Vlk_4_DasLager(C_INFO)
 	condition	= Info_Vlk_4_DasLager_Condition;
 	information	= Info_Vlk_4_DasLager_Info;
 	permanent	= 1;
-	description = "Která místa bych tady mìl znát?";
+	description = "KterÃ¡ mÃ­sta bych tady mÄ›l znÃ¡t?";
 };                       
 
 FUNC INT Info_Vlk_4_DasLager_Condition()
@@ -108,12 +108,12 @@ FUNC INT Info_Vlk_4_DasLager_Condition()
 };
 FUNC VOID Info_Vlk_4_DasLager_Info()
 {
-	AI_Output(other,self,"Info_Vlk_4_DasLager_15_00"); //Která místa bych tady mìl znát?
-	AI_Output(self,other,"Info_Vlk_4_DasLager_04_01"); //Jestli nemáš chu kopat v dolech, mìl by ses porozhlédnout mezi severní a hradní bránou.
-	AI_Output(self,other,"Info_Vlk_4_DasLager_04_02"); //Kdy budeš mít štìstí, Thorus nebo Diego by ti mohli navrhnout nìco, co bys pro nì mohl udìlat - tak budeš mít šanci dostat se na jejich stranu. Urèitì není špatné patøit ke Gomezovım lidem..
-	AI_Output(self,other,"Info_Vlk_4_DasLager_04_03"); //Nebo by ses mìl setkat s mágy. Obèas potøebují vyøídit nìjaké obchùzky. A platí vdycky dobøe.
-	AI_Output(other,self,"Info_Vlk_4_DasLager_15_04"); //Mágové vycházejí z hradu? A kdy?
-	AI_Output(self,other,"Info_Vlk_4_DasLager_04_05"); //Co já vím.Zeptej se lidí, kteøí tam ijí.
+	AI_Output(other,self,"Info_Vlk_4_DasLager_15_00"); //KterÃ¡ mÃ­sta bych tady mÄ›l znÃ¡t?
+	AI_Output(self,other,"Info_Vlk_4_DasLager_04_01"); //Jestli nemÃ¡Å¡ chuÅ¥ kopat v dolech, mÄ›l by ses porozhlÃ©dnout mezi severnÃ­ a hradnÃ­ brÃ¡nou.
+	AI_Output(self,other,"Info_Vlk_4_DasLager_04_02"); //KdyÅ¾ budeÅ¡ mÃ­t Å¡tÄ›stÃ­, Thorus nebo Diego by ti mohli navrhnout nÄ›co, co bys pro nÄ› mohl udÄ›lat - tak budeÅ¡ mÃ­t Å¡anci dostat se na jejich stranu. UrÄitÄ› nenÃ­ Å¡patnÃ© patÅ™it ke GomezovÃ½m lidem..
+	AI_Output(self,other,"Info_Vlk_4_DasLager_04_03"); //Nebo by ses mÄ›l setkat s mÃ¡gy. ObÄas potÅ™ebujÃ­ vyÅ™Ã­dit nÄ›jakÃ© obchÅ¯zky. A platÃ­ vÅ¾dycky dobÅ™e.
+	AI_Output(other,self,"Info_Vlk_4_DasLager_15_04"); //MÃ¡govÃ© vychÃ¡zejÃ­ z hradu? A kdy?
+	AI_Output(self,other,"Info_Vlk_4_DasLager_04_05"); //Co jÃ¡ vÃ­m.Zeptej se lidÃ­, kteÅ™Ã­ tam Å¾ijÃ­.
 };
 
 // *************************************************************************
@@ -126,7 +126,7 @@ INSTANCE Info_Vlk_4_DieLage(C_INFO) // E1
 	condition	= Info_Vlk_4_DieLage_Condition;
 	information	= Info_Vlk_4_DieLage_Info;
 	permanent	= 1;
-	description = "Jsi v poøádku?";
+	description = "Jsi v poÅ™Ã¡dku?";
 };                       
 
 FUNC INT Info_Vlk_4_DieLage_Condition()
@@ -136,8 +136,8 @@ FUNC INT Info_Vlk_4_DieLage_Condition()
 
 FUNC VOID Info_Vlk_4_DieLage_Info()
 {
-	AI_Output(other,self,"Info_Vlk_4_DieLage_15_00"); //Jsi v poøádku?
-	AI_Output(self,other,"Info_Vlk_4_DieLage_04_01"); //Tak jako pøed dvaceti lety. Nic se za tu dobu nezmìnilo.
+	AI_Output(other,self,"Info_Vlk_4_DieLage_15_00"); //Jsi v poÅ™Ã¡dku?
+	AI_Output(self,other,"Info_Vlk_4_DieLage_04_01"); //Tak jako pÅ™ed dvaceti lety. Nic se za tu dobu nezmÄ›nilo.
 };
 	
 // *************************************************************************

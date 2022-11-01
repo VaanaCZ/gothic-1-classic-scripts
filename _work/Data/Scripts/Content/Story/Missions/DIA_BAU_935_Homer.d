@@ -33,7 +33,7 @@ INSTANCE DIA_Homer_Hello (C_INFO)
 	condition	= DIA_Homer_Hello_Condition;
 	information	= DIA_Homer_Hello_Info;
 	permanent	= 0;
-	description = "Hledáš nìco?";
+	description = "HledÃ¡Å¡ nÄ›co?";
 };                       
 
 FUNC INT DIA_Homer_Hello_Condition()
@@ -43,10 +43,10 @@ FUNC INT DIA_Homer_Hello_Condition()
 
 FUNC VOID DIA_Homer_Hello_Info()
 {	
-	AI_Output (other, self,"DIA_Homer_Hello_15_00"); //Hledáš nìco?
-	AI_Output (self, other,"DIA_Homer_Hello_02_01"); //Hledám praskliny v hrázi. Øekl bych, e budou nìkde u základù.
-	AI_Output (self, other,"DIA_Homer_Hello_02_02"); //Ta bestie narušuje svımi zuby a drápy kameny a døevìné trámy pod vodou.
-	AI_Output (self, other,"DIA_Homer_Hello_02_03"); //Jestli to bude pokraèovat, celá hráz bude co nevidìt podhrabaná.
+	AI_Output (other, self,"DIA_Homer_Hello_15_00"); //HledÃ¡Å¡ nÄ›co?
+	AI_Output (self, other,"DIA_Homer_Hello_02_01"); //HledÃ¡m praskliny v hrÃ¡zi. Å˜ekl bych, Å¾e budou nÄ›kde u zÃ¡kladÅ¯.
+	AI_Output (self, other,"DIA_Homer_Hello_02_02"); //Ta bestie naruÅ¡uje svÃ½mi zuby a drÃ¡py kameny a dÅ™evÄ›nÃ© trÃ¡my pod vodou.
+	AI_Output (self, other,"DIA_Homer_Hello_02_03"); //Jestli to bude pokraÄovat, celÃ¡ hrÃ¡z bude co nevidÄ›t podhrabanÃ¡.
 };
 
 // ************************************************************
@@ -60,7 +60,7 @@ INSTANCE DIA_Homer_BuiltDam (C_INFO)
 	condition	= DIA_Homer_BuiltDam_Condition;
 	information	= DIA_Homer_BuiltDam_Info;
 	permanent	= 0;
-	description = "TY jsi tu hráz stavìl?";
+	description = "TY jsi tu hrÃ¡z stavÄ›l?";
 };                       
 
 FUNC INT DIA_Homer_BuiltDam_Condition()
@@ -73,9 +73,9 @@ FUNC INT DIA_Homer_BuiltDam_Condition()
 
 FUNC VOID DIA_Homer_BuiltDam_Info()
 {	
-	AI_Output (other, self,"DIA_Homer_BuiltDam_15_00"); //TY jsi tu hráz stavìl?
-	AI_Output (self, other,"DIA_Homer_BuiltDam_02_01"); //Ano. Stavìl jsem ji tehdy, kdy jsme zakládali Novı tábor.
-	AI_Output (self, other,"DIA_Homer_BuiltDam_02_02"); //Všichni samozøejmì pomáhali, ale já byl stavební mistr.
+	AI_Output (other, self,"DIA_Homer_BuiltDam_15_00"); //TY jsi tu hrÃ¡z stavÄ›l?
+	AI_Output (self, other,"DIA_Homer_BuiltDam_02_01"); //Ano. StavÄ›l jsem ji tehdy, kdyÅ¾ jsme zaklÃ¡dali NovÃ½ tÃ¡bor.
+	AI_Output (self, other,"DIA_Homer_BuiltDam_02_02"); //VÅ¡ichni samozÅ™ejmÄ› pomÃ¡hali, ale jÃ¡ byl stavebnÃ­ mistr.
 };
 
 // ************************************************************
@@ -91,7 +91,7 @@ INSTANCE DIA_Homer_WannaHelp (C_INFO)
 	condition	= DIA_Homer_WannaHelp_Condition;
 	information	= DIA_Homer_WannaHelp_Info;
 	permanent	= 0;
-	description = "Je tu nìco, s èím bych mohl pomoci?";
+	description = "Je tu nÄ›co, s ÄÃ­m bych mohl pomoci?";
 };                       
 
 FUNC INT DIA_Homer_WannaHelp_Condition()
@@ -104,14 +104,14 @@ FUNC INT DIA_Homer_WannaHelp_Condition()
 
 FUNC VOID DIA_Homer_WannaHelp_Info()
 {	
-	AI_Output (other, self,"DIA_Homer_WannaHelp_15_00"); //Je tu nìco, s èím bych mohl pomoci?
-	AI_Output (self, other,"DIA_Homer_WannaHelp_02_01"); //Jistì, zaøiï, aby ta bestie pøestala podhlodávat moji hráz.
+	AI_Output (other, self,"DIA_Homer_WannaHelp_15_00"); //Je tu nÄ›co, s ÄÃ­m bych mohl pomoci?
+	AI_Output (self, other,"DIA_Homer_WannaHelp_02_01"); //JistÄ›, zaÅ™iÄ, aby ta bestie pÅ™estala podhlodÃ¡vat moji hrÃ¡z.
 	
 	Homer_DamLurker = LOG_RUNNING;
 	
 	Log_CreateTopic		(CH1_DamLurker, LOG_MISSION);
 	Log_SetTopicStatus	(CH1_DamLurker, LOG_RUNNING);
-	B_LogEntry			(CH1_DamLurker,"Homer mi øekl, e èíhavec rozhlodává hráz. Pokud se mi ho podaøí zastavit, budou hráz moci opravit.");
+	B_LogEntry			(CH1_DamLurker,"Homer mi Å™ekl, Å¾e ÄÃ­havec rozhlodÃ¡vÃ¡ hrÃ¡z. Pokud se mi ho podaÅ™Ã­ zastavit, budou hrÃ¡z moci opravit.");
 
 };
 
@@ -140,10 +140,10 @@ FUNC INT DIA_Homer_Running_Condition()
 FUNC VOID DIA_Homer_Running_Info()
 {	
 	AI_Output (other, self,"DIA_Homer_Running_15_00"); //Kde tu bestii najdu?
-	AI_Output (self, other,"DIA_Homer_Running_02_01"); //Já bych na ní šel na druhou stranu jezera. Tam nikdo nechodí. Tam budou mít nejspíš doupì.
+	AI_Output (self, other,"DIA_Homer_Running_02_01"); //JÃ¡ bych na nÃ­ Å¡el na druhou stranu jezera. Tam nikdo nechodÃ­. Tam budou mÃ­t nejspÃ­Å¡ doupÄ›.
 	
 	Homer_DamLurker = LOG_RUNNING;
-	B_LogEntry	(CH1_DamLurker,"Ten èíhavec musí mít své hnízdo nìkde na druhé stranì hráze. ");
+	B_LogEntry	(CH1_DamLurker,"Ten ÄÃ­havec musÃ­ mÃ­t svÃ© hnÃ­zdo nÄ›kde na druhÃ© stranÄ› hrÃ¡ze. ");
 	
 };
 
@@ -177,12 +177,12 @@ FUNC INT DIA_Homer_Success_Condition()
 FUNC VOID DIA_Homer_Success_Info()
 {	
 	AI_Output			(other, self,"DIA_Homer_Success_15_00"); //Zabil jsem tu bestii!
-	AI_Output			(self, other,"DIA_Homer_Success_02_01"); //Skvìlé! Vezmu nìkoho z muù Rıového Lorda, aby mi pomohl opravit nìco z toho, co ponièila.
-	AI_Output			(self, other,"DIA_Homer_Success_02_02"); //A teï mùu jít koneènì spát.
+	AI_Output			(self, other,"DIA_Homer_Success_02_01"); //SkvÄ›lÃ©! Vezmu nÄ›koho z muÅ¾Å¯ RÃ½Å¾ovÃ©ho Lorda, aby mi pomohl opravit nÄ›co z toho, co poniÄila.
+	AI_Output			(self, other,"DIA_Homer_Success_02_02"); //A teÄ mÅ¯Å¾u jÃ­t koneÄnÄ› spÃ¡t.
 		
 	Homer_DamLurker = 	LOG_SUCCESS;
 	Log_SetTopicStatus	(CH1_DamLurker,	LOG_SUCCESS);
-	B_LogEntry			(CH1_DamLurker,"Èíhavec je pryè a Homer mùe zase klidnì spát.");
+	B_LogEntry			(CH1_DamLurker,"ÄŒÃ­havec je pryÄ a Homer mÅ¯Å¾e zase klidnÄ› spÃ¡t.");
 	B_GiveXP			(XP_ReportDeadDamLurker);
 	
 	AI_StopProcessInfos	(self);
@@ -200,7 +200,7 @@ INSTANCE DIA_Homer_PERM (C_INFO)
 	condition	= DIA_Homer_PERM_Condition;
 	information	= DIA_Homer_PERM_Info;
 	permanent	= 1;
-	description = "Je s hrází všechno v poøádku?";
+	description = "Je s hrÃ¡zÃ­ vÅ¡echno v poÅ™Ã¡dku?";
 };                       
 
 FUNC INT DIA_Homer_PERM_Condition()
@@ -213,7 +213,7 @@ FUNC INT DIA_Homer_PERM_Condition()
 
 FUNC VOID DIA_Homer_PERM_Info()
 {	
-	AI_Output (other, self,"DIA_Homer_PERM_15_00"); //Je s hrází všechno v poøádku?
-	AI_Output (self, other,"DIA_Homer_PERM_02_01"); //Je pevná jako hrad, nic ji nerozboøí.
+	AI_Output (other, self,"DIA_Homer_PERM_15_00"); //Je s hrÃ¡zÃ­ vÅ¡echno v poÅ™Ã¡dku?
+	AI_Output (self, other,"DIA_Homer_PERM_02_01"); //Je pevnÃ¡ jako hrad, nic ji nerozboÅ™Ã­.
 };
 

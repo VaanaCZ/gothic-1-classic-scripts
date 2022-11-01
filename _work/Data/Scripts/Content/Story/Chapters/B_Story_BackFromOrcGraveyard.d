@@ -2,7 +2,7 @@
 //##
 //##							KAPITEL 3
 //##							=========
-//##	Der Spieler kehrt vom Ork-Friedhof zurück und berichtet
+//##	Der Spieler kehrt vom Ork-Friedhof zurÃ¼ck und berichtet
 //##	von Baal-Lukor und den Ereignissen dort.
 //##
 //#####################################################################
@@ -10,6 +10,6 @@
 func void B_Story_BackFromOrcGraveyard()
 {
 	//-------- Tagebucheintrag --------
-	B_LogEntry			(CH3_OrcGraveyard,"Øekl jsem Coru Angarovi o tom, co se stalo na skøetím høbitovì. Byl velmi zmatenı. Nyní se všechny jeho nadìje upínají k Y´Berionovi, kterı je stále v bezvìdomí.");
+	B_LogEntry			(CH3_OrcGraveyard,"Å˜ekl jsem Coru Angarovi o tom, co se stalo na skÅ™etÃ­m hÅ™bitovÄ›. Byl velmi zmatenÃ½. NynÃ­ se vÅ¡echny jeho nadÄ›je upÃ­najÃ­ k YÂ´Berionovi, kterÃ½ je stÃ¡le v bezvÄ›domÃ­.");
 	Log_SetTopicStatus	(CH3_OrcGraveyard,	LOG_SUCCESS);
 };

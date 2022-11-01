@@ -24,26 +24,26 @@ FUNC int  Info_Xardas_OT_Condition()
 
 FUNC void  Info_Xardas_OT_Info()
 {
-	AI_Output			(self, other,"Info_Xardas_OT_14_01"); //Nemáme moc èasu, tak poslouchej bedlivì!
+	AI_Output			(self, other,"Info_Xardas_OT_14_01"); //NemÃ¡me moc Äasu, tak poslouchej bedlivÄ›!
 	AI_Output			(other, self,"Info_Xardas_OT_15_02"); //Jak jsi...
-	AI_Output			(self, other,"Info_Xardas_OT_14_03"); //Spáè není daleko. Musel jsem pouít všechny své síly, abych se sem dostal.
-	AI_Output			(self, other,"Info_Xardas_OT_14_04"); //Pøeloil jsem Skøetí proroctví a objevil tajemství pìti srdcí.
-	AI_Output			(self, other,"Info_Xardas_OT_14_05"); //Pìt srdcí knìí, které jsi porazil, je uloeno v pìti relikviáøích.
-	AI_Output			(self, other,"Info_Xardas_OT_14_06"); //Tyto relikviáøe se dají otevøít, ale jen starobylá ostøí, která knìí nosili u sebe, mohou poškodit srdce.
-	AI_Output			(self, other,"Info_Xardas_OT_14_07"); //Ty musíš ta srdce probodnout pìti ostøími. Jedinì tak budeš moci odstranit Spáèe z tohoto svìta.
-	AI_Output			(other, self,"Info_Xardas_OT_15_08"); //Rozumím!
-	AI_Output			(self, other,"Info_Xardas_OT_14_09"); //Pospìš, procitnutí arcidémona se blíí, pomatenı Cor Kalom se svımi zbloudilımi áky je tu.
-	AI_Output			(self, other,"Info_Xardas_OT_14_10"); //Shromádili se ve Spáèovì sále.
-	AI_Output			(other, self,"Info_Xardas_OT_15_11"); //U jsem krvácel dost! Teï mì nikdo nezastaví!
-	AI_Output			(self, other,"Info_Xardas_OT_14_12"); //Spáèova moc sílí a sílí, nedokáu...
+	AI_Output			(self, other,"Info_Xardas_OT_14_03"); //SpÃ¡Ä nenÃ­ daleko. Musel jsem pouÅ¾Ã­t vÅ¡echny svÃ© sÃ­ly, abych se sem dostal.
+	AI_Output			(self, other,"Info_Xardas_OT_14_04"); //PÅ™eloÅ¾il jsem SkÅ™etÃ­ proroctvÃ­ a objevil tajemstvÃ­ pÄ›ti srdcÃ­.
+	AI_Output			(self, other,"Info_Xardas_OT_14_05"); //PÄ›t srdcÃ­ knÄ›Å¾Ã­, kterÃ© jsi porazil, je uloÅ¾eno v pÄ›ti relikviÃ¡Å™Ã­ch.
+	AI_Output			(self, other,"Info_Xardas_OT_14_06"); //Tyto relikviÃ¡Å™e se dajÃ­ otevÅ™Ã­t, ale jen starobylÃ¡ ostÅ™Ã­, kterÃ¡ knÄ›Å¾Ã­ nosili u sebe, mohou poÅ¡kodit srdce.
+	AI_Output			(self, other,"Info_Xardas_OT_14_07"); //Ty musÃ­Å¡ ta srdce probodnout pÄ›ti ostÅ™Ã­mi. JedinÄ› tak budeÅ¡ moci odstranit SpÃ¡Äe z tohoto svÄ›ta.
+	AI_Output			(other, self,"Info_Xardas_OT_15_08"); //RozumÃ­m!
+	AI_Output			(self, other,"Info_Xardas_OT_14_09"); //PospÄ›Å¡, procitnutÃ­ arcidÃ©mona se blÃ­Å¾Ã­, pomatenÃ½ Cor Kalom se svÃ½mi zbloudilÃ½mi Å¾Ã¡ky je tu.
+	AI_Output			(self, other,"Info_Xardas_OT_14_10"); //ShromÃ¡Å¾dili se ve SpÃ¡ÄovÄ› sÃ¡le.
+	AI_Output			(other, self,"Info_Xardas_OT_15_11"); //UÅ¾ jsem krvÃ¡cel dost! TeÄ mÄ› nikdo nezastavÃ­!
+	AI_Output			(self, other,"Info_Xardas_OT_14_12"); //SpÃ¡Äova moc sÃ­lÃ­ a sÃ­lÃ­, nedokÃ¡Å¾u...
 	AI_Output			(other, self,"Info_Xardas_OT_15_13"); //Co se ti stalo?
-	AI_Output			(self, other,"Info_Xardas_OT_14_14"); //Já... musím...
+	AI_Output			(self, other,"Info_Xardas_OT_14_14"); //JÃ¡... musÃ­m...
 
 	Npc_ExchangeRoutine	(self,	"DRAINED"); 
 	
 	Log_CreateTopic		(CH6_Sleeper,	LOG_MISSION);
 	Log_SetTopicStatus	(CH6_Sleeper,	LOG_RUNNING);
-	B_LogEntry			(CH6_Sleeper,"Nadešel èas. Musím bıt v tìsné blízkosti místa Spáèova odpoèinku. Znenadání se objevil Xardas a dal mi pokyny k boji. V relikviáøi je pìt srdcí nemrtvıch skøetích šamanù, která musím proklát pìti èepelemi, které mám pøi sobì. To je jedinı zpùsob, jak porazit Spáèe. Vypadá to prostì...");
+	B_LogEntry			(CH6_Sleeper,"NadeÅ¡el Äas. MusÃ­m bÃ½t v tÄ›snÃ© blÃ­zkosti mÃ­sta SpÃ¡Äova odpoÄinku. ZnenadÃ¡nÃ­ se objevil Xardas a dal mi pokyny k boji. V relikviÃ¡Å™i je pÄ›t srdcÃ­ nemrtvÃ½ch skÅ™etÃ­ch Å¡amanÅ¯, kterÃ¡ musÃ­m proklÃ¡t pÄ›ti Äepelemi, kterÃ© mÃ¡m pÅ™i sobÄ›. To je jedinÃ½ zpÅ¯sob, jak porazit SpÃ¡Äe. VypadÃ¡ to prostÄ›...");
 	
 	AI_StopProcessInfos	(self);
 };		

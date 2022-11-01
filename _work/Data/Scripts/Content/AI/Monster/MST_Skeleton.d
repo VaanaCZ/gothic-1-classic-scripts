@@ -100,7 +100,7 @@ INSTANCE Skeleton			(Mst_Default_Skeleton)
 };
 
 /*************************************************************************
-**	SkeletonSH - für die Gruft unter den Stonehenge (SH) 														**
+**	SkeletonSH - fÃ¼r die Gruft unter den Stonehenge (SH) 														**
 *************************************************************************/
 
 INSTANCE SkeletonSH			(Mst_Default_Skeleton)
@@ -133,7 +133,7 @@ INSTANCE SkeletonSH			(Mst_Default_Skeleton)
 
 INSTANCE SkeletonScout		(Mst_Default_Skeleton)
 {
-	name							=	"Kostlivý zvìd";
+	name							=	"KostlivÃ½ zvÄ›d";
 	aivar[AIV_MM_REAL_ID]			= 	ID_SKELETONSCOUT;
 	Set_SkeletonScout_Visuals();
 	Npc_SetToFightMode		(self, ItMw_1H_Scythe_01);
@@ -148,7 +148,7 @@ INSTANCE SkeletonScout		(Mst_Default_Skeleton)
 
 INSTANCE SkeletonWarrior	(Mst_Default_Skeleton)
 {
-	name							=	"Kostlivý bojovník";
+	name							=	"KostlivÃ½ bojovnÃ­k";
 	Set_SkeletonWarrior_Visuals();
 	level							=	30;
 	attribute	[ATR_STRENGTH]		=	120;
@@ -167,8 +167,8 @@ INSTANCE SkeletonMage		(Mst_Default_Skeleton)
 {
 	aivar[AIV_MM_REAL_ID]	= 	ID_SKELETONMAGE;
 	Set_SkeletonMage_Visuals();
-	name					=	"Kostlivý mág";
-	guild					=	GIL_DEMON;	// "fliegende" Gilde nötig, damit es nicht Watet/Schwimmt/... !
+	name					=	"KostlivÃ½ mÃ¡g";
+	guild					=	GIL_DEMON;	// "fliegende" Gilde nÃ¶tig, damit es nicht Watet/Schwimmt/... !
 	level					=	50;
 	
 	protection	[PROT_BLUNT]		=	50;
@@ -195,8 +195,8 @@ INSTANCE SkeletonMage_fogtower		(Mst_Default_Skeleton)
 {
 	aivar[AIV_MM_REAL_ID]	= 	ID_SKELETONMAGE;
 	Set_SkeletonMage_Visuals();
-	name					=	"Kostlivý mág ze Zamlžené vìže";
-	guild					=	GIL_DEMON;	// "fliegende" Gilde nötig, damit es nicht Watet/Schwimmt/... !
+	name					=	"KostlivÃ½ mÃ¡g ze ZamlÅ¾enÃ© vÄ›Å¾e";
+	guild					=	GIL_DEMON;	// "fliegende" Gilde nÃ¶tig, damit es nicht Watet/Schwimmt/... !
 	level					=	50;
 	
 	protection	[PROT_BLUNT]		=	50;
@@ -253,7 +253,7 @@ INSTANCE SummonedByNPC_Skeleton	(Mst_Default_Skeleton)
 
 INSTANCE SummonedByPC_SkeletonWarrior (Mst_Default_Skeleton)
 {
-	name							=	"Kostlivý bojovník";
+	name							=	"KostlivÃ½ bojovnÃ­k";
 	level							=	30;
 	attribute	[ATR_STRENGTH]		=	120;
 	senses						= SENSE_HEAR | SENSE_SEE;
@@ -272,7 +272,7 @@ INSTANCE SummonedByPC_SkeletonWarrior (Mst_Default_Skeleton)
 
 INSTANCE SummonedByNPC_SkeletonWarrior (Mst_Default_Skeleton)
 {
-	name							=	"Kostlivý bojovník";
+	name							=	"KostlivÃ½ bojovnÃ­k";
 	level							=	30;
 	attribute	[ATR_STRENGTH]		=	120;
 	aivar[AIV_MM_REAL_ID]			= 	ID_SKELETONWARRIOR;

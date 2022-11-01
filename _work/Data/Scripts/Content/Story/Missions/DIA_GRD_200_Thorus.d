@@ -33,7 +33,7 @@ INSTANCE Info_Thorus_EnterCastle(C_INFO) //E2
 	condition	= Info_Thorus_EnterCastle_Condition;
 	information	= Info_Thorus_EnterCastle_Info;
 	permanent	= 0;
-	description = "Nevypadáš, jako bys kadého pustil na hrad.";
+	description = "NevypadÃ¡Å¡, jako bys kaÅ¾dÃ©ho pustil na hrad.";
 };                       
 
 FUNC INT Info_Thorus_EnterCastle_Condition()
@@ -46,12 +46,12 @@ FUNC INT Info_Thorus_EnterCastle_Condition()
 };
 FUNC VOID Info_Thorus_EnterCastle_Info()
 {	
-	AI_Output (other, self,"Info_EnterCastle_15_00"); //Nevypadáš, jako bys kadého pustil na hrad.
-	AI_Output (self, other,"Info_EnterCastle_09_01"); //Na hrad smìjí jenom Gomezovi mui.
+	AI_Output (other, self,"Info_EnterCastle_15_00"); //NevypadÃ¡Å¡, jako bys kaÅ¾dÃ©ho pustil na hrad.
+	AI_Output (self, other,"Info_EnterCastle_09_01"); //Na hrad smÄ›jÃ­ jenom Gomezovi muÅ¾i.
 };
 
 // ************************************************************
-// 					Ich will für Gomez arbeiten
+// 					Ich will fÃ¼r Gomez arbeiten
 // ************************************************************
 
 INSTANCE Info_Thorus_WorkForGomez(C_INFO) //E2
@@ -76,7 +76,7 @@ FUNC INT Info_Thorus_WorkForGomez_Condition()
 FUNC VOID Info_Thorus_WorkForGomez_Info()
 {	
 	AI_Output (other, self,"Info_WorkForGomez_15_00"); //Chci pro Gomeze pracovat.
-	AI_Output (self, other,"Info_WorkForGomez_09_01"); //Vánì? A proè si myslíš, e by ti Gomez chtìl dát práci?
+	AI_Output (self, other,"Info_WorkForGomez_09_01"); //VÃ¡Å¾nÄ›? A proÄ si myslÃ­Å¡, Å¾e by ti Gomez chtÄ›l dÃ¡t prÃ¡ci?
 };
 
 // ************************************************************
@@ -90,7 +90,7 @@ INSTANCE Info_Thorus_DiegoSentMe(C_INFO) //E3
 	condition	= Info_Thorus_DiegoSentMe_Condition;
 	information	= Info_Thorus_DiegoSentMe_Info;
 	permanent	= 0;
-	description = "Diego øekl, e ty rozhoduješ, kdo je pro Gomeze zajímavı.";
+	description = "Diego Å™ekl, Å¾e ty rozhodujeÅ¡, kdo je pro Gomeze zajÃ­mavÃ½.";
 };                       
 
 FUNC INT Info_Thorus_DiegoSentMe_Condition()
@@ -103,13 +103,13 @@ FUNC INT Info_Thorus_DiegoSentMe_Condition()
 
 FUNC VOID Info_Thorus_DiegoSentMe_Info()
 {	
-	AI_Output (other, self,"Info_Thorus_DiegoSentMe_15_00"); //Diego øíká, e TY rozhoduješ, o koho bude mít Gomez zájem.
-	AI_Output (self, other,"Info_Thorus_DiegoSentMe_09_01"); //No... Jestli Diego øíká, e jsi v pohodì, proè se o tebe nepostará ON?
-	AI_Output (self, other,"Info_Thorus_DiegoSentMe_09_02"); //Poslouchej, vysvìtlím ti to. Diego si tì chce vyzkoušet. Jestli si ON myslí, e jsi dost dobrı, tak tì pustím na hrad, abys mohl navštívit Gomeze.
-	AI_Output (self, other,"Info_Thorus_DiegoSentMe_09_03"); //Cokoliv se stane, je to na tebe, jasnı?
-	AI_Output (other, self,"Info_Thorus_DiegoSentMe_15_04"); //Øeknu to Diegovi.
+	AI_Output (other, self,"Info_Thorus_DiegoSentMe_15_00"); //Diego Å™Ã­kÃ¡, Å¾e TY rozhodujeÅ¡, o koho bude mÃ­t Gomez zÃ¡jem.
+	AI_Output (self, other,"Info_Thorus_DiegoSentMe_09_01"); //No... Jestli Diego Å™Ã­kÃ¡, Å¾e jsi v pohodÄ›, proÄ se o tebe nepostarÃ¡ ON?
+	AI_Output (self, other,"Info_Thorus_DiegoSentMe_09_02"); //Poslouchej, vysvÄ›tlÃ­m ti to. Diego si tÄ› chce vyzkouÅ¡et. Jestli si ON myslÃ­, Å¾e jsi dost dobrÃ½, tak tÄ› pustÃ­m na hrad, abys mohl navÅ¡tÃ­vit Gomeze.
+	AI_Output (self, other,"Info_Thorus_DiegoSentMe_09_03"); //Cokoliv se stane, je to na tebe, jasnÃ½?
+	AI_Output (other, self,"Info_Thorus_DiegoSentMe_15_04"); //Å˜eknu to Diegovi.
 	
-	B_LogEntry(CH1_JoinOC,"Thorus mi øekl, e jestli chci bıt pøijat do Starého tábora, mìl bych si promluvit s Diegem. Diego mì vyzkouší.");
+	B_LogEntry(CH1_JoinOC,"Thorus mi Å™ekl, Å¾e jestli chci bÃ½t pÅ™ijat do StarÃ©ho tÃ¡bora, mÄ›l bych si promluvit s Diegem. Diego mÄ› vyzkouÅ¡Ã­.");
 };
 
 // ************************************************************
@@ -123,7 +123,7 @@ INSTANCE Info_Thorus_TryMe(C_INFO) //E3
 	condition	= Info_Thorus_TryMe_Condition;
 	information	= Info_Thorus_TryMe_Info;
 	permanent	= 0;
-	description = "Proè mì nevyzkoušíš?";
+	description = "ProÄ mÄ› nevyzkouÅ¡Ã­Å¡?";
 };                       
 
 FUNC INT Info_Thorus_TryMe_Condition()
@@ -136,10 +136,10 @@ FUNC INT Info_Thorus_TryMe_Condition()
 
 FUNC VOID Info_Thorus_TryMe_Info()
 {	
-	AI_Output (other, self,"Info_Thorus_TryMe_15_00"); //Proè mì nevyzkoušíš?
-	AI_Output (self, other,"Info_Thorus_TryMe_09_01"); //To není tak jednoduché, chlapèe! Kadı nováèek, kterı se chce kamkoliv dostat, musí mít ochránce.
-	AI_Output (self, other,"Info_Thorus_TryMe_09_02"); //A tím ochráncem musí bıt nìkdo z Gomezovıch lidí. Vyzkouší tì sám.
-	AI_Output (self, other,"Info_Thorus_TryMe_09_03"); //A jestli zklameš, je to na tvoje vlastní riziko - to je zdejší zákon.
+	AI_Output (other, self,"Info_Thorus_TryMe_15_00"); //ProÄ mÄ› nevyzkouÅ¡Ã­Å¡?
+	AI_Output (self, other,"Info_Thorus_TryMe_09_01"); //To nenÃ­ tak jednoduchÃ©, chlapÄe! KaÅ¾dÃ½ novÃ¡Äek, kterÃ½ se chce kamkoliv dostat, musÃ­ mÃ­t ochrÃ¡nce.
+	AI_Output (self, other,"Info_Thorus_TryMe_09_02"); //A tÃ­m ochrÃ¡ncem musÃ­ bÃ½t nÄ›kdo z GomezovÃ½ch lidÃ­. VyzkouÅ¡Ã­ tÄ› sÃ¡m.
+	AI_Output (self, other,"Info_Thorus_TryMe_09_03"); //A jestli zklameÅ¡, je to na tvoje vlastnÃ­ riziko - to je zdejÅ¡Ã­ zÃ¡kon.
 };
 
 // ************************************************************
@@ -153,7 +153,7 @@ INSTANCE Info_Thorus_TryMeAgain(C_INFO) //E4
 	condition	= Info_Thorus_TryMeAgain_Condition;
 	information	= Info_Thorus_TryMeAgain_Info;
 	permanent	= 0;
-	description = "Je tu urèitì nìco, co chceš udìlat.";
+	description = "Je tu urÄitÄ› nÄ›co, co chceÅ¡ udÄ›lat.";
 };                       
 
 FUNC INT Info_Thorus_TryMeAgain_Condition()
@@ -166,9 +166,9 @@ FUNC INT Info_Thorus_TryMeAgain_Condition()
 
 FUNC VOID Info_Thorus_TryMeAgain_Info()
 {	
-	AI_Output (other, self,"Info_Thorus_TryMeAgain_15_00"); //Je tu urèitì nìco, co chceš udìlat.
-	AI_Output (self, other,"Info_Thorus_TryMeAgain_09_01"); //Ne. Vìci se mají tak, e my, stráci, jsme trochu víc ne ty, hochu.
-	AI_Output (self, other,"Info_Thorus_TryMeAgain_09_02"); //Ty akorát provedeš úkoly, které pro tebe tvùj ochránce pøichystal.
+	AI_Output (other, self,"Info_Thorus_TryMeAgain_15_00"); //Je tu urÄitÄ› nÄ›co, co chceÅ¡ udÄ›lat.
+	AI_Output (self, other,"Info_Thorus_TryMeAgain_09_01"); //Ne. VÄ›ci se majÃ­ tak, Å¾e my, strÃ¡Å¾ci, jsme trochu vÃ­c neÅ¾ ty, hochu.
+	AI_Output (self, other,"Info_Thorus_TryMeAgain_09_02"); //Ty akorÃ¡t provedeÅ¡ Ãºkoly, kterÃ© pro tebe tvÅ¯j ochrÃ¡nce pÅ™ichystal.
 };
 
 // ************************************************************
@@ -182,7 +182,7 @@ INSTANCE Info_Thorus_TryMeICanDoIt(C_INFO) //E5
 	condition	= Info_Thorus_TryMeICanDoIt_Condition;
 	information	= Info_Thorus_TryMeICanDoIt_Info;
 	permanent	= 0;
-	description = "Jsem schopnı udìlat cokoliv, co mi pøikáeš.";
+	description = "Jsem schopnÃ½ udÄ›lat cokoliv, co mi pÅ™ikÃ¡Å¾eÅ¡.";
 };                       
 
 FUNC INT Info_Thorus_TryMeICanDoIt_Condition()
@@ -195,9 +195,9 @@ FUNC INT Info_Thorus_TryMeICanDoIt_Condition()
 
 FUNC VOID Info_Thorus_TryMeICanDoIt_Info()
 {	
-	AI_Output (other, self,"Info_Thorus_TryMeICanDoIt_15_00"); //Jsem schopnı udìlat cokoliv, co mi pøikáeš.
-	AI_Output (self, other,"Info_Thorus_TryMeICanDoIt_09_01"); //Eh? Vypadá to, e jsi odhodlanı, eh... Je tady jedna vìc, kterou mùe vìdìt jen nìkdo, kdo není s Gomezem.
-	AI_Output (self, other,"Info_Thorus_TryMeICanDoIt_09_02"); //Ale varuju tì: jestli to vyzradíš, mùeš se dostat do pìkného maléru!
+	AI_Output (other, self,"Info_Thorus_TryMeICanDoIt_15_00"); //Jsem schopnÃ½ udÄ›lat cokoliv, co mi pÅ™ikÃ¡Å¾eÅ¡.
+	AI_Output (self, other,"Info_Thorus_TryMeICanDoIt_09_01"); //Eh? VypadÃ¡ to, Å¾e jsi odhodlanÃ½, eh... Je tady jedna vÄ›c, kterou mÅ¯Å¾e vÄ›dÄ›t jen nÄ›kdo, kdo nenÃ­ s Gomezem.
+	AI_Output (self, other,"Info_Thorus_TryMeICanDoIt_09_02"); //Ale varuju tÄ›: jestli to vyzradÃ­Å¡, mÅ¯Å¾eÅ¡ se dostat do pÄ›knÃ©ho malÃ©ru!
 };
 
 // **************************************************************************
@@ -215,7 +215,7 @@ INSTANCE Info_Thorus_MordragKo_Offer (C_INFO) //E6
 	condition	= Info_Thorus_MordragKo_Offer_Condition;
 	information	= Info_Thorus_MordragKo_Offer_Info;
 	permanent	= 0;
-	description = "Jsem pøipraven vykonat tvùj úkol.";
+	description = "Jsem pÅ™ipraven vykonat tvÅ¯j Ãºkol.";
 };                       
 
 FUNC INT Info_Thorus_MordragKo_Offer_Condition()
@@ -228,26 +228,26 @@ FUNC INT Info_Thorus_MordragKo_Offer_Condition()
 
 FUNC VOID Info_Thorus_MordragKo_Offer_Info()
 {
-	AI_Output (other, self,"Info_Thorus_MordragKo_Offer_15_00"); //Jsem pøipraven vykonat tvùj úkol.
-	AI_Output (self, other,"Info_Thorus_MordragKo_Offer_09_01"); //To, co ti teï povím, zùstane jenom mezi náma dvìma a nikdo jinı se o tom nesmí dozvìdìt, jasnı?
-	AI_Output (other, self,"Info_Thorus_MordragKo_Offer_15_02"); //Jasnı.
-	AI_Output (self, other,"Info_Thorus_MordragKo_Offer_09_03"); //Mám potíe s jedním chlapíkem z Nového tábora. Jmenuje se Mordrag. Kradl u Rudobaronù.
-	AI_Output (self, other,"Info_Thorus_MordragKo_Offer_09_04"); //Samozøejmì máme v Novém táboøe hromadu zabijákù, ale ten chlapík mìl takové nervy, e pøišel do NAŠEHO tábora a prodával NAŠE zboí NAŠIM lidem!
-	AI_Output (self, other,"Info_Thorus_MordragKo_Offer_09_05"); //Zašel moc daleko. Dobøe ale ví, e s tím nemùu nic udìlat.
+	AI_Output (other, self,"Info_Thorus_MordragKo_Offer_15_00"); //Jsem pÅ™ipraven vykonat tvÅ¯j Ãºkol.
+	AI_Output (self, other,"Info_Thorus_MordragKo_Offer_09_01"); //To, co ti teÄ povÃ­m, zÅ¯stane jenom mezi nÃ¡ma dvÄ›ma a nikdo jinÃ½ se o tom nesmÃ­ dozvÄ›dÄ›t, jasnÃ½?
+	AI_Output (other, self,"Info_Thorus_MordragKo_Offer_15_02"); //JasnÃ½.
+	AI_Output (self, other,"Info_Thorus_MordragKo_Offer_09_03"); //MÃ¡m potÃ­Å¾e s jednÃ­m chlapÃ­kem z NovÃ©ho tÃ¡bora. Jmenuje se Mordrag. Kradl u RudobaronÅ¯.
+	AI_Output (self, other,"Info_Thorus_MordragKo_Offer_09_04"); //SamozÅ™ejmÄ› mÃ¡me v NovÃ©m tÃ¡boÅ™e hromadu zabijÃ¡kÅ¯, ale ten chlapÃ­k mÄ›l takovÃ© nervy, Å¾e pÅ™iÅ¡el do NAÅ EHO tÃ¡bora a prodÃ¡val NAÅ E zboÅ¾Ã­ NAÅ IM lidem!
+	AI_Output (self, other,"Info_Thorus_MordragKo_Offer_09_05"); //ZaÅ¡el moc daleko. DobÅ™e ale vÃ­, Å¾e s tÃ­m nemÅ¯Å¾u nic udÄ›lat.
 	AI_Output (other, self,"Info_Thorus_MordragKo_Offer_15_06"); //Jak to?
-	AI_Output (self, other,"Info_Thorus_MordragKo_Offer_09_07"); //Protoe je pod ochranou mágù.
+	AI_Output (self, other,"Info_Thorus_MordragKo_Offer_09_07"); //ProtoÅ¾e je pod ochranou mÃ¡gÅ¯.
 
 	Info_ClearChoices(Info_Thorus_MordragKo_Offer);
-	Info_AddChoice   (Info_Thorus_MordragKo_Offer,"Postarám se o to.",Info_Thorus_MordragKo_OFFER_BACK);
-	Info_AddChoice	 (Info_Thorus_MordragKo_Offer,"Chceš po mnì, abych toho chlapíka zabil?",Info_Thorus_MordragKo_KillHim);
+	Info_AddChoice   (Info_Thorus_MordragKo_Offer,"PostarÃ¡m se o to.",Info_Thorus_MordragKo_OFFER_BACK);
+	Info_AddChoice	 (Info_Thorus_MordragKo_Offer,"ChceÅ¡ po mnÄ›, abych toho chlapÃ­ka zabil?",Info_Thorus_MordragKo_KillHim);
 	Info_AddChoice	 (Info_Thorus_MordragKo_Offer,"Kde Mordraga najdu?",Info_Thorus_MordragKo_Where);
-	Info_AddChoice	 (Info_Thorus_MordragKo_Offer,"Proè ho mágové ochraòují?",Info_Thorus_MordragKo_MagesProtect);
-	Info_AddChoice	 (Info_Thorus_MordragKo_Offer,"Zdá se, e ti mágové jsou pro tebe problém...",Info_Thorus_MordragKo_MageProblem);
+	Info_AddChoice	 (Info_Thorus_MordragKo_Offer,"ProÄ ho mÃ¡govÃ© ochraÅˆujÃ­?",Info_Thorus_MordragKo_MagesProtect);
+	Info_AddChoice	 (Info_Thorus_MordragKo_Offer,"ZdÃ¡ se, Å¾e ti mÃ¡govÃ© jsou pro tebe problÃ©m...",Info_Thorus_MordragKo_MageProblem);
 	
 	Thorus_MordragKo = LOG_RUNNING;
 	
 	Log_CreateTopic		(CH1_MordragKO, LOG_MISSION);
-	B_LogEntry			(CH1_MordragKO,"Thorus mì poádal, abych z tábora vyhnal lumpa jménem Mordrag. Jak to udìlám, je prı má vìc. Nikdo však nesmí vìdìt, e za tím stojí Thorus.");
+	B_LogEntry			(CH1_MordragKO,"Thorus mÄ› poÅ¾Ã¡dal, abych z tÃ¡bora vyhnal lumpa jmÃ©nem Mordrag. Jak to udÄ›lÃ¡m, je prÃ½ mÃ¡ vÄ›c. Nikdo vÅ¡ak nesmÃ­ vÄ›dÄ›t, Å¾e za tÃ­m stojÃ­ Thorus.");
 	Log_SetTopicStatus	(CH1_MordragKO, LOG_RUNNING);
 
 	var C_Npc Mordrag; 				
@@ -256,38 +256,38 @@ FUNC VOID Info_Thorus_MordragKo_Offer_Info()
 
 FUNC VOID Info_Thorus_MordragKo_OFFER_BACK()
 {
-	AI_Output (other, self,"Info_Thorus_MordragKo_OFFER_BACK_15_00"); //Postarám se o to.
+	AI_Output (other, self,"Info_Thorus_MordragKo_OFFER_BACK_15_00"); //PostarÃ¡m se o to.
 	Info_ClearChoices(Info_Thorus_MordragKo_Offer);
 };
 
 FUNC VOID Info_Thorus_MordragKo_KillHim()
 {
-	AI_Output (other, self,"Info_Thorus_MordragKo_KillHim_15_00"); //Chceš po mnì, abych toho chlapíka zabil?
-	AI_Output (self, other,"Info_Thorus_MordragKo_KillHim_09_01"); //Chci, abys zaøídil, abych se u na nìj nikdy nemusel podívat. Je mi jedno, jak to udìláš.
+	AI_Output (other, self,"Info_Thorus_MordragKo_KillHim_15_00"); //ChceÅ¡ po mnÄ›, abych toho chlapÃ­ka zabil?
+	AI_Output (self, other,"Info_Thorus_MordragKo_KillHim_09_01"); //Chci, abys zaÅ™Ã­dil, abych se uÅ¾ na nÄ›j nikdy nemusel podÃ­vat. Je mi jedno, jak to udÄ›lÃ¡Å¡.
 };
 
 FUNC VOID Info_Thorus_MordragKo_Where()
 {
 	AI_Output (other, self,"Info_Thorus_MordragKo_Where_15_00"); //Kde Mordraga najdu?
-	AI_Output (self, other,"Info_Thorus_MordragKo_Where_09_01"); //Najdeš ho u jiní brány na druhé stranì hradu, pøímo za vstupem. Ten bastard by se u nikdy nemìl odváit pøijít do tábora.
-	B_LogEntry(CH1_MordragKO,"Mordrag je u jiní brány za hradem.");
+	AI_Output (self, other,"Info_Thorus_MordragKo_Where_09_01"); //NajdeÅ¡ ho u jiÅ¾nÃ­ brÃ¡ny na druhÃ© stranÄ› hradu, pÅ™Ã­mo za vstupem. Ten bastard by se uÅ¾ nikdy nemÄ›l odvÃ¡Å¾it pÅ™ijÃ­t do tÃ¡bora.
+	B_LogEntry(CH1_MordragKO,"Mordrag je u jiÅ¾nÃ­ brÃ¡ny za hradem.");
 };
 
 FUNC VOID Info_Thorus_MordragKo_MagesProtect()
 {
-	AI_Output (other, self,"Info_Thorus_MordragKo_MagesProtect_15_00"); //Proè ho mágové ochraòují?
-	AI_Output (self, other,"Info_Thorus_MordragKo_MagesProtect_09_01"); //Protoe jim slouí jako poslíèek. Naši kouzelníci jsou v kontaktu s mágy v Novém táboøe. Èasto posílají poslíèky tam a zpátky.
-	AI_Output (self, other,"Info_Thorus_MordragKo_MagesProtect_09_02"); //Byli by nejspíš HODNÌ rozzlobení, kdybych nìkterého z jejich poslíèkù vyhodil z tábora, nebo ho zabil.
-	AI_Output (other, self,"Info_Thorus_MordragKo_MagesProtect_15_03"); //A co JÁ? Co myslíš, e udìlají MNÌ?
-	AI_Output (self, other,"Info_Thorus_MordragKo_MagesProtect_09_04"); //Jsi tu novı, mùeš bıt v klidu. Já ale zodpovídám za to, co dìlají moji chlapi. Proto je nesmírnì dùleité, abys drel jazyk za zuby.
+	AI_Output (other, self,"Info_Thorus_MordragKo_MagesProtect_15_00"); //ProÄ ho mÃ¡govÃ© ochraÅˆujÃ­?
+	AI_Output (self, other,"Info_Thorus_MordragKo_MagesProtect_09_01"); //ProtoÅ¾e jim slouÅ¾Ã­ jako poslÃ­Äek. NaÅ¡i kouzelnÃ­ci jsou v kontaktu s mÃ¡gy v NovÃ©m tÃ¡boÅ™e. ÄŒasto posÃ­lajÃ­ poslÃ­Äky tam a zpÃ¡tky.
+	AI_Output (self, other,"Info_Thorus_MordragKo_MagesProtect_09_02"); //Byli by nejspÃ­Å¡ HODNÄš rozzlobenÃ­, kdybych nÄ›kterÃ©ho z jejich poslÃ­ÄkÅ¯ vyhodil z tÃ¡bora, nebo ho zabil.
+	AI_Output (other, self,"Info_Thorus_MordragKo_MagesProtect_15_03"); //A co JÃ? Co myslÃ­Å¡, Å¾e udÄ›lajÃ­ MNÄš?
+	AI_Output (self, other,"Info_Thorus_MordragKo_MagesProtect_09_04"); //Jsi tu novÃ½, mÅ¯Å¾eÅ¡ bÃ½t v klidu. JÃ¡ ale zodpovÃ­dÃ¡m za to, co dÄ›lajÃ­ moji chlapi. Proto je nesmÃ­rnÄ› dÅ¯leÅ¾itÃ©, abys drÅ¾el jazyk za zuby.
 	Thorus_MordragMageMessenger = TRUE;
 };
 
 FUNC VOID Info_Thorus_MordragKo_MageProblem()
 {
-	AI_Output (other, self,"Info_Thorus_MordragKo_MageProblem_15_00"); //Zdá se, e ti mágové jsou tvùj problém...
-	AI_Output (self, other,"Info_Thorus_MordragKo_MageProblem_09_01"); //Jistì, ale jsou takovım problémem, kterı se tìce øeší. Pøed pár lety se jeden ze Stínù pokusil ve spánku probodnout Velkého mága Ohnivého kruhu.
-	AI_Output (self, other,"Info_Thorus_MordragKo_MageProblem_09_02"); //Potom ho našli na Vnìjším okruhu - po pravdì øeèeno, sbírali ho po CELÉM  Vnìjším okruhu.
+	AI_Output (other, self,"Info_Thorus_MordragKo_MageProblem_15_00"); //ZdÃ¡ se, Å¾e ti mÃ¡govÃ© jsou tvÅ¯j problÃ©m...
+	AI_Output (self, other,"Info_Thorus_MordragKo_MageProblem_09_01"); //JistÄ›, ale jsou takovÃ½m problÃ©mem, kterÃ½ se tÄ›Å¾ce Å™eÅ¡Ã­. PÅ™ed pÃ¡r lety se jeden ze StÃ­nÅ¯ pokusil ve spÃ¡nku probodnout VelkÃ©ho mÃ¡ga OhnivÃ©ho kruhu.
+	AI_Output (self, other,"Info_Thorus_MordragKo_MageProblem_09_02"); //Potom ho naÅ¡li na VnÄ›jÅ¡Ã­m okruhu - po pravdÄ› Å™eÄeno, sbÃ­rali ho po CELÃ‰M  VnÄ›jÅ¡Ã­m okruhu.
 };
 
 // **************************************************************************
@@ -315,33 +315,33 @@ FUNC INT Info_Thorus_MordragKo_Analyze_Condition()
 FUNC VOID Info_Thorus_MordragKo_Analyze_Info()
 {
 	Info_ClearChoices	(Info_Thorus_MordragKo_Analyze);
-	Info_AddChoice   	(Info_Thorus_MordragKo_Analyze,"Postarám se o to.",Info_Thorus_MordragKo_ANALYZE_BACK);
+	Info_AddChoice   	(Info_Thorus_MordragKo_Analyze,"PostarÃ¡m se o to.",Info_Thorus_MordragKo_ANALYZE_BACK);
 	Info_AddChoice	 	(Info_Thorus_MordragKo_Analyze,"Kde Mordraga najdu?",Info_Thorus_MordragKo_Where);	//SIEHE OBEN
 	var C_NPC Mordrag; Mordrag = Hlp_GetNpc(Org_826_Mordrag);
 	if (Npc_IsDead(Mordrag))
 	{
-		Info_AddChoice	(Info_Thorus_MordragKo_Analyze,"Mordrag u nikdy nikomu nic neukradne!",Info_Thorus_MordragKo_MordragDead);
+		Info_AddChoice	(Info_Thorus_MordragKo_Analyze,"Mordrag uÅ¾ nikdy nikomu nic neukradne!",Info_Thorus_MordragKo_MordragDead);
 	}
 	else if ( (MordragKO_HauAb==TRUE) || (MordragKO_StayAtNC==TRUE) )
 	{ 
-		Info_AddChoice	(Info_Thorus_MordragKo_Analyze,"U se tu nikdy víc neukáe!",Info_Thorus_MordragKo_MordragGone);
+		Info_AddChoice	(Info_Thorus_MordragKo_Analyze,"UÅ¾ se tu nikdy vÃ­c neukÃ¡Å¾e!",Info_Thorus_MordragKo_MordragGone);
 	};
     
 };
 
 FUNC VOID Info_Thorus_MordragKo_ANALYZE_BACK()
 {
-	AI_Output (other, self,"Info_Thorus_MordragKo_ANALYZE_BACK_15_00"); //Postarám se o to.
+	AI_Output (other, self,"Info_Thorus_MordragKo_ANALYZE_BACK_15_00"); //PostarÃ¡m se o to.
 	Info_ClearChoices(Info_Thorus_MordragKo_Analyze);
 };
 
 FUNC VOID Info_Thorus_MordragKo_MordragDead()
 {
-	AI_Output (other, self,"Info_Thorus_MordragKo_MordragDead_15_00"); //Mordrag u nikdy nikomu nic neukradne!
-	AI_Output (self, other,"Info_Thorus_MordragKo_MordragDead_09_01"); //Myslíš tím, es ho porazil? To není špatné, hochu.
+	AI_Output (other, self,"Info_Thorus_MordragKo_MordragDead_15_00"); //Mordrag uÅ¾ nikdy nikomu nic neukradne!
+	AI_Output (self, other,"Info_Thorus_MordragKo_MordragDead_09_01"); //MyslÃ­Å¡ tÃ­m, Å¾es ho porazil? To nenÃ­ Å¡patnÃ©, hochu.
 	Thorus_MordragKo = LOG_SUCCESS;
 	Log_SetTopicStatus(CH1_MordragKO, LOG_SUCCESS);	
-	B_LogEntry (CH1_MordragKO,"Thorus byl potìšen, e mu Mordrag zmizel z cesty. Vıhoda pro mì.");
+	B_LogEntry (CH1_MordragKO,"Thorus byl potÄ›Å¡en, Å¾e mu Mordrag zmizel z cesty. VÃ½hoda pro mÄ›.");
 	B_GiveXP(XP_Thorusmordragdead);
 	Info_ClearChoices(Info_Thorus_MordragKo_Analyze);
 
@@ -349,11 +349,11 @@ FUNC VOID Info_Thorus_MordragKo_MordragDead()
 
 FUNC VOID Info_Thorus_MordragKo_MordragGone()
 {
-	AI_Output (other, self,"Info_Thorus_MordragKo_MordragGone_15_00"); //U se tu nikdy víc neukáe!
-	AI_Output (self, other,"Info_Thorus_MordragKo_MordragGone_09_01"); //Byl bych radši, kdybys ho zabil.
+	AI_Output (other, self,"Info_Thorus_MordragKo_MordragGone_15_00"); //UÅ¾ se tu nikdy vÃ­c neukÃ¡Å¾e!
+	AI_Output (self, other,"Info_Thorus_MordragKo_MordragGone_09_01"); //Byl bych radÅ¡i, kdybys ho zabil.
 	Thorus_MordragKo = LOG_SUCCESS;
 	Log_SetTopicStatus(CH1_MordragKO, LOG_SUCCESS);
-	B_LogEntry (CH1_MordragKO,"Thorus je rád, e u Mordrag není v táboøe.");
+	B_LogEntry (CH1_MordragKO,"Thorus je rÃ¡d, Å¾e uÅ¾ Mordrag nenÃ­ v tÃ¡boÅ™e.");
 	B_GiveXP(XP_Thorusmordragko);
 	Info_ClearChoices(Info_Thorus_MordragKo_Analyze);
 };
@@ -382,13 +382,13 @@ FUNC INT Info_Thorus_MordragFailed_Condition()
 
 FUNC VOID Info_Thorus_MordragFailed_Info()
 {
-	AI_Output (self, other,"Info_Thorus_MordragFailed_09_00"); //Špatnì! Øíkal jsem ti NEVYSLOVUJ MOJE JMÉNO!!!
-	AI_Output (self, other,"Info_Thorus_MordragFailed_09_01"); //Vyzradil jsi to! Na všechno jsi zapomnìl! Neopovauj se u nijak do té záleitosti znovu pouštìt!
+	AI_Output (self, other,"Info_Thorus_MordragFailed_09_00"); //Å patnÄ›! Å˜Ã­kal jsem ti NEVYSLOVUJ MOJE JMÃ‰NO!!!
+	AI_Output (self, other,"Info_Thorus_MordragFailed_09_01"); //Vyzradil jsi to! Na vÅ¡echno jsi zapomnÄ›l! NeopovaÅ¾uj se uÅ¾ nijak do tÃ© zÃ¡leÅ¾itosti znovu pouÅ¡tÄ›t!
 			
 	Thorus_MordragKo = LOG_FAILED;
 	
 	Log_SetTopicStatus(CH1_MordragKO, LOG_FAILED);
-	B_LogEntry (CH1_MordragKO,"Thorusovi se nelíbilo, e jsem Mordragovi øekl jeho jméno. Myslím, e bych mu chvíli nemìl chodit na oèi.");
+	B_LogEntry (CH1_MordragKO,"Thorusovi se nelÃ­bilo, Å¾e jsem Mordragovi Å™ekl jeho jmÃ©no. MyslÃ­m, Å¾e bych mu chvÃ­li nemÄ›l chodit na oÄi.");
 	AI_StopProcessInfos	(self);
 };
 
@@ -403,7 +403,7 @@ INSTANCE Info_Thorus_BribeGuard (C_INFO)
 	condition	= Info_Thorus_BribeGuard_Condition;
 	information	= Info_Thorus_BribeGuard_Info;
 	permanent	= 0;
-	description = "Kdybych ti dal urèité mnoství rudy, pustil bys mì na hrad?";
+	description = "Kdybych ti dal urÄitÃ© mnoÅ¾stvÃ­ rudy, pustil bys mÄ› na hrad?";
 };                       
 
 FUNC INT Info_Thorus_BribeGuard_Condition()
@@ -416,14 +416,14 @@ FUNC INT Info_Thorus_BribeGuard_Condition()
 
 FUNC VOID Info_Thorus_BribeGuard_Info()
 {
-	AI_Output (other, self,"Info_Thorus_BribeGuard_15_00"); //Kdybych ti dal urèité mnoství rudy, pustil bys mì na hrad?
-	AI_Output (self, other,"Info_Thorus_BribeGuard_09_01"); //Za urèité mnoství...
-	AI_Output (other, self,"Info_Thorus_BribeGuard_15_02"); //Jak velké?
-	AI_Output (self, other,"Info_Thorus_BribeGuard_09_02"); //Dobrá - musí bıt takové, aby se muselo chvíli poèítat. Dost dlouho na to, aby bylo jisté, e já i mí chlapi budeme zamìstnaní jeho poèítáním, zatímco ty vklouzneš dovnitø.
-	AI_Output (other, self,"Info_Thorus_BribeGuard_15_03"); //Tak øekni kolik?
-	AI_Output (self, other,"Info_Thorus_BribeGuard_09_03"); //1000 nugetù by mìlo staèit.
-	AI_Output (other, self,"Info_Thorus_BribeGuard_15_04"); //1000 nugetù?
-	AI_Output (self, other,"Info_Thorus_BribeGuard_09_04"); //Dobøe, tak se pøidej ke Gomezovi, a budeš mít vstup na hrad zdarma.
+	AI_Output (other, self,"Info_Thorus_BribeGuard_15_00"); //Kdybych ti dal urÄitÃ© mnoÅ¾stvÃ­ rudy, pustil bys mÄ› na hrad?
+	AI_Output (self, other,"Info_Thorus_BribeGuard_09_01"); //Za urÄitÃ© mnoÅ¾stvÃ­...
+	AI_Output (other, self,"Info_Thorus_BribeGuard_15_02"); //Jak velkÃ©?
+	AI_Output (self, other,"Info_Thorus_BribeGuard_09_02"); //DobrÃ¡ - musÃ­ bÃ½t takovÃ©, aby se muselo chvÃ­li poÄÃ­tat. Dost dlouho na to, aby bylo jistÃ©, Å¾e jÃ¡ i mÃ­ chlapi budeme zamÄ›stnanÃ­ jeho poÄÃ­tÃ¡nÃ­m, zatÃ­mco ty vklouzneÅ¡ dovnitÅ™.
+	AI_Output (other, self,"Info_Thorus_BribeGuard_15_03"); //Tak Å™ekni kolik?
+	AI_Output (self, other,"Info_Thorus_BribeGuard_09_03"); //1000 nugetÅ¯ by mÄ›lo staÄit.
+	AI_Output (other, self,"Info_Thorus_BribeGuard_15_04"); //1000 nugetÅ¯?
+	AI_Output (self, other,"Info_Thorus_BribeGuard_09_04"); //DobÅ™e, tak se pÅ™idej ke Gomezovi, a budeÅ¡ mÃ­t vstup na hrad zdarma.
 };
 
 // ************************************************************
@@ -437,7 +437,7 @@ INSTANCE Info_Thorus_Give1000Ore (C_INFO)
 	condition	= Info_Thorus_Give1000Ore_Condition;
 	information	= Info_Thorus_Give1000Ore_Info;
 	permanent	= 1;
-	description = "Mám 1000 magickıch nugetù. Teï mì pus dovnitø!";
+	description = "MÃ¡m 1000 magickÃ½ch nugetÅ¯. TeÄ mÄ› pusÅ¥ dovnitÅ™!";
 };                       
 
 FUNC INT Info_Thorus_Give1000Ore_Condition()
@@ -450,12 +450,12 @@ FUNC INT Info_Thorus_Give1000Ore_Condition()
 
 FUNC VOID Info_Thorus_Give1000Ore_Info()
 {
-	AI_Output (other, self,"Info_Thorus_Give1000Ore_15_00"); //Mám 1000 magickıch nugetù. Teï mì pus dovnitø!
+	AI_Output (other, self,"Info_Thorus_Give1000Ore_15_00"); //MÃ¡m 1000 magickÃ½ch nugetÅ¯. TeÄ mÄ› pusÅ¥ dovnitÅ™!
 	
 	if (Npc_HasItems(other, ItMiNugget)>=1000)
 	{
 		B_GiveInvItems 	(other,self,ItMiNugget,1000);		
-		AI_Output (self, other,"Info_Thorus_Give1000Ore_09_01"); //Dobrá, bì pøímo rovnì. Mùeš jít do hradu, ale ádné hlouposti, jasnı?
+		AI_Output (self, other,"Info_Thorus_Give1000Ore_09_01"); //DobrÃ¡, bÄ›Å¾ pÅ™Ã­mo rovnÄ›. MÅ¯Å¾eÅ¡ jÃ­t do hradu, ale Å¾Ã¡dnÃ© hlouposti, jasnÃ½?
 		var C_NPC wache212; wache212 = Hlp_GetNpc(Grd_212_Torwache);
 		var C_NPC wache213; wache213 = Hlp_GetNpc(Grd_213_Torwache);
 		wache212.aivar[AIV_PASSGATE] = TRUE;
@@ -463,12 +463,12 @@ FUNC VOID Info_Thorus_Give1000Ore_Info()
 	}
 	else
 	{
-		AI_Output (self, other,"Info_Thorus_Give1000Ore_09_02"); //Nezkoušej na mì ádné triky, chlapèe. Ty nemáš ádnıch 1000 magickıch nugetù!
+		AI_Output (self, other,"Info_Thorus_Give1000Ore_09_02"); //NezkouÅ¡ej na mÄ› Å¾Ã¡dnÃ© triky, chlapÄe. Ty nemÃ¡Å¡ Å¾Ã¡dnÃ½ch 1000 magickÃ½ch nugetÅ¯!
 	};
 };
 		
 // ************************************************************
-// 					Brief für Magier
+// 					Brief fÃ¼r Magier
 // ************************************************************
 
 INSTANCE Info_Thorus_LetterForMages (C_INFO)
@@ -478,7 +478,7 @@ INSTANCE Info_Thorus_LetterForMages (C_INFO)
 	condition	= Info_Thorus_LetterForMages_Condition;
 	information	= Info_Thorus_LetterForMages_Info;
 	permanent	= 1;
-	description = "Potøebuju se dostat do hradu! Nesu dopis pro nejvyššího Mága Ohnì.";
+	description = "PotÅ™ebuju se dostat do hradu! Nesu dopis pro nejvyÅ¡Å¡Ã­ho MÃ¡ga OhnÄ›.";
 };                       
 
 FUNC INT Info_Thorus_LetterForMages_Condition()
@@ -492,16 +492,16 @@ FUNC INT Info_Thorus_LetterForMages_Condition()
 
 FUNC VOID Info_Thorus_LetterForMages_Info()
 {
-	AI_Output (other, self,"Info_Thorus_LetterForMages_15_00"); //Potøebuju se dostat do hradu! Nesu dopis pro nejvyššího Mága Ohnì.
-	AI_Output (self, other,"Info_Thorus_LetterForMages_09_01"); //A ty si myslíš, e tì pustím do hradu, abys ho pøedal a shrábl odmìnu?
+	AI_Output (other, self,"Info_Thorus_LetterForMages_15_00"); //PotÅ™ebuju se dostat do hradu! Nesu dopis pro nejvyÅ¡Å¡Ã­ho MÃ¡ga OhnÄ›.
+	AI_Output (self, other,"Info_Thorus_LetterForMages_09_01"); //A ty si myslÃ­Å¡, Å¾e tÄ› pustÃ­m do hradu, abys ho pÅ™edal a shrÃ¡bl odmÄ›nu?
 	AI_Output (other, self,"Info_Thorus_LetterForMages_15_02"); //Tak.
-	AI_Output (self, other,"Info_Thorus_LetterForMages_09_03"); //Dobrá, uka mi tu zprávu.
-	AI_Output (other, self,"Info_Thorus_LetterForMages_15_04"); //Nemùu ji ukázat TOBÌ - zapomeò na to!
-	AI_Output (self, other,"Info_Thorus_LetterForMages_09_05"); //Dobøe, zapomnìl jsem.
+	AI_Output (self, other,"Info_Thorus_LetterForMages_09_03"); //DobrÃ¡, ukaÅ¾ mi tu zprÃ¡vu.
+	AI_Output (other, self,"Info_Thorus_LetterForMages_15_04"); //NemÅ¯Å¾u ji ukÃ¡zat TOBÄš - zapomeÅˆ na to!
+	AI_Output (self, other,"Info_Thorus_LetterForMages_09_05"); //DobÅ™e, zapomnÄ›l jsem.
 };
 
 // ************************************************************
-// 					Bereit für Gomez !!!
+// 					Bereit fÃ¼r Gomez !!!
 // ************************************************************
 
 INSTANCE Info_Thorus_ReadyForGomez (C_INFO)
@@ -511,7 +511,7 @@ INSTANCE Info_Thorus_ReadyForGomez (C_INFO)
 	condition	= Info_Thorus_ReadyForGomez_Condition;
 	information	= Info_Thorus_ReadyForGomez_Info;
 	permanent	= 0;//1
-	description = "Diego øíká, e mùu vidìt Gomeze!";
+	description = "Diego Å™Ã­kÃ¡, Å¾e mÅ¯Å¾u vidÄ›t Gomeze!";
 };                       
 
 FUNC INT Info_Thorus_ReadyForGomez_Condition()
@@ -524,13 +524,13 @@ FUNC INT Info_Thorus_ReadyForGomez_Condition()
 
 FUNC VOID Info_Thorus_ReadyForGomez_Info()
 {
-	AI_Output (other, self,"Info_Thorus_ReadyForGomez_15_00"); //Diego øíká, e mùu vidìt Gomeze!
-	AI_Output (self, other,"Info_Thorus_ReadyForGomez_09_01"); //O tom rozhoduju já!
+	AI_Output (other, self,"Info_Thorus_ReadyForGomez_15_00"); //Diego Å™Ã­kÃ¡, Å¾e mÅ¯Å¾u vidÄ›t Gomeze!
+	AI_Output (self, other,"Info_Thorus_ReadyForGomez_09_01"); //O tom rozhoduju jÃ¡!
 	AI_Output (other, self,"Info_Thorus_ReadyForGomez_15_02"); //A jak ses rozhodl?
 	AI_Output (self, other,"Info_Thorus_ReadyForGomez_09_03"); //Hmmm...
-	AI_Output (self, other,"Info_Thorus_ReadyForGomez_09_04"); //Musím pøipustit, e svoji práci dìláš opravdu dobøe.
-	AI_Output (self, other,"Info_Thorus_ReadyForGomez_09_05"); //Dobrá! Mùeš za Gomezem. Sám rozhodne, jestli se k nám pøidáš, nebo ne.
-	AI_Output (self, other,"Info_Thorus_ReadyForGomez_09_06"); //Od teïka jsi jedním z nás, hochu.
+	AI_Output (self, other,"Info_Thorus_ReadyForGomez_09_04"); //MusÃ­m pÅ™ipustit, Å¾e svoji prÃ¡ci dÄ›lÃ¡Å¡ opravdu dobÅ™e.
+	AI_Output (self, other,"Info_Thorus_ReadyForGomez_09_05"); //DobrÃ¡! MÅ¯Å¾eÅ¡ za Gomezem. SÃ¡m rozhodne, jestli se k nÃ¡m pÅ™idÃ¡Å¡, nebo ne.
+	AI_Output (self, other,"Info_Thorus_ReadyForGomez_09_06"); //Od teÄka jsi jednÃ­m z nÃ¡s, hochu.
 				
 	var C_NPC wache212; wache212 = Hlp_GetNpc(Grd_212_Torwache);
 	var C_NPC wache213; wache213 = Hlp_GetNpc(Grd_213_Torwache);
@@ -551,7 +551,7 @@ INSTANCE Info_Thorus_Krautbote (C_INFO)
 	condition	= Info_Thorus_Krautbote_Condition;
 	information	= Info_Thorus_Krautbote_Info;
 	permanent	= 0;
-	description = "Mám tady od Cora Kaloma zásilku drogy z bain pro Gomeze.";
+	description = "MÃ¡m tady od Cora Kaloma zÃ¡silku drogy z baÅ¾in pro Gomeze.";
 };                       
 
 FUNC INT Info_Thorus_Krautbote_Condition()
@@ -564,13 +564,13 @@ FUNC INT Info_Thorus_Krautbote_Condition()
 
 FUNC VOID Info_Thorus_Krautbote_Info()
 {
-	AI_Output (other, self,"Info_Thorus_Krautbote_15_00"); //Mám tady od Cora Kaloma pro Gomeze zásilku drogy z bain.
-	AI_Output (self, other,"Info_Thorus_Krautbote_09_01"); //Uka mi ji!
+	AI_Output (other, self,"Info_Thorus_Krautbote_15_00"); //MÃ¡m tady od Cora Kaloma pro Gomeze zÃ¡silku drogy z baÅ¾in.
+	AI_Output (self, other,"Info_Thorus_Krautbote_09_01"); //UkaÅ¾ mi ji!
 	
 	if (Npc_HasItems(other, itmijoint_3) >= 30)
 	{
 		AI_Output (self, other,"Info_Thorus_Krautbote_09_02"); //Hmmm...
-		AI_Output (self, other,"Info_Thorus_Krautbote_09_03"); //Dobrá! Mùeš dál. Jdi pøímo do Rudobaronova domu. Bartholo tì tam bude èekat.
+		AI_Output (self, other,"Info_Thorus_Krautbote_09_03"); //DobrÃ¡! MÅ¯Å¾eÅ¡ dÃ¡l. Jdi pÅ™Ã­mo do Rudobaronova domu. Bartholo tÄ› tam bude Äekat.
 		
 		var C_NPC wache212; wache212 = Hlp_GetNpc(Grd_212_Torwache);
 		var C_NPC wache213; wache213 = Hlp_GetNpc(Grd_213_Torwache);
@@ -581,7 +581,7 @@ FUNC VOID Info_Thorus_Krautbote_Info()
 	}
 	else
 	{
-		AI_Output (self, other,"Info_Thorus_Krautbote_09_04"); //Na poslíèka té drogy moc nemáš! Doufám, es tu zásilku u nerozprodal nìkde jinde! Vra se, a budeš mít to správné mnoství!
+		AI_Output (self, other,"Info_Thorus_Krautbote_09_04"); //Na poslÃ­Äka tÃ© drogy moc nemÃ¡Å¡! DoufÃ¡m, Å¾es tu zÃ¡silku uÅ¾ nerozprodal nÄ›kde jinde! VraÅ¥ se, aÅ¾ budeÅ¡ mÃ­t to sprÃ¡vnÃ© mnoÅ¾stvÃ­!
 	};
 };
 
@@ -598,7 +598,7 @@ INSTANCE Info_Thorus_KdWSiegel (C_INFO)
 	condition	= Info_Thorus_KdWSiegel_Condition;
 	information	= Info_Thorus_KdWSiegel_Info;
 	permanent	= 1;
-	description = "Jsem posel mágù Vody. Potøebuju se dostat na hrad!";
+	description = "Jsem posel mÃ¡gÅ¯ Vody. PotÅ™ebuju se dostat na hrad!";
 };                       
 
 FUNC INT Info_Thorus_KdWSiegel_Condition()
@@ -613,11 +613,11 @@ FUNC INT Info_Thorus_KdWSiegel_Condition()
 
 FUNC VOID Info_Thorus_KdWSiegel_Info()
 {
-	AI_Output (other, self,"Info_Thorus_KdWSiegel_15_00"); //Jsem posel mágù Vody. Potøebuju se dostat na hrad!
+	AI_Output (other, self,"Info_Thorus_KdWSiegel_15_00"); //Jsem posel mÃ¡gÅ¯ Vody. PotÅ™ebuju se dostat na hrad!
 	if (Npc_HasItems(other,KdW_Amulett)>=1)
 	{
-		AI_Output (self, other,"Info_Thorus_KdWSiegel_09_01"); //Máš sebou amulet kurıra. S tím projdeš skrze stáe.
-		AI_Output (self, other,"Info_Thorus_KdWSiegel_09_02"); //S mágy nechci mít nic spoleèného. Pøestaò mì obtìovat, jo?
+		AI_Output (self, other,"Info_Thorus_KdWSiegel_09_01"); //MÃ¡Å¡ sebou amulet kurÃ½ra. S tÃ­m projdeÅ¡ skrze stÃ¡Å¾e.
+		AI_Output (self, other,"Info_Thorus_KdWSiegel_09_02"); //S mÃ¡gy nechci mÃ­t nic spoleÄnÃ©ho. PÅ™estaÅˆ mÄ› obtÄ›Å¾ovat, jo?
 		var C_NPC wache212; wache212 = Hlp_GetNpc(Grd_212_Torwache);
 		var C_NPC wache213; wache213 = Hlp_GetNpc(Grd_213_Torwache);
 		wache212.aivar[AIV_PASSGATE] = TRUE;
@@ -627,7 +627,7 @@ FUNC VOID Info_Thorus_KdWSiegel_Info()
 	}
 	else
 	{
-		AI_Output (self, other,"Info_Thorus_KdWSiegel_09_03"); //To jistì jsi. Ale asi jsi musel nìkde zapomenout amulet kurıra, viï?
+		AI_Output (self, other,"Info_Thorus_KdWSiegel_09_03"); //To jistÄ› jsi. Ale asi jsi musel nÄ›kde zapomenout amulet kurÃ½ra, viÄ?
 	};
 };
 
@@ -642,7 +642,7 @@ INSTANCE Info_Thorus_SttGeschafft (C_INFO)
 	condition	= Info_Thorus_SttGeschafft_Condition;
 	information	= Info_Thorus_SttGeschafft_Info;
 	permanent	= 0;
-	description = "Vyøízeno. Teï jsem èlenem tábora.";
+	description = "VyÅ™Ã­zeno. TeÄ jsem Älenem tÃ¡bora.";
 };                       
 
 FUNC INT Info_Thorus_SttGeschafft_Condition()
@@ -655,9 +655,9 @@ FUNC INT Info_Thorus_SttGeschafft_Condition()
 
 FUNC VOID Info_Thorus_SttGeschafft_Info()
 {
-	AI_Output (other, self,"Info_Thorus_SttGeschafft_15_00"); //Vyøízeno. Teï jsem èlenem tábora.
-	AI_Output (self, other,"Info_Thorus_SttGeschafft_09_01"); //Gratuluju, hochu! Ode dneška se radìji dr v blízkosti Diega.
-	AI_Output (self, other,"Info_Thorus_SttGeschafft_09_02"); //Musím jen nìco OPRAVDU dùleitého øíci Gomezovi nebo Ravenovi.
+	AI_Output (other, self,"Info_Thorus_SttGeschafft_15_00"); //VyÅ™Ã­zeno. TeÄ jsem Älenem tÃ¡bora.
+	AI_Output (self, other,"Info_Thorus_SttGeschafft_09_01"); //Gratuluju, hochu! Ode dneÅ¡ka se radÄ›ji drÅ¾ v blÃ­zkosti Diega.
+	AI_Output (self, other,"Info_Thorus_SttGeschafft_09_02"); //MusÃ­m jen nÄ›co OPRAVDU dÅ¯leÅ¾itÃ©ho Å™Ã­ci Gomezovi nebo Ravenovi.
 };	
 
 //////////////////////////////////////////////////
@@ -690,8 +690,8 @@ FUNC INT Info_Thorus_PERM2_Condition()
 
 FUNC VOID Info_Thorus_PERM2_Info()
 {
-	AI_Output (other, self,"Info_Thorus_PERM2_15_00"); //Jak se máš?
-	AI_Output (self, other,"Info_Thorus_PERM2_09_01"); //S Novım táborem nemáme tolik starostí. Spíš mám obavy z tìch sektáøskıch bláznù.
+	AI_Output (other, self,"Info_Thorus_PERM2_15_00"); //Jak se mÃ¡Å¡?
+	AI_Output (self, other,"Info_Thorus_PERM2_09_01"); //S NovÃ½m tÃ¡borem nemÃ¡me tolik starostÃ­. SpÃ­Å¡ mÃ¡m obavy z tÄ›ch sektÃ¡Å™skÃ½ch blÃ¡znÅ¯.
 };	
 
 //////////////////////////////////////////////////
@@ -711,7 +711,7 @@ instance  GRD_200_Thorus_GARDIST (C_INFO)
 	information		= GRD_200_Thorus_GARDIST_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Chceš mi nìco øíci?"; 
+	description		= "ChceÅ¡ mi nÄ›co Å™Ã­ci?"; 
 };
 
 FUNC int  GRD_200_Thorus_GARDIST_Condition()
@@ -731,18 +731,18 @@ FUNC void  GRD_200_Thorus_GARDIST_Info()
 	var C_Npc KDFWache; 				
 	KDFWache = Hlp_GetNpc(GRD_245_GARDIST);
 	KDFWache.aivar[AIV_PASSGATE] = TRUE;
-	AI_Output (other, self,"GRD_200_Thorus_GARDIST_Info_15_01"); //Chceš mi nìco øíci?
-	AI_Output (self, other,"GRD_200_Thorus_GARDIST_Info_09_02"); //Ano. To, jak sis poèínal v dolech, nejen dokázalo urèitou odvahu, ale také prokázalo tvoji sílu a umìní v boji.
-	AI_Output (self, other,"GRD_200_Thorus_GARDIST_Info_09_03"); //Jsem rozhodnutı tì pøijmout mezi své stráe.
+	AI_Output (other, self,"GRD_200_Thorus_GARDIST_Info_15_01"); //ChceÅ¡ mi nÄ›co Å™Ã­ci?
+	AI_Output (self, other,"GRD_200_Thorus_GARDIST_Info_09_02"); //Ano. To, jak sis poÄÃ­nal v dolech, nejen dokÃ¡zalo urÄitou odvahu, ale takÃ© prokÃ¡zalo tvoji sÃ­lu a umÄ›nÃ­ v boji.
+	AI_Output (self, other,"GRD_200_Thorus_GARDIST_Info_09_03"); //Jsem rozhodnutÃ½ tÄ› pÅ™ijmout mezi svÃ© strÃ¡Å¾e.
 	if hero.level < 10
 	{
-		AI_Output (self, other,"GRD_200_Thorus_GARDIST_Info_09_04"); //Ale nejsi zatím úplnì pøipravenı stát se strácem. Potøebuješ ještì získat trochu zkušeností, ne tì budu moci koneènì pøijmout.
+		AI_Output (self, other,"GRD_200_Thorus_GARDIST_Info_09_04"); //Ale nejsi zatÃ­m ÃºplnÄ› pÅ™ipravenÃ½ stÃ¡t se strÃ¡Å¾cem. PotÅ™ebujeÅ¡ jeÅ¡tÄ› zÃ­skat trochu zkuÅ¡enostÃ­, neÅ¾ tÄ› budu moci koneÄnÄ› pÅ™ijmout.
 	    AI_StopProcessInfos	(self);
 		B_PrintGuildCondition(10);
     }
     else if hero.level >= 10
     {
-	    AI_Output (self, other,"GRD_200_Thorus_GARDIST_Info_09_05"); //Dávám ti šanci. Co na to øíkáš?
+	    AI_Output (self, other,"GRD_200_Thorus_GARDIST_Info_09_05"); //DÃ¡vÃ¡m ti Å¡anci. Co na to Å™Ã­kÃ¡Å¡?
 	};
 };
 //---------------------------------------------------------------
@@ -754,7 +754,7 @@ instance  GRD_200_Thorus_AUFNAHME (C_INFO)
 	condition		= GRD_200_Thorus_AUFNAHME_Condition;
 	information		= GRD_200_Thorus_AUFNAHME_Info;
 	permanent		= 0;
-	description		= "Chci se stát strácem."; 
+	description		= "Chci se stÃ¡t strÃ¡Å¾cem."; 
 };
 
 FUNC int  GRD_200_Thorus_AUFNAHME_Condition()
@@ -769,17 +769,17 @@ FUNC int  GRD_200_Thorus_AUFNAHME_Condition()
 };
 FUNC void  GRD_200_Thorus_AUFNAHME_Info()
 {
-	AI_Output (other, self,"GRD_200_Thorus_AUFNAHME_Info_15_01"); //Chci se stát strácem.
-	AI_Output (self, other,"GRD_200_Thorus_AUFNAHME_Info_09_02"); //To rád slyším. Nejprve ti ale musím øíci nìco, co øíkám všem adeptùm. Poslouchej dobøe, protoe to budu øíkat jenom jednou.
-	AI_Output (self, other,"GRD_200_Thorus_AUFNAHME_Info_09_03"); //Dosud ses jenom pokoušel stát se jedním z nás. Ty dny jsou u pryè. Mí chlapi drí pohromadì. My, stráci, chráníme Rudobarony, tábor a dùl.
-	AI_Output (self, other,"GRD_200_Thorus_AUFNAHME_Info_09_04"); //Kopáèi dobıvají rudu a my je za to nenecháme serat èervùm. Rudobaroni vyjednávají s králem, ale my jsme ti, co je chrání.
-	AI_Output (self, other,"GRD_200_Thorus_AUFNAHME_Info_09_05"); //Ve dne v noci jsme v dole. Ve dne v noci støeíme bránu tábora a staráme se, aby lidi mohli v klidu spát.
-	AI_Output (self, other,"GRD_200_Thorus_AUFNAHME_Info_09_06"); //Kdysi jsme byli divoká smeèka, ale teï jsme síla, se kterou se poèítá. Tvrdì pracujeme a dáváme své ivoty za ivoty druhıch.
-	AI_Output (self, other,"GRD_200_Thorus_AUFNAHME_Info_09_07"); //Od svıch chlapù oèekávám jednu vìc: e budou dret spolu. Jedinì spolu dokáeme to, co dokázat musíme.
-	AI_Output (self, other,"GRD_200_Thorus_AUFNAHME_Info_09_08"); //Potom pøeijeme.
-	AI_Output (self, other,"GRD_200_Thorus_AUFNAHME_Info_09_09"); //Všechno ostatní se nauèíš bìhem vıcviku. Buï pøipravenı pomáhat kdekoliv to bude zapotøebí a dìlat cokoliv, co bude tøeba.
-	AI_Output (self, other,"GRD_200_Thorus_AUFNAHME_Info_09_10"); //Zajdi za Stonem, aby ti dal nìjakou zbroj a meè.
-	AI_Output (self, other,"GRD_200_Thorus_AUFNAHME_Info_09_11"); //Stonea najdeš v kováøském obchodì na Vnitøním okruhu.
+	AI_Output (other, self,"GRD_200_Thorus_AUFNAHME_Info_15_01"); //Chci se stÃ¡t strÃ¡Å¾cem.
+	AI_Output (self, other,"GRD_200_Thorus_AUFNAHME_Info_09_02"); //To rÃ¡d slyÅ¡Ã­m. Nejprve ti ale musÃ­m Å™Ã­ci nÄ›co, co Å™Ã­kÃ¡m vÅ¡em adeptÅ¯m. Poslouchej dobÅ™e, protoÅ¾e to budu Å™Ã­kat jenom jednou.
+	AI_Output (self, other,"GRD_200_Thorus_AUFNAHME_Info_09_03"); //Dosud ses jenom pokouÅ¡el stÃ¡t se jednÃ­m z nÃ¡s. Ty dny jsou uÅ¾ pryÄ. MÃ­ chlapi drÅ¾Ã­ pohromadÄ›. My, strÃ¡Å¾ci, chrÃ¡nÃ­me Rudobarony, tÃ¡bor a dÅ¯l.
+	AI_Output (self, other,"GRD_200_Thorus_AUFNAHME_Info_09_04"); //KopÃ¡Äi dobÃ½vajÃ­ rudu a my je za to nenechÃ¡me seÅ¾rat ÄervÅ¯m. Rudobaroni vyjednÃ¡vajÃ­ s krÃ¡lem, ale my jsme ti, co je chrÃ¡nÃ­.
+	AI_Output (self, other,"GRD_200_Thorus_AUFNAHME_Info_09_05"); //Ve dne v noci jsme v dole. Ve dne v noci stÅ™eÅ¾Ã­me brÃ¡nu tÃ¡bora a starÃ¡me se, aby lidi mohli v klidu spÃ¡t.
+	AI_Output (self, other,"GRD_200_Thorus_AUFNAHME_Info_09_06"); //Kdysi jsme byli divokÃ¡ smeÄka, ale teÄ jsme sÃ­la, se kterou se poÄÃ­tÃ¡. TvrdÄ› pracujeme a dÃ¡vÃ¡me svÃ© Å¾ivoty za Å¾ivoty druhÃ½ch.
+	AI_Output (self, other,"GRD_200_Thorus_AUFNAHME_Info_09_07"); //Od svÃ½ch chlapÅ¯ oÄekÃ¡vÃ¡m jednu vÄ›c: Å¾e budou drÅ¾et spolu. JedinÄ› spolu dokÃ¡Å¾eme to, co dokÃ¡zat musÃ­me.
+	AI_Output (self, other,"GRD_200_Thorus_AUFNAHME_Info_09_08"); //Potom pÅ™eÅ¾ijeme.
+	AI_Output (self, other,"GRD_200_Thorus_AUFNAHME_Info_09_09"); //VÅ¡echno ostatnÃ­ se nauÄÃ­Å¡ bÄ›hem vÃ½cviku. BuÄ pÅ™ipravenÃ½ pomÃ¡hat kdekoliv to bude zapotÅ™ebÃ­ a dÄ›lat cokoliv, co bude tÅ™eba.
+	AI_Output (self, other,"GRD_200_Thorus_AUFNAHME_Info_09_10"); //Zajdi za Stonem, aby ti dal nÄ›jakou zbroj a meÄ.
+	AI_Output (self, other,"GRD_200_Thorus_AUFNAHME_Info_09_11"); //Stonea najdeÅ¡ v kovÃ¡Å™skÃ©m obchodÄ› na VnitÅ™nÃ­m okruhu.
 
 	var C_Npc KDFWache; 				
 	KDFWache = Hlp_GetNpc(GRD_245_GARDIST);
@@ -810,12 +810,12 @@ FUNC int  GRD_200_Thorus_NOCHWAS_Condition()
 };
 func void  GRD_200_Thorus_NOCHWAS_Info()
 {
-	AI_Output			(self, other,"GRD_200_Thorus_NOCHWAS_Info_09_01"); //Jo, a ještì jednu vìc...
-	AI_Output			(self, other,"GRD_200_Thorus_NOCHWAS_Info_09_02"); //Vítej mezi stráemi.
+	AI_Output			(self, other,"GRD_200_Thorus_NOCHWAS_Info_09_01"); //Jo, a jeÅ¡tÄ› jednu vÄ›c...
+	AI_Output			(self, other,"GRD_200_Thorus_NOCHWAS_Info_09_02"); //VÃ­tej mezi strÃ¡Å¾emi.
 	AI_StopProcessInfos	(self);
 
 	Log_CreateTopic		(GE_BecomeGuard,	LOG_NOTE);
-	B_LogEntry			(GE_BecomeGuard,"Dnes mì Thorus pøijal mezi stráe. Mám si na hradì u kováøe Stonea vyzvednout svoji novou zbroj.");
+	B_LogEntry			(GE_BecomeGuard,"Dnes mÄ› Thorus pÅ™ijal mezi strÃ¡Å¾e. MÃ¡m si na hradÄ› u kovÃ¡Å™e Stonea vyzvednout svoji novou zbroj.");
 	
 };
 
@@ -828,7 +828,7 @@ instance  GRD_200_Thorus_WANNABEMAGE (C_INFO)
 	condition		= GRD_200_Thorus_WANNABEMAGE_Condition;
 	information		= GRD_200_Thorus_WANNABEMAGE_Info;
 	permanent		= 0;
-	description		= "Zajímá mì cesta magie."; 
+	description		= "ZajÃ­mÃ¡ mÄ› cesta magie."; 
 };
 //
 FUNC int  GRD_200_Thorus_WANNABEMAGE_Condition()
@@ -842,8 +842,8 @@ FUNC int  GRD_200_Thorus_WANNABEMAGE_Condition()
 };
 FUNC void  GRD_200_Thorus_WANNABEMAGE_Info()
 {
-	AI_Output (other, self,"GRD_200_Thorus_WANNABEMAGE_Info_15_01"); //Zajímá mì cesta magie.
-	AI_Output (self, other,"GRD_200_Thorus_WANNABEMAGE_Info_09_02"); //Dobrá, pak by sis mìl moná promluvit s Corristem. Vyuèoval Miltena. Jsem si jistı, e ti nic nestojí v cestì.
+	AI_Output (other, self,"GRD_200_Thorus_WANNABEMAGE_Info_15_01"); //ZajÃ­mÃ¡ mÄ› cesta magie.
+	AI_Output (self, other,"GRD_200_Thorus_WANNABEMAGE_Info_09_02"); //DobrÃ¡, pak by sis mÄ›l moÅ¾nÃ¡ promluvit s Corristem. VyuÄoval Miltena. Jsem si jistÃ½, Å¾e ti nic nestojÃ­ v cestÄ›.
 
 	var C_NPC Corristo;
 	Corristo = Hlp_GetNpc		(KDF_402_Corristo);
@@ -860,7 +860,7 @@ INSTANCE GRD_200_Thorus_Teach(C_INFO)
 	condition	= GRD_200_Thorus_Teach_Condition;
 	information	= GRD_200_Thorus_Teach_Info;
 	permanent	= 1;
-	description = "Mohl bys mì uèit?";
+	description = "Mohl bys mÄ› uÄit?";
 };                       
 
 FUNC INT GRD_200_Thorus_Teach_Condition()
@@ -873,13 +873,13 @@ FUNC INT GRD_200_Thorus_Teach_Condition()
 
 FUNC VOID GRD_200_Thorus_Teach_Info()
 {
-	AI_Output(other,self,"GRD_200_Thorus_Teach_15_00"); //Mohl bys mì uèit?
-	AI_Output(self,other,"GRD_200_Thorus_Teach_09_01"); //Mùu ti ukázat, jak nabıt sílu a zlepšit umìní boje.
+	AI_Output(other,self,"GRD_200_Thorus_Teach_15_00"); //Mohl bys mÄ› uÄit?
+	AI_Output(self,other,"GRD_200_Thorus_Teach_09_01"); //MÅ¯Å¾u ti ukÃ¡zat, jak nabÃ½t sÃ­lu a zlepÅ¡it umÄ›nÃ­ boje.
 	
 	if (log_thorustrain == FALSE)
 	{
 		Log_CreateTopic   	(GE_TeacherOC,LOG_NOTE);
-		B_LogEntry		(GE_TeacherOC,"Thorus mi pomùe zdokonalit mou SÍLU a OBRATNOST.");
+		B_LogEntry		(GE_TeacherOC,"Thorus mi pomÅ¯Å¾e zdokonalit mou SÃLU a OBRATNOST.");
 		log_thorustrain = TRUE;
 	};
 	Info_ClearChoices	(GRD_200_Thorus_Teach);
@@ -967,20 +967,20 @@ FUNC void  GRD_200_Thorus_ZWEIHAND1_Info()
 	if (log_thorusfight == FALSE)
 	{
 		Log_CreateTopic   	(GE_TeacherOC,LOG_NOTE);
-		B_LogEntry			(GE_TeacherOC,"Thorus mì mùe nauèit bojovat s OBOURUÈNÍMI ZBRANÌMI, jen co zvládnu boj s JEDNORUÈNÍMI ZBRANÌMI.");
+		B_LogEntry			(GE_TeacherOC,"Thorus mÄ› mÅ¯Å¾e nauÄit bojovat s OBOURUÄŒNÃMI ZBRANÄšMI, jen co zvlÃ¡dnu boj s JEDNORUÄŒNÃMI ZBRANÄšMI.");
 		log_thorusfight = TRUE;
 	};
-	AI_Output (other, self,"GRD_200_Thorus_ZWEIHAND1_Info_15_01"); //Chci se nauèit zacházet s obouruèním meèem.
+	AI_Output (other, self,"GRD_200_Thorus_ZWEIHAND1_Info_15_01"); //Chci se nauÄit zachÃ¡zet s obouruÄnÃ­m meÄem.
 	
 	
 	if (B_GiveSkill(other,NPC_TALENT_2H , 1, LPCOST_TALENT_2H_1))
 	{
-		AI_Output (self, other,"GRD_200_Thorus_ZWEIHAND1_Info_09_02"); //Dobøe, ale nejdøív musíme probrat základy.
-		AI_Output (self, other,"GRD_200_Thorus_ZWEIHAND1_Info_09_03"); //Meè musíš dret vodorovnì. Potøebuješ silnìjší rozmach, abys mohl na nepøítele zaútoèit takovou tìkou zbraní.
-		AI_Output (self, other,"GRD_200_Thorus_ZWEIHAND1_Info_09_04"); //Zvedni ruku a rozmáchni se rovnou dolu. To obvykle staèí na to, abys nepøítele srazil k zemi.
-		AI_Output (self, other,"GRD_200_Thorus_ZWEIHAND1_Info_09_05"); //Toho momentu pak vyuiješ k novému rozmáchnutí.
-		AI_Output (self, other,"GRD_200_Thorus_ZWEIHAND1_Info_09_06"); //Obouruèní meèe jsou ideální k zasazování boèních úderù, kterımi si nepøítele udríš od tìla.
-		AI_Output (self, other,"GRD_200_Thorus_ZWEIHAND1_Info_09_07"); //To by mohlo pro zaèátek staèit. Trénuj.
+		AI_Output (self, other,"GRD_200_Thorus_ZWEIHAND1_Info_09_02"); //DobÅ™e, ale nejdÅ™Ã­v musÃ­me probrat zÃ¡klady.
+		AI_Output (self, other,"GRD_200_Thorus_ZWEIHAND1_Info_09_03"); //MeÄ musÃ­Å¡ drÅ¾et vodorovnÄ›. PotÅ™ebujeÅ¡ silnÄ›jÅ¡Ã­ rozmach, abys mohl na nepÅ™Ã­tele zaÃºtoÄit takovou tÄ›Å¾kou zbranÃ­.
+		AI_Output (self, other,"GRD_200_Thorus_ZWEIHAND1_Info_09_04"); //Zvedni ruku a rozmÃ¡chni se rovnou dolu. To obvykle staÄÃ­ na to, abys nepÅ™Ã­tele srazil k zemi.
+		AI_Output (self, other,"GRD_200_Thorus_ZWEIHAND1_Info_09_05"); //Toho momentu pak vyuÅ¾ijeÅ¡ k novÃ©mu rozmÃ¡chnutÃ­.
+		AI_Output (self, other,"GRD_200_Thorus_ZWEIHAND1_Info_09_06"); //ObouruÄnÃ­ meÄe jsou ideÃ¡lnÃ­ k zasazovÃ¡nÃ­ boÄnÃ­ch ÃºderÅ¯, kterÃ½mi si nepÅ™Ã­tele udrÅ¾Ã­Å¡ od tÄ›la.
+		AI_Output (self, other,"GRD_200_Thorus_ZWEIHAND1_Info_09_07"); //To by mohlo pro zaÄÃ¡tek staÄit. TrÃ©nuj.
 		GRD_200_Thorus_ZWEIHAND1.permanent = 0;
 	};
 };  
@@ -1008,18 +1008,18 @@ FUNC int  GRD_200_Thorus_ZWEIHAND2_Condition()
 };
 FUNC void  GRD_200_Thorus_ZWEIHAND2_Info()
 {
-	AI_Output (other, self,"GRD_200_Thorus_ZWEIHAND2_Info_15_01"); //Chci se dozvìdìt víc o boji s obouruèním meèem.
+	AI_Output (other, self,"GRD_200_Thorus_ZWEIHAND2_Info_15_01"); //Chci se dozvÄ›dÄ›t vÃ­c o boji s obouruÄnÃ­m meÄem.
 	
 	if (B_GiveSkill(other,NPC_TALENT_2H , 2, LPCOST_TALENT_2H_2))
 	{
-		AI_Output (self, other,"GRD_200_Thorus_ZWEIHAND2_Info_09_02"); //Ze všeho nejdøíve musíš zaujmout základní postoj. Meè musíš dret svisle, stranou od tìla a údery vést silnì obìma rukama.
-		AI_Output (self, other,"GRD_200_Thorus_ZWEIHAND2_Info_09_03"); //Švihnout rychle dolu a ostøí vést pøes rameno. Pak máš šanci provést rychlı švih napravo.
-		AI_Output (self, other,"GRD_200_Thorus_ZWEIHAND2_Info_09_04"); //Tvùj protivník nebude mít šanci se k tobì dostat.
-		AI_Output (self, other,"GRD_200_Thorus_ZWEIHAND2_Info_09_05"); //Nebo meèem švihni z levé horní strany smìrem dopøedu, abys odrazil protivníka dozadu.
-		AI_Output (self, other,"GRD_200_Thorus_ZWEIHAND2_Info_09_06"); //Poøád se otáèej, abys následnému švihu vdy dodával potøebnou sílu, která protivníka srazí.
-		AI_Output (self, other,"GRD_200_Thorus_ZWEIHAND2_Info_09_07"); //Pokud to nebude staèit, zbylı švih vyuij k novému napøáhnutí meèe.
-		AI_Output (self, other,"GRD_200_Thorus_ZWEIHAND2_Info_09_08"); //A útok dokonèíš, zneškodni protivníka a vyèkej na další souboj.
-		AI_Output (self, other,"GRD_200_Thorus_ZWEIHAND2_Info_09_09"); //Klíèem k úspìchu je mìnit postoje a polohy.
+		AI_Output (self, other,"GRD_200_Thorus_ZWEIHAND2_Info_09_02"); //Ze vÅ¡eho nejdÅ™Ã­ve musÃ­Å¡ zaujmout zÃ¡kladnÃ­ postoj. MeÄ musÃ­Å¡ drÅ¾et svisle, stranou od tÄ›la a Ãºdery vÃ©st silnÄ› obÄ›ma rukama.
+		AI_Output (self, other,"GRD_200_Thorus_ZWEIHAND2_Info_09_03"); //Å vihnout rychle dolu a ostÅ™Ã­ vÃ©st pÅ™es rameno. Pak mÃ¡Å¡ Å¡anci provÃ©st rychlÃ½ Å¡vih napravo.
+		AI_Output (self, other,"GRD_200_Thorus_ZWEIHAND2_Info_09_04"); //TvÅ¯j protivnÃ­k nebude mÃ­t Å¡anci se k tobÄ› dostat.
+		AI_Output (self, other,"GRD_200_Thorus_ZWEIHAND2_Info_09_05"); //Nebo meÄem Å¡vihni z levÃ© hornÃ­ strany smÄ›rem dopÅ™edu, abys odrazil protivnÃ­ka dozadu.
+		AI_Output (self, other,"GRD_200_Thorus_ZWEIHAND2_Info_09_06"); //PoÅ™Ã¡d se otÃ¡Äej, abys nÃ¡slednÃ©mu Å¡vihu vÅ¾dy dodÃ¡val potÅ™ebnou sÃ­lu, kterÃ¡ protivnÃ­ka srazÃ­.
+		AI_Output (self, other,"GRD_200_Thorus_ZWEIHAND2_Info_09_07"); //Pokud to nebude staÄit, zbylÃ½ Å¡vih vyuÅ¾ij k novÃ©mu napÅ™Ã¡hnutÃ­ meÄe.
+		AI_Output (self, other,"GRD_200_Thorus_ZWEIHAND2_Info_09_08"); //AÅ¾ Ãºtok dokonÄÃ­Å¡, zneÅ¡kodni protivnÃ­ka a vyÄkej na dalÅ¡Ã­ souboj.
+		AI_Output (self, other,"GRD_200_Thorus_ZWEIHAND2_Info_09_09"); //KlÃ­Äem k ÃºspÄ›chu je mÄ›nit postoje a polohy.
 		GRD_200_Thorus_ZWEIHAND2.permanent = 0 ;
 	};
 };  

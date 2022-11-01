@@ -38,7 +38,7 @@ func void ZS_TestDetect_Loop ()
 		
 		if ( Npc_IsDetectedMobOwnedByNpc(self, npcSnapper) )
 		{
-			strOwner = "Chòapavec";
+			strOwner = "ChÅˆapavec";
 		};
 
 		if ( Npc_IsDetectedMobOwnedByGuild(self, npcSnapper.guild) )

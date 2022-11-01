@@ -53,9 +53,9 @@ FUNC int  Info_OrcShaman_THX_Condition()
 };
 FUNC void  Info_OrcShaman_THX_Info()
 {
-	AI_Output 		(self, hero,"Info_OrcShaman_THX_17_01"); //Dluûit dÌky, cizinËe.
-	AI_Output 		(self, hero,"Info_OrcShaman_THX_17_02"); //ZlÌ sk¯eti mÏ chtÏjÌ zabÌt.
-	AI_Output 		(self, hero,"Info_OrcShaman_THX_17_03"); //Sta¯Ì brat¯i b˝t dneska nep¯·telÈ.
+	AI_Output 		(self, hero,"Info_OrcShaman_THX_17_01"); //Dlu≈æit d√≠ky, cizinƒçe.
+	AI_Output 		(self, hero,"Info_OrcShaman_THX_17_02"); //Zl√≠ sk≈ôeti mƒõ chtƒõj√≠ zab√≠t.
+	AI_Output 		(self, hero,"Info_OrcShaman_THX_17_03"); //Sta≈ô√≠ brat≈ôi b√Ωt dneska nep≈ô√°tel√©.
 }; 
 
 //---------------------------------------------------------------------
@@ -83,8 +83,8 @@ FUNC int  Info_OrcShaman_WHO_Condition()
 FUNC void  Info_OrcShaman_WHO_Info()
 {
 	AI_Output 		(hero, self,"Info_OrcShaman_WHO_15_01"); //Kdo jsi?
-	AI_Output 		(self, hero,"Info_OrcShaman_WHO_17_02"); //J· se jmenovat Ur-Shak.
-	AI_Output 		(self, hero,"Info_OrcShaman_WHO_17_03"); //B˝t synem ducha. LidÈ tomu ¯Ìkat öaman.
+	AI_Output 		(self, hero,"Info_OrcShaman_WHO_17_02"); //J√° se jmenovat Ur-Shak.
+	AI_Output 		(self, hero,"Info_OrcShaman_WHO_17_03"); //B√Ωt synem ducha. Lid√© tomu ≈ô√≠kat ≈°aman.
 }; 
 
 //---------------------------------------------------------------------
@@ -97,7 +97,7 @@ instance  Info_OrcShaman_TONGUE (C_INFO)
 	information	= Info_OrcShaman_TONGUE_Info;
 	important	= 0;
 	permanent	= 0;
-	description = "Kde ses nauËil n·ö jazyk?";
+	description = "Kde ses nauƒçil n√°≈° jazyk?";
 };
 
 FUNC int  Info_OrcShaman_TONGUE_Condition()
@@ -111,9 +111,9 @@ FUNC int  Info_OrcShaman_TONGUE_Condition()
 
 FUNC void  Info_OrcShaman_TONGUE_Info()
 {
-	AI_Output 		(hero, self,"Info_OrcShaman_TONGUE_15_01"); //Jak ses nauËil n·ö jazyk?
-	AI_Output 		(self, hero,"Info_OrcShaman_TONGUE_17_02"); //Ur-Shak b˝t otrok lidÌ v dole.
-	AI_Output 		(self, hero,"Info_OrcShaman_TONGUE_17_03"); //UtÈct pryË. To b˝t uû p¯ed mnoha zimami.
+	AI_Output 		(hero, self,"Info_OrcShaman_TONGUE_15_01"); //Jak ses nauƒçil n√°≈° jazyk?
+	AI_Output 		(self, hero,"Info_OrcShaman_TONGUE_17_02"); //Ur-Shak b√Ωt otrok lid√≠ v dole.
+	AI_Output 		(self, hero,"Info_OrcShaman_TONGUE_17_03"); //Ut√©ct pryƒç. To b√Ωt u≈æ p≈ôed mnoha zimami.
 }; 
 
 //---------------------------------------------------------------------
@@ -126,7 +126,7 @@ instance  Info_OrcShaman_MINE (C_INFO)
 	information	= Info_OrcShaman_MINE_Info;
 	important	= 0;
 	permanent	= 0;
-	description = "Tys byl otrok v dole? Ve kterÈm dole?";
+	description = "Tys byl otrok v dole? Ve kter√©m dole?";
 };
 
 FUNC int  Info_OrcShaman_MINE_Condition()
@@ -140,8 +140,8 @@ FUNC int  Info_OrcShaman_MINE_Condition()
 
 FUNC void  Info_OrcShaman_MINE_Info()
 {
-	AI_Output 		(hero, self,"Info_OrcShaman_MINE_15_01"); //Tys byl otrok v dole? Ve kterÈm dole?
-	AI_Output 		(self, hero,"Info_OrcShaman_MINE_17_02"); //D˘l b˝t pod vesnicÌ v KotlinÏ.
+	AI_Output 		(hero, self,"Info_OrcShaman_MINE_15_01"); //Tys byl otrok v dole? Ve kter√©m dole?
+	AI_Output 		(self, hero,"Info_OrcShaman_MINE_17_02"); //D≈Øl b√Ωt pod vesnic√≠ v Kotlinƒõ.
 }; 
 
 //---------------------------------------------------------------------
@@ -154,7 +154,7 @@ instance  Info_OrcShaman_WHY (C_INFO)
 	information	= Info_OrcShaman_WHY_Info;
 	important	= 0;
 	permanent	= 0;
-	description = "ProË jsou tvoji brat¯i proti tobÏ?";
+	description = "Proƒç jsou tvoji brat≈ôi proti tobƒõ?";
 };
 
 FUNC int  Info_OrcShaman_WHY_Condition()
@@ -168,10 +168,10 @@ FUNC int  Info_OrcShaman_WHY_Condition()
 
 FUNC void  Info_OrcShaman_WHY_Info()
 {
-	AI_Output 		(hero, self,"Info_OrcShaman_WHY_15_01"); //ProË jsou tvoji brat¯i proti tobÏ?
-	AI_Output 		(self, hero,"Info_OrcShaman_WHY_17_02"); //Ur-Shak b˝t v nep¯Ìzni.
-	AI_Output 		(self, hero,"Info_OrcShaman_WHY_17_03"); //Ztratit velkou ˙ctu v KRUSHAKA.
-	AI_Output 		(self, hero,"Info_OrcShaman_WHY_17_04"); //VÏ¯it mi, KRUSHAK b˝t zl˝ dÈmon..
+	AI_Output 		(hero, self,"Info_OrcShaman_WHY_15_01"); //Proƒç jsou tvoji brat≈ôi proti tobƒõ?
+	AI_Output 		(self, hero,"Info_OrcShaman_WHY_17_02"); //Ur-Shak b√Ωt v nep≈ô√≠zni.
+	AI_Output 		(self, hero,"Info_OrcShaman_WHY_17_03"); //Ztratit velkou √∫ctu v KRUSHAKA.
+	AI_Output 		(self, hero,"Info_OrcShaman_WHY_17_04"); //Vƒõ≈ôit mi, KRUSHAK b√Ωt zl√Ω d√©mon..
 }; 
 
 //---------------------------------------------------------------------
@@ -184,7 +184,7 @@ instance  Info_OrcShaman_KRUSHAK (C_INFO)
 	information	= Info_OrcShaman_KRUSHAK_Info;
 	important	= 0;
 	permanent	= 0;
-	description = "Co znamen· KRUSHAK?";
+	description = "Co znamen√° KRUSHAK?";
 };
 
 FUNC int  Info_OrcShaman_KRUSHAK_Condition()
@@ -198,10 +198,10 @@ FUNC int  Info_OrcShaman_KRUSHAK_Condition()
 
 FUNC void  Info_OrcShaman_KRUSHAK_Info()
 {
-	AI_Output 		(hero, self,"Info_OrcShaman_KRUSHAK_15_01"); //Co to znamen· KRUSHAK?
-	AI_Output 		(self, hero,"Info_OrcShaman_KRUSHAK_17_02"); //LidÈ tomu ¯Ìkat SP¡T.
-	AI_Output 		(hero, self,"Info_OrcShaman_KRUSHAK_15_03"); //MyslÌö 'Sp·Ë'?
-	AI_Output 		(self, hero,"Info_OrcShaman_KRUSHAK_17_04"); //Ano, lidÈ tomu ¯Ìkat SP¡»!
+	AI_Output 		(hero, self,"Info_OrcShaman_KRUSHAK_15_01"); //Co to znamen√° KRUSHAK?
+	AI_Output 		(self, hero,"Info_OrcShaman_KRUSHAK_17_02"); //Lid√© tomu ≈ô√≠kat SP√ÅT.
+	AI_Output 		(hero, self,"Info_OrcShaman_KRUSHAK_15_03"); //Mysl√≠≈° 'Sp√°ƒç'?
+	AI_Output 		(self, hero,"Info_OrcShaman_KRUSHAK_17_04"); //Ano, lid√© tomu ≈ô√≠kat SP√Åƒå!
 }; 
 
 //---------------------------------------------------------------------
@@ -214,7 +214,7 @@ instance  Info_OrcShaman_SLEEPER (C_INFO)
 	information	= Info_OrcShaman_SLEEPER_Info;
 	important	= 0;
 	permanent	= 0;
-	description = "Co vÌö o Sp·Ëovi?";
+	description = "Co v√≠≈° o Sp√°ƒçovi?";
 };
 
 FUNC int  Info_OrcShaman_SLEEPER_Condition()
@@ -228,14 +228,14 @@ FUNC int  Info_OrcShaman_SLEEPER_Condition()
 
 FUNC void  Info_OrcShaman_SLEEPER_Info()
 {
-	AI_Output 		(hero, self,"Info_OrcShaman_SLEEPER_15_01"); //Co vÌö o Sp·Ëovi?
-	AI_Output 		(self, hero,"Info_OrcShaman_SLEEPER_17_02"); //B˝t pÏt brat¯Ì. To b˝t p¯ed mnoha zimami!
-	AI_Output 		(self, hero,"Info_OrcShaman_SLEEPER_17_03"); //B˝t synovÈ ducha, tak jako Ur-Shak!
-	AI_Output 		(hero, self,"Info_OrcShaman_SLEEPER_15_04"); //MyslÌö pÏt öaman˘!
-	AI_Output 		(self, hero,"Info_OrcShaman_SLEEPER_17_05"); //Vyruöovat KRUSHAK!
-	AI_Output 		(self, hero,"Info_OrcShaman_SLEEPER_17_06"); //ChtÌt porazit klan nep¯·tel!
-	AI_Output 		(self, hero,"Info_OrcShaman_SLEEPER_17_07"); //PÏt brat¯Ì potom postavit pro KRUSHAKA chr·m pod zemÌ!
-	AI_Output 		(hero, self,"Info_OrcShaman_SLEEPER_15_08"); //PodzemnÌ chr·m pro Sp·Ëe! Ten, co mÏl na mysli Xardas, kdyû mluvil o vstupu v 'sk¯etÌm mÏstÏ'!
+	AI_Output 		(hero, self,"Info_OrcShaman_SLEEPER_15_01"); //Co v√≠≈° o Sp√°ƒçovi?
+	AI_Output 		(self, hero,"Info_OrcShaman_SLEEPER_17_02"); //B√Ωt pƒõt brat≈ô√≠. To b√Ωt p≈ôed mnoha zimami!
+	AI_Output 		(self, hero,"Info_OrcShaman_SLEEPER_17_03"); //B√Ωt synov√© ducha, tak jako Ur-Shak!
+	AI_Output 		(hero, self,"Info_OrcShaman_SLEEPER_15_04"); //Mysl√≠≈° pƒõt ≈°aman≈Ø!
+	AI_Output 		(self, hero,"Info_OrcShaman_SLEEPER_17_05"); //Vyru≈°ovat KRUSHAK!
+	AI_Output 		(self, hero,"Info_OrcShaman_SLEEPER_17_06"); //Cht√≠t porazit klan nep≈ô√°tel!
+	AI_Output 		(self, hero,"Info_OrcShaman_SLEEPER_17_07"); //Pƒõt brat≈ô√≠ potom postavit pro KRUSHAKA chr√°m pod zem√≠!
+	AI_Output 		(hero, self,"Info_OrcShaman_SLEEPER_15_08"); //Podzemn√≠ chr√°m pro Sp√°ƒçe! Ten, co mƒõl na mysli Xardas, kdy≈æ mluvil o vstupu v 'sk≈ôet√≠m mƒõstƒõ'!
 }; 
 
 //---------------------------------------------------------------------
@@ -248,7 +248,7 @@ instance  Info_OrcShaman_CURSE (C_INFO)
 	information	= Info_OrcShaman_CURSE_Info;
 	important	= 0;
 	permanent	= 0;
-	description = "Co se stalo v tom podzemnÌm chr·mu?";
+	description = "Co se stalo v tom podzemn√≠m chr√°mu?";
 };
 
 FUNC int  Info_OrcShaman_CURSE_Condition()
@@ -262,13 +262,13 @@ FUNC int  Info_OrcShaman_CURSE_Condition()
 
 FUNC void  Info_OrcShaman_CURSE_Info()
 {
-	AI_Output 		(hero, self,"Info_OrcShaman_CURSE_15_01"); //Co se stalo v tom podzemnÌm chr·mu?
-	AI_Output 		(self, hero,"Info_OrcShaman_CURSE_17_02"); //Brat¯i potom d·t srdce KRUSHAKOVI.
-	AI_Output 		(self, hero,"Info_OrcShaman_CURSE_17_03"); //Ale KRUSHAK b˝t zl˝. KRUSHAK proklÌt vöechny, co postavit chr·m.
-	AI_Output 		(self, hero,"Info_OrcShaman_CURSE_17_04"); //Brat¯i nemÌt srdce, ale b˝t mrtvÌ a ûÌt. B˝t obojÌ.
-	AI_Output 		(self, hero,"Info_OrcShaman_CURSE_17_05"); //KRUSHAK mÌt teÔ srdce brat¯Ì. Srdce teÔ b˝t KRUSHAKOVA sÌla.
-	AI_Output 		(hero, self,"Info_OrcShaman_CURSE_15_06"); //Co se stalo s dÏlnÌky, kte¯Ì vystavÏli ten chr·m?
-	AI_Output 		(self, hero,"Info_OrcShaman_CURSE_17_07"); //KRUSHAK proklÌt vöechny. I dÏlnÌky. B˝t vöichni mrtvÌ i ûÌt. ObojÌ najednou.
+	AI_Output 		(hero, self,"Info_OrcShaman_CURSE_15_01"); //Co se stalo v tom podzemn√≠m chr√°mu?
+	AI_Output 		(self, hero,"Info_OrcShaman_CURSE_17_02"); //Brat≈ôi potom d√°t srdce KRUSHAKOVI.
+	AI_Output 		(self, hero,"Info_OrcShaman_CURSE_17_03"); //Ale KRUSHAK b√Ωt zl√Ω. KRUSHAK prokl√≠t v≈°echny, co postavit chr√°m.
+	AI_Output 		(self, hero,"Info_OrcShaman_CURSE_17_04"); //Brat≈ôi nem√≠t srdce, ale b√Ωt mrtv√≠ a ≈æ√≠t. B√Ωt oboj√≠.
+	AI_Output 		(self, hero,"Info_OrcShaman_CURSE_17_05"); //KRUSHAK m√≠t teƒè srdce brat≈ô√≠. Srdce teƒè b√Ωt KRUSHAKOVA s√≠la.
+	AI_Output 		(hero, self,"Info_OrcShaman_CURSE_15_06"); //Co se stalo s dƒõln√≠ky, kte≈ô√≠ vystavƒõli ten chr√°m?
+	AI_Output 		(self, hero,"Info_OrcShaman_CURSE_17_07"); //KRUSHAK prokl√≠t v≈°echny. I dƒõln√≠ky. B√Ωt v≈°ichni mrtv√≠ i ≈æ√≠t. Oboj√≠ najednou.
 }; 
 
 //---------------------------------------------------------------------
@@ -281,7 +281,7 @@ instance  Info_OrcShaman_OUTSIDE (C_INFO)
 	information	= Info_OrcShaman_OUTSIDE_Info;
 	important	= 0;
 	permanent	= 0;
-	description = "A sk¯eti na povrchu s tÌm nic neudÏlali?";
+	description = "A sk≈ôeti na povrchu s t√≠m nic neudƒõlali?";
 };
 
 FUNC int  Info_OrcShaman_OUTSIDE_Condition()
@@ -294,11 +294,11 @@ FUNC int  Info_OrcShaman_OUTSIDE_Condition()
 
 FUNC void  Info_OrcShaman_OUTSIDE_Info()
 {
-	AI_Output 		(hero, self,"Info_OrcShaman_OUTSIDE_15_01"); //A sk¯eti na povrchu s tÌm nic neudÏlali?
-	AI_Output 		(self, hero,"Info_OrcShaman_OUTSIDE_17_02"); //Uzav¯Ìt chr·m. Brat¯i dnes uctÌvat KRUSHAK.
-	AI_Output 		(self, hero,"Info_OrcShaman_OUTSIDE_17_03"); //KRUSHAK b˝t vysvÏcen˝, ne se st·t zl˝.
-	AI_Output 		(self, hero,"Info_OrcShaman_OUTSIDE_17_04"); //Ur-Shak si myslet, ûe vysvÏcenÌ b˝t öpatn· vÏc. Muset ¯Ìct, ûe KRUSHAK b˝t zl˝.
-	AI_Output 		(self, hero,"Info_OrcShaman_OUTSIDE_17_05"); //Brat¯i o tom nechtÌt slyöet. Brat¯i ¯Ìkat Ur-Shak odejÌt. Brat¯i vyhnat Ur-Shaka.
+	AI_Output 		(hero, self,"Info_OrcShaman_OUTSIDE_15_01"); //A sk≈ôeti na povrchu s t√≠m nic neudƒõlali?
+	AI_Output 		(self, hero,"Info_OrcShaman_OUTSIDE_17_02"); //Uzav≈ô√≠t chr√°m. Brat≈ôi dnes uct√≠vat KRUSHAK.
+	AI_Output 		(self, hero,"Info_OrcShaman_OUTSIDE_17_03"); //KRUSHAK b√Ωt vysvƒõcen√Ω, ne se st√°t zl√Ω.
+	AI_Output 		(self, hero,"Info_OrcShaman_OUTSIDE_17_04"); //Ur-Shak si myslet, ≈æe vysvƒõcen√≠ b√Ωt ≈°patn√° vƒõc. Muset ≈ô√≠ct, ≈æe KRUSHAK b√Ωt zl√Ω.
+	AI_Output 		(self, hero,"Info_OrcShaman_OUTSIDE_17_05"); //Brat≈ôi o tom necht√≠t sly≈°et. Brat≈ôi ≈ô√≠kat Ur-Shak odej√≠t. Brat≈ôi vyhnat Ur-Shaka.
 }; 
 
 //---------------------------------------------------------------------
@@ -311,7 +311,7 @@ instance  Info_OrcShaman_INTEMPLE (C_INFO)
 	information	= Info_OrcShaman_INTEMPLE_Info;
 	important	= 0;
 	permanent	= 0;
-	description = "Pot¯ebuju se dostat do toho podzemnÌho chr·mu. M˘ûeö mÏ tam dovÈst?";
+	description = "Pot≈ôebuju se dostat do toho podzemn√≠ho chr√°mu. M≈Ø≈æe≈° mƒõ tam dov√©st?";
 };
 
 FUNC int  Info_OrcShaman_INTEMPLE_Condition()
@@ -324,10 +324,10 @@ FUNC int  Info_OrcShaman_INTEMPLE_Condition()
 
 FUNC void  Info_OrcShaman_INTEMPLE_Info()
 {
-	AI_Output 		(hero, self,"Info_OrcShaman_INTEMPLE_15_01"); //Pot¯ebuju se dostat do toho podzemnÌho chr·mu. M˘ûeö mÏ tam dovÈst?
-	AI_Output 		(self, hero,"Info_OrcShaman_INTEMPLE_17_02"); //Ur-Shak ¯Ìct cizinci dÌky. Cizinec zachr·nit Ur-Shaka.
-	AI_Output 		(self, hero,"Info_OrcShaman_INTEMPLE_17_03"); //Ale vstup do chr·mu b˝t doma. Ur-Shak nesmÏt jÌt dom˘.
-	AI_Output 		(hero, self,"Info_OrcShaman_INTEMPLE_15_04"); //VÌm, myslÌö tÌm, ûe by tÏ nepustili zp·tky do sk¯etÌho mÏsta.
+	AI_Output 		(hero, self,"Info_OrcShaman_INTEMPLE_15_01"); //Pot≈ôebuju se dostat do toho podzemn√≠ho chr√°mu. M≈Ø≈æe≈° mƒõ tam dov√©st?
+	AI_Output 		(self, hero,"Info_OrcShaman_INTEMPLE_17_02"); //Ur-Shak ≈ô√≠ct cizinci d√≠ky. Cizinec zachr√°nit Ur-Shaka.
+	AI_Output 		(self, hero,"Info_OrcShaman_INTEMPLE_17_03"); //Ale vstup do chr√°mu b√Ωt doma. Ur-Shak nesmƒõt j√≠t dom≈Ø.
+	AI_Output 		(hero, self,"Info_OrcShaman_INTEMPLE_15_04"); //V√≠m, mysl√≠≈° t√≠m, ≈æe by tƒõ nepustili zp√°tky do sk≈ôet√≠ho mƒõsta.
 };
 
 //---------------------------------------------------------------------
@@ -340,7 +340,7 @@ instance  Info_OrcShaman_MAP (C_INFO)
 	information	= Info_OrcShaman_MAP_Info;
 	important	= 0;
 	permanent	= 0;
-	description = "M˘ûeö mi uk·zat na mapÏ, kde to sk¯etÌ mÏsto leûÌ?";
+	description = "M≈Ø≈æe≈° mi uk√°zat na mapƒõ, kde to sk≈ôet√≠ mƒõsto le≈æ√≠?";
 };
 
 FUNC int  Info_OrcShaman_MAP_Condition()
@@ -355,11 +355,11 @@ FUNC int  Info_OrcShaman_MAP_Condition()
 
 FUNC void  Info_OrcShaman_MAP_Info()
 {
-	AI_Output 		(hero, self,"Info_OrcShaman_MAP_15_01"); //M˘ûeö mi uk·zat na mapÏ, kde to sk¯etÌ mÏsto leûÌ?
-	AI_Output 		(self, hero,"Info_OrcShaman_MAP_17_02"); //Domov Ur-Shaka b˝t tam, kde mapa pr·zdn·.
-	AI_Output 		(self, hero,"Info_OrcShaman_MAP_17_03"); //Cizinec d·t mapu, Ur-Shak ji dokonËit!
-	AI_Output 		(self, hero,"Info_OrcShaman_MAP_17_04"); //(ökr·be do mapy)
-	AI_Output 		(hero, self,"Info_OrcShaman_MAP_15_05"); //⁄ûasnÈ, jsi dobr˝ kartograf. DÌky!
+	AI_Output 		(hero, self,"Info_OrcShaman_MAP_15_01"); //M≈Ø≈æe≈° mi uk√°zat na mapƒõ, kde to sk≈ôet√≠ mƒõsto le≈æ√≠?
+	AI_Output 		(self, hero,"Info_OrcShaman_MAP_17_02"); //Domov Ur-Shaka b√Ωt tam, kde mapa pr√°zdn√°.
+	AI_Output 		(self, hero,"Info_OrcShaman_MAP_17_03"); //Cizinec d√°t mapu, Ur-Shak ji dokonƒçit!
+	AI_Output 		(self, hero,"Info_OrcShaman_MAP_17_04"); //(≈°kr√°be do mapy)
+	AI_Output 		(hero, self,"Info_OrcShaman_MAP_15_05"); //√ö≈æasn√©, jsi dobr√Ω kartograf. D√≠ky!
 
 	B_GiveInvItems  (hero, self, ItWrWorldmap, 1);
 	Npc_RemoveInvItem(self, ItWrWorldmap);
@@ -377,7 +377,7 @@ instance  Info_OrcShaman_FIGHT (C_INFO)
 	information	= Info_OrcShaman_FIGHT_Info;
 	important	= 0;
 	permanent	= 0;
-	description = "Dobr·, budu muset bojovat podle svÈho.";
+	description = "Dobr√°, budu muset bojovat podle sv√©ho.";
 };
 
 FUNC int  Info_OrcShaman_FIGHT_Condition()
@@ -390,10 +390,10 @@ FUNC int  Info_OrcShaman_FIGHT_Condition()
 
 FUNC void  Info_OrcShaman_FIGHT_Info()
 {
-	AI_Output 		(hero, self,"Info_OrcShaman_FIGHT_15_01"); //Dobr·, budu muset bojovat podle svÈho.
-	AI_Output 		(self, hero,"Info_OrcShaman_FIGHT_17_02"); //Brat¯i doma b˝t velmi silnÌ! Bratr˘ b˝t hÛÛÛdnÏ moc!
-	AI_Output 		(self, hero,"Info_OrcShaman_FIGHT_17_03"); //Cizinec tam nechodit. Mnoho bojovnÌk˘! Cizinec zem¯Ìt!
-	AI_Output 		(self, hero,"Info_OrcShaman_FIGHT_17_04"); //DalöÌ synovÈ ducha b˝t doma. Kdyû cizinec udÏlat oheÚ, potom cizinec zem¯Ìt!
+	AI_Output 		(hero, self,"Info_OrcShaman_FIGHT_15_01"); //Dobr√°, budu muset bojovat podle sv√©ho.
+	AI_Output 		(self, hero,"Info_OrcShaman_FIGHT_17_02"); //Brat≈ôi doma b√Ωt velmi siln√≠! Bratr≈Ø b√Ωt h√≥√≥√≥dnƒõ moc!
+	AI_Output 		(self, hero,"Info_OrcShaman_FIGHT_17_03"); //Cizinec tam nechodit. Mnoho bojovn√≠k≈Ø! Cizinec zem≈ô√≠t!
+	AI_Output 		(self, hero,"Info_OrcShaman_FIGHT_17_04"); //Dal≈°√≠ synov√© ducha b√Ωt doma. Kdy≈æ cizinec udƒõlat ohe≈à, potom cizinec zem≈ô√≠t!
 }; 
 
 //---------------------------------------------------------------------
@@ -406,7 +406,7 @@ instance  Info_OrcShaman_OTHERWAY (C_INFO)
 	information	= Info_OrcShaman_OTHERWAY_Info;
 	important	= 0;
 	permanent	= 0;
-	description = "Dob¯e, dob¯e, budu ale muset nÏjak najÌt cestu do chr·mu!";
+	description = "Dob≈ôe, dob≈ôe, budu ale muset nƒõjak naj√≠t cestu do chr√°mu!";
 };
 
 FUNC int  Info_OrcShaman_OTHERWAY_Condition()
@@ -419,11 +419,11 @@ FUNC int  Info_OrcShaman_OTHERWAY_Condition()
 
 FUNC void  Info_OrcShaman_OTHERWAY_Info()
 {
-	AI_Output 		(hero, self,"Info_OrcShaman_OTHERWAY_15_01"); //Dob¯e, dob¯e, budu ale muset nÏjak najÌt cestu do chr·mu!
-	AI_Output 		(self, hero,"Info_OrcShaman_OTHERWAY_17_02"); //Ur-Shak zn·t cestu! Cizinec mÌt ULU-MULU!
+	AI_Output 		(hero, self,"Info_OrcShaman_OTHERWAY_15_01"); //Dob≈ôe, dob≈ôe, budu ale muset nƒõjak naj√≠t cestu do chr√°mu!
+	AI_Output 		(self, hero,"Info_OrcShaman_OTHERWAY_17_02"); //Ur-Shak zn√°t cestu! Cizinec m√≠t ULU-MULU!
 	AI_Output 		(hero, self,"Info_OrcShaman_OTHERWAY_15_03"); //ULU-MULU??? Co je to Ulu-Mulu?
-	AI_Output 		(self, hero,"Info_OrcShaman_OTHERWAY_17_04"); //To b˝t znamenÌ p¯·telstvÌ! Brat¯i si v·ûit ULU-MULU!
-	AI_Output 		(self, hero,"Info_OrcShaman_OTHERWAY_17_05"); //Kdyû cizinec mÌt ULU-MULU, pak cizinec nezem¯Ìt!
+	AI_Output 		(self, hero,"Info_OrcShaman_OTHERWAY_17_04"); //To b√Ωt znamen√≠ p≈ô√°telstv√≠! Brat≈ôi si v√°≈æit ULU-MULU!
+	AI_Output 		(self, hero,"Info_OrcShaman_OTHERWAY_17_05"); //Kdy≈æ cizinec m√≠t ULU-MULU, pak cizinec nezem≈ô√≠t!
 };
 
 //---------------------------------------------------------------------
@@ -450,36 +450,36 @@ FUNC int  Info_OrcShaman_ULUMULU_Condition()
 FUNC void  Info_OrcShaman_ULUMULU_Info()
 {
 	AI_Output 		(hero, self,"Info_OrcShaman_ULUMULU_15_01"); //Kde dostanu to Ulu-Mulu?
-	AI_Output 		(self, hero,"Info_OrcShaman_ULUMULU_17_02"); //Cizinec jÌt k p¯Ìteli Ur-Shaka!
-	AI_Output 		(self, hero,"Info_OrcShaman_ULUMULU_17_03"); //P¯Ìtel Ur-Shaka d· ULU-MULU! Cizinec nosit ULU-MULU a pak nezem¯Ìt!
-	AI_Output 		(hero, self,"Info_OrcShaman_ULUMULU_15_04"); //Dob¯e, dob¯e, tomu 'nezem¯Ìt' rozumÌm, ale kde najdu tvÈho p¯Ìtele?
-	AI_Output 		(self, hero,"Info_OrcShaman_ULUMULU_17_05"); //P¯Ìtel Ur-Shaka b˝t v dole lidÌ. P¯Ìtel neutÈct s Ur-Shakem. P¯Ìtel pak b˝t nemocn˝.
+	AI_Output 		(self, hero,"Info_OrcShaman_ULUMULU_17_02"); //Cizinec j√≠t k p≈ô√≠teli Ur-Shaka!
+	AI_Output 		(self, hero,"Info_OrcShaman_ULUMULU_17_03"); //P≈ô√≠tel Ur-Shaka d√° ULU-MULU! Cizinec nosit ULU-MULU a pak nezem≈ô√≠t!
+	AI_Output 		(hero, self,"Info_OrcShaman_ULUMULU_15_04"); //Dob≈ôe, dob≈ôe, tomu 'nezem≈ô√≠t' rozum√≠m, ale kde najdu tv√©ho p≈ô√≠tele?
+	AI_Output 		(self, hero,"Info_OrcShaman_ULUMULU_17_05"); //P≈ô√≠tel Ur-Shaka b√Ωt v dole lid√≠. P≈ô√≠tel neut√©ct s Ur-Shakem. P≈ô√≠tel pak b√Ωt nemocn√Ω.
 
 	B_Story_FoundUrShak	();
 	
 	Info_ClearChoices	(Info_OrcShaman_ULUMULU);
-	Info_AddChoice		(Info_OrcShaman_ULUMULU,"Byl jsi zav¯en˝ ve SvobodnÈm dole?",										Info_OrcShaman_ULUMULU_FM);
-	Info_AddChoice		(Info_OrcShaman_ULUMULU,"Byls vÏznÏm v tom opuötÏnÈm dole?",									Info_OrcShaman_ULUMULU_VM);
-	Info_AddChoice		(Info_OrcShaman_ULUMULU,"Drûeli tÏ zav¯enÈho v StarÈm dole?",										Info_OrcShaman_ULUMULU_AM);
+	Info_AddChoice		(Info_OrcShaman_ULUMULU,"Byl jsi zav≈ôen√Ω ve Svobodn√©m dole?",										Info_OrcShaman_ULUMULU_FM);
+	Info_AddChoice		(Info_OrcShaman_ULUMULU,"Byls vƒõznƒõm v tom opu≈°tƒõn√©m dole?",									Info_OrcShaman_ULUMULU_VM);
+	Info_AddChoice		(Info_OrcShaman_ULUMULU,"Dr≈æeli tƒõ zav≈ôen√©ho v Star√©m dole?",										Info_OrcShaman_ULUMULU_AM);
 }; 
 
 func void Info_OrcShaman_ULUMULU_VM ()
 {
-	AI_Output 		(hero, self,"Info_OrcShaman_ULUMULU_15_08"); //Byls vÏznÏm v tom opuötÏnÈm dole?
+	AI_Output 		(hero, self,"Info_OrcShaman_ULUMULU_15_08"); //Byls vƒõznƒõm v tom opu≈°tƒõn√©m dole?
 	AI_Output 		(self, hero,"Info_OrcShaman_ULUMULU_17_09"); //Ur-Shak neznat to slovo.
 };
 
 func void Info_OrcShaman_ULUMULU_AM ()
 {
-	AI_Output 		(hero, self,"Info_OrcShaman_ULUMULU_15_10"); //Drûeli tÏ zav¯enÈho v StarÈm dole?
-	AI_Output 		(self, hero,"Info_OrcShaman_ULUMULU_17_11"); //Ur-Shak nerozumÏt!
+	AI_Output 		(hero, self,"Info_OrcShaman_ULUMULU_15_10"); //Dr≈æeli tƒõ zav≈ôen√©ho v Star√©m dole?
+	AI_Output 		(self, hero,"Info_OrcShaman_ULUMULU_17_11"); //Ur-Shak nerozumƒõt!
 };
 
 func void Info_OrcShaman_ULUMULU_FM ()
 {
-	AI_Output 		(hero, self,"Info_OrcShaman_ULUMULU_15_12"); //Byl jsi zav¯en˝ ve SvobodnÈm dole?
-	AI_Output 		(self, hero,"Info_OrcShaman_ULUMULU_17_13"); //Ur-Shak b˝t vÏzeÚ v dole pod vesnicÌ v KotlinÏ.
-	AI_Output 		(self, hero,"Info_OrcShaman_ULUMULU_17_14"); //Ur-Shak myslet, ûe tomu lidi tak ¯Ìkat!
+	AI_Output 		(hero, self,"Info_OrcShaman_ULUMULU_15_12"); //Byl jsi zav≈ôen√Ω ve Svobodn√©m dole?
+	AI_Output 		(self, hero,"Info_OrcShaman_ULUMULU_17_13"); //Ur-Shak b√Ωt vƒõze≈à v dole pod vesnic√≠ v Kotlinƒõ.
+	AI_Output 		(self, hero,"Info_OrcShaman_ULUMULU_17_14"); //Ur-Shak myslet, ≈æe tomu lidi tak ≈ô√≠kat!
 
 	Info_ClearChoices	(Info_OrcShaman_ULUMULU);
 };
@@ -494,7 +494,7 @@ instance  Info_OrcShaman_BYEBYE (C_INFO)
 	information	= Info_OrcShaman_BYEBYE_Info;
 	important	= 0;
 	permanent	= 0;
-	description = "DÌky za tvou pomoc!";
+	description = "D√≠ky za tvou pomoc!";
 };
 
 FUNC int  Info_OrcShaman_BYEBYE_Condition()
@@ -507,11 +507,11 @@ FUNC int  Info_OrcShaman_BYEBYE_Condition()
 
 FUNC void  Info_OrcShaman_BYEBYE_Info()
 {
-	AI_Output 		(hero, self,"Info_OrcShaman_BYEBYE_15_01"); //DÏkuju ti za pomoc!
-	AI_Output 		(self, hero,"Info_OrcShaman_BYEBYE_17_02"); //Ur-Shak ¯Ìkat dÏkuju cizinci. Cizinec zachr·nit Ur-Shaka. Cizinec teÔ b˝t p¯Ìtel Ur-Shaka!
-	AI_Output 		(self, hero,"Info_OrcShaman_BYEBYE_17_03"); //D·t p¯Ìteli dar. Ur-Shak d·t talisman! Talisman ochr·nit p¯ed dechem ohnivÈ jeötÏrky!
-	AI_Output 		(self, hero,"Info_OrcShaman_BYEBYE_17_04"); //Ur-Shak nesmÏt jÌt domu. Ur-Shak teÔ ûÌt tady! P¯Ìtel p¯ijÌt, kdyû pot¯ebovat pomoc!
-	AI_Output 		(hero, self,"Info_OrcShaman_BYEBYE_15_05"); //Snad tvojÌ nabÌdku budu moci vyuûÌt!
+	AI_Output 		(hero, self,"Info_OrcShaman_BYEBYE_15_01"); //Dƒõkuju ti za pomoc!
+	AI_Output 		(self, hero,"Info_OrcShaman_BYEBYE_17_02"); //Ur-Shak ≈ô√≠kat dƒõkuju cizinci. Cizinec zachr√°nit Ur-Shaka. Cizinec teƒè b√Ωt p≈ô√≠tel Ur-Shaka!
+	AI_Output 		(self, hero,"Info_OrcShaman_BYEBYE_17_03"); //D√°t p≈ô√≠teli dar. Ur-Shak d√°t talisman! Talisman ochr√°nit p≈ôed dechem ohniv√© je≈°tƒõrky!
+	AI_Output 		(self, hero,"Info_OrcShaman_BYEBYE_17_04"); //Ur-Shak nesmƒõt j√≠t domu. Ur-Shak teƒè ≈æ√≠t tady! P≈ô√≠tel p≈ôij√≠t, kdy≈æ pot≈ôebovat pomoc!
+	AI_Output 		(hero, self,"Info_OrcShaman_BYEBYE_15_05"); //Snad tvoj√≠ nab√≠dku budu moci vyu≈æ√≠t!
 
 	B_Story_FriendOfUrShak	();
 
@@ -528,7 +528,7 @@ instance  Info_OrcShaman_FRIENDLYHELLO (C_INFO)
 	information	= Info_OrcShaman_FRIENDLYHELLO_Info;
 	important	= 0;
 	permanent	= 0;
-	description = "Jak se m·ö, m˘j p¯Ìteli?";
+	description = "Jak se m√°≈°, m≈Øj p≈ô√≠teli?";
 };
 
 FUNC int  Info_OrcShaman_FRIENDLYHELLO_Condition()
@@ -542,12 +542,12 @@ FUNC int  Info_OrcShaman_FRIENDLYHELLO_Condition()
 
 FUNC void  Info_OrcShaman_FRIENDLYHELLO_Info()
 {
-	AI_Output 			(hero, self,"Info_OrcShaman_FRIENDLYHELLO_15_01"); //Jak se m·ö, m˘j p¯Ìteli?
-	AI_Output 			(self, hero,"Info_OrcShaman_FRIENDLYHELLO_17_02"); //Ur-Shak b˝t zdrav˝!
-	AI_Output 			(self, hero,"Info_OrcShaman_FRIENDLYHELLO_17_03"); //Ur-Shak teÔ hledat svoje vlastnÌ ULU-MULU!
-	AI_Output 			(self, hero,"Info_OrcShaman_FRIENDLYHELLO_17_04"); //Moûn· Ur-Shak p¯ijÌt domu s vlastnÌm ULU-MULU!
-	AI_Output 			(self, hero,"Info_OrcShaman_FRIENDLYHELLO_17_05"); //P¯Ìtel p¯ijÌt, kdyû pot¯ebovat pomoc!
-	AI_Output 			(hero, self,"Info_OrcShaman_FRIENDLYHELLO_15_06"); //B˝t opatrn˝!
+	AI_Output 			(hero, self,"Info_OrcShaman_FRIENDLYHELLO_15_01"); //Jak se m√°≈°, m≈Øj p≈ô√≠teli?
+	AI_Output 			(self, hero,"Info_OrcShaman_FRIENDLYHELLO_17_02"); //Ur-Shak b√Ωt zdrav√Ω!
+	AI_Output 			(self, hero,"Info_OrcShaman_FRIENDLYHELLO_17_03"); //Ur-Shak teƒè hledat svoje vlastn√≠ ULU-MULU!
+	AI_Output 			(self, hero,"Info_OrcShaman_FRIENDLYHELLO_17_04"); //Mo≈æn√° Ur-Shak p≈ôij√≠t domu s vlastn√≠m ULU-MULU!
+	AI_Output 			(self, hero,"Info_OrcShaman_FRIENDLYHELLO_17_05"); //P≈ô√≠tel p≈ôij√≠t, kdy≈æ pot≈ôebovat pomoc!
+	AI_Output 			(hero, self,"Info_OrcShaman_FRIENDLYHELLO_15_06"); //B√Ωt opatrn√Ω!
 	AI_StopProcessInfos	(self);
 };
 
@@ -586,17 +586,17 @@ FUNC void  Info_OrcShaman_ORCCITY_Info()
 	B_FullStop		(hero);
 	AI_GotoNpc		(hero, self);
 
-	AI_Output 		(self, hero,"Info_OrcShaman_ORCCITY_17_01"); //Ur-Shak zdravit p¯Ìtele!
+	AI_Output 		(self, hero,"Info_OrcShaman_ORCCITY_17_01"); //Ur-Shak zdravit p≈ô√≠tele!
 
 	if (Npc_HasItems(hero, UluMulu))
 	{
-		AI_Output 	(self, hero,"Info_OrcShaman_ORCCITY_17_02"); //P¯Ìtel mÌt ULU-MULU! To b˝t dob¯e!
-		AI_Output 	(self, hero,"Info_OrcShaman_ORCCITY_17_03"); //P¯Ìtel nezapomenout drûet ULU-MULU v ruce, aû p¯ech·zet most!
+		AI_Output 	(self, hero,"Info_OrcShaman_ORCCITY_17_02"); //P≈ô√≠tel m√≠t ULU-MULU! To b√Ωt dob≈ôe!
+		AI_Output 	(self, hero,"Info_OrcShaman_ORCCITY_17_03"); //P≈ô√≠tel nezapomenout dr≈æet ULU-MULU v ruce, a≈æ p≈ôech√°zet most!
 	}
 	else
 	{	
-		AI_Output 	(self, hero,"Info_OrcShaman_ORCCITY_17_04"); //P¯Ìtel nemÌt ULU-MULU! To neb˝t dob¯e!
-		AI_Output 	(self, hero,"Info_OrcShaman_ORCCITY_17_05"); //P¯Ìtel nep¯ech·zet most, jinak zem¯Ìt!
+		AI_Output 	(self, hero,"Info_OrcShaman_ORCCITY_17_04"); //P≈ô√≠tel nem√≠t ULU-MULU! To neb√Ωt dob≈ôe!
+		AI_Output 	(self, hero,"Info_OrcShaman_ORCCITY_17_05"); //P≈ô√≠tel nep≈ôech√°zet most, jinak zem≈ô√≠t!
 	};
 }; 
 
@@ -610,7 +610,7 @@ instance  Info_OrcShaman_YOUHERE (C_INFO)
 	information	= Info_OrcShaman_YOUHERE_Info;
 	important	= 0;
 	permanent	= 0;
-	description = "Co dÏl·ö tak blÌzko mÏsta?";
+	description = "Co dƒõl√°≈° tak bl√≠zko mƒõsta?";
 };
 
 FUNC int  Info_OrcShaman_YOUHERE_Condition()
@@ -623,12 +623,12 @@ FUNC int  Info_OrcShaman_YOUHERE_Condition()
 };
 FUNC void  Info_OrcShaman_YOUHERE_Info()
 {
-	AI_Output 		(hero, self,"Info_OrcShaman_YOUHERE_15_01"); //Co dÏl·ö tak blÌzko mÏsta?
+	AI_Output 		(hero, self,"Info_OrcShaman_YOUHERE_15_01"); //Co dƒõl√°≈° tak bl√≠zko mƒõsta?
 	AI_Output 		(self, hero,"Info_OrcShaman_YOUHERE_17_02"); //Ur-Shak pozorovat bratry doma!
-	AI_Output 		(self, hero,"Info_OrcShaman_YOUHERE_17_03"); //Ur-Shak vÏ¯it, ûe KRUSHAK brzy procitnout!
-	AI_Output 		(self, hero,"Info_OrcShaman_YOUHERE_17_04"); //Ur-Shak poËkat tady a bojovat s KRUSHAKEM, aû se probudit.
-	AI_Output 		(hero, self,"Info_OrcShaman_YOUHERE_15_05"); //Sp·Ë se uû brzy probudÌ??? Douf·m, ûe se m˝lÌö!
-	AI_Output 		(hero, self,"Info_OrcShaman_YOUHERE_15_06"); //Vzhledem k tomu, co jsem o tom arcidÈmonovi slyöel, radÏji bych, aby spal!
+	AI_Output 		(self, hero,"Info_OrcShaman_YOUHERE_17_03"); //Ur-Shak vƒõ≈ôit, ≈æe KRUSHAK brzy procitnout!
+	AI_Output 		(self, hero,"Info_OrcShaman_YOUHERE_17_04"); //Ur-Shak poƒçkat tady a bojovat s KRUSHAKEM, a≈æ se probudit.
+	AI_Output 		(hero, self,"Info_OrcShaman_YOUHERE_15_05"); //Sp√°ƒç se u≈æ brzy probud√≠??? Douf√°m, ≈æe se m√Ωl√≠≈°!
+	AI_Output 		(hero, self,"Info_OrcShaman_YOUHERE_15_06"); //Vzhledem k tomu, co jsem o tom arcid√©monovi sly≈°el, radƒõji bych, aby spal!
 }; 
 
 //---------------------------------------------------------------------
@@ -641,7 +641,7 @@ instance  Info_OrcShaman_SEAL (C_INFO)
 	information	= Info_OrcShaman_SEAL_Info;
 	important	= 0;
 	permanent	= 0;
-	description = "ÿÌkal jsi mi, ûe tvoji brat¯i uzav¯eli chr·m!";
+	description = "≈ò√≠kal jsi mi, ≈æe tvoji brat≈ôi uzav≈ôeli chr√°m!";
 };
 
 FUNC int  Info_OrcShaman_SEAL_Condition()
@@ -654,10 +654,10 @@ FUNC int  Info_OrcShaman_SEAL_Condition()
 };
 FUNC void  Info_OrcShaman_SEAL_Info()
 {
-	AI_Output 		(hero, self,"Info_OrcShaman_SEAL_15_01"); //P¯i naöÌ poslednÌ sch˘zce jsi mi ¯Ìkal, ûe tvoji brat¯i uzav¯eli chr·m!
-	AI_Output 		(self, hero,"Info_OrcShaman_SEAL_17_02"); //Ur-Shakovi brat¯i uzav¯Ìt chr·m pod zemÌ velmi peËlivÏ!
-	AI_Output 		(self, hero,"Info_OrcShaman_SEAL_17_03"); //P¯Ìtel nechodit dovnit¯!
-	AI_Output 		(self, hero,"Info_OrcShaman_SEAL_17_04"); //P¯Ìtel pouûÌt kouzla od brat¯Ì, kte¯Ì b˝t synovÈ ducha, tak jako Ur-Shak!
+	AI_Output 		(hero, self,"Info_OrcShaman_SEAL_15_01"); //P≈ôi na≈°√≠ posledn√≠ sch≈Øzce jsi mi ≈ô√≠kal, ≈æe tvoji brat≈ôi uzav≈ôeli chr√°m!
+	AI_Output 		(self, hero,"Info_OrcShaman_SEAL_17_02"); //Ur-Shakovi brat≈ôi uzav≈ô√≠t chr√°m pod zem√≠ velmi peƒçlivƒõ!
+	AI_Output 		(self, hero,"Info_OrcShaman_SEAL_17_03"); //P≈ô√≠tel nechodit dovnit≈ô!
+	AI_Output 		(self, hero,"Info_OrcShaman_SEAL_17_04"); //P≈ô√≠tel pou≈æ√≠t kouzla od brat≈ô√≠, kte≈ô√≠ b√Ωt synov√© ducha, tak jako Ur-Shak!
 }; 
 
 //---------------------------------------------------------------------
@@ -684,11 +684,11 @@ FUNC int  Info_OrcShaman_SCROLL_Condition()
 FUNC void  Info_OrcShaman_SCROLL_Info()
 {
 	AI_Output 		(hero, self,"Info_OrcShaman_SCROLL_15_01"); //Kde najdu to kouzlo?
-	AI_Output 		(self, hero,"Info_OrcShaman_SCROLL_17_02"); //Muset jÌt do jeskynÏ brat¯Ì, kde b˝t synovÈ ducha, tak jako Ur-Shak!
-	AI_Output 		(self, hero,"Info_OrcShaman_SCROLL_17_03"); //P¯Ìtel ale muset d·vat pozor, kdyû pouûÌvat kouzlo!
-	AI_Output 		(self, hero,"Info_OrcShaman_SCROLL_17_04"); //Brat¯i Ur-Shaka to nemÌt r·di! ULU-MULU nepom·hat, kdyû p¯Ìtel pouûÌvat kouzlo!
+	AI_Output 		(self, hero,"Info_OrcShaman_SCROLL_17_02"); //Muset j√≠t do jeskynƒõ brat≈ô√≠, kde b√Ωt synov√© ducha, tak jako Ur-Shak!
+	AI_Output 		(self, hero,"Info_OrcShaman_SCROLL_17_03"); //P≈ô√≠tel ale muset d√°vat pozor, kdy≈æ pou≈æ√≠vat kouzlo!
+	AI_Output 		(self, hero,"Info_OrcShaman_SCROLL_17_04"); //Brat≈ôi Ur-Shaka to nem√≠t r√°di! ULU-MULU nepom√°hat, kdy≈æ p≈ô√≠tel pou≈æ√≠vat kouzlo!
 
-	B_LogEntry		(CH4_EnterTemple,"P¯ed sk¯etÌm mÏstem jsem se znovu setkal se öamanem Ur-Shakem. ÿekl mi, ûe pouze sk¯etÌm kouzlem se mohu dostat do p¯eds·lÌ podzemnÌho chr·mu. OstatnÌ sk¯etÌ öamani majÌ ve sv˝ch jeskynÌch pr·vÏ takov· kouzla.");
+	B_LogEntry		(CH4_EnterTemple,"P≈ôed sk≈ôet√≠m mƒõstem jsem se znovu setkal se ≈°amanem Ur-Shakem. ≈òekl mi, ≈æe pouze sk≈ôet√≠m kouzlem se mohu dostat do p≈ôeds√°l√≠ podzemn√≠ho chr√°mu. Ostatn√≠ sk≈ôet√≠ ≈°amani maj√≠ ve sv√Ωch jeskyn√≠ch pr√°vƒõ takov√° kouzla.");
 }; 
 
 //---------------------------------------------------------------------
@@ -701,7 +701,7 @@ instance  Info_OrcShaman_IDOL (C_INFO)
 	information	= Info_OrcShaman_IDOL_Info;
 	important	= 0;
 	permanent	= 0;
-	description = "Vede do chr·mu jeötÏ nÏjak· jin· cesta?";
+	description = "Vede do chr√°mu je≈°tƒõ nƒõjak√° jin√° cesta?";
 };
 
 FUNC int  Info_OrcShaman_IDOL_Condition()
@@ -716,22 +716,22 @@ FUNC int  Info_OrcShaman_IDOL_Condition()
 FUNC void  Info_OrcShaman_IDOL_Info()
 {
 	//SN: fliegt raus, da der Hinweis jetzt sofort nach dem Hinweis mit der Scroll gegeben wird.
-	//AI_Output 	(hero, self,"Info_OrcShaman_IDOL_15_01"); //Ich habe den Teleportzauber verbraucht und das Gitter zur Tempelvorhalle l‰sst sich nicht ˆffnen!
+	//AI_Output 	(hero, self,"Info_OrcShaman_IDOL_15_01"); //Ich habe den Teleportzauber verbraucht und das Gitter zur Tempelvorhalle l√§sst sich nicht √∂ffnen!
 	//AI_Output 	(hero, self,"Info_OrcShaman_IDOL_15_02"); //Wie komme ich jetzt wieder in den Tempel?
 
 	if	Npc_HasItems(hero,ItMi_Stuff_Idol_Sleeper_01) 
 	{
-		AI_Output 	(self, hero,"Info_OrcShaman_IDOL_17_03"); //P¯Ìtel najÌt na sloupu figurku!
-		AI_Output 	(self, hero,"Info_OrcShaman_IDOL_17_04"); //P¯Ìtel teÔ moci otev¯Ìt br·nu do chr·movÈho s·lu!
+		AI_Output 	(self, hero,"Info_OrcShaman_IDOL_17_03"); //P≈ô√≠tel naj√≠t na sloupu figurku!
+		AI_Output 	(self, hero,"Info_OrcShaman_IDOL_17_04"); //P≈ô√≠tel teƒè moci otev≈ô√≠t br√°nu do chr√°mov√©ho s√°lu!
 
-		B_LogEntry	(CH4_EnterTemple,"Do chr·mu vöak vede i jin· cesta. Budu k tomu muset pouûÌt figurku Sp·Ëe z posv·tnÈho sloupu sk¯etÌch öaman˘. Ta otev¯e vrata chr·mu.");
+		B_LogEntry	(CH4_EnterTemple,"Do chr√°mu v≈°ak vede i jin√° cesta. Budu k tomu muset pou≈æ√≠t figurku Sp√°ƒçe z posv√°tn√©ho sloupu sk≈ôet√≠ch ≈°aman≈Ø. Ta otev≈ôe vrata chr√°mu.");
 	}
 	else
 	{
-		AI_Output 	(self, hero,"Info_OrcShaman_IDOL_17_05"); //P¯Ìtel teÔ muset vzÌt ze sloupu figurku!
-		AI_Output 	(self, hero,"Info_OrcShaman_IDOL_17_06"); //Figurka teÔ otev¯Ìt vrata chr·movÈho s·lu!
+		AI_Output 	(self, hero,"Info_OrcShaman_IDOL_17_05"); //P≈ô√≠tel teƒè muset vz√≠t ze sloupu figurku!
+		AI_Output 	(self, hero,"Info_OrcShaman_IDOL_17_06"); //Figurka teƒè otev≈ô√≠t vrata chr√°mov√©ho s√°lu!
 
-		B_LogEntry	(CH4_EnterTemple,"Do chr·mu vede dalöÌ cesta. V posv·tnÈm sloupu sk¯etÌch öaman˘ je figurka Sp·Ëe, kter· otev¯e vrata chr·mu. Ur-Shakovi brat¯i se nepotÏöÌ, aû uvidÌ, ûe pouûÌv·m jejich svatou ikonu.");
+		B_LogEntry	(CH4_EnterTemple,"Do chr√°mu vede dal≈°√≠ cesta. V posv√°tn√©m sloupu sk≈ôet√≠ch ≈°aman≈Ø je figurka Sp√°ƒçe, kter√° otev≈ôe vrata chr√°mu. Ur-Shakovi brat≈ôi se nepotƒõ≈°√≠, a≈æ uvid√≠, ≈æe pou≈æ√≠v√°m jejich svatou ikonu.");
 	};
 }; 
 

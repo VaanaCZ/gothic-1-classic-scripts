@@ -37,7 +37,7 @@ INSTANCE Info_Grd_6_EinerVonEuchWerden (C_INFO) // E1
 	condition	= Info_Grd_6_EinerVonEuchWerden_Condition;
 	information	= Info_Grd_6_EinerVonEuchWerden_Info;
 	permanent	= 1;
-	description = "Nepot¯ebujete jednoho dobrÈho chlapa?";
+	description = "Nepot≈ôebujete jednoho dobr√©ho chlapa?";
 };                       
 
 FUNC INT Info_Grd_6_EinerVonEuchWerden_Condition()
@@ -53,9 +53,9 @@ FUNC INT Info_Grd_6_EinerVonEuchWerden_Condition()
 
 FUNC VOID Info_Grd_6_EinerVonEuchWerden_Info()
 {
-	AI_Output(other,self,"Info_Grd_6_EinerVonEuchWerden_15_00"); //Nepot¯ebujete jednoho dobrÈho chlapa?
-	AI_Output(self,other,"Info_Grd_6_EinerVonEuchWerden_06_01"); //Ty musÌö b˝t jednÌm z tÏch nov˝ch, co? Jestli se rozm˝ölÌö, ke kterÈmu t·boru se d·t, zkus ty sekt·¯skÈ bl·zny, tÏm je fuk, koho zamÏstn·vajÌ.
-	AI_Output(self,other,"Info_Grd_6_EinerVonEuchWerden_06_02"); //Nikoho nebereme, ale ty bys mohl jÌt kopat do StarÈho dolu!
+	AI_Output(other,self,"Info_Grd_6_EinerVonEuchWerden_15_00"); //Nepot≈ôebujete jednoho dobr√©ho chlapa?
+	AI_Output(self,other,"Info_Grd_6_EinerVonEuchWerden_06_01"); //Ty mus√≠≈° b√Ωt jedn√≠m z tƒõch nov√Ωch, co? Jestli se rozm√Ω≈°l√≠≈°, ke kter√©mu t√°boru se d√°t, zkus ty sekt√°≈ôsk√© bl√°zny, tƒõm je fuk, koho zamƒõstn√°vaj√≠.
+	AI_Output(self,other,"Info_Grd_6_EinerVonEuchWerden_06_02"); //Nikoho nebereme, ale ty bys mohl j√≠t kopat do Star√©ho dolu!
 };
 
 // *************************************************************************
@@ -79,7 +79,7 @@ FUNC INT Info_Grd_6_WichtigePersonen_Condition()
 FUNC VOID Info_Grd_6_WichtigePersonen_Info()
 {
 	AI_Output(other,self,"Info_Grd_6_WichtigePersonen_15_00"); //Kdo to tady vede?
-	AI_Output(self,other,"Info_Grd_6_WichtigePersonen_06_01"); //Thorus je jednÌm z tÏch, kte¯Ì hlÌdajÌ, aby se nic neztratilo. Je dvojka hned po Gomezovi.
+	AI_Output(self,other,"Info_Grd_6_WichtigePersonen_06_01"); //Thorus je jedn√≠m z tƒõch, kte≈ô√≠ hl√≠daj√≠, aby se nic neztratilo. Je dvojka hned po Gomezovi.
 	VAR C_NPC Thorus; Thorus = Hlp_GetNpc(GRD_200_THORUS);
 	Thorus.aivar[AIV_FINDABLE]=TRUE;
 };
@@ -94,7 +94,7 @@ INSTANCE Info_Grd_6_DasLager(C_INFO)
 	condition	= Info_Grd_6_DasLager_Condition;
 	information	= Info_Grd_6_DasLager_Info;
 	permanent	= 1;
-	description = "Jsem tady nov˝.";
+	description = "Jsem tady nov√Ω.";
 };                       
 
 FUNC INT Info_Grd_6_DasLager_Condition()
@@ -108,28 +108,28 @@ FUNC INT Info_Grd_6_DasLager_Condition()
 };
 FUNC VOID Info_Grd_6_DasLager_Info()
 {
-	AI_Output(other,self,"Info_Grd_6_DasLager_15_00"); //Jsem tady nov˝.
-	AI_Output(self,other,"Info_Grd_6_DasLager_06_01"); //Tak uvidÌme.
+	AI_Output(other,self,"Info_Grd_6_DasLager_15_00"); //Jsem tady nov√Ω.
+	AI_Output(self,other,"Info_Grd_6_DasLager_06_01"); //Tak uvid√≠me.
 	AI_Output(other,self,"Info_Grd_6_DasLager_15_02"); //Jak to jde?
-	AI_Output(self,other,"Info_Grd_6_DasLager_06_03"); //Jestli tu budeö dÏlat problÈmy, budeö potrest·n.
+	AI_Output(self,other,"Info_Grd_6_DasLager_06_03"); //Jestli tu bude≈° dƒõlat probl√©my, bude≈° potrest√°n.
 	Info_ClearChoices(Info_Grd_6_DasLager);
 	Info_AddChoice(Info_Grd_6_DasLager,"Aha...", Info_Grd_6_DasLager_Verstehe);
-	Info_AddChoice(Info_Grd_6_DasLager,"»emu ¯Ìk·ö problÈmy?", Info_Grd_6_DasLager_WasIstAerger);
+	Info_AddChoice(Info_Grd_6_DasLager,"ƒåemu ≈ô√≠k√°≈° probl√©my?", Info_Grd_6_DasLager_WasIstAerger);
 };
 
 FUNC VOID Info_Grd_6_DasLager_Verstehe()
 {
-	AI_Output(other,self,"Info_Grd_6_DasLager_Verstehe_15_00"); //J· vÌm.
+	AI_Output(other,self,"Info_Grd_6_DasLager_Verstehe_15_00"); //J√° v√≠m.
 	Info_ClearChoices(Info_Grd_6_DasLager);
 };
 
 FUNC VOID Info_Grd_6_DasLager_WasIstAerger()
 {
-	AI_Output(other,self,"Info_Grd_6_DasLager_WasIstAerger_15_00"); //»emu ¯Ìk·ö problÈmy?
-	AI_Output(self,other,"Info_Grd_6_DasLager_WasIstAerger_06_01"); //VÏtöina kop·Ë˘ n·m platÌ za ochranu.
-	AI_Output(self,other,"Info_Grd_6_DasLager_WasIstAerger_06_02"); //Pokud se nÏkoho z nich dotkneö, vy¯ÌdÌme si to s tebou.
-	AI_Output(self,other,"Info_Grd_6_DasLager_WasIstAerger_06_03"); //Jestli tÏ nachyt·m ömejdit kolem cizÌch chatrËÌ..
-	AI_Output(other,self,"Info_Grd_6_DasLager_WasIstAerger_15_04"); //Dob¯e, dob¯e. D·m si pozor.
+	AI_Output(other,self,"Info_Grd_6_DasLager_WasIstAerger_15_00"); //ƒåemu ≈ô√≠k√°≈° probl√©my?
+	AI_Output(self,other,"Info_Grd_6_DasLager_WasIstAerger_06_01"); //Vƒõt≈°ina kop√°ƒç≈Ø n√°m plat√≠ za ochranu.
+	AI_Output(self,other,"Info_Grd_6_DasLager_WasIstAerger_06_02"); //Pokud se nƒõkoho z nich dotkne≈°, vy≈ô√≠d√≠me si to s tebou.
+	AI_Output(self,other,"Info_Grd_6_DasLager_WasIstAerger_06_03"); //Jestli tƒõ nachyt√°m ≈°mejdit kolem ciz√≠ch chatrƒç√≠..
+	AI_Output(other,self,"Info_Grd_6_DasLager_WasIstAerger_15_04"); //Dob≈ôe, dob≈ôe. D√°m si pozor.
 	Info_ClearChoices(Info_Grd_6_DasLager);
 };
 
@@ -154,7 +154,7 @@ FUNC INT Info_Grd_6_DieLage_Condition()
 FUNC VOID Info_Grd_6_DieLage_Info()
 {
 	AI_Output(other,self,"Info_Grd_6_DieLage_15_00"); //Jak to jde?
-	AI_Output(self,other,"Info_Grd_6_DieLage_06_01"); //ÿÌk·ö si o malÈr?
+	AI_Output(self,other,"Info_Grd_6_DieLage_06_01"); //≈ò√≠k√°≈° si o mal√©r?
 };
 	
 // *************************************************************************

@@ -46,12 +46,12 @@ FUNC int DIA_Grd_218_FirstIn_Condition()
 
 FUNC VOID DIA_Grd_218_FirstIn_Info()
 {
-	AI_Output (self, other,"DIA_Grd_218_FirstIn_07_00"); //St˘j! Co tady dÏl·ö?
-	AI_Output (other, self,"DIA_Grd_218_FirstIn_15_01"); //Chci dovnit¯.
-	AI_Output (self, other,"DIA_Grd_218_FirstIn_07_02"); //To m· b˝t ûert?
-	AI_Output (other, self,"DIA_Grd_218_FirstIn_15_03"); //ProË se nezept·ö Thoruse?
-	AI_Output (self, other,"DIA_Grd_218_FirstIn_07_04"); //UdÏl·m to. Jestli lûeö, jsi mrtvej!
-	AI_Output (other, self,"DIA_Grd_218_FirstIn_15_05"); //ÿÌk·ö, ûe m˘ûu d·l?
+	AI_Output (self, other,"DIA_Grd_218_FirstIn_07_00"); //St≈Øj! Co tady dƒõl√°≈°?
+	AI_Output (other, self,"DIA_Grd_218_FirstIn_15_01"); //Chci dovnit≈ô.
+	AI_Output (self, other,"DIA_Grd_218_FirstIn_07_02"); //To m√° b√Ωt ≈æert?
+	AI_Output (other, self,"DIA_Grd_218_FirstIn_15_03"); //Proƒç se nezept√°≈° Thoruse?
+	AI_Output (self, other,"DIA_Grd_218_FirstIn_07_04"); //Udƒõl√°m to. Jestli l≈æe≈°, jsi mrtvej!
+	AI_Output (other, self,"DIA_Grd_218_FirstIn_15_05"); //≈ò√≠k√°≈°, ≈æe m≈Ø≈æu d√°l?
 	AI_Output (self, other,"DIA_Grd_218_FirstIn_07_06"); //Jo, pohni sebou!
 	AI_StopProcessInfos	(self);
 };
@@ -68,9 +68,9 @@ FUNC VOID DIA_Grd_218_FirstIn_Info()
 //	Uhrzeit:	24h
 //
 //	Es passiert folgendes:
-//	1.	N‰hert sich der Spieler dem Durchgang, so wird er in diesen
+//	1.	N√§hert sich der Spieler dem Durchgang, so wird er in diesen
 //		Dialog gezwungen und einmal gewarnt
-//	2.	N‰hert er sich trotzdem wieder, wird er angegriffen
+//	2.	N√§hert er sich trotzdem wieder, wird er angegriffen
 //////////////////////////////////////////////////////////////////////////
 const string	Grd_218_CHECKPOINT		= "OCC_BARONS_HALLWAY_FRONT";
 
@@ -102,9 +102,9 @@ func void Info_Grd_218_FirstWarn_Info()
 {
 	PrintGlobals	(PD_MISSION);
 
-	AI_Output (self, hero,"Info_Grd_218_FirstWarn_Info_07_01"); //STŸJ! Uû ani krok!
-	AI_Output (hero, self,"Info_Grd_218_FirstWarn_Info_15_02"); //ProË?
-	AI_Output (self, hero,"Info_Grd_218_FirstWarn_Info_07_03"); //Rudobaron˘v d˘m je tabu pro takovÈ pobudy jako ty!
+	AI_Output (self, hero,"Info_Grd_218_FirstWarn_Info_07_01"); //ST≈ÆJ! U≈æ ani krok!
+	AI_Output (hero, self,"Info_Grd_218_FirstWarn_Info_15_02"); //Proƒç?
+	AI_Output (self, hero,"Info_Grd_218_FirstWarn_Info_07_03"); //Rudobaron≈Øv d≈Øm je tabu pro takov√© pobudy jako ty!
 
 	hero.aivar[AIV_LASTDISTTOWP] 		= Npc_GetDistToWP(hero,Grd_218_CHECKPOINT);
 	hero.aivar[AIV_GUARDPASSAGE_STATUS]	= AIV_GPS_FIRSTWARN;	
@@ -144,7 +144,7 @@ func int Info_Grd_218_Attack_Info()
 	hero.aivar[AIV_GUARDPASSAGE_STATUS]	= AIV_GPS_PUNISH;	
 	
 	B_FullStop			(self);	
-	AI_StopProcessInfos	(self);					// dem Spieler sofort wieder die Kontrolle zur¸ckgeben
+	AI_StopProcessInfos	(self);					// dem Spieler sofort wieder die Kontrolle zur√ºckgeben
 	B_IntruderAlert		(self,	other);
 	B_SetAttackReason	(self,	AIV_AR_INTRUDER);
 	Npc_SetTarget		(self,	hero);

@@ -23,7 +23,7 @@ FUNC VOID DIA_Cavalorn_Exit_Info()
 };
 
 // **************************************************
-// 					Ich Jäger
+// 					Ich JÃ¤ger
 // **************************************************
 
 INSTANCE DIA_cavalorn_Hunter (C_INFO)
@@ -33,7 +33,7 @@ INSTANCE DIA_cavalorn_Hunter (C_INFO)
 	condition		= DIA_cavalorn_Hunter_Condition;
 	information		= DIA_cavalorn_Hunter_Info;
 	permanent		= 0;
-	description		= "Co dìláš tady venku?"; 
+	description		= "Co dÄ›lÃ¡Å¡ tady venku?"; 
 };
 
 FUNC INT DIA_cavalorn_Hunter_Condition()
@@ -43,8 +43,8 @@ FUNC INT DIA_cavalorn_Hunter_Condition()
 
 FUNC VOID DIA_cavalorn_Hunter_Info()
 {
-	AI_Output (other, self,"DIA_cavalorn_Hunter_15_00"); //Co dìláš tady venku?
-	AI_Output (self, other,"DIA_cavalorn_Hunter_12_01"); //Jsem lovec - lovím pøedevším mrchorouty..
+	AI_Output (other, self,"DIA_cavalorn_Hunter_15_00"); //Co dÄ›lÃ¡Å¡ tady venku?
+	AI_Output (self, other,"DIA_cavalorn_Hunter_12_01"); //Jsem lovec - lovÃ­m pÅ™edevÅ¡Ã­m mrchoÅ¾routy..
 	
 };
 
@@ -59,7 +59,7 @@ INSTANCE DIA_cavalorn_Lehrer (C_INFO)
 	condition		= DIA_cavalorn_Lehrer_Condition;
 	information		= DIA_cavalorn_Lehrer_Info;
 	permanent		= 1;
-	description		= "Mùeš mì nauèit nìco o lovu?"; 
+	description		= "MÅ¯Å¾eÅ¡ mÄ› nauÄit nÄ›co o lovu?"; 
 };
 
 FUNC INT DIA_cavalorn_Lehrer_Condition()
@@ -75,11 +75,11 @@ FUNC VOID DIA_cavalorn_Lehrer_Info()
 	if (log_cavalorntrain == FALSE)
 	{
 		Log_CreateTopic (GE_TeacherOW,LOG_NOTE);
-		B_LogEntry		(GE_TeacherOW,"Cavalorn je lovec. Mùe mì nauèit PLÍENÍ a také LUKOSTØELBÌ. ije v chatrèi mezi Starım a Novım táborem.");
+		B_LogEntry		(GE_TeacherOW,"Cavalorn je lovec. MÅ¯Å¾e mÄ› nauÄit PLÃÅ½ENÃ a takÃ© LUKOSTÅ˜ELBÄš. Å½ije v chatrÄi mezi StarÃ½m a NovÃ½m tÃ¡borem.");
 		log_cavalorntrain = TRUE;
 	};
-	AI_Output (other, self,"DIA_cavalorn_Lehrer_15_00"); //Mùeš mì nauèit nìco o lovu?
-	AI_Output (self, other,"DIA_cavalorn_Lehrer_12_01"); //To záleí - co chceš umìt?
+	AI_Output (other, self,"DIA_cavalorn_Lehrer_15_00"); //MÅ¯Å¾eÅ¡ mÄ› nauÄit nÄ›co o lovu?
+	AI_Output (self, other,"DIA_cavalorn_Lehrer_12_01"); //To zÃ¡leÅ¾Ã­ - co chceÅ¡ umÄ›t?
 	
 	Info_ClearChoices	(DIA_cavalorn_Lehrer );
 	Info_AddChoice		(DIA_cavalorn_Lehrer,DIALOG_BACK															,DIA_cavalorn_Lehrer_BACK);
@@ -109,11 +109,11 @@ func void DIA_Cavalorn_Lehrer_Bow()
 {
 	if (B_GiveSkill(other, NPC_TALENT_BOW, 1, LPCOST_TALENT_BOW_1))
 	{		
-		AI_Output (other, self,"DIA_cavalorn_Lehrer_Bow_15_00"); //Mùeš mì nauèit, jak se zlepšit v zacházení s lukem?
-		AI_Output (self, other,"DIA_cavalorn_Lehrer_Bow_12_01"); //Pro zaèáteèníka není tìké se zlepšit. Je to otázka postoje.
-		AI_Output (self, other,"DIA_cavalorn_Lehrer_Bow_12_02"); //Rozkroè nohy hodnì od sebe, dr ruce ve stejné vıšce, nadechni se - a vystøel!
-		AI_Output (self, other,"DIA_cavalorn_Lehrer_Bow_12_03"); //Pokud zasáhneš urèité partie tìla, staèí jedinı vıstøel. Jako zaèáteèník máš jen nepatrnou nadìji zasáhnout tyhle partie.
-		AI_Output (self, other,"DIA_cavalorn_Lehrer_Bow_12_04"); //Jestli si ale zapamatuješ, co ti øeknu, budeš u pøíštì lepší.
+		AI_Output (other, self,"DIA_cavalorn_Lehrer_Bow_15_00"); //MÅ¯Å¾eÅ¡ mÄ› nauÄit, jak se zlepÅ¡it v zachÃ¡zenÃ­ s lukem?
+		AI_Output (self, other,"DIA_cavalorn_Lehrer_Bow_12_01"); //Pro zaÄÃ¡teÄnÃ­ka nenÃ­ tÄ›Å¾kÃ© se zlepÅ¡it. Je to otÃ¡zka postoje.
+		AI_Output (self, other,"DIA_cavalorn_Lehrer_Bow_12_02"); //RozkroÄ nohy hodnÄ› od sebe, drÅ¾ ruce ve stejnÃ© vÃ½Å¡ce, nadechni se - a vystÅ™el!
+		AI_Output (self, other,"DIA_cavalorn_Lehrer_Bow_12_03"); //Pokud zasÃ¡hneÅ¡ urÄitÃ© partie tÄ›la, staÄÃ­ jedinÃ½ vÃ½stÅ™el. Jako zaÄÃ¡teÄnÃ­k mÃ¡Å¡ jen nepatrnou nadÄ›ji zasÃ¡hnout tyhle partie.
+		AI_Output (self, other,"DIA_cavalorn_Lehrer_Bow_12_04"); //Jestli si ale zapamatujeÅ¡, co ti Å™eknu, budeÅ¡ uÅ¾ pÅ™Ã­Å¡tÄ› lepÅ¡Ã­.
 	};
 };
 
@@ -121,21 +121,21 @@ func void DIA_Cavalorn_Lehrer_Schleichen()
 {
 	if (B_GiveSkill(other, NPC_TALENT_SNEAK, 1, LPCOST_TALENT_SNEAK))
 	{		
-		AI_Output (other, self,"DIA_cavalorn_Lehrer_Schleichen_15_00"); //Chci se nauèit plíit.
-		AI_Output (self, other,"DIA_cavalorn_Lehrer_Schleichen_12_01"); //Dobrı nápad. To je nejdùleitìjší vìc, kdy se chceš nepozorovanì dostat do nìèí chalupy.
-		AI_Output (self, other,"DIA_cavalorn_Lehrer_Schleichen_12_02"); //Pøi chùzi se musíš prohnout v kolenou, abys vidìl líp na zem a zároveò mohl líp kontrolovat celé tìlo.
-		AI_Output (self, other,"DIA_cavalorn_Lehrer_Schleichen_12_03"); //Kadı si ale tvého postoje všimne, a tak musíš dbát na to, aby tì nikdo pøi plíení nevidìl.
-		AI_Output (self, other,"DIA_cavalorn_Lehrer_Schleichen_12_04"); //Pamatuj si, co jsem ti øekl, ale pøedevším - nikdy se nenech pøistihnout!
+		AI_Output (other, self,"DIA_cavalorn_Lehrer_Schleichen_15_00"); //Chci se nauÄit plÃ­Å¾it.
+		AI_Output (self, other,"DIA_cavalorn_Lehrer_Schleichen_12_01"); //DobrÃ½ nÃ¡pad. To je nejdÅ¯leÅ¾itÄ›jÅ¡Ã­ vÄ›c, kdyÅ¾ se chceÅ¡ nepozorovanÄ› dostat do nÄ›ÄÃ­ chalupy.
+		AI_Output (self, other,"DIA_cavalorn_Lehrer_Schleichen_12_02"); //PÅ™i chÅ¯zi se musÃ­Å¡ prohnout v kolenou, abys vidÄ›l lÃ­p na zem a zÃ¡roveÅˆ mohl lÃ­p kontrolovat celÃ© tÄ›lo.
+		AI_Output (self, other,"DIA_cavalorn_Lehrer_Schleichen_12_03"); //KaÅ¾dÃ½ si ale tvÃ©ho postoje vÅ¡imne, a tak musÃ­Å¡ dbÃ¡t na to, aby tÄ› nikdo pÅ™i plÃ­Å¾enÃ­ nevidÄ›l.
+		AI_Output (self, other,"DIA_cavalorn_Lehrer_Schleichen_12_04"); //Pamatuj si, co jsem ti Å™ekl, ale pÅ™edevÅ¡Ã­m - nikdy se nenech pÅ™istihnout!
 	};
 };
 func void DIA_Cavalorn_Lehrer_Bow_2()
 {
 	if (B_GiveSkill(other, NPC_TALENT_BOW, 2, LPCOST_TALENT_BOW_2))
 	{		
-			AI_Output (self, other,"DIA_Cavalorn_Lehrer_Bow_2_Info_12_02"); //U jsi dobrı lovec. Teï si osvojíš zbıvající vìdomosti.
-			AI_Output (self, other,"DIA_Cavalorn_Lehrer_Bow_2_Info_12_03"); //Aby ses stal dobrım støelcem, musíš se o to pøestat snait.
-			AI_Output (self, other,"DIA_Cavalorn_Lehrer_Bow_2_Info_12_04"); //Objev zákony zraku, napìtí, dráhy a cíle. Vdy buï ve støehu a buï pøipravenı.
-			AI_Output (self, other,"DIA_Cavalorn_Lehrer_Bow_2_Info_12_05"); //Teï u jsi velmi dobøe zvládl techniku. Tak pojï a vyzkoušej své znalosti a umìní.
+			AI_Output (self, other,"DIA_Cavalorn_Lehrer_Bow_2_Info_12_02"); //UÅ¾ jsi dobrÃ½ lovec. TeÄ si osvojÃ­Å¡ zbÃ½vajÃ­cÃ­ vÄ›domosti.
+			AI_Output (self, other,"DIA_Cavalorn_Lehrer_Bow_2_Info_12_03"); //Aby ses stal dobrÃ½m stÅ™elcem, musÃ­Å¡ se o to pÅ™estat snaÅ¾it.
+			AI_Output (self, other,"DIA_Cavalorn_Lehrer_Bow_2_Info_12_04"); //Objev zÃ¡kony zraku, napÄ›tÃ­, drÃ¡hy a cÃ­le. VÅ¾dy buÄ ve stÅ™ehu a buÄ pÅ™ipravenÃ½.
+			AI_Output (self, other,"DIA_Cavalorn_Lehrer_Bow_2_Info_12_05"); //TeÄ uÅ¾ jsi velmi dobÅ™e zvlÃ¡dl techniku. Tak pojÄ a vyzkouÅ¡ej svÃ© znalosti a umÄ›nÃ­.
 	};
 };
 /*------------------------------------------------------------------------
@@ -163,9 +163,9 @@ FUNC int  STT_336_cavalorn_SELLBOW_Condition()
 FUNC void  STT_336_cavalorn_SELLBOW_Info()
 {
 	AI_Output (other, self,"STT_336_cavalorn_SELLBOW_Info_15_01"); //Kde dostanu luk?
-	AI_Output (self, other,"STT_336_cavalorn_SELLBOW_Info_12_02"); //Tady. Prodávám nejlepší luky ve Starém táboøe.
+	AI_Output (self, other,"STT_336_cavalorn_SELLBOW_Info_12_02"); //Tady. ProdÃ¡vÃ¡m nejlepÅ¡Ã­ luky ve StarÃ©m tÃ¡boÅ™e.
 	Log_CreateTopic (GE_TraderOC,LOG_NOTE);
-	B_LogEntry (GE_TraderOC,"Cavalorn obchoduje s LUKY a ŠÍPY. Najdu ho na cestì k Novému táboru, v kaòonu na západ od Starého tábora.");
+	B_LogEntry (GE_TraderOC,"Cavalorn obchoduje s LUKY a Å ÃPY. Najdu ho na cestÄ› k NovÃ©mu tÃ¡boru, v kaÅˆonu na zÃ¡pad od StarÃ©ho tÃ¡bora.");
 };  
 
 /*------------------------------------------------------------------------
@@ -179,7 +179,7 @@ instance  STT_336_cavalorn_TRADE (C_INFO)
 	information		= STT_336_cavalorn_TRADE_Info;
 	important		= 0;
 	permanent		= 1;
-	description		= "Uka mi svoje zboí."; 
+	description		= "UkaÅ¾ mi svoje zboÅ¾Ã­."; 
 	trade 			= 1;
 };
 
@@ -193,7 +193,7 @@ FUNC int  STT_336_cavalorn_TRADE_Condition()
 };
 FUNC void  STT_336_cavalorn_TRADE_Info()
 {
-	AI_Output (other, self,"STT_336_cavalorn_TRADE_Info_15_01"); //Uka mi svoje zboí.
+	AI_Output (other, self,"STT_336_cavalorn_TRADE_Info_15_01"); //UkaÅ¾ mi svoje zboÅ¾Ã­.
 	
 };  
 

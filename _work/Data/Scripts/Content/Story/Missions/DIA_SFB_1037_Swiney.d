@@ -44,12 +44,12 @@ FUNC INT Info_Swiney_Hello_Condition()
 FUNC VOID Info_Swiney_Hello_Info()
 {	
 	AI_Output (other, self,"Info_Swiney_Hello_15_00"); //Kdo jsi?
-	AI_Output (self, other,"Info_Swiney_Hello_09_01"); //Jsem nejlepší dùlní inenır, kterého kdy tahle zpropadená kolonie spatøila, milej zlatej.
-	AI_Output (self, other,"Info_Swiney_Hello_09_02"); //Jsem pøesvìdèenı, e by se polovina našich chlapù nemusela nechat zabít padajícími kameny, kdyby nebyla tak stupidní a kopala na správnıch místech.
+	AI_Output (self, other,"Info_Swiney_Hello_09_01"); //Jsem nejlepÅ¡Ã­ dÅ¯lnÃ­ inÅ¾enÃ½r, kterÃ©ho kdy tahle zpropadenÃ¡ kolonie spatÅ™ila, milej zlatej.
+	AI_Output (self, other,"Info_Swiney_Hello_09_02"); //Jsem pÅ™esvÄ›dÄenÃ½, Å¾e by se polovina naÅ¡ich chlapÅ¯ nemusela nechat zabÃ­t padajÃ­cÃ­mi kameny, kdyby nebyla tak stupidnÃ­ a kopala na sprÃ¡vnÃ½ch mÃ­stech.
 };
 
 // ************************************************************
-// 						Schürfer
+// 						SchÃ¼rfer
 // ************************************************************
 
 INSTANCE Info_Swiney_Schuerfer(C_INFO)
@@ -59,7 +59,7 @@ INSTANCE Info_Swiney_Schuerfer(C_INFO)
 	condition	= Info_Swiney_Schuerfer_Condition;
 	information	= Info_Swiney_Schuerfer_Info;
 	permanent	= 0;
-	description = "Chtìl bych se k vám pøidat jako rudaø!";
+	description = "ChtÄ›l bych se k vÃ¡m pÅ™idat jako rudaÅ™!";
 };                       
 
 FUNC INT Info_Swiney_Schuerfer_Condition()
@@ -72,12 +72,12 @@ FUNC INT Info_Swiney_Schuerfer_Condition()
 
 FUNC VOID Info_Swiney_Schuerfer_Info()
 {	
-	AI_Output (other, self,"Info_Swiney_Schuerfer_15_00"); //Chtìl bych se k vám pøidat jako rudaø!
-	AI_Output (self, other,"Info_Swiney_Schuerfer_09_01"); //Tak? Nemysli si ale, e tím získáš nìco zvláštního. Obnáší to tøi porce rıe dennì a nic víc, co bys musel na vlastní oèi vidìt.
-	AI_Output (self, other,"Info_Swiney_Schuerfer_09_02"); //Víš, proè to dìláme? Dìláme to proto, abysme odtud jednoho dne mohli odejít za svobodou.
-	AI_Output (self, other,"Info_Swiney_Schuerfer_09_03"); //To znamená, e se všechna ruda vytìí a pak putuje na velkou rudnou haldu. A jednou za mìsíc dostane kadı, kdo tady pracoval, 50 nugetù, aby se mohl zpít do nìmoty.
-	AI_Output (self, other,"Info_Swiney_Schuerfer_09_04"); //To je nejdùleitìjší vìc, kterou bys mìl vìdìt.
-	AI_Output (self, other,"Info_Swiney_Schuerfer_09_05"); //Máš s touhle prací aspoò nìjaké zkušenosti?
+	AI_Output (other, self,"Info_Swiney_Schuerfer_15_00"); //ChtÄ›l bych se k vÃ¡m pÅ™idat jako rudaÅ™!
+	AI_Output (self, other,"Info_Swiney_Schuerfer_09_01"); //Tak? Nemysli si ale, Å¾e tÃ­m zÃ­skÃ¡Å¡ nÄ›co zvlÃ¡Å¡tnÃ­ho. ObnÃ¡Å¡Ã­ to tÅ™i porce rÃ½Å¾e dennÄ› a nic vÃ­c, co bys musel na vlastnÃ­ oÄi vidÄ›t.
+	AI_Output (self, other,"Info_Swiney_Schuerfer_09_02"); //VÃ­Å¡, proÄ to dÄ›lÃ¡me? DÄ›lÃ¡me to proto, abysme odtud jednoho dne mohli odejÃ­t za svobodou.
+	AI_Output (self, other,"Info_Swiney_Schuerfer_09_03"); //To znamenÃ¡, Å¾e se vÅ¡echna ruda vytÄ›Å¾Ã­ a pak putuje na velkou rudnou haldu. A jednou za mÄ›sÃ­c dostane kaÅ¾dÃ½, kdo tady pracoval, 50 nugetÅ¯, aby se mohl zpÃ­t do nÄ›moty.
+	AI_Output (self, other,"Info_Swiney_Schuerfer_09_04"); //To je nejdÅ¯leÅ¾itÄ›jÅ¡Ã­ vÄ›c, kterou bys mÄ›l vÄ›dÄ›t.
+	AI_Output (self, other,"Info_Swiney_Schuerfer_09_05"); //MÃ¡Å¡ s touhle pracÃ­ aspoÅˆ nÄ›jakÃ© zkuÅ¡enosti?
 	
 	Info_ClearChoices(Info_Swiney_Schuerfer);
 	Info_AddChoice   (Info_Swiney_Schuerfer,"Ne.",Info_Swiney_Schuerfer_Nein);
@@ -87,7 +87,7 @@ FUNC VOID Info_Swiney_Schuerfer_Info()
 func void Info_Swiney_Schuerfer_Ja()
 {
 	AI_Output (other, self,"Info_Swiney_Schuerfer_Ja_15_00"); //Ano.
-	AI_Output (self, other,"Info_Swiney_Schuerfer_Ja_09_01"); //Dobrá! Pak víš, na co tu dávat pozor. Tady máš ochrannı odìv. Musíš si obstarat svùj vlastní krumpáè. Hodnì úspìchù!
+	AI_Output (self, other,"Info_Swiney_Schuerfer_Ja_09_01"); //DobrÃ¡! Pak vÃ­Å¡, na co tu dÃ¡vat pozor. Tady mÃ¡Å¡ ochrannÃ½ odÄ›v. MusÃ­Å¡ si obstarat svÅ¯j vlastnÃ­ krumpÃ¡Ä. HodnÄ› ÃºspÄ›chÅ¯!
 	CreateInvItem (self, SFB_ARMOR_L);
 	B_GiveInvItems(self, hero, SFB_ARMOR_L, 1);
 	
@@ -97,10 +97,10 @@ func void Info_Swiney_Schuerfer_Ja()
 func void Info_Swiney_Schuerfer_Nein()
 {
 	AI_Output (other, self,"Info_Swiney_Schuerfer_Nein_15_00"); //Ne.
-	AI_Output (self, other,"Info_Swiney_Schuerfer_Nein_09_01"); //Samozøejmì, e ne! Proè poøád já? Dobøe, Poslouchej pozornì. Vezmeš tenhle materiál a poloíš ho - sem.
-	AI_Output (self, other,"Info_Swiney_Schuerfer_Nein_09_02"); //Kdy ti spadne magickı nuget na nohu a ty pøitom nebudeš na sobì mít ochrannı odìv, budeš na doivotí mrzák a budeš mít pro nás jen polovièní hodnotu, ne si mìl pøedtím.
-	AI_Output (self, other,"Info_Swiney_Schuerfer_Nein_09_03"); //Nìkde tady bude leet krumpáè.
-	AI_Output (self, other,"Info_Swiney_Schuerfer_Nein_09_04"); //Ale moc u toho nevydrí - co se dá dìlat...
+	AI_Output (self, other,"Info_Swiney_Schuerfer_Nein_09_01"); //SamozÅ™ejmÄ›, Å¾e ne! ProÄ poÅ™Ã¡d jÃ¡? DobÅ™e, Poslouchej pozornÄ›. VezmeÅ¡ tenhle materiÃ¡l a poloÅ¾Ã­Å¡ ho - sem.
+	AI_Output (self, other,"Info_Swiney_Schuerfer_Nein_09_02"); //KdyÅ¾ ti spadne magickÃ½ nuget na nohu a ty pÅ™itom nebudeÅ¡ na sobÄ› mÃ­t ochrannÃ½ odÄ›v, budeÅ¡ na doÅ¾ivotÃ­ mrzÃ¡k a budeÅ¡ mÃ­t pro nÃ¡s jen poloviÄnÃ­ hodnotu, neÅ¾ si mÄ›l pÅ™edtÃ­m.
+	AI_Output (self, other,"Info_Swiney_Schuerfer_Nein_09_03"); //NÄ›kde tady bude leÅ¾et krumpÃ¡Ä.
+	AI_Output (self, other,"Info_Swiney_Schuerfer_Nein_09_04"); //Ale moc uÅ¾ toho nevydrÅ¾Ã­ - co se dÃ¡ dÄ›lat...
 	
 	CreateInvItem (self, SFB_ARMOR_L);
 	B_GiveInvItems(self, hero, SFB_ARMOR_L, 1);
@@ -119,7 +119,7 @@ INSTANCE Info_Swiney_PERM(C_INFO)
 	condition	= Info_Swiney_PERM_Condition;
 	information	= Info_Swiney_PERM_Info;
 	permanent	= 1;
-	description = "Kolik rudy jste u nahromadili?";
+	description = "Kolik rudy jste uÅ¾ nahromadili?";
 };                       
 
 FUNC INT Info_Swiney_PERM_Condition()
@@ -132,8 +132,8 @@ FUNC INT Info_Swiney_PERM_Condition()
 
 FUNC VOID Info_Swiney_PERM_Info()
 {	
-	AI_Output (other, self,"Info_Swiney_PERM_15_00"); //Kolik rudy jste u nahromadili?
-	AI_Output (self, other,"Info_Swiney_PERM_09_01"); //Mágové øíkají, e u jí nebude tolik potøeba. Jdi do Nového tábora a prohlédni si haldu.
+	AI_Output (other, self,"Info_Swiney_PERM_15_00"); //Kolik rudy jste uÅ¾ nahromadili?
+	AI_Output (self, other,"Info_Swiney_PERM_09_01"); //MÃ¡govÃ© Å™Ã­kajÃ­, Å¾e uÅ¾ jÃ­ nebude tolik potÅ™eba. Jdi do NovÃ©ho tÃ¡bora a prohlÃ©dni si haldu.
 	AI_StopProcessInfos	(self);
 };
 

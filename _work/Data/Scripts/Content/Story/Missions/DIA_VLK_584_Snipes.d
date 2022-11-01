@@ -18,8 +18,8 @@ FUNC int  VLK_584_Snipes_Exit_Condition()
 
 FUNC VOID  VLK_584_Snipes_Exit_Info()
 {
-	AI_Output			(other, self,"Info_Exit_Info_15_001"); //Ještì se uvidíme!
-	AI_Output			(self, other,"Info_Exit_Info_07_02"); //Ano, jistì!
+	AI_Output			(other, self,"Info_Exit_Info_15_001"); //JeÅ¡tÄ› se uvidÃ­me!
+	AI_Output			(self, other,"Info_Exit_Info_07_02"); //Ano, jistÄ›!
 	
 	AI_StopProcessInfos	( self );
 };
@@ -44,13 +44,13 @@ FUNC int  VLK_584_Snipes_DEAL_Condition()
 FUNC void  VLK_584_Snipes_DEAL_Info()
 {
 	AI_Output			(other, self,"VLK_584_Snipes_DEAL_Info_15_01");//Jak to jde?
-	AI_Output			(self, other,"VLK_584_Snipes_DEAL_Info_07_02"); //Mìl bych nabídku.
-	AI_Output			(self, other,"VLK_584_Snipes_DEAL_Info_07_03"); //Kdy zaøídíš, aby Aaron odešel od truhly, dám ti 10 nugetù.
+	AI_Output			(self, other,"VLK_584_Snipes_DEAL_Info_07_02"); //MÄ›l bych nabÃ­dku.
+	AI_Output			(self, other,"VLK_584_Snipes_DEAL_Info_07_03"); //KdyÅ¾ zaÅ™Ã­dÃ­Å¡, aby Aaron odeÅ¡el od truhly, dÃ¡m ti 10 nugetÅ¯.
 	Snipes_Deal = LOG_RUNNING;
 
 	Log_CreateTopic		(CH2_SnipesDeal,	LOG_MISSION);
 	Log_SetTopicStatus	(CH2_SnipesDeal,	LOG_RUNNING);
-	B_LogEntry		(CH2_SnipesDeal,"Kopáè Snipes mi nabídl 10 magickıch nugetù za to, e odlákám stráce Aarona od jeho truhlice!");
+	B_LogEntry		(CH2_SnipesDeal,"KopÃ¡Ä Snipes mi nabÃ­dl 10 magickÃ½ch nugetÅ¯ za to, Å¾e odlÃ¡kÃ¡m strÃ¡Å¾ce Aarona od jeho truhlice!");
 };
 // ***************** Infos *****************************  
 instance  VLK_584_Snipes_DEAL_RUN (C_INFO)
@@ -60,7 +60,7 @@ instance  VLK_584_Snipes_DEAL_RUN (C_INFO)
 	information		= VLK_584_Snipes_DEAL_RUN_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Dluíš mi 10 nugetù!"; 
+	description		= "DluÅ¾Ã­Å¡ mi 10 nugetÅ¯!"; 
 };
 
 FUNC int  VLK_584_Snipes_DEAL_RUN_Condition()
@@ -73,16 +73,16 @@ FUNC int  VLK_584_Snipes_DEAL_RUN_Condition()
 
 FUNC void  VLK_584_Snipes_DEAL_RUN_Info()
 {
-	AI_Output			(other, self,"VLK_584_Snipes_DEAL_RUN_Info_15_01"); //Dluíš mi 10 nugetù!
-	AI_Output			(self, other,"VLK_584_Snipes_DEAL_RUN_Info_07_02"); //Tady, tìch 10 nugetù sis opravdu vydìlal.
-	AI_Output			(self, other,"VLK_584_Snipes_DEAL_RUN_Info_07_03"); //Och, a ještì nìco: mám taky klíè od jeho truhly, Pro tebe... jen 30 nugetù.
+	AI_Output			(other, self,"VLK_584_Snipes_DEAL_RUN_Info_15_01"); //DluÅ¾Ã­Å¡ mi 10 nugetÅ¯!
+	AI_Output			(self, other,"VLK_584_Snipes_DEAL_RUN_Info_07_02"); //Tady, tÄ›ch 10 nugetÅ¯ sis opravdu vydÄ›lal.
+	AI_Output			(self, other,"VLK_584_Snipes_DEAL_RUN_Info_07_03"); //Och, a jeÅ¡tÄ› nÄ›co: mÃ¡m taky klÃ­Ä od jeho truhly, Pro tebe... jen 30 nugetÅ¯.
 	CreateInvItems		(self,ItMinugget,10);
 	B_GiveInvItems      (self, other, ItMinugget,10);
 	CreateInvItem 		(self,ItKe_OM_02);
 
 	B_GiveXP			(XP_LureAaronAway);
 	
-	B_LogEntry		(CH2_SnipesDeal,"Za dalších 30 nugetù mi nabídl klíè od Aaronovy truhlice."); 
+	B_LogEntry		(CH2_SnipesDeal,"Za dalÅ¡Ã­ch 30 nugetÅ¯ mi nabÃ­dl klÃ­Ä od Aaronovy truhlice."); 
 };  
 // ***************** Infos *****************************
 instance  VLK_584_Snipes_DEAL_2 (C_INFO)
@@ -92,7 +92,7 @@ instance  VLK_584_Snipes_DEAL_2 (C_INFO)
 	information		= VLK_584_Snipes_DEAL_2_Info;
 	important		= 0;
 	permanent		= 1;
-	description		= "(kup klíè)"; 
+	description		= "(kup klÃ­Ä)"; 
 };
 
 FUNC int  VLK_584_Snipes_DEAL_2_Condition()
@@ -110,19 +110,19 @@ FUNC void  VLK_584_Snipes_DEAL_2_Info()
 	
 	if ( Npc_HasItems (hero, ItMinugget)  >= 30 ) 
 	{
-		AI_Output			(other, self,"VLK_584_Snipes_DEAL_2_Info_15_01");//Dej mi ten klíè.
-		AI_Output			(self, other,"VLK_584_Snipes_DEAL_2_Info_07_02");//Udìlal jsi dobrı obchod!
-		AI_Output			(other, self,"VLK_584_Snipes_DEAL_2_Info_15_03");//Zajímalo by mì, co z toho máš ty.
-		AI_Output			(self, other,"VLK_584_Snipes_DEAL_2_Info_07_04");//Vdycky mì tìší, kdy mùu setøít nìkoho ze strácù. A jestli najdou obsah té truhly u mì, jsem mrtvej mu.
+		AI_Output			(other, self,"VLK_584_Snipes_DEAL_2_Info_15_01");//Dej mi ten klÃ­Ä.
+		AI_Output			(self, other,"VLK_584_Snipes_DEAL_2_Info_07_02");//UdÄ›lal jsi dobrÃ½ obchod!
+		AI_Output			(other, self,"VLK_584_Snipes_DEAL_2_Info_15_03");//ZajÃ­malo by mÄ›, co z toho mÃ¡Å¡ ty.
+		AI_Output			(self, other,"VLK_584_Snipes_DEAL_2_Info_07_04");//VÅ¾dycky mÄ› tÄ›Å¡Ã­, kdyÅ¾ mÅ¯Å¾u setÅ™Ã­t nÄ›koho ze strÃ¡Å¾cÅ¯. A jestli najdou obsah tÃ© truhly u mÄ›, jsem mrtvej muÅ¾.
 		
 		B_GiveInvItems 	(hero, self, ItMiNugget,30);
 		B_GiveInvItems 	(self, hero, ItKe_OM_02, 1);
 		VLK_584_Snipes_DEAL_2.permanent = 0;
 	
-		B_LogEntry		(CH2_SnipesDeal,"Koupil jsem od Snipese klíè od té truhlice! Jsem zvìdav, co Aaron øekne na to, a mu o tom povím?"); 
+		B_LogEntry		(CH2_SnipesDeal,"Koupil jsem od Snipese klÃ­Ä od tÃ© truhlice! Jsem zvÄ›dav, co Aaron Å™ekne na to, aÅ¾ mu o tom povÃ­m?"); 
 	}
 	else
 	{
-		AI_Output			(self, other,"VLK_584_Snipes_DEAL_2_Info_07_05"); //Øekl jsem 30 nugetù! Dej mi rudu a já ti dám klíè!
+		AI_Output			(self, other,"VLK_584_Snipes_DEAL_2_Info_07_05"); //Å˜ekl jsem 30 nugetÅ¯! Dej mi rudu a jÃ¡ ti dÃ¡m klÃ­Ä!
 	};
 };  

@@ -56,9 +56,9 @@ FUNC INT DIA_Grd_216_First_Condition()
 
 FUNC VOID DIA_Grd_216_First_Info()
 {
-	AI_Output (self, other,"DIA_Grd_216_First_13_00"); //Hej, ty! Nepamatuji si, ûe bysme se kdy vidÏli!
-	AI_Output (other, self,"DIA_Grd_216_First_15_01"); //NenÌ divu. Jsem tu poprvÈ.
-	AI_Output (self, other,"DIA_Grd_216_First_13_02"); //Pak d·vej pozor! VnÏjöÌ svÏt je dost nebezpeËn˝! V bezpeËÌ jsi jedinÏ uvnit¯ t·bora.
+	AI_Output (self, other,"DIA_Grd_216_First_13_00"); //Hej, ty! Nepamatuji si, ≈æe bysme se kdy vidƒõli!
+	AI_Output (other, self,"DIA_Grd_216_First_15_01"); //Nen√≠ divu. Jsem tu poprv√©.
+	AI_Output (self, other,"DIA_Grd_216_First_13_02"); //Pak d√°vej pozor! Vnƒõj≈°√≠ svƒõt je dost nebezpeƒçn√Ω! V bezpeƒç√≠ jsi jedinƒõ uvnit≈ô t√°bora.
 };
 
 // **************************************************
@@ -87,20 +87,20 @@ FUNC INT DIA_Grd_216_DustyZoll_Condition()
 
 FUNC VOID DIA_Grd_216_DustyZoll_Info()
 {
-	AI_Output			(self, other,"DIA_Grd_216_Dusty_Zoll_13_00"); //St˘j! Kamûe m·ö za sv˝m p¯Ìtelem jÌt?
+	AI_Output			(self, other,"DIA_Grd_216_Dusty_Zoll_13_00"); //St≈Øj! Kam≈æe m√°≈° za sv√Ωm p≈ô√≠telem j√≠t?
 	Info_ClearChoices	(DIA_Grd_216_DustyZoll);
-	Info_AddChoice		(DIA_Grd_216_DustyZoll,"To nenÌ tvoje vÏc!",DIA_Grd_216_DustyZoll_PissOff);
-	Info_AddChoice		(DIA_Grd_216_DustyZoll,"Jsme na cestÏ do t·bora Bratrstva.",DIA_Grd_216_DustyZoll_ToPSI);
+	Info_AddChoice		(DIA_Grd_216_DustyZoll,"To nen√≠ tvoje vƒõc!",DIA_Grd_216_DustyZoll_PissOff);
+	Info_AddChoice		(DIA_Grd_216_DustyZoll,"Jsme na cestƒõ do t√°bora Bratrstva.",DIA_Grd_216_DustyZoll_ToPSI);
 	if (Npc_HasItems (other,itminugget) >= 100)
 	{
-		Info_AddChoice	(DIA_Grd_216_DustyZoll,"Jen se tu proch·zÌme. Tady je 100 nuget˘.",DIA_Grd_216_DustyZoll_LittleWalk);
+		Info_AddChoice	(DIA_Grd_216_DustyZoll,"Jen se tu proch√°z√≠me. Tady je 100 nuget≈Ø.",DIA_Grd_216_DustyZoll_LittleWalk);
 	};
 };
 
 func void DIA_Grd_216_DustyZoll_PissOff()
 {
-	AI_Output			(other, self,"DIA_Grd_216_Dusty_Zoll_PissOff_15_00"); //To nenÌ tvoje vÏc!
-	AI_Output			(self, other,"DIA_Grd_216_Dusty_Zoll_PIssOff_13_00"); //NemyslÌm!
+	AI_Output			(other, self,"DIA_Grd_216_Dusty_Zoll_PissOff_15_00"); //To nen√≠ tvoje vƒõc!
+	AI_Output			(self, other,"DIA_Grd_216_Dusty_Zoll_PIssOff_13_00"); //Nemysl√≠m!
 	AI_StopProcessInfos	(self);
 	Npc_SetTarget		(self,other);
 	AI_StartState		(self,ZS_Attack,1,"");
@@ -108,12 +108,12 @@ func void DIA_Grd_216_DustyZoll_PissOff()
 	B_ExchangeRoutine	(Vlk_524_Dusty,"start");
 	var C_NPC dusty;	dusty = Hlp_GetNpc(Vlk_524_Dusty);
 	dusty.aivar[AIV_PARTYMEMBER] = FALSE;
-	dusty.flags = 0;	// Immortal lˆschen
+	dusty.flags = 0;	// Immortal l√∂schen
 };
 
 func void DIA_Grd_216_DustyZoll_ToPSI()
 {
-	AI_Output			(other, self,"DIA_Grd_216_Dusty_Zoll_ToPsi_15_00"); //Jsme na cestÏ do t·bora Bratrstva.
+	AI_Output			(other, self,"DIA_Grd_216_Dusty_Zoll_ToPsi_15_00"); //Jsme na cestƒõ do t√°bora Bratrstva.
 	AI_Output 			(self, other,"DIA_Grd_216_Dusty_Zoll_ToPsi_13_00"); //Tak tam se nedostanete...
 	AI_StopProcessInfos	(self);
 	Npc_SetTarget		(self,other);
@@ -122,26 +122,26 @@ func void DIA_Grd_216_DustyZoll_ToPSI()
 	B_ExchangeRoutine	(Vlk_524_Dusty,"start");
 	var C_NPC dusty;	dusty = Hlp_GetNpc(Vlk_524_Dusty);
 	dusty.aivar[AIV_PARTYMEMBER] = FALSE;
-	dusty.flags = 0;	// Immortal lˆschen
+	dusty.flags = 0;	// Immortal l√∂schen
 };
 
 func void DIA_Grd_216_DustyZoll_LittleWalk()
 {
-	AI_Output				(other, self,"DIA_Grd_216_Dusty_Zoll_LittleWalk_15_00"); //Jen se tu proch·zÌme. Tady je 100 nuget˘.
+	AI_Output				(other, self,"DIA_Grd_216_Dusty_Zoll_LittleWalk_15_00"); //Jen se tu proch√°z√≠me. Tady je 100 nuget≈Ø.
 	if (Npc_HasItems (hero,itminugget) >= 100)
 	{
-		AI_Output			(self, other,"DIA_Grd_216_Dusty_Zoll_LittleWalk_13_00"); //Nic jsem nevidÏl.
+		AI_Output			(self, other,"DIA_Grd_216_Dusty_Zoll_LittleWalk_13_00"); //Nic jsem nevidƒõl.
 
 		B_GiveInvItems	(hero, self, ItMiNugget, 100);
 		DIA_Grd_216_DustyZoll.permanent = 0;
-		B_LogEntry			(CH1_RecruitDusty,"Poda¯ilo se mi uplatit str·ûe od jiûnÌ br·ny. Kaûd˝ m· svoji cenu!");
+		B_LogEntry			(CH1_RecruitDusty,"Poda≈ôilo se mi uplatit str√°≈æe od ji≈æn√≠ br√°ny. Ka≈æd√Ω m√° svoji cenu!");
 		B_GiveXP			(XP_BribedDustyGuard);
 		
 		AI_StopProcessInfos	(self);
 	}
 	else
 	{
-		AI_Output			(self, other,"DIA_Grd_216_Dusty_Zoll_LittleWalk_13_02"); //DÏl·ö si ze mÏ bl·zny? Tak snadn˝ to mÌt nebudeö, mladej!
+		AI_Output			(self, other,"DIA_Grd_216_Dusty_Zoll_LittleWalk_13_02"); //Dƒõl√°≈° si ze mƒõ bl√°zny? Tak snadn√Ω to m√≠t nebude≈°, mladej!
 		AI_StopProcessInfos	(self);
 		Npc_SetTarget		(self,other);
 		AI_StartState		(self,ZS_Attack,1,"");
@@ -149,7 +149,7 @@ func void DIA_Grd_216_DustyZoll_LittleWalk()
 		B_ExchangeRoutine	(Vlk_524_Dusty,"start");
 		var C_NPC dusty;	dusty = Hlp_GetNpc(Vlk_524_Dusty);
 		dusty.aivar[AIV_PARTYMEMBER] = FALSE;
-		dusty.flags = 0;	// Immortal lˆschen
+		dusty.flags = 0;	// Immortal l√∂schen
 	};
 };
 
@@ -179,7 +179,7 @@ FUNC int  GRD_216_Torwache_SEETHORUS_Condition()
 
 func void  GRD_216_Torwache_SEETHORUS_Info()
 {
-	AI_Output (self, other,"Grd_216_Torwache_SEETHORUS_Info_13_01"); //Hej, jsem r·d, ûe tu jsi. Thorus tÏ chce vidÏt.
+	AI_Output (self, other,"Grd_216_Torwache_SEETHORUS_Info_13_01"); //Hej, jsem r√°d, ≈æe tu jsi. Thorus tƒõ chce vidƒõt.
 	AI_Output (other, self,"Grd_216_Torwache_SEETHORUS_Info_15_02"); //Co chce?
-	AI_Output (self, other,"Grd_216_Torwache_SEETHORUS_Info_13_03"); //UrËitÏ ti to brzy ¯ekne.
+	AI_Output (self, other,"Grd_216_Torwache_SEETHORUS_Info_13_03"); //Urƒçitƒõ ti to brzy ≈ôekne.
 };

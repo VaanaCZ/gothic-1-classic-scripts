@@ -33,7 +33,7 @@ INSTANCE DIA_Org_875_PERM (C_INFO)
 	condition	= DIA_Org_875_PERM_Condition;
 	information	= DIA_Org_875_PERM_Info;
 	permanent	= 1;
-	description = "Pouštíte dovnitø jenom bandity a rudaøe?";
+	description = "PouÅ¡tÃ­te dovnitÅ™ jenom bandity a rudaÅ™e?";
 };                       
 
 FUNC INT DIA_Org_875_PERM_Condition()
@@ -43,7 +43,7 @@ FUNC INT DIA_Org_875_PERM_Condition()
 
 FUNC VOID DIA_Org_875_PERM_Info()
 {	
-	AI_Output (other, self,"DIA_Org_875_PERM_15_00"); //Pouštíte dovnitø jenom bandity a rudaøe?
-	AI_Output (self, other,"DIA_Org_875_PERM_13_01"); //Proti sektáøským bratrùm také nic nemáme.
-	AI_Output (self, other,"DIA_Org_875_PERM_13_02"); //Ale kromì nich sem už nikdo nepøijde.
+	AI_Output (other, self,"DIA_Org_875_PERM_15_00"); //PouÅ¡tÃ­te dovnitÅ™ jenom bandity a rudaÅ™e?
+	AI_Output (self, other,"DIA_Org_875_PERM_13_01"); //Proti sektÃ¡Å™skÃ½m bratrÅ¯m takÃ© nic nemÃ¡me.
+	AI_Output (self, other,"DIA_Org_875_PERM_13_02"); //Ale kromÄ› nich sem uÅ¾ nikdo nepÅ™ijde.
 };

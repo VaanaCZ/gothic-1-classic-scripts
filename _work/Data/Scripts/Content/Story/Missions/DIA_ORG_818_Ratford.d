@@ -44,8 +44,8 @@ FUNC int  Org_818_Ratford_WrongWay_Condition()
 FUNC VOID  Org_818_Ratford_WrongWay_Info()
 {
 	AI_Output (self, other,"Org_818_Ratford_WrongWay_07_00"); //Hej, ty!
-	AI_Output (other, self,"Org_818_Ratford_WrongWay_15_01"); //Co chceš?
-	AI_Output (self, other,"Org_818_Ratford_WrongWay_07_02"); //Chci tì varovat. Jestli pùjdeš dál touhle cestou, vstoupíš na naši loveckou pùdu.
+	AI_Output (other, self,"Org_818_Ratford_WrongWay_15_01"); //Co chceÅ¡?
+	AI_Output (self, other,"Org_818_Ratford_WrongWay_07_02"); //Chci tÄ› varovat. Jestli pÅ¯jdeÅ¡ dÃ¡l touhle cestou, vstoupÃ­Å¡ na naÅ¡i loveckou pÅ¯du.
 };
 
 // **************************************************
@@ -59,7 +59,7 @@ instance  Org_818_Ratford_WhatGame (C_INFO)
 	condition	= Org_818_Ratford_WhatGame_Condition;
 	information	= Org_818_Ratford_WhatGame_Info;
 	permanent	= 0;
-	description = "Co tady lovíte?";
+	description = "Co tady lovÃ­te?";
 };                       
 
 FUNC int  Org_818_Ratford_WhatGame_Condition()
@@ -69,14 +69,14 @@ FUNC int  Org_818_Ratford_WhatGame_Condition()
 
 FUNC VOID  Org_818_Ratford_WhatGame_Info()
 {
-	AI_Output (other, self,"Org_818_Ratford_WhatGame_15_00"); //Co tady lovíte?
-	AI_Output (self, other,"Org_818_Ratford_WhatGame_07_01"); //Vìtšinou mrchorouty. Je z nich spousta masa. Kromì toho, není tak tìké je dostat... Kdy víš, jak na to.
+	AI_Output (other, self,"Org_818_Ratford_WhatGame_15_00"); //Co tady lovÃ­te?
+	AI_Output (self, other,"Org_818_Ratford_WhatGame_07_01"); //VÄ›tÅ¡inou mrchoÅ¾routy. Je z nich spousta masa. KromÄ› toho, nenÃ­ tak tÄ›Å¾kÃ© je dostat... KdyÅ¾ vÃ­Å¡, jak na to.
 	AI_Output (other, self,"Org_818_Ratford_WhatGame_15_02"); //Opravdu? A jak?
-	AI_Output (self, other,"Org_818_Ratford_WhatGame_07_03"); //Zeptej se tady mého pøítele Draxe - ví o tom víc ne kdokoliv jinı.
+	AI_Output (self, other,"Org_818_Ratford_WhatGame_07_03"); //Zeptej se tady mÃ©ho pÅ™Ã­tele Draxe - vÃ­ o tom vÃ­c neÅ¾ kdokoliv jinÃ½.
 };
 
 // **************************************************
-//					Warum gefährlich
+//					Warum gefÃ¤hrlich
 // **************************************************
 
 instance  Org_818_Ratford_WhyDangerous (C_INFO)
@@ -86,7 +86,7 @@ instance  Org_818_Ratford_WhyDangerous (C_INFO)
 	condition	= Org_818_Ratford_WhyDangerous_Condition;
 	information	= Org_818_Ratford_WhyDangerous_Info;
 	permanent	= 0;
-	description = "Proè je ta oblast tak nebezpeèná?";
+	description = "ProÄ je ta oblast tak nebezpeÄnÃ¡?";
 };                       
 
 FUNC int  Org_818_Ratford_WhyDangerous_Condition()
@@ -96,14 +96,14 @@ FUNC int  Org_818_Ratford_WhyDangerous_Condition()
 
 FUNC VOID  Org_818_Ratford_WhyDangerous_Info()
 {
-	AI_Output (other, self,"Org_818_Ratford_WhyDangerous_15_00"); //Proè je ta oblast tak nebezpeèná?
-	AI_Output (self, other,"Org_818_Ratford_WhyDangerous_07_01"); //Právì jsi sem pøišel, viï? V kolonii jsou rùzné oblasti, které jsou více nebo ménì nebezpeèné.
-	AI_Output (self, other,"Org_818_Ratford_WhyDangerous_07_02"); //Cesty mezi tábory jsou docela bezpeèné. Ale i na nich ti mùou zkøíit cestu nìjací vlci, kteøí na tebe budou hledìt jako na snadnou koøist.
-	AI_Output (self, other,"Org_818_Ratford_WhyDangerous_07_03"); //A to právì do té doby, dokud nebudeš mít poøádnou zbraò a zbroj.
+	AI_Output (other, self,"Org_818_Ratford_WhyDangerous_15_00"); //ProÄ je ta oblast tak nebezpeÄnÃ¡?
+	AI_Output (self, other,"Org_818_Ratford_WhyDangerous_07_01"); //PrÃ¡vÄ› jsi sem pÅ™iÅ¡el, viÄ? V kolonii jsou rÅ¯znÃ© oblasti, kterÃ© jsou vÃ­ce nebo mÃ©nÄ› nebezpeÄnÃ©.
+	AI_Output (self, other,"Org_818_Ratford_WhyDangerous_07_02"); //Cesty mezi tÃ¡bory jsou docela bezpeÄnÃ©. Ale i na nich ti mÅ¯Å¾ou zkÅ™Ã­Å¾it cestu nÄ›jacÃ­ vlci, kteÅ™Ã­ na tebe budou hledÄ›t jako na snadnou koÅ™ist.
+	AI_Output (self, other,"Org_818_Ratford_WhyDangerous_07_03"); //A to prÃ¡vÄ› do tÃ© doby, dokud nebudeÅ¡ mÃ­t poÅ™Ã¡dnou zbraÅˆ a zbroj.
 };
 
 // **************************************************
-//					Wo Ausrüstung
+//					Wo AusrÃ¼stung
 // **************************************************
 
 instance  Org_818_Ratford_WoEquipment (C_INFO)
@@ -113,7 +113,7 @@ instance  Org_818_Ratford_WoEquipment (C_INFO)
 	condition	= Org_818_Ratford_WoEquipment_Condition;
 	information	= Org_818_Ratford_WoEquipment_Info;
 	permanent	= 0;
-	description = "Kde dostanu lepší vıbavu?";
+	description = "Kde dostanu lepÅ¡Ã­ vÃ½bavu?";
 };                       
 
 FUNC int  Org_818_Ratford_WoEquipment_Condition()
@@ -126,13 +126,13 @@ FUNC int  Org_818_Ratford_WoEquipment_Condition()
 
 FUNC VOID  Org_818_Ratford_WoEquipment_Info()
 {
-	AI_Output (other, self,"Org_818_Ratford_WoEquipment_15_00"); //Kde dostanu lepší vybavení?
-	AI_Output (self, other,"Org_818_Ratford_WoEquipment_07_01"); //Nejblíe to bude ve Starém táboøe. Pøímo tahle cesta tì tam dovede.
-	AI_Output (self, other,"Org_818_Ratford_WoEquipment_07_02"); //Ale v našem táboøe to dostaneš levnìji. Novı tábor - tam potkáš ty správné lidi.
-	AI_Output (self, other,"Org_818_Ratford_WoEquipment_07_03"); //Jestli pùjdeš do Starého tábora, ptej se po Mordragovi. Je jedním z nás. Za trochu rudy ti prodá to správné zboí.
+	AI_Output (other, self,"Org_818_Ratford_WoEquipment_15_00"); //Kde dostanu lepÅ¡Ã­ vybavenÃ­?
+	AI_Output (self, other,"Org_818_Ratford_WoEquipment_07_01"); //NejblÃ­Å¾e to bude ve StarÃ©m tÃ¡boÅ™e. PÅ™Ã­mo tahle cesta tÄ› tam dovede.
+	AI_Output (self, other,"Org_818_Ratford_WoEquipment_07_02"); //Ale v naÅ¡em tÃ¡boÅ™e to dostaneÅ¡ levnÄ›ji. NovÃ½ tÃ¡bor - tam potkÃ¡Å¡ ty sprÃ¡vnÃ© lidi.
+	AI_Output (self, other,"Org_818_Ratford_WoEquipment_07_03"); //Jestli pÅ¯jdeÅ¡ do StarÃ©ho tÃ¡bora, ptej se po Mordragovi. Je jednÃ­m z nÃ¡s. Za trochu rudy ti prodÃ¡ to sprÃ¡vnÃ© zboÅ¾Ã­.
 	
 	Log_CreateTopic	(GE_TraderOC, LOG_NOTE);
-	B_LogEntry		(GE_TraderOC,"Bandita Mordrag prodává ve Starém táboøe za pøijatelné ceny veškeré zboí.");
+	B_LogEntry		(GE_TraderOC,"Bandita Mordrag prodÃ¡vÃ¡ ve StarÃ©m tÃ¡boÅ™e za pÅ™ijatelnÃ© ceny veÅ¡kerÃ© zboÅ¾Ã­.");
 };
 
 // **************************************************
@@ -146,7 +146,7 @@ instance  Org_818_Ratford_MoreLocations (C_INFO)
 	condition	= Org_818_Ratford_MoreLocations_Condition;
 	information	= Org_818_Ratford_MoreLocations_Info;
 	permanent	= 0;
-	description = "Povìz mi víc o oblastech v kolonii.";
+	description = "PovÄ›z mi vÃ­c o oblastech v kolonii.";
 };                       
 
 FUNC int  Org_818_Ratford_MoreLocations_Condition()
@@ -159,12 +159,12 @@ FUNC int  Org_818_Ratford_MoreLocations_Condition()
 
 FUNC VOID  Org_818_Ratford_MoreLocations_Info()
 {
-	AI_Output (other, self,"Org_818_Ratford_MoreLocations_15_00"); //Povìz mi víc o oblastech v kolonii.
-	AI_Output (self, other,"Org_818_Ratford_MoreLocations_07_01"); //Kdy cestuješ mezi tábory, musíš mít mapu, abys rozpoznal cesty a slepé stezky.
-	AI_Output (self, other,"Org_818_Ratford_MoreLocations_07_02"); //Slepé stezky tì èasto dovedou do nebezpeènıch kaòonù, kde potkáš pøíšery, kterım je lepší se vyhnout.
-	AI_Output (self, other,"Org_818_Ratford_MoreLocations_07_03"); //Nevcházej do starıch zøícenin. Je jich tu v okolí spousta. Vìtšina z nich se datuje do èasù první skøetí války. Nìkteré jsou opuštìná skøetí sídla.
-	AI_Output (self, other,"Org_818_Ratford_MoreLocations_07_04"); //V tìchto zøíceninách bıvají èasto skøeti - nebo ještì horší pøíšery. Tìmhle místùm bych se vyhıbal, obzvláš v noci.
-	AI_Output (self, other,"Org_818_Ratford_MoreLocations_07_05"); //A ještì jedna rada - nechoï do lesa!
+	AI_Output (other, self,"Org_818_Ratford_MoreLocations_15_00"); //PovÄ›z mi vÃ­c o oblastech v kolonii.
+	AI_Output (self, other,"Org_818_Ratford_MoreLocations_07_01"); //KdyÅ¾ cestujeÅ¡ mezi tÃ¡bory, musÃ­Å¡ mÃ­t mapu, abys rozpoznal cesty a slepÃ© stezky.
+	AI_Output (self, other,"Org_818_Ratford_MoreLocations_07_02"); //SlepÃ© stezky tÄ› Äasto dovedou do nebezpeÄnÃ½ch kaÅˆonÅ¯, kde potkÃ¡Å¡ pÅ™Ã­Å¡ery, kterÃ½m je lepÅ¡Ã­ se vyhnout.
+	AI_Output (self, other,"Org_818_Ratford_MoreLocations_07_03"); //NevchÃ¡zej do starÃ½ch zÅ™Ã­cenin. Je jich tu v okolÃ­ spousta. VÄ›tÅ¡ina z nich se datuje do ÄasÅ¯ prvnÃ­ skÅ™etÃ­ vÃ¡lky. NÄ›kterÃ© jsou opuÅ¡tÄ›nÃ¡ skÅ™etÃ­ sÃ­dla.
+	AI_Output (self, other,"Org_818_Ratford_MoreLocations_07_04"); //V tÄ›chto zÅ™Ã­ceninÃ¡ch bÃ½vajÃ­ Äasto skÅ™eti - nebo jeÅ¡tÄ› horÅ¡Ã­ pÅ™Ã­Å¡ery. TÄ›mhle mÃ­stÅ¯m bych se vyhÃ½bal, obzvlÃ¡Å¡Å¥ v noci.
+	AI_Output (self, other,"Org_818_Ratford_MoreLocations_07_05"); //A jeÅ¡tÄ› jedna rada - nechoÄ do lesa!
 };
 
 // **************************************************
@@ -192,18 +192,18 @@ FUNC int Org_818_Ratford_WoKarte_Condition()
 FUNC void Org_818_Ratford_WoKarte_Info()
 {
 	AI_Output (other, self,"Org_818_Ratford_WoKarte_15_00"); //Kde dostanu mapu?
-	AI_Output (self, other,"Org_818_Ratford_WoKarte_07_01"); //Zeptej se lidí ve Starém táboøe, ije tam jeden kartograf.
-	AI_Output (self, other,"Org_818_Ratford_WoKarte_07_02"); //Moná se ti podaøí nìjakou z jeho map ukrást! Jestli se ti to podaøí, vezmi také jednu pro mì!
+	AI_Output (self, other,"Org_818_Ratford_WoKarte_07_01"); //Zeptej se lidÃ­ ve StarÃ©m tÃ¡boÅ™e, Å¾ije tam jeden kartograf.
+	AI_Output (self, other,"Org_818_Ratford_WoKarte_07_02"); //MoÅ¾nÃ¡ se ti podaÅ™Ã­ nÄ›jakou z jeho map ukrÃ¡st! Jestli se ti to podaÅ™Ã­, vezmi takÃ© jednu pro mÄ›!
 	
 	Info_ClearChoices(Org_818_Ratford_WoKarte);
-	Info_AddChoice   (Org_818_Ratford_WoKarte,"Jestli se mi je podaøí vzít bez placení, vezmu jich tolik, kolik unesu!",Org_818_Ratford_WoKarte_Stehlen);
-	Info_AddChoice	 (Org_818_Ratford_WoKarte,"Proè? On neprodává mapy?",Org_818_Ratford_WoKarte_Kaufen);
+	Info_AddChoice   (Org_818_Ratford_WoKarte,"Jestli se mi je podaÅ™Ã­ vzÃ­t bez placenÃ­, vezmu jich tolik, kolik unesu!",Org_818_Ratford_WoKarte_Stehlen);
+	Info_AddChoice	 (Org_818_Ratford_WoKarte,"ProÄ? On neprodÃ¡vÃ¡ mapy?",Org_818_Ratford_WoKarte_Kaufen);
 };
 
 func void Org_818_Ratford_WoKarte_Stehlen()
 {
-	AI_Output (other, self,"Org_818_Ratford_WoKarte_Stehlen_15_00"); //Jestli se mi je podaøí vzít bez placení, vezmu jich tolik, kolik unesu!
-	AI_Output (self, other,"Org_818_Ratford_WoKarte_Stehlen_07_01"); //Líbíš se mi. Mìl by ses rozhodnout pro Novı tábor! Jestli tam pùjdeš, ptej se na Larese. Stará se o nové pøíchozí. Myslím, e pro tebe bude mít práci!
+	AI_Output (other, self,"Org_818_Ratford_WoKarte_Stehlen_15_00"); //Jestli se mi je podaÅ™Ã­ vzÃ­t bez placenÃ­, vezmu jich tolik, kolik unesu!
+	AI_Output (self, other,"Org_818_Ratford_WoKarte_Stehlen_07_01"); //LÃ­bÃ­Å¡ se mi. MÄ›l by ses rozhodnout pro NovÃ½ tÃ¡bor! Jestli tam pÅ¯jdeÅ¡, ptej se na Larese. StarÃ¡ se o novÃ© pÅ™Ã­chozÃ­. MyslÃ­m, Å¾e pro tebe bude mÃ­t prÃ¡ci!
 	
 	VAR C_NPC Lares; Lares = Hlp_GetNpc(ORG_801_LARES);
 	Lares.aivar[AIV_FINDABLE]=TRUE;
@@ -213,8 +213,8 @@ func void Org_818_Ratford_WoKarte_Stehlen()
 
 func void Org_818_Ratford_WoKarte_Kaufen()
 {
-	AI_Output (other, self,"Org_818_Ratford_WoKarte_Kaufen_15_00"); //Proè? On neprodává mapy? 
-	AI_Output (self, other,"Org_818_Ratford_WoKarte_Kaufen_07_01"); //Jestli máš dost rudy, abys je zaplatil...
+	AI_Output (other, self,"Org_818_Ratford_WoKarte_Kaufen_15_00"); //ProÄ? On neprodÃ¡vÃ¡ mapy? 
+	AI_Output (self, other,"Org_818_Ratford_WoKarte_Kaufen_07_01"); //Jestli mÃ¡Å¡ dost rudy, abys je zaplatil...
 	Info_ClearChoices(Org_818_Ratford_WoKarte);
 };
 
@@ -229,7 +229,7 @@ instance  Org_818_Ratford_Thanks (C_INFO)
 	condition	= Org_818_Ratford_Thanks_Condition;
 	information	= Org_818_Ratford_Thanks_Info;
 	permanent	= 0;
-	description = "Díky za pomoc.";
+	description = "DÃ­ky za pomoc.";
 };                       
 
 FUNC int  Org_818_Ratford_Thanks_Condition()
@@ -239,9 +239,9 @@ FUNC int  Org_818_Ratford_Thanks_Condition()
 
 FUNC VOID  Org_818_Ratford_Thanks_Info()
 {
-	AI_Output (other, self,"Org_818_Ratford_Thanks_15_00"); //Díky za pomoc.
-	AI_Output (self, other,"Org_818_Ratford_Thanks_07_01"); //Nemysli si, e se bude kadı chovat tak pøátelsky, mladej!
-	AI_Output (self, other,"Org_818_Ratford_Thanks_07_02"); //Novı pøíchozí ani nemusí mít zrovna narvané kapsy, ale nìkteøí tì zabijou tøeba jenom pro krumpáè.
+	AI_Output (other, self,"Org_818_Ratford_Thanks_15_00"); //DÃ­ky za pomoc.
+	AI_Output (self, other,"Org_818_Ratford_Thanks_07_01"); //Nemysli si, Å¾e se bude kaÅ¾dÃ½ chovat tak pÅ™Ã¡telsky, mladej!
+	AI_Output (self, other,"Org_818_Ratford_Thanks_07_02"); //NovÃ½ pÅ™Ã­chozÃ­ ani nemusÃ­ mÃ­t zrovna narvanÃ© kapsy, ale nÄ›kteÅ™Ã­ tÄ› zabijou tÅ™eba jenom pro krumpÃ¡Ä.
 	AI_Output (other, self,"Org_818_Ratford_Thanks_15_04"); //Budu si to pamatovat.
 };
 
