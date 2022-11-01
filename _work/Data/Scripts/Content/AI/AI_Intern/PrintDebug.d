@@ -4,7 +4,7 @@
 //##
 //########################################################################
 
-//-------- PrintDebug-Kan‰le --------
+//-------- PrintDebug-Kan–¥le --------
 const int	PD_TA_FRAME 				= 1;
 const int	PD_TA_LOOP 					= 2;
 const int	PD_TA_CHECK 				= 3;
@@ -46,8 +46,8 @@ func void PrintDebugS (var string txt)
 //////////////////////////////////////////////////////////////////////////
 //	PrintDebugNpc
 //	-------------
-//	Gibt eine Debug-Meldung im zSpy aus. Dabei muﬂ in 'type' ein
-//	Debug-Channel und in 'text' der eigentliche Meldungstext ¸bergeben
+//	Gibt eine Debug-Meldung im zSpy aus. Dabei mu–Ø in 'type' ein
+//	Debug-Channel und in 'text' der eigentliche Meldungstext —åbergeben
 //	werden.
 //	Die Meldung erscheint im Format:
 //
@@ -155,7 +155,7 @@ func void PrintGuild (var int channel, var int guild)
 //////////////////////////////////////////////////////////////////////////
 //	PrintAttitudes
 //	--------------
-//	Gibt die Attit¸den von 'self' auf dem zSpy aus
+//	Gibt die Attit—åden von 'self' auf dem zSpy aus
 //////////////////////////////////////////////////////////////////////////
 func void PrintAttitudes (var int channel)
 {
@@ -169,7 +169,7 @@ func void PrintAttitudes (var int channel)
 	temp_attitude	=	Npc_GetAttitude ( self, hero);
 	perm_attitude	=	Npc_GetPermAttitude	( self, hero);
 	
-	// Check Block auf tempor‰re Attit¸de des Nsc¥s
+	// Check Block auf tempor–¥re Attit—åde des Nsc“ës
 	if (temp_attitude	==	ATT_HOSTILE)
 	{
 		PrintDebugNpc( channel, "TempAttitude == ATT_HOSTILE");			

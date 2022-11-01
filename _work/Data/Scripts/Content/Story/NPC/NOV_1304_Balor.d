@@ -1,7 +1,7 @@
 instance NOV_1304_Balor (Npc_Default)
 {
 	//-------- primary data --------
-	name 		=		"Бэлор";
+	name 		=		"Р‘СЌР»РѕСЂ";
 	Npctype	 	=		Npctype_Main;
 	guild 		=		GIL_NOV;
 	level 		=		15;

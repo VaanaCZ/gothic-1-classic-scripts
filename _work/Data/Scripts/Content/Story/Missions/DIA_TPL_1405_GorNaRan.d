@@ -9,7 +9,7 @@ instance  DIA_GorNaRan_Exit (C_INFO)
 	condition	=  DIA_GorNaRan_Exit_Condition;
 	information	=  DIA_GorNaRan_Exit_Info;
 	permanent	=  1;
-	description = "ЗАКОНЧИТЬ";
+	description = "Р—РђРљРћРќР§РРўР¬";
 };                       
 
 FUNC int  DIA_GorNaRan_Exit_Condition()
@@ -33,7 +33,7 @@ instance  DIA_GorNaRan_Wache (C_INFO)
 	condition	=  DIA_GorNaRan_Wache_Condition;
 	information	=  DIA_GorNaRan_Wache_Info;
 	permanent	=  1;
-	description = "Чем ты занимаешься?";
+	description = "Р§РµРј С‚С‹ Р·Р°РЅРёРјР°РµС€СЊСЃСЏ?";
 };                       
 
 FUNC int  DIA_GorNaRan_Wache_Condition()
@@ -43,10 +43,10 @@ FUNC int  DIA_GorNaRan_Wache_Condition()
 
 FUNC VOID  DIA_GorNaRan_Wache_Info()
 {
-	AI_Output (other, self,"DIA_GorNaRan_Wache_15_00"); //Чем ты занимаешься?
-	AI_Output (self, other,"DIA_GorNaRan_Wache_13_01"); //Я слежу за тем, чтобы болотожоры не подобрались к Лагерю.
-	AI_Output (self, other,"DIA_GorNaRan_Wache_13_02"); //На твоем месте я бы держался подальше от этих тварей. Против них у тебя нет ни единого шанса.
-	AI_Output (self, other,"DIA_GorNaRan_Wache_13_03"); //Знаешь, мне нельзя отвлекаться.
+	AI_Output (other, self,"DIA_GorNaRan_Wache_15_00"); //Р§РµРј С‚С‹ Р·Р°РЅРёРјР°РµС€СЊСЃСЏ?
+	AI_Output (self, other,"DIA_GorNaRan_Wache_13_01"); //РЇ СЃР»РµР¶Сѓ Р·Р° С‚РµРј, С‡С‚РѕР±С‹ Р±РѕР»РѕС‚РѕР¶РѕСЂС‹ РЅРµ РїРѕРґРѕР±СЂР°Р»РёСЃСЊ Рє Р›Р°РіРµСЂСЋ.
+	AI_Output (self, other,"DIA_GorNaRan_Wache_13_02"); //РќР° С‚РІРѕРµРј РјРµСЃС‚Рµ СЏ Р±С‹ РґРµСЂР¶Р°Р»СЃСЏ РїРѕРґР°Р»СЊС€Рµ РѕС‚ СЌС‚РёС… С‚РІР°СЂРµР№. РџСЂРѕС‚РёРІ РЅРёС… Сѓ С‚РµР±СЏ РЅРµС‚ РЅРё РµРґРёРЅРѕРіРѕ С€Р°РЅСЃР°.
+	AI_Output (self, other,"DIA_GorNaRan_Wache_13_03"); //Р—РЅР°РµС€СЊ, РјРЅРµ РЅРµР»СЊР·СЏ РѕС‚РІР»РµРєР°С‚СЊСЃСЏ.
 	AI_StopProcessInfos	( self );
 };
 
@@ -77,7 +77,7 @@ FUNC INT Info_TPL_1405_GorNaRan_Condition()
 
 FUNC VOID Info_TPL_1405_GorNaRan_Info()
 {
-	AI_Output (self, other,"Info_TPL_1405_GorNaRan_Info_13_01"); //Куда это ты собрался? Никому не дозволено ходить здесь! 
+	AI_Output (self, other,"Info_TPL_1405_GorNaRan_Info_13_01"); //РљСѓРґР° СЌС‚Рѕ С‚С‹ СЃРѕР±СЂР°Р»СЃСЏ? РќРёРєРѕРјСѓ РЅРµ РґРѕР·РІРѕР»РµРЅРѕ С…РѕРґРёС‚СЊ Р·РґРµСЃСЊ! 
 };
 
 
@@ -90,7 +90,7 @@ INSTANCE Info_TPL_1405_GorNaRan2 (C_INFO)
 	condition	= Info_TPL_1405_GorNaRan2_Condition;
 	information	= Info_TPL_1405_GorNaRan2_Info;
 	permanent	= 1;
-	description = "Что здесь происходит?";
+	description = "Р§С‚Рѕ Р·РґРµСЃСЊ РїСЂРѕРёСЃС…РѕРґРёС‚?";
 };                       
 
 FUNC INT Info_TPL_1405_GorNaRan2_Condition()
@@ -102,8 +102,8 @@ FUNC INT Info_TPL_1405_GorNaRan2_Condition()
 
 FUNC VOID Info_TPL_1405_GorNaRan2_Info()
 {
-	AI_Output (other, self,"Info_TPL_1405_GorNaRan_Info_15_02"); //Что здесь происходит?
-	AI_Output (self, other,"Info_TPL_1405_GorNaRan_Info_13_03"); //Он еще спрашивает меня, что происходит! Пади ниц и молись Спящему, ибо пробудился он, дабы стереть с лица земли всех неверных!
+	AI_Output (other, self,"Info_TPL_1405_GorNaRan_Info_15_02"); //Р§С‚Рѕ Р·РґРµСЃСЊ РїСЂРѕРёСЃС…РѕРґРёС‚?
+	AI_Output (self, other,"Info_TPL_1405_GorNaRan_Info_13_03"); //РћРЅ РµС‰Рµ СЃРїСЂР°С€РёРІР°РµС‚ РјРµРЅСЏ, С‡С‚Рѕ РїСЂРѕРёСЃС…РѕРґРёС‚! РџР°РґРё РЅРёС† Рё РјРѕР»РёСЃСЊ РЎРїСЏС‰РµРјСѓ, РёР±Рѕ РїСЂРѕР±СѓРґРёР»СЃСЏ РѕРЅ, РґР°Р±С‹ СЃС‚РµСЂРµС‚СЊ СЃ Р»РёС†Р° Р·РµРјР»Рё РІСЃРµС… РЅРµРІРµСЂРЅС‹С…!
 };
 
 
@@ -116,7 +116,7 @@ INSTANCE Info_TPL_1405_GorNaRan3 (C_INFO)
 	condition	= Info_TPL_1405_GorNaRan3_Condition;
 	information	= Info_TPL_1405_GorNaRan3_Info;
 	permanent	= 1;
-	description = "Я просто хотел посмотреть.";
+	description = "РЇ РїСЂРѕСЃС‚Рѕ С…РѕС‚РµР» РїРѕСЃРјРѕС‚СЂРµС‚СЊ.";
 };                       
 
 FUNC INT Info_TPL_1405_GorNaRan3_Condition()
@@ -128,8 +128,8 @@ FUNC INT Info_TPL_1405_GorNaRan3_Condition()
 
 FUNC VOID Info_TPL_1405_GorNaRan3_Info()
 {	
-	AI_Output (other, self,"Info_TPL_1405_GorNaRan_Info_15_04"); //Я просто хотел посмотреть.
-	AI_Output (self, other,"Info_TPL_1405_GorNaRan_Info_13_05"); //Ты жалкий червь! Тебе и таким, как ты, нечего делать здесь в момент пробуждения Спящего! И я позабочусь об этом!
+	AI_Output (other, self,"Info_TPL_1405_GorNaRan_Info_15_04"); //РЇ РїСЂРѕСЃС‚Рѕ С…РѕС‚РµР» РїРѕСЃРјРѕС‚СЂРµС‚СЊ.
+	AI_Output (self, other,"Info_TPL_1405_GorNaRan_Info_13_05"); //РўС‹ Р¶Р°Р»РєРёР№ С‡РµСЂРІСЊ! РўРµР±Рµ Рё С‚Р°РєРёРј, РєР°Рє С‚С‹, РЅРµС‡РµРіРѕ РґРµР»Р°С‚СЊ Р·РґРµСЃСЊ РІ РјРѕРјРµРЅС‚ РїСЂРѕР±СѓР¶РґРµРЅРёСЏ РЎРїСЏС‰РµРіРѕ! Р СЏ РїРѕР·Р°Р±РѕС‡СѓСЃСЊ РѕР± СЌС‚РѕРј!
 	
 	AI_StopProcessInfos	( self );
 	
@@ -146,7 +146,7 @@ INSTANCE Info_TPL_1405_GorNaRan4 (C_INFO)
 	condition	= Info_TPL_1405_GorNaRan4_Condition;
 	information	= Info_TPL_1405_GorNaRan4_Info;
 	permanent	= 0;
-	description = "Тебе не остановить меня!";
+	description = "РўРµР±Рµ РЅРµ РѕСЃС‚Р°РЅРѕРІРёС‚СЊ РјРµРЅСЏ!";
 };                       
 
 FUNC INT Info_TPL_1405_GorNaRan4_Condition()
@@ -158,8 +158,8 @@ FUNC INT Info_TPL_1405_GorNaRan4_Condition()
 
 FUNC VOID Info_TPL_1405_GorNaRan4_Info()
 {	
-	AI_Output (other, self,"Info_TPL_1405_GorNaRan_Info_15_06"); //Тебе не остановить меня!
-	AI_Output (self, other,"Info_TPL_1405_GorNaRan_Info_13_07"); //Это все слова, парень! За Спящего!
+	AI_Output (other, self,"Info_TPL_1405_GorNaRan_Info_15_06"); //РўРµР±Рµ РЅРµ РѕСЃС‚Р°РЅРѕРІРёС‚СЊ РјРµРЅСЏ!
+	AI_Output (self, other,"Info_TPL_1405_GorNaRan_Info_13_07"); //Р­С‚Рѕ РІСЃРµ СЃР»РѕРІР°, РїР°СЂРµРЅСЊ! Р—Р° РЎРїСЏС‰РµРіРѕ!
 
 	AI_StopProcessInfos	( self );
 

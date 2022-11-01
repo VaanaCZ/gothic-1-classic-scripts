@@ -1,4 +1,4 @@
-// ZS-KONSTANTEN F‹R ITEMSTATUS
+// ZS-KONSTANTEN F–¨R ITEMSTATUS
     
 const int	TA_IT_NONE			    = 0;
 const int	TA_IT_APPLE		    	= 1;
@@ -16,9 +16,9 @@ const int	TA_IT_SMALLTALK_PASSIVE	= 12;
 const int	TA_IT_SMALLTALK			= 13;
 const int	TA_IT_FORCEDSMALLTALK	= 14;
 
-// ABFRAGEN LAGERZUGEH÷RIGKEIT
+// ABFRAGEN LAGERZUGEH–¶RIGKEIT
 
-//Wahrnehmungset ausw‰hlen
+//Wahrnehmungset ausw–¥hlen
 
 //Wach-Anis abspielen
 func void B_InitArmor ()

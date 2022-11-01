@@ -47,13 +47,13 @@ FUNC int  DIA_Fletcher_First_Condition()
 
 func void  DIA_Fletcher_First_Info()
 {
-	AI_Output (self, other,"DIA_Fletcher_First_06_00"); //Эй, ты!
-	AI_Output (other, self,"DIA_Fletcher_First_15_01"); //Кто? Я?
-	AI_Output (self, other,"DIA_Fletcher_First_06_02"); //Ты сам знаешь, к кому я обращаюсь!
-	AI_Output (self, other,"DIA_Fletcher_First_06_03"); //Вот что я тебе скажу, сынок - это МОЙ район. И мне не нужны неприятности!
-	AI_Output (self, other,"DIA_Fletcher_First_06_04"); //Но новички, вроде тебя, всегда становятся их причиной - особенно когда шляются без дела по ночам.
-	AI_Output (self, other,"DIA_Fletcher_First_06_05"); //Так почему бы тебе не отправиться домой и не позаботиться о том чтобы я больше тебя здесь не видел? Как раз напротив арены есть пустой дом - ты узнаешь его по навесу. Отправляйся спать.
-	AI_Output (self, other,"DIA_Fletcher_First_06_06"); //И если я поймаю тебя в какой-нибудь другой хижине, я лично прослежу за тем, чтобы ты очень пожалел об этом.
+	AI_Output (self, other,"DIA_Fletcher_First_06_00"); //Р­Р№, С‚С‹!
+	AI_Output (other, self,"DIA_Fletcher_First_15_01"); //РљС‚Рѕ? РЇ?
+	AI_Output (self, other,"DIA_Fletcher_First_06_02"); //РўС‹ СЃР°Рј Р·РЅР°РµС€СЊ, Рє РєРѕРјСѓ СЏ РѕР±СЂР°С‰Р°СЋСЃСЊ!
+	AI_Output (self, other,"DIA_Fletcher_First_06_03"); //Р’РѕС‚ С‡С‚Рѕ СЏ С‚РµР±Рµ СЃРєР°Р¶Сѓ, СЃС‹РЅРѕРє - СЌС‚Рѕ РњРћР™ СЂР°Р№РѕРЅ. Р РјРЅРµ РЅРµ РЅСѓР¶РЅС‹ РЅРµРїСЂРёСЏС‚РЅРѕСЃС‚Рё!
+	AI_Output (self, other,"DIA_Fletcher_First_06_04"); //РќРѕ РЅРѕРІРёС‡РєРё, РІСЂРѕРґРµ С‚РµР±СЏ, РІСЃРµРіРґР° СЃС‚Р°РЅРѕРІСЏС‚СЃСЏ РёС… РїСЂРёС‡РёРЅРѕР№ - РѕСЃРѕР±РµРЅРЅРѕ РєРѕРіРґР° С€Р»СЏСЋС‚СЃСЏ Р±РµР· РґРµР»Р° РїРѕ РЅРѕС‡Р°Рј.
+	AI_Output (self, other,"DIA_Fletcher_First_06_05"); //РўР°Рє РїРѕС‡РµРјСѓ Р±С‹ С‚РµР±Рµ РЅРµ РѕС‚РїСЂР°РІРёС‚СЊСЃСЏ РґРѕРјРѕР№ Рё РЅРµ РїРѕР·Р°Р±РѕС‚РёС‚СЊСЃСЏ Рѕ С‚РѕРј С‡С‚РѕР±С‹ СЏ Р±РѕР»СЊС€Рµ С‚РµР±СЏ Р·РґРµСЃСЊ РЅРµ РІРёРґРµР»? РљР°Рє СЂР°Р· РЅР°РїСЂРѕС‚РёРІ Р°СЂРµРЅС‹ РµСЃС‚СЊ РїСѓСЃС‚РѕР№ РґРѕРј - С‚С‹ СѓР·РЅР°РµС€СЊ РµРіРѕ РїРѕ РЅР°РІРµСЃСѓ. РћС‚РїСЂР°РІР»СЏР№СЃСЏ СЃРїР°С‚СЊ.
+	AI_Output (self, other,"DIA_Fletcher_First_06_06"); //Р РµСЃР»Рё СЏ РїРѕР№РјР°СЋ С‚РµР±СЏ РІ РєР°РєРѕР№-РЅРёР±СѓРґСЊ РґСЂСѓРіРѕР№ С…РёР¶РёРЅРµ, СЏ Р»РёС‡РЅРѕ РїСЂРѕСЃР»РµР¶Сѓ Р·Р° С‚РµРј, С‡С‚РѕР±С‹ С‚С‹ РѕС‡РµРЅСЊ РїРѕР¶Р°Р»РµР» РѕР± СЌС‚РѕРј.
 	
 	AI_StopProcessInfos	(self);
 };
@@ -84,35 +84,35 @@ FUNC int  DIA_Fletcher_Hello_Condition()
 
 func void  DIA_Fletcher_Hello_Info()
 {
-	AI_Output (other, self,"DIA_Fletcher_Hello_15_00"); //Эй, ты!
-	AI_Output (self, other,"DIA_Fletcher_Hello_06_01"); //Если собираешься заплатить за защиту, ты выбрал для этого неправильный день. 
-	AI_Output (other, self,"DIA_Fletcher_Hello_15_02"); //Да? И почему?
-	AI_Output (self, other,"DIA_Fletcher_Hello_06_03"); //Потому что меня здесь нет.
+	AI_Output (other, self,"DIA_Fletcher_Hello_15_00"); //Р­Р№, С‚С‹!
+	AI_Output (self, other,"DIA_Fletcher_Hello_06_01"); //Р•СЃР»Рё СЃРѕР±РёСЂР°РµС€СЊСЃСЏ Р·Р°РїР»Р°С‚РёС‚СЊ Р·Р° Р·Р°С‰РёС‚Сѓ, С‚С‹ РІС‹Р±СЂР°Р» РґР»СЏ СЌС‚РѕРіРѕ РЅРµРїСЂР°РІРёР»СЊРЅС‹Р№ РґРµРЅСЊ. 
+	AI_Output (other, self,"DIA_Fletcher_Hello_15_02"); //Р”Р°? Р РїРѕС‡РµРјСѓ?
+	AI_Output (self, other,"DIA_Fletcher_Hello_06_03"); //РџРѕС‚РѕРјСѓ С‡С‚Рѕ РјРµРЅСЏ Р·РґРµСЃСЊ РЅРµС‚.
 	
 	Info_ClearChoices	(DIA_Fletcher_Hello);
-	Info_AddChoice		(DIA_Fletcher_Hello,"Понятно.",DIA_Fletcher_Hello_ISee);
-	Info_AddChoice		(DIA_Fletcher_Hello,"Тогда почему же я с тобой разговариваю?",DIA_Fletcher_Hello_WhyTalk);
-	Info_AddChoice		(DIA_Fletcher_Hello,"А-а. И где же ты в таком случае?",DIA_Fletcher_Hello_WhereElse);
+	Info_AddChoice		(DIA_Fletcher_Hello,"РџРѕРЅСЏС‚РЅРѕ.",DIA_Fletcher_Hello_ISee);
+	Info_AddChoice		(DIA_Fletcher_Hello,"РўРѕРіРґР° РїРѕС‡РµРјСѓ Р¶Рµ СЏ СЃ С‚РѕР±РѕР№ СЂР°Р·РіРѕРІР°СЂРёРІР°СЋ?",DIA_Fletcher_Hello_WhyTalk);
+	Info_AddChoice		(DIA_Fletcher_Hello,"Рђ-Р°. Р РіРґРµ Р¶Рµ С‚С‹ РІ С‚Р°РєРѕРј СЃР»СѓС‡Р°Рµ?",DIA_Fletcher_Hello_WhereElse);
 };
 
 func void DIA_Fletcher_Hello_WhereElse()
 {
-	AI_Output (other, self,"DIA_Fletcher_Hello_WhereElse_15_00"); //А-а. И где же ты в таком случае?
-	AI_Output (self, other,"DIA_Fletcher_Hello_WhereElse_06_01"); //Я в замке, сижу возле большого костра, в руках кубок с пивом.
+	AI_Output (other, self,"DIA_Fletcher_Hello_WhereElse_15_00"); //Рђ-Р°. Р РіРґРµ Р¶Рµ С‚С‹ РІ С‚Р°РєРѕРј СЃР»СѓС‡Р°Рµ?
+	AI_Output (self, other,"DIA_Fletcher_Hello_WhereElse_06_01"); //РЇ РІ Р·Р°РјРєРµ, СЃРёР¶Сѓ РІРѕР·Р»Рµ Р±РѕР»СЊС€РѕРіРѕ РєРѕСЃС‚СЂР°, РІ СЂСѓРєР°С… РєСѓР±РѕРє СЃ РїРёРІРѕРј.
 };
 
 func void DIA_Fletcher_Hello_WhyTalk()
 {
-	AI_Output (other, self,"DIA_Fletcher_Hello_WhyTalk_15_00"); //Тогда почему же я с тобой разговариваю?
-	AI_Output (self, other,"DIA_Fletcher_Hello_WhyTalk_06_01"); //Да потому что Нек пропал, а это его район.
-	AI_Output (self, other,"DIA_Fletcher_Hello_WhyTalk_06_02"); //И до тех пор, пока он не появится, Торус приказал МНЕ стоять на страже.
+	AI_Output (other, self,"DIA_Fletcher_Hello_WhyTalk_15_00"); //РўРѕРіРґР° РїРѕС‡РµРјСѓ Р¶Рµ СЏ СЃ С‚РѕР±РѕР№ СЂР°Р·РіРѕРІР°СЂРёРІР°СЋ?
+	AI_Output (self, other,"DIA_Fletcher_Hello_WhyTalk_06_01"); //Р”Р° РїРѕС‚РѕРјСѓ С‡С‚Рѕ РќРµРє РїСЂРѕРїР°Р», Р° СЌС‚Рѕ РµРіРѕ СЂР°Р№РѕРЅ.
+	AI_Output (self, other,"DIA_Fletcher_Hello_WhyTalk_06_02"); //Р РґРѕ С‚РµС… РїРѕСЂ, РїРѕРєР° РѕРЅ РЅРµ РїРѕСЏРІРёС‚СЃСЏ, РўРѕСЂСѓСЃ РїСЂРёРєР°Р·Р°Р» РњРќР• СЃС‚РѕСЏС‚СЊ РЅР° СЃС‚СЂР°Р¶Рµ.
 	fletcher_whytalk = TRUE;
 	Info_ClearChoices	(DIA_Fletcher_Hello);
 };
 
 func void DIA_Fletcher_Hello_ISee()
 {
-	AI_Output (other, self,"DIA_Fletcher_Hello_ISee_15_00"); //Понятно.
+	AI_Output (other, self,"DIA_Fletcher_Hello_ISee_15_00"); //РџРѕРЅСЏС‚РЅРѕ.
 	Info_ClearChoices	(DIA_Fletcher_Hello);
 };
 
@@ -127,7 +127,7 @@ instance DIA_Fletcher_WoNek (C_INFO)
 	condition		= DIA_Fletcher_WoNek_Condition;
 	information		= DIA_Fletcher_WoNek_Info;
 	permanent		= 0;
-	description		= "Не знаешь, где сейчас может быть Нек?";
+	description		= "РќРµ Р·РЅР°РµС€СЊ, РіРґРµ СЃРµР№С‡Р°СЃ РјРѕР¶РµС‚ Р±С‹С‚СЊ РќРµРє?";
 };
 
 func int DIA_Fletcher_WoNek_Condition()
@@ -140,14 +140,14 @@ func int DIA_Fletcher_WoNek_Condition()
 
 func void  DIA_Fletcher_WoNek_Info()
 {
-	AI_Output (other, self,"DIA_Fletcher_WoNek_15_00"); //Не знаешь, где сейчас может быть Нек?
-	AI_Output (self, other,"DIA_Fletcher_WoNek_06_01"); //Не знаю, да и узнать неоткуда.
-	AI_Output (self, other,"DIA_Fletcher_WoNek_06_02"); //По-любому, местные рудокопы должны что-то знать, вот только не будут они говорить со стражником.
-	AI_Output (self, other,"DIA_Fletcher_WoNek_06_03"); //Особенно сейчас - ведь они знают, как я ненавижу эту чертову работу. Уверен, они смеются у меня за спиной! 
+	AI_Output (other, self,"DIA_Fletcher_WoNek_15_00"); //РќРµ Р·РЅР°РµС€СЊ, РіРґРµ СЃРµР№С‡Р°СЃ РјРѕР¶РµС‚ Р±С‹С‚СЊ РќРµРє?
+	AI_Output (self, other,"DIA_Fletcher_WoNek_06_01"); //РќРµ Р·РЅР°СЋ, РґР° Рё СѓР·РЅР°С‚СЊ РЅРµРѕС‚РєСѓРґР°.
+	AI_Output (self, other,"DIA_Fletcher_WoNek_06_02"); //РџРѕ-Р»СЋР±РѕРјСѓ, РјРµСЃС‚РЅС‹Рµ СЂСѓРґРѕРєРѕРїС‹ РґРѕР»Р¶РЅС‹ С‡С‚Рѕ-С‚Рѕ Р·РЅР°С‚СЊ, РІРѕС‚ С‚РѕР»СЊРєРѕ РЅРµ Р±СѓРґСѓС‚ РѕРЅРё РіРѕРІРѕСЂРёС‚СЊ СЃРѕ СЃС‚СЂР°Р¶РЅРёРєРѕРј.
+	AI_Output (self, other,"DIA_Fletcher_WoNek_06_03"); //РћСЃРѕР±РµРЅРЅРѕ СЃРµР№С‡Р°СЃ - РІРµРґСЊ РѕРЅРё Р·РЅР°СЋС‚, РєР°Рє СЏ РЅРµРЅР°РІРёР¶Сѓ СЌС‚Сѓ С‡РµСЂС‚РѕРІСѓ СЂР°Р±РѕС‚Сѓ. РЈРІРµСЂРµРЅ, РѕРЅРё СЃРјРµСЋС‚СЃСЏ Сѓ РјРµРЅСЏ Р·Р° СЃРїРёРЅРѕР№! 
 	
 	Log_CreateTopic		(CH1_LostNek,	LOG_MISSION);
 	Log_SetTopicStatus	(CH1_LostNek,	LOG_RUNNING);
-	B_LogEntry			(CH1_LostNek,"Может, копатели в районе арены знают, куда пропал Нек.");
+	B_LogEntry			(CH1_LostNek,"РњРѕР¶РµС‚, РєРѕРїР°С‚РµР»Рё РІ СЂР°Р№РѕРЅРµ Р°СЂРµРЅС‹ Р·РЅР°СЋС‚, РєСѓРґР° РїСЂРѕРїР°Р» РќРµРє.");
 };
 
 // ************************************************************
@@ -161,7 +161,7 @@ instance DIA_Fletcher_TroSchu (C_INFO)
 	condition		= DIA_Fletcher_TroSchu_Condition;
 	information		= DIA_Fletcher_TroSchu_Info;
 	permanent		= 0;
-	description		= "Почему бы тебе в отместку не собрать с них еще денег за защиту?";
+	description		= "РџРѕС‡РµРјСѓ Р±С‹ С‚РµР±Рµ РІ РѕС‚РјРµСЃС‚РєСѓ РЅРµ СЃРѕР±СЂР°С‚СЊ СЃ РЅРёС… РµС‰Рµ РґРµРЅРµРі Р·Р° Р·Р°С‰РёС‚Сѓ?";
 };
 
 FUNC int  DIA_Fletcher_TroSchu_Condition()
@@ -174,8 +174,8 @@ FUNC int  DIA_Fletcher_TroSchu_Condition()
 
 func void  DIA_Fletcher_TroSchu_Info()
 {
-	AI_Output (other, self,"DIA_Fletcher_TroSchu_15_00"); //Почему бы тебе в отместку не собрать с них еще денег за защиту?
-	AI_Output (self, other,"DIA_Fletcher_TroSchu_06_01"); //Нек уже сделал обход, прежде чем исчезнуть. Теперь у них в карманах пусто.
+	AI_Output (other, self,"DIA_Fletcher_TroSchu_15_00"); //РџРѕС‡РµРјСѓ Р±С‹ С‚РµР±Рµ РІ РѕС‚РјРµСЃС‚РєСѓ РЅРµ СЃРѕР±СЂР°С‚СЊ СЃ РЅРёС… РµС‰Рµ РґРµРЅРµРі Р·Р° Р·Р°С‰РёС‚Сѓ?
+	AI_Output (self, other,"DIA_Fletcher_TroSchu_06_01"); //РќРµРє СѓР¶Рµ СЃРґРµР»Р°Р» РѕР±С…РѕРґ, РїСЂРµР¶РґРµ С‡РµРј РёСЃС‡РµР·РЅСѓС‚СЊ. РўРµРїРµСЂСЊ Сѓ РЅРёС… РІ РєР°СЂРјР°РЅР°С… РїСѓСЃС‚Рѕ.
 };
 
 // ************************************************************
@@ -191,7 +191,7 @@ instance DIA_Fletcher_WegenNek (C_INFO)
 	condition		= DIA_Fletcher_WegenNek_Condition;
 	information		= DIA_Fletcher_WegenNek_Info;
 	permanent		= 1;
-	description		= "Я по поводу Нека...";
+	description		= "РЇ РїРѕ РїРѕРІРѕРґСѓ РќРµРєР°...";
 };
 
 FUNC int  DIA_Fletcher_WegenNek_Condition()
@@ -204,24 +204,24 @@ FUNC int  DIA_Fletcher_WegenNek_Condition()
 
 func void  DIA_Fletcher_WegenNek_Info()
 {
-	AI_Output (other, self,"DIA_Fletcher_WegenNek_15_00"); //Я по поводу Нека...
-	AI_Output (self, other,"DIA_Fletcher_WegenNek_06_01"); //Да?
+	AI_Output (other, self,"DIA_Fletcher_WegenNek_15_00"); //РЇ РїРѕ РїРѕРІРѕРґСѓ РќРµРєР°...
+	AI_Output (self, other,"DIA_Fletcher_WegenNek_06_01"); //Р”Р°?
 	
 	var C_NPC Nek; Nek = Hlp_GetNpc(Grd_282_Nek);
 	
 	if ( (Sly_LostNek == LOG_SUCCESS) || (!Hlp_IsValidNpc(Nek)) )
 	{
-		AI_Output (other, self,"DIA_Fletcher_WegenNek_15_02"); //Думаю, я нашел его.
-		AI_Output (self, other,"DIA_Fletcher_WegenNek_06_03"); //Что? Где он?
-		AI_Output (other, self,"DIA_Fletcher_WegenNek_15_04"); //Кормит крыс...
-		AI_Output (self, other,"DIA_Fletcher_WegenNek_06_05"); //О, нет! Проклятье! Значит, теперь я останусь здесь насовсем. Я так надеялся, что он вернется!
-		AI_Output (self, other,"DIA_Fletcher_WegenNek_06_06"); //Теперь у меня появилась проблема.
+		AI_Output (other, self,"DIA_Fletcher_WegenNek_15_02"); //Р”СѓРјР°СЋ, СЏ РЅР°С€РµР» РµРіРѕ.
+		AI_Output (self, other,"DIA_Fletcher_WegenNek_06_03"); //Р§С‚Рѕ? Р“РґРµ РѕРЅ?
+		AI_Output (other, self,"DIA_Fletcher_WegenNek_15_04"); //РљРѕСЂРјРёС‚ РєСЂС‹СЃ...
+		AI_Output (self, other,"DIA_Fletcher_WegenNek_06_05"); //Рћ, РЅРµС‚! РџСЂРѕРєР»СЏС‚СЊРµ! Р—РЅР°С‡РёС‚, С‚РµРїРµСЂСЊ СЏ РѕСЃС‚Р°РЅСѓСЃСЊ Р·РґРµСЃСЊ РЅР°СЃРѕРІСЃРµРј. РЇ С‚Р°Рє РЅР°РґРµСЏР»СЃСЏ, С‡С‚Рѕ РѕРЅ РІРµСЂРЅРµС‚СЃСЏ!
+		AI_Output (self, other,"DIA_Fletcher_WegenNek_06_06"); //РўРµРїРµСЂСЊ Сѓ РјРµРЅСЏ РїРѕСЏРІРёР»Р°СЃСЊ РїСЂРѕР±Р»РµРјР°.
 		fletcher_foundNek = TRUE;
 	}
 	else
 	{
-		AI_Output (other, self,"DIA_Fletcher_WegenNek_15_07"); //Никаких новостей.
-		AI_Output (self, other,"DIA_Fletcher_WegenNek_06_08"); //Держи меня в курсе.
+		AI_Output (other, self,"DIA_Fletcher_WegenNek_15_07"); //РќРёРєР°РєРёС… РЅРѕРІРѕСЃС‚РµР№.
+		AI_Output (self, other,"DIA_Fletcher_WegenNek_06_08"); //Р”РµСЂР¶Рё РјРµРЅСЏ РІ РєСѓСЂСЃРµ.
 	};
 };
 
@@ -236,7 +236,7 @@ instance DIA_Fletcher_Problem (C_INFO)
 	condition		= DIA_Fletcher_Problem_Condition;
 	information		= DIA_Fletcher_Problem_Info;
 	permanent		= 0;
-	description		= "Эй, в чем проблема?";
+	description		= "Р­Р№, РІ С‡РµРј РїСЂРѕР±Р»РµРјР°?";
 };
 
 FUNC int  DIA_Fletcher_Problem_Condition()
@@ -249,8 +249,8 @@ FUNC int  DIA_Fletcher_Problem_Condition()
 
 func void  DIA_Fletcher_Problem_Info()
 {
-	AI_Output (other, self,"DIA_Fletcher_Problem_15_00"); //Какая проблема?
-	AI_Output (self, other,"DIA_Fletcher_Problem_06_01"); //Я по уши в долгах перед Скатти. Теперь он узнает, что я занял место Нека, и будет приходить сюда каждый день...
+	AI_Output (other, self,"DIA_Fletcher_Problem_15_00"); //РљР°РєР°СЏ РїСЂРѕР±Р»РµРјР°?
+	AI_Output (self, other,"DIA_Fletcher_Problem_06_01"); //РЇ РїРѕ СѓС€Рё РІ РґРѕР»РіР°С… РїРµСЂРµРґ РЎРєР°С‚С‚Рё. РўРµРїРµСЂСЊ РѕРЅ СѓР·РЅР°РµС‚, С‡С‚Рѕ СЏ Р·Р°РЅСЏР» РјРµСЃС‚Рѕ РќРµРєР°, Рё Р±СѓРґРµС‚ РїСЂРёС…РѕРґРёС‚СЊ СЃСЋРґР° РєР°Р¶РґС‹Р№ РґРµРЅСЊ...
 };	
 
 
@@ -294,7 +294,7 @@ FUNC int  Grd_255_Fletcher_WELCOME_Condition()
 };
 func void  Grd_255_Fletcher_WELCOME_Info()
 {
-	AI_Output (self, other,"Grd_255_Fletcher_WELCOME_Info_06_01"); //Ты быстро нашел здесь свое место. Добро пожаловать в Стражу!
+	AI_Output (self, other,"Grd_255_Fletcher_WELCOME_Info_06_01"); //РўС‹ Р±С‹СЃС‚СЂРѕ РЅР°С€РµР» Р·РґРµСЃСЊ СЃРІРѕРµ РјРµСЃС‚Рѕ. Р”РѕР±СЂРѕ РїРѕР¶Р°Р»РѕРІР°С‚СЊ РІ РЎС‚СЂР°Р¶Сѓ!
 };
 
 //#####################################################################
@@ -335,64 +335,64 @@ FUNC VOID Info_Fletcher_DIE_Info()
 	{
 		if (oldHeroGuild == GIL_GRD)
 		{
-			AI_Output	(self,hero,"Info_Fletcher_DIE_06_01"); //Предатель! Подумать только - мы позволили тебе стать одним из стражников!
+			AI_Output	(self,hero,"Info_Fletcher_DIE_06_01"); //РџСЂРµРґР°С‚РµР»СЊ! РџРѕРґСѓРјР°С‚СЊ С‚РѕР»СЊРєРѕ - РјС‹ РїРѕР·РІРѕР»РёР»Рё С‚РµР±Рµ СЃС‚Р°С‚СЊ РѕРґРЅРёРј РёР· СЃС‚СЂР°Р¶РЅРёРєРѕРІ!
 		}
 		else if (oldHeroGuild == GIL_KDF)
 		{
-			AI_Output	(self,hero,"Info_Fletcher_DIE_06_02"); //Это один из предателей-магов!
+			AI_Output	(self,hero,"Info_Fletcher_DIE_06_02"); //Р­С‚Рѕ РѕРґРёРЅ РёР· РїСЂРµРґР°С‚РµР»РµР№-РјР°РіРѕРІ!
 		}
 		else
 		{
-			AI_Output	(self,hero,"Info_Fletcher_DIE_06_03"); //Привет, предатель! Пусть ты и один из Призраков Гомеза - тебе это не поможет!
+			AI_Output	(self,hero,"Info_Fletcher_DIE_06_03"); //РџСЂРёРІРµС‚, РїСЂРµРґР°С‚РµР»СЊ! РџСѓСЃС‚СЊ С‚С‹ Рё РѕРґРёРЅ РёР· РџСЂРёР·СЂР°РєРѕРІ Р“РѕРјРµР·Р° - С‚РµР±Рµ СЌС‚Рѕ РЅРµ РїРѕРјРѕР¶РµС‚!
 		};			
 
-		AI_Output		(hero,self,"Info_Fletcher_DIE_15_04"); //Эй, Флетчер, о чем ты говоришь?
-		AI_Output		(self,hero,"Info_Fletcher_DIE_06_05"); //Ты в сговоре с этим отребьем из Нового Лагеря, ведь так?
-		AI_Output		(hero,self,"Info_Fletcher_DIE_15_06"); //Постой...
-		AI_Output		(self,hero,"Info_Fletcher_DIE_06_07"); //Полагаю, ты думал, что никто и не догадается, а?
-		AI_Output		(hero,self,"Info_Fletcher_DIE_15_08"); //Ух ты... Попридержи-ка коней!
-		AI_Output		(self,hero,"Info_Fletcher_DIE_06_09"); //Нет, лучше уж ты попридержи свою голову - потому что скоро ты ее лишишься!
-		AI_Output		(self,hero,"Info_Fletcher_DIE_06_10"); //УМРИ, ПРЕДАТЕЛЬ!!!
+		AI_Output		(hero,self,"Info_Fletcher_DIE_15_04"); //Р­Р№, Р¤Р»РµС‚С‡РµСЂ, Рѕ С‡РµРј С‚С‹ РіРѕРІРѕСЂРёС€СЊ?
+		AI_Output		(self,hero,"Info_Fletcher_DIE_06_05"); //РўС‹ РІ СЃРіРѕРІРѕСЂРµ СЃ СЌС‚РёРј РѕС‚СЂРµР±СЊРµРј РёР· РќРѕРІРѕРіРѕ Р›Р°РіРµСЂСЏ, РІРµРґСЊ С‚Р°Рє?
+		AI_Output		(hero,self,"Info_Fletcher_DIE_15_06"); //РџРѕСЃС‚РѕР№...
+		AI_Output		(self,hero,"Info_Fletcher_DIE_06_07"); //РџРѕР»Р°РіР°СЋ, С‚С‹ РґСѓРјР°Р», С‡С‚Рѕ РЅРёРєС‚Рѕ Рё РЅРµ РґРѕРіР°РґР°РµС‚СЃСЏ, Р°?
+		AI_Output		(hero,self,"Info_Fletcher_DIE_15_08"); //РЈС… С‚С‹... РџРѕРїСЂРёРґРµСЂР¶Рё-РєР° РєРѕРЅРµР№!
+		AI_Output		(self,hero,"Info_Fletcher_DIE_06_09"); //РќРµС‚, Р»СѓС‡С€Рµ СѓР¶ С‚С‹ РїРѕРїСЂРёРґРµСЂР¶Рё СЃРІРѕСЋ РіРѕР»РѕРІСѓ - РїРѕС‚РѕРјСѓ С‡С‚Рѕ СЃРєРѕСЂРѕ С‚С‹ РµРµ Р»РёС€РёС€СЊСЃСЏ!
+		AI_Output		(self,hero,"Info_Fletcher_DIE_06_10"); //РЈРњР Р, РџР Р•Р”РђРўР•Р›Р¬!!!
 
 		if	Npc_KnowsInfo(hero, Info_Bloodwyn_DIE)
 		{
-			B_LogEntry			(CH4_BannedFromOC,"Бладвин окопался у задних ворот. Он отреагировал точно так же, как и Флетчер. Я не знаю точно, почему, должно быть, это как-то связано с моими поисками юнитора для Нового Лагеря.");
+			B_LogEntry			(CH4_BannedFromOC,"Р‘Р»Р°РґРІРёРЅ РѕРєРѕРїР°Р»СЃСЏ Сѓ Р·Р°РґРЅРёС… РІРѕСЂРѕС‚. РћРЅ РѕС‚СЂРµР°РіРёСЂРѕРІР°Р» С‚РѕС‡РЅРѕ С‚Р°Рє Р¶Рµ, РєР°Рє Рё Р¤Р»РµС‚С‡РµСЂ. РЇ РЅРµ Р·РЅР°СЋ С‚РѕС‡РЅРѕ, РїРѕС‡РµРјСѓ, РґРѕР»Р¶РЅРѕ Р±С‹С‚СЊ, СЌС‚Рѕ РєР°Рє-С‚Рѕ СЃРІСЏР·Р°РЅРѕ СЃ РјРѕРёРјРё РїРѕРёСЃРєР°РјРё СЋРЅРёС‚РѕСЂР° РґР»СЏ РќРѕРІРѕРіРѕ Р›Р°РіРµСЂСЏ.");
 		}
 		else if	(Npc_GetTrueGuild(hero) == GIL_NONE)
 		{
 			Log_CreateTopic		(CH4_BannedFromOC,	LOG_MISSION);
 			Log_SetTopicStatus	(CH4_BannedFromOC,	LOG_RUNNING);
-			B_LogEntry			(CH4_BannedFromOC,"Флетчер, охраняющий основные ворота, назвал меня предателем и перебежчиком. Он не стал слушать меня и тут же напал!");
-			B_LogEntry			(CH4_BannedFromOC,"Похоже, меня изгнали из Старого Лагеря!");
+			B_LogEntry			(CH4_BannedFromOC,"Р¤Р»РµС‚С‡РµСЂ, РѕС…СЂР°РЅСЏСЋС‰РёР№ РѕСЃРЅРѕРІРЅС‹Рµ РІРѕСЂРѕС‚Р°, РЅР°Р·РІР°Р» РјРµРЅСЏ РїСЂРµРґР°С‚РµР»РµРј Рё РїРµСЂРµР±РµР¶С‡РёРєРѕРј. РћРЅ РЅРµ СЃС‚Р°Р» СЃР»СѓС€Р°С‚СЊ РјРµРЅСЏ Рё С‚СѓС‚ Р¶Рµ РЅР°РїР°Р»!");
+			B_LogEntry			(CH4_BannedFromOC,"РџРѕС…РѕР¶Рµ, РјРµРЅСЏ РёР·РіРЅР°Р»Рё РёР· РЎС‚Р°СЂРѕРіРѕ Р›Р°РіРµСЂСЏ!");
 		};
 	}
 	else
 	{
 		if (C_NpcBelongsToNewCamp(hero))
 		{
-			AI_Output	(self,hero,"Info_Fletcher_DIE_06_11"); //Ты только посмотри - парень из Нового Лагеря!
+			AI_Output	(self,hero,"Info_Fletcher_DIE_06_11"); //РўС‹ С‚РѕР»СЊРєРѕ РїРѕСЃРјРѕС‚СЂРё - РїР°СЂРµРЅСЊ РёР· РќРѕРІРѕРіРѕ Р›Р°РіРµСЂСЏ!
 		}
 		else
 		{
-			AI_Output	(self,hero,"Info_Fletcher_DIE_06_12"); //Ты только посмотри - парень из Болотного Лагеря!
+			AI_Output	(self,hero,"Info_Fletcher_DIE_06_12"); //РўС‹ С‚РѕР»СЊРєРѕ РїРѕСЃРјРѕС‚СЂРё - РїР°СЂРµРЅСЊ РёР· Р‘РѕР»РѕС‚РЅРѕРіРѕ Р›Р°РіРµСЂСЏ!
 		};
 
-		AI_Output		(hero,self,"Info_Fletcher_DIE_15_13"); //И что? Какое тебе до этого дело?
-		AI_Output		(self,hero,"Info_Fletcher_DIE_06_14"); //Скоро нам будет принадлежать ваша шахта.
-		AI_Output		(hero,self,"Info_Fletcher_DIE_15_15"); //Да? Мечтай дальше!
-		AI_Output		(self,hero,"Info_Fletcher_DIE_06_16"); //Но сам понимаешь - теперь я не могу позволить тебе болтать об этом на каждом углу!
-		AI_Output		(hero,self,"Info_Fletcher_DIE_15_17"); //Постой, мне не нужны неприятности.
-		AI_Output		(self,hero,"Info_Fletcher_DIE_06_18"); //Тебе стоило подумать об этом, прежде чем приходить сюда!
-		AI_Output		(hero,self,"Info_Fletcher_DIE_15_19"); //Эй, какого...
-		AI_Output		(self,hero,"Info_Fletcher_DIE_06_20"); //Вперед, парни, взять его!
+		AI_Output		(hero,self,"Info_Fletcher_DIE_15_13"); //Р С‡С‚Рѕ? РљР°РєРѕРµ С‚РµР±Рµ РґРѕ СЌС‚РѕРіРѕ РґРµР»Рѕ?
+		AI_Output		(self,hero,"Info_Fletcher_DIE_06_14"); //РЎРєРѕСЂРѕ РЅР°Рј Р±СѓРґРµС‚ РїСЂРёРЅР°РґР»РµР¶Р°С‚СЊ РІР°С€Р° С€Р°С…С‚Р°.
+		AI_Output		(hero,self,"Info_Fletcher_DIE_15_15"); //Р”Р°? РњРµС‡С‚Р°Р№ РґР°Р»СЊС€Рµ!
+		AI_Output		(self,hero,"Info_Fletcher_DIE_06_16"); //РќРѕ СЃР°Рј РїРѕРЅРёРјР°РµС€СЊ - С‚РµРїРµСЂСЊ СЏ РЅРµ РјРѕРіСѓ РїРѕР·РІРѕР»РёС‚СЊ С‚РµР±Рµ Р±РѕР»С‚Р°С‚СЊ РѕР± СЌС‚РѕРј РЅР° РєР°Р¶РґРѕРј СѓРіР»Сѓ!
+		AI_Output		(hero,self,"Info_Fletcher_DIE_15_17"); //РџРѕСЃС‚РѕР№, РјРЅРµ РЅРµ РЅСѓР¶РЅС‹ РЅРµРїСЂРёСЏС‚РЅРѕСЃС‚Рё.
+		AI_Output		(self,hero,"Info_Fletcher_DIE_06_18"); //РўРµР±Рµ СЃС‚РѕРёР»Рѕ РїРѕРґСѓРјР°С‚СЊ РѕР± СЌС‚РѕРј, РїСЂРµР¶РґРµ С‡РµРј РїСЂРёС…РѕРґРёС‚СЊ СЃСЋРґР°!
+		AI_Output		(hero,self,"Info_Fletcher_DIE_15_19"); //Р­Р№, РєР°РєРѕРіРѕ...
+		AI_Output		(self,hero,"Info_Fletcher_DIE_06_20"); //Р’РїРµСЂРµРґ, РїР°СЂРЅРё, РІР·СЏС‚СЊ РµРіРѕ!
 	};
 
-	Npc_ExchangeRoutine	(self,	"FMTaken2");				// Verstдrkung vor das Haupttor (Anfьhrer)
-	B_ExchangeRoutine	(GRD_252_Gardist,	"FMTaken2");	// Verstдrkung vor das Haupttor
-	B_ExchangeRoutine	(GRD_253_Gardist,	"FMTaken2");	// Verstдrkung vor das Haupttor
-	B_ExchangeRoutine	(GRD_244_Gardist,	"FMTaken2");	// Verstдrkung vor das Haupttor (Fernkдmpfer)
-	B_ExchangeRoutine	(GRD_214_Torwache,	"FMTaken2");	// regulдre Wache am Haupttor
-	B_ExchangeRoutine	(GRD_215_Torwache,	"FMTaken2");	// regulдre Wache am Haupttor
+	Npc_ExchangeRoutine	(self,	"FMTaken2");				// VerstРґrkung vor das Haupttor (AnfСЊhrer)
+	B_ExchangeRoutine	(GRD_252_Gardist,	"FMTaken2");	// VerstРґrkung vor das Haupttor
+	B_ExchangeRoutine	(GRD_253_Gardist,	"FMTaken2");	// VerstРґrkung vor das Haupttor
+	B_ExchangeRoutine	(GRD_244_Gardist,	"FMTaken2");	// VerstРґrkung vor das Haupttor (FernkРґmpfer)
+	B_ExchangeRoutine	(GRD_214_Torwache,	"FMTaken2");	// regulРґre Wache am Haupttor
+	B_ExchangeRoutine	(GRD_215_Torwache,	"FMTaken2");	// regulРґre Wache am Haupttor
 
 	B_SetPermAttitude	(GRD_255_Fletcher,	ATT_HOSTILE);
 	B_SetPermAttitude	(GRD_252_Gardist,	ATT_HOSTILE);
@@ -403,7 +403,7 @@ FUNC VOID Info_Fletcher_DIE_Info()
 	
 	if	!Npc_KnowsInfo(hero, Info_Bloodwyn_DIE)
 	{
-		B_LogEntry		(CH4_Firemages,"Ворота Старого Лагеря теперь закрыты и охраняются стражниками. Они атакуют любого, кто подходит близко.");
+		B_LogEntry		(CH4_Firemages,"Р’РѕСЂРѕС‚Р° РЎС‚Р°СЂРѕРіРѕ Р›Р°РіРµСЂСЏ С‚РµРїРµСЂСЊ Р·Р°РєСЂС‹С‚С‹ Рё РѕС…СЂР°РЅСЏСЋС‚СЃСЏ СЃС‚СЂР°Р¶РЅРёРєР°РјРё. РћРЅРё Р°С‚Р°РєСѓСЋС‚ Р»СЋР±РѕРіРѕ, РєС‚Рѕ РїРѕРґС…РѕРґРёС‚ Р±Р»РёР·РєРѕ.");
 	};
 	
 	AI_StopProcessInfos	(self);

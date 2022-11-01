@@ -33,7 +33,7 @@ INSTANCE DIA_Vlk_534_LeaveMe (C_INFO)
 	condition		= DIA_Vlk_534_LeaveMe_Condition;
 	information		= DIA_Vlk_534_LeaveMe_Info;
 	permanent		= 1;
-	description		= "Почему ты здесь, а не в Лагере?";
+	description		= "РџРѕС‡РµРјСѓ С‚С‹ Р·РґРµСЃСЊ, Р° РЅРµ РІ Р›Р°РіРµСЂРµ?";
 };
 
 FUNC INT DIA_Vlk_534_LeaveMe_Condition()
@@ -43,9 +43,9 @@ FUNC INT DIA_Vlk_534_LeaveMe_Condition()
 
 FUNC VOID DIA_Vlk_534_LeaveMe_Info()
 {
-	AI_Output (other, self,"DIA_Vlk_534_LeaveMe_15_00"); //Почему ты здесь, а не в Лагере?
-	AI_Output (self, other,"DIA_Vlk_534_LeaveMe_02_01"); //Я жду одного друга из шахты. Он задолжал мне руду.
-	AI_Output (self, other,"DIA_Vlk_534_LeaveMe_02_02"); //А без руды мне нельзя появляться в Лагере, потому что я не смогу заплатить стражникам за защиту, и тогда у меня начнутся большие неприятности.
+	AI_Output (other, self,"DIA_Vlk_534_LeaveMe_15_00"); //РџРѕС‡РµРјСѓ С‚С‹ Р·РґРµСЃСЊ, Р° РЅРµ РІ Р›Р°РіРµСЂРµ?
+	AI_Output (self, other,"DIA_Vlk_534_LeaveMe_02_01"); //РЇ Р¶РґСѓ РѕРґРЅРѕРіРѕ РґСЂСѓРіР° РёР· С€Р°С…С‚С‹. РћРЅ Р·Р°РґРѕР»Р¶Р°Р» РјРЅРµ СЂСѓРґСѓ.
+	AI_Output (self, other,"DIA_Vlk_534_LeaveMe_02_02"); //Рђ Р±РµР· СЂСѓРґС‹ РјРЅРµ РЅРµР»СЊР·СЏ РїРѕСЏРІР»СЏС‚СЊСЃСЏ РІ Р›Р°РіРµСЂРµ, РїРѕС‚РѕРјСѓ С‡С‚Рѕ СЏ РЅРµ СЃРјРѕРіСѓ Р·Р°РїР»Р°С‚РёС‚СЊ СЃС‚СЂР°Р¶РЅРёРєР°Рј Р·Р° Р·Р°С‰РёС‚Сѓ, Рё С‚РѕРіРґР° Сѓ РјРµРЅСЏ РЅР°С‡РЅСѓС‚СЃСЏ Р±РѕР»СЊС€РёРµ РЅРµРїСЂРёСЏС‚РЅРѕСЃС‚Рё.
 
 	AI_StopProcessInfos	(self);
 };

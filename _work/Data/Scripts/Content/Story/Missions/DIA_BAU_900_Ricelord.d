@@ -33,7 +33,7 @@ INSTANCE DIA_Ricelord_Hello (C_INFO)
 	condition	= DIA_Ricelord_Hello_Condition;
 	information	= DIA_Ricelord_Hello_Info;
 	permanent	= 0;
-	description	= "Ты занимаешься рисовыми полями, так?";
+	description	= "РўС‹ Р·Р°РЅРёРјР°РµС€СЊСЃСЏ СЂРёСЃРѕРІС‹РјРё РїРѕР»СЏРјРё, С‚Р°Рє?";
 };                       
 
 FUNC INT DIA_Ricelord_Hello_Condition()
@@ -43,8 +43,8 @@ FUNC INT DIA_Ricelord_Hello_Condition()
 
 FUNC VOID DIA_Ricelord_Hello_Info()
 {	
-	AI_Output (other, self,"DIA_Ricelord_Hello_15_00"); //Ты занимаешься рисовыми полями, так?
-	AI_Output (self, other,"DIA_Ricelord_Hello_12_01"); //Ну и что? Ищешь работу?
+	AI_Output (other, self,"DIA_Ricelord_Hello_15_00"); //РўС‹ Р·Р°РЅРёРјР°РµС€СЊСЃСЏ СЂРёСЃРѕРІС‹РјРё РїРѕР»СЏРјРё, С‚Р°Рє?
+	AI_Output (self, other,"DIA_Ricelord_Hello_12_01"); //РќСѓ Рё С‡С‚Рѕ? РС‰РµС€СЊ СЂР°Р±РѕС‚Сѓ?
 };
 
 // ************************************************************
@@ -58,7 +58,7 @@ INSTANCE DIA_Ricelord_Arbeit (C_INFO)
 	condition	= DIA_Ricelord_Arbeit_Condition;
 	information	= DIA_Ricelord_Arbeit_Info;
 	permanent	= 0;
-	description	= "А для меня не найдется работы?";
+	description	= "Рђ РґР»СЏ РјРµРЅСЏ РЅРµ РЅР°Р№РґРµС‚СЃСЏ СЂР°Р±РѕС‚С‹?";
 };                       
 
 FUNC INT DIA_Ricelord_Arbeit_Condition()
@@ -73,8 +73,8 @@ FUNC INT DIA_Ricelord_Arbeit_Condition()
 
 FUNC VOID DIA_Ricelord_Arbeit_Info()
 {	
-	AI_Output (other, self,"DIA_Ricelord_Arbeit_15_00"); //А у тебя есть для меня работа?
-	AI_Output (self, other,"DIA_Ricelord_Arbeit_12_01"); //Пойди поговори с Лефти. Скорее всего ты найдешь его справа от сарая.
+	AI_Output (other, self,"DIA_Ricelord_Arbeit_15_00"); //Рђ Сѓ С‚РµР±СЏ РµСЃС‚СЊ РґР»СЏ РјРµРЅСЏ СЂР°Р±РѕС‚Р°?
+	AI_Output (self, other,"DIA_Ricelord_Arbeit_12_01"); //РџРѕР№РґРё РїРѕРіРѕРІРѕСЂРё СЃ Р›РµС„С‚Рё. РЎРєРѕСЂРµРµ РІСЃРµРіРѕ С‚С‹ РЅР°Р№РґРµС€СЊ РµРіРѕ СЃРїСЂР°РІР° РѕС‚ СЃР°СЂР°СЏ.
 };
 
 // ************************************************************
@@ -88,7 +88,7 @@ INSTANCE DIA_Ricelord_TRADE (C_INFO)
 	condition	= DIA_Ricelord_TRADE_Condition;
 	information	= DIA_Ricelord_TRADE_Info;
 	permanent	= 1;
-	description	= "Мы могли бы заключить сделку...";
+	description	= "РњС‹ РјРѕРіР»Рё Р±С‹ Р·Р°РєР»СЋС‡РёС‚СЊ СЃРґРµР»РєСѓ...";
 	trade 		= 1;
 };                       
 
@@ -102,8 +102,8 @@ FUNC INT DIA_Ricelord_TRADE_Condition()
 
 FUNC VOID DIA_Ricelord_TRADE_Info()
 {	
-	AI_Output (other, self,"DIA_Ricelord_TRADE_15_00"); //Мы могли бы заключить сделку...
-	AI_Output (self, other,"DIA_Ricelord_TRADE_12_01"); //А что ты можешь предложить?
+	AI_Output (other, self,"DIA_Ricelord_TRADE_15_00"); //РњС‹ РјРѕРіР»Рё Р±С‹ Р·Р°РєР»СЋС‡РёС‚СЊ СЃРґРµР»РєСѓ...
+	AI_Output (self, other,"DIA_Ricelord_TRADE_12_01"); //Рђ С‡С‚Рѕ С‚С‹ РјРѕР¶РµС€СЊ РїСЂРµРґР»РѕР¶РёС‚СЊ?
 };
 	
 // ************************************************************
@@ -116,7 +116,7 @@ INSTANCE DIA_Ricelord_LeftySentMe (C_INFO)
 	condition	= DIA_Ricelord_LeftySentMe_Condition;
 	information	= DIA_Ricelord_LeftySentMe_Info;
 	permanent	= 1;
-	description	= "Меня послал Лефти.";
+	description	= "РњРµРЅСЏ РїРѕСЃР»Р°Р» Р›РµС„С‚Рё.";
 };                       
 
 FUNC INT DIA_Ricelord_LeftySentMe_Condition()
@@ -132,8 +132,8 @@ FUNC INT DIA_Ricelord_LeftySentMe_Condition()
 
 FUNC VOID DIA_Ricelord_LeftySentMe_Info()
 {	
-	AI_Output (other, self,"DIA_Ricelord_LeftySentMe_15_00"); //Меня послал Лефти.
-	AI_Output (self, other,"DIA_Ricelord_LeftySentMe_12_01"); //Да, и что он сказал? 
+	AI_Output (other, self,"DIA_Ricelord_LeftySentMe_15_00"); //РњРµРЅСЏ РїРѕСЃР»Р°Р» Р›РµС„С‚Рё.
+	AI_Output (self, other,"DIA_Ricelord_LeftySentMe_12_01"); //Р”Р°, Рё С‡С‚Рѕ РѕРЅ СЃРєР°Р·Р°Р»? 
 	Ricelord_AskedForWater = TRUE;
 };
 
@@ -148,7 +148,7 @@ INSTANCE DIA_Ricelord_GetWater (C_INFO)
 	condition	= DIA_Ricelord_GetWater_Condition;
 	information	= DIA_Ricelord_GetWater_Info;
 	permanent	= 1;
-	description	= "Я должен отнести крестьянам воду.";
+	description	= "РЇ РґРѕР»Р¶РµРЅ РѕС‚РЅРµСЃС‚Рё РєСЂРµСЃС‚СЊСЏРЅР°Рј РІРѕРґСѓ.";
 };                       
 
 FUNC INT DIA_Ricelord_GetWater_Condition()
@@ -161,29 +161,29 @@ FUNC INT DIA_Ricelord_GetWater_Condition()
 
 FUNC VOID DIA_Ricelord_GetWater_Info()
 {	
-	AI_Output (other, self,"DIA_Ricelord_GetWater_15_00"); //Я должен отнести крестьянам воду.
+	AI_Output (other, self,"DIA_Ricelord_GetWater_15_00"); //РЇ РґРѕР»Р¶РµРЅ РѕС‚РЅРµСЃС‚Рё РєСЂРµСЃС‚СЊСЏРЅР°Рј РІРѕРґСѓ.
 	
 	if(Lefty_WorkDay == Wld_GetDay())
 	{
-		AI_Output			(self, other,"DIA_Ricelord_GetWater_12_01"); //Хорошо. Вот тебе дюжина бутылок.
-		AI_Output			(self, other,"DIA_Ricelord_GetWater_12_02"); //Крестьян там почти вдвое больше, так что проследи, чтобы всем досталось поровну. 
+		AI_Output			(self, other,"DIA_Ricelord_GetWater_12_01"); //РҐРѕСЂРѕС€Рѕ. Р’РѕС‚ С‚РµР±Рµ РґСЋР¶РёРЅР° Р±СѓС‚С‹Р»РѕРє.
+		AI_Output			(self, other,"DIA_Ricelord_GetWater_12_02"); //РљСЂРµСЃС‚СЊСЏРЅ С‚Р°Рј РїРѕС‡С‚Рё РІРґРІРѕРµ Р±РѕР»СЊС€Рµ, С‚Р°Рє С‡С‚Рѕ РїСЂРѕСЃР»РµРґРё, С‡С‚РѕР±С‹ РІСЃРµРј РґРѕСЃС‚Р°Р»РѕСЃСЊ РїРѕСЂРѕРІРЅСѓ. 
 
 		CreateInvItems		(self, ItFo_Potion_Water_01, 12);
 		B_GiveInvItems		(self, other, ItFo_Potion_Water_01, 12);
 
 		Ricelord_AskedForWater = FALSE;
-		B_LogEntry			(CH1_CarryWater,"Лорд дал мне дюжину бутылок.");
+		B_LogEntry			(CH1_CarryWater,"Р›РѕСЂРґ РґР°Р» РјРЅРµ РґСЋР¶РёРЅСѓ Р±СѓС‚С‹Р»РѕРє.");
 
 		AI_StopProcessInfos	(self);
 	}
 	else if (Lefty_WorkDay == Wld_GetDay()-1)
 	{
-		AI_Output (self, other,"DIA_Ricelord_GetWater_TooLate_12_00"); //Это было вчера, парень! Лучше сходи к нему, он хочет тебе что-то сказать.
+		AI_Output (self, other,"DIA_Ricelord_GetWater_TooLate_12_00"); //Р­С‚Рѕ Р±С‹Р»Рѕ РІС‡РµСЂР°, РїР°СЂРµРЅСЊ! Р›СѓС‡С€Рµ СЃС…РѕРґРё Рє РЅРµРјСѓ, РѕРЅ С…РѕС‡РµС‚ С‚РµР±Рµ С‡С‚Рѕ-С‚Рѕ СЃРєР°Р·Р°С‚СЊ.
 		AI_StopProcessInfos	(self);
 	}
 	else
 	{
-		AI_Output (self, other,"DIA_Ricelord_GetWater_TooLate_12_01"); //Это было несколько дней назад, парень! Лучше сходи к нему, он хочет тебе кое-что сказать.
+		AI_Output (self, other,"DIA_Ricelord_GetWater_TooLate_12_01"); //Р­С‚Рѕ Р±С‹Р»Рѕ РЅРµСЃРєРѕР»СЊРєРѕ РґРЅРµР№ РЅР°Р·Р°Рґ, РїР°СЂРµРЅСЊ! Р›СѓС‡С€Рµ СЃС…РѕРґРё Рє РЅРµРјСѓ, РѕРЅ С…РѕС‡РµС‚ С‚РµР±Рµ РєРѕРµ-С‡С‚Рѕ СЃРєР°Р·Р°С‚СЊ.
 		AI_StopProcessInfos	(self);
 	};
 };

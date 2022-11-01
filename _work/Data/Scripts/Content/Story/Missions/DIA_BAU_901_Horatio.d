@@ -33,7 +33,7 @@ INSTANCE Info_Horatio_Wasser(C_INFO)
 	condition	= Info_Horatio_Wasser_Condition;
 	information	= Info_Horatio_Wasser_Info;
 	permanent	= 1;
-	description = "Меня послал Лефти. Я принес тебе воды.";
+	description = "РњРµРЅСЏ РїРѕСЃР»Р°Р» Р›РµС„С‚Рё. РЇ РїСЂРёРЅРµСЃ С‚РµР±Рµ РІРѕРґС‹.";
 };                       
 
 FUNC INT Info_Horatio_Wasser_Condition()
@@ -47,10 +47,10 @@ FUNC INT Info_Horatio_Wasser_Condition()
 
 FUNC VOID Info_Horatio_Wasser_Info()
 {
-	AI_Output(other,self,"Info_Horatio_Wasser_15_00"); //Меня послал Лефти. Я принес тебе воды.
+	AI_Output(other,self,"Info_Horatio_Wasser_15_00"); //РњРµРЅСЏ РїРѕСЃР»Р°Р» Р›РµС„С‚Рё. РЇ РїСЂРёРЅРµСЃ С‚РµР±Рµ РІРѕРґС‹.
 	if (Npc_HasItems(other, ItFo_Potion_Water_01)>=1)
 	{
-		AI_Output(self,other,"Info_Horatio_Wasser_09_01"); //Спасибо, парень! Еще немного, и я бы начал пить из лужи.
+		AI_Output(self,other,"Info_Horatio_Wasser_09_01"); //РЎРїР°СЃРёР±Рѕ, РїР°СЂРµРЅСЊ! Р•С‰Рµ РЅРµРјРЅРѕРіРѕ, Рё СЏ Р±С‹ РЅР°С‡Р°Р» РїРёС‚СЊ РёР· Р»СѓР¶Рё.
 		B_GiveInvItems(other,self,ItFo_Potion_Water_01,1);
 		if ( C_BodystateContains(self, BS_SIT) )
 		{
@@ -67,7 +67,7 @@ FUNC VOID Info_Horatio_Wasser_Info()
 	}
 	else
 	{
-		AI_Output(self,other,"Info_Horatio_Wasser_NOWATER_09_00"); //У тебя уже ничего не осталось. Я попрошу у остальных.
+		AI_Output(self,other,"Info_Horatio_Wasser_NOWATER_09_00"); //РЈ С‚РµР±СЏ СѓР¶Рµ РЅРёС‡РµРіРѕ РЅРµ РѕСЃС‚Р°Р»РѕСЃСЊ. РЇ РїРѕРїСЂРѕС€Сѓ Сѓ РѕСЃС‚Р°Р»СЊРЅС‹С….
 	};
 };
 
@@ -96,25 +96,25 @@ FUNC VOID DIA_Horatio_Hello_Info()
 {	
 	AI_GotoNpc	(self, hero);
 
-	AI_Output (self, other,"DIA_Horatio_Hello_09_00"); //Что ты здесь делаешь? Ищешь неприятностей?
+	AI_Output (self, other,"DIA_Horatio_Hello_09_00"); //Р§С‚Рѕ С‚С‹ Р·РґРµСЃСЊ РґРµР»Р°РµС€СЊ? РС‰РµС€СЊ РЅРµРїСЂРёСЏС‚РЅРѕСЃС‚РµР№?
 	
 	Info_ClearChoices(DIA_Horatio_Hello );
-	Info_AddChoice	 (DIA_Horatio_Hello,"Проблемы? С кем? С крестьянином?",DIA_Horatio_Hello_PissOff);
-	Info_AddChoice	 (DIA_Horatio_Hello,"Эй, расслабься! Я новенький.",DIA_Horatio_Hello_BeCool);
+	Info_AddChoice	 (DIA_Horatio_Hello,"РџСЂРѕР±Р»РµРјС‹? РЎ РєРµРј? РЎ РєСЂРµСЃС‚СЊСЏРЅРёРЅРѕРј?",DIA_Horatio_Hello_PissOff);
+	Info_AddChoice	 (DIA_Horatio_Hello,"Р­Р№, СЂР°СЃСЃР»Р°Р±СЊСЃСЏ! РЇ РЅРѕРІРµРЅСЊРєРёР№.",DIA_Horatio_Hello_BeCool);
 };
 
 func void DIA_Horatio_Hello_BeCool()
 {
-	AI_Output (other, self,"DIA_Horatio_Hello_BeCool_15_00"); //Эй, расслабься! Я новенький.
-	AI_Output (self, other,"DIA_Horatio_Hello_BeCool_09_01"); //А-а. Тогда ладно. Трудно угадать заранее. Каждый день здесь проходит толпа народа, и каждый думает, что мир вращется именно вокруг него. 
+	AI_Output (other, self,"DIA_Horatio_Hello_BeCool_15_00"); //Р­Р№, СЂР°СЃСЃР»Р°Р±СЊСЃСЏ! РЇ РЅРѕРІРµРЅСЊРєРёР№.
+	AI_Output (self, other,"DIA_Horatio_Hello_BeCool_09_01"); //Рђ-Р°. РўРѕРіРґР° Р»Р°РґРЅРѕ. РўСЂСѓРґРЅРѕ СѓРіР°РґР°С‚СЊ Р·Р°СЂР°РЅРµРµ. РљР°Р¶РґС‹Р№ РґРµРЅСЊ Р·РґРµСЃСЊ РїСЂРѕС…РѕРґРёС‚ С‚РѕР»РїР° РЅР°СЂРѕРґР°, Рё РєР°Р¶РґС‹Р№ РґСѓРјР°РµС‚, С‡С‚Рѕ РјРёСЂ РІСЂР°С‰РµС‚СЃСЏ РёРјРµРЅРЅРѕ РІРѕРєСЂСѓРі РЅРµРіРѕ. 
 	Info_ClearChoices(DIA_Horatio_Hello );
 };
 
 func void DIA_Horatio_Hello_PissOff()
 {
-	AI_Output (other, self,"DIA_Horatio_Hello_PissOff_15_00"); //Проблемы? С кем? С крестьянином?
-	AI_Output (self, other,"DIA_Horatio_Hello_PissOff_09_01"); //Даже если я работаю в поле, это еще не значит, что я не могу постоять за себя.
-	AI_Output (self, other,"DIA_Horatio_Hello_PissOff_09_02"); //Если хочешь неприятностей - давай, подходи!
+	AI_Output (other, self,"DIA_Horatio_Hello_PissOff_15_00"); //РџСЂРѕР±Р»РµРјС‹? РЎ РєРµРј? РЎ РєСЂРµСЃС‚СЊСЏРЅРёРЅРѕРј?
+	AI_Output (self, other,"DIA_Horatio_Hello_PissOff_09_01"); //Р”Р°Р¶Рµ РµСЃР»Рё СЏ СЂР°Р±РѕС‚Р°СЋ РІ РїРѕР»Рµ, СЌС‚Рѕ РµС‰Рµ РЅРµ Р·РЅР°С‡РёС‚, С‡С‚Рѕ СЏ РЅРµ РјРѕРіСѓ РїРѕСЃС‚РѕСЏС‚СЊ Р·Р° СЃРµР±СЏ.
+	AI_Output (self, other,"DIA_Horatio_Hello_PissOff_09_02"); //Р•СЃР»Рё С…РѕС‡РµС€СЊ РЅРµРїСЂРёСЏС‚РЅРѕСЃС‚РµР№ - РґР°РІР°Р№, РїРѕРґС…РѕРґРё!
 	horatio_trouble = TRUE;
 	
 	Info_ClearChoices(DIA_Horatio_Hello);
@@ -132,7 +132,7 @@ INSTANCE DIA_Horatio_SORRY (C_INFO)
 	condition	= DIA_Horatio_SORRY_Condition;
 	information	= DIA_Horatio_SORRY_Info;
 	permanent	= 1;
-	description = "Извини, я не хотел тебя обидеть.";
+	description = "РР·РІРёРЅРё, СЏ РЅРµ С…РѕС‚РµР» С‚РµР±СЏ РѕР±РёРґРµС‚СЊ.";
 };                       
 
 FUNC INT DIA_Horatio_SORRY_Condition()
@@ -145,8 +145,8 @@ FUNC INT DIA_Horatio_SORRY_Condition()
 
 FUNC VOID DIA_Horatio_SORRY_Info()
 {	
-	AI_Output (other, self,"DIA_Horatio_SORRY_15_00"); //Извини, я не хотел тебя обидеть.
-	AI_Output (self, other,"DIA_Horatio_SORRY_09_01"); //Раньше нужно было думать, парень!
+	AI_Output (other, self,"DIA_Horatio_SORRY_15_00"); //РР·РІРёРЅРё, СЏ РЅРµ С…РѕС‚РµР» С‚РµР±СЏ РѕР±РёРґРµС‚СЊ.
+	AI_Output (self, other,"DIA_Horatio_SORRY_09_01"); //Р Р°РЅСЊС€Рµ РЅСѓР¶РЅРѕ Р±С‹Р»Рѕ РґСѓРјР°С‚СЊ, РїР°СЂРµРЅСЊ!
 };
 
 // ************************************************************
@@ -160,7 +160,7 @@ INSTANCE DIA_Horatio_Story (C_INFO)
 	condition	= DIA_Horatio_Story_Condition;
 	information	= DIA_Horatio_Story_Info;
 	permanent	= 0;
-	description = "Что ты вообще делаешь среди крестьян?";
+	description = "Р§С‚Рѕ С‚С‹ РІРѕРѕР±С‰Рµ РґРµР»Р°РµС€СЊ СЃСЂРµРґРё РєСЂРµСЃС‚СЊСЏРЅ?";
 };                       
 
 FUNC INT DIA_Horatio_Story_Condition()
@@ -173,12 +173,12 @@ FUNC INT DIA_Horatio_Story_Condition()
 
 FUNC VOID DIA_Horatio_Story_Info()
 {	
-	AI_Output (other, self,"DIA_Horatio_Story_15_00"); //Что ты вообще делаешь среди крестьян?
-	AI_Output (self, other,"DIA_Horatio_Story_09_01"); //Об этом меня попросил Ли. Я больше не дерусь. Разве только чтобы защитить себя.
-	AI_Output (self, other,"DIA_Horatio_Story_09_02"); //Я убил одного парня, и это был уже перебор. В результате меня вышвырнули в  Богом проклятую колонию - справедливо, в общем.
-	AI_Output (other, self,"DIA_Horatio_Story_15_03"); //Как это случилось?
-	AI_Output (self, other,"DIA_Horatio_Story_09_04"); //Обычная кабацкая драка. Я не хотел его убивать - наверное, просто ударил слишко сильно.
-	AI_Output (self, other,"DIA_Horatio_Story_09_05"); //Тогда я был кузнецом - сам не знал своей силы.
+	AI_Output (other, self,"DIA_Horatio_Story_15_00"); //Р§С‚Рѕ С‚С‹ РІРѕРѕР±С‰Рµ РґРµР»Р°РµС€СЊ СЃСЂРµРґРё РєСЂРµСЃС‚СЊСЏРЅ?
+	AI_Output (self, other,"DIA_Horatio_Story_09_01"); //РћР± СЌС‚РѕРј РјРµРЅСЏ РїРѕРїСЂРѕСЃРёР» Р›Рё. РЇ Р±РѕР»СЊС€Рµ РЅРµ РґРµСЂСѓСЃСЊ. Р Р°Р·РІРµ С‚РѕР»СЊРєРѕ С‡С‚РѕР±С‹ Р·Р°С‰РёС‚РёС‚СЊ СЃРµР±СЏ.
+	AI_Output (self, other,"DIA_Horatio_Story_09_02"); //РЇ СѓР±РёР» РѕРґРЅРѕРіРѕ РїР°СЂРЅСЏ, Рё СЌС‚Рѕ Р±С‹Р» СѓР¶Рµ РїРµСЂРµР±РѕСЂ. Р’ СЂРµР·СѓР»СЊС‚Р°С‚Рµ РјРµРЅСЏ РІС‹С€РІС‹СЂРЅСѓР»Рё РІ  Р‘РѕРіРѕРј РїСЂРѕРєР»СЏС‚СѓСЋ РєРѕР»РѕРЅРёСЋ - СЃРїСЂР°РІРµРґР»РёРІРѕ, РІ РѕР±С‰РµРј.
+	AI_Output (other, self,"DIA_Horatio_Story_15_03"); //РљР°Рє СЌС‚Рѕ СЃР»СѓС‡РёР»РѕСЃСЊ?
+	AI_Output (self, other,"DIA_Horatio_Story_09_04"); //РћР±С‹С‡РЅР°СЏ РєР°Р±Р°С†РєР°СЏ РґСЂР°РєР°. РЇ РЅРµ С…РѕС‚РµР» РµРіРѕ СѓР±РёРІР°С‚СЊ - РЅР°РІРµСЂРЅРѕРµ, РїСЂРѕСЃС‚Рѕ СѓРґР°СЂРёР» СЃР»РёС€РєРѕ СЃРёР»СЊРЅРѕ.
+	AI_Output (self, other,"DIA_Horatio_Story_09_05"); //РўРѕРіРґР° СЏ Р±С‹Р» РєСѓР·РЅРµС†РѕРј - СЃР°Рј РЅРµ Р·РЅР°Р» СЃРІРѕРµР№ СЃРёР»С‹.
 };
 
 // ************************************************************
@@ -192,7 +192,7 @@ INSTANCE DIA_Horatio_WhyHere (C_INFO)
 	condition	= DIA_Horatio_WhyHere_Condition;
 	information	= DIA_Horatio_WhyHere_Info;
 	permanent	= 0;
-	description = "Почему ты присоединился к ЭТОМУ Лагерю?";
+	description = "РџРѕС‡РµРјСѓ С‚С‹ РїСЂРёСЃРѕРµРґРёРЅРёР»СЃСЏ Рє Р­РўРћРњРЈ Р›Р°РіРµСЂСЋ?";
 };                       
 
 FUNC INT DIA_Horatio_WhyHere_Condition()
@@ -205,11 +205,11 @@ FUNC INT DIA_Horatio_WhyHere_Condition()
 
 FUNC VOID DIA_Horatio_WhyHere_Info()
 {	
-	AI_Output (other, self,"DIA_Horatio_WhyHere_15_00"); //Почему ты присоединился к ЭТОМУ Лагерю?
-	AI_Output (self, other,"DIA_Horatio_WhyHere_09_01"); //Вот что я скажу тебе: у меня не было тогда другого выбора, но я и не собираюсь позволять этим Гуру промывать мне мозги.
-	AI_Output (self, other,"DIA_Horatio_WhyHere_09_02"); //В Старом Лагере я немного не поладил со стражниками, хотя и воры, и наемники проявляли уважение.
-	AI_Output (other, self,"DIA_Horatio_WhyHere_15_03"); //Они боялись тебя...
-	AI_Output (self, other,"DIA_Horatio_WhyHere_09_04"); //Может быть. В любом случае, теперь я здесь и советую тебе попробовать то же самое.
+	AI_Output (other, self,"DIA_Horatio_WhyHere_15_00"); //РџРѕС‡РµРјСѓ С‚С‹ РїСЂРёСЃРѕРµРґРёРЅРёР»СЃСЏ Рє Р­РўРћРњРЈ Р›Р°РіРµСЂСЋ?
+	AI_Output (self, other,"DIA_Horatio_WhyHere_09_01"); //Р’РѕС‚ С‡С‚Рѕ СЏ СЃРєР°Р¶Сѓ С‚РµР±Рµ: Сѓ РјРµРЅСЏ РЅРµ Р±С‹Р»Рѕ С‚РѕРіРґР° РґСЂСѓРіРѕРіРѕ РІС‹Р±РѕСЂР°, РЅРѕ СЏ Рё РЅРµ СЃРѕР±РёСЂР°СЋСЃСЊ РїРѕР·РІРѕР»СЏС‚СЊ СЌС‚РёРј Р“СѓСЂСѓ РїСЂРѕРјС‹РІР°С‚СЊ РјРЅРµ РјРѕР·РіРё.
+	AI_Output (self, other,"DIA_Horatio_WhyHere_09_02"); //Р’ РЎС‚Р°СЂРѕРј Р›Р°РіРµСЂРµ СЏ РЅРµРјРЅРѕРіРѕ РЅРµ РїРѕР»Р°РґРёР» СЃРѕ СЃС‚СЂР°Р¶РЅРёРєР°РјРё, С…РѕС‚СЏ Рё РІРѕСЂС‹, Рё РЅР°РµРјРЅРёРєРё РїСЂРѕСЏРІР»СЏР»Рё СѓРІР°Р¶РµРЅРёРµ.
+	AI_Output (other, self,"DIA_Horatio_WhyHere_15_03"); //РћРЅРё Р±РѕСЏР»РёСЃСЊ С‚РµР±СЏ...
+	AI_Output (self, other,"DIA_Horatio_WhyHere_09_04"); //РњРѕР¶РµС‚ Р±С‹С‚СЊ. Р’ Р»СЋР±РѕРј СЃР»СѓС‡Р°Рµ, С‚РµРїРµСЂСЊ СЏ Р·РґРµСЃСЊ Рё СЃРѕРІРµС‚СѓСЋ С‚РµР±Рµ РїРѕРїСЂРѕР±РѕРІР°С‚СЊ С‚Рѕ Р¶Рµ СЃР°РјРѕРµ.
 };
 
 // ************************************************************
@@ -225,7 +225,7 @@ INSTANCE DIA_Horatio_PleaseTeachSTR (C_INFO)
 	condition	= DIA_Horatio_PleaseTeachSTR_Condition;
 	information	= DIA_Horatio_PleaseTeachSTR_Info;
 	permanent	= 0;
-	description = "Как мне стать таким же сильным, как ты? Ты можешь научить меня? ";
+	description = "РљР°Рє РјРЅРµ СЃС‚Р°С‚СЊ С‚Р°РєРёРј Р¶Рµ СЃРёР»СЊРЅС‹Рј, РєР°Рє С‚С‹? РўС‹ РјРѕР¶РµС€СЊ РЅР°СѓС‡РёС‚СЊ РјРµРЅСЏ? ";
 };                       
 
 FUNC INT DIA_Horatio_PleaseTeachSTR_Condition()
@@ -238,49 +238,49 @@ FUNC INT DIA_Horatio_PleaseTeachSTR_Condition()
 
 FUNC VOID DIA_Horatio_PleaseTeachSTR_Info()
 {	
-	AI_Output (other, self,"DIA_Horatio_PleaseTeachSTR_15_00"); //Как мне стать таким же сильным, как ты? Ты можешь научить меня? 
-	AI_Output (self, other,"DIA_Horatio_PleaseTeachSTR_09_01"); //Даже если и могу - ДЛЯ ЧЕГО тебе нужна сила?
+	AI_Output (other, self,"DIA_Horatio_PleaseTeachSTR_15_00"); //РљР°Рє РјРЅРµ СЃС‚Р°С‚СЊ С‚Р°РєРёРј Р¶Рµ СЃРёР»СЊРЅС‹Рј, РєР°Рє С‚С‹? РўС‹ РјРѕР¶РµС€СЊ РЅР°СѓС‡РёС‚СЊ РјРµРЅСЏ? 
+	AI_Output (self, other,"DIA_Horatio_PleaseTeachSTR_09_01"); //Р”Р°Р¶Рµ РµСЃР»Рё Рё РјРѕРіСѓ - Р”Р›РЇ Р§Р•Р“Рћ С‚РµР±Рµ РЅСѓР¶РЅР° СЃРёР»Р°?
 	Info_ClearChoices(DIA_Horatio_PleaseTeachSTR );
 	var C_NPC ricelord; ricelord = Hlp_GetNpc(Bau_900_Ricelord);
 	if	Npc_KnowsInfo(hero,DIA_Jeremiah_Horatio)
 	{
-		Info_AddChoice	 (DIA_Horatio_PleaseTeachSTR,"Чтобы избавиться от Лорда и его головорезов!",DIA_Horatio_PleaseTeachSTR_Ricelord);
+		Info_AddChoice	 (DIA_Horatio_PleaseTeachSTR,"Р§С‚РѕР±С‹ РёР·Р±Р°РІРёС‚СЊСЃСЏ РѕС‚ Р›РѕСЂРґР° Рё РµРіРѕ РіРѕР»РѕРІРѕСЂРµР·РѕРІ!",DIA_Horatio_PleaseTeachSTR_Ricelord);
 	}
 	else
 	{
-		Info_AddChoice	 (DIA_Horatio_PleaseTeachSTR,"Хороший вопрос. Я подумаю об этом...",DIA_Horatio_PleaseTeachSTR_BACK);
+		Info_AddChoice	 (DIA_Horatio_PleaseTeachSTR,"РҐРѕСЂРѕС€РёР№ РІРѕРїСЂРѕСЃ. РЇ РїРѕРґСѓРјР°СЋ РѕР± СЌС‚РѕРј...",DIA_Horatio_PleaseTeachSTR_BACK);
 	};
-	Info_AddChoice	 (DIA_Horatio_PleaseTeachSTR,"Для того чтобы защищать себя!",DIA_Horatio_PleaseTeachSTR_Defend);
-	Info_AddChoice	 (DIA_Horatio_PleaseTeachSTR,"Для того чтобы научить этих ублюдков хорошим манерам!",DIA_Horatio_PleaseTeachSTR_Attack);
+	Info_AddChoice	 (DIA_Horatio_PleaseTeachSTR,"Р”Р»СЏ С‚РѕРіРѕ С‡С‚РѕР±С‹ Р·Р°С‰РёС‰Р°С‚СЊ СЃРµР±СЏ!",DIA_Horatio_PleaseTeachSTR_Defend);
+	Info_AddChoice	 (DIA_Horatio_PleaseTeachSTR,"Р”Р»СЏ С‚РѕРіРѕ С‡С‚РѕР±С‹ РЅР°СѓС‡РёС‚СЊ СЌС‚РёС… СѓР±Р»СЋРґРєРѕРІ С…РѕСЂРѕС€РёРј РјР°РЅРµСЂР°Рј!",DIA_Horatio_PleaseTeachSTR_Attack);
 
 	Log_CreateTopic		(CH1_HoratiosTeachings,	LOG_MISSION);
 	Log_SetTopicStatus	(CH1_HoratiosTeachings, LOG_RUNNING);
-	B_LogEntry			(CH1_HoratiosTeachings,"Горацио, фермер на рисовых полях Нового Лагеря, может научить меня, как наносить более сильные удары. Но пока мне не удается ответить на его вопрос - зачем?");
+	B_LogEntry			(CH1_HoratiosTeachings,"Р“РѕСЂР°С†РёРѕ, С„РµСЂРјРµСЂ РЅР° СЂРёСЃРѕРІС‹С… РїРѕР»СЏС… РќРѕРІРѕРіРѕ Р›Р°РіРµСЂСЏ, РјРѕР¶РµС‚ РЅР°СѓС‡РёС‚СЊ РјРµРЅСЏ, РєР°Рє РЅР°РЅРѕСЃРёС‚СЊ Р±РѕР»РµРµ СЃРёР»СЊРЅС‹Рµ СѓРґР°СЂС‹. РќРѕ РїРѕРєР° РјРЅРµ РЅРµ СѓРґР°РµС‚СЃСЏ РѕС‚РІРµС‚РёС‚СЊ РЅР° РµРіРѕ РІРѕРїСЂРѕСЃ - Р·Р°С‡РµРј?");
 };
 
 func void DIA_Horatio_PleaseTeachSTR_Attack()
 {
-	AI_Output (other, self,"DIA_Horatio_PleaseTeachSTR_Attack_15_00"); //Для того чтобы научить этих ублюдков хорошим манерам!
-	AI_Output (self, other,"DIA_Horatio_PleaseTeachSTR_Attack_09_01"); //Прежде чем это случится, ты сам станешь одним из этих ублюдков... Нет, я не буду учить тебя ради этого.
+	AI_Output (other, self,"DIA_Horatio_PleaseTeachSTR_Attack_15_00"); //Р”Р»СЏ С‚РѕРіРѕ С‡С‚РѕР±С‹ РЅР°СѓС‡РёС‚СЊ СЌС‚РёС… СѓР±Р»СЋРґРєРѕРІ С…РѕСЂРѕС€РёРј РјР°РЅРµСЂР°Рј!
+	AI_Output (self, other,"DIA_Horatio_PleaseTeachSTR_Attack_09_01"); //РџСЂРµР¶РґРµ С‡РµРј СЌС‚Рѕ СЃР»СѓС‡РёС‚СЃСЏ, С‚С‹ СЃР°Рј СЃС‚Р°РЅРµС€СЊ РѕРґРЅРёРј РёР· СЌС‚РёС… СѓР±Р»СЋРґРєРѕРІ... РќРµС‚, СЏ РЅРµ Р±СѓРґСѓ СѓС‡РёС‚СЊ С‚РµР±СЏ СЂР°РґРё СЌС‚РѕРіРѕ.
 	Info_ClearChoices(DIA_Horatio_PleaseTeachSTR );
 };
 
 func void DIA_Horatio_PleaseTeachSTR_Defend()
 {
-	AI_Output (other, self,"DIA_Horatio_PleaseTeachSTR_Defend_15_00"); //Для того чтобы защищать себя!
-	AI_Output (self, other,"DIA_Horatio_PleaseTeachSTR_Defend_09_01"); //Для этого нужна не сила - скорость. Неужели ты думаешь, что сворачивать челюсти лучше, чем жить в мире?
+	AI_Output (other, self,"DIA_Horatio_PleaseTeachSTR_Defend_15_00"); //Р”Р»СЏ С‚РѕРіРѕ С‡С‚РѕР±С‹ Р·Р°С‰РёС‰Р°С‚СЊ СЃРµР±СЏ!
+	AI_Output (self, other,"DIA_Horatio_PleaseTeachSTR_Defend_09_01"); //Р”Р»СЏ СЌС‚РѕРіРѕ РЅСѓР¶РЅР° РЅРµ СЃРёР»Р° - СЃРєРѕСЂРѕСЃС‚СЊ. РќРµСѓР¶РµР»Рё С‚С‹ РґСѓРјР°РµС€СЊ, С‡С‚Рѕ СЃРІРѕСЂР°С‡РёРІР°С‚СЊ С‡РµР»СЋСЃС‚Рё Р»СѓС‡С€Рµ, С‡РµРј Р¶РёС‚СЊ РІ РјРёСЂРµ?
 };
 
 func void DIA_Horatio_PleaseTeachSTR_BACK()
 {
-	AI_Output (other, self,"DIA_Horatio_PleaseTeachSTR_BACK_15_00"); //Хороший вопрос. Я подумаю об этом...
+	AI_Output (other, self,"DIA_Horatio_PleaseTeachSTR_BACK_15_00"); //РҐРѕСЂРѕС€РёР№ РІРѕРїСЂРѕСЃ. РЇ РїРѕРґСѓРјР°СЋ РѕР± СЌС‚РѕРј...
 	Info_ClearChoices(DIA_Horatio_PleaseTeachSTR );
 };
 
 func void DIA_Horatio_PleaseTeachSTR_Ricelord()
 {
-	AI_Output (other, self,"DIA_Horatio_PleaseTeachSTR_Ricelord_15_00"); //Чтобы избавиться от Лорда и его головорезов!
-	AI_Output (self, other,"DIA_Horatio_PleaseTeachSTR_Ricelord_09_01"); //Х-мм... Ты будешь далеко не первым из тех, кто пытался сделать это.
+	AI_Output (other, self,"DIA_Horatio_PleaseTeachSTR_Ricelord_15_00"); //Р§С‚РѕР±С‹ РёР·Р±Р°РІРёС‚СЊСЃСЏ РѕС‚ Р›РѕСЂРґР° Рё РµРіРѕ РіРѕР»РѕРІРѕСЂРµР·РѕРІ!
+	AI_Output (self, other,"DIA_Horatio_PleaseTeachSTR_Ricelord_09_01"); //РҐ-РјРј... РўС‹ Р±СѓРґРµС€СЊ РґР°Р»РµРєРѕ РЅРµ РїРµСЂРІС‹Рј РёР· С‚РµС…, РєС‚Рѕ РїС‹С‚Р°Р»СЃСЏ СЃРґРµР»Р°С‚СЊ СЌС‚Рѕ.
 	horatio_StrFree = TRUE;
 	Info_ClearChoices(DIA_Horatio_PleaseTeachSTR );
 };
@@ -296,7 +296,7 @@ INSTANCE DIA_Horatio_ThoughtSTR (C_INFO)
 	condition	= DIA_Horatio_ThoughtSTR_Condition;
 	information	= DIA_Horatio_ThoughtSTR_Info;
 	permanent	= 1;
-	description = "Я подумал об этом...";
+	description = "РЇ РїРѕРґСѓРјР°Р» РѕР± СЌС‚РѕРј...";
 };                       
 
 FUNC INT DIA_Horatio_ThoughtSTR_Condition()
@@ -309,37 +309,37 @@ FUNC INT DIA_Horatio_ThoughtSTR_Condition()
 
 FUNC VOID DIA_Horatio_ThoughtSTR_Info()
 {	
-	AI_Output (other, self,"DIA_Horatio_ThoughtSTR_15_00"); //Я думал об этом...
-	AI_Output (self, other,"DIA_Horatio_ThoughtSTR_09_01"); //И что же? Придумал что-нибудь получше?
+	AI_Output (other, self,"DIA_Horatio_ThoughtSTR_15_00"); //РЇ РґСѓРјР°Р» РѕР± СЌС‚РѕРј...
+	AI_Output (self, other,"DIA_Horatio_ThoughtSTR_09_01"); //Р С‡С‚Рѕ Р¶Рµ? РџСЂРёРґСѓРјР°Р» С‡С‚Рѕ-РЅРёР±СѓРґСЊ РїРѕР»СѓС‡С€Рµ?
 	
 	Info_ClearChoices(DIA_Horatio_ThoughtSTR );
-	Info_AddChoice	 (DIA_Horatio_ThoughtSTR,"Нет.",DIA_Horatio_ThoughtSTR_NoIdea);
+	Info_AddChoice	 (DIA_Horatio_ThoughtSTR,"РќРµС‚.",DIA_Horatio_ThoughtSTR_NoIdea);
 	
 	var C_NPC ricelord; ricelord = Hlp_GetNpc(Bau_900_Ricelord);
 	if	Npc_KnowsInfo(hero,DIA_Jeremiah_Horatio)
 	{
-		Info_AddChoice	 (DIA_Horatio_ThoughtSTR,"Да. Я хочу избавиться от Лорда и его головорезов!",DIA_Horatio_ThoughtSTR_Ricelord);
+		Info_AddChoice	 (DIA_Horatio_ThoughtSTR,"Р”Р°. РЇ С…РѕС‡Сѓ РёР·Р±Р°РІРёС‚СЊСЃСЏ РѕС‚ Р›РѕСЂРґР° Рё РµРіРѕ РіРѕР»РѕРІРѕСЂРµР·РѕРІ!",DIA_Horatio_ThoughtSTR_Ricelord);
 	};
 };
 
 func void DIA_Horatio_ThoughtSTR_NoIdea()
 {
-	AI_Output (other, self,"DIA_Horatio_ThoughtSTR_NoIdea_15_00"); //Нет.
-	AI_Output (self, other,"DIA_Horatio_ThoughtSTR_NoIdea_09_01"); //Я так и знал.
+	AI_Output (other, self,"DIA_Horatio_ThoughtSTR_NoIdea_15_00"); //РќРµС‚.
+	AI_Output (self, other,"DIA_Horatio_ThoughtSTR_NoIdea_09_01"); //РЇ С‚Р°Рє Рё Р·РЅР°Р».
 	Info_ClearChoices(DIA_Horatio_ThoughtSTR );
 };
 
 func void DIA_Horatio_ThoughtSTR_Ricelord()
 {
-	AI_Output (other, self,"DIA_Horatio_ThoughtSTR_Ricelord_15_00"); //Да. Я хочу избавиться от Лорда и его головорезов!
-	AI_Output (self, other,"DIA_Horatio_ThoughtSTR_Ricelord_09_01"); //Х-мм... Ты будешь далеко не первым из тех, кто пытался сделать это.
+	AI_Output (other, self,"DIA_Horatio_ThoughtSTR_Ricelord_15_00"); //Р”Р°. РЇ С…РѕС‡Сѓ РёР·Р±Р°РІРёС‚СЊСЃСЏ РѕС‚ Р›РѕСЂРґР° Рё РµРіРѕ РіРѕР»РѕРІРѕСЂРµР·РѕРІ!
+	AI_Output (self, other,"DIA_Horatio_ThoughtSTR_Ricelord_09_01"); //РҐ-РјРј... РўС‹ Р±СѓРґРµС€СЊ РґР°Р»РµРєРѕ РЅРµ РїРµСЂРІС‹Рј РёР· С‚РµС…, РєС‚Рѕ РїС‹С‚Р°Р»СЃСЏ СЃРґРµР»Р°С‚СЊ СЌС‚Рѕ.
 	horatio_StrFree = TRUE;
 	
 	Info_ClearChoices(DIA_Horatio_ThoughtSTR );
 };
 
 // ************************************************************
-//					Will Ricelord kцpfen
+//					Will Ricelord kС†pfen
 // ************************************************************
 
 func void DIA_Horatio_HelpSTR_LEARN_NOW()
@@ -347,17 +347,17 @@ func void DIA_Horatio_HelpSTR_LEARN_NOW()
 	if (other.attribute[ATR_STRENGTH]<=(100-5))
 	{
 		other.attribute[ATR_STRENGTH] = other.attribute[ATR_STRENGTH] + 5;
-		PrintScreen	("Сила +5", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
+		PrintScreen	("РЎРёР»Р° +5", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
 	}
 	else
 	{
 		other.attribute[ATR_STRENGTH] = 100; 
-		PrintScreen	("Сила: 100", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
+		PrintScreen	("РЎРёР»Р°: 100", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
 	};
 				
-	AI_Output (self, other,"DIA_Horatio_HelpSTR_LEARN_NOW_09_00"); //Если ты хочешь иметь сильный удар, ты должен знать, как это делается. Это первое, чему учат кузнеца.
-	AI_Output (self, other,"DIA_Horatio_HelpSTR_LEARN_NOW_09_01"); //Учись вкладывать в удар всю руку, от плеча до запястья.
-	AI_Output (self, other,"DIA_Horatio_HelpSTR_LEARN_NOW_09_02"); //Чем лучше у тебя это получается, тем сильнее удар. Я думаю, ты освоишь это довольно быстро.
+	AI_Output (self, other,"DIA_Horatio_HelpSTR_LEARN_NOW_09_00"); //Р•СЃР»Рё С‚С‹ С…РѕС‡РµС€СЊ РёРјРµС‚СЊ СЃРёР»СЊРЅС‹Р№ СѓРґР°СЂ, С‚С‹ РґРѕР»Р¶РµРЅ Р·РЅР°С‚СЊ, РєР°Рє СЌС‚Рѕ РґРµР»Р°РµС‚СЃСЏ. Р­С‚Рѕ РїРµСЂРІРѕРµ, С‡РµРјСѓ СѓС‡Р°С‚ РєСѓР·РЅРµС†Р°.
+	AI_Output (self, other,"DIA_Horatio_HelpSTR_LEARN_NOW_09_01"); //РЈС‡РёСЃСЊ РІРєР»Р°РґС‹РІР°С‚СЊ РІ СѓРґР°СЂ РІСЃСЋ СЂСѓРєСѓ, РѕС‚ РїР»РµС‡Р° РґРѕ Р·Р°РїСЏСЃС‚СЊСЏ.
+	AI_Output (self, other,"DIA_Horatio_HelpSTR_LEARN_NOW_09_02"); //Р§РµРј Р»СѓС‡С€Рµ Сѓ С‚РµР±СЏ СЌС‚Рѕ РїРѕР»СѓС‡Р°РµС‚СЃСЏ, С‚РµРј СЃРёР»СЊРЅРµРµ СѓРґР°СЂ. РЇ РґСѓРјР°СЋ, С‚С‹ РѕСЃРІРѕРёС€СЊ СЌС‚Рѕ РґРѕРІРѕР»СЊРЅРѕ Р±С‹СЃС‚СЂРѕ.
 };
 
 //--------------------------------------------------------------
@@ -369,7 +369,7 @@ INSTANCE DIA_Horatio_HelpSTR (C_INFO)
 	condition	= DIA_Horatio_HelpSTR_Condition;
 	information	= DIA_Horatio_HelpSTR_Info;
 	permanent	= 0;
-	description = "Я ИЗБАВЛЮСЬ от Лорда и его головорезов.";
+	description = "РЇ РР—Р‘РђР’Р›Р®РЎР¬ РѕС‚ Р›РѕСЂРґР° Рё РµРіРѕ РіРѕР»РѕРІРѕСЂРµР·РѕРІ.";
 };                       
 
 FUNC INT DIA_Horatio_HelpSTR_Condition()
@@ -382,13 +382,13 @@ FUNC INT DIA_Horatio_HelpSTR_Condition()
 
 FUNC VOID DIA_Horatio_HelpSTR_Info()
 {	
-	AI_Output (other, self,"DIA_Horatio_HelpSTR_15_00"); //Я ИЗБАВЛЮСЬ от Лорда и его головорезов - конечно, если ты поможешь мне.
-	AI_Output (self, other,"DIA_Horatio_HelpSTR_09_01"); //Хорошо! Я поклялся, что никогда больше не нападу на человека, но я никому не обещал не учить других, как правильно делать это.
-	AI_Output (other, self,"DIA_Horatio_HelpSTR_15_02"); //Я весь внимание!
+	AI_Output (other, self,"DIA_Horatio_HelpSTR_15_00"); //РЇ РР—Р‘РђР’Р›Р®РЎР¬ РѕС‚ Р›РѕСЂРґР° Рё РµРіРѕ РіРѕР»РѕРІРѕСЂРµР·РѕРІ - РєРѕРЅРµС‡РЅРѕ, РµСЃР»Рё С‚С‹ РїРѕРјРѕР¶РµС€СЊ РјРЅРµ.
+	AI_Output (self, other,"DIA_Horatio_HelpSTR_09_01"); //РҐРѕСЂРѕС€Рѕ! РЇ РїРѕРєР»СЏР»СЃСЏ, С‡С‚Рѕ РЅРёРєРѕРіРґР° Р±РѕР»СЊС€Рµ РЅРµ РЅР°РїР°РґСѓ РЅР° С‡РµР»РѕРІРµРєР°, РЅРѕ СЏ РЅРёРєРѕРјСѓ РЅРµ РѕР±РµС‰Р°Р» РЅРµ СѓС‡РёС‚СЊ РґСЂСѓРіРёС…, РєР°Рє РїСЂР°РІРёР»СЊРЅРѕ РґРµР»Р°С‚СЊ СЌС‚Рѕ.
+	AI_Output (other, self,"DIA_Horatio_HelpSTR_15_02"); //РЇ РІРµСЃСЊ РІРЅРёРјР°РЅРёРµ!
 	DIA_Horatio_HelpSTR_LEARN_NOW();
 
 	Log_SetTopicStatus	(CH1_HoratiosTeachings, LOG_SUCCESS);
-	B_LogEntry			(CH1_HoratiosTeachings,"Горацио показал мне, как использовать свою силу в бою и как сильнее бить. Чистейшей души человек.");
+	B_LogEntry			(CH1_HoratiosTeachings,"Р“РѕСЂР°С†РёРѕ РїРѕРєР°Р·Р°Р» РјРЅРµ, РєР°Рє РёСЃРїРѕР»СЊР·РѕРІР°С‚СЊ СЃРІРѕСЋ СЃРёР»Сѓ РІ Р±РѕСЋ Рё РєР°Рє СЃРёР»СЊРЅРµРµ Р±РёС‚СЊ. Р§РёСЃС‚РµР№С€РµР№ РґСѓС€Рё С‡РµР»РѕРІРµРє.");
 };
 
 // ************************************************************
@@ -402,7 +402,7 @@ INSTANCE DIA_Horatio_Thanks (C_INFO)
 	condition	= DIA_Horatio_Thanks_Condition;
 	information	= DIA_Horatio_Thanks_Info;
 	permanent	= 1;
-	description = "Спасибо тебе за помощь!";
+	description = "РЎРїР°СЃРёР±Рѕ С‚РµР±Рµ Р·Р° РїРѕРјРѕС‰СЊ!";
 };                       
 
 FUNC INT DIA_Horatio_Thanks_Condition()
@@ -415,8 +415,8 @@ FUNC INT DIA_Horatio_Thanks_Condition()
 
 FUNC VOID DIA_Horatio_Thanks_Info()
 {	
-	AI_Output (other, self,"DIA_Horatio_Thanks_15_00"); //Спасибо за помощь!
-	AI_Output (self, other,"DIA_Horatio_Thanks_09_01"); //Используй это знание только по необходимости и НИКАК БОЛЬШЕ. 
+	AI_Output (other, self,"DIA_Horatio_Thanks_15_00"); //РЎРїР°СЃРёР±Рѕ Р·Р° РїРѕРјРѕС‰СЊ!
+	AI_Output (self, other,"DIA_Horatio_Thanks_09_01"); //РСЃРїРѕР»СЊР·СѓР№ СЌС‚Рѕ Р·РЅР°РЅРёРµ С‚РѕР»СЊРєРѕ РїРѕ РЅРµРѕР±С…РѕРґРёРјРѕСЃС‚Рё Рё РќРРљРђРљ Р‘РћР›Р¬РЁР•. 
 };
 
 

@@ -2,13 +2,13 @@
 //	ZS_StayNeutral
 //	==============
 //	Der NSC steht bei diesem Tagesablauf-Zustand FEST auf seinem WP.
-//	Zusätzlich wird der NSC auf NEUTRAL gegenüber dem Spieler gesetzt.
+//	ZusÐ´tzlich wird der NSC auf NEUTRAL gegenÑŒber dem Spieler gesetzt.
 //////////////////////////////////////////////////////////////////////////
 func void ZS_StayNeutral ()
 {
 	PrintDebugNpc			(PD_TA_FRAME,	"ZS_StayNeutral");
 	
-	//-------- Attitüden --------
+	//-------- AttitÑŒden --------
 	Npc_SetAttitude			(self,	ATT_NEUTRAL);
 	Npc_SetTempAttitude		(self,	ATT_NEUTRAL);
 

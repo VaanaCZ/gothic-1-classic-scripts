@@ -4,7 +4,7 @@
 
 PROTOTYPE Mst_Default_GreenGobbo(C_NPC)			
 {
-	name							=	"Гоблин";
+	name							=	"Р“РѕР±Р»РёРЅ";
 	guild							=	GIL_GOBBO;
 	aivar[AIV_MM_REAL_ID]			= 	ID_GOBBO;
 	level							=	6;

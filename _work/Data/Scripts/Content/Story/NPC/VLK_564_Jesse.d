@@ -2,7 +2,7 @@ instance VLK_564_Jesse (Npc_Default)
 {
 	//-------- primary data --------
 	
-	name =							"Джесс";
+	name =							"Р”Р¶РµСЃСЃ";
 	npctype =						npctype_main;
 	guild =							GIL_VLK;      
 	level =							4;

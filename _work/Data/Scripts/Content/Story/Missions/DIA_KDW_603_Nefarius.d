@@ -33,7 +33,7 @@ instance  Info_Nefarius_Hallo (C_INFO)
 	condition	=	Info_Nefarius_Hallo_Condition;
 	information	=	Info_Nefarius_Hallo_Info;
 	permanent	=	0;
-	description =	"Как тебя зовут?";
+	description =	"РљР°Рє С‚РµР±СЏ Р·РѕРІСѓС‚?";
 };                       
 
 FUNC int  Info_Nefarius_Hallo_Condition()
@@ -43,8 +43,8 @@ FUNC int  Info_Nefarius_Hallo_Condition()
 
 FUNC VOID  Info_Nefarius_Hallo_Info()
 {
-	AI_Output (other, self,"Info_Nefarius_Hallo_15_00"); //Кто ты?
-	AI_Output (self, other,"Info_Nefarius_Hallo_04_01"); //Я Нефариус, маг Круга Воды.
+	AI_Output (other, self,"Info_Nefarius_Hallo_15_00"); //РљС‚Рѕ С‚С‹?
+	AI_Output (self, other,"Info_Nefarius_Hallo_04_01"); //РЇ РќРµС„Р°СЂРёСѓСЃ, РјР°Рі РљСЂСѓРіР° Р’РѕРґС‹.
 };
 
 // **************************** 
@@ -58,7 +58,7 @@ instance  Info_Nefarius_WoSaturas (C_INFO)
 	condition	=	Info_Nefarius_WoSaturas_Condition;
 	information	=	Info_Nefarius_WoSaturas_Info;
 	permanent	=	0;
-	description =	"Где мне найти Сатураса?";
+	description =	"Р“РґРµ РјРЅРµ РЅР°Р№С‚Рё РЎР°С‚СѓСЂР°СЃР°?";
 };                       
 
 FUNC int  Info_Nefarius_WoSaturas_Condition()
@@ -68,8 +68,8 @@ FUNC int  Info_Nefarius_WoSaturas_Condition()
 
 FUNC VOID  Info_Nefarius_WoSaturas_Info()
 {
-	AI_Output (other, self,"Info_Nefarius_WoSaturas_15_00"); //Где мне найти Сатураса?
-	AI_Output (self, other,"Info_Nefarius_WoSaturas_04_01"); //Иди в большие круглые ворота. Там ты и найдешь его.
+	AI_Output (other, self,"Info_Nefarius_WoSaturas_15_00"); //Р“РґРµ РјРЅРµ РЅР°Р№С‚Рё РЎР°С‚СѓСЂР°СЃР°?
+	AI_Output (self, other,"Info_Nefarius_WoSaturas_04_01"); //РРґРё РІ Р±РѕР»СЊС€РёРµ РєСЂСѓРіР»С‹Рµ РІРѕСЂРѕС‚Р°. РўР°Рј С‚С‹ Рё РЅР°Р№РґРµС€СЊ РµРіРѕ.
 };
 
 // **************************** 
@@ -83,7 +83,7 @@ instance  Info_Nefarius_WannaMage (C_INFO)
 	condition	=	Info_Nefarius_WannaMage_Condition;
 	information	=	Info_Nefarius_WannaMage_Info;
 	permanent	=	0;
-	description =	"Я хочу стать магом Круга Воды!";
+	description =	"РЇ С…РѕС‡Сѓ СЃС‚Р°С‚СЊ РјР°РіРѕРј РљСЂСѓРіР° Р’РѕРґС‹!";
 };                       
 
 FUNC int  Info_Nefarius_WannaMage_Condition()
@@ -96,12 +96,12 @@ FUNC int  Info_Nefarius_WannaMage_Condition()
 
 FUNC VOID  Info_Nefarius_WannaMage_Info()
 {
-	AI_Output (other, self,"Info_Nefarius_WannaMage_15_00"); //Я хочу стать магом Круга Воды!
-	AI_Output (self, other,"Info_Nefarius_WannaMage_04_01"); //(со смехом) Не так быстро, мой мальчик!
-	AI_Output (self, other,"Info_Nefarius_WannaMage_04_02"); //Прежде чем мы позволим новичку присоединиться к нам, он должен проявить себя в каком-нибудь великом деянии.
-	AI_Output (self, other,"Info_Nefarius_WannaMage_04_03"); //И он должен служить нам какое-то время.
-	AI_Output (self, other,"Info_Nefarius_WannaMage_04_04"); //Если ты серьезен в своих намерениях, ты должен стать одним из наших наемников. Так ты сможешь служить нам.
-	AI_Output (self, other,"Info_Nefarius_WannaMage_04_05"); //И может быть однажды тебе представится шанс сделать что-то большое.
+	AI_Output (other, self,"Info_Nefarius_WannaMage_15_00"); //РЇ С…РѕС‡Сѓ СЃС‚Р°С‚СЊ РјР°РіРѕРј РљСЂСѓРіР° Р’РѕРґС‹!
+	AI_Output (self, other,"Info_Nefarius_WannaMage_04_01"); //(СЃРѕ СЃРјРµС…РѕРј) РќРµ С‚Р°Рє Р±С‹СЃС‚СЂРѕ, РјРѕР№ РјР°Р»СЊС‡РёРє!
+	AI_Output (self, other,"Info_Nefarius_WannaMage_04_02"); //РџСЂРµР¶РґРµ С‡РµРј РјС‹ РїРѕР·РІРѕР»РёРј РЅРѕРІРёС‡РєСѓ РїСЂРёСЃРѕРµРґРёРЅРёС‚СЊСЃСЏ Рє РЅР°Рј, РѕРЅ РґРѕР»Р¶РµРЅ РїСЂРѕСЏРІРёС‚СЊ СЃРµР±СЏ РІ РєР°РєРѕРј-РЅРёР±СѓРґСЊ РІРµР»РёРєРѕРј РґРµСЏРЅРёРё.
+	AI_Output (self, other,"Info_Nefarius_WannaMage_04_03"); //Р РѕРЅ РґРѕР»Р¶РµРЅ СЃР»СѓР¶РёС‚СЊ РЅР°Рј РєР°РєРѕРµ-С‚Рѕ РІСЂРµРјСЏ.
+	AI_Output (self, other,"Info_Nefarius_WannaMage_04_04"); //Р•СЃР»Рё С‚С‹ СЃРµСЂСЊРµР·РµРЅ РІ СЃРІРѕРёС… РЅР°РјРµСЂРµРЅРёСЏС…, С‚С‹ РґРѕР»Р¶РµРЅ СЃС‚Р°С‚СЊ РѕРґРЅРёРј РёР· РЅР°С€РёС… РЅР°РµРјРЅРёРєРѕРІ. РўР°Рє С‚С‹ СЃРјРѕР¶РµС€СЊ СЃР»СѓР¶РёС‚СЊ РЅР°Рј.
+	AI_Output (self, other,"Info_Nefarius_WannaMage_04_05"); //Р РјРѕР¶РµС‚ Р±С‹С‚СЊ РѕРґРЅР°Р¶РґС‹ С‚РµР±Рµ РїСЂРµРґСЃС‚Р°РІРёС‚СЃСЏ С€Р°РЅСЃ СЃРґРµР»Р°С‚СЊ С‡С‚Рѕ-С‚Рѕ Р±РѕР»СЊС€РѕРµ.
 };
 
 // **************************** 
@@ -115,7 +115,7 @@ instance  Info_Nefarius_NowReady (C_INFO)
 	condition	=	Info_Nefarius_NowReady_Condition;
 	information	=	Info_Nefarius_NowReady_Info;
 	permanent	=	1;
-	description =	"Я готов присоединиться к Кругу Воды?";
+	description =	"РЇ РіРѕС‚РѕРІ РїСЂРёСЃРѕРµРґРёРЅРёС‚СЊСЃСЏ Рє РљСЂСѓРіСѓ Р’РѕРґС‹?";
 };                       
 
 FUNC int  Info_Nefarius_NowReady_Condition()
@@ -128,16 +128,16 @@ FUNC int  Info_Nefarius_NowReady_Condition()
 
 FUNC VOID  Info_Nefarius_NowReady_Info()
 {
-	AI_Output (other, self,"Info_Nefarius_NowReady_15_00"); //Я готов присоединиться к Кругу Воды?
+	AI_Output (other, self,"Info_Nefarius_NowReady_15_00"); //РЇ РіРѕС‚РѕРІ РїСЂРёСЃРѕРµРґРёРЅРёС‚СЊСЃСЏ Рє РљСЂСѓРіСѓ Р’РѕРґС‹?
 	
 	if (Npc_GetTrueGuild (hero) != GIL_SLD) 
 	{
-		AI_Output (self, other,"Info_Nefarius_NowReady_04_01"); //Стань одним из наших наемников, а там посмотрим...
+		AI_Output (self, other,"Info_Nefarius_NowReady_04_01"); //РЎС‚Р°РЅСЊ РѕРґРЅРёРј РёР· РЅР°С€РёС… РЅР°РµРјРЅРёРєРѕРІ, Р° С‚Р°Рј РїРѕСЃРјРѕС‚СЂРёРј...
 	}
 	else
 	{
-		AI_Output (self, other,"Info_Nefarius_NowReady_04_02"); //Вижу, ты стал одним из наших наемников. Очень хорошо, очень хорошо...
-		AI_Output (self, other,"Info_Nefarius_NowReady_04_03"); //Теперь дело за временем...
+		AI_Output (self, other,"Info_Nefarius_NowReady_04_02"); //Р’РёР¶Сѓ, С‚С‹ СЃС‚Р°Р» РѕРґРЅРёРј РёР· РЅР°С€РёС… РЅР°РµРјРЅРёРєРѕРІ. РћС‡РµРЅСЊ С…РѕСЂРѕС€Рѕ, РѕС‡РµРЅСЊ С…РѕСЂРѕС€Рѕ...
+		AI_Output (self, other,"Info_Nefarius_NowReady_04_03"); //РўРµРїРµСЂСЊ РґРµР»Рѕ Р·Р° РІСЂРµРјРµРЅРµРј...
 	};
 };
 
@@ -172,15 +172,15 @@ FUNC int  Info_Nefarius_OCNews_Condition()
 
 FUNC VOID  Info_Nefarius_OCNews_Info()
 {
-	AI_Output (self, other,"Info_Nefarius_OCNews_04_00"); //Есть какие-нибудь новости от наших друзей из Старого Лагеря?
-	AI_Output (other, self,"Info_Nefarius_OCNews_15_01"); //Гомез расправился с магами Огня!
-	AI_Output (self, other,"Info_Nefarius_OCNews_04_02"); //Нет! Кретин! Я предупреждал Корристо - ему нельзя доверять! Ты должен рассказать об этом Сатурасу!
+	AI_Output (self, other,"Info_Nefarius_OCNews_04_00"); //Р•СЃС‚СЊ РєР°РєРёРµ-РЅРёР±СѓРґСЊ РЅРѕРІРѕСЃС‚Рё РѕС‚ РЅР°С€РёС… РґСЂСѓР·РµР№ РёР· РЎС‚Р°СЂРѕРіРѕ Р›Р°РіРµСЂСЏ?
+	AI_Output (other, self,"Info_Nefarius_OCNews_15_01"); //Р“РѕРјРµР· СЂР°СЃРїСЂР°РІРёР»СЃСЏ СЃ РјР°РіР°РјРё РћРіРЅСЏ!
+	AI_Output (self, other,"Info_Nefarius_OCNews_04_02"); //РќРµС‚! РљСЂРµС‚РёРЅ! РЇ РїСЂРµРґСѓРїСЂРµР¶РґР°Р» РљРѕСЂСЂРёСЃС‚Рѕ - РµРјСѓ РЅРµР»СЊР·СЏ РґРѕРІРµСЂСЏС‚СЊ! РўС‹ РґРѕР»Р¶РµРЅ СЂР°СЃСЃРєР°Р·Р°С‚СЊ РѕР± СЌС‚РѕРј РЎР°С‚СѓСЂР°СЃСѓ!
 	if (Npc_GetTrueGuild(hero)==GIL_SLD)
 	{
-		AI_Output (self, other,"Info_Nefarius_OCNews_04_03"); //Подожди!
-		AI_Output (self, other,"Info_Nefarius_OCNews_04_04"); //Ради нас ты пережил много опасностей и встретил их достойно.
-		AI_Output (self, other,"Info_Nefarius_OCNews_04_05"); //Думаю, что теперь ты готов носить одеяние магов Воды.
-		AI_Output (self, other,"Info_Nefarius_OCNews_04_06"); //Но сейчас ты должен поговорить с Сатурасом! Торопись!
+		AI_Output (self, other,"Info_Nefarius_OCNews_04_03"); //РџРѕРґРѕР¶РґРё!
+		AI_Output (self, other,"Info_Nefarius_OCNews_04_04"); //Р Р°РґРё РЅР°СЃ С‚С‹ РїРµСЂРµР¶РёР» РјРЅРѕРіРѕ РѕРїР°СЃРЅРѕСЃС‚РµР№ Рё РІСЃС‚СЂРµС‚РёР» РёС… РґРѕСЃС‚РѕР№РЅРѕ.
+		AI_Output (self, other,"Info_Nefarius_OCNews_04_05"); //Р”СѓРјР°СЋ, С‡С‚Рѕ С‚РµРїРµСЂСЊ С‚С‹ РіРѕС‚РѕРІ РЅРѕСЃРёС‚СЊ РѕРґРµСЏРЅРёРµ РјР°РіРѕРІ Р’РѕРґС‹.
+		AI_Output (self, other,"Info_Nefarius_OCNews_04_06"); //РќРѕ СЃРµР№С‡Р°СЃ С‚С‹ РґРѕР»Р¶РµРЅ РїРѕРіРѕРІРѕСЂРёС‚СЊ СЃ РЎР°С‚СѓСЂР°СЃРѕРј! РўРѕСЂРѕРїРёСЃСЊ!
 	};
 	AI_StopProcessInfos	(self);
 };

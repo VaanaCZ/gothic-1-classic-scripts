@@ -2,7 +2,7 @@ instance GUR_1201_CorKalom (Npc_Default)
 {
 	//-------- primary data --------
 	
-	name 		=	"Кор Галом";
+	name 		=	"РљРѕСЂ Р“Р°Р»РѕРј";
 	npctype 	= 	NPCTYPE_FRIEND;
 	guild 		=	GIL_GUR;
 	level 		=	30;

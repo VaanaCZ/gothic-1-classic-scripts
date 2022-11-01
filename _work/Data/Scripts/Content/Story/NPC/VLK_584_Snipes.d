@@ -2,7 +2,7 @@ instance VLK_584_Snipes (Npc_Default)
 {
 	//-------- primary data --------
 	
-	name =							"—Ì‡ÈÔÒ";
+	name =							"–°–Ω–∞–π–ø—Å";
 	npctype =						npctype_main;
 	guild =							GIL_VLK;      
 	level =							5;

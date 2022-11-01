@@ -16,7 +16,7 @@ FUNC int  KDF_403_Drago_RUNE_Condition()
 };
 func void  KDF_403_Drago_RUNE_Info()
 {
-	AI_Output (self, other,"KDF_403_Drago_RUNE_Info_13_01"); //Прими эту руну, дар Инноса. Да защитит она тебя на твоем пути!
+	AI_Output (self, other,"KDF_403_Drago_RUNE_Info_13_01"); //РџСЂРёРјРё СЌС‚Сѓ СЂСѓРЅСѓ, РґР°СЂ РРЅРЅРѕСЃР°. Р”Р° Р·Р°С‰РёС‚РёС‚ РѕРЅР° С‚РµР±СЏ РЅР° С‚РІРѕРµРј РїСѓС‚Рё!
 	CreateInvItem (self,ItArRuneFirebolt);
 	B_GiveInvItems (self, other, ItArRuneFirebolt, 1);
 	AI_StopProcessInfos	( self );

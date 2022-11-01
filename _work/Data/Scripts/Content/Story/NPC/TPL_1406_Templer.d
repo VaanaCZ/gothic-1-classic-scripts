@@ -1,7 +1,7 @@
 instance TPL_1406_Templer (Npc_Default)
 {
 	//-------- primary data --------
-	name =							"Телохранитель Галома";
+	name =							"РўРµР»РѕС…СЂР°РЅРёС‚РµР»СЊ Р“Р°Р»РѕРјР°";
 	npctype =						NPCTYPE_MAIN;
 	guild =							GIL_TPL;
 	level =							25;

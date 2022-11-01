@@ -34,24 +34,24 @@ FUNC INT Info_Grd_237_FirstWarn_Condition()
 
 FUNC VOID Info_Grd_237_FirstWarn_Info()
 {
-	AI_Output			(self, hero,"Info_Grd_237_FirstWarn_07_01"); //Лучше тебе не разгуливать здесь. Вот там уже начинаются земли орков.
-	AI_Output			(hero, self,"Info_Grd_237_FirstWarn_15_02"); //Это опасно?
-	AI_Output			(self, hero,"Info_Grd_237_FirstWarn_07_03"); //Скажем так: лучше отдай МНЕ всю свою руду, потому что орки все равно порубят тебя на куски.
+	AI_Output			(self, hero,"Info_Grd_237_FirstWarn_07_01"); //Р›СѓС‡С€Рµ С‚РµР±Рµ РЅРµ СЂР°Р·РіСѓР»РёРІР°С‚СЊ Р·РґРµСЃСЊ. Р’РѕС‚ С‚Р°Рј СѓР¶Рµ РЅР°С‡РёРЅР°СЋС‚СЃСЏ Р·РµРјР»Рё РѕСЂРєРѕРІ.
+	AI_Output			(hero, self,"Info_Grd_237_FirstWarn_15_02"); //Р­С‚Рѕ РѕРїР°СЃРЅРѕ?
+	AI_Output			(self, hero,"Info_Grd_237_FirstWarn_07_03"); //РЎРєР°Р¶РµРј С‚Р°Рє: Р»СѓС‡С€Рµ РѕС‚РґР°Р№ РњРќР• РІСЃСЋ СЃРІРѕСЋ СЂСѓРґСѓ, РїРѕС‚РѕРјСѓ С‡С‚Рѕ РѕСЂРєРё РІСЃРµ СЂР°РІРЅРѕ РїРѕСЂСѓР±СЏС‚ С‚РµР±СЏ РЅР° РєСѓСЃРєРё.
 
 	hero.aivar[AIV_LASTDISTTOWP] 		= Npc_GetDistToWP (hero,Grd_237_CHECKPOINT);
 
 	Info_ClearChoices	(Info_Grd_237_FirstWarn);
-	Info_AddChoice		(Info_Grd_237_FirstWarn,"Как-нибудь в другой раз.",		Info_Grd_237_FirstWarn_Info_NO);	
-	Info_AddChoice		(Info_Grd_237_FirstWarn,"Ладно, возьми за совет!",				Info_Grd_237_FirstWarn_Info_YES);	
-	Info_AddChoice		(Info_Grd_237_FirstWarn,"Я думаю, мне стоит вернуться назад.",	Info_Grd_237_FirstWarn_Info_RETREAT);	
+	Info_AddChoice		(Info_Grd_237_FirstWarn,"РљР°Рє-РЅРёР±СѓРґСЊ РІ РґСЂСѓРіРѕР№ СЂР°Р·.",		Info_Grd_237_FirstWarn_Info_NO);	
+	Info_AddChoice		(Info_Grd_237_FirstWarn,"Р›Р°РґРЅРѕ, РІРѕР·СЊРјРё Р·Р° СЃРѕРІРµС‚!",				Info_Grd_237_FirstWarn_Info_YES);	
+	Info_AddChoice		(Info_Grd_237_FirstWarn,"РЇ РґСѓРјР°СЋ, РјРЅРµ СЃС‚РѕРёС‚ РІРµСЂРЅСѓС‚СЊСЃСЏ РЅР°Р·Р°Рґ.",	Info_Grd_237_FirstWarn_Info_RETREAT);	
 };
 
 func void Info_Grd_237_FirstWarn_Info_RETREAT ()
 {
 	Info_ClearChoices	(Info_Grd_237_FirstWarn);
 
-	AI_Output			(hero, self,"Info_Grd_237_FirstWarn_15_04"); //Я думаю, мне стоит вернуться назад.
-	AI_Output			(self, hero,"Info_Grd_237_FirstWarn_07_05"); //Жаль, я уже начал думать о том, как потратить твою руду.
+	AI_Output			(hero, self,"Info_Grd_237_FirstWarn_15_04"); //РЇ РґСѓРјР°СЋ, РјРЅРµ СЃС‚РѕРёС‚ РІРµСЂРЅСѓС‚СЊСЃСЏ РЅР°Р·Р°Рґ.
+	AI_Output			(self, hero,"Info_Grd_237_FirstWarn_07_05"); //Р–Р°Р»СЊ, СЏ СѓР¶Рµ РЅР°С‡Р°Р» РґСѓРјР°С‚СЊ Рѕ С‚РѕРј, РєР°Рє РїРѕС‚СЂР°С‚РёС‚СЊ С‚РІРѕСЋ СЂСѓРґСѓ.
 
 	hero.aivar[AIV_GUARDPASSAGE_STATUS] = AIV_GPS_FIRSTWARN;
 
@@ -62,8 +62,8 @@ func void Info_Grd_237_FirstWarn_Info_YES ()
 {
 	Info_ClearChoices	(Info_Grd_237_FirstWarn);
 
-	AI_Output			(hero, self,"Info_Grd_237_FirstWarn_15_06"); //Ладно, возьми за совет!
-	AI_Output			(self, hero,"Info_Grd_237_FirstWarn_07_07"); //Это было очень щедро с твоей стороны.
+	AI_Output			(hero, self,"Info_Grd_237_FirstWarn_15_06"); //Р›Р°РґРЅРѕ, РІРѕР·СЊРјРё Р·Р° СЃРѕРІРµС‚!
+	AI_Output			(self, hero,"Info_Grd_237_FirstWarn_07_07"); //Р­С‚Рѕ Р±С‹Р»Рѕ РѕС‡РµРЅСЊ С‰РµРґСЂРѕ СЃ С‚РІРѕРµР№ СЃС‚РѕСЂРѕРЅС‹.
 	
 	var int ore;
 	ore = Npc_HasItems	(hero,	ItMiNugget);
@@ -79,8 +79,8 @@ func void Info_Grd_237_FirstWarn_Info_NO ()
 {
 	Info_ClearChoices	(Info_Grd_237_FirstWarn);
 
-	AI_Output			(hero, self,"Info_Grd_237_FirstWarn_15_08"); //Как-нибудь в другой раз.
-	AI_Output			(self, hero,"Info_Grd_237_FirstWarn_07_09"); //Тогда лучше стой там, где стоишь.
+	AI_Output			(hero, self,"Info_Grd_237_FirstWarn_15_08"); //РљР°Рє-РЅРёР±СѓРґСЊ РІ РґСЂСѓРіРѕР№ СЂР°Р·.
+	AI_Output			(self, hero,"Info_Grd_237_FirstWarn_07_09"); //РўРѕРіРґР° Р»СѓС‡С€Рµ СЃС‚РѕР№ С‚Р°Рј, РіРґРµ СЃС‚РѕРёС€СЊ.
 
 	hero.aivar[AIV_GUARDPASSAGE_STATUS] = AIV_GPS_FIRSTWARN;
 
@@ -113,7 +113,7 @@ FUNC INT Info_Grd_237_LastWarn_Condition()
 
 func int Info_Grd_237_LastWarn_Info()
 {
-	AI_Output (self, hero,"Info_Grd_237_LastWarn_07_01"); 		//Ты что, оглох? Еще один шаг, и ты станешь пищей для червей!
+	AI_Output (self, hero,"Info_Grd_237_LastWarn_07_01"); 		//РўС‹ С‡С‚Рѕ, РѕРіР»РѕС…? Р•С‰Рµ РѕРґРёРЅ С€Р°Рі, Рё С‚С‹ СЃС‚Р°РЅРµС€СЊ РїРёС‰РµР№ РґР»СЏ С‡РµСЂРІРµР№!
 
 	hero.aivar[AIV_LASTDISTTOWP] 		= Npc_GetDistToWP (hero,Grd_237_CHECKPOINT);
 	hero.aivar[AIV_GUARDPASSAGE_STATUS]	= AIV_GPS_LASTWARN;	
@@ -152,7 +152,7 @@ func int Info_Grd_237_Attack_Info()
 	hero.aivar[AIV_GUARDPASSAGE_STATUS]	= AIV_GPS_PUNISH;	
 	
 	B_FullStop			(self);	
-	AI_StopProcessInfos	(self);					//dem Spieler sofort wieder die Kontrolle zurьckgeben
+	AI_StopProcessInfos	(self);					//dem Spieler sofort wieder die Kontrolle zurСЊckgeben
 	B_SetAttackReason	(self,	AIV_AR_INTRUDER);
 	Npc_SetTarget		(self,	hero);
 	AI_StartState		(self,	ZS_Attack,	1,	"");

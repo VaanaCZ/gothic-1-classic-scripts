@@ -33,7 +33,7 @@ INSTANCE DIA_Melvin_Hello (C_INFO)
 	condition		= DIA_Melvin_Hello_Condition;
 	information		= DIA_Melvin_Hello_Info;
 	permanent		= 0;
-	description		= "Привет! Ты ведь из этого Лагеря, да?";
+	description		= "РџСЂРёРІРµС‚! РўС‹ РІРµРґСЊ РёР· СЌС‚РѕРіРѕ Р›Р°РіРµСЂСЏ, РґР°?";
 };
 
 FUNC INT DIA_Melvin_Hello_Condition()
@@ -43,12 +43,12 @@ FUNC INT DIA_Melvin_Hello_Condition()
 
 FUNC VOID DIA_Melvin_Hello_Info()
 {
-	AI_Output (other, self,"DIA_Melvin_Hello_15_00"); //Привет! Ты ведь из этого Лагеря, да?
-	AI_Output (self, other,"DIA_Melvin_Hello_03_01"); //Теперь уже да! Я ушел из Старого Лагеря еще неделю назад. У меня там остался приятель - Дасти. Я предложил ему пойти вместе, но он решил подождать.
+	AI_Output (other, self,"DIA_Melvin_Hello_15_00"); //РџСЂРёРІРµС‚! РўС‹ РІРµРґСЊ РёР· СЌС‚РѕРіРѕ Р›Р°РіРµСЂСЏ, РґР°?
+	AI_Output (self, other,"DIA_Melvin_Hello_03_01"); //РўРµРїРµСЂСЊ СѓР¶Рµ РґР°! РЇ СѓС€РµР» РёР· РЎС‚Р°СЂРѕРіРѕ Р›Р°РіРµСЂСЏ РµС‰Рµ РЅРµРґРµР»СЋ РЅР°Р·Р°Рґ. РЈ РјРµРЅСЏ С‚Р°Рј РѕСЃС‚Р°Р»СЃСЏ РїСЂРёСЏС‚РµР»СЊ - Р”Р°СЃС‚Рё. РЇ РїСЂРµРґР»РѕР¶РёР» РµРјСѓ РїРѕР№С‚Рё РІРјРµСЃС‚Рµ, РЅРѕ РѕРЅ СЂРµС€РёР» РїРѕРґРѕР¶РґР°С‚СЊ.
 
 	Log_CreateTopic		(CH1_RecruitDusty,	LOG_MISSION);
 	Log_SetTopicStatus	(CH1_RecruitDusty,	LOG_RUNNING);
-	B_LogEntry			(CH1_RecruitDusty,"Рудокоп Мелвин присоединился к Братству. Его знакомый Дасти тоже подумывает о том, чтобы покинуть Старый Лагерь.");
+	B_LogEntry			(CH1_RecruitDusty,"Р СѓРґРѕРєРѕРї РњРµР»РІРёРЅ РїСЂРёСЃРѕРµРґРёРЅРёР»СЃСЏ Рє Р‘СЂР°С‚СЃС‚РІСѓ. Р•РіРѕ Р·РЅР°РєРѕРјС‹Р№ Р”Р°СЃС‚Рё С‚РѕР¶Рµ РїРѕРґСѓРјС‹РІР°РµС‚ Рѕ С‚РѕРј, С‡С‚РѕР±С‹ РїРѕРєРёРЅСѓС‚СЊ РЎС‚Р°СЂС‹Р№ Р›Р°РіРµСЂСЊ.");
 };
 
 // **************************************************
@@ -62,7 +62,7 @@ INSTANCE DIA_Melvin_MetDusty (C_INFO)
 	condition		= DIA_Melvin_MetDusty_Condition;
 	information		= DIA_Melvin_MetDusty_Info;
 	permanent		= 0;
-	description		= "Я знаю Дасти - разговаривал с ним совсем недавно.";
+	description		= "РЇ Р·РЅР°СЋ Р”Р°СЃС‚Рё - СЂР°Р·РіРѕРІР°СЂРёРІР°Р» СЃ РЅРёРј СЃРѕРІСЃРµРј РЅРµРґР°РІРЅРѕ.";
 };
 
 FUNC INT DIA_Melvin_MetDusty_Condition()
@@ -75,9 +75,9 @@ FUNC INT DIA_Melvin_MetDusty_Condition()
 
 FUNC VOID DIA_Melvin_MetDusty_Info()
 {
-	AI_Output (other, self,"DIA_Melvin_MetDusty_15_00"); //Я знаю Дасти - разговаривал с ним совсем недавно.
-	AI_Output (self, other,"DIA_Melvin_MetDusty_03_01"); //Если увидишь его снова, скажи, что оставаться там глупо. Здесь в десять раз лучше, чем в Старом Лагере, где над тобой измываются эти болваны-стражники!
-	AI_Output (other, self,"DIA_Melvin_MetDusty_15_02"); //Я передам ему, если увижу.
+	AI_Output (other, self,"DIA_Melvin_MetDusty_15_00"); //РЇ Р·РЅР°СЋ Р”Р°СЃС‚Рё - СЂР°Р·РіРѕРІР°СЂРёРІР°Р» СЃ РЅРёРј СЃРѕРІСЃРµРј РЅРµРґР°РІРЅРѕ.
+	AI_Output (self, other,"DIA_Melvin_MetDusty_03_01"); //Р•СЃР»Рё СѓРІРёРґРёС€СЊ РµРіРѕ СЃРЅРѕРІР°, СЃРєР°Р¶Рё, С‡С‚Рѕ РѕСЃС‚Р°РІР°С‚СЊСЃСЏ С‚Р°Рј РіР»СѓРїРѕ. Р—РґРµСЃСЊ РІ РґРµСЃСЏС‚СЊ СЂР°Р· Р»СѓС‡С€Рµ, С‡РµРј РІ РЎС‚Р°СЂРѕРј Р›Р°РіРµСЂРµ, РіРґРµ РЅР°Рґ С‚РѕР±РѕР№ РёР·РјС‹РІР°СЋС‚СЃСЏ СЌС‚Рё Р±РѕР»РІР°РЅС‹-СЃС‚СЂР°Р¶РЅРёРєРё!
+	AI_Output (other, self,"DIA_Melvin_MetDusty_15_02"); //РЇ РїРµСЂРµРґР°Рј РµРјСѓ, РµСЃР»Рё СѓРІРёР¶Сѓ.
 };
 
 

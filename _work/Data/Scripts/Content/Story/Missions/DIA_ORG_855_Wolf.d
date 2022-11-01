@@ -34,7 +34,7 @@ INSTANCE DIA_Wolf_Hello (C_INFO)
 	condition	= DIA_Wolf_Hello_Condition;
 	information	= DIA_Wolf_Hello_Info;
 	permanent	= 0;
-	description = "Как тебя зовут?";
+	description = "РљР°Рє С‚РµР±СЏ Р·РѕРІСѓС‚?";
 };                       
 
 FUNC INT DIA_Wolf_Hello_Condition()
@@ -44,10 +44,10 @@ FUNC INT DIA_Wolf_Hello_Condition()
 
 FUNC VOID DIA_Wolf_Hello_Info()
 {
-	AI_Output			(other, self,"DIA_Wolf_Hello_15_00"); //Кто ты?
-	AI_Output			(self, other,"DIA_Wolf_Hello_09_01"); //Я - Волк. Я делаю доспехи.
+	AI_Output			(other, self,"DIA_Wolf_Hello_15_00"); //РљС‚Рѕ С‚С‹?
+	AI_Output			(self, other,"DIA_Wolf_Hello_09_01"); //РЇ - Р’РѕР»Рє. РЇ РґРµР»Р°СЋ РґРѕСЃРїРµС…Рё.
 
-	B_LogEntry			(GE_TraderNC,"Волк снабжает воров доспехами. Его можно найти перед своей хижиной в большой жилой пещере.");
+	B_LogEntry			(GE_TraderNC,"Р’РѕР»Рє СЃРЅР°Р±Р¶Р°РµС‚ РІРѕСЂРѕРІ РґРѕСЃРїРµС…Р°РјРё. Р•РіРѕ РјРѕР¶РЅРѕ РЅР°Р№С‚Рё РїРµСЂРµРґ СЃРІРѕРµР№ С…РёР¶РёРЅРѕР№ РІ Р±РѕР»СЊС€РѕР№ Р¶РёР»РѕР№ РїРµС‰РµСЂРµ.");
 };
 
 //****************************************
@@ -74,7 +74,7 @@ FUNC INT DIA_Wolf_GreetORG_Condition()
 
 FUNC VOID DIA_Wolf_GreetORG_Info()
 {
-	AI_Output (self, other,"DIA_Wolf_GreetORG_09_00"); //Эй! Теперь ты один из нас, малыш!
+	AI_Output (self, other,"DIA_Wolf_GreetORG_09_00"); //Р­Р№! РўРµРїРµСЂСЊ С‚С‹ РѕРґРёРЅ РёР· РЅР°СЃ, РјР°Р»С‹С€!
 };
 
 //****************************************
@@ -99,14 +99,14 @@ FUNC int  Org_855_Wolf_TRADE_Condition()
 
 FUNC void  Org_855_Wolf_TRADE_Info()
 {
-	AI_Output (other, self,"Org_855_Wolf_TRADE_15_00"); //Ты берешь в оплату что-нибудь, помимо руды?
-	AI_Output (self, other,"Org_855_Wolf_TRADE_09_01"); //Я покупаю у охотников меха и шкуры. Если у тебя есть что-нибудь, покажи.
+	AI_Output (other, self,"Org_855_Wolf_TRADE_15_00"); //РўС‹ Р±РµСЂРµС€СЊ РІ РѕРїР»Р°С‚Сѓ С‡С‚Рѕ-РЅРёР±СѓРґСЊ, РїРѕРјРёРјРѕ СЂСѓРґС‹?
+	AI_Output (self, other,"Org_855_Wolf_TRADE_09_01"); //РЇ РїРѕРєСѓРїР°СЋ Сѓ РѕС…РѕС‚РЅРёРєРѕРІ РјРµС…Р° Рё С€РєСѓСЂС‹. Р•СЃР»Рё Сѓ С‚РµР±СЏ РµСЃС‚СЊ С‡С‚Рѕ-РЅРёР±СѓРґСЊ, РїРѕРєР°Р¶Рё.
 	
 
 };
 
 //****************************************
-//				Wo Jдger
+//				Wo JРґger
 //****************************************
 
 instance  Org_855_Wolf_WhereHunter (C_INFO)
@@ -116,7 +116,7 @@ instance  Org_855_Wolf_WhereHunter (C_INFO)
 	condition		= Org_855_Wolf_WhereHunter_Condition;
 	information		= Org_855_Wolf_WhereHunter_Info;
 	permanent		= 1;
-	description		= "Как добываются эти самые меха и шкуры?"; 
+	description		= "РљР°Рє РґРѕР±С‹РІР°СЋС‚СЃСЏ СЌС‚Рё СЃР°РјС‹Рµ РјРµС…Р° Рё С€РєСѓСЂС‹?"; 
 };
 
 FUNC int  Org_855_Wolf_WhereHunter_Condition()
@@ -126,9 +126,9 @@ FUNC int  Org_855_Wolf_WhereHunter_Condition()
 
 FUNC void  Org_855_Wolf_WhereHunter_Info()
 {
-	AI_Output (other, self,"Org_855_Wolf_WhereHunter_15_00"); //Как добываются эти самые меха и шкуры?
-	AI_Output (self, other,"Org_855_Wolf_WhereHunter_09_01"); //По пути в Новый Лагерь ты встретишь Эйдана. Он может показать тебе, как снимать шкуры с убитых животных.
-	AI_Output (self, other,"Org_855_Wolf_WhereHunter_09_02"); //Рэтфорд и Дракс бродят к северу от Старого Лагеря. Это по пути к торгу.
+	AI_Output (other, self,"Org_855_Wolf_WhereHunter_15_00"); //РљР°Рє РґРѕР±С‹РІР°СЋС‚СЃСЏ СЌС‚Рё СЃР°РјС‹Рµ РјРµС…Р° Рё С€РєСѓСЂС‹?
+	AI_Output (self, other,"Org_855_Wolf_WhereHunter_09_01"); //РџРѕ РїСѓС‚Рё РІ РќРѕРІС‹Р№ Р›Р°РіРµСЂСЊ С‚С‹ РІСЃС‚СЂРµС‚РёС€СЊ Р­Р№РґР°РЅР°. РћРЅ РјРѕР¶РµС‚ РїРѕРєР°Р·Р°С‚СЊ С‚РµР±Рµ, РєР°Рє СЃРЅРёРјР°С‚СЊ С€РєСѓСЂС‹ СЃ СѓР±РёС‚С‹С… Р¶РёРІРѕС‚РЅС‹С….
+	AI_Output (self, other,"Org_855_Wolf_WhereHunter_09_02"); //Р СЌС‚С„РѕСЂРґ Рё Р”СЂР°РєСЃ Р±СЂРѕРґСЏС‚ Рє СЃРµРІРµСЂСѓ РѕС‚ РЎС‚Р°СЂРѕРіРѕ Р›Р°РіРµСЂСЏ. Р­С‚Рѕ РїРѕ РїСѓС‚Рё Рє С‚РѕСЂРіСѓ.
 };
 
 //****************************************
@@ -142,7 +142,7 @@ INSTANCE DIA_Wolf_SellArmor (C_INFO)
 	condition	= DIA_Wolf_SellArmor_Condition;
 	information	= DIA_Wolf_SellArmor_Info;
 	permanent	= 1;
-	description = "Мне нужны хорошие доспехи.";
+	description = "РњРЅРµ РЅСѓР¶РЅС‹ С…РѕСЂРѕС€РёРµ РґРѕСЃРїРµС…Рё.";
 };                       
 
 FUNC INT DIA_Wolf_SellArmor_Condition()
@@ -156,11 +156,11 @@ FUNC INT DIA_Wolf_SellArmor_Condition()
 
 FUNC VOID DIA_Wolf_SellArmor_Info()
 {
-	AI_Output (other, self,"DIA_Wolf_SellArmor_15_00"); //Мне нужны хорошие доспехи.
+	AI_Output (other, self,"DIA_Wolf_SellArmor_15_00"); //РњРЅРµ РЅСѓР¶РЅС‹ С…РѕСЂРѕС€РёРµ РґРѕСЃРїРµС…Рё.
 	
 	if ( (Npc_GetTrueGuild(other)==GIL_ORG) || (Npc_GetTrueGuild(other)==GIL_SLD) )
 	{
-		AI_Output (self, other,"DIA_Wolf_SellArmor_09_01"); //Ты теперь один из нас, и я могу продать тебе все, что пожелаешь.
+		AI_Output (self, other,"DIA_Wolf_SellArmor_09_01"); //РўС‹ С‚РµРїРµСЂСЊ РѕРґРёРЅ РёР· РЅР°СЃ, Рё СЏ РјРѕРіСѓ РїСЂРѕРґР°С‚СЊ С‚РµР±Рµ РІСЃРµ, С‡С‚Рѕ РїРѕР¶РµР»Р°РµС€СЊ.
 
 		Info_ClearChoices 	(DIA_Wolf_SellArmor);
 		Info_Addchoice 		(DIA_Wolf_SellArmor,DIALOG_BACK														,DIA_Wolf_SellArmor_BACK);
@@ -169,7 +169,7 @@ FUNC VOID DIA_Wolf_SellArmor_Info()
 	}
 	else
 	{
-		AI_Output (self, other,"DIA_Wolf_SellArmor_WRONGGUILD_09_00"); //Прости, парень, я не могу ничего тебе продать. Ларс убьет меня, если узнает, что я продал доспехи чужаку. 
+		AI_Output (self, other,"DIA_Wolf_SellArmor_WRONGGUILD_09_00"); //РџСЂРѕСЃС‚Рё, РїР°СЂРµРЅСЊ, СЏ РЅРµ РјРѕРіСѓ РЅРёС‡РµРіРѕ С‚РµР±Рµ РїСЂРѕРґР°С‚СЊ. Р›Р°СЂСЃ СѓР±СЊРµС‚ РјРµРЅСЏ, РµСЃР»Рё СѓР·РЅР°РµС‚, С‡С‚Рѕ СЏ РїСЂРѕРґР°Р» РґРѕСЃРїРµС…Рё С‡СѓР¶Р°РєСѓ. 
 	};
 };
 
@@ -180,15 +180,15 @@ func void DIA_Wolf_SellArmor_BACK()
 
 func void DIA_Wolf_SellArmor_M()
 {
-	AI_Output (other, self,"DIA_Wolf_SellArmor_M_15_01"); //Мне нужны средние доспехи. 
+	AI_Output (other, self,"DIA_Wolf_SellArmor_M_15_01"); //РњРЅРµ РЅСѓР¶РЅС‹ СЃСЂРµРґРЅРёРµ РґРѕСЃРїРµС…Рё. 
 	
 	if (Npc_HasItems (hero,ItMinugget)< VALUE_ORG_ARMOR_M)
 	{
-		AI_Output (self, other,"DIA_Wolf_SellArmor_M_09_02"); //Нет руды - нет доспехов.
+		AI_Output (self, other,"DIA_Wolf_SellArmor_M_09_02"); //РќРµС‚ СЂСѓРґС‹ - РЅРµС‚ РґРѕСЃРїРµС…РѕРІ.
 	}
 	else 
 	{
-		AI_Output			(self, other,"DIA_Wolf_SellArmor_M_09_03"); //Это надежные доспехи. Конечно, он не так хорош, как тот, что сейчас на мне, но он надежно защитит тебя.
+		AI_Output			(self, other,"DIA_Wolf_SellArmor_M_09_03"); //Р­С‚Рѕ РЅР°РґРµР¶РЅС‹Рµ РґРѕСЃРїРµС…Рё. РљРѕРЅРµС‡РЅРѕ, РѕРЅ РЅРµ С‚Р°Рє С…РѕСЂРѕС€, РєР°Рє С‚РѕС‚, С‡С‚Рѕ СЃРµР№С‡Р°СЃ РЅР° РјРЅРµ, РЅРѕ РѕРЅ РЅР°РґРµР¶РЅРѕ Р·Р°С‰РёС‚РёС‚ С‚РµР±СЏ.
 
 		B_GiveInvItems		(hero, self,ItMinugget,VALUE_ORG_ARMOR_M);
 		
@@ -202,15 +202,15 @@ func void DIA_Wolf_SellArmor_M()
 
 func void DIA_Wolf_SellArmor_H()
 {
-	AI_Output (other,self,"DIA_Wolf_SellArmor_H_15_01"); //Ты можешь продать мне тяжелые доспехи?
+	AI_Output (other,self,"DIA_Wolf_SellArmor_H_15_01"); //РўС‹ РјРѕР¶РµС€СЊ РїСЂРѕРґР°С‚СЊ РјРЅРµ С‚СЏР¶РµР»С‹Рµ РґРѕСЃРїРµС…Рё?
 
 	if (Npc_HasItems (hero,ItMinugget) < VALUE_ORG_ARMOR_H) 
 	{
-		AI_Output (self, other,"DIA_Wolf_SellArmor_H_09_02"); //Нет руды - нет доспехов.
+		AI_Output (self, other,"DIA_Wolf_SellArmor_H_09_02"); //РќРµС‚ СЂСѓРґС‹ - РЅРµС‚ РґРѕСЃРїРµС…РѕРІ.
 	}
 	else 
 	{
-		AI_Output			(self, other,"DIA_Wolf_SellArmor_H_09_03"); //Эти доспехи защитят тебя от любой опасности! Я сам ношу точно такие же и, как видишь, до сих пор еще жив - во многом благодаря этой броне. 
+		AI_Output			(self, other,"DIA_Wolf_SellArmor_H_09_03"); //Р­С‚Рё РґРѕСЃРїРµС…Рё Р·Р°С‰РёС‚СЏС‚ С‚РµР±СЏ РѕС‚ Р»СЋР±РѕР№ РѕРїР°СЃРЅРѕСЃС‚Рё! РЇ СЃР°Рј РЅРѕС€Сѓ С‚РѕС‡РЅРѕ С‚Р°РєРёРµ Р¶Рµ Рё, РєР°Рє РІРёРґРёС€СЊ, РґРѕ СЃРёС… РїРѕСЂ РµС‰Рµ Р¶РёРІ - РІРѕ РјРЅРѕРіРѕРј Р±Р»Р°РіРѕРґР°СЂСЏ СЌС‚РѕР№ Р±СЂРѕРЅРµ. 
 
 		B_GiveInvItems		(hero, self, ItMinugget,VALUE_ORG_ARMOR_H);
 		
@@ -234,7 +234,7 @@ instance  ORG_855_Wolf_TRAINOFFER (C_INFO)
 	information		= ORG_855_Wolf_TRAINOFFER_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Я хочу научиться стрелять из лука."; 
+	description		= "РЇ С…РѕС‡Сѓ РЅР°СѓС‡РёС‚СЊСЃСЏ СЃС‚СЂРµР»СЏС‚СЊ РёР· Р»СѓРєР°."; 
 };
 
 FUNC int  ORG_855_Wolf_TRAINOFFER_Condition()
@@ -247,13 +247,13 @@ FUNC int  ORG_855_Wolf_TRAINOFFER_Condition()
 
 FUNC void  ORG_855_Wolf_TRAINOFFER_Info()
 {
-	AI_Output (other, self,"ORG_855_Wolf_TRAINOFFER_Info_15_01"); //Я хочу научиться стрелять из лука.
-	AI_Output (self, other,"ORG_855_Wolf_TRAINOFFER_Info_09_02"); //Я могу научить тебя, но не задаром. В конце концов, мне тоже нужно есть.
-	AI_Output (other, self,"ORG_855_Wolf_TRAINOFFER_Info_15_03"); //Сколько?
-	AI_Output (self, other,"ORG_855_Wolf_TRAINOFFER_Info_09_04"); //Любой урок обойдется тебе в 50 кусков руды. Я не торгуюсь.
+	AI_Output (other, self,"ORG_855_Wolf_TRAINOFFER_Info_15_01"); //РЇ С…РѕС‡Сѓ РЅР°СѓС‡РёС‚СЊСЃСЏ СЃС‚СЂРµР»СЏС‚СЊ РёР· Р»СѓРєР°.
+	AI_Output (self, other,"ORG_855_Wolf_TRAINOFFER_Info_09_02"); //РЇ РјРѕРіСѓ РЅР°СѓС‡РёС‚СЊ С‚РµР±СЏ, РЅРѕ РЅРµ Р·Р°РґР°СЂРѕРј. Р’ РєРѕРЅС†Рµ РєРѕРЅС†РѕРІ, РјРЅРµ С‚РѕР¶Рµ РЅСѓР¶РЅРѕ РµСЃС‚СЊ.
+	AI_Output (other, self,"ORG_855_Wolf_TRAINOFFER_Info_15_03"); //РЎРєРѕР»СЊРєРѕ?
+	AI_Output (self, other,"ORG_855_Wolf_TRAINOFFER_Info_09_04"); //Р›СЋР±РѕР№ СѓСЂРѕРє РѕР±РѕР№РґРµС‚СЃСЏ С‚РµР±Рµ РІ 50 РєСѓСЃРєРѕРІ СЂСѓРґС‹. РЇ РЅРµ С‚РѕСЂРіСѓСЋСЃСЊ.
 	
 	Log_CreateTopic   	(GE_TeacherNC,	LOG_NOTE);
-	B_LogEntry			(GE_TeacherNC,"Вор по имени Волк может научить меня, как пользоваться луком.");
+	B_LogEntry			(GE_TeacherNC,"Р’РѕСЂ РїРѕ РёРјРµРЅРё Р’РѕР»Рє РјРѕР¶РµС‚ РЅР°СѓС‡РёС‚СЊ РјРµРЅСЏ, РєР°Рє РїРѕР»СЊР·РѕРІР°С‚СЊСЃСЏ Р»СѓРєРѕРј.");
 	
 };  
 /*------------------------------------------------------------------------
@@ -282,13 +282,13 @@ FUNC int  ORG_855_Wolf_TRAIN_Condition()
 };
 FUNC void  ORG_855_Wolf_TRAIN_Info()
 {
-	AI_Output (other, self,"ORG_855_Wolf_TRAIN_Info_15_01"); //Научи меня стрелять из лука.
+	AI_Output (other, self,"ORG_855_Wolf_TRAIN_Info_15_01"); //РќР°СѓС‡Рё РјРµРЅСЏ СЃС‚СЂРµР»СЏС‚СЊ РёР· Р»СѓРєР°.
 	if (Npc_HasItems (hero,ItMiNugget) >= 50) 
 	{
 		if B_GiveSkill(hero,NPC_TALENT_BOW,1,LPCOST_TALENT_BOW_1)
 		{
-			AI_Output (self, other,"ORG_855_Wolf_TRAIN_Info_09_02"); //Точность стрельбы зависит от твоей ловкости. Чем выше ловкость - тем точнее стрелы летят в цель.
-			AI_Output (self, other,"ORG_855_Wolf_TRAIN_Info_09_03"); //Ну а твой навык определяет расстояние, с которого ты сможешь поразить мишень. Для того чтобы стать хорошим лучником, ты должен развивать и то, и другое.
+			AI_Output (self, other,"ORG_855_Wolf_TRAIN_Info_09_02"); //РўРѕС‡РЅРѕСЃС‚СЊ СЃС‚СЂРµР»СЊР±С‹ Р·Р°РІРёСЃРёС‚ РѕС‚ С‚РІРѕРµР№ Р»РѕРІРєРѕСЃС‚Рё. Р§РµРј РІС‹С€Рµ Р»РѕРІРєРѕСЃС‚СЊ - С‚РµРј С‚РѕС‡РЅРµРµ СЃС‚СЂРµР»С‹ Р»РµС‚СЏС‚ РІ С†РµР»СЊ.
+			AI_Output (self, other,"ORG_855_Wolf_TRAIN_Info_09_03"); //РќСѓ Р° С‚РІРѕР№ РЅР°РІС‹Рє РѕРїСЂРµРґРµР»СЏРµС‚ СЂР°СЃСЃС‚РѕСЏРЅРёРµ, СЃ РєРѕС‚РѕСЂРѕРіРѕ С‚С‹ СЃРјРѕР¶РµС€СЊ РїРѕСЂР°Р·РёС‚СЊ РјРёС€РµРЅСЊ. Р”Р»СЏ С‚РѕРіРѕ С‡С‚РѕР±С‹ СЃС‚Р°С‚СЊ С…РѕСЂРѕС€РёРј Р»СѓС‡РЅРёРєРѕРј, С‚С‹ РґРѕР»Р¶РµРЅ СЂР°Р·РІРёРІР°С‚СЊ Рё С‚Рѕ, Рё РґСЂСѓРіРѕРµ.
 			B_GiveInvItems (hero, self, ItMiNugget,50);
 		};
 	};
@@ -319,15 +319,15 @@ FUNC int  ORG_855_Wolf_TRAINAGAIN_Condition()
 };
 FUNC void  ORG_855_Wolf_TRAINAGAIN_Info()
 {
-	AI_Output (other, self,"ORG_855_Wolf_TRAINAGAIN_Info_15_01"); //Я хочу повысить навык владения луком.
+	AI_Output (other, self,"ORG_855_Wolf_TRAINAGAIN_Info_15_01"); //РЇ С…РѕС‡Сѓ РїРѕРІС‹СЃРёС‚СЊ РЅР°РІС‹Рє РІР»Р°РґРµРЅРёСЏ Р»СѓРєРѕРј.
 	if (Npc_HasItems (hero,ItMiNugget) >= 50) 
 	{
 		if B_GiveSkill(hero,NPC_TALENT_BOW,2,LPCOST_TALENT_BOW_2)
 		{
-			AI_Output (self, other,"ORG_855_Wolf_TRAINAGAIN_Info_09_02"); //Тебя уже можно назвать хорошим охотником. Пришло время научиться тому, чего ты еще не знаешь.
-			AI_Output (self, other,"ORG_855_Wolf_TRAINAGAIN_Info_09_03"); //Для того чтобы стать хорошим лучником, одной ловкости мало. Важно понять, из чего складывается хороший выстрел.
-			AI_Output (self, other,"ORG_855_Wolf_TRAINAGAIN_Info_09_04"); //Тут многое приходится учитывать: зоркий взгляд и натяжение тетивы, полет стрелы и расстояние до мишени. И главное, всегда быть начеку!
-			AI_Output (self, other,"ORG_855_Wolf_TRAINAGAIN_Info_09_05"); //Ты уже очень хорошо освоил технику. Осталось найти применение новым знаниям и навыкам.
+			AI_Output (self, other,"ORG_855_Wolf_TRAINAGAIN_Info_09_02"); //РўРµР±СЏ СѓР¶Рµ РјРѕР¶РЅРѕ РЅР°Р·РІР°С‚СЊ С…РѕСЂРѕС€РёРј РѕС…РѕС‚РЅРёРєРѕРј. РџСЂРёС€Р»Рѕ РІСЂРµРјСЏ РЅР°СѓС‡РёС‚СЊСЃСЏ С‚РѕРјСѓ, С‡РµРіРѕ С‚С‹ РµС‰Рµ РЅРµ Р·РЅР°РµС€СЊ.
+			AI_Output (self, other,"ORG_855_Wolf_TRAINAGAIN_Info_09_03"); //Р”Р»СЏ С‚РѕРіРѕ С‡С‚РѕР±С‹ СЃС‚Р°С‚СЊ С…РѕСЂРѕС€РёРј Р»СѓС‡РЅРёРєРѕРј, РѕРґРЅРѕР№ Р»РѕРІРєРѕСЃС‚Рё РјР°Р»Рѕ. Р’Р°Р¶РЅРѕ РїРѕРЅСЏС‚СЊ, РёР· С‡РµРіРѕ СЃРєР»Р°РґС‹РІР°РµС‚СЃСЏ С…РѕСЂРѕС€РёР№ РІС‹СЃС‚СЂРµР».
+			AI_Output (self, other,"ORG_855_Wolf_TRAINAGAIN_Info_09_04"); //РўСѓС‚ РјРЅРѕРіРѕРµ РїСЂРёС…РѕРґРёС‚СЃСЏ СѓС‡РёС‚С‹РІР°С‚СЊ: Р·РѕСЂРєРёР№ РІР·РіР»СЏРґ Рё РЅР°С‚СЏР¶РµРЅРёРµ С‚РµС‚РёРІС‹, РїРѕР»РµС‚ СЃС‚СЂРµР»С‹ Рё СЂР°СЃСЃС‚РѕСЏРЅРёРµ РґРѕ РјРёС€РµРЅРё. Р РіР»Р°РІРЅРѕРµ, РІСЃРµРіРґР° Р±С‹С‚СЊ РЅР°С‡РµРєСѓ!
+			AI_Output (self, other,"ORG_855_Wolf_TRAINAGAIN_Info_09_05"); //РўС‹ СѓР¶Рµ РѕС‡РµРЅСЊ С…РѕСЂРѕС€Рѕ РѕСЃРІРѕРёР» С‚РµС…РЅРёРєСѓ. РћСЃС‚Р°Р»РѕСЃСЊ РЅР°Р№С‚Рё РїСЂРёРјРµРЅРµРЅРёРµ РЅРѕРІС‹Рј Р·РЅР°РЅРёСЏРј Рё РЅР°РІС‹РєР°Рј.
 			
 			B_GiveInvItems (hero, self, ItMiNugget,50);
 		};
@@ -343,7 +343,7 @@ INSTANCE ORG_855_Wolf_Teach(C_INFO)
 	condition	= ORG_855_Wolf_Teach_Condition;
 	information	= ORG_855_Wolf_Teach_Info;
 	permanent	= 1;
-	description = "Ты можешь чему-нибудь научить меня?";
+	description = "РўС‹ РјРѕР¶РµС€СЊ С‡РµРјСѓ-РЅРёР±СѓРґСЊ РЅР°СѓС‡РёС‚СЊ РјРµРЅСЏ?";
 };                       
 
 FUNC INT ORG_855_Wolf_Teach_Condition()
@@ -356,13 +356,13 @@ FUNC INT ORG_855_Wolf_Teach_Condition()
 
 FUNC VOID ORG_855_Wolf_Teach_Info()
 {
-	AI_Output(other,self,"ORG_855_Wolf_Teach_15_00"); //Ты можешь меня чему-нибудь научить?
-	AI_Output(self,other,"ORG_855_Wolf_Teach_09_01"); //Успех охоты во многом зависит от ловкости.
+	AI_Output(other,self,"ORG_855_Wolf_Teach_15_00"); //РўС‹ РјРѕР¶РµС€СЊ РјРµРЅСЏ С‡РµРјСѓ-РЅРёР±СѓРґСЊ РЅР°СѓС‡РёС‚СЊ?
+	AI_Output(self,other,"ORG_855_Wolf_Teach_09_01"); //РЈСЃРїРµС… РѕС…РѕС‚С‹ РІРѕ РјРЅРѕРіРѕРј Р·Р°РІРёСЃРёС‚ РѕС‚ Р»РѕРІРєРѕСЃС‚Рё.
 	
 	if (log_wolftrain == FALSE)
 	{
 	Log_CreateTopic   	(GE_TeacherNC,LOG_NOTE);
-	B_LogEntry			(GE_TeacherNC,"Волк может помочь мне натренировать ловкость.");
+	B_LogEntry			(GE_TeacherNC,"Р’РѕР»Рє РјРѕР¶РµС‚ РїРѕРјРѕС‡СЊ РјРЅРµ РЅР°С‚СЂРµРЅРёСЂРѕРІР°С‚СЊ Р»РѕРІРєРѕСЃС‚СЊ.");
 	log_wolftrain = TRUE;
 	};
 	
@@ -417,7 +417,7 @@ INSTANCE Info_Wolf_GOOD (C_INFO)
 	information	= Info_Wolf_GOOD_Info;
 	important	= 0;	
 	permanent	= 0;
-	description = "Горн сказал, что ты хотел срочно поговорить со мной.";
+	description = "Р“РѕСЂРЅ СЃРєР°Р·Р°Р», С‡С‚Рѕ С‚С‹ С…РѕС‚РµР» СЃСЂРѕС‡РЅРѕ РїРѕРіРѕРІРѕСЂРёС‚СЊ СЃРѕ РјРЅРѕР№.";
 };                       
 
 FUNC INT Info_Wolf_GOOD_Condition()
@@ -430,12 +430,12 @@ FUNC INT Info_Wolf_GOOD_Condition()
 
 func VOID Info_Wolf_GOOD_Info()
 {
-	AI_Output 			(hero,self,"Info_Wolf_GOOD_15_01"); //Горн сказал, что ты хотел срочно поговорить со мной.
-	AI_Output 			(self,hero,"Info_Wolf_GOOD_09_02"); //Рад, что ты забежал, прежде чем уйти.
+	AI_Output 			(hero,self,"Info_Wolf_GOOD_15_01"); //Р“РѕСЂРЅ СЃРєР°Р·Р°Р», С‡С‚Рѕ С‚С‹ С…РѕС‚РµР» СЃСЂРѕС‡РЅРѕ РїРѕРіРѕРІРѕСЂРёС‚СЊ СЃРѕ РјРЅРѕР№.
+	AI_Output 			(self,hero,"Info_Wolf_GOOD_09_02"); //Р Р°Рґ, С‡С‚Рѕ С‚С‹ Р·Р°Р±РµР¶Р°Р», РїСЂРµР¶РґРµ С‡РµРј СѓР№С‚Рё.
 	if (!Npc_KnowsInfo(hero,Info_Gorn_FMCENTRANCE))
 	{
-		AI_Output 			(hero,self,"Info_Wolf_GOOD_15_03"); //Прежде чем уйти куда?
-		AI_Output 			(self,hero,"Info_Wolf_GOOD_09_04"); //В нашу Не-Такую-Уж-Свободную Шахту.
+		AI_Output 			(hero,self,"Info_Wolf_GOOD_15_03"); //РџСЂРµР¶РґРµ С‡РµРј СѓР№С‚Рё РєСѓРґР°?
+		AI_Output 			(self,hero,"Info_Wolf_GOOD_09_04"); //Р’ РЅР°С€Сѓ РќРµ-РўР°РєСѓСЋ-РЈР¶-РЎРІРѕР±РѕРґРЅСѓСЋ РЁР°С…С‚Сѓ.
 	};
 };
 
@@ -449,7 +449,7 @@ INSTANCE Info_Wolf_SPEAK (C_INFO)
 	information	= Info_Wolf_SPEAK_Info;
 	important	= 0;	
 	permanent	= 0;
-	description = "Как жизнь?";
+	description = "РљР°Рє Р¶РёР·РЅСЊ?";
 };                       
 
 FUNC INT Info_Wolf_SPEAK_Condition()
@@ -462,14 +462,14 @@ FUNC INT Info_Wolf_SPEAK_Condition()
 
 func VOID Info_Wolf_SPEAK_Info()
 {
-	AI_Output 			(hero,self,"Info_Wolf_SPEAK_15_01"); //А в чем дело?
-	AI_Output 			(self,hero,"Info_Wolf_SPEAK_09_02"); //Да, у меня появилась идея, как сделать абсолютно новые доспехи.
-	AI_Output 			(hero,self,"Info_Wolf_SPEAK_15_03"); //Да, у меня появилась идея, как сделать абсолютно новые доспехи.
-	AI_Output 			(self,hero,"Info_Wolf_SPEAK_09_04"); //Пластины панциря ползунов - самый прочный материал из всех, что мне приходилось видеть.
-	AI_Output 			(self,hero,"Info_Wolf_SPEAK_09_05"); //Я, разумеется, говорю не о тех маленьких беззащитных тварях, что обитают в шахте у Гомеза...
-	AI_Output 			(self,hero,"Info_Wolf_SPEAK_09_06"); //... НЕЕЕТ. Другие. Куда более опасные, в нашей шахте.
-	AI_Output 			(self,hero,"Info_Wolf_SPEAK_09_07"); //Панцири у этих тварей практически непробиваемые!
-	AI_Output 			(self,hero,"Info_Wolf_SPEAK_09_08"); //Если бы ты принес мне несколько таких пластинок, я бы сделал из них доспехи.
+	AI_Output 			(hero,self,"Info_Wolf_SPEAK_15_01"); //Рђ РІ С‡РµРј РґРµР»Рѕ?
+	AI_Output 			(self,hero,"Info_Wolf_SPEAK_09_02"); //Р”Р°, Сѓ РјРµРЅСЏ РїРѕСЏРІРёР»Р°СЃСЊ РёРґРµСЏ, РєР°Рє СЃРґРµР»Р°С‚СЊ Р°Р±СЃРѕР»СЋС‚РЅРѕ РЅРѕРІС‹Рµ РґРѕСЃРїРµС…Рё.
+	AI_Output 			(hero,self,"Info_Wolf_SPEAK_15_03"); //Р”Р°, Сѓ РјРµРЅСЏ РїРѕСЏРІРёР»Р°СЃСЊ РёРґРµСЏ, РєР°Рє СЃРґРµР»Р°С‚СЊ Р°Р±СЃРѕР»СЋС‚РЅРѕ РЅРѕРІС‹Рµ РґРѕСЃРїРµС…Рё.
+	AI_Output 			(self,hero,"Info_Wolf_SPEAK_09_04"); //РџР»Р°СЃС‚РёРЅС‹ РїР°РЅС†РёСЂСЏ РїРѕР»Р·СѓРЅРѕРІ - СЃР°РјС‹Р№ РїСЂРѕС‡РЅС‹Р№ РјР°С‚РµСЂРёР°Р» РёР· РІСЃРµС…, С‡С‚Рѕ РјРЅРµ РїСЂРёС…РѕРґРёР»РѕСЃСЊ РІРёРґРµС‚СЊ.
+	AI_Output 			(self,hero,"Info_Wolf_SPEAK_09_05"); //РЇ, СЂР°Р·СѓРјРµРµС‚СЃСЏ, РіРѕРІРѕСЂСЋ РЅРµ Рѕ С‚РµС… РјР°Р»РµРЅСЊРєРёС… Р±РµР·Р·Р°С‰РёС‚РЅС‹С… С‚РІР°СЂСЏС…, С‡С‚Рѕ РѕР±РёС‚Р°СЋС‚ РІ С€Р°С…С‚Рµ Сѓ Р“РѕРјРµР·Р°...
+	AI_Output 			(self,hero,"Info_Wolf_SPEAK_09_06"); //... РќР•Р•Р•Рў. Р”СЂСѓРіРёРµ. РљСѓРґР° Р±РѕР»РµРµ РѕРїР°СЃРЅС‹Рµ, РІ РЅР°С€РµР№ С€Р°С…С‚Рµ.
+	AI_Output 			(self,hero,"Info_Wolf_SPEAK_09_07"); //РџР°РЅС†РёСЂРё Сѓ СЌС‚РёС… С‚РІР°СЂРµР№ РїСЂР°РєС‚РёС‡РµСЃРєРё РЅРµРїСЂРѕР±РёРІР°РµРјС‹Рµ!
+	AI_Output 			(self,hero,"Info_Wolf_SPEAK_09_08"); //Р•СЃР»Рё Р±С‹ С‚С‹ РїСЂРёРЅРµСЃ РјРЅРµ РЅРµСЃРєРѕР»СЊРєРѕ С‚Р°РєРёС… РїР»Р°СЃС‚РёРЅРѕРє, СЏ Р±С‹ СЃРґРµР»Р°Р» РёР· РЅРёС… РґРѕСЃРїРµС…Рё.
 };
 
 //---------------------------------------------------------------------
@@ -482,7 +482,7 @@ INSTANCE Info_Wolf_SKIN (C_INFO)
 	information	= Info_Wolf_SKIN_Info;
 	important	= 0;	
 	permanent	= 0;
-	description = "Как снять эти пластины с ползунов?";
+	description = "РљР°Рє СЃРЅСЏС‚СЊ СЌС‚Рё РїР»Р°СЃС‚РёРЅС‹ СЃ РїРѕР»Р·СѓРЅРѕРІ?";
 };                       
 
 FUNC INT Info_Wolf_SKIN_Condition()
@@ -495,20 +495,20 @@ FUNC INT Info_Wolf_SKIN_Condition()
 
 func VOID Info_Wolf_SKIN_Info()
 {
-	AI_Output 			(hero,self,"Info_Wolf_SKIN_15_01"); //Как снять эти пластины с ползунов?
-	AI_Output 			(self,hero,"Info_Wolf_SKIN_09_02"); //Это довольно легко. Черные пластины крепятся к телу только по краям. 
-	AI_Output 			(self,hero,"Info_Wolf_SKIN_09_03"); //Берешь любой острый клинок и вырезаешь пластину по контуру.
-	AI_Output 			(hero,self,"Info_Wolf_SKIN_15_04"); //Ладно, понял! Пойду охотиться на ползунов!
+	AI_Output 			(hero,self,"Info_Wolf_SKIN_15_01"); //РљР°Рє СЃРЅСЏС‚СЊ СЌС‚Рё РїР»Р°СЃС‚РёРЅС‹ СЃ РїРѕР»Р·СѓРЅРѕРІ?
+	AI_Output 			(self,hero,"Info_Wolf_SKIN_09_02"); //Р­С‚Рѕ РґРѕРІРѕР»СЊРЅРѕ Р»РµРіРєРѕ. Р§РµСЂРЅС‹Рµ РїР»Р°СЃС‚РёРЅС‹ РєСЂРµРїСЏС‚СЃСЏ Рє С‚РµР»Сѓ С‚РѕР»СЊРєРѕ РїРѕ РєСЂР°СЏРј. 
+	AI_Output 			(self,hero,"Info_Wolf_SKIN_09_03"); //Р‘РµСЂРµС€СЊ Р»СЋР±РѕР№ РѕСЃС‚СЂС‹Р№ РєР»РёРЅРѕРє Рё РІС‹СЂРµР·Р°РµС€СЊ РїР»Р°СЃС‚РёРЅСѓ РїРѕ РєРѕРЅС‚СѓСЂСѓ.
+	AI_Output 			(hero,self,"Info_Wolf_SKIN_15_04"); //Р›Р°РґРЅРѕ, РїРѕРЅСЏР»! РџРѕР№РґСѓ РѕС…РѕС‚РёС‚СЊСЃСЏ РЅР° РїРѕР»Р·СѓРЅРѕРІ!
 
 	Knows_GetMCPlates = TRUE;
-	PrintScreen	("Изучить: Вырезание пластин для доспехов", -1,-1,"FONT_OLD_20_WHITE.TGA",3);
+	PrintScreen	("РР·СѓС‡РёС‚СЊ: Р’С‹СЂРµР·Р°РЅРёРµ РїР»Р°СЃС‚РёРЅ РґР»СЏ РґРѕСЃРїРµС…РѕРІ", -1,-1,"FONT_OLD_20_WHITE.TGA",3);
 	
 	Log_CreateTopic		(CH4_MCPlateArmor,	LOG_MISSION);
 	Log_SetTopicStatus	(CH4_MCPlateArmor,	LOG_RUNNING);
-	B_LogEntry			(CH4_MCPlateArmor,"Вор по имени Волк из Нового Лагеря предложил мне сделать мне доспехи из пластин панциря ползунов. Он показал мне, как вырезать пластины у мертвых тварей."); 
+	B_LogEntry			(CH4_MCPlateArmor,"Р’РѕСЂ РїРѕ РёРјРµРЅРё Р’РѕР»Рє РёР· РќРѕРІРѕРіРѕ Р›Р°РіРµСЂСЏ РїСЂРµРґР»РѕР¶РёР» РјРЅРµ СЃРґРµР»Р°С‚СЊ РјРЅРµ РґРѕСЃРїРµС…Рё РёР· РїР»Р°СЃС‚РёРЅ РїР°РЅС†РёСЂСЏ РїРѕР»Р·СѓРЅРѕРІ. РћРЅ РїРѕРєР°Р·Р°Р» РјРЅРµ, РєР°Рє РІС‹СЂРµР·Р°С‚СЊ РїР»Р°СЃС‚РёРЅС‹ Сѓ РјРµСЂС‚РІС‹С… С‚РІР°СЂРµР№."); 
 	
 	Log_CreateTopic (GE_AnimalTrophies,LOG_NOTE);
-	B_LogEntry (GE_AnimalTrophies,"Знание того, как вырезать пластины из панциря ползунов-воинов.");
+	B_LogEntry (GE_AnimalTrophies,"Р—РЅР°РЅРёРµ С‚РѕРіРѕ, РєР°Рє РІС‹СЂРµР·Р°С‚СЊ РїР»Р°СЃС‚РёРЅС‹ РёР· РїР°РЅС†РёСЂСЏ РїРѕР»Р·СѓРЅРѕРІ-РІРѕРёРЅРѕРІ.");
 
 	AI_StopProcessInfos	(self);
 };
@@ -523,7 +523,7 @@ INSTANCE Info_Wolf_PROFIT (C_INFO)
 	information	= Info_Wolf_PROFIT_Info;
 	important	= 0;	
 	permanent	= 0;
-	description = "Но только не говори, что ты делаешь доспехи задаром!";
+	description = "РќРѕ С‚РѕР»СЊРєРѕ РЅРµ РіРѕРІРѕСЂРё, С‡С‚Рѕ С‚С‹ РґРµР»Р°РµС€СЊ РґРѕСЃРїРµС…Рё Р·Р°РґР°СЂРѕРј!";
 };                       
 
 FUNC INT Info_Wolf_PROFIT_Condition()
@@ -536,8 +536,8 @@ FUNC INT Info_Wolf_PROFIT_Condition()
 
 func VOID Info_Wolf_PROFIT_Info()
 {
-	AI_Output 			(hero,self,"Info_Wolf_PROFIT_15_01"); //Но только не говори, что ты собираешься сделать для меня новые доспехи задаром!
-	AI_Output 			(self,hero,"Info_Wolf_PROFIT_09_02"); //Не совсем... Если мне удастся сделать из этих пластин хорошие доспехи, я... очень скоро... очень много... ладно, забудь об этом!
+	AI_Output 			(hero,self,"Info_Wolf_PROFIT_15_01"); //РќРѕ С‚РѕР»СЊРєРѕ РЅРµ РіРѕРІРѕСЂРё, С‡С‚Рѕ С‚С‹ СЃРѕР±РёСЂР°РµС€СЊСЃСЏ СЃРґРµР»Р°С‚СЊ РґР»СЏ РјРµРЅСЏ РЅРѕРІС‹Рµ РґРѕСЃРїРµС…Рё Р·Р°РґР°СЂРѕРј!
+	AI_Output 			(self,hero,"Info_Wolf_PROFIT_09_02"); //РќРµ СЃРѕРІСЃРµРј... Р•СЃР»Рё РјРЅРµ СѓРґР°СЃС‚СЃСЏ СЃРґРµР»Р°С‚СЊ РёР· СЌС‚РёС… РїР»Р°СЃС‚РёРЅ С…РѕСЂРѕС€РёРµ РґРѕСЃРїРµС…Рё, СЏ... РѕС‡РµРЅСЊ СЃРєРѕСЂРѕ... РѕС‡РµРЅСЊ РјРЅРѕРіРѕ... Р»Р°РґРЅРѕ, Р·Р°Р±СѓРґСЊ РѕР± СЌС‚РѕРј!
 };
 
 //---------------------------------------------------------------------
@@ -550,7 +550,7 @@ INSTANCE Info_Wolf_MCPLATESFEW (C_INFO)
 	information	= Info_Wolf_MCPLATESFEW_Info;
 	important	= 0;	
 	permanent	= 0;
-	description = "Я добыл несколько пластин!";
+	description = "РЇ РґРѕР±С‹Р» РЅРµСЃРєРѕР»СЊРєРѕ РїР»Р°СЃС‚РёРЅ!";
 };                       
 
 FUNC INT Info_Wolf_MCPLATESFEW_Condition()
@@ -565,9 +565,9 @@ FUNC INT Info_Wolf_MCPLATESFEW_Condition()
 
 func VOID Info_Wolf_MCPLATESFEW_Info()
 {
-	AI_Output 			(hero,self,"Info_Wolf_MCPLATESFEW_15_01"); //Я добыл несколько пластин!
-	AI_Output 			(self,hero,"Info_Wolf_MCPLATESFEW_09_02"); //Этого недостаточно! Их не хватит на доспехи.
-	AI_Output 			(self,hero,"Info_Wolf_MCPLATESFEW_09_03"); //Добудь еще несколько пластин!
+	AI_Output 			(hero,self,"Info_Wolf_MCPLATESFEW_15_01"); //РЇ РґРѕР±С‹Р» РЅРµСЃРєРѕР»СЊРєРѕ РїР»Р°СЃС‚РёРЅ!
+	AI_Output 			(self,hero,"Info_Wolf_MCPLATESFEW_09_02"); //Р­С‚РѕРіРѕ РЅРµРґРѕСЃС‚Р°С‚РѕС‡РЅРѕ! РС… РЅРµ С…РІР°С‚РёС‚ РЅР° РґРѕСЃРїРµС…Рё.
+	AI_Output 			(self,hero,"Info_Wolf_MCPLATESFEW_09_03"); //Р”РѕР±СѓРґСЊ РµС‰Рµ РЅРµСЃРєРѕР»СЊРєРѕ РїР»Р°СЃС‚РёРЅ!
 };
 
 //---------------------------------------------------------------------
@@ -580,7 +580,7 @@ INSTANCE Info_Wolf_MCPLATESENOUGH (C_INFO)
 	information	= Info_Wolf_MCPLATESENOUGH_Info;
 	important	= 0;	
 	permanent	= 0;
-	description = "Я добыл целую кучу этих пластин!";
+	description = "РЇ РґРѕР±С‹Р» С†РµР»СѓСЋ РєСѓС‡Сѓ СЌС‚РёС… РїР»Р°СЃС‚РёРЅ!";
 };                       
 
 FUNC INT Info_Wolf_MCPLATESENOUGH_Condition()
@@ -594,15 +594,15 @@ FUNC INT Info_Wolf_MCPLATESENOUGH_Condition()
 
 func VOID Info_Wolf_MCPLATESENOUGH_Info()
 {
-	AI_Output 			(hero,self,"Info_Wolf_MCPLATESENOUGH_15_01"); //Я добыл целую кучу этих пластин!
-	AI_Output 			(self,hero,"Info_Wolf_MCPLATESENOUGH_09_02"); //Невероятно! Я немедленно приступаю к работе!
-	AI_Output 			(hero,self,"Info_Wolf_MCPLATESENOUGH_15_03"); //Сколько времени это займет?
-	AI_Output 			(self,hero,"Info_Wolf_MCPLATESENOUGH_09_04"); //Не имею ни малейшего понятия. Это же новое дело, приятель!
-	AI_Output 			(self,hero,"Info_Wolf_MCPLATESENOUGH_09_05"); //Забегай сюда, когда будешь поблизости!
+	AI_Output 			(hero,self,"Info_Wolf_MCPLATESENOUGH_15_01"); //РЇ РґРѕР±С‹Р» С†РµР»СѓСЋ РєСѓС‡Сѓ СЌС‚РёС… РїР»Р°СЃС‚РёРЅ!
+	AI_Output 			(self,hero,"Info_Wolf_MCPLATESENOUGH_09_02"); //РќРµРІРµСЂРѕСЏС‚РЅРѕ! РЇ РЅРµРјРµРґР»РµРЅРЅРѕ РїСЂРёСЃС‚СѓРїР°СЋ Рє СЂР°Р±РѕС‚Рµ!
+	AI_Output 			(hero,self,"Info_Wolf_MCPLATESENOUGH_15_03"); //РЎРєРѕР»СЊРєРѕ РІСЂРµРјРµРЅРё СЌС‚Рѕ Р·Р°Р№РјРµС‚?
+	AI_Output 			(self,hero,"Info_Wolf_MCPLATESENOUGH_09_04"); //РќРµ РёРјРµСЋ РЅРё РјР°Р»РµР№С€РµРіРѕ РїРѕРЅСЏС‚РёСЏ. Р­С‚Рѕ Р¶Рµ РЅРѕРІРѕРµ РґРµР»Рѕ, РїСЂРёСЏС‚РµР»СЊ!
+	AI_Output 			(self,hero,"Info_Wolf_MCPLATESENOUGH_09_05"); //Р—Р°Р±РµРіР°Р№ СЃСЋРґР°, РєРѕРіРґР° Р±СѓРґРµС€СЊ РїРѕР±Р»РёР·РѕСЃС‚Рё!
 
 	MCPlatesDelivered = TRUE;
 
-	B_LogEntry			(CH4_MCPlateArmor,"Волк получил 15 пластин от меня. Теперь ему нужно немного времени.");
+	B_LogEntry			(CH4_MCPlateArmor,"Р’РѕР»Рє РїРѕР»СѓС‡РёР» 15 РїР»Р°СЃС‚РёРЅ РѕС‚ РјРµРЅСЏ. РўРµРїРµСЂСЊ РµРјСѓ РЅСѓР¶РЅРѕ РЅРµРјРЅРѕРіРѕ РІСЂРµРјРµРЅРё.");
 	B_GiveXP			(XP_DeliveredMCPlates);
 	
 	B_GiveInvItems	(hero, self, ItAt_Crawler_02,	15);
@@ -619,7 +619,7 @@ INSTANCE Info_Wolf_ARMORINWORK (C_INFO)
 	information	= Info_Wolf_ARMORINWORK_Info;
 	important	= 0;	
 	permanent	= 1;
-	description = "Как продвигается изготовление доспехов?";
+	description = "РљР°Рє РїСЂРѕРґРІРёРіР°РµС‚СЃСЏ РёР·РіРѕС‚РѕРІР»РµРЅРёРµ РґРѕСЃРїРµС…РѕРІ?";
 };                       
 
 FUNC INT Info_Wolf_ARMORINWORK_Condition()
@@ -633,9 +633,9 @@ FUNC INT Info_Wolf_ARMORINWORK_Condition()
 
 func VOID Info_Wolf_ARMORINWORK_Info()
 {
-	AI_Output 			(hero,self,"Info_Wolf_ARMORINWORK_15_01"); //Как продвигается изготовление доспехов?
-	AI_Output 			(self,hero,"Info_Wolf_ARMORINWORK_09_02"); //Это займет еще немного времени, дружище! Эти пластины слишком прочные. Я до сих пор не придумал, как скрепить их вместе.
-	AI_Output 			(self,hero,"Info_Wolf_ARMORINWORK_09_03"); //Дай мне еще немного времени, и я что-нибудь обязательно придумаю!
+	AI_Output 			(hero,self,"Info_Wolf_ARMORINWORK_15_01"); //РљР°Рє РїСЂРѕРґРІРёРіР°РµС‚СЃСЏ РёР·РіРѕС‚РѕРІР»РµРЅРёРµ РґРѕСЃРїРµС…РѕРІ?
+	AI_Output 			(self,hero,"Info_Wolf_ARMORINWORK_09_02"); //Р­С‚Рѕ Р·Р°Р№РјРµС‚ РµС‰Рµ РЅРµРјРЅРѕРіРѕ РІСЂРµРјРµРЅРё, РґСЂСѓР¶РёС‰Рµ! Р­С‚Рё РїР»Р°СЃС‚РёРЅС‹ СЃР»РёС€РєРѕРј РїСЂРѕС‡РЅС‹Рµ. РЇ РґРѕ СЃРёС… РїРѕСЂ РЅРµ РїСЂРёРґСѓРјР°Р», РєР°Рє СЃРєСЂРµРїРёС‚СЊ РёС… РІРјРµСЃС‚Рµ.
+	AI_Output 			(self,hero,"Info_Wolf_ARMORINWORK_09_03"); //Р”Р°Р№ РјРЅРµ РµС‰Рµ РЅРµРјРЅРѕРіРѕ РІСЂРµРјРµРЅРё, Рё СЏ С‡С‚Рѕ-РЅРёР±СѓРґСЊ РѕР±СЏР·Р°С‚РµР»СЊРЅРѕ РїСЂРёРґСѓРјР°СЋ!
 	AI_StopProcessInfos	(self);
 };
 
@@ -649,7 +649,7 @@ INSTANCE Info_Wolf_ARMORFINISHED (C_INFO)
 	information	= Info_Wolf_ARMORFINISHED_Info;
 	important	= 0;	
 	permanent	= 0;
-	description = "Как продвигается изготовление доспехов?";
+	description = "РљР°Рє РїСЂРѕРґРІРёРіР°РµС‚СЃСЏ РёР·РіРѕС‚РѕРІР»РµРЅРёРµ РґРѕСЃРїРµС…РѕРІ?";
 };                       
 
 FUNC INT Info_Wolf_ARMORFINISHED_Condition()
@@ -663,14 +663,14 @@ FUNC INT Info_Wolf_ARMORFINISHED_Condition()
 
 func VOID Info_Wolf_ARMORFINISHED_Info()
 {
-	AI_Output 			(hero,self,"Info_Wolf_ARMORFINISHED_15_01"); //Как продвигается изготовление доспехов?
-	AI_Output 			(self,hero,"Info_Wolf_ARMORFINISHED_09_02"); //Я наконец-то нашел способ, как скрепить пластины!
-	AI_Output 			(hero,self,"Info_Wolf_ARMORFINISHED_15_03"); //Иными словами - доспехи готовы?
-	AI_Output 			(self,hero,"Info_Wolf_ARMORFINISHED_09_04"); //Да, приятель. Вот они. Лучшие доспехи во всем Лагере.
-	AI_Output 			(hero,self,"Info_Wolf_ARMORFINISHED_15_05"); //Спасибо! С меня причитается!
-	AI_Output 			(self,hero,"Info_Wolf_ARMORFINISHED_09_06"); //Да ладно тебе! Я в накладе не останусь.
+	AI_Output 			(hero,self,"Info_Wolf_ARMORFINISHED_15_01"); //РљР°Рє РїСЂРѕРґРІРёРіР°РµС‚СЃСЏ РёР·РіРѕС‚РѕРІР»РµРЅРёРµ РґРѕСЃРїРµС…РѕРІ?
+	AI_Output 			(self,hero,"Info_Wolf_ARMORFINISHED_09_02"); //РЇ РЅР°РєРѕРЅРµС†-С‚Рѕ РЅР°С€РµР» СЃРїРѕСЃРѕР±, РєР°Рє СЃРєСЂРµРїРёС‚СЊ РїР»Р°СЃС‚РёРЅС‹!
+	AI_Output 			(hero,self,"Info_Wolf_ARMORFINISHED_15_03"); //РРЅС‹РјРё СЃР»РѕРІР°РјРё - РґРѕСЃРїРµС…Рё РіРѕС‚РѕРІС‹?
+	AI_Output 			(self,hero,"Info_Wolf_ARMORFINISHED_09_04"); //Р”Р°, РїСЂРёСЏС‚РµР»СЊ. Р’РѕС‚ РѕРЅРё. Р›СѓС‡С€РёРµ РґРѕСЃРїРµС…Рё РІРѕ РІСЃРµРј Р›Р°РіРµСЂРµ.
+	AI_Output 			(hero,self,"Info_Wolf_ARMORFINISHED_15_05"); //РЎРїР°СЃРёР±Рѕ! РЎ РјРµРЅСЏ РїСЂРёС‡РёС‚Р°РµС‚СЃСЏ!
+	AI_Output 			(self,hero,"Info_Wolf_ARMORFINISHED_09_06"); //Р”Р° Р»Р°РґРЅРѕ С‚РµР±Рµ! РЇ РІ РЅР°РєР»Р°РґРµ РЅРµ РѕСЃС‚Р°РЅСѓСЃСЊ.
 
-	B_LogEntry			(CH4_MCPlateArmor,"Доспехи готовы. Отличная работа. Это лучшие доспехи для воина, который я видел до сих пор.");
+	B_LogEntry			(CH4_MCPlateArmor,"Р”РѕСЃРїРµС…Рё РіРѕС‚РѕРІС‹. РћС‚Р»РёС‡РЅР°СЏ СЂР°Р±РѕС‚Р°. Р­С‚Рѕ Р»СѓС‡С€РёРµ РґРѕСЃРїРµС…Рё РґР»СЏ РІРѕРёРЅР°, РєРѕС‚РѕСЂС‹Р№ СЏ РІРёРґРµР» РґРѕ СЃРёС… РїРѕСЂ.");
 	Log_SetTopicStatus	(CH4_MCPlateArmor,	LOG_SUCCESS);
 
 	B_GiveXP			(XP_GorMCPlateArmor);
@@ -690,7 +690,7 @@ instance  Org_855_Wolf_SELLBOW (C_INFO)
 	information		= Org_855_Wolf_SELLBOW_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Где можно купить хороший лук?"; 
+	description		= "Р“РґРµ РјРѕР¶РЅРѕ РєСѓРїРёС‚СЊ С…РѕСЂРѕС€РёР№ Р»СѓРє?"; 
 };
 
 FUNC int  Org_855_Wolf_SELLBOW_Condition()
@@ -699,10 +699,10 @@ FUNC int  Org_855_Wolf_SELLBOW_Condition()
 };
 FUNC void  Org_855_Wolf_SELLBOW_Info()
 {
-	AI_Output (other, self,"Org_855_Wolf_SELLBOW_Info_15_01"); //Где можно купить хороший лук?
-	AI_Output (self, other,"Org_855_Wolf_SELLBOW_Info_09_02"); //Ты пришел туда, куда нужно. Я подберу для тебя отличный лук - если у тебя есть руда, конечно.
+	AI_Output (other, self,"Org_855_Wolf_SELLBOW_Info_15_01"); //Р“РґРµ РјРѕР¶РЅРѕ РєСѓРїРёС‚СЊ С…РѕСЂРѕС€РёР№ Р»СѓРє?
+	AI_Output (self, other,"Org_855_Wolf_SELLBOW_Info_09_02"); //РўС‹ РїСЂРёС€РµР» С‚СѓРґР°, РєСѓРґР° РЅСѓР¶РЅРѕ. РЇ РїРѕРґР±РµСЂСѓ РґР»СЏ С‚РµР±СЏ РѕС‚Р»РёС‡РЅС‹Р№ Р»СѓРє - РµСЃР»Рё Сѓ С‚РµР±СЏ РµСЃС‚СЊ СЂСѓРґР°, РєРѕРЅРµС‡РЅРѕ.
 	Log_CreateTopic   	(GE_TraderNC,LOG_NOTE);
-	B_LogEntry			(GE_TraderNC,"Волк торгует луками.");
+	B_LogEntry			(GE_TraderNC,"Р’РѕР»Рє С‚РѕСЂРіСѓРµС‚ Р»СѓРєР°РјРё.");
 
 };  
 

@@ -30,7 +30,7 @@ instance  Stt_302_Viper_GREET (C_INFO)
 	information		= Stt_302_Viper_GREET_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Я слышал, что ты плавильщик."; 
+	description		= "РЇ СЃР»С‹С€Р°Р», С‡С‚Рѕ С‚С‹ РїР»Р°РІРёР»СЊС‰РёРє."; 
 };
 
 FUNC int  Stt_302_Viper_GREET_Condition()
@@ -41,8 +41,8 @@ FUNC int  Stt_302_Viper_GREET_Condition()
 
 FUNC void  Stt_302_Viper_GREET_Info()
 {
-	AI_Output (other, self,"Stt_302_Viper_GREET_Info_15_01"); //Я слышал, что ты плавильщик.
-	AI_Output (self, other,"Stt_302_Viper_GREET_Info_11_02"); //Ты умный парень однако.
+	AI_Output (other, self,"Stt_302_Viper_GREET_Info_15_01"); //РЇ СЃР»С‹С€Р°Р», С‡С‚Рѕ С‚С‹ РїР»Р°РІРёР»СЊС‰РёРє.
+	AI_Output (self, other,"Stt_302_Viper_GREET_Info_11_02"); //РўС‹ СѓРјРЅС‹Р№ РїР°СЂРµРЅСЊ РѕРґРЅР°РєРѕ.
 };  
 // ***************************** SCHMELZGESCHICHTE ****************************************//
 instance  Stt_302_Viper_MELT (C_INFO)
@@ -52,7 +52,7 @@ instance  Stt_302_Viper_MELT (C_INFO)
 	information		= Stt_302_Viper_MELT_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Говорят, что вы переплавляете только часть руды."; 
+	description		= "Р“РѕРІРѕСЂСЏС‚, С‡С‚Рѕ РІС‹ РїРµСЂРµРїР»Р°РІР»СЏРµС‚Рµ С‚РѕР»СЊРєРѕ С‡Р°СЃС‚СЊ СЂСѓРґС‹."; 
 };
 
 FUNC int  Stt_302_Viper_MELT_Condition()
@@ -65,11 +65,11 @@ FUNC int  Stt_302_Viper_MELT_Condition()
 };
 FUNC void  Stt_302_Viper_MELT_Info()
 {
-	AI_Output (other, self,"Stt_302_Viper_MELT_Info_15_01"); //Говорят, что вы переплавляете только часть руды.
-	AI_Output (self, other,"Stt_302_Viper_MELT_Info_11_02"); //Когда-то мы переплавляли всю добычу. Но Гомезу и магам это было не слишком-то по душе.
-	AI_Output (self, other,"Stt_302_Viper_MELT_Info_11_03"); //Они шлялись здесь неделями: осматривали руду и все остальное.
-	AI_Output (self, other,"Stt_302_Viper_MELT_Info_11_04"); //Несли всякую чушь и совали свои благородные носы в такие дела, о каких они и представления не имеют. 
-	AI_Output (self, other,"Stt_302_Viper_MELT_Info_11_05"); //Теперь, в итоге, мы переплавляем только часть руды, а маги сюда больше не приходят.
+	AI_Output (other, self,"Stt_302_Viper_MELT_Info_15_01"); //Р“РѕРІРѕСЂСЏС‚, С‡С‚Рѕ РІС‹ РїРµСЂРµРїР»Р°РІР»СЏРµС‚Рµ С‚РѕР»СЊРєРѕ С‡Р°СЃС‚СЊ СЂСѓРґС‹.
+	AI_Output (self, other,"Stt_302_Viper_MELT_Info_11_02"); //РљРѕРіРґР°-С‚Рѕ РјС‹ РїРµСЂРµРїР»Р°РІР»СЏР»Рё РІСЃСЋ РґРѕР±С‹С‡Сѓ. РќРѕ Р“РѕРјРµР·Сѓ Рё РјР°РіР°Рј СЌС‚Рѕ Р±С‹Р»Рѕ РЅРµ СЃР»РёС€РєРѕРј-С‚Рѕ РїРѕ РґСѓС€Рµ.
+	AI_Output (self, other,"Stt_302_Viper_MELT_Info_11_03"); //РћРЅРё С€Р»СЏР»РёСЃСЊ Р·РґРµСЃСЊ РЅРµРґРµР»СЏРјРё: РѕСЃРјР°С‚СЂРёРІР°Р»Рё СЂСѓРґСѓ Рё РІСЃРµ РѕСЃС‚Р°Р»СЊРЅРѕРµ.
+	AI_Output (self, other,"Stt_302_Viper_MELT_Info_11_04"); //РќРµСЃР»Рё РІСЃСЏРєСѓСЋ С‡СѓС€СЊ Рё СЃРѕРІР°Р»Рё СЃРІРѕРё Р±Р»Р°РіРѕСЂРѕРґРЅС‹Рµ РЅРѕСЃС‹ РІ С‚Р°РєРёРµ РґРµР»Р°, Рѕ РєР°РєРёС… РѕРЅРё Рё РїСЂРµРґСЃС‚Р°РІР»РµРЅРёСЏ РЅРµ РёРјРµСЋС‚. 
+	AI_Output (self, other,"Stt_302_Viper_MELT_Info_11_05"); //РўРµРїРµСЂСЊ, РІ РёС‚РѕРіРµ, РјС‹ РїРµСЂРµРїР»Р°РІР»СЏРµРј С‚РѕР»СЊРєРѕ С‡Р°СЃС‚СЊ СЂСѓРґС‹, Р° РјР°РіРё СЃСЋРґР° Р±РѕР»СЊС€Рµ РЅРµ РїСЂРёС…РѕРґСЏС‚.
 };
 // *****************************  ****************************************//
 instance  Stt_302_Viper_BUY (C_INFO)
@@ -79,7 +79,7 @@ instance  Stt_302_Viper_BUY (C_INFO)
 	information		= Stt_302_Viper_BUY_Info;
 	important		= 0;
 	permanent		= 1;
-	description		= "Ты можешь дать мне немного руды?"; 
+	description		= "РўС‹ РјРѕР¶РµС€СЊ РґР°С‚СЊ РјРЅРµ РЅРµРјРЅРѕРіРѕ СЂСѓРґС‹?"; 
 	trade           = 1;
 };
 
@@ -93,7 +93,7 @@ FUNC int  Stt_302_Viper_BUY_Condition()
 };
 FUNC void  Stt_302_Viper_BUY_Info()
 {
-	AI_Output (other, self,"Stt_302_Viper_BUY_Info_15_01"); //Ты можешь дать мне немного руды?
-	AI_Output (self, other,"Stt_302_Viper_BUY_Info_11_02"); //Если у тебя есть какой-нибудь товар на продажу.
+	AI_Output (other, self,"Stt_302_Viper_BUY_Info_15_01"); //РўС‹ РјРѕР¶РµС€СЊ РґР°С‚СЊ РјРЅРµ РЅРµРјРЅРѕРіРѕ СЂСѓРґС‹?
+	AI_Output (self, other,"Stt_302_Viper_BUY_Info_11_02"); //Р•СЃР»Рё Сѓ С‚РµР±СЏ РµСЃС‚СЊ РєР°РєРѕР№-РЅРёР±СѓРґСЊ С‚РѕРІР°СЂ РЅР° РїСЂРѕРґР°Р¶Сѓ.
 };
 

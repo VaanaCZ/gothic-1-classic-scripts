@@ -2,7 +2,7 @@ instance SLD_737_Torlof (Npc_Default)
 {
 	//-------- primary data --------
 	
-	name =					"Торлоф";
+	name =					"РўРѕСЂР»РѕС„";
 	Npctype =				NPCTYPE_MAIN;
 	guild =					GIL_SLD;       
 	level =					19;

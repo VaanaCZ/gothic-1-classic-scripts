@@ -1,7 +1,7 @@
 instance GUR_1208_BaalCadar (Npc_Default)
 {
 	//-------- primary data --------
-	name		=	"Идол Кадар";
+	name		=	"РРґРѕР» РљР°РґР°СЂ";
 	Npctype		=	NPCTYPE_MAIN;
 	guild		=	GIL_GUR;
 	level 		=	28;

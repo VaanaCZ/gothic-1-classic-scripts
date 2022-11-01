@@ -23,7 +23,7 @@ FUNC VOID  DIA_GorNaDrak_EXIT_Info()
 };
 
 // **************************************************
-//					Erste Begrьssung
+//					Erste BegrСЊssung
 // **************************************************
 
 instance  DIA_GorNaDrak_Greet (C_INFO)
@@ -33,7 +33,7 @@ instance  DIA_GorNaDrak_Greet (C_INFO)
 	condition	= DIA_GorNaDrak_Greet_Condition;
 	information	= DIA_GorNaDrak_Greet_Info;
 	permanent	= 0;
-	description  = "Привет! Куда направляетесь?";
+	description  = "РџСЂРёРІРµС‚! РљСѓРґР° РЅР°РїСЂР°РІР»СЏРµС‚РµСЃСЊ?";
 };                       
 
 FUNC int  DIA_GorNaDrak_Greet_Condition()
@@ -43,9 +43,9 @@ FUNC int  DIA_GorNaDrak_Greet_Condition()
 
 FUNC VOID  DIA_GorNaDrak_Greet_Info()
 {
-	AI_Output (other, self,"DIA_GorNaDrak_Greet_15_00"); //Привет! Куда направляетесь?
-	AI_Output (self, other,"DIA_GorNaDrak_Greet_09_01"); //Мы доставляем Кор Галому слюну ползунов, добытую нашими братьями в Старой Шахте.
-	AI_Output (self, other,"DIA_GorNaDrak_Greet_09_02"); //Мы приходим за ней каждый день.
+	AI_Output (other, self,"DIA_GorNaDrak_Greet_15_00"); //РџСЂРёРІРµС‚! РљСѓРґР° РЅР°РїСЂР°РІР»СЏРµС‚РµСЃСЊ?
+	AI_Output (self, other,"DIA_GorNaDrak_Greet_09_01"); //РњС‹ РґРѕСЃС‚Р°РІР»СЏРµРј РљРѕСЂ Р“Р°Р»РѕРјСѓ СЃР»СЋРЅСѓ РїРѕР»Р·СѓРЅРѕРІ, РґРѕР±С‹С‚СѓСЋ РЅР°С€РёРјРё Р±СЂР°С‚СЊСЏРјРё РІ РЎС‚Р°СЂРѕР№ РЁР°С…С‚Рµ.
+	AI_Output (self, other,"DIA_GorNaDrak_Greet_09_02"); //РњС‹ РїСЂРёС…РѕРґРёРј Р·Р° РЅРµР№ РєР°Р¶РґС‹Р№ РґРµРЅСЊ.
 };
 
 // **************************************************
@@ -59,7 +59,7 @@ instance  DIA_GorNaDrak_WasSekret (C_INFO)
 	condition	= DIA_GorNaDrak_WasSekret_Condition;
 	information	= DIA_GorNaDrak_WasSekret_Info;
 	permanent	= 0;
-	description  = "Что это за слюна такая?";
+	description  = "Р§С‚Рѕ СЌС‚Рѕ Р·Р° СЃР»СЋРЅР° С‚Р°РєР°СЏ?";
 };                       
 
 FUNC int  DIA_GorNaDrak_WasSekret_Condition()
@@ -72,8 +72,8 @@ FUNC int  DIA_GorNaDrak_WasSekret_Condition()
 
 FUNC VOID  DIA_GorNaDrak_WasSekret_Info()
 {
-	AI_Output (other, self,"DIA_GorNaDrak_WasSekret_15_00"); //Что это за слюна такая?
-	AI_Output (self, other,"DIA_GorNaDrak_WasSekret_09_01"); //Ее добывают из челюстей ползунов. Если все делать правильно, можно удалить их, не потеряв слюну.
+	AI_Output (other, self,"DIA_GorNaDrak_WasSekret_15_00"); //Р§С‚Рѕ СЌС‚Рѕ Р·Р° СЃР»СЋРЅР° С‚Р°РєР°СЏ?
+	AI_Output (self, other,"DIA_GorNaDrak_WasSekret_09_01"); //Р•Рµ РґРѕР±С‹РІР°СЋС‚ РёР· С‡РµР»СЋСЃС‚РµР№ РїРѕР»Р·СѓРЅРѕРІ. Р•СЃР»Рё РІСЃРµ РґРµР»Р°С‚СЊ РїСЂР°РІРёР»СЊРЅРѕ, РјРѕР¶РЅРѕ СѓРґР°Р»РёС‚СЊ РёС…, РЅРµ РїРѕС‚РµСЂСЏРІ СЃР»СЋРЅСѓ.
 };
 
 // **************************************************
@@ -87,7 +87,7 @@ instance  DIA_GorNaDrak_TeachMandibles (C_INFO)
 	condition	= DIA_GorNaDrak_TeachMandibles_Condition;
 	information	= DIA_GorNaDrak_TeachMandibles_Info;
 	permanent	= 0;
-	description  = "Ты можешь научить меня добывать слюну ползунов?";
+	description  = "РўС‹ РјРѕР¶РµС€СЊ РЅР°СѓС‡РёС‚СЊ РјРµРЅСЏ РґРѕР±С‹РІР°С‚СЊ СЃР»СЋРЅСѓ РїРѕР»Р·СѓРЅРѕРІ?";
 };                       
 
 FUNC int  DIA_GorNaDrak_TeachMandibles_Condition()
@@ -100,17 +100,17 @@ FUNC int  DIA_GorNaDrak_TeachMandibles_Condition()
 
 FUNC VOID  DIA_GorNaDrak_TeachMandibles_Info()
 {
-	AI_Output (other, self,"DIA_GorNaDrak_TeachMandibles_15_00"); //Ты можешь научить меня добывать слюну ползунов?
-	AI_Output (self, other,"DIA_GorNaDrak_TeachMandibles_09_01"); //Конечно. Убив одну из этих тварей, хватаешься за челюсти покрепче и вырываешь их. Так можно получить слюнные железы, не повредив их.
+	AI_Output (other, self,"DIA_GorNaDrak_TeachMandibles_15_00"); //РўС‹ РјРѕР¶РµС€СЊ РЅР°СѓС‡РёС‚СЊ РјРµРЅСЏ РґРѕР±С‹РІР°С‚СЊ СЃР»СЋРЅСѓ РїРѕР»Р·СѓРЅРѕРІ?
+	AI_Output (self, other,"DIA_GorNaDrak_TeachMandibles_09_01"); //РљРѕРЅРµС‡РЅРѕ. РЈР±РёРІ РѕРґРЅСѓ РёР· СЌС‚РёС… С‚РІР°СЂРµР№, С…РІР°С‚Р°РµС€СЊСЃСЏ Р·Р° С‡РµР»СЋСЃС‚Рё РїРѕРєСЂРµРїС‡Рµ Рё РІС‹СЂС‹РІР°РµС€СЊ РёС…. РўР°Рє РјРѕР¶РЅРѕ РїРѕР»СѓС‡РёС‚СЊ СЃР»СЋРЅРЅС‹Рµ Р¶РµР»РµР·С‹, РЅРµ РїРѕРІСЂРµРґРёРІ РёС….
 	
-	PrintScreen	("Изучить: Удаление челюстей ползунов", -1,-1,"FONT_OLD_20_WHITE.TGA",3);
+	PrintScreen	("РР·СѓС‡РёС‚СЊ: РЈРґР°Р»РµРЅРёРµ С‡РµР»СЋСЃС‚РµР№ РїРѕР»Р·СѓРЅРѕРІ", -1,-1,"FONT_OLD_20_WHITE.TGA",3);
 	Knows_GetMCMandibles = TRUE;
 	Log_CreateTopic (GE_AnimalTrophies,LOG_NOTE);
-	B_LogEntry (GE_AnimalTrophies,"Как удалять челюсти ползунов");
+	B_LogEntry (GE_AnimalTrophies,"РљР°Рє СѓРґР°Р»СЏС‚СЊ С‡РµР»СЋСЃС‚Рё РїРѕР»Р·СѓРЅРѕРІ");
 };
 
 // **************************************************
-//			 	Wofьr ist Sekret da?
+//			 	WofСЊr ist Sekret da?
 // **************************************************
 
 instance  DIA_GorNaDrak_WhatFor (C_INFO)
@@ -120,7 +120,7 @@ instance  DIA_GorNaDrak_WhatFor (C_INFO)
 	condition	= DIA_GorNaDrak_WhatFor_Condition;
 	information	= DIA_GorNaDrak_WhatFor_Info;
 	permanent	= 0;
-	description  = "Зачем эта слюна нужна Кор Галому?";
+	description  = "Р—Р°С‡РµРј СЌС‚Р° СЃР»СЋРЅР° РЅСѓР¶РЅР° РљРѕСЂ Р“Р°Р»РѕРјСѓ?";
 };                       
 
 FUNC int  DIA_GorNaDrak_WhatFor_Condition()
@@ -133,10 +133,10 @@ FUNC int  DIA_GorNaDrak_WhatFor_Condition()
 
 FUNC VOID  DIA_GorNaDrak_WhatFor_Info()
 {
-	AI_Output (other, self,"DIA_GorNaDrak_WhatFor_15_00"); //Зачем эта слюна нужна Кор Галому?
-	AI_Output (self, other,"DIA_GorNaDrak_WhatFor_09_01"); //Насколько мне известно, из нее он готовит эликсиры, увеличивающие магическую силу послушников.
-	AI_Output (self, other,"DIA_GorNaDrak_WhatFor_09_02"); //Мы сейчас готовимся к Великой Церемонии, так что слюны вечно не хватает.
-	AI_Output (self, other,"DIA_GorNaDrak_WhatFor_09_03"); //Но когда у нас будет достаточно эликсира, Кор Галом подготовит всех послушников к великому дню.
+	AI_Output (other, self,"DIA_GorNaDrak_WhatFor_15_00"); //Р—Р°С‡РµРј СЌС‚Р° СЃР»СЋРЅР° РЅСѓР¶РЅР° РљРѕСЂ Р“Р°Р»РѕРјСѓ?
+	AI_Output (self, other,"DIA_GorNaDrak_WhatFor_09_01"); //РќР°СЃРєРѕР»СЊРєРѕ РјРЅРµ РёР·РІРµСЃС‚РЅРѕ, РёР· РЅРµРµ РѕРЅ РіРѕС‚РѕРІРёС‚ СЌР»РёРєСЃРёСЂС‹, СѓРІРµР»РёС‡РёРІР°СЋС‰РёРµ РјР°РіРёС‡РµСЃРєСѓСЋ СЃРёР»Сѓ РїРѕСЃР»СѓС€РЅРёРєРѕРІ.
+	AI_Output (self, other,"DIA_GorNaDrak_WhatFor_09_02"); //РњС‹ СЃРµР№С‡Р°СЃ РіРѕС‚РѕРІРёРјСЃСЏ Рє Р’РµР»РёРєРѕР№ Р¦РµСЂРµРјРѕРЅРёРё, С‚Р°Рє С‡С‚Рѕ СЃР»СЋРЅС‹ РІРµС‡РЅРѕ РЅРµ С…РІР°С‚Р°РµС‚.
+	AI_Output (self, other,"DIA_GorNaDrak_WhatFor_09_03"); //РќРѕ РєРѕРіРґР° Сѓ РЅР°СЃ Р±СѓРґРµС‚ РґРѕСЃС‚Р°С‚РѕС‡РЅРѕ СЌР»РёРєСЃРёСЂР°, РљРѕСЂ Р“Р°Р»РѕРј РїРѕРґРіРѕС‚РѕРІРёС‚ РІСЃРµС… РїРѕСЃР»СѓС€РЅРёРєРѕРІ Рє РІРµР»РёРєРѕРјСѓ РґРЅСЋ.
 };
 
 // **************************************************
@@ -150,7 +150,7 @@ instance  DIA_GorNaDrak_Permanent (C_INFO)
 	condition	= DIA_GorNaDrak_Permanent_Condition;
 	information	= DIA_GorNaDrak_Permanent_Info;
 	permanent	= 1;
-	description  = "Ну как, теперь у вас достаточно эликсира?";
+	description  = "РќСѓ РєР°Рє, С‚РµРїРµСЂСЊ Сѓ РІР°СЃ РґРѕСЃС‚Р°С‚РѕС‡РЅРѕ СЌР»РёРєСЃРёСЂР°?";
 };                       
 
 FUNC int  DIA_GorNaDrak_Permanent_Condition()
@@ -163,8 +163,8 @@ FUNC int  DIA_GorNaDrak_Permanent_Condition()
 
 FUNC VOID  DIA_GorNaDrak_Permanent_Info()
 {
-	AI_Output (other, self,"DIA_GorNaDrak_Permanent_15_00"); //Ну как, теперь у вас достаточно эликсира для Великой Церемонии вызова Спящего?
-	AI_Output (self, other,"DIA_GorNaDrak_Permanent_09_01"); //Нет, нужно еще очень, очень много. Наши охотники на ползунов трудятся днем и ночью.
+	AI_Output (other, self,"DIA_GorNaDrak_Permanent_15_00"); //РќСѓ РєР°Рє, С‚РµРїРµСЂСЊ Сѓ РІР°СЃ РґРѕСЃС‚Р°С‚РѕС‡РЅРѕ СЌР»РёРєСЃРёСЂР° РґР»СЏ Р’РµР»РёРєРѕР№ Р¦РµСЂРµРјРѕРЅРёРё РІС‹Р·РѕРІР° РЎРїСЏС‰РµРіРѕ?
+	AI_Output (self, other,"DIA_GorNaDrak_Permanent_09_01"); //РќРµС‚, РЅСѓР¶РЅРѕ РµС‰Рµ РѕС‡РµРЅСЊ, РѕС‡РµРЅСЊ РјРЅРѕРіРѕ. РќР°С€Рё РѕС…РѕС‚РЅРёРєРё РЅР° РїРѕР»Р·СѓРЅРѕРІ С‚СЂСѓРґСЏС‚СЃСЏ РґРЅРµРј Рё РЅРѕС‡СЊСЋ.
 };
 
 

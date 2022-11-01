@@ -14,7 +14,7 @@ INSTANCE Info_Bau_2_EXIT(C_INFO)
 	condition	= Info_Bau_2_EXIT_Condition;
 	information	= Info_Bau_2_EXIT_Info;
 	permanent	= 1;
-	description = "ЗАКОНЧИТЬ";
+	description = "Р—РђРљРћРќР§РРўР¬";
 };                       
 
 FUNC INT Info_Bau_2_EXIT_Condition()
@@ -37,7 +37,7 @@ INSTANCE Info_Bau_2_WichtigePersonen(C_INFO)
 	condition	= Info_Bau_2_WichtigePersonen_Condition;
 	information	= Info_Bau_2_WichtigePersonen_Info;
 	permanent	= 1;
-	description = "Ты по доброй воле работаешь на рисовых полях?";
+	description = "РўС‹ РїРѕ РґРѕР±СЂРѕР№ РІРѕР»Рµ СЂР°Р±РѕС‚Р°РµС€СЊ РЅР° СЂРёСЃРѕРІС‹С… РїРѕР»СЏС…?";
 };                       
 
 FUNC INT Info_Bau_2_WichtigePersonen_Condition()
@@ -47,9 +47,9 @@ FUNC INT Info_Bau_2_WichtigePersonen_Condition()
 
 FUNC VOID Info_Bau_2_WichtigePersonen_Info()
 {
-	AI_Output(other,self,"Info_Bau_2_WichtigePersonen_15_00"); //Ты по доброй воле работаешь на рисовых полях?
-	AI_Output(self,other,"Info_Bau_2_WichtigePersonen_02_01"); //Да, верно. Лучше работать здесь по доброй воле, чем под присмотром головорезов Лорда.
-	AI_Output(other,self,"Info_Bau_2_WichtigePersonen_15_02"); //Понятно...
+	AI_Output(other,self,"Info_Bau_2_WichtigePersonen_15_00"); //РўС‹ РїРѕ РґРѕР±СЂРѕР№ РІРѕР»Рµ СЂР°Р±РѕС‚Р°РµС€СЊ РЅР° СЂРёСЃРѕРІС‹С… РїРѕР»СЏС…?
+	AI_Output(self,other,"Info_Bau_2_WichtigePersonen_02_01"); //Р”Р°, РІРµСЂРЅРѕ. Р›СѓС‡С€Рµ СЂР°Р±РѕС‚Р°С‚СЊ Р·РґРµСЃСЊ РїРѕ РґРѕР±СЂРѕР№ РІРѕР»Рµ, С‡РµРј РїРѕРґ РїСЂРёСЃРјРѕС‚СЂРѕРј РіРѕР»РѕРІРѕСЂРµР·РѕРІ Р›РѕСЂРґР°.
+	AI_Output(other,self,"Info_Bau_2_WichtigePersonen_15_02"); //РџРѕРЅСЏС‚РЅРѕ...
 	var C_NPC Ricelord;			Ricelord	= Hlp_GetNpc(Bau_900_Ricelord);
 	Ricelord.aivar[AIV_FINDABLE] = TRUE;	
 };
@@ -64,7 +64,7 @@ INSTANCE Info_Bau_2_DasLager(C_INFO)
 	condition	= Info_Bau_2_DasLager_Condition;
 	information	= Info_Bau_2_DasLager_Info;
 	permanent	= 1;
-	description = "Расскажи мне о Лагере.";
+	description = "Р Р°СЃСЃРєР°Р¶Рё РјРЅРµ Рѕ Р›Р°РіРµСЂРµ.";
 };                       
 
 FUNC INT Info_Bau_2_DasLager_Condition()
@@ -74,8 +74,8 @@ FUNC INT Info_Bau_2_DasLager_Condition()
 
 FUNC VOID Info_Bau_2_DasLager_Info()
 {
-	AI_Output(other,self,"Info_Bau_2_DasLager_15_00"); //Расскажи мне о Лагере.
-	AI_Output(self,other,"Info_Bau_2_DasLager_02_01"); //Там довольно опасно. Наемники Ли и маги еще ничего, но берегись воров!
+	AI_Output(other,self,"Info_Bau_2_DasLager_15_00"); //Р Р°СЃСЃРєР°Р¶Рё РјРЅРµ Рѕ Р›Р°РіРµСЂРµ.
+	AI_Output(self,other,"Info_Bau_2_DasLager_02_01"); //РўР°Рј РґРѕРІРѕР»СЊРЅРѕ РѕРїР°СЃРЅРѕ. РќР°РµРјРЅРёРєРё Р›Рё Рё РјР°РіРё РµС‰Рµ РЅРёС‡РµРіРѕ, РЅРѕ Р±РµСЂРµРіРёСЃСЊ РІРѕСЂРѕРІ!
 	var C_NPC Lee;			Lee		= Hlp_GetNpc(Sld_700_Lee);
 	Lee.aivar[AIV_FINDABLE] = TRUE;	
 	var C_NPC Cronos;		Cronos  = Hlp_GetNpc(KdW_604_Cronos);
@@ -92,7 +92,7 @@ INSTANCE Info_Bau_2_DieLage(C_INFO) // E1
 	condition	= Info_Bau_2_DieLage_Condition;
 	information	= Info_Bau_2_DieLage_Info;
 	permanent	= 1;
-	description = "Все в порядке?";
+	description = "Р’СЃРµ РІ РїРѕСЂСЏРґРєРµ?";
 };                       
 
 FUNC INT Info_Bau_2_DieLage_Condition()
@@ -102,9 +102,9 @@ FUNC INT Info_Bau_2_DieLage_Condition()
 
 FUNC VOID Info_Bau_2_DieLage_Info()
 {
-	AI_Output(other,self,"Info_Bau_2_DieLage_15_00"); //Все в порядке?
-	AI_Output(self,other,"Info_Bau_2_DieLage_02_01"); //Что тебе нужно? Тебя послал Лорд? Я и так уже работаю изо всех сил!
-	AI_Output(other,self,"Info_Bau_2_DieLage_15_02"); //Никто не посылал меня, я просто хочу поговорить.
+	AI_Output(other,self,"Info_Bau_2_DieLage_15_00"); //Р’СЃРµ РІ РїРѕСЂСЏРґРєРµ?
+	AI_Output(self,other,"Info_Bau_2_DieLage_02_01"); //Р§С‚Рѕ С‚РµР±Рµ РЅСѓР¶РЅРѕ? РўРµР±СЏ РїРѕСЃР»Р°Р» Р›РѕСЂРґ? РЇ Рё С‚Р°Рє СѓР¶Рµ СЂР°Р±РѕС‚Р°СЋ РёР·Рѕ РІСЃРµС… СЃРёР»!
+	AI_Output(other,self,"Info_Bau_2_DieLage_15_02"); //РќРёРєС‚Рѕ РЅРµ РїРѕСЃС‹Р»Р°Р» РјРµРЅСЏ, СЏ РїСЂРѕСЃС‚Рѕ С…РѕС‡Сѓ РїРѕРіРѕРІРѕСЂРёС‚СЊ.
 	var C_NPC Ricelord;			Ricelord	= Hlp_GetNpc(Bau_900_Ricelord);
 	Ricelord.aivar[AIV_FINDABLE] = TRUE;	
 };
@@ -119,7 +119,7 @@ INSTANCE Info_Bau_2_Wasser(C_INFO) // E1
 	condition	= Info_Bau_2_Wasser_Condition;
 	information	= Info_Bau_2_Wasser_Info;
 	permanent	= 1;
-	description = "Меня послал Лефти. Я принес тебе воды.";
+	description = "РњРµРЅСЏ РїРѕСЃР»Р°Р» Р›РµС„С‚Рё. РЇ РїСЂРёРЅРµСЃ С‚РµР±Рµ РІРѕРґС‹.";
 };                       
 
 FUNC INT Info_Bau_2_Wasser_Condition()
@@ -133,10 +133,10 @@ FUNC INT Info_Bau_2_Wasser_Condition()
 
 FUNC VOID Info_Bau_2_Wasser_Info()
 {
-	AI_Output(other,self,"Info_Bau_2_Wasser_15_00"); //Лефти послал меня. Я принес тебе воды.
+	AI_Output(other,self,"Info_Bau_2_Wasser_15_00"); //Р›РµС„С‚Рё РїРѕСЃР»Р°Р» РјРµРЅСЏ. РЇ РїСЂРёРЅРµСЃ С‚РµР±Рµ РІРѕРґС‹.
 	if (Npc_HasItems(other, ItFo_Potion_Water_01)>=1)
 	{
-		AI_Output			(self,other,"Info_Bau_2_Wasser_02_01"); //Спасибо, парень! В моей глотке сейчас сухо, как в пустыне!
+		AI_Output			(self,other,"Info_Bau_2_Wasser_02_01"); //РЎРїР°СЃРёР±Рѕ, РїР°СЂРµРЅСЊ! Р’ РјРѕРµР№ РіР»РѕС‚РєРµ СЃРµР№С‡Р°СЃ СЃСѓС…Рѕ, РєР°Рє РІ РїСѓСЃС‚С‹РЅРµ!
 
 		B_GiveInvItems		(other, self,	ItFo_Potion_Water_01, 1);
 		if ( C_BodystateContains(self, BS_SIT) )
@@ -155,7 +155,7 @@ FUNC VOID Info_Bau_2_Wasser_Info()
 	}
 	else
 	{
-		AI_Output(self,other,"Info_Bau_2_Wasser_NOWATER_02_00"); //Вода! Эй, парень! Здесь совсем ничего не осталось! Только не говори мне, что воду опять получили все, кроме меня!
+		AI_Output(self,other,"Info_Bau_2_Wasser_NOWATER_02_00"); //Р’РѕРґР°! Р­Р№, РїР°СЂРµРЅСЊ! Р—РґРµСЃСЊ СЃРѕРІСЃРµРј РЅРёС‡РµРіРѕ РЅРµ РѕСЃС‚Р°Р»РѕСЃСЊ! РўРѕР»СЊРєРѕ РЅРµ РіРѕРІРѕСЂРё РјРЅРµ, С‡С‚Рѕ РІРѕРґСѓ РѕРїСЏС‚СЊ РїРѕР»СѓС‡РёР»Рё РІСЃРµ, РєСЂРѕРјРµ РјРµРЅСЏ!
 	};
 };
 	

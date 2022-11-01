@@ -43,7 +43,7 @@ FUNC int  DIA_Bullit_First_Condition()
 
 FUNC VOID  DIA_Bullit_First_Info()
 {
-	AI_Output (self, other,"DIA_Bullit_First_06_00"); //Так, кто у нас здесь? Уж не тебя ли я окрестил давеча? Что тебе нужно? Хочешь еще?
+	AI_Output (self, other,"DIA_Bullit_First_06_00"); //РўР°Рє, РєС‚Рѕ Сѓ РЅР°СЃ Р·РґРµСЃСЊ? РЈР¶ РЅРµ С‚РµР±СЏ Р»Рё СЏ РѕРєСЂРµСЃС‚РёР» РґР°РІРµС‡Р°? Р§С‚Рѕ С‚РµР±Рµ РЅСѓР¶РЅРѕ? РҐРѕС‡РµС€СЊ РµС‰Рµ?
 };
 
 //******************************************
@@ -57,7 +57,7 @@ instance  DIA_Bullit_AufsMAul (C_INFO)
 	condition	= DIA_Bullit_AufsMAul_Condition;
 	information	= DIA_Bullit_AufsMAul_Info;
 	permanent	= 0;
-	description = "Я пришел заткнуть твою поганую пасть!";
+	description = "РЇ РїСЂРёС€РµР» Р·Р°С‚РєРЅСѓС‚СЊ С‚РІРѕСЋ РїРѕРіР°РЅСѓСЋ РїР°СЃС‚СЊ!";
 };                       
 
 FUNC int  DIA_Bullit_AufsMAul_Condition()
@@ -67,8 +67,8 @@ FUNC int  DIA_Bullit_AufsMAul_Condition()
 
 FUNC VOID  DIA_Bullit_AufsMAul_Info()
 {
-	AI_Output (other, self,"DIA_Bullit_AufsMAul_15_00"); //Я пришел заткнуть твою поганую пасть!
-	AI_Output (self, other,"DIA_Bullit_AufsMAul_06_01"); //Ха, подойди и попробуй, сынок!
+	AI_Output (other, self,"DIA_Bullit_AufsMAul_15_00"); //РЇ РїСЂРёС€РµР» Р·Р°С‚РєРЅСѓС‚СЊ С‚РІРѕСЋ РїРѕРіР°РЅСѓСЋ РїР°СЃС‚СЊ!
+	AI_Output (self, other,"DIA_Bullit_AufsMAul_06_01"); //РҐР°, РїРѕРґРѕР№РґРё Рё РїРѕРїСЂРѕР±СѓР№, СЃС‹РЅРѕРє!
 	
 	Npc_SetAttitude 		( self, ATT_HOSTILE );
 	Npc_SetTempAttitude 	( self, ATT_HOSTILE );
@@ -102,9 +102,9 @@ FUNC int  DIA_GRD_203_Bullit_Wait4SC_Condition()
 
 func void  DIA_GRD_203_Bullit_Wait4SC_Info()
 {
-	AI_Output (self, other,"DIA_GRD_203_Bullit_Wait4SC_06_01"); //Снова ты?! Стоило утопить тебя, как только я тебя увидел!
-	AI_Output (other, self,"DIA_GRD_203_Bullit_Wait4SC_15_02"); //Да, второго шанса у тебя уже не будет - теперь мы поменялись местами.
-	AI_Output (self, other,"DIA_GRD_203_Bullit_Wait4SC_06_03"); //Червяк! Я надеюсь, для меня это будет хотя бы сложнее, чем в прошлый раз.
+	AI_Output (self, other,"DIA_GRD_203_Bullit_Wait4SC_06_01"); //РЎРЅРѕРІР° С‚С‹?! РЎС‚РѕРёР»Рѕ СѓС‚РѕРїРёС‚СЊ С‚РµР±СЏ, РєР°Рє С‚РѕР»СЊРєРѕ СЏ С‚РµР±СЏ СѓРІРёРґРµР»!
+	AI_Output (other, self,"DIA_GRD_203_Bullit_Wait4SC_15_02"); //Р”Р°, РІС‚РѕСЂРѕРіРѕ С€Р°РЅСЃР° Сѓ С‚РµР±СЏ СѓР¶Рµ РЅРµ Р±СѓРґРµС‚ - С‚РµРїРµСЂСЊ РјС‹ РїРѕРјРµРЅСЏР»РёСЃСЊ РјРµСЃС‚Р°РјРё.
+	AI_Output (self, other,"DIA_GRD_203_Bullit_Wait4SC_06_03"); //Р§РµСЂРІСЏРє! РЇ РЅР°РґРµСЋСЃСЊ, РґР»СЏ РјРµРЅСЏ СЌС‚Рѕ Р±СѓРґРµС‚ С…РѕС‚СЏ Р±С‹ СЃР»РѕР¶РЅРµРµ, С‡РµРј РІ РїСЂРѕС€Р»С‹Р№ СЂР°Р·.
 		
 	AI_StopProcessInfos	( self );
 

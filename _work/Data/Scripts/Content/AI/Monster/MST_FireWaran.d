@@ -4,7 +4,7 @@
 
 PROTOTYPE Mst_Default_FireWaran(C_Npc)			
 {
-	name							=	"Огненная ящерица";
+	name							=	"РћРіРЅРµРЅРЅР°СЏ СЏС‰РµСЂРёС†Р°";
 	guild							=	GIL_WARAN;
 	aivar[AIV_MM_REAL_ID]			= 	ID_FIREWARAN;
 	level							=	50;

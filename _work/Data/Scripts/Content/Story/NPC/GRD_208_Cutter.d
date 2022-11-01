@@ -2,7 +2,7 @@ instance GRD_208_Cutter (Npc_Default)
 {
 	//-------- primary data --------
 	
-	name 		= 	"Катэр";
+	name 		= 	"РљР°С‚СЌСЂ";
 	npctype 	= 	npctype_main;
 	guild 		=	GIL_GRD;
 	level 		=	20;

@@ -36,7 +36,7 @@ INSTANCE Info_Pock_Wasser(C_INFO) // E1
 	condition	= Info_Pock_Wasser_Condition;
 	information	= Info_Pock_Wasser_Info;
 	permanent	= 1;
-	description = "Меня послал Лефти. Я принес тебе воды.";
+	description = "РњРµРЅСЏ РїРѕСЃР»Р°Р» Р›РµС„С‚Рё. РЇ РїСЂРёРЅРµСЃ С‚РµР±Рµ РІРѕРґС‹.";
 };                       
 
 FUNC INT Info_Pock_Wasser_Condition()
@@ -50,7 +50,7 @@ FUNC INT Info_Pock_Wasser_Condition()
 
 FUNC VOID Info_Pock_Wasser_Info()
 {
-	AI_Output(other,self,"Info_Pock_Wasser_15_00"); //Меня послал Лефти. Я принес тебе воды.
+	AI_Output(other,self,"Info_Pock_Wasser_15_00"); //РњРµРЅСЏ РїРѕСЃР»Р°Р» Р›РµС„С‚Рё. РЇ РїСЂРёРЅРµСЃ С‚РµР±Рµ РІРѕРґС‹.
 	if (Npc_HasItems(other, ItFo_Potion_Water_01)>=1)
 	{
 		B_GiveInvItems(other,self,ItFo_Potion_Water_01,1);
@@ -60,7 +60,7 @@ FUNC VOID Info_Pock_Wasser_Info()
 			AI_TurnToNpc	(self, hero);
 		};
 		AI_UseItem(self, ItFo_Potion_Water_01);
-		AI_Output(self,other,"Info_Pock_Wasser_04_01"); //Спасибо, парень! Это как раз то, что нужно!
+		AI_Output(self,other,"Info_Pock_Wasser_04_01"); //РЎРїР°СЃРёР±Рѕ, РїР°СЂРµРЅСЊ! Р­С‚Рѕ РєР°Рє СЂР°Р· С‚Рѕ, С‡С‚Рѕ РЅСѓР¶РЅРѕ!
 		An_Bauern_verteilt = An_Bauern_verteilt+1;
 		if (An_Bauern_verteilt>=DurstigeBauern)
 		{
@@ -70,7 +70,7 @@ FUNC VOID Info_Pock_Wasser_Info()
 	}
 	else
 	{
-		AI_Output(self,other,"Info_Pock_Wasser_NOWATER_04_00"); //Но у тебя совсем ничего не осталось. Ничего страшного - я попрошу у остальных.
+		AI_Output(self,other,"Info_Pock_Wasser_NOWATER_04_00"); //РќРѕ Сѓ С‚РµР±СЏ СЃРѕРІСЃРµРј РЅРёС‡РµРіРѕ РЅРµ РѕСЃС‚Р°Р»РѕСЃСЊ. РќРёС‡РµРіРѕ СЃС‚СЂР°С€РЅРѕРіРѕ - СЏ РїРѕРїСЂРѕС€Сѓ Сѓ РѕСЃС‚Р°Р»СЊРЅС‹С….
 	};
 };
 
@@ -85,7 +85,7 @@ INSTANCE DIA_Pock_Hello (C_INFO)
 	condition	= DIA_Pock_Hello_Condition;
 	information	= DIA_Pock_Hello_Info;
 	permanent	= 0;
-	description	= "Привет! Я здесь новенький.";
+	description	= "РџСЂРёРІРµС‚! РЇ Р·РґРµСЃСЊ РЅРѕРІРµРЅСЊРєРёР№.";
 };                       
 
 FUNC INT DIA_Pock_Hello_Condition()
@@ -98,14 +98,14 @@ FUNC INT DIA_Pock_Hello_Condition()
 
 FUNC VOID DIA_Pock_Hello_Info()
 {	
-	AI_Output (other, self,"DIA_Pock_Hello_15_00"); //Привет! Я новенький!
-	AI_Output (self, other,"DIA_Pock_Hello_04_01"); //Приятно видеть новые лица.
-	AI_Output (other, self,"DIA_Pock_Hello_15_02"); //Ты, должно быть, уже очень давно здесь?
-	AI_Output (self, other,"DIA_Pock_Hello_04_03"); //Ты чертовски прав, приятель. Я был одним из первых.
+	AI_Output (other, self,"DIA_Pock_Hello_15_00"); //РџСЂРёРІРµС‚! РЇ РЅРѕРІРµРЅСЊРєРёР№!
+	AI_Output (self, other,"DIA_Pock_Hello_04_01"); //РџСЂРёСЏС‚РЅРѕ РІРёРґРµС‚СЊ РЅРѕРІС‹Рµ Р»РёС†Р°.
+	AI_Output (other, self,"DIA_Pock_Hello_15_02"); //РўС‹, РґРѕР»Р¶РЅРѕ Р±С‹С‚СЊ, СѓР¶Рµ РѕС‡РµРЅСЊ РґР°РІРЅРѕ Р·РґРµСЃСЊ?
+	AI_Output (self, other,"DIA_Pock_Hello_04_03"); //РўС‹ С‡РµСЂС‚РѕРІСЃРєРё РїСЂР°РІ, РїСЂРёСЏС‚РµР»СЊ. РЇ Р±С‹Р» РѕРґРЅРёРј РёР· РїРµСЂРІС‹С….
 };
 
 // ************************************************************
-// 						WeiЯt ne Menge
+// 						WeiРЇt ne Menge
 // ************************************************************
 
 INSTANCE DIA_Pock_KnowMuch (C_INFO)
@@ -115,7 +115,7 @@ INSTANCE DIA_Pock_KnowMuch (C_INFO)
 	condition	= DIA_Pock_KnowMuch_Condition;
 	information	= DIA_Pock_KnowMuch_Info;
 	permanent	= 0;
-	description	= "Значит, ты должен знать все об этом месте?";
+	description	= "Р—РЅР°С‡РёС‚, С‚С‹ РґРѕР»Р¶РµРЅ Р·РЅР°С‚СЊ РІСЃРµ РѕР± СЌС‚РѕРј РјРµСЃС‚Рµ?";
 };                       
 
 FUNC INT DIA_Pock_KnowMuch_Condition()
@@ -128,9 +128,9 @@ FUNC INT DIA_Pock_KnowMuch_Condition()
 
 FUNC VOID DIA_Pock_KnowMuch_Info()
 {	
-	AI_Output (other, self,"DIA_Pock_KnowMuch_15_00"); //Значит, ты должен знать все об этом месте?
-	AI_Output (self, other,"DIA_Pock_KnowMuch_04_01"); //Да как сказать... Большую часть времени я провожу здесь, собирая рис.
-	AI_Output (self, other,"DIA_Pock_KnowMuch_04_02"); //Вот почему я протянул так долго. Мы получаем рис и шнапс - немного, но волне достаточно.
+	AI_Output (other, self,"DIA_Pock_KnowMuch_15_00"); //Р—РЅР°С‡РёС‚, С‚С‹ РґРѕР»Р¶РµРЅ Р·РЅР°С‚СЊ РІСЃРµ РѕР± СЌС‚РѕРј РјРµСЃС‚Рµ?
+	AI_Output (self, other,"DIA_Pock_KnowMuch_04_01"); //Р”Р° РєР°Рє СЃРєР°Р·Р°С‚СЊ... Р‘РѕР»СЊС€СѓСЋ С‡Р°СЃС‚СЊ РІСЂРµРјРµРЅРё СЏ РїСЂРѕРІРѕР¶Сѓ Р·РґРµСЃСЊ, СЃРѕР±РёСЂР°СЏ СЂРёСЃ.
+	AI_Output (self, other,"DIA_Pock_KnowMuch_04_02"); //Р’РѕС‚ РїРѕС‡РµРјСѓ СЏ РїСЂРѕС‚СЏРЅСѓР» С‚Р°Рє РґРѕР»РіРѕ. РњС‹ РїРѕР»СѓС‡Р°РµРј СЂРёСЃ Рё С€РЅР°РїСЃ - РЅРµРјРЅРѕРіРѕ, РЅРѕ РІРѕР»РЅРµ РґРѕСЃС‚Р°С‚РѕС‡РЅРѕ.
 };
 
 // ************************************************************
@@ -144,7 +144,7 @@ INSTANCE DIA_Pock_WhyJail (C_INFO)
 	condition	= DIA_Pock_WhyJail_Condition;
 	information	= DIA_Pock_WhyJail_Info;
 	permanent	= 0;
-	description	= "Почему ты здесь?";
+	description	= "РџРѕС‡РµРјСѓ С‚С‹ Р·РґРµСЃСЊ?";
 };                       
 
 FUNC INT DIA_Pock_WhyJail_Condition()
@@ -157,10 +157,10 @@ FUNC INT DIA_Pock_WhyJail_Condition()
 
 FUNC VOID DIA_Pock_WhyJail_Info()
 {	
-	AI_Output (other, self,"DIA_Pock_WhyJail_15_00"); //Почему ты здесь?
-	AI_Output (self, other,"DIA_Pock_WhyJail_04_01"); //Налоги, парень, налоги. В кошельке у меня было так же пусто, как и в желудке, и я просто не смог заплатить.
-	AI_Output (self, other,"DIA_Pock_WhyJail_04_02"); //В один прекрасный день пришли содаты и притащили меня сюда. Впрочем, здесь не хуже, чем на воле. По крайней мере, я не протяну ноги с голода.
-	AI_Output (self, other,"DIA_Pock_WhyJail_04_03"); //Я всегда вовремя платил налоги - всю свою жизнь. Но этому коронованному сукиному сыну этого оказалось мало!
+	AI_Output (other, self,"DIA_Pock_WhyJail_15_00"); //РџРѕС‡РµРјСѓ С‚С‹ Р·РґРµСЃСЊ?
+	AI_Output (self, other,"DIA_Pock_WhyJail_04_01"); //РќР°Р»РѕРіРё, РїР°СЂРµРЅСЊ, РЅР°Р»РѕРіРё. Р’ РєРѕС€РµР»СЊРєРµ Сѓ РјРµРЅСЏ Р±С‹Р»Рѕ С‚Р°Рє Р¶Рµ РїСѓСЃС‚Рѕ, РєР°Рє Рё РІ Р¶РµР»СѓРґРєРµ, Рё СЏ РїСЂРѕСЃС‚Рѕ РЅРµ СЃРјРѕРі Р·Р°РїР»Р°С‚РёС‚СЊ.
+	AI_Output (self, other,"DIA_Pock_WhyJail_04_02"); //Р’ РѕРґРёРЅ РїСЂРµРєСЂР°СЃРЅС‹Р№ РґРµРЅСЊ РїСЂРёС€Р»Рё СЃРѕРґР°С‚С‹ Рё РїСЂРёС‚Р°С‰РёР»Рё РјРµРЅСЏ СЃСЋРґР°. Р’РїСЂРѕС‡РµРј, Р·РґРµСЃСЊ РЅРµ С…СѓР¶Рµ, С‡РµРј РЅР° РІРѕР»Рµ. РџРѕ РєСЂР°Р№РЅРµР№ РјРµСЂРµ, СЏ РЅРµ РїСЂРѕС‚СЏРЅСѓ РЅРѕРіРё СЃ РіРѕР»РѕРґР°.
+	AI_Output (self, other,"DIA_Pock_WhyJail_04_03"); //РЇ РІСЃРµРіРґР° РІРѕРІСЂРµРјСЏ РїР»Р°С‚РёР» РЅР°Р»РѕРіРё - РІСЃСЋ СЃРІРѕСЋ Р¶РёР·РЅСЊ. РќРѕ СЌС‚РѕРјСѓ РєРѕСЂРѕРЅРѕРІР°РЅРЅРѕРјСѓ СЃСѓРєРёРЅРѕРјСѓ СЃС‹РЅСѓ СЌС‚РѕРіРѕ РѕРєР°Р·Р°Р»РѕСЃСЊ РјР°Р»Рѕ!
 };
 
 // ************************************************************
@@ -174,7 +174,7 @@ INSTANCE DIA_Pock_ForgotAll (C_INFO)
 	condition	= DIA_Pock_ForgotAll_Condition;
 	information	= DIA_Pock_ForgotAll_Info;
 	permanent	= 1;
-	description	= "Все в порядке?";
+	description	= "Р’СЃРµ РІ РїРѕСЂСЏРґРєРµ?";
 };                       
 
 FUNC INT DIA_Pock_ForgotAll_Condition()
@@ -187,10 +187,10 @@ FUNC INT DIA_Pock_ForgotAll_Condition()
 
 FUNC VOID DIA_Pock_ForgotAll_Info()
 {	
-	AI_Output (other, self,"DIA_Pock_ForgotAll_15_00"); //С тобой все в порядке?
-	AI_Output (self, other,"DIA_Pock_ForgotAll_04_01"); //Приятно видеть новые лица.
-	AI_Output (other, self,"DIA_Pock_ForgotAll_15_02"); //Эй, мы же уже с тобой разговаривали!
-	AI_Output (self, other,"DIA_Pock_ForgotAll_04_03"); //Нет! Этого не может быть! Я тебя никогда раньше не видел.
-	AI_Output (other, self,"DIA_Pock_ForgotAll_15_04"); //Конечно...
+	AI_Output (other, self,"DIA_Pock_ForgotAll_15_00"); //РЎ С‚РѕР±РѕР№ РІСЃРµ РІ РїРѕСЂСЏРґРєРµ?
+	AI_Output (self, other,"DIA_Pock_ForgotAll_04_01"); //РџСЂРёСЏС‚РЅРѕ РІРёРґРµС‚СЊ РЅРѕРІС‹Рµ Р»РёС†Р°.
+	AI_Output (other, self,"DIA_Pock_ForgotAll_15_02"); //Р­Р№, РјС‹ Р¶Рµ СѓР¶Рµ СЃ С‚РѕР±РѕР№ СЂР°Р·РіРѕРІР°СЂРёРІР°Р»Рё!
+	AI_Output (self, other,"DIA_Pock_ForgotAll_04_03"); //РќРµС‚! Р­С‚РѕРіРѕ РЅРµ РјРѕР¶РµС‚ Р±С‹С‚СЊ! РЇ С‚РµР±СЏ РЅРёРєРѕРіРґР° СЂР°РЅСЊС€Рµ РЅРµ РІРёРґРµР».
+	AI_Output (other, self,"DIA_Pock_ForgotAll_15_04"); //РљРѕРЅРµС‡РЅРѕ...
 };
 

@@ -1,7 +1,7 @@
 instance STT_301_Ian (Npc_Default)
 {
 	//-------- primary data --------
-	name 		=		"ίν";
+	name 		=		"Π―Π½";
 	npctype 	=	  	NPCTYPE_MAIN;
 	guild 		=		GIL_STT;
 	level 		=		13;

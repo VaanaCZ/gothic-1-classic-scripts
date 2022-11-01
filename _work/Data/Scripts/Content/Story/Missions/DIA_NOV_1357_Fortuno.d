@@ -23,7 +23,7 @@ FUNC VOID  DIA_Fortuno_EXIT_Info()
 };
 
 // **************************************************
-//					Erste Begrьssung
+//					Erste BegrСЊssung
 // **************************************************
 
 instance  DIA_Fortuno_Greet (C_INFO)
@@ -46,7 +46,7 @@ FUNC int  DIA_Fortuno_Greet_Condition()
 
 FUNC VOID  DIA_Fortuno_Greet_Info()
 {
-	AI_Output (self, other,"DIA_Fortuno_Greet_05_00"); //Подойди поближе! Здесь каждый новичок получает от меня подарок.
+	AI_Output (self, other,"DIA_Fortuno_Greet_05_00"); //РџРѕРґРѕР№РґРё РїРѕР±Р»РёР¶Рµ! Р—РґРµСЃСЊ РєР°Р¶РґС‹Р№ РЅРѕРІРёС‡РѕРє РїРѕР»СѓС‡Р°РµС‚ РѕС‚ РјРµРЅСЏ РїРѕРґР°СЂРѕРє.
 };
 
 // **************************************************
@@ -62,7 +62,7 @@ instance  DIA_Fortuno_GetGeschenk (C_INFO)
 	condition	= DIA_Fortuno_GetGeschenk_Condition;
 	information	= DIA_Fortuno_GetGeschenk_Info;
 	permanent	= 0;
-	description = "Какой подарок?";
+	description = "РљР°РєРѕР№ РїРѕРґР°СЂРѕРє?";
 };                       
 
 FUNC int  DIA_Fortuno_GetGeschenk_Condition()
@@ -72,21 +72,21 @@ FUNC int  DIA_Fortuno_GetGeschenk_Condition()
 
 FUNC VOID  DIA_Fortuno_GetGeschenk_Info()
 {
-	AI_Output (other, self,"DIA_Fortuno_GetGeschenk_15_00"); //Какой подарок?
-	AI_Output (self, other,"DIA_Fortuno_GetGeschenk_05_01"); //Здесь три сигареты с болотником. 'Северный темный'. Сильная вещь!
-	AI_Output (self, other,"DIA_Fortuno_GetGeschenk_05_02"); //Ты сможешь брать у меня болотник каждый день, но если захочешь получить больше обычной дневной порции, придется заплатить.
-	AI_Output (self, other,"DIA_Fortuno_GetGeschenk_05_03"); //Если на дороге между Лагерями тебе попадутся какие-нибудь травы или ягоды, приноси их сюда. Я заплачу.
+	AI_Output (other, self,"DIA_Fortuno_GetGeschenk_15_00"); //РљР°РєРѕР№ РїРѕРґР°СЂРѕРє?
+	AI_Output (self, other,"DIA_Fortuno_GetGeschenk_05_01"); //Р—РґРµСЃСЊ С‚СЂРё СЃРёРіР°СЂРµС‚С‹ СЃ Р±РѕР»РѕС‚РЅРёРєРѕРј. 'РЎРµРІРµСЂРЅС‹Р№ С‚РµРјРЅС‹Р№'. РЎРёР»СЊРЅР°СЏ РІРµС‰СЊ!
+	AI_Output (self, other,"DIA_Fortuno_GetGeschenk_05_02"); //РўС‹ СЃРјРѕР¶РµС€СЊ Р±СЂР°С‚СЊ Сѓ РјРµРЅСЏ Р±РѕР»РѕС‚РЅРёРє РєР°Р¶РґС‹Р№ РґРµРЅСЊ, РЅРѕ РµСЃР»Рё Р·Р°С…РѕС‡РµС€СЊ РїРѕР»СѓС‡РёС‚СЊ Р±РѕР»СЊС€Рµ РѕР±С‹С‡РЅРѕР№ РґРЅРµРІРЅРѕР№ РїРѕСЂС†РёРё, РїСЂРёРґРµС‚СЃСЏ Р·Р°РїР»Р°С‚РёС‚СЊ.
+	AI_Output (self, other,"DIA_Fortuno_GetGeschenk_05_03"); //Р•СЃР»Рё РЅР° РґРѕСЂРѕРіРµ РјРµР¶РґСѓ Р›Р°РіРµСЂСЏРјРё С‚РµР±Рµ РїРѕРїР°РґСѓС‚СЃСЏ РєР°РєРёРµ-РЅРёР±СѓРґСЊ С‚СЂР°РІС‹ РёР»Рё СЏРіРѕРґС‹, РїСЂРёРЅРѕСЃРё РёС… СЃСЋРґР°. РЇ Р·Р°РїР»Р°С‡Сѓ.
 
 	CreateInvItems(self, itmijoint_2, 3);
 	B_GiveInvItems(self, other, itmijoint_2, 3);
 	Fortuno_RationDay = Wld_GetDay();
 	
 	Log_CreateTopic	(GE_TraderPSI,	LOG_NOTE);
-	B_LogEntry		(GE_TraderPSI,"Фортуно занимается травами под алхимической лабораторией.");
+	B_LogEntry		(GE_TraderPSI,"Р¤РѕСЂС‚СѓРЅРѕ Р·Р°РЅРёРјР°РµС‚СЃСЏ С‚СЂР°РІР°РјРё РїРѕРґ Р°Р»С…РёРјРёС‡РµСЃРєРѕР№ Р»Р°Р±РѕСЂР°С‚РѕСЂРёРµР№.");
 };
 
 // **************************************************
-//				Tдgliche Ration
+//				TРґgliche Ration
 // **************************************************
 
 instance  DIA_Fortuno_DailyRation (C_INFO)
@@ -96,7 +96,7 @@ instance  DIA_Fortuno_DailyRation (C_INFO)
 	condition	= DIA_Fortuno_DailyRation_Condition;
 	information	= DIA_Fortuno_DailyRation_Info;
 	permanent	= 1;
-	description = "Я пришел за своей дневной порцией болотника.";
+	description = "РЇ РїСЂРёС€РµР» Р·Р° СЃРІРѕРµР№ РґРЅРµРІРЅРѕР№ РїРѕСЂС†РёРµР№ Р±РѕР»РѕС‚РЅРёРєР°.";
 };                       
 
 FUNC int  DIA_Fortuno_DailyRation_Condition()
@@ -109,17 +109,17 @@ FUNC int  DIA_Fortuno_DailyRation_Condition()
 
 FUNC VOID  DIA_Fortuno_DailyRation_Info()
 {
-	AI_Output (other, self,"DIA_Fortuno_DailyRation_15_00"); //Я пришел за своей дневной порцией болотника.
+	AI_Output (other, self,"DIA_Fortuno_DailyRation_15_00"); //РЇ РїСЂРёС€РµР» Р·Р° СЃРІРѕРµР№ РґРЅРµРІРЅРѕР№ РїРѕСЂС†РёРµР№ Р±РѕР»РѕС‚РЅРёРєР°.
 	if (Fortuno_RationDay!=Wld_GetDay())
  	{
- 		AI_Output (self, other,"DIA_Fortuno_DailyRation_05_01"); //Вот, возьми. Три 'северных темных' - но не кури их все сразу!
+ 		AI_Output (self, other,"DIA_Fortuno_DailyRation_05_01"); //Р’РѕС‚, РІРѕР·СЊРјРё. РўСЂРё 'СЃРµРІРµСЂРЅС‹С… С‚РµРјРЅС‹С…' - РЅРѕ РЅРµ РєСѓСЂРё РёС… РІСЃРµ СЃСЂР°Р·Сѓ!
 		CreateInvItems(self, itmijoint_2, 3);
 		B_GiveInvItems(self, other, itmijoint_2, 3);
 		Fortuno_RationDay = Wld_GetDay();
 	}
 	else
 	{
-		AI_Output (self, other,"DIA_Fortuno_DailyRation_05_02"); //Сегодня ты уже получил свою порцию. Если хочешь еще, приходи завтра или купи что-нибудь.
+		AI_Output (self, other,"DIA_Fortuno_DailyRation_05_02"); //РЎРµРіРѕРґРЅСЏ С‚С‹ СѓР¶Рµ РїРѕР»СѓС‡РёР» СЃРІРѕСЋ РїРѕСЂС†РёСЋ. Р•СЃР»Рё С…РѕС‡РµС€СЊ РµС‰Рµ, РїСЂРёС…РѕРґРё Р·Р°РІС‚СЂР° РёР»Рё РєСѓРїРё С‡С‚Рѕ-РЅРёР±СѓРґСЊ.
 	};
 };
 
@@ -134,7 +134,7 @@ instance  DIA_Fortuno_BuyJoints (C_INFO)
 	condition	= DIA_Fortuno_BuyJoints_Condition;
 	information	= DIA_Fortuno_BuyJoints_Info;
 	permanent	= 1;
-	description = "Давай меняться.";
+	description = "Р”Р°РІР°Р№ РјРµРЅСЏС‚СЊСЃСЏ.";
 	Trade		= 1;
 };                       
 
@@ -148,8 +148,8 @@ FUNC int  DIA_Fortuno_BuyJoints_Condition()
 
 FUNC VOID  DIA_Fortuno_BuyJoints_Info()
 {
-	AI_Output (other, self,"DIA_Fortuno_BuyJoints_15_00"); //Давай меняться.
-	AI_Output (self, other,"DIA_Fortuno_BuyJoints_05_01"); //Что тебе от меня нужно? Или ты хочешь мне что-то продать?
+	AI_Output (other, self,"DIA_Fortuno_BuyJoints_15_00"); //Р”Р°РІР°Р№ РјРµРЅСЏС‚СЊСЃСЏ.
+	AI_Output (self, other,"DIA_Fortuno_BuyJoints_05_01"); //Р§С‚Рѕ С‚РµР±Рµ РѕС‚ РјРµРЅСЏ РЅСѓР¶РЅРѕ? РР»Рё С‚С‹ С…РѕС‡РµС€СЊ РјРЅРµ С‡С‚Рѕ-С‚Рѕ РїСЂРѕРґР°С‚СЊ?
 };
 
 

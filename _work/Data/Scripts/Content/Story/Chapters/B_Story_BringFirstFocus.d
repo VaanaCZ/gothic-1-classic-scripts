@@ -8,7 +8,7 @@
 //#####################################################################
 func void B_Story_BringFirstFocus()
 {
-	//-------- Ausrüstung für Spieler --------
+	//-------- AusrÑŒstung fÑŒr Spieler --------
 	CreateInvItem	(self, ItWrFocusmapPsi);
 	B_GiveInvItems	(self, hero, ItWrFocusmapPsi,1);
 	

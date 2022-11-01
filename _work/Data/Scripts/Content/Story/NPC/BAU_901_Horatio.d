@@ -2,7 +2,7 @@ instance BAU_901_Horatio (Npc_Default)
 {
 	//-------- primary data --------
 	
-	name 		=	"Горацио";
+	name 		=	"Р“РѕСЂР°С†РёРѕ";
 	npctype	 	=	npctype_main;
 	guild 		=	GIL_BAU;      
 	level 		=	8;

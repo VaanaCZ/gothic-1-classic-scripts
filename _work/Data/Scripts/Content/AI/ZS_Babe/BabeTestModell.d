@@ -1,7 +1,7 @@
 prototype TestBabe (C_NPC)
 {
 	
-	name 	= "Девица";
+	name 	= "Р”РµРІРёС†Р°";
 	guild 	= GIL_NONE;
 	level	= 1;
 	

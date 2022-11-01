@@ -1,10 +1,10 @@
-// Nur für Kap.6 benutzen
+// Nur fÑŒr Kap.6 benutzen
 
 instance KDF_406_OTXardas (Npc_Default)
 {
 	//-------- primary data --------
 	
-	name 		=	"Êñàğäàñ";
+	name 		=	"ĞšÑĞ°Ñ€Ğ´Ğ°Ñ";
 	npctype		=	npctype_main;
 	guild 		=	GIL_NONE;      
 	level 		=	30;

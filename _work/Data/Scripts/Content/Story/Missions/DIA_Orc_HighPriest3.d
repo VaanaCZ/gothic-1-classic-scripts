@@ -21,11 +21,11 @@ FUNC VOID Info_HighPriest3_Info()
 	AI_SetWalkmode		(self, NPC_WALK);
 	AI_GotoNpc			(self, other);
 	
-	AI_Output			(self, other,"Info_HighPriest3_17_01"); //СМЕЕЕЕЕЕЕРТНЫЫЫЙ!
-	AI_Output			(self, other,"Info_HighPriest3_17_02"); //ТВООООООЙ ПУУУУТЬ ОКОООНЧИТСЯ ЗДЕЕЕСЬ!!
-	AI_Output 			(other, self,"Info_HighPriest3_15_03"); //Прежде я тебя отправлю попутешествовать!
+	AI_Output			(self, other,"Info_HighPriest3_17_01"); //РЎРњР•Р•Р•Р•Р•Р•Р•Р РўРќР«Р«Р«Р™!
+	AI_Output			(self, other,"Info_HighPriest3_17_02"); //РўР’РћРћРћРћРћРћР™ РџРЈРЈРЈРЈРўР¬ РћРљРћРћРћРќР§РРўРЎРЇ Р—Р”Р•Р•Р•РЎР¬!!
+	AI_Output 			(other, self,"Info_HighPriest3_15_03"); //РџСЂРµР¶РґРµ СЏ С‚РµР±СЏ РѕС‚РїСЂР°РІР»СЋ РїРѕРїСѓС‚РµС€РµСЃС‚РІРѕРІР°С‚СЊ!
 
-	B_LogEntry			(CH4_EnterTemple,"Варраг-Унхилькт, один из пяти шаманов Спящего, стоит передо мной. Только один из нас выйдет отсюда живым!");
+	B_LogEntry			(CH4_EnterTemple,"Р’Р°СЂСЂР°Рі-РЈРЅС…РёР»СЊРєС‚, РѕРґРёРЅ РёР· РїСЏС‚Рё С€Р°РјР°РЅРѕРІ РЎРїСЏС‰РµРіРѕ, СЃС‚РѕРёС‚ РїРµСЂРµРґРѕ РјРЅРѕР№. РўРѕР»СЊРєРѕ РѕРґРёРЅ РёР· РЅР°СЃ РІС‹Р№РґРµС‚ РѕС‚СЃСЋРґР° Р¶РёРІС‹Рј!");
 
 	AI_StopProcessInfos	(self);
 	

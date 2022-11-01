@@ -14,7 +14,7 @@ INSTANCE Info_Stt_12_EXIT(C_INFO)
 	condition	= Info_Stt_12_EXIT_Condition;
 	information	= Info_Stt_12_EXIT_Info;
 	permanent	= 1;
-	description = "ЗАКОНЧИТЬ";
+	description = "Р—РђРљРћРќР§РРўР¬";
 };                       
 
 FUNC INT Info_Stt_12_EXIT_Condition()
@@ -37,7 +37,7 @@ INSTANCE Info_Stt_12_EinerVonEuchWerden (C_INFO) // E1
 	condition	= Info_Stt_12_EinerVonEuchWerden_Condition;
 	information	= Info_Stt_12_EinerVonEuchWerden_Info;
 	permanent	= 1;
-	description = "Я хочу стать одним из Призраков.";
+	description = "РЇ С…РѕС‡Сѓ СЃС‚Р°С‚СЊ РѕРґРЅРёРј РёР· РџСЂРёР·СЂР°РєРѕРІ.";
 };                       
 
 FUNC INT Info_Stt_12_EinerVonEuchWerden_Condition()
@@ -50,11 +50,11 @@ FUNC INT Info_Stt_12_EinerVonEuchWerden_Condition()
 
 FUNC VOID Info_Stt_12_EinerVonEuchWerden_Info()
 {
-	AI_Output(other,self,"Info_Stt_12_EinerVonEuchWerden_15_00"); //Я хочу стать одним из Призраков.
-	AI_Output(self,other,"Info_Stt_12_EinerVonEuchWerden_12_01"); //Ох. Тогда тебе стоит знать, что Гомез не выносит отказов. Если хочешь стать одним из нас, ты должен быть готов пройти ради него огонь и воду.
-	AI_Output(self,other,"Info_Stt_12_EinerVonEuchWerden_12_02"); //В лучшем случае принимают не более половины желающих.
-	AI_Output(other,self,"Info_Stt_12_EinerVonEuchWerden_15_03"); //А что случается с остальными? 
-	AI_Output(self,other,"Info_Stt_12_EinerVonEuchWerden_12_04"); //Уходят в Новый Лагерь жевать рис. Хе-хе-хе.
+	AI_Output(other,self,"Info_Stt_12_EinerVonEuchWerden_15_00"); //РЇ С…РѕС‡Сѓ СЃС‚Р°С‚СЊ РѕРґРЅРёРј РёР· РџСЂРёР·СЂР°РєРѕРІ.
+	AI_Output(self,other,"Info_Stt_12_EinerVonEuchWerden_12_01"); //РћС…. РўРѕРіРґР° С‚РµР±Рµ СЃС‚РѕРёС‚ Р·РЅР°С‚СЊ, С‡С‚Рѕ Р“РѕРјРµР· РЅРµ РІС‹РЅРѕСЃРёС‚ РѕС‚РєР°Р·РѕРІ. Р•СЃР»Рё С…РѕС‡РµС€СЊ СЃС‚Р°С‚СЊ РѕРґРЅРёРј РёР· РЅР°СЃ, С‚С‹ РґРѕР»Р¶РµРЅ Р±С‹С‚СЊ РіРѕС‚РѕРІ РїСЂРѕР№С‚Рё СЂР°РґРё РЅРµРіРѕ РѕРіРѕРЅСЊ Рё РІРѕРґСѓ.
+	AI_Output(self,other,"Info_Stt_12_EinerVonEuchWerden_12_02"); //Р’ Р»СѓС‡С€РµРј СЃР»СѓС‡Р°Рµ РїСЂРёРЅРёРјР°СЋС‚ РЅРµ Р±РѕР»РµРµ РїРѕР»РѕРІРёРЅС‹ Р¶РµР»Р°СЋС‰РёС….
+	AI_Output(other,self,"Info_Stt_12_EinerVonEuchWerden_15_03"); //Рђ С‡С‚Рѕ СЃР»СѓС‡Р°РµС‚СЃСЏ СЃ РѕСЃС‚Р°Р»СЊРЅС‹РјРё? 
+	AI_Output(self,other,"Info_Stt_12_EinerVonEuchWerden_12_04"); //РЈС…РѕРґСЏС‚ РІ РќРѕРІС‹Р№ Р›Р°РіРµСЂСЊ Р¶РµРІР°С‚СЊ СЂРёСЃ. РҐРµ-С…Рµ-С…Рµ.
 };
 
 // *************************************************************************
@@ -67,7 +67,7 @@ INSTANCE Info_Stt_12_WichtigePersonen(C_INFO)
 	condition	= Info_Stt_12_WichtigePersonen_Condition;
 	information	= Info_Stt_12_WichtigePersonen_Info;
 	permanent	= 1;
-	description = "Кто здесь главный?";
+	description = "РљС‚Рѕ Р·РґРµСЃСЊ РіР»Р°РІРЅС‹Р№?";
 };                       
 
 FUNC INT Info_Stt_12_WichtigePersonen_Condition()
@@ -77,8 +77,8 @@ FUNC INT Info_Stt_12_WichtigePersonen_Condition()
 
 FUNC VOID Info_Stt_12_WichtigePersonen_Info()
 {
-	AI_Output(other,self,"Info_Stt_12_WichtigePersonen_15_00"); //Кто здесь главный?
-	AI_Output(self,other,"Info_Stt_12_WichtigePersonen_12_01"); //Пожалуй, Диего можно назвать главой Призраков. Но кто сможет поговорить с Гомезом, решает Торус.
+	AI_Output(other,self,"Info_Stt_12_WichtigePersonen_15_00"); //РљС‚Рѕ Р·РґРµСЃСЊ РіР»Р°РІРЅС‹Р№?
+	AI_Output(self,other,"Info_Stt_12_WichtigePersonen_12_01"); //РџРѕР¶Р°Р»СѓР№, Р”РёРµРіРѕ РјРѕР¶РЅРѕ РЅР°Р·РІР°С‚СЊ РіР»Р°РІРѕР№ РџСЂРёР·СЂР°РєРѕРІ. РќРѕ РєС‚Рѕ СЃРјРѕР¶РµС‚ РїРѕРіРѕРІРѕСЂРёС‚СЊ СЃ Р“РѕРјРµР·РѕРј, СЂРµС€Р°РµС‚ РўРѕСЂСѓСЃ.
 	
 	var C_NPC Diego;		Diego 	= Hlp_GetNpc(PC_Thief);
 	Diego.aivar[AIV_FINDABLE] = TRUE;
@@ -96,7 +96,7 @@ INSTANCE Info_Stt_12_DasLager(C_INFO)
 	condition	= Info_Stt_12_DasLager_Condition;
 	information	= Info_Stt_12_DasLager_Info;
 	permanent	= 1;
-	description = "Хотелось бы знать, что такого хорошего в этом Лагере?";
+	description = "РҐРѕС‚РµР»РѕСЃСЊ Р±С‹ Р·РЅР°С‚СЊ, С‡С‚Рѕ С‚Р°РєРѕРіРѕ С…РѕСЂРѕС€РµРіРѕ РІ СЌС‚РѕРј Р›Р°РіРµСЂРµ?";
 };                       
 
 FUNC INT Info_Stt_12_DasLager_Condition()
@@ -106,8 +106,8 @@ FUNC INT Info_Stt_12_DasLager_Condition()
 
 FUNC VOID Info_Stt_12_DasLager_Info()
 {
-	AI_Output(other,self,"Info_Stt_12_DasLager_15_00"); //Хотелось бы знать, что такого хорошего в этом Лагере?
-	AI_Output(self,other,"Info_Stt_12_DasLager_12_01"); //Тебе лучше поговорить об этом с рудокопами - им все равно нечем заняться.
+	AI_Output(other,self,"Info_Stt_12_DasLager_15_00"); //РҐРѕС‚РµР»РѕСЃСЊ Р±С‹ Р·РЅР°С‚СЊ, С‡С‚Рѕ С‚Р°РєРѕРіРѕ С…РѕСЂРѕС€РµРіРѕ РІ СЌС‚РѕРј Р›Р°РіРµСЂРµ?
+	AI_Output(self,other,"Info_Stt_12_DasLager_12_01"); //РўРµР±Рµ Р»СѓС‡С€Рµ РїРѕРіРѕРІРѕСЂРёС‚СЊ РѕР± СЌС‚РѕРј СЃ СЂСѓРґРѕРєРѕРїР°РјРё - РёРј РІСЃРµ СЂР°РІРЅРѕ РЅРµС‡РµРј Р·Р°РЅСЏС‚СЊСЃСЏ.
 };
 
 // *************************************************************************
@@ -120,7 +120,7 @@ INSTANCE Info_Stt_12_DieLage(C_INFO) // E1
 	condition	= Info_Stt_12_DieLage_Condition;
 	information	= Info_Stt_12_DieLage_Info;
 	permanent	= 1;
-	description = "Как дела?";
+	description = "РљР°Рє РґРµР»Р°?";
 };                       
 
 FUNC INT Info_Stt_12_DieLage_Condition()
@@ -130,8 +130,8 @@ FUNC INT Info_Stt_12_DieLage_Condition()
 
 FUNC VOID Info_Stt_12_DieLage_Info()
 {
-	AI_Output(other,self,"Info_Stt_12_DieLage_15_00"); //Ну и как идут дела?
-	AI_Output(self,other,"Info_Stt_12_DieLage_12_01"); //Что тебе нужно?
+	AI_Output(other,self,"Info_Stt_12_DieLage_15_00"); //РќСѓ Рё РєР°Рє РёРґСѓС‚ РґРµР»Р°?
+	AI_Output(self,other,"Info_Stt_12_DieLage_12_01"); //Р§С‚Рѕ С‚РµР±Рµ РЅСѓР¶РЅРѕ?
 };
 	
 // *************************************************************************

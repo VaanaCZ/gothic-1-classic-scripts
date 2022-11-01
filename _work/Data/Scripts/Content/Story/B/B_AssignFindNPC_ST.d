@@ -8,7 +8,7 @@ INSTANCE Info_FindNPC_ST(C_INFO)
 	condition	= Info_FindNPC_ST_Condition;
 	information	= Info_FindNPC_ST_Info;
 	permanent	= 1;
-	description = "Где я могу найти...";
+	description = "Р“РґРµ СЏ РјРѕРіСѓ РЅР°Р№С‚Рё...";
 };                       
 
 FUNC INT Info_FindNPC_ST_Condition()
@@ -24,19 +24,19 @@ FUNC VOID Info_FindNPC_ST_Info()
 	VAR C_NPC CorAngar;		CorAngar = Hlp_GetNpc(Gur_1202_CorAngar);
 	if (CorAngar.aivar[AIV_FINDABLE] == TRUE)
 	{
-		Info_AddChoice(Info_FindNPC_ST,"...Кор Ангара?", Info_FindNPC_ST_CorAngar);
+		Info_AddChoice(Info_FindNPC_ST,"...РљРѕСЂ РђРЅРіР°СЂР°?", Info_FindNPC_ST_CorAngar);
 	};
 
 	VAR C_NPC CorKalom;		CorKalom = Hlp_GetNpc(Gur_1201_CorKalom);
 	if ( (CorKalom.aivar[AIV_FINDABLE] == TRUE) && (CorAngar_GotoOGY != TRUE) )
 	{
-		Info_AddChoice(Info_FindNPC_ST,"...Кор Галома?", Info_FindNPC_ST_CorKalom);
+		Info_AddChoice(Info_FindNPC_ST,"...РљРѕСЂ Р“Р°Р»РѕРјР°?", Info_FindNPC_ST_CorKalom);
 	};
 	
 	VAR C_NPC YBerion;		YBerion	= Hlp_GetNpc(Gur_1200_Yberion);
 	if ( (YBerion.aivar[AIV_FINDABLE] == TRUE) && (Kapitel < 3) )
 	{
-		Info_AddChoice(Info_FindNPC_ST,"...Ю`Бериона?", Info_FindNPC_ST_YBerion);
+		Info_AddChoice(Info_FindNPC_ST,"...Р®`Р‘РµСЂРёРѕРЅР°?", Info_FindNPC_ST_YBerion);
 	};
 };
 
@@ -51,7 +51,7 @@ FUNC VOID Info_FindNPC_ST_BACK()
 
 FUNC VOID Info_FindNPC_ST_CorAngar()
 {
-	AI_Output(other,self,"Info_FindNPC_ST_CorAngar_15_00"); //Где я могу найти Кор Ангара?
+	AI_Output(other,self,"Info_FindNPC_ST_CorAngar_15_00"); //Р“РґРµ СЏ РјРѕРіСѓ РЅР°Р№С‚Рё РљРѕСЂ РђРЅРіР°СЂР°?
 
 	VAR C_NPC CorAngar;		CorAngar = Hlp_GetNpc(Gur_1202_CorAngar);
 	
@@ -65,26 +65,26 @@ FUNC VOID Info_FindNPC_ST_CorAngar()
 		{
 			if (self.voice == 2)
 			{
-				AI_Output(self,other,"Info_FindNPC_ST_CorAngar_02_01"); //Тренировочная площадка для Стражей находится на втором уровне. Обычно он проводит там весь день.
+				AI_Output(self,other,"Info_FindNPC_ST_CorAngar_02_01"); //РўСЂРµРЅРёСЂРѕРІРѕС‡РЅР°СЏ РїР»РѕС‰Р°РґРєР° РґР»СЏ РЎС‚СЂР°Р¶РµР№ РЅР°С…РѕРґРёС‚СЃСЏ РЅР° РІС‚РѕСЂРѕРј СѓСЂРѕРІРЅРµ. РћР±С‹С‡РЅРѕ РѕРЅ РїСЂРѕРІРѕРґРёС‚ С‚Р°Рј РІРµСЃСЊ РґРµРЅСЊ.
 			}
 			else if (self.voice == 3)
 			{
-				AI_Output(self,other,"Info_FindNPC_ST_CorAngar_03_01"); //Тренировочная площадка для Стражей находится на втором уровне. Обычно он проводит там весь день.
+				AI_Output(self,other,"Info_FindNPC_ST_CorAngar_03_01"); //РўСЂРµРЅРёСЂРѕРІРѕС‡РЅР°СЏ РїР»РѕС‰Р°РґРєР° РґР»СЏ РЎС‚СЂР°Р¶РµР№ РЅР°С…РѕРґРёС‚СЃСЏ РЅР° РІС‚РѕСЂРѕРј СѓСЂРѕРІРЅРµ. РћР±С‹С‡РЅРѕ РѕРЅ РїСЂРѕРІРѕРґРёС‚ С‚Р°Рј РІРµСЃСЊ РґРµРЅСЊ.
 			}
 			else if (self.voice == 5)
 			{
-				AI_Output(self,other,"Info_FindNPC_ST_CorAngar_05_01"); //Тренировочная площадка для Стражей находится на втором уровне. Обычно он проводит там весь день.
+				AI_Output(self,other,"Info_FindNPC_ST_CorAngar_05_01"); //РўСЂРµРЅРёСЂРѕРІРѕС‡РЅР°СЏ РїР»РѕС‰Р°РґРєР° РґР»СЏ РЎС‚СЂР°Р¶РµР№ РЅР°С…РѕРґРёС‚СЃСЏ РЅР° РІС‚РѕСЂРѕРј СѓСЂРѕРІРЅРµ. РћР±С‹С‡РЅРѕ РѕРЅ РїСЂРѕРІРѕРґРёС‚ С‚Р°Рј РІРµСЃСЊ РґРµРЅСЊ.
 			};
 		}
 		else if (self.guild == GIL_TPL) 
 		{
 			if (self.voice == 8)
 			{
-				AI_Output(self,other,"Info_FindNPC_ST_CorAngar_08_01"); //Тренировочная площадка для Стражей находится на втором уровне. Обычно он проводит там весь день.
+				AI_Output(self,other,"Info_FindNPC_ST_CorAngar_08_01"); //РўСЂРµРЅРёСЂРѕРІРѕС‡РЅР°СЏ РїР»РѕС‰Р°РґРєР° РґР»СЏ РЎС‚СЂР°Р¶РµР№ РЅР°С…РѕРґРёС‚СЃСЏ РЅР° РІС‚РѕСЂРѕРј СѓСЂРѕРІРЅРµ. РћР±С‹С‡РЅРѕ РѕРЅ РїСЂРѕРІРѕРґРёС‚ С‚Р°Рј РІРµСЃСЊ РґРµРЅСЊ.
 			}
 			else if (self.voice == 13)
 			{
-				AI_Output(self,other,"Info_FindNPC_ST_CorAngar_13_01"); //Тренировочная площадка для Стражей находится на втором уровне. Обычно он проводит там весь день.
+				AI_Output(self,other,"Info_FindNPC_ST_CorAngar_13_01"); //РўСЂРµРЅРёСЂРѕРІРѕС‡РЅР°СЏ РїР»РѕС‰Р°РґРєР° РґР»СЏ РЎС‚СЂР°Р¶РµР№ РЅР°С…РѕРґРёС‚СЃСЏ РЅР° РІС‚РѕСЂРѕРј СѓСЂРѕРІРЅРµ. РћР±С‹С‡РЅРѕ РѕРЅ РїСЂРѕРІРѕРґРёС‚ С‚Р°Рј РІРµСЃСЊ РґРµРЅСЊ.
 			};
 		};
 	};
@@ -98,7 +98,7 @@ FUNC VOID Info_FindNPC_ST_CorAngar()
 
 FUNC VOID Info_FindNPC_ST_CorKalom()
 {
-	AI_Output(other,self,"Info_FindNPC_ST_CorKalom_15_00"); //Где я могу найти Кор Галома?
+	AI_Output(other,self,"Info_FindNPC_ST_CorKalom_15_00"); //Р“РґРµ СЏ РјРѕРіСѓ РЅР°Р№С‚Рё РљРѕСЂ Р“Р°Р»РѕРјР°?
 
 	VAR C_NPC CorKalom;		CorKalom = Hlp_GetNpc(Gur_1201_CorKalom);
 	
@@ -112,26 +112,26 @@ FUNC VOID Info_FindNPC_ST_CorKalom()
 		{
 			if (self.voice == 2)
 			{
-				AI_Output(self,other,"Info_FindNPC_ST_CorKalom_02_01"); //Лаборатория находится на втором уровне, рядом с Холмом, на котором стоит храм. Он работает там днем и ночью.
+				AI_Output(self,other,"Info_FindNPC_ST_CorKalom_02_01"); //Р›Р°Р±РѕСЂР°С‚РѕСЂРёСЏ РЅР°С…РѕРґРёС‚СЃСЏ РЅР° РІС‚РѕСЂРѕРј СѓСЂРѕРІРЅРµ, СЂСЏРґРѕРј СЃ РҐРѕР»РјРѕРј, РЅР° РєРѕС‚РѕСЂРѕРј СЃС‚РѕРёС‚ С…СЂР°Рј. РћРЅ СЂР°Р±РѕС‚Р°РµС‚ С‚Р°Рј РґРЅРµРј Рё РЅРѕС‡СЊСЋ.
 			}
 			else if (self.voice == 3)
 			{
-				AI_Output(self,other,"Info_FindNPC_ST_CorKalom_03_01"); //Лаборатория находится на втором уровне, рядом с Холмом, на котором стоит храм. Он работает там днем и ночью.
+				AI_Output(self,other,"Info_FindNPC_ST_CorKalom_03_01"); //Р›Р°Р±РѕСЂР°С‚РѕСЂРёСЏ РЅР°С…РѕРґРёС‚СЃСЏ РЅР° РІС‚РѕСЂРѕРј СѓСЂРѕРІРЅРµ, СЂСЏРґРѕРј СЃ РҐРѕР»РјРѕРј, РЅР° РєРѕС‚РѕСЂРѕРј СЃС‚РѕРёС‚ С…СЂР°Рј. РћРЅ СЂР°Р±РѕС‚Р°РµС‚ С‚Р°Рј РґРЅРµРј Рё РЅРѕС‡СЊСЋ.
 			}
 			else if (self.voice == 5)
 			{
-				AI_Output(self,other,"Info_FindNPC_ST_CorKalom_05_01"); //Лаборатория находится на втором уровне, рядом с Холмом, на котором стоит храм. Он работает там днем и ночью.
+				AI_Output(self,other,"Info_FindNPC_ST_CorKalom_05_01"); //Р›Р°Р±РѕСЂР°С‚РѕСЂРёСЏ РЅР°С…РѕРґРёС‚СЃСЏ РЅР° РІС‚РѕСЂРѕРј СѓСЂРѕРІРЅРµ, СЂСЏРґРѕРј СЃ РҐРѕР»РјРѕРј, РЅР° РєРѕС‚РѕСЂРѕРј СЃС‚РѕРёС‚ С…СЂР°Рј. РћРЅ СЂР°Р±РѕС‚Р°РµС‚ С‚Р°Рј РґРЅРµРј Рё РЅРѕС‡СЊСЋ.
 			};
 		}
 		else if (self.guild == GIL_TPL) 
 		{
 			if (self.voice == 8)
 			{
-				AI_Output(self,other,"Info_FindNPC_ST_CorKalom_08_01"); //Лаборатория находится на втором уровне, рядом с Холмом, на котором стоит храм. Он работает там днем и ночью.
+				AI_Output(self,other,"Info_FindNPC_ST_CorKalom_08_01"); //Р›Р°Р±РѕСЂР°С‚РѕСЂРёСЏ РЅР°С…РѕРґРёС‚СЃСЏ РЅР° РІС‚РѕСЂРѕРј СѓСЂРѕРІРЅРµ, СЂСЏРґРѕРј СЃ РҐРѕР»РјРѕРј, РЅР° РєРѕС‚РѕСЂРѕРј СЃС‚РѕРёС‚ С…СЂР°Рј. РћРЅ СЂР°Р±РѕС‚Р°РµС‚ С‚Р°Рј РґРЅРµРј Рё РЅРѕС‡СЊСЋ.
 			}
 			else if (self.voice == 13)
 			{
-				AI_Output(self,other,"Info_FindNPC_ST_CorKalom_13_01"); //Лаборатория находится на втором уровне, рядом с Холмом, на котором стоит храм. Он работает там днем и ночью.
+				AI_Output(self,other,"Info_FindNPC_ST_CorKalom_13_01"); //Р›Р°Р±РѕСЂР°С‚РѕСЂРёСЏ РЅР°С…РѕРґРёС‚СЃСЏ РЅР° РІС‚РѕСЂРѕРј СѓСЂРѕРІРЅРµ, СЂСЏРґРѕРј СЃ РҐРѕР»РјРѕРј, РЅР° РєРѕС‚РѕСЂРѕРј СЃС‚РѕРёС‚ С…СЂР°Рј. РћРЅ СЂР°Р±РѕС‚Р°РµС‚ С‚Р°Рј РґРЅРµРј Рё РЅРѕС‡СЊСЋ.
 			};
 		};
 	};
@@ -145,7 +145,7 @@ FUNC VOID Info_FindNPC_ST_CorKalom()
 
 FUNC VOID Info_FindNPC_ST_YBerion()
 {
-	AI_Output(other,self,"Info_FindNPC_ST_YBerion_15_00"); //Где я могу найти Ю`Бериона?
+	AI_Output(other,self,"Info_FindNPC_ST_YBerion_15_00"); //Р“РґРµ СЏ РјРѕРіСѓ РЅР°Р№С‚Рё Р®`Р‘РµСЂРёРѕРЅР°?
 
 	VAR C_NPC YBerion;		YBerion = Hlp_GetNpc(Gur_1200_YBerion);
 	
@@ -159,26 +159,26 @@ FUNC VOID Info_FindNPC_ST_YBerion()
 		{
 			if (self.voice == 2)
 			{
-				AI_Output(self,other,"Info_FindNPC_ST_YBerion_02_01"); //Просвещенный живет в уединении у подножия Холма. Он выходит к людям лишь по особым случаям.
+				AI_Output(self,other,"Info_FindNPC_ST_YBerion_02_01"); //РџСЂРѕСЃРІРµС‰РµРЅРЅС‹Р№ Р¶РёРІРµС‚ РІ СѓРµРґРёРЅРµРЅРёРё Сѓ РїРѕРґРЅРѕР¶РёСЏ РҐРѕР»РјР°. РћРЅ РІС‹С…РѕРґРёС‚ Рє Р»СЋРґСЏРј Р»РёС€СЊ РїРѕ РѕСЃРѕР±С‹Рј СЃР»СѓС‡Р°СЏРј.
 			}
 			else if (self.voice == 3)
 			{
-				AI_Output(self,other,"Info_FindNPC_ST_YBerion_03_01"); //Просвещенный живет в уединении у подножия Холма. Он выходит к людям лишь по особым случаям.
+				AI_Output(self,other,"Info_FindNPC_ST_YBerion_03_01"); //РџСЂРѕСЃРІРµС‰РµРЅРЅС‹Р№ Р¶РёРІРµС‚ РІ СѓРµРґРёРЅРµРЅРёРё Сѓ РїРѕРґРЅРѕР¶РёСЏ РҐРѕР»РјР°. РћРЅ РІС‹С…РѕРґРёС‚ Рє Р»СЋРґСЏРј Р»РёС€СЊ РїРѕ РѕСЃРѕР±С‹Рј СЃР»СѓС‡Р°СЏРј.
 			}
 			else if (self.voice == 5)
 			{
-				AI_Output(self,other,"Info_FindNPC_ST_YBerion_05_01"); //Просвещенный живет в уединении у подножия Холма. Он выходит к людям лишь по особым случаям.
+				AI_Output(self,other,"Info_FindNPC_ST_YBerion_05_01"); //РџСЂРѕСЃРІРµС‰РµРЅРЅС‹Р№ Р¶РёРІРµС‚ РІ СѓРµРґРёРЅРµРЅРёРё Сѓ РїРѕРґРЅРѕР¶РёСЏ РҐРѕР»РјР°. РћРЅ РІС‹С…РѕРґРёС‚ Рє Р»СЋРґСЏРј Р»РёС€СЊ РїРѕ РѕСЃРѕР±С‹Рј СЃР»СѓС‡Р°СЏРј.
 			};
 		}
 		else if (self.guild == GIL_TPL) 
 		{
 			if (self.voice == 8)
 			{
-				AI_Output(self,other,"Info_FindNPC_ST_YBerion_08_01"); //Просвещенный живет в уединении у подножия Холма. Он выходит к людям лишь по особым случаям.
+				AI_Output(self,other,"Info_FindNPC_ST_YBerion_08_01"); //РџСЂРѕСЃРІРµС‰РµРЅРЅС‹Р№ Р¶РёРІРµС‚ РІ СѓРµРґРёРЅРµРЅРёРё Сѓ РїРѕРґРЅРѕР¶РёСЏ РҐРѕР»РјР°. РћРЅ РІС‹С…РѕРґРёС‚ Рє Р»СЋРґСЏРј Р»РёС€СЊ РїРѕ РѕСЃРѕР±С‹Рј СЃР»СѓС‡Р°СЏРј.
 			}
 			else if (self.voice == 13)
 			{
-				AI_Output(self,other,"Info_FindNPC_ST_YBerion_13_01"); //Просвещенный живет в уединении у подножия Холма. Он выходит к людям лишь по особым случаям.
+				AI_Output(self,other,"Info_FindNPC_ST_YBerion_13_01"); //РџСЂРѕСЃРІРµС‰РµРЅРЅС‹Р№ Р¶РёРІРµС‚ РІ СѓРµРґРёРЅРµРЅРёРё Сѓ РїРѕРґРЅРѕР¶РёСЏ РҐРѕР»РјР°. РћРЅ РІС‹С…РѕРґРёС‚ Рє Р»СЋРґСЏРј Р»РёС€СЊ РїРѕ РѕСЃРѕР±С‹Рј СЃР»СѓС‡Р°СЏРј.
 			};
 		};
 	};

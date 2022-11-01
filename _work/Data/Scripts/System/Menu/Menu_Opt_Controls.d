@@ -78,7 +78,7 @@ const int CTRL_GROUP5	= ctrl_y_step * 4;
 
 INSTANCE MENU_ITEM_CHG_KEYS_HEADLINE(C_MENU_ITEM_DEF) 
 {
-	text[0]		=	"НАСТРОЙКИ УПРАВЛЕНИЯ";
+	text[0]		=	"РќРђРЎРўР РћР™РљР РЈРџР РђР’Р›Р•РќРРЇ";
 	type		=	MENU_ITEM_TEXT;	
 	// Position und Dimension	
 	posx		= 0;		
@@ -97,8 +97,8 @@ INSTANCE MENU_ITEM_CHG_KEYS_HEADLINE(C_MENU_ITEM_DEF)
 
 INSTANCE MENU_ITEM_KEY_UP(C_MENU_ITEM_DEF)
 {
-	text[0]			=	"Вперед";
-	text[1]			=   "Нажмите DEL, чтобы удалить или ENTER, чтобы настроить."; // Kommentar
+	text[0]			=	"Р’РїРµСЂРµРґ";
+	text[1]			=   "РќР°Р¶РјРёС‚Рµ DEL, С‡С‚РѕР±С‹ СѓРґР°Р»РёС‚СЊ РёР»Рё ENTER, С‡С‚РѕР±С‹ РЅР°СЃС‚СЂРѕРёС‚СЊ."; // Kommentar
 	posx			= 	ctrl_sp1_1;	posy	= 	ctrl_y_start + ctrl_y_step * 0 + CTRL_GROUP1;
 	onSelAction[0]	=	SEL_ACTION_EXECCOMMANDS;
 	onSelAction_S[0]=	"RUN MENU_ITEM_INP_UP";
@@ -108,8 +108,8 @@ INSTANCE MENU_ITEM_KEY_UP(C_MENU_ITEM_DEF)
 
 INSTANCE MENU_ITEM_KEY_DOWN(C_MENU_ITEM_DEF)
 {
-	text[0]			=	"Назад";
-	text[1]			=   "Нажмите DEL, чтобы удалить или ENTER, чтобы настроить."; // Kommentar
+	text[0]			=	"РќР°Р·Р°Рґ";
+	text[1]			=   "РќР°Р¶РјРёС‚Рµ DEL, С‡С‚РѕР±С‹ СѓРґР°Р»РёС‚СЊ РёР»Рё ENTER, С‡С‚РѕР±С‹ РЅР°СЃС‚СЂРѕРёС‚СЊ."; // Kommentar
 	posx			=	ctrl_sp1_1;		posy	=	ctrl_y_start + ctrl_y_step * 1 + CTRL_GROUP1;
 	onSelAction[0]	=	SEL_ACTION_EXECCOMMANDS;
 	onSelAction_S[0]= 	"RUN MENU_ITEM_INP_DOWN";  
@@ -119,8 +119,8 @@ INSTANCE MENU_ITEM_KEY_DOWN(C_MENU_ITEM_DEF)
 
 INSTANCE MENU_ITEM_KEY_LEFT(C_MENU_ITEM_DEF)
 {
-	text[0]			=	"Поворот налево";
-	text[1]			=   "Нажмите DEL, чтобы удалить или ENTER, чтобы настроить."; // Kommentar
+	text[0]			=	"РџРѕРІРѕСЂРѕС‚ РЅР°Р»РµРІРѕ";
+	text[1]			=   "РќР°Р¶РјРёС‚Рµ DEL, С‡С‚РѕР±С‹ СѓРґР°Р»РёС‚СЊ РёР»Рё ENTER, С‡С‚РѕР±С‹ РЅР°СЃС‚СЂРѕРёС‚СЊ."; // Kommentar
 	posx			=	ctrl_sp1_1;		posy	=	ctrl_y_start + ctrl_y_step * 2 + CTRL_GROUP1;
 	onSelAction[0]	=	SEL_ACTION_EXECCOMMANDS;
 	onSelAction_S[0]= 	"RUN MENU_ITEM_INP_LEFT";  
@@ -130,8 +130,8 @@ INSTANCE MENU_ITEM_KEY_LEFT(C_MENU_ITEM_DEF)
 	
 INSTANCE MENU_ITEM_KEY_RIGHT(C_MENU_ITEM_DEF)
 {
-	text[0]			=	"Поворот направо";
-	text[1]			=   "Нажмите DEL, чтобы удалить или ENTER, чтобы настроить."; // Kommentar
+	text[0]			=	"РџРѕРІРѕСЂРѕС‚ РЅР°РїСЂР°РІРѕ";
+	text[1]			=   "РќР°Р¶РјРёС‚Рµ DEL, С‡С‚РѕР±С‹ СѓРґР°Р»РёС‚СЊ РёР»Рё ENTER, С‡С‚РѕР±С‹ РЅР°СЃС‚СЂРѕРёС‚СЊ."; // Kommentar
 	posx			=	ctrl_sp1_1;		posy	=	ctrl_y_start + ctrl_y_step * 3 + CTRL_GROUP1;
 	
 	onSelAction[0]	=	SEL_ACTION_EXECCOMMANDS;
@@ -143,8 +143,8 @@ INSTANCE MENU_ITEM_KEY_RIGHT(C_MENU_ITEM_DEF)
 
 INSTANCE MENU_ITEM_KEY_STRAFE_LEFT(C_MENU_ITEM_DEF)
 {
-	text[0]			=	"Скольжение влево";
-	text[1]			=   "Нажмите DEL, чтобы удалить или ENTER, чтобы настроить."; // Kommentar
+	text[0]			=	"РЎРєРѕР»СЊР¶РµРЅРёРµ РІР»РµРІРѕ";
+	text[1]			=   "РќР°Р¶РјРёС‚Рµ DEL, С‡С‚РѕР±С‹ СѓРґР°Р»РёС‚СЊ РёР»Рё ENTER, С‡С‚РѕР±С‹ РЅР°СЃС‚СЂРѕРёС‚СЊ."; // Kommentar
 	posx			=	ctrl_sp1_1;		posy	=	ctrl_y_start + ctrl_y_step * 4 + CTRL_GROUP1;
 	onSelAction[0]	=	SEL_ACTION_EXECCOMMANDS;
 	onSelAction_S[0]= 	"RUN MENU_ITEM_INP_STRAFE_LEFT";  
@@ -154,8 +154,8 @@ INSTANCE MENU_ITEM_KEY_STRAFE_LEFT(C_MENU_ITEM_DEF)
 	
 INSTANCE MENU_ITEM_KEY_STRAFE_RIGHT(C_MENU_ITEM_DEF)
 {
-	text[0]			=	"Скольжение вправо";
-	text[1]			=   "Нажмите DEL, чтобы удалить или ENTER, чтобы настроить."; // Kommentar
+	text[0]			=	"РЎРєРѕР»СЊР¶РµРЅРёРµ РІРїСЂР°РІРѕ";
+	text[1]			=   "РќР°Р¶РјРёС‚Рµ DEL, С‡С‚РѕР±С‹ СѓРґР°Р»РёС‚СЊ РёР»Рё ENTER, С‡С‚РѕР±С‹ РЅР°СЃС‚СЂРѕРёС‚СЊ."; // Kommentar
 	posx			=	ctrl_sp1_1;		posy	=	ctrl_y_start + ctrl_y_step * 5 + CTRL_GROUP1;
 	
 	onSelAction[0]	=	SEL_ACTION_EXECCOMMANDS;
@@ -172,8 +172,8 @@ INSTANCE MENU_ITEM_KEY_STRAFE_RIGHT(C_MENU_ITEM_DEF)
 
 INSTANCE MENU_ITEM_KEY_WEAPON(C_MENU_ITEM_DEF)
 {
-	text[0]			=	"Оружие";
-	text[1]			=   "Нажмите DEL, чтобы удалить или ENTER, чтобы настроить."; // Kommentar
+	text[0]			=	"РћСЂСѓР¶РёРµ";
+	text[1]			=   "РќР°Р¶РјРёС‚Рµ DEL, С‡С‚РѕР±С‹ СѓРґР°Р»РёС‚СЊ РёР»Рё ENTER, С‡С‚РѕР±С‹ РЅР°СЃС‚СЂРѕРёС‚СЊ."; // Kommentar
 	posx			=	ctrl_sp1_1;		posy	=	ctrl_y_start + ctrl_y_step * 6 + CTRL_GROUP2;
 	
 	onSelAction[0]	=	SEL_ACTION_EXECCOMMANDS;
@@ -184,8 +184,8 @@ INSTANCE MENU_ITEM_KEY_WEAPON(C_MENU_ITEM_DEF)
 
 INSTANCE MENU_ITEM_KEY_ACTION(C_MENU_ITEM_DEF)
 {
-	text[0]			=	"Действие";
-	text[1]			=   "Нажмите DEL, чтобы удалить или ENTER, чтобы настроить."; // Kommentar
+	text[0]			=	"Р”РµР№СЃС‚РІРёРµ";
+	text[1]			=   "РќР°Р¶РјРёС‚Рµ DEL, С‡С‚РѕР±С‹ СѓРґР°Р»РёС‚СЊ РёР»Рё ENTER, С‡С‚РѕР±С‹ РЅР°СЃС‚СЂРѕРёС‚СЊ."; // Kommentar
 	posx			=	ctrl_sp1_1;		posy	=	ctrl_y_start + ctrl_y_step * 7 + CTRL_GROUP2;
 	
 	onSelAction[0]	=	SEL_ACTION_EXECCOMMANDS;
@@ -196,8 +196,8 @@ INSTANCE MENU_ITEM_KEY_ACTION(C_MENU_ITEM_DEF)
 
 INSTANCE MENU_ITEM_KEY_JUMPCLIMBSTRAFE(C_MENU_ITEM_DEF)
 {
-	text[0]			=	"Прыжок/Шаг в сторону";
-	text[1]			=   "Нажмите DEL, чтобы удалить или ENTER, чтобы настроить."; // Kommentar
+	text[0]			=	"РџСЂС‹Р¶РѕРє/РЁР°Рі РІ СЃС‚РѕСЂРѕРЅСѓ";
+	text[1]			=   "РќР°Р¶РјРёС‚Рµ DEL, С‡С‚РѕР±С‹ СѓРґР°Р»РёС‚СЊ РёР»Рё ENTER, С‡С‚РѕР±С‹ РЅР°СЃС‚СЂРѕРёС‚СЊ."; // Kommentar
 	posx			=	ctrl_sp1_1;		posy	=	ctrl_y_start + ctrl_y_step * 8 + CTRL_GROUP2;
 	
 	onSelAction[0]	=	SEL_ACTION_EXECCOMMANDS;
@@ -209,8 +209,8 @@ INSTANCE MENU_ITEM_KEY_JUMPCLIMBSTRAFE(C_MENU_ITEM_DEF)
 
 INSTANCE MENU_ITEM_KEY_RUNMODETOGGLE(C_MENU_ITEM_DEF)
 {	
-	text[0]			=	"Бег";
-	text[1]			=   "Нажмите DEL, чтобы удалить или ENTER, чтобы настроить."; // Kommentar
+	text[0]			=	"Р‘РµРі";
+	text[1]			=   "РќР°Р¶РјРёС‚Рµ DEL, С‡С‚РѕР±С‹ СѓРґР°Р»РёС‚СЊ РёР»Рё ENTER, С‡С‚РѕР±С‹ РЅР°СЃС‚СЂРѕРёС‚СЊ."; // Kommentar
 	posx			=	ctrl_sp1_1;		posy	=	ctrl_y_start + ctrl_y_step * 9 + CTRL_GROUP2;
 	
 	onSelAction[0]	=	SEL_ACTION_EXECCOMMANDS;
@@ -221,8 +221,8 @@ INSTANCE MENU_ITEM_KEY_RUNMODETOGGLE(C_MENU_ITEM_DEF)
 
 INSTANCE MENU_ITEM_KEY_SNEAK(C_MENU_ITEM_DEF)
 {	
-	text[0]			=	"Подкрадывание";
-	text[1]			=   "Нажмите DEL, чтобы удалить или ENTER, чтобы настроить."; // Kommentar
+	text[0]			=	"РџРѕРґРєСЂР°РґС‹РІР°РЅРёРµ";
+	text[1]			=   "РќР°Р¶РјРёС‚Рµ DEL, С‡С‚РѕР±С‹ СѓРґР°Р»РёС‚СЊ РёР»Рё ENTER, С‡С‚РѕР±С‹ РЅР°СЃС‚СЂРѕРёС‚СЊ."; // Kommentar
 	posx			=	ctrl_sp1_1;		posy	=	ctrl_y_start + ctrl_y_step * 10 + CTRL_GROUP2;
 	
 	onSelAction[0]	=	SEL_ACTION_EXECCOMMANDS;
@@ -233,8 +233,8 @@ INSTANCE MENU_ITEM_KEY_SNEAK(C_MENU_ITEM_DEF)
 
 INSTANCE MENU_ITEM_KEY_LOOK(C_MENU_ITEM_DEF)
 {
-	text[0]			=	"Оглядывание";
-	text[1]			=   "Нажмите DEL, чтобы удалить или ENTER, чтобы настроить."; // Kommentar
+	text[0]			=	"РћРіР»СЏРґС‹РІР°РЅРёРµ";
+	text[1]			=   "РќР°Р¶РјРёС‚Рµ DEL, С‡С‚РѕР±С‹ СѓРґР°Р»РёС‚СЊ РёР»Рё ENTER, С‡С‚РѕР±С‹ РЅР°СЃС‚СЂРѕРёС‚СЊ."; // Kommentar
 	posx			=	ctrl_sp1_1;		posy	=	ctrl_y_start + ctrl_y_step * 11 + CTRL_GROUP2;
 	
 	onSelAction[0]	=	SEL_ACTION_EXECCOMMANDS;
@@ -245,8 +245,8 @@ INSTANCE MENU_ITEM_KEY_LOOK(C_MENU_ITEM_DEF)
 
 INSTANCE MENU_ITEM_KEY_LOOK_FP(C_MENU_ITEM_DEF)
 {
-	text[0]			=	"Оглядывание (ПЛ)";
-	text[1]			=   "Нажмите DEL, чтобы удалить или ENTER, чтобы настроить."; // Kommentar
+	text[0]			=	"РћРіР»СЏРґС‹РІР°РЅРёРµ (РџР›)";
+	text[1]			=   "РќР°Р¶РјРёС‚Рµ DEL, С‡С‚РѕР±С‹ СѓРґР°Р»РёС‚СЊ РёР»Рё ENTER, С‡С‚РѕР±С‹ РЅР°СЃС‚СЂРѕРёС‚СЊ."; // Kommentar
 	posx			=	ctrl_sp1_1;		posy	=	ctrl_y_start + ctrl_y_step * 12 + CTRL_GROUP2;
 	
 	onSelAction[0]	=	SEL_ACTION_EXECCOMMANDS;
@@ -261,8 +261,8 @@ INSTANCE MENU_ITEM_KEY_LOOK_FP(C_MENU_ITEM_DEF)
 
 INSTANCE MENU_ITEM_KEY_INVENTORY(C_MENU_ITEM_DEF)
 {
-	text[0]			=	"Инвентарь";
-	text[1]			=   "Нажмите DEL, чтобы удалить или ENTER, чтобы настроить."; // Kommentar
+	text[0]			=	"РРЅРІРµРЅС‚Р°СЂСЊ";
+	text[1]			=   "РќР°Р¶РјРёС‚Рµ DEL, С‡С‚РѕР±С‹ СѓРґР°Р»РёС‚СЊ РёР»Рё ENTER, С‡С‚РѕР±С‹ РЅР°СЃС‚СЂРѕРёС‚СЊ."; // Kommentar
 	posx			=	ctrl_sp1_1;		posy	=	ctrl_y_start + ctrl_y_step * 13 + CTRL_GROUP3;
 	
 	onSelAction[0]	=	SEL_ACTION_EXECCOMMANDS;
@@ -273,8 +273,8 @@ INSTANCE MENU_ITEM_KEY_INVENTORY(C_MENU_ITEM_DEF)
 
 INSTANCE MENU_ITEM_KEY_SCREEN_STATUS(C_MENU_ITEM_DEF)
 {
-	text[0]		=	"Статус";
-	text[1]			=   "Нажмите DEL, чтобы удалить или ENTER, чтобы настроить."; // Kommentar
+	text[0]		=	"РЎС‚Р°С‚СѓСЃ";
+	text[1]			=   "РќР°Р¶РјРёС‚Рµ DEL, С‡С‚РѕР±С‹ СѓРґР°Р»РёС‚СЊ РёР»Рё ENTER, С‡С‚РѕР±С‹ РЅР°СЃС‚СЂРѕРёС‚СЊ."; // Kommentar
 	posx		=	ctrl_sp1_1;		posy	=	ctrl_y_start + ctrl_y_step * 14 + CTRL_GROUP3;
 	
 	onSelAction[0]	=	SEL_ACTION_EXECCOMMANDS;
@@ -286,8 +286,8 @@ INSTANCE MENU_ITEM_KEY_SCREEN_STATUS(C_MENU_ITEM_DEF)
 
 INSTANCE MENU_ITEM_KEY_SCREEN_LOG(C_MENU_ITEM_DEF)
 {
-	text[0]		=	"Миссии и записи";
-	text[1]			=   "Нажмите DEL, чтобы удалить или ENTER, чтобы настроить."; // Kommentar
+	text[0]		=	"РњРёСЃСЃРёРё Рё Р·Р°РїРёСЃРё";
+	text[1]			=   "РќР°Р¶РјРёС‚Рµ DEL, С‡С‚РѕР±С‹ СѓРґР°Р»РёС‚СЊ РёР»Рё ENTER, С‡С‚РѕР±С‹ РЅР°СЃС‚СЂРѕРёС‚СЊ."; // Kommentar
 	posx		=	ctrl_sp1_1;		posy	=	ctrl_y_start + ctrl_y_step * 15 + CTRL_GROUP3;
 	
 	onSelAction[0]	=	SEL_ACTION_EXECCOMMANDS;
@@ -303,7 +303,7 @@ INSTANCE MENU_ITEM_KEY_SCREEN_LOG(C_MENU_ITEM_DEF)
 INSTANCE MENU_ITEM_INP_UP(C_MENU_ITEM_DEF)
 {
 	backPic		=	MENU_KBDINPUT_BACK_PIC;	
-	text[1] 	=   "Нажмите клавишу.";
+	text[1] 	=   "РќР°Р¶РјРёС‚Рµ РєР»Р°РІРёС€Сѓ.";
 	
 	type		= 	MENU_ITEM_INPUT;
 	posx		=	ctrl_sp1_2;	posy		=	ctrl_y_start + ctrl_y_step * 0 + CTRL_GROUP1;	
@@ -319,7 +319,7 @@ INSTANCE MENU_ITEM_INP_UP(C_MENU_ITEM_DEF)
 INSTANCE MENU_ITEM_INP_DOWN(C_MENU_ITEM_DEF)
 {
 	type		= 	MENU_ITEM_INPUT;
-	text[1] 	=   "Нажмите клавишу.";
+	text[1] 	=   "РќР°Р¶РјРёС‚Рµ РєР»Р°РІРёС€Сѓ.";
 	
 	posx		=	ctrl_sp1_2;	posy		=	ctrl_y_start + ctrl_y_step * 1 + CTRL_GROUP1;	
 	dimx		=	ctrl_dimx;	dimy		=	300;
@@ -335,7 +335,7 @@ INSTANCE MENU_ITEM_INP_DOWN(C_MENU_ITEM_DEF)
 INSTANCE MENU_ITEM_INP_LEFT(C_MENU_ITEM_DEF)
 {
 	type		= 	MENU_ITEM_INPUT;
-	text[1] 	=   "Нажмите клавишу.";
+	text[1] 	=   "РќР°Р¶РјРёС‚Рµ РєР»Р°РІРёС€Сѓ.";
 	
 	posx		=	ctrl_sp1_2;	posy		=	ctrl_y_start + ctrl_y_step * 2 + CTRL_GROUP1;
 	dimx		=	ctrl_dimx;	dimy		=	300;
@@ -349,7 +349,7 @@ INSTANCE MENU_ITEM_INP_LEFT(C_MENU_ITEM_DEF)
 INSTANCE MENU_ITEM_INP_RIGHT(C_MENU_ITEM_DEF)
 {
 	type		= 	MENU_ITEM_INPUT;
-	text[1] 	=   "Нажмите клавишу.";
+	text[1] 	=   "РќР°Р¶РјРёС‚Рµ РєР»Р°РІРёС€Сѓ.";
 	
 	posx		=	ctrl_sp1_2;	posy		=	ctrl_y_start + ctrl_y_step * 3 + CTRL_GROUP1;
 	dimx		=	ctrl_dimx;	dimy		=	300;
@@ -364,7 +364,7 @@ INSTANCE MENU_ITEM_INP_RIGHT(C_MENU_ITEM_DEF)
 INSTANCE MENU_ITEM_INP_STRAFE_LEFT(C_MENU_ITEM_DEF)
 {
 	type		= 	MENU_ITEM_INPUT;
-	text[1] 	=   "Нажмите клавишу.";
+	text[1] 	=   "РќР°Р¶РјРёС‚Рµ РєР»Р°РІРёС€Сѓ.";
 	
 	posx		=	ctrl_sp1_2;	posy		=	ctrl_y_start + ctrl_y_step * 4 + CTRL_GROUP1;
 	dimx		=	ctrl_dimx;	dimy		=	300;
@@ -378,7 +378,7 @@ INSTANCE MENU_ITEM_INP_STRAFE_LEFT(C_MENU_ITEM_DEF)
 INSTANCE MENU_ITEM_INP_STRAFE_RIGHT(C_MENU_ITEM_DEF)
 {
 	type		= 	MENU_ITEM_INPUT;
-	text[1] 	=   "Нажмите клавишу.";
+	text[1] 	=   "РќР°Р¶РјРёС‚Рµ РєР»Р°РІРёС€Сѓ.";
 	
 	posx		=	ctrl_sp1_2;	posy		=	ctrl_y_start + ctrl_y_step * 5 + CTRL_GROUP1;
 	dimx		=	ctrl_dimx;	dimy		=	300;
@@ -396,7 +396,7 @@ INSTANCE MENU_ITEM_INP_STRAFE_RIGHT(C_MENU_ITEM_DEF)
 INSTANCE MENU_ITEM_INP_WEAPON(C_MENU_ITEM_DEF)
 {
 	type		= 	MENU_ITEM_INPUT;
-	text[1] 	=   "Нажмите клавишу.";
+	text[1] 	=   "РќР°Р¶РјРёС‚Рµ РєР»Р°РІРёС€Сѓ.";
 	
 	posx		=	ctrl_sp1_2;	posy		=	ctrl_y_start + ctrl_y_step * 6 + CTRL_GROUP2;
 	dimx		=	ctrl_dimx;
@@ -414,7 +414,7 @@ INSTANCE MENU_ITEM_INP_WEAPON(C_MENU_ITEM_DEF)
 INSTANCE MENU_ITEM_INP_ACTION(C_MENU_ITEM_DEF)
 {
 	type		= 	MENU_ITEM_INPUT;
-	text[1] 	=   "Нажмите клавишу.";
+	text[1] 	=   "РќР°Р¶РјРёС‚Рµ РєР»Р°РІРёС€Сѓ.";
 	
 	posx		=	ctrl_sp1_2;	posy		=	ctrl_y_start + ctrl_y_step * 7 + CTRL_GROUP2;
 	dimx		=	ctrl_dimx;	dimy		=	300;
@@ -430,7 +430,7 @@ INSTANCE MENU_ITEM_INP_ACTION(C_MENU_ITEM_DEF)
 INSTANCE MENU_ITEM_INP_JUMPCLIMBSTRAFE(C_MENU_ITEM_DEF)
 {
 	type		= 	MENU_ITEM_INPUT;
-	text[1] 	=   "Нажмите клавишу.";
+	text[1] 	=   "РќР°Р¶РјРёС‚Рµ РєР»Р°РІРёС€Сѓ.";
 	
 	posx		=	ctrl_sp1_2;	posy		=	ctrl_y_start + ctrl_y_step * 8 + CTRL_GROUP2;
 	dimx		=	ctrl_dimx;
@@ -448,7 +448,7 @@ INSTANCE MENU_ITEM_INP_JUMPCLIMBSTRAFE(C_MENU_ITEM_DEF)
 instance MENU_ITEM_INP_RUNMODETOGGLE(C_MENU_ITEM_DEF)
 {
 	type		= 	MENU_ITEM_INPUT;
-	text[1] 	=   "Нажмите клавишу.";
+	text[1] 	=   "РќР°Р¶РјРёС‚Рµ РєР»Р°РІРёС€Сѓ.";
 	
 	posx		=	ctrl_sp1_2;	posy		=	ctrl_y_start + ctrl_y_step * 9 + CTRL_GROUP2;
 	dimx		=	ctrl_dimx;
@@ -465,7 +465,7 @@ instance MENU_ITEM_INP_RUNMODETOGGLE(C_MENU_ITEM_DEF)
 INSTANCE MENU_ITEM_INP_SNEAK(C_MENU_ITEM_DEF)
 {
 	type		= 	MENU_ITEM_INPUT;
-	text[1] 	=   "Нажмите клавишу.";
+	text[1] 	=   "РќР°Р¶РјРёС‚Рµ РєР»Р°РІРёС€Сѓ.";
 	
 	posx		=	ctrl_sp1_2;	posy		=	ctrl_y_start + ctrl_y_step * 10 + CTRL_GROUP2;
 	dimx		=	ctrl_dimx;
@@ -481,7 +481,7 @@ INSTANCE MENU_ITEM_INP_SNEAK(C_MENU_ITEM_DEF)
 INSTANCE MENU_ITEM_INP_LOOK(C_MENU_ITEM_DEF)
 {
 	type		= 	MENU_ITEM_INPUT;
-	text[1] 	=   "Нажмите клавишу.";
+	text[1] 	=   "РќР°Р¶РјРёС‚Рµ РєР»Р°РІРёС€Сѓ.";
 	
 	posx		=	ctrl_sp1_2;	posy		=	ctrl_y_start + ctrl_y_step * 11 + CTRL_GROUP2;
 	dimx		=	ctrl_dimx;
@@ -498,7 +498,7 @@ INSTANCE MENU_ITEM_INP_LOOK(C_MENU_ITEM_DEF)
 INSTANCE MENU_ITEM_INP_LOOK_FP(C_MENU_ITEM_DEF)
 {
 	type		= 	MENU_ITEM_INPUT;
-	text[1] 	=   "Нажмите клавишу.";
+	text[1] 	=   "РќР°Р¶РјРёС‚Рµ РєР»Р°РІРёС€Сѓ.";
 	
 	posx		=	ctrl_sp1_2;	posy		=	ctrl_y_start + ctrl_y_step * 12 + CTRL_GROUP2;
 	dimx		=	ctrl_dimx;
@@ -518,7 +518,7 @@ INSTANCE MENU_ITEM_INP_LOOK_FP(C_MENU_ITEM_DEF)
 INSTANCE MENU_ITEM_INP_INVENTORY(C_MENU_ITEM_DEF)
 {
 	type		= 	MENU_ITEM_INPUT;
-	text[1] 	=   "Нажмите клавишу.";
+	text[1] 	=   "РќР°Р¶РјРёС‚Рµ РєР»Р°РІРёС€Сѓ.";
 	
 	posx		=	ctrl_sp1_2;		posy	=	ctrl_y_start + ctrl_y_step * 13 + CTRL_GROUP3;
 	dimx		=	ctrl_dimx;
@@ -535,7 +535,7 @@ INSTANCE MENU_ITEM_INP_INVENTORY(C_MENU_ITEM_DEF)
 INSTANCE MENU_ITEM_INP_SCREEN_STATUS(C_MENU_ITEM_DEF)
 {
 	type		= 	MENU_ITEM_INPUT;
-	text[1] 	=   "Нажмите клавишу.";
+	text[1] 	=   "РќР°Р¶РјРёС‚Рµ РєР»Р°РІРёС€Сѓ.";
 	
 	posx		=	ctrl_sp1_2;		posy	=	ctrl_y_start + ctrl_y_step * 14 + CTRL_GROUP3;
 	dimx		=	ctrl_dimx;
@@ -551,7 +551,7 @@ INSTANCE MENU_ITEM_INP_SCREEN_STATUS(C_MENU_ITEM_DEF)
 INSTANCE MENU_ITEM_INP_SCREEN_LOG(C_MENU_ITEM_DEF)
 {
 	type		= 	MENU_ITEM_INPUT;
-	text[1] 	=   "Нажмите клавишу.";
+	text[1] 	=   "РќР°Р¶РјРёС‚Рµ РєР»Р°РІРёС€Сѓ.";
 	
 	posx		=	ctrl_sp1_2;		posy	=	ctrl_y_start + ctrl_y_step * 15 + CTRL_GROUP3;
 	dimx		=	ctrl_dimx;
@@ -571,8 +571,8 @@ INSTANCE MENU_ITEM_INP_SCREEN_LOG(C_MENU_ITEM_DEF)
 
 INSTANCE MENU_ITEM_CHG_KEYS_SET_DEFAULT(C_MENU_ITEM_DEF)
 {
-	text[0]		=	"По умолчанию";	
-	text[1]		=	"Восстановить настройки по умолчанию."; // Kommentar
+	text[0]		=	"РџРѕ СѓРјРѕР»С‡Р°РЅРёСЋ";	
+	text[1]		=	"Р’РѕСЃСЃС‚Р°РЅРѕРІРёС‚СЊ РЅР°СЃС‚СЂРѕР№РєРё РїРѕ СѓРјРѕР»С‡Р°РЅРёСЋ."; // Kommentar
 	posx		=	ctrl_sp1_1;		posy		=	ctrl_y_start + ctrl_y_step * 16 + CTRL_GROUP4;
 	dimy		=	300;
 	onSelAction[0]	=	SEL_ACTION_EXECCOMMANDS;
@@ -583,8 +583,8 @@ INSTANCE MENU_ITEM_CHG_KEYS_SET_DEFAULT(C_MENU_ITEM_DEF)
 
 INSTANCE MENU_ITEM_CHG_KEYS_SET_ALTERNATIVE(C_MENU_ITEM_DEF)
 {
-	text[0]		=	"Альтернативные настройки";	
-	text[1]		=	"Включает альтернативные настройки."; // Kommentar
+	text[0]		=	"РђР»СЊС‚РµСЂРЅР°С‚РёРІРЅС‹Рµ РЅР°СЃС‚СЂРѕР№РєРё";	
+	text[1]		=	"Р’РєР»СЋС‡Р°РµС‚ Р°Р»СЊС‚РµСЂРЅР°С‚РёРІРЅС‹Рµ РЅР°СЃС‚СЂРѕР№РєРё."; // Kommentar
 	posx		=	ctrl_sp1_1;		posy		=	ctrl_y_start + ctrl_y_step * 17 + CTRL_GROUP4;
 	dimy		=	300;
 	onSelAction[0]	=	SEL_ACTION_EXECCOMMANDS;
@@ -598,7 +598,7 @@ INSTANCE MENU_ITEM_CHG_KEYS_SET_ALTERNATIVE(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_CHG_KEYS_BACK(C_MENU_ITEM_DEF)
 {
 	backpic		=	MENU_ITEM_BACK_PIC;
-	text[0]		=	"Назад";
+	text[0]		=	"РќР°Р·Р°Рґ";
 	// Position und Dimension	
 	posx		=	ctrl_sp1_1;		posy		=	ctrl_y_start + ctrl_y_step * 18 + CTRL_GROUP5;
 	dimy		=	300;

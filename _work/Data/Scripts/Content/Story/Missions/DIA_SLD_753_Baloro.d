@@ -1,5 +1,5 @@
 //****************************************************
-//	Typ der den SC an der Nase herum fьhrt!
+//	Typ der den SC an der Nase herum fСЊhrt!
 //****************************************************
 
 //Variablen:
@@ -29,7 +29,7 @@ FUNC int DIA_SLD_753_Baloro_Condition()
 
 func void DIA_SLD_753_Baloro_Intro_Info()
 {
-	AI_Output (self, other,"DIA_SLD_753_Baloro_Intro_08_01"); //Эй, ты! Что за дела?
+	AI_Output (self, other,"DIA_SLD_753_Baloro_Intro_08_01"); //Р­Р№, С‚С‹! Р§С‚Рѕ Р·Р° РґРµР»Р°?
 };
 
 // ********************** Was meinst du? *****************
@@ -41,7 +41,7 @@ instance DIA_SLD_753_Baloro_Wasmeinstdu (C_INFO)
 	information	= DIA_SLD_753_Baloro_Wasmeinstdu_Info;
 	important	= 0;	
 	permanent	= 0;
-	description = "Привет!";
+	description = "РџСЂРёРІРµС‚!";
 };                       
 
 FUNC int DIA_SLD_753_Baloro_Wasmeinstdu_Condition()
@@ -51,10 +51,10 @@ FUNC int DIA_SLD_753_Baloro_Wasmeinstdu_Condition()
 
 FUNC VOID DIA_SLD_753_Baloro_Wasmeinstdu_Info()
 {
-	AI_Output (other, self,"DIA_SLD_753_Baloro_Wasmeinstdu_Info_15_01"); //Привет!
-	AI_Output (self, other,"DIA_SLD_753_Baloro_Wasmeinstdu_Info_08_02"); //Ты расхаживаешь здесь, как будто ищешь что-то!
-	AI_Output (other, self,"DIA_SLD_753_Baloro_Wasmeinstdu_Info_15_03"); //В самом деле? М-м, может быть, ты и прав.
-	AI_Output (self, other,"DIA_SLD_753_Baloro_Wasmeinstdu_Info_08_04"); //Ну, здорово! Спроси меня - может быть я смогу помочь!
+	AI_Output (other, self,"DIA_SLD_753_Baloro_Wasmeinstdu_Info_15_01"); //РџСЂРёРІРµС‚!
+	AI_Output (self, other,"DIA_SLD_753_Baloro_Wasmeinstdu_Info_08_02"); //РўС‹ СЂР°СЃС…Р°Р¶РёРІР°РµС€СЊ Р·РґРµСЃСЊ, РєР°Рє Р±СѓРґС‚Рѕ РёС‰РµС€СЊ С‡С‚Рѕ-С‚Рѕ!
+	AI_Output (other, self,"DIA_SLD_753_Baloro_Wasmeinstdu_Info_15_03"); //Р’ СЃР°РјРѕРј РґРµР»Рµ? Рњ-Рј, РјРѕР¶РµС‚ Р±С‹С‚СЊ, С‚С‹ Рё РїСЂР°РІ.
+	AI_Output (self, other,"DIA_SLD_753_Baloro_Wasmeinstdu_Info_08_04"); //РќСѓ, Р·РґРѕСЂРѕРІРѕ! РЎРїСЂРѕСЃРё РјРµРЅСЏ - РјРѕР¶РµС‚ Р±С‹С‚СЊ СЏ СЃРјРѕРіСѓ РїРѕРјРѕС‡СЊ!
 
 
 };
@@ -68,7 +68,7 @@ instance DIA_SLD_753_Baloro_Worumgehts (C_INFO)
 	information	= DIA_SLD_753_Baloro_Worumgehts_Info;
 	important	= 0;	
 	permanent	= 0;
-	description 	= "Что ты имеешь в виду?";
+	description 	= "Р§С‚Рѕ С‚С‹ РёРјРµРµС€СЊ РІ РІРёРґСѓ?";
 };                       
 
 FUNC int DIA_SLD_753_Baloro_Worumgehts_Condition()
@@ -82,37 +82,37 @@ FUNC int DIA_SLD_753_Baloro_Worumgehts_Condition()
 
 FUNC VOID DIA_SLD_753_Baloro_Worumgehts_Info()
 {
-	AI_Output (other, self,"DIA_SLD_753_Baloro_Worumgehts_Info_15_01"); //Что ты имеешь в виду?
-	AI_Output (self, other,"DIA_SLD_753_Baloro_Worumgehts_Info_08_01"); //Что тебе нужно?
-	AI_Output (other, self,"DIA_SLD_753_Baloro_Worumgehts_Info_15_02"); //Как насчет хорошего мяча, тяжелых доспехов и допуска в шахту?
-	AI_Output (self, other,"DIA_SLD_753_Baloro_Worumgehts_Info_08_02"); //Да ладно! Это все ерунда!
-	AI_Output (self, other,"DIA_SLD_753_Baloro_Worumgehts_Info_08_03"); //А как насчет оружия, которым можно победить любого врага. Увидишь - глаза на лоб полезут от изумления!
-	AI_Output (self, other,"DIA_SLD_753_Baloro_Worumgehts_Info_08_04"); //Я прошу всего лишь о ма-аленькой услуге. Поможешь мне - и оно будет твоим. Что скажешь?
+	AI_Output (other, self,"DIA_SLD_753_Baloro_Worumgehts_Info_15_01"); //Р§С‚Рѕ С‚С‹ РёРјРµРµС€СЊ РІ РІРёРґСѓ?
+	AI_Output (self, other,"DIA_SLD_753_Baloro_Worumgehts_Info_08_01"); //Р§С‚Рѕ С‚РµР±Рµ РЅСѓР¶РЅРѕ?
+	AI_Output (other, self,"DIA_SLD_753_Baloro_Worumgehts_Info_15_02"); //РљР°Рє РЅР°СЃС‡РµС‚ С…РѕСЂРѕС€РµРіРѕ РјСЏС‡Р°, С‚СЏР¶РµР»С‹С… РґРѕСЃРїРµС…РѕРІ Рё РґРѕРїСѓСЃРєР° РІ С€Р°С…С‚Сѓ?
+	AI_Output (self, other,"DIA_SLD_753_Baloro_Worumgehts_Info_08_02"); //Р”Р° Р»Р°РґРЅРѕ! Р­С‚Рѕ РІСЃРµ РµСЂСѓРЅРґР°!
+	AI_Output (self, other,"DIA_SLD_753_Baloro_Worumgehts_Info_08_03"); //Рђ РєР°Рє РЅР°СЃС‡РµС‚ РѕСЂСѓР¶РёСЏ, РєРѕС‚РѕСЂС‹Рј РјРѕР¶РЅРѕ РїРѕР±РµРґРёС‚СЊ Р»СЋР±РѕРіРѕ РІСЂР°РіР°. РЈРІРёРґРёС€СЊ - РіР»Р°Р·Р° РЅР° Р»РѕР± РїРѕР»РµР·СѓС‚ РѕС‚ РёР·СѓРјР»РµРЅРёСЏ!
+	AI_Output (self, other,"DIA_SLD_753_Baloro_Worumgehts_Info_08_04"); //РЇ РїСЂРѕС€Сѓ РІСЃРµРіРѕ Р»РёС€СЊ Рѕ РјР°-Р°Р»РµРЅСЊРєРѕР№ СѓСЃР»СѓРіРµ. РџРѕРјРѕР¶РµС€СЊ РјРЅРµ - Рё РѕРЅРѕ Р±СѓРґРµС‚ С‚РІРѕРёРј. Р§С‚Рѕ СЃРєР°Р¶РµС€СЊ?
 
 	Info_ClearChoices	(DIA_SLD_753_Baloro_Worumgehts); // alte choices loeschen
-	Info_AddChoice		(DIA_SLD_753_Baloro_Worumgehts,"Я должен получить его.",DIA_SLD_753_Baloro_Worumgehts_ja);
-	Info_AddChoice		(DIA_SLD_753_Baloro_Worumgehts,"Я ему не верю.",DIA_SLD_753_Baloro_Exit_Info);
+	Info_AddChoice		(DIA_SLD_753_Baloro_Worumgehts,"РЇ РґРѕР»Р¶РµРЅ РїРѕР»СѓС‡РёС‚СЊ РµРіРѕ.",DIA_SLD_753_Baloro_Worumgehts_ja);
+	Info_AddChoice		(DIA_SLD_753_Baloro_Worumgehts,"РЇ РµРјСѓ РЅРµ РІРµСЂСЋ.",DIA_SLD_753_Baloro_Exit_Info);
 	
 };
 
 FUNC VOID DIA_SLD_753_Baloro_Worumgehts_ja()
 {
-	AI_Output (other, self,"DIA_SLD_753_Baloro_Worumgehts_ja_15_05"); //Что мне нужно сделать?
-	AI_Output (self, other,"DIA_SLD_753_Baloro_Worumgehts_ja_08_03"); //Все очень просто!
-	AI_Output (self, other,"DIA_SLD_753_Baloro_Worumgehts_ja_08_04"); //Принеси мне 5 яблок, 2 бутылки рисового шнапса, 5 бутылок пива, 3 буханки хлеба, 2 куска сыра и 2 грозди винограда - вот и все, о чем я прошу!
-	AI_Output (self, other,"DIA_SLD_753_Baloro_Worumgehts_ja_08_05"); //Поверь мне, ты не пожалеешь. Я уже говорил тебе, что этим оружием можно победить любого врага?
+	AI_Output (other, self,"DIA_SLD_753_Baloro_Worumgehts_ja_15_05"); //Р§С‚Рѕ РјРЅРµ РЅСѓР¶РЅРѕ СЃРґРµР»Р°С‚СЊ?
+	AI_Output (self, other,"DIA_SLD_753_Baloro_Worumgehts_ja_08_03"); //Р’СЃРµ РѕС‡РµРЅСЊ РїСЂРѕСЃС‚Рѕ!
+	AI_Output (self, other,"DIA_SLD_753_Baloro_Worumgehts_ja_08_04"); //РџСЂРёРЅРµСЃРё РјРЅРµ 5 СЏР±Р»РѕРє, 2 Р±СѓС‚С‹Р»РєРё СЂРёСЃРѕРІРѕРіРѕ С€РЅР°РїСЃР°, 5 Р±СѓС‚С‹Р»РѕРє РїРёРІР°, 3 Р±СѓС…Р°РЅРєРё С…Р»РµР±Р°, 2 РєСѓСЃРєР° СЃС‹СЂР° Рё 2 РіСЂРѕР·РґРё РІРёРЅРѕРіСЂР°РґР° - РІРѕС‚ Рё РІСЃРµ, Рѕ С‡РµРј СЏ РїСЂРѕС€Сѓ!
+	AI_Output (self, other,"DIA_SLD_753_Baloro_Worumgehts_ja_08_05"); //РџРѕРІРµСЂСЊ РјРЅРµ, С‚С‹ РЅРµ РїРѕР¶Р°Р»РµРµС€СЊ. РЇ СѓР¶Рµ РіРѕРІРѕСЂРёР» С‚РµР±Рµ, С‡С‚Рѕ СЌС‚РёРј РѕСЂСѓР¶РёРµРј РјРѕР¶РЅРѕ РїРѕР±РµРґРёС‚СЊ Р»СЋР±РѕРіРѕ РІСЂР°РіР°?
 	
 	Info_ClearChoices	(DIA_SLD_753_Baloro_Worumgehts); // alte choices loeschen
-	Info_AddChoice		(DIA_SLD_753_Baloro_Worumgehts,"Я должен получить его.",DIA_SLD_753_Baloro_Worumgehts_jaklar);
-	Info_AddChoice		(DIA_SLD_753_Baloro_Worumgehts,"Малый обижается.",DIA_SLD_753_Baloro_Exit_Info);
+	Info_AddChoice		(DIA_SLD_753_Baloro_Worumgehts,"РЇ РґРѕР»Р¶РµРЅ РїРѕР»СѓС‡РёС‚СЊ РµРіРѕ.",DIA_SLD_753_Baloro_Worumgehts_jaklar);
+	Info_AddChoice		(DIA_SLD_753_Baloro_Worumgehts,"РњР°Р»С‹Р№ РѕР±РёР¶Р°РµС‚СЃСЏ.",DIA_SLD_753_Baloro_Exit_Info);
 };
 	
 FUNC VOID DIA_SLD_753_Baloro_Worumgehts_jaklar()
 {
-	AI_Output (other, self,"DIA_SLD_753_Baloro_Worumgehts_ja_15_06"); //Ладно! Посмотрим, что я смогу для тебя сделать!
-	AI_Output (self, other,"DIA_SLD_753_Baloro_Worumgehts_ja_08_06"); //Отлично! Но поторопись!
-	AI_Output (self, other,"DIA_SLD_753_Baloro_Worumgehts_ja_08_07"); //И не забудь: 5 яблок, 2 бутылки рисового шнапса, 5 бутылок пива, 3 буханки хлеба, 2 куска сыра и 2 грозди винограда! Запомнил?
-	AI_Output (other, self,"DIA_SLD_753_Baloro_Worumgehts_ja_15_07"); //Конечно!
+	AI_Output (other, self,"DIA_SLD_753_Baloro_Worumgehts_ja_15_06"); //Р›Р°РґРЅРѕ! РџРѕСЃРјРѕС‚СЂРёРј, С‡С‚Рѕ СЏ СЃРјРѕРіСѓ РґР»СЏ С‚РµР±СЏ СЃРґРµР»Р°С‚СЊ!
+	AI_Output (self, other,"DIA_SLD_753_Baloro_Worumgehts_ja_08_06"); //РћС‚Р»РёС‡РЅРѕ! РќРѕ РїРѕС‚РѕСЂРѕРїРёСЃСЊ!
+	AI_Output (self, other,"DIA_SLD_753_Baloro_Worumgehts_ja_08_07"); //Р РЅРµ Р·Р°Р±СѓРґСЊ: 5 СЏР±Р»РѕРє, 2 Р±СѓС‚С‹Р»РєРё СЂРёСЃРѕРІРѕРіРѕ С€РЅР°РїСЃР°, 5 Р±СѓС‚С‹Р»РѕРє РїРёРІР°, 3 Р±СѓС…Р°РЅРєРё С…Р»РµР±Р°, 2 РєСѓСЃРєР° СЃС‹СЂР° Рё 2 РіСЂРѕР·РґРё РІРёРЅРѕРіСЂР°РґР°! Р—Р°РїРѕРјРЅРёР»?
+	AI_Output (other, self,"DIA_SLD_753_Baloro_Worumgehts_ja_15_07"); //РљРѕРЅРµС‡РЅРѕ!
 	
 	
 //********	Auftragannahme	**************************
@@ -124,7 +124,7 @@ FUNC VOID DIA_SLD_753_Baloro_Worumgehts_jaklar()
 		
 	Log_CreateTopic		(Baloros_Waffe,		LOG_MISSION);
 	Log_SetTopicStatus	(Baloros_Waffe,		LOG_RUNNING);
-	B_LogEntry			(Baloros_Waffe,		"Балоро обещал дать мне отличное оружие, если я принесу ему 5 яблок, 2 бутылки рисового шнапса, 5 бутылок пива, 3 буханки хлеба, 2 куска сыра и 2 ветки винограда."); 
+	B_LogEntry			(Baloros_Waffe,		"Р‘Р°Р»РѕСЂРѕ РѕР±РµС‰Р°Р» РґР°С‚СЊ РјРЅРµ РѕС‚Р»РёС‡РЅРѕРµ РѕСЂСѓР¶РёРµ, РµСЃР»Рё СЏ РїСЂРёРЅРµСЃСѓ РµРјСѓ 5 СЏР±Р»РѕРє, 2 Р±СѓС‚С‹Р»РєРё СЂРёСЃРѕРІРѕРіРѕ С€РЅР°РїСЃР°, 5 Р±СѓС‚С‹Р»РѕРє РїРёРІР°, 3 Р±СѓС…Р°РЅРєРё С…Р»РµР±Р°, 2 РєСѓСЃРєР° СЃС‹СЂР° Рё 2 РІРµС‚РєРё РІРёРЅРѕРіСЂР°РґР°."); 
 
 	AI_StopProcessInfos	( self );
 };
@@ -132,7 +132,7 @@ FUNC VOID DIA_SLD_753_Baloro_Worumgehts_jaklar()
 
 
 
-// ********************** Ich habґs noch nicht dabei *****************	
+// ********************** Ich habТ‘s noch nicht dabei *****************	
 
 
 instance DIA_SLD_753_Baloro_habsnichtdabei (C_INFO)
@@ -142,7 +142,7 @@ instance DIA_SLD_753_Baloro_habsnichtdabei (C_INFO)
 	information	= DIA_SLD_753_Baloro_habsnichtdabei_Info;
 	important	= 0;	
 	permanent	= 1;
-	description = "Я еще не все достал! ";
+	description = "РЇ РµС‰Рµ РЅРµ РІСЃРµ РґРѕСЃС‚Р°Р»! ";
 };                       
 
 FUNC int DIA_SLD_753_Baloro_habsnichtdabei_Condition()
@@ -156,16 +156,16 @@ FUNC int DIA_SLD_753_Baloro_habsnichtdabei_Condition()
 
 FUNC VOID DIA_SLD_753_Baloro_habsnichtdabei_Info()
 {
-	AI_Output (other, self,"DIA_SLD_753_Baloro_habsnichtdabei_Info_15_01"); //Я еще не все достал! Так много всего. Как там, еще раз? 
-	AI_Output (self, other,"DIA_SLD_753_Baloro_habsnichtdabei_Info_08_01"); //Ладно, повторяю медленно. Мне нужно...
-	AI_Output (self, other,"DIA_SLD_753_Baloro_habsnichtdabei_Info_08_02"); //5 яблок, 2 бутылки рисового шнапса, 5 бутылок пива, 3 буханки хлеба, 2 куска сыра и 2 грозди винограда. На этот раз запомнил?
-	AI_Output (other, self,"DIA_SLD_753_Baloro_habsnichtdabei_Info_15_02"); //Хорошо! Конечно! Я постараюсь побыстрее!
+	AI_Output (other, self,"DIA_SLD_753_Baloro_habsnichtdabei_Info_15_01"); //РЇ РµС‰Рµ РЅРµ РІСЃРµ РґРѕСЃС‚Р°Р»! РўР°Рє РјРЅРѕРіРѕ РІСЃРµРіРѕ. РљР°Рє С‚Р°Рј, РµС‰Рµ СЂР°Р·? 
+	AI_Output (self, other,"DIA_SLD_753_Baloro_habsnichtdabei_Info_08_01"); //Р›Р°РґРЅРѕ, РїРѕРІС‚РѕСЂСЏСЋ РјРµРґР»РµРЅРЅРѕ. РњРЅРµ РЅСѓР¶РЅРѕ...
+	AI_Output (self, other,"DIA_SLD_753_Baloro_habsnichtdabei_Info_08_02"); //5 СЏР±Р»РѕРє, 2 Р±СѓС‚С‹Р»РєРё СЂРёСЃРѕРІРѕРіРѕ С€РЅР°РїСЃР°, 5 Р±СѓС‚С‹Р»РѕРє РїРёРІР°, 3 Р±СѓС…Р°РЅРєРё С…Р»РµР±Р°, 2 РєСѓСЃРєР° СЃС‹СЂР° Рё 2 РіСЂРѕР·РґРё РІРёРЅРѕРіСЂР°РґР°. РќР° СЌС‚РѕС‚ СЂР°Р· Р·Р°РїРѕРјРЅРёР»?
+	AI_Output (other, self,"DIA_SLD_753_Baloro_habsnichtdabei_Info_15_02"); //РҐРѕСЂРѕС€Рѕ! РљРѕРЅРµС‡РЅРѕ! РЇ РїРѕСЃС‚Р°СЂР°СЋСЃСЊ РїРѕР±С‹СЃС‚СЂРµРµ!
 
 	AI_StopProcessInfos	( self );	
 };
 
 
-// ********************** Ich habґs  dabei *****************	
+// ********************** Ich habТ‘s  dabei *****************	
 
 instance DIA_SLD_753_Baloro_habsdabei (C_INFO)
 {
@@ -174,7 +174,7 @@ instance DIA_SLD_753_Baloro_habsdabei (C_INFO)
 	information	= DIA_SLD_753_Baloro_habsdabei_Info;
 	important	= 0;	
 	permanent	= 0;
-	description 	= "Теперь я достал все, что нужно! ";
+	description 	= "РўРµРїРµСЂСЊ СЏ РґРѕСЃС‚Р°Р» РІСЃРµ, С‡С‚Рѕ РЅСѓР¶РЅРѕ! ";
 };                       
 
 FUNC int DIA_SLD_753_Baloro_habsdabei_Condition()
@@ -196,12 +196,12 @@ FUNC int DIA_SLD_753_Baloro_habsdabei_Condition()
 
 FUNC VOID DIA_SLD_753_Baloro_habsdabei_Info()
 {
-	AI_Output (other, self,"DIA_SLD_753_Baloro_habsdabei_Info_15_01"); //Теперь я достал все, что нужно! И где твое супероружие?
-	AI_Output (self, other,"DIA_SLD_753_Baloro_habsdabei_Info_08_01"); //Сначала покажи, что ты принес!
+	AI_Output (other, self,"DIA_SLD_753_Baloro_habsdabei_Info_15_01"); //РўРµРїРµСЂСЊ СЏ РґРѕСЃС‚Р°Р» РІСЃРµ, С‡С‚Рѕ РЅСѓР¶РЅРѕ! Р РіРґРµ С‚РІРѕРµ СЃСѓРїРµСЂРѕСЂСѓР¶РёРµ?
+	AI_Output (self, other,"DIA_SLD_753_Baloro_habsdabei_Info_08_01"); //РЎРЅР°С‡Р°Р»Р° РїРѕРєР°Р¶Рё, С‡С‚Рѕ С‚С‹ РїСЂРёРЅРµСЃ!
 	
 	CreateInvItems(other, ItFoApple, 14);
 	
-	B_GiveInvItems(other, self, ItFoApple, 19); //Nцtig fьr die Ausschrift "19 Itmes abgegeben", wird sofort angeglichen.
+	B_GiveInvItems(other, self, ItFoApple, 19); //NС†tig fСЊr die Ausschrift "19 Itmes abgegeben", wird sofort angeglichen.
 	
 	Npc_RemoveInvItems ( other,ItFoBooze,2);
 	Npc_RemoveInvItems ( other,ItFoBeer,5);
@@ -217,18 +217,18 @@ FUNC VOID DIA_SLD_753_Baloro_habsdabei_Info()
 	CreateInvItems	(self,ItFo_wineberrys_01,2);
 
 	
-	AI_Output (other, self,"DIA_SLD_753_Baloro_habsdabei_Info_15_02"); //Вот, здесь все, что ты заказывал!
-	AI_Output (self, other,"DIA_SLD_753_Baloro_habsdabei_Info_08_02"); //Да, круто!
-	AI_Output (other, self,"DIA_SLD_753_Baloro_habsdabei_Info_15_03"); //Теперь ты давай, что обещал!
-	AI_Output (self, other,"DIA_SLD_753_Baloro_habsdabei_Info_08_03"); //Да ладно, забудь об этом!
-	AI_Output (other, self,"DIA_SLD_753_Baloro_habsdabei_Info_15_04"); //ЧТО???
-	AI_Output (self, other,"DIA_SLD_753_Baloro_habsdabei_Info_08_04"); //Ты что, и в самом деле поверил, что я тебе что-то отдам взамен? Если ты настолько глуп, тебя просто нельзя было не надуть!
-	AI_Output (self, other,"DIA_SLD_753_Baloro_habsdabei_Info_08_05"); //Непонятно вообще, как ты еще жив! Если будешь верить всему, что тебе говорят, долго ты здесь не протянешь!
-	AI_Output (self, other,"DIA_SLD_753_Baloro_habsdabei_Info_08_06"); //Но это не важно. Теперь у нас есть все для хорошей вечеринки! Большое спасибо! Может быть, мы еще когда-нибудь встретимся. Ха, ха, ха!
+	AI_Output (other, self,"DIA_SLD_753_Baloro_habsdabei_Info_15_02"); //Р’РѕС‚, Р·РґРµСЃСЊ РІСЃРµ, С‡С‚Рѕ С‚С‹ Р·Р°РєР°Р·С‹РІР°Р»!
+	AI_Output (self, other,"DIA_SLD_753_Baloro_habsdabei_Info_08_02"); //Р”Р°, РєСЂСѓС‚Рѕ!
+	AI_Output (other, self,"DIA_SLD_753_Baloro_habsdabei_Info_15_03"); //РўРµРїРµСЂСЊ С‚С‹ РґР°РІР°Р№, С‡С‚Рѕ РѕР±РµС‰Р°Р»!
+	AI_Output (self, other,"DIA_SLD_753_Baloro_habsdabei_Info_08_03"); //Р”Р° Р»Р°РґРЅРѕ, Р·Р°Р±СѓРґСЊ РѕР± СЌС‚РѕРј!
+	AI_Output (other, self,"DIA_SLD_753_Baloro_habsdabei_Info_15_04"); //Р§РўРћ???
+	AI_Output (self, other,"DIA_SLD_753_Baloro_habsdabei_Info_08_04"); //РўС‹ С‡С‚Рѕ, Рё РІ СЃР°РјРѕРј РґРµР»Рµ РїРѕРІРµСЂРёР», С‡С‚Рѕ СЏ С‚РµР±Рµ С‡С‚Рѕ-С‚Рѕ РѕС‚РґР°Рј РІР·Р°РјРµРЅ? Р•СЃР»Рё С‚С‹ РЅР°СЃС‚РѕР»СЊРєРѕ РіР»СѓРї, С‚РµР±СЏ РїСЂРѕСЃС‚Рѕ РЅРµР»СЊР·СЏ Р±С‹Р»Рѕ РЅРµ РЅР°РґСѓС‚СЊ!
+	AI_Output (self, other,"DIA_SLD_753_Baloro_habsdabei_Info_08_05"); //РќРµРїРѕРЅСЏС‚РЅРѕ РІРѕРѕР±С‰Рµ, РєР°Рє С‚С‹ РµС‰Рµ Р¶РёРІ! Р•СЃР»Рё Р±СѓРґРµС€СЊ РІРµСЂРёС‚СЊ РІСЃРµРјСѓ, С‡С‚Рѕ С‚РµР±Рµ РіРѕРІРѕСЂСЏС‚, РґРѕР»РіРѕ С‚С‹ Р·РґРµСЃСЊ РЅРµ РїСЂРѕС‚СЏРЅРµС€СЊ!
+	AI_Output (self, other,"DIA_SLD_753_Baloro_habsdabei_Info_08_06"); //РќРѕ СЌС‚Рѕ РЅРµ РІР°Р¶РЅРѕ. РўРµРїРµСЂСЊ Сѓ РЅР°СЃ РµСЃС‚СЊ РІСЃРµ РґР»СЏ С…РѕСЂРѕС€РµР№ РІРµС‡РµСЂРёРЅРєРё! Р‘РѕР»СЊС€РѕРµ СЃРїР°СЃРёР±Рѕ! РњРѕР¶РµС‚ Р±С‹С‚СЊ, РјС‹ РµС‰Рµ РєРѕРіРґР°-РЅРёР±СѓРґСЊ РІСЃС‚СЂРµС‚РёРјСЃСЏ. РҐР°, С…Р°, С…Р°!
 	
 	SLD_753_Baloro_SC_besorgt_den_Kram = LOG_SUCCESS ;
 	B_GiveXP (300);
-	B_LogEntry			(Baloros_Waffe,		"Не надо было верить на слово этому придурку! Ну ничего, теперь-то я усвою этот урок."); 
+	B_LogEntry			(Baloros_Waffe,		"РќРµ РЅР°РґРѕ Р±С‹Р»Рѕ РІРµСЂРёС‚СЊ РЅР° СЃР»РѕРІРѕ СЌС‚РѕРјСѓ РїСЂРёРґСѓСЂРєСѓ! РќСѓ РЅРёС‡РµРіРѕ, С‚РµРїРµСЂСЊ-С‚Рѕ СЏ СѓСЃРІРѕСЋ СЌС‚РѕС‚ СѓСЂРѕРє."); 
 
 	Log_SetTopicStatus	(Baloros_Waffe,		LOG_SUCCESS);
 	
@@ -245,7 +245,7 @@ instance DIA_SLD_753_Baloro_letztes_Wort (C_INFO)
 	information	= DIA_SLD_753_Baloro_letztes_Wort_Info;
 	important	= 0;	
 	permanent	= 0;
-	description 	= "Эй, парень! Ты не должен так поступать! ";
+	description 	= "Р­Р№, РїР°СЂРµРЅСЊ! РўС‹ РЅРµ РґРѕР»Р¶РµРЅ С‚Р°Рє РїРѕСЃС‚СѓРїР°С‚СЊ! ";
 	
 };                       
 
@@ -261,8 +261,8 @@ FUNC int DIA_SLD_753_Baloro_letztes_Wort_Condition()
 FUNC VOID DIA_SLD_753_Baloro_letztes_Wort_Info()
 
 	 	{
-			AI_Output (other, self,"DIA_SLD_753_Baloro_letztes_Wort_Info_15_01"); //Эй, парень! Ты не должен так поступать! 
-			AI_Output (self, other,"DIA_SLD_753_Baloro_letztes_Wort_Info_08_01"); //Чего тебе еще нужно? Проваливай! Иди, действуй еще кому-нибудь на нервы - только не мне. Усек?
+			AI_Output (other, self,"DIA_SLD_753_Baloro_letztes_Wort_Info_15_01"); //Р­Р№, РїР°СЂРµРЅСЊ! РўС‹ РЅРµ РґРѕР»Р¶РµРЅ С‚Р°Рє РїРѕСЃС‚СѓРїР°С‚СЊ! 
+			AI_Output (self, other,"DIA_SLD_753_Baloro_letztes_Wort_Info_08_01"); //Р§РµРіРѕ С‚РµР±Рµ РµС‰Рµ РЅСѓР¶РЅРѕ? РџСЂРѕРІР°Р»РёРІР°Р№! РРґРё, РґРµР№СЃС‚РІСѓР№ РµС‰Рµ РєРѕРјСѓ-РЅРёР±СѓРґСЊ РЅР° РЅРµСЂРІС‹ - С‚РѕР»СЊРєРѕ РЅРµ РјРЅРµ. РЈСЃРµРє?
 		
 			SLD_753_Baloro_SC_wills_wissen = 1	;
 			
@@ -272,7 +272,7 @@ FUNC VOID DIA_SLD_753_Baloro_letztes_Wort_Info()
 
 
 
-// **********************	EXIT\ Spieler willґs wissen	*****************	
+// **********************	EXIT\ Spieler willТ‘s wissen	*****************	
 
 instance DIA_SLD_753_Baloro_SC_wills_wissen (C_INFO)
 {
@@ -281,7 +281,7 @@ instance DIA_SLD_753_Baloro_SC_wills_wissen (C_INFO)
 	information	= DIA_SLD_753_Baloro_SC_wills_wissen_Info;
 	important	= 0;	
 	permanent	= 0;
-	description 	= "Похоже, мне все-таки придется тебе врезать!";
+	description 	= "РџРѕС…РѕР¶Рµ, РјРЅРµ РІСЃРµ-С‚Р°РєРё РїСЂРёРґРµС‚СЃСЏ С‚РµР±Рµ РІСЂРµР·Р°С‚СЊ!";
 	
 };                       
 
@@ -305,10 +305,10 @@ FUNC VOID DIA_SLD_753_Baloro_Attack()
 
 FUNC VOID DIA_SLD_753_Baloro_SC_wills_wissen_Info()
 {
-	AI_Output (other, self,"DIA_SLD_753_Baloro_SC_wills_wissen_Info_15_01"); //Похоже, мне все-таки придется тебе врезать!
-	AI_Output (self, other,"DIA_SLD_753_Baloro_SC_wills_wissen_Info_08_01"); //Мы славно повеселились. А теперь проваливай, парень!
-	AI_Output (other, self,"DIA_SLD_753_Baloro_SC_wills_wissen_Info_15_02"); //Похоже, ты меня не понял!
-	AI_Output (self, other,"DIA_SLD_753_Baloro_SC_wills_wissen_Info_08_02"); //Ну ладно. Ты сам напросился! А я предупреждал!
+	AI_Output (other, self,"DIA_SLD_753_Baloro_SC_wills_wissen_Info_15_01"); //РџРѕС…РѕР¶Рµ, РјРЅРµ РІСЃРµ-С‚Р°РєРё РїСЂРёРґРµС‚СЃСЏ С‚РµР±Рµ РІСЂРµР·Р°С‚СЊ!
+	AI_Output (self, other,"DIA_SLD_753_Baloro_SC_wills_wissen_Info_08_01"); //РњС‹ СЃР»Р°РІРЅРѕ РїРѕРІРµСЃРµР»РёР»РёСЃСЊ. Рђ С‚РµРїРµСЂСЊ РїСЂРѕРІР°Р»РёРІР°Р№, РїР°СЂРµРЅСЊ!
+	AI_Output (other, self,"DIA_SLD_753_Baloro_SC_wills_wissen_Info_15_02"); //РџРѕС…РѕР¶Рµ, С‚С‹ РјРµРЅСЏ РЅРµ РїРѕРЅСЏР»!
+	AI_Output (self, other,"DIA_SLD_753_Baloro_SC_wills_wissen_Info_08_02"); //РќСѓ Р»Р°РґРЅРѕ. РўС‹ СЃР°Рј РЅР°РїСЂРѕСЃРёР»СЃСЏ! Рђ СЏ РїСЂРµРґСѓРїСЂРµР¶РґР°Р»!
 	
 	DIA_SLD_753_Baloro_Attack () ;
 	
@@ -328,7 +328,7 @@ instance DIA_SLD_753_Baloro_Exit (C_INFO)
 	information	= DIA_SLD_753_Baloro_Exit_Info;
 	important	= 0;	
 	permanent	= 1;
-	description 	= "Мне пора идти.";
+	description 	= "РњРЅРµ РїРѕСЂР° РёРґС‚Рё.";
 	
 };                       
 
@@ -346,15 +346,15 @@ FUNC VOID DIA_SLD_753_Baloro_Exit_Info()
 		
 				if ( (Npc_KnowsInfo(hero,DIA_SLD_753_Baloro_Wasmeinstdu))  &&   (SLD_753_Baloro_SC_choice == 0)	)  
 					{
-						AI_Output (other, self,"DIA_SLD_753_Baloro_Exit_Info_15_01"); //Нет, нет! Забудь! Мне это не нужно!
-						AI_Output (self, other,"DIA_SLD_753_Baloro_Exit_Info_08_02"); //Ну и хорошо. Как скажешь! Я дал тебе шанс.
+						AI_Output (other, self,"DIA_SLD_753_Baloro_Exit_Info_15_01"); //РќРµС‚, РЅРµС‚! Р—Р°Р±СѓРґСЊ! РњРЅРµ СЌС‚Рѕ РЅРµ РЅСѓР¶РЅРѕ!
+						AI_Output (self, other,"DIA_SLD_753_Baloro_Exit_Info_08_02"); //РќСѓ Рё С…РѕСЂРѕС€Рѕ. РљР°Рє СЃРєР°Р¶РµС€СЊ! РЇ РґР°Р» С‚РµР±Рµ С€Р°РЅСЃ.
 						
 						SLD_753_Baloro_SC_choice = 1 ;
 					}
 				else
 					{
-						AI_Output (other, self,"DIA_SLD_753_Baloro_Exit_Info_15_03"); //Извини, нет времени поболтать с тобой еще!
-						AI_Output (self, other,"DIA_SLD_753_Baloro_Exit_Info_08_04"); //А, так ты занятой человек! Ну, еще увидимся!
+						AI_Output (other, self,"DIA_SLD_753_Baloro_Exit_Info_15_03"); //РР·РІРёРЅРё, РЅРµС‚ РІСЂРµРјРµРЅРё РїРѕР±РѕР»С‚Р°С‚СЊ СЃ С‚РѕР±РѕР№ РµС‰Рµ!
+						AI_Output (self, other,"DIA_SLD_753_Baloro_Exit_Info_08_04"); //Рђ, С‚Р°Рє С‚С‹ Р·Р°РЅСЏС‚РѕР№ С‡РµР»РѕРІРµРє! РќСѓ, РµС‰Рµ СѓРІРёРґРёРјСЃСЏ!
 					};
 			
 	
@@ -371,7 +371,7 @@ instance DIA_SLD_753_Baloro_Angebotdochannehmen (C_INFO)
 	information	= DIA_SLD_753_Baloro_Angebotdochannehmen_Info;
 	important	= 0;	
 	permanent	= 0;
-	description 	= "Знаешь, я тут подумал... Может, вернемся к твоему предложению?";
+	description 	= "Р—РЅР°РµС€СЊ, СЏ С‚СѓС‚ РїРѕРґСѓРјР°Р»... РњРѕР¶РµС‚, РІРµСЂРЅРµРјСЃСЏ Рє С‚РІРѕРµРјСѓ РїСЂРµРґР»РѕР¶РµРЅРёСЋ?";
 	
 };                       
 
@@ -387,8 +387,8 @@ FUNC int DIA_SLD_753_Baloro_Angebotdochannehmen_Condition()
 FUNC VOID DIA_SLD_753_Baloro_Angebotdochannehmen_Info()
 
 	 	{
-			AI_Output (other, self,"DIA_SLD_753_Baloro_Angebotdochannehmen_Info_15_01"); //Знаешь, я тут подумал... Может, вернемся к твоему предложению?
-			AI_Output (self, other,"DIA_SLD_753_Baloro_Angebotdochannehmen_Info_08_01"); //Нет, теперь уже слишком поздно. Ты упустил свой шанс!
+			AI_Output (other, self,"DIA_SLD_753_Baloro_Angebotdochannehmen_Info_15_01"); //Р—РЅР°РµС€СЊ, СЏ С‚СѓС‚ РїРѕРґСѓРјР°Р»... РњРѕР¶РµС‚, РІРµСЂРЅРµРјСЃСЏ Рє С‚РІРѕРµРјСѓ РїСЂРµРґР»РѕР¶РµРЅРёСЋ?
+			AI_Output (self, other,"DIA_SLD_753_Baloro_Angebotdochannehmen_Info_08_01"); //РќРµС‚, С‚РµРїРµСЂСЊ СѓР¶Рµ СЃР»РёС€РєРѕРј РїРѕР·РґРЅРѕ. РўС‹ СѓРїСѓСЃС‚РёР» СЃРІРѕР№ С€Р°РЅСЃ!
 		
 			
 			AI_StopProcessInfos	(self);	

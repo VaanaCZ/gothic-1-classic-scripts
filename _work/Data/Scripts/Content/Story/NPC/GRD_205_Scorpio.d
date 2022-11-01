@@ -2,7 +2,7 @@ instance Grd_205_Scorpio (Npc_Default)
 {
 	//-------- primary data --------
 	
-	name 		=	"Скорпио";
+	name 		=	"РЎРєРѕСЂРїРёРѕ";
 	npctype		=	npctype_main;
 	guild 		=	GIL_GRD;
 	level 		=	15;

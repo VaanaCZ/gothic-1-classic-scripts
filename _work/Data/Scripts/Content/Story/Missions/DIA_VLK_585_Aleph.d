@@ -20,8 +20,8 @@ FUNC VOID  VLK_585_Aleph_Exit_Info()
 {
 	if	!Npc_KnowsInfo (hero, GRD_261_Brandick_ALEPH)
 	{
-		AI_Output (other, self,"VLK_585_Aleph_Exit_Info_15_01"); //Удачи!
-		AI_Output (self, other,"VLK_585_Aleph_Exit_Info_05_02"); //Ну, ты знаешь, где меня найти.
+		AI_Output (other, self,"VLK_585_Aleph_Exit_Info_15_01"); //РЈРґР°С‡Рё!
+		AI_Output (self, other,"VLK_585_Aleph_Exit_Info_05_02"); //РќСѓ, С‚С‹ Р·РЅР°РµС€СЊ, РіРґРµ РјРµРЅСЏ РЅР°Р№С‚Рё.
 	};
 	
 	AI_StopProcessInfos	( self );
@@ -44,9 +44,9 @@ FUNC int  VLK_585_Aleph_CLEVER_Condition()
 
 func void  VLK_585_Aleph_CLEVER_Info()
 {
-	AI_Output (self,other,"VLK_585_Aleph_CLEVER_Info_05_01"); //Хе-хе-хе, стражникам меня никогда не поймать!
+	AI_Output (self,other,"VLK_585_Aleph_CLEVER_Info_05_01"); //РҐРµ-С…Рµ-С…Рµ, СЃС‚СЂР°Р¶РЅРёРєР°Рј РјРµРЅСЏ РЅРёРєРѕРіРґР° РЅРµ РїРѕР№РјР°С‚СЊ!
 };
-// ***************** ALEPH ERKLДRT SEINE ARBEITSHALTUNG *****************************
+// ***************** ALEPH ERKLР”RT SEINE ARBEITSHALTUNG *****************************
 
 instance  VLK_585_Aleph_GUARDS (C_INFO)
 {
@@ -55,7 +55,7 @@ instance  VLK_585_Aleph_GUARDS (C_INFO)
 	information		= VLK_585_Aleph_GUARDS_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "О чем это ты?"; 
+	description		= "Рћ С‡РµРј СЌС‚Рѕ С‚С‹?"; 
 };
 
 FUNC int  VLK_585_Aleph_GUARDS_Condition()
@@ -68,11 +68,11 @@ FUNC int  VLK_585_Aleph_GUARDS_Condition()
 
 FUNC void  VLK_585_Aleph_GUARDS_Info()
 {
-	AI_Output (other, self,"VLK_585_Aleph_GUARDS_Info_15_01"); //О чем это ты?
-	AI_Output (self, other,"VLK_585_Aleph_GUARDS_Info_05_02"); //Я начинаю работать, только когда стражники поблизости, а в остальное время просто болтаюсь без дела.
-	AI_Output (other, self,"VLK_585_Aleph_GUARDS_Info_15_03"); //И они ничего не подозревают?
-	AI_Output (self, other,"VLK_585_Aleph_GUARDS_Info_05_04"); //Подозревают, конечно, - ведь я добываю куда меньше руды, чем остальные. Ее всегда не хватает, так что мне приходится вести обмен.
-	AI_Output (self, other,"VLK_585_Aleph_GUARDS_Info_05_05"); //Если умеешь слушать, можно узнать много всего полезного. Вот, например, ты. У тебя есть с собой руда? Скажем, 10 кусков?
+	AI_Output (other, self,"VLK_585_Aleph_GUARDS_Info_15_01"); //Рћ С‡РµРј СЌС‚Рѕ С‚С‹?
+	AI_Output (self, other,"VLK_585_Aleph_GUARDS_Info_05_02"); //РЇ РЅР°С‡РёРЅР°СЋ СЂР°Р±РѕС‚Р°С‚СЊ, С‚РѕР»СЊРєРѕ РєРѕРіРґР° СЃС‚СЂР°Р¶РЅРёРєРё РїРѕР±Р»РёР·РѕСЃС‚Рё, Р° РІ РѕСЃС‚Р°Р»СЊРЅРѕРµ РІСЂРµРјСЏ РїСЂРѕСЃС‚Рѕ Р±РѕР»С‚Р°СЋСЃСЊ Р±РµР· РґРµР»Р°.
+	AI_Output (other, self,"VLK_585_Aleph_GUARDS_Info_15_03"); //Р РѕРЅРё РЅРёС‡РµРіРѕ РЅРµ РїРѕРґРѕР·СЂРµРІР°СЋС‚?
+	AI_Output (self, other,"VLK_585_Aleph_GUARDS_Info_05_04"); //РџРѕРґРѕР·СЂРµРІР°СЋС‚, РєРѕРЅРµС‡РЅРѕ, - РІРµРґСЊ СЏ РґРѕР±С‹РІР°СЋ РєСѓРґР° РјРµРЅСЊС€Рµ СЂСѓРґС‹, С‡РµРј РѕСЃС‚Р°Р»СЊРЅС‹Рµ. Р•Рµ РІСЃРµРіРґР° РЅРµ С…РІР°С‚Р°РµС‚, С‚Р°Рє С‡С‚Рѕ РјРЅРµ РїСЂРёС…РѕРґРёС‚СЃСЏ РІРµСЃС‚Рё РѕР±РјРµРЅ.
+	AI_Output (self, other,"VLK_585_Aleph_GUARDS_Info_05_05"); //Р•СЃР»Рё СѓРјРµРµС€СЊ СЃР»СѓС€Р°С‚СЊ, РјРѕР¶РЅРѕ СѓР·РЅР°С‚СЊ РјРЅРѕРіРѕ РІСЃРµРіРѕ РїРѕР»РµР·РЅРѕРіРѕ. Р’РѕС‚, РЅР°РїСЂРёРјРµСЂ, С‚С‹. РЈ С‚РµР±СЏ РµСЃС‚СЊ СЃ СЃРѕР±РѕР№ СЂСѓРґР°? РЎРєР°Р¶РµРј, 10 РєСѓСЃРєРѕРІ?
 
 	Npc_ExchangeRoutine (self,"BUSY");
 	
@@ -90,7 +90,7 @@ instance VLK_585_Aleph_INFO (C_INFO)
 	information		= VLK_585_Aleph_INFO_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "(дать 10 кусков руды)";
+	description		= "(РґР°С‚СЊ 10 РєСѓСЃРєРѕРІ СЂСѓРґС‹)";
 };
 
 FUNC int  VLK_585_Aleph_INFO_Condition()
@@ -103,15 +103,15 @@ FUNC int  VLK_585_Aleph_INFO_Condition()
 
 func void  VLK_585_Aleph_INFO_Info()
 {
-	AI_Output (other,self,"VLK_585_Aleph_INFO_Info_15_01"); //Ладно, вот тебе 10 кусков.
-	AI_Output (self,other,"VLK_585_Aleph_INFO_Info_05_02"); //Спасибо. Если ты пройдешь по главной шахте и спустишься вниз по мосткам, вскоре ты увидишь пещеры.
-	AI_Output (self,other,"VLK_585_Aleph_INFO_Info_05_03"); //Во второй пещере стоит стражник, там же находится старый пресс.
-	AI_Output (self,other,"VLK_585_Aleph_INFO_Info_05_04"); //Там где-то лежит целебный эликсир. Только будь осторожен и держись подальше от ползунов!
-	AI_Output (self,other,"VLK_585_Aleph_INFO_Info_05_05"); //Если тебе что-нибудь понадобится или узнаешь что-то интересное, приходи ко мне. Думаю, мы договоримся...
+	AI_Output (other,self,"VLK_585_Aleph_INFO_Info_15_01"); //Р›Р°РґРЅРѕ, РІРѕС‚ С‚РµР±Рµ 10 РєСѓСЃРєРѕРІ.
+	AI_Output (self,other,"VLK_585_Aleph_INFO_Info_05_02"); //РЎРїР°СЃРёР±Рѕ. Р•СЃР»Рё С‚С‹ РїСЂРѕР№РґРµС€СЊ РїРѕ РіР»Р°РІРЅРѕР№ С€Р°С…С‚Рµ Рё СЃРїСѓСЃС‚РёС€СЊСЃСЏ РІРЅРёР· РїРѕ РјРѕСЃС‚РєР°Рј, РІСЃРєРѕСЂРµ С‚С‹ СѓРІРёРґРёС€СЊ РїРµС‰РµСЂС‹.
+	AI_Output (self,other,"VLK_585_Aleph_INFO_Info_05_03"); //Р’Рѕ РІС‚РѕСЂРѕР№ РїРµС‰РµСЂРµ СЃС‚РѕРёС‚ СЃС‚СЂР°Р¶РЅРёРє, С‚Р°Рј Р¶Рµ РЅР°С…РѕРґРёС‚СЃСЏ СЃС‚Р°СЂС‹Р№ РїСЂРµСЃСЃ.
+	AI_Output (self,other,"VLK_585_Aleph_INFO_Info_05_04"); //РўР°Рј РіРґРµ-С‚Рѕ Р»РµР¶РёС‚ С†РµР»РµР±РЅС‹Р№ СЌР»РёРєСЃРёСЂ. РўРѕР»СЊРєРѕ Р±СѓРґСЊ РѕСЃС‚РѕСЂРѕР¶РµРЅ Рё РґРµСЂР¶РёСЃСЊ РїРѕРґР°Р»СЊС€Рµ РѕС‚ РїРѕР»Р·СѓРЅРѕРІ!
+	AI_Output (self,other,"VLK_585_Aleph_INFO_Info_05_05"); //Р•СЃР»Рё С‚РµР±Рµ С‡С‚Рѕ-РЅРёР±СѓРґСЊ РїРѕРЅР°РґРѕР±РёС‚СЃСЏ РёР»Рё СѓР·РЅР°РµС€СЊ С‡С‚Рѕ-С‚Рѕ РёРЅС‚РµСЂРµСЃРЅРѕРµ, РїСЂРёС…РѕРґРё РєРѕ РјРЅРµ. Р”СѓРјР°СЋ, РјС‹ РґРѕРіРѕРІРѕСЂРёРјСЃСЏ...
 	
 	B_GiveInvItems (hero, other, ItMiNugget,10);
 };
-// ***************** WIRD ALEPH ANGESCHWДRZT IST ER SAUER*****************************
+// ***************** WIRD ALEPH ANGESCHWР”RZT IST ER SAUER*****************************
 instance VLK_585_Aleph_ANGRY (C_INFO)
 {
 	npc				= VLK_585_Aleph;
@@ -132,7 +132,7 @@ FUNC int  VLK_585_Aleph_ANGRY_Condition()
 func void  VLK_585_Aleph_ANGRY_Info()
 {
 	
-	AI_Output (self,other,"VLK_585_Aleph_ANGRY_Info_05_01"); //Ты сдал меня Брендику! Убирайся отсюда!
+	AI_Output (self,other,"VLK_585_Aleph_ANGRY_Info_05_01"); //РўС‹ СЃРґР°Р» РјРµРЅСЏ Р‘СЂРµРЅРґРёРєСѓ! РЈР±РёСЂР°Р№СЃСЏ РѕС‚СЃСЋРґР°!
 	
 	AI_StopProcessInfos	( self );
 	Npc_SetTempAttitude (self,ATT_ANGRY);
@@ -145,7 +145,7 @@ instance VLK_585_Aleph_KEY (C_INFO)
 	information		= VLK_585_Aleph_KEY_Info;
 	important		= 0;
 	permanent		= 0;
-	description     = "Узнал чего-нибудь новенькое?";
+	description     = "РЈР·РЅР°Р» С‡РµРіРѕ-РЅРёР±СѓРґСЊ РЅРѕРІРµРЅСЊРєРѕРµ?";
 };
 FUNC int  VLK_585_Aleph_KEY_Condition()
 {
@@ -157,8 +157,8 @@ FUNC int  VLK_585_Aleph_KEY_Condition()
 
 func void  VLK_585_Aleph_KEY_Info()
 {
-	AI_Output (other,self,"VLK_585_Aleph_KEY_Info_15_01"); //Узнал чего-нибудь новенькое?
-	AI_Output (self,other,"VLK_585_Aleph_KEY_Info_05_02"); //Конечно. А  у тебя есть 10 кусков?
+	AI_Output (other,self,"VLK_585_Aleph_KEY_Info_15_01"); //РЈР·РЅР°Р» С‡РµРіРѕ-РЅРёР±СѓРґСЊ РЅРѕРІРµРЅСЊРєРѕРµ?
+	AI_Output (self,other,"VLK_585_Aleph_KEY_Info_05_02"); //РљРѕРЅРµС‡РЅРѕ. Рђ  Сѓ С‚РµР±СЏ РµСЃС‚СЊ 10 РєСѓСЃРєРѕРІ?
 };
 
 //***************** LOCKPICKS*****************************
@@ -169,7 +169,7 @@ instance VLK_585_Aleph_GLEN (C_INFO)
 	information		= VLK_585_Aleph_GLEN_Info;
 	important		= 0;
 	permanent		= 0;
-	description     = "(дать 10 кусков руды)";
+	description     = "(РґР°С‚СЊ 10 РєСѓСЃРєРѕРІ СЂСѓРґС‹)";
 };
 FUNC int  VLK_585_Aleph_GLEN_Condition()
 {
@@ -182,15 +182,15 @@ FUNC int  VLK_585_Aleph_GLEN_Condition()
 func void  VLK_585_Aleph_GLEN_Info()
 {
 	
-	AI_Output (other,self,"VLK_585_Aleph_GLEN_Info_15_01"); //За них я хочу получить действительно полезную информацию!
-	AI_Output (self,other,"VLK_585_Aleph_GLEN_Info_05_02"); //Видишь, здесь полно запертых сундуков. А отмычки можно купить у Глена. Так зовут того рудокопа, что стоит наверху.
+	AI_Output (other,self,"VLK_585_Aleph_GLEN_Info_15_01"); //Р—Р° РЅРёС… СЏ С…РѕС‡Сѓ РїРѕР»СѓС‡РёС‚СЊ РґРµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ РїРѕР»РµР·РЅСѓСЋ РёРЅС„РѕСЂРјР°С†РёСЋ!
+	AI_Output (self,other,"VLK_585_Aleph_GLEN_Info_05_02"); //Р’РёРґРёС€СЊ, Р·РґРµСЃСЊ РїРѕР»РЅРѕ Р·Р°РїРµСЂС‚С‹С… СЃСѓРЅРґСѓРєРѕРІ. Рђ РѕС‚РјС‹С‡РєРё РјРѕР¶РЅРѕ РєСѓРїРёС‚СЊ Сѓ Р“Р»РµРЅР°. РўР°Рє Р·РѕРІСѓС‚ С‚РѕРіРѕ СЂСѓРґРѕРєРѕРїР°, С‡С‚Рѕ СЃС‚РѕРёС‚ РЅР°РІРµСЂС…Сѓ.
 	
 	B_GiveInvItems (hero, self, ItMinugget,10); 
 };
-//***************** LAGERSCHUPPENSCHLЬSSEL*****************************
+//***************** LAGERSCHUPPENSCHLР¬SSEL*****************************
 func void B_Aleph_StorageShedKey()
 {
-	B_LogEntry		(CH2_StorageShed,"Алеф продал мне ключ к сундуку на складе!");
+	B_LogEntry		(CH2_StorageShed,"РђР»РµС„ РїСЂРѕРґР°Р» РјРЅРµ РєР»СЋС‡ Рє СЃСѓРЅРґСѓРєСѓ РЅР° СЃРєР»Р°РґРµ!");
 };
 
 instance VLK_585_Aleph_SCHUPPEN (C_INFO)
@@ -200,7 +200,7 @@ instance VLK_585_Aleph_SCHUPPEN (C_INFO)
 	information		= VLK_585_Aleph_SCHUPPEN_Info;
 	important		= 0;
 	permanent		= 0;
-	description     = "Тебе что-нибудь известно о ключе от сундуков на складе?";
+	description     = "РўРµР±Рµ С‡С‚Рѕ-РЅРёР±СѓРґСЊ РёР·РІРµСЃС‚РЅРѕ Рѕ РєР»СЋС‡Рµ РѕС‚ СЃСѓРЅРґСѓРєРѕРІ РЅР° СЃРєР»Р°РґРµ?";
 };
 FUNC int  VLK_585_Aleph_SCHUPPEN_Condition()
 {
@@ -213,17 +213,17 @@ FUNC int  VLK_585_Aleph_SCHUPPEN_Condition()
 func void  VLK_585_Aleph_SCHUPPEN_Info()
 {
 	
-	AI_Output (other,self,"VLK_585_Aleph_SCHUPPEN_Info_15_01"); //Тебе что-нибудь известно о том, где можно найти ключ от сундуков на складе?
-	AI_Output (self,other,"VLK_585_Aleph_SCHUPPEN_Info_05_02"); //Ну, это зависит...
-	AI_Output (other,self,"VLK_585_Aleph_SCHUPPEN_Info_15_03"); //От того, сколько я смогу заплатить?
-	AI_Output (self,other,"VLK_585_Aleph_SCHUPPEN_Info_05_04"); //Ты схватываешь все на лету.
+	AI_Output (other,self,"VLK_585_Aleph_SCHUPPEN_Info_15_01"); //РўРµР±Рµ С‡С‚Рѕ-РЅРёР±СѓРґСЊ РёР·РІРµСЃС‚РЅРѕ Рѕ С‚РѕРј, РіРґРµ РјРѕР¶РЅРѕ РЅР°Р№С‚Рё РєР»СЋС‡ РѕС‚ СЃСѓРЅРґСѓРєРѕРІ РЅР° СЃРєР»Р°РґРµ?
+	AI_Output (self,other,"VLK_585_Aleph_SCHUPPEN_Info_05_02"); //РќСѓ, СЌС‚Рѕ Р·Р°РІРёСЃРёС‚...
+	AI_Output (other,self,"VLK_585_Aleph_SCHUPPEN_Info_15_03"); //РћС‚ С‚РѕРіРѕ, СЃРєРѕР»СЊРєРѕ СЏ СЃРјРѕРіСѓ Р·Р°РїР»Р°С‚РёС‚СЊ?
+	AI_Output (self,other,"VLK_585_Aleph_SCHUPPEN_Info_05_04"); //РўС‹ СЃС…РІР°С‚С‹РІР°РµС€СЊ РІСЃРµ РЅР° Р»РµС‚Сѓ.
 	
 	Info_ClearChoices ( VLK_585_Aleph_SCHUPPEN );
 	
 	Info_AddChoice ( VLK_585_Aleph_SCHUPPEN,DIALOG_BACK 	   ,VLK_585_Aleph_SCHUPPEN_Back);
-	Info_AddChoice ( VLK_585_Aleph_SCHUPPEN,"Заплатить 50 кусков руды.",VLK_585_Aleph_SCHUPPEN_50 );
-	Info_AddChoice ( VLK_585_Aleph_SCHUPPEN,"Заплатить 30 кусков руды.",VLK_585_Aleph_SCHUPPEN_30 );
-	Info_AddChoice ( VLK_585_Aleph_SCHUPPEN,"Заплатить 15 кусков руды.",VLK_585_Aleph_SCHUPPEN_15 );
+	Info_AddChoice ( VLK_585_Aleph_SCHUPPEN,"Р—Р°РїР»Р°С‚РёС‚СЊ 50 РєСѓСЃРєРѕРІ СЂСѓРґС‹.",VLK_585_Aleph_SCHUPPEN_50 );
+	Info_AddChoice ( VLK_585_Aleph_SCHUPPEN,"Р—Р°РїР»Р°С‚РёС‚СЊ 30 РєСѓСЃРєРѕРІ СЂСѓРґС‹.",VLK_585_Aleph_SCHUPPEN_30 );
+	Info_AddChoice ( VLK_585_Aleph_SCHUPPEN,"Р—Р°РїР»Р°С‚РёС‚СЊ 15 РєСѓСЃРєРѕРІ СЂСѓРґС‹.",VLK_585_Aleph_SCHUPPEN_15 );
 };
 
 
@@ -232,10 +232,10 @@ func void VLK_585_Aleph_SCHUPPEN_50 ()
 	
 	if (Npc_HasItems (hero, ItMiNugget) >= 50)
 	{ 
-		AI_Output			(other,self,"VLK_585_Aleph_SCHUPPEN_50_15_01"); //Я думаю, 50 кусков руды будет более чем достаточно.
-		AI_Output			(self,other,"VLK_585_Aleph_SCHUPPEN_50_05_02"); //Это даже больше, чем я рассчитывал. Вот, возьми ключ - и еще это кольцо. Оно всегда приносило мне удачу.
+		AI_Output			(other,self,"VLK_585_Aleph_SCHUPPEN_50_15_01"); //РЇ РґСѓРјР°СЋ, 50 РєСѓСЃРєРѕРІ СЂСѓРґС‹ Р±СѓРґРµС‚ Р±РѕР»РµРµ С‡РµРј РґРѕСЃС‚Р°С‚РѕС‡РЅРѕ.
+		AI_Output			(self,other,"VLK_585_Aleph_SCHUPPEN_50_05_02"); //Р­С‚Рѕ РґР°Р¶Рµ Р±РѕР»СЊС€Рµ, С‡РµРј СЏ СЂР°СЃСЃС‡РёС‚С‹РІР°Р». Р’РѕС‚, РІРѕР·СЊРјРё РєР»СЋС‡ - Рё РµС‰Рµ СЌС‚Рѕ РєРѕР»СЊС†Рѕ. РћРЅРѕ РІСЃРµРіРґР° РїСЂРёРЅРѕСЃРёР»Рѕ РјРЅРµ СѓРґР°С‡Сѓ.
 
-		CreateInvItems		(self, ItKe_OM_03,	1);			// nur fьr die korrekte Textausgaben!!!
+		CreateInvItems		(self, ItKe_OM_03,	1);			// nur fСЊr die korrekte Textausgaben!!!
 		B_GiveInvItems      (self, hero, ItKe_OM_03, 2);
 		Npc_RemoveInvItem	(hero, ItKe_OM_03);
 
@@ -251,7 +251,7 @@ func void VLK_585_Aleph_SCHUPPEN_50 ()
 	}
 	else
 	{
-		AI_Output (self,other,"VLK_585_Aleph_SCHUPPEN_50_05_03"); //Но у тебя нет столько руды!
+		AI_Output (self,other,"VLK_585_Aleph_SCHUPPEN_50_05_03"); //РќРѕ Сѓ С‚РµР±СЏ РЅРµС‚ СЃС‚РѕР»СЊРєРѕ СЂСѓРґС‹!
 		VLK_585_Aleph_SCHUPPEN.permanent = 1;
 	};
 };
@@ -266,21 +266,21 @@ func void VLK_585_Aleph_SCHUPPEN_30 ()
 		B_GiveInvItems      (self, other, ItKe_OM_03, 1);
 		B_GiveInvItems	(hero, self, ItMinugget,30);  
 		Info_ClearChoices	(VLK_585_Aleph_SCHUPPEN );
-		AI_Output (other,self,"VLK_585_Aleph_SCHUPPEN_30_15_01"); //Что скажешь по поводу 30 кусков руды?
-		AI_Output (self,other,"VLK_585_Aleph_SCHUPPEN_30_05_02"); //Нормально. Так уж получилось, что ключ у меня как раз с собой.
+		AI_Output (other,self,"VLK_585_Aleph_SCHUPPEN_30_15_01"); //Р§С‚Рѕ СЃРєР°Р¶РµС€СЊ РїРѕ РїРѕРІРѕРґСѓ 30 РєСѓСЃРєРѕРІ СЂСѓРґС‹?
+		AI_Output (self,other,"VLK_585_Aleph_SCHUPPEN_30_05_02"); //РќРѕСЂРјР°Р»СЊРЅРѕ. РўР°Рє СѓР¶ РїРѕР»СѓС‡РёР»РѕСЃСЊ, С‡С‚Рѕ РєР»СЋС‡ Сѓ РјРµРЅСЏ РєР°Рє СЂР°Р· СЃ СЃРѕР±РѕР№.
 		VLK_585_Aleph_SCHUPPEN.permanent = 0;
 		B_Aleph_StorageShedKey();
 	}
 	else
 	{
-		AI_Output (self,other,"VLK_585_Aleph_SCHUPPEN_30_05_03"); //Но у тебя нет столько руды!
+		AI_Output (self,other,"VLK_585_Aleph_SCHUPPEN_30_05_03"); //РќРѕ Сѓ С‚РµР±СЏ РЅРµС‚ СЃС‚РѕР»СЊРєРѕ СЂСѓРґС‹!
 		VLK_585_Aleph_SCHUPPEN.permanent = 1;
 	}; 
 };	
 func void VLK_585_Aleph_SCHUPPEN_15 ()
 {
-	AI_Output (other,self,"VLK_585_Aleph_SCHUPPEN_15_15_01"); //15 кусков руды - вот все, что я могу предложить.
-	AI_Output (self,other,"VLK_585_Aleph_SCHUPPEN_15_05_02"); //15 кусков?! Я ничего не знаю ни о каком ключе!
+	AI_Output (other,self,"VLK_585_Aleph_SCHUPPEN_15_15_01"); //15 РєСѓСЃРєРѕРІ СЂСѓРґС‹ - РІРѕС‚ РІСЃРµ, С‡С‚Рѕ СЏ РјРѕРіСѓ РїСЂРµРґР»РѕР¶РёС‚СЊ.
+	AI_Output (self,other,"VLK_585_Aleph_SCHUPPEN_15_05_02"); //15 РєСѓСЃРєРѕРІ?! РЇ РЅРёС‡РµРіРѕ РЅРµ Р·РЅР°СЋ РЅРё Рѕ РєР°РєРѕРј РєР»СЋС‡Рµ!
 	VLK_585_Aleph_SCHUPPEN.permanent = 0;
 };	
 func void VLK_585_Aleph_SCHUPPEN_Back ()
@@ -289,7 +289,7 @@ func void VLK_585_Aleph_SCHUPPEN_Back ()
 	VLK_585_Aleph_SCHUPPEN.permanent = 1;
 };
 
-// WENN DER SPIELER ALEPH BEI BRANDICK ANGESCHWДRZT HAT
+// WENN DER SPIELER ALEPH BEI BRANDICK ANGESCHWР”RZT HAT
 instance  VLK_585_Aleph_DIRTY (C_INFO)
 {
 	npc				= VLK_585_Aleph;
@@ -297,7 +297,7 @@ instance  VLK_585_Aleph_DIRTY (C_INFO)
 	information		= VLK_585_Aleph_DIRTY_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Тебе что-нибудь известно о ключе от сундуков на складе?"; 
+	description		= "РўРµР±Рµ С‡С‚Рѕ-РЅРёР±СѓРґСЊ РёР·РІРµСЃС‚РЅРѕ Рѕ РєР»СЋС‡Рµ РѕС‚ СЃСѓРЅРґСѓРєРѕРІ РЅР° СЃРєР»Р°РґРµ?"; 
 };
 
 FUNC int  VLK_585_Aleph_DIRTY_Condition()
@@ -311,22 +311,22 @@ FUNC int  VLK_585_Aleph_DIRTY_Condition()
 
 FUNC void  VLK_585_Aleph_DIRTY_Info()
 {
-	AI_Output (other,self,"VLK_585_Aleph_DIRTY_Info_15_01"); //Тебе что-нибудь известно о том, где можно найти ключ от сундуков на складе?
-	AI_Output (self,other,"VLK_585_Aleph_DIRTY_Info_05_02"); //Ну, это зависит...
-	AI_Output (other,self,"VLK_585_Aleph_DIRTY_Info_15_03"); //От того, сколько я смогу заплатить?
-	AI_Output (self,other,"VLK_585_Aleph_DIRTY_Info_05_04"); //Ты схватываешь все на лету. Я хочу 100 кусков руды.
+	AI_Output (other,self,"VLK_585_Aleph_DIRTY_Info_15_01"); //РўРµР±Рµ С‡С‚Рѕ-РЅРёР±СѓРґСЊ РёР·РІРµСЃС‚РЅРѕ Рѕ С‚РѕРј, РіРґРµ РјРѕР¶РЅРѕ РЅР°Р№С‚Рё РєР»СЋС‡ РѕС‚ СЃСѓРЅРґСѓРєРѕРІ РЅР° СЃРєР»Р°РґРµ?
+	AI_Output (self,other,"VLK_585_Aleph_DIRTY_Info_05_02"); //РќСѓ, СЌС‚Рѕ Р·Р°РІРёСЃРёС‚...
+	AI_Output (other,self,"VLK_585_Aleph_DIRTY_Info_15_03"); //РћС‚ С‚РѕРіРѕ, СЃРєРѕР»СЊРєРѕ СЏ СЃРјРѕРіСѓ Р·Р°РїР»Р°С‚РёС‚СЊ?
+	AI_Output (self,other,"VLK_585_Aleph_DIRTY_Info_05_04"); //РўС‹ СЃС…РІР°С‚С‹РІР°РµС€СЊ РІСЃРµ РЅР° Р»РµС‚Сѓ. РЇ С…РѕС‡Сѓ 100 РєСѓСЃРєРѕРІ СЂСѓРґС‹.
 	
 	Info_ClearChoices ( VLK_585_Aleph_DIRTY );
 	
-	Info_AddChoice ( VLK_585_Aleph_DIRTY,"(заплатить 100 кусков руды)",VLK_585_Aleph_DIRTY_100 );
-	Info_AddChoice ( VLK_585_Aleph_DIRTY,"(не платить)",VLK_585_Aleph_DIRTY_NO );
+	Info_AddChoice ( VLK_585_Aleph_DIRTY,"(Р·Р°РїР»Р°С‚РёС‚СЊ 100 РєСѓСЃРєРѕРІ СЂСѓРґС‹)",VLK_585_Aleph_DIRTY_100 );
+	Info_AddChoice ( VLK_585_Aleph_DIRTY,"(РЅРµ РїР»Р°С‚РёС‚СЊ)",VLK_585_Aleph_DIRTY_NO );
 };  
 func void VLK_585_Aleph_DIRTY_100()
 {
 	if Npc_HasItems (hero,ItMinugget)>=100
 	{ 
-		AI_Output (other,self,"VLK_585_Aleph_DIRTY_100_Info_15_01"); //Ладно, вымогатель. Вот твои 100 кусков.
-		AI_Output (self,other,"VLK_585_Aleph_DIRTY_100_Info_05_02"); //Вот это дело, приятель! Держи ключ!
+		AI_Output (other,self,"VLK_585_Aleph_DIRTY_100_Info_15_01"); //Р›Р°РґРЅРѕ, РІС‹РјРѕРіР°С‚РµР»СЊ. Р’РѕС‚ С‚РІРѕРё 100 РєСѓСЃРєРѕРІ.
+		AI_Output (self,other,"VLK_585_Aleph_DIRTY_100_Info_05_02"); //Р’РѕС‚ СЌС‚Рѕ РґРµР»Рѕ, РїСЂРёСЏС‚РµР»СЊ! Р”РµСЂР¶Рё РєР»СЋС‡!
 		B_GiveInvItems	(hero, self, ItMinugget,100);
 		CreateInvItem		(self, ItKe_OM_03);
 		B_GiveInvItems      (self, other, ItKe_OM_03, 1);
@@ -336,13 +336,13 @@ func void VLK_585_Aleph_DIRTY_100()
 	}
 	else
 	{
-		AI_Output (self,other,"VLK_585_Aleph_DIRTY_100_Info_05_03"); //Я что, похож на идиота? 100 кусков, и ни самородком меньше!
+		AI_Output (self,other,"VLK_585_Aleph_DIRTY_100_Info_05_03"); //РЇ С‡С‚Рѕ, РїРѕС…РѕР¶ РЅР° РёРґРёРѕС‚Р°? 100 РєСѓСЃРєРѕРІ, Рё РЅРё СЃР°РјРѕСЂРѕРґРєРѕРј РјРµРЅСЊС€Рµ!
 		VLK_585_Aleph_DIRTY.permanent = 1;
 	};
 };
 func void VLK_585_Aleph_DIRTY_NO()
 {
-	AI_Output (other,self,"VLK_585_Aleph_DIRTY_NO_Info_15_01"); //Я не собираюсь выкидывать 100 кусков на ветер!
-	AI_Output (self,other,"VLK_585_Aleph_DIRTY_NO_Info_05_02"); //Ну, это же ты меня о чем-то просил...
+	AI_Output (other,self,"VLK_585_Aleph_DIRTY_NO_Info_15_01"); //РЇ РЅРµ СЃРѕР±РёСЂР°СЋСЃСЊ РІС‹РєРёРґС‹РІР°С‚СЊ 100 РєСѓСЃРєРѕРІ РЅР° РІРµС‚РµСЂ!
+	AI_Output (self,other,"VLK_585_Aleph_DIRTY_NO_Info_05_02"); //РќСѓ, СЌС‚Рѕ Р¶Рµ С‚С‹ РјРµРЅСЏ Рѕ С‡РµРј-С‚Рѕ РїСЂРѕСЃРёР»...
 	VLK_585_Aleph_DIRTY.permanent = 0;	
 };

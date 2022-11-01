@@ -1,8 +1,8 @@
 // Der Spieler wird von Xardas losgeschickt, um URIZIEL aufzuladen.
 func void B_Story_LoadSword ()
 {
-	//-------- Tagebucheintrдge --------
-	B_LogEntry			(CH5_Uriziel,"Ксардас создал магическую формулу. Теперь мне нужен по-настоящему большой источник магической энергии и маг, который будет мне помогать. К счастью, в колонии есть некая общность, обладающая такой энергией, и эта общность в долгу передо мной…");
+	//-------- TagebucheintrРґge --------
+	B_LogEntry			(CH5_Uriziel,"РљСЃР°СЂРґР°СЃ СЃРѕР·РґР°Р» РјР°РіРёС‡РµСЃРєСѓСЋ С„РѕСЂРјСѓР»Сѓ. РўРµРїРµСЂСЊ РјРЅРµ РЅСѓР¶РµРЅ РїРѕ-РЅР°СЃС‚РѕСЏС‰РµРјСѓ Р±РѕР»СЊС€РѕР№ РёСЃС‚РѕС‡РЅРёРє РјР°РіРёС‡РµСЃРєРѕР№ СЌРЅРµСЂРіРёРё Рё РјР°Рі, РєРѕС‚РѕСЂС‹Р№ Р±СѓРґРµС‚ РјРЅРµ РїРѕРјРѕРіР°С‚СЊ. Рљ СЃС‡Р°СЃС‚СЊСЋ, РІ РєРѕР»РѕРЅРёРё РµСЃС‚СЊ РЅРµРєР°СЏ РѕР±С‰РЅРѕСЃС‚СЊ, РѕР±Р»Р°РґР°СЋС‰Р°СЏ С‚Р°РєРѕР№ СЌРЅРµСЂРіРёРµР№, Рё СЌС‚Р° РѕР±С‰РЅРѕСЃС‚СЊ РІ РґРѕР»РіСѓ РїРµСЂРµРґРѕ РјРЅРѕР№вЂ¦");
 
 	//-------- Erfahrung --------
 	B_GiveXP			(XP_ReturnedFromSunkenTower);
@@ -10,7 +10,7 @@ func void B_Story_LoadSword ()
 	//-------- magische Formel, um URIZIEL zu laden --------
 	CreateInvItem		(hero,	Scroll4Milten);
 	
-	//-------- TA fьr Milten, dass er auf SC wartet --------
+	//-------- TA fСЊr Milten, dass er auf SC wartet --------
 	VAR C_NPC Milten; Milten = Hlp_GetNpc(PC_Mage);
 	Npc_ExchangeRoutine (Milten, "LSWait"); 						
 

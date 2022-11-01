@@ -2,7 +2,7 @@ instance BAU_902_Pock (Npc_Default)
 {
 	//-------- primary data --------
 	
-	name		=	"Пок";
+	name		=	"РџРѕРє";
 	npctype		=	npctype_main;
 	guild 		=	GIL_BAU;    
 	level 		=	4;

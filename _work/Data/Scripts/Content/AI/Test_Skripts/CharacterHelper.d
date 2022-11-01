@@ -111,21 +111,21 @@ func void B_SetHeroWeapon()
         CreateInvItem(hero,ItRw_Bow_Small_04);
  	    
 	        
-        PrintScreen	("nötig STR 11  DEX 16", -1,-1,"font_old_20_white.tga",10);
+        PrintScreen	("nÑ†tig STR 11  DEX 16", -1,-1,"font_old_20_white.tga",10);
     }   
     else if hero.level <= 10
     {
         CreateInvItem(hero,ItMw_1H_Sword_Long_01);
         CreateInvItem(hero,ItRw_Bow_Long_02);
  	    
-        PrintScreen	("nötig STR 17  DEX 22", -1,-1,"font_old_20_white.tga",10);
+        PrintScreen	("nÑ†tig STR 17  DEX 22", -1,-1,"font_old_20_white.tga",10);
     }
     else if hero.level <= 15
     {
         CreateInvItem(hero,ItMw_1H_Sword_Broad_01);
         CreateInvItem(hero,ItRw_Bow_Long_05);
    	    
-        PrintScreen	("nötig: STR 26  DEX 28", -1,-1,"font_old_20_white.tga",10);
+        PrintScreen	("nÑ†tig: STR 26  DEX 28", -1,-1,"font_old_20_white.tga",10);
     }
     else if hero.level <= 20
     {
@@ -133,7 +133,7 @@ func void B_SetHeroWeapon()
 		CreateInvItem(hero,ItMw_1H_Sword_Broad_04);
         CreateInvItem(hero,ItRw_Bow_Long_08);
  	    
-        PrintScreen	("nötig STR 52  DEX 34", -1,-1,"font_old_20_white.tga",10);
+        PrintScreen	("nÑ†tig STR 52  DEX 34", -1,-1,"font_old_20_white.tga",10);
     }
     else if hero.level <= 25
     {
@@ -141,7 +141,7 @@ func void B_SetHeroWeapon()
 		CreateInvItem(hero,ItMw_1H_Sword_Broad_04);
         CreateInvItem(hero,ItRw_Bow_War_02);
   	    
-        PrintScreen	("nötig STR 62  DEX 40", -1,-1,"font_old_20_white.tga",10);
+        PrintScreen	("nÑ†tig STR 62  DEX 40", -1,-1,"font_old_20_white.tga",10);
     }
     else if hero.level <= 30
     {
@@ -149,7 +149,7 @@ func void B_SetHeroWeapon()
 		CreateInvItem(hero,ItMw_1H_Sword_Broad_04);
         CreateInvItem(hero,ItRw_Bow_War_05);
         
-        PrintScreen	("nötig STR 78  DEX 50", -1,-1,"font_old_20_white.tga",10);
+        PrintScreen	("nÑ†tig STR 78  DEX 50", -1,-1,"font_old_20_white.tga",10);
     };
     AI_EquipBestMeleeWeapon(hero);
     AI_EquipBestRangedWeapon(hero);
@@ -213,7 +213,7 @@ func VOID CH_Level_Info()
 
 	Info_ClearChoices	(CH_Level);
 	
-	Info_AddChoice		(CH_Level, "ÍÀÇÀÄ"			 , CH_Level_BACK);
+	Info_AddChoice		(CH_Level, "ÐÐÐ—ÐÐ”"			 , CH_Level_BACK);
 	Info_AddChoice		(CH_Level, "Level  1 -  5" , CH_Level1);
 	Info_AddChoice		(CH_Level, "Level  6 - 10" , CH_Level6);
 	Info_AddChoice		(CH_Level, "Level 11 - 15" , CH_Level11);
@@ -226,7 +226,7 @@ func void CH_Level26()
 {
 	Info_ClearChoices	(CH_Level);
 	
-	Info_AddChoice		(CH_Level, "ÍÀÇÀÄ"		, CH_Level_BACK);
+	Info_AddChoice		(CH_Level, "ÐÐÐ—ÐÐ”"		, CH_Level_BACK);
 	Info_AddChoice		(CH_Level, "Level 26" , CH_Level_26);
 	Info_AddChoice		(CH_Level, "Level 27" , CH_Level_27);
 	Info_AddChoice		(CH_Level, "Level 28" , CH_Level_28);
@@ -238,7 +238,7 @@ func void CH_Level21()
 {
 	Info_ClearChoices	(CH_Level);
 	
-	Info_AddChoice		(CH_Level, "ÍÀÇÀÄ"		, CH_Level_BACK);
+	Info_AddChoice		(CH_Level, "ÐÐÐ—ÐÐ”"		, CH_Level_BACK);
 	Info_AddChoice		(CH_Level, "Level 21" , CH_Level_21);
 	Info_AddChoice		(CH_Level, "Level 22" , CH_Level_22);
 	Info_AddChoice		(CH_Level, "Level 23" , CH_Level_23);
@@ -250,7 +250,7 @@ func void CH_Level16()
 {
 	Info_ClearChoices	(CH_Level);
 	
-	Info_AddChoice		(CH_Level, "ÍÀÇÀÄ"		, CH_Level_BACK);
+	Info_AddChoice		(CH_Level, "ÐÐÐ—ÐÐ”"		, CH_Level_BACK);
 	Info_AddChoice		(CH_Level, "Level 16" , CH_Level_16);
 	Info_AddChoice		(CH_Level, "Level 17" , CH_Level_17);
 	Info_AddChoice		(CH_Level, "Level 18" , CH_Level_18);
@@ -262,7 +262,7 @@ func void CH_Level11()
 {
 	Info_ClearChoices	(CH_Level);
 
-	Info_AddChoice		(CH_Level, "ÍÀÇÀÄ"		, CH_Level_BACK);
+	Info_AddChoice		(CH_Level, "ÐÐÐ—ÐÐ”"		, CH_Level_BACK);
 	Info_AddChoice		(CH_Level, "Level 11" , CH_Level_11);
 	Info_AddChoice		(CH_Level, "Level 12" , CH_Level_12);
 	Info_AddChoice		(CH_Level, "Level 13" , CH_Level_13);
@@ -274,7 +274,7 @@ func void CH_Level6()
 {
 	Info_ClearChoices	(CH_Level);
 
-	Info_AddChoice		(CH_Level, "ÍÀÇÀÄ"	    , CH_Level_BACK);
+	Info_AddChoice		(CH_Level, "ÐÐÐ—ÐÐ”"	    , CH_Level_BACK);
 	Info_AddChoice		(CH_Level, "Level  6" , CH_Level_6);
 	Info_AddChoice		(CH_Level, "Level  7" , CH_Level_7);
 	Info_AddChoice		(CH_Level, "Level  8" , CH_Level_8);
@@ -286,7 +286,7 @@ func void CH_Level1()
 {
 	Info_ClearChoices	(CH_Level);
 
-	Info_AddChoice		(CH_Level, "ÍÀÇÀÄ"		, CH_Level_BACK);
+	Info_AddChoice		(CH_Level, "ÐÐÐ—ÐÐ”"		, CH_Level_BACK);
 	Info_AddChoice		(CH_Level, "Level 1" 	, CH_Level_1);
 	Info_AddChoice		(CH_Level, "Level 2" 	, CH_Level_2);
 	Info_AddChoice		(CH_Level, "Level 3" 	, CH_Level_3);
@@ -686,7 +686,7 @@ func VOID CH_Guild_Info()
 {
     Info_ClearChoices	(CH_Guild);
 	
-	Info_AddChoice		(CH_Guild, "ÍÀÇÀÄ"			 , CH_Guild_BACK);
+	Info_AddChoice		(CH_Guild, "ÐÐÐ—ÐÐ”"			 , CH_Guild_BACK);
 	if ((hero.level >= 6) && (hero.level <= 10))
 	{
 	    Info_AddChoice		(CH_Guild, "Schatten"      , CH_Shadow);
@@ -705,7 +705,7 @@ func VOID CH_Guild_Info()
 	};
 	if ((hero.level >= 10))
 	{    
-	    Info_AddChoice		(CH_Guild, "Söldner"       , CH_Mercenary);
+	    Info_AddChoice		(CH_Guild, "SÑ†ldner"       , CH_Mercenary);
 	};
 	if ((hero.level >= 16))
 	{    
@@ -852,7 +852,7 @@ func void CH_Shadow()
 //#####################################################################
 //##
 //##
-//##					ATTRIBUTE: Stärke
+//##					ATTRIBUTE: StÐ´rke
 //##
 //##
 //#####################################################################
@@ -863,7 +863,7 @@ INSTANCE CH_Training_STR (C_INFO)
 	information		= CH_Training_STR_Info;
 	important		= 0;
 	permanent		= 1;
-	description		= "ATTRIBUTE: Stärke"; 
+	description		= "ATTRIBUTE: StÐ´rke"; 
 };
 
 FUNC INT CH_Training_STR_Condition()
@@ -878,9 +878,9 @@ func void CH_Training_STR_Info()
 {
 	Info_ClearChoices	(CH_Training_STR);
 	
-	Info_AddChoice		(CH_Training_STR, "ZURÜCK"	     							, CH_Training_STR_BACK);
-	Info_AddChoice		(CH_Training_STR, "Stärke (alle restlichen Lernpunkte)"		, CH_Strength_all);
-	Info_AddChoice		(CH_Training_STR, "Stärke (für beste Nahkampfwaffe)"		, CH_Strength_Weapon);
+	Info_AddChoice		(CH_Training_STR, "ZURÐ¬CK"	     							, CH_Training_STR_BACK);
+	Info_AddChoice		(CH_Training_STR, "StÐ´rke (alle restlichen Lernpunkte)"		, CH_Strength_all);
+	Info_AddChoice		(CH_Training_STR, "StÐ´rke (fÑŒr beste Nahkampfwaffe)"		, CH_Strength_Weapon);
 	if	(hero.LP >= 20*LPCOST_ATTRIBUTE_STRENGTH)
 	{ 
 	    Info_AddChoice	(CH_Training_STR, B_BuildLearnString(NAME_LearnStrength_20,20*LPCOST_ATTRIBUTE_STRENGTH,0)	, CH_Strength20);
@@ -950,7 +950,7 @@ func void CH_Strength_Weapon ()
 	}
 	else
 	{
-        PrintScreen	("nötige STR bereits vorhanden", -1,-1,"font_old_20_white.tga",10);
+        PrintScreen	("nÑ†tige STR bereits vorhanden", -1,-1,"font_old_20_white.tga",10);
 	};
 };
 
@@ -995,9 +995,9 @@ FUNC INT CH_Training_DEX_Condition()
 func void CH_Training_DEX_Info ()
 {
 	Info_ClearChoices	(CH_Training_DEX);
-	Info_AddChoice		(CH_Training_DEX, "ZURÜCK"	     							, CH_Training_DEX_BACK);
+	Info_AddChoice		(CH_Training_DEX, "ZURÐ¬CK"	     							, CH_Training_DEX_BACK);
 	Info_AddChoice		(CH_Training_DEX, "Geschick (alle restlichen Lernpunkte)" 	, CH_Dexterity_all);
-	Info_AddChoice		(CH_Training_DEX, "Geschick (für beste Fernkampfwaffe)"		, CH_Dexterity_Weapon);
+	Info_AddChoice		(CH_Training_DEX, "Geschick (fÑŒr beste Fernkampfwaffe)"		, CH_Dexterity_Weapon);
 	if	(hero.LP >= 20)
 	{ 
 	    Info_AddChoice	(CH_Training_DEX, B_BuildLearnString(NAME_LearnDexterity_20,20*LPCOST_ATTRIBUTE_DEXTERITY,0)	, CH_Dexterity20);
@@ -1067,7 +1067,7 @@ func void CH_Dexterity_Weapon ()
 	}
 	else
 	{
-        PrintScreen	("nötige DEX bereits vorhanden", -1,-1,"font_old_20_white.tga",10);
+        PrintScreen	("nÑ†tige DEX bereits vorhanden", -1,-1,"font_old_20_white.tga",10);
 	};
 };
 
@@ -1112,7 +1112,7 @@ FUNC INT CH_Training_Mana_Condition()
 func void CH_Training_Mana_Info()
 {
 	Info_ClearChoices	(CH_Training_Mana);
-	Info_AddChoice		(CH_Training_Mana, "ÍÀÇÀÄ"	     					, CH_Training_Mana_BACK);
+	Info_AddChoice		(CH_Training_Mana, "ÐÐÐ—ÐÐ”"	     					, CH_Training_Mana_BACK);
     Info_AddChoice		(CH_Training_Mana, "Mana (restliche Lernpunkte)" 	, CH_Mana_all);
 	if	(hero.LP >= 20)
 	{ 
@@ -1210,7 +1210,7 @@ func void CH_Training_Combat_Info()
 {
 	Info_ClearChoices	(CH_Training_Combat);
 	
-	Info_AddChoice		(CH_Training_Combat, "ÍÀÇÀÄ"	     				, CH_Training_Combat_BACK);
+	Info_AddChoice		(CH_Training_Combat, "ÐÐÐ—ÐÐ”"	     				, CH_Training_Combat_BACK);
 
 	if	(hero.LP >= LPCOST_TALENT_CROSSBOW_2)
 	&&	(Npc_GetTalentSkill(hero, NPC_TALENT_CROSSBOW) == 1) 
@@ -1349,7 +1349,7 @@ FUNC INT CH_Training_Magic_Condition()
 func void CH_Training_Magic_Info()
 {
 	Info_ClearChoices	(CH_Training_Magic);
-	Info_AddChoice		(CH_Training_Magic, "ÍÀÇÀÄ"	     					, CH_Training_Magic_BACK);
+	Info_AddChoice		(CH_Training_Magic, "ÐÐÐ—ÐÐ”"	     					, CH_Training_Magic_BACK);
 
 	if	(hero.level >= 24)
 	&&	(hero.lp >= LPCOST_TALENT_MAGE_6)
@@ -1513,7 +1513,7 @@ func void CH_Training_Thievery_Info()
 	Info_ClearChoices	(CH_Training_Thievery);
 	
 	
-	Info_AddChoice		(CH_Training_Thievery, "ÍÀÇÀÄ"	     						, CH_Training_Thievery_BACK);
+	Info_AddChoice		(CH_Training_Thievery, "ÐÐÐ—ÐÐ”"	     						, CH_Training_Thievery_BACK);
 
     if	(hero.LP >= LPCOST_TALENT_ACROBAT)
 	&&	(Npc_GetTalentSkill(hero, NPC_TALENT_ACROBAT) == 0) 

@@ -37,7 +37,7 @@ INSTANCE Info_grd_7_EinerVonEuchWerden (C_INFO) // E1
 	condition	= Info_grd_7_EinerVonEuchWerden_Condition;
 	information	= Info_grd_7_EinerVonEuchWerden_Info;
 	permanent	= 1;
-	description = "Что нужно сделать, чтобы стать одним из стражников Гомеза?";
+	description = "Р§С‚Рѕ РЅСѓР¶РЅРѕ СЃРґРµР»Р°С‚СЊ, С‡С‚РѕР±С‹ СЃС‚Р°С‚СЊ РѕРґРЅРёРј РёР· СЃС‚СЂР°Р¶РЅРёРєРѕРІ Р“РѕРјРµР·Р°?";
 };                       
 
 FUNC INT Info_grd_7_EinerVonEuchWerden_Condition()
@@ -53,10 +53,10 @@ FUNC INT Info_grd_7_EinerVonEuchWerden_Condition()
 
 FUNC VOID Info_grd_7_EinerVonEuchWerden_Info()
 {
-	AI_Output(other,self,"Info_grd_7_EinerVonEuchWerden_15_00"); //Что нужно сделать, чтобы стать одним из стражников Гомеза?
-	AI_Output(self,other,"Info_grd_7_EinerVonEuchWerden_07_01"); //Тебе?! Ты шутишь. Ты что, думаешь, можно просто прийти сюда с важным видом и сразу оказаться наверху, так?
-	AI_Output(self,other,"Info_grd_7_EinerVonEuchWerden_07_02"); //Стражниками становятся лучшие из лучших.
-	AI_Output(self,other,"Info_grd_7_EinerVonEuchWerden_07_03"); //Ты будешь пробиваться наверх так же, как и все остальные, и для начала докажешь свою верность Лагерю, став одним из Призраков.
+	AI_Output(other,self,"Info_grd_7_EinerVonEuchWerden_15_00"); //Р§С‚Рѕ РЅСѓР¶РЅРѕ СЃРґРµР»Р°С‚СЊ, С‡С‚РѕР±С‹ СЃС‚Р°С‚СЊ РѕРґРЅРёРј РёР· СЃС‚СЂР°Р¶РЅРёРєРѕРІ Р“РѕРјРµР·Р°?
+	AI_Output(self,other,"Info_grd_7_EinerVonEuchWerden_07_01"); //РўРµР±Рµ?! РўС‹ С€СѓС‚РёС€СЊ. РўС‹ С‡С‚Рѕ, РґСѓРјР°РµС€СЊ, РјРѕР¶РЅРѕ РїСЂРѕСЃС‚Рѕ РїСЂРёР№С‚Рё СЃСЋРґР° СЃ РІР°Р¶РЅС‹Рј РІРёРґРѕРј Рё СЃСЂР°Р·Сѓ РѕРєР°Р·Р°С‚СЊСЃСЏ РЅР°РІРµСЂС…Сѓ, С‚Р°Рє?
+	AI_Output(self,other,"Info_grd_7_EinerVonEuchWerden_07_02"); //РЎС‚СЂР°Р¶РЅРёРєР°РјРё СЃС‚Р°РЅРѕРІСЏС‚СЃСЏ Р»СѓС‡С€РёРµ РёР· Р»СѓС‡С€РёС….
+	AI_Output(self,other,"Info_grd_7_EinerVonEuchWerden_07_03"); //РўС‹ Р±СѓРґРµС€СЊ РїСЂРѕР±РёРІР°С‚СЊСЃСЏ РЅР°РІРµСЂС… С‚Р°Рє Р¶Рµ, РєР°Рє Рё РІСЃРµ РѕСЃС‚Р°Р»СЊРЅС‹Рµ, Рё РґР»СЏ РЅР°С‡Р°Р»Р° РґРѕРєР°Р¶РµС€СЊ СЃРІРѕСЋ РІРµСЂРЅРѕСЃС‚СЊ Р›Р°РіРµСЂСЋ, СЃС‚Р°РІ РѕРґРЅРёРј РёР· РџСЂРёР·СЂР°РєРѕРІ.
 };
 
 // *************************************************************************
@@ -69,7 +69,7 @@ INSTANCE Info_grd_7_WichtigePersonen(C_INFO)
 	condition	= Info_grd_7_WichtigePersonen_Condition;
 	information	= Info_grd_7_WichtigePersonen_Info;
 	permanent	= 1;
-	description = "Кто здесь командует?";
+	description = "РљС‚Рѕ Р·РґРµСЃСЊ РєРѕРјР°РЅРґСѓРµС‚?";
 };                       
 
 FUNC INT Info_grd_7_WichtigePersonen_Condition()
@@ -81,9 +81,9 @@ FUNC INT Info_grd_7_WichtigePersonen_Condition()
 };
 FUNC VOID Info_grd_7_WichtigePersonen_Info()
 {
-	AI_Output(other,self,"Info_grd_7_WichtigePersonen_15_00"); //Кто здесь командует?
-	AI_Output(self,other,"Info_grd_7_WichtigePersonen_07_01"); //Торус следит за тем, что происходит в Лагере. Диего - его помощник.
-	AI_Output(self,other,"Info_grd_7_WichtigePersonen_07_02"); //Если ты хочешь чего-то добиться здесь, говорить нужно с ними.
+	AI_Output(other,self,"Info_grd_7_WichtigePersonen_15_00"); //РљС‚Рѕ Р·РґРµСЃСЊ РєРѕРјР°РЅРґСѓРµС‚?
+	AI_Output(self,other,"Info_grd_7_WichtigePersonen_07_01"); //РўРѕСЂСѓСЃ СЃР»РµРґРёС‚ Р·Р° С‚РµРј, С‡С‚Рѕ РїСЂРѕРёСЃС…РѕРґРёС‚ РІ Р›Р°РіРµСЂРµ. Р”РёРµРіРѕ - РµРіРѕ РїРѕРјРѕС‰РЅРёРє.
+	AI_Output(self,other,"Info_grd_7_WichtigePersonen_07_02"); //Р•СЃР»Рё С‚С‹ С…РѕС‡РµС€СЊ С‡РµРіРѕ-С‚Рѕ РґРѕР±РёС‚СЊСЃСЏ Р·РґРµСЃСЊ, РіРѕРІРѕСЂРёС‚СЊ РЅСѓР¶РЅРѕ СЃ РЅРёРјРё.
 	var C_NPC Diego;		Diego 	= Hlp_GetNpc(PC_Thief);
 	Diego.aivar[AIV_FINDABLE] = TRUE;
 	var C_NPC Thorus;		Thorus 	= Hlp_GetNpc(GRD_200_Thorus);
@@ -100,7 +100,7 @@ INSTANCE Info_grd_7_DasLager(C_INFO)
 	condition	= Info_grd_7_DasLager_Condition;
 	information	= Info_grd_7_DasLager_Info;
 	permanent	= 1;
-	description = "И все люди здесь работают на Гомеза?";
+	description = "Р РІСЃРµ Р»СЋРґРё Р·РґРµСЃСЊ СЂР°Р±РѕС‚Р°СЋС‚ РЅР° Р“РѕРјРµР·Р°?";
 };                       
 
 FUNC INT Info_grd_7_DasLager_Condition()
@@ -112,14 +112,14 @@ FUNC INT Info_grd_7_DasLager_Condition()
 };
 FUNC VOID Info_grd_7_DasLager_Info()
 {
-	AI_Output(other,self,"Info_grd_7_DasLager_15_00"); //Все люди здесь работают на Гомеза?
-	AI_Output(self,other,"Info_grd_7_DasLager_07_01"); //Не-а. Большинство из них - простые рудокопы.
-	AI_Output(self,other,"Info_grd_7_DasLager_07_02"); //С Гомезом только стража и Призраки.
+	AI_Output(other,self,"Info_grd_7_DasLager_15_00"); //Р’СЃРµ Р»СЋРґРё Р·РґРµСЃСЊ СЂР°Р±РѕС‚Р°СЋС‚ РЅР° Р“РѕРјРµР·Р°?
+	AI_Output(self,other,"Info_grd_7_DasLager_07_01"); //РќРµ-Р°. Р‘РѕР»СЊС€РёРЅСЃС‚РІРѕ РёР· РЅРёС… - РїСЂРѕСЃС‚С‹Рµ СЂСѓРґРѕРєРѕРїС‹.
+	AI_Output(self,other,"Info_grd_7_DasLager_07_02"); //РЎ Р“РѕРјРµР·РѕРј С‚РѕР»СЊРєРѕ СЃС‚СЂР°Р¶Р° Рё РџСЂРёР·СЂР°РєРё.
 	Info_ClearChoices(Info_grd_7_DasLager);
-	Info_AddChoice(Info_grd_7_DasLager,"НАЗАД", Info_grd_7_DasLager_Zurueck);
-	Info_AddChoice(Info_grd_7_DasLager,"Что делают стражники?", Info_grd_7_DasLager_Gardisten);
-	Info_AddChoice(Info_grd_7_DasLager,"Чем занимаются Призраки?", Info_grd_7_DasLager_Schatten);
-	Info_AddChoice(Info_grd_7_DasLager,"Что делают рудокопы?", Info_grd_7_DasLager_Buddler);
+	Info_AddChoice(Info_grd_7_DasLager,"РќРђР—РђР”", Info_grd_7_DasLager_Zurueck);
+	Info_AddChoice(Info_grd_7_DasLager,"Р§С‚Рѕ РґРµР»Р°СЋС‚ СЃС‚СЂР°Р¶РЅРёРєРё?", Info_grd_7_DasLager_Gardisten);
+	Info_AddChoice(Info_grd_7_DasLager,"Р§РµРј Р·Р°РЅРёРјР°СЋС‚СЃСЏ РџСЂРёР·СЂР°РєРё?", Info_grd_7_DasLager_Schatten);
+	Info_AddChoice(Info_grd_7_DasLager,"Р§С‚Рѕ РґРµР»Р°СЋС‚ СЂСѓРґРѕРєРѕРїС‹?", Info_grd_7_DasLager_Buddler);
 };
 
 FUNC VOID Info_grd_7_DasLager_ZURUECK()
@@ -129,27 +129,27 @@ FUNC VOID Info_grd_7_DasLager_ZURUECK()
 
 FUNC VOID Info_grd_7_DasLager_Gardisten()
 {
-	AI_Output(other,self,"Info_grd_7_DasLager_WasIstAerger_15_00"); //Что делают стражники?
-	AI_Output(self,other,"Info_grd_7_DasLager_WasIstAerger_07_01"); //Мы охраняем Лагерь и защищаем рудокопов.
-	AI_Output(self,other,"Info_grd_7_DasLager_WasIstAerger_07_02"); //Деньги нам платит Гомез, да и рудокопы отстегивают за свою защиту. Дело довольно прибыльное.
+	AI_Output(other,self,"Info_grd_7_DasLager_WasIstAerger_15_00"); //Р§С‚Рѕ РґРµР»Р°СЋС‚ СЃС‚СЂР°Р¶РЅРёРєРё?
+	AI_Output(self,other,"Info_grd_7_DasLager_WasIstAerger_07_01"); //РњС‹ РѕС…СЂР°РЅСЏРµРј Р›Р°РіРµСЂСЊ Рё Р·Р°С‰РёС‰Р°РµРј СЂСѓРґРѕРєРѕРїРѕРІ.
+	AI_Output(self,other,"Info_grd_7_DasLager_WasIstAerger_07_02"); //Р”РµРЅСЊРіРё РЅР°Рј РїР»Р°С‚РёС‚ Р“РѕРјРµР·, РґР° Рё СЂСѓРґРѕРєРѕРїС‹ РѕС‚СЃС‚РµРіРёРІР°СЋС‚ Р·Р° СЃРІРѕСЋ Р·Р°С‰РёС‚Сѓ. Р”РµР»Рѕ РґРѕРІРѕР»СЊРЅРѕ РїСЂРёР±С‹Р»СЊРЅРѕРµ.
 };
 
 FUNC VOID Info_grd_7_DasLager_Schatten()
 {
-	AI_Output(other,self,"Info_grd_7_DasLager_Schatten_15_00"); //Чем занимаются Призраки?
-	AI_Output(self,other,"Info_grd_7_DasLager_Schatten_07_01"); //Призраки следят за тем, чтобы исполнялись приказы Гомеза.
-	AI_Output(self,other,"Info_grd_7_DasLager_Schatten_07_02"); //Большинство из них - простые подхалимы, мечтающие продвинуться по службе. Если ты хочешь чего-нибудь добиться здесь, это правильный путь.
-	AI_Output(self,other,"Info_grd_7_DasLager_Schatten_07_03"); //Прослужив достаточно долго, ты можешь стать одним из нас.
-	AI_Output(self,other,"Info_grd_7_DasLager_Schatten_07_04"); //Ну а если ты с Гомезом, ни один человек в этой колонии не посмеет тебя обидеть, малыш.
+	AI_Output(other,self,"Info_grd_7_DasLager_Schatten_15_00"); //Р§РµРј Р·Р°РЅРёРјР°СЋС‚СЃСЏ РџСЂРёР·СЂР°РєРё?
+	AI_Output(self,other,"Info_grd_7_DasLager_Schatten_07_01"); //РџСЂРёР·СЂР°РєРё СЃР»РµРґСЏС‚ Р·Р° С‚РµРј, С‡С‚РѕР±С‹ РёСЃРїРѕР»РЅСЏР»РёСЃСЊ РїСЂРёРєР°Р·С‹ Р“РѕРјРµР·Р°.
+	AI_Output(self,other,"Info_grd_7_DasLager_Schatten_07_02"); //Р‘РѕР»СЊС€РёРЅСЃС‚РІРѕ РёР· РЅРёС… - РїСЂРѕСЃС‚С‹Рµ РїРѕРґС…Р°Р»РёРјС‹, РјРµС‡С‚Р°СЋС‰РёРµ РїСЂРѕРґРІРёРЅСѓС‚СЊСЃСЏ РїРѕ СЃР»СѓР¶Р±Рµ. Р•СЃР»Рё С‚С‹ С…РѕС‡РµС€СЊ С‡РµРіРѕ-РЅРёР±СѓРґСЊ РґРѕР±РёС‚СЊСЃСЏ Р·РґРµСЃСЊ, СЌС‚Рѕ РїСЂР°РІРёР»СЊРЅС‹Р№ РїСѓС‚СЊ.
+	AI_Output(self,other,"Info_grd_7_DasLager_Schatten_07_03"); //РџСЂРѕСЃР»СѓР¶РёРІ РґРѕСЃС‚Р°С‚РѕС‡РЅРѕ РґРѕР»РіРѕ, С‚С‹ РјРѕР¶РµС€СЊ СЃС‚Р°С‚СЊ РѕРґРЅРёРј РёР· РЅР°СЃ.
+	AI_Output(self,other,"Info_grd_7_DasLager_Schatten_07_04"); //РќСѓ Р° РµСЃР»Рё С‚С‹ СЃ Р“РѕРјРµР·РѕРј, РЅРё РѕРґРёРЅ С‡РµР»РѕРІРµРє РІ СЌС‚РѕР№ РєРѕР»РѕРЅРёРё РЅРµ РїРѕСЃРјРµРµС‚ С‚РµР±СЏ РѕР±РёРґРµС‚СЊ, РјР°Р»С‹С€.
 };
 
 FUNC VOID Info_grd_7_DasLager_Buddler()
 {
-	AI_Output(other,self,"Info_grd_7_DasLager_Buddler_15_00"); //Что делают рудокопы?
-	AI_Output(self,other,"Info_grd_7_DasLager_Buddler_07_01"); //Хороший вопрос. Они даже из шахты-то, можно считать, не выходят.
-	AI_Output(self,other,"Info_grd_7_DasLager_Buddler_07_02"); //То есть, они выходят сюда потратить руду, когда просидят там достаточно долго.
-	AI_Output(self,other,"Info_grd_7_DasLager_Buddler_07_03"); //Но, промотав все, отправляются обратно. Этим занимается большинство людей в округе.
-	AI_Output(self,other,"Info_grd_7_DasLager_Buddler_07_04"); //Мне кажется, ты способен на большее, чем просто махать киркой. Поговори с Торусом, если ты еще не сделал этого.
+	AI_Output(other,self,"Info_grd_7_DasLager_Buddler_15_00"); //Р§С‚Рѕ РґРµР»Р°СЋС‚ СЂСѓРґРѕРєРѕРїС‹?
+	AI_Output(self,other,"Info_grd_7_DasLager_Buddler_07_01"); //РҐРѕСЂРѕС€РёР№ РІРѕРїСЂРѕСЃ. РћРЅРё РґР°Р¶Рµ РёР· С€Р°С…С‚С‹-С‚Рѕ, РјРѕР¶РЅРѕ СЃС‡РёС‚Р°С‚СЊ, РЅРµ РІС‹С…РѕРґСЏС‚.
+	AI_Output(self,other,"Info_grd_7_DasLager_Buddler_07_02"); //РўРѕ РµСЃС‚СЊ, РѕРЅРё РІС‹С…РѕРґСЏС‚ СЃСЋРґР° РїРѕС‚СЂР°С‚РёС‚СЊ СЂСѓРґСѓ, РєРѕРіРґР° РїСЂРѕСЃРёРґСЏС‚ С‚Р°Рј РґРѕСЃС‚Р°С‚РѕС‡РЅРѕ РґРѕР»РіРѕ.
+	AI_Output(self,other,"Info_grd_7_DasLager_Buddler_07_03"); //РќРѕ, РїСЂРѕРјРѕС‚Р°РІ РІСЃРµ, РѕС‚РїСЂР°РІР»СЏСЋС‚СЃСЏ РѕР±СЂР°С‚РЅРѕ. Р­С‚РёРј Р·Р°РЅРёРјР°РµС‚СЃСЏ Р±РѕР»СЊС€РёРЅСЃС‚РІРѕ Р»СЋРґРµР№ РІ РѕРєСЂСѓРіРµ.
+	AI_Output(self,other,"Info_grd_7_DasLager_Buddler_07_04"); //РњРЅРµ РєР°Р¶РµС‚СЃСЏ, С‚С‹ СЃРїРѕСЃРѕР±РµРЅ РЅР° Р±РѕР»СЊС€РµРµ, С‡РµРј РїСЂРѕСЃС‚Рѕ РјР°С…Р°С‚СЊ РєРёСЂРєРѕР№. РџРѕРіРѕРІРѕСЂРё СЃ РўРѕСЂСѓСЃРѕРј, РµСЃР»Рё С‚С‹ РµС‰Рµ РЅРµ СЃРґРµР»Р°Р» СЌС‚РѕРіРѕ.
 	VAR C_NPC Thorus; Thorus = Hlp_GetNpc(GRD_200_THORUS);
 	Thorus.aivar[AIV_FINDABLE]=TRUE;
 };
@@ -164,7 +164,7 @@ INSTANCE Info_grd_7_DieLage(C_INFO) // E1
 	condition	= Info_grd_7_DieLage_Condition;
 	information	= Info_grd_7_DieLage_Info;
 	permanent	= 1;
-	description = "Как дела?";
+	description = "РљР°Рє РґРµР»Р°?";
 };                       
 
 FUNC INT Info_grd_7_DieLage_Condition()
@@ -176,8 +176,8 @@ FUNC INT Info_grd_7_DieLage_Condition()
 };
 FUNC VOID Info_grd_7_DieLage_Info()
 {
-	AI_Output(other,self,"Info_grd_7_DieLage_15_00"); //Как дела?
-	AI_Output(self,other,"Info_grd_7_DieLage_07_01"); //Для тебя, ты имеешь в виду? Пока ты не решишь, в каком ты Лагере, никто не будет воспринимать тебя всерьез, малыш!
+	AI_Output(other,self,"Info_grd_7_DieLage_15_00"); //РљР°Рє РґРµР»Р°?
+	AI_Output(self,other,"Info_grd_7_DieLage_07_01"); //Р”Р»СЏ С‚РµР±СЏ, С‚С‹ РёРјРµРµС€СЊ РІ РІРёРґСѓ? РџРѕРєР° С‚С‹ РЅРµ СЂРµС€РёС€СЊ, РІ РєР°РєРѕРј С‚С‹ Р›Р°РіРµСЂРµ, РЅРёРєС‚Рѕ РЅРµ Р±СѓРґРµС‚ РІРѕСЃРїСЂРёРЅРёРјР°С‚СЊ С‚РµР±СЏ РІСЃРµСЂСЊРµР·, РјР°Р»С‹С€!
 };
 	
 // *************************************************************************

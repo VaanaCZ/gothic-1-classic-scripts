@@ -7,11 +7,11 @@
 //	Uhrzeit:	24h
 //
 //	Es passiert folgendes:
-//	1.	Nдhert sich der Spieler dem Durchgang, so wird er in diesen
+//	1.	NРґhert sich der Spieler dem Durchgang, so wird er in diesen
 //		Dialog gezwungen und einmal gewarnt
-//	2.	Nдhert sich der SC trotzdem weiter, so wird er ein ZWEITES Mal
+//	2.	NРґhert sich der SC trotzdem weiter, so wird er ein ZWEITES Mal
 //		gewarnt (aggressiver mit Waffe ziehen)
-//	3.	Nдhert er sich trotzdem wieder, wird er angegriffen
+//	3.	NРґhert er sich trotzdem wieder, wird er angegriffen
 //////////////////////////////////////////////////////////////////////////
 CONST STRING	Grd_212_CHECKPOINT		= "OCC_GATE_INSIDE";
 
@@ -43,9 +43,9 @@ FUNC VOID Info_Grd_212_FirstWarn_Info()
 {
 	PrintGlobals	(PD_MISSION);
 
-	AI_Output (self, hero,"Info_Grd_212_FirstWarn_Info_13_01"); //СТОЙ!
-	AI_Output (hero, self,"Info_Grd_212_FirstWarn_Info_15_02"); //Что такое?
-	AI_Output (self, hero,"Info_Grd_212_FirstWarn_Info_13_03"); //Ты не можешь зайти в замок без разрешения! Убирайся отсюда!
+	AI_Output (self, hero,"Info_Grd_212_FirstWarn_Info_13_01"); //РЎРўРћР™!
+	AI_Output (hero, self,"Info_Grd_212_FirstWarn_Info_15_02"); //Р§С‚Рѕ С‚Р°РєРѕРµ?
+	AI_Output (self, hero,"Info_Grd_212_FirstWarn_Info_13_03"); //РўС‹ РЅРµ РјРѕР¶РµС€СЊ Р·Р°Р№С‚Рё РІ Р·Р°РјРѕРє Р±РµР· СЂР°Р·СЂРµС€РµРЅРёСЏ! РЈР±РёСЂР°Р№СЃСЏ РѕС‚СЃСЋРґР°!
 
 	hero.aivar[AIV_LASTDISTTOWP] 		= Npc_GetDistToWP(hero,Grd_212_CHECKPOINT);
 	hero.aivar[AIV_GUARDPASSAGE_STATUS]	= AIV_GPS_FIRSTWARN;	
@@ -80,7 +80,7 @@ FUNC INT Info_Grd_212_LastWarn_Condition()
 
 func int Info_Grd_212_LastWarn_Info()
 {
-	AI_Output (self, hero,"Info_Grd_212_LastWarn_13_01"); 		//Ты что, оглох? Еще один шаг, и ты станешь кормом для червей!
+	AI_Output (self, hero,"Info_Grd_212_LastWarn_13_01"); 		//РўС‹ С‡С‚Рѕ, РѕРіР»РѕС…? Р•С‰Рµ РѕРґРёРЅ С€Р°Рі, Рё С‚С‹ СЃС‚Р°РЅРµС€СЊ РєРѕСЂРјРѕРј РґР»СЏ С‡РµСЂРІРµР№!
 
 	hero.aivar[AIV_LASTDISTTOWP] 		= Npc_GetDistToWP (hero,Grd_212_CHECKPOINT);
 	hero.aivar[AIV_GUARDPASSAGE_STATUS]	= AIV_GPS_LASTWARN;	
@@ -120,7 +120,7 @@ func int Info_Grd_212_Attack_Info()
 	hero.aivar[AIV_GUARDPASSAGE_STATUS]	= AIV_GPS_PUNISH;	
 	
 	B_FullStop			(self);	
-	AI_StopProcessInfos	(self);					//dem Spieler sofort wieder die Kontrolle zurьckgeben
+	AI_StopProcessInfos	(self);					//dem Spieler sofort wieder die Kontrolle zurСЊckgeben
 	B_IntruderAlert		(self,	other);
 	B_SetAttackReason	(self,	AIV_AR_INTRUDER);
 	Npc_SetTarget		(self,	hero);
@@ -162,7 +162,7 @@ INSTANCE Info_Grd_212_Abblitzen (C_INFO)
 	condition	= Info_Grd_212_Abblitzen_Condition;
 	information	= Info_Grd_212_Abblitzen_Info;
 	permanent	= 1;
-	description	= "Мне нужно попасть в замок!";
+	description	= "РњРЅРµ РЅСѓР¶РЅРѕ РїРѕРїР°СЃС‚СЊ РІ Р·Р°РјРѕРє!";
 };                       
 
 FUNC INT Info_Grd_212_Abblitzen_Condition()
@@ -175,11 +175,11 @@ FUNC INT Info_Grd_212_Abblitzen_Condition()
 
 FUNC VOID Info_Grd_212_Abblitzen_Info()
 {
-	AI_Output (other, self,"Info_Grd_212_Abblitzen_15_00"); //Мне нужно попасть в замок!
-	AI_Output (self, other,"Info_Grd_212_Abblitzen_13_01"); //Как интересно! А я хочу убраться из этой проклятой колонии!
-	AI_Output (self, other,"Info_Grd_212_Abblitzen_13_02"); //И уж во всяком случае у меня есть дела поважнее, чем следить, чтоб такие бездельники, как ты, не совали свой нос куда не следует.
-	AI_Output (other, self,"Info_Grd_212_Abblitzen_15_03"); //Ты можешь просто впустить меня...
-	AI_Output (self, other,"Info_Grd_212_Abblitzen_13_04"); //Нет, не могу! Только Торус может.
+	AI_Output (other, self,"Info_Grd_212_Abblitzen_15_00"); //РњРЅРµ РЅСѓР¶РЅРѕ РїРѕРїР°СЃС‚СЊ РІ Р·Р°РјРѕРє!
+	AI_Output (self, other,"Info_Grd_212_Abblitzen_13_01"); //РљР°Рє РёРЅС‚РµСЂРµСЃРЅРѕ! Рђ СЏ С…РѕС‡Сѓ СѓР±СЂР°С‚СЊСЃСЏ РёР· СЌС‚РѕР№ РїСЂРѕРєР»СЏС‚РѕР№ РєРѕР»РѕРЅРёРё!
+	AI_Output (self, other,"Info_Grd_212_Abblitzen_13_02"); //Р СѓР¶ РІРѕ РІСЃСЏРєРѕРј СЃР»СѓС‡Р°Рµ Сѓ РјРµРЅСЏ РµСЃС‚СЊ РґРµР»Р° РїРѕРІР°Р¶РЅРµРµ, С‡РµРј СЃР»РµРґРёС‚СЊ, С‡С‚РѕР± С‚Р°РєРёРµ Р±РµР·РґРµР»СЊРЅРёРєРё, РєР°Рє С‚С‹, РЅРµ СЃРѕРІР°Р»Рё СЃРІРѕР№ РЅРѕСЃ РєСѓРґР° РЅРµ СЃР»РµРґСѓРµС‚.
+	AI_Output (other, self,"Info_Grd_212_Abblitzen_15_03"); //РўС‹ РјРѕР¶РµС€СЊ РїСЂРѕСЃС‚Рѕ РІРїСѓСЃС‚РёС‚СЊ РјРµРЅСЏ...
+	AI_Output (self, other,"Info_Grd_212_Abblitzen_13_04"); //РќРµС‚, РЅРµ РјРѕРіСѓ! РўРѕР»СЊРєРѕ РўРѕСЂСѓСЃ РјРѕР¶РµС‚.
 	AI_StopProcessInfos	(self);
 };
 
@@ -207,9 +207,9 @@ FUNC INT Info_Grd_212_FirstIn_Condition()
 
 FUNC VOID Info_Grd_212_FirstIn_Info()
 {
-	AI_Output (self, other,"Info_Grd_212_FirstIn_13_00"); //СТОЙ!
-	AI_Output (other, self,"Info_Grd_212_FirstIn_15_01"); //Расслабься! Я поговорил с Торусом. Он мне разрешил.
-	AI_Output (self, other,"Info_Grd_212_FirstIn_13_02"); //Я запомнил твое лицо, парень! У тебя будут неприятности, и так легко от них ты не отделаешься.
+	AI_Output (self, other,"Info_Grd_212_FirstIn_13_00"); //РЎРўРћР™!
+	AI_Output (other, self,"Info_Grd_212_FirstIn_15_01"); //Р Р°СЃСЃР»Р°Р±СЊСЃСЏ! РЇ РїРѕРіРѕРІРѕСЂРёР» СЃ РўРѕСЂСѓСЃРѕРј. РћРЅ РјРЅРµ СЂР°Р·СЂРµС€РёР».
+	AI_Output (self, other,"Info_Grd_212_FirstIn_13_02"); //РЇ Р·Р°РїРѕРјРЅРёР» С‚РІРѕРµ Р»РёС†Рѕ, РїР°СЂРµРЅСЊ! РЈ С‚РµР±СЏ Р±СѓРґСѓС‚ РЅРµРїСЂРёСЏС‚РЅРѕСЃС‚Рё, Рё С‚Р°Рє Р»РµРіРєРѕ РѕС‚ РЅРёС… С‚С‹ РЅРµ РѕС‚РґРµР»Р°РµС€СЊСЃСЏ.
 	AI_StopProcessInfos	(self);
 };
 
@@ -224,7 +224,7 @@ INSTANCE Info_Grd_212_Passgate (C_INFO)
 	condition	= Info_Grd_212_Passgate_Condition;
 	information	= Info_Grd_212_Passgate_Info;
 	permanent	= 1;
-	description	= "Я все-таки могу войти?";
+	description	= "РЇ РІСЃРµ-С‚Р°РєРё РјРѕРіСѓ РІРѕР№С‚Рё?";
 };                       
 
 FUNC INT Info_Grd_212_Passgate_Condition()
@@ -237,7 +237,7 @@ FUNC INT Info_Grd_212_Passgate_Condition()
 
 FUNC VOID Info_Grd_212_Passgate_Info()
 {
-	AI_Output (other, self,"Info_Grd_212_Passgate_15_00"); //Я все-таки могу войти?
-	AI_Output (self, other,"Info_Grd_212_Passgate_13_01"); //Да, если перестанешь задавать глупые вопросы.
+	AI_Output (other, self,"Info_Grd_212_Passgate_15_00"); //РЇ РІСЃРµ-С‚Р°РєРё РјРѕРіСѓ РІРѕР№С‚Рё?
+	AI_Output (self, other,"Info_Grd_212_Passgate_13_01"); //Р”Р°, РµСЃР»Рё РїРµСЂРµСЃС‚Р°РЅРµС€СЊ Р·Р°РґР°РІР°С‚СЊ РіР»СѓРїС‹Рµ РІРѕРїСЂРѕСЃС‹.
 	AI_StopProcessInfos	(self);
 };

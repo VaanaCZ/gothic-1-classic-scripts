@@ -43,9 +43,9 @@ FUNC int  Org_818_Ratford_WrongWay_Condition()
 
 FUNC VOID  Org_818_Ratford_WrongWay_Info()
 {
-	AI_Output (self, other,"Org_818_Ratford_WrongWay_07_00"); //Эй, ты!
-	AI_Output (other, self,"Org_818_Ratford_WrongWay_15_01"); //Что тебе?
-	AI_Output (self, other,"Org_818_Ratford_WrongWay_07_02"); //Просто хочу предупредить тебя. Дальше начинаются наши охотничьи угодья.
+	AI_Output (self, other,"Org_818_Ratford_WrongWay_07_00"); //Р­Р№, С‚С‹!
+	AI_Output (other, self,"Org_818_Ratford_WrongWay_15_01"); //Р§С‚Рѕ С‚РµР±Рµ?
+	AI_Output (self, other,"Org_818_Ratford_WrongWay_07_02"); //РџСЂРѕСЃС‚Рѕ С…РѕС‡Сѓ РїСЂРµРґСѓРїСЂРµРґРёС‚СЊ С‚РµР±СЏ. Р”Р°Р»СЊС€Рµ РЅР°С‡РёРЅР°СЋС‚СЃСЏ РЅР°С€Рё РѕС…РѕС‚РЅРёС‡СЊРё СѓРіРѕРґСЊСЏ.
 };
 
 // **************************************************
@@ -59,7 +59,7 @@ instance  Org_818_Ratford_WhatGame (C_INFO)
 	condition	= Org_818_Ratford_WhatGame_Condition;
 	information	= Org_818_Ratford_WhatGame_Info;
 	permanent	= 0;
-	description = "А на кого вы охотитесь?";
+	description = "Рђ РЅР° РєРѕРіРѕ РІС‹ РѕС…РѕС‚РёС‚РµСЃСЊ?";
 };                       
 
 FUNC int  Org_818_Ratford_WhatGame_Condition()
@@ -69,14 +69,14 @@ FUNC int  Org_818_Ratford_WhatGame_Condition()
 
 FUNC VOID  Org_818_Ratford_WhatGame_Info()
 {
-	AI_Output (other, self,"Org_818_Ratford_WhatGame_15_00"); //А на кого вы охотитесь?
-	AI_Output (self, other,"Org_818_Ratford_WhatGame_07_01"); //В основном, на падальщиков. Много мяса - и не так уж сложно с ними справиться. Если, конечно, знаешь - как.
-	AI_Output (other, self,"Org_818_Ratford_WhatGame_15_02"); //В самом деле? И как же?
-	AI_Output (self, other,"Org_818_Ratford_WhatGame_07_03"); //Спроси у моего приятеля Дракса - он знает об этом больше, чем кто бы то ни было.
+	AI_Output (other, self,"Org_818_Ratford_WhatGame_15_00"); //Рђ РЅР° РєРѕРіРѕ РІС‹ РѕС…РѕС‚РёС‚РµСЃСЊ?
+	AI_Output (self, other,"Org_818_Ratford_WhatGame_07_01"); //Р’ РѕСЃРЅРѕРІРЅРѕРј, РЅР° РїР°РґР°Р»СЊС‰РёРєРѕРІ. РњРЅРѕРіРѕ РјСЏСЃР° - Рё РЅРµ С‚Р°Рє СѓР¶ СЃР»РѕР¶РЅРѕ СЃ РЅРёРјРё СЃРїСЂР°РІРёС‚СЊСЃСЏ. Р•СЃР»Рё, РєРѕРЅРµС‡РЅРѕ, Р·РЅР°РµС€СЊ - РєР°Рє.
+	AI_Output (other, self,"Org_818_Ratford_WhatGame_15_02"); //Р’ СЃР°РјРѕРј РґРµР»Рµ? Р РєР°Рє Р¶Рµ?
+	AI_Output (self, other,"Org_818_Ratford_WhatGame_07_03"); //РЎРїСЂРѕСЃРё Сѓ РјРѕРµРіРѕ РїСЂРёСЏС‚РµР»СЏ Р”СЂР°РєСЃР° - РѕРЅ Р·РЅР°РµС‚ РѕР± СЌС‚РѕРј Р±РѕР»СЊС€Рµ, С‡РµРј РєС‚Рѕ Р±С‹ С‚Рѕ РЅРё Р±С‹Р»Рѕ.
 };
 
 // **************************************************
-//					Warum gefдhrlich
+//					Warum gefРґhrlich
 // **************************************************
 
 instance  Org_818_Ratford_WhyDangerous (C_INFO)
@@ -86,7 +86,7 @@ instance  Org_818_Ratford_WhyDangerous (C_INFO)
 	condition	= Org_818_Ratford_WhyDangerous_Condition;
 	information	= Org_818_Ratford_WhyDangerous_Info;
 	permanent	= 0;
-	description = "Почему это место настолько опасно?";
+	description = "РџРѕС‡РµРјСѓ СЌС‚Рѕ РјРµСЃС‚Рѕ РЅР°СЃС‚РѕР»СЊРєРѕ РѕРїР°СЃРЅРѕ?";
 };                       
 
 FUNC int  Org_818_Ratford_WhyDangerous_Condition()
@@ -96,14 +96,14 @@ FUNC int  Org_818_Ratford_WhyDangerous_Condition()
 
 FUNC VOID  Org_818_Ratford_WhyDangerous_Info()
 {
-	AI_Output (other, self,"Org_818_Ratford_WhyDangerous_15_00"); //Почему это место настолько опасно?
-	AI_Output (self, other,"Org_818_Ratford_WhyDangerous_07_01"); //Ты новенький, да? Каждое место в колонии опасно... так или иначе.
-	AI_Output (self, other,"Org_818_Ratford_WhyDangerous_07_02"); //Безопасны лишь дороги между Лагерями - да и здесь можно набрести на волков, которые посчитают тебя легкой добычей.
-	AI_Output (self, other,"Org_818_Ratford_WhyDangerous_07_03"); //И ты действительно ею станешь, если не подберешь себе нормальное оружие и доспехи.
+	AI_Output (other, self,"Org_818_Ratford_WhyDangerous_15_00"); //РџРѕС‡РµРјСѓ СЌС‚Рѕ РјРµСЃС‚Рѕ РЅР°СЃС‚РѕР»СЊРєРѕ РѕРїР°СЃРЅРѕ?
+	AI_Output (self, other,"Org_818_Ratford_WhyDangerous_07_01"); //РўС‹ РЅРѕРІРµРЅСЊРєРёР№, РґР°? РљР°Р¶РґРѕРµ РјРµСЃС‚Рѕ РІ РєРѕР»РѕРЅРёРё РѕРїР°СЃРЅРѕ... С‚Р°Рє РёР»Рё РёРЅР°С‡Рµ.
+	AI_Output (self, other,"Org_818_Ratford_WhyDangerous_07_02"); //Р‘РµР·РѕРїР°СЃРЅС‹ Р»РёС€СЊ РґРѕСЂРѕРіРё РјРµР¶РґСѓ Р›Р°РіРµСЂСЏРјРё - РґР° Рё Р·РґРµСЃСЊ РјРѕР¶РЅРѕ РЅР°Р±СЂРµСЃС‚Рё РЅР° РІРѕР»РєРѕРІ, РєРѕС‚РѕСЂС‹Рµ РїРѕСЃС‡РёС‚Р°СЋС‚ С‚РµР±СЏ Р»РµРіРєРѕР№ РґРѕР±С‹С‡РµР№.
+	AI_Output (self, other,"Org_818_Ratford_WhyDangerous_07_03"); //Р С‚С‹ РґРµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ РµСЋ СЃС‚Р°РЅРµС€СЊ, РµСЃР»Рё РЅРµ РїРѕРґР±РµСЂРµС€СЊ СЃРµР±Рµ РЅРѕСЂРјР°Р»СЊРЅРѕРµ РѕСЂСѓР¶РёРµ Рё РґРѕСЃРїРµС…Рё.
 };
 
 // **************************************************
-//					Wo Ausrьstung
+//					Wo AusrСЊstung
 // **************************************************
 
 instance  Org_818_Ratford_WoEquipment (C_INFO)
@@ -113,7 +113,7 @@ instance  Org_818_Ratford_WoEquipment (C_INFO)
 	condition	= Org_818_Ratford_WoEquipment_Condition;
 	information	= Org_818_Ratford_WoEquipment_Info;
 	permanent	= 0;
-	description = "Где можно найти хорошее оружие?";
+	description = "Р“РґРµ РјРѕР¶РЅРѕ РЅР°Р№С‚Рё С…РѕСЂРѕС€РµРµ РѕСЂСѓР¶РёРµ?";
 };                       
 
 FUNC int  Org_818_Ratford_WoEquipment_Condition()
@@ -126,13 +126,13 @@ FUNC int  Org_818_Ratford_WoEquipment_Condition()
 
 FUNC VOID  Org_818_Ratford_WoEquipment_Info()
 {
-	AI_Output (other, self,"Org_818_Ratford_WoEquipment_15_00"); //Где можно найти хорошее оружие?
-	AI_Output (self, other,"Org_818_Ratford_WoEquipment_07_01"); //Ближайшее место - Старый Лагерь. Просто иди по тропинке - она приведет тебя туда.
-	AI_Output (self, other,"Org_818_Ratford_WoEquipment_07_02"); //Но в нашем Новом Лагере можно достать вещи дешевле - если, конечно, знаешь нужных людей.
-	AI_Output (self, other,"Org_818_Ratford_WoEquipment_07_03"); //Если окажешься в Старом Лагере, разыщи Мордрага. Он один из нас. Немного руды, и он продаст тебе все, что нужно.
+	AI_Output (other, self,"Org_818_Ratford_WoEquipment_15_00"); //Р“РґРµ РјРѕР¶РЅРѕ РЅР°Р№С‚Рё С…РѕСЂРѕС€РµРµ РѕСЂСѓР¶РёРµ?
+	AI_Output (self, other,"Org_818_Ratford_WoEquipment_07_01"); //Р‘Р»РёР¶Р°Р№С€РµРµ РјРµСЃС‚Рѕ - РЎС‚Р°СЂС‹Р№ Р›Р°РіРµСЂСЊ. РџСЂРѕСЃС‚Рѕ РёРґРё РїРѕ С‚СЂРѕРїРёРЅРєРµ - РѕРЅР° РїСЂРёРІРµРґРµС‚ С‚РµР±СЏ С‚СѓРґР°.
+	AI_Output (self, other,"Org_818_Ratford_WoEquipment_07_02"); //РќРѕ РІ РЅР°С€РµРј РќРѕРІРѕРј Р›Р°РіРµСЂРµ РјРѕР¶РЅРѕ РґРѕСЃС‚Р°С‚СЊ РІРµС‰Рё РґРµС€РµРІР»Рµ - РµСЃР»Рё, РєРѕРЅРµС‡РЅРѕ, Р·РЅР°РµС€СЊ РЅСѓР¶РЅС‹С… Р»СЋРґРµР№.
+	AI_Output (self, other,"Org_818_Ratford_WoEquipment_07_03"); //Р•СЃР»Рё РѕРєР°Р¶РµС€СЊСЃСЏ РІ РЎС‚Р°СЂРѕРј Р›Р°РіРµСЂРµ, СЂР°Р·С‹С‰Рё РњРѕСЂРґСЂР°РіР°. РћРЅ РѕРґРёРЅ РёР· РЅР°СЃ. РќРµРјРЅРѕРіРѕ СЂСѓРґС‹, Рё РѕРЅ РїСЂРѕРґР°СЃС‚ С‚РµР±Рµ РІСЃРµ, С‡С‚Рѕ РЅСѓР¶РЅРѕ.
 	
 	Log_CreateTopic	(GE_TraderOC, LOG_NOTE);
-	B_LogEntry		(GE_TraderOC,"Вор Мордраг в Старом Лагере продает различные товары по приемлемым ценам.");
+	B_LogEntry		(GE_TraderOC,"Р’РѕСЂ РњРѕСЂРґСЂР°Рі РІ РЎС‚Р°СЂРѕРј Р›Р°РіРµСЂРµ РїСЂРѕРґР°РµС‚ СЂР°Р·Р»РёС‡РЅС‹Рµ С‚РѕРІР°СЂС‹ РїРѕ РїСЂРёРµРјР»РµРјС‹Рј С†РµРЅР°Рј.");
 };
 
 // **************************************************
@@ -146,7 +146,7 @@ instance  Org_818_Ratford_MoreLocations (C_INFO)
 	condition	= Org_818_Ratford_MoreLocations_Condition;
 	information	= Org_818_Ratford_MoreLocations_Info;
 	permanent	= 0;
-	description = "Расскажи мне что-нибудь о колонии.";
+	description = "Р Р°СЃСЃРєР°Р¶Рё РјРЅРµ С‡С‚Рѕ-РЅРёР±СѓРґСЊ Рѕ РєРѕР»РѕРЅРёРё.";
 };                       
 
 FUNC int  Org_818_Ratford_MoreLocations_Condition()
@@ -159,12 +159,12 @@ FUNC int  Org_818_Ratford_MoreLocations_Condition()
 
 FUNC VOID  Org_818_Ratford_MoreLocations_Info()
 {
-	AI_Output (other, self,"Org_818_Ratford_MoreLocations_15_00"); //Расскажи мне что-нибудь о колонии.
-	AI_Output (self, other,"Org_818_Ratford_MoreLocations_07_01"); //Для того чтобы добраться от одного Лагеря до другого нужна карта - сэкономишь время и не будешь без толку плутать по дорогам.
-	AI_Output (self, other,"Org_818_Ratford_MoreLocations_07_02"); //Тупик может оказаться опасным ущельем, где обитают твари, которых лучше обходить стороной.
-	AI_Output (self, other,"Org_818_Ratford_MoreLocations_07_03"); //Не приближайся к старым развалинам. Их здесь много вокруг. Большинство из них - обломки укреплений времен первой войны с орками. Попадаются и брошенные оркские норы.
-	AI_Output (self, other,"Org_818_Ratford_MoreLocations_07_04"); //Среди развалин можно встретить орков - а иногда кое-кого и похуже. Я стараюсь не ходить туда, особенно ночью.
-	AI_Output (self, other,"Org_818_Ratford_MoreLocations_07_05"); //И еще один совет: не стоит заходить в лес!
+	AI_Output (other, self,"Org_818_Ratford_MoreLocations_15_00"); //Р Р°СЃСЃРєР°Р¶Рё РјРЅРµ С‡С‚Рѕ-РЅРёР±СѓРґСЊ Рѕ РєРѕР»РѕРЅРёРё.
+	AI_Output (self, other,"Org_818_Ratford_MoreLocations_07_01"); //Р”Р»СЏ С‚РѕРіРѕ С‡С‚РѕР±С‹ РґРѕР±СЂР°С‚СЊСЃСЏ РѕС‚ РѕРґРЅРѕРіРѕ Р›Р°РіРµСЂСЏ РґРѕ РґСЂСѓРіРѕРіРѕ РЅСѓР¶РЅР° РєР°СЂС‚Р° - СЃСЌРєРѕРЅРѕРјРёС€СЊ РІСЂРµРјСЏ Рё РЅРµ Р±СѓРґРµС€СЊ Р±РµР· С‚РѕР»РєСѓ РїР»СѓС‚Р°С‚СЊ РїРѕ РґРѕСЂРѕРіР°Рј.
+	AI_Output (self, other,"Org_818_Ratford_MoreLocations_07_02"); //РўСѓРїРёРє РјРѕР¶РµС‚ РѕРєР°Р·Р°С‚СЊСЃСЏ РѕРїР°СЃРЅС‹Рј СѓС‰РµР»СЊРµРј, РіРґРµ РѕР±РёС‚Р°СЋС‚ С‚РІР°СЂРё, РєРѕС‚РѕСЂС‹С… Р»СѓС‡С€Рµ РѕР±С…РѕРґРёС‚СЊ СЃС‚РѕСЂРѕРЅРѕР№.
+	AI_Output (self, other,"Org_818_Ratford_MoreLocations_07_03"); //РќРµ РїСЂРёР±Р»РёР¶Р°Р№СЃСЏ Рє СЃС‚Р°СЂС‹Рј СЂР°Р·РІР°Р»РёРЅР°Рј. РС… Р·РґРµСЃСЊ РјРЅРѕРіРѕ РІРѕРєСЂСѓРі. Р‘РѕР»СЊС€РёРЅСЃС‚РІРѕ РёР· РЅРёС… - РѕР±Р»РѕРјРєРё СѓРєСЂРµРїР»РµРЅРёР№ РІСЂРµРјРµРЅ РїРµСЂРІРѕР№ РІРѕР№РЅС‹ СЃ РѕСЂРєР°РјРё. РџРѕРїР°РґР°СЋС‚СЃСЏ Рё Р±СЂРѕС€РµРЅРЅС‹Рµ РѕСЂРєСЃРєРёРµ РЅРѕСЂС‹.
+	AI_Output (self, other,"Org_818_Ratford_MoreLocations_07_04"); //РЎСЂРµРґРё СЂР°Р·РІР°Р»РёРЅ РјРѕР¶РЅРѕ РІСЃС‚СЂРµС‚РёС‚СЊ РѕСЂРєРѕРІ - Р° РёРЅРѕРіРґР° РєРѕРµ-РєРѕРіРѕ Рё РїРѕС…СѓР¶Рµ. РЇ СЃС‚Р°СЂР°СЋСЃСЊ РЅРµ С…РѕРґРёС‚СЊ С‚СѓРґР°, РѕСЃРѕР±РµРЅРЅРѕ РЅРѕС‡СЊСЋ.
+	AI_Output (self, other,"Org_818_Ratford_MoreLocations_07_05"); //Р РµС‰Рµ РѕРґРёРЅ СЃРѕРІРµС‚: РЅРµ СЃС‚РѕРёС‚ Р·Р°С…РѕРґРёС‚СЊ РІ Р»РµСЃ!
 };
 
 // **************************************************
@@ -178,7 +178,7 @@ instance Org_818_Ratford_WoKarte (C_INFO)
 	condition	= Org_818_Ratford_WoKarte_Condition;
 	information	= Org_818_Ratford_WoKarte_Info;
 	permanent	= 0;
-	description = "Где я могу раздобыть карту?";
+	description = "Р“РґРµ СЏ РјРѕРіСѓ СЂР°Р·РґРѕР±С‹С‚СЊ РєР°СЂС‚Сѓ?";
 };                       
 
 FUNC int Org_818_Ratford_WoKarte_Condition()
@@ -191,19 +191,19 @@ FUNC int Org_818_Ratford_WoKarte_Condition()
 
 FUNC void Org_818_Ratford_WoKarte_Info()
 {
-	AI_Output (other, self,"Org_818_Ratford_WoKarte_15_00"); //Где я могу раздобыть карту?
-	AI_Output (self, other,"Org_818_Ratford_WoKarte_07_01"); //Расспроси людей в Старом Лагере. Где-то там должен жить картограф.
-	AI_Output (self, other,"Org_818_Ratford_WoKarte_07_02"); //Может, тебе даже удастся стянуть у него одну из карт. Если получится, прихвати одну для меня, ладно?
+	AI_Output (other, self,"Org_818_Ratford_WoKarte_15_00"); //Р“РґРµ СЏ РјРѕРіСѓ СЂР°Р·РґРѕР±С‹С‚СЊ РєР°СЂС‚Сѓ?
+	AI_Output (self, other,"Org_818_Ratford_WoKarte_07_01"); //Р Р°СЃСЃРїСЂРѕСЃРё Р»СЋРґРµР№ РІ РЎС‚Р°СЂРѕРј Р›Р°РіРµСЂРµ. Р“РґРµ-С‚Рѕ С‚Р°Рј РґРѕР»Р¶РµРЅ Р¶РёС‚СЊ РєР°СЂС‚РѕРіСЂР°С„.
+	AI_Output (self, other,"Org_818_Ratford_WoKarte_07_02"); //РњРѕР¶РµС‚, С‚РµР±Рµ РґР°Р¶Рµ СѓРґР°СЃС‚СЃСЏ СЃС‚СЏРЅСѓС‚СЊ Сѓ РЅРµРіРѕ РѕРґРЅСѓ РёР· РєР°СЂС‚. Р•СЃР»Рё РїРѕР»СѓС‡РёС‚СЃСЏ, РїСЂРёС…РІР°С‚Рё РѕРґРЅСѓ РґР»СЏ РјРµРЅСЏ, Р»Р°РґРЅРѕ?
 	
 	Info_ClearChoices(Org_818_Ratford_WoKarte);
-	Info_AddChoice   (Org_818_Ratford_WoKarte,"Я бы взял столько, сколько смог унести.",Org_818_Ratford_WoKarte_Stehlen);
-	Info_AddChoice	 (Org_818_Ratford_WoKarte,"Зачем? Эти карты - разве он не продает их?",Org_818_Ratford_WoKarte_Kaufen);
+	Info_AddChoice   (Org_818_Ratford_WoKarte,"РЇ Р±С‹ РІР·СЏР» СЃС‚РѕР»СЊРєРѕ, СЃРєРѕР»СЊРєРѕ СЃРјРѕРі СѓРЅРµСЃС‚Рё.",Org_818_Ratford_WoKarte_Stehlen);
+	Info_AddChoice	 (Org_818_Ratford_WoKarte,"Р—Р°С‡РµРј? Р­С‚Рё РєР°СЂС‚С‹ - СЂР°Р·РІРµ РѕРЅ РЅРµ РїСЂРѕРґР°РµС‚ РёС…?",Org_818_Ratford_WoKarte_Kaufen);
 };
 
 func void Org_818_Ratford_WoKarte_Stehlen()
 {
-	AI_Output (other, self,"Org_818_Ratford_WoKarte_Stehlen_15_00"); //Если предоставится возможность взять их, не заплатив, то я наберу столько, сколько смогу унести.
-	AI_Output (self, other,"Org_818_Ratford_WoKarte_Stehlen_07_01"); //А ты ничего. Тебе стоит подумать о том, чтобы присоединиться к Новому Лагерю. Если вдруг окажешься там, найди Ларса. Уверен, он подыщет тебе работу.
+	AI_Output (other, self,"Org_818_Ratford_WoKarte_Stehlen_15_00"); //Р•СЃР»Рё РїСЂРµРґРѕСЃС‚Р°РІРёС‚СЃСЏ РІРѕР·РјРѕР¶РЅРѕСЃС‚СЊ РІР·СЏС‚СЊ РёС…, РЅРµ Р·Р°РїР»Р°С‚РёРІ, С‚Рѕ СЏ РЅР°Р±РµСЂСѓ СЃС‚РѕР»СЊРєРѕ, СЃРєРѕР»СЊРєРѕ СЃРјРѕРіСѓ СѓРЅРµСЃС‚Рё.
+	AI_Output (self, other,"Org_818_Ratford_WoKarte_Stehlen_07_01"); //Рђ С‚С‹ РЅРёС‡РµРіРѕ. РўРµР±Рµ СЃС‚РѕРёС‚ РїРѕРґСѓРјР°С‚СЊ Рѕ С‚РѕРј, С‡С‚РѕР±С‹ РїСЂРёСЃРѕРµРґРёРЅРёС‚СЊСЃСЏ Рє РќРѕРІРѕРјСѓ Р›Р°РіРµСЂСЋ. Р•СЃР»Рё РІРґСЂСѓРі РѕРєР°Р¶РµС€СЊСЃСЏ С‚Р°Рј, РЅР°Р№РґРё Р›Р°СЂСЃР°. РЈРІРµСЂРµРЅ, РѕРЅ РїРѕРґС‹С‰РµС‚ С‚РµР±Рµ СЂР°Р±РѕС‚Сѓ.
 	
 	VAR C_NPC Lares; Lares = Hlp_GetNpc(ORG_801_LARES);
 	Lares.aivar[AIV_FINDABLE]=TRUE;
@@ -213,8 +213,8 @@ func void Org_818_Ratford_WoKarte_Stehlen()
 
 func void Org_818_Ratford_WoKarte_Kaufen()
 {
-	AI_Output (other, self,"Org_818_Ratford_WoKarte_Kaufen_15_00"); //Зачем? Эти карты - разве он не продает их? 
-	AI_Output (self, other,"Org_818_Ratford_WoKarte_Kaufen_07_01"); //Ну, если у тебя есть чем заплатить...
+	AI_Output (other, self,"Org_818_Ratford_WoKarte_Kaufen_15_00"); //Р—Р°С‡РµРј? Р­С‚Рё РєР°СЂС‚С‹ - СЂР°Р·РІРµ РѕРЅ РЅРµ РїСЂРѕРґР°РµС‚ РёС…? 
+	AI_Output (self, other,"Org_818_Ratford_WoKarte_Kaufen_07_01"); //РќСѓ, РµСЃР»Рё Сѓ С‚РµР±СЏ РµСЃС‚СЊ С‡РµРј Р·Р°РїР»Р°С‚РёС‚СЊ...
 	Info_ClearChoices(Org_818_Ratford_WoKarte);
 };
 
@@ -229,7 +229,7 @@ instance  Org_818_Ratford_Thanks (C_INFO)
 	condition	= Org_818_Ratford_Thanks_Condition;
 	information	= Org_818_Ratford_Thanks_Info;
 	permanent	= 0;
-	description = "Я благодарю тебя за помощь.";
+	description = "РЇ Р±Р»Р°РіРѕРґР°СЂСЋ С‚РµР±СЏ Р·Р° РїРѕРјРѕС‰СЊ.";
 };                       
 
 FUNC int  Org_818_Ratford_Thanks_Condition()
@@ -239,10 +239,10 @@ FUNC int  Org_818_Ratford_Thanks_Condition()
 
 FUNC VOID  Org_818_Ratford_Thanks_Info()
 {
-	AI_Output (other, self,"Org_818_Ratford_Thanks_15_00"); //Благодарю за помощь.
-	AI_Output (self, other,"Org_818_Ratford_Thanks_07_01"); //Не думай, что все будут такими же дружелюбными, парень.
-	AI_Output (self, other,"Org_818_Ratford_Thanks_07_02"); //Карманы у новичков обычно пусты, но кое-кто мог бы убить тебя даже ради простой кирки.
-	AI_Output (other, self,"Org_818_Ratford_Thanks_15_04"); //Я буду иметь это в виду.
+	AI_Output (other, self,"Org_818_Ratford_Thanks_15_00"); //Р‘Р»Р°РіРѕРґР°СЂСЋ Р·Р° РїРѕРјРѕС‰СЊ.
+	AI_Output (self, other,"Org_818_Ratford_Thanks_07_01"); //РќРµ РґСѓРјР°Р№, С‡С‚Рѕ РІСЃРµ Р±СѓРґСѓС‚ С‚Р°РєРёРјРё Р¶Рµ РґСЂСѓР¶РµР»СЋР±РЅС‹РјРё, РїР°СЂРµРЅСЊ.
+	AI_Output (self, other,"Org_818_Ratford_Thanks_07_02"); //РљР°СЂРјР°РЅС‹ Сѓ РЅРѕРІРёС‡РєРѕРІ РѕР±С‹С‡РЅРѕ РїСѓСЃС‚С‹, РЅРѕ РєРѕРµ-РєС‚Рѕ РјРѕРі Р±С‹ СѓР±РёС‚СЊ С‚РµР±СЏ РґР°Р¶Рµ СЂР°РґРё РїСЂРѕСЃС‚РѕР№ РєРёСЂРєРё.
+	AI_Output (other, self,"Org_818_Ratford_Thanks_15_04"); //РЇ Р±СѓРґСѓ РёРјРµС‚СЊ СЌС‚Рѕ РІ РІРёРґСѓ.
 };
 
 

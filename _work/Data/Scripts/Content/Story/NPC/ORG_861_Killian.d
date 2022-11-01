@@ -2,7 +2,7 @@ instance ORG_861_Killian (Npc_Default)
 {
 	//-------- primary data --------
 	
-	name =					"Крутильщик болотника";
+	name =					"РљСЂСѓС‚РёР»СЊС‰РёРє Р±РѕР»РѕС‚РЅРёРєР°";
 	Npctype =				Npctype_Main;
 	guild =					GIL_ORG;      
 	level =					8;

@@ -1,7 +1,7 @@
 instance STT_325_Omid (Npc_Default)
 {
 	//-------- primary data --------
-	name 		=		"ŒÏË‰";
+	name 		=		"–û–º–∏–¥";
 	npctype 	=		NPCTYPE_AMBIENT;
 	guild 		=		GIL_VLK;
 	level 		=		3;

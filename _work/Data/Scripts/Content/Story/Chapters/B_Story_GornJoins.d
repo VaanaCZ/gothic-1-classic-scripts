@@ -1,6 +1,6 @@
 func void B_Story_GornJoins()
 {
-	//-------- Missionsgegenstдnde --------
+	//-------- MissionsgegenstРґnde --------
 	CreateInvItem		(hero, ItKe_Freemine);
 	
 	//-------- Monster platziern --------
@@ -11,14 +11,14 @@ func void B_Story_GornJoins()
 	Wld_InsertNpc		(Razor,	"OW_PATH_3001_MOVE4");
 	//Wld_InsertNpc		(Razor,	"OW_PATH_3001_MOVE4");
 
-	//-------- Tagesablдufe дndern --------
+	//-------- TagesablРґufe Рґndern --------
 	var C_NPC gorn;	gorn = Hlp_GetNpc(PC_Fighter);	Npc_ExchangeRoutine(gorn,	"FollowToFMC");	
 	
 	//-------- Erfahrung --------
 	B_GiveXP			(XP_GornJoins);
 
-	//-------- Tagebucheintrдge --------
-	B_LogEntry			(CH4_UluMulu,"Горн и я должны отбить свободную шахту, проведя операцию. То, что друг Ур-Шака содержится как раз там, можно счесть за благосклонность судьбы."); 
+	//-------- TagebucheintrРґge --------
+	B_LogEntry			(CH4_UluMulu,"Р“РѕСЂРЅ Рё СЏ РґРѕР»Р¶РЅС‹ РѕС‚Р±РёС‚СЊ СЃРІРѕР±РѕРґРЅСѓСЋ С€Р°С…С‚Сѓ, РїСЂРѕРІРµРґСЏ РѕРїРµСЂР°С†РёСЋ. РўРѕ, С‡С‚Рѕ РґСЂСѓРі РЈСЂ-РЁР°РєР° СЃРѕРґРµСЂР¶РёС‚СЃСЏ РєР°Рє СЂР°Р· С‚Р°Рј, РјРѕР¶РЅРѕ СЃС‡РµСЃС‚СЊ Р·Р° Р±Р»Р°РіРѕСЃРєР»РѕРЅРЅРѕСЃС‚СЊ СЃСѓРґСЊР±С‹."); 
 	
 	//-------- globale Variable setzen --------
 	gorn.aivar[AIV_PARTYMEMBER] = TRUE;

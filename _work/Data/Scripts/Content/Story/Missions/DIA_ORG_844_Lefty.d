@@ -33,7 +33,7 @@ instance DIA_Lefty_FirstAtNight (C_INFO)
 	condition	= DIA_Lefty_FirstAtNight_Condition;
 	information	= DIA_Lefty_FirstAtNight_Info;
 	permanent	= 0;
-	description = "Чем ты занимаешься?";
+	description = "Р§РµРј С‚С‹ Р·Р°РЅРёРјР°РµС€СЊСЃСЏ?";
 };                       
 
 FUNC int DIA_Lefty_FirstAtNight_Condition()
@@ -47,10 +47,10 @@ FUNC int DIA_Lefty_FirstAtNight_Condition()
 
 FUNC VOID DIA_Lefty_FirstAtNight_Info()
 {
-	AI_Output (other, self,"DIA_Aidan_Hello_15_00"); //Чем ты занимаешься?
-	AI_Output (self, other,"DIA_846_Hello_07_01"); //Я работаю на Лорда.
-	AI_Output (other, self,"DIA_Ricelord_Arbeit_15_00"); //А у тебя есть для меня работа?
-	AI_Output (self, other,"DIA_Shrike_GetLost_07_01"); //Поговорим позже.
+	AI_Output (other, self,"DIA_Aidan_Hello_15_00"); //Р§РµРј С‚С‹ Р·Р°РЅРёРјР°РµС€СЊСЃСЏ?
+	AI_Output (self, other,"DIA_846_Hello_07_01"); //РЇ СЂР°Р±РѕС‚Р°СЋ РЅР° Р›РѕСЂРґР°.
+	AI_Output (other, self,"DIA_Ricelord_Arbeit_15_00"); //Рђ Сѓ С‚РµР±СЏ РµСЃС‚СЊ РґР»СЏ РјРµРЅСЏ СЂР°Р±РѕС‚Р°?
+	AI_Output (self, other,"DIA_Shrike_GetLost_07_01"); //РџРѕРіРѕРІРѕСЂРёРј РїРѕР·Р¶Рµ.
 	AI_StopProcessInfos	(self);
 };
 
@@ -79,38 +79,38 @@ FUNC int DIA_Lefty_First_Condition()
 
 FUNC VOID DIA_Lefty_First_Info()
 {
-	AI_Output (self, other,"DIA_Lefty_First_07_00"); //Эй! Новенький? Мы ищем человека, чтобы он отнес воду крестьянам на рисовые поля. 
-	AI_Output (self, other,"DIA_Lefty_First_07_01"); //Тебе сейчас нужно обзаводиться новыми друзьями. Что скажешь? 
+	AI_Output (self, other,"DIA_Lefty_First_07_00"); //Р­Р№! РќРѕРІРµРЅСЊРєРёР№? РњС‹ РёС‰РµРј С‡РµР»РѕРІРµРєР°, С‡С‚РѕР±С‹ РѕРЅ РѕС‚РЅРµСЃ РІРѕРґСѓ РєСЂРµСЃС‚СЊСЏРЅР°Рј РЅР° СЂРёСЃРѕРІС‹Рµ РїРѕР»СЏ. 
+	AI_Output (self, other,"DIA_Lefty_First_07_01"); //РўРµР±Рµ СЃРµР№С‡Р°СЃ РЅСѓР¶РЅРѕ РѕР±Р·Р°РІРѕРґРёС‚СЊСЃСЏ РЅРѕРІС‹РјРё РґСЂСѓР·СЊСЏРјРё. Р§С‚Рѕ СЃРєР°Р¶РµС€СЊ? 
 	
 	Log_CreateTopic		(CH1_CarryWater,	LOG_MISSION);
 	Log_SetTopicStatus	(CH1_CarryWater,	LOG_RUNNING);
-	B_LogEntry			(CH1_CarryWater,"Вор из Нового Лагеря по имени Лефти хочет, чтобы я отнес воду крестьянам на рисовые поля.");
+	B_LogEntry			(CH1_CarryWater,"Р’РѕСЂ РёР· РќРѕРІРѕРіРѕ Р›Р°РіРµСЂСЏ РїРѕ РёРјРµРЅРё Р›РµС„С‚Рё С…РѕС‡РµС‚, С‡С‚РѕР±С‹ СЏ РѕС‚РЅРµСЃ РІРѕРґСѓ РєСЂРµСЃС‚СЊСЏРЅР°Рј РЅР° СЂРёСЃРѕРІС‹Рµ РїРѕР»СЏ.");
 	
 	Info_ClearChoices	(DIA_Lefty_First );
-	Info_AddChoice		(DIA_Lefty_First,"В другой раз.",DIA_Lefty_First_Later);
-	Info_AddChoice		(DIA_Lefty_First,"Сам тащи воду своим крестьянам!",DIA_Lefty_First_Never);
-	Info_AddChoice		(DIA_Lefty_First,"Буду рад помочь.",DIA_Lefty_First_Yes);
+	Info_AddChoice		(DIA_Lefty_First,"Р’ РґСЂСѓРіРѕР№ СЂР°Р·.",DIA_Lefty_First_Later);
+	Info_AddChoice		(DIA_Lefty_First,"РЎР°Рј С‚Р°С‰Рё РІРѕРґСѓ СЃРІРѕРёРј РєСЂРµСЃС‚СЊСЏРЅР°Рј!",DIA_Lefty_First_Never);
+	Info_AddChoice		(DIA_Lefty_First,"Р‘СѓРґСѓ СЂР°Рґ РїРѕРјРѕС‡СЊ.",DIA_Lefty_First_Yes);
 };
 
 func void DIA_Lefty_First_Yes()
 {
-	AI_Output (other, self,"DIA_Lefty_First_Yes_15_00"); //Буду рад помочь.
-	AI_Output (self, other,"DIA_Lefty_First_Yes_07_01"); //Отлично! Отправляйся к Лорду. Он даст тебе воду и расскажет все, что нужно. 
+	AI_Output (other, self,"DIA_Lefty_First_Yes_15_00"); //Р‘СѓРґСѓ СЂР°Рґ РїРѕРјРѕС‡СЊ.
+	AI_Output (self, other,"DIA_Lefty_First_Yes_07_01"); //РћС‚Р»РёС‡РЅРѕ! РћС‚РїСЂР°РІР»СЏР№СЃСЏ Рє Р›РѕСЂРґСѓ. РћРЅ РґР°СЃС‚ С‚РµР±Рµ РІРѕРґСѓ Рё СЂР°СЃСЃРєР°Р¶РµС‚ РІСЃРµ, С‡С‚Рѕ РЅСѓР¶РЅРѕ. 
 	Lefty_WorkDay = B_SetDayTolerance();
 	Lefty_Mission = LOG_RUNNING;
 	An_Bauern_verteilt = 0;
-	B_LogEntry			(CH1_CarryWater,"Может, это и глупая задача, но я согласился, потому что именно так и заводят знакомства. Мне нужно сначала забрать воду у так называемого Лорда.");
+	B_LogEntry			(CH1_CarryWater,"РњРѕР¶РµС‚, СЌС‚Рѕ Рё РіР»СѓРїР°СЏ Р·Р°РґР°С‡Р°, РЅРѕ СЏ СЃРѕРіР»Р°СЃРёР»СЃСЏ, РїРѕС‚РѕРјСѓ С‡С‚Рѕ РёРјРµРЅРЅРѕ С‚Р°Рє Рё Р·Р°РІРѕРґСЏС‚ Р·РЅР°РєРѕРјСЃС‚РІР°. РњРЅРµ РЅСѓР¶РЅРѕ СЃРЅР°С‡Р°Р»Р° Р·Р°Р±СЂР°С‚СЊ РІРѕРґСѓ Сѓ С‚Р°Рє РЅР°Р·С‹РІР°РµРјРѕРіРѕ Р›РѕСЂРґР°.");
 
 	Info_ClearChoices	(DIA_Lefty_First);
 };
 
 func void DIA_Lefty_First_Never()
 {
-	AI_Output (other, self,"DIA_Lefty_First_Never_15_00"); //Сам тащи воду своим крестьянам!
-	AI_Output (self, other,"DIA_Lefty_First_Never_07_01"); //Хамить друзьям - это плохо. Я научу тебя хорошим манерам!
+	AI_Output (other, self,"DIA_Lefty_First_Never_15_00"); //РЎР°Рј С‚Р°С‰Рё РІРѕРґСѓ СЃРІРѕРёРј РєСЂРµСЃС‚СЊСЏРЅР°Рј!
+	AI_Output (self, other,"DIA_Lefty_First_Never_07_01"); //РҐР°РјРёС‚СЊ РґСЂСѓР·СЊСЏРј - СЌС‚Рѕ РїР»РѕС…Рѕ. РЇ РЅР°СѓС‡Сѓ С‚РµР±СЏ С…РѕСЂРѕС€РёРј РјР°РЅРµСЂР°Рј!
 	Lefty_WorkDay = B_SetDayTolerance();
 	Lefty_Mission = LOG_FAILED;
-	B_LogEntry			(CH1_CarryWater,"Лефти очень не понравилось то, что я отверг его предложение. А я-то думал, что это в Старом Лагере жить тяжело.");
+	B_LogEntry			(CH1_CarryWater,"Р›РµС„С‚Рё РѕС‡РµРЅСЊ РЅРµ РїРѕРЅСЂР°РІРёР»РѕСЃСЊ С‚Рѕ, С‡С‚Рѕ СЏ РѕС‚РІРµСЂРі РµРіРѕ РїСЂРµРґР»РѕР¶РµРЅРёРµ. Рђ СЏ-С‚Рѕ РґСѓРјР°Р», С‡С‚Рѕ СЌС‚Рѕ РІ РЎС‚Р°СЂРѕРј Р›Р°РіРµСЂРµ Р¶РёС‚СЊ С‚СЏР¶РµР»Рѕ.");
 	
 	Info_ClearChoices	(DIA_Lefty_First );
 	AI_StopProcessInfos	(self);
@@ -120,8 +120,8 @@ func void DIA_Lefty_First_Never()
 
 func void DIA_Lefty_First_Later()
 {
-	AI_Output (other, self,"DIA_Lefty_First_Later_15_00"); //Может быть позже...
-	AI_Output (self, other,"DIA_Lefty_First_Later_07_01"); //Позже' будет уже поздно. Твоя помощь мне нужна СЕЙЧАС. Ты хочешь мне помочь или нет?
+	AI_Output (other, self,"DIA_Lefty_First_Later_15_00"); //РњРѕР¶РµС‚ Р±С‹С‚СЊ РїРѕР·Р¶Рµ...
+	AI_Output (self, other,"DIA_Lefty_First_Later_07_01"); //РџРѕР·Р¶Рµ' Р±СѓРґРµС‚ СѓР¶Рµ РїРѕР·РґРЅРѕ. РўРІРѕСЏ РїРѕРјРѕС‰СЊ РјРЅРµ РЅСѓР¶РЅР° РЎР•Р™Р§РђРЎ. РўС‹ С…РѕС‡РµС€СЊ РјРЅРµ РїРѕРјРѕС‡СЊ РёР»Рё РЅРµС‚?
 };
 
 // **************************************
@@ -152,26 +152,26 @@ FUNC int DIA_Lefty_WorkDay_Condition()
 
 FUNC VOID DIA_Lefty_WorkDay_Info()
 {
-	AI_Output (self, other,"DIA_Lefty_WorkDay_07_00"); //Эй, ты!
+	AI_Output (self, other,"DIA_Lefty_WorkDay_07_00"); //Р­Р№, С‚С‹!
 	
 	if (Lefty_Mission == LOG_FAILED)
 	{
-		AI_Output (self, other,"DIA_Lefty_WorkDay_NextChance_07_00"); //Тебе повезло! Я даю тебе еще один шанс.
-		AI_Output (self, other,"DIA_Lefty_WorkDay_NextChance_07_01"); //Постарайся не облажаться на этот раз! Отправляйся к Лорду, забирай воду и тащи ее крестьянам. Усек? 
+		AI_Output (self, other,"DIA_Lefty_WorkDay_NextChance_07_00"); //РўРµР±Рµ РїРѕРІРµР·Р»Рѕ! РЇ РґР°СЋ С‚РµР±Рµ РµС‰Рµ РѕРґРёРЅ С€Р°РЅСЃ.
+		AI_Output (self, other,"DIA_Lefty_WorkDay_NextChance_07_01"); //РџРѕСЃС‚Р°СЂР°Р№СЃСЏ РЅРµ РѕР±Р»Р°Р¶Р°С‚СЊСЃСЏ РЅР° СЌС‚РѕС‚ СЂР°Р·! РћС‚РїСЂР°РІР»СЏР№СЃСЏ Рє Р›РѕСЂРґСѓ, Р·Р°Р±РёСЂР°Р№ РІРѕРґСѓ Рё С‚Р°С‰Рё РµРµ РєСЂРµСЃС‚СЊСЏРЅР°Рј. РЈСЃРµРє? 
 		Lefty_WorkDay = B_SetDayTolerance();
 		Lefty_Mission = LOG_RUNNING;
 		An_Bauern_verteilt = 0;
-		B_LogEntry			(CH1_CarryWater,"Я снова встретил Лефти! Он хочет, чтобы я пошел к Лорду и забрал воду для крестьян на рисовых полях.");
+		B_LogEntry			(CH1_CarryWater,"РЇ СЃРЅРѕРІР° РІСЃС‚СЂРµС‚РёР» Р›РµС„С‚Рё! РћРЅ С…РѕС‡РµС‚, С‡С‚РѕР±С‹ СЏ РїРѕС€РµР» Рє Р›РѕСЂРґСѓ Рё Р·Р°Р±СЂР°Р» РІРѕРґСѓ РґР»СЏ РєСЂРµСЃС‚СЊСЏРЅ РЅР° СЂРёСЃРѕРІС‹С… РїРѕР»СЏС….");
 		
 		AI_StopProcessInfos	(self);
 	}
 	else if (Lefty_Mission == LOG_RUNNING)
 	{
-		AI_Output (self, other,"DIA_Lefty_WorkDay_StillRunning_07_00"); //Я же велел тебе отнести воду крестьянам!
-		AI_Output (self, other,"DIA_Lefty_WorkDay_StillRunning_07_01"); //Не люблю людей, которые раздают обещания, а потом не выполняют их!
+		AI_Output (self, other,"DIA_Lefty_WorkDay_StillRunning_07_00"); //РЇ Р¶Рµ РІРµР»РµР» С‚РµР±Рµ РѕС‚РЅРµСЃС‚Рё РІРѕРґСѓ РєСЂРµСЃС‚СЊСЏРЅР°Рј!
+		AI_Output (self, other,"DIA_Lefty_WorkDay_StillRunning_07_01"); //РќРµ Р»СЋР±Р»СЋ Р»СЋРґРµР№, РєРѕС‚РѕСЂС‹Рµ СЂР°Р·РґР°СЋС‚ РѕР±РµС‰Р°РЅРёСЏ, Р° РїРѕС‚РѕРј РЅРµ РІС‹РїРѕР»РЅСЏСЋС‚ РёС…!
 		Lefty_WorkDay = B_SetDayTolerance();
 		Lefty_Mission = LOG_FAILED;
-		B_LogEntry			(CH1_CarryWater,"Лефти просто с ума сошел, когда услышал, что я так и не разобрался с водой до сих пор! Забавный паренек этот Лефти.");
+		B_LogEntry			(CH1_CarryWater,"Р›РµС„С‚Рё РїСЂРѕСЃС‚Рѕ СЃ СѓРјР° СЃРѕС€РµР», РєРѕРіРґР° СѓСЃР»С‹С€Р°Р», С‡С‚Рѕ СЏ С‚Р°Рє Рё РЅРµ СЂР°Р·РѕР±СЂР°Р»СЃСЏ СЃ РІРѕРґРѕР№ РґРѕ СЃРёС… РїРѕСЂ! Р—Р°Р±Р°РІРЅС‹Р№ РїР°СЂРµРЅРµРє СЌС‚РѕС‚ Р›РµС„С‚Рё.");
 		
 		AI_StopProcessInfos	(self);
 		Npc_SetTarget (self, other);
@@ -179,14 +179,14 @@ FUNC VOID DIA_Lefty_WorkDay_Info()
 	}
 	else if (Lefty_Mission == LOG_SUCCESS)
 	{
-		AI_Output (self, other,"DIA_Lefty_WorkDay_SUCCESS_07_00"); //Хорошо! Кое для чего ты все-таки годишься.
-		AI_Output (self, other,"DIA_Lefty_WorkDay_SUCCESS_07_01"); //Думаю, это дело как раз для тебя. Теперь ты будешь разносить воду каждый день. И хватит отдыхать - иди, займись делом!
+		AI_Output (self, other,"DIA_Lefty_WorkDay_SUCCESS_07_00"); //РҐРѕСЂРѕС€Рѕ! РљРѕРµ РґР»СЏ С‡РµРіРѕ С‚С‹ РІСЃРµ-С‚Р°РєРё РіРѕРґРёС€СЊСЃСЏ.
+		AI_Output (self, other,"DIA_Lefty_WorkDay_SUCCESS_07_01"); //Р”СѓРјР°СЋ, СЌС‚Рѕ РґРµР»Рѕ РєР°Рє СЂР°Р· РґР»СЏ С‚РµР±СЏ. РўРµРїРµСЂСЊ С‚С‹ Р±СѓРґРµС€СЊ СЂР°Р·РЅРѕСЃРёС‚СЊ РІРѕРґСѓ РєР°Р¶РґС‹Р№ РґРµРЅСЊ. Р С…РІР°С‚РёС‚ РѕС‚РґС‹С…Р°С‚СЊ - РёРґРё, Р·Р°Р№РјРёСЃСЊ РґРµР»РѕРј!
 		Lefty_WorkDay = B_SetDayTolerance();
 		Lefty_Mission = LOG_RUNNING;
 		An_Bauern_verteilt = 0;
 		if	!CarriedWaterForLefty
 		{
-			B_LogEntry		(CH1_CarryWater,"Ушам своим не верю. Я доставил воду всем нуждавшимся, но теперь Лефти хочет, чтобы я этим каждый день занимался. Думаю, этому тупице надо объяснить пару вещей подоступнее.");
+			B_LogEntry		(CH1_CarryWater,"РЈС€Р°Рј СЃРІРѕРёРј РЅРµ РІРµСЂСЋ. РЇ РґРѕСЃС‚Р°РІРёР» РІРѕРґСѓ РІСЃРµРј РЅСѓР¶РґР°РІС€РёРјСЃСЏ, РЅРѕ С‚РµРїРµСЂСЊ Р›РµС„С‚Рё С…РѕС‡РµС‚, С‡С‚РѕР±С‹ СЏ СЌС‚РёРј РєР°Р¶РґС‹Р№ РґРµРЅСЊ Р·Р°РЅРёРјР°Р»СЃСЏ. Р”СѓРјР°СЋ, СЌС‚РѕРјСѓ С‚СѓРїРёС†Рµ РЅР°РґРѕ РѕР±СЉСЏСЃРЅРёС‚СЊ РїР°СЂСѓ РІРµС‰РµР№ РїРѕРґРѕСЃС‚СѓРїРЅРµРµ.");
 			B_GiveXP		(XP_LeftyCarriedWater);
 			CarriedWaterForLefty = TRUE;
 		};
@@ -206,7 +206,7 @@ instance DIA_Lefty_NeverAgain (C_INFO)
 	condition	= DIA_Lefty_NeverAgain_Condition;
 	information	= DIA_Lefty_NeverAgain_Info;
 	permanent	= 1;
-	description	= "Теперь ты можешь носить эту воду сам.";
+	description	= "РўРµРїРµСЂСЊ С‚С‹ РјРѕР¶РµС€СЊ РЅРѕСЃРёС‚СЊ СЌС‚Сѓ РІРѕРґСѓ СЃР°Рј.";
 };                       
 
 FUNC int DIA_Lefty_NeverAgain_Condition()
@@ -219,9 +219,9 @@ FUNC int DIA_Lefty_NeverAgain_Condition()
 
 FUNC VOID DIA_Lefty_NeverAgain_Info()
 {
-	AI_Output (other, self,"DIA_Lefty_NeverAgain_15_00"); //Теперь ты можешь носить эту воду сам.
-	AI_Output (self, other,"DIA_Lefty_NeverAgain_07_01"); //О? Нашел себе дело получше?
-	AI_Output (self, other,"DIA_Lefty_NeverAgain_07_02"); //Думаю, стоит напомнить тебе, кто из нас главный!
+	AI_Output (other, self,"DIA_Lefty_NeverAgain_15_00"); //РўРµРїРµСЂСЊ С‚С‹ РјРѕР¶РµС€СЊ РЅРѕСЃРёС‚СЊ СЌС‚Сѓ РІРѕРґСѓ СЃР°Рј.
+	AI_Output (self, other,"DIA_Lefty_NeverAgain_07_01"); //Рћ? РќР°С€РµР» СЃРµР±Рµ РґРµР»Рѕ РїРѕР»СѓС‡С€Рµ?
+	AI_Output (self, other,"DIA_Lefty_NeverAgain_07_02"); //Р”СѓРјР°СЋ, СЃС‚РѕРёС‚ РЅР°РїРѕРјРЅРёС‚СЊ С‚РµР±Рµ, РєС‚Рѕ РёР· РЅР°СЃ РіР»Р°РІРЅС‹Р№!
 	
 	AI_StopProcessInfos	(self);
 	Npc_SetTarget (self, other);
@@ -240,7 +240,7 @@ instance DIA_Lefty_PERM (C_INFO)
 	condition	= DIA_Lefty_PERM_Condition;
 	information	= DIA_Lefty_PERM_Info;
 	permanent	= 1;
-	description	= "Как дела, друг мой?";
+	description	= "РљР°Рє РґРµР»Р°, РґСЂСѓРі РјРѕР№?";
 };                       
 
 FUNC int DIA_Lefty_PERM_Condition()
@@ -253,27 +253,27 @@ FUNC int DIA_Lefty_PERM_Condition()
 
 FUNC VOID DIA_Lefty_PERM_Info()
 {
-	AI_Output (other, self,"DIA_Lefty_PERM_15_00"); //Как дела, друг мой?
-	AI_Output (self, other,"DIA_Lefty_PERM_07_01"); //Ох, парень! Что тебе нужно?
+	AI_Output (other, self,"DIA_Lefty_PERM_15_00"); //РљР°Рє РґРµР»Р°, РґСЂСѓРі РјРѕР№?
+	AI_Output (self, other,"DIA_Lefty_PERM_07_01"); //РћС…, РїР°СЂРµРЅСЊ! Р§С‚Рѕ С‚РµР±Рµ РЅСѓР¶РЅРѕ?
 
 	if	!LeftyWasBeaten
 	{
-		B_LogEntry			(CH1_CarryWater,"Я втолковал Лефти, что ему лучше больше не приставать ко мне со своими предложениями. Некоторые люди не способны понять, когда им объясняешь по-хорошему.");
+		B_LogEntry			(CH1_CarryWater,"РЇ РІС‚РѕР»РєРѕРІР°Р» Р›РµС„С‚Рё, С‡С‚Рѕ РµРјСѓ Р»СѓС‡С€Рµ Р±РѕР»СЊС€Рµ РЅРµ РїСЂРёСЃС‚Р°РІР°С‚СЊ РєРѕ РјРЅРµ СЃРѕ СЃРІРѕРёРјРё РїСЂРµРґР»РѕР¶РµРЅРёСЏРјРё. РќРµРєРѕС‚РѕСЂС‹Рµ Р»СЋРґРё РЅРµ СЃРїРѕСЃРѕР±РЅС‹ РїРѕРЅСЏС‚СЊ, РєРѕРіРґР° РёРј РѕР±СЉСЏСЃРЅСЏРµС€СЊ РїРѕ-С…РѕСЂРѕС€РµРјСѓ.");
 		Log_SetTopicStatus	(CH1_CarryWater,	LOG_SUCCESS);
 		B_GiveXP			(XP_LeftyConfronted);
 		LeftyWasBeaten = TRUE;
 	};
 	
 	Info_ClearChoices	(DIA_Lefty_PERM );
-	Info_AddChoice		(DIA_Lefty_PERM,"Просто хотел проведать тебя.",DIA_Lefty_PERM_Nothing);
-	Info_AddChoice		(DIA_Lefty_PERM,"Похоже, крестьяне хотят пить.",DIA_Lefty_PERM_Durstig);
-	Info_AddChoice		(DIA_Lefty_PERM,"У меня был паршивый день... ",DIA_Lefty_PERM_AufsMaul);
+	Info_AddChoice		(DIA_Lefty_PERM,"РџСЂРѕСЃС‚Рѕ С…РѕС‚РµР» РїСЂРѕРІРµРґР°С‚СЊ С‚РµР±СЏ.",DIA_Lefty_PERM_Nothing);
+	Info_AddChoice		(DIA_Lefty_PERM,"РџРѕС…РѕР¶Рµ, РєСЂРµСЃС‚СЊСЏРЅРµ С…РѕС‚СЏС‚ РїРёС‚СЊ.",DIA_Lefty_PERM_Durstig);
+	Info_AddChoice		(DIA_Lefty_PERM,"РЈ РјРµРЅСЏ Р±С‹Р» РїР°СЂС€РёРІС‹Р№ РґРµРЅСЊ... ",DIA_Lefty_PERM_AufsMaul);
 
 };	
 
 func void DIA_Lefty_PERM_AufsMaul()
 {
-	AI_Output (other, self,"DIA_Lefty_PERM_AufsMaul_15_00"); //У меня был паршивый день, и я просто хочу немного расслабиться... просто постоять так минутку-другую. 
+	AI_Output (other, self,"DIA_Lefty_PERM_AufsMaul_15_00"); //РЈ РјРµРЅСЏ Р±С‹Р» РїР°СЂС€РёРІС‹Р№ РґРµРЅСЊ, Рё СЏ РїСЂРѕСЃС‚Рѕ С…РѕС‡Сѓ РЅРµРјРЅРѕРіРѕ СЂР°СЃСЃР»Р°Р±РёС‚СЊСЃСЏ... РїСЂРѕСЃС‚Рѕ РїРѕСЃС‚РѕСЏС‚СЊ С‚Р°Рє РјРёРЅСѓС‚РєСѓ-РґСЂСѓРіСѓСЋ. 
 	B_Say (self,other,"$YOUWANNAFOOLME");
 	Info_ClearChoices	(DIA_Lefty_PERM );
 	AI_StopProcessInfos	(self);
@@ -284,14 +284,14 @@ func void DIA_Lefty_PERM_AufsMaul()
 
 func void DIA_Lefty_PERM_Durstig()
 {
-	AI_Output (other, self,"DIA_Lefty_PERM_Durstig_15_00"); //Похоже, крестьяне хотят пить.
-	AI_Output (self, other,"DIA_Lefty_PERM_Durstig_07_01"); //Я разберусь... Не волнуйся.
+	AI_Output (other, self,"DIA_Lefty_PERM_Durstig_15_00"); //РџРѕС…РѕР¶Рµ, РєСЂРµСЃС‚СЊСЏРЅРµ С…РѕС‚СЏС‚ РїРёС‚СЊ.
+	AI_Output (self, other,"DIA_Lefty_PERM_Durstig_07_01"); //РЇ СЂР°Р·Р±РµСЂСѓСЃСЊ... РќРµ РІРѕР»РЅСѓР№СЃСЏ.
 	AI_StopProcessInfos	(self);
 };
 
 func void DIA_Lefty_PERM_Nothing()
 {
-	AI_Output (other, self,"DIA_Lefty_PERM_Nothing_15_00"); //Просто хотел проведать тебя.
+	AI_Output (other, self,"DIA_Lefty_PERM_Nothing_15_00"); //РџСЂРѕСЃС‚Рѕ С…РѕС‚РµР» РїСЂРѕРІРµРґР°С‚СЊ С‚РµР±СЏ.
 	AI_StopProcessInfos	(self);
 };
 

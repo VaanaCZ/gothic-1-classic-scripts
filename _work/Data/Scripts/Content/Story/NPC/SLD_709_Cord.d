@@ -2,7 +2,7 @@ instance SLD_709_Cord (Npc_Default)
 {
 	//-------- primary data --------
 	
-	name =							"Корд";
+	name =							"РљРѕСЂРґ";
 	Npctype =						Npctype_Main;
 	guild =							GIL_SLD;       
 	level =							18;

@@ -34,7 +34,7 @@ instance DIA_Butch_Hello (C_INFO)
 	condition		= DIA_Butch_Hello_Condition;
 	information		= DIA_Butch_Hello_Info;
 	important		= 0;
-	description		= "Привет. Ты кто?";
+	description		= "РџСЂРёРІРµС‚. РўС‹ РєС‚Рѕ?";
 };
 
 FUNC int  DIA_Butch_Hello_Condition()
@@ -44,8 +44,8 @@ FUNC int  DIA_Butch_Hello_Condition()
 
 func void  DIA_Butch_Hello_Info()
 {
-	AI_Output (other, self,"DIA_Butch_Hello_15_00"); //Привет. Ты кто?
-	AI_Output (self, other,"DIA_Butch_Hello_13_01"); //Не твоего ума дело! Не нравится мне твоя рожа!
+	AI_Output (other, self,"DIA_Butch_Hello_15_00"); //РџСЂРёРІРµС‚. РўС‹ РєС‚Рѕ?
+	AI_Output (self, other,"DIA_Butch_Hello_13_01"); //РќРµ С‚РІРѕРµРіРѕ СѓРјР° РґРµР»Рѕ! РќРµ РЅСЂР°РІРёС‚СЃСЏ РјРЅРµ С‚РІРѕСЏ СЂРѕР¶Р°!
 	AI_StopProcessInfos	( self );
 };
 

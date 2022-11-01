@@ -1,9 +1,9 @@
 // ************************************************************************************************
-// Wert von Tiertrophдen
+// Wert von TiertrophРґen
 // ************************************************************************************************
 
-// FIXME: welche Trophдe wann freigeschaltet? Wert tunen!
-const int	Value_Zдhne				=	10;
+// FIXME: welche TrophРґe wann freigeschaltet? Wert tunen!
+const int	Value_ZРґhne				=	10;
 const int	Value_Krallen			=	15;
 
 const int	Value_Wolfsfell			=	10;
@@ -22,17 +22,17 @@ const int	Value_Sumpfhaihaut		=	200;
 const int	Value_Trollfell			=	300;
 
 // Bloodfly
-const int	Value_Flьgel			=	15;
+const int	Value_FlСЊgel			=	15;
 const int	Value_Stachel			=	25;
 
 // Durch Ulu-Mulu freigeschaltet
 // bei Auftragsvergabe werden je 3 neue Monster gespawnt
 const int	Value_Feuerzunge		=	500;
-const int	Value_Sumpfhaizдhne		=	500;
+const int	Value_SumpfhaizРґhne		=	500;
 const int	Value_Shadowbeasthorn	=	500;
 const int	Value_Trollhauer		=	500;
 
-// Golems beim Dдmonenbeschwцrer
+// Golems beim DРґmonenbeschwС†rer
 const int	Value_Steinherz			=	1000;
 const int	Value_Feuerherz			=	1000;
 const int	Value_Eisherz			=	1000;
@@ -42,21 +42,21 @@ const int	Value_Eistueck			=	100;
 /*
 So in der Tasche
 ----------------
-ItAt_Meatbug_01 	//Meatbug			Kцrper (Essen)		(Item-Instanz in Food.d)
+ItAt_Meatbug_01 	//Meatbug			KС†rper (Essen)		(Item-Instanz in Food.d)
 ItFoMuttonRaw		//Scavenger			2 Bollen			OK
 					//Molerats			2 Bollen			OK
 					//Shadowbeast		4 Bollen			OK
 
-ItAt_Bloodfly_01 	//Bloodfly			Flьgel				OK
+ItAt_Bloodfly_01 	//Bloodfly			FlСЊgel				OK
 
-Durch Jдger freigeschaltet (noch nicht verteilt)
+Durch JРґger freigeschaltet (noch nicht verteilt)
 --------------------------
-ItAt_Teeth_01 		//Wolf				2 Zдhne				OK
-					//Schwarzer Wolf	2 Zдhne				OK
-					//Snapper			10 Zдhne			OK
-					//Orcbiter			2 Zдhne				OK
-					//Shadowbeast		4 Zдhne				OK
-					//Bloodhound		4 Zдhne				OK
+ItAt_Teeth_01 		//Wolf				2 ZРґhne				OK
+					//Schwarzer Wolf	2 ZРґhne				OK
+					//Snapper			10 ZРґhne			OK
+					//Orcbiter			2 ZРґhne				OK
+					//Shadowbeast		4 ZРґhne				OK
+					//Bloodhound		4 ZРґhne				OK
 //--------------------------------------------------------------
 ItAt_Claws_01 		//Waran				4 Klauen			OK
 					//Feuerechse		4 Klauen			OK
@@ -85,7 +85,7 @@ ItAt_Crawler_02 	//Crawler			Panzerplatten		OK
 Durch Ulu-Mulu freigeschaltet
 -----------------------------
 ItAt_Waran_01 		//Feuerechse		Flammenzunge		OK
-ItAt_Swampshark_02 	//Sumpfhai			Zдhne des Sumpfhais	OK
+ItAt_Swampshark_02 	//Sumpfhai			ZРґhne des Sumpfhais	OK
 ItAt_Shadow_02 		//Shadowbeast		Horn				OK
 ItAt_Troll_02 		//Troll				Hauer				OK
 */
@@ -93,24 +93,24 @@ ItAt_Troll_02 		//Troll				Hauer				OK
 /******************************************************************************************/
 INSTANCE ItAt_Teeth_01 (C_Item)
 {
-	name 				=	"Клык";
+	name 				=	"РљР»С‹Рє";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
 
-	value 				=	Value_Zдhne;
+	value 				=	Value_ZРґhne;
 
 	visual 				=	"ItAt_Teeth_01.3DS";
 	material 			=	MAT_LEATHER;
 
 	description			= name;
-	TEXT[4]				= NAME_Value;					COUNT[4]	= Value_Zдhne;
+	TEXT[4]				= NAME_Value;					COUNT[4]	= Value_ZРґhne;
 };
 
 /******************************************************************************************/
 INSTANCE ItAt_Wolf_01 (C_Item)
 {
-	name 				=	"Волчья шкура";
+	name 				=	"Р’РѕР»С‡СЊСЏ С€РєСѓСЂР°";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -126,7 +126,7 @@ INSTANCE ItAt_Wolf_01 (C_Item)
 /******************************************************************************************/
 INSTANCE ItAt_Wolf_02 (C_Item)
 {
-	name 				=	"Шкура орочей гончей";
+	name 				=	"РЁРєСѓСЂР° РѕСЂРѕС‡РµР№ РіРѕРЅС‡РµР№";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -142,7 +142,7 @@ INSTANCE ItAt_Wolf_02 (C_Item)
 /******************************************************************************************/
 INSTANCE ItAt_Waran_01 (C_Item)
 {
-	name 				=	"Язык огня";
+	name 				=	"РЇР·С‹Рє РѕРіРЅСЏ";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -158,7 +158,7 @@ INSTANCE ItAt_Waran_01 (C_Item)
 /******************************************************************************************/
 INSTANCE ItAt_Claws_01 (C_Item)
 {
-	name 				=	"Когти";
+	name 				=	"РљРѕРіС‚Рё";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -174,7 +174,7 @@ INSTANCE ItAt_Claws_01 (C_Item)
 /******************************************************************************************/
 INSTANCE ItAt_Crawler_02 (C_Item)
 {
-	name 				=	"Пластина панциря";
+	name 				=	"РџР»Р°СЃС‚РёРЅР° РїР°РЅС†РёСЂСЏ";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI|ITEM_MISSION;
@@ -184,14 +184,14 @@ INSTANCE ItAt_Crawler_02 (C_Item)
 	visual 				=	"ItAt_Crawler_02.3DS";
 	material 			=	MAT_WOOD;
 
-	description			= "Пластина панциря ползуна-воина";
+	description			= "РџР»Р°СЃС‚РёРЅР° РїР°РЅС†РёСЂСЏ РїРѕР»Р·СѓРЅР°-РІРѕРёРЅР°";
 	TEXT[4]				= NAME_Value;					COUNT[4]	= Value_Panzerplatte;
 };
 
 /******************************************************************************************/
 INSTANCE ItAt_Crawler_01 (C_Item)
 {
-	name 				=	"Челюсти ползуна";
+	name 				=	"Р§РµР»СЋСЃС‚Рё РїРѕР»Р·СѓРЅР°";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -208,7 +208,7 @@ INSTANCE ItAt_Crawler_01 (C_Item)
 /******************************************************************************************/
 INSTANCE ItAt_Shadow_01 (C_Item)
 {
-	name 				=	"Шкура";
+	name 				=	"РЁРєСѓСЂР°";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -218,14 +218,14 @@ INSTANCE ItAt_Shadow_01 (C_Item)
 	visual 				=	"ItAt_Shadowbeast_01.3DS";
 	material 			=	MAT_LEATHER;
 
-	description			= "Шкура мракориса";
+	description			= "РЁРєСѓСЂР° РјСЂР°РєРѕСЂРёСЃР°";
 	TEXT[4]				= NAME_Value;					COUNT[4]	= Value_Shadowbeastfell;
 };
 
 /******************************************************************************************/
 INSTANCE ItAt_Shadow_02 (C_Item)
 {
-	name 				=	"Рог";
+	name 				=	"Р РѕРі";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -235,14 +235,14 @@ INSTANCE ItAt_Shadow_02 (C_Item)
 	visual 				=	"ItAt_Shadowbeast_02.3DS";
 	material 			=	MAT_LEATHER;
 
-	description			= "Рог мракориса";
+	description			= "Р РѕРі РјСЂР°РєРѕСЂРёСЃР°";
 	TEXT[4]				= NAME_Value;					COUNT[4]	= Value_Shadowbeasthorn;
 };
 
 /******************************************************************************************/
 INSTANCE ItAt_Lurker_01 (C_Item)
 {
-	name 				=	"Когти шныги";
+	name 				=	"РљРѕРіС‚Рё С€РЅС‹РіРё";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -259,7 +259,7 @@ INSTANCE ItAt_Lurker_01 (C_Item)
 /******************************************************************************************/
 INSTANCE ItAt_Lurker_02 (C_Item)
 {
-	name 				=	"Шкура шныги";
+	name 				=	"РЁРєСѓСЂР° С€РЅС‹РіРё";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -276,7 +276,7 @@ INSTANCE ItAt_Lurker_02 (C_Item)
 /******************************************************************************************/
 INSTANCE ItAt_Troll_02 (C_Item)
 {
-	name 				=	"Клык тролля";
+	name 				=	"РљР»С‹Рє С‚СЂРѕР»Р»СЏ";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -293,7 +293,7 @@ INSTANCE ItAt_Troll_02 (C_Item)
 /******************************************************************************************/
 INSTANCE ItAt_Troll_01 (C_Item)
 {
-	name 				=	"Шкура тролля";
+	name 				=	"РЁРєСѓСЂР° С‚СЂРѕР»Р»СЏ";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -309,7 +309,7 @@ INSTANCE ItAt_Troll_01 (C_Item)
 /******************************************************************************************/
 INSTANCE ItAt_Swampshark_01 (C_Item)
 {
-	name 				=	"Шкура болотожора";
+	name 				=	"РЁРєСѓСЂР° Р±РѕР»РѕС‚РѕР¶РѕСЂР°";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -325,39 +325,39 @@ INSTANCE ItAt_Swampshark_01 (C_Item)
 /******************************************************************************************/
 INSTANCE ItAt_Swampshark_02 (C_Item)
 {
-	name 				=	"Зуб болотожора";
+	name 				=	"Р—СѓР± Р±РѕР»РѕС‚РѕР¶РѕСЂР°";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
 
-	value 				=	Value_Sumpfhaizдhne;
+	value 				=	Value_SumpfhaizРґhne;
 
 	visual 				=	"ItAt_Swampshark_02.3DS";
 	material 			=	MAT_LEATHER;
 
 	description			= name;
-	TEXT[4]				= NAME_Value;					COUNT[4]	= Value_Sumpfhaizдhne;
+	TEXT[4]				= NAME_Value;					COUNT[4]	= Value_SumpfhaizРґhne;
 };
 /******************************************************************************************/
 INSTANCE ItAt_Bloodfly_01 (C_Item)
 {
-	name 				=	"Крылья";
+	name 				=	"РљСЂС‹Р»СЊСЏ";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
 
-	value 				=	Value_Flьgel;
+	value 				=	Value_FlСЊgel;
 
 	visual 				=	"ItAt_Bloodfly_01.3DS";
 	material 			=	MAT_LEATHER;
 
 	description			= name;
-	TEXT[4]				= NAME_Value;					COUNT[4]	= Value_Flьgel;
+	TEXT[4]				= NAME_Value;					COUNT[4]	= Value_FlСЊgel;
 };
 /******************************************************************************************/
 INSTANCE ItAt_Bloodfly_02 (C_Item)
 {
-	name 				=	"Жало шершня";
+	name 				=	"Р–Р°Р»Рѕ С€РµСЂС€РЅСЏ";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -376,7 +376,7 @@ INSTANCE ItAt_Bloodfly_02 (C_Item)
 /******************************************************************************************/
 INSTANCE ItAt_StoneGolem_01 (C_Item)
 {
-	name 				=	"Сердце каменного голема";
+	name 				=	"РЎРµСЂРґС†Рµ РєР°РјРµРЅРЅРѕРіРѕ РіРѕР»РµРјР°";
 
 	mainflag 			=	ITEM_KAT_RUNE;
 	flags 				=	ITEM_MISSION;
@@ -388,17 +388,17 @@ INSTANCE ItAt_StoneGolem_01 (C_Item)
 	material 			=	MAT_STONE;
 
 	description			= name;
-	TEXT[0]				= "Это сердце побежденного в бою";
-	TEXT[1]				= "голема. Оно обладает";
-	TEXT[2]				= "силой швырять противника"; 
-	TEXT[3]				= "через воздух.";
+	TEXT[0]				= "Р­С‚Рѕ СЃРµСЂРґС†Рµ РїРѕР±РµР¶РґРµРЅРЅРѕРіРѕ РІ Р±РѕСЋ";
+	TEXT[1]				= "РіРѕР»РµРјР°. РћРЅРѕ РѕР±Р»Р°РґР°РµС‚";
+	TEXT[2]				= "СЃРёР»РѕР№ С€РІС‹СЂСЏС‚СЊ РїСЂРѕС‚РёРІРЅРёРєР°"; 
+	TEXT[3]				= "С‡РµСЂРµР· РІРѕР·РґСѓС….";
 	TEXT[5]				= NAME_Value;					COUNT[5]	= Value_Steinherz;
 };
 
 /******************************************************************************************/
 INSTANCE ItAt_FireGolem_01 (C_Item)
 {
-	name 				=	"Сердце огненного голема";
+	name 				=	"РЎРµСЂРґС†Рµ РѕРіРЅРµРЅРЅРѕРіРѕ РіРѕР»РµРјР°";
 
 	mainflag 			=	ITEM_KAT_RUNE;
 	flags 				=	ITEM_MISSION;
@@ -410,17 +410,17 @@ INSTANCE ItAt_FireGolem_01 (C_Item)
 	material 			=	MAT_STONE;
 
 	description			= name;
-	TEXT[0]				= "Это сердце побежденного в бою";
-	TEXT[1]				= "голема. Оно обладает";
-	TEXT[2]				= "силой поджигать ";
-	TEXT[3]				= "противника.";
+	TEXT[0]				= "Р­С‚Рѕ СЃРµСЂРґС†Рµ РїРѕР±РµР¶РґРµРЅРЅРѕРіРѕ РІ Р±РѕСЋ";
+	TEXT[1]				= "РіРѕР»РµРјР°. РћРЅРѕ РѕР±Р»Р°РґР°РµС‚";
+	TEXT[2]				= "СЃРёР»РѕР№ РїРѕРґР¶РёРіР°С‚СЊ ";
+	TEXT[3]				= "РїСЂРѕС‚РёРІРЅРёРєР°.";
 	TEXT[5]				= NAME_Value;					COUNT[5]	= Value_Feuerherz;
 };
 
 /******************************************************************************************/
 INSTANCE ItAt_IceGolem_01 (C_Item)
 {
-	name 				=	"Сердце ледяного голема";
+	name 				=	"РЎРµСЂРґС†Рµ Р»РµРґСЏРЅРѕРіРѕ РіРѕР»РµРјР°";
 
 	mainflag 			=	ITEM_KAT_RUNE;
 	flags 				=	ITEM_MISSION;
@@ -432,9 +432,9 @@ INSTANCE ItAt_IceGolem_01 (C_Item)
 	material 			=	MAT_STONE;
 
 	description			= name;
-	TEXT[0]				= "Это сердце побежденного в бою";
-	TEXT[1]				= "голема. Оно обладает";
-	TEXT[2]				= "силой замораживать противника.";
+	TEXT[0]				= "Р­С‚Рѕ СЃРµСЂРґС†Рµ РїРѕР±РµР¶РґРµРЅРЅРѕРіРѕ РІ Р±РѕСЋ";
+	TEXT[1]				= "РіРѕР»РµРјР°. РћРЅРѕ РѕР±Р»Р°РґР°РµС‚";
+	TEXT[2]				= "СЃРёР»РѕР№ Р·Р°РјРѕСЂР°Р¶РёРІР°С‚СЊ РїСЂРѕС‚РёРІРЅРёРєР°.";
 	//TEXT[3]				= "zu Eis erstarren zu lassen.";
 	TEXT[5]				= NAME_Value;					COUNT[5]	= Value_Eisherz;
 };
@@ -442,7 +442,7 @@ INSTANCE ItAt_IceGolem_01 (C_Item)
 /******************************************************************************************/
 INSTANCE ItAt_IceGolem_02 (C_Item)
 {
-	name 				=	"Частица ледяного голема";
+	name 				=	"Р§Р°СЃС‚РёС†Р° Р»РµРґСЏРЅРѕРіРѕ РіРѕР»РµРјР°";
 
 	mainflag 			=	ITEM_KAT_RUNE;
 	flags 				=	0;
@@ -456,7 +456,7 @@ INSTANCE ItAt_IceGolem_02 (C_Item)
 	material 			=	MAT_STONE;
 
 	description			= name;
-	TEXT[0]				= "Это частица побежденного";
-	TEXT[1]				= "ледяного голема.";
+	TEXT[0]				= "Р­С‚Рѕ С‡Р°СЃС‚РёС†Р° РїРѕР±РµР¶РґРµРЅРЅРѕРіРѕ";
+	TEXT[1]				= "Р»РµРґСЏРЅРѕРіРѕ РіРѕР»РµРјР°.";
 	TEXT[4]				= NAME_Value;					COUNT[4]	= Value_Eistueck;
 };

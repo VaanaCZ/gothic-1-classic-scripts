@@ -4,7 +4,7 @@
 
 PROTOTYPE Mst_Default_Molerat(C_Npc)			
 {
-	name							=	"Кротокрыс";
+	name							=	"РљСЂРѕС‚РѕРєСЂС‹СЃ";
 	guild							=	GIL_MOLERAT;
 	aivar[AIV_MM_REAL_ID]			= 	ID_MOLERAT;
 	level							=	5;
@@ -75,12 +75,12 @@ INSTANCE Molerat	(Mst_Default_Molerat)
 
 
 /*************************************************************************
-**	junge Molerat   (fьr Spielstart) 									**
+**	junge Molerat   (fСЊr Spielstart) 									**
 *************************************************************************/
 
 INSTANCE YMolerat	(Mst_Default_Molerat)
 {
-	name							=	"Молодой кротокрыс";
+	name							=	"РњРѕР»РѕРґРѕР№ РєСЂРѕС‚РѕРєСЂС‹СЃ";
 	level							=	4;
 
 	attribute	[ATR_STRENGTH]		=	5;

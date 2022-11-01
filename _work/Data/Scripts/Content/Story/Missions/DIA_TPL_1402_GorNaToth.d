@@ -32,7 +32,7 @@ instance DIA_GorNaToth_Abweisend (C_INFO)
 	condition	= DIA_GorNaToth_Abweisend_Condition;
 	information	= DIA_GorNaToth_Abweisend_Info;
 	permanent	= 1;
-	description = "Ты можешь чему-нибудь научить меня?";
+	description = "РўС‹ РјРѕР¶РµС€СЊ С‡РµРјСѓ-РЅРёР±СѓРґСЊ РЅР°СѓС‡РёС‚СЊ РјРµРЅСЏ?";
 };                       
 
 FUNC int DIA_GorNaToth_Abweisend_Condition()
@@ -46,8 +46,8 @@ FUNC int DIA_GorNaToth_Abweisend_Condition()
 
 FUNC VOID DIA_GorNaToth_Abweisend_Info()
 {
-	AI_Output			(other, self,"DIA_GorNaToth_AngarTalked_15_00"); //Ты можешь чему-нибудь научить меня?
-	AI_Output			(self, other,"DIA_GorNaToth_AngarTalked_11_01"); //Убирайся с глаз, неверный! Я учу только Стражей великого Спящего!
+	AI_Output			(other, self,"DIA_GorNaToth_AngarTalked_15_00"); //РўС‹ РјРѕР¶РµС€СЊ С‡РµРјСѓ-РЅРёР±СѓРґСЊ РЅР°СѓС‡РёС‚СЊ РјРµРЅСЏ?
+	AI_Output			(self, other,"DIA_GorNaToth_AngarTalked_11_01"); //РЈР±РёСЂР°Р№СЃСЏ СЃ РіР»Р°Р·, РЅРµРІРµСЂРЅС‹Р№! РЇ СѓС‡Сѓ С‚РѕР»СЊРєРѕ РЎС‚СЂР°Р¶РµР№ РІРµР»РёРєРѕРіРѕ РЎРїСЏС‰РµРіРѕ!
 	AI_StopProcessInfos	(self);
 };
 
@@ -75,33 +75,33 @@ FUNC int DIA_GorNaToth_AngarTalked_Condition()
 
 FUNC VOID DIA_GorNaToth_AngarTalked_Info()
 {
-	AI_Output (self, other,"DIA_GorNaToth_AngarTalked_11_00"); //С тобой говорил Кор Ангар? Что он сказал?
+	AI_Output (self, other,"DIA_GorNaToth_AngarTalked_11_00"); //РЎ С‚РѕР±РѕР№ РіРѕРІРѕСЂРёР» РљРѕСЂ РђРЅРіР°СЂ? Р§С‚Рѕ РѕРЅ СЃРєР°Р·Р°Р»?
 	Info_ClearChoices		(DIA_GorNaToth_AngarTalked);
-	Info_AddChoice			(DIA_GorNaToth_AngarTalked,"Он сказал, что ты не достоин носить доспехи Стража.",DIA_GorNaToth_AngarTalked_Unworthy);	
-	Info_AddChoice			(DIA_GorNaToth_AngarTalked,"Он сказал, что ему не нравятся болотожоры.",DIA_GorNaToth_AngarTalked_Shark);	
-	Info_AddChoice			(DIA_GorNaToth_AngarTalked,"Он сказал, чтобы я возвращался, как только стану Стражем.",DIA_GorNaToth_AngarTalked_Normal);	
+	Info_AddChoice			(DIA_GorNaToth_AngarTalked,"РћРЅ СЃРєР°Р·Р°Р», С‡С‚Рѕ С‚С‹ РЅРµ РґРѕСЃС‚РѕРёРЅ РЅРѕСЃРёС‚СЊ РґРѕСЃРїРµС…Рё РЎС‚СЂР°Р¶Р°.",DIA_GorNaToth_AngarTalked_Unworthy);	
+	Info_AddChoice			(DIA_GorNaToth_AngarTalked,"РћРЅ СЃРєР°Р·Р°Р», С‡С‚Рѕ РµРјСѓ РЅРµ РЅСЂР°РІСЏС‚СЃСЏ Р±РѕР»РѕС‚РѕР¶РѕСЂС‹.",DIA_GorNaToth_AngarTalked_Shark);	
+	Info_AddChoice			(DIA_GorNaToth_AngarTalked,"РћРЅ СЃРєР°Р·Р°Р», С‡С‚РѕР±С‹ СЏ РІРѕР·РІСЂР°С‰Р°Р»СЃСЏ, РєР°Рє С‚РѕР»СЊРєРѕ СЃС‚Р°РЅСѓ РЎС‚СЂР°Р¶РµРј.",DIA_GorNaToth_AngarTalked_Normal);	
 };
 
 func void DIA_GorNaToth_AngarTalked_Normal()
 {
-	AI_Output (other, self,"DIA_GorNaToth_AngarTalked_Normal_15_00"); //Он сказал, чтобы я возвращался, как только стану Стражем.
-	AI_Output (self, other,"DIA_GorNaToth_AngarTalked_Normal_11_01"); //Похоже, он что-то нашел в тебе. Обычно Кор Ангар не разговаривает ни с кем.
-	AI_Output (self, other,"DIA_GorNaToth_AngarTalked_Normal_11_02"); //Даже если он просто обратит на тебя внимание, это уже большая честь. Прошло уже два месяца с тех пор, как он последний раз говорил со МНОЙ.
+	AI_Output (other, self,"DIA_GorNaToth_AngarTalked_Normal_15_00"); //РћРЅ СЃРєР°Р·Р°Р», С‡С‚РѕР±С‹ СЏ РІРѕР·РІСЂР°С‰Р°Р»СЃСЏ, РєР°Рє С‚РѕР»СЊРєРѕ СЃС‚Р°РЅСѓ РЎС‚СЂР°Р¶РµРј.
+	AI_Output (self, other,"DIA_GorNaToth_AngarTalked_Normal_11_01"); //РџРѕС…РѕР¶Рµ, РѕРЅ С‡С‚Рѕ-С‚Рѕ РЅР°С€РµР» РІ С‚РµР±Рµ. РћР±С‹С‡РЅРѕ РљРѕСЂ РђРЅРіР°СЂ РЅРµ СЂР°Р·РіРѕРІР°СЂРёРІР°РµС‚ РЅРё СЃ РєРµРј.
+	AI_Output (self, other,"DIA_GorNaToth_AngarTalked_Normal_11_02"); //Р”Р°Р¶Рµ РµСЃР»Рё РѕРЅ РїСЂРѕСЃС‚Рѕ РѕР±СЂР°С‚РёС‚ РЅР° С‚РµР±СЏ РІРЅРёРјР°РЅРёРµ, СЌС‚Рѕ СѓР¶Рµ Р±РѕР»СЊС€Р°СЏ С‡РµСЃС‚СЊ. РџСЂРѕС€Р»Рѕ СѓР¶Рµ РґРІР° РјРµСЃСЏС†Р° СЃ С‚РµС… РїРѕСЂ, РєР°Рє РѕРЅ РїРѕСЃР»РµРґРЅРёР№ СЂР°Р· РіРѕРІРѕСЂРёР» СЃРѕ РњРќРћР™.
 	Info_ClearChoices		(DIA_GorNaToth_AngarTalked);
 };
 
 func void DIA_GorNaToth_AngarTalked_Shark()
 {
-	AI_Output (other, self,"DIA_GorNaToth_AngarTalked_Shark_15_00"); //Он сказал, что ему не нравятся болотожоры.
-	AI_Output (self, other,"DIA_GorNaToth_AngarTalked_Shark_11_01"); //Что?.. (решительно) Меня ожидает священная миссия!
-	AI_Output (self, other,"DIA_GorNaToth_AngarTalked_Shark_11_02"); //Желание господина для меня закон.
+	AI_Output (other, self,"DIA_GorNaToth_AngarTalked_Shark_15_00"); //РћРЅ СЃРєР°Р·Р°Р», С‡С‚Рѕ РµРјСѓ РЅРµ РЅСЂР°РІСЏС‚СЃСЏ Р±РѕР»РѕС‚РѕР¶РѕСЂС‹.
+	AI_Output (self, other,"DIA_GorNaToth_AngarTalked_Shark_11_01"); //Р§С‚Рѕ?.. (СЂРµС€РёС‚РµР»СЊРЅРѕ) РњРµРЅСЏ РѕР¶РёРґР°РµС‚ СЃРІСЏС‰РµРЅРЅР°СЏ РјРёСЃСЃРёСЏ!
+	AI_Output (self, other,"DIA_GorNaToth_AngarTalked_Shark_11_02"); //Р–РµР»Р°РЅРёРµ РіРѕСЃРїРѕРґРёРЅР° РґР»СЏ РјРµРЅСЏ Р·Р°РєРѕРЅ.
 	Info_ClearChoices		(DIA_GorNaToth_AngarTalked);
 };
 
 func void DIA_GorNaToth_AngarTalked_Unworthy()
 {
-	AI_Output (other, self,"DIA_GorNaToth_AngarTalked_Unworthy_15_00"); //Он сказал, что ты недостоин носить доспехи Стража.
-	AI_Output (self, other,"DIA_GorNaToth_AngarTalked_Unworthy_11_01"); //Нет! Он не мог сказать этого! Только не обо МНЕ!
+	AI_Output (other, self,"DIA_GorNaToth_AngarTalked_Unworthy_15_00"); //РћРЅ СЃРєР°Р·Р°Р», С‡С‚Рѕ С‚С‹ РЅРµРґРѕСЃС‚РѕРёРЅ РЅРѕСЃРёС‚СЊ РґРѕСЃРїРµС…Рё РЎС‚СЂР°Р¶Р°.
+	AI_Output (self, other,"DIA_GorNaToth_AngarTalked_Unworthy_11_01"); //РќРµС‚! РћРЅ РЅРµ РјРѕРі СЃРєР°Р·Р°С‚СЊ СЌС‚РѕРіРѕ! РўРѕР»СЊРєРѕ РЅРµ РѕР±Рѕ РњРќР•!
 	Info_ClearChoices		(DIA_GorNaToth_AngarTalked);
 	AI_StopProcessInfos	( self );
 	Npc_SetTarget(self,other);
@@ -118,7 +118,7 @@ instance  TPL_1402_GorNaToth_GETSTUFF (C_INFO)
 	information		= TPL_1402_GorNaToth_GETSTUFF_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Я хочу забрать свои доспехи Стража."; 
+	description		= "РЇ С…РѕС‡Сѓ Р·Р°Р±СЂР°С‚СЊ СЃРІРѕРё РґРѕСЃРїРµС…Рё РЎС‚СЂР°Р¶Р°."; 
 };
 
 FUNC int  TPL_1402_GorNaToth_GETSTUFF_Condition()
@@ -132,14 +132,14 @@ FUNC int  TPL_1402_GorNaToth_GETSTUFF_Condition()
 };
 FUNC void  TPL_1402_GorNaToth_GETSTUFF_Info()
 {
-	AI_Output			(other, self,"TPL_1402_GorNaToth_GETSTUFF_Info_15_01"); //Я хочу забрать свои доспехи Стража.
-	AI_Output			(self, other,"TPL_1402_GorNaToth_GETSTUFF_Info_11_02"); //Я счастлив, что мне выпала честь передать наши доспехи человеку, который нашел кладку ползунов.
-	AI_Output			(self, other,"TPL_1402_GorNaToth_GETSTUFF_Info_11_03"); //Пусть эти доспехи хранят тебя, как хранит наше Братство Спящий!
+	AI_Output			(other, self,"TPL_1402_GorNaToth_GETSTUFF_Info_15_01"); //РЇ С…РѕС‡Сѓ Р·Р°Р±СЂР°С‚СЊ СЃРІРѕРё РґРѕСЃРїРµС…Рё РЎС‚СЂР°Р¶Р°.
+	AI_Output			(self, other,"TPL_1402_GorNaToth_GETSTUFF_Info_11_02"); //РЇ СЃС‡Р°СЃС‚Р»РёРІ, С‡С‚Рѕ РјРЅРµ РІС‹РїР°Р»Р° С‡РµСЃС‚СЊ РїРµСЂРµРґР°С‚СЊ РЅР°С€Рё РґРѕСЃРїРµС…Рё С‡РµР»РѕРІРµРєСѓ, РєРѕС‚РѕСЂС‹Р№ РЅР°С€РµР» РєР»Р°РґРєСѓ РїРѕР»Р·СѓРЅРѕРІ.
+	AI_Output			(self, other,"TPL_1402_GorNaToth_GETSTUFF_Info_11_03"); //РџСѓСЃС‚СЊ СЌС‚Рё РґРѕСЃРїРµС…Рё С…СЂР°РЅСЏС‚ С‚РµР±СЏ, РєР°Рє С…СЂР°РЅРёС‚ РЅР°С€Рµ Р‘СЂР°С‚СЃС‚РІРѕ РЎРїСЏС‰РёР№!
 	
-	B_LogEntry			(GE_BecomeTemplar,"Гор На Тоф дал мне доспехи стража. Теперь я вхожу в настоящий воинский клан!");
+	B_LogEntry			(GE_BecomeTemplar,"Р“РѕСЂ РќР° РўРѕС„ РґР°Р» РјРЅРµ РґРѕСЃРїРµС…Рё СЃС‚СЂР°Р¶Р°. РўРµРїРµСЂСЊ СЏ РІС…РѕР¶Сѓ РІ РЅР°СЃС‚РѕСЏС‰РёР№ РІРѕРёРЅСЃРєРёР№ РєР»Р°РЅ!");
 
 	Log_CreateTopic		(GE_TraderPSI,		LOG_NOTE);
-	B_LogEntry			(GE_TraderPSI,"У Гор На Тофа есть доспехи и получше. Но в обмен на них он ожидает получить весомый взнос в копилку Братства. В течение дня я могу нати его на тренировочной площадке.");
+	B_LogEntry			(GE_TraderPSI,"РЈ Р“РѕСЂ РќР° РўРѕС„Р° РµСЃС‚СЊ РґРѕСЃРїРµС…Рё Рё РїРѕР»СѓС‡С€Рµ. РќРѕ РІ РѕР±РјРµРЅ РЅР° РЅРёС… РѕРЅ РѕР¶РёРґР°РµС‚ РїРѕР»СѓС‡РёС‚СЊ РІРµСЃРѕРјС‹Р№ РІР·РЅРѕСЃ РІ РєРѕРїРёР»РєСѓ Р‘СЂР°С‚СЃС‚РІР°. Р’ С‚РµС‡РµРЅРёРµ РґРЅСЏ СЏ РјРѕРіСѓ РЅР°С‚Рё РµРіРѕ РЅР° С‚СЂРµРЅРёСЂРѕРІРѕС‡РЅРѕР№ РїР»РѕС‰Р°РґРєРµ.");
 	
 	CreateInvItem		(hero, TPL_ARMOR_L);
 	
@@ -160,7 +160,7 @@ instance  TPL_1402_GorNaToth_ARMOR (C_INFO)
 	information		= TPL_1402_GorNaToth_ARMOR_Info;
 	important		= 0;
 	permanent		= 1;
-	description		= "Мне нужны доспехи получше. "; 
+	description		= "РњРЅРµ РЅСѓР¶РЅС‹ РґРѕСЃРїРµС…Рё РїРѕР»СѓС‡С€Рµ. "; 
 };
 
 FUNC int  TPL_1402_GorNaToth_ARMOR_Condition()
@@ -173,8 +173,8 @@ FUNC int  TPL_1402_GorNaToth_ARMOR_Condition()
 };
 FUNC void  TPL_1402_GorNaToth_ARMOR_Info()
 {
-	AI_Output				(other, self,"Info_GorNaToth_ARMOR_15_01"); //Мне нужны доспехи получше. 
-	AI_Output				(self, other,"Info_GorNaToth_ARMOR_11_02"); //У меня есть хорошие доспехи, но тебе придется внести щедрое пожертвование на нужды Братства!
+	AI_Output				(other, self,"Info_GorNaToth_ARMOR_15_01"); //РњРЅРµ РЅСѓР¶РЅС‹ РґРѕСЃРїРµС…Рё РїРѕР»СѓС‡С€Рµ. 
+	AI_Output				(self, other,"Info_GorNaToth_ARMOR_11_02"); //РЈ РјРµРЅСЏ РµСЃС‚СЊ С…РѕСЂРѕС€РёРµ РґРѕСЃРїРµС…Рё, РЅРѕ С‚РµР±Рµ РїСЂРёРґРµС‚СЃСЏ РІРЅРµСЃС‚Рё С‰РµРґСЂРѕРµ РїРѕР¶РµСЂС‚РІРѕРІР°РЅРёРµ РЅР° РЅСѓР¶РґС‹ Р‘СЂР°С‚СЃС‚РІР°!
 
 	Info_ClearChoices		(TPL_1402_GorNaToth_ARMOR);
 	Info_AddChoice			(TPL_1402_GorNaToth_ARMOR,	DIALOG_BACK	,	TPL_1402_GorNaToth_ARMOR_BACK);	
@@ -186,19 +186,19 @@ FUNC void  TPL_1402_GorNaToth_ARMOR_Info()
 
 func void TPL_1402_GorNaToth_ARMOR_M ()
 {
-	AI_Output				(hero, self,"Info_GorNaToth_ARMOR_M_15_01"); //Мне нужны средние доспехи Стража.
+	AI_Output				(hero, self,"Info_GorNaToth_ARMOR_M_15_01"); //РњРЅРµ РЅСѓР¶РЅС‹ СЃСЂРµРґРЅРёРµ РґРѕСЃРїРµС…Рё РЎС‚СЂР°Р¶Р°.
 
 	if (Kapitel < 3)
 	{
-		AI_Output			(self, hero,"Info_GorNaToth_ARMOR_M_11_02"); //Для этого у тебя еще недостаточно опыта. Покажи себя достойным Стражем, и ты заслужишь право носить лучшие доспехи.
+		AI_Output			(self, hero,"Info_GorNaToth_ARMOR_M_11_02"); //Р”Р»СЏ СЌС‚РѕРіРѕ Сѓ С‚РµР±СЏ РµС‰Рµ РЅРµРґРѕСЃС‚Р°С‚РѕС‡РЅРѕ РѕРїС‹С‚Р°. РџРѕРєР°Р¶Рё СЃРµР±СЏ РґРѕСЃС‚РѕР№РЅС‹Рј РЎС‚СЂР°Р¶РµРј, Рё С‚С‹ Р·Р°СЃР»СѓР¶РёС€СЊ РїСЂР°РІРѕ РЅРѕСЃРёС‚СЊ Р»СѓС‡С€РёРµ РґРѕСЃРїРµС…Рё.
 	}
 	else if (Npc_HasItems(hero, ItMiNugget)<VALUE_TPL_ARMOR_M)
 	{
-		AI_Output			(self, hero,"Info_GorNaToth_ARMOR_M_11_03"); //Как только у тебя появится возможность внести пожертвование на нужды Братства, ты получишь новые доспехи.
+		AI_Output			(self, hero,"Info_GorNaToth_ARMOR_M_11_03"); //РљР°Рє С‚РѕР»СЊРєРѕ Сѓ С‚РµР±СЏ РїРѕСЏРІРёС‚СЃСЏ РІРѕР·РјРѕР¶РЅРѕСЃС‚СЊ РІРЅРµСЃС‚Рё РїРѕР¶РµСЂС‚РІРѕРІР°РЅРёРµ РЅР° РЅСѓР¶РґС‹ Р‘СЂР°С‚СЃС‚РІР°, С‚С‹ РїРѕР»СѓС‡РёС€СЊ РЅРѕРІС‹Рµ РґРѕСЃРїРµС…Рё.
 	}
 	else
 	{
-		AI_Output			(self, hero,"Info_GorNaToth_ARMOR_M_11_04"); //Теперь, когда ты можешь внести пожертвование, ты получишь новые доспехи.
+		AI_Output			(self, hero,"Info_GorNaToth_ARMOR_M_11_04"); //РўРµРїРµСЂСЊ, РєРѕРіРґР° С‚С‹ РјРѕР¶РµС€СЊ РІРЅРµСЃС‚Рё РїРѕР¶РµСЂС‚РІРѕРІР°РЅРёРµ, С‚С‹ РїРѕР»СѓС‡РёС€СЊ РЅРѕРІС‹Рµ РґРѕСЃРїРµС…Рё.
 		B_GiveInvItems	    (hero, self, ItMiNugget,	VALUE_TPL_ARMOR_M);
 		
 		CreateInvItem		(hero, TPL_ARMOR_M);
@@ -215,23 +215,23 @@ func void TPL_1402_GorNaToth_ARMOR_M ()
 
 func void TPL_1402_GorNaToth_ARMOR_H ()
 {
-	AI_Output				(hero, self,"Info_GorNaToth_ARMOR_H_15_01"); //Мне нужны тяжелые доспехи Стража.
+	AI_Output				(hero, self,"Info_GorNaToth_ARMOR_H_15_01"); //РњРЅРµ РЅСѓР¶РЅС‹ С‚СЏР¶РµР»С‹Рµ РґРѕСЃРїРµС…Рё РЎС‚СЂР°Р¶Р°.
 
 	if (Kapitel < 4)
 	{
-		AI_Output			(self, hero,"Info_GorNaToth_ARMOR_H_11_02"); //Для этого у тебя еще недостаточно опыта. Прояви себя достойным членом нашего Братства, и ты заслужишь право носить столь совершенные доспехи.
+		AI_Output			(self, hero,"Info_GorNaToth_ARMOR_H_11_02"); //Р”Р»СЏ СЌС‚РѕРіРѕ Сѓ С‚РµР±СЏ РµС‰Рµ РЅРµРґРѕСЃС‚Р°С‚РѕС‡РЅРѕ РѕРїС‹С‚Р°. РџСЂРѕСЏРІРё СЃРµР±СЏ РґРѕСЃС‚РѕР№РЅС‹Рј С‡Р»РµРЅРѕРј РЅР°С€РµРіРѕ Р‘СЂР°С‚СЃС‚РІР°, Рё С‚С‹ Р·Р°СЃР»СѓР¶РёС€СЊ РїСЂР°РІРѕ РЅРѕСЃРёС‚СЊ СЃС‚РѕР»СЊ СЃРѕРІРµСЂС€РµРЅРЅС‹Рµ РґРѕСЃРїРµС…Рё.
 	}
 	else if (Npc_HasItems(hero, ItMiNugget)<VALUE_TPL_ARMOR_H)
 	{
-		AI_Output			(self, hero,"Info_GorNaToth_ARMOR_H_11_03"); //Ты заслужил право носить эти доспехи, но у тебя недостаточно руды, для того чтобы сделать пожертвование на нужды Братства!
+		AI_Output			(self, hero,"Info_GorNaToth_ARMOR_H_11_03"); //РўС‹ Р·Р°СЃР»СѓР¶РёР» РїСЂР°РІРѕ РЅРѕСЃРёС‚СЊ СЌС‚Рё РґРѕСЃРїРµС…Рё, РЅРѕ Сѓ С‚РµР±СЏ РЅРµРґРѕСЃС‚Р°С‚РѕС‡РЅРѕ СЂСѓРґС‹, РґР»СЏ С‚РѕРіРѕ С‡С‚РѕР±С‹ СЃРґРµР»Р°С‚СЊ РїРѕР¶РµСЂС‚РІРѕРІР°РЅРёРµ РЅР° РЅСѓР¶РґС‹ Р‘СЂР°С‚СЃС‚РІР°!
 	}
 	else
 	{
-		AI_Output			(self, hero,"Info_GorNaToth_ARMOR_H_11_04"); //Теперь ты будешь носить эти доспехи в знак высочайшей чести, оказанной тебе Братством.
+		AI_Output			(self, hero,"Info_GorNaToth_ARMOR_H_11_04"); //РўРµРїРµСЂСЊ С‚С‹ Р±СѓРґРµС€СЊ РЅРѕСЃРёС‚СЊ СЌС‚Рё РґРѕСЃРїРµС…Рё РІ Р·РЅР°Рє РІС‹СЃРѕС‡Р°Р№С€РµР№ С‡РµСЃС‚Рё, РѕРєР°Р·Р°РЅРЅРѕР№ С‚РµР±Рµ Р‘СЂР°С‚СЃС‚РІРѕРј.
 
 		B_GiveInvItems  	(hero, self, ItMiNugget,VALUE_TPL_ARMOR_H);
 
-		CreateInvItem		(self, ItAmArrow);				//SN: Kronkelgegenstand, damit die Bildschrimausgabe "1 Gegenstand erhalten" stimmt (Rьstung geht nicht, da dann immer Gor Na Toth seine eigene erst auszieht, und eine Sekunde nackt dasteht)
+		CreateInvItem		(self, ItAmArrow);				//SN: Kronkelgegenstand, damit die Bildschrimausgabe "1 Gegenstand erhalten" stimmt (RСЊstung geht nicht, da dann immer Gor Na Toth seine eigene erst auszieht, und eine Sekunde nackt dasteht)
 		B_GiveInvItems  	(self, hero, ItAmArrow, 1);
 		Npc_RemoveInvItem	(hero,	ItAmArrow);
 
@@ -244,8 +244,8 @@ func void TPL_1402_GorNaToth_ARMOR_H ()
 
 func void TPL_1402_GorNaToth_ARMOR_BACK ()
 {
-	AI_Output				(hero, self,"Info_GorNaToth_ARMOR_BACK_15_01"); //Я передумал!
-	AI_Output				(self, hero,"Info_GorNaToth_ARMOR_BACK_11_02"); //Как хочешь. Ты знаешь, где меня найти.
+	AI_Output				(hero, self,"Info_GorNaToth_ARMOR_BACK_15_01"); //РЇ РїРµСЂРµРґСѓРјР°Р»!
+	AI_Output				(self, hero,"Info_GorNaToth_ARMOR_BACK_11_02"); //РљР°Рє С…РѕС‡РµС€СЊ. РўС‹ Р·РЅР°РµС€СЊ, РіРґРµ РјРµРЅСЏ РЅР°Р№С‚Рё.
 
 	Info_ClearChoices		(TPL_1402_GorNaToth_ARMOR);
 };
@@ -261,7 +261,7 @@ INSTANCE TPL_1402_GorNaToth_Teach(C_INFO)
 	condition	= TPL_1402_GorNaToth_Teach_Condition;
 	information	= TPL_1402_GorNaToth_Teach_Info;
 	permanent	= 1;
-	description = "Ты можешь чему-нибудь научить меня?";
+	description = "РўС‹ РјРѕР¶РµС€СЊ С‡РµРјСѓ-РЅРёР±СѓРґСЊ РЅР°СѓС‡РёС‚СЊ РјРµРЅСЏ?";
 };                       
 
 FUNC INT TPL_1402_GorNaToth_Teach_Condition()
@@ -274,8 +274,8 @@ FUNC INT TPL_1402_GorNaToth_Teach_Condition()
 
 FUNC VOID TPL_1402_GorNaToth_Teach_Info()
 {
-	AI_Output			(other,self,"TPL_1402_GorNaToth_Teach_15_00"); //Ты можешь чему-нибудь научить меня?
-	AI_Output			(self,other,"TPL_1402_GorNaToth_Teach_11_01"); //Сила разума не менее важна, чем сила и ловкость тела воина.
+	AI_Output			(other,self,"TPL_1402_GorNaToth_Teach_15_00"); //РўС‹ РјРѕР¶РµС€СЊ С‡РµРјСѓ-РЅРёР±СѓРґСЊ РЅР°СѓС‡РёС‚СЊ РјРµРЅСЏ?
+	AI_Output			(self,other,"TPL_1402_GorNaToth_Teach_11_01"); //РЎРёР»Р° СЂР°Р·СѓРјР° РЅРµ РјРµРЅРµРµ РІР°Р¶РЅР°, С‡РµРј СЃРёР»Р° Рё Р»РѕРІРєРѕСЃС‚СЊ С‚РµР»Р° РІРѕРёРЅР°.
 	
 	Info_ClearChoices	(TPL_1402_GorNaToth_Teach);
 	Info_AddChoice		(TPL_1402_GorNaToth_Teach,DIALOG_BACK									,TPL_1402_GorNaToth_Teach_BACK);
@@ -289,7 +289,7 @@ FUNC VOID TPL_1402_GorNaToth_Teach_Info()
 	if (log_gornatothtrain == FALSE)
 	{
 		Log_CreateTopic   	(GE_TeacherPSI,LOG_NOTE);
-		B_LogEntry			(GE_TeacherPSI,"Страж Гор На Тоф может помочь мне тренировать свою СИЛУ, ЛОВКОСТЬ и МАНУ.");
+		B_LogEntry			(GE_TeacherPSI,"РЎС‚СЂР°Р¶ Р“РѕСЂ РќР° РўРѕС„ РјРѕР¶РµС‚ РїРѕРјРѕС‡СЊ РјРЅРµ С‚СЂРµРЅРёСЂРѕРІР°С‚СЊ СЃРІРѕСЋ РЎРР›РЈ, Р›РћР’РљРћРЎРўР¬ Рё РњРђРќРЈ.");
 		log_gornatothtrain = TRUE;
 	};
 };
@@ -404,20 +404,20 @@ FUNC void  TPL_1402_GorNaToth_TRAIN_Info()
 	if	(log_gornatothfight == FALSE) 
 	{
 		Log_CreateTopic   	(GE_TeacherPSI,LOG_NOTE);
-		B_LogEntry			(GE_TeacherPSI,"Страж Гор На Тоф может научить меня сражаться одноручным оружием.");
+		B_LogEntry			(GE_TeacherPSI,"РЎС‚СЂР°Р¶ Р“РѕСЂ РќР° РўРѕС„ РјРѕР¶РµС‚ РЅР°СѓС‡РёС‚СЊ РјРµРЅСЏ СЃСЂР°Р¶Р°С‚СЊСЃСЏ РѕРґРЅРѕСЂСѓС‡РЅС‹Рј РѕСЂСѓР¶РёРµРј.");
 		log_gornatothfight = TRUE;
 	};
-	AI_Output (other, self,"TPL_1402_GorNaToth_TRAIN_Info_15_00"); //Я хотел бы потренироваться с одноручным оружием.
+	AI_Output (other, self,"TPL_1402_GorNaToth_TRAIN_Info_15_00"); //РЇ С…РѕС‚РµР» Р±С‹ РїРѕС‚СЂРµРЅРёСЂРѕРІР°С‚СЊСЃСЏ СЃ РѕРґРЅРѕСЂСѓС‡РЅС‹Рј РѕСЂСѓР¶РёРµРј.
 	
 	if B_GiveSkill(hero,NPC_TALENT_1H,1,LPCOST_TALENT_1H_1)
 	{
-		AI_Output			(self,other,"TPL_1402_GorNaToth_TRAIN_11_01"); //Хорошая мысль! Но прежде чем заниматься техникой, тебе нужно научиться правильно держать оружие.
-		AI_Output			(self,other,"TPL_1402_GorNaToth_TRAIN_11_02"); //Новички часто держатся за рукоять двумя руками. Это неправильно, к этому лучше не привыкать.
-		AI_Output			(self,other,"TPL_1402_GorNaToth_TRAIN_11_03"); //Возьмись за рукоять одной рукой. Лезвие вверх, и не держи его неподвижно.
-		AI_Output			(self,other,"TPL_1402_GorNaToth_TRAIN_11_04"); //Оружие должно стать продолжением твоей руки, вписываться в твои движения. Это поможет ускорить атаку.
-		AI_Output			(self,other,"TPL_1402_GorNaToth_TRAIN_11_05"); //Если запомнишь все, о чем я тебе говорил, твои удары станут более изящными и быстрыми.
-		AI_Output			(self,other,"TPL_1402_GorNaToth_TRAIN_11_06"); //Да, и вот еще что: некоторые удары куда эффективнее остальных. У новичка не так много шансов повторить их.
-		AI_Output			(self,other,"TPL_1402_GorNaToth_TRAIN_11_07"); //Но чем больше ты будешь тренироваться, тем лучше они у тебя будут получаться.
+		AI_Output			(self,other,"TPL_1402_GorNaToth_TRAIN_11_01"); //РҐРѕСЂРѕС€Р°СЏ РјС‹СЃР»СЊ! РќРѕ РїСЂРµР¶РґРµ С‡РµРј Р·Р°РЅРёРјР°С‚СЊСЃСЏ С‚РµС…РЅРёРєРѕР№, С‚РµР±Рµ РЅСѓР¶РЅРѕ РЅР°СѓС‡РёС‚СЊСЃСЏ РїСЂР°РІРёР»СЊРЅРѕ РґРµСЂР¶Р°С‚СЊ РѕСЂСѓР¶РёРµ.
+		AI_Output			(self,other,"TPL_1402_GorNaToth_TRAIN_11_02"); //РќРѕРІРёС‡РєРё С‡Р°СЃС‚Рѕ РґРµСЂР¶Р°С‚СЃСЏ Р·Р° СЂСѓРєРѕСЏС‚СЊ РґРІСѓРјСЏ СЂСѓРєР°РјРё. Р­С‚Рѕ РЅРµРїСЂР°РІРёР»СЊРЅРѕ, Рє СЌС‚РѕРјСѓ Р»СѓС‡С€Рµ РЅРµ РїСЂРёРІС‹РєР°С‚СЊ.
+		AI_Output			(self,other,"TPL_1402_GorNaToth_TRAIN_11_03"); //Р’РѕР·СЊРјРёСЃСЊ Р·Р° СЂСѓРєРѕСЏС‚СЊ РѕРґРЅРѕР№ СЂСѓРєРѕР№. Р›РµР·РІРёРµ РІРІРµСЂС…, Рё РЅРµ РґРµСЂР¶Рё РµРіРѕ РЅРµРїРѕРґРІРёР¶РЅРѕ.
+		AI_Output			(self,other,"TPL_1402_GorNaToth_TRAIN_11_04"); //РћСЂСѓР¶РёРµ РґРѕР»Р¶РЅРѕ СЃС‚Р°С‚СЊ РїСЂРѕРґРѕР»Р¶РµРЅРёРµРј С‚РІРѕРµР№ СЂСѓРєРё, РІРїРёСЃС‹РІР°С‚СЊСЃСЏ РІ С‚РІРѕРё РґРІРёР¶РµРЅРёСЏ. Р­С‚Рѕ РїРѕРјРѕР¶РµС‚ СѓСЃРєРѕСЂРёС‚СЊ Р°С‚Р°РєСѓ.
+		AI_Output			(self,other,"TPL_1402_GorNaToth_TRAIN_11_05"); //Р•СЃР»Рё Р·Р°РїРѕРјРЅРёС€СЊ РІСЃРµ, Рѕ С‡РµРј СЏ С‚РµР±Рµ РіРѕРІРѕСЂРёР», С‚РІРѕРё СѓРґР°СЂС‹ СЃС‚Р°РЅСѓС‚ Р±РѕР»РµРµ РёР·СЏС‰РЅС‹РјРё Рё Р±С‹СЃС‚СЂС‹РјРё.
+		AI_Output			(self,other,"TPL_1402_GorNaToth_TRAIN_11_06"); //Р”Р°, Рё РІРѕС‚ РµС‰Рµ С‡С‚Рѕ: РЅРµРєРѕС‚РѕСЂС‹Рµ СѓРґР°СЂС‹ РєСѓРґР° СЌС„С„РµРєС‚РёРІРЅРµРµ РѕСЃС‚Р°Р»СЊРЅС‹С…. РЈ РЅРѕРІРёС‡РєР° РЅРµ С‚Р°Рє РјРЅРѕРіРѕ С€Р°РЅСЃРѕРІ РїРѕРІС‚РѕСЂРёС‚СЊ РёС….
+		AI_Output			(self,other,"TPL_1402_GorNaToth_TRAIN_11_07"); //РќРѕ С‡РµРј Р±РѕР»СЊС€Рµ С‚С‹ Р±СѓРґРµС€СЊ С‚СЂРµРЅРёСЂРѕРІР°С‚СЊСЃСЏ, С‚РµРј Р»СѓС‡С€Рµ РѕРЅРё Сѓ С‚РµР±СЏ Р±СѓРґСѓС‚ РїРѕР»СѓС‡Р°С‚СЊСЃСЏ.
 		TPL_1402_GorNaToth_TRAIN.permanent = 0;
 
 		AI_StopProcessInfos	(self);
@@ -449,13 +449,13 @@ FUNC int  TPL_1402_GorNaToth_TRAINAGAIN_Condition()
 };
 FUNC void  TPL_1402_GorNaToth_TRAINAGAIN_Info()
 {
-	AI_Output (other, self,"TPL_1402_GorNaToth_TRAINAGAIN_Info_15_01"); //Расскажи мне еще что-нибудь про оружие для одной руки.
+	AI_Output (other, self,"TPL_1402_GorNaToth_TRAINAGAIN_Info_15_01"); //Р Р°СЃСЃРєР°Р¶Рё РјРЅРµ РµС‰Рµ С‡С‚Рѕ-РЅРёР±СѓРґСЊ РїСЂРѕ РѕСЂСѓР¶РёРµ РґР»СЏ РѕРґРЅРѕР№ СЂСѓРєРё.
 	if B_GiveSkill(hero,NPC_TALENT_1H,2,LPCOST_TALENT_1H_2)
 	{
-		AI_Output (self, other,"TPL_1402_GorNaToth_TRAINAGAIN_Info_11_02"); //Ладно, ты уже знаешь главное. Если держать клинок немного ниже, первый удар получится более сильным.
-		AI_Output (self, other,"TPL_1402_GorNaToth_TRAINAGAIN_Info_11_03"); //Рубящий удар, помнишь? Ладно, теперь о том, как нужно двигаться. Наносишь два удара и разворачиваешься - враг наверняка растеряется, а ты окажешься в выгодном положении.
-		AI_Output (self, other,"TPL_1402_GorNaToth_TRAINAGAIN_Info_11_04"); //Еще один взмах клинком справа налево...
-		AI_Output (self, other,"TPL_1402_GorNaToth_TRAINAGAIN_Info_11_05"); //...и возвращаешься в исходную стойку. Главное, не забывай тренироваться. Иди, отрабатывай технику боя.
+		AI_Output (self, other,"TPL_1402_GorNaToth_TRAINAGAIN_Info_11_02"); //Р›Р°РґРЅРѕ, С‚С‹ СѓР¶Рµ Р·РЅР°РµС€СЊ РіР»Р°РІРЅРѕРµ. Р•СЃР»Рё РґРµСЂР¶Р°С‚СЊ РєР»РёРЅРѕРє РЅРµРјРЅРѕРіРѕ РЅРёР¶Рµ, РїРµСЂРІС‹Р№ СѓРґР°СЂ РїРѕР»СѓС‡РёС‚СЃСЏ Р±РѕР»РµРµ СЃРёР»СЊРЅС‹Рј.
+		AI_Output (self, other,"TPL_1402_GorNaToth_TRAINAGAIN_Info_11_03"); //Р СѓР±СЏС‰РёР№ СѓРґР°СЂ, РїРѕРјРЅРёС€СЊ? Р›Р°РґРЅРѕ, С‚РµРїРµСЂСЊ Рѕ С‚РѕРј, РєР°Рє РЅСѓР¶РЅРѕ РґРІРёРіР°С‚СЊСЃСЏ. РќР°РЅРѕСЃРёС€СЊ РґРІР° СѓРґР°СЂР° Рё СЂР°Р·РІРѕСЂР°С‡РёРІР°РµС€СЊСЃСЏ - РІСЂР°Рі РЅР°РІРµСЂРЅСЏРєР° СЂР°СЃС‚РµСЂСЏРµС‚СЃСЏ, Р° С‚С‹ РѕРєР°Р¶РµС€СЊСЃСЏ РІ РІС‹РіРѕРґРЅРѕРј РїРѕР»РѕР¶РµРЅРёРё.
+		AI_Output (self, other,"TPL_1402_GorNaToth_TRAINAGAIN_Info_11_04"); //Р•С‰Рµ РѕРґРёРЅ РІР·РјР°С… РєР»РёРЅРєРѕРј СЃРїСЂР°РІР° РЅР°Р»РµРІРѕ...
+		AI_Output (self, other,"TPL_1402_GorNaToth_TRAINAGAIN_Info_11_05"); //...Рё РІРѕР·РІСЂР°С‰Р°РµС€СЊСЃСЏ РІ РёСЃС…РѕРґРЅСѓСЋ СЃС‚РѕР№РєСѓ. Р“Р»Р°РІРЅРѕРµ, РЅРµ Р·Р°Р±С‹РІР°Р№ С‚СЂРµРЅРёСЂРѕРІР°С‚СЊСЃСЏ. РРґРё, РѕС‚СЂР°Р±Р°С‚С‹РІР°Р№ С‚РµС…РЅРёРєСѓ Р±РѕСЏ.
 		TPL_1402_GorNaToth_TRAINAGAIN.permanent = 0;
 
 		AI_StopProcessInfos	(self);

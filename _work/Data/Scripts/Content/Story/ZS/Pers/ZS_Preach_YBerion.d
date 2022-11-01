@@ -1,7 +1,7 @@
 /****************************************************
 *               personalisierter TA                 *
-*   Y´Berion sucht PREACH-FP: beginnt Ansprache     *
-*   Übernahme in Predigt-Sizuation von Y´Berion?    *
+*   YÒ‘Berion sucht PREACH-FP: beginnt Ansprache     *
+*   Ð¬bernahme in Predigt-Sizuation von YÒ‘Berion?    *
 ****************************************************/
 
 
@@ -10,7 +10,7 @@ func void ZS_Preach_YBerion ()  //### Freepoint in der Welt fehlt noch
     PrintDebugNpc(PD_TA_FRAME,"ZS_Preach_YBerion");
     
 	B_SetPerception (self);    
-	AI_SetWalkmode (self,NPC_WALK);		// Walkmode für den Zustand 
+	AI_SetWalkmode (self,NPC_WALK);		// Walkmode fÑŒr den Zustand 
 	if !(Npc_IsOnFP(self,"PREACH"))
 	{
 		AI_GotoWP(self, self.wp);               // Gehe zum Tagesablaufstart

@@ -33,7 +33,7 @@ INSTANCE DIA_Silas_Hehler(C_Info)
 	condition	= DIA_Silas_Hehler_Condition;
 	information	= DIA_Silas_Hehler_Info;
 	permanent	= 0;
-	description = "Как дела?";
+	description = "РљР°Рє РґРµР»Р°?";
 };                       
 
 FUNC INT DIA_Silas_Hehler_Condition()
@@ -43,9 +43,9 @@ FUNC INT DIA_Silas_Hehler_Condition()
 
 FUNC VOID DIA_Silas_Hehler_Info()
 {	
-	AI_Output (other, self,"DIA_Silas_Hehler_15_00"); //Как жизнь?
-	AI_Output (self, other,"DIA_Silas_Hehler_06_01"); //Здорово! Мы сменяли наш рисовый шнапс на руду.
-	AI_Output (self, other,"DIA_Silas_Hehler_06_02"); //Ну, и руды получили достаточно. А где нашим парням тратить ее, как не здесь?
+	AI_Output (other, self,"DIA_Silas_Hehler_15_00"); //РљР°Рє Р¶РёР·РЅСЊ?
+	AI_Output (self, other,"DIA_Silas_Hehler_06_01"); //Р—РґРѕСЂРѕРІРѕ! РњС‹ СЃРјРµРЅСЏР»Рё РЅР°С€ СЂРёСЃРѕРІС‹Р№ С€РЅР°РїСЃ РЅР° СЂСѓРґСѓ.
+	AI_Output (self, other,"DIA_Silas_Hehler_06_02"); //РќСѓ, Рё СЂСѓРґС‹ РїРѕР»СѓС‡РёР»Рё РґРѕСЃС‚Р°С‚РѕС‡РЅРѕ. Рђ РіРґРµ РЅР°С€РёРј РїР°СЂРЅСЏРј С‚СЂР°С‚РёС‚СЊ РµРµ, РєР°Рє РЅРµ Р·РґРµСЃСЊ?
 };
 
 // ************************************************************
@@ -59,7 +59,7 @@ INSTANCE DIA_Silas_Trade(C_Info)
 	condition	= DIA_Silas_Trade_Condition;
 	information	= DIA_Silas_Trade_Info;
 	permanent	= 0;
-	description = "Я хочу пить.";
+	description = "РЇ С…РѕС‡Сѓ РїРёС‚СЊ.";
 	trade		= 1;
 };                       
 
@@ -70,6 +70,6 @@ FUNC INT DIA_Silas_Trade_Condition()
 
 FUNC VOID DIA_Silas_Trade_Info()
 {	
-	AI_Output (other, self,"DIA_Silas_Trade_15_00"); //Я хочу пить.
-	AI_Output (self, other,"DIA_Silas_Trade_06_01"); //Нет проблем, если у тебя есть деньги.
+	AI_Output (other, self,"DIA_Silas_Trade_15_00"); //РЇ С…РѕС‡Сѓ РїРёС‚СЊ.
+	AI_Output (self, other,"DIA_Silas_Trade_06_01"); //РќРµС‚ РїСЂРѕР±Р»РµРј, РµСЃР»Рё Сѓ С‚РµР±СЏ РµСЃС‚СЊ РґРµРЅСЊРіРё.
 };

@@ -2,7 +2,7 @@ instance BAU_912_Jeremiah (Npc_Default)
 {
 	//-------- primary data --------
 	
-	name 		=	"Иеремия";
+	name 		=	"РРµСЂРµРјРёСЏ";
 	npctype		=	NPCTYPE_MAIN;
 	guild 		=	GIL_BAU;      
 	level 		=	7;

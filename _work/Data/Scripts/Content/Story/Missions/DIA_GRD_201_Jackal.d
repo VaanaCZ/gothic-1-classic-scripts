@@ -48,32 +48,32 @@ FUNC INT Info_Jackal_Hello_Condition()
 };
 FUNC VOID Info_Jackal_Hello_Info()
 {	
-	AI_Output (self, other,"Info_Jackal_Hello_07_00"); //А! Кто-то новенький!
-	AI_Output (other, self,"Info_Jackal_Hello_15_01"); //Что тебе нужно?
-	AI_Output (self, other,"Info_Jackal_Hello_07_02"); //Я хочу предложить тебе помощь. Ты здесь новенький, а новички всегда попадают в неприятности... Ты можешь избежать их по очень доступной цене.
-	AI_Output (self, other,"Info_Jackal_Hello_07_03"); //Всего десять кусков руды, парень! Здесь даже говорить не о чем.
+	AI_Output (self, other,"Info_Jackal_Hello_07_00"); //Рђ! РљС‚Рѕ-С‚Рѕ РЅРѕРІРµРЅСЊРєРёР№!
+	AI_Output (other, self,"Info_Jackal_Hello_15_01"); //Р§С‚Рѕ С‚РµР±Рµ РЅСѓР¶РЅРѕ?
+	AI_Output (self, other,"Info_Jackal_Hello_07_02"); //РЇ С…РѕС‡Сѓ РїСЂРµРґР»РѕР¶РёС‚СЊ С‚РµР±Рµ РїРѕРјРѕС‰СЊ. РўС‹ Р·РґРµСЃСЊ РЅРѕРІРµРЅСЊРєРёР№, Р° РЅРѕРІРёС‡РєРё РІСЃРµРіРґР° РїРѕРїР°РґР°СЋС‚ РІ РЅРµРїСЂРёСЏС‚РЅРѕСЃС‚Рё... РўС‹ РјРѕР¶РµС€СЊ РёР·Р±РµР¶Р°С‚СЊ РёС… РїРѕ РѕС‡РµРЅСЊ РґРѕСЃС‚СѓРїРЅРѕР№ С†РµРЅРµ.
+	AI_Output (self, other,"Info_Jackal_Hello_07_03"); //Р’СЃРµРіРѕ РґРµСЃСЏС‚СЊ РєСѓСЃРєРѕРІ СЂСѓРґС‹, РїР°СЂРµРЅСЊ! Р—РґРµСЃСЊ РґР°Р¶Рµ РіРѕРІРѕСЂРёС‚СЊ РЅРµ Рѕ С‡РµРј.
 	
 	Info_ClearChoices	(Info_Jackal_Hello);
-	Info_AddChoice		(Info_Jackal_Hello,"А что если я откажусь платить?",Info_Jackal_Hello_WhatIf);
-	Info_AddChoice		(Info_Jackal_Hello,"И что я получу за нее?",Info_Jackal_Hello_WhatDoIGet);
-	Info_AddChoice		(Info_Jackal_Hello,"Вот десять кусков. И ты должен будешь помочь мне.",Info_Jackal_Hello_Pay);
+	Info_AddChoice		(Info_Jackal_Hello,"Рђ С‡С‚Рѕ РµСЃР»Рё СЏ РѕС‚РєР°Р¶СѓСЃСЊ РїР»Р°С‚РёС‚СЊ?",Info_Jackal_Hello_WhatIf);
+	Info_AddChoice		(Info_Jackal_Hello,"Р С‡С‚Рѕ СЏ РїРѕР»СѓС‡Сѓ Р·Р° РЅРµРµ?",Info_Jackal_Hello_WhatDoIGet);
+	Info_AddChoice		(Info_Jackal_Hello,"Р’РѕС‚ РґРµСЃСЏС‚СЊ РєСѓСЃРєРѕРІ. Р С‚С‹ РґРѕР»Р¶РµРЅ Р±СѓРґРµС€СЊ РїРѕРјРѕС‡СЊ РјРЅРµ.",Info_Jackal_Hello_Pay);
 };
 
 func void Info_Jackal_Hello_Pay()
 {
-	AI_Output (other, self,"Info_Jackal_Hello_Pay_15_00"); //Вот десять кусков. И ты должен будешь помочь мне, если у меня возникнут проблемы.
+	AI_Output (other, self,"Info_Jackal_Hello_Pay_15_00"); //Р’РѕС‚ РґРµСЃСЏС‚СЊ РєСѓСЃРєРѕРІ. Р С‚С‹ РґРѕР»Р¶РµРЅ Р±СѓРґРµС€СЊ РїРѕРјРѕС‡СЊ РјРЅРµ, РµСЃР»Рё Сѓ РјРµРЅСЏ РІРѕР·РЅРёРєРЅСѓС‚ РїСЂРѕР±Р»РµРјС‹.
 	
 	if (Npc_HasItems(other,itminugget)>=10)
 	{
-		AI_Output (self, other,"Info_Jackal_Hello_Pay_07_01"); //Если я буду поблизости, можешь на меня рассчитывать. Меня всегда можно найти между рынком и южными воротами.
-		AI_Output (self, other,"Info_Jackal_Hello_Pay_07_02"); //Другие места охраняют Флетчер и Бладвин.
+		AI_Output (self, other,"Info_Jackal_Hello_Pay_07_01"); //Р•СЃР»Рё СЏ Р±СѓРґСѓ РїРѕР±Р»РёР·РѕСЃС‚Рё, РјРѕР¶РµС€СЊ РЅР° РјРµРЅСЏ СЂР°СЃСЃС‡РёС‚С‹РІР°С‚СЊ. РњРµРЅСЏ РІСЃРµРіРґР° РјРѕР¶РЅРѕ РЅР°Р№С‚Рё РјРµР¶РґСѓ СЂС‹РЅРєРѕРј Рё СЋР¶РЅС‹РјРё РІРѕСЂРѕС‚Р°РјРё.
+		AI_Output (self, other,"Info_Jackal_Hello_Pay_07_02"); //Р”СЂСѓРіРёРµ РјРµСЃС‚Р° РѕС…СЂР°РЅСЏСЋС‚ Р¤Р»РµС‚С‡РµСЂ Рё Р‘Р»Р°РґРІРёРЅ.
 		Jackal_ProtectionPaid = TRUE;
 		Npc_SetPermAttitude(self,ATT_FRIENDLY);
 		Jackal_PayDay = B_SetDayTolerance();
 	}
 	else
 	{
-		AI_Output (self, other,"Info_Jackal_Schutz_NoOre_07_00"); //Эй, кого ты пытаешься обмануть?! Возвращайся, когда у тебя будет руда!
+		AI_Output (self, other,"Info_Jackal_Schutz_NoOre_07_00"); //Р­Р№, РєРѕРіРѕ С‚С‹ РїС‹С‚Р°РµС€СЊСЃСЏ РѕР±РјР°РЅСѓС‚СЊ?! Р’РѕР·РІСЂР°С‰Р°Р№СЃСЏ, РєРѕРіРґР° Сѓ С‚РµР±СЏ Р±СѓРґРµС‚ СЂСѓРґР°!
 	};
 
 	Info_ClearChoices	(Info_Jackal_Hello);
@@ -81,26 +81,26 @@ func void Info_Jackal_Hello_Pay()
 
 func void Info_Jackal_Hello_WhatDoIGet()
 {
-	AI_Output (other, self,"Info_Jackal_Hello_WhatDoIGet_15_00"); //И что я получу за нее?
-	AI_Output (self, other,"Info_Jackal_Hello_WhatDoIGet_07_01"); //Пока ты находишься на моей территории, я буду защищать тебя.
-	AI_Output (self, other,"Info_Jackal_Hello_WhatDoIGet_07_02"); //Если у тебя возникнут проблемы с кем-нибудь из Нового Лагеря или болотные придурки начнут действовать тебе на нервы, можешь на меня рассчитывать.
-	AI_Output (self, other,"Info_Jackal_Hello_WhatDoIGet_07_03"); //Если поссоришься с кем-нибудь из рудокопов, мы встанем на сторону того, кто заплатит - видишь, как все просто.
-	AI_Output (other, self,"Info_Jackal_Hello_WhatDoIGet_15_04"); //А если мы оба заплатим?
-	AI_Output (self, other,"Info_Jackal_Hello_WhatDoIGet_07_05"); //Тогда мы просто будем сидеть и смотреть. Но такое редко случается.
+	AI_Output (other, self,"Info_Jackal_Hello_WhatDoIGet_15_00"); //Р С‡С‚Рѕ СЏ РїРѕР»СѓС‡Сѓ Р·Р° РЅРµРµ?
+	AI_Output (self, other,"Info_Jackal_Hello_WhatDoIGet_07_01"); //РџРѕРєР° С‚С‹ РЅР°С…РѕРґРёС€СЊСЃСЏ РЅР° РјРѕРµР№ С‚РµСЂСЂРёС‚РѕСЂРёРё, СЏ Р±СѓРґСѓ Р·Р°С‰РёС‰Р°С‚СЊ С‚РµР±СЏ.
+	AI_Output (self, other,"Info_Jackal_Hello_WhatDoIGet_07_02"); //Р•СЃР»Рё Сѓ С‚РµР±СЏ РІРѕР·РЅРёРєРЅСѓС‚ РїСЂРѕР±Р»РµРјС‹ СЃ РєРµРј-РЅРёР±СѓРґСЊ РёР· РќРѕРІРѕРіРѕ Р›Р°РіРµСЂСЏ РёР»Рё Р±РѕР»РѕС‚РЅС‹Рµ РїСЂРёРґСѓСЂРєРё РЅР°С‡РЅСѓС‚ РґРµР№СЃС‚РІРѕРІР°С‚СЊ С‚РµР±Рµ РЅР° РЅРµСЂРІС‹, РјРѕР¶РµС€СЊ РЅР° РјРµРЅСЏ СЂР°СЃСЃС‡РёС‚С‹РІР°С‚СЊ.
+	AI_Output (self, other,"Info_Jackal_Hello_WhatDoIGet_07_03"); //Р•СЃР»Рё РїРѕСЃСЃРѕСЂРёС€СЊСЃСЏ СЃ РєРµРј-РЅРёР±СѓРґСЊ РёР· СЂСѓРґРѕРєРѕРїРѕРІ, РјС‹ РІСЃС‚Р°РЅРµРј РЅР° СЃС‚РѕСЂРѕРЅСѓ С‚РѕРіРѕ, РєС‚Рѕ Р·Р°РїР»Р°С‚РёС‚ - РІРёРґРёС€СЊ, РєР°Рє РІСЃРµ РїСЂРѕСЃС‚Рѕ.
+	AI_Output (other, self,"Info_Jackal_Hello_WhatDoIGet_15_04"); //Рђ РµСЃР»Рё РјС‹ РѕР±Р° Р·Р°РїР»Р°С‚РёРј?
+	AI_Output (self, other,"Info_Jackal_Hello_WhatDoIGet_07_05"); //РўРѕРіРґР° РјС‹ РїСЂРѕСЃС‚Рѕ Р±СѓРґРµРј СЃРёРґРµС‚СЊ Рё СЃРјРѕС‚СЂРµС‚СЊ. РќРѕ С‚Р°РєРѕРµ СЂРµРґРєРѕ СЃР»СѓС‡Р°РµС‚СЃСЏ.
 };
 
 func void Info_Jackal_Hello_WhatIf()
 {
-	AI_Output (other, self,"Info_Jackal_Hello_WhatIf_15_00"); //А что если я откажусь платить?
-	AI_Output (self, other,"Info_Jackal_Hello_WhatIf_07_01"); //Эй, парень, не напрягайся так! Ты здесь еще новичок, тебе многое предстоит узнать. Я не хочу на тебя давить - подкопи руды, заплатишь, когда будешь готов.
-	AI_Output (self, other,"Info_Jackal_Hello_WhatIf_07_02"); //Ты можешь сделать это когда угодно, но пойми и меня - не стоит рассчитывать на мою помощь до тех пор, пока ты не поможешь мне справиться с текущими расходами.
-	Info_AddChoice		(Info_Jackal_Hello,"Еще увидимся.",Info_Jackal_Hello_Later);
+	AI_Output (other, self,"Info_Jackal_Hello_WhatIf_15_00"); //Рђ С‡С‚Рѕ РµСЃР»Рё СЏ РѕС‚РєР°Р¶СѓСЃСЊ РїР»Р°С‚РёС‚СЊ?
+	AI_Output (self, other,"Info_Jackal_Hello_WhatIf_07_01"); //Р­Р№, РїР°СЂРµРЅСЊ, РЅРµ РЅР°РїСЂСЏРіР°Р№СЃСЏ С‚Р°Рє! РўС‹ Р·РґРµСЃСЊ РµС‰Рµ РЅРѕРІРёС‡РѕРє, С‚РµР±Рµ РјРЅРѕРіРѕРµ РїСЂРµРґСЃС‚РѕРёС‚ СѓР·РЅР°С‚СЊ. РЇ РЅРµ С…РѕС‡Сѓ РЅР° С‚РµР±СЏ РґР°РІРёС‚СЊ - РїРѕРґРєРѕРїРё СЂСѓРґС‹, Р·Р°РїР»Р°С‚РёС€СЊ, РєРѕРіРґР° Р±СѓРґРµС€СЊ РіРѕС‚РѕРІ.
+	AI_Output (self, other,"Info_Jackal_Hello_WhatIf_07_02"); //РўС‹ РјРѕР¶РµС€СЊ СЃРґРµР»Р°С‚СЊ СЌС‚Рѕ РєРѕРіРґР° СѓРіРѕРґРЅРѕ, РЅРѕ РїРѕР№РјРё Рё РјРµРЅСЏ - РЅРµ СЃС‚РѕРёС‚ СЂР°СЃСЃС‡РёС‚С‹РІР°С‚СЊ РЅР° РјРѕСЋ РїРѕРјРѕС‰СЊ РґРѕ С‚РµС… РїРѕСЂ, РїРѕРєР° С‚С‹ РЅРµ РїРѕРјРѕР¶РµС€СЊ РјРЅРµ СЃРїСЂР°РІРёС‚СЊСЃСЏ СЃ С‚РµРєСѓС‰РёРјРё СЂР°СЃС…РѕРґР°РјРё.
+	Info_AddChoice		(Info_Jackal_Hello,"Р•С‰Рµ СѓРІРёРґРёРјСЃСЏ.",Info_Jackal_Hello_Later);
 };
 
 func void Info_Jackal_Hello_Later()
 {
-	AI_Output (other, self,"Info_Jackal_Hello_Later_15_00"); //Еще увидимся.
-	AI_Output (self, other,"Info_Jackal_Hello_Later_07_01"); //Ты только береги себя!
+	AI_Output (other, self,"Info_Jackal_Hello_Later_15_00"); //Р•С‰Рµ СѓРІРёРґРёРјСЃСЏ.
+	AI_Output (self, other,"Info_Jackal_Hello_Later_07_01"); //РўС‹ С‚РѕР»СЊРєРѕ Р±РµСЂРµРіРё СЃРµР±СЏ!
 	Jackal_ProtectionPaid = FALSE;
 	Npc_SetPermAttitude(self,ATT_NEUTRAL);
 	Jackal_PayDay = B_SetDayTolerance();
@@ -120,7 +120,7 @@ INSTANCE Info_Jackal_Schutz (C_INFO)
 	condition	= Info_Jackal_Schutz_Condition;
 	information	= Info_Jackal_Schutz_Info;
 	permanent	= 0;
-	description = "Я тут подумал о твоем предложении - вот десять кусков руды.";
+	description = "РЇ С‚СѓС‚ РїРѕРґСѓРјР°Р» Рѕ С‚РІРѕРµРј РїСЂРµРґР»РѕР¶РµРЅРёРё - РІРѕС‚ РґРµСЃСЏС‚СЊ РєСѓСЃРєРѕРІ СЂСѓРґС‹.";
 };                       
 
 FUNC INT Info_Jackal_Schutz_Condition()
@@ -135,15 +135,15 @@ FUNC VOID Info_Jackal_Schutz_Info()
 {	
 	if (Npc_HasItems(other,itminugget)>=10)
 	{
-		AI_Output (other, self,"Info_Jackal_Schutz_15_00"); //Я тут подумал о твоем предложении - вот десять кусков руды.
-		AI_Output (self, other,"Info_Jackal_Schutz_07_01"); //Ты сделал правильный выбор, парень! С этого момента я буду тебя защищать!
+		AI_Output (other, self,"Info_Jackal_Schutz_15_00"); //РЇ С‚СѓС‚ РїРѕРґСѓРјР°Р» Рѕ С‚РІРѕРµРј РїСЂРµРґР»РѕР¶РµРЅРёРё - РІРѕС‚ РґРµСЃСЏС‚СЊ РєСѓСЃРєРѕРІ СЂСѓРґС‹.
+		AI_Output (self, other,"Info_Jackal_Schutz_07_01"); //РўС‹ СЃРґРµР»Р°Р» РїСЂР°РІРёР»СЊРЅС‹Р№ РІС‹Р±РѕСЂ, РїР°СЂРµРЅСЊ! РЎ СЌС‚РѕРіРѕ РјРѕРјРµРЅС‚Р° СЏ Р±СѓРґСѓ С‚РµР±СЏ Р·Р°С‰РёС‰Р°С‚СЊ!
 		Jackal_ProtectionPaid = TRUE;
 		Npc_SetPermAttitude(self,ATT_FRIENDLY);
 		Jackal_PayDay = B_SetDayTolerance();
 	}
 	else
 	{
-		AI_Output (self, other,"Info_Jackal_Schutz_07_02"); //Я что-то не вижу руды, парень. Возвращайся, когда у тебя будет чем заплатить.
+		AI_Output (self, other,"Info_Jackal_Schutz_07_02"); //РЇ С‡С‚Рѕ-С‚Рѕ РЅРµ РІРёР¶Сѓ СЂСѓРґС‹, РїР°СЂРµРЅСЊ. Р’РѕР·РІСЂР°С‰Р°Р№СЃСЏ, РєРѕРіРґР° Сѓ С‚РµР±СЏ Р±СѓРґРµС‚ С‡РµРј Р·Р°РїР»Р°С‚РёС‚СЊ.
 	};
 };
 
@@ -159,7 +159,7 @@ INSTANCE Info_Jackal_PermPaid (C_INFO)
 	condition	= Info_Jackal_PermPaid_Condition;
 	information	= Info_Jackal_PermPaid_Info;
 	permanent	= 1;
-	description = "Как дела?";
+	description = "РљР°Рє РґРµР»Р°?";
 };                       
 
 FUNC INT Info_Jackal_PermPaid_Condition()
@@ -172,8 +172,8 @@ FUNC INT Info_Jackal_PermPaid_Condition()
 
 FUNC VOID Info_Jackal_PermPaid_Info()
 {	
-	AI_Output (other, self,"Info_Jackal_PermPaid_15_00"); //Ну и как идут дела?
-	AI_Output (self, other,"Info_Jackal_PermPaid_07_01"); //Ты всегда можешь рассчитывать на меня, малыш!
+	AI_Output (other, self,"Info_Jackal_PermPaid_15_00"); //РќСѓ Рё РєР°Рє РёРґСѓС‚ РґРµР»Р°?
+	AI_Output (self, other,"Info_Jackal_PermPaid_07_01"); //РўС‹ РІСЃРµРіРґР° РјРѕР¶РµС€СЊ СЂР°СЃСЃС‡РёС‚С‹РІР°С‚СЊ РЅР° РјРµРЅСЏ, РјР°Р»С‹С€!
 };
 
 /*------------------------------------------------------------------------
@@ -198,7 +198,7 @@ FUNC int  GRD_201_Jackal_WELCOME_Condition()
 };
 func void  GRD_201_Jackal_WELCOME_Info()
 {
-	AI_Output (self, other,"GRD_201_Jackal_WELCOME_Info_07_01"); //Я гляжу, ты быстро освоился здесь! Так держать, парень!
+	AI_Output (self, other,"GRD_201_Jackal_WELCOME_Info_07_01"); //РЇ РіР»СЏР¶Сѓ, С‚С‹ Р±С‹СЃС‚СЂРѕ РѕСЃРІРѕРёР»СЃСЏ Р·РґРµСЃСЊ! РўР°Рє РґРµСЂР¶Р°С‚СЊ, РїР°СЂРµРЅСЊ!
 };
 
 
@@ -238,33 +238,33 @@ FUNC VOID Info_Jackal_PAYDAY_Info()
 		||	(oldHeroGuild == GIL_KDF)
 		||	(oldHeroGuild == GIL_STT)
 		{
-			AI_Output		(self, other,"Info_Jackal_PAYDAY_07_01"); //Эй, ты только посмотри! Это один из тех предателей, что перешли в другой Лагерь!
-			AI_Output		(self, other,"Info_Jackal_PAYDAY_07_02"); //Тебе не стоило связываться с этими неудачниками - тогда бы ты до сих пор мог быть одним из нас!
+			AI_Output		(self, other,"Info_Jackal_PAYDAY_07_01"); //Р­Р№, С‚С‹ С‚РѕР»СЊРєРѕ РїРѕСЃРјРѕС‚СЂРё! Р­С‚Рѕ РѕРґРёРЅ РёР· С‚РµС… РїСЂРµРґР°С‚РµР»РµР№, С‡С‚Рѕ РїРµСЂРµС€Р»Рё РІ РґСЂСѓРіРѕР№ Р›Р°РіРµСЂСЊ!
+			AI_Output		(self, other,"Info_Jackal_PAYDAY_07_02"); //РўРµР±Рµ РЅРµ СЃС‚РѕРёР»Рѕ СЃРІСЏР·С‹РІР°С‚СЊСЃСЏ СЃ СЌС‚РёРјРё РЅРµСѓРґР°С‡РЅРёРєР°РјРё - С‚РѕРіРґР° Р±С‹ С‚С‹ РґРѕ СЃРёС… РїРѕСЂ РјРѕРі Р±С‹С‚СЊ РѕРґРЅРёРј РёР· РЅР°СЃ!
 		}
 		else
 		{
-			AI_Output		(self, other,"Info_Jackal_PAYDAY_07_03"); //Эй, ты только посмотри! Это тот самый тип из Нового Лагеря, из-за которого и разгорелся весь сыр-бор!
-			AI_Output		(self, other,"Info_Jackal_PAYDAY_07_04"); //Если бы тогда ты хоть немного пошевелил мозгами, сейчас бы ты был на нашей стороне - на стороне победителей!
+			AI_Output		(self, other,"Info_Jackal_PAYDAY_07_03"); //Р­Р№, С‚С‹ С‚РѕР»СЊРєРѕ РїРѕСЃРјРѕС‚СЂРё! Р­С‚Рѕ С‚РѕС‚ СЃР°РјС‹Р№ С‚РёРї РёР· РќРѕРІРѕРіРѕ Р›Р°РіРµСЂСЏ, РёР·-Р·Р° РєРѕС‚РѕСЂРѕРіРѕ Рё СЂР°Р·РіРѕСЂРµР»СЃСЏ РІРµСЃСЊ СЃС‹СЂ-Р±РѕСЂ!
+			AI_Output		(self, other,"Info_Jackal_PAYDAY_07_04"); //Р•СЃР»Рё Р±С‹ С‚РѕРіРґР° С‚С‹ С…РѕС‚СЊ РЅРµРјРЅРѕРіРѕ РїРѕС€РµРІРµР»РёР» РјРѕР·РіР°РјРё, СЃРµР№С‡Р°СЃ Р±С‹ С‚С‹ Р±С‹Р» РЅР° РЅР°С€РµР№ СЃС‚РѕСЂРѕРЅРµ - РЅР° СЃС‚РѕСЂРѕРЅРµ РїРѕР±РµРґРёС‚РµР»РµР№!
 		};
 	}
 	else
 	{
-		AI_Output		(self, other,"Info_Jackal_PAYDAY_07_05"); //Нет, ты только погляди на это. Это парень из Болотного Лагеря.
-		AI_Output		(self, other,"Info_Jackal_PAYDAY_07_06"); //Ты общался с этими придурками так долго, что и у тебя явно съехала крыша!
+		AI_Output		(self, other,"Info_Jackal_PAYDAY_07_05"); //РќРµС‚, С‚С‹ С‚РѕР»СЊРєРѕ РїРѕРіР»СЏРґРё РЅР° СЌС‚Рѕ. Р­С‚Рѕ РїР°СЂРµРЅСЊ РёР· Р‘РѕР»РѕС‚РЅРѕРіРѕ Р›Р°РіРµСЂСЏ.
+		AI_Output		(self, other,"Info_Jackal_PAYDAY_07_06"); //РўС‹ РѕР±С‰Р°Р»СЃСЏ СЃ СЌС‚РёРјРё РїСЂРёРґСѓСЂРєР°РјРё С‚Р°Рє РґРѕР»РіРѕ, С‡С‚Рѕ Рё Сѓ С‚РµР±СЏ СЏРІРЅРѕ СЃСЉРµС…Р°Р»Р° РєСЂС‹С€Р°!
 	};
 	
 	if 	Jackal_ProtectionPaid
 	{
-		AI_Output		(self, other,"Info_Jackal_PAYDAY_07_07"); //Даже та руда, которую ты заплатил мне за защиту, теперь тебе не поможет.
+		AI_Output		(self, other,"Info_Jackal_PAYDAY_07_07"); //Р”Р°Р¶Рµ С‚Р° СЂСѓРґР°, РєРѕС‚РѕСЂСѓСЋ С‚С‹ Р·Р°РїР»Р°С‚РёР» РјРЅРµ Р·Р° Р·Р°С‰РёС‚Сѓ, С‚РµРїРµСЂСЊ С‚РµР±Рµ РЅРµ РїРѕРјРѕР¶РµС‚.
 	}
 	else
 	{
-		AI_Output		(self, other,"Info_Jackal_PAYDAY_07_08"); //Тебе стоило заплатить мне, пока у тебя еще была такая возможность.
+		AI_Output		(self, other,"Info_Jackal_PAYDAY_07_08"); //РўРµР±Рµ СЃС‚РѕРёР»Рѕ Р·Р°РїР»Р°С‚РёС‚СЊ РјРЅРµ, РїРѕРєР° Сѓ С‚РµР±СЏ РµС‰Рµ Р±С‹Р»Р° С‚Р°РєР°СЏ РІРѕР·РјРѕР¶РЅРѕСЃС‚СЊ.
 	};
 			
-	AI_Output			(other, self,"Info_Jackal_PAYDAY_15_09"); //Ты зарвался! Тебе не стоило нападать на меня!
-	AI_Output			(self, other,"Info_Jackal_PAYDAY_07_10"); //И тем не менее, все получилось как нельзя лучше. Этого тебе уже не изменить, поверь!
-	AI_Output			(self, other,"Info_Jackal_PAYDAY_07_11"); //ЭЙ, ПАРНИ! ВЗЯТЬ ЕГО!!!
+	AI_Output			(other, self,"Info_Jackal_PAYDAY_15_09"); //РўС‹ Р·Р°СЂРІР°Р»СЃСЏ! РўРµР±Рµ РЅРµ СЃС‚РѕРёР»Рѕ РЅР°РїР°РґР°С‚СЊ РЅР° РјРµРЅСЏ!
+	AI_Output			(self, other,"Info_Jackal_PAYDAY_07_10"); //Р С‚РµРј РЅРµ РјРµРЅРµРµ, РІСЃРµ РїРѕР»СѓС‡РёР»РѕСЃСЊ РєР°Рє РЅРµР»СЊР·СЏ Р»СѓС‡С€Рµ. Р­С‚РѕРіРѕ С‚РµР±Рµ СѓР¶Рµ РЅРµ РёР·РјРµРЅРёС‚СЊ, РїРѕРІРµСЂСЊ!
+	AI_Output			(self, other,"Info_Jackal_PAYDAY_07_11"); //Р­Р™, РџРђР РќР! Р’Р—РЇРўР¬ Р•Р“Рћ!!!
 	
 	AI_StopProcessInfos	(self);
 	

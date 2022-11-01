@@ -33,7 +33,7 @@ instance DIA_Aidan_Hello (C_INFO)
 	condition		= DIA_Aidan_Hello_Condition;
 	information		= DIA_Aidan_Hello_Info;
 	permanent		= 0;
-	description		= "Чем ты занимаешься?";
+	description		= "Р§РµРј С‚С‹ Р·Р°РЅРёРјР°РµС€СЊСЃСЏ?";
 };
 
 FUNC int  DIA_Aidan_Hello_Condition()
@@ -43,13 +43,13 @@ FUNC int  DIA_Aidan_Hello_Condition()
 
 func void  DIA_Aidan_Hello_Info()
 {
-	AI_Output (other, self,"DIA_Aidan_Hello_15_00"); //Чем ты занимаешься?
-	AI_Output (self, other,"DIA_Aidan_Hello_13_01"); //Я охотник. Живу тем, что продаю клыки да шкуры.
-	AI_Output (other, self,"DIA_Aidan_Hello_15_02"); //За это хорошо платят?
-	AI_Output (self, other,"DIA_Aidan_Hello_13_03"); //Если все делаешь правильно, можно сорвать неплохой куш. Главное - научиться разделывать добычу.
+	AI_Output (other, self,"DIA_Aidan_Hello_15_00"); //Р§РµРј С‚С‹ Р·Р°РЅРёРјР°РµС€СЊСЃСЏ?
+	AI_Output (self, other,"DIA_Aidan_Hello_13_01"); //РЇ РѕС…РѕС‚РЅРёРє. Р–РёРІСѓ С‚РµРј, С‡С‚Рѕ РїСЂРѕРґР°СЋ РєР»С‹РєРё РґР° С€РєСѓСЂС‹.
+	AI_Output (other, self,"DIA_Aidan_Hello_15_02"); //Р—Р° СЌС‚Рѕ С…РѕСЂРѕС€Рѕ РїР»Р°С‚СЏС‚?
+	AI_Output (self, other,"DIA_Aidan_Hello_13_03"); //Р•СЃР»Рё РІСЃРµ РґРµР»Р°РµС€СЊ РїСЂР°РІРёР»СЊРЅРѕ, РјРѕР¶РЅРѕ СЃРѕСЂРІР°С‚СЊ РЅРµРїР»РѕС…РѕР№ РєСѓС€. Р“Р»Р°РІРЅРѕРµ - РЅР°СѓС‡РёС‚СЊСЃСЏ СЂР°Р·РґРµР»С‹РІР°С‚СЊ РґРѕР±С‹С‡Сѓ.
 
 	Log_CreateTopic	(GE_TeacherOW,	LOG_NOTE);
-	B_LogEntry		(GE_TeacherOW,"Эйдан, охотник, живущий между Старым и Новым Лагерями, может научить меня тому, как надо потрошить животных.");
+	B_LogEntry		(GE_TeacherOW,"Р­Р№РґР°РЅ, РѕС…РѕС‚РЅРёРє, Р¶РёРІСѓС‰РёР№ РјРµР¶РґСѓ РЎС‚Р°СЂС‹Рј Рё РќРѕРІС‹Рј Р›Р°РіРµСЂСЏРјРё, РјРѕР¶РµС‚ РЅР°СѓС‡РёС‚СЊ РјРµРЅСЏ С‚РѕРјСѓ, РєР°Рє РЅР°РґРѕ РїРѕС‚СЂРѕС€РёС‚СЊ Р¶РёРІРѕС‚РЅС‹С….");
 };
 
 // **************************************************
@@ -63,7 +63,7 @@ instance  Org_859_Aidan_Creatures (C_INFO)
 	condition	= Org_859_Aidan_Creatures_Condition;
 	information	= Org_859_Aidan_Creatures_Info;
 	permanent	= 1;
-	description = "Я хочу научиться разделывать добычу.";
+	description = "РЇ С…РѕС‡Сѓ РЅР°СѓС‡РёС‚СЊСЃСЏ СЂР°Р·РґРµР»С‹РІР°С‚СЊ РґРѕР±С‹С‡Сѓ.";
 };                       
 
 FUNC int  Org_859_Aidan_Creatures_Condition()
@@ -77,35 +77,35 @@ FUNC int  Org_859_Aidan_Creatures_Condition()
 
 FUNC VOID  Org_859_Aidan_Creatures_Info()
 {
-	AI_Output (other, self,"Org_859_Aidan_Creatures_15_00"); //Я хочу научиться разделывать добычу.
+	AI_Output (other, self,"Org_859_Aidan_Creatures_15_00"); //РЇ С…РѕС‡Сѓ РЅР°СѓС‡РёС‚СЊСЃСЏ СЂР°Р·РґРµР»С‹РІР°С‚СЊ РґРѕР±С‹С‡Сѓ.
 	
 	if ( (Knows_GetTeeth == FALSE)||(Knows_GetFur == FALSE)||(Knows_GetClaws == FALSE)||(Knows_GetHide == FALSE) )
 	{
-		AI_Output (self, other,"Org_859_Aidan_Creatures_13_01"); //Что ты хочешь узнать?
+		AI_Output (self, other,"Org_859_Aidan_Creatures_13_01"); //Р§С‚Рѕ С‚С‹ С…РѕС‡РµС€СЊ СѓР·РЅР°С‚СЊ?
 		
 		Info_ClearChoices(Org_859_Aidan_Creatures);
 		Info_AddChoice   (Org_859_Aidan_Creatures, DIALOG_BACK 											,Org_859_Aidan_Creatures_BACK);
 
 		if (Knows_GetTeeth == FALSE)
 		{
-			Info_AddChoice   (Org_859_Aidan_Creatures,"Добывать клыки (1 ед. обучения, 50 кусков руды)",Org_859_Aidan_Creatures_Zahn);
+			Info_AddChoice   (Org_859_Aidan_Creatures,"Р”РѕР±С‹РІР°С‚СЊ РєР»С‹РєРё (1 РµРґ. РѕР±СѓС‡РµРЅРёСЏ, 50 РєСѓСЃРєРѕРІ СЂСѓРґС‹)",Org_859_Aidan_Creatures_Zahn);
 		};
 		if (Knows_GetFur == FALSE)
 		{
-			Info_AddChoice	 (Org_859_Aidan_Creatures,"Добывать мех (1 ед. обучения, 100 кусков руды)",Org_859_Aidan_Creatures_Fell);
+			Info_AddChoice	 (Org_859_Aidan_Creatures,"Р”РѕР±С‹РІР°С‚СЊ РјРµС… (1 РµРґ. РѕР±СѓС‡РµРЅРёСЏ, 100 РєСѓСЃРєРѕРІ СЂСѓРґС‹)",Org_859_Aidan_Creatures_Fell);
 		};
 		if (Knows_GetClaws == FALSE)
 		{
-			Info_AddChoice	 (Org_859_Aidan_Creatures,"Добывать когти (1 ед. обучения, 50 кусков руды)",Org_859_Aidan_Creatures_Kralle);
+			Info_AddChoice	 (Org_859_Aidan_Creatures,"Р”РѕР±С‹РІР°С‚СЊ РєРѕРіС‚Рё (1 РµРґ. РѕР±СѓС‡РµРЅРёСЏ, 50 РєСѓСЃРєРѕРІ СЂСѓРґС‹)",Org_859_Aidan_Creatures_Kralle);
 		};
 		if (Knows_GetHide == FALSE)
 		{
-			Info_AddChoice	 (Org_859_Aidan_Creatures,"Добывать кожу (1 ед. обучения, 100 кусков руды)",Org_859_Aidan_Creatures_Haut);
+			Info_AddChoice	 (Org_859_Aidan_Creatures,"Р”РѕР±С‹РІР°С‚СЊ РєРѕР¶Сѓ (1 РµРґ. РѕР±СѓС‡РµРЅРёСЏ, 100 РєСѓСЃРєРѕРІ СЂСѓРґС‹)",Org_859_Aidan_Creatures_Haut);
 		};
 	}
 	else
 	{
-		AI_Output (self, other,"Org_859_Aidan_Creatures_TaughtAll_13_00"); //Я научил тебя всему, что знал сам.
+		AI_Output (self, other,"Org_859_Aidan_Creatures_TaughtAll_13_00"); //РЇ РЅР°СѓС‡РёР» С‚РµР±СЏ РІСЃРµРјСѓ, С‡С‚Рѕ Р·РЅР°Р» СЃР°Рј.
 	};
 };
 
@@ -116,7 +116,7 @@ func void Org_859_Aidan_Creatures_BACK()
 
 func void Org_859_Aidan_Creatures_Zahn()
 {
-	AI_Output (other, self,"Org_859_Aidan_Creatures_Zahn_15_00"); //Как добываются клыки?
+	AI_Output (other, self,"Org_859_Aidan_Creatures_Zahn_15_00"); //РљР°Рє РґРѕР±С‹РІР°СЋС‚СЃСЏ РєР»С‹РєРё?
 	
 	if (Npc_HasItems(other,itminugget)>=50)
 	{
@@ -126,30 +126,30 @@ func void Org_859_Aidan_Creatures_Zahn()
 			
 			B_GiveInvItems	(other, self,itminugget,50);
 			
-			PrintScreen	("Изучить: Вырезание зубов", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
+			PrintScreen	("РР·СѓС‡РёС‚СЊ: Р’С‹СЂРµР·Р°РЅРёРµ Р·СѓР±РѕРІ", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
 					
-			AI_Output (self, other,"Org_859_Aidan_Creatures_Zahn_13_01"); //Главное - не сломать их. Поставь нож примерно на середину зуба и осторожно вытащи его.
-			AI_Output (self, other,"Org_859_Aidan_Creatures_Zahn_13_02"); //Клыки есть у волков, глорхов и мракорисов.
+			AI_Output (self, other,"Org_859_Aidan_Creatures_Zahn_13_01"); //Р“Р»Р°РІРЅРѕРµ - РЅРµ СЃР»РѕРјР°С‚СЊ РёС…. РџРѕСЃС‚Р°РІСЊ РЅРѕР¶ РїСЂРёРјРµСЂРЅРѕ РЅР° СЃРµСЂРµРґРёРЅСѓ Р·СѓР±Р° Рё РѕСЃС‚РѕСЂРѕР¶РЅРѕ РІС‹С‚Р°С‰Рё РµРіРѕ.
+			AI_Output (self, other,"Org_859_Aidan_Creatures_Zahn_13_02"); //РљР»С‹РєРё РµСЃС‚СЊ Сѓ РІРѕР»РєРѕРІ, РіР»РѕСЂС…РѕРІ Рё РјСЂР°РєРѕСЂРёСЃРѕРІ.
 			
 			Knows_GetTeeth = TRUE;
 			Log_CreateTopic (GE_AnimalTrophies,LOG_NOTE);
-			B_LogEntry (GE_AnimalTrophies,"Знание об вырезании зубов у волков, орочьих гончих, глорхов, мракорисов, ищеек и кусачей.");
+			B_LogEntry (GE_AnimalTrophies,"Р—РЅР°РЅРёРµ РѕР± РІС‹СЂРµР·Р°РЅРёРё Р·СѓР±РѕРІ Сѓ РІРѕР»РєРѕРІ, РѕСЂРѕС‡СЊРёС… РіРѕРЅС‡РёС…, РіР»РѕСЂС…РѕРІ, РјСЂР°РєРѕСЂРёСЃРѕРІ, РёС‰РµРµРє Рё РєСѓСЃР°С‡РµР№.");
 		}
 		else
 		{
-			AI_Output (self, other,"Org_859_Aidan_Creatures_KEINE_LP_13_00"); //Сперва наберись опыта, иначе мой совет тебе не пригодится.
-			PrintScreen	("Недостаточно очков обучения!", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
+			AI_Output (self, other,"Org_859_Aidan_Creatures_KEINE_LP_13_00"); //РЎРїРµСЂРІР° РЅР°Р±РµСЂРёСЃСЊ РѕРїС‹С‚Р°, РёРЅР°С‡Рµ РјРѕР№ СЃРѕРІРµС‚ С‚РµР±Рµ РЅРµ РїСЂРёРіРѕРґРёС‚СЃСЏ.
+			PrintScreen	("РќРµРґРѕСЃС‚Р°С‚РѕС‡РЅРѕ РѕС‡РєРѕРІ РѕР±СѓС‡РµРЅРёСЏ!", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
 		};
 	}
 	else
 	{
-		AI_Output (self, other,"Org_859_Aidan_Creatures_KEIN_ERZ_13_00"); //Прежде покажи руду. Как я уже говорил, все здесь имеет свою цену.
+		AI_Output (self, other,"Org_859_Aidan_Creatures_KEIN_ERZ_13_00"); //РџСЂРµР¶РґРµ РїРѕРєР°Р¶Рё СЂСѓРґСѓ. РљР°Рє СЏ СѓР¶Рµ РіРѕРІРѕСЂРёР», РІСЃРµ Р·РґРµСЃСЊ РёРјРµРµС‚ СЃРІРѕСЋ С†РµРЅСѓ.
 	};
 };
 
 func void Org_859_Aidan_Creatures_Fell()
 {
-	AI_Output (other, self,"Org_859_Aidan_Creatures_Fell_15_00"); //Как снять шкуру?
+	AI_Output (other, self,"Org_859_Aidan_Creatures_Fell_15_00"); //РљР°Рє СЃРЅСЏС‚СЊ С€РєСѓСЂСѓ?
 	
 	if (Npc_HasItems(other,itminugget)>=100)
 	{
@@ -159,24 +159,24 @@ func void Org_859_Aidan_Creatures_Fell()
 			
 			B_GiveInvItems	(other, self,itminugget,100);
 			
-			PrintScreen	("Изучить: Снятие шкуры", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
+			PrintScreen	("РР·СѓС‡РёС‚СЊ: РЎРЅСЏС‚РёРµ С€РєСѓСЂС‹", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
 		
-			AI_Output (self, other,"Org_859_Aidan_Creatures_Fell_13_01"); //Начинать следует с задней части туши, двигаясь к голове. Главное - подцепить ее, дальше все будет легко. Мех стоит очень дорого.
-			AI_Output (self, other,"Org_859_Aidan_Creatures_Fell_13_02"); //Одежду делают из шкуры волка или мракориса. Присмотревшись к меху, ты поймешь, годится он на что-нибудь или нет. 
+			AI_Output (self, other,"Org_859_Aidan_Creatures_Fell_13_01"); //РќР°С‡РёРЅР°С‚СЊ СЃР»РµРґСѓРµС‚ СЃ Р·Р°РґРЅРµР№ С‡Р°СЃС‚Рё С‚СѓС€Рё, РґРІРёРіР°СЏСЃСЊ Рє РіРѕР»РѕРІРµ. Р“Р»Р°РІРЅРѕРµ - РїРѕРґС†РµРїРёС‚СЊ РµРµ, РґР°Р»СЊС€Рµ РІСЃРµ Р±СѓРґРµС‚ Р»РµРіРєРѕ. РњРµС… СЃС‚РѕРёС‚ РѕС‡РµРЅСЊ РґРѕСЂРѕРіРѕ.
+			AI_Output (self, other,"Org_859_Aidan_Creatures_Fell_13_02"); //РћРґРµР¶РґСѓ РґРµР»Р°СЋС‚ РёР· С€РєСѓСЂС‹ РІРѕР»РєР° РёР»Рё РјСЂР°РєРѕСЂРёСЃР°. РџСЂРёСЃРјРѕС‚СЂРµРІС€РёСЃСЊ Рє РјРµС…Сѓ, С‚С‹ РїРѕР№РјРµС€СЊ, РіРѕРґРёС‚СЃСЏ РѕРЅ РЅР° С‡С‚Рѕ-РЅРёР±СѓРґСЊ РёР»Рё РЅРµС‚. 
 			
 			Knows_GetFur = TRUE;
 			Log_CreateTopic (GE_AnimalTrophies,LOG_NOTE);
-			B_LogEntry (GE_AnimalTrophies,"Знание о том, как снять шкуру с волка, орочей гончей, мракориса, тролля.");
+			B_LogEntry (GE_AnimalTrophies,"Р—РЅР°РЅРёРµ Рѕ С‚РѕРј, РєР°Рє СЃРЅСЏС‚СЊ С€РєСѓСЂСѓ СЃ РІРѕР»РєР°, РѕСЂРѕС‡РµР№ РіРѕРЅС‡РµР№, РјСЂР°РєРѕСЂРёСЃР°, С‚СЂРѕР»Р»СЏ.");
 		}
 		else
 		{
-			AI_Output (self, other,"Org_859_Aidan_Creatures_KEINE_LP_13_00"); //Сперва наберись опыта, иначе мой совет тебе не пригодится.
-			PrintScreen	("Недостаточно очков обучения!", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
+			AI_Output (self, other,"Org_859_Aidan_Creatures_KEINE_LP_13_00"); //РЎРїРµСЂРІР° РЅР°Р±РµСЂРёСЃСЊ РѕРїС‹С‚Р°, РёРЅР°С‡Рµ РјРѕР№ СЃРѕРІРµС‚ С‚РµР±Рµ РЅРµ РїСЂРёРіРѕРґРёС‚СЃСЏ.
+			PrintScreen	("РќРµРґРѕСЃС‚Р°С‚РѕС‡РЅРѕ РѕС‡РєРѕРІ РѕР±СѓС‡РµРЅРёСЏ!", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
 		};
 	}
 	else
 	{
-		AI_Output (self, other,"Org_859_Aidan_Creatures_KEIN_ERZ_13_00"); //Прежде покажи руду. Как я уже говорил, все здесь имеет свою цену.
+		AI_Output (self, other,"Org_859_Aidan_Creatures_KEIN_ERZ_13_00"); //РџСЂРµР¶РґРµ РїРѕРєР°Р¶Рё СЂСѓРґСѓ. РљР°Рє СЏ СѓР¶Рµ РіРѕРІРѕСЂРёР», РІСЃРµ Р·РґРµСЃСЊ РёРјРµРµС‚ СЃРІРѕСЋ С†РµРЅСѓ.
 	};
 };
 
@@ -190,25 +190,25 @@ func void Org_859_Aidan_Creatures_Kralle()
 			
 			B_GiveInvItems	(other, self,itminugget,50);
 			
-			PrintScreen	("Изучить: Вырезание когтей", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
+			PrintScreen	("РР·СѓС‡РёС‚СЊ: Р’С‹СЂРµР·Р°РЅРёРµ РєРѕРіС‚РµР№", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
 			
-			AI_Output (other, self,"Org_859_Aidan_Creatures_Kralle_15_00"); //Покажи мне, как добываются когти.
-			AI_Output (self, other,"Org_859_Aidan_Creatures_Kralle_13_01"); //На самом деле это очень просто - если ты знаешь, что и как делать. Нужно просто отогнуть коготь вперед - только не назад, и НЕ ПЫТАЙСЯ его выдергивать!
-			AI_Output (self, other,"Org_859_Aidan_Creatures_Kralle_13_02"); //Разумеется, в дело идут далеко не все когти. Чаще всего мы добываем их у ящериц.
+			AI_Output (other, self,"Org_859_Aidan_Creatures_Kralle_15_00"); //РџРѕРєР°Р¶Рё РјРЅРµ, РєР°Рє РґРѕР±С‹РІР°СЋС‚СЃСЏ РєРѕРіС‚Рё.
+			AI_Output (self, other,"Org_859_Aidan_Creatures_Kralle_13_01"); //РќР° СЃР°РјРѕРј РґРµР»Рµ СЌС‚Рѕ РѕС‡РµРЅСЊ РїСЂРѕСЃС‚Рѕ - РµСЃР»Рё С‚С‹ Р·РЅР°РµС€СЊ, С‡С‚Рѕ Рё РєР°Рє РґРµР»Р°С‚СЊ. РќСѓР¶РЅРѕ РїСЂРѕСЃС‚Рѕ РѕС‚РѕРіРЅСѓС‚СЊ РєРѕРіРѕС‚СЊ РІРїРµСЂРµРґ - С‚РѕР»СЊРєРѕ РЅРµ РЅР°Р·Р°Рґ, Рё РќР• РџР«РўРђР™РЎРЇ РµРіРѕ РІС‹РґРµСЂРіРёРІР°С‚СЊ!
+			AI_Output (self, other,"Org_859_Aidan_Creatures_Kralle_13_02"); //Р Р°Р·СѓРјРµРµС‚СЃСЏ, РІ РґРµР»Рѕ РёРґСѓС‚ РґР°Р»РµРєРѕ РЅРµ РІСЃРµ РєРѕРіС‚Рё. Р§Р°С‰Рµ РІСЃРµРіРѕ РјС‹ РґРѕР±С‹РІР°РµРј РёС… Сѓ СЏС‰РµСЂРёС†.
 			
 			Knows_GetClaws = TRUE;
 			Log_CreateTopic (GE_AnimalTrophies,LOG_NOTE);
-			B_LogEntry (GE_AnimalTrophies,"Знание о том, как вырезать когти у ящериц, глорхов, шныг, кусачей и остеров.");
+			B_LogEntry (GE_AnimalTrophies,"Р—РЅР°РЅРёРµ Рѕ С‚РѕРј, РєР°Рє РІС‹СЂРµР·Р°С‚СЊ РєРѕРіС‚Рё Сѓ СЏС‰РµСЂРёС†, РіР»РѕСЂС…РѕРІ, С€РЅС‹Рі, РєСѓСЃР°С‡РµР№ Рё РѕСЃС‚РµСЂРѕРІ.");
 		}
 		else
 		{
-			AI_Output (self, other,"Org_859_Aidan_Creatures_KEINE_LP_13_00"); //Сперва наберись опыта, иначе мой совет тебе не пригодится.
-			PrintScreen	("Недостаточно очков обучения!", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
+			AI_Output (self, other,"Org_859_Aidan_Creatures_KEINE_LP_13_00"); //РЎРїРµСЂРІР° РЅР°Р±РµСЂРёСЃСЊ РѕРїС‹С‚Р°, РёРЅР°С‡Рµ РјРѕР№ СЃРѕРІРµС‚ С‚РµР±Рµ РЅРµ РїСЂРёРіРѕРґРёС‚СЃСЏ.
+			PrintScreen	("РќРµРґРѕСЃС‚Р°С‚РѕС‡РЅРѕ РѕС‡РєРѕРІ РѕР±СѓС‡РµРЅРёСЏ!", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
 		};
 	}
 	else
 	{
-		AI_Output (self, other,"Org_859_Aidan_Creatures_KEIN_ERZ_13_00"); //Прежде покажи руду. Как я уже говорил, все здесь имеет свою цену.
+		AI_Output (self, other,"Org_859_Aidan_Creatures_KEIN_ERZ_13_00"); //РџСЂРµР¶РґРµ РїРѕРєР°Р¶Рё СЂСѓРґСѓ. РљР°Рє СЏ СѓР¶Рµ РіРѕРІРѕСЂРёР», РІСЃРµ Р·РґРµСЃСЊ РёРјРµРµС‚ СЃРІРѕСЋ С†РµРЅСѓ.
 	};
 };
 
@@ -222,24 +222,24 @@ func void Org_859_Aidan_Creatures_Haut()
 						
 			B_GiveInvItems	(other, self,itminugget,100);
 			
-			PrintScreen	("Изучить: Снятие кожи", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
+			PrintScreen	("РР·СѓС‡РёС‚СЊ: РЎРЅСЏС‚РёРµ РєРѕР¶Рё", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
 				
-			AI_Output (other, self,"Org_859_Aidan_Creatures_Haut_15_00"); //А если я захочу снять шкуру с рептилии?
-			AI_Output (self, other,"Org_859_Aidan_Creatures_Haut_13_01"); //Для этого подходят разве что шныги да болотожоры.
-			AI_Output (self, other,"Org_859_Aidan_Creatures_Haut_13_02"); //Нужно подрезать шкуру по краям, и дальше она слезет сама. Вот и вся наука.
+			AI_Output (other, self,"Org_859_Aidan_Creatures_Haut_15_00"); //Рђ РµСЃР»Рё СЏ Р·Р°С…РѕС‡Сѓ СЃРЅСЏС‚СЊ С€РєСѓСЂСѓ СЃ СЂРµРїС‚РёР»РёРё?
+			AI_Output (self, other,"Org_859_Aidan_Creatures_Haut_13_01"); //Р”Р»СЏ СЌС‚РѕРіРѕ РїРѕРґС…РѕРґСЏС‚ СЂР°Р·РІРµ С‡С‚Рѕ С€РЅС‹РіРё РґР° Р±РѕР»РѕС‚РѕР¶РѕСЂС‹.
+			AI_Output (self, other,"Org_859_Aidan_Creatures_Haut_13_02"); //РќСѓР¶РЅРѕ РїРѕРґСЂРµР·Р°С‚СЊ С€РєСѓСЂСѓ РїРѕ РєСЂР°СЏРј, Рё РґР°Р»СЊС€Рµ РѕРЅР° СЃР»РµР·РµС‚ СЃР°РјР°. Р’РѕС‚ Рё РІСЃСЏ РЅР°СѓРєР°.
 				
 			Knows_GetHide = TRUE;
 			Log_CreateTopic (GE_AnimalTrophies,LOG_NOTE);
-			B_LogEntry (GE_AnimalTrophies,"Знание о снятии кожи с болотожоров, шныг.");
+			B_LogEntry (GE_AnimalTrophies,"Р—РЅР°РЅРёРµ Рѕ СЃРЅСЏС‚РёРё РєРѕР¶Рё СЃ Р±РѕР»РѕС‚РѕР¶РѕСЂРѕРІ, С€РЅС‹Рі.");
 		}
 		else
 		{
-			AI_Output (self, other,"Org_859_Aidan_Creatures_KEINE_LP_13_00"); //Сперва наберись опыта, иначе мой совет тебе не пригодится.
-			PrintScreen	("Недостаточно очков обучения!", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
+			AI_Output (self, other,"Org_859_Aidan_Creatures_KEINE_LP_13_00"); //РЎРїРµСЂРІР° РЅР°Р±РµСЂРёСЃСЊ РѕРїС‹С‚Р°, РёРЅР°С‡Рµ РјРѕР№ СЃРѕРІРµС‚ С‚РµР±Рµ РЅРµ РїСЂРёРіРѕРґРёС‚СЃСЏ.
+			PrintScreen	("РќРµРґРѕСЃС‚Р°С‚РѕС‡РЅРѕ РѕС‡РєРѕРІ РѕР±СѓС‡РµРЅРёСЏ!", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
 		};
 	}
 	else
 	{
-		AI_Output (self, other,"Org_859_Aidan_Creatures_KEIN_ERZ_13_00"); //Прежде покажи руду. Как я уже говорил, все здесь имеет свою цену.
+		AI_Output (self, other,"Org_859_Aidan_Creatures_KEIN_ERZ_13_00"); //РџСЂРµР¶РґРµ РїРѕРєР°Р¶Рё СЂСѓРґСѓ. РљР°Рє СЏ СѓР¶Рµ РіРѕРІРѕСЂРёР», РІСЃРµ Р·РґРµСЃСЊ РёРјРµРµС‚ СЃРІРѕСЋ С†РµРЅСѓ.
 	};
 };

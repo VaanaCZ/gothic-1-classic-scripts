@@ -47,50 +47,50 @@ FUNC int DIA_Scorpio_Hello_Condition()
 
 FUNC VOID DIA_Scorpio_Hello_Info()
 {
-	AI_Output (self, other,"DIA_Scorpio_Hello_13_00"); //Кто впустил ТЕБЯ?
-	AI_Output (other, self,"DIA_Scorpio_Hello_15_01"); //Торус.
-	AI_Output (self, other,"DIA_Scorpio_Hello_13_02"); //И какого черта ты здесь делаешь?
+	AI_Output (self, other,"DIA_Scorpio_Hello_13_00"); //РљС‚Рѕ РІРїСѓСЃС‚РёР» РўР•Р‘РЇ?
+	AI_Output (other, self,"DIA_Scorpio_Hello_15_01"); //РўРѕСЂСѓСЃ.
+	AI_Output (self, other,"DIA_Scorpio_Hello_13_02"); //Р РєР°РєРѕРіРѕ С‡РµСЂС‚Р° С‚С‹ Р·РґРµСЃСЊ РґРµР»Р°РµС€СЊ?
 
 	Info_ClearChoices 	(DIA_Scorpio_Hello);
-	Info_Addchoice 		(DIA_Scorpio_Hello,"Просто зашел посмотреть.",DIA_Scorpio_Hello_JustLooking);
-	Info_Addchoice 		(DIA_Scorpio_Hello,"У меня есть послание для магов.",DIA_Scorpio_Hello_Mages);
+	Info_Addchoice 		(DIA_Scorpio_Hello,"РџСЂРѕСЃС‚Рѕ Р·Р°С€РµР» РїРѕСЃРјРѕС‚СЂРµС‚СЊ.",DIA_Scorpio_Hello_JustLooking);
+	Info_Addchoice 		(DIA_Scorpio_Hello,"РЈ РјРµРЅСЏ РµСЃС‚СЊ РїРѕСЃР»Р°РЅРёРµ РґР»СЏ РјР°РіРѕРІ.",DIA_Scorpio_Hello_Mages);
 	if (Kalom_Krautbote == LOG_RUNNING)
 	{
-		Info_Addchoice 		(DIA_Scorpio_Hello,"Я принес болотник для Гомеза.",DIA_Scorpio_Hello_Kraut);
+		Info_Addchoice 		(DIA_Scorpio_Hello,"РЇ РїСЂРёРЅРµСЃ Р±РѕР»РѕС‚РЅРёРє РґР»СЏ Р“РѕРјРµР·Р°.",DIA_Scorpio_Hello_Kraut);
 	};
 	if (Npc_KnowsInfo(hero, Info_Thorus_ReadyForGomez))
 	{
-		Info_Addchoice 		(DIA_Scorpio_Hello,"Я собираюсь встретиться с Гомезом. Хочу присоединиться к вам.",DIA_Scorpio_Hello_Join);
+		Info_Addchoice 		(DIA_Scorpio_Hello,"РЇ СЃРѕР±РёСЂР°СЋСЃСЊ РІСЃС‚СЂРµС‚РёС‚СЊСЃСЏ СЃ Р“РѕРјРµР·РѕРј. РҐРѕС‡Сѓ РїСЂРёСЃРѕРµРґРёРЅРёС‚СЊСЃСЏ Рє РІР°Рј.",DIA_Scorpio_Hello_Join);
 	};
 };
 
 func void DIA_Scorpio_Hello_JustLooking()
 {
-	AI_Output (other, self,"DIA_Scorpio_Hello_JustLooking_15_00"); //Просто зашел посмотреть.
-	AI_Output (self, other,"DIA_Scorpio_Hello_JustLooking_13_01"); //Очень смешно.
+	AI_Output (other, self,"DIA_Scorpio_Hello_JustLooking_15_00"); //РџСЂРѕСЃС‚Рѕ Р·Р°С€РµР» РїРѕСЃРјРѕС‚СЂРµС‚СЊ.
+	AI_Output (self, other,"DIA_Scorpio_Hello_JustLooking_13_01"); //РћС‡РµРЅСЊ СЃРјРµС€РЅРѕ.
 	Info_ClearChoices 	(DIA_Scorpio_Hello);
 };
 
 func void DIA_Scorpio_Hello_Mages()
 {
-	AI_Output (other, self,"DIA_Scorpio_Hello_Mages_15_00"); //У меня есть послание для магов.
-	AI_Output (self, other,"DIA_Scorpio_Hello_Mages_13_01"); //Ты работаешь на магов? Я не хочу с ними связываться...
+	AI_Output (other, self,"DIA_Scorpio_Hello_Mages_15_00"); //РЈ РјРµРЅСЏ РµСЃС‚СЊ РїРѕСЃР»Р°РЅРёРµ РґР»СЏ РјР°РіРѕРІ.
+	AI_Output (self, other,"DIA_Scorpio_Hello_Mages_13_01"); //РўС‹ СЂР°Р±РѕС‚Р°РµС€СЊ РЅР° РјР°РіРѕРІ? РЇ РЅРµ С…РѕС‡Сѓ СЃ РЅРёРјРё СЃРІСЏР·С‹РІР°С‚СЊСЃСЏ...
 	Info_ClearChoices 	(DIA_Scorpio_Hello);
 };
 
 func void DIA_Scorpio_Hello_Kraut()
 {
-	AI_Output (other, self,"DIA_Scorpio_Hello_Kraut_15_00"); //Я принес болотник для Гомеза.
-	AI_Output (self, other,"DIA_Scorpio_Hello_Kraut_13_01"); //Отнеси его в дом, который охраняют двое стражников.
+	AI_Output (other, self,"DIA_Scorpio_Hello_Kraut_15_00"); //РЇ РїСЂРёРЅРµСЃ Р±РѕР»РѕС‚РЅРёРє РґР»СЏ Р“РѕРјРµР·Р°.
+	AI_Output (self, other,"DIA_Scorpio_Hello_Kraut_13_01"); //РћС‚РЅРµСЃРё РµРіРѕ РІ РґРѕРј, РєРѕС‚РѕСЂС‹Р№ РѕС…СЂР°РЅСЏСЋС‚ РґРІРѕРµ СЃС‚СЂР°Р¶РЅРёРєРѕРІ.
 	Info_ClearChoices 	(DIA_Scorpio_Hello);
 };
 
 func void DIA_Scorpio_Hello_Join()
 {
-	AI_Output (other, self,"DIA_Scorpio_Hello_Join_15_00"); //Я собираюсь встретиться с Гомезом. Хочу присоединиться к вам.
-	AI_Output (self, other,"DIA_Scorpio_Hello_Join_13_01"); //Ты? И что такого ты для нас сделал?
-	AI_Output (other, self,"DIA_Scorpio_Hello_Join_15_02"); //Призраки были мною довольны...
-	AI_Output (self, other,"DIA_Scorpio_Hello_Join_13_03"); //Никто здесь не желает слышать о Призраках. Здесь МЫ решаем.
+	AI_Output (other, self,"DIA_Scorpio_Hello_Join_15_00"); //РЇ СЃРѕР±РёСЂР°СЋСЃСЊ РІСЃС‚СЂРµС‚РёС‚СЊСЃСЏ СЃ Р“РѕРјРµР·РѕРј. РҐРѕС‡Сѓ РїСЂРёСЃРѕРµРґРёРЅРёС‚СЊСЃСЏ Рє РІР°Рј.
+	AI_Output (self, other,"DIA_Scorpio_Hello_Join_13_01"); //РўС‹? Р С‡С‚Рѕ С‚Р°РєРѕРіРѕ С‚С‹ РґР»СЏ РЅР°СЃ СЃРґРµР»Р°Р»?
+	AI_Output (other, self,"DIA_Scorpio_Hello_Join_15_02"); //РџСЂРёР·СЂР°РєРё Р±С‹Р»Рё РјРЅРѕСЋ РґРѕРІРѕР»СЊРЅС‹...
+	AI_Output (self, other,"DIA_Scorpio_Hello_Join_13_03"); //РќРёРєС‚Рѕ Р·РґРµСЃСЊ РЅРµ Р¶РµР»Р°РµС‚ СЃР»С‹С€Р°С‚СЊ Рѕ РџСЂРёР·СЂР°РєР°С…. Р—РґРµСЃСЊ РњР« СЂРµС€Р°РµРј.
 	Info_ClearChoices 	(DIA_Scorpio_Hello);
 };
 
@@ -105,7 +105,7 @@ instance DIA_Scorpio_REFUSETRAIN (C_INFO)
 	condition	= DIA_Scorpio_REFUSETRAIN_Condition;
 	information	= DIA_Scorpio_REFUSETRAIN_Info;
 	permanent	= 1;
-	description = "Ты можешь научить меня драться?";
+	description = "РўС‹ РјРѕР¶РµС€СЊ РЅР°СѓС‡РёС‚СЊ РјРµРЅСЏ РґСЂР°С‚СЊСЃСЏ?";
 };                       
 
 FUNC int DIA_Scorpio_REFUSETRAIN_Condition()
@@ -118,13 +118,13 @@ FUNC int DIA_Scorpio_REFUSETRAIN_Condition()
 
 FUNC VOID DIA_Scorpio_REFUSETRAIN_Info()
 {
-	AI_Output (other, self,"DIA_Scorpio_REFUSETRAIN_15_00"); //Ты можешь научить меня драться?
-	AI_Output (self, other,"DIA_Scorpio_REFUSETRAIN_13_01"); //Я тренирую только стражников. Пока Торус не назначит тебя одним из них, ищи кого-нибудь другого.
+	AI_Output (other, self,"DIA_Scorpio_REFUSETRAIN_15_00"); //РўС‹ РјРѕР¶РµС€СЊ РЅР°СѓС‡РёС‚СЊ РјРµРЅСЏ РґСЂР°С‚СЊСЃСЏ?
+	AI_Output (self, other,"DIA_Scorpio_REFUSETRAIN_13_01"); //РЇ С‚СЂРµРЅРёСЂСѓСЋ С‚РѕР»СЊРєРѕ СЃС‚СЂР°Р¶РЅРёРєРѕРІ. РџРѕРєР° РўРѕСЂСѓСЃ РЅРµ РЅР°Р·РЅР°С‡РёС‚ С‚РµР±СЏ РѕРґРЅРёРј РёР· РЅРёС…, РёС‰Рё РєРѕРіРѕ-РЅРёР±СѓРґСЊ РґСЂСѓРіРѕРіРѕ.
 	
 };
 
 //*******************************
-//*********°°°°°°°°°°°***********
+//*********В°В°В°В°В°В°В°В°В°В°В°***********
 //********* KAPITEL 3 ***********
 //*********...........***********
 //*******************************
@@ -152,7 +152,7 @@ FUNC int  GRD_205_Scorpio_WELCOME_Condition()
 func void  GRD_205_Scorpio_WELCOME_Info()
 {
 	
-	AI_Output (self, other,"GRD_205_Scorpio_WELCOME_Info_13_01"); //Это лучший выбор, который ты только мог сделать!
+	AI_Output (self, other,"GRD_205_Scorpio_WELCOME_Info_13_01"); //Р­С‚Рѕ Р»СѓС‡С€РёР№ РІС‹Р±РѕСЂ, РєРѕС‚РѕСЂС‹Р№ С‚С‹ С‚РѕР»СЊРєРѕ РјРѕРі СЃРґРµР»Р°С‚СЊ!
 	AI_StopProcessInfos	( self );
 };
 
@@ -167,7 +167,7 @@ instance  GRD_205_Scorpio_CROSSBOW (C_INFO)
 	information		= GRD_205_Scorpio_CROSSBOW_Info;
 	important		= 0;
 	permanent		= 1;
-	description		= "Ты можешь чему-нибудь научить меня?"; 
+	description		= "РўС‹ РјРѕР¶РµС€СЊ С‡РµРјСѓ-РЅРёР±СѓРґСЊ РЅР°СѓС‡РёС‚СЊ РјРµРЅСЏ?"; 
 };
 
 FUNC int  GRD_205_Scorpio_CROSSBOW_Condition()
@@ -182,20 +182,20 @@ FUNC int  GRD_205_Scorpio_CROSSBOW_Condition()
 };
 FUNC void  GRD_205_Scorpio_CROSSBOW_Info()
 {
-	AI_Output (other, self,"GRD_205_Scorpio_CROSSBOW_Info_15_01"); //Ты будешь учить меня?
-	AI_Output (self, other,"GRD_205_Scorpio_CROSSBOW_Info_13_02"); //Если у тебя есть руда, я научи тебя пользоваться арбалетом. Но сначала заплати две сотни. 
+	AI_Output (other, self,"GRD_205_Scorpio_CROSSBOW_Info_15_01"); //РўС‹ Р±СѓРґРµС€СЊ СѓС‡РёС‚СЊ РјРµРЅСЏ?
+	AI_Output (self, other,"GRD_205_Scorpio_CROSSBOW_Info_13_02"); //Р•СЃР»Рё Сѓ С‚РµР±СЏ РµСЃС‚СЊ СЂСѓРґР°, СЏ РЅР°СѓС‡Рё С‚РµР±СЏ РїРѕР»СЊР·РѕРІР°С‚СЊСЃСЏ Р°СЂР±Р°Р»РµС‚РѕРј. РќРѕ СЃРЅР°С‡Р°Р»Р° Р·Р°РїР»Р°С‚Рё РґРІРµ СЃРѕС‚РЅРё. 
 	if (log_scorpiocrossbow == FALSE)
 	&& (Kapitel <= 4)
 	{
 		Log_CreateTopic   	(GE_TeacherOC,LOG_NOTE);
-		B_LogEntry			(GE_TeacherOC,"Скорпио может научить меня использовать арбалет.");
+		B_LogEntry			(GE_TeacherOC,"РЎРєРѕСЂРїРёРѕ РјРѕР¶РµС‚ РЅР°СѓС‡РёС‚СЊ РјРµРЅСЏ РёСЃРїРѕР»СЊР·РѕРІР°С‚СЊ Р°СЂР±Р°Р»РµС‚.");
 		log_scorpiocrossbow = TRUE;
 	}
 	else if (log_scorpiocrossbow == FALSE)
 	&& (Kapitel > 4)
 	{
 		Log_CreateTopic   	(GE_TeacherOW,LOG_NOTE);
-		B_LogEntry			(GE_TeacherOW,"Скорпио может научить меня использовать арбалет.");
+		B_LogEntry			(GE_TeacherOW,"РЎРєРѕСЂРїРёРѕ РјРѕР¶РµС‚ РЅР°СѓС‡РёС‚СЊ РјРµРЅСЏ РёСЃРїРѕР»СЊР·РѕРІР°С‚СЊ Р°СЂР±Р°Р»РµС‚.");
 		log_scorpiocrossbow = TRUE;
 	};
 	Info_ClearChoices (GRD_205_Scorpio_CROSSBOW);
@@ -210,23 +210,23 @@ func void GRD_205_Scorpio_CROSSBOW_BACK()
 
 func void GRD_205_Scorpio_CROSSBOW_OK()
 {
-	AI_Output (other, self,"GRD_205_Scorpio_CROSSBOW_OK_15_01"); //По рукам. Покажи, как нужно с ним обращаться.
+	AI_Output (other, self,"GRD_205_Scorpio_CROSSBOW_OK_15_01"); //РџРѕ СЂСѓРєР°Рј. РџРѕРєР°Р¶Рё, РєР°Рє РЅСѓР¶РЅРѕ СЃ РЅРёРј РѕР±СЂР°С‰Р°С‚СЊСЃСЏ.
 	if (Npc_HasItems (hero,ItMiNugget)>= 200)
 	{
 		if (B_GiveSkill(other,NPC_TALENT_CROSSBOW , 1, LPCOST_TALENT_CROSSBOW_1))
 		{
-			AI_Output (self, other,"GRD_205_Scorpio_CROSSBOW_OK_13_02"); //Ладно, начнем.
-			AI_Output (self, other,"GRD_205_Scorpio_CROSSBOW_OK_13_03"); //Ты берешься за рукоятку и упираешь ее в плечо. Это поможет тебе лучше прицелиться.
-			AI_Output (self, other,"GRD_205_Scorpio_CROSSBOW_OK_13_04"); //Первые несколько дней тебе будет казаться, что плечо вот-вот отвалится.
-			AI_Output (self, other,"GRD_205_Scorpio_CROSSBOW_OK_13_05"); //Но через неделю оно будет как камень!
-			AI_Output (self, other,"GRD_205_Scorpio_CROSSBOW_OK_13_06"); //Наводи точно на цель и оттягивай стрелу назад. Она полетит куда сильнее, чем из лука, а значит, нанесет больший урон!
+			AI_Output (self, other,"GRD_205_Scorpio_CROSSBOW_OK_13_02"); //Р›Р°РґРЅРѕ, РЅР°С‡РЅРµРј.
+			AI_Output (self, other,"GRD_205_Scorpio_CROSSBOW_OK_13_03"); //РўС‹ Р±РµСЂРµС€СЊСЃСЏ Р·Р° СЂСѓРєРѕСЏС‚РєСѓ Рё СѓРїРёСЂР°РµС€СЊ РµРµ РІ РїР»РµС‡Рѕ. Р­С‚Рѕ РїРѕРјРѕР¶РµС‚ С‚РµР±Рµ Р»СѓС‡С€Рµ РїСЂРёС†РµР»РёС‚СЊСЃСЏ.
+			AI_Output (self, other,"GRD_205_Scorpio_CROSSBOW_OK_13_04"); //РџРµСЂРІС‹Рµ РЅРµСЃРєРѕР»СЊРєРѕ РґРЅРµР№ С‚РµР±Рµ Р±СѓРґРµС‚ РєР°Р·Р°С‚СЊСЃСЏ, С‡С‚Рѕ РїР»РµС‡Рѕ РІРѕС‚-РІРѕС‚ РѕС‚РІР°Р»РёС‚СЃСЏ.
+			AI_Output (self, other,"GRD_205_Scorpio_CROSSBOW_OK_13_05"); //РќРѕ С‡РµСЂРµР· РЅРµРґРµР»СЋ РѕРЅРѕ Р±СѓРґРµС‚ РєР°Рє РєР°РјРµРЅСЊ!
+			AI_Output (self, other,"GRD_205_Scorpio_CROSSBOW_OK_13_06"); //РќР°РІРѕРґРё С‚РѕС‡РЅРѕ РЅР° С†РµР»СЊ Рё РѕС‚С‚СЏРіРёРІР°Р№ СЃС‚СЂРµР»Сѓ РЅР°Р·Р°Рґ. РћРЅР° РїРѕР»РµС‚РёС‚ РєСѓРґР° СЃРёР»СЊРЅРµРµ, С‡РµРј РёР· Р»СѓРєР°, Р° Р·РЅР°С‡РёС‚, РЅР°РЅРµСЃРµС‚ Р±РѕР»СЊС€РёР№ СѓСЂРѕРЅ!
 			B_GiveInvItems (hero,other,ItMiNugget,200);
 			GRD_205_Scorpio_CROSSBOW.permanent = 0;
 		};
 	}
 	else
 	{
-	 AI_Output (self, other,"GRD_205_Scorpio_CROSSBOW_OK_13_07"); //Я сказал - ДВЕ СОТНИ КУСКОВ РУДЫ, здесь, у меня в руках. Возвращайся, когда у тебя будет чем заплатить!
+	 AI_Output (self, other,"GRD_205_Scorpio_CROSSBOW_OK_13_07"); //РЇ СЃРєР°Р·Р°Р» - Р”Р’Р• РЎРћРўРќР РљРЈРЎРљРћР’ Р РЈР”Р«, Р·РґРµСЃСЊ, Сѓ РјРµРЅСЏ РІ СЂСѓРєР°С…. Р’РѕР·РІСЂР°С‰Р°Р№СЃСЏ, РєРѕРіРґР° Сѓ С‚РµР±СЏ Р±СѓРґРµС‚ С‡РµРј Р·Р°РїР»Р°С‚РёС‚СЊ!
 	};
 };
 
@@ -241,7 +241,7 @@ instance  GRD_205_Scorpio_CROSSBOW2 (C_INFO)
 	information		= GRD_205_Scorpio_CROSSBOW2_Info;
 	important		= 0;
 	permanent		= 1;
-	description		= "Расскажи мне еще что-нибудь об арбалете."; 
+	description		= "Р Р°СЃСЃРєР°Р¶Рё РјРЅРµ РµС‰Рµ С‡С‚Рѕ-РЅРёР±СѓРґСЊ РѕР± Р°СЂР±Р°Р»РµС‚Рµ."; 
 };
 
 FUNC int  GRD_205_Scorpio_CROSSBOW2_Condition()
@@ -254,8 +254,8 @@ FUNC int  GRD_205_Scorpio_CROSSBOW2_Condition()
 };
 FUNC void  GRD_205_Scorpio_CROSSBOW2_Info()
 {
-	AI_Output (other, self,"GRD_205_Scorpio_CROSSBOW2_Info_15_01"); //Расскажи мне еще что-нибудь об арбалете.
-	AI_Output (self, other,"GRD_205_Scorpio_CROSSBOW2_Info_13_02"); //Это обойдется тебе в три сотни кусков руды.
+	AI_Output (other, self,"GRD_205_Scorpio_CROSSBOW2_Info_15_01"); //Р Р°СЃСЃРєР°Р¶Рё РјРЅРµ РµС‰Рµ С‡С‚Рѕ-РЅРёР±СѓРґСЊ РѕР± Р°СЂР±Р°Р»РµС‚Рµ.
+	AI_Output (self, other,"GRD_205_Scorpio_CROSSBOW2_Info_13_02"); //Р­С‚Рѕ РѕР±РѕР№РґРµС‚СЃСЏ С‚РµР±Рµ РІ С‚СЂРё СЃРѕС‚РЅРё РєСѓСЃРєРѕРІ СЂСѓРґС‹.
   
 	Info_ClearChoices (GRD_205_Scorpio_CROSSBOW2);
 	Info_Addchoice 	(GRD_205_Scorpio_CROSSBOW2,B_BuildLearnString(NAME_LearnCrossbow_2,	LPCOST_TALENT_CROSSBOW_2,300),GRD_205_Scorpio_CROSSBOW2_OK);
@@ -270,23 +270,23 @@ func void GRD_205_Scorpio_CROSSBOW2_BACK()
 
 func void GRD_205_Scorpio_CROSSBOW2_OK()
 {
-	AI_Output (other, self,"GRD_205_Scorpio_CROSSBOW2_OK_15_01"); //Начнем прямо сейчас.
+	AI_Output (other, self,"GRD_205_Scorpio_CROSSBOW2_OK_15_01"); //РќР°С‡РЅРµРј РїСЂСЏРјРѕ СЃРµР№С‡Р°СЃ.
 	if (Npc_HasItems (hero,ItMiNugget)>= 300)
 	{
 		if (B_GiveSkill(other,NPC_TALENT_CROSSBOW , 2, LPCOST_TALENT_CROSSBOW_2))
 		{
-		AI_Output (self, other,"GRD_205_Scorpio_CROSSBOW2_OK_13_02"); //Ладно. Выстрелы будут более точными, если перед стрельбой ты немного присядешь.
-		AI_Output (self, other,"GRD_205_Scorpio_CROSSBOW2_OK_13_03"); //Тебе предстоит научиться рассчитывать скорость, с которой движется цель.
-		AI_Output (self, other,"GRD_205_Scorpio_CROSSBOW2_OK_13_04"); //Выпускай стрелу с должным упреждением по пути движущейся цели, чтобы замедлить или остановить ее.
-		AI_Output (self, other,"GRD_205_Scorpio_CROSSBOW2_OK_13_05"); //Если целей несколько, не трать зря времени - снимай их одну за другой непрерывной серией выстрелов.
-		AI_Output (self, other,"GRD_205_Scorpio_CROSSBOW2_OK_13_06"); //Теперь я научил тебя всему, что знал сам.
+		AI_Output (self, other,"GRD_205_Scorpio_CROSSBOW2_OK_13_02"); //Р›Р°РґРЅРѕ. Р’С‹СЃС‚СЂРµР»С‹ Р±СѓРґСѓС‚ Р±РѕР»РµРµ С‚РѕС‡РЅС‹РјРё, РµСЃР»Рё РїРµСЂРµРґ СЃС‚СЂРµР»СЊР±РѕР№ С‚С‹ РЅРµРјРЅРѕРіРѕ РїСЂРёСЃСЏРґРµС€СЊ.
+		AI_Output (self, other,"GRD_205_Scorpio_CROSSBOW2_OK_13_03"); //РўРµР±Рµ РїСЂРµРґСЃС‚РѕРёС‚ РЅР°СѓС‡РёС‚СЊСЃСЏ СЂР°СЃСЃС‡РёС‚С‹РІР°С‚СЊ СЃРєРѕСЂРѕСЃС‚СЊ, СЃ РєРѕС‚РѕСЂРѕР№ РґРІРёР¶РµС‚СЃСЏ С†РµР»СЊ.
+		AI_Output (self, other,"GRD_205_Scorpio_CROSSBOW2_OK_13_04"); //Р’С‹РїСѓСЃРєР°Р№ СЃС‚СЂРµР»Сѓ СЃ РґРѕР»Р¶РЅС‹Рј СѓРїСЂРµР¶РґРµРЅРёРµРј РїРѕ РїСѓС‚Рё РґРІРёР¶СѓС‰РµР№СЃСЏ С†РµР»Рё, С‡С‚РѕР±С‹ Р·Р°РјРµРґР»РёС‚СЊ РёР»Рё РѕСЃС‚Р°РЅРѕРІРёС‚СЊ РµРµ.
+		AI_Output (self, other,"GRD_205_Scorpio_CROSSBOW2_OK_13_05"); //Р•СЃР»Рё С†РµР»РµР№ РЅРµСЃРєРѕР»СЊРєРѕ, РЅРµ С‚СЂР°С‚СЊ Р·СЂСЏ РІСЂРµРјРµРЅРё - СЃРЅРёРјР°Р№ РёС… РѕРґРЅСѓ Р·Р° РґСЂСѓРіРѕР№ РЅРµРїСЂРµСЂС‹РІРЅРѕР№ СЃРµСЂРёРµР№ РІС‹СЃС‚СЂРµР»РѕРІ.
+		AI_Output (self, other,"GRD_205_Scorpio_CROSSBOW2_OK_13_06"); //РўРµРїРµСЂСЊ СЏ РЅР°СѓС‡РёР» С‚РµР±СЏ РІСЃРµРјСѓ, С‡С‚Рѕ Р·РЅР°Р» СЃР°Рј.
 		B_GiveInvItems (hero,other,ItMiNugget,300);
 		GRD_205_Scorpio_CROSSBOW2.permanent = 0;
 		};
 	}
 	else
 	{
-	 AI_Output (self, other,"GRD_205_Scorpio_CROSSBOW2_OK_13_07"); //Прежде найди где-нибудь ТРИ СОТНИ кусков руды.
+	 AI_Output (self, other,"GRD_205_Scorpio_CROSSBOW2_OK_13_07"); //РџСЂРµР¶РґРµ РЅР°Р№РґРё РіРґРµ-РЅРёР±СѓРґСЊ РўР Р РЎРћРўРќР РєСѓСЃРєРѕРІ СЂСѓРґС‹.
 	};
 };
 /*------------------------------------------------------------------------
@@ -314,7 +314,7 @@ FUNC int  GRD_205_Scorpio_HeyPC_Condition()
 };
 func void  GRD_205_Scorpio_HeyPC_Info()
 {
-	AI_Output (self, other,"GRD_205_Scorpio_HeyPC_Info_13_01"); //Эй, не бойся, парень. Иди сюда!
+	AI_Output (self, other,"GRD_205_Scorpio_HeyPC_Info_13_01"); //Р­Р№, РЅРµ Р±РѕР№СЃСЏ, РїР°СЂРµРЅСЊ. РРґРё СЃСЋРґР°!
 };
 
 /*------------------------------------------------------------------------
@@ -327,7 +327,7 @@ instance  GRD_205_Scorpio_BANISHED (C_INFO)
 	information		= GRD_205_Scorpio_BANISHED_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Все в порядке?"; 
+	description		= "Р’СЃРµ РІ РїРѕСЂСЏРґРєРµ?"; 
 };
 
 FUNC int  GRD_205_Scorpio_BANISHED_Condition()
@@ -340,13 +340,13 @@ FUNC int  GRD_205_Scorpio_BANISHED_Condition()
 };
 FUNC void  GRD_205_Scorpio_BANISHED_Info()
 {
-	AI_Output (other, self,"GRD_205_Scorpio_BANISHED_Info_15_01"); //С тобой все в порядке?
-	AI_Output (self, other,"GRD_205_Scorpio_BANISHED_Info_13_02"); //Я здесь прячусь. Меня не волнует барахло, которое растаскивают эти стражники.
-	AI_Output (self, other,"GRD_205_Scorpio_BANISHED_Info_13_03"); //Но я прихватил несколько отличных вещичек из арсенала. Если тебе понадобится оружие, обращайся ко мне.
+	AI_Output (other, self,"GRD_205_Scorpio_BANISHED_Info_15_01"); //РЎ С‚РѕР±РѕР№ РІСЃРµ РІ РїРѕСЂСЏРґРєРµ?
+	AI_Output (self, other,"GRD_205_Scorpio_BANISHED_Info_13_02"); //РЇ Р·РґРµСЃСЊ РїСЂСЏС‡СѓСЃСЊ. РњРµРЅСЏ РЅРµ РІРѕР»РЅСѓРµС‚ Р±Р°СЂР°С…Р»Рѕ, РєРѕС‚РѕСЂРѕРµ СЂР°СЃС‚Р°СЃРєРёРІР°СЋС‚ СЌС‚Рё СЃС‚СЂР°Р¶РЅРёРєРё.
+	AI_Output (self, other,"GRD_205_Scorpio_BANISHED_Info_13_03"); //РќРѕ СЏ РїСЂРёС…РІР°С‚РёР» РЅРµСЃРєРѕР»СЊРєРѕ РѕС‚Р»РёС‡РЅС‹С… РІРµС‰РёС‡РµРє РёР· Р°СЂСЃРµРЅР°Р»Р°. Р•СЃР»Рё С‚РµР±Рµ РїРѕРЅР°РґРѕР±РёС‚СЃСЏ РѕСЂСѓР¶РёРµ, РѕР±СЂР°С‰Р°Р№СЃСЏ РєРѕ РјРЅРµ.
 	if (Scorpio_Exile == FALSE)
 	{
 	Log_CreateTopic   	(GE_TraderOW,LOG_NOTE);
-	B_LogEntry		(GE_TraderOW,"Скорпио покинул Старый Лагерь и теперь находится с Кавалорном в охотничьей хижине где-то между Лагерями.");
+	B_LogEntry		(GE_TraderOW,"РЎРєРѕСЂРїРёРѕ РїРѕРєРёРЅСѓР» РЎС‚Р°СЂС‹Р№ Р›Р°РіРµСЂСЊ Рё С‚РµРїРµСЂСЊ РЅР°С…РѕРґРёС‚СЃСЏ СЃ РљР°РІР°Р»РѕСЂРЅРѕРј РІ РѕС…РѕС‚РЅРёС‡СЊРµР№ С…РёР¶РёРЅРµ РіРґРµ-С‚Рѕ РјРµР¶РґСѓ Р›Р°РіРµСЂСЏРјРё.");
 	Scorpio_Exile = TRUE;
 	};
 };  
@@ -362,7 +362,7 @@ instance  GRD_205_Scorpio_TRADE (C_INFO)
 	information		= GRD_205_Scorpio_TRADE_Info;
 	important		= 0;
 	permanent		= 1;
-	description		= "Покажи мне, что у тебя есть."; 
+	description		= "РџРѕРєР°Р¶Рё РјРЅРµ, С‡С‚Рѕ Сѓ С‚РµР±СЏ РµСЃС‚СЊ."; 
 	trade			= 1;
 };
 
@@ -376,6 +376,6 @@ FUNC int  GRD_205_Scorpio_TRADE_Condition()
 };
 FUNC void  GRD_205_Scorpio_TRADE_Info()
 {
-	AI_Output (other, self,"GRD_205_Scorpio_TRADE_Info_15_01"); //Покажи, что у тебя есть.
+	AI_Output (other, self,"GRD_205_Scorpio_TRADE_Info_15_01"); //РџРѕРєР°Р¶Рё, С‡С‚Рѕ Сѓ С‚РµР±СЏ РµСЃС‚СЊ.
 	
 };  

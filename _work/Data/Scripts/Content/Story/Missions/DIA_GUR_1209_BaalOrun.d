@@ -24,7 +24,7 @@ FUNC VOID  DIA_BaalOrun_Exit_Info()
 };
 
 // ************************************************************
-// 					NICHT ansprechbar (Unglдubiger) 
+// 					NICHT ansprechbar (UnglРґubiger) 
 // ************************************************************
 	var int BaalOrun_Ansprechbar;
 	var int BaalOrun_Sakrileg;
@@ -52,29 +52,29 @@ FUNC VOID DIA_BaalOrun_NoTalk_Info()
 {	
 	Info_ClearChoices 	(DIA_BaalOrun_NoTalk);
 	Info_Addchoice 		(DIA_BaalOrun_NoTalk,DIALOG_ENDE					,DIA_BaalOrun_NoTalk_ENDE);
-	Info_Addchoice 		(DIA_BaalOrun_NoTalk,"Все в порядке, приятель?",DIA_BaalOrun_NoTalk_Imp);
-	Info_Addchoice 		(DIA_BaalOrun_NoTalk,"Да пребудет с тобой Спящий!",DIA_BaalOrun_NoTalk_Sleeper);
-	Info_Addchoice 		(DIA_BaalOrun_NoTalk,"Привет! Я здесь новенький.",DIA_BaalOrun_NoTalk_Hi);
+	Info_Addchoice 		(DIA_BaalOrun_NoTalk,"Р’СЃРµ РІ РїРѕСЂСЏРґРєРµ, РїСЂРёСЏС‚РµР»СЊ?",DIA_BaalOrun_NoTalk_Imp);
+	Info_Addchoice 		(DIA_BaalOrun_NoTalk,"Р”Р° РїСЂРµР±СѓРґРµС‚ СЃ С‚РѕР±РѕР№ РЎРїСЏС‰РёР№!",DIA_BaalOrun_NoTalk_Sleeper);
+	Info_Addchoice 		(DIA_BaalOrun_NoTalk,"РџСЂРёРІРµС‚! РЇ Р·РґРµСЃСЊ РЅРѕРІРµРЅСЊРєРёР№.",DIA_BaalOrun_NoTalk_Hi);
 };
 
 func void DIA_BaalOrun_NoTalk_Hi()
 {
-	AI_Output (other, self,"DIA_BaalOrun_NoTalk_Hi_15_00"); //Привет! Я здесь новенький!
-	AI_Output (self, other,"DIA_BaalOrun_NoTalk_Hi_12_01"); //(вздох)
+	AI_Output (other, self,"DIA_BaalOrun_NoTalk_Hi_15_00"); //РџСЂРёРІРµС‚! РЇ Р·РґРµСЃСЊ РЅРѕРІРµРЅСЊРєРёР№!
+	AI_Output (self, other,"DIA_BaalOrun_NoTalk_Hi_12_01"); //(РІР·РґРѕС…)
 	BaalOrun_Sakrileg = TRUE;
 };
 
 func void DIA_BaalOrun_NoTalk_Sleeper()
 {
-	AI_Output (other, self,"DIA_BaalOrun_NoTalk_Sleeper_15_00"); //Да пребудет с тобой Спящий!
-	AI_Output (self, other,"DIA_BaalOrun_NoTalk_Sleeper_12_01"); //(вздох)
+	AI_Output (other, self,"DIA_BaalOrun_NoTalk_Sleeper_15_00"); //Р”Р° РїСЂРµР±СѓРґРµС‚ СЃ С‚РѕР±РѕР№ РЎРїСЏС‰РёР№!
+	AI_Output (self, other,"DIA_BaalOrun_NoTalk_Sleeper_12_01"); //(РІР·РґРѕС…)
 	BaalOrun_Sakrileg = TRUE;
 };
 
 func void DIA_BaalOrun_NoTalk_Imp()
 {
-	AI_Output (other, self,"DIA_BaalOrun_NoTalk_Imp_15_00"); //Все в порядке, приятель?
-	AI_Output (self, other,"DIA_BaalOrun_NoTalk_Imp_12_01"); //(вздох)
+	AI_Output (other, self,"DIA_BaalOrun_NoTalk_Imp_15_00"); //Р’СЃРµ РІ РїРѕСЂСЏРґРєРµ, РїСЂРёСЏС‚РµР»СЊ?
+	AI_Output (self, other,"DIA_BaalOrun_NoTalk_Imp_12_01"); //(РІР·РґРѕС…)
 	BaalOrun_Sakrileg = TRUE;
 };
 
@@ -107,30 +107,30 @@ FUNC int  DIA_BaalOrun_FirstTalk_Condition()
 
 FUNC VOID  DIA_BaalOrun_FirstTalk_Info()
 {
-	AI_Output (self, other,"DIA_BaalOrun_FirstTalk_12_00"); //Я разговаривал с Горимом. Ты оказал одному из наших братьев большую услугу - и поступил мудро.
-	AI_Output (self, other,"DIA_BaalOrun_FirstTalk_12_01"); //Именно поэтому ты был избран для выполнения особой миссии.
-	AI_Output (self, other,"DIA_BaalOrun_FirstTalk_12_02"); //Кор Галому для его экспериментов срочно понадобился болотник.
-	AI_Output (self, other,"DIA_BaalOrun_FirstTalk_12_03"); //Наши сборщики трудятся день и ночь, не покладая рук. Отправляйся к ним и доставь дневной сбор в лабораторию Галома.
+	AI_Output (self, other,"DIA_BaalOrun_FirstTalk_12_00"); //РЇ СЂР°Р·РіРѕРІР°СЂРёРІР°Р» СЃ Р“РѕСЂРёРјРѕРј. РўС‹ РѕРєР°Р·Р°Р» РѕРґРЅРѕРјСѓ РёР· РЅР°С€РёС… Р±СЂР°С‚СЊРµРІ Р±РѕР»СЊС€СѓСЋ СѓСЃР»СѓРіСѓ - Рё РїРѕСЃС‚СѓРїРёР» РјСѓРґСЂРѕ.
+	AI_Output (self, other,"DIA_BaalOrun_FirstTalk_12_01"); //РРјРµРЅРЅРѕ РїРѕСЌС‚РѕРјСѓ С‚С‹ Р±С‹Р» РёР·Р±СЂР°РЅ РґР»СЏ РІС‹РїРѕР»РЅРµРЅРёСЏ РѕСЃРѕР±РѕР№ РјРёСЃСЃРёРё.
+	AI_Output (self, other,"DIA_BaalOrun_FirstTalk_12_02"); //РљРѕСЂ Р“Р°Р»РѕРјСѓ РґР»СЏ РµРіРѕ СЌРєСЃРїРµСЂРёРјРµРЅС‚РѕРІ СЃСЂРѕС‡РЅРѕ РїРѕРЅР°РґРѕР±РёР»СЃСЏ Р±РѕР»РѕС‚РЅРёРє.
+	AI_Output (self, other,"DIA_BaalOrun_FirstTalk_12_03"); //РќР°С€Рё СЃР±РѕСЂС‰РёРєРё С‚СЂСѓРґСЏС‚СЃСЏ РґРµРЅСЊ Рё РЅРѕС‡СЊ, РЅРµ РїРѕРєР»Р°РґР°СЏ СЂСѓРє. РћС‚РїСЂР°РІР»СЏР№СЃСЏ Рє РЅРёРј Рё РґРѕСЃС‚Р°РІСЊ РґРЅРµРІРЅРѕР№ СЃР±РѕСЂ РІ Р»Р°Р±РѕСЂР°С‚РѕСЂРёСЋ Р“Р°Р»РѕРјР°.
 	
 	B_GiveXP			(XP_BaalOrunTalks);
-	B_LogEntry			(CH1_GhorimsRelief,"Харлок заменил Горима. Чудеса все-таки иногда происходят.");
+	B_LogEntry			(CH1_GhorimsRelief,"РҐР°СЂР»РѕРє Р·Р°РјРµРЅРёР» Р“РѕСЂРёРјР°. Р§СѓРґРµСЃР° РІСЃРµ-С‚Р°РєРё РёРЅРѕРіРґР° РїСЂРѕРёСЃС…РѕРґСЏС‚.");
 	Log_SetTopicStatus	(CH1_GhorimsRelief,	LOG_SUCCESS);
 
 	Log_CreateTopic		(CH1_DeliverWeed,	LOG_MISSION);
 	Log_SetTopicStatus	(CH1_DeliverWeed,	LOG_RUNNING);
-	B_LogEntry			(CH1_DeliverWeed,"Похоже, дело Харлока произвело впечатление на Гуру Идола Орана. Теперь я удостоен чести забирать весь урожай болотника у новичков и отдавать его Кор Галому.");
+	B_LogEntry			(CH1_DeliverWeed,"РџРѕС…РѕР¶Рµ, РґРµР»Рѕ РҐР°СЂР»РѕРєР° РїСЂРѕРёР·РІРµР»Рѕ РІРїРµС‡Р°С‚Р»РµРЅРёРµ РЅР° Р“СѓСЂСѓ РРґРѕР»Р° РћСЂР°РЅР°. РўРµРїРµСЂСЊ СЏ СѓРґРѕСЃС‚РѕРµРЅ С‡РµСЃС‚Рё Р·Р°Р±РёСЂР°С‚СЊ РІРµСЃСЊ СѓСЂРѕР¶Р°Р№ Р±РѕР»РѕС‚РЅРёРєР° Сѓ РЅРѕРІРёС‡РєРѕРІ Рё РѕС‚РґР°РІР°С‚СЊ РµРіРѕ РљРѕСЂ Р“Р°Р»РѕРјСѓ.");
 	BaalOrun_FetchWeed = LOG_RUNNING;
 	
 	Info_ClearChoices 	(DIA_BaalOrun_FirstTalk);
-	Info_Addchoice 		(DIA_BaalOrun_FirstTalk,"Ничего не говори.",DIA_BaalOrun_FirstTalk_MuteEnde);
-	Info_Addchoice 		(DIA_BaalOrun_FirstTalk,"Где я могу найти этих сборщиков?",DIA_BaalOrun_FirstTalk_Where);
+	Info_Addchoice 		(DIA_BaalOrun_FirstTalk,"РќРёС‡РµРіРѕ РЅРµ РіРѕРІРѕСЂРё.",DIA_BaalOrun_FirstTalk_MuteEnde);
+	Info_Addchoice 		(DIA_BaalOrun_FirstTalk,"Р“РґРµ СЏ РјРѕРіСѓ РЅР°Р№С‚Рё СЌС‚РёС… СЃР±РѕСЂС‰РёРєРѕРІ?",DIA_BaalOrun_FirstTalk_Where);
 };
 
 func void DIA_BaalOrun_FirstTalk_Where()
 {
-	AI_Output (other, self,"DIA_BaalOrun_FirstTalk_Where_15_00"); //Где я могу найти этих сборщиков?
-	AI_Output (self, other,"DIA_BaalOrun_FirstTalk_Where_12_01"); //Я еще не позволял тебе задавать вопросы!
-	AI_Output (self, other,"DIA_BaalOrun_FirstTalk_Where_12_02"); //Молись Спящему, дабы простил он твой святотатственный поступок! И ступай. Твоя миссия очень важна для всех нас.
+	AI_Output (other, self,"DIA_BaalOrun_FirstTalk_Where_15_00"); //Р“РґРµ СЏ РјРѕРіСѓ РЅР°Р№С‚Рё СЌС‚РёС… СЃР±РѕСЂС‰РёРєРѕРІ?
+	AI_Output (self, other,"DIA_BaalOrun_FirstTalk_Where_12_01"); //РЇ РµС‰Рµ РЅРµ РїРѕР·РІРѕР»СЏР» С‚РµР±Рµ Р·Р°РґР°РІР°С‚СЊ РІРѕРїСЂРѕСЃС‹!
+	AI_Output (self, other,"DIA_BaalOrun_FirstTalk_Where_12_02"); //РњРѕР»РёСЃСЊ РЎРїСЏС‰РµРјСѓ, РґР°Р±С‹ РїСЂРѕСЃС‚РёР» РѕРЅ С‚РІРѕР№ СЃРІСЏС‚РѕС‚Р°С‚СЃС‚РІРµРЅРЅС‹Р№ РїРѕСЃС‚СѓРїРѕРє! Р СЃС‚СѓРїР°Р№. РўРІРѕСЏ РјРёСЃСЃРёСЏ РѕС‡РµРЅСЊ РІР°Р¶РЅР° РґР»СЏ РІСЃРµС… РЅР°СЃ.
 	
 	Info_ClearChoices 	(DIA_BaalOrun_FirstTalk);
 	AI_StopProcessInfos	(self);
@@ -168,9 +168,9 @@ FUNC int  DIA_BaalOrun_GotWeed_Condition()
 
 FUNC VOID  DIA_BaalOrun_GotWeed_Info()
 {
-	AI_Output (self, other,"DIA_BaalOrun_GotWeed_12_00"); //Ты защитил наших сборщиков...
-	AI_Output (self, other,"DIA_BaalOrun_GotWeed_12_01"); //Ты не просто доказал, что находишься на нашей стороне, ты проявил себя верным слугой Спящего.
-	AI_Output (self, other,"DIA_BaalOrun_GotWeed_12_02"); //Я считаю, что ты достоин носить робу послушника.
+	AI_Output (self, other,"DIA_BaalOrun_GotWeed_12_00"); //РўС‹ Р·Р°С‰РёС‚РёР» РЅР°С€РёС… СЃР±РѕСЂС‰РёРєРѕРІ...
+	AI_Output (self, other,"DIA_BaalOrun_GotWeed_12_01"); //РўС‹ РЅРµ РїСЂРѕСЃС‚Рѕ РґРѕРєР°Р·Р°Р», С‡С‚Рѕ РЅР°С…РѕРґРёС€СЊСЃСЏ РЅР° РЅР°С€РµР№ СЃС‚РѕСЂРѕРЅРµ, С‚С‹ РїСЂРѕСЏРІРёР» СЃРµР±СЏ РІРµСЂРЅС‹Рј СЃР»СѓРіРѕР№ РЎРїСЏС‰РµРіРѕ.
+	AI_Output (self, other,"DIA_BaalOrun_GotWeed_12_02"); //РЇ СЃС‡РёС‚Р°СЋ, С‡С‚Рѕ С‚С‹ РґРѕСЃС‚РѕРёРЅ РЅРѕСЃРёС‚СЊ СЂРѕР±Сѓ РїРѕСЃР»СѓС€РЅРёРєР°.
 	BaalOrun_Ansprechbar = TRUE;
 
 	Log_CreateTopic		(CH1_JoinPsi,	LOG_MISSION);
@@ -178,7 +178,7 @@ FUNC VOID  DIA_BaalOrun_GotWeed_Info()
 	{
 		Log_SetTopicStatus	(CH1_JoinPsi,	LOG_RUNNING);
 	};
-	B_LogEntry			(CH1_JoinPsi,"Идол Оран назвал меня достойным слугой Спящего, поскольку я защитил других послушников от шершней на болоте.");
+	B_LogEntry			(CH1_JoinPsi,"РРґРѕР» РћСЂР°РЅ РЅР°Р·РІР°Р» РјРµРЅСЏ РґРѕСЃС‚РѕР№РЅС‹Рј СЃР»СѓРіРѕР№ РЎРїСЏС‰РµРіРѕ, РїРѕСЃРєРѕР»СЊРєСѓ СЏ Р·Р°С‰РёС‚РёР» РґСЂСѓРіРёС… РїРѕСЃР»СѓС€РЅРёРєРѕРІ РѕС‚ С€РµСЂС€РЅРµР№ РЅР° Р±РѕР»РѕС‚Рµ.");
 	B_GiveXP			(XP_ImpressedBaalOrun);
 };
 
@@ -193,7 +193,7 @@ instance  DIA_BaalOrun_WeedAtKaloms (C_INFO)
 	condition	= DIA_BaalOrun_WeedAtKaloms_Condition;
 	information	= DIA_BaalOrun_WeedAtKaloms_Info;
 	permanent	= 0;
-	description = "Я доставил болотник Кор Галому.";
+	description = "РЇ РґРѕСЃС‚Р°РІРёР» Р±РѕР»РѕС‚РЅРёРє РљРѕСЂ Р“Р°Р»РѕРјСѓ.";
 };                       
 
 FUNC int  DIA_BaalOrun_WeedAtKaloms_Condition()
@@ -206,9 +206,9 @@ FUNC int  DIA_BaalOrun_WeedAtKaloms_Condition()
 
 FUNC VOID  DIA_BaalOrun_WeedAtKaloms_Info()
 {
-	AI_Output		(other, self,"DIA_BaalOrun_WeedAtKaloms_15_00"); //Я доставил болотник Кор Галому.
-	AI_Output		(self, other,"DIA_BaalOrun_WeedAtKaloms_12_01"); //Ты хорошо поработал. Вот небольшая награда за твои старания. Возьми.
-	AI_Output		(self, other,"DIA_BaalOrun_WeedAtKaloms_12_02"); //Это магическое Заклинание Сна. Ты сможешь воспользоваться им только один раз, но я надеюсь, что оно сослужит тебе хорошую службу.
+	AI_Output		(other, self,"DIA_BaalOrun_WeedAtKaloms_15_00"); //РЇ РґРѕСЃС‚Р°РІРёР» Р±РѕР»РѕС‚РЅРёРє РљРѕСЂ Р“Р°Р»РѕРјСѓ.
+	AI_Output		(self, other,"DIA_BaalOrun_WeedAtKaloms_12_01"); //РўС‹ С…РѕСЂРѕС€Рѕ РїРѕСЂР°Р±РѕС‚Р°Р». Р’РѕС‚ РЅРµР±РѕР»СЊС€Р°СЏ РЅР°РіСЂР°РґР° Р·Р° С‚РІРѕРё СЃС‚Р°СЂР°РЅРёСЏ. Р’РѕР·СЊРјРё.
+	AI_Output		(self, other,"DIA_BaalOrun_WeedAtKaloms_12_02"); //Р­С‚Рѕ РјР°РіРёС‡РµСЃРєРѕРµ Р—Р°РєР»РёРЅР°РЅРёРµ РЎРЅР°. РўС‹ СЃРјРѕР¶РµС€СЊ РІРѕСЃРїРѕР»СЊР·РѕРІР°С‚СЊСЃСЏ РёРј С‚РѕР»СЊРєРѕ РѕРґРёРЅ СЂР°Р·, РЅРѕ СЏ РЅР°РґРµСЋСЃСЊ, С‡С‚Рѕ РѕРЅРѕ СЃРѕСЃР»СѓР¶РёС‚ С‚РµР±Рµ С…РѕСЂРѕС€СѓСЋ СЃР»СѓР¶Р±Сѓ.
 	
 	BaalOrun_Ansprechbar = TRUE; //damit NoTalk-info nicht kommt
 	B_GiveXP		(XP_ReportToBaalOrun);
@@ -228,7 +228,7 @@ instance  DIA_BaalOrun_Perm (C_INFO)
 	condition	= DIA_BaalOrun_Perm_Condition;
 	information	= DIA_BaalOrun_Perm_Info;
 	permanent	= 1;
-	description = "Как продвигается добыча болотника?";
+	description = "РљР°Рє РїСЂРѕРґРІРёРіР°РµС‚СЃСЏ РґРѕР±С‹С‡Р° Р±РѕР»РѕС‚РЅРёРєР°?";
 };                       
 
 FUNC int  DIA_BaalOrun_Perm_Condition()
@@ -241,9 +241,9 @@ FUNC int  DIA_BaalOrun_Perm_Condition()
 
 FUNC VOID  DIA_BaalOrun_Perm_Info()
 {
-	AI_Output (other, self,"DIA_BaalOrun_Perm_15_00"); //Как продвигается добыча болотника?
-	AI_Output (self, other,"DIA_BaalOrun_Perm_12_01"); //Каждый из нас трудится на пределе своих сил, и в результате у нас достаточно болотника не только для собственных нужд - мы даже пускаем его на обмен с другими Лагерями.
-	AI_Output (self, other,"DIA_BaalOrun_Perm_12_02"); //Это жертва, которую наши послушники с готовностью приносят Спящему.
+	AI_Output (other, self,"DIA_BaalOrun_Perm_15_00"); //РљР°Рє РїСЂРѕРґРІРёРіР°РµС‚СЃСЏ РґРѕР±С‹С‡Р° Р±РѕР»РѕС‚РЅРёРєР°?
+	AI_Output (self, other,"DIA_BaalOrun_Perm_12_01"); //РљР°Р¶РґС‹Р№ РёР· РЅР°СЃ С‚СЂСѓРґРёС‚СЃСЏ РЅР° РїСЂРµРґРµР»Рµ СЃРІРѕРёС… СЃРёР», Рё РІ СЂРµР·СѓР»СЊС‚Р°С‚Рµ Сѓ РЅР°СЃ РґРѕСЃС‚Р°С‚РѕС‡РЅРѕ Р±РѕР»РѕС‚РЅРёРєР° РЅРµ С‚РѕР»СЊРєРѕ РґР»СЏ СЃРѕР±СЃС‚РІРµРЅРЅС‹С… РЅСѓР¶Рґ - РјС‹ РґР°Р¶Рµ РїСѓСЃРєР°РµРј РµРіРѕ РЅР° РѕР±РјРµРЅ СЃ РґСЂСѓРіРёРјРё Р›Р°РіРµСЂСЏРјРё.
+	AI_Output (self, other,"DIA_BaalOrun_Perm_12_02"); //Р­С‚Рѕ Р¶РµСЂС‚РІР°, РєРѕС‚РѕСЂСѓСЋ РЅР°С€Рё РїРѕСЃР»СѓС€РЅРёРєРё СЃ РіРѕС‚РѕРІРЅРѕСЃС‚СЊСЋ РїСЂРёРЅРѕСЃСЏС‚ РЎРїСЏС‰РµРјСѓ.
 };
 
 

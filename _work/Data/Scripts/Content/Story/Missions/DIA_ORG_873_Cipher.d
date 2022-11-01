@@ -34,7 +34,7 @@ instance  Org_873_Cipher_Hello (C_INFO)
 	condition	=  Org_873_Cipher_Hello_Condition;
 	information	=  Org_873_Cipher_Hello_Info;
 	permanent	=  0;
-	description = "Как жизнь?";
+	description = "РљР°Рє Р¶РёР·РЅСЊ?";
 };                       
 
 FUNC int  Org_873_Cipher_Hello_Condition()
@@ -47,11 +47,11 @@ FUNC int  Org_873_Cipher_Hello_Condition()
 
 FUNC VOID  Org_873_Cipher_Hello_Info()
 {
-	AI_Output (other, self,"DIA_Cipher_Hello_15_00"); //Как дела?
-	AI_Output (self, other,"DIA_Cipher_Hello_12_01"); //Мы еще раз крепко насолили Гомезу.
-	AI_Output (self, other,"DIA_Cipher_Hello_12_02"); //Три убитых стражника и куча добра на продажу. За это я выпью!
-	AI_Output (other, self,"DIA_Cipher_Hello_15_03"); //ВЫ постоянно совершаете набеги на Старый Лагерь?
-	AI_Output (self, other,"DIA_Cipher_Hello_12_04"); //Нет, только когда дело того стоит.
+	AI_Output (other, self,"DIA_Cipher_Hello_15_00"); //РљР°Рє РґРµР»Р°?
+	AI_Output (self, other,"DIA_Cipher_Hello_12_01"); //РњС‹ РµС‰Рµ СЂР°Р· РєСЂРµРїРєРѕ РЅР°СЃРѕР»РёР»Рё Р“РѕРјРµР·Сѓ.
+	AI_Output (self, other,"DIA_Cipher_Hello_12_02"); //РўСЂРё СѓР±РёС‚С‹С… СЃС‚СЂР°Р¶РЅРёРєР° Рё РєСѓС‡Р° РґРѕР±СЂР° РЅР° РїСЂРѕРґР°Р¶Сѓ. Р—Р° СЌС‚Рѕ СЏ РІС‹РїСЊСЋ!
+	AI_Output (other, self,"DIA_Cipher_Hello_15_03"); //Р’Р« РїРѕСЃС‚РѕСЏРЅРЅРѕ СЃРѕРІРµСЂС€Р°РµС‚Рµ РЅР°Р±РµРіРё РЅР° РЎС‚Р°СЂС‹Р№ Р›Р°РіРµСЂСЊ?
+	AI_Output (self, other,"DIA_Cipher_Hello_12_04"); //РќРµС‚, С‚РѕР»СЊРєРѕ РєРѕРіРґР° РґРµР»Рѕ С‚РѕРіРѕ СЃС‚РѕРёС‚.
 };
 
 // ******************************
@@ -65,7 +65,7 @@ instance  Org_873_Cipher_Fisk (C_INFO)
 	condition	=  Org_873_Cipher_Fisk_Condition;
 	information	=  Org_873_Cipher_Fisk_Info;
 	permanent	=  1;
-	description = "Фиску из Старого Лагеря нужен компаньон.";
+	description = "Р¤РёСЃРєСѓ РёР· РЎС‚Р°СЂРѕРіРѕ Р›Р°РіРµСЂСЏ РЅСѓР¶РµРЅ РєРѕРјРїР°РЅСЊРѕРЅ.";
 };                       
 
 FUNC int  Org_873_Cipher_Fisk_Condition()
@@ -78,9 +78,9 @@ FUNC int  Org_873_Cipher_Fisk_Condition()
 
 FUNC VOID  Org_873_Cipher_Fisk_Info()
 {
-	AI_Output (other, self,"DIA_Cipher_Fisk_15_00"); //Фиску из Старого Лагеря нужен компаньон.
-	AI_Output (self, other,"DIA_Cipher_Fisk_12_01"); //Меня это не интересует.
-	AI_Output (self, other,"DIA_Cipher_Fisk_12_02"); //Но это вполне может заинтересовать Шарки. Спроси его при встрече.
+	AI_Output (other, self,"DIA_Cipher_Fisk_15_00"); //Р¤РёСЃРєСѓ РёР· РЎС‚Р°СЂРѕРіРѕ Р›Р°РіРµСЂСЏ РЅСѓР¶РµРЅ РєРѕРјРїР°РЅСЊРѕРЅ.
+	AI_Output (self, other,"DIA_Cipher_Fisk_12_01"); //РњРµРЅСЏ СЌС‚Рѕ РЅРµ РёРЅС‚РµСЂРµСЃСѓРµС‚.
+	AI_Output (self, other,"DIA_Cipher_Fisk_12_02"); //РќРѕ СЌС‚Рѕ РІРїРѕР»РЅРµ РјРѕР¶РµС‚ Р·Р°РёРЅС‚РµСЂРµСЃРѕРІР°С‚СЊ РЁР°СЂРєРё. РЎРїСЂРѕСЃРё РµРіРѕ РїСЂРё РІСЃС‚СЂРµС‡Рµ.
 };
 
 // ******************************
@@ -96,7 +96,7 @@ instance  Org_873_Cipher_FromBalor (C_INFO)
 	condition	=  Org_873_Cipher_FromBalor_Condition;
 	information	=  Org_873_Cipher_FromBalor_Info;
 	permanent	=  1;
-	description = "Что у вас есть?";
+	description = "Р§С‚Рѕ Сѓ РІР°СЃ РµСЃС‚СЊ?";
 };                       
 
 FUNC int  Org_873_Cipher_FromBalor_Condition()
@@ -109,18 +109,18 @@ FUNC int  Org_873_Cipher_FromBalor_Condition()
 
 FUNC VOID  Org_873_Cipher_FromBalor_Info()
 {
-	AI_Output (other, self,"DIA_Cipher_FromBalor_15_00"); //Что у вас есть?
-	AI_Output (self, other,"DIA_Cipher_FromBalor_12_01"); //Давай изменим вопрос. Что есть у ТЕБЯ? Я занимаюсь только крупными сделками.
+	AI_Output (other, self,"DIA_Cipher_FromBalor_15_00"); //Р§С‚Рѕ Сѓ РІР°СЃ РµСЃС‚СЊ?
+	AI_Output (self, other,"DIA_Cipher_FromBalor_12_01"); //Р”Р°РІР°Р№ РёР·РјРµРЅРёРј РІРѕРїСЂРѕСЃ. Р§С‚Рѕ РµСЃС‚СЊ Сѓ РўР•Р‘РЇ? РЇ Р·Р°РЅРёРјР°СЋСЃСЊ С‚РѕР»СЊРєРѕ РєСЂСѓРїРЅС‹РјРё СЃРґРµР»РєР°РјРё.
 	if (Balor_TellsNCDealer == TRUE)
 	{
-		AI_Output (other, self,"DIA_Cipher_FromBalor_15_02"); //Бэлор говорил,  тебе нужен болотник.
-		AI_Output (self, other,"DIA_Cipher_FromBalor_12_03"); //Ммммм. Хочешь обменять его?
+		AI_Output (other, self,"DIA_Cipher_FromBalor_15_02"); //Р‘СЌР»РѕСЂ РіРѕРІРѕСЂРёР»,  С‚РµР±Рµ РЅСѓР¶РµРЅ Р±РѕР»РѕС‚РЅРёРє.
+		AI_Output (self, other,"DIA_Cipher_FromBalor_12_03"); //РњРјРјРјРј. РҐРѕС‡РµС€СЊ РѕР±РјРµРЅСЏС‚СЊ РµРіРѕ?
 		Cipher_Trade = TRUE;
 	}
 	else
 	{
-		AI_Output (other, self,"DIA_Cipher_FromBalor_15_04"); //В этом я тебе не помощник.
-		AI_Output (self, other,"DIA_Cipher_FromBalor_12_05"); //Тогда возвращайся, когда ты сможешь мне помочь.
+		AI_Output (other, self,"DIA_Cipher_FromBalor_15_04"); //Р’ СЌС‚РѕРј СЏ С‚РµР±Рµ РЅРµ РїРѕРјРѕС‰РЅРёРє.
+		AI_Output (self, other,"DIA_Cipher_FromBalor_12_05"); //РўРѕРіРґР° РІРѕР·РІСЂР°С‰Р°Р№СЃСЏ, РєРѕРіРґР° С‚С‹ СЃРјРѕР¶РµС€СЊ РјРЅРµ РїРѕРјРѕС‡СЊ.
 	};
 };
 
@@ -135,7 +135,7 @@ instance  Org_873_Cipher_TRADE (C_INFO)
 	condition	=  Org_873_Cipher_TRADE_Condition;
 	information	=  Org_873_Cipher_TRADE_Info;
 	permanent	=  1;
-	description = "Предлагаю сделку.";
+	description = "РџСЂРµРґР»Р°РіР°СЋ СЃРґРµР»РєСѓ.";
 	trade		= 1;
 };                       
 
@@ -149,6 +149,6 @@ FUNC int  Org_873_Cipher_TRADE_Condition()
 
 FUNC VOID  Org_873_Cipher_TRADE_Info()
 {
-	AI_Output (other, self,"DIA_Cipher_TRADE_15_00"); //Предлагаю сделку.
-	AI_Output (self, other,"DIA_Cipher_TRADE_12_01"); //Что тебе нужно?
+	AI_Output (other, self,"DIA_Cipher_TRADE_15_00"); //РџСЂРµРґР»Р°РіР°СЋ СЃРґРµР»РєСѓ.
+	AI_Output (self, other,"DIA_Cipher_TRADE_12_01"); //Р§С‚Рѕ С‚РµР±Рµ РЅСѓР¶РЅРѕ?
 };

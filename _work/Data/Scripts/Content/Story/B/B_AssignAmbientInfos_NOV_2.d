@@ -14,7 +14,7 @@ INSTANCE Info_Nov_2_EXIT(C_INFO)
 	condition	= Info_Nov_2_EXIT_Condition;
 	information	= Info_Nov_2_EXIT_Info;
 	permanent	= 1;
-	description = "ЗАКОНЧИТЬ";
+	description = "Р—РђРљРћРќР§РРўР¬";
 };                       
 
 FUNC INT Info_Nov_2_EXIT_Condition()
@@ -37,7 +37,7 @@ INSTANCE Info_Nov_2_EinerVonEuchWerden (C_INFO) // E1
 	condition	= Info_Nov_2_EinerVonEuchWerden_Condition;
 	information	= Info_Nov_2_EinerVonEuchWerden_Info;
 	permanent	= 1;
-	description = "Я хочу присоединиться к вам.";
+	description = "РЇ С…РѕС‡Сѓ РїСЂРёСЃРѕРµРґРёРЅРёС‚СЊСЃСЏ Рє РІР°Рј.";
 };                       
 
 FUNC INT Info_Nov_2_EinerVonEuchWerden_Condition()
@@ -50,9 +50,9 @@ FUNC INT Info_Nov_2_EinerVonEuchWerden_Condition()
 
 FUNC VOID Info_Nov_2_EinerVonEuchWerden_Info()
 {
-	AI_Output(other,self,"Info_Nov_2_EinerVonEuchWerden_15_00"); //Я хочу присоединиться к вам.
-	AI_Output(self,other,"Info_Nov_2_EinerVonEuchWerden_02_01"); //Ты решил послужить Спящему? Перед тобой открыт путь к удаче и процветанию!
-	AI_Output(self,other,"Info_Nov_2_EinerVonEuchWerden_02_02"); //Поговори с Кор Галомом. Он решит, чем тебе лучше заниматься.
+	AI_Output(other,self,"Info_Nov_2_EinerVonEuchWerden_15_00"); //РЇ С…РѕС‡Сѓ РїСЂРёСЃРѕРµРґРёРЅРёС‚СЊСЃСЏ Рє РІР°Рј.
+	AI_Output(self,other,"Info_Nov_2_EinerVonEuchWerden_02_01"); //РўС‹ СЂРµС€РёР» РїРѕСЃР»СѓР¶РёС‚СЊ РЎРїСЏС‰РµРјСѓ? РџРµСЂРµРґ С‚РѕР±РѕР№ РѕС‚РєСЂС‹С‚ РїСѓС‚СЊ Рє СѓРґР°С‡Рµ Рё РїСЂРѕС†РІРµС‚Р°РЅРёСЋ!
+	AI_Output(self,other,"Info_Nov_2_EinerVonEuchWerden_02_02"); //РџРѕРіРѕРІРѕСЂРё СЃ РљРѕСЂ Р“Р°Р»РѕРјРѕРј. РћРЅ СЂРµС€РёС‚, С‡РµРј С‚РµР±Рµ Р»СѓС‡С€Рµ Р·Р°РЅРёРјР°С‚СЊСЃСЏ.
 	
 	var C_NPC CorKalom;		CorKalom= Hlp_GetNpc(Gur_1201_CorKalom);
 	CorKalom.aivar[AIV_FINDABLE] = TRUE;
@@ -68,7 +68,7 @@ INSTANCE Info_Nov_2_WichtigePersonen(C_INFO)
 	condition	= Info_Nov_2_WichtigePersonen_Condition;
 	information	= Info_Nov_2_WichtigePersonen_Info;
 	permanent	= 1;
-	description = "Кто возглавляет вас?";
+	description = "РљС‚Рѕ РІРѕР·РіР»Р°РІР»СЏРµС‚ РІР°СЃ?";
 };                       
 
 FUNC INT Info_Nov_2_WichtigePersonen_Condition()
@@ -78,9 +78,9 @@ FUNC INT Info_Nov_2_WichtigePersonen_Condition()
 
 FUNC VOID Info_Nov_2_WichtigePersonen_Info()
 {
-	AI_Output(other,self,"Info_Nov_2_WichtigePersonen_15_00"); //Кто возглавляет вас?
-	AI_Output(self,other,"Info_Nov_2_WichtigePersonen_02_01"); //Наши наставники - Ю`Берион, Кор Галом и Кор Ангар.
-	AI_Output(self,other,"Info_Nov_2_WichtigePersonen_02_02"); //Они даруют нам связь со Спящим. Во время Церемонии они общаются с ним.
+	AI_Output(other,self,"Info_Nov_2_WichtigePersonen_15_00"); //РљС‚Рѕ РІРѕР·РіР»Р°РІР»СЏРµС‚ РІР°СЃ?
+	AI_Output(self,other,"Info_Nov_2_WichtigePersonen_02_01"); //РќР°С€Рё РЅР°СЃС‚Р°РІРЅРёРєРё - Р®`Р‘РµСЂРёРѕРЅ, РљРѕСЂ Р“Р°Р»РѕРј Рё РљРѕСЂ РђРЅРіР°СЂ.
+	AI_Output(self,other,"Info_Nov_2_WichtigePersonen_02_02"); //РћРЅРё РґР°СЂСѓСЋС‚ РЅР°Рј СЃРІСЏР·СЊ СЃРѕ РЎРїСЏС‰РёРј. Р’Рѕ РІСЂРµРјСЏ Р¦РµСЂРµРјРѕРЅРёРё РѕРЅРё РѕР±С‰Р°СЋС‚СЃСЏ СЃ РЅРёРј.
 	
 	var C_NPC YBerion;		YBerion	= Hlp_GetNpc(Gur_1200_Yberion);
 	var C_NPC CorKalom;		CorKalom= Hlp_GetNpc(Gur_1201_CorKalom);
@@ -100,7 +100,7 @@ INSTANCE Info_Nov_2_DasLager(C_INFO)
 	condition	= Info_Nov_2_DasLager_Condition;
 	information	= Info_Nov_2_DasLager_Info;
 	permanent	= 1;
-	description = "Расскажи мне об этом месте.";
+	description = "Р Р°СЃСЃРєР°Р¶Рё РјРЅРµ РѕР± СЌС‚РѕРј РјРµСЃС‚Рµ.";
 };                       
 
 FUNC INT Info_Nov_2_DasLager_Condition()
@@ -110,9 +110,9 @@ FUNC INT Info_Nov_2_DasLager_Condition()
 
 FUNC VOID Info_Nov_2_DasLager_Info()
 {
-	AI_Output(other,self,"Info_Nov_2_DasLager_15_00"); //Расскажи мне об этом месте.
-	AI_Output(self,other,"Info_Nov_2_DasLager_02_01"); //Это место веры, брат. Все, что у нас есть, мы готовы разделить с каждым, кто верит в учение Спящего.
-	AI_Output(self,other,"Info_Nov_2_DasLager_02_02"); //Поговори с одним из Гуру, обогати свою душу.
+	AI_Output(other,self,"Info_Nov_2_DasLager_15_00"); //Р Р°СЃСЃРєР°Р¶Рё РјРЅРµ РѕР± СЌС‚РѕРј РјРµСЃС‚Рµ.
+	AI_Output(self,other,"Info_Nov_2_DasLager_02_01"); //Р­С‚Рѕ РјРµСЃС‚Рѕ РІРµСЂС‹, Р±СЂР°С‚. Р’СЃРµ, С‡С‚Рѕ Сѓ РЅР°СЃ РµСЃС‚СЊ, РјС‹ РіРѕС‚РѕРІС‹ СЂР°Р·РґРµР»РёС‚СЊ СЃ РєР°Р¶РґС‹Рј, РєС‚Рѕ РІРµСЂРёС‚ РІ СѓС‡РµРЅРёРµ РЎРїСЏС‰РµРіРѕ.
+	AI_Output(self,other,"Info_Nov_2_DasLager_02_02"); //РџРѕРіРѕРІРѕСЂРё СЃ РѕРґРЅРёРј РёР· Р“СѓСЂСѓ, РѕР±РѕРіР°С‚Рё СЃРІРѕСЋ РґСѓС€Сѓ.
 };
 
 // *************************************************************************
@@ -125,7 +125,7 @@ INSTANCE Info_Nov_2_DieLage(C_INFO) // E1
 	condition	= Info_Nov_2_DieLage_Condition;
 	information	= Info_Nov_2_DieLage_Info;
 	permanent	= 1;
-	description = "Как дела?";
+	description = "РљР°Рє РґРµР»Р°?";
 };                       
 
 FUNC INT Info_Nov_2_DieLage_Condition()
@@ -135,8 +135,8 @@ FUNC INT Info_Nov_2_DieLage_Condition()
 
 FUNC VOID Info_Nov_2_DieLage_Info()
 {
-	AI_Output(other,self,"Info_Nov_2_DieLage_15_00"); //Как дела?
-	AI_Output(self,other,"Info_Nov_2_DieLage_02_01"); //У меня не так много времени. Всегда есть дела.
+	AI_Output(other,self,"Info_Nov_2_DieLage_15_00"); //РљР°Рє РґРµР»Р°?
+	AI_Output(self,other,"Info_Nov_2_DieLage_02_01"); //РЈ РјРµРЅСЏ РЅРµ С‚Р°Рє РјРЅРѕРіРѕ РІСЂРµРјРµРЅРё. Р’СЃРµРіРґР° РµСЃС‚СЊ РґРµР»Р°.
 };
 	
 // *************************************************************************

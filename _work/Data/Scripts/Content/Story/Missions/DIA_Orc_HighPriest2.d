@@ -21,11 +21,11 @@ FUNC VOID Info_HighPriest2_Info()
 	AI_SetWalkmode		(self, NPC_WALK);
 	AI_GotoNpc			(self, other);
 	
-	AI_Output			(self, other,"Info_HighPriest2_17_01"); //НЕВЕРНЫЙ В ХРАМЕ ПОВЕЛИТЕЛЯ!!!
-	AI_Output			(self, other,"Info_HighPriest2_17_02"); //БУДЬ ЖЕ ПРОКЛЯТ!
-	AI_Output			(other, self,"Info_HighPriest2_15_03"); //Проклинай САМ СЕБЯ, гниль!
+	AI_Output			(self, other,"Info_HighPriest2_17_01"); //РќР•Р’Р•Р РќР«Р™ Р’ РҐР РђРњР• РџРћР’Р•Р›РРўР•Р›РЇ!!!
+	AI_Output			(self, other,"Info_HighPriest2_17_02"); //Р‘РЈР”Р¬ Р–Р• РџР РћРљР›РЇРў!
+	AI_Output			(other, self,"Info_HighPriest2_15_03"); //РџСЂРѕРєР»РёРЅР°Р№ РЎРђРњ РЎР•Р‘РЇ, РіРЅРёР»СЊ!
 	
-	B_LogEntry			(CH4_EnterTemple,"Варраг-Касорг, следующий из пяти орочьих шаманов, сейчас простится со своей жалкой жизнью!");
+	B_LogEntry			(CH4_EnterTemple,"Р’Р°СЂСЂР°Рі-РљР°СЃРѕСЂРі, СЃР»РµРґСѓСЋС‰РёР№ РёР· РїСЏС‚Рё РѕСЂРѕС‡СЊРёС… С€Р°РјР°РЅРѕРІ, СЃРµР№С‡Р°СЃ РїСЂРѕСЃС‚РёС‚СЃСЏ СЃРѕ СЃРІРѕРµР№ Р¶Р°Р»РєРѕР№ Р¶РёР·РЅСЊСЋ!");
 
 	AI_StopProcessInfos	(self );
 

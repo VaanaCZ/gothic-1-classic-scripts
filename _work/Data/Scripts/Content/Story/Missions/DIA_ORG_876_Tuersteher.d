@@ -23,7 +23,7 @@ FUNC VOID DIA_Org_876_EXIT_Info()
 };
 
 // ************************************************************
-// 						Bin Schьrfer
+// 						Bin SchСЊrfer
 // ************************************************************
 
 INSTANCE DIA_Org_876_AmSfb (C_INFO)
@@ -33,7 +33,7 @@ INSTANCE DIA_Org_876_AmSfb (C_INFO)
 	condition	= DIA_Org_876_AmSfb_Condition;
 	information	= DIA_Org_876_AmSfb_Info;
 	permanent	= 1;
-	description = "Я рудокоп! И я хочу пить!";
+	description = "РЇ СЂСѓРґРѕРєРѕРї! Р СЏ С…РѕС‡Сѓ РїРёС‚СЊ!";
 };                       
 
 FUNC INT DIA_Org_876_AmSfb_Condition()
@@ -47,21 +47,21 @@ FUNC INT DIA_Org_876_AmSfb_Condition()
 
 FUNC VOID DIA_Org_876_AmSfb_Info()
 {	
-	AI_Output (other, self,"DIA_Org_876_AmSfb_15_00"); //Я рудокоп! И я хочу пить!
+	AI_Output (other, self,"DIA_Org_876_AmSfb_15_00"); //РЇ СЂСѓРґРѕРєРѕРї! Р СЏ С…РѕС‡Сѓ РїРёС‚СЊ!
 	
 	var C_ITEM myarmor;
 	
 	myarmor = Npc_GetEquippedArmor(hero);
 	if (Hlp_IsItem(myarmor, SFB_ARMOR_L))
 	{
-		AI_Output (self, other,"DIA_Org_876_AmSfb_06_01"); //Да, ты похож на этих вонючих крыс... Проходи!
+		AI_Output (self, other,"DIA_Org_876_AmSfb_06_01"); //Р”Р°, С‚С‹ РїРѕС…РѕР¶ РЅР° СЌС‚РёС… РІРѕРЅСЋС‡РёС… РєСЂС‹СЃ... РџСЂРѕС…РѕРґРё!
 		self.aivar[AIV_PASSGATE] = TRUE;	
 		
 		AI_StopProcessInfos	(self);
 	}
 	else
 	{
-		AI_Output (self, other,"DIA_Org_876_AmSfb_NOSFB_06_00"); //Ты не похож на этих скребков. ТАК ты сюда не пройдешь, приятель.
+		AI_Output (self, other,"DIA_Org_876_AmSfb_NOSFB_06_00"); //РўС‹ РЅРµ РїРѕС…РѕР¶ РЅР° СЌС‚РёС… СЃРєСЂРµР±РєРѕРІ. РўРђРљ С‚С‹ СЃСЋРґР° РЅРµ РїСЂРѕР№РґРµС€СЊ, РїСЂРёСЏС‚РµР»СЊ.
 	};
 };
 
@@ -76,7 +76,7 @@ INSTANCE DIA_Org_876_Bribe (C_INFO)
 	condition	= DIA_Org_876_Bribe_Condition;
 	information	= DIA_Org_876_Bribe_Info;
 	permanent	= 1;
-	description = "А что ты скажешь по поводу небольшой платы за вход?";
+	description = "Рђ С‡С‚Рѕ С‚С‹ СЃРєР°Р¶РµС€СЊ РїРѕ РїРѕРІРѕРґСѓ РЅРµР±РѕР»СЊС€РѕР№ РїР»Р°С‚С‹ Р·Р° РІС…РѕРґ?";
 };                       
 
 FUNC INT DIA_Org_876_Bribe_Condition()
@@ -90,25 +90,25 @@ FUNC INT DIA_Org_876_Bribe_Condition()
 
 FUNC VOID DIA_Org_876_Bribe_Info()
 {	
-	AI_Output (other, self,"DIA_Org_876_Bribe_15_00"); //А что ты скажешь по поводу небольшой платы за вход?
-	AI_Output (self, other,"DIA_Org_876_Bribe_06_01"); //Это зависит от того, что ты понимаешь под 'небольшой платой'.
+	AI_Output (other, self,"DIA_Org_876_Bribe_15_00"); //Рђ С‡С‚Рѕ С‚С‹ СЃРєР°Р¶РµС€СЊ РїРѕ РїРѕРІРѕРґСѓ РЅРµР±РѕР»СЊС€РѕР№ РїР»Р°С‚С‹ Р·Р° РІС…РѕРґ?
+	AI_Output (self, other,"DIA_Org_876_Bribe_06_01"); //Р­С‚Рѕ Р·Р°РІРёСЃРёС‚ РѕС‚ С‚РѕРіРѕ, С‡С‚Рѕ С‚С‹ РїРѕРЅРёРјР°РµС€СЊ РїРѕРґ 'РЅРµР±РѕР»СЊС€РѕР№ РїР»Р°С‚РѕР№'.
 	
 	Info_ClearChoices	(DIA_Org_876_Bribe );
-	Info_AddChoice		(DIA_Org_876_Bribe,"Сотни кусков руды должно быть достаточно.",DIA_Org_876_Bribe_100Erz);
-	Info_AddChoice		(DIA_Org_876_Bribe,"Что ты скажешь по поводу пятидесяти кусков?",DIA_Org_876_Bribe_50Erz);
-	Info_AddChoice		(DIA_Org_876_Bribe,"У меня есть десять кусков руды - вот.",DIA_Org_876_Bribe_10Erz);
+	Info_AddChoice		(DIA_Org_876_Bribe,"РЎРѕС‚РЅРё РєСѓСЃРєРѕРІ СЂСѓРґС‹ РґРѕР»Р¶РЅРѕ Р±С‹С‚СЊ РґРѕСЃС‚Р°С‚РѕС‡РЅРѕ.",DIA_Org_876_Bribe_100Erz);
+	Info_AddChoice		(DIA_Org_876_Bribe,"Р§С‚Рѕ С‚С‹ СЃРєР°Р¶РµС€СЊ РїРѕ РїРѕРІРѕРґСѓ РїСЏС‚РёРґРµСЃСЏС‚Рё РєСѓСЃРєРѕРІ?",DIA_Org_876_Bribe_50Erz);
+	Info_AddChoice		(DIA_Org_876_Bribe,"РЈ РјРµРЅСЏ РµСЃС‚СЊ РґРµСЃСЏС‚СЊ РєСѓСЃРєРѕРІ СЂСѓРґС‹ - РІРѕС‚.",DIA_Org_876_Bribe_10Erz);
 };
 
 func void DIA_Org_876_Bribe_10Erz()
 {
-	AI_Output (other, self,"DIA_Org_876_Bribe_10Erz_15_00"); //У меня есть десять кусков руды - вот.
+	AI_Output (other, self,"DIA_Org_876_Bribe_10Erz_15_00"); //РЈ РјРµРЅСЏ РµСЃС‚СЊ РґРµСЃСЏС‚СЊ РєСѓСЃРєРѕРІ СЂСѓРґС‹ - РІРѕС‚.
 	if (Npc_HasItems (other, itminugget) >= 10)
 	{
-		AI_Output (self, other,"DIA_Org_876_Bribe_10Erz_06_01"); //Десять кусков, а? За это я позволю тебе попробовать еще раз.
+		AI_Output (self, other,"DIA_Org_876_Bribe_10Erz_06_01"); //Р”РµСЃСЏС‚СЊ РєСѓСЃРєРѕРІ, Р°? Р—Р° СЌС‚Рѕ СЏ РїРѕР·РІРѕР»СЋ С‚РµР±Рµ РїРѕРїСЂРѕР±РѕРІР°С‚СЊ РµС‰Рµ СЂР°Р·.
 	}
 	else
 	{
-		AI_Output (self, other,"DIA_Org_876_Bribe_10Erz_06_02"); //И где они? Я не вижу десяти кусков.
+		AI_Output (self, other,"DIA_Org_876_Bribe_10Erz_06_02"); //Р РіРґРµ РѕРЅРё? РЇ РЅРµ РІРёР¶Сѓ РґРµСЃСЏС‚Рё РєСѓСЃРєРѕРІ.
 	};
 	
 	AI_StopProcessInfos	(self);
@@ -116,14 +116,14 @@ func void DIA_Org_876_Bribe_10Erz()
 
 func void DIA_Org_876_Bribe_50Erz()
 {
-	AI_Output (other, self,"DIA_Org_876_Bribe_50Erz_15_00"); //Что ты скажешь по поводу пятидесяти кусков?
+	AI_Output (other, self,"DIA_Org_876_Bribe_50Erz_15_00"); //Р§С‚Рѕ С‚С‹ СЃРєР°Р¶РµС€СЊ РїРѕ РїРѕРІРѕРґСѓ РїСЏС‚РёРґРµСЃСЏС‚Рё РєСѓСЃРєРѕРІ?
 	if (Npc_HasItems (other, itminugget) >= 50)
 	{
-		AI_Output (self, other,"DIA_Org_876_Bribe_50Erz_06_01"); //Это примерно половина того, что я называю 'немного руды'.
+		AI_Output (self, other,"DIA_Org_876_Bribe_50Erz_06_01"); //Р­С‚Рѕ РїСЂРёРјРµСЂРЅРѕ РїРѕР»РѕРІРёРЅР° С‚РѕРіРѕ, С‡С‚Рѕ СЏ РЅР°Р·С‹РІР°СЋ 'РЅРµРјРЅРѕРіРѕ СЂСѓРґС‹'.
 	}
 	else
 	{
-		AI_Output (self, other,"DIA_Org_876_Bribe_50Erz_06_02"); //Ну и где они? Я не вижу пятидесяти кусков.
+		AI_Output (self, other,"DIA_Org_876_Bribe_50Erz_06_02"); //РќСѓ Рё РіРґРµ РѕРЅРё? РЇ РЅРµ РІРёР¶Сѓ РїСЏС‚РёРґРµСЃСЏС‚Рё РєСѓСЃРєРѕРІ.
 	};
 	
 	AI_StopProcessInfos	(self);
@@ -131,16 +131,16 @@ func void DIA_Org_876_Bribe_50Erz()
 
 func void DIA_Org_876_Bribe_100Erz()
 {
-	AI_Output (other, self,"DIA_Org_876_Bribe_100Erz_15_00"); //Сотни кусков руды должно быть достаточно.
+	AI_Output (other, self,"DIA_Org_876_Bribe_100Erz_15_00"); //РЎРѕС‚РЅРё РєСѓСЃРєРѕРІ СЂСѓРґС‹ РґРѕР»Р¶РЅРѕ Р±С‹С‚СЊ РґРѕСЃС‚Р°С‚РѕС‡РЅРѕ.
 	if (Npc_HasItems (other, itminugget) >= 100)
 	{
-		AI_Output (self, other,"DIA_Org_876_Bribe_100Erz_06_01"); //Ты прав. Проходи.
+		AI_Output (self, other,"DIA_Org_876_Bribe_100Erz_06_01"); //РўС‹ РїСЂР°РІ. РџСЂРѕС…РѕРґРё.
 		self.aivar[AIV_PASSGATE] = TRUE;	
 		B_GiveInvItems	(other, self, ItMiNugget, 100);
 	}
 	else
 	{
-		AI_Output (self, other,"DIA_Org_876_Bribe_100Erz_06_02"); //Верно. Только не похоже, чтобы у тебя была эта сотня.
+		AI_Output (self, other,"DIA_Org_876_Bribe_100Erz_06_02"); //Р’РµСЂРЅРѕ. РўРѕР»СЊРєРѕ РЅРµ РїРѕС…РѕР¶Рµ, С‡С‚РѕР±С‹ Сѓ С‚РµР±СЏ Р±С‹Р»Р° СЌС‚Р° СЃРѕС‚РЅСЏ.
 	};
 
 	AI_StopProcessInfos	(self);
@@ -157,7 +157,7 @@ INSTANCE DIA_Org_876_PERM (C_INFO)
 	condition	= DIA_Org_876_PERM_Condition;
 	information	= DIA_Org_876_PERM_Info;
 	permanent	= 1;
-	description = "Как идут дела со шнапсом?";
+	description = "РљР°Рє РёРґСѓС‚ РґРµР»Р° СЃРѕ С€РЅР°РїСЃРѕРј?";
 };                       
 
 FUNC INT DIA_Org_876_PERM_Condition()
@@ -171,8 +171,8 @@ FUNC INT DIA_Org_876_PERM_Condition()
 
 FUNC VOID DIA_Org_876_PERM_Info()
 {	
-	AI_Output (other, self,"DIA_Org_876_PERM_15_00"); //Как идут дела со шнапсом?
-	AI_Output (self, other,"DIA_Org_876_PERM_06_01"); //Заходи и спроси Силаса. МЫ ни на что не можем пожаловаться.
+	AI_Output (other, self,"DIA_Org_876_PERM_15_00"); //РљР°Рє РёРґСѓС‚ РґРµР»Р° СЃРѕ С€РЅР°РїСЃРѕРј?
+	AI_Output (self, other,"DIA_Org_876_PERM_06_01"); //Р—Р°С…РѕРґРё Рё СЃРїСЂРѕСЃРё РЎРёР»Р°СЃР°. РњР« РЅРё РЅР° С‡С‚Рѕ РЅРµ РјРѕР¶РµРј РїРѕР¶Р°Р»РѕРІР°С‚СЊСЃСЏ.
 };
 
 // ************************************************************
@@ -199,9 +199,9 @@ FUNC INT DIA_Org_876_ScSld_Condition()
 
 FUNC VOID DIA_Org_876_ScSld_Info()
 {	
-	AI_Output (self, other,"DIA_Org_876_ScSld_06_00"); //Стой! Ты знаешь правила. Пройти могут только рудокопы и воры!
-	AI_Output (other, self,"DIA_Org_876_ScSld_15_01"); //Уж не хочешь ли ты остановить меня?
-	AI_Output (self, other,"DIA_Org_876_ScSld_06_02"); //Нет... Ладно, иди...
+	AI_Output (self, other,"DIA_Org_876_ScSld_06_00"); //РЎС‚РѕР№! РўС‹ Р·РЅР°РµС€СЊ РїСЂР°РІРёР»Р°. РџСЂРѕР№С‚Рё РјРѕРіСѓС‚ С‚РѕР»СЊРєРѕ СЂСѓРґРѕРєРѕРїС‹ Рё РІРѕСЂС‹!
+	AI_Output (other, self,"DIA_Org_876_ScSld_15_01"); //РЈР¶ РЅРµ С…РѕС‡РµС€СЊ Р»Рё С‚С‹ РѕСЃС‚Р°РЅРѕРІРёС‚СЊ РјРµРЅСЏ?
+	AI_Output (self, other,"DIA_Org_876_ScSld_06_02"); //РќРµС‚... Р›Р°РґРЅРѕ, РёРґРё...
 	self.aivar[AIV_PASSGATE] = TRUE;
 };
 
@@ -229,8 +229,8 @@ FUNC INT DIA_Org_876_ScSekte_Condition()
 
 FUNC VOID DIA_Org_876_ScSekte_Info()
 {	
-	AI_Output (self, other,"DIA_Org_876_ScSekte_06_00"); //Обычно мы пропускаем только своих, но также ничего не имеем против членов Братства.
-	AI_Output (self, other,"DIA_Org_876_ScSekte_06_01"); //Особенно когда у них с собой есть доброе курево!
+	AI_Output (self, other,"DIA_Org_876_ScSekte_06_00"); //РћР±С‹С‡РЅРѕ РјС‹ РїСЂРѕРїСѓСЃРєР°РµРј С‚РѕР»СЊРєРѕ СЃРІРѕРёС…, РЅРѕ С‚Р°РєР¶Рµ РЅРёС‡РµРіРѕ РЅРµ РёРјРµРµРј РїСЂРѕС‚РёРІ С‡Р»РµРЅРѕРІ Р‘СЂР°С‚СЃС‚РІР°.
+	AI_Output (self, other,"DIA_Org_876_ScSekte_06_01"); //РћСЃРѕР±РµРЅРЅРѕ РєРѕРіРґР° Сѓ РЅРёС… СЃ СЃРѕР±РѕР№ РµСЃС‚СЊ РґРѕР±СЂРѕРµ РєСѓСЂРµРІРѕ!
 };
 
 // ************************************************************
@@ -246,7 +246,7 @@ INSTANCE DIA_Org_876_GibKraut (C_INFO)
 	condition	= DIA_Org_876_GibKraut_Condition;
 	information	= DIA_Org_876_GibKraut_Info;
 	permanent	= 1;
-	description = "У меня с собой есть несколько стеблей. Вот, угощайся.";
+	description = "РЈ РјРµРЅСЏ СЃ СЃРѕР±РѕР№ РµСЃС‚СЊ РЅРµСЃРєРѕР»СЊРєРѕ СЃС‚РµР±Р»РµР№. Р’РѕС‚, СѓРіРѕС‰Р°Р№СЃСЏ.";
 };                       
 
 FUNC INT DIA_Org_876_GibKraut_Condition()
@@ -259,7 +259,7 @@ FUNC INT DIA_Org_876_GibKraut_Condition()
 
 FUNC VOID DIA_Org_876_GibKraut_Info()
 {	
-	AI_Output (other, self,"DIA_Org_876_GibKraut_15_00"); //У меня с собой есть несколько стеблей. Вот, угощайся.
+	AI_Output (other, self,"DIA_Org_876_GibKraut_15_00"); //РЈ РјРµРЅСЏ СЃ СЃРѕР±РѕР№ РµСЃС‚СЊ РЅРµСЃРєРѕР»СЊРєРѕ СЃС‚РµР±Р»РµР№. Р’РѕС‚, СѓРіРѕС‰Р°Р№СЃСЏ.
 
 	if ( (Npc_HasItems(other,ItMiJoint_1)>0) || (Npc_HasItems(other,ItMiJoint_2)>0) || (Npc_HasItems(other,ItMiJoint_3)>0) )
 	{
@@ -270,14 +270,14 @@ FUNC VOID DIA_Org_876_GibKraut_Info()
 		else if (Npc_HasItems(other,ItMiJoint_3))
 		{	B_GiveInvItems	(other, self,ItMiJoint_3, 1); };
 		
-		AI_Output (self, other,"DIA_Org_876_GibKraut_06_01"); //Всегда будем рады тебе, парень!
+		AI_Output (self, other,"DIA_Org_876_GibKraut_06_01"); //Р’СЃРµРіРґР° Р±СѓРґРµРј СЂР°РґС‹ С‚РµР±Рµ, РїР°СЂРµРЅСЊ!
 		self.aivar[AIV_PASSGATE] = TRUE;
 		Org_876_GotJoint = TRUE;
 	}
 	else
 	{
-		AI_Output (other, self,"DIA_Org_876_GibKraut_KEIN_15_00"); //Ой... Погоди-ка. Кажется, у меня уже ничего не осталось.
-		AI_Output (self, other,"DIA_Org_876_GibKraut_KEIN_06_00"); //Круто. В следующий раз подумай и обо мне. 
+		AI_Output (other, self,"DIA_Org_876_GibKraut_KEIN_15_00"); //РћР№... РџРѕРіРѕРґРё-РєР°. РљР°Р¶РµС‚СЃСЏ, Сѓ РјРµРЅСЏ СѓР¶Рµ РЅРёС‡РµРіРѕ РЅРµ РѕСЃС‚Р°Р»РѕСЃСЊ.
+		AI_Output (self, other,"DIA_Org_876_GibKraut_KEIN_06_00"); //РљСЂСѓС‚Рѕ. Р’ СЃР»РµРґСѓСЋС‰РёР№ СЂР°Р· РїРѕРґСѓРјР°Р№ Рё РѕР±Рѕ РјРЅРµ. 
 		self.aivar[AIV_PASSGATE] = TRUE;
 	};
 };
@@ -291,11 +291,11 @@ FUNC VOID DIA_Org_876_GibKraut_Info()
 //	Uhrzeit:	24h
 //
 //	Es passiert folgendes:
-//	1.	Nдhert sich der Spieler dem Durchgang, so wird er in diesen
+//	1.	NРґhert sich der Spieler dem Durchgang, so wird er in diesen
 //		Dialog gezwungen und einmal gewarnt
-//	2.	Nдhert sich der SC trotzdem weiter, so wird er ein ZWEITES Mal
+//	2.	NРґhert sich der SC trotzdem weiter, so wird er ein ZWEITES Mal
 //		gewarnt (aggressiver mit Waffe ziehen)
-//	3.	Nдhert er sich trotzdem wieder, wird er angegriffen
+//	3.	NРґhert er sich trotzdem wieder, wird er angegriffen
 //////////////////////////////////////////////////////////////////////////
 
 // **********************************************
@@ -329,9 +329,9 @@ func void Info_Org_876_FirstWarn_Info()
 {
 	PrintGlobals	(PD_MISSION);
 
-	AI_Output (self, hero,"Info_Org_876_FirstWarn_Info_06_00"); //А куда это ТЫ собрался?
-	AI_Output (hero, self,"Info_Org_876_FirstWarn_Info_15_01"); //Ну, туда.
-	AI_Output (self, hero,"Info_Org_876_FirstWarn_Info_06_02"); //Забудь об этом! В бар Силаса пропускают только рудокопов и воров.
+	AI_Output (self, hero,"Info_Org_876_FirstWarn_Info_06_00"); //Рђ РєСѓРґР° СЌС‚Рѕ РўР« СЃРѕР±СЂР°Р»СЃСЏ?
+	AI_Output (hero, self,"Info_Org_876_FirstWarn_Info_15_01"); //РќСѓ, С‚СѓРґР°.
+	AI_Output (self, hero,"Info_Org_876_FirstWarn_Info_06_02"); //Р—Р°Р±СѓРґСЊ РѕР± СЌС‚РѕРј! Р’ Р±Р°СЂ РЎРёР»Р°СЃР° РїСЂРѕРїСѓСЃРєР°СЋС‚ С‚РѕР»СЊРєРѕ СЂСѓРґРѕРєРѕРїРѕРІ Рё РІРѕСЂРѕРІ.
 
 	hero.aivar[AIV_LASTDISTTOWP] 		= Npc_GetDistToWP(hero,Org_876_CHECKPOINT);
 	hero.aivar[AIV_GUARDPASSAGE_STATUS]	= AIV_GPS_FIRSTWARN;	
@@ -364,7 +364,7 @@ func int Info_Org_876_LastWarn_Condition()
 
 func int Info_Org_876_LastWarn_Info()
 {
-	AI_Output (self, hero,"Info_Org_876_LastWarn_06_00"); //Ты оглох или как, приятель?!
+	AI_Output (self, hero,"Info_Org_876_LastWarn_06_00"); //РўС‹ РѕРіР»РѕС… РёР»Рё РєР°Рє, РїСЂРёСЏС‚РµР»СЊ?!
 
 	hero.aivar[AIV_LASTDISTTOWP] 		= Npc_GetDistToWP (hero,Org_876_CHECKPOINT);
 	hero.aivar[AIV_GUARDPASSAGE_STATUS]	= AIV_GPS_LASTWARN;	
@@ -404,7 +404,7 @@ func int Info_Org_876_Attack_Info()
 	hero.aivar[AIV_GUARDPASSAGE_STATUS]	= AIV_GPS_PUNISH;	
 	
 	B_FullStop			(self);	
-	AI_StopProcessInfos	(self);					// dem Spieler sofort wieder die Kontrolle zurьckgeben
+	AI_StopProcessInfos	(self);					// dem Spieler sofort wieder die Kontrolle zurСЊckgeben
 	B_IntruderAlert		(self,	other);
 	B_SetAttackReason	(self,	AIV_AR_INTRUDER);
 	Npc_SetTarget		(self,	hero);

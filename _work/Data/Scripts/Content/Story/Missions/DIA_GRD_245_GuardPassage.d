@@ -33,7 +33,7 @@ instance DIA_GRD_245_Hello (C_INFO)
 	condition	= DIA_GRD_245_Hello_Condition;
 	information	= DIA_GRD_245_Hello_Info;
 	permanent	= 1;
-	description	= "Что в этом доме?";
+	description	= "Р§С‚Рѕ РІ СЌС‚РѕРј РґРѕРјРµ?";
 };                       
 
 FUNC int DIA_GRD_245_Hello_Condition()
@@ -43,7 +43,7 @@ FUNC int DIA_GRD_245_Hello_Condition()
 
 FUNC VOID DIA_GRD_245_Hello_Info()
 {
-	AI_Output (other, self,"DIA_GRD_245_Hello_15_00"); //Что в этом доме?
-	AI_Output (self, other,"DIA_GRD_245_Hello_13_01"); //Это дом Баронов. Веди себя повежливей, если когда-нибудь попадешь туда.
+	AI_Output (other, self,"DIA_GRD_245_Hello_15_00"); //Р§С‚Рѕ РІ СЌС‚РѕРј РґРѕРјРµ?
+	AI_Output (self, other,"DIA_GRD_245_Hello_13_01"); //Р­С‚Рѕ РґРѕРј Р‘Р°СЂРѕРЅРѕРІ. Р’РµРґРё СЃРµР±СЏ РїРѕРІРµР¶Р»РёРІРµР№, РµСЃР»Рё РєРѕРіРґР°-РЅРёР±СѓРґСЊ РїРѕРїР°РґРµС€СЊ С‚СѓРґР°.
 };
 

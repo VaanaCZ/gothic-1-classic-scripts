@@ -21,7 +21,7 @@ FUNC int DIA_SLD_751_Soeldner_INTRO_CONDITION()
 
 func void DIA_SLD_751_Soeldner_INTRO_INFO()
 {
-	AI_Output (self, other,"DIA_SLD_751_Soeldner_INTRO_INFO_01_01"); //А, посетитель! Смотри, чтобы все было тихо, или ты об этом крупно пожалеешь!
+	AI_Output (self, other,"DIA_SLD_751_Soeldner_INTRO_INFO_01_01"); //Рђ, РїРѕСЃРµС‚РёС‚РµР»СЊ! РЎРјРѕС‚СЂРё, С‡С‚РѕР±С‹ РІСЃРµ Р±С‹Р»Рѕ С‚РёС…Рѕ, РёР»Рё С‚С‹ РѕР± СЌС‚РѕРј РєСЂСѓРїРЅРѕ РїРѕР¶Р°Р»РµРµС€СЊ!
 };
 
 //-------------------- Exit 1 -----------------------------
@@ -34,7 +34,7 @@ instance DIA_SLD_751_Soeldner_EXIT_1 (C_INFO)
 	information		= DIA_SLD_751_Soeldner_EXIT_1_INFO;
 	important		= 0;
 	permanent		= 0;
-	description 	= "Я лучше пойду.";
+	description 	= "РЇ Р»СѓС‡С€Рµ РїРѕР№РґСѓ.";
 };
 
 FUNC int DIA_SLD_751_Soeldner_EXIT_1_CONDITION()
@@ -44,8 +44,8 @@ FUNC int DIA_SLD_751_Soeldner_EXIT_1_CONDITION()
 
 func void DIA_SLD_751_Soeldner_EXIT_1_INFO()
 {
-	AI_Output (other, self,"DIA_SLD_751_Soeldner_EXIT_1_INFO_15_01"); //Я лучше пойду.
-	AI_Output (self, other,"DIA_SLD_751_Soeldner_EXIT_1_INFO_01_02");//Надеюсь, мы понимаем друг друга.
+	AI_Output (other, self,"DIA_SLD_751_Soeldner_EXIT_1_INFO_15_01"); //РЇ Р»СѓС‡С€Рµ РїРѕР№РґСѓ.
+	AI_Output (self, other,"DIA_SLD_751_Soeldner_EXIT_1_INFO_01_02");//РќР°РґРµСЋСЃСЊ, РјС‹ РїРѕРЅРёРјР°РµРј РґСЂСѓРі РґСЂСѓРіР°.
 	AI_StopProcessInfos	( self );
 };
 
@@ -59,7 +59,7 @@ instance DIA_SLD_751_Soeldner_EXIT_2 (C_INFO)
 	information		= DIA_SLD_751_Soeldner_EXIT_2_INFO;
 	important		= 0;
 	permanent		= 1;
-	description 	= "Мне пора идти.";
+	description 	= "РњРЅРµ РїРѕСЂР° РёРґС‚Рё.";
 };
 
 FUNC int DIA_SLD_751_Soeldner_EXIT_2_CONDITION()
@@ -72,8 +72,8 @@ FUNC int DIA_SLD_751_Soeldner_EXIT_2_CONDITION()
 
 func void DIA_SLD_751_Soeldner_EXIT_2_INFO()
 {
-	AI_Output (other, self,"DIA_SLD_751_Soeldner_EXIT_2_INFO_15_01"); //Мне пора идти.
-	AI_Output (self, other,"DIA_SLD_751_Soeldner_EXIT_2_INFO_01_02");//Ну, иди.
+	AI_Output (other, self,"DIA_SLD_751_Soeldner_EXIT_2_INFO_15_01"); //РњРЅРµ РїРѕСЂР° РёРґС‚Рё.
+	AI_Output (self, other,"DIA_SLD_751_Soeldner_EXIT_2_INFO_01_02");//РќСѓ, РёРґРё.
 	AI_StopProcessInfos	( self );
 };
 
@@ -86,7 +86,7 @@ instance DIA_SLD_751_Soeldner_UMSEHEN (C_INFO)
 	information		= DIA_SLD_751_Soeldner_UMSEHEN_INFO;
 	important		= 0;
 	permanent		= 0;
-	description 	= "Я просто хотел немного оглядеться.";
+	description 	= "РЇ РїСЂРѕСЃС‚Рѕ С…РѕС‚РµР» РЅРµРјРЅРѕРіРѕ РѕРіР»СЏРґРµС‚СЊСЃСЏ.";
 };
 
 FUNC int DIA_SLD_751_Soeldner_UMSEHEN_CONDITION()
@@ -96,8 +96,8 @@ FUNC int DIA_SLD_751_Soeldner_UMSEHEN_CONDITION()
 
 func void DIA_SLD_751_Soeldner_UMSEHEN_INFO()
 {  
-	AI_Output (other, self,"DIA_SLD_751_Soeldner_UMSEHEN_INFO_15_01"); //Я бы хотел немного оглядеться.
-	AI_Output (self, other,"DIA_SLD_751_Soeldner_UMSEHEN_INFO_01_02");//Только постарайся не отдавить кому-нибудь любимую мозоль.
+	AI_Output (other, self,"DIA_SLD_751_Soeldner_UMSEHEN_INFO_15_01"); //РЇ Р±С‹ С…РѕС‚РµР» РЅРµРјРЅРѕРіРѕ РѕРіР»СЏРґРµС‚СЊСЃСЏ.
+	AI_Output (self, other,"DIA_SLD_751_Soeldner_UMSEHEN_INFO_01_02");//РўРѕР»СЊРєРѕ РїРѕСЃС‚Р°СЂР°Р№СЃСЏ РЅРµ РѕС‚РґР°РІРёС‚СЊ РєРѕРјСѓ-РЅРёР±СѓРґСЊ Р»СЋР±РёРјСѓСЋ РјРѕР·РѕР»СЊ.
 };
 
 
@@ -110,7 +110,7 @@ instance DIA_SLD_751_Soeldner_INMINE (C_INFO)
 	information		= DIA_SLD_751_Soeldner_INMINE_INFO;
 	important		= 0;
 	permanent		= 0;
-	description 	= "Я хочу зайти в шахту.";
+	description 	= "РЇ С…РѕС‡Сѓ Р·Р°Р№С‚Рё РІ С€Р°С…С‚Сѓ.";
 };
 
 FUNC int DIA_SLD_751_Soeldner_INMINE_CONDITION()
@@ -120,8 +120,8 @@ FUNC int DIA_SLD_751_Soeldner_INMINE_CONDITION()
 
 func void DIA_SLD_751_Soeldner_INMINE_INFO()
 {
-	AI_Output (other, self,"DIA_SLD_751_Soeldner_INMINE_INFO_15_01"); //Я хочу заглянуть в шахту.
-	AI_Output (self, other,"DIA_SLD_751_Soeldner_INMINE_INFO_01_02");//Не думаю, что тебе это удастся, но попробуй поговорить с Окилом.
+	AI_Output (other, self,"DIA_SLD_751_Soeldner_INMINE_INFO_15_01"); //РЇ С…РѕС‡Сѓ Р·Р°РіР»СЏРЅСѓС‚СЊ РІ С€Р°С…С‚Сѓ.
+	AI_Output (self, other,"DIA_SLD_751_Soeldner_INMINE_INFO_01_02");//РќРµ РґСѓРјР°СЋ, С‡С‚Рѕ С‚РµР±Рµ СЌС‚Рѕ СѓРґР°СЃС‚СЃСЏ, РЅРѕ РїРѕРїСЂРѕР±СѓР№ РїРѕРіРѕРІРѕСЂРёС‚СЊ СЃ РћРєРёР»РѕРј.
 
 };
 

@@ -3,7 +3,7 @@
 **		TESTMODELLE_ROMAN.D												**
 **		===================												**
 **																		**
-**		Enth‰lt 														**
+**		Enth–¥lt 														**
 **		- Allround-Testmodell											**
 **																		**
 *************************************************************************/
@@ -1327,7 +1327,7 @@ func void ZS_TestTalk()
 	//
 	//	LABER
 	//
-	AI_Output( self ,other,"Sit_1_OW_Diego_Gamestart_11_00"); //Ich bin Diego. Ich k¸mmere mich um die Neuen.                                                                                                                                                   
+	AI_Output( self ,other,"Sit_1_OW_Diego_Gamestart_11_00"); //Ich bin Diego. Ich k—åmmere mich um die Neuen.                                                                                                                                                   
 	AI_Output( other,self ,"Sit_1_OW_Diego_Gamestart_20_01"); //Wo sind all die anderen?                                                                                                                                                                        
 	
 	//
@@ -2307,8 +2307,8 @@ FUNC VOID Info_Test_Procedure_Choice()
 	PrintScreen( "Info_Test_Procedure_Choice()", -1, 50, "FONT_OLD_20_WHITE.TGA", 10 );                            
 	
 	Info_ClearChoices	( Info_Test_Choice );
-	Info_AddChoice		( Info_Test_Choice, "ƒ‡."		, Info_Test_Procedure_Choice_Yes 	);
-	Info_AddChoice		( Info_Test_Choice, "ÕÂÚ."		, Info_Test_Procedure_Choice_No 	);
+	Info_AddChoice		( Info_Test_Choice, "–î–∞."		, Info_Test_Procedure_Choice_Yes 	);
+	Info_AddChoice		( Info_Test_Choice, "–ù–µ—Ç."		, Info_Test_Procedure_Choice_No 	);
 	Info_AddChoice		( Info_Test_Choice, "Don't know", Info_Test_Procedure_Choice_Unsure );	
 	Info_AddChoice		( Info_Test_Choice, "Exit"		, Info_Test_Procedure_Choice_Exit	);	
 };
@@ -2326,8 +2326,8 @@ FUNC VOID Info_Test_Procedure_Choice_No()
 FUNC VOID Info_Test_Procedure_Choice_Unsure()
 {
 	Info_ClearChoices	( Info_Test_Choice );
-	Info_AddChoice		( Info_Test_Choice, "ƒ‡."		, Info_Test_Procedure_Choice_Yes 	);
-	Info_AddChoice		( Info_Test_Choice, "ÕÂÚ."		, Info_Test_Procedure_Choice_No 	);
+	Info_AddChoice		( Info_Test_Choice, "–î–∞."		, Info_Test_Procedure_Choice_Yes 	);
+	Info_AddChoice		( Info_Test_Choice, "–ù–µ—Ç."		, Info_Test_Procedure_Choice_No 	);
 	Info_AddChoice		( Info_Test_Choice, "Exit"		, Info_Test_Procedure_Choice_Exit	);	
 };
 
@@ -2416,8 +2416,8 @@ FUNC VOID Info_Test_Procedure_Permanent_Important_Choice()
 	PrintScreen( "Info_Test_Procedure_Permanent_Important_Choice()", -1, 50, "FONT_OLD_20_WHITE.TGA", 10 );                            
 	
 	Info_ClearChoices	( Info_Test_Permanent_Important_Choice );
-	Info_AddChoice		( Info_Test_Permanent_Important_Choice, "ƒ‡."			, Info_Test_Procedure_Permanent_Important_Choice_Yes 		);
-	Info_AddChoice		( Info_Test_Permanent_Important_Choice, "ÕÂÚ."			, Info_Test_Procedure_Permanent_Important_Choice_No 		);
+	Info_AddChoice		( Info_Test_Permanent_Important_Choice, "–î–∞."			, Info_Test_Procedure_Permanent_Important_Choice_Yes 		);
+	Info_AddChoice		( Info_Test_Permanent_Important_Choice, "–ù–µ—Ç."			, Info_Test_Procedure_Permanent_Important_Choice_No 		);
 	Info_AddChoice		( Info_Test_Permanent_Important_Choice, "Don't know"	, Info_Test_Procedure_Permanent_Important_Choice_Unsure 	);	
 	Info_AddChoice		( Info_Test_Permanent_Important_Choice, "Bye"			, Info_Test_Procedure_Permanent_Important_Choice_Exit		);	
 };

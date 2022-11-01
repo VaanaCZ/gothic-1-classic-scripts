@@ -2,7 +2,7 @@
 instance TPL_1401_GorNaKosh (Npc_Default)
 {
 	//-------- primary data --------
-	name =							"Гор На Кош";
+	name =							"Р“РѕСЂ РќР° РљРѕС€";
 	npctype =						npctype_main;
 	guild =							GIL_TPL;
 	level =							17;

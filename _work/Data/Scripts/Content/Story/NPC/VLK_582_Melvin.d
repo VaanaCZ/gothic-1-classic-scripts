@@ -2,9 +2,9 @@ instance VLK_582_Melvin(Npc_Default)
 {
 	//-------- primary data --------
 	
-	name =							"Ìåëâèí";
+	name =							"ÐœÐµÐ»Ð²Ð¸Ð½";
 	npctype =						npctype_main;
-	guild =							GIL_NOV;   //SN: Absicht, da Melvin übergelaufen!!!   
+	guild =							GIL_NOV;   //SN: Absicht, da Melvin ÑŒbergelaufen!!!   
 	level =							5;
 	
 	
@@ -45,7 +45,7 @@ instance VLK_582_Melvin(Npc_Default)
 	daily_routine = Rtn_start_582;
 };
 
-FUNC VOID Rtn_start_582 () //ST: Joru-Schüler
+FUNC VOID Rtn_start_582 () //ST: Joru-SchÑŒler
 {
 	TA_Sleep		(00,00,08,00,"PSI_12_HUT_IN_BED");
 	TA_Listen		(08,00,00,00,"PSI_12_HUT_EX_TEACH");

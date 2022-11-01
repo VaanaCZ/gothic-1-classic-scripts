@@ -2,7 +2,7 @@ instance SLD_729_Kharim (Npc_Default)
 {
 	//-------- primary data --------
 	
-	name =					"Õàðèì";
+	name =					"Ð¥Ð°Ñ€Ð¸Ð¼";
 	Npctype =				Npctype_Main;
 	guild =					GIL_NONE;       
 	level =					11;

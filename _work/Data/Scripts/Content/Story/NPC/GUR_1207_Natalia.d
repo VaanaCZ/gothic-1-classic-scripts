@@ -2,7 +2,7 @@ instance Gur_1207_Natalia (Npc_Default)
 {
 	//-------- primary data --------
 	
-	name 		=	"Νΰςΰλόÿ";
+	name 		=	"ΠΠ°Ρ‚Π°Π»ΡΡ";
 	npctype		= 	npctype_main;
 	guild 		=	GIL_BAB;      
 	level 		=	1;

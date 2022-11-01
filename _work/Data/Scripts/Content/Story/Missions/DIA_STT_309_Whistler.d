@@ -33,7 +33,7 @@ INSTANCE DIA_Whistler_IAmNew (C_INFO)
 	condition	= DIA_Whistler_IAmNew_Condition;
 	information	= DIA_Whistler_IAmNew_Info;
 	permanent	= 0;
-	description = "Привет! Я здесь новенький.";
+	description = "РџСЂРёРІРµС‚! РЇ Р·РґРµСЃСЊ РЅРѕРІРµРЅСЊРєРёР№.";
 };                       
 
 FUNC INT DIA_Whistler_IAmNew_Condition()
@@ -45,11 +45,11 @@ FUNC INT DIA_Whistler_IAmNew_Condition()
 };
 FUNC VOID DIA_Whistler_IAmNew_Info()
 {
-	AI_Output (other,self,"DIA_Whistler_IAmNew_15_00"); //Привет! Я здесь новенький!
-	AI_Output (self,other,"DIA_Whistler_IAmNew_11_01"); //И что тебе от меня нужно?
-	AI_Output (other,self,"DIA_Whistler_IAmNew_15_02"); //Я хочу стать одним из вас - хочу присоединиться к вашему Лагерю.
-	AI_Output (self,other,"DIA_Whistler_IAmNew_11_03"); //Ищешь кого-нибудь, кто бы помог, а?
-	AI_Output (self,other,"DIA_Whistler_IAmNew_11_04"); //Если ты хочешь, чтобы я замолвил за тебя словечко перед Диего, тебе придется немного помочь мне.
+	AI_Output (other,self,"DIA_Whistler_IAmNew_15_00"); //РџСЂРёРІРµС‚! РЇ Р·РґРµСЃСЊ РЅРѕРІРµРЅСЊРєРёР№!
+	AI_Output (self,other,"DIA_Whistler_IAmNew_11_01"); //Р С‡С‚Рѕ С‚РµР±Рµ РѕС‚ РјРµРЅСЏ РЅСѓР¶РЅРѕ?
+	AI_Output (other,self,"DIA_Whistler_IAmNew_15_02"); //РЇ С…РѕС‡Сѓ СЃС‚Р°С‚СЊ РѕРґРЅРёРј РёР· РІР°СЃ - С…РѕС‡Сѓ РїСЂРёСЃРѕРµРґРёРЅРёС‚СЊСЃСЏ Рє РІР°С€РµРјСѓ Р›Р°РіРµСЂСЋ.
+	AI_Output (self,other,"DIA_Whistler_IAmNew_11_03"); //РС‰РµС€СЊ РєРѕРіРѕ-РЅРёР±СѓРґСЊ, РєС‚Рѕ Р±С‹ РїРѕРјРѕРі, Р°?
+	AI_Output (self,other,"DIA_Whistler_IAmNew_11_04"); //Р•СЃР»Рё С‚С‹ С…РѕС‡РµС€СЊ, С‡С‚РѕР±С‹ СЏ Р·Р°РјРѕР»РІРёР» Р·Р° С‚РµР±СЏ СЃР»РѕРІРµС‡РєРѕ РїРµСЂРµРґ Р”РёРµРіРѕ, С‚РµР±Рµ РїСЂРёРґРµС‚СЃСЏ РЅРµРјРЅРѕРіРѕ РїРѕРјРѕС‡СЊ РјРЅРµ.
 };
 
 // **************************************************
@@ -66,7 +66,7 @@ INSTANCE DIA_Whistler_Favour (C_INFO)
 	condition	= DIA_Whistler_Favour_Condition;
 	information	= DIA_Whistler_Favour_Info;
 	permanent	= 0;
-	description = "Что я должен сделать?";
+	description = "Р§С‚Рѕ СЏ РґРѕР»Р¶РµРЅ СЃРґРµР»Р°С‚СЊ?";
 };                       
 
 FUNC INT DIA_Whistler_Favour_Condition()
@@ -79,21 +79,21 @@ FUNC INT DIA_Whistler_Favour_Condition()
 
 FUNC VOID DIA_Whistler_Favour_Info()
 {
-	AI_Output (other,self,"DIA_Whistler_Favour_15_00"); //Что я должен сделать?
-	AI_Output (self,other,"DIA_Whistler_Favour_11_01"); //Мне нужен один меч... Его продает Фиск - это один из торговцев на рынке.
-	AI_Output (self,other,"DIA_Whistler_Favour_11_02"); //Шикарный палаш с украшениями. Но мне он его не продаст...
-	AI_Output (self,other,"DIA_Whistler_Favour_11_03"); //Я дам тебе 100 кусков руды, чтобы ты купил его. Только не говори Фиску про меня.
+	AI_Output (other,self,"DIA_Whistler_Favour_15_00"); //Р§С‚Рѕ СЏ РґРѕР»Р¶РµРЅ СЃРґРµР»Р°С‚СЊ?
+	AI_Output (self,other,"DIA_Whistler_Favour_11_01"); //РњРЅРµ РЅСѓР¶РµРЅ РѕРґРёРЅ РјРµС‡... Р•РіРѕ РїСЂРѕРґР°РµС‚ Р¤РёСЃРє - СЌС‚Рѕ РѕРґРёРЅ РёР· С‚РѕСЂРіРѕРІС†РµРІ РЅР° СЂС‹РЅРєРµ.
+	AI_Output (self,other,"DIA_Whistler_Favour_11_02"); //РЁРёРєР°СЂРЅС‹Р№ РїР°Р»Р°С€ СЃ СѓРєСЂР°С€РµРЅРёСЏРјРё. РќРѕ РјРЅРµ РѕРЅ РµРіРѕ РЅРµ РїСЂРѕРґР°СЃС‚...
+	AI_Output (self,other,"DIA_Whistler_Favour_11_03"); //РЇ РґР°Рј С‚РµР±Рµ 100 РєСѓСЃРєРѕРІ СЂСѓРґС‹, С‡С‚РѕР±С‹ С‚С‹ РєСѓРїРёР» РµРіРѕ. РўРѕР»СЊРєРѕ РЅРµ РіРѕРІРѕСЂРё Р¤РёСЃРєСѓ РїСЂРѕ РјРµРЅСЏ.
 
 	Info_ClearChoices(DIA_Whistler_Favour);
-	Info_AddChoice	 (DIA_Whistler_Favour,"Ладно, давай свои 100 кусков. Я куплю тебе меч.",DIA_Whistler_Favour_Ok);
-	Info_AddChoice	 (DIA_Whistler_Favour,"А ты не думаешь, что я могу сбежать с твоей рудой?..",DIA_Whistler_Favour_OreAway);
-	Info_AddChoice	 (DIA_Whistler_Favour,"А почему он больше не хочет продавать тебе оружие?",DIA_Whistler_Favour_WhyNotSell);
+	Info_AddChoice	 (DIA_Whistler_Favour,"Р›Р°РґРЅРѕ, РґР°РІР°Р№ СЃРІРѕРё 100 РєСѓСЃРєРѕРІ. РЇ РєСѓРїР»СЋ С‚РµР±Рµ РјРµС‡.",DIA_Whistler_Favour_Ok);
+	Info_AddChoice	 (DIA_Whistler_Favour,"Рђ С‚С‹ РЅРµ РґСѓРјР°РµС€СЊ, С‡С‚Рѕ СЏ РјРѕРіСѓ СЃР±РµР¶Р°С‚СЊ СЃ С‚РІРѕРµР№ СЂСѓРґРѕР№?..",DIA_Whistler_Favour_OreAway);
+	Info_AddChoice	 (DIA_Whistler_Favour,"Рђ РїРѕС‡РµРјСѓ РѕРЅ Р±РѕР»СЊС€Рµ РЅРµ С…РѕС‡РµС‚ РїСЂРѕРґР°РІР°С‚СЊ С‚РµР±Рµ РѕСЂСѓР¶РёРµ?",DIA_Whistler_Favour_WhyNotSell);
 };
 
 func void DIA_Whistler_Favour_Ok()
 {
-	AI_Output (other,self,"DIA_Whistler_Favour_Ok_15_00"); //Ладно, давай свои 100 кусков. Я куплю тебе меч.
-	AI_Output (self,other,"DIA_Whistler_Favour_Ok_11_01"); //Вот они. И сразу возвращайся ко мне!
+	AI_Output (other,self,"DIA_Whistler_Favour_Ok_15_00"); //Р›Р°РґРЅРѕ, РґР°РІР°Р№ СЃРІРѕРё 100 РєСѓСЃРєРѕРІ. РЇ РєСѓРїР»СЋ С‚РµР±Рµ РјРµС‡.
+	AI_Output (self,other,"DIA_Whistler_Favour_Ok_11_01"); //Р’РѕС‚ РѕРЅРё. Р СЃСЂР°Р·Сѓ РІРѕР·РІСЂР°С‰Р°Р№СЃСЏ РєРѕ РјРЅРµ!
 	
 	Whistler_BuyMySword = LOG_RUNNING;
 	
@@ -102,7 +102,7 @@ func void DIA_Whistler_Favour_Ok()
 		Log_CreateTopic		(CH1_JoinOC,LOG_MISSION);
 		Log_SetTopicStatus	(CH1_JoinOC,LOG_RUNNING);
 	};
-	B_LogEntry (CH1_JoinOC,"Уистлер поможет мне, если я схожу на рынок к Фиску и куплю ему меч. Для этого он дал мне 100 кусков руды.");
+	B_LogEntry (CH1_JoinOC,"РЈРёСЃС‚Р»РµСЂ РїРѕРјРѕР¶РµС‚ РјРЅРµ, РµСЃР»Рё СЏ СЃС…РѕР¶Сѓ РЅР° СЂС‹РЅРѕРє Рє Р¤РёСЃРєСѓ Рё РєСѓРїР»СЋ РµРјСѓ РјРµС‡. Р”Р»СЏ СЌС‚РѕРіРѕ РѕРЅ РґР°Р» РјРЅРµ 100 РєСѓСЃРєРѕРІ СЂСѓРґС‹.");
 	
 	var C_NPC fisk; fisk = Hlp_GetNpc(Stt_311_Fisk);
 	
@@ -116,16 +116,16 @@ func void DIA_Whistler_Favour_Ok()
 
 func void DIA_Whistler_Favour_OreAway()
 {
-	AI_Output (other,self,"DIA_Whistler_Favour_OreAway_15_00"); //А ты не думаешь, что я могу сбежать с твоей рудой?..
-	AI_Output (self,other,"DIA_Whistler_Favour_OreAway_11_01"); //Не забывай: эта колония такая маленькая. Если попытаешься меня надуть, я тебя найду!
+	AI_Output (other,self,"DIA_Whistler_Favour_OreAway_15_00"); //Рђ С‚С‹ РЅРµ РґСѓРјР°РµС€СЊ, С‡С‚Рѕ СЏ РјРѕРіСѓ СЃР±РµР¶Р°С‚СЊ СЃ С‚РІРѕРµР№ СЂСѓРґРѕР№?..
+	AI_Output (self,other,"DIA_Whistler_Favour_OreAway_11_01"); //РќРµ Р·Р°Р±С‹РІР°Р№: СЌС‚Р° РєРѕР»РѕРЅРёСЏ С‚Р°РєР°СЏ РјР°Р»РµРЅСЊРєР°СЏ. Р•СЃР»Рё РїРѕРїС‹С‚Р°РµС€СЊСЃСЏ РјРµРЅСЏ РЅР°РґСѓС‚СЊ, СЏ С‚РµР±СЏ РЅР°Р№РґСѓ!
 };
 
 func void DIA_Whistler_Favour_WhyNotSell()
 {
-	AI_Output (other,self,"DIA_Whistler_Favour_WhyNotSell_15_00"); //А почему он больше не хочет продавать тебе оружие?
-	AI_Output (self,other,"DIA_Whistler_Favour_WhyNotSell_11_01"); //Мы тут немного поспорили.
-	AI_Output (other,self,"DIA_Whistler_Favour_WhyNotSell_15_02"); //И?
-	AI_Output (self,other,"DIA_Whistler_Favour_WhyNotSell_11_03"); //И ничего. Тебе это знать незачем!
+	AI_Output (other,self,"DIA_Whistler_Favour_WhyNotSell_15_00"); //Рђ РїРѕС‡РµРјСѓ РѕРЅ Р±РѕР»СЊС€Рµ РЅРµ С…РѕС‡РµС‚ РїСЂРѕРґР°РІР°С‚СЊ С‚РµР±Рµ РѕСЂСѓР¶РёРµ?
+	AI_Output (self,other,"DIA_Whistler_Favour_WhyNotSell_11_01"); //РњС‹ С‚СѓС‚ РЅРµРјРЅРѕРіРѕ РїРѕСЃРїРѕСЂРёР»Рё.
+	AI_Output (other,self,"DIA_Whistler_Favour_WhyNotSell_15_02"); //Р?
+	AI_Output (self,other,"DIA_Whistler_Favour_WhyNotSell_11_03"); //Р РЅРёС‡РµРіРѕ. РўРµР±Рµ СЌС‚Рѕ Р·РЅР°С‚СЊ РЅРµР·Р°С‡РµРј!
 };
 
 // **************************************************
@@ -139,7 +139,7 @@ INSTANCE DIA_Whistler_Running110 (C_INFO)
 	condition	= DIA_Whistler_Running110_Condition;
 	information	= DIA_Whistler_Running110_Info;
 	permanent	= 0;
-	description = "Фиск теперь хочет 110 кусков за свой меч.";
+	description = "Р¤РёСЃРє С‚РµРїРµСЂСЊ С…РѕС‡РµС‚ 110 РєСѓСЃРєРѕРІ Р·Р° СЃРІРѕР№ РјРµС‡.";
 };                       
 
 FUNC INT DIA_Whistler_Running110_Condition()
@@ -152,10 +152,10 @@ FUNC INT DIA_Whistler_Running110_Condition()
 
 FUNC VOID DIA_Whistler_Running110_Info()
 {
-	AI_Output (other,self,"DIA_Whistler_Running110_15_00"); //Фиск теперь хочет 110 кусков за свой меч.
-	AI_Output (self,other,"DIA_Whistler_Running110_11_01"); //И ты хочешь, чтобы я тебе дал еще 10 кусков...
-	AI_Output (other,self,"DIA_Whistler_Running110_15_02"); //Я думал, тебе нужен этот меч.
-	AI_Output (self,other,"DIA_Whistler_Running110_11_03"); //Вот, держи руду и поторопись!
+	AI_Output (other,self,"DIA_Whistler_Running110_15_00"); //Р¤РёСЃРє С‚РµРїРµСЂСЊ С…РѕС‡РµС‚ 110 РєСѓСЃРєРѕРІ Р·Р° СЃРІРѕР№ РјРµС‡.
+	AI_Output (self,other,"DIA_Whistler_Running110_11_01"); //Р С‚С‹ С…РѕС‡РµС€СЊ, С‡С‚РѕР±С‹ СЏ С‚РµР±Рµ РґР°Р» РµС‰Рµ 10 РєСѓСЃРєРѕРІ...
+	AI_Output (other,self,"DIA_Whistler_Running110_15_02"); //РЇ РґСѓРјР°Р», С‚РµР±Рµ РЅСѓР¶РµРЅ СЌС‚РѕС‚ РјРµС‡.
+	AI_Output (self,other,"DIA_Whistler_Running110_11_03"); //Р’РѕС‚, РґРµСЂР¶Рё СЂСѓРґСѓ Рё РїРѕС‚РѕСЂРѕРїРёСЃСЊ!
 	CreateInvItems  (self,itminugget,10);
 	B_GiveInvItems  (self, hero, itminugget, 10);
 };	
@@ -171,7 +171,7 @@ INSTANCE DIA_Whistler_RunningPayBack (C_INFO)
 	condition	= DIA_Whistler_RunningPayBack_Condition;
 	information	= DIA_Whistler_RunningPayBack_Info;
 	permanent	= 1;
-	description = "Я не сумел купить меч. Вот тебе твои 100 кусков назад.";
+	description = "РЇ РЅРµ СЃСѓРјРµР» РєСѓРїРёС‚СЊ РјРµС‡. Р’РѕС‚ С‚РµР±Рµ С‚РІРѕРё 100 РєСѓСЃРєРѕРІ РЅР°Р·Р°Рґ.";
 };                       
 
 FUNC INT DIA_Whistler_RunningPayBack_Condition()
@@ -184,21 +184,21 @@ FUNC INT DIA_Whistler_RunningPayBack_Condition()
 
 FUNC VOID DIA_Whistler_RunningPayBack_Info()
 {
-	AI_Output (other,self,"DIA_Whistler_RunningPayBack_15_00"); //Я не сумел купить меч. Вот тебе твои 100 кусков назад.
+	AI_Output (other,self,"DIA_Whistler_RunningPayBack_15_00"); //РЇ РЅРµ СЃСѓРјРµР» РєСѓРїРёС‚СЊ РјРµС‡. Р’РѕС‚ С‚РµР±Рµ С‚РІРѕРё 100 РєСѓСЃРєРѕРІ РЅР°Р·Р°Рґ.
 	
 	if (Npc_HasItems(other,itminugget) >= 100)
 	{
-		AI_Output (self,other,"DIA_Whistler_RunningPayBack_11_01"); //Ты идиот, а идиотов у нас здесь своих хватает! Проваливай с глаз моих!
+		AI_Output (self,other,"DIA_Whistler_RunningPayBack_11_01"); //РўС‹ РёРґРёРѕС‚, Р° РёРґРёРѕС‚РѕРІ Сѓ РЅР°СЃ Р·РґРµСЃСЊ СЃРІРѕРёС… С…РІР°С‚Р°РµС‚! РџСЂРѕРІР°Р»РёРІР°Р№ СЃ РіР»Р°Р· РјРѕРёС…!
 		B_GiveInvItems (hero, self, itminugget, 100);
 		Whistler_BuyMySword = LOG_OBSOLETE;
 		
-		B_LogEntry (CH1_JoinOC,"Я все испортил. Уистлер никогда не получит свой меч.");
+		B_LogEntry (CH1_JoinOC,"РЇ РІСЃРµ РёСЃРїРѕСЂС‚РёР». РЈРёСЃС‚Р»РµСЂ РЅРёРєРѕРіРґР° РЅРµ РїРѕР»СѓС‡РёС‚ СЃРІРѕР№ РјРµС‡.");
 		
 		AI_StopProcessInfos(self);
 	}
 	else
 	{
-		AI_Output (self,other,"DIA_Whistler_RunningPayBack_11_02"); //Здесь нет 100 кусков, и лучше бы тебе найти их побыстрее, или у тебя начнутся крупные неприятности.
+		AI_Output (self,other,"DIA_Whistler_RunningPayBack_11_02"); //Р—РґРµСЃСЊ РЅРµС‚ 100 РєСѓСЃРєРѕРІ, Рё Р»СѓС‡С€Рµ Р±С‹ С‚РµР±Рµ РЅР°Р№С‚Рё РёС… РїРѕР±С‹СЃС‚СЂРµРµ, РёР»Рё Сѓ С‚РµР±СЏ РЅР°С‡РЅСѓС‚СЃСЏ РєСЂСѓРїРЅС‹Рµ РЅРµРїСЂРёСЏС‚РЅРѕСЃС‚Рё.
 		AI_StopProcessInfos(self);
 	};
 };	
@@ -230,11 +230,11 @@ FUNC INT DIA_Whistler_MySword_TooLate_Condition()
 
 FUNC VOID DIA_Whistler_MySword_TooLate_Info()
 {
-	AI_Output (self,other,"DIA_Whistler_MySword_TooLate_11_00"); //Вот ты где! Хотел сбежать с моей рудой, да? Иди-ка сюда, сынок!
+	AI_Output (self,other,"DIA_Whistler_MySword_TooLate_11_00"); //Р’РѕС‚ С‚С‹ РіРґРµ! РҐРѕС‚РµР» СЃР±РµР¶Р°С‚СЊ СЃ РјРѕРµР№ СЂСѓРґРѕР№, РґР°? РРґРё-РєР° СЃСЋРґР°, СЃС‹РЅРѕРє!
 	
 	Whistler_BuyMySword = LOG_FAILED;
 	
-	B_LogEntry (CH1_JoinOC,"Я все испортил. Уистлер теперь очень зол на меня.");
+	B_LogEntry (CH1_JoinOC,"РЇ РІСЃРµ РёСЃРїРѕСЂС‚РёР». РЈРёСЃС‚Р»РµСЂ С‚РµРїРµСЂСЊ РѕС‡РµРЅСЊ Р·РѕР» РЅР° РјРµРЅСЏ.");
 	
 	AI_StopProcessInfos	(self);
 	
@@ -254,7 +254,7 @@ INSTANCE DIA_Whistler_MySword_Success (C_INFO)
 	condition	= DIA_Whistler_MySword_Success_Condition;
 	information	= DIA_Whistler_MySword_Success_Info;
 	permanent	= 1;
-	description = "Твой меч у меня...";
+	description = "РўРІРѕР№ РјРµС‡ Сѓ РјРµРЅСЏ...";
 };                       
 
 FUNC INT DIA_Whistler_MySword_Success_Condition()
@@ -268,20 +268,20 @@ FUNC INT DIA_Whistler_MySword_Success_Condition()
 
 FUNC VOID DIA_Whistler_MySword_Success_Info()
 {
-	AI_Output (other,self,"DIA_Whistler_MySword_Success_15_00"); //Твой меч у меня...
+	AI_Output (other,self,"DIA_Whistler_MySword_Success_15_00"); //РўРІРѕР№ РјРµС‡ Сѓ РјРµРЅСЏ...
 
     B_GiveInvItems (other, self, Whistlers_Schwert, 1);
 	
-	AI_Output (self,other,"DIA_Whistler_MySword_Success_11_01"); //Я же говорил тебе, что это будет несложно. Но все равно: ты помог мне - я помогу тебе.
+	AI_Output (self,other,"DIA_Whistler_MySword_Success_11_01"); //РЇ Р¶Рµ РіРѕРІРѕСЂРёР» С‚РµР±Рµ, С‡С‚Рѕ СЌС‚Рѕ Р±СѓРґРµС‚ РЅРµСЃР»РѕР¶РЅРѕ. РќРѕ РІСЃРµ СЂР°РІРЅРѕ: С‚С‹ РїРѕРјРѕРі РјРЅРµ - СЏ РїРѕРјРѕРіСѓ С‚РµР±Рµ.
 	if (Npc_GetTrueGuild (hero) == GIL_NONE)
 	{
-	AI_Output (self,other,"DIA_Whistler_MySword_Success_11_02"); //Если Диего спросит меня, я замолвлю за тебя словечко. Ну а пока - счастливо оставаться!
+	AI_Output (self,other,"DIA_Whistler_MySword_Success_11_02"); //Р•СЃР»Рё Р”РёРµРіРѕ СЃРїСЂРѕСЃРёС‚ РјРµРЅСЏ, СЏ Р·Р°РјРѕР»РІР»СЋ Р·Р° С‚РµР±СЏ СЃР»РѕРІРµС‡РєРѕ. РќСѓ Р° РїРѕРєР° - СЃС‡Р°СЃС‚Р»РёРІРѕ РѕСЃС‚Р°РІР°С‚СЊСЃСЏ!
 	
-	B_LogEntry (CH1_JoinOC,"Уистлер остался доволен мечом. Он порекомендует меня Диего.");
+	B_LogEntry (CH1_JoinOC,"РЈРёСЃС‚Р»РµСЂ РѕСЃС‚Р°Р»СЃСЏ РґРѕРІРѕР»РµРЅ РјРµС‡РѕРј. РћРЅ РїРѕСЂРµРєРѕРјРµРЅРґСѓРµС‚ РјРµРЅСЏ Р”РёРµРіРѕ.");
 	}
 	else
 	{
-	B_LogEntry (CH1_JoinOC,"Уистлер остался доволен мечом. К сожалению, это для меня ровным счетом ничего не значит: призраком стать я уже не могу.");
+	B_LogEntry (CH1_JoinOC,"РЈРёСЃС‚Р»РµСЂ РѕСЃС‚Р°Р»СЃСЏ РґРѕРІРѕР»РµРЅ РјРµС‡РѕРј. Рљ СЃРѕР¶Р°Р»РµРЅРёСЋ, СЌС‚Рѕ РґР»СЏ РјРµРЅСЏ СЂРѕРІРЅС‹Рј СЃС‡РµС‚РѕРј РЅРёС‡РµРіРѕ РЅРµ Р·РЅР°С‡РёС‚: РїСЂРёР·СЂР°РєРѕРј СЃС‚Р°С‚СЊ СЏ СѓР¶Рµ РЅРµ РјРѕРіСѓ.");
 	};
 	Whistler_BuyMySword = LOG_SUCCESS;
 	B_GiveXP (XP_Whistlerssword);
@@ -300,7 +300,7 @@ INSTANCE DIA_Whistler_StandardKap1 (C_INFO)
 	condition	= DIA_Whistler_StandardKap1_Condition;
 	information	= DIA_Whistler_StandardKap1_Info;
 	permanent	= 1;
-	description = "Как дела?";
+	description = "РљР°Рє РґРµР»Р°?";
 };                       
 
 FUNC INT DIA_Whistler_StandardKap1_Condition()
@@ -313,8 +313,8 @@ FUNC INT DIA_Whistler_StandardKap1_Condition()
 
 FUNC VOID DIA_Whistler_StandardKap1_Info()
 {
-	AI_Output (other,self,"DIA_Whistler_StandardKap1_15_00"); //Как дела?
-	AI_Output (self,other,"DIA_Whistler_StandardKap1_11_01"); //Все хорошо! Ты помог мне - я помогу тебе. Я скажу Диего, что ты надежный парень.
+	AI_Output (other,self,"DIA_Whistler_StandardKap1_15_00"); //РљР°Рє РґРµР»Р°?
+	AI_Output (self,other,"DIA_Whistler_StandardKap1_11_01"); //Р’СЃРµ С…РѕСЂРѕС€Рѕ! РўС‹ РїРѕРјРѕРі РјРЅРµ - СЏ РїРѕРјРѕРіСѓ С‚РµР±Рµ. РЇ СЃРєР°Р¶Сѓ Р”РёРµРіРѕ, С‡С‚Рѕ С‚С‹ РЅР°РґРµР¶РЅС‹Р№ РїР°СЂРµРЅСЊ.
 };
 
 

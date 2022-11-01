@@ -2,7 +2,7 @@ instance VLK_536_Kyle (Npc_Default)
 {
 	//-------- primary data --------
 	
-	name =							" ‡ÈÎË";
+	name =							"–ö–∞–π–ª–∏";
 	npctype =						npctype_main;
 	guild =							GIL_VLK;      
 	level =							3;

@@ -47,7 +47,7 @@ FUNC int DIA_Raven_FirstIn_Condition()
 
 FUNC VOID DIA_Raven_FirstIn_Info()
 {
-	AI_Output (self, other,"DIA_Raven_FirstIn_10_00"); //Тебе что-нибудь нужно?
+	AI_Output (self, other,"DIA_Raven_FirstIn_10_00"); //РўРµР±Рµ С‡С‚Рѕ-РЅРёР±СѓРґСЊ РЅСѓР¶РЅРѕ?
 };
 
 // **************************************
@@ -61,7 +61,7 @@ instance DIA_Raven_Who (C_INFO)
 	condition	= DIA_Raven_Who_Condition;
 	information	= DIA_Raven_Who_Info;
 	permanent	= 0;
-	description	= "Как тебя зовут?";
+	description	= "РљР°Рє С‚РµР±СЏ Р·РѕРІСѓС‚?";
 };                       
 
 FUNC int DIA_Raven_Who_Condition()
@@ -71,8 +71,8 @@ FUNC int DIA_Raven_Who_Condition()
 
 FUNC VOID DIA_Raven_Who_Info()
 {
-	AI_Output (other, self,"DIA_Raven_Who_15_00"); //Ты кто?
-	AI_Output (self, other,"DIA_Raven_Who_10_01"); //Я Равен, правая рука Гомеза. Прежде чем увидеть Гомеза, ты должен поговорить со мной. Это касается всех.
+	AI_Output (other, self,"DIA_Raven_Who_15_00"); //РўС‹ РєС‚Рѕ?
+	AI_Output (self, other,"DIA_Raven_Who_10_01"); //РЇ Р Р°РІРµРЅ, РїСЂР°РІР°СЏ СЂСѓРєР° Р“РѕРјРµР·Р°. РџСЂРµР¶РґРµ С‡РµРј СѓРІРёРґРµС‚СЊ Р“РѕРјРµР·Р°, С‚С‹ РґРѕР»Р¶РµРЅ РїРѕРіРѕРІРѕСЂРёС‚СЊ СЃРѕ РјРЅРѕР№. Р­С‚Рѕ РєР°СЃР°РµС‚СЃСЏ РІСЃРµС….
 };
 
 // **************************************
@@ -86,7 +86,7 @@ instance DIA_Raven_Krautbote (C_INFO)
 	condition	= DIA_Raven_Krautbote_Condition;
 	information	= DIA_Raven_Krautbote_Info;
 	permanent	= 0;
-	description	= "Кор Галом прислал Гомезу болотник.";
+	description	= "РљРѕСЂ Р“Р°Р»РѕРј РїСЂРёСЃР»Р°Р» Р“РѕРјРµР·Сѓ Р±РѕР»РѕС‚РЅРёРє.";
 };                       
 
 FUNC int DIA_Raven_Krautbote_Condition()
@@ -99,12 +99,12 @@ FUNC int DIA_Raven_Krautbote_Condition()
 
 FUNC VOID DIA_Raven_Krautbote_Info()
 {
-	AI_Output			(other, self,"DIA_Raven_Krautbote_15_00"); //Кор Галом прислал Гомезу болотник.
-	AI_Output			(self, other,"DIA_Raven_Krautbote_10_01"); //Этим у нас занимается Бартоло. Гомеза не общается с мальчиками на побегушках.
-	AI_Output			(self, other,"DIA_Raven_Krautbote_10_02"); //Ты найдешь его в комнате справа от входа или на кухне в большой башне.
-	AI_Output			(self, other,"DIA_Raven_Krautbote_10_03"); //Ночью он, понятное дело, спит и на твоем месте я бы не стал его беспокоить.
+	AI_Output			(other, self,"DIA_Raven_Krautbote_15_00"); //РљРѕСЂ Р“Р°Р»РѕРј РїСЂРёСЃР»Р°Р» Р“РѕРјРµР·Сѓ Р±РѕР»РѕС‚РЅРёРє.
+	AI_Output			(self, other,"DIA_Raven_Krautbote_10_01"); //Р­С‚РёРј Сѓ РЅР°СЃ Р·Р°РЅРёРјР°РµС‚СЃСЏ Р‘Р°СЂС‚РѕР»Рѕ. Р“РѕРјРµР·Р° РЅРµ РѕР±С‰Р°РµС‚СЃСЏ СЃ РјР°Р»СЊС‡РёРєР°РјРё РЅР° РїРѕР±РµРіСѓС€РєР°С….
+	AI_Output			(self, other,"DIA_Raven_Krautbote_10_02"); //РўС‹ РЅР°Р№РґРµС€СЊ РµРіРѕ РІ РєРѕРјРЅР°С‚Рµ СЃРїСЂР°РІР° РѕС‚ РІС…РѕРґР° РёР»Рё РЅР° РєСѓС…РЅРµ РІ Р±РѕР»СЊС€РѕР№ Р±Р°С€РЅРµ.
+	AI_Output			(self, other,"DIA_Raven_Krautbote_10_03"); //РќРѕС‡СЊСЋ РѕРЅ, РїРѕРЅСЏС‚РЅРѕРµ РґРµР»Рѕ, СЃРїРёС‚ Рё РЅР° С‚РІРѕРµРј РјРµСЃС‚Рµ СЏ Р±С‹ РЅРµ СЃС‚Р°Р» РµРіРѕ Р±РµСЃРїРѕРєРѕРёС‚СЊ.
 
-	B_LogEntry			(CH1_KrautBote,"Запас болотника для Гомеза надо оставить у Бартоло. Я смогу найти его в доме Баронов.");
+	B_LogEntry			(CH1_KrautBote,"Р—Р°РїР°СЃ Р±РѕР»РѕС‚РЅРёРєР° РґР»СЏ Р“РѕРјРµР·Р° РЅР°РґРѕ РѕСЃС‚Р°РІРёС‚СЊ Сѓ Р‘Р°СЂС‚РѕР»Рѕ. РЇ СЃРјРѕРіСѓ РЅР°Р№С‚Рё РµРіРѕ РІ РґРѕРјРµ Р‘Р°СЂРѕРЅРѕРІ.");
 };
 
 // **************************************
@@ -118,7 +118,7 @@ instance DIA_Raven_Aufnahme (C_INFO)
 	condition	= DIA_Raven_Aufnahme_Condition;
 	information	= DIA_Raven_Aufnahme_Info;
 	permanent	= 0;
-	description	= "Я хочу увидеть Гомеза.";
+	description	= "РЇ С…РѕС‡Сѓ СѓРІРёРґРµС‚СЊ Р“РѕРјРµР·Р°.";
 };                       
 
 FUNC int DIA_Raven_Aufnahme_Condition()
@@ -132,9 +132,9 @@ FUNC int DIA_Raven_Aufnahme_Condition()
 
 FUNC VOID DIA_Raven_Aufnahme_Info()
 {
-	AI_Output (other, self,"DIA_Raven_Aufnahme_15_00"); //Я хочу увидеть Гомеза. Торус сказал, что меня должны зачислить в Призраки.
-	AI_Output (self, other,"DIA_Raven_Aufnahme_10_01"); //Хорошие люди нужны везде. Ты не похож на придурка. Думаю, все у тебя будет в порядке.
-	AI_Output (self, other,"DIA_Raven_Aufnahme_10_02"); //Иди за мной - я отведу тебя к Гомезу. И ничего не трогай!
+	AI_Output (other, self,"DIA_Raven_Aufnahme_15_00"); //РЇ С…РѕС‡Сѓ СѓРІРёРґРµС‚СЊ Р“РѕРјРµР·Р°. РўРѕСЂСѓСЃ СЃРєР°Р·Р°Р», С‡С‚Рѕ РјРµРЅСЏ РґРѕР»Р¶РЅС‹ Р·Р°С‡РёСЃР»РёС‚СЊ РІ РџСЂРёР·СЂР°РєРё.
+	AI_Output (self, other,"DIA_Raven_Aufnahme_10_01"); //РҐРѕСЂРѕС€РёРµ Р»СЋРґРё РЅСѓР¶РЅС‹ РІРµР·РґРµ. РўС‹ РЅРµ РїРѕС…РѕР¶ РЅР° РїСЂРёРґСѓСЂРєР°. Р”СѓРјР°СЋ, РІСЃРµ Сѓ С‚РµР±СЏ Р±СѓРґРµС‚ РІ РїРѕСЂСЏРґРєРµ.
+	AI_Output (self, other,"DIA_Raven_Aufnahme_10_02"); //РРґРё Р·Р° РјРЅРѕР№ - СЏ РѕС‚РІРµРґСѓ С‚РµР±СЏ Рє Р“РѕРјРµР·Сѓ. Р РЅРёС‡РµРіРѕ РЅРµ С‚СЂРѕРіР°Р№!
 	
 	AI_StopProcessInfos	(self);
 	Npc_ExchangeRoutine(self, "GUIDE");
@@ -164,7 +164,7 @@ FUNC int DIA_Raven_There_Condition()
 
 FUNC VOID DIA_Raven_There_Info()
 {
-	AI_Output (self, other,"DIA_Raven_There_10_01"); //Гомез сидит там. Если не будешь проявлять к нему уважение, он лично начнет учить тебя хорошим манерам, усек?
+	AI_Output (self, other,"DIA_Raven_There_10_01"); //Р“РѕРјРµР· СЃРёРґРёС‚ С‚Р°Рј. Р•СЃР»Рё РЅРµ Р±СѓРґРµС€СЊ РїСЂРѕСЏРІР»СЏС‚СЊ Рє РЅРµРјСѓ СѓРІР°Р¶РµРЅРёРµ, РѕРЅ Р»РёС‡РЅРѕ РЅР°С‡РЅРµС‚ СѓС‡РёС‚СЊ С‚РµР±СЏ С…РѕСЂРѕС€РёРј РјР°РЅРµСЂР°Рј, СѓСЃРµРє?
 	AI_StopProcessInfos	(self);
 		
 	Npc_ExchangeRoutine(self, "START");
@@ -182,7 +182,7 @@ instance DIA_Raven_PERM (C_INFO)
 	condition	= DIA_Raven_PERM_Condition;
 	information	= DIA_Raven_PERM_Info;
 	permanent	= 1;
-	description	= "Как идет обмен?";
+	description	= "РљР°Рє РёРґРµС‚ РѕР±РјРµРЅ?";
 };                       
 
 FUNC int DIA_Raven_PERM_Condition()
@@ -195,8 +195,8 @@ FUNC int DIA_Raven_PERM_Condition()
 
 FUNC VOID DIA_Raven_PERM_Info()
 {
-	AI_Output (other, self,"DIA_Raven_PERM_15_00"); //Как идет обмен?
-	AI_Output (self, other,"DIA_Raven_PERM_10_01"); //На Старой Шахте хорошо потрудились. Последний груз из внешнего мира был очень большим.
+	AI_Output (other, self,"DIA_Raven_PERM_15_00"); //РљР°Рє РёРґРµС‚ РѕР±РјРµРЅ?
+	AI_Output (self, other,"DIA_Raven_PERM_10_01"); //РќР° РЎС‚Р°СЂРѕР№ РЁР°С…С‚Рµ С…РѕСЂРѕС€Рѕ РїРѕС‚СЂСѓРґРёР»РёСЃСЊ. РџРѕСЃР»РµРґРЅРёР№ РіСЂСѓР· РёР· РІРЅРµС€РЅРµРіРѕ РјРёСЂР° Р±С‹Р» РѕС‡РµРЅСЊ Р±РѕР»СЊС€РёРј.
 };
 
 // **************************************
@@ -210,7 +210,7 @@ instance DIA_Raven_BinDabei (C_INFO)
 	condition	= DIA_Raven_BinDabei_Condition;
 	information	= DIA_Raven_BinDabei_Info;
 	permanent	= 0;
-	description	= "Гомез сказал, я теперь с вами.";
+	description	= "Р“РѕРјРµР· СЃРєР°Р·Р°Р», СЏ С‚РµРїРµСЂСЊ СЃ РІР°РјРё.";
 };                       
 
 FUNC int DIA_Raven_BinDabei_Condition()
@@ -229,9 +229,9 @@ FUNC VOID DIA_Raven_BinDabei_Info()
 	B_GiveInvItems      (self, hero, ItAmArrow, 1);
 	Npc_RemoveInvItem	(hero, ItAmArrow);
 	
-	AI_Output			(other, self,"DIA_Raven_BinDabei_15_00"); //Гомез сказал, я теперь с вами.
-	AI_Output			(self, other,"DIA_Raven_BinDabei_10_01"); //Здорово! Ну, раз так, ты можешь доказать свою преданность, выполнив это задание.
-	AI_Output			(self, other,"DIA_Raven_BinDabei_10_02"); //Для тебя это должно быть не слишком сложно, особенно если ты не врешь по поводу своих связей.
+	AI_Output			(other, self,"DIA_Raven_BinDabei_15_00"); //Р“РѕРјРµР· СЃРєР°Р·Р°Р», СЏ С‚РµРїРµСЂСЊ СЃ РІР°РјРё.
+	AI_Output			(self, other,"DIA_Raven_BinDabei_10_01"); //Р—РґРѕСЂРѕРІРѕ! РќСѓ, СЂР°Р· С‚Р°Рє, С‚С‹ РјРѕР¶РµС€СЊ РґРѕРєР°Р·Р°С‚СЊ СЃРІРѕСЋ РїСЂРµРґР°РЅРЅРѕСЃС‚СЊ, РІС‹РїРѕР»РЅРёРІ СЌС‚Рѕ Р·Р°РґР°РЅРёРµ.
+	AI_Output			(self, other,"DIA_Raven_BinDabei_10_02"); //Р”Р»СЏ С‚РµР±СЏ СЌС‚Рѕ РґРѕР»Р¶РЅРѕ Р±С‹С‚СЊ РЅРµ СЃР»РёС€РєРѕРј СЃР»РѕР¶РЅРѕ, РѕСЃРѕР±РµРЅРЅРѕ РµСЃР»Рё С‚С‹ РЅРµ РІСЂРµС€СЊ РїРѕ РїРѕРІРѕРґСѓ СЃРІРѕРёС… СЃРІСЏР·РµР№.
 
 	AI_EquipBestArmor	(hero); 
 };
@@ -249,7 +249,7 @@ INSTANCE DIA_Raven_SpySect (C_INFO)
 	condition	= DIA_Raven_SpySect_Condition;
 	information	= DIA_Raven_SpySect_Info;
 	permanent	= 0;
-	description	= "Что я должен сделать?";
+	description	= "Р§С‚Рѕ СЏ РґРѕР»Р¶РµРЅ СЃРґРµР»Р°С‚СЊ?";
 };
 
 FUNC INT DIA_Raven_SpySect_Condition()
@@ -262,23 +262,23 @@ FUNC INT DIA_Raven_SpySect_Condition()
 
 FUNC VOID DIA_Raven_SpySect_Info()
 {
-	AI_Output (other, self,"DIA_Raven_SpySect_15_00"); //Что я должен сделать?
-	AI_Output (self, other,"DIA_Raven_SpySect_10_01"); //Мы ведем большой обмен с Братством. Но это совсем не значит, что мы им доверяем.
-	AI_Output (self, other,"DIA_Raven_SpySect_10_02"); //Отправляйся на болото.
-	AI_Output (self, other,"DIA_Raven_SpySect_10_03"); //Когда доберешься до Лагеря, смотри в оба. Все, что ты найдешь, может оказаться полезным для нас.  
-	AI_Output (self, other,"DIA_Raven_SpySect_10_04"); //Чем больше ты принесешь, тем лучше. Действуй с умом... если ты, конечно, понимаешь, о чем я говорю.
-	AI_Output (other, self,"DIA_Raven_SpySect_15_05"); //Расслабься, я не собираюсь их злить.
-	AI_Output (self, other,"DIA_Raven_SpySect_10_06"); //Я знал, что ты поймешь.
+	AI_Output (other, self,"DIA_Raven_SpySect_15_00"); //Р§С‚Рѕ СЏ РґРѕР»Р¶РµРЅ СЃРґРµР»Р°С‚СЊ?
+	AI_Output (self, other,"DIA_Raven_SpySect_10_01"); //РњС‹ РІРµРґРµРј Р±РѕР»СЊС€РѕР№ РѕР±РјРµРЅ СЃ Р‘СЂР°С‚СЃС‚РІРѕРј. РќРѕ СЌС‚Рѕ СЃРѕРІСЃРµРј РЅРµ Р·РЅР°С‡РёС‚, С‡С‚Рѕ РјС‹ РёРј РґРѕРІРµСЂСЏРµРј.
+	AI_Output (self, other,"DIA_Raven_SpySect_10_02"); //РћС‚РїСЂР°РІР»СЏР№СЃСЏ РЅР° Р±РѕР»РѕС‚Рѕ.
+	AI_Output (self, other,"DIA_Raven_SpySect_10_03"); //РљРѕРіРґР° РґРѕР±РµСЂРµС€СЊСЃСЏ РґРѕ Р›Р°РіРµСЂСЏ, СЃРјРѕС‚СЂРё РІ РѕР±Р°. Р’СЃРµ, С‡С‚Рѕ С‚С‹ РЅР°Р№РґРµС€СЊ, РјРѕР¶РµС‚ РѕРєР°Р·Р°С‚СЊСЃСЏ РїРѕР»РµР·РЅС‹Рј РґР»СЏ РЅР°СЃ.  
+	AI_Output (self, other,"DIA_Raven_SpySect_10_04"); //Р§РµРј Р±РѕР»СЊС€Рµ С‚С‹ РїСЂРёРЅРµСЃРµС€СЊ, С‚РµРј Р»СѓС‡С€Рµ. Р”РµР№СЃС‚РІСѓР№ СЃ СѓРјРѕРј... РµСЃР»Рё С‚С‹, РєРѕРЅРµС‡РЅРѕ, РїРѕРЅРёРјР°РµС€СЊ, Рѕ С‡РµРј СЏ РіРѕРІРѕСЂСЋ.
+	AI_Output (other, self,"DIA_Raven_SpySect_15_05"); //Р Р°СЃСЃР»Р°Р±СЊСЃСЏ, СЏ РЅРµ СЃРѕР±РёСЂР°СЋСЃСЊ РёС… Р·Р»РёС‚СЊ.
+	AI_Output (self, other,"DIA_Raven_SpySect_10_06"); //РЇ Р·РЅР°Р», С‡С‚Рѕ С‚С‹ РїРѕР№РјРµС€СЊ.
 	
 	Raven_SpySect = LOG_RUNNING;
 	
 	Log_CreateTopic	(CH1_GoToPsi,	LOG_MISSION);
 	Log_SetTopicStatus (CH1_GoToPsi,	LOG_RUNNING);
-	B_LogEntry (CH1_GoToPsi,"Равен послал меня к Братству в Болотный Лагерь от лица Старого Лагеря. Я должен осмотреться и держать уши настороже. Возможно подвернется какая-то ценная для Баронов информация.");
+	B_LogEntry (CH1_GoToPsi,"Р Р°РІРµРЅ РїРѕСЃР»Р°Р» РјРµРЅСЏ Рє Р‘СЂР°С‚СЃС‚РІСѓ РІ Р‘РѕР»РѕС‚РЅС‹Р№ Р›Р°РіРµСЂСЊ РѕС‚ Р»РёС†Р° РЎС‚Р°СЂРѕРіРѕ Р›Р°РіРµСЂСЏ. РЇ РґРѕР»Р¶РµРЅ РѕСЃРјРѕС‚СЂРµС‚СЊСЃСЏ Рё РґРµСЂР¶Р°С‚СЊ СѓС€Рё РЅР°СЃС‚РѕСЂРѕР¶Рµ. Р’РѕР·РјРѕР¶РЅРѕ РїРѕРґРІРµСЂРЅРµС‚СЃСЏ РєР°РєР°СЏ-С‚Рѕ С†РµРЅРЅР°СЏ РґР»СЏ Р‘Р°СЂРѕРЅРѕРІ РёРЅС„РѕСЂРјР°С†РёСЏ.");
 };
 
 // *********************************************
-// 				Ausrьstung
+// 				AusrСЊstung
 // *********************************************
 
 INSTANCE DIA_Raven_Equipment (C_INFO)
@@ -288,7 +288,7 @@ INSTANCE DIA_Raven_Equipment (C_INFO)
 	condition	= DIA_Raven_Equipment_Condition;
 	information	= DIA_Raven_Equipment_Info;
 	permanent	= 0;
-	description	= "Где можно найти хорошее оружие?";
+	description	= "Р“РґРµ РјРѕР¶РЅРѕ РЅР°Р№С‚Рё С…РѕСЂРѕС€РµРµ РѕСЂСѓР¶РёРµ?";
 };
 
 FUNC INT DIA_Raven_Equipment_Condition()
@@ -301,16 +301,16 @@ FUNC INT DIA_Raven_Equipment_Condition()
 
 FUNC VOID DIA_Raven_Equipment_Info()
 {
-	AI_Output	(other, self,"DIA_Raven_Equipment_15_00"); //Где мне найти снаряжение получше?
-	AI_Output	(self, other,"DIA_Raven_Equipment_10_01"); //Поговори с Диего - он подберет тебе какие-нибудь доспехи. Так у тебя будет больше шансов уцелеть, да и за опознавательный знак он вполне сойдет.
-	AI_Output	(self, other,"DIA_Raven_Equipment_10_02"); //Эти доспехи позволят тебе беспрепятственно ходить повсюду.
-	AI_Output	(self, other,"DIA_Raven_Equipment_10_03"); //Если тебе нужно оружие, поговори со Скипом. Ты найдешь его в дальней части большого сарая, что находится слева во внутреннем дворе замка.
+	AI_Output	(other, self,"DIA_Raven_Equipment_15_00"); //Р“РґРµ РјРЅРµ РЅР°Р№С‚Рё СЃРЅР°СЂСЏР¶РµРЅРёРµ РїРѕР»СѓС‡С€Рµ?
+	AI_Output	(self, other,"DIA_Raven_Equipment_10_01"); //РџРѕРіРѕРІРѕСЂРё СЃ Р”РёРµРіРѕ - РѕРЅ РїРѕРґР±РµСЂРµС‚ С‚РµР±Рµ РєР°РєРёРµ-РЅРёР±СѓРґСЊ РґРѕСЃРїРµС…Рё. РўР°Рє Сѓ С‚РµР±СЏ Р±СѓРґРµС‚ Р±РѕР»СЊС€Рµ С€Р°РЅСЃРѕРІ СѓС†РµР»РµС‚СЊ, РґР° Рё Р·Р° РѕРїРѕР·РЅР°РІР°С‚РµР»СЊРЅС‹Р№ Р·РЅР°Рє РѕРЅ РІРїРѕР»РЅРµ СЃРѕР№РґРµС‚.
+	AI_Output	(self, other,"DIA_Raven_Equipment_10_02"); //Р­С‚Рё РґРѕСЃРїРµС…Рё РїРѕР·РІРѕР»СЏС‚ С‚РµР±Рµ Р±РµСЃРїСЂРµРїСЏС‚СЃС‚РІРµРЅРЅРѕ С…РѕРґРёС‚СЊ РїРѕРІСЃСЋРґСѓ.
+	AI_Output	(self, other,"DIA_Raven_Equipment_10_03"); //Р•СЃР»Рё С‚РµР±Рµ РЅСѓР¶РЅРѕ РѕСЂСѓР¶РёРµ, РїРѕРіРѕРІРѕСЂРё СЃРѕ РЎРєРёРїРѕРј. РўС‹ РЅР°Р№РґРµС€СЊ РµРіРѕ РІ РґР°Р»СЊРЅРµР№ С‡Р°СЃС‚Рё Р±РѕР»СЊС€РѕРіРѕ СЃР°СЂР°СЏ, С‡С‚Рѕ РЅР°С…РѕРґРёС‚СЃСЏ СЃР»РµРІР° РІРѕ РІРЅСѓС‚СЂРµРЅРЅРµРј РґРІРѕСЂРµ Р·Р°РјРєР°.
 
 	Log_CreateTopic	(GE_TraderOC,	LOG_NOTE);
-	B_LogEntry		(GE_TraderOC,"У Диего есть доспехи получше для людей Гомеза. Он поджидает у входа в замок.");
+	B_LogEntry		(GE_TraderOC,"РЈ Р”РёРµРіРѕ РµСЃС‚СЊ РґРѕСЃРїРµС…Рё РїРѕР»СѓС‡С€Рµ РґР»СЏ Р»СЋРґРµР№ Р“РѕРјРµР·Р°. РћРЅ РїРѕРґР¶РёРґР°РµС‚ Сѓ РІС…РѕРґР° РІ Р·Р°РјРѕРє.");
 	if	!Npc_KnowsInfo(hero, DIA_Skip_First)
 	{
-		B_LogEntry	(GE_TraderOC,"Стражник Скип приторговывает оружием на заднем дворе. Но только для людей Гомеза.");
+		B_LogEntry	(GE_TraderOC,"РЎС‚СЂР°Р¶РЅРёРє РЎРєРёРї РїСЂРёС‚РѕСЂРіРѕРІС‹РІР°РµС‚ РѕСЂСѓР¶РёРµРј РЅР° Р·Р°РґРЅРµРј РґРІРѕСЂРµ. РќРѕ С‚РѕР»СЊРєРѕ РґР»СЏ Р»СЋРґРµР№ Р“РѕРјРµР·Р°.");
 	};
 };
 
@@ -331,7 +331,7 @@ INSTANCE DIA_Raven_SpyBericht (C_INFO)
 	condition	= DIA_Raven_SpyBericht_Condition;
 	information	= DIA_Raven_SpyBericht_Info;
 	permanent	= 1;
-	description	= "Я подумал, мне стоит доложить о прибытии. ";
+	description	= "РЇ РїРѕРґСѓРјР°Р», РјРЅРµ СЃС‚РѕРёС‚ РґРѕР»РѕР¶РёС‚СЊ Рѕ РїСЂРёР±С‹С‚РёРё. ";
 };
 
 FUNC INT DIA_Raven_SpyBericht_Condition()
@@ -344,41 +344,41 @@ FUNC INT DIA_Raven_SpyBericht_Condition()
 
 FUNC VOID DIA_Raven_SpyBericht_Info()
 {
-	AI_Output (other, self,"DIA_Raven_SpyBericht_15_00"); //Я подумал, мне стоит доложить о прибытии. 
-	AI_Output (self, other,"DIA_Raven_SpyBericht_10_01"); //Хорошо. Я хочу быть в курсе всего происходящего.
+	AI_Output (other, self,"DIA_Raven_SpyBericht_15_00"); //РЇ РїРѕРґСѓРјР°Р», РјРЅРµ СЃС‚РѕРёС‚ РґРѕР»РѕР¶РёС‚СЊ Рѕ РїСЂРёР±С‹С‚РёРё. 
+	AI_Output (self, other,"DIA_Raven_SpyBericht_10_01"); //РҐРѕСЂРѕС€Рѕ. РЇ С…РѕС‡Сѓ Р±С‹С‚СЊ РІ РєСѓСЂСЃРµ РІСЃРµРіРѕ РїСЂРѕРёСЃС…РѕРґСЏС‰РµРіРѕ.
 	if (Npc_HasItems (other, itat_Crawlerqueen)>=1)
 	|| (CorKalom_BringMCQBalls == LOG_SUCCESS)
 	{
 		if (Kapitel >= 3)
 		{
-			AI_Output (other, self,"Org_826_Mordrag_RUNNING_15_04"); //Состоялась Великая Церемония.
-			AI_Output (self, other,"DIA_Raven_SpyBericht_10_04"); //Ты хорошо поработал.
+			AI_Output (other, self,"Org_826_Mordrag_RUNNING_15_04"); //РЎРѕСЃС‚РѕСЏР»Р°СЃСЊ Р’РµР»РёРєР°СЏ Р¦РµСЂРµРјРѕРЅРёСЏ.
+			AI_Output (self, other,"DIA_Raven_SpyBericht_10_04"); //РўС‹ С…РѕСЂРѕС€Рѕ РїРѕСЂР°Р±РѕС‚Р°Р».
 			Raven_SpySect=LOG_SUCCESS;
 			B_GiveXP (XP_ReportToRaven);
 			Log_SetTopicStatus (CH1_GoToPsi,	LOG_SUCCESS);
-			B_LogEntry (CH1_GoToPsi,"Равен наговорил мне всякой чуши! Я не стану мириться с таким отношением. Это не по мне. С этого момента буду делать то, что сам захочу.");
+			B_LogEntry (CH1_GoToPsi,"Р Р°РІРµРЅ РЅР°РіРѕРІРѕСЂРёР» РјРЅРµ РІСЃСЏРєРѕР№ С‡СѓС€Рё! РЇ РЅРµ СЃС‚Р°РЅСѓ РјРёСЂРёС‚СЊСЃСЏ СЃ С‚Р°РєРёРј РѕС‚РЅРѕС€РµРЅРёРµРј. Р­С‚Рѕ РЅРµ РїРѕ РјРЅРµ. РЎ СЌС‚РѕРіРѕ РјРѕРјРµРЅС‚Р° Р±СѓРґСѓ РґРµР»Р°С‚СЊ С‚Рѕ, С‡С‚Рѕ СЃР°Рј Р·Р°С…РѕС‡Сѓ.");
 		}
 		else
 		{
-			AI_Output (other, self,"DIA_Raven_SpyBericht_15_02"); //Теперь им нужны яйца, которые откладывает королева ползунов, чтобы сварить эликсир и вступить в контакт со Спящим. Эти яйца у меня с собой.
+			AI_Output (other, self,"DIA_Raven_SpyBericht_15_02"); //РўРµРїРµСЂСЊ РёРј РЅСѓР¶РЅС‹ СЏР№С†Р°, РєРѕС‚РѕСЂС‹Рµ РѕС‚РєР»Р°РґС‹РІР°РµС‚ РєРѕСЂРѕР»РµРІР° РїРѕР»Р·СѓРЅРѕРІ, С‡С‚РѕР±С‹ СЃРІР°СЂРёС‚СЊ СЌР»РёРєСЃРёСЂ Рё РІСЃС‚СѓРїРёС‚СЊ РІ РєРѕРЅС‚Р°РєС‚ СЃРѕ РЎРїСЏС‰РёРј. Р­С‚Рё СЏР№С†Р° Сѓ РјРµРЅСЏ СЃ СЃРѕР±РѕР№.
 			if (CorKalom_BringMCQBalls != LOG_SUCCESS)
 			{
-				AI_Output (self, other,"DIA_Raven_SpyBericht_10_03"); //Очень интересно. Вот только сработает ли. Отнеси яйца в храм.
+				AI_Output (self, other,"DIA_Raven_SpyBericht_10_03"); //РћС‡РµРЅСЊ РёРЅС‚РµСЂРµСЃРЅРѕ. Р’РѕС‚ С‚РѕР»СЊРєРѕ СЃСЂР°Р±РѕС‚Р°РµС‚ Р»Рё. РћС‚РЅРµСЃРё СЏР№С†Р° РІ С…СЂР°Рј.
 			}
 			else
 			{
-				AI_Output (self, other,"DIA_Raven_SpyBericht_10_04"); //Ты хорошо поработал.
+				AI_Output (self, other,"DIA_Raven_SpyBericht_10_04"); //РўС‹ С…РѕСЂРѕС€Рѕ РїРѕСЂР°Р±РѕС‚Р°Р».
 				Raven_SpySect=LOG_SUCCESS;
 				B_GiveXP (XP_ReportToRaven);
 				Log_SetTopicStatus (CH1_GoToPsi,	LOG_SUCCESS);
-				B_LogEntry (CH1_GoToPsi,"Равен наговорил мне всякой чуши! Я не стану мириться с таким отношением. Это не по мне. С этого момента буду делать то, что сам захочу.");
+				B_LogEntry (CH1_GoToPsi,"Р Р°РІРµРЅ РЅР°РіРѕРІРѕСЂРёР» РјРЅРµ РІСЃСЏРєРѕР№ С‡СѓС€Рё! РЇ РЅРµ СЃС‚Р°РЅСѓ РјРёСЂРёС‚СЊСЃСЏ СЃ С‚Р°РєРёРј РѕС‚РЅРѕС€РµРЅРёРµРј. Р­С‚Рѕ РЅРµ РїРѕ РјРЅРµ. РЎ СЌС‚РѕРіРѕ РјРѕРјРµРЅС‚Р° Р±СѓРґСѓ РґРµР»Р°С‚СЊ С‚Рѕ, С‡С‚Рѕ СЃР°Рј Р·Р°С…РѕС‡Сѓ.");
 			};
 		};
 	}
 	else
 	{
-		AI_Output (other, self,"DIA_Raven_SpyBericht_15_05"); //Я пока еще не знаю, что они собираются делать. 
-		AI_Output (self, other,"DIA_Raven_SpyBericht_10_06"); //Тогда зачем ты меня отрываешь от дел?
+		AI_Output (other, self,"DIA_Raven_SpyBericht_15_05"); //РЇ РїРѕРєР° РµС‰Рµ РЅРµ Р·РЅР°СЋ, С‡С‚Рѕ РѕРЅРё СЃРѕР±РёСЂР°СЋС‚СЃСЏ РґРµР»Р°С‚СЊ. 
+		AI_Output (self, other,"DIA_Raven_SpyBericht_10_06"); //РўРѕРіРґР° Р·Р°С‡РµРј С‚С‹ РјРµРЅСЏ РѕС‚СЂС‹РІР°РµС€СЊ РѕС‚ РґРµР»?
 	};
 };
 

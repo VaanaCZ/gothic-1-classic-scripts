@@ -14,7 +14,7 @@ INSTANCE Info_Tpl_13_EXIT(C_INFO)
 	condition	= Info_Tpl_13_EXIT_Condition;
 	information	= Info_Tpl_13_EXIT_Info;
 	permanent	= 1;
-	description = "ЗАКОНЧИТЬ";
+	description = "Р—РђРљРћРќР§РРўР¬";
 };                       
 
 FUNC INT Info_Tpl_13_EXIT_Condition()
@@ -37,7 +37,7 @@ INSTANCE Info_Tpl_13_EinerVonEuchWerden (C_INFO) // E1
 	condition	= Info_Tpl_13_EinerVonEuchWerden_Condition;
 	information	= Info_Tpl_13_EinerVonEuchWerden_Info;
 	permanent	= 1;
-	description = "Я хочу стать Стражем, как и ты.";
+	description = "РЇ С…РѕС‡Сѓ СЃС‚Р°С‚СЊ РЎС‚СЂР°Р¶РµРј, РєР°Рє Рё С‚С‹.";
 };                       
 
 FUNC INT Info_Tpl_13_EinerVonEuchWerden_Condition()
@@ -52,11 +52,11 @@ FUNC INT Info_Tpl_13_EinerVonEuchWerden_Condition()
 
 FUNC VOID Info_Tpl_13_EinerVonEuchWerden_Info()
 {
-	AI_Output(other,self,"Info_Tpl_13_EinerVonEuchWerden_15_00"); //Я хочу стать Стражем, как и ты.
-	AI_Output(self,other,"Info_Tpl_13_EinerVonEuchWerden_13_01"); //А знаешь ли ты, от чего мне пришлось отказаться, прежде чем я смог встать на страже покоя избранных Спящим?
-	AI_Output(self,other,"Info_Tpl_13_EinerVonEuchWerden_13_02"); //Не думай, что сможешь так вот запросто попасть на это место и получить подобающий почет и уважение.
-	AI_Output(self,other,"Info_Tpl_13_EinerVonEuchWerden_13_03"); //Прежде чем говорить об этом, ты должен узнать немного об учении Спящего.
-	AI_Output(self,other,"Info_Tpl_13_EinerVonEuchWerden_13_04"); //Это займет некоторое время и, возможно, приведет тебя в чувство.
+	AI_Output(other,self,"Info_Tpl_13_EinerVonEuchWerden_15_00"); //РЇ С…РѕС‡Сѓ СЃС‚Р°С‚СЊ РЎС‚СЂР°Р¶РµРј, РєР°Рє Рё С‚С‹.
+	AI_Output(self,other,"Info_Tpl_13_EinerVonEuchWerden_13_01"); //Рђ Р·РЅР°РµС€СЊ Р»Рё С‚С‹, РѕС‚ С‡РµРіРѕ РјРЅРµ РїСЂРёС€Р»РѕСЃСЊ РѕС‚РєР°Р·Р°С‚СЊСЃСЏ, РїСЂРµР¶РґРµ С‡РµРј СЏ СЃРјРѕРі РІСЃС‚Р°С‚СЊ РЅР° СЃС‚СЂР°Р¶Рµ РїРѕРєРѕСЏ РёР·Р±СЂР°РЅРЅС‹С… РЎРїСЏС‰РёРј?
+	AI_Output(self,other,"Info_Tpl_13_EinerVonEuchWerden_13_02"); //РќРµ РґСѓРјР°Р№, С‡С‚Рѕ СЃРјРѕР¶РµС€СЊ С‚Р°Рє РІРѕС‚ Р·Р°РїСЂРѕСЃС‚Рѕ РїРѕРїР°СЃС‚СЊ РЅР° СЌС‚Рѕ РјРµСЃС‚Рѕ Рё РїРѕР»СѓС‡РёС‚СЊ РїРѕРґРѕР±Р°СЋС‰РёР№ РїРѕС‡РµС‚ Рё СѓРІР°Р¶РµРЅРёРµ.
+	AI_Output(self,other,"Info_Tpl_13_EinerVonEuchWerden_13_03"); //РџСЂРµР¶РґРµ С‡РµРј РіРѕРІРѕСЂРёС‚СЊ РѕР± СЌС‚РѕРј, С‚С‹ РґРѕР»Р¶РµРЅ СѓР·РЅР°С‚СЊ РЅРµРјРЅРѕРіРѕ РѕР± СѓС‡РµРЅРёРё РЎРїСЏС‰РµРіРѕ.
+	AI_Output(self,other,"Info_Tpl_13_EinerVonEuchWerden_13_04"); //Р­С‚Рѕ Р·Р°Р№РјРµС‚ РЅРµРєРѕС‚РѕСЂРѕРµ РІСЂРµРјСЏ Рё, РІРѕР·РјРѕР¶РЅРѕ, РїСЂРёРІРµРґРµС‚ С‚РµР±СЏ РІ С‡СѓРІСЃС‚РІРѕ.
 };
 
 // *************************************************************************
@@ -69,7 +69,7 @@ INSTANCE Info_Tpl_13_WichtigePersonen(C_INFO)
 	condition	= Info_Tpl_13_WichtigePersonen_Condition;
 	information	= Info_Tpl_13_WichtigePersonen_Info;
 	permanent	= 1;
-	description = "Кто здесь командует?";
+	description = "РљС‚Рѕ Р·РґРµСЃСЊ РєРѕРјР°РЅРґСѓРµС‚?";
 };                       
 
 FUNC INT Info_Tpl_13_WichtigePersonen_Condition()
@@ -79,8 +79,8 @@ FUNC INT Info_Tpl_13_WichtigePersonen_Condition()
 
 FUNC VOID Info_Tpl_13_WichtigePersonen_Info()
 {
-	AI_Output(other,self,"Info_Tpl_13_WichtigePersonen_15_00"); //Кто здесь командует?
-	AI_Output(self,other,"Info_Tpl_13_WichtigePersonen_13_01"); //Наши Гуру и избранные Спящего. Спящий определяет нашу судьбу, и Гуру служат ему пророками.
+	AI_Output(other,self,"Info_Tpl_13_WichtigePersonen_15_00"); //РљС‚Рѕ Р·РґРµСЃСЊ РєРѕРјР°РЅРґСѓРµС‚?
+	AI_Output(self,other,"Info_Tpl_13_WichtigePersonen_13_01"); //РќР°С€Рё Р“СѓСЂСѓ Рё РёР·Р±СЂР°РЅРЅС‹Рµ РЎРїСЏС‰РµРіРѕ. РЎРїСЏС‰РёР№ РѕРїСЂРµРґРµР»СЏРµС‚ РЅР°С€Сѓ СЃСѓРґСЊР±Сѓ, Рё Р“СѓСЂСѓ СЃР»СѓР¶Р°С‚ РµРјСѓ РїСЂРѕСЂРѕРєР°РјРё.
 };
 
 // *************************************************************************
@@ -93,7 +93,7 @@ INSTANCE Info_Tpl_13_DasLager(C_INFO)
 	condition	= Info_Tpl_13_DasLager_Condition;
 	information	= Info_Tpl_13_DasLager_Info;
 	permanent	= 1;
-	description = "Мне хотелось бы заглянуть в храм Спящего...";
+	description = "РњРЅРµ С…РѕС‚РµР»РѕСЃСЊ Р±С‹ Р·Р°РіР»СЏРЅСѓС‚СЊ РІ С…СЂР°Рј РЎРїСЏС‰РµРіРѕ...";
 };                       
 
 FUNC INT Info_Tpl_13_DasLager_Condition()
@@ -105,8 +105,8 @@ FUNC INT Info_Tpl_13_DasLager_Condition()
 };
 FUNC VOID Info_Tpl_13_DasLager_Info()
 {
-	AI_Output(other,self,"Info_Tpl_13_DasLager_15_00"); //Мне хотелось бы заглянуть в храм Спящего...
-	AI_Output(self,other,"Info_Tpl_13_DasLager_13_01"); //И думать забудь об этом! Неверующий в Храме! Пока ты не посвятишь себя службе Спящему, ты не сможешь переступить порог этого места!
+	AI_Output(other,self,"Info_Tpl_13_DasLager_15_00"); //РњРЅРµ С…РѕС‚РµР»РѕСЃСЊ Р±С‹ Р·Р°РіР»СЏРЅСѓС‚СЊ РІ С…СЂР°Рј РЎРїСЏС‰РµРіРѕ...
+	AI_Output(self,other,"Info_Tpl_13_DasLager_13_01"); //Р РґСѓРјР°С‚СЊ Р·Р°Р±СѓРґСЊ РѕР± СЌС‚РѕРј! РќРµРІРµСЂСѓСЋС‰РёР№ РІ РҐСЂР°РјРµ! РџРѕРєР° С‚С‹ РЅРµ РїРѕСЃРІСЏС‚РёС€СЊ СЃРµР±СЏ СЃР»СѓР¶Р±Рµ РЎРїСЏС‰РµРјСѓ, С‚С‹ РЅРµ СЃРјРѕР¶РµС€СЊ РїРµСЂРµСЃС‚СѓРїРёС‚СЊ РїРѕСЂРѕРі СЌС‚РѕРіРѕ РјРµСЃС‚Р°!
 };
 
 // *************************************************************************
@@ -119,7 +119,7 @@ INSTANCE Info_Tpl_13_DieLage(C_INFO) // E1
 	condition	= Info_Tpl_13_DieLage_Condition;
 	information	= Info_Tpl_13_DieLage_Info;
 	permanent	= 1;
-	description = "Как дела?";
+	description = "РљР°Рє РґРµР»Р°?";
 };                       
 
 FUNC INT Info_Tpl_13_DieLage_Condition()
@@ -131,10 +131,10 @@ FUNC INT Info_Tpl_13_DieLage_Condition()
 };
 FUNC VOID Info_Tpl_13_DieLage_Info()
 {
-	AI_Output(other,self,"Info_Tpl_13_DieLage_15_00"); //Как дела?
-	AI_Output(self,other,"Info_Tpl_13_DieLage_13_01"); //С тех пор как я стал одним из избранных защитников веры, я чувствую себя, как никогда раньше.
-	AI_Output(other,self,"Info_Tpl_13_DieLage_15_02"); //Звучит занятно...
-	AI_Output(self,other,"Info_Tpl_13_DieLage_13_03"); //Ты неверующий. Тебе не понять.
+	AI_Output(other,self,"Info_Tpl_13_DieLage_15_00"); //РљР°Рє РґРµР»Р°?
+	AI_Output(self,other,"Info_Tpl_13_DieLage_13_01"); //РЎ С‚РµС… РїРѕСЂ РєР°Рє СЏ СЃС‚Р°Р» РѕРґРЅРёРј РёР· РёР·Р±СЂР°РЅРЅС‹С… Р·Р°С‰РёС‚РЅРёРєРѕРІ РІРµСЂС‹, СЏ С‡СѓРІСЃС‚РІСѓСЋ СЃРµР±СЏ, РєР°Рє РЅРёРєРѕРіРґР° СЂР°РЅСЊС€Рµ.
+	AI_Output(other,self,"Info_Tpl_13_DieLage_15_02"); //Р—РІСѓС‡РёС‚ Р·Р°РЅСЏС‚РЅРѕ...
+	AI_Output(self,other,"Info_Tpl_13_DieLage_13_03"); //РўС‹ РЅРµРІРµСЂСѓСЋС‰РёР№. РўРµР±Рµ РЅРµ РїРѕРЅСЏС‚СЊ.
 };
 	
 // *************************************************************************

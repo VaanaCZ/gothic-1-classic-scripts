@@ -33,7 +33,7 @@ INSTANCE DIA_Sfb_1001_Hello(C_INFO)
 	condition	= DIA_Sfb_1001_Hello_Condition;
 	information	= DIA_Sfb_1001_Hello_Info;
 	permanent	= 1;
-	description = "Как дела на шахте?";
+	description = "РљР°Рє РґРµР»Р° РЅР° С€Р°С…С‚Рµ?";
 };                       
 
 FUNC INT DIA_Sfb_1001_Hello_Condition()
@@ -43,7 +43,7 @@ FUNC INT DIA_Sfb_1001_Hello_Condition()
 
 FUNC VOID DIA_Sfb_1001_Hello_Info()
 {	
-	AI_Output (other, self,"DIA_Sfb_1001_Hello_15_00"); //Как дела на шахте?
-	AI_Output (self, other,"DIA_Sfb_1001_Hello_02_01"); //Самое сложное позади. Еще пара недель, и у нас будет достаточно руды.
+	AI_Output (other, self,"DIA_Sfb_1001_Hello_15_00"); //РљР°Рє РґРµР»Р° РЅР° С€Р°С…С‚Рµ?
+	AI_Output (self, other,"DIA_Sfb_1001_Hello_02_01"); //РЎР°РјРѕРµ СЃР»РѕР¶РЅРѕРµ РїРѕР·Р°РґРё. Р•С‰Рµ РїР°СЂР° РЅРµРґРµР»СЊ, Рё Сѓ РЅР°СЃ Р±СѓРґРµС‚ РґРѕСЃС‚Р°С‚РѕС‡РЅРѕ СЂСѓРґС‹.
 	AI_StopProcessInfos	(self);
 };

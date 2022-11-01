@@ -33,7 +33,7 @@ instance DIA_Torlof_Hallo (C_INFO)
 	condition	= DIA_Torlof_Hallo_Condition;
 	information	= DIA_Torlof_Hallo_Info;
 	permanent	= 0;
-	description = "Как тебя зовут?";
+	description = "РљР°Рє С‚РµР±СЏ Р·РѕРІСѓС‚?";
 };                       
 
 FUNC int DIA_Torlof_Hallo_Condition()
@@ -43,11 +43,11 @@ FUNC int DIA_Torlof_Hallo_Condition()
 
 FUNC VOID  DIA_Torlof_Hallo_Info()
 {
-	AI_Output (other, self,"DIA_Torlof_Hallo_15_00"); //Как тебя зовут?
-	AI_Output (self, other,"DIA_Torlof_Hallo_04_01"); //Меня зовут Торлоф.
-	AI_Output (self, other,"DIA_Torlof_Hallo_04_02"); //Я служил старшим помощником на военном корабле и принял участие в мятеже.
-	AI_Output (self, other,"DIA_Torlof_Hallo_04_03"); //Ничего из этой затеи не вышло. Большая часть команды оказалась на стороне капитана.
-	AI_Output (self, other,"DIA_Torlof_Hallo_04_04"); //Так я попал сюда.
+	AI_Output (other, self,"DIA_Torlof_Hallo_15_00"); //РљР°Рє С‚РµР±СЏ Р·РѕРІСѓС‚?
+	AI_Output (self, other,"DIA_Torlof_Hallo_04_01"); //РњРµРЅСЏ Р·РѕРІСѓС‚ РўРѕСЂР»РѕС„.
+	AI_Output (self, other,"DIA_Torlof_Hallo_04_02"); //РЇ СЃР»СѓР¶РёР» СЃС‚Р°СЂС€РёРј РїРѕРјРѕС‰РЅРёРєРѕРј РЅР° РІРѕРµРЅРЅРѕРј РєРѕСЂР°Р±Р»Рµ Рё РїСЂРёРЅСЏР» СѓС‡Р°СЃС‚РёРµ РІ РјСЏС‚РµР¶Рµ.
+	AI_Output (self, other,"DIA_Torlof_Hallo_04_03"); //РќРёС‡РµРіРѕ РёР· СЌС‚РѕР№ Р·Р°С‚РµРё РЅРµ РІС‹С€Р»Рѕ. Р‘РѕР»СЊС€Р°СЏ С‡Р°СЃС‚СЊ РєРѕРјР°РЅРґС‹ РѕРєР°Р·Р°Р»Р°СЃСЊ РЅР° СЃС‚РѕСЂРѕРЅРµ РєР°РїРёС‚Р°РЅР°.
+	AI_Output (self, other,"DIA_Torlof_Hallo_04_04"); //РўР°Рє СЏ РїРѕРїР°Р» СЃСЋРґР°.
 };
 
 // ********************************
@@ -61,7 +61,7 @@ instance DIA_Torlof_Mitmachen (C_INFO)
 	condition	= DIA_Torlof_Mitmachen_Condition;
 	information	= DIA_Torlof_Mitmachen_Info;
 	permanent	= 1;
-	description = "Я хочу присоединиться к вам!";
+	description = "РЇ С…РѕС‡Сѓ РїСЂРёСЃРѕРµРґРёРЅРёС‚СЊСЃСЏ Рє РІР°Рј!";
 };                       
 
 FUNC int DIA_Torlof_Mitmachen_Condition()
@@ -75,13 +75,13 @@ FUNC int DIA_Torlof_Mitmachen_Condition()
 
 FUNC VOID  DIA_Torlof_Mitmachen_Info()
 {
-	AI_Output (other, self,"DIA_Torlof_Mitmachen_15_00"); //Я хочу присоединиться к вам!
-	AI_Output (self, other,"DIA_Torlof_Mitmachen_04_01"); //Ли не примет тебя в отряд, пока не узнает, чего ты стоишь.
-	AI_Output (self, other,"DIA_Torlof_Mitmachen_04_02"); //А до тех пор тебе лучше поддерживать хорошие отношения с Ларсом и его шайкой.
-	AI_Output (self, other,"DIA_Torlof_Mitmachen_04_03"); //Если нужен совет, я скажу тебе вот что: добудь что-нибудь важное из Старого Лагеря или Старой Шахты.
-	AI_Output (self, other,"DIA_Torlof_Mitmachen_04_04"); //Как только эти парни поймут, что ты тоже против Гомеза, проблем у тебя станет значительно меньше.
-	AI_Output (other, self,"DIA_Torlof_Mitmachen_15_05"); //И как это провернуть?
-	AI_Output (self, other,"DIA_Torlof_Mitmachen_04_06"); //Сначала тебе придется завоевать их ДОВЕРИЕ - и только потом ограбить.
+	AI_Output (other, self,"DIA_Torlof_Mitmachen_15_00"); //РЇ С…РѕС‡Сѓ РїСЂРёСЃРѕРµРґРёРЅРёС‚СЊСЃСЏ Рє РІР°Рј!
+	AI_Output (self, other,"DIA_Torlof_Mitmachen_04_01"); //Р›Рё РЅРµ РїСЂРёРјРµС‚ С‚РµР±СЏ РІ РѕС‚СЂСЏРґ, РїРѕРєР° РЅРµ СѓР·РЅР°РµС‚, С‡РµРіРѕ С‚С‹ СЃС‚РѕРёС€СЊ.
+	AI_Output (self, other,"DIA_Torlof_Mitmachen_04_02"); //Рђ РґРѕ С‚РµС… РїРѕСЂ С‚РµР±Рµ Р»СѓС‡С€Рµ РїРѕРґРґРµСЂР¶РёРІР°С‚СЊ С…РѕСЂРѕС€РёРµ РѕС‚РЅРѕС€РµРЅРёСЏ СЃ Р›Р°СЂСЃРѕРј Рё РµРіРѕ С€Р°Р№РєРѕР№.
+	AI_Output (self, other,"DIA_Torlof_Mitmachen_04_03"); //Р•СЃР»Рё РЅСѓР¶РµРЅ СЃРѕРІРµС‚, СЏ СЃРєР°Р¶Сѓ С‚РµР±Рµ РІРѕС‚ С‡С‚Рѕ: РґРѕР±СѓРґСЊ С‡С‚Рѕ-РЅРёР±СѓРґСЊ РІР°Р¶РЅРѕРµ РёР· РЎС‚Р°СЂРѕРіРѕ Р›Р°РіРµСЂСЏ РёР»Рё РЎС‚Р°СЂРѕР№ РЁР°С…С‚С‹.
+	AI_Output (self, other,"DIA_Torlof_Mitmachen_04_04"); //РљР°Рє С‚РѕР»СЊРєРѕ СЌС‚Рё РїР°СЂРЅРё РїРѕР№РјСѓС‚, С‡С‚Рѕ С‚С‹ С‚РѕР¶Рµ РїСЂРѕС‚РёРІ Р“РѕРјРµР·Р°, РїСЂРѕР±Р»РµРј Сѓ С‚РµР±СЏ СЃС‚Р°РЅРµС‚ Р·РЅР°С‡РёС‚РµР»СЊРЅРѕ РјРµРЅСЊС€Рµ.
+	AI_Output (other, self,"DIA_Torlof_Mitmachen_15_05"); //Р РєР°Рє СЌС‚Рѕ РїСЂРѕРІРµСЂРЅСѓС‚СЊ?
+	AI_Output (self, other,"DIA_Torlof_Mitmachen_04_06"); //РЎРЅР°С‡Р°Р»Р° С‚РµР±Рµ РїСЂРёРґРµС‚СЃСЏ Р·Р°РІРѕРµРІР°С‚СЊ РёС… Р”РћР’Р•Р РР• - Рё С‚РѕР»СЊРєРѕ РїРѕС‚РѕРј РѕРіСЂР°Р±РёС‚СЊ.
 };
 
 /*
@@ -97,7 +97,7 @@ instance DIA_Torlof_PERM (C_INFO)
 	condition	= DIA_Torlof_PERM_Condition;
 	information	= DIA_Torlof_PERM_Info;
 	permanent	= 1;
-	description = "Was kannst du mir ьber dieses Lager sagen?";
+	description = "Was kannst du mir СЊber dieses Lager sagen?";
 };                       
 
 FUNC int DIA_Torlof_PERM_Condition()
@@ -107,9 +107,9 @@ FUNC int DIA_Torlof_PERM_Condition()
 
 FUNC VOID  DIA_Torlof_PERM_Info()
 {
-	AI_Output (other, self,"DIA_Torlof_PERM_15_00"); //Was kannst du mir ьber dieses Lager sagen?
+	AI_Output (other, self,"DIA_Torlof_PERM_15_00"); //Was kannst du mir СЊber dieses Lager sagen?
 	AI_Output (self, other,"DIA_Torlof_PERM_04_01"); //Ist wie auf'm Piratenschiff, Junge. Solange ab und zu ein fetter Fischzug gegen Gomez drin ist, sind die Banditen zufrieden.
-	AI_Output (self, other,"DIA_Torlof_PERM_04_02"); //Wenn sie kein Erz mehr haben, um sich in der Kneipe vollaufen zu lassen, gibt's ne Menge Schlдgereien.
+	AI_Output (self, other,"DIA_Torlof_PERM_04_02"); //Wenn sie kein Erz mehr haben, um sich in der Kneipe vollaufen zu lassen, gibt's ne Menge SchlРґgereien.
 };
 
 */

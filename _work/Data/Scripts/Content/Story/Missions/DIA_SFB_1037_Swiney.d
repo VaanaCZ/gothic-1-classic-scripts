@@ -33,7 +33,7 @@ INSTANCE Info_Swiney_Hello(C_INFO)
 	condition	= Info_Swiney_Hello_Condition;
 	information	= Info_Swiney_Hello_Info;
 	permanent	= 0;
-	description = "Как тебя зовут?";
+	description = "РљР°Рє С‚РµР±СЏ Р·РѕРІСѓС‚?";
 };                       
 
 FUNC INT Info_Swiney_Hello_Condition()
@@ -43,13 +43,13 @@ FUNC INT Info_Swiney_Hello_Condition()
 
 FUNC VOID Info_Swiney_Hello_Info()
 {	
-	AI_Output (other, self,"Info_Swiney_Hello_15_00"); //Кто ты?
-	AI_Output (self, other,"Info_Swiney_Hello_09_01"); //Я лучший специалист-проходчик в этой чертовой колонии, мой мальчик.
-	AI_Output (self, other,"Info_Swiney_Hello_09_02"); //Только благодаря мне половина парней там, в шахте, не погибла под завалами. Они слишком глупы, чтобы знать, где не стоит размахивать киркой.
+	AI_Output (other, self,"Info_Swiney_Hello_15_00"); //РљС‚Рѕ С‚С‹?
+	AI_Output (self, other,"Info_Swiney_Hello_09_01"); //РЇ Р»СѓС‡С€РёР№ СЃРїРµС†РёР°Р»РёСЃС‚-РїСЂРѕС…РѕРґС‡РёРє РІ СЌС‚РѕР№ С‡РµСЂС‚РѕРІРѕР№ РєРѕР»РѕРЅРёРё, РјРѕР№ РјР°Р»СЊС‡РёРє.
+	AI_Output (self, other,"Info_Swiney_Hello_09_02"); //РўРѕР»СЊРєРѕ Р±Р»Р°РіРѕРґР°СЂСЏ РјРЅРµ РїРѕР»РѕРІРёРЅР° РїР°СЂРЅРµР№ С‚Р°Рј, РІ С€Р°С…С‚Рµ, РЅРµ РїРѕРіРёР±Р»Р° РїРѕРґ Р·Р°РІР°Р»Р°РјРё. РћРЅРё СЃР»РёС€РєРѕРј РіР»СѓРїС‹, С‡С‚РѕР±С‹ Р·РЅР°С‚СЊ, РіРґРµ РЅРµ СЃС‚РѕРёС‚ СЂР°Р·РјР°С…РёРІР°С‚СЊ РєРёСЂРєРѕР№.
 };
 
 // ************************************************************
-// 						Schьrfer
+// 						SchСЊrfer
 // ************************************************************
 
 INSTANCE Info_Swiney_Schuerfer(C_INFO)
@@ -59,7 +59,7 @@ INSTANCE Info_Swiney_Schuerfer(C_INFO)
 	condition	= Info_Swiney_Schuerfer_Condition;
 	information	= Info_Swiney_Schuerfer_Info;
 	permanent	= 0;
-	description = "Я хочу стать рудокопом!";
+	description = "РЇ С…РѕС‡Сѓ СЃС‚Р°С‚СЊ СЂСѓРґРѕРєРѕРїРѕРј!";
 };                       
 
 FUNC INT Info_Swiney_Schuerfer_Condition()
@@ -72,22 +72,22 @@ FUNC INT Info_Swiney_Schuerfer_Condition()
 
 FUNC VOID Info_Swiney_Schuerfer_Info()
 {	
-	AI_Output (other, self,"Info_Swiney_Schuerfer_15_00"); //Я хочу стать рудокопом!
-	AI_Output (self, other,"Info_Swiney_Schuerfer_09_01"); //В самом деле? Только не думай, что это такое уж теплое местечко. Три порции риса в день, остальные плюсы тебе придется искать самому.
-	AI_Output (self, other,"Info_Swiney_Schuerfer_09_02"); //Ты вообще знаешь, почему мы этим занимаемся? Мы делаем эту работу для того, чтобы однажды выйти на свободу.
-	AI_Output (self, other,"Info_Swiney_Schuerfer_09_03"); //Вся добытая руда собирается в одну большую железную гору. Раз в месяц каждый из рабочих получает по 50 кусков, чтобы оттянуться по полной.
-	AI_Output (self, other,"Info_Swiney_Schuerfer_09_04"); //Это основное, что тебе нужно знать.
-	AI_Output (self, other,"Info_Swiney_Schuerfer_09_05"); //У тебя есть хоть какой-нибудь опыт в такого рода делах?
+	AI_Output (other, self,"Info_Swiney_Schuerfer_15_00"); //РЇ С…РѕС‡Сѓ СЃС‚Р°С‚СЊ СЂСѓРґРѕРєРѕРїРѕРј!
+	AI_Output (self, other,"Info_Swiney_Schuerfer_09_01"); //Р’ СЃР°РјРѕРј РґРµР»Рµ? РўРѕР»СЊРєРѕ РЅРµ РґСѓРјР°Р№, С‡С‚Рѕ СЌС‚Рѕ С‚Р°РєРѕРµ СѓР¶ С‚РµРїР»РѕРµ РјРµСЃС‚РµС‡РєРѕ. РўСЂРё РїРѕСЂС†РёРё СЂРёСЃР° РІ РґРµРЅСЊ, РѕСЃС‚Р°Р»СЊРЅС‹Рµ РїР»СЋСЃС‹ С‚РµР±Рµ РїСЂРёРґРµС‚СЃСЏ РёСЃРєР°С‚СЊ СЃР°РјРѕРјСѓ.
+	AI_Output (self, other,"Info_Swiney_Schuerfer_09_02"); //РўС‹ РІРѕРѕР±С‰Рµ Р·РЅР°РµС€СЊ, РїРѕС‡РµРјСѓ РјС‹ СЌС‚РёРј Р·Р°РЅРёРјР°РµРјСЃСЏ? РњС‹ РґРµР»Р°РµРј СЌС‚Сѓ СЂР°Р±РѕС‚Сѓ РґР»СЏ С‚РѕРіРѕ, С‡С‚РѕР±С‹ РѕРґРЅР°Р¶РґС‹ РІС‹Р№С‚Рё РЅР° СЃРІРѕР±РѕРґСѓ.
+	AI_Output (self, other,"Info_Swiney_Schuerfer_09_03"); //Р’СЃСЏ РґРѕР±С‹С‚Р°СЏ СЂСѓРґР° СЃРѕР±РёСЂР°РµС‚СЃСЏ РІ РѕРґРЅСѓ Р±РѕР»СЊС€СѓСЋ Р¶РµР»РµР·РЅСѓСЋ РіРѕСЂСѓ. Р Р°Р· РІ РјРµСЃСЏС† РєР°Р¶РґС‹Р№ РёР· СЂР°Р±РѕС‡РёС… РїРѕР»СѓС‡Р°РµС‚ РїРѕ 50 РєСѓСЃРєРѕРІ, С‡С‚РѕР±С‹ РѕС‚С‚СЏРЅСѓС‚СЊСЃСЏ РїРѕ РїРѕР»РЅРѕР№.
+	AI_Output (self, other,"Info_Swiney_Schuerfer_09_04"); //Р­С‚Рѕ РѕСЃРЅРѕРІРЅРѕРµ, С‡С‚Рѕ С‚РµР±Рµ РЅСѓР¶РЅРѕ Р·РЅР°С‚СЊ.
+	AI_Output (self, other,"Info_Swiney_Schuerfer_09_05"); //РЈ С‚РµР±СЏ РµСЃС‚СЊ С…РѕС‚СЊ РєР°РєРѕР№-РЅРёР±СѓРґСЊ РѕРїС‹С‚ РІ С‚Р°РєРѕРіРѕ СЂРѕРґР° РґРµР»Р°С…?
 	
 	Info_ClearChoices(Info_Swiney_Schuerfer);
-	Info_AddChoice   (Info_Swiney_Schuerfer,"Нет.",Info_Swiney_Schuerfer_Nein);
-	Info_AddChoice	 (Info_Swiney_Schuerfer,"Да.",Info_Swiney_Schuerfer_Ja);
+	Info_AddChoice   (Info_Swiney_Schuerfer,"РќРµС‚.",Info_Swiney_Schuerfer_Nein);
+	Info_AddChoice	 (Info_Swiney_Schuerfer,"Р”Р°.",Info_Swiney_Schuerfer_Ja);
 };
 
 func void Info_Swiney_Schuerfer_Ja()
 {
-	AI_Output (other, self,"Info_Swiney_Schuerfer_Ja_15_00"); //Да.
-	AI_Output (self, other,"Info_Swiney_Schuerfer_Ja_09_01"); //Хорошо. Тогда ты сам знаешь, чего нужно остерегаться. Вот твоя рабочая одежда. Кирку тебе придется найти самому. Приятного отдыха!
+	AI_Output (other, self,"Info_Swiney_Schuerfer_Ja_15_00"); //Р”Р°.
+	AI_Output (self, other,"Info_Swiney_Schuerfer_Ja_09_01"); //РҐРѕСЂРѕС€Рѕ. РўРѕРіРґР° С‚С‹ СЃР°Рј Р·РЅР°РµС€СЊ, С‡РµРіРѕ РЅСѓР¶РЅРѕ РѕСЃС‚РµСЂРµРіР°С‚СЊСЃСЏ. Р’РѕС‚ С‚РІРѕСЏ СЂР°Р±РѕС‡Р°СЏ РѕРґРµР¶РґР°. РљРёСЂРєСѓ С‚РµР±Рµ РїСЂРёРґРµС‚СЃСЏ РЅР°Р№С‚Рё СЃР°РјРѕРјСѓ. РџСЂРёСЏС‚РЅРѕРіРѕ РѕС‚РґС‹С…Р°!
 	CreateInvItem (self, SFB_ARMOR_L);
 	B_GiveInvItems(self, hero, SFB_ARMOR_L, 1);
 	
@@ -96,11 +96,11 @@ func void Info_Swiney_Schuerfer_Ja()
 
 func void Info_Swiney_Schuerfer_Nein()
 {
-	AI_Output (other, self,"Info_Swiney_Schuerfer_Nein_15_00"); //Нет.
-	AI_Output (self, other,"Info_Swiney_Schuerfer_Nein_09_01"); //Разумеется, нет! Ну почему всегда я? Ладно. Слушай внимательно. Ты берешь рабочую одежду и надеваешь ее - прямо здесь.
-	AI_Output (self, other,"Info_Swiney_Schuerfer_Nein_09_02"); //Без этого ты останешься калекой на всю жизнь, если кусок породы свалится тебе, к примеру, на ногу. И пользы от тебя будет куда как меньше.
-	AI_Output (self, other,"Info_Swiney_Schuerfer_Nein_09_03"); //Здесь где-то неподалеку валялась кирка.
-	AI_Output (self, other,"Info_Swiney_Schuerfer_Nein_09_04"); //Правда, с ней ты много не наработаешь, так что...
+	AI_Output (other, self,"Info_Swiney_Schuerfer_Nein_15_00"); //РќРµС‚.
+	AI_Output (self, other,"Info_Swiney_Schuerfer_Nein_09_01"); //Р Р°Р·СѓРјРµРµС‚СЃСЏ, РЅРµС‚! РќСѓ РїРѕС‡РµРјСѓ РІСЃРµРіРґР° СЏ? Р›Р°РґРЅРѕ. РЎР»СѓС€Р°Р№ РІРЅРёРјР°С‚РµР»СЊРЅРѕ. РўС‹ Р±РµСЂРµС€СЊ СЂР°Р±РѕС‡СѓСЋ РѕРґРµР¶РґСѓ Рё РЅР°РґРµРІР°РµС€СЊ РµРµ - РїСЂСЏРјРѕ Р·РґРµСЃСЊ.
+	AI_Output (self, other,"Info_Swiney_Schuerfer_Nein_09_02"); //Р‘РµР· СЌС‚РѕРіРѕ С‚С‹ РѕСЃС‚Р°РЅРµС€СЊСЃСЏ РєР°Р»РµРєРѕР№ РЅР° РІСЃСЋ Р¶РёР·РЅСЊ, РµСЃР»Рё РєСѓСЃРѕРє РїРѕСЂРѕРґС‹ СЃРІР°Р»РёС‚СЃСЏ С‚РµР±Рµ, Рє РїСЂРёРјРµСЂСѓ, РЅР° РЅРѕРіСѓ. Р РїРѕР»СЊР·С‹ РѕС‚ С‚РµР±СЏ Р±СѓРґРµС‚ РєСѓРґР° РєР°Рє РјРµРЅСЊС€Рµ.
+	AI_Output (self, other,"Info_Swiney_Schuerfer_Nein_09_03"); //Р—РґРµСЃСЊ РіРґРµ-С‚Рѕ РЅРµРїРѕРґР°Р»РµРєСѓ РІР°Р»СЏР»Р°СЃСЊ РєРёСЂРєР°.
+	AI_Output (self, other,"Info_Swiney_Schuerfer_Nein_09_04"); //РџСЂР°РІРґР°, СЃ РЅРµР№ С‚С‹ РјРЅРѕРіРѕ РЅРµ РЅР°СЂР°Р±РѕС‚Р°РµС€СЊ, С‚Р°Рє С‡С‚Рѕ...
 	
 	CreateInvItem (self, SFB_ARMOR_L);
 	B_GiveInvItems(self, hero, SFB_ARMOR_L, 1);
@@ -119,7 +119,7 @@ INSTANCE Info_Swiney_PERM(C_INFO)
 	condition	= Info_Swiney_PERM_Condition;
 	information	= Info_Swiney_PERM_Info;
 	permanent	= 1;
-	description = "Сколько руды вы уже собрали?";
+	description = "РЎРєРѕР»СЊРєРѕ СЂСѓРґС‹ РІС‹ СѓР¶Рµ СЃРѕР±СЂР°Р»Рё?";
 };                       
 
 FUNC INT Info_Swiney_PERM_Condition()
@@ -132,8 +132,8 @@ FUNC INT Info_Swiney_PERM_Condition()
 
 FUNC VOID Info_Swiney_PERM_Info()
 {	
-	AI_Output (other, self,"Info_Swiney_PERM_15_00"); //Сколько руды вы уже собрали?
-	AI_Output (self, other,"Info_Swiney_PERM_09_01"); //Маги говорят, что нужно еще совсем немного. Сходи в Новый Лагерь и посмотри на железную гору.
+	AI_Output (other, self,"Info_Swiney_PERM_15_00"); //РЎРєРѕР»СЊРєРѕ СЂСѓРґС‹ РІС‹ СѓР¶Рµ СЃРѕР±СЂР°Р»Рё?
+	AI_Output (self, other,"Info_Swiney_PERM_09_01"); //РњР°РіРё РіРѕРІРѕСЂСЏС‚, С‡С‚Рѕ РЅСѓР¶РЅРѕ РµС‰Рµ СЃРѕРІСЃРµРј РЅРµРјРЅРѕРіРѕ. РЎС…РѕРґРё РІ РќРѕРІС‹Р№ Р›Р°РіРµСЂСЊ Рё РїРѕСЃРјРѕС‚СЂРё РЅР° Р¶РµР»РµР·РЅСѓСЋ РіРѕСЂСѓ.
 	AI_StopProcessInfos	(self);
 };
 

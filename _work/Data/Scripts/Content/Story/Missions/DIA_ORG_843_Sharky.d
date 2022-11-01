@@ -32,7 +32,7 @@ instance  Org_843_Sharky_Fisk (C_INFO)
 	condition		= Org_843_Sharky_Fisk_Condition;
 	information		= Org_843_Sharky_Fisk_Info;
 	permanent		= 0;
-	description		= "Фиску из Старого Лагеря нужен новый компаньон."; 
+	description		= "Р¤РёСЃРєСѓ РёР· РЎС‚Р°СЂРѕРіРѕ Р›Р°РіРµСЂСЏ РЅСѓР¶РµРЅ РЅРѕРІС‹Р№ РєРѕРјРїР°РЅСЊРѕРЅ."; 
 	trade 			= 1;
 };
 
@@ -46,10 +46,10 @@ FUNC int  Org_843_Sharky_Fisk_Condition()
 };
 FUNC void  Org_843_Sharky_Fisk_Info()
 {
-	AI_Output (other, self,"Org_843_Sharky_Fisk_Info_15_00"); //Фиску из Старого Лагеря нужен новый компаньон.
-	AI_Output (self, other,"Org_843_Sharky_Fisk_Info_10_01"); //А почему ты рассказываешь об этом мне?
-	AI_Output (other, self,"Org_843_Sharky_Fisk_Info_15_02"); //Думал, что ты захочешь получить немного руды.
-	AI_Output (self, other,"Org_843_Sharky_Fisk_Info_10_03"); //Почему бы и нет... Передай Фиску, что следующие несколько дней он может рассчитывать на меня.
+	AI_Output (other, self,"Org_843_Sharky_Fisk_Info_15_00"); //Р¤РёСЃРєСѓ РёР· РЎС‚Р°СЂРѕРіРѕ Р›Р°РіРµСЂСЏ РЅСѓР¶РµРЅ РЅРѕРІС‹Р№ РєРѕРјРїР°РЅСЊРѕРЅ.
+	AI_Output (self, other,"Org_843_Sharky_Fisk_Info_10_01"); //Рђ РїРѕС‡РµРјСѓ С‚С‹ СЂР°СЃСЃРєР°Р·С‹РІР°РµС€СЊ РѕР± СЌС‚РѕРј РјРЅРµ?
+	AI_Output (other, self,"Org_843_Sharky_Fisk_Info_15_02"); //Р”СѓРјР°Р», С‡С‚Рѕ С‚С‹ Р·Р°С…РѕС‡РµС€СЊ РїРѕР»СѓС‡РёС‚СЊ РЅРµРјРЅРѕРіРѕ СЂСѓРґС‹.
+	AI_Output (self, other,"Org_843_Sharky_Fisk_Info_10_03"); //РџРѕС‡РµРјСѓ Р±С‹ Рё РЅРµС‚... РџРµСЂРµРґР°Р№ Р¤РёСЃРєСѓ, С‡С‚Рѕ СЃР»РµРґСѓСЋС‰РёРµ РЅРµСЃРєРѕР»СЊРєРѕ РґРЅРµР№ РѕРЅ РјРѕР¶РµС‚ СЂР°СЃСЃС‡РёС‚С‹РІР°С‚СЊ РЅР° РјРµРЅСЏ.
 };  
 
 
@@ -64,7 +64,7 @@ instance  Org_843_Sharky_TRADE (C_INFO)
 	information		= Org_843_Sharky_TRADE_Info;
 	important		= 0;
 	permanent		= 1;
-	description		= "Мне кое-что нужно..."; 
+	description		= "РњРЅРµ РєРѕРµ-С‡С‚Рѕ РЅСѓР¶РЅРѕ..."; 
 	trade 			= 1;
 };
 
@@ -78,11 +78,11 @@ FUNC int  Org_843_Sharky_TRADE_Condition()
 };
 FUNC void  Org_843_Sharky_TRADE_Info()
 {
-	AI_Output (other, self,"Org_843_Sharky_TRADE_Info_15_01"); //Мне кое-что нужно...
+	AI_Output (other, self,"Org_843_Sharky_TRADE_Info_15_01"); //РњРЅРµ РєРѕРµ-С‡С‚Рѕ РЅСѓР¶РЅРѕ...
 };  
 
 /*------------------------------------------------------------------------
-							TRADE BEGRЬЯUNG 								
+							TRADE BEGRР¬РЇUNG 								
 ------------------------------------------------------------------------*/
 
 instance  Org_843_Sharky_GREET (C_INFO) 
@@ -92,7 +92,7 @@ instance  Org_843_Sharky_GREET (C_INFO)
 	information		= Org_843_Sharky_GREET_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Эй, как дела?"; 
+	description		= "Р­Р№, РєР°Рє РґРµР»Р°?"; 
 };
 
 FUNC int  Org_843_Sharky_GREET_Condition()
@@ -103,10 +103,10 @@ FUNC int  Org_843_Sharky_GREET_Condition()
 
 FUNC void  Org_843_Sharky_GREET_Info()
 {
-	AI_Output		(other, self,"Org_843_Sharky_GREET_Info_15_01"); //Эй, как дела?
-	AI_Output		(self, other,"Org_843_Sharky_GREET_Info_10_02"); //Хочешь купить что-нибудь?
+	AI_Output		(other, self,"Org_843_Sharky_GREET_Info_15_01"); //Р­Р№, РєР°Рє РґРµР»Р°?
+	AI_Output		(self, other,"Org_843_Sharky_GREET_Info_10_02"); //РҐРѕС‡РµС€СЊ РєСѓРїРёС‚СЊ С‡С‚Рѕ-РЅРёР±СѓРґСЊ?
 	Log_CreateTopic (GE_TraderNC,LOG_NOTE);
-	B_LogEntry		(GE_TraderNC,"Вор Шарки занимается оружием и другими товарами. Обычно он шатается по Новому Лагерю."); 
+	B_LogEntry		(GE_TraderNC,"Р’РѕСЂ РЁР°СЂРєРё Р·Р°РЅРёРјР°РµС‚СЃСЏ РѕСЂСѓР¶РёРµРј Рё РґСЂСѓРіРёРјРё С‚РѕРІР°СЂР°РјРё. РћР±С‹С‡РЅРѕ РѕРЅ С€Р°С‚Р°РµС‚СЃСЏ РїРѕ РќРѕРІРѕРјСѓ Р›Р°РіРµСЂСЋ."); 
 };
 
 

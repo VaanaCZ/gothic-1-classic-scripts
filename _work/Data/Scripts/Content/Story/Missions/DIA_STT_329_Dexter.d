@@ -23,7 +23,7 @@ FUNC VOID DIA_Dexter_Exit_Info()
 };
 
 // **************************************************
-// 					Erste Begrьssung
+// 					Erste BegrСЊssung
 // **************************************************
 
 INSTANCE DIA_Dexter_First (C_INFO)
@@ -46,7 +46,7 @@ FUNC INT DIA_Dexter_First_Condition()
 
 FUNC VOID DIA_Dexter_First_Info()
 {
-	AI_Output (self,other,"DIA_Dexter_IAmNew_10_00"); //Эй, ты! У меня есть болотник и эликсиры из Лагеря Сектантов. Интересуешься?
+	AI_Output (self,other,"DIA_Dexter_IAmNew_10_00"); //Р­Р№, С‚С‹! РЈ РјРµРЅСЏ РµСЃС‚СЊ Р±РѕР»РѕС‚РЅРёРє Рё СЌР»РёРєСЃРёСЂС‹ РёР· Р›Р°РіРµСЂСЏ РЎРµРєС‚Р°РЅС‚РѕРІ. РРЅС‚РµСЂРµСЃСѓРµС€СЊСЃСЏ?
 };
 
 // **************************************************
@@ -60,7 +60,7 @@ INSTANCE DIA_Dexter_Kraut (C_INFO)
 	condition	= DIA_Dexter_Kraut_Condition;
 	information	= DIA_Dexter_Kraut_Info;
 	permanent	= 0;
-	description	= "Что такое болотник?";
+	description	= "Р§С‚Рѕ С‚Р°РєРѕРµ Р±РѕР»РѕС‚РЅРёРє?";
 };                       
 
 FUNC INT DIA_Dexter_Kraut_Condition()
@@ -70,8 +70,8 @@ FUNC INT DIA_Dexter_Kraut_Condition()
 
 FUNC VOID DIA_Dexter_Kraut_Info()
 {
-	AI_Output (other,self,"DIA_Dexter_Kraut_15_00"); //Что такое болотник?
-	AI_Output (self,other,"DIA_Dexter_Kraut_10_01"); //Ты новенький, да? Болотник курят, когда хотят немного расслабиться.
+	AI_Output (other,self,"DIA_Dexter_Kraut_15_00"); //Р§С‚Рѕ С‚Р°РєРѕРµ Р±РѕР»РѕС‚РЅРёРє?
+	AI_Output (self,other,"DIA_Dexter_Kraut_10_01"); //РўС‹ РЅРѕРІРµРЅСЊРєРёР№, РґР°? Р‘РѕР»РѕС‚РЅРёРє РєСѓСЂСЏС‚, РєРѕРіРґР° С…РѕС‚СЏС‚ РЅРµРјРЅРѕРіРѕ СЂР°СЃСЃР»Р°Р±РёС‚СЊСЃСЏ.
 };
 
 // **************************************************
@@ -87,7 +87,7 @@ INSTANCE DIA_Dexter_Trade (C_INFO)
 	condition	= DIA_Dexter_Trade_Condition;
 	information	= DIA_Dexter_Trade_Info;
 	permanent	= 1;
-	description	= "Покажи мне, что у тебя есть.";
+	description	= "РџРѕРєР°Р¶Рё РјРЅРµ, С‡С‚Рѕ Сѓ С‚РµР±СЏ РµСЃС‚СЊ.";
 	Trade		= 1;
 };                       
 
@@ -98,13 +98,13 @@ FUNC INT DIA_Dexter_Trade_Condition()
 
 FUNC VOID DIA_Dexter_Trade_Info()
 {
-	AI_Output (other,self,"DIA_Dexter_Trade_15_00"); //Покажи мне, что у тебя есть.
-	AI_Output (self,other,"DIA_Dexter_Trade_10_01"); //Все самое лучшее...
+	AI_Output (other,self,"DIA_Dexter_Trade_15_00"); //РџРѕРєР°Р¶Рё РјРЅРµ, С‡С‚Рѕ Сѓ С‚РµР±СЏ РµСЃС‚СЊ.
+	AI_Output (self,other,"DIA_Dexter_Trade_10_01"); //Р’СЃРµ СЃР°РјРѕРµ Р»СѓС‡С€РµРµ...
 	
 	if	(Dexter_Traded == FALSE)
 	{
 		Log_CreateTopic(GE_TraderOC, LOG_NOTE);
-		B_LogEntry(GE_TraderOC,"Призрак по имени Декстер торгует эликсирами и болотником от Лагеря Братства.");
+		B_LogEntry(GE_TraderOC,"РџСЂРёР·СЂР°Рє РїРѕ РёРјРµРЅРё Р”РµРєСЃС‚РµСЂ С‚РѕСЂРіСѓРµС‚ СЌР»РёРєСЃРёСЂР°РјРё Рё Р±РѕР»РѕС‚РЅРёРєРѕРј РѕС‚ Р›Р°РіРµСЂСЏ Р‘СЂР°С‚СЃС‚РІР°.");
 	
 		Dexter_Traded = TRUE;
 	};
@@ -123,7 +123,7 @@ INSTANCE DIA_Dexter_JoinOC (C_INFO)
 	condition	= DIA_Dexter_JoinOC_Condition;
 	information	= DIA_Dexter_JoinOC_Info;
 	permanent	= 0;
-	description	= "Я хочу присоединиться к Лагерю - хочу стать Призраком.";
+	description	= "РЇ С…РѕС‡Сѓ РїСЂРёСЃРѕРµРґРёРЅРёС‚СЊСЃСЏ Рє Р›Р°РіРµСЂСЋ - С…РѕС‡Сѓ СЃС‚Р°С‚СЊ РџСЂРёР·СЂР°РєРѕРј.";
 };                       
 
 FUNC INT DIA_Dexter_JoinOC_Condition()
@@ -135,82 +135,82 @@ FUNC INT DIA_Dexter_JoinOC_Condition()
 };
 FUNC VOID DIA_Dexter_JoinOC_Info()
 {
-	AI_Output (other,self,"DIA_Dexter_JoinOC_15_00"); //Я хочу присоединиться к Лагерю - хочу стать Призраком.
-	AI_Output (self,other,"DIA_Dexter_JoinOC_10_01"); //Да? Хочешь доказать, что ты чего-то стоишь?
-	AI_Output (self,other,"DIA_Dexter_JoinOC_10_02"); //Хорошо. Есть одно дело. Если справишься, я замолвлю за тебя словечко перед Диего.
-	AI_Output (other,self,"DIA_Dexter_JoinOC_15_03"); //Какое дело?
-	AI_Output (self,other,"DIA_Dexter_JoinOC_10_04"); //В Лагере Сектантов есть один тип по имени Галом. Большая шишка - один из их Гуру.
-	AI_Output (self,other,"DIA_Dexter_JoinOC_10_05"); //Галом - алхимик. У него есть рецепт хорошего целебного эликсира.
-	AI_Output (self,other,"DIA_Dexter_JoinOC_10_06"); //Я хочу купить у него рецепт, чтобы самому делать такой эликсир.
-	AI_Output (self,other,"DIA_Dexter_JoinOC_10_07"); //Но для этого нужно как-то встретиться с Галомом.
-	AI_Output (other,self,"DIA_Dexter_JoinOC_15_08"); //Что я должен сделать?
-	AI_Output (self,other,"DIA_Dexter_JoinOC_10_09"); //Болотным придуркам постоянно нужны новые люди. Ты здесь новенький. Притворись, что хочешь присоединиться к ним.
-	AI_Output (self,other,"DIA_Dexter_JoinOC_10_10"); //Галом - один из Гуру. Он непременно захочет испытать новичка. Когда встретишься с ним, попробуй добыть рецепт.
-	AI_Output (self,other,"DIA_Dexter_JoinOC_10_11"); //Можешь купить его, можешь украсть - мне все равно, как ты его добудешь.
+	AI_Output (other,self,"DIA_Dexter_JoinOC_15_00"); //РЇ С…РѕС‡Сѓ РїСЂРёСЃРѕРµРґРёРЅРёС‚СЊСЃСЏ Рє Р›Р°РіРµСЂСЋ - С…РѕС‡Сѓ СЃС‚Р°С‚СЊ РџСЂРёР·СЂР°РєРѕРј.
+	AI_Output (self,other,"DIA_Dexter_JoinOC_10_01"); //Р”Р°? РҐРѕС‡РµС€СЊ РґРѕРєР°Р·Р°С‚СЊ, С‡С‚Рѕ С‚С‹ С‡РµРіРѕ-С‚Рѕ СЃС‚РѕРёС€СЊ?
+	AI_Output (self,other,"DIA_Dexter_JoinOC_10_02"); //РҐРѕСЂРѕС€Рѕ. Р•СЃС‚СЊ РѕРґРЅРѕ РґРµР»Рѕ. Р•СЃР»Рё СЃРїСЂР°РІРёС€СЊСЃСЏ, СЏ Р·Р°РјРѕР»РІР»СЋ Р·Р° С‚РµР±СЏ СЃР»РѕРІРµС‡РєРѕ РїРµСЂРµРґ Р”РёРµРіРѕ.
+	AI_Output (other,self,"DIA_Dexter_JoinOC_15_03"); //РљР°РєРѕРµ РґРµР»Рѕ?
+	AI_Output (self,other,"DIA_Dexter_JoinOC_10_04"); //Р’ Р›Р°РіРµСЂРµ РЎРµРєС‚Р°РЅС‚РѕРІ РµСЃС‚СЊ РѕРґРёРЅ С‚РёРї РїРѕ РёРјРµРЅРё Р“Р°Р»РѕРј. Р‘РѕР»СЊС€Р°СЏ С€РёС€РєР° - РѕРґРёРЅ РёР· РёС… Р“СѓСЂСѓ.
+	AI_Output (self,other,"DIA_Dexter_JoinOC_10_05"); //Р“Р°Р»РѕРј - Р°Р»С…РёРјРёРє. РЈ РЅРµРіРѕ РµСЃС‚СЊ СЂРµС†РµРїС‚ С…РѕСЂРѕС€РµРіРѕ С†РµР»РµР±РЅРѕРіРѕ СЌР»РёРєСЃРёСЂР°.
+	AI_Output (self,other,"DIA_Dexter_JoinOC_10_06"); //РЇ С…РѕС‡Сѓ РєСѓРїРёС‚СЊ Сѓ РЅРµРіРѕ СЂРµС†РµРїС‚, С‡С‚РѕР±С‹ СЃР°РјРѕРјСѓ РґРµР»Р°С‚СЊ С‚Р°РєРѕР№ СЌР»РёРєСЃРёСЂ.
+	AI_Output (self,other,"DIA_Dexter_JoinOC_10_07"); //РќРѕ РґР»СЏ СЌС‚РѕРіРѕ РЅСѓР¶РЅРѕ РєР°Рє-С‚Рѕ РІСЃС‚СЂРµС‚РёС‚СЊСЃСЏ СЃ Р“Р°Р»РѕРјРѕРј.
+	AI_Output (other,self,"DIA_Dexter_JoinOC_15_08"); //Р§С‚Рѕ СЏ РґРѕР»Р¶РµРЅ СЃРґРµР»Р°С‚СЊ?
+	AI_Output (self,other,"DIA_Dexter_JoinOC_10_09"); //Р‘РѕР»РѕС‚РЅС‹Рј РїСЂРёРґСѓСЂРєР°Рј РїРѕСЃС‚РѕСЏРЅРЅРѕ РЅСѓР¶РЅС‹ РЅРѕРІС‹Рµ Р»СЋРґРё. РўС‹ Р·РґРµСЃСЊ РЅРѕРІРµРЅСЊРєРёР№. РџСЂРёС‚РІРѕСЂРёСЃСЊ, С‡С‚Рѕ С…РѕС‡РµС€СЊ РїСЂРёСЃРѕРµРґРёРЅРёС‚СЊСЃСЏ Рє РЅРёРј.
+	AI_Output (self,other,"DIA_Dexter_JoinOC_10_10"); //Р“Р°Р»РѕРј - РѕРґРёРЅ РёР· Р“СѓСЂСѓ. РћРЅ РЅРµРїСЂРµРјРµРЅРЅРѕ Р·Р°С…РѕС‡РµС‚ РёСЃРїС‹С‚Р°С‚СЊ РЅРѕРІРёС‡РєР°. РљРѕРіРґР° РІСЃС‚СЂРµС‚РёС€СЊСЃСЏ СЃ РЅРёРј, РїРѕРїСЂРѕР±СѓР№ РґРѕР±С‹С‚СЊ СЂРµС†РµРїС‚.
+	AI_Output (self,other,"DIA_Dexter_JoinOC_10_11"); //РњРѕР¶РµС€СЊ РєСѓРїРёС‚СЊ РµРіРѕ, РјРѕР¶РµС€СЊ СѓРєСЂР°СЃС‚СЊ - РјРЅРµ РІСЃРµ СЂР°РІРЅРѕ, РєР°Рє С‚С‹ РµРіРѕ РґРѕР±СѓРґРµС€СЊ.
 
 	Info_ClearChoices(DIA_Dexter_JoinOC);
-	Info_AddChoice	 (DIA_Dexter_JoinOC,"Ладно, я попробую.",DIA_Dexter_JoinOC_Ok);
-	Info_AddChoice	 (DIA_Dexter_JoinOC,"Это должно быть непросто. Что я получу в итоге?",DIA_Dexter_JoinOC_HowMuch);
+	Info_AddChoice	 (DIA_Dexter_JoinOC,"Р›Р°РґРЅРѕ, СЏ РїРѕРїСЂРѕР±СѓСЋ.",DIA_Dexter_JoinOC_Ok);
+	Info_AddChoice	 (DIA_Dexter_JoinOC,"Р­С‚Рѕ РґРѕР»Р¶РЅРѕ Р±С‹С‚СЊ РЅРµРїСЂРѕСЃС‚Рѕ. Р§С‚Рѕ СЏ РїРѕР»СѓС‡Сѓ РІ РёС‚РѕРіРµ?",DIA_Dexter_JoinOC_HowMuch);
 };
 
 func void DIA_Dexter_JoinOC_Ok()
 {
-	AI_Output (other,self,"DIA_Dexter_JoinOC_Ok_15_00"); //Ладно, я попробую.
+	AI_Output (other,self,"DIA_Dexter_JoinOC_Ok_15_00"); //Р›Р°РґРЅРѕ, СЏ РїРѕРїСЂРѕР±СѓСЋ.
 	Dexter_GetKalomsRecipe = LOG_RUNNING;
 	
 	Log_CreateTopic (CH1_KalomsRecipe,LOG_MISSION);
 	Log_SetTopicStatus (CH1_KalomsRecipe,LOG_RUNNING);
-	B_LogEntry    (CH1_KalomsRecipe,"Призрак по имени Декстер, торгующий на рынке, поручил мне отправиться к Идолу Галому в Болотный Лагерь и принести ему рецепт.");
-	B_LogEntry    (CH1_KalomsRecipe,"Чтобы попасть туда, мне надо быть одним из союзников Болотного Лагеря. Так сказал Декстер.");
+	B_LogEntry    (CH1_KalomsRecipe,"РџСЂРёР·СЂР°Рє РїРѕ РёРјРµРЅРё Р”РµРєСЃС‚РµСЂ, С‚РѕСЂРіСѓСЋС‰РёР№ РЅР° СЂС‹РЅРєРµ, РїРѕСЂСѓС‡РёР» РјРЅРµ РѕС‚РїСЂР°РІРёС‚СЊСЃСЏ Рє РРґРѕР»Сѓ Р“Р°Р»РѕРјСѓ РІ Р‘РѕР»РѕС‚РЅС‹Р№ Р›Р°РіРµСЂСЊ Рё РїСЂРёРЅРµСЃС‚Рё РµРјСѓ СЂРµС†РµРїС‚.");
+	B_LogEntry    (CH1_KalomsRecipe,"Р§С‚РѕР±С‹ РїРѕРїР°СЃС‚СЊ С‚СѓРґР°, РјРЅРµ РЅР°РґРѕ Р±С‹С‚СЊ РѕРґРЅРёРј РёР· СЃРѕСЋР·РЅРёРєРѕРІ Р‘РѕР»РѕС‚РЅРѕРіРѕ Р›Р°РіРµСЂСЏ. РўР°Рє СЃРєР°Р·Р°Р» Р”РµРєСЃС‚РµСЂ.");
 	
 	Info_ClearChoices(DIA_Dexter_JoinOC);
 };
 
 func void DIA_Dexter_JoinOC_HowMuch()	
 {
-	AI_Output (other,self,"DIA_Dexter_JoinOC_HowMuch_15_00"); //Это должно быть непросто. Что я получу в итоге?
-	AI_Output (self,other,"DIA_Dexter_JoinOC_HowMuch_10_01"); //Однажды Диего спросит меня о тебе. Угадай, от чего будет зависить мой ответ.
+	AI_Output (other,self,"DIA_Dexter_JoinOC_HowMuch_15_00"); //Р­С‚Рѕ РґРѕР»Р¶РЅРѕ Р±С‹С‚СЊ РЅРµРїСЂРѕСЃС‚Рѕ. Р§С‚Рѕ СЏ РїРѕР»СѓС‡Сѓ РІ РёС‚РѕРіРµ?
+	AI_Output (self,other,"DIA_Dexter_JoinOC_HowMuch_10_01"); //РћРґРЅР°Р¶РґС‹ Р”РёРµРіРѕ СЃРїСЂРѕСЃРёС‚ РјРµРЅСЏ Рѕ С‚РµР±Рµ. РЈРіР°РґР°Р№, РѕС‚ С‡РµРіРѕ Р±СѓРґРµС‚ Р·Р°РІРёСЃРёС‚СЊ РјРѕР№ РѕС‚РІРµС‚.
 	
-	Info_AddChoice	 (DIA_Dexter_JoinOC,"Возможно, мне придется заплатить за рецепт.",DIA_Dexter_JoinOC_Advance);
+	Info_AddChoice	 (DIA_Dexter_JoinOC,"Р’РѕР·РјРѕР¶РЅРѕ, РјРЅРµ РїСЂРёРґРµС‚СЃСЏ Р·Р°РїР»Р°С‚РёС‚СЊ Р·Р° СЂРµС†РµРїС‚.",DIA_Dexter_JoinOC_Advance);
 };
 
 func void DIA_Dexter_JoinOC_Advance()
 {
-	AI_Output (other,self,"DIA_Dexter_JoinOC_Advance_15_00"); //Возможно, мне придется заплатить за рецепт. Как насчет небольшого аванса? Скажем, 50 кусков руды?
-	AI_Output (self,other,"DIA_Dexter_JoinOC_Advance_10_01"); //Забудь об этом.
+	AI_Output (other,self,"DIA_Dexter_JoinOC_Advance_15_00"); //Р’РѕР·РјРѕР¶РЅРѕ, РјРЅРµ РїСЂРёРґРµС‚СЃСЏ Р·Р°РїР»Р°С‚РёС‚СЊ Р·Р° СЂРµС†РµРїС‚. РљР°Рє РЅР°СЃС‡РµС‚ РЅРµР±РѕР»СЊС€РѕРіРѕ Р°РІР°РЅСЃР°? РЎРєР°Р¶РµРј, 50 РєСѓСЃРєРѕРІ СЂСѓРґС‹?
+	AI_Output (self,other,"DIA_Dexter_JoinOC_Advance_10_01"); //Р—Р°Р±СѓРґСЊ РѕР± СЌС‚РѕРј.
 	
-	Info_AddChoice	 (DIA_Dexter_JoinOC,"Без руды я не смогу добыть тебе этот рецепт!",DIA_Dexter_JoinOC_Threat);
+	Info_AddChoice	 (DIA_Dexter_JoinOC,"Р‘РµР· СЂСѓРґС‹ СЏ РЅРµ СЃРјРѕРіСѓ РґРѕР±С‹С‚СЊ С‚РµР±Рµ СЌС‚РѕС‚ СЂРµС†РµРїС‚!",DIA_Dexter_JoinOC_Threat);
 };
 
 func void DIA_Dexter_JoinOC_Threat()
 {
-	AI_Output (other,self,"DIA_Dexter_JoinOC_Threat_15_00"); //Без руды я не смогу добыть тебе этот рецепт!
-	AI_Output (self,other,"DIA_Dexter_JoinOC_Threat_10_01"); //Хорошо! О руде поговорим позже, когда рецепт уже будет у тебя.
+	AI_Output (other,self,"DIA_Dexter_JoinOC_Threat_15_00"); //Р‘РµР· СЂСѓРґС‹ СЏ РЅРµ СЃРјРѕРіСѓ РґРѕР±С‹С‚СЊ С‚РµР±Рµ СЌС‚РѕС‚ СЂРµС†РµРїС‚!
+	AI_Output (self,other,"DIA_Dexter_JoinOC_Threat_10_01"); //РҐРѕСЂРѕС€Рѕ! Рћ СЂСѓРґРµ РїРѕРіРѕРІРѕСЂРёРј РїРѕР·Р¶Рµ, РєРѕРіРґР° СЂРµС†РµРїС‚ СѓР¶Рµ Р±СѓРґРµС‚ Сѓ С‚РµР±СЏ.
 	
-	Info_AddChoice	 (DIA_Dexter_JoinOC,"Нет!",DIA_Dexter_JoinOC_OreNowOrElse);
+	Info_AddChoice	 (DIA_Dexter_JoinOC,"РќРµС‚!",DIA_Dexter_JoinOC_OreNowOrElse);
 };
 
 func void DIA_Dexter_JoinOC_OreNowOrElse()
 {
-	AI_Output (other,self,"DIA_Dexter_JoinOC_OreNowOrElse_15_00"); //Нет! Или ты даешь мне руду сейчас, или можешь сам искать свой рецепт!
-	AI_Output (self,other,"DIA_Dexter_JoinOC_OreNowOrElse_10_01"); //Знаешь, помимо тебя здесь есть много других новичков. Пожалуй, я поручу эту работу кому-нибудь из них...
+	AI_Output (other,self,"DIA_Dexter_JoinOC_OreNowOrElse_15_00"); //РќРµС‚! РР»Рё С‚С‹ РґР°РµС€СЊ РјРЅРµ СЂСѓРґСѓ СЃРµР№С‡Р°СЃ, РёР»Рё РјРѕР¶РµС€СЊ СЃР°Рј РёСЃРєР°С‚СЊ СЃРІРѕР№ СЂРµС†РµРїС‚!
+	AI_Output (self,other,"DIA_Dexter_JoinOC_OreNowOrElse_10_01"); //Р—РЅР°РµС€СЊ, РїРѕРјРёРјРѕ С‚РµР±СЏ Р·РґРµСЃСЊ РµСЃС‚СЊ РјРЅРѕРіРѕ РґСЂСѓРіРёС… РЅРѕРІРёС‡РєРѕРІ. РџРѕР¶Р°Р»СѓР№, СЏ РїРѕСЂСѓС‡Сѓ СЌС‚Сѓ СЂР°Р±РѕС‚Сѓ РєРѕРјСѓ-РЅРёР±СѓРґСЊ РёР· РЅРёС…...
 	
-	Info_AddChoice	 (DIA_Dexter_JoinOC,"Ладно! Забудем об этом.",DIA_Dexter_JoinOC_ForgetIt);
+	Info_AddChoice	 (DIA_Dexter_JoinOC,"Р›Р°РґРЅРѕ! Р—Р°Р±СѓРґРµРј РѕР± СЌС‚РѕРј.",DIA_Dexter_JoinOC_ForgetIt);
 };
 
 func void DIA_Dexter_JoinOC_ForgetIt()
 {
-	AI_Output (other,self,"DIA_Dexter_JoinOC_ForgetIt_15_00"); //Ладно! Забудем об этом.
-	AI_Output (self,other,"DIA_Dexter_JoinOC_ForgetIt_10_01"); //Погоди. Я просто хотел знать, как далеко ты сможешь зайти. 50 кусков руды - довольно большая сумма для новичка, ты не находишь?
-	AI_Output (other,self,"DIA_Dexter_JoinOC_ForgetIt_15_02"); //Звучит уже лучше.
-	AI_Output (self,other,"DIA_Dexter_JoinOC_ForgetIt_10_03"); //Ладно, ладно, у меня как раз есть 50 лишних кусков. Не подведи меня, малыш! 
+	AI_Output (other,self,"DIA_Dexter_JoinOC_ForgetIt_15_00"); //Р›Р°РґРЅРѕ! Р—Р°Р±СѓРґРµРј РѕР± СЌС‚РѕРј.
+	AI_Output (self,other,"DIA_Dexter_JoinOC_ForgetIt_10_01"); //РџРѕРіРѕРґРё. РЇ РїСЂРѕСЃС‚Рѕ С…РѕС‚РµР» Р·РЅР°С‚СЊ, РєР°Рє РґР°Р»РµРєРѕ С‚С‹ СЃРјРѕР¶РµС€СЊ Р·Р°Р№С‚Рё. 50 РєСѓСЃРєРѕРІ СЂСѓРґС‹ - РґРѕРІРѕР»СЊРЅРѕ Р±РѕР»СЊС€Р°СЏ СЃСѓРјРјР° РґР»СЏ РЅРѕРІРёС‡РєР°, С‚С‹ РЅРµ РЅР°С…РѕРґРёС€СЊ?
+	AI_Output (other,self,"DIA_Dexter_JoinOC_ForgetIt_15_02"); //Р—РІСѓС‡РёС‚ СѓР¶Рµ Р»СѓС‡С€Рµ.
+	AI_Output (self,other,"DIA_Dexter_JoinOC_ForgetIt_10_03"); //Р›Р°РґРЅРѕ, Р»Р°РґРЅРѕ, Сѓ РјРµРЅСЏ РєР°Рє СЂР°Р· РµСЃС‚СЊ 50 Р»РёС€РЅРёС… РєСѓСЃРєРѕРІ. РќРµ РїРѕРґРІРµРґРё РјРµРЅСЏ, РјР°Р»С‹С€! 
 	
 	Dexter_GetKalomsRecipe = LOG_RUNNING;
 	
 	Log_CreateTopic (CH1_KalomsRecipe,LOG_MISSION);
 	Log_SetTopicStatus (CH1_KalomsRecipe,LOG_RUNNING);
-	B_LogEntry    (CH1_KalomsRecipe,"Призрак по имени Декстер, торгующий на рынке, поручил мне отправиться к Идолу Галому в Болотный Лагерь и принести ему рецепт.");
-	B_LogEntry    (CH1_KalomsRecipe,"Чтобы попасть туда, мне надо быть одним из союзников Болотного Лагеря. Так сказал Декстер.");
+	B_LogEntry    (CH1_KalomsRecipe,"РџСЂРёР·СЂР°Рє РїРѕ РёРјРµРЅРё Р”РµРєСЃС‚РµСЂ, С‚РѕСЂРіСѓСЋС‰РёР№ РЅР° СЂС‹РЅРєРµ, РїРѕСЂСѓС‡РёР» РјРЅРµ РѕС‚РїСЂР°РІРёС‚СЊСЃСЏ Рє РРґРѕР»Сѓ Р“Р°Р»РѕРјСѓ РІ Р‘РѕР»РѕС‚РЅС‹Р№ Р›Р°РіРµСЂСЊ Рё РїСЂРёРЅРµСЃС‚Рё РµРјСѓ СЂРµС†РµРїС‚.");
+	B_LogEntry    (CH1_KalomsRecipe,"Р§С‚РѕР±С‹ РїРѕРїР°СЃС‚СЊ С‚СѓРґР°, РјРЅРµ РЅР°РґРѕ Р±С‹С‚СЊ РѕРґРЅРёРј РёР· СЃРѕСЋР·РЅРёРєРѕРІ Р‘РѕР»РѕС‚РЅРѕРіРѕ Р›Р°РіРµСЂСЏ. РўР°Рє СЃРєР°Р·Р°Р» Р”РµРєСЃС‚РµСЂ.");
 	
 	CreateInvItems(self, itminugget, 50);
 	B_GiveInvItems(self, other, itminugget, 50);
@@ -231,7 +231,7 @@ INSTANCE DIA_Dexter_WhereST (C_INFO)
 	condition	= DIA_Dexter_WhereST_Condition;
 	information	= DIA_Dexter_WhereST_Info;
 	permanent	= 1;
-	description	= "Где находится Лагерь Сектантов?";
+	description	= "Р“РґРµ РЅР°С…РѕРґРёС‚СЃСЏ Р›Р°РіРµСЂСЊ РЎРµРєС‚Р°РЅС‚РѕРІ?";
 };                       
 
 FUNC INT DIA_Dexter_WhereST_Condition()
@@ -244,20 +244,20 @@ FUNC INT DIA_Dexter_WhereST_Condition()
 
 FUNC VOID DIA_Dexter_WhereST_Info()
 {
-	AI_Output (other,self,"DIA_Dexter_WhereST_15_00"); //Где находится Лагерь Сектантов?
-	AI_Output (self,other,"DIA_Dexter_WhereST_10_01"); //Выходишь из Лагеря через южные ворота и идешь на восток. Тебе понадобится карта. 
+	AI_Output (other,self,"DIA_Dexter_WhereST_15_00"); //Р“РґРµ РЅР°С…РѕРґРёС‚СЃСЏ Р›Р°РіРµСЂСЊ РЎРµРєС‚Р°РЅС‚РѕРІ?
+	AI_Output (self,other,"DIA_Dexter_WhereST_10_01"); //Р’С‹С…РѕРґРёС€СЊ РёР· Р›Р°РіРµСЂСЏ С‡РµСЂРµР· СЋР¶РЅС‹Рµ РІРѕСЂРѕС‚Р° Рё РёРґРµС€СЊ РЅР° РІРѕСЃС‚РѕРє. РўРµР±Рµ РїРѕРЅР°РґРѕР±РёС‚СЃСЏ РєР°СЂС‚Р°. 
 	
-	if (Npc_HasItems(self,ItWrWorldmap) >0)														//Bjцrn
-		{																						//Bjцrn
-			AI_Output (self,other,"DIA_Dexter_WhereST_10_02"); //У меня как раз есть одна - за 50 кусков...
-		};																						//Bjцrn
+	if (Npc_HasItems(self,ItWrWorldmap) >0)														//BjС†rn
+		{																						//BjС†rn
+			AI_Output (self,other,"DIA_Dexter_WhereST_10_02"); //РЈ РјРµРЅСЏ РєР°Рє СЂР°Р· РµСЃС‚СЊ РѕРґРЅР° - Р·Р° 50 РєСѓСЃРєРѕРІ...
+		};																						//BjС†rn
 	
-	AI_Output (other,self,"DIA_Dexter_WhereST_15_02"); //Южные ворота - это обрушившаяся башня, верно?
-	AI_Output (self,other,"DIA_Dexter_WhereST_10_03"); //Верно.
+	AI_Output (other,self,"DIA_Dexter_WhereST_15_02"); //Р®Р¶РЅС‹Рµ РІРѕСЂРѕС‚Р° - СЌС‚Рѕ РѕР±СЂСѓС€РёРІС€Р°СЏСЃСЏ Р±Р°С€РЅСЏ, РІРµСЂРЅРѕ?
+	AI_Output (self,other,"DIA_Dexter_WhereST_10_03"); //Р’РµСЂРЅРѕ.
 	
 	if	!Dexter_PsiCamp
 	{
-		B_LogEntry    (CH1_KalomsRecipe,"Болотный Лагерь расположен к востоку от старого Лагеря.");
+		B_LogEntry    (CH1_KalomsRecipe,"Р‘РѕР»РѕС‚РЅС‹Р№ Р›Р°РіРµСЂСЊ СЂР°СЃРїРѕР»РѕР¶РµРЅ Рє РІРѕСЃС‚РѕРєСѓ РѕС‚ СЃС‚Р°СЂРѕРіРѕ Р›Р°РіРµСЂСЏ.");
 		Dexter_PsiCamp = TRUE;
 	};
 };
@@ -273,7 +273,7 @@ INSTANCE DIA_Dexter_KalomsRecipeSuccess (C_INFO)
 	condition	= DIA_Dexter_KalomsRecipeSuccess_Condition;
 	information	= DIA_Dexter_KalomsRecipeSuccess_Info;
 	permanent	= 1;
-	description	= "Я добыл рецепт!";
+	description	= "РЇ РґРѕР±С‹Р» СЂРµС†РµРїС‚!";
 };                       
 
 FUNC INT DIA_Dexter_KalomsRecipeSuccess_Condition()
@@ -286,14 +286,14 @@ FUNC INT DIA_Dexter_KalomsRecipeSuccess_Condition()
 
 FUNC VOID DIA_Dexter_KalomsRecipeSuccess_Info()
 {
-	AI_Output (other,self,"DIA_Dexter_KalomsRecipeSuccess_15_00"); //Я добыл рецепт!
-	AI_Output (self,other,"DIA_Dexter_KalomsRecipeSuccess_10_01"); //Очень хорошо! Покажи мне его!
+	AI_Output (other,self,"DIA_Dexter_KalomsRecipeSuccess_15_00"); //РЇ РґРѕР±С‹Р» СЂРµС†РµРїС‚!
+	AI_Output (self,other,"DIA_Dexter_KalomsRecipeSuccess_10_01"); //РћС‡РµРЅСЊ С…РѕСЂРѕС€Рѕ! РџРѕРєР°Р¶Рё РјРЅРµ РµРіРѕ!
 	
 	B_UseFakeScroll();
 	
-	AI_Output (self,other,"DIA_Dexter_KalomsRecipeSuccess_10_02"); //Отлично! Теперь я сам смогу готовить этот эликсир.
-	AI_Output (self,other,"DIA_Dexter_KalomsRecipeSuccess_10_03"); //Ты хороший парень! Диего будет знать об этом!
-	AI_Output (self,other,"DIA_Dexter_KalomsRecipeSuccess_10_04"); //Вот, возьми, это тебе за услуги...
+	AI_Output (self,other,"DIA_Dexter_KalomsRecipeSuccess_10_02"); //РћС‚Р»РёС‡РЅРѕ! РўРµРїРµСЂСЊ СЏ СЃР°Рј СЃРјРѕРіСѓ РіРѕС‚РѕРІРёС‚СЊ СЌС‚РѕС‚ СЌР»РёРєСЃРёСЂ.
+	AI_Output (self,other,"DIA_Dexter_KalomsRecipeSuccess_10_03"); //РўС‹ С…РѕСЂРѕС€РёР№ РїР°СЂРµРЅСЊ! Р”РёРµРіРѕ Р±СѓРґРµС‚ Р·РЅР°С‚СЊ РѕР± СЌС‚РѕРј!
+	AI_Output (self,other,"DIA_Dexter_KalomsRecipeSuccess_10_04"); //Р’РѕС‚, РІРѕР·СЊРјРё, СЌС‚Рѕ С‚РµР±Рµ Р·Р° СѓСЃР»СѓРіРё...
 	
 	CreateInvItems (other,itminugget,50);
 	
@@ -304,12 +304,12 @@ FUNC VOID DIA_Dexter_KalomsRecipeSuccess_Info()
 	if (Npc_GetTrueGuild (hero) == GIL_NONE)
 	{
 		Log_SetTopicStatus(CH1_KalomsRecipe, LOG_SUCCESS);
-		B_LogEntry    (CH1_KalomsRecipe,"Декстер остался под впечатлением. Уверен, он расскажет об этом Диего.");
+		B_LogEntry    (CH1_KalomsRecipe,"Р”РµРєСЃС‚РµСЂ РѕСЃС‚Р°Р»СЃСЏ РїРѕРґ РІРїРµС‡Р°С‚Р»РµРЅРёРµРј. РЈРІРµСЂРµРЅ, РѕРЅ СЂР°СЃСЃРєР°Р¶РµС‚ РѕР± СЌС‚РѕРј Р”РёРµРіРѕ.");
 	}
 	else
 	{
 		Log_SetTopicStatus(CH1_KalomsRecipe, LOG_SUCCESS);
-		B_LogEntry    (CH1_KalomsRecipe,"Декстер остался под впечатлением. Но что толку - я не могу стать призраком в любом случае.");
+		B_LogEntry    (CH1_KalomsRecipe,"Р”РµРєСЃС‚РµСЂ РѕСЃС‚Р°Р»СЃСЏ РїРѕРґ РІРїРµС‡Р°С‚Р»РµРЅРёРµРј. РќРѕ С‡С‚Рѕ С‚РѕР»РєСѓ - СЏ РЅРµ РјРѕРіСѓ СЃС‚Р°С‚СЊ РїСЂРёР·СЂР°РєРѕРј РІ Р»СЋР±РѕРј СЃР»СѓС‡Р°Рµ.");
 	};
 	B_GiveXP (XP_DexterKalom);
 };

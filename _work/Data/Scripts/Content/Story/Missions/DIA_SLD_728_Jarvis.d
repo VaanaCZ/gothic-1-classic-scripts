@@ -19,7 +19,7 @@ FUNC INT DIA_Jarvis_EXIT_Condition()
 
 FUNC VOID DIA_Jarvis_EXIT_Info()
 {	
-	AI_Output (self, other,"DIA_Jarvis_EXIT_08_00"); //Эй, сзади!
+	AI_Output (self, other,"DIA_Jarvis_EXIT_08_00"); //Р­Р№, СЃР·Р°РґРё!
 	AI_StopProcessInfos	(self);
 };
 
@@ -44,15 +44,15 @@ FUNC INT DIA_Jarvis_First_Condition()
 
 FUNC VOID DIA_Jarvis_First_Info()
 {	
-	AI_Output (self, other,"DIA_Jarvis_First_08_00"); //Ты собираешься пройти через эти ворота?
-	AI_Output (other, self,"DIA_Jarvis_First_15_01"); //А ты собираешься остановить меня?
-	AI_Output (self, other,"DIA_Jarvis_First_08_02"); //Нет, но ты должен знать, что тебя там ожидает. Это тебе не Старый Лагерь, да и с сектой болотных придурков у нас мало общего.
-	AI_Output (other, self,"DIA_Jarvis_First_15_03"); //Так что же меня там ожидает?
-	AI_Output (self, other,"DIA_Jarvis_First_08_04"); //Здесь нет ни охранников, ни Стражей, чтобы присматривать за порядком. Здесь каждый сам за себя. Вместе держимся только мы, наемники.
+	AI_Output (self, other,"DIA_Jarvis_First_08_00"); //РўС‹ СЃРѕР±РёСЂР°РµС€СЊСЃСЏ РїСЂРѕР№С‚Рё С‡РµСЂРµР· СЌС‚Рё РІРѕСЂРѕС‚Р°?
+	AI_Output (other, self,"DIA_Jarvis_First_15_01"); //Рђ С‚С‹ СЃРѕР±РёСЂР°РµС€СЊСЃСЏ РѕСЃС‚Р°РЅРѕРІРёС‚СЊ РјРµРЅСЏ?
+	AI_Output (self, other,"DIA_Jarvis_First_08_02"); //РќРµС‚, РЅРѕ С‚С‹ РґРѕР»Р¶РµРЅ Р·РЅР°С‚СЊ, С‡С‚Рѕ С‚РµР±СЏ С‚Р°Рј РѕР¶РёРґР°РµС‚. Р­С‚Рѕ С‚РµР±Рµ РЅРµ РЎС‚Р°СЂС‹Р№ Р›Р°РіРµСЂСЊ, РґР° Рё СЃ СЃРµРєС‚РѕР№ Р±РѕР»РѕС‚РЅС‹С… РїСЂРёРґСѓСЂРєРѕРІ Сѓ РЅР°СЃ РјР°Р»Рѕ РѕР±С‰РµРіРѕ.
+	AI_Output (other, self,"DIA_Jarvis_First_15_03"); //РўР°Рє С‡С‚Рѕ Р¶Рµ РјРµРЅСЏ С‚Р°Рј РѕР¶РёРґР°РµС‚?
+	AI_Output (self, other,"DIA_Jarvis_First_08_04"); //Р—РґРµСЃСЊ РЅРµС‚ РЅРё РѕС…СЂР°РЅРЅРёРєРѕРІ, РЅРё РЎС‚СЂР°Р¶РµР№, С‡С‚РѕР±С‹ РїСЂРёСЃРјР°С‚СЂРёРІР°С‚СЊ Р·Р° РїРѕСЂСЏРґРєРѕРј. Р—РґРµСЃСЊ РєР°Р¶РґС‹Р№ СЃР°Рј Р·Р° СЃРµР±СЏ. Р’РјРµСЃС‚Рµ РґРµСЂР¶РёРјСЃСЏ С‚РѕР»СЊРєРѕ РјС‹, РЅР°РµРјРЅРёРєРё.
 };
 
 // ************************************************************
-// 						Sцldner
+// 						SС†ldner
 // ************************************************************
 
 INSTANCE DIA_Jarvis_SldInfo (C_INFO)
@@ -62,7 +62,7 @@ INSTANCE DIA_Jarvis_SldInfo (C_INFO)
 	condition	= DIA_Jarvis_SldInfo_Condition;
 	information	= DIA_Jarvis_SldInfo_Info;
 	permanent	= 0;
-	description	= "Чем занимаются наемники?";
+	description	= "Р§РµРј Р·Р°РЅРёРјР°СЋС‚СЃСЏ РЅР°РµРјРЅРёРєРё?";
 };                       
 
 FUNC INT DIA_Jarvis_SldInfo_Condition()
@@ -75,10 +75,10 @@ FUNC INT DIA_Jarvis_SldInfo_Condition()
 
 FUNC VOID DIA_Jarvis_SldInfo_Info()
 {	
-	AI_Output (other, self,"DIA_Jarvis_SldInfo_15_00"); //Чем занимаются наемники?
-	AI_Output (self, other,"DIA_Jarvis_SldInfo_08_01"); //Мы - наемники на службе у магов Воды.
-	AI_Output (self, other,"DIA_Jarvis_SldInfo_08_02"); //Наша главная цель - вырваться отсюда. Мы много работаем и не собираемся расслабляться, как те типы из Старого Лагеря, что живут за счет рудокопов.
-	AI_Output (self, other,"DIA_Jarvis_SldInfo_08_03"); //Мы все подчиняемся Ли. Он великий человек. Он один из тех, кто поддерживает порядок в этом чертовом Лагере.
+	AI_Output (other, self,"DIA_Jarvis_SldInfo_15_00"); //Р§РµРј Р·Р°РЅРёРјР°СЋС‚СЃСЏ РЅР°РµРјРЅРёРєРё?
+	AI_Output (self, other,"DIA_Jarvis_SldInfo_08_01"); //РњС‹ - РЅР°РµРјРЅРёРєРё РЅР° СЃР»СѓР¶Р±Рµ Сѓ РјР°РіРѕРІ Р’РѕРґС‹.
+	AI_Output (self, other,"DIA_Jarvis_SldInfo_08_02"); //РќР°С€Р° РіР»Р°РІРЅР°СЏ С†РµР»СЊ - РІС‹СЂРІР°С‚СЊСЃСЏ РѕС‚СЃСЋРґР°. РњС‹ РјРЅРѕРіРѕ СЂР°Р±РѕС‚Р°РµРј Рё РЅРµ СЃРѕР±РёСЂР°РµРјСЃСЏ СЂР°СЃСЃР»Р°Р±Р»СЏС‚СЊСЃСЏ, РєР°Рє С‚Рµ С‚РёРїС‹ РёР· РЎС‚Р°СЂРѕРіРѕ Р›Р°РіРµСЂСЏ, С‡С‚Рѕ Р¶РёРІСѓС‚ Р·Р° СЃС‡РµС‚ СЂСѓРґРѕРєРѕРїРѕРІ.
+	AI_Output (self, other,"DIA_Jarvis_SldInfo_08_03"); //РњС‹ РІСЃРµ РїРѕРґС‡РёРЅСЏРµРјСЃСЏ Р›Рё. РћРЅ РІРµР»РёРєРёР№ С‡РµР»РѕРІРµРє. РћРЅ РѕРґРёРЅ РёР· С‚РµС…, РєС‚Рѕ РїРѕРґРґРµСЂР¶РёРІР°РµС‚ РїРѕСЂСЏРґРѕРє РІ СЌС‚РѕРј С‡РµСЂС‚РѕРІРѕРј Р›Р°РіРµСЂРµ.
 };
 
 // ************************************************************
@@ -92,7 +92,7 @@ INSTANCE DIA_Jarvis_Magier (C_INFO)
 	condition	= DIA_Jarvis_Magier_Condition;
 	information	= DIA_Jarvis_Magier_Info;
 	permanent	= 0;
-	description	= "Чем занимаются маги?";
+	description	= "Р§РµРј Р·Р°РЅРёРјР°СЋС‚СЃСЏ РјР°РіРё?";
 };                       
 
 FUNC INT DIA_Jarvis_Magier_Condition()
@@ -105,11 +105,11 @@ FUNC INT DIA_Jarvis_Magier_Condition()
 
 FUNC VOID DIA_Jarvis_Magier_Info()
 {	
-	AI_Output (other, self,"DIA_Jarvis_Magier_15_00"); //Чем занимаются маги?
-	AI_Output (self, other,"DIA_Jarvis_Magier_08_01"); //Они изучают магические свойства руды, которую 'скребки' добывают в шахте.
-	AI_Output (self, other,"DIA_Jarvis_Magier_08_02"); //Насколько мне известно, они собираются взорвать всю чертову гору руды, чтобы уничтожить Барьер и выбраться отсюда.
-	AI_Output (other, self,"DIA_Jarvis_Magier_15_03"); //Это должно быть опасно.
-	AI_Output (self, other,"DIA_Jarvis_Magier_08_04"); //Они говорят, что мы не должны волноваться.
+	AI_Output (other, self,"DIA_Jarvis_Magier_15_00"); //Р§РµРј Р·Р°РЅРёРјР°СЋС‚СЃСЏ РјР°РіРё?
+	AI_Output (self, other,"DIA_Jarvis_Magier_08_01"); //РћРЅРё РёР·СѓС‡Р°СЋС‚ РјР°РіРёС‡РµСЃРєРёРµ СЃРІРѕР№СЃС‚РІР° СЂСѓРґС‹, РєРѕС‚РѕСЂСѓСЋ 'СЃРєСЂРµР±РєРё' РґРѕР±С‹РІР°СЋС‚ РІ С€Р°С…С‚Рµ.
+	AI_Output (self, other,"DIA_Jarvis_Magier_08_02"); //РќР°СЃРєРѕР»СЊРєРѕ РјРЅРµ РёР·РІРµСЃС‚РЅРѕ, РѕРЅРё СЃРѕР±РёСЂР°СЋС‚СЃСЏ РІР·РѕСЂРІР°С‚СЊ РІСЃСЋ С‡РµСЂС‚РѕРІСѓ РіРѕСЂСѓ СЂСѓРґС‹, С‡С‚РѕР±С‹ СѓРЅРёС‡С‚РѕР¶РёС‚СЊ Р‘Р°СЂСЊРµСЂ Рё РІС‹Р±СЂР°С‚СЊСЃСЏ РѕС‚СЃСЋРґР°.
+	AI_Output (other, self,"DIA_Jarvis_Magier_15_03"); //Р­С‚Рѕ РґРѕР»Р¶РЅРѕ Р±С‹С‚СЊ РѕРїР°СЃРЅРѕ.
+	AI_Output (self, other,"DIA_Jarvis_Magier_08_04"); //РћРЅРё РіРѕРІРѕСЂСЏС‚, С‡С‚Рѕ РјС‹ РЅРµ РґРѕР»Р¶РЅС‹ РІРѕР»РЅРѕРІР°С‚СЊСЃСЏ.
 };
 
 // ************************************************************
@@ -123,7 +123,7 @@ INSTANCE DIA_Jarvis_Erzhaufen (C_INFO)
 	condition	= DIA_Jarvis_Erzhaufen_Condition;
 	information	= DIA_Jarvis_Erzhaufen_Info;
 	permanent	= 0;
-	description	= "У вас большие запасы руды?";
+	description	= "РЈ РІР°СЃ Р±РѕР»СЊС€РёРµ Р·Р°РїР°СЃС‹ СЂСѓРґС‹?";
 };                       
 
 FUNC INT DIA_Jarvis_Erzhaufen_Condition()
@@ -136,9 +136,9 @@ FUNC INT DIA_Jarvis_Erzhaufen_Condition()
 
 FUNC VOID DIA_Jarvis_Erzhaufen_Info()
 {	
-	AI_Output (other, self,"DIA_Jarvis_Erzhaufen_15_00"); //У вас большие запасы руды?
-	AI_Output (self, other,"DIA_Jarvis_Erzhaufen_08_01"); //Можно сказать и так. Мы называем их железной горой. На нее можно купить даже жену короля.
-	AI_Output (self, other,"DIA_Jarvis_Erzhaufen_08_02"); //Но мы не собираемся отдавать свою руду этому старому пердуну. Мы хотим ВЫБРАТЬСЯ ОТСЮДА!
+	AI_Output (other, self,"DIA_Jarvis_Erzhaufen_15_00"); //РЈ РІР°СЃ Р±РѕР»СЊС€РёРµ Р·Р°РїР°СЃС‹ СЂСѓРґС‹?
+	AI_Output (self, other,"DIA_Jarvis_Erzhaufen_08_01"); //РњРѕР¶РЅРѕ СЃРєР°Р·Р°С‚СЊ Рё С‚Р°Рє. РњС‹ РЅР°Р·С‹РІР°РµРј РёС… Р¶РµР»РµР·РЅРѕР№ РіРѕСЂРѕР№. РќР° РЅРµРµ РјРѕР¶РЅРѕ РєСѓРїРёС‚СЊ РґР°Р¶Рµ Р¶РµРЅСѓ РєРѕСЂРѕР»СЏ.
+	AI_Output (self, other,"DIA_Jarvis_Erzhaufen_08_02"); //РќРѕ РјС‹ РЅРµ СЃРѕР±РёСЂР°РµРјСЃСЏ РѕС‚РґР°РІР°С‚СЊ СЃРІРѕСЋ СЂСѓРґСѓ СЌС‚РѕРјСѓ СЃС‚Р°СЂРѕРјСѓ РїРµСЂРґСѓРЅСѓ. РњС‹ С…РѕС‚РёРј Р’Р«Р‘Р РђРўР¬РЎРЇ РћРўРЎР®Р”Рђ!
 };
 
 // ************************************************************
@@ -152,7 +152,7 @@ INSTANCE DIA_Jarvis_WoHaufen (C_INFO)
 	condition	= DIA_Jarvis_WoHaufen_Condition;
 	information	= DIA_Jarvis_WoHaufen_Info;
 	permanent	= 0;
-	description	= "Где находится эта железная гора?";
+	description	= "Р“РґРµ РЅР°С…РѕРґРёС‚СЃСЏ СЌС‚Р° Р¶РµР»РµР·РЅР°СЏ РіРѕСЂР°?";
 };                       
 
 FUNC INT DIA_Jarvis_WoHaufen_Condition()
@@ -165,10 +165,10 @@ FUNC INT DIA_Jarvis_WoHaufen_Condition()
 
 FUNC VOID DIA_Jarvis_WoHaufen_Info()
 {	
-	AI_Output (other, self,"DIA_Jarvis_WoHaufen_15_00"); //Где находится эта железная гора?
-	AI_Output (self, other,"DIA_Jarvis_WoHaufen_08_01"); //Никогда не видел целую гору руды, а? В центре пещеры есть большая дыра - руду сбрасывают туда.
-	AI_Output (self, other,"DIA_Jarvis_WoHaufen_08_02"); //Но близко к ней тебе все равно не подобраться. И маги, и наши люди - все охраняют руду и днем, и ночью.
-	AI_Output (other, self,"DIA_Jarvis_WoHaufen_15_03"); //Да я просто спросил.
+	AI_Output (other, self,"DIA_Jarvis_WoHaufen_15_00"); //Р“РґРµ РЅР°С…РѕРґРёС‚СЃСЏ СЌС‚Р° Р¶РµР»РµР·РЅР°СЏ РіРѕСЂР°?
+	AI_Output (self, other,"DIA_Jarvis_WoHaufen_08_01"); //РќРёРєРѕРіРґР° РЅРµ РІРёРґРµР» С†РµР»СѓСЋ РіРѕСЂСѓ СЂСѓРґС‹, Р°? Р’ С†РµРЅС‚СЂРµ РїРµС‰РµСЂС‹ РµСЃС‚СЊ Р±РѕР»СЊС€Р°СЏ РґС‹СЂР° - СЂСѓРґСѓ СЃР±СЂР°СЃС‹РІР°СЋС‚ С‚СѓРґР°.
+	AI_Output (self, other,"DIA_Jarvis_WoHaufen_08_02"); //РќРѕ Р±Р»РёР·РєРѕ Рє РЅРµР№ С‚РµР±Рµ РІСЃРµ СЂР°РІРЅРѕ РЅРµ РїРѕРґРѕР±СЂР°С‚СЊСЃСЏ. Р РјР°РіРё, Рё РЅР°С€Рё Р»СЋРґРё - РІСЃРµ РѕС…СЂР°РЅСЏСЋС‚ СЂСѓРґСѓ Рё РґРЅРµРј, Рё РЅРѕС‡СЊСЋ.
+	AI_Output (other, self,"DIA_Jarvis_WoHaufen_15_03"); //Р”Р° СЏ РїСЂРѕСЃС‚Рѕ СЃРїСЂРѕСЃРёР».
 };
 
 // ************************************************************
@@ -182,7 +182,7 @@ INSTANCE DIA_Jarvis_Rest (C_INFO)
 	condition	= DIA_Jarvis_Rest_Condition;
 	information	= DIA_Jarvis_Rest_Info;
 	permanent	= 0;
-	description	= "Что насчет остальных людей?";
+	description	= "Р§С‚Рѕ РЅР°СЃС‡РµС‚ РѕСЃС‚Р°Р»СЊРЅС‹С… Р»СЋРґРµР№?";
 };                       
 
 FUNC INT DIA_Jarvis_Rest_Condition()
@@ -195,8 +195,8 @@ FUNC INT DIA_Jarvis_Rest_Condition()
 
 FUNC VOID DIA_Jarvis_Rest_Info()
 {	
-	AI_Output (other, self,"DIA_Jarvis_Rest_15_00"); //Что насчет остальных людей?
-	AI_Output (self, other,"DIA_Jarvis_Rest_08_01"); //Одно жулье - все, без исключения. На Лагерь им наплевать с высокого холма. Я бы скорее поручил какому-нибудь крестьянину охранять эти ворота, чем кому-нибудь из них.
+	AI_Output (other, self,"DIA_Jarvis_Rest_15_00"); //Р§С‚Рѕ РЅР°СЃС‡РµС‚ РѕСЃС‚Р°Р»СЊРЅС‹С… Р»СЋРґРµР№?
+	AI_Output (self, other,"DIA_Jarvis_Rest_08_01"); //РћРґРЅРѕ Р¶СѓР»СЊРµ - РІСЃРµ, Р±РµР· РёСЃРєР»СЋС‡РµРЅРёСЏ. РќР° Р›Р°РіРµСЂСЊ РёРј РЅР°РїР»РµРІР°С‚СЊ СЃ РІС‹СЃРѕРєРѕРіРѕ С…РѕР»РјР°. РЇ Р±С‹ СЃРєРѕСЂРµРµ РїРѕСЂСѓС‡РёР» РєР°РєРѕРјСѓ-РЅРёР±СѓРґСЊ РєСЂРµСЃС‚СЊСЏРЅРёРЅСѓ РѕС…СЂР°РЅСЏС‚СЊ СЌС‚Рё РІРѕСЂРѕС‚Р°, С‡РµРј РєРѕРјСѓ-РЅРёР±СѓРґСЊ РёР· РЅРёС….
 };
 
 // ************************************************************
@@ -210,7 +210,7 @@ INSTANCE DIA_Jarvis_PERM (C_INFO)
 	condition	= DIA_Jarvis_PERM_Condition;
 	information	= DIA_Jarvis_PERM_Info;
 	permanent	= 1;
-	description	= "Как идут дела?";
+	description	= "РљР°Рє РёРґСѓС‚ РґРµР»Р°?";
 };                       
 
 FUNC INT DIA_Jarvis_PERM_Condition()
@@ -223,12 +223,12 @@ FUNC INT DIA_Jarvis_PERM_Condition()
 
 FUNC VOID DIA_Jarvis_PERM_Info()
 {	
-	AI_Output (other, self,"DIA_Jarvis_PERM_15_00"); //Как идут дела?
-	AI_Output (self, other,"DIA_Jarvis_PERM_08_01"); //Скребки по-прежнему добывают руду. Когда они наберут достаточно, мы взорвем всю железную гору.
+	AI_Output (other, self,"DIA_Jarvis_PERM_15_00"); //РљР°Рє РёРґСѓС‚ РґРµР»Р°?
+	AI_Output (self, other,"DIA_Jarvis_PERM_08_01"); //РЎРєСЂРµР±РєРё РїРѕ-РїСЂРµР¶РЅРµРјСѓ РґРѕР±С‹РІР°СЋС‚ СЂСѓРґСѓ. РљРѕРіРґР° РѕРЅРё РЅР°Р±РµСЂСѓС‚ РґРѕСЃС‚Р°С‚РѕС‡РЅРѕ, РјС‹ РІР·РѕСЂРІРµРј РІСЃСЋ Р¶РµР»РµР·РЅСѓСЋ РіРѕСЂСѓ.
 };
 
 /*------------------------------------------------------------------------
-//							SЦLDNERAUFNAHME									//
+//							SР¦LDNERAUFNAHME									//
 ------------------------------------------------------------------------*/
 instance Sld_728_Jarvis_AUFNAHMESOLDIER (C_INFO)
 {
@@ -251,13 +251,13 @@ FUNC int  Sld_728_Jarvis_AUFNAHMESOLDIER_Condition()
 func void  Sld_728_Jarvis_AUFNAHMESOLDIER_Info()
 {
 	AI_GotoNpc (hero,self); 
-	AI_Output (self, other,"Sld_728_Jarvis_AUFNAHMESOLDIER_Info_08_01"); //Эй, я слышал, ты задал жару ползунам в шахте!
-	AI_Output (self, other,"Sld_728_Jarvis_AUFNAHMESOLDIER_Info_08_02"); //Думаю, Ли с радостью примет тебя в ряды наемников. Просто поговори с ним.
+	AI_Output (self, other,"Sld_728_Jarvis_AUFNAHMESOLDIER_Info_08_01"); //Р­Р№, СЏ СЃР»С‹С€Р°Р», С‚С‹ Р·Р°РґР°Р» Р¶Р°СЂСѓ РїРѕР»Р·СѓРЅР°Рј РІ С€Р°С…С‚Рµ!
+	AI_Output (self, other,"Sld_728_Jarvis_AUFNAHMESOLDIER_Info_08_02"); //Р”СѓРјР°СЋ, Р›Рё СЃ СЂР°РґРѕСЃС‚СЊСЋ РїСЂРёРјРµС‚ С‚РµР±СЏ РІ СЂСЏРґС‹ РЅР°РµРјРЅРёРєРѕРІ. РџСЂРѕСЃС‚Рѕ РїРѕРіРѕРІРѕСЂРё СЃ РЅРёРј.
 
-	self.flags = 0;		// Immortal-Flag lцschen
+	self.flags = 0;		// Immortal-Flag lС†schen
 
 	Log_CreateTopic (GE_BecomeMercenary,LOG_NOTE);
-	B_LogEntry (GE_BecomeMercenary,"Я должен поговорить с Ли. Может быть, он позволит мне присоединиться к наемникам.");
+	B_LogEntry (GE_BecomeMercenary,"РЇ РґРѕР»Р¶РµРЅ РїРѕРіРѕРІРѕСЂРёС‚СЊ СЃ Р›Рё. РњРѕР¶РµС‚ Р±С‹С‚СЊ, РѕРЅ РїРѕР·РІРѕР»РёС‚ РјРЅРµ РїСЂРёСЃРѕРµРґРёРЅРёС‚СЊСЃСЏ Рє РЅР°РµРјРЅРёРєР°Рј.");
 };
 
 

@@ -2,7 +2,7 @@ instance CS_Richter (Npc_Default)
 {
 	//-------- primary data --------
 	
-	name 		=	"ั๓ไüÿ";
+	name 		=	"ะกัะดัั";
 	npctype     =	npctype_main;
 	guild 		=	GIL_None;      
 	level 		=	5;

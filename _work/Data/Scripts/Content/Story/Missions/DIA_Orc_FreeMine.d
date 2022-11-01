@@ -4,8 +4,8 @@
 Die Freemine Mission. 
 Der SC metzelt sich durch die FM und findet dort einen Orc, welcher schwer
 verletzt ist und einen Orcischen Heiltrank braucht. 
-Alls Gegenleistung fьr den Heiltrank sagt er dir was man alles fьr Items
-fьr das Ulu-Mulu braucht.
+Alls Gegenleistung fСЊr den Heiltrank sagt er dir was man alles fСЊr Items
+fСЊr das Ulu-Mulu braucht.
 Wenn man ihm die drei Teile bringt bastelt er dir das Ulumulu.
 
 --------------------------------- Die Items -----------------------------
@@ -13,15 +13,15 @@ OrcHeiltrank:			Orcmedicine			-> OrcGegengift
 	
 Teil vom Ulu-Mulu (1)	ItAt_Waran_01		-> 	Flammenzunge
 Teil vom Ulu-Mulu (2)	ItAt_Shadow_02		->	Horn eines Shadowbeast
-Teil vom Ulu-Mulu (3)	ItAt_Swampshark_02	->	Zдhne des Sumpfhais
+Teil vom Ulu-Mulu (3)	ItAt_Swampshark_02	->	ZРґhne des Sumpfhais
 Teil vom Ulu-Mulu (4)   ItAt_Troll_02		->	Hauer eines Trolls
 
 Ulu-Mulu				Ulumulu				-> Das Ulumulu
 
 ----------------------------------- ToDo ---------------------------------
--> Monsterhinweise mьssen noch rein
+-> Monsterhinweise mСЊssen noch rein
 -> Missionlogs basteln
--> Sprache ьberarbeiten
+-> Sprache СЊberarbeiten
 */
 
 
@@ -49,13 +49,13 @@ FUNC VOID Info_FreemineOrc_EXIT_Info()
 {
 	if (!Npc_KnowsInfo(hero,Info_FreemineOrc_EveryUlumulu))	
 	{
-		AI_Output			(hero, self,"Info_FreemineOrc_EXIT_15_01"); //Мне нужно пройти!
-		AI_Output			(self, hero,"Info_FreemineOrc_EXIT_17_02"); //Незнакомец прийти снова!
+		AI_Output			(hero, self,"Info_FreemineOrc_EXIT_15_01"); //РњРЅРµ РЅСѓР¶РЅРѕ РїСЂРѕР№С‚Рё!
+		AI_Output			(self, hero,"Info_FreemineOrc_EXIT_17_02"); //РќРµР·РЅР°РєРѕРјРµС† РїСЂРёР№С‚Рё СЃРЅРѕРІР°!
 	}                                                              
 	else                                                           
 	{
-		AI_Output			(hero, self,"Info_FreemineOrc_EXIT_15_03"); //Спасибо. Я пойду.
-		AI_Output			(self, hero,"Info_FreemineOrc_EXIT_17_04"); //Добрая дорога,  незнакомец!
+		AI_Output			(hero, self,"Info_FreemineOrc_EXIT_15_03"); //РЎРїР°СЃРёР±Рѕ. РЇ РїРѕР№РґСѓ.
+		AI_Output			(self, hero,"Info_FreemineOrc_EXIT_17_04"); //Р”РѕР±СЂР°СЏ РґРѕСЂРѕРіР°,  РЅРµР·РЅР°РєРѕРјРµС†!
 	};
 	AI_StopProcessInfos	( self );
 };
@@ -79,7 +79,7 @@ FUNC int Info_FreemineOrc_INTRO_Condition()
 
 func void Info_FreemineOrc_INTRO_Info()
 {
-	AI_Output			(self, hero,"Info_FreemineOrc_INTRO_17_01"); //Таррок нужна помощь! Таррок ранен!
+	AI_Output			(self, hero,"Info_FreemineOrc_INTRO_17_01"); //РўР°СЂСЂРѕРє РЅСѓР¶РЅР° РїРѕРјРѕС‰СЊ! РўР°СЂСЂРѕРє СЂР°РЅРµРЅ!
 };
 
 //---------------------------------------------------------------------
@@ -92,7 +92,7 @@ instance Info_FreemineOrc_WASPASSIERT (C_INFO)
 	information	= Info_FreemineOrc_WASPASSIERT_Info;
 	important	= 0;	
 	permanent	= 0;
-	description = "Что здесь произошло?";
+	description = "Р§С‚Рѕ Р·РґРµСЃСЊ РїСЂРѕРёР·РѕС€Р»Рѕ?";
 };                       
 
 FUNC int Info_FreemineOrc_WASPASSIERT_Condition()
@@ -105,11 +105,11 @@ FUNC int Info_FreemineOrc_WASPASSIERT_Condition()
 
 FUNC VOID Info_FreemineOrc_WASPASSIERT_Info()
 {
-	AI_Output			(hero, self,"Info_FreemineOrc_WASPASSIERT_15_01"); //Что здесь произошло?
-	AI_Output			(self, hero,"Info_FreemineOrc_WASPASSIERT_17_02"); //Таррок захватить синие солдаты. Вдруг красные солдаты повсюду.
-	AI_Output			(self, hero,"Info_FreemineOrc_WASPASSIERT_17_03"); //Красные солдаты убивать все.
-	AI_Output			(self, hero,"Info_FreemineOrc_WASPASSIERT_17_04"); //Таррок бежать сюда. Красные солдаты не ходить сюда. Красные солдаты боятся ГАХ ЛЮГ.
-	AI_Output			(self, hero,"Info_FreemineOrc_WASPASSIERT_17_05"); //Пожалуйста, помочь, Таррок ранен.
+	AI_Output			(hero, self,"Info_FreemineOrc_WASPASSIERT_15_01"); //Р§С‚Рѕ Р·РґРµСЃСЊ РїСЂРѕРёР·РѕС€Р»Рѕ?
+	AI_Output			(self, hero,"Info_FreemineOrc_WASPASSIERT_17_02"); //РўР°СЂСЂРѕРє Р·Р°С…РІР°С‚РёС‚СЊ СЃРёРЅРёРµ СЃРѕР»РґР°С‚С‹. Р’РґСЂСѓРі РєСЂР°СЃРЅС‹Рµ СЃРѕР»РґР°С‚С‹ РїРѕРІСЃСЋРґСѓ.
+	AI_Output			(self, hero,"Info_FreemineOrc_WASPASSIERT_17_03"); //РљСЂР°СЃРЅС‹Рµ СЃРѕР»РґР°С‚С‹ СѓР±РёРІР°С‚СЊ РІСЃРµ.
+	AI_Output			(self, hero,"Info_FreemineOrc_WASPASSIERT_17_04"); //РўР°СЂСЂРѕРє Р±РµР¶Р°С‚СЊ СЃСЋРґР°. РљСЂР°СЃРЅС‹Рµ СЃРѕР»РґР°С‚С‹ РЅРµ С…РѕРґРёС‚СЊ СЃСЋРґР°. РљСЂР°СЃРЅС‹Рµ СЃРѕР»РґР°С‚С‹ Р±РѕСЏС‚СЃСЏ Р“РђРҐ Р›Р®Р“.
+	AI_Output			(self, hero,"Info_FreemineOrc_WASPASSIERT_17_05"); //РџРѕР¶Р°Р»СѓР№СЃС‚Р°, РїРѕРјРѕС‡СЊ, РўР°СЂСЂРѕРє СЂР°РЅРµРЅ.
 };
 
 //---------------------------------------------------------------------
@@ -122,7 +122,7 @@ instance Info_FreemineOrc_WASTUN (C_INFO)
 	information	= Info_FreemineOrc_WASTUN_Info;
 	important	= 0;	
 	permanent	= 0;
-	description = "Что я могу для тебя сделать?";
+	description = "Р§С‚Рѕ СЏ РјРѕРіСѓ РґР»СЏ С‚РµР±СЏ СЃРґРµР»Р°С‚СЊ?";
 };                       
 
 FUNC int Info_FreemineOrc_WASTUN_Condition()
@@ -135,11 +135,11 @@ FUNC int Info_FreemineOrc_WASTUN_Condition()
 
 FUNC VOID Info_FreemineOrc_WASTUN_Info()
 {
-	AI_Output			(hero, self,"Info_FreemineOrc_WASTUN_15_01"); //Что я могу сделать?
-	AI_Output			(self, hero,"Info_FreemineOrc_WASTUN_17_02"); //Таррок нужна сильная лекарства. Иначе Таррок умирать.
-	AI_Output			(hero, self,"Info_FreemineOrc_WASTUN_15_03"); //Какие лекарства нужны?
-	AI_Output			(self, hero,"Info_FreemineOrc_WASTUN_17_04"); //ГАХ ЛЮГ отравить Таррок. Таррок нужна лекарства!
-	AI_Output			(self, hero,"Info_FreemineOrc_WASTUN_17_05"); //У Таррок быть лекарства, но Таррок потерять. Таррок не найти!
+	AI_Output			(hero, self,"Info_FreemineOrc_WASTUN_15_01"); //Р§С‚Рѕ СЏ РјРѕРіСѓ СЃРґРµР»Р°С‚СЊ?
+	AI_Output			(self, hero,"Info_FreemineOrc_WASTUN_17_02"); //РўР°СЂСЂРѕРє РЅСѓР¶РЅР° СЃРёР»СЊРЅР°СЏ Р»РµРєР°СЂСЃС‚РІР°. РРЅР°С‡Рµ РўР°СЂСЂРѕРє СѓРјРёСЂР°С‚СЊ.
+	AI_Output			(hero, self,"Info_FreemineOrc_WASTUN_15_03"); //РљР°РєРёРµ Р»РµРєР°СЂСЃС‚РІР° РЅСѓР¶РЅС‹?
+	AI_Output			(self, hero,"Info_FreemineOrc_WASTUN_17_04"); //Р“РђРҐ Р›Р®Р“ РѕС‚СЂР°РІРёС‚СЊ РўР°СЂСЂРѕРє. РўР°СЂСЂРѕРє РЅСѓР¶РЅР° Р»РµРєР°СЂСЃС‚РІР°!
+	AI_Output			(self, hero,"Info_FreemineOrc_WASTUN_17_05"); //РЈ РўР°СЂСЂРѕРє Р±С‹С‚СЊ Р»РµРєР°СЂСЃС‚РІР°, РЅРѕ РўР°СЂСЂРѕРє РїРѕС‚РµСЂСЏС‚СЊ. РўР°СЂСЂРѕРє РЅРµ РЅР°Р№С‚Рё!
 };
 
 //---------------------------------------------------------------------
@@ -152,7 +152,7 @@ instance Info_FreemineOrc_OFFER (C_INFO)
 	information	= Info_FreemineOrc_OFFER_Info;
 	important	= 0;	
 	permanent	= 0;
-	description = "Я найду твои лекарства!";
+	description = "РЇ РЅР°Р№РґСѓ С‚РІРѕРё Р»РµРєР°СЂСЃС‚РІР°!";
 };                       
 
 FUNC int Info_FreemineOrc_OFFER_Condition()
@@ -167,8 +167,8 @@ FUNC int Info_FreemineOrc_OFFER_Condition()
 
 FUNC VOID Info_FreemineOrc_OFFER_Info()
 {
-	AI_Output			(hero, self,"Info_FreemineOrc_OFFER_15_01"); //Я найду твои лекарства!
-	AI_Output			(self, hero,"Info_FreemineOrc_OFFER_17_02"); //Таррок очень слабый. Незнакомец, торопись, или Таррок умирать!
+	AI_Output			(hero, self,"Info_FreemineOrc_OFFER_15_01"); //РЇ РЅР°Р№РґСѓ С‚РІРѕРё Р»РµРєР°СЂСЃС‚РІР°!
+	AI_Output			(self, hero,"Info_FreemineOrc_OFFER_17_02"); //РўР°СЂСЂРѕРє РѕС‡РµРЅСЊ СЃР»Р°Р±С‹Р№. РќРµР·РЅР°РєРѕРјРµС†, С‚РѕСЂРѕРїРёСЃСЊ, РёР»Рё РўР°СЂСЂРѕРє СѓРјРёСЂР°С‚СЊ!
 	AI_StopProcessInfos	(self);
 
 	B_Story_FoundOrcSlave();
@@ -184,7 +184,7 @@ instance Info_FreemineOrc_CRAWLER (C_INFO)
 	information	= Info_FreemineOrc_CRAWLER_Info;
 	important	= 0;	
 	permanent	= 0;
-	description = "Что такое ГАХ ЛЮГ?";
+	description = "Р§С‚Рѕ С‚Р°РєРѕРµ Р“РђРҐ Р›Р®Р“?";
 };                       
 
 FUNC int Info_FreemineOrc_CRAWLER_Condition()
@@ -197,10 +197,10 @@ FUNC int Info_FreemineOrc_CRAWLER_Condition()
 
 FUNC VOID Info_FreemineOrc_CRAWLER_Info()
 {
-	AI_Output			(hero, self,"Info_FreemineOrc_CRAWLER_15_01"); //Что такое ГАХ ЛЮГ?
-	AI_Output			(self, hero,"Info_FreemineOrc_CRAWLER_17_02"); //Быть большой звери, ходить на много ногах.
-	AI_Output			(self, hero,"Info_FreemineOrc_CRAWLER_17_03"); //ГАХ ЛЮГ опасность! Ест люди и орки!
-	AI_Output			(hero, self,"Info_FreemineOrc_CRAWLER_15_04"); //Ты, наверное, имеешь в виду ползунов!
+	AI_Output			(hero, self,"Info_FreemineOrc_CRAWLER_15_01"); //Р§С‚Рѕ С‚Р°РєРѕРµ Р“РђРҐ Р›Р®Р“?
+	AI_Output			(self, hero,"Info_FreemineOrc_CRAWLER_17_02"); //Р‘С‹С‚СЊ Р±РѕР»СЊС€РѕР№ Р·РІРµСЂРё, С…РѕРґРёС‚СЊ РЅР° РјРЅРѕРіРѕ РЅРѕРіР°С….
+	AI_Output			(self, hero,"Info_FreemineOrc_CRAWLER_17_03"); //Р“РђРҐ Р›Р®Р“ РѕРїР°СЃРЅРѕСЃС‚СЊ! Р•СЃС‚ Р»СЋРґРё Рё РѕСЂРєРё!
+	AI_Output			(hero, self,"Info_FreemineOrc_CRAWLER_15_04"); //РўС‹, РЅР°РІРµСЂРЅРѕРµ, РёРјРµРµС€СЊ РІ РІРёРґСѓ РїРѕР»Р·СѓРЅРѕРІ!
 };
 
 //---------------------------------------------------------------------
@@ -213,7 +213,7 @@ instance Info_FreemineOrc_TONGUE (C_INFO)
 	information	= Info_FreemineOrc_TONGUE_Info;
 	important	= 0;	
 	permanent	= 0;
-	description = "Ты говоришь по-нашему?";
+	description = "РўС‹ РіРѕРІРѕСЂРёС€СЊ РїРѕ-РЅР°С€РµРјСѓ?";
 };                       
 
 FUNC int Info_FreemineOrc_TONGUE_Condition()
@@ -226,8 +226,8 @@ FUNC int Info_FreemineOrc_TONGUE_Condition()
 
 FUNC VOID Info_FreemineOrc_TONGUE_Info()
 {
-	AI_Output			(hero, self,"Info_FreemineOrc_TONGUE_15_01"); //Ты говоришь по-нашему?
-	AI_Output			(self, hero,"Info_FreemineOrc_TONGUE_17_02"); //Таррок быть рабом у люди много время. Таррок хорошо слушать.
+	AI_Output			(hero, self,"Info_FreemineOrc_TONGUE_15_01"); //РўС‹ РіРѕРІРѕСЂРёС€СЊ РїРѕ-РЅР°С€РµРјСѓ?
+	AI_Output			(self, hero,"Info_FreemineOrc_TONGUE_17_02"); //РўР°СЂСЂРѕРє Р±С‹С‚СЊ СЂР°Р±РѕРј Сѓ Р»СЋРґРё РјРЅРѕРіРѕ РІСЂРµРјСЏ. РўР°СЂСЂРѕРє С…РѕСЂРѕС€Рѕ СЃР»СѓС€Р°С‚СЊ.
 };
 
 //---------------------------------------------------------------------
@@ -240,7 +240,7 @@ instance Info_FreemineOrc_SEARCHPOTION (C_INFO)
 	information	= Info_FreemineOrc_SEARCHPOTION_Info;
 	important	= 0;	
 	permanent	= 1;
-	description	= "Я не могу найти твои лекарства!";
+	description	= "РЇ РЅРµ РјРѕРіСѓ РЅР°Р№С‚Рё С‚РІРѕРё Р»РµРєР°СЂСЃС‚РІР°!";
 };                       
 
 FUNC int Info_FreemineOrc_SEARCHPOTION_Condition()
@@ -255,10 +255,10 @@ FUNC int Info_FreemineOrc_SEARCHPOTION_Condition()
 
 FUNC VOID Info_FreemineOrc_SearchPotion_Info()
 {
-	AI_Output			(hero, self,"Info_FreemineOrc_SEARCHPOTION_15_01"); //Я не могу найти твои лекарства!
-	AI_Output			(self, hero,"Info_FreemineOrc_SEARCHPOTION_17_02"); //Незнакомец искать еще! Лекарства быть здесь!
-	AI_Output			(self, hero,"Info_FreemineOrc_SEARCHPOTION_17_03"); //Таррок бежать от ГАХ ЛЮГ! Таррок спрятать, когда бежать!
-	AI_Output			(self, hero,"Info_FreemineOrc_SEARCHPOTION_17_04"); //Незнакомец, искать в нише тоже!
+	AI_Output			(hero, self,"Info_FreemineOrc_SEARCHPOTION_15_01"); //РЇ РЅРµ РјРѕРіСѓ РЅР°Р№С‚Рё С‚РІРѕРё Р»РµРєР°СЂСЃС‚РІР°!
+	AI_Output			(self, hero,"Info_FreemineOrc_SEARCHPOTION_17_02"); //РќРµР·РЅР°РєРѕРјРµС† РёСЃРєР°С‚СЊ РµС‰Рµ! Р›РµРєР°СЂСЃС‚РІР° Р±С‹С‚СЊ Р·РґРµСЃСЊ!
+	AI_Output			(self, hero,"Info_FreemineOrc_SEARCHPOTION_17_03"); //РўР°СЂСЂРѕРє Р±РµР¶Р°С‚СЊ РѕС‚ Р“РђРҐ Р›Р®Р“! РўР°СЂСЂРѕРє СЃРїСЂСЏС‚Р°С‚СЊ, РєРѕРіРґР° Р±РµР¶Р°С‚СЊ!
+	AI_Output			(self, hero,"Info_FreemineOrc_SEARCHPOTION_17_04"); //РќРµР·РЅР°РєРѕРјРµС†, РёСЃРєР°С‚СЊ РІ РЅРёС€Рµ С‚РѕР¶Рµ!
 	 
 	AI_StopProcessInfos	( self );
 };
@@ -273,7 +273,7 @@ instance Info_FreemineOrc_SUCHEULUMULU (C_INFO)
 	information	= Info_FreemineOrc_SUCHEULUMULU_Info;
 	important	= 0;	
 	permanent	= 0;
-	description = "Ты случайно не знаешь Ур-Шака, шамана?";
+	description = "РўС‹ СЃР»СѓС‡Р°Р№РЅРѕ РЅРµ Р·РЅР°РµС€СЊ РЈСЂ-РЁР°РєР°, С€Р°РјР°РЅР°?";
 };                       
 
 FUNC int Info_FreemineOrc_SUCHEULUMULU_Condition()
@@ -286,17 +286,17 @@ FUNC int Info_FreemineOrc_SUCHEULUMULU_Condition()
 
 FUNC VOID Info_FreemineOrc_SUCHEULUMULU_Info()
 {
-	AI_Output		(hero, self,"Info_FreemineOrc_SUCHEULUMULU_15_01"); //Ты случайно не знаешь Ур-Шака, шамана?
-	AI_Output		(self, hero,"Info_FreemineOrc_SUCHEULUMULU_17_02"); //Ур-Шак быть раб, как Таррок. Ур-Шак убегать! Убегать много зима назад!
-	AI_Output		(hero, self,"Info_FreemineOrc_SUCHEULUMULU_15_03"); //Твой друг сказал, что ты можешь сделать для меня Улу-Мулу.
+	AI_Output		(hero, self,"Info_FreemineOrc_SUCHEULUMULU_15_01"); //РўС‹ СЃР»СѓС‡Р°Р№РЅРѕ РЅРµ Р·РЅР°РµС€СЊ РЈСЂ-РЁР°РєР°, С€Р°РјР°РЅР°?
+	AI_Output		(self, hero,"Info_FreemineOrc_SUCHEULUMULU_17_02"); //РЈСЂ-РЁР°Рє Р±С‹С‚СЊ СЂР°Р±, РєР°Рє РўР°СЂСЂРѕРє. РЈСЂ-РЁР°Рє СѓР±РµРіР°С‚СЊ! РЈР±РµРіР°С‚СЊ РјРЅРѕРіРѕ Р·РёРјР° РЅР°Р·Р°Рґ!
+	AI_Output		(hero, self,"Info_FreemineOrc_SUCHEULUMULU_15_03"); //РўРІРѕР№ РґСЂСѓРі СЃРєР°Р·Р°Р», С‡С‚Рѕ С‚С‹ РјРѕР¶РµС€СЊ СЃРґРµР»Р°С‚СЊ РґР»СЏ РјРµРЅСЏ РЈР»Сѓ-РњСѓР»Сѓ.
 	if (FreemineOrc_SuchePotion == LOG_SUCCESS)
 	{
-		AI_Output	(self, hero,"Info_FreemineOrc_SUCHEULUMULU_17_04"); //Ты помогать мне, так я помогать тебе!
+		AI_Output	(self, hero,"Info_FreemineOrc_SUCHEULUMULU_17_04"); //РўС‹ РїРѕРјРѕРіР°С‚СЊ РјРЅРµ, С‚Р°Рє СЏ РїРѕРјРѕРіР°С‚СЊ С‚РµР±Рµ!
 	}
 	else
 	{
-		AI_Output	(self, hero,"Info_FreemineOrc_SUCHEULUMULU_17_05"); //Таррок очень слабый. Нет лекарства, Таррок умирать.
-		AI_Output	(self, hero,"Info_FreemineOrc_SUCHEULUMULU_17_06"); //Незнакомец принести лекарства, тогда Таррок помогать!
+		AI_Output	(self, hero,"Info_FreemineOrc_SUCHEULUMULU_17_05"); //РўР°СЂСЂРѕРє РѕС‡РµРЅСЊ СЃР»Р°Р±С‹Р№. РќРµС‚ Р»РµРєР°СЂСЃС‚РІР°, РўР°СЂСЂРѕРє СѓРјРёСЂР°С‚СЊ.
+		AI_Output	(self, hero,"Info_FreemineOrc_SUCHEULUMULU_17_06"); //РќРµР·РЅР°РєРѕРјРµС† РїСЂРёРЅРµСЃС‚Рё Р»РµРєР°СЂСЃС‚РІР°, С‚РѕРіРґР° РўР°СЂСЂРѕРє РїРѕРјРѕРіР°С‚СЊ!
 	};
 };
 
@@ -310,7 +310,7 @@ instance Info_FreemineOrc_GIVEPOTION (C_INFO)
 	information	= Info_FreemineOrc_GIVEPOTION_Info;
 	important	= 0;	
 	permanent	= 0;
-	description = "Вот, я нашел твои лекарства!";
+	description = "Р’РѕС‚, СЏ РЅР°С€РµР» С‚РІРѕРё Р»РµРєР°СЂСЃС‚РІР°!";
 };                       
 
 FUNC int Info_FreemineOrc_GIVEPOTION_Condition()
@@ -324,7 +324,7 @@ FUNC int Info_FreemineOrc_GIVEPOTION_Condition()
 
 FUNC VOID Info_FreemineOrc_GIVEPOTION_Info()
 {
-	AI_Output			(hero, self,"Info_FreemineOrc_GIVEPOTION_15_01"); //Вот, я нашел твои лекарства!
+	AI_Output			(hero, self,"Info_FreemineOrc_GIVEPOTION_15_01"); //Р’РѕС‚, СЏ РЅР°С€РµР» С‚РІРѕРё Р»РµРєР°СЂСЃС‚РІР°!
 
 	B_GiveInvItems      (hero, self, Orcmedicine, 1); 	
 	EquipItem			(self, Orcmedicine);
@@ -336,12 +336,12 @@ FUNC VOID Info_FreemineOrc_GIVEPOTION_Info()
 	AI_UseItemToState	(self, Orcmedicine, 1);
 	AI_UseItemToState	(self, Orcmedicine, -1);
 
-	AI_Output			(self, hero,"Info_FreemineOrc_GIVEPOTION_17_02"); //Незнакомец не плохой, как другие люди! Незнакомец хороший!
-	AI_Output			(self, hero,"Info_FreemineOrc_GIVEPOTION_17_03"); //Таррок должен благодарить!
-	AI_Output			(hero, self,"Info_FreemineOrc_GIVEPOTION_15_04"); //Теперь ты можешь дать мне Улу-Мулу?
-	AI_Output			(self, hero,"Info_FreemineOrc_GIVEPOTION_17_05"); //Незнакомец помогать Таррок, и Таррок помогать незнакомец тоже!
-	AI_Output			(self, hero,"Info_FreemineOrc_GIVEPOTION_17_06"); //Незнакомец нужно КРОТАК, ХАЗ-ТАК, ДВАХКАРР и ОРФ-АНТАК.
-	AI_Output			(self, hero,"Info_FreemineOrc_GIVEPOTION_17_07"); //Незнакомец приносить все, тогда Таррок делать Улу-Мулу!
+	AI_Output			(self, hero,"Info_FreemineOrc_GIVEPOTION_17_02"); //РќРµР·РЅР°РєРѕРјРµС† РЅРµ РїР»РѕС…РѕР№, РєР°Рє РґСЂСѓРіРёРµ Р»СЋРґРё! РќРµР·РЅР°РєРѕРјРµС† С…РѕСЂРѕС€РёР№!
+	AI_Output			(self, hero,"Info_FreemineOrc_GIVEPOTION_17_03"); //РўР°СЂСЂРѕРє РґРѕР»Р¶РµРЅ Р±Р»Р°РіРѕРґР°СЂРёС‚СЊ!
+	AI_Output			(hero, self,"Info_FreemineOrc_GIVEPOTION_15_04"); //РўРµРїРµСЂСЊ С‚С‹ РјРѕР¶РµС€СЊ РґР°С‚СЊ РјРЅРµ РЈР»Сѓ-РњСѓР»Сѓ?
+	AI_Output			(self, hero,"Info_FreemineOrc_GIVEPOTION_17_05"); //РќРµР·РЅР°РєРѕРјРµС† РїРѕРјРѕРіР°С‚СЊ РўР°СЂСЂРѕРє, Рё РўР°СЂСЂРѕРє РїРѕРјРѕРіР°С‚СЊ РЅРµР·РЅР°РєРѕРјРµС† С‚РѕР¶Рµ!
+	AI_Output			(self, hero,"Info_FreemineOrc_GIVEPOTION_17_06"); //РќРµР·РЅР°РєРѕРјРµС† РЅСѓР¶РЅРѕ РљР РћРўРђРљ, РҐРђР—-РўРђРљ, Р”Р’РђРҐРљРђР Р  Рё РћР Р¤-РђРќРўРђРљ.
+	AI_Output			(self, hero,"Info_FreemineOrc_GIVEPOTION_17_07"); //РќРµР·РЅР°РєРѕРјРµС† РїСЂРёРЅРѕСЃРёС‚СЊ РІСЃРµ, С‚РѕРіРґР° РўР°СЂСЂРѕРє РґРµР»Р°С‚СЊ РЈР»Сѓ-РњСѓР»Сѓ!
 	
 	if	!Npc_KnowsInfo(hero,Info_FreemineOrc_OFFER)
 	{
@@ -362,7 +362,7 @@ instance Info_FreemineOrc_FIREWARAN (C_INFO)
 	information	= Info_FreemineOrc_FIREWARAN_Info;
 	important	= 0;	
 	permanent	= 0;
-	description = "Что такое КРОТАК?";
+	description = "Р§С‚Рѕ С‚Р°РєРѕРµ РљР РћРўРђРљ?";
 };                       
 
 FUNC int Info_FreemineOrc_FIREWARAN_Condition()
@@ -375,8 +375,8 @@ FUNC int Info_FreemineOrc_FIREWARAN_Condition()
 
 FUNC VOID Info_FreemineOrc_FIREWARAN_Info()
 {
-	AI_Output			(hero, self,"Info_FreemineOrc_FIREWARAN_15_01"); //Что такое КРОТАК?
-	AI_Output			(self, hero,"Info_FreemineOrc_FIREWARAN_17_02"); //Быть язык огня! Быть язык ящерица огня! 
+	AI_Output			(hero, self,"Info_FreemineOrc_FIREWARAN_15_01"); //Р§С‚Рѕ С‚Р°РєРѕРµ РљР РћРўРђРљ?
+	AI_Output			(self, hero,"Info_FreemineOrc_FIREWARAN_17_02"); //Р‘С‹С‚СЊ СЏР·С‹Рє РѕРіРЅСЏ! Р‘С‹С‚СЊ СЏР·С‹Рє СЏС‰РµСЂРёС†Р° РѕРіРЅСЏ! 
 	
 };
 
@@ -390,7 +390,7 @@ instance Info_FreemineOrc_FIREWARAN2 (C_INFO)
 	information	= Info_FreemineOrc_FIREWARAN2_Info;
 	important	= 0;	
 	permanent	= 0;
-	description = "Где мне искать эту огненную ящерицу?";
+	description = "Р“РґРµ РјРЅРµ РёСЃРєР°С‚СЊ СЌС‚Сѓ РѕРіРЅРµРЅРЅСѓСЋ СЏС‰РµСЂРёС†Сѓ?";
 };                       
 
 FUNC int Info_FreemineOrc_FIREWARAN2_Condition()
@@ -405,11 +405,11 @@ FUNC int Info_FreemineOrc_FIREWARAN2_Condition()
 
 FUNC VOID Info_FreemineOrc_FIREWARAN2_Info()
 {
-	AI_Output			(hero, self,"Info_FreemineOrc_FIREWARAN2_15_01"); //Где мне искать эту огненную ящерицу?
-	AI_Output			(self, hero,"Info_FreemineOrc_FIREWARAN2_17_02"); //Огненная ящерица жить дома. Дома Таррок. Незнакомец хорошо искать!
-	AI_Output			(self, hero,"Info_FreemineOrc_FIREWARAN2_17_03"); //Можно найти еще огненная ящерица на песок у моря.
+	AI_Output			(hero, self,"Info_FreemineOrc_FIREWARAN2_15_01"); //Р“РґРµ РјРЅРµ РёСЃРєР°С‚СЊ СЌС‚Сѓ РѕРіРЅРµРЅРЅСѓСЋ СЏС‰РµСЂРёС†Сѓ?
+	AI_Output			(self, hero,"Info_FreemineOrc_FIREWARAN2_17_02"); //РћРіРЅРµРЅРЅР°СЏ СЏС‰РµСЂРёС†Р° Р¶РёС‚СЊ РґРѕРјР°. Р”РѕРјР° РўР°СЂСЂРѕРє. РќРµР·РЅР°РєРѕРјРµС† С…РѕСЂРѕС€Рѕ РёСЃРєР°С‚СЊ!
+	AI_Output			(self, hero,"Info_FreemineOrc_FIREWARAN2_17_03"); //РњРѕР¶РЅРѕ РЅР°Р№С‚Рё РµС‰Рµ РѕРіРЅРµРЅРЅР°СЏ СЏС‰РµСЂРёС†Р° РЅР° РїРµСЃРѕРє Сѓ РјРѕСЂСЏ.
 
-	B_LogEntry			(CH4_UluMulu,"Тарроку нужен язык огненной ящерицы для изготовления Улу-Мулу. Эти создания обитают по большей части в орочьих районах, на песчаных пляжах. Кажется, я видел этих ящериц неподалеку от остатков корабля.");
+	B_LogEntry			(CH4_UluMulu,"РўР°СЂСЂРѕРєСѓ РЅСѓР¶РµРЅ СЏР·С‹Рє РѕРіРЅРµРЅРЅРѕР№ СЏС‰РµСЂРёС†С‹ РґР»СЏ РёР·РіРѕС‚РѕРІР»РµРЅРёСЏ РЈР»Сѓ-РњСѓР»Сѓ. Р­С‚Рё СЃРѕР·РґР°РЅРёСЏ РѕР±РёС‚Р°СЋС‚ РїРѕ Р±РѕР»СЊС€РµР№ С‡Р°СЃС‚Рё РІ РѕСЂРѕС‡СЊРёС… СЂР°Р№РѕРЅР°С…, РЅР° РїРµСЃС‡Р°РЅС‹С… РїР»СЏР¶Р°С…. РљР°Р¶РµС‚СЃСЏ, СЏ РІРёРґРµР» СЌС‚РёС… СЏС‰РµСЂРёС† РЅРµРїРѕРґР°Р»РµРєСѓ РѕС‚ РѕСЃС‚Р°С‚РєРѕРІ РєРѕСЂР°Р±Р»СЏ.");
 };
 
 //---------------------------------------------------------------------
@@ -422,7 +422,7 @@ instance Info_FreemineOrc_SHADOWBEAST (C_INFO)
 	information	= Info_FreemineOrc_SHADOWBEAST_Info;
 	important	= 0;	
 	permanent	= 0;
-	description = "Что означает ХАЗ-ТАК?";
+	description = "Р§С‚Рѕ РѕР·РЅР°С‡Р°РµС‚ РҐРђР—-РўРђРљ?";
 };                       
 
 FUNC int Info_FreemineOrc_SHADOWBEAST_Condition()
@@ -435,8 +435,8 @@ FUNC int Info_FreemineOrc_SHADOWBEAST_Condition()
 
 FUNC VOID Info_FreemineOrc_SHADOWBEAST_Info()
 {
-	AI_Output			(hero, self,"Info_FreemineOrc_SHADOWBEAST_Info_15_01"); //Что означает ХАЗ-ТАК?
-	AI_Output			(self, hero,"Info_FreemineOrc_SHADOWBEAST_Info_17_02"); //Быть рог мракориса. Острый рог, как нож, твердый, как камень.
+	AI_Output			(hero, self,"Info_FreemineOrc_SHADOWBEAST_Info_15_01"); //Р§С‚Рѕ РѕР·РЅР°С‡Р°РµС‚ РҐРђР—-РўРђРљ?
+	AI_Output			(self, hero,"Info_FreemineOrc_SHADOWBEAST_Info_17_02"); //Р‘С‹С‚СЊ СЂРѕРі РјСЂР°РєРѕСЂРёСЃР°. РћСЃС‚СЂС‹Р№ СЂРѕРі, РєР°Рє РЅРѕР¶, С‚РІРµСЂРґС‹Р№, РєР°Рє РєР°РјРµРЅСЊ.
 	
 };
 
@@ -450,7 +450,7 @@ instance Info_FreemineOrc_SHADOWBEAST2 (C_INFO)
 	information	= Info_FreemineOrc_SHADOWBEAST2_Info;
 	important	= 0;	
 	permanent	= 0;
-	description = "Где мне искать мракорисов?";
+	description = "Р“РґРµ РјРЅРµ РёСЃРєР°С‚СЊ РјСЂР°РєРѕСЂРёСЃРѕРІ?";
 };                       
 
 FUNC int Info_FreemineOrc_SHADOWBEAST2_Condition()
@@ -465,11 +465,11 @@ FUNC int Info_FreemineOrc_SHADOWBEAST2_Condition()
 
 FUNC VOID Info_FreemineOrc_SHADOWBEAST2_Info()
 {
-	AI_Output			(hero, self,"Info_FreemineOrc_SHADOWBEAST2_Info_15_01"); //Где мне искать мракорисов?
-	AI_Output			(self, hero,"Info_FreemineOrc_SHADOWBEAST2_Info_17_02"); //Жить в лес или пещера. Не любить свет.
-	AI_Output			(self, hero,"Info_FreemineOrc_SHADOWBEAST2_Info_17_03"); //Быть очень опасный. Незнакомец, осторожно!
+	AI_Output			(hero, self,"Info_FreemineOrc_SHADOWBEAST2_Info_15_01"); //Р“РґРµ РјРЅРµ РёСЃРєР°С‚СЊ РјСЂР°РєРѕСЂРёСЃРѕРІ?
+	AI_Output			(self, hero,"Info_FreemineOrc_SHADOWBEAST2_Info_17_02"); //Р–РёС‚СЊ РІ Р»РµСЃ РёР»Рё РїРµС‰РµСЂР°. РќРµ Р»СЋР±РёС‚СЊ СЃРІРµС‚.
+	AI_Output			(self, hero,"Info_FreemineOrc_SHADOWBEAST2_Info_17_03"); //Р‘С‹С‚СЊ РѕС‡РµРЅСЊ РѕРїР°СЃРЅС‹Р№. РќРµР·РЅР°РєРѕРјРµС†, РѕСЃС‚РѕСЂРѕР¶РЅРѕ!
 
-	B_LogEntry			(CH4_UluMulu,"Тарроку нужен рог мракориса для изготовления Улу-Мулу. По большей части они обитают в чащах и пещерах. Насколько мне известно, самый большой лесной массив расположен между Старым и Болотным Лагерями.");
+	B_LogEntry			(CH4_UluMulu,"РўР°СЂСЂРѕРєСѓ РЅСѓР¶РµРЅ СЂРѕРі РјСЂР°РєРѕСЂРёСЃР° РґР»СЏ РёР·РіРѕС‚РѕРІР»РµРЅРёСЏ РЈР»Сѓ-РњСѓР»Сѓ. РџРѕ Р±РѕР»СЊС€РµР№ С‡Р°СЃС‚Рё РѕРЅРё РѕР±РёС‚Р°СЋС‚ РІ С‡Р°С‰Р°С… Рё РїРµС‰РµСЂР°С…. РќР°СЃРєРѕР»СЊРєРѕ РјРЅРµ РёР·РІРµСЃС‚РЅРѕ, СЃР°РјС‹Р№ Р±РѕР»СЊС€РѕР№ Р»РµСЃРЅРѕР№ РјР°СЃСЃРёРІ СЂР°СЃРїРѕР»РѕР¶РµРЅ РјРµР¶РґСѓ РЎС‚Р°СЂС‹Рј Рё Р‘РѕР»РѕС‚РЅС‹Рј Р›Р°РіРµСЂСЏРјРё.");
 };
 
 //---------------------------------------------------------------------
@@ -482,7 +482,7 @@ instance Info_FreemineOrc_SWAMPSHARK (C_INFO)
 	information	= Info_FreemineOrc_SWAMPSHARK_Info;
 	important	= 0;	
 	permanent	= 0;
-	description = "ДВАХКАРР? А это что?";
+	description = "Р”Р’РђРҐРљРђР Р ? Рђ СЌС‚Рѕ С‡С‚Рѕ?";
 };                       
 
 FUNC int Info_FreemineOrc_SWAMPSHARK_Condition()
@@ -495,8 +495,8 @@ FUNC int Info_FreemineOrc_SWAMPSHARK_Condition()
 
 FUNC VOID Info_FreemineOrc_SWAMPSHARK_Info()
 {
-	AI_Output			(hero, self,"Info_FreemineOrc_SWAMPSHARK_15_01"); //ДВАХКАРР? А это что?
-	AI_Output			(self, hero,"Info_FreemineOrc_SWAMPSHARK_17_02"); //Быть зуб болотожора. Когда этот зуб кусать, жертва никогда не убегать.
+	AI_Output			(hero, self,"Info_FreemineOrc_SWAMPSHARK_15_01"); //Р”Р’РђРҐРљРђР Р ? Рђ СЌС‚Рѕ С‡С‚Рѕ?
+	AI_Output			(self, hero,"Info_FreemineOrc_SWAMPSHARK_17_02"); //Р‘С‹С‚СЊ Р·СѓР± Р±РѕР»РѕС‚РѕР¶РѕСЂР°. РљРѕРіРґР° СЌС‚РѕС‚ Р·СѓР± РєСѓСЃР°С‚СЊ, Р¶РµСЂС‚РІР° РЅРёРєРѕРіРґР° РЅРµ СѓР±РµРіР°С‚СЊ.
 	
 };
 
@@ -510,7 +510,7 @@ instance Info_FreemineOrc_SWAMPSHARK2 (C_INFO)
 	information	= Info_FreemineOrc_SWAMPSHARK2_Info;
 	important	= 0;	
 	permanent	= 0;
-	description = "Где мне искать болотожоров?";
+	description = "Р“РґРµ РјРЅРµ РёСЃРєР°С‚СЊ Р±РѕР»РѕС‚РѕР¶РѕСЂРѕРІ?";
 };                       
 
 FUNC int Info_FreemineOrc_SWAMPSHARK2_Condition()
@@ -525,10 +525,10 @@ FUNC int Info_FreemineOrc_SWAMPSHARK2_Condition()
 
 FUNC VOID Info_FreemineOrc_SWAMPSHARK2_Info()
 {
-	AI_Output			(hero, self,"Info_FreemineOrc_SWAMPSHARK2_15_01"); //Где мне искать болотожоров?
-	AI_Output			(self, hero,"Info_FreemineOrc_SWAMPSHARK2_17_02"); //Много болотожоров, где Лагерь людей. Тот Лагерь, где болото, конечно!
+	AI_Output			(hero, self,"Info_FreemineOrc_SWAMPSHARK2_15_01"); //Р“РґРµ РјРЅРµ РёСЃРєР°С‚СЊ Р±РѕР»РѕС‚РѕР¶РѕСЂРѕРІ?
+	AI_Output			(self, hero,"Info_FreemineOrc_SWAMPSHARK2_17_02"); //РњРЅРѕРіРѕ Р±РѕР»РѕС‚РѕР¶РѕСЂРѕРІ, РіРґРµ Р›Р°РіРµСЂСЊ Р»СЋРґРµР№. РўРѕС‚ Р›Р°РіРµСЂСЊ, РіРґРµ Р±РѕР»РѕС‚Рѕ, РєРѕРЅРµС‡РЅРѕ!
 
-	B_LogEntry			(CH4_UluMulu,"Для изготовления Улу-Мулу Тарроку нужен зуб болотожора. За Лагерем Братства можно встретить десятки этих тварей."); 
+	B_LogEntry			(CH4_UluMulu,"Р”Р»СЏ РёР·РіРѕС‚РѕРІР»РµРЅРёСЏ РЈР»Сѓ-РњСѓР»Сѓ РўР°СЂСЂРѕРєСѓ РЅСѓР¶РµРЅ Р·СѓР± Р±РѕР»РѕС‚РѕР¶РѕСЂР°. Р—Р° Р›Р°РіРµСЂРµРј Р‘СЂР°С‚СЃС‚РІР° РјРѕР¶РЅРѕ РІСЃС‚СЂРµС‚РёС‚СЊ РґРµСЃСЏС‚РєРё СЌС‚РёС… С‚РІР°СЂРµР№."); 
 };
 
 //---------------------------------------------------------------------
@@ -541,7 +541,7 @@ instance Info_FreemineOrc_TROLL (C_INFO)
 	information	= Info_FreemineOrc_TROLL_Info;
 	important	= 0;	
 	permanent	= 0;
-	description = "Что такое ОРФ-АНТАК?";
+	description = "Р§С‚Рѕ С‚Р°РєРѕРµ РћР Р¤-РђРќРўРђРљ?";
 };                       
 
 FUNC int Info_FreemineOrc_TROLL_Condition()
@@ -554,8 +554,8 @@ FUNC int Info_FreemineOrc_TROLL_Condition()
 
 FUNC VOID Info_FreemineOrc_TROLL_Info()
 {
-	AI_Output			(hero, self,"Info_FreemineOrc_TROLL_15_01"); //Что такое ОРФ-АНТАК?
-	AI_Output			(self, hero,"Info_FreemineOrc_TROLL_17_02"); //Быть зуб большой тролль! Делать большой дырка в добыча!
+	AI_Output			(hero, self,"Info_FreemineOrc_TROLL_15_01"); //Р§С‚Рѕ С‚Р°РєРѕРµ РћР Р¤-РђРќРўРђРљ?
+	AI_Output			(self, hero,"Info_FreemineOrc_TROLL_17_02"); //Р‘С‹С‚СЊ Р·СѓР± Р±РѕР»СЊС€РѕР№ С‚СЂРѕР»Р»СЊ! Р”РµР»Р°С‚СЊ Р±РѕР»СЊС€РѕР№ РґС‹СЂРєР° РІ РґРѕР±С‹С‡Р°!
 };
 
 //---------------------------------------------------------------------
@@ -568,7 +568,7 @@ instance Info_FreemineOrc_TROLL2 (C_INFO)
 	information	= Info_FreemineOrc_TROLL2_Info;
 	important	= 0;	
 	permanent	= 0;
-	description = "Где мне найти троллей?";
+	description = "Р“РґРµ РјРЅРµ РЅР°Р№С‚Рё С‚СЂРѕР»Р»РµР№?";
 };                       
 
 FUNC int Info_FreemineOrc_TROLL2_Condition()
@@ -583,12 +583,12 @@ FUNC int Info_FreemineOrc_TROLL2_Condition()
 
 FUNC VOID Info_FreemineOrc_TROLL2_Info()
 {
-	AI_Output			(hero, self,"Info_FreemineOrc_TROLL2_15_01"); //Где мне найти троллей?
-	AI_Output			(self, hero,"Info_FreemineOrc_TROLL2_17_02"); //Тролли жить, где горы! Тролли любить много место!
-	AI_Output			(self, hero,"Info_FreemineOrc_TROLL2_17_03"); //Незнакомец искать в горах на север! Но бояться кулаков троллей!
-	AI_Output			(self, hero,"Info_FreemineOrc_TROLL2_17_04"); //Когда кулак бить, незнакомец падать с горы!
+	AI_Output			(hero, self,"Info_FreemineOrc_TROLL2_15_01"); //Р“РґРµ РјРЅРµ РЅР°Р№С‚Рё С‚СЂРѕР»Р»РµР№?
+	AI_Output			(self, hero,"Info_FreemineOrc_TROLL2_17_02"); //РўСЂРѕР»Р»Рё Р¶РёС‚СЊ, РіРґРµ РіРѕСЂС‹! РўСЂРѕР»Р»Рё Р»СЋР±РёС‚СЊ РјРЅРѕРіРѕ РјРµСЃС‚Рѕ!
+	AI_Output			(self, hero,"Info_FreemineOrc_TROLL2_17_03"); //РќРµР·РЅР°РєРѕРјРµС† РёСЃРєР°С‚СЊ РІ РіРѕСЂР°С… РЅР° СЃРµРІРµСЂ! РќРѕ Р±РѕСЏС‚СЊСЃСЏ РєСѓР»Р°РєРѕРІ С‚СЂРѕР»Р»РµР№!
+	AI_Output			(self, hero,"Info_FreemineOrc_TROLL2_17_04"); //РљРѕРіРґР° РєСѓР»Р°Рє Р±РёС‚СЊ, РЅРµР·РЅР°РєРѕРјРµС† РїР°РґР°С‚СЊ СЃ РіРѕСЂС‹!
 
-	B_LogEntry			(CH4_UluMulu,"Для изготовления Улу-Мулу Тарроку нужен зуб тролля. Эти создания обитают в горах на севере колонии. Мне нужно обыскать тамошние ущелья.");
+	B_LogEntry			(CH4_UluMulu,"Р”Р»СЏ РёР·РіРѕС‚РѕРІР»РµРЅРёСЏ РЈР»Сѓ-РњСѓР»Сѓ РўР°СЂСЂРѕРєСѓ РЅСѓР¶РµРЅ Р·СѓР± С‚СЂРѕР»Р»СЏ. Р­С‚Рё СЃРѕР·РґР°РЅРёСЏ РѕР±РёС‚Р°СЋС‚ РІ РіРѕСЂР°С… РЅР° СЃРµРІРµСЂРµ РєРѕР»РѕРЅРёРё. РњРЅРµ РЅСѓР¶РЅРѕ РѕР±С‹СЃРєР°С‚СЊ С‚Р°РјРѕС€РЅРёРµ СѓС‰РµР»СЊСЏ.");
 };
 
 //---------------------------------------------------------------------
@@ -601,7 +601,7 @@ instance Info_FreemineOrc_LOOKINGULUMULU (C_INFO)
 	information	= Info_FreemineOrc_LOOKINGULUMULU_Info;
 	important	= 0;	
 	permanent	= 1;
-	description = "Я пока еще не собрал все, что нужно.";
+	description = "РЇ РїРѕРєР° РµС‰Рµ РЅРµ СЃРѕР±СЂР°Р» РІСЃРµ, С‡С‚Рѕ РЅСѓР¶РЅРѕ.";
 };                       
 
 FUNC int Info_FreemineOrc_LOOKINGULUMULU_Condition()
@@ -621,8 +621,8 @@ FUNC int Info_FreemineOrc_LOOKINGULUMULU_Condition()
 
 FUNC VOID Info_FreemineOrc_LOOKINGULUMULU_Info()
 {
-	AI_Output 			(hero, self,"Info_FreemineOrc_LOOKINGULUMULU_15_01"); //Я пока еще не собрал все, что нужно.
-	AI_Output 			(self, hero,"Info_FreemineOrc_LOOKINGULUMULU_17_02"); //Незнакомец искать. Таррок ждать здесь!
+	AI_Output 			(hero, self,"Info_FreemineOrc_LOOKINGULUMULU_15_01"); //РЇ РїРѕРєР° РµС‰Рµ РЅРµ СЃРѕР±СЂР°Р» РІСЃРµ, С‡С‚Рѕ РЅСѓР¶РЅРѕ.
+	AI_Output 			(self, hero,"Info_FreemineOrc_LOOKINGULUMULU_17_02"); //РќРµР·РЅР°РєРѕРјРµС† РёСЃРєР°С‚СЊ. РўР°СЂСЂРѕРє Р¶РґР°С‚СЊ Р·РґРµСЃСЊ!
 
 	AI_StopProcessInfos	(self);
 };
@@ -637,7 +637,7 @@ instance Info_FreemineOrc_EVERYULUMULU (C_INFO)
 	information	= Info_FreemineOrc_EVERYULUMULU_Info;
 	important	= 0;	
 	permanent	= 0;
-	description = "Я собрал все, что нужно для Улу-Мулу!";
+	description = "РЇ СЃРѕР±СЂР°Р» РІСЃРµ, С‡С‚Рѕ РЅСѓР¶РЅРѕ РґР»СЏ РЈР»Сѓ-РњСѓР»Сѓ!";
 };                       
 
 FUNC int Info_FreemineOrc_EVERYULUMULU_Condition()
@@ -654,12 +654,12 @@ FUNC int Info_FreemineOrc_EVERYULUMULU_Condition()
 
 FUNC VOID Info_FreemineOrc_EVERYULUMULU_Info()
 {
-	AI_Output			(hero, self,"Info_FreemineOrc_EVERYULUMULU_15_01"); //Я собрал все, что нужно для Улу-Мулу!
-	AI_Output			(self, hero,"Info_FreemineOrc_EVERYULUMULU_17_02"); //Незнакомец быть сильный воин! Давай вещи! Таррок готовить УЛУ-МУЛУ!
-	AI_Output 			(self, hero,"Info_FreemineOrc_EVERYULUMULU_17_03"); //Вот! Незнакомец носить УЛУ-МУЛУ и быть гордый! Таррок теперь спать!
+	AI_Output			(hero, self,"Info_FreemineOrc_EVERYULUMULU_15_01"); //РЇ СЃРѕР±СЂР°Р» РІСЃРµ, С‡С‚Рѕ РЅСѓР¶РЅРѕ РґР»СЏ РЈР»Сѓ-РњСѓР»Сѓ!
+	AI_Output			(self, hero,"Info_FreemineOrc_EVERYULUMULU_17_02"); //РќРµР·РЅР°РєРѕРјРµС† Р±С‹С‚СЊ СЃРёР»СЊРЅС‹Р№ РІРѕРёРЅ! Р”Р°РІР°Р№ РІРµС‰Рё! РўР°СЂСЂРѕРє РіРѕС‚РѕРІРёС‚СЊ РЈР›РЈ-РњРЈР›РЈ!
+	AI_Output 			(self, hero,"Info_FreemineOrc_EVERYULUMULU_17_03"); //Р’РѕС‚! РќРµР·РЅР°РєРѕРјРµС† РЅРѕСЃРёС‚СЊ РЈР›РЈ-РњРЈР›РЈ Рё Р±С‹С‚СЊ РіРѕСЂРґС‹Р№! РўР°СЂСЂРѕРє С‚РµРїРµСЂСЊ СЃРїР°С‚СЊ!
     
     CreateInvItems      (hero,  ItAt_Waran_01, 3);
-	B_GiveInvItems	    (hero, self, ItAt_Waran_01, 4); //Notwendig fьr Ausschrift "4 Gegenstдnde ьbergegen", wird sofort ausgeglichen
+	B_GiveInvItems	    (hero, self, ItAt_Waran_01, 4); //Notwendig fСЊr Ausschrift "4 GegenstРґnde СЊbergegen", wird sofort ausgeglichen
 	Npc_RemoveInvItem	(hero, ItAt_Shadow_02		);
 	Npc_RemoveInvItem	(hero, ItAt_Swampshark_02	);
 	Npc_RemoveInvItem	(hero, ItAt_Troll_02		);

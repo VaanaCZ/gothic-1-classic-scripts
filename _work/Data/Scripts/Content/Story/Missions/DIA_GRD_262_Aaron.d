@@ -29,7 +29,7 @@ instance  GRD_262_Aaron_CHEST (C_INFO)
 	information	=  GRD_262_Aaron_CHEST_Info;
 	important	= 0;	
 	permanent	= 1;
-	description = "Чем ты занимаешься?";
+	description = "Р§РµРј С‚С‹ Р·Р°РЅРёРјР°РµС€СЊСЃСЏ?";
 };                       
 
 FUNC int  GRD_262_Aaron_CHEST_Condition()
@@ -42,8 +42,8 @@ FUNC int  GRD_262_Aaron_CHEST_Condition()
 };
 FUNC VOID  GRD_262_Aaron_CHEST_Info()
 {
-	AI_Output			(other, self,"GRD_262_Aaron_CHEST_Info_15_01"); //Чем ты занимаешься?
-	AI_Output			(self, other,"GRD_262_Aaron_CHEST_Info_09_02"); //Слежу за тем, чтобы рудокопы вроде Снайпса держались подальше от моего сундука.
+	AI_Output			(other, self,"GRD_262_Aaron_CHEST_Info_15_01"); //Р§РµРј С‚С‹ Р·Р°РЅРёРјР°РµС€СЊСЃСЏ?
+	AI_Output			(self, other,"GRD_262_Aaron_CHEST_Info_09_02"); //РЎР»РµР¶Сѓ Р·Р° С‚РµРј, С‡С‚РѕР±С‹ СЂСѓРґРѕРєРѕРїС‹ РІСЂРѕРґРµ РЎРЅР°Р№РїСЃР° РґРµСЂР¶Р°Р»РёСЃСЊ РїРѕРґР°Р»СЊС€Рµ РѕС‚ РјРѕРµРіРѕ СЃСѓРЅРґСѓРєР°.
 };
 
 //***************** BLUFF *****************************
@@ -54,7 +54,7 @@ instance  GRD_262_Aaron_BLUFF (C_INFO)
 	information		= GRD_262_Aaron_BLUFF_Info;
 	important		= 0;
 	permanent		= 1;
-	description		= "(выманить Арона)"; 
+	description		= "(РІС‹РјР°РЅРёС‚СЊ РђСЂРѕРЅР°)"; 
 };
 
 FUNC int  GRD_262_Aaron_BLUFF_Condition()
@@ -71,50 +71,50 @@ FUNC void  GRD_262_Aaron_BLUFF_Info()
 {
 	Info_ClearChoices	(GRD_262_Aaron_BLUFF);
 	Info_AddChoice		(GRD_262_Aaron_BLUFF,DIALOG_BACK												,GRD_262_Aaron_BLUFF_BACK);
-	Info_AddChoice		(GRD_262_Aaron_BLUFF,"Меня прислал Ян. Ты должен отправиться к нему немедленно!",GRD_262_Aaron_BLUFF_IAN);
-	Info_AddChoice		(GRD_262_Aaron_BLUFF,"Я слышал, здесь в шахте появились бандиты. Им нужна руда.",GRD_262_Aaron_BLUFF_BANDIT);
-	Info_AddChoice		(GRD_262_Aaron_BLUFF,"Рудокопы нашли здоровенный самородок!",GRD_262_Aaron_BLUFF_ORE);
+	Info_AddChoice		(GRD_262_Aaron_BLUFF,"РњРµРЅСЏ РїСЂРёСЃР»Р°Р» РЇРЅ. РўС‹ РґРѕР»Р¶РµРЅ РѕС‚РїСЂР°РІРёС‚СЊСЃСЏ Рє РЅРµРјСѓ РЅРµРјРµРґР»РµРЅРЅРѕ!",GRD_262_Aaron_BLUFF_IAN);
+	Info_AddChoice		(GRD_262_Aaron_BLUFF,"РЇ СЃР»С‹С€Р°Р», Р·РґРµСЃСЊ РІ С€Р°С…С‚Рµ РїРѕСЏРІРёР»РёСЃСЊ Р±Р°РЅРґРёС‚С‹. РРј РЅСѓР¶РЅР° СЂСѓРґР°.",GRD_262_Aaron_BLUFF_BANDIT);
+	Info_AddChoice		(GRD_262_Aaron_BLUFF,"Р СѓРґРѕРєРѕРїС‹ РЅР°С€Р»Рё Р·РґРѕСЂРѕРІРµРЅРЅС‹Р№ СЃР°РјРѕСЂРѕРґРѕРє!",GRD_262_Aaron_BLUFF_ORE);
 };
 
 FUNC void   GRD_262_Aaron_BLUFF_ORE ()
 {
-	AI_Output			(other, self,"GRD_262_Aaron_BLUFF_ORE_15_01");//Рудокопы нашли здоровенный самородок!
-	AI_Output			(self, other,"GRD_262_Aaron_BLUFF_ORE_09_02");//И что с того?
-	AI_Output			(other, self,"GRD_262_Aaron_BLUFF_ORE_15_03");//Думаю, тебе стоит на него посмотреть!
-	AI_Output			(self, other,"GRD_262_Aaron_BLUFF_ORE_09_04");//Забудь об этом.
+	AI_Output			(other, self,"GRD_262_Aaron_BLUFF_ORE_15_01");//Р СѓРґРѕРєРѕРїС‹ РЅР°С€Р»Рё Р·РґРѕСЂРѕРІРµРЅРЅС‹Р№ СЃР°РјРѕСЂРѕРґРѕРє!
+	AI_Output			(self, other,"GRD_262_Aaron_BLUFF_ORE_09_02");//Р С‡С‚Рѕ СЃ С‚РѕРіРѕ?
+	AI_Output			(other, self,"GRD_262_Aaron_BLUFF_ORE_15_03");//Р”СѓРјР°СЋ, С‚РµР±Рµ СЃС‚РѕРёС‚ РЅР° РЅРµРіРѕ РїРѕСЃРјРѕС‚СЂРµС‚СЊ!
+	AI_Output			(self, other,"GRD_262_Aaron_BLUFF_ORE_09_04");//Р—Р°Р±СѓРґСЊ РѕР± СЌС‚РѕРј.
 };  
 FUNC VOID GRD_262_Aaron_BLUFF_BANDIT ()
 {
-	AI_Output			(other, self,"GRD_262_Aaron_BLUFF_BANDIT_15_01"); //Я слышал, здесь в шахте появились бандиты. Им нужна руда.
-	AI_Output			(self, other,"GRD_262_Aaron_BLUFF_BANDIT_09_02"); //Ты принимаешь меня за идиота? Они бы никогда не осмелились!
+	AI_Output			(other, self,"GRD_262_Aaron_BLUFF_BANDIT_15_01"); //РЇ СЃР»С‹С€Р°Р», Р·РґРµСЃСЊ РІ С€Р°С…С‚Рµ РїРѕСЏРІРёР»РёСЃСЊ Р±Р°РЅРґРёС‚С‹. РРј РЅСѓР¶РЅР° СЂСѓРґР°.
+	AI_Output			(self, other,"GRD_262_Aaron_BLUFF_BANDIT_09_02"); //РўС‹ РїСЂРёРЅРёРјР°РµС€СЊ РјРµРЅСЏ Р·Р° РёРґРёРѕС‚Р°? РћРЅРё Р±С‹ РЅРёРєРѕРіРґР° РЅРµ РѕСЃРјРµР»РёР»РёСЃСЊ!
 };
 func void  GRD_262_Aaron_BLUFF_IAN()
 {
-	AI_Output			(other, self,"GRD_262_Aaron_BLUFF_IAN_15_01"); //Меня прислал Ян. Ты должен отправиться к нему немедленно!
-	AI_Output			(self, other,"GRD_262_Aaron_BLUFF_IAN_09_02"); //Что ему нужно?
+	AI_Output			(other, self,"GRD_262_Aaron_BLUFF_IAN_15_01"); //РњРµРЅСЏ РїСЂРёСЃР»Р°Р» РЇРЅ. РўС‹ РґРѕР»Р¶РµРЅ РѕС‚РїСЂР°РІРёС‚СЊСЃСЏ Рє РЅРµРјСѓ РЅРµРјРµРґР»РµРЅРЅРѕ!
+	AI_Output			(self, other,"GRD_262_Aaron_BLUFF_IAN_09_02"); //Р§С‚Рѕ РµРјСѓ РЅСѓР¶РЅРѕ?
 	
 	Info_ClearChoices	(GRD_262_Aaron_BLUFF);
-	Info_AddChoice		(GRD_262_Aaron_BLUFF,"Понятия не имею.",GRD_262_Aaron_BLUFF_UGLY);
-	Info_AddChoice		(GRD_262_Aaron_BLUFF,"Он убьет тебя.",GRD_262_Aaron_BLUFF_BAD);
-	Info_AddChoice		(GRD_262_Aaron_BLUFF,"Он хочет наградить тебя.",GRD_262_Aaron_BLUFF_GOOD);
+	Info_AddChoice		(GRD_262_Aaron_BLUFF,"РџРѕРЅСЏС‚РёСЏ РЅРµ РёРјРµСЋ.",GRD_262_Aaron_BLUFF_UGLY);
+	Info_AddChoice		(GRD_262_Aaron_BLUFF,"РћРЅ СѓР±СЊРµС‚ С‚РµР±СЏ.",GRD_262_Aaron_BLUFF_BAD);
+	Info_AddChoice		(GRD_262_Aaron_BLUFF,"РћРЅ С…РѕС‡РµС‚ РЅР°РіСЂР°РґРёС‚СЊ С‚РµР±СЏ.",GRD_262_Aaron_BLUFF_GOOD);
 };  
 func void GRD_262_Aaron_BLUFF_GOOD ()
 {
-	AI_Output			(other, self,"GRD_262_Aaron_BLUFF_GOOD_15_01"); //Он хочет наградить тебя за хорошую работу.
-	AI_Output			(self, other,"GRD_262_Aaron_BLUFF_GOOD_09_02"); //Да ну, правда? Шел бы ты от греха подальше.
+	AI_Output			(other, self,"GRD_262_Aaron_BLUFF_GOOD_15_01"); //РћРЅ С…РѕС‡РµС‚ РЅР°РіСЂР°РґРёС‚СЊ С‚РµР±СЏ Р·Р° С…РѕСЂРѕС€СѓСЋ СЂР°Р±РѕС‚Сѓ.
+	AI_Output			(self, other,"GRD_262_Aaron_BLUFF_GOOD_09_02"); //Р”Р° РЅСѓ, РїСЂР°РІРґР°? РЁРµР» Р±С‹ С‚С‹ РѕС‚ РіСЂРµС…Р° РїРѕРґР°Р»СЊС€Рµ.
 	Npc_SetTempAttitude (self, ATT_ANGRY);
 	AI_StopProcessInfos	(self);
 };
 func void 	GRD_262_Aaron_BLUFF_BAD ()
 {
-	AI_Output			(other, self,"GRD_262_Aaron_BLUFF_BAD_15_01"); //Он накажет тебя за твою лень.
-	AI_Output			(self, other,"GRD_262_Aaron_BLUFF_BAD_09_02"); //Ну, не впервой. Проваливай!
+	AI_Output			(other, self,"GRD_262_Aaron_BLUFF_BAD_15_01"); //РћРЅ РЅР°РєР°Р¶РµС‚ С‚РµР±СЏ Р·Р° С‚РІРѕСЋ Р»РµРЅСЊ.
+	AI_Output			(self, other,"GRD_262_Aaron_BLUFF_BAD_09_02"); //РќСѓ, РЅРµ РІРїРµСЂРІРѕР№. РџСЂРѕРІР°Р»РёРІР°Р№!
 	AI_StopProcessInfos	(self);
 };
 func void GRD_262_Aaron_BLUFF_UGLY()
 {
-	AI_Output			(other, self,"GRD_262_Aaron_BLUFF_UGLY_15_01"); //Понятия не имею. Наверное он сам тебе скажет. Не думаешь же ты, что Ян будет делиться со мной своими планами?
-	AI_Output			(self, other,"GRD_262_Aaron_BLUFF_UGLY_09_02"); //Ладно, тогда я пойду к нему!
+	AI_Output			(other, self,"GRD_262_Aaron_BLUFF_UGLY_15_01"); //РџРѕРЅСЏС‚РёСЏ РЅРµ РёРјРµСЋ. РќР°РІРµСЂРЅРѕРµ РѕРЅ СЃР°Рј С‚РµР±Рµ СЃРєР°Р¶РµС‚. РќРµ РґСѓРјР°РµС€СЊ Р¶Рµ С‚С‹, С‡С‚Рѕ РЇРЅ Р±СѓРґРµС‚ РґРµР»РёС‚СЊСЃСЏ СЃРѕ РјРЅРѕР№ СЃРІРѕРёРјРё РїР»Р°РЅР°РјРё?
+	AI_Output			(self, other,"GRD_262_Aaron_BLUFF_UGLY_09_02"); //Р›Р°РґРЅРѕ, С‚РѕРіРґР° СЏ РїРѕР№РґСѓ Рє РЅРµРјСѓ!
 
 	AI_StopProcessInfos	(self);
 		
@@ -124,7 +124,7 @@ func void GRD_262_Aaron_BLUFF_UGLY()
 	Snipes_Deal = LOG_SUCCESS;
 	GRD_262_Aaron_BLUFF.permanent = 0;
 	
-	B_LogEntry		(CH2_SnipesDeal,"Я сумел отогнать Арона от сундука под тем предлогом, что Ян хочет его видеть. Надеюсь, он отнесется к этому с юмором.");
+	B_LogEntry		(CH2_SnipesDeal,"РЇ СЃСѓРјРµР» РѕС‚РѕРіРЅР°С‚СЊ РђСЂРѕРЅР° РѕС‚ СЃСѓРЅРґСѓРєР° РїРѕРґ С‚РµРј РїСЂРµРґР»РѕРіРѕРј, С‡С‚Рѕ РЇРЅ С…РѕС‡РµС‚ РµРіРѕ РІРёРґРµС‚СЊ. РќР°РґРµСЋСЃСЊ, РѕРЅ РѕС‚РЅРµСЃРµС‚СЃСЏ Рє СЌС‚РѕРјСѓ СЃ СЋРјРѕСЂРѕРј.");
 };
 
 func void GRD_262_Aaron_BLUFF_BACK()
@@ -153,16 +153,16 @@ FUNC int  GRD_262_Aaron_PISSED_Condition()
 FUNC VOID  GRD_262_Aaron_PISSED_Info()
 {
 	AI_DrawWeapon		(self);
-	AI_Output			(self, other,"Info_Aaron_PISSED_09_01"); //ЭЙ, ТЫ!!! Еще раз попытаешься выставить меня дураком, и ты покойник, понял?!
+	AI_Output			(self, other,"Info_Aaron_PISSED_09_01"); //Р­Р™, РўР«!!! Р•С‰Рµ СЂР°Р· РїРѕРїС‹С‚Р°РµС€СЊСЃСЏ РІС‹СЃС‚Р°РІРёС‚СЊ РјРµРЅСЏ РґСѓСЂР°РєРѕРј, Рё С‚С‹ РїРѕРєРѕР№РЅРёРє, РїРѕРЅСЏР»?!
 	AI_RemoveWeapon		(self);
 
 	Npc_ExchangeRoutine	(self,	"start");
 	Aaron_lock = LOG_SUCCESS;
 	
-	B_LogEntry		(CH2_SnipesDeal,"Я снова встретил Арона. Мою выходку он воспринял БЕЗ юмора."); 
+	B_LogEntry		(CH2_SnipesDeal,"РЇ СЃРЅРѕРІР° РІСЃС‚СЂРµС‚РёР» РђСЂРѕРЅР°. РњРѕСЋ РІС‹С…РѕРґРєСѓ РѕРЅ РІРѕСЃРїСЂРёРЅСЏР» Р‘Р•Р— СЋРјРѕСЂР°."); 
 };
 
-// ***************** Schlьssel verkaufen *****************************
+// ***************** SchlСЊssel verkaufen *****************************
 instance  GRD_262_Aaron_SELL (C_INFO)
 {
 	npc			=  GRD_262_Aaron;
@@ -170,7 +170,7 @@ instance  GRD_262_Aaron_SELL (C_INFO)
 	information	=  GRD_262_Aaron_SELL_Info;
 	important	= 0;	
 	permanent	= 0;
-	description = "Эй, ты ничего не потерял? К примеру, ключ от сундука? ";
+	description = "Р­Р№, С‚С‹ РЅРёС‡РµРіРѕ РЅРµ РїРѕС‚РµСЂСЏР»? Рљ РїСЂРёРјРµСЂСѓ, РєР»СЋС‡ РѕС‚ СЃСѓРЅРґСѓРєР°? ";
 };                       
 
 FUNC int  GRD_262_Aaron_SELL_Condition()
@@ -183,14 +183,14 @@ FUNC int  GRD_262_Aaron_SELL_Condition()
 
 FUNC VOID  GRD_262_Aaron_SELL_Info()
 {
-	AI_Output			(other, self,"Info_Aaron_SELL_15_01"); //Эй, ты ничего не потерял? К примеру, ключ от сундука? 
-	AI_Output			(self, other,"Info_Aaron_SELL_09_02"); //Точно. Я даже не хочу знать, как и почему ты узнал про ключ.
-	AI_Output			(self, other,"Info_Aaron_SELL_09_03"); //Но я дам тебе двадцать кусков руды, если ты вернешь его мне.
+	AI_Output			(other, self,"Info_Aaron_SELL_15_01"); //Р­Р№, С‚С‹ РЅРёС‡РµРіРѕ РЅРµ РїРѕС‚РµСЂСЏР»? Рљ РїСЂРёРјРµСЂСѓ, РєР»СЋС‡ РѕС‚ СЃСѓРЅРґСѓРєР°? 
+	AI_Output			(self, other,"Info_Aaron_SELL_09_02"); //РўРѕС‡РЅРѕ. РЇ РґР°Р¶Рµ РЅРµ С…РѕС‡Сѓ Р·РЅР°С‚СЊ, РєР°Рє Рё РїРѕС‡РµРјСѓ С‚С‹ СѓР·РЅР°Р» РїСЂРѕ РєР»СЋС‡.
+	AI_Output			(self, other,"Info_Aaron_SELL_09_03"); //РќРѕ СЏ РґР°Рј С‚РµР±Рµ РґРІР°РґС†Р°С‚СЊ РєСѓСЃРєРѕРІ СЂСѓРґС‹, РµСЃР»Рё С‚С‹ РІРµСЂРЅРµС€СЊ РµРіРѕ РјРЅРµ.
 
-	B_LogEntry		(CH2_SnipesDeal,"Арон предложил мне 20 кусков руды за ключ к его сундуку."); 
+	B_LogEntry		(CH2_SnipesDeal,"РђСЂРѕРЅ РїСЂРµРґР»РѕР¶РёР» РјРЅРµ 20 РєСѓСЃРєРѕРІ СЂСѓРґС‹ Р·Р° РєР»СЋС‡ Рє РµРіРѕ СЃСѓРЅРґСѓРєСѓ."); 
 };
 
-// ***************** Schlьssel verkaufen 2*****************************
+// ***************** SchlСЊssel verkaufen 2*****************************
 instance  GRD_262_Aaron_SELLNOW (C_INFO)
 {
 	npc			=  GRD_262_Aaron;
@@ -198,7 +198,7 @@ instance  GRD_262_Aaron_SELLNOW (C_INFO)
 	information	=  GRD_262_Aaron_SELLNOW_Info;
 	important	= 0;	
 	permanent	= 0;
-	description = "(продать ключ)";
+	description = "(РїСЂРѕРґР°С‚СЊ РєР»СЋС‡)";
 };                       
 
 FUNC int  GRD_262_Aaron_SELLNOW_Condition()
@@ -210,9 +210,9 @@ FUNC int  GRD_262_Aaron_SELLNOW_Condition()
 };
 FUNC VOID  GRD_262_Aaron_SELLNOW_Info()
 {
-	AI_Output			(other, self,"Info_Aaron_SELLNOW_15_01"); //Вот твой ключ.
-	AI_Output			(self, other,"Info_Aaron_SELLNOW_09_02"); //Да, это он. Ну, вот твои двадцать кусков, как мы и договаривались.
-	AI_Output			(self, other,"Info_Aaron_SELLNOW_09_03"); //Но учти на будущее: с этого момента я не спущу с тебя глаз! 
+	AI_Output			(other, self,"Info_Aaron_SELLNOW_15_01"); //Р’РѕС‚ С‚РІРѕР№ РєР»СЋС‡.
+	AI_Output			(self, other,"Info_Aaron_SELLNOW_09_02"); //Р”Р°, СЌС‚Рѕ РѕРЅ. РќСѓ, РІРѕС‚ С‚РІРѕРё РґРІР°РґС†Р°С‚СЊ РєСѓСЃРєРѕРІ, РєР°Рє РјС‹ Рё РґРѕРіРѕРІР°СЂРёРІР°Р»РёСЃСЊ.
+	AI_Output			(self, other,"Info_Aaron_SELLNOW_09_03"); //РќРѕ СѓС‡С‚Рё РЅР° Р±СѓРґСѓС‰РµРµ: СЃ СЌС‚РѕРіРѕ РјРѕРјРµРЅС‚Р° СЏ РЅРµ СЃРїСѓС‰Сѓ СЃ С‚РµР±СЏ РіР»Р°Р·! 
 	
 	CreateInvItems 		(self,ItMinugget,20);
 	B_GiveInvItems      (self,other,ItMinugget,20);
@@ -220,7 +220,7 @@ FUNC VOID  GRD_262_Aaron_SELLNOW_Info()
 
 	B_GiveXP			(XP_SellKeyToAaron);
 
-	B_LogEntry		(CH2_SnipesDeal,"Я продал Арону его же собственный ключ. Если посчитать, то выгодное вышло дельце."); 
+	B_LogEntry		(CH2_SnipesDeal,"РЇ РїСЂРѕРґР°Р» РђСЂРѕРЅСѓ РµРіРѕ Р¶Рµ СЃРѕР±СЃС‚РІРµРЅРЅС‹Р№ РєР»СЋС‡. Р•СЃР»Рё РїРѕСЃС‡РёС‚Р°С‚СЊ, С‚Рѕ РІС‹РіРѕРґРЅРѕРµ РІС‹С€Р»Рѕ РґРµР»СЊС†Рµ."); 
 	Log_SetTopicStatus	(CH2_SnipesDeal,	LOG_SUCCESS);
 };
 

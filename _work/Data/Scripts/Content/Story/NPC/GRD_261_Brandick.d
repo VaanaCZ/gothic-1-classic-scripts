@@ -2,7 +2,7 @@ instance GRD_261_Brandick (Npc_Default)
 {
 	//-------- primary data --------
 	
-	name 		=	"Брендик";
+	name 		=	"Р‘СЂРµРЅРґРёРє";
 	npctype		=	npctype_main;
 	guild 		=	GIL_GRD;
 	level 		=	15;

@@ -18,8 +18,8 @@ FUNC int  VLK_584_Snipes_Exit_Condition()
 
 FUNC VOID  VLK_584_Snipes_Exit_Info()
 {
-	AI_Output			(other, self,"Info_Exit_Info_15_001"); //Увидимся!
-	AI_Output			(self, other,"Info_Exit_Info_07_02"); //Да, конечно.
+	AI_Output			(other, self,"Info_Exit_Info_15_001"); //РЈРІРёРґРёРјСЃСЏ!
+	AI_Output			(self, other,"Info_Exit_Info_07_02"); //Р”Р°, РєРѕРЅРµС‡РЅРѕ.
 	
 	AI_StopProcessInfos	( self );
 };
@@ -32,7 +32,7 @@ instance  VLK_584_Snipes_DEAL (C_INFO)
 	information		= VLK_584_Snipes_DEAL_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Как жизнь?"; 
+	description		= "РљР°Рє Р¶РёР·РЅСЊ?"; 
 };
 
 FUNC int  VLK_584_Snipes_DEAL_Condition()
@@ -43,14 +43,14 @@ FUNC int  VLK_584_Snipes_DEAL_Condition()
 
 FUNC void  VLK_584_Snipes_DEAL_Info()
 {
-	AI_Output			(other, self,"VLK_584_Snipes_DEAL_Info_15_01");//Как дела?
-	AI_Output			(self, other,"VLK_584_Snipes_DEAL_Info_07_02"); //У меня есть для тебя работенка.
-	AI_Output			(self, other,"VLK_584_Snipes_DEAL_Info_07_03"); //Если ты отвлечешь Арона от сундука, я дам тебе 10 кусков руды.
+	AI_Output			(other, self,"VLK_584_Snipes_DEAL_Info_15_01");//РљР°Рє РґРµР»Р°?
+	AI_Output			(self, other,"VLK_584_Snipes_DEAL_Info_07_02"); //РЈ РјРµРЅСЏ РµСЃС‚СЊ РґР»СЏ С‚РµР±СЏ СЂР°Р±РѕС‚РµРЅРєР°.
+	AI_Output			(self, other,"VLK_584_Snipes_DEAL_Info_07_03"); //Р•СЃР»Рё С‚С‹ РѕС‚РІР»РµС‡РµС€СЊ РђСЂРѕРЅР° РѕС‚ СЃСѓРЅРґСѓРєР°, СЏ РґР°Рј С‚РµР±Рµ 10 РєСѓСЃРєРѕРІ СЂСѓРґС‹.
 	Snipes_Deal = LOG_RUNNING;
 
 	Log_CreateTopic		(CH2_SnipesDeal,	LOG_MISSION);
 	Log_SetTopicStatus	(CH2_SnipesDeal,	LOG_RUNNING);
-	B_LogEntry		(CH2_SnipesDeal,"Рудокоп Снайпс предложил мне 10 кусков руды, чтобы я отвадил стража Арона от его сундука.");
+	B_LogEntry		(CH2_SnipesDeal,"Р СѓРґРѕРєРѕРї РЎРЅР°Р№РїСЃ РїСЂРµРґР»РѕР¶РёР» РјРЅРµ 10 РєСѓСЃРєРѕРІ СЂСѓРґС‹, С‡С‚РѕР±С‹ СЏ РѕС‚РІР°РґРёР» СЃС‚СЂР°Р¶Р° РђСЂРѕРЅР° РѕС‚ РµРіРѕ СЃСѓРЅРґСѓРєР°.");
 };
 // ***************** Infos *****************************  
 instance  VLK_584_Snipes_DEAL_RUN (C_INFO)
@@ -60,7 +60,7 @@ instance  VLK_584_Snipes_DEAL_RUN (C_INFO)
 	information		= VLK_584_Snipes_DEAL_RUN_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Ты должен мне 10 кусков!"; 
+	description		= "РўС‹ РґРѕР»Р¶РµРЅ РјРЅРµ 10 РєСѓСЃРєРѕРІ!"; 
 };
 
 FUNC int  VLK_584_Snipes_DEAL_RUN_Condition()
@@ -73,16 +73,16 @@ FUNC int  VLK_584_Snipes_DEAL_RUN_Condition()
 
 FUNC void  VLK_584_Snipes_DEAL_RUN_Info()
 {
-	AI_Output			(other, self,"VLK_584_Snipes_DEAL_RUN_Info_15_01"); //Ты должен мне 10 кусков!
-	AI_Output			(self, other,"VLK_584_Snipes_DEAL_RUN_Info_07_02"); //Вот, ты заслужил их.
-	AI_Output			(self, other,"VLK_584_Snipes_DEAL_RUN_Info_07_03"); //Да, и вот еще что. У меня есть ключ от его сундука. Для тебя... Всего за 30 кусков!
+	AI_Output			(other, self,"VLK_584_Snipes_DEAL_RUN_Info_15_01"); //РўС‹ РґРѕР»Р¶РµРЅ РјРЅРµ 10 РєСѓСЃРєРѕРІ!
+	AI_Output			(self, other,"VLK_584_Snipes_DEAL_RUN_Info_07_02"); //Р’РѕС‚, С‚С‹ Р·Р°СЃР»СѓР¶РёР» РёС….
+	AI_Output			(self, other,"VLK_584_Snipes_DEAL_RUN_Info_07_03"); //Р”Р°, Рё РІРѕС‚ РµС‰Рµ С‡С‚Рѕ. РЈ РјРµРЅСЏ РµСЃС‚СЊ РєР»СЋС‡ РѕС‚ РµРіРѕ СЃСѓРЅРґСѓРєР°. Р”Р»СЏ С‚РµР±СЏ... Р’СЃРµРіРѕ Р·Р° 30 РєСѓСЃРєРѕРІ!
 	CreateInvItems		(self,ItMinugget,10);
 	B_GiveInvItems      (self, other, ItMinugget,10);
 	CreateInvItem 		(self,ItKe_OM_02);
 
 	B_GiveXP			(XP_LureAaronAway);
 	
-	B_LogEntry		(CH2_SnipesDeal,"Еще за 30 кусков Снайпс предложил мне ключ к сундуку Арона."); 
+	B_LogEntry		(CH2_SnipesDeal,"Р•С‰Рµ Р·Р° 30 РєСѓСЃРєРѕРІ РЎРЅР°Р№РїСЃ РїСЂРµРґР»РѕР¶РёР» РјРЅРµ РєР»СЋС‡ Рє СЃСѓРЅРґСѓРєСѓ РђСЂРѕРЅР°."); 
 };  
 // ***************** Infos *****************************
 instance  VLK_584_Snipes_DEAL_2 (C_INFO)
@@ -92,7 +92,7 @@ instance  VLK_584_Snipes_DEAL_2 (C_INFO)
 	information		= VLK_584_Snipes_DEAL_2_Info;
 	important		= 0;
 	permanent		= 1;
-	description		= "(купить ключ)"; 
+	description		= "(РєСѓРїРёС‚СЊ РєР»СЋС‡)"; 
 };
 
 FUNC int  VLK_584_Snipes_DEAL_2_Condition()
@@ -110,19 +110,19 @@ FUNC void  VLK_584_Snipes_DEAL_2_Info()
 	
 	if ( Npc_HasItems (hero, ItMinugget)  >= 30 ) 
 	{
-		AI_Output			(other, self,"VLK_584_Snipes_DEAL_2_Info_15_01");//Я покупаю ключ.
-		AI_Output			(self, other,"VLK_584_Snipes_DEAL_2_Info_07_02");//Хорошая сделка.
-		AI_Output			(other, self,"VLK_584_Snipes_DEAL_2_Info_15_03");//Одно только меня смущает: что с этого получаешь ты?
-		AI_Output			(self, other,"VLK_584_Snipes_DEAL_2_Info_07_04");//Всегда приятно надуть стражников. А если они найдут у меня свое барахло, я покойник.
+		AI_Output			(other, self,"VLK_584_Snipes_DEAL_2_Info_15_01");//РЇ РїРѕРєСѓРїР°СЋ РєР»СЋС‡.
+		AI_Output			(self, other,"VLK_584_Snipes_DEAL_2_Info_07_02");//РҐРѕСЂРѕС€Р°СЏ СЃРґРµР»РєР°.
+		AI_Output			(other, self,"VLK_584_Snipes_DEAL_2_Info_15_03");//РћРґРЅРѕ С‚РѕР»СЊРєРѕ РјРµРЅСЏ СЃРјСѓС‰Р°РµС‚: С‡С‚Рѕ СЃ СЌС‚РѕРіРѕ РїРѕР»СѓС‡Р°РµС€СЊ С‚С‹?
+		AI_Output			(self, other,"VLK_584_Snipes_DEAL_2_Info_07_04");//Р’СЃРµРіРґР° РїСЂРёСЏС‚РЅРѕ РЅР°РґСѓС‚СЊ СЃС‚СЂР°Р¶РЅРёРєРѕРІ. Рђ РµСЃР»Рё РѕРЅРё РЅР°Р№РґСѓС‚ Сѓ РјРµРЅСЏ СЃРІРѕРµ Р±Р°СЂР°С…Р»Рѕ, СЏ РїРѕРєРѕР№РЅРёРє.
 		
 		B_GiveInvItems 	(hero, self, ItMiNugget,30);
 		B_GiveInvItems 	(self, hero, ItKe_OM_02, 1);
 		VLK_584_Snipes_DEAL_2.permanent = 0;
 	
-		B_LogEntry		(CH2_SnipesDeal,"Я купил у Снайпса ключ к сундуку! Интересно, что будет делать Арон, когда я расскажу ему об этом?"); 
+		B_LogEntry		(CH2_SnipesDeal,"РЇ РєСѓРїРёР» Сѓ РЎРЅР°Р№РїСЃР° РєР»СЋС‡ Рє СЃСѓРЅРґСѓРєСѓ! РРЅС‚РµСЂРµСЃРЅРѕ, С‡С‚Рѕ Р±СѓРґРµС‚ РґРµР»Р°С‚СЊ РђСЂРѕРЅ, РєРѕРіРґР° СЏ СЂР°СЃСЃРєР°Р¶Сѓ РµРјСѓ РѕР± СЌС‚РѕРј?"); 
 	}
 	else
 	{
-		AI_Output			(self, other,"VLK_584_Snipes_DEAL_2_Info_07_05"); //Я сказал: 30 кусков! Ключ против руды!
+		AI_Output			(self, other,"VLK_584_Snipes_DEAL_2_Info_07_05"); //РЇ СЃРєР°Р·Р°Р»: 30 РєСѓСЃРєРѕРІ! РљР»СЋС‡ РїСЂРѕС‚РёРІ СЂСѓРґС‹!
 	};
 };  

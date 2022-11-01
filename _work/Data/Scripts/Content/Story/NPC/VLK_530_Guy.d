@@ -2,7 +2,7 @@ instance VLK_530_Guy (Npc_Default)
 {
 	//-------- primary data --------
 	
-	name =							"√‡È";
+	name =							"–ì–∞–π";
 	npctype =						npctype_Main;
 	guild =							GIL_VLK;      
 	level =							2;

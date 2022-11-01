@@ -21,8 +21,8 @@ FUNC VOID Info_HighPriest5_Info()
 	
 	if ( Npc_HasItems ( hero, Mythrilklinge02 )) || ( Npc_HasItems ( hero, UrizielRune ))
 	{
-		AI_Output 			(self, other,"Info_HighPriest5_17_04"); //УУУ ТЕЕЕБЯЯЯ ЕЕЕСТЬ МОООЩНОЕЕЕ ОРУУУЖИЕЕЕ!!!
-		AI_Output 			(self, other,"Info_HighPriest5_17_05"); //ЯЯЯЯ ОСТАААНОВЛЮЮЮ ТЕЕЕБЯЯ!!!
+		AI_Output 			(self, other,"Info_HighPriest5_17_04"); //РЈРЈРЈ РўР•Р•Р•Р‘РЇРЇРЇ Р•Р•Р•РЎРўР¬ РњРћРћРћР©РќРћР•Р•Р• РћР РЈРЈРЈР–РР•Р•Р•!!!
+		AI_Output 			(self, other,"Info_HighPriest5_17_05"); //РЇРЇРЇРЇ РћРЎРўРђРђРђРќРћР’Р›Р®Р®Р® РўР•Р•Р•Р‘РЇРЇ!!!
 
 		AI_StopProcessInfos	(self);
 		self.npctype 		= NPCTYPE_MAIN;
@@ -32,9 +32,9 @@ FUNC VOID Info_HighPriest5_Info()
 	}
 	else
 	{
-		AI_Output 			(self, other,"Info_HighPriest5_17_01"); //ТЫЫЫ ДОООЛЖЕН ПОВЕРНУУУТЬ НАЗААААД!!!
-		AI_Output 			(self, other,"Info_HighPriest5_17_02"); //НИИИКТООО НЕ СМЕЕЕЕЕЕТ ТРЕЕЕВОЖИИИИТЬ СООООН МОЕЕЕЕГО ПООООВЕЛИИИИТЕЛЯ!!!
-		AI_Output 			(other, self,"Info_HighPriest5_15_03"); //Ошибочка: ваш СПЯЩИЙ очень скоро проснется!
+		AI_Output 			(self, other,"Info_HighPriest5_17_01"); //РўР«Р«Р« Р”РћРћРћР›Р–Р•Рќ РџРћР’Р•Р РќРЈРЈРЈРўР¬ РќРђР—РђРђРђРђР”!!!
+		AI_Output 			(self, other,"Info_HighPriest5_17_02"); //РќРРРРљРўРћРћРћ РќР• РЎРњР•Р•Р•Р•Р•Р•Рў РўР Р•Р•Р•Р’РћР–РРРРРўР¬ РЎРћРћРћРћРќ РњРћР•Р•Р•Р•Р“Рћ РџРћРћРћРћР’Р•Р›РРРРРўР•Р›РЇ!!!
+		AI_Output 			(other, self,"Info_HighPriest5_15_03"); //РћС€РёР±РѕС‡РєР°: РІР°С€ РЎРџРЇР©РР™ РѕС‡РµРЅСЊ СЃРєРѕСЂРѕ РїСЂРѕСЃРЅРµС‚СЃСЏ!
 	
 		AI_StopProcessInfos	(self);
 	
@@ -65,9 +65,9 @@ FUNC INT Info_HighPriest5FAILED_Condition()
 
 FUNC VOID Info_HighPriest5FAILED_Info()
 {
-	AI_Output			(other, self,"Info_HighPriest5FAILED_15_01"); //Черт! На нем ни царапины! Нужен другой...
-	AI_Output			(self, other,"Info_HighPriest5FAILED_17_02"); //ТЕЕЕПЕЕЕРЬ ТЫЫЫ УМРЕЕЕШЬ!!!
-	AI_Output			(other, self,"Info_HighPriest5FAILED_15_03"); //Пора убираться отсюда, да побыстрее!
+	AI_Output			(other, self,"Info_HighPriest5FAILED_15_01"); //Р§РµСЂС‚! РќР° РЅРµРј РЅРё С†Р°СЂР°РїРёРЅС‹! РќСѓР¶РµРЅ РґСЂСѓРіРѕР№...
+	AI_Output			(self, other,"Info_HighPriest5FAILED_17_02"); //РўР•Р•Р•РџР•Р•Р•Р Р¬ РўР«Р«Р« РЈРњР Р•Р•Р•РЁР¬!!!
+	AI_Output			(other, self,"Info_HighPriest5FAILED_15_03"); //РџРѕСЂР° СѓР±РёСЂР°С‚СЊСЃСЏ РѕС‚СЃСЋРґР°, РґР° РїРѕР±С‹СЃС‚СЂРµРµ!
 	AI_RemoveWeapon		(other);
 	AI_TurnAway			(other,	self);	
 	
@@ -75,7 +75,7 @@ FUNC VOID Info_HighPriest5FAILED_Info()
 	Npc_SetAttitude 	(self, ATT_HOSTILE);
 	Npc_SetTempAttitude (self, ATT_HOSTILE);	
 
-	B_LogEntry			(CH4_EnterTemple,"Граш-Варраг-Арушат, очевидно, не из числа обычных орочьих шаманов. Он гораздо сильнее, а мое оружие просто не способно ему повредить. Мне нужно найти более могущественное оружие!");
+	B_LogEntry			(CH4_EnterTemple,"Р“СЂР°С€-Р’Р°СЂСЂР°Рі-РђСЂСѓС€Р°С‚, РѕС‡РµРІРёРґРЅРѕ, РЅРµ РёР· С‡РёСЃР»Р° РѕР±С‹С‡РЅС‹С… РѕСЂРѕС‡СЊРёС… С€Р°РјР°РЅРѕРІ. РћРЅ РіРѕСЂР°Р·РґРѕ СЃРёР»СЊРЅРµРµ, Р° РјРѕРµ РѕСЂСѓР¶РёРµ РїСЂРѕСЃС‚Рѕ РЅРµ СЃРїРѕСЃРѕР±РЅРѕ РµРјСѓ РїРѕРІСЂРµРґРёС‚СЊ. РњРЅРµ РЅСѓР¶РЅРѕ РЅР°Р№С‚Рё Р±РѕР»РµРµ РјРѕРіСѓС‰РµСЃС‚РІРµРЅРЅРѕРµ РѕСЂСѓР¶РёРµ!");
 	B_GiveXP			(XP_RetreatFromLastPriest);
 
 	AI_StopProcessInfos	(self);

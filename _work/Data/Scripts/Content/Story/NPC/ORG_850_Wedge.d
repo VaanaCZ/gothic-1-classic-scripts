@@ -2,7 +2,7 @@ instance ORG_850_Wedge (Npc_Default)
 {
 	//-------- primary data --------
 	
-	name =					"Ведж";
+	name =					"Р’РµРґР¶";
 	Npctype =				Npctype_Main;
 	guild =					GIL_ORG;      
 	level =					11;
