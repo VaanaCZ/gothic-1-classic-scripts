@@ -67,7 +67,7 @@ FUNC INT Info_GornFM_WAIT_Condition()
 func VOID Info_GornFM_WAIT_Info()
 {
 	AI_Output 			(hero,self,"Info_GornFM_WAIT_15_01"); //Resta dove sei, io vado a controllare!
-	AI_Output 			(self,hero,"Info_GornFM_WAIT_09_02"); //Va bene. Aspetterò all'entrata della miniera.
+	AI_Output 			(self,hero,"Info_GornFM_WAIT_09_02"); //Va bene. AspetterÃ² all'entrata della miniera.
 
 	self.aivar[AIV_PARTYMEMBER] = FALSE;
 	Npc_ExchangeRoutine	(self,	"wait");

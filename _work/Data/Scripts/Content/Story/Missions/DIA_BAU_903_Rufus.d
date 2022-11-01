@@ -67,7 +67,7 @@ FUNC VOID Info_Rufus_Wasser_Info()
 	}
 	else
 	{
-		AI_Output(self,other,"Info_Rufus_Wasser_NOWATER_02_00"); //Acqua! Ehi, è finita! Non dirmi che l'hanno avuta tutti tranne me ancora una volta!
+		AI_Output(self,other,"Info_Rufus_Wasser_NOWATER_02_00"); //Acqua! Ehi, Ã¨ finita! Non dirmi che l'hanno avuta tutti tranne me ancora una volta!
 	};
 };
 
@@ -108,7 +108,7 @@ INSTANCE DIA_Rufus_Why (C_INFO)
 	condition	= DIA_Rufus_Why_Condition;
 	information	= DIA_Rufus_Why_Info;
 	permanent	= 0;
-	description	= "Se non ti piace, perché lavori qui?";
+	description	= "Se non ti piace, perchÃ© lavori qui?";
 };                       
 
 FUNC INT DIA_Rufus_Why_Condition()
@@ -121,14 +121,14 @@ FUNC INT DIA_Rufus_Why_Condition()
 
 FUNC VOID DIA_Rufus_Why_Info()
 {	
-	AI_Output (other, self,"DIA_Rufus_Why_15_00"); //Se non ti piace, perché lavori qui?
-	AI_Output (self, other,"DIA_Rufus_Why_02_01"); //È successo il giorno che sono arrivato qui. Lefty, uno degli scagnozzi del Signore del Riso, è venuto da me e mi ha chiesto se potevo dare una mano nelle risaie.
+	AI_Output (other, self,"DIA_Rufus_Why_15_00"); //Se non ti piace, perchÃ© lavori qui?
+	AI_Output (self, other,"DIA_Rufus_Why_02_01"); //Ãˆ successo il giorno che sono arrivato qui. Lefty, uno degli scagnozzi del Signore del Riso, Ã¨ venuto da me e mi ha chiesto se potevo dare una mano nelle risaie.
 	AI_Output (self, other,"DIA_Rufus_Why_02_02"); //Certo!', gli risposi. Ero nuovo e volevo rendermi utile.
-	AI_Output (self, other,"DIA_Rufus_Why_02_03"); //Il giorno dopo, mentre mi stavo riposando, è tornato da me.
+	AI_Output (self, other,"DIA_Rufus_Why_02_03"); //Il giorno dopo, mentre mi stavo riposando, Ã¨ tornato da me.
 	AI_Output (self, other,"DIA_Rufus_Why_02_04"); //Mi ha chiesto: 'Non vorrai che i tuoi colleghi sbrighino tutto il lavoro, vero?'
 	AI_Output (self, other,"DIA_Rufus_Why_02_05"); //Gli ho detto che ero esausto per il lavoro del giorno precedente, che avevo bisogno di riposo eccetera. Ma non mi ha ascoltato.
 	AI_Output (self, other,"DIA_Rufus_Why_02_06"); //Mi ha preso per il colletto e trascinato di nuovo nel campo.
-	AI_Output (self, other,"DIA_Rufus_Why_02_07"); //Da allora, ogni giorno si fermava dietro la mia porta, finché non mi sono abituato a muovermi dal solo. Non voglio avere problemi con gente come lui.
+	AI_Output (self, other,"DIA_Rufus_Why_02_07"); //Da allora, ogni giorno si fermava dietro la mia porta, finchÃ© non mi sono abituato a muovermi dal solo. Non voglio avere problemi con gente come lui.
 	AI_Output (self, other,"DIA_Rufus_Why_02_08"); //Sono dei veri e propri tagliagole, meglio che tu ne stia alla larga.
 	var C_NPC Ricelord;			Ricelord	= Hlp_GetNpc(Bau_900_Ricelord);
 	Ricelord.aivar[AIV_FINDABLE] = TRUE;	
@@ -145,7 +145,7 @@ INSTANCE DIA_Rufus_Ricelord (C_INFO)
 	condition	= DIA_Rufus_Ricelord_Condition;
 	information	= DIA_Rufus_Ricelord_Info;
 	permanent	= 1;
-	description	= "Chi è il Signore del Riso?";
+	description	= "Chi Ã¨ il Signore del Riso?";
 };                       
 
 FUNC INT DIA_Rufus_Ricelord_Condition()
@@ -158,8 +158,8 @@ FUNC INT DIA_Rufus_Ricelord_Condition()
 
 FUNC VOID DIA_Rufus_Ricelord_Info()
 {	
-	AI_Output (other, self,"DIA_Rufus_Ricelord_15_00"); //Chi è il Signore del Riso?
-	AI_Output (self, other,"DIA_Rufus_Ricelord_02_01"); //Uno dei primi che è giunto qui. Ha dato una mano a creare il campo e ha avviato le risaie.
+	AI_Output (other, self,"DIA_Rufus_Ricelord_15_00"); //Chi Ã¨ il Signore del Riso?
+	AI_Output (self, other,"DIA_Rufus_Ricelord_02_01"); //Uno dei primi che Ã¨ giunto qui. Ha dato una mano a creare il campo e ha avviato le risaie.
 	AI_Output (self, other,"DIA_Rufus_Ricelord_02_02"); //Oramai passa tutto il tempo al magazzino a rimpinzarsi, quel porco!
 	var C_NPC Ricelord;			Ricelord	= Hlp_GetNpc(Bau_900_Ricelord);
 	Ricelord.aivar[AIV_FINDABLE] = TRUE;	

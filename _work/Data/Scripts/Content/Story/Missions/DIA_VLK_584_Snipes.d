@@ -45,12 +45,12 @@ FUNC void  VLK_584_Snipes_DEAL_Info()
 {
 	AI_Output			(other, self,"VLK_584_Snipes_DEAL_Info_15_01");//Come va?
 	AI_Output			(self, other,"VLK_584_Snipes_DEAL_Info_07_02"); //Ho un affare da proporti.
-	AI_Output			(self, other,"VLK_584_Snipes_DEAL_Info_07_03"); //Se riesci ad allontanare Aaron dallo scrigno, ti darÚ 10 pezzi di metallo!
+	AI_Output			(self, other,"VLK_584_Snipes_DEAL_Info_07_03"); //Se riesci ad allontanare Aaron dallo scrigno, ti dar√≤ 10 pezzi di metallo!
 	Snipes_Deal = LOG_RUNNING;
 
 	Log_CreateTopic		(CH2_SnipesDeal,	LOG_MISSION);
 	Log_SetTopicStatus	(CH2_SnipesDeal,	LOG_RUNNING);
-	B_LogEntry		(CH2_SnipesDeal,"Snipes il minatore mi ha offerto 10 pezzi di metallo, se allontanerÚ Aaron la guardia dal proprio scrigno!");
+	B_LogEntry		(CH2_SnipesDeal,"Snipes il minatore mi ha offerto 10 pezzi di metallo, se allontaner√≤ Aaron la guardia dal proprio scrigno!");
 };
 // ***************** Infos *****************************  
 instance  VLK_584_Snipes_DEAL_RUN (C_INFO)
@@ -82,7 +82,7 @@ FUNC void  VLK_584_Snipes_DEAL_RUN_Info()
 
 	B_GiveXP			(XP_LureAaronAway);
 	
-	B_LogEntry		(CH2_SnipesDeal,"Per altri 30 pezzi di metallo, Snipes puÚ vendermi la chiave dello scrigno di Aaron."); 
+	B_LogEntry		(CH2_SnipesDeal,"Per altri 30 pezzi di metallo, Snipes pu√≤ vendermi la chiave dello scrigno di Aaron."); 
 };  
 // ***************** Infos *****************************
 instance  VLK_584_Snipes_DEAL_2 (C_INFO)
@@ -119,10 +119,10 @@ FUNC void  VLK_584_Snipes_DEAL_2_Info()
 		B_GiveInvItems 	(self, hero, ItKe_OM_02, 1);
 		VLK_584_Snipes_DEAL_2.permanent = 0;
 	
-		B_LogEntry		(CH2_SnipesDeal,"Ho comprato la chiave dello scrigno da Snipes! Quale sar‡ la reazione di Aaron, quando gliene parlerÚ?"); 
+		B_LogEntry		(CH2_SnipesDeal,"Ho comprato la chiave dello scrigno da Snipes! Quale sar√† la reazione di Aaron, quando gliene parler√≤?"); 
 	}
 	else
 	{
-		AI_Output			(self, other,"VLK_584_Snipes_DEAL_2_Info_07_05"); //Ho detto 30 pezzi di metallo! Dammeli e ti darÚ la chiave!
+		AI_Output			(self, other,"VLK_584_Snipes_DEAL_2_Info_07_05"); //Ho detto 30 pezzi di metallo! Dammeli e ti dar√≤ la chiave!
 	};
 };  

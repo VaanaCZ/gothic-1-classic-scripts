@@ -46,7 +46,7 @@ func void  VLK_585_Aleph_CLEVER_Info()
 {
 	AI_Output (self,other,"VLK_585_Aleph_CLEVER_Info_05_01"); //He he he... Le guardie non mi prenderanno mai!
 };
-// ***************** ALEPH ERKLÄRT SEINE ARBEITSHALTUNG *****************************
+// ***************** ALEPH ERKLÃ„RT SEINE ARBEITSHALTUNG *****************************
 
 instance  VLK_585_Aleph_GUARDS (C_INFO)
 {
@@ -71,8 +71,8 @@ FUNC void  VLK_585_Aleph_GUARDS_Info()
 	AI_Output (other, self,"VLK_585_Aleph_GUARDS_Info_15_01"); //Cosa vuoi dire?
 	AI_Output (self, other,"VLK_585_Aleph_GUARDS_Info_05_02"); //Io lavoro solo se ci sono delle guardie nelle vicinanze o se possono vedermi. Il resto del tempo mi riposo.
 	AI_Output (other, self,"VLK_585_Aleph_GUARDS_Info_15_03"); //Non s'insospettiscono?
-	AI_Output (self, other,"VLK_585_Aleph_GUARDS_Info_05_04"); //Certamente! Estraggo meno metallo degli altri. Non sempre è sufficiente, quindi devo commerciare un po'.
-	AI_Output (self, other,"VLK_585_Aleph_GUARDS_Info_05_05"); //Tengo le orecchie aperte, così vengo a conoscenza di molte notizie utili. Hai per caso del metallo? Diciamo... 10 pezzi?
+	AI_Output (self, other,"VLK_585_Aleph_GUARDS_Info_05_04"); //Certamente! Estraggo meno metallo degli altri. Non sempre Ã¨ sufficiente, quindi devo commerciare un po'.
+	AI_Output (self, other,"VLK_585_Aleph_GUARDS_Info_05_05"); //Tengo le orecchie aperte, cosÃ¬ vengo a conoscenza di molte notizie utili. Hai per caso del metallo? Diciamo... 10 pezzi?
 
 	Npc_ExchangeRoutine (self,"BUSY");
 	
@@ -105,13 +105,13 @@ func void  VLK_585_Aleph_INFO_Info()
 {
 	AI_Output (other,self,"VLK_585_Aleph_INFO_Info_15_01"); //Eccoti i 10 pezzi.
 	AI_Output (self,other,"VLK_585_Aleph_INFO_Info_05_02"); //Grazie. Vai al condotto principale e segui le passerelle fino in fondo. Ti troverai di fronte a due caverne laterali.
-	AI_Output (self,other,"VLK_585_Aleph_INFO_Info_05_03"); //Nella seconda c'è una guardia e una vecchia schiacciatrice.
+	AI_Output (self,other,"VLK_585_Aleph_INFO_Info_05_03"); //Nella seconda c'Ã¨ una guardia e una vecchia schiacciatrice.
 	AI_Output (self,other,"VLK_585_Aleph_INFO_Info_05_04"); //Da qualche parte puoi trovare anche una pozione guaritrice. Ma stai attento ai pidocchi di miniera!
-	AI_Output (self,other,"VLK_585_Aleph_INFO_Info_05_05"); //Se hai bisogno di qualcosa, torna da me. Sono certo che potrò aiutarti...
+	AI_Output (self,other,"VLK_585_Aleph_INFO_Info_05_05"); //Se hai bisogno di qualcosa, torna da me. Sono certo che potrÃ² aiutarti...
 	
 	B_GiveInvItems (hero, other, ItMiNugget,10);
 };
-// ***************** WIRD ALEPH ANGESCHWÄRZT IST ER SAUER*****************************
+// ***************** WIRD ALEPH ANGESCHWÃ„RZT IST ER SAUER*****************************
 instance VLK_585_Aleph_ANGRY (C_INFO)
 {
 	npc				= VLK_585_Aleph;
@@ -183,11 +183,11 @@ func void  VLK_585_Aleph_GLEN_Info()
 {
 	
 	AI_Output (other,self,"VLK_585_Aleph_GLEN_Info_15_01"); //Spero che ne valga la pena!
-	AI_Output (self,other,"VLK_585_Aleph_GLEN_Info_05_02"); //Qui è pieno di scrigni chiusi. Glen, il minatore che si trova in cima, può darti un paio di grimaldelli.
+	AI_Output (self,other,"VLK_585_Aleph_GLEN_Info_05_02"); //Qui Ã¨ pieno di scrigni chiusi. Glen, il minatore che si trova in cima, puÃ² darti un paio di grimaldelli.
 	
 	B_GiveInvItems (hero, self, ItMinugget,10); 
 };
-//***************** LAGERSCHUPPENSCHLÜSSEL*****************************
+//***************** LAGERSCHUPPENSCHLÃœSSEL*****************************
 func void B_Aleph_StorageShedKey()
 {
 	B_LogEntry		(CH2_StorageShed,"Aleph mi ha venduto la chiave per gli scrigni del magazzino!");
@@ -232,10 +232,10 @@ func void VLK_585_Aleph_SCHUPPEN_50 ()
 	
 	if (Npc_HasItems (hero, ItMiNugget) >= 50)
 	{ 
-		AI_Output			(other,self,"VLK_585_Aleph_SCHUPPEN_50_15_01"); //50 pezzi saranno più che sufficienti!
+		AI_Output			(other,self,"VLK_585_Aleph_SCHUPPEN_50_15_01"); //50 pezzi saranno piÃ¹ che sufficienti!
 		AI_Output			(self,other,"VLK_585_Aleph_SCHUPPEN_50_05_02"); //Sei davvero generoso! Ecco la chiave. Prendi anche questo anello, mi ha sempre portato fortuna.
 
-		CreateInvItems		(self, ItKe_OM_03,	1);			// nur für die korrekte Textausgaben!!!
+		CreateInvItems		(self, ItKe_OM_03,	1);			// nur fÃ¼r die korrekte Textausgaben!!!
 		B_GiveInvItems      (self, hero, ItKe_OM_03, 2);
 		Npc_RemoveInvItem	(hero, ItKe_OM_03);
 
@@ -289,7 +289,7 @@ func void VLK_585_Aleph_SCHUPPEN_Back ()
 	VLK_585_Aleph_SCHUPPEN.permanent = 1;
 };
 
-// WENN DER SPIELER ALEPH BEI BRANDICK ANGESCHWÄRZT HAT
+// WENN DER SPIELER ALEPH BEI BRANDICK ANGESCHWÃ„RZT HAT
 instance  VLK_585_Aleph_DIRTY (C_INFO)
 {
 	npc				= VLK_585_Aleph;
@@ -342,7 +342,7 @@ func void VLK_585_Aleph_DIRTY_100()
 };
 func void VLK_585_Aleph_DIRTY_NO()
 {
-	AI_Output (other,self,"VLK_585_Aleph_DIRTY_NO_Info_15_01"); //Non ti darò 100 pezzi di metallo!
+	AI_Output (other,self,"VLK_585_Aleph_DIRTY_NO_Info_15_01"); //Non ti darÃ² 100 pezzi di metallo!
 	AI_Output (self,other,"VLK_585_Aleph_DIRTY_NO_Info_05_02"); //Ehi! Sei tu che continui a parlare con me!
 	VLK_585_Aleph_DIRTY.permanent = 0;	
 };

@@ -23,7 +23,7 @@ FUNC VOID  DIA_Fortuno_EXIT_Info()
 };
 
 // **************************************************
-//					Erste Begr¸ssung
+//					Erste Begr√ºssung
 // **************************************************
 
 instance  DIA_Fortuno_Greet (C_INFO)
@@ -74,8 +74,8 @@ FUNC VOID  DIA_Fortuno_GetGeschenk_Info()
 {
 	AI_Output (other, self,"DIA_Fortuno_GetGeschenk_15_00"); //Cos'hai per me?
 	AI_Output (self, other,"DIA_Fortuno_GetGeschenk_05_01"); //Ecco, prendi queste tre piante d'erba di palude. SI tratta di 'Buio del Nord'. Roba buona.
-	AI_Output (self, other,"DIA_Fortuno_GetGeschenk_05_02"); //Puoi averne tutti i giorni. Se ne vuoi una quantit‡ maggiore della razione giornaliera, devi pagare.
-	AI_Output (self, other,"DIA_Fortuno_GetGeschenk_05_03"); //Se trovi bacche o erbe, nelle strade che collegano i campi, portale a me e te le comprerÚ.
+	AI_Output (self, other,"DIA_Fortuno_GetGeschenk_05_02"); //Puoi averne tutti i giorni. Se ne vuoi una quantit√† maggiore della razione giornaliera, devi pagare.
+	AI_Output (self, other,"DIA_Fortuno_GetGeschenk_05_03"); //Se trovi bacche o erbe, nelle strade che collegano i campi, portale a me e te le comprer√≤.
 
 	CreateInvItems(self, itmijoint_2, 3);
 	B_GiveInvItems(self, other, itmijoint_2, 3);
@@ -86,7 +86,7 @@ FUNC VOID  DIA_Fortuno_GetGeschenk_Info()
 };
 
 // **************************************************
-//				T‰gliche Ration
+//				T√§gliche Ration
 // **************************************************
 
 instance  DIA_Fortuno_DailyRation (C_INFO)
@@ -119,7 +119,7 @@ FUNC VOID  DIA_Fortuno_DailyRation_Info()
 	}
 	else
 	{
-		AI_Output (self, other,"DIA_Fortuno_DailyRation_05_02"); //Hai gi‡ avuto la tua razione giornaliera. Se ne vuoi ancora, torna domani o compra qualcosa.
+		AI_Output (self, other,"DIA_Fortuno_DailyRation_05_02"); //Hai gi√† avuto la tua razione giornaliera. Se ne vuoi ancora, torna domani o compra qualcosa.
 	};
 };
 

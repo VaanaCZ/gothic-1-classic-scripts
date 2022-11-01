@@ -25,7 +25,7 @@ FUNC VOID Info_HighPriest2_Info()
 	AI_Output			(self, other,"Info_HighPriest2_17_02"); //CHE TU SIA DANNAAATOOOOO!
 	AI_Output			(other, self,"Info_HighPriest2_15_03"); //TU sarai dannato, vecchio zerbino puzzolente!
 	
-	B_LogEntry			(CH4_EnterTemple,"Varrag-Kasorg, un altro dei cinque orchi sciamani, terminer‡ la propria non-esistenza ai miei piedi.");
+	B_LogEntry			(CH4_EnterTemple,"Varrag-Kasorg, un altro dei cinque orchi sciamani, terminer√† la propria non-esistenza ai miei piedi.");
 
 	AI_StopProcessInfos	(self );
 

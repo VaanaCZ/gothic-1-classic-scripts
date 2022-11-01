@@ -69,7 +69,7 @@ FUNC int  KDF_401_Damarok_HEAL_Condition()
 };
 func void  KDF_401_Damarok_HEAL_Info()
 {
-	AI_Output (self, other,"KDF_401_Damarok_HEAL_Info_14_01"); //Se sarai ferito, io ti guarirò.
+	AI_Output (self, other,"KDF_401_Damarok_HEAL_Info_14_01"); //Se sarai ferito, io ti guarirÃ².
 	AI_StopProcessInfos	( self );
 };
 // ***************************** INFOS ****************************************//

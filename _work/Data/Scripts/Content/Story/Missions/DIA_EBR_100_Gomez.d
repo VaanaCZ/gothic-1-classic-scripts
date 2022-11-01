@@ -96,7 +96,7 @@ FUNC VOID DIA_Gomez_Hello_Info()
 func void DIA_Gomez_Hello_ThorusSays()
 {
 	AI_Output (other, self,"DIA_Gomez_Hello_ThorusSays_15_00"); //Thorus dice che ho superato il test della fiducia.
-	AI_Output (self, other,"DIA_Gomez_Hello_ThorusSays_11_01"); //Non saresti giunto qui vivo, se non fosse cosÏ. Spero non sia il massimo che puoi fare.
+	AI_Output (self, other,"DIA_Gomez_Hello_ThorusSays_11_01"); //Non saresti giunto qui vivo, se non fosse cos√¨. Spero non sia il massimo che puoi fare.
 };
 
 func void DIA_Gomez_Hello_Kontakte()
@@ -121,13 +121,13 @@ func void DIA_Gomez_Hello_Kontakte()
 func void DIA_Gomez_Hello_Spinner()
 {
 	AI_Output (other, self,"DIA_Gomez_Hello_Spinner_15_00"); //Qui ci sono solo stupidi! Passano tutto il tempo cercando novellini per scaricare su di loro il proprio lavoro.
-	AI_Output (self, other,"DIA_Gomez_Hello_Spinner_11_01"); //Questo puÚ essere vero, con alcune eccezioni. In ogni caso, non Ë un buon motivo per assumere un altro stupido.
+	AI_Output (self, other,"DIA_Gomez_Hello_Spinner_11_01"); //Questo pu√≤ essere vero, con alcune eccezioni. In ogni caso, non √® un buon motivo per assumere un altro stupido.
 };
 
 func void DIA_Gomez_Hello_KopfAb()
 {
 	AI_Output (other, self,"DIA_Gomez_Hello_KopfAb_15_00"); //Spero di non essere costretto a farti saltare la testa, per dimostrare che so maneggiare un'arma.
-	AI_Output (self, other,"DIA_Gomez_Hello_KopfAb_11_01"); //C'Ë un confine fra coraggio e stupidit‡.
+	AI_Output (self, other,"DIA_Gomez_Hello_KopfAb_11_01"); //C'√® un confine fra coraggio e stupidit√†.
 	
 	AI_StopProcessInfos	(self);
 	Npc_SetPermAttitude	(self, ATT_HOSTILE);
@@ -170,7 +170,7 @@ func void DIA_Gomez_Hello_Kontakte_Lee()
 {
 	AI_Output (other, self,"DIA_Gomez_Hello_Kontakte_Lee_15_00"); //Zu Lee.
 	AI_Output (self, other,"DIA_Gomez_Hello_Kontakte_Lee_11_01"); //Lee ist also ein guter Freund von dir, ja?
-	AI_Output (self, other,"DIA_Gomez_Hello_Kontakte_Lee_11_02"); //Dann sieht die Sache nat¸rlich ANDERS AUS (zornig am ENDE)
+	AI_Output (self, other,"DIA_Gomez_Hello_Kontakte_Lee_11_02"); //Dann sieht die Sache nat√ºrlich ANDERS AUS (zornig am ENDE)
 
 	AI_StopProcessInfos	(self);
 	Npc_SetPermAttitude	(self, ATT_HOSTILE);
@@ -198,7 +198,7 @@ func void DIA_Gomez_Hello_Kontakte_ThatsAll()
 	if (gomez_kontakte >= 4)	
 	{
 		AI_Output (self, other,"DIA_Gomez_Hello_Kontakte_ThatsAll_11_01"); //Non male, per un principiante....
-		AI_Output (self, other,"DIA_Gomez_Hello_Kontakte_ThatsAll_11_02"); //Ti darÚ una possibilit‡.
+		AI_Output (self, other,"DIA_Gomez_Hello_Kontakte_ThatsAll_11_02"); //Ti dar√≤ una possibilit√†.
 		Info_ClearChoices	(DIA_Gomez_Hello);
 	}
 	else
@@ -235,22 +235,22 @@ FUNC VOID DIA_Gomez_Dabei_Info()
 {
 	AI_Output (other, self,"DIA_Gomez_Dabei_15_00"); //Significa che sono stato accettato?
 	AI_Output (self, other,"DIA_Gomez_Dabei_11_01"); //Puoi scommetterci. Sei uno di noi, ragazzo.
-	AI_Output (self, other,"DIA_Gomez_Dabei_11_02"); //Raven ti spiegher‡ tutto.
+	AI_Output (self, other,"DIA_Gomez_Dabei_11_02"); //Raven ti spiegher√† tutto.
 	
 	Npc_SetTrueGuild (hero,GIL_STT );
 	hero.guild = GIL_STT;
 	B_GiveXP (XP_BecomeShadow);
-	B_LogEntry			(CH1_JoinOC,"D'ora in poi, lavorerÚ per Gomez e Campo Vecchio. Raven mi spiegher‡ tutto il resto!");
+	B_LogEntry			(CH1_JoinOC,"D'ora in poi, lavorer√≤ per Gomez e Campo Vecchio. Raven mi spiegher√† tutto il resto!");
 	Log_SetTopicStatus	(CH1_JoinOC,	LOG_SUCCESS);
 
 	// Canceln der anderen Aufnahmen
 	Log_CreateTopic		(CH1_JoinNC,	LOG_MISSION);
 	Log_SetTopicStatus	(CH1_JoinNC,	LOG_FAILED);
-	B_LogEntry			(CH1_JoinNC,"Non posso essere accettato nella banda di Lares, perchÈ lavoro per Gomez!");
+	B_LogEntry			(CH1_JoinNC,"Non posso essere accettato nella banda di Lares, perch√© lavoro per Gomez!");
 	
 	Log_CreateTopic		(CH1_JoinPsi,	LOG_MISSION);
 	Log_SetTopicStatus	(CH1_JoinPsi,	LOG_FAILED);
-	B_LogEntry			(CH1_JoinPsi,"D'ora in poi, Campo Vecchio sar‡ la mia casa. La Fratellanza del Dormiente dovr‡ fare a meno di me.");
+	B_LogEntry			(CH1_JoinPsi,"D'ora in poi, Campo Vecchio sar√† la mia casa. La Fratellanza del Dormiente dovr√† fare a meno di me.");
 	
 	AI_StopProcessInfos	(self);
 };
@@ -280,7 +280,7 @@ FUNC int DIA_Gomez_NurSo_Condition()
 FUNC VOID DIA_Gomez_NurSo_Info()
 {
 	AI_Output (other, self,"DIA_Gomez_NurSo_15_00"); //Pensavo di fare rapporto.
-	AI_Output (self, other,"DIA_Gomez_NurSo_11_00"); //Allora vai da Raven e non rivolgermi pi˘ la parola se non sei stato autorizzato!
+	AI_Output (self, other,"DIA_Gomez_NurSo_11_00"); //Allora vai da Raven e non rivolgermi pi√π la parola se non sei stato autorizzato!
 };
 
 
@@ -317,7 +317,7 @@ FUNC void  DIA_EBR_100_Gomez_Wait4SC_Info()
 	AI_Output (self, other,"DIA_EBR_100_Gomez_Wait4SC_11_02"); //Aspetta! Non sei quello che ha combattuto contro i miei uomini nella miniera libera?
 	AI_Output (other, self,"DIA_EBR_100_Gomez_Wait4SC_15_03"); //I tuoi uomini non avevano alcun diritto d'invaderla. Ho solo curato i loro attacchi di megalomania!
 	AI_Output (self, other,"DIA_EBR_100_Gomez_Wait4SC_11_04"); //Parlare in questo modo a me, a GOMEZ, dimostra un certo coraggio. Ma sei stato stupido a venire qui.
-	AI_Output (self, other,"DIA_EBR_100_Gomez_Wait4SC_11_05"); //Mi accerterÚ di persona che tu non possa pi˘ intralciare i miei piani.
+	AI_Output (self, other,"DIA_EBR_100_Gomez_Wait4SC_11_05"); //Mi accerter√≤ di persona che tu non possa pi√π intralciare i miei piani.
 	
 	AI_StopProcessInfos	( self );
 

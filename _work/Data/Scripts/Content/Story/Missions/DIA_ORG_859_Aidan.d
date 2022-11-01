@@ -46,10 +46,10 @@ func void  DIA_Aidan_Hello_Info()
 	AI_Output (other, self,"DIA_Aidan_Hello_15_00"); //Cosa stai facendo?
 	AI_Output (self, other,"DIA_Aidan_Hello_13_01"); //Sono un cacciatore. Mi guadagno da vivere vendendo pelli e denti.
 	AI_Output (other, self,"DIA_Aidan_Hello_15_02"); //Frutta abbastanza?
-	AI_Output (self, other,"DIA_Aidan_Hello_13_03"); //SÏ, se conosci il modo giusto di tagliare gli animali.
+	AI_Output (self, other,"DIA_Aidan_Hello_13_03"); //S√¨, se conosci il modo giusto di tagliare gli animali.
 
 	Log_CreateTopic	(GE_TeacherOW,	LOG_NOTE);
-	B_LogEntry		(GE_TeacherOW,"Aidan, un cacciatore che vive sulla strada fra Campo Vecchio e Campo Nuovo, puÚ insegnarmi a sventrare gli animali.");
+	B_LogEntry		(GE_TeacherOW,"Aidan, un cacciatore che vive sulla strada fra Campo Vecchio e Campo Nuovo, pu√≤ insegnarmi a sventrare gli animali.");
 };
 
 // **************************************************
@@ -88,24 +88,24 @@ FUNC VOID  Org_859_Aidan_Creatures_Info()
 
 		if (Knows_GetTeeth == FALSE)
 		{
-			Info_AddChoice   (Org_859_Aidan_Creatures,"Rimuovi i denti (costo: 1 punto abilit‡ e 50 pezzi di metallo)",Org_859_Aidan_Creatures_Zahn);
+			Info_AddChoice   (Org_859_Aidan_Creatures,"Rimuovi i denti (costo: 1 punto abilit√† e 50 pezzi di metallo)",Org_859_Aidan_Creatures_Zahn);
 		};
 		if (Knows_GetFur == FALSE)
 		{
-			Info_AddChoice	 (Org_859_Aidan_Creatures,"Rimuovi la pelliccia (costo: 1 punto abilit‡ e 100 pezzi di metallo)",Org_859_Aidan_Creatures_Fell);
+			Info_AddChoice	 (Org_859_Aidan_Creatures,"Rimuovi la pelliccia (costo: 1 punto abilit√† e 100 pezzi di metallo)",Org_859_Aidan_Creatures_Fell);
 		};
 		if (Knows_GetClaws == FALSE)
 		{
-			Info_AddChoice	 (Org_859_Aidan_Creatures,"Rimuovi gli artigli (costo: 1 punto abilit‡ e 50 pezzi di metallo)",Org_859_Aidan_Creatures_Kralle);
+			Info_AddChoice	 (Org_859_Aidan_Creatures,"Rimuovi gli artigli (costo: 1 punto abilit√† e 50 pezzi di metallo)",Org_859_Aidan_Creatures_Kralle);
 		};
 		if (Knows_GetHide == FALSE)
 		{
-			Info_AddChoice	 (Org_859_Aidan_Creatures,"Scuoia i serpenti (costo: 1 punto abilit‡ e 100 pezzi di metallo)",Org_859_Aidan_Creatures_Haut);
+			Info_AddChoice	 (Org_859_Aidan_Creatures,"Scuoia i serpenti (costo: 1 punto abilit√† e 100 pezzi di metallo)",Org_859_Aidan_Creatures_Haut);
 		};
 	}
 	else
 	{
-		AI_Output (self, other,"Org_859_Aidan_Creatures_TaughtAll_13_00"); //Ti ho insegnato tutto ciÚ che so.
+		AI_Output (self, other,"Org_859_Aidan_Creatures_TaughtAll_13_00"); //Ti ho insegnato tutto ci√≤ che so.
 	};
 };
 
@@ -128,7 +128,7 @@ func void Org_859_Aidan_Creatures_Zahn()
 			
 			PrintScreen	("Impara: estrarre i denti", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
 					
-			AI_Output (self, other,"Org_859_Aidan_Creatures_Zahn_13_01"); //La cosa pi˘ importante Ë stare attenti che non si scheggino. Punta il coltello al centro del dente ed estrailo con cura.
+			AI_Output (self, other,"Org_859_Aidan_Creatures_Zahn_13_01"); //La cosa pi√π importante √® stare attenti che non si scheggino. Punta il coltello al centro del dente ed estrailo con cura.
 			AI_Output (self, other,"Org_859_Aidan_Creatures_Zahn_13_02"); //Puoi prendere i denti a lupi, mostri d'ombra e laceratori.
 			
 			Knows_GetTeeth = TRUE;
@@ -138,12 +138,12 @@ func void Org_859_Aidan_Creatures_Zahn()
 		else
 		{
 			AI_Output (self, other,"Org_859_Aidan_Creatures_KEINE_LP_13_00"); //Dovrai fare molta esperienza, altrimenti i miei insegnamenti non serviranno a nulla.
-			PrintScreen	("Punti abilit‡ insufficienti!", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
+			PrintScreen	("Punti abilit√† insufficienti!", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
 		};
 	}
 	else
 	{
-		AI_Output (self, other,"Org_859_Aidan_Creatures_KEIN_ERZ_13_00"); //Prima voglio vedere il metallo. Come ho gi‡ detto: tutto ha un prezzo.
+		AI_Output (self, other,"Org_859_Aidan_Creatures_KEIN_ERZ_13_00"); //Prima voglio vedere il metallo. Come ho gi√† detto: tutto ha un prezzo.
 	};
 };
 
@@ -161,7 +161,7 @@ func void Org_859_Aidan_Creatures_Fell()
 			
 			PrintScreen	("Impara: scuoiare", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
 		
-			AI_Output (self, other,"Org_859_Aidan_Creatures_Fell_13_01"); //Ricorda sempre di partire da dietro. Una volta che avrai fatto pratica, ti sar‡ facile. Le pelli vengono pagate molto!
+			AI_Output (self, other,"Org_859_Aidan_Creatures_Fell_13_01"); //Ricorda sempre di partire da dietro. Una volta che avrai fatto pratica, ti sar√† facile. Le pelli vengono pagate molto!
 			AI_Output (self, other,"Org_859_Aidan_Creatures_Fell_13_02"); //Le pelli di lupo e dei mostri d'ombra sono usate per produrre vestiti. Esaminando l'animale ucciso, capirai se puoi utilizzare la sua pelle. 
 			
 			Knows_GetFur = TRUE;
@@ -171,12 +171,12 @@ func void Org_859_Aidan_Creatures_Fell()
 		else
 		{
 			AI_Output (self, other,"Org_859_Aidan_Creatures_KEINE_LP_13_00"); //Dovrai fare molta esperienza, altrimenti i miei insegnamenti non serviranno a nulla.
-			PrintScreen	("Punti abilit‡ insufficienti!", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
+			PrintScreen	("Punti abilit√† insufficienti!", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
 		};
 	}
 	else
 	{
-		AI_Output (self, other,"Org_859_Aidan_Creatures_KEIN_ERZ_13_00"); //Prima voglio vedere il metallo. Come ho gi‡ detto: tutto ha un prezzo.
+		AI_Output (self, other,"Org_859_Aidan_Creatures_KEIN_ERZ_13_00"); //Prima voglio vedere il metallo. Come ho gi√† detto: tutto ha un prezzo.
 	};
 };
 
@@ -193,7 +193,7 @@ func void Org_859_Aidan_Creatures_Kralle()
 			PrintScreen	("Impara. rimuovere le zanne", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
 			
 			AI_Output (other, self,"Org_859_Aidan_Creatures_Kralle_15_00"); //Mostrami come estrarre le mascelle!
-			AI_Output (self, other,"Org_859_Aidan_Creatures_Kralle_13_01"); //» molto semplice, se sai come fare. Spingi la mascella in avanti - mai indietro - e NON tirarla verso l'esterno!
+			AI_Output (self, other,"Org_859_Aidan_Creatures_Kralle_13_01"); //√à molto semplice, se sai come fare. Spingi la mascella in avanti - mai indietro - e NON tirarla verso l'esterno!
 			AI_Output (self, other,"Org_859_Aidan_Creatures_Kralle_13_02"); //Puoi prelevarle soprattutto dalle lucertole. D'ora in poi, saprai quali animali possono fornirti mascelle.
 			
 			Knows_GetClaws = TRUE;
@@ -203,12 +203,12 @@ func void Org_859_Aidan_Creatures_Kralle()
 		else
 		{
 			AI_Output (self, other,"Org_859_Aidan_Creatures_KEINE_LP_13_00"); //Dovrai fare molta esperienza, altrimenti i miei insegnamenti non serviranno a nulla.
-			PrintScreen	("Punti abilit‡ insufficienti!", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
+			PrintScreen	("Punti abilit√† insufficienti!", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
 		};
 	}
 	else
 	{
-		AI_Output (self, other,"Org_859_Aidan_Creatures_KEIN_ERZ_13_00"); //Prima voglio vedere il metallo. Come ho gi‡ detto: tutto ha un prezzo.
+		AI_Output (self, other,"Org_859_Aidan_Creatures_KEIN_ERZ_13_00"); //Prima voglio vedere il metallo. Come ho gi√† detto: tutto ha un prezzo.
 	};
 };
 
@@ -226,7 +226,7 @@ func void Org_859_Aidan_Creatures_Haut()
 				
 			AI_Output (other, self,"Org_859_Aidan_Creatures_Haut_15_00"); //A cosa devo stare attento, quando scuoio i rettili?
 			AI_Output (self, other,"Org_859_Aidan_Creatures_Haut_13_01"); //Gli unici rettili utili a questo scopo sono gli imboscatori e gli squali di palude.
-			AI_Output (self, other,"Org_859_Aidan_Creatures_Haut_13_02"); //Incidi la pelle sui lati e verr‡ via da sola. D'ora in poi, dovresti essere in grado di scuoiare i rettili.
+			AI_Output (self, other,"Org_859_Aidan_Creatures_Haut_13_02"); //Incidi la pelle sui lati e verr√† via da sola. D'ora in poi, dovresti essere in grado di scuoiare i rettili.
 				
 			Knows_GetHide = TRUE;
 			Log_CreateTopic (GE_AnimalTrophies,LOG_NOTE);
@@ -235,11 +235,11 @@ func void Org_859_Aidan_Creatures_Haut()
 		else
 		{
 			AI_Output (self, other,"Org_859_Aidan_Creatures_KEINE_LP_13_00"); //Dovrai fare molta esperienza, altrimenti i miei insegnamenti non serviranno a nulla.
-			PrintScreen	("Punti abilit‡ insufficienti!", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
+			PrintScreen	("Punti abilit√† insufficienti!", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
 		};
 	}
 	else
 	{
-		AI_Output (self, other,"Org_859_Aidan_Creatures_KEIN_ERZ_13_00"); //Prima voglio vedere il metallo. Come ho gi‡ detto: tutto ha un prezzo.
+		AI_Output (self, other,"Org_859_Aidan_Creatures_KEIN_ERZ_13_00"); //Prima voglio vedere il metallo. Come ho gi√† detto: tutto ha un prezzo.
 	};
 };

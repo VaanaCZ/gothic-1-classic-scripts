@@ -65,7 +65,7 @@ INSTANCE Info_Mine_Vlk_1_WichtigePersonen(C_INFO)
 	condition	= Info_Mine_Vlk_1_WichtigePersonen_Condition;
 	information	= Info_Mine_Vlk_1_WichtigePersonen_Info;
 	permanent	= 1;
-	description = "Chi è il capo, qui?";
+	description = "Chi Ã¨ il capo, qui?";
 };                       
 
 FUNC INT Info_Mine_Vlk_1_WichtigePersonen_Condition()
@@ -78,7 +78,7 @@ FUNC INT Info_Mine_Vlk_1_WichtigePersonen_Condition()
 
 FUNC VOID Info_Mine_Vlk_1_WichtigePersonen_Info()
 {
-	AI_Output(other,self,"Info_Mine_Vlk_1_WichtigePersonen_15_00"); //Chi è il capo, qui?
+	AI_Output(other,self,"Info_Mine_Vlk_1_WichtigePersonen_15_00"); //Chi Ã¨ il capo, qui?
 	AI_Output(self,other,"Info_Mine_Vlk_1_WichtigePersonen_01_01"); //Ian organizza il lavoro e gli scambi di merci con il campo. Se ti serve qualcosa, parlane con lui.
 };
 

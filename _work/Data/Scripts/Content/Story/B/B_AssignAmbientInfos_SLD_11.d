@@ -54,11 +54,11 @@ FUNC INT Info_Sld_11_EinerVonEuchWerden_Condition()
 FUNC VOID Info_Sld_11_EinerVonEuchWerden_Info()
 {
 	AI_Output(other,self,"Info_Sld_11_EinerVonEuchWerden_15_00"); //Voglio diventare un mercenario dei maghi.
-	AI_Output(self,other,"Info_Sld_11_EinerVonEuchWerden_11_01"); //Non Ë poi cosÏ difficile. Se sei disposto a combattere per la nostra causa, Lee Ë costretto ad arruolarti.
+	AI_Output(self,other,"Info_Sld_11_EinerVonEuchWerden_11_01"); //Non √® poi cos√¨ difficile. Se sei disposto a combattere per la nostra causa, Lee √® costretto ad arruolarti.
 	AI_Output(self,other,"Info_Sld_11_EinerVonEuchWerden_11_02"); //Ma prende solo gente esperta con la spada. Tu come te la cavi?
 	AI_Output(other,self,"Info_Sld_11_EinerVonEuchWerden_15_03"); //Beh...
-	AI_Output(self,other,"Info_Sld_11_EinerVonEuchWerden_11_04"); //Lo immaginavo. Se hai intenzioni serie, parla con Gorn. Ha gi‡ addestrato altri novellini.
-	AI_Output(self,other,"Info_Sld_11_EinerVonEuchWerden_11_05"); //Se sarai fortunato, trover‡ del tempo per lavorare con te.
+	AI_Output(self,other,"Info_Sld_11_EinerVonEuchWerden_11_04"); //Lo immaginavo. Se hai intenzioni serie, parla con Gorn. Ha gi√† addestrato altri novellini.
+	AI_Output(self,other,"Info_Sld_11_EinerVonEuchWerden_11_05"); //Se sarai fortunato, trover√† del tempo per lavorare con te.
 	var C_NPC Gorn;			Gorn	= Hlp_GetNpc(PC_Fighter);
 	Gorn.aivar[AIV_FINDABLE] = TRUE;
 };
@@ -85,7 +85,7 @@ FUNC VOID Info_Sld_11_WichtigePersonen_Info()
 {
 	AI_Output(other,self,"Info_Sld_11_WichtigePersonen_15_00"); //Chi comanda qui?
 	AI_Output(self,other,"Info_Sld_11_WichtigePersonen_11_01"); //Eseguiamo gli ordini dei maghi. Comunque, di solito non dicono nulla. Stanno intorno al cumulo di metallo e seppelliscono i loro nasi nei libri.
-	AI_Output(self,other,"Info_Sld_11_WichtigePersonen_11_02"); //Comunque, il capo dovrebbe essere Lee. » lui che ci d‡ gli ordini.
+	AI_Output(self,other,"Info_Sld_11_WichtigePersonen_11_02"); //Comunque, il capo dovrebbe essere Lee. √à lui che ci d√† gli ordini.
 	var C_NPC Lee;			Lee		= Hlp_GetNpc(Sld_700_Lee);
 	Lee.aivar[AIV_FINDABLE] = TRUE;
 	var C_NPC Cronos;		Cronos  = Hlp_GetNpc(KdW_604_Cronos);
@@ -139,8 +139,8 @@ FUNC VOID Info_Sld_11_DieLage_Info()
 	AI_Output(other,self,"Info_Sld_11_DieLage_15_00"); //Tutto bene?
 	AI_Output(self,other,"Info_Sld_11_DieLage_11_01"); //Per ora...
 	AI_Output(other,self,"Info_Sld_11_DieLage_15_02"); //Per ora?
-	AI_Output(self,other,"Info_Sld_11_DieLage_11_03"); //Se i ladri continuano ad attaccare i convogli di Gomez, fra non molto il suo esercito verr‡ a bussare alle nostre porte.
-	AI_Output(self,other,"Info_Sld_11_DieLage_11_04"); //E non sar‡ divertente.
+	AI_Output(self,other,"Info_Sld_11_DieLage_11_03"); //Se i ladri continuano ad attaccare i convogli di Gomez, fra non molto il suo esercito verr√† a bussare alle nostre porte.
+	AI_Output(self,other,"Info_Sld_11_DieLage_11_04"); //E non sar√† divertente.
 };
 
 // *************************************************************************
@@ -178,8 +178,8 @@ FUNC VOID Info_Sld_11_Krautprobe_Info()
 		else if (Npc_HasItems(other,ItMiJoint_3))
 		{	B_GiveInvItems(other,self,ItMiJoint_3,1);	 };
 		
-		AI_Output(self,other,"Info_Sld_11_Krautprobe_11_01"); //Certo che sÏ! Eccoti 10 pezzi di metallo!
-		AI_Output(self,other,"Info_Sld_11_Krautprobe_11_02"); //Se ne trovi ancora... SÏ, insomma...
+		AI_Output(self,other,"Info_Sld_11_Krautprobe_11_01"); //Certo che s√¨! Eccoti 10 pezzi di metallo!
+		AI_Output(self,other,"Info_Sld_11_Krautprobe_11_02"); //Se ne trovi ancora... S√¨, insomma...
 		
 		CreateInvItems(self,itminugget,10);
 		B_GiveInvItems(self,other,itminugget,10);

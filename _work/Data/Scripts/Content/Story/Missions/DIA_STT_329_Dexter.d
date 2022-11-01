@@ -23,7 +23,7 @@ FUNC VOID DIA_Dexter_Exit_Info()
 };
 
 // **************************************************
-// 					Erste Begr¸ssung
+// 					Erste Begr√ºssung
 // **************************************************
 
 INSTANCE DIA_Dexter_First (C_INFO)
@@ -60,7 +60,7 @@ INSTANCE DIA_Dexter_Kraut (C_INFO)
 	condition	= DIA_Dexter_Kraut_Condition;
 	information	= DIA_Dexter_Kraut_Info;
 	permanent	= 0;
-	description	= "Cos'Ë l'erba di palude?";
+	description	= "Cos'√® l'erba di palude?";
 };                       
 
 FUNC INT DIA_Dexter_Kraut_Condition()
@@ -70,7 +70,7 @@ FUNC INT DIA_Dexter_Kraut_Condition()
 
 FUNC VOID DIA_Dexter_Kraut_Info()
 {
-	AI_Output (other,self,"DIA_Dexter_Kraut_15_00"); //Cos'Ë l'erba di palude?
+	AI_Output (other,self,"DIA_Dexter_Kraut_15_00"); //Cos'√® l'erba di palude?
 	AI_Output (self,other,"DIA_Dexter_Kraut_10_01"); //Sei nuovo, vero? Si fuma. Noi la troviamo molto rilassante.
 };
 
@@ -136,26 +136,26 @@ FUNC INT DIA_Dexter_JoinOC_Condition()
 FUNC VOID DIA_Dexter_JoinOC_Info()
 {
 	AI_Output (other,self,"DIA_Dexter_JoinOC_15_00"); //Voglio entrare a far parte del campo e diventare un'Ombra.
-	AI_Output (self,other,"DIA_Dexter_JoinOC_10_01"); //Oh? Cerchi un'opportunit‡ per dimostrare il tuo valore?
-	AI_Output (self,other,"DIA_Dexter_JoinOC_10_02"); //Bene. Puoi farmi un favore. Se ti comporterai bene, parlerÚ di te con Diego.
+	AI_Output (self,other,"DIA_Dexter_JoinOC_10_01"); //Oh? Cerchi un'opportunit√† per dimostrare il tuo valore?
+	AI_Output (self,other,"DIA_Dexter_JoinOC_10_02"); //Bene. Puoi farmi un favore. Se ti comporterai bene, parler√≤ di te con Diego.
 	AI_Output (other,self,"DIA_Dexter_JoinOC_15_03"); //Di che si tratta?
-	AI_Output (self,other,"DIA_Dexter_JoinOC_10_04"); //Nella Setta c'Ë un uomo di nome Cor Kalom. Si tratta di un pezzo grosso: uno dei guru.
-	AI_Output (self,other,"DIA_Dexter_JoinOC_10_05"); //Kalom Ë un alchimista e possiede la ricetta di una pozione di guarigione.
-	AI_Output (self,other,"DIA_Dexter_JoinOC_10_06"); //Vorrei acquistare la ricetta, cosÏ potrei iniziare a produrla per conto mio.
+	AI_Output (self,other,"DIA_Dexter_JoinOC_10_04"); //Nella Setta c'√® un uomo di nome Cor Kalom. Si tratta di un pezzo grosso: uno dei guru.
+	AI_Output (self,other,"DIA_Dexter_JoinOC_10_05"); //Kalom √® un alchimista e possiede la ricetta di una pozione di guarigione.
+	AI_Output (self,other,"DIA_Dexter_JoinOC_10_06"); //Vorrei acquistare la ricetta, cos√¨ potrei iniziare a produrla per conto mio.
 	AI_Output (self,other,"DIA_Dexter_JoinOC_10_07"); //Ma nessuno riesce ad avvicinarsi a Kalom.
 	AI_Output (other,self,"DIA_Dexter_JoinOC_15_08"); //Cosa ti aspetti che faccia?
 	AI_Output (self,other,"DIA_Dexter_JoinOC_10_09"); //I pazzi della Setta cercano sempre nuovi adepti. Tu sei nuovo. Fai finta di voler essere reclutato.
-	AI_Output (self,other,"DIA_Dexter_JoinOC_10_10"); //Kalom Ë uno dei guru, quindi controlla i nuovi candidati. Entra in contatto con lui e cerca di ottenere la ricetta.
+	AI_Output (self,other,"DIA_Dexter_JoinOC_10_10"); //Kalom √® uno dei guru, quindi controlla i nuovi candidati. Entra in contatto con lui e cerca di ottenere la ricetta.
 	AI_Output (self,other,"DIA_Dexter_JoinOC_10_11"); //Non m'interessa se la paghi o no.
 
 	Info_ClearChoices(DIA_Dexter_JoinOC);
-	Info_AddChoice	 (DIA_Dexter_JoinOC,"Va bene. VedrÚ cosa posso fare.",DIA_Dexter_JoinOC_Ok);
-	Info_AddChoice	 (DIA_Dexter_JoinOC,"Sembra un lavoro difficile. Quale sar‡ la mia ricompensa?",DIA_Dexter_JoinOC_HowMuch);
+	Info_AddChoice	 (DIA_Dexter_JoinOC,"Va bene. Vedr√≤ cosa posso fare.",DIA_Dexter_JoinOC_Ok);
+	Info_AddChoice	 (DIA_Dexter_JoinOC,"Sembra un lavoro difficile. Quale sar√† la mia ricompensa?",DIA_Dexter_JoinOC_HowMuch);
 };
 
 func void DIA_Dexter_JoinOC_Ok()
 {
-	AI_Output (other,self,"DIA_Dexter_JoinOC_Ok_15_00"); //Va bene. VedrÚ cosa posso fare.
+	AI_Output (other,self,"DIA_Dexter_JoinOC_Ok_15_00"); //Va bene. Vedr√≤ cosa posso fare.
 	Dexter_GetKalomsRecipe = LOG_RUNNING;
 	
 	Log_CreateTopic (CH1_KalomsRecipe,LOG_MISSION);
@@ -168,15 +168,15 @@ func void DIA_Dexter_JoinOC_Ok()
 
 func void DIA_Dexter_JoinOC_HowMuch()	
 {
-	AI_Output (other,self,"DIA_Dexter_JoinOC_HowMuch_15_00"); //Sembra un lavoro difficile. Quale sar‡ la mia ricompensa?
-	AI_Output (self,other,"DIA_Dexter_JoinOC_HowMuch_10_01"); //Prima o poi, Diego mi chieder‡ se ti reputo adatto a far parte del nostro campo. Indovina da cosa dipender‡ la mia risposta.
+	AI_Output (other,self,"DIA_Dexter_JoinOC_HowMuch_15_00"); //Sembra un lavoro difficile. Quale sar√† la mia ricompensa?
+	AI_Output (self,other,"DIA_Dexter_JoinOC_HowMuch_10_01"); //Prima o poi, Diego mi chieder√† se ti reputo adatto a far parte del nostro campo. Indovina da cosa dipender√† la mia risposta.
 	
-	Info_AddChoice	 (DIA_Dexter_JoinOC,"Forse dovrÚ pagare per la ricetta. Dammi un anticipo di 50 pezzi di metallo.",DIA_Dexter_JoinOC_Advance);
+	Info_AddChoice	 (DIA_Dexter_JoinOC,"Forse dovr√≤ pagare per la ricetta. Dammi un anticipo di 50 pezzi di metallo.",DIA_Dexter_JoinOC_Advance);
 };
 
 func void DIA_Dexter_JoinOC_Advance()
 {
-	AI_Output (other,self,"DIA_Dexter_JoinOC_Advance_15_00"); //Forse dovrÚ pagare per la ricetta. Dammi un anticipo di 50 pezzi di metallo.
+	AI_Output (other,self,"DIA_Dexter_JoinOC_Advance_15_00"); //Forse dovr√≤ pagare per la ricetta. Dammi un anticipo di 50 pezzi di metallo.
 	AI_Output (self,other,"DIA_Dexter_JoinOC_Advance_10_01"); //Scordatelo.
 	
 	Info_AddChoice	 (DIA_Dexter_JoinOC,"Niente metallo, niente ricetta!",DIA_Dexter_JoinOC_Threat);
@@ -201,8 +201,8 @@ func void DIA_Dexter_JoinOC_OreNowOrElse()
 func void DIA_Dexter_JoinOC_ForgetIt()
 {
 	AI_Output (other,self,"DIA_Dexter_JoinOC_ForgetIt_15_00"); //D'accordo, lasciamo stare.
-	AI_Output (self,other,"DIA_Dexter_JoinOC_ForgetIt_10_01"); //Non cosÏ in fretta! Volevo solo vedere fino a che punto ti saresti spinto... 50 pezzi di metallo sono molti per un nuovo arrivato, non credi?
-	AI_Output (other,self,"DIA_Dexter_JoinOC_ForgetIt_15_02"); //CosÏ va meglio.
+	AI_Output (self,other,"DIA_Dexter_JoinOC_ForgetIt_10_01"); //Non cos√¨ in fretta! Volevo solo vedere fino a che punto ti saresti spinto... 50 pezzi di metallo sono molti per un nuovo arrivato, non credi?
+	AI_Output (other,self,"DIA_Dexter_JoinOC_ForgetIt_15_02"); //Cos√¨ va meglio.
 	AI_Output (self,other,"DIA_Dexter_JoinOC_ForgetIt_10_03"); //D'accordo. Ho giusto 50 pezzi da parte. Non deludermi, ragazzo!
 	
 	Dexter_GetKalomsRecipe = LOG_RUNNING;
@@ -245,12 +245,12 @@ FUNC INT DIA_Dexter_WhereST_Condition()
 FUNC VOID DIA_Dexter_WhereST_Info()
 {
 	AI_Output (other,self,"DIA_Dexter_WhereST_15_00"); //Dove si trova la Setta?
-	AI_Output (self,other,"DIA_Dexter_WhereST_10_01"); //Esci dal campo attraverso la porta a sud, quindi dirigiti a est. Ti servir‡ una mappa...
+	AI_Output (self,other,"DIA_Dexter_WhereST_10_01"); //Esci dal campo attraverso la porta a sud, quindi dirigiti a est. Ti servir√† una mappa...
 	
-	if (Npc_HasItems(self,ItWrWorldmap) >0)														//Bjˆrn
-		{																						//Bjˆrn
+	if (Npc_HasItems(self,ItWrWorldmap) >0)														//Bj√∂rn
+		{																						//Bj√∂rn
 			AI_Output (self,other,"DIA_Dexter_WhereST_10_02"); //Ne ho una che costa 50 pezzi di metallo...
-		};																						//Bjˆrn
+		};																						//Bj√∂rn
 	
 	AI_Output (other,self,"DIA_Dexter_WhereST_15_02"); //La porta a sud sarebbe la torre crollata, vero?
 	AI_Output (self,other,"DIA_Dexter_WhereST_10_03"); //Esattamente.
@@ -292,7 +292,7 @@ FUNC VOID DIA_Dexter_KalomsRecipeSuccess_Info()
 	B_UseFakeScroll();
 	
 	AI_Output (self,other,"DIA_Dexter_KalomsRecipeSuccess_10_02"); //Ottimo! Ora posso iniziare a produrre le pozioni da solo.
-	AI_Output (self,other,"DIA_Dexter_KalomsRecipeSuccess_10_03"); //Sui un brav'uomo! Lo dirÚ a Diego!
+	AI_Output (self,other,"DIA_Dexter_KalomsRecipeSuccess_10_03"); //Sui un brav'uomo! Lo dir√≤ a Diego!
 	AI_Output (self,other,"DIA_Dexter_KalomsRecipeSuccess_10_04"); //Ecco! Prendi questo per il tuo sforzo...
 	
 	CreateInvItems (other,itminugget,50);
@@ -304,12 +304,12 @@ FUNC VOID DIA_Dexter_KalomsRecipeSuccess_Info()
 	if (Npc_GetTrueGuild (hero) == GIL_NONE)
 	{
 		Log_SetTopicStatus(CH1_KalomsRecipe, LOG_SUCCESS);
-		B_LogEntry    (CH1_KalomsRecipe,"Dexter Ë rimasto favorevolmente colpito. Sono sicuro che parler‡ bene di me con Diego.");
+		B_LogEntry    (CH1_KalomsRecipe,"Dexter √® rimasto favorevolmente colpito. Sono sicuro che parler√† bene di me con Diego.");
 	}
 	else
 	{
 		Log_SetTopicStatus(CH1_KalomsRecipe, LOG_SUCCESS);
-		B_LogEntry    (CH1_KalomsRecipe,"Dexter Ë rimasto favorevolmente colpito. Purtroppo, non mi servir‡ a nulla: non posso pi˘ diventare un'Ombra.");
+		B_LogEntry    (CH1_KalomsRecipe,"Dexter √® rimasto favorevolmente colpito. Purtroppo, non mi servir√† a nulla: non posso pi√π diventare un'Ombra.");
 	};
 	B_GiveXP (XP_DexterKalom);
 };

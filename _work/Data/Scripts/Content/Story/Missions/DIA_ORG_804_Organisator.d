@@ -26,7 +26,7 @@ FUNC VOID  Org_804_Organisator_Exit_Info()
 };
 
 // **************************************************
-//					Erste Begrüssung
+//					Erste BegrÃ¼ssung
 // **************************************************
 
 instance  Org_804_Organisator_Greet (C_INFO)
@@ -104,9 +104,9 @@ FUNC int  Org_804_Organisator_ToLares_Condition()
 FUNC VOID  Org_804_Organisator_ToLares_Info()
 {
 	AI_Output (other, self,"Org_804_Organisator_ToLares_15_00"); //Voglio vedere Lares.
-	AI_Output (self, other,"Org_804_Organisator_ToLares_06_01"); //Dubito che vorrà parlarti.
+	AI_Output (self, other,"Org_804_Organisator_ToLares_06_01"); //Dubito che vorrÃ  parlarti.
 	AI_Output (other, self,"Org_804_Organisator_ToLares_15_02"); //Lascia fare a me.
-	AI_Output (self, other,"Org_804_Organisator_ToLares_06_03"); //Non ti fermerò.
+	AI_Output (self, other,"Org_804_Organisator_ToLares_06_03"); //Non ti fermerÃ².
 	AI_StopProcessInfos	(self);
 };
 
@@ -210,7 +210,7 @@ func int Info_Org_804_LastWarn_Condition()
 
 func int Info_Org_804_LastWarn_Info()
 {
-	AI_Output (self, hero,"Info_Org_804_LastWarn_06_00"); //Vattene, finché puoi farlo con le tue gambe!
+	AI_Output (self, hero,"Info_Org_804_LastWarn_06_00"); //Vattene, finchÃ© puoi farlo con le tue gambe!
 
 	hero.aivar[AIV_LASTDISTTOWP] 		= Npc_GetDistToWP (hero,Org_804_CHECKPOINT);
 	hero.aivar[AIV_GUARDPASSAGE_STATUS]	= AIV_GPS_LASTWARN;	
@@ -250,7 +250,7 @@ func int Info_Org_804_Attack_Info()
 	hero.aivar[AIV_GUARDPASSAGE_STATUS]	= AIV_GPS_PUNISH;	
 	
 	B_FullStop			(self);	
-	AI_StopProcessInfos	(self);					// dem Spieler sofort wieder die Kontrolle zurückgeben
+	AI_StopProcessInfos	(self);					// dem Spieler sofort wieder die Kontrolle zurÃ¼ckgeben
 	B_IntruderAlert		(self,	other);
 	B_SetAttackReason	(self,	AIV_AR_INTRUDER);
 	Npc_SetTarget		(self,	hero);

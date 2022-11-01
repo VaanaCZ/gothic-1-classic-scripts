@@ -48,7 +48,7 @@ FUNC INT Info_Bau_2_WichtigePersonen_Condition()
 FUNC VOID Info_Bau_2_WichtigePersonen_Info()
 {
 	AI_Output(other,self,"Info_Bau_2_WichtigePersonen_15_00"); //Ti sei offerto volontario per lavorare nella risaia?
-	AI_Output(self,other,"Info_Bau_2_WichtigePersonen_02_01"); //Sì, esatto. Meglio lavorare qui per tua volontà, che essere costretto dagli scagnozzi del Signore del Riso.
+	AI_Output(self,other,"Info_Bau_2_WichtigePersonen_02_01"); //SÃ¬, esatto. Meglio lavorare qui per tua volontÃ , che essere costretto dagli scagnozzi del Signore del Riso.
 	AI_Output(other,self,"Info_Bau_2_WichtigePersonen_15_02"); //Capisco...
 	var C_NPC Ricelord;			Ricelord	= Hlp_GetNpc(Bau_900_Ricelord);
 	Ricelord.aivar[AIV_FINDABLE] = TRUE;	
@@ -103,7 +103,7 @@ FUNC INT Info_Bau_2_DieLage_Condition()
 FUNC VOID Info_Bau_2_DieLage_Info()
 {
 	AI_Output(other,self,"Info_Bau_2_DieLage_15_00"); //Tutto a posto?
-	AI_Output(self,other,"Info_Bau_2_DieLage_02_01"); //Cosa vuoi? Ti ha mandato il Signore del Riso? Sto lavorando più che posso!
+	AI_Output(self,other,"Info_Bau_2_DieLage_02_01"); //Cosa vuoi? Ti ha mandato il Signore del Riso? Sto lavorando piÃ¹ che posso!
 	AI_Output(other,self,"Info_Bau_2_DieLage_15_02"); //Non mi manda nessuno, voglio solo parlare.
 	var C_NPC Ricelord;			Ricelord	= Hlp_GetNpc(Bau_900_Ricelord);
 	Ricelord.aivar[AIV_FINDABLE] = TRUE;	
@@ -155,7 +155,7 @@ FUNC VOID Info_Bau_2_Wasser_Info()
 	}
 	else
 	{
-		AI_Output(self,other,"Info_Bau_2_Wasser_NOWATER_02_00"); //Acqua! Ehi, è finita! Non dirmi che l'hanno avuta tutti tranne me ancora una volta!
+		AI_Output(self,other,"Info_Bau_2_Wasser_NOWATER_02_00"); //Acqua! Ehi, Ã¨ finita! Non dirmi che l'hanno avuta tutti tranne me ancora una volta!
 	};
 };
 	

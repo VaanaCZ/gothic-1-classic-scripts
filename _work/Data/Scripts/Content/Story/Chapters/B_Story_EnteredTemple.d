@@ -1,7 +1,7 @@
 func void B_Story_EnteredTemple()
 {
-	//-------- Tagebucheinträge --------
-	B_LogEntry		(CH4_EnterTemple,"Sono riuscito a entrare nel tempio del Dormiente. Non ho la più pallida idea di cosa mi aspetti, ma lo scoprirò.");
+	//-------- TagebucheintrÃ¤ge --------
+	B_LogEntry		(CH4_EnterTemple,"Sono riuscito a entrare nel tempio del Dormiente. Non ho la piÃ¹ pallida idea di cosa mi aspetti, ma lo scoprirÃ².");
 	
 	//-------- Monster platziern --------
 

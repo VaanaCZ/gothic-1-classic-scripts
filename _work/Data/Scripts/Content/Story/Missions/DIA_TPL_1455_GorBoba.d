@@ -39,15 +39,15 @@ FUNC int Info_TPL_1455_GorBoba1_Condition()
 func void Info_TPL_1455_GorBoba1_Info()
 {
 	AI_Output (other, self,"Info_TPL_1455_GorBoba1_15_01"); //E TU avresti intenzione di fermarmi?
-	AI_Output (self, other,"Info_TPL_1455_GorBoba1_08_02"); //SÃ! TI fermerÚ! Non impedirai al maestro Kalom dievocare il Dormiente.
+	AI_Output (self, other,"Info_TPL_1455_GorBoba1_08_02"); //S√å! TI fermer√≤! Non impedirai al maestro Kalom dievocare il Dormiente.
 	AI_Output (self, other,"Info_TPL_1455_GorBoba1_08_03"); //Non tentare d'attaccarmi. L'alto sacerdote ha passato parte dei suoi poteri al maestro Kalom e a noi. Ora siamo immortali.
-	AI_Output (other, self,"Info_TPL_1455_GorBoba1_15_04"); //Ti farÚ vedere quanto sei immortale!
+	AI_Output (other, self,"Info_TPL_1455_GorBoba1_15_04"); //Ti far√≤ vedere quanto sei immortale!
 	AI_Output (self, other,"Info_TPL_1455_GorBoba1_08_05"); //Preparati a incontrare il tuo creatore!
 
 	AI_StopProcessInfos	( self );
 	
 	Log_CreateTopic        ( "Orktempel", LOG_NOTE );
-	B_LogEntry            ( "Orktempel","GorBoba voleva fermarmi. Mi ha detto che Kalom e i suoi seguaci hanno ottenuto dagli alti sacerdoti l'invulnerabilit‡ alle armi degli umani."); 
+	B_LogEntry            ( "Orktempel","GorBoba voleva fermarmi. Mi ha detto che Kalom e i suoi seguaci hanno ottenuto dagli alti sacerdoti l'invulnerabilit√† alle armi degli umani."); 
 
 	Npc_SetAttitude 		( self, ATT_HOSTILE );
 	Npc_SetTempAttitude 	( self, ATT_HOSTILE );	

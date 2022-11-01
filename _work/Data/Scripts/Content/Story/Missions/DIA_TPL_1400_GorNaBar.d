@@ -51,14 +51,14 @@ FUNC void  Tpl_1400_GorNaBar_SUGGEST_Info()
 	AI_Output			(other, self,"Tpl_1400_GorNaBar_SUGGEST_Info_15_01"); //Ho bisogno del tuo aiuto.
 	AI_Output			(other, self,"Tpl_1400_GorNaBar_SUGGEST_Info_15_02"); //Sto cercando una secrezione per Kalom e credo di sapere dove si trovi il nido dei pidocchi di miniera.
 	AI_Output			(other, self,"Tpl_1400_GorNaBar_SUGGEST_Info_15_03"); //Se apriamo il passaggio, sarai dei nostri?
-	AI_Output			(self, other,"Tpl_1400_GorNaBar_SUGGEST_Info_09_04"); //Il nido dei pidocchi di miniera! Finalmente! La mia spada Ë al tuo servizio!
+	AI_Output			(self, other,"Tpl_1400_GorNaBar_SUGGEST_Info_09_04"); //Il nido dei pidocchi di miniera! Finalmente! La mia spada √® al tuo servizio!
 
 	AI_StopProcessInfos	(self);
 	Npc_ExchangeRoutine (self,"GATE"); 
 	Npc_SetPermAttitude (self,ATT_FRIENDLY); 
 	B_GiveXP			(XP_HireGorNaBar);
 
-	B_LogEntry		(CH2_MCEggs,"Quando ho menzionato il nido dei pidocchi di miniera, il templare Gor Na Bar ha deciso di unirsi a me. Lo troverÚ al cancello di Asghan.");
+	B_LogEntry		(CH2_MCEggs,"Quando ho menzionato il nido dei pidocchi di miniera, il templare Gor Na Bar ha deciso di unirsi a me. Lo trover√≤ al cancello di Asghan.");
 };
 
 // ***************** Infos *****************************
@@ -113,5 +113,5 @@ FUNC void  Tpl_1400_GorNaBar_VICTORY_Info()
 	AI_Output			(self, other,"Tpl_1400_GorNaBar_VICTORY_Info_09_02"); //Hai dimostrato di possedere coraggio e iniziativa. Abbiamo bisogno di gente come te!
 	
 	Log_CreateTopic (GE_BecomeTemplar,LOG_NOTE);
-	B_LogEntry (GE_BecomeTemplar,"Dopo aver riportato le uova, dovrÚ parlare con Cor Angar. Forse mi permetter‡ d'unirmi ai templari.");
+	B_LogEntry (GE_BecomeTemplar,"Dopo aver riportato le uova, dovr√≤ parlare con Cor Angar. Forse mi permetter√† d'unirmi ai templari.");
 };  

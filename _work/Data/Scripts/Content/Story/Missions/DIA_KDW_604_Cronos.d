@@ -40,7 +40,7 @@ instance  KDW_604_Cronos_Greet (C_INFO)
 	condition	=  KDW_604_Cronos_Greet_Condition;
 	information	=  KDW_604_Cronos_Greet_Info;
 	permanent	=  0;
-	description = "Ich gr¸ﬂe dich, Magier.";
+	description = "Ich gr√º√üe dich, Magier.";
 };                       
 
 FUNC int  KDW_604_Cronos_Greet_Condition()
@@ -50,8 +50,8 @@ FUNC int  KDW_604_Cronos_Greet_Condition()
 
 FUNC VOID  KDW_604_Cronos_Greet_Info()
 {
-	AI_Output (other, self,"DIA_Cronos_Greet_15_00"); //Ich gr¸ﬂe dich, Magier.
-	AI_Output (self, other,"DIA_Cronos_Greet_08_01"); //Warum stˆrst du den H¸ter des Erzes?
+	AI_Output (other, self,"DIA_Cronos_Greet_15_00"); //Ich gr√º√üe dich, Magier.
+	AI_Output (self, other,"DIA_Cronos_Greet_08_01"); //Warum st√∂rst du den H√ºter des Erzes?
 };
 */
 
@@ -114,10 +114,10 @@ FUNC int  KDW_604_Cronos_Barrier_Condition()
 FUNC VOID  KDW_604_Cronos_Barrier_Info()
 {
 	AI_Output (other, self,"DIA_Cronos_Barrier_15_00"); //Esattamente, come avete intenzione di distruggere la Barriera?
-	AI_Output (self, other,"DIA_Cronos_Barrier_08_01"); //Abbiamo bisogno di una gran quantit‡ di metallo magico.
+	AI_Output (self, other,"DIA_Cronos_Barrier_08_01"); //Abbiamo bisogno di una gran quantit√† di metallo magico.
 	AI_Output (self, other,"DIA_Cronos_Barrier_08_02"); //Durante una cerimonia, sprigioneremo l'intero potere magico per distruggere la Barriera.
-	AI_Output (self, other,"DIA_Cronos_Barrier_08_03"); //Ovviamente una tale quantit‡ di metallo attira ladri e balordi.
-	AI_Output (self, other,"DIA_Cronos_Barrier_08_04"); //Ecco perchÈ abbiamo bisogno che qualcuno ci difenda.
+	AI_Output (self, other,"DIA_Cronos_Barrier_08_03"); //Ovviamente una tale quantit√† di metallo attira ladri e balordi.
+	AI_Output (self, other,"DIA_Cronos_Barrier_08_04"); //Ecco perch√© abbiamo bisogno che qualcuno ci difenda.
 };
 
 // *****************************************
@@ -174,7 +174,7 @@ FUNC VOID  KDW_604_Cronos_WannaMage_Info()
 {
 	AI_Output (other, self,"DIA_Cronos_WannaMage_15_00"); //Voglio diventare un mago!
 	AI_Output (self, other,"DIA_Cronos_WannaMage_08_01"); //Non possiamo permetterci che la nostra conoscenza cada in mano nemica.
-	AI_Output (self, other,"DIA_Cronos_WannaMage_08_02"); //Non prenderemo neppure in considerazione l'idea d'istruirti, se prima non avrai dimostrato la tua lealt‡ nei nostri confronti.
+	AI_Output (self, other,"DIA_Cronos_WannaMage_08_02"); //Non prenderemo neppure in considerazione l'idea d'istruirti, se prima non avrai dimostrato la tua lealt√† nei nostri confronti.
 };
 
 ///////////////////////////////////////////////////
@@ -208,7 +208,7 @@ FUNC int  KDW_604_Cronos_Bandit_Condition()
 FUNC VOID  KDW_604_Cronos_Bandit_Info()
 {
 	AI_Output (other, self,"DIA_Cronos_Bandit_15_00"); //Ora sono uno degli uomini di Lares. Hai un messaggio da farmi recapitare ai Maghi del Fuoco?
-	AI_Output (self, other,"DIA_Cronos_Bandit_08_01"); //In effetti, sÏ. Ma dovrai portare addosso il simbolo dei nostri messaggeri, altrimenti Gomez non ti permetter‡ d'entrare nel castello.
+	AI_Output (self, other,"DIA_Cronos_Bandit_08_01"); //In effetti, s√¨. Ma dovrai portare addosso il simbolo dei nostri messaggeri, altrimenti Gomez non ti permetter√† d'entrare nel castello.
 	AI_Output (self, other,"DIA_Cronos_Bandit_08_02"); //Ecco la lettera e il simbolo. Ora vai e sbrigati!
 	
 	CreateInvItem (other,KdW_Amulett);
@@ -282,7 +282,7 @@ FUNC INT Info_Cronos_NEWS_Condition()
 FUNC VOID Info_Cronos_NEWS_Info()
 {
 	AI_Output			(other, self,"Info_Cronos_NEWS_15_01"); //Porto un importante messaggio per Saturas!
-	AI_Output			(self, other,"Info_Cronos_NEWS_08_02"); //Cosa puÚ essere tanto importante da meritare di disturbare gli studi del nostro capo spirituale?
+	AI_Output			(self, other,"Info_Cronos_NEWS_08_02"); //Cosa pu√≤ essere tanto importante da meritare di disturbare gli studi del nostro capo spirituale?
 };
 
 //***************************************************************************
@@ -311,9 +311,9 @@ FUNC VOID Info_Cronos_KALOM_Info()
 {
 	AI_Output			(other, self,"Info_Cronos_KALOM_15_01"); //Cor Kalom ha abbandonato la Fratellanza insieme ad alcuni templari invasati!
 	AI_Output			(other, self,"Info_Cronos_KALOM_15_02"); //Vuole trovare il Dormiente e svegliarlo ad ogni costo.
-	AI_Output			(self, other,"Info_Cronos_KALOM_08_03"); //Non mi sono mai fidato di lui. Nonostante sia il secondo guru, Ë superbo, insidioso e capace di qualsiasi cosa.
-	AI_Output			(self, other,"Info_Cronos_KALOM_08_04"); //La Fratellanza star‡ meglio senza di lui!
-	AI_Output			(self, other,"Info_Cronos_KALOM_08_05"); //RiferirÚ il messaggio a Saturas non appena mi sar‡ possibile. Ora vattene!
+	AI_Output			(self, other,"Info_Cronos_KALOM_08_03"); //Non mi sono mai fidato di lui. Nonostante sia il secondo guru, √® superbo, insidioso e capace di qualsiasi cosa.
+	AI_Output			(self, other,"Info_Cronos_KALOM_08_04"); //La Fratellanza star√† meglio senza di lui!
+	AI_Output			(self, other,"Info_Cronos_KALOM_08_05"); //Riferir√≤ il messaggio a Saturas non appena mi sar√† possibile. Ora vattene!
 
 	AI_StopProcessInfos	(self);
 };
@@ -329,7 +329,7 @@ instance Info_Cronos_YBERION (C_INFO)
 	information	= Info_Cronos_YBERION_Info;
 	permanent	= 0;
 	important 	= 0;
-	description = "Y'Berion, capo della Setta, Ë morto!";
+	description = "Y'Berion, capo della Setta, √® morto!";
 };
 
 FUNC INT Info_Cronos_YBERION_Condition()
@@ -342,12 +342,12 @@ FUNC INT Info_Cronos_YBERION_Condition()
 
 FUNC VOID Info_Cronos_YBERION_Info()
 {
-	AI_Output			(other, self,"Info_Cronos_YBERION_15_01"); //Y'Berion, capo della Setta, Ë morto!
-	AI_Output			(self, other,"Info_Cronos_YBERION_08_02"); //COSAAA??? Come Ë potuto accadere?
+	AI_Output			(other, self,"Info_Cronos_YBERION_15_01"); //Y'Berion, capo della Setta, √® morto!
+	AI_Output			(self, other,"Info_Cronos_YBERION_08_02"); //COSAAA??? Come √® potuto accadere?
 	AI_Output			(other, self,"Info_Cronos_YBERION_15_03"); //La Fratellanza ha eseguito un rito per evocare il proprio dio.
 	AI_Output			(other, self,"Info_Cronos_YBERION_15_04"); //Sembra che lo sforzo mentale sia stato troppo per Y'Berion.
-	AI_Output			(self, other,"Info_Cronos_YBERION_08_05"); //Tutto ciÚ Ë molto triste. Y'Berion era un alleato affidabile.
-	AI_Output			(self, other,"Info_Cronos_YBERION_08_06"); //Ma non Ë un motivo sufficiente a interrompere gli studi di Saturas.
+	AI_Output			(self, other,"Info_Cronos_YBERION_08_05"); //Tutto ci√≤ √® molto triste. Y'Berion era un alleato affidabile.
+	AI_Output			(self, other,"Info_Cronos_YBERION_08_06"); //Ma non √® un motivo sufficiente a interrompere gli studi di Saturas.
 
 	AI_StopProcessInfos	(self);
 };
@@ -378,16 +378,16 @@ FUNC VOID Info_Cronos_SLEEPER_Info()
 {
 	AI_Output			(other, self,"Info_Cronos_SLEEPER_15_01"); //I guru hanno capito che stano pregando un demone malvagio!
 	AI_Output			(self, other,"Info_Cronos_SLEEPER_08_02"); //Tutto a un tratto ora pensano che il Dormiente sia un demone?
-	AI_Output			(self, other,"Info_Cronos_SLEEPER_08_03"); //Sembrerebbe un'altra stramberia della Fratellanza, perÚ...
+	AI_Output			(self, other,"Info_Cronos_SLEEPER_08_03"); //Sembrerebbe un'altra stramberia della Fratellanza, per√≤...
 	AI_Output			(self, other,"Info_Cronos_SLEEPER_08_04"); //...potrebbero aver ragione... Allora tutti noi che viviamo nella colonia saremmo in grave pericolo.
-	AI_Output			(self, other,"Info_Cronos_SLEEPER_08_05"); //Devi riferirlo subito a Saturas. Decider‡ lui cosa fare.
+	AI_Output			(self, other,"Info_Cronos_SLEEPER_08_05"); //Devi riferirlo subito a Saturas. Decider√† lui cosa fare.
 	AI_Output			(other, self,"Info_Cronos_SLEEPER_15_06"); //Dove si trova Saturas?
-	AI_Output			(self, other,"Info_Cronos_SLEEPER_08_07"); //Vai al livello superiore e dÏ alle guardie che hai il mio permesso per passare.
-	AI_Output			(self, other,"Info_Cronos_SLEEPER_08_08"); //La parola d'ordine Ë TETRIANDOCH.
+	AI_Output			(self, other,"Info_Cronos_SLEEPER_08_07"); //Vai al livello superiore e d√¨ alle guardie che hai il mio permesso per passare.
+	AI_Output			(self, other,"Info_Cronos_SLEEPER_08_08"); //La parola d'ordine √® TETRIANDOCH.
 	AI_Output			(self, other,"Info_Cronos_SLEEPER_08_09"); //Saturas si trova vicino al pentacolo.
-	AI_Output			(self, other,"Info_Cronos_SLEEPER_08_10"); //Passa lÏ quasi tutto il suo tempo, studiando il modo per far esplodere il cumulo di metallo.
+	AI_Output			(self, other,"Info_Cronos_SLEEPER_08_10"); //Passa l√¨ quasi tutto il suo tempo, studiando il modo per far esplodere il cumulo di metallo.
 
-	B_LogEntry			(CH3_EscapePlanNC,"Cronos mi ha accordato il permesso di far visita a Saturas, al livello superiore. Di solito, il Gran Mago del Circolo dell'Acqua si trova al pentacolo. La parola d'ordine per le guardie Ë... Maledizione! Qual era?");
+	B_LogEntry			(CH3_EscapePlanNC,"Cronos mi ha accordato il permesso di far visita a Saturas, al livello superiore. Di solito, il Gran Mago del Circolo dell'Acqua si trova al pentacolo. La parola d'ordine per le guardie √®... Maledizione! Qual era?");
 
 	B_GiveXP			(XP_GetCronosPermission);
 
@@ -419,7 +419,7 @@ FUNC INT Info_Cronos_PAROLE_Condition()
 FUNC VOID Info_Cronos_PAROLE_Info()
 {
 	AI_Output			(other, self,"Info_Cronos_PAROLE_15_01"); //Puoi ripetermi la parola d'ordine?
-	AI_Output			(self, other,"Info_Cronos_PAROLE_08_02"); //Sei pi˘ rimbambito di mia nonna! » 'TETRIANDOCH'.
+	AI_Output			(self, other,"Info_Cronos_PAROLE_08_02"); //Sei pi√π rimbambito di mia nonna! √à 'TETRIANDOCH'.
 };
 
 //***************************************************************************
@@ -447,7 +447,7 @@ FUNC INT Info_Cronos_REWARD_Condition()
 FUNC VOID Info_Cronos_REWARD_Info()
 {
 	AI_Output			(other, self,"Info_Cronos_REWARD_15_01"); //Saturas ha detto che hai una ricompensa per me.
-	AI_Output			(self, other,"Info_Cronos_REWARD_08_02"); //In qualit‡ di custode del metallo, ho pensato di dartene una piccola parte come ringraziamento per i tuoi servizi.
+	AI_Output			(self, other,"Info_Cronos_REWARD_08_02"); //In qualit√† di custode del metallo, ho pensato di dartene una piccola parte come ringraziamento per i tuoi servizi.
 	AI_Output			(self, other,"Info_Cronos_REWARD_08_03"); //Spero che tu ne faccia buon uso!
 
 	B_LogEntry		(CH3_BringFoci,"Cronos mi ha dato un mucchio di metallo. Nulla che possa minimamente scalfire il gigantesco cumulo, comunque.");
@@ -480,7 +480,7 @@ FUNC int  KDW_604_Cronos_WELCOME_Condition()
 };
 func void  KDW_604_Cronos_WELCOME_Info()
 {
-	AI_Output			(self, other,"KDW_604_Cronos_WELCOME_Info_08_01"); //La tua decisione di unirti ai Maghi dell'Acqua Ë stata saggia. Benvenuto, fratello!
+	AI_Output			(self, other,"KDW_604_Cronos_WELCOME_Info_08_01"); //La tua decisione di unirti ai Maghi dell'Acqua √® stata saggia. Benvenuto, fratello!
 	AI_StopProcessInfos	( self );  
 };
 //--------------------------------------------------------------------------
@@ -496,7 +496,7 @@ instance  KDW_604_Cronos_MANA (C_INFO)
 	information		= KDW_604_Cronos_MANA_Info;
 	important		= 0;
 	permanent		= 1;
-	description		= "Ho bisogno di pi˘ potere magico."; 
+	description		= "Ho bisogno di pi√π potere magico."; 
 };
 
 FUNC int  KDW_604_Cronos_MANA_Condition()
@@ -510,7 +510,7 @@ FUNC int  KDW_604_Cronos_MANA_Condition()
 };
 FUNC void  KDW_604_Cronos_MANA_Info()
 {
-	AI_Output			(other, self,"KDW_604_Cronos_MANA_Info_15_01"); //Ho bisogno di pi˘ potere magico.
+	AI_Output			(other, self,"KDW_604_Cronos_MANA_Info_15_01"); //Ho bisogno di pi√π potere magico.
 	AI_Output			(self, other,"KDW_604_Cronos_MANA_Info_08_02"); //Posso aiutarti, ma usa saggiamente il tuo nuovo potere.
 	
 	Info_ClearChoices	(KDW_604_Cronos_MANA);
@@ -572,7 +572,7 @@ FUNC void  KDW_604_Cronos_SELLSTUFF_Info()
 	
 };  
 /*------------------------------------------------------------------------
-						BEGR‹SSUNG						
+						BEGR√úSSUNG						
 ------------------------------------------------------------------------*/
 
 instance  KDW_604_Cronos_GREET (C_INFO)
@@ -597,7 +597,7 @@ FUNC void  KDW_604_Cronos_GREET_Info()
 	AI_Output (self, other,"KDW_604_Cronos_GREET_Info_08_02"); //Che la benedizione di Adanos scenda su di te! Posso aiutarti ad aumentare il tuo potere magico o darti qualche oggetto utile.
 	AI_Output (self, other,"KDW_604_Cronos_GREET_Info_08_03"); //Cosa posso fare per te?
 	Log_CreateTopic (GE_TraderNC,LOG_NOTE);
-	B_LogEntry (GE_TraderNC,"Cronos vende oggetti magici, come RUNE, INCATESIMI e ANELLI. Lo troverÚ giorno e notte presso la griglia sopra il cumulo di metallo."); 
+	B_LogEntry (GE_TraderNC,"Cronos vende oggetti magici, come RUNE, INCATESIMI e ANELLI. Lo trover√≤ giorno e notte presso la griglia sopra il cumulo di metallo."); 
 	Log_CreateTopic (GE_TeacherNC,LOG_NOTE);
-	B_LogEntry (GE_TeacherNC,"Cronos puÚ aiutarmi ad aumentare il MANA. Lo troverÚ giorno e notte presso la griglia sopra il cumulo di metallo.");
+	B_LogEntry (GE_TeacherNC,"Cronos pu√≤ aiutarmi ad aumentare il MANA. Lo trover√≤ giorno e notte presso la griglia sopra il cumulo di metallo.");
 };

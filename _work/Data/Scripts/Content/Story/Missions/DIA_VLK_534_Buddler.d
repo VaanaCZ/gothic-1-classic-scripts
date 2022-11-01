@@ -33,7 +33,7 @@ INSTANCE DIA_Vlk_534_LeaveMe (C_INFO)
 	condition		= DIA_Vlk_534_LeaveMe_Condition;
 	information		= DIA_Vlk_534_LeaveMe_Info;
 	permanent		= 1;
-	description		= "Perché sei qui e non nel campo?";
+	description		= "PerchÃ© sei qui e non nel campo?";
 };
 
 FUNC INT DIA_Vlk_534_LeaveMe_Condition()
@@ -43,7 +43,7 @@ FUNC INT DIA_Vlk_534_LeaveMe_Condition()
 
 FUNC VOID DIA_Vlk_534_LeaveMe_Info()
 {
-	AI_Output (other, self,"DIA_Vlk_534_LeaveMe_15_00"); //Perché sei qui e non nel campo?
+	AI_Output (other, self,"DIA_Vlk_534_LeaveMe_15_00"); //PerchÃ© sei qui e non nel campo?
 	AI_Output (self, other,"DIA_Vlk_534_LeaveMe_02_01"); //Sto aspettando un amico di ritorno dalla miniera. Mi deve alcuni pezzi di metallo.
 	AI_Output (self, other,"DIA_Vlk_534_LeaveMe_02_02"); //Non posso tornare al campo senza metallo: non riuscirei a pagare la tassa di protezione alle guardie e le cose si metterebbero molto male per me.
 

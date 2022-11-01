@@ -103,7 +103,7 @@ CONST STRING TXT_GUILDS	[GIL_MAX] =	{
 // *****************************************************************************************
 // Attribut-Beschreibungen
 // *****************************************************************************************
-/* SN: wird laut Bert nicht mehr benötigt. Ich kommentier es erst mal eine Version lang aus
+/* SN: wird laut Bert nicht mehr benÃ¶tigt. Ich kommentier es erst mal eine Version lang aus
 const string TXT_ATTRIBUTE_DESC	[ATR_INDEX_MAX]	= {
 
 	"HitpointDesc",
@@ -116,16 +116,16 @@ const string TXT_ATTRIBUTE_DESC	[ATR_INDEX_MAX]	= {
 	""
 };
 
-"TXT_ATTRIBUTE_DESC" - Beschreibung	der	Attribute für CharScreen.
+"TXT_ATTRIBUTE_DESC" - Beschreibung	der	Attribute fÃ¼r CharScreen.
 "TXT_FIGHT_TALENTS"	- Namen	der	Kampftalente
-"TXT_FIGHT_TALENTS_DESC" - Beschreibung	der	Kampftalente für CharScreen.
+"TXT_FIGHT_TALENTS_DESC" - Beschreibung	der	Kampftalente fÃ¼r CharScreen.
 "TXT_TALENTS" -	Namen der sonstigen	Talente
-"TXT_TALENTS_DESC" - Beschreibung der Talente für CharScreen
-"TXT_SPELLS_DESC" -	Beschreibung der Spells	für	CharScreen
+"TXT_TALENTS_DESC" - Beschreibung der Talente fÃ¼r CharScreen
+"TXT_SPELLS_DESC" -	Beschreibung der Spells	fÃ¼r	CharScreen
 
-Die	Reihenfolge	der	jeweiligen Texte könnt ihr der Konstantenreihenfolge aus
+Die	Reihenfolge	der	jeweiligen Texte kÃ¶nnt ihr der Konstantenreihenfolge aus
 der	"constants.d" entnehmen, die hier auch mit dranhaengt und fuer
-fehlerfreies (Test-)parsen benötigt	wird.
+fehlerfreies (Test-)parsen benÃ¶tigt	wird.
 */
 
 // *****************************************************************************************
@@ -194,7 +194,7 @@ CONST STRING TXT_SPELLS	[MAX_SPELL]	= {
 	"New5"						// SPL_NEW5			=	21;
  };
 
-/* SN: wird laut Bert nicht mehr benötigt. Ich kommentier es erst mal eine Version lang aus
+/* SN: wird laut Bert nicht mehr benÃ¶tigt. Ich kommentier es erst mal eine Version lang aus
 CONST STRING TXT_SPELLS_DESC [MAX_SPELL] = {
 // FIXME: wo werden die benutzt?
 	"LichtDescr",						// SPL_LIGHT		=	0;
@@ -203,7 +203,7 @@ CONST STRING TXT_SPELLS_DESC [MAX_SPELL] = {
 	"FearDescr",						// SPL_FEAR			=	3;
 	"HeilenDescr",						// SPL_HEAL			=	4;
 	"BlitzDescr",						// SPL_LIGHTNING	=	5;
-	"Dämon beschw.Descr",				// SPL_SUMMONDEMON	=	6;
+	"DÃ¤mon beschw.Descr",				// SPL_SUMMONDEMON	=	6;
 	"Skelette beschw.Descr",			// SPL_SUMMONSKELETON=	7;
 	"VergessenDescr",					// SPL_FORGET		=	8;
 	"WindfaustDescr",					// SPL_WINDFIST		=	9;
@@ -280,7 +280,7 @@ CONST STRING TXT_TALENTS [NPC_TALENT_MAX] =
 	"Acrobazie"
 };
 
-/* SN: wird laut Bert nicht mehr benötigt. Ich kommentier es erst mal eine Version lang aus
+/* SN: wird laut Bert nicht mehr benÃ¶tigt. Ich kommentier es erst mal eine Version lang aus
 CONST STRING TXT_TALENTS_DESC [NPC_TALENT_MAX] = 
 // FIXME: wo werden die benutzt?
 {
@@ -309,10 +309,10 @@ CONST STRING TXT_TALENTS_SKILLS [NPC_TALENT_MAX] =
 	"inesperto|allenato|maestro",                       //NPC_TALENT_PICKLOCK   
 	"inesperto|allenato|maestro",                       //NPC_TALENT_PICKPOCKET
 	"no|1o Cerchio|2o Cerchio|3o Cerchio|4o Cerchio|5o Cerchio|6o Cerchio", //NPC_TALENT_MAGE         
-	"no|sì",                                              //NPC_TALENT_SNEAK       
+	"no|sÃ¬",                                              //NPC_TALENT_SNEAK       
 	"|",                                      		        //NPC_TALENT_REGENERATE 
 	"|",                                          		    //NPC_TALENT_FIREMASTER   
-	"no|sì"                                               //NPC_TALENT_ACROBAT      
+	"no|sÃ¬"                                               //NPC_TALENT_ACROBAT      
 };
 
 // *****************************************************************************************
@@ -378,7 +378,7 @@ const string NAME_Spruchrolle	= "Incantesimo";
 
 
 // *************************************************************
-// TEXTE FÜR ITEM-BESCHREIBUNGEN IM INV.
+// TEXTE FÃœR ITEM-BESCHREIBUNGEN IM INV.
 // *************************************************************
 
 const string NAME_Value			= "Valore:";
@@ -423,7 +423,7 @@ const string NAME_Bonus_Str		= "Bonus forza:";
 const string NAME_OneHanded		= "Arma a una mano";
 const string NAME_TwoHanded		= "Arma a due mani";
 
-//----------------- MH: zusätzlich wegen FlexTranslate ---------------------
+//----------------- MH: zusÃ¤tzlich wegen FlexTranslate ---------------------
 
 const string NAME_HealingPerMana = "Guarigione per mana"; 
 
@@ -455,27 +455,27 @@ const string _STR_ATTRIBUTE_STRENGTH		= "Forza"											;
 const string _STR_ATTRIBUTE_DEXTERITY		= "Destrezza"								;
 const string _STR_ATTRIBUTE_MAGIC_CIRCLE	= "Incantesimo"								;
 
-// Bildschirmausgabe, falls der Spieler eine Waffe anlegen will, für die ihm Attributspunkte fehlen
+// Bildschirmausgabe, falls der Spieler eine Waffe anlegen will, fÃ¼r die ihm Attributspunkte fehlen
 const string _STR_CANNOTUSE_PRE_PLAYER		= "Ti mancano "										;
 const string _STR_CANNOTUSE_POINTS			= " punti"											;
 const string _STR_CANNOTUSE_LEVELS		    = " livelli"											;
 const string _STR_CANNOTUSE_POST			= " per usare quest'oggetto."				;
 
-// Bildschirmausgabe, falls ein NSC zu wenig Attributspunkte, für das Anlegen von Waffen hat (nur Debugzwecke!)
+// Bildschirmausgabe, falls ein NSC zu wenig Attributspunkte, fÃ¼r das Anlegen von Waffen hat (nur Debugzwecke!)
 const string _STR_CANNOTUSE_PRE_NPC			= " ("												;
 const string _STR_CANNOTUSE_POST_NPC		= ") mancano "										;
 
-// Bidschrimausgabe zum Thema Schloß öffnen/knacken
+// Bidschrimausgabe zum Thema SchloÃŸ Ã¶ffnen/knacken
 const string _STR_MESSAGE_INTERACT_NO_KEY	= "Niente chiave o grimaldello.";
 const string _STR_MESSAGE_PICKLOCK_SUCCESS	= "Suona bene.";
-const string _STR_MESSAGE_PICKLOCK_UNLOCK	= "La serratura è aperta.";
+const string _STR_MESSAGE_PICKLOCK_UNLOCK	= "La serratura Ã¨ aperta.";
 const string _STR_MESSAGE_PICKLOCK_FAILURE	= "Merda... Tutto daccapo.";
-const string _STR_MESSAGE_PICKLOCK_BROKEN	= "Il grimaldello s'è rotto.";
+const string _STR_MESSAGE_PICKLOCK_BROKEN	= "Il grimaldello s'Ã¨ rotto.";
 
 // Bidschrimausgabe zum Thema Hebel/Winden
 const string _STR_MESSAGE_OCLEVER_STUCKS	= "La leva non si muove."			;
 const string _STR_MESSAGE_OCLEVER_MOVES		= "La statuetta muove la leva."			;
-const string _STR_MESSAGE_WHEEL_STUCKS		= "L'argano è inceppato."					;
+const string _STR_MESSAGE_WHEEL_STUCKS		= "L'argano Ã¨ inceppato."					;
 
 // Bidschrimausgabe beim storybedingten Transfer von Items
 const string _STR_MESSAGE_ITEM_GIVEN		= " Oggetto dato!"								;	//SPACE davor wichtig, weil Trennzeichen
@@ -485,17 +485,17 @@ const string _STR_MESSAGE_ITEM_TAKEN		= " Oggetto ricevuto!"							;
 const string _STR_MESSAGE_ITEMS_TAKEN		= " Oggetti ricevuti!"							;
 const string _STR_MESSAGE_ORE_TAKEN			= " Pezzi di metallo ricevuti!"									;
 
-// Bidschrimausgabe fürs Tausch-Fenster
+// Bidschrimausgabe fÃ¼rs Tausch-Fenster
 const string _STR_MESSAGE_TRADE_FAILURE		= "Le tue merci non valgono abbastanza."	;
 
-// GILDENAUFNAHMEBEDINGUNG (für die Funktion "B_PrintGuildCondition()" )
+// GILDENAUFNAHMEBEDINGUNG (fÃ¼r die Funktion "B_PrintGuildCondition()" )
 const string _STR_MESSAGE_Joincamp			=	"Condizione per l'ammissione: livello"; 
 
 // nicht beklaubare NSCs
 const string _STR_MESSAGE_CANNOTSTEAL		=	"Non puoi rubarlo.";
 
 // ***************************************************************************************
-// Relative Y-Koordinaten für die Bildschirmausgabe (in % der aktuellen Bildhöhe)
+// Relative Y-Koordinaten fÃ¼r die Bildschirmausgabe (in % der aktuellen BildhÃ¶he)
 // ***************************************************************************************
 const int	_YPOS_MESSAGE_GIVEN				=	37;
 const int	_YPOS_MESSAGE_TAKEN				=	40;
@@ -531,8 +531,8 @@ const string NAME_BuyArmorPrefix	=	" (";
 const string NAME_BuyArmorPostfix	=	" pezzi di metallo)";	
 const string NAME_LearnPrefix		=	" (";	
 const string NAME_LearnMidfix		=	" pezzi di metallo,";
-const string NAME_LearnPostfixS		=	"punto abilità)";	
-const string NAME_LearnPostfixP		=	"punti abilità)";	
+const string NAME_LearnPostfixS		=	"punto abilitÃ )";	
+const string NAME_LearnPostfixP		=	"punti abilitÃ )";	
 
 const string NAME_LearnStrength_1	=	"Forza +1";
 const string NAME_LearnStrength_5	=	"Forza +5";
@@ -580,7 +580,7 @@ const string NAME_RaiseStrDex		=	"Forza e destrezza +";
 const string NAME_RaiseManaMax		=	"Mana massimo +";
 const string NAME_RaiseHealthMax	=	"Energia vitale massima +";
 
-//---------------- MH: für B_BuildBuyArmorString ----------------------------
+//---------------- MH: fÃ¼r B_BuildBuyArmorString ----------------------------
 
 const string NAME_CorristoHighRobe	= 	"Maestro, voglio indossare l'alta veste del fuoco.";
 const string NAME_SaturasHighRobe	= 	"Alta veste";

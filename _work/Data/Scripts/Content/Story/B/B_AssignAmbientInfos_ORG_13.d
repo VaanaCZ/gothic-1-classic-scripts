@@ -75,7 +75,7 @@ FUNC INT Info_Org_13_WichtigePersonen_Condition()
 FUNC VOID Info_Org_13_WichtigePersonen_Info()
 {
 	AI_Output(other,self,"Info_Org_13_WichtigePersonen_15_00"); //Chi comanda qui?
-	AI_Output(self,other,"Info_Org_13_WichtigePersonen_13_01"); //Lee è il capo dei mercenari, se è questo che intendi. Ma io non sono un mercenario e mi prenda un colpo se permetto loro di comandarmi!
+	AI_Output(self,other,"Info_Org_13_WichtigePersonen_13_01"); //Lee Ã¨ il capo dei mercenari, se Ã¨ questo che intendi. Ma io non sono un mercenario e mi prenda un colpo se permetto loro di comandarmi!
 	var C_NPC Lee;			Lee		= Hlp_GetNpc(Sld_700_Lee);
 	Lee.aivar[AIV_FINDABLE] = TRUE;
 };
@@ -90,7 +90,7 @@ INSTANCE Info_Org_13_DasLager(C_INFO)
 	condition	= Info_Org_13_DasLager_Condition;
 	information	= Info_Org_13_DasLager_Info;
 	permanent	= 1;
-	description = "Voglio saperne di più sul campo.";
+	description = "Voglio saperne di piÃ¹ sul campo.";
 };                       
 
 FUNC INT Info_Org_13_DasLager_Condition()
@@ -100,8 +100,8 @@ FUNC INT Info_Org_13_DasLager_Condition()
 
 FUNC VOID Info_Org_13_DasLager_Info()
 {
-	AI_Output(other,self,"Info_Org_13_DasLager_15_00"); //Voglio sapere qualcosa di più sul campo.
-	AI_Output(self,other,"Info_Org_13_DasLager_13_01"); //Allora vai a dare un'occhiata in giro. Finché non diventi uno degli uomini di Gomez, nessuno ti ferma.
+	AI_Output(other,self,"Info_Org_13_DasLager_15_00"); //Voglio sapere qualcosa di piÃ¹ sul campo.
+	AI_Output(self,other,"Info_Org_13_DasLager_13_01"); //Allora vai a dare un'occhiata in giro. FinchÃ© non diventi uno degli uomini di Gomez, nessuno ti ferma.
 };
 
 // *************************************************************************

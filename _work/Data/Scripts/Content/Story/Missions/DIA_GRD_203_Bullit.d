@@ -43,7 +43,7 @@ FUNC int  DIA_Bullit_First_Condition()
 
 FUNC VOID  DIA_Bullit_First_Info()
 {
-	AI_Output (self, other,"DIA_Bullit_First_06_00"); //Chi abbiamo qui? Non sei il tizio che ho battezzato poco fa? Che c'Ë, ne vuoi ancora?
+	AI_Output (self, other,"DIA_Bullit_First_06_00"); //Chi abbiamo qui? Non sei il tizio che ho battezzato poco fa? Che c'√®, ne vuoi ancora?
 };
 
 //******************************************
@@ -103,8 +103,8 @@ FUNC int  DIA_GRD_203_Bullit_Wait4SC_Condition()
 func void  DIA_GRD_203_Bullit_Wait4SC_Info()
 {
 	AI_Output (self, other,"DIA_GRD_203_Bullit_Wait4SC_06_01"); //Ancora tu! Dovevo affogarti nel lago la prima volta che ti ho visto!
-	AI_Output (other, self,"DIA_GRD_203_Bullit_Wait4SC_15_02"); //Allora non avevo alcuna possibilit‡. Ora le cose sono cambiate.
-	AI_Output (self, other,"DIA_GRD_203_Bullit_Wait4SC_06_03"); //Verme schifoso! Spero solo non sia cosÏ facile come la prima volta!
+	AI_Output (other, self,"DIA_GRD_203_Bullit_Wait4SC_15_02"); //Allora non avevo alcuna possibilit√†. Ora le cose sono cambiate.
+	AI_Output (self, other,"DIA_GRD_203_Bullit_Wait4SC_06_03"); //Verme schifoso! Spero solo non sia cos√¨ facile come la prima volta!
 		
 	AI_StopProcessInfos	( self );
 

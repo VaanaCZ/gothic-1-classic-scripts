@@ -19,10 +19,10 @@ FUNC void GUR_1212_MadCorKalom_Talk2SC_Info ()
 	
 	AI_Output			(self, hero,"GUR_1212_MadCorKalom_Talk2SC_10_01"); //Alla fine ci rincontriamo!
 	AI_Output			(self, hero,"GUR_1212_MadCorKalom_Talk2SC_10_02"); //Il mio maestro mi aveva avvertito del tuo arrivo!
-	AI_Output			(self, hero,"GUR_1212_MadCorKalom_Talk2SC_10_03"); //Lui può percepire la tua presenza.
-	AI_Output			(hero, self,"GUR_1212_MadCorKalom_Talk2SC_15_04"); //Presto gli sarò più vicino di quanto lui stesso non desideri!
+	AI_Output			(self, hero,"GUR_1212_MadCorKalom_Talk2SC_10_03"); //Lui puÃ² percepire la tua presenza.
+	AI_Output			(hero, self,"GUR_1212_MadCorKalom_Talk2SC_15_04"); //Presto gli sarÃ² piÃ¹ vicino di quanto lui stesso non desideri!
 	AI_Output			(self, hero,"GUR_1212_MadCorKalom_Talk2SC_10_05"); //Non ti permetteremo di rovinare i nostri piani.
-	AI_Output			(self, hero,"GUR_1212_MadCorKalom_Talk2SC_10_06"); //Il mondo sta per testimoniare la grandezza del Redentore e nessuno può impedirlo.
+	AI_Output			(self, hero,"GUR_1212_MadCorKalom_Talk2SC_10_06"); //Il mondo sta per testimoniare la grandezza del Redentore e nessuno puÃ² impedirlo.
 	AI_Output			(self, hero,"GUR_1212_MadCorKalom_Talk2SC_10_07"); //Tutti gli infedeli la pagheranno.
 	AI_Output			(self, hero,"GUR_1212_MadCorKalom_Talk2SC_10_08"); //E tu avrai l'onore di essere il primo.
 	AI_Output			(self, hero,"GUR_1212_MadCorKalom_Talk2SC_10_09"); //DDDOOOOOORRRRRRRRRMMMIIIIIIIEEEENNNNNNTTTTTTTEEEEEE, SSVVVVEEEEEEEGGGGGLLLLLLLIIIIIIAAAAAAAAATIIIIIII!!!

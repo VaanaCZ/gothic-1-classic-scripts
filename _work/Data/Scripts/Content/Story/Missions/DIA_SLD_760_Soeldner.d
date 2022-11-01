@@ -21,7 +21,7 @@ FUNC int DIA_SLD_760_Soeldner_INTRO_CONDITION()
 
 func void DIA_SLD_760_Soeldner_INTRO_INFO()
 {
-	AI_Output (self, other,"DIA_SLD_760_Soeldner_INTRO_INFO_13_01"); //Cosa ci fai ancora da queste parti? Te l'ho già detto: giù le mani dalla porta!
+	AI_Output (self, other,"DIA_SLD_760_Soeldner_INTRO_INFO_13_01"); //Cosa ci fai ancora da queste parti? Te l'ho giÃ  detto: giÃ¹ le mani dalla porta!
 };
 
 //-------------------- Exit 1 -----------------------------
@@ -34,7 +34,7 @@ instance DIA_SLD_760_Soeldner_EXIT_1 (C_INFO)
 	information		= DIA_SLD_760_Soeldner_EXIT_1_INFO;
 	important		= 0;
 	permanent		= 0;
-	description 	= "Farò meglio ad andare.";
+	description 	= "FarÃ² meglio ad andare.";
 };
 
 FUNC int DIA_SLD_760_Soeldner_EXIT_1_CONDITION()
@@ -44,7 +44,7 @@ FUNC int DIA_SLD_760_Soeldner_EXIT_1_CONDITION()
 
 func void DIA_SLD_760_Soeldner_EXIT_1_INFO()
 {
-	AI_Output (other, self,"DIA_SLD_760_Soeldner_EXIT_1_INFO_15_01"); //Farò meglio ad andare.
+	AI_Output (other, self,"DIA_SLD_760_Soeldner_EXIT_1_INFO_15_01"); //FarÃ² meglio ad andare.
 	AI_Output (self, other,"DIA_SLD_760_Soeldner_EXIT_1_INFO_13_02");//Spero che ci siamo capiti.
 	AI_StopProcessInfos	( self );
 };
@@ -125,15 +125,15 @@ func void DIA_SLD_760_Soeldner_INMINE_INFO()
 
 	if	(!Npc_KnowsInfo	(hero, DIA_SLD_752_OKYL_WERBISTDU))
 	{
-		AI_Output (other, self,"DIA_SLD_760_Soeldner_INMINE_INFO_15_03");//Chi è questo Okyl?
+		AI_Output (other, self,"DIA_SLD_760_Soeldner_INMINE_INFO_15_03");//Chi Ã¨ questo Okyl?
 	}
 	else
 	{
-		AI_Output (other, self,"DIA_SLD_760_Soeldner_INMINE_INFO_15_08");//Non è quel tipo con la grossa ascia e l'armatura pesante?
+		AI_Output (other, self,"DIA_SLD_760_Soeldner_INMINE_INFO_15_08");//Non Ã¨ quel tipo con la grossa ascia e l'armatura pesante?
 	};
-	AI_Output (self, other,"DIA_SLD_760_Soeldner_INMINE_INFO_13_04");//Attento a ciò che dici e a come parli del nostro capo.
-	AI_Output (self, other,"DIA_SLD_760_Soeldner_INMINE_INFO_13_05");//Ti dirò una cosa riguardo a Okyl. È l'uomo più in gamba di tutto il campo. Una volta si è intrufolato nel castello di Campo Vecchio e ha rubato un carico di metallo ai baroni delle miniere.
-	AI_Output (self, other,"DIA_SLD_760_Soeldner_INMINE_INFO_13_06");//Quindi mostra un po' più di rispetto, per favore.
+	AI_Output (self, other,"DIA_SLD_760_Soeldner_INMINE_INFO_13_04");//Attento a ciÃ² che dici e a come parli del nostro capo.
+	AI_Output (self, other,"DIA_SLD_760_Soeldner_INMINE_INFO_13_05");//Ti dirÃ² una cosa riguardo a Okyl. Ãˆ l'uomo piÃ¹ in gamba di tutto il campo. Una volta si Ã¨ intrufolato nel castello di Campo Vecchio e ha rubato un carico di metallo ai baroni delle miniere.
+	AI_Output (self, other,"DIA_SLD_760_Soeldner_INMINE_INFO_13_06");//Quindi mostra un po' piÃ¹ di rispetto, per favore.
 	AI_Output (self, other,"DIA_SLD_760_Soeldner_INMINE_INFO_13_07");//Non so dove si trovi, ma se lo incontri farai bene a ricordarti la storia che ti ho appena raccontato.
 };
 

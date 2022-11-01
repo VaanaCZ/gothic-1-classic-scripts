@@ -100,7 +100,7 @@ FUNC int DIA_Raven_Krautbote_Condition()
 FUNC VOID DIA_Raven_Krautbote_Info()
 {
 	AI_Output			(other, self,"DIA_Raven_Krautbote_15_00"); //Cor Kalom mi ha inviato per consegnare un po' d'erba a Gomez.
-	AI_Output			(self, other,"DIA_Raven_Krautbote_10_01"); //Gomez non tratta coi fattorini, Ë Bartholo che devi incontrare.
+	AI_Output			(self, other,"DIA_Raven_Krautbote_10_01"); //Gomez non tratta coi fattorini, √® Bartholo che devi incontrare.
 	AI_Output			(self, other,"DIA_Raven_Krautbote_10_02"); //Lo troverai nella sala a destra, dietro l'entrata, oppure nella cucina della torre grande.
 	AI_Output			(self, other,"DIA_Raven_Krautbote_10_03"); //Ovviamente di notte dorme: se fossi in te, non lo disturberei.
 
@@ -134,7 +134,7 @@ FUNC VOID DIA_Raven_Aufnahme_Info()
 {
 	AI_Output (other, self,"DIA_Raven_Aufnahme_15_00"); //Voglio vedere Gomez. Thorus dice che sono pronto a diventare un'Ombra.
 	AI_Output (self, other,"DIA_Raven_Aufnahme_10_01"); //Siamo sempre in cerca di uomini valorosi. Sembri molto sicuro di te, potresti andare bene.
-	AI_Output (self, other,"DIA_Raven_Aufnahme_10_02"); //Ti scorterÚ da Gomez. Seguimi e non toccare nulla!
+	AI_Output (self, other,"DIA_Raven_Aufnahme_10_02"); //Ti scorter√≤ da Gomez. Seguimi e non toccare nulla!
 	
 	AI_StopProcessInfos	(self);
 	Npc_ExchangeRoutine(self, "GUIDE");
@@ -164,7 +164,7 @@ FUNC int DIA_Raven_There_Condition()
 
 FUNC VOID DIA_Raven_There_Info()
 {
-	AI_Output (self, other,"DIA_Raven_There_10_01"); //Gomez Ë laggi˘. Se non gli mostrerai il dovuto rispetto, mi occuperÚ personalmente d'insegnarti le buone maniere. Capito?
+	AI_Output (self, other,"DIA_Raven_There_10_01"); //Gomez √® laggi√π. Se non gli mostrerai il dovuto rispetto, mi occuper√≤ personalmente d'insegnarti le buone maniere. Capito?
 	AI_StopProcessInfos	(self);
 		
 	Npc_ExchangeRoutine(self, "START");
@@ -196,7 +196,7 @@ FUNC int DIA_Raven_PERM_Condition()
 FUNC VOID DIA_Raven_PERM_Info()
 {
 	AI_Output (other, self,"DIA_Raven_PERM_15_00"); //Come va il commercio di metallo?
-	AI_Output (self, other,"DIA_Raven_PERM_10_01"); //La vecchia miniera sta andando bene. L'ultimo carico di rifornimenti dal mondo esterno Ë stato abbondante.
+	AI_Output (self, other,"DIA_Raven_PERM_10_01"); //La vecchia miniera sta andando bene. L'ultimo carico di rifornimenti dal mondo esterno √® stato abbondante.
 };
 
 // **************************************
@@ -231,7 +231,7 @@ FUNC VOID DIA_Raven_BinDabei_Info()
 	
 	AI_Output			(other, self,"DIA_Raven_BinDabei_15_00"); //Gomez dice che sono stato accettato.
 	AI_Output			(self, other,"DIA_Raven_BinDabei_10_01"); //Ottimo! In questo caso, puoi subito provare il tuo valore in missione.
-	AI_Output			(self, other,"DIA_Raven_BinDabei_10_02"); //Non dovresti avere difficolt‡, se le tue conoscenze sono buone come affermi.
+	AI_Output			(self, other,"DIA_Raven_BinDabei_10_02"); //Non dovresti avere difficolt√†, se le tue conoscenze sono buone come affermi.
 
 	AI_EquipBestArmor	(hero); 
 };
@@ -266,7 +266,7 @@ FUNC VOID DIA_Raven_SpySect_Info()
 	AI_Output (self, other,"DIA_Raven_SpySect_10_01"); //Noi commerciamo molto con la Fratellanza. Questo, ovviamente, non vuol dire che ci fidiamo di loro.
 	AI_Output (self, other,"DIA_Raven_SpySect_10_02"); //Vai alla palude.
 	AI_Output (self, other,"DIA_Raven_SpySect_10_03"); //Quando avrai raggiunto il campo, tieni le orecchie ben aperte. Qualsiasi notizia riuscirai a raccogliere, potrebbe essere molto importante per noi.
-	AI_Output (self, other,"DIA_Raven_SpySect_10_04"); //Pi˘ riuscirai a scoprire, meglio sar‡. Dovrai usare molto tatto, non so se mi spiego.
+	AI_Output (self, other,"DIA_Raven_SpySect_10_04"); //Pi√π riuscirai a scoprire, meglio sar√†. Dovrai usare molto tatto, non so se mi spiego.
 	AI_Output (other, self,"DIA_Raven_SpySect_15_05"); //Tranquillo, non voglio farli arrabbiare.
 	AI_Output (self, other,"DIA_Raven_SpySect_10_06"); //Ero certo che avresti capito.
 	
@@ -274,11 +274,11 @@ FUNC VOID DIA_Raven_SpySect_Info()
 	
 	Log_CreateTopic	(CH1_GoToPsi,	LOG_MISSION);
 	Log_SetTopicStatus (CH1_GoToPsi,	LOG_RUNNING);
-	B_LogEntry (CH1_GoToPsi,"Raven mi ha inviato dalla Fratellanza, per conto di Campo Vecchio. Devo fare un giro e tenere occhi e orecchie ben aperti. Forse riuscirÚ a ottenere delle informazioni utili per i baroni delle miniere.");
+	B_LogEntry (CH1_GoToPsi,"Raven mi ha inviato dalla Fratellanza, per conto di Campo Vecchio. Devo fare un giro e tenere occhi e orecchie ben aperti. Forse riuscir√≤ a ottenere delle informazioni utili per i baroni delle miniere.");
 };
 
 // *********************************************
-// 				Ausr¸stung
+// 				Ausr√ºstung
 // *********************************************
 
 INSTANCE DIA_Raven_Equipment (C_INFO)
@@ -302,8 +302,8 @@ FUNC INT DIA_Raven_Equipment_Condition()
 FUNC VOID DIA_Raven_Equipment_Info()
 {
 	AI_Output	(other, self,"DIA_Raven_Equipment_15_00"); //Dove posso trovare un equipaggiamento migliore?
-	AI_Output	(self, other,"DIA_Raven_Equipment_10_01"); //Vai da Diego, ti dar‡ un'armatura. Ti aiuter‡ a non farti uccidere e servir‡ anche per identificarti.
-	AI_Output	(self, other,"DIA_Raven_Equipment_10_02"); //Ti permetter‡ l'accesso a tutti i luoghi in cui devi andare.
+	AI_Output	(self, other,"DIA_Raven_Equipment_10_01"); //Vai da Diego, ti dar√† un'armatura. Ti aiuter√† a non farti uccidere e servir√† anche per identificarti.
+	AI_Output	(self, other,"DIA_Raven_Equipment_10_02"); //Ti permetter√† l'accesso a tutti i luoghi in cui devi andare.
 	AI_Output	(self, other,"DIA_Raven_Equipment_10_03"); //Se hai bisogno di armi, vai a parlare con Skip. Lo troverai nel grande capanno in fondo, a sinistra del cortile del castello.
 
 	Log_CreateTopic	(GE_TraderOC,	LOG_NOTE);
@@ -356,14 +356,14 @@ FUNC VOID DIA_Raven_SpyBericht_Info()
 			Raven_SpySect=LOG_SUCCESS;
 			B_GiveXP (XP_ReportToRaven);
 			Log_SetTopicStatus (CH1_GoToPsi,	LOG_SUCCESS);
-			B_LogEntry (CH1_GoToPsi,"Raven mi ha raggirato! Non Ë proprio il tipo di comportamento che mi sarei aspettato da lui! D'ora in poi, deciderÚ da solo cosa fare!");
+			B_LogEntry (CH1_GoToPsi,"Raven mi ha raggirato! Non √® proprio il tipo di comportamento che mi sarei aspettato da lui! D'ora in poi, decider√≤ da solo cosa fare!");
 		}
 		else
 		{
 			AI_Output (other, self,"DIA_Raven_SpyBericht_15_02"); //Ora vogliono un uovo di regina dei pidocchi delle miniere, per creare una pozione che li metta in contatto col Dormiente. Ho le uova con me.
 			if (CorKalom_BringMCQBalls != LOG_SUCCESS)
 			{
-				AI_Output (self, other,"DIA_Raven_SpyBericht_10_03"); //Molto interessante. Mi chiedo se funzioner‡. Porta le uova al tempio.
+				AI_Output (self, other,"DIA_Raven_SpyBericht_10_03"); //Molto interessante. Mi chiedo se funzioner√†. Porta le uova al tempio.
 			}
 			else
 			{
@@ -371,14 +371,14 @@ FUNC VOID DIA_Raven_SpyBericht_Info()
 				Raven_SpySect=LOG_SUCCESS;
 				B_GiveXP (XP_ReportToRaven);
 				Log_SetTopicStatus (CH1_GoToPsi,	LOG_SUCCESS);
-				B_LogEntry (CH1_GoToPsi,"Raven mi ha raggirato! Non Ë proprio il tipo di comportamento che mi sarei aspettato da lui! D'ora in poi, deciderÚ da solo cosa fare!");
+				B_LogEntry (CH1_GoToPsi,"Raven mi ha raggirato! Non √® proprio il tipo di comportamento che mi sarei aspettato da lui! D'ora in poi, decider√≤ da solo cosa fare!");
 			};
 		};
 	}
 	else
 	{
 		AI_Output (other, self,"DIA_Raven_SpyBericht_15_05"); //Ancora non ho idea di cosa abbiano in mente.
-		AI_Output (self, other,"DIA_Raven_SpyBericht_10_06"); //Allora perchÈ mi hai disturbato?
+		AI_Output (self, other,"DIA_Raven_SpyBericht_10_06"); //Allora perch√© mi hai disturbato?
 	};
 };
 

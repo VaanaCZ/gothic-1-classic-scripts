@@ -48,7 +48,7 @@ FUNC INT Info_Mine_Org_7_Mine_Condition()
 FUNC VOID Info_Mine_Org_7_Mine_Info()
 {
 	AI_Output(other,self,"Info_Mine_Org_7_Mine_15_00"); //Parlami di questo campo.
-	AI_Output(self,other,"Info_Mine_Org_7_Mine_07_01"); //Il campo? Vuoi dire la Buca! A dire il vero, non è poi così male: i minatori raccolgono il metallo, i mercenari stanno di guardia e noi ladri li teniamo tutti sotto controllo.
+	AI_Output(self,other,"Info_Mine_Org_7_Mine_07_01"); //Il campo? Vuoi dire la Buca! A dire il vero, non Ã¨ poi cosÃ¬ male: i minatori raccolgono il metallo, i mercenari stanno di guardia e noi ladri li teniamo tutti sotto controllo.
 	
 };
 
@@ -62,7 +62,7 @@ INSTANCE Info_Mine_Org_7_WichtigePersonen(C_INFO)
 	condition	= Info_Mine_Org_7_WichtigePersonen_Condition;
 	information	= Info_Mine_Org_7_WichtigePersonen_Info;
 	permanent	= 1;
-	description = "Chi è il capo, qui?";
+	description = "Chi Ã¨ il capo, qui?";
 };                       
 
 FUNC INT Info_Mine_Org_7_WichtigePersonen_Condition()
@@ -72,9 +72,9 @@ FUNC INT Info_Mine_Org_7_WichtigePersonen_Condition()
 
 FUNC VOID Info_Mine_Org_7_WichtigePersonen_Info()
 {
-	AI_Output(other,self,"Info_Mine_Org_7_WichtigePersonen_15_00"); //Chi è il capo, qui?
+	AI_Output(other,self,"Info_Mine_Org_7_WichtigePersonen_15_00"); //Chi Ã¨ il capo, qui?
 	AI_Output(self,other,"Info_Mine_Org_7_WichtigePersonen_07_01"); //Dipende da chi prendi gli ordini.
-	AI_Output(self,other,"Info_Mine_Org_7_WichtigePersonen_07_02"); //In ogni caso, se Okyl vuole qualcosa è meglio non fare obiezioni. Diventa molto brutto, quando è arrabbiato.
+	AI_Output(self,other,"Info_Mine_Org_7_WichtigePersonen_07_02"); //In ogni caso, se Okyl vuole qualcosa Ã¨ meglio non fare obiezioni. Diventa molto brutto, quando Ã¨ arrabbiato.
 	
 };
 

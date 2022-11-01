@@ -4,8 +4,8 @@
 Die Freemine Mission. 
 Der SC metzelt sich durch die FM und findet dort einen Orc, welcher schwer
 verletzt ist und einen Orcischen Heiltrank braucht. 
-Alls Gegenleistung für den Heiltrank sagt er dir was man alles für Items
-für das Ulu-Mulu braucht.
+Alls Gegenleistung fÃ¼r den Heiltrank sagt er dir was man alles fÃ¼r Items
+fÃ¼r das Ulu-Mulu braucht.
 Wenn man ihm die drei Teile bringt bastelt er dir das Ulumulu.
 
 --------------------------------- Die Items -----------------------------
@@ -13,15 +13,15 @@ OrcHeiltrank:			Orcmedicine			-> OrcGegengift
 	
 Teil vom Ulu-Mulu (1)	ItAt_Waran_01		-> 	Flammenzunge
 Teil vom Ulu-Mulu (2)	ItAt_Shadow_02		->	Horn eines Shadowbeast
-Teil vom Ulu-Mulu (3)	ItAt_Swampshark_02	->	Zähne des Sumpfhais
+Teil vom Ulu-Mulu (3)	ItAt_Swampshark_02	->	ZÃ¤hne des Sumpfhais
 Teil vom Ulu-Mulu (4)   ItAt_Troll_02		->	Hauer eines Trolls
 
 Ulu-Mulu				Ulumulu				-> Das Ulumulu
 
 ----------------------------------- ToDo ---------------------------------
--> Monsterhinweise müssen noch rein
+-> Monsterhinweise mÃ¼ssen noch rein
 -> Missionlogs basteln
--> Sprache überarbeiten
+-> Sprache Ã¼berarbeiten
 */
 
 
@@ -92,7 +92,7 @@ instance Info_FreemineOrc_WASPASSIERT (C_INFO)
 	information	= Info_FreemineOrc_WASPASSIERT_Info;
 	important	= 0;	
 	permanent	= 0;
-	description = "Cosa è successo?";
+	description = "Cosa Ã¨ successo?";
 };                       
 
 FUNC int Info_FreemineOrc_WASPASSIERT_Condition()
@@ -105,7 +105,7 @@ FUNC int Info_FreemineOrc_WASPASSIERT_Condition()
 
 FUNC VOID Info_FreemineOrc_WASPASSIERT_Info()
 {
-	AI_Output			(hero, self,"Info_FreemineOrc_WASPASSIERT_15_01"); //Cosa è successo?
+	AI_Output			(hero, self,"Info_FreemineOrc_WASPASSIERT_15_01"); //Cosa Ã¨ successo?
 	AI_Output			(self, hero,"Info_FreemineOrc_WASPASSIERT_17_02"); //Tarrok catturato da soldati blu. All'improvviso, soldati rossi dappertutto.
 	AI_Output			(self, hero,"Info_FreemineOrc_WASPASSIERT_17_03"); //Soldati rossi ucciso tutti.
 	AI_Output			(self, hero,"Info_FreemineOrc_WASPASSIERT_17_04"); //Tarrok fuggito qui. Soldati rossi no vengono qui. Soldati rossi ha paura di GACH LUG.
@@ -152,7 +152,7 @@ instance Info_FreemineOrc_OFFER (C_INFO)
 	information	= Info_FreemineOrc_OFFER_Info;
 	important	= 0;	
 	permanent	= 0;
-	description = "Ti riporterò la medicina!";
+	description = "Ti riporterÃ² la medicina!";
 };                       
 
 FUNC int Info_FreemineOrc_OFFER_Condition()
@@ -167,7 +167,7 @@ FUNC int Info_FreemineOrc_OFFER_Condition()
 
 FUNC VOID Info_FreemineOrc_OFFER_Info()
 {
-	AI_Output			(hero, self,"Info_FreemineOrc_OFFER_15_01"); //Ti riporterò la medicina!
+	AI_Output			(hero, self,"Info_FreemineOrc_OFFER_15_01"); //Ti riporterÃ² la medicina!
 	AI_Output			(self, hero,"Info_FreemineOrc_OFFER_17_02"); //Tarrok molto debole. Sbrigati, straniero, o Tarrok muore!
 	AI_StopProcessInfos	(self);
 
@@ -287,7 +287,7 @@ FUNC int Info_FreemineOrc_SUCHEULUMULU_Condition()
 FUNC VOID Info_FreemineOrc_SUCHEULUMULU_Info()
 {
 	AI_Output		(hero, self,"Info_FreemineOrc_SUCHEULUMULU_15_01"); //Sei amico di Ur-Shak, lo sciamano?
-	AI_Output		(self, hero,"Info_FreemineOrc_SUCHEULUMULU_17_02"); //Ur-Shak è schiavo come Tarrok. Ur-Shak fugge! Andato molti inverni fa!
+	AI_Output		(self, hero,"Info_FreemineOrc_SUCHEULUMULU_17_02"); //Ur-Shak Ã¨ schiavo come Tarrok. Ur-Shak fugge! Andato molti inverni fa!
 	AI_Output		(hero, self,"Info_FreemineOrc_SUCHEULUMULU_15_03"); //Il tuo amico ha detto che potevi creare un Ulu-Mulu per me!
 	if (FreemineOrc_SuchePotion == LOG_SUCCESS)
 	{
@@ -362,7 +362,7 @@ instance Info_FreemineOrc_FIREWARAN (C_INFO)
 	information	= Info_FreemineOrc_FIREWARAN_Info;
 	important	= 0;	
 	permanent	= 0;
-	description = "Cos'è un KROTAHK?";
+	description = "Cos'Ã¨ un KROTAHK?";
 };                       
 
 FUNC int Info_FreemineOrc_FIREWARAN_Condition()
@@ -375,7 +375,7 @@ FUNC int Info_FreemineOrc_FIREWARAN_Condition()
 
 FUNC VOID Info_FreemineOrc_FIREWARAN_Info()
 {
-	AI_Output			(hero, self,"Info_FreemineOrc_FIREWARAN_15_01"); //Cos'è un KROTAHK?
+	AI_Output			(hero, self,"Info_FreemineOrc_FIREWARAN_15_01"); //Cos'Ã¨ un KROTAHK?
 	AI_Output			(self, hero,"Info_FreemineOrc_FIREWARAN_17_02"); //Essere lingua di fuoco! Lingua di lucertola di fuoco!
 	
 };
@@ -409,7 +409,7 @@ FUNC VOID Info_FreemineOrc_FIREWARAN2_Info()
 	AI_Output			(self, hero,"Info_FreemineOrc_FIREWARAN2_17_02"); //Lucertola vive a casa. Casa di Tarrok. Straniero deve cercare!
 	AI_Output			(self, hero,"Info_FreemineOrc_FIREWARAN2_17_03"); //Trova anche in sabbia vicino mare.
 
-	B_LogEntry			(CH4_UluMulu,"Tarrok ha bisogno della lingua di una lucertola di fuoco, per creare l'Ulu-Mulu. Questi animali vivono prevalentemente nei territori degli orchi e sulle spiagge sabbiose. Non ho già incontrato un relitto pieno di lucertole?");
+	B_LogEntry			(CH4_UluMulu,"Tarrok ha bisogno della lingua di una lucertola di fuoco, per creare l'Ulu-Mulu. Questi animali vivono prevalentemente nei territori degli orchi e sulle spiagge sabbiose. Non ho giÃ  incontrato un relitto pieno di lucertole?");
 };
 
 //---------------------------------------------------------------------
@@ -469,7 +469,7 @@ FUNC VOID Info_FreemineOrc_SHADOWBEAST2_Info()
 	AI_Output			(self, hero,"Info_FreemineOrc_SHADOWBEAST2_Info_17_02"); //Vivere in foresta o caverna. Non amare luce.
 	AI_Output			(self, hero,"Info_FreemineOrc_SHADOWBEAST2_Info_17_03"); //Essere molto pericolosi. Straniero attento!
 
-	B_LogEntry			(CH4_UluMulu,"Tarrok ha bisogno del corno di un mostro d'ombra per creare l'Ulu-Mulu. Questi animali vivono prevalentemente nelle foreste oscure e nelle caverne. Per quanto ne so, la foresta più grande della colonia si trova fra Campo Vecchio e Campo Palude.");
+	B_LogEntry			(CH4_UluMulu,"Tarrok ha bisogno del corno di un mostro d'ombra per creare l'Ulu-Mulu. Questi animali vivono prevalentemente nelle foreste oscure e nelle caverne. Per quanto ne so, la foresta piÃ¹ grande della colonia si trova fra Campo Vecchio e Campo Palude.");
 };
 
 //---------------------------------------------------------------------
@@ -496,7 +496,7 @@ FUNC int Info_FreemineOrc_SWAMPSHARK_Condition()
 FUNC VOID Info_FreemineOrc_SWAMPSHARK_Info()
 {
 	AI_Output			(hero, self,"Info_FreemineOrc_SWAMPSHARK_15_01"); //DWACHKARR? Di che si tratta?
-	AI_Output			(self, hero,"Info_FreemineOrc_SWAMPSHARK_17_02"); //Essere dente di squalo di palude. Se dente morde, vittima non fuggire più.
+	AI_Output			(self, hero,"Info_FreemineOrc_SWAMPSHARK_17_02"); //Essere dente di squalo di palude. Se dente morde, vittima non fuggire piÃ¹.
 	
 };
 
@@ -528,7 +528,7 @@ FUNC VOID Info_FreemineOrc_SWAMPSHARK2_Info()
 	AI_Output			(hero, self,"Info_FreemineOrc_SWAMPSHARK2_15_01"); //Dove trovo gli squali di palude?
 	AI_Output			(self, hero,"Info_FreemineOrc_SWAMPSHARK2_17_02"); //Molti vivere in campo di umani. Campo in palude!
 
-	B_LogEntry			(CH4_UluMulu,"Tarrok ha bisogno dei denti di uno squalo di palude per creare l'Ulu-Mulu. Dietro il campo della Fratellanza, è pieno di queste bestiacce."); 
+	B_LogEntry			(CH4_UluMulu,"Tarrok ha bisogno dei denti di uno squalo di palude per creare l'Ulu-Mulu. Dietro il campo della Fratellanza, Ã¨ pieno di queste bestiacce."); 
 };
 
 //---------------------------------------------------------------------
@@ -541,7 +541,7 @@ instance Info_FreemineOrc_TROLL (C_INFO)
 	information	= Info_FreemineOrc_TROLL_Info;
 	important	= 0;	
 	permanent	= 0;
-	description = "Cos'è un ORTH-ANTAK?";
+	description = "Cos'Ã¨ un ORTH-ANTAK?";
 };                       
 
 FUNC int Info_FreemineOrc_TROLL_Condition()
@@ -554,7 +554,7 @@ FUNC int Info_FreemineOrc_TROLL_Condition()
 
 FUNC VOID Info_FreemineOrc_TROLL_Info()
 {
-	AI_Output			(hero, self,"Info_FreemineOrc_TROLL_15_01"); //Cos'è un ORTH-ANTAK?
+	AI_Output			(hero, self,"Info_FreemineOrc_TROLL_15_01"); //Cos'Ã¨ un ORTH-ANTAK?
 	AI_Output			(self, hero,"Info_FreemineOrc_TROLL_17_02"); //Essere dente di grosso troll! Fare grosso buco in preda!
 };
 
@@ -659,7 +659,7 @@ FUNC VOID Info_FreemineOrc_EVERYULUMULU_Info()
 	AI_Output 			(self, hero,"Info_FreemineOrc_EVERYULUMULU_17_03"); //Ecco! Straniero indossa ULU-MULU ed essere fiero! Ora Tarrok dorme!
     
     CreateInvItems      (hero,  ItAt_Waran_01, 3);
-	B_GiveInvItems	    (hero, self, ItAt_Waran_01, 4); //Notwendig für Ausschrift "4 Gegenstände übergegen", wird sofort ausgeglichen
+	B_GiveInvItems	    (hero, self, ItAt_Waran_01, 4); //Notwendig fÃ¼r Ausschrift "4 GegenstÃ¤nde Ã¼bergegen", wird sofort ausgeglichen
 	Npc_RemoveInvItem	(hero, ItAt_Shadow_02		);
 	Npc_RemoveInvItem	(hero, ItAt_Swampshark_02	);
 	Npc_RemoveInvItem	(hero, ItAt_Troll_02		);

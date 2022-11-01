@@ -46,7 +46,7 @@ FUNC VOID DIA_Homer_Hello_Info()
 	AI_Output (other, self,"DIA_Homer_Hello_15_00"); //Cerchi qualcosa?
 	AI_Output (self, other,"DIA_Homer_Hello_02_01"); //Crepe nella diga. Un imboscatore sta rodendo le fondamenta.
 	AI_Output (self, other,"DIA_Homer_Hello_02_02"); //Quella dannata bestia affila denti e unghie contro le pietre e le travi di legno sottacqua.
-	AI_Output (self, other,"DIA_Homer_Hello_02_03"); //Se continua, l'intera diga diverr‡ pericolante.
+	AI_Output (self, other,"DIA_Homer_Hello_02_03"); //Se continua, l'intera diga diverr√† pericolante.
 };
 
 // ************************************************************
@@ -74,7 +74,7 @@ FUNC INT DIA_Homer_BuiltDam_Condition()
 FUNC VOID DIA_Homer_BuiltDam_Info()
 {	
 	AI_Output (other, self,"DIA_Homer_BuiltDam_15_00"); //TU hai costruito la diga?
-	AI_Output (self, other,"DIA_Homer_BuiltDam_02_01"); //SÏ, quando abbiamo fondato Campo Nuovo.
+	AI_Output (self, other,"DIA_Homer_BuiltDam_02_01"); //S√¨, quando abbiamo fondato Campo Nuovo.
 	AI_Output (self, other,"DIA_Homer_BuiltDam_02_02"); //Ovviamente mi hanno aiutato tutti, ma io ero il capomastro.
 };
 
@@ -140,7 +140,7 @@ FUNC INT DIA_Homer_Running_Condition()
 FUNC VOID DIA_Homer_Running_Info()
 {	
 	AI_Output (other, self,"DIA_Homer_Running_15_00"); //Dove la trovo?
-	AI_Output (self, other,"DIA_Homer_Running_02_01"); //Io la cercherei dall'altra parte del lago, dove nessuno va mai. Probabilmente Ë lÏ che ha la sua tana.
+	AI_Output (self, other,"DIA_Homer_Running_02_01"); //Io la cercherei dall'altra parte del lago, dove nessuno va mai. Probabilmente √® l√¨ che ha la sua tana.
 	
 	Homer_DamLurker = LOG_RUNNING;
 	B_LogEntry	(CH1_DamLurker,"La tana dell'imboscatore deve trovarsi da qualche parte, nella zona proibita della riserva.");
@@ -178,11 +178,11 @@ FUNC VOID DIA_Homer_Success_Info()
 {	
 	AI_Output			(other, self,"DIA_Homer_Success_15_00"); //Ho ucciso la bestia!
 	AI_Output			(self, other,"DIA_Homer_Success_02_01"); //Ottimo! Alcuni uomini del Signore del Riso mi aiuteranno a riparare i danni che ha causato.
-	AI_Output			(self, other,"DIA_Homer_Success_02_02"); //Finalmente potrÚ dormire.
+	AI_Output			(self, other,"DIA_Homer_Success_02_02"); //Finalmente potr√≤ dormire.
 		
 	Homer_DamLurker = 	LOG_SUCCESS;
 	Log_SetTopicStatus	(CH1_DamLurker,	LOG_SUCCESS);
-	B_LogEntry			(CH1_DamLurker,"L'imboscatore Ë fuori gioco: Homer puÚ tornare a dormire sonni tranquilli.");
+	B_LogEntry			(CH1_DamLurker,"L'imboscatore √® fuori gioco: Homer pu√≤ tornare a dormire sonni tranquilli.");
 	B_GiveXP			(XP_ReportDeadDamLurker);
 	
 	AI_StopProcessInfos	(self);
@@ -214,6 +214,6 @@ FUNC INT DIA_Homer_PERM_Condition()
 FUNC VOID DIA_Homer_PERM_Info()
 {	
 	AI_Output (other, self,"DIA_Homer_PERM_15_00"); //Tutto a posto con la diga?
-	AI_Output (self, other,"DIA_Homer_PERM_02_01"); //» resistente come una fortezza! Nulla puÚ abbatterla.
+	AI_Output (self, other,"DIA_Homer_PERM_02_01"); //√à resistente come una fortezza! Nulla pu√≤ abbatterla.
 };
 

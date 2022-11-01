@@ -102,9 +102,9 @@ FUNC int  Tpl_1433_GorNaVid_HEALTH_SUC_Condition()
 };
 FUNC void  Tpl_1433_GorNaVid_HEALTH_SUC_Info()
 {
-	AI_Output (other, self,"Tpl_1433_GorNaVid_HEALTH_SUC_Info_15_01"); //Ecco, forse questo ci aiuterà.
+	AI_Output (other, self,"Tpl_1433_GorNaVid_HEALTH_SUC_Info_15_01"); //Ecco, forse questo ci aiuterÃ .
 	AI_Output (self, other,"Tpl_1433_GorNaVid_HEALTH_SUC_Info_13_02"); //Grazie. Puoi contare su di me. Ci vediamo di sotto, assieme ad Asghan.
-	AI_Output (other, self,"Tpl_1433_GorNaVid_HEALTH_SUC_Info_15_03"); //Ci sarò.
+	AI_Output (other, self,"Tpl_1433_GorNaVid_HEALTH_SUC_Info_15_03"); //Ci sarÃ².
 	
 	if Npc_HasItems (hero,Itfo_Potion_Health_01)
 	{
@@ -120,7 +120,7 @@ FUNC void  Tpl_1433_GorNaVid_HEALTH_SUC_Info()
 	}
 	else 
 	{
-		PrintDebugNpc (PD_MISSION, "KEINE POTION= UNMÖGLICH");
+		PrintDebugNpc (PD_MISSION, "KEINE POTION= UNMÃ–GLICH");
 	};
 
 	Npc_ExchangeRoutine (self,"GATE"); 

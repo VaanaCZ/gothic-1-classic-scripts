@@ -48,7 +48,7 @@ func void  DIA_Wedge_Psst_Info()
 {
 	AI_Output (self, other,"DIA_Wedge_Psst_05_00"); //Shhh... Ehi, tu!
 	AI_Output (other, self,"DIA_Wedge_Psst_15_01"); //Chi? Io?
-	AI_Output (self, other,"DIA_Wedge_Psst_05_02"); //SÏ, tu! Vieni qui!
+	AI_Output (self, other,"DIA_Wedge_Psst_05_02"); //S√¨, tu! Vieni qui!
 	AI_StopProcessInfos	(self);
 };
 
@@ -79,7 +79,7 @@ FUNC void  DIA_Wedge_Hello_Info()
 	AI_Output (other, self,"DIA_Wedge_Hello_15_00"); //Cosa vuoi?
 	AI_Output (self, other,"DIA_Wedge_Hello_05_01"); //Sei appena arrivato, vero? Me ne sono accorto.
 	AI_Output (self, other,"DIA_Wedge_Hello_05_02"); //Ci sono un sacco di cose che devi sapere. Posso insegnarti qualcosa.
-	AI_Output (self, other,"DIA_Wedge_Hello_05_03"); //Prima di tutto, devi stare attento alle persone con cui parli. Per esempio, Butch, il tizio laggi˘, vicino al falÚ... Stai attento a lui!
+	AI_Output (self, other,"DIA_Wedge_Hello_05_03"); //Prima di tutto, devi stare attento alle persone con cui parli. Per esempio, Butch, il tizio laggi√π, vicino al fal√≤... Stai attento a lui!
 };  
 
 // ****************************************
@@ -93,7 +93,7 @@ instance  DIA_Wedge_WarnsOfButch (C_INFO)
 	information		= DIA_Wedge_WarnsOfButch_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Qual Ë il problema?"; 
+	description		= "Qual √® il problema?"; 
 };
 
 FUNC int  DIA_Wedge_WarnsOfButch_Condition()
@@ -106,7 +106,7 @@ FUNC int  DIA_Wedge_WarnsOfButch_Condition()
 };
 FUNC void  DIA_Wedge_WarnsOfButch_Info()
 {
-	AI_Output (other, self,"DIA_Wedge_WarnsOfButch_15_00"); //Qual Ë il problema?
+	AI_Output (other, self,"DIA_Wedge_WarnsOfButch_15_00"); //Qual √® il problema?
 	AI_Output (self, other,"DIA_Wedge_WarnsOfButch_05_01"); //Ha la pessima abitudine di picchiare i nuovi arrivati. Farai meglio a evitarlo.
 	//AI_Output (self, other,"DIA_Wedge_WarnsOfButch_05_02"); //Also, geh ihm am besten aus dem Weg.//***Doppelt***
 };  
@@ -138,7 +138,7 @@ FUNC VOID DIA_Wedge_Lehrer_Info()
 	if (log_wedgelearn == FALSE)
 	{
 		Log_CreateTopic   	(GE_TeacherNC,LOG_NOTE);
-		B_LogEntry			(GE_TeacherNC,"Wedge il ladro puÚ insegnarmi a essere FURTIVO, BORSEGGIARE e FORZARE SERRATURE.");
+		B_LogEntry			(GE_TeacherNC,"Wedge il ladro pu√≤ insegnarmi a essere FURTIVO, BORSEGGIARE e FORZARE SERRATURE.");
 		log_wedgelearn = TRUE ;
 	};
 	AI_Output (other, self,"DIA_Wedge_Lehrer_15_00"); //Cosa puoi insegnarmi?
@@ -175,19 +175,19 @@ func void DIA_Wedge_Lehrer_Schleichen()
 	AI_Output (other, self,"DIA_Wedge_Lehrer_Schleichen_15_00"); //Voglio imparare a muovermi furtivamente.
 	if (B_GiveSkill(other, NPC_TALENT_SNEAK, 1, LPCOST_TALENT_SNEAK))
 	{
-		AI_Output (self, other,"DIA_Wedge_Lehrer_Schleichen_05_01"); //» tutta questione di equilibrio e di respirazione.
-		AI_Output (self, other,"DIA_Wedge_Lehrer_Schleichen_05_02"); //Stai attento alla posizione e nessuno ti sentir‡ muovere.
+		AI_Output (self, other,"DIA_Wedge_Lehrer_Schleichen_05_01"); //√à tutta questione di equilibrio e di respirazione.
+		AI_Output (self, other,"DIA_Wedge_Lehrer_Schleichen_05_02"); //Stai attento alla posizione e nessuno ti sentir√† muovere.
 	};
 };
 
 func void DIA_Wedge_Lehrer_Lockpick()
 {
-	AI_Output (other, self,"DIA_Wedge_Lehrer_Lockpick_15_00"); //Come posso migliorare la mia abilit‡ di scassinatore?
+	AI_Output (other, self,"DIA_Wedge_Lehrer_Lockpick_15_00"); //Come posso migliorare la mia abilit√† di scassinatore?
 	
 	if (B_GiveSkill(other, NPC_TALENT_PICKLOCK, 1, LPCOST_TALENT_PICKLOCK_1))
 	{
-		AI_Output (self, other,"DIA_Wedge_Lehrer_Lockpick_05_01"); //Ti piacerebbe saperlo, vero? Non Ë molto difficile.
-		AI_Output (self, other,"DIA_Wedge_Lehrer_Lockpick_05_02"); //La cosa principale Ë stare attento che non ti si rompa il grimaldello.
+		AI_Output (self, other,"DIA_Wedge_Lehrer_Lockpick_05_01"); //Ti piacerebbe saperlo, vero? Non √® molto difficile.
+		AI_Output (self, other,"DIA_Wedge_Lehrer_Lockpick_05_02"); //La cosa principale √® stare attento che non ti si rompa il grimaldello.
 		AI_Output (self, other,"DIA_Wedge_Lehrer_Lockpick_05_03"); //Sii paziente e vedrai che non avrai bisogno di portartene molti!
 	};
 };
@@ -199,8 +199,8 @@ func void DIA_Wedge_Lehrer_Lockpick2()
 	if (B_GiveSkill(other, NPC_TALENT_PICKLOCK, 2, LPCOST_TALENT_PICKLOCK_2))
 	{
 		AI_Output (self, other,"DIA_Wedge_Lehrer_Lockpick2_05_01"); //Solo con l'esperienza riuscirai a capire dal suono quando un grimaldello sta per rompersi!
-		AI_Output (self, other,"DIA_Wedge_Lehrer_Lockpick2_05_02"); //Penso tu ne abbia a sufficienza. Impara a identificare il leggero clic del lucchetto e non sprecherai pi˘ tanti grimaldelli.
-		AI_Output (self, other,"DIA_Wedge_Lehrer_Lockpick2_05_03"); //In questo campo, un esperto puÚ riuscire ad aprire un baule senza rompere neppure un grimaldello.
+		AI_Output (self, other,"DIA_Wedge_Lehrer_Lockpick2_05_02"); //Penso tu ne abbia a sufficienza. Impara a identificare il leggero clic del lucchetto e non sprecherai pi√π tanti grimaldelli.
+		AI_Output (self, other,"DIA_Wedge_Lehrer_Lockpick2_05_03"); //In questo campo, un esperto pu√≤ riuscire ad aprire un baule senza rompere neppure un grimaldello.
 	};
 };
 
@@ -211,10 +211,10 @@ func void DIA_Wedge_Lehrer_Pickpocket()
 	{
 		if (B_GiveSkill(other, NPC_TALENT_PICKPOCKET, 1, LPCOST_TALENT_PICKPOCKET_1))
 		{
-			AI_Output (self, other,"DIA_Wedge_Lehrer_PICKPOCKET_05_01"); //CosÏ vuoi alleggerire un po' di gente, eh? Molto bene.
-			AI_Output (self, other,"DIA_Wedge_Lehrer_PICKPOCKET_05_02"); //T'insegnerÚ a migliorare le tue abilit‡, ma sar‡ ancora molto facile che ti colgano sul fatto.
-			AI_Output (self, other,"DIA_Wedge_Lehrer_PICKPOCKET_05_03"); //Dovresti rischiare solo se nelle vicinanze c'Ë solo la tua vittima e nessun altro.
-			AI_Output (self, other,"DIA_Wedge_Lehrer_PICKPOCKET_05_04"); //Solo un esperto puÚ svuotare le tasche della gente senza farsi scoprire!
+			AI_Output (self, other,"DIA_Wedge_Lehrer_PICKPOCKET_05_01"); //Cos√¨ vuoi alleggerire un po' di gente, eh? Molto bene.
+			AI_Output (self, other,"DIA_Wedge_Lehrer_PICKPOCKET_05_02"); //T'insegner√≤ a migliorare le tue abilit√†, ma sar√† ancora molto facile che ti colgano sul fatto.
+			AI_Output (self, other,"DIA_Wedge_Lehrer_PICKPOCKET_05_03"); //Dovresti rischiare solo se nelle vicinanze c'√® solo la tua vittima e nessun altro.
+			AI_Output (self, other,"DIA_Wedge_Lehrer_PICKPOCKET_05_04"); //Solo un esperto pu√≤ svuotare le tasche della gente senza farsi scoprire!
 		};
 	}
 	else

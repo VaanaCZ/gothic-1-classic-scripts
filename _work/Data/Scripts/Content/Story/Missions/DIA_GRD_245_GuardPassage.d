@@ -33,7 +33,7 @@ instance DIA_GRD_245_Hello (C_INFO)
 	condition	= DIA_GRD_245_Hello_Condition;
 	information	= DIA_GRD_245_Hello_Info;
 	permanent	= 1;
-	description	= "Cosa c'è in questa casa?";
+	description	= "Cosa c'Ã¨ in questa casa?";
 };                       
 
 FUNC int DIA_GRD_245_Hello_Condition()
@@ -43,7 +43,7 @@ FUNC int DIA_GRD_245_Hello_Condition()
 
 FUNC VOID DIA_GRD_245_Hello_Info()
 {
-	AI_Output (other, self,"DIA_GRD_245_Hello_15_00"); //Cosa c'è in questa casa?
-	AI_Output (self, other,"DIA_GRD_245_Hello_13_01"); //Questa è l'abitazione dei baroni delle miniere. Se decidi di entrare, farai meglio a comportarti come si deve!
+	AI_Output (other, self,"DIA_GRD_245_Hello_15_00"); //Cosa c'Ã¨ in questa casa?
+	AI_Output (self, other,"DIA_GRD_245_Hello_13_01"); //Questa Ã¨ l'abitazione dei baroni delle miniere. Se decidi di entrare, farai meglio a comportarti come si deve!
 };
 

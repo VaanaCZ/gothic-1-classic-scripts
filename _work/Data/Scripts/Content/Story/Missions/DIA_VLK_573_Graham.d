@@ -79,15 +79,15 @@ FUNC VOID DIA_Graham_SellMap_Info()
 	AI_Output (other, self,"DIA_Graham_SellMap_15_00"); //Mi manda Diego. Vuole che mi consegni una mappa per arrivare alla vecchia miniera.
 	AI_Output (self, other,"DIA_Graham_SellMap_02_01"); //Nessun problema. Per te... Solo 20 pezzi di metallo.
 	Info_ClearChoices	(DIA_Graham_SellMap );
-	Info_AddChoice		(DIA_Graham_SellMap,"Tornerò.",DIA_Graham_SellMap_BACK);
+	Info_AddChoice		(DIA_Graham_SellMap,"TornerÃ².",DIA_Graham_SellMap_BACK);
 	Info_AddChoice		(DIA_Graham_SellMap,"Pago la mappa. Ecco, prendi il metallo.",DIA_Graham_SellMap_Pay);
-	Info_AddChoice		(DIA_Graham_SellMap,"Dammi la mappa o la prenderò con la forza!",DIA_Graham_SellMap_AufsMaul);
+	Info_AddChoice		(DIA_Graham_SellMap,"Dammi la mappa o la prenderÃ² con la forza!",DIA_Graham_SellMap_AufsMaul);
 	Info_AddChoice		(DIA_Graham_SellMap,"Diego ha detto che mi avresti DATO la mappa, non che me l'avresti venduta.",DIA_Graham_SellMap_GiveNotSell);
 };
 
 func void DIA_Graham_SellMap_BACK()
 {
-	AI_Output (other, self,"DIA_Graham_SellMap_BACK_15_00"); //Tornerò.
+	AI_Output (other, self,"DIA_Graham_SellMap_BACK_15_00"); //TornerÃ².
 	Info_ClearChoices	(DIA_Graham_SellMap );
 };
 
@@ -96,7 +96,7 @@ func void DIA_Graham_SellMap_Pay()
 	AI_Output (other, self,"DIA_Graham_SellMap_Pay_15_00"); //Pago la mappa. Ecco, prendi il metallo.
 	if (Npc_HasItems(other, itminugget)>=20)
 	{
-		AI_Output (self, other,"DIA_Graham_SellMap_Pay_02_01"); //Bene. Non troverai una mappa più economica, credimi.
+		AI_Output (self, other,"DIA_Graham_SellMap_Pay_02_01"); //Bene. Non troverai una mappa piÃ¹ economica, credimi.
 		B_GiveInvItems (other, self, itminugget, 20);
 		B_GiveInvItems (self, other, ItWrOMmap, 1);
 		Graham_OMKarteVerkauft = TRUE;
@@ -110,7 +110,7 @@ func void DIA_Graham_SellMap_Pay()
 
 func void DIA_Graham_SellMap_AufsMaul()
 {
-	AI_Output (other, self,"DIA_Graham_SellMap_AufsMaul_15_00"); //Dammi la mappa o la prenderò con la forza!
+	AI_Output (other, self,"DIA_Graham_SellMap_AufsMaul_15_00"); //Dammi la mappa o la prenderÃ² con la forza!
 	AI_Output (self, other,"DIA_Graham_SellMap_AufsMaul_02_01"); //Calmati, amico. Non voglio guai. Ecco, prendi la mappa e lasciami in pace.
 	B_GiveInvItems(self, other, ItWrOMmap, 1);
 	Info_ClearChoices	(DIA_Graham_SellMap );
@@ -123,7 +123,7 @@ func void DIA_Graham_SellMap_GiveNotSell()
 {
 	AI_Output (other, self,"DIA_Graham_SellMap_GiveNotSell_15_00"); //Aspetta un attimo. Diego ha detto che mi avresti DATO la mappa, non che me l'avresti venduta.
 	AI_Output (self, other,"DIA_Graham_SellMap_GiveNotSell_02_01"); //Non m'interessa! Sai quanto ci vuole a creare una mappa come questa?
-	AI_Output (self, other,"DIA_Graham_SellMap_GiveNotSell_02_02"); //20 pezzi è il prezzo speciale per gli amici di Diego. Di solito ne chiedo 50.
+	AI_Output (self, other,"DIA_Graham_SellMap_GiveNotSell_02_02"); //20 pezzi Ã¨ il prezzo speciale per gli amici di Diego. Di solito ne chiedo 50.
 };
 
 
@@ -149,7 +149,7 @@ FUNC INT DIA_Graham_BuyMaps_Condition()
 FUNC VOID DIA_Graham_BuyMaps_Info()
 {	
 	AI_Output (other, self,"DIA_Graham_BuyMaps_15_00"); //Vorrei acquistare una mappa.
-	AI_Output (self, other,"DIA_Graham_BuyMaps_02_01"); //Certo... Cosa hai in mente? Più è ampia, più costa.
+	AI_Output (self, other,"DIA_Graham_BuyMaps_02_01"); //Certo... Cosa hai in mente? PiÃ¹ Ã¨ ampia, piÃ¹ costa.
 };
 
 

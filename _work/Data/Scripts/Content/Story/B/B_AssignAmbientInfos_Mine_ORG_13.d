@@ -48,7 +48,7 @@ FUNC INT Info_Mine_Org_13_Mine_Condition()
 FUNC VOID Info_Mine_Org_13_Mine_Info()
 {
 	AI_Output(other,self,"Info_Mine_Org_13_Mine_15_00"); //Parlami di questo campo.
-	AI_Output(self,other,"Info_Mine_Org_13_Mine_13_01"); //Questo buco nella roccia ci permetter‡ di andarcene. Quando avremo metallo sufficiente, lasceremo per sempre Campo Vecchio.
+	AI_Output(self,other,"Info_Mine_Org_13_Mine_13_01"); //Questo buco nella roccia ci permetter√† di andarcene. Quando avremo metallo sufficiente, lasceremo per sempre Campo Vecchio.
 	
 };
 
@@ -62,7 +62,7 @@ INSTANCE Info_Mine_Org_13_WichtigePersonen(C_INFO)
 	condition	= Info_Mine_Org_13_WichtigePersonen_Condition;
 	information	= Info_Mine_Org_13_WichtigePersonen_Info;
 	permanent	= 1;
-	description = "Chi d‡ gli ordini, qui?";
+	description = "Chi d√† gli ordini, qui?";
 };                       
 
 FUNC INT Info_Mine_Org_13_WichtigePersonen_Condition()
@@ -72,8 +72,8 @@ FUNC INT Info_Mine_Org_13_WichtigePersonen_Condition()
 
 FUNC VOID Info_Mine_Org_13_WichtigePersonen_Info()
 {
-	AI_Output(other,self,"Info_Mine_Org_13_WichtigePersonen_15_00"); //Chi d‡ gli ordini, qui?
-	AI_Output(self,other,"Info_Mine_Org_13_WichtigePersonen_13_01"); //Okyl Ë il capo.
+	AI_Output(other,self,"Info_Mine_Org_13_WichtigePersonen_15_00"); //Chi d√† gli ordini, qui?
+	AI_Output(self,other,"Info_Mine_Org_13_WichtigePersonen_13_01"); //Okyl √® il capo.
 	AI_Output(self,other,"Info_Mine_Org_13_WichtigePersonen_13_02"); //Ma di solito lascia in pace noi ladri.
 	
 };

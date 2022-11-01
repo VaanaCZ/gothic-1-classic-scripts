@@ -23,7 +23,7 @@ FUNC VOID DIA_Cavalorn_Exit_Info()
 };
 
 // **************************************************
-// 					Ich J‰ger
+// 					Ich J√§ger
 // **************************************************
 
 INSTANCE DIA_cavalorn_Hunter (C_INFO)
@@ -75,7 +75,7 @@ FUNC VOID DIA_cavalorn_Lehrer_Info()
 	if (log_cavalorntrain == FALSE)
 	{
 		Log_CreateTopic (GE_TeacherOW,LOG_NOTE);
-		B_LogEntry		(GE_TeacherOW,"Cavalorn Ë un cacciatore. PuÚ insegnarmi a essere FURTIVO e a TIRARE CON L'ARCO. Vive in una capanna fra Campo Vecchio e Campo Nuovo.");
+		B_LogEntry		(GE_TeacherOW,"Cavalorn √® un cacciatore. Pu√≤ insegnarmi a essere FURTIVO e a TIRARE CON L'ARCO. Vive in una capanna fra Campo Vecchio e Campo Nuovo.");
 		log_cavalorntrain = TRUE;
 	};
 	AI_Output (other, self,"DIA_cavalorn_Lehrer_15_00"); //Puoi insegnarmi qualcosa sulla caccia?
@@ -110,10 +110,10 @@ func void DIA_Cavalorn_Lehrer_Bow()
 	if (B_GiveSkill(other, NPC_TALENT_BOW, 1, LPCOST_TALENT_BOW_1))
 	{		
 		AI_Output (other, self,"DIA_cavalorn_Lehrer_Bow_15_00"); //Puoi dirmi come usare meglio l'arco?
-		AI_Output (self, other,"DIA_cavalorn_Lehrer_Bow_12_01"); //Per un principiante non Ë difficile migliorare. Tutto dipende dalla posizione.
+		AI_Output (self, other,"DIA_cavalorn_Lehrer_Bow_12_01"); //Per un principiante non √® difficile migliorare. Tutto dipende dalla posizione.
 		AI_Output (self, other,"DIA_cavalorn_Lehrer_Bow_12_02"); //Tieni le gambe ben divaricate, le braccia parallele, trattieni il respiro e... scocca!
-		AI_Output (self, other,"DIA_cavalorn_Lehrer_Bow_12_03"); //Colpendo certe parti del corpo, ti baster‡ una sola freccia. Essendo un principiante, non hai molte probabilit‡ di farcela.
-		AI_Output (self, other,"DIA_cavalorn_Lehrer_Bow_12_04"); //Ma se tieni a mente ciÚ che ti ho detto, migliorerai a ogni tiro.
+		AI_Output (self, other,"DIA_cavalorn_Lehrer_Bow_12_03"); //Colpendo certe parti del corpo, ti baster√† una sola freccia. Essendo un principiante, non hai molte probabilit√† di farcela.
+		AI_Output (self, other,"DIA_cavalorn_Lehrer_Bow_12_04"); //Ma se tieni a mente ci√≤ che ti ho detto, migliorerai a ogni tiro.
 	};
 };
 
@@ -122,20 +122,20 @@ func void DIA_Cavalorn_Lehrer_Schleichen()
 	if (B_GiveSkill(other, NPC_TALENT_SNEAK, 1, LPCOST_TALENT_SNEAK))
 	{		
 		AI_Output (other, self,"DIA_cavalorn_Lehrer_Schleichen_15_00"); //Voglio imparare a muovermi furtivamente.
-		AI_Output (self, other,"DIA_cavalorn_Lehrer_Schleichen_12_01"); //Buona idea. » la cosa pi˘ importante, se desideri entrare nelle capanne e sorprendere qualcuno alle spalle.
+		AI_Output (self, other,"DIA_cavalorn_Lehrer_Schleichen_12_01"); //Buona idea. √à la cosa pi√π importante, se desideri entrare nelle capanne e sorprendere qualcuno alle spalle.
 		AI_Output (self, other,"DIA_cavalorn_Lehrer_Schleichen_12_02"); //Piega le ginocchia mentre cammini e vedrai meglio il pavimento. Inoltre, avrai un maggiore controllo sul tuo corpo.
-		AI_Output (self, other,"DIA_cavalorn_Lehrer_Schleichen_12_03"); //In questa posizione, perÚ, ti vedranno tutti. Controlla che non ci sia nessuno attorno!
-		AI_Output (self, other,"DIA_cavalorn_Lehrer_Schleichen_12_04"); //Ricorda ciÚ che ti ho detto, ma soprattutto: non farti beccare!
+		AI_Output (self, other,"DIA_cavalorn_Lehrer_Schleichen_12_03"); //In questa posizione, per√≤, ti vedranno tutti. Controlla che non ci sia nessuno attorno!
+		AI_Output (self, other,"DIA_cavalorn_Lehrer_Schleichen_12_04"); //Ricorda ci√≤ che ti ho detto, ma soprattutto: non farti beccare!
 	};
 };
 func void DIA_Cavalorn_Lehrer_Bow_2()
 {
 	if (B_GiveSkill(other, NPC_TALENT_BOW, 2, LPCOST_TALENT_BOW_2))
 	{		
-			AI_Output (self, other,"DIA_Cavalorn_Lehrer_Bow_2_Info_12_02"); //Sei gi‡ un bravo cacciatore. Ora imparerai quello che ti manca di sapere.
+			AI_Output (self, other,"DIA_Cavalorn_Lehrer_Bow_2_Info_12_02"); //Sei gi√† un bravo cacciatore. Ora imparerai quello che ti manca di sapere.
 			AI_Output (self, other,"DIA_Cavalorn_Lehrer_Bow_2_Info_12_03"); //Per diventare un bravo cecchino, devi smettere di provarci.
 			AI_Output (self, other,"DIA_Cavalorn_Lehrer_Bow_2_Info_12_04"); //Impara la legge che unisce occhio, tensione, traiettoria e bersaglio. Stai sempre in guardia e pronto in qualsiasi momento.
-			AI_Output (self, other,"DIA_Cavalorn_Lehrer_Bow_2_Info_12_05"); //Ora sei diventato davvero esperto. Vai ad applicare ciÚ che hai imparato.
+			AI_Output (self, other,"DIA_Cavalorn_Lehrer_Bow_2_Info_12_05"); //Ora sei diventato davvero esperto. Vai ad applicare ci√≤ che hai imparato.
 	};
 };
 /*------------------------------------------------------------------------
@@ -165,7 +165,7 @@ FUNC void  STT_336_cavalorn_SELLBOW_Info()
 	AI_Output (other, self,"STT_336_cavalorn_SELLBOW_Info_15_01"); //Dove posso trovare un arco?
 	AI_Output (self, other,"STT_336_cavalorn_SELLBOW_Info_12_02"); //Qui. Ho gli archi migliori di tutto Campo Vecchio.
 	Log_CreateTopic (GE_TraderOC,LOG_NOTE);
-	B_LogEntry (GE_TraderOC,"Cavalorn commercia in ARCHI e FRECCE. Lo troverÚ sulla strada per Campo Nuovo, nel canyon a ovest di Campo Vecchio. ");
+	B_LogEntry (GE_TraderOC,"Cavalorn commercia in ARCHI e FRECCE. Lo trover√≤ sulla strada per Campo Nuovo, nel canyon a ovest di Campo Vecchio. ");
 };  
 
 /*------------------------------------------------------------------------

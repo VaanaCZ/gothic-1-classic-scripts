@@ -82,12 +82,12 @@ FUNC VOID DIA_Whistler_Favour_Info()
 	AI_Output (other,self,"DIA_Whistler_Favour_15_00"); //Che tipo di favore?
 	AI_Output (self,other,"DIA_Whistler_Favour_11_01"); //Mi serve una delle armi di Fisk, un commerciante della piazza del mercato.
 	AI_Output (self,other,"DIA_Whistler_Favour_11_02"); //Non vuole vendermela. Si tratta di uno spadone decorato.
-	AI_Output (self,other,"DIA_Whistler_Favour_11_03"); //Ti darÚ 100 pezzi di metallo per comprare l'arma al mio posto. Ma non parlargli di me.
+	AI_Output (self,other,"DIA_Whistler_Favour_11_03"); //Ti dar√≤ 100 pezzi di metallo per comprare l'arma al mio posto. Ma non parlargli di me.
 
 	Info_ClearChoices(DIA_Whistler_Favour);
 	Info_AddChoice	 (DIA_Whistler_Favour,"D'accordo. Dammi i 100 pezzi e te la porto.",DIA_Whistler_Favour_Ok);
 	Info_AddChoice	 (DIA_Whistler_Favour,"Non hai pensato che potrei semplicemente scappare col metallo?",DIA_Whistler_Favour_OreAway);
-	Info_AddChoice	 (DIA_Whistler_Favour,"PerchÈ non vuole venderti lo spadone?",DIA_Whistler_Favour_WhyNotSell);
+	Info_AddChoice	 (DIA_Whistler_Favour,"Perch√© non vuole venderti lo spadone?",DIA_Whistler_Favour_WhyNotSell);
 };
 
 func void DIA_Whistler_Favour_Ok()
@@ -102,7 +102,7 @@ func void DIA_Whistler_Favour_Ok()
 		Log_CreateTopic		(CH1_JoinOC,LOG_MISSION);
 		Log_SetTopicStatus	(CH1_JoinOC,LOG_RUNNING);
 	};
-	B_LogEntry (CH1_JoinOC,"Whistler mi aiuter‡, se gli farÚ un favore: devo andare al mercato e comprare una spada da Fisk.");
+	B_LogEntry (CH1_JoinOC,"Whistler mi aiuter√†, se gli far√≤ un favore: devo andare al mercato e comprare una spada da Fisk.");
 	
 	var C_NPC fisk; fisk = Hlp_GetNpc(Stt_311_Fisk);
 	
@@ -117,12 +117,12 @@ func void DIA_Whistler_Favour_Ok()
 func void DIA_Whistler_Favour_OreAway()
 {
 	AI_Output (other,self,"DIA_Whistler_Favour_OreAway_15_00"); //Non hai pensato che potrei semplicemente scappare col metallo?
-	AI_Output (self,other,"DIA_Whistler_Favour_OreAway_11_01"); //Non dimenticare: la colonia Ë piccola! Ti troverei ovunque andassi!
+	AI_Output (self,other,"DIA_Whistler_Favour_OreAway_11_01"); //Non dimenticare: la colonia √® piccola! Ti troverei ovunque andassi!
 };
 
 func void DIA_Whistler_Favour_WhyNotSell()
 {
-	AI_Output (other,self,"DIA_Whistler_Favour_WhyNotSell_15_00"); //PerchÈ non vuole venderti lo spadone?
+	AI_Output (other,self,"DIA_Whistler_Favour_WhyNotSell_15_00"); //Perch√© non vuole venderti lo spadone?
 	AI_Output (self,other,"DIA_Whistler_Favour_WhyNotSell_11_01"); //Abbiamo avuto una piccola discussione.
 	AI_Output (other,self,"DIA_Whistler_Favour_WhyNotSell_15_02"); //E allora?
 	AI_Output (self,other,"DIA_Whistler_Favour_WhyNotSell_11_03"); //E allora non ti serve di sapere altro!
@@ -234,7 +234,7 @@ FUNC VOID DIA_Whistler_MySword_TooLate_Info()
 	
 	Whistler_BuyMySword = LOG_FAILED;
 	
-	B_LogEntry (CH1_JoinOC,"Ho incasinato tutto. Whistler Ë veramente in collera con me.");
+	B_LogEntry (CH1_JoinOC,"Ho incasinato tutto. Whistler √® veramente in collera con me.");
 	
 	AI_StopProcessInfos	(self);
 	
@@ -272,16 +272,16 @@ FUNC VOID DIA_Whistler_MySword_Success_Info()
 
     B_GiveInvItems (other, self, Whistlers_Schwert, 1);
 	
-	AI_Output (self,other,"DIA_Whistler_MySword_Success_11_01"); //Non Ë stato troppo difficile, vero? Comunque... Tu fai un favore a me, io faccio un favore a te.
+	AI_Output (self,other,"DIA_Whistler_MySword_Success_11_01"); //Non √® stato troppo difficile, vero? Comunque... Tu fai un favore a me, io faccio un favore a te.
 	if (Npc_GetTrueGuild (hero) == GIL_NONE)
 	{
-	AI_Output (self,other,"DIA_Whistler_MySword_Success_11_02"); //Se Diego dovesse chiedermi qualcosa, parlerÚ bene di te. Fino ad allora... Auguri!
+	AI_Output (self,other,"DIA_Whistler_MySword_Success_11_02"); //Se Diego dovesse chiedermi qualcosa, parler√≤ bene di te. Fino ad allora... Auguri!
 	
-	B_LogEntry (CH1_JoinOC,"Whistler era contento, quando gli ho consegnato la spada che mi aveva chiesto. Mi raccomander‡ a Diego.");
+	B_LogEntry (CH1_JoinOC,"Whistler era contento, quando gli ho consegnato la spada che mi aveva chiesto. Mi raccomander√† a Diego.");
 	}
 	else
 	{
-	B_LogEntry (CH1_JoinOC,"Whistler era contento, quando gli ho consegnato la spada che mi aveva chiesto. Sfortunatamente, non ne ricaverÚ nulla: non posso pi˘ diventare un'Ombra.");
+	B_LogEntry (CH1_JoinOC,"Whistler era contento, quando gli ho consegnato la spada che mi aveva chiesto. Sfortunatamente, non ne ricaver√≤ nulla: non posso pi√π diventare un'Ombra.");
 	};
 	Whistler_BuyMySword = LOG_SUCCESS;
 	B_GiveXP (XP_Whistlerssword);
@@ -314,7 +314,7 @@ FUNC INT DIA_Whistler_StandardKap1_Condition()
 FUNC VOID DIA_Whistler_StandardKap1_Info()
 {
 	AI_Output (other,self,"DIA_Whistler_StandardKap1_15_00"); //Come va?
-	AI_Output (self,other,"DIA_Whistler_StandardKap1_11_01"); //Bene! Tu fai un favore a me, io faccio un favore a te. DirÚ a Diego che sei un uomo affidabile.
+	AI_Output (self,other,"DIA_Whistler_StandardKap1_11_01"); //Bene! Tu fai un favore a me, io faccio un favore a te. Dir√≤ a Diego che sei un uomo affidabile.
 };
 
 

@@ -46,13 +46,13 @@ FUNC VOID DIA_Jarvis_First_Info()
 {	
 	AI_Output (self, other,"DIA_Jarvis_First_08_00"); //Vuoi attraversare il cancello?
 	AI_Output (other, self,"DIA_Jarvis_First_15_01"); //Hai intenzione di fermarmi?
-	AI_Output (self, other,"DIA_Jarvis_First_08_02"); //No, ma fari meglio a sapere cosa ti aspetta. Qui non è come a Campo Vecchio e neppure alla Setta!
+	AI_Output (self, other,"DIA_Jarvis_First_08_02"); //No, ma fari meglio a sapere cosa ti aspetta. Qui non Ã¨ come a Campo Vecchio e neppure alla Setta!
 	AI_Output (other, self,"DIA_Jarvis_First_15_03"); //Cosa devo aspettarmi, allora?
-	AI_Output (self, other,"DIA_Jarvis_First_08_04"); //Non ci sono guardie né templari a sorvegliarti. Ognuno sta per conto suo, gli unici che formano un gruppo sono i mercenari.
+	AI_Output (self, other,"DIA_Jarvis_First_08_04"); //Non ci sono guardie nÃ© templari a sorvegliarti. Ognuno sta per conto suo, gli unici che formano un gruppo sono i mercenari.
 };
 
 // ************************************************************
-// 						Söldner
+// 						SÃ¶ldner
 // ************************************************************
 
 INSTANCE DIA_Jarvis_SldInfo (C_INFO)
@@ -77,8 +77,8 @@ FUNC VOID DIA_Jarvis_SldInfo_Info()
 {	
 	AI_Output (other, self,"DIA_Jarvis_SldInfo_15_00"); //Cosa fanno questi mercenari?
 	AI_Output (self, other,"DIA_Jarvis_SldInfo_08_01"); //Noi... Noi siamo i mercenari dei Maghi dell'Acqua.
-	AI_Output (self, other,"DIA_Jarvis_SldInfo_08_02"); //Il nostro scopo è andarcene di qui. Lavoriamo sodo e non ci comportiamo come quelli di Campo Vecchio, che fanno la bella vita alle spalle dei minatori.
-	AI_Output (self, other,"DIA_Jarvis_SldInfo_08_03"); //Seguiamo tutti Lee. È un grand'uomo: l'unico che riesca a tenere insieme questo dannato capo.
+	AI_Output (self, other,"DIA_Jarvis_SldInfo_08_02"); //Il nostro scopo Ã¨ andarcene di qui. Lavoriamo sodo e non ci comportiamo come quelli di Campo Vecchio, che fanno la bella vita alle spalle dei minatori.
+	AI_Output (self, other,"DIA_Jarvis_SldInfo_08_03"); //Seguiamo tutti Lee. Ãˆ un grand'uomo: l'unico che riesca a tenere insieme questo dannato capo.
 };
 
 // ************************************************************
@@ -106,7 +106,7 @@ FUNC INT DIA_Jarvis_Magier_Condition()
 FUNC VOID DIA_Jarvis_Magier_Info()
 {	
 	AI_Output (other, self,"DIA_Jarvis_Magier_15_00"); //Cosa fanno i maghi?
-	AI_Output (self, other,"DIA_Jarvis_Magier_08_01"); //Studiano le proprietà magiche del metallo, estratto dai tritarocce nella miniera.
+	AI_Output (self, other,"DIA_Jarvis_Magier_08_01"); //Studiano le proprietÃ  magiche del metallo, estratto dai tritarocce nella miniera.
 	AI_Output (self, other,"DIA_Jarvis_Magier_08_02"); //Per quanto ne so, vogliono far saltare in aria l'intero cumulo di metallo e liberarci dalla Barriera.
 	AI_Output (other, self,"DIA_Jarvis_Magier_15_03"); //Sembra pericoloso.
 	AI_Output (self, other,"DIA_Jarvis_Magier_08_04"); //Loro dicono che non dobbiamo preoccuparci.
@@ -152,7 +152,7 @@ INSTANCE DIA_Jarvis_WoHaufen (C_INFO)
 	condition	= DIA_Jarvis_WoHaufen_Condition;
 	information	= DIA_Jarvis_WoHaufen_Info;
 	permanent	= 0;
-	description	= "Dov'è cumulala scorta di metallo?";
+	description	= "Dov'Ã¨ cumulala scorta di metallo?";
 };                       
 
 FUNC INT DIA_Jarvis_WoHaufen_Condition()
@@ -165,9 +165,9 @@ FUNC INT DIA_Jarvis_WoHaufen_Condition()
 
 FUNC VOID DIA_Jarvis_WoHaufen_Info()
 {	
-	AI_Output (other, self,"DIA_Jarvis_WoHaufen_15_00"); //Dov'è il cumulo di metallo?
-	AI_Output (self, other,"DIA_Jarvis_WoHaufen_08_01"); //Vuoi vederlo, vero? In mezzo alla caverna c'è un buco. È lì che gettano tutto il metallo.
-	AI_Output (self, other,"DIA_Jarvis_WoHaufen_08_02"); //Ma ti avverto: non puoi avvicinarti. Il metallo è sorvegliato giorno e notte dai maghi e dai nostri uomini.
+	AI_Output (other, self,"DIA_Jarvis_WoHaufen_15_00"); //Dov'Ã¨ il cumulo di metallo?
+	AI_Output (self, other,"DIA_Jarvis_WoHaufen_08_01"); //Vuoi vederlo, vero? In mezzo alla caverna c'Ã¨ un buco. Ãˆ lÃ¬ che gettano tutto il metallo.
+	AI_Output (self, other,"DIA_Jarvis_WoHaufen_08_02"); //Ma ti avverto: non puoi avvicinarti. Il metallo Ã¨ sorvegliato giorno e notte dai maghi e dai nostri uomini.
 	AI_Output (other, self,"DIA_Jarvis_WoHaufen_15_03"); //Ero solo curioso.
 };
 
@@ -228,7 +228,7 @@ FUNC VOID DIA_Jarvis_PERM_Info()
 };
 
 /*------------------------------------------------------------------------
-//							SÖLDNERAUFNAHME									//
+//							SÃ–LDNERAUFNAHME									//
 ------------------------------------------------------------------------*/
 instance Sld_728_Jarvis_AUFNAHMESOLDIER (C_INFO)
 {
@@ -254,10 +254,10 @@ func void  Sld_728_Jarvis_AUFNAHMESOLDIER_Info()
 	AI_Output (self, other,"Sld_728_Jarvis_AUFNAHMESOLDIER_Info_08_01"); //Ehi! Ho sentito dire che hai dato del filo da torcere ai pidocchi di miniera!
 	AI_Output (self, other,"Sld_728_Jarvis_AUFNAHMESOLDIER_Info_08_02"); //Lee dovrebbe essersi d'accordo ad accettarti fra i mercenari. Vai a parlargli.
 
-	self.flags = 0;		// Immortal-Flag löschen
+	self.flags = 0;		// Immortal-Flag lÃ¶schen
 
 	Log_CreateTopic (GE_BecomeMercenary,LOG_NOTE);
-	B_LogEntry (GE_BecomeMercenary,"Devo parlare con Lee. Forse mi permetterà d'unirmi ai mercenari.");
+	B_LogEntry (GE_BecomeMercenary,"Devo parlare con Lee. Forse mi permetterÃ  d'unirmi ai mercenari.");
 };
 
 

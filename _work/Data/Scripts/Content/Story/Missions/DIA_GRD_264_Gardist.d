@@ -49,6 +49,6 @@ func void  Grd_264_Gardist_GARDEAUFNAHME_Info()
 	AI_Output (self, other,"Grd_264_Gardist_GARDEAUFNAHME_Info_07_02"); //Torna a Campo Vecchio e parlane con Thorus!
 	
 	Log_CreateTopic (GE_BecomeGuard,LOG_NOTE);
-	B_LogEntry (GE_BecomeGuard,"Non appena avrÚ riportato le uova, dovrÚ parlare con Thorus. Forse mi permetter‡ di unirmi alle guardie.");
+	B_LogEntry (GE_BecomeGuard,"Non appena avr√≤ riportato le uova, dovr√≤ parlare con Thorus. Forse mi permetter√† di unirmi alle guardie.");
 
 };

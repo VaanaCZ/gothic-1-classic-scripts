@@ -83,7 +83,7 @@ instance  Stt_311_Fisk_WhistlersSword (C_INFO)
 	condition	= Stt_311_Fisk_WhistlersSword_Condition;
 	information	= Stt_311_Fisk_WhistlersSword_Info;
 	permanent	= 1;
-	description = "Mi serve una spada. Vorrei qualcosa di pi˘ ornamentale.";
+	description = "Mi serve una spada. Vorrei qualcosa di pi√π ornamentale.";
 };                       
 
 FUNC int  Stt_311_Fisk_WhistlersSword_Condition()
@@ -96,20 +96,20 @@ FUNC int  Stt_311_Fisk_WhistlersSword_Condition()
 
 FUNC VOID  Stt_311_Fisk_WhistlersSword_Info()
 {
-	AI_Output (other, self,"Stt_311_Fisk_WhistlersSword_15_00"); //Mi serve una spada. Ma non una qualsiasi. Vorrei qualcosa di pi˘ ornamentale.
-	AI_Output (self, other,"Stt_311_Fisk_WhistlersSword_12_01"); //Ho ciÚ che cerchi. L'Ombra che la voleva comprare non si far‡ pi˘ vedere.
+	AI_Output (other, self,"Stt_311_Fisk_WhistlersSword_15_00"); //Mi serve una spada. Ma non una qualsiasi. Vorrei qualcosa di pi√π ornamentale.
+	AI_Output (self, other,"Stt_311_Fisk_WhistlersSword_12_01"); //Ho ci√≤ che cerchi. L'Ombra che la voleva comprare non si far√† pi√π vedere.
 	AI_Output (self, other,"Stt_311_Fisk_WhistlersSword_12_02"); //Sono 110 pezzi di metallo. T'interessa?
 	Fisk_SCknows110 = TRUE;
 
 	Info_ClearChoices	(Stt_311_Fisk_WhistlersSword );
-	Info_AddChoice		(Stt_311_Fisk_WhistlersSword,"Forse pi˘ tardi.",Stt_311_Fisk_WhistlersSword_BACK);
+	Info_AddChoice		(Stt_311_Fisk_WhistlersSword,"Forse pi√π tardi.",Stt_311_Fisk_WhistlersSword_BACK);
 	Info_AddChoice		(Stt_311_Fisk_WhistlersSword,"A Whistler l'avresti venduta a...",Stt_311_Fisk_WhistlersSword_Fault);
-	Info_AddChoice		(Stt_311_Fisk_WhistlersSword,"SÏ, la prendo.",Stt_311_Fisk_WhistlersSword_TakeIt);
+	Info_AddChoice		(Stt_311_Fisk_WhistlersSword,"S√¨, la prendo.",Stt_311_Fisk_WhistlersSword_TakeIt);
 };
 
 func void Stt_311_Fisk_WhistlersSword_BACK()
 {
-	AI_Output (other, self,"Org_826_Mordrag_WhistlersSword_BACK_15_00"); //Forse pi˘ tardi.
+	AI_Output (other, self,"Org_826_Mordrag_WhistlersSword_BACK_15_00"); //Forse pi√π tardi.
 	Info_ClearChoices	(Stt_311_Fisk_WhistlersSword );
 };
 
@@ -118,7 +118,7 @@ func void Stt_311_Fisk_WhistlersSword_Fault()
 	AI_Output (other, self,"Stt_311_Fisk_WhistlersSword_Fault_15_00"); //A Whistler l'avresti venduta a...
 	AI_Output (self, other,"Stt_311_Fisk_WhistlersSword_Fault_12_01"); //Ah! Aspetta... Hai ragione! Ho sbagliato prezzo, volevo dire 500 PEZZI!
 	AI_Output (other, self,"Stt_311_Fisk_WhistlersSword_Fault_15_02"); //Cinquecento?
-	AI_Output (self, other,"Stt_311_Fisk_WhistlersSword_Fault_12_03"); //Troppo poco? Preferisci 1000? Per me va bene. Anzi, ora che ci penso... Credo che me la terrÚ!
+	AI_Output (self, other,"Stt_311_Fisk_WhistlersSword_Fault_12_03"); //Troppo poco? Preferisci 1000? Per me va bene. Anzi, ora che ci penso... Credo che me la terr√≤!
 	
 	Fisk_ForgetSword = TRUE;
 	Info_ClearChoices	(Stt_311_Fisk_WhistlersSword );
@@ -126,7 +126,7 @@ func void Stt_311_Fisk_WhistlersSword_Fault()
 
 func void Stt_311_Fisk_WhistlersSword_TakeIt()
 {
-	AI_Output (other, self,"Stt_311_Fisk_WhistlersSword_TakeIt_15_00"); //SÏ, la prendo.
+	AI_Output (other, self,"Stt_311_Fisk_WhistlersSword_TakeIt_15_00"); //S√¨, la prendo.
 	
 	if (Npc_HasItems(other,itminugget) >= 110)
 	{
@@ -140,7 +140,7 @@ func void Stt_311_Fisk_WhistlersSword_TakeIt()
 	}
 	else
 	{
-		AI_Output (self, other,"Stt_311_Fisk_WhistlersSword_TakeIt_12_02"); //Temo tu non abbia metallo a sufficienza. Ti terrÚ da parte la spada per un po', ma non farmi aspettare troppo!
+		AI_Output (self, other,"Stt_311_Fisk_WhistlersSword_TakeIt_12_02"); //Temo tu non abbia metallo a sufficienza. Ti terr√≤ da parte la spada per un po', ma non farmi aspettare troppo!
 	};
 };
 
@@ -169,7 +169,7 @@ FUNC int  Stt_311_Fisk_ForgetSword_Condition()
 FUNC VOID  Stt_311_Fisk_ForgetSword_Info()
 {
 	AI_Output (other, self,"Stt_311_Fisk_ForgetSword_15_00"); //Parliamo ancora della spada di Whistler.
-	AI_Output (self, other,"Stt_311_Fisk_ForgetSword_12_01"); //Puoi dirgli che non l'avr‡ mai!
+	AI_Output (self, other,"Stt_311_Fisk_ForgetSword_12_01"); //Puoi dirgli che non l'avr√† mai!
 };
 
 // **************************************************
@@ -201,10 +201,10 @@ FUNC VOID  Stt_311_Fisk_MordragKO_Info()
 {
 	AI_Output (self, other,"Stt_311_Fisk_MordragKO_12_00"); //Ehi, tu!
 	AI_Output (self, other,"Stt_311_Fisk_MordragKO_12_01"); //Mordrag era uno dei miei maggiori fornitori, idiota!
-	AI_Output (self, other,"Stt_311_Fisk_MordragKO_12_02"); //Sar‡ molto difficile che tu riesca a ottenere il MIO voto per entrare a far parte di questo campo!
+	AI_Output (self, other,"Stt_311_Fisk_MordragKO_12_02"); //Sar√† molto difficile che tu riesca a ottenere il MIO voto per entrare a far parte di questo campo!
 
 	Info_ClearChoices(Stt_311_Fisk_MordragKO);
-	Info_AddChoice   (Stt_311_Fisk_MordragKO,"Vendi cose appartenenti ai baroni delle miniere. A Thorus interesser‡...",Stt_311_Fisk_MordragKO_Petze);
+	Info_AddChoice   (Stt_311_Fisk_MordragKO,"Vendi cose appartenenti ai baroni delle miniere. A Thorus interesser√†...",Stt_311_Fisk_MordragKO_Petze);
 	Info_AddChoice   (Stt_311_Fisk_MordragKO,"Rilassati! Forse posso sistemare le cose, non credi?",Stt_311_Fisk_MordragKO_Relax);
 	Info_AddChoice	 (Stt_311_Fisk_MordragKO,"Ma vai a farti fottere!",Stt_311_Fisk_MordragKO_FuckOff);
 };
@@ -233,7 +233,7 @@ func void Stt_311_Fisk_MordragKO_FuckOff()
 
 func void Stt_311_Fisk_MordragKO_Petze()
 {
-	AI_Output (other, self,"Stt_311_Fisk_MordragKO_Petze_15_00"); //Commerci in oggetti appartenenti ai baroni delle miniere. Thorus sar‡ molto interessato...
+	AI_Output (other, self,"Stt_311_Fisk_MordragKO_Petze_15_00"); //Commerci in oggetti appartenenti ai baroni delle miniere. Thorus sar√† molto interessato...
 	AI_Output (self, other,"Stt_311_Fisk_MordragKO_Petze_12_01"); //Non provarci, amico!
 };
 
@@ -272,10 +272,10 @@ FUNC VOID  Stt_311_Fisk_HehlerSuccess_Info()
 	B_GiveXP(XP_fiskdealer);
 
 	Log_SetTopicStatus(CH1_FiskNewDealer, LOG_SUCCESS);
-	B_LogEntry( CH1_FiskNewDealer,"Fisk Ë contento: Sharky svolger‡ il compito che era di Mordrag.");
+	B_LogEntry( CH1_FiskNewDealer,"Fisk √® contento: Sharky svolger√† il compito che era di Mordrag.");
 };
 /*------------------------------------------------------------------------
-							R‹STUNG									
+							R√úSTUNG									
 ------------------------------------------------------------------------*/
 
 instance  Stt_311_Fisk_ARMOR (C_INFO)

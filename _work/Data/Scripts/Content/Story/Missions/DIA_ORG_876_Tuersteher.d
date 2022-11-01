@@ -23,7 +23,7 @@ FUNC VOID DIA_Org_876_EXIT_Info()
 };
 
 // ************************************************************
-// 						Bin Schürfer
+// 						Bin SchÃ¼rfer
 // ************************************************************
 
 INSTANCE DIA_Org_876_AmSfb (C_INFO)
@@ -230,7 +230,7 @@ FUNC INT DIA_Org_876_ScSekte_Condition()
 FUNC VOID DIA_Org_876_ScSekte_Info()
 {	
 	AI_Output (self, other,"DIA_Org_876_ScSekte_06_00"); //Di solito facciamo entrare solo la nostra gente, ma non abbiamo nulla contro la Fratellanza.
-	AI_Output (self, other,"DIA_Org_876_ScSekte_06_01"); //Specialmente se ha con sé qualcosa da fumare.
+	AI_Output (self, other,"DIA_Org_876_ScSekte_06_01"); //Specialmente se ha con sÃ© qualcosa da fumare.
 };
 
 // ************************************************************
@@ -291,11 +291,11 @@ FUNC VOID DIA_Org_876_GibKraut_Info()
 //	Uhrzeit:	24h
 //
 //	Es passiert folgendes:
-//	1.	Nähert sich der Spieler dem Durchgang, so wird er in diesen
+//	1.	NÃ¤hert sich der Spieler dem Durchgang, so wird er in diesen
 //		Dialog gezwungen und einmal gewarnt
-//	2.	Nähert sich der SC trotzdem weiter, so wird er ein ZWEITES Mal
+//	2.	NÃ¤hert sich der SC trotzdem weiter, so wird er ein ZWEITES Mal
 //		gewarnt (aggressiver mit Waffe ziehen)
-//	3.	Nähert er sich trotzdem wieder, wird er angegriffen
+//	3.	NÃ¤hert er sich trotzdem wieder, wird er angegriffen
 //////////////////////////////////////////////////////////////////////////
 
 // **********************************************
@@ -330,7 +330,7 @@ func void Info_Org_876_FirstWarn_Info()
 	PrintGlobals	(PD_MISSION);
 
 	AI_Output (self, hero,"Info_Org_876_FirstWarn_Info_06_00"); //E TU dove vorresti andare?
-	AI_Output (hero, self,"Info_Org_876_FirstWarn_Info_15_01"); //Dentro, perché?
+	AI_Output (hero, self,"Info_Org_876_FirstWarn_Info_15_01"); //Dentro, perchÃ©?
 	AI_Output (self, hero,"Info_Org_876_FirstWarn_Info_06_02"); //Scordatelo! Silas accetta nella sua taverna solo tritarocce e ladri.
 
 	hero.aivar[AIV_LASTDISTTOWP] 		= Npc_GetDistToWP(hero,Org_876_CHECKPOINT);
@@ -404,7 +404,7 @@ func int Info_Org_876_Attack_Info()
 	hero.aivar[AIV_GUARDPASSAGE_STATUS]	= AIV_GPS_PUNISH;	
 	
 	B_FullStop			(self);	
-	AI_StopProcessInfos	(self);					// dem Spieler sofort wieder die Kontrolle zurückgeben
+	AI_StopProcessInfos	(self);					// dem Spieler sofort wieder die Kontrolle zurÃ¼ckgeben
 	B_IntruderAlert		(self,	other);
 	B_SetAttackReason	(self,	AIV_AR_INTRUDER);
 	Npc_SetTarget		(self,	hero);

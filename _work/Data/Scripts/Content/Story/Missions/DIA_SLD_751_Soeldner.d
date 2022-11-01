@@ -44,7 +44,7 @@ FUNC int DIA_SLD_751_Soeldner_EXIT_1_CONDITION()
 
 func void DIA_SLD_751_Soeldner_EXIT_1_INFO()
 {
-	AI_Output (other, self,"DIA_SLD_751_Soeldner_EXIT_1_INFO_15_01"); //Farò meglio ad andare.
+	AI_Output (other, self,"DIA_SLD_751_Soeldner_EXIT_1_INFO_15_01"); //FarÃ² meglio ad andare.
 	AI_Output (self, other,"DIA_SLD_751_Soeldner_EXIT_1_INFO_01_02");//Spero che ci siamo capiti.
 	AI_StopProcessInfos	( self );
 };

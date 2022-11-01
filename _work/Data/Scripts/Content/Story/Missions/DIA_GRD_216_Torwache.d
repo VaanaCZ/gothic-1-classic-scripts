@@ -58,7 +58,7 @@ FUNC VOID DIA_Grd_216_First_Info()
 {
 	AI_Output (self, other,"DIA_Grd_216_First_13_00"); //Ehi, tu! Non ti ho mai visto prima!
 	AI_Output (other, self,"DIA_Grd_216_First_15_01"); //Non mi stupisce: sono appena arrivato.
-	AI_Output (self, other,"DIA_Grd_216_First_13_02"); //Allora stai in guardia! Il mondo esterno è molto pericoloso. Solo nei campi sei al sicuro.
+	AI_Output (self, other,"DIA_Grd_216_First_13_02"); //Allora stai in guardia! Il mondo esterno Ã¨ molto pericoloso. Solo nei campi sei al sicuro.
 };
 
 // **************************************************
@@ -108,7 +108,7 @@ func void DIA_Grd_216_DustyZoll_PissOff()
 	B_ExchangeRoutine	(Vlk_524_Dusty,"start");
 	var C_NPC dusty;	dusty = Hlp_GetNpc(Vlk_524_Dusty);
 	dusty.aivar[AIV_PARTYMEMBER] = FALSE;
-	dusty.flags = 0;	// Immortal löschen
+	dusty.flags = 0;	// Immortal lÃ¶schen
 };
 
 func void DIA_Grd_216_DustyZoll_ToPSI()
@@ -122,7 +122,7 @@ func void DIA_Grd_216_DustyZoll_ToPSI()
 	B_ExchangeRoutine	(Vlk_524_Dusty,"start");
 	var C_NPC dusty;	dusty = Hlp_GetNpc(Vlk_524_Dusty);
 	dusty.aivar[AIV_PARTYMEMBER] = FALSE;
-	dusty.flags = 0;	// Immortal löschen
+	dusty.flags = 0;	// Immortal lÃ¶schen
 };
 
 func void DIA_Grd_216_DustyZoll_LittleWalk()
@@ -141,7 +141,7 @@ func void DIA_Grd_216_DustyZoll_LittleWalk()
 	}
 	else
 	{
-		AI_Output			(self, other,"DIA_Grd_216_Dusty_Zoll_LittleWalk_13_02"); //Mi prendi in giro? Non te la caverai così facilmente, ragazzo!
+		AI_Output			(self, other,"DIA_Grd_216_Dusty_Zoll_LittleWalk_13_02"); //Mi prendi in giro? Non te la caverai cosÃ¬ facilmente, ragazzo!
 		AI_StopProcessInfos	(self);
 		Npc_SetTarget		(self,other);
 		AI_StartState		(self,ZS_Attack,1,"");
@@ -149,7 +149,7 @@ func void DIA_Grd_216_DustyZoll_LittleWalk()
 		B_ExchangeRoutine	(Vlk_524_Dusty,"start");
 		var C_NPC dusty;	dusty = Hlp_GetNpc(Vlk_524_Dusty);
 		dusty.aivar[AIV_PARTYMEMBER] = FALSE;
-		dusty.flags = 0;	// Immortal löschen
+		dusty.flags = 0;	// Immortal lÃ¶schen
 	};
 };
 
@@ -181,5 +181,5 @@ func void  GRD_216_Torwache_SEETHORUS_Info()
 {
 	AI_Output (self, other,"Grd_216_Torwache_SEETHORUS_Info_13_01"); //Ehi! Sono contento di vederti. Thorus ti vuole parlare.
 	AI_Output (other, self,"Grd_216_Torwache_SEETHORUS_Info_15_02"); //Cosa vuole?
-	AI_Output (self, other,"Grd_216_Torwache_SEETHORUS_Info_13_03"); //Sono sicuro che te lo dirà molto presto.
+	AI_Output (self, other,"Grd_216_Torwache_SEETHORUS_Info_13_03"); //Sono sicuro che te lo dirÃ  molto presto.
 };

@@ -55,7 +55,7 @@ FUNC VOID Info_Mine_Sld_8_EinerVonEuchWerden_Info()
 {
 	AI_Output(other,self,"Info_Mine_Sld_8_EinerVonEuchWerden_15_00"); //Posso unirmi a questa squadra?
 	AI_Output(self,other,"Info_Mine_Sld_8_EinerVonEuchWerden_08_01"); //Prima di poter venire a lavorare nella Buca, devi farti strada all'interno di Campo Nuovo.
-	AI_Output(self,other,"Info_Mine_Sld_8_EinerVonEuchWerden_08_02"); //Vai a chiedere l‡.
+	AI_Output(self,other,"Info_Mine_Sld_8_EinerVonEuchWerden_08_02"); //Vai a chiedere l√†.
 };
 
 // *************************************************************************
@@ -79,7 +79,7 @@ FUNC INT Info_Mine_Sld_8_WichtigePersonen_Condition()
 FUNC VOID Info_Mine_Sld_8_WichtigePersonen_Info()
 {
 	AI_Output(other,self,"Info_Mine_Sld_8_WichtigePersonen_15_00"); //Chi comanda qui?
-	AI_Output(self,other,"Info_Mine_Sld_8_WichtigePersonen_08_01"); //Okyl Ë il capo nella Buca e Lee comanda il campo.
+	AI_Output(self,other,"Info_Mine_Sld_8_WichtigePersonen_08_01"); //Okyl √® il capo nella Buca e Lee comanda il campo.
 	AI_Output(self,other,"Info_Mine_Sld_8_WichtigePersonen_08_02"); //Quindi farai meglio ad andare a parlare con entrambi.
 };
 
@@ -105,7 +105,7 @@ FUNC VOID Info_Mine_Sld_8_DasLager_Info()
 {
 	AI_Output(other,self,"Info_Mine_Sld_8_DasLager_15_00"); //Cosa succede nel campo?
 	AI_Output(self,other,"Info_Mine_Sld_8_DasLager_08_01"); //Sorvegliamo l'entrata della miniera.
-	AI_Output(other,self,"Info_Mine_Sld_8_DasLager_08_02"); //Nessuno puÚ entrare, tranne la nostra gente.
+	AI_Output(other,self,"Info_Mine_Sld_8_DasLager_08_02"); //Nessuno pu√≤ entrare, tranne la nostra gente.
 };
 
 // *************************************************************************
@@ -129,7 +129,7 @@ FUNC INT Info_Mine_Sld_8_DieLage_Condition()
 FUNC VOID Info_Mine_Sld_8_DieLage_Info()
 {
 	AI_Output(other,self,"Info_Mine_Sld_8_DieLage_15_00"); //Capito?
-	AI_Output(self,other,"Info_Mine_Sld_8_DieLage_08_01"); //PerchÈ me lo chiedi? » tutto sotto controllo.
+	AI_Output(self,other,"Info_Mine_Sld_8_DieLage_08_01"); //Perch√© me lo chiedi? √à tutto sotto controllo.
 };
 	
 // *************************************************************************

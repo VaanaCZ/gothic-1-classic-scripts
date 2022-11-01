@@ -53,8 +53,8 @@ FUNC INT Info_Vlk_4_EinerVonEuchWerden_Condition()
 FUNC VOID Info_Vlk_4_EinerVonEuchWerden_Info()
 {
 	AI_Output(other,self,"Info_Vlk_4_EinerVonEuchWerden_15_01"); //Cosa devo fare per unirmi a questo campo?
-	AI_Output(self,other,"Info_Vlk_4_EinerVonEuchWerden_04_04"); //Come Ombra o come guardia? Non sar‡ facile, amico. Dovrai superare alcune prove, prima che il vecchio Thorus ti permetta di vedere Gomez.
-	AI_Output(self,other,"Info_Vlk_4_EinerVonEuchWerden_04_02"); //E dovrai risultare simpatico alla gente di qui. In ogni caso, finchÈ non scegli un campo nessuno ti prender‡ sul serio.
+	AI_Output(self,other,"Info_Vlk_4_EinerVonEuchWerden_04_04"); //Come Ombra o come guardia? Non sar√† facile, amico. Dovrai superare alcune prove, prima che il vecchio Thorus ti permetta di vedere Gomez.
+	AI_Output(self,other,"Info_Vlk_4_EinerVonEuchWerden_04_02"); //E dovrai risultare simpatico alla gente di qui. In ogni caso, finch√© non scegli un campo nessuno ti prender√† sul serio.
 	AI_Output(self,other,"Info_Vlk_4_EinerVonEuchWerden_04_03"); //Se fossi in te, andrei a scambiare due parole con qualche Ombra. Forse troverai qualcuno disposto ad aiutarti, se hai qualcosa da offrire in cambio.
 	
 	var C_NPC Thorus;		Thorus 	= Hlp_GetNpc(GRD_200_Thorus);
@@ -71,7 +71,7 @@ INSTANCE Info_Vlk_4_WichtigePersonen(C_INFO)
 	condition	= Info_Vlk_4_WichtigePersonen_Condition;
 	information	= Info_Vlk_4_WichtigePersonen_Info;
 	permanent	= 1;
-	description = "C'Ë qualcosa che dovrei sapere?";
+	description = "C'√® qualcosa che dovrei sapere?";
 };                       
 
 FUNC INT Info_Vlk_4_WichtigePersonen_Condition()
@@ -81,9 +81,9 @@ FUNC INT Info_Vlk_4_WichtigePersonen_Condition()
 
 FUNC VOID Info_Vlk_4_WichtigePersonen_Info()
 {
-	AI_Output(other,self,"Info_Vlk_4_WichtigePersonen_15_00"); //C'Ë qualcosa che dovrei sapere?
-	AI_Output(self,other,"Info_Vlk_4_WichtigePersonen_04_01"); //Essendo nuovo, farai meglio a non far innervosire Gravo. » solo un minatore, ma sa come trattare coi baroni delle miniere.
-	AI_Output(self,other,"Info_Vlk_4_WichtigePersonen_04_02"); //Se ti metti nei guai col branco di Gomez, lui puÚ aiutarti.
+	AI_Output(other,self,"Info_Vlk_4_WichtigePersonen_15_00"); //C'√® qualcosa che dovrei sapere?
+	AI_Output(self,other,"Info_Vlk_4_WichtigePersonen_04_01"); //Essendo nuovo, farai meglio a non far innervosire Gravo. √à solo un minatore, ma sa come trattare coi baroni delle miniere.
+	AI_Output(self,other,"Info_Vlk_4_WichtigePersonen_04_02"); //Se ti metti nei guai col branco di Gomez, lui pu√≤ aiutarti.
 };
 
 // *************************************************************************
@@ -113,7 +113,7 @@ FUNC VOID Info_Vlk_4_DasLager_Info()
 	AI_Output(self,other,"Info_Vlk_4_DasLager_04_02"); //Se sarai fortunato, Thorus o Diego potranno affidarti un compito, in questo modo, potrai riuscire a farti prendere in simpatia.
 	AI_Output(self,other,"Info_Vlk_4_DasLager_04_03"); //Oppure potresti incontrare un mago. A volte, chiedono alla gente di compiere delle commissioni per conto loro (e pagano bene).
 	AI_Output(other,self,"Info_Vlk_4_DasLager_15_04"); //I maghi escono dal castello? Quando?
-	AI_Output(self,other,"Info_Vlk_4_DasLager_04_05"); //Che ne so! Chiedi alla gente che vive lÏ.
+	AI_Output(self,other,"Info_Vlk_4_DasLager_04_05"); //Che ne so! Chiedi alla gente che vive l√¨.
 };
 
 // *************************************************************************
@@ -137,7 +137,7 @@ FUNC INT Info_Vlk_4_DieLage_Condition()
 FUNC VOID Info_Vlk_4_DieLage_Info()
 {
 	AI_Output(other,self,"Info_Vlk_4_DieLage_15_00"); //Come va?
-	AI_Output(self,other,"Info_Vlk_4_DieLage_04_01"); //Esattamente come 20 anni fa. Da allora non Ë cambiato molto.
+	AI_Output(self,other,"Info_Vlk_4_DieLage_04_01"); //Esattamente come 20 anni fa. Da allora non √® cambiato molto.
 };
 	
 // *************************************************************************

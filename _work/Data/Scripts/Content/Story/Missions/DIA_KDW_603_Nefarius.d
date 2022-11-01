@@ -69,7 +69,7 @@ FUNC int  Info_Nefarius_WoSaturas_Condition()
 FUNC VOID  Info_Nefarius_WoSaturas_Info()
 {
 	AI_Output (other, self,"Info_Nefarius_WoSaturas_15_00"); //Dove si trova Saturas?
-	AI_Output (self, other,"Info_Nefarius_WoSaturas_04_01"); //Attraversa il grande portale rotondo, lo troverai lÏ.
+	AI_Output (self, other,"Info_Nefarius_WoSaturas_04_01"); //Attraversa il grande portale rotondo, lo troverai l√¨.
 };
 
 // **************************** 
@@ -97,11 +97,11 @@ FUNC int  Info_Nefarius_WannaMage_Condition()
 FUNC VOID  Info_Nefarius_WannaMage_Info()
 {
 	AI_Output (other, self,"Info_Nefarius_WannaMage_15_00"); //Voglio diventare un mago del Circolo dell'Acqua!
-	AI_Output (self, other,"Info_Nefarius_WannaMage_04_01"); //(ride) Non cosÏ in fretta, ragazzo mio!
+	AI_Output (self, other,"Info_Nefarius_WannaMage_04_01"); //(ride) Non cos√¨ in fretta, ragazzo mio!
 	AI_Output (self, other,"Info_Nefarius_WannaMage_04_02"); //Un giovane deve aver fatto qualcosa di grande per essere accettato fra noi.
 	AI_Output (self, other,"Info_Nefarius_WannaMage_04_03"); //E deve averci serviti per un certo tempo.
 	AI_Output (self, other,"Info_Nefarius_WannaMage_04_04"); //Se fai sul serio, devi unirti ai nostri mercenari e servirci.
-	AI_Output (self, other,"Info_Nefarius_WannaMage_04_05"); //E un giorno, forse, avrai la possibilit‡ di compiere un'azione memorabile.
+	AI_Output (self, other,"Info_Nefarius_WannaMage_04_05"); //E un giorno, forse, avrai la possibilit√† di compiere un'azione memorabile.
 };
 
 // **************************** 
@@ -137,7 +137,7 @@ FUNC VOID  Info_Nefarius_NowReady_Info()
 	else
 	{
 		AI_Output (self, other,"Info_Nefarius_NowReady_04_02"); //Sei diventato uno dei nostri mercenari. Molto bene...
-		AI_Output (self, other,"Info_Nefarius_NowReady_04_03"); //Il tempo far‡ il resto...
+		AI_Output (self, other,"Info_Nefarius_NowReady_04_03"); //Il tempo far√† il resto...
 	};
 };
 
@@ -172,7 +172,7 @@ FUNC int  Info_Nefarius_OCNews_Condition()
 
 FUNC VOID  Info_Nefarius_OCNews_Info()
 {
-	AI_Output (self, other,"Info_Nefarius_OCNews_04_00"); //Ci sono novit‡ dai nostri amici di Campo Vecchio?
+	AI_Output (self, other,"Info_Nefarius_OCNews_04_00"); //Ci sono novit√† dai nostri amici di Campo Vecchio?
 	AI_Output (other, self,"Info_Nefarius_OCNews_15_01"); //Gomez ha fatto uccidere tutti i Maghi del Fuoco!
 	AI_Output (self, other,"Info_Nefarius_OCNews_04_02"); //No! Quell'idiota! Avevo avvertito Corristo che non ci si doveva fidare di lui! Vai subito a riferire questa notizia a Saturas!
 	if (Npc_GetTrueGuild(hero)==GIL_SLD)

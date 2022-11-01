@@ -95,7 +95,7 @@ func void  GRD_262_Aaron_BLUFF_IAN()
 	
 	Info_ClearChoices	(GRD_262_Aaron_BLUFF);
 	Info_AddChoice		(GRD_262_Aaron_BLUFF,"Non ne ho idea.",GRD_262_Aaron_BLUFF_UGLY);
-	Info_AddChoice		(GRD_262_Aaron_BLUFF,"Ti uccider‡.",GRD_262_Aaron_BLUFF_BAD);
+	Info_AddChoice		(GRD_262_Aaron_BLUFF,"Ti uccider√†.",GRD_262_Aaron_BLUFF_BAD);
 	Info_AddChoice		(GRD_262_Aaron_BLUFF,"Vuole ricompensarti.",GRD_262_Aaron_BLUFF_GOOD);
 };  
 func void GRD_262_Aaron_BLUFF_GOOD ()
@@ -107,14 +107,14 @@ func void GRD_262_Aaron_BLUFF_GOOD ()
 };
 func void 	GRD_262_Aaron_BLUFF_BAD ()
 {
-	AI_Output			(other, self,"GRD_262_Aaron_BLUFF_BAD_15_01"); //Ti uccider‡ perchÈ sei troppo pigro.
-	AI_Output			(self, other,"GRD_262_Aaron_BLUFF_BAD_09_02"); //Non Ë una novit‡. Sparisci!
+	AI_Output			(other, self,"GRD_262_Aaron_BLUFF_BAD_15_01"); //Ti uccider√† perch√© sei troppo pigro.
+	AI_Output			(self, other,"GRD_262_Aaron_BLUFF_BAD_09_02"); //Non √® una novit√†. Sparisci!
 	AI_StopProcessInfos	(self);
 };
 func void GRD_262_Aaron_BLUFF_UGLY()
 {
-	AI_Output			(other, self,"GRD_262_Aaron_BLUFF_UGLY_15_01"); //Non ne ho idea, te lo dir‡ lui di persona. Pensi davvero che mi rivelerebbe una cosa del genere?
-	AI_Output			(self, other,"GRD_262_Aaron_BLUFF_UGLY_09_02"); //Allora andrÚ a vedere.
+	AI_Output			(other, self,"GRD_262_Aaron_BLUFF_UGLY_15_01"); //Non ne ho idea, te lo dir√† lui di persona. Pensi davvero che mi rivelerebbe una cosa del genere?
+	AI_Output			(self, other,"GRD_262_Aaron_BLUFF_UGLY_09_02"); //Allora andr√≤ a vedere.
 
 	AI_StopProcessInfos	(self);
 		
@@ -124,7 +124,7 @@ func void GRD_262_Aaron_BLUFF_UGLY()
 	Snipes_Deal = LOG_SUCCESS;
 	GRD_262_Aaron_BLUFF.permanent = 0;
 	
-	B_LogEntry		(CH2_SnipesDeal,"Sono riuscito ad allontanare Aaron dallo scrigno, col falso pretesto che Ian voleva vederlo. Spero la prender‡ con filosofia!");
+	B_LogEntry		(CH2_SnipesDeal,"Sono riuscito ad allontanare Aaron dallo scrigno, col falso pretesto che Ian voleva vederlo. Spero la prender√† con filosofia!");
 };
 
 func void GRD_262_Aaron_BLUFF_BACK()
@@ -162,7 +162,7 @@ FUNC VOID  GRD_262_Aaron_PISSED_Info()
 	B_LogEntry		(CH2_SnipesDeal,"Ho incontrato nuovamente Aaron e NON l'ha presa con filosofia."); 
 };
 
-// ***************** Schl¸ssel verkaufen *****************************
+// ***************** Schl√ºssel verkaufen *****************************
 instance  GRD_262_Aaron_SELL (C_INFO)
 {
 	npc			=  GRD_262_Aaron;
@@ -184,13 +184,13 @@ FUNC int  GRD_262_Aaron_SELL_Condition()
 FUNC VOID  GRD_262_Aaron_SELL_Info()
 {
 	AI_Output			(other, self,"Info_Aaron_SELL_15_01"); //Ehi! Non ti manca la chiave dello scrigno?
-	AI_Output			(self, other,"Info_Aaron_SELL_09_02"); //» vero. Non voglio nemmeno sapere come o perchÈ sai dell'esistenza di questa chiave.
-	AI_Output			(self, other,"Info_Aaron_SELL_09_03"); //Ma ti darÚ 20 pezzi di metallo se la ritroverai.
+	AI_Output			(self, other,"Info_Aaron_SELL_09_02"); //√à vero. Non voglio nemmeno sapere come o perch√© sai dell'esistenza di questa chiave.
+	AI_Output			(self, other,"Info_Aaron_SELL_09_03"); //Ma ti dar√≤ 20 pezzi di metallo se la ritroverai.
 
 	B_LogEntry		(CH2_SnipesDeal,"Aaron mi ha promesso 20 pezzi di metallo, se riesco a trovare le chiavi del suo scrigno!"); 
 };
 
-// ***************** Schl¸ssel verkaufen 2*****************************
+// ***************** Schl√ºssel verkaufen 2*****************************
 instance  GRD_262_Aaron_SELLNOW (C_INFO)
 {
 	npc			=  GRD_262_Aaron;
@@ -211,8 +211,8 @@ FUNC int  GRD_262_Aaron_SELLNOW_Condition()
 FUNC VOID  GRD_262_Aaron_SELLNOW_Info()
 {
 	AI_Output			(other, self,"Info_Aaron_SELLNOW_15_01"); //Ecco la tua chiave.
-	AI_Output			(self, other,"Info_Aaron_SELLNOW_09_02"); //SÏ, Ë lei. Bene, ecco i 20 pezzi di metallo che ti avevo promesso.
-	AI_Output			(self, other,"Info_Aaron_SELLNOW_09_03"); //Ma d'ora in poi stai attento a ciÚ che fai, perchÈ ti terrÚ d'occhio!
+	AI_Output			(self, other,"Info_Aaron_SELLNOW_09_02"); //S√¨, √® lei. Bene, ecco i 20 pezzi di metallo che ti avevo promesso.
+	AI_Output			(self, other,"Info_Aaron_SELLNOW_09_03"); //Ma d'ora in poi stai attento a ci√≤ che fai, perch√© ti terr√≤ d'occhio!
 	
 	CreateInvItems 		(self,ItMinugget,20);
 	B_GiveInvItems      (self,other,ItMinugget,20);

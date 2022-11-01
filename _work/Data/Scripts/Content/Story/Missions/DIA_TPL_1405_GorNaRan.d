@@ -45,8 +45,8 @@ FUNC VOID  DIA_GorNaRan_Wache_Info()
 {
 	AI_Output (other, self,"DIA_GorNaRan_Wache_15_00"); //Cosa stai facendo?
 	AI_Output (self, other,"DIA_GorNaRan_Wache_13_01"); //Mi assicuro che nessuno squalo di palude si avvicini troppo al campo.
-	AI_Output (self, other,"DIA_GorNaRan_Wache_13_02"); //Se fossi in te, mi terrei alla larga da quelle bestie. Non hai alcuna possibilit‡ contro di loro.
-	AI_Output (self, other,"DIA_GorNaRan_Wache_13_03"); //Non disturbarmi pi˘, devo restare concentrato.
+	AI_Output (self, other,"DIA_GorNaRan_Wache_13_02"); //Se fossi in te, mi terrei alla larga da quelle bestie. Non hai alcuna possibilit√† contro di loro.
+	AI_Output (self, other,"DIA_GorNaRan_Wache_13_03"); //Non disturbarmi pi√π, devo restare concentrato.
 	AI_StopProcessInfos	( self );
 };
 
@@ -77,7 +77,7 @@ FUNC INT Info_TPL_1405_GorNaRan_Condition()
 
 FUNC VOID Info_TPL_1405_GorNaRan_Info()
 {
-	AI_Output (self, other,"Info_TPL_1405_GorNaRan_Info_13_01"); //Dove credi di andare? Nessuno puÚ passare qui!
+	AI_Output (self, other,"Info_TPL_1405_GorNaRan_Info_13_01"); //Dove credi di andare? Nessuno pu√≤ passare qui!
 };
 
 
@@ -103,7 +103,7 @@ FUNC INT Info_TPL_1405_GorNaRan2_Condition()
 FUNC VOID Info_TPL_1405_GorNaRan2_Info()
 {
 	AI_Output (other, self,"Info_TPL_1405_GorNaRan_Info_15_02"); //Cosa succede?
-	AI_Output (self, other,"Info_TPL_1405_GorNaRan_Info_13_03"); //Mi chiedi che succede? Buttati a terra e prega il Dormiente, poichÈ in questo esatto momento si sta svegliando per eliminare tutti gli infedeli!
+	AI_Output (self, other,"Info_TPL_1405_GorNaRan_Info_13_03"); //Mi chiedi che succede? Buttati a terra e prega il Dormiente, poich√© in questo esatto momento si sta svegliando per eliminare tutti gli infedeli!
 };
 
 
@@ -129,7 +129,7 @@ FUNC INT Info_TPL_1405_GorNaRan3_Condition()
 FUNC VOID Info_TPL_1405_GorNaRan3_Info()
 {	
 	AI_Output (other, self,"Info_TPL_1405_GorNaRan_Info_15_04"); //Volevo solo dare un'occhiata.
-	AI_Output (self, other,"Info_TPL_1405_GorNaRan_Info_13_05"); //Verme schifoso! Tu e la tua razza non avrete scampo, quando il Dormiente si sveglier‡! DovrÚ spazzarvi via tutti.
+	AI_Output (self, other,"Info_TPL_1405_GorNaRan_Info_13_05"); //Verme schifoso! Tu e la tua razza non avrete scampo, quando il Dormiente si sveglier√†! Dovr√≤ spazzarvi via tutti.
 	
 	AI_StopProcessInfos	( self );
 	

@@ -55,7 +55,7 @@ FUNC VOID Info_Mine_Sld_11_EinerVonEuchWerden_Info()
 {
 	AI_Output(other,self,"Info_Mine_Sld_11_EinerVonEuchWerden_15_00"); //Come posso unirmi a voi?
 	AI_Output(self,other,"Info_Mine_Sld_11_EinerVonEuchWerden_011_01"); //Se vuoi diventare uno di noi, devi guadagnarti una reputazione.
-	AI_Output(self,other,"Info_Mine_Sld_11_EinerVonEuchWerden_011_02"); //Vai a provare il tuo valore da qualche parte, cosÏ forse ti sar‡ concesso di servire nella Buca.
+	AI_Output(self,other,"Info_Mine_Sld_11_EinerVonEuchWerden_011_02"); //Vai a provare il tuo valore da qualche parte, cos√¨ forse ti sar√† concesso di servire nella Buca.
 };
 
 // *************************************************************************
@@ -68,7 +68,7 @@ INSTANCE Info_Mine_Sld_11_WichtigePersonen(C_INFO)
 	condition	= Info_Mine_Sld_11_WichtigePersonen_Condition;
 	information	= Info_Mine_Sld_11_WichtigePersonen_Info;
 	permanent	= 1;
-	description = "Chi d‡ gli ordini, qui?";
+	description = "Chi d√† gli ordini, qui?";
 };                       
 
 FUNC INT Info_Mine_Sld_11_WichtigePersonen_Condition()
@@ -78,8 +78,8 @@ FUNC INT Info_Mine_Sld_11_WichtigePersonen_Condition()
 
 FUNC VOID Info_Mine_Sld_11_WichtigePersonen_Info()
 {
-	AI_Output(other,self,"Info_Mine_Sld_11_WichtigePersonen_15_00"); //Chi d‡ gli ordini, qui?
-	AI_Output(self,other,"Info_Mine_Sld_11_WichtigePersonen_011_01"); //Nella Buca, tutti fanno ciÚ che dice Okyl. Lui conosce tutti i pezzi grossi del campo.
+	AI_Output(other,self,"Info_Mine_Sld_11_WichtigePersonen_15_00"); //Chi d√† gli ordini, qui?
+	AI_Output(self,other,"Info_Mine_Sld_11_WichtigePersonen_011_01"); //Nella Buca, tutti fanno ci√≤ che dice Okyl. Lui conosce tutti i pezzi grossi del campo.
 	AI_Output(self,other,"Info_Mine_Sld_11_WichtigePersonen_011_02"); //Quindi, se fai qualcosa di stupido, lo verranno a sapere persino i Maghi dell'Acqua di Campo Nuovo.
 };
 
@@ -93,7 +93,7 @@ INSTANCE Info_Mine_Sld_11_DasLager(C_INFO)
 	condition	= Info_Mine_Sld_11_DasLager_Condition;
 	information	= Info_Mine_Sld_11_DasLager_Info;
 	permanent	= 1;
-	description = "Ci sono novit‡ importanti?";
+	description = "Ci sono novit√† importanti?";
 };                       
 
 FUNC INT Info_Mine_Sld_11_DasLager_Condition()
@@ -103,9 +103,9 @@ FUNC INT Info_Mine_Sld_11_DasLager_Condition()
 
 FUNC VOID Info_Mine_Sld_11_DasLager_Info()
 {
-	AI_Output(other,self,"Info_Mine_Sld_11_DasLager_15_00"); //Ci sono novit‡ importanti?
+	AI_Output(other,self,"Info_Mine_Sld_11_DasLager_15_00"); //Ci sono novit√† importanti?
 	AI_Output(self,other,"Info_Mine_Sld_11_DasLager_011_01"); //No, ma ci saranno un sacco di guai se proverai a fare qualche scherzo.
-	AI_Output(self,other,"Info_Mine_Sld_11_DasLager_011_02"); //Gi‡! E ancora di pi˘ se cercherai di entrare nella miniera o attraversare il cancello senza permesso.
+	AI_Output(self,other,"Info_Mine_Sld_11_DasLager_011_02"); //Gi√†! E ancora di pi√π se cercherai di entrare nella miniera o attraversare il cancello senza permesso.
 };
 
 // *************************************************************************

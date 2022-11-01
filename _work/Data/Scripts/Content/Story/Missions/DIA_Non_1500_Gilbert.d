@@ -75,7 +75,7 @@ FUNC VOID  DIA_Gilbert_Hallo_Info()
 {
 	AI_Output (other, self,"DIA_Gilbert_Hallo_15_00"); //Cosa ci fai qui?
 	AI_Output (self, other,"DIA_Gilbert_Hallo_04_01"); //Sono stufo di Campo Vecchio. Ho avuto dei problemi con la gente di Gomez, un po' di tempo fa.
-	AI_Output (self, other,"DIA_Gilbert_Hallo_04_02"); //Immagino che nessuno lo ricordi più, oramai. Ciononostante rimarrò qui. Ci sono troppi idioti a Campo Vecchio, per i miei gusti.
+	AI_Output (self, other,"DIA_Gilbert_Hallo_04_02"); //Immagino che nessuno lo ricordi piÃ¹, oramai. Ciononostante rimarrÃ² qui. Ci sono troppi idioti a Campo Vecchio, per i miei gusti.
 };
 
 

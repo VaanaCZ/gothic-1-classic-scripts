@@ -1,8 +1,8 @@
 //#############################################################################################
 //
-//	Konstanten für die Tagebucheinträge
+//	Konstanten fÃ¼r die TagebucheintrÃ¤ge
 //	-----------------------------------
-//	ALLE Tagebucheinträge über die Funktionen Log_... müssen für den ersten Parameter
+//	ALLE TagebucheintrÃ¤ge Ã¼ber die Funktionen Log_... mÃ¼ssen fÃ¼r den ersten Parameter
 //	eine String-Konstante verwenden, die hier eingetragen ist. Auf keinen Fall direkt
 //	Strings in die Dialog-Skripte schreiben!!!
 //
@@ -21,7 +21,7 @@ const string	GE_BecomeFiremage		=	"Il circolo dei Maghi del Fuoco";
 const string	GE_BecomeMercenary		=	"Promozione a mercenario";
 
 //---------------------------------------------------------------------
-//	Händler und Lehrer
+//	HÃ¤ndler und Lehrer
 //---------------------------------------------------------------------
 const string	GE_TraderOC				=	"Mercante di Campo Vecchio";
 const string	GE_TraderNC				=	"Mercante di Campo Nuovo";

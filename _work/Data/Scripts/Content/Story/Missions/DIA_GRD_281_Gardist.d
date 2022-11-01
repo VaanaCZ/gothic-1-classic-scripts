@@ -46,6 +46,6 @@ FUNC INT DIA_Grd_281_GuardGate_Condition()
 FUNC VOID DIA_Grd_281_GuardGate_Info()
 {
 	AI_Output (other, self,"DIA_Grd_281_GuardGate_15_00"); //Come va?
-	AI_Output (self, other,"DIA_Grd_281_GuardGate_07_01"); //Bene. Nessun ladro di Campo Nuovo si è fatto vedere!
+	AI_Output (self, other,"DIA_Grd_281_GuardGate_07_01"); //Bene. Nessun ladro di Campo Nuovo si Ã¨ fatto vedere!
 	AI_StopProcessInfos	( self );
 };

@@ -23,7 +23,7 @@ FUNC VOID DIA_BaalNamib_EXIT_Info()
 };
 
 // ************************************************************
-// 					NICHT ansprechbar (Ungl‰ubiger) 
+// 					NICHT ansprechbar (Ungl√§ubiger) 
 // ************************************************************
 // ************************************************************
 
@@ -109,7 +109,7 @@ FUNC VOID DIA_BaalNamib_FirstTalk_Info()
 
 	Info_ClearChoices 	(DIA_BaalNamib_FirstTalk);
 	Info_AddChoice 		(DIA_BaalNamib_FirstTalk,"NON DIRE NULLA",DIA_BaalNamib_FirstTalk_Mute);
-	Info_AddChoice 		(DIA_BaalNamib_FirstTalk,"SÏ, voglio seguire la via del Dormiente!",DIA_BaalNamib_FirstTalk_Sleeper);
+	Info_AddChoice 		(DIA_BaalNamib_FirstTalk,"S√¨, voglio seguire la via del Dormiente!",DIA_BaalNamib_FirstTalk_Sleeper);
 };
 
 func void DIA_BaalNamib_FirstTalk_Mute()
@@ -120,16 +120,16 @@ func void DIA_BaalNamib_FirstTalk_Mute()
 
 func void DIA_BaalNamib_FirstTalk_Sleeper()
 {
-	AI_Output 			(other, self,"DIA_BaalNamib_FirstTalk_Sleeper_15_00"); //SÏ, voglio seguire la via del Dormiente!
-	AI_Output 			(self, other,"DIA_BaalNamib_FirstTalk_Sleeper_02_01"); //Vai da Cor Kalom. Digli che ti mando io perchÈ sei un vero credente!
+	AI_Output 			(other, self,"DIA_BaalNamib_FirstTalk_Sleeper_15_00"); //S√¨, voglio seguire la via del Dormiente!
+	AI_Output 			(self, other,"DIA_BaalNamib_FirstTalk_Sleeper_02_01"); //Vai da Cor Kalom. Digli che ti mando io perch√© sei un vero credente!
 	Info_ClearChoices 	(DIA_BaalNamib_FirstTalk);
 
-	B_LogEntry			(CH1_JoinPsi,"Il trucchetto di Lester ha funzionato! Baal Namib mi ha rivolto la parola e si Ë convinto che sono un vero credente. Ora dovrei incontrare il guru Cor Kalom, nel suo laboratorio alchemico!");
+	B_LogEntry			(CH1_JoinPsi,"Il trucchetto di Lester ha funzionato! Baal Namib mi ha rivolto la parola e si √® convinto che sono un vero credente. Ora dovrei incontrare il guru Cor Kalom, nel suo laboratorio alchemico!");
 	B_GiveXP			(XP_ImpressBaalNamib);
 };
 
 //-----------------------------------------------------
-// BESSERE R‹STUNG NOVIZEN
+// BESSERE R√úSTUNG NOVIZEN
 //-----------------------------------------------------
 instance  GUR_1204_BaalNamib_ARMOR (C_INFO)
 {
@@ -156,7 +156,7 @@ FUNC void  GUR_1204_BaalNamib_ARMOR_Info()
 	
 	if (Kapitel < 3)
 	{
-		AI_Output (self,other,"GUR_1204_BaalNamib_ARMOR_Info_02_02");//Non Ë ancora il tuo momento d'indossare l'armatura pesante dei novizi.
+		AI_Output (self,other,"GUR_1204_BaalNamib_ARMOR_Info_02_02");//Non √® ancora il tuo momento d'indossare l'armatura pesante dei novizi.
 	}
 	else if (Npc_HasItems (hero, ItMinugget) < VALUE_NOV_ARMOR_H )
 	{
@@ -164,7 +164,7 @@ FUNC void  GUR_1204_BaalNamib_ARMOR_Info()
 	}
 	else
 	{
-		AI_Output (self,other,"GUR_1204_BaalNamib_ARMOR_Info_02_04");//Quest'armatura protegge il tuo corpo, cosÏ come il Dormiente veglia sul tuo spirito!
+		AI_Output (self,other,"GUR_1204_BaalNamib_ARMOR_Info_02_04");//Quest'armatura protegge il tuo corpo, cos√¨ come il Dormiente veglia sul tuo spirito!
 		CreateInvItem (self,NOV_ARMOR_H);
 		B_GiveInvItems (self, hero, NOV_ARMOR_H, 1);
 		B_GiveInvItems (hero, self, ItMinugget,VALUE_NOV_ARMOR_H);
@@ -187,7 +187,7 @@ INSTANCE Info_BaalNamib_BROTHERHOOD (C_INFO)
 	information	= Info_BaalNamib_BROTHERHOOD_Info;
 	important	= 0;
 	permanent	= 0;
-	description = "C'Ë qualcosa che posso fare per la Fratellanza?";
+	description = "C'√® qualcosa che posso fare per la Fratellanza?";
 };
 
 FUNC INT Info_BaalNamib_BROTHERHOOD_Condition()
@@ -197,10 +197,10 @@ FUNC INT Info_BaalNamib_BROTHERHOOD_Condition()
 
 FUNC VOID Info_BaalNamib_BROTHERHOOD_Info()
 {
-	AI_Output (other, self,"Info_BaalNamib_BROTHERHOOD_15_01"); //C'Ë qualcosa che posso fare per la Fratellanza?
-	AI_Output (self, other,"Info_BaalNamib_BROTHERHOOD_02_02"); //Il saggio Y'Berion, nostro maestro, ha bisogno di un novizio. Ora sei un membro della comunit‡: vai a offrirgli i tuoi servizi. 
+	AI_Output (other, self,"Info_BaalNamib_BROTHERHOOD_15_01"); //C'√® qualcosa che posso fare per la Fratellanza?
+	AI_Output (self, other,"Info_BaalNamib_BROTHERHOOD_02_02"); //Il saggio Y'Berion, nostro maestro, ha bisogno di un novizio. Ora sei un membro della comunit√†: vai a offrirgli i tuoi servizi. 
 	Info_Clearchoices ( Info_BaalNamib_BROTHERHOOD);
-	Info_Addchoice (Info_BaalNamib_BROTHERHOOD,"Bene, andrÚ subito da lui!",Info_BaalNamib_BROTHERHOOD_OK);
+	Info_Addchoice (Info_BaalNamib_BROTHERHOOD,"Bene, andr√≤ subito da lui!",Info_BaalNamib_BROTHERHOOD_OK);
 	Info_Addchoice (Info_BaalNamib_BROTHERHOOD,"Dove si trova Y'Berion?",Info_BaalNamib_BROTHERHOOD_YBWO);  
 	Info_Addchoice (Info_BaalNamib_BROTHERHOOD,"Sai cosa vuole Y'Berion da me?",Info_BaalNamib_BROTHERHOOD_YBWAS);
 	var C_NPC Kalom;
@@ -217,10 +217,10 @@ FUNC VOID Info_BaalNamib_BROTHERHOOD_YBWO()
 FUNC VOID Info_BaalNamib_BROTHERHOOD_YBWAS()
 {
 	AI_Output (other, self,"Info_BaalNamib_BROTHERHOOD_YBWAS_15_01"); //Sai cosa vuole Y'Berion da me?
-	AI_Output (self, other,"Info_BaalNamib_BROTHERHOOD_YBWAS_02_02"); //Presto avr‡ luogo una grande invocazione, per la quale abbiamo bisogno di un oggetto magico. 
+	AI_Output (self, other,"Info_BaalNamib_BROTHERHOOD_YBWAS_02_02"); //Presto avr√† luogo una grande invocazione, per la quale abbiamo bisogno di un oggetto magico. 
 	AI_Output (self, other,"Info_BaalNamib_BROTHERHOOD_YBWAS_02_03"); //Y'Berion sta cercando degli uomini valorosi che recuperino il manufatto.
 	AI_Output (other, self,"Info_BaalNamib_BROTHERHOOD_YBWAS_15_04"); //Sembra facile.
-	AI_Output (self, other,"Info_BaalNamib_BROTHERHOOD_YBWAS_02_05"); //Se fosse stato facile, avremmo gi‡ recuperato l'oggetto. Parla con Y'Berion, ti spiegher‡ tutto.
+	AI_Output (self, other,"Info_BaalNamib_BROTHERHOOD_YBWAS_02_05"); //Se fosse stato facile, avremmo gi√† recuperato l'oggetto. Parla con Y'Berion, ti spiegher√† tutto.
 };	
 FUNC VOID Info_BaalNamib_BROTHERHOOD_OK()
 {

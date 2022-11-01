@@ -68,7 +68,7 @@ INSTANCE Info_Org_7_WichtigePersonen(C_INFO)
 	condition	= Info_Org_7_WichtigePersonen_Condition;
 	information	= Info_Org_7_WichtigePersonen_Info;
 	permanent	= 1;
-	description = "Chi Ë il vostro capo?";
+	description = "Chi √® il vostro capo?";
 };                       
 
 FUNC INT Info_Org_7_WichtigePersonen_Condition()
@@ -78,9 +78,9 @@ FUNC INT Info_Org_7_WichtigePersonen_Condition()
 
 FUNC VOID Info_Org_7_WichtigePersonen_Info()
 {
-	AI_Output(other,self,"Info_Org_7_WichtigePersonen_15_00"); //Chi Ë il vostro capo?
-	AI_Output(self,other,"Info_Org_7_WichtigePersonen_07_01"); //Lares Ë il capo della banda e molti lo accettano.
-	AI_Output(self,other,"Info_Org_7_WichtigePersonen_07_02"); //PerÚ non ci dice cosa dobbiamo fare.
+	AI_Output(other,self,"Info_Org_7_WichtigePersonen_15_00"); //Chi √® il vostro capo?
+	AI_Output(self,other,"Info_Org_7_WichtigePersonen_07_01"); //Lares √® il capo della banda e molti lo accettano.
+	AI_Output(self,other,"Info_Org_7_WichtigePersonen_07_02"); //Per√≤ non ci dice cosa dobbiamo fare.
 	var C_NPC Lares;		Lares	= Hlp_GetNpc(Org_801_Lares);
 	Lares.aivar[AIV_FINDABLE] = TRUE;
 };
@@ -106,7 +106,7 @@ FUNC INT Info_Org_7_DasLager_Condition()
 FUNC VOID Info_Org_7_DasLager_Info()
 {
 	AI_Output(other,self,"Info_Org_7_DasLager_15_00"); //Cosa mi dici di questo campo?
-	AI_Output(self,other,"Info_Org_7_DasLager_07_01"); //» una specie di comunit‡ autarchica, non so se mi spiego. Facciamo tutti ciÚ che vogliamo, perchÈ siamo cosÏ tanti che Gomez non puÚ liberarsi facilmente di noi.
+	AI_Output(self,other,"Info_Org_7_DasLager_07_01"); //√à una specie di comunit√† autarchica, non so se mi spiego. Facciamo tutti ci√≤ che vogliamo, perch√© siamo cos√¨ tanti che Gomez non pu√≤ liberarsi facilmente di noi.
 	AI_Output(self,other,"Info_Org_7_DasLager_07_02"); //Anche se probabilmente se lo sogna la notte.
 	AI_Output(other,self,"Info_Org_7_DasLager_15_03"); //Cosa avete a che fare con Gomez?
 	AI_Output(self,other,"Info_Org_7_DasLager_07_04"); //Lo derubiamo!
@@ -135,7 +135,7 @@ FUNC VOID Info_Org_7_DieLage_Info()
 	AI_Output(other,self,"Info_Org_7_DieLage_15_00"); //Che succede qui?
 	AI_Output(self,other,"Info_Org_7_DieLage_07_01"); //Non sei qui da molto, vero?
 	AI_Output(self,other,"Info_Org_7_DieLage_07_02"); //I maghi si sono preparati per anni all'esplosione del metallo. Dicono che non manca molto, oramai.
-	AI_Output(self,other,"Info_Org_7_DieLage_07_03"); //Almeno cosÏ sembra, considerato il cumulo enorme che i minatori hanno raccolto finora.
+	AI_Output(self,other,"Info_Org_7_DieLage_07_03"); //Almeno cos√¨ sembra, considerato il cumulo enorme che i minatori hanno raccolto finora.
 };
 
 // *************************************************************************
@@ -183,7 +183,7 @@ FUNC VOID Info_Org_7_Krautprobe_Info()
 	}
 	else
 	{
-		AI_Output (self, other,"Info_Org_7_Krautprobe_No_Joint_07_00"); //Dov'Ë? Non ne vedo!
+		AI_Output (self, other,"Info_Org_7_Krautprobe_No_Joint_07_00"); //Dov'√®? Non ne vedo!
 	};
 };
 

@@ -23,7 +23,7 @@ FUNC VOID  DIA_BaalTaran_EXIT_Info()
 };
 
 // **************************************************
-//					Erste Begr¸ssung
+//					Erste Begr√ºssung
 // **************************************************
 
 instance  DIA_BaalTaran_Greet (C_INFO)
@@ -58,7 +58,7 @@ instance  DIA_BaalTaran_Bruderschaft (C_INFO)
 	condition	= DIA_BaalTaran_Bruderschaft_Condition;
 	information	= DIA_BaalTaran_Bruderschaft_Info;
 	permanent	= 0;
-	description = "Cos'Ë la Fratellanza del Dormiente?";
+	description = "Cos'√® la Fratellanza del Dormiente?";
 };                       
 
 FUNC int  DIA_BaalTaran_Bruderschaft_Condition()
@@ -71,13 +71,13 @@ FUNC int  DIA_BaalTaran_Bruderschaft_Condition()
 
 FUNC VOID  DIA_BaalTaran_Bruderschaft_Info()
 {
-	AI_Output (other, self,"DIA_BaalTaran_Bruderschaft_15_00"); //Cos'Ë la Fratellanza del Dormiente?
-	AI_Output (self, other,"DIA_BaalTaran_Bruderschaft_05_01"); //Siamo una comunit‡ di credenti in una nuova fede.
+	AI_Output (other, self,"DIA_BaalTaran_Bruderschaft_15_00"); //Cos'√® la Fratellanza del Dormiente?
+	AI_Output (self, other,"DIA_BaalTaran_Bruderschaft_05_01"); //Siamo una comunit√† di credenti in una nuova fede.
 	AI_Output (self, other,"DIA_BaalTaran_Bruderschaft_05_02"); //Il nostro campo si trova a est, nella palude. Sono venuto a portare la parola del Dormiente agli stranieri come te.
 };
 
 // **************************************************
-//					Wer ist der Schl‰fer
+//					Wer ist der Schl√§fer
 // **************************************************
 
 instance  DIA_BaalTaran_Sleeper (C_INFO)
@@ -87,7 +87,7 @@ instance  DIA_BaalTaran_Sleeper (C_INFO)
 	condition	= DIA_BaalTaran_Sleeper_Condition;
 	information	= DIA_BaalTaran_Sleeper_Info;
 	permanent	= 0;
-	description = "Chi Ë il Dormiente?";
+	description = "Chi √® il Dormiente?";
 };                       
 
 FUNC int  DIA_BaalTaran_Sleeper_Condition()
@@ -100,14 +100,14 @@ FUNC int  DIA_BaalTaran_Sleeper_Condition()
 
 FUNC VOID  DIA_BaalTaran_Sleeper_Info()
 {
-	AI_Output (other, self,"DIA_BaalTaran_Sleeper_15_00"); //Chi Ë il Dormiente?
-	AI_Output (self, other,"DIA_BaalTaran_Sleeper_05_01"); //Il nostro redentore, che si Ë rivelato cinque anni fa al nostro capo Y'Berion.
-	AI_Output (self, other,"DIA_BaalTaran_Sleeper_05_02"); //Da allora, abbiamo rinnegato le tre divinit‡ e tu dovresti fare lo stesso.
-	AI_Output (self, other,"DIA_BaalTaran_Sleeper_05_03"); //Gli dei sono rimasti a guardare, mentre venivamo esiliati in questa prigione, invece il Dormiente ci condurr‡ alla libert‡.
+	AI_Output (other, self,"DIA_BaalTaran_Sleeper_15_00"); //Chi √® il Dormiente?
+	AI_Output (self, other,"DIA_BaalTaran_Sleeper_05_01"); //Il nostro redentore, che si √® rivelato cinque anni fa al nostro capo Y'Berion.
+	AI_Output (self, other,"DIA_BaalTaran_Sleeper_05_02"); //Da allora, abbiamo rinnegato le tre divinit√† e tu dovresti fare lo stesso.
+	AI_Output (self, other,"DIA_BaalTaran_Sleeper_05_03"); //Gli dei sono rimasti a guardare, mentre venivamo esiliati in questa prigione, invece il Dormiente ci condurr√† alla libert√†.
 };
 
 // **************************************************
-//					Lehre des Schl‰fers
+//					Lehre des Schl√§fers
 // **************************************************
 
 instance  DIA_BaalTaran_Lehre (C_INFO)
@@ -131,11 +131,11 @@ FUNC int  DIA_BaalTaran_Lehre_Condition()
 FUNC VOID  DIA_BaalTaran_Lehre_Info()
 {
 	AI_Output (other, self,"DIA_BaalTaran_Lehre_15_00"); //Parlami degli insegnamenti del Dormiente.
-	AI_Output (self, other,"DIA_BaalTaran_Lehre_05_01"); //Il Dormiente Ë un essere potente, forse ancor pi˘ di Innos, il dio della luce.
-	AI_Output (self, other,"DIA_BaalTaran_Lehre_05_02"); //Il suo spirito Ë sempre con noi, ma il suo potere Ë ancora limitato. Ha dormito per mille anni, ma finalmente il momento del risveglio Ë vicino.
+	AI_Output (self, other,"DIA_BaalTaran_Lehre_05_01"); //Il Dormiente √® un essere potente, forse ancor pi√π di Innos, il dio della luce.
+	AI_Output (self, other,"DIA_BaalTaran_Lehre_05_02"); //Il suo spirito √® sempre con noi, ma il suo potere √® ancora limitato. Ha dormito per mille anni, ma finalmente il momento del risveglio √® vicino.
 	AI_Output (self, other,"DIA_BaalTaran_Lehre_05_03"); //Ci ha scelti per testimoniare il suo risveglio e divulgare il suo verbo.
 	AI_Output (self, other,"DIA_BaalTaran_Lehre_05_04"); //Ascolta: tutti coloro che crederanno nel Dormiente avranno la vita eterna, mentre i suoi nemici saranno puniti.
-	AI_Output (self, other,"DIA_BaalTaran_Lehre_05_05"); //Ma il Dormiente Ë misericordioso e fornisce prove della propria esistenza a tutti coloro che non credono in lui.
+	AI_Output (self, other,"DIA_BaalTaran_Lehre_05_05"); //Ma il Dormiente √® misericordioso e fornisce prove della propria esistenza a tutti coloro che non credono in lui.
 };
 
 // **************************************************
@@ -149,7 +149,7 @@ instance  DIA_BaalTaran_Freiheit (C_INFO)
 	condition	= DIA_BaalTaran_Freiheit_Condition;
 	information	= DIA_BaalTaran_Freiheit_Info;
 	permanent	= 0;
-	description = "Come Ë fatta la via per la libert‡?";
+	description = "Come √® fatta la via per la libert√†?";
 };                       
 
 FUNC int  DIA_BaalTaran_Freiheit_Condition()
@@ -162,9 +162,9 @@ FUNC int  DIA_BaalTaran_Freiheit_Condition()
 
 FUNC VOID  DIA_BaalTaran_Freiheit_Info()
 {
-	AI_Output (other, self,"DIA_BaalTaran_Freiheit_15_00"); //Come Ë fatta la via per la libert‡?
+	AI_Output (other, self,"DIA_BaalTaran_Freiheit_15_00"); //Come √® fatta la via per la libert√†?
 	AI_Output (self, other,"DIA_BaalTaran_Freiheit_05_01"); //Stiamo preparando una grande evocazione, durante la quale tutti i novizi stabiliranno un contatto col Dormiente.
-	AI_Output (self, other,"DIA_BaalTaran_Freiheit_05_02"); //Durante la cerimonia, il Dormiente ci riveler‡ la via per la libert‡.
+	AI_Output (self, other,"DIA_BaalTaran_Freiheit_05_02"); //Durante la cerimonia, il Dormiente ci riveler√† la via per la libert√†.
 };
 
 // **************************************************
@@ -192,7 +192,7 @@ FUNC int  DIA_BaalTaran_Beweis_Condition()
 FUNC VOID  DIA_BaalTaran_Beweis_Info()
 {
 	AI_Output (other, self,"DIA_BaalTaran_Beweis_15_00"); //Come fa il vostro dio a dimostrare la propria grandezza?
-	AI_Output (self, other,"DIA_BaalTaran_Beweis_05_01"); //Ci parla durante le visioni. Chiunque ne ascolti la voce, non ha pi˘ dubbi riguardo la sua grandezza.
+	AI_Output (self, other,"DIA_BaalTaran_Beweis_05_01"); //Ci parla durante le visioni. Chiunque ne ascolti la voce, non ha pi√π dubbi riguardo la sua grandezza.
 	AI_Output (self, other,"DIA_BaalTaran_Beweis_05_02"); //Usa l'erba che cresce nella palude per avvicinarti al Dormiente e ascoltarne la voce. Alcuni vedono anche delle immagini.
 	AI_Output (other, self,"DIA_BaalTaran_Beweis_15_03"); //Capisco.
 };
@@ -223,14 +223,14 @@ FUNC VOID  DIA_BaalTaran_WayToST_Info()
 {
 	AI_Output (other, self,"DIA_BaalTaran_WayToST_15_00"); //Come faccio a raggiungere il campo della Fratellanza?
 	AI_Output (self, other,"DIA_BaalTaran_WayToST_05_01"); //Io ho da fare, ma Baal Parvez dovrebbe trovarsi da queste parti.
-	AI_Output (self, other,"DIA_BaalTaran_WayToST_05_02"); //» vicino alla piazza del mercato, dall'altra parte del castello. Credo che abbia una sua capanna.
+	AI_Output (self, other,"DIA_BaalTaran_WayToST_05_02"); //√à vicino alla piazza del mercato, dall'altra parte del castello. Credo che abbia una sua capanna.
 
 	if (Npc_GetTrueGuild(hero) == GIL_NONE)
 	{
 		Log_CreateTopic		(CH1_JoinPsi, LOG_MISSION);
 		Log_SetTopicStatus	(CH1_JoinPsi, LOG_RUNNING);
 	};
-	B_LogEntry				(CH1_JoinPsi,"Un novizio di nome Baal Parvez puÚ condurmi alla Fratellanza di Campo Palude. Lo troverÚ alla piazza del mercato, dietro il castello di Campo Vecchio.");
+	B_LogEntry				(CH1_JoinPsi,"Un novizio di nome Baal Parvez pu√≤ condurmi alla Fratellanza di Campo Palude. Lo trover√≤ alla piazza del mercato, dietro il castello di Campo Vecchio.");
 };
 
 
@@ -261,7 +261,7 @@ FUNC VOID  DIA_BaalTaran_IntoCastle_Info()
 	AI_Output (other, self,"DIA_BaalTaran_IntoCastle_15_00"); //Devo entrare nel castello. Puoi aiutarmi?
 	AI_Output (self, other,"DIA_BaalTaran_IntoCastle_05_01"); //Temo di no, fratello. Gli unici tra noi che possono sono coloro che consegnano l'erba a Gomez.
 	AI_Output (self, other,"DIA_BaalTaran_IntoCastle_05_02"); //Raccogliamo l'erba di palude e ne vendiamo una parte a Campo Vecchio, in cambio di merci provenienti dal mondo esterno.
-	AI_Output (self, other,"DIA_BaalTaran_IntoCastle_05_03"); //Se fossi uno dei corrieri di Cor Kalom, potresti entrare nel castello. PerÚ dovresti essere uno di noi.
+	AI_Output (self, other,"DIA_BaalTaran_IntoCastle_05_03"); //Se fossi uno dei corrieri di Cor Kalom, potresti entrare nel castello. Per√≤ dovresti essere uno di noi.
 	AI_Output (self, other,"DIA_BaalTaran_IntoCastle_05_04"); //E poi cosa vorresti fare nel castello?
 	
 	Info_ClearChoices	(DIA_BaalTaran_IntoCastle );
@@ -272,25 +272,25 @@ FUNC VOID  DIA_BaalTaran_IntoCastle_Info()
 func void DIA_BaalTaran_IntoCastle_MeetSomeone()
 {
 	AI_Output (other, self,"DIA_BaalTaran_IntoCastle_MeetSomeone_15_00"); //Devo incontrare una persona.
-	AI_Output (self, other,"DIA_BaalTaran_IntoCastle_MeetSomeone_05_01"); //Tu? E chi? E perchÈ non puoi semplicemente aspettare che esca?
+	AI_Output (self, other,"DIA_BaalTaran_IntoCastle_MeetSomeone_05_01"); //Tu? E chi? E perch√© non puoi semplicemente aspettare che esca?
 	Info_ClearChoices	(DIA_BaalTaran_IntoCastle );
 	Info_AddChoice		(DIA_BaalTaran_IntoCastle,"Non sono affari tuoi.",DIA_BaalTaran_IntoCastle_ForgetIt);
-	Info_AddChoice		(DIA_BaalTaran_IntoCastle,"» un mago.",DIA_BaalTaran_IntoCastle_Mage);
+	Info_AddChoice		(DIA_BaalTaran_IntoCastle,"√à un mago.",DIA_BaalTaran_IntoCastle_Mage);
 };
 
 func void DIA_BaalTaran_IntoCastle_Letter()
 {
 	AI_Output (other, self,"DIA_BaalTaran_IntoCastle_Letter_15_00"); //Ho una lettera per il Gran Mago del Circolo di Fuoco.
-	AI_Output (self, other,"DIA_BaalTaran_IntoCastle_Letter_05_01"); //Oh? E dove l'hai presa? Te l'hanno data i maghi prima di gettarti quaggi˘, vero?
-	AI_Output (self, other,"DIA_BaalTaran_IntoCastle_Letter_05_02"); //Sei uno stupido a parlarne in giro. Non preoccuparti: non lo dirÚ a nessuno.
-	AI_Output (self, other,"DIA_BaalTaran_IntoCastle_Letter_05_03"); //Segui il mio consiglio: non parlarne pi˘ con nessuno. La gente di qui Ë capace di tagliarti la gola pur di entrarne in possesso.
+	AI_Output (self, other,"DIA_BaalTaran_IntoCastle_Letter_05_01"); //Oh? E dove l'hai presa? Te l'hanno data i maghi prima di gettarti quaggi√π, vero?
+	AI_Output (self, other,"DIA_BaalTaran_IntoCastle_Letter_05_02"); //Sei uno stupido a parlarne in giro. Non preoccuparti: non lo dir√≤ a nessuno.
+	AI_Output (self, other,"DIA_BaalTaran_IntoCastle_Letter_05_03"); //Segui il mio consiglio: non parlarne pi√π con nessuno. La gente di qui √® capace di tagliarti la gola pur di entrarne in possesso.
 	AI_Output (self, other,"DIA_BaalTaran_IntoCastle_Letter_05_04"); //La ricompensa che otterrai per aver consegnato una missiva del mondo esterno fa gola a molti.
 	Info_ClearChoices	(DIA_BaalTaran_IntoCastle );
 };
 //-----------------------------------------
 func void DIA_BaalTaran_IntoCastle_Mage()
 {
-	AI_Output (other, self,"DIA_BaalTaran_IntoCastle_Mage_15_00"); //» un mago.
+	AI_Output (other, self,"DIA_BaalTaran_IntoCastle_Mage_15_00"); //√à un mago.
 	AI_Output (self, other,"DIA_BaalTaran_IntoCastle_Mage_05_01"); //Oh! Beh, loro non lasciano mai il castello. Devi per forza entrare.
 	AI_Output (self, other,"DIA_BaalTaran_IntoCastle_Mage_05_02"); //Ma cosa vuoi da loro? Rune magiche? Pozioni?
 	Info_ClearChoices	(DIA_BaalTaran_IntoCastle );

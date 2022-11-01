@@ -92,10 +92,10 @@ FUNC int  Tpl_1437_Templer_LEAVENOW_Condition()
 FUNC void  Tpl_1437_Templer_LEAVENOW_Info()
 {
 	AI_Output (other, self,"Tpl_1437_Templer_LEAVENOW_Info_15_01"); //No, non ti capisco.
-	AI_Output (self, other,"Tpl_1437_Templer_LEAVENOW_Info_13_02"); //Va bene, cercherò di essere più chiaro.
+	AI_Output (self, other,"Tpl_1437_Templer_LEAVENOW_Info_13_02"); //Va bene, cercherÃ² di essere piÃ¹ chiaro.
 	AI_Output (self, other,"Tpl_1437_Templer_LEAVENOW_Info_13_03"); //Sparisci!
 	AI_Output (self, other,"Tpl_1437_Templer_LEAVENOW_Info_13_04"); //Lascia questa miniera!
-	AI_Output (self, other,"Tpl_1437_Templer_LEAVENOW_Info_13_05"); //Non parlarmi MAI più!
+	AI_Output (self, other,"Tpl_1437_Templer_LEAVENOW_Info_13_05"); //Non parlarmi MAI piÃ¹!
 	AI_Output (self, other,"Tpl_1437_Templer_LEAVENOW_Info_13_06"); //Vattene! Lasciami in pace!
 	AI_Output (self, other,"Tpl_1437_Templer_LEAVENOW_Info_13_07"); //CREPA!
 	AI_StopProcessInfos	( self );

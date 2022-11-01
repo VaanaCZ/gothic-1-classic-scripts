@@ -23,8 +23,8 @@ FUNC int  Grd_277_Gardist_SITTINGORK_Condition()
 FUNC void  Grd_277_Gardist_SITTINGORK_Info()
 {
 	AI_Output (other, self,"Grd_277_Gardist_SITTINGORK_Info_15_01"); //Cosa ha fatto quell'orco?
-	AI_Output (self, other,"Grd_277_Gardist_SITTINGORK_Info_06_02"); //» nostro prigioniero. » fortunato che la ruota dentata della schiacciatrice sia rotta. » l'unico motivo per cui questo figlio di puttana Ë in pausa.
-	AI_Output (self, other,"Grd_277_Gardist_SITTINGORK_Info_06_03"); //Appena avremo riparato la schiacciatrice, torner‡ al lavoro. Non Ë qui per poltrire tutto il giorno!
+	AI_Output (self, other,"Grd_277_Gardist_SITTINGORK_Info_06_02"); //√à nostro prigioniero. √à fortunato che la ruota dentata della schiacciatrice sia rotta. √à l'unico motivo per cui questo figlio di puttana √® in pausa.
+	AI_Output (self, other,"Grd_277_Gardist_SITTINGORK_Info_06_03"); //Appena avremo riparato la schiacciatrice, torner√† al lavoro. Non √® qui per poltrire tutto il giorno!
 };  
 /*------------------------------------------------------------------------
 							WORKINGORK							
@@ -37,7 +37,7 @@ instance  Grd_277_Gardist_WORKINGORK (C_INFO)
 	information		= Grd_277_Gardist_WORKINGORK_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "La schiacciatrice Ë gi‡ stata riparata."; 
+	description		= "La schiacciatrice √® gi√† stata riparata."; 
 };
 
 FUNC int  Grd_277_Gardist_WORKINGORK_Condition()
@@ -50,6 +50,6 @@ FUNC int  Grd_277_Gardist_WORKINGORK_Condition()
 };
 FUNC void  Grd_277_Gardist_WORKINGORK_Info()
 {
-	AI_Output (other, self,"Grd_277_Gardist_WORKINGORK_Info_15_01"); //La schiacciatrice Ë gi‡ stata riparata.
+	AI_Output (other, self,"Grd_277_Gardist_WORKINGORK_Info_15_01"); //La schiacciatrice √® gi√† stata riparata.
 	AI_Output (self, other,"Grd_277_Gardist_WORKINGORK_Info_06_02"); //Siamo veloci, quando si tratta di far lavorare la gente.
 };  

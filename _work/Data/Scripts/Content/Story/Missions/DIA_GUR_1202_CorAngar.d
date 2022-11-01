@@ -29,7 +29,7 @@ FUNC VOID DIA_GUR_1202_CorAngar_Exit_Info()
 };
 
 // ************************	
-//		Sp‰ter Trainer 
+//		Sp√§ter Trainer 
 // ************************
 
 instance DIA_CorAngar_LaterTrainer (C_INFO)
@@ -81,7 +81,7 @@ FUNC VOID DIA_CorAngar_WieTempler_Info()
 {
 	AI_Output(other,self,"GUR_1202_CorAngar_WieTempler_15_00"); //Come posso diventare un templare?
 	AI_Output(self,other,"GUR_1202_CorAngar_WieTempler_08_01"); //Prima devi servire un certo tempo come novizio, per dimostrare la tua fede nel Dormiente.
-	AI_Output(self,other,"GUR_1202_CorAngar_WieTempler_08_02"); //A qual punto torna da me e ti addestrerÚ.
+	AI_Output(self,other,"GUR_1202_CorAngar_WieTempler_08_02"); //A qual punto torna da me e ti addestrer√≤.
 	AI_StopProcessInfos	( self );
 };
 
@@ -92,7 +92,7 @@ FUNC VOID DIA_CorAngar_WieTempler_Info()
 /////////////////////////////////
 
 //-------------------------------------------------------------------------
-//							STƒRKE UND DEX STEIGERN
+//							ST√ÑRKE UND DEX STEIGERN
 //-------------------------------------------------------------------------
 INSTANCE GUR_1202_CorAngar_Teach(C_INFO)
 {
@@ -207,20 +207,20 @@ FUNC void  GUR_1202_CorAngar_WANNABETPL_Info()
     }
     else if	(hero.level >= 10)
     {
-	    AI_Output		(self, other,"GUR_1202_CorAngar_WANNABETPL_Info_08_03"); //» arrivato il momento di unirti a noi.
-		AI_Output		(self, other,"GUR_1202_CorAngar_WANNABETPL_Info_08_04"); //Ricorda che un templare non Ë solo un bravo guerriero e il custode del campo. Noi siamo i prescelti dal Dormiente, i guardiani dello spirito.
+	    AI_Output		(self, other,"GUR_1202_CorAngar_WANNABETPL_Info_08_03"); //√à arrivato il momento di unirti a noi.
+		AI_Output		(self, other,"GUR_1202_CorAngar_WANNABETPL_Info_08_04"); //Ricorda che un templare non √® solo un bravo guerriero e il custode del campo. Noi siamo i prescelti dal Dormiente, i guardiani dello spirito.
 		AI_Output		(self, other,"GUR_1202_CorAngar_WANNABETPL_Info_08_05"); //Noi sfruttiamo sia la forza fisica, sia quella spirituale. Solo coloro i cui corpi vibrano all'unisono con lo spirito, possono diventare templari.
-		AI_Output		(self, other,"GUR_1202_CorAngar_WANNABETPL_Info_08_06"); //Sono contento che tu sia riuscito a raggiungere tale equilibrio in cosÏ poco tempo. Ora sei pronto a unirti a noi.
+		AI_Output		(self, other,"GUR_1202_CorAngar_WANNABETPL_Info_08_06"); //Sono contento che tu sia riuscito a raggiungere tale equilibrio in cos√¨ poco tempo. Ora sei pronto a unirti a noi.
 		AI_Output		(self, other,"GUR_1202_CorAngar_WANNABETPL_Info_08_07"); //Ricorda: uno spirito attento e un corpo addestrato possono affrontare qualsiasi minaccia.
-		AI_Output		(self, other,"GUR_1202_CorAngar_WANNABETPL_Info_08_08"); //Ora vai da Gor Na Toth, nel campo di addestramento. TI dar‡ una nuova armatura.
+		AI_Output		(self, other,"GUR_1202_CorAngar_WANNABETPL_Info_08_08"); //Ora vai da Gor Na Toth, nel campo di addestramento. TI dar√† una nuova armatura.
 		GUR_1202_CorAngar_WANNABETPL.permanent = 0;
 		Npc_SetTrueGuild(hero, GIL_TPL);
 		hero.guild = GIL_TPL;
 
 		Log_CreateTopic	(GE_BecomeTemplar,	LOG_NOTE);
-		B_LogEntry		(GE_BecomeTemplar,"Oggi Cor Angar mi ha accettato fra i templari. Gor Na Toth mi dar‡ una nuova armatura. Di solito, si trova al campo d'addestramento.");
+		B_LogEntry		(GE_BecomeTemplar,"Oggi Cor Angar mi ha accettato fra i templari. Gor Na Toth mi dar√† una nuova armatura. Di solito, si trova al campo d'addestramento.");
 		Log_CreateTopic	(GE_TeacherPSI,		LOG_NOTE);
-		B_LogEntry		(GE_TeacherPSI,"Cor Angar insegna a migliorare FORZA e DESTREZZA e a combattere con le ARMI A DUE MANI. PotrÚ apprendere quest'ultima tecnica, solo quando sarÚ diventato esperto nei combattimenti con le ARMI A UNA MANO. Di solito, Cor Angar si trova al campo d'addestramento dei templari, al secondo livello delle passerelle.");
+		B_LogEntry		(GE_TeacherPSI,"Cor Angar insegna a migliorare FORZA e DESTREZZA e a combattere con le ARMI A DUE MANI. Potr√≤ apprendere quest'ultima tecnica, solo quando sar√≤ diventato esperto nei combattimenti con le ARMI A UNA MANO. Di solito, Cor Angar si trova al campo d'addestramento dei templari, al secondo livello delle passerelle.");
 	};
 
 };
@@ -257,7 +257,7 @@ FUNC void  GUR_1202_CorAngar_ZWEIHAND1_Info()
 		AI_Output			(self, other,"GUR_1202_CorAngar_ZWEIHAND1_Info_08_02"); //Combattere con una spada a due mani richiede un certo livello di forza e destrezza.
 		AI_Output			(self, other,"GUR_1202_CorAngar_ZWEIHAND1_Info_08_03"); //Per impugnare un'arma a due mani, non solo devi essere padrone del tuo corpo, ma anche della tua mente.
 		AI_Output			(self, other,"GUR_1202_CorAngar_ZWEIHAND1_Info_08_04"); //Solo se saprai controllare entrambi, sarai in grado d'imparare.
-		AI_Output			(self, other,"GUR_1202_CorAngar_ZWEIHAND1_Info_08_05"); //La chiave Ë la concentrazione. Corpo e mente uniti nella concentrazione.
+		AI_Output			(self, other,"GUR_1202_CorAngar_ZWEIHAND1_Info_08_05"); //La chiave √® la concentrazione. Corpo e mente uniti nella concentrazione.
 
 		GUR_1202_CorAngar_ZWEIHAND1.permanent		= 0;
 
@@ -289,17 +289,17 @@ FUNC int  GUR_1202_CorAngar_ZWEIHAND2_Condition()
 };
 FUNC void  GUR_1202_CorAngar_ZWEIHAND2_Info()
 {
-	AI_Output			(other, self,"GUR_1202_CorAngar_ZWEIHAND2_Info_15_01");		//Voglio imparare di pi˘ riguardo le armi a due mani.
+	AI_Output			(other, self,"GUR_1202_CorAngar_ZWEIHAND2_Info_15_01");		//Voglio imparare di pi√π riguardo le armi a due mani.
 	
 	if (B_GiveSkill(other,NPC_TALENT_2H , 2, LPCOST_TALENT_2H_2))
 	{
-		AI_Output			(self, other,"GUR_1202_CorAngar_ZWEIHAND2_Info_08_02"); //Ora che sei in grado di far danzare la tua lama, ti mostrerÚ come diventare un guerriero esperto.
+		AI_Output			(self, other,"GUR_1202_CorAngar_ZWEIHAND2_Info_08_02"); //Ora che sei in grado di far danzare la tua lama, ti mostrer√≤ come diventare un guerriero esperto.
 		AI_Output			(self, other,"GUR_1202_CorAngar_ZWEIHAND2_Info_08_03"); //Usa la forza spirituale per anticipare i movimenti e gli attacchi del nemico.
 		AI_Output			(self, other,"GUR_1202_CorAngar_ZWEIHAND2_Info_08_04"); //Conoscere la strategia di combattimento del nemico significa avere la vittoria quasi in pugno.
 		AI_Output			(self, other,"GUR_1202_CorAngar_ZWEIHAND2_Info_08_05"); //Sii veloce: i tuoi movimenti devono essere improvvisi e fluidi, i colpi precisi e pesanti.
-		AI_Output			(self, other,"GUR_1202_CorAngar_ZWEIHAND2_Info_08_06"); //Impara a ignorare il dolore. Il combattente dalla volont‡ pi˘ salda sar‡ quello che uscir‡ vincitore dallo scontro.
+		AI_Output			(self, other,"GUR_1202_CorAngar_ZWEIHAND2_Info_08_06"); //Impara a ignorare il dolore. Il combattente dalla volont√† pi√π salda sar√† quello che uscir√† vincitore dallo scontro.
 		AI_Output			(self, other,"GUR_1202_CorAngar_ZWEIHAND2_Info_08_07"); //Resta calmo. Solo se inizierai il combattimento con calma e concentrazione potrai sopravvivere.
-		AI_Output			(self, other,"GUR_1202_CorAngar_ZWEIHAND2_Info_08_08"); //Usa le tue abilit‡ con cautela e ricorda: causa un combattimento e perirai in esso.
+		AI_Output			(self, other,"GUR_1202_CorAngar_ZWEIHAND2_Info_08_08"); //Usa le tue abilit√† con cautela e ricorda: causa un combattimento e perirai in esso.
 
 		GUR_1202_CorAngar_ZWEIHAND2.permanent = 0;
 
@@ -321,7 +321,7 @@ FUNC void  GUR_1202_CorAngar_ZWEIHAND2_Info()
 //#####################################################################
  
 // **************************************************************************
-// 				nach der groﬂen Beschwˆrung
+// 				nach der gro√üen Beschw√∂rung
 // **************************************************************************
 instance  GUR_1202_CorAngar_SENDS (C_INFO)
 {
@@ -345,24 +345,24 @@ FUNC int  GUR_1202_CorAngar_SENDS_Condition()
 FUNC void  GUR_1202_CorAngar_SENDS_Info()
 {
 	AI_Output			(other, self,"GUR_1202_CorAngar_SENDS_Info_15_01"); //Ora cosa succede?
-	AI_Output			(self, other,"GUR_1202_CorAngar_SENDS_Info_08_02"); //La visione era molto vaga, ci ha portato pi˘ enigmi che risposte.
-	AI_Output			(self, other,"GUR_1202_CorAngar_SENDS_Info_08_03"); //Ma una cosa era perfettamente chiara: ho visto un orco in una caverna. C'Ë un vecchio luogo sacro degli orchi, qui vicino.
+	AI_Output			(self, other,"GUR_1202_CorAngar_SENDS_Info_08_02"); //La visione era molto vaga, ci ha portato pi√π enigmi che risposte.
+	AI_Output			(self, other,"GUR_1202_CorAngar_SENDS_Info_08_03"); //Ma una cosa era perfettamente chiara: ho visto un orco in una caverna. C'√® un vecchio luogo sacro degli orchi, qui vicino.
 	AI_Output			(self, other,"GUR_1202_CorAngar_SENDS_Info_08_04"); //Essi erano soliti seppellirvi i propri defunti, per questo chiamiamo quel sistema di caverne il 'cimitero degli orchi'.
-	AI_Output			(self, other,"GUR_1202_CorAngar_SENDS_Info_08_05"); //Il guru Baal Lukor Ë andato lÏ con alcuni templari. Forse troveremo qualcosa che ci aiuti a capire la visione.
+	AI_Output			(self, other,"GUR_1202_CorAngar_SENDS_Info_08_05"); //Il guru Baal Lukor √® andato l√¨ con alcuni templari. Forse troveremo qualcosa che ci aiuti a capire la visione.
 	AI_Output			(self, other,"GUR_1202_CorAngar_SENDS_Info_08_06"); //Ho bisogno che qualcuno vada a perlustrare la zona e mi descriva la situazione.
-	AI_Output			(other, self,"GUR_1202_CorAngar_SENDS_Info_15_07"); //PerchÈ non ci vai da solo? Sei il capo dei templari!
-	AI_Output			(self, other,"GUR_1202_CorAngar_SENDS_Info_08_08"); //Il mio compito Ë proteggere l'Illuminato. Devo restare qui con Y'Berion e fare la guardia.
-	AI_Output			(self, other,"GUR_1202_CorAngar_SENDS_Info_08_09"); //Hai reso un ottimo servizio al campo. Sei il mio uomo pi˘ fidato.
+	AI_Output			(other, self,"GUR_1202_CorAngar_SENDS_Info_15_07"); //Perch√© non ci vai da solo? Sei il capo dei templari!
+	AI_Output			(self, other,"GUR_1202_CorAngar_SENDS_Info_08_08"); //Il mio compito √® proteggere l'Illuminato. Devo restare qui con Y'Berion e fare la guardia.
+	AI_Output			(self, other,"GUR_1202_CorAngar_SENDS_Info_08_09"); //Hai reso un ottimo servizio al campo. Sei il mio uomo pi√π fidato.
 	AI_Output			(self, other,"GUR_1202_CorAngar_SENDS_Info_08_10"); //Ti chiedo di recarti al cimitero degli orchi e riferirmi cosa hanno trovato i templari.
 	
 	Info_ClearChoices	(GUR_1202_CorAngar_SENDS);
-	Info_AddChoice		(GUR_1202_CorAngar_SENDS,"Cosa avrÚ in cambio?",	GUR_1202_CorAngar_SENDS_EARN);
+	Info_AddChoice		(GUR_1202_CorAngar_SENDS,"Cosa avr√≤ in cambio?",	GUR_1202_CorAngar_SENDS_EARN);
 	Info_AddChoice		(GUR_1202_CorAngar_SENDS,"Mi metto subito in cammino!",	GUR_1202_CorAngar_SENDS_KNOW);
 };  
 func void GUR_1202_CorAngar_SENDS_EARN()
 {
-	AI_Output			(other, self,"GUR_1202_CorAngar_SENDS_EARN_Info_15_01"); //Cosa avrÚ in cambio?
-	AI_Output			(self, other,"GUR_1202_CorAngar_SENDS_EARN_Info_08_02"); //Vuoi del metallo? Forse ti avevo giudicato male, dopo tutto. Ma ho bisogno di te. Ecco: prendi questi 100 pezzi di metallo, non uno di pi˘!
+	AI_Output			(other, self,"GUR_1202_CorAngar_SENDS_EARN_Info_15_01"); //Cosa avr√≤ in cambio?
+	AI_Output			(self, other,"GUR_1202_CorAngar_SENDS_EARN_Info_08_02"); //Vuoi del metallo? Forse ti avevo giudicato male, dopo tutto. Ma ho bisogno di te. Ecco: prendi questi 100 pezzi di metallo, non uno di pi√π!
 	CreateInvItems		(self,ItMiNugget,100);
 	B_GiveInvItems      (self, hero, ItMiNugget,100);
 };
@@ -370,7 +370,7 @@ func void GUR_1202_CorAngar_SENDS_EARN()
 func void GUR_1202_CorAngar_SENDS_KNOW()
 {
 	AI_Output			(other, self,"GUR_1202_CorAngar_SENDS_KNOW_Info_15_01"); //Mi metto subito in cammino!
-	AI_Output			(self, other,"GUR_1202_CorAngar_SENDS_KNOW_Info_08_02"); //Prima prendi questo anello. Ti protegger‡ in battaglia!
+	AI_Output			(self, other,"GUR_1202_CorAngar_SENDS_KNOW_Info_08_02"); //Prima prendi questo anello. Ti protegger√† in battaglia!
 	
 	B_Story_GotoOrcGraveyard();
 
@@ -400,9 +400,9 @@ FUNC int  GUR_1202_CorAngar_WHERE_Condition()
 FUNC void  GUR_1202_CorAngar_WHERE_Info()
 {
 	AI_Output			(other, self,"GUR_1202_CorAngar_WHERE_Info_15_01"); //Dove si trova il cimitero degli orchi?
-	AI_Output			(self, other,"GUR_1202_CorAngar_WHERE_Info_08_02"); //Non lontano da qui. Talas il novizio conosce la strada. Lo troverai nel cortile del tempio, ti guider‡.
+	AI_Output			(self, other,"GUR_1202_CorAngar_WHERE_Info_08_02"); //Non lontano da qui. Talas il novizio conosce la strada. Lo troverai nel cortile del tempio, ti guider√†.
 
-	B_LogEntry		(CH3_OrcGraveyard,"Talas il novizio mi indicher‡ la via per raggiungere il cimitero degli orchi. Mi sta aspettando al piazzale davanti al tempio.");
+	B_LogEntry		(CH3_OrcGraveyard,"Talas il novizio mi indicher√† la via per raggiungere il cimitero degli orchi. Mi sta aspettando al piazzale davanti al tempio.");
 };  
 
 // **************************************************************************
@@ -433,15 +433,15 @@ FUNC void  GUR_1202_CorAngar_AFTER_Info()
 	AI_Output			(other, self,"GUR_1202_CorAngar_AFTER_Info_15_01"); //Sono stato al cimitero degli orchi e non ho trovato NULLA: niente Dormiente, niente segno, niente di niente.
 	AI_Output			(self, other,"GUR_1202_CorAngar_AFTER_Info_08_02"); //E Baal Lukor e i templari?
 	AI_Output			(other, self,"GUR_1202_CorAngar_AFTER_Info_15_03"); //Tutti morti.
-	AI_Output			(self, other,"GUR_1202_CorAngar_AFTER_Info_08_04"); //Morti? Ma cosa Ë successo?
+	AI_Output			(self, other,"GUR_1202_CorAngar_AFTER_Info_08_04"); //Morti? Ma cosa √® successo?
 	AI_Output			(other, self,"GUR_1202_CorAngar_AFTER_Info_15_05"); //L'intero sistema di caverne brulica di orchi. Hanno ucciso loro tutti i templari.
-	AI_Output			(other, self,"GUR_1202_CorAngar_AFTER_Info_15_06"); //Solo io e Baal Lukor siamo sopravvissuti, ma improvvisamente lui Ë impazzito.
+	AI_Output			(other, self,"GUR_1202_CorAngar_AFTER_Info_15_06"); //Solo io e Baal Lukor siamo sopravvissuti, ma improvvisamente lui √® impazzito.
 	AI_Output			(other, self,"GUR_1202_CorAngar_AFTER_Info_15_07"); //Ha urlato che il Dormiente gli aveva ordinato di uccidermi e intendeva obbedire al suo comando.
 	AI_Output			(self, other,"GUR_1202_CorAngar_AFTER_Info_08_08"); //Non ha sopportato il fatto di non aver trovato nulla.
 	AI_Output			(self, other,"GUR_1202_CorAngar_AFTER_Info_08_09"); //Non credo che l'influenza del Dormiente possa scatenare simili azioni violente.
-	AI_Output			(self, other,"GUR_1202_CorAngar_AFTER_Info_08_10"); //Non puÚ... non puÚ... Ë IRRILEVANTE!
-	AI_Output			(self, other,"GUR_1202_CorAngar_AFTER_Info_08_11"); //La cosa importante Ë che Baal Lukor non ha avuto successo nella sua follia.
-	AI_Output			(self, other,"GUR_1202_CorAngar_AFTER_Info_08_12"); //Ora Ë Y'Berion la nostra sola speranza.
+	AI_Output			(self, other,"GUR_1202_CorAngar_AFTER_Info_08_10"); //Non pu√≤... non pu√≤... √® IRRILEVANTE!
+	AI_Output			(self, other,"GUR_1202_CorAngar_AFTER_Info_08_11"); //La cosa importante √® che Baal Lukor non ha avuto successo nella sua follia.
+	AI_Output			(self, other,"GUR_1202_CorAngar_AFTER_Info_08_12"); //Ora √® Y'Berion la nostra sola speranza.
 	 
 
 	B_GiveXP			(XP_ReportToCorAngar);
@@ -473,9 +473,9 @@ func INT Info_CorAngar_FindHerb_Condition()
 FUNC VOID Info_CorAngar_FindHerb_Info()
 {
 	AI_Output			(other, self,"Mis_3_NC_CorAngar_FindHerb_15_01"); //Cosa sta facendo Y'Berion?
-	AI_Output			(self, other,"Mis_3_NC_CorAngar_FindHerb_08_02"); //Non si sveglier‡ da solo ed Ë sempre pi˘ debole. So come destarlo, ma ho bisogno del tuo aiuto.
+	AI_Output			(self, other,"Mis_3_NC_CorAngar_FindHerb_08_02"); //Non si sveglier√† da solo ed √® sempre pi√π debole. So come destarlo, ma ho bisogno del tuo aiuto.
 	AI_Output			(other, self,"Mis_3_NC_CorAngar_FindHerb_15_03"); //Cosa vuoi che faccia?
-	AI_Output			(self, other,"Mis_3_NC_CorAngar_FindHerb_08_04"); //Portami le erbe curative della palude. Saranno sufficienti cinque piante fra le pi˘ forti.
+	AI_Output			(self, other,"Mis_3_NC_CorAngar_FindHerb_08_04"); //Portami le erbe curative della palude. Saranno sufficienti cinque piante fra le pi√π forti.
 	AI_Output			(self, other,"Mis_3_NC_CorAngar_FindHerb_08_05"); //Sbrigati!
 	AI_StopProcessInfos	(self);
 	CorAngar_FindHerb = LOG_RUNNING;
@@ -512,7 +512,7 @@ FUNC VOID Info_CorAngar_FindHerb_WHERE_Info()
 	AI_Output			(self, other,"Info_CorAngar_FindHerb_WHERE_08_03"); //E non perdere tempo. Vai!
 	AI_StopProcessInfos	(self);
 
-	B_LogEntry		(CH3_FindHerbs,"Le erbe curative necessarie a Y'Berion crescono nella palude dietro il campo della Fratellanza. Purtroppo, quel luogo Ë infestato dagli squali di palude. FarÚ meglio a tenere gli occhi aperti.");
+	B_LogEntry		(CH3_FindHerbs,"Le erbe curative necessarie a Y'Berion crescono nella palude dietro il campo della Fratellanza. Purtroppo, quel luogo √® infestato dagli squali di palude. Far√≤ meglio a tenere gli occhi aperti.");
 };
 
 // ---------------------------- FindHerb - LOOK ---------------------------------------
@@ -524,7 +524,7 @@ INSTANCE Info_CorAngar_FindHerb_LOOK (C_INFO)
 	information	= Info_CorAngar_FindHerb_LOOK_Info;
 	permanent	= 0;
 	important	= 0; 
-	description = "Come riconoscerÚ le erbe?";
+	description = "Come riconoscer√≤ le erbe?";
 };                       
 
 FUNC INT Info_CorAngar_FindHerb_LOOK_Condition()
@@ -537,7 +537,7 @@ FUNC INT Info_CorAngar_FindHerb_LOOK_Condition()
 
 FUNC VOID Info_CorAngar_FindHerb_LOOK_Info()
 {
-	AI_Output			(other, self,"Info_CorAngar_FindHerb_LOOK_15_01"); //Come riconoscerÚ le erbe?
+	AI_Output			(other, self,"Info_CorAngar_FindHerb_LOOK_15_01"); //Come riconoscer√≤ le erbe?
 	AI_Output			(self, other,"Info_CorAngar_FindHerb_LOOK_08_02"); //Sembrano stelle, con otto foglie verdi e arancio.
 	AI_Output			(self, other,"Info_CorAngar_FindHerb_LOOK_08_03"); //Ora vai.
 	AI_StopProcessInfos	(self);
@@ -577,7 +577,7 @@ FUNC VOID Info_CorAngar_FindHerb_Running_Info()
 	AI_Output			(self, other,"Info_CorAngar_FindHerb_Running_08_03");//Sbrigati. Me ne servono cinque. A Y'Berion non resta molto tempo.
 	AI_StopProcessInfos	(self);
 
-	//-------- Fortuno die Kr‰uter "unterschieben" --------
+	//-------- Fortuno die Kr√§uter "unterschieben" --------
 	if	!Fortuno_HasYBerionHerbs
 	{
 		var C_NPC	fortuno;
@@ -585,7 +585,7 @@ FUNC VOID Info_CorAngar_FindHerb_Running_Info()
 		CreateInvItems		(fortuno,	ItFo_Plants_Herb_03,	5);	
 
 		Fortuno_HasYBerionHerbs = TRUE;
-		B_LogEntry		(CH3_FindHerbs,"Fortuno, il commerciante d'erbe della Fratellanza, potrebbe avere ciÚ che cerco.");
+		B_LogEntry		(CH3_FindHerbs,"Fortuno, il commerciante d'erbe della Fratellanza, potrebbe avere ci√≤ che cerco.");
 	};
 };
 
@@ -610,9 +610,9 @@ FUNC INT Info_CorAngar_FindHerb_Success_Condition()
 FUNC VOID Info_CorAngar_FindHerb_Success_Info()
 {	
 	AI_Output			(other, self,"Info_CorAngar_FindHerb_Success_15_01"); //Ho le erbe curative per Y'Berion.
-	AI_Output			(self, other,"Info_CorAngar_FindHerb_Success_08_02"); //Ben fatto. Mentre eri via, si Ë risvegliato per un istante.
+	AI_Output			(self, other,"Info_CorAngar_FindHerb_Success_08_02"); //Ben fatto. Mentre eri via, si √® risvegliato per un istante.
 	AI_Output			(other, self,"Info_CorAngar_FindHerb_Success_15_03"); //Ha detto qualcosa?
-	AI_Output			(self, other,"Info_CorAngar_FindHerb_Success_08_04"); //SÏ, che il Dormiente non Ë colui che pensiamo. Non dobbiamo pi˘ provare a svegliarlo.
+	AI_Output			(self, other,"Info_CorAngar_FindHerb_Success_08_04"); //S√¨, che il Dormiente non √® colui che pensiamo. Non dobbiamo pi√π provare a svegliarlo.
 	AI_Output			(self, other,"Info_CorAngar_FindHerb_Success_08_05"); //Ora dobbiamo solo sperare che non sia troppo tardi per Y'Berion.
 	Yberion_dead = LOG_RUNNING;
 
@@ -636,7 +636,7 @@ FUNC VOID Info_CorAngar_FindHerb_Success_Info()
 	//AI_StartState		(YBerion,	ZS_Dead,	0,	"");
 
 	//-------- ...scheitert. YBerion ist tot --------
-	AI_Output			(self, other,"GUR_1202_CorAngar_DEATH_Info_08_00"); //Y'BERION » MORTO. Il nostro capo spirituale ci ha lasciati!
+	AI_Output			(self, other,"GUR_1202_CorAngar_DEATH_Info_08_00"); //Y'BERION √à MORTO. Il nostro capo spirituale ci ha lasciati!
 	AI_TurnToNpc		(self, other);
 	AI_Output			(self, other,"GUR_1202_CorAngar_DEATH_Info_08_01"); //Anche se sei stato rapido, non hai potuto impedire che morisse.
 	AI_Output			(other, self,"GUR_1202_CorAngar_DEATH_Info_15_02"); //E adesso, Cor Angar?
@@ -644,7 +644,7 @@ FUNC VOID Info_CorAngar_FindHerb_Success_Info()
 	AI_Output			(other, self,"GUR_1202_CorAngar_DEATH_Info_15_04"); //Allora dovremmo aiutarli.
 	AI_Output			(self, other,"GUR_1202_CorAngar_DEATH_Info_08_05"); //Hanno bisogno dell'almanacco e della pietra focalizzatrice. Entrambe sono ancora in possesso di Cor Kalom.
 	AI_Output			(other, self,"GUR_1202_CorAngar_DEATH_Info_15_06"); //Dove si trova Cor Kalom?
-	AI_Output			(self, other,"GUR_1202_CorAngar_DEATH_Info_08_07"); //In un attacco d'ira, ha preso una coppia di templari e si Ë incamminato per cercare il Dormiente.
+	AI_Output			(self, other,"GUR_1202_CorAngar_DEATH_Info_08_07"); //In un attacco d'ira, ha preso una coppia di templari e si √® incamminato per cercare il Dormiente.
 	AI_Output			(other, self,"GUR_1202_CorAngar_DEATH_Info_15_08"); //Maledizione, come facciamo a riprendere la pietra?
 	AI_Output			(self, other,"GUR_1202_CorAngar_DEATH_Info_08_09"); //Credo che l'abbia lasciata nel suo laboratorio, assieme all'almanacco. Ecco la chiave dello scrigno.
 
@@ -674,9 +674,9 @@ FUNC VOID Info_CorAngar_TELEPORT_Info()
 {	
 	AI_GotoNpc			(self, hero);
 	AI_Output			(self, hero,"Info_CorAngar_TELEPORT_08_01"); //Un momento!
-	AI_Output			(hero, self,"Info_CorAngar_TELEPORT_15_02"); //SÏ?
+	AI_Output			(hero, self,"Info_CorAngar_TELEPORT_15_02"); //S√¨?
 	AI_Output			(self, hero,"Info_CorAngar_TELEPORT_08_03"); //Prendi questa runa magica, come segno di gratitudine.
-	AI_Output			(self, hero,"Info_CorAngar_TELEPORT_08_04"); //Essa ti permetter‡ di teletrasportarti al cortile del tempio, rapidamente e con facilit‡.
+	AI_Output			(self, hero,"Info_CorAngar_TELEPORT_08_04"); //Essa ti permetter√† di teletrasportarti al cortile del tempio, rapidamente e con facilit√†.
 	AI_Output			(hero, self,"Info_CorAngar_TELEPORT_15_05"); //Grazie!
 
 	//-------- Spieler wird losgeschickt --------

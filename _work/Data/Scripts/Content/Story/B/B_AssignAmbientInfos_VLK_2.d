@@ -51,7 +51,7 @@ FUNC INT Info_Vlk_2_EinerVonEuchWerden_Condition()
 FUNC VOID Info_Vlk_2_EinerVonEuchWerden_Info()
 {
 	AI_Output(other,self,"Info_Vlk_2_EinerVonEuchWerden_15_00"); //Voglio unirmi a voi.
-	AI_Output(self,other,"Info_Vlk_2_EinerVonEuchWerden_02_01"); //Non capisco perché desideri lavorare volontariamente in miniera. I tipi come te farebbero meglio a vivere nel castello.
+	AI_Output(self,other,"Info_Vlk_2_EinerVonEuchWerden_02_01"); //Non capisco perchÃ© desideri lavorare volontariamente in miniera. I tipi come te farebbero meglio a vivere nel castello.
 };
 
 // *************************************************************************
@@ -89,7 +89,7 @@ INSTANCE Info_Vlk_2_DasLager(C_INFO)
 	condition	= Info_Vlk_2_DasLager_Condition;
 	information	= Info_Vlk_2_DasLager_Info;
 	permanent	= 1;
-	description = "Voglio saperne di più sul campo.";
+	description = "Voglio saperne di piÃ¹ sul campo.";
 };                       
 
 FUNC INT Info_Vlk_2_DasLager_Condition()
@@ -99,8 +99,8 @@ FUNC INT Info_Vlk_2_DasLager_Condition()
 
 FUNC VOID Info_Vlk_2_DasLager_Info()
 {
-	AI_Output(other,self,"Info_Vlk_2_DasLager_15_00"); //Voglio saperne di più sul campo.
-	AI_Output(self,other,"Info_Vlk_2_DasLager_02_01"); //Dovresti parlare con le Ombre: possono dirti tutto ciò che ti serve conoscere. Stai attento, però: non puoi fidarti della maggior parte di loro.
+	AI_Output(other,self,"Info_Vlk_2_DasLager_15_00"); //Voglio saperne di piÃ¹ sul campo.
+	AI_Output(self,other,"Info_Vlk_2_DasLager_02_01"); //Dovresti parlare con le Ombre: possono dirti tutto ciÃ² che ti serve conoscere. Stai attento, perÃ²: non puoi fidarti della maggior parte di loro.
 };
 
 // *************************************************************************
@@ -126,8 +126,8 @@ FUNC INT Info_Vlk_2_DieLage_Condition()
 FUNC VOID Info_Vlk_2_DieLage_Info()
 {
 	AI_Output(other,self,"Info_Vlk_2_DieLage_15_00"); //Come va la vita?
-	AI_Output(self,other,"Info_Vlk_2_DieLage_02_01"); //Se ti mandano i baroni delle miniere, dì loro che non voglio guai. Io non parlo con nessuno.
-	AI_Output(self,other,"Info_Vlk_2_DieLage_02_02"); //Mi accontento di ciò che ci danno.
+	AI_Output(self,other,"Info_Vlk_2_DieLage_02_01"); //Se ti mandano i baroni delle miniere, dÃ¬ loro che non voglio guai. Io non parlo con nessuno.
+	AI_Output(self,other,"Info_Vlk_2_DieLage_02_02"); //Mi accontento di ciÃ² che ci danno.
 	AI_Output(other,self,"Info_Vlk_2_DieLage_15_03"); //Nessuno mi ha inviato qui, sono venuto per conto mio.
 	AI_Output(self,other,"Info_Vlk_2_DieLage_02_04"); //Un novellino, eh? Tutti i novellini si cacciano molto presto nei guai. Non voglio essere coinvolto in nulla, capito?
 };	

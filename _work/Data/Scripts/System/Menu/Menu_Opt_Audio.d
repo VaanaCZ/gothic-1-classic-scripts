@@ -147,7 +147,7 @@ INSTANCE MENUITEM_AUDIO_MUSIC_CHOICE(C_MENU_ITEM_DEF)
 {
 	backPic		=	MENU_CHOICE_BACK_PIC;
 	type		=	MENU_ITEM_CHOICEBOX;	
-	text[0]		=   "no|sì";
+	text[0]		=   "no|sÃ¬";
 	fontName	= 	MENU_FONT_SMALL;
 	// Position und Dimension	
 	posx		= 4300;		posy		=	MENU_START_Y + MENU_SOUND_DY*2 + MENU_CHOICE_YPLUS;
@@ -174,8 +174,8 @@ instance MENUITEM_AUDIO_PROVIDER(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
 	text[0]		= "Periferica audio";
-	//text[1]		= "Eine Änderung wirkt sich erst beim Neustart aus!"; // Kommentar
-text[1]		= "È necessario un riavvio del gioco."; // Kommentar
+	//text[1]		= "Eine Ã„nderung wirkt sich erst beim Neustart aus!"; // Kommentar
+text[1]		= "Ãˆ necessario un riavvio del gioco."; // Kommentar
 	
 	// Position und Dimension	
 	posx		=	1000;	posy		=	MENU_START_Y + MENU_SOUND_DY*3;
@@ -224,7 +224,7 @@ instance MENUITEM_AUDIO_SPEEKER_CHOICE(C_MENU_ITEM_DEF)
 {
 	backPic		=	MENU_CHOICE_BACK_PIC;
 	type		=	MENU_ITEM_CHOICEBOX;	
-	//text[0]		=   "2 Lautsprecher|Kopfhörer|Surround|4 Lautsprecher";
+	//text[0]		=   "2 Lautsprecher|KopfhÃ¶rer|Surround|4 Lautsprecher";
 text[0]		=   "2 altoparlanti|Cuffie|Surround|4 altoparlanti";
 	fontName	= 	MENU_FONT_SMALL;
 	// Position und Dimension	
@@ -242,7 +242,7 @@ instance MENUITEM_AUDIO_REVERB(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
 	//text[0]		= "Hall-Effekt";
-	//text[1]		= "Sollen Halleffekte in Höhlen aktiviert werden (Neustart erforderlich) ?"; // Kommentar
+	//text[1]		= "Sollen Halleffekte in HÃ¶hlen aktiviert werden (Neustart erforderlich) ?"; // Kommentar
 text[0]		= "Riverbero";
 text[1]		= "Attiva il riverbero nelle caverne."; // Kommentar
 	
@@ -260,7 +260,7 @@ instance MENUITEM_AUDIO_REVERB_CHOICE(C_MENU_ITEM_DEF)
 	backPic		=	MENU_CHOICE_BACK_PIC;
 	type		=	MENU_ITEM_CHOICEBOX;	
 	//text[0]		=   "aus|an";
-text[0]		=   "no|sì";
+text[0]		=   "no|sÃ¬";
 	fontName	= 	MENU_FONT_SMALL;
 	// Position und Dimension	
 	posx		= 4300;		posy		=	MENU_START_Y + MENU_SOUND_DY*5 + MENU_CHOICE_YPLUS;
@@ -277,9 +277,9 @@ instance MENUITEM_AUDIO_SAMPLERATE(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
 	//text[0]		= "Sample-Rate";
-	//text[1]		= "Eine Änderung wirkt sich erst beim Neustart aus!"; // Kommentar
+	//text[1]		= "Eine Ã„nderung wirkt sich erst beim Neustart aus!"; // Kommentar
 text[0]		= "Sample-Rate";
-text[1]		= "È necessario un riavvio del gioco."; // Kommentar
+text[1]		= "Ãˆ necessario un riavvio del gioco."; // Kommentar
 	
 	// Position und Dimension	
 	posx		=	1000;	posy		=	MENU_START_Y + MENU_SOUND_DY*6;

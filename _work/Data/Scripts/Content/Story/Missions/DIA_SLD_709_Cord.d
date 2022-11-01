@@ -32,7 +32,7 @@ instance  SLD_709_Cord_TRAINOFFER (C_INFO)
 	information		= SLD_709_Cord_TRAINOFFER_Info;
 	important		= 0;
 	permanent		= 0;
-	description		= "Voglio migliorare la mia abilit‡ con le armi a una sola mano."; 
+	description		= "Voglio migliorare la mia abilit√† con le armi a una sola mano."; 
 };
 
 FUNC int  SLD_709_Cord_TRAINOFFER_Condition()
@@ -45,11 +45,11 @@ FUNC int  SLD_709_Cord_TRAINOFFER_Condition()
 };
 FUNC void  SLD_709_Cord_TRAINOFFER_Info()
 {
-	AI_Output (other, self,"SLD_709_Cord_TRAINOFFER_Info_15_01"); //Voglio migliorare la mia abilit‡ con le armi a una sola mano.
-	AI_Output (self, other,"SLD_709_Cord_TRAINOFFER_Info_14_02"); //Ovviamente, ti coster‡ qualcosa. Voglio 30 pezzi di metallo.
+	AI_Output (other, self,"SLD_709_Cord_TRAINOFFER_Info_15_01"); //Voglio migliorare la mia abilit√† con le armi a una sola mano.
+	AI_Output (self, other,"SLD_709_Cord_TRAINOFFER_Info_14_02"); //Ovviamente, ti coster√† qualcosa. Voglio 30 pezzi di metallo.
 
 	Log_CreateTopic	(GE_TeacherNC,	LOG_NOTE);
-	B_LogEntry		(GE_TeacherNC,"Cord il mercenario puÚ insegnarmi a combattere con le ARMI A UNA MANO. Durante il giorno, posso trovarlo sull'altopiano roccioso vicino al fiume.");
+	B_LogEntry		(GE_TeacherNC,"Cord il mercenario pu√≤ insegnarmi a combattere con le ARMI A UNA MANO. Durante il giorno, posso trovarlo sull'altopiano roccioso vicino al fiume.");
 };  
 /*------------------------------------------------------------------------
 						EINHANDKAMPF	DIE ERSTE LEHRSTUNDE							
@@ -75,20 +75,20 @@ FUNC int  SLD_709_Cord_TRAIN_Condition()
 };
 FUNC void  SLD_709_Cord_TRAIN_Info()
 {
-	AI_Output (other, self,"SLD_709_Cord_TRAIN_Info_15_00"); //Voglio migliorare la mia abilit‡ con le armi a una sola mano.
+	AI_Output (other, self,"SLD_709_Cord_TRAIN_Info_15_00"); //Voglio migliorare la mia abilit√† con le armi a una sola mano.
 
 	if (Npc_HasItems (hero,ItMiNugget) >= 30)
 	{
 		if B_GiveSkill(hero,NPC_TALENT_1H,1,LPCOST_TALENT_1H_1)
 		{
 			AI_Output			(self,other,"SLD_709_Cord_TRAIN_14_01"); //Ottima decisione! Prima di migliorare la tecnica, devi imparare a tenere l'arma.
-			AI_Output			(self,other,"SLD_709_Cord_TRAIN_14_02"); //Spesso i principianti tendono a tenere queste armi con entrambe le mani. Non prendere quest'abitudine, non ti aiuter‡.
+			AI_Output			(self,other,"SLD_709_Cord_TRAIN_14_02"); //Spesso i principianti tendono a tenere queste armi con entrambe le mani. Non prendere quest'abitudine, non ti aiuter√†.
 			AI_Output			(self,other,"SLD_709_Cord_TRAIN_14_03"); //Afferra l'arma con una mano, con la lama rivolta verso l'alto, e falla oscillare.
-			AI_Output			(self,other,"SLD_709_Cord_TRAIN_14_04"); //Devi imparare a coordinare il movimento dell'arma con quello del corpo, per colpire pi˘ velocemente.
-			AI_Output			(self,other,"SLD_709_Cord_TRAIN_14_05"); //Tieni a mente ciÚ che ti ho insegnato e i tuoi combattimenti saranno pi˘ veloci ed eleganti.
+			AI_Output			(self,other,"SLD_709_Cord_TRAIN_14_04"); //Devi imparare a coordinare il movimento dell'arma con quello del corpo, per colpire pi√π velocemente.
+			AI_Output			(self,other,"SLD_709_Cord_TRAIN_14_05"); //Tieni a mente ci√≤ che ti ho insegnato e i tuoi combattimenti saranno pi√π veloci ed eleganti.
 			B_PracticeCombat	("NC_WATERFALL_TOP01");
-			AI_Output			(self,other,"SLD_709_Cord_TRAIN_14_06"); //Ah, gi‡! Ancora una cosa: alcuni colpi causano pi˘ danni di altri! Come principiante, non hai molte possibilit‡ di sferrare un colpo mortale.
-			AI_Output			(self,other,"SLD_709_Cord_TRAIN_14_07"); //Comunque, man mano che progredirai, ti sar‡ pi˘ facile.
+			AI_Output			(self,other,"SLD_709_Cord_TRAIN_14_06"); //Ah, gi√†! Ancora una cosa: alcuni colpi causano pi√π danni di altri! Come principiante, non hai molte possibilit√† di sferrare un colpo mortale.
+			AI_Output			(self,other,"SLD_709_Cord_TRAIN_14_07"); //Comunque, man mano che progredirai, ti sar√† pi√π facile.
 			B_GiveInvItems (hero, self,ItMiNugget,30);
 			SLD_709_Cord_TRAIN.permanent = 0;
 		};
@@ -129,8 +129,8 @@ FUNC void  SLD_709_Cord_TRAINAGAIN_Info()
 	{
 		if B_GiveSkill(hero,NPC_TALENT_1H,2,LPCOST_TALENT_1H_2)
 		{
-			AI_Output		(self, other,"SLD_709_Cord_TRAINAGAIN_Info_14_02"); //Bene. Le basi le conosci gi‡. Tenendo bassa l'arma, il tuo primo colpo sar‡ pi˘ potente.
-			AI_Output		(self, other,"SLD_709_Cord_TRAINAGAIN_Info_14_03"); //Ricordi? Sfrutta l'oscillazione! Bene, ora devi usare di pi˘ il corpo. Quando hai colpito due volte, gira su te stesso. CiÚ confonder‡ l'avversario e ti metter‡ in una posizione privilegiata.
+			AI_Output		(self, other,"SLD_709_Cord_TRAINAGAIN_Info_14_02"); //Bene. Le basi le conosci gi√†. Tenendo bassa l'arma, il tuo primo colpo sar√† pi√π potente.
+			AI_Output		(self, other,"SLD_709_Cord_TRAINAGAIN_Info_14_03"); //Ricordi? Sfrutta l'oscillazione! Bene, ora devi usare di pi√π il corpo. Quando hai colpito due volte, gira su te stesso. Ci√≤ confonder√† l'avversario e ti metter√† in una posizione privilegiata.
 			AI_Output		(self, other,"SLD_709_Cord_TRAINAGAIN_Info_14_04"); //A questo punto, porta nuovamente la lama da destra a sinistra.
 			B_PracticeCombat("NC_WATERFALL_TOP01");
 			AI_Output		(self, other,"SLD_709_Cord_TRAINAGAIN_Info_14_05"); //E di nuovo davanti. Non dimenticare: l'esercizio rende perfetti. Quindi continua a fare pratica con le armi a una mano.

@@ -51,8 +51,8 @@ FUNC INT Info_Nov_2_EinerVonEuchWerden_Condition()
 FUNC VOID Info_Nov_2_EinerVonEuchWerden_Info()
 {
 	AI_Output(other,self,"Info_Nov_2_EinerVonEuchWerden_15_00"); //Voglio unirmi a voi.
-	AI_Output(self,other,"Info_Nov_2_EinerVonEuchWerden_02_01"); //Vuoi dire che hai deciso di servire il Dormiente? Hai davanti a te una strada lastricata di felicit‡ e fortuna.
-	AI_Output(self,other,"Info_Nov_2_EinerVonEuchWerden_02_02"); //Vai a parlare con Cor Kalom. Lui decider‡ qual Ë il lavoro che ti si addice.
+	AI_Output(self,other,"Info_Nov_2_EinerVonEuchWerden_02_01"); //Vuoi dire che hai deciso di servire il Dormiente? Hai davanti a te una strada lastricata di felicit√† e fortuna.
+	AI_Output(self,other,"Info_Nov_2_EinerVonEuchWerden_02_02"); //Vai a parlare con Cor Kalom. Lui decider√† qual √® il lavoro che ti si addice.
 	
 	var C_NPC CorKalom;		CorKalom= Hlp_GetNpc(Gur_1201_CorKalom);
 	CorKalom.aivar[AIV_FINDABLE] = TRUE;
@@ -111,8 +111,8 @@ FUNC INT Info_Nov_2_DasLager_Condition()
 FUNC VOID Info_Nov_2_DasLager_Info()
 {
 	AI_Output(other,self,"Info_Nov_2_DasLager_15_00"); //Cosa devo sapere di questo posto?
-	AI_Output(self,other,"Info_Nov_2_DasLager_02_01"); //Questo Ë un luogo di fede, fratello. Non possediamo molte cose, ma ciÚ che abbiamo lo dividiamo con chi vuole ascoltare i precetti del Dormiente.
-	AI_Output(self,other,"Info_Nov_2_DasLager_02_02"); //Parla con un guru e la tua anima sar‡ arricchita.
+	AI_Output(self,other,"Info_Nov_2_DasLager_02_01"); //Questo √® un luogo di fede, fratello. Non possediamo molte cose, ma ci√≤ che abbiamo lo dividiamo con chi vuole ascoltare i precetti del Dormiente.
+	AI_Output(self,other,"Info_Nov_2_DasLager_02_02"); //Parla con un guru e la tua anima sar√† arricchita.
 };
 
 // *************************************************************************

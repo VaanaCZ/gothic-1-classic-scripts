@@ -49,8 +49,8 @@ FUNC int  Tpl_1401_GorNaKosh_SUGGEST_Condition()
 
 FUNC void  Tpl_1401_GorNaKosh_SUGGEST_Info()
 {
-	AI_Output			(other, self,"Tpl_1401_GorNaKosh_SUGGEST_Info_15_01"); //So dove si trova il nido dei pidocchi di miniera. Sto andando là per prendere una cosa per conto di Kalom, cosicché possa creare una pozione più efficace.
-	AI_Output			(self, other,"Tpl_1401_GorNaKosh_SUGGEST_Info_13_02"); //Allora hai bisogno della mia lama. Ti seguirò.
+	AI_Output			(other, self,"Tpl_1401_GorNaKosh_SUGGEST_Info_15_01"); //So dove si trova il nido dei pidocchi di miniera. Sto andando lÃ  per prendere una cosa per conto di Kalom, cosicchÃ© possa creare una pozione piÃ¹ efficace.
+	AI_Output			(self, other,"Tpl_1401_GorNaKosh_SUGGEST_Info_13_02"); //Allora hai bisogno della mia lama. Ti seguirÃ².
 	AI_Output			(other, self,"Tpl_1401_GorNaKosh_SUGGEST_Info_15_03"); //Bene. Ci vediamo al passaggio grande.
 	
 	Npc_ExchangeRoutine (self,"GATE");
@@ -86,10 +86,10 @@ FUNC void  Tpl_1401_GorNaKosh_INFO_Info()
 	AI_Output			(other, self,"Tpl_1401_GorNaKosh_INFO_Info_15_01"); //Cosa stai facendo?
 	AI_Output			(self, other,"Tpl_1401_GorNaKosh_INFO_Info_13_02"); //Sono a caccia di pidocchi di miniera.
 	AI_Output			(other, self,"Tpl_1401_GorNaKosh_INFO_Info_15_03"); //Puoi dirmi qualcosa sulla caccia ai pidocchi di miniera?
-	AI_Output			(self, other,"Tpl_1401_GorNaKosh_INFO_Info_13_04"); //C'è solo una regola: appena li vedi, corrigli incontro e uccidili il prima possibile.
-	AI_Output			(self, other,"Tpl_1401_GorNaKosh_INFO_Info_13_05"); //Combatti senza paura e uccidi senza pietà.
+	AI_Output			(self, other,"Tpl_1401_GorNaKosh_INFO_Info_13_04"); //C'Ã¨ solo una regola: appena li vedi, corrigli incontro e uccidili il prima possibile.
+	AI_Output			(self, other,"Tpl_1401_GorNaKosh_INFO_Info_13_05"); //Combatti senza paura e uccidi senza pietÃ .
 
-	AI_StopProcessInfos(self);		// SN:nur für die Vermeidung des Bugs, dass der letzte Satz in roter Schrift erscheint, und der InfoManager danach defekt ist
+	AI_StopProcessInfos(self);		// SN:nur fÃ¼r die Vermeidung des Bugs, dass der letzte Satz in roter Schrift erscheint, und der InfoManager danach defekt ist
 };
 
 // ***************** Infos *****************************
@@ -119,7 +119,7 @@ FUNC void  Tpl_1401_GorNaKosh_CRAWLER_Info()
 	AI_Output			(self, other,"Tpl_1401_GorNaKosh_CRAWLER_Info_13_03"); //Ricorda questo, quando li combatterai.
 }; 
 
-// ***************************** Die Königin ist tot, lang lebe die Königin ****************************************//
+// ***************************** Die KÃ¶nigin ist tot, lang lebe die KÃ¶nigin ****************************************//
 
 instance  Tpl_1401_GorNaKosh_VICTORY (C_INFO)
 {

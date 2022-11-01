@@ -80,9 +80,9 @@ func void DIA_Skip_First_Thorus()
 	AI_Output (other, self,"DIA_Skip_First_Thorus_15_00"); //Mi manda Thorus. Ha detto che devo prendermi un'arma.
 	AI_Output (self, other,"DIA_Skip_First_Thorus_12_01"); //Oh?
 	Info_ClearChoices 	(DIA_Skip_First);
-	Info_Addchoice 		(DIA_Skip_First,"PerchÈ non vai a chiederglielo?",DIA_Skip_First_Thorus_AskHim);
-	Info_Addchoice 		(DIA_Skip_First,"Ha detto di prenderti a calci nel sedere finchÈ non mi avrai dato un'arma.",DIA_Skip_First_Thorus_KickAss);
-	Info_Addchoice 		(DIA_Skip_First,"Vuole che io faccia una cosa che nessuno di voi puÚ fare, capisci?",DIA_Skip_First_Thorus_Stranger);
+	Info_Addchoice 		(DIA_Skip_First,"Perch√© non vai a chiederglielo?",DIA_Skip_First_Thorus_AskHim);
+	Info_Addchoice 		(DIA_Skip_First,"Ha detto di prenderti a calci nel sedere finch√© non mi avrai dato un'arma.",DIA_Skip_First_Thorus_KickAss);
+	Info_Addchoice 		(DIA_Skip_First,"Vuole che io faccia una cosa che nessuno di voi pu√≤ fare, capisci?",DIA_Skip_First_Thorus_Stranger);
 };
 
 func void DIA_Skip_First_BACK()
@@ -94,25 +94,25 @@ func void DIA_Skip_First_BACK()
 //------------------------------------------------------
 func void DIA_Skip_First_Thorus_Stranger()
 {
-	AI_Output (other, self,"DIA_Skip_First_Thorus_Stranger_15_00"); //Vuole che io faccia una cosa che nessuno di voi puÚ fare, capisci?
-	AI_Output (self, other,"DIA_Skip_First_Thorus_Stranger_12_01"); //Ah sÏ? E suppongo che non abbia niente di meglio da fare che inviarti da me, giusto?
+	AI_Output (other, self,"DIA_Skip_First_Thorus_Stranger_15_00"); //Vuole che io faccia una cosa che nessuno di voi pu√≤ fare, capisci?
+	AI_Output (self, other,"DIA_Skip_First_Thorus_Stranger_12_01"); //Ah s√¨? E suppongo che non abbia niente di meglio da fare che inviarti da me, giusto?
 	Info_ClearChoices 	(DIA_Skip_First);
-	Info_Addchoice 		(DIA_Skip_First,"PerchÈ non vai a chiederglielo?",DIA_Skip_First_Thorus_AskHim);
-	Info_Addchoice 		(DIA_Skip_First,"Ha detto di prenderti a calci nel sedere finchÈ non mi avrai dato un'arma.",DIA_Skip_First_Thorus_KickAssAGAIN);
+	Info_Addchoice 		(DIA_Skip_First,"Perch√© non vai a chiederglielo?",DIA_Skip_First_Thorus_AskHim);
+	Info_Addchoice 		(DIA_Skip_First,"Ha detto di prenderti a calci nel sedere finch√© non mi avrai dato un'arma.",DIA_Skip_First_Thorus_KickAssAGAIN);
 };
 
 func void DIA_Skip_First_Thorus_KickAss()
 {
-	AI_Output (other, self,"DIA_Skip_First_Thorus_KickAss_15_00"); //Ha detto di prenderti a calci nel sedere finchÈ non mi avrai dato un'arma.
-	AI_Output (self, other,"DIA_Skip_First_Thorus_KickAss_12_01"); //Davvero? Per come la vedo, sarÚ IO a prendere a calci il TUO sedere se non te ne andrai subito!
+	AI_Output (other, self,"DIA_Skip_First_Thorus_KickAss_15_00"); //Ha detto di prenderti a calci nel sedere finch√© non mi avrai dato un'arma.
+	AI_Output (self, other,"DIA_Skip_First_Thorus_KickAss_12_01"); //Davvero? Per come la vedo, sar√≤ IO a prendere a calci il TUO sedere se non te ne andrai subito!
 	Info_ClearChoices 	(DIA_Skip_First);
 	AI_StopProcessInfos	(self);
 };
 
 func void DIA_Skip_First_Thorus_AskHim()
 {
-	AI_Output (other, self,"DIA_Skip_First_Thorus_AskHim_15_00"); //PerchÈ non vai a chiederglielo?
-	AI_Output (self, other,"DIA_Skip_First_Thorus_AskHim_12_01"); //Puoi scommetterci che lo farÚ, ma non ora. Scommetto che trover‡ molto interessanti le storie che racconti sul suo conto.
+	AI_Output (other, self,"DIA_Skip_First_Thorus_AskHim_15_00"); //Perch√© non vai a chiederglielo?
+	AI_Output (self, other,"DIA_Skip_First_Thorus_AskHim_12_01"); //Puoi scommetterci che lo far√≤, ma non ora. Scommetto che trover√† molto interessanti le storie che racconti sul suo conto.
 	AI_Output (self, other,"DIA_Skip_First_Thorus_AskHim_12_02"); //Non so chi t'abbia fatto entrare, ma farai meglio a squagliartela in fretta!
 	Info_ClearChoices 	(DIA_Skip_First);
 	AI_StopProcessInfos	(self);
@@ -120,7 +120,7 @@ func void DIA_Skip_First_Thorus_AskHim()
 
 func void DIA_Skip_First_Thorus_KickAssAGAIN()
 {
-	AI_Output (other, self,"DIA_Skip_First_Thorus_KickAssAGAIN_15_00"); //Ha detto di prenderti a calci nel sedere finchÈ non mi avrai dato un'arma.
+	AI_Output (other, self,"DIA_Skip_First_Thorus_KickAssAGAIN_15_00"); //Ha detto di prenderti a calci nel sedere finch√© non mi avrai dato un'arma.
 	AI_Output (self, other,"DIA_Skip_First_Thorus_KickAssAGAIN_12_01"); //Va bene, cosa vuoi?
 	Info_ClearChoices 	(DIA_Skip_First);
 	Skip_TradeFree = TRUE;

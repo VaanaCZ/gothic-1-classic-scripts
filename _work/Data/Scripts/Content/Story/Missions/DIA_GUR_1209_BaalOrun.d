@@ -24,7 +24,7 @@ FUNC VOID  DIA_BaalOrun_Exit_Info()
 };
 
 // ************************************************************
-// 					NICHT ansprechbar (Ungl‰ubiger) 
+// 					NICHT ansprechbar (Ungl√§ubiger) 
 // ************************************************************
 	var int BaalOrun_Ansprechbar;
 	var int BaalOrun_Sakrileg;
@@ -107,7 +107,7 @@ FUNC int  DIA_BaalOrun_FirstTalk_Condition()
 
 FUNC VOID  DIA_BaalOrun_FirstTalk_Info()
 {
-	AI_Output (self, other,"DIA_BaalOrun_FirstTalk_12_00"); //Ho parlato con Ghorim. Hai reso un grande servizio a uno dei nostri fratelli: la tua causa Ë giusta.
+	AI_Output (self, other,"DIA_BaalOrun_FirstTalk_12_00"); //Ho parlato con Ghorim. Hai reso un grande servizio a uno dei nostri fratelli: la tua causa √® giusta.
 	AI_Output (self, other,"DIA_BaalOrun_FirstTalk_12_01"); //Per questo ti ho scelto per una missione speciale.
 	AI_Output (self, other,"DIA_BaalOrun_FirstTalk_12_02"); //Cor Kalom ha bisogno urgente di nuova erba di palude per i suoi esperimenti.
 	AI_Output (self, other,"DIA_BaalOrun_FirstTalk_12_03"); //I nostri mietitori lavorano giorno e notte. Vai da loro e porta l'intero raccolto al laboratorio alchemico di Kalom.
@@ -130,7 +130,7 @@ func void DIA_BaalOrun_FirstTalk_Where()
 {
 	AI_Output (other, self,"DIA_BaalOrun_FirstTalk_Where_15_00"); //Dove trovo i mietitori?
 	AI_Output (self, other,"DIA_BaalOrun_FirstTalk_Where_12_01"); //Non ti ho dato il permesso di rivolgermi la parola!
-	AI_Output (self, other,"DIA_BaalOrun_FirstTalk_Where_12_02"); //Prega che il Dormiente perdoni il tuo sacrilegio! E ora vattene, la tua missione Ë di estrema importanza.
+	AI_Output (self, other,"DIA_BaalOrun_FirstTalk_Where_12_02"); //Prega che il Dormiente perdoni il tuo sacrilegio! E ora vattene, la tua missione √® di estrema importanza.
 	
 	Info_ClearChoices 	(DIA_BaalOrun_FirstTalk);
 	AI_StopProcessInfos	(self);
@@ -178,7 +178,7 @@ FUNC VOID  DIA_BaalOrun_GotWeed_Info()
 	{
 		Log_SetTopicStatus	(CH1_JoinPsi,	LOG_RUNNING);
 	};
-	B_LogEntry			(CH1_JoinPsi,"Baal Orun mi ritiene un valoroso servitore del Dormiente, perchÈ ho combattuto le mosche vampiro nella palude, per conto degli altri novizi.");
+	B_LogEntry			(CH1_JoinPsi,"Baal Orun mi ritiene un valoroso servitore del Dormiente, perch√© ho combattuto le mosche vampiro nella palude, per conto degli altri novizi.");
 	B_GiveXP			(XP_ImpressedBaalOrun);
 };
 
@@ -208,7 +208,7 @@ FUNC VOID  DIA_BaalOrun_WeedAtKaloms_Info()
 {
 	AI_Output		(other, self,"DIA_BaalOrun_WeedAtKaloms_15_00"); //Ho portato l'erba di palude a Cor Kalom.
 	AI_Output		(self, other,"DIA_BaalOrun_WeedAtKaloms_12_01"); //Ben fatto. Ho una piccola ricompensa per te. Ecco, tieni.
-	AI_Output		(self, other,"DIA_BaalOrun_WeedAtKaloms_12_02"); //» un incantesimo del sonno. Puoi usarlo una volta sola, ma credo ti sar‡ molto utile.
+	AI_Output		(self, other,"DIA_BaalOrun_WeedAtKaloms_12_02"); //√à un incantesimo del sonno. Puoi usarlo una volta sola, ma credo ti sar√† molto utile.
 	
 	BaalOrun_Ansprechbar = TRUE; //damit NoTalk-info nicht kommt
 	B_GiveXP		(XP_ReportToBaalOrun);
@@ -243,7 +243,7 @@ FUNC VOID  DIA_BaalOrun_Perm_Info()
 {
 	AI_Output (other, self,"DIA_BaalOrun_Perm_15_00"); //Come va la produzione di erba?
 	AI_Output (self, other,"DIA_BaalOrun_Perm_12_01"); //Mettiamo il massimo impegno per produrne abbastanza per noi e commerciare con gli altri campi.
-	AI_Output (self, other,"DIA_BaalOrun_Perm_12_02"); //Ma Ë un sacrificio fatto in nome del Dormiente, quindi i novizi lo sopportano volentieri
+	AI_Output (self, other,"DIA_BaalOrun_Perm_12_02"); //Ma √® un sacrificio fatto in nome del Dormiente, quindi i novizi lo sopportano volentieri
 };
 
 

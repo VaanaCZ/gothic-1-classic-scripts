@@ -50,9 +50,9 @@ FUNC int  DIA_Balor_FetchWeed_Condition()
 FUNC VOID  DIA_Balor_FetchWeed_Info()
 {
 	AI_Output (other, self,"DIA_Balor_FetchWeed_15_00"); //Mi manda Baal Orun. Devo prendere tutta l'erba di palude.
-	AI_Output (self, other,"DIA_Balor_FetchWeed_01_01"); //Ottimo, cosÏ non dovrÚ portarla io. Ecco, prendila.
-	AI_Output (self, other,"DIA_Balor_FetchWeed_01_02"); //Non dimenticare di recarti da Varan, dall'altro lato della palude, se non l'hai gi‡ fatto.
-	AI_Output (self, other,"DIA_Balor_FetchWeed_01_03"); //Altrimenti il tuo carico sar‡ un po' piccolo e la gente potrebbe pensare che tu ne abbia venduta la met‡. He he he.
+	AI_Output (self, other,"DIA_Balor_FetchWeed_01_01"); //Ottimo, cos√¨ non dovr√≤ portarla io. Ecco, prendila.
+	AI_Output (self, other,"DIA_Balor_FetchWeed_01_02"); //Non dimenticare di recarti da Varan, dall'altro lato della palude, se non l'hai gi√† fatto.
+	AI_Output (self, other,"DIA_Balor_FetchWeed_01_03"); //Altrimenti il tuo carico sar√† un po' piccolo e la gente potrebbe pensare che tu ne abbia venduta la met√†. He he he.
 	
 	B_GiveInvItems 		(self, other, ItMi_Plants_Swampherb_01, 50);
 
@@ -62,14 +62,14 @@ FUNC VOID  DIA_Balor_FetchWeed_Info()
 	if	!Npc_KnowsInfo(hero, DIA_Viran_What)
 	&&	!Npc_KnowsInfo(hero, DIA_Viran_FetchWeed)
 	{
-		 B_LogEntry		(CH1_DeliverWeed,"Balor sostiene che esista un secondo gruppo di mietitori, che lavorano dall'altra parte della palude. Non posso rivolgere alcuna domanda a Baal Orun, quindi dovrÚ cercarli da solo, che mi piaccia o no."); 
+		 B_LogEntry		(CH1_DeliverWeed,"Balor sostiene che esista un secondo gruppo di mietitori, che lavorano dall'altra parte della palude. Non posso rivolgere alcuna domanda a Baal Orun, quindi dovr√≤ cercarli da solo, che mi piaccia o no."); 
 	};
 	
 	Balor_BotenDay = Wld_GetDay(); 
 };
 
 // **************************************************
-//				Wem verhˆkern?
+//				Wem verh√∂kern?
 // **************************************************
 	var int Balor_PlayerCheating;
 // **************************************************
@@ -112,7 +112,7 @@ func void DIA_Balor_SellUnder_ForgetIt()
 func void DIA_Balor_SellUnder_HalfHalf()
 {
 	AI_Output (other, self,"DIA_Balor_SellUnder_HalfHalf_15_00"); //Sei conosci qualcuno... Potremmo dividerci i profitti.
-	AI_Output (self, other,"DIA_Balor_SellUnder_HalfHalf_01_01"); //Beh, sÏ. A dire il vero conosco qualcuno, a Campo Nuovo, che sarebbe interessato...
+	AI_Output (self, other,"DIA_Balor_SellUnder_HalfHalf_01_01"); //Beh, s√¨. A dire il vero conosco qualcuno, a Campo Nuovo, che sarebbe interessato...
 	AI_Output (self, other,"DIA_Balor_SellUnder_HalfHalf_01_02"); //Ma se i guru ti scoprono, sarai cibo per squali di palude! Io non so nulla, d'accordo?
 	Balor_PlayerCheating = TRUE;
 	Info_ClearChoices 	(DIA_Balor_SellUnder);
@@ -137,7 +137,7 @@ instance  DIA_Balor_TellDealer (C_INFO)
 	condition	= DIA_Balor_TellDealer_Condition;
 	information	= DIA_Balor_TellDealer_Info;
 	permanent	= 1;
-	description	= "D'accordo. Chi Ë l'acquirente di Campo Nuovo?";
+	description	= "D'accordo. Chi √® l'acquirente di Campo Nuovo?";
 };                       
 
 FUNC int  DIA_Balor_TellDealer_Condition()
@@ -150,9 +150,9 @@ FUNC int  DIA_Balor_TellDealer_Condition()
 
 FUNC VOID  DIA_Balor_TellDealer_Info()
 {
-	AI_Output (other, self,"DIA_Balor_TellDealer_15_00"); //D'accordo. Chi Ë l'acquirente di Campo Nuovo?
-	AI_Output (self, other,"DIA_Balor_TellDealer_01_01"); //Ma cosa credi? Che ti dica il nome, cosÏ puoi correre da lui con l'erba? Scordatelo!
-	AI_Output (self, other,"DIA_Balor_TellDealer_01_02"); //Voglio 50 pezzi di metallo anticipati, poi si vedr‡.
+	AI_Output (other, self,"DIA_Balor_TellDealer_15_00"); //D'accordo. Chi √® l'acquirente di Campo Nuovo?
+	AI_Output (self, other,"DIA_Balor_TellDealer_01_01"); //Ma cosa credi? Che ti dica il nome, cos√¨ puoi correre da lui con l'erba? Scordatelo!
+	AI_Output (self, other,"DIA_Balor_TellDealer_01_02"); //Voglio 50 pezzi di metallo anticipati, poi si vedr√†.
 	
 	Info_ClearChoices 	(DIA_Balor_TellDealer);
 	Info_Addchoice 		(DIA_Balor_TellDealer,"Lascia stare.",DIA_Balor_TellDealer_ForgetIt);
@@ -164,18 +164,18 @@ func void DIA_Balor_TellDealer_Pay()
 	AI_Output (other, self,"DIA_Balor_TellDealer_Pay_15_00"); //Mi sembra un prezzo ragionevole. Eccoli.
 	if (Npc_HasItems(other, itminugget) >= 50)
 	{
-		AI_Output			(self, other,"DIA_Balor_TellDealer_Pay_01_01"); //Bene... Ascolta. Il suo nome Ë Cipher. Probabilmente lo troverai alla taverna sul lago.
+		AI_Output			(self, other,"DIA_Balor_TellDealer_Pay_01_01"); //Bene... Ascolta. Il suo nome √® Cipher. Probabilmente lo troverai alla taverna sul lago.
 		AI_Output			(self, other,"DIA_Balor_TellDealer_Pay_01_02"); //Stai attento a non farti fregare da nessuno.
 		Info_ClearChoices 	(DIA_Balor_TellDealer);
 
 		B_GiveInvItems		(other, self,itminugget,50);
 		Balor_TellsNCDealer = TRUE;
 
-		B_LogEntry			(CH1_DeliverWeed,"Balor ha menzionato un uomo di nome Cipher, che Ë interessato all'erba di palude. Lo troverÚ al bar sul lago di Campo Nuovo. Mi metterÚ in grossi guai coi guru.");
+		B_LogEntry			(CH1_DeliverWeed,"Balor ha menzionato un uomo di nome Cipher, che √® interessato all'erba di palude. Lo trover√≤ al bar sul lago di Campo Nuovo. Mi metter√≤ in grossi guai coi guru.");
 		B_GiveXP			(XP_BalorNamedCipher);
 
 		Log_CreateTopic		(GE_TraderNC, LOG_NOTE);
-		B_LogEntry			(GE_TraderNC,"Cipher compra e vende ogni tipo di merce, nel bar sul lago. Soprattutto, Ë interessato alle grosse quantit‡ d'erba di palude.");
+		B_LogEntry			(GE_TraderNC,"Cipher compra e vende ogni tipo di merce, nel bar sul lago. Soprattutto, √® interessato alle grosse quantit√† d'erba di palude.");
 	}
 	else
 	{
@@ -188,7 +188,7 @@ func void DIA_Balor_TellDealer_ForgetIt()
 {
 	AI_Output (other, self,"DIA_Balor_TellDealer_ForgetIt_15_00"); //Lascia stare.
 	AI_Output (self, other,"DIA_Balor_TellDealer_ForgetIt_01_01"); //Non penserai di entrare a Campo Nuovo e venderla al primo che capita! Se non conosci il nome, non te ne libererai mai.
-	AI_Output (self, other,"DIA_Balor_TellDealer_ForgetIt_01_02"); //FinchÈ un ladro non ti dar‡ un bel colpo in testa.
+	AI_Output (self, other,"DIA_Balor_TellDealer_ForgetIt_01_02"); //Finch√© un ladro non ti dar√† un bel colpo in testa.
 	Info_ClearChoices 	(DIA_Balor_TellDealer);
 };
 

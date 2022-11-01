@@ -54,7 +54,7 @@ FUNC VOID Info_Tpl_13_EinerVonEuchWerden_Info()
 {
 	AI_Output(other,self,"Info_Tpl_13_EinerVonEuchWerden_15_00"); //Voglio diventare un templare.
 	AI_Output(self,other,"Info_Tpl_13_EinerVonEuchWerden_13_01"); //Hai idea di cosa mi sia dovuto privare per servire i prescelti del Dormiente come guardia del tempio?
-	AI_Output(self,other,"Info_Tpl_13_EinerVonEuchWerden_13_02"); //Non pensare di poter venire qui tutto tranquillo e accedere agli onori più alti.
+	AI_Output(self,other,"Info_Tpl_13_EinerVonEuchWerden_13_02"); //Non pensare di poter venire qui tutto tranquillo e accedere agli onori piÃ¹ alti.
 	AI_Output(self,other,"Info_Tpl_13_EinerVonEuchWerden_13_03"); //Prima che ci pensi su, farai meglio a imparare qualcosa riguardo i precetti del Dormiente.
 	AI_Output(self,other,"Info_Tpl_13_EinerVonEuchWerden_13_04"); //Passerai un po' di tempo e forse t'inculcheranno un po' di coscienza nella zucca.
 };
@@ -106,7 +106,7 @@ FUNC INT Info_Tpl_13_DasLager_Condition()
 FUNC VOID Info_Tpl_13_DasLager_Info()
 {
 	AI_Output(other,self,"Info_Tpl_13_DasLager_15_00"); //Mi piacerebbe dare un'occhiata all'interno del tempio del Dormiente...
-	AI_Output(self,other,"Info_Tpl_13_DasLager_13_01"); //Questo è impossibile! Un infedele nel tempio! Finché non sarai votato al servizio del Dormiente, non potrai entrare!
+	AI_Output(self,other,"Info_Tpl_13_DasLager_13_01"); //Questo Ã¨ impossibile! Un infedele nel tempio! FinchÃ© non sarai votato al servizio del Dormiente, non potrai entrare!
 };
 
 // *************************************************************************

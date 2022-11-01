@@ -2,8 +2,8 @@
 //##
 //##							KAPITEL 4
 //##							=========
-//##	Söldner, Banditen und Schürfer der Freien Mine werden
-//##	getötet und beraubt.
+//##	SÃ¶ldner, Banditen und SchÃ¼rfer der Freien Mine werden
+//##	getÃ¶tet und beraubt.
 //##	Drei Gardisten bewachen jetzt den Eingang zur Mine.						
 //##
 //#####################################################################
@@ -13,7 +13,7 @@ func void B_Story_FMTaken()
 	var C_NPC fighter;	fighter = Hlp_GetNpc(PC_FIGHTER);
 	Npc_ExchangeRoutine(fighter, "NCREPORT");
 
-	//-------- Besatzung des Kessels töten --------
+	//-------- Besatzung des Kessels tÃ¶ten --------
 	B_KillNpc	(SLD_750_Soeldner);
 	B_KillNpc	(SLD_751_Soeldner);
 	B_KillNpc	(SLD_752_Okyl);
@@ -50,12 +50,12 @@ func void B_Story_FMTaken()
 	B_KillNpc	(ORG_891_Organisator);
 	B_KillNpc	(ORG_892_Organisator);
 		
-	//-------- Gardisten-Eroberer einfügen --------
+	//-------- Gardisten-Eroberer einfÃ¼gen --------
 	Wld_InsertNpc		(Grd_283_Gardist,	"FMC_ENTRANCE");	//FMC-Guard(Mineneingang)			
 	Wld_InsertNpc		(Grd_285_Gardist,	"FMC_ENTRANCE");	//FMC-Guard(Mineneingang)	
 	B_ExchangeRoutine	(Grd_201_Jackal,	"FMTaken");			//FMC-Guard(Mineneingang)
 
-	//-------- Tor zur Alten Mine im Stundentakt auf Verschluß checken! --------
+	//-------- Tor zur Alten Mine im Stundentakt auf VerschluÃŸ checken! --------
 	//B_ExchangeRoutine	(Grd_250_Gardist,	"FMTaken");
 	Wld_SetObjectRoutine		(0,00,"EVT_AM_LOB_GATE_BIG",1);
 	Wld_SetObjectRoutine		(1,00,"EVT_AM_LOB_GATE_BIG",1);
@@ -82,17 +82,17 @@ func void B_Story_FMTaken()
 	Wld_SetObjectRoutine		(22,00,"EVT_AM_LOB_GATE_BIG",1);
 	Wld_SetObjectRoutine		(23,00,"EVT_AM_LOB_GATE_BIG",1);
 
-	//-------- Tagebucheinträge --------
+	//-------- TagebucheintrÃ¤ge --------
 	if (Npc_KnowsInfo(hero, Info_Milten_OCWARN))
 	{
-		B_LogEntry	(CH4_Firemages,"Diego poteva raccontarmi di più, riguardo gli eventi accaduti a Campo Vecchio.");
+		B_LogEntry	(CH4_Firemages,"Diego poteva raccontarmi di piÃ¹, riguardo gli eventi accaduti a Campo Vecchio.");
 	}
 	else
 	{
 		B_LogEntry	(CH4_Firemages,"Diego mi ha intercettato all'entrata posteriore di Campo Vecchio e mi ha avvertito dei gravi incidenti che erano appena accaduti.");
 	};
 	B_LogEntry		(CH4_Firemages,"Dopo il crollo della vecchia miniera, Gomez ha ordinato ai suoi uomini di attaccare la miniera libera di Campo Nuovo. Quando Corristo e i suoi Maghi del Fuoco si sono opposti al piano, Gomez li ha fatti uccidere tutti.");
-	B_LogEntry		(CH4_Firemages,"Devo avvertire Campo Nuovo il prima possibile e raccontare a Saturas dell'incidente. Spero che non sia già troppo tardi.");
+	B_LogEntry		(CH4_Firemages,"Devo avvertire Campo Nuovo il prima possibile e raccontare a Saturas dell'incidente. Spero che non sia giÃ  troppo tardi.");
 	
 	if (Scorpio_Exile == FALSE)
 	{

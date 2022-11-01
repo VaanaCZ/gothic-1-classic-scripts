@@ -46,6 +46,6 @@ FUNC int  STT_300_Alberto_BUY_Condition()
 FUNC void  STT_300_Alberto_BUY_Info()
 {
 	AI_Output (other, self,"STT_300_Alberto_BUY_Info_15_01"); //Vuoi fare affari con me?
-	AI_Output (self, other,"STT_300_Alberto_BUY_Info_12_02"); //Sì! Ho tutto ciò che ti serve, se hai del metallo.
+	AI_Output (self, other,"STT_300_Alberto_BUY_Info_12_02"); //SÃ¬! Ho tutto ciÃ² che ti serve, se hai del metallo.
 	
 };  

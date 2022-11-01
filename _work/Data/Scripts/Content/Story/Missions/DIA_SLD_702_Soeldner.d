@@ -74,7 +74,7 @@ FUNC VOID  DIA_Sld_702_PERM_Info()
 {
 	AI_Output (other, self,"DIA_Sld_702_PERM_15_00"); //Cosa devo fare per parlare con Lee?
 	AI_Output (self, other,"DIA_Sld_702_PERM_04_01"); //Niente!
-	AI_Output (self, other,"DIA_Sld_702_PERM_04_02"); //Questo non è Campo Vecchio e Lee non è Gomez!
+	AI_Output (self, other,"DIA_Sld_702_PERM_04_02"); //Questo non Ã¨ Campo Vecchio e Lee non Ã¨ Gomez!
 	AI_Output (self, other,"DIA_Sld_702_PERM_04_03"); //Non ha bisogno di nascondersi dietro un esercito di scagnozzi. Sa difendersi da solo.
 	AI_Output (self, other,"DIA_Sld_702_PERM_04_04"); //NOI siamo qui solo in caso abbia bisogno d'aiuto.
 };

@@ -23,7 +23,7 @@ FUNC VOID  DIA_Rodriguez_Exit_Info()
 };
 
 //***********************************************
-//				Hallo und tschüß
+//				Hallo und tschÃ¼ÃŸ
 //***********************************************
 
 instance  DIA_Rodriguez_Hello (C_INFO)
@@ -47,6 +47,6 @@ FUNC int  DIA_Rodriguez_Hello_Condition()
 FUNC VOID  DIA_Rodriguez_Hello_Info()
 {
 	AI_Output (other, self,"DIA_Rodriguez_Hello_15_00"); //Sto cercando il Gran Mago del Circolo di Fuoco!
-	AI_Output (self, other,"DIA_Rodriguez_Hello_12_01"); //Vai da Milten. È lui che tratta coi fattorini come te.
+	AI_Output (self, other,"DIA_Rodriguez_Hello_12_01"); //Vai da Milten. Ãˆ lui che tratta coi fattorini come te.
 	AI_StopProcessInfos	( self );
 };

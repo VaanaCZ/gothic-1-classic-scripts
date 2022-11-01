@@ -45,10 +45,10 @@ FUNC int  DIA_Viran_What_Condition()
 FUNC VOID  DIA_Viran_What_Info()
 {
 	AI_Output (other, self,"DIA_Viran_What_15_00"); //Cosa state facendo?
-	AI_Output (self, other,"DIA_Viran_What_07_01"); //Raccogliamo l'erba di palude che dovr‡ essere trattata dai nostri fratelli in modo da poter essere fumata.
-	AI_Output (self, other,"DIA_Viran_What_07_02"); //Raccoglierla nella palude Ë molto rischioso, ma Ë solo qui che cresce. A dire il vero, questo Ë un bene.
-	AI_Output (other, self,"DIA_Viran_What_15_03"); //PerchÈ?
-	AI_Output (self, other,"DIA_Viran_What_07_04"); //CosÏ gli altri due campi non possono raccoglierla. Noi siamo gli unici produttori di erba di palude in tutta la colonia
+	AI_Output (self, other,"DIA_Viran_What_07_01"); //Raccogliamo l'erba di palude che dovr√† essere trattata dai nostri fratelli in modo da poter essere fumata.
+	AI_Output (self, other,"DIA_Viran_What_07_02"); //Raccoglierla nella palude √® molto rischioso, ma √® solo qui che cresce. A dire il vero, questo √® un bene.
+	AI_Output (other, self,"DIA_Viran_What_15_03"); //Perch√©?
+	AI_Output (self, other,"DIA_Viran_What_07_04"); //Cos√¨ gli altri due campi non possono raccoglierla. Noi siamo gli unici produttori di erba di palude in tutta la colonia
 	AI_Output (self, other,"DIA_Viran_What_07_05"); //La scambiamo con gli altri campi e facciamo NOI il prezzo.
 };
 
@@ -77,8 +77,8 @@ FUNC int  DIA_Viran_FetchWeed_Condition()
 FUNC VOID  DIA_Viran_FetchWeed_Info()
 {
 	AI_Output (other, self,"DIA_Viran_FetchWeed_15_00"); //Mi manda Baal Orun. Devo portare l'intero raccolto a Kalom.
-	AI_Output (self, other,"DIA_Viran_FetchWeed_07_01"); //Pensi davvero sia cosÏ semplice?
-	AI_Output (self, other,"DIA_Viran_FetchWeed_07_02"); //Chiunque puÚ arrivare qui, dire 'Mi manda Baal Orun' e WHOOSH! L'intero raccolto Ë perso per sempre.
+	AI_Output (self, other,"DIA_Viran_FetchWeed_07_01"); //Pensi davvero sia cos√¨ semplice?
+	AI_Output (self, other,"DIA_Viran_FetchWeed_07_02"); //Chiunque pu√≤ arrivare qui, dire 'Mi manda Baal Orun' e WHOOSH! L'intero raccolto √® perso per sempre.
 	
 	Info_ClearChoices 	(DIA_Viran_FetchWeed);
 	Info_Addchoice 		(DIA_Viran_FetchWeed,"Vai a chiederglielo, se non mi credi!",DIA_Viran_FetchWeed_GotoHim);
@@ -94,7 +94,7 @@ func void DIA_Viran_FetchWeed_Really()
 func void DIA_Viran_FetchWeed_GotoHim()
 {
 	AI_Output (other, self,"DIA_Viran_FetchWeed_GotoHim_15_00"); //Vai a chiederglielo, se non mi credi!
-	AI_Output (self, other,"DIA_Viran_FetchWeed_GotoHim_07_01"); //Ho un'idea migliore. Dimostrerai la tua lealt‡, compiendo una piccola missione per noi!
+	AI_Output (self, other,"DIA_Viran_FetchWeed_GotoHim_07_01"); //Ho un'idea migliore. Dimostrerai la tua lealt√†, compiendo una piccola missione per noi!
 	Info_ClearChoices 	(DIA_Viran_FetchWeed);
 };
 
@@ -125,11 +125,11 @@ FUNC int  DIA_Viran_Bloodflies_Condition()
 FUNC VOID  DIA_Viran_Bloodflies_Info()
 {
 	AI_Output (other, self,"DIA_Viran_Bloodflies_15_00"); //Che cosa vuoi che faccia?
-	AI_Output (self, other,"DIA_Viran_Bloodflies_07_01"); //Niente di speciale: lavora nella palude! » un po' rischioso, per non parlare delle maledette mosche vampiro.
-	AI_Output (self, other,"DIA_Viran_Bloodflies_07_02"); //Il lavoro sarebbe molto pi˘ semplice senza di loro! Mi segui?
+	AI_Output (self, other,"DIA_Viran_Bloodflies_07_01"); //Niente di speciale: lavora nella palude! √à un po' rischioso, per non parlare delle maledette mosche vampiro.
+	AI_Output (self, other,"DIA_Viran_Bloodflies_07_02"); //Il lavoro sarebbe molto pi√π semplice senza di loro! Mi segui?
 	Viran_Bloodflies = LOG_RUNNING;
 
-	B_LogEntry			(CH1_DeliverWeed,"Viran mi consegner‡ l'erba di palude, a patto che distrugga tutte le mosche vampiro nel raggio di 20 passi.");
+	B_LogEntry			(CH1_DeliverWeed,"Viran mi consegner√† l'erba di palude, a patto che distrugga tutte le mosche vampiro nel raggio di 20 passi.");
 };
 	
 // **************************************************
@@ -161,7 +161,7 @@ FUNC VOID  DIA_Viran_Running_Info()
 	AI_Output (other, self,"DIA_Viran_Running_15_00"); //Non vedo altre mosche vampiro.
 	Npc_PerceiveAll(self);
 	if ( Wld_DetectNpc(self,bloodfly,ZS_MM_Rtn_Wusel,-1) && (Npc_GetDistToNpc(self, other)<2000) ) //other = nearest Bloodfly (Instance/ZS/Guild)
-	//wenn keine Bloodfly in 40m, dann other noch unver‰ndert (= hero)
+	//wenn keine Bloodfly in 40m, dann other noch unver√§ndert (= hero)
 	{
 		AI_Output (self, hero,"DIA_Viran_Running_07_00"); //Ma ce ne sono altre nel raggio di venti passi!
 		AI_Output (self, hero,"DIA_Viran_Running_07_01"); //Non te ne libererai tanto facilmente!
@@ -169,20 +169,20 @@ FUNC VOID  DIA_Viran_Running_Info()
 	else
 	{
 		AI_Output (self, hero,"DIA_Viran_Running_07_02"); //Nessun insetto: hai fatto un ottimo lavoro!
-		AI_Output (self, hero,"DIA_Viran_Running_07_03"); //Uno che lavora come te o Ë dalla nostra parte o Ë un completo idiota!
+		AI_Output (self, hero,"DIA_Viran_Running_07_03"); //Uno che lavora come te o √® dalla nostra parte o √® un completo idiota!
 		AI_Output (self, hero,"DIA_Viran_Running_07_04"); //E un idiota sarebbe troppo stupido per imbrogliarmi, giusto?
 		AI_Output (self, hero,"DIA_Viran_Running_07_05"); //Ecco, prendi il raccolto e portalo a Cor Kalom.
-		AI_Output (self, hero,"DIA_Viran_Running_07_06"); //Se si lamenta della quantit‡, digli di muovere il culo e venire a farsi un'idea di quanto sia difficile lavorare qui!
+		AI_Output (self, hero,"DIA_Viran_Running_07_06"); //Se si lamenta della quantit√†, digli di muovere il culo e venire a farsi un'idea di quanto sia difficile lavorare qui!
 		
 		B_GiveInvItems  (self, hero, ItMi_Plants_Swampherb_01, 50);
 
 		if	Npc_KnowsInfo(hero, DIA_Balor_FetchWeed)
 		{
-			B_LogEntry	(CH1_DeliverWeed,"Viran mi ha consegnato la seconda met‡ del raccolto odierno d'erba di palude. Vediamo se Cor Kalom Ë soddisfatto, stavolta.");
+			B_LogEntry	(CH1_DeliverWeed,"Viran mi ha consegnato la seconda met√† del raccolto odierno d'erba di palude. Vediamo se Cor Kalom √® soddisfatto, stavolta.");
 		}
 		else
 		{
-			B_LogEntry	(CH1_DeliverWeed,"Viran mi ha consegnato il raccolto odierno d'erba di palude. Non Ë molta. Forse esiste un secondo gruppo di mietitori.");
+			B_LogEntry	(CH1_DeliverWeed,"Viran mi ha consegnato il raccolto odierno d'erba di palude. Non √® molta. Forse esiste un secondo gruppo di mietitori.");
 		};
 		B_GiveXP		(XP_WeedFromViran);
 				
@@ -217,7 +217,7 @@ FUNC int  DIA_Viran_Perm_Condition()
 FUNC VOID  DIA_Viran_Perm_Info()
 {
 	AI_Output (other, self,"DIA_Viran_Perm_15_00"); //Come va il raccolto?
-	AI_Output (self, other,"DIA_Viran_Perm_07_01"); //Certo, certo! Prendimi pure in giro! Lo so che il tuo lavoro presso i guru Ë migliore.
+	AI_Output (self, other,"DIA_Viran_Perm_07_01"); //Certo, certo! Prendimi pure in giro! Lo so che il tuo lavoro presso i guru √® migliore.
 	AI_Output (self, other,"DIA_Viran_Perm_07_02"); //Beh... Almeno non devo fare il lavoro sporco. A quello ci pensa la 'fanteria'! He he he.
 };
 

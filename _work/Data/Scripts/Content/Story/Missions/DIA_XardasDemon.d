@@ -95,7 +95,7 @@ FUNC VOID Info_XardasDemon_MASTERWHO_Info()
 	AI_Output		(hero, self,"Info_XardasDemon_MASTERWHO_15_01"); //Forse il tuo padrone si chiama Xardas?
 	AI_Output (self, other,"DIA_BaalCadar_NoTalk_Hi_02_01"); //
 	AI_Output		(hero, self,"Info_XardasDemon_MASTERWHO_15_02"); //Ah, va bene... I nomi non sono importanti... D'accordo.
-	AI_Output		(hero, self,"Info_XardasDemon_MASTERWHO_15_03"); //FarÚ finta che questa sia la torre di Xardas.
+	AI_Output		(hero, self,"Info_XardasDemon_MASTERWHO_15_03"); //Far√≤ finta che questa sia la torre di Xardas.
 };
 
 //***************************************************************************
@@ -131,7 +131,7 @@ FUNC VOID Info_XardasDemon_MASTERHOW_Info()
 
 	FindGolemHearts = 1;		// Auftrag vergeben
 
-	B_LogEntry		(CH4_FindXardas,"Ho incontrato un demone, nella torre di Xardas, che riusciva a comunicare con me attraverso il pensiero. Vuole che gli porti le prove della mia vittoria contro gli elementi fuoco, ghiaccio e pietra. Solo cosÏ mi permetter‡ di incontrare il suo padrone.");
+	B_LogEntry		(CH4_FindXardas,"Ho incontrato un demone, nella torre di Xardas, che riusciva a comunicare con me attraverso il pensiero. Vuole che gli porti le prove della mia vittoria contro gli elementi fuoco, ghiaccio e pietra. Solo cos√¨ mi permetter√† di incontrare il suo padrone.");
 };
 
 //***************************************************************************
@@ -163,7 +163,7 @@ FUNC VOID Info_XardasDemon_NOHEART_Info()
 {
 	AI_Output		(hero, self,"Info_XardasDemon_NOHEART_15_01"); //Basta con gli indovinelli!
 	AI_Output (self, other,"DIA_BaalCadar_NoTalk_Hi_02_01"); //
-	AI_Output		(hero, self,"Info_XardasDemon_NOHEART_15_02"); //...L'hai gi‡ detto! Ti stai ripetendo.
+	AI_Output		(hero, self,"Info_XardasDemon_NOHEART_15_02"); //...L'hai gi√† detto! Ti stai ripetendo.
 	AI_Output		(hero, self,"Info_XardasDemon_NOHEART_15_03"); //...Vuoi le prove della vittoria sugli elementi fuoco, ghiaccio e pietra!
 };
 
@@ -182,7 +182,7 @@ func void B_XardasDemon_GiveHeart()
 	else if (FindGolemHearts == 2)
 	{
 		AI_Output (self, other,"DIA_BaalCadar_NoTalk_Hi_02_01"); //
-		AI_Output	(hero, self,"Info_XardasDemon_GIVEHEART_15_03"); //...Dualit‡?... La seconda prova?
+		AI_Output	(hero, self,"Info_XardasDemon_GIVEHEART_15_03"); //...Dualit√†?... La seconda prova?
 		AI_Output	(hero, self,"Info_XardasDemon_GIVEHEART_15_04"); //...Ne manca ancora una?
 		FindGolemHearts = 3;
 	}
@@ -241,7 +241,7 @@ instance Info_XardasDemon_ICEHEART (C_INFO)
 	information	= Info_XardasDemon_ICEHEART_Info;
 	permanent	= 0;
 	important 	= 0;
-	description = "Questo cuore di un golem di ghiaccio puÚ bastare come prova?";
+	description = "Questo cuore di un golem di ghiaccio pu√≤ bastare come prova?";
 };
 
 FUNC INT Info_XardasDemon_ICEHEART_Condition()

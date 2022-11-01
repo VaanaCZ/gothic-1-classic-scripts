@@ -35,8 +35,8 @@ FUNC INT Info_Grd_237_FirstWarn_Condition()
 FUNC VOID Info_Grd_237_FirstWarn_Info()
 {
 	AI_Output			(self, hero,"Info_Grd_237_FirstWarn_07_01"); //Farai meglio ad allontanarti da qui. La terra degli orchi inizia dietro quella barricata
-	AI_Output			(hero, self,"Info_Grd_237_FirstWarn_15_02"); //È così pericolosa?
-	AI_Output			(self, hero,"Info_Grd_237_FirstWarn_07_03"); //Mettiamola in questo modo: faresti prima a darmi tutto il tuo metallo, piuttosto che andare laggiù a farti scuoiare dagli orchi.
+	AI_Output			(hero, self,"Info_Grd_237_FirstWarn_15_02"); //Ãˆ cosÃ¬ pericolosa?
+	AI_Output			(self, hero,"Info_Grd_237_FirstWarn_07_03"); //Mettiamola in questo modo: faresti prima a darmi tutto il tuo metallo, piuttosto che andare laggiÃ¹ a farti scuoiare dagli orchi.
 
 	hero.aivar[AIV_LASTDISTTOWP] 		= Npc_GetDistToWP (hero,Grd_237_CHECKPOINT);
 
@@ -63,7 +63,7 @@ func void Info_Grd_237_FirstWarn_Info_YES ()
 	Info_ClearChoices	(Info_Grd_237_FirstWarn);
 
 	AI_Output			(hero, self,"Info_Grd_237_FirstWarn_15_06"); //Va bene. Ecco il mio metallo!
-	AI_Output			(self, hero,"Info_Grd_237_FirstWarn_07_07"); //Oh! Un gesto di gran civiltà, da parte tua.
+	AI_Output			(self, hero,"Info_Grd_237_FirstWarn_07_07"); //Oh! Un gesto di gran civiltÃ , da parte tua.
 	
 	var int ore;
 	ore = Npc_HasItems	(hero,	ItMiNugget);
@@ -80,7 +80,7 @@ func void Info_Grd_237_FirstWarn_Info_NO ()
 	Info_ClearChoices	(Info_Grd_237_FirstWarn);
 
 	AI_Output			(hero, self,"Info_Grd_237_FirstWarn_15_08"); //Non voglio farlo!
-	AI_Output			(self, hero,"Info_Grd_237_FirstWarn_07_09"); //In questo caso, è meglio che tu non proceda oltre.
+	AI_Output			(self, hero,"Info_Grd_237_FirstWarn_07_09"); //In questo caso, Ã¨ meglio che tu non proceda oltre.
 
 	hero.aivar[AIV_GUARDPASSAGE_STATUS] = AIV_GPS_FIRSTWARN;
 
@@ -152,7 +152,7 @@ func int Info_Grd_237_Attack_Info()
 	hero.aivar[AIV_GUARDPASSAGE_STATUS]	= AIV_GPS_PUNISH;	
 	
 	B_FullStop			(self);	
-	AI_StopProcessInfos	(self);					//dem Spieler sofort wieder die Kontrolle zurückgeben
+	AI_StopProcessInfos	(self);					//dem Spieler sofort wieder die Kontrolle zurÃ¼ckgeben
 	B_SetAttackReason	(self,	AIV_AR_INTRUDER);
 	Npc_SetTarget		(self,	hero);
 	AI_StartState		(self,	ZS_Attack,	1,	"");

@@ -54,7 +54,7 @@ FUNC VOID  DIA_Torrez_Hello_Info()
 };
 
 //***********************************************
-//					Belohnung WƒHLEN	
+//					Belohnung W√ÑHLEN	
 //***********************************************
 
 instance  DIA_Torrez_Belohnung (C_INFO)
@@ -89,7 +89,7 @@ FUNC VOID  DIA_Torrez_Belohnung_Info()
 
 func void DIA_Torrez_Belohnung_Str()
 {
-	AI_Output (other, self,"DIA_Torrez_Belohnung_Str_15_00"); //PrenderÚ l'Anello di Forza.
+	AI_Output (other, self,"DIA_Torrez_Belohnung_Str_15_00"); //Prender√≤ l'Anello di Forza.
 	AI_Output (self, other,"DIA_Torrez_Belohnung_Str_04_01"); //Me l'aspettavo. Ecco l'anello.
 	CreateInvItem(self, Staerkering);
 	B_GiveInvItems (self, hero, Staerkering, 1);
@@ -98,8 +98,8 @@ func void DIA_Torrez_Belohnung_Str()
 
 func void DIA_Torrez_Belohnung_Dex()
 {
-	AI_Output (other, self,"DIA_Torrez_Belohnung_Dex_15_00"); //PrenderÚ l'Anello di Destrezza.
-	AI_Output (self, other,"DIA_Torrez_Belohnung_Dex_04_01"); //La destrezza Ë pi˘ importante della forza. Ottima decisione.
+	AI_Output (other, self,"DIA_Torrez_Belohnung_Dex_15_00"); //Prender√≤ l'Anello di Destrezza.
+	AI_Output (self, other,"DIA_Torrez_Belohnung_Dex_04_01"); //La destrezza √® pi√π importante della forza. Ottima decisione.
 	CreateInvItem(self, Ring_des_Geschicks);
 	B_GiveInvItems (self, hero, Ring_des_Geschicks, 1);
 	Info_ClearChoices	(DIA_Torrez_Belohnung);
@@ -108,7 +108,7 @@ func void DIA_Torrez_Belohnung_Dex()
 func void DIA_Torrez_Belohnung_Scrolls()
 {
 	AI_Output (other, self,"DIA_Torrez_Belohnung_Scrolls_15_00"); //Dammi gli incantesimi.
-	AI_Output (self, other,"DIA_Torrez_Belohnung_Scrolls_04_01"); //Sfruttali con parsimonia: ognuno di essi puÚ essere usato una volta sola!
+	AI_Output (self, other,"DIA_Torrez_Belohnung_Scrolls_04_01"); //Sfruttali con parsimonia: ognuno di essi pu√≤ essere usato una volta sola!
 	CreateInvItems(self, ItArScrollFireball, 3);
 	B_GiveInvItems (self, hero, ItArScrollFireball, 3);//Wegen Bildschirmausgabe, wird direkt angepasst
 	Npc_RemoveInvItems(other, ItArScrollFireball, 2);
@@ -120,7 +120,7 @@ func void DIA_Torrez_Belohnung_Scrolls()
 func void DIA_Torrez_Belohnung_ManaMax()
 {
 	AI_Output (other, self,"DIA_Torrez_Belohnung_ManaMax_15_00"); //Vorrei la pozione!
-	AI_Output (self, other,"DIA_Torrez_Belohnung_ManaMax_04_01"); //Ottima scelta! Questo Ë l'oggetto pi˘ importante. Bevi la pozione e la tua potenza aumenter‡!
+	AI_Output (self, other,"DIA_Torrez_Belohnung_ManaMax_04_01"); //Ottima scelta! Questo √® l'oggetto pi√π importante. Bevi la pozione e la tua potenza aumenter√†!
 	CreateInvItem(self, ItFo_Potion_Mana_Perma_01);
 	B_GiveInvItems (self, hero, ItFo_Potion_Mana_Perma_01, 1);
 	Info_ClearChoices	(DIA_Torrez_Belohnung);
@@ -151,14 +151,14 @@ FUNC int  DIA_Torrez_BriefTausch_Condition()
 FUNC VOID  DIA_Torrez_BriefTausch_Info()
 {
 	AI_Output (other, self,"DIA_Torrez_BriefTausch_15_00"); //Ho una lettera per te, ma prima voglio la mia ricompensa!
-	AI_Output (self, other,"DIA_Torrez_BriefTausch_04_01"); //PerchÈ non parli con Milten?
-	AI_Output (other, self,"DIA_Torrez_BriefTausch_15_02"); //L'ho gi‡ fatto.
+	AI_Output (self, other,"DIA_Torrez_BriefTausch_04_01"); //Perch√© non parli con Milten?
+	AI_Output (other, self,"DIA_Torrez_BriefTausch_15_02"); //L'ho gi√† fatto.
 	AI_Output (self, other,"DIA_Torrez_BriefTausch_04_03"); //Capisco. Ecco la tua ricompensa e ora mostrami la lettera. Subito!
 	AI_Output (other, self,"DIA_Torrez_BriefTausch_15_04"); //Eccola.
 		
 	if (Npc_HasItems(other,ItWr_Fire_Letter_01)>=1) 
 	{
-		AI_Output (self, other,"DIA_Torrez_BriefTausch_04_05"); //La tua ricompensa Ë un Anello di Forza. Si tratta di un raro manufatto e ti sar‡ molto utile.
+		AI_Output (self, other,"DIA_Torrez_BriefTausch_04_05"); //La tua ricompensa √® un Anello di Forza. Si tratta di un raro manufatto e ti sar√† molto utile.
 		AI_Output (self, other,"DIA_Torrez_BriefTausch_04_06"); //Ora vai!
 		B_GiveInvItems(other, self, ItWr_Fire_Letter_01, 1);
 		Npc_RemoveInvItems(self, ItWr_Fire_Letter_01, 1);
@@ -168,9 +168,9 @@ FUNC VOID  DIA_Torrez_BriefTausch_Info()
 	}
 	else if (Npc_HasItems(other,ItWr_Fire_Letter_02)>=1) 
 	{
-		AI_Output (self, other,"DIA_Torrez_BriefTausch_04_07"); //Il sigillo Ë rotto.
+		AI_Output (self, other,"DIA_Torrez_BriefTausch_04_07"); //Il sigillo √® rotto.
 		AI_Output (other, self,"DIA_Torrez_BriefTausch_15_08"); //Capita...
-		AI_Output (self, other,"DIA_Torrez_BriefTausch_04_09"); //La tua ricompensa Ë una pozione guaritrice. Dovrai accontentarti: solitamente i messaggeri che consegnano lettere senza sigillo non ricevono nulla.
+		AI_Output (self, other,"DIA_Torrez_BriefTausch_04_09"); //La tua ricompensa √® una pozione guaritrice. Dovrai accontentarti: solitamente i messaggeri che consegnano lettere senza sigillo non ricevono nulla.
 		B_GiveInvItems(other, self, ItWr_Fire_Letter_02, 1);
 		Npc_RemoveInvItems(self, ItWr_Fire_Letter_02, 1);
 		CreateInvItems(self, ItFo_Potion_Health_03, 1);
@@ -195,7 +195,7 @@ instance  DIA_Torrez_PERM (C_INFO)
 	condition	=  DIA_Torrez_PERM_Condition;
 	information	=  DIA_Torrez_PERM_Info;
 	permanent	=  1;
-	description =  "Com'Ë avere a che fare con le arti magiche?";
+	description =  "Com'√® avere a che fare con le arti magiche?";
 };                       
 
 FUNC int  DIA_Torrez_PERM_Condition()
@@ -205,7 +205,7 @@ FUNC int  DIA_Torrez_PERM_Condition()
 
 FUNC VOID  DIA_Torrez_PERM_Info()
 {
-	AI_Output (other, self,"DIA_Torrez_PERM_15_00"); //Com'Ë avere a che fare con le arti magiche?
+	AI_Output (other, self,"DIA_Torrez_PERM_15_00"); //Com'√® avere a che fare con le arti magiche?
 	AI_Output (self, other,"DIA_Torrez_PERM_04_01"); //Non sono affari tuoi!
 	AI_StopProcessInfos	( self );
 };
@@ -226,7 +226,7 @@ FUNC VOID  DIA_Torrez_PERM_Info()
 ///////////////////////////////////////////
 
 //---------------------------------------------------------
-//					WƒHREND DER AUFNAHME	
+//					W√ÑHREND DER AUFNAHME	
 //---------------------------------------------------------
 instance KDF_405_Torrez_BOOK (C_INFO)
 {
@@ -248,7 +248,7 @@ FUNC int  KDF_405_Torrez_BOOK_Condition()
 func void  KDF_405_Torrez_BOOK_Info()
 {
 	
-	AI_Output (self, other,"KDF_405_Torrez_BOOK_Info_04_01"); //Per ogni Cerchio esiste un libro che ne spiega la magia. Studia bene questi volumi: la conoscenza Ë potere!
+	AI_Output (self, other,"KDF_405_Torrez_BOOK_Info_04_01"); //Per ogni Cerchio esiste un libro che ne spiega la magia. Studia bene questi volumi: la conoscenza √® potere!
 	AI_Output (self, other,"KDF_405_Torrez_BOOK_Info_04_02"); //Prendi il libro del Primo Cerchio e impara a capire il Fuoco.
 	CreateInvItem (self,ItWr_Book_Circle_01);
 	B_GiveInvItems(self,hero,ItWr_Book_Circle_01, 1);
@@ -281,7 +281,7 @@ FUNC void  KDF_405_Torrez_SELLBOOKS_Info()
 	AI_Output (other, self,"KDF_405_Torrez_SELLBOOKS_Info_15_01"); //Voglio acquistare degli scritti magici.
 };  
 /*------------------------------------------------------------------------
-						BEGR‹SSUNG						
+						BEGR√úSSUNG						
 ------------------------------------------------------------------------*/
 
 instance  KDF_405_Torrez_GREET (C_INFO)
@@ -309,7 +309,7 @@ FUNC void  KDF_405_Torrez_GREET_Info()
 	B_LogEntry		(GE_TraderOC,"Torrez vende INCANTESIMI e RUNE. Durante il giorno, posso trovarlo nei giardini.");
 
 	Log_CreateTopic (GE_TeacherOC,LOG_NOTE);
-	B_LogEntry		(GE_TeacherOC,"Torrez puÚ mostrarmi come aumentare il mio MANA. Durante il giorno, si trova nel cortile.");
+	B_LogEntry		(GE_TeacherOC,"Torrez pu√≤ mostrarmi come aumentare il mio MANA. Durante il giorno, si trova nel cortile.");
 };
 // 
 instance  KDF_405_Torrez_MANA (C_INFO)
@@ -319,7 +319,7 @@ instance  KDF_405_Torrez_MANA (C_INFO)
 	information		= KDF_405_Torrez_MANA_Info;
 	important		= 0;
 	permanent		= 1;
-	description		= "Ho bisogno di pi˘ potere magico."; 
+	description		= "Ho bisogno di pi√π potere magico."; 
 };
 
 FUNC int  KDF_405_Torrez_MANA_Condition()
@@ -337,8 +337,8 @@ FUNC void  KDF_405_Torrez_MANA_Info()
 	
 	Info_ClearChoices	(KDF_405_Torrez_MANA);
 	Info_AddChoice		(KDF_405_Torrez_MANA,DIALOG_BACK							,KDF_405_Torrez_MANA_BACK);
-	Info_AddChoice		(KDF_405_Torrez_MANA,"Aumenta il mana di 5 punti (costo: 5 punti abilit‡)",KDF_405_Torrez_MANA_MAN_5);
-	Info_AddChoice		(KDF_405_Torrez_MANA,"Aumenta il mana di 1 punto (costo: 1 punto abilit‡)",KDF_405_Torrez_MANA_MAN_1);
+	Info_AddChoice		(KDF_405_Torrez_MANA,"Aumenta il mana di 5 punti (costo: 5 punti abilit√†)",KDF_405_Torrez_MANA_MAN_5);
+	Info_AddChoice		(KDF_405_Torrez_MANA,"Aumenta il mana di 1 punto (costo: 1 punto abilit√†)",KDF_405_Torrez_MANA_MAN_1);
 };  
 func void KDF_405_Torrez_MANA_BACK()
 {
@@ -350,8 +350,8 @@ func void KDF_405_Torrez_MANA_MAN_1()
 	B_BuyAttributePoints (other, ATR_MANA_MAX, 1);
 	Info_ClearChoices	(KDF_405_Torrez_MANA);
 	Info_AddChoice		(KDF_405_Torrez_MANA,DIALOG_BACK								,KDF_405_Torrez_MANA_BACK);
-	Info_AddChoice		(KDF_405_Torrez_MANA,"Aumenta il mana di 5 punti (costo: 5 punti abilit‡)",KDF_405_Torrez_MANA_MAN_5);
-	Info_AddChoice		(KDF_405_Torrez_MANA,"Aumenta il mana di 1 punto (costo: 1 punto abilit‡)",KDF_405_Torrez_MANA_MAN_1);
+	Info_AddChoice		(KDF_405_Torrez_MANA,"Aumenta il mana di 5 punti (costo: 5 punti abilit√†)",KDF_405_Torrez_MANA_MAN_5);
+	Info_AddChoice		(KDF_405_Torrez_MANA,"Aumenta il mana di 1 punto (costo: 1 punto abilit√†)",KDF_405_Torrez_MANA_MAN_1);
 
 };
 
@@ -360,8 +360,8 @@ func void KDF_405_Torrez_MANA_MAN_5()
 	B_BuyAttributePoints (other, ATR_MANA_MAX, 5);
 	Info_ClearChoices	(KDF_405_Torrez_MANA);
 	Info_AddChoice		(KDF_405_Torrez_MANA,DIALOG_BACK								,KDF_405_Torrez_MANA_BACK);
-	Info_AddChoice		(KDF_405_Torrez_MANA,"Aumenta il mana di 5 punti (costo: 5 punti abilit‡)",KDF_405_Torrez_MANA_MAN_5);
-	Info_AddChoice		(KDF_405_Torrez_MANA,"Aumenta il mana di 1 punto (costo: 1 punto abilit‡)",KDF_405_Torrez_MANA_MAN_1);
+	Info_AddChoice		(KDF_405_Torrez_MANA,"Aumenta il mana di 5 punti (costo: 5 punti abilit√†)",KDF_405_Torrez_MANA_MAN_5);
+	Info_AddChoice		(KDF_405_Torrez_MANA,"Aumenta il mana di 1 punto (costo: 1 punto abilit√†)",KDF_405_Torrez_MANA_MAN_1);
 
 };
 /*------------------------------------------------------------------------

@@ -119,7 +119,7 @@ FUNC INT Info_ORG_829_SpecialInfo_Condition()
 FUNC VOID Info_ORG_829_SpecialInfo_Info()
 {	
 	AI_Output (other, self,"Info_ORG_829_SpecialInfo_15_00"); //Sono appena arrivato. Puoi darmi qualche consiglio?
-	AI_Output (self, other,"Info_ORG_829_SpecialInfo_06_01"); //Certo! Una volta nel campo, vai da Gorn. È uno dei mercenari dei maghi, ma è un tipo a posto. Una volta era uno di noi.
+	AI_Output (self, other,"Info_ORG_829_SpecialInfo_06_01"); //Certo! Una volta nel campo, vai da Gorn. Ãˆ uno dei mercenari dei maghi, ma Ã¨ un tipo a posto. Una volta era uno di noi.
 	AI_Output (other, self,"Info_ORG_829_SpecialInfo_15_02"); //Cosa intendi con 'noi'?
 	AI_Output (self, other,"Info_ORG_829_SpecialInfo_06_03"); //Un fuorilegge, ovviamente. Derubava i baroni delle miniere!
 };

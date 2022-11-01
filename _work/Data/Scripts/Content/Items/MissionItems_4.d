@@ -7,7 +7,7 @@
 //#####################################################################
 
 //---------------------------------------------------------------------
-//	Buch ¸ber Golems
+//	Buch √ºber Golems
 //---------------------------------------------------------------------
 INSTANCE ItWr_GolemBook1(C_Item)
 {	
@@ -42,16 +42,16 @@ INSTANCE ItWr_GolemBook1(C_Item)
 		Doc_PrintLine	( nDocID,  0, "=====================");
 		Doc_PrintLines	( nDocID,  0,"(Magia dei golem)");
 		Doc_PrintLine	( nDocID,  0, "");
-		Doc_PrintLines	( nDocID,  0,"Solo chi si sia trovato faccia a faccia con queste creature generate dagli elementi, puÚ veramente capire la lezione d'umilt‡ che esse possono impartire all'incauto avventore.");
+		Doc_PrintLines	( nDocID,  0,"Solo chi si sia trovato faccia a faccia con queste creature generate dagli elementi, pu√≤ veramente capire la lezione d'umilt√† che esse possono impartire all'incauto avventore.");
 		Doc_PrintLine	( nDocID,  0, "");
 
 		//2.Seite
-		Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1);  //  0 -> margins are in pixels (Position des Textes von den R‰nder des TGAs aus, links,oben,rechts,unten)
+		Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1);  //  0 -> margins are in pixels (Position des Textes von den R√§nder des TGAs aus, links,oben,rechts,unten)
 		Doc_PrintLine	( nDocID,  1,"Golem di pietra");
 		Doc_PrintLine	( nDocID,  1,"------------");
 		Doc_PrintLines	( nDocID,  1,"Questi colossi di pietra sono quasi invulnerabili. Spade, asce e archi non sembrano arrecar loro alcun danno.");
 		Doc_PrintLine	( nDocID,  1, "");
-		Doc_PrintLines	( nDocID,  1,"L'unico rapporto attendibile, sullo scontro contro uno di questi leviatani, Ë stato redatto da un mercenario. Egli sostiene che i colpi diretti di un martello da guerra causarono delle crepe nel golem, distruggendolo.");
+		Doc_PrintLines	( nDocID,  1,"L'unico rapporto attendibile, sullo scontro contro uno di questi leviatani, √® stato redatto da un mercenario. Egli sostiene che i colpi diretti di un martello da guerra causarono delle crepe nel golem, distruggendolo.");
 
 		Doc_Show		( nDocID );
 	};
@@ -92,16 +92,16 @@ INSTANCE ItWr_GolemBook2(C_Item)
 		Doc_PrintLine	( nDocID,  0,"Golem di ghiaccio");
 		Doc_PrintLine	( nDocID,  0,"---------");
 		Doc_PrintLines	( nDocID,  0,"I golem di ghiaccio sono, in qualche modo, imparentati con quelli di pietra, sebbene il loro corpo sembri costituito d'acqua. Qualsiasi arma normale scivola sulla superficie di questi esseri ghiacciati.");
-		Doc_PrintLines	( nDocID,  0,"Gli avventurosi viandanti devono stare attenti anche al loro fiato gelido, che puÚ imprigionarli in una colonna di ghiaccio.");
+		Doc_PrintLines	( nDocID,  0,"Gli avventurosi viandanti devono stare attenti anche al loro fiato gelido, che pu√≤ imprigionarli in una colonna di ghiaccio.");
 
 		//2.Seite
-		Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1);  //  0 -> margins are in pixels (Position des Textes von den R‰nder des TGAs aus, links,oben,rechts,unten)
-		Doc_PrintLines	( nDocID,  1,"Un Mago del Fuoco sostiene di aver incontrato uno di questi golem e di essersene sbarazzato con facilit‡.");
+		Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1);  //  0 -> margins are in pixels (Position des Textes von den R√§nder des TGAs aus, links,oben,rechts,unten)
+		Doc_PrintLines	( nDocID,  1,"Un Mago del Fuoco sostiene di aver incontrato uno di questi golem e di essersene sbarazzato con facilit√†.");
 		Doc_PrintLine	( nDocID,  1, "");
 		Doc_PrintLine	( nDocID,  1,"Golem di fuoco");
 		Doc_PrintLine	( nDocID,  1,"------------");
 		Doc_PrintLines	( nDocID,  1,"Secondo le informazioni pervenuteci, questi esseri selvaggi possono incendiare le proprie vittime al semplice tocco. ");
-		Doc_PrintLines	( nDocID,  1,"Solo un anno fa, un gruppo di cacciatori s'imbattÈ in uno di questi cumuli di lava ambulanti. Non si conosce l'esito della battaglia, ma sembra che i globi elettrici e il ghiaccio abbiano effetto, contro queste creature infermali.");
+		Doc_PrintLines	( nDocID,  1,"Solo un anno fa, un gruppo di cacciatori s'imbatt√© in uno di questi cumuli di lava ambulanti. Non si conosce l'esito della battaglia, ma sembra che i globi elettrici e il ghiaccio abbiano effetto, contro queste creature infermali.");
 		Doc_Show		( nDocID );
 	};
 
@@ -141,7 +141,7 @@ INSTANCE ItWrWorldmap_Orc(C_Item)
 					Doc_Show		( nDocID 	);
 	};
 //---------------------------------------------------------------------
-//	Schl¸ssel zur Freien Mine
+//	Schl√ºssel zur Freien Mine
 //---------------------------------------------------------------------
 INSTANCE ItKe_Freemine(C_Item)
 {	
@@ -170,7 +170,7 @@ INSTANCE ItKe_Freemine(C_Item)
 };
 
 //---------------------------------------------------------------------
-//	Medizin f¸r den verwundeten Orc in der Freien Mine
+//	Medizin f√ºr den verwundeten Orc in der Freien Mine
 //---------------------------------------------------------------------
 INSTANCE	OrcMedicine(C_ITEM)
 {
@@ -226,9 +226,9 @@ INSTANCE UluMulu(C_Item)
 	material 		=	MAT_METAL;
 	
 	description		=	name;
-	TEXT[0]			=	"L'Ulu-Mulu Ë un simbolo di grande forza e";
-	TEXT[1]			=	"dignit‡. Colui che porta tale stendardo, non";
-	TEXT[2]			=	"sar‡ attaccato dagli orchi!";
+	TEXT[0]			=	"L'Ulu-Mulu √® un simbolo di grande forza e";
+	TEXT[1]			=	"dignit√†. Colui che porta tale stendardo, non";
+	TEXT[2]			=	"sar√† attaccato dagli orchi!";
 	TEXT[3]			=	NAME_Damage;			COUNT[3]	= damageTotal;
 	TEXT[4] 		=	NAME_Str_needed;		COUNT[4]	= cond_value[2];
 	TEXT[5]			=	NAME_Value; 			COUNT[5]	= value;

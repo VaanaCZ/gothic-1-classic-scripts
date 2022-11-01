@@ -37,7 +37,7 @@ INSTANCE Info_Bau_4_WichtigePersonen(C_INFO)
 	condition	= Info_Bau_4_WichtigePersonen_Condition;
 	information	= Info_Bau_4_WichtigePersonen_Info;
 	permanent	= 1;
-	description = "Chi è il capo?";
+	description = "Chi Ã¨ il capo?";
 };                       
 
 FUNC INT Info_Bau_4_WichtigePersonen_Condition()
@@ -47,9 +47,9 @@ FUNC INT Info_Bau_4_WichtigePersonen_Condition()
 
 FUNC VOID Info_Bau_4_WichtigePersonen_Info()
 {
-	AI_Output(other,self,"Info_Bau_4_WichtigePersonen_15_00"); //Chi è il capo?
-	AI_Output(self,other,"Info_Bau_4_WichtigePersonen_04_01"); //Il Signore del Riso. Però molti lavorano per lui solo perché ne hanno paura.
-	AI_Output(self,other,"Info_Bau_4_WichtigePersonen_04_02"); //Non io. Ho girato per alcuni anni e sono stanco di essere attaccato dai ladri del campo! La risaia è il posto giusto per me.
+	AI_Output(other,self,"Info_Bau_4_WichtigePersonen_15_00"); //Chi Ã¨ il capo?
+	AI_Output(self,other,"Info_Bau_4_WichtigePersonen_04_01"); //Il Signore del Riso. PerÃ² molti lavorano per lui solo perchÃ© ne hanno paura.
+	AI_Output(self,other,"Info_Bau_4_WichtigePersonen_04_02"); //Non io. Ho girato per alcuni anni e sono stanco di essere attaccato dai ladri del campo! La risaia Ã¨ il posto giusto per me.
 	var C_NPC Ricelord;			Ricelord	= Hlp_GetNpc(Bau_900_Ricelord);
 	Ricelord.aivar[AIV_FINDABLE] = TRUE;	
 };
@@ -64,7 +64,7 @@ INSTANCE Info_Bau_4_DasLager(C_INFO)
 	condition	= Info_Bau_4_DasLager_Condition;
 	information	= Info_Bau_4_DasLager_Info;
 	permanent	= 1;
-	description = "C'è qualcosa che devo ancora sapere su questo posto?";
+	description = "C'Ã¨ qualcosa che devo ancora sapere su questo posto?";
 };                       
 
 FUNC INT Info_Bau_4_DasLager_Condition()
@@ -74,8 +74,8 @@ FUNC INT Info_Bau_4_DasLager_Condition()
 
 FUNC VOID Info_Bau_4_DasLager_Info()
 {
-	AI_Output(other,self,"Info_Bau_4_DasLager_15_00"); //C'è qualcosa che devo ancora sapere su questo posto?
-	AI_Output(self,other,"Info_Bau_4_DasLager_04_01"); //Fai attenzione al campo, ragazzo! È infestato di tagliagole, che aspettano solo di mettere le mani addosso ai nuovi arrivati come te.
+	AI_Output(other,self,"Info_Bau_4_DasLager_15_00"); //C'Ã¨ qualcosa che devo ancora sapere su questo posto?
+	AI_Output(self,other,"Info_Bau_4_DasLager_04_01"); //Fai attenzione al campo, ragazzo! Ãˆ infestato di tagliagole, che aspettano solo di mettere le mani addosso ai nuovi arrivati come te.
 };
 
 // *************************************************************************
@@ -99,7 +99,7 @@ FUNC INT Info_Bau_4_DieLage_Condition()
 FUNC VOID Info_Bau_4_DieLage_Info()
 {
 	AI_Output(other,self,"Info_Bau_4_DieLage_15_00"); //Come va?
-	AI_Output(self,other,"Info_Bau_4_DieLage_04_01"); //C'è un sacco di lavoro. Abbiamo bisogno di tantissimo riso, per nutrire tutta questa gente.
+	AI_Output(self,other,"Info_Bau_4_DieLage_04_01"); //C'Ã¨ un sacco di lavoro. Abbiamo bisogno di tantissimo riso, per nutrire tutta questa gente.
 };
 
 // *************************************************************************
@@ -148,7 +148,7 @@ FUNC VOID Info_Bau_4_Wasser_Info()
 	}
 	else
 	{
-		AI_Output(self,other,"Info_Bau_4_Wasser_NOWATER_04_00"); //Ma non ne hai più! Non fa nulla, amico. Chiederò a qualcun altro.
+		AI_Output(self,other,"Info_Bau_4_Wasser_NOWATER_04_00"); //Ma non ne hai piÃ¹! Non fa nulla, amico. ChiederÃ² a qualcun altro.
 	};
 };
 

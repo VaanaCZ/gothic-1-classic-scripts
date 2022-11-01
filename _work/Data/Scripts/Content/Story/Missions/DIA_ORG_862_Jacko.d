@@ -79,8 +79,8 @@ FUNC int  ORG_862_Jacko_GUARD_Condition()
 FUNC void  ORG_862_Jacko_GUARD_Info()
 {
 	AI_Output			(self, other,"ORG_862_Jacko_GUARD_Info_06_00"); //Ci siamo persi, vero?
-	AI_Output			(other, self,"ORG_862_Jacko_GUARD_Info_15_01"); //Cor Kalom è venuto a sapere della vostra piccola impresa.
-	AI_Output			(self, other,"ORG_862_Jacko_GUARD_Info_06_02"); //Cosa? Perché sei qui?
+	AI_Output			(other, self,"ORG_862_Jacko_GUARD_Info_15_01"); //Cor Kalom Ã¨ venuto a sapere della vostra piccola impresa.
+	AI_Output			(self, other,"ORG_862_Jacko_GUARD_Info_06_02"); //Cosa? PerchÃ© sei qui?
 	
 	B_LogEntry			(CH1_DrugMonopol,"Ho scoperto la produzione segreta d'erba di palude di Jacko e i suoi compari.");
 
@@ -114,7 +114,7 @@ func void ORG_862_Jacko_GUARD_Templer()
 func void ORG_862_Jacko_GUARD_InfoWert()
 {
 	AI_Output			(other, self,"ORG_862_Jacko_GUARD_InfoWert_Info_15_00"); //Voglio sapere quanto vale quest'informazione, secondo te.
-	AI_Output			(self, other,"ORG_862_Jacko_GUARD_InfoWert_Info_06_01"); //Ah, è questo che vuoi... Va bene. Tu fai un favore a me e io ne faccio uno a te, Ecco, questo è tutto il metallo che possiedo.
+	AI_Output			(self, other,"ORG_862_Jacko_GUARD_InfoWert_Info_06_01"); //Ah, Ã¨ questo che vuoi... Va bene. Tu fai un favore a me e io ne faccio uno a te, Ecco, questo Ã¨ tutto il metallo che possiedo.
 	AI_Output			(self, other,"ORG_862_Jacko_GUARD_InfoWert_Info_06_02"); //Ora dobbiamo andare! Farai meglio a sparire anche tu.
 
 	B_GiveInvItems		(self, other,itminugget,95);
@@ -124,7 +124,7 @@ func void ORG_862_Jacko_GUARD_InfoWert()
 	B_ExchangeRoutine	(ORG_860_Renyu,		"ARBEITSLOS");
 
 	Stooges_Fled = TRUE;
-	B_LogEntry			(CH1_DrugMonopol,"Mi è bastata una chiacchierata per risolvere il problema. La situazione iniziava a scottare troppo per Jacko.");
+	B_LogEntry			(CH1_DrugMonopol,"Mi Ã¨ bastata una chiacchierata per risolvere il problema. La situazione iniziava a scottare troppo per Jacko.");
 	B_GiveXP			(XP_JackoRetired);
 
 	Info_Clearchoices	(ORG_862_Jacko_GUARD);
@@ -168,7 +168,7 @@ instance  ORG_862_Jacko_Banditencamp (C_INFO)
 	condition		= ORG_862_Jacko_Banditencamp_Condition;
 	information		= ORG_862_Jacko_Banditencamp_Info;
 	permanent		= 1;
-	description		= "Allora è da qui che sei saltato fuori.";
+	description		= "Allora Ã¨ da qui che sei saltato fuori.";
 };
 
 FUNC int  ORG_862_Jacko_Banditencamp_Condition()
@@ -181,7 +181,7 @@ FUNC int  ORG_862_Jacko_Banditencamp_Condition()
 
 FUNC void  ORG_862_Jacko_Banditencamp_Info()
 {
-	AI_Output (other, self,"ORG_862_Jacko_Banditencamp_15_00"); //Allora è da qui che sei saltato fuori.
+	AI_Output (other, self,"ORG_862_Jacko_Banditencamp_15_00"); //Allora Ã¨ da qui che sei saltato fuori.
 	AI_Output (self, other,"ORG_862_Jacko_Banditencamp_06_01"); //Per un pelo. I templari della Setta ci avrebbero uccisi.
 			
 	AI_StopProcessInfos	(self);
@@ -273,9 +273,9 @@ FUNC int  ORG_862_Jacko_ANGEBOT_Condition()
 FUNC void  ORG_862_Jacko_ANGEBOT_Info()
 {
 	AI_Output (other, self,"ORG_862_Jacko_ANGEBOT_Info_15_01"); //Ich will euch ein Angebot machen!
-	AI_Output (self, other,"ORG_862_Jacko_ANGEBOT_Info_06_02"); //Was für ein Angebot? 
+	AI_Output (self, other,"ORG_862_Jacko_ANGEBOT_Info_06_02"); //Was fÃ¼r ein Angebot? 
 	AI_Output (other, self,"ORG_862_Jacko_ANGEBOT_Info_15_03"); //Das werde ich mit demjenigen bereden,der hier das Sagen hat.  
-	AI_Output (self, other,"ORG_862_Jacko_ANGEBOT_Info_06_04"); //Na schön,dann rede mit Renyu. Aber keine faulen Tricks, sonst zerschlage ich jeden deiner Knochen einzeln!
+	AI_Output (self, other,"ORG_862_Jacko_ANGEBOT_Info_06_04"); //Na schÃ¶n,dann rede mit Renyu. Aber keine faulen Tricks, sonst zerschlage ich jeden deiner Knochen einzeln!
 	AI_StopProcessInfos	(self);
 };  
 

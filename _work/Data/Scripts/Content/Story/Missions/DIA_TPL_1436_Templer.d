@@ -42,7 +42,7 @@ FUNC void  Tpl_1436_Templer_CRAWLER_Info()
 {
 	AI_Output (other, self,"Tpl_1436_Templer_CRAWLER_Info_15_01"); //Cosa succede?
 	AI_Output (self, other,"Tpl_1436_Templer_CRAWLER_Info_13_02"); //Siamo qui per cacciare i pidocchi di miniera. In questo modo, riusciamo anche a proteggere i minatori.
-	AI_Output (self, other,"Tpl_1436_Templer_CRAWLER_Info_13_03"); //In realt‡, ciÚ che ci serve Ë la secrezione mandibolare dei pidocchi. Cor Kalom, il nostro guru, la usa per creare delle pozioni.
+	AI_Output (self, other,"Tpl_1436_Templer_CRAWLER_Info_13_03"); //In realt√†, ci√≤ che ci serve √® la secrezione mandibolare dei pidocchi. Cor Kalom, il nostro guru, la usa per creare delle pozioni.
 };  
 
   

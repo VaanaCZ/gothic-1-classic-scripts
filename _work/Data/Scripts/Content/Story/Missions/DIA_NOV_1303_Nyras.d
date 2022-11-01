@@ -75,9 +75,9 @@ FUNC int  DIA_Nyras_Ort_Condition()
 func void  DIA_Nyras_Ort_Info()
 {
 	AI_Output			(other, self,"DIA_Nyras_Ort_15_00"); //Che mi dici di questo posto?
-	AI_Output			(self, other,"DIA_Nyras_Ort_03_01"); //Beh... I guru sono le persone pi˘ importanti. Diffondono la parola del Dormiente e riferiscono ai novizi le visioni del nostro maestro.
-	AI_Output			(self, other,"DIA_Nyras_Ort_03_02"); //Ovviamente, lui Ë troppo affaticato per parlare con tutti.
-	AI_Output			(self, other,"DIA_Nyras_Ort_03_03"); //PerÚ certe volte ci raduna nel cortile del tempio per rivelare il sacro verbo del Dormiente.
+	AI_Output			(self, other,"DIA_Nyras_Ort_03_01"); //Beh... I guru sono le persone pi√π importanti. Diffondono la parola del Dormiente e riferiscono ai novizi le visioni del nostro maestro.
+	AI_Output			(self, other,"DIA_Nyras_Ort_03_02"); //Ovviamente, lui √® troppo affaticato per parlare con tutti.
+	AI_Output			(self, other,"DIA_Nyras_Ort_03_03"); //Per√≤ certe volte ci raduna nel cortile del tempio per rivelare il sacro verbo del Dormiente.
 	
 	Info_ClearChoices 	(DIA_Nyras_Ort);
 	Info_Addchoice 		(DIA_Nyras_Ort,"Parlami del sacro verbo del grande Dormiente.",DIA_Nyras_Ort_Holy);
@@ -87,7 +87,7 @@ func void  DIA_Nyras_Ort_Info()
 func void DIA_Nyras_Ort_Casual()
 {
 	AI_Output			(other, self,"DIA_Nyras_Ort_Casual_15_00"); //E cosa dice?
-	AI_Output			(self, other,"DIA_Nyras_Ort_Casual_03_01"); //Il Dormiente indica la via da seguire. Ma un infedele come te non puÚ capire!
+	AI_Output			(self, other,"DIA_Nyras_Ort_Casual_03_01"); //Il Dormiente indica la via da seguire. Ma un infedele come te non pu√≤ capire!
 	Info_ClearChoices 	(DIA_Nyras_Ort);
 };
 
@@ -95,9 +95,9 @@ func void DIA_Nyras_Ort_Holy()
 {
 	AI_Output			(other, self,"DIA_Nyras_Ort_Holy_15_00"); //Parlami del sacro verbo del grande Dormiente.
 	AI_Output			(self, other,"DIA_Nyras_Ort_Holy_03_01"); //EGLI ci rivela come dobbiamo agire per tornare a essere liberi.
-	AI_Output			(self, other,"DIA_Nyras_Ort_Holy_03_02"); //Y'Berion sostiene che il Dormiente ci mostrer‡ la via, appena saremo in grado di udirlo.
-	AI_Output			(self, other,"DIA_Nyras_Ort_Holy_03_03"); //Sta preparando una grande evocazione, durante la quale, insieme ai suoi migliori novizi, contatter‡ il Dormiente.
-	AI_Output			(self, other,"DIA_Nyras_Ort_Holy_03_04"); //Ad assisterlo c'Ë Cor Kalom, l'alchimista che crea le pozioni per farci entrare in trance.
+	AI_Output			(self, other,"DIA_Nyras_Ort_Holy_03_02"); //Y'Berion sostiene che il Dormiente ci mostrer√† la via, appena saremo in grado di udirlo.
+	AI_Output			(self, other,"DIA_Nyras_Ort_Holy_03_03"); //Sta preparando una grande evocazione, durante la quale, insieme ai suoi migliori novizi, contatter√† il Dormiente.
+	AI_Output			(self, other,"DIA_Nyras_Ort_Holy_03_04"); //Ad assisterlo c'√® Cor Kalom, l'alchimista che crea le pozioni per farci entrare in trance.
 	AI_Output			(self, other,"DIA_Nyras_Ort_Holy_03_05"); //Puoi accogliere i pensieri del Dormiente esclusivamente in questo stato o mentre dormi.
 	Info_ClearChoices 	(DIA_Nyras_Ort);
 };
@@ -119,7 +119,7 @@ func void DIA_Nyras_Ort_Holy()
 ///////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////
 
-// ***************************** BEGR‹ﬂUNG ****************************************//
+// ***************************** BEGR√ú√üUNG ****************************************//
 
 instance Nov_1303_Nyras_GREET (C_INFO)
 {
@@ -163,7 +163,7 @@ FUNC int  Nov_1303_Nyras_LEAVE_Condition()
 FUNC void  Nov_1303_Nyras_LEAVE_Info()
 {
 	AI_Output			(other, self,"Nov_1303_Nyras_LEAVE_Info_15_01"); //Sto cercando la pietra focalizzatrice.
-	AI_Output			(self, other,"Nov_1303_Nyras_LEAVE_Info_03_02"); //Sfortunatamente, sei arrivato tardi. L'ho gi‡ trovata io!
+	AI_Output			(self, other,"Nov_1303_Nyras_LEAVE_Info_03_02"); //Sfortunatamente, sei arrivato tardi. L'ho gi√† trovata io!
 	AI_Output			(self, other,"Nov_1303_Nyras_LEAVE_Info_03_03"); //E ho intenzione di tenermela!
 	AI_Output			(self, other,"Nov_1303_Nyras_LEAVE_Info_03_04"); //La scorsa notte il Dormiente mi ha parlato e ha deciso di farmi diventare il suo unico servo.
 	AI_Output			(self, other,"Nov_1303_Nyras_LEAVE_Info_03_05"); //Ora servo solo il Dormiente. Basta con guru e templari!

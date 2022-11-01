@@ -76,7 +76,7 @@ FUNC VOID  DIA_Jeremiah_PERM_Info()
 {
 	AI_Output (other, self,"DIA_Jeremiah_PERM_15_00"); //Come va la distilleria?
 	AI_Output (self, other,"DIA_Jeremiah_PERM_04_01"); //Riesco a malapena a tenere a bada questi tizi. Quanto bevono!
-	AI_Output (self, other,"DIA_Jeremiah_PERM_04_02"); //Molto bene. Finché sono impegnato, i segugi del Signore del Riso mi lasciano in pace.
+	AI_Output (self, other,"DIA_Jeremiah_PERM_04_02"); //Molto bene. FinchÃ© sono impegnato, i segugi del Signore del Riso mi lasciano in pace.
 	
 	Jeremiah_Bauer = TRUE;
 };
@@ -106,8 +106,8 @@ FUNC int DIA_Jeremiah_Horatio_Condition()
 FUNC VOID  DIA_Jeremiah_Horatio_Info()
 {
 	AI_Output (other, self,"DIA_Jeremiah_Horatio_15_00"); //Cosa puoi dirmi sul Signore del Riso?
-	AI_Output (self, other,"DIA_Jeremiah_Horatio_04_01"); //Quel porco schifoso! I suoi scagnozzi raccolgono gli uomini più deboli e li costringono a lavorare nei campi.
-	AI_Output (self, other,"DIA_Jeremiah_Horatio_04_02"); //L'unico che potrebbe contrastarlo è Horatio, ma rifiuta la violenza.
+	AI_Output (self, other,"DIA_Jeremiah_Horatio_04_01"); //Quel porco schifoso! I suoi scagnozzi raccolgono gli uomini piÃ¹ deboli e li costringono a lavorare nei campi.
+	AI_Output (self, other,"DIA_Jeremiah_Horatio_04_02"); //L'unico che potrebbe contrastarlo Ã¨ Horatio, ma rifiuta la violenza.
 	AI_Output (self, other,"DIA_Jeremiah_Horatio_04_03"); //Una volta l'ho sentito dire che avrebbe voluto spaccare la testa al Signore del Riso, ma non l'avrebbe mai fatto davvero.
 	AI_Output (self, other,"DIA_Jeremiah_Horatio_04_04"); //Andrebbe contro i suoi principi.
 };

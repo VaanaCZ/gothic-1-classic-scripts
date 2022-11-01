@@ -100,7 +100,7 @@ func int B_GiveSkill(var C_NPC typ, var int TAL, var int NEW_Wert, var int LP_Co
 		}
 		else 
 		{
-			PrintScreen	("Punti abilit‡ insufficienti!", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
+			PrintScreen	("Punti abilit√† insufficienti!", -1,-1,"FONT_OLD_20_WHITE.TGA",2);
 			B_Say (self, other, "$NOLEARNNOPOINTS");
 			return 0;
 		};
@@ -112,9 +112,9 @@ func int B_GiveSkill(var C_NPC typ, var int TAL, var int NEW_Wert, var int LP_Co
 			B_Say (self, other, "$NOLEARNYOUREBETTER"); //Du bist jetzt schon besser!
 			return 0;
 		}
-		else if ((TAL_Wert+1) < NEW_Wert) //d.h. i.d.R. TAL_Wert=2 und NEW_Wert=0, auﬂer bei TALENT_MAGE
+		else if ((TAL_Wert+1) < NEW_Wert) //d.h. i.d.R. TAL_Wert=2 und NEW_Wert=0, au√üer bei TALENT_MAGE
 		{
-			B_Say (self, other, "$NOLEARNYOUALREADYKNOW"); //Du muﬂt erst Fortgeschritten sein, bevor du ein Meister werden kannst!
+			B_Say (self, other, "$NOLEARNYOUALREADYKNOW"); //Du mu√üt erst Fortgeschritten sein, bevor du ein Meister werden kannst!
 			return 0;
 		};
 	};	

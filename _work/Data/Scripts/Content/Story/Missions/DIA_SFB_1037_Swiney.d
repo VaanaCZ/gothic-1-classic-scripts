@@ -45,11 +45,11 @@ FUNC VOID Info_Swiney_Hello_Info()
 {	
 	AI_Output (other, self,"Info_Swiney_Hello_15_00"); //Chi sei?
 	AI_Output (self, other,"Info_Swiney_Hello_09_01"); //Sono il miglior ingegnere minerario che questa maledetta colonia abbia mai conosciuto, ragazzo mio.
-	AI_Output (self, other,"Info_Swiney_Hello_09_02"); //Sto attento che la met‡ dei lavoratori non rimanga schiacciata dai massi cadenti, solo perchÈ Ë troppo stupida per scavare nei posti giusti.
+	AI_Output (self, other,"Info_Swiney_Hello_09_02"); //Sto attento che la met√† dei lavoratori non rimanga schiacciata dai massi cadenti, solo perch√© √® troppo stupida per scavare nei posti giusti.
 };
 
 // ************************************************************
-// 						Sch¸rfer
+// 						Sch√ºrfer
 // ************************************************************
 
 INSTANCE Info_Swiney_Schuerfer(C_INFO)
@@ -73,20 +73,20 @@ FUNC INT Info_Swiney_Schuerfer_Condition()
 FUNC VOID Info_Swiney_Schuerfer_Info()
 {	
 	AI_Output (other, self,"Info_Swiney_Schuerfer_15_00"); //Voglio diventare un tritarocce!
-	AI_Output (self, other,"Info_Swiney_Schuerfer_09_01"); //Davvero? Non credere di ottenere chiss‡ quale beneficio! Hai diritto a tre porzioni di riso al giorno. Tutto il resto devi guadagnartelo.
-	AI_Output (self, other,"Info_Swiney_Schuerfer_09_02"); //Sai perchÈ facciamo questo? CosÏ un giorno potremo andarcene di qui e tornare a essere liberi.
+	AI_Output (self, other,"Info_Swiney_Schuerfer_09_01"); //Davvero? Non credere di ottenere chiss√† quale beneficio! Hai diritto a tre porzioni di riso al giorno. Tutto il resto devi guadagnartelo.
+	AI_Output (self, other,"Info_Swiney_Schuerfer_09_02"); //Sai perch√© facciamo questo? Cos√¨ un giorno potremo andarcene di qui e tornare a essere liberi.
 	AI_Output (self, other,"Info_Swiney_Schuerfer_09_03"); //Questo significa che tutto il metallo estratto si aggiunge al cumulo. Una volta al mese, ogni lavoratore riceve uno stipendio di 50 pezzi.
-	AI_Output (self, other,"Info_Swiney_Schuerfer_09_04"); //Questa Ë la cosa pi˘ importante che devi sapere.
+	AI_Output (self, other,"Info_Swiney_Schuerfer_09_04"); //Questa √® la cosa pi√π importante che devi sapere.
 	AI_Output (self, other,"Info_Swiney_Schuerfer_09_05"); //Hai almeno un po' d'esperienza?
 	
 	Info_ClearChoices(Info_Swiney_Schuerfer);
 	Info_AddChoice   (Info_Swiney_Schuerfer,"No.",Info_Swiney_Schuerfer_Nein);
-	Info_AddChoice	 (Info_Swiney_Schuerfer,"SÏ.",Info_Swiney_Schuerfer_Ja);
+	Info_AddChoice	 (Info_Swiney_Schuerfer,"S√¨.",Info_Swiney_Schuerfer_Ja);
 };
 
 func void Info_Swiney_Schuerfer_Ja()
 {
-	AI_Output (other, self,"Info_Swiney_Schuerfer_Ja_15_00"); //SÏ.
+	AI_Output (other, self,"Info_Swiney_Schuerfer_Ja_15_00"); //S√¨.
 	AI_Output (self, other,"Info_Swiney_Schuerfer_Ja_09_01"); //Bene! Allora sai a cosa stare attento. Ecco la tua veste protettiva: il piccone devi trovartelo da solo. Divertiti!
 	CreateInvItem (self, SFB_ARMOR_L);
 	B_GiveInvItems(self, hero, SFB_ARMOR_L, 1);
@@ -97,8 +97,8 @@ func void Info_Swiney_Schuerfer_Ja()
 func void Info_Swiney_Schuerfer_Nein()
 {
 	AI_Output (other, self,"Info_Swiney_Schuerfer_Nein_15_00"); //No.
-	AI_Output (self, other,"Info_Swiney_Schuerfer_Nein_09_01"); //Certo che no! PerchÈ tocca sempre a me? Va bene, ascolta attentamente. Prendi questa roba e la metti...qui.
-	AI_Output (self, other,"Info_Swiney_Schuerfer_Nein_09_02"); //Se un pezzo di metallo ti cade sul piede mentre non indossi la veste protettiva, rimarrai zoppo per tutta la vita e il tuo valore sar‡ dimezzato.
+	AI_Output (self, other,"Info_Swiney_Schuerfer_Nein_09_01"); //Certo che no! Perch√© tocca sempre a me? Va bene, ascolta attentamente. Prendi questa roba e la metti...qui.
+	AI_Output (self, other,"Info_Swiney_Schuerfer_Nein_09_02"); //Se un pezzo di metallo ti cade sul piede mentre non indossi la veste protettiva, rimarrai zoppo per tutta la vita e il tuo valore sar√† dimezzato.
 	AI_Output (self, other,"Info_Swiney_Schuerfer_Nein_09_03"); //Puoi trovare un piccone, da qualche parte qui intorno.
 	AI_Output (self, other,"Info_Swiney_Schuerfer_Nein_09_04"); //Ma non sarai capace di farci molto. Beh, chi se ne frega...
 	

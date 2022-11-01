@@ -52,9 +52,9 @@ FUNC int  VLK_586_Grimes_STORY_Condition()
 FUNC void  VLK_586_Grimes_STORY_Info()
 {
 	AI_Output (other, self,"VLK_586_Grimes_STORY_Info_15_01"); //Sei qui da molto?
-	AI_Output (self, other,"VLK_586_Grimes_STORY_Info_04_02"); //Almeno 10 anni. Credimi: ho imparato molto, quaggiù.
+	AI_Output (self, other,"VLK_586_Grimes_STORY_Info_04_02"); //Almeno 10 anni. Credimi: ho imparato molto, quaggiÃ¹.
 	AI_Output (self, other,"VLK_586_Grimes_STORY_Info_04_03"); //Mi sono trovato in grossi pericoli e sono sempre riuscito a sopravvivere.
-	AI_Output (self, other,"VLK_586_Grimes_STORY_Info_04_04"); //Ai vecchi tempi, quando lavoravamo nella miniera abbandonata che ora è deserta, a un certo punto sono crollati i piloni di sostegno e...
+	AI_Output (self, other,"VLK_586_Grimes_STORY_Info_04_04"); //Ai vecchi tempi, quando lavoravamo nella miniera abbandonata che ora Ã¨ deserta, a un certo punto sono crollati i piloni di sostegno e...
 	AI_Output (self, other,"VLK_586_Grimes_STORY_Info_04_05"); //Ma queste sono vecchie storie...
 };
 
@@ -83,8 +83,8 @@ FUNC void  VLK_586_Grimes_KNOW_Info()
 	AI_Output (self, other,"VLK_586_Grimes_KNOW_Info_04_03"); //Farai meglio a smettere di pensare alla fuga. Ho visto le facce di quelli che hanno tentato di uscire dalla Barriera.
 	AI_Output (self, other,"VLK_586_Grimes_KNOW_Info_04_04"); //Non commettere il loro stesso errore. La Barriera ferma chiunque.
 	AI_Output (other, self,"VLK_586_Grimes_KNOW_Info_15_05"); //Non voglio passare i prossimi dieci anni a scavare in miniera!
-	AI_Output (self, other,"VLK_586_Grimes_KNOW_Info_04_06"); //Non è detto. Forse diventerai un pezzo grosso, chi può dirlo.
-	AI_Output (self, other,"VLK_586_Grimes_KNOW_Info_04_07"); //Anche se farai molta strada, non importa quanta, alla fine la Barriera ti fermerà sempre.
+	AI_Output (self, other,"VLK_586_Grimes_KNOW_Info_04_06"); //Non Ã¨ detto. Forse diventerai un pezzo grosso, chi puÃ² dirlo.
+	AI_Output (self, other,"VLK_586_Grimes_KNOW_Info_04_07"); //Anche se farai molta strada, non importa quanta, alla fine la Barriera ti fermerÃ  sempre.
 };
 
 instance VLK_586_Grimes_FIRST (C_INFO)
