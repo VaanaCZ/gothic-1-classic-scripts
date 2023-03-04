@@ -8,7 +8,7 @@ However, because decompilation produces messy results *(in more ways than one)*,
 ### Original scripts
 I started out with the English scripts, gradually comparing and matching all the changes between different translations.  After some work, I ended up with scripts that when compiled, produce files that are identical to the original .DAT files in terms of their size, information and symbol order.
 
-This means you can now use the original, not-decompiled scripts with all of the comments and formatting. So far the English, German, Polish, Russian *(both Snowball/1-C and Russobit-M)*, Czech, Spanish and Italian scripts are available, although other versions might come later. The English scripts were originally published by NicoDE, with some minor adjustments.
+This means you can now use the original, not-decompiled scripts with all of the comments and formatting. So far the English, German, Polish, Russian *(both Snowball/1-C and Russobit-M)*, Czech, French, Spanish and Italian scripts are available, although other versions might come later. The English scripts were originally published by NicoDE, with some minor adjustments.
 
 There are minor differences in the OU caused by the fact that the translators often used different tools, which's effects I cannot reproduce by regular Spacer's reparsing process.
 
@@ -28,7 +28,7 @@ basically, if you are looking to download the scripts to do some modding, downlo
 ## A few things to mention
 
 ### Encoding
-The scripts are encoded in Windows-1250 for Latin languages *(English, German, Polish, Czech, Spanish and Italian)* and in Windows-1251 for Cyrillic languages *(Russian, both Snowball/1-C and Russobit-M)*. This is because Gothic does not support multibyte encodings and Unicode. Please also note, that in order to display the characters properly in-game, your game must have the correct fontmap texture included.
+The scripts are encoded in Windows-1250 for Latin languages *(English, German, Polish, Czech, French, Spanish and Italian)* and in Windows-1251 for Cyrillic languages *(Russian, both Snowball/1-C and Russobit-M)*. This is because Gothic does not support multibyte encodings and Unicode. Please also note, that in order to display the characters properly in-game, your game must have the correct fontmap texture included.
 
 ### Extended ASCII trimming issue
 When Spacer produces an OU file, it makes sure to trim any whitespace around the texts of dialogues. Sadly, there is a small oversight in the piece of code that performs this trimming, in that it also removes any Non-Standard ASCII characters. This means that if your dialogue ends with any of these `áąćčďéěęíłńňóřśšťůýžźż` the ending of the dialogue will be trimmed.
@@ -128,6 +128,10 @@ Other than that, the only real change is that `G_CanNotCast` and `G_CanNotUse` h
 The Russobit release was made without access to the original scripts by manually editing the compiled OU.bin and OU.dat files. This can be deduced by the symbol order *(which is identical to the German 1.08h Steam release)* and the fact that the ou.bin file still says `date 25.4.2001 13:6:38 user pankratz`. As a result, waypoint and routine names were sometimes translated causing further issues. 
 
 The Russobit translation also seems to be based on an older version of the German scripts than the Snowball/1-C version, which is the reason why it contains In Extremo.
+
+#### French
+
+Same as the English release.
 
 #### Spanish and Italian
 
